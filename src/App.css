@@ -1145,3 +1145,60 @@
   }
   .burst__panel { opacity: 1; transform: none; }
 }
+
+/* --- Character cut-ins inside the AnswerBurst overlay --- */
+.burst {
+  /* Lay out cut-ins on either side of the burst panel. */
+  gap: clamp(0.5rem, 4vw, 3rem);
+}
+
+.kdh-panel--cutin {
+  width: clamp(90px, 16vw, 150px);
+  aspect-ratio: 341 / 577;
+  flex-shrink: 0;
+  /* Slight rotation, like a sticker tilted on a page. */
+  --tilt: -4deg;
+  animation: kdh-slide-in 600ms cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             kdh-bob 1.6s 600ms ease-in-out infinite;
+}
+
+.kdh-panel--cutin.kdh-panel--right {
+  --tilt: 4deg;
+}
+
+.kdh-panel--left { animation-name: kdh-slide-in-left, kdh-bob; }
+.kdh-panel--right { animation-name: kdh-slide-in-right, kdh-bob; }
+
+@keyframes kdh-slide-in-left {
+  0%   { transform: translateX(-220px) rotate(-20deg) scale(0.6); opacity: 0; }
+  70%  { transform: translateX(8px)    rotate(2deg)   scale(1.05); opacity: 1; }
+  100% { transform: translateX(0)      rotate(var(--tilt, -4deg)) scale(1); opacity: 1; }
+}
+
+@keyframes kdh-slide-in-right {
+  0%   { transform: translateX(220px) rotate(20deg)  scale(0.6); opacity: 0; }
+  70%  { transform: translateX(-8px)  rotate(-2deg) scale(1.05); opacity: 1; }
+  100% { transform: translateX(0)     rotate(var(--tilt, 4deg)) scale(1); opacity: 1; }
+}
+
+@keyframes kdh-bob {
+  0%, 100% { transform: translateY(0) rotate(var(--tilt, 0deg)); }
+  50%      { transform: translateY(-6px) rotate(var(--tilt, 0deg)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kdh-panel--cutin {
+    animation: none !important;
+    transform: rotate(var(--tilt, 0deg));
+  }
+  .kdh-panel--poster {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .kdh-panel--cutin {
+    width: 70px;
+  }
+  .burst { gap: 0.5rem; }
+}
