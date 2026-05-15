@@ -75,7 +75,7 @@ export default function LandingPage() {
             </div>
             <h2 className="card-sticker__title">My Picks</h2>
             <p className="card-sticker__sub">Choose your own flags</p>
-            <span className="card-sticker__cta card-sticker__cta--sky">CHOOSE!</span>
+            <span className="card-sticker__cta card-sticker__cta--sky">PLAY!</span>
           </button>
 
           {/* All Flags is the secondary CTA — smaller, more compact, below. */}
