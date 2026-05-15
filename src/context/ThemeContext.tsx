@@ -25,12 +25,8 @@ function readInitialTheme(): Theme {
   } catch {
     // ignore
   }
-  if (
-    typeof window !== "undefined" &&
-    window.matchMedia?.("(prefers-color-scheme: dark)").matches
-  ) {
-    return "dark";
-  }
+  // New sessions (no saved preference) start in light mode. Users who flip the
+  // toggle have their choice persisted to localStorage and respected on return.
   return "light";
 }
 
