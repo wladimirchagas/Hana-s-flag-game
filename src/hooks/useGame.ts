@@ -197,11 +197,15 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
 
   useEffect(() => {
     if (phase !== "revealed" || countries.length === 0) return;
+    // Custom Game (allowRetry) shows a kid-readable celebration burst on the
+    // correct answer — hold the current flag long enough for that to finish.
+    // Regular game keeps the snappier 1.5s pacing.
+    const advanceDelayMs = allowRetry ? 3200 : 1500;
     const timer = window.setTimeout(() => {
       startRound(countries);
-    }, 1500);
+    }, advanceDelayMs);
     return () => window.clearTimeout(timer);
-  }, [phase, countries, startRound]);
+  }, [phase, countries, startRound, allowRetry]);
 
   const totalAnswered = correctCount + wrongCount;
   const totalFlags = countries.length;

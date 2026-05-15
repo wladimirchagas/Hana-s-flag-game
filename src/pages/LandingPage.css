@@ -101,11 +101,79 @@
 
 /* --- Mode cards --- */
 .sticker__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
   width: 100%;
   margin-top: 1rem;
+}
+
+/* Hero card — My Picks. Biggest, brightest, dominant. */
+.card-sticker--hero {
+  width: 100%;
+  max-width: 480px;
+  padding: 2.5rem 2rem 2.25rem;
+}
+
+.card-sticker--hero .card-sticker__title {
+  font-size: clamp(2.4rem, 4.5vw, 3rem);
+}
+
+.card-sticker--hero .card-sticker__sub {
+  font-size: 1.1rem;
+}
+
+.card-sticker--hero .card-sticker__cta {
+  padding: 1.05rem 3rem;
+  font-size: 1.65rem;
+}
+
+.card-sticker--hero .card-sticker__row {
+  font-size: 1.7rem;
+}
+
+/* Secondary card — All Flags. Smaller, compact, supporting role. */
+.card-sticker--secondary {
+  width: 100%;
+  max-width: 340px;
+  padding: 1rem 1.5rem 1.1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  border-width: 3px;
+  box-shadow: 0 4px 0 var(--ink), 0 8px 14px rgba(26, 34, 56, 0.12);
+}
+
+.card-sticker--secondary:hover,
+.card-sticker--secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 0 var(--ink), 0 12px 18px rgba(26, 34, 56, 0.18);
+}
+
+.card-sticker--secondary .card-sticker__title {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.card-sticker--secondary .card-sticker__cta {
+  margin-top: 0;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 3px 0 var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  border-width: 2.5px;
+}
+
+.card-sticker--secondary .card-sticker__row,
+.card-sticker--secondary .card-sticker__sub {
+  display: none;
 }
 
 .card-sticker {

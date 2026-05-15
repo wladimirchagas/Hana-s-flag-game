@@ -63,23 +63,10 @@ export default function LandingPage() {
         <HeroPoster />
 
         <div className="sticker__cards">
+          {/* My Picks is the hero CTA — biggest, brightest, top of stack. */}
           <button
             type="button"
-            className="card-sticker card-sticker--a"
-            onClick={playAll}
-          >
-            <div className="card-sticker__row" aria-hidden="true">
-              <span>◯</span><span>◯</span><span>◯</span><span>◯</span>
-              <span>◯</span><span>◯</span><span>◯</span><span>◯</span>
-            </div>
-            <h2 className="card-sticker__title">All Flags</h2>
-            <p className="card-sticker__sub">Play with all 195 countries</p>
-            <span className="card-sticker__cta card-sticker__cta--coral">PLAY!</span>
-          </button>
-
-          <button
-            type="button"
-            className="card-sticker card-sticker--b"
+            className="card-sticker card-sticker--b card-sticker--hero"
             onClick={() => setPickerOpen(true)}
           >
             <div className="card-sticker__row" aria-hidden="true">
@@ -87,8 +74,18 @@ export default function LandingPage() {
               <span>☐</span><span>☐</span><span>☐</span>
             </div>
             <h2 className="card-sticker__title">My Picks</h2>
-            <p className="card-sticker__sub">Choose your own list</p>
-            <span className="card-sticker__cta card-sticker__cta--sky">CHOOSE!</span>
+            <p className="card-sticker__sub">Choose your own flags</p>
+            <span className="card-sticker__cta card-sticker__cta--sky">PLAY!</span>
+          </button>
+
+          {/* All Flags is the secondary CTA — smaller, more compact, below. */}
+          <button
+            type="button"
+            className="card-sticker card-sticker--a card-sticker--secondary"
+            onClick={playAll}
+          >
+            <h2 className="card-sticker__title">All 195 Flags</h2>
+            <span className="card-sticker__cta card-sticker__cta--coral">PLAY ALL →</span>
           </button>
         </div>
 
