@@ -429,11 +429,11 @@
 .kdh-panel__art--boy   { background-position: 100% center; }
 
 .kdh-panel--poster {
-  /* Each individual panel of the source is 341×577 (~0.59:1).  Panel L is
-     wider in feel because it shows both characters on a platform — give it a
-     bit more width than the single-character panels. */
+  /* The HeroPoster picks a scene at random from a pool of 14 (Panel L of the
+     original art + grids in characters-scenes-1.jpg and characters-scenes-2.jpg).
+     aspect-ratio is set inline per-scene so each cell renders without
+     distortion. */
   width: min(320px, 80vw);
-  aspect-ratio: 341 / 577;
   margin: 0 auto;
   animation: bob 4.5s ease-in-out infinite;
 }
