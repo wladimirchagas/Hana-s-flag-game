@@ -558,6 +558,18 @@
   outline: none;
 }
 
+.map-popover__hint {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.map-popover--info {
+  /* "Not in this game" popover — softer styling than the Confirm variant. */
+  background: rgba(255, 200, 87, 0.18); /* mustard tint */
+}
+
 .map-popover__close {
   width: 26px;
   height: 26px;

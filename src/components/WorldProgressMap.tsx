@@ -3,6 +3,14 @@ import { geoEqualEarth, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
 import { useTheme } from "../context/ThemeContext";
+import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
+
+// Full UN-member name lookup, used so clicks on non-pool (out-of-this-game)
+// countries can still display a friendly "Not in this game" popover with the
+// real country name.
+const ALL_UN_NAMES: ReadonlyMap<string, string> = new Map(
+  ALL_COUNTRY_OPTIONS.map((c) => [c.code, c.name] as const),
+);
 
 type CountryResult = "correct" | "wrong";
 
@@ -61,6 +69,7 @@ function toIsoAlpha2(id: string | number | undefined): string | null {
 type MapPalette = {
   unknown: string;
   land: string;
+  poolLand: string;
   correct: string;
   wrong: string;
   stroke: string;
@@ -71,6 +80,10 @@ type MapPalette = {
 const LIGHT_PALETTE: MapPalette = {
   unknown: "#dbe7d6",
   land: "#e8ddc4",
+  // Distinctive tint for countries that are part of the game pool but haven't
+  // been guessed yet — so users in Custom Game can see at a glance which
+  // countries are clickable for the current flag.
+  poolLand: "#ffd7a8",
   correct: "#3fae5a",
   wrong: "#ff6b6b",
   stroke: "#1a2238",
@@ -81,6 +94,7 @@ const LIGHT_PALETTE: MapPalette = {
 const DARK_PALETTE: MapPalette = {
   unknown: "#2a3358",
   land: "#3a4470",
+  poolLand: "#6b4f8c",
   correct: "#5dd97a",
   wrong: "#ff8a8a",
   stroke: "#f4ecd8",
@@ -92,15 +106,25 @@ function getFill(
   alpha2: string | null,
   results: Record<string, CountryResult>,
   palette: MapPalette,
+  isInPool: boolean,
 ): string {
   if (!alpha2) return palette.unknown;
   const result = results[alpha2];
   if (result === "correct") return palette.correct;
   if (result === "wrong") return palette.wrong;
-  return palette.land;
+  return isInPool ? palette.poolLand : palette.land;
 }
 
-type Popover = { code: string; name: string; x: number; y: number };
+type Popover = {
+  code: string;
+  name: string;
+  x: number;
+  y: number;
+  /** "confirm" shows the Confirm button (country is in the active pool).
+   *  "info" shows just a "Not in this game" message (country is a UN member
+   *  but isn't part of the current game's pool). */
+  kind: "confirm" | "info";
+};
 
 export function WorldProgressMap({
   countryResults,
@@ -163,16 +187,25 @@ export function WorldProgressMap({
 
   function handlePathClick(e: React.MouseEvent<SVGPathElement>, alpha2: string) {
     if (!isInteractive || !selectable) return;
-    if (!selectable.codes.has(alpha2)) return;
     const target = e.currentTarget;
     const bbox = target.getBoundingClientRect();
     const frameRect = frameRef.current?.getBoundingClientRect();
     if (!frameRect) return;
     const x = (bbox.left + bbox.right) / 2 - frameRect.left;
     const y = bbox.top - frameRect.top;
-    const name = selectable.names.get(alpha2) ?? alpha2;
-    selectable.onSelect(alpha2);
-    setPopover({ code: alpha2, name, x, y });
+
+    const isInPool = selectable.codes.has(alpha2);
+    const name =
+      selectable.names.get(alpha2) ?? ALL_UN_NAMES.get(alpha2) ?? alpha2;
+
+    if (isInPool) {
+      selectable.onSelect(alpha2);
+      setPopover({ code: alpha2, name, x, y, kind: "confirm" });
+    } else {
+      // Country is rendered on the map but isn't part of this game's pool
+      // (typical in Custom Game). Tell the user instead of silently failing.
+      setPopover({ code: alpha2, name, x, y, kind: "info" });
+    }
   }
 
   function handleConfirm() {
@@ -186,7 +219,9 @@ export function WorldProgressMap({
       <h2 id="map-heading" className="map-heading">
         World map
         {isInteractive && (
-          <span className="map-heading__hint"> — click a country to guess</span>
+          <span className="map-heading__hint">
+            {" "}— click a highlighted country to guess
+          </span>
         )}
       </h2>
       <div className="map-frame" ref={frameRef}>
@@ -201,11 +236,27 @@ export function WorldProgressMap({
             const path = pathById.get(String(geo.id ?? ""));
             if (!path) return null;
             const alpha2 = toIsoAlpha2(geo.id);
-            const isAvailable =
-              !!alpha2 && (!selectable || selectable.codes.has(alpha2));
+            const isInPool =
+              !!alpha2 && !!selectable && selectable.codes.has(alpha2);
+            // Every UN-member country is clickable (in interactive mode). Pool
+            // members open the Confirm popover; non-pool members open the
+            // informational "Not in this game" popover instead of silently
+            // doing nothing.
+            const isUnMember = !!alpha2 && ALL_UN_NAMES.has(alpha2);
+            const clickable = isInteractive && isUnMember;
             const isSelected = !!alpha2 && alpha2 === selectedCode;
-            const clickable = isInteractive && isAvailable;
-            const baseFill = getFill(alpha2, countryResults, palette);
+            const baseFill = getFill(
+              alpha2,
+              countryResults,
+              palette,
+              isInPool,
+            );
+            const tooltip =
+              alpha2
+                ? selectable?.names.get(alpha2) ??
+                  ALL_UN_NAMES.get(alpha2) ??
+                  null
+                : null;
             return (
               <path
                 key={key}
@@ -225,28 +276,34 @@ export function WorldProgressMap({
                     : undefined
                 }
               >
-                {alpha2 && selectable?.names.get(alpha2) ? (
-                  <title>{selectable.names.get(alpha2)}</title>
-                ) : null}
+                {tooltip ? <title>{tooltip}</title> : null}
               </path>
             );
           })}
         </svg>
         {popover && isInteractive && (
           <div
-            className="map-popover"
+            className={`map-popover map-popover--${popover.kind}`}
             style={{ left: `${popover.x}px`, top: `${popover.y}px` }}
             role="dialog"
-            aria-label={`Confirm guess: ${popover.name}`}
+            aria-label={
+              popover.kind === "confirm"
+                ? `Confirm guess: ${popover.name}`
+                : `${popover.name}: not part of this game`
+            }
           >
             <span className="map-popover__name">{popover.name}</span>
-            <button
-              type="button"
-              className="map-popover__confirm"
-              onClick={handleConfirm}
-            >
-              Confirm
-            </button>
+            {popover.kind === "confirm" ? (
+              <button
+                type="button"
+                className="map-popover__confirm"
+                onClick={handleConfirm}
+              >
+                Confirm
+              </button>
+            ) : (
+              <span className="map-popover__hint">Not in this game</span>
+            )}
             <button
               type="button"
               className="map-popover__close"
