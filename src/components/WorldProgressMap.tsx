@@ -118,12 +118,17 @@ function getFill(
 type Popover = {
   code: string;
   name: string;
+  /** Pixel coordinates relative to the map-frame container. */
   x: number;
   y: number;
   /** "confirm" shows the Confirm button (country is in the active pool).
    *  "info" shows just a "Not in this game" message (country is a UN member
    *  but isn't part of the current game's pool). */
   kind: "confirm" | "info";
+  /** Whether the popover renders above or below the anchor point. We flip
+   *  to "below" when there isn't room above so the popover never gets
+   *  clipped at the top of the frame. */
+  placement: "above" | "below";
 };
 
 export function WorldProgressMap({
@@ -187,12 +192,34 @@ export function WorldProgressMap({
 
   function handlePathClick(e: React.MouseEvent<SVGPathElement>, alpha2: string) {
     if (!isInteractive || !selectable) return;
-    const target = e.currentTarget;
-    const bbox = target.getBoundingClientRect();
     const frameRect = frameRef.current?.getBoundingClientRect();
     if (!frameRect) return;
-    const x = (bbox.left + bbox.right) / 2 - frameRect.left;
-    const y = bbox.top - frameRect.top;
+
+    // Anchor on the CLICK POINT instead of the path's bbox centre. The bbox
+    // approach breaks for antimeridian-spanning countries (Russia, Fiji, US)
+    // whose bbox spans nearly the entire map width with the geometric centre
+    // landing in the middle of an ocean. The click point is always inside
+    // the country the user actually pointed at.
+    const clickX = e.clientX - frameRect.left;
+    const clickY = e.clientY - frameRect.top;
+
+    // Reserve enough room for the popover so it never clips off the frame
+    // (these are upper-bound estimates of the rendered size).
+    const HALF_W = 130;
+    const HEIGHT = 64;
+    const MARGIN = 8;
+
+    // Clamp the horizontal anchor so the popover stays inside the frame.
+    const x = Math.max(
+      HALF_W + MARGIN,
+      Math.min(frameRect.width - HALF_W - MARGIN, clickX),
+    );
+
+    // Prefer placing the popover above the click; flip to below when the
+    // click is too close to the top edge of the frame.
+    const placeAbove = clickY >= HEIGHT + MARGIN * 2;
+    const y = placeAbove ? clickY - MARGIN : clickY + MARGIN;
+    const placement: "above" | "below" = placeAbove ? "above" : "below";
 
     const isInPool = selectable.codes.has(alpha2);
     const name =
@@ -200,11 +227,11 @@ export function WorldProgressMap({
 
     if (isInPool) {
       selectable.onSelect(alpha2);
-      setPopover({ code: alpha2, name, x, y, kind: "confirm" });
+      setPopover({ code: alpha2, name, x, y, kind: "confirm", placement });
     } else {
       // Country is rendered on the map but isn't part of this game's pool
       // (typical in Custom Game). Tell the user instead of silently failing.
-      setPopover({ code: alpha2, name, x, y, kind: "info" });
+      setPopover({ code: alpha2, name, x, y, kind: "info", placement });
     }
   }
 
@@ -283,7 +310,7 @@ export function WorldProgressMap({
         </svg>
         {popover && isInteractive && (
           <div
-            className={`map-popover map-popover--${popover.kind}`}
+            className={`map-popover map-popover--${popover.kind} map-popover--${popover.placement}`}
             style={{ left: `${popover.x}px`, top: `${popover.y}px` }}
             role="dialog"
             aria-label={
