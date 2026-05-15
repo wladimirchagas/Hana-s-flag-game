@@ -38,6 +38,10 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Auto-enable Pages for the repo on first run, so you don't have to
+          # toggle it in Settings → Pages manually.
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
