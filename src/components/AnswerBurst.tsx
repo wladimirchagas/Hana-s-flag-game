@@ -25,7 +25,8 @@ export function AnswerBurst({ nonce, wasCorrect, active }: Props) {
   useEffect(() => {
     if (!active || nonce === 0 || wasCorrect === null) return;
     setVisible(true);
-    const lifetime = wasCorrect ? 1600 : 1200;
+    // Long enough for a 7-year-old to read the message comfortably.
+    const lifetime = wasCorrect ? 3200 : 2800;
     const t = window.setTimeout(() => setVisible(false), lifetime);
     return () => window.clearTimeout(t);
   }, [nonce, wasCorrect, active]);
