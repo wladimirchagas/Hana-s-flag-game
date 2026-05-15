@@ -5,6 +5,7 @@ import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
 import { ThemeToggle } from '../components/ThemeToggle'
+import { HeroPoster } from '../components/HeroCharacters'
 import './LandingPage.css'
 
 const TITLE_LETTERS: { ch: string; color: string }[] = [
@@ -58,6 +59,8 @@ export default function LandingPage() {
             <span>★</span>
           </div>
         </div>
+
+        <HeroPoster />
 
         <div className="sticker__cards">
           <button

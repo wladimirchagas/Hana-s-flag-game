@@ -403,6 +403,41 @@
   background: rgba(78, 205, 196, 0.14);
 }
 
+/* --- Hero character panel (poster on landing page) --- */
+.kdh-panel {
+  position: relative;
+  border: 4px solid var(--ink);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.kdh-panel__art {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  /* Sprite: three equal-width panels.  background-size 300% means each panel
+     fills the container at 100% width; background-position-x 0/50/100%
+     selects which panel is shown. */
+  background-size: 300% 100%;
+  background-position: 0% center;
+}
+
+.kdh-panel__art--both  { background-position: 0%   center; }
+.kdh-panel__art--woman { background-position: 50%  center; }
+.kdh-panel__art--boy   { background-position: 100% center; }
+
+.kdh-panel--poster {
+  /* Each individual panel of the source is 341×577 (~0.59:1).  Panel L is
+     wider in feel because it shows both characters on a platform — give it a
+     bit more width than the single-character panels. */
+  width: min(320px, 80vw);
+  aspect-ratio: 341 / 577;
+  margin: 0 auto;
+  animation: bob 4.5s ease-in-out infinite;
+}
+
 /* --- Mobile --- */
 @media (max-width: 640px) {
   .sticker__main { padding: 2.5rem 1rem 2.5rem; gap: 2rem; }

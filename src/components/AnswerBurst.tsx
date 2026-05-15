@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { HeroCutIn } from "./HeroCharacters";
 
 const RIGHT_MESSAGES = ["Yes!", "Awesome!", "Nailed it!", "Brilliant!", "Spot on!"];
 const WRONG_MESSAGES = ["Try again!", "Almost!", "Keep going!", "So close!", "You got this!"];
@@ -45,12 +46,16 @@ export function AnswerBurst({ nonce, wasCorrect, active }: Props) {
       role="status"
       aria-live="polite"
     >
+      {/* Right answer: both characters frame the celebration.
+          Wrong answer: only the boy peeks in (lighter, more encouraging pose). */}
+      {wasCorrect && <HeroCutIn variant="woman" side="left" />}
       <div className="burst__panel">
         <span className="burst__emoji burst__emoji--main" aria-hidden="true">
           {wasCorrect ? "🎉" : "🤔"}
         </span>
         <span className="burst__text">{message}</span>
       </div>
+      <HeroCutIn variant="boy" side="right" />
       {wasCorrect && (
         <div className="burst__confetti" aria-hidden="true">
           {Array.from({ length: 14 }).map((_, i) => (
