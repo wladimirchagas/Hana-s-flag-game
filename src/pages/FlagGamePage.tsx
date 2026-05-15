@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
@@ -27,6 +27,21 @@ export default function FlagGamePage() {
   const [playerName, setPlayerName] = useState("");
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">(
     "idle"
+  );
+
+  // Build the code→name map and the set of clickable codes once whenever
+  // game.countries changes (after the API fetch, or after Custom-Game filter).
+  const countryCodes = useMemo(
+    () => new Set(game.countries.map((c) => c.code)),
+    [game.countries],
+  );
+  const countryNames = useMemo(
+    () => new Map(game.countries.map((c) => [c.code, c.name])),
+    [game.countries],
+  );
+  const codeToCountry = useMemo(
+    () => new Map(game.countries.map((c) => [c.code, c])),
+    [game.countries],
   );
 
   if (game.phase === "error") {
@@ -130,7 +145,20 @@ export default function FlagGamePage() {
           />
         )}
 
-        <WorldProgressMap countryResults={game.countryResults} />
+        <WorldProgressMap
+          countryResults={game.countryResults}
+          selectedCode={game.selected?.code ?? null}
+          disabled={game.phase !== "guessing"}
+          selectable={{
+            codes: countryCodes,
+            names: countryNames,
+            onSelect: (code) => {
+              const country = codeToCountry.get(code);
+              if (country) game.setSelected(country);
+            },
+            onConfirm: game.confirm,
+          }}
+        />
 
         <ScoreBoard
           score={game.score}
