@@ -4,6 +4,7 @@ import { useLeaderboard } from '../context/LeaderboardContext'
 import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
+import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
 import { ThemeToggle } from '../components/ThemeToggle'
 import { HeroPoster } from '../components/HeroCharacters'
 import './LandingPage.css'
@@ -20,11 +21,16 @@ export default function LandingPage() {
   const { openLeaderboard } = useLeaderboard()
   const navigate = useNavigate()
   const [pickerOpen, setPickerOpen] = useState(false)
+  const [quizOpen, setQuizOpen] = useState(false)
 
   const playAll = () => navigate('/game')
   const playWith = (codes: string[]) => {
     setPickerOpen(false)
     navigate('/game', { state: { codes } })
+  }
+  const playQuiz = (quiz: QuickQuizConfig) => {
+    setQuizOpen(false)
+    navigate('/game', { state: { quiz } })
   }
 
   return (
@@ -87,6 +93,16 @@ export default function LandingPage() {
             <h2 className="card-sticker__title">All 195 Flags</h2>
             <span className="card-sticker__cta card-sticker__cta--coral">PLAY ALL →</span>
           </button>
+
+          {/* Quick Quiz is a tertiary CTA — pick a count + difficulty. */}
+          <button
+            type="button"
+            className="card-sticker card-sticker--c card-sticker--secondary"
+            onClick={() => setQuizOpen(true)}
+          >
+            <h2 className="card-sticker__title">Quick Quiz</h2>
+            <span className="card-sticker__cta card-sticker__cta--mustard">SET UP →</span>
+          </button>
         </div>
 
         <button
@@ -102,6 +118,12 @@ export default function LandingPage() {
         open={pickerOpen}
         onClose={() => setPickerOpen(false)}
         onConfirm={playWith}
+      />
+
+      <QuickQuizSetupModal
+        open={quizOpen}
+        onClose={() => setQuizOpen(false)}
+        onStart={playQuiz}
       />
     </div>
   )
