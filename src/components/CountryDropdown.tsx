@@ -55,21 +55,35 @@ export function CountryDropdown({
     }
   }, [value, open, modalOpen]);
 
+  // ALWAYS show countries in alphabetical order, no matter what order they
+  // arrive in. In Quick Quiz mode the alternatives come from useGame's
+  // buildAlternatives which mixes the correct answer with random distractors,
+  // so we sort here as the single source of truth. localeCompare with "en"
+  // gives consistent results across browsers (e.g. handles "Côte d'Ivoire"
+  // correctly relative to "Croatia").
+  const sortedCountries = useMemo(
+    () =>
+      [...countries].sort((a, b) =>
+        a.name.localeCompare(b.name, "en", { sensitivity: "base" }),
+      ),
+    [countries],
+  );
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return countries.slice(0, MAX_OPTIONS);
-    return countries
+    if (!q) return sortedCountries.slice(0, MAX_OPTIONS);
+    return sortedCountries
       .filter((c) => c.name.toLowerCase().includes(q))
       .slice(0, MAX_OPTIONS);
-  }, [countries, query]);
+  }, [sortedCountries, query]);
 
   // The mobile modal lists ALL countries (or filtered by its own search). On
   // mobile the list is the only browsing UI, so we don't cap aggressively.
   const filteredAll = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return countries;
-    return countries.filter((c) => c.name.toLowerCase().includes(q));
-  }, [countries, query]);
+    if (!q) return sortedCountries;
+    return sortedCountries.filter((c) => c.name.toLowerCase().includes(q));
+  }, [sortedCountries, query]);
 
   // Desktop: close the popover when the user clicks outside.
   useEffect(() => {

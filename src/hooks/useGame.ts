@@ -148,17 +148,19 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
           }
         }
       }
-      // Fisher-Yates shuffle, take N-1 distractors, append correct, shuffle.
+      // Shuffle distractor candidates so the N-1 we pick are random — but
+      // the FINAL list is returned in alphabetical order. The CountryDropdown
+      // also sorts defensively, so consumers of `questionAlternatives` never
+      // see a mixed-up order.
       for (let i = candidates.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [candidates[i], candidates[j]] = [candidates[j]!, candidates[i]!];
       }
       const distractors = candidates.slice(0, Math.max(0, optionCount - 1));
       const result = [correct, ...distractors];
-      for (let i = result.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [result[i], result[j]] = [result[j]!, result[i]!];
-      }
+      result.sort((a, b) =>
+        a.name.localeCompare(b.name, "en", { sensitivity: "base" }),
+      );
       return result;
     },
     [optionCount],
