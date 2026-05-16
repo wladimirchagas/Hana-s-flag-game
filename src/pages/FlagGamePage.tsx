@@ -10,7 +10,6 @@ import { Feedback } from "../components/Feedback";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { GameClock } from "../components/GameClock";
 import { GameResultsFlags } from "../components/GameResultsFlags";
-import { ThemeToggle } from "../components/ThemeToggle";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameFinishCelebration } from "../components/GameFinishCelebration";
 import { DIFFICULTY_CONFIG } from "../lib/flagDifficulty";
@@ -160,7 +159,6 @@ export default function FlagGamePage() {
         <Link className="game-nav__home" to="/">
           ← Home
         </Link>
-        <ThemeToggle />
       </div>
       <main className="card">
         <header className="card-header">

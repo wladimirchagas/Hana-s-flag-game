@@ -268,15 +268,25 @@ a {
   }
 }
 
-/* === Top bar wrapper for the landing page === */
+/* === Global theme toggle ===
+   Single instance rendered at the React root and pinned to the top-centre
+   of the viewport, so the same control is visible from the landing page,
+   the game pages, and any future routes. z-index 30 sits above the in-game
+   home nav (25) and the fixed timer (20), but below modals and the
+   celebration overlay (≥50) — so it disappears while focused modals are
+   open, which is the expected behaviour. */
+.global-theme-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+}
+
+/* Deprecated — left in case anything still references it but the toggle
+   no longer renders here. Safe to delete once nothing in the JSX uses it. */
 .sticker__topbar {
-  position: relative;
-  z-index: 3;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem 0;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
 }
 
 /* === Game-nav layout (home + toggle on the same row) ===

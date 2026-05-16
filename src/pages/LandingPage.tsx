@@ -5,7 +5,6 @@ import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
 import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
-import { ThemeToggle } from '../components/ThemeToggle'
 import { HeroCarousel } from '../components/HeroCharacters'
 import './LandingPage.css'
 
@@ -36,10 +35,6 @@ export default function LandingPage() {
   return (
     <div className="sticker">
       <FlagConfetti />
-
-      <div className="sticker__topbar">
-        <ThemeToggle />
-      </div>
 
       <main className="sticker__main">
         <div className="sticker__titlewrap">
