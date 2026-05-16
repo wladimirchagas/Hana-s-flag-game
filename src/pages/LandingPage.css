@@ -463,7 +463,8 @@
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
-  color: var(--ink);
+  /* ink-fixed: dark on mustard reads in both themes. */
+  color: var(--ink-fixed);
   box-shadow: 0 3px 0 var(--ink);
 }
 
@@ -762,7 +763,8 @@
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
-  color: var(--ink);
+  /* ink-fixed: dark on mustard reads in both themes. */
+  color: var(--ink-fixed);
   box-shadow: 0 3px 0 var(--ink);
 }
 
@@ -831,6 +833,10 @@
 
 .qquiz__chip--active {
   background: var(--mustard);
+  /* The base .qquiz__chip uses color: var(--ink) which flips to cream in
+     dark mode and would fail contrast on the now-mustard background.
+     ink-fixed locks the active chip's text to dark for both themes. */
+  color: var(--ink-fixed);
   box-shadow: 0 5px 0 var(--ink);
   transform: translateY(-2px);
 }
@@ -864,8 +870,18 @@
    the Hard chip without flagging it as 'stop / danger'. */
 .qquiz__diff--hard.qquiz__diff--active   { background: var(--pink); }
 .qquiz__diff--active {
+  /* Active state swaps to a light palette background (lime/sky/pink). The
+     base text colour var(--ink) flips to cream in dark mode and would fail
+     contrast on those light backgrounds — lock to dark for both themes. */
+  color: var(--ink-fixed);
   box-shadow: 0 5px 0 var(--ink);
   transform: translateY(-2px);
+}
+
+/* The hint text inside the active difficulty button (smaller subtitle) uses
+   ink-soft by default — also lock to dark for AA contrast on light bg. */
+.qquiz__diff--active .qquiz__diff-tagline {
+  color: rgba(26, 34, 56, 0.75);
 }
 
 .qquiz__diff-label {

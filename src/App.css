@@ -77,7 +77,10 @@
   display: inline-block;
   padding: 0.45rem 1rem;
   background: var(--mustard);
-  color: var(--ink);
+  /* ink-fixed so the dark text reads on the always-light mustard background
+     regardless of theme — var(--ink) flips to cream in dark mode and fails
+     contrast on mustard yellow. */
+  color: var(--ink-fixed);
   border: 3px solid var(--ink);
   border-radius: 999px;
   font-weight: 700;
@@ -262,7 +265,8 @@
   border-radius: 999px;
   border: 3px solid var(--ink);
   background: var(--mustard);
-  color: var(--ink);
+  /* ink-fixed: dark on mustard works in both themes. */
+  color: var(--ink-fixed);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
@@ -463,7 +467,8 @@
   border-radius: 999px;
   background: var(--mustard);
   border: 2.5px solid var(--ink);
-  color: var(--ink);
+  /* ink-fixed: dark text on mustard reads in both themes. */
+  color: var(--ink-fixed);
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1;
@@ -1178,7 +1183,8 @@
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
-  color: var(--ink);
+  /* ink-fixed: dark on mustard, AA contrast in both themes. */
+  color: var(--ink-fixed);
   box-shadow: 0 3px 0 var(--ink);
 }
 
