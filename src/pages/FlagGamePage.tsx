@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
@@ -12,6 +12,7 @@ import { GameClock } from "../components/GameClock";
 import { GameResultsFlags } from "../components/GameResultsFlags";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { AnswerBurst } from "../components/AnswerBurst";
+import { GameFinishCelebration } from "../components/GameFinishCelebration";
 import "../App.css";
 
 export default function FlagGamePage() {
@@ -28,6 +29,14 @@ export default function FlagGamePage() {
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">(
     "idle"
   );
+
+  // Show the big finish celebration overlay when the game ends, until the
+  // player dismisses it. Reset if the player somehow ends up back in the
+  // guessing phase (defensive — current code paths don't do that).
+  const [celebrationDismissed, setCelebrationDismissed] = useState(false);
+  useEffect(() => {
+    if (game.phase !== "finished") setCelebrationDismissed(false);
+  }, [game.phase]);
 
   // Build the code→name map and the set of clickable codes once whenever
   // game.countries changes (after the API fetch, or after Custom-Game filter).
@@ -78,8 +87,25 @@ export default function FlagGamePage() {
     game.phase === "finished" ||
     (game.phase === "guessing" && !game.selected);
 
+  const elapsedMs =
+    game.gameStartedAtMs != null && game.gameEndedAtMs != null
+      ? game.gameEndedAtMs - game.gameStartedAtMs
+      : null;
+
   return (
     <div className="app">
+      {isFinished && !celebrationDismissed && (
+        <GameFinishCelebration
+          score={game.score}
+          correctCount={game.correctCount}
+          wrongCount={game.wrongCount}
+          totalAnswered={game.totalAnswered}
+          totalFlags={game.totalFlags}
+          playedAllFlags={playedAllFlags}
+          elapsedMs={elapsedMs}
+          onContinue={() => setCelebrationDismissed(true)}
+        />
+      )}
       <AnswerBurst
         nonce={game.attemptNonce}
         wasCorrect={game.wasCorrect}

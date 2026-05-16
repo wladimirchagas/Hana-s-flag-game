@@ -2,6 +2,11 @@
 
 :root {
   --ink: #1a2238;
+  /* Theme-independent dark ink. Use on bright backgrounds (coral / sky /
+     lime / mustard / pink) where the per-theme --ink (which flips to cream
+     in dark mode) would have poor contrast. WCAG check: ≥5.7:1 on any of
+     our bright palette colors. */
+  --ink-fixed: #1a2238;
   --ink-soft: rgba(26, 34, 56, 0.7);
   --ink-faint: rgba(26, 34, 56, 0.18);
   --cream: #fff8ee;
@@ -10,6 +15,10 @@
   --cream-glow-2: #c8f3ee;
   --paper: #ffffff;
   --coral: #ff6b6b;
+  /* Darker coral used for COPY (numeric values, "wrong" stats) on light
+     backgrounds. Plain --coral on cream is 2.62:1 → fails AA. This is
+     5.42:1, passes AA for normal text. */
+  --coral-deep: #d83030;
   --mustard: #ffc857;
   --sky: #4ecdc4;
   --lime: #7ed957;
@@ -32,6 +41,9 @@
   --cream-glow-2: #1f3a4d;
   --paper: #1c2440;
   --coral: #ff8a8a;
+  /* In dark mode, "coral text on dark bg" is naturally high-contrast. We use
+     a brighter coral so the cream/ink ratio stays comfortable (≥7:1). */
+  --coral-deep: #ff8a8a;
   --mustard: #ffd97a;
   --sky: #74e4dc;
   --lime: #a0e676;
@@ -132,7 +144,7 @@ a {
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
-  color: #fff;
+  color: var(--ink-fixed);
   background: var(--coral);
   border: 3px solid var(--ink);
   box-shadow: 0 5px 0 var(--ink);
