@@ -130,6 +130,9 @@
   flex-direction: column;
   transition: transform 180ms ease, box-shadow 180ms ease;
   text-align: center;
+  /* Inset the poster from the card edge — without this the carousel image
+     sits flush against the top/sides of the card. */
+  padding: 14px 14px 0;
   /* Tiny tilt for sticker feel — flattens on hover. */
   transform: rotate(-1deg);
 }
@@ -147,18 +150,19 @@
 }
 
 .hero-card__poster {
-  /* Override the standalone .kdh-panel--poster styling so the poster blends
-     into the hero card instead of sitting as a separate framed sub-element. */
+  /* Override the standalone .kdh-panel--poster styling so the poster sits as
+     a framed picture inside the hero card with a small inset on all sides
+     (the hero-card padding provides the inset). */
   width: 100%;
   max-width: none;
-  margin: 0;
+  margin: 0 0 14px;
   border: 0;
-  border-bottom: 2px dashed var(--ink-faint);
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--ink-faint);
   animation: none;
   /* Cap so the poster doesn't tower over the CTA on tall viewports. */
   max-height: 60vh;
+  overflow: hidden;
 }
 
 .hero-card__content {

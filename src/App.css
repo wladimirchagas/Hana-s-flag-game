@@ -3,7 +3,9 @@
 .app {
   position: relative;
   min-height: 100vh;
-  padding: 1.5rem 1rem 3rem;
+  /* Top padding leaves room for the fixed .game-nav and the fixed
+     .game-clock (~3.5rem clears both safely). */
+  padding: 3.75rem 1rem 3rem;
   background:
     radial-gradient(1200px 600px at 50% -10%, var(--cream-glow-1) 0%, transparent 60%),
     radial-gradient(900px 500px at 90% 110%, var(--cream-glow-2) 0%, transparent 60%),
@@ -67,10 +69,9 @@
 }
 
 /* --- Home link --- */
-.game-nav {
-  max-width: 60rem;
-  margin: 0 auto 0.75rem;
-}
+/* .game-nav layout (position, flex, gap) is defined in index.css since the
+   theme toggle and home button share that fixed-top-left wrapper across the
+   whole app. */
 
 .game-nav__home {
   display: inline-block;

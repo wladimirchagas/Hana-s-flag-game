@@ -279,10 +279,26 @@ a {
   justify-content: flex-end;
 }
 
-/* === Game-nav layout (home + toggle on the same row) === */
+/* === Game-nav layout (home + toggle on the same row) ===
+   Fixed to the top-left of the viewport so the theme toggle stays reachable
+   no matter how far the user scrolls inside the game card. Anchored LEFT so
+   it never crashes with the fixed game-clock in the top-right corner — that
+   was the source of the 'toggle looks hidden behind the timer' bug.
+
+   (sticky would have worked too but the `.app` container sets
+   overflow-x: hidden, which silently breaks sticky descendants. Fixed
+   positioning is immune to that.) */
 .game-nav {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 25;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 0.65rem;
+  /* Reset the in-flow layout (max-width / auto margin) inherited from
+     App.css's earlier `.game-nav` rule — those don't make sense for a
+     fixed element. */
+  max-width: none;
+  margin: 0;
 }
