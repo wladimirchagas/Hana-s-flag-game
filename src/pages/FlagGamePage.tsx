@@ -13,17 +13,40 @@ import { GameResultsFlags } from "../components/GameResultsFlags";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameFinishCelebration } from "../components/GameFinishCelebration";
+import { DIFFICULTY_CONFIG } from "../lib/flagDifficulty";
 import "../App.css";
+
+type QuizState = {
+  difficulty: "easy" | "moderate" | "hard";
+  flagCount: number;
+};
 
 export default function FlagGamePage() {
   const location = useLocation();
-  const navState = location.state as { codes?: string[] } | null;
+  const navState = location.state as
+    | { codes?: string[]; quiz?: QuizState }
+    | null;
   const filterCodes =
     Array.isArray(navState?.codes) && navState!.codes!.length > 0
       ? navState!.codes!
       : null;
+  const quiz = navState?.quiz ?? null;
   const isCustomGame = filterCodes !== null;
-  const game = useGame({ filterCodes, allowRetry: isCustomGame });
+  const isQuickQuiz = quiz !== null;
+  // Look up the difficulty config to know dropdown size + max attempts.
+  // Imported lazily here to keep this file's imports tidy.
+  const quizCfg = quiz
+    ? DIFFICULTY_CONFIG[quiz.difficulty]
+    : null;
+  const game = useGame({
+    filterCodes,
+    // Both Custom Game and Quick Quiz allow retries on a wrong guess.
+    allowRetry: isCustomGame || isQuickQuiz,
+    difficulty: quiz?.difficulty ?? null,
+    flagCount: quiz?.flagCount ?? null,
+    optionCount: quizCfg?.optionCount ?? null,
+    maxAttemptsPerFlag: quizCfg?.maxAttempts ?? Infinity,
+  });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const [playerName, setPlayerName] = useState("");
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">(
@@ -38,19 +61,21 @@ export default function FlagGamePage() {
     if (game.phase !== "finished") setCelebrationDismissed(false);
   }, [game.phase]);
 
-  // Build the code→name map and the set of clickable codes once whenever
-  // game.countries changes (after the API fetch, or after Custom-Game filter).
+  // The dropdown and map work off the per-question alternatives. For
+  // All-Flags and Custom Game modes this is the full pool (questionAlternatives
+  // falls back to countries). For Quick Quiz it's the per-question subset.
+  const alternatives = game.questionAlternatives;
   const countryCodes = useMemo(
-    () => new Set(game.countries.map((c) => c.code)),
-    [game.countries],
+    () => new Set(alternatives.map((c) => c.code)),
+    [alternatives],
   );
   const countryNames = useMemo(
-    () => new Map(game.countries.map((c) => [c.code, c.name])),
-    [game.countries],
+    () => new Map(alternatives.map((c) => [c.code, c.name])),
+    [alternatives],
   );
   const codeToCountry = useMemo(
-    () => new Map(game.countries.map((c) => [c.code, c])),
-    [game.countries],
+    () => new Map(alternatives.map((c) => [c.code, c])),
+    [alternatives],
   );
 
   if (game.phase === "error") {
@@ -124,12 +149,30 @@ export default function FlagGamePage() {
       </div>
       <main className="card">
         <header className="card-header">
-          <h1>Guess the Flag {isCustomGame && <span className="card-header__chip">Custom</span>}</h1>
+          <h1>
+            Guess the Flag{" "}
+            {isCustomGame && <span className="card-header__chip">Custom</span>}
+            {isQuickQuiz && quizCfg && (
+              <span className="card-header__chip">{quizCfg.label}</span>
+            )}
+          </h1>
           <p className="tagline">
             {isFinished
               ? playedAllFlags
                 ? "All flags played. Game complete."
                 : "Game ended early."
+              : isQuickQuiz && quizCfg
+              ? (() => {
+                  const remaining = quizCfg.maxAttempts - game.retryAttempts;
+                  if (game.retryAttempts === 0) {
+                    return `${quizCfg.optionCount} choices · ${quizCfg.maxAttempts} ${
+                      quizCfg.maxAttempts === 1 ? "try" : "tries"
+                    } per flag.`;
+                  }
+                  return `${remaining} ${
+                    remaining === 1 ? "try" : "tries"
+                  } left on this flag.`;
+                })()
               : isCustomGame
               ? game.retryAttempts > 0
                 ? `Try again — keep going until you get it right!`
@@ -141,7 +184,7 @@ export default function FlagGamePage() {
         <FlagCard country={game.current} phase={game.phase} />
 
         <CountryDropdown
-          countries={game.countries}
+          countries={alternatives}
           value={game.selected}
           onChange={game.setSelected}
           disabled={isRevealed || isFinished || game.phase === "loading"}
