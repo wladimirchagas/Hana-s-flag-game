@@ -243,7 +243,9 @@
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 0.04em;
-  color: #fff;
+  /* Dark ink — white text on coral/sky fails AA contrast badly (2.13–2.76:1).
+     Dark ink on these passes ≥5.7:1. */
+  color: var(--ink-fixed);
   border: 3px solid var(--ink);
   box-shadow: 0 5px 0 var(--ink);
 }
@@ -357,7 +359,7 @@
   margin: 0;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--coral);
+  color: var(--coral-deep);
   text-shadow: 0 2px 0 var(--ink);
 }
 
@@ -426,7 +428,7 @@
 .picker__play {
   background: var(--sky);
   border: 3px solid var(--ink);
-  color: #fff;
+  color: var(--ink-fixed);
   font-family: inherit;
   font-weight: 700;
   font-size: 1.05rem;
