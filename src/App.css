@@ -373,6 +373,38 @@
   margin: 0 0 1.25rem;
 }
 
+/* Dropdown + Confirm on a single line. The dropdown stretches; the button
+   sits beside it, bottom-aligned with the input so it lines up with the
+   text field (not the label above). Collapses to a vertical stack on
+   narrow viewports so the Confirm button always remains tappable. */
+.answer-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
+.answer-row > .dropdown {
+  flex: 1 1 auto;
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+.answer-row__confirm {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+}
+
+@media (max-width: 540px) {
+  .answer-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .answer-row__confirm {
+    width: 100%;
+  }
+}
+
 .btn {
   font-family: inherit;
   font-weight: 700;
