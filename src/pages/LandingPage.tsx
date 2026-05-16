@@ -91,7 +91,22 @@ export default function LandingPage() {
         </div>
 
         <div className="sticker__cards">
-          {/* Quick Quiz is now the 2nd CTA. */}
+          {/* Learn mode — no-stakes sandbox, listed first because it's the
+              friendliest entry point for new players. */}
+          <button
+            type="button"
+            className="card-sticker card-sticker--d card-sticker--secondary"
+            onClick={() => navigate('/learn')}
+          >
+            <h2 className="card-sticker__title">Learn your flags</h2>
+            <p className="card-sticker__sub">
+              Hover or click any country on the world map to see its flag.
+              No clock, no score — just explore at your own pace.
+            </p>
+            <span className="card-sticker__cta card-sticker__cta--pink">EXPLORE →</span>
+          </button>
+
+          {/* Quick Quiz is now the 3rd CTA. */}
           <button
             type="button"
             className="card-sticker card-sticker--c card-sticker--secondary"

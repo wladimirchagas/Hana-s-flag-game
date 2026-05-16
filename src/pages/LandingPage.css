@@ -335,6 +335,7 @@
 .card-sticker__cta--lime { background: var(--lime); }
 .card-sticker__cta--sky { background: var(--sky); }
 .card-sticker__cta--mustard { background: var(--mustard); }
+.card-sticker__cta--pink { background: var(--pink); }
 
 .card-sticker:hover .card-sticker__cta,
 .card-sticker:focus-visible .card-sticker__cta {
