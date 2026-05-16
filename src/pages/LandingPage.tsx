@@ -87,8 +87,9 @@ export default function LandingPage() {
           <div className="hero-card__content">
             <h2 className="hero-card__title">Hana&rsquo;s Game</h2>
             <p className="hero-card__desc">
-              Build your own list of flags to practise. Pick any of the 195
-              countries — you can keep trying each flag until you get it right.
+              Build your own list of flags to practise. Pick the countries you
+              already know the flag and as you learn about new countries, just
+              add them to your list to test your memory!
             </p>
             <span className="hero-card__cta card-sticker__cta card-sticker__cta--sky">PLAY!</span>
           </div>
