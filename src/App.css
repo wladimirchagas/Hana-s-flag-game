@@ -393,7 +393,8 @@
 }
 
 .btn-primary {
-  background: var(--coral);
+  /* Green = "go / submit"; avoids the 'stop' connotation of red. */
+  background: var(--lime);
   box-shadow: 0 5px 0 var(--ink);
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
@@ -557,7 +558,8 @@
   font-size: 0.9rem;
   letter-spacing: 0.02em;
   padding: 0.35rem 0.85rem;
-  background: var(--coral);
+  /* Lime — matches the in-game Confirm button; submit action stays green. */
+  background: var(--lime);
   color: var(--ink-fixed);
   border: 2.5px solid var(--ink);
   border-radius: 999px;
@@ -1471,7 +1473,8 @@
   font-weight: 700;
   letter-spacing: 0.02em;
   padding: 0.9rem 2.4rem;
-  background: var(--coral);
+  /* Sky — a friendly 'next step' colour after the celebration. */
+  background: var(--sky);
   color: var(--ink-fixed);
   border: 3px solid var(--ink);
   border-radius: 999px;

@@ -121,7 +121,7 @@ export default function LandingPage() {
               The full set, in random order. One guess per flag — for the
               ultimate test of how many you know.
             </p>
-            <span className="card-sticker__cta card-sticker__cta--coral">PLAY ALL →</span>
+            <span className="card-sticker__cta card-sticker__cta--lime">PLAY ALL →</span>
           </button>
         </div>
 

@@ -324,7 +324,11 @@
   box-shadow: 0 5px 0 var(--ink);
 }
 
-.card-sticker__cta--coral { background: var(--coral); }
+/* `--coral` variant kept for backwards-compat but now points at lime — red
+   CTAs discourage clicks, so we replaced the colour and left the class name
+   so any older markup that still references it picks up the new look. */
+.card-sticker__cta--coral { background: var(--lime); }
+.card-sticker__cta--lime { background: var(--lime); }
 .card-sticker__cta--sky { background: var(--sky); }
 .card-sticker__cta--mustard { background: var(--mustard); }
 
@@ -852,7 +856,9 @@
 
 .qquiz__diff--easy.qquiz__diff--active   { background: var(--lime); }
 .qquiz__diff--moderate.qquiz__diff--active { background: var(--sky); }
-.qquiz__diff--hard.qquiz__diff--active   { background: var(--coral); }
+/* Pink rather than coral red — keeps a distinct 'warmer/intense' colour for
+   the Hard chip without flagging it as 'stop / danger'. */
+.qquiz__diff--hard.qquiz__diff--active   { background: var(--pink); }
 .qquiz__diff--active {
   box-shadow: 0 5px 0 var(--ink);
   transform: translateY(-2px);
@@ -911,7 +917,8 @@
 }
 
 .qquiz__play {
-  background: var(--coral);
+  /* Lime — same submit colour as the in-game Confirm button. */
+  background: var(--lime);
   border: 3px solid var(--ink);
   color: var(--ink-fixed);
   font-family: inherit;
