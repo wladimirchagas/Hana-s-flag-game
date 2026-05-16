@@ -70,7 +70,7 @@ export function CountryPickerModal({
         <header className="picker__header">
           <div>
             <h2 id="picker-title" className="picker__title">
-              Pick your flags
+              Hana&rsquo;s Game
             </h2>
             <p className="picker__hint">
               Checked countries stay at the top. Pick at least 2.

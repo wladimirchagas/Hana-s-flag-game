@@ -10,7 +10,6 @@ import { Feedback } from "../components/Feedback";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { GameClock } from "../components/GameClock";
 import { GameResultsFlags } from "../components/GameResultsFlags";
-import { ThemeToggle } from "../components/ThemeToggle";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameFinishCelebration } from "../components/GameFinishCelebration";
 import { DIFFICULTY_CONFIG } from "../lib/flagDifficulty";
@@ -60,6 +59,17 @@ export default function FlagGamePage() {
   useEffect(() => {
     if (game.phase !== "finished") setCelebrationDismissed(false);
   }, [game.phase]);
+
+  // Reset scroll to the top whenever a new flag is shown — both on initial
+  // landing (current goes null → flag) and after a correct guess advances
+  // the game to the next round (current.code changes). Keeps the flag image
+  // and dropdown in view without the user having to scroll up manually.
+  const currentCode = game.current?.code;
+  useEffect(() => {
+    if (currentCode) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [currentCode]);
 
   // The dropdown and map work off the per-question alternatives. For
   // All-Flags and Custom Game modes this is the full pool (questionAlternatives
@@ -131,10 +141,14 @@ export default function FlagGamePage() {
           onContinue={() => setCelebrationDismissed(true)}
         />
       )}
+      {/* The burst is position:fixed/centered, so it always appears in the
+          user's viewport — even when they're scrolled down at the score
+          board or world map. Active in every game mode (was previously
+          gated to Hana's Game only). */}
       <AnswerBurst
         nonce={game.attemptNonce}
         wasCorrect={game.wasCorrect}
-        active={isCustomGame}
+        active={!isFinished}
       />
       <GameClock
         startedAt={game.gameStartedAtMs}
@@ -145,7 +159,6 @@ export default function FlagGamePage() {
         <Link className="game-nav__home" to="/">
           ← Home
         </Link>
-        <ThemeToggle />
       </div>
       <main className="card">
         <header className="card-header">
@@ -183,28 +196,28 @@ export default function FlagGamePage() {
 
         <FlagCard country={game.current} phase={game.phase} />
 
-        <CountryDropdown
-          countries={alternatives}
-          value={game.selected}
-          onChange={game.setSelected}
-          disabled={isRevealed || isFinished || game.phase === "loading"}
-          label="Your answer"
-        />
-
-        {!isFinished && (
-          <div className="actions">
-            {!isRevealed ? (
-              <button
-                type="button"
-                className="btn btn-primary"
-                disabled={primaryDisabled}
-                onClick={game.confirm}
-              >
-                Confirm
-              </button>
-            ) : null}
-          </div>
-        )}
+        {/* Dropdown + Confirm on a single row — saves vertical space and
+            keeps the action button visible next to the typed answer. The
+            row collapses to a vertical stack on narrow viewports. */}
+        <div className="answer-row">
+          <CountryDropdown
+            countries={alternatives}
+            value={game.selected}
+            onChange={game.setSelected}
+            disabled={isRevealed || isFinished || game.phase === "loading"}
+            label="Your answer"
+          />
+          {!isFinished && !isRevealed && (
+            <button
+              type="button"
+              className="btn btn-primary answer-row__confirm"
+              disabled={primaryDisabled}
+              onClick={game.confirm}
+            >
+              Confirm
+            </button>
+          )}
+        </div>
 
         {game.phase !== "loading" && (
           <Feedback

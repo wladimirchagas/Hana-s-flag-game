@@ -5,8 +5,7 @@ import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
 import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
-import { ThemeToggle } from '../components/ThemeToggle'
-import { HeroPoster } from '../components/HeroCharacters'
+import { HeroCarousel } from '../components/HeroCharacters'
 import './LandingPage.css'
 
 const TITLE_LETTERS: { ch: string; color: string }[] = [
@@ -37,10 +36,6 @@ export default function LandingPage() {
     <div className="sticker">
       <FlagConfetti />
 
-      <div className="sticker__topbar">
-        <ThemeToggle />
-      </div>
-
       <main className="sticker__main">
         <div className="sticker__titlewrap">
           <h1 className="sticker__title">
@@ -66,42 +61,62 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <HeroPoster />
+        {/* Hero card — integrates the rotating poster with the Hana's Game
+            CTA so they read as a single visual unit. The whole card is
+            clickable (role=button) to open the picker; the carousel arrows
+            inside stopPropagation so they don't trigger play. */}
+        <div
+          className="hero-card"
+          role="button"
+          tabIndex={0}
+          aria-label="Play Hana's Game"
+          onClick={() => setPickerOpen(true)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault()
+              setPickerOpen(true)
+            }
+          }}
+        >
+          <HeroCarousel className="hero-card__poster" />
+          <div className="hero-card__content">
+            <h2 className="hero-card__title">Hana&rsquo;s Game</h2>
+            <p className="hero-card__desc">
+              Build your own list of flags to practise. Pick the countries you
+              already know the flag and as you learn about new countries, just
+              add them to your list to test your memory!
+            </p>
+            <span className="hero-card__cta card-sticker__cta card-sticker__cta--sky">PLAY!</span>
+          </div>
+        </div>
 
         <div className="sticker__cards">
-          {/* My Picks is the hero CTA — biggest, brightest, top of stack. */}
-          <button
-            type="button"
-            className="card-sticker card-sticker--b card-sticker--hero"
-            onClick={() => setPickerOpen(true)}
-          >
-            <div className="card-sticker__row" aria-hidden="true">
-              <span>☑</span><span>☑</span><span>☑</span>
-              <span>☐</span><span>☐</span><span>☐</span>
-            </div>
-            <h2 className="card-sticker__title">My Picks</h2>
-            <p className="card-sticker__sub">Choose your own flags</p>
-            <span className="card-sticker__cta card-sticker__cta--sky">PLAY!</span>
-          </button>
-
-          {/* All Flags is the secondary CTA — smaller, more compact, below. */}
-          <button
-            type="button"
-            className="card-sticker card-sticker--a card-sticker--secondary"
-            onClick={playAll}
-          >
-            <h2 className="card-sticker__title">All 195 Flags</h2>
-            <span className="card-sticker__cta card-sticker__cta--coral">PLAY ALL →</span>
-          </button>
-
-          {/* Quick Quiz is a tertiary CTA — pick a count + difficulty. */}
+          {/* Quick Quiz is now the 2nd CTA. */}
           <button
             type="button"
             className="card-sticker card-sticker--c card-sticker--secondary"
             onClick={() => setQuizOpen(true)}
           >
             <h2 className="card-sticker__title">Quick Quiz</h2>
+            <p className="card-sticker__sub">
+              Pick 10, 20, or 30 flags at Easy, Moderate, or Hard. Difficulty
+              sets your options and tries per flag.
+            </p>
             <span className="card-sticker__cta card-sticker__cta--mustard">SET UP →</span>
+          </button>
+
+          {/* All 195 Flags is now the 3rd CTA. */}
+          <button
+            type="button"
+            className="card-sticker card-sticker--a card-sticker--secondary"
+            onClick={playAll}
+          >
+            <h2 className="card-sticker__title">All 195 Flags</h2>
+            <p className="card-sticker__sub">
+              The full set, in random order. One guess per flag — for the
+              ultimate test of how many you know.
+            </p>
+            <span className="card-sticker__cta card-sticker__cta--lime">PLAY ALL →</span>
           </button>
         </div>
 

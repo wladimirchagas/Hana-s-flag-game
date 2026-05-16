@@ -145,7 +145,9 @@ a {
   font-size: 0.95rem;
   text-decoration: none;
   color: var(--ink-fixed);
-  background: var(--coral);
+  /* Sky instead of coral — green/cyan reads as 'proceed' and avoids the
+     'stop / warning' association of red on a recovery CTA. */
+  background: var(--sky);
   border: 3px solid var(--ink);
   box-shadow: 0 5px 0 var(--ink);
 }
@@ -266,21 +268,47 @@ a {
   }
 }
 
-/* === Top bar wrapper for the landing page === */
-.sticker__topbar {
-  position: relative;
-  z-index: 3;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem 0;
-  display: flex;
-  justify-content: flex-end;
+/* === Global theme toggle ===
+   Single instance rendered at the React root and pinned to the top-centre
+   of the viewport, so the same control is visible from the landing page,
+   the game pages, and any future routes. z-index 30 sits above the in-game
+   home nav (25) and the fixed timer (20), but below modals and the
+   celebration overlay (≥50) — so it disappears while focused modals are
+   open, which is the expected behaviour. */
+.global-theme-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
 }
 
-/* === Game-nav layout (home + toggle on the same row) === */
+/* Deprecated — left in case anything still references it but the toggle
+   no longer renders here. Safe to delete once nothing in the JSX uses it. */
+.sticker__topbar {
+  display: none;
+}
+
+/* === Game-nav layout (home + toggle on the same row) ===
+   Fixed to the top-left of the viewport so the theme toggle stays reachable
+   no matter how far the user scrolls inside the game card. Anchored LEFT so
+   it never crashes with the fixed game-clock in the top-right corner — that
+   was the source of the 'toggle looks hidden behind the timer' bug.
+
+   (sticky would have worked too but the `.app` container sets
+   overflow-x: hidden, which silently breaks sticky descendants. Fixed
+   positioning is immune to that.) */
 .game-nav {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 25;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 0.65rem;
+  /* Reset the in-flow layout (max-width / auto margin) inherited from
+     App.css's earlier `.game-nav` rule — those don't make sense for a
+     fixed element. */
+  max-width: none;
+  margin: 0;
 }
