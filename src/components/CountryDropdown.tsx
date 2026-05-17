@@ -7,6 +7,13 @@ type Props = {
   onChange: (country: Country | null) => void;
   disabled: boolean;
   label: string;
+  /**
+   * Where the desktop suggestion list opens relative to the input. Default
+   * "down" (existing behaviour). Pass "up" when the dropdown lives in a
+   * bottom-anchored panel (Learn page) so the list rises into view instead
+   * of opening off-screen.
+   */
+  listPlacement?: "down" | "up";
 };
 
 const MAX_OPTIONS = 200;
@@ -28,6 +35,7 @@ export function CountryDropdown({
   onChange,
   disabled,
   label,
+  listPlacement = "down",
 }: Props) {
   const listId = useId();
   const inputId = useId();
@@ -163,7 +171,7 @@ export function CountryDropdown({
       {open && !disabled && (
         <ul
           id={listId}
-          className="dropdown-list dropdown-list--desktop"
+          className={`dropdown-list dropdown-list--desktop dropdown-list--${listPlacement}`}
           role="listbox"
         >
           {filtered.length === 0 ? (

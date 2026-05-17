@@ -2,36 +2,35 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
+import { CountryDropdown } from "../components/CountryDropdown";
 import "../App.css";
 import "./LearnPage.css";
 
 /**
  * Sandbox-style "Learn your flags" mode.
  *
- * Layout:
- *   - Top nav (← Home — global ThemeToggle and centred top toggle handled
- *     at the React root, so we only need the Home button here).
- *   - Main grid: searchable country list (left) + interactive world map
- *     (centre) + selected country detail panel with flag (right). Stacks
- *     on narrow viewports.
+ * Layout (full-screen):
+ *   - World map fills the viewport edge-to-edge (no card chrome).
+ *   - Floating panel anchored to the bottom-left of the viewport contains:
+ *       • the selected (or hovered) country's flag and name
+ *       • a country search dropdown at the bottom, opening upward
+ *   - Top bar (Home button + global theme toggle) sits over the map.
  *
  * Interaction:
- *   - Hover any country on the map → shows its name + flag in the detail
- *     panel as a transient preview.
- *   - Click a country on the map OR a row in the list → locks it as the
- *     selected country and highlights it on the map.
- *   - Tap the flag image → opens a full-screen viewer (SVG sources, so
- *     they scale to any size cleanly).
+ *   - Hover any country on the map → live preview in the floating panel.
+ *   - Click a country (map OR dropdown) → locks selection.
+ *   - Tap the flag image → opens the fullscreen flag viewer (SVG scales).
+ *   - Tiny nations (Vatican, Monaco, San Marino, Andorra, Liechtenstein,
+ *     etc.) are reachable via the dropdown's search, since their map
+ *     paths are too small to click reliably.
  *
- * The map omits the Confirm popover for this mode (selectable.onConfirm
- * is intentionally not supplied).
+ * The map omits the Confirm popover (selectable.onConfirm not supplied).
  */
 export default function LearnPage() {
   const [countries, setCountries] = useState<Country[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [hovered, setHovered] = useState<Country | null>(null);
   const [selected, setSelected] = useState<Country | null>(null);
-  const [query, setQuery] = useState("");
   const [zoomed, setZoomed] = useState(false);
 
   useEffect(() => {
@@ -80,14 +79,9 @@ export default function LearnPage() {
     [countries],
   );
 
-  const filteredList = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return countries;
-    return countries.filter((c) => c.name.toLowerCase().includes(q));
-  }, [countries, query]);
-
-  // Show the hovered country in the detail panel if any (live preview), else
-  // fall back to whatever the user last clicked.
+  // Hovered country wins (live preview); selected is the fallback "locked"
+  // state. So moving the mouse over a different country temporarily shows it,
+  // and leaving the map reverts to the last-clicked country.
   const display = hovered ?? selected;
 
   if (loadError) {
@@ -106,125 +100,91 @@ export default function LearnPage() {
   }
 
   return (
-    <div className="app learn">
+    <div className="learn-fs">
       <div className="game-nav">
         <Link className="game-nav__home" to="/">
           ← Home
         </Link>
       </div>
 
-      <main className="learn__card">
-        <header className="learn__header">
-          <h1 className="learn__title">Learn your flags</h1>
-          <p className="learn__sub">
-            No clock, no score — just hover or click any country to see its
-            flag. Use the list to find tiny nations like Vatican City or
-            Monaco that are hard to click on the map.
-          </p>
-        </header>
+      <div className="learn-fs__map" aria-label="World map">
+        <WorldProgressMap
+          countryResults={{}}
+          selectedCode={display?.code ?? null}
+          disabled={countries.length === 0}
+          selectable={{
+            codes,
+            names,
+            onSelect: (code) => {
+              const c = codeToCountry.get(code);
+              if (c) {
+                setSelected(c);
+                setHovered(null);
+              }
+            },
+            onHover: (code) => {
+              if (!code) {
+                setHovered(null);
+                return;
+              }
+              const c = codeToCountry.get(code);
+              if (c) setHovered(c);
+            },
+          }}
+        />
+      </div>
 
-        <div className="learn__layout">
-          <aside className="learn__finder" aria-label="Country list">
-            <input
-              type="text"
-              className="learn__search"
-              placeholder="Search 195 countries…"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              inputMode="search"
-              autoCapitalize="off"
-              autoCorrect="off"
-              spellCheck={false}
-            />
-            <ul className="learn__list" role="listbox">
-              {filteredList.length === 0 ? (
-                <li className="learn__empty">No matches</li>
-              ) : (
-                filteredList.map((c) => {
-                  const isSelected = selected?.code === c.code;
-                  return (
-                    <li key={c.code}>
-                      <button
-                        type="button"
-                        role="option"
-                        aria-selected={isSelected}
-                        className={`learn__item ${
-                          isSelected ? "learn__item--active" : ""
-                        }`}
-                        onClick={() => {
-                          setSelected(c);
-                          setHovered(null);
-                        }}
-                        onMouseEnter={() => setHovered(c)}
-                        onMouseLeave={() => setHovered(null)}
-                      >
-                        {c.name}
-                      </button>
-                    </li>
-                  );
-                })
-              )}
-            </ul>
-          </aside>
-
-          <section className="learn__map" aria-label="World map">
-            <WorldProgressMap
-              countryResults={{}}
-              selectedCode={display?.code ?? null}
-              disabled={countries.length === 0}
-              selectable={{
-                codes,
-                names,
-                onSelect: (code) => {
-                  const c = codeToCountry.get(code);
-                  if (c) {
-                    setSelected(c);
-                    setHovered(null);
-                  }
-                },
-                onHover: (code) => {
-                  if (!code) {
-                    setHovered(null);
-                    return;
-                  }
-                  const c = codeToCountry.get(code);
-                  if (c) setHovered(c);
-                },
-              }}
-            />
-          </section>
-
-          <section className="learn__detail" aria-live="polite">
-            {display ? (
-              <>
-                <h2 className="learn__detail-name">{display.name}</h2>
-                <p className="learn__detail-continent">{display.continent}</p>
-                <button
-                  type="button"
-                  className="learn__flag"
-                  onClick={() => setZoomed(true)}
-                  aria-label={`Enlarge ${display.name} flag`}
-                >
-                  <img
-                    src={display.flagSvg}
-                    alt=""
-                    className="learn__flag-img"
-                    draggable={false}
-                  />
-                  <span className="learn__flag-hint" aria-hidden="true">
-                    ⤢ Click to enlarge
-                  </span>
-                </button>
-              </>
-            ) : (
-              <div className="learn__detail-empty">
-                <p>Hover or click a country on the map.</p>
-                <p>Or pick one from the list on the left.</p>
-              </div>
-            )}
-          </section>
+      <aside className="learn-fs__panel" aria-live="polite">
+        {/* Detail section — top of panel */}
+        <div className="learn-fs__detail">
+          {display ? (
+            <>
+              <p className="learn-fs__continent">{display.continent}</p>
+              <h2 className="learn-fs__name">{display.name}</h2>
+              <button
+                type="button"
+                className="learn-fs__flag"
+                onClick={() => setZoomed(true)}
+                aria-label={`Enlarge ${display.name} flag`}
+              >
+                <img
+                  src={display.flagSvg}
+                  alt=""
+                  className="learn-fs__flag-img"
+                  draggable={false}
+                />
+                <span className="learn-fs__flag-hint" aria-hidden="true">
+                  ⤢ Click to enlarge
+                </span>
+              </button>
+            </>
+          ) : (
+            <div className="learn-fs__empty">
+              <p className="learn-fs__empty-title">Learn your flags</p>
+              <p className="learn-fs__empty-sub">
+                Hover or click any country on the map — or use the search
+                below to find tiny nations like Vatican City.
+              </p>
+            </div>
+          )}
         </div>
-      </main>
+
+        {/* Search section — bottom of panel; dropdown opens upward so the
+            list rises into view instead of pushing off the bottom edge. */}
+        <div className="learn-fs__search">
+          <CountryDropdown
+            countries={countries}
+            value={selected}
+            onChange={(c) => {
+              setSelected(c);
+              setHovered(null);
+            }}
+            disabled={countries.length === 0}
+            label="Find a country"
+            listPlacement="up"
+          />
+        </div>
+      </aside>
 
       {zoomed && display && (
         <div
