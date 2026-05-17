@@ -275,6 +275,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Safavid Empire", { continent: "Western Asia", note: "Iranian Shia empire; rival of the Ottomans." }],
   ["Prussia", { continent: "Central Europe", note: "German kingdom that unified Germany in 1871." }],
   ["Maratha Confederacy", { continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India." }],
+  ["Viceroyalty of Brazil", { flag: "historical-flags/ukpba.png", continent: "South America", note: "United Kingdom of Portugal, Brazil and the Algarves (1815–1825) — Brazil was part of a joint kingdom with Portugal, not yet independent." }],
   ["Rattanakosin Kingdom", { continent: "Southeast Asia", note: "Modern Kingdom of Thailand, founded 1782 — capital Bangkok." }],
   // Qajar Persia used the Lion-and-Sun banner, not the modern Iran flag —
   // intentionally no modernName so the panel shows "no flag image".
@@ -391,7 +392,10 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   ["Portuguese Guinea", "Portugal"],
   ["Delagoa Bay", "Portugal"],
   ["Goa", "Portugal"],
-  ["Viceroyalty of Brazil", "Portugal"], // Brazil was still part of the Kingdom of Portugal in 1815
+  // Viceroyalty of Brazil — handled by an explicit registry entry below
+  // because in 1815 the flag was the United Kingdom of Portugal, Brazil
+  // and the Algarves banner (a blue armillary sphere on white), NOT the
+  // modern red/green Portuguese flag. See POLITY_REGISTRY.
   ["Vice-Royalty of New Granada", "Spain"],
   ["Vice-Royalty of New Spain", "Spain"],
   ["Vice-Royalty of Peru", "Spain"],
