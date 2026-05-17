@@ -263,7 +263,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Inca Empire", { continent: "South America", note: "Andean empire stretching from Ecuador to Chile." }],
   ["Ming", { continent: "East Asia", note: "Ming dynasty — Great Wall, Forbidden City, voyages of Zheng He." }],
   ["Qing", { continent: "East Asia", note: "Last imperial Chinese dynasty." }],
-  ["Manchu Empire", { continent: "East Asia", note: "Qing dynasty — China's last imperial dynasty." }],
+  ["Manchu Empire", { continent: "East Asia", note: "Qing dynasty — China's last imperial dynasty. Used the yellow dragon banner, not the modern Chinese flag." }],
   ["Mughal Empire", { continent: "South Asia", note: "Persianate Muslim empire that built the Taj Mahal." }],
   ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Sultanate ruling Anatolia, the Balkans, and the Middle East." }],
   ["Spanish Empire", { continent: "Global", note: "First truly global empire; covered the Americas, Philippines, and parts of Africa." }],
@@ -276,11 +276,18 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Prussia", { continent: "Central Europe", note: "German kingdom that unified Germany in 1871." }],
   ["Maratha Confederacy", { continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India." }],
   ["Rattanakosin Kingdom", { continent: "Southeast Asia", note: "Modern Kingdom of Thailand, founded 1782 — capital Bangkok." }],
-  ["Persia", { continent: "Western Asia", note: "Qajar-era Persia, the forerunner of modern Iran.", modernName: "Iran" }],
-  ["Sweden–Norway", { continent: "Northern Europe", note: "Union of Sweden and Norway, 1814–1905.", modernName: "Sweden" }],
-  ["Kingdom of Sardinia", { continent: "Italy", note: "Piedmont-Sardinia — core of the future Kingdom of Italy.", modernName: "Italy" }],
-  ["Kingdom of the Two Sicilies", { continent: "Italy", note: "Bourbon kingdom of southern Italy and Sicily.", modernName: "Italy" }],
-  ["Kingfom of Italy", { continent: "Italy", note: "Kingdom of Italy (dataset typo of \"Kingdom\").", modernName: "Italy" }],
+  // Qajar Persia used the Lion-and-Sun banner, not the modern Iran flag —
+  // intentionally no modernName so the panel shows "no flag image".
+  ["Persia", { continent: "Western Asia", note: "Qajar-era Persia (forerunner of modern Iran). Used the Lion-and-Sun banner — different from the modern flag." }],
+  ["Sweden–Norway", { continent: "Northern Europe", note: "Personal union of Sweden and Norway, 1814–1905. Sweden's tricross banner was very close to today's Swedish flag.", modernName: "Sweden" }],
+  // These were independent states in 1815, decades before Italy unified
+  // (1861). No modernName — modern Italian tricolour is anachronistic.
+  ["Kingdom of Sardinia", { continent: "Italy", note: "Piedmont-Sardinia — would later lead Italian unification, but used the Savoy flag in 1815." }],
+  ["Kingdom of the Two Sicilies", { continent: "Italy", note: "Bourbon kingdom of southern Italy and Sicily — its own flag, not the Italian tricolour." }],
+  // 1914 "Kingdom of Italy" (dataset typo "Kingfom"). By 1914 unified Italy
+  // flew the green-white-red tricolour with the Savoy arms — close enough
+  // to today's flag for kid-level recognition.
+  ["Kingfom of Italy", { continent: "Italy", note: "Kingdom of Italy, 1861–1946 (dataset has a typo of \"Kingdom\").", modernName: "Italy" }],
 
   // Modern (1914 – today) --------------------------------------------------
   ["Austro-Hungarian Empire", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Dual monarchy of the Habsburgs." }],
@@ -367,105 +374,51 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   ["Manchuria", "China"],
   ["Saar Protectorate", "Germany"],
   ["Southern Cameroon", "Cameroon"],
-  // 1815 historical names that map cleanly to modern countries
-  ["Algiers", "Algeria"],
+  // 1815 — only map names that are genuinely the same polity as a modern
+  // country (just renamed/translated). Anything that was a colony, vassal,
+  // or independent pre-modern state is OMITTED on purpose so the panel
+  // shows a "no flag image" placeholder rather than an anachronistic flag.
+  // We DO route colonies to the colonising power's modern flag where that
+  // is historically accurate (it really WAS their flag).
+  ["Algiers", "Algeria"], // Regency of Algiers; close enough to modern Algeria
   ["Tunis", "Tunisia"],
   ["Tripolitania", "Libya"],
   ["Cyrenaica", "Libya"],
-  ["Cape Colony", "South Africa"],
-  ["Asante", "Ghana"],
-  ["Oyo", "Nigeria"],
-  ["Bornu-Kanem", "Chad"],
-  ["Mossi States", "Burkina Faso"],
-  ["Buganda", "Uganda"],
-  ["Bunyoro", "Uganda"],
-  ["Zanzibar", "Tanzania"],
-  ["Lozi", "Zambia"],
-  ["Lunda", "Angola"],
-  ["Xhosa", "South Africa"],
-  ["Zulu", "South Africa"],
-  ["Sotho", "Lesotho"],
-  ["Portuguese East Africa", "Mozambique"],
-  ["Portuguese Guinea", "Guinea-Bissau"],
-  ["Delagoa Bay", "Mozambique"],
-  ["Goa", "India"],
-  ["Mysore (Indian princely state)", "India"],
-  ["Sikkim (Indian princely state)", "India"],
-  ["Oudh", "India"],
-  ["Travancore", "India"],
-  ["Arakan (Indian princely state)", "Myanmar"],
-  ["Arakan", "Myanmar"],
-  ["Malaya", "Malaysia"],
-  ["Kongldom of Hawaii", "United States"],
-  ["United Provinces of La Plata", "Argentina"],
-  ["Viceroyalty of Brazil", "Brazil"],
-  ["Vice-Royalty of New Granada", "Colombia"],
-  ["Vice-Royalty of New Spain", "Mexico"],
-  ["Vice-Royalty of Peru", "Peru"],
-  ["Republic of Kraków", "Poland"],
-  // German states 1815 — all use modern Germany's flag (best approximation)
-  ["Baden", "Germany"],
-  ["Bavaria", "Germany"],
-  ["Brunswick", "Germany"],
-  ["Bremen", "Germany"],
-  ["Hamburg", "Germany"],
-  ["Hanover", "Germany"],
-  ["Holstein", "Germany"],
-  ["Lübeck", "Germany"],
-  ["Mecklenburg-Schwerin", "Germany"],
-  ["Mecklenburg-Strelitz", "Germany"],
-  ["Oldenburg", "Germany"],
-  ["Saxony", "Germany"],
-  ["Schleswig", "Germany"],
-  ["Thuringia", "Germany"],
-  ["Württemberg", "Germany"],
-  ["Anhalt", "Germany"],
-  ["Hohenzollern", "Germany"],
-  ["Lippe-Detmold", "Germany"],
-  ["Nassau", "Germany"],
-  ["Palatinate", "Germany"],
-  ["Schaumburg-Lippe", "Germany"],
-  ["Waldeck", "Germany"],
-  ["Wetzlar", "Germany"],
-  ["Cuxhaven", "Germany"],
-  ["Grand Duchy of Hesse", "Germany"],
-  ["Electoral Hesse", "Germany"],
-  // Italian states 1815
-  ["Lombardy", "Italy"],
-  ["Venetia", "Italy"],
-  ["Modena", "Italy"],
-  ["Parma", "Italy"],
-  ["Tuscany", "Italy"],
-  ["Lucca", "Italy"],
-  ["Pontremoli", "Italy"],
-  ["Fivizzano", "Italy"],
-  ["Papal States", "Italy"],
-  // 1500/1700 European names
-  ["England", "United Kingdom"],
-  ["England and Ireland", "United Kingdom"],
-  ["Scottland", "United Kingdom"],
-  ["Britany", "France"],
-  ["Castille", "Spain"],
-  ["Castile", "Spain"],
-  ["Aragón", "Spain"],
-  ["Granada", "Spain"],
-  ["Navarre", "Spain"],
-  ["Denmark-Norway", "Denmark"],
-  ["Grand Duchy of Moscow", "Russia"],
-  // Misc
-  ["Grand Duchy of Moscow", "Russia"],
-  ["Manchu Empire", "China"],
-  ["Sinhalese kingdom", "Sri Lanka"],
-  ["Cyprus", "Cyprus"],
-  ["Japan", "Japan"],
-  ["Korea", "South Korea"],
+  // Colonies → colonising power (their actual sovereign flag in 1815):
+  ["Cape Colony", "United Kingdom"],
+  ["British East India Company", "United Kingdom"],
+  ["Portuguese East Africa", "Portugal"],
+  ["Portuguese Guinea", "Portugal"],
+  ["Delagoa Bay", "Portugal"],
+  ["Goa", "Portugal"],
+  ["Viceroyalty of Brazil", "Portugal"], // Brazil was still part of the Kingdom of Portugal in 1815
+  ["Vice-Royalty of New Granada", "Spain"],
+  ["Vice-Royalty of New Spain", "Spain"],
+  ["Vice-Royalty of Peru", "Spain"],
+  // Independent African / Asian / Indian polities in 1815 — these had their
+  // own kingdoms / cultures and DID NOT use the modern country flag. Better
+  // to show no flag than the wrong one. Intentionally omitted:
+  //   Asante, Oyo, Bornu-Kanem, Mossi States, Buganda, Bunyoro, Zanzibar,
+  //   Lozi, Lunda, Xhosa, Zulu, Sotho, Hong Kong (Qing China then),
+  //   Kingdom of Hawaii, Republic of Kraków, Indian princely states,
+  //   Arakan, Malaya, United Provinces of La Plata (mid-revolution).
+  // German and Italian pre-unification states (1815): intentionally NOT
+  // aliased. Each had its own flag — modern Germany / Italy are anachronistic
+  // (those countries didn't exist yet, 1871 and 1861 respectively). Showing
+  // no flag is more honest. Same reasoning excludes Papal States, Kingdom
+  // of Sardinia, Kingdom of the Two Sicilies, etc.
+  // 1500/1700 European names — DELIBERATELY SPARSE.
+  // Pre-modern kingdoms had their own heraldry that bears no resemblance
+  // to modern flags. England (1500) flew the Cross of St George, not the
+  // Union Jack; Castile a castle banner; Denmark-Norway the Dannebrog —
+  // OK that one is fine. Most intentionally omitted to avoid showing the
+  // modern flag for the wrong era.
+  ["Denmark-Norway", "Denmark"], // Dannebrog has been Denmark's flag since the 14th c.
   ["Mongolia", "Mongolia"],
-  ["Tibet", "China"],
-  ["Xinjiang", "China"],
-  ["Taiwan", "China"],
-  ["Hong Kong", "China"],
-  ["Hainan", "China"],
-  ["Hejaz", "Saudi Arabia"],
+  ["Japan", "Japan"], // 1700 Tokugawa used various banners but the Hinomaru is older than most
+  // Misc — only modern names or near-equivalents that genuinely match today.
+  ["Hainan", "China"], // never independent in this dataset
+  ["Hejaz", "Saudi Arabia"], // absorbed into modern Saudi Arabia
   ["Yemen", "Yemen"],
 ]);
 
