@@ -23,6 +23,14 @@ export type ZoomPanState = {
   transform: string;
   /** Whether the user has zoomed/panned away from the initial state. */
   isZoomed: boolean;
+  /** Whether further zoom-in is possible (k < MAX_K). */
+  canZoomIn: boolean;
+  /** Whether further zoom-out is possible (k > MIN_K). */
+  canZoomOut: boolean;
+  /** Zoom in by a fixed step, centred on the SVG. */
+  zoomIn: () => void;
+  /** Zoom out by a fixed step. */
+  zoomOut: () => void;
   /** Reset to the initial 1× / origin view. */
   reset: () => void;
   /** Spread these onto the `<svg>` to enable zoom + pan. */
@@ -161,9 +169,39 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
     setTy(0);
   }, []);
 
+  /**
+   * Zoom by a fixed factor centred on the SVG's centre point. Used by the
+   * `+` / `−` buttons; mirrors the wheel-zoom anchoring math but with the
+   * anchor pinned to the geometric centre.
+   *
+   * Uses functional setState so rapid clicks compound correctly (otherwise
+   * each click captures the same stale `k` and all jump to the same scale).
+   */
+  const zoomBy = useCallback(
+    (factor: number) => {
+      const cx = width / 2;
+      const cy = height / 2;
+      setK((prevK) => {
+        const newK = Math.min(MAX_K, Math.max(MIN_K, prevK * factor));
+        if (newK === prevK) return prevK;
+        setTx((prevTx) => cx - ((cx - prevTx) * newK) / prevK);
+        setTy((prevTy) => cy - ((cy - prevTy) * newK) / prevK);
+        return newK;
+      });
+    },
+    [width, height],
+  );
+
+  const zoomIn = useCallback(() => zoomBy(1.6), [zoomBy]);
+  const zoomOut = useCallback(() => zoomBy(1 / 1.6), [zoomBy]);
+
   return {
     transform: `translate(${tx} ${ty}) scale(${k})`,
     isZoomed: k !== 1 || tx !== 0 || ty !== 0,
+    canZoomIn: k < MAX_K,
+    canZoomOut: k > MIN_K,
+    zoomIn,
+    zoomOut,
     reset,
     svgHandlers: {
       onWheel,
