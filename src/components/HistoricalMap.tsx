@@ -144,6 +144,7 @@ export function HistoricalMap({
           {" "}— hover or click a polity to see its name and flag
         </span>
       </h2>
+      <div className="map-with-zoom">
       <div className="map-frame" ref={frameRef}>
         {loading && (
           <p className="hist-map__loading">Loading historical map…</p>
@@ -194,6 +195,7 @@ export function HistoricalMap({
             </g>
           </svg>
         )}
+      </div>
         <div className="world-map__zoom-controls">
           <button
             type="button"

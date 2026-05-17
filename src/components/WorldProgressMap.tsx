@@ -279,6 +279,7 @@ export function WorldProgressMap({
           <span className="map-heading__hint"> {interactiveHint}</span>
         )}
       </h2>
+      <div className="map-with-zoom">
       <div className="map-frame" ref={frameRef}>
         <svg
           className="world-map"
@@ -351,38 +352,6 @@ export function WorldProgressMap({
           })}
           </g>
         </svg>
-        <div className="world-map__zoom-controls">
-          <button
-            type="button"
-            className="world-map__zoom-btn"
-            onClick={zoom.zoomIn}
-            disabled={!zoom.canZoomIn}
-            aria-label="Zoom in"
-            title="Zoom in"
-          >
-            +
-          </button>
-          <button
-            type="button"
-            className="world-map__zoom-btn"
-            onClick={zoom.zoomOut}
-            disabled={!zoom.canZoomOut}
-            aria-label="Zoom out"
-            title="Zoom out"
-          >
-            −
-          </button>
-          <button
-            type="button"
-            className="world-map__zoom-btn"
-            onClick={zoom.reset}
-            disabled={!zoom.isZoomed}
-            aria-label="Reset zoom"
-            title="Reset zoom"
-          >
-            ⟲
-          </button>
-        </div>
         {popover && isInteractive && (
           <div
             className={`map-popover map-popover--${popover.kind} map-popover--${popover.placement}`}
@@ -416,6 +385,39 @@ export function WorldProgressMap({
             </button>
           </div>
         )}
+      </div>
+        <div className="world-map__zoom-controls">
+          <button
+            type="button"
+            className="world-map__zoom-btn"
+            onClick={zoom.zoomIn}
+            disabled={!zoom.canZoomIn}
+            aria-label="Zoom in"
+            title="Zoom in"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            className="world-map__zoom-btn"
+            onClick={zoom.zoomOut}
+            disabled={!zoom.canZoomOut}
+            aria-label="Zoom out"
+            title="Zoom out"
+          >
+            −
+          </button>
+          <button
+            type="button"
+            className="world-map__zoom-btn"
+            onClick={zoom.reset}
+            disabled={!zoom.isZoomed}
+            aria-label="Reset zoom"
+            title="Reset zoom"
+          >
+            ⟲
+          </button>
+        </div>
       </div>
     </section>
   );
