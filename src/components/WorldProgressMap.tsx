@@ -4,7 +4,7 @@ import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
 import { useTheme } from "../context/ThemeContext";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
-import { useZoomPan } from "../hooks/useZoomPan";
+import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 
 // Full UN-member name lookup, used so clicks on non-pool (out-of-this-game)
 // countries can still display a friendly "Not in this game" popover with the
@@ -68,6 +68,10 @@ type Props = {
   };
   /** When true, click handlers are disabled even if `selectable` is provided. */
   disabled?: boolean;
+  /** Optional externally-managed zoom state. When provided, lets the
+   *  parent persist zoom across map swaps (e.g., Today ↔ historical map).
+   *  When omitted, the component manages its own zoom state. */
+  zoom?: ZoomPanState;
 };
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -155,13 +159,17 @@ export function WorldProgressMap({
   highlightCodes = null,
   selectable,
   disabled = false,
+  zoom: externalZoom,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
   const [geographies, setGeographies] = useState<GeoFeature[]>([]);
   const [popover, setPopover] = useState<Popover | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
-  const zoom = useZoomPan(WIDTH, HEIGHT);
+  // See HistoricalMap for the same pattern — local hook always runs, but
+  // the caller can pass a `zoom` to share state with a sibling map.
+  const localZoom = useZoomPan(WIDTH, HEIGHT);
+  const zoom = externalZoom ?? localZoom;
 
   useEffect(() => {
     let cancelled = false;

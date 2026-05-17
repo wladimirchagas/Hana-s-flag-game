@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { useTheme } from "../context/ThemeContext";
-import { useZoomPan } from "../hooks/useZoomPan";
+import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 
 /**
  * Renders an era-specific historical world map.
@@ -46,6 +46,10 @@ export type HistoricalMapProps = {
   onSelect?: (name: string | null) => void;
   /** Hover handler — fires with name on enter, null on leave. */
   onHover?: (name: string | null) => void;
+  /** Optional externally-managed zoom state. When provided, lets the
+   *  parent persist zoom across era switches (the parent owns the hook).
+   *  When omitted, the component manages its own zoom state. */
+  zoom?: ZoomPanState;
 };
 
 const WIDTH = 960;
@@ -81,6 +85,7 @@ export function HistoricalMap({
   hoveredName = null,
   onSelect,
   onHover,
+  zoom: externalZoom,
 }: HistoricalMapProps) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -88,7 +93,12 @@ export function HistoricalMap({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
-  const zoom = useZoomPan(WIDTH, HEIGHT);
+  // Always run the local hook so we obey the rules-of-hooks. When the
+  // parent provides a zoom state, that one wins and the local one is
+  // unused — the parent typically does this so zoom can be shared with
+  // a sibling map component and survive a swap between the two.
+  const localZoom = useZoomPan(WIDTH, HEIGHT);
+  const zoom = externalZoom ?? localZoom;
 
   // Load the era's GeoJSON whenever the URL changes.
   useEffect(() => {
