@@ -5,6 +5,7 @@ import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { CountryDropdown } from "../components/CountryDropdown";
 import { EraSlider } from "../components/EraSlider";
+import { useZoomPan } from "../hooks/useZoomPan";
 import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
@@ -73,6 +74,12 @@ export default function LearnPage() {
   const baseUrl = import.meta.env.BASE_URL;
   const era = useMemo(() => getEra(eraId), [eraId]);
   const isModernEra = !era.dataUrl;
+
+  // Shared zoom state for both map back-ends — keeps the user's zoom
+  // intact when they switch eras (including Today ↔ historical, which
+  // swaps the underlying component). Reset only happens when the user
+  // clicks the ⟲ button.
+  const sharedZoom = useZoomPan(960, 500);
 
   // Modern countries are loaded once on mount (used for the "Today" era).
   useEffect(() => {
@@ -241,6 +248,7 @@ export default function LearnPage() {
                 if (c) setHovered({ kind: "modern", country: c });
               },
             }}
+            zoom={sharedZoom}
           />
         ) : (
           <HistoricalMap
@@ -258,6 +266,7 @@ export default function LearnPage() {
               const next = selectionFromPolityName(name);
               setHovered(next);
             }}
+            zoom={sharedZoom}
           />
         )}
       </div>
