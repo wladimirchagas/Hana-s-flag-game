@@ -746,17 +746,27 @@
   touch-action: none;
 }
 
-/* Floating zoom controls — +, −, ⟲ — stacked in the top-right corner
-   of the map frame. Always visible so the zoom feature is discoverable;
-   buttons disable themselves at the clamp endpoints. */
+/* Wrapper around the map + zoom controls. The controls live in their
+   own column to the RIGHT of the map graphic, NOT overlapping any
+   landmass. The map flex-grows to fill the remaining width. */
+.map-with-zoom {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.map-with-zoom .map-frame {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Vertical stack of zoom buttons, aligned to the top-right of the map. */
 .world-map__zoom-controls {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  z-index: 4;
+  flex-shrink: 0;
 }
 
 .world-map__zoom-btn {
