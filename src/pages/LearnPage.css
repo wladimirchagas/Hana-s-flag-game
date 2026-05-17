@@ -1,0 +1,280 @@
+/* === Learn your flags — full-screen sandbox =========================
+   Two-column grid: world map on the left, info+search panel in its own
+   right column. The panel can't overlap countries because it lives in a
+   separate grid cell.
+==================================================================== */
+
+.learn-fs {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr clamp(280px, 24vw, 360px);
+  /* Explicit column gap so even tightly-rendered countries near the right
+     edge of the map (Japan, Australia, NZ) keep visible breathing room
+     from the right-side panel. */
+  column-gap: 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, var(--cream-glow-1) 0%, transparent 60%),
+    radial-gradient(900px 500px at 90% 110%, var(--cream-glow-2) 0%, transparent 60%),
+    var(--cream);
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+/* === Map: fills the left column, edge-to-edge ====================== */
+.learn-fs__map {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Top padding leaves room for the fixed Home button and the centered
+     theme toggle so they don't overlap the rendered map. */
+  padding: 3rem 0.5rem 1rem;
+}
+
+/* Strip the map's normal card styling so it fills its column. */
+.learn-fs__map .map-section {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learn-fs__map .map-heading {
+  display: none;
+}
+
+.learn-fs__map .map-frame {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learn-fs__map .world-map {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  /* preserveAspectRatio default (xMidYMid meet) keeps the map undistorted
+     and letterboxes within the column. */
+}
+
+/* === Right-column panel ============================================
+   Sits in its own grid cell, so it categorically cannot cover any
+   countries on the map. Padded around the edges; the inner card holds
+   the country detail and search dropdown. */
+.learn-fs__panel-wrap {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem 1.25rem 1.25rem;
+  /* Avoid stealing focus from the fixed top toolbar (Home + toggle). */
+}
+
+.learn-fs__panel {
+  width: 100%;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 1.1rem 1rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.learn-fs__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+}
+
+.learn-fs__continent {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.learn-fs__name {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 700;
+  color: var(--coral-deep);
+  text-shadow: 0 2px 0 var(--ink);
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+.learn-fs__flag {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.75rem;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 4px 0 var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.learn-fs__flag:hover,
+.learn-fs__flag:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--ink);
+  outline: none;
+}
+
+.learn-fs__flag-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 9rem;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 8px;
+  filter:
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 3px 6px rgba(26, 34, 56, 0.18));
+  pointer-events: none;
+}
+
+.learn-fs__flag-hint {
+  position: absolute;
+  bottom: 0.45rem;
+  right: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--paper);
+  border: 2px solid var(--ink-faint);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  pointer-events: none;
+}
+
+/* Empty state — no country selected/hovered yet. */
+.learn-fs__empty {
+  padding: 0.75rem 0.5rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.learn-fs__empty-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  text-shadow: 0 2px 0 var(--ink);
+}
+
+.learn-fs__empty-sub {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+/* Search section. The CountryDropdown receives listPlacement="up" so the
+   suggestions rise above the input into the panel. */
+.learn-fs__search .dropdown {
+  margin: 0;
+}
+
+.learn-fs__search .dropdown-label {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.learn-fs__search .dropdown-input {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+}
+
+/* === Responsive ===================================================
+   Below 900px the two-column grid collapses to a single column:
+   map on top, panel below. The grid keeps map and panel in
+   separate ROWS, so the map physically cannot bleed onto the panel
+   (or vice versa) regardless of viewport. */
+@media (max-width: 900px) {
+  .learn-fs {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) auto;
+    /* Replace the column-gap with a row-gap of equivalent breathing room
+       between the bottom of the map and the top of the panel. */
+    column-gap: 0;
+    row-gap: 0.75rem;
+  }
+
+  .learn-fs__map {
+    padding: 3rem 0.5rem 0;
+  }
+
+  .learn-fs__panel-wrap {
+    padding: 0 1rem 1rem;
+    justify-content: stretch;
+  }
+
+  .learn-fs__panel {
+    width: 100%;
+    max-width: 520px;
+    /* Centre the panel horizontally within the row so it doesn't hug an
+       arbitrary side on tablets in portrait. */
+    margin: 0 auto;
+  }
+
+  .learn-fs__flag-img {
+    max-height: 5.5rem;
+  }
+}
+
+/* Phones — tighter typography and a smaller flag thumbnail so the panel
+   doesn't eat more than ~40% of the screen height. */
+@media (max-width: 480px) {
+  .learn-fs__name {
+    font-size: 1.35rem;
+  }
+  .learn-fs__panel {
+    padding: 0.85rem 0.85rem 0.7rem;
+    gap: 0.55rem;
+  }
+  .learn-fs__flag-img {
+    max-height: 4.5rem;
+  }
+  .learn-fs__map {
+    padding-top: 2.75rem;
+  }
+}
+
+/* Short viewports (e.g. landscape phones) — keep the panel slim so the
+   map still has room. */
+@media (max-height: 540px) {
+  .learn-fs__flag-img {
+    max-height: 4rem;
+  }
+  .learn-fs__empty {
+    padding: 0.4rem;
+  }
+}

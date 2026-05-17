@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import FlagGamePage from './pages/FlagGamePage'
+import LearnPage from './pages/LearnPage'
 import { ThemeToggle } from './components/ThemeToggle'
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/game" element={<FlagGamePage />} />
+        <Route path="/learn" element={<LearnPage />} />
       </Routes>
     </>
   )

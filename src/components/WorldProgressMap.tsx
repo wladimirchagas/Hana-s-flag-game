@@ -46,7 +46,18 @@ type Props = {
     codes: ReadonlySet<string>;
     names: ReadonlyMap<string, string>;
     onSelect: (code: string) => void;
-    onConfirm: () => void;
+    /**
+     * When provided, clicks show a Confirm popover anchored at the click. When
+     * omitted, clicks just call onSelect — used by the Learn-mode sandbox
+     * where there's no "confirm a guess" action.
+     */
+    onConfirm?: () => void;
+    /**
+     * Optional hover callback for live preview (e.g. Learn mode highlighting
+     * the country name without a click). Called with the country's alpha-2
+     * code on enter and `null` on leave.
+     */
+    onHover?: (code: string | null) => void;
   };
   /** When true, click handlers are disabled even if `selectable` is provided. */
   disabled?: boolean;
@@ -227,7 +238,11 @@ export function WorldProgressMap({
 
     if (isInPool) {
       selectable.onSelect(alpha2);
-      setPopover({ code: alpha2, name, x, y, kind: "confirm", placement });
+      // Skip the popover entirely when no onConfirm is supplied — used by
+      // the Learn-mode sandbox where clicks just select, no confirm.
+      if (selectable.onConfirm) {
+        setPopover({ code: alpha2, name, x, y, kind: "confirm", placement });
+      }
     } else {
       // Country is rendered on the map but isn't part of this game's pool
       // (typical in Custom Game). Tell the user instead of silently failing.
@@ -236,19 +251,23 @@ export function WorldProgressMap({
   }
 
   function handleConfirm() {
-    if (!selectable) return;
+    if (!selectable?.onConfirm) return;
     selectable.onConfirm();
     setPopover(null);
   }
+
+  // "Guess" wording only fits modes that expect a confirm; Learn mode passes
+  // no onConfirm so we adjust the hint to talk about exploration instead.
+  const interactiveHint = selectable?.onConfirm
+    ? "— click a highlighted country to guess"
+    : "— hover or click a country to see its flag";
 
   return (
     <section className="map-section" aria-labelledby="map-heading">
       <h2 id="map-heading" className="map-heading">
         World map
         {isInteractive && (
-          <span className="map-heading__hint">
-            {" "}— click a highlighted country to guess
-          </span>
+          <span className="map-heading__hint"> {interactiveHint}</span>
         )}
       </h2>
       <div className="map-frame" ref={frameRef}>
@@ -300,6 +319,16 @@ export function WorldProgressMap({
                 onClick={
                   clickable && alpha2
                     ? (e) => handlePathClick(e, alpha2)
+                    : undefined
+                }
+                onMouseEnter={
+                  clickable && alpha2 && selectable?.onHover
+                    ? () => selectable.onHover!(alpha2)
+                    : undefined
+                }
+                onMouseLeave={
+                  clickable && selectable?.onHover
+                    ? () => selectable.onHover!(null)
                     : undefined
                 }
               >

@@ -328,7 +328,6 @@
 
 .dropdown-list {
   position: absolute;
-  top: calc(100% + 0.4rem);
   left: 0;
   right: 0;
   z-index: 10;
@@ -341,6 +340,19 @@
   box-shadow: 0 8px 0 var(--ink), 0 14px 24px rgba(26, 34, 56, 0.18);
   max-height: 18rem;
   overflow-y: auto;
+}
+
+/* Default — opens downward below the input. */
+.dropdown-list--down {
+  top: calc(100% + 0.4rem);
+}
+
+/* Opens upward — used when the dropdown is anchored to the bottom of the
+   screen (Learn-mode floating panel) so the list rises into view. */
+.dropdown-list--up {
+  bottom: calc(100% + 0.4rem);
+  /* Mirror the shadow so it casts upward instead of downward. */
+  box-shadow: 0 -8px 0 var(--ink), 0 -14px 24px rgba(26, 34, 56, 0.18);
 }
 
 .dropdown-option {
