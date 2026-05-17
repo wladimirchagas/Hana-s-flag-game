@@ -8,10 +8,15 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr clamp(280px, 24vw, 360px);
+  grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "map    panel"
+    "slider panel";
   /* Explicit column gap so even tightly-rendered countries near the right
      edge of the map (Japan, Australia, NZ) keep visible breathing room
      from the right-side panel. */
   column-gap: 1.5rem;
+  row-gap: 0.5rem;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -25,6 +30,7 @@
 
 /* === Map: fills the left column, edge-to-edge ====================== */
 .learn-fs__map {
+  grid-area: map;
   position: relative;
   display: flex;
   align-items: center;
@@ -32,7 +38,13 @@
   overflow: hidden;
   /* Top padding leaves room for the fixed Home button and the centered
      theme toggle so they don't overlap the rendered map. */
-  padding: 3rem 0.5rem 1rem;
+  padding: 3rem 0.5rem 0;
+}
+
+/* Era slider sits at the bottom of the map column. */
+.learn-fs__slider-wrap {
+  grid-area: slider;
+  padding: 0 0.75rem 0.75rem;
 }
 
 /* Strip the map's normal card styling so it fills its column. */
@@ -76,6 +88,7 @@
    countries on the map. Padded around the edges; the inner card holds
    the country detail and search dropdown. */
 .learn-fs__panel-wrap {
+  grid-area: panel;
   position: relative;
   z-index: 5;
   display: flex;
@@ -221,11 +234,15 @@
 @media (max-width: 900px) {
   .learn-fs {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(0, 1fr) auto;
+    grid-template-rows: minmax(0, 1fr) auto auto;
+    grid-template-areas:
+      "map"
+      "slider"
+      "panel";
     /* Replace the column-gap with a row-gap of equivalent breathing room
-       between the bottom of the map and the top of the panel. */
+       between rows. */
     column-gap: 0;
-    row-gap: 0.75rem;
+    row-gap: 0.5rem;
   }
 
   .learn-fs__map {
@@ -277,4 +294,107 @@
   .learn-fs__empty {
     padding: 0.4rem;
   }
+}
+
+/* === Era slider ====================================================
+   Horizontal pill row across the bottom of the map column. One pill
+   per era, currently selected one highlighted. The era's year +
+   summary is shown underneath as small print. */
+
+.era-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 100%;
+}
+
+.era-slider__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.35rem;
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.era-slider__pill {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.85rem;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  color: var(--ink);
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.era-slider__pill:hover,
+.era-slider__pill:focus-visible {
+  background: rgba(78, 205, 196, 0.18);
+  outline: none;
+}
+
+.era-slider__pill--active {
+  background: var(--sky);
+  /* Always-dark text — sky is light in both themes. */
+  color: var(--ink-fixed);
+  box-shadow: 0 2px 0 var(--ink);
+}
+
+.era-slider__summary {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-align: center;
+  max-width: 56ch;
+  line-height: 1.35;
+}
+
+.era-slider__year {
+  color: var(--coral-deep);
+  font-weight: 700;
+}
+
+.era-slider__sep {
+  margin: 0 0.4rem;
+  opacity: 0.5;
+}
+
+.era-slider__footnote {
+  margin: 0;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  opacity: 0.85;
+  text-align: center;
+  max-width: 52ch;
+}
+
+/* Optional note ("Capital: Rome.") shown in the detail panel below the
+   country name for spotlight groups that include a note. */
+.learn-fs__note {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  text-align: center;
+  max-width: 30ch;
+  line-height: 1.35;
+}
+
+@media (max-width: 540px) {
+  .era-slider__pill {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.65rem;
+  }
+  .era-slider__summary { font-size: 0.78rem; }
+  .era-slider__footnote { font-size: 0.66rem; }
 }

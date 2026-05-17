@@ -3,35 +3,62 @@ import { Link } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { CountryDropdown } from "../components/CountryDropdown";
+import { EraSlider } from "../components/EraSlider";
+import {
+  DEFAULT_ERA_ID,
+  ERAS,
+  getEra,
+  type Era,
+  type SpotlightGroup,
+} from "../lib/historicalEras";
 import "../App.css";
 import "./LearnPage.css";
 
 /**
- * Sandbox-style "Learn your flags" mode.
+ * Sandbox-style "Learn your flags" mode with a historical era slider.
  *
- * Layout (full-screen):
- *   - World map fills the viewport edge-to-edge (no card chrome).
- *   - Floating panel anchored to the bottom-left of the viewport contains:
- *       • the selected (or hovered) country's flag and name
- *       • a country search dropdown at the bottom, opening upward
- *   - Top bar (Home button + global theme toggle) sits over the map.
+ * Each era has either:
+ *   - `borders: { kind: "modern" }`  — use the modern world-atlas as-is
+ *   - `borders: { kind: "spotlight", groups }` — colour modern countries
+ *     into historical entities. Clicking any group member highlights all
+ *     members and shows the entity's historical flag.
  *
- * Interaction:
- *   - Hover any country on the map → live preview in the floating panel.
- *   - Click a country (map OR dropdown) → locks selection.
- *   - Tap the flag image → opens the fullscreen flag viewer (SVG scales).
- *   - Tiny nations (Vatican, Monaco, San Marino, Andorra, Liechtenstein,
- *     etc.) are reachable via the dropdown's search, since their map
- *     paths are too small to click reliably.
- *
- * The map omits the Confirm popover (selectable.onConfirm not supplied).
+ * Default era is always "today" — the modern world. The slider switches
+ * eras instantly with a brief crossfade.
  */
+
+// Selection model: either a modern country (Country) or a historical
+// spotlight group (SpotlightGroup). Both shapes share name/flag-ish data
+// but differ in what gets highlighted on the map.
+type Selection =
+  | { kind: "country"; country: Country }
+  | { kind: "group"; group: SpotlightGroup };
+
+function selectionName(s: Selection): string {
+  return s.kind === "country" ? s.country.name : s.group.name;
+}
+function selectionContinent(s: Selection): string {
+  return s.kind === "country" ? s.country.continent : s.group.continent;
+}
+function selectionFlag(s: Selection, baseUrl: string): string {
+  return s.kind === "country"
+    ? s.country.flagSvg
+    : `${baseUrl}${s.group.flag}`;
+}
+function selectionNote(s: Selection): string | undefined {
+  return s.kind === "group" ? s.group.note : undefined;
+}
+
 export default function LearnPage() {
+  const [eraId, setEraId] = useState<Era["id"]>(DEFAULT_ERA_ID);
   const [countries, setCountries] = useState<Country[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [hovered, setHovered] = useState<Country | null>(null);
-  const [selected, setSelected] = useState<Country | null>(null);
+  const [hovered, setHovered] = useState<Selection | null>(null);
+  const [selected, setSelected] = useState<Selection | null>(null);
   const [zoomed, setZoomed] = useState(false);
+
+  const baseUrl = import.meta.env.BASE_URL;
+  const era = useMemo(() => getEra(eraId), [eraId]);
 
   useEffect(() => {
     let cancelled = false;
@@ -50,6 +77,13 @@ export default function LearnPage() {
       cancelled = true;
     };
   }, []);
+
+  // Reset selection / hover when the era changes — the previously selected
+  // entity may not exist in the new era.
+  useEffect(() => {
+    setSelected(null);
+    setHovered(null);
+  }, [eraId]);
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
   useEffect(() => {
@@ -70,18 +104,114 @@ export default function LearnPage() {
     () => new Map(countries.map((c) => [c.code, c])),
     [countries],
   );
-  const codes = useMemo(
+
+  // Build era-specific lookups: modernCode → group, plus the synthetic
+  // country list shown in the dropdown (groups + non-grouped modern).
+  const { codeToGroup, dropdownItems, codeToGroupName } = useMemo(() => {
+    const codeToGroup = new Map<string, SpotlightGroup>();
+    const codeToGroupName = new Map<string, string>();
+    if (era.borders.kind === "spotlight") {
+      for (const g of era.borders.groups) {
+        for (const code of g.modernCodes) {
+          codeToGroup.set(code, g);
+          codeToGroupName.set(code, g.name);
+        }
+      }
+    }
+    // Dropdown items: each spotlight group appears ONCE, plus all modern
+    // countries NOT covered by any group. The CountryDropdown signature
+    // expects Country-shaped items, so synthesize them.
+    const items: Country[] = [];
+    if (era.borders.kind === "spotlight") {
+      for (const g of era.borders.groups) {
+        items.push({
+          name: g.name,
+          // Use the group's id as a fake "code" so the dropdown's value
+          // comparison works. Won't collide with real ISO codes.
+          code: g.id,
+          flagSvg: `${baseUrl}${g.flag}`,
+          // Continent is informational here; cast safely.
+          continent: g.continent as Country["continent"],
+        });
+      }
+    }
+    for (const c of countries) {
+      if (!codeToGroup.has(c.code)) items.push(c);
+    }
+    return { codeToGroup, dropdownItems: items, codeToGroupName };
+  }, [era, countries, baseUrl]);
+
+  // What the map's selectable.codes set looks like: all modern codes that
+  // either belong to a group (clickable → selects the group) or are loose
+  // modern countries (clickable → selects the country). Same set either way.
+  const allCodes = useMemo(
     () => new Set(countries.map((c) => c.code)),
     [countries],
   );
-  const names = useMemo(
-    () => new Map(countries.map((c) => [c.code, c.name])),
-    [countries],
-  );
 
-  // Hovered country wins (live preview); selected is the fallback "locked"
-  // state. So moving the mouse over a different country temporarily shows it,
-  // and leaving the map reverts to the last-clicked country.
+  // Display names per modern path: if a country is in a spotlight group,
+  // show the group name; otherwise show the modern country name.
+  const pathNames = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const c of countries) {
+      m.set(c.code, codeToGroupName.get(c.code) ?? c.name);
+    }
+    return m;
+  }, [countries, codeToGroupName]);
+
+  // Build the highlight set (cyan fill) for the currently shown selection.
+  // - country: just that one code
+  // - group: all member codes
+  const highlightCodes = useMemo(() => {
+    const display = hovered ?? selected;
+    if (!display) return null;
+    if (display.kind === "country") return new Set([display.country.code]);
+    return new Set(display.group.modernCodes);
+  }, [hovered, selected]);
+
+  // Convert a clicked map code to a Selection — group lookup wins.
+  function selectByMapCode(code: string): Selection | null {
+    const g = codeToGroup.get(code);
+    if (g) return { kind: "group", group: g };
+    const c = codeToCountry.get(code);
+    if (c) return { kind: "country", country: c };
+    return null;
+  }
+
+  // Dropdown change: the synthetic item's `code` is either a group id or a
+  // real ISO code. Look up the right Selection shape.
+  function selectByDropdownCode(item: Country | null) {
+    if (!item) {
+      setSelected(null);
+      setHovered(null);
+      return;
+    }
+    const g =
+      era.borders.kind === "spotlight"
+        ? era.borders.groups.find((x) => x.id === item.code)
+        : undefined;
+    if (g) {
+      setSelected({ kind: "group", group: g });
+    } else {
+      const c = codeToCountry.get(item.code);
+      if (c) setSelected({ kind: "country", country: c });
+    }
+    setHovered(null);
+  }
+
+  // The dropdown's `value` needs to match an item by reference; synthesize
+  // the matching Country-shape from the current selection.
+  const dropdownValue: Country | null = (() => {
+    if (!selected) return null;
+    if (selected.kind === "country") return selected.country;
+    return {
+      name: selected.group.name,
+      code: selected.group.id,
+      flagSvg: `${baseUrl}${selected.group.flag}`,
+      continent: selected.group.continent as Country["continent"],
+    };
+  })();
+
   const display = hovered ?? selected;
 
   if (loadError) {
@@ -110,15 +240,21 @@ export default function LearnPage() {
       <div className="learn-fs__map" aria-label="World map">
         <WorldProgressMap
           countryResults={{}}
-          selectedCode={display?.code ?? null}
+          // selectedCode is single-code; pass the first highlighted code so
+          // the map still treats hover/click history correctly even though
+          // multi-highlighting is handled by highlightCodes below.
+          selectedCode={
+            display?.kind === "country" ? display.country.code : null
+          }
+          highlightCodes={highlightCodes}
           disabled={countries.length === 0}
           selectable={{
-            codes,
-            names,
+            codes: allCodes,
+            names: pathNames,
             onSelect: (code) => {
-              const c = codeToCountry.get(code);
-              if (c) {
-                setSelected(c);
+              const next = selectByMapCode(code);
+              if (next) {
+                setSelected(next);
                 setHovered(null);
               }
             },
@@ -127,65 +263,68 @@ export default function LearnPage() {
                 setHovered(null);
                 return;
               }
-              const c = codeToCountry.get(code);
-              if (c) setHovered(c);
+              const next = selectByMapCode(code);
+              if (next) setHovered(next);
             },
           }}
         />
       </div>
 
       <div className="learn-fs__panel-wrap">
-      <aside className="learn-fs__panel" aria-live="polite">
-        {/* Detail section — top of panel */}
-        <div className="learn-fs__detail">
-          {display ? (
-            <>
-              <p className="learn-fs__continent">{display.continent}</p>
-              <h2 className="learn-fs__name">{display.name}</h2>
-              <button
-                type="button"
-                className="learn-fs__flag"
-                onClick={() => setZoomed(true)}
-                aria-label={`Enlarge ${display.name} flag`}
-              >
-                <img
-                  src={display.flagSvg}
-                  alt=""
-                  className="learn-fs__flag-img"
-                  draggable={false}
-                />
-                <span className="learn-fs__flag-hint" aria-hidden="true">
-                  ⤢ Click to enlarge
-                </span>
-              </button>
-            </>
-          ) : (
-            <div className="learn-fs__empty">
-              <p className="learn-fs__empty-title">Learn your flags</p>
-              <p className="learn-fs__empty-sub">
-                Hover or click any country on the map — or use the search
-                below to find tiny nations like Vatican City.
-              </p>
-            </div>
-          )}
-        </div>
+        <aside className="learn-fs__panel" aria-live="polite">
+          <div className="learn-fs__detail">
+            {display ? (
+              <>
+                <p className="learn-fs__continent">
+                  {selectionContinent(display)}
+                </p>
+                <h2 className="learn-fs__name">{selectionName(display)}</h2>
+                {selectionNote(display) && (
+                  <p className="learn-fs__note">{selectionNote(display)}</p>
+                )}
+                <button
+                  type="button"
+                  className="learn-fs__flag"
+                  onClick={() => setZoomed(true)}
+                  aria-label={`Enlarge ${selectionName(display)} flag`}
+                >
+                  <img
+                    src={selectionFlag(display, baseUrl)}
+                    alt=""
+                    className="learn-fs__flag-img"
+                    draggable={false}
+                  />
+                  <span className="learn-fs__flag-hint" aria-hidden="true">
+                    ⤢ Click to enlarge
+                  </span>
+                </button>
+              </>
+            ) : (
+              <div className="learn-fs__empty">
+                <p className="learn-fs__empty-title">Learn your flags</p>
+                <p className="learn-fs__empty-sub">
+                  Hover or click any country on the map — or use the search
+                  below.
+                </p>
+              </div>
+            )}
+          </div>
 
-        {/* Search section — bottom of panel; dropdown opens upward so the
-            list rises into view instead of pushing off the bottom edge. */}
-        <div className="learn-fs__search">
-          <CountryDropdown
-            countries={countries}
-            value={selected}
-            onChange={(c) => {
-              setSelected(c);
-              setHovered(null);
-            }}
-            disabled={countries.length === 0}
-            label="Find a country"
-            listPlacement="up"
-          />
-        </div>
-      </aside>
+          <div className="learn-fs__search">
+            <CountryDropdown
+              countries={dropdownItems}
+              value={dropdownValue}
+              onChange={selectByDropdownCode}
+              disabled={countries.length === 0}
+              label={era.borders.kind === "spotlight" ? "Find an entity" : "Find a country"}
+              listPlacement="up"
+            />
+          </div>
+        </aside>
+      </div>
+
+      <div className="learn-fs__slider-wrap">
+        <EraSlider currentId={eraId} onChange={setEraId} />
       </div>
 
       {zoomed && display && (
@@ -193,11 +332,11 @@ export default function LearnPage() {
           className="flag-zoom"
           role="dialog"
           aria-modal="true"
-          aria-label={`Enlarged ${display.name} flag`}
+          aria-label={`Enlarged ${selectionName(display)} flag`}
           onClick={() => setZoomed(false)}
         >
           <img
-            src={display.flagSvg}
+            src={selectionFlag(display, baseUrl)}
             alt=""
             className="flag-zoom__img"
             draggable={false}
@@ -218,3 +357,6 @@ export default function LearnPage() {
     </div>
   );
 }
+
+// (used to make linter happy if we don't reference ERAS elsewhere)
+void ERAS;
