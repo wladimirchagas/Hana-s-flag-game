@@ -312,27 +312,51 @@
 .era-slider__pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.3rem;
   justify-content: center;
   background: var(--paper);
   border: 3px solid var(--ink);
-  border-radius: 999px;
-  padding: 0.35rem;
+  border-radius: 16px;
+  padding: 0.45rem 0.5rem;
   box-shadow: 0 3px 0 var(--ink);
+  max-width: 100%;
 }
 
 .era-slider__pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
   font-family: inherit;
   font-weight: 700;
   font-size: 0.85rem;
-  padding: 0.4rem 0.85rem;
+  padding: 0.35rem 0.7rem;
   background: transparent;
   border: 2px solid transparent;
-  border-radius: 999px;
+  border-radius: 14px;
   color: var(--ink);
   cursor: pointer;
   letter-spacing: 0.02em;
+  line-height: 1.15;
   transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.era-slider__pill-period {
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.era-slider__pill-caption {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+.era-slider__pill--active .era-slider__pill-caption {
+  opacity: 0.85;
 }
 
 .era-slider__pill:hover,
@@ -378,8 +402,7 @@
   max-width: 52ch;
 }
 
-/* Optional note ("Capital: Rome.") shown in the detail panel below the
-   country name for spotlight groups that include a note. */
+/* Optional note shown in the detail panel below the country name. */
 .learn-fs__note {
   margin: 0 0 0.25rem;
   font-size: 0.85rem;
@@ -388,6 +411,34 @@
   text-align: center;
   max-width: 30ch;
   line-height: 1.35;
+}
+
+/* Shown when a historical polity has no flag image (rare for ancient
+   cultures and tribal confederations). */
+.learn-fs__no-flag {
+  margin: 0.5rem 0 0;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  text-align: center;
+  background: var(--cream);
+  border: 2px dashed var(--ink-faint);
+  border-radius: 12px;
+  line-height: 1.4;
+}
+
+/* Historical map loading + error states. */
+.hist-map__loading,
+.hist-map__error {
+  padding: 4rem 1rem;
+  text-align: center;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.hist-map__error {
+  color: var(--coral-deep);
 }
 
 @media (max-width: 540px) {

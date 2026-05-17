@@ -7,12 +7,17 @@ export type EraSliderProps = {
 
 /**
  * Horizontal strip of pill buttons across the bottom of the map column.
- * One pill per era, oldest → newest, with the currently selected era
- * highlighted. The era's summary is shown underneath as small print so
- * kids see one-line context about what they're looking at.
  *
- * Pre-1886 eras carry an `approximate: true` flag — the slider surfaces
- * a small footnote on those so the educational approximation is honest.
+ * Each pill shows BOTH the period and a kid-friendly caption so users
+ * understand what they're selecting:
+ *
+ *   ┌─────────────────┐
+ *   │ 117 AD          │
+ *   │ Roman peak      │
+ *   └─────────────────┘
+ *
+ * The currently selected era's full summary sits below the slider as
+ * small print.
  */
 export function EraSlider({ currentId, onChange }: EraSliderProps) {
   const current = ERAS.find((e) => e.id === currentId) ?? ERAS[ERAS.length - 1]!;
@@ -31,27 +36,24 @@ export function EraSlider({ currentId, onChange }: EraSliderProps) {
               className={`era-slider__pill ${
                 isActive ? "era-slider__pill--active" : ""
               }`}
-              title={`${era.year ?? era.label} — ${era.summary}`}
+              title={`${era.year || era.label} — ${era.summary}`}
               onClick={() => onChange(era.id)}
             >
-              {era.label}
+              <span className="era-slider__pill-period">{era.label}</span>
+              <span className="era-slider__pill-caption">{era.caption}</span>
             </button>
           );
         })}
       </div>
       <p className="era-slider__summary">
-        <span className="era-slider__year">
-          {current.year ?? current.label}
-        </span>
-        <span className="era-slider__sep">·</span>
+        {current.year && (
+          <>
+            <span className="era-slider__year">{current.year}</span>
+            <span className="era-slider__sep">·</span>
+          </>
+        )}
         <span className="era-slider__caption">{current.summary}</span>
       </p>
-      {current.approximate && (
-        <p className="era-slider__footnote">
-          Borders are simplified for learning — modern outlines used to
-          approximate historical territory.
-        </p>
-      )}
     </div>
   );
 }

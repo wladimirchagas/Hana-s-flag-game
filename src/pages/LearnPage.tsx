@@ -2,51 +2,57 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
+import { HistoricalMap } from "../components/HistoricalMap";
 import { CountryDropdown } from "../components/CountryDropdown";
 import { EraSlider } from "../components/EraSlider";
 import {
   DEFAULT_ERA_ID,
-  ERAS,
   getEra,
+  polityInfo,
   type Era,
-  type SpotlightGroup,
 } from "../lib/historicalEras";
 import "../App.css";
 import "./LearnPage.css";
 
 /**
- * Sandbox-style "Learn your flags" mode with a historical era slider.
+ * Learn-mode sandbox with a historical era slider.
  *
- * Each era has either:
- *   - `borders: { kind: "modern" }`  — use the modern world-atlas as-is
- *   - `borders: { kind: "spotlight", groups }` — colour modern countries
- *     into historical entities. Clicking any group member highlights all
- *     members and shows the entity's historical flag.
+ * Two map back-ends:
+ *  - WorldProgressMap (modern world-atlas) is rendered when era === "today".
+ *  - HistoricalMap (hand-curated GeoJSON per era from
+ *    aourednik/historical-basemaps) is rendered for every other era.
  *
- * Default era is always "today" — the modern world. The slider switches
- * eras instantly with a brief crossfade.
+ * Selection model differs slightly:
+ *  - Modern: a Country object (ISO alpha-2 code, modern flag URL).
+ *  - Historical: a polity name string plus lookup in POLITY_REGISTRY for
+ *    flag / continent / note.
+ *
+ * Default era is always "today" so first-time visitors see the current
+ * world. Switching eras resets the current selection.
  */
 
-// Selection model: either a modern country (Country) or a historical
-// spotlight group (SpotlightGroup). Both shapes share name/flag-ish data
-// but differ in what gets highlighted on the map.
-type Selection =
-  | { kind: "country"; country: Country }
-  | { kind: "group"; group: SpotlightGroup };
+type ModernSelection = { kind: "modern"; country: Country };
+type HistoricalSelection = {
+  kind: "historical";
+  name: string;
+  flag?: string;
+  continent?: string;
+  note?: string;
+};
+type Selection = ModernSelection | HistoricalSelection;
 
 function selectionName(s: Selection): string {
-  return s.kind === "country" ? s.country.name : s.group.name;
+  return s.kind === "modern" ? s.country.name : s.name;
 }
 function selectionContinent(s: Selection): string {
-  return s.kind === "country" ? s.country.continent : s.group.continent;
+  return s.kind === "modern" ? s.country.continent : s.continent ?? "Historical";
 }
-function selectionFlag(s: Selection, baseUrl: string): string {
-  return s.kind === "country"
-    ? s.country.flagSvg
-    : `${baseUrl}${s.group.flag}`;
+function selectionFlag(s: Selection, baseUrl: string): string | null {
+  if (s.kind === "modern") return s.country.flagSvg;
+  return s.flag ? `${baseUrl}${s.flag}` : null;
 }
 function selectionNote(s: Selection): string | undefined {
-  return s.kind === "group" ? s.group.note : undefined;
+  return s.kind === "historical" ? s.note : undefined;
 }
 
 export default function LearnPage() {
@@ -59,7 +65,9 @@ export default function LearnPage() {
 
   const baseUrl = import.meta.env.BASE_URL;
   const era = useMemo(() => getEra(eraId), [eraId]);
+  const isModernEra = !era.dataUrl;
 
+  // Modern countries are loaded once on mount (used for the "Today" era).
   useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -78,8 +86,7 @@ export default function LearnPage() {
     };
   }, []);
 
-  // Reset selection / hover when the era changes — the previously selected
-  // entity may not exist in the new era.
+  // Reset selection/hover when the era changes — entities don't carry over.
   useEffect(() => {
     setSelected(null);
     setHovered(null);
@@ -104,117 +111,33 @@ export default function LearnPage() {
     () => new Map(countries.map((c) => [c.code, c])),
     [countries],
   );
-
-  // Build era-specific lookups: modernCode → group, plus the synthetic
-  // country list shown in the dropdown (groups + non-grouped modern).
-  const { codeToGroup, dropdownItems, codeToGroupName } = useMemo(() => {
-    const codeToGroup = new Map<string, SpotlightGroup>();
-    const codeToGroupName = new Map<string, string>();
-    if (era.borders.kind === "spotlight") {
-      for (const g of era.borders.groups) {
-        for (const code of g.modernCodes) {
-          codeToGroup.set(code, g);
-          codeToGroupName.set(code, g.name);
-        }
-      }
-    }
-    // Dropdown items: each spotlight group appears ONCE, plus all modern
-    // countries NOT covered by any group. The CountryDropdown signature
-    // expects Country-shaped items, so synthesize them.
-    const items: Country[] = [];
-    if (era.borders.kind === "spotlight") {
-      for (const g of era.borders.groups) {
-        items.push({
-          name: g.name,
-          // Use the group's id as a fake "code" so the dropdown's value
-          // comparison works. Won't collide with real ISO codes.
-          code: g.id,
-          flagSvg: `${baseUrl}${g.flag}`,
-          // Continent is informational here; cast safely.
-          continent: g.continent as Country["continent"],
-        });
-      }
-    }
-    for (const c of countries) {
-      if (!codeToGroup.has(c.code)) items.push(c);
-    }
-    return { codeToGroup, dropdownItems: items, codeToGroupName };
-  }, [era, countries, baseUrl]);
-
-  // What the map's selectable.codes set looks like: all modern codes that
-  // either belong to a group (clickable → selects the group) or are loose
-  // modern countries (clickable → selects the country). Same set either way.
-  const allCodes = useMemo(
+  const codes = useMemo(
     () => new Set(countries.map((c) => c.code)),
     [countries],
   );
-
-  // Display names per modern path: if a country is in a spotlight group,
-  // show the group name; otherwise show the modern country name.
-  const pathNames = useMemo(() => {
-    const m = new Map<string, string>();
-    for (const c of countries) {
-      m.set(c.code, codeToGroupName.get(c.code) ?? c.name);
-    }
-    return m;
-  }, [countries, codeToGroupName]);
-
-  // Build the highlight set (cyan fill) for the currently shown selection.
-  // - country: just that one code
-  // - group: all member codes
-  const highlightCodes = useMemo(() => {
-    const display = hovered ?? selected;
-    if (!display) return null;
-    if (display.kind === "country") return new Set([display.country.code]);
-    return new Set(display.group.modernCodes);
-  }, [hovered, selected]);
-
-  // Convert a clicked map code to a Selection — group lookup wins.
-  function selectByMapCode(code: string): Selection | null {
-    const g = codeToGroup.get(code);
-    if (g) return { kind: "group", group: g };
-    const c = codeToCountry.get(code);
-    if (c) return { kind: "country", country: c };
-    return null;
-  }
-
-  // Dropdown change: the synthetic item's `code` is either a group id or a
-  // real ISO code. Look up the right Selection shape.
-  function selectByDropdownCode(item: Country | null) {
-    if (!item) {
-      setSelected(null);
-      setHovered(null);
-      return;
-    }
-    const g =
-      era.borders.kind === "spotlight"
-        ? era.borders.groups.find((x) => x.id === item.code)
-        : undefined;
-    if (g) {
-      setSelected({ kind: "group", group: g });
-    } else {
-      const c = codeToCountry.get(item.code);
-      if (c) setSelected({ kind: "country", country: c });
-    }
-    setHovered(null);
-  }
-
-  // The dropdown's `value` needs to match an item by reference; synthesize
-  // the matching Country-shape from the current selection.
-  const dropdownValue: Country | null = (() => {
-    if (!selected) return null;
-    if (selected.kind === "country") return selected.country;
-    return {
-      name: selected.group.name,
-      code: selected.group.id,
-      flagSvg: `${baseUrl}${selected.group.flag}`,
-      continent: selected.group.continent as Country["continent"],
-    };
-  })();
+  const names = useMemo(
+    () => new Map(countries.map((c) => [c.code, c.name])),
+    [countries],
+  );
 
   const display = hovered ?? selected;
 
-  if (loadError) {
+  // Build a polity → Selection helper for historical eras. The HistoricalMap
+  // emits a NAME string when the user clicks/hovers a polity; we wrap that
+  // into a HistoricalSelection enriched with registry info.
+  function selectionFromPolityName(name: string | null): Selection | null {
+    if (!name) return null;
+    const info = polityInfo(name);
+    return {
+      kind: "historical",
+      name,
+      flag: info.flag,
+      continent: info.continent,
+      note: info.note,
+    };
+  }
+
+  if (loadError && isModernEra) {
     return (
       <div className="app app--center">
         <main className="card card--error">
@@ -229,6 +152,8 @@ export default function LearnPage() {
     );
   }
 
+  const flagUrl = display ? selectionFlag(display, baseUrl) : null;
+
   return (
     <div className="learn-fs">
       <div className="game-nav">
@@ -238,36 +163,51 @@ export default function LearnPage() {
       </div>
 
       <div className="learn-fs__map" aria-label="World map">
-        <WorldProgressMap
-          countryResults={{}}
-          // selectedCode is single-code; pass the first highlighted code so
-          // the map still treats hover/click history correctly even though
-          // multi-highlighting is handled by highlightCodes below.
-          selectedCode={
-            display?.kind === "country" ? display.country.code : null
-          }
-          highlightCodes={highlightCodes}
-          disabled={countries.length === 0}
-          selectable={{
-            codes: allCodes,
-            names: pathNames,
-            onSelect: (code) => {
-              const next = selectByMapCode(code);
-              if (next) {
-                setSelected(next);
-                setHovered(null);
-              }
-            },
-            onHover: (code) => {
-              if (!code) {
-                setHovered(null);
-                return;
-              }
-              const next = selectByMapCode(code);
-              if (next) setHovered(next);
-            },
-          }}
-        />
+        {isModernEra ? (
+          <WorldProgressMap
+            countryResults={{}}
+            selectedCode={
+              display?.kind === "modern" ? display.country.code : null
+            }
+            disabled={countries.length === 0}
+            selectable={{
+              codes,
+              names,
+              onSelect: (code) => {
+                const c = codeToCountry.get(code);
+                if (c) {
+                  setSelected({ kind: "modern", country: c });
+                  setHovered(null);
+                }
+              },
+              onHover: (code) => {
+                if (!code) {
+                  setHovered(null);
+                  return;
+                }
+                const c = codeToCountry.get(code);
+                if (c) setHovered({ kind: "modern", country: c });
+              },
+            }}
+          />
+        ) : (
+          <HistoricalMap
+            geoJsonUrl={`${baseUrl}${era.dataUrl}`}
+            selectedName={
+              display?.kind === "historical" ? display.name : null
+            }
+            hoveredName={hovered?.kind === "historical" ? hovered.name : null}
+            onSelect={(name) => {
+              const next = selectionFromPolityName(name);
+              setSelected(next);
+              setHovered(null);
+            }}
+            onHover={(name) => {
+              const next = selectionFromPolityName(name);
+              setHovered(next);
+            }}
+          />
+        )}
       </div>
 
       <div className="learn-fs__panel-wrap">
@@ -282,44 +222,60 @@ export default function LearnPage() {
                 {selectionNote(display) && (
                   <p className="learn-fs__note">{selectionNote(display)}</p>
                 )}
-                <button
-                  type="button"
-                  className="learn-fs__flag"
-                  onClick={() => setZoomed(true)}
-                  aria-label={`Enlarge ${selectionName(display)} flag`}
-                >
-                  <img
-                    src={selectionFlag(display, baseUrl)}
-                    alt=""
-                    className="learn-fs__flag-img"
-                    draggable={false}
-                  />
-                  <span className="learn-fs__flag-hint" aria-hidden="true">
-                    ⤢ Click to enlarge
-                  </span>
-                </button>
+                {flagUrl ? (
+                  <button
+                    type="button"
+                    className="learn-fs__flag"
+                    onClick={() => setZoomed(true)}
+                    aria-label={`Enlarge ${selectionName(display)} flag`}
+                  >
+                    <img
+                      src={flagUrl}
+                      alt=""
+                      className="learn-fs__flag-img"
+                      draggable={false}
+                    />
+                    <span className="learn-fs__flag-hint" aria-hidden="true">
+                      ⤢ Click to enlarge
+                    </span>
+                  </button>
+                ) : (
+                  <p className="learn-fs__no-flag">
+                    No flag image — this polity predates modern flag design
+                    or none survives.
+                  </p>
+                )}
               </>
             ) : (
               <div className="learn-fs__empty">
                 <p className="learn-fs__empty-title">Learn your flags</p>
                 <p className="learn-fs__empty-sub">
-                  Hover or click any country on the map — or use the search
-                  below.
+                  {isModernEra
+                    ? "Hover or click any country on the map — or use the search."
+                    : "Hover or click any polity on the map to see its name and flag."}
                 </p>
               </div>
             )}
           </div>
 
-          <div className="learn-fs__search">
-            <CountryDropdown
-              countries={dropdownItems}
-              value={dropdownValue}
-              onChange={selectByDropdownCode}
-              disabled={countries.length === 0}
-              label={era.borders.kind === "spotlight" ? "Find an entity" : "Find a country"}
-              listPlacement="up"
-            />
-          </div>
+          {/* The search is most useful in modern mode (with 195 known
+              countries). For historical eras the polities are easier to
+              discover by clicking — we hide the dropdown then. */}
+          {isModernEra && (
+            <div className="learn-fs__search">
+              <CountryDropdown
+                countries={countries}
+                value={display?.kind === "modern" ? display.country : null}
+                onChange={(c) => {
+                  if (c) setSelected({ kind: "modern", country: c });
+                  setHovered(null);
+                }}
+                disabled={countries.length === 0}
+                label="Find a country"
+                listPlacement="up"
+              />
+            </div>
+          )}
         </aside>
       </div>
 
@@ -327,16 +283,16 @@ export default function LearnPage() {
         <EraSlider currentId={eraId} onChange={setEraId} />
       </div>
 
-      {zoomed && display && (
+      {zoomed && flagUrl && (
         <div
           className="flag-zoom"
           role="dialog"
           aria-modal="true"
-          aria-label={`Enlarged ${selectionName(display)} flag`}
+          aria-label={`Enlarged ${selectionName(display!)} flag`}
           onClick={() => setZoomed(false)}
         >
           <img
-            src={selectionFlag(display, baseUrl)}
+            src={flagUrl}
             alt=""
             className="flag-zoom__img"
             draggable={false}
@@ -357,6 +313,3 @@ export default function LearnPage() {
     </div>
   );
 }
-
-// (used to make linter happy if we don't reference ERAS elsewhere)
-void ERAS;
