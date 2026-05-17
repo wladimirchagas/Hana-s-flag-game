@@ -160,7 +160,7 @@ export default function LearnPage() {
     let continent: string | undefined = info.continent;
     if (!flag) {
       const modernName =
-        polityModernName(name) ?? // covers registry.modernName + aliases
+        polityModernName(name, eraId) ?? // covers era-overrides + registry.modernName + aliases
         (allowFallback && countryByName.has(name.toLowerCase()) ? name : null);
       if (modernName) {
         // If the resolved modernName ALSO has a registry entry with a
