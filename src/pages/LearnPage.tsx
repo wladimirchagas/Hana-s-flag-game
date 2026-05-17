@@ -7,6 +7,7 @@ import { CountryDropdown } from "../components/CountryDropdown";
 import { EraSlider } from "../components/EraSlider";
 import {
   DEFAULT_ERA_ID,
+  eraAllowsModernFlagFallback,
   getEra,
   polityInfo,
   polityModernName,
@@ -141,29 +142,40 @@ export default function LearnPage() {
 
   // Build a polity → Selection helper for historical eras. The HistoricalMap
   // emits a NAME string when the user clicks/hovers a polity; we wrap that
-  // into a HistoricalSelection enriched with registry info — and fall back
-  // to a modern country flag when the polity has a sensible modern analogue.
+  // into a HistoricalSelection enriched with registry info — and, where
+  // historically defensible, fall back to a modern country flag.
   function selectionFromPolityName(name: string | null): Selection | null {
     if (!name) return null;
-    const info = polityInfo(name);
+    const info = polityInfo(name, eraId);
+    const allowFallback = eraAllowsModernFlagFallback(eraId);
 
-    // Resolve a flag URL with three layers of fallback:
-    //   1. Curated historical-flag image from the registry
-    //   2. Registry-declared `modernName` → flagcdn
-    //   3. Alias table (MODERN_NAME_ALIASES) → flagcdn
-    //   4. Direct case-insensitive match of NAME against a modern country
-    //      (handles "Brazil", "France", "United States", etc. in 1914+)
+    // Resolve a flag URL with up to four layers of fallback:
+    //   1. Curated historical-flag image from the registry          (always)
+    //   2. Registry-declared `modernName` → flagcdn                 (always)
+    //   3. Alias table (MODERN_NAME_ALIASES) → flagcdn              (always)
+    //   4. Direct case-insensitive match of NAME against a modern
+    //      country — ONLY enabled for 1914+ eras, because for pre-1900
+    //      eras most countries had wildly different flags than today.
     let flag: string | undefined = info.flag;
     let continent: string | undefined = info.continent;
     if (!flag) {
       const modernName =
         polityModernName(name) ?? // covers registry.modernName + aliases
-        (countryByName.has(name.toLowerCase()) ? name : null);
+        (allowFallback && countryByName.has(name.toLowerCase()) ? name : null);
       if (modernName) {
-        const country = countryByName.get(modernName.toLowerCase());
-        if (country) {
-          flag = country.flagSvg;
-          if (!continent) continent = country.continent;
+        // If the resolved modernName ALSO has a registry entry with a
+        // curated flag, prefer that — this is how the Spanish viceroyalties
+        // pick up the 1785 Spanish flag instead of the modern flagcdn one.
+        const aliasInfo = polityInfo(modernName, eraId);
+        if (aliasInfo.flag) {
+          flag = aliasInfo.flag;
+          if (!continent) continent = aliasInfo.continent;
+        } else {
+          const country = countryByName.get(modernName.toLowerCase());
+          if (country) {
+            flag = country.flagSvg;
+            if (!continent) continent = country.continent;
+          }
         }
       }
     }

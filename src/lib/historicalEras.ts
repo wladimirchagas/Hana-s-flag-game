@@ -170,6 +170,26 @@ export const ERAS: readonly Era[] = [
 
 export const DEFAULT_ERA_ID: Era["id"] = "today";
 
+/**
+ * Whether a given era is "close enough to modern" that we can fall back to
+ * a modern country's flag when a polity NAME happens to match a modern
+ * country name (e.g., "Brazil" → flagcdn br.svg).
+ *
+ * Most national flags only stabilised in their current form during the
+ * 19th–20th centuries (US: 50-star 1960; France tricolour 1830; Brazil
+ * republican 1889; Italy 1861; Germany 1949; PRC 1949). So for any era
+ * before ~1900, that loose match produces flat-out wrong flags — the
+ * Bourbon white flag, the Star-Spangled Banner with 15 stars, the
+ * Habsburg yellow-black, the Qing dragon banner.
+ *
+ * For pre-1900 eras we require an explicit registry entry or alias to
+ * resolve a flag — anything unmapped renders as "no flag image", which
+ * is more honest than rendering a 21st-century flag in the 1500s.
+ */
+export function eraAllowsModernFlagFallback(eraId: Era["id"]): boolean {
+  return eraId === "ad1914" || eraId === "ad1945" || eraId === "ad1960" || eraId === "today";
+}
+
 export function getEra(id: string): Era {
   return ERAS.find((e) => e.id === id) ?? ERAS[ERAS.length - 1]!;
 }
@@ -269,12 +289,28 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Spanish Empire", { continent: "Global", note: "First truly global empire; covered the Americas, Philippines, and parts of Africa." }],
   ["Portuguese Empire", { continent: "Global", note: "Maritime empire — Brazil, Africa, India, Macau, Timor." }],
   ["French Empire", { continent: "Global", note: "Napoleonic France at its peak." }],
-  ["Austrian Empire", { continent: "Central Europe", note: "Habsburg empire before Austria-Hungary." }],
+  ["Austrian Empire", { flag: "historical-flags/austrian-empire.png", continent: "Central Europe", note: "Habsburg empire (1804–1867), before Austria-Hungary. Flew the gold-and-black Habsburg colours." }],
   ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / North Asia", note: "Vast Eurasian empire under the Romanovs." }],
   ["Tokugawa Shogunate", { continent: "East Asia", note: "Edo-period Japan." }],
   ["Safavid Empire", { continent: "Western Asia", note: "Iranian Shia empire; rival of the Ottomans." }],
   ["Prussia", { continent: "Central Europe", note: "German kingdom that unified Germany in 1871." }],
   ["Maratha Confederacy", { continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India." }],
+  ["Viceroyalty of Brazil", { flag: "historical-flags/ukpba.png", continent: "South America", note: "United Kingdom of Portugal, Brazil and the Algarves (1815–1825) — Brazil was part of a joint kingdom with Portugal, not yet independent." }],
+
+  // === Era-agnostic entries that happen to fit 1815 well too =================
+  // These polities used essentially the same flag well before 1815 AND today,
+  // so they're safe to keep in the global registry without an era-override.
+  ["Spain", { flag: "historical-flags/spain-1785.png", continent: "Iberia", note: "Spain's red-yellow-red flag, adopted by Charles III in 1785 — essentially the same design as today's." }],
+  ["United Kingdom", { continent: "Northern Europe", note: "The Union Jack as we know it today was adopted in 1801 when the UK was formed.", modernName: "United Kingdom" }],
+  ["Netherlands", { continent: "Western Europe", note: "The Dutch tricolour has been used (in the same colours) since the 1570s.", modernName: "Netherlands" }],
+  ["Denmark", { continent: "Northern Europe", note: "The Dannebrog is one of the oldest national flags in continuous use — documented since the 14th century.", modernName: "Denmark" }],
+  ["Sweden", { continent: "Northern Europe", note: "The Swedish flag has flown in roughly its current form since the 16th century.", modernName: "Sweden" }],
+  ["Switzerland", { continent: "Central Europe", note: "The Swiss white-cross-on-red banner dates to the 14th century, though the modern square form was formalised in 1841.", modernName: "Switzerland" }],
+  // Spanish viceroyalties only appear in the 1815 dataset, so this entry
+  // is era-safe — Spain in 1815 already flew the 1785 flag.
+  ["Vice-Royalty of New Spain", { flag: "historical-flags/spain-1785.png", continent: "Mesoamerica", note: "Viceroyalty of New Spain (modern Mexico + Central America), Spanish colony." }],
+  ["Vice-Royalty of New Granada", { flag: "historical-flags/spain-1785.png", continent: "South America", note: "Viceroyalty of New Granada (modern Colombia, Venezuela, Ecuador, Panama), Spanish colony." }],
+  ["Vice-Royalty of Peru", { flag: "historical-flags/spain-1785.png", continent: "South America", note: "Viceroyalty of Peru, Spanish colony in the Andes." }],
   ["Rattanakosin Kingdom", { continent: "Southeast Asia", note: "Modern Kingdom of Thailand, founded 1782 — capital Bangkok." }],
   // Qajar Persia used the Lion-and-Sun banner, not the modern Iran flag —
   // intentionally no modernName so the panel shows "no flag image".
@@ -380,18 +416,19 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   // shows a "no flag image" placeholder rather than an anachronistic flag.
   // We DO route colonies to the colonising power's modern flag where that
   // is historically accurate (it really WAS their flag).
-  ["Algiers", "Algeria"], // Regency of Algiers; close enough to modern Algeria
-  ["Tunis", "Tunisia"],
-  ["Tripolitania", "Libya"],
-  ["Cyrenaica", "Libya"],
-  // Colonies → colonising power (their actual sovereign flag in 1815):
+  // 1815 Ottoman regencies — flag was the Ottoman flag, NOT modern
+  // Algeria/Tunisia/Libya. Best handled as no-flag rather than wrong-flag.
+  // (Removed: Algiers/Tunis/Tripolitania/Cyrenaica aliases.)
+  // British colonies in 1815 → Union Jack (correct):
   ["Cape Colony", "United Kingdom"],
   ["British East India Company", "United Kingdom"],
-  ["Portuguese East Africa", "Portugal"],
-  ["Portuguese Guinea", "Portugal"],
-  ["Delagoa Bay", "Portugal"],
-  ["Goa", "Portugal"],
-  ["Viceroyalty of Brazil", "Portugal"], // Brazil was still part of the Kingdom of Portugal in 1815
+  // Portuguese colonies in 1815 → in this app we route to the UKPBA flag
+  // via registry entries, because mainland Portugal didn't fly the modern
+  // red-green flag until 1911. See POLITY_REGISTRY for these.
+  // Viceroyalty of Brazil — handled by an explicit registry entry below
+  // because in 1815 the flag was the United Kingdom of Portugal, Brazil
+  // and the Algarves banner (a blue armillary sphere on white), NOT the
+  // modern red/green Portuguese flag. See POLITY_REGISTRY.
   ["Vice-Royalty of New Granada", "Spain"],
   ["Vice-Royalty of New Spain", "Spain"],
   ["Vice-Royalty of Peru", "Spain"],
@@ -422,8 +459,47 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   ["Yemen", "Yemen"],
 ]);
 
-/** Look up a polity by NAME. Returns curated info if present, else empty. */
-export function polityInfo(name: string): PolityInfo {
+/**
+ * Era-specific overrides — checked BEFORE the global POLITY_REGISTRY.
+ *
+ * Use when the same polity NAME means different flags across eras. The
+ * canonical case is "France": Bourbon white flag in 1500/1700/1815, the
+ * tricolour from 1830 onwards. Without an override the global registry
+ * would have to pick one, which is wrong for the others.
+ *
+ * Era keys must match Era["id"] values. Only the ENTRY's eraId triggers
+ * the override; the registry fallback still runs for every other era.
+ */
+const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = new Map([
+  ["ad1500", new Map<string, PolityInfo>([
+    ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Kingdom of France under the Valois — the white Bourbon-style royal banner with fleur-de-lis was used in this period." }],
+  ])],
+  ["ad1700", new Map<string, PolityInfo>([
+    ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon France under Louis XIV. White royal banner with fleur-de-lis — the tricolour wasn't adopted until 1790." }],
+  ])],
+  ["ad1815", new Map<string, PolityInfo>([
+    ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon Restoration (1814–1830) — France flew the white royal banner with fleur-de-lis. The tricolour wasn't readopted until 1830." }],
+    ["United States", { flag: "historical-flags/us-15star.png", continent: "North America", note: "The Star-Spangled Banner, 1795–1818: 15 stars and 15 stripes. A star+stripe pair was added for every new state until 1818." }],
+    ["Portugal", { flag: "historical-flags/ukpba.png", continent: "Iberia", note: "United Kingdom of Portugal, Brazil and the Algarves (1815–1825). The familiar red-and-green Portuguese flag wasn't adopted until 1911." }],
+    ["Portuguese East Africa", { flag: "historical-flags/ukpba.png", continent: "East Africa", note: "Portuguese Mozambique, ruled from Lisbon under the UKPBA banner." }],
+    ["Portuguese Guinea", { flag: "historical-flags/ukpba.png", continent: "West Africa", note: "Portuguese colony in modern Guinea-Bissau." }],
+    ["Delagoa Bay", { flag: "historical-flags/ukpba.png", continent: "East Africa", note: "Portuguese trading post in modern Mozambique." }],
+    ["Goa", { flag: "historical-flags/ukpba.png", continent: "South Asia", note: "Portuguese India — held until 1961." }],
+  ])],
+]);
+
+/**
+ * Look up a polity by NAME, optionally biased by era.
+ *
+ * Era-specific overrides win over global registry entries; falls back to
+ * an empty object so callers can compose with the alias / modern-country
+ * lookup paths.
+ */
+export function polityInfo(name: string, eraId?: Era["id"]): PolityInfo {
+  if (eraId) {
+    const eraEntry = ERA_OVERRIDES.get(eraId)?.get(name);
+    if (eraEntry) return eraEntry;
+  }
   return POLITY_REGISTRY.get(name) ?? {};
 }
 
