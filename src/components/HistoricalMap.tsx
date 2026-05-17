@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { useTheme } from "../context/ThemeContext";
+import { useZoomPan } from "../hooks/useZoomPan";
 
 /**
  * Renders an era-specific historical world map.
@@ -87,6 +88,7 @@ export function HistoricalMap({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
+  const zoom = useZoomPan(WIDTH, HEIGHT);
 
   // Load the era's GeoJSON whenever the URL changes.
   useEffect(() => {
@@ -157,7 +159,9 @@ export function HistoricalMap({
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
             role="img"
             aria-label="Historical world map for the selected era"
+            {...zoom.svgHandlers}
           >
+            <g transform={zoom.transform}>
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
               const isHighlighted =
@@ -187,7 +191,18 @@ export function HistoricalMap({
                 </path>
               );
             })}
+            </g>
           </svg>
+        )}
+        {zoom.isZoomed && (
+          <button
+            type="button"
+            className="world-map__reset-zoom"
+            onClick={zoom.reset}
+            aria-label="Reset zoom"
+          >
+            Reset zoom
+          </button>
         )}
       </div>
     </section>

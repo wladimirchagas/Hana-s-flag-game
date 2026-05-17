@@ -741,6 +741,42 @@
   display: block;
   width: 100%;
   height: auto;
+  /* Touch zoom/pan are handled in JS via pointer events — disable the
+     browser's default touch panning so our handlers can drag/pinch. */
+  touch-action: none;
+}
+
+/* "Reset zoom" pill that appears once the user has zoomed or panned away
+   from the default view. Floats in the top-right of the map frame. */
+.world-map__reset-zoom {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.35rem 0.7rem;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  z-index: 4;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.world-map__reset-zoom:hover,
+.world-map__reset-zoom:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  outline: none;
+}
+
+.world-map__reset-zoom:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
 }
 
 /* Interactive countries — pointer cursor + soft hover highlight. */
