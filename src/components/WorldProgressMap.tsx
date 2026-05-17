@@ -38,6 +38,12 @@ type Props = {
   /** Currently selected (but not-yet-confirmed) country code. Drawn highlighted. */
   selectedCode?: string | null;
   /**
+   * Optional set of codes to draw with the "selected" highlight regardless of
+   * selectedCode. Used by Learn-mode spotlight grouping: clicking any one
+   * Soviet republic highlights all 15 by passing the full member set here.
+   */
+  highlightCodes?: ReadonlySet<string> | null;
+  /**
    * If provided, clicking a country in this set selects it and shows a confirm
    * popover next to the click. Pass a Map of code → display name so the popover
    * can show the country name. If omitted, the map is read-only (progress only).
@@ -145,6 +151,7 @@ type Popover = {
 export function WorldProgressMap({
   countryResults,
   selectedCode = null,
+  highlightCodes = null,
   selectable,
   disabled = false,
 }: Props) {
@@ -290,7 +297,9 @@ export function WorldProgressMap({
             // doing nothing.
             const isUnMember = !!alpha2 && ALL_UN_NAMES.has(alpha2);
             const clickable = isInteractive && isUnMember;
-            const isSelected = !!alpha2 && alpha2 === selectedCode;
+            const isSelected =
+              !!alpha2 &&
+              (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
             const baseFill = getFill(
               alpha2,
               countryResults,

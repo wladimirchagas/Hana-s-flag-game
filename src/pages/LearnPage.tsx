@@ -2,37 +2,72 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
+import { HistoricalMap } from "../components/HistoricalMap";
 import { CountryDropdown } from "../components/CountryDropdown";
+import { EraSlider } from "../components/EraSlider";
+import {
+  DEFAULT_ERA_ID,
+  getEra,
+  polityInfo,
+  type Era,
+} from "../lib/historicalEras";
 import "../App.css";
 import "./LearnPage.css";
 
 /**
- * Sandbox-style "Learn your flags" mode.
+ * Learn-mode sandbox with a historical era slider.
  *
- * Layout (full-screen):
- *   - World map fills the viewport edge-to-edge (no card chrome).
- *   - Floating panel anchored to the bottom-left of the viewport contains:
- *       • the selected (or hovered) country's flag and name
- *       • a country search dropdown at the bottom, opening upward
- *   - Top bar (Home button + global theme toggle) sits over the map.
+ * Two map back-ends:
+ *  - WorldProgressMap (modern world-atlas) is rendered when era === "today".
+ *  - HistoricalMap (hand-curated GeoJSON per era from
+ *    aourednik/historical-basemaps) is rendered for every other era.
  *
- * Interaction:
- *   - Hover any country on the map → live preview in the floating panel.
- *   - Click a country (map OR dropdown) → locks selection.
- *   - Tap the flag image → opens the fullscreen flag viewer (SVG scales).
- *   - Tiny nations (Vatican, Monaco, San Marino, Andorra, Liechtenstein,
- *     etc.) are reachable via the dropdown's search, since their map
- *     paths are too small to click reliably.
+ * Selection model differs slightly:
+ *  - Modern: a Country object (ISO alpha-2 code, modern flag URL).
+ *  - Historical: a polity name string plus lookup in POLITY_REGISTRY for
+ *    flag / continent / note.
  *
- * The map omits the Confirm popover (selectable.onConfirm not supplied).
+ * Default era is always "today" so first-time visitors see the current
+ * world. Switching eras resets the current selection.
  */
+
+type ModernSelection = { kind: "modern"; country: Country };
+type HistoricalSelection = {
+  kind: "historical";
+  name: string;
+  flag?: string;
+  continent?: string;
+  note?: string;
+};
+type Selection = ModernSelection | HistoricalSelection;
+
+function selectionName(s: Selection): string {
+  return s.kind === "modern" ? s.country.name : s.name;
+}
+function selectionContinent(s: Selection): string {
+  return s.kind === "modern" ? s.country.continent : s.continent ?? "Historical";
+}
+function selectionFlag(s: Selection, baseUrl: string): string | null {
+  if (s.kind === "modern") return s.country.flagSvg;
+  return s.flag ? `${baseUrl}${s.flag}` : null;
+}
+function selectionNote(s: Selection): string | undefined {
+  return s.kind === "historical" ? s.note : undefined;
+}
+
 export default function LearnPage() {
+  const [eraId, setEraId] = useState<Era["id"]>(DEFAULT_ERA_ID);
   const [countries, setCountries] = useState<Country[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [hovered, setHovered] = useState<Country | null>(null);
-  const [selected, setSelected] = useState<Country | null>(null);
+  const [hovered, setHovered] = useState<Selection | null>(null);
+  const [selected, setSelected] = useState<Selection | null>(null);
   const [zoomed, setZoomed] = useState(false);
 
+  const baseUrl = import.meta.env.BASE_URL;
+  const era = useMemo(() => getEra(eraId), [eraId]);
+  const isModernEra = !era.dataUrl;
+
+  // Modern countries are loaded once on mount (used for the "Today" era).
   useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -50,6 +85,12 @@ export default function LearnPage() {
       cancelled = true;
     };
   }, []);
+
+  // Reset selection/hover when the era changes — entities don't carry over.
+  useEffect(() => {
+    setSelected(null);
+    setHovered(null);
+  }, [eraId]);
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
   useEffect(() => {
@@ -79,12 +120,24 @@ export default function LearnPage() {
     [countries],
   );
 
-  // Hovered country wins (live preview); selected is the fallback "locked"
-  // state. So moving the mouse over a different country temporarily shows it,
-  // and leaving the map reverts to the last-clicked country.
   const display = hovered ?? selected;
 
-  if (loadError) {
+  // Build a polity → Selection helper for historical eras. The HistoricalMap
+  // emits a NAME string when the user clicks/hovers a polity; we wrap that
+  // into a HistoricalSelection enriched with registry info.
+  function selectionFromPolityName(name: string | null): Selection | null {
+    if (!name) return null;
+    const info = polityInfo(name);
+    return {
+      kind: "historical",
+      name,
+      flag: info.flag,
+      continent: info.continent,
+      note: info.note,
+    };
+  }
+
+  if (loadError && isModernEra) {
     return (
       <div className="app app--center">
         <main className="card card--error">
@@ -99,6 +152,8 @@ export default function LearnPage() {
     );
   }
 
+  const flagUrl = display ? selectionFlag(display, baseUrl) : null;
+
   return (
     <div className="learn-fs">
       <div className="game-nav">
@@ -108,96 +163,136 @@ export default function LearnPage() {
       </div>
 
       <div className="learn-fs__map" aria-label="World map">
-        <WorldProgressMap
-          countryResults={{}}
-          selectedCode={display?.code ?? null}
-          disabled={countries.length === 0}
-          selectable={{
-            codes,
-            names,
-            onSelect: (code) => {
-              const c = codeToCountry.get(code);
-              if (c) {
-                setSelected(c);
-                setHovered(null);
-              }
-            },
-            onHover: (code) => {
-              if (!code) {
-                setHovered(null);
-                return;
-              }
-              const c = codeToCountry.get(code);
-              if (c) setHovered(c);
-            },
-          }}
-        />
+        {isModernEra ? (
+          <WorldProgressMap
+            countryResults={{}}
+            selectedCode={
+              display?.kind === "modern" ? display.country.code : null
+            }
+            disabled={countries.length === 0}
+            selectable={{
+              codes,
+              names,
+              onSelect: (code) => {
+                const c = codeToCountry.get(code);
+                if (c) {
+                  setSelected({ kind: "modern", country: c });
+                  setHovered(null);
+                }
+              },
+              onHover: (code) => {
+                if (!code) {
+                  setHovered(null);
+                  return;
+                }
+                const c = codeToCountry.get(code);
+                if (c) setHovered({ kind: "modern", country: c });
+              },
+            }}
+          />
+        ) : (
+          <HistoricalMap
+            geoJsonUrl={`${baseUrl}${era.dataUrl}`}
+            selectedName={
+              display?.kind === "historical" ? display.name : null
+            }
+            hoveredName={hovered?.kind === "historical" ? hovered.name : null}
+            onSelect={(name) => {
+              const next = selectionFromPolityName(name);
+              setSelected(next);
+              setHovered(null);
+            }}
+            onHover={(name) => {
+              const next = selectionFromPolityName(name);
+              setHovered(next);
+            }}
+          />
+        )}
       </div>
 
       <div className="learn-fs__panel-wrap">
-      <aside className="learn-fs__panel" aria-live="polite">
-        {/* Detail section — top of panel */}
-        <div className="learn-fs__detail">
-          {display ? (
-            <>
-              <p className="learn-fs__continent">{display.continent}</p>
-              <h2 className="learn-fs__name">{display.name}</h2>
-              <button
-                type="button"
-                className="learn-fs__flag"
-                onClick={() => setZoomed(true)}
-                aria-label={`Enlarge ${display.name} flag`}
-              >
-                <img
-                  src={display.flagSvg}
-                  alt=""
-                  className="learn-fs__flag-img"
-                  draggable={false}
-                />
-                <span className="learn-fs__flag-hint" aria-hidden="true">
-                  ⤢ Click to enlarge
-                </span>
-              </button>
-            </>
-          ) : (
-            <div className="learn-fs__empty">
-              <p className="learn-fs__empty-title">Learn your flags</p>
-              <p className="learn-fs__empty-sub">
-                Hover or click any country on the map — or use the search
-                below to find tiny nations like Vatican City.
-              </p>
+        <aside className="learn-fs__panel" aria-live="polite">
+          <div className="learn-fs__detail">
+            {display ? (
+              <>
+                <p className="learn-fs__continent">
+                  {selectionContinent(display)}
+                </p>
+                <h2 className="learn-fs__name">{selectionName(display)}</h2>
+                {selectionNote(display) && (
+                  <p className="learn-fs__note">{selectionNote(display)}</p>
+                )}
+                {flagUrl ? (
+                  <button
+                    type="button"
+                    className="learn-fs__flag"
+                    onClick={() => setZoomed(true)}
+                    aria-label={`Enlarge ${selectionName(display)} flag`}
+                  >
+                    <img
+                      src={flagUrl}
+                      alt=""
+                      className="learn-fs__flag-img"
+                      draggable={false}
+                    />
+                    <span className="learn-fs__flag-hint" aria-hidden="true">
+                      ⤢ Click to enlarge
+                    </span>
+                  </button>
+                ) : (
+                  <p className="learn-fs__no-flag">
+                    No flag image — this polity predates modern flag design
+                    or none survives.
+                  </p>
+                )}
+              </>
+            ) : (
+              <div className="learn-fs__empty">
+                <p className="learn-fs__empty-title">Learn your flags</p>
+                <p className="learn-fs__empty-sub">
+                  {isModernEra
+                    ? "Hover or click any country on the map — or use the search."
+                    : "Hover or click any polity on the map to see its name and flag."}
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* The search is most useful in modern mode (with 195 known
+              countries). For historical eras the polities are easier to
+              discover by clicking — we hide the dropdown then. */}
+          {isModernEra && (
+            <div className="learn-fs__search">
+              <CountryDropdown
+                countries={countries}
+                value={display?.kind === "modern" ? display.country : null}
+                onChange={(c) => {
+                  if (c) setSelected({ kind: "modern", country: c });
+                  setHovered(null);
+                }}
+                disabled={countries.length === 0}
+                label="Find a country"
+                listPlacement="up"
+              />
             </div>
           )}
-        </div>
-
-        {/* Search section — bottom of panel; dropdown opens upward so the
-            list rises into view instead of pushing off the bottom edge. */}
-        <div className="learn-fs__search">
-          <CountryDropdown
-            countries={countries}
-            value={selected}
-            onChange={(c) => {
-              setSelected(c);
-              setHovered(null);
-            }}
-            disabled={countries.length === 0}
-            label="Find a country"
-            listPlacement="up"
-          />
-        </div>
-      </aside>
+        </aside>
       </div>
 
-      {zoomed && display && (
+      <div className="learn-fs__slider-wrap">
+        <EraSlider currentId={eraId} onChange={setEraId} />
+      </div>
+
+      {zoomed && flagUrl && (
         <div
           className="flag-zoom"
           role="dialog"
           aria-modal="true"
-          aria-label={`Enlarged ${display.name} flag`}
+          aria-label={`Enlarged ${selectionName(display!)} flag`}
           onClick={() => setZoomed(false)}
         >
           <img
-            src={display.flagSvg}
+            src={flagUrl}
             alt=""
             className="flag-zoom__img"
             draggable={false}
