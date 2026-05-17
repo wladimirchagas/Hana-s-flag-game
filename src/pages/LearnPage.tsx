@@ -134,6 +134,7 @@ export default function LearnPage() {
         />
       </div>
 
+      <div className="learn-fs__panel-wrap">
       <aside className="learn-fs__panel" aria-live="polite">
         {/* Detail section — top of panel */}
         <div className="learn-fs__detail">
@@ -185,6 +186,7 @@ export default function LearnPage() {
           />
         </div>
       </aside>
+      </div>
 
       {zoomed && display && (
         <div
