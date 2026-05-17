@@ -9,6 +9,7 @@ import {
   DEFAULT_ERA_ID,
   getEra,
   polityInfo,
+  polityModernName,
   type Era,
 } from "../lib/historicalEras";
 import "../App.css";
@@ -49,7 +50,12 @@ function selectionContinent(s: Selection): string {
 }
 function selectionFlag(s: Selection, baseUrl: string): string | null {
   if (s.kind === "modern") return s.country.flagSvg;
-  return s.flag ? `${baseUrl}${s.flag}` : null;
+  if (!s.flag) return null;
+  // Historical selections may carry either a relative asset path (curated
+  // historical flag PNG in /public) or an absolute URL (modern flagcdn flag,
+  // used when we fall back to a modern country's flag for a historical name).
+  if (/^https?:\/\//.test(s.flag) || s.flag.startsWith("data:")) return s.flag;
+  return `${baseUrl}${s.flag}`;
 }
 function selectionNote(s: Selection): string | undefined {
   return s.kind === "historical" ? s.note : undefined;
@@ -120,19 +126,53 @@ export default function LearnPage() {
     [countries],
   );
 
+  // Case-insensitive name→Country lookup, used to resolve historical polity
+  // NAMEs to a modern flag (via `modernName` in the registry or the
+  // MODERN_NAME_ALIASES table). Lets us cover hundreds of post-1815
+  // polities — colonies, German principalities, modern country names —
+  // without hand-curating a flag image for each one.
+  const countryByName = useMemo(() => {
+    const m = new Map<string, Country>();
+    for (const c of countries) m.set(c.name.toLowerCase(), c);
+    return m;
+  }, [countries]);
+
   const display = hovered ?? selected;
 
   // Build a polity → Selection helper for historical eras. The HistoricalMap
   // emits a NAME string when the user clicks/hovers a polity; we wrap that
-  // into a HistoricalSelection enriched with registry info.
+  // into a HistoricalSelection enriched with registry info — and fall back
+  // to a modern country flag when the polity has a sensible modern analogue.
   function selectionFromPolityName(name: string | null): Selection | null {
     if (!name) return null;
     const info = polityInfo(name);
+
+    // Resolve a flag URL with three layers of fallback:
+    //   1. Curated historical-flag image from the registry
+    //   2. Registry-declared `modernName` → flagcdn
+    //   3. Alias table (MODERN_NAME_ALIASES) → flagcdn
+    //   4. Direct case-insensitive match of NAME against a modern country
+    //      (handles "Brazil", "France", "United States", etc. in 1914+)
+    let flag: string | undefined = info.flag;
+    let continent: string | undefined = info.continent;
+    if (!flag) {
+      const modernName =
+        polityModernName(name) ?? // covers registry.modernName + aliases
+        (countryByName.has(name.toLowerCase()) ? name : null);
+      if (modernName) {
+        const country = countryByName.get(modernName.toLowerCase());
+        if (country) {
+          flag = country.flagSvg;
+          if (!continent) continent = country.continent;
+        }
+      }
+    }
+
     return {
       kind: "historical",
       name,
-      flag: info.flag,
-      continent: info.continent,
+      flag,
+      continent,
       note: info.note,
     };
   }

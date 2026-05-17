@@ -43,6 +43,13 @@ export type PolityInfo = {
   continent?: string;
   /** One-line note about the entity, shown below the name in the panel. */
   note?: string;
+  /** If set, the polity's flag falls back to the modern country with this
+   *  exact `Country.name` (loaded from REST Countries) — useful for the
+   *  many post-1815 features whose NAME is just the modern country name
+   *  (Brazil, France, etc.) or a close historical variant (Burma → Myanmar,
+   *  Ceylon → Sri Lanka, Persia → Iran). Lets us cover hundreds of polities
+   *  without curating a flag image for each one. */
+  modernName?: string;
 };
 
 /* --------------------------------------------------------------------------
@@ -177,15 +184,26 @@ export function getEra(id: string): Era {
  */
 export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // Ancient (2000 BC – 100 AD) ---------------------------------------------
-  ["Egypt", { continent: "North Africa", note: "Ancient kingdom along the Nile." }],
+  // NOTE: keys must match dataset NAME values exactly — including British
+  // spelling vs American, dataset typos, and punctuation. The historical-
+  // basemaps GeoJSONs are mostly American-English ("civilization") and use
+  // "Sumer" / "Minoan" / "Indus valley civilization" (lowercase v).
+  ["Egypt", { continent: "North Africa", note: "Ancient kingdom along the Nile.", modernName: "Egypt" }],
   ["Sumer", { continent: "Mesopotamia", note: "City-states of the southern Tigris-Euphrates." }],
-  ["Indus Valley civilisation", { continent: "South Asia", note: "Bronze-Age cities of Harappa and Mohenjo-Daro." }],
-  ["Minoans", { continent: "Mediterranean", note: "Bronze-Age civilisation of Crete." }],
+  ["Indus valley civilization", { continent: "South Asia", note: "Bronze-Age cities of Harappa and Mohenjo-Daro." }],
+  ["Minoan", { continent: "Mediterranean", note: "Bronze-Age civilisation of Crete." }],
+  ["Hittites", { continent: "Anatolia", note: "Bronze-Age empire of Anatolia; rivals of Egypt." }],
+  ["Elam", { continent: "Western Asia", note: "Ancient civilisation of south-west Iran." }],
+  ["Ur", { continent: "Mesopotamia", note: "Sumerian city of Ur, ziggurat of Ur-Nammu." }],
+  ["Canaan", { continent: "Levant", note: "Ancient Levantine peoples, ancestors of the Phoenicians." }],
+  ["Xia", { continent: "East Asia", note: "Legendary first Chinese dynasty (Bronze Age)." }],
+  ["Kerma", { continent: "Northeast Africa", note: "Bronze-Age Nubian kingdom in modern Sudan." }],
   ["Achaemenid Empire", { continent: "Western Asia", note: "Persian Empire founded by Cyrus the Great." }],
   ["Greek city-states", { continent: "Mediterranean", note: "Independent poleis: Athens, Sparta, and many more." }],
   ["Carthaginian Empire", { continent: "Mediterranean", note: "Phoenician maritime empire centred on Carthage." }],
   ["Etrurians", { continent: "Mediterranean", note: "Pre-Roman civilisation of central Italy." }],
   ["Magadha", { continent: "South Asia", note: "Powerful kingdom of north-east India." }],
+  ["Rome", { flag: "historical-flags/roman-empire.png", continent: "Mediterranean", note: "Roman Republic — by 500 BC still a city-state, soon to dominate Italy." }],
   ["Roman Empire", { flag: "historical-flags/roman-empire.png", continent: "Mediterranean", note: "Ruled the entire Mediterranean basin. Capital: Rome." }],
   ["Han", { continent: "East Asia", note: "Han dynasty — China's classical age, contemporary with Rome." }],
   ["Parthian Empire", { flag: "historical-flags/parthian-empire.png", continent: "Western Asia", note: "Rome's eastern rival; Arsacid dynasty." }],
@@ -197,34 +215,55 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Moche", { continent: "South America", note: "Andean civilisation of coastal Peru." }],
   ["Nazca", { continent: "South America", note: "Andean civilisation famous for the desert geoglyphs." }],
   ["Himyarite Kingdom", { continent: "Arabia", note: "Incense kingdom of southern Arabia." }],
+  ["Nabatean Kingdom", { continent: "Arabia", note: "Trading kingdom whose capital was Petra." }],
+  ["Armenia", { continent: "Western Asia", note: "Ancient Armenian kingdom, often caught between Rome and Parthia.", modernName: "Armenia" }],
   ["Koguryo", { continent: "East Asia", note: "Korean Three-Kingdoms-era state in the north." }],
   ["Paekche", { continent: "East Asia", note: "Korean Three-Kingdoms-era state in the south-west." }],
   ["Silla", { continent: "East Asia", note: "Korean Three-Kingdoms-era state, eventual unifier of Korea." }],
   ["Yayoi", { continent: "East Asia", note: "Pre-state cultures of early Japan." }],
   ["Scythians", { continent: "Eurasian Steppe", note: "Nomadic peoples of the Pontic-Caspian steppe." }],
   ["Sarmatians", { continent: "Eurasian Steppe", note: "Nomadic Iranian peoples; later allies + rivals of Rome." }],
+  ["Dacia", { continent: "Eastern Europe", note: "Iron-Age kingdom in modern Romania; conquered by Rome in 106 AD." }],
 
   // Medieval (600 AD – 1300 AD) --------------------------------------------
+  // 600 AD uses "Eastern Roman Empire" and "Sasanian Empire"; from 800 onwards
+  // the dataset says "Byzantine Empire" and there's no Sassanid Persia.
+  ["Eastern Roman Empire", { continent: "Eastern Mediterranean", note: "Byzantine Empire; capital Constantinople." }],
   ["Byzantine Empire", { continent: "Eastern Mediterranean", note: "Eastern Roman Empire; capital Constantinople." }],
-  ["Sassanid Empire", { continent: "Western Asia", note: "Last pre-Islamic Persian empire." }],
+  ["Sasanian Empire", { continent: "Western Asia", note: "Last pre-Islamic Persian empire." }],
   ["Tang", { continent: "East Asia", note: "Tang dynasty — China's cosmopolitan golden age." }],
   ["Abbasid Caliphate", { continent: "Middle East", note: "Islamic caliphate; capital Baghdad." }],
   ["Umayyad Caliphate", { continent: "Middle East", note: "Earlier Islamic caliphate; capital Damascus." }],
   ["Carolingian Empire", { continent: "Western Europe", note: "Charlemagne's Frankish empire." }],
+  ["Frankish Kingdom", { continent: "Western Europe", note: "Merovingian / early Frankish kingdom; ancestor of France + Germany." }],
   ["Holy Roman Empire", { continent: "Central Europe", note: "Successor to the Carolingian Empire in Central Europe." }],
   ["Mongol Empire", { continent: "Eurasia", note: "The largest contiguous land empire in human history." }],
+  ["Great Khanate", { continent: "East Asia", note: "Yuan dynasty — Kublai Khan's Mongol-ruled China." }],
+  ["Khanate of the Golden Horde", { continent: "Eurasian Steppe", note: "Western successor of the Mongol Empire over Russia + Kazakhstan." }],
+  ["Chagatai Khanate", { continent: "Central Asia", note: "Central-Asian successor of the Mongol Empire." }],
+  ["Ilkhanate", { continent: "Western Asia", note: "Persian successor of the Mongol Empire." }],
   ["Yuan", { continent: "East Asia", note: "Mongol-ruled dynasty of China." }],
   ["Song", { continent: "East Asia", note: "Song dynasty — Chinese economic + technological boom." }],
   ["Khmer Empire", { continent: "Southeast Asia", note: "Builders of Angkor Wat." }],
   ["Srivijaya", { continent: "Southeast Asia", note: "Maritime empire of Sumatra." }],
   ["Mali Empire", { continent: "West Africa", note: "Wealthy West African empire of Mansa Musa." }],
+  ["Mali", { continent: "West Africa", note: "Medieval Mali Empire of Mansa Musa." }],
   ["Ghana Empire", { continent: "West Africa", note: "Earlier West African trans-Saharan trading power." }],
+  ["Ghana", { continent: "West Africa", note: "Medieval Ghana Empire — trans-Saharan gold trade." }],
+  ["Empire of Ghana", { continent: "West Africa", note: "Medieval Ghana Empire — trans-Saharan gold trade." }],
+  ["Great Zimbabwe", { continent: "Southern Africa", note: "Iron-Age trading state and stone-walled capital." }],
+  ["Visigothic Kingdom", { continent: "Iberia", note: "Germanic kingdom in Iberia after Rome's fall." }],
+  ["Lombard principalities", { continent: "Italy", note: "Germanic kingdoms that ruled post-Roman Italy." }],
+  ["Lombard duchies", { continent: "Italy", note: "Lombard polities of central + southern Italy." }],
+  ["Avars", { continent: "Eastern Europe", note: "Nomadic confederation; rivals of the Byzantines." }],
+  ["Bulgars", { continent: "Eastern Europe", note: "First Bulgarian Empire of the Balkans." }],
 
   // Early modern (1500 – 1815) ----------------------------------------------
   ["Aztec Empire", { continent: "Mesoamerica", note: "Triple-alliance empire centred on Tenochtitlan." }],
   ["Inca Empire", { continent: "South America", note: "Andean empire stretching from Ecuador to Chile." }],
   ["Ming", { continent: "East Asia", note: "Ming dynasty — Great Wall, Forbidden City, voyages of Zheng He." }],
   ["Qing", { continent: "East Asia", note: "Last imperial Chinese dynasty." }],
+  ["Manchu Empire", { continent: "East Asia", note: "Qing dynasty — China's last imperial dynasty." }],
   ["Mughal Empire", { continent: "South Asia", note: "Persianate Muslim empire that built the Taj Mahal." }],
   ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Sultanate ruling Anatolia, the Balkans, and the Middle East." }],
   ["Spanish Empire", { continent: "Global", note: "First truly global empire; covered the Americas, Philippines, and parts of Africa." }],
@@ -234,6 +273,14 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / North Asia", note: "Vast Eurasian empire under the Romanovs." }],
   ["Tokugawa Shogunate", { continent: "East Asia", note: "Edo-period Japan." }],
   ["Safavid Empire", { continent: "Western Asia", note: "Iranian Shia empire; rival of the Ottomans." }],
+  ["Prussia", { continent: "Central Europe", note: "German kingdom that unified Germany in 1871." }],
+  ["Maratha Confederacy", { continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India." }],
+  ["Rattanakosin Kingdom", { continent: "Southeast Asia", note: "Modern Kingdom of Thailand, founded 1782 — capital Bangkok." }],
+  ["Persia", { continent: "Western Asia", note: "Qajar-era Persia, the forerunner of modern Iran.", modernName: "Iran" }],
+  ["Sweden–Norway", { continent: "Northern Europe", note: "Union of Sweden and Norway, 1814–1905.", modernName: "Sweden" }],
+  ["Kingdom of Sardinia", { continent: "Italy", note: "Piedmont-Sardinia — core of the future Kingdom of Italy.", modernName: "Italy" }],
+  ["Kingdom of the Two Sicilies", { continent: "Italy", note: "Bourbon kingdom of southern Italy and Sicily.", modernName: "Italy" }],
+  ["Kingfom of Italy", { continent: "Italy", note: "Kingdom of Italy (dataset typo of \"Kingdom\").", modernName: "Italy" }],
 
   // Modern (1914 – today) --------------------------------------------------
   ["Austro-Hungarian Empire", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Dual monarchy of the Habsburgs." }],
@@ -244,12 +291,204 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Federal Republic of Czechs and Slovaks, 1918–1992." }],
   ["British Empire", { continent: "Global", note: "Largest empire in history at its 1922 peak." }],
   ["British Raj", { continent: "South Asia", note: "British rule of India, 1858–1947." }],
+  ["British East India Company", { continent: "South Asia", note: "Company rule of India before the 1858 Raj." }],
   ["Belgian Congo", { continent: "Central Africa", note: "Colonial Belgian rule of modern DRC." }],
   ["French Indochina", { continent: "Southeast Asia", note: "French colonial rule of Vietnam / Laos / Cambodia." }],
   ["Dutch East Indies", { continent: "Southeast Asia", note: "Dutch colonial rule of modern Indonesia." }],
-  ["Abyssinia", { continent: "East Africa", note: "Historical name for Ethiopia, never colonised by Europe." }],
+  ["Netherlands Indies", { continent: "Southeast Asia", note: "Dutch colonial rule of modern Indonesia." }],
+  ["Abyssinia", { continent: "East Africa", note: "Historical name for Ethiopia, never colonised by Europe.", modernName: "Ethiopia" }],
+  ["Empire of Japan", { continent: "East Asia", note: "Imperial Japan, 1868–1947.", modernName: "Japan" }],
+  ["Burma", { continent: "Southeast Asia", note: "Pre-1989 name for Myanmar.", modernName: "Myanmar" }],
+  ["Ceylon", { continent: "South Asia", note: "Pre-1972 name for Sri Lanka.", modernName: "Sri Lanka" }],
+  ["Siam", { continent: "Southeast Asia", note: "Pre-1939 name for Thailand.", modernName: "Thailand" }],
+  ["Zaire", { continent: "Central Africa", note: "Name of the DRC under Mobutu, 1971–1997.", modernName: "DR Congo" }],
+  ["United Kingdom of Great Britain and Ireland", { continent: "Northern Europe", note: "Pre-1922 UK including all of Ireland.", modernName: "United Kingdom" }],
+  ["Gambia, The", { continent: "West Africa", modernName: "Gambia" }],
+  ["Tanzania, United Republic of", { continent: "East Africa", modernName: "Tanzania" }],
+  ["Korea, Democratic People's Republic of", { continent: "East Asia", modernName: "North Korea" }],
+  ["Korea, Republic of", { continent: "East Asia", modernName: "South Korea" }],
 ]);
 
+/**
+ * Lightweight alias table: dataset NAME → modern country name.
+ *
+ * For polities whose only useful info is "this is what kids would today call
+ * country X" — no need for a curated note. Many post-1815 colonial labels
+ * and dataset typos land here. Falls back to the modern flagcdn flag via
+ * the loaded Country list.
+ *
+ * Keys must match dataset NAME values verbatim, including any typos.
+ */
+export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
+  // 1914 colonial labels
+  ["Anglo-Egyption Sudan", "Sudan"],
+  ["British East Africa", "Kenya"],
+  ["British Somaliland", "Somalia"],
+  ["German E. Africa (Tanganyika)", "Tanzania"],
+  ["German South-West Africa", "Namibia"],
+  ["Italian Somaliland", "Somalia"],
+  ["Spanish Morocco", "Morocco"],
+  ["Spanish Sahara", "Western Sahara"],
+  ["Rio De Oro", "Western Sahara"],
+  ["Madagascar (France)", "Madagascar"],
+  ["French Equatorial Africa", "Central African Republic"],
+  ["French West Africa", "Senegal"],
+  ["Gold Coast", "Ghana"],
+  ["Togoland", "Togo"],
+  ["Kamerun", "Cameroon"],
+  ["Rhodesia", "Zimbabwe"],
+  ["Northern Rhodesia", "Zambia"],
+  ["Nyasaland", "Malawi"],
+  ["Arabia (Nejd)", "Saudi Arabia"],
+  ["Nejd", "Saudi Arabia"],
+  ["Sakhalin (RU)", "Russia"],
+  // 1945 occupation / colonial labels
+  ["Angola (Portugal)", "Angola"],
+  ["Guinea-Bissau (Portugal)", "Guinea-Bissau"],
+  ["Mozambique (Portugal)", "Mozambique"],
+  ["Cyraneica (UK Lybia)", "Libya"],
+  ["Tripolitana (UK Lybia)", "Libya"],
+  ["Fezzan (Frech Lybia)", "Libya"],
+  ["Germany (France)", "Germany"],
+  ["Germany (Soviet)", "Germany"],
+  ["Germany (UK)", "Germany"],
+  ["Germany (USA)", "Germany"],
+  ["East Germany", "Germany"],
+  ["West Germany", "Germany"],
+  ["Jamaica (UK)", "Jamaica"],
+  ["Japan (USA)", "Japan"],
+  ["Korea (USA)", "South Korea"],
+  ["Korea (USSR)", "North Korea"],
+  ["Martinique (France)", "France"],
+  ["Dutch Guinea", "Suriname"],
+  ["Cochin China", "Vietnam"],
+  ["Tonkin", "Vietnam"],
+  ["Annam", "Vietnam"],
+  ["Manchuria", "China"],
+  ["Saar Protectorate", "Germany"],
+  ["Southern Cameroon", "Cameroon"],
+  // 1815 historical names that map cleanly to modern countries
+  ["Algiers", "Algeria"],
+  ["Tunis", "Tunisia"],
+  ["Tripolitania", "Libya"],
+  ["Cyrenaica", "Libya"],
+  ["Cape Colony", "South Africa"],
+  ["Asante", "Ghana"],
+  ["Oyo", "Nigeria"],
+  ["Bornu-Kanem", "Chad"],
+  ["Mossi States", "Burkina Faso"],
+  ["Buganda", "Uganda"],
+  ["Bunyoro", "Uganda"],
+  ["Zanzibar", "Tanzania"],
+  ["Lozi", "Zambia"],
+  ["Lunda", "Angola"],
+  ["Xhosa", "South Africa"],
+  ["Zulu", "South Africa"],
+  ["Sotho", "Lesotho"],
+  ["Portuguese East Africa", "Mozambique"],
+  ["Portuguese Guinea", "Guinea-Bissau"],
+  ["Delagoa Bay", "Mozambique"],
+  ["Goa", "India"],
+  ["Mysore (Indian princely state)", "India"],
+  ["Sikkim (Indian princely state)", "India"],
+  ["Oudh", "India"],
+  ["Travancore", "India"],
+  ["Arakan (Indian princely state)", "Myanmar"],
+  ["Arakan", "Myanmar"],
+  ["Malaya", "Malaysia"],
+  ["Kongldom of Hawaii", "United States"],
+  ["United Provinces of La Plata", "Argentina"],
+  ["Viceroyalty of Brazil", "Brazil"],
+  ["Vice-Royalty of New Granada", "Colombia"],
+  ["Vice-Royalty of New Spain", "Mexico"],
+  ["Vice-Royalty of Peru", "Peru"],
+  ["Republic of Kraków", "Poland"],
+  // German states 1815 — all use modern Germany's flag (best approximation)
+  ["Baden", "Germany"],
+  ["Bavaria", "Germany"],
+  ["Brunswick", "Germany"],
+  ["Bremen", "Germany"],
+  ["Hamburg", "Germany"],
+  ["Hanover", "Germany"],
+  ["Holstein", "Germany"],
+  ["Lübeck", "Germany"],
+  ["Mecklenburg-Schwerin", "Germany"],
+  ["Mecklenburg-Strelitz", "Germany"],
+  ["Oldenburg", "Germany"],
+  ["Saxony", "Germany"],
+  ["Schleswig", "Germany"],
+  ["Thuringia", "Germany"],
+  ["Württemberg", "Germany"],
+  ["Anhalt", "Germany"],
+  ["Hohenzollern", "Germany"],
+  ["Lippe-Detmold", "Germany"],
+  ["Nassau", "Germany"],
+  ["Palatinate", "Germany"],
+  ["Schaumburg-Lippe", "Germany"],
+  ["Waldeck", "Germany"],
+  ["Wetzlar", "Germany"],
+  ["Cuxhaven", "Germany"],
+  ["Grand Duchy of Hesse", "Germany"],
+  ["Electoral Hesse", "Germany"],
+  // Italian states 1815
+  ["Lombardy", "Italy"],
+  ["Venetia", "Italy"],
+  ["Modena", "Italy"],
+  ["Parma", "Italy"],
+  ["Tuscany", "Italy"],
+  ["Lucca", "Italy"],
+  ["Pontremoli", "Italy"],
+  ["Fivizzano", "Italy"],
+  ["Papal States", "Italy"],
+  // 1500/1700 European names
+  ["England", "United Kingdom"],
+  ["England and Ireland", "United Kingdom"],
+  ["Scottland", "United Kingdom"],
+  ["Britany", "France"],
+  ["Castille", "Spain"],
+  ["Castile", "Spain"],
+  ["Aragón", "Spain"],
+  ["Granada", "Spain"],
+  ["Navarre", "Spain"],
+  ["Denmark-Norway", "Denmark"],
+  ["Grand Duchy of Moscow", "Russia"],
+  // Misc
+  ["Grand Duchy of Moscow", "Russia"],
+  ["Manchu Empire", "China"],
+  ["Sinhalese kingdom", "Sri Lanka"],
+  ["Cyprus", "Cyprus"],
+  ["Japan", "Japan"],
+  ["Korea", "South Korea"],
+  ["Mongolia", "Mongolia"],
+  ["Tibet", "China"],
+  ["Xinjiang", "China"],
+  ["Taiwan", "China"],
+  ["Hong Kong", "China"],
+  ["Hainan", "China"],
+  ["Hejaz", "Saudi Arabia"],
+  ["Yemen", "Yemen"],
+]);
+
+/** Look up a polity by NAME. Returns curated info if present, else empty. */
 export function polityInfo(name: string): PolityInfo {
   return POLITY_REGISTRY.get(name) ?? {};
+}
+
+/**
+ * Best-effort modern-country-name lookup for a dataset polity NAME.
+ *
+ * Falls through three layers:
+ *   1. POLITY_REGISTRY entry's `modernName` field
+ *   2. MODERN_NAME_ALIASES exact match
+ *   3. The NAME itself if it matches a real country name (handled by the caller)
+ *
+ * Returns null when no mapping exists — the caller should then leave the
+ * polity flag-less, since most pre-1815 entities have no real flag anyway.
+ */
+export function polityModernName(name: string): string | null {
+  const info = POLITY_REGISTRY.get(name);
+  if (info?.modernName) return info.modernName;
+  const alias = MODERN_NAME_ALIASES.get(name);
+  if (alias) return alias;
+  return null;
 }
