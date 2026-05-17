@@ -746,36 +746,53 @@
   touch-action: none;
 }
 
-/* "Reset zoom" pill that appears once the user has zoomed or panned away
-   from the default view. Floats in the top-right of the map frame. */
-.world-map__reset-zoom {
+/* Floating zoom controls — +, −, ⟲ — stacked in the top-right corner
+   of the map frame. Always visible so the zoom feature is discoverable;
+   buttons disable themselves at the clamp endpoints. */
+.world-map__zoom-controls {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  padding: 0.35rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  z-index: 4;
+}
+
+.world-map__zoom-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  line-height: 1;
   background: var(--paper);
   color: var(--ink);
   border: 2px solid var(--ink);
-  border-radius: 999px;
+  border-radius: 12px;
   box-shadow: 0 2px 0 var(--ink);
   cursor: pointer;
-  z-index: 4;
-  transition: transform 120ms ease, box-shadow 120ms ease;
+  transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+  /* Touch targets — keep at least 36 px square for kid fingers. */
+  touch-action: manipulation;
 }
 
-.world-map__reset-zoom:hover,
-.world-map__reset-zoom:focus-visible {
+.world-map__zoom-btn:hover:not(:disabled),
+.world-map__zoom-btn:focus-visible {
   transform: translateY(-1px);
   box-shadow: 0 3px 0 var(--ink);
   outline: none;
 }
 
-.world-map__reset-zoom:active {
+.world-map__zoom-btn:active:not(:disabled) {
   transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.world-map__zoom-btn:disabled {
+  cursor: default;
+  opacity: 0.4;
   box-shadow: 0 1px 0 var(--ink);
 }
 
