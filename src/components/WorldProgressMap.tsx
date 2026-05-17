@@ -4,6 +4,7 @@ import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
 import { useTheme } from "../context/ThemeContext";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
+import { useZoomPan } from "../hooks/useZoomPan";
 
 // Full UN-member name lookup, used so clicks on non-pool (out-of-this-game)
 // countries can still display a friendly "Not in this game" popover with the
@@ -160,6 +161,7 @@ export function WorldProgressMap({
   const [geographies, setGeographies] = useState<GeoFeature[]>([]);
   const [popover, setPopover] = useState<Popover | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
+  const zoom = useZoomPan(WIDTH, HEIGHT);
 
   useEffect(() => {
     let cancelled = false;
@@ -283,7 +285,9 @@ export function WorldProgressMap({
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           role="img"
           aria-label="World map showing correctly and incorrectly guessed countries"
+          {...zoom.svgHandlers}
         >
+          <g transform={zoom.transform}>
           {geographies.map((geo, idx) => {
             const key = String(geo.id ?? idx);
             const path = pathById.get(String(geo.id ?? ""));
@@ -345,7 +349,18 @@ export function WorldProgressMap({
               </path>
             );
           })}
+          </g>
         </svg>
+        {zoom.isZoomed && (
+          <button
+            type="button"
+            className="world-map__reset-zoom"
+            onClick={zoom.reset}
+            aria-label="Reset zoom"
+          >
+            Reset zoom
+          </button>
+        )}
         {popover && isInteractive && (
           <div
             className={`map-popover map-popover--${popover.kind} map-popover--${popover.placement}`}

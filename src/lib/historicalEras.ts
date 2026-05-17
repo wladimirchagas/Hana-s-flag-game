@@ -485,6 +485,29 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Portuguese Guinea", { flag: "historical-flags/ukpba.png", continent: "West Africa", note: "Portuguese colony in modern Guinea-Bissau." }],
     ["Delagoa Bay", { flag: "historical-flags/ukpba.png", continent: "East Africa", note: "Portuguese trading post in modern Mozambique." }],
     ["Goa", { flag: "historical-flags/ukpba.png", continent: "South Asia", note: "Portuguese India — held until 1961." }],
+    // === Malay peninsula + Borneo (1815) =====================================
+    // The dataset's lumped "Malaya" feature is split into the actual
+    // contemporary polities by /scripts/split-malaya.py — see the
+    // resulting feature NAMEs below. Each sultanate's modern Malaysian
+    // state flag is used as a faithful descendant of the sultanate's
+    // historic banner (the dynasties continue today as constitutional
+    // rulers and the flags trace directly to them).
+    ["Johor Sultanate", { flag: "historical-flags/johor.png", continent: "Southeast Asia", note: "Independent Malay sultanate of the southern peninsula and Singapore, founded 1528 by the heirs of Malacca." }],
+    ["Kedah Sultanate", { flag: "historical-flags/kedah.png", continent: "Southeast Asia", note: "Oldest sultanate on the peninsula (founded c. 1136); paid tribute to Siam." }],
+    ["Perak Sultanate", { flag: "historical-flags/perak.png", continent: "Southeast Asia", note: "Sultanate of the silver-rich Perak River valley." }],
+    ["Selangor Sultanate", { flag: "historical-flags/selangor.png", continent: "Southeast Asia", note: "Sultanate founded by Bugis migrants in the 18th century — covered the whole west coast around modern KL." }],
+    ["Pahang Sultanate", { flag: "historical-flags/pahang.png", continent: "Southeast Asia", note: "Largest east-coast sultanate by land area." }],
+    ["Terengganu Sultanate", { flag: "historical-flags/terengganu.png", continent: "Southeast Asia", note: "East-coast sultanate famed for its songket weaving." }],
+    ["Kelantan Sultanate", { flag: "historical-flags/kelantan.png", continent: "Southeast Asia", note: "North-east sultanate, long under Siamese influence." }],
+    ["Negeri Sembilan", { flag: "historical-flags/negeri-sembilan.png", continent: "Southeast Asia", note: "Confederation of nine Minangkabau-descended chieftaincies — a federation of small states rather than a single sultanate." }],
+    ["Perlis", { flag: "historical-flags/perlis.png", continent: "Southeast Asia", note: "Small northern principality; vassal of Kedah and Siam in 1815." }],
+    // European holdings on the peninsula — use the metropole's then-current flag.
+    ["Dutch Malacca", { continent: "Southeast Asia", note: "Former Malay sultanate; held by the Dutch 1641–1825 before being ceded to Britain.", modernName: "Netherlands" }],
+    ["British Penang", { continent: "Southeast Asia", note: "Ceded to the British East India Company in 1786 — the first British holding on the peninsula. Flew the Union Jack (1801 design).", modernName: "United Kingdom" }],
+    // Northern Borneo in 1815 was the Brunei Sultanate's territory, not
+    // British. Before 1906 Brunei flew a plain yellow flag — same colour
+    // as today's, without the modern emblems and stripes.
+    ["Brunei Sultanate", { flag: "historical-flags/brunei-1815.png", continent: "Southeast Asia", note: "In 1815 Brunei still controlled most of northern Borneo; James Brooke and the British North Borneo Co. wouldn't carve out Sarawak and Sabah until 1841 and 1881." }],
   ])],
 ]);
 
@@ -514,7 +537,11 @@ export function polityInfo(name: string, eraId?: Era["id"]): PolityInfo {
  * Returns null when no mapping exists — the caller should then leave the
  * polity flag-less, since most pre-1815 entities have no real flag anyway.
  */
-export function polityModernName(name: string): string | null {
+export function polityModernName(name: string, eraId?: Era["id"]): string | null {
+  if (eraId) {
+    const eraEntry = ERA_OVERRIDES.get(eraId)?.get(name);
+    if (eraEntry?.modernName) return eraEntry.modernName;
+  }
   const info = POLITY_REGISTRY.get(name);
   if (info?.modernName) return info.modernName;
   const alias = MODERN_NAME_ALIASES.get(name);
