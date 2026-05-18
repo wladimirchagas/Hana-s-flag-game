@@ -333,6 +333,9 @@ export function WorldProgressMap({
                 stroke={isSelected ? palette.selectedStroke : palette.stroke}
                 strokeWidth={isSelected ? 1.4 : 0.45}
                 strokeOpacity={isSelected ? 1 : 0.55}
+                // Keep borders the same visual width regardless of zoom —
+                // without this they thicken as the user zooms in.
+                vectorEffect="non-scaling-stroke"
                 className={
                   clickable
                     ? "world-map__country world-map__country--selectable"
