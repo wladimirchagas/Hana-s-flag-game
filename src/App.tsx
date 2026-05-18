@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage'
 import FlagGamePage from './pages/FlagGamePage'
 import LearnPage from './pages/LearnPage'
 import { ThemeToggle } from './components/ThemeToggle'
+import { BuildFooter } from './components/BuildFooter'
 
 export default function App() {
   return (
@@ -17,6 +18,8 @@ export default function App() {
         <Route path="/game" element={<FlagGamePage />} />
         <Route path="/learn" element={<LearnPage />} />
       </Routes>
+      {/* Persistent build-info footer across every route. */}
+      <BuildFooter />
     </>
   )
 }
