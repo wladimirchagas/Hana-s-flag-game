@@ -18,6 +18,10 @@ export type FlagListEntry = {
   continent: string;
   /** Detailed region (e.g., "Northern Africa", "South-Eastern Asia", "Mediterranean", "South Asia"). */
   subcontinent: string;
+  /** Optional list of shape / motif tags ("cross", "stars", "stripes", …)
+   *  used by the flag grid's "By shape" grouping. A flag with several
+   *  notable motifs gets several tags and shows up under each category. */
+  shapes?: readonly string[];
 };
 
 /**
