@@ -34,6 +34,46 @@ type RestCountry = {
 const API_URL =
   "https://restcountries.com/v3.1/all?fields=name,flags,cca2,region,subregion,capital,population,languages";
 
+/**
+ * World Bank "Population, total" indicator. The most-current authoritative
+ * single source for national populations — updated annually by the Bank
+ * from UN Population Division and national census data. We use it to
+ * override the REST Countries population (which is often a few years
+ * stale) so the panel always reflects current figures.
+ */
+const WORLDBANK_POP_URL =
+  "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL" +
+  "?format=json&date=2024&per_page=400";
+
+type WorldBankRow = {
+  country?: { id?: string };
+  date?: string;
+  value?: number | null;
+};
+
+/**
+ * Build a (alpha-2 code → most-current population) lookup from the World
+ * Bank API. Falls back silently to an empty map if the request fails —
+ * the caller then keeps the REST-Countries population data.
+ */
+async function fetchWorldBankPopulation(): Promise<Map<string, number>> {
+  try {
+    const res = await fetch(WORLDBANK_POP_URL);
+    if (!res.ok) return new Map();
+    const json = (await res.json()) as [unknown, WorldBankRow[]];
+    if (!Array.isArray(json) || json.length < 2) return new Map();
+    const out = new Map<string, number>();
+    for (const row of json[1]) {
+      const code = row.country?.id?.toUpperCase();
+      const val = row.value;
+      if (code && typeof val === "number" && val > 0) out.set(code, val);
+    }
+    return out;
+  } catch {
+    return new Map();
+  }
+}
+
 const UN_CONTINENTS: ReadonlySet<Continent> = new Set([
   "Africa",
   "Americas",
@@ -72,7 +112,13 @@ const UN_MEMBER_CODES: ReadonlySet<string> = new Set([
 ]);
 
 export async function fetchCountries(): Promise<Country[]> {
-  const res = await fetch(API_URL);
+  // Run the two fetches in parallel — REST Countries gives us names,
+  // flags, capital, languages; the World Bank gives us the most-current
+  // population figures (REST Countries' numbers are often years stale).
+  const [res, wbPop] = await Promise.all([
+    fetch(API_URL),
+    fetchWorldBankPopulation(),
+  ]);
   if (!res.ok) {
     throw new Error(`Failed to load countries (${res.status})`);
   }
@@ -91,10 +137,16 @@ export async function fetchCountries(): Promise<Country[]> {
     if (!UN_MEMBER_CODES.has(code)) continue;
     const subregion = item.subregion?.trim() || undefined;
     const capital = item.capital?.[0]?.trim() || undefined;
+    // Prefer the World Bank figure (refreshed annually); fall back to
+    // REST Countries (which can be a few years stale) when the WB doesn't
+    // publish a number for this country (e.g., Vatican City).
+    const wbValue = wbPop.get(code);
     const population =
-      typeof item.population === "number" && item.population > 0
-        ? item.population
-        : undefined;
+      typeof wbValue === "number" && wbValue > 0
+        ? wbValue
+        : typeof item.population === "number" && item.population > 0
+          ? item.population
+          : undefined;
     const languages = item.languages
       ? Array.from(new Set(Object.values(item.languages).map((l) => l.trim()).filter(Boolean)))
       : undefined;

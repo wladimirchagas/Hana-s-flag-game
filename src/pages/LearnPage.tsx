@@ -41,6 +41,8 @@ type HistoricalSelection = {
   flag?: string;
   continent?: string;
   note?: string;
+  /** Scholarly population estimate at the polity's peak. Optional. */
+  population?: number;
 };
 type Selection = ModernSelection | HistoricalSelection;
 
@@ -60,17 +62,37 @@ function selectionFlag(s: Selection, baseUrl: string): string | null {
   return `${baseUrl}${s.flag}`;
 }
 /**
+ * Format a peak/representative historical population estimate. The figures
+ * are scholarly and often debated within ±30%, so we use approximate
+ * suffixes ("~70 M") and a "(peak)" qualifier to make the inaccuracy
+ * explicit rather than implied by precise digits.
+ */
+function formatHistoricalPopulation(n: number): string {
+  if (n >= 1_000_000) {
+    const m = n / 1_000_000;
+    const rounded = m >= 10 ? Math.round(m) : Math.round(m * 10) / 10;
+    return `pop. ~${rounded} M (peak)`;
+  }
+  if (n >= 1_000) return `pop. ~${Math.round(n / 1_000)} k (peak)`;
+  return `pop. ~${n} (peak)`;
+}
+
+/**
  * Compose the short editorial summary shown under the entity's name in the
  * detail panel. Modern countries get a generated capital/region/population
- * line; historical polities reuse their curated registry note. Falls back
- * to a sensible generic if neither is available.
+ * line; historical polities reuse their curated registry note plus a
+ * peak-population estimate where one exists. Falls back to a sensible
+ * generic if no curated text is available.
  */
 function selectionSummary(s: Selection): string | undefined {
   if (s.kind === "modern") {
     const composed = summarizeCountry(s.country);
     return composed || `Country in ${s.country.continent}.`;
   }
-  if (s.note) return s.note;
+  const parts: string[] = [];
+  if (s.note) parts.push(s.note);
+  if (typeof s.population === "number") parts.push(formatHistoricalPopulation(s.population));
+  if (parts.length > 0) return parts.join(" · ");
   if (s.continent) return `Historical polity of ${s.continent}.`;
   return undefined;
 }
@@ -205,6 +227,7 @@ export default function LearnPage() {
       flag,
       continent,
       note: info.note,
+      population: info.population,
     };
   }
 
