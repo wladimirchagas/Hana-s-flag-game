@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchCountries, summarizeCountry, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
@@ -12,6 +12,8 @@ import {
   saveMapView,
   type MapViewSettings,
 } from "../lib/mapView";
+import { FlagGrid } from "../components/FlagGrid";
+import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
@@ -321,8 +323,97 @@ export default function LearnPage() {
 
   const flagUrl = display ? selectionFlag(display, baseUrl) : null;
 
+  // Stable id for the currently-displayed entity — used by FlagGrid to
+  // highlight the matching tile.
+  const selectedId =
+    display?.kind === "modern"
+      ? display.country.code
+      : display?.kind === "historical"
+        ? display.name
+        : null;
+
+  // Compute the flag list for the current era. For Today this is just
+  // the modern country list with REST Countries' subregion. For
+  // historical eras we walk each feature NAME loaded by HistoricalMap
+  // and run it through selectionFromPolityName so the entry reflects
+  // any era-specific overrides (Brazil 1815 → UKPBA flag, etc.).
+  const flagEntries: FlagListEntry[] = useMemo(() => {
+    if (isModernEra) {
+      return countries.map((c) => ({
+        id: c.code,
+        name: c.name,
+        flag: c.flagSvg,
+        continent: c.continent,
+        subcontinent: c.subregion ?? c.continent,
+      }));
+    }
+    const out: FlagListEntry[] = [];
+    for (const name of availableHistoricalNames) {
+      const sel = selectionFromPolityName(name);
+      if (!sel || sel.kind !== "historical") continue;
+      out.push({
+        id: name,
+        name,
+        flag: sel.flag ?? null,
+        continent: topLevelContinent(sel.continent),
+        subcontinent: sel.continent ?? "Other",
+      });
+    }
+    return out;
+    // selectionFromPolityName closes over countryByName + eraId, both of
+    // which we track explicitly. Disable lint exhaustive-deps just for
+    // the helper itself — it's intentionally re-created each render.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
+
+  // Ref to the top of the page (.learn-fs) — clicked flag tiles scroll
+  // back here so the user lands on the map with their selection
+  // highlighted.
+  const learnRootRef = useRef<HTMLDivElement | null>(null);
+
+  function handleGridSelect(id: string) {
+    if (isModernEra) {
+      const c = codeToCountry.get(id);
+      if (!c) return;
+      setSelected({ kind: "modern", country: c });
+      setHovered(null);
+    } else {
+      const sel = selectionFromPolityName(id);
+      if (!sel) return;
+      setSelected(sel);
+      setHovered(null);
+    }
+    // Bring the map back into view.
+    learnRootRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function handleZoomFlag(entry: FlagListEntry) {
+    // Pick the entity (without auto-scrolling) so the flag-zoom modal
+    // reads the right flagUrl, then open the modal.
+    if (isModernEra) {
+      const c = codeToCountry.get(entry.id);
+      if (!c) return;
+      setSelected({ kind: "modern", country: c });
+      setHovered(null);
+    } else {
+      const sel = selectionFromPolityName(entry.id);
+      if (!sel) return;
+      setSelected(sel);
+      setHovered(null);
+    }
+    setZoomed(true);
+  }
+
+  // Resolver passed to FlagGrid so it can render both absolute http(s)
+  // flagcdn URLs and relative /historical-flags/*.png paths.
+  function resolveFlag(raw: string): string {
+    if (/^https?:\/\//.test(raw) || raw.startsWith("data:")) return raw;
+    return `${baseUrl}${raw}`;
+  }
+
   return (
-    <div className="learn-fs">
+    <div className="learn-page">
+    <div className="learn-fs" ref={learnRootRef}>
       <div className="game-nav">
         <Link className="game-nav__home" to="/">
           ← Home
@@ -490,6 +581,14 @@ export default function LearnPage() {
           </button>
         </div>
       )}
+    </div>
+      <FlagGrid
+        entries={flagEntries}
+        selectedId={selectedId}
+        onSelect={handleGridSelect}
+        onZoomFlag={handleZoomFlag}
+        resolveFlag={resolveFlag}
+      />
     </div>
   );
 }
