@@ -37,6 +37,15 @@ ADMIN_URLS: dict[str, str] = {
     "scripts/data/HND-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/HND/ADM1/geoBoundaries-HND-ADM1.geojson",
     "scripts/data/BLZ-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BLZ/ADM1/geoBoundaries-BLZ-ADM1.geojson",
     "scripts/data/ECU-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ECU/ADM1/geoBoundaries-ECU-ADM1.geojson",
+    "scripts/data/KEN-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KEN/ADM1/geoBoundaries-KEN-ADM1.geojson",
+    "scripts/data/TZA-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TZA/ADM1/geoBoundaries-TZA-ADM1.geojson",
+    "scripts/data/SOM-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM1/geoBoundaries-SOM-ADM1.geojson",
+    "scripts/data/MOZ-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MOZ/ADM1/geoBoundaries-MOZ-ADM1.geojson",
+    "scripts/data/IDN-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IDN/ADM1/geoBoundaries-IDN-ADM1.geojson",
+    "scripts/data/MYS-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MYS/ADM1/geoBoundaries-MYS-ADM1.geojson",
+    "scripts/data/BRN-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRN/ADM1/geoBoundaries-BRN-ADM1.geojson",
+    "scripts/data/PHL-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PHL/ADM1/geoBoundaries-PHL-ADM1.geojson",
+    "scripts/data/PAK-adm1.geojson": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PAK/ADM1/geoBoundaries-PAK-ADM1.geojson",
 }
 
 
@@ -465,6 +474,194 @@ PATCHWORK_SPLITS = [
             # Western Mediterranean — Spanish regions for Greek colonies.
             "Cataluña/Catalunya":              ("Emporion", "Phocaean Greek colony in modern Catalonia — a key trading post."),
             "Comunitat Valenciana":            ("Greek trading colonies (Iberia)", "Hemeroskopeion and other small Phocaean outposts on the Iberian coast."),
+        },
+    },
+    # ===================================================================
+    # Swahili-coast Islamic city-states (1300 + 1500)
+    # The dataset's "Islamic city-states" polygon is actually the East
+    # African coast — Mogadishu / Pate / Mombasa / Kilwa / Sofala etc.
+    # (NOT the post-Abbasid Middle East as the name might suggest).
+    # ===================================================================
+    {
+        "name": "Swahili city-states (1300)",
+        "era_files": ["world_1300.geojson"],
+        "lumped": "Islamic city-states",
+        "admin": [
+            "scripts/data/SOM-adm1.geojson",
+            "scripts/data/KEN-adm1.geojson",
+            "scripts/data/TZA-adm1.geojson",
+            "scripts/data/MOZ-adm1.geojson",
+        ],
+        "name_prop": "shapeName",
+        "mapping": {
+            # Somalia ---------------------------------------------------------
+            "Banadir":       ("Mogadishu Sultanate", "Wealthiest Swahili-coast city; commanded the Indian-Ocean gold trade."),
+            "Bay":           ("Somali coastal sultanates", "Patchwork of Hawiye / Ajuran emerging powers."),
+            "Lower Shabelle": ("Somali coastal sultanates", None),
+            "Middle Juba":   ("Somali coastal sultanates", None),
+            "Lower Juba":    ("Somali coastal sultanates", None),
+            "Mudug":         ("Somali coastal sultanates", None),
+            "Bari":          ("Somali coastal sultanates", None),
+            "Galguduud":     ("Somali coastal sultanates", None),
+            # Kenya ----------------------------------------------------------
+            "Lamu":          ("Pate Sultanate",       "City-state of the Lamu archipelago; Indian-Ocean trading hub."),
+            "Tana River":    ("Pate Sultanate",       None),
+            "Kilifi":        ("Malindi",              "Famous medieval Swahili city — visited by Zheng He's treasure fleet (1418)."),
+            "Mombasa":       ("Mombasa Sultanate",    "Rival of Malindi and Kilwa; key Indian-Ocean port."),
+            "Kwale":         ("Mombasa Sultanate",    None),
+            # Tanzania --------------------------------------------------------
+            "Tanga":         ("Northern Tanzanian Swahili cities", "Small coastal sultanates between Mombasa and Zanzibar."),
+            "Pwani":         ("Bagamoyo / Kaole sultanates", "Mainland-coast Swahili settlements opposite Zanzibar."),
+            "Dar es Salaam": ("Bagamoyo / Kaole sultanates", None),
+            "Zanzibar Urban/West": ("Zanzibar Sultanates", "Stone Town and the Zanzibar archipelago."),
+            "Zanzibar North":      ("Zanzibar Sultanates", None),
+            "Zanzibar South & Central": ("Zanzibar Sultanates", None),
+            "North Pemba":         ("Zanzibar Sultanates", None),
+            "South Pemba":         ("Zanzibar Sultanates", None),
+            "Lindi":         ("Kilwa Sultanate",      "Greatest of the Swahili sultanates — its 14th-century gold trade made it fabulously rich."),
+            "Mtwara":        ("Kilwa Sultanate",      None),
+            # Mozambique -----------------------------------------------------
+            "Cabo Delgado":  ("Mozambique Island sultanate", "Northernmost Mozambican Swahili port."),
+            "Nampula":       ("Mozambique Island sultanate", None),
+            "Zambezia":      ("Sofala Sultanate",     "Gold-trade emporium serving Great Zimbabwe's mines."),
+            "Sofala":        ("Sofala Sultanate",     None),
+        },
+    },
+    {
+        "name": "Swahili city-states (1500)",
+        "era_files": ["world_1500.geojson"],
+        "lumped": "Islamic city-states",
+        "admin": [
+            "scripts/data/SOM-adm1.geojson",
+            "scripts/data/KEN-adm1.geojson",
+            "scripts/data/TZA-adm1.geojson",
+            "scripts/data/MOZ-adm1.geojson",
+        ],
+        "name_prop": "shapeName",
+        "mapping": {
+            "Banadir":       ("Mogadishu Sultanate", "Major Swahili-coast city; Portuguese fleets would soon disrupt its trade."),
+            "Bay":           ("Ajuran Sultanate",    "Rising Somali power that resisted the Portuguese."),
+            "Lower Shabelle": ("Ajuran Sultanate",   None),
+            "Middle Juba":   ("Ajuran Sultanate",    None),
+            "Lower Juba":    ("Ajuran Sultanate",    None),
+            "Mudug":         ("Ajuran Sultanate",    None),
+            "Lamu":          ("Pate Sultanate",      "City-state of the Lamu archipelago, still trading gold and ivory."),
+            "Tana River":    ("Pate Sultanate",      None),
+            "Kilifi":        ("Malindi",             "Allied with the Portuguese in 1498 — Vasco da Gama's first East-African friend."),
+            "Mombasa":       ("Mombasa Sultanate",   "Rival of Malindi; sacked by the Portuguese in 1505 and 1528."),
+            "Kwale":         ("Mombasa Sultanate",   None),
+            "Tanga":         ("Northern Tanzanian Swahili cities", "Small coastal sultanates between Mombasa and Zanzibar."),
+            "Pwani":         ("Bagamoyo / Kaole sultanates", "Mainland Swahili settlements opposite Zanzibar."),
+            "Dar es Salaam": ("Bagamoyo / Kaole sultanates", None),
+            "Zanzibar Urban/West": ("Zanzibar Sultanates", "Stone Town and the Zanzibar archipelago."),
+            "Zanzibar North":      ("Zanzibar Sultanates", None),
+            "Zanzibar South & Central": ("Zanzibar Sultanates", None),
+            "North Pemba":         ("Zanzibar Sultanates", None),
+            "South Pemba":         ("Zanzibar Sultanates", None),
+            "Lindi":         ("Kilwa Sultanate",     "Famed for its coral-stone palaces; sacked by the Portuguese in 1505."),
+            "Mtwara":        ("Kilwa Sultanate",     None),
+            "Cabo Delgado":  ("Mozambique Island sultanate", "Northernmost Mozambican Swahili port — Portuguese base after 1507."),
+            "Nampula":       ("Mozambique Island sultanate", None),
+            "Zambezia":      ("Sofala Sultanate",    "Gold-trade emporium; the Portuguese built a factory here in 1505."),
+            "Sofala":        ("Sofala Sultanate",    None),
+        },
+    },
+    # ===================================================================
+    # Malaysian Islamic states (1500) — the Muslim sultanates of
+    # maritime Southeast Asia. Aceh, Malacca and a few others are drawn
+    # separately by the dataset already.
+    # ===================================================================
+    {
+        "name": "Malaysian Islamic states (1500)",
+        "era_files": ["world_1500.geojson"],
+        "lumped": "Malaysian Islamic states",
+        "admin": [
+            "scripts/data/IDN-adm1.geojson",
+            "scripts/data/MYS-adm1.geojson",
+            "scripts/data/BRN-adm1.geojson",
+            "scripts/data/PHL-adm1.geojson",
+        ],
+        "name_prop": "shapeName",
+        "mapping": {
+            # Sumatra --------------------------------------------------------
+            "North Sumatra":  ("Pasai Sultanate",     "Earliest Indonesian Muslim sultanate (founded c. 1297) — the gateway of Islam to the archipelago."),
+            "West Sumatra":   ("Minangkabau realm",   "Highland matrilineal Muslim society of central Sumatra."),
+            "Riau":           ("Riau-Lingga sultanates", "Strait-of-Malacca Muslim trading polities."),
+            "Riau Islands":   ("Riau-Lingga sultanates", None),
+            "Jambi":          ("Jambi Sultanate",     "Sumatran Malay sultanate on the Batang Hari river."),
+            "South Sumatra":  ("Palembang Sultanate", "Late-Srivijaya successor; gradually Islamising in the 15th–16th c."),
+            "Lampung":        ("Lampung principalities", "Patchwork of small Muslim chiefdoms in southern Sumatra."),
+            "Bengkulu":       ("Bengkulu chiefdoms",  None),
+            "Bangka-Belitung Islands": ("Bangka tin sultanates", None),
+            # Java -----------------------------------------------------------
+            "Banten":         ("Banten Sultanate",    "Rising west-Java sultanate; would soon control the Sunda Strait pepper trade."),
+            "West Java":      ("Banten / Cirebon",    "West-Java Muslim sultanates — Banten and Cirebon."),
+            "Jakarta Special Capital Region": ("Banten / Cirebon", None),
+            "Central Java":   ("Demak Sultanate",     "First major Muslim sultanate on Java (founded c. 1475); soon to topple Majapahit."),
+            "Special Region of Yogyakarta": ("Demak Sultanate", None),
+            "East Java":      ("Demak Sultanate",     None),
+            # Borneo / Kalimantan -------------------------------------------
+            "West Kalimantan":  ("Sambas / Sukadana sultanates", "Western Kalimantan Muslim sultanates."),
+            "Central Kalimantan": ("Banjar Sultanate", "Major Kalimantan Muslim sultanate centred on Banjarmasin."),
+            "South Kalimantan": ("Banjar Sultanate",   None),
+            "East Kalimantan":  ("Kutai Sultanate",    "East Kalimantan Muslim sultanate."),
+            "North Kalimantan": ("Brunei satellites",  "Northern Kalimantan, under Brunei's expanding influence."),
+            # Sulawesi -------------------------------------------------------
+            "South Sulawesi":   ("Gowa-Tallo Sultanate", "Rising Bugis-Makassar twin sultanate of southern Sulawesi."),
+            "Central Sulawesi": ("Sulawesi chiefdoms",   "Mostly still pre-Islamic in 1500; would Islamise in the 17th c."),
+            "Southeast Sulawesi": ("Buton Sultanate",   "Small Muslim sultanate of south-east Sulawesi."),
+            "West Sulawesi":    ("Mandar chiefdoms",    "Mandar coastal chiefdoms."),
+            "North Sulawesi":   ("Minahasa / Gorontalo", "Northern Sulawesi chiefdoms."),
+            "Gorontalo":        ("Minahasa / Gorontalo", None),
+            # Maluku ---------------------------------------------------------
+            "Maluku":         ("Ternate / Tidore Sultanates", "Rival Spice-Islands sultanates that controlled the world clove trade."),
+            "North Maluku":   ("Ternate / Tidore Sultanates", None),
+            # Lesser Sundas + Papua -----------------------------------------
+            "West Nusa Tenggara": ("Bima Sultanate",   "Eastern Indonesian Muslim sultanate on Sumbawa."),
+            "East Nusa Tenggara": ("Solor / Larantuka", "Mixed Muslim and Catholic chiefdoms after Portuguese arrival."),
+            "Bali":           ("Hindu Bali (Gelgel)",  "Bali remained Hindu — last hold-out of pre-Islamic Java."),
+            "Papua":          ("Papuan coastal chiefdoms", "Bird's-head Papua under loose Ternate / Tidore tribute."),
+            "West Papua":     ("Papuan coastal chiefdoms", None),
+            # Brunei + Sulu --------------------------------------------------
+            "Brunei-Muara":   ("Brunei Sultanate",    "Brunei at its greatest extent — controlled much of Borneo and the Sulu Sea."),
+            "Belait":         ("Brunei Sultanate",    None),
+            "Temburong":      ("Brunei Sultanate",    None),
+            "Tutong":         ("Brunei Sultanate",    None),
+            # Philippines ----------------------------------------------------
+            "ARMM":           ("Sulu Sultanate",      "Muslim sultanate of the Sulu archipelago; Brunei's southern rival."),
+            "Zamboanga Peninsula": ("Sulu Sultanate", None),
+            # Malaysia (mainland + Borneo) — Malacca is shown separately in
+            # the dataset; only the Borneo Malaysian provinces remain
+            # here for this lumped polygon.
+            "Sabah":          ("Brunei Sultanate",    None),
+            "Sarawak":        ("Brunei Sultanate",    None),
+        },
+    },
+    # ===================================================================
+    # Indian Muslim sultanates (1500) — the dataset draws three separate
+    # "Islamic states" polygons in India: Sindh, Gujarat, and the Deccan.
+    # ===================================================================
+    {
+        "name": "Indian Muslim sultanates (1500)",
+        "era_files": ["world_1500.geojson"],
+        "lumped": "Islamic states",
+        "admin": [
+            "scripts/data/PAK-adm1.geojson",
+            "scripts/data/IND-adm1.geojson",
+        ],
+        "name_prop": "shapeName",
+        "mapping": {
+            # Sindh / Baluchistan polygon (Pakistan) --------------------------
+            "Sindh":          ("Samma dynasty (Sindh Sultanate)", "Muslim Sindhi dynasty centred on Thatta; would soon fall to the Arghuns."),
+            "Balochistan":    ("Baluch tribal confederations", "Tribal Baluch and Makran polities."),
+            "Punjab":         ("Punjab marches (Delhi Sultanate frontier)", "Western frontier of the Lodi Delhi Sultanate."),
+            # Gujarat polygon (India) ----------------------------------------
+            "Gujarāt":        ("Gujarat Sultanate (Muzaffarid)", "Wealthy maritime Muslim sultanate — its capital Ahmedabad was one of India's largest cities."),
+            # Deccan polygon (India) — Bahmani breakup states ---------------
+            "Mahārāshtra":    ("Ahmadnagar Sultanate", "Nizam Shahi dynasty, declared independent from Bahmani in 1490."),
+            "Karnātaka":      ("Bijapur Sultanate",    "Adil Shahi dynasty — would build the Gol Gumbaz and rule Karnataka for two centuries."),
+            "Telangāna":      ("Bidar Sultanate",      "Barid Shahi dynasty centred on Bidar's massive fort."),
+            "Andhra Pradesh": ("Golkonda Sultanate",   "Qutb Shahi dynasty famed for its diamond mines — Hyderabad's founders."),
         },
     },
     # ===================================================================
