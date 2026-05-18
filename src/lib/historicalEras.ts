@@ -297,6 +297,45 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Maratha Confederacy", { continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India." }],
   ["Viceroyalty of Brazil", { flag: "historical-flags/ukpba.png", continent: "South America", note: "United Kingdom of Portugal, Brazil and the Algarves (1815–1825) — Brazil was part of a joint kingdom with Portugal, not yet independent." }],
 
+  // === Hausa Bakwai (Hausa-State city-states, 1500/1700) ====================
+  // The 7 "true" Hausa city-states plus a couple of "Banza Bakwai". Each
+  // had its own king (sarki) and walled capital. None had modern-style
+  // national flags, so all are flag-less by design.
+  ["Kano",    { continent: "West Africa", note: "Largest and richest Hausa city-state; major trans-Saharan trade hub." }],
+  ["Katsina", { continent: "West Africa", note: "Northern Hausa city-state; great Islamic learning centre." }],
+  ["Daura",   { continent: "West Africa", note: "Considered the oldest of the Hausa Bakwai by tradition." }],
+  ["Zazzau",  { continent: "West Africa", note: "Southernmost Hausa city-state (modern Zaria); ruled by the famed Queen Amina in the late 16th c." }],
+  ["Gobir",   { continent: "West Africa", note: "Northern Hausa city-state; would later resist the Sokoto Caliphate's jihad in the early 19th c." }],
+  ["Rano",    { continent: "West Africa", note: "Smaller Hausa state, ally of Kano." }],
+  ["Biram",   { continent: "West Africa", note: "Founder-state of the Hausa Bakwai by tradition, centred on Hadejia." }],
+  ["Kebbi",   { continent: "West Africa", note: "Banza Bakwai (\"bastard seven\") Hausa state — Kebbi Sultanate." }],
+
+  // === Mossi kingdoms (Burkina Faso, 1500–1815) =============================
+  // Three / four independent Mossi naam (chiefdoms) of the Volta basin,
+  // founded c. 11th–15th c. They resisted both Mali and Songhai for
+  // centuries. No flags survive from the period.
+  ["Kingdom of Wagadugu",     { continent: "West Africa", note: "Most prominent Mossi kingdom; its capital became modern Ouagadougou." }],
+  ["Kingdom of Yatenga",      { continent: "West Africa", note: "Northern Mossi kingdom centred on Ouahigouya." }],
+  ["Kingdom of Tenkodogo",    { continent: "West Africa", note: "Considered the oldest Mossi kingdom by tradition." }],
+  ["Kingdom of Fada N'Gourma", { continent: "West Africa", note: "Easternmost Mossi kingdom." }],
+
+  // === Burmese kingdoms (1500) ==============================================
+  // After Ava's collapse the Burmese world fragmented into competing
+  // kingdoms. The unified Toungoo dynasty would re-emerge in the mid-16th c.
+  ["Ava",                  { continent: "Southeast Asia", note: "Upper-Burmese kingdom on the Irrawaddy; successor to Pagan." }],
+  ["Pegu (Hanthawaddy)",   { continent: "Southeast Asia", note: "Mon kingdom of southern Burma; rivals of Ava." }],
+  ["Mrauk U",              { continent: "Southeast Asia", note: "Coastal Arakanese kingdom on the Bay of Bengal." }],
+  ["Shan principalities",  { continent: "Southeast Asia", note: "Patchwork of Tai/Shan principalities in the eastern hills, often vassals of Ava or China." }],
+
+  // === Aymara kingdoms (1300) — Lake Titicaca altiplano =====================
+  // Network of small Aymara-speaking kingdoms after the fall of Tiwanaku
+  // and before the Inca conquest (c. 1450). All flag-less.
+  ["Lupaca",   { continent: "South America", note: "Western lake-shore Aymara kingdom; later allies of the Inca." }],
+  ["Colla",    { continent: "South America", note: "Northern lake-shore Aymara kingdom; resisted Inca expansion." }],
+  ["Pacajes",  { continent: "South America", note: "Southern Aymara kingdom of the altiplano." }],
+  ["Carangas", { continent: "South America", note: "Western altiplano Aymara kingdom (modern Oruro region)." }],
+  ["Charcas",  { continent: "South America", note: "South-eastern Aymara confederation in modern southern Bolivia." }],
+
   // === Era-agnostic entries that happen to fit 1815 well too =================
   // These polities used essentially the same flag well before 1815 AND today,
   // so they're safe to keep in the global registry without an era-override.
