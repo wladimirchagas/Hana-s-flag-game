@@ -336,6 +336,116 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Carangas", { continent: "South America", note: "Western altiplano Aymara kingdom (modern Oruro region)." }],
   ["Charcas",  { continent: "South America", note: "South-eastern Aymara confederation in modern southern Bolivia." }],
 
+  // === Indian patchworks (500 BC – 800 AD) =================================
+  // Modern Indian admin-1 boundaries used to subdivide the dataset's
+  // "Hindu kingdoms" / "Hindu states" lumped polygon into the dominant
+  // polities of each era. Borders are heavily approximate — ancient
+  // kingdoms didn't follow modern state lines — but the labels track the
+  // era's history. All flag-less by design (none had a national flag).
+  ["Anarta region", { continent: "South Asia", note: "North-western coast — the Mahabharata's land of Krishna's Dwaraka." }],
+  ["Avanti Mahajanapada", { continent: "South Asia", note: "Powerful central-Indian realm with capital Ujjayini." }],
+  ["Bengal kingdoms", { continent: "South Asia", note: "Vanga and Pundra kingdoms of the Ganges delta." }],
+  ["Chalukya of Vatapi", { continent: "South Asia", note: "Powerful Deccan dynasty, soon to fight the Pallavas." }],
+  ["Chera Kingdom", { continent: "South Asia", note: "Westernmost of the three classical Tamil kingdoms." }],
+  ["Chera Kingdoms", { continent: "South Asia", note: "Smaller Chera principalities of the west coast." }],
+  ["Chola / Pandya kingdoms", { continent: "South Asia", note: "Two of the three classical Tamil kingdoms — Chola in the centre, Pandya in the south." }],
+  ["Eastern Ganga dynasty", { continent: "South Asia", note: "Builders of the Konark Sun Temple, in later centuries." }],
+  ["Gauda Kingdom", { continent: "South Asia", note: "Shashanka's kingdom of Bengal." }],
+  ["Gurjara dynasty", { continent: "South Asia", note: "Predecessors of the Pratiharas." }],
+  ["Gurjara-Pratihara", { continent: "South Asia", note: "Northern Indian dynasty; held off Arab incursions across the Sindh." }],
+  ["Kuru Mahajanapada", { continent: "South Asia", note: "One of the great Vedic-age realms, north-west of the Ganges." }],
+  ["Late Gupta successors", { continent: "South Asia", note: "Petty kingdoms of the late-Gupta collapse." }],
+  ["Late Pallava / early Chola", { continent: "South Asia", note: "End of Pallava power; the Cholas would soon rise to imperial heights." }],
+  ["Later Gupta dynasty", { continent: "South Asia", note: "Smaller successor of the imperial Guptas." }],
+  ["Maitraka Kingdom", { continent: "South Asia", note: "Western kingdom centred on Valabhi." }],
+  ["Matsya Mahajanapada", { continent: "South Asia", note: "Centred on Viratanagara in modern Rajasthan." }],
+  ["Maukhari Kingdom", { continent: "South Asia", note: "Centred on Kanyakubja (Kannauj); soon to fall to Harsha." }],
+  ["Maukharis / small kingdoms", { continent: "South Asia", note: "Post-Mauryan principalities of the Ganges plain." }],
+  ["Pala Empire", { continent: "South Asia", note: "Buddhist dynasty of Bengal and Bihar; sponsors of Nalanda." }],
+  ["Pallava Kingdom", { continent: "South Asia", note: "Builders of Mahabalipuram; centred on Kanchipuram." }],
+  ["Pancala / Kosala", { continent: "South Asia", note: "Twin great realms of the Ganges plain — Pancala in the west, Kosala in the east around Ayodhya." }],
+  ["Rashtrakuta Empire", { continent: "South Asia", note: "Deccan empire of the 8th–10th centuries — the era's true superpower." }],
+  ["Satavahana Empire", { continent: "South Asia", note: "Deccan empire bridging north and south India." }],
+  ["Vakataka successors", { continent: "South Asia", note: "Local powers in the post-Vakataka Deccan." }],
+  ["Western Satraps / Saka", { continent: "South Asia", note: "Indo-Scythian satrapies of the north-west." }],
+  ["Yaudheya Confederation", { continent: "South Asia", note: "Republican confederation of warriors in the north-western plains." }],
+
+  // === Maya world (100 AD – 1500) ===========================================
+  // The dataset uses several closely-related lumped NAMEs for the Maya
+  // (chiefdoms and states / states / city-states) across eras. Splitting
+  // by modern Mexican / Guatemalan / Belizean / Honduran admin-1 gives
+  // one feature per major Maya polity per era. None had flags.
+  ["Belize Maya city-states", { continent: "Mesoamerica", note: "Caracol and other Belizean Maya polities." }],
+  ["Calakmul", { continent: "Mesoamerica", note: "Tikal's great rival, the 'Kingdom of the Snake'." }],
+  ["Caracol", { continent: "Mesoamerica", note: "Major Belizean Maya city-state, defeated Tikal in 562 AD." }],
+  ["Caribbean Maya", { continent: "Mesoamerica", note: "Coastal Maya polities along the Caribbean." }],
+  ["Cerros", { continent: "Mesoamerica", note: "Preclassic-Classic Belize Maya site." }],
+  ["Champotón", { continent: "Mesoamerica", note: "Postclassic Maya port-state." }],
+  ["Chontal Maya", { continent: "Mesoamerica", note: "Maritime trader Maya of the Gulf coast." }],
+  ["Cobá", { continent: "Mesoamerica", note: "Late-Classic Maya city-state of the Caribbean coast." }],
+  ["Copán", { continent: "Mesoamerica", note: "Southernmost major Maya city, famous for its stelae and hieroglyphic stairway." }],
+  ["Ekab + Cocom", { continent: "Mesoamerica", note: "Eastern Yucatec city-states." }],
+  ["Highland Maya", { continent: "Mesoamerica", note: "Highland Maya polities of the Verapaz." }],
+  ["Itzá", { continent: "Mesoamerica", note: "Last independent Maya kingdom (Nojpetén) — held out until 1697." }],
+  ["K'iche'", { continent: "Mesoamerica", note: "Highland Maya kingdom; would resist Pedro de Alvarado in 1524." }],
+  ["Lacandon Maya", { continent: "Mesoamerica", note: "Forest-dwelling Maya who resisted the Spanish for centuries." }],
+  ["Lamanai", { continent: "Mesoamerica", note: "Belize Maya city; one of the longest-occupied Maya sites." }],
+  ["Lubaantun", { continent: "Mesoamerica", note: "Late-Classic Belizean Maya site." }],
+  ["Mam", { continent: "Mesoamerica", note: "Highland Maya people of north-western Guatemala." }],
+  ["Maya city-states (Belize)", { continent: "Mesoamerica" }],
+  ["Mayapán", { continent: "Mesoamerica", note: "Dominant Postclassic Yucatec capital, the last Maya 'state'." }],
+  ["Mayapán successors", { continent: "Mesoamerica", note: "After Mayapán's 1441 fall, Yucatec split into ~16 chiefdoms." }],
+  ["Northern Maya", { continent: "Mesoamerica", note: "Northern lowland city-states (Dzibilchaltun, Cobá)." }],
+  ["Palenque", { continent: "Mesoamerica", note: "Classic Maya city-state famed for its temple architecture and inscriptions." }],
+  ["Preclassic Maya (Belize)", { continent: "Mesoamerica", note: "Early Cerros, Cuello, and Lamanai." }],
+  ["Preclassic Maya (Calakmul region)", { continent: "Mesoamerica", note: "Early settlements of what would become Calakmul + El Mirador." }],
+  ["Preclassic Maya (Caribbean coast)", { continent: "Mesoamerica", note: "Eastern Maya coastal settlements." }],
+  ["Preclassic Maya (Chiapas)", { continent: "Mesoamerica", note: "Late-Preclassic Maya cities of the western Maya world (Izapa, early Palenque)." }],
+  ["Preclassic Maya (Copán region)", { continent: "Mesoamerica", note: "Southern Maya periphery — early settlements of Copán." }],
+  ["Preclassic Maya (Petén)", { continent: "Mesoamerica", note: "Heart of the Maya jungle — early Tikal and El Mirador region." }],
+  ["Preclassic Maya (Tabasco)", { continent: "Mesoamerica", note: "Western Maya lowlands — Comalcalco area." }],
+  ["Preclassic Maya (Yucatán)", { continent: "Mesoamerica", note: "Earliest Yucatec Maya settlements." }],
+  ["Preclassic Maya (highland)", { continent: "Mesoamerica", note: "Highland Maya of north Guatemala." }],
+  ["Q'eqchi' Maya", { continent: "Mesoamerica" }],
+  ["Tikal", { continent: "Mesoamerica", note: "Major lowland Maya city-state in modern Guatemala." }],
+  ["Tulum / Cobá", { continent: "Mesoamerica", note: "Postclassic Yucatec city-states of the Caribbean coast." }],
+  ["Uxmal", { continent: "Mesoamerica", note: "Late-Classic Puuc-style city of northern Yucatán." }],
+
+  // === Andean states & chiefdoms (1300) =====================================
+  // Pre-Inca Andean polities of modern Peru and Ecuador, split by
+  // department. The Chimú Empire is drawn separately by the dataset.
+  ["Cajamarca Kingdom", { continent: "South America", note: "Northern highland kingdom — soon a key Inca tributary." }],
+  ["Cañari Kingdom", { continent: "South America", note: "Southern Ecuadorian kingdom of the Andes." }],
+  ["Chachapoya", { continent: "South America", note: "'Cloud forest people' of the eastern Andes." }],
+  ["Chanka", { continent: "South America", note: "Highland confederation; defeated by Pachacuti Inca." }],
+  ["Chincha", { continent: "South America", note: "Wealthy coastal kingdom famed for long-distance trade." }],
+  ["Coastal chiefdoms (Arequipa)", { continent: "South America", note: "Southern coastal polities." }],
+  ["Highland chiefdoms (Ancash)", { continent: "South America", note: "Pre-Inca highland polities — heirs of Chavín and Recuay." }],
+  ["Huancavilca", { continent: "South America", note: "Coastal Huancavilca polities of southern Ecuador." }],
+  ["Ichma", { continent: "South America", note: "Coastal kingdom around Pachacamac, the famed Andean oracle." }],
+  ["Kingdom of Cuzco", { continent: "South America", note: "Highland kingdom that would soon become the heart of the Inca Empire (1438+)." }],
+  ["Manteño", { continent: "South America", note: "Coastal Manteño culture, famed for their long-distance balsa-raft trade." }],
+  ["Palta", { continent: "South America", note: "Southernmost Ecuadorian Andean chiefdoms." }],
+  ["Quitu / Caranqui", { continent: "South America", note: "Northern Andean chiefdoms of modern Ecuador." }],
+  ["Wanka", { continent: "South America", note: "Central-highland Wanka confederation." }],
+
+  // === Greek city-states (500 BC) ===========================================
+  // The dataset draws three separate "Greek city-states" features —
+  // Aegean, Magna Graecia in Italy, and a small Iberian polygon for the
+  // Phocaean colonies. We split by modern Greek / Italian / Spanish
+  // admin-1 to surface the most-famous poleis of each. None had a flag.
+  ["Aegean islands", { continent: "Mediterranean", note: "Hundreds of small poleis — Naxos, Paros, Melos, Lesbos, Chios, Samos…" }],
+  ["Athens", { continent: "Mediterranean", note: "Democracy + naval power; emblem of the owl of Athena." }],
+  ["Cretan poleis", { continent: "Mediterranean", note: "Knossos, Gortyn — Doric-speaking Cretan city-states." }],
+  ["Emporion", { continent: "Mediterranean", note: "Phocaean Greek colony in modern Catalonia — a key trading post." }],
+  ["Epirote tribes", { continent: "Mediterranean", note: "Tribal Greek kingdoms on the Adriatic coast." }],
+  ["Greek trading colonies (Iberia)", { continent: "Mediterranean", note: "Hemeroskopeion and other small Phocaean outposts on the Iberian coast." }],
+  ["Macedon + Thracian cities", { continent: "Mediterranean", note: "Macedon would soon absorb the rest under Philip II + Alexander." }],
+  ["Magna Graecia (Sicily)", { continent: "Mediterranean", note: "Syracuse, Akragas, Selinunte, Gela — the great Dorian colonies of Sicily." }],
+  ["Magna Graecia (mainland)", { continent: "Mediterranean", note: "Greek colonies in southern Italy — Sybaris, Croton, Taras (Tarentum), Cumae." }],
+  ["Sparta + Corinth", { continent: "Mediterranean", note: "Sparta dominated the Peloponnese; Corinth held the isthmus." }],
+  ["Thebes", { continent: "Mediterranean", note: "Boeotian polis; rival of both Athens and Sparta." }],
+
   // === Era-agnostic entries that happen to fit 1815 well too =================
   // These polities used essentially the same flag well before 1815 AND today,
   // so they're safe to keep in the global registry without an era-override.
