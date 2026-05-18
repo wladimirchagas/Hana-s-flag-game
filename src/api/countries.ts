@@ -1,5 +1,8 @@
 export type Country = {
   name: string;
+  /** Long official name from REST Countries (e.g., "Federative Republic of
+   *  Brazil"). Used for the entity-summary panel. */
+  nameOfficial?: string;
   code: string;
   flagSvg: string;
   continent: Continent;
@@ -11,6 +14,8 @@ export type Country = {
   population?: number;
   /** Official languages, deduplicated. */
   languages?: string[];
+  /** Currencies — one per row in the panel summary. */
+  currencies?: { code: string; name: string; symbol?: string }[];
 };
 
 export type Continent =
@@ -21,7 +26,7 @@ export type Continent =
   | "Oceania";
 
 type RestCountry = {
-  name?: { common?: string };
+  name?: { common?: string; official?: string };
   cca2?: string;
   flags?: { svg?: string; png?: string };
   region?: string;
@@ -29,10 +34,11 @@ type RestCountry = {
   capital?: string[];
   population?: number;
   languages?: Record<string, string>;
+  currencies?: Record<string, { name?: string; symbol?: string }>;
 };
 
 const API_URL =
-  "https://restcountries.com/v3.1/all?fields=name,flags,cca2,region,subregion,capital,population,languages";
+  "https://restcountries.com/v3.1/all?fields=name,flags,cca2,region,subregion,capital,population,languages,currencies";
 
 /**
  * World Bank "Population, total" indicator. The most-current authoritative
@@ -150,8 +156,19 @@ export async function fetchCountries(): Promise<Country[]> {
     const languages = item.languages
       ? Array.from(new Set(Object.values(item.languages).map((l) => l.trim()).filter(Boolean)))
       : undefined;
+    const nameOfficial = item.name?.official?.trim() || undefined;
+    const currencies = item.currencies
+      ? Object.entries(item.currencies)
+          .map(([currCode, info]) => ({
+            code: currCode,
+            name: (info?.name ?? "").trim() || currCode,
+            symbol: info?.symbol?.trim() || undefined,
+          }))
+          .filter((c) => c.name)
+      : undefined;
     countries.push({
       name,
+      nameOfficial,
       code,
       flagSvg: flagUrl,
       continent: region,
@@ -159,6 +176,7 @@ export async function fetchCountries(): Promise<Country[]> {
       capital,
       population,
       languages,
+      currencies: currencies && currencies.length > 0 ? currencies : undefined,
     });
   }
 
