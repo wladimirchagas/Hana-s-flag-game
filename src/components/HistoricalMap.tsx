@@ -50,6 +50,10 @@ export type HistoricalMapProps = {
    *  parent persist zoom across era switches (the parent owns the hook).
    *  When omitted, the component manages its own zoom state. */
   zoom?: ZoomPanState;
+  /** Fires once after the era's GeoJSON has loaded, with the set of
+   *  feature NAMEs the file contains. Used by the parent to decide
+   *  whether a currently-selected entity still exists in this era. */
+  onDataLoaded?: (names: ReadonlySet<string>) => void;
 };
 
 const WIDTH = 960;
@@ -86,6 +90,7 @@ export function HistoricalMap({
   onSelect,
   onHover,
   zoom: externalZoom,
+  onDataLoaded,
 }: HistoricalMapProps) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -126,6 +131,20 @@ export function HistoricalMap({
       cancelled = true;
     };
   }, [geoJsonUrl]);
+
+  // Notify the parent whenever new data lands, with the set of feature
+  // NAMEs in this era. Lets the parent decide if a currently-selected
+  // entity still exists in the new era (used by LearnPage to keep the
+  // selection alive across era switches).
+  useEffect(() => {
+    if (!data || !onDataLoaded) return;
+    const names = new Set<string>();
+    for (const ft of data.features) {
+      const n = ft.properties?.NAME;
+      if (n) names.add(n);
+    }
+    onDataLoaded(names);
+  }, [data, onDataLoaded]);
 
   // Compute per-feature path strings via d3-geo's equal-earth projection
   // (same as WorldProgressMap so the two maps look like the same world).
