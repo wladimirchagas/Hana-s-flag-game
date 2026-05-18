@@ -446,6 +446,71 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Sparta + Corinth", { continent: "Mediterranean", note: "Sparta dominated the Peloponnese; Corinth held the isthmus." }],
   ["Thebes", { continent: "Mediterranean", note: "Boeotian polis; rival of both Athens and Sparta." }],
 
+  // === Swahili-coast city-states (1300 + 1500) =============================
+  // The dataset's "Islamic city-states" polygon is actually the East
+  // African coast — Mogadishu, Pate, Mombasa, Malindi, Kilwa, Sofala —
+  // not the post-Abbasid Middle East as the NAME might suggest. We split
+  // by modern Somalia / Kenya / Tanzania / Mozambique coastal admin-1
+  // boundaries.
+  ["Ajuran Sultanate", { continent: "East Africa", note: "Rising Somali power that resisted the Portuguese." }],
+  ["Bagamoyo / Kaole sultanates", { continent: "East Africa", note: "Mainland-coast Swahili settlements opposite Zanzibar." }],
+  ["Kilwa Sultanate", { continent: "East Africa", note: "Greatest of the Swahili sultanates — its 14th-century gold trade made it fabulously rich." }],
+  ["Malindi", { continent: "East Africa", note: "Famous medieval Swahili city — visited by Zheng He's treasure fleet (1418)." }],
+  ["Mogadishu Sultanate", { continent: "East Africa", note: "Wealthiest Swahili-coast city; commanded the Indian-Ocean gold trade." }],
+  ["Mombasa Sultanate", { continent: "East Africa", note: "Rival of Malindi and Kilwa; key Indian-Ocean port." }],
+  ["Mozambique Island sultanate", { continent: "East Africa", note: "Northernmost Mozambican Swahili port." }],
+  ["Northern Tanzanian Swahili cities", { continent: "East Africa", note: "Small coastal sultanates between Mombasa and Zanzibar." }],
+  ["Pate Sultanate", { continent: "East Africa", note: "City-state of the Lamu archipelago; Indian-Ocean trading hub." }],
+  ["Sofala Sultanate", { continent: "East Africa", note: "Gold-trade emporium serving Great Zimbabwe's mines." }],
+  ["Somali coastal sultanates", { continent: "East Africa", note: "Patchwork of Hawiye / Ajuran emerging powers." }],
+  ["Zanzibar Sultanates", { continent: "East Africa", note: "Stone Town and the Zanzibar archipelago." }],
+
+  // === Malaysian Islamic sultanates (1500) =================================
+  // Maritime Southeast Asia in 1500 was a patchwork of Muslim sultanates
+  // (Pasai, Demak, Banten, Ternate, Tidore, Brunei, Sulu…) plus the
+  // still-Hindu Bali. The dataset shows them all under one "Malaysian
+  // Islamic states" polygon — we split by modern Indonesian /
+  // Malaysian / Bruneian / Philippine admin-1 boundaries.
+  ["Bangka tin sultanates", { continent: "Maritime SE Asia" }],
+  ["Banjar Sultanate", { continent: "Maritime SE Asia", note: "Major Kalimantan Muslim sultanate centred on Banjarmasin." }],
+  ["Banten / Cirebon", { continent: "Maritime SE Asia", note: "West-Java Muslim sultanates — Banten and Cirebon." }],
+  ["Banten Sultanate", { continent: "Maritime SE Asia", note: "Rising west-Java sultanate; would soon control the Sunda Strait pepper trade." }],
+  ["Bengkulu chiefdoms", { continent: "Maritime SE Asia" }],
+  ["Bima Sultanate", { continent: "Maritime SE Asia", note: "Eastern Indonesian Muslim sultanate on Sumbawa." }],
+  ["Brunei satellites", { continent: "Maritime SE Asia", note: "Northern Kalimantan, under Brunei's expanding influence." }],
+  ["Buton Sultanate", { continent: "Maritime SE Asia", note: "Small Muslim sultanate of south-east Sulawesi." }],
+  ["Demak Sultanate", { continent: "Maritime SE Asia", note: "First major Muslim sultanate on Java (founded c. 1475); soon to topple Majapahit." }],
+  ["Gowa-Tallo Sultanate", { continent: "Maritime SE Asia", note: "Rising Bugis-Makassar twin sultanate of southern Sulawesi." }],
+  ["Hindu Bali (Gelgel)", { continent: "Maritime SE Asia", note: "Bali remained Hindu — last hold-out of pre-Islamic Java." }],
+  ["Jambi Sultanate", { continent: "Maritime SE Asia", note: "Sumatran Malay sultanate on the Batang Hari river." }],
+  ["Kutai Sultanate", { continent: "Maritime SE Asia", note: "East Kalimantan Muslim sultanate." }],
+  ["Lampung principalities", { continent: "Maritime SE Asia", note: "Patchwork of small Muslim chiefdoms in southern Sumatra." }],
+  ["Mandar chiefdoms", { continent: "Maritime SE Asia", note: "Mandar coastal chiefdoms." }],
+  ["Minahasa / Gorontalo", { continent: "Maritime SE Asia", note: "Northern Sulawesi chiefdoms." }],
+  ["Minangkabau realm", { continent: "Maritime SE Asia", note: "Highland matrilineal Muslim society of central Sumatra." }],
+  ["Palembang Sultanate", { continent: "Maritime SE Asia", note: "Late-Srivijaya successor; gradually Islamising in the 15th–16th c." }],
+  ["Papuan coastal chiefdoms", { continent: "Maritime SE Asia", note: "Bird's-head Papua under loose Ternate / Tidore tribute." }],
+  ["Pasai Sultanate", { continent: "Maritime SE Asia", note: "Earliest Indonesian Muslim sultanate (founded c. 1297) — the gateway of Islam to the archipelago." }],
+  ["Riau-Lingga sultanates", { continent: "Maritime SE Asia", note: "Strait-of-Malacca Muslim trading polities." }],
+  ["Sambas / Sukadana sultanates", { continent: "Maritime SE Asia", note: "Western Kalimantan Muslim sultanates." }],
+  ["Solor / Larantuka", { continent: "Maritime SE Asia", note: "Mixed Muslim and Catholic chiefdoms after Portuguese arrival." }],
+  ["Sulawesi chiefdoms", { continent: "Maritime SE Asia", note: "Mostly still pre-Islamic in 1500; would Islamise in the 17th c." }],
+  ["Sulu Sultanate", { continent: "Maritime SE Asia", note: "Muslim sultanate of the Sulu archipelago; Brunei's southern rival." }],
+  ["Ternate / Tidore Sultanates", { continent: "Maritime SE Asia", note: "Rival Spice-Islands sultanates that controlled the world clove trade." }],
+
+  // === Indian Muslim sultanates (1500) =====================================
+  // Three separate "Islamic states" dataset polygons — Sindh, Gujarat,
+  // and the Deccan. The Deccan polygon splits into the five Bahmani
+  // successor sultanates that broke off c. 1490.
+  ["Ahmadnagar Sultanate", { continent: "South Asia", note: "Nizam Shahi dynasty, declared independent from Bahmani in 1490." }],
+  ["Baluch tribal confederations", { continent: "South Asia", note: "Tribal Baluch and Makran polities." }],
+  ["Bidar Sultanate", { continent: "South Asia", note: "Barid Shahi dynasty centred on Bidar's massive fort." }],
+  ["Bijapur Sultanate", { continent: "South Asia", note: "Adil Shahi dynasty — would build the Gol Gumbaz and rule Karnataka for two centuries." }],
+  ["Golkonda Sultanate", { continent: "South Asia", note: "Qutb Shahi dynasty famed for its diamond mines — Hyderabad's founders." }],
+  ["Gujarat Sultanate (Muzaffarid)", { continent: "South Asia", note: "Wealthy maritime Muslim sultanate — its capital Ahmedabad was one of India's largest cities." }],
+  ["Punjab marches (Delhi Sultanate frontier)", { continent: "South Asia", note: "Western frontier of the Lodi Delhi Sultanate." }],
+  ["Samma dynasty (Sindh Sultanate)", { continent: "South Asia", note: "Muslim Sindhi dynasty centred on Thatta; would soon fall to the Arghuns." }],
+
   // === Era-agnostic entries that happen to fit 1815 well too =================
   // These polities used essentially the same flag well before 1815 AND today,
   // so they're safe to keep in the global registry without an era-override.
