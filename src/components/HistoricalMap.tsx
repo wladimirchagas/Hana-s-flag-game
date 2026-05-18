@@ -193,6 +193,9 @@ export function HistoricalMap({
                   stroke={stroke}
                   strokeWidth={isHighlighted ? 1.4 : 0.4}
                   strokeOpacity={isHighlighted ? 1 : 0.5}
+                  // Keep borders the same visual width regardless of zoom —
+                  // without this they thicken as the user zooms in.
+                  vectorEffect="non-scaling-stroke"
                   className="world-map__country world-map__country--selectable"
                   onClick={() => onSelect?.(f.name)}
                   onMouseEnter={() => onHover?.(f.name)}
