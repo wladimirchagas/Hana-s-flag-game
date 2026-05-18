@@ -59,12 +59,18 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
   const [ty, setTy] = useState(0);
   const drag = useRef<{
     active: boolean;
+    /** True once we've called setPointerCapture for this gesture. We
+     *  defer the capture until movement crosses the drag threshold so
+     *  that a click-to-select stays a click (capturing in onPointerDown
+     *  retargets the synthesized click to the SVG, breaking path
+     *  onClick handlers). */
+    captured: boolean;
     startX: number;
     startY: number;
     origTx: number;
     origTy: number;
     moved: boolean;
-  }>({ active: false, startX: 0, startY: 0, origTx: 0, origTy: 0, moved: false });
+  }>({ active: false, captured: false, startX: 0, startY: 0, origTx: 0, origTy: 0, moved: false });
 
   /**
    * Convert a mouse event's client coordinates into the SVG's viewBox space.
@@ -110,9 +116,16 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
     (e: React.PointerEvent<SVGSVGElement>) => {
       // Ignore right-click / middle-click drags.
       if (e.button !== 0) return;
-      e.currentTarget.setPointerCapture(e.pointerId);
+      // CRITICAL: do NOT setPointerCapture here. Per the Pointer Events
+      // spec, capturing the pointer retargets the synthesized `click`
+      // event to the capturing element (the SVG) instead of the actual
+      // target under the cursor (the country path) — which silently
+      // breaks every country's onClick handler. Capture is deferred to
+      // onPointerMove and only happens once the pointer crosses the
+      // drag threshold, so a quick tap-to-select stays a click.
       drag.current = {
         active: true,
+        captured: false,
         startX: e.clientX,
         startY: e.clientY,
         origTx: tx,
@@ -132,15 +145,25 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
       // Convert pixel delta into viewBox delta.
       const dxViewBox = ((e.clientX - d.startX) / rect.width) * width;
       const dyViewBox = ((e.clientY - d.startY) / rect.height) * height;
-      // Mark as moved once we cross a small threshold so that a *click*
-      // doesn't get suppressed. The country onClick handler still fires
-      // through the path, but if the user clearly dragged we want to
-      // prevent the click from registering.
+      // Mark as moved once we cross a small threshold; this is the moment
+      // we promote the gesture from "click" to "drag" — and the moment
+      // we set pointer capture (so the drag continues smoothly even if
+      // the pointer leaves the SVG mid-drag).
       if (!d.moved && Math.hypot(e.clientX - d.startX, e.clientY - d.startY) > 4) {
         d.moved = true;
+        if (!d.captured) {
+          try {
+            svg.setPointerCapture(e.pointerId);
+            d.captured = true;
+          } catch {
+            // ignore — some browsers won't capture if the pointer left
+          }
+        }
       }
-      setTx(d.origTx + dxViewBox);
-      setTy(d.origTy + dyViewBox);
+      if (d.moved) {
+        setTx(d.origTx + dxViewBox);
+        setTy(d.origTy + dyViewBox);
+      }
     },
     [width, height],
   );
@@ -148,7 +171,13 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
   const finishDrag = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     const d = drag.current;
     if (!d.active) return;
-    e.currentTarget.releasePointerCapture(e.pointerId);
+    if (d.captured) {
+      try {
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      } catch {
+        // ignore — pointer may already be released
+      }
+    }
     drag.current = { ...d, active: false };
     // If we dragged, swallow the click that the browser will fire next on
     // any path under the pointer — otherwise the user pans and inadvertently
