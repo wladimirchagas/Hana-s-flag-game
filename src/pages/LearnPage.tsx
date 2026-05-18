@@ -339,13 +339,11 @@ export default function LearnPage() {
   // back here so the user lands on the map with their selection
   // highlighted.
   const learnRootRef = useRef<HTMLDivElement | null>(null);
-  // Ref to the FlagGrid section so that selections coming from the
-  // *map* or *search dropdown* auto-scroll the page down to it (so the
-  // user can immediately see the matching tile + neighbours).
-  const flagGridRef = useRef<HTMLDivElement | null>(null);
-  function scrollToFlagGrid() {
-    flagGridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  // (No auto-scroll into the flag grid from map / search selections.
+  // Only an explicit click on a flag tile moves the viewport — back up
+  // to the map — handled by `handleGridSelect` below via `learnRootRef`.
+  // The grid's own selection highlight still updates silently for
+  // either selection source.)
 
   function handleGridSelect(id: string) {
     if (isModernEra) {
@@ -412,7 +410,10 @@ export default function LearnPage() {
                 if (c) {
                   setSelected({ kind: "modern", country: c });
                   setHovered(null);
-                  scrollToFlagGrid();
+                  // No auto-scroll on map clicks — the user is looking at
+                  // the map, so we keep them there. The matching tile in
+                  // the flag grid still updates via the `--active` class,
+                  // visible the moment they scroll down themselves.
                 }
               },
               onHover: (code) => {
@@ -442,7 +443,9 @@ export default function LearnPage() {
               const next = selectionFromPolityName(name);
               setSelected(next);
               setHovered(null);
-              if (next) scrollToFlagGrid();
+              // Same as WorldProgressMap above — map clicks should not
+              // yank the user away from the map. Flag-grid highlight
+              // still updates silently for when they scroll down.
             }}
             onHover={(name) => {
               const next = selectionFromPolityName(name);
@@ -523,11 +526,10 @@ export default function LearnPage() {
                 countries={countries}
                 value={display?.kind === "modern" ? display.country : null}
                 onChange={(c) => {
-                  if (c) {
-                    setSelected({ kind: "modern", country: c });
-                    scrollToFlagGrid();
-                  }
+                  if (c) setSelected({ kind: "modern", country: c });
                   setHovered(null);
+                  // No auto-scroll from the search dropdown either — only
+                  // an explicit flag-tile click should move the viewport.
                 }}
                 disabled={countries.length === 0}
                 label="Find a country"
@@ -570,15 +572,13 @@ export default function LearnPage() {
         </div>
       )}
     </div>
-      <div ref={flagGridRef}>
-        <FlagGrid
-          entries={flagEntries}
-          selectedId={selectedId}
-          onSelect={handleGridSelect}
-          onZoomFlag={handleZoomFlag}
-          resolveFlag={resolveFlag}
-        />
-      </div>
+      <FlagGrid
+        entries={flagEntries}
+        selectedId={selectedId}
+        onSelect={handleGridSelect}
+        onZoomFlag={handleZoomFlag}
+        resolveFlag={resolveFlag}
+      />
     </div>
   );
 }
