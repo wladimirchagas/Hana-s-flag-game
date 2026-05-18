@@ -1848,6 +1848,126 @@
   }
 }
 
+/* === Map-view picker ===========================================
+   Sits in the same flex column as the +/-/⟲ zoom buttons. The trigger
+   is a single button rendered like its zoom siblings; clicking it
+   floats a popover with preset chips + custom-longitude slider +
+   south-up checkbox. */
+
+.map-view-control {
+  position: relative;
+}
+
+.map-view-control__popover {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 0.5rem);
+  width: 13rem;
+  padding: 0.7rem 0.8rem 0.75rem;
+  background: var(--paper, #fff);
+  border: 2px solid var(--ink, #1a2238);
+  border-radius: 14px;
+  box-shadow: 0 4px 0 var(--ink, #1a2238);
+  z-index: 6;
+  font-family: var(--font-display, system-ui);
+  color: var(--ink, #1a2238);
+}
+
+.map-view-control__heading {
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft, rgba(0, 0, 0, 0.6));
+}
+
+.map-view-control__presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.map-view-control__preset {
+  padding: 0.25rem 0.55rem;
+  font-family: inherit;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  background: transparent;
+  color: var(--ink, #1a2238);
+  border: 2px solid var(--ink-faint, rgba(26, 34, 56, 0.18));
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.map-view-control__preset:hover,
+.map-view-control__preset:focus-visible {
+  border-color: var(--ink, #1a2238);
+  outline: none;
+}
+
+.map-view-control__preset--active {
+  background: var(--sky, #4ecdc4);
+  border-color: var(--ink, #1a2238);
+  color: var(--ink-fixed, #1a2238);
+}
+
+.map-view-control__slider-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--ink-soft, rgba(0, 0, 0, 0.6));
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.map-view-control__slider-value {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--ink, #1a2238);
+  text-transform: none;
+}
+
+.map-view-control__slider {
+  width: 100%;
+  margin: 0 0 0.55rem;
+  accent-color: var(--sky, #4ecdc4);
+}
+
+.map-view-control__check {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.map-view-control__check input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--sky, #4ecdc4);
+  cursor: pointer;
+}
+
+/* On phones the popover would overflow right of the map column — flip
+   it to anchor below the trigger instead of to the left. */
+@media (max-width: 540px) {
+  .map-view-control__popover {
+    top: calc(100% + 0.5rem);
+    right: 0;
+    width: 12rem;
+  }
+}
+
 /* Persistent build-info footer rendered globally by App.tsx. Floats in
    the bottom-right corner so it doesn't compete with main page content
    but is always visible for users reporting "is this fix live yet?". */

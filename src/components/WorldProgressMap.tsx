@@ -72,6 +72,13 @@ type Props = {
    *  parent persist zoom across map swaps (e.g., Today ↔ historical map).
    *  When omitted, the component manages its own zoom state. */
   zoom?: ZoomPanState;
+  /** User-chosen central meridian (longitude). 0 = Atlantic / Greenwich
+   *  default; 180 = Pacific; -95 = Americas; etc. */
+  centerLongitude?: number;
+  /** When true, the rendered map is flipped vertically — south at the top. */
+  southUp?: boolean;
+  /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
+  extraControls?: React.ReactNode;
 };
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -160,6 +167,9 @@ export function WorldProgressMap({
   selectable,
   disabled = false,
   zoom: externalZoom,
+  centerLongitude = 0,
+  southUp = false,
+  extraControls,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -191,10 +201,15 @@ export function WorldProgressMap({
 
   const pathById = useMemo(() => {
     if (geographies.length === 0) return new Map<string, string>();
-    const projection = geoEqualEarth().fitSize([WIDTH, HEIGHT], {
-      type: "FeatureCollection",
-      features: geographies,
-    } as FeatureCollection);
+    // Centre on the user-chosen meridian. South-up is handled in SVG
+    // (transform on outer <g>) — keeps the projection's antimeridian
+    // splitting logic untouched.
+    const projection = geoEqualEarth()
+      .rotate([-centerLongitude, 0])
+      .fitSize([WIDTH, HEIGHT], {
+        type: "FeatureCollection",
+        features: geographies,
+      } as FeatureCollection);
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     for (const geo of geographies) {
@@ -203,7 +218,7 @@ export function WorldProgressMap({
       paths.set(String(geo.id ?? ""), path);
     }
     return paths;
-  }, [geographies]);
+  }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
@@ -297,6 +312,11 @@ export function WorldProgressMap({
           {...zoom.svgHandlers}
         >
           <g transform={zoom.transform}>
+          {/* South-up flip happens inside the zoom group so flipping +
+              zooming compose correctly. See HistoricalMap for details. */}
+          <g
+            transform={southUp ? `translate(0 ${HEIGHT}) scale(1 -1)` : undefined}
+          >
           {geographies.map((geo, idx) => {
             const key = String(geo.id ?? idx);
             const path = pathById.get(String(geo.id ?? ""));
@@ -361,6 +381,7 @@ export function WorldProgressMap({
               </path>
             );
           })}
+          </g>
           </g>
         </svg>
         {popover && isInteractive && (
@@ -428,6 +449,7 @@ export function WorldProgressMap({
           >
             ⟲
           </button>
+          {extraControls}
         </div>
       </div>
     </section>

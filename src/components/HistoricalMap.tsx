@@ -54,6 +54,14 @@ export type HistoricalMapProps = {
    *  feature NAMEs the file contains. Used by the parent to decide
    *  whether a currently-selected entity still exists in this era. */
   onDataLoaded?: (names: ReadonlySet<string>) => void;
+  /** User-chosen central meridian (longitude). 0 = Atlantic / Greenwich
+   *  default; 180 = Pacific; -95 = Americas; etc. */
+  centerLongitude?: number;
+  /** When true, the rendered map is flipped vertically — south at the top. */
+  southUp?: boolean;
+  /** Optional extra controls to render below the +/-/⟲ zoom buttons,
+   *  e.g. the MapViewControl picker. */
+  extraControls?: React.ReactNode;
 };
 
 const WIDTH = 960;
@@ -91,6 +99,9 @@ export function HistoricalMap({
   onHover,
   zoom: externalZoom,
   onDataLoaded,
+  centerLongitude = 0,
+  southUp = false,
+  extraControls,
 }: HistoricalMapProps) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -150,14 +161,20 @@ export function HistoricalMap({
   // (same as WorldProgressMap so the two maps look like the same world).
   const renderedFeatures = useMemo(() => {
     if (!data || data.features.length === 0) return [];
-    const projection = geoEqualEarth().fitSize([WIDTH, HEIGHT], data);
+    // Centre the projection on the user-chosen meridian. d3-geo's rotate
+    // is [lambda, phi, gamma]; we only touch lambda. South-up is handled
+    // separately as an SVG transform so the projection's geometry stays
+    // canonical (less risk of fitSize / antimeridian-splitting bugs).
+    const projection = geoEqualEarth()
+      .rotate([-centerLongitude, 0])
+      .fitSize([WIDTH, HEIGHT], data);
     const pathFn = geoPath(projection);
     return data.features.map((f, idx) => {
       const d = pathFn(f as never);
       const name = f.properties?.NAME ?? null;
       return { idx, d, name };
     });
-  }, [data]);
+  }, [data, centerLongitude]);
 
   // Compute the "highlight" set: every feature whose NAME matches the
   // hovered or selected name gets the highlight colour. A single empire
@@ -192,6 +209,13 @@ export function HistoricalMap({
             {...zoom.svgHandlers}
           >
             <g transform={zoom.transform}>
+            {/* South-up wrapper: SVG transforms compose left-to-right, so
+                `translate(0 H) scale(1 -1)` applied INSIDE zoom flips the
+                geometry vertically (south at top) while keeping it
+                inside the viewBox and preserving the zoom anchor. */}
+            <g
+              transform={southUp ? `translate(0 ${HEIGHT}) scale(1 -1)` : undefined}
+            >
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
               const isHighlighted =
@@ -224,6 +248,7 @@ export function HistoricalMap({
                 </path>
               );
             })}
+            </g>
             </g>
           </svg>
         )}
@@ -259,6 +284,7 @@ export function HistoricalMap({
           >
             ⟲
           </button>
+          {extraControls}
         </div>
       </div>
     </section>
