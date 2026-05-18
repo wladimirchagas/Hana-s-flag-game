@@ -189,7 +189,13 @@ export default function LearnPage() {
     return m;
   }, [countries]);
 
-  const display = hovered ?? selected;
+  // Selection takes priority over hover. Once the user has clicked a
+  // country / polity, the panel sticks to it — hovering other entities
+  // doesn't override the panel content. Hover still shows a preview when
+  // *nothing* is selected (initial state). The map's selected highlight
+  // also follows this (drawn from `display`), giving the user a clear
+  // "this is my selection" signal.
+  const display = selected ?? hovered;
 
   // Build a polity → Selection helper for historical eras. The HistoricalMap
   // emits a NAME string when the user clicks/hovers a polity; we wrap that
