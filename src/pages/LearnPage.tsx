@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetchCountries, type Country } from "../api/countries";
+import { fetchCountries, summarizeCountry, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { CountryDropdown } from "../components/CountryDropdown";
@@ -59,8 +59,20 @@ function selectionFlag(s: Selection, baseUrl: string): string | null {
   if (/^https?:\/\//.test(s.flag) || s.flag.startsWith("data:")) return s.flag;
   return `${baseUrl}${s.flag}`;
 }
-function selectionNote(s: Selection): string | undefined {
-  return s.kind === "historical" ? s.note : undefined;
+/**
+ * Compose the short editorial summary shown under the entity's name in the
+ * detail panel. Modern countries get a generated capital/region/population
+ * line; historical polities reuse their curated registry note. Falls back
+ * to a sensible generic if neither is available.
+ */
+function selectionSummary(s: Selection): string | undefined {
+  if (s.kind === "modern") {
+    const composed = summarizeCountry(s.country);
+    return composed || `Country in ${s.country.continent}.`;
+  }
+  if (s.note) return s.note;
+  if (s.continent) return `Historical polity of ${s.continent}.`;
+  return undefined;
 }
 
 export default function LearnPage() {
@@ -280,8 +292,8 @@ export default function LearnPage() {
                   {selectionContinent(display)}
                 </p>
                 <h2 className="learn-fs__name">{selectionName(display)}</h2>
-                {selectionNote(display) && (
-                  <p className="learn-fs__note">{selectionNote(display)}</p>
+                {selectionSummary(display) && (
+                  <p className="learn-fs__note">{selectionSummary(display)}</p>
                 )}
                 {flagUrl ? (
                   <button
