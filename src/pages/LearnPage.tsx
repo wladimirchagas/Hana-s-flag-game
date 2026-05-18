@@ -6,6 +6,12 @@ import { HistoricalMap } from "../components/HistoricalMap";
 import { CountryDropdown } from "../components/CountryDropdown";
 import { EraSlider } from "../components/EraSlider";
 import { useZoomPan } from "../hooks/useZoomPan";
+import { MapViewControl } from "../components/MapViewControl";
+import {
+  loadMapView,
+  saveMapView,
+  type MapViewSettings,
+} from "../lib/mapView";
 import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
@@ -120,6 +126,13 @@ export default function LearnPage() {
   // swaps the underlying component). Reset only happens when the user
   // clicks the ⟲ button.
   const sharedZoom = useZoomPan(960, 500);
+
+  // Map view settings (centre longitude + south-up). Persisted to
+  // localStorage so the user's preferred orientation survives reloads.
+  const [mapView, setMapView] = useState<MapViewSettings>(() => loadMapView());
+  useEffect(() => {
+    saveMapView(mapView);
+  }, [mapView]);
 
   // Modern countries are loaded once on mount (used for the "Today" era).
   useEffect(() => {
@@ -344,6 +357,11 @@ export default function LearnPage() {
               },
             }}
             zoom={sharedZoom}
+            centerLongitude={mapView.centerLongitude}
+            southUp={mapView.southUp}
+            extraControls={
+              <MapViewControl view={mapView} onChange={setMapView} />
+            }
           />
         ) : (
           <HistoricalMap
@@ -362,6 +380,11 @@ export default function LearnPage() {
               setHovered(next);
             }}
             zoom={sharedZoom}
+            centerLongitude={mapView.centerLongitude}
+            southUp={mapView.southUp}
+            extraControls={
+              <MapViewControl view={mapView} onChange={setMapView} />
+            }
             onDataLoaded={setAvailableHistoricalNames}
           />
         )}
