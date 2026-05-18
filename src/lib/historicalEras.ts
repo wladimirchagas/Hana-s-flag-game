@@ -56,6 +56,13 @@ export type PolityInfo = {
    *  ~70 M at peak". Only added for entities with well-documented
    *  estimates; many small city-states are deliberately left undefined. */
   population?: number;
+  /** Explicit "show no flag" marker. Suppresses both the curated-flag
+   *  path and the modern-country-name auto-fallback even in eras where
+   *  the auto-fallback would otherwise apply (1914+). Use for ancient
+   *  entities whose NAME happens to match a modern country (Egypt,
+   *  Armenia) and for occupied / between-states polities (Korea 1945,
+   *  Saar Protectorate, Yemen pre-1990) where no national flag applies. */
+  noFlag?: true;
 };
 
 /* --------------------------------------------------------------------------
@@ -214,7 +221,11 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // spelling vs American, dataset typos, and punctuation. The historical-
   // basemaps GeoJSONs are mostly American-English ("civilization") and use
   // "Sumer" / "Minoan" / "Indus valley civilization" (lowercase v).
-  ["Egypt", { continent: "North Africa", note: "Ancient kingdom along the Nile.", modernName: "Egypt", population: 3_000_000 }],
+  // No modernName / noFlag on the registry entry for ancient Egypt —
+  // ancient Egypt is what's left of the 2000 BC entry; modern-era Egypts
+  // (1914 Khedivate, 1945 Kingdom, 1960 UAR, today) are handled via
+  // ERA_OVERRIDES below.
+  ["Egypt", { continent: "North Africa", note: "Ancient kingdom along the Nile.", population: 3_000_000, noFlag: true }],
   ["Sumer", { continent: "Mesopotamia", note: "City-states of the southern Tigris-Euphrates.", population: 1_000_000 }],
   ["Indus valley civilization", { continent: "South Asia", note: "Bronze-Age cities of Harappa and Mohenjo-Daro.", population: 5_000_000 }],
   ["Minoan", { continent: "Mediterranean", note: "Bronze-Age civilisation of Crete.", population: 250_000 }],
@@ -242,7 +253,10 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Nazca", { continent: "South America", note: "Andean civilisation famous for the desert geoglyphs.", population: 50_000 }],
   ["Himyarite Kingdom", { continent: "Arabia", note: "Incense kingdom of southern Arabia.", population: 1_000_000 }],
   ["Nabatean Kingdom", { continent: "Arabia", note: "Trading kingdom whose capital was Petra.", population: 200_000 }],
-  ["Armenia", { continent: "Western Asia", note: "Ancient Armenian kingdom, often caught between Rome and Parthia.", modernName: "Armenia", population: 2_000_000 }],
+  // Modern Armenian tricolour adopted 1990 — wrong for ancient Armenia.
+  // Modern Armenia in 1914 was inside the Russian Empire / Ottoman, no
+  // independent flag — see ERA_OVERRIDES below for 1914.
+  ["Armenia", { continent: "Western Asia", note: "Ancient Armenian kingdom, often caught between Rome and Parthia.", population: 2_000_000, noFlag: true }],
   ["Koguryo", { continent: "East Asia", note: "Korean Three-Kingdoms-era state in the north.", population: 3_000_000 }],
   ["Paekche", { continent: "East Asia", note: "Korean Three-Kingdoms-era state in the south-west.", population: 1_500_000 }],
   ["Silla", { continent: "East Asia", note: "Korean Three-Kingdoms-era state, eventual unifier of Korea.", population: 1_000_000 }],
@@ -531,7 +545,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Vice-Royalty of New Spain", { flag: "historical-flags/spain-1785.png", continent: "Mesoamerica", note: "Viceroyalty of New Spain (modern Mexico + Central America), Spanish colony." }],
   ["Vice-Royalty of New Granada", { flag: "historical-flags/spain-1785.png", continent: "South America", note: "Viceroyalty of New Granada (modern Colombia, Venezuela, Ecuador, Panama), Spanish colony." }],
   ["Vice-Royalty of Peru", { flag: "historical-flags/spain-1785.png", continent: "South America", note: "Viceroyalty of Peru, Spanish colony in the Andes." }],
-  ["Rattanakosin Kingdom", { continent: "Southeast Asia", note: "Modern Kingdom of Thailand, founded 1782 — capital Bangkok.", population: 5_000_000 }],
+  // Rattanakosin Siam (1782–1932) used the red-with-white-elephant flag
+  // until the modern Thai tricolour was adopted in 1917.
+  ["Rattanakosin Kingdom", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Rattanakosin Kingdom — modern Thailand's predecessor (founded 1782, capital Bangkok). Red field with white elephant was used until the tricolour came in 1917.", population: 5_000_000 }],
   // Qajar Persia used the Lion-and-Sun banner, not the modern Iran flag —
   // intentionally no modernName so the panel shows "no flag image".
   ["Persia", { continent: "Western Asia", note: "Qajar-era Persia (forerunner of modern Iran). Used the Lion-and-Sun banner — different from the modern flag.", population: 10_000_000 }],
@@ -583,53 +599,57 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
  * Keys must match dataset NAME values verbatim, including any typos.
  */
 export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
-  // 1914 colonial labels
-  ["Anglo-Egyption Sudan", "Sudan"],
-  ["British East Africa", "Kenya"],
-  ["British Somaliland", "Somalia"],
-  ["German E. Africa (Tanganyika)", "Tanzania"],
-  ["German South-West Africa", "Namibia"],
-  ["Italian Somaliland", "Somalia"],
-  ["Spanish Morocco", "Morocco"],
-  ["Spanish Sahara", "Western Sahara"],
-  ["Rio De Oro", "Western Sahara"],
-  ["Madagascar (France)", "Madagascar"],
-  ["French Equatorial Africa", "Central African Republic"],
-  ["French West Africa", "Senegal"],
-  ["Gold Coast", "Ghana"],
-  ["Togoland", "Togo"],
-  ["Kamerun", "Cameroon"],
-  ["Rhodesia", "Zimbabwe"],
-  ["Northern Rhodesia", "Zambia"],
-  ["Nyasaland", "Malawi"],
-  ["Arabia (Nejd)", "Saudi Arabia"],
+  // 1914 colonial labels — route to the COLONIAL POWER (whose flag
+  // actually flew over the territory at the time), not to the
+  // post-independence successor state whose flag is anachronistic.
+  ["Anglo-Egyption Sudan", "United Kingdom"],
+  ["British East Africa", "United Kingdom"],
+  ["British Somaliland", "United Kingdom"],
+  ["German E. Africa (Tanganyika)", "German Empire"],
+  ["German South-West Africa", "German Empire"],
+  ["Italian Somaliland", "Italy"],
+  ["Spanish Morocco", "Spain"],
+  ["Spanish Sahara", "Spain"],
+  ["Rio De Oro", "Spain"],
+  ["Madagascar (France)", "France"],
+  ["French Equatorial Africa", "France"],
+  ["French West Africa", "France"],
+  ["Gold Coast", "United Kingdom"],
+  ["Togoland", "German Empire"], // 1914 still German (lost 1916, then UK/France mandates)
+  ["Kamerun", "German Empire"], // 1914 still German
+  ["Rhodesia", "United Kingdom"],
+  ["Northern Rhodesia", "United Kingdom"],
+  ["Nyasaland", "United Kingdom"],
+  ["Arabia (Nejd)", "Saudi Arabia"], // emerging Saudi state — modern flag close enough by ~1932
   ["Nejd", "Saudi Arabia"],
-  ["Sakhalin (RU)", "Russia"],
-  // 1945 occupation / colonial labels
-  ["Angola (Portugal)", "Angola"],
-  ["Guinea-Bissau (Portugal)", "Guinea-Bissau"],
-  ["Mozambique (Portugal)", "Mozambique"],
-  ["Cyraneica (UK Lybia)", "Libya"],
-  ["Tripolitana (UK Lybia)", "Libya"],
-  ["Fezzan (Frech Lybia)", "Libya"],
-  ["Germany (France)", "Germany"],
+  ["Sakhalin (RU)", "Russian Empire"], // 1914 Russian Empire flag, not modern Russia
+  // 1945 occupation / colonial labels — route to the actual occupying /
+  // colonial power as of 1945, not the eventual successor.
+  ["Angola (Portugal)", "Portugal"],
+  ["Guinea-Bissau (Portugal)", "Portugal"],
+  ["Mozambique (Portugal)", "Portugal"],
+  ["Cyraneica (UK Lybia)", "United Kingdom"], // UK military administration
+  ["Tripolitana (UK Lybia)", "United Kingdom"],
+  ["Fezzan (Frech Lybia)", "France"], // French military administration
+  ["Germany (France)", "Germany"], // French zone — modern German flag is approximately the post-1949 West German one
   ["Germany (Soviet)", "Germany"],
   ["Germany (UK)", "Germany"],
   ["Germany (USA)", "Germany"],
-  ["East Germany", "Germany"],
+  ["East Germany", "Germany"], // GDR flag had the coat of arms; modern flag is approximation
   ["West Germany", "Germany"],
-  ["Jamaica (UK)", "Jamaica"],
-  ["Japan (USA)", "Japan"],
-  ["Korea (USA)", "South Korea"],
-  ["Korea (USSR)", "North Korea"],
+  ["Jamaica (UK)", "United Kingdom"], // British colony in 1945
+  ["Japan (USA)", "Japan"], // occupied Japan still flew the Hinomaru
   ["Martinique (France)", "France"],
-  ["Dutch Guinea", "Suriname"],
-  ["Cochin China", "Vietnam"],
-  ["Tonkin", "Vietnam"],
-  ["Annam", "Vietnam"],
-  ["Manchuria", "China"],
-  ["Saar Protectorate", "Germany"],
-  ["Southern Cameroon", "Cameroon"],
+  // Cochin China / Tonkin / Annam in 1945 represent the French-Indochinese
+  // portions just before / during the Viet Minh independence declaration.
+  // For accuracy in 1945, route to France (the de jure power was still
+  // French Indochina until Sep 1945).
+  ["Cochin China", "France"],
+  ["Tonkin", "France"],
+  ["Annam", "France"],
+  ["Southern Cameroon", "United Kingdom"], // British Cameroons mandate
+  // Korea (USA)/(USSR), Saar Protectorate, Manchuria 1945 — handled via
+  // ERA_OVERRIDES below (need flag-less treatment or curated ROC flag).
   // 1815 — only map names that are genuinely the same polity as a modern
   // country (just renamed/translated). Anything that was a colony, vassal,
   // or independent pre-modern state is OMITTED on purpose so the panel
@@ -674,9 +694,14 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   ["Mongolia", "Mongolia"],
   ["Japan", "Japan"], // 1700 Tokugawa used various banners but the Hinomaru is older than most
   // Misc — only modern names or near-equivalents that genuinely match today.
-  ["Hainan", "China"], // never independent in this dataset
-  ["Hejaz", "Saudi Arabia"], // absorbed into modern Saudi Arabia
-  ["Yemen", "Yemen"],
+  // Hainan in pre-modern eras was Qing/Ming Chinese — no flag in modern
+  // sense. For 1914+ era it appears subsumed into China. Drop alias.
+  // Hejaz was Ottoman vassal until 1916; the modern Saudi flag is post-1932
+  // and visually distinct from the Hashemite/Sharifian/Ottoman banners.
+  // Drop alias — leave flag-less for the relevant eras.
+  // Yemen — modern flag adopted 1990 (post-unification); pre-1990 was the
+  // YAR + PDRY split. For 1300/1500/1815/1945 the modern flag is wrong.
+  // Drop alias — leave flag-less; 1960 YAR/PDRY handled separately if needed.
 ]);
 
 /**
@@ -693,9 +718,14 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
 const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = new Map([
   ["ad1500", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Kingdom of France under the Valois — the white Bourbon-style royal banner with fleur-de-lis was used in this period.", population: 16_000_000 }],
+    // Spain flew the Cross of Burgundy (a red ragged saltire on white)
+    // from the Habsburg union (1506) until 1701 — Bourbon ascension
+    // changed the design. The familiar red-yellow-red flag is from 1785.
+    ["Spain", { flag: "historical-flags/spain-burgundy.png", continent: "Iberia", note: "Habsburg Spain under the Cross of Burgundy — the red-yellow-red flag we know today wasn't adopted until 1785.", population: 7_500_000 }],
   ])],
   ["ad1700", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon France under Louis XIV. White royal banner with fleur-de-lis — the tricolour wasn't adopted until 1790.", population: 21_500_000 }],
+    ["Spain", { flag: "historical-flags/spain-burgundy.png", continent: "Iberia", note: "Spain at the start of the War of Spanish Succession — still flying the Cross of Burgundy as it had since 1506. The Bourbon white royal flag would come in 1701, the modern red-yellow-red in 1785.", population: 8_000_000 }],
   ])],
   ["ad1815", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon Restoration (1814–1830) — France flew the white royal banner with fleur-de-lis. The tricolour wasn't readopted until 1830.", population: 30_500_000 }],
@@ -728,6 +758,145 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // British. Before 1906 Brunei flew a plain yellow flag — same colour
     // as today's, without the modern emblems and stripes.
     ["Brunei Sultanate", { flag: "historical-flags/brunei-1815.png", continent: "Southeast Asia", note: "In 1815 Brunei still controlled most of northern Borneo; James Brooke and the British North Borneo Co. wouldn't carve out Sarawak and Sabah until 1841 and 1881.", population: 600_000 }],
+    // Burma in the dataset 1815 = Konbaung dynasty. The white-elephant-on-
+    // red flag we've sourced for Siam doesn't apply here; Konbaung used a
+    // golden peacock symbol but had no standardised national flag in 1815.
+    // Burma 1948+ is handled by ad1945/ad1960 entries below.
+    ["Burma", { continent: "Southeast Asia", note: "Konbaung dynasty of Burma, 1752–1885. No standardised national flag — royal banners used the green peacock.", population: 3_500_000, noFlag: true }],
+    // (The dataset uses "Rattanakosin Kingdom" rather than "Siam" for the
+    // 1815 era; the registry's global Rattanakosin entry already routes
+    // to siam.png, so no override needed here.)
+    // Ceylon in 1815 had just been ceded by the Dutch to the British
+    // (Kandyan Convention 1815). Flew the Union Jack thereafter.
+    ["Ceylon", { continent: "South Asia", note: "Ceded by the Dutch to the British in 1796; in 1815 the British annexed the Kandyan Kingdom and Ceylon became a Crown Colony. Flew the Union Jack.", modernName: "United Kingdom", population: 1_500_000 }],
+    // Egypt in 1815 was Ottoman with autonomy under Muhammad Ali — no
+    // distinct national flag yet (the Khedivate's red+crescent flag with
+    // 3 stars came later under Ismail). Show no flag honestly.
+    ["Egypt", { continent: "North Africa", note: "Ottoman Egypt under Muhammad Ali — autonomous viceroyalty using the Ottoman red+crescent banner. The Khedive's distinctive 3-star flag wouldn't appear until later in the 19th c.", population: 4_500_000, noFlag: true }],
+    // Yemen in 1815 was a patchwork of Imamate / Zaidi rulers / Ottoman
+    // garrison; no national flag.
+    ["Yemen", { continent: "Arabia", note: "Zaydi Imamate of Yemen plus Ottoman garrisons on the coast — no national flag.", population: 2_000_000, noFlag: true }],
+    // Annam, Cochin China in 1815 = Nguyen dynasty Vietnam (Empire of
+    // Vietnam under Gia Long). Royal yellow banner with red character.
+    // Without a curated PNG, show no flag rather than mislabel.
+    ["Annam", { continent: "Southeast Asia", note: "Annam in 1815 was part of Nguyen-dynasty Vietnam (Đại Nam) under Emperor Gia Long. Royal banners used yellow with red imperial characters.", population: 6_500_000, noFlag: true }],
+    ["Cochin China", { continent: "Southeast Asia", note: "Cochinchina under the Nguyen dynasty — southern Vietnam. Same Nguyen royal yellow banner as Annam.", population: 3_000_000, noFlag: true }],
+    // Morocco — the Sultanate of Morocco in 1815 used a plain red flag
+    // (no green star until 1915 under French/Spanish protectorate). The
+    // modern flag is also red with a green pentagram, similar shape but
+    // visually distinct. Without curated PNG, no flag.
+    ["Morocco", { continent: "North Africa", note: "Sultanate of Morocco — Alawi dynasty. Flew a plain red flag in 1815; the green pentagram was added by Mawlay Yusuf in 1915.", population: 3_500_000, noFlag: true }],
+    // Ethiopia in 1815 was the Era of the Princes (Zemene Mesafint) —
+    // weak central monarchy, no national flag.
+    ["Ethiopia", { continent: "East Africa", note: "Era of the Princes (Zemene Mesafint): emperors in Gondar held only nominal authority, regional lords dominated. No national flag yet.", population: 4_000_000, noFlag: true }],
+    // Portugal in 1815 = UKPBA (already covered above in this same map).
+  ])],
+
+  // === 1914 (eve of WWI) overrides ==========================================
+  // Modern country names in 1914 that were under colonial rule, plus a
+  // few cases that need their period-correct national flag (Egypt under
+  // the Khedivate, Ethiopia under Menelik II, China still as the early
+  // Republic of China after the 1912 revolution, etc.).
+  ["ad1914", new Map<string, PolityInfo>([
+    // Egypt 1914 — nominally Ottoman until Dec 1914, then British
+    // protectorate as the Sultanate of Egypt. Both periods flew the
+    // red+white-crescent+3-stars Khedive flag.
+    ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt (autonomous Ottoman territory until Dec 1914, then British protectorate as the Sultanate of Egypt). Red with white crescent and 3 stars.", population: 11_300_000 }],
+    // Abyssinia 1914 — Menelik II's flag (green-yellow-red with the Lion
+    // of Judah) adopted 1897, used until 1936 + 1941–1974. The modern
+    // Ethiopian flag with the central blue star is from 1996.
+    ["Abyssinia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Empire of Ethiopia under Menelik II's successors. Green-yellow-red with the Lion of Judah — the star-emblem flag came in 1996.", population: 11_000_000 }],
+    // Modern country names that were colonies in 1914 — route to the
+    // colonial power's contemporaneous flag.
+    ["Algeria", { continent: "North Africa", note: "French Algeria — integrated as French départements since 1848. The French tricolour flew.", modernName: "France", population: 5_500_000 }],
+    ["Tunisia", { continent: "North Africa", note: "French protectorate of Tunisia (1881–1956). The French tricolour was used alongside the bey's flag.", modernName: "France", population: 2_000_000 }],
+    ["Morocco", { continent: "North Africa", note: "Just established as a French (and partly Spanish) protectorate in 1912. The Alawi red flag added the green pentagram in 1915.", modernName: "France", population: 5_000_000 }],
+    ["Libya", { continent: "North Africa", note: "Newly Italian (annexed from the Ottomans in 1911–12). Flew the Italian tricolour with the Savoy arms.", modernName: "Italy", population: 1_000_000 }],
+    // Armenia in 1914 — split between the Russian Empire and the Ottoman
+    // Empire. No independent Armenian state. The modern Armenian flag
+    // (1990) is wildly anachronistic.
+    ["Armenia", { continent: "Western Asia", note: "Armenian-populated lands of Transcaucasia were divided between the Russian and Ottoman empires; no independent Armenian state existed in 1914.", population: 1_700_000, noFlag: true }],
+    // Ceylon in 1914 — Crown Colony, Union Jack.
+    ["Ceylon", { continent: "South Asia", note: "British Ceylon — Crown Colony from 1815 to 1948. Flew the Union Jack.", modernName: "United Kingdom", population: 4_200_000 }],
+    // Yemen in 1914 — Ottoman, no national flag.
+    ["Yemen", { continent: "Arabia", note: "Ottoman Vilayet of Yemen — under Ottoman rule (with the Zaydi Imam in interior revolt). No Yemeni national flag yet.", population: 3_500_000, noFlag: true }],
+    // Ethiopia (1914 dataset spells it Abyssinia — handled above; if it
+    // appears as 'Ethiopia' separately, mirror the Menelik flag).
+    ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Empire of Ethiopia — same Menelik II flag (1897–1936).", population: 11_000_000 }],
+  ])],
+
+  // === 1945 (end of WWII) overrides =========================================
+  ["ad1945", new Map<string, PolityInfo>([
+    // China in 1945 — Republic of China (KMT) flag, blue-sky/white-sun
+    // on red. The PRC (modern flag) wouldn't be founded until Oct 1949.
+    ["China", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Republic of China under the Nationalists (Chiang Kai-shek). Blue-sky / white-sun on red — adopted 1928. The PRC and its 5-star red flag came in October 1949.", population: 540_000_000 }],
+    // Manchuria 1945 — Manchukuo (Japanese puppet state) until Aug 1945,
+    // then handed to ROC. Use ROC flag for end-of-1945 representation.
+    ["Manchuria", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Manchukuo (Japanese puppet state) until August 1945, then occupied by Soviet then Nationalist (ROC) forces.", population: 50_000_000 }],
+    // Burma 1945 — still British military administration after the
+    // Japanese withdrawal; independent in 1948 with the burma-1948 flag
+    // (red field with blue canton, large white star + 5 smaller stars).
+    // For 1945 we show the imminent independence flag as the next stable
+    // banner with a note explaining the year-of-overlap.
+    ["Burma", { flag: "historical-flags/burma-1948.png", continent: "Southeast Asia", note: "Just liberated from Japanese occupation; under British military administration until 1948 independence as the Union of Burma. The 1948–1974 flag (red with blue canton + 6 stars) appeared at independence.", population: 17_500_000 }],
+    // Egypt 1945 — Kingdom of Egypt (1922–1953). Green field with white
+    // crescent + 3 stars (a colour-swap of the Khedive flag). We don't
+    // have a curated PNG; show no flag rather than the wrong modern one.
+    ["Egypt", { continent: "North Africa", note: "Kingdom of Egypt under King Farouk. Green field with white crescent and 3 stars — the modern red-white-black flag came after the 1952 revolution.", population: 19_000_000, noFlag: true }],
+    // Yemen 1945 — Mutawakkilite Kingdom (1918–1962). Flag was red with
+    // white sword + 5 stars (similar to Saudi but distinct). No curated
+    // PNG — show no flag.
+    ["Yemen", { continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — red with white sword and 5 stars; not the modern Yemeni flag.", population: 4_700_000, noFlag: true }],
+    // Korea 1945 — Allied occupation zones. No national flag yet (the
+    // Taegukgi for the South was formalised in 1948; the DPRK flag also
+    // in 1948).
+    ["Korea (USA)", { continent: "East Asia", note: "United States Army Military Government in Korea (1945–1948). No Korean national flag flew officially — the Taegukgi was formalised by the new ROK in 1948.", population: 16_000_000, noFlag: true }],
+    ["Korea (USSR)", { continent: "East Asia", note: "Soviet Civil Administration in northern Korea (1945–1948). No national flag — the DPRK flag was adopted in 1948.", population: 9_000_000, noFlag: true }],
+    // Saar Protectorate — French zone, then French protectorate
+    // 1947–1956 with its own blue-and-red cross flag. No curated PNG.
+    ["Saar Protectorate", { continent: "Western Europe", note: "Initial French occupation zone then French protectorate 1947–1956. Used its own flag with a Scandinavian-style cross — joined West Germany in 1957.", population: 850_000, noFlag: true }],
+    // Zaire is the dataset's anachronistic 1945 label for the Belgian
+    // Congo (the name 'Zaire' only existed from 1971 under Mobutu).
+    ["Zaire", { continent: "Central Africa", note: "Belgian Congo — the name \"Zaire\" wouldn't be coined until 1971 under Mobutu. In 1945 the Belgian tricolour flew over the colony.", modernName: "Belgium", population: 12_000_000 }],
+    // Dutch Guinea — actually Dutch label for Suriname / NL West Indies;
+    // dataset uses this for Suriname under Dutch rule.
+    ["Dutch Guinea", { continent: "South America", note: "Dutch Guiana (Suriname) — Dutch colony until 1975 independence. The Dutch tricolour flew over it.", modernName: "Netherlands", population: 200_000 }],
+    // Cyrenaica, Tripolitania, Fezzan 1945 — UK and French military
+    // administrations over former Italian Libya. Already aliased.
+    // Modern country names that were still under colonial rule in 1945:
+    ["Algeria", { continent: "North Africa", note: "Still legally French — three Algerian départements of metropolitan France. The independence war wouldn't start until 1954.", modernName: "France", population: 8_500_000 }],
+    ["Tunisia", { continent: "North Africa", note: "French protectorate (1881–1956). The French tricolour flew alongside the bey's flag.", modernName: "France", population: 3_200_000 }],
+    ["Morocco", { continent: "North Africa", note: "French and Spanish protectorate (1912–1956). The French tricolour was the dominant flag.", modernName: "France", population: 10_000_000 }],
+  ])],
+
+  // === 1960 (Cold War snapshot) overrides ==================================
+  ["ad1960", new Map<string, PolityInfo>([
+    // Burma in 1960 was the Union of Burma — still on the 1948 flag.
+    ["Burma", { flag: "historical-flags/burma-1948.png", continent: "Southeast Asia", note: "Union of Burma — the 1948 flag (red with blue canton + 1 large + 5 small stars) flew from 1948 until 1974.", population: 22_000_000 }],
+    // China in 1960 = People's Republic of China. The modern PRC flag
+    // adopted in 1949 is the correct one — auto-fallback gives this.
+    // No override needed.
+    // Egypt in 1960 = United Arab Republic (Egypt + Syria, 1958–1971).
+    // Red-white-black with 2 green stars. Visually similar to today's
+    // flag but with different central emblem. Without curated PNG, no flag.
+    ["Egypt", { continent: "North Africa", note: "United Arab Republic — Nasser's union of Egypt + Syria (1958–1971). Red-white-black with 2 green stars, not today's eagle.", population: 27_000_000, noFlag: true }],
+    // Algeria in 1960 still French (independence 1962).
+    ["Algeria", { continent: "North Africa", note: "Still legally part of France — bitter independence war (1954–1962) was raging. The French tricolour was the official flag.", modernName: "France", population: 11_000_000 }],
+    // Yemen in 1960 — Mutawakkilite Kingdom (North) + Aden Protectorate
+    // (South). Modern unified Yemen flag (1990) is anachronistic.
+    ["Yemen", { continent: "Arabia", note: "Mutawakkilite Kingdom in the north (until 1962 revolution); the south was under British rule as the Aden Protectorate. No unified Yemeni flag.", population: 5_300_000, noFlag: true }],
+    // Zaire is again the dataset's anachronistic label — in 1960 was
+    // the Belgian Congo (independent in June 1960 as the Republic of
+    // the Congo, then Congo-Léopoldville). Used a blue+yellow flag
+    // until 1971 when it became Zaire. Modern DRC flag is from 2006.
+    ["Zaire", { continent: "Central Africa", note: "Belgian Congo until June 1960 independence, then Republic of the Congo / Congo-Léopoldville. The name \"Zaire\" wasn't adopted until 1971.", modernName: "Belgium", population: 16_000_000 }],
+    // Ceylon — Dominion of Ceylon (1948–1972). Distinct lion-on-yellow
+    // flag with green/orange panels (added 1951). Use the Dominion flag.
+    ["Ceylon", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "Dominion of Ceylon (1948–1972). The lion + bo-leaves flag was adopted in 1951; minor changes in 1972 became the modern Sri Lankan flag.", population: 10_000_000 }],
+    // Libya 1960 — Kingdom of Libya (1951–1969) under King Idris. Black
+    // field with red+green stripes + white crescent and star. The modern
+    // flag (1977-2011 green, 2011 reverted to Idris). The modern Libyan
+    // flag IS visually equivalent to the Idris flag. OK to use modern.
   ])],
 ]);
 

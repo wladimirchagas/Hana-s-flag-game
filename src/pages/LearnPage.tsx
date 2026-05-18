@@ -209,7 +209,11 @@ export default function LearnPage() {
     //      eras most countries had wildly different flags than today.
     let flag: string | undefined = info.flag;
     let continent: string | undefined = info.continent;
-    if (!flag) {
+    // Explicit "show no flag" override — used for ancient entities whose
+    // NAME happens to match a modern country (Egypt 2000 BC, Armenia 100
+    // AD) and for occupied / between-states polities where no national
+    // flag applies. Skips the modern-flag fallback entirely.
+    if (!flag && !info.noFlag) {
       const modernName =
         polityModernName(name, eraId) ?? // covers era-overrides + registry.modernName + aliases
         (allowFallback && countryByName.has(name.toLowerCase()) ? name : null);
