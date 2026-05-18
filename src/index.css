@@ -283,6 +283,14 @@ a {
   z-index: 30;
 }
 
+/* On the Learn page the theme toggle is rendered in-flow inside
+   .learn-topbar, so the global fixed one would visually duplicate it
+   AND overlap the map. Hide the global one whenever a .learn-page is
+   in the document. `:has()` is widely supported in modern browsers. */
+body:has(.learn-page) .global-theme-toggle {
+  display: none;
+}
+
 /* Deprecated — left in case anything still references it but the toggle
    no longer renders here. Safe to delete once nothing in the JSX uses it. */
 .sticker__topbar {

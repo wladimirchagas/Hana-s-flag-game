@@ -15,6 +15,7 @@ import {
 import { FlagGrid } from "../components/FlagGrid";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import { EntitySummary } from "../components/EntitySummary";
+import { ThemeToggle } from "../components/ThemeToggle";
 import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
@@ -387,13 +388,19 @@ export default function LearnPage() {
 
   return (
     <div className="learn-page">
-    <div className="learn-fs" ref={learnRootRef}>
-      <div className="game-nav">
-        <Link className="game-nav__home" to="/">
+      {/* In-flow topbar — Home link on the left, theme toggle on the
+          right. Replaces the previously floating .game-nav + global
+          theme-toggle so nothing sits on top of the map. The global
+          ThemeToggle is hidden on this page via CSS (see App.css). */}
+      <header className="learn-topbar">
+        <Link className="learn-topbar__home" to="/">
           ← Home
         </Link>
-      </div>
-
+        <div className="learn-topbar__toggle">
+          <ThemeToggle />
+        </div>
+      </header>
+    <div className="learn-fs" ref={learnRootRef}>
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra ? (
           <WorldProgressMap
