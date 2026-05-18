@@ -23,7 +23,6 @@ export type FlagGridProps = {
   entries: readonly FlagListEntry[];
   selectedId: string | null;
   onSelect: (id: string) => void;
-  onZoomFlag: (entry: FlagListEntry) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
@@ -35,7 +34,6 @@ export function FlagGrid({
   entries,
   selectedId,
   onSelect,
-  onZoomFlag,
   resolveFlag,
 }: FlagGridProps) {
   const [sortMode, setSortMode] = useState<SortMode>("alpha");
@@ -157,20 +155,6 @@ export function FlagGrid({
                         <span className="flag-grid__thumb-empty" aria-hidden="true">
                           —
                         </span>
-                      )}
-                      {url && (
-                        <button
-                          type="button"
-                          className="flag-grid__zoom"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            onZoomFlag(item);
-                          }}
-                          aria-label={`Enlarge ${item.name} flag`}
-                          title="View full screen"
-                        >
-                          ⤢
-                        </button>
                       )}
                     </span>
                     <span className="flag-grid__name">{item.name}</span>

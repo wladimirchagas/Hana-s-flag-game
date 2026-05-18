@@ -362,23 +362,6 @@ export default function LearnPage() {
     learnRootRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function handleZoomFlag(entry: FlagListEntry) {
-    // Pick the entity (without auto-scrolling) so the flag-zoom modal
-    // reads the right flagUrl, then open the modal.
-    if (isModernEra) {
-      const c = codeToCountry.get(entry.id);
-      if (!c) return;
-      setSelected({ kind: "modern", country: c });
-      setHovered(null);
-    } else {
-      const sel = selectionFromPolityName(entry.id);
-      if (!sel) return;
-      setSelected(sel);
-      setHovered(null);
-    }
-    setZoomed(true);
-  }
-
   // Resolver passed to FlagGrid so it can render both absolute http(s)
   // flagcdn URLs and relative /historical-flags/*.png paths.
   function resolveFlag(raw: string): string {
@@ -583,7 +566,6 @@ export default function LearnPage() {
         entries={flagEntries}
         selectedId={selectedId}
         onSelect={handleGridSelect}
-        onZoomFlag={handleZoomFlag}
         resolveFlag={resolveFlag}
       />
     </div>
