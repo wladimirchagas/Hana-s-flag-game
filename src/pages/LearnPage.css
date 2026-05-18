@@ -752,31 +752,9 @@
   font-weight: 700;
 }
 
-.flag-grid__zoom {
-  position: absolute;
-  bottom: 0.25rem;
-  right: 0.25rem;
-  font-family: inherit;
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1;
-  padding: 0.2rem 0.4rem;
-  background: var(--paper);
-  border: 2px solid var(--ink);
-  border-radius: 999px;
-  color: var(--ink);
-  cursor: pointer;
-  box-shadow: 0 1px 0 var(--ink);
-  opacity: 0.85;
-  transition: opacity 120ms ease, transform 120ms ease;
-}
-
-.flag-grid__zoom:hover,
-.flag-grid__zoom:focus-visible {
-  opacity: 1;
-  transform: translateY(-1px);
-  outline: none;
-}
+/* (The bottom-right "⤢" zoom badge that used to sit on each flag tile
+   has been removed. The flag-zoom modal is still reachable from the
+   detail panel's flag image at the top of the page.) */
 
 .flag-grid__name {
   font-size: 0.85rem;
