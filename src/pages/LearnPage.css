@@ -4,6 +4,15 @@
    separate grid cell.
 ==================================================================== */
 
+/* Page-level wrapper around the full-viewport map section + the flag
+   grid section. The map section keeps height:100vh so the user lands
+   on a full-bleed map; the grid scrolls in below it. */
+.learn-page {
+  background: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
 .learn-fs {
   position: relative;
   display: grid;
@@ -448,4 +457,239 @@
   }
   .era-slider__summary { font-size: 0.78rem; }
   .era-slider__footnote { font-size: 0.66rem; }
+}
+
+/* === Flag grid section ==================================================
+   Rendered below .learn-fs as a sibling. Lists every flag in the current
+   era; click a flag → page scrolls back up to the map with that entity
+   selected; small ⤢ on each tile opens the full-screen viewer.
+========================================================================== */
+
+.flag-grid {
+  padding: 2.25rem clamp(1rem, 3vw, 2.5rem) 3rem;
+  border-top: 4px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+.flag-grid__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.25rem;
+}
+
+.flag-grid__title {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  color: var(--coral-deep);
+  text-shadow: 0 2px 0 var(--ink);
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.flag-grid__count {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--cream);
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+}
+
+.flag-grid__sort {
+  display: inline-flex;
+  gap: 0.3rem;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  padding: 0.3rem 0.35rem;
+  box-shadow: 0 2px 0 var(--ink);
+}
+
+.flag-grid__sort-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  padding: 0.32rem 0.7rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.flag-grid__sort-btn:hover,
+.flag-grid__sort-btn:focus-visible {
+  background: rgba(78, 205, 196, 0.18);
+  outline: none;
+}
+
+.flag-grid__sort-btn--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+.flag-grid__group {
+  margin-bottom: 1.6rem;
+}
+
+.flag-grid__group-heading {
+  margin: 0 0 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.flag-grid__group-count {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 999px;
+  padding: 0.05rem 0.45rem;
+  letter-spacing: 0;
+}
+
+.flag-grid__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.85rem;
+}
+
+.flag-grid__item {
+  display: flex;
+}
+
+.flag-grid__card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0.55rem 0.55rem 0.7rem;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  text-align: center;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.flag-grid__card:hover,
+.flag-grid__card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 var(--ink);
+  outline: none;
+}
+
+.flag-grid__card:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.flag-grid__card--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+  box-shadow: 0 3px 0 var(--ink), 0 0 0 3px var(--coral) inset;
+}
+
+.flag-grid__thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flag-grid__thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 0 0.5px var(--ink));
+  pointer-events: none;
+}
+
+.flag-grid__thumb-empty {
+  color: var(--ink-soft);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.flag-grid__zoom {
+  position: absolute;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.2rem 0.4rem;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 1px 0 var(--ink);
+  opacity: 0.85;
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.flag-grid__zoom:hover,
+.flag-grid__zoom:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.flag-grid__name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.flag-grid__card--active .flag-grid__name {
+  color: var(--ink-fixed);
+}
+
+/* Phones — slightly tighter tiles and a more compact toolbar. */
+@media (max-width: 540px) {
+  .flag-grid {
+    padding: 1.5rem 0.9rem 2rem;
+  }
+  .flag-grid__list {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 0.6rem;
+  }
+  .flag-grid__name { font-size: 0.78rem; }
+  .flag-grid__sort-btn { font-size: 0.72rem; padding: 0.28rem 0.55rem; }
 }
