@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetchCountries, summarizeCountry, type Country } from "../api/countries";
+import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { CountryDropdown } from "../components/CountryDropdown";
@@ -14,6 +14,7 @@ import {
 } from "../lib/mapView";
 import { FlagGrid } from "../components/FlagGrid";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
+import { EntitySummary } from "../components/EntitySummary";
 import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
@@ -69,41 +70,9 @@ function selectionFlag(s: Selection, baseUrl: string): string | null {
   if (/^https?:\/\//.test(s.flag) || s.flag.startsWith("data:")) return s.flag;
   return `${baseUrl}${s.flag}`;
 }
-/**
- * Format a peak/representative historical population estimate. The figures
- * are scholarly and often debated within ±30%, so we use approximate
- * suffixes ("~70 M") and a "(peak)" qualifier to make the inaccuracy
- * explicit rather than implied by precise digits.
- */
-function formatHistoricalPopulation(n: number): string {
-  if (n >= 1_000_000) {
-    const m = n / 1_000_000;
-    const rounded = m >= 10 ? Math.round(m) : Math.round(m * 10) / 10;
-    return `pop. ~${rounded} M (peak)`;
-  }
-  if (n >= 1_000) return `pop. ~${Math.round(n / 1_000)} k (peak)`;
-  return `pop. ~${n} (peak)`;
-}
-
-/**
- * Compose the short editorial summary shown under the entity's name in the
- * detail panel. Modern countries get a generated capital/region/population
- * line; historical polities reuse their curated registry note plus a
- * peak-population estimate where one exists. Falls back to a sensible
- * generic if no curated text is available.
- */
-function selectionSummary(s: Selection): string | undefined {
-  if (s.kind === "modern") {
-    const composed = summarizeCountry(s.country);
-    return composed || `Country in ${s.country.continent}.`;
-  }
-  const parts: string[] = [];
-  if (s.note) parts.push(s.note);
-  if (typeof s.population === "number") parts.push(formatHistoricalPopulation(s.population));
-  if (parts.length > 0) return parts.join(" · ");
-  if (s.continent) return `Historical polity of ${s.continent}.`;
-  return undefined;
-}
+// (The pre-EntitySummary single-line `selectionSummary` helper used to live
+// here; the panel now renders a structured <EntitySummary /> component
+// for both modern + historical entities.)
 
 export default function LearnPage() {
   const [eraId, setEraId] = useState<Era["id"]>(DEFAULT_ERA_ID);
@@ -370,6 +339,13 @@ export default function LearnPage() {
   // back here so the user lands on the map with their selection
   // highlighted.
   const learnRootRef = useRef<HTMLDivElement | null>(null);
+  // Ref to the FlagGrid section so that selections coming from the
+  // *map* or *search dropdown* auto-scroll the page down to it (so the
+  // user can immediately see the matching tile + neighbours).
+  const flagGridRef = useRef<HTMLDivElement | null>(null);
+  function scrollToFlagGrid() {
+    flagGridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   function handleGridSelect(id: string) {
     if (isModernEra) {
@@ -436,6 +412,7 @@ export default function LearnPage() {
                 if (c) {
                   setSelected({ kind: "modern", country: c });
                   setHovered(null);
+                  scrollToFlagGrid();
                 }
               },
               onHover: (code) => {
@@ -465,6 +442,7 @@ export default function LearnPage() {
               const next = selectionFromPolityName(name);
               setSelected(next);
               setHovered(null);
+              if (next) scrollToFlagGrid();
             }}
             onHover={(name) => {
               const next = selectionFromPolityName(name);
@@ -490,8 +468,15 @@ export default function LearnPage() {
                   {selectionContinent(display)}
                 </p>
                 <h2 className="learn-fs__name">{selectionName(display)}</h2>
-                {selectionSummary(display) && (
-                  <p className="learn-fs__note">{selectionSummary(display)}</p>
+                {display.kind === "modern" ? (
+                  <EntitySummary kind="modern" country={display.country} />
+                ) : (
+                  <EntitySummary
+                    kind="historical"
+                    region={display.continent}
+                    note={display.note}
+                    population={display.population}
+                  />
                 )}
                 {flagUrl ? (
                   <button
@@ -538,7 +523,10 @@ export default function LearnPage() {
                 countries={countries}
                 value={display?.kind === "modern" ? display.country : null}
                 onChange={(c) => {
-                  if (c) setSelected({ kind: "modern", country: c });
+                  if (c) {
+                    setSelected({ kind: "modern", country: c });
+                    scrollToFlagGrid();
+                  }
                   setHovered(null);
                 }}
                 disabled={countries.length === 0}
@@ -582,13 +570,15 @@ export default function LearnPage() {
         </div>
       )}
     </div>
-      <FlagGrid
-        entries={flagEntries}
-        selectedId={selectedId}
-        onSelect={handleGridSelect}
-        onZoomFlag={handleZoomFlag}
-        resolveFlag={resolveFlag}
-      />
+      <div ref={flagGridRef}>
+        <FlagGrid
+          entries={flagEntries}
+          selectedId={selectedId}
+          onSelect={handleGridSelect}
+          onZoomFlag={handleZoomFlag}
+          resolveFlag={resolveFlag}
+        />
+      </div>
     </div>
   );
 }
