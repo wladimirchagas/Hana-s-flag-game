@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   continentOrder,
   type FlagListEntry,
@@ -72,18 +72,10 @@ export function FlagGrid({
 
   // When the parent's selection lands on an entry that's offscreen in
   // the grid, scroll the matching tile into view.
-  useEffect(() => {
-    if (!selectedId) return;
-    const el = cardRefs.current.get(selectedId);
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    const inView =
-      rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
-    if (!inView) {
-      el.scrollIntoView({ block: "nearest", behavior: "smooth" });
-    }
-  }, [selectedId]);
+  // Intentionally NO scroll-into-view here. Selecting an entity from
+  // the map or the search dropdown updates the highlighted tile, but
+  // we do NOT move the user's viewport. They only get scrolled when
+  // they explicitly click a flag tile (handled by the parent).
 
   if (entries.length === 0) {
     return null;
