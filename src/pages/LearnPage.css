@@ -595,39 +595,52 @@
   border: 2px solid var(--ink);
 }
 
-.flag-grid__sort {
+/* Group-by dropdown — replaces the old segmented A-Z/continent/region
+   toolbar. Sits to the right of the section title. */
+.flag-grid__group-select {
   display: inline-flex;
-  gap: 0.3rem;
-  background: var(--cream);
-  border: 3px solid var(--ink);
-  border-radius: 14px;
-  padding: 0.3rem 0.35rem;
-  box-shadow: 0 2px 0 var(--ink);
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
-.flag-grid__sort-btn {
-  font-family: inherit;
-  font-weight: 700;
+.flag-grid__group-select-label {
+  color: var(--ink-soft);
   font-size: 0.78rem;
-  letter-spacing: 0.02em;
-  padding: 0.32rem 0.7rem;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background: transparent;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.flag-grid__select {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.4rem 2.2rem 0.4rem 0.85rem;
+  background: var(--paper);
   color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 0 2px 0 var(--ink);
   cursor: pointer;
-  transition: background 120ms ease, color 120ms ease;
+  appearance: none;
+  -webkit-appearance: none;
+  /* Custom chevron */
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+                    linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.05rem) calc(50% - 2px),
+    calc(100% - 0.7rem) calc(50% - 2px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
 }
 
-.flag-grid__sort-btn:hover,
-.flag-grid__sort-btn:focus-visible {
-  background: rgba(78, 205, 196, 0.18);
+.flag-grid__select:hover,
+.flag-grid__select:focus-visible {
   outline: none;
-}
-
-.flag-grid__sort-btn--active {
-  background: var(--sky);
-  color: var(--ink-fixed);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
 }
 
 .flag-grid__group {
@@ -652,15 +665,19 @@
   gap: 0.55rem;
 }
 
+/* "(54)" style count next to each group heading. */
 .flag-grid__group-count {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--ink-soft);
-  background: var(--cream);
-  border: 2px solid var(--ink-faint);
-  border-radius: 999px;
-  padding: 0.05rem 0.45rem;
   letter-spacing: 0;
+  text-transform: none;
+}
+
+.flag-grid__group-name {
+  /* Wrap the heading text so the count can be aligned alongside as a
+     separate span without inheriting heading-level letter-spacing. */
+  display: inline-block;
 }
 
 .flag-grid__list {
@@ -777,5 +794,8 @@
     gap: 0.6rem;
   }
   .flag-grid__name { font-size: 0.78rem; }
-  .flag-grid__sort-btn { font-size: 0.72rem; padding: 0.28rem 0.55rem; }
+  .flag-grid__select {
+    font-size: 0.82rem;
+    padding: 0.32rem 1.85rem 0.32rem 0.7rem;
+  }
 }

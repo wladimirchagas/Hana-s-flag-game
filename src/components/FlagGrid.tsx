@@ -3,21 +3,27 @@ import {
   continentOrder,
   type FlagListEntry,
 } from "../lib/flagList";
+import {
+  FLAG_SHAPE_LABELS,
+  FLAG_SHAPE_ORDER,
+  type FlagShape,
+} from "../lib/flagShapes";
 
 /**
  * Flag-grid section rendered under the Learn map.
  *
  * Shows every selectable entity in the current era as a flag tile.
  * The user can:
- *   - Sort A–Z, or group by continent, or group by sub-region.
+ *   - Group the list in several ways via the "Group by" dropdown
+ *     (default: no grouping). Options: A–Z, by continent, by
+ *     sub-region, or by visual motif ("By shape" — flags can appear
+ *     in multiple shape groups since most carry several motifs).
  *   - Click any tile to scroll the page up to the map with that
  *     entity selected (handled by the parent via onSelect).
- *   - Hit the small "⤢" badge on a tile to open the flag full-screen
- *     without scrolling (handled by the parent via onZoomFlag).
  *
  * When the parent's selection changes (from the map click or from the
- * search dropdown), the matching tile is highlighted and — if it's
- * offscreen within the grid — scrolled into view.
+ * search dropdown), the matching tile is highlighted via the
+ * `--active` class. No automatic scrolling — per product spec.
  */
 export type FlagGridProps = {
   entries: readonly FlagListEntry[];
@@ -28,7 +34,15 @@ export type FlagGridProps = {
   resolveFlag: (raw: string) => string;
 };
 
-type SortMode = "alpha" | "continent" | "subcontinent";
+type GroupMode = "none" | "alpha" | "continent" | "subcontinent" | "shape";
+
+const GROUP_MODE_LABELS: Record<GroupMode, string> = {
+  none: "No grouping",
+  alpha: "A–Z",
+  continent: "By continent",
+  subcontinent: "By region",
+  shape: "By shape",
+};
 
 export function FlagGrid({
   entries,
@@ -36,44 +50,79 @@ export function FlagGrid({
   onSelect,
   resolveFlag,
 }: FlagGridProps) {
-  const [sortMode, setSortMode] = useState<SortMode>("alpha");
+  const [groupMode, setGroupMode] = useState<GroupMode>("none");
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
 
-  // Sort + group based on the active mode. We always alphabetise WITHIN
-  // a group; group headings are themselves ordered by continentOrder for
-  // the top-level grouping or alphabetically for sub-region grouping.
+  // Build the (heading → entries) groups for the current mode. We always
+  // alphabetise within a group; the headings themselves are ordered by
+  // a per-mode comparator below.
   const groups = useMemo(() => {
     const sorted = [...entries].sort((a, b) =>
       a.name.localeCompare(b.name, "en"),
     );
-    if (sortMode === "alpha") {
+
+    if (groupMode === "none") {
       return [{ heading: null, items: sorted }];
     }
+
     const buckets = new Map<string, FlagListEntry[]>();
-    for (const e of sorted) {
-      const key = sortMode === "continent" ? e.continent : e.subcontinent;
+    const push = (key: string, e: FlagListEntry) => {
       const arr = buckets.get(key) ?? [];
       arr.push(e);
       buckets.set(key, arr);
+    };
+
+    if (groupMode === "alpha") {
+      for (const e of sorted) {
+        const first = e.name[0] ?? "";
+        const letter = first.toUpperCase();
+        // Numbers / non-letters bucket together under "#" so we never
+        // get hundreds of tiny stubs.
+        const key = /[A-Z]/.test(letter) ? letter : "#";
+        push(key, e);
+      }
+    } else if (groupMode === "continent") {
+      for (const e of sorted) push(e.continent, e);
+    } else if (groupMode === "subcontinent") {
+      for (const e of sorted) push(e.subcontinent, e);
+    } else if (groupMode === "shape") {
+      for (const e of sorted) {
+        const tags = e.shapes ?? [];
+        if (tags.length === 0) {
+          push("Other", e);
+          continue;
+        }
+        for (const t of tags) {
+          const label = FLAG_SHAPE_LABELS[t as FlagShape] ?? t;
+          push(label, e);
+        }
+      }
     }
-    const entriesList = [...buckets.entries()];
-    entriesList.sort(([a], [b]) => {
-      if (sortMode === "continent") {
+
+    // Sort the bucket list.
+    const list = [...buckets.entries()];
+    list.sort(([a], [b]) => {
+      if (groupMode === "continent") {
         const oa = continentOrder(a);
         const ob = continentOrder(b);
         if (oa !== ob) return oa - ob;
       }
+      if (groupMode === "shape") {
+        // Use the canonical shape order for headings; "Other" last.
+        const oa = shapeHeadingOrder(a);
+        const ob = shapeHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "alpha") {
+        // Keep "#" at the end.
+        if (a === "#" && b !== "#") return 1;
+        if (b === "#" && a !== "#") return -1;
+      }
       return a.localeCompare(b, "en");
     });
-    return entriesList.map(([heading, items]) => ({ heading, items }));
-  }, [entries, sortMode]);
 
-  // When the parent's selection lands on an entry that's offscreen in
-  // the grid, scroll the matching tile into view.
-  // Intentionally NO scroll-into-view here. Selecting an entity from
-  // the map or the search dropdown updates the highlighted tile, but
-  // we do NOT move the user's viewport. They only get scrolled when
-  // they explicitly click a flag tile (handled by the parent).
+    return list.map(([heading, items]) => ({ heading, items }));
+  }, [entries, groupMode]);
 
   if (entries.length === 0) {
     return null;
@@ -86,56 +135,47 @@ export function FlagGrid({
           Flags of this era
           <span className="flag-grid__count">{entries.length}</span>
         </h2>
-        <div className="flag-grid__sort" role="tablist" aria-label="Sort flags">
-          <button
-            type="button"
-            role="tab"
-            aria-selected={sortMode === "alpha"}
-            className={`flag-grid__sort-btn${sortMode === "alpha" ? " flag-grid__sort-btn--active" : ""}`}
-            onClick={() => setSortMode("alpha")}
+        <label className="flag-grid__group-select">
+          <span className="flag-grid__group-select-label">Group by:</span>
+          <select
+            value={groupMode}
+            onChange={(e) => setGroupMode(e.target.value as GroupMode)}
+            className="flag-grid__select"
           >
-            A–Z
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={sortMode === "continent"}
-            className={`flag-grid__sort-btn${sortMode === "continent" ? " flag-grid__sort-btn--active" : ""}`}
-            onClick={() => setSortMode("continent")}
-          >
-            By continent
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={sortMode === "subcontinent"}
-            className={`flag-grid__sort-btn${sortMode === "subcontinent" ? " flag-grid__sort-btn--active" : ""}`}
-            onClick={() => setSortMode("subcontinent")}
-          >
-            By region
-          </button>
-        </div>
+            {(Object.keys(GROUP_MODE_LABELS) as GroupMode[]).map((m) => (
+              <option key={m} value={m}>
+                {GROUP_MODE_LABELS[m]}
+              </option>
+            ))}
+          </select>
+        </label>
       </header>
 
       {groups.map((g) => (
         <div key={g.heading ?? "_all"} className="flag-grid__group">
           {g.heading && (
             <h3 className="flag-grid__group-heading">
-              {g.heading}
-              <span className="flag-grid__group-count">{g.items.length}</span>
+              <span className="flag-grid__group-name">{g.heading}</span>
+              <span className="flag-grid__group-count">
+                ({g.items.length})
+              </span>
             </h3>
           )}
           <ul className="flag-grid__list">
             {g.items.map((item) => {
               const active = item.id === selectedId;
               const url = item.flag ? resolveFlag(item.flag) : null;
+              // In shape mode, the same id can appear in multiple
+              // groups. Make the React key + ref key unique per
+              // (group, id) pair to avoid duplicate-ref clobbering.
+              const refKey = `${g.heading ?? "_all"}:${item.id}`;
               return (
-                <li key={item.id} className="flag-grid__item">
+                <li key={refKey} className="flag-grid__item">
                   <button
                     type="button"
                     ref={(el) => {
-                      if (el) cardRefs.current.set(item.id, el);
-                      else cardRefs.current.delete(item.id);
+                      if (el) cardRefs.current.set(refKey, el);
+                      else cardRefs.current.delete(refKey);
                     }}
                     className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
                     onClick={() => onSelect(item.id)}
@@ -167,4 +207,12 @@ export function FlagGrid({
       ))}
     </section>
   );
+}
+
+function shapeHeadingOrder(heading: string): number {
+  if (heading === "Other") return 999;
+  for (let i = 0; i < FLAG_SHAPE_ORDER.length; i++) {
+    if (FLAG_SHAPE_LABELS[FLAG_SHAPE_ORDER[i]] === heading) return i;
+  }
+  return 100;
 }
