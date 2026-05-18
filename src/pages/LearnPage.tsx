@@ -103,6 +103,12 @@ export default function LearnPage() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
+  // Set of NAME values present in the current era's historical GeoJSON.
+  // Populated by HistoricalMap's onDataLoaded callback. Used by the
+  // cross-era selection-validation effect below to keep a selection alive
+  // when the same entity also appears in the new era (and to clear it
+  // when it doesn't).
+  const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
   const [zoomed, setZoomed] = useState(false);
 
   const baseUrl = import.meta.env.BASE_URL;
@@ -134,10 +140,14 @@ export default function LearnPage() {
     };
   }, []);
 
-  // Reset selection/hover when the era changes — entities don't carry over.
+  // On era change: reset hover (always stale) and the per-era available-name
+  // set (so the validation effect below waits until the new era's data has
+  // actually loaded before deciding whether to keep or drop the selection).
+  // We DO NOT clear the selection here — that's done conditionally further
+  // down once we know whether the same entity exists in the new era.
   useEffect(() => {
-    setSelected(null);
     setHovered(null);
+    setAvailableHistoricalNames(new Set());
   }, [eraId]);
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
@@ -231,6 +241,46 @@ export default function LearnPage() {
     };
   }
 
+  // Cross-era selection persistence. Runs after the new era's data
+  // arrives. The selection survives an era switch when the same entity
+  // (by name) still exists in the new era; otherwise it clears.
+  //
+  // Modern ↔ historical conversions are also handled: switching from
+  // Today to 1914 with "Brazil" selected converts the modern Country
+  // into a historical Selection; switching back converts it back to
+  // the modern Country if there's a name match.
+  useEffect(() => {
+    if (isModernEra) {
+      // Today era: any historical-form selection should resolve to a
+      // modern country if the name matches one of the 195 UN members.
+      setSelected((curr) => {
+        if (!curr || curr.kind === "modern") return curr ?? null;
+        const match = countries.find(
+          (c) => c.name.toLowerCase() === curr.name.toLowerCase(),
+        );
+        return match ? { kind: "modern", country: match } : null;
+      });
+      return;
+    }
+    // Historical era — wait until the new GeoJSON has actually loaded
+    // (availableHistoricalNames repopulates) before we decide.
+    if (availableHistoricalNames.size === 0) return;
+    setSelected((curr) => {
+      if (!curr) return null;
+      const targetName =
+        curr.kind === "modern" ? curr.country.name : curr.name;
+      if (availableHistoricalNames.has(targetName)) {
+        // Re-derive — era overrides (flag / note / population) may differ
+        // between eras, so we always rebuild from the current era's view.
+        return selectionFromPolityName(targetName);
+      }
+      return null;
+    });
+    // selectionFromPolityName is recreated each render and reads era-aware
+    // state from closure; intentional that we don't add it to deps.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [eraId, isModernEra, availableHistoricalNames, countries]);
+
   if (loadError && isModernEra) {
     return (
       <div className="app app--center">
@@ -302,6 +352,7 @@ export default function LearnPage() {
               setHovered(next);
             }}
             zoom={sharedZoom}
+            onDataLoaded={setAvailableHistoricalNames}
           />
         )}
       </div>
