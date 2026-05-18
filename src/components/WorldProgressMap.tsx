@@ -309,7 +309,8 @@ export function WorldProgressMap({
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           role="img"
           aria-label="World map showing correctly and incorrectly guessed countries"
-          {...zoom.svgHandlers}
+          // Zoom + pan gestures disabled; +/-/⟲ buttons are the sole
+          // input. See HistoricalMap for the rationale.
         >
           <g transform={zoom.transform}>
           {/* South-up flip happens inside the zoom group so flipping +

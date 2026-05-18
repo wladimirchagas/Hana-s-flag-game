@@ -206,7 +206,10 @@ export function HistoricalMap({
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
             role="img"
             aria-label="Historical world map for the selected era"
-            {...zoom.svgHandlers}
+            // Zoom + pan gestures (wheel / pinch / drag / double-click)
+            // are disabled here — the only way to change zoom on the
+            // Learn page is the +/-/⟲ buttons. Lets the user scroll the
+            // page over the map area like any other content.
           >
             <g transform={zoom.transform}>
             {/* South-up wrapper: SVG transforms compose left-to-right, so

@@ -741,9 +741,9 @@
   display: block;
   width: 100%;
   height: auto;
-  /* Touch zoom/pan are handled in JS via pointer events — disable the
-     browser's default touch panning so our handlers can drag/pinch. */
-  touch-action: none;
+  /* Zoom + pan gestures are disabled on the Learn map — the +/-/⟲
+     buttons are the sole input. Default touch-action lets users scroll
+     the page normally even when their finger is over the map. */
 }
 
 /* Wrapper around the map + zoom controls. The controls live in their
