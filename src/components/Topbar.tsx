@@ -1,0 +1,33 @@
+import { Link, useLocation } from "react-router-dom";
+import { ThemeToggle } from "./ThemeToggle";
+
+/**
+ * Site-wide top bar — replaces the old floating .global-theme-toggle +
+ * .game-nav + .learn-topbar widgets with a single shared component
+ * rendered at the App level. Sticks to the top of the viewport on
+ * every page so the theme toggle and Home link are always reachable.
+ *
+ * The Home link is hidden on the landing page (`/`) to avoid the
+ * "Home → Home" loop.
+ */
+export function Topbar() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  return (
+    <header className="site-topbar">
+      <div className="site-topbar__left">
+        {isHome ? (
+          <span className="site-topbar__brand">Hana&apos;s Flag Game</span>
+        ) : (
+          <Link className="site-topbar__home" to="/">
+            ← Home
+          </Link>
+        )}
+      </div>
+      <div className="site-topbar__right">
+        <ThemeToggle />
+      </div>
+    </header>
+  );
+}

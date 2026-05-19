@@ -1,80 +1,193 @@
 /* === Learn your flags — full-screen sandbox =========================
-   Two-column grid: world map on the left, info+search panel in its own
-   right column. The panel can't overlap countries because it lives in a
-   separate grid cell.
+   Top: shared site-topbar (sticky, App-level) + LearnTopToolbar (era
+   selector + country search, one row). Below that a two-column grid:
+   world map on the left, info panel on the right.
 ==================================================================== */
 
-/* Page-level wrapper. Hosts the in-flow topbar, the map+panel grid,
-   and the flag-grid section. The map area fills the remaining
-   viewport height once the topbar is accounted for, but on small
-   devices we drop the hard height clamp and let everything flow. */
 .learn-page {
   background: var(--cream);
   color: var(--ink);
   min-height: 100vh;
-  /* On this page the global theme toggle is hidden in favour of the
-     in-flow .learn-topbar — see App.css for the rule. */
 }
 
-/* In-flow topbar — replaces the previously floating .game-nav +
-   .global-theme-toggle on this page. Flex row: Home left, theme
-   toggle right. */
-.learn-topbar {
+/* === Top toolbar: era selector + search ===========================
+   One row, sticks just under the site-topbar. The era selector lives
+   on the left, the search on the right. */
+.learn-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
   padding: 0.65rem clamp(0.75rem, 2vw, 1.25rem);
   background: var(--cream);
   border-bottom: 2px solid var(--ink-faint);
+  position: sticky;
+  /* Sticks below the site-topbar (~2.5rem tall). */
+  top: 2.6rem;
+  z-index: 35;
 }
 
-.learn-topbar__home {
+.learn-toolbar__eras {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.learn-toolbar__historical {
+  position: relative;
+  display: inline-block;
+}
+
+.learn-toolbar__era-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.4rem 0.9rem;
+  gap: 0.4rem;
+  padding: 0.45rem 0.95rem;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.95rem;
-  background: var(--lemon, var(--paper));
+  font-size: 0.9rem;
+  background: var(--paper);
   color: var(--ink);
   border: 3px solid var(--ink);
   border-radius: 999px;
   box-shadow: 0 2px 0 var(--ink);
-  text-decoration: none;
-  transition: transform 120ms ease, box-shadow 120ms ease;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
 }
 
-.learn-topbar__home:hover,
-.learn-topbar__home:focus-visible {
+.learn-toolbar__era-pill:hover,
+.learn-toolbar__era-pill:focus-visible {
   transform: translateY(-1px);
   box-shadow: 0 3px 0 var(--ink);
   outline: none;
 }
 
-.learn-topbar__home:active {
-  transform: translateY(1px);
-  box-shadow: 0 1px 0 var(--ink);
+.learn-toolbar__era-pill--active {
+  background: var(--mustard, var(--lemon, #ffe58a));
+  color: var(--ink-fixed, var(--ink));
+}
+
+.learn-toolbar__era-tag {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 999px;
+}
+
+.learn-toolbar__caret {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.learn-toolbar__era-menu {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  z-index: 60;
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem;
+  min-width: 240px;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 6px 0 var(--ink), 0 12px 28px rgba(26, 34, 56, 0.22);
+}
+
+.learn-toolbar__era-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+
+.learn-toolbar__era-option:hover,
+.learn-toolbar__era-option:focus-visible {
+  background: var(--cream);
+  border-color: var(--ink-faint);
+  outline: none;
+}
+
+.learn-toolbar__era-option--active {
+  background: var(--mustard, var(--lemon, #ffe58a));
+  color: var(--ink-fixed, var(--ink));
+  border-color: var(--ink);
+}
+
+.learn-toolbar__era-option-period {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.learn-toolbar__era-option-caption {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.learn-toolbar__search {
+  flex: 0 1 360px;
+  min-width: 220px;
+  max-width: 420px;
+}
+
+.learn-toolbar__search .dropdown {
+  margin: 0;
+}
+
+.learn-toolbar__search .dropdown-label {
+  font-size: 0.7rem;
+  margin-bottom: 0.15rem;
+}
+
+.learn-toolbar__search-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .learn-toolbar {
+    /* On phones let things wrap naturally — era pills first, search
+       below — and drop sticky to recover scroll real estate. */
+    position: static;
+    top: auto;
+  }
+  .learn-toolbar__search {
+    flex: 1 1 100%;
+    max-width: none;
+  }
 }
 
 .learn-fs {
   position: relative;
   display: grid;
-  /* Panel column shrinks first; map column expands to fill. Tighter
-     cap (300px max) on big screens leaves more room for the map. */
+  /* Panel column shrinks first; map column expands to fill. */
   grid-template-columns: 1fr clamp(260px, 22vw, 320px);
-  grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-rows: minmax(0, 1fr);
   grid-template-areas:
-    "map    panel"
-    "slider panel";
+    "map panel";
   column-gap: 1rem;
   row-gap: 0.5rem;
   width: 100%;
-  /* Map column fills the viewport height left over after the topbar +
-     a touch of breathing room. min-height keeps it usable on very short
-     screens; on tall screens it stretches. */
-  min-height: calc(100vh - 4rem);
+  /* Map column fills viewport height after the two sticky bars
+     (~2.5rem + ~3.5rem ≈ 6rem). */
+  min-height: calc(100vh - 7rem);
   background:
     radial-gradient(1200px 600px at 50% -10%, var(--cream-glow-1) 0%, transparent 60%),
     radial-gradient(900px 500px at 90% 110%, var(--cream-glow-2) 0%, transparent 60%),
@@ -94,12 +207,6 @@
   /* No top padding needed any more — Home + theme toggle live in the
      in-flow .learn-topbar above, not floating on top of the map. */
   padding: 0.75rem 0.5rem 0;
-}
-
-/* Era slider sits at the bottom of the map column. */
-.learn-fs__slider-wrap {
-  grid-area: slider;
-  padding: 0 0.75rem 0.75rem;
 }
 
 /* Strip the map's normal card styling so it fills its column. */
@@ -290,10 +397,9 @@
 @media (max-width: 900px) {
   .learn-fs {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "map"
-      "slider"
       "panel";
     column-gap: 0;
     row-gap: 0.75rem;

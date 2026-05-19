@@ -25,6 +25,10 @@ export type FlagListEntry = {
   /** Optional list of family tags ("pan-african", "pan-arab", "nordic-cross",
    *  …) used by the flag grid's "By family" grouping. */
   families?: readonly string[];
+  /** Optional list of dominant-colour tags ("red", "blue", "green", …) used
+   *  by the flag grid's "By colour" grouping. Multi-tag — most flags carry
+   *  several. */
+  colors?: readonly string[];
 };
 
 /**
