@@ -51,8 +51,8 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
   alpha: "A–Z",
   continent: "By continent",
-  subcontinent: "By region",
-  shape: "By shape",
+  subcontinent: "By sub-continent",
+  shape: "By characteristics",
   family: "By family",
 };
 
