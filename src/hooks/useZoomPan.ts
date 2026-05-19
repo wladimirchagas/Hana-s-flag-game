@@ -16,7 +16,9 @@ import { useCallback, useRef, useState } from "react";
  * for an explicit "Reset zoom" button.
  *
  * Zoom is clamped to a sensible range (currently 1× to 12×) so users
- * can't lose the map by overzooming or shrinking it into the void.
+ * can't lose the map by overzooming or shrinking it into the void. Pan
+ * is clamped so the viewBox always stays covered by the map — at k=1
+ * pan is effectively disabled (the clamp collapses to zero).
  */
 export type ZoomPanState = {
   /** Current transform string, ready for `<g transform={t}>`. */
@@ -49,14 +51,32 @@ const MIN_K = 1;
 const MAX_K = 12;
 const WHEEL_SENSITIVITY = 0.0015;
 
+type View = { k: number; tx: number; ty: number };
+
 /**
  * @param width   the SVG's viewBox width  (e.g., 960)
  * @param height  the SVG's viewBox height (e.g., 500)
  */
 export function useZoomPan(width: number, height: number): ZoomPanState {
-  const [k, setK] = useState(1);
-  const [tx, setTx] = useState(0);
-  const [ty, setTy] = useState(0);
+  // {k, tx, ty} kept in a single state object so every transition is
+  // atomic. The previous version split them across 3 useState calls
+  // and updated tx/ty as side effects inside setK's updater — which
+  // double-fires under React StrictMode (dev) and ended up calling
+  // setTx twice per click, causing the pan to overshoot and stick at
+  // the clamp bounds.
+  const [view, setView] = useState<View>({ k: 1, tx: 0, ty: 0 });
+  const { k, tx, ty } = view;
+
+  // Clamp the pan offsets so the user can't drag the map completely
+  // off-screen. With scale `k`, the SVG content occupies the viewBox
+  // rect (tx, ty, tx+W*k, ty+H*k); to keep the viewBox covered we
+  // require tx ∈ [W*(1-k), 0] and ty ∈ [H*(1-k), 0]. At k=1 both
+  // intervals collapse to [0, 0] — pan is disabled at initial scale.
+  const clampTx = (val: number, kk: number) =>
+    Math.max(width * (1 - kk), Math.min(0, val));
+  const clampTy = (val: number, kk: number) =>
+    Math.max(height * (1 - kk), Math.min(0, val));
+
   const drag = useRef<{
     active: boolean;
     /** True once we've called setPointerCapture for this gesture. We
@@ -72,11 +92,6 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
     moved: boolean;
   }>({ active: false, captured: false, startX: 0, startY: 0, origTx: 0, origTy: 0, moved: false });
 
-  /**
-   * Convert a mouse event's client coordinates into the SVG's viewBox space.
-   * Without this, zoom-around-cursor would feel off because the SVG is
-   * scaled by CSS (`width: 100%`) and the viewBox coords don't match px.
-   */
   const clientToSvg = (
     svg: SVGSVGElement,
     clientX: number,
@@ -94,35 +109,24 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
       e.preventDefault();
       const svg = e.currentTarget;
       const { x, y } = clientToSvg(svg, e.clientX, e.clientY);
-      // Negative deltaY = scroll up = zoom in.
-      const newK = Math.min(
-        MAX_K,
-        Math.max(MIN_K, k * Math.exp(-e.deltaY * WHEEL_SENSITIVITY)),
-      );
-      if (newK === k) return;
-      // Anchor the zoom on the cursor: after the change, the SVG point
-      // under the cursor must stay under the cursor.
-      const newTx = x - ((x - tx) * newK) / k;
-      const newTy = y - ((y - ty) * newK) / k;
-      setK(newK);
-      setTx(newTx);
-      setTy(newTy);
+      setView((prev) => {
+        const newK = Math.min(
+          MAX_K,
+          Math.max(MIN_K, prev.k * Math.exp(-e.deltaY * WHEEL_SENSITIVITY)),
+        );
+        if (newK === prev.k) return prev;
+        const newTx = x - ((x - prev.tx) * newK) / prev.k;
+        const newTy = y - ((y - prev.ty) * newK) / prev.k;
+        return { k: newK, tx: clampTx(newTx, newK), ty: clampTy(newTy, newK) };
+      });
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [k, tx, ty, width, height],
+    [width, height],
   );
 
   const onPointerDown = useCallback(
     (e: React.PointerEvent<SVGSVGElement>) => {
-      // Ignore right-click / middle-click drags.
       if (e.button !== 0) return;
-      // CRITICAL: do NOT setPointerCapture here. Per the Pointer Events
-      // spec, capturing the pointer retargets the synthesized `click`
-      // event to the capturing element (the SVG) instead of the actual
-      // target under the cursor (the country path) — which silently
-      // breaks every country's onClick handler. Capture is deferred to
-      // onPointerMove and only happens once the pointer crosses the
-      // drag threshold, so a quick tap-to-select stays a click.
       drag.current = {
         active: true,
         captured: false,
@@ -142,13 +146,8 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
       if (!d.active) return;
       const svg = e.currentTarget;
       const rect = svg.getBoundingClientRect();
-      // Convert pixel delta into viewBox delta.
       const dxViewBox = ((e.clientX - d.startX) / rect.width) * width;
       const dyViewBox = ((e.clientY - d.startY) / rect.height) * height;
-      // Mark as moved once we cross a small threshold; this is the moment
-      // we promote the gesture from "click" to "drag" — and the moment
-      // we set pointer capture (so the drag continues smoothly even if
-      // the pointer leaves the SVG mid-drag).
       if (!d.moved && Math.hypot(e.clientX - d.startX, e.clientY - d.startY) > 4) {
         d.moved = true;
         if (!d.captured) {
@@ -161,63 +160,60 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
         }
       }
       if (d.moved) {
-        setTx(d.origTx + dxViewBox);
-        setTy(d.origTy + dyViewBox);
+        setView((prev) => ({
+          k: prev.k,
+          tx: clampTx(d.origTx + dxViewBox, prev.k),
+          ty: clampTy(d.origTy + dyViewBox, prev.k),
+        }));
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [width, height],
   );
 
   const finishDrag = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     const d = drag.current;
     if (!d.active) return;
+    const svg = e.currentTarget;
     if (d.captured) {
       try {
-        e.currentTarget.releasePointerCapture(e.pointerId);
+        svg.releasePointerCapture(e.pointerId);
       } catch {
         // ignore — pointer may already be released
       }
     }
     drag.current = { ...d, active: false };
-    // If we dragged, swallow the click that the browser will fire next on
-    // any path under the pointer — otherwise the user pans and inadvertently
-    // selects a country.
+    // If we dragged, swallow the click that the browser will fire next
+    // on a country path INSIDE this svg — otherwise the user pans and
+    // inadvertently selects a country. Listening on the SVG (not
+    // window) means buttons / unrelated DOM clicks still work.
     if (d.moved) {
       const swallow = (ev: MouseEvent) => {
         ev.stopPropagation();
         ev.preventDefault();
-        window.removeEventListener("click", swallow, true);
+        svg.removeEventListener("click", swallow, true);
       };
-      window.addEventListener("click", swallow, true);
+      svg.addEventListener("click", swallow, true);
     }
   }, []);
 
   const reset = useCallback(() => {
-    setK(1);
-    setTx(0);
-    setTy(0);
+    setView({ k: 1, tx: 0, ty: 0 });
   }, []);
 
-  /**
-   * Zoom by a fixed factor centred on the SVG's centre point. Used by the
-   * `+` / `−` buttons; mirrors the wheel-zoom anchoring math but with the
-   * anchor pinned to the geometric centre.
-   *
-   * Uses functional setState so rapid clicks compound correctly (otherwise
-   * each click captures the same stale `k` and all jump to the same scale).
-   */
   const zoomBy = useCallback(
     (factor: number) => {
       const cx = width / 2;
       const cy = height / 2;
-      setK((prevK) => {
-        const newK = Math.min(MAX_K, Math.max(MIN_K, prevK * factor));
-        if (newK === prevK) return prevK;
-        setTx((prevTx) => cx - ((cx - prevTx) * newK) / prevK);
-        setTy((prevTy) => cy - ((cy - prevTy) * newK) / prevK);
-        return newK;
+      setView((prev) => {
+        const newK = Math.min(MAX_K, Math.max(MIN_K, prev.k * factor));
+        if (newK === prev.k) return prev;
+        const newTx = cx - ((cx - prev.tx) * newK) / prev.k;
+        const newTy = cy - ((cy - prev.ty) * newK) / prev.k;
+        return { k: newK, tx: clampTx(newTx, newK), ty: clampTy(newTy, newK) };
       });
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [width, height],
   );
 

@@ -206,10 +206,17 @@ export function HistoricalMap({
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
             role="img"
             aria-label="Historical world map for the selected era"
-            // Zoom + pan gestures (wheel / pinch / drag / double-click)
-            // are disabled here — the only way to change zoom on the
-            // Learn page is the +/-/⟲ buttons. Lets the user scroll the
-            // page over the map area like any other content.
+            // Drag-to-pan is enabled (effective only once zoomed in).
+            // Wheel-zoom and double-click-reset stay off so the user
+            // can still page-scroll over the map.
+            onPointerDown={zoom.svgHandlers.onPointerDown}
+            onPointerMove={zoom.svgHandlers.onPointerMove}
+            onPointerUp={zoom.svgHandlers.onPointerUp}
+            onPointerCancel={zoom.svgHandlers.onPointerCancel}
+            style={{
+              cursor: zoom.isZoomed ? "grab" : "default",
+              touchAction: zoom.isZoomed ? "none" : "auto",
+            }}
           >
             <g transform={zoom.transform}>
             {/* South-up wrapper: SVG transforms compose left-to-right, so
