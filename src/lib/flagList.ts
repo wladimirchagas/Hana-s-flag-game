@@ -22,6 +22,9 @@ export type FlagListEntry = {
    *  used by the flag grid's "By shape" grouping. A flag with several
    *  notable motifs gets several tags and shows up under each category. */
   shapes?: readonly string[];
+  /** Optional list of family tags ("pan-african", "pan-arab", "nordic-cross",
+   *  …) used by the flag grid's "By family" grouping. */
+  families?: readonly string[];
 };
 
 /**

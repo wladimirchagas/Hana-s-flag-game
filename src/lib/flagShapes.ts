@@ -55,6 +55,7 @@ export type FlagShape =
   | "sun"
   | "stripes-h"
   | "stripes-v"
+  | "stripes-d"
   | "triangle"
   | "animal";
 
@@ -66,6 +67,7 @@ export const FLAG_SHAPE_LABELS: Readonly<Record<FlagShape, string>> = {
   triangle:     "Triangle",
   "stripes-h":  "Horizontal stripes",
   "stripes-v":  "Vertical stripes",
+  "stripes-d":  "Diagonal stripes",
   animal:       "Animal",
 };
 
@@ -78,6 +80,7 @@ export const FLAG_SHAPE_ORDER: readonly FlagShape[] = [
   "triangle",
   "stripes-h",
   "stripes-v",
+  "stripes-d",
   "animal",
 ];
 
@@ -114,9 +117,9 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   BA: ["stars", "triangle"],
   BW: ["stripes-h"],
   BR: ["stars"],
-  // Brunei — diagonal black/white stripes on yellow + COA. The bands
-  // are diagonal so no horizontal/vertical stripes tag.
-  BN: [],
+  // Brunei — black + white diagonal stripes on a yellow field, plus
+  // the central red COA. Two diagonal bands → "Diagonal stripes".
+  BN: ["stripes-d"],
   BG: ["stripes-h"],
   BF: ["stars", "stripes-h"],
   // Burundi — white saltire (X-cross) dividing red top/bottom and
@@ -134,10 +137,12 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   CN: ["stars"],
   CO: ["stripes-h"],
   KM: ["stars", "crescent", "stripes-h", "triangle"],
-  // Republic of the Congo — diagonal stripes only.
-  CG: [],
-  // DR Congo — diagonal yellow stripe + yellow star; no h/v stripes.
-  CD: ["stars"],
+  // Republic of the Congo — green / yellow / red diagonal bands
+  // running from the upper hoist to the lower fly.
+  CG: ["stripes-d"],
+  // DR Congo — single yellow diagonal stripe across sky-blue field
+  // (plus the yellow star in the canton).
+  CD: ["stars", "stripes-d"],
   CR: ["stripes-h"],
   CI: ["stripes-v"],
   HR: ["stripes-h"],
@@ -216,8 +221,9 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   MV: ["crescent"],
   ML: ["stripes-v"],
   MT: ["cross", "stripes-v"],
-  // Marshall Islands — diagonal bands, not horizontal or vertical.
-  MH: ["stars"],
+  // Marshall Islands — orange + white diagonal bands rising from the
+  // lower hoist to the upper fly, plus a large white star in the canton.
+  MH: ["stars", "stripes-d"],
   MR: ["crescent", "stars", "stripes-h"],
   MU: ["stripes-h"],
   MX: ["stripes-v", "animal"],
@@ -229,8 +235,9 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   MA: ["stars"], // pentagram counts as a star
   MZ: ["stars", "triangle", "stripes-h"],
   MM: ["stars", "stripes-h"],
-  // Namibia — diagonal red stripe, no h/v stripes.
-  NA: ["sun"],
+  // Namibia — single red diagonal stripe (with white borders)
+  // bisecting blue (with sun) and green halves.
+  NA: ["sun", "stripes-d"],
   NR: ["stars", "stripes-h"],
   NP: ["sun", "crescent", "triangle"],
   NL: ["stripes-h"],
@@ -257,7 +264,9 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   // Rwanda — sky-blue / yellow / green horizontal bands with a 24-ray
   // yellow sun in the upper-right.
   RW: ["sun", "stripes-h"],
-  KN: ["stars", "triangle"],
+  // Saint Kitts and Nevis — black diagonal stripe with yellow borders
+  // bisecting green / red triangles; 2 white stars on the black band.
+  KN: ["stars", "triangle", "stripes-d"],
   LC: ["triangle"],
   VC: ["stripes-v"],
   // Samoa — red field with blue canton containing the Southern Cross.
@@ -269,14 +278,18 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   SA: [],
   SN: ["stars", "stripes-v"],
   RS: ["stripes-h", "animal"],
-  // Seychelles — diagonal rays, no h/v stripes.
-  SC: [],
+  // Seychelles — five oblique rays radiating from the lower-hoist
+  // corner. Multiple diagonal bands → "Diagonal stripes".
+  SC: ["stripes-d"],
   SL: ["stripes-h"],
   SG: ["crescent", "stars", "stripes-h"],
   // Slovakia — double-cross-on-hills COA, no animal.
   SK: ["stripes-h"],
   SI: ["stripes-h", "stars"],
-  SB: ["stars"],
+  // Solomon Islands — yellow diagonal stripe across the field
+  // separating dark-blue (upper) and green (lower), plus 5 white
+  // stars in the upper-hoist quadrant.
+  SB: ["stars", "stripes-d"],
   SO: ["stars"],
   ZA: ["triangle"],
   SS: ["stars", "stripes-h", "triangle"],
@@ -289,14 +302,16 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   CH: ["cross"],
   SY: ["stars", "stripes-h"],
   TJ: ["stars", "stripes-h"],
-  // Tanzania — diagonal split, no h/v stripes; no other motif.
-  TZ: [],
+  // Tanzania — black diagonal band with yellow borders bisecting
+  // green and blue triangles. Three diagonal bands → "Diagonal stripes".
+  TZ: ["stripes-d"],
   TH: ["stripes-h"],
   TL: ["stars", "triangle"],
   TG: ["stars", "stripes-h"],
   TO: ["cross"],
-  // Trinidad and Tobago — single diagonal stripe, no h/v.
-  TT: [],
+  // Trinidad and Tobago — single black diagonal stripe with white
+  // borders on a red field.
+  TT: ["stripes-d"],
   TN: ["crescent", "stars", "sun"],
   TR: ["crescent", "stars"],
   TM: ["crescent", "stars", "stripes-v"],
