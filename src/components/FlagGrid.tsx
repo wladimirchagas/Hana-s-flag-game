@@ -13,6 +13,11 @@ import {
   FLAG_FAMILY_ORDER,
   type FlagFamily,
 } from "../lib/flagFamilies";
+import {
+  FLAG_COLOR_LABELS,
+  FLAG_COLOR_ORDER,
+  type FlagColor,
+} from "../lib/flagColors";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -45,7 +50,8 @@ type GroupMode =
   | "continent"
   | "subcontinent"
   | "shape"
-  | "family";
+  | "family"
+  | "color";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -54,6 +60,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   subcontinent: "By sub-continent",
   shape: "By characteristics",
   family: "By family",
+  color: "By colour",
 };
 
 export function FlagGrid({
@@ -121,6 +128,18 @@ export function FlagGrid({
           push(label, e);
         }
       }
+    } else if (groupMode === "color") {
+      for (const e of sorted) {
+        const tags = e.colors ?? [];
+        if (tags.length === 0) {
+          push("Other", e);
+          continue;
+        }
+        for (const t of tags) {
+          const label = FLAG_COLOR_LABELS[t as FlagColor] ?? t;
+          push(label, e);
+        }
+      }
     }
 
     // Sort the bucket list.
@@ -141,6 +160,12 @@ export function FlagGrid({
         // Canonical family order; "Other" last.
         const oa = familyHeadingOrder(a);
         const ob = familyHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "color") {
+        // Canonical colour order; "Other" last.
+        const oa = colorHeadingOrder(a);
+        const ob = colorHeadingOrder(b);
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "alpha") {
@@ -251,6 +276,14 @@ function familyHeadingOrder(heading: string): number {
   if (heading === "Other") return 999;
   for (let i = 0; i < FLAG_FAMILY_ORDER.length; i++) {
     if (FLAG_FAMILY_LABELS[FLAG_FAMILY_ORDER[i]] === heading) return i;
+  }
+  return 100;
+}
+
+function colorHeadingOrder(heading: string): number {
+  if (heading === "Other") return 999;
+  for (let i = 0; i < FLAG_COLOR_ORDER.length; i++) {
+    if (FLAG_COLOR_LABELS[FLAG_COLOR_ORDER[i]] === heading) return i;
   }
   return 100;
 }

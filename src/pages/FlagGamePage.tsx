@@ -155,11 +155,6 @@ export default function FlagGamePage() {
         endedAt={game.gameEndedAtMs}
         meanAnswerMs={game.meanAnswerMs}
       />
-      <div className="game-nav">
-        <Link className="game-nav__home" to="/">
-          ← Home
-        </Link>
-      </div>
       <main className="card">
         <header className="card-header">
           <h1>

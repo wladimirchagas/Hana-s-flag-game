@@ -268,55 +268,78 @@ a {
   }
 }
 
-/* === Global theme toggle ===
-   Single instance rendered at the React root and pinned to the top-centre
-   of the viewport, so the same control is visible from the landing page,
-   the game pages, and any future routes. z-index 30 sits above the in-game
-   home nav (25) and the fixed timer (20), but below modals and the
-   celebration overlay (≥50) — so it disappears while focused modals are
-   open, which is the expected behaviour. */
-.global-theme-toggle {
-  position: fixed;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 30;
+/* === Site-wide top bar ===
+   Sticky bar mounted at the App root above every Route. Home link (or
+   landing-page brand) on the left, theme toggle on the right. Replaces
+   the old floating .global-theme-toggle + per-page .game-nav /
+   .learn-topbar widgets.
+
+   `position: sticky` — stays pinned at the top while pages scroll. Note
+   the historical caveat (game-page .app had `overflow-x: hidden`, which
+   silently breaks sticky descendants): we mount the topbar OUTSIDE
+   .app in JSX so the overflow rule doesn't apply. */
+.site-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem clamp(0.75rem, 2vw, 1.25rem);
+  background: var(--cream);
+  border-bottom: 2px solid var(--ink-faint);
+  backdrop-filter: saturate(140%) blur(2px);
 }
 
-/* On the Learn page the theme toggle is rendered in-flow inside
-   .learn-topbar, so the global fixed one would visually duplicate it
-   AND overlap the map. Hide the global one whenever a .learn-page is
-   in the document. `:has()` is widely supported in modern browsers. */
-body:has(.learn-page) .global-theme-toggle {
-  display: none;
-}
-
-/* Deprecated — left in case anything still references it but the toggle
-   no longer renders here. Safe to delete once nothing in the JSX uses it. */
-.sticker__topbar {
-  display: none;
-}
-
-/* === Game-nav layout (home + toggle on the same row) ===
-   Fixed to the top-left of the viewport so the theme toggle stays reachable
-   no matter how far the user scrolls inside the game card. Anchored LEFT so
-   it never crashes with the fixed game-clock in the top-right corner — that
-   was the source of the 'toggle looks hidden behind the timer' bug.
-
-   (sticky would have worked too but the `.app` container sets
-   overflow-x: hidden, which silently breaks sticky descendants. Fixed
-   positioning is immune to that.) */
-.game-nav {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 25;
+.site-topbar__left,
+.site-topbar__right {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  /* Reset the in-flow layout (max-width / auto margin) inherited from
-     App.css's earlier `.game-nav` rule — those don't make sense for a
-     fixed element. */
-  max-width: none;
-  margin: 0;
+}
+
+.site-topbar__brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.site-topbar__home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: var(--mustard, var(--paper));
+  color: var(--ink-fixed, var(--ink));
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  text-decoration: none;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.site-topbar__home:hover,
+.site-topbar__home:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  outline: none;
+}
+
+.site-topbar__home:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+/* Deprecated names — kept as no-ops so any straggling references don't
+   blow up. The actual rules above are on .site-topbar. */
+.global-theme-toggle,
+.sticker__topbar,
+.game-nav {
+  display: none;
 }

@@ -3,9 +3,10 @@
 .app {
   position: relative;
   min-height: 100vh;
-  /* Top padding leaves room for the fixed .game-nav and the fixed
-     .game-clock (~3.5rem clears both safely). */
-  padding: 3.75rem 1rem 3rem;
+  /* Padding for the fixed .game-clock (top-right). The home link now
+     lives in the sticky .site-topbar at the App root, so the topbar
+     reserves its own space and we no longer need to pad for it here. */
+  padding: 0.75rem 1rem 3rem;
   background:
     radial-gradient(1200px 600px at 50% -10%, var(--cream-glow-1) 0%, transparent 60%),
     radial-gradient(900px 500px at 90% 110%, var(--cream-glow-2) 0%, transparent 60%),

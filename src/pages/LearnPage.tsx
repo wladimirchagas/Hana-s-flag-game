@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
-import { CountryDropdown } from "../components/CountryDropdown";
-import { EraSlider } from "../components/EraSlider";
+import { LearnTopToolbar } from "../components/LearnTopToolbar";
 import { useZoomPan } from "../hooks/useZoomPan";
 import { MapViewControl } from "../components/MapViewControl";
 import {
@@ -16,8 +15,8 @@ import { FlagGrid } from "../components/FlagGrid";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
+import { FLAG_COLORS } from "../lib/flagColors";
 import { EntitySummary } from "../components/EntitySummary";
-import { ThemeToggle } from "../components/ThemeToggle";
 import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
@@ -319,6 +318,7 @@ export default function LearnPage() {
         subcontinent: c.subregion ?? c.continent,
         shapes: FLAG_SHAPES[c.code],
         families: FLAG_FAMILIES[c.code],
+        colors: FLAG_COLORS[c.code],
       }));
     }
     const out: FlagListEntry[] = [];
@@ -375,18 +375,27 @@ export default function LearnPage() {
 
   return (
     <div className="learn-page">
-      {/* In-flow topbar — Home link on the left, theme toggle on the
-          right. Replaces the previously floating .game-nav + global
-          theme-toggle so nothing sits on top of the map. The global
-          ThemeToggle is hidden on this page via CSS (see App.css). */}
-      <header className="learn-topbar">
-        <Link className="learn-topbar__home" to="/">
-          ← Home
-        </Link>
-        <div className="learn-topbar__toggle">
-          <ThemeToggle />
-        </div>
-      </header>
+      {/* Top toolbar: era selector (Today / Historical periods) + the
+          country search. Lives above the map so it's reachable without
+          scrolling and away from the flag panel. */}
+      <LearnTopToolbar
+        currentEraId={eraId}
+        onEraChange={setEraId}
+        isModernEra={isModernEra}
+        search={
+          isModernEra
+            ? {
+                countries,
+                value: display?.kind === "modern" ? display.country : null,
+                onChange: (c) => {
+                  if (c) setSelected({ kind: "modern", country: c });
+                  setHovered(null);
+                },
+                disabled: countries.length === 0,
+              }
+            : null
+        }
+      />
     <div className="learn-fs" ref={learnRootRef}>
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra ? (
@@ -511,31 +520,7 @@ export default function LearnPage() {
             )}
           </div>
 
-          {/* The search is most useful in modern mode (with 195 known
-              countries). For historical eras the polities are easier to
-              discover by clicking — we hide the dropdown then. */}
-          {isModernEra && (
-            <div className="learn-fs__search">
-              <CountryDropdown
-                countries={countries}
-                value={display?.kind === "modern" ? display.country : null}
-                onChange={(c) => {
-                  if (c) setSelected({ kind: "modern", country: c });
-                  setHovered(null);
-                  // No auto-scroll from the search dropdown either — only
-                  // an explicit flag-tile click should move the viewport.
-                }}
-                disabled={countries.length === 0}
-                label="Find a country"
-                listPlacement="up"
-              />
-            </div>
-          )}
         </aside>
-      </div>
-
-      <div className="learn-fs__slider-wrap">
-        <EraSlider currentId={eraId} onChange={setEraId} />
       </div>
 
       {zoomed && flagUrl && (
