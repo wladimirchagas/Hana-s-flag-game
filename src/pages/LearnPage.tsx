@@ -15,6 +15,7 @@ import {
 import { FlagGrid } from "../components/FlagGrid";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import { FLAG_SHAPES } from "../lib/flagShapes";
+import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { EntitySummary } from "../components/EntitySummary";
 import { ThemeToggle } from "../components/ThemeToggle";
 import {
@@ -317,6 +318,7 @@ export default function LearnPage() {
         continent: c.continent,
         subcontinent: c.subregion ?? c.continent,
         shapes: FLAG_SHAPES[c.code],
+        families: FLAG_FAMILIES[c.code],
       }));
     }
     const out: FlagListEntry[] = [];

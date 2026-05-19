@@ -8,6 +8,11 @@ import {
   FLAG_SHAPE_ORDER,
   type FlagShape,
 } from "../lib/flagShapes";
+import {
+  FLAG_FAMILY_LABELS,
+  FLAG_FAMILY_ORDER,
+  type FlagFamily,
+} from "../lib/flagFamilies";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -34,7 +39,13 @@ export type FlagGridProps = {
   resolveFlag: (raw: string) => string;
 };
 
-type GroupMode = "none" | "alpha" | "continent" | "subcontinent" | "shape";
+type GroupMode =
+  | "none"
+  | "alpha"
+  | "continent"
+  | "subcontinent"
+  | "shape"
+  | "family";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -42,6 +53,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   continent: "By continent",
   subcontinent: "By region",
   shape: "By shape",
+  family: "By family",
 };
 
 export function FlagGrid({
@@ -97,6 +109,18 @@ export function FlagGrid({
           push(label, e);
         }
       }
+    } else if (groupMode === "family") {
+      for (const e of sorted) {
+        const tags = e.families ?? [];
+        if (tags.length === 0) {
+          push("Other", e);
+          continue;
+        }
+        for (const t of tags) {
+          const label = FLAG_FAMILY_LABELS[t as FlagFamily] ?? t;
+          push(label, e);
+        }
+      }
     }
 
     // Sort the bucket list.
@@ -111,6 +135,12 @@ export function FlagGrid({
         // Use the canonical shape order for headings; "Other" last.
         const oa = shapeHeadingOrder(a);
         const ob = shapeHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "family") {
+        // Canonical family order; "Other" last.
+        const oa = familyHeadingOrder(a);
+        const ob = familyHeadingOrder(b);
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "alpha") {
@@ -213,6 +243,14 @@ function shapeHeadingOrder(heading: string): number {
   if (heading === "Other") return 999;
   for (let i = 0; i < FLAG_SHAPE_ORDER.length; i++) {
     if (FLAG_SHAPE_LABELS[FLAG_SHAPE_ORDER[i]] === heading) return i;
+  }
+  return 100;
+}
+
+function familyHeadingOrder(heading: string): number {
+  if (heading === "Other") return 999;
+  for (let i = 0; i < FLAG_FAMILY_ORDER.length; i++) {
+    if (FLAG_FAMILY_LABELS[FLAG_FAMILY_ORDER[i]] === heading) return i;
   }
   return 100;
 }
