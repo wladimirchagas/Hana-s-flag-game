@@ -25,9 +25,14 @@ export function Topbar() {
           </Link>
         )}
       </div>
+      <div className="site-topbar__center" id="site-topbar-slot" />
       <div className="site-topbar__right">
         <ThemeToggle />
       </div>
     </header>
   );
 }
+
+/** Stable id used by descendant pages (e.g. FlagGamePage) to portal
+ *  content into the topbar's centre slot. */
+export const SITE_TOPBAR_SLOT_ID = "site-topbar-slot";
