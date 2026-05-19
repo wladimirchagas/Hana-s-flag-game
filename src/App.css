@@ -22,51 +22,67 @@
   justify-content: center;
 }
 
-/* --- Top clock --- */
+/* --- Game timer (portaled into the sticky topbar's centre slot) ---
+   Two compact metrics side-by-side. The clock is sized to fit between
+   the home link (left) and the theme toggle (right) without forcing a
+   wrap. Falls back to a stacked layout on phones to keep the labels
+   legible. */
 .game-clock {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.35rem;
-  padding: 0.65rem 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.2rem 0.75rem;
   background: var(--paper);
-  border: 3px solid var(--ink);
-  border-radius: 14px;
-  box-shadow: 0 4px 0 var(--ink), 0 8px 16px rgba(26, 34, 56, 0.18);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
 }
 
 .game-clock__elapsed,
 .game-clock__avg {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.05rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  line-height: 1;
 }
 
 .game-clock__label {
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   font-weight: 600;
   color: var(--ink-soft);
 }
 
 .game-clock__value {
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: var(--coral-deep);
-  line-height: 1.1;
 }
 
 .game-clock__value--secondary {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--sky);
+}
+
+@media (max-width: 540px) {
+  .game-clock {
+    gap: 0.45rem;
+    padding: 0.15rem 0.55rem;
+  }
+  .game-clock__label {
+    /* On narrow viewports drop the labels so the numbers stay readable
+       inside the topbar without pushing the toggle off-screen. */
+    display: none;
+  }
+  .game-clock__value {
+    font-size: 0.95rem;
+  }
+  .game-clock__value--secondary {
+    font-size: 0.85rem;
+  }
 }
 
 /* --- Home link --- */
@@ -612,6 +628,124 @@
   }
   .answer-row__confirm {
     width: 100%;
+  }
+}
+
+/* === Answer-as-buttons — visible multiple-choice grid =================
+   Rendered instead of the dropdown when the per-question option pool
+   has ≤15 entries (see AnswerOptions.tsx). The grid uses auto-fit
+   with a size-dependent minimum column width so the buttons grow as
+   the option count shrinks. */
+.answer-row--buttons {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.85rem;
+}
+
+.answer-options {
+  display: block;
+}
+
+.answer-options__label {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.answer-options__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.answer-options__item {
+  margin: 0;
+}
+
+.answer-options__btn {
+  width: 100%;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  background: var(--paper);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--ink);
+  padding: 0.7rem 0.9rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.answer-options__btn:hover:not(:disabled),
+.answer-options__btn:focus-visible:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 var(--ink);
+  outline: none;
+}
+
+.answer-options__btn:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.answer-options__btn--active {
+  background: var(--mustard, var(--lemon, #ffe58a));
+  color: var(--ink-fixed, var(--ink));
+}
+
+.answer-options__btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: 0 2px 0 var(--ink);
+}
+
+/* Size buckets — fewer answers → bigger buttons (larger min-column +
+   chunkier padding). Bigger viewports get 2-3 buttons per row at xl,
+   shrinking to 4-5 per row at sm so all 15 always fit on screen. */
+.answer-options--size-xl .answer-options__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+.answer-options--size-xl .answer-options__btn {
+  font-size: 1.2rem;
+  padding: 1.1rem 1.1rem;
+}
+
+.answer-options--size-lg .answer-options__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+}
+.answer-options--size-lg .answer-options__btn {
+  font-size: 1.05rem;
+  padding: 0.9rem 1rem;
+}
+
+.answer-options--size-md .answer-options__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+}
+.answer-options--size-md .answer-options__btn {
+  font-size: 0.95rem;
+  padding: 0.75rem 0.85rem;
+}
+
+.answer-options--size-sm .answer-options__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr));
+}
+.answer-options--size-sm .answer-options__btn {
+  font-size: 0.88rem;
+  padding: 0.6rem 0.7rem;
+}
+
+@media (max-width: 540px) {
+  .answer-options__grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr)) !important;
+  }
+  .answer-options__btn {
+    font-size: 0.9rem !important;
+    padding: 0.65rem 0.7rem !important;
   }
 }
 

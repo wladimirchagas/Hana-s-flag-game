@@ -5,6 +5,7 @@ import { useLeaderboard } from "../context/LeaderboardContext";
 import { buildLeaderboardEntryFromGame } from "../lib/buildLeaderboardEntryFromGame";
 import { FlagCard } from "../components/FlagCard";
 import { CountryDropdown } from "../components/CountryDropdown";
+import { AnswerOptions, shouldUseButtons } from "../components/AnswerOptions";
 import { ScoreBoard } from "../components/ScoreBoard";
 import { Feedback } from "../components/Feedback";
 import { WorldProgressMap } from "../components/WorldProgressMap";
@@ -191,28 +192,53 @@ export default function FlagGamePage() {
 
         <FlagCard country={game.current} phase={game.phase} />
 
-        {/* Dropdown + Confirm on a single row — saves vertical space and
-            keeps the action button visible next to the typed answer. The
-            row collapses to a vertical stack on narrow viewports. */}
-        <div className="answer-row">
-          <CountryDropdown
-            countries={alternatives}
-            value={game.selected}
-            onChange={game.setSelected}
-            disabled={isRevealed || isFinished || game.phase === "loading"}
-            label="Your answer"
-          />
-          {!isFinished && !isRevealed && (
-            <button
-              type="button"
-              className="btn btn-primary answer-row__confirm"
-              disabled={primaryDisabled}
-              onClick={game.confirm}
-            >
-              Confirm
-            </button>
-          )}
-        </div>
+        {/* When the per-question pool is small enough that ALL choices
+            fit on screen, render them as clickable buttons instead of a
+            search dropdown — easier UX for kids and faster on touch.
+            For larger pools (e.g. All-Flags, big Custom Games) we keep
+            the dropdown. The Confirm button stays in both layouts so
+            the wrong-guess / retry flow is unchanged. */}
+        {shouldUseButtons(alternatives.length) ? (
+          <div className="answer-row answer-row--buttons">
+            <AnswerOptions
+              countries={alternatives}
+              value={game.selected}
+              onChange={game.setSelected}
+              disabled={isRevealed || isFinished || game.phase === "loading"}
+              label="Your answer"
+            />
+            {!isFinished && !isRevealed && (
+              <button
+                type="button"
+                className="btn btn-primary answer-row__confirm"
+                disabled={primaryDisabled}
+                onClick={game.confirm}
+              >
+                Confirm
+              </button>
+            )}
+          </div>
+        ) : (
+          <div className="answer-row">
+            <CountryDropdown
+              countries={alternatives}
+              value={game.selected}
+              onChange={game.setSelected}
+              disabled={isRevealed || isFinished || game.phase === "loading"}
+              label="Your answer"
+            />
+            {!isFinished && !isRevealed && (
+              <button
+                type="button"
+                className="btn btn-primary answer-row__confirm"
+                disabled={primaryDisabled}
+                onClick={game.confirm}
+              >
+                Confirm
+              </button>
+            )}
+          </div>
+        )}
 
         {game.phase !== "loading" && (
           <Feedback

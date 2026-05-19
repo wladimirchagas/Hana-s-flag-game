@@ -299,6 +299,14 @@ a {
   gap: 0.65rem;
 }
 
+.site-topbar__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .site-topbar__brand {
   font-family: var(--font-display);
   font-weight: 700;

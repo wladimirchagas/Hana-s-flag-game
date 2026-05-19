@@ -82,22 +82,31 @@ export type FlagShape =
   | "triangle"
   | "canton"
   | "seal"
-  | "animal";
+  | "animal"
+  // Aspect-ratio buckets — only the distinctive non-default ratios get
+  // an explicit tag. Plain 2:3 (most flags) is intentionally left
+  // unlabelled to avoid a 150-entry "2:3" bucket. See README at top.
+  | "ratio-square"
+  | "ratio-wide"
+  | "ratio-irregular";
 
 export const FLAG_SHAPE_LABELS: Readonly<Record<FlagShape, string>> = {
-  tricolor:     "Tricolor",
-  bicolor:      "Bicolor",
-  stars:        "Stars",
-  crescent:     "Crescent / Moon",
-  sun:          "Sun",
-  cross:        "Cross",
-  triangle:     "Triangle",
-  "stripes-h":  "Horizontal stripes",
-  "stripes-v":  "Vertical stripes",
-  "stripes-d":  "Diagonal stripes",
-  canton:       "Canton",
-  seal:         "Seal / Coat of arms",
-  animal:       "Animal",
+  tricolor:          "Tricolor",
+  bicolor:           "Bicolor",
+  stars:             "Stars",
+  crescent:          "Crescent / Moon",
+  sun:               "Sun",
+  cross:             "Cross",
+  triangle:          "Triangle",
+  "stripes-h":       "Horizontal stripes",
+  "stripes-v":       "Vertical stripes",
+  "stripes-d":       "Diagonal stripes",
+  canton:            "Canton",
+  seal:              "Seal / Coat of arms",
+  animal:            "Animal",
+  "ratio-square":    "Ratio: square (1:1)",
+  "ratio-wide":      "Ratio: wide (1:2 or wider)",
+  "ratio-irregular": "Ratio: non-rectangular",
 };
 
 /** Canonical display order used for the "By shape" group headings. */
@@ -115,6 +124,9 @@ export const FLAG_SHAPE_ORDER: readonly FlagShape[] = [
   "canton",
   "seal",
   "animal",
+  "ratio-square",
+  "ratio-wide",
+  "ratio-irregular",
 ];
 
 /** Tags by ISO 3166-1 alpha-2 code. Coverage: all 195 UN-member states. */
@@ -136,7 +148,7 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   AR: ["tricolor", "sun", "stripes-h"],
   // Armenia — horizontal tricolour red/blue/orange.
   AM: ["tricolor", "stripes-h"],
-  AU: ["stars", "cross", "canton"],
+  AU: ["stars", "cross", "canton", "ratio-wide"],
   // Austria — horizontal tricolour red/white/red.
   AT: ["tricolor", "stripes-h"],
   AZ: ["tricolor", "crescent", "stars", "stripes-h"],
@@ -146,7 +158,7 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   // Bangladesh — green field with red disc (sun). Effectively bicolour.
   BD: ["bicolor", "sun"],
   BB: ["tricolor", "stripes-v"],
-  BY: ["stripes-h"],
+  BY: ["stripes-h", "ratio-wide"],
   // Belgium — vertical tricolour black/yellow/red.
   BE: ["tricolor", "stripes-v"],
   BZ: ["stripes-h", "seal"],
@@ -220,7 +232,7 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   // Ethiopia — central blue disc with star inside; tagged sun for the
   // disc shape. Horizontal green/yellow/red tricolour beneath.
   ET: ["tricolor", "stripes-h", "stars", "sun", "seal"],
-  FJ: ["cross", "animal", "canton", "seal"],
+  FJ: ["cross", "animal", "canton", "seal", "ratio-wide"],
   FI: ["cross"],
   // France — vertical tricolour blue/white/red.
   FR: ["tricolor", "stripes-v"],
@@ -277,7 +289,7 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   // Lebanon — horizontal red/white/red with cedar; tricolour layout.
   LB: ["tricolor", "stripes-h"],
   LS: ["stripes-h"],
-  LR: ["stars", "stripes-h", "canton"],
+  LR: ["stars", "stripes-h", "canton", "ratio-wide"],
   // Libya — horizontal tricolour red/black/green with crescent + star.
   LY: ["tricolor", "stripes-h", "crescent", "stars"],
   // Liechtenstein — blue/red horizontal bicolour with golden crown.
@@ -317,15 +329,15 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   // bisecting blue (with sun) and green halves.
   NA: ["sun", "stripes-d"],
   NR: ["stars", "stripes-h"],
-  NP: ["sun", "crescent", "triangle"],
+  NP: ["sun", "crescent", "triangle", "ratio-irregular"],
   // Netherlands — horizontal tricolour red/white/blue.
   NL: ["tricolor", "stripes-h"],
-  NZ: ["stars", "cross", "canton"],
+  NZ: ["stars", "cross", "canton", "ratio-wide"],
   NI: ["stripes-h", "seal"],
   NE: ["sun", "stripes-h"],
   // Nigeria — vertical tricolour green/white/green (technically G/W/G).
   NG: ["stripes-v"],
-  MK: ["sun"],
+  MK: ["sun", "ratio-wide"],
   NO: ["cross"],
   OM: ["stripes-h"],
   // Pakistan — green field with white hoist stripe (bicolour) + crescent + star.
@@ -336,13 +348,13 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   PY: ["stripes-h", "seal"],
   // Peru — vertical red/white/red tricolour with COA.
   PE: ["tricolor", "stripes-v", "seal"],
-  PH: ["sun", "stars", "triangle", "stripes-h"],
+  PH: ["sun", "stars", "triangle", "stripes-h", "ratio-wide"],
   // Poland — white/red horizontal bicolour.
   PL: ["bicolor", "stripes-h"],
   // Portugal — green/red vertical bicolour with central COA.
   PT: ["bicolor", "stripes-v", "seal"],
   // Qatar — maroon/white vertical bicolour with serrated edge.
-  QA: ["bicolor", "triangle", "stripes-v"],
+  QA: ["bicolor", "triangle", "stripes-v", "ratio-wide"],
   // Romania — vertical tricolour blue/yellow/red.
   RO: ["tricolor", "stripes-v"],
   // Russia — white-blue-red horizontal tricolour (1993 design).
@@ -390,7 +402,7 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   // Suriname — horizontal pentacolour green/white/red/white/green with star.
   SR: ["stars", "stripes-h"],
   SE: ["cross"],
-  CH: ["cross"],
+  CH: ["cross", "ratio-square"],
   // Syria — horizontal tricolour with stars (older 1980 version: red/white/black + 2 stars).
   SY: ["tricolor", "stars", "stripes-h"],
   TJ: ["stars", "stripes-h"],
@@ -407,13 +419,13 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   TN: ["crescent", "stars", "sun"],
   TR: ["crescent", "stars"],
   TM: ["crescent", "stars", "stripes-v"],
-  TV: ["stars", "cross", "canton"],
+  TV: ["stars", "cross", "canton", "ratio-wide"],
   UG: ["stripes-h", "animal"],
   // Ukraine — blue/yellow horizontal bicolour.
   UA: ["bicolor", "stripes-h"],
   AE: ["stripes-h"],
-  GB: ["cross"],
-  US: ["stars", "stripes-h", "canton"],
+  GB: ["cross", "ratio-wide"],
+  US: ["stars", "stripes-h", "canton", "ratio-wide"],
   // Uruguay — horizontal stripes with sun in the canton.
   UY: ["sun", "stripes-h", "canton"],
   UZ: ["crescent", "stars", "stripes-h"],
@@ -421,7 +433,7 @@ export const FLAG_SHAPES: Readonly<Record<string, readonly FlagShape[]>> = {
   // The Y-shape divides red/green so technically horizontal-ish bands.
   VU: ["triangle", "stripes-h"],
   // Vatican — yellow/white vertical bicolour with keys + tiara.
-  VA: ["bicolor", "stripes-v", "seal"],
+  VA: ["bicolor", "stripes-v", "seal", "ratio-square"],
   // Venezuela — horizontal tricolour yellow/blue/red (Gran Colombia) with stars + COA.
   VE: ["tricolor", "stars", "stripes-h", "seal"],
   VN: ["stars"],
