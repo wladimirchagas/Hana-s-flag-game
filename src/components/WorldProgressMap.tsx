@@ -309,8 +309,18 @@ export function WorldProgressMap({
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
           role="img"
           aria-label="World map showing correctly and incorrectly guessed countries"
-          // Zoom + pan gestures disabled; +/-/⟲ buttons are the sole
-          // input. See HistoricalMap for the rationale.
+          // Drag-to-pan is enabled (only effective when zoomed in — at
+          // k=1 the pan clamp collapses to zero). Wheel-zoom and
+          // double-click-reset stay off so the user can still
+          // page-scroll over the map.
+          onPointerDown={zoom.svgHandlers.onPointerDown}
+          onPointerMove={zoom.svgHandlers.onPointerMove}
+          onPointerUp={zoom.svgHandlers.onPointerUp}
+          onPointerCancel={zoom.svgHandlers.onPointerCancel}
+          style={{
+            cursor: zoom.isZoomed ? "grab" : "default",
+            touchAction: zoom.isZoomed ? "none" : "auto",
+          }}
         >
           <g transform={zoom.transform}>
           {/* South-up flip happens inside the zoom group so flipping +
