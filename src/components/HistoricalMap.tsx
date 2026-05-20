@@ -159,8 +159,8 @@ export function HistoricalMap({
 
   // Compute per-feature path strings via d3-geo's equal-earth projection
   // (same as WorldProgressMap so the two maps look like the same world).
-  const renderedFeatures = useMemo(() => {
-    if (!data || data.features.length === 0) return [];
+  const { renderedFeatures, spherePath } = useMemo(() => {
+    if (!data || data.features.length === 0) return { renderedFeatures: [], spherePath: null };
     // Centre the projection on the user-chosen meridian. d3-geo's rotate
     // is [lambda, phi, gamma]; we only touch lambda. South-up is handled
     // separately as an SVG transform so the projection's geometry stays
@@ -169,11 +169,13 @@ export function HistoricalMap({
       .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], data);
     const pathFn = geoPath(projection);
-    return data.features.map((f, idx) => {
+    const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
       const name = f.properties?.NAME ?? null;
       return { idx, d, name };
     });
+    const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
+    return { renderedFeatures: features, spherePath };
   }, [data, centerLongitude]);
 
   // Compute the "highlight" set: every feature whose NAME matches the
@@ -226,6 +228,16 @@ export function HistoricalMap({
             <g
               transform={southUp ? `translate(0 ${HEIGHT}) scale(1 -1)` : undefined}
             >
+            {spherePath && (
+              <path
+                d={spherePath}
+                fill="none"
+                stroke={palette.stroke}
+                strokeWidth={0.4}
+                strokeOpacity={0.5}
+                vectorEffect="non-scaling-stroke"
+              />
+            )}
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
               const isHighlighted =

@@ -11,21 +11,21 @@
 }
 
 /* === Top toolbar: era selector + search ===========================
-   One row, sticks just under the site-topbar. The era selector lives
-   on the left, the search on the right. */
+   In-flow card row — distinct from the sticky site-topbar above it.
+   Uses --paper background + full border so it reads as a controls
+   widget, not a second navigation bar. */
 .learn-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 0.65rem clamp(0.75rem, 2vw, 1.25rem);
-  background: var(--cream);
-  border-bottom: 2px solid var(--ink-faint);
-  position: sticky;
-  /* Sticks below the site-topbar (~2.5rem tall). */
-  top: 2.6rem;
-  z-index: 35;
+  margin: 0.75rem clamp(0.75rem, 2vw, 1.25rem);
+  padding: 0.6rem 1rem;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--ink);
 }
 
 .learn-toolbar__eras {
@@ -162,12 +162,6 @@
 }
 
 @media (max-width: 640px) {
-  .learn-toolbar {
-    /* On phones let things wrap naturally — era pills first, search
-       below — and drop sticky to recover scroll real estate. */
-    position: static;
-    top: auto;
-  }
   .learn-toolbar__search {
     flex: 1 1 100%;
     max-width: none;
@@ -204,9 +198,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* No top padding needed any more — Home + theme toggle live in the
-     in-flow .learn-topbar above, not floating on top of the map. */
-  padding: 0.75rem 0.5rem 0;
+  padding: 0.25rem 0.25rem 0;
 }
 
 /* Strip the map's normal card styling so it fills its column. */
@@ -255,8 +247,8 @@
   z-index: 5;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 3rem 1.25rem 1.25rem;
+  justify-content: flex-start;
+  padding: 1rem 1.25rem 1.25rem;
   /* Avoid stealing focus from the fixed top toolbar (Home + toggle). */
 }
 
@@ -409,7 +401,7 @@
   }
 
   .learn-fs__map {
-    padding: 0.5rem 0.5rem 0;
+    padding: 0.25rem 0.25rem 0;
     /* Reserve a sensible amount of vertical space for the map even
        when it would otherwise collapse — but cap it so the user can
        scroll to see the slider + panel without huge gestures. */
@@ -447,7 +439,7 @@
     max-height: 4.5rem;
   }
   .learn-fs__map {
-    padding-top: 2.75rem;
+    padding-top: 0.25rem;
   }
 }
 
