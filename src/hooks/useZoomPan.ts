@@ -23,6 +23,9 @@ import { useCallback, useRef, useState } from "react";
 export type ZoomPanState = {
   /** Current transform string, ready for `<g transform={t}>`. */
   transform: string;
+  /** Raw zoom + pan values. Use these to position overlay elements that must
+   *  NOT be inside the zoom `<g>` (e.g. the country pulse indicator). */
+  view: { k: number; tx: number; ty: number };
   /** Whether the user has zoomed/panned away from the initial state. */
   isZoomed: boolean;
   /** Whether further zoom-in is possible (k < MAX_K). */
@@ -35,6 +38,12 @@ export type ZoomPanState = {
   zoomOut: () => void;
   /** Reset to the initial 1× / origin view. */
   reset: () => void;
+  /**
+   * Smoothly animate the viewport so that the given SVG-viewBox coordinate
+   * (svgX, svgY) is centred on screen at zoom level `targetK`.
+   * Clamps to [MIN_K, MAX_K] and respects pan bounds.
+   */
+  zoomTo: (svgX: number, svgY: number, targetK: number) => void;
   /** Spread these onto the `<svg>` to enable zoom + pan. */
   svgHandlers: {
     onWheel: (e: React.WheelEvent<SVGSVGElement>) => void;
@@ -66,6 +75,13 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
   // the clamp bounds.
   const [view, setView] = useState<View>({ k: 1, tx: 0, ty: 0 });
   const { k, tx, ty } = view;
+  // Always-current ref — lets zoomTo read the snapshot at call time
+  // without capturing stale state in its useCallback deps.
+  const viewRef = useRef(view);
+  viewRef.current = view;
+  // Timer handle for the zoomTo animation loop (setTimeout-based so it
+  // works even in background iframes where requestAnimationFrame is throttled).
+  const animTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Clamp the pan offsets so the user can't drag the map completely
   // off-screen. With scale `k`, the SVG content occupies the viewBox
@@ -220,14 +236,58 @@ export function useZoomPan(width: number, height: number): ZoomPanState {
   const zoomIn = useCallback(() => zoomBy(1.6), [zoomBy]);
   const zoomOut = useCallback(() => zoomBy(1 / 1.6), [zoomBy]);
 
+  /** Smoothly fly the viewport to centre (svgX, svgY) at zoom targetK. */
+  const zoomTo = useCallback(
+    (svgX: number, svgY: number, targetK: number) => {
+      const clampedK = Math.min(MAX_K, Math.max(MIN_K, targetK));
+      const finalTx = Math.max(
+        width * (1 - clampedK),
+        Math.min(0, width / 2 - svgX * clampedK),
+      );
+      const finalTy = Math.max(
+        height * (1 - clampedK),
+        Math.min(0, height / 2 - svgY * clampedK),
+      );
+      const start = { ...viewRef.current };
+      const t0 = performance.now();
+      const DURATION = 650; // ms
+      const FRAME_MS = 16;  // ~60 fps
+
+      if (animTimerRef.current !== null) {
+        clearTimeout(animTimerRef.current);
+        animTimerRef.current = null;
+      }
+
+      // Use setTimeout rather than requestAnimationFrame so the animation
+      // runs even in background / iframe contexts where rAF is throttled.
+      const tick = () => {
+        const progress = Math.min(1, (performance.now() - t0) / DURATION);
+        // Ease-out cubic — fast start, smooth landing.
+        const ease = 1 - Math.pow(1 - progress, 3);
+        setView({
+          k:  start.k  + (clampedK - start.k)  * ease,
+          tx: start.tx + (finalTx  - start.tx) * ease,
+          ty: start.ty + (finalTy  - start.ty) * ease,
+        });
+        animTimerRef.current = progress < 1 ? setTimeout(tick, FRAME_MS) : null;
+      };
+
+      animTimerRef.current = setTimeout(tick, FRAME_MS);
+    },
+    // width/height are stable (960, 500); clamp helpers inline above.
+    [width, height],
+  );
+
   return {
     transform: `translate(${tx} ${ty}) scale(${k})`,
+    view: { k, tx, ty },
     isZoomed: k !== 1 || tx !== 0 || ty !== 0,
     canZoomIn: k < MAX_K,
     canZoomOut: k > MIN_K,
     zoomIn,
     zoomOut,
     reset,
+    zoomTo,
     svgHandlers: {
       onWheel,
       onPointerDown,

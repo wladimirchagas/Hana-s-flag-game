@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
@@ -176,6 +176,40 @@ export function WorldProgressMap({
   const [geographies, setGeographies] = useState<GeoFeature[]>([]);
   const [popover, setPopover] = useState<Popover | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
+
+  const [rotationOffset, setRotationOffset] = useState(0);
+  const [isRotating, setIsRotating] = useState(true);
+  const isRotatingRef = useRef(true);
+  isRotatingRef.current = isRotating;
+  const rotationAccumRef = useRef(0);
+
+  useEffect(() => {
+    const DEGREES_PER_SEC = 6;
+    const MIN_MS_BETWEEN_RENDERS = 67; // ~15 fps
+    let lastTime = performance.now();
+    let lastRenderTime = performance.now();
+    let rafId: number;
+
+    const tick = (now: number) => {
+      const dt = (now - lastTime) / 1000;
+      lastTime = now;
+      if (isRotatingRef.current) {
+        rotationAccumRef.current = (rotationAccumRef.current + DEGREES_PER_SEC * dt) % 360;
+        if (now - lastRenderTime >= MIN_MS_BETWEEN_RENDERS) {
+          lastRenderTime = now;
+          setRotationOffset(rotationAccumRef.current);
+        }
+      }
+      rafId = requestAnimationFrame(tick);
+    };
+
+    rafId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafId);
+  }, []);
+
+  const toggleRotation = useCallback(() => {
+    setIsRotating((prev) => !prev);
+  }, []);
   // See HistoricalMap for the same pattern — local hook always runs, but
   // the caller can pass a `zoom` to share state with a sibling map.
   const localZoom = useZoomPan(WIDTH, HEIGHT);
@@ -199,27 +233,89 @@ export function WorldProgressMap({
     };
   }, []);
 
-  const { pathById, spherePath } = useMemo(() => {
-    if (geographies.length === 0) return { pathById: new Map<string, string>(), spherePath: null };
-    // Centre on the user-chosen meridian. South-up is handled in SVG
-    // (transform on outer <g>) — keeps the projection's antimeridian
-    // splitting logic untouched.
+  const effectiveLongitude = centerLongitude + rotationOffset;
+
+  const { pathById, spherePath, centroidByAlpha2, bboxByAlpha2 } = useMemo(() => {
+    const empty = {
+      pathById: new Map<string, string>(),
+      spherePath: null,
+      centroidByAlpha2: new Map<string, [number, number]>(),
+      bboxByAlpha2: new Map<string, { w: number; h: number }>(),
+    };
+    if (geographies.length === 0) return empty;
     // Fit to the sphere (not just the countries) so the sphere outline
     // exactly fills the viewBox — fitting to countries leaves the sphere
     // slightly wider than the viewBox, causing SVG clipping at the edges.
     const projection = geoEqualEarth()
-      .rotate([-centerLongitude, 0])
+      .rotate([-effectiveLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
+    const centroidByAlpha2 = new Map<string, [number, number]>();
+    const bboxByAlpha2 = new Map<string, { w: number; h: number }>();
+
     for (const geo of geographies) {
       const path = mapPath(geo as never);
-      if (!path) continue;
-      paths.set(String(geo.id ?? ""), path);
+      if (path) paths.set(String(geo.id ?? ""), path);
+
+      const alpha2 = toIsoAlpha2(geo.id);
+      if (alpha2) {
+        // Centroid in SVG viewBox coordinates (after projection).
+        const c = mapPath.centroid(geo as never);
+        if (c && isFinite(c[0]) && isFinite(c[1])) {
+          centroidByAlpha2.set(alpha2, [c[0], c[1]]);
+        }
+        // Bounding box width/height in SVG units — used to pick zoom level.
+        const b = mapPath.bounds(geo as never);
+        if (b) {
+          bboxByAlpha2.set(alpha2, {
+            w: Math.abs(b[1][0] - b[0][0]),
+            h: Math.abs(b[1][1] - b[0][1]),
+          });
+        }
+      }
     }
+
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
-    return { pathById: paths, spherePath };
-  }, [geographies, centerLongitude]);
+    return { pathById: paths, spherePath, centroidByAlpha2, bboxByAlpha2 };
+  }, [geographies, effectiveLongitude]);
+
+  // Track which code we last successfully zoomed to so that when the
+  // projection rebuilds (e.g. center longitude change) — which creates a
+  // new centroidByAlpha2 object and re-fires the effect — we don't fly
+  // back to the country the user already found.
+  const zoomedForRef = useRef<string | null>(null);
+
+  // Auto-zoom to newly selected countries.  Runs both when selectedCode
+  // changes AND when centroidByAlpha2 is first populated (async load),
+  // so we always catch whichever happens second.
+  useEffect(() => {
+    if (!selectedCode) return;
+    // Bail if we already flew to this exact code (prevents repeat zoom on
+    // projection rebuild while the same country stays selected).
+    if (zoomedForRef.current === selectedCode) return;
+    const centroid = centroidByAlpha2.get(selectedCode);
+    const bbox = bboxByAlpha2.get(selectedCode);
+    // Data not ready yet — effect will re-fire when centroidByAlpha2 updates.
+    if (!centroid || !bbox) return;
+
+    const pad = 8; // SVG-unit breathing room around the bounding box
+    const targetK = Math.min(
+      /* zoomTo clamps to MAX_K internally */
+      24,
+      Math.min(
+        WIDTH  / (bbox.w + pad * 2),
+        HEIGHT / (bbox.h + pad * 2),
+      ) * 0.65,
+    );
+
+    if (targetK > 2) {
+      zoomedForRef.current = selectedCode;
+      const [svgX, svgY] = centroid;
+      zoom.zoomTo(svgX, southUp ? HEIGHT - svgY : svgY, targetK);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCode, centroidByAlpha2]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
@@ -294,6 +390,30 @@ export function WorldProgressMap({
   const interactiveHint = selectable?.onConfirm
     ? "— click a highlighted country to guess"
     : "— hover or click a country to see its flag";
+
+  // Pulsing ring indicator — shown for micro-nations that are hard to
+  // spot at the default zoom level.  Rendered OUTSIDE the zoom <g> so
+  // the ring's visual size is constant regardless of zoom, but positioned
+  // using the live zoom transform so it tracks the country on screen.
+  const selCentroid = selectedCode ? centroidByAlpha2.get(selectedCode) : null;
+  const selBbox     = selectedCode ? bboxByAlpha2.get(selectedCode) : null;
+  // Only show for countries whose largest projected dimension is < 12 SVG
+  // units (~1.25 % of map width) — micro-states and small island nations.
+  const showPulse = !!(selCentroid && selBbox && Math.max(selBbox.w, selBbox.h) < 12);
+  const { k: zk, tx: ztx, ty: zty } = zoom.view;
+  const pulseX = selCentroid
+    ? selCentroid[0] * zk + ztx
+    : 0;
+  const pulseY = selCentroid
+    ? (southUp ? HEIGHT - selCentroid[1] : selCentroid[1]) * zk + zty
+    : 0;
+  // Clip to a generous margin around the viewBox so the ring never
+  // renders in dead space when the user has panned the country off-screen.
+  const PULSE_MARGIN = 30;
+  const pulseVisible =
+    showPulse &&
+    pulseX > -PULSE_MARGIN && pulseX < WIDTH  + PULSE_MARGIN &&
+    pulseY > -PULSE_MARGIN && pulseY < HEIGHT + PULSE_MARGIN;
 
   return (
     <section className="map-section" aria-labelledby="map-heading">
@@ -405,6 +525,18 @@ export function WorldProgressMap({
           })}
           </g>
           </g>
+          {/* Pulse indicator — outside the zoom group so its pixel size
+              stays constant, but positioned using the zoom transform. */}
+          {pulseVisible && (
+            <g
+              transform={`translate(${pulseX.toFixed(1)} ${pulseY.toFixed(1)})`}
+              aria-hidden="true"
+            >
+              <circle r={7} className="map-country-pulse__ring" />
+              <circle r={7} className="map-country-pulse__ring map-country-pulse__ring--2" />
+              <circle r={3.5} className="map-country-pulse__dot" />
+            </g>
+          )}
         </svg>
         {popover && isInteractive && (
           <div
@@ -470,6 +602,16 @@ export function WorldProgressMap({
             title="Reset zoom"
           >
             ⟲
+          </button>
+          <hr className="world-map__zoom-divider" />
+          <button
+            type="button"
+            className="world-map__zoom-btn"
+            onClick={toggleRotation}
+            aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
+            title={isRotating ? "Pause rotation" : "Resume rotation"}
+          >
+            {isRotating ? "⏸" : "▶"}
           </button>
           {extraControls}
         </div>
