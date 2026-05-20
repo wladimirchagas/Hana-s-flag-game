@@ -881,6 +881,41 @@
      the page normally even when their finger is over the map. */
 }
 
+/* === Country pulse indicator ==========================================
+   Two staggered expanding rings + a solid centre dot rendered over the
+   map SVG (outside the zoom <g>) to help locate micro-nations.
+   The rings are sized in SVG viewBox units (960 × 500) so they stay a
+   consistent screen size regardless of the current zoom level.
+   ====================================================================== */
+@keyframes map-ping-ring {
+  0%   { transform: scale(1);   opacity: 0.85; }
+  70%  { opacity: 0.35; }
+  100% { transform: scale(3.5); opacity: 0; }
+}
+
+.map-country-pulse__ring {
+  fill: none;
+  stroke: var(--coral-deep, #e05252);
+  stroke-width: 2;
+  /* Scale from the element's own centre — works for cx=0 cy=0 circles
+     inside a translated <g>. */
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: map-ping-ring 1.6s ease-out infinite;
+  pointer-events: none;
+}
+
+.map-country-pulse__ring--2 {
+  /* Offset by half-period for a continuous sonar-ripple look. */
+  animation-delay: 0.8s;
+}
+
+.map-country-pulse__dot {
+  fill: var(--coral-deep, #e05252);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
 /* Wrapper around the map + zoom controls. The controls live in their
    own column to the RIGHT of the map graphic, NOT overlapping any
    landmass. The map flex-grows to fill the remaining width. */
@@ -939,6 +974,13 @@
   cursor: default;
   opacity: 0.4;
   box-shadow: 0 1px 0 var(--ink);
+}
+
+.world-map__zoom-divider {
+  border: none;
+  border-top: 2px solid var(--ink);
+  opacity: 0.2;
+  margin: 0.1rem 0;
 }
 
 /* Interactive countries — pointer cursor + soft hover highlight. */
