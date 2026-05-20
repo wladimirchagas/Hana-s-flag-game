@@ -165,9 +165,12 @@ export function HistoricalMap({
     // is [lambda, phi, gamma]; we only touch lambda. South-up is handled
     // separately as an SVG transform so the projection's geometry stays
     // canonical (less risk of fitSize / antimeridian-splitting bugs).
+    // Fit to the sphere so the sphere outline exactly fills the viewBox —
+    // fitting to the data geometry leaves the sphere wider than the viewBox,
+    // causing SVG clipping at the left/right edges.
     const projection = geoEqualEarth()
       .rotate([-centerLongitude, 0])
-      .fitSize([WIDTH, HEIGHT], data);
+      .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const pathFn = geoPath(projection);
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);

@@ -204,12 +204,12 @@ export function WorldProgressMap({
     // Centre on the user-chosen meridian. South-up is handled in SVG
     // (transform on outer <g>) — keeps the projection's antimeridian
     // splitting logic untouched.
+    // Fit to the sphere (not just the countries) so the sphere outline
+    // exactly fills the viewBox — fitting to countries leaves the sphere
+    // slightly wider than the viewBox, causing SVG clipping at the edges.
     const projection = geoEqualEarth()
       .rotate([-centerLongitude, 0])
-      .fitSize([WIDTH, HEIGHT], {
-        type: "FeatureCollection",
-        features: geographies,
-      } as FeatureCollection);
+      .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     for (const geo of geographies) {
