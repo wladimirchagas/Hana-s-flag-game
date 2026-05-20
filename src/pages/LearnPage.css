@@ -186,12 +186,18 @@
   font-family: var(--font-display);
 }
 
-/* === Map: fills the left column, edge-to-edge ====================== */
+/* === Map: fills the left column, top-aligned ======================
+   The SVG uses height:auto so it sizes to its natural aspect ratio
+   (960:500). This eliminates the empty space that appears above the
+   sphere when the SVG is forced to fill a taller container and the
+   content is letterboxed at the centre. The map is as wide as the
+   column, which on typical desktops makes it larger than the
+   height-constrained version. */
 .learn-fs__map {
   grid-area: map;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow: hidden;
   padding: 0.25rem 0.25rem 0;
@@ -206,10 +212,10 @@
   border-radius: 0;
   box-shadow: none;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .learn-fs__map .map-heading {
@@ -218,19 +224,14 @@
 
 .learn-fs__map .map-frame {
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: visible;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .learn-fs__map .world-map {
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: none;
-  /* preserveAspectRatio default (xMidYMid meet) keeps the map undistorted
-     and letterboxes within the column. */
 }
 
 /* === Right-column panel ============================================
