@@ -174,9 +174,9 @@ export const ERAS: readonly Era[] = [
   {
     id: "today",
     label: "Today",
-    caption: "Modern world",
-    year: "",
-    summary: "The modern world: 195 UN member states.",
+    caption: `${new Date().getFullYear()} · Present day`,
+    year: String(new Date().getFullYear()),
+    summary: `The modern world in ${new Date().getFullYear()}: 195 UN member states recognised by the United Nations.`,
     // No dataUrl → falls back to world-atlas modern map.
   },
 ];

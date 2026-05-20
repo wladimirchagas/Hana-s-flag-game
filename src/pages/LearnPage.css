@@ -128,11 +128,35 @@
 .learn-toolbar__era-option-period {
   font-weight: 700;
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .learn-toolbar__era-option-caption {
   font-size: 0.78rem;
   color: var(--ink-soft);
+}
+
+/* "NOW" badge shown on the Today era in the dropdown menu */
+.learn-toolbar__era-today-badge {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: var(--green, #2ecc71);
+  color: #fff;
+  border-radius: 999px;
+  line-height: 1.4;
+  vertical-align: middle;
+}
+
+/* Subtle top separator so Today stands apart from historical eras */
+.learn-toolbar__era-option--today {
+  border-bottom: 2px solid var(--ink-faint, rgba(26,34,56,.12));
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.7rem;
 }
 
 .learn-toolbar__search {
@@ -237,15 +261,21 @@
 /* === Right-column panel ============================================
    Sits in its own grid cell, so it categorically cannot cover any
    countries on the map. Padded around the edges; the inner card holds
-   the country detail and search dropdown. */
+   the country detail and search dropdown.
+
+   align-self: start keeps the panel-wrap pinned to the top of its
+   grid cell (same top edge as the world map) rather than stretching
+   to fill the full viewport-height row. padding-top matches the map
+   column (0.25rem) so both columns start at the same Y position. */
 .learn-fs__panel-wrap {
   grid-area: panel;
   position: relative;
   z-index: 5;
+  align-self: start;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem 1.25rem 1.25rem;
+  padding: 0.25rem 1.25rem 1.25rem;
   /* Avoid stealing focus from the fixed top toolbar (Home + toggle). */
 }
 
