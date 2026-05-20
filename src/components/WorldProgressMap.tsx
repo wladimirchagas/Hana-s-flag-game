@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, useCallback } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
@@ -127,8 +127,6 @@ type Props = {
   southUp?: boolean;
   /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
   extraControls?: React.ReactNode;
-  /** When true, the globe auto-rotates and a pause button is shown. Default false. */
-  rotate?: boolean;
 };
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -220,59 +218,12 @@ export function WorldProgressMap({
   centerLongitude = 0,
   southUp = false,
   extraControls,
-  rotate = false,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
   const [geographies, setGeographies] = useState<GeoFeature[]>([]);
   const [popover, setPopover] = useState<Popover | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
-
-  const [rotationOffset, setRotationOffset] = useState(0);
-  const [isRotating, setIsRotating] = useState(rotate);
-  const isRotatingRef = useRef(rotate);
-  isRotatingRef.current = isRotating;
-  const southUpRef = useRef(southUp);
-  southUpRef.current = southUp;
-  const rotationAccumRef = useRef(0);
-
-  // When the user picks a different view centre (Atlantic → Pacific etc.),
-  // reset the accumulated rotation so the new centre renders immediately
-  // at exactly the chosen longitude rather than offset by whatever the
-  // globe had already rotated to.
-  useEffect(() => {
-    rotationAccumRef.current = 0;
-    setRotationOffset(0);
-  }, [centerLongitude]);
-
-  useEffect(() => {
-    const DEGREES_PER_SEC = 6;
-    const MIN_MS_BETWEEN_RENDERS = 67; // ~15 fps
-    let lastTime = performance.now();
-    let lastRenderTime = performance.now();
-    let rafId: number;
-
-    const tick = (now: number) => {
-      const dt = (now - lastTime) / 1000;
-      lastTime = now;
-      if (isRotatingRef.current) {
-        const dir = southUpRef.current ? -1 : 1;
-        rotationAccumRef.current = (rotationAccumRef.current + dir * DEGREES_PER_SEC * dt) % 360;
-        if (now - lastRenderTime >= MIN_MS_BETWEEN_RENDERS) {
-          lastRenderTime = now;
-          setRotationOffset(rotationAccumRef.current);
-        }
-      }
-      rafId = requestAnimationFrame(tick);
-    };
-
-    rafId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(rafId);
-  }, []);
-
-  const toggleRotation = useCallback(() => {
-    setIsRotating((prev) => !prev);
-  }, []);
   // See HistoricalMap for the same pattern — local hook always runs, but
   // the caller can pass a `zoom` to share state with a sibling map.
   const localZoom = useZoomPan(WIDTH, HEIGHT);
@@ -296,8 +247,6 @@ export function WorldProgressMap({
     };
   }, []);
 
-  const effectiveLongitude = centerLongitude + rotationOffset;
-
   const { pathById, spherePath, centroidByAlpha2, bboxByAlpha2 } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
@@ -310,7 +259,7 @@ export function WorldProgressMap({
     // exactly fills the viewBox — fitting to countries leaves the sphere
     // slightly wider than the viewBox, causing SVG clipping at the edges.
     const projection = geoEqualEarth()
-      .rotate([-effectiveLongitude, 0])
+      .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
@@ -351,7 +300,7 @@ export function WorldProgressMap({
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
     return { pathById: paths, spherePath, centroidByAlpha2, bboxByAlpha2 };
-  }, [geographies, effectiveLongitude]);
+  }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
@@ -637,20 +586,6 @@ export function WorldProgressMap({
           >
             ⟲
           </button>
-          {rotate && (
-            <>
-              <hr className="world-map__zoom-divider" />
-              <button
-                type="button"
-                className="world-map__zoom-btn"
-                onClick={toggleRotation}
-                aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
-                title={isRotating ? "Pause rotation" : "Resume rotation"}
-              >
-                {isRotating ? "⏸" : "▶"}
-              </button>
-            </>
-          )}
           {extraControls}
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
@@ -103,9 +103,62 @@ export default function LearnPage() {
   // Map view settings (centre longitude + south-up). Persisted to
   // localStorage so the user's preferred orientation survives reloads.
   const [mapView, setMapView] = useState<MapViewSettings>(() => loadMapView());
+
+  // Globe rotation — shared across both map back-ends so switching eras
+  // doesn't stop the spin or lose the pause state.
+  const [rotationOffset, setRotationOffset] = useState(0);
+  const [isRotating, setIsRotating] = useState(true);
+  const isRotatingRef = useRef(true);
+  isRotatingRef.current = isRotating;
+  const southUpForRotRef = useRef(mapView.southUp);
+  southUpForRotRef.current = mapView.southUp;
+  const rotationAccumRef = useRef(0);
+
+  const toggleRotation = useCallback(() => {
+    setIsRotating((prev) => !prev);
+  }, []);
   useEffect(() => {
     saveMapView(mapView);
   }, [mapView]);
+
+  // Scroll to the very top of the page when the user first lands here.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Reset accumulated rotation when the user picks a new view-centre preset
+  // so the map snaps immediately to the chosen meridian.
+  useEffect(() => {
+    rotationAccumRef.current = 0;
+    setRotationOffset(0);
+  }, [mapView.centerLongitude]);
+
+  // rAF rotation loop — runs for the lifetime of the page so the globe
+  // keeps spinning across era switches (both map back-ends receive the
+  // computed effectiveLongitude as their centerLongitude prop).
+  useEffect(() => {
+    const DEGREES_PER_SEC = 6;
+    const MIN_MS_BETWEEN_RENDERS = 67; // ~15 fps cap
+    let lastTime = performance.now();
+    let lastRenderTime = performance.now();
+    let rafId: number;
+    const tick = (now: number) => {
+      const dt = (now - lastTime) / 1000;
+      lastTime = now;
+      if (isRotatingRef.current) {
+        const dir = southUpForRotRef.current ? -1 : 1;
+        rotationAccumRef.current =
+          (rotationAccumRef.current + dir * DEGREES_PER_SEC * dt) % 360;
+        if (now - lastRenderTime >= MIN_MS_BETWEEN_RENDERS) {
+          lastRenderTime = now;
+          setRotationOffset(rotationAccumRef.current);
+        }
+      }
+      rafId = requestAnimationFrame(tick);
+    };
+    rafId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafId);
+  }, []);
 
   // Modern countries are loaded once on mount (used for the "Today" era).
   useEffect(() => {
@@ -340,15 +393,26 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
 
-  // Ref to the top of the page (.learn-fs) — clicked flag tiles scroll
-  // back here so the user lands on the map with their selection
-  // highlighted.
-  const learnRootRef = useRef<HTMLDivElement | null>(null);
-  // (No auto-scroll into the flag grid from map / search selections.
-  // Only an explicit click on a flag tile moves the viewport — back up
-  // to the map — handled by `handleGridSelect` below via `learnRootRef`.
-  // The grid's own selection highlight still updates silently for
-  // either selection source.)
+  // Longitude passed to both map back-ends — base preset + accumulated spin.
+  const effectiveLongitude = mapView.centerLongitude + rotationOffset;
+
+  // Rotation + view-centre controls shared by both WorldProgressMap and
+  // HistoricalMap so the buttons are always present regardless of era.
+  const mapExtraControls = (
+    <>
+      <hr className="world-map__zoom-divider" />
+      <button
+        type="button"
+        className="world-map__zoom-btn"
+        onClick={toggleRotation}
+        aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
+        title={isRotating ? "Pause rotation" : "Resume rotation"}
+      >
+        {isRotating ? "⏸" : "▶"}
+      </button>
+      <MapViewControl view={mapView} onChange={setMapView} />
+    </>
+  );
 
   function handleGridSelect(id: string) {
     if (isModernEra) {
@@ -362,8 +426,8 @@ export default function LearnPage() {
       setSelected(sel);
       setHovered(null);
     }
-    // Bring the map back into view.
-    learnRootRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    // Scroll to the absolute top so the user sees the map from the very start.
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   // Resolver passed to FlagGrid so it can render both absolute http(s)
@@ -396,11 +460,10 @@ export default function LearnPage() {
             : null
         }
       />
-    <div className="learn-fs" ref={learnRootRef}>
+    <div className="learn-fs">
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra ? (
           <WorldProgressMap
-            rotate
             countryResults={{}}
             selectedCode={
               display?.kind === "modern" ? display.country.code : null
@@ -414,10 +477,6 @@ export default function LearnPage() {
                 if (c) {
                   setSelected({ kind: "modern", country: c });
                   setHovered(null);
-                  // No auto-scroll on map clicks — the user is looking at
-                  // the map, so we keep them there. The matching tile in
-                  // the flag grid still updates via the `--active` class,
-                  // visible the moment they scroll down themselves.
                 }
               },
               onHover: (code) => {
@@ -430,11 +489,9 @@ export default function LearnPage() {
               },
             }}
             zoom={sharedZoom}
-            centerLongitude={mapView.centerLongitude}
+            centerLongitude={effectiveLongitude}
             southUp={mapView.southUp}
-            extraControls={
-              <MapViewControl view={mapView} onChange={setMapView} />
-            }
+            extraControls={mapExtraControls}
           />
         ) : (
           <HistoricalMap
@@ -447,20 +504,15 @@ export default function LearnPage() {
               const next = selectionFromPolityName(name);
               setSelected(next);
               setHovered(null);
-              // Same as WorldProgressMap above — map clicks should not
-              // yank the user away from the map. Flag-grid highlight
-              // still updates silently for when they scroll down.
             }}
             onHover={(name) => {
               const next = selectionFromPolityName(name);
               setHovered(next);
             }}
             zoom={sharedZoom}
-            centerLongitude={mapView.centerLongitude}
+            centerLongitude={effectiveLongitude}
             southUp={mapView.southUp}
-            extraControls={
-              <MapViewControl view={mapView} onChange={setMapView} />
-            }
+            extraControls={mapExtraControls}
             onDataLoaded={setAvailableHistoricalNames}
           />
         )}
