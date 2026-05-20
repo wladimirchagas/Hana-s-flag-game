@@ -2103,26 +2103,27 @@
   }
 }
 
-/* Persistent build-info footer rendered globally by App.tsx. Floats in
-   the bottom-right corner so it doesn't compete with main page content
-   but is always visible for users reporting "is this fix live yet?". */
+/* Persistent build-info bottom bar rendered globally by App.tsx.
+   Sticks to the bottom of the viewport across every route. */
 .build-footer {
   position: fixed;
-  bottom: 0.5rem;
-  right: 0.75rem;
-  z-index: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.3rem clamp(0.75rem, 2vw, 1.25rem);
   font-family: var(--font-display, system-ui, sans-serif);
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  color: var(--ink-soft, rgba(0, 0, 0, 0.55));
-  background: color-mix(in srgb, var(--paper, #fff) 86%, transparent);
-  padding: 0.18rem 0.55rem;
-  border-radius: 999px;
-  border: 1px solid var(--ink-faint, rgba(0, 0, 0, 0.12));
-  box-shadow: 0 1px 0 var(--ink-faint, rgba(0, 0, 0, 0.08));
-  pointer-events: auto;
-  /* Don't get in the way of taps on touch UIs. */
+  color: var(--ink-soft);
+  background: var(--cream);
+  border-top: 2px solid var(--ink-faint);
+  backdrop-filter: saturate(140%) blur(2px);
   user-select: none;
 }
 
@@ -2146,14 +2147,4 @@
 
 .build-footer__time {
   opacity: 0.8;
-}
-
-/* Phones — slightly smaller still so we don't crowd the bottom edge. */
-@media (max-width: 480px) {
-  .build-footer {
-    font-size: 0.62rem;
-    bottom: 0.3rem;
-    right: 0.4rem;
-    padding: 0.12rem 0.45rem;
-  }
 }

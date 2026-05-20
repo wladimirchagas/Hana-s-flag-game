@@ -206,6 +206,7 @@ export function HistoricalMap({
           <svg
             className="world-map"
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+            preserveAspectRatio="xMidYMin meet"
             role="img"
             aria-label="Historical world map for the selected era"
             // Drag-to-pan is enabled (effective only once zoomed in).
