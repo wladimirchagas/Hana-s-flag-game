@@ -397,8 +397,9 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
 
-  // Longitude passed to both map back-ends — base preset + accumulated spin.
-  const effectiveLongitude = mapView.centerLongitude + rotationOffset;
+  // Base longitude (user's chosen preset) passed to both map back-ends for
+  // path computation. The rotation offset is passed separately so maps can
+  // apply it as a cheap SVG translate without recomputing all path strings.
 
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.
@@ -493,7 +494,8 @@ export default function LearnPage() {
               },
             }}
             zoom={sharedZoom}
-            centerLongitude={effectiveLongitude}
+            centerLongitude={mapView.centerLongitude}
+            rotationOffset={rotationOffset}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
           />
@@ -514,7 +516,8 @@ export default function LearnPage() {
               setHovered(next);
             }}
             zoom={sharedZoom}
-            centerLongitude={effectiveLongitude}
+            centerLongitude={mapView.centerLongitude}
+            rotationOffset={rotationOffset}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
             onDataLoaded={setAvailableHistoricalNames}

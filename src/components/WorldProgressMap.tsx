@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
@@ -123,6 +123,10 @@ type Props = {
   /** User-chosen central meridian (longitude). 0 = Atlantic / Greenwich
    *  default; 180 = Pacific; -95 = Americas; etc. */
   centerLongitude?: number;
+  /** Accumulated rotation offset from the globe-spin animation, in degrees.
+   *  Applied as an SVG translate so path strings don't need to be recomputed
+   *  on every animation tick — only centerLongitude changes trigger a reprojection. */
+  rotationOffset?: number;
   /** When true, the rendered map is flipped vertically — south at the top. */
   southUp?: boolean;
   /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
@@ -216,11 +220,13 @@ export function WorldProgressMap({
   disabled = false,
   zoom: externalZoom,
   centerLongitude = 0,
+  rotationOffset = 0,
   southUp = false,
   extraControls,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
+  const clipId = useId();
   const [geographies, setGeographies] = useState<GeoFeature[]>([]);
   const [popover, setPopover] = useState<Popover | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
@@ -247,11 +253,16 @@ export function WorldProgressMap({
     };
   }, []);
 
-  const { pathById, spherePath, centroidByAlpha2 } = useMemo(() => {
+  // IMPORTANT: rotationOffset is intentionally NOT in the deps array. Paths
+  // are computed at the user's chosen centerLongitude (base meridian), which
+  // changes rarely. The rotation animation is applied as a cheap SVG translate
+  // below so this expensive computation doesn't run on every animation tick.
+  const { pathById, spherePath, centroidByAlpha2, pixelsPerDegree } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
+      pixelsPerDegree: WIDTH / 360,
     };
     if (geographies.length === 0) return empty;
     // Fit to the sphere (not just the countries) so the sphere outline
@@ -289,7 +300,16 @@ export function WorldProgressMap({
     }
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
-    return { pathById: paths, spherePath, centroidByAlpha2 };
+
+    // Pixels per degree at the equator for the rotation SVG translate.
+    const p0 = projection([centerLongitude, 0]);
+    const p1 = projection([centerLongitude + 1, 0]);
+    const pxPerDeg =
+      p0 && p1 && Math.abs(p1[0] - p0[0]) > 0
+        ? Math.abs(p1[0] - p0[0])
+        : WIDTH / 360;
+
+    return { pathById: paths, spherePath, centroidByAlpha2, pixelsPerDegree: pxPerDeg };
   }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
@@ -366,6 +386,11 @@ export function WorldProgressMap({
     ? "— click a highlighted country to guess"
     : "— hover or click a country to see its flag";
 
+  // Rotation applied as a horizontal SVG translate — see useMemo comment above.
+  const rotationTx = -(rotationOffset * pixelsPerDegree);
+  const totalWidth = pixelsPerDegree * 360;
+  const featureCopyOffsets = [-totalWidth, 0, totalWidth] as const;
+
   // Pulsing ring indicator — shown for micro-nations that are hard to
   // spot at the default zoom level.  Rendered OUTSIDE the zoom <g> so
   // the ring's visual size is constant regardless of zoom, but positioned
@@ -374,8 +399,9 @@ export function WorldProgressMap({
   // Show pulse for all countries with area ≤ Denmark (~43,094 km²).
   const showPulse = !!(selCentroid && selectedCode && SMALL_NATION_CODES.has(selectedCode));
   const { k: zk, tx: ztx, ty: zty } = zoom.view;
+  // Account for the rotation translate when computing the pulse position.
   const pulseX = selCentroid
-    ? selCentroid[0] * zk + ztx
+    ? (selCentroid[0] + rotationTx) * zk + ztx
     : 0;
   const pulseY = selCentroid
     ? (southUp ? HEIGHT - selCentroid[1] : selCentroid[1]) * zk + zty
@@ -416,12 +442,20 @@ export function WorldProgressMap({
             touchAction: zoom.isZoomed ? "none" : "auto",
           }}
         >
+          {spherePath && (
+            <defs>
+              <clipPath id={clipId}>
+                <path d={spherePath} />
+              </clipPath>
+            </defs>
+          )}
           <g transform={zoom.transform}>
           {/* South-up flip happens inside the zoom group so flipping +
               zooming compose correctly. See HistoricalMap for details. */}
           <g
             transform={southUp ? `translate(0 ${HEIGHT}) scale(1 -1)` : undefined}
           >
+          {/* Sphere outline drawn once, outside the rotation group */}
           {spherePath && (
             <path
               d={spherePath}
@@ -432,70 +466,82 @@ export function WorldProgressMap({
               vectorEffect="non-scaling-stroke"
             />
           )}
-          {geographies.map((geo, idx) => {
-            const key = String(geo.id ?? idx);
-            const path = pathById.get(String(geo.id ?? ""));
-            if (!path) return null;
-            const alpha2 = toIsoAlpha2(geo.id);
-            const isInPool =
-              !!alpha2 && !!selectable && selectable.codes.has(alpha2);
-            // Every UN-member country is clickable (in interactive mode). Pool
-            // members open the Confirm popover; non-pool members open the
-            // informational "Not in this game" popover instead of silently
-            // doing nothing.
-            const isUnMember = !!alpha2 && ALL_UN_NAMES.has(alpha2);
-            const clickable = isInteractive && isUnMember;
-            const isSelected =
-              !!alpha2 &&
-              (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
-            const baseFill = getFill(
-              alpha2,
-              countryResults,
-              palette,
-              isInPool,
-            );
-            const tooltip =
-              alpha2
-                ? selectable?.names.get(alpha2) ??
-                  ALL_UN_NAMES.get(alpha2) ??
-                  null
-                : null;
-            return (
-              <path
-                key={key}
-                d={path}
-                fill={isSelected ? palette.selectedFill : baseFill}
-                stroke={isSelected ? palette.selectedStroke : palette.stroke}
-                strokeWidth={isSelected ? 1.4 : 0.45}
-                strokeOpacity={isSelected ? 1 : 0.55}
-                // Keep borders the same visual width regardless of zoom —
-                // without this they thicken as the user zooms in.
-                vectorEffect="non-scaling-stroke"
-                className={
-                  clickable
-                    ? "world-map__country world-map__country--selectable"
-                    : "world-map__country"
-                }
-                onClick={
-                  clickable && alpha2
-                    ? (e) => handlePathClick(e, alpha2)
-                    : undefined
-                }
-                onMouseEnter={
-                  clickable && alpha2 && selectable?.onHover
-                    ? () => selectable.onHover!(alpha2)
-                    : undefined
-                }
-                onMouseLeave={
-                  clickable && selectable?.onHover
-                    ? () => selectable.onHover!(null)
-                    : undefined
-                }
+          {/* Three shifted copies of the country paths so the map wraps
+              seamlessly as the globe rotates past the antimeridian.
+              The sphere clipPath hides anything outside the oval boundary. */}
+          <g clipPath={spherePath ? `url(#${clipId})` : undefined}>
+            {featureCopyOffsets.map((offset) => (
+              <g
+                key={offset}
+                transform={`translate(${rotationTx + offset}, 0)`}
               >
-                {tooltip ? <title>{tooltip}</title> : null}
-              </path>
-            );
-          })}
+                {geographies.map((geo, idx) => {
+                  const key = String(geo.id ?? idx);
+                  const path = pathById.get(String(geo.id ?? ""));
+                  if (!path) return null;
+                  const alpha2 = toIsoAlpha2(geo.id);
+                  const isInPool =
+                    !!alpha2 && !!selectable && selectable.codes.has(alpha2);
+                  // Every UN-member country is clickable (in interactive mode). Pool
+                  // members open the Confirm popover; non-pool members open the
+                  // informational "Not in this game" popover instead of silently
+                  // doing nothing.
+                  const isUnMember = !!alpha2 && ALL_UN_NAMES.has(alpha2);
+                  const clickable = isInteractive && isUnMember;
+                  const isSelected =
+                    !!alpha2 &&
+                    (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
+                  const baseFill = getFill(
+                    alpha2,
+                    countryResults,
+                    palette,
+                    isInPool,
+                  );
+                  const tooltip =
+                    alpha2
+                      ? selectable?.names.get(alpha2) ??
+                        ALL_UN_NAMES.get(alpha2) ??
+                        null
+                      : null;
+                  return (
+                    <path
+                      key={`${offset}-${key}`}
+                      d={path}
+                      fill={isSelected ? palette.selectedFill : baseFill}
+                      stroke={isSelected ? palette.selectedStroke : palette.stroke}
+                      strokeWidth={isSelected ? 1.4 : 0.45}
+                      strokeOpacity={isSelected ? 1 : 0.55}
+                      // Keep borders the same visual width regardless of zoom —
+                      // without this they thicken as the user zooms in.
+                      vectorEffect="non-scaling-stroke"
+                      className={
+                        clickable
+                          ? "world-map__country world-map__country--selectable"
+                          : "world-map__country"
+                      }
+                      onClick={
+                        clickable && alpha2
+                          ? (e) => handlePathClick(e, alpha2)
+                          : undefined
+                      }
+                      onMouseEnter={
+                        clickable && alpha2 && selectable?.onHover
+                          ? () => selectable.onHover!(alpha2)
+                          : undefined
+                      }
+                      onMouseLeave={
+                        clickable && selectable?.onHover
+                          ? () => selectable.onHover!(null)
+                          : undefined
+                      }
+                    >
+                      {tooltip ? <title>{tooltip}</title> : null}
+                    </path>
+                  );
+                })}
+              </g>
+            ))}
+          </g>
           </g>
           </g>
           {/* Pulse indicator — outside the zoom group so its pixel size
