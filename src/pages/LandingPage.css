@@ -109,6 +109,17 @@
   margin-top: 1rem;
 }
 
+@media (min-width: 900px) {
+  .sticker__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+  .card-sticker--secondary {
+    max-width: none;
+  }
+}
+
 /* ---------------------------------------------------------------------------
    Hero card — rotating poster + Hana's Game CTA. One visual unit (single
    border + shadow). The carousel poster sits flush against the top; the
@@ -161,7 +172,7 @@
   box-shadow: 0 3px 0 var(--ink-faint);
   animation: none;
   /* Cap so the poster doesn't tower over the CTA on tall viewports. */
-  max-height: 60vh;
+  max-height: min(360px, 50vh);
   overflow: hidden;
 }
 
@@ -683,7 +694,7 @@
 
 /* --- Mobile --- */
 @media (max-width: 640px) {
-  .sticker__main { padding: 2.5rem 1rem 2.5rem; gap: 2rem; }
+  .sticker__main { padding: 1.25rem 1rem 2rem; gap: 2rem; }
   .sticker__cards {
     grid-template-columns: 1fr;
     gap: 1.25rem;

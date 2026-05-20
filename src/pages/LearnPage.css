@@ -429,10 +429,7 @@
 
   .learn-fs__map {
     padding: 0.25rem 0.25rem 0;
-    /* Reserve a sensible amount of vertical space for the map even
-       when it would otherwise collapse — but cap it so the user can
-       scroll to see the slider + panel without huge gestures. */
-    min-height: 45vh;
+    min-height: 0;
     max-height: 65vh;
   }
 
