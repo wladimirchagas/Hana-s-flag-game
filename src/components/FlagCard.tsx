@@ -44,6 +44,11 @@ export function FlagCard({ country, phase }: Props) {
           alt=""
           className="flag-image"
           draggable={false}
+          onError={(e) => {
+            const img = e.currentTarget
+            const png = `https://flagcdn.com/${country.code.toLowerCase()}.png`
+            if (img.src !== png) img.src = png
+          }}
         />
         <span className="flag-card__zoom-hint" aria-hidden="true">⤢ Click to enlarge</span>
       </button>
@@ -60,6 +65,11 @@ export function FlagCard({ country, phase }: Props) {
             alt=""
             className="flag-zoom__img"
             draggable={false}
+            onError={(e) => {
+              const img = e.currentTarget
+              const png = `https://flagcdn.com/${country.code.toLowerCase()}.png`
+              if (img.src !== png) img.src = png
+            }}
           />
           <button
             type="button"

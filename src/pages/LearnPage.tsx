@@ -346,6 +346,10 @@ export default function LearnPage() {
   }
 
   const flagUrl = display ? selectionFlag(display, baseUrl) : null;
+  const flagPngFallback =
+    display?.kind === "modern"
+      ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
+      : null
 
   // Stable id for the currently-displayed entity — used by FlagGrid to
   // highlight the matching tile.
@@ -549,6 +553,10 @@ export default function LearnPage() {
                       alt=""
                       className="learn-fs__flag-img"
                       draggable={false}
+                      onError={flagPngFallback ? (e) => {
+                        const img = e.currentTarget
+                        if (img.src !== flagPngFallback) img.src = flagPngFallback
+                      } : undefined}
                     />
                     <span className="learn-fs__flag-hint" aria-hidden="true">
                       ⤢ Click to enlarge
@@ -588,6 +596,10 @@ export default function LearnPage() {
             src={flagUrl}
             alt=""
             className="flag-zoom__img"
+            onError={flagPngFallback ? (e) => {
+              const img = e.currentTarget
+              if (img.src !== flagPngFallback) img.src = flagPngFallback
+            } : undefined}
             draggable={false}
           />
           <button

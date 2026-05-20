@@ -73,6 +73,11 @@ function FlagColumn({
                       alt=""
                       className="results-flags__flag"
                       draggable={false}
+                      onError={(e) => {
+                        const img = e.currentTarget
+                        const png = `https://flagcdn.com/${c.code.toLowerCase()}.png`
+                        if (img.src !== png) img.src = png
+                      }}
                     />
                   </div>
                   <span className="results-flags__name">{c.name}</span>
