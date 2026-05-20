@@ -74,6 +74,7 @@ export function LeaderboardLightbox() {
     isOpen,
     selectedEntryId,
     entries,
+    syncStatus,
     closeLeaderboard,
     selectEntry,
     goBackInLeaderboard,
@@ -135,7 +136,13 @@ export function LeaderboardLightbox() {
         </div>
 
         <div className="leaderboard-lightbox__body">
-          {selectedEntryId != null && selected === undefined ? (
+          {syncStatus === "loading" ? (
+            <p className="leaderboard-lightbox__empty">Loading leaderboard…</p>
+          ) : syncStatus === "error" ? (
+            <p className="leaderboard-lightbox__empty">
+              Could not load leaderboard. Check your connection and try again.
+            </p>
+          ) : selectedEntryId != null && selected === undefined ? (
             <p className="leaderboard-lightbox__empty">
               This result is no longer available.{" "}
               <button

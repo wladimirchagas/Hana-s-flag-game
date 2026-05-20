@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /leaderboard/{entryId} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasAll(['id', 'playerName', 'score', 'createdAt', 'correctCount', 'wrongCount', 'totalAnswered', 'totalFlags', 'elapsedMs'])
+        && request.resource.data.playerName is string
+        && request.resource.data.playerName.size() >= 1
+        && request.resource.data.playerName.size() <= 48
+        && request.resource.data.score is number
+        && request.resource.data.score >= 0;
+      allow update, delete: if false;
+    }
+  }
+}

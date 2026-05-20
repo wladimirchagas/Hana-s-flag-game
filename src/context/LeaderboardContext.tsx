@@ -2,21 +2,25 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
 import {
-  addLeaderboardEntry,
-  loadLeaderboard,
-  type LeaderboardEntry,
-  type NewLeaderboardEntry,
-} from "../lib/leaderboardStorage";
+  pushEntryToFirestore,
+  subscribeToLeaderboard,
+} from "../lib/leaderboardFirestore";
+import { sortEntries } from "../lib/leaderboardStorage";
+import type { LeaderboardEntry, NewLeaderboardEntry } from "../lib/leaderboardStorage";
+
+export type SyncStatus = "loading" | "ready" | "error";
 
 type LeaderboardContextValue = {
   isOpen: boolean;
   selectedEntryId: string | null;
   entries: LeaderboardEntry[];
+  syncStatus: SyncStatus;
   openLeaderboard: () => void;
   closeLeaderboard: () => void;
   selectEntry: (id: string | null) => void;
@@ -30,18 +34,22 @@ const LeaderboardContext = createContext<LeaderboardContextValue | null>(null);
 export function LeaderboardProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedEntryId, setSelectedEntryId] = useState<string | null>(null);
-  const [entries, setEntries] = useState<LeaderboardEntry[]>(() =>
-    loadLeaderboard()
-  );
+  const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
+  const [syncStatus, setSyncStatus] = useState<SyncStatus>("loading");
 
-  const refreshEntries = useCallback(() => {
-    setEntries(loadLeaderboard());
+  useEffect(() => {
+    return subscribeToLeaderboard(
+      (remote) => {
+        setEntries(remote.slice().sort(sortEntries));
+        setSyncStatus("ready");
+      },
+      () => setSyncStatus("error")
+    );
   }, []);
 
   const openLeaderboard = useCallback(() => {
     setIsOpen(true);
     setSelectedEntryId(null);
-    setEntries(loadLeaderboard());
   }, []);
 
   const closeLeaderboard = useCallback(() => {
@@ -57,13 +65,21 @@ export function LeaderboardProvider({ children }: { children: ReactNode }) {
     setSelectedEntryId(null);
   }, []);
 
+  const refreshEntries = useCallback(() => {
+    // no-op: real-time subscription keeps entries current
+  }, []);
+
   const saveGameToLeaderboard = useCallback(
-    (entry: NewLeaderboardEntry) => {
-      const created = addLeaderboardEntry(entry);
-      refreshEntries();
-      return created;
+    (entry: NewLeaderboardEntry): LeaderboardEntry => {
+      const id =
+        typeof crypto !== "undefined" && crypto.randomUUID
+          ? crypto.randomUUID()
+          : `${Date.now()}-${Math.random().toString(36).slice(2, 11)}`;
+      const full: LeaderboardEntry = { ...entry, id, createdAt: Date.now() };
+      pushEntryToFirestore(full).catch(console.error);
+      return full;
     },
-    [refreshEntries]
+    []
   );
 
   const value = useMemo(
@@ -71,6 +87,7 @@ export function LeaderboardProvider({ children }: { children: ReactNode }) {
       isOpen,
       selectedEntryId,
       entries,
+      syncStatus,
       openLeaderboard,
       closeLeaderboard,
       selectEntry,
@@ -82,6 +99,7 @@ export function LeaderboardProvider({ children }: { children: ReactNode }) {
       isOpen,
       selectedEntryId,
       entries,
+      syncStatus,
       openLeaderboard,
       closeLeaderboard,
       selectEntry,

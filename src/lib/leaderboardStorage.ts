@@ -65,6 +65,8 @@ export function saveLeaderboard(entries: LeaderboardEntry[]): void {
 
 export type NewLeaderboardEntry = Omit<LeaderboardEntry, "id" | "createdAt">;
 
+export { sortEntries };
+
 export function addLeaderboardEntry(entry: NewLeaderboardEntry): LeaderboardEntry {
   const id =
     typeof crypto !== "undefined" && crypto.randomUUID
