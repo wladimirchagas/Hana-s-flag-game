@@ -247,12 +247,11 @@ export function WorldProgressMap({
     };
   }, []);
 
-  const { pathById, spherePath, centroidByAlpha2, bboxByAlpha2 } = useMemo(() => {
+  const { pathById, spherePath, centroidByAlpha2 } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
-      bboxByAlpha2: new Map<string, { w: number; h: number }>(),
     };
     if (geographies.length === 0) return empty;
     // Fit to the sphere (not just the countries) so the sphere outline
@@ -264,7 +263,6 @@ export function WorldProgressMap({
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     const centroidByAlpha2 = new Map<string, [number, number]>();
-    const bboxByAlpha2 = new Map<string, { w: number; h: number }>();
 
     for (const geo of geographies) {
       const path = mapPath(geo as never);
@@ -276,14 +274,6 @@ export function WorldProgressMap({
         const c = mapPath.centroid(geo as never);
         if (c && isFinite(c[0]) && isFinite(c[1])) {
           centroidByAlpha2.set(alpha2, [c[0], c[1]]);
-        }
-        // Bounding box width/height in SVG units — used to pick zoom level.
-        const b = mapPath.bounds(geo as never);
-        if (b) {
-          bboxByAlpha2.set(alpha2, {
-            w: Math.abs(b[1][0] - b[0][0]),
-            h: Math.abs(b[1][1] - b[0][1]),
-          });
         }
       }
     }
@@ -299,7 +289,7 @@ export function WorldProgressMap({
     }
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
-    return { pathById: paths, spherePath, centroidByAlpha2, bboxByAlpha2 };
+    return { pathById: paths, spherePath, centroidByAlpha2 };
   }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
