@@ -293,8 +293,7 @@ export default function FlagGamePage() {
         {isFinished && (
           <div className="post-game-leaderboard">
             <p className="post-game-leaderboard__prompt">
-              Enter your name to save this run to the leaderboard (stored on this
-              device).
+              Enter your name to save this run to the global leaderboard.
             </p>
             <div className="post-game-leaderboard__row">
               <label className="visually-hidden" htmlFor="leaderboard-name">
