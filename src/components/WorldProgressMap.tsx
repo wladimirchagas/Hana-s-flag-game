@@ -308,7 +308,6 @@ export function WorldProgressMap({
         <svg
           className="world-map"
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-          preserveAspectRatio="xMidYMin meet"
           role="img"
           aria-label="World map showing correctly and incorrectly guessed countries"
           // Drag-to-pan is enabled (only effective when zoomed in — at
