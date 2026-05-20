@@ -6,6 +6,54 @@ import { useTheme } from "../context/ThemeContext";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 
+// Countries whose land area is ≤ Denmark (~43,094 km²).  These get the
+// pulsing indicator when selected so they're easy to locate on the map.
+const SMALL_NATION_CODES = new Set([
+  // Micro-states / city-states
+  "VA", "MC", "NR", "TV", "SM", "LI", "MH", "KN", "MT", "MV",
+  "GD", "VC", "BB", "AG", "SC", "PW", "AD",
+  // Small island & coastal nations
+  "LC", "DM", "FM", "SG", "TO", "KI", "BH", "ST", "KM", "MU",
+  "WS", "CV", "TT", "BN", "CY", "LB", "JM", "GM", "QA", "VU",
+  "BS", "ME", "TL", "SZ", "KW", "FJ",
+  // Small mainland nations
+  "SI", "IL", "SV", "BZ", "DJ", "MK", "RW", "HT", "BI", "GQ",
+  "AL", "SB", "AM", "LS", "BE", "MD", "GW", "BT", "CH", "NL", "DK",
+]);
+
+// Geographic [longitude, latitude] for nations too small to appear in the
+// 110m world-atlas dataset.  Injected into centroidByAlpha2 at render time
+// so the pulse indicator still shows even with no rendered polygon.
+const MICRO_STATE_COORDS: Record<string, [number, number]> = {
+  VA: [ 12.45,  41.90], // Vatican City
+  MC: [  7.40,  43.73], // Monaco
+  SM: [ 12.45,  43.93], // San Marino
+  LI: [  9.55,  47.17], // Liechtenstein
+  AD: [  1.60,  42.55], // Andorra
+  MT: [ 14.37,  35.94], // Malta
+  NR: [166.93,  -0.52], // Nauru
+  TV: [179.19,  -8.52], // Tuvalu (Funafuti)
+  MH: [171.18,   7.13], // Marshall Islands
+  KI: [172.98,   1.33], // Kiribati (Tarawa)
+  FM: [158.19,   6.92], // Micronesia
+  PW: [134.58,   7.52], // Palau
+  TO: [-175.20, -21.18], // Tonga
+  WS: [-172.10, -13.76], // Samoa
+  KN: [-62.78,  17.35], // Saint Kitts and Nevis
+  AG: [-61.80,  17.06], // Antigua and Barbuda
+  DM: [-61.37,  15.41], // Dominica
+  LC: [-60.98,  13.91], // Saint Lucia
+  VC: [-61.29,  12.98], // Saint Vincent and the Grenadines
+  BB: [-59.54,  13.19], // Barbados
+  GD: [-61.68,  12.11], // Grenada
+  MV: [ 73.22,   3.20], // Maldives
+  SC: [ 55.49,  -4.68], // Seychelles
+  KM: [ 43.87, -11.88], // Comoros
+  MU: [ 57.55, -20.27], // Mauritius
+  ST: [  6.73,   0.34], // São Tomé and Príncipe
+  CV: [-23.61,  14.93], // Cape Verde
+};
+
 // Full UN-member name lookup, used so clicks on non-pool (out-of-this-game)
 // countries can still display a friendly "Not in this game" popover with the
 // real country name.
@@ -282,6 +330,16 @@ export function WorldProgressMap({
       }
     }
 
+    // Inject fallback centroids for micro-states absent from the 110m dataset.
+    for (const [code, lonLat] of Object.entries(MICRO_STATE_COORDS)) {
+      if (!centroidByAlpha2.has(code)) {
+        const pt = projection(lonLat as [number, number]);
+        if (pt && isFinite(pt[0]) && isFinite(pt[1])) {
+          centroidByAlpha2.set(code, [pt[0], pt[1]]);
+        }
+      }
+    }
+
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
     return { pathById: paths, spherePath, centroidByAlpha2, bboxByAlpha2 };
   }, [geographies, effectiveLongitude]);
@@ -365,10 +423,8 @@ export function WorldProgressMap({
   // the ring's visual size is constant regardless of zoom, but positioned
   // using the live zoom transform so it tracks the country on screen.
   const selCentroid = selectedCode ? centroidByAlpha2.get(selectedCode) : null;
-  const selBbox     = selectedCode ? bboxByAlpha2.get(selectedCode) : null;
-  // Only show for countries whose largest projected dimension is < 12 SVG
-  // units (~1.25 % of map width) — micro-states and small island nations.
-  const showPulse = !!(selCentroid && selBbox && Math.max(selBbox.w, selBbox.h) < 12);
+  // Show pulse for all countries with area ≤ Denmark (~43,094 km²).
+  const showPulse = !!(selCentroid && selectedCode && SMALL_NATION_CODES.has(selectedCode));
   const { k: zk, tx: ztx, ty: zty } = zoom.view;
   const pulseX = selCentroid
     ? selCentroid[0] * zk + ztx
