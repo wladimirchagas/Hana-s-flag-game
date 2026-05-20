@@ -237,15 +237,21 @@
 /* === Right-column panel ============================================
    Sits in its own grid cell, so it categorically cannot cover any
    countries on the map. Padded around the edges; the inner card holds
-   the country detail and search dropdown. */
+   the country detail and search dropdown.
+
+   align-self: start keeps the panel-wrap pinned to the top of its
+   grid cell (same top edge as the world map) rather than stretching
+   to fill the full viewport-height row. padding-top matches the map
+   column (0.25rem) so both columns start at the same Y position. */
 .learn-fs__panel-wrap {
   grid-area: panel;
   position: relative;
   z-index: 5;
+  align-self: start;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem 1.25rem 1.25rem;
+  padding: 0.25rem 1.25rem 1.25rem;
   /* Avoid stealing focus from the fixed top toolbar (Home + toggle). */
 }
 
