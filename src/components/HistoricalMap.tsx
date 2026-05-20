@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useRef, useState } from "react";
+import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { useTheme } from "../context/ThemeContext";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
@@ -17,6 +17,13 @@ import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
  * Hovering a polity reports its name; clicking it selects it. Multiple
  * polygons that share a NAME (e.g., an empire with detached territories)
  * all highlight together when any one is selected.
+ *
+ * Performance note: the historical GeoJSON files are large (1–14 MB).
+ * Path computation is expensive, so this component is memoised and its
+ * centerLongitude prop intentionally excludes the rotation animation
+ * offset — only the user's chosen base meridian is used. That keeps path
+ * recomputation to a minimum (only on data load or explicit preset change)
+ * while the modern globe spins freely next to it.
  */
 
 type HistoricalFeature = {
@@ -55,12 +62,10 @@ export type HistoricalMapProps = {
    *  whether a currently-selected entity still exists in this era. */
   onDataLoaded?: (names: ReadonlySet<string>) => void;
   /** User-chosen central meridian (longitude). 0 = Atlantic / Greenwich
-   *  default; 180 = Pacific; -95 = Americas; etc. */
+   *  default; 180 = Pacific; -95 = Americas; etc.
+   *  NOTE: this should be the BASE meridian only (not including any
+   *  rotation animation offset) so that path recomputation stays cheap. */
   centerLongitude?: number;
-  /** Accumulated rotation offset from the globe-spin animation, in degrees.
-   *  Applied as an SVG translate so path strings don't need to be recomputed
-   *  on every animation tick — only centerLongitude changes trigger a reprojection. */
-  rotationOffset?: number;
   /** When true, the rendered map is flipped vertically — south at the top. */
   southUp?: boolean;
   /** Optional extra controls to render below the +/-/⟲ zoom buttons,
@@ -95,7 +100,7 @@ const DARK_PALETTE: Palette = {
   unknown: "#3a4470",
 };
 
-export function HistoricalMap({
+export const HistoricalMap = memo(function HistoricalMap({
   geoJsonUrl,
   selectedName,
   hoveredName = null,
@@ -104,13 +109,11 @@ export function HistoricalMap({
   zoom: externalZoom,
   onDataLoaded,
   centerLongitude = 0,
-  rotationOffset = 0,
   southUp = false,
   extraControls,
 }: HistoricalMapProps) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
-  const clipId = useId();
   const [data, setData] = useState<FeatureCollection | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -165,15 +168,8 @@ export function HistoricalMap({
 
   // Compute per-feature path strings via d3-geo's equal-earth projection
   // (same as WorldProgressMap so the two maps look like the same world).
-  //
-  // IMPORTANT: rotationOffset is intentionally NOT in the deps array. Paths
-  // are computed at the user's chosen centerLongitude (base meridian), which
-  // changes rarely. The rotation animation is applied as a cheap SVG translate
-  // below so this expensive computation doesn't run on every animation tick.
-  const { renderedFeatures, spherePath, pixelsPerDegree } = useMemo(() => {
-    if (!data || data.features.length === 0) {
-      return { renderedFeatures: [], spherePath: null, pixelsPerDegree: WIDTH / 360 };
-    }
+  const { renderedFeatures, spherePath } = useMemo(() => {
+    if (!data || data.features.length === 0) return { renderedFeatures: [], spherePath: null };
     // Centre the projection on the user-chosen meridian. d3-geo's rotate
     // is [lambda, phi, gamma]; we only touch lambda. South-up is handled
     // separately as an SVG transform so the projection's geometry stays
@@ -191,18 +187,7 @@ export function HistoricalMap({
       return { idx, d, name };
     });
     const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
-
-    // Pixels per degree at the equator — used to convert rotationOffset into
-    // an SVG translateX. Equal-earth is linear in longitude at φ=0, so this
-    // is exact there and a good approximation at other latitudes.
-    const p0 = projection([centerLongitude, 0]);
-    const p1 = projection([centerLongitude + 1, 0]);
-    const pxPerDeg =
-      p0 && p1 && Math.abs(p1[0] - p0[0]) > 0
-        ? Math.abs(p1[0] - p0[0])
-        : WIDTH / 360;
-
-    return { renderedFeatures: features, spherePath, pixelsPerDegree: pxPerDeg };
+    return { renderedFeatures: features, spherePath };
   }, [data, centerLongitude]);
 
   // Compute the "highlight" set: every feature whose NAME matches the
@@ -210,44 +195,6 @@ export function HistoricalMap({
   // often spans many separate polygons (overseas territories, archipelagos)
   // and they all light up together.
   const highlightName = hoveredName ?? selectedName;
-
-  // Rotation applied as a horizontal SVG translate so path strings stay
-  // cached at centerLongitude and don’t need recomputing on each tick.
-  // Three copies of the features group (shifted by ±totalWidth) ensure
-  // continuous coverage across the antimeridian as the globe spins.
-  const totalWidth = pixelsPerDegree * 360;
-  const rotationTx = -(rotationOffset * pixelsPerDegree);
-  const featureCopyOffsets = [-totalWidth, 0, totalWidth] as const;
-
-  function renderFeaturePaths(copyOffset: number) {
-    return renderedFeatures.map((f) => {
-      if (!f.d) return null;
-      const isHighlighted = f.name != null && f.name === highlightName;
-      const fill = isHighlighted
-        ? palette.selected
-        : f.name
-        ? palette.land
-        : palette.unknown;
-      const stroke = isHighlighted ? palette.selectedStroke : palette.stroke;
-      return (
-        <path
-          key={`${copyOffset}-${f.idx}`}
-          d={f.d}
-          fill={fill}
-          stroke={stroke}
-          strokeWidth={isHighlighted ? 1.4 : 0.4}
-          strokeOpacity={isHighlighted ? 1 : 0.5}
-          vectorEffect="non-scaling-stroke"
-          className="world-map__country world-map__country--selectable"
-          onClick={() => onSelect?.(f.name)}
-          onMouseEnter={() => onHover?.(f.name)}
-          onMouseLeave={() => onHover?.(null)}
-        >
-          {f.name ? <title>{f.name}</title> : null}
-        </path>
-      );
-    });
-  }
 
   return (
     <section className="map-section" aria-labelledby="map-heading">
@@ -264,7 +211,7 @@ export function HistoricalMap({
         )}
         {error && (
           <p className="hist-map__error">
-            Couldn’t load the map for this era ({error}).
+            Couldn't load the map for this era ({error}).
           </p>
         )}
         {!loading && !error && (
@@ -285,13 +232,6 @@ export function HistoricalMap({
               touchAction: zoom.isZoomed ? "none" : "auto",
             }}
           >
-            {spherePath && (
-              <defs>
-                <clipPath id={clipId}>
-                  <path d={spherePath} />
-                </clipPath>
-              </defs>
-            )}
             <g transform={zoom.transform}>
             {/* South-up wrapper: SVG transforms compose left-to-right, so
                 `translate(0 H) scale(1 -1)` applied INSIDE zoom flips the
@@ -300,7 +240,6 @@ export function HistoricalMap({
             <g
               transform={southUp ? `translate(0 ${HEIGHT}) scale(1 -1)` : undefined}
             >
-            {/* Sphere outline drawn once, outside the rotation group */}
             {spherePath && (
               <path
                 d={spherePath}
@@ -311,19 +250,38 @@ export function HistoricalMap({
                 vectorEffect="non-scaling-stroke"
               />
             )}
-            {/* Three shifted copies of the feature paths so the map wraps
-                seamlessly as the globe rotates past the antimeridian.
-                The sphere clipPath hides anything outside the oval boundary. */}
-            <g clipPath={spherePath ? `url(#${clipId})` : undefined}>
-              {featureCopyOffsets.map((offset) => (
-                <g
-                  key={offset}
-                  transform={`translate(${rotationTx + offset}, 0)`}
+            {renderedFeatures.map((f) => {
+              if (!f.d) return null;
+              const isHighlighted =
+                f.name != null && f.name === highlightName;
+              const fill = isHighlighted
+                ? palette.selected
+                : f.name
+                ? palette.land
+                : palette.unknown;
+              const stroke = isHighlighted
+                ? palette.selectedStroke
+                : palette.stroke;
+              return (
+                <path
+                  key={f.idx}
+                  d={f.d}
+                  fill={fill}
+                  stroke={stroke}
+                  strokeWidth={isHighlighted ? 1.4 : 0.4}
+                  strokeOpacity={isHighlighted ? 1 : 0.5}
+                  // Keep borders the same visual width regardless of zoom —
+                  // without this they thicken as the user zooms in.
+                  vectorEffect="non-scaling-stroke"
+                  className="world-map__country world-map__country--selectable"
+                  onClick={() => onSelect?.(f.name)}
+                  onMouseEnter={() => onHover?.(f.name)}
+                  onMouseLeave={() => onHover?.(null)}
                 >
-                  {renderFeaturePaths(offset)}
-                </g>
-              ))}
-            </g>
+                  {f.name ? <title>{f.name}</title> : null}
+                </path>
+              );
+            })}
             </g>
             </g>
           </svg>
@@ -365,4 +323,4 @@ export function HistoricalMap({
       </div>
     </section>
   );
-}
+});

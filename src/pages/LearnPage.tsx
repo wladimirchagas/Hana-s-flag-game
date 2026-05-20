@@ -397,9 +397,11 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
 
-  // Base longitude (user's chosen preset) passed to both map back-ends for
-  // path computation. The rotation offset is passed separately so maps can
-  // apply it as a cheap SVG translate without recomputing all path strings.
+  // The modern globe uses the full animated longitude (cheap TopoJSON reprojection).
+  // Historical maps only get the base meridian — their GeoJSON files are up to 14 MB,
+  // so reprojecting on every rotation tick would be far too expensive. Historical maps
+  // are snapshots in time; the user can pan via the preset control.
+  const effectiveLongitude = mapView.centerLongitude + rotationOffset;
 
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.
@@ -494,8 +496,7 @@ export default function LearnPage() {
               },
             }}
             zoom={sharedZoom}
-            centerLongitude={mapView.centerLongitude}
-            rotationOffset={rotationOffset}
+            centerLongitude={effectiveLongitude}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
           />
@@ -517,7 +518,6 @@ export default function LearnPage() {
             }}
             zoom={sharedZoom}
             centerLongitude={mapView.centerLongitude}
-            rotationOffset={rotationOffset}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
             onDataLoaded={setAvailableHistoricalNames}
