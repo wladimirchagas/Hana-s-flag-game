@@ -49,6 +49,15 @@ export function BuildFooter() {
       <span className="build-footer__time" title={builtAt.toISOString()}>
         · {localTime}
       </span>
+      <button
+        type="button"
+        className="build-footer__refresh"
+        onClick={() => window.location.reload()}
+        title="Hard refresh to get the latest version"
+        aria-label="Refresh page"
+      >
+        ↺
+      </button>
     </footer>
   );
 }
