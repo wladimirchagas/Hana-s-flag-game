@@ -280,43 +280,6 @@ export function WorldProgressMap({
     return { pathById: paths, spherePath, centroidByAlpha2, bboxByAlpha2 };
   }, [geographies, effectiveLongitude]);
 
-  // Track which code we last successfully zoomed to so that when the
-  // projection rebuilds (e.g. center longitude change) — which creates a
-  // new centroidByAlpha2 object and re-fires the effect — we don't fly
-  // back to the country the user already found.
-  const zoomedForRef = useRef<string | null>(null);
-
-  // Auto-zoom to newly selected countries.  Runs both when selectedCode
-  // changes AND when centroidByAlpha2 is first populated (async load),
-  // so we always catch whichever happens second.
-  useEffect(() => {
-    if (!selectedCode) return;
-    // Bail if we already flew to this exact code (prevents repeat zoom on
-    // projection rebuild while the same country stays selected).
-    if (zoomedForRef.current === selectedCode) return;
-    const centroid = centroidByAlpha2.get(selectedCode);
-    const bbox = bboxByAlpha2.get(selectedCode);
-    // Data not ready yet — effect will re-fire when centroidByAlpha2 updates.
-    if (!centroid || !bbox) return;
-
-    const pad = 8; // SVG-unit breathing room around the bounding box
-    const targetK = Math.min(
-      /* zoomTo clamps to MAX_K internally */
-      24,
-      Math.min(
-        WIDTH  / (bbox.w + pad * 2),
-        HEIGHT / (bbox.h + pad * 2),
-      ) * 0.65,
-    );
-
-    if (targetK > 2) {
-      zoomedForRef.current = selectedCode;
-      const [svgX, svgY] = centroid;
-      zoom.zoomTo(svgX, southUp ? HEIGHT - svgY : svgY, targetK);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedCode, centroidByAlpha2]);
-
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
   useEffect(() => {
