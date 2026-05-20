@@ -148,6 +148,14 @@ export const ERAS: readonly Era[] = [
     dataUrl: MAP("world_1815"),
   },
   {
+    id: "ad1850",
+    label: "1850",
+    caption: "Industrial age",
+    year: "1850",
+    summary: "Latin American republics established, British Empire expanding, European revolutions of 1848, Qing China weakening.",
+    dataUrl: MAP("world_1850"),
+  },
+  {
     id: "ad1914",
     label: "1914",
     caption: "WWI eve",
