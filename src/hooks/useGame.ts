@@ -113,6 +113,7 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
   const [answerDurationsMs, setAnswerDurationsMs] = useState<number[]>([]);
 
   const askedRef = useRef<Set<string>>(new Set());
+  const usedDistractorsRef = useRef<Set<string>>(new Set());
   const allCountriesRef = useRef<Country[]>([]);
   const gameStartedAtRef = useRef<number | null>(null);
   const roundStartedAtRef = useRef<number>(0);
@@ -148,15 +149,18 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
           }
         }
       }
-      // Shuffle distractor candidates so the N-1 we pick are random — but
-      // the FINAL list is returned in alphabetical order. The CountryDropdown
-      // also sorts defensively, so consumers of `questionAlternatives` never
-      // see a mixed-up order.
-      for (let i = candidates.length - 1; i > 0; i--) {
+      // Prefer candidates not yet used as distractors in this game session.
+      // If there aren't enough fresh ones, fall back to the full candidate pool.
+      const fresh = candidates.filter((c) => !usedDistractorsRef.current.has(c.code));
+      const pickFrom = fresh.length >= optionCount - 1 ? fresh : candidates;
+
+      // Shuffle so the N-1 we pick are random, but return in alphabetical order.
+      for (let i = pickFrom.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [candidates[i], candidates[j]] = [candidates[j]!, candidates[i]!];
+        [pickFrom[i], pickFrom[j]] = [pickFrom[j]!, pickFrom[i]!];
       }
-      const distractors = candidates.slice(0, Math.max(0, optionCount - 1));
+      const distractors = pickFrom.slice(0, Math.max(0, optionCount - 1));
+      distractors.forEach((c) => usedDistractorsRef.current.add(c.code));
       const result = [correct, ...distractors];
       result.sort((a, b) =>
         a.name.localeCompare(b.name, "en", { sensitivity: "base" }),
@@ -176,6 +180,7 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
       }
       if (askedRef.current.size >= list.length) {
         askedRef.current.clear();
+        usedDistractorsRef.current.clear();
       }
       const pool = list.filter((c) => !askedRef.current.has(c.code));
       const pickFrom = pool.length > 0 ? pool : list;
