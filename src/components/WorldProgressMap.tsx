@@ -79,6 +79,8 @@ type Props = {
   southUp?: boolean;
   /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
   extraControls?: React.ReactNode;
+  /** When true, the globe auto-rotates and a pause button is shown. Default false. */
+  rotate?: boolean;
 };
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -170,6 +172,7 @@ export function WorldProgressMap({
   centerLongitude = 0,
   southUp = false,
   extraControls,
+  rotate = false,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -178,8 +181,8 @@ export function WorldProgressMap({
   const frameRef = useRef<HTMLDivElement>(null);
 
   const [rotationOffset, setRotationOffset] = useState(0);
-  const [isRotating, setIsRotating] = useState(true);
-  const isRotatingRef = useRef(true);
+  const [isRotating, setIsRotating] = useState(rotate);
+  const isRotatingRef = useRef(rotate);
   isRotatingRef.current = isRotating;
   const rotationAccumRef = useRef(0);
 
@@ -566,16 +569,20 @@ export function WorldProgressMap({
           >
             ⟲
           </button>
-          <hr className="world-map__zoom-divider" />
-          <button
-            type="button"
-            className="world-map__zoom-btn"
-            onClick={toggleRotation}
-            aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
-            title={isRotating ? "Pause rotation" : "Resume rotation"}
-          >
-            {isRotating ? "⏸" : "▶"}
-          </button>
+          {rotate && (
+            <>
+              <hr className="world-map__zoom-divider" />
+              <button
+                type="button"
+                className="world-map__zoom-btn"
+                onClick={toggleRotation}
+                aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
+                title={isRotating ? "Pause rotation" : "Resume rotation"}
+              >
+                {isRotating ? "⏸" : "▶"}
+              </button>
+            </>
+          )}
           {extraControls}
         </div>
       </div>

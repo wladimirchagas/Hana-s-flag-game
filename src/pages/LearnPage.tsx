@@ -400,6 +400,7 @@ export default function LearnPage() {
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra ? (
           <WorldProgressMap
+            rotate
             countryResults={{}}
             selectedCode={
               display?.kind === "modern" ? display.country.code : null
