@@ -32,12 +32,9 @@ export type LearnTopToolbarProps = {
   } | null;
 };
 
-const TODAY_ID: Era["id"] = "today";
-
 export function LearnTopToolbar({
   currentEraId,
   onEraChange,
-  isModernEra,
   search,
 }: LearnTopToolbarProps) {
   const [historicalOpen, setHistoricalOpen] = useState(false);
@@ -64,43 +61,23 @@ export function LearnTopToolbar({
     };
   }, [historicalOpen]);
 
-  const currentHistorical = !isModernEra
-    ? ERAS.find((e) => e.id === currentEraId) ?? null
-    : null;
+  const currentEra = ERAS.find((e) => e.id === currentEraId) ?? ERAS[ERAS.length - 1];
 
   return (
     <div className="learn-toolbar">
       <div className="learn-toolbar__eras">
-        <button
-          type="button"
-          className={`learn-toolbar__era-pill${
-            isModernEra ? " learn-toolbar__era-pill--active" : ""
-          }`}
-          aria-pressed={isModernEra}
-          onClick={() => {
-            setHistoricalOpen(false);
-            onEraChange(TODAY_ID);
-          }}
-        >
-          Today
-        </button>
         <div className="learn-toolbar__historical" ref={historicalRef}>
           <button
             type="button"
-            className={`learn-toolbar__era-pill${
-              !isModernEra ? " learn-toolbar__era-pill--active" : ""
-            }`}
+            className="learn-toolbar__era-pill learn-toolbar__era-pill--active"
             aria-haspopup="listbox"
             aria-expanded={historicalOpen}
-            aria-pressed={!isModernEra}
             onClick={() => setHistoricalOpen((v) => !v)}
           >
-            Historical periods
-            {currentHistorical && (
-              <span className="learn-toolbar__era-tag">
-                {currentHistorical.label}
-              </span>
-            )}
+            Period: {currentEra.label}
+            <span className="learn-toolbar__era-caption">
+              ({currentEra.caption})
+            </span>
             <span className="learn-toolbar__caret" aria-hidden="true">
               ▾
             </span>
@@ -109,9 +86,9 @@ export function LearnTopToolbar({
             <ul
               className="learn-toolbar__era-menu"
               role="listbox"
-              aria-label="Choose a historical era"
+              aria-label="Choose a period"
             >
-              {ERAS.filter((e) => e.id !== TODAY_ID).map((era) => {
+              {[...ERAS].reverse().map((era) => {
                 const active = era.id === currentEraId;
                 return (
                   <li key={era.id} role="presentation">
