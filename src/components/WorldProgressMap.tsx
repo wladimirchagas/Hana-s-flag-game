@@ -199,8 +199,8 @@ export function WorldProgressMap({
     };
   }, []);
 
-  const pathById = useMemo(() => {
-    if (geographies.length === 0) return new Map<string, string>();
+  const { pathById, spherePath } = useMemo(() => {
+    if (geographies.length === 0) return { pathById: new Map<string, string>(), spherePath: null };
     // Centre on the user-chosen meridian. South-up is handled in SVG
     // (transform on outer <g>) — keeps the projection's antimeridian
     // splitting logic untouched.
@@ -217,7 +217,8 @@ export function WorldProgressMap({
       if (!path) continue;
       paths.set(String(geo.id ?? ""), path);
     }
-    return paths;
+    const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
+    return { pathById: paths, spherePath };
   }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
@@ -328,6 +329,16 @@ export function WorldProgressMap({
           <g
             transform={southUp ? `translate(0 ${HEIGHT}) scale(1 -1)` : undefined}
           >
+          {spherePath && (
+            <path
+              d={spherePath}
+              fill="none"
+              stroke={palette.stroke}
+              strokeWidth={0.45}
+              strokeOpacity={0.55}
+              vectorEffect="non-scaling-stroke"
+            />
+          )}
           {geographies.map((geo, idx) => {
             const key = String(geo.id ?? idx);
             const path = pathById.get(String(geo.id ?? ""));
