@@ -90,6 +90,7 @@ export function LearnTopToolbar({
             >
               {[...ERAS].reverse().map((era) => {
                 const active = era.id === currentEraId;
+                const isToday = era.id === "today";
                 return (
                   <li key={era.id} role="presentation">
                     <button
@@ -98,7 +99,7 @@ export function LearnTopToolbar({
                       aria-selected={active}
                       className={`learn-toolbar__era-option${
                         active ? " learn-toolbar__era-option--active" : ""
-                      }`}
+                      }${isToday ? " learn-toolbar__era-option--today" : ""}`}
                       onClick={() => {
                         onEraChange(era.id);
                         setHistoricalOpen(false);
@@ -106,6 +107,11 @@ export function LearnTopToolbar({
                     >
                       <span className="learn-toolbar__era-option-period">
                         {era.label}
+                        {isToday && (
+                          <span className="learn-toolbar__era-today-badge" aria-label="current era">
+                            NOW
+                          </span>
+                        )}
                       </span>
                       <span className="learn-toolbar__era-option-caption">
                         {era.caption}
