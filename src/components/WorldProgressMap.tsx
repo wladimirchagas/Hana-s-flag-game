@@ -184,6 +184,8 @@ export function WorldProgressMap({
   const [isRotating, setIsRotating] = useState(rotate);
   const isRotatingRef = useRef(rotate);
   isRotatingRef.current = isRotating;
+  const southUpRef = useRef(southUp);
+  southUpRef.current = southUp;
   const rotationAccumRef = useRef(0);
 
   useEffect(() => {
@@ -197,7 +199,8 @@ export function WorldProgressMap({
       const dt = (now - lastTime) / 1000;
       lastTime = now;
       if (isRotatingRef.current) {
-        rotationAccumRef.current = (rotationAccumRef.current + DEGREES_PER_SEC * dt) % 360;
+        const dir = southUpRef.current ? -1 : 1;
+        rotationAccumRef.current = (rotationAccumRef.current + dir * DEGREES_PER_SEC * dt) % 360;
         if (now - lastRenderTime >= MIN_MS_BETWEEN_RENDERS) {
           lastRenderTime = now;
           setRotationOffset(rotationAccumRef.current);
