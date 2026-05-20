@@ -236,6 +236,15 @@ export function WorldProgressMap({
   southUpRef.current = southUp;
   const rotationAccumRef = useRef(0);
 
+  // When the user picks a different view centre (Atlantic → Pacific etc.),
+  // reset the accumulated rotation so the new centre renders immediately
+  // at exactly the chosen longitude rather than offset by whatever the
+  // globe had already rotated to.
+  useEffect(() => {
+    rotationAccumRef.current = 0;
+    setRotationOffset(0);
+  }, [centerLongitude]);
+
   useEffect(() => {
     const DEGREES_PER_SEC = 6;
     const MIN_MS_BETWEEN_RENDERS = 67; // ~15 fps
