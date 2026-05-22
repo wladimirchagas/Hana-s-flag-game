@@ -34,6 +34,9 @@ export type FlagListEntry = {
    *  Groups flags that are commonly confused with each other, based on
    *  vexillology forums and quiz discussions. */
   similarities?: readonly string[];
+  /** Which side of the road the country drives on — "left" or "right".
+   *  Undefined for historical polities. */
+  driveSide?: "left" | "right";
 };
 
 /**

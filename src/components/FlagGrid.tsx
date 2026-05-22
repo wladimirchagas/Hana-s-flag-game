@@ -58,7 +58,8 @@ type GroupMode =
   | "shape"
   | "family"
   | "color"
-  | "similarity";
+  | "similarity"
+  | "drive-side";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -69,6 +70,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   family: "By family",
   color: "By colour",
   similarity: "By similarity",
+  "drive-side": "By driving side",
 };
 
 export function FlagGrid({
@@ -178,6 +180,12 @@ export function FlagGrid({
           });
         }
       }
+    } else if (groupMode === "drive-side") {
+      for (const e of sorted) {
+        const side = e.driveSide;
+        if (side === "left") push("Drives on the left", e);
+        else push("Drives on the right", e);
+      }
     }
 
     // Sort the bucket list.
@@ -211,6 +219,11 @@ export function FlagGrid({
         const oa = similarityHeadingOrder(a);
         const ob = similarityHeadingOrder(b);
         if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "drive-side") {
+        // "Drives on the left" before "Drives on the right".
+        if (a === "Drives on the left") return -1;
+        if (b === "Drives on the left") return 1;
       }
       if (groupMode === "alpha") {
         // Keep "#" at the end.
