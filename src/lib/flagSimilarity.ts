@@ -54,12 +54,11 @@
  *      canton on a dark-blue field. Australia vs New Zealand is the
  *      flagship confusion; Fiji and Tuvalu round out the group.
  *
- *   6. red-white-blue
- *      The Pan-Slavic white-blue-red palette and its close cousins.
- *      Russia / Netherlands / Luxembourg are nearly identical horizontal
- *      tricolours; France is the same three colours arranged vertically.
- *      Croatia, Slovakia, Slovenia, Serbia, and Czechia add coats of
- *      arms to the same stripe pattern.
+ *   6. red-white-blue-h
+ *      Horizontal tricolours combining red, white, and blue stripes.
+ *      Russia, Netherlands, and Luxembourg are nearly identical;
+ *      Croatia, Slovakia, Slovenia, Serbia, and Paraguay share the same
+ *      horizontal stripe pattern with coats of arms on top.
  *
  *   7. crescent-star
  *      Flags featuring a crescent moon and one or more stars — the
@@ -100,7 +99,7 @@ export type FlagSimilarity =
   | "gran-colombia"
   | "nordic-cross"
   | "blue-ensign"
-  | "red-white-blue"
+  | "red-white-blue-h"
   | "crescent-star"
   | "green-yellow-red"
   | "stripes-canton"
@@ -114,7 +113,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "gran-colombia":   "Gran Colombia palette",
     "nordic-cross":    "Nordic Cross",
     "blue-ensign":     "Blue Ensign",
-    "red-white-blue":  "Red-White-Blue",
+    "red-white-blue-h": "Red-White-Blue horizontal",
     "crescent-star":   "Crescent & Star",
     "green-yellow-red":"Green-Yellow-Red",
     "stripes-canton":  "Stripes & Canton",
@@ -129,7 +128,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "gran-colombia",
   "nordic-cross",
   "blue-ensign",
-  "red-white-blue",
+  "red-white-blue-h",
   "crescent-star",
   "green-yellow-red",
   "stripes-canton",
@@ -196,22 +195,18 @@ export const FLAG_SIMILARITIES: Readonly<
   FJ: ["blue-ensign"],
   TV: ["blue-ensign"],
 
-  // ── Red-White-Blue ─────────────────────────────────────────────────────────
+  // ── Red-White-Blue horizontal ─────────────────────────────────────────────
   // Russia / Netherlands / Luxembourg: nearly identical horizontal tricolours
-  RU: ["red-white-blue"],
-  NL: ["red-white-blue"],
-  LU: ["red-white-blue"],
-  // France: same palette arranged vertically — consistently appears on
-  // "similar to Netherlands/Russia" lists.
-  FR: ["red-white-blue"],
-  // Pan-Slavic group sharing the same stripe base
-  HR: ["red-white-blue"],
-  SK: ["red-white-blue"],
-  SI: ["red-white-blue"],
-  RS: ["red-white-blue"],
-  CZ: ["red-white-blue"],
+  RU: ["red-white-blue-h"],
+  NL: ["red-white-blue-h"],
+  LU: ["red-white-blue-h"],
+  // Pan-Slavic group sharing the same horizontal stripe base
+  HR: ["red-white-blue-h"],
+  SK: ["red-white-blue-h"],
+  SI: ["red-white-blue-h"],
+  RS: ["red-white-blue-h"],
   // Paraguay: red-white-blue horizontal stripes, added to confusion pool
-  PY: ["red-white-blue"],
+  PY: ["red-white-blue-h"],
 
   // ── Crescent & Star ────────────────────────────────────────────────────────
   TR: ["crescent-star"],
