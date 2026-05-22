@@ -96,7 +96,15 @@
  *      plain red field — Turkey directly, Tunisia inside a white circle.
  *      Among the most commonly mixed-up Islamic-flag pairs in quizzes.
  *
- *  16. serrated
+ *  16. blue-white
+ *      Flags whose palette is dominated by light blue and white, with
+ *      no other significant colours. Argentina and Uruguay share the
+ *      sky-blue / white horizontal band layout; El Salvador, Honduras,
+ *      Nicaragua, and Guatemala all derive from the Central American
+ *      Federation's blue-white-blue tricolour; Botswana uses light blue,
+ *      white, and a thin black band.
+ *
+ *  17. serrated
  *      Vertical white-and-dark-red bicolours with a serrated / zigzag
  *      border separating the two halves. Bahrain (5 serrated points,
  *      brighter red, 1:2) and Qatar (9 points, dark maroon, 11:28) are
@@ -116,6 +124,7 @@ export type FlagSimilarity =
   | "stripes-canton"
   | "red-white-green"
   | "red-crescent-star"
+  | "blue-white"
   | "serrated";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
@@ -133,6 +142,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "stripes-canton":    "Stripes & Canton",
     "red-white-green":   "Red-White-Green",
     "red-crescent-star": "Red field, crescent & star",
+    "blue-white":        "Blue & White",
     "serrated":          "Serrated bicolour",
   };
 
@@ -151,6 +161,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "stripes-canton",
   "red-white-green",
   "red-crescent-star",
+  "blue-white",
   "serrated",
 ];
 
@@ -246,6 +257,15 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Red field, crescent & star ────────────────────────────────────────────
   TR: ["red-crescent-star"],
   TN: ["red-crescent-star"],
+
+  // ── Blue & White ──────────────────────────────────────────────────────────
+  AR: ["blue-white"],
+  UY: ["blue-white"],
+  SV: ["blue-white"],
+  HN: ["blue-white"],
+  NI: ["blue-white"],
+  GT: ["blue-white"],
+  BW: ["blue-white"],
 
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
