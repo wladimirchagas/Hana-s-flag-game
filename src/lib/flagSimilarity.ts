@@ -246,7 +246,6 @@ export const FLAG_SIMILARITIES: Readonly<
   CG: ["green-yellow-red"],
   GW: ["green-yellow-red"],
   ST: ["green-yellow-red"],
-  ZW: ["green-yellow-red"],
 
   // ── Stripes & Canton ─────────────────────────────────────────────────────
   US: ["stripes-canton"],
