@@ -18,6 +18,11 @@ import {
   FLAG_COLOR_ORDER,
   type FlagColor,
 } from "../lib/flagColors";
+import {
+  FLAG_SIMILARITY_LABELS,
+  FLAG_SIMILARITY_ORDER,
+  type FlagSimilarity,
+} from "../lib/flagSimilarity";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -51,7 +56,8 @@ type GroupMode =
   | "subcontinent"
   | "shape"
   | "family"
-  | "color";
+  | "color"
+  | "similarity";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -61,6 +67,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   shape: "By characteristics",
   family: "By family",
   color: "By colour",
+  similarity: "By similarity",
 };
 
 export function FlagGrid({
@@ -140,6 +147,18 @@ export function FlagGrid({
           push(label, e);
         }
       }
+    } else if (groupMode === "similarity") {
+      for (const e of sorted) {
+        const tags = e.similarities ?? [];
+        if (tags.length === 0) {
+          push("Other", e);
+          continue;
+        }
+        for (const t of tags) {
+          const label = FLAG_SIMILARITY_LABELS[t as FlagSimilarity] ?? t;
+          push(label, e);
+        }
+      }
     }
 
     // Sort the bucket list.
@@ -166,6 +185,12 @@ export function FlagGrid({
         // Canonical colour order; "Other" last.
         const oa = colorHeadingOrder(a);
         const ob = colorHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "similarity") {
+        // Canonical similarity order; "Other" last.
+        const oa = similarityHeadingOrder(a);
+        const ob = similarityHeadingOrder(b);
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "alpha") {
@@ -284,6 +309,14 @@ function colorHeadingOrder(heading: string): number {
   if (heading === "Other") return 999;
   for (let i = 0; i < FLAG_COLOR_ORDER.length; i++) {
     if (FLAG_COLOR_LABELS[FLAG_COLOR_ORDER[i]] === heading) return i;
+  }
+  return 100;
+}
+
+function similarityHeadingOrder(heading: string): number {
+  if (heading === "Other") return 999;
+  for (let i = 0; i < FLAG_SIMILARITY_ORDER.length; i++) {
+    if (FLAG_SIMILARITY_LABELS[FLAG_SIMILARITY_ORDER[i]] === heading) return i;
   }
   return 100;
 }
