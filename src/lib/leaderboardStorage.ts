@@ -31,6 +31,8 @@ export type LeaderboardEntry = {
   countryResults: Record<string, "correct" | "wrong">;
   countriesPlayed: LeaderboardCountrySnapshot[];
   continentBreakdown: LeaderboardContinentBreakdown;
+  /** Identifies the game mode for leaderboard filtering, e.g. "all-195", "quiz-easy", "custom". */
+  gameMode?: string;
 };
 
 const STORAGE_KEY = "flag-game-leaderboard-v1";

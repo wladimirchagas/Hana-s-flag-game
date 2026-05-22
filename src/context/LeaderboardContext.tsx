@@ -16,12 +16,21 @@ import type { LeaderboardEntry, NewLeaderboardEntry } from "../lib/leaderboardSt
 
 export type SyncStatus = "loading" | "ready" | "error";
 
+export type LeaderboardFilter = {
+  gameMode: string;
+  totalFlags: number;
+  /** Human-readable label shown in the leaderboard header, e.g. "Quick Quiz — Easy · 20 flags". */
+  label: string;
+};
+
 type LeaderboardContextValue = {
   isOpen: boolean;
   selectedEntryId: string | null;
   entries: LeaderboardEntry[];
+  filteredEntries: LeaderboardEntry[];
+  activeFilter: LeaderboardFilter | null;
   syncStatus: SyncStatus;
-  openLeaderboard: () => void;
+  openLeaderboard: (filter?: LeaderboardFilter) => void;
   closeLeaderboard: () => void;
   selectEntry: (id: string | null) => void;
   goBackInLeaderboard: () => void;
@@ -36,6 +45,7 @@ export function LeaderboardProvider({ children }: { children: ReactNode }) {
   const [selectedEntryId, setSelectedEntryId] = useState<string | null>(null);
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
   const [syncStatus, setSyncStatus] = useState<SyncStatus>("loading");
+  const [activeFilter, setActiveFilter] = useState<LeaderboardFilter | null>(null);
 
   useEffect(() => {
     return subscribeToLeaderboard(
@@ -47,9 +57,19 @@ export function LeaderboardProvider({ children }: { children: ReactNode }) {
     );
   }, []);
 
-  const openLeaderboard = useCallback(() => {
+  const filteredEntries = useMemo(() => {
+    if (!activeFilter) return entries;
+    return entries.filter(
+      (e) =>
+        (e.gameMode ?? "all-195") === activeFilter.gameMode &&
+        e.totalFlags === activeFilter.totalFlags
+    );
+  }, [entries, activeFilter]);
+
+  const openLeaderboard = useCallback((filter?: LeaderboardFilter) => {
     setIsOpen(true);
     setSelectedEntryId(null);
+    setActiveFilter(filter ?? null);
   }, []);
 
   const closeLeaderboard = useCallback(() => {
@@ -87,6 +107,8 @@ export function LeaderboardProvider({ children }: { children: ReactNode }) {
       isOpen,
       selectedEntryId,
       entries,
+      filteredEntries,
+      activeFilter,
       syncStatus,
       openLeaderboard,
       closeLeaderboard,
@@ -99,6 +121,8 @@ export function LeaderboardProvider({ children }: { children: ReactNode }) {
       isOpen,
       selectedEntryId,
       entries,
+      filteredEntries,
+      activeFilter,
       syncStatus,
       openLeaderboard,
       closeLeaderboard,

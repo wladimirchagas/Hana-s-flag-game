@@ -3,7 +3,8 @@ import type { NewLeaderboardEntry } from "./leaderboardStorage";
 
 export function buildLeaderboardEntryFromGame(
   game: UseGameResult,
-  playerName: string
+  playerName: string,
+  gameMode: string
 ): NewLeaderboardEntry {
   const name = playerName.trim().slice(0, 48);
   const countriesPlayed = game.countries
@@ -32,5 +33,6 @@ export function buildLeaderboardEntryFromGame(
     countryResults: { ...game.countryResults },
     countriesPlayed,
     continentBreakdown: game.continentBreakdown.map((row) => ({ ...row })),
+    gameMode,
   };
 }
