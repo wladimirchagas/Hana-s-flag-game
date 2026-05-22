@@ -5,6 +5,7 @@ import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
 import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
+import { AllFlagsSetupModal, type AllFlagsMode } from '../components/AllFlagsSetupModal'
 import { HeroCarousel } from '../components/HeroCharacters'
 import './LandingPage.css'
 
@@ -21,8 +22,12 @@ export default function LandingPage() {
   const navigate = useNavigate()
   const [pickerOpen, setPickerOpen] = useState(false)
   const [quizOpen, setQuizOpen] = useState(false)
+  const [allFlagsOpen, setAllFlagsOpen] = useState(false)
 
-  const playAll = () => navigate('/game')
+  const playAllMode = (mode: AllFlagsMode) => {
+    setAllFlagsOpen(false)
+    if (mode === 'all195') navigate('/game')
+  }
   const playWith = (codes: string[]) => {
     setPickerOpen(false)
     navigate('/game', { state: { codes } })
@@ -120,18 +125,18 @@ export default function LandingPage() {
             <span className="card-sticker__cta card-sticker__cta--mustard">SET UP →</span>
           </button>
 
-          {/* All 195 Flags is now the 3rd CTA. */}
+          {/* All 195 Flags — now opens a mode-picker modal. */}
           <button
             type="button"
             className="card-sticker card-sticker--a card-sticker--secondary"
-            onClick={playAll}
+            onClick={() => setAllFlagsOpen(true)}
           >
             <h2 className="card-sticker__title">All 195 Flags</h2>
             <p className="card-sticker__sub">
-              The full set, in random order. One guess per flag — for the
-              ultimate test of how many you know.
+              Hard-mode challenges using all 195 flags. Pick your ultimate
+              test.
             </p>
-            <span className="card-sticker__cta card-sticker__cta--lime">PLAY ALL →</span>
+            <span className="card-sticker__cta card-sticker__cta--lime">CHOOSE →</span>
           </button>
         </div>
 
@@ -154,6 +159,12 @@ export default function LandingPage() {
         open={quizOpen}
         onClose={() => setQuizOpen(false)}
         onStart={playQuiz}
+      />
+
+      <AllFlagsSetupModal
+        open={allFlagsOpen}
+        onClose={() => setAllFlagsOpen(false)}
+        onStart={playAllMode}
       />
     </div>
   )
