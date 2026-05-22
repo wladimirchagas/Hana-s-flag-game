@@ -132,19 +132,19 @@
  *      central disc) share the same three-colour palette and a central
  *      circular symbol; a commonly cited quiz confusion pair.
  *
- *  21. red-yellow-green-h
- *      Bolivia (red / yellow / green horizontal, + coat of arms) and
- *      Ghana (red / gold / green horizontal + black star) share the
- *      same horizontal red-yellow-green stripe order and are frequently
- *      confused despite the different central symbols.
+ *  22. triangle-hoist
+ *      Flags with a prominent triangle on the hoist side: Czechia,
+ *      Chile, Costa Rica, Cuba, and the Philippines all share this
+ *      distinctive layout — horizontal stripes with a triangle wedged
+ *      into the hoist — and are routinely mixed up in quizzes.
  *
- *  22. red-field-star
+ *  23. red-field-star
  *      China (red field + five yellow stars) and Vietnam (red field +
  *      single large yellow star) both feature a plain red background
  *      with prominent yellow star(s) — the most-cited "communist flag"
  *      confusion pair in quizzes.
  *
- *  23. serrated
+ *  24. serrated
  *      Vertical white-and-dark-red bicolours with a serrated / zigzag
  *      border separating the two halves. Bahrain (5 serrated points,
  *      brighter red, 1:2) and Qatar (9 points, dark maroon, 11:28) are
@@ -173,7 +173,7 @@ export type FlagSimilarity =
   | "disc-on-field"
   | "shahada"
   | "saffron-white-green"
-  | "red-yellow-green-h"
+  | "triangle-hoist"
   | "red-field-star"
   | "serrated";
 
@@ -201,7 +201,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "disc-on-field":      "Plain field with disc",
     "shahada":             "Shahada inscription",
     "saffron-white-green": "Saffron, White & Green",
-    "red-yellow-green-h":  "Horizontal Red-Yellow-Green",
+    "triangle-hoist":      "Triangle on hoist",
     "red-field-star":      "Red field with yellow star",
     "serrated":            "Serrated bicolour",
   };
@@ -230,7 +230,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "disc-on-field",
   "shahada",
   "saffron-white-green",
-  "red-yellow-green-h",
+  "triangle-hoist",
   "red-field-star",
   "serrated",
 ];
@@ -248,9 +248,13 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
   "arab-palette":      ["EG", "IQ", "YE", "SD", "KW", "SY"],
   "red-white-blue-h":  ["NL", "LU", "HR", "SK", "SI", "RU", "PY", "RS"],
-  "red-white-green":   ["HU", "IR", "GQ", "BG", "IT", "MX"],
+  "green-yellow-red":  ["CG", "SN", "CM", "GH", "ET", "ST", "GW", "TG", "BJ", "BF", "BO", "GN", "ML", "LT", "MM"],
+  "green-blue":        ["SL", "DJ", "LS"],
+  "stripes-canton":    ["US", "LR", "MY"],
+  "red-white-green":   ["HU", "TJ", "IR", "GQ", "BG", "IT", "MX"],
   "blue-white":        ["BW", "AR", "HN", "NI", "SV", "UY", "GT"],
-  "green-yellow-red":  ["CG", "GN", "ML", "SN", "ET", "GH", "CM", "BF", "BJ", "TG", "GW", "ST"],
+  "disc-on-field":     ["JP", "PW", "BD"],
+  "triangle-hoist":    ["CZ", "CL", "CR", "CU", "PH"],
 };
 
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
@@ -320,12 +324,10 @@ export const FLAG_SIMILARITIES: Readonly<
   RS: ["red-white-blue-h"],
   PY: ["red-white-blue-h"],
 
-  MY: ["stripes-canton"],
-
   // ── Green-Yellow-Red ──────────────────────────────────────────────────────
-  // GN, ML, SN already tagged ryg-vertical above; remaining Pan-African:
+  SN: ["green-yellow-red"],
   ET: ["green-yellow-red"],
-  GH: ["green-yellow-red", "red-yellow-green-h"],
+  GH: ["green-yellow-red"],
   CM: ["green-yellow-red"],
   BF: ["green-yellow-red"],
   BJ: ["green-yellow-red", "hoist-stripe"],
@@ -333,13 +335,20 @@ export const FLAG_SIMILARITIES: Readonly<
   CG: ["green-yellow-red"],
   GW: ["green-yellow-red"],
   ST: ["green-yellow-red"],
+  BO: ["green-yellow-red"],
+  GN: ["green-yellow-red"],
+  ML: ["green-yellow-red"],
+  LT: ["green-yellow-red"],
+  MM: ["green-yellow-red"],
 
   // ── Stripes & Canton ─────────────────────────────────────────────────────
   US: ["stripes-canton"],
   LR: ["stripes-canton"],
+  MY: ["stripes-canton"],
 
   // ── Red-White-Green ───────────────────────────────────────────────────────
   HU: ["red-white-green"],
+  TJ: ["red-white-green"],
   IR: ["red-white-green"],
   BG: ["red-white-green"],
   IT: ["red-white-green"],
@@ -398,9 +407,12 @@ export const FLAG_SIMILARITIES: Readonly<
   IN: ["saffron-white-green"],
   NE: ["saffron-white-green"],
 
-  // ── Horizontal Red-Yellow-Green ───────────────────────────────────────────
-  // Bolivia / Ghana: both horizontal red-yellow(gold)-green tricolours
-  BO: ["red-yellow-green-h"],
+  // ── Triangle on hoist ─────────────────────────────────────────────────────
+  CZ: ["triangle-hoist"],
+  CL: ["triangle-hoist"],
+  CR: ["triangle-hoist"],
+  CU: ["triangle-hoist"],
+  PH: ["triangle-hoist"],
 
   // ── Red field with yellow star ────────────────────────────────────────────
   // China / Vietnam: plain red field with prominent yellow star(s)
