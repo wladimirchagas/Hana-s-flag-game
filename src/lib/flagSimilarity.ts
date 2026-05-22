@@ -110,7 +110,20 @@
  *      feature a bold red-and-white cross design and are commonly
  *      confused at a glance.
  *
- *  18. serrated
+ *  18. green-blue
+ *      Flags whose field is shared between green and blue with no other
+ *      dominant colour. Sierra Leone (green/white/blue horizontal),
+ *      Gabon (green/yellow/blue horizontal), and Djibouti (blue/green
+ *      halves with a white triangle) are regularly confused in quizzes.
+ *
+ *  19. hoist-stripe
+ *      Flags with a single vertical stripe on the hoist side alongside
+ *      horizontal colour bands on the fly. Oman (red hoist stripe +
+ *      white/red/green bands), Madagascar (white hoist stripe +
+ *      red/green stacked halves), and Benin (green hoist stripe +
+ *      yellow/red stacked halves) share this distinctive layout.
+ *
+ *  20. serrated
  *      Vertical white-and-dark-red bicolours with a serrated / zigzag
  *      border separating the two halves. Bahrain (5 serrated points,
  *      brighter red, 1:2) and Qatar (9 points, dark maroon, 11:28) are
@@ -132,6 +145,8 @@ export type FlagSimilarity =
   | "red-crescent-star"
   | "blue-white"
   | "red-white-cross"
+  | "green-blue"
+  | "hoist-stripe"
   | "serrated";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
@@ -151,6 +166,8 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-crescent-star": "Red field, crescent & star",
     "blue-white":        "Blue & White",
     "red-white-cross":   "Red & White cross",
+    "green-blue":        "Green & Blue",
+    "hoist-stripe":      "Vertical hoist stripe",
     "serrated":          "Serrated bicolour",
   };
 
@@ -171,6 +188,8 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "red-crescent-star",
   "blue-white",
   "red-white-cross",
+  "green-blue",
+  "hoist-stripe",
   "serrated",
 ];
 
@@ -276,9 +295,19 @@ export const FLAG_SIMILARITIES: Readonly<
   GT: ["blue-white"],
   BW: ["blue-white"],
 
+  // ── Green & Blue ──────────────────────────────────────────────────────────
+  SL: ["green-blue"],
+  GA: ["green-blue"],
+  DJ: ["green-blue"],
+
   // ── Red & White cross ─────────────────────────────────────────────────────
   CH: ["red-white-cross"],
   TO: ["red-white-cross"],
+
+  // ── Vertical hoist stripe ─────────────────────────────────────────────────
+  OM: ["hoist-stripe"],
+  MG: ["hoist-stripe"],
+  BJ: ["hoist-stripe"],
 
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
