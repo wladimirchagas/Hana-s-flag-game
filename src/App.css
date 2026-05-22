@@ -39,7 +39,8 @@
 }
 
 .game-clock__elapsed,
-.game-clock__avg {
+.game-clock__avg,
+.game-clock__progress {
   display: inline-flex;
   align-items: baseline;
   gap: 0.35rem;
@@ -67,6 +68,12 @@
   color: var(--sky);
 }
 
+.game-clock__value--progress {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
 @media (max-width: 540px) {
   .game-clock {
     gap: 0.45rem;
@@ -81,6 +88,9 @@
     font-size: 0.95rem;
   }
   .game-clock__value--secondary {
+    font-size: 0.85rem;
+  }
+  .game-clock__value--progress {
     font-size: 0.85rem;
   }
 }
