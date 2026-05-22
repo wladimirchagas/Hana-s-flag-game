@@ -148,6 +148,7 @@ export type FlagSimilarity =
   | "red-white-cross"
   | "green-blue"
   | "hoist-stripe"
+  | "red-white-red"
   | "serrated";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
@@ -169,6 +170,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-white-cross":   "Red & White cross",
     "green-blue":        "Green & Blue",
     "hoist-stripe":      "Vertical hoist stripe",
+    "red-white-red":     "Red-White-Red",
     "serrated":          "Serrated bicolour",
   };
 
@@ -191,6 +193,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "red-white-cross",
   "green-blue",
   "hoist-stripe",
+  "red-white-red",
   "serrated",
 ];
 
@@ -311,6 +314,10 @@ export const FLAG_SIMILARITIES: Readonly<
   OM: ["hoist-stripe"],
   MG: ["hoist-stripe"],
   BJ: ["hoist-stripe"],
+
+  // ── Red-White-Red ─────────────────────────────────────────────────────────
+  AT: ["red-white-red"],
+  LV: ["red-white-red"],
 
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
