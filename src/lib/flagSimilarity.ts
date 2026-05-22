@@ -36,11 +36,12 @@
  *      with a crescent canton). Grouped together on virtually every
  *      "similar flags" list.
  *
- *   5. red-white-black
- *      Arab Liberation Flag palette: red / white / black horizontal
- *      bands (sometimes with a coloured hoist triangle or central
- *      emblem). Egypt, Syria, Iraq, Yemen, and Sudan all share this
- *      base layout and are routinely confused in quizzes.
+ *   5. arab-palette
+ *      The Pan-Arab colour palette: red, white, black, and green in
+ *      varying combinations. Egypt, Syria, Iraq, Yemen, and Sudan share
+ *      the red/white/black horizontal base; Sudan and Syria add green
+ *      accents; Kuwait's horizontal stripes include all four colours.
+ *      Routinely confused in quizzes.
  *
  *   7. gran-colombia
  *      Yellow-blue-red horizontal tricolour inherited from Simón
@@ -134,7 +135,7 @@ export type FlagSimilarity =
   | "vertical-byr"
   | "green-white-orange"
   | "red-white-bicolor"
-  | "red-white-black"
+  | "arab-palette"
   | "gran-colombia"
   | "nordic-cross"
   | "blue-ensign"
@@ -155,7 +156,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "vertical-byr":      "Vertical Blue-Yellow-Red",
     "green-white-orange": "Green, White & Orange",
     "red-white-bicolor": "Red & White bicolour",
-    "red-white-black":   "Red-White-Black",
+    "arab-palette":   "Arab palette",
     "gran-colombia":     "Gran Colombia palette",
     "nordic-cross":      "Nordic Cross",
     "blue-ensign":       "Blue Ensign",
@@ -177,7 +178,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "vertical-byr",
   "green-white-orange",
   "red-white-bicolor",
-  "red-white-black",
+  "arab-palette",
   "gran-colombia",
   "nordic-cross",
   "blue-ensign",
@@ -223,11 +224,12 @@ export const FLAG_SIMILARITIES: Readonly<
 
   // ── Red-White-Black ────────────────────────────────────────────────────────
   // Arab Liberation palette horizontal tricolours
-  EG: ["red-white-black"],
-  SY: ["red-white-black"],
-  IQ: ["red-white-black"],
-  YE: ["red-white-black"],
-  SD: ["red-white-black"],
+  EG: ["arab-palette"],
+  SY: ["arab-palette"],
+  IQ: ["arab-palette"],
+  YE: ["arab-palette"],
+  SD: ["arab-palette"],
+  KW: ["arab-palette"],
 
   // ── Gran Colombia palette ─────────────────────────────────────────────────
   CO: ["gran-colombia"],
