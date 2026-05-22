@@ -149,6 +149,8 @@ export type FlagSimilarity =
   | "green-blue"
   | "hoist-stripe"
   | "red-white-red"
+  | "blue-stars-stripe"
+  | "disc-on-field"
   | "serrated";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
@@ -170,8 +172,10 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-white-cross":   "Red & White cross",
     "green-blue":        "Green & Blue",
     "hoist-stripe":      "Vertical hoist stripe",
-    "red-white-red":     "Red-White-Red",
-    "serrated":          "Serrated bicolour",
+    "red-white-red":      "Red-White-Red",
+    "blue-stars-stripe":  "Blue field with stars & stripe",
+    "disc-on-field":      "Plain field with disc",
+    "serrated":           "Serrated bicolour",
   };
 
 /** Canonical display order for the "By similarity" group headings. */
@@ -194,6 +198,8 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "green-blue",
   "hoist-stripe",
   "red-white-red",
+  "blue-stars-stripe",
+  "disc-on-field",
   "serrated",
 ];
 
@@ -314,6 +320,16 @@ export const FLAG_SIMILARITIES: Readonly<
   OM: ["hoist-stripe"],
   MG: ["hoist-stripe"],
   BJ: ["hoist-stripe"],
+
+  // ── Plain field with disc ─────────────────────────────────────────────────
+  JP: ["disc-on-field"],
+  PW: ["disc-on-field"],
+  BD: ["disc-on-field"],
+
+  // ── Blue field with stars & stripe ───────────────────────────────────────
+  NR: ["blue-stars-stripe"],
+  MH: ["blue-stars-stripe"],
+  CV: ["blue-stars-stripe"],
 
   // ── Red-White-Red ─────────────────────────────────────────────────────────
   AT: ["red-white-red"],
