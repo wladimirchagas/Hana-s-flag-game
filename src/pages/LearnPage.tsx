@@ -115,6 +115,13 @@ export default function LearnPage() {
   const southUpForRotRef = useRef(mapView.southUp);
   southUpForRotRef.current = mapView.southUp;
   const rotationAccumRef = useRef(0);
+  // Track whether we're in the modern era inside the rAF loop. Historical
+  // maps don't use the rotation offset at all, so we must not call
+  // setRotationOffset during historical eras — it would force LearnPage to
+  // re-render at 15fps and bypass HistoricalMap's memo, re-rendering
+  // hundreds of SVG paths on every frame and blocking all user interaction.
+  const isModernEraRef = useRef(isModernEra);
+  isModernEraRef.current = isModernEra;
 
   const toggleRotation = useCallback(() => {
     setIsRotating((prev) => !prev);
@@ -151,7 +158,11 @@ export default function LearnPage() {
         const dir = southUpForRotRef.current ? -1 : 1;
         rotationAccumRef.current =
           (rotationAccumRef.current + dir * DEGREES_PER_SEC * dt) % 360;
-        if (now - lastRenderTime >= MIN_MS_BETWEEN_RENDERS) {
+        // Only push state (and thus trigger a re-render) for the modern era.
+        // Historical maps ignore the rotation offset entirely, so updating
+        // state for them would cause 15fps re-renders of HistoricalMap with
+        // no visual benefit — and those re-renders block click events.
+        if (isModernEraRef.current && now - lastRenderTime >= MIN_MS_BETWEEN_RENDERS) {
           lastRenderTime = now;
           setRotationOffset(rotationAccumRef.current);
         }
@@ -407,22 +418,48 @@ export default function LearnPage() {
   // are snapshots in time; the user can pan via the preset control.
   const effectiveLongitude = mapView.centerLongitude + rotationOffset;
 
+  // Stable callbacks for HistoricalMap — memoised so React.memo() on that
+  // component is not bypassed when unrelated state (selected, hovered, …)
+  // changes. The deps match what selectionFromPolityName reads from closure.
+  const handleHistoricalSelect = useCallback(
+    (name: string | null) => {
+      setSelected(selectionFromPolityName(name));
+      setHovered(null);
+    },
+    // selectionFromPolityName closes over eraId + countryByName only.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [eraId, countryByName],
+  );
+  const handleHistoricalHover = useCallback(
+    (name: string | null) => {
+      setHovered(selectionFromPolityName(name));
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [eraId, countryByName],
+  );
+
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.
-  const mapExtraControls = (
-    <>
-      <hr className="world-map__zoom-divider" />
-      <button
-        type="button"
-        className="world-map__zoom-btn"
-        onClick={toggleRotation}
-        aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
-        title={isRotating ? "Pause rotation" : "Resume rotation"}
-      >
-        {isRotating ? "⏸" : "▶"}
-      </button>
-      <MapViewControl view={mapView} onChange={setMapView} />
-    </>
+  // Memoised so that HistoricalMap's React.memo() wrapper is not bypassed
+  // by a new JSX reference on every rotation-driven render.
+  const mapExtraControls = useMemo(
+    () => (
+      <>
+        <hr className="world-map__zoom-divider" />
+        <button
+          type="button"
+          className="world-map__zoom-btn"
+          onClick={toggleRotation}
+          aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
+          title={isRotating ? "Pause rotation" : "Resume rotation"}
+        >
+          {isRotating ? "⏸" : "▶"}
+        </button>
+        <MapViewControl view={mapView} onChange={setMapView} />
+      </>
+    ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [isRotating, mapView, toggleRotation],
   );
 
   function handleGridSelect(id: string) {
@@ -511,15 +548,8 @@ export default function LearnPage() {
               display?.kind === "historical" ? display.name : null
             }
             hoveredName={hovered?.kind === "historical" ? hovered.name : null}
-            onSelect={(name) => {
-              const next = selectionFromPolityName(name);
-              setSelected(next);
-              setHovered(null);
-            }}
-            onHover={(name) => {
-              const next = selectionFromPolityName(name);
-              setHovered(next);
-            }}
+            onSelect={handleHistoricalSelect}
+            onHover={handleHistoricalHover}
             zoom={sharedZoom}
             centerLongitude={mapView.centerLongitude}
             southUp={mapView.southUp}
