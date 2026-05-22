@@ -151,6 +151,7 @@ export type FlagSimilarity =
   | "red-white-red"
   | "blue-stars-stripe"
   | "disc-on-field"
+  | "shahada"
   | "serrated";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
@@ -175,6 +176,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-white-red":      "Red-White-Red",
     "blue-stars-stripe":  "Blue field with stars & stripe",
     "disc-on-field":      "Plain field with disc",
+    "shahada":            "Shahada inscription",
     "serrated":           "Serrated bicolour",
   };
 
@@ -200,6 +202,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "red-white-red",
   "blue-stars-stripe",
   "disc-on-field",
+  "shahada",
   "serrated",
 ];
 
@@ -230,6 +233,7 @@ export const FLAG_SIMILARITIES: Readonly<
   ID: ["red-white-bicolor"],
   PL: ["red-white-bicolor"],
   SG: ["red-white-bicolor"],
+  MT: ["red-white-bicolor"],
 
   // ── Red-White-Black ────────────────────────────────────────────────────────
   // Arab Liberation palette horizontal tricolours
@@ -334,6 +338,10 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Red-White-Red ─────────────────────────────────────────────────────────
   AT: ["red-white-red"],
   LV: ["red-white-red"],
+
+  // ── Shahada inscription ───────────────────────────────────────────────────
+  SA: ["shahada"],
+  AF: ["shahada"],
 
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
