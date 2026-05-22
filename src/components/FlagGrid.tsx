@@ -20,6 +20,7 @@ import {
 } from "../lib/flagColors";
 import {
   FLAG_SIMILARITY_LABELS,
+  FLAG_SIMILARITY_MEMBER_ORDER,
   FLAG_SIMILARITY_ORDER,
   type FlagSimilarity,
 } from "../lib/flagSimilarity";
@@ -157,6 +158,24 @@ export function FlagGrid({
         for (const t of tags) {
           const label = FLAG_SIMILARITY_LABELS[t as FlagSimilarity] ?? t;
           push(label, e);
+        }
+      }
+      // Apply custom within-group ordering where defined, replacing the
+      // default alphabetical sort for those specific buckets.
+      for (const [label, items] of buckets) {
+        const groupKey = (Object.keys(FLAG_SIMILARITY_LABELS) as FlagSimilarity[]).find(
+          (k) => FLAG_SIMILARITY_LABELS[k] === label,
+        );
+        const order = groupKey ? FLAG_SIMILARITY_MEMBER_ORDER[groupKey] : undefined;
+        if (order) {
+          items.sort((a, b) => {
+            const ia = order.indexOf(a.id);
+            const ib = order.indexOf(b.id);
+            if (ia !== -1 && ib !== -1) return ia - ib;
+            if (ia !== -1) return -1;
+            if (ib !== -1) return 1;
+            return a.name.localeCompare(b.name, "en");
+          });
         }
       }
     }

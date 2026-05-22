@@ -235,6 +235,20 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "serrated",
 ];
 
+/**
+ * Optional custom display order for members within a similarity group.
+ * When present, flags are shown in this exact sequence instead of
+ * the default alphabetical sort. Keyed on FlagSimilarity group id;
+ * values are ordered arrays of ISO 3166-1 alpha-2 codes.
+ */
+export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
+  Record<FlagSimilarity, readonly string[]>
+> = {
+  "vertical-byr":      ["TD", "RO", "AD", "MD"],
+  "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
+  "arab-palette":      ["EG", "SY", "IQ", "YE", "SD", "KW"],
+};
+
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
 export const FLAG_SIMILARITIES: Readonly<
   Record<string, readonly FlagSimilarity[]>
@@ -246,9 +260,9 @@ export const FLAG_SIMILARITIES: Readonly<
   AE: ["bwg-red-accent"],
 
   // ── Vertical Blue-Yellow-Red ──────────────────────────────────────────────
-  // Romania / Chad: virtually identical; Andorra / Moldova add COA
-  RO: ["vertical-byr"],
+  // Chad / Romania first (virtually identical); Andorra / Moldova add COA
   TD: ["vertical-byr"],
+  RO: ["vertical-byr"],
   AD: ["vertical-byr"],
   MD: ["vertical-byr"],
 
