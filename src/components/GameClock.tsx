@@ -7,6 +7,8 @@ type Props = {
   /** When set, elapsed time is frozen at (endedAt - startedAt). */
   endedAt: number | null;
   meanAnswerMs: number | null;
+  totalAnswered: number;
+  totalFlags: number;
 };
 
 function formatElapsed(ms: number): string {
@@ -31,7 +33,7 @@ function formatElapsed(ms: number): string {
  * on a single row so the clock fits next to the topbar's home link +
  * theme toggle without crowding them.
  */
-export function GameClock({ startedAt, endedAt, meanAnswerMs }: Props) {
+export function GameClock({ startedAt, endedAt, meanAnswerMs, totalAnswered, totalFlags }: Props) {
   const [, setTick] = useState(0);
   const [slot, setSlot] = useState<HTMLElement | null>(null);
 
@@ -64,6 +66,12 @@ export function GameClock({ startedAt, endedAt, meanAnswerMs }: Props) {
           {meanAnswerMs != null
             ? `${(meanAnswerMs / 1000).toFixed(1)} s`
             : "—"}
+        </span>
+      </div>
+      <div className="game-clock__progress">
+        <span className="game-clock__label">Question</span>
+        <span className="game-clock__value game-clock__value--progress">
+          {totalAnswered}&thinsp;/&thinsp;{totalFlags}
         </span>
       </div>
     </div>

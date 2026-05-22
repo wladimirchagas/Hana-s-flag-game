@@ -155,6 +155,8 @@ export default function FlagGamePage() {
         startedAt={game.gameStartedAtMs}
         endedAt={game.gameEndedAtMs}
         meanAnswerMs={game.meanAnswerMs}
+        totalAnswered={game.totalAnswered}
+        totalFlags={game.totalFlags}
       />
       <main className="card">
         <header className="card-header">
