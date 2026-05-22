@@ -47,10 +47,10 @@ const COUNT_OPTIONS: readonly number[] = [10, 20, 30];
 const DIFFICULTY_OPTIONS: readonly Difficulty[] = ["easy", "moderate", "hard"];
 
 const MODE_LABELS: Record<QuizMode, string> = {
-  difficulty: "Play by flag difficulty level",
-  similarity: "Spot the difference within similar flags",
-  continent:  "Play by Continent",
-  subregion:  "Play by Sub-Continent",
+  difficulty: "Difficulty level",
+  similarity: "Similar flags only",
+  continent:  "Continent",
+  subregion:  "Sub-continent",
 };
 
 export function QuickQuizSetupModal({
@@ -151,7 +151,7 @@ export function QuickQuizSetupModal({
           </select>
         </div>
 
-        {/* ── Play by flag difficulty level ── */}
+        {/* ── Difficulty level ── */}
         {mode === "difficulty" && (
           <>
             <div className="qquiz__body">
@@ -222,7 +222,7 @@ export function QuickQuizSetupModal({
           </>
         )}
 
-        {/* ── Spot the difference within similar flags ── */}
+        {/* ── Similar flags only ── */}
         {mode === "similarity" && (
           <>
             <div className="qquiz__body qquiz__body--groups">
@@ -262,7 +262,7 @@ export function QuickQuizSetupModal({
           </>
         )}
 
-        {/* ── Play by Continent ── */}
+        {/* ── Continent ── */}
         {mode === "continent" && (
           <>
             <div className="qquiz__body qquiz__body--groups">
@@ -293,7 +293,7 @@ export function QuickQuizSetupModal({
           </>
         )}
 
-        {/* ── Play by Sub-Continent ── */}
+        {/* ── Sub-continent ── */}
         {mode === "subregion" && (
           <>
             <div className="qquiz__body qquiz__body--groups">
