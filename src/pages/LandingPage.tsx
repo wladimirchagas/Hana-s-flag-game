@@ -36,7 +36,7 @@ export default function LandingPage() {
           groupGame: {
             groupCodes: config.groupCodes,
             groupLabel: config.groupLabel,
-            hardcore: config.hardcore,
+            hardcore: false,
             modeLabel: 'By Similarity',
           },
         },

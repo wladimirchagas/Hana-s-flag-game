@@ -31,12 +31,7 @@ const SIM_GROUP_CODES = buildGroupCodesMap();
 
 export type QuickQuizConfig =
   | { type: "difficulty"; flagCount: number; difficulty: Difficulty }
-  | {
-      type: "similarity";
-      groupCodes: string[];
-      groupLabel: string;
-      hardcore: boolean;
-    }
+  | { type: "similarity"; groupCodes: string[]; groupLabel: string }
   | { type: "continent"; groupCodes: string[]; groupLabel: string }
   | { type: "subregion"; groupCodes: string[]; groupLabel: string };
 
@@ -47,14 +42,13 @@ export type QuickQuizSetupModalProps = {
 };
 
 type QuizMode = "difficulty" | "similarity" | "continent" | "subregion";
-type SimilarityStep = "groups" | "submode";
 
 const COUNT_OPTIONS: readonly number[] = [10, 20, 30];
 const DIFFICULTY_OPTIONS: readonly Difficulty[] = ["easy", "moderate", "hard"];
 
 const MODE_LABELS: Record<QuizMode, string> = {
   difficulty: "Play by flag difficulty level",
-  similarity: "Play by Flag Similarity",
+  similarity: "Spot the difference within similar flags",
   continent:  "Play by Continent",
   subregion:  "Play by Sub-Continent",
 };
@@ -67,8 +61,6 @@ export function QuickQuizSetupModal({
   const [mode, setMode] = useState<QuizMode>("difficulty");
   const [count, setCount] = useState<number>(20);
   const [difficulty, setDifficulty] = useState<Difficulty>("moderate");
-  const [simStep, setSimStep] = useState<SimilarityStep>("groups");
-  const [selectedGroup, setSelectedGroup] = useState<FlagSimilarity | null>(null);
 
   const closeRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
@@ -97,46 +89,22 @@ export function QuickQuizSetupModal({
   useEffect(() => {
     if (!open) {
       setMode("difficulty");
-      setSimStep("groups");
-      setSelectedGroup(null);
     }
   }, [open]);
-
-  useEffect(() => {
-    setSimStep("groups");
-    setSelectedGroup(null);
-  }, [mode]);
 
   if (!open) return null;
 
   const bucketSize = codesForDifficulty(difficulty).length;
   const effectiveCount = Math.min(count, bucketSize);
 
-  const handleSimGroupSelect = (group: FlagSimilarity) => {
-    setSelectedGroup(group);
-    setSimStep("submode");
-  };
-
-  const handleSubmode = (hardcore: boolean) => {
-    if (!selectedGroup) return;
-    const codes = SIM_GROUP_CODES[selectedGroup] ?? [];
-    const label = FLAG_SIMILARITY_LABELS[selectedGroup];
-    onStart({ type: "similarity", groupCodes: codes, groupLabel: label, hardcore });
-  };
-
-  const simGroupCodes = selectedGroup ? (SIM_GROUP_CODES[selectedGroup] ?? []) : [];
-  const simGroupLabel = selectedGroup ? FLAG_SIMILARITY_LABELS[selectedGroup] : "";
-
   const hint =
     mode === "difficulty"
       ? "Pick how many flags and how hard you want it."
-      : mode === "similarity" && simStep === "submode"
-        ? `${simGroupLabel} · ${simGroupCodes.length} flag${simGroupCodes.length === 1 ? "" : "s"} — pick your challenge level.`
-        : mode === "similarity"
-          ? "Pick a group of similar flags to test yourself on."
-          : mode === "continent"
-            ? "Pick a continent — you'll guess every flag from it."
-            : "Pick a sub-continent — you'll guess every flag from it.";
+      : mode === "similarity"
+        ? "Pick a group of similar flags to test yourself on."
+        : mode === "continent"
+          ? "Pick a continent — you'll guess every flag from it."
+          : "Pick a sub-continent — you'll guess every flag from it.";
 
   return (
     <div
@@ -254,78 +222,41 @@ export function QuickQuizSetupModal({
           </>
         )}
 
-        {/* ── Play by Flag Similarity — group picker ── */}
-        {mode === "similarity" && simStep === "groups" && (
+        {/* ── Spot the difference within similar flags ── */}
+        {mode === "similarity" && (
           <>
             <div className="qquiz__body qquiz__body--groups">
-              {FLAG_SIMILARITY_ORDER.map((group) => {
-                const codes = SIM_GROUP_CODES[group] ?? [];
-                if (codes.length === 0) return null;
-                return (
-                  <button
-                    key={group}
-                    type="button"
-                    className="qquiz__group-row"
-                    onClick={() => handleSimGroupSelect(group)}
-                  >
-                    <span className="qquiz__group-label">
-                      {FLAG_SIMILARITY_LABELS[group]}
-                    </span>
-                    <span className="qquiz__group-count">
-                      {codes.length} flag{codes.length === 1 ? "" : "s"}
-                    </span>
-                  </button>
-                );
-              })}
+              {[...FLAG_SIMILARITY_ORDER]
+                .sort((a, b) => (SIM_GROUP_CODES[b]?.length ?? 0) - (SIM_GROUP_CODES[a]?.length ?? 0))
+                .map((group) => {
+                  const codes = SIM_GROUP_CODES[group] ?? [];
+                  if (codes.length === 0) return null;
+                  return (
+                    <button
+                      key={group}
+                      type="button"
+                      className="qquiz__group-row"
+                      onClick={() =>
+                        onStart({
+                          type: "similarity",
+                          groupCodes: [...codes],
+                          groupLabel: FLAG_SIMILARITY_LABELS[group],
+                        })
+                      }
+                    >
+                      <span className="qquiz__group-label">
+                        {FLAG_SIMILARITY_LABELS[group]}
+                      </span>
+                      <span className="qquiz__group-count">
+                        {codes.length} flag{codes.length === 1 ? "" : "s"}
+                      </span>
+                    </button>
+                  );
+                })}
             </div>
             <footer className="qquiz__footer">
               <button type="button" className="qquiz__cancel" onClick={onClose}>
                 Cancel
-              </button>
-            </footer>
-          </>
-        )}
-
-        {/* ── Play by Flag Similarity — sub-mode picker ── */}
-        {mode === "similarity" && simStep === "submode" && selectedGroup && (
-          <>
-            <div className="qquiz__body qquiz__body--submode">
-              <button
-                type="button"
-                className="qquiz__submode"
-                onClick={() => handleSubmode(false)}
-              >
-                <span className="qquiz__submode-emoji" aria-hidden="true">🎯</span>
-                <span className="qquiz__submode-text">
-                  <span className="qquiz__submode-title">Decoy Buttons</span>
-                  <span className="qquiz__submode-desc">
-                    Choices are only the {simGroupCodes.length} flags in this
-                    group — spot the differences.
-                  </span>
-                </span>
-              </button>
-              <button
-                type="button"
-                className="qquiz__submode"
-                onClick={() => handleSubmode(true)}
-              >
-                <span className="qquiz__submode-emoji" aria-hidden="true">💀</span>
-                <span className="qquiz__submode-text">
-                  <span className="qquiz__submode-title">Hardcore</span>
-                  <span className="qquiz__submode-desc">
-                    Same {simGroupCodes.length} flags to guess, but from a
-                    dropdown of all 195. No hints.
-                  </span>
-                </span>
-              </button>
-            </div>
-            <footer className="qquiz__footer">
-              <button
-                type="button"
-                className="qquiz__cancel"
-                onClick={() => setSimStep("groups")}
-              >
-                ← Back
               </button>
             </footer>
           </>
