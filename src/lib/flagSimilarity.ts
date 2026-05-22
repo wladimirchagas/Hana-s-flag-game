@@ -150,7 +150,6 @@
  *      the only two sovereign flags with this distinctive pattern.
  */
 export type FlagSimilarity =
-  | "bwg-red-accent"
   | "vertical-byr"
   | "green-white-orange"
   | "red-white-bicolor"
@@ -178,11 +177,11 @@ export type FlagSimilarity =
   | "blue-red-bicolor"
   | "green-crescent"
   | "red-eagle"
-  | "green-yellow-blue";
+  | "green-yellow-blue"
+  | "black-red-green";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
   {
-    "bwg-red-accent":        "Black, White & Green with Red Accent",
     "vertical-byr":      "Vertical Blue-Yellow-Red",
     "green-white-orange": "Green, White & Orange",
     "red-white-bicolor": "Red & White bicolour",
@@ -211,11 +210,11 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "green-crescent":      "Green field with crescent",
     "red-eagle":           "Red field with eagle",
     "green-yellow-blue":   "Green, Yellow & Blue",
+    "black-red-green":     "Black, Red & Green stripes",
   };
 
 /** Canonical display order for the "By similarity" group headings. */
 export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
-  "bwg-red-accent",
   "vertical-byr",
   "green-white-orange",
   "red-white-bicolor",
@@ -244,6 +243,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "green-crescent",
   "red-eagle",
   "green-yellow-blue",
+  "black-red-green",
 ];
 
 /**
@@ -257,7 +257,7 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
 > = {
   "vertical-byr":      ["TD", "RO", "AD", "MD"],
   "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
-  "arab-palette":      ["EG", "IQ", "YE", "SD", "KW", "SY"],
+  "arab-palette":      ["EG", "IQ", "YE", "SD", "KW", "JO", "PS", "AE", "SY"],
   "blue-ensign":       ["NZ", "AU", "TV", "FJ"],
   "red-white-blue-h":  ["LU", "NL", "PY", "HR", "SK", "SI", "RU", "RS"],
   "green-yellow-red":  ["CG", "SN", "CM", "GH", "BO", "ET", "ST", "GW", "TG", "BJ", "GN", "ML", "LT", "MM", "BF"],
@@ -266,7 +266,8 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "red-white-green":   ["HU", "TJ", "IR", "GQ", "BG", "IT", "MX"],
   "blue-white":        ["BW", "AR", "HN", "NI", "SV", "UY", "GT"],
   "disc-on-field":     ["JP", "BD", "PW", "LA"],
-  "red-white-red":     ["LV", "AT", "LB", "TH", "KH"],
+  "red-white-red":     ["LV", "AT", "LB", "TH"],
+  "black-red-green":   ["KE", "SS", "LY", "MW"],
   "red-field-star":    ["CN", "VN", "MA"],
   "triangle-hoist":    ["CZ", "CL", "CR", "CU", "PH"],
   "blue-red-bicolor":  ["LI", "HT"],
@@ -279,12 +280,6 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
 export const FLAG_SIMILARITIES: Readonly<
   Record<string, readonly FlagSimilarity[]>
 > = {
-  // ── Near-twins ────────────────────────────────────────────────────────────
-  // Palestine / Jordan / UAE: horizontal black-white-green with red on hoist
-  PS: ["bwg-red-accent"],
-  JO: ["bwg-red-accent"],
-  AE: ["bwg-red-accent"],
-
   // ── Vertical Blue-Yellow-Red ──────────────────────────────────────────────
   // Chad / Romania first (virtually identical); Andorra / Moldova add COA
   TD: ["vertical-byr"],
@@ -305,14 +300,16 @@ export const FLAG_SIMILARITIES: Readonly<
   SG: ["red-white-bicolor"],
   MT: ["red-white-bicolor"],
 
-  // ── Red-White-Black ────────────────────────────────────────────────────────
-  // Arab Liberation palette horizontal tricolours
+  // ── Arab palette ──────────────────────────────────────────────────────────
   EG: ["arab-palette"],
-  SY: ["arab-palette"],
   IQ: ["arab-palette"],
   YE: ["arab-palette"],
   SD: ["arab-palette"],
   KW: ["arab-palette"],
+  JO: ["arab-palette"],
+  PS: ["arab-palette"],
+  AE: ["arab-palette"],
+  SY: ["arab-palette"],
 
   // ── Gran Colombia palette ─────────────────────────────────────────────────
   CO: ["gran-colombia"],
@@ -416,7 +413,6 @@ export const FLAG_SIMILARITIES: Readonly<
   AT: ["red-white-red"],
   LB: ["red-white-red"],
   TH: ["red-white-red"],
-  KH: ["red-white-red"],
 
   // ── Shahada inscription ───────────────────────────────────────────────────
   SA: ["shahada"],
@@ -459,4 +455,10 @@ export const FLAG_SIMILARITIES: Readonly<
   GA: ["green-yellow-blue"],
   RW: ["green-yellow-blue"],
   SB: ["green-yellow-blue"],
+
+  // ── Black, Red & Green stripes ────────────────────────────────────────────
+  KE: ["black-red-green"],
+  SS: ["black-red-green"],
+  LY: ["black-red-green"],
+  MW: ["black-red-green"],
 };
