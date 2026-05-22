@@ -386,6 +386,7 @@ export const FLAG_SIMILARITIES: Readonly<
   AT: ["red-white-red"],
   LV: ["red-white-red"],
   LB: ["red-white-red"],
+  TH: ["red-white-red"],
 
   // ── Shahada inscription ───────────────────────────────────────────────────
   SA: ["shahada"],
