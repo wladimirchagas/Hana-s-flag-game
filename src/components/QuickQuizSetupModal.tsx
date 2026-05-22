@@ -111,7 +111,6 @@ export function QuickQuizSetupModal({
 
   const bucketSize = codesForDifficulty(difficulty).length;
   const effectiveCount = Math.min(count, bucketSize);
-  const cfg = DIFFICULTY_CONFIG[difficulty];
 
   const handleSimGroupSelect = (group: FlagSimilarity) => {
     setSelectedGroup(group);
