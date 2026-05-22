@@ -14,7 +14,7 @@
  *
  * Groups (in display order):
  *
- *   1. near-twins
+ *   1. bwg-red-accent
  *      Palestine, Jordan, and UAE — all horizontal black-white-green
  *      flags with a red element on the hoist side. Palestine and Jordan
  *      use a red triangle; UAE has a solid red vertical stripe.
@@ -151,7 +151,7 @@
  *      the only two sovereign flags with this distinctive pattern.
  */
 export type FlagSimilarity =
-  | "near-twins"
+  | "bwg-red-accent"
   | "vertical-byr"
   | "green-white-orange"
   | "red-white-bicolor"
@@ -179,7 +179,7 @@ export type FlagSimilarity =
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
   {
-    "near-twins":        "Near-twins",
+    "bwg-red-accent":        "Black, White & Green with Red Accent",
     "vertical-byr":      "Vertical Blue-Yellow-Red",
     "green-white-orange": "Green, White & Orange",
     "red-white-bicolor": "Red & White bicolour",
@@ -208,7 +208,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
 
 /** Canonical display order for the "By similarity" group headings. */
 export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
-  "near-twins",
+  "bwg-red-accent",
   "vertical-byr",
   "green-white-orange",
   "red-white-bicolor",
@@ -241,9 +241,9 @@ export const FLAG_SIMILARITIES: Readonly<
 > = {
   // ── Near-twins ────────────────────────────────────────────────────────────
   // Palestine / Jordan / UAE: horizontal black-white-green with red on hoist
-  PS: ["near-twins"],
-  JO: ["near-twins"],
-  AE: ["near-twins"],
+  PS: ["bwg-red-accent"],
+  JO: ["bwg-red-accent"],
+  AE: ["bwg-red-accent"],
 
   // ── Vertical Blue-Yellow-Red ──────────────────────────────────────────────
   // Romania / Chad: virtually identical; Andorra / Moldova add COA
