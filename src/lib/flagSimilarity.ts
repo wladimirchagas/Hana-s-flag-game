@@ -194,7 +194,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-crescent-star": "Red field, crescent & star",
     "blue-white":        "Blue & White",
     "red-white-cross":   "Red & White cross",
-    "green-blue":        "Green & Blue",
+    "green-blue":        "Green, White & Blue",
     "hoist-stripe":      "Vertical hoist stripe",
     "red-white-red":      "Red-White-Red",
     "blue-stars-stripe":  "Blue field with stars & stripe",
@@ -361,6 +361,7 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Green & Blue ──────────────────────────────────────────────────────────
   SL: ["green-blue"],
   DJ: ["green-blue"],
+  LS: ["green-blue"],
 
   // ── Red & White cross ─────────────────────────────────────────────────────
   CH: ["red-white-cross"],
