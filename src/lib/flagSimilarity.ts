@@ -371,7 +371,6 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Vertical hoist stripe ─────────────────────────────────────────────────
   OM: ["hoist-stripe"],
   MG: ["hoist-stripe"],
-  LB: ["hoist-stripe"],
 
   // ── Plain field with disc ─────────────────────────────────────────────────
   JP: ["disc-on-field"],
@@ -386,6 +385,7 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Red-White-Red ─────────────────────────────────────────────────────────
   AT: ["red-white-red"],
   LV: ["red-white-red"],
+  LB: ["red-white-red"],
 
   // ── Shahada inscription ───────────────────────────────────────────────────
   SA: ["shahada"],
