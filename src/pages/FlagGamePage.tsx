@@ -21,18 +21,28 @@ type QuizState = {
   flagCount: number;
 };
 
+type SimilarityState = {
+  groupCodes: string[];
+  groupLabel: string;
+  hardcore: boolean;
+};
+
 export default function FlagGamePage() {
   const location = useLocation();
   const navState = location.state as
-    | { codes?: string[]; quiz?: QuizState }
+    | { codes?: string[]; quiz?: QuizState; similarity?: SimilarityState }
     | null;
   const filterCodes =
     Array.isArray(navState?.codes) && navState!.codes!.length > 0
       ? navState!.codes!
-      : null;
+      : navState?.similarity?.groupCodes && navState.similarity.groupCodes.length > 0
+        ? navState.similarity.groupCodes
+        : null;
   const quiz = navState?.quiz ?? null;
-  const isCustomGame = filterCodes !== null;
+  const similarity = navState?.similarity ?? null;
+  const isCustomGame = filterCodes !== null && quiz === null && similarity === null;
   const isQuickQuiz = quiz !== null;
+  const isSimilarity = similarity !== null;
   // Look up the difficulty config to know dropdown size + max attempts.
   // Imported lazily here to keep this file's imports tidy.
   const quizCfg = quiz
@@ -40,12 +50,14 @@ export default function FlagGamePage() {
     : null;
   const game = useGame({
     filterCodes,
-    // Both Custom Game and Quick Quiz allow retries on a wrong guess.
+    // Custom Game and Quick Quiz allow retries; similarity and All-195 do not.
     allowRetry: isCustomGame || isQuickQuiz,
     difficulty: quiz?.difficulty ?? null,
     flagCount: quiz?.flagCount ?? null,
     optionCount: quizCfg?.optionCount ?? null,
     maxAttemptsPerFlag: quizCfg?.maxAttempts ?? Infinity,
+    // Hardcore similarity mode: guess group flags from the full 195 dropdown.
+    useFullAlternatives: isSimilarity && similarity.hardcore,
   });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const [playerName, setPlayerName] = useState("");
@@ -164,6 +176,11 @@ export default function FlagGamePage() {
             {isQuickQuiz && quizCfg && (
               <span className="card-header__chip">{quizCfg.label}</span>
             )}
+            {isSimilarity && (
+              <span className="card-header__chip">
+                {similarity.hardcore ? "Hardcore" : "By Similarity"}
+              </span>
+            )}
           </h1>
           <p className="tagline">
             {isFinished
@@ -182,6 +199,10 @@ export default function FlagGamePage() {
                     remaining === 1 ? "try" : "tries"
                   } left on this flag.`;
                 })()
+              : isSimilarity
+              ? similarity.hardcore
+                ? `${similarity.groupLabel} · all 195 in dropdown · one guess per flag.`
+                : `${similarity.groupLabel} · ${game.totalFlags} flags · one guess per flag.`
               : isCustomGame
               ? game.retryAttempts > 0
                 ? `Try again — keep going until you get it right!`

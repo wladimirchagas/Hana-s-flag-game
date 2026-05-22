@@ -5,7 +5,7 @@ import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
 import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
-import { AllFlagsSetupModal, type AllFlagsMode } from '../components/AllFlagsSetupModal'
+import { AllFlagsSetupModal, type AllFlagsStart } from '../components/AllFlagsSetupModal'
 import { HeroCarousel } from '../components/HeroCharacters'
 import './LandingPage.css'
 
@@ -24,9 +24,21 @@ export default function LandingPage() {
   const [quizOpen, setQuizOpen] = useState(false)
   const [allFlagsOpen, setAllFlagsOpen] = useState(false)
 
-  const playAllMode = (mode: AllFlagsMode) => {
+  const playAllMode = (start: AllFlagsStart) => {
     setAllFlagsOpen(false)
-    if (mode === 'all195') navigate('/game')
+    if (start.type === 'all195') {
+      navigate('/game')
+    } else if (start.type === 'similarity') {
+      navigate('/game', {
+        state: {
+          similarity: {
+            groupCodes: start.groupCodes,
+            groupLabel: start.groupLabel,
+            hardcore: start.hardcore,
+          },
+        },
+      })
+    }
   }
   const playWith = (codes: string[]) => {
     setPickerOpen(false)

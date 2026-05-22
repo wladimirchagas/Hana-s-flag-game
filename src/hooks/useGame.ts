@@ -80,6 +80,13 @@ export type UseGameOptions = {
   difficulty?: Difficulty | null;
   flagCount?: number | null;
   optionCount?: number | null;
+  /**
+   * When true, questionAlternatives uses the full 195-country pool instead of
+   * the filtered game pool. Used in similarity-hardcore mode: the game only
+   * asks flags from the selected group, but the player must identify them from
+   * the full world dropdown.
+   */
+  useFullAlternatives?: boolean;
 };
 
 export function useGame(options: UseGameOptions = {}): UseGameResult {
@@ -90,6 +97,7 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
     difficulty = null,
     flagCount = null,
     optionCount = null,
+    useFullAlternatives = false,
   } = options;
   const [countries, setCountries] = useState<Country[]>([]);
   const [current, setCurrent] = useState<Country | null>(null);
@@ -125,7 +133,11 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
   // pool when difficulty info is missing or the bucket is too small.
   const buildAlternatives = useCallback(
     (correct: Country, gamePool: Country[]): Country[] => {
-      if (optionCount == null || optionCount <= 0) return gamePool;
+      if (optionCount == null || optionCount <= 0) {
+        return useFullAlternatives && allCountriesRef.current.length > 0
+          ? allCountriesRef.current
+          : gamePool;
+      }
       const correctDifficulty = difficultyOf(correct.code);
       const all = allCountriesRef.current;
       let candidates: Country[] = [];
@@ -167,7 +179,7 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
       );
       return result;
     },
-    [optionCount],
+    [optionCount, useFullAlternatives],
   );
 
   const startRound = useCallback(

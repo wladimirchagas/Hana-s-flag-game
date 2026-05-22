@@ -1005,6 +1005,41 @@
   border-bottom: 2px dashed var(--ink-faint);
 }
 
+.all195__header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.all195__back {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  background: var(--paper);
+  border: 2.5px solid var(--ink);
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--ink);
+  box-shadow: 0 2px 0 var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.all195__back:hover,
+.all195__back:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  outline: none;
+}
+
 .all195__title {
   margin: 0;
   font-size: 1.6rem;
@@ -1048,6 +1083,57 @@
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+}
+
+/* Group-list body: tighter rows, more scroll room */
+.all195__body--groups {
+  gap: 0;
+  padding: 0.5rem 0;
+}
+
+.all195__group-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--ink-faint);
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--ink);
+  text-align: left;
+  transition: background 100ms ease;
+}
+
+.all195__group-row:first-child {
+  border-top: 1px solid var(--ink-faint);
+}
+
+.all195__group-row:hover,
+.all195__group-row:focus-visible {
+  background: rgba(78, 205, 196, 0.12);
+  outline: none;
+}
+
+.all195__group-label {
+  font-size: 1rem;
+  font-weight: 600;
+  flex: 1 1 auto;
+}
+
+.all195__group-count {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-fixed);
+  background: var(--mustard);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  white-space: nowrap;
 }
 
 /* Each mode is a full-width clickable row */
