@@ -16,6 +16,7 @@ import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { FLAG_COLORS } from "../lib/flagColors";
+import { FLAG_SIMILARITIES } from "../lib/flagSimilarity";
 import { EntitySummary } from "../components/EntitySummary";
 import {
   DEFAULT_ERA_ID,
@@ -376,6 +377,7 @@ export default function LearnPage() {
         shapes: FLAG_SHAPES[c.code],
         families: FLAG_FAMILIES[c.code],
         colors: FLAG_COLORS[c.code],
+        similarities: FLAG_SIMILARITIES[c.code],
       }));
     }
     const out: FlagListEntry[] = [];

@@ -29,6 +29,11 @@ export type FlagListEntry = {
    *  by the flag grid's "By colour" grouping. Multi-tag — most flags carry
    *  several. */
   colors?: readonly string[];
+  /** Optional list of visual-similarity tags ("near-twins", "nordic-cross",
+   *  "crescent-star", …) used by the flag grid's "By similarity" grouping.
+   *  Groups flags that are commonly confused with each other, based on
+   *  vexillology forums and quiz discussions. */
+  similarities?: readonly string[];
 };
 
 /**
