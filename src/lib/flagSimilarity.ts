@@ -104,7 +104,13 @@
  *      Federation's blue-white-blue tricolour; Botswana uses light blue,
  *      white, and a thin black band.
  *
- *  17. serrated
+ *  17. red-white-cross
+ *      Switzerland (white cross centred on a red field) and Tonga
+ *      (red field with a white canton containing a red cross) both
+ *      feature a bold red-and-white cross design and are commonly
+ *      confused at a glance.
+ *
+ *  18. serrated
  *      Vertical white-and-dark-red bicolours with a serrated / zigzag
  *      border separating the two halves. Bahrain (5 serrated points,
  *      brighter red, 1:2) and Qatar (9 points, dark maroon, 11:28) are
@@ -125,6 +131,7 @@ export type FlagSimilarity =
   | "red-white-green"
   | "red-crescent-star"
   | "blue-white"
+  | "red-white-cross"
   | "serrated";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
@@ -143,6 +150,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-white-green":   "Red-White-Green",
     "red-crescent-star": "Red field, crescent & star",
     "blue-white":        "Blue & White",
+    "red-white-cross":   "Red & White cross",
     "serrated":          "Serrated bicolour",
   };
 
@@ -162,6 +170,7 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "red-white-green",
   "red-crescent-star",
   "blue-white",
+  "red-white-cross",
   "serrated",
 ];
 
@@ -266,6 +275,10 @@ export const FLAG_SIMILARITIES: Readonly<
   NI: ["blue-white"],
   GT: ["blue-white"],
   BW: ["blue-white"],
+
+  // ── Red & White cross ─────────────────────────────────────────────────────
+  CH: ["red-white-cross"],
+  TO: ["red-white-cross"],
 
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
