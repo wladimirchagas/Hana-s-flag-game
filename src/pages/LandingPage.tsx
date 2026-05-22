@@ -5,7 +5,6 @@ import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
 import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
-import { AllFlagsSetupModal, type AllFlagsStart } from '../components/AllFlagsSetupModal'
 import { HeroCarousel } from '../components/HeroCharacters'
 import './LandingPage.css'
 
@@ -22,31 +21,26 @@ export default function LandingPage() {
   const navigate = useNavigate()
   const [pickerOpen, setPickerOpen] = useState(false)
   const [quizOpen, setQuizOpen] = useState(false)
-  const [allFlagsOpen, setAllFlagsOpen] = useState(false)
 
-  const playAllMode = (start: AllFlagsStart) => {
-    setAllFlagsOpen(false)
-    if (start.type === 'all195') {
-      navigate('/game')
-    } else if (start.type === 'similarity') {
-      navigate('/game', {
-        state: {
-          similarity: {
-            groupCodes: start.groupCodes,
-            groupLabel: start.groupLabel,
-            hardcore: start.hardcore,
-          },
-        },
-      })
-    }
-  }
   const playWith = (codes: string[]) => {
     setPickerOpen(false)
     navigate('/game', { state: { codes } })
   }
-  const playQuiz = (quiz: QuickQuizConfig) => {
+  const playQuiz = (config: QuickQuizConfig) => {
     setQuizOpen(false)
-    navigate('/game', { state: { quiz } })
+    if (config.type === 'standard') {
+      navigate('/game', { state: { quiz: { flagCount: config.flagCount, difficulty: config.difficulty } } })
+    } else {
+      navigate('/game', {
+        state: {
+          similarity: {
+            groupCodes: config.groupCodes,
+            groupLabel: config.groupLabel,
+            hardcore: config.hardcore,
+          },
+        },
+      })
+    }
   }
 
   return (
@@ -137,18 +131,18 @@ export default function LandingPage() {
             <span className="card-sticker__cta card-sticker__cta--mustard">SET UP →</span>
           </button>
 
-          {/* All 195 Flags — now opens a mode-picker modal. */}
+          {/* All 195 Flags — direct play, no modal. */}
           <button
             type="button"
             className="card-sticker card-sticker--a card-sticker--secondary"
-            onClick={() => setAllFlagsOpen(true)}
+            onClick={() => navigate('/game')}
           >
             <h2 className="card-sticker__title">All 195 Flags</h2>
             <p className="card-sticker__sub">
-              Hard-mode challenges using all 195 flags. Pick your ultimate
-              test.
+              The full set, in random order. One guess per flag — the
+              ultimate test of how many you know.
             </p>
-            <span className="card-sticker__cta card-sticker__cta--lime">CHOOSE →</span>
+            <span className="card-sticker__cta card-sticker__cta--lime">PLAY ALL →</span>
           </button>
         </div>
 
@@ -171,12 +165,6 @@ export default function LandingPage() {
         open={quizOpen}
         onClose={() => setQuizOpen(false)}
         onStart={playQuiz}
-      />
-
-      <AllFlagsSetupModal
-        open={allFlagsOpen}
-        onClose={() => setAllFlagsOpen(false)}
-        onStart={playAllMode}
       />
     </div>
   )

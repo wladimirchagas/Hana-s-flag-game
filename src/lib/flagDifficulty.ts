@@ -277,15 +277,15 @@ export const DIFFICULTY_CONFIG: Record<
 > = {
   easy: {
     optionCount: 5,
-    maxAttempts: 5,
+    maxAttempts: 1,
     label: "Easy",
-    tagline: "5 choices · 5 tries",
+    tagline: "5 choices · 1 try",
   },
   moderate: {
     optionCount: 15,
-    maxAttempts: 3,
+    maxAttempts: 1,
     label: "Moderate",
-    tagline: "15 choices · 3 tries",
+    tagline: "15 choices · 1 try",
   },
   hard: {
     optionCount: 50,
