@@ -253,13 +253,9 @@
 }
 
 .learn-fs__map .world-map {
-  /* Cap the width so the map's height (derived from the 960:500 aspect
-     ratio) never exceeds the available viewport height on very wide /
-     large-screen displays. 8rem ≈ site-topbar + learn-toolbar + buffer. */
-  width: min(100%, calc((100vh - 8rem) * (960 / 500)));
+  width: 100%;
   height: auto;
   max-width: none;
-  margin: 0 auto; /* centre when the viewport-height cap is the constraint */
 }
 
 /* === Right-column panel ============================================

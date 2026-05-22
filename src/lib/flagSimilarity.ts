@@ -14,7 +14,7 @@
  *
  * Groups (in display order):
  *
- *   1. near-twins
+ *   1. bwg-red-accent
  *      Palestine, Jordan, and UAE — all horizontal black-white-green
  *      flags with a red element on the hoist side. Palestine and Jordan
  *      use a red triangle; UAE has a solid red vertical stripe.
@@ -151,7 +151,7 @@
  *      the only two sovereign flags with this distinctive pattern.
  */
 export type FlagSimilarity =
-  | "near-twins"
+  | "bwg-red-accent"
   | "vertical-byr"
   | "green-white-orange"
   | "red-white-bicolor"
@@ -179,7 +179,7 @@ export type FlagSimilarity =
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
   {
-    "near-twins":        "Near-twins",
+    "bwg-red-accent":        "Black, White & Green with Red Accent",
     "vertical-byr":      "Vertical Blue-Yellow-Red",
     "green-white-orange": "Green, White & Orange",
     "red-white-bicolor": "Red & White bicolour",
@@ -208,7 +208,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
 
 /** Canonical display order for the "By similarity" group headings. */
 export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
-  "near-twins",
+  "bwg-red-accent",
   "vertical-byr",
   "green-white-orange",
   "red-white-bicolor",
@@ -235,20 +235,35 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "serrated",
 ];
 
+/**
+ * Optional custom display order for members within a similarity group.
+ * When present, flags are shown in this exact sequence instead of
+ * the default alphabetical sort. Keyed on FlagSimilarity group id;
+ * values are ordered arrays of ISO 3166-1 alpha-2 codes.
+ */
+export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
+  Record<FlagSimilarity, readonly string[]>
+> = {
+  "vertical-byr":      ["TD", "RO", "AD", "MD"],
+  "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
+  "arab-palette":      ["EG", "SY", "IQ", "YE", "SD", "KW"],
+  "red-white-blue-h":  ["RU", "NL", "LU", "HR", "SK", "SI", "PY", "RS"],
+};
+
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
 export const FLAG_SIMILARITIES: Readonly<
   Record<string, readonly FlagSimilarity[]>
 > = {
   // ── Near-twins ────────────────────────────────────────────────────────────
   // Palestine / Jordan / UAE: horizontal black-white-green with red on hoist
-  PS: ["near-twins"],
-  JO: ["near-twins"],
-  AE: ["near-twins"],
+  PS: ["bwg-red-accent"],
+  JO: ["bwg-red-accent"],
+  AE: ["bwg-red-accent"],
 
   // ── Vertical Blue-Yellow-Red ──────────────────────────────────────────────
-  // Romania / Chad: virtually identical; Andorra / Moldova add COA
-  RO: ["vertical-byr"],
+  // Chad / Romania first (virtually identical); Andorra / Moldova add COA
   TD: ["vertical-byr"],
+  RO: ["vertical-byr"],
   AD: ["vertical-byr"],
   MD: ["vertical-byr"],
 
