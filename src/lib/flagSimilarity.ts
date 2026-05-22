@@ -174,7 +174,11 @@ export type FlagSimilarity =
   | "saffron-white-green"
   | "triangle-hoist"
   | "red-field-star"
-  | "serrated";
+  | "serrated"
+  | "blue-red-bicolor"
+  | "green-crescent"
+  | "red-eagle"
+  | "green-yellow-blue";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
   {
@@ -195,7 +199,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-white-cross":   "Red & White cross",
     "green-blue":        "Green, White & Blue",
     "hoist-stripe":      "Vertical hoist stripe",
-    "red-white-red":      "Red-White-Red",
+    "red-white-red":      "Red-White-Red stripes",
     "blue-stars-stripe":  "Blue field with stars & stripe",
     "disc-on-field":      "Plain field with disc",
     "shahada":             "Shahada inscription",
@@ -203,6 +207,10 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "triangle-hoist":      "Triangle on hoist",
     "red-field-star":      "Red field with centred star",
     "serrated":            "Serrated bicolour",
+    "blue-red-bicolor":    "Blue & Red bicolour",
+    "green-crescent":      "Green field with crescent",
+    "red-eagle":           "Red field with eagle",
+    "green-yellow-blue":   "Green, Yellow & Blue",
   };
 
 /** Canonical display order for the "By similarity" group headings. */
@@ -232,6 +240,10 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "triangle-hoist",
   "red-field-star",
   "serrated",
+  "blue-red-bicolor",
+  "green-crescent",
+  "red-eagle",
+  "green-yellow-blue",
 ];
 
 /**
@@ -254,8 +266,13 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "red-white-green":   ["HU", "TJ", "IR", "GQ", "BG", "IT", "MX"],
   "blue-white":        ["BW", "AR", "HN", "NI", "SV", "UY", "GT"],
   "disc-on-field":     ["JP", "BD", "PW", "LA"],
-  "red-white-red":     ["LV", "AT", "LB", "TH"],
+  "red-white-red":     ["LV", "AT", "LB", "TH", "KH"],
+  "red-field-star":    ["CN", "VN", "MA"],
   "triangle-hoist":    ["CZ", "CL", "CR", "CU", "PH"],
+  "blue-red-bicolor":  ["LI", "HT"],
+  "green-crescent":    ["MV", "MR"],
+  "red-eagle":         ["AL", "ME"],
+  "green-yellow-blue": ["GA", "RW", "SB"],
 };
 
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
@@ -394,11 +411,12 @@ export const FLAG_SIMILARITIES: Readonly<
   MH: ["blue-stars-stripe"],
   CV: ["blue-stars-stripe"],
 
-  // ── Red-White-Red ─────────────────────────────────────────────────────────
-  AT: ["red-white-red"],
+  // ── Red-White-Red stripes ─────────────────────────────────────────────────
   LV: ["red-white-red"],
+  AT: ["red-white-red"],
   LB: ["red-white-red"],
   TH: ["red-white-red"],
+  KH: ["red-white-red"],
 
   // ── Shahada inscription ───────────────────────────────────────────────────
   SA: ["shahada"],
@@ -424,4 +442,21 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
   QA: ["serrated"],
+
+  // ── Blue & Red bicolour ───────────────────────────────────────────────────
+  LI: ["blue-red-bicolor"],
+  HT: ["blue-red-bicolor"],
+
+  // ── Green field with crescent ─────────────────────────────────────────────
+  MV: ["green-crescent"],
+  MR: ["green-crescent"],
+
+  // ── Red field with eagle ──────────────────────────────────────────────────
+  AL: ["red-eagle"],
+  ME: ["red-eagle"],
+
+  // ── Green, Yellow & Blue ──────────────────────────────────────────────────
+  GA: ["green-yellow-blue"],
+  RW: ["green-yellow-blue"],
+  SB: ["green-yellow-blue"],
 };
