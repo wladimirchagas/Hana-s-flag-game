@@ -178,7 +178,9 @@ export type FlagSimilarity =
   | "green-crescent"
   | "red-eagle"
   | "green-yellow-blue"
-  | "black-red-green";
+  | "black-red-green"
+  | "black-yellow-red"
+  | "symmetric-vertical";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
   {
@@ -211,6 +213,8 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-eagle":           "Red field with eagle",
     "green-yellow-blue":   "Green, Yellow & Blue",
     "black-red-green":     "Black, Red & Green stripes",
+    "black-yellow-red":    "Black, Yellow & Red vertical",
+    "symmetric-vertical":  "Symmetric vertical tricolour",
   };
 
 /** Canonical display order for the "By similarity" group headings. */
@@ -244,6 +248,8 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "red-eagle",
   "green-yellow-blue",
   "black-red-green",
+  "black-yellow-red",
+  "symmetric-vertical",
 ];
 
 /**
@@ -255,10 +261,11 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
 export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   Record<FlagSimilarity, readonly string[]>
 > = {
-  "vertical-byr":      ["TD", "RO", "AD", "MD"],
-  "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
-  "arab-palette":      ["EG", "IQ", "YE", "SD", "KW", "JO", "PS", "AE", "SY"],
-  "blue-ensign":       ["NZ", "AU", "TV", "FJ"],
+  "vertical-byr":       ["TD", "RO", "AD", "MD"],
+  "red-white-bicolor":  ["SG", "ID", "MC", "PL", "MT"],
+  "arab-palette":       ["EG", "IQ", "YE", "SD", "KW", "JO", "PS", "AE", "SY"],
+  "nordic-cross":       ["DK", "NO", "IS", "SE", "FI"],
+  "blue-ensign":        ["NZ", "AU", "TV", "FJ"],
   "red-white-blue-h":  ["LU", "NL", "PY", "HR", "SK", "SI", "RU", "RS"],
   "green-yellow-red":  ["CG", "SN", "CM", "GH", "BO", "ET", "ST", "GW", "TG", "BJ", "GN", "ML", "LT", "MM", "BF"],
   "green-blue":        ["DJ", "SL", "LS"],
@@ -273,7 +280,11 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "blue-red-bicolor":  ["LI", "HT"],
   "green-crescent":    ["MV", "MR"],
   "red-eagle":         ["AL", "ME"],
-  "green-yellow-blue": ["GA", "RW", "SB"],
+  "green-yellow-blue":  ["GA", "RW", "SB"],
+  "red-white-cross":    ["CH", "TO", "GE"],
+  "red-crescent-star":  ["TR", "TN"],
+  "black-yellow-red":   ["DE", "BE"],
+  "symmetric-vertical": ["PE", "NG"],
 };
 
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
@@ -461,4 +472,12 @@ export const FLAG_SIMILARITIES: Readonly<
   SS: ["black-red-green"],
   LY: ["black-red-green"],
   MW: ["black-red-green"],
+
+  // ── Black, Yellow & Red vertical ─────────────────────────────────────────
+  DE: ["black-yellow-red"],
+  BE: ["black-yellow-red"],
+
+  // ── Symmetric vertical tricolour ─────────────────────────────────────────
+  PE: ["symmetric-vertical"],
+  NG: ["symmetric-vertical"],
 };
