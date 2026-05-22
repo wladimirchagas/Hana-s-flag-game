@@ -1983,6 +1983,83 @@
   outline: none;
 }
 
+/* Save-to-leaderboard form inside the celebration overlay */
+.finish__save-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.finish__save-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.finish__name-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.75rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--ink);
+  outline: none;
+  text-align: center;
+}
+
+.finish__name-input:focus-visible {
+  border-color: var(--sky);
+  box-shadow: 0 3px 0 var(--ink), 0 0 0 3px rgba(78, 205, 196, 0.35);
+}
+
+.finish__name-input::placeholder {
+  color: rgba(26, 34, 56, 0.45);
+}
+
+.finish__save-feedback {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.finish__save-feedback--ok {
+  color: #2a9d4f;
+}
+
+.finish__save-feedback--warn {
+  color: var(--coral-deep);
+}
+
+.finish__skip {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  opacity: 0.6;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 120ms ease;
+}
+
+.finish__skip:hover,
+.finish__skip:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
 /* Confetti rain — full-viewport, falls continuously while the overlay shows */
 .finish__confetti {
   position: absolute;

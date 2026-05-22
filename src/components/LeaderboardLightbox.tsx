@@ -73,12 +73,14 @@ export function LeaderboardLightbox() {
   const {
     isOpen,
     selectedEntryId,
-    entries,
+    filteredEntries,
+    activeFilter,
     syncStatus,
     closeLeaderboard,
     selectEntry,
     goBackInLeaderboard,
   } = useLeaderboard();
+  const entries = filteredEntries;
 
   useEffect(() => {
     if (!isOpen) return;
@@ -123,7 +125,11 @@ export function LeaderboardLightbox() {
             <span className="leaderboard-lightbox__header-spacer" />
           )}
           <h2 id="leaderboard-lightbox-title" className="leaderboard-lightbox__title">
-            {selected ? "Run details" : "Leaderboard"}
+            {selected
+              ? "Run details"
+              : activeFilter
+              ? activeFilter.label
+              : "Leaderboard"}
           </h2>
           <button
             type="button"
@@ -157,8 +163,9 @@ export function LeaderboardLightbox() {
             <EntryDetail entry={selected} />
           ) : entries.length === 0 ? (
             <p className="leaderboard-lightbox__empty">
-              No saved games yet. Finish a run and add your name to see results
-              here.
+              {activeFilter
+                ? `No saved runs for this mode yet. Be the first!`
+                : `No saved games yet. Finish a run and add your name to see results here.`}
             </p>
           ) : (
             <ul className="leaderboard-lightbox__list">

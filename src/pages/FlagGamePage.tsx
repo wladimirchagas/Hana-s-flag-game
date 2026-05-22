@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
+import type { LeaderboardFilter } from "../context/LeaderboardContext";
 import { buildLeaderboardEntryFromGame } from "../lib/buildLeaderboardEntryFromGame";
 import { FlagCard } from "../components/FlagCard";
 import { CountryDropdown } from "../components/CountryDropdown";
@@ -63,17 +64,65 @@ export default function FlagGamePage() {
   });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const [playerName, setPlayerName] = useState("");
-  const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">(
-    "idle"
-  );
+  const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
+
+  // Derive a stable game mode string used for leaderboard filtering.
+  const gameMode = useMemo((): string => {
+    if (isQuickQuiz && quiz) return `quiz-${quiz.difficulty}`;
+    if (isCustomGame) return "custom";
+    if (isGroupGame && groupGame) {
+      const slug = groupGame.groupLabel
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+      return `group${groupGame.hardcore ? "-hardcore" : ""}-${slug}`;
+    }
+    return "all-195";
+  }, [isQuickQuiz, isCustomGame, isGroupGame, quiz, groupGame]);
+
+  const leaderboardFilter = useMemo((): LeaderboardFilter => {
+    let label: string;
+    if (isQuickQuiz && quiz && quizCfg) {
+      label = `Quick Quiz — ${quizCfg.shortLabel} · ${game.totalFlags} flags`;
+    } else if (isCustomGame) {
+      label = `Custom Game · ${game.totalFlags} flags`;
+    } else if (isGroupGame && groupGame) {
+      label = `${groupGame.hardcore ? "Hardcore" : groupGame.modeLabel} — ${groupGame.groupLabel} · ${game.totalFlags} flags`;
+    } else {
+      label = "All 195 Flags";
+    }
+    return { gameMode, totalFlags: game.totalFlags, label };
+  }, [gameMode, game.totalFlags, isQuickQuiz, isCustomGame, isGroupGame, quiz, quizCfg, groupGame]);
 
   // Show the big finish celebration overlay when the game ends, until the
   // player dismisses it. Reset if the player somehow ends up back in the
   // guessing phase (defensive — current code paths don't do that).
   const [celebrationDismissed, setCelebrationDismissed] = useState(false);
   useEffect(() => {
-    if (game.phase !== "finished") setCelebrationDismissed(false);
+    if (game.phase !== "finished") {
+      setCelebrationDismissed(false);
+      setSaveHint("idle");
+      setPlayerName("");
+    }
   }, [game.phase]);
+
+  const handleSave = () => {
+    if (!playerName.trim()) {
+      setSaveHint("need-name");
+      return;
+    }
+    saveGameToLeaderboard(buildLeaderboardEntryFromGame(game, playerName, gameMode));
+    setSaveHint("saved");
+  };
+
+  const handleSaveFromPage = () => {
+    if (!playerName.trim()) {
+      setSaveHint("need-name");
+      return;
+    }
+    saveGameToLeaderboard(buildLeaderboardEntryFromGame(game, playerName, gameMode));
+    setSaveHint("saved");
+  };
 
   // Reset scroll to the top whenever a new flag is shown — both on initial
   // landing (current goes null → flag) and after a correct guess advances
@@ -142,6 +191,8 @@ export default function FlagGamePage() {
       ? game.gameEndedAtMs - game.gameStartedAtMs
       : null;
 
+  const alreadySaved = saveHint === "saved";
+
   return (
     <div className="app">
       {isFinished && !celebrationDismissed && (
@@ -153,6 +204,13 @@ export default function FlagGamePage() {
           totalFlags={game.totalFlags}
           playedAllFlags={playedAllFlags}
           elapsedMs={elapsedMs}
+          playerName={playerName}
+          onPlayerNameChange={(name) => {
+            setPlayerName(name);
+            setSaveHint("idle");
+          }}
+          saveHint={saveHint}
+          onSave={handleSave}
           onContinue={() => setCelebrationDismissed(true)}
         />
       )}
@@ -298,13 +356,6 @@ export default function FlagGamePage() {
         />
 
         {isFinished && (
-          <GameResultsFlags
-            countries={game.countries}
-            countryResults={game.countryResults}
-          />
-        )}
-
-        {isFinished && (
           <div className="game-complete">
             <p className="game-complete__title">Game over</p>
             <p className="game-complete__text">
@@ -317,64 +368,76 @@ export default function FlagGamePage() {
 
         {isFinished && (
           <div className="post-game-leaderboard">
-            <p className="post-game-leaderboard__prompt">
-              Enter your name to save this run to the global leaderboard.
-            </p>
-            <div className="post-game-leaderboard__row">
-              <label className="visually-hidden" htmlFor="leaderboard-name">
-                Your name
-              </label>
-              <input
-                id="leaderboard-name"
-                type="text"
-                className="post-game-leaderboard__input"
-                placeholder="Your name"
-                maxLength={48}
-                value={playerName}
-                autoComplete="nickname"
-                onChange={(e) => {
-                  setPlayerName(e.target.value);
-                  setSaveHint("idle");
-                }}
-              />
-              <button
-                type="button"
-                className="btn btn-primary post-game-leaderboard__save"
-                disabled={!playerName.trim()}
-                onClick={() => {
-                  if (!playerName.trim()) {
-                    setSaveHint("need-name");
-                    return;
-                  }
-                  saveGameToLeaderboard(
-                    buildLeaderboardEntryFromGame(game, playerName)
-                  );
-                  setSaveHint("saved");
-                }}
-              >
-                Save to leaderboard
-              </button>
-            </div>
-            {saveHint === "saved" && (
-              <p className="post-game-leaderboard__feedback" role="status">
-                Saved. Open the leaderboard to see your run in the list.
-              </p>
+            {alreadySaved ? (
+              <>
+                <p className="post-game-leaderboard__feedback" role="status">
+                  ✓ Saved to the leaderboard as <strong>{playerName}</strong>.
+                </p>
+                <div className="post-game-leaderboard__actions">
+                  <button
+                    type="button"
+                    className="btn btn-leaderboard"
+                    onClick={() => openLeaderboard(leaderboardFilter)}
+                  >
+                    View leaderboard
+                  </button>
+                </div>
+              </>
+            ) : (
+              <>
+                <p className="post-game-leaderboard__prompt">
+                  Enter your name to save this run to the leaderboard.
+                </p>
+                <div className="post-game-leaderboard__row">
+                  <label className="visually-hidden" htmlFor="leaderboard-name">
+                    Your name
+                  </label>
+                  <input
+                    id="leaderboard-name"
+                    type="text"
+                    className="post-game-leaderboard__input"
+                    placeholder="Your name"
+                    maxLength={48}
+                    value={playerName}
+                    autoComplete="nickname"
+                    onChange={(e) => {
+                      setPlayerName(e.target.value);
+                      setSaveHint("idle");
+                    }}
+                  />
+                  <button
+                    type="button"
+                    className="btn btn-primary post-game-leaderboard__save"
+                    disabled={!playerName.trim()}
+                    onClick={handleSaveFromPage}
+                  >
+                    Save to leaderboard
+                  </button>
+                </div>
+                {saveHint === "need-name" && (
+                  <p className="post-game-leaderboard__feedback post-game-leaderboard__feedback--warn">
+                    Please enter a name before saving.
+                  </p>
+                )}
+                <div className="post-game-leaderboard__actions">
+                  <button
+                    type="button"
+                    className="btn btn-leaderboard"
+                    onClick={() => openLeaderboard(leaderboardFilter)}
+                  >
+                    Leaderboard
+                  </button>
+                </div>
+              </>
             )}
-            {saveHint === "need-name" && (
-              <p className="post-game-leaderboard__feedback post-game-leaderboard__feedback--warn">
-                Please enter a name before saving.
-              </p>
-            )}
-            <div className="post-game-leaderboard__actions">
-              <button
-                type="button"
-                className="btn btn-leaderboard"
-                onClick={openLeaderboard}
-              >
-                Leaderboard
-              </button>
-            </div>
           </div>
+        )}
+
+        {isFinished && (
+          <GameResultsFlags
+            countries={game.countries}
+            countryResults={game.countryResults}
+          />
         )}
 
         {!isFinished && game.phase !== "loading" && (

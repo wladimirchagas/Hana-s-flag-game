@@ -19,6 +19,10 @@ export type GameFinishCelebrationProps = {
   totalFlags: number;
   playedAllFlags: boolean;
   elapsedMs: number | null;
+  playerName: string;
+  onPlayerNameChange: (name: string) => void;
+  saveHint: "idle" | "saved" | "need-name";
+  onSave: () => void;
   onContinue: () => void;
 };
 
@@ -29,18 +33,22 @@ export function GameFinishCelebration({
   totalFlags,
   playedAllFlags,
   elapsedMs,
+  playerName,
+  onPlayerNameChange,
+  saveHint,
+  onSave,
   onContinue,
 }: GameFinishCelebrationProps) {
-  const continueRef = useRef<HTMLButtonElement>(null);
+  const saveRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape" || e.key === "Enter") onContinue();
+      if (e.key === "Escape") onContinue();
     };
     window.addEventListener("keydown", onKey);
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    const t = window.setTimeout(() => continueRef.current?.focus(), 50);
+    const t = window.setTimeout(() => saveRef.current?.focus(), 50);
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prevOverflow;
@@ -111,14 +119,58 @@ export function GameFinishCelebration({
             </div>
           </div>
 
-          <button
-            ref={continueRef}
-            type="button"
-            className="finish__continue"
-            onClick={onContinue}
-          >
-            See your results →
-          </button>
+          {saveHint === "saved" ? (
+            <div className="finish__save-actions">
+              <p className="finish__save-feedback finish__save-feedback--ok">
+                ✓ Saved to leaderboard!
+              </p>
+              <button
+                type="button"
+                className="finish__continue"
+                onClick={onContinue}
+              >
+                See your results →
+              </button>
+            </div>
+          ) : (
+            <div className="finish__save-actions">
+              <div className="finish__save-form">
+                <label className="visually-hidden" htmlFor="finish-player-name">
+                  Your name
+                </label>
+                <input
+                  id="finish-player-name"
+                  type="text"
+                  className="finish__name-input"
+                  placeholder="Your name"
+                  maxLength={48}
+                  value={playerName}
+                  autoComplete="nickname"
+                  onChange={(e) => onPlayerNameChange(e.target.value)}
+                />
+                <button
+                  ref={saveRef}
+                  type="button"
+                  className="finish__continue"
+                  onClick={onSave}
+                >
+                  Save to leaderboard 🏆
+                </button>
+              </div>
+              {saveHint === "need-name" && (
+                <p className="finish__save-feedback finish__save-feedback--warn">
+                  Enter your name first!
+                </p>
+              )}
+              <button
+                type="button"
+                className="finish__skip"
+                onClick={onContinue}
+              >
+                See results first →
+              </button>
+            </div>
+          )}
         </div>
 
         <HeroCutIn variant="boy" side="right" />
