@@ -15,8 +15,9 @@
  * Groups (in display order):
  *
  *   1. near-twins
- *      Palestine / Jordan — both horizontal black-white-green with a
- *      red hoist triangle; Jordan adds a small white star inside.
+ *      Palestine, Jordan, and UAE — all horizontal black-white-green
+ *      flags with a red element on the hoist side. Palestine and Jordan
+ *      use a red triangle; UAE has a solid red vertical stripe.
  *
  *   2. vertical-byr
  *      Vertical Blue-Yellow-Red tricolours: Romania and Chad are
@@ -106,10 +107,10 @@
  *      white, and a thin black band.
  *
  *  17. red-white-cross
- *      Switzerland (white cross centred on a red field) and Tonga
- *      (red field with a white canton containing a red cross) both
- *      feature a bold red-and-white cross design and are commonly
- *      confused at a glance.
+ *      Switzerland (white cross centred on a red field), Tonga (red
+ *      field with a white canton containing a red cross), and Georgia
+ *      (white field with a large red cross and four smaller red crosses)
+ *      all feature a bold red-and-white cross as the dominant motif.
  *
  *  18. green-blue
  *      Flags whose field is shared between green and blue with no other
@@ -121,10 +122,29 @@
  *      Flags with a single vertical stripe on the hoist side alongside
  *      horizontal colour bands on the fly. Oman (red hoist stripe +
  *      white/red/green bands), Madagascar (white hoist stripe +
- *      red/green stacked halves), and Benin (green hoist stripe +
- *      yellow/red stacked halves) share this distinctive layout.
+ *      red/green stacked halves), Benin (green hoist stripe + yellow/red
+ *      stacked halves), and Lebanon (red/white/red bands + green cedar)
+ *      share this distinctive layout.
  *
- *  20. serrated
+ *  20. saffron-white-green
+ *      India (saffron / white / green horizontal tricolour + blue
+ *      Ashoka chakra) and Niger (orange / white / green + orange
+ *      central disc) share the same three-colour palette and a central
+ *      circular symbol; a commonly cited quiz confusion pair.
+ *
+ *  21. red-yellow-green-h
+ *      Bolivia (red / yellow / green horizontal, + coat of arms) and
+ *      Ghana (red / gold / green horizontal + black star) share the
+ *      same horizontal red-yellow-green stripe order and are frequently
+ *      confused despite the different central symbols.
+ *
+ *  22. red-field-star
+ *      China (red field + five yellow stars) and Vietnam (red field +
+ *      single large yellow star) both feature a plain red background
+ *      with prominent yellow star(s) — the most-cited "communist flag"
+ *      confusion pair in quizzes.
+ *
+ *  23. serrated
  *      Vertical white-and-dark-red bicolours with a serrated / zigzag
  *      border separating the two halves. Bahrain (5 serrated points,
  *      brighter red, 1:2) and Qatar (9 points, dark maroon, 11:28) are
@@ -152,6 +172,9 @@ export type FlagSimilarity =
   | "blue-stars-stripe"
   | "disc-on-field"
   | "shahada"
+  | "saffron-white-green"
+  | "red-yellow-green-h"
+  | "red-field-star"
   | "serrated";
 
 export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
@@ -176,8 +199,11 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "red-white-red":      "Red-White-Red",
     "blue-stars-stripe":  "Blue field with stars & stripe",
     "disc-on-field":      "Plain field with disc",
-    "shahada":            "Shahada inscription",
-    "serrated":           "Serrated bicolour",
+    "shahada":             "Shahada inscription",
+    "saffron-white-green": "Saffron, White & Green",
+    "red-yellow-green-h":  "Horizontal Red-Yellow-Green",
+    "red-field-star":      "Red field with yellow star",
+    "serrated":            "Serrated bicolour",
   };
 
 /** Canonical display order for the "By similarity" group headings. */
@@ -203,6 +229,9 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "blue-stars-stripe",
   "disc-on-field",
   "shahada",
+  "saffron-white-green",
+  "red-yellow-green-h",
+  "red-field-star",
   "serrated",
 ];
 
@@ -211,9 +240,10 @@ export const FLAG_SIMILARITIES: Readonly<
   Record<string, readonly FlagSimilarity[]>
 > = {
   // ── Near-twins ────────────────────────────────────────────────────────────
-  // Palestine / Jordan: both horizontal black-white-green + red triangle
+  // Palestine / Jordan / UAE: horizontal black-white-green with red on hoist
   PS: ["near-twins"],
   JO: ["near-twins"],
+  AE: ["near-twins"],
 
   // ── Vertical Blue-Yellow-Red ──────────────────────────────────────────────
   // Romania / Chad: virtually identical; Andorra / Moldova add COA
@@ -319,11 +349,13 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Red & White cross ─────────────────────────────────────────────────────
   CH: ["red-white-cross"],
   TO: ["red-white-cross"],
+  GE: ["red-white-cross"],
 
   // ── Vertical hoist stripe ─────────────────────────────────────────────────
   OM: ["hoist-stripe"],
   MG: ["hoist-stripe"],
   BJ: ["hoist-stripe"],
+  LB: ["hoist-stripe"],
 
   // ── Plain field with disc ─────────────────────────────────────────────────
   JP: ["disc-on-field"],
@@ -342,6 +374,21 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Shahada inscription ───────────────────────────────────────────────────
   SA: ["shahada"],
   AF: ["shahada"],
+
+  // ── Saffron, White & Green ────────────────────────────────────────────────
+  // India / Niger: same palette, same horizontal layout, central disc/circle
+  IN: ["saffron-white-green"],
+  NE: ["saffron-white-green"],
+
+  // ── Horizontal Red-Yellow-Green ───────────────────────────────────────────
+  // Bolivia / Ghana: both horizontal red-yellow(gold)-green tricolours
+  BO: ["red-yellow-green-h"],
+  GH: ["red-yellow-green-h"],
+
+  // ── Red field with yellow star ────────────────────────────────────────────
+  // China / Vietnam: plain red field with prominent yellow star(s)
+  CN: ["red-field-star"],
+  VN: ["red-field-star"],
 
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
