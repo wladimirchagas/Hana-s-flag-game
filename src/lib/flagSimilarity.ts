@@ -139,10 +139,9 @@
  *      into the hoist — and are routinely mixed up in quizzes.
  *
  *  23. red-field-star
- *      China (red field + five yellow stars) and Vietnam (red field +
- *      single large yellow star) both feature a plain red background
- *      with prominent yellow star(s) — the most-cited "communist flag"
- *      confusion pair in quizzes.
+ *      China (five yellow stars), Vietnam (one large yellow star), and
+ *      Morocco (one green star) all feature a plain red field with a
+ *      prominent centred star — a commonly cited quiz confusion cluster.
  *
  *  24. serrated
  *      Vertical white-and-dark-red bicolours with a serrated / zigzag
@@ -202,7 +201,7 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "shahada":             "Shahada inscription",
     "saffron-white-green": "Saffron, White & Green",
     "triangle-hoist":      "Triangle on hoist",
-    "red-field-star":      "Red field with yellow star",
+    "red-field-star":      "Red field with centred star",
     "serrated":            "Serrated bicolour",
   };
 
@@ -247,13 +246,15 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "vertical-byr":      ["TD", "RO", "AD", "MD"],
   "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
   "arab-palette":      ["EG", "IQ", "YE", "SD", "KW", "SY"],
-  "red-white-blue-h":  ["NL", "LU", "HR", "SK", "SI", "RU", "PY", "RS"],
-  "green-yellow-red":  ["CG", "SN", "CM", "GH", "ET", "ST", "GW", "TG", "BJ", "BF", "BO", "GN", "ML", "LT", "MM"],
-  "green-blue":        ["SL", "DJ", "LS"],
+  "blue-ensign":       ["NZ", "AU", "TV", "FJ"],
+  "red-white-blue-h":  ["LU", "NL", "PY", "HR", "SK", "SI", "RU", "RS"],
+  "green-yellow-red":  ["CG", "SN", "CM", "GH", "BO", "ET", "ST", "GW", "TG", "BJ", "GN", "ML", "LT", "MM", "BF"],
+  "green-blue":        ["DJ", "SL", "LS"],
   "stripes-canton":    ["US", "LR", "MY"],
   "red-white-green":   ["HU", "TJ", "IR", "GQ", "BG", "IT", "MX"],
   "blue-white":        ["BW", "AR", "HN", "NI", "SV", "UY", "GT"],
-  "disc-on-field":     ["JP", "PW", "BD"],
+  "disc-on-field":     ["JP", "BD", "PW", "LA"],
+  "red-white-red":     ["LV", "AT", "LB", "TH"],
   "triangle-hoist":    ["CZ", "CL", "CR", "CU", "PH"],
 };
 
@@ -384,8 +385,9 @@ export const FLAG_SIMILARITIES: Readonly<
 
   // ── Plain field with disc ─────────────────────────────────────────────────
   JP: ["disc-on-field"],
-  PW: ["disc-on-field"],
   BD: ["disc-on-field"],
+  PW: ["disc-on-field"],
+  LA: ["disc-on-field"],
 
   // ── Blue field with stars & stripe ───────────────────────────────────────
   NR: ["blue-stars-stripe"],
@@ -414,10 +416,10 @@ export const FLAG_SIMILARITIES: Readonly<
   CU: ["triangle-hoist"],
   PH: ["triangle-hoist"],
 
-  // ── Red field with yellow star ────────────────────────────────────────────
-  // China / Vietnam: plain red field with prominent yellow star(s)
+  // ── Red field with centred star ───────────────────────────────────────────
   CN: ["red-field-star"],
   VN: ["red-field-star"],
+  MA: ["red-field-star"],
 
   // ── Serrated bicolour ─────────────────────────────────────────────────────
   BH: ["serrated"],
