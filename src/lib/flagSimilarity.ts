@@ -247,7 +247,7 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "vertical-byr":      ["TD", "RO", "AD", "MD"],
   "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
   "arab-palette":      ["EG", "IQ", "YE", "SD", "KW", "SY"],
-  "red-white-blue-h":  ["RU", "NL", "LU", "HR", "SK", "SI", "PY", "RS"],
+  "red-white-blue-h":  ["NL", "LU", "HR", "SK", "SI", "RU", "PY", "RS"],
   "red-white-green":   ["HU", "IR", "BG", "IT", "MX", "GQ"],
   "blue-white":        ["BW", "AR", "HN", "NI", "SV", "UY", "GT"],
 };
