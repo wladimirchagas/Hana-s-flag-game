@@ -28,15 +28,38 @@ export default function LandingPage() {
   }
   const playQuiz = (config: QuickQuizConfig) => {
     setQuizOpen(false)
-    if (config.type === 'standard') {
+    if (config.type === 'difficulty') {
       navigate('/game', { state: { quiz: { flagCount: config.flagCount, difficulty: config.difficulty } } })
-    } else {
+    } else if (config.type === 'similarity') {
       navigate('/game', {
         state: {
-          similarity: {
+          groupGame: {
             groupCodes: config.groupCodes,
             groupLabel: config.groupLabel,
             hardcore: config.hardcore,
+            modeLabel: 'By Similarity',
+          },
+        },
+      })
+    } else if (config.type === 'continent') {
+      navigate('/game', {
+        state: {
+          groupGame: {
+            groupCodes: config.groupCodes,
+            groupLabel: config.groupLabel,
+            hardcore: false,
+            modeLabel: 'By Continent',
+          },
+        },
+      })
+    } else if (config.type === 'subregion') {
+      navigate('/game', {
+        state: {
+          groupGame: {
+            groupCodes: config.groupCodes,
+            groupLabel: config.groupLabel,
+            hardcore: false,
+            modeLabel: 'By Sub-Continent',
           },
         },
       })

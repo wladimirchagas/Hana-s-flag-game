@@ -786,39 +786,45 @@
   outline: none;
 }
 
-/* Tab bar — Standard / By Similarity */
-.qquiz__tabs {
-  display: flex;
-  gap: 0;
-  border-bottom: 2px solid var(--ink-faint);
+/* Mode selector dropdown */
+.qquiz__mode-wrap {
+  padding: 0.75rem 1.5rem 0;
   background: var(--paper);
+  border-bottom: 2px dashed var(--ink-faint);
+  position: relative;
 }
 
-.qquiz__tab {
-  flex: 1 1 0;
-  padding: 0.65rem 0.5rem;
-  background: transparent;
-  border: none;
-  border-bottom: 3px solid transparent;
-  font-family: inherit;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-  cursor: pointer;
-  letter-spacing: 0.01em;
-  transition: color 120ms ease, border-color 120ms ease;
-  margin-bottom: -2px;
-}
-
-.qquiz__tab:hover,
-.qquiz__tab:focus-visible {
+.qquiz__mode-wrap::after {
+  content: "▾";
+  position: absolute;
+  right: 2.1rem;
+  top: 50%;
+  transform: translateY(-65%);
+  font-size: 1.1rem;
   color: var(--ink);
+  pointer-events: none;
+}
+
+.qquiz__mode-select {
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  padding: 0.55rem 2.5rem 0.55rem 0.9rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: 0 3px 0 var(--ink);
   outline: none;
 }
 
-.qquiz__tab--active {
-  color: var(--ink);
-  border-bottom-color: var(--coral);
+.qquiz__mode-select:focus-visible {
+  box-shadow: 0 3px 0 var(--ink), 0 0 0 3px var(--sky);
 }
 
 .qquiz__body {
@@ -878,6 +884,22 @@
   border-radius: 999px;
   padding: 0.15rem 0.6rem;
   white-space: nowrap;
+}
+
+/* Continent heading inside the Sub-Continent list */
+.qquiz__region-header {
+  padding: 0.45rem 1.5rem 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--cream);
+  border-top: 2px dashed var(--ink-faint);
+}
+
+.qquiz__region-header:first-child {
+  border-top: none;
 }
 
 /* Sub-mode option cards (Decoy Buttons / Hardcore) */

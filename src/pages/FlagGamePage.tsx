@@ -21,28 +21,30 @@ type QuizState = {
   flagCount: number;
 };
 
-type SimilarityState = {
+type GroupGameState = {
   groupCodes: string[];
   groupLabel: string;
   hardcore: boolean;
+  /** Short label shown in the header chip, e.g. "By Continent". */
+  modeLabel: string;
 };
 
 export default function FlagGamePage() {
   const location = useLocation();
   const navState = location.state as
-    | { codes?: string[]; quiz?: QuizState; similarity?: SimilarityState }
+    | { codes?: string[]; quiz?: QuizState; groupGame?: GroupGameState }
     | null;
   const filterCodes =
     Array.isArray(navState?.codes) && navState!.codes!.length > 0
       ? navState!.codes!
-      : navState?.similarity?.groupCodes && navState.similarity.groupCodes.length > 0
-        ? navState.similarity.groupCodes
+      : navState?.groupGame?.groupCodes && navState.groupGame.groupCodes.length > 0
+        ? navState.groupGame.groupCodes
         : null;
   const quiz = navState?.quiz ?? null;
-  const similarity = navState?.similarity ?? null;
-  const isCustomGame = filterCodes !== null && quiz === null && similarity === null;
+  const groupGame = navState?.groupGame ?? null;
+  const isCustomGame = filterCodes !== null && quiz === null && groupGame === null;
   const isQuickQuiz = quiz !== null;
-  const isSimilarity = similarity !== null;
+  const isGroupGame = groupGame !== null;
   // Look up the difficulty config to know dropdown size + max attempts.
   // Imported lazily here to keep this file's imports tidy.
   const quizCfg = quiz
@@ -57,7 +59,7 @@ export default function FlagGamePage() {
     optionCount: quizCfg?.optionCount ?? null,
     maxAttemptsPerFlag: quizCfg?.maxAttempts ?? Infinity,
     // Hardcore similarity mode: guess group flags from the full 195 dropdown.
-    useFullAlternatives: isSimilarity && similarity.hardcore,
+    useFullAlternatives: isGroupGame && groupGame.hardcore,
   });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const [playerName, setPlayerName] = useState("");
@@ -176,9 +178,9 @@ export default function FlagGamePage() {
             {isQuickQuiz && quizCfg && (
               <span className="card-header__chip">{quizCfg.shortLabel}</span>
             )}
-            {isSimilarity && (
+            {isGroupGame && (
               <span className="card-header__chip">
-                {similarity.hardcore ? "Hardcore" : "By Similarity"}
+                {groupGame.hardcore ? "Hardcore" : groupGame.modeLabel}
               </span>
             )}
           </h1>
@@ -199,10 +201,10 @@ export default function FlagGamePage() {
                     remaining === 1 ? "try" : "tries"
                   } left on this flag.`;
                 })()
-              : isSimilarity
-              ? similarity.hardcore
-                ? `${similarity.groupLabel} · all 195 in dropdown · one guess per flag.`
-                : `${similarity.groupLabel} · ${game.totalFlags} flags · one guess per flag.`
+              : isGroupGame
+              ? groupGame.hardcore
+                ? `${groupGame.groupLabel} · all 195 in dropdown · one guess per flag.`
+                : `${groupGame.groupLabel} · ${game.totalFlags} flags · one guess per flag.`
               : isCustomGame
               ? game.retryAttempts > 0
                 ? `Try again — keep going until you get it right!`
