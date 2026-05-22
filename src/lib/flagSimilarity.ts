@@ -249,6 +249,7 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "arab-palette":      ["EG", "SY", "IQ", "YE", "SD", "KW"],
   "red-white-blue-h":  ["RU", "NL", "LU", "HR", "SK", "SI", "PY", "RS"],
   "red-white-green":   ["HU", "IR", "BG", "IT", "MX", "GQ"],
+  "blue-white":        ["BW", "AR", "HN", "NI", "SV", "UY", "GT"],
 };
 
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
@@ -359,7 +360,6 @@ export const FLAG_SIMILARITIES: Readonly<
 
   // ── Green & Blue ──────────────────────────────────────────────────────────
   SL: ["green-blue"],
-  GA: ["green-blue"],
   DJ: ["green-blue"],
 
   // ── Red & White cross ─────────────────────────────────────────────────────
