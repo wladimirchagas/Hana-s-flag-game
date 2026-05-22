@@ -174,7 +174,7 @@ export default function FlagGamePage() {
             Guess the Flag{" "}
             {isCustomGame && <span className="card-header__chip">Custom</span>}
             {isQuickQuiz && quizCfg && (
-              <span className="card-header__chip">{quizCfg.label}</span>
+              <span className="card-header__chip">{quizCfg.shortLabel}</span>
             )}
             {isSimilarity && (
               <span className="card-header__chip">

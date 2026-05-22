@@ -221,8 +221,8 @@ export function QuickQuizSetupModal({
 
               {effectiveCount < count && (
                 <p className="qquiz__warning">
-                  Only {bucketSize} flags are classified as{" "}
-                  {cfg.label.toLowerCase()}; the game will use all {bucketSize}.
+                  Only {bucketSize} flags are available at this difficulty; the
+                  game will use all {bucketSize}.
                 </p>
               )}
             </div>
@@ -242,7 +242,7 @@ export function QuickQuizSetupModal({
                   })
                 }
               >
-                Play {effectiveCount} {cfg.label} flag
+                Play {effectiveCount} {cfg.shortLabel} flag
                 {effectiveCount === 1 ? "" : "s"}
               </button>
             </footer>

@@ -273,24 +273,35 @@ export function difficultyOf(code: string): Difficulty | null {
 /** Per-difficulty UX configuration: dropdown size + max attempts per flag. */
 export const DIFFICULTY_CONFIG: Record<
   Difficulty,
-  { optionCount: number; maxAttempts: number; label: string; tagline: string }
+  {
+    optionCount: number;
+    maxAttempts: number;
+    /** Full descriptive label shown in the difficulty picker. */
+    label: string;
+    /** Short label used in chips, buttons, and compact contexts. */
+    shortLabel: string;
+    tagline: string;
+  }
 > = {
   easy: {
     optionCount: 5,
     maxAttempts: 1,
-    label: "Easy",
+    label: `Easiest flags to guess (${EASY_CODES.length})`,
+    shortLabel: "Easy",
     tagline: "5 choices · 1 try",
   },
   moderate: {
     optionCount: 15,
     maxAttempts: 1,
-    label: "Moderate",
+    label: `Middle of the road flags to guess (${MODERATE_CODES.length})`,
+    shortLabel: "Moderate",
     tagline: "15 choices · 1 try",
   },
   hard: {
     optionCount: 50,
     maxAttempts: 1,
-    label: "Hard",
+    label: `Hardest flags to guess (${HARD_CODES.length})`,
+    shortLabel: "Hard",
     tagline: "50 choices · 1 try",
   },
 };
