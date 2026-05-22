@@ -628,6 +628,7 @@ export default function LearnPage() {
         selectedId={selectedId}
         onSelect={handleGridSelect}
         resolveFlag={resolveFlag}
+        isModernEra={isModernEra}
       />
     </div>
   );

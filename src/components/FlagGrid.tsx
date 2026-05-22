@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   continentOrder,
   type FlagListEntry,
@@ -48,6 +48,9 @@ export type FlagGridProps = {
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
+  /** True only when the "today" era is selected (modern world map).
+   *  TODAY_ONLY_MODES are hidden from the dropdown for historical eras. */
+  isModernEra?: boolean;
 };
 
 type GroupMode =
@@ -73,14 +76,38 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "drive-side": "By driving side",
 };
 
+// Modes that only make sense for today's world map (modern era). They rely on
+// data (shapes, families, colours, similarity groups, driving side) that is not
+// available for historical polities.
+//
+// ⚠️  RULE: Before adding a new GroupMode, always ask whether it should be
+// restricted to today only (listed here) or also available for historical
+// periods. Never silently add it to one list without confirming the other.
+const TODAY_ONLY_MODES = new Set<GroupMode>([
+  "shape",
+  "family",
+  "color",
+  "similarity",
+  "drive-side",
+]);
+
 export function FlagGrid({
   entries,
   selectedId,
   onSelect,
   resolveFlag,
+  isModernEra = false,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>("none");
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+
+  // When the era switches away from today, fall back to "none" if the active
+  // mode is not available for historical eras.
+  useEffect(() => {
+    if (!isModernEra && TODAY_ONLY_MODES.has(groupMode)) {
+      setGroupMode("none");
+    }
+  }, [isModernEra, groupMode]);
 
   // Build the (heading → entries) groups for the current mode. We always
   // alphabetise within a group; the headings themselves are ordered by
@@ -254,11 +281,13 @@ export function FlagGrid({
             onChange={(e) => setGroupMode(e.target.value as GroupMode)}
             className="flag-grid__select"
           >
-            {(Object.keys(GROUP_MODE_LABELS) as GroupMode[]).map((m) => (
-              <option key={m} value={m}>
-                {GROUP_MODE_LABELS[m]}
-              </option>
-            ))}
+            {(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
+              .filter((m) => isModernEra || !TODAY_ONLY_MODES.has(m))
+              .map((m) => (
+                <option key={m} value={m}>
+                  {GROUP_MODE_LABELS[m]}
+                </option>
+              ))}
           </select>
         </label>
       </header>
