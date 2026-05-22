@@ -248,8 +248,9 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
   "arab-palette":      ["EG", "IQ", "YE", "SD", "KW", "SY"],
   "red-white-blue-h":  ["NL", "LU", "HR", "SK", "SI", "RU", "PY", "RS"],
-  "red-white-green":   ["HU", "IR", "BG", "IT", "MX", "GQ"],
+  "red-white-green":   ["HU", "IR", "GQ", "BG", "IT", "MX"],
   "blue-white":        ["BW", "AR", "HN", "NI", "SV", "UY", "GT"],
+  "green-yellow-red":  ["CG", "GN", "ML", "SN", "ET", "GH", "CM", "BF", "BJ", "TG", "GW", "ST"],
 };
 
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
