@@ -307,10 +307,10 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Green-Yellow-Red ──────────────────────────────────────────────────────
   // GN, ML, SN already tagged ryg-vertical above; remaining Pan-African:
   ET: ["green-yellow-red"],
-  GH: ["green-yellow-red"],
+  GH: ["green-yellow-red", "red-yellow-green-h"],
   CM: ["green-yellow-red"],
   BF: ["green-yellow-red"],
-  BJ: ["green-yellow-red"],
+  BJ: ["green-yellow-red", "hoist-stripe"],
   TG: ["green-yellow-red"],
   CG: ["green-yellow-red"],
   GW: ["green-yellow-red"],
@@ -354,7 +354,6 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Vertical hoist stripe ─────────────────────────────────────────────────
   OM: ["hoist-stripe"],
   MG: ["hoist-stripe"],
-  BJ: ["hoist-stripe"],
   LB: ["hoist-stripe"],
 
   // ── Plain field with disc ─────────────────────────────────────────────────
@@ -383,7 +382,6 @@ export const FLAG_SIMILARITIES: Readonly<
   // ── Horizontal Red-Yellow-Green ───────────────────────────────────────────
   // Bolivia / Ghana: both horizontal red-yellow(gold)-green tricolours
   BO: ["red-yellow-green-h"],
-  GH: ["red-yellow-green-h"],
 
   // ── Red field with yellow star ────────────────────────────────────────────
   // China / Vietnam: plain red field with prominent yellow star(s)
