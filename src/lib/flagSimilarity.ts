@@ -36,13 +36,7 @@
  *      with a crescent canton). Grouped together on virtually every
  *      "similar flags" list.
  *
- *   5. ryg-vertical
- *      Vertical Red-Yellow-Green (or Green-Yellow-Red) tricolours:
- *      Guinea (red / yellow / green), Mali (green / yellow / red —
- *      the mirror of Guinea), and Senegal (green / yellow / red + star,
- *      virtually identical to Mali). One of the most-cited quiz triplets.
- *
- *   6. red-white-black
+ *   5. red-white-black
  *      Arab Liberation Flag palette: red / white / black horizontal
  *      bands (sometimes with a coloured hoist triangle or central
  *      emblem). Egypt, Syria, Iraq, Yemen, and Sudan all share this
@@ -113,7 +107,6 @@ export type FlagSimilarity =
   | "vertical-byr"
   | "green-white-orange"
   | "red-white-bicolor"
-  | "ryg-vertical"
   | "red-white-black"
   | "gran-colombia"
   | "nordic-cross"
@@ -131,7 +124,6 @@ export const FLAG_SIMILARITY_LABELS: Readonly<Record<FlagSimilarity, string>> =
     "vertical-byr":      "Vertical Blue-Yellow-Red",
     "green-white-orange": "Green, White & Orange",
     "red-white-bicolor": "Red & White bicolour",
-    "ryg-vertical":      "Vertical Red-Yellow-Green",
     "red-white-black":   "Red-White-Black",
     "gran-colombia":     "Gran Colombia palette",
     "nordic-cross":      "Nordic Cross",
@@ -150,7 +142,6 @@ export const FLAG_SIMILARITY_ORDER: readonly FlagSimilarity[] = [
   "vertical-byr",
   "green-white-orange",
   "red-white-bicolor",
-  "ryg-vertical",
   "red-white-black",
   "gran-colombia",
   "nordic-cross",
@@ -190,12 +181,6 @@ export const FLAG_SIMILARITIES: Readonly<
   ID: ["red-white-bicolor"],
   PL: ["red-white-bicolor"],
   SG: ["red-white-bicolor"],
-
-  // ── Vertical Red-Yellow-Green ─────────────────────────────────────────────
-  // Guinea / Mali / Senegal: near-identical vertical tricolours
-  GN: ["ryg-vertical", "green-yellow-red"],
-  ML: ["ryg-vertical", "green-yellow-red"],
-  SN: ["ryg-vertical", "green-yellow-red"],
 
   // ── Red-White-Black ────────────────────────────────────────────────────────
   // Arab Liberation palette horizontal tricolours
