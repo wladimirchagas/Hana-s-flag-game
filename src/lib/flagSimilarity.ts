@@ -360,7 +360,6 @@ export const FLAG_SIMILARITIES: Readonly<
 
   // ── Green & Blue ──────────────────────────────────────────────────────────
   SL: ["green-blue"],
-  GA: ["green-blue"],
   DJ: ["green-blue"],
 
   // ── Red & White cross ─────────────────────────────────────────────────────
