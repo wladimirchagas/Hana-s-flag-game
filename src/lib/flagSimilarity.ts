@@ -247,6 +247,7 @@ export const FLAG_SIMILARITY_MEMBER_ORDER: Partial<
   "vertical-byr":      ["TD", "RO", "AD", "MD"],
   "red-white-bicolor": ["SG", "ID", "MC", "PL", "MT"],
   "arab-palette":      ["EG", "SY", "IQ", "YE", "SD", "KW"],
+  "red-white-blue-h":  ["RU", "NL", "LU", "HR", "SK", "SI", "PY", "RS"],
 };
 
 /** Per-country similarity tags. Keyed on ISO 3166-1 alpha-2. */
