@@ -359,7 +359,7 @@ export const FLAG_SIMILARITIES: Readonly<
   BJ: ["green-yellow-red", "hoist-stripe"],
   TG: ["green-yellow-red"],
   CG: ["green-yellow-red"],
-  GW: ["green-yellow-red"],
+  GW: ["green-yellow-red", "hoist-stripe"],
   ST: ["green-yellow-red"],
   BO: ["green-yellow-red"],
   GN: ["green-yellow-red"],
