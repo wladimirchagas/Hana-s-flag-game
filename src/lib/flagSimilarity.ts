@@ -281,6 +281,7 @@ export const FLAG_SIMILARITIES: Readonly<
   BG: ["red-white-green"],
   IT: ["red-white-green"],
   MX: ["red-white-green"],
+  GQ: ["red-white-green"],
 
   // ── Red field, crescent & star ────────────────────────────────────────────
   TR: ["red-crescent-star"],
