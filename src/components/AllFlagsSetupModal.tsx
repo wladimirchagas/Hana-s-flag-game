@@ -124,20 +124,21 @@ export function AllFlagsSetupModal({
           </button>
         </header>
 
-        {/* Mode selector dropdown */}
-        <div className="qquiz__mode-wrap">
-          <select
-            className="qquiz__mode-select"
-            value={mode}
-            onChange={(e) => setMode(e.target.value as FlagMasterMode)}
-            aria-label="Game mode"
-          >
+        {/* Mode selector buttons */}
+        <div className="qquiz__body">
+          <div className="qquiz__choices qquiz__choices--modes">
             {MODE_ORDER.map((m) => (
-              <option key={m} value={m}>
+              <button
+                key={m}
+                type="button"
+                className={`qquiz__chip ${m === mode ? "qquiz__chip--active" : ""}`}
+                onClick={() => setMode(m)}
+                aria-pressed={m === mode}
+              >
                 {MODE_LABELS[m]}
-              </option>
+              </button>
             ))}
-          </select>
+          </div>
         </div>
 
         {/* ── All 195 World Flags ── */}
