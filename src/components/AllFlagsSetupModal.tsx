@@ -53,8 +53,6 @@ export function AllFlagsSetupModal({
   onStart,
 }: AllFlagsSetupModalProps) {
   const [mode, setMode] = useState<FlagMasterMode>("all195");
-  const [simStep, setSimStep] = useState<"groups" | "submode">("groups");
-  const [selectedGroup, setSelectedGroup] = useState<FlagSimilarity | null>(null);
 
   const closeRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
@@ -81,11 +79,7 @@ export function AllFlagsSetupModal({
   }, [open, onClose]);
 
   useEffect(() => {
-    if (!open) {
-      setMode("all195");
-      setSimStep("groups");
-      setSelectedGroup(null);
-    }
+    if (!open) setMode("all195");
   }, [open]);
 
   if (!open) return null;
@@ -97,16 +91,7 @@ export function AllFlagsSetupModal({
       ? "Pick a continent — you'll guess every flag from it."
       : mode === "subregion"
       ? "Pick a sub-continent — you'll guess every flag from it."
-      : simStep === "groups"
-      ? "Pick a group of visually similar flags to test yourself on."
-      : selectedGroup
-      ? `${SIM_GROUP_CODES[selectedGroup]?.length ?? 0} flags — pick your challenge level.`
-      : "";
-
-  const groupCodes = selectedGroup ? (SIM_GROUP_CODES[selectedGroup] ?? []) : [];
-  const groupLabel = selectedGroup ? FLAG_SIMILARITY_LABELS[selectedGroup] : "";
-
-  const showBack = mode === "similarity" && simStep === "submode";
+      : "Pick a group of visually similar flags to test yourself on.";
 
   return (
     <div
@@ -121,16 +106,6 @@ export function AllFlagsSetupModal({
       <div className="all195">
         <header className="all195__header">
           <div className="all195__header-left">
-            {showBack && (
-              <button
-                type="button"
-                className="all195__back"
-                onClick={() => setSimStep("groups")}
-                aria-label="Back"
-              >
-                ←
-              </button>
-            )}
             <div>
               <h2 id="all195-title" className="all195__title">
                 Flag Master
@@ -154,11 +129,7 @@ export function AllFlagsSetupModal({
           <select
             className="qquiz__mode-select"
             value={mode}
-            onChange={(e) => {
-              setMode(e.target.value as FlagMasterMode);
-              setSimStep("groups");
-              setSelectedGroup(null);
-            }}
+            onChange={(e) => setMode(e.target.value as FlagMasterMode)}
             aria-label="Game mode"
           >
             {MODE_ORDER.map((m) => (
@@ -252,8 +223,8 @@ export function AllFlagsSetupModal({
           </>
         )}
 
-        {/* ── Similar flags only — group picker ── */}
-        {mode === "similarity" && simStep === "groups" && (
+        {/* ── Similar flags only — click a group to play immediately ── */}
+        {mode === "similarity" && (
           <>
             <div className="all195__body all195__body--groups">
               {[...FLAG_SIMILARITY_ORDER]
@@ -266,10 +237,14 @@ export function AllFlagsSetupModal({
                       key={group}
                       type="button"
                       className="all195__group-row"
-                      onClick={() => {
-                        setSelectedGroup(group);
-                        setSimStep("submode");
-                      }}
+                      onClick={() =>
+                        onStart({
+                          type: "similarity",
+                          groupCodes: [...codes],
+                          groupLabel: FLAG_SIMILARITY_LABELS[group],
+                          hardcore: false,
+                        })
+                      }
                     >
                       <span className="all195__group-label">
                         {FLAG_SIMILARITY_LABELS[group]}
@@ -280,67 +255,6 @@ export function AllFlagsSetupModal({
                     </button>
                   );
                 })}
-            </div>
-            <footer className="all195__footer">
-              <button type="button" className="all195__cancel" onClick={onClose}>
-                Cancel
-              </button>
-            </footer>
-          </>
-        )}
-
-        {/* ── Similar flags only — Decoy / Hardcore submode ── */}
-        {mode === "similarity" && simStep === "submode" && selectedGroup && (
-          <>
-            <div className="all195__body">
-              <button
-                type="button"
-                className="all195__option"
-                onClick={() =>
-                  onStart({
-                    type: "similarity",
-                    groupCodes: [...groupCodes],
-                    groupLabel,
-                    hardcore: false,
-                  })
-                }
-              >
-                <span className="all195__option-emoji" aria-hidden="true">🎯</span>
-                <span className="all195__option-text">
-                  <span className="all195__option-title">Decoy Buttons</span>
-                  <span className="all195__option-desc">
-                    Your choices are only the {groupCodes.length} flags in this
-                    group — spot the differences.
-                  </span>
-                </span>
-                <span className="all195__option-cta all195__option-cta--mustard" aria-hidden="true">
-                  PLAY →
-                </span>
-              </button>
-              <button
-                type="button"
-                className="all195__option"
-                onClick={() =>
-                  onStart({
-                    type: "similarity",
-                    groupCodes: [...groupCodes],
-                    groupLabel,
-                    hardcore: true,
-                  })
-                }
-              >
-                <span className="all195__option-emoji" aria-hidden="true">💀</span>
-                <span className="all195__option-text">
-                  <span className="all195__option-title">Hardcore</span>
-                  <span className="all195__option-desc">
-                    Same {groupCodes.length} flags to guess, but picked from a
-                    dropdown of all 195. No hints.
-                  </span>
-                </span>
-                <span className="all195__option-cta all195__option-cta--coral" aria-hidden="true">
-                  PLAY →
-                </span>
-              </button>
             </div>
             <footer className="all195__footer">
               <button type="button" className="all195__cancel" onClick={onClose}>
