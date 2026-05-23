@@ -18,6 +18,7 @@ import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { FLAG_COLORS } from "../lib/flagColors";
 import { FLAG_SIMILARITIES } from "../lib/flagSimilarity";
 import { getDriveSide } from "../lib/flagDriveSide";
+import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
 import {
   DEFAULT_ERA_ID,
@@ -391,6 +392,7 @@ export default function LearnPage() {
         colors: FLAG_COLORS[c.code],
         similarities: FLAG_SIMILARITIES[c.code],
         driveSide: getDriveSide(c.code),
+        aspectRatio: FLAG_ASPECT_RATIOS[c.code],
       }));
     }
     const out: FlagListEntry[] = [];
