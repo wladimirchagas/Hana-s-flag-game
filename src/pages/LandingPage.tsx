@@ -31,7 +31,7 @@ export default function LandingPage() {
 
   const playQuiz = (config: QuickQuizConfig) => {
     setQuizOpen(false)
-    navigate('/game', { state: { quiz: { flagCount: config.flagCount, difficulty: config.difficulty } } })
+    navigate('/game', { state: { quiz: { flagCount: config.flagCount } } })
   }
 
   const playFlagMaster = (start: AllFlagsStart) => {
@@ -156,8 +156,8 @@ export default function LandingPage() {
           >
             <h2 className="card-sticker__title">Quick Quiz</h2>
             <p className="card-sticker__sub">
-              Pick 5, 10, 20, or 30 flags from the full 195 and choose your
-              difficulty — Easy gives you 5 choices, Moderate 15, Hard 50.
+              Pick 5, 10, 20, or 30 flags from the full 195. The number of
+              answer choices matches your flag count — simple as that.
             </p>
             <span className="card-sticker__cta card-sticker__cta--mustard">SET UP →</span>
           </button>
