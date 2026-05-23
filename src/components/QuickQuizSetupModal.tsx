@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import {
   DIFFICULTY_CONFIG,
-  codesForDifficulty,
   type Difficulty,
 } from "../lib/flagDifficulty";
 import {
@@ -43,7 +42,7 @@ export type QuickQuizSetupModalProps = {
 
 type QuizMode = "difficulty" | "similarity" | "continent" | "subregion";
 
-const COUNT_OPTIONS: readonly number[] = [10, 20, 30];
+const COUNT_OPTIONS: readonly number[] = [5, 10, 20, 30];
 const DIFFICULTY_OPTIONS: readonly Difficulty[] = ["easy", "moderate", "hard"];
 
 const MODE_LABELS: Record<QuizMode, string> = {
@@ -94,12 +93,9 @@ export function QuickQuizSetupModal({
 
   if (!open) return null;
 
-  const bucketSize = codesForDifficulty(difficulty).length;
-  const effectiveCount = Math.min(count, bucketSize);
-
   const hint =
     mode === "difficulty"
-      ? "Pick how many flags and how hard you want it."
+      ? "Pick how many flags to play, then choose how many answer choices you get."
       : mode === "similarity"
         ? "Pick a group of similar flags to test yourself on."
         : mode === "continent"
@@ -173,7 +169,7 @@ export function QuickQuizSetupModal({
               </fieldset>
 
               <fieldset className="qquiz__group">
-                <legend className="qquiz__legend">Which flags?</legend>
+                <legend className="qquiz__legend">Difficulty</legend>
                 <div className="qquiz__choices qquiz__choices--difficulty">
                   {DIFFICULTY_OPTIONS.map((d) => {
                     const dcfg = DIFFICULTY_CONFIG[d];
@@ -197,12 +193,6 @@ export function QuickQuizSetupModal({
                 </div>
               </fieldset>
 
-              {effectiveCount < count && (
-                <p className="qquiz__warning">
-                  Only {bucketSize} flags are available at this difficulty; the
-                  game will use all {bucketSize}.
-                </p>
-              )}
             </div>
 
             <footer className="qquiz__footer">
@@ -213,10 +203,10 @@ export function QuickQuizSetupModal({
                 type="button"
                 className="qquiz__play"
                 onClick={() =>
-                  onStart({ type: "difficulty", flagCount: effectiveCount, difficulty })
+                  onStart({ type: "difficulty", flagCount: count, difficulty })
                 }
               >
-                Play {effectiveCount} flag{effectiveCount === 1 ? "" : "s"}
+                Play {count} flag{count === 1 ? "" : "s"}
               </button>
             </footer>
           </>

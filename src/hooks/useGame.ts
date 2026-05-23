@@ -225,12 +225,10 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
           list = fullList.filter((c) => allow.has(c.code));
         }
         // Quick Quiz mode: random sample of `flagCount` countries from the
-        // chosen difficulty bucket. Overrides filterCodes if both supplied.
-        if (difficulty && flagCount && flagCount > 0) {
-          const bucket = new Set(codesForDifficulty(difficulty));
-          const bucketCountries = fullList.filter((c) => bucket.has(c.code));
-          // Fisher-Yates shuffle then slice — deterministic per-mount sample.
-          const shuffled = bucketCountries.slice();
+        // full 195-country pool. Difficulty only controls optionCount (number
+        // of answer choices), not which flags appear in the game.
+        if (flagCount && flagCount > 0) {
+          const shuffled = fullList.slice();
           for (let i = shuffled.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [shuffled[i], shuffled[j]] = [shuffled[j]!, shuffled[i]!];

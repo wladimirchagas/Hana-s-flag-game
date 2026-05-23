@@ -148,22 +148,22 @@ export default function LandingPage() {
           >
             <h2 className="card-sticker__title">Quick Quiz</h2>
             <p className="card-sticker__sub">
-              Pick 10, 20, or 30 flags at Easy, Moderate, or Hard. Difficulty
-              sets your options and tries per flag.
+              Pick 5, 10, 20, or 30 flags from the full 195. Choose Easy,
+              Moderate, or Hard to set how many answer choices you get.
             </p>
             <span className="card-sticker__cta card-sticker__cta--mustard">SET UP →</span>
           </button>
 
-          {/* All 195 Flags — direct play, no modal. */}
+          {/* Pro Quiz — all 195 flags, direct play, no modal. */}
           <button
             type="button"
             className="card-sticker card-sticker--a card-sticker--secondary"
             onClick={() => navigate('/game')}
           >
-            <h2 className="card-sticker__title">All 195 Flags</h2>
+            <h2 className="card-sticker__title">Pro Quiz</h2>
             <p className="card-sticker__sub">
-              The full set, in random order. One guess per flag — the
-              ultimate test of how many you know.
+              All 195 flags, one guess each, full dropdown — the ultimate
+              test of how many you really know.
             </p>
             <span className="card-sticker__cta card-sticker__cta--lime">PLAY ALL →</span>
           </button>
