@@ -3,36 +3,8 @@ import {
   DIFFICULTY_CONFIG,
   type Difficulty,
 } from "../lib/flagDifficulty";
-import {
-  FLAG_SIMILARITY_LABELS,
-  FLAG_SIMILARITY_ORDER,
-  FLAG_SIMILARITIES,
-  type FlagSimilarity,
-} from "../lib/flagSimilarity";
-import {
-  CONTINENT_GROUPS,
-  CONTINENT_ORDER,
-  SUBREGION_GROUPS,
-} from "../lib/continentGroups";
 
-function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
-  const map: Partial<Record<FlagSimilarity, string[]>> = {};
-  for (const [code, groups] of Object.entries(FLAG_SIMILARITIES)) {
-    for (const group of groups) {
-      if (!map[group]) map[group] = [];
-      map[group]!.push(code);
-    }
-  }
-  return map;
-}
-
-const SIM_GROUP_CODES = buildGroupCodesMap();
-
-export type QuickQuizConfig =
-  | { type: "difficulty"; flagCount: number; difficulty: Difficulty }
-  | { type: "similarity"; groupCodes: string[]; groupLabel: string }
-  | { type: "continent"; groupCodes: string[]; groupLabel: string }
-  | { type: "subregion"; groupCodes: string[]; groupLabel: string };
+export type QuickQuizConfig = { type: "difficulty"; flagCount: number; difficulty: Difficulty };
 
 export type QuickQuizSetupModalProps = {
   open: boolean;
@@ -40,24 +12,14 @@ export type QuickQuizSetupModalProps = {
   onStart: (config: QuickQuizConfig) => void;
 };
 
-type QuizMode = "difficulty" | "similarity" | "continent" | "subregion";
-
 const COUNT_OPTIONS: readonly number[] = [5, 10, 20, 30];
 const DIFFICULTY_OPTIONS: readonly Difficulty[] = ["easy", "moderate", "hard"];
-
-const MODE_LABELS: Record<QuizMode, string> = {
-  difficulty: "Difficulty level",
-  similarity: "Similar flags only",
-  continent:  "Continent",
-  subregion:  "Sub-continent",
-};
 
 export function QuickQuizSetupModal({
   open,
   onClose,
   onStart,
 }: QuickQuizSetupModalProps) {
-  const [mode, setMode] = useState<QuizMode>("difficulty");
   const [count, setCount] = useState<number>(20);
   const [difficulty, setDifficulty] = useState<Difficulty>("moderate");
 
@@ -85,22 +47,7 @@ export function QuickQuizSetupModal({
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
-  useEffect(() => {
-    if (!open) {
-      setMode("difficulty");
-    }
-  }, [open]);
-
   if (!open) return null;
-
-  const hint =
-    mode === "difficulty"
-      ? "Pick how many flags to play, then choose how many answer choices you get."
-      : mode === "similarity"
-        ? "Pick a group of similar flags to test yourself on."
-        : mode === "continent"
-          ? "Pick a continent — you'll guess every flag from it."
-          : "Pick a sub-continent — you'll guess every flag from it.";
 
   return (
     <div
@@ -118,7 +65,9 @@ export function QuickQuizSetupModal({
             <h2 id="qquiz-title" className="qquiz__title">
               Quick Quiz
             </h2>
-            <p className="qquiz__hint">{hint}</p>
+            <p className="qquiz__hint">
+              Pick how many flags to play, then choose how many answer choices you get.
+            </p>
           </div>
           <button
             ref={closeRef}
@@ -131,198 +80,60 @@ export function QuickQuizSetupModal({
           </button>
         </header>
 
-        {/* Mode selector dropdown */}
-        <div className="qquiz__mode-wrap">
-          <select
-            className="qquiz__mode-select"
-            value={mode}
-            onChange={(e) => setMode(e.target.value as QuizMode)}
-            aria-label="Quiz mode"
-          >
-            {(Object.keys(MODE_LABELS) as QuizMode[]).map((m) => (
-              <option key={m} value={m}>
-                {MODE_LABELS[m]}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* ── Difficulty level ── */}
-        {mode === "difficulty" && (
-          <>
-            <div className="qquiz__body">
-              <fieldset className="qquiz__group">
-                <legend className="qquiz__legend">How many flags?</legend>
-                <div className="qquiz__choices">
-                  {COUNT_OPTIONS.map((n) => (
-                    <button
-                      key={n}
-                      type="button"
-                      className={`qquiz__chip ${n === count ? "qquiz__chip--active" : ""}`}
-                      onClick={() => setCount(n)}
-                      aria-pressed={n === count}
-                    >
-                      {n}
-                    </button>
-                  ))}
-                </div>
-              </fieldset>
-
-              <fieldset className="qquiz__group">
-                <legend className="qquiz__legend">Difficulty</legend>
-                <div className="qquiz__choices qquiz__choices--difficulty">
-                  {DIFFICULTY_OPTIONS.map((d) => {
-                    const dcfg = DIFFICULTY_CONFIG[d];
-                    return (
-                      <button
-                        key={d}
-                        type="button"
-                        className={`qquiz__diff qquiz__diff--${d} ${
-                          d === difficulty ? "qquiz__diff--active" : ""
-                        }`}
-                        onClick={() => setDifficulty(d)}
-                        aria-pressed={d === difficulty}
-                      >
-                        <span className="qquiz__diff-label">{dcfg.label}</span>
-                        <span className="qquiz__diff-tagline">
-                          {dcfg.tagline}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </fieldset>
-
+        <div className="qquiz__body">
+          <fieldset className="qquiz__group">
+            <legend className="qquiz__legend">How many flags?</legend>
+            <div className="qquiz__choices">
+              {COUNT_OPTIONS.map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  className={`qquiz__chip ${n === count ? "qquiz__chip--active" : ""}`}
+                  onClick={() => setCount(n)}
+                  aria-pressed={n === count}
+                >
+                  {n}
+                </button>
+              ))}
             </div>
+          </fieldset>
 
-            <footer className="qquiz__footer">
-              <button type="button" className="qquiz__cancel" onClick={onClose}>
-                Cancel
-              </button>
-              <button
-                type="button"
-                className="qquiz__play"
-                onClick={() =>
-                  onStart({ type: "difficulty", flagCount: count, difficulty })
-                }
-              >
-                Play {count} flag{count === 1 ? "" : "s"}
-              </button>
-            </footer>
-          </>
-        )}
-
-        {/* ── Similar flags only ── */}
-        {mode === "similarity" && (
-          <>
-            <div className="qquiz__body qquiz__body--groups">
-              {[...FLAG_SIMILARITY_ORDER]
-                .sort((a, b) => (SIM_GROUP_CODES[b]?.length ?? 0) - (SIM_GROUP_CODES[a]?.length ?? 0))
-                .map((group) => {
-                  const codes = SIM_GROUP_CODES[group] ?? [];
-                  if (codes.length === 0) return null;
-                  return (
-                    <button
-                      key={group}
-                      type="button"
-                      className="qquiz__group-row"
-                      onClick={() =>
-                        onStart({
-                          type: "similarity",
-                          groupCodes: [...codes],
-                          groupLabel: FLAG_SIMILARITY_LABELS[group],
-                        })
-                      }
-                    >
-                      <span className="qquiz__group-label">
-                        {FLAG_SIMILARITY_LABELS[group]}
-                      </span>
-                      <span className="qquiz__group-count">
-                        {codes.length} flag{codes.length === 1 ? "" : "s"}
-                      </span>
-                    </button>
-                  );
-                })}
-            </div>
-            <footer className="qquiz__footer">
-              <button type="button" className="qquiz__cancel" onClick={onClose}>
-                Cancel
-              </button>
-            </footer>
-          </>
-        )}
-
-        {/* ── Continent ── */}
-        {mode === "continent" && (
-          <>
-            <div className="qquiz__body qquiz__body--groups">
-              {CONTINENT_ORDER.map((c) => {
-                const codes = CONTINENT_GROUPS[c];
+          <fieldset className="qquiz__group">
+            <legend className="qquiz__legend">Difficulty</legend>
+            <div className="qquiz__choices qquiz__choices--difficulty">
+              {DIFFICULTY_OPTIONS.map((d) => {
+                const dcfg = DIFFICULTY_CONFIG[d];
                 return (
                   <button
-                    key={c}
+                    key={d}
                     type="button"
-                    className="qquiz__group-row"
-                    onClick={() =>
-                      onStart({ type: "continent", groupCodes: [...codes], groupLabel: c })
-                    }
+                    className={`qquiz__diff qquiz__diff--${d} ${
+                      d === difficulty ? "qquiz__diff--active" : ""
+                    }`}
+                    onClick={() => setDifficulty(d)}
+                    aria-pressed={d === difficulty}
                   >
-                    <span className="qquiz__group-label">{c}</span>
-                    <span className="qquiz__group-count">
-                      {codes.length} flag{codes.length === 1 ? "" : "s"}
-                    </span>
+                    <span className="qquiz__diff-label">{dcfg.label}</span>
+                    <span className="qquiz__diff-tagline">{dcfg.tagline}</span>
                   </button>
                 );
               })}
             </div>
-            <footer className="qquiz__footer">
-              <button type="button" className="qquiz__cancel" onClick={onClose}>
-                Cancel
-              </button>
-            </footer>
-          </>
-        )}
+          </fieldset>
+        </div>
 
-        {/* ── Sub-continent ── */}
-        {mode === "subregion" && (
-          <>
-            <div className="qquiz__body qquiz__body--groups">
-              {SUBREGION_GROUPS.map((sg, i) => {
-                const prevContinent =
-                  i > 0 ? SUBREGION_GROUPS[i - 1].continent : null;
-                const showHeader = sg.continent !== prevContinent;
-                return (
-                  <div key={sg.label}>
-                    {showHeader && (
-                      <div className="qquiz__region-header">{sg.continent}</div>
-                    )}
-                    <button
-                      type="button"
-                      className="qquiz__group-row"
-                      onClick={() =>
-                        onStart({
-                          type: "subregion",
-                          groupCodes: [...sg.codes],
-                          groupLabel: sg.label,
-                        })
-                      }
-                    >
-                      <span className="qquiz__group-label">{sg.label}</span>
-                      <span className="qquiz__group-count">
-                        {sg.codes.length} flag{sg.codes.length === 1 ? "" : "s"}
-                      </span>
-                    </button>
-                  </div>
-                );
-              })}
-            </div>
-            <footer className="qquiz__footer">
-              <button type="button" className="qquiz__cancel" onClick={onClose}>
-                Cancel
-              </button>
-            </footer>
-          </>
-        )}
+        <footer className="qquiz__footer">
+          <button type="button" className="qquiz__cancel" onClick={onClose}>
+            Cancel
+          </button>
+          <button
+            type="button"
+            className="qquiz__play"
+            onClick={() => onStart({ type: "difficulty", flagCount: count, difficulty })}
+          >
+            Play {count} flag{count === 1 ? "" : "s"}
+          </button>
+        </footer>
       </div>
     </div>
   );
