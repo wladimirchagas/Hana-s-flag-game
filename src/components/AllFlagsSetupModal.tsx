@@ -5,8 +5,12 @@ import {
   FLAG_SIMILARITIES,
   type FlagSimilarity,
 } from "../lib/flagSimilarity";
+import {
+  CONTINENT_GROUPS,
+  CONTINENT_ORDER,
+  SUBREGION_GROUPS,
+} from "../lib/continentGroups";
 
-// Derive group → country codes from the per-country similarity map
 function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
   const map: Partial<Record<FlagSimilarity, string[]>> = {};
   for (const [code, groups] of Object.entries(FLAG_SIMILARITIES)) {
@@ -18,16 +22,13 @@ function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
   return map;
 }
 
-const GROUP_CODES = buildGroupCodesMap();
+const SIM_GROUP_CODES = buildGroupCodesMap();
 
 export type AllFlagsStart =
   | { type: "all195" }
-  | {
-      type: "similarity";
-      groupCodes: string[];
-      groupLabel: string;
-      hardcore: boolean;
-    };
+  | { type: "similarity"; groupCodes: string[]; groupLabel: string; hardcore: boolean }
+  | { type: "continent"; groupCodes: string[]; groupLabel: string }
+  | { type: "subregion"; groupCodes: string[]; groupLabel: string };
 
 export type AllFlagsSetupModalProps = {
   open: boolean;
@@ -35,17 +36,26 @@ export type AllFlagsSetupModalProps = {
   onStart: (start: AllFlagsStart) => void;
 };
 
-type ModalStep = "modes" | "groups" | "submode";
+type FlagMasterMode = "all195" | "continent" | "subregion" | "similarity";
+
+const MODE_LABELS: Record<FlagMasterMode, string> = {
+  all195:     "All 195 World Flags",
+  continent:  "Flags by continent",
+  subregion:  "Flags by sub-continent",
+  similarity: "Similar flags only",
+};
+
+const MODE_ORDER: readonly FlagMasterMode[] = ["all195", "continent", "subregion", "similarity"];
 
 export function AllFlagsSetupModal({
   open,
   onClose,
   onStart,
 }: AllFlagsSetupModalProps) {
-  const [step, setStep] = useState<ModalStep>("modes");
-  const [selectedGroup, setSelectedGroup] = useState<FlagSimilarity | null>(
-    null,
-  );
+  const [mode, setMode] = useState<FlagMasterMode>("all195");
+  const [simStep, setSimStep] = useState<"groups" | "submode">("groups");
+  const [selectedGroup, setSelectedGroup] = useState<FlagSimilarity | null>(null);
+
   const closeRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
 
@@ -72,46 +82,31 @@ export function AllFlagsSetupModal({
 
   useEffect(() => {
     if (!open) {
-      setStep("modes");
+      setMode("all195");
+      setSimStep("groups");
       setSelectedGroup(null);
     }
   }, [open]);
 
   if (!open) return null;
 
-  const handleBack = () => {
-    if (step === "submode") setStep("groups");
-    else if (step === "groups") setStep("modes");
-  };
+  const hint =
+    mode === "all195"
+      ? "Every UN member flag in random order. One guess each — no retries."
+      : mode === "continent"
+      ? "Pick a continent — you'll guess every flag from it."
+      : mode === "subregion"
+      ? "Pick a sub-continent — you'll guess every flag from it."
+      : simStep === "groups"
+      ? "Pick a group of visually similar flags to test yourself on."
+      : selectedGroup
+      ? `${SIM_GROUP_CODES[selectedGroup]?.length ?? 0} flags — pick your challenge level.`
+      : "";
 
-  const handleGroupSelect = (group: FlagSimilarity) => {
-    setSelectedGroup(group);
-    setStep("submode");
-  };
-
-  const handleSubmode = (hardcore: boolean) => {
-    if (!selectedGroup) return;
-    const codes = GROUP_CODES[selectedGroup] ?? [];
-    const label = FLAG_SIMILARITY_LABELS[selectedGroup];
-    onStart({ type: "similarity", groupCodes: codes, groupLabel: label, hardcore });
-  };
-
-  const groupCodes = selectedGroup ? (GROUP_CODES[selectedGroup] ?? []) : [];
+  const groupCodes = selectedGroup ? (SIM_GROUP_CODES[selectedGroup] ?? []) : [];
   const groupLabel = selectedGroup ? FLAG_SIMILARITY_LABELS[selectedGroup] : "";
 
-  const titleText =
-    step === "modes"
-      ? "Ultimate Challenge"
-      : step === "groups"
-        ? "By Similarity"
-        : groupLabel;
-
-  const hintText =
-    step === "modes"
-      ? "Choose your hard mode."
-      : step === "groups"
-        ? "Pick a group to test yourself on."
-        : `${groupCodes.length} flag${groupCodes.length === 1 ? "" : "s"} — pick your challenge level.`;
+  const showBack = mode === "similarity" && simStep === "submode";
 
   return (
     <div
@@ -126,11 +121,11 @@ export function AllFlagsSetupModal({
       <div className="all195">
         <header className="all195__header">
           <div className="all195__header-left">
-            {step !== "modes" && (
+            {showBack && (
               <button
                 type="button"
                 className="all195__back"
-                onClick={handleBack}
+                onClick={() => setSimStep("groups")}
                 aria-label="Back"
               >
                 ←
@@ -138,9 +133,9 @@ export function AllFlagsSetupModal({
             )}
             <div>
               <h2 id="all195-title" className="all195__title">
-                {titleText}
+                Flag Master
               </h2>
-              <p className="all195__hint">{hintText}</p>
+              <p className="all195__hint">{hint}</p>
             </div>
           </div>
           <button
@@ -154,135 +149,206 @@ export function AllFlagsSetupModal({
           </button>
         </header>
 
-        {step === "modes" && (
-          <div className="all195__body">
+        {/* Mode selector dropdown */}
+        <div className="qquiz__mode-wrap">
+          <select
+            className="qquiz__mode-select"
+            value={mode}
+            onChange={(e) => {
+              setMode(e.target.value as FlagMasterMode);
+              setSimStep("groups");
+              setSelectedGroup(null);
+            }}
+            aria-label="Game mode"
+          >
+            {MODE_ORDER.map((m) => (
+              <option key={m} value={m}>
+                {MODE_LABELS[m]}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* ── All 195 World Flags ── */}
+        {mode === "all195" && (
+          <footer className="all195__footer">
+            <button type="button" className="all195__cancel" onClick={onClose}>
+              Cancel
+            </button>
             <button
               type="button"
-              className="all195__option"
+              className="qquiz__play"
               onClick={() => onStart({ type: "all195" })}
             >
-              <span className="all195__option-emoji" aria-hidden="true">
-                🌍
-              </span>
-              <span className="all195__option-text">
-                <span className="all195__option-title">All 195 Flags</span>
-                <span className="all195__option-desc">
-                  The full set in random order. One guess per flag — no
-                  retries, no mercy.
-                </span>
-              </span>
-              <span
-                className="all195__option-cta all195__option-cta--lime"
-                aria-hidden="true"
-              >
-                PLAY →
-              </span>
+              Play all 195
             </button>
-
-            <button
-              type="button"
-              className="all195__option"
-              onClick={() => setStep("groups")}
-            >
-              <span className="all195__option-emoji" aria-hidden="true">
-                🔍
-              </span>
-              <span className="all195__option-text">
-                <span className="all195__option-title">By Similarity</span>
-                <span className="all195__option-desc">
-                  Pick a group of visually similar flags and see if you can
-                  tell them apart.
-                </span>
-              </span>
-              <span
-                className="all195__option-cta all195__option-cta--sky"
-                aria-hidden="true"
-              >
-                CHOOSE →
-              </span>
-            </button>
-          </div>
+          </footer>
         )}
 
-        {step === "groups" && (
-          <div className="all195__body all195__body--groups">
-            {FLAG_SIMILARITY_ORDER.map((group) => {
-              const codes = GROUP_CODES[group] ?? [];
-              if (codes.length === 0) return null;
-              return (
-                <button
-                  key={group}
-                  type="button"
-                  className="all195__group-row"
-                  onClick={() => handleGroupSelect(group)}
-                >
-                  <span className="all195__group-label">
-                    {FLAG_SIMILARITY_LABELS[group]}
+        {/* ── Flags by continent ── */}
+        {mode === "continent" && (
+          <>
+            <div className="all195__body all195__body--groups">
+              {CONTINENT_ORDER.map((c) => {
+                const codes = CONTINENT_GROUPS[c];
+                return (
+                  <button
+                    key={c}
+                    type="button"
+                    className="all195__group-row"
+                    onClick={() =>
+                      onStart({ type: "continent", groupCodes: [...codes], groupLabel: c })
+                    }
+                  >
+                    <span className="all195__group-label">{c}</span>
+                    <span className="all195__group-count">
+                      {codes.length} flag{codes.length === 1 ? "" : "s"}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+            <footer className="all195__footer">
+              <button type="button" className="all195__cancel" onClick={onClose}>
+                Cancel
+              </button>
+            </footer>
+          </>
+        )}
+
+        {/* ── Flags by sub-continent ── */}
+        {mode === "subregion" && (
+          <>
+            <div className="all195__body all195__body--groups">
+              {SUBREGION_GROUPS.map((sg, i) => {
+                const prevContinent = i > 0 ? SUBREGION_GROUPS[i - 1].continent : null;
+                const showHeader = sg.continent !== prevContinent;
+                return (
+                  <div key={sg.label}>
+                    {showHeader && (
+                      <div className="qquiz__region-header">{sg.continent}</div>
+                    )}
+                    <button
+                      type="button"
+                      className="all195__group-row"
+                      onClick={() =>
+                        onStart({ type: "subregion", groupCodes: [...sg.codes], groupLabel: sg.label })
+                      }
+                    >
+                      <span className="all195__group-label">{sg.label}</span>
+                      <span className="all195__group-count">
+                        {sg.codes.length} flag{sg.codes.length === 1 ? "" : "s"}
+                      </span>
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+            <footer className="all195__footer">
+              <button type="button" className="all195__cancel" onClick={onClose}>
+                Cancel
+              </button>
+            </footer>
+          </>
+        )}
+
+        {/* ── Similar flags only — group picker ── */}
+        {mode === "similarity" && simStep === "groups" && (
+          <>
+            <div className="all195__body all195__body--groups">
+              {[...FLAG_SIMILARITY_ORDER]
+                .sort((a, b) => (SIM_GROUP_CODES[b]?.length ?? 0) - (SIM_GROUP_CODES[a]?.length ?? 0))
+                .map((group) => {
+                  const codes = SIM_GROUP_CODES[group] ?? [];
+                  if (codes.length === 0) return null;
+                  return (
+                    <button
+                      key={group}
+                      type="button"
+                      className="all195__group-row"
+                      onClick={() => {
+                        setSelectedGroup(group);
+                        setSimStep("submode");
+                      }}
+                    >
+                      <span className="all195__group-label">
+                        {FLAG_SIMILARITY_LABELS[group]}
+                      </span>
+                      <span className="all195__group-count">
+                        {codes.length} flag{codes.length === 1 ? "" : "s"}
+                      </span>
+                    </button>
+                  );
+                })}
+            </div>
+            <footer className="all195__footer">
+              <button type="button" className="all195__cancel" onClick={onClose}>
+                Cancel
+              </button>
+            </footer>
+          </>
+        )}
+
+        {/* ── Similar flags only — Decoy / Hardcore submode ── */}
+        {mode === "similarity" && simStep === "submode" && selectedGroup && (
+          <>
+            <div className="all195__body">
+              <button
+                type="button"
+                className="all195__option"
+                onClick={() =>
+                  onStart({
+                    type: "similarity",
+                    groupCodes: [...groupCodes],
+                    groupLabel,
+                    hardcore: false,
+                  })
+                }
+              >
+                <span className="all195__option-emoji" aria-hidden="true">🎯</span>
+                <span className="all195__option-text">
+                  <span className="all195__option-title">Decoy Buttons</span>
+                  <span className="all195__option-desc">
+                    Your choices are only the {groupCodes.length} flags in this
+                    group — spot the differences.
                   </span>
-                  <span className="all195__group-count">
-                    {codes.length} flag{codes.length === 1 ? "" : "s"}
+                </span>
+                <span className="all195__option-cta all195__option-cta--mustard" aria-hidden="true">
+                  PLAY →
+                </span>
+              </button>
+              <button
+                type="button"
+                className="all195__option"
+                onClick={() =>
+                  onStart({
+                    type: "similarity",
+                    groupCodes: [...groupCodes],
+                    groupLabel,
+                    hardcore: true,
+                  })
+                }
+              >
+                <span className="all195__option-emoji" aria-hidden="true">💀</span>
+                <span className="all195__option-text">
+                  <span className="all195__option-title">Hardcore</span>
+                  <span className="all195__option-desc">
+                    Same {groupCodes.length} flags to guess, but picked from a
+                    dropdown of all 195. No hints.
                   </span>
-                </button>
-              );
-            })}
-          </div>
-        )}
-
-        {step === "submode" && selectedGroup && (
-          <div className="all195__body">
-            <button
-              type="button"
-              className="all195__option"
-              onClick={() => handleSubmode(false)}
-            >
-              <span className="all195__option-emoji" aria-hidden="true">
-                🎯
-              </span>
-              <span className="all195__option-text">
-                <span className="all195__option-title">Decoy Buttons</span>
-                <span className="all195__option-desc">
-                  Your choices are only the {groupCodes.length} flags in this
-                  group — spot the differences.
                 </span>
-              </span>
-              <span
-                className="all195__option-cta all195__option-cta--mustard"
-                aria-hidden="true"
-              >
-                PLAY →
-              </span>
-            </button>
-
-            <button
-              type="button"
-              className="all195__option"
-              onClick={() => handleSubmode(true)}
-            >
-              <span className="all195__option-emoji" aria-hidden="true">
-                💀
-              </span>
-              <span className="all195__option-text">
-                <span className="all195__option-title">Hardcore</span>
-                <span className="all195__option-desc">
-                  Same {groupCodes.length} flags to guess, but picked from a
-                  dropdown of all 195. No hints.
+                <span className="all195__option-cta all195__option-cta--coral" aria-hidden="true">
+                  PLAY →
                 </span>
-              </span>
-              <span
-                className="all195__option-cta all195__option-cta--coral"
-                aria-hidden="true"
-              >
-                PLAY →
-              </span>
-            </button>
-          </div>
+              </button>
+            </div>
+            <footer className="all195__footer">
+              <button type="button" className="all195__cancel" onClick={onClose}>
+                Cancel
+              </button>
+            </footer>
+          </>
         )}
-
-        <footer className="all195__footer">
-          <button type="button" className="all195__cancel" onClick={onClose}>
-            Cancel
-          </button>
-        </footer>
       </div>
     </div>
   );

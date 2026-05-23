@@ -5,6 +5,7 @@ import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
 import { CountryPickerModal } from '../components/CountryPickerModal'
 import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
+import { AllFlagsSetupModal, type AllFlagsStart } from '../components/AllFlagsSetupModal'
 import { HeroCarousel } from '../components/HeroCharacters'
 import './LandingPage.css'
 
@@ -21,43 +22,50 @@ export default function LandingPage() {
   const navigate = useNavigate()
   const [pickerOpen, setPickerOpen] = useState(false)
   const [quizOpen, setQuizOpen] = useState(false)
+  const [flagMasterOpen, setFlagMasterOpen] = useState(false)
 
   const playWith = (codes: string[]) => {
     setPickerOpen(false)
     navigate('/game', { state: { codes } })
   }
+
   const playQuiz = (config: QuickQuizConfig) => {
     setQuizOpen(false)
-    if (config.type === 'difficulty') {
-      navigate('/game', { state: { quiz: { flagCount: config.flagCount, difficulty: config.difficulty } } })
-    } else if (config.type === 'similarity') {
+    navigate('/game', { state: { quiz: { flagCount: config.flagCount, difficulty: config.difficulty } } })
+  }
+
+  const playFlagMaster = (start: AllFlagsStart) => {
+    setFlagMasterOpen(false)
+    if (start.type === 'all195') {
+      navigate('/game')
+    } else if (start.type === 'similarity') {
       navigate('/game', {
         state: {
           groupGame: {
-            groupCodes: config.groupCodes,
-            groupLabel: config.groupLabel,
-            hardcore: false,
+            groupCodes: start.groupCodes,
+            groupLabel: start.groupLabel,
+            hardcore: start.hardcore,
             modeLabel: 'By Similarity',
           },
         },
       })
-    } else if (config.type === 'continent') {
+    } else if (start.type === 'continent') {
       navigate('/game', {
         state: {
           groupGame: {
-            groupCodes: config.groupCodes,
-            groupLabel: config.groupLabel,
+            groupCodes: start.groupCodes,
+            groupLabel: start.groupLabel,
             hardcore: false,
             modeLabel: 'By Continent',
           },
         },
       })
-    } else if (config.type === 'subregion') {
+    } else if (start.type === 'subregion') {
       navigate('/game', {
         state: {
           groupGame: {
-            groupCodes: config.groupCodes,
-            groupLabel: config.groupLabel,
+            groupCodes: start.groupCodes,
+            groupLabel: start.groupLabel,
             hardcore: false,
             modeLabel: 'By Sub-Continent',
           },
@@ -140,7 +148,7 @@ export default function LandingPage() {
             <span className="card-sticker__cta card-sticker__cta--pink">EXPLORE →</span>
           </button>
 
-          {/* Quick Quiz is now the 3rd CTA. */}
+          {/* Quick Quiz — difficulty mode only. */}
           <button
             type="button"
             className="card-sticker card-sticker--c card-sticker--secondary"
@@ -148,24 +156,24 @@ export default function LandingPage() {
           >
             <h2 className="card-sticker__title">Quick Quiz</h2>
             <p className="card-sticker__sub">
-              Pick 5, 10, 20, or 30 flags from the full 195. Choose Easy,
-              Moderate, or Hard to set how many answer choices you get.
+              Pick 5, 10, 20, or 30 flags from the full 195 and choose your
+              difficulty — Easy gives you 5 choices, Moderate 15, Hard 50.
             </p>
             <span className="card-sticker__cta card-sticker__cta--mustard">SET UP →</span>
           </button>
 
-          {/* Pro Quiz — all 195 flags, direct play, no modal. */}
+          {/* Flag Master — all game modes. */}
           <button
             type="button"
             className="card-sticker card-sticker--a card-sticker--secondary"
-            onClick={() => navigate('/game')}
+            onClick={() => setFlagMasterOpen(true)}
           >
             <h2 className="card-sticker__title">Flag Master</h2>
             <p className="card-sticker__sub">
-              All 195 flags, one guess each, full dropdown — the ultimate
-              test of how many you really know.
+              All 195 flags, by continent, by sub-continent, or similar flags
+              only — the ultimate test of how many you really know.
             </p>
-            <span className="card-sticker__cta card-sticker__cta--lime">PLAY ALL →</span>
+            <span className="card-sticker__cta card-sticker__cta--lime">PLAY →</span>
           </button>
         </div>
 
@@ -188,6 +196,12 @@ export default function LandingPage() {
         open={quizOpen}
         onClose={() => setQuizOpen(false)}
         onStart={playQuiz}
+      />
+
+      <AllFlagsSetupModal
+        open={flagMasterOpen}
+        onClose={() => setFlagMasterOpen(false)}
+        onStart={playFlagMaster}
       />
     </div>
   )
