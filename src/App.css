@@ -1526,6 +1526,56 @@
   color: var(--sky);
 }
 
+.leaderboard-lightbox__filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.6rem 0 0.75rem;
+}
+
+.leaderboard-lightbox__filter-chip {
+  padding: 0.25rem 0.75rem;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.leaderboard-lightbox__filter-chip--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+  border-color: var(--ink);
+}
+
+.leaderboard-lightbox__filter-chip:hover:not(.leaderboard-lightbox__filter-chip--active),
+.leaderboard-lightbox__filter-chip:focus-visible:not(.leaderboard-lightbox__filter-chip--active) {
+  background: rgba(255, 200, 87, 0.3);
+  outline: none;
+}
+
+.leaderboard-lightbox__filter-chip:focus-visible {
+  outline: none;
+}
+
+.leaderboard-lightbox__mode-tag {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.45rem;
+  background: var(--sky);
+  color: var(--ink-fixed);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
+
 .leaderboard-lightbox__empty {
   padding: 1.25rem;
   text-align: center;

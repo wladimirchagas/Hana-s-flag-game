@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { ScoreBoard } from "./ScoreBoard";
 import { WorldProgressMap } from "./WorldProgressMap";
@@ -69,6 +69,37 @@ function EntryDetail({ entry }: { entry: LeaderboardEntry }) {
   );
 }
 
+const SLUG_TO_LABEL: Record<string, string> = {
+  "all-195": "All flags",
+  custom: "Custom",
+  "quiz-easy": "Easy",
+  "quiz-moderate": "Moderate",
+  "quiz-hard": "Hard",
+};
+
+const SLUG_ORDER = ["all-195", "quiz-easy", "quiz-moderate", "quiz-hard", "custom"];
+
+function gameModeLabel(slug: string): string {
+  if (SLUG_TO_LABEL[slug]) return SLUG_TO_LABEL[slug];
+  if (slug.startsWith("group-hardcore-")) return "Hardcore";
+  if (slug.startsWith("group-")) {
+    const raw = slug.replace(/^group-/, "").replace(/-/g, " ");
+    return raw.charAt(0).toUpperCase() + raw.slice(1);
+  }
+  return slug;
+}
+
+function sortedModes(modes: string[]): string[] {
+  return [...modes].sort((a, b) => {
+    const ai = SLUG_ORDER.indexOf(a);
+    const bi = SLUG_ORDER.indexOf(b);
+    if (ai !== -1 && bi !== -1) return ai - bi;
+    if (ai !== -1) return -1;
+    if (bi !== -1) return 1;
+    return gameModeLabel(a).localeCompare(gameModeLabel(b));
+  });
+}
+
 export function LeaderboardLightbox() {
   const {
     isOpen,
@@ -82,6 +113,8 @@ export function LeaderboardLightbox() {
   } = useLeaderboard();
   const entries = filteredEntries;
 
+  const [selectedModes, setSelectedModes] = useState<Set<string>>(new Set());
+
   useEffect(() => {
     if (!isOpen) return;
     const onKey = (e: KeyboardEvent) => {
@@ -90,6 +123,33 @@ export function LeaderboardLightbox() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [isOpen, closeLeaderboard]);
+
+  // Reset filter when modal closes
+  useEffect(() => {
+    if (!isOpen) setSelectedModes(new Set());
+  }, [isOpen]);
+
+  const availableModes = useMemo(() => {
+    const modes = new Set<string>();
+    for (const e of entries) {
+      if (e.gameMode) modes.add(e.gameMode);
+    }
+    return sortedModes([...modes]);
+  }, [entries]);
+
+  const displayEntries = useMemo(() => {
+    if (selectedModes.size === 0) return entries;
+    return entries.filter((e) => e.gameMode && selectedModes.has(e.gameMode));
+  }, [entries, selectedModes]);
+
+  function toggleMode(mode: string) {
+    setSelectedModes((prev) => {
+      const next = new Set(prev);
+      if (next.has(mode)) next.delete(mode);
+      else next.add(mode);
+      return next;
+    });
+  }
 
   if (!isOpen) return null;
 
@@ -168,32 +228,66 @@ export function LeaderboardLightbox() {
                 : `No saved games yet. Finish a run and add your name to see results here.`}
             </p>
           ) : (
-            <ul className="leaderboard-lightbox__list">
-              {entries.map((entry, index) => (
-                <li key={entry.id}>
+            <>
+              {availableModes.length > 0 && (
+                <div className="leaderboard-lightbox__filter">
                   <button
                     type="button"
-                    className="leaderboard-lightbox__row"
-                    onClick={() => selectEntry(entry.id)}
+                    className={`leaderboard-lightbox__filter-chip${selectedModes.size === 0 ? " leaderboard-lightbox__filter-chip--active" : ""}`}
+                    onClick={() => setSelectedModes(new Set())}
                   >
-                    <span className="leaderboard-lightbox__rank">{index + 1}</span>
-                    <span className="leaderboard-lightbox__row-main">
-                      <span className="leaderboard-lightbox__row-name">
-                        {entry.playerName}
-                      </span>
-                      <span className="leaderboard-lightbox__row-meta">
-                        {formatLeaderboardDate(entry.createdAt)} ·{" "}
-                        {entry.totalAnswered}/{entry.totalFlags} flags ·{" "}
-                        {formatElapsed(entry.elapsedMs)}
-                      </span>
-                    </span>
-                    <span className="leaderboard-lightbox__row-score">
-                      {entry.score} pts
-                    </span>
+                    All
                   </button>
-                </li>
-              ))}
-            </ul>
+                  {availableModes.map((mode) => (
+                    <button
+                      key={mode}
+                      type="button"
+                      className={`leaderboard-lightbox__filter-chip${selectedModes.has(mode) ? " leaderboard-lightbox__filter-chip--active" : ""}`}
+                      onClick={() => toggleMode(mode)}
+                    >
+                      {gameModeLabel(mode)}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {displayEntries.length === 0 ? (
+                <p className="leaderboard-lightbox__empty">
+                  No entries for the selected mode{selectedModes.size > 1 ? "s" : ""}.
+                </p>
+              ) : (
+                <ul className="leaderboard-lightbox__list">
+                  {displayEntries.map((entry, index) => (
+                    <li key={entry.id}>
+                      <button
+                        type="button"
+                        className="leaderboard-lightbox__row"
+                        onClick={() => selectEntry(entry.id)}
+                      >
+                        <span className="leaderboard-lightbox__rank">{index + 1}</span>
+                        <span className="leaderboard-lightbox__row-main">
+                          <span className="leaderboard-lightbox__row-name">
+                            {entry.playerName}
+                            {entry.gameMode && (
+                              <span className="leaderboard-lightbox__mode-tag">
+                                {gameModeLabel(entry.gameMode)}
+                              </span>
+                            )}
+                          </span>
+                          <span className="leaderboard-lightbox__row-meta">
+                            {formatLeaderboardDate(entry.createdAt)} ·{" "}
+                            {entry.totalAnswered}/{entry.totalFlags} flags ·{" "}
+                            {formatElapsed(entry.elapsedMs)}
+                          </span>
+                        </span>
+                        <span className="leaderboard-lightbox__row-score">
+                          {entry.score} pts
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </>
           )}
         </div>
       </div>
