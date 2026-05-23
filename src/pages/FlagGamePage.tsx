@@ -14,11 +14,9 @@ import { GameClock } from "../components/GameClock";
 import { GameResultsFlags } from "../components/GameResultsFlags";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameFinishCelebration } from "../components/GameFinishCelebration";
-import { DIFFICULTY_CONFIG } from "../lib/flagDifficulty";
 import "../App.css";
 
 type QuizState = {
-  difficulty: "easy" | "moderate" | "hard";
   flagCount: number;
 };
 
@@ -46,20 +44,13 @@ export default function FlagGamePage() {
   const isCustomGame = filterCodes !== null && quiz === null && groupGame === null;
   const isQuickQuiz = quiz !== null;
   const isGroupGame = groupGame !== null;
-  // Look up the difficulty config to know dropdown size + max attempts.
-  // Imported lazily here to keep this file's imports tidy.
-  const quizCfg = quiz
-    ? DIFFICULTY_CONFIG[quiz.difficulty]
-    : null;
   const game = useGame({
     filterCodes,
-    // Custom Game and Quick Quiz allow retries; similarity and All-195 do not.
     allowRetry: isCustomGame || isQuickQuiz,
-    difficulty: quiz?.difficulty ?? null,
     flagCount: quiz?.flagCount ?? null,
-    optionCount: quizCfg?.optionCount ?? null,
-    maxAttemptsPerFlag: quizCfg?.maxAttempts ?? Infinity,
-    // Hardcore similarity mode: guess group flags from the full 195 dropdown.
+    // optionCount matches flagCount so the answer choices scale with the quiz size.
+    optionCount: quiz?.flagCount ?? null,
+    maxAttemptsPerFlag: isQuickQuiz ? 1 : Infinity,
     useFullAlternatives: isGroupGame && groupGame.hardcore,
   });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
@@ -68,7 +59,7 @@ export default function FlagGamePage() {
 
   // Derive a stable game mode string used for leaderboard filtering.
   const gameMode = useMemo((): string => {
-    if (isQuickQuiz && quiz) return `quiz-${quiz.difficulty}`;
+    if (isQuickQuiz && quiz) return `quiz-${quiz.flagCount}`;
     if (isCustomGame) return "custom";
     if (isGroupGame && groupGame) {
       const slug = groupGame.groupLabel
@@ -82,8 +73,8 @@ export default function FlagGamePage() {
 
   const leaderboardFilter = useMemo((): LeaderboardFilter => {
     let label: string;
-    if (isQuickQuiz && quiz && quizCfg) {
-      label = `Quick Quiz — ${quizCfg.shortLabel} · ${game.totalFlags} flags`;
+    if (isQuickQuiz && quiz) {
+      label = `Quick Quiz · ${game.totalFlags} flags`;
     } else if (isCustomGame) {
       label = `Custom Game · ${game.totalFlags} flags`;
     } else if (isGroupGame && groupGame) {
@@ -92,7 +83,7 @@ export default function FlagGamePage() {
       label = "Flag Master";
     }
     return { gameMode, totalFlags: game.totalFlags, label };
-  }, [gameMode, game.totalFlags, isQuickQuiz, isCustomGame, isGroupGame, quiz, quizCfg, groupGame]);
+  }, [gameMode, game.totalFlags, isQuickQuiz, isCustomGame, isGroupGame, quiz, groupGame]);
 
   // Show the big finish celebration overlay when the game ends, until the
   // player dismisses it. Reset if the player somehow ends up back in the
@@ -235,8 +226,8 @@ export default function FlagGamePage() {
           <h1>
             Guess the Flag{" "}
             {isCustomGame && <span className="card-header__chip">Custom</span>}
-            {isQuickQuiz && quizCfg && (
-              <span className="card-header__chip">{quizCfg.shortLabel}</span>
+            {isQuickQuiz && (
+              <span className="card-header__chip">Quick Quiz</span>
             )}
             {isGroupGame && (
               <span className="card-header__chip">
@@ -249,18 +240,8 @@ export default function FlagGamePage() {
               ? playedAllFlags
                 ? "All flags played. Game complete."
                 : "Game ended early."
-              : isQuickQuiz && quizCfg
-              ? (() => {
-                  const remaining = quizCfg.maxAttempts - game.retryAttempts;
-                  if (game.retryAttempts === 0) {
-                    return `${quizCfg.optionCount} choices · ${quizCfg.maxAttempts} ${
-                      quizCfg.maxAttempts === 1 ? "try" : "tries"
-                    } per flag.`;
-                  }
-                  return `${remaining} ${
-                    remaining === 1 ? "try" : "tries"
-                  } left on this flag.`;
-                })()
+              : isQuickQuiz && quiz
+              ? `${game.totalFlags} choices · 1 try per flag.`
               : isGroupGame
               ? groupGame.hardcore
                 ? `${groupGame.groupLabel} · all 195 in dropdown · one guess per flag.`
