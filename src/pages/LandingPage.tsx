@@ -160,7 +160,7 @@ export default function LandingPage() {
             className="card-sticker card-sticker--a card-sticker--secondary"
             onClick={() => navigate('/game')}
           >
-            <h2 className="card-sticker__title">Pro Quiz</h2>
+            <h2 className="card-sticker__title">Flag Master</h2>
             <p className="card-sticker__sub">
               All 195 flags, one guess each, full dropdown — the ultimate
               test of how many you really know.
