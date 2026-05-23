@@ -89,7 +89,7 @@ export default function FlagGamePage() {
     } else if (isGroupGame && groupGame) {
       label = `${groupGame.hardcore ? "Hardcore" : groupGame.modeLabel} — ${groupGame.groupLabel} · ${game.totalFlags} flags`;
     } else {
-      label = "Pro Quiz";
+      label = "Flag Master";
     }
     return { gameMode, totalFlags: game.totalFlags, label };
   }, [gameMode, game.totalFlags, isQuickQuiz, isCustomGame, isGroupGame, quiz, quizCfg, groupGame]);
