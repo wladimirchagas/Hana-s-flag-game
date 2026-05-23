@@ -989,6 +989,16 @@
   flex-direction: column;
 }
 
+.qquiz__choices--modes {
+  flex-direction: column;
+}
+
+.qquiz__choices--modes .qquiz__chip {
+  width: 100%;
+  border-radius: 0.75rem;
+  text-align: left;
+}
+
 .qquiz__chip {
   font-family: inherit;
   font-size: 1.15rem;

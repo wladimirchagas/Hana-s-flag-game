@@ -15,7 +15,7 @@ export function QuickQuizSetupModal({
   onClose,
   onStart,
 }: QuickQuizSetupModalProps) {
-  const [count, setCount] = useState<number>(20);
+  const [count, setCount] = useState<number>(5);
 
   const closeRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
