@@ -37,6 +37,9 @@ export type FlagListEntry = {
   /** Which side of the road the country drives on — "left" or "right".
    *  Undefined for historical polities. */
   driveSide?: "left" | "right";
+  /** Aspect-ratio bucket (e.g. "ratio-2-3", "ratio-1-2").
+   *  Undefined for historical polities; treated as "ratio-2-3" by the grid. */
+  aspectRatio?: string;
 };
 
 /**

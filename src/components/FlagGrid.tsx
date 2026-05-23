@@ -24,6 +24,11 @@ import {
   FLAG_SIMILARITY_ORDER,
   type FlagSimilarity,
 } from "../lib/flagSimilarity";
+import {
+  FLAG_ASPECT_RATIO_LABELS,
+  FLAG_ASPECT_RATIO_ORDER,
+  type FlagAspectRatio,
+} from "../lib/flagAspectRatio";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -62,7 +67,8 @@ type GroupMode =
   | "family"
   | "color"
   | "similarity"
-  | "drive-side";
+  | "drive-side"
+  | "aspect-ratio";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -74,6 +80,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   color: "By colour",
   similarity: "By similarity",
   "drive-side": "By driving side",
+  "aspect-ratio": "By aspect ratio",
 };
 
 // Modes that only make sense for today's world map (modern era). They rely on
@@ -89,6 +96,7 @@ const TODAY_ONLY_MODES = new Set<GroupMode>([
   "color",
   "similarity",
   "drive-side",
+  "aspect-ratio",
 ]);
 
 export function FlagGrid({
@@ -213,6 +221,13 @@ export function FlagGrid({
         if (side === "left") push("Drives on the left", e);
         else push("Drives on the right", e);
       }
+    } else if (groupMode === "aspect-ratio") {
+      for (const e of sorted) {
+        // Entries without an explicit ratio default to the standard 2:3 bucket.
+        const ratio = (e.aspectRatio ?? "ratio-2-3") as FlagAspectRatio;
+        const label = FLAG_ASPECT_RATIO_LABELS[ratio] ?? ratio;
+        push(label, e);
+      }
     }
 
     // Sort the bucket list.
@@ -251,6 +266,11 @@ export function FlagGrid({
         // "Drives on the left" before "Drives on the right".
         if (a === "Drives on the left") return -1;
         if (b === "Drives on the left") return 1;
+      }
+      if (groupMode === "aspect-ratio") {
+        const oa = aspectRatioHeadingOrder(a);
+        const ob = aspectRatioHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
       }
       if (groupMode === "alpha") {
         // Keep "#" at the end.
@@ -378,6 +398,13 @@ function similarityHeadingOrder(heading: string): number {
   if (heading === "Other") return 999;
   for (let i = 0; i < FLAG_SIMILARITY_ORDER.length; i++) {
     if (FLAG_SIMILARITY_LABELS[FLAG_SIMILARITY_ORDER[i]] === heading) return i;
+  }
+  return 100;
+}
+
+function aspectRatioHeadingOrder(heading: string): number {
+  for (let i = 0; i < FLAG_ASPECT_RATIO_ORDER.length; i++) {
+    if (FLAG_ASPECT_RATIO_LABELS[FLAG_ASPECT_RATIO_ORDER[i]] === heading) return i;
   }
   return 100;
 }
