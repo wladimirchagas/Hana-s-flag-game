@@ -172,7 +172,7 @@ export default function LandingPage() {
         <button
           type="button"
           className="sticker__leaderboard"
-          onClick={openLeaderboard}
+          onClick={() => openLeaderboard()}
         >
           🏆 Leaderboard
         </button>
