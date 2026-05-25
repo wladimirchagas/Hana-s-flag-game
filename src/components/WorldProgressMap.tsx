@@ -473,10 +473,26 @@ export function WorldProgressMap({
                 if (!alpha2) return null;
                 const polys = flagPolygonsById.get(alpha2);
                 if (!polys) return null;
+                const flagUrl = `https://flagcdn.com/${alpha2.toLowerCase()}.svg`;
                 return polys.map((poly, i) => (
-                  <clipPath key={`fcp-${alpha2}-${i}`} id={`wm-fcp-${alpha2}-${i}`}>
-                    <path d={poly.path} />
-                  </clipPath>
+                  <pattern
+                    key={`fpat-${alpha2}-${i}`}
+                    id={`wm-fpat-${alpha2}-${i}`}
+                    patternUnits="userSpaceOnUse"
+                    x={poly.x}
+                    y={poly.y}
+                    width={poly.w}
+                    height={poly.h}
+                  >
+                    <image
+                      href={flagUrl}
+                      x={poly.x}
+                      y={poly.y}
+                      width={poly.w}
+                      height={poly.h}
+                      preserveAspectRatio="xMidYMid slice"
+                    />
+                  </pattern>
                 ));
               })}
             </defs>
@@ -552,17 +568,12 @@ export function WorldProgressMap({
             if (!polys) return null;
             const isSelected =
               alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
-            const flagUrl = `https://flagcdn.com/${alpha2.toLowerCase()}.svg`;
             return polys.map((poly, i) => (
-              <image
-                key={`fimg-${alpha2}-${i}`}
-                href={flagUrl}
-                x={poly.x}
-                y={poly.y}
-                width={poly.w}
-                height={poly.h}
-                clipPath={`url(#wm-fcp-${alpha2}-${i})`}
-                preserveAspectRatio="xMidYMid slice"
+              <path
+                key={`fpoly-${alpha2}-${i}`}
+                d={poly.path}
+                fill={`url(#wm-fpat-${alpha2}-${i})`}
+                stroke="none"
                 opacity={isSelected ? 0.35 : 1}
                 style={{ pointerEvents: "none" }}
               />
