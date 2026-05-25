@@ -188,21 +188,32 @@ export const HistoricalMap = memo(function HistoricalMap({
       .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const pathFn = geoPath(projection);
+    type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
       const name = f.properties?.NAME ?? null;
-      let bounds: { x: number; y: number; w: number; h: number } | null = null;
-      if (d) {
-        const b = pathFn.bounds(f as never);
-        if (b && isFinite(b[0][0]) && isFinite(b[1][0])) {
-          const [x0, y0] = b[0];
-          const [x1, y1] = b[1];
-          if (x1 > x0 && y1 > y0) {
-            bounds = { x: x0, y: y0, w: x1 - x0, h: y1 - y0 };
+      // Decompose geometry into individual polygons so each non-contiguous
+      // piece gets a flag image sized to its own bounding box.
+      const flagPolys: FlagPoly[] = [];
+      const geom = f.geometry as { type: string; coordinates: unknown } | null;
+      if (geom) {
+        const rings: unknown[] =
+          geom.type === "Polygon"
+            ? [geom.coordinates]
+            : geom.type === "MultiPolygon"
+              ? (geom.coordinates as unknown[])
+              : [];
+        for (const coords of rings) {
+          const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
+          const pd = pathFn(pf as never);
+          if (!pd) continue;
+          const b = pathFn.bounds(pf as never);
+          if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
+            flagPolys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
           }
         }
       }
-      return { idx, d, name, bounds };
+      return { idx, d, name, flagPolys };
     });
     const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
     return { renderedFeatures: features, spherePath };
@@ -271,12 +282,12 @@ export const HistoricalMap = memo(function HistoricalMap({
             {flagOverlay && (
               <defs>
                 {renderedFeatures.map((f) => {
-                  if (!f.d || !f.name || !flagOverlay.has(f.name)) return null;
-                  return (
-                    <clipPath key={`fcp-${f.idx}`} id={`hm-fcp-${f.idx}`}>
-                      <path d={f.d} />
+                  if (!f.name || !flagOverlay.has(f.name)) return null;
+                  return f.flagPolys.map((poly, i) => (
+                    <clipPath key={`fcp-${f.idx}-${i}`} id={`hm-fcp-${f.idx}-${i}`}>
+                      <path d={poly.path} />
                     </clipPath>
-                  );
+                  ));
                 })}
               </defs>
             )}
@@ -313,24 +324,24 @@ export const HistoricalMap = memo(function HistoricalMap({
               );
             })}
             {flagOverlay && renderedFeatures.map((f) => {
-              if (!f.d || !f.name || !f.bounds) return null;
+              if (!f.name) return null;
               const flagUrl = flagOverlay.get(f.name);
               if (!flagUrl) return null;
               const isHighlighted = f.name === highlightName;
-              return (
+              return f.flagPolys.map((poly, i) => (
                 <image
-                  key={`fimg-${f.idx}`}
+                  key={`fimg-${f.idx}-${i}`}
                   href={flagUrl}
-                  x={f.bounds.x}
-                  y={f.bounds.y}
-                  width={f.bounds.w}
-                  height={f.bounds.h}
-                  clipPath={`url(#hm-fcp-${f.idx})`}
+                  x={poly.x}
+                  y={poly.y}
+                  width={poly.w}
+                  height={poly.h}
+                  clipPath={`url(#hm-fcp-${f.idx}-${i})`}
                   preserveAspectRatio="xMidYMid slice"
                   opacity={isHighlighted ? 0.35 : 1}
                   style={{ pointerEvents: "none" }}
                 />
-              );
+              ));
             })}
             </g>
             </g>
