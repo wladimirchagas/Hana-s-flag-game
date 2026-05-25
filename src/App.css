@@ -993,6 +993,11 @@
   margin: 0.1rem 0;
 }
 
+.world-map__zoom-btn--active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 /* Interactive countries — pointer cursor + soft hover highlight. */
 .world-map__country--selectable {
   cursor: pointer;
