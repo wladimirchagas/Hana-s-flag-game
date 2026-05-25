@@ -282,11 +282,28 @@ export const HistoricalMap = memo(function HistoricalMap({
             {flagOverlay && (
               <defs>
                 {renderedFeatures.map((f) => {
-                  if (!f.name || !flagOverlay.has(f.name)) return null;
+                  if (!f.name) return null;
+                  const flagUrl = flagOverlay.get(f.name);
+                  if (!flagUrl) return null;
                   return f.flagPolys.map((poly, i) => (
-                    <clipPath key={`fcp-${f.idx}-${i}`} id={`hm-fcp-${f.idx}-${i}`}>
-                      <path d={poly.path} />
-                    </clipPath>
+                    <pattern
+                      key={`fpat-${f.idx}-${i}`}
+                      id={`hm-fpat-${f.idx}-${i}`}
+                      patternUnits="userSpaceOnUse"
+                      x={poly.x}
+                      y={poly.y}
+                      width={poly.w}
+                      height={poly.h}
+                    >
+                      <image
+                        href={flagUrl}
+                        x={poly.x}
+                        y={poly.y}
+                        width={poly.w}
+                        height={poly.h}
+                        preserveAspectRatio="xMidYMid slice"
+                      />
+                    </pattern>
                   ));
                 })}
               </defs>
@@ -324,20 +341,14 @@ export const HistoricalMap = memo(function HistoricalMap({
               );
             })}
             {flagOverlay && renderedFeatures.map((f) => {
-              if (!f.name) return null;
-              const flagUrl = flagOverlay.get(f.name);
-              if (!flagUrl) return null;
+              if (!f.name || !flagOverlay.has(f.name)) return null;
               const isHighlighted = f.name === highlightName;
               return f.flagPolys.map((poly, i) => (
-                <image
-                  key={`fimg-${f.idx}-${i}`}
-                  href={flagUrl}
-                  x={poly.x}
-                  y={poly.y}
-                  width={poly.w}
-                  height={poly.h}
-                  clipPath={`url(#hm-fcp-${f.idx}-${i})`}
-                  preserveAspectRatio="xMidYMid slice"
+                <path
+                  key={`fpoly-${f.idx}-${i}`}
+                  d={poly.path}
+                  fill={`url(#hm-fpat-${f.idx}-${i})`}
+                  stroke="none"
                   opacity={isHighlighted ? 0.35 : 1}
                   style={{ pointerEvents: "none" }}
                 />
