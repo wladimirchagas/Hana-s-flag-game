@@ -250,12 +250,14 @@ export function WorldProgressMap({
     };
   }, []);
 
-  const { pathById, spherePath, centroidByAlpha2, boundsById } = useMemo(() => {
+  type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
+
+  const { pathById, spherePath, centroidByAlpha2, flagPolygonsById } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
-      boundsById: new Map<string, { x: number; y: number; w: number; h: number }>(),
+      flagPolygonsById: new Map<string, FlagPoly[]>(),
     };
     if (geographies.length === 0) return empty;
     // Fit to the sphere (not just the countries) so the sphere outline
@@ -267,7 +269,11 @@ export function WorldProgressMap({
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     const centroidByAlpha2 = new Map<string, [number, number]>();
-    const boundsById = new Map<string, { x: number; y: number; w: number; h: number }>();
+    // Per-polygon paths+bounds for flag overlay. Countries with MultiPolygon
+    // geometry (France, USA, Russia, …) are decomposed into individual polygons
+    // so each territory gets a flag image sized to its own bounding box rather
+    // than the overall bounding box that spans all non-contiguous pieces.
+    const flagPolygonsById = new Map<string, FlagPoly[]>();
 
     for (const geo of geographies) {
       const path = mapPath(geo as never);
@@ -280,14 +286,28 @@ export function WorldProgressMap({
         if (c && isFinite(c[0]) && isFinite(c[1])) {
           centroidByAlpha2.set(alpha2, [c[0], c[1]]);
         }
-        // Bounding box for flag overlay images.
-        const b = mapPath.bounds(geo as never);
-        if (b && isFinite(b[0][0]) && isFinite(b[1][0])) {
-          const [x0, y0] = b[0];
-          const [x1, y1] = b[1];
-          if (x1 > x0 && y1 > y0) {
-            boundsById.set(alpha2, { x: x0, y: y0, w: x1 - x0, h: y1 - y0 });
+
+        // Decompose geometry into individual Polygon coordinate arrays so
+        // each non-contiguous piece gets its own correctly-sized image.
+        const geom = geo.geometry as { type: string; coordinates: unknown } | null;
+        if (geom) {
+          const rings: unknown[] =
+            geom.type === "Polygon"
+              ? [geom.coordinates]
+              : geom.type === "MultiPolygon"
+                ? (geom.coordinates as unknown[])
+                : [];
+          const polys: FlagPoly[] = [];
+          for (const coords of rings) {
+            const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
+            const pd = mapPath(pf as never);
+            if (!pd) continue;
+            const b = mapPath.bounds(pf as never);
+            if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
+              polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
+            }
           }
+          if (polys.length > 0) flagPolygonsById.set(alpha2, polys);
         }
       }
     }
@@ -303,7 +323,7 @@ export function WorldProgressMap({
     }
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
-    return { pathById: paths, spherePath, centroidByAlpha2, boundsById };
+    return { pathById: paths, spherePath, centroidByAlpha2, flagPolygonsById };
   }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
@@ -450,13 +470,14 @@ export function WorldProgressMap({
             <defs>
               {geographies.map((geo) => {
                 const alpha2 = toIsoAlpha2(geo.id);
-                const path = pathById.get(String(geo.id ?? ""));
-                if (!alpha2 || !path) return null;
-                return (
-                  <clipPath key={`fcp-${alpha2}`} id={`wm-fcp-${alpha2}`}>
-                    <path d={path} />
+                if (!alpha2) return null;
+                const polys = flagPolygonsById.get(alpha2);
+                if (!polys) return null;
+                return polys.map((poly, i) => (
+                  <clipPath key={`fcp-${alpha2}-${i}`} id={`wm-fcp-${alpha2}-${i}`}>
+                    <path d={poly.path} />
                   </clipPath>
-                );
+                ));
               })}
             </defs>
           )}
@@ -527,24 +548,25 @@ export function WorldProgressMap({
           {showFlagOverlay && geographies.map((geo) => {
             const alpha2 = toIsoAlpha2(geo.id);
             if (!alpha2) return null;
-            const b = boundsById.get(alpha2);
-            if (!b) return null;
+            const polys = flagPolygonsById.get(alpha2);
+            if (!polys) return null;
             const isSelected =
               alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
-            return (
+            const flagUrl = `https://flagcdn.com/${alpha2.toLowerCase()}.svg`;
+            return polys.map((poly, i) => (
               <image
-                key={`fimg-${alpha2}`}
-                href={`https://flagcdn.com/${alpha2.toLowerCase()}.svg`}
-                x={b.x}
-                y={b.y}
-                width={b.w}
-                height={b.h}
-                clipPath={`url(#wm-fcp-${alpha2})`}
+                key={`fimg-${alpha2}-${i}`}
+                href={flagUrl}
+                x={poly.x}
+                y={poly.y}
+                width={poly.w}
+                height={poly.h}
+                clipPath={`url(#wm-fcp-${alpha2}-${i})`}
                 preserveAspectRatio="xMidYMid slice"
                 opacity={isSelected ? 0.35 : 1}
                 style={{ pointerEvents: "none" }}
               />
-            );
+            ));
           })}
           </g>
           </g>
