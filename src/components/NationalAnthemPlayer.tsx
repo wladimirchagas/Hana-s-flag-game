@@ -16,43 +16,57 @@ function formatTime(s: number): string {
   return `${m}:${sec.toString().padStart(2, "0")}`;
 }
 
-async function resolveWikimediaUrl(anthem: AnthemData): Promise<string> {
-  // Try exact file title first
-  const encodedFile = encodeURIComponent(anthem.wikiFile);
-  const directUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=File:${encodedFile}&prop=imageinfo&iiprop=url&format=json&origin=*`;
+const AUDIO_EXT = /\.(ogg|oga|flac|mp3|wav)$/i;
+const API = "https://commons.wikimedia.org/w/api.php";
 
-  const res = await fetch(directUrl);
+async function getFileUrl(title: string): Promise<string | null> {
+  const full = title.startsWith("File:") ? title : `File:${title}`;
+  const res = await fetch(`${API}?action=query&titles=${encodeURIComponent(full)}&prop=imageinfo&iiprop=url&format=json&origin=*`);
   const data = await res.json();
   const pages = data?.query?.pages ?? {};
   const page = Object.values(pages)[0] as Record<string, unknown>;
+  if (!page || "missing" in page) return null;
+  const url: string | undefined = (page.imageinfo as { url: string }[])?.[0]?.url;
+  return url ?? null;
+}
 
-  if (page && !("missing" in page)) {
-    const url = (page.imageinfo as { url: string }[])?.[0]?.url;
+async function searchAudio(query: string): Promise<string | null> {
+  const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=10&srprop=title&format=json&origin=*`);
+  const data = await res.json();
+  const results: { title: string }[] = data?.query?.search ?? [];
+  // Prefer results with an audio extension in the title; fall back to any result
+  const ordered = [
+    ...results.filter(r => AUDIO_EXT.test(r.title)),
+    ...results.filter(r => !AUDIO_EXT.test(r.title)),
+  ];
+  for (const r of ordered.slice(0, 5)) {
+    const url = await getFileUrl(r.title);
+    if (url && AUDIO_EXT.test(url)) return url;
+  }
+  return null;
+}
+
+async function resolveWikimediaUrl(anthem: AnthemData, countryName: string): Promise<string> {
+  // 1. Exact file title
+  const direct = await getFileUrl(anthem.wikiFile);
+  if (direct) return direct;
+
+  // 2. Explicit wikiSearch override
+  if (anthem.wikiSearch) {
+    const url = await searchAudio(anthem.wikiSearch);
     if (url) return url;
   }
 
-  // Fallback: search by query
-  const searchTerm = anthem.wikiSearch ?? anthem.wikiFile.replace(/\.ogg$/i, "").replace(/\.oga$/i, "");
-  const searchUrl = `https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(searchTerm)}&srnamespace=6&srlimit=5&srprop=title&format=json&origin=*`;
+  // 3. "national anthem [country]" — most reliable generic query
+  const url3 = await searchAudio(`national anthem ${countryName}`);
+  if (url3) return url3;
 
-  const sRes = await fetch(searchUrl);
-  const sData = await sRes.json();
-  const results: { title: string }[] = sData?.query?.search ?? [];
+  // 4. English anthem title
+  const title = anthem.titleEn ?? anthem.title;
+  const url4 = await searchAudio(title);
+  if (url4) return url4;
 
-  // Pick first result that is an audio file
-  const audioResult = results.find((r) =>
-    /\.(ogg|oga|mp3|flac|wav)$/i.test(r.title)
-  );
-  if (!audioResult) throw new Error("No audio found");
-
-  const fileUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(audioResult.title)}&prop=imageinfo&iiprop=url&format=json&origin=*`;
-  const fRes = await fetch(fileUrl);
-  const fData = await fRes.json();
-  const fPages = fData?.query?.pages ?? {};
-  const fPage = Object.values(fPages)[0] as Record<string, unknown>;
-  const fUrl = (fPage?.imageinfo as { url: string }[])?.[0]?.url;
-  if (!fUrl) throw new Error("Could not resolve audio URL");
-  return fUrl;
+  throw new Error("No audio found");
 }
 
 export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClose }: Props) {
@@ -81,11 +95,11 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     let cancelled = false;
     setIsLoadingAudio(true);
     setAudioError(null);
-    resolveWikimediaUrl(anthem)
+    resolveWikimediaUrl(anthem, countryName)
       .then((url) => { if (!cancelled) { setAudioUrl(url); setIsLoadingAudio(false); } })
       .catch(() => { if (!cancelled) { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); } });
     return () => { cancelled = true; };
-  }, [anthem]);
+  }, [anthem, countryName]);
 
   const handleTimeUpdate = useCallback(() => {
     const audio = audioRef.current;
