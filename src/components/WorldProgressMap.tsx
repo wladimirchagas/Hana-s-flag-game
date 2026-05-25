@@ -534,7 +534,7 @@ export function WorldProgressMap({
             return (
               <image
                 key={`fimg-${alpha2}`}
-                href={`https://flagcdn.com/w320/${alpha2.toLowerCase()}.png`}
+                href={`https://flagcdn.com/${alpha2.toLowerCase()}.svg`}
                 x={b.x}
                 y={b.y}
                 width={b.w}
