@@ -1,0 +1,377 @@
+/* === National Anthem Player Modal ======================================
+   Sticker-book style to match the rest of the app:
+   thick ink borders, cream/paper backgrounds, Fredoka font, coral accents.
+======================================================================== */
+
+.anthem-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.anthem-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 34, 56, 0.6);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.anthem-modal__card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.25rem 1rem;
+  overflow: hidden;
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+
+/* === Close button ====================================================== */
+.anthem-modal__close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  background: var(--cream);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 120ms ease, transform 120ms ease;
+}
+.anthem-modal__close:hover,
+.anthem-modal__close:focus-visible {
+  background: var(--coral);
+  color: #fff;
+  outline: none;
+  transform: scale(1.05);
+}
+
+/* === Header: flag + country name + anthem title ======================= */
+.anthem-modal__header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-right: 2rem; /* clear the close button */
+}
+
+.anthem-modal__flag {
+  flex-shrink: 0;
+  width: 64px;
+  height: auto;
+  max-height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 2px solid var(--ink-faint);
+  filter: drop-shadow(0 1px 2px rgba(26,34,56,0.18));
+}
+
+.anthem-modal__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.anthem-modal__country {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.anthem-modal__title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.anthem-modal__title-en {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+/* === Loading / error states ============================================ */
+.anthem-modal__status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-align: center;
+  justify-content: center;
+}
+
+.anthem-modal__status--error {
+  color: var(--coral-deep);
+}
+
+.anthem-modal__spinner {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid var(--ink-faint);
+  border-top-color: var(--sky);
+  border-radius: 50%;
+  animation: anthem-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes anthem-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* === Progress bar ====================================================== */
+.anthem-player__progress {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+  outline: none;
+}
+
+.anthem-player__progress:focus-visible {
+  box-shadow: 0 0 0 3px var(--sky);
+}
+
+.anthem-player__progress-fill {
+  height: 100%;
+  background: var(--coral);
+  border-radius: 999px;
+  transition: width 80ms linear;
+  pointer-events: none;
+}
+
+.anthem-player__progress-thumb {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background: var(--ink);
+  border: 2px solid var(--paper);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: left 80ms linear;
+}
+
+/* === Time labels ======================================================= */
+.anthem-player__time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+  margin-top: -0.25rem;
+}
+
+/* === Controls ========================================================== */
+.anthem-player__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.anthem-player__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--cream);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 3px 0 var(--ink);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.anthem-player__btn:hover,
+.anthem-player__btn:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 var(--ink);
+}
+
+.anthem-player__btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 0 var(--ink);
+}
+
+.anthem-player__btn--skip {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.anthem-player__btn--play {
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1.3rem;
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+.anthem-player__btn--play:hover,
+.anthem-player__btn--play:focus-visible {
+  background: var(--coral);
+  color: #fff;
+}
+
+.anthem-player__skip-icon {
+  font-size: 1rem;
+}
+
+.anthem-player__skip-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.anthem-player__play-icon,
+.anthem-player__pause-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* === Lyrics panel ====================================================== */
+.anthem-lyrics {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  max-height: 240px;
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  border-top: 2px solid var(--ink-faint);
+  scroll-behavior: smooth;
+}
+
+.anthem-lyrics::-webkit-scrollbar {
+  width: 4px;
+}
+.anthem-lyrics::-webkit-scrollbar-track {
+  background: transparent;
+}
+.anthem-lyrics::-webkit-scrollbar-thumb {
+  background: var(--ink-faint);
+  border-radius: 999px;
+}
+
+.anthem-lyrics__line {
+  margin: 0;
+  padding: 0.3rem 0.65rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  transition: background 200ms ease, color 200ms ease, transform 200ms ease, font-size 200ms ease;
+  cursor: default;
+}
+
+.anthem-lyrics__line--past {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+.anthem-lyrics__line--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+  font-size: 1rem;
+  font-weight: 700;
+  transform: scale(1.03);
+  box-shadow: 0 2px 0 var(--ink);
+}
+
+.anthem-lyrics__line--future {
+  color: var(--ink);
+}
+
+.anthem-lyrics__unavailable,
+.anthem-lyrics__note {
+  margin: 0.75rem auto;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+  max-width: 30ch;
+  line-height: 1.4;
+}
+
+.anthem-lyrics__note {
+  margin-top: 0.5rem;
+  color: var(--ink-soft);
+}
+
+/* === Responsive ======================================================== */
+@media (max-width: 540px) {
+  .anthem-modal__card {
+    padding: 1rem 1rem 0.85rem;
+    max-height: 95vh;
+  }
+  .anthem-modal__flag {
+    width: 48px;
+    max-height: 32px;
+  }
+  .anthem-modal__title {
+    font-size: 0.95rem;
+  }
+  .anthem-player__btn--play {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.15rem;
+  }
+  .anthem-lyrics {
+    max-height: 180px;
+  }
+}
+
+@media (max-height: 600px) {
+  .anthem-lyrics {
+    max-height: 130px;
+  }
+}

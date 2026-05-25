@@ -20,6 +20,7 @@ import { FLAG_SIMILARITIES } from "../lib/flagSimilarity";
 import { getDriveSide } from "../lib/flagDriveSide";
 import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
+import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
@@ -92,6 +93,7 @@ export default function LearnPage() {
   // when it doesn't).
   const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
   const [zoomed, setZoomed] = useState(false);
+  const [anthemOpen, setAnthemOpen] = useState(false);
 
   const baseUrl = import.meta.env.BASE_URL;
   const era = useMemo(() => getEra(eraId), [eraId]);
@@ -201,6 +203,7 @@ export default function LearnPage() {
   useEffect(() => {
     setHovered(null);
     setAvailableHistoricalNames(new Set());
+    setAnthemOpen(false);
   }, [eraId]);
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
@@ -571,7 +574,20 @@ export default function LearnPage() {
                 </p>
                 <h2 className="learn-fs__name">{selectionName(display)}</h2>
                 {display.kind === "modern" ? (
-                  <EntitySummary kind="modern" country={display.country} />
+                  <>
+                    <EntitySummary kind="modern" country={display.country} />
+                    <div className="learn-fs__anthem-row">
+                      <span className="learn-fs__anthem-label">National Anthem</span>
+                      <button
+                        type="button"
+                        className="learn-fs__anthem-btn"
+                        onClick={() => setAnthemOpen(true)}
+                        aria-label={`Play national anthem of ${display.country.name}`}
+                      >
+                        ▶ Play
+                      </button>
+                    </div>
+                  </>
                 ) : (
                   <EntitySummary
                     kind="historical"
@@ -622,6 +638,15 @@ export default function LearnPage() {
 
         </aside>
       </div>
+
+      {anthemOpen && display?.kind === "modern" && (
+        <NationalAnthemPlayer
+          countryCode={display.country.code}
+          countryName={display.country.name}
+          flagUrl={selectionFlag(display, baseUrl)}
+          onClose={() => setAnthemOpen(false)}
+        />
+      )}
 
       {zoomed && flagUrl && (
         <div

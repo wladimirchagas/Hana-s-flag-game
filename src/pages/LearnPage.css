@@ -584,6 +584,63 @@
   max-width: 52ch;
 }
 
+/* === National Anthem row ============================================
+   Shown in the detail panel below the entity summary, only for the
+   present-day (modern) era. A label + Play button on one line. */
+.learn-fs__anthem-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  margin-top: 0.2rem;
+}
+
+.learn-fs__anthem-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.learn-fs__anthem-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.85rem;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-fixed);
+  background: var(--sky);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  white-space: nowrap;
+}
+
+.learn-fs__anthem-btn:hover,
+.learn-fs__anthem-btn:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  background: var(--coral);
+  color: #fff;
+}
+
+.learn-fs__anthem-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
 /* Optional note shown in the detail panel below the country name —
    used now mainly for historical entities (curated registry note). */
 .learn-fs__note,
