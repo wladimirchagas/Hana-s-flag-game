@@ -85,6 +85,7 @@ export default function LearnPage() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
+  const [showFlagMap, setShowFlagMap] = useState(false);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
   // cross-era selection-validation effect below to keep a selection alive
@@ -126,6 +127,9 @@ export default function LearnPage() {
 
   const toggleRotation = useCallback(() => {
     setIsRotating((prev) => !prev);
+  }, []);
+  const toggleFlagMap = useCallback(() => {
+    setShowFlagMap((prev) => !prev);
   }, []);
   useEffect(() => {
     saveMapView(mapView);
@@ -414,6 +418,23 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
 
+  // Flag overlay for historical eras: maps polity NAME → absolute flag URL.
+  // Built from the same flagEntries used by FlagGrid so the URL resolution
+  // (relative /historical-flags/ paths vs absolute flagcdn URLs) is consistent.
+  const historicalFlagOverlay = useMemo(() => {
+    if (isModernEra || !showFlagMap) return null;
+    const m = new Map<string, string>();
+    for (const entry of flagEntries) {
+      if (!entry.flag) continue;
+      const url =
+        /^https?:\/\//.test(entry.flag) || entry.flag.startsWith("data:")
+          ? entry.flag
+          : `${baseUrl}${entry.flag}`;
+      m.set(entry.id, url);
+    }
+    return m;
+  }, [isModernEra, showFlagMap, flagEntries, baseUrl]);
+
   // The modern globe uses the full animated longitude (cheap TopoJSON reprojection).
   // Historical maps only get the base meridian — their GeoJSON files are up to 14 MB,
   // so reprojecting on every rotation tick would be far too expensive. Historical maps
@@ -458,10 +479,20 @@ export default function LearnPage() {
           {isRotating ? "⏸" : "▶"}
         </button>
         <MapViewControl view={mapView} onChange={setMapView} />
+        <hr className="world-map__zoom-divider" />
+        <button
+          type="button"
+          className={`world-map__zoom-btn${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+          onClick={toggleFlagMap}
+          aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+          title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+        >
+          🚩
+        </button>
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isRotating, mapView, toggleRotation],
+    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap],
   );
 
   function handleGridSelect(id: string) {
@@ -542,6 +573,7 @@ export default function LearnPage() {
             centerLongitude={effectiveLongitude}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
+            showFlagOverlay={showFlagMap}
           />
         ) : (
           <HistoricalMap
@@ -557,6 +589,7 @@ export default function LearnPage() {
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
             onDataLoaded={setAvailableHistoricalNames}
+            flagOverlay={historicalFlagOverlay}
           />
         )}
       </div>

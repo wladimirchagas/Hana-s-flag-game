@@ -71,6 +71,12 @@ export type HistoricalMapProps = {
   /** Optional extra controls to render below the +/-/⟲ zoom buttons,
    *  e.g. the MapViewControl picker. */
   extraControls?: React.ReactNode;
+  /**
+   * When provided, each polity whose name is a key in this map will have
+   * its flag image (the map value — an absolute URL) rendered filling its
+   * territory. Polities absent from the map are shown without a flag overlay.
+   */
+  flagOverlay?: ReadonlyMap<string, string> | null;
 };
 
 const WIDTH = 960;
@@ -111,6 +117,7 @@ export const HistoricalMap = memo(function HistoricalMap({
   centerLongitude = 0,
   southUp = false,
   extraControls,
+  flagOverlay = null,
 }: HistoricalMapProps) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -184,7 +191,18 @@ export const HistoricalMap = memo(function HistoricalMap({
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
       const name = f.properties?.NAME ?? null;
-      return { idx, d, name };
+      let bounds: { x: number; y: number; w: number; h: number } | null = null;
+      if (d) {
+        const b = pathFn.bounds(f as never);
+        if (b && isFinite(b[0][0]) && isFinite(b[1][0])) {
+          const [x0, y0] = b[0];
+          const [x1, y1] = b[1];
+          if (x1 > x0 && y1 > y0) {
+            bounds = { x: x0, y: y0, w: x1 - x0, h: y1 - y0 };
+          }
+        }
+      }
+      return { idx, d, name, bounds };
     });
     const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
     return { renderedFeatures: features, spherePath };
@@ -250,6 +268,18 @@ export const HistoricalMap = memo(function HistoricalMap({
                 vectorEffect="non-scaling-stroke"
               />
             )}
+            {flagOverlay && (
+              <defs>
+                {renderedFeatures.map((f) => {
+                  if (!f.d || !f.name || !flagOverlay.has(f.name)) return null;
+                  return (
+                    <clipPath key={`fcp-${f.idx}`} id={`hm-fcp-${f.idx}`}>
+                      <path d={f.d} />
+                    </clipPath>
+                  );
+                })}
+              </defs>
+            )}
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
               const isHighlighted =
@@ -280,6 +310,26 @@ export const HistoricalMap = memo(function HistoricalMap({
                 >
                   {f.name ? <title>{f.name}</title> : null}
                 </path>
+              );
+            })}
+            {flagOverlay && renderedFeatures.map((f) => {
+              if (!f.d || !f.name || !f.bounds) return null;
+              const flagUrl = flagOverlay.get(f.name);
+              if (!flagUrl) return null;
+              const isHighlighted = f.name === highlightName;
+              return (
+                <image
+                  key={`fimg-${f.idx}`}
+                  href={flagUrl}
+                  x={f.bounds.x}
+                  y={f.bounds.y}
+                  width={f.bounds.w}
+                  height={f.bounds.h}
+                  clipPath={`url(#hm-fcp-${f.idx})`}
+                  preserveAspectRatio="xMidYMid slice"
+                  opacity={isHighlighted ? 0.35 : 1}
+                  style={{ pointerEvents: "none" }}
+                />
               );
             })}
             </g>

@@ -127,6 +127,8 @@ type Props = {
   southUp?: boolean;
   /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
   extraControls?: React.ReactNode;
+  /** When true, each country's flag fills its territory on the map. */
+  showFlagOverlay?: boolean;
 };
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -218,6 +220,7 @@ export function WorldProgressMap({
   centerLongitude = 0,
   southUp = false,
   extraControls,
+  showFlagOverlay = false,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -247,11 +250,12 @@ export function WorldProgressMap({
     };
   }, []);
 
-  const { pathById, spherePath, centroidByAlpha2 } = useMemo(() => {
+  const { pathById, spherePath, centroidByAlpha2, boundsById } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
+      boundsById: new Map<string, { x: number; y: number; w: number; h: number }>(),
     };
     if (geographies.length === 0) return empty;
     // Fit to the sphere (not just the countries) so the sphere outline
@@ -263,6 +267,7 @@ export function WorldProgressMap({
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     const centroidByAlpha2 = new Map<string, [number, number]>();
+    const boundsById = new Map<string, { x: number; y: number; w: number; h: number }>();
 
     for (const geo of geographies) {
       const path = mapPath(geo as never);
@@ -274,6 +279,15 @@ export function WorldProgressMap({
         const c = mapPath.centroid(geo as never);
         if (c && isFinite(c[0]) && isFinite(c[1])) {
           centroidByAlpha2.set(alpha2, [c[0], c[1]]);
+        }
+        // Bounding box for flag overlay images.
+        const b = mapPath.bounds(geo as never);
+        if (b && isFinite(b[0][0]) && isFinite(b[1][0])) {
+          const [x0, y0] = b[0];
+          const [x1, y1] = b[1];
+          if (x1 > x0 && y1 > y0) {
+            boundsById.set(alpha2, { x: x0, y: y0, w: x1 - x0, h: y1 - y0 });
+          }
         }
       }
     }
@@ -289,7 +303,7 @@ export function WorldProgressMap({
     }
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
-    return { pathById: paths, spherePath, centroidByAlpha2 };
+    return { pathById: paths, spherePath, centroidByAlpha2, boundsById };
   }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
@@ -432,6 +446,20 @@ export function WorldProgressMap({
               vectorEffect="non-scaling-stroke"
             />
           )}
+          {showFlagOverlay && (
+            <defs>
+              {geographies.map((geo) => {
+                const alpha2 = toIsoAlpha2(geo.id);
+                const path = pathById.get(String(geo.id ?? ""));
+                if (!alpha2 || !path) return null;
+                return (
+                  <clipPath key={`fcp-${alpha2}`} id={`wm-fcp-${alpha2}`}>
+                    <path d={path} />
+                  </clipPath>
+                );
+              })}
+            </defs>
+          )}
           {geographies.map((geo, idx) => {
             const key = String(geo.id ?? idx);
             const path = pathById.get(String(geo.id ?? ""));
@@ -494,6 +522,28 @@ export function WorldProgressMap({
               >
                 {tooltip ? <title>{tooltip}</title> : null}
               </path>
+            );
+          })}
+          {showFlagOverlay && geographies.map((geo) => {
+            const alpha2 = toIsoAlpha2(geo.id);
+            if (!alpha2) return null;
+            const b = boundsById.get(alpha2);
+            if (!b) return null;
+            const isSelected =
+              alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
+            return (
+              <image
+                key={`fimg-${alpha2}`}
+                href={`https://flagcdn.com/w320/${alpha2.toLowerCase()}.svg`}
+                x={b.x}
+                y={b.y}
+                width={b.w}
+                height={b.h}
+                clipPath={`url(#wm-fcp-${alpha2})`}
+                preserveAspectRatio="xMidYMid slice"
+                opacity={isSelected ? 0.35 : 1}
+                style={{ pointerEvents: "none" }}
+              />
             );
           })}
           </g>
