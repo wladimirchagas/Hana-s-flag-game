@@ -138,7 +138,7 @@ type Props = {
   flagOverlay?: ReadonlyMap<string, string> | null;
 };
 
-const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
+const GEO_URL = "/countries-10m.json";
 const WIDTH = 960;
 const HEIGHT = 500;
 
