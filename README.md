@@ -1,4 +1,4 @@
-# Guess the Flag 
+# Guess the Flag
 
 MVP flag quiz: see a country flag, search and select a country, confirm your guess, and track your score (+1 correct, −1 wrong).
 
