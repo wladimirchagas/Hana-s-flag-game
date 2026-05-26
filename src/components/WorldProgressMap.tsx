@@ -132,8 +132,10 @@ type Props = {
   southUp?: boolean;
   /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
   extraControls?: React.ReactNode;
-  /** When true, each country's flag fills its territory on the map. */
-  showFlagOverlay?: boolean;
+  /** When provided, each country whose alpha-2 code is a key in this map
+   *  will have its flag image (the map value — an absolute URL) rendered
+   *  filling its territory. Countries absent from the map show normally. */
+  flagOverlay?: ReadonlyMap<string, string> | null;
 };
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -226,7 +228,7 @@ export function WorldProgressMap({
   rotationOffset = 0,
   southUp = false,
   extraControls,
-  showFlagOverlay = false,
+  flagOverlay = null,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -483,11 +485,11 @@ export function WorldProgressMap({
               interpreted in the referencing element's coordinate system, so
               the paths align correctly even when the map is zoomed or
               flipped south-up. */}
-          {showFlagOverlay && (
+          {flagOverlay && (
             <defs>
               {geographies.map((geo) => {
                 const alpha2 = toIsoAlpha2(geo.id);
-                if (!alpha2) return null;
+                if (!alpha2 || !flagOverlay.has(alpha2)) return null;
                 const polys = flagPolygonsById.get(alpha2);
                 if (!polys) return null;
                 return polys.map((poly, i) => (
@@ -584,16 +586,17 @@ export function WorldProgressMap({
           })}
           {/* Flag images are in base-projection space. The translate shifts
               them to align with the animated (rotated) country paths. */}
-          {showFlagOverlay && (
+          {flagOverlay && (
             <g transform={flagTranslateX !== 0 ? `translate(${flagTranslateX.toFixed(2)} 0)` : undefined}>
               {geographies.map((geo) => {
                 const alpha2 = toIsoAlpha2(geo.id);
                 if (!alpha2) return null;
+                const flagUrl = flagOverlay.get(alpha2);
+                if (!flagUrl) return null;
                 const polys = flagPolygonsById.get(alpha2);
                 if (!polys) return null;
                 const isSelected =
                   alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
-                const flagUrl = `https://flagcdn.com/w1280/${alpha2.toLowerCase()}.png`;
                 return polys.map((poly, i) => (
                   <image
                     key={`fimg-${alpha2}-${i}`}
