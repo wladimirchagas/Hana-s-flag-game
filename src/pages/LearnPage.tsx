@@ -428,7 +428,9 @@ export default function LearnPage() {
   // (Wikimedia SVGs, local PNGs) are returned unchanged.
   const toMapFlagUrl = (url: string): string => {
     const m = url.match(/^https?:\/\/flagcdn\.com\/([a-z]{2})\.svg$/);
-    return m ? `https://flagcdn.com/w1280/${m[1]}.png` : url;
+    // w320 is plenty for a ~960px-wide map; w1280 was ~16× heavier with no
+    // visible benefit and significantly increased per-frame paint cost.
+    return m ? `https://flagcdn.com/w320/${m[1]}.png` : url;
   };
 
   // Flag overlay for the modern era: maps alpha-2 code → flag PNG URL.
