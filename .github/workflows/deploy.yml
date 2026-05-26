@@ -45,7 +45,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           # Auto-enable Pages for the repo on first run, so you don't have to
-          # toggle it in Settings → Pages manually.
+          # toggle it in Settings -> Pages manually.
           enablement: true
 
       - name: Upload artifact
