@@ -18,6 +18,8 @@ function formatTime(s: number): string {
 
 const AUDIO_EXT = /\.(ogg|oga|flac|mp3|wav)$/i;
 const PLAYABLE_EXT = /\.(ogg|oga|mp3)$/i;
+const VOCAL_HINT = /vocal|sung|voice|choral|choir|singing/i;
+const INSTR_HINT = /instrumental|instr\.|orchestra only|without.?vocal/i;
 const API = "https://commons.wikimedia.org/w/api.php";
 
 async function getFileUrl(title: string): Promise<string | null> {
@@ -33,15 +35,24 @@ async function getFileUrl(title: string): Promise<string | null> {
   return PLAYABLE_EXT.test(url) ? url : null;
 }
 
-async function searchAudio(query: string): Promise<string | null> {
-  const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=10&srprop=title&format=json&origin=*`);
+async function searchAudio(query: string, preferVocal = true): Promise<string | null> {
+  const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=12&srprop=title&format=json&origin=*`);
   const data = await res.json();
   const results: { title: string }[] = data?.query?.search ?? [];
-  // Prefer results with a playable audio extension in the title
-  const ordered = [
-    ...results.filter(r => PLAYABLE_EXT.test(r.title)),
-    ...results.filter(r => AUDIO_EXT.test(r.title) && !PLAYABLE_EXT.test(r.title)),
-    ...results.filter(r => !AUDIO_EXT.test(r.title)),
+  const playable = results.filter(r => PLAYABLE_EXT.test(r.title));
+  const nonPlayable = results.filter(r => AUDIO_EXT.test(r.title) && !PLAYABLE_EXT.test(r.title));
+  const rest = results.filter(r => !AUDIO_EXT.test(r.title));
+  // When preferVocal: sort playable results — vocal-hinted first, then neutral, then instrumental-hinted
+  const ordered = preferVocal ? [
+    ...playable.filter(r => VOCAL_HINT.test(r.title)),
+    ...playable.filter(r => !VOCAL_HINT.test(r.title) && !INSTR_HINT.test(r.title)),
+    ...playable.filter(r => INSTR_HINT.test(r.title)),
+    ...nonPlayable,
+    ...rest,
+  ] : [
+    ...playable,
+    ...nonPlayable,
+    ...rest,
   ];
   for (const r of ordered.slice(0, 8)) {
     const url = await getFileUrl(r.title);
@@ -61,14 +72,18 @@ async function resolveWikimediaUrl(anthem: AnthemData, countryName: string): Pro
     if (url) return url;
   }
 
-  // 3. "national anthem [country]" — most reliable generic query
+  // 3. "national anthem [country] vocal" — prefer sung versions
+  const url3v = await searchAudio(`national anthem ${countryName} vocal`);
+  if (url3v) return url3v;
+
+  // 4. "national anthem [country]" — broader fallback
   const url3 = await searchAudio(`national anthem ${countryName}`);
   if (url3) return url3;
 
-  // 4. English anthem title
+  // 5. English anthem title
   const title = anthem.titleEn ?? anthem.title;
-  const url4 = await searchAudio(title);
-  if (url4) return url4;
+  const url5 = await searchAudio(title);
+  if (url5) return url5;
 
   throw new Error("No audio found");
 }
