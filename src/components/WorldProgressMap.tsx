@@ -338,25 +338,24 @@ export function WorldProgressMap({
     };
   }, []);
 
-  // Runs on every animation frame. Uses the full animated longitude so country
-  // shapes AND flag clip paths both use the identical projection — no separate
-  // translation needed to compensate for rotation offset.
-  const { pathById, spherePath, centroidByAlpha2, flagPolygonsById } = useMemo(() => {
+  // Cold path — runs only when geography data or the base meridian changes,
+  // NOT on every animation frame. Path computation (~250 geoPath calls) is
+  // the dominant CPU cost; keeping rotationOffset out of the deps array is
+  // the primary performance fix for the flag-overlay rotation jank.
+  const { pathById, spherePath, centroidByAlpha2, pxPerDegree } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
-      flagPolygonsById: new Map<string, FlagPoly[]>(),
+      pxPerDegree: WIDTH / 360,
     };
     if (geographies.length === 0) return empty;
-    const animLon = centerLongitude + rotationOffset;
     const projection = geoEqualEarth()
-      .rotate([-animLon, 0])
+      .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     const centroidByAlpha2 = new Map<string, [number, number]>();
-    const flagPolygonsById = new Map<string, FlagPoly[]>();
 
     for (const geo of geographies) {
       const path = mapPath(geo as never);
@@ -367,30 +366,6 @@ export function WorldProgressMap({
         const c = mapPath.centroid(geo as never);
         if (c && isFinite(c[0]) && isFinite(c[1])) {
           centroidByAlpha2.set(alpha2, [c[0], c[1]]);
-        }
-
-        // Flag overlay: decompose MultiPolygon into individual rings so each
-        // island/territory gets its own clip path + image, all in the same
-        // projection as the country paths — guarantees exact alignment.
-        const geom = geo.geometry as { type: string; coordinates: unknown } | null;
-        if (geom) {
-          const rings: unknown[] =
-            geom.type === "Polygon"
-              ? [geom.coordinates]
-              : geom.type === "MultiPolygon"
-                ? (geom.coordinates as unknown[])
-                : [];
-          const polys: FlagPoly[] = [];
-          for (const coords of rings) {
-            const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
-            const pd = mapPath(pf as never);
-            if (!pd) continue;
-            const b = mapPath.bounds(pf as never);
-            if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
-              polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
-            }
-          }
-          if (polys.length > 0) flagPolygonsById.set(alpha2, polys);
         }
       }
     }
@@ -406,8 +381,62 @@ export function WorldProgressMap({
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
 
-    return { pathById: paths, spherePath, centroidByAlpha2, flagPolygonsById };
-  }, [geographies, centerLongitude, rotationOffset]);
+    // Equal Earth is exactly linear in longitude along the equator, so two
+    // equatorial point projections give the exact pixels-per-degree scale
+    // needed to translate the whole map layer during rotation.
+    const p0 = projection([centerLongitude, 0]);
+    const p1 = projection([centerLongitude + 1, 0]);
+    const pxPerDegree = p0 && p1 ? p1[0] - p0[0] : WIDTH / 360;
+
+    return { pathById: paths, spherePath, centroidByAlpha2, pxPerDegree };
+  }, [geographies, centerLongitude]);
+
+  // Hot path — O(1), runs on every animation frame. Translates country paths
+  // AND flag images together via a single <g> transform so they stay aligned
+  // without re-projecting any geometry. The Equal Earth equatorial scale is
+  // exact; polar countries have a small approximation error that is visually
+  // imperceptible at the 6°/s rotation speed used here.
+  const countryTranslateX =
+    pxPerDegree > 0 && rotationOffset !== 0
+      ? -rotationOffset * pxPerDegree
+      : 0;
+
+  // Cold path — only reruns when the base meridian or geography data changes,
+  // NOT on every animation frame. Keeps the expensive per-polygon decomposition
+  // out of the hot render path so globe rotation stays smooth with flag overlay on.
+  const flagPolygonsById = useMemo(() => {
+    const result = new Map<string, FlagPoly[]>();
+    if (geographies.length === 0) return result;
+    const projection = geoEqualEarth()
+      .rotate([-centerLongitude, 0])
+      .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
+    const mapPath = geoPath(projection);
+
+    for (const geo of geographies) {
+      const alpha2 = toIsoAlpha2(geo.id);
+      if (!alpha2) continue;
+      const geom = geo.geometry as { type: string; coordinates: unknown } | null;
+      if (!geom) continue;
+      const rings: unknown[] =
+        geom.type === "Polygon"
+          ? [geom.coordinates]
+          : geom.type === "MultiPolygon"
+            ? (geom.coordinates as unknown[])
+            : [];
+      const polys: FlagPoly[] = [];
+      for (const coords of rings) {
+        const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
+        const pd = mapPath(pf as never);
+        if (!pd) continue;
+        const b = mapPath.bounds(pf as never);
+        if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
+          polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
+        }
+      }
+      if (polys.length > 0) result.set(alpha2, polys);
+    }
+    return result;
+  }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
@@ -492,7 +521,7 @@ export function WorldProgressMap({
   const showPulse = !!(selCentroid && selectedCode && SMALL_NATION_CODES.has(selectedCode));
   const { k: zk, tx: ztx, ty: zty } = zoom.view;
   const pulseX = selCentroid
-    ? selCentroid[0] * zk + ztx
+    ? (selCentroid[0] + countryTranslateX) * zk + ztx
     : 0;
   const pulseY = selCentroid
     ? (southUp ? HEIGHT - selCentroid[1] : selCentroid[1]) * zk + zty
@@ -564,6 +593,19 @@ export function WorldProgressMap({
               vectorEffect="non-scaling-stroke"
             />
           )}
+          {/* Country paths and flag images share one translation group.
+              countryTranslateX is an O(1) scalar — only this <g>'s
+              transform attribute changes on rotation frames. Neither
+              the path <d> attributes nor the memoised FlagImages are
+              reconciled, so 250-path geoPath re-projection no longer
+              runs every frame. */}
+          <g
+            transform={
+              countryTranslateX !== 0
+                ? `translate(${countryTranslateX.toFixed(2)} 0)`
+                : undefined
+            }
+          >
           {geographies.map((geo, idx) => {
             const key = String(geo.id ?? idx);
             const path = pathById.get(String(geo.id ?? ""));
@@ -628,6 +670,8 @@ export function WorldProgressMap({
               </path>
             );
           })}
+          {/* FlagImages is React.memo'd — only re-renders when overlay /
+              polygon data or selection changes, not on rotation frames. */}
           {flagOverlay && (
             <FlagImages
               flagOverlay={flagOverlay}
@@ -637,6 +681,7 @@ export function WorldProgressMap({
               highlightCodes={highlightCodes}
             />
           )}
+          </g>
           </g>
           </g>
           {/* Pulse indicator — outside the zoom group so its pixel size
