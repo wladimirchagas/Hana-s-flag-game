@@ -261,6 +261,25 @@ export const HistoricalMap = memo(function HistoricalMap({
               touchAction: zoom.isZoomed ? "none" : "auto",
             }}
           >
+            {/* Flag clip paths at SVG root — same Safari-transform-bug fix
+                as WorldProgressMap. See that file for the full explanation. */}
+            {flagOverlay && (
+              <defs>
+                {renderedFeatures.map((f) => {
+                  if (!f.name) return null;
+                  if (!flagOverlay.has(f.name)) return null;
+                  return f.flagPolys.map((poly, i) => (
+                    <clipPath
+                      key={`hm-fcp-${f.idx}-${i}`}
+                      id={`hm-fcp-${f.idx}-${i}`}
+                      clipPathUnits="userSpaceOnUse"
+                    >
+                      <path d={poly.path} />
+                    </clipPath>
+                  ));
+                })}
+              </defs>
+            )}
             <g transform={zoom.transform}>
             {/* South-up wrapper: SVG transforms compose left-to-right, so
                 `translate(0 H) scale(1 -1)` applied INSIDE zoom flips the
@@ -278,35 +297,6 @@ export const HistoricalMap = memo(function HistoricalMap({
                 strokeOpacity={0.5}
                 vectorEffect="non-scaling-stroke"
               />
-            )}
-            {flagOverlay && (
-              <defs>
-                {renderedFeatures.map((f) => {
-                  if (!f.name) return null;
-                  const flagUrl = flagOverlay.get(f.name);
-                  if (!flagUrl) return null;
-                  return f.flagPolys.map((poly, i) => (
-                    <pattern
-                      key={`fpat-${f.idx}-${i}`}
-                      id={`hm-fpat-${f.idx}-${i}`}
-                      patternUnits="userSpaceOnUse"
-                      x={poly.x}
-                      y={poly.y}
-                      width={poly.w}
-                      height={poly.h}
-                    >
-                      <image
-                        href={flagUrl}
-                        x={poly.x}
-                        y={poly.y}
-                        width={poly.w}
-                        height={poly.h}
-                        preserveAspectRatio="xMidYMid slice"
-                      />
-                    </pattern>
-                  ));
-                })}
-              </defs>
             )}
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
@@ -342,13 +332,18 @@ export const HistoricalMap = memo(function HistoricalMap({
             })}
             {flagOverlay && renderedFeatures.map((f) => {
               if (!f.name || !flagOverlay.has(f.name)) return null;
+              const flagUrl = flagOverlay.get(f.name)!;
               const isHighlighted = f.name === highlightName;
               return f.flagPolys.map((poly, i) => (
-                <path
-                  key={`fpoly-${f.idx}-${i}`}
-                  d={poly.path}
-                  fill={`url(#hm-fpat-${f.idx}-${i})`}
-                  stroke="none"
+                <image
+                  key={`hm-fimg-${f.idx}-${i}`}
+                  href={flagUrl}
+                  x={poly.x}
+                  y={poly.y}
+                  width={poly.w}
+                  height={poly.h}
+                  clipPath={`url(#hm-fcp-${f.idx}-${i})`}
+                  preserveAspectRatio="xMidYMid slice"
                   opacity={isHighlighted ? 0.35 : 1}
                   style={{ pointerEvents: "none" }}
                 />
