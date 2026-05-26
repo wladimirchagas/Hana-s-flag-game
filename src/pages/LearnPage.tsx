@@ -421,6 +421,30 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
 
+  // Convert a flag URL to a form suitable for SVG <image> map overlay.
+  // flagcdn.com serves /{code}.svg files whose embedded preserveAspectRatio
+  // can prevent "slice" scaling in some browsers. Switching those to the w1280
+  // PNG variant guarantees reliable full-territory coverage.  Non-flagcdn URLs
+  // (Wikimedia SVGs, local PNGs) are returned unchanged.
+  const toMapFlagUrl = (url: string): string => {
+    const m = url.match(/^https?:\/\/flagcdn\.com\/([a-z]{2})\.svg$/);
+    return m ? `https://flagcdn.com/w1280/${m[1]}.png` : url;
+  };
+
+  // Flag overlay for the modern era: maps alpha-2 code → flag PNG URL.
+  // Uses the same country.flagSvg source as the detail panel so flag
+  // versions are always in sync (e.g. the current Afghan flag shows on
+  // both the map and the widget).
+  const modernFlagOverlay = useMemo(() => {
+    if (!isModernEra || !showFlagMap) return null;
+    const m = new Map<string, string>();
+    for (const c of countries) {
+      m.set(c.code, toMapFlagUrl(c.flagSvg));
+    }
+    return m;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isModernEra, showFlagMap, countries]);
+
   // Flag overlay for historical eras: maps polity NAME → absolute flag URL.
   // Built from the same flagEntries used by FlagGrid so the URL resolution
   // (relative /historical-flags/ paths vs absolute flagcdn URLs) is consistent.
@@ -429,13 +453,14 @@ export default function LearnPage() {
     const m = new Map<string, string>();
     for (const entry of flagEntries) {
       if (!entry.flag) continue;
-      const url =
+      const raw =
         /^https?:\/\//.test(entry.flag) || entry.flag.startsWith("data:")
           ? entry.flag
           : `${baseUrl}${entry.flag}`;
-      m.set(entry.id, url);
+      m.set(entry.id, toMapFlagUrl(raw));
     }
     return m;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, showFlagMap, flagEntries, baseUrl]);
 
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
@@ -571,7 +596,7 @@ export default function LearnPage() {
             rotationOffset={rotationOffset}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
-            showFlagOverlay={showFlagMap}
+            flagOverlay={modernFlagOverlay}
           />
         ) : (
           <HistoricalMap
