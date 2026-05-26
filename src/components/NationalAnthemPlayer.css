@@ -310,6 +310,21 @@
   text-align: center;
   transition: background 200ms ease, color 200ms ease, transform 200ms ease, font-size 200ms ease;
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.anthem-lyrics__original {
+  display: block;
+}
+
+.anthem-lyrics__translation {
+  display: block;
+  font-size: 0.78em;
+  font-style: italic;
+  opacity: 0.72;
+  line-height: 1.3;
 }
 
 .anthem-lyrics__line--past {
@@ -324,6 +339,10 @@
   font-weight: 700;
   transform: scale(1.03);
   box-shadow: 0 2px 0 var(--ink);
+}
+
+.anthem-lyrics__line--active .anthem-lyrics__translation {
+  opacity: 0.85;
 }
 
 .anthem-lyrics__line--future {

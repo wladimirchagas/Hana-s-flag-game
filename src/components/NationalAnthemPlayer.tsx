@@ -17,6 +17,7 @@ function formatTime(s: number): string {
 }
 
 const AUDIO_EXT = /\.(ogg|oga|flac|mp3|wav)$/i;
+const PLAYABLE_EXT = /\.(ogg|oga|mp3)$/i;
 const API = "https://commons.wikimedia.org/w/api.php";
 
 async function getFileUrl(title: string): Promise<string | null> {
@@ -27,21 +28,24 @@ async function getFileUrl(title: string): Promise<string | null> {
   const page = Object.values(pages)[0] as Record<string, unknown>;
   if (!page || "missing" in page) return null;
   const url: string | undefined = (page.imageinfo as { url: string }[])?.[0]?.url;
-  return url ?? null;
+  if (!url) return null;
+  // Only return URLs in browser-playable formats; skip FLAC/WAV
+  return PLAYABLE_EXT.test(url) ? url : null;
 }
 
 async function searchAudio(query: string): Promise<string | null> {
   const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=10&srprop=title&format=json&origin=*`);
   const data = await res.json();
   const results: { title: string }[] = data?.query?.search ?? [];
-  // Prefer results with an audio extension in the title; fall back to any result
+  // Prefer results with a playable audio extension in the title
   const ordered = [
-    ...results.filter(r => AUDIO_EXT.test(r.title)),
+    ...results.filter(r => PLAYABLE_EXT.test(r.title)),
+    ...results.filter(r => AUDIO_EXT.test(r.title) && !PLAYABLE_EXT.test(r.title)),
     ...results.filter(r => !AUDIO_EXT.test(r.title)),
   ];
-  for (const r of ordered.slice(0, 5)) {
+  for (const r of ordered.slice(0, 8)) {
     const url = await getFileUrl(r.title);
-    if (url && AUDIO_EXT.test(url)) return url;
+    if (url) return url;
   }
   return null;
 }
@@ -296,14 +300,18 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
                     const state =
                       i === activeLine ? "active" :
                       i < activeLine ? "past" : "future";
+                    const hasDualLang = !!line.textEn;
                     return (
-                      <p
+                      <div
                         key={i}
                         data-line={i}
-                        className={`anthem-lyrics__line anthem-lyrics__line--${state}`}
+                        className={`anthem-lyrics__line anthem-lyrics__line--${state}${hasDualLang ? " anthem-lyrics__line--dual" : ""}`}
                       >
-                        {line.text}
-                      </p>
+                        <span className="anthem-lyrics__original">{line.text}</span>
+                        {hasDualLang && (
+                          <span className="anthem-lyrics__translation">{line.textEn}</span>
+                        )}
+                      </div>
                     );
                   })}
                 </>
