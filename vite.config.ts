@@ -41,6 +41,10 @@ function spaFallback() {
 
 export default defineConfig({
   base,
+  server: {
+    host: true,
+    port: 5173,
+  },
   // Compile-time constants — replaced literally in the bundle by Vite.
   define: {
     __BUILD_COMMIT__: JSON.stringify(BUILD_COMMIT),
