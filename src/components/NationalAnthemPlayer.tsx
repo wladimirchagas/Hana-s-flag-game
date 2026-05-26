@@ -35,7 +35,7 @@ async function getFileUrl(title: string): Promise<string | null> {
   return PLAYABLE_EXT.test(url) ? url : null;
 }
 
-async function searchAudio(query: string, preferVocal = true): Promise<string | null> {
+async function searchAudio(query: string, preferVocal = true, exclude?: Set<string>): Promise<string | null> {
   const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=12&srprop=title&format=json&origin=*`);
   const data = await res.json();
   const results: { title: string }[] = data?.query?.search ?? [];
@@ -56,33 +56,33 @@ async function searchAudio(query: string, preferVocal = true): Promise<string | 
   ];
   for (const r of ordered.slice(0, 8)) {
     const url = await getFileUrl(r.title);
-    if (url) return url;
+    if (url && !exclude?.has(url)) return url;
   }
   return null;
 }
 
-async function resolveWikimediaUrl(anthem: AnthemData, countryName: string): Promise<string> {
+async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, exclude?: Set<string>): Promise<string> {
   // 1. Exact file title
   const direct = await getFileUrl(anthem.wikiFile);
-  if (direct) return direct;
+  if (direct && !exclude?.has(direct)) return direct;
 
   // 2. Explicit wikiSearch override
   if (anthem.wikiSearch) {
-    const url = await searchAudio(anthem.wikiSearch);
+    const url = await searchAudio(anthem.wikiSearch, true, exclude);
     if (url) return url;
   }
 
   // 3. "national anthem [country] vocal" — prefer sung versions
-  const url3v = await searchAudio(`national anthem ${countryName} vocal`);
+  const url3v = await searchAudio(`national anthem ${countryName} vocal`, true, exclude);
   if (url3v) return url3v;
 
   // 4. "national anthem [country]" — broader fallback
-  const url3 = await searchAudio(`national anthem ${countryName}`);
+  const url3 = await searchAudio(`national anthem ${countryName}`, true, exclude);
   if (url3) return url3;
 
   // 5. English anthem title
   const title = anthem.titleEn ?? anthem.title;
-  const url5 = await searchAudio(title);
+  const url5 = await searchAudio(title, true, exclude);
   if (url5) return url5;
 
   throw new Error("No audio found");
@@ -94,6 +94,8 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   const audioRef = useRef<HTMLAudioElement>(null);
   const lyricsRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
+  const triedUrls = useRef<Set<string>>(new Set());
+  const retryCount = useRef(0);
 
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isLoadingAudio, setIsLoadingAudio] = useState(true);
@@ -106,6 +108,8 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
 
   // Fetch audio URL from Wikimedia Commons
   useEffect(() => {
+    triedUrls.current = new Set();
+    retryCount.current = 0;
     if (!anthem) {
       setIsLoadingAudio(false);
       setAudioError("Anthem data not available for this country yet.");
@@ -114,6 +118,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     let cancelled = false;
     setIsLoadingAudio(true);
     setAudioError(null);
+    setAudioUrl(null);
     resolveWikimediaUrl(anthem, countryName)
       .then((url) => { if (!cancelled) { setAudioUrl(url); setIsLoadingAudio(false); } })
       .catch(() => { if (!cancelled) { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); } });
@@ -143,6 +148,21 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     if (audioRef.current) audioRef.current.currentTime = 0;
     setCurrentTime(0);
   }, []);
+
+  const handleAudioError = useCallback(() => {
+    const failedUrl = audioRef.current?.src;
+    if (failedUrl && failedUrl !== window.location.href) triedUrls.current.add(failedUrl);
+    if (!anthem || retryCount.current >= 3) {
+      setAudioError("Playback error — the audio file could not be loaded.");
+      return;
+    }
+    retryCount.current++;
+    setIsLoadingAudio(true);
+    setAudioUrl(null);
+    resolveWikimediaUrl(anthem, countryName, triedUrls.current)
+      .then(url => { setAudioUrl(url); setIsLoadingAudio(false); })
+      .catch(() => { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); });
+  }, [anthem, countryName]);
 
   // Auto-scroll active lyric line into view (centred)
   useEffect(() => {
@@ -242,7 +262,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
               onTimeUpdate={handleTimeUpdate}
               onLoadedMetadata={handleLoadedMetadata}
               onEnded={handleEnded}
-              onError={() => setAudioError("Playback error — the audio file could not be loaded.")}
+              onError={handleAudioError}
               preload="auto"
             />
 
