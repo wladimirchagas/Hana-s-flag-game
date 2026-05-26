@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
@@ -142,6 +142,86 @@ const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
 const WIDTH = 960;
 const HEIGHT = 500;
 
+type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
+
+// Defined at module scope so React.memo() works — component type must be
+// stable across renders. Both components depend only on overlay/polygon data
+// and selection, not on rotationOffset, so they are skipped on every rotation
+// frame and only re-render when the flag data or selection actually changes.
+
+const FlagDefs = memo(function FlagDefs({
+  flagOverlay,
+  flagPolygonsById,
+  geographies,
+}: {
+  flagOverlay: ReadonlyMap<string, string>;
+  flagPolygonsById: Map<string, FlagPoly[]>;
+  geographies: GeoFeature[];
+}) {
+  return (
+    <defs>
+      {geographies.map((geo) => {
+        const alpha2 = toIsoAlpha2(geo.id);
+        if (!alpha2 || !flagOverlay.has(alpha2)) return null;
+        const polys = flagPolygonsById.get(alpha2);
+        if (!polys) return null;
+        return polys.map((poly, i) => (
+          <clipPath
+            key={`fcp-${alpha2}-${i}`}
+            id={`wm-fcp-${alpha2}-${i}`}
+            clipPathUnits="userSpaceOnUse"
+          >
+            <path d={poly.path} />
+          </clipPath>
+        ));
+      })}
+    </defs>
+  );
+});
+
+const FlagImages = memo(function FlagImages({
+  flagOverlay,
+  flagPolygonsById,
+  geographies,
+  selectedCode,
+  highlightCodes,
+}: {
+  flagOverlay: ReadonlyMap<string, string>;
+  flagPolygonsById: Map<string, FlagPoly[]>;
+  geographies: GeoFeature[];
+  selectedCode: string | null;
+  highlightCodes: ReadonlySet<string> | null;
+}) {
+  return (
+    <>
+      {geographies.map((geo) => {
+        const alpha2 = toIsoAlpha2(geo.id);
+        if (!alpha2) return null;
+        const flagUrl = flagOverlay.get(alpha2);
+        if (!flagUrl) return null;
+        const polys = flagPolygonsById.get(alpha2);
+        if (!polys) return null;
+        const isSelected =
+          alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
+        return polys.map((poly, i) => (
+          <image
+            key={`fimg-${alpha2}-${i}`}
+            href={flagUrl}
+            x={poly.x}
+            y={poly.y}
+            width={poly.w}
+            height={poly.h}
+            clipPath={`url(#wm-fcp-${alpha2}-${i})`}
+            preserveAspectRatio="xMidYMid slice"
+            opacity={isSelected ? 0.35 : 1}
+            style={{ pointerEvents: "none" }}
+          />
+        ));
+      })}
+    </>
+  );
+});
+
 function toIsoAlpha2(id: string | number | undefined): string | null {
   if (id === undefined || id === null) return null;
   const numeric = String(id).replace(/\D/g, "");
@@ -257,8 +337,6 @@ export function WorldProgressMap({
       cancelled = true;
     };
   }, []);
-
-  type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
 
   // Hot path — runs on every animation frame. Uses the full animated longitude
   // (centerLongitude + rotationOffset) so country shapes track the rotation.
@@ -486,23 +564,11 @@ export function WorldProgressMap({
               the paths align correctly even when the map is zoomed or
               flipped south-up. */}
           {flagOverlay && (
-            <defs>
-              {geographies.map((geo) => {
-                const alpha2 = toIsoAlpha2(geo.id);
-                if (!alpha2 || !flagOverlay.has(alpha2)) return null;
-                const polys = flagPolygonsById.get(alpha2);
-                if (!polys) return null;
-                return polys.map((poly, i) => (
-                  <clipPath
-                    key={`fcp-${alpha2}-${i}`}
-                    id={`wm-fcp-${alpha2}-${i}`}
-                    clipPathUnits="userSpaceOnUse"
-                  >
-                    <path d={poly.path} />
-                  </clipPath>
-                ));
-              })}
-            </defs>
+            <FlagDefs
+              flagOverlay={flagOverlay}
+              flagPolygonsById={flagPolygonsById}
+              geographies={geographies}
+            />
           )}
           <g transform={zoom.transform}>
           {/* South-up flip happens inside the zoom group so flipping +
@@ -585,33 +651,19 @@ export function WorldProgressMap({
             );
           })}
           {/* Flag images are in base-projection space. The translate shifts
-              them to align with the animated (rotated) country paths. */}
+              them to align with the animated (rotated) country paths.
+              FlagImages is a React.memo component so the ~250 <image>
+              elements are not reconciled on every rotation frame — only the
+              <g> transform attribute is updated. */}
           {flagOverlay && (
             <g transform={flagTranslateX !== 0 ? `translate(${flagTranslateX.toFixed(2)} 0)` : undefined}>
-              {geographies.map((geo) => {
-                const alpha2 = toIsoAlpha2(geo.id);
-                if (!alpha2) return null;
-                const flagUrl = flagOverlay.get(alpha2);
-                if (!flagUrl) return null;
-                const polys = flagPolygonsById.get(alpha2);
-                if (!polys) return null;
-                const isSelected =
-                  alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
-                return polys.map((poly, i) => (
-                  <image
-                    key={`fimg-${alpha2}-${i}`}
-                    href={flagUrl}
-                    x={poly.x}
-                    y={poly.y}
-                    width={poly.w}
-                    height={poly.h}
-                    clipPath={`url(#wm-fcp-${alpha2}-${i})`}
-                    preserveAspectRatio="xMidYMid slice"
-                    opacity={isSelected ? 0.35 : 1}
-                    style={{ pointerEvents: "none" }}
-                  />
-                ));
-              })}
+              <FlagImages
+                flagOverlay={flagOverlay}
+                flagPolygonsById={flagPolygonsById}
+                geographies={geographies}
+                selectedCode={selectedCode}
+                highlightCodes={highlightCodes}
+              />
             </g>
           )}
           </g>
