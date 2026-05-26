@@ -16,23 +16,41 @@ function formatTime(s: number): string {
   return `${m}:${sec.toString().padStart(2, "0")}`;
 }
 
-const AUDIO_EXT = /\.(ogg|oga|flac|mp3|wav)$/i;
-const PLAYABLE_EXT = /\.(ogg|oga|mp3)$/i;
+const AUDIO_EXT = /\.(ogg|oga|flac|mp3|wav|webm)$/i;
 const VOCAL_HINT = /vocal|sung|voice|choral|choir|singing/i;
 const INSTR_HINT = /instrumental|instr\.|orchestra only|without.?vocal/i;
 const API = "https://commons.wikimedia.org/w/api.php";
 
-async function getFileUrl(title: string): Promise<string | null> {
+// Detect what audio formats this browser can actually play (checked once at module load)
+const _probe = typeof Audio !== "undefined" ? new Audio() : null;
+const _supportsOgg = (_probe?.canPlayType("audio/ogg; codecs=vorbis") ?? "") !== "";
+const _supportsWebM = (_probe?.canPlayType("audio/webm; codecs=opus") ?? "") !== "";
+const _supportsMp3 = (_probe?.canPlayType("audio/mpeg") ?? "probably") !== "";
+const _exts = [_supportsOgg && "ogg|oga", _supportsWebM && "webm", _supportsMp3 && "mp3"]
+  .filter(Boolean).join("|") || "mp3";
+const PLAYABLE_EXT = new RegExp(`\\.(${_exts})$`, "i");
+
+type Derivative = { src: string; type?: string };
+
+async function getFileUrl(title: string, exclude?: Set<string>): Promise<string | null> {
   const full = title.startsWith("File:") ? title : `File:${title}`;
-  const res = await fetch(`${API}?action=query&titles=${encodeURIComponent(full)}&prop=imageinfo&iiprop=url&format=json&origin=*`);
+  // videoinfo + derivatives gives us transcoded MP3/WebM versions alongside the original OGG —
+  // essential for Safari which cannot decode OGG Vorbis natively
+  const res = await fetch(
+    `${API}?action=query&titles=${encodeURIComponent(full)}&prop=videoinfo&viprops=url%7Cderivatives&format=json&origin=*`
+  );
   const data = await res.json();
   const pages = data?.query?.pages ?? {};
   const page = Object.values(pages)[0] as Record<string, unknown>;
   if (!page || "missing" in page) return null;
-  const url: string | undefined = (page.imageinfo as { url: string }[])?.[0]?.url;
-  if (!url) return null;
-  // Only return URLs in browser-playable formats; skip FLAC/WAV
-  return PLAYABLE_EXT.test(url) ? url : null;
+  const vi = (page.videoinfo as { url?: string; derivatives?: Derivative[] }[] | undefined)?.[0];
+  if (!vi) return null;
+  // Try transcoded derivatives first (MP3/WebM preferred for cross-browser compat), then original
+  const candidates = [
+    ...(vi.derivatives?.map((d) => d.src) ?? []),
+    ...(vi.url ? [vi.url] : []),
+  ];
+  return candidates.find((url) => url && PLAYABLE_EXT.test(url) && !exclude?.has(url)) ?? null;
 }
 
 async function searchAudio(query: string, preferVocal = true, exclude?: Set<string>): Promise<string | null> {
@@ -55,16 +73,16 @@ async function searchAudio(query: string, preferVocal = true, exclude?: Set<stri
     ...rest,
   ];
   for (const r of ordered.slice(0, 8)) {
-    const url = await getFileUrl(r.title);
-    if (url && !exclude?.has(url)) return url;
+    const url = await getFileUrl(r.title, exclude);
+    if (url) return url;
   }
   return null;
 }
 
 async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, exclude?: Set<string>): Promise<string> {
   // 1. Exact file title
-  const direct = await getFileUrl(anthem.wikiFile);
-  if (direct && !exclude?.has(direct)) return direct;
+  const direct = await getFileUrl(anthem.wikiFile, exclude);
+  if (direct) return direct;
 
   // 2. Explicit wikiSearch override
   if (anthem.wikiSearch) {
