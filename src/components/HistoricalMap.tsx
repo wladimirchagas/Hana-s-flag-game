@@ -83,6 +83,7 @@ const WIDTH = 960;
 const HEIGHT = 500;
 
 type Palette = {
+  ocean: string;
   land: string;
   selected: string;
   selectedStroke: string;
@@ -91,6 +92,7 @@ type Palette = {
 };
 
 const LIGHT_PALETTE: Palette = {
+  ocean: "#b8d4e4",
   land: "#ffd7a8",
   selected: "#4ecdc4",
   selectedStroke: "#1a2238",
@@ -99,6 +101,7 @@ const LIGHT_PALETTE: Palette = {
 };
 
 const DARK_PALETTE: Palette = {
+  ocean: "#1a2d4a",
   land: "#6b4f8c",
   selected: "#74e4dc",
   selectedStroke: "#f4ecd8",
@@ -291,7 +294,7 @@ export const HistoricalMap = memo(function HistoricalMap({
             {spherePath && (
               <path
                 d={spherePath}
-                fill="none"
+                fill={palette.ocean}
                 stroke={palette.stroke}
                 strokeWidth={0.4}
                 strokeOpacity={0.5}

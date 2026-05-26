@@ -233,6 +233,7 @@ function toIsoAlpha2(id: string | number | undefined): string | null {
 }
 
 type MapPalette = {
+  ocean: string;
   unknown: string;
   land: string;
   poolLand: string;
@@ -244,6 +245,7 @@ type MapPalette = {
 };
 
 const LIGHT_PALETTE: MapPalette = {
+  ocean: "#b8d4e4",
   unknown: "#dbe7d6",
   land: "#e8ddc4",
   // Distinctive tint for countries that are part of the game pool but haven't
@@ -258,6 +260,7 @@ const LIGHT_PALETTE: MapPalette = {
 };
 
 const DARK_PALETTE: MapPalette = {
+  ocean: "#1a2d4a",
   unknown: "#2a3358",
   land: "#3a4470",
   poolLand: "#6b4f8c",
@@ -595,7 +598,7 @@ export function WorldProgressMap({
           {spherePath && (
             <path
               d={spherePath}
-              fill="none"
+              fill={palette.ocean}
               stroke={palette.stroke}
               strokeWidth={0.45}
               strokeOpacity={0.55}
