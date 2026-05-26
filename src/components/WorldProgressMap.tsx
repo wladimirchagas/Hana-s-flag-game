@@ -338,19 +338,20 @@ export function WorldProgressMap({
     };
   }, []);
 
-  // Hot path — runs on every animation frame. Uses the full animated longitude
-  // (centerLongitude + rotationOffset) so country shapes track the rotation.
-  const { pathById, spherePath, centroidByAlpha2, flagTranslateX } = useMemo(() => {
+  // Cold path — runs only when geography data or the base meridian changes,
+  // NOT on every animation frame. Path computation (~250 geoPath calls) is
+  // the dominant CPU cost; keeping rotationOffset out of the deps array is
+  // the primary performance fix for the flag-overlay rotation jank.
+  const { pathById, spherePath, centroidByAlpha2, pxPerDegree } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
-      flagTranslateX: 0,
+      pxPerDegree: WIDTH / 360,
     };
     if (geographies.length === 0) return empty;
-    const animLon = centerLongitude + rotationOffset;
     const projection = geoEqualEarth()
-      .rotate([-animLon, 0])
+      .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
@@ -380,19 +381,25 @@ export function WorldProgressMap({
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
 
-    // Compute how far the animated projection has shifted the map vs. the
-    // base projection (no rotationOffset). The flag layer is computed in
-    // base-projection space; this translate keeps it visually aligned with
-    // the animated country paths during rotation. Exact at the equator /
-    // map centre; a good approximation everywhere else.
-    let flagTranslateX = 0;
-    if (rotationOffset !== 0) {
-      const pt = projection([centerLongitude, 0]);
-      if (pt) flagTranslateX = pt[0] - WIDTH / 2;
-    }
+    // Equal Earth is exactly linear in longitude along the equator, so two
+    // equatorial point projections give the exact pixels-per-degree scale
+    // needed to translate the whole map layer during rotation.
+    const p0 = projection([centerLongitude, 0]);
+    const p1 = projection([centerLongitude + 1, 0]);
+    const pxPerDegree = p0 && p1 ? p1[0] - p0[0] : WIDTH / 360;
 
-    return { pathById: paths, spherePath, centroidByAlpha2, flagTranslateX };
-  }, [geographies, centerLongitude, rotationOffset]);
+    return { pathById: paths, spherePath, centroidByAlpha2, pxPerDegree };
+  }, [geographies, centerLongitude]);
+
+  // Hot path — O(1), runs on every animation frame. Translates country paths
+  // AND flag images together via a single <g> transform so they stay aligned
+  // without re-projecting any geometry. The Equal Earth equatorial scale is
+  // exact; polar countries have a small approximation error that is visually
+  // imperceptible at the 6°/s rotation speed used here.
+  const countryTranslateX =
+    pxPerDegree > 0 && rotationOffset !== 0
+      ? -rotationOffset * pxPerDegree
+      : 0;
 
   // Cold path — only reruns when the base meridian or geography data changes,
   // NOT on every animation frame. Keeps the expensive per-polygon decomposition
@@ -514,7 +521,7 @@ export function WorldProgressMap({
   const showPulse = !!(selCentroid && selectedCode && SMALL_NATION_CODES.has(selectedCode));
   const { k: zk, tx: ztx, ty: zty } = zoom.view;
   const pulseX = selCentroid
-    ? selCentroid[0] * zk + ztx
+    ? (selCentroid[0] + countryTranslateX) * zk + ztx
     : 0;
   const pulseY = selCentroid
     ? (southUp ? HEIGHT - selCentroid[1] : selCentroid[1]) * zk + zty
@@ -586,6 +593,19 @@ export function WorldProgressMap({
               vectorEffect="non-scaling-stroke"
             />
           )}
+          {/* Country paths and flag images share one translation group.
+              countryTranslateX is an O(1) scalar — only this <g>'s
+              transform attribute changes on rotation frames. Neither
+              the path <d> attributes nor the memoised FlagImages are
+              reconciled, so 250-path geoPath re-projection no longer
+              runs every frame. */}
+          <g
+            transform={
+              countryTranslateX !== 0
+                ? `translate(${countryTranslateX.toFixed(2)} 0)`
+                : undefined
+            }
+          >
           {geographies.map((geo, idx) => {
             const key = String(geo.id ?? idx);
             const path = pathById.get(String(geo.id ?? ""));
@@ -650,22 +670,18 @@ export function WorldProgressMap({
               </path>
             );
           })}
-          {/* Flag images are in base-projection space. The translate shifts
-              them to align with the animated (rotated) country paths.
-              FlagImages is a React.memo component so the ~250 <image>
-              elements are not reconciled on every rotation frame — only the
-              <g> transform attribute is updated. */}
+          {/* FlagImages is React.memo'd — only re-renders when overlay /
+              polygon data or selection changes, not on rotation frames. */}
           {flagOverlay && (
-            <g transform={flagTranslateX !== 0 ? `translate(${flagTranslateX.toFixed(2)} 0)` : undefined}>
-              <FlagImages
-                flagOverlay={flagOverlay}
-                flagPolygonsById={flagPolygonsById}
-                geographies={geographies}
-                selectedCode={selectedCode}
-                highlightCodes={highlightCodes}
-              />
-            </g>
+            <FlagImages
+              flagOverlay={flagOverlay}
+              flagPolygonsById={flagPolygonsById}
+              geographies={geographies}
+              selectedCode={selectedCode}
+              highlightCodes={highlightCodes}
+            />
           )}
+          </g>
           </g>
           </g>
           {/* Pulse indicator — outside the zoom group so its pixel size
