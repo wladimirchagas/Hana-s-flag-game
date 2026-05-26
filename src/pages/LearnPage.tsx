@@ -438,12 +438,6 @@ export default function LearnPage() {
     return m;
   }, [isModernEra, showFlagMap, flagEntries, baseUrl]);
 
-  // The modern globe uses the full animated longitude (cheap TopoJSON reprojection).
-  // Historical maps only get the base meridian — their GeoJSON files are up to 14 MB,
-  // so reprojecting on every rotation tick would be far too expensive. Historical maps
-  // are snapshots in time; the user can pan via the preset control.
-  const effectiveLongitude = mapView.centerLongitude + rotationOffset;
-
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
   // component is not bypassed when unrelated state (selected, hovered, …)
   // changes. The deps match what selectionFromPolityName reads from closure.
@@ -573,7 +567,8 @@ export default function LearnPage() {
               },
             }}
             zoom={sharedZoom}
-            centerLongitude={effectiveLongitude}
+            centerLongitude={mapView.centerLongitude}
+            rotationOffset={rotationOffset}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
             showFlagOverlay={showFlagMap}
