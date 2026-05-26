@@ -450,6 +450,33 @@ export function WorldProgressMap({
             touchAction: zoom.isZoomed ? "none" : "auto",
           }}
         >
+          {/* Flag clip paths live at SVG root — outside all transforms.
+              Safari has a bug where it applies parent group transforms to
+              <defs> content (clipPath / pattern) when <defs> is nested
+              inside a transformed <g>. Placing <defs> here avoids that.
+              clipPathUnits="userSpaceOnUse" means the clip coordinates are
+              interpreted in the referencing element's coordinate system, so
+              the paths align correctly even when the map is zoomed or
+              flipped south-up. */}
+          {showFlagOverlay && (
+            <defs>
+              {geographies.map((geo) => {
+                const alpha2 = toIsoAlpha2(geo.id);
+                if (!alpha2) return null;
+                const polys = flagPolygonsById.get(alpha2);
+                if (!polys) return null;
+                return polys.map((poly, i) => (
+                  <clipPath
+                    key={`fcp-${alpha2}-${i}`}
+                    id={`wm-fcp-${alpha2}-${i}`}
+                    clipPathUnits="userSpaceOnUse"
+                  >
+                    <path d={poly.path} />
+                  </clipPath>
+                ));
+              })}
+            </defs>
+          )}
           <g transform={zoom.transform}>
           {/* South-up flip happens inside the zoom group so flipping +
               zooming compose correctly. See HistoricalMap for details. */}
@@ -465,37 +492,6 @@ export function WorldProgressMap({
               strokeOpacity={0.55}
               vectorEffect="non-scaling-stroke"
             />
-          )}
-          {showFlagOverlay && (
-            <defs>
-              {geographies.map((geo) => {
-                const alpha2 = toIsoAlpha2(geo.id);
-                if (!alpha2) return null;
-                const polys = flagPolygonsById.get(alpha2);
-                if (!polys) return null;
-                const flagUrl = `https://flagcdn.com/${alpha2.toLowerCase()}.svg`;
-                return polys.map((poly, i) => (
-                  <pattern
-                    key={`fpat-${alpha2}-${i}`}
-                    id={`wm-fpat-${alpha2}-${i}`}
-                    patternUnits="userSpaceOnUse"
-                    x={poly.x}
-                    y={poly.y}
-                    width={poly.w}
-                    height={poly.h}
-                  >
-                    <image
-                      href={flagUrl}
-                      x={poly.x}
-                      y={poly.y}
-                      width={poly.w}
-                      height={poly.h}
-                      preserveAspectRatio="xMidYMid slice"
-                    />
-                  </pattern>
-                ));
-              })}
-            </defs>
           )}
           {geographies.map((geo, idx) => {
             const key = String(geo.id ?? idx);
@@ -568,12 +564,17 @@ export function WorldProgressMap({
             if (!polys) return null;
             const isSelected =
               alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
+            const flagUrl = `https://flagcdn.com/w1280/${alpha2.toLowerCase()}.png`;
             return polys.map((poly, i) => (
-              <path
-                key={`fpoly-${alpha2}-${i}`}
-                d={poly.path}
-                fill={`url(#wm-fpat-${alpha2}-${i})`}
-                stroke="none"
+              <image
+                key={`fimg-${alpha2}-${i}`}
+                href={flagUrl}
+                x={poly.x}
+                y={poly.y}
+                width={poly.w}
+                height={poly.h}
+                clipPath={`url(#wm-fcp-${alpha2}-${i})`}
+                preserveAspectRatio="xMidYMid slice"
                 opacity={isSelected ? 0.35 : 1}
                 style={{ pointerEvents: "none" }}
               />
