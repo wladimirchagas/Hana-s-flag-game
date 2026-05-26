@@ -123,6 +123,11 @@ type Props = {
   /** User-chosen central meridian (longitude). 0 = Atlantic / Greenwich
    *  default; 180 = Pacific; -95 = Americas; etc. */
   centerLongitude?: number;
+  /** Animation rotation offset added on top of centerLongitude. Kept
+   *  separate so flag-polygon computation (expensive) can depend only on
+   *  the stable centerLongitude, while path rendering uses the full
+   *  centerLongitude + rotationOffset on every animation frame. */
+  rotationOffset?: number;
   /** When true, the rendered map is flipped vertically — south at the top. */
   southUp?: boolean;
   /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
@@ -218,6 +223,7 @@ export function WorldProgressMap({
   disabled = false,
   zoom: externalZoom,
   centerLongitude = 0,
+  rotationOffset = 0,
   southUp = false,
   extraControls,
   showFlagOverlay = false,
@@ -252,28 +258,23 @@ export function WorldProgressMap({
 
   type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
 
-  const { pathById, spherePath, centroidByAlpha2, flagPolygonsById } = useMemo(() => {
+  // Hot path — runs on every animation frame. Uses the full animated longitude
+  // (centerLongitude + rotationOffset) so country shapes track the rotation.
+  const { pathById, spherePath, centroidByAlpha2, flagTranslateX } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
-      flagPolygonsById: new Map<string, FlagPoly[]>(),
+      flagTranslateX: 0,
     };
     if (geographies.length === 0) return empty;
-    // Fit to the sphere (not just the countries) so the sphere outline
-    // exactly fills the viewBox — fitting to countries leaves the sphere
-    // slightly wider than the viewBox, causing SVG clipping at the edges.
+    const animLon = centerLongitude + rotationOffset;
     const projection = geoEqualEarth()
-      .rotate([-centerLongitude, 0])
+      .rotate([-animLon, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     const centroidByAlpha2 = new Map<string, [number, number]>();
-    // Per-polygon paths+bounds for flag overlay. Countries with MultiPolygon
-    // geometry (France, USA, Russia, …) are decomposed into individual polygons
-    // so each territory gets a flag image sized to its own bounding box rather
-    // than the overall bounding box that spans all non-contiguous pieces.
-    const flagPolygonsById = new Map<string, FlagPoly[]>();
 
     for (const geo of geographies) {
       const path = mapPath(geo as never);
@@ -281,38 +282,13 @@ export function WorldProgressMap({
 
       const alpha2 = toIsoAlpha2(geo.id);
       if (alpha2) {
-        // Centroid in SVG viewBox coordinates (after projection).
         const c = mapPath.centroid(geo as never);
         if (c && isFinite(c[0]) && isFinite(c[1])) {
           centroidByAlpha2.set(alpha2, [c[0], c[1]]);
         }
-
-        // Decompose geometry into individual Polygon coordinate arrays so
-        // each non-contiguous piece gets its own correctly-sized image.
-        const geom = geo.geometry as { type: string; coordinates: unknown } | null;
-        if (geom) {
-          const rings: unknown[] =
-            geom.type === "Polygon"
-              ? [geom.coordinates]
-              : geom.type === "MultiPolygon"
-                ? (geom.coordinates as unknown[])
-                : [];
-          const polys: FlagPoly[] = [];
-          for (const coords of rings) {
-            const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
-            const pd = mapPath(pf as never);
-            if (!pd) continue;
-            const b = mapPath.bounds(pf as never);
-            if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
-              polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
-            }
-          }
-          if (polys.length > 0) flagPolygonsById.set(alpha2, polys);
-        }
       }
     }
 
-    // Inject fallback centroids for micro-states absent from the 110m dataset.
     for (const [code, lonLat] of Object.entries(MICRO_STATE_COORDS)) {
       if (!centroidByAlpha2.has(code)) {
         const pt = projection(lonLat as [number, number]);
@@ -323,7 +299,56 @@ export function WorldProgressMap({
     }
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
-    return { pathById: paths, spherePath, centroidByAlpha2, flagPolygonsById };
+
+    // Compute how far the animated projection has shifted the map vs. the
+    // base projection (no rotationOffset). The flag layer is computed in
+    // base-projection space; this translate keeps it visually aligned with
+    // the animated country paths during rotation. Exact at the equator /
+    // map centre; a good approximation everywhere else.
+    let flagTranslateX = 0;
+    if (rotationOffset !== 0) {
+      const pt = projection([centerLongitude, 0]);
+      if (pt) flagTranslateX = pt[0] - WIDTH / 2;
+    }
+
+    return { pathById: paths, spherePath, centroidByAlpha2, flagTranslateX };
+  }, [geographies, centerLongitude, rotationOffset]);
+
+  // Cold path — only reruns when the base meridian or geography data changes,
+  // NOT on every animation frame. Keeps the expensive per-polygon decomposition
+  // out of the hot render path so globe rotation stays smooth with flag overlay on.
+  const flagPolygonsById = useMemo(() => {
+    const result = new Map<string, FlagPoly[]>();
+    if (geographies.length === 0) return result;
+    const projection = geoEqualEarth()
+      .rotate([-centerLongitude, 0])
+      .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
+    const mapPath = geoPath(projection);
+
+    for (const geo of geographies) {
+      const alpha2 = toIsoAlpha2(geo.id);
+      if (!alpha2) continue;
+      const geom = geo.geometry as { type: string; coordinates: unknown } | null;
+      if (!geom) continue;
+      const rings: unknown[] =
+        geom.type === "Polygon"
+          ? [geom.coordinates]
+          : geom.type === "MultiPolygon"
+            ? (geom.coordinates as unknown[])
+            : [];
+      const polys: FlagPoly[] = [];
+      for (const coords of rings) {
+        const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
+        const pd = mapPath(pf as never);
+        if (!pd) continue;
+        const b = mapPath.bounds(pf as never);
+        if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
+          polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
+        }
+      }
+      if (polys.length > 0) result.set(alpha2, polys);
+    }
+    return result;
   }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
@@ -557,29 +582,35 @@ export function WorldProgressMap({
               </path>
             );
           })}
-          {showFlagOverlay && geographies.map((geo) => {
-            const alpha2 = toIsoAlpha2(geo.id);
-            if (!alpha2) return null;
-            const polys = flagPolygonsById.get(alpha2);
-            if (!polys) return null;
-            const isSelected =
-              alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
-            const flagUrl = `https://flagcdn.com/w1280/${alpha2.toLowerCase()}.png`;
-            return polys.map((poly, i) => (
-              <image
-                key={`fimg-${alpha2}-${i}`}
-                href={flagUrl}
-                x={poly.x}
-                y={poly.y}
-                width={poly.w}
-                height={poly.h}
-                clipPath={`url(#wm-fcp-${alpha2}-${i})`}
-                preserveAspectRatio="xMidYMid slice"
-                opacity={isSelected ? 0.35 : 1}
-                style={{ pointerEvents: "none" }}
-              />
-            ));
-          })}
+          {/* Flag images are in base-projection space. The translate shifts
+              them to align with the animated (rotated) country paths. */}
+          {showFlagOverlay && (
+            <g transform={flagTranslateX !== 0 ? `translate(${flagTranslateX.toFixed(2)} 0)` : undefined}>
+              {geographies.map((geo) => {
+                const alpha2 = toIsoAlpha2(geo.id);
+                if (!alpha2) return null;
+                const polys = flagPolygonsById.get(alpha2);
+                if (!polys) return null;
+                const isSelected =
+                  alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
+                const flagUrl = `https://flagcdn.com/w1280/${alpha2.toLowerCase()}.png`;
+                return polys.map((poly, i) => (
+                  <image
+                    key={`fimg-${alpha2}-${i}`}
+                    href={flagUrl}
+                    x={poly.x}
+                    y={poly.y}
+                    width={poly.w}
+                    height={poly.h}
+                    clipPath={`url(#wm-fcp-${alpha2}-${i})`}
+                    preserveAspectRatio="xMidYMid slice"
+                    opacity={isSelected ? 0.35 : 1}
+                    style={{ pointerEvents: "none" }}
+                  />
+                ));
+              })}
+            </g>
+          )}
           </g>
           </g>
           {/* Pulse indicator — outside the zoom group so its pixel size
