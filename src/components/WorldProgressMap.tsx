@@ -338,14 +338,15 @@ export function WorldProgressMap({
     };
   }, []);
 
-  // Hot path — runs on every animation frame. Uses the full animated longitude
-  // (centerLongitude + rotationOffset) so country shapes track the rotation.
-  const { pathById, spherePath, centroidByAlpha2, flagTranslateX } = useMemo(() => {
+  // Runs on every animation frame. Uses the full animated longitude so country
+  // shapes AND flag clip paths both use the identical projection — no separate
+  // translation needed to compensate for rotation offset.
+  const { pathById, spherePath, centroidByAlpha2, flagPolygonsById } = useMemo(() => {
     const empty = {
       pathById: new Map<string, string>(),
       spherePath: null,
       centroidByAlpha2: new Map<string, [number, number]>(),
-      flagTranslateX: 0,
+      flagPolygonsById: new Map<string, FlagPoly[]>(),
     };
     if (geographies.length === 0) return empty;
     const animLon = centerLongitude + rotationOffset;
@@ -355,6 +356,7 @@ export function WorldProgressMap({
     const mapPath = geoPath(projection);
     const paths = new Map<string, string>();
     const centroidByAlpha2 = new Map<string, [number, number]>();
+    const flagPolygonsById = new Map<string, FlagPoly[]>();
 
     for (const geo of geographies) {
       const path = mapPath(geo as never);
@@ -365,6 +367,30 @@ export function WorldProgressMap({
         const c = mapPath.centroid(geo as never);
         if (c && isFinite(c[0]) && isFinite(c[1])) {
           centroidByAlpha2.set(alpha2, [c[0], c[1]]);
+        }
+
+        // Flag overlay: decompose MultiPolygon into individual rings so each
+        // island/territory gets its own clip path + image, all in the same
+        // projection as the country paths — guarantees exact alignment.
+        const geom = geo.geometry as { type: string; coordinates: unknown } | null;
+        if (geom) {
+          const rings: unknown[] =
+            geom.type === "Polygon"
+              ? [geom.coordinates]
+              : geom.type === "MultiPolygon"
+                ? (geom.coordinates as unknown[])
+                : [];
+          const polys: FlagPoly[] = [];
+          for (const coords of rings) {
+            const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
+            const pd = mapPath(pf as never);
+            if (!pd) continue;
+            const b = mapPath.bounds(pf as never);
+            if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
+              polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
+            }
+          }
+          if (polys.length > 0) flagPolygonsById.set(alpha2, polys);
         }
       }
     }
@@ -380,56 +406,8 @@ export function WorldProgressMap({
 
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
 
-    // Compute how far the animated projection has shifted the map vs. the
-    // base projection (no rotationOffset). The flag layer is computed in
-    // base-projection space; this translate keeps it visually aligned with
-    // the animated country paths during rotation. Exact at the equator /
-    // map centre; a good approximation everywhere else.
-    let flagTranslateX = 0;
-    if (rotationOffset !== 0) {
-      const pt = projection([centerLongitude, 0]);
-      if (pt) flagTranslateX = pt[0] - WIDTH / 2;
-    }
-
-    return { pathById: paths, spherePath, centroidByAlpha2, flagTranslateX };
+    return { pathById: paths, spherePath, centroidByAlpha2, flagPolygonsById };
   }, [geographies, centerLongitude, rotationOffset]);
-
-  // Cold path — only reruns when the base meridian or geography data changes,
-  // NOT on every animation frame. Keeps the expensive per-polygon decomposition
-  // out of the hot render path so globe rotation stays smooth with flag overlay on.
-  const flagPolygonsById = useMemo(() => {
-    const result = new Map<string, FlagPoly[]>();
-    if (geographies.length === 0) return result;
-    const projection = geoEqualEarth()
-      .rotate([-centerLongitude, 0])
-      .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
-    const mapPath = geoPath(projection);
-
-    for (const geo of geographies) {
-      const alpha2 = toIsoAlpha2(geo.id);
-      if (!alpha2) continue;
-      const geom = geo.geometry as { type: string; coordinates: unknown } | null;
-      if (!geom) continue;
-      const rings: unknown[] =
-        geom.type === "Polygon"
-          ? [geom.coordinates]
-          : geom.type === "MultiPolygon"
-            ? (geom.coordinates as unknown[])
-            : [];
-      const polys: FlagPoly[] = [];
-      for (const coords of rings) {
-        const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
-        const pd = mapPath(pf as never);
-        if (!pd) continue;
-        const b = mapPath.bounds(pf as never);
-        if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
-          polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
-        }
-      }
-      if (polys.length > 0) result.set(alpha2, polys);
-    }
-    return result;
-  }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
@@ -650,21 +628,14 @@ export function WorldProgressMap({
               </path>
             );
           })}
-          {/* Flag images are in base-projection space. The translate shifts
-              them to align with the animated (rotated) country paths.
-              FlagImages is a React.memo component so the ~250 <image>
-              elements are not reconciled on every rotation frame — only the
-              <g> transform attribute is updated. */}
           {flagOverlay && (
-            <g transform={flagTranslateX !== 0 ? `translate(${flagTranslateX.toFixed(2)} 0)` : undefined}>
-              <FlagImages
-                flagOverlay={flagOverlay}
-                flagPolygonsById={flagPolygonsById}
-                geographies={geographies}
-                selectedCode={selectedCode}
-                highlightCodes={highlightCodes}
-              />
-            </g>
+            <FlagImages
+              flagOverlay={flagOverlay}
+              flagPolygonsById={flagPolygonsById}
+              geographies={geographies}
+              selectedCode={selectedCode}
+              highlightCodes={highlightCodes}
+            />
           )}
           </g>
           </g>
