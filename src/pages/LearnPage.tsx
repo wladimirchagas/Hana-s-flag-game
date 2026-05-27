@@ -113,8 +113,8 @@ export default function LearnPage() {
   // Globe rotation — shared across both map back-ends so switching eras
   // doesn't stop the spin or lose the pause state.
   const [rotationOffset, setRotationOffset] = useState(0);
-  const [isRotating, setIsRotating] = useState(true);
-  const isRotatingRef = useRef(true);
+  const [isRotating, setIsRotating] = useState(false);
+  const isRotatingRef = useRef(false);
   isRotatingRef.current = isRotating;
   const southUpForRotRef = useRef(mapView.southUp);
   southUpForRotRef.current = mapView.southUp;
