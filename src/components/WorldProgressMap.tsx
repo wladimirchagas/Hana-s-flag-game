@@ -424,7 +424,12 @@ export function WorldProgressMap({
           const pd = mapPath(pf as never);
           if (!pd) continue;
           const b = mapPath.bounds(pf as never);
-          if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
+          // Skip antimeridian-crossing polygon rings: when such a ring is
+          // projected it gains a "sphere cap" segment that makes the bounding
+          // box nearly as wide as the whole map.  Russia's mainland is ~400 px,
+          // USA's continental is ~350 px — 75 % of the map width is a safe cap.
+          const MAX_W = WIDTH * 0.75;
+          if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1] && (b[1][0] - b[0][0]) < MAX_W) {
             polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
           }
         }
