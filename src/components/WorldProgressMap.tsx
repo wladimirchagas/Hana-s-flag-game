@@ -138,7 +138,7 @@ type Props = {
   flagOverlay?: ReadonlyMap<string, string> | null;
 };
 
-const GEO_URL = `${import.meta.env.BASE_URL}countries-10m.json`;
+const GEO_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 const WIDTH = 960;
 const HEIGHT = 500;
 
