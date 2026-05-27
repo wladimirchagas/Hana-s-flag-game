@@ -1,5 +1,5 @@
 import { memo, useEffect, useMemo, useRef, useState } from "react";
-import { geoEqualEarth, geoPath } from "d3-geo";
+import { geoEqualEarth, geoPath, geoCentroid } from "d3-geo";
 import { feature } from "topojson-client";
 import countries from "i18n-iso-countries";
 import { useTheme } from "../context/ThemeContext";
@@ -424,14 +424,28 @@ export function WorldProgressMap({
           const pd = mapPath(pf as never);
           if (!pd) continue;
           const b = mapPath.bounds(pf as never);
-          // Skip antimeridian-crossing polygon rings: when such a ring is
-          // projected it gains a "sphere cap" segment that makes the bounding
-          // box nearly as wide as the whole map.  Russia's mainland is ~400 px,
-          // USA's continental is ~350 px — 75 % of the map width is a safe cap.
-          const MAX_W = WIDTH * 0.75;
-          if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1] && (b[1][0] - b[0][0]) < MAX_W) {
-            polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
-          }
+          if (!b || !isFinite(b[0][0]) || !isFinite(b[1][0])) continue;
+          const bw = b[1][0] - b[0][0];
+          const bh = b[1][1] - b[0][1];
+          if (bw <= 0 || bh <= 0) continue;
+          // Antimeridian-crossing tiny rings (e.g. USA Aleutians, Russia's
+          // Chukotka) get a D3 sphere-cap closure segment that is very wide but
+          // very short → high width/height ratio. Large country mainlands that
+          // touch the sphere edge also get a sphere-cap, but it spans the full
+          // map height too, keeping the ratio close to the map's own ~1.9:1.
+          // Filtering on ratio > 8 skips tiny island-chain artifacts without
+          // rejecting Canada, USA, or Russia when they approach the sphere edge.
+          if (bw / bh > 8) continue;
+          // Use the geographic centroid projected into the current (animated)
+          // view for image positioning — immune to sphere-cap distortion.
+          // Size the image from bbox height (height is unaffected by the
+          // horizontal sphere-cap segment) with a 3:2 flag aspect ratio.
+          const geoC = geoCentroid(pf as never);
+          const svgC = projection(geoC);
+          if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
+          const imgH = Math.max(bh, 20);
+          const imgW = imgH * 1.5;
+          polys.push({ path: pd, x: svgC[0] - imgW / 2, y: svgC[1] - imgH / 2, w: imgW, h: imgH });
         }
         if (polys.length > 0) {
           const existing = flagPolys.get(alpha2);
