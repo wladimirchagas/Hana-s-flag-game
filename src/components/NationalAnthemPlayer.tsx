@@ -19,24 +19,26 @@ function formatTime(s: number): string {
 const AUDIO_EXT = /\.(ogg|oga|flac|mp3|wav|webm)$/i;
 const VOCAL_HINT = /vocal|sung|voice|choral|choir|singing/i;
 const INSTR_HINT = /instrumental|instr\.|orchestra only|without.?vocal/i;
+const OGG_EXT = /\.(ogg|oga)$/i;
 const API = "https://commons.wikimedia.org/w/api.php";
 
-// Detect what audio formats this browser can actually play (checked once at module load)
+// Detect native OGG Vorbis support (absent on Safari / all iOS browsers)
 const _probe = typeof Audio !== "undefined" ? new Audio() : null;
 const _supportsOgg = (_probe?.canPlayType("audio/ogg; codecs=vorbis") ?? "") !== "";
 const _supportsWebM = (_probe?.canPlayType("audio/webm; codecs=opus") ?? "") !== "";
 const _supportsMp3 = (_probe?.canPlayType("audio/mpeg") ?? "probably") !== "";
-const _exts = [_supportsOgg && "ogg|oga", _supportsWebM && "webm", _supportsMp3 && "mp3"]
+
+// Formats the native <audio> element can play. OGG is excluded on Safari.
+const _nativeExts = [_supportsOgg && "ogg|oga", _supportsWebM && "webm", _supportsMp3 && "mp3"]
   .filter(Boolean).join("|") || "mp3";
-const PLAYABLE_EXT = new RegExp(`\\.(${_exts})$`, "i");
+const NATIVE_EXT = new RegExp(`\\.(${_nativeExts})$`, "i");
 
 type Derivative = { src: string; type?: string };
 
-// Check if a derivative is playable using both URL extension and MIME type.
-// Wikimedia derivatives sometimes have unconventional URL paths but correct MIME types.
-function isPlayableDerivative(d: Derivative, exclude?: Set<string>): boolean {
+// Is this derivative natively playable? Checks URL extension AND MIME type.
+function isNativeDerivative(d: Derivative, exclude?: Set<string>): boolean {
   if (exclude?.has(d.src)) return false;
-  if (PLAYABLE_EXT.test(d.src)) return true;
+  if (NATIVE_EXT.test(d.src)) return true;
   if (!d.type) return false;
   if (_supportsMp3 && /audio\/mpeg|audio\/mp3/i.test(d.type)) return true;
   if (_supportsWebM && /audio\/webm|video\/webm/i.test(d.type)) return true;
@@ -46,8 +48,6 @@ function isPlayableDerivative(d: Derivative, exclude?: Set<string>): boolean {
 
 async function getFileUrl(title: string, exclude?: Set<string>): Promise<string | null> {
   const full = title.startsWith("File:") ? title : `File:${title}`;
-  // videoinfo + derivatives gives us transcoded MP3/WebM versions alongside the original OGG —
-  // essential for Safari which cannot decode OGG Vorbis natively
   const res = await fetch(
     `${API}?action=query&titles=${encodeURIComponent(full)}&prop=videoinfo&viprops=url%7Cderivatives&format=json&origin=*`
   );
@@ -57,58 +57,49 @@ async function getFileUrl(title: string, exclude?: Set<string>): Promise<string 
   if (!page || "missing" in page) return null;
   const vi = (page.videoinfo as { url?: string; derivatives?: Derivative[] }[] | undefined)?.[0];
   if (!vi) return null;
-  // Prefer transcoded derivatives (checked by both URL extension and MIME type), then original
-  const derivative = vi.derivatives?.find((d) => isPlayableDerivative(d, exclude));
-  if (derivative) return derivative.src;
-  if (vi.url && PLAYABLE_EXT.test(vi.url) && !exclude?.has(vi.url)) return vi.url;
-  return null;
-}
 
-// Try MP3 variant of an OGG filename on Wikimedia Commons.
-// Many national anthem files exist as both .ogg and .mp3 uploads.
-async function tryMp3Variant(oggTitle: string, exclude?: Set<string>): Promise<string | null> {
-  if (_supportsOgg || !/\.(ogg|oga)$/i.test(oggTitle)) return null;
-  const mp3Title = oggTitle.replace(/\.(ogg|oga)$/i, ".mp3");
-  return getFileUrl(mp3Title, exclude);
+  // 1. Prefer a natively playable derivative (MP3/WebM transcodes on Wikimedia)
+  const bestDerivative = vi.derivatives?.find((d) => isNativeDerivative(d, exclude));
+  if (bestDerivative) return bestDerivative.src;
+
+  // 2. Original URL if natively playable
+  if (vi.url && NATIVE_EXT.test(vi.url) && !exclude?.has(vi.url)) return vi.url;
+
+  // 3. Any audio URL — ogv.js will handle OGG on Safari
+  if (vi.url && AUDIO_EXT.test(vi.url) && !exclude?.has(vi.url)) return vi.url;
+
+  return null;
 }
 
 async function searchAudio(query: string, preferVocal = true, exclude?: Set<string>): Promise<string | null> {
   const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=12&srprop=title&format=json&origin=*`);
   const data = await res.json();
   const results: { title: string }[] = data?.query?.search ?? [];
-  const playable = results.filter(r => PLAYABLE_EXT.test(r.title));
-  const nonPlayable = results.filter(r => AUDIO_EXT.test(r.title) && !PLAYABLE_EXT.test(r.title));
-  const rest = results.filter(r => !AUDIO_EXT.test(r.title));
-  // When preferVocal: sort results — vocal-hinted first, then neutral, then instrumental-hinted
-  const ordered = preferVocal ? [
-    ...playable.filter(r => VOCAL_HINT.test(r.title)),
-    ...playable.filter(r => !VOCAL_HINT.test(r.title) && !INSTR_HINT.test(r.title)),
-    ...playable.filter(r => INSTR_HINT.test(r.title)),
-    ...nonPlayable,
-    ...rest,
-  ] : [
-    ...playable,
-    ...nonPlayable,
-    ...rest,
-  ];
+
+  // Sort: natively playable > OGG (will use ogv.js) > other, with vocal preference
+  const native = results.filter(r => NATIVE_EXT.test(r.title));
+  const oggFiles = results.filter(r => OGG_EXT.test(r.title));
+  const other = results.filter(r => AUDIO_EXT.test(r.title) && !NATIVE_EXT.test(r.title) && !OGG_EXT.test(r.title));
+
+  const sortByVocal = (arr: typeof results) => preferVocal ? [
+    ...arr.filter(r => VOCAL_HINT.test(r.title)),
+    ...arr.filter(r => !VOCAL_HINT.test(r.title) && !INSTR_HINT.test(r.title)),
+    ...arr.filter(r => INSTR_HINT.test(r.title)),
+  ] : arr;
+
+  const ordered = [...sortByVocal(native), ...sortByVocal(oggFiles), ...other];
+
   for (const r of ordered.slice(0, 8)) {
     const url = await getFileUrl(r.title, exclude);
     if (url) return url;
-    // For OGG results on Safari, also try the MP3 variant of the same file
-    const mp3Url = await tryMp3Variant(r.title, exclude);
-    if (mp3Url) return mp3Url;
   }
   return null;
 }
 
 async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, exclude?: Set<string>): Promise<string> {
-  // 1. Exact file title
+  // 1. Exact file from data
   const direct = await getFileUrl(anthem.wikiFile, exclude);
   if (direct) return direct;
-
-  // 1b. On Safari (no OGG support), try the MP3 variant of the same Wikimedia file
-  const directMp3 = await tryMp3Variant(anthem.wikiFile, exclude);
-  if (directMp3) return directMp3;
 
   // 2. Explicit wikiSearch override
   if (anthem.wikiSearch) {
@@ -116,15 +107,15 @@ async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, excl
     if (url) return url;
   }
 
-  // 3. "national anthem [country] vocal" — prefer sung versions
+  // 3. "national anthem [country] vocal"
   const url3v = await searchAudio(`national anthem ${countryName} vocal`, true, exclude);
   if (url3v) return url3v;
 
-  // 4. "national anthem [country]" — broader fallback
-  const url3 = await searchAudio(`national anthem ${countryName}`, true, exclude);
-  if (url3) return url3;
+  // 4. "national anthem [country]"
+  const url4 = await searchAudio(`national anthem ${countryName}`, true, exclude);
+  if (url4) return url4;
 
-  // 5. English anthem title
+  // 5. Anthem title
   const title = anthem.titleEn ?? anthem.title;
   const url5 = await searchAudio(title, true, exclude);
   if (url5) return url5;
@@ -132,25 +123,74 @@ async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, excl
   throw new Error("No audio found");
 }
 
+// ── OGV.js loader ──────────────────────────────────────────────────────────
+// ogv.js decodes OGG Vorbis in pure JS/WASM, enabling Safari to play OGG.
+// Loaded lazily only when needed (OGG URL + Safari).
+
+type OGVPlayerLike = {
+  src: string;
+  currentTime: number;
+  readonly duration: number;
+  play(): Promise<void>;
+  pause(): void;
+  addEventListener(type: string, handler: EventListener): void;
+  removeEventListener(type: string, handler: EventListener): void;
+};
+
+let _ogvPromise: Promise<(new () => OGVPlayerLike) | null> | null = null;
+
+function loadOgvPlayer(base: string): Promise<(new () => OGVPlayerLike) | null> {
+  if (_ogvPromise) return _ogvPromise;
+  _ogvPromise = new Promise((resolve) => {
+    try {
+      const script = document.createElement("script");
+      script.src = `${base}ogv.js`;
+      script.onload = () => {
+        try {
+          const w = window as unknown as Record<string, unknown>;
+          if (w.OGVLoader) (w.OGVLoader as { base: string }).base = base;
+          resolve(w.OGVPlayer as (new () => OGVPlayerLike));
+        } catch {
+          resolve(null);
+        }
+      };
+      script.onerror = () => resolve(null);
+      document.head.appendChild(script);
+    } catch {
+      resolve(null);
+    }
+  });
+  return _ogvPromise;
+}
+
+// ── Component ───────────────────────────────────────────────────────────────
+
 export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClose }: Props) {
   const anthem: AnthemData | undefined = NATIONAL_ANTHEMS[countryCode];
 
+  // Native <audio> element ref (used when URL is MP3/WebM)
   const audioRef = useRef<HTMLAudioElement>(null);
+  // OGV player instance ref (used when URL is OGG and browser can't play it natively)
+  const ogvRef = useRef<OGVPlayerLike | null>(null);
   const lyricsRef = useRef<HTMLDivElement>(null);
-  const progressRef = useRef<HTMLDivElement>(null);
   const triedUrls = useRef<Set<string>>(new Set());
   const retryCount = useRef(0);
 
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isLoadingAudio, setIsLoadingAudio] = useState(true);
   const [audioError, setAudioError] = useState<string | null>(null);
+  // true while ogv.js is loading or the OGV player is initialising
+  const [ogvLoading, setOgvLoading] = useState(false);
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [activeLine, setActiveLine] = useState(-1);
 
-  // Fetch audio URL from Wikimedia Commons
+  // Determine whether we'll need ogv.js for the current URL
+  const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
+
+  // ── Fetch audio URL from Wikimedia ──────────────────────────────────────
   useEffect(() => {
     triedUrls.current = new Set();
     retryCount.current = 0;
@@ -169,6 +209,89 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     return () => { cancelled = true; };
   }, [anthem, countryName]);
 
+  // ── Wire up OGV player when URL needs it ────────────────────────────────
+  useEffect(() => {
+    if (!audioUrl || !needsOgv) return;
+    let cancelled = false;
+    setOgvLoading(true);
+
+    const base = `${import.meta.env.BASE_URL}ogv/`;
+    loadOgvPlayer(base).then((OGVPlayer) => {
+      if (cancelled) return;
+      if (!OGVPlayer) {
+        setAudioError("Playback not supported in this browser.");
+        setOgvLoading(false);
+        return;
+      }
+      const player = new OGVPlayer();
+      ogvRef.current = player;
+
+      const onTimeUpdate = () => {
+        const t = player.currentTime;
+        setCurrentTime(t);
+        if (!anthem?.lines) return;
+        let next = -1;
+        for (let i = anthem.lines.length - 1; i >= 0; i--) {
+          if (t >= anthem.lines[i].start) { next = i; break; }
+        }
+        setActiveLine(next);
+      };
+      const onLoadedMetadata = () => {
+        setDuration(player.duration);
+        setOgvLoading(false);
+      };
+      const onEnded = () => {
+        setIsPlaying(false);
+        setActiveLine(-1);
+        player.currentTime = 0;
+        setCurrentTime(0);
+      };
+      const onError = () => {
+        const failedUrl = player.src;
+        if (failedUrl) triedUrls.current.add(failedUrl);
+        if (!anthem || retryCount.current >= 3) {
+          setAudioError("Playback error — the audio file could not be loaded.");
+          setOgvLoading(false);
+          return;
+        }
+        retryCount.current++;
+        setOgvLoading(true);
+        resolveWikimediaUrl(anthem, countryName, triedUrls.current)
+          .then(url => {
+            if (cancelled) return;
+            player.src = url;
+            setAudioUrl(url);
+            setOgvLoading(false);
+          })
+          .catch(() => {
+            if (!cancelled) {
+              setAudioError("Audio not available — check back later.");
+              setOgvLoading(false);
+            }
+          });
+      };
+
+      player.addEventListener("timeupdate", onTimeUpdate as EventListener);
+      player.addEventListener("loadedmetadata", onLoadedMetadata as EventListener);
+      player.addEventListener("ended", onEnded as EventListener);
+      player.addEventListener("error", onError as EventListener);
+      player.src = audioUrl;
+
+      return () => {
+        player.removeEventListener("timeupdate", onTimeUpdate as EventListener);
+        player.removeEventListener("loadedmetadata", onLoadedMetadata as EventListener);
+        player.removeEventListener("ended", onEnded as EventListener);
+        player.removeEventListener("error", onError as EventListener);
+        try { player.pause(); } catch { /* ignore */ }
+        ogvRef.current = null;
+      };
+    });
+
+    return () => { cancelled = true; };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [audioUrl, needsOgv]);
+
+  // ── Native audio event handlers ─────────────────────────────────────────
   const handleTimeUpdate = useCallback(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -208,7 +331,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       .catch(() => { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); });
   }, [anthem, countryName]);
 
-  // Auto-scroll active lyric line into view (centred)
+  // ── Auto-scroll active lyric line into view ──────────────────────────────
   useEffect(() => {
     if (activeLine < 0 || !lyricsRef.current) return;
     const container = lyricsRef.current;
@@ -222,39 +345,43 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     });
   }, [activeLine]);
 
+  function getActivePlayer(): HTMLAudioElement | OGVPlayerLike | null {
+    return needsOgv ? ogvRef.current : audioRef.current;
+  }
+
   function togglePlay() {
-    const audio = audioRef.current;
-    if (!audio) return;
+    const player = getActivePlayer();
+    if (!player) return;
     if (isPlaying) {
-      audio.pause();
+      player.pause();
       setIsPlaying(false);
     } else {
-      audio.play().then(() => setIsPlaying(true)).catch(() => {});
+      player.play().then(() => setIsPlaying(true)).catch(() => {});
     }
   }
 
   function skip(seconds: number) {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.currentTime = Math.max(0, Math.min(duration || Infinity, audio.currentTime + seconds));
+    const player = getActivePlayer();
+    if (!player) return;
+    player.currentTime = Math.max(0, Math.min(duration || Infinity, player.currentTime + seconds));
   }
 
   function handleSeek(e: React.MouseEvent<HTMLDivElement>) {
-    const audio = audioRef.current;
-    if (!audio || !duration) return;
+    const player = getActivePlayer();
+    if (!player || !duration) return;
     const rect = e.currentTarget.getBoundingClientRect();
     const fraction = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    audio.currentTime = fraction * duration;
+    player.currentTime = fraction * duration;
   }
 
-  // Close on Escape key
+  // Close on Escape
   useEffect(() => {
     function onKey(e: KeyboardEvent) { if (e.key === "Escape") onClose(); }
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, [onClose]);
 
-  // Lock body scroll while modal is open
+  // Lock body scroll
   useEffect(() => {
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -262,6 +389,8 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   }, []);
 
   const progress = duration ? (currentTime / duration) * 100 : 0;
+  const playerReady = !!audioUrl && !isLoadingAudio && !audioError;
+  const showLoading = isLoadingAudio || (needsOgv && ogvLoading && playerReady);
 
   return (
     <div className="anthem-modal" role="dialog" aria-modal="true" aria-label={`${countryName} national anthem`}>
@@ -290,30 +419,31 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
         </div>
 
         {/* Player body */}
-        {isLoadingAudio ? (
+        {showLoading ? (
           <div className="anthem-modal__status">
             <span className="anthem-modal__spinner" aria-hidden="true" />
             Loading anthem…
           </div>
         ) : audioError ? (
           <div className="anthem-modal__status anthem-modal__status--error">{audioError}</div>
-        ) : audioUrl ? (
+        ) : playerReady ? (
           <>
-            {/* Hidden audio element */}
-            <audio
-              ref={audioRef}
-              src={audioUrl}
-              onTimeUpdate={handleTimeUpdate}
-              onLoadedMetadata={handleLoadedMetadata}
-              onEnded={handleEnded}
-              onError={handleAudioError}
-              preload="auto"
-            />
+            {/* Native audio element — only used when NOT using ogv.js */}
+            {!needsOgv && (
+              <audio
+                ref={audioRef}
+                src={audioUrl}
+                onTimeUpdate={handleTimeUpdate}
+                onLoadedMetadata={handleLoadedMetadata}
+                onEnded={handleEnded}
+                onError={handleAudioError}
+                preload="auto"
+              />
+            )}
 
             {/* Progress bar */}
             <div
               className="anthem-player__progress"
-              ref={progressRef}
               onClick={handleSeek}
               role="slider"
               aria-label="Seek"

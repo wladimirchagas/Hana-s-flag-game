@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { copyFileSync } from 'node:fs'
+import { copyFileSync, mkdirSync } from 'node:fs'
 import { execSync } from 'node:child_process'
 import { resolve } from 'node:path'
 
@@ -23,11 +23,28 @@ function buildCommitSha(): string {
 const BUILD_COMMIT = buildCommitSha()
 const BUILD_ISO = new Date().toISOString()
 
-// After build, copy index.html → 404.html so GitHub Pages can serve client-side
-// routes (e.g. /game) on direct visits / refresh.
+// After build: copy index.html → 404.html (SPA fallback for GitHub Pages) and
+// keep the ogv.js audio-decoder files in sync from node_modules.
+const OGV_FILES = [
+  'ogv.js', 'ogv-support.js', 'ogv-worker-audio.js',
+  'ogv-decoder-audio-vorbis-wasm.js', 'ogv-decoder-audio-vorbis-wasm.wasm',
+  'ogv-demuxer-ogg-wasm.js', 'ogv-demuxer-ogg-wasm.wasm',
+]
+
 function spaFallback() {
   return {
     name: 'spa-fallback',
+    buildStart() {
+      // Keep public/ogv/ in sync with node_modules/ogv/dist/ at build time
+      const src = resolve(__dirname, 'node_modules/ogv/dist')
+      const dest = resolve(__dirname, 'public/ogv')
+      try {
+        mkdirSync(dest, { recursive: true })
+        for (const f of OGV_FILES) copyFileSync(resolve(src, f), resolve(dest, f))
+      } catch {
+        // non-fatal — public/ogv/ files may already be present
+      }
+    },
     closeBundle() {
       const outDir = resolve(__dirname, 'dist')
       try {
