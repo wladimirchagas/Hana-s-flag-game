@@ -94,7 +94,17 @@ export default function LearnPage() {
   // when it doesn't).
   const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
   const [zoomed, setZoomed] = useState(false);
-  const [anthemOpen, setAnthemOpen] = useState(false);
+  // Captured at "Play" click time so the modal stays open even if the
+  // hovered-country display clears while the user moves the mouse.
+  const [anthemTarget, setAnthemTarget] = useState<{
+    code: string;
+    name: string;
+    flagUrl: string | null;
+  } | null>(null);
+
+  // Debounce hover-clearing so the panel doesn't vanish when the user
+  // moves the mouse from a map country toward the side panel.
+  const hoverClearTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const baseUrl = import.meta.env.BASE_URL;
   const era = useMemo(() => getEra(eraId), [eraId]);
@@ -207,7 +217,7 @@ export default function LearnPage() {
   useEffect(() => {
     setHovered(null);
     setAvailableHistoricalNames(new Set());
-    setAnthemOpen(false);
+    setAnthemTarget(null);
   }, [eraId]);
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
@@ -580,14 +590,27 @@ export default function LearnPage() {
               onSelect: (code) => {
                 const c = codeToCountry.get(code);
                 if (c) {
+                  if (hoverClearTimer.current) {
+                    clearTimeout(hoverClearTimer.current);
+                    hoverClearTimer.current = null;
+                  }
                   setSelected({ kind: "modern", country: c });
                   setHovered(null);
                 }
               },
               onHover: (code) => {
                 if (!code) {
-                  setHovered(null);
+                  // Debounce: give the mouse 200ms to reach the side panel
+                  // before clearing the hover display.
+                  hoverClearTimer.current = setTimeout(() => {
+                    setHovered(null);
+                    hoverClearTimer.current = null;
+                  }, 200);
                   return;
+                }
+                if (hoverClearTimer.current) {
+                  clearTimeout(hoverClearTimer.current);
+                  hoverClearTimer.current = null;
                 }
                 const c = codeToCountry.get(code);
                 if (c) setHovered({ kind: "modern", country: c });
@@ -636,7 +659,11 @@ export default function LearnPage() {
                       <button
                         type="button"
                         className="learn-fs__anthem-btn"
-                        onClick={() => setAnthemOpen(true)}
+                        onClick={() => setAnthemTarget({
+                          code: display.country.code,
+                          name: display.country.name,
+                          flagUrl: selectionFlag(display, baseUrl),
+                        })}
                         aria-label={`Play national anthem of ${display.country.name}`}
                       >
                         ▶ Play
@@ -694,12 +721,12 @@ export default function LearnPage() {
         </aside>
       </div>
 
-      {anthemOpen && display?.kind === "modern" && (
+      {anthemTarget && (
         <NationalAnthemPlayer
-          countryCode={display.country.code}
-          countryName={display.country.name}
-          flagUrl={selectionFlag(display, baseUrl)}
-          onClose={() => setAnthemOpen(false)}
+          countryCode={anthemTarget.code}
+          countryName={anthemTarget.name}
+          flagUrl={anthemTarget.flagUrl}
+          onClose={() => setAnthemTarget(null)}
         />
       )}
 
