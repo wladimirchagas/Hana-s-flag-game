@@ -381,9 +381,9 @@ export function WorldProgressMap({
   // Hot path — runs on every animation frame. Only computes the 250 country
   // path strings (must use the full animated longitude for accurate shapes)
   // and flagTranslateX. Centroids and spherePath are excluded to reduce work.
-  const { pathById, flagTranslateX } = useMemo(() => {
+  const { pathByIdx, flagTranslateX } = useMemo(() => {
     const empty = {
-      pathById: new Map<string, string>(),
+      pathByIdx: new Map<number, string>(),
       flagTranslateX: 0,
     };
     if (geographies.length === 0) return empty;
@@ -392,11 +392,11 @@ export function WorldProgressMap({
       .rotate([-animLon, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
-    const paths = new Map<string, string>();
+    const paths = new Map<number, string>();
 
-    for (const geo of geographies) {
-      const path = mapPath(geo as never);
-      if (path) paths.set(String(geo.id ?? ""), path);
+    for (let i = 0; i < geographies.length; i++) {
+      const path = mapPath(geographies[i] as never);
+      if (path) paths.set(i, path);
     }
 
     // How far the animated projection has shifted vs. the base projection.
@@ -408,7 +408,7 @@ export function WorldProgressMap({
       if (pt) flagTranslateX = pt[0] - WIDTH / 2;
     }
 
-    return { pathById: paths, flagTranslateX };
+    return { pathByIdx: paths, flagTranslateX };
   }, [geographies, centerLongitude, rotationOffset]);
 
   // Cold path — only reruns when the base meridian or geography data changes,
@@ -606,8 +606,8 @@ export function WorldProgressMap({
             />
           )}
           {geographies.map((geo, idx) => {
-            const key = String(geo.id ?? idx);
-            const path = pathById.get(String(geo.id ?? ""));
+            const key = String(geo.id ?? idx) + "-" + idx;
+            const path = pathByIdx.get(idx);
             if (!path) return null;
             const alpha2 = toIsoAlpha2(geo.id);
             const isInPool =
