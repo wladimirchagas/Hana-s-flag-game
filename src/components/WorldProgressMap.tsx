@@ -443,7 +443,10 @@ export function WorldProgressMap({
           polys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
         }
       }
-      if (polys.length > 0) result.set(alpha2, polys);
+      if (polys.length > 0) {
+        const existing = result.get(alpha2);
+        result.set(alpha2, existing ? [...existing, ...polys] : polys);
+      }
     }
     return result;
   }, [geographies, centerLongitude]);
