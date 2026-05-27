@@ -32,6 +32,18 @@ const PLAYABLE_EXT = new RegExp(`\\.(${_exts})$`, "i");
 
 type Derivative = { src: string; type?: string };
 
+// Check if a derivative is playable using both URL extension and MIME type.
+// Wikimedia derivatives sometimes have unconventional URL paths but correct MIME types.
+function isPlayableDerivative(d: Derivative, exclude?: Set<string>): boolean {
+  if (exclude?.has(d.src)) return false;
+  if (PLAYABLE_EXT.test(d.src)) return true;
+  if (!d.type) return false;
+  if (_supportsMp3 && /audio\/mpeg|audio\/mp3/i.test(d.type)) return true;
+  if (_supportsWebM && /audio\/webm|video\/webm/i.test(d.type)) return true;
+  if (_supportsOgg && /audio\/ogg|application\/ogg/i.test(d.type)) return true;
+  return false;
+}
+
 async function getFileUrl(title: string, exclude?: Set<string>): Promise<string | null> {
   const full = title.startsWith("File:") ? title : `File:${title}`;
   // videoinfo + derivatives gives us transcoded MP3/WebM versions alongside the original OGG —
@@ -45,12 +57,19 @@ async function getFileUrl(title: string, exclude?: Set<string>): Promise<string 
   if (!page || "missing" in page) return null;
   const vi = (page.videoinfo as { url?: string; derivatives?: Derivative[] }[] | undefined)?.[0];
   if (!vi) return null;
-  // Try transcoded derivatives first (MP3/WebM preferred for cross-browser compat), then original
-  const candidates = [
-    ...(vi.derivatives?.map((d) => d.src) ?? []),
-    ...(vi.url ? [vi.url] : []),
-  ];
-  return candidates.find((url) => url && PLAYABLE_EXT.test(url) && !exclude?.has(url)) ?? null;
+  // Prefer transcoded derivatives (checked by both URL extension and MIME type), then original
+  const derivative = vi.derivatives?.find((d) => isPlayableDerivative(d, exclude));
+  if (derivative) return derivative.src;
+  if (vi.url && PLAYABLE_EXT.test(vi.url) && !exclude?.has(vi.url)) return vi.url;
+  return null;
+}
+
+// Try MP3 variant of an OGG filename on Wikimedia Commons.
+// Many national anthem files exist as both .ogg and .mp3 uploads.
+async function tryMp3Variant(oggTitle: string, exclude?: Set<string>): Promise<string | null> {
+  if (_supportsOgg || !/\.(ogg|oga)$/i.test(oggTitle)) return null;
+  const mp3Title = oggTitle.replace(/\.(ogg|oga)$/i, ".mp3");
+  return getFileUrl(mp3Title, exclude);
 }
 
 async function searchAudio(query: string, preferVocal = true, exclude?: Set<string>): Promise<string | null> {
@@ -60,7 +79,7 @@ async function searchAudio(query: string, preferVocal = true, exclude?: Set<stri
   const playable = results.filter(r => PLAYABLE_EXT.test(r.title));
   const nonPlayable = results.filter(r => AUDIO_EXT.test(r.title) && !PLAYABLE_EXT.test(r.title));
   const rest = results.filter(r => !AUDIO_EXT.test(r.title));
-  // When preferVocal: sort playable results — vocal-hinted first, then neutral, then instrumental-hinted
+  // When preferVocal: sort results — vocal-hinted first, then neutral, then instrumental-hinted
   const ordered = preferVocal ? [
     ...playable.filter(r => VOCAL_HINT.test(r.title)),
     ...playable.filter(r => !VOCAL_HINT.test(r.title) && !INSTR_HINT.test(r.title)),
@@ -75,6 +94,9 @@ async function searchAudio(query: string, preferVocal = true, exclude?: Set<stri
   for (const r of ordered.slice(0, 8)) {
     const url = await getFileUrl(r.title, exclude);
     if (url) return url;
+    // For OGG results on Safari, also try the MP3 variant of the same file
+    const mp3Url = await tryMp3Variant(r.title, exclude);
+    if (mp3Url) return mp3Url;
   }
   return null;
 }
@@ -83,6 +105,10 @@ async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, excl
   // 1. Exact file title
   const direct = await getFileUrl(anthem.wikiFile, exclude);
   if (direct) return direct;
+
+  // 1b. On Safari (no OGG support), try the MP3 variant of the same Wikimedia file
+  const directMp3 = await tryMp3Variant(anthem.wikiFile, exclude);
+  if (directMp3) return directMp3;
 
   // 2. Explicit wikiSearch override
   if (anthem.wikiSearch) {
