@@ -33,50 +33,31 @@ const _nativeExts = [_supportsOgg && "ogg|oga", _supportsWebM && "webm", _suppor
   .filter(Boolean).join("|") || "mp3";
 const NATIVE_EXT = new RegExp(`\\.(${_nativeExts})$`, "i");
 
-type Derivative = { src: string; type?: string };
-
-// Is this derivative natively playable? Checks URL extension AND MIME type.
-function isNativeDerivative(d: Derivative, exclude?: Set<string>): boolean {
-  if (exclude?.has(d.src)) return false;
-  if (NATIVE_EXT.test(d.src)) return true;
-  if (!d.type) return false;
-  if (_supportsMp3 && /audio\/mpeg|audio\/mp3/i.test(d.type)) return true;
-  if (_supportsWebM && /audio\/webm|video\/webm/i.test(d.type)) return true;
-  if (_supportsOgg && /audio\/ogg|application\/ogg/i.test(d.type)) return true;
-  return false;
-}
-
+// Fetch the direct media URL for a Wikimedia Commons file using imageinfo.
+// imageinfo works for ALL file types (audio, video, image) and is more reliable
+// than videoinfo, which is specific to the TimedMediaHandler extension.
 async function getFileUrl(title: string, exclude?: Set<string>): Promise<string | null> {
   const full = title.startsWith("File:") ? title : `File:${title}`;
-  const res = await fetch(
-    `${API}?action=query&titles=${encodeURIComponent(full)}&prop=videoinfo&viprops=url%7Cderivatives&format=json&origin=*`
-  );
+  const url = `${API}?action=query&titles=${encodeURIComponent(full)}&prop=imageinfo&iiprop=url&format=json&origin=*`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Wikimedia API HTTP ${res.status}`);
   const data = await res.json();
   const pages = data?.query?.pages ?? {};
   const page = Object.values(pages)[0] as Record<string, unknown>;
   if (!page || "missing" in page) return null;
-  const vi = (page.videoinfo as { url?: string; derivatives?: Derivative[] }[] | undefined)?.[0];
-  if (!vi) return null;
-
-  // 1. Prefer a natively playable derivative (MP3/WebM transcodes on Wikimedia)
-  const bestDerivative = vi.derivatives?.find((d) => isNativeDerivative(d, exclude));
-  if (bestDerivative) return bestDerivative.src;
-
-  // 2. Original URL if natively playable
-  if (vi.url && NATIVE_EXT.test(vi.url) && !exclude?.has(vi.url)) return vi.url;
-
-  // 3. Any audio URL — ogv.js will handle OGG on Safari
-  if (vi.url && AUDIO_EXT.test(vi.url) && !exclude?.has(vi.url)) return vi.url;
-
-  return null;
+  const ii = (page.imageinfo as { url?: string }[] | undefined)?.[0];
+  const mediaUrl = ii?.url;
+  if (!mediaUrl || !AUDIO_EXT.test(mediaUrl) || exclude?.has(mediaUrl)) return null;
+  return mediaUrl;
 }
 
 async function searchAudio(query: string, preferVocal = true, exclude?: Set<string>): Promise<string | null> {
   const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=12&srprop=title&format=json&origin=*`);
+  if (!res.ok) throw new Error(`Wikimedia search HTTP ${res.status}`);
   const data = await res.json();
   const results: { title: string }[] = data?.query?.search ?? [];
 
-  // Sort: natively playable > OGG (will use ogv.js) > other, with vocal preference
+  // Sort: natively playable > OGG (ogv.js plays it) > other, vocal-hinted first
   const native = results.filter(r => NATIVE_EXT.test(r.title));
   const oggFiles = results.filter(r => OGG_EXT.test(r.title));
   const other = results.filter(r => AUDIO_EXT.test(r.title) && !NATIVE_EXT.test(r.title) && !OGG_EXT.test(r.title));
@@ -90,37 +71,51 @@ async function searchAudio(query: string, preferVocal = true, exclude?: Set<stri
   const ordered = [...sortByVocal(native), ...sortByVocal(oggFiles), ...other];
 
   for (const r of ordered.slice(0, 8)) {
-    const url = await getFileUrl(r.title, exclude);
-    if (url) return url;
+    try {
+      const url = await getFileUrl(r.title, exclude);
+      if (url) return url;
+    } catch {
+      // continue to next result
+    }
   }
   return null;
 }
 
+// Wrap a strategy so its errors don't abort the whole resolution chain
+async function attempt<T>(fn: () => Promise<T | null>, label: string): Promise<T | null> {
+  try {
+    const result = await fn();
+    if (result) console.debug(`[anthem] resolved via ${label}:`, result);
+    else console.debug(`[anthem] ${label}: no result`);
+    return result;
+  } catch (e) {
+    console.warn(`[anthem] ${label} failed:`, e);
+    return null;
+  }
+}
+
 async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, exclude?: Set<string>): Promise<string> {
-  // 1. Exact file from data
-  const direct = await getFileUrl(anthem.wikiFile, exclude);
+  console.debug("[anthem] resolving for", countryName, "wikiFile:", anthem.wikiFile);
+
+  const direct = await attempt(() => getFileUrl(anthem.wikiFile, exclude), "direct file");
   if (direct) return direct;
 
-  // 2. Explicit wikiSearch override
   if (anthem.wikiSearch) {
-    const url = await searchAudio(anthem.wikiSearch, true, exclude);
+    const url = await attempt(() => searchAudio(anthem.wikiSearch!, true, exclude), "wikiSearch");
     if (url) return url;
   }
 
-  // 3. "national anthem [country] vocal"
-  const url3v = await searchAudio(`national anthem ${countryName} vocal`, true, exclude);
+  const url3v = await attempt(() => searchAudio(`national anthem ${countryName} vocal`, true, exclude), "vocal search");
   if (url3v) return url3v;
 
-  // 4. "national anthem [country]"
-  const url4 = await searchAudio(`national anthem ${countryName}`, true, exclude);
+  const url4 = await attempt(() => searchAudio(`national anthem ${countryName}`, true, exclude), "anthem search");
   if (url4) return url4;
 
-  // 5. Anthem title
   const title = anthem.titleEn ?? anthem.title;
-  const url5 = await searchAudio(title, true, exclude);
+  const url5 = await attempt(() => searchAudio(title, true, exclude), "title search");
   if (url5) return url5;
 
-  throw new Error("No audio found");
+  throw new Error("No audio found after all strategies");
 }
 
 // ── OGV.js loader ──────────────────────────────────────────────────────────
@@ -205,7 +200,10 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     setAudioUrl(null);
     resolveWikimediaUrl(anthem, countryName)
       .then((url) => { if (!cancelled) { setAudioUrl(url); setIsLoadingAudio(false); } })
-      .catch(() => { if (!cancelled) { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); } });
+      .catch((e) => {
+        console.error("[anthem] resolution failed:", e);
+        if (!cancelled) { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); }
+      });
     return () => { cancelled = true; };
   }, [anthem, countryName]);
 

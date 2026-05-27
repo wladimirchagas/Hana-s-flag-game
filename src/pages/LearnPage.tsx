@@ -361,38 +361,8 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [eraId, isModernEra, availableHistoricalNames, countries]);
 
-  if (loadError && isModernEra) {
-    return (
-      <div className="app app--center">
-        <main className="card card--error">
-          <h1>Couldn’t load countries</h1>
-          <p className="error-message">{loadError}</p>
-          <p className="hint">Check your connection and refresh the page.</p>
-          <p className="game-home-link">
-            <Link to="/">← Back to home</Link>
-          </p>
-        </main>
-      </div>
-    );
-  }
-
-  const flagUrl = display ? selectionFlag(display, baseUrl) : null;
-  const flagPngFallback =
-    display?.kind === "modern"
-      ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
-      : null
-
-  // Stable id for the currently-displayed entity — used by FlagGrid to
-  // highlight the matching tile.
-  const selectedId =
-    display?.kind === "modern"
-      ? display.country.code
-      : display?.kind === "historical"
-        ? display.name
-        : null;
-
   // Compute the flag list for the current era. For Today this is just
-  // the modern country list with REST Countries' subregion. For
+  // the modern country list with REST Countries’ subregion. For
   // historical eras we walk each feature NAME loaded by HistoricalMap
   // and run it through selectionFromPolityName so the entry reflects
   // any era-specific overrides (Brazil 1815 → UKPBA flag, etc.).
@@ -427,7 +397,7 @@ export default function LearnPage() {
     return out;
     // selectionFromPolityName closes over countryByName + eraId, both of
     // which we track explicitly. Disable lint exhaustive-deps just for
-    // the helper itself — it's intentionally re-created each render.
+    // the helper itself — it’s intentionally re-created each render.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
 
@@ -497,7 +467,7 @@ export default function LearnPage() {
 
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.
-  // Memoised so that HistoricalMap's React.memo() wrapper is not bypassed
+  // Memoised so that HistoricalMap’s React.memo() wrapper is not bypassed
   // by a new JSX reference on every rotation-driven render.
   const mapExtraControls = useMemo(
     () => (
@@ -528,6 +498,36 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap],
   );
+
+  if (loadError && isModernEra) {
+    return (
+      <div className="app app--center">
+        <main className="card card--error">
+          <h1>Couldn’t load countries</h1>
+          <p className="error-message">{loadError}</p>
+          <p className="hint">Check your connection and refresh the page.</p>
+          <p className="game-home-link">
+            <Link to="/">← Back to home</Link>
+          </p>
+        </main>
+      </div>
+    );
+  }
+
+  const flagUrl = display ? selectionFlag(display, baseUrl) : null;
+  const flagPngFallback =
+    display?.kind === "modern"
+      ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
+      : null
+
+  // Stable id for the currently-displayed entity — used by FlagGrid to
+  // highlight the matching tile.
+  const selectedId =
+    display?.kind === "modern"
+      ? display.country.code
+      : display?.kind === "historical"
+        ? display.name
+        : null;
 
   function handleGridSelect(id: string) {
     if (isModernEra) {
