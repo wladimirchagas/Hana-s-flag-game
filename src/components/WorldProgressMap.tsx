@@ -341,22 +341,29 @@ export function WorldProgressMap({
     };
   }, []);
 
-  // Cold path — runs only when geography data or the base meridian changes,
-  // NOT on every animation frame. Centroids and the sphere outline don't
-  // depend on rotationOffset so pulling them out of the hot loop below saves
-  // ~250 centroid calculations per frame.
-  const { centroidByAlpha2, spherePath } = useMemo(() => {
+  // Cold path — only reruns when geography data or center meridian changes.
+  // rotationOffset is intentionally excluded: the three-copy translate approach
+  // handles globe rotation in O(1) without reprojecting paths on every frame.
+  const { pathByIdx, centroidByAlpha2, spherePath, pxPerDegree } = useMemo(() => {
     const empty = {
+      pathByIdx: new Map<number, string>(),
       centroidByAlpha2: new Map<string, [number, number]>(),
       spherePath: null as string | null,
+      pxPerDegree: WIDTH / 360,
     };
     if (geographies.length === 0) return empty;
     const projection = geoEqualEarth()
       .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
-    const centroidByAlpha2 = new Map<string, [number, number]>();
 
+    const pathByIdx = new Map<number, string>();
+    for (let i = 0; i < geographies.length; i++) {
+      const path = mapPath(geographies[i] as never);
+      if (path) pathByIdx.set(i, path);
+    }
+
+    const centroidByAlpha2 = new Map<string, [number, number]>();
     for (const geo of geographies) {
       const alpha2 = toIsoAlpha2(geo.id);
       if (alpha2) {
@@ -374,88 +381,72 @@ export function WorldProgressMap({
         }
       }
     }
+
     const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
-    return { centroidByAlpha2, spherePath };
+
+    // Equal Earth is exactly linear in longitude at the equator; project two
+    // equatorial points 1° apart to get the exact pixel/degree scale factor.
+    const p0 = projection([centerLongitude, 0]);
+    const p1 = projection([centerLongitude + 1, 0]);
+    const pxPerDegree = p0 && p1 ? p1[0] - p0[0] : WIDTH / 360;
+
+    return { pathByIdx, centroidByAlpha2, spherePath, pxPerDegree };
   }, [geographies, centerLongitude]);
 
-  // Hot path — runs on every animation frame. Computes country path strings
-  // and, when the flag overlay is active, the per-polygon clip geometry for
-  // each flag. Both use the same animated projection so flag shapes always
-  // align exactly with country outlines regardless of rotation.
-  // Centroids and spherePath are excluded (see cold path above).
-  const { pathByIdx, flagPolygonsById } = useMemo(() => {
-    const empty = {
-      pathByIdx: new Map<number, string>(),
-      flagPolygonsById: new Map<string, FlagPoly[]>(),
-    };
-    if (geographies.length === 0) return empty;
-    const animLon = centerLongitude + rotationOffset;
+  // O(1) hot path — no memo, no reprojection. Three copies of the country
+  // paths (at -WIDTH, 0, +WIDTH) are all translated together by this amount,
+  // creating seamless globe rotation without any per-frame geoPath calls.
+  const flagTranslateX = rotationOffset !== 0 ? -(rotationOffset * pxPerDegree) : 0;
+
+  // Cold path — only reruns when geography data or center meridian changes.
+  // Uses geoCentroid for robust image positioning immune to sphere-cap distortion.
+  const flagPolygonsById = useMemo(() => {
+    const result = new Map<string, FlagPoly[]>();
+    if (geographies.length === 0) return result;
     const projection = geoEqualEarth()
-      .rotate([-animLon, 0])
+      .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const mapPath = geoPath(projection);
-    const paths = new Map<number, string>();
 
-    for (let i = 0; i < geographies.length; i++) {
-      const path = mapPath(geographies[i] as never);
-      if (path) paths.set(i, path);
-    }
-
-    // Flag polygon decomposition — only when the overlay is active so
-    // rotation without flags incurs no extra cost. Uses the same animated
-    // projection as pathByIdx so clip shapes always match country outlines
-    // (a latitude-dependent offset that a simple X-translate cannot fix).
-    const flagPolys = new Map<string, FlagPoly[]>();
-    if (flagOverlay) {
-      for (const geo of geographies) {
-        const alpha2 = toIsoAlpha2(geo.id);
-        if (!alpha2 || !flagOverlay.has(alpha2)) continue;
-        const geom = geo.geometry as { type: string; coordinates: unknown } | null;
-        if (!geom) continue;
-        const rings: unknown[] =
-          geom.type === "Polygon"
-            ? [geom.coordinates]
-            : geom.type === "MultiPolygon"
-              ? (geom.coordinates as unknown[])
-              : [];
-        const polys: FlagPoly[] = [];
-        for (const coords of rings) {
-          const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
-          const pd = mapPath(pf as never);
-          if (!pd) continue;
-          const b = mapPath.bounds(pf as never);
-          if (!b || !isFinite(b[0][0]) || !isFinite(b[1][0])) continue;
-          const bw = b[1][0] - b[0][0];
-          const bh = b[1][1] - b[0][1];
-          if (bw <= 0 || bh <= 0) continue;
-          // Antimeridian-crossing tiny rings (e.g. USA Aleutians, Russia's
-          // Chukotka) get a D3 sphere-cap closure segment that is very wide but
-          // very short → high width/height ratio. Large country mainlands that
-          // touch the sphere edge also get a sphere-cap, but it spans the full
-          // map height too, keeping the ratio close to the map's own ~1.9:1.
-          // Filtering on ratio > 8 skips tiny island-chain artifacts without
-          // rejecting Canada, USA, or Russia when they approach the sphere edge.
-          if (bw / bh > 8) continue;
-          // Use the geographic centroid projected into the current (animated)
-          // view for image positioning — immune to sphere-cap distortion.
-          // Size the image from bbox height (height is unaffected by the
-          // horizontal sphere-cap segment) with a 3:2 flag aspect ratio.
-          const geoC = geoCentroid(pf as never);
-          const svgC = projection(geoC);
-          if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
-          const imgH = Math.max(bh, 20);
-          const imgW = imgH * 1.5;
-          polys.push({ path: pd, x: svgC[0] - imgW / 2, y: svgC[1] - imgH / 2, w: imgW, h: imgH });
-        }
-        if (polys.length > 0) {
-          const existing = flagPolys.get(alpha2);
-          flagPolys.set(alpha2, existing ? [...existing, ...polys] : polys);
-        }
+    for (const geo of geographies) {
+      const alpha2 = toIsoAlpha2(geo.id);
+      if (!alpha2) continue;
+      const geom = geo.geometry as { type: string; coordinates: unknown } | null;
+      if (!geom) continue;
+      const rings: unknown[] =
+        geom.type === "Polygon"
+          ? [geom.coordinates]
+          : geom.type === "MultiPolygon"
+            ? (geom.coordinates as unknown[])
+            : [];
+      const polys: FlagPoly[] = [];
+      for (const coords of rings) {
+        const pf = { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: coords } };
+        const pd = mapPath(pf as never);
+        if (!pd) continue;
+        const b = mapPath.bounds(pf as never);
+        if (!b || !isFinite(b[0][0]) || !isFinite(b[1][0])) continue;
+        const bw = b[1][0] - b[0][0];
+        const bh = b[1][1] - b[0][1];
+        if (bw <= 0 || bh <= 0) continue;
+        // Antimeridian-crossing tiny rings get a D3 sphere-cap closure
+        // segment that is very wide but very short (high bw/bh ratio).
+        // Filter these out without rejecting large mainlands.
+        if (bw / bh > 8) continue;
+        const geoC = geoCentroid(pf as never);
+        const svgC = projection(geoC);
+        if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
+        const imgH = Math.max(bh, 20);
+        const imgW = imgH * 1.5;
+        polys.push({ path: pd, x: svgC[0] - imgW / 2, y: svgC[1] - imgH / 2, w: imgW, h: imgH });
+      }
+      if (polys.length > 0) {
+        const existing = result.get(alpha2);
+        result.set(alpha2, existing ? [...existing, ...polys] : polys);
       }
     }
-
-    return { pathByIdx: paths, flagPolygonsById: flagPolys };
-  }, [geographies, centerLongitude, rotationOffset, flagOverlay]);
+    return result;
+  }, [geographies, centerLongitude]);
 
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
@@ -539,12 +530,12 @@ export function WorldProgressMap({
   // Show pulse for all countries with area ≤ Denmark (~43,094 km²).
   const showPulse = !!(selCentroid && selectedCode && SMALL_NATION_CODES.has(selectedCode));
   const { k: zk, tx: ztx, ty: zty } = zoom.view;
-  // Centroids are from the base (non-rotated) projection; the pulse
-  // position drifts slightly during rotation but is close enough for
-  // micro-states and rotation is off by default.
-  const pulseX = selCentroid
-    ? selCentroid[0] * zk + ztx
-    : 0;
+  // Centroids are from the base (non-rotated) projection. Add flagTranslateX
+  // then wrap to [0, WIDTH] to pick the copy currently in the visible sphere.
+  const basePulseX = selCentroid ? selCentroid[0] + flagTranslateX : 0;
+  const wrappedPulseX =
+    basePulseX < 0 ? basePulseX + WIDTH : basePulseX >= WIDTH ? basePulseX - WIDTH : basePulseX;
+  const pulseX = wrappedPulseX * zk + ztx;
   const pulseY = selCentroid
     ? (southUp ? HEIGHT - selCentroid[1] : selCentroid[1]) * zk + zty
     : 0;
@@ -615,79 +606,90 @@ export function WorldProgressMap({
               vectorEffect="non-scaling-stroke"
             />
           )}
-          {geographies.map((geo, idx) => {
-            const key = String(geo.id ?? idx) + "-" + idx;
-            const path = pathByIdx.get(idx);
-            if (!path) return null;
-            const alpha2 = toIsoAlpha2(geo.id);
-            const isInPool =
-              !!alpha2 && !!selectable && selectable.codes.has(alpha2);
-            // Every UN-member country is clickable (in interactive mode). Pool
-            // members open the Confirm popover; non-pool members open the
-            // informational "Not in this game" popover instead of silently
-            // doing nothing.
-            const isUnMember = !!alpha2 && ALL_UN_NAMES.has(alpha2);
-            const clickable = isInteractive && isUnMember;
-            const isSelected =
-              !!alpha2 &&
-              (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
-            const baseFill = getFill(
-              alpha2,
-              countryResults,
-              palette,
-              isInPool,
-            );
-            const tooltip =
-              alpha2
-                ? selectable?.names.get(alpha2) ??
-                  ALL_UN_NAMES.get(alpha2) ??
-                  null
-                : null;
-            return (
-              <path
-                key={key}
-                d={path}
-                fill={isSelected ? palette.selectedFill : baseFill}
-                stroke={isSelected ? palette.selectedStroke : palette.stroke}
-                strokeWidth={isSelected ? 1.4 : 0.45}
-                strokeOpacity={isSelected ? 1 : 0.55}
-                // Keep borders the same visual width regardless of zoom —
-                // without this they thicken as the user zooms in.
-                vectorEffect="non-scaling-stroke"
-                className={
-                  clickable
-                    ? "world-map__country world-map__country--selectable"
-                    : "world-map__country"
-                }
-                onClick={
-                  clickable && alpha2
-                    ? (e) => handlePathClick(e, alpha2)
-                    : undefined
-                }
-                onMouseEnter={
-                  clickable && alpha2 && selectable?.onHover
-                    ? () => selectable.onHover!(alpha2)
-                    : undefined
-                }
-                onMouseLeave={
-                  clickable && selectable?.onHover
-                    ? () => selectable.onHover!(null)
-                    : undefined
-                }
+          {/* Three-copy rotation group — translates all country paths and
+              flag images together by flagTranslateX (O(1) per frame).
+              Three copies at -WIDTH, 0, +WIDTH ensure the sphere is always
+              fully covered regardless of rotation offset.
+              will-change promotes this group to a GPU compositing layer so
+              only the transform changes, not the painted content. */}
+          <g
+            transform={
+              flagTranslateX !== 0
+                ? `translate(${flagTranslateX.toFixed(2)} 0)`
+                : undefined
+            }
+            style={{ willChange: "transform" }}
+          >
+            {([-WIDTH, 0, WIDTH] as const).map((offset) => (
+              <g
+                key={offset}
+                transform={offset !== 0 ? `translate(${offset} 0)` : undefined}
               >
-                {tooltip ? <title>{tooltip}</title> : null}
-              </path>
-            );
-          })}
-          {flagOverlay && (
-            <FlagImages
-              flagOverlay={flagOverlay}
-              flagPolygonsById={flagPolygonsById}
-              geographies={geographies}
-              selectedCode={selectedCode}
-              highlightCodes={highlightCodes}
-            />
-          )}
+                {geographies.map((geo, idx) => {
+                  const key = String(geo.id ?? idx) + "-" + idx;
+                  const path = pathByIdx.get(idx);
+                  if (!path) return null;
+                  const alpha2 = toIsoAlpha2(geo.id);
+                  const isInPool =
+                    !!alpha2 && !!selectable && selectable.codes.has(alpha2);
+                  const isUnMember = !!alpha2 && ALL_UN_NAMES.has(alpha2);
+                  const clickable = isInteractive && isUnMember;
+                  const isSelected =
+                    !!alpha2 &&
+                    (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
+                  const baseFill = getFill(alpha2, countryResults, palette, isInPool);
+                  const tooltip =
+                    alpha2
+                      ? selectable?.names.get(alpha2) ??
+                        ALL_UN_NAMES.get(alpha2) ??
+                        null
+                      : null;
+                  return (
+                    <path
+                      key={key}
+                      d={path}
+                      fill={isSelected ? palette.selectedFill : baseFill}
+                      stroke={isSelected ? palette.selectedStroke : palette.stroke}
+                      strokeWidth={isSelected ? 1.4 : 0.45}
+                      strokeOpacity={isSelected ? 1 : 0.55}
+                      vectorEffect="non-scaling-stroke"
+                      className={
+                        clickable
+                          ? "world-map__country world-map__country--selectable"
+                          : "world-map__country"
+                      }
+                      onClick={
+                        clickable && alpha2
+                          ? (e) => handlePathClick(e, alpha2)
+                          : undefined
+                      }
+                      onMouseEnter={
+                        clickable && alpha2 && selectable?.onHover
+                          ? () => selectable.onHover!(alpha2)
+                          : undefined
+                      }
+                      onMouseLeave={
+                        clickable && selectable?.onHover
+                          ? () => selectable.onHover!(null)
+                          : undefined
+                      }
+                    >
+                      {tooltip ? <title>{tooltip}</title> : null}
+                    </path>
+                  );
+                })}
+                {flagOverlay && (
+                  <FlagImages
+                    flagOverlay={flagOverlay}
+                    flagPolygonsById={flagPolygonsById}
+                    geographies={geographies}
+                    selectedCode={selectedCode}
+                    highlightCodes={highlightCodes}
+                  />
+                )}
+              </g>
+            ))}
+          </g>
           </g>
           </g>
           {/* Pulse indicator — outside the zoom group so its pixel size
