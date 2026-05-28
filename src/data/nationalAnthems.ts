@@ -169,10 +169,10 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
   },
   AU: {
     title: "Advance Australia Fair",
-    wikiFile: "Advance Australia Fair.ogg", language: "en",
-    wikiSearch: "Advance Australia Fair vocal sung anthem",
+    wikiFile: "Advance Australia Fair (1927).ogg", language: "en",
+    wikiSearch: "Advance Australia Fair Peter Dawson vocal sung anthem",
     lines: [
-      { text: "Australians all let us rejoice,", start: 0 },
+      { text: "Australia's sons let us rejoice,", start: 0 },
       { text: "For we are young and free;", start: 7 },
       { text: "We've golden soil and wealth for toil;", start: 13 },
       { text: "Our home is girt by sea;", start: 21 },
