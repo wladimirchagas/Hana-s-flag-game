@@ -3,25 +3,24 @@
   "generated_at": "2026-05-28",
   "counts": {
     "total_nations": 195,
-    "gaps": 15,
-    "blockers": 13,
-    "documented_exceptions": 2,
-    "advisories": 173
+    "gaps": 13,
+    "blockers": 10,
+    "documented_exceptions": 3,
+    "advisories": 174
   },
   "by_category": {
-    "missing_entry": 4,
-    "instrumental_audio_only": 9,
-    "no_lyrics_documented": 2
+    "instrumental_audio_only": 10,
+    "no_lyrics_documented": 3
   },
   "gaps": [
     {
       "iso3": "AGO",
       "iso2": "AO",
       "name_en": "Angola",
-      "category": "missing_entry",
+      "category": "instrumental_audio_only",
       "blocker": true,
-      "existing_wiki_file": null,
-      "line_count": 0
+      "existing_wiki_file": "Angolan-National-Anthem- US-Navy-Band.ogg",
+      "line_count": 10
     },
     {
       "iso3": "ARG",
@@ -54,10 +53,10 @@
       "iso3": "BIH",
       "iso2": "BA",
       "name_en": "Bosnia and Herzegovina",
-      "category": "missing_entry",
-      "blocker": true,
-      "existing_wiki_file": null,
-      "line_count": 0
+      "category": "no_lyrics_documented",
+      "blocker": false,
+      "existing_wiki_file": "Bosnian National Anthem (US Navy Band).ogg",
+      "line_count": 1
     },
     {
       "iso3": "COL",
@@ -76,15 +75,6 @@
       "blocker": true,
       "existing_wiki_file": "National anthem of Guatemala, by the U.S. Navy Band.oga",
       "line_count": 8
-    },
-    {
-      "iso3": "MLI",
-      "iso2": "ML",
-      "name_en": "Mali",
-      "category": "missing_entry",
-      "blocker": true,
-      "existing_wiki_file": null,
-      "line_count": 0
     },
     {
       "iso3": "NIC",
@@ -139,15 +129,6 @@
       "blocker": true,
       "existing_wiki_file": "United States Navy Band - Gloria al Bravo Pueblo.ogg",
       "line_count": 14
-    },
-    {
-      "iso3": "PSE",
-      "iso2": "PS",
-      "name_en": "State of Palestine",
-      "category": "missing_entry",
-      "blocker": true,
-      "existing_wiki_file": null,
-      "line_count": 0
     }
   ],
   "advisories": [
@@ -808,6 +789,13 @@
       "name_en": "Maldives",
       "category": "advisory_vocal_unknown",
       "existing_wiki_file": "Qaumee salaam.ogg"
+    },
+    {
+      "iso3": "MLI",
+      "iso2": "ML",
+      "name_en": "Mali",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Malian national anthem, full version.ogg"
     },
     {
       "iso3": "MLT",
