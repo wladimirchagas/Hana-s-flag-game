@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-28",
+  "generated_at": "2026-05-29",
   "source_seed": "data/anthems/nations.json",
   "source_existing_anthems": "src/data/nationalAnthems.ts",
   "nation_count": 195,
@@ -4447,13 +4447,13 @@
         "wiki_file": "Inno Nazionale della Repubblica di San Marino.ogg",
         "language": "it",
         "instrumental_marked": true,
-        "line_count": 0,
+        "line_count": 1,
         "lines_with_word_timings": 0,
         "has_word_timestamps": false
       },
       "status": {
         "audio": "instrumental_marked",
-        "lyrics": "no_lines"
+        "lyrics": "line_aligned"
       },
       "lyrics_license_source": "wikipedia_cc-by-sa-4.0"
     },

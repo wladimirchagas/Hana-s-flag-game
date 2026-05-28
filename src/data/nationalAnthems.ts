@@ -2569,7 +2569,9 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     title: "Inno Nazionale della Repubblica", titleEn: "National Anthem of the Republic",
     wikiFile: "Inno Nazionale della Repubblica di San Marino.ogg", language: "it",
     instrumental: true,
-    lines: [],
+    lines: [
+      { text: "(Instrumental — no official lyrics)", start: 0 },
+    ],
   },
   SN: {
     title: "Pincez Tous vos Koras, Frappez les Balafons", titleEn: "Pluck Your Koras, Strike the Balafons",

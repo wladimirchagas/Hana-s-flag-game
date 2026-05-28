@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-28",
+  "generated_at": "2026-05-29",
   "counts": {
     "total_nations": 195,
     "gaps": 12,
@@ -83,7 +83,7 @@
       "category": "no_lyrics_documented",
       "blocker": false,
       "existing_wiki_file": "Inno Nazionale della Repubblica di San Marino.ogg",
-      "line_count": 0
+      "line_count": 1
     },
     {
       "iso3": "ESP",
