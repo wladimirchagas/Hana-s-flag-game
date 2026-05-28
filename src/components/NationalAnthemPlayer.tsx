@@ -196,6 +196,11 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     return lines.map(l => ({ ...l, start: Math.round(l.start * scale * 10) / 10 }));
   }, [anthem, duration]);
 
+  // Ref that always holds the current scaledLines so event-handler closures
+  // never see a stale value after duration updates.
+  const scaledLinesRef = useRef(scaledLines);
+  scaledLinesRef.current = scaledLines;
+
   // Determine whether we'll need ogv.js for the current URL
   const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
 
@@ -241,10 +246,11 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       const onTimeUpdate = () => {
         const t = player.currentTime;
         setCurrentTime(t);
-        if (!scaledLines) return;
+        const lines = scaledLinesRef.current;
+        if (!lines) return;
         let next = -1;
-        for (let i = scaledLines.length - 1; i >= 0; i--) {
-          if (t >= scaledLines[i].start) { next = i; break; }
+        for (let i = lines.length - 1; i >= 0; i--) {
+          if (t >= lines[i].start) { next = i; break; }
         }
         setActiveLine(next);
       };
@@ -309,13 +315,14 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     if (!audio) return;
     const t = audio.currentTime;
     setCurrentTime(t);
-    if (!scaledLines) return;
+    const lines = scaledLinesRef.current;
+    if (!lines) return;
     let next = -1;
-    for (let i = scaledLines.length - 1; i >= 0; i--) {
-      if (t >= scaledLines[i].start) { next = i; break; }
+    for (let i = lines.length - 1; i >= 0; i--) {
+      if (t >= lines[i].start) { next = i; break; }
     }
     setActiveLine(next);
-  }, [anthem]);
+  }, []);
 
   const handleLoadedMetadata = useCallback(() => {
     setDuration(audioRef.current?.duration ?? 0);
