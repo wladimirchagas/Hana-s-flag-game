@@ -349,6 +349,30 @@
   color: var(--ink);
 }
 
+/* === Word-level karaoke highlighting =================================== */
+.anthem-word {
+  display: inline;
+  border-radius: 3px;
+  padding: 0 1px;
+  transition: background 120ms ease, color 120ms ease, font-weight 120ms ease;
+}
+
+.anthem-lyrics__line--active .anthem-word--active {
+  background: var(--coral);
+  color: #fff;
+  font-weight: 800;
+  padding: 0 3px;
+  border-radius: 4px;
+}
+
+.anthem-lyrics__line--active .anthem-word--past {
+  opacity: 0.5;
+}
+
+.anthem-lyrics__line--active .anthem-word--future {
+  opacity: 0.85;
+}
+
 .anthem-lyrics__unavailable,
 .anthem-lyrics__note {
   margin: 0.75rem auto;
