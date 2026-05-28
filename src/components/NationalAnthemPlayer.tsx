@@ -359,7 +359,11 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
         // be set, so scaledLines will already be proportionally scaled.
         const firstStart = scaledLinesRef.current?.[0]?.start ?? 0;
         const offset = onset - firstStart;
-        if (offset > 0.5) {
+        // Only apply if meaningful (> 0.5s) and not absurdly large (> 90s).
+        // A bad detection returning a very late onset would otherwise push
+        // adj negative for the entire first half of the recording, making
+        // all lyrics invisible.
+        if (offset > 0.5 && offset < 90) {
           introOffsetRef.current = offset;
         }
         console.debug(`[onset] onset=${onset.toFixed(2)}s firstStart=${firstStart.toFixed(2)}s offset=${introOffsetRef.current.toFixed(2)}s`);
