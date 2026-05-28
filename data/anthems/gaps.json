@@ -1,0 +1,1366 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-28",
+  "counts": {
+    "total_nations": 195,
+    "gaps": 15,
+    "blockers": 13,
+    "documented_exceptions": 2,
+    "advisories": 173
+  },
+  "by_category": {
+    "missing_entry": 4,
+    "instrumental_audio_only": 9,
+    "no_lyrics_documented": 2
+  },
+  "gaps": [
+    {
+      "iso3": "AGO",
+      "iso2": "AO",
+      "name_en": "Angola",
+      "category": "missing_entry",
+      "blocker": true,
+      "existing_wiki_file": null,
+      "line_count": 0
+    },
+    {
+      "iso3": "ARG",
+      "iso2": "AR",
+      "name_en": "Argentina",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "United States Navy Band - Himno Nacional Argentino.ogg",
+      "line_count": 14
+    },
+    {
+      "iso3": "BEL",
+      "iso2": "BE",
+      "name_en": "Belgium",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "La Brabançonne instrumental.ogg",
+      "line_count": 8
+    },
+    {
+      "iso3": "BOL",
+      "iso2": "BO",
+      "name_en": "Bolivia (Plurinational State of)",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "Himno Nacional de Bolivia instrumental.ogg",
+      "line_count": 10
+    },
+    {
+      "iso3": "BIH",
+      "iso2": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "category": "missing_entry",
+      "blocker": true,
+      "existing_wiki_file": null,
+      "line_count": 0
+    },
+    {
+      "iso3": "COL",
+      "iso2": "CO",
+      "name_en": "Colombia",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "United States Navy Band - ¡Oh, gloria inmarcesible!.ogg",
+      "line_count": 13
+    },
+    {
+      "iso3": "GTM",
+      "iso2": "GT",
+      "name_en": "Guatemala",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "National anthem of Guatemala, by the U.S. Navy Band.oga",
+      "line_count": 8
+    },
+    {
+      "iso3": "MLI",
+      "iso2": "ML",
+      "name_en": "Mali",
+      "category": "missing_entry",
+      "blocker": true,
+      "existing_wiki_file": null,
+      "line_count": 0
+    },
+    {
+      "iso3": "NIC",
+      "iso2": "NI",
+      "name_en": "Nicaragua",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "National Anthem of Nicaragua by US Navy Band.ogg",
+      "line_count": 8
+    },
+    {
+      "iso3": "SMR",
+      "iso2": "SM",
+      "name_en": "San Marino",
+      "category": "no_lyrics_documented",
+      "blocker": false,
+      "existing_wiki_file": "Inno Nazionale della Repubblica di San Marino.ogg",
+      "line_count": 0
+    },
+    {
+      "iso3": "ESP",
+      "iso2": "ES",
+      "name_en": "Spain",
+      "category": "no_lyrics_documented",
+      "blocker": false,
+      "existing_wiki_file": "Marcha Real.ogg",
+      "line_count": 1
+    },
+    {
+      "iso3": "GBR",
+      "iso2": "GB",
+      "name_en": "United Kingdom of Great Britain and Northern Ireland",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "God Save the King - Instrumental.ogg",
+      "line_count": 7
+    },
+    {
+      "iso3": "URY",
+      "iso2": "UY",
+      "name_en": "Uruguay",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "United States Navy Band - National Anthem of Uruguay (short with intro).ogg",
+      "line_count": 12
+    },
+    {
+      "iso3": "VEN",
+      "iso2": "VE",
+      "name_en": "Venezuela (Bolivarian Republic of)",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "United States Navy Band - Gloria al Bravo Pueblo.ogg",
+      "line_count": 14
+    },
+    {
+      "iso3": "PSE",
+      "iso2": "PS",
+      "name_en": "State of Palestine",
+      "category": "missing_entry",
+      "blocker": true,
+      "existing_wiki_file": null,
+      "line_count": 0
+    }
+  ],
+  "advisories": [
+    {
+      "iso3": "AFG",
+      "iso2": "AF",
+      "name_en": "Afghanistan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Milli Surood.ogg"
+    },
+    {
+      "iso3": "ALB",
+      "iso2": "AL",
+      "name_en": "Albania",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Himni i Flamurit.ogg"
+    },
+    {
+      "iso3": "DZA",
+      "iso2": "DZ",
+      "name_en": "Algeria",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Kassaman.ogg"
+    },
+    {
+      "iso3": "AND",
+      "iso2": "AD",
+      "name_en": "Andorra",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "National anthem of Andorra.ogg"
+    },
+    {
+      "iso3": "ATG",
+      "iso2": "AG",
+      "name_en": "Antigua and Barbuda",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Fair Antigua, We Salute Thee.ogg"
+    },
+    {
+      "iso3": "ARM",
+      "iso2": "AM",
+      "name_en": "Armenia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Armenian National Anthem.ogg"
+    },
+    {
+      "iso3": "AUS",
+      "iso2": "AU",
+      "name_en": "Australia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Advance Australia Fair.ogg"
+    },
+    {
+      "iso3": "AUT",
+      "iso2": "AT",
+      "name_en": "Austria",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Bundeshymne Österreich.ogg"
+    },
+    {
+      "iso3": "BHS",
+      "iso2": "BS",
+      "name_en": "Bahamas",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "March On Bahamaland.ogg"
+    },
+    {
+      "iso3": "BHR",
+      "iso2": "BH",
+      "name_en": "Bahrain",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Bahrainona.ogg"
+    },
+    {
+      "iso3": "BGD",
+      "iso2": "BD",
+      "name_en": "Bangladesh",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Amar Shonar Bangla.ogg"
+    },
+    {
+      "iso3": "BRB",
+      "iso2": "BB",
+      "name_en": "Barbados",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "In Plenty and in Time of Need.ogg"
+    },
+    {
+      "iso3": "BLR",
+      "iso2": "BY",
+      "name_en": "Belarus",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "My Belarusy.ogg"
+    },
+    {
+      "iso3": "BLZ",
+      "iso2": "BZ",
+      "name_en": "Belize",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Land of the Free (Belize).ogg"
+    },
+    {
+      "iso3": "BEN",
+      "iso2": "BJ",
+      "name_en": "Benin",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "L'Aube Nouvelle.ogg"
+    },
+    {
+      "iso3": "BTN",
+      "iso2": "BT",
+      "name_en": "Bhutan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Druk Tsendhen.ogg"
+    },
+    {
+      "iso3": "BWA",
+      "iso2": "BW",
+      "name_en": "Botswana",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Fatshe leno la rona.ogg"
+    },
+    {
+      "iso3": "BRN",
+      "iso2": "BN",
+      "name_en": "Brunei Darussalam",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Allah Peliharakan Sultan.ogg"
+    },
+    {
+      "iso3": "BGR",
+      "iso2": "BG",
+      "name_en": "Bulgaria",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Mila Rodino.ogg"
+    },
+    {
+      "iso3": "BFA",
+      "iso2": "BF",
+      "name_en": "Burkina Faso",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ditanyè.ogg"
+    },
+    {
+      "iso3": "BDI",
+      "iso2": "BI",
+      "name_en": "Burundi",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Burundi Bwacu.ogg"
+    },
+    {
+      "iso3": "CPV",
+      "iso2": "CV",
+      "name_en": "Cabo Verde",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Cantico da Liberdade.ogg"
+    },
+    {
+      "iso3": "KHM",
+      "iso2": "KH",
+      "name_en": "Cambodia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Nokor Reach.ogg"
+    },
+    {
+      "iso3": "CMR",
+      "iso2": "CM",
+      "name_en": "Cameroon",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "O Cameroun Berceau de nos Ancetres.ogg"
+    },
+    {
+      "iso3": "CAN",
+      "iso2": "CA",
+      "name_en": "Canada",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "O Canada English Weir 1928.ogg"
+    },
+    {
+      "iso3": "CAF",
+      "iso2": "CF",
+      "name_en": "Central African Republic",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Renaissance.ogg"
+    },
+    {
+      "iso3": "TCD",
+      "iso2": "TD",
+      "name_en": "Chad",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Tchadienne.ogg"
+    },
+    {
+      "iso3": "CHL",
+      "iso2": "CL",
+      "name_en": "Chile",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "National Anthem of Chile.ogg"
+    },
+    {
+      "iso3": "CHN",
+      "iso2": "CN",
+      "name_en": "China",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "March of the Volunteers.ogg"
+    },
+    {
+      "iso3": "COM",
+      "iso2": "KM",
+      "name_en": "Comoros",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Udzima wa ya Masiwa.ogg"
+    },
+    {
+      "iso3": "COG",
+      "iso2": "CG",
+      "name_en": "Congo",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Congolaise.ogg"
+    },
+    {
+      "iso3": "COD",
+      "iso2": "CD",
+      "name_en": "Congo (Democratic Republic of the)",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Debout Congolais.ogg"
+    },
+    {
+      "iso3": "CRI",
+      "iso2": "CR",
+      "name_en": "Costa Rica",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Costa Rica National Anthem.ogg"
+    },
+    {
+      "iso3": "CIV",
+      "iso2": "CI",
+      "name_en": "Côte d'Ivoire",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "L'Abidjanaise.ogg"
+    },
+    {
+      "iso3": "HRV",
+      "iso2": "HR",
+      "name_en": "Croatia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Lijepa naša domovino.ogg"
+    },
+    {
+      "iso3": "CUB",
+      "iso2": "CU",
+      "name_en": "Cuba",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Bayamesa 1940.oga"
+    },
+    {
+      "iso3": "CYP",
+      "iso2": "CY",
+      "name_en": "Cyprus",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Hymn to Liberty.ogg"
+    },
+    {
+      "iso3": "CZE",
+      "iso2": "CZ",
+      "name_en": "Czechia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Kde domov muj.ogg"
+    },
+    {
+      "iso3": "DNK",
+      "iso2": "DK",
+      "name_en": "Denmark",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Kong Christian.ogg"
+    },
+    {
+      "iso3": "DJI",
+      "iso2": "DJ",
+      "name_en": "Djibouti",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Jabuuti.ogg"
+    },
+    {
+      "iso3": "DMA",
+      "iso2": "DM",
+      "name_en": "Dominica",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Isle of Beauty Isle of Splendour.ogg"
+    },
+    {
+      "iso3": "DOM",
+      "iso2": "DO",
+      "name_en": "Dominican Republic",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Himno Nacional Dominicano.ogg"
+    },
+    {
+      "iso3": "ECU",
+      "iso2": "EC",
+      "name_en": "Ecuador",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ecuadorian national anthem (abridged).ogg"
+    },
+    {
+      "iso3": "EGY",
+      "iso2": "EG",
+      "name_en": "Egypt",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Bilady, Bilady, Bilady.ogg"
+    },
+    {
+      "iso3": "SLV",
+      "iso2": "SV",
+      "name_en": "El Salvador",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "El Salvador National Anthem.ogg"
+    },
+    {
+      "iso3": "GNQ",
+      "iso2": "GQ",
+      "name_en": "Equatorial Guinea",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Caminemos Pisando la Senda.ogg"
+    },
+    {
+      "iso3": "ERI",
+      "iso2": "ER",
+      "name_en": "Eritrea",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ertra Ertra Ertra.ogg"
+    },
+    {
+      "iso3": "SWZ",
+      "iso2": "SZ",
+      "name_en": "Eswatini",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ingoma Yesive.ogg"
+    },
+    {
+      "iso3": "ETH",
+      "iso2": "ET",
+      "name_en": "Ethiopia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Whedefit Gesgeshi Woude Henate Ethiopia.ogg"
+    },
+    {
+      "iso3": "FJI",
+      "iso2": "FJ",
+      "name_en": "Fiji",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "God Bless Fiji.ogg"
+    },
+    {
+      "iso3": "FIN",
+      "iso2": "FI",
+      "name_en": "Finland",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Maamme.ogg"
+    },
+    {
+      "iso3": "FRA",
+      "iso2": "FR",
+      "name_en": "France",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Marseillaise.ogg"
+    },
+    {
+      "iso3": "GAB",
+      "iso2": "GA",
+      "name_en": "Gabon",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Concorde.ogg"
+    },
+    {
+      "iso3": "GMB",
+      "iso2": "GM",
+      "name_en": "Gambia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "For The Gambia Our Homeland.ogg"
+    },
+    {
+      "iso3": "DEU",
+      "iso2": "DE",
+      "name_en": "Germany",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Deutschlandlied.ogg"
+    },
+    {
+      "iso3": "GHA",
+      "iso2": "GH",
+      "name_en": "Ghana",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "God Bless Our Homeland Ghana.ogg"
+    },
+    {
+      "iso3": "GRC",
+      "iso2": "GR",
+      "name_en": "Greece",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Hymn to Liberty.ogg"
+    },
+    {
+      "iso3": "GRD",
+      "iso2": "GD",
+      "name_en": "Grenada",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Hail Grenada.ogg"
+    },
+    {
+      "iso3": "GIN",
+      "iso2": "GN",
+      "name_en": "Guinea",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Liberté (Guinea).ogg"
+    },
+    {
+      "iso3": "GNB",
+      "iso2": "GW",
+      "name_en": "Guinea-Bissau",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Esta E a Nossa Patria Bem Amada.ogg"
+    },
+    {
+      "iso3": "GUY",
+      "iso2": "GY",
+      "name_en": "Guyana",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Dear Land of Guyana.ogg"
+    },
+    {
+      "iso3": "HTI",
+      "iso2": "HT",
+      "name_en": "Haiti",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Dessalinienne.ogg"
+    },
+    {
+      "iso3": "HND",
+      "iso2": "HN",
+      "name_en": "Honduras",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Honduras National Anthem.ogg"
+    },
+    {
+      "iso3": "HUN",
+      "iso2": "HU",
+      "name_en": "Hungary",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Himnusz.ogg"
+    },
+    {
+      "iso3": "ISL",
+      "iso2": "IS",
+      "name_en": "Iceland",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Lofsöngur.ogg"
+    },
+    {
+      "iso3": "IND",
+      "iso2": "IN",
+      "name_en": "India",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Jana Gana Mana.ogg"
+    },
+    {
+      "iso3": "IDN",
+      "iso2": "ID",
+      "name_en": "Indonesia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Indonesia Raya.ogg"
+    },
+    {
+      "iso3": "IRN",
+      "iso2": "IR",
+      "name_en": "Iran (Islamic Republic of)",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Soroud-e Melliye Jomhoorie Eslamiye Iran.ogg"
+    },
+    {
+      "iso3": "IRQ",
+      "iso2": "IQ",
+      "name_en": "Iraq",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Mawtini.ogg"
+    },
+    {
+      "iso3": "IRL",
+      "iso2": "IE",
+      "name_en": "Ireland",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Amhran na bhFiann.ogg"
+    },
+    {
+      "iso3": "ISR",
+      "iso2": "IL",
+      "name_en": "Israel",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Hatikvah.ogg"
+    },
+    {
+      "iso3": "ITA",
+      "iso2": "IT",
+      "name_en": "Italy",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Il Canto degli Italiani.ogg"
+    },
+    {
+      "iso3": "JAM",
+      "iso2": "JM",
+      "name_en": "Jamaica",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Jamaica Land We Love.ogg"
+    },
+    {
+      "iso3": "JPN",
+      "iso2": "JP",
+      "name_en": "Japan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Kimi ga yo.ogg"
+    },
+    {
+      "iso3": "JOR",
+      "iso2": "JO",
+      "name_en": "Jordan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "As-salam al-malaki al-urduni.ogg"
+    },
+    {
+      "iso3": "KAZ",
+      "iso2": "KZ",
+      "name_en": "Kazakhstan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Meniñ Qazaqstanym.ogg"
+    },
+    {
+      "iso3": "KEN",
+      "iso2": "KE",
+      "name_en": "Kenya",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ee Mungu Nguvu Yetu.ogg"
+    },
+    {
+      "iso3": "KIR",
+      "iso2": "KI",
+      "name_en": "Kiribati",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Teirake kaini Kiribati.ogg"
+    },
+    {
+      "iso3": "PRK",
+      "iso2": "KP",
+      "name_en": "Korea (Democratic People's Republic of)",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Aegukka (North Korea).ogg"
+    },
+    {
+      "iso3": "KOR",
+      "iso2": "KR",
+      "name_en": "Korea (Republic of)",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Aegukga.ogg"
+    },
+    {
+      "iso3": "KWT",
+      "iso2": "KW",
+      "name_en": "Kuwait",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Al-Nasheed Al-Watani.ogg"
+    },
+    {
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "name_en": "Kyrgyzstan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "National anthem of Kyrgyzstan.ogg"
+    },
+    {
+      "iso3": "LAO",
+      "iso2": "LA",
+      "name_en": "Lao People's Democratic Republic",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Pheng Xat Lao.ogg"
+    },
+    {
+      "iso3": "LVA",
+      "iso2": "LV",
+      "name_en": "Latvia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Latvian National Anthem.ogg"
+    },
+    {
+      "iso3": "LBN",
+      "iso2": "LB",
+      "name_en": "Lebanon",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Kulluna lil-watan.ogg"
+    },
+    {
+      "iso3": "LSO",
+      "iso2": "LS",
+      "name_en": "Lesotho",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Lesotho Fatse La Bo-ntata Rona.ogg"
+    },
+    {
+      "iso3": "LBR",
+      "iso2": "LR",
+      "name_en": "Liberia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "All Hail Liberia Hail.ogg"
+    },
+    {
+      "iso3": "LBY",
+      "iso2": "LY",
+      "name_en": "Libya",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Libya, Libya, Libya.ogg"
+    },
+    {
+      "iso3": "LIE",
+      "iso2": "LI",
+      "name_en": "Liechtenstein",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Oben am jungen Rhein.ogg"
+    },
+    {
+      "iso3": "LUX",
+      "iso2": "LU",
+      "name_en": "Luxembourg",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ons Heemecht.ogg"
+    },
+    {
+      "iso3": "MDG",
+      "iso2": "MG",
+      "name_en": "Madagascar",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ry Tanindraza nay malala o.ogg"
+    },
+    {
+      "iso3": "MWI",
+      "iso2": "MW",
+      "name_en": "Malawi",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Mlungu dalitsani Malawi.ogg"
+    },
+    {
+      "iso3": "MYS",
+      "iso2": "MY",
+      "name_en": "Malaysia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Negaraku.ogg"
+    },
+    {
+      "iso3": "MDV",
+      "iso2": "MV",
+      "name_en": "Maldives",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Qaumee salaam.ogg"
+    },
+    {
+      "iso3": "MLT",
+      "iso2": "MT",
+      "name_en": "Malta",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "L-Innu Malti.ogg"
+    },
+    {
+      "iso3": "MHL",
+      "iso2": "MH",
+      "name_en": "Marshall Islands",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Forever Marshall Islands.ogg"
+    },
+    {
+      "iso3": "MRT",
+      "iso2": "MR",
+      "name_en": "Mauritania",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "National anthem of Mauritania.ogg"
+    },
+    {
+      "iso3": "MUS",
+      "iso2": "MU",
+      "name_en": "Mauritius",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Motherland (Mauritius).ogg"
+    },
+    {
+      "iso3": "FSM",
+      "iso2": "FM",
+      "name_en": "Micronesia (Federated States of)",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Patriots of Micronesia.ogg"
+    },
+    {
+      "iso3": "MCO",
+      "iso2": "MC",
+      "name_en": "Monaco",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Hymne Monegasque.ogg"
+    },
+    {
+      "iso3": "MNG",
+      "iso2": "MN",
+      "name_en": "Mongolia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Mongol ulsyn toriin duulal.ogg"
+    },
+    {
+      "iso3": "MNE",
+      "iso2": "ME",
+      "name_en": "Montenegro",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "National Anthem of Montenegro.ogg"
+    },
+    {
+      "iso3": "MAR",
+      "iso2": "MA",
+      "name_en": "Morocco",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Hymne Cherifien.ogg"
+    },
+    {
+      "iso3": "MOZ",
+      "iso2": "MZ",
+      "name_en": "Mozambique",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Patria Amada (Mozambique).ogg"
+    },
+    {
+      "iso3": "MMR",
+      "iso2": "MM",
+      "name_en": "Myanmar",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Kaba Ma Kyei.ogg"
+    },
+    {
+      "iso3": "NAM",
+      "iso2": "NA",
+      "name_en": "Namibia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Namibia Land of the Brave.ogg"
+    },
+    {
+      "iso3": "NRU",
+      "iso2": "NR",
+      "name_en": "Nauru",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Nauru Bwiema.ogg"
+    },
+    {
+      "iso3": "NPL",
+      "iso2": "NP",
+      "name_en": "Nepal",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Sayaun Thunga Phool Ka.ogg"
+    },
+    {
+      "iso3": "NLD",
+      "iso2": "NL",
+      "name_en": "Netherlands",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Wilhelmus.ogg"
+    },
+    {
+      "iso3": "NZL",
+      "iso2": "NZ",
+      "name_en": "New Zealand",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "God Defend New Zealand.ogg"
+    },
+    {
+      "iso3": "NER",
+      "iso2": "NE",
+      "name_en": "Niger",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "La Nigerienne.ogg"
+    },
+    {
+      "iso3": "NGA",
+      "iso2": "NG",
+      "name_en": "Nigeria",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Arise O Compatriots.ogg"
+    },
+    {
+      "iso3": "MKD",
+      "iso2": "MK",
+      "name_en": "North Macedonia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Denes nad Makedonija.ogg"
+    },
+    {
+      "iso3": "NOR",
+      "iso2": "NO",
+      "name_en": "Norway",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ja vi elsker dette landet.ogg"
+    },
+    {
+      "iso3": "OMN",
+      "iso2": "OM",
+      "name_en": "Oman",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Nashid as-Salaam as-Sultani.ogg"
+    },
+    {
+      "iso3": "PAK",
+      "iso2": "PK",
+      "name_en": "Pakistan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Qaumi Tarana.ogg"
+    },
+    {
+      "iso3": "PLW",
+      "iso2": "PW",
+      "name_en": "Palau",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Belau rekid.ogg"
+    },
+    {
+      "iso3": "PAN",
+      "iso2": "PA",
+      "name_en": "Panama",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Panama National Anthem.ogg"
+    },
+    {
+      "iso3": "PNG",
+      "iso2": "PG",
+      "name_en": "Papua New Guinea",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "O Arise All You Sons.ogg"
+    },
+    {
+      "iso3": "PRY",
+      "iso2": "PY",
+      "name_en": "Paraguay",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Paraguayan National Anthem.oga"
+    },
+    {
+      "iso3": "PER",
+      "iso2": "PE",
+      "name_en": "Peru",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Himno Nacional del Perú.ogg"
+    },
+    {
+      "iso3": "PHL",
+      "iso2": "PH",
+      "name_en": "Philippines",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Lupang Hinirang.ogg"
+    },
+    {
+      "iso3": "POL",
+      "iso2": "PL",
+      "name_en": "Poland",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Mazurek Dabrowskiego.ogg"
+    },
+    {
+      "iso3": "PRT",
+      "iso2": "PT",
+      "name_en": "Portugal",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "A Portuguesa.ogg"
+    },
+    {
+      "iso3": "QAT",
+      "iso2": "QA",
+      "name_en": "Qatar",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "As-Salam al-Amiri.ogg"
+    },
+    {
+      "iso3": "ROU",
+      "iso2": "RO",
+      "name_en": "Romania",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Romania National Anthem - Desteapta-te Romane.ogg"
+    },
+    {
+      "iso3": "RUS",
+      "iso2": "RU",
+      "name_en": "Russian Federation",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "State Anthem of the Russian Federation.ogg"
+    },
+    {
+      "iso3": "RWA",
+      "iso2": "RW",
+      "name_en": "Rwanda",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Rwanda nziza.ogg"
+    },
+    {
+      "iso3": "KNA",
+      "iso2": "KN",
+      "name_en": "Saint Kitts and Nevis",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Oh Land of Beauty.ogg"
+    },
+    {
+      "iso3": "LCA",
+      "iso2": "LC",
+      "name_en": "Saint Lucia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Sons and Daughters of Saint Lucia.ogg"
+    },
+    {
+      "iso3": "VCT",
+      "iso2": "VC",
+      "name_en": "Saint Vincent and the Grenadines",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Saint Vincent Land So Beautiful.ogg"
+    },
+    {
+      "iso3": "WSM",
+      "iso2": "WS",
+      "name_en": "Samoa",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "O le Fua o le Saolotoga o Samoa.ogg"
+    },
+    {
+      "iso3": "STP",
+      "iso2": "ST",
+      "name_en": "Sao Tome and Principe",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Independencia total.ogg"
+    },
+    {
+      "iso3": "SAU",
+      "iso2": "SA",
+      "name_en": "Saudi Arabia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Aash Al Maleek.ogg"
+    },
+    {
+      "iso3": "SEN",
+      "iso2": "SN",
+      "name_en": "Senegal",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Pincez Tous vos Koras, Frappez les Balafons.ogg"
+    },
+    {
+      "iso3": "SRB",
+      "iso2": "RS",
+      "name_en": "Serbia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Boze pravde.ogg"
+    },
+    {
+      "iso3": "SYC",
+      "iso2": "SC",
+      "name_en": "Seychelles",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Koste Seselwa.ogg"
+    },
+    {
+      "iso3": "SLE",
+      "iso2": "SL",
+      "name_en": "Sierra Leone",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "High We Exalt Thee Realm of the Free.ogg"
+    },
+    {
+      "iso3": "SGP",
+      "iso2": "SG",
+      "name_en": "Singapore",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Majulah Singapura.ogg"
+    },
+    {
+      "iso3": "SVK",
+      "iso2": "SK",
+      "name_en": "Slovakia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Nad Tatrou sa blyska.ogg"
+    },
+    {
+      "iso3": "SVN",
+      "iso2": "SI",
+      "name_en": "Slovenia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Zdravljica.ogg"
+    },
+    {
+      "iso3": "SLB",
+      "iso2": "SB",
+      "name_en": "Solomon Islands",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "God Save Our Solomon Islands.ogg"
+    },
+    {
+      "iso3": "SOM",
+      "iso2": "SO",
+      "name_en": "Somalia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Qolobaa Calankeed.ogg"
+    },
+    {
+      "iso3": "ZAF",
+      "iso2": "ZA",
+      "name_en": "South Africa",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Nkosi Sikelel iAfrika.ogg"
+    },
+    {
+      "iso3": "SSD",
+      "iso2": "SS",
+      "name_en": "South Sudan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "South Sudan Oyee.ogg"
+    },
+    {
+      "iso3": "LKA",
+      "iso2": "LK",
+      "name_en": "Sri Lanka",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Sri Lanka Matha.ogg"
+    },
+    {
+      "iso3": "SDN",
+      "iso2": "SD",
+      "name_en": "Sudan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Nahnu Jund Allah.ogg"
+    },
+    {
+      "iso3": "SUR",
+      "iso2": "SR",
+      "name_en": "Suriname",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "God zij met ons Suriname.ogg"
+    },
+    {
+      "iso3": "SWE",
+      "iso2": "SE",
+      "name_en": "Sweden",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Du gamla, du fria.ogg"
+    },
+    {
+      "iso3": "CHE",
+      "iso2": "CH",
+      "name_en": "Switzerland",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Schweizerpsalm.ogg"
+    },
+    {
+      "iso3": "SYR",
+      "iso2": "SY",
+      "name_en": "Syrian Arab Republic",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Humat ad-Diyar.ogg"
+    },
+    {
+      "iso3": "TJK",
+      "iso2": "TJ",
+      "name_en": "Tajikistan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Surudi milli.ogg"
+    },
+    {
+      "iso3": "TZA",
+      "iso2": "TZ",
+      "name_en": "United Republic of Tanzania",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Mungu ibariki Afrika.ogg"
+    },
+    {
+      "iso3": "THA",
+      "iso2": "TH",
+      "name_en": "Thailand",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Phleng Chat Thai.ogg"
+    },
+    {
+      "iso3": "TLS",
+      "iso2": "TL",
+      "name_en": "Timor-Leste",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Patria (Timor-Leste).ogg"
+    },
+    {
+      "iso3": "TGO",
+      "iso2": "TG",
+      "name_en": "Togo",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Terre de nos aieux.ogg"
+    },
+    {
+      "iso3": "TON",
+      "iso2": "TO",
+      "name_en": "Tonga",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ko e fasi o e tui o e otu Tonga.ogg"
+    },
+    {
+      "iso3": "TTO",
+      "iso2": "TT",
+      "name_en": "Trinidad and Tobago",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Forged from the Love of Liberty.ogg"
+    },
+    {
+      "iso3": "TUN",
+      "iso2": "TN",
+      "name_en": "Tunisia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Humat Al Hima.ogg"
+    },
+    {
+      "iso3": "TUR",
+      "iso2": "TR",
+      "name_en": "Türkiye",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Istiklal Marsi.ogg"
+    },
+    {
+      "iso3": "TKM",
+      "iso2": "TM",
+      "name_en": "Turkmenistan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "National anthem of Turkmenistan.ogg"
+    },
+    {
+      "iso3": "TUV",
+      "iso2": "TV",
+      "name_en": "Tuvalu",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Tuvalu mo te Atua.ogg"
+    },
+    {
+      "iso3": "UGA",
+      "iso2": "UG",
+      "name_en": "Uganda",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Oh Uganda Land of Beauty.ogg"
+    },
+    {
+      "iso3": "UKR",
+      "iso2": "UA",
+      "name_en": "Ukraine",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Shche ne vmerla Ukraina.ogg"
+    },
+    {
+      "iso3": "ARE",
+      "iso2": "AE",
+      "name_en": "United Arab Emirates",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Ishy Bilady.ogg"
+    },
+    {
+      "iso3": "USA",
+      "iso2": "US",
+      "name_en": "United States of America",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": null
+    },
+    {
+      "iso3": "UZB",
+      "iso2": "UZ",
+      "name_en": "Uzbekistan",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "National anthem of Uzbekistan.ogg"
+    },
+    {
+      "iso3": "VUT",
+      "iso2": "VU",
+      "name_en": "Vanuatu",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Yumi Yumi Yumi.ogg"
+    },
+    {
+      "iso3": "VNM",
+      "iso2": "VN",
+      "name_en": "Viet Nam",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Tien Quan Ca.ogg"
+    },
+    {
+      "iso3": "YEM",
+      "iso2": "YE",
+      "name_en": "Yemen",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "United Republic (Yemen).ogg"
+    },
+    {
+      "iso3": "ZMB",
+      "iso2": "ZM",
+      "name_en": "Zambia",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Stand and Sing of Zambia Proud and Free.ogg"
+    },
+    {
+      "iso3": "ZWE",
+      "iso2": "ZW",
+      "name_en": "Zimbabwe",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Blessed Be the Land of Zimbabwe.ogg"
+    },
+    {
+      "iso3": "VAT",
+      "iso2": "VA",
+      "name_en": "Holy See",
+      "category": "advisory_vocal_unknown",
+      "existing_wiki_file": "Inno e Marcia Pontificale.ogg"
+    }
+  ]
+}

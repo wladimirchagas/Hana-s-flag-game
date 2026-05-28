@@ -7,7 +7,10 @@
     "dev": "vite",
     "dev:local": "vite --host 127.0.0.1 --port 5173",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "anthems:catalog": "node scripts/anthems/01_catalog.mjs",
+    "anthems:audit": "node scripts/anthems/02_audit.mjs",
+    "anthems:phase1": "npm run anthems:catalog && npm run anthems:audit"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
