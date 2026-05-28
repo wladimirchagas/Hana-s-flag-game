@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { NATIONAL_ANTHEMS, type AnthemData } from "../data/nationalAnthems";
 import "./NationalAnthemPlayer.css";
 
@@ -182,6 +182,20 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   const [duration, setDuration] = useState(0);
   const [activeLine, setActiveLine] = useState(-1);
 
+  // Normalise lyrics timestamps to the actual recording duration.
+  // Estimated start times occasionally exceed the real file length
+  // (e.g. a 207s recording whose data goes to start:312).  When that
+  // happens we scale every timestamp proportionally so the last line
+  // still falls ~5s before the end rather than past it.
+  const scaledLines = useMemo(() => {
+    const lines = anthem?.lines;
+    if (!lines?.length || !duration) return lines;
+    const lastStart = lines[lines.length - 1].start;
+    if (lastStart <= duration - 4) return lines; // fits fine — no scaling needed
+    const scale = (duration - 4) / lastStart;
+    return lines.map(l => ({ ...l, start: Math.round(l.start * scale * 10) / 10 }));
+  }, [anthem, duration]);
+
   // Determine whether we'll need ogv.js for the current URL
   const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
 
@@ -227,10 +241,10 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       const onTimeUpdate = () => {
         const t = player.currentTime;
         setCurrentTime(t);
-        if (!anthem?.lines) return;
+        if (!scaledLines) return;
         let next = -1;
-        for (let i = anthem.lines.length - 1; i >= 0; i--) {
-          if (t >= anthem.lines[i].start) { next = i; break; }
+        for (let i = scaledLines.length - 1; i >= 0; i--) {
+          if (t >= scaledLines[i].start) { next = i; break; }
         }
         setActiveLine(next);
       };
@@ -295,10 +309,10 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     if (!audio) return;
     const t = audio.currentTime;
     setCurrentTime(t);
-    if (!anthem?.lines) return;
+    if (!scaledLines) return;
     let next = -1;
-    for (let i = anthem.lines.length - 1; i >= 0; i--) {
-      if (t >= anthem.lines[i].start) { next = i; break; }
+    for (let i = scaledLines.length - 1; i >= 0; i--) {
+      if (t >= scaledLines[i].start) { next = i; break; }
     }
     setActiveLine(next);
   }, [anthem]);
@@ -501,9 +515,9 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
 
             {/* Lyrics */}
             <div className="anthem-lyrics" ref={lyricsRef} aria-label="Lyrics">
-              {anthem?.lines ? (
+              {scaledLines ? (
                 <>
-                  {anthem.lines.map((line, i) => {
+                  {scaledLines.map((line, i) => {
                     const state =
                       i === activeLine ? "active" :
                       i < activeLine ? "past" : "future";
