@@ -141,10 +141,31 @@ export async function detectVocalOnset(audioBuffer: AudioBuffer): Promise<number
   const sr = audioBuffer.sampleRate;
   const frameDur = FRAME_MS / 1000;
   const rms = await vocalRMS(audioBuffer, sr);
+  const smoothed = smooth(rms, SMOOTH_FRAMES);
 
-  for (const thresh of [2.5, 2.0, 1.6, 1.3, 1.1]) {
-    const onsets = detectOnsets(rms, frameDur, 500, thresh);
-    if (onsets.length > 0) return onsets[0];
+  // Use the 20th-percentile of smoothed energy as the "quiet section" baseline
+  // rather than the median.  For anthems with orchestral intros, the intro
+  // frames fall in the lower ~20-30% of the energy distribution; the choir
+  // entry then registers as a sustained rise above that floor.  The median
+  // approach fails here because the full-body (choir + orchestra) dominates
+  // most of the file, making median ≈ choir level, so orchestra-alone frames
+  // and choir+orchestra frames are both "below threshold" and no onset fires.
+  const sorted = Float32Array.from(smoothed).sort();
+  const p20 = sorted[Math.floor(sorted.length * 0.2)];
+  const threshold = p20 * 1.4; // 40% above the quiet-section floor
+
+  const minSilenceFrames = Math.ceil(500 / 1000 / frameDur);
+  let silenceRun = minSilenceFrames; // primed so first onset can trigger
+
+  for (let i = 0; i < smoothed.length; i++) {
+    if (smoothed[i] < threshold) {
+      silenceRun++;
+    } else {
+      if (silenceRun >= minSilenceFrames) {
+        return i * frameDur;
+      }
+      silenceRun = 0;
+    }
   }
 
   return firstActiveFrame(rms, frameDur);
