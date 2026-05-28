@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { NATIONAL_ANTHEMS, type AnthemData } from "../data/nationalAnthems";
+import { detectVocalOnset } from "../lib/anthemCalibrate";
 import "./NationalAnthemPlayer.css";
 
 interface Props {
@@ -207,11 +208,6 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   // Reset each time a new audio URL loads.
   const introOffsetRef = useRef(0);
 
-  // Web Audio API nodes — created once, reused across plays of the same URL.
-  // Stored in refs so we never double-attach to the same <audio> element.
-  const audioCtxRef = useRef<AudioContext | null>(null);
-  const mediaSourceRef = useRef<MediaElementAudioSourceNode | null>(null);
-
   // Determine whether we'll need ogv.js for the current URL
   const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
 
@@ -321,120 +317,61 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioUrl, needsOgv]);
 
-  // ── Vocal-onset detection via Web Audio API ─────────────────────────────
-  // After audio URL loads, we connect the <audio> element to an OfflineAudio-
-  // -like chain (but live) via createMediaElementSource.  A bandpass filter
-  // isolates the vocal range (200–4000 Hz); we poll RMS energy every 200 ms
-  // to detect the first sustained rise above a baseline, which marks the true
-  // start of singing.  introOffsetRef is then set to
-  //   (detectedOnsetTime − scaledLines[0].start)
-  // so the active-line lookup is shifted by exactly that amount.
+  // ── Offline vocal-onset detection ───────────────────────────────────────
+  // Fetch the audio, decode it with OfflineAudioContext, bandpass-filter to
+  // the vocal range (200–4000 Hz), compute per-frame RMS, and find the first
+  // sustained onset above the median-based threshold — the same algorithm
+  // used by the calibration tool.  This is far more accurate than sampling a
+  // live stream because the global median gives a proper noise floor even when
+  // there is a loud orchestral intro.
+  //
+  // The fetch re-uses the browser's HTTP cache (the <audio> element will have
+  // already downloaded the file), so in practice this causes no extra network
+  // traffic.  introOffsetRef = detectedOnset − scaledLines[0].start.
   useEffect(() => {
-    if (needsOgv || !audioUrl) return;
-
+    if (!audioUrl) return;
     introOffsetRef.current = 0;
-    const audio = audioRef.current;
-    if (!audio) return;
+    let cancelled = false;
 
-    let ctx: AudioContext;
-    try {
-      ctx = new AudioContext();
-      audioCtxRef.current = ctx;
-    } catch {
-      return;
-    }
+    (async () => {
+      try {
+        const resp = await fetch(audioUrl, { cache: "force-cache" });
+        if (cancelled || !resp.ok) return;
+        const arrayBuf = await resp.arrayBuffer();
+        if (cancelled) return;
 
-    let source: MediaElementAudioSourceNode;
-    try {
-      source = ctx.createMediaElementSource(audio);
-      mediaSourceRef.current = source;
-    } catch {
-      ctx.close().catch(() => {});
-      audioCtxRef.current = null;
-      return;
-    }
-
-    const hp = ctx.createBiquadFilter();
-    hp.type = "highpass";
-    hp.frequency.value = 200;
-    hp.Q.value = 0.7;
-    const lp = ctx.createBiquadFilter();
-    lp.type = "lowpass";
-    lp.frequency.value = 4000;
-    lp.Q.value = 0.7;
-    const analyser = ctx.createAnalyser();
-    analyser.fftSize = 2048;
-    source.connect(hp);
-    hp.connect(lp);
-    lp.connect(analyser);
-    analyser.connect(ctx.destination);
-
-    const buf = new Float32Array(analyser.fftSize);
-    let stopped = false;
-    let intervalId: ReturnType<typeof setInterval> | null = null;
-    let sampleCount = 0;
-    let baselineSum = 0;
-    let baseline = 0;
-    let detectionDone = false;
-    let sustainedStart: number | null = null;
-    const BASELINE_SAMPLES = 15; // ~3 s at 200 ms/sample
-    const ONSET_MULTIPLIER = 2.5;
-    const SUSTAINED_SEC = 0.8;
-
-    function startPolling() {
-      if (stopped || detectionDone || intervalId) return;
-      if (ctx.state === "suspended") ctx.resume().catch(() => {});
-      intervalId = setInterval(() => {
-        if (stopped || detectionDone) { clearInterval(intervalId!); intervalId = null; return; }
-        analyser.getFloatTimeDomainData(buf);
-        let sq = 0;
-        for (let i = 0; i < buf.length; i++) sq += buf[i] * buf[i];
-        const rms = Math.sqrt(sq / buf.length);
-        const t = audio.currentTime;
-        sampleCount++;
-        if (sampleCount <= BASELINE_SAMPLES) {
-          baselineSum += rms;
-          baseline = baselineSum / sampleCount;
-          return;
+        // Decode in a temporary AudioContext (OfflineAudioContext needs length
+        // up-front; we use a regular one just to decode the file).
+        const tmpCtx = new AudioContext();
+        let audioBuffer: AudioBuffer;
+        try {
+          audioBuffer = await tmpCtx.decodeAudioData(arrayBuf);
+        } finally {
+          tmpCtx.close().catch(() => {});
         }
-        const threshold = Math.max(baseline * ONSET_MULTIPLIER, 5e-4);
-        if (rms > threshold) {
-          if (sustainedStart === null) sustainedStart = t;
-          else if (t - sustainedStart >= SUSTAINED_SEC) {
-            detectionDone = true;
-            const firstStart = scaledLinesRef.current?.[0]?.start ?? 0;
-            const offset = sustainedStart - firstStart;
-            if (offset > 0.5) introOffsetRef.current = offset;
-            console.debug(`[onset] onset=${sustainedStart.toFixed(2)}s offset=${introOffsetRef.current.toFixed(2)}s`);
-            clearInterval(intervalId!);
-            intervalId = null;
-          }
-        } else {
-          sustainedStart = null;
+        if (cancelled) return;
+
+        const onset = await detectVocalOnset(audioBuffer);
+        if (cancelled) return;
+
+        // scaledLinesRef is always current; by the time decode+VAD finishes
+        // (several seconds), loadedmetadata will have fired and duration will
+        // be set, so scaledLines will already be proportionally scaled.
+        const firstStart = scaledLinesRef.current?.[0]?.start ?? 0;
+        const offset = onset - firstStart;
+        if (offset > 0.5) {
+          introOffsetRef.current = offset;
         }
-      }, 200);
-    }
+        console.debug(`[onset] onset=${onset.toFixed(2)}s firstStart=${firstStart.toFixed(2)}s offset=${introOffsetRef.current.toFixed(2)}s`);
+      } catch (e) {
+        console.warn("[onset] offline analysis failed:", e);
+        // introOffsetRef stays 0 — lyrics play at stored timestamps
+      }
+    })();
 
-    function stopPolling() {
-      if (intervalId) { clearInterval(intervalId); intervalId = null; }
-    }
-
-    audio.addEventListener("play", startPolling);
-    audio.addEventListener("pause", stopPolling);
-    audio.addEventListener("ended", stopPolling);
-
-    return () => {
-      stopped = true;
-      stopPolling();
-      audio.removeEventListener("play", startPolling);
-      audio.removeEventListener("pause", stopPolling);
-      audio.removeEventListener("ended", stopPolling);
-      ctx.close().catch(() => {});
-      audioCtxRef.current = null;
-      mediaSourceRef.current = null;
-    };
+    return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [audioUrl, needsOgv]);
+  }, [audioUrl]);
 
   // ── Native audio event handlers ─────────────────────────────────────────
   const handleTimeUpdate = useCallback(() => {
