@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import FlagGamePage from './pages/FlagGamePage'
 import LearnPage from './pages/LearnPage'
+import CalibratePage from './pages/CalibratePage'
 import { Topbar } from './components/Topbar'
 import { BuildFooter } from './components/BuildFooter'
 
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/game" element={<FlagGamePage />} />
         <Route path="/learn" element={<LearnPage />} />
+        <Route path="/calibrate" element={<CalibratePage />} />
       </Routes>
       {/* Persistent build-info footer across every route. */}
       <BuildFooter />
