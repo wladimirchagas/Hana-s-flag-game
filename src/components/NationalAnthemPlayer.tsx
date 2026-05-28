@@ -201,6 +201,17 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   const scaledLinesRef = useRef(scaledLines);
   scaledLinesRef.current = scaledLines;
 
+  // Intro-offset: seconds by which the actual vocal onset is later than
+  // scaledLines[0].start.  When > 0, we shift the active-line lookup
+  // backwards by this amount so lyrics only highlight when singing begins.
+  // Reset each time a new audio URL loads.
+  const introOffsetRef = useRef(0);
+
+  // Web Audio API nodes — created once, reused across plays of the same URL.
+  // Stored in refs so we never double-attach to the same <audio> element.
+  const audioCtxRef = useRef<AudioContext | null>(null);
+  const mediaSourceRef = useRef<MediaElementAudioSourceNode | null>(null);
+
   // Determine whether we'll need ogv.js for the current URL
   const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
 
@@ -248,9 +259,10 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
         setCurrentTime(t);
         const lines = scaledLinesRef.current;
         if (!lines) return;
+        const adj = t - introOffsetRef.current;
         let next = -1;
         for (let i = lines.length - 1; i >= 0; i--) {
-          if (t >= lines[i].start) { next = i; break; }
+          if (adj >= lines[i].start) { next = i; break; }
         }
         setActiveLine(next);
       };
@@ -309,6 +321,121 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioUrl, needsOgv]);
 
+  // ── Vocal-onset detection via Web Audio API ─────────────────────────────
+  // After audio URL loads, we connect the <audio> element to an OfflineAudio-
+  // -like chain (but live) via createMediaElementSource.  A bandpass filter
+  // isolates the vocal range (200–4000 Hz); we poll RMS energy every 200 ms
+  // to detect the first sustained rise above a baseline, which marks the true
+  // start of singing.  introOffsetRef is then set to
+  //   (detectedOnsetTime − scaledLines[0].start)
+  // so the active-line lookup is shifted by exactly that amount.
+  useEffect(() => {
+    if (needsOgv || !audioUrl) return;
+
+    introOffsetRef.current = 0;
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    let ctx: AudioContext;
+    try {
+      ctx = new AudioContext();
+      audioCtxRef.current = ctx;
+    } catch {
+      return;
+    }
+
+    let source: MediaElementAudioSourceNode;
+    try {
+      source = ctx.createMediaElementSource(audio);
+      mediaSourceRef.current = source;
+    } catch {
+      ctx.close().catch(() => {});
+      audioCtxRef.current = null;
+      return;
+    }
+
+    const hp = ctx.createBiquadFilter();
+    hp.type = "highpass";
+    hp.frequency.value = 200;
+    hp.Q.value = 0.7;
+    const lp = ctx.createBiquadFilter();
+    lp.type = "lowpass";
+    lp.frequency.value = 4000;
+    lp.Q.value = 0.7;
+    const analyser = ctx.createAnalyser();
+    analyser.fftSize = 2048;
+    source.connect(hp);
+    hp.connect(lp);
+    lp.connect(analyser);
+    analyser.connect(ctx.destination);
+
+    const buf = new Float32Array(analyser.fftSize);
+    let stopped = false;
+    let intervalId: ReturnType<typeof setInterval> | null = null;
+    let sampleCount = 0;
+    let baselineSum = 0;
+    let baseline = 0;
+    let detectionDone = false;
+    let sustainedStart: number | null = null;
+    const BASELINE_SAMPLES = 15; // ~3 s at 200 ms/sample
+    const ONSET_MULTIPLIER = 2.5;
+    const SUSTAINED_SEC = 0.8;
+
+    function startPolling() {
+      if (stopped || detectionDone || intervalId) return;
+      if (ctx.state === "suspended") ctx.resume().catch(() => {});
+      intervalId = setInterval(() => {
+        if (stopped || detectionDone) { clearInterval(intervalId!); intervalId = null; return; }
+        analyser.getFloatTimeDomainData(buf);
+        let sq = 0;
+        for (let i = 0; i < buf.length; i++) sq += buf[i] * buf[i];
+        const rms = Math.sqrt(sq / buf.length);
+        const t = audio.currentTime;
+        sampleCount++;
+        if (sampleCount <= BASELINE_SAMPLES) {
+          baselineSum += rms;
+          baseline = baselineSum / sampleCount;
+          return;
+        }
+        const threshold = Math.max(baseline * ONSET_MULTIPLIER, 5e-4);
+        if (rms > threshold) {
+          if (sustainedStart === null) sustainedStart = t;
+          else if (t - sustainedStart >= SUSTAINED_SEC) {
+            detectionDone = true;
+            const firstStart = scaledLinesRef.current?.[0]?.start ?? 0;
+            const offset = sustainedStart - firstStart;
+            if (offset > 0.5) introOffsetRef.current = offset;
+            console.debug(`[onset] onset=${sustainedStart.toFixed(2)}s offset=${introOffsetRef.current.toFixed(2)}s`);
+            clearInterval(intervalId!);
+            intervalId = null;
+          }
+        } else {
+          sustainedStart = null;
+        }
+      }, 200);
+    }
+
+    function stopPolling() {
+      if (intervalId) { clearInterval(intervalId); intervalId = null; }
+    }
+
+    audio.addEventListener("play", startPolling);
+    audio.addEventListener("pause", stopPolling);
+    audio.addEventListener("ended", stopPolling);
+
+    return () => {
+      stopped = true;
+      stopPolling();
+      audio.removeEventListener("play", startPolling);
+      audio.removeEventListener("pause", stopPolling);
+      audio.removeEventListener("ended", stopPolling);
+      ctx.close().catch(() => {});
+      audioCtxRef.current = null;
+      mediaSourceRef.current = null;
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [audioUrl, needsOgv]);
+
   // ── Native audio event handlers ─────────────────────────────────────────
   const handleTimeUpdate = useCallback(() => {
     const audio = audioRef.current;
@@ -317,9 +444,10 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     setCurrentTime(t);
     const lines = scaledLinesRef.current;
     if (!lines) return;
+    const adj = t - introOffsetRef.current;
     let next = -1;
     for (let i = lines.length - 1; i >= 0; i--) {
-      if (t >= lines[i].start) { next = i; break; }
+      if (adj >= lines[i].start) { next = i; break; }
     }
     setActiveLine(next);
   }, []);
