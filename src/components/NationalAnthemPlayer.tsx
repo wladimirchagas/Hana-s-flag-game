@@ -182,6 +182,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [activeLine, setActiveLine] = useState(-1);
+  const [activeWordIdx, setActiveWordIdx] = useState(-1);
 
   // Normalise lyrics timestamps to the actual recording duration.
   // Estimated start times occasionally exceed the real file length
@@ -194,7 +195,11 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     const lastStart = lines[lines.length - 1].start;
     if (lastStart <= duration - 4) return lines; // fits fine — no scaling needed
     const scale = (duration - 4) / lastStart;
-    return lines.map(l => ({ ...l, start: Math.round(l.start * scale * 10) / 10 }));
+    return lines.map(l => ({
+      ...l,
+      start: Math.round(l.start * scale * 10) / 10,
+      words: l.words?.map(w => ({ ...w, t: Math.round(w.t * scale * 10) / 10 })),
+    }));
   }, [anthem, duration]);
 
   // Ref that always holds the current scaledLines so event-handler closures
@@ -256,11 +261,25 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
         const lines = scaledLinesRef.current;
         if (!lines) return;
         const adj = t - introOffsetRef.current;
-        let next = -1;
+        let lineIdx = -1;
         for (let i = lines.length - 1; i >= 0; i--) {
-          if (adj >= lines[i].start) { next = i; break; }
+          if (adj >= lines[i].start) { lineIdx = i; break; }
         }
-        setActiveLine(next);
+        setActiveLine(lineIdx);
+        if (lineIdx >= 0) {
+          const words = lines[lineIdx].words;
+          if (words?.length) {
+            let wi = -1;
+            for (let i = words.length - 1; i >= 0; i--) {
+              if (adj >= words[i].t) { wi = i; break; }
+            }
+            setActiveWordIdx(wi);
+          } else {
+            setActiveWordIdx(-1);
+          }
+        } else {
+          setActiveWordIdx(-1);
+        }
       };
       const onLoadedMetadata = () => {
         setDuration(player.duration);
@@ -269,6 +288,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       const onEnded = () => {
         setIsPlaying(false);
         setActiveLine(-1);
+        setActiveWordIdx(-1);
         player.currentTime = 0;
         setCurrentTime(0);
       };
@@ -386,11 +406,25 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     const lines = scaledLinesRef.current;
     if (!lines) return;
     const adj = t - introOffsetRef.current;
-    let next = -1;
+    let lineIdx = -1;
     for (let i = lines.length - 1; i >= 0; i--) {
-      if (adj >= lines[i].start) { next = i; break; }
+      if (adj >= lines[i].start) { lineIdx = i; break; }
     }
-    setActiveLine(next);
+    setActiveLine(lineIdx);
+    if (lineIdx >= 0) {
+      const words = lines[lineIdx].words;
+      if (words?.length) {
+        let wi = -1;
+        for (let i = words.length - 1; i >= 0; i--) {
+          if (adj >= words[i].t) { wi = i; break; }
+        }
+        setActiveWordIdx(wi);
+      } else {
+        setActiveWordIdx(-1);
+      }
+    } else {
+      setActiveWordIdx(-1);
+    }
   }, []);
 
   const handleLoadedMetadata = useCallback(() => {
@@ -400,6 +434,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   const handleEnded = useCallback(() => {
     setIsPlaying(false);
     setActiveLine(-1);
+    setActiveWordIdx(-1);
     if (audioRef.current) audioRef.current.currentTime = 0;
     setCurrentTime(0);
   }, []);
@@ -604,7 +639,20 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
                         data-line={i}
                         className={`anthem-lyrics__line anthem-lyrics__line--${state}${hasDualLang ? " anthem-lyrics__line--dual" : ""}`}
                       >
-                        <span className="anthem-lyrics__original">{line.text}</span>
+                        <span className="anthem-lyrics__original">
+                          {line.words ? (
+                            line.words.map((word, wi) => {
+                              const wState = i === activeLine
+                                ? wi === activeWordIdx ? "active" : wi < activeWordIdx ? "past" : "future"
+                                : state === "past" ? "past" : "future";
+                              return (
+                                <span key={wi} className={`anthem-word anthem-word--${wState}`}>
+                                  {word.w}{wi < line.words!.length - 1 ? " " : ""}
+                                </span>
+                              );
+                            })
+                          ) : line.text}
+                        </span>
                         {hasDualLang && (
                           <span className="anthem-lyrics__translation">{line.textEn}</span>
                         )}
