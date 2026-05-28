@@ -130,6 +130,27 @@ function firstActiveFrame(rms: Float32Array, frameDurationSec: number): number {
 }
 
 /**
+ * Detect the timestamp (seconds) of the first vocal onset in an AudioBuffer.
+ *
+ * Bandpass-filters to the vocal range, computes per-frame RMS, then runs
+ * onset detection with progressively relaxed thresholds until at least one
+ * onset is found.  Falls back to firstActiveFrame when nothing is detected.
+ * Returns 0 if the buffer is effectively silent.
+ */
+export async function detectVocalOnset(audioBuffer: AudioBuffer): Promise<number> {
+  const sr = audioBuffer.sampleRate;
+  const frameDur = FRAME_MS / 1000;
+  const rms = await vocalRMS(audioBuffer, sr);
+
+  for (const thresh of [2.5, 2.0, 1.6, 1.3, 1.1]) {
+    const onsets = detectOnsets(rms, frameDur, 500, thresh);
+    if (onsets.length > 0) return onsets[0];
+  }
+
+  return firstActiveFrame(rms, frameDur);
+}
+
+/**
  * Given an AudioBuffer and the number of lyric lines, return an array
  * of `numLines` start-timestamps (in seconds).
  *

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { NATIONAL_ANTHEMS, type AnthemData } from "../data/nationalAnthems";
+import { detectVocalOnset } from "../lib/anthemCalibrate";
 import "./NationalAnthemPlayer.css";
 
 interface Props {
@@ -196,6 +197,17 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     return lines.map(l => ({ ...l, start: Math.round(l.start * scale * 10) / 10 }));
   }, [anthem, duration]);
 
+  // Ref that always holds the current scaledLines so event-handler closures
+  // never see a stale value after duration updates.
+  const scaledLinesRef = useRef(scaledLines);
+  scaledLinesRef.current = scaledLines;
+
+  // Intro-offset: seconds by which the actual vocal onset is later than
+  // scaledLines[0].start.  When > 0, we shift the active-line lookup
+  // backwards by this amount so lyrics only highlight when singing begins.
+  // Reset each time a new audio URL loads.
+  const introOffsetRef = useRef(0);
+
   // Determine whether we'll need ogv.js for the current URL
   const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
 
@@ -241,10 +253,12 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       const onTimeUpdate = () => {
         const t = player.currentTime;
         setCurrentTime(t);
-        if (!scaledLines) return;
+        const lines = scaledLinesRef.current;
+        if (!lines) return;
+        const adj = t - introOffsetRef.current;
         let next = -1;
-        for (let i = scaledLines.length - 1; i >= 0; i--) {
-          if (t >= scaledLines[i].start) { next = i; break; }
+        for (let i = lines.length - 1; i >= 0; i--) {
+          if (adj >= lines[i].start) { next = i; break; }
         }
         setActiveLine(next);
       };
@@ -303,19 +317,77 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioUrl, needsOgv]);
 
+  // ── Offline vocal-onset detection ───────────────────────────────────────
+  // Fetch the audio, decode it with OfflineAudioContext, bandpass-filter to
+  // the vocal range (200–4000 Hz), compute per-frame RMS, and find the first
+  // sustained onset above the median-based threshold — the same algorithm
+  // used by the calibration tool.  This is far more accurate than sampling a
+  // live stream because the global median gives a proper noise floor even when
+  // there is a loud orchestral intro.
+  //
+  // The fetch re-uses the browser's HTTP cache (the <audio> element will have
+  // already downloaded the file), so in practice this causes no extra network
+  // traffic.  introOffsetRef = detectedOnset − scaledLines[0].start.
+  useEffect(() => {
+    if (!audioUrl) return;
+    introOffsetRef.current = 0;
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const resp = await fetch(audioUrl, { cache: "force-cache" });
+        if (cancelled || !resp.ok) return;
+        const arrayBuf = await resp.arrayBuffer();
+        if (cancelled) return;
+
+        // Decode in a temporary AudioContext (OfflineAudioContext needs length
+        // up-front; we use a regular one just to decode the file).
+        const tmpCtx = new AudioContext();
+        let audioBuffer: AudioBuffer;
+        try {
+          audioBuffer = await tmpCtx.decodeAudioData(arrayBuf);
+        } finally {
+          tmpCtx.close().catch(() => {});
+        }
+        if (cancelled) return;
+
+        const onset = await detectVocalOnset(audioBuffer);
+        if (cancelled) return;
+
+        // scaledLinesRef is always current; by the time decode+VAD finishes
+        // (several seconds), loadedmetadata will have fired and duration will
+        // be set, so scaledLines will already be proportionally scaled.
+        const firstStart = scaledLinesRef.current?.[0]?.start ?? 0;
+        const offset = onset - firstStart;
+        if (offset > 0.5) {
+          introOffsetRef.current = offset;
+        }
+        console.debug(`[onset] onset=${onset.toFixed(2)}s firstStart=${firstStart.toFixed(2)}s offset=${introOffsetRef.current.toFixed(2)}s`);
+      } catch (e) {
+        console.warn("[onset] offline analysis failed:", e);
+        // introOffsetRef stays 0 — lyrics play at stored timestamps
+      }
+    })();
+
+    return () => { cancelled = true; };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [audioUrl]);
+
   // ── Native audio event handlers ─────────────────────────────────────────
   const handleTimeUpdate = useCallback(() => {
     const audio = audioRef.current;
     if (!audio) return;
     const t = audio.currentTime;
     setCurrentTime(t);
-    if (!scaledLines) return;
+    const lines = scaledLinesRef.current;
+    if (!lines) return;
+    const adj = t - introOffsetRef.current;
     let next = -1;
-    for (let i = scaledLines.length - 1; i >= 0; i--) {
-      if (t >= scaledLines[i].start) { next = i; break; }
+    for (let i = lines.length - 1; i >= 0; i--) {
+      if (adj >= lines[i].start) { next = i; break; }
     }
     setActiveLine(next);
-  }, [anthem]);
+  }, []);
 
   const handleLoadedMetadata = useCallback(() => {
     setDuration(audioRef.current?.duration ?? 0);
