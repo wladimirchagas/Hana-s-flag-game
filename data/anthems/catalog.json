@@ -199,15 +199,15 @@
       "wikimedia_search_terms": [
         "Himno Nacional Argentino",
         "Argentine National Anthem",
-        "Himno Nacional Argentino vocal sung Argentina",
+        "Himno Nacional Argentino vocal coral coro Argentina",
         "Argentina national anthem",
-        "United States Navy Band - Himno Nacional Argentino"
+        "Himno Nacional de Argentina (Coro Polifónico Nacional y Banda Militar)"
       ],
       "existing_anthem": {
         "title": "Himno Nacional Argentino",
         "title_en": "Argentine National Anthem",
-        "wiki_file": "United States Navy Band - Himno Nacional Argentino.ogg",
-        "wiki_search": "Himno Nacional Argentino vocal sung Argentina",
+        "wiki_file": "Himno Nacional de Argentina (Coro Polifónico Nacional y Banda Militar).ogg",
+        "wiki_search": "Himno Nacional Argentino vocal coral coro Argentina",
         "language": "es",
         "instrumental_marked": false,
         "line_count": 14,
@@ -215,7 +215,7 @@
         "has_word_timestamps": false
       },
       "status": {
-        "audio": "instrumental_inferred",
+        "audio": "vocal_likely",
         "lyrics": "line_aligned"
       },
       "lyrics_license_source": "wikipedia_cc-by-sa-4.0"
@@ -260,11 +260,13 @@
       "wikipedia_anthem_slug": "Advance_Australia_Fair",
       "wikimedia_search_terms": [
         "Advance Australia Fair",
+        "Advance Australia Fair vocal sung anthem",
         "Australia national anthem"
       ],
       "existing_anthem": {
         "title": "Advance Australia Fair",
         "wiki_file": "Advance Australia Fair.ogg",
+        "wiki_search": "Advance Australia Fair vocal sung anthem",
         "language": "en",
         "instrumental_marked": false,
         "line_count": 10,

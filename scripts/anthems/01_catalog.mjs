@@ -23,7 +23,7 @@ const NATIONS_PATH = path.join(REPO_ROOT, "data", "anthems", "nations.json");
 const CATALOG_PATH = path.join(REPO_ROOT, "data", "anthems", "catalog.json");
 const MANIFEST_PATH = path.join(REPO_ROOT, "data", "anthems", "manifest.json");
 
-const WIKI_FILE_VOCAL_HINT = /vocal|sung|voice|choral|choir|singing|with[-_ ]?lyrics|coral|cantad/i;
+const WIKI_FILE_VOCAL_HINT = /vocal|sung|voice|choral|choir|singing|with[-_ ]?lyrics|coral|cantad|\bcoro\b|polifón|polifon/i;
 const WIKI_FILE_INSTR_HINT = /instrumental|instr[._-]|orchestra(?:[-_ ]only)?|without[-_ ]?vocal|karaok|backing[-_ ]?track|band|brass/i;
 
 function loadJson(p) {

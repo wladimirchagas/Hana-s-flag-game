@@ -3,13 +3,13 @@
   "generated_at": "2026-05-28",
   "counts": {
     "total_nations": 195,
-    "gaps": 13,
-    "blockers": 10,
+    "gaps": 12,
+    "blockers": 9,
     "documented_exceptions": 3,
     "advisories": 174
   },
   "by_category": {
-    "instrumental_audio_only": 10,
+    "instrumental_audio_only": 9,
     "no_lyrics_documented": 3
   },
   "gaps": [
@@ -21,15 +21,6 @@
       "blocker": true,
       "existing_wiki_file": "Angolan-National-Anthem- US-Navy-Band.ogg",
       "line_count": 10
-    },
-    {
-      "iso3": "ARG",
-      "iso2": "AR",
-      "name_en": "Argentina",
-      "category": "instrumental_audio_only",
-      "blocker": true,
-      "existing_wiki_file": "United States Navy Band - Himno Nacional Argentino.ogg",
-      "line_count": 14
     },
     {
       "iso3": "BEL",

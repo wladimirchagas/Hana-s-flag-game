@@ -134,8 +134,8 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
   },
   AR: {
     title: "Himno Nacional Argentino", titleEn: "Argentine National Anthem",
-    wikiFile: "United States Navy Band - Himno Nacional Argentino.ogg",
-    wikiSearch: "Himno Nacional Argentino vocal sung Argentina",
+    wikiFile: "Himno Nacional de Argentina (Coro Polifónico Nacional y Banda Militar).ogg",
+    wikiSearch: "Himno Nacional Argentino vocal coral coro Argentina",
     language: "es",
     lines: [
       { text: "¡Oíd, mortales!, el grito sagrado:", textEn: "Hear, mortals! the sacred cry:", start: 3 },
@@ -170,6 +170,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
   AU: {
     title: "Advance Australia Fair",
     wikiFile: "Advance Australia Fair.ogg", language: "en",
+    wikiSearch: "Advance Australia Fair vocal sung anthem",
     lines: [
       { text: "Australians all let us rejoice,", start: 0 },
       { text: "For we are young and free;", start: 7 },
