@@ -4,7 +4,7 @@
   "source_seed": "data/anthems/nations.json",
   "source_existing_anthems": "src/data/nationalAnthems.ts",
   "nation_count": 195,
-  "existing_anthem_count": 191,
+  "existing_anthem_count": 195,
   "entries": [
     {
       "iso3": "AFG",
@@ -136,16 +136,30 @@
       "official_languages": [
         "pt"
       ],
-      "wikipedia_anthem_slug": "Angola_national_anthem",
+      "wikipedia_anthem_slug": "Forward_Angola",
       "wikimedia_search_terms": [
-        "Angola national anthem"
+        "Angola Avante",
+        "Forward Angola",
+        "Angola Avante national anthem vocal Portuguese",
+        "Angola national anthem",
+        "Angolan-National-Anthem- US-Navy-Band"
       ],
-      "existing_anthem": null,
-      "status": {
-        "audio": "no_entry",
-        "lyrics": "no_entry"
+      "existing_anthem": {
+        "title": "Angola Avante",
+        "title_en": "Forward Angola",
+        "wiki_file": "Angolan-National-Anthem- US-Navy-Band.ogg",
+        "wiki_search": "Angola Avante national anthem vocal Portuguese",
+        "language": "pt",
+        "instrumental_marked": false,
+        "line_count": 10,
+        "lines_with_word_timings": 0,
+        "has_word_timestamps": false
       },
-      "lyrics_license_source": null
+      "status": {
+        "audio": "instrumental_inferred",
+        "lyrics": "line_aligned"
+      },
+      "lyrics_license_source": "wikipedia_cc-by-sa-4.0"
     },
     {
       "iso3": "ATG",
@@ -628,16 +642,26 @@
         "hr",
         "sr"
       ],
-      "wikipedia_anthem_slug": "Bosnia_and_Herzegovina_national_anthem",
+      "wikipedia_anthem_slug": "Intermeco",
       "wikimedia_search_terms": [
-        "Bosnia and Herzegovina national anthem"
+        "Intermeco",
+        "Bosnia and Herzegovina national anthem",
+        "Bosnian National Anthem (US Navy Band)"
       ],
-      "existing_anthem": null,
-      "status": {
-        "audio": "no_entry",
-        "lyrics": "no_entry"
+      "existing_anthem": {
+        "title": "Intermeco",
+        "wiki_file": "Bosnian National Anthem (US Navy Band).ogg",
+        "language": "bs",
+        "instrumental_marked": true,
+        "line_count": 1,
+        "lines_with_word_timings": 0,
+        "has_word_timestamps": false
       },
-      "lyrics_license_source": null
+      "status": {
+        "audio": "instrumental_marked",
+        "lyrics": "line_aligned"
+      },
+      "lyrics_license_source": "wikipedia_cc-by-sa-4.0"
     },
     {
       "iso3": "BWA",
@@ -3154,16 +3178,30 @@
         "bm",
         "fr"
       ],
-      "wikipedia_anthem_slug": "Mali_national_anthem",
+      "wikipedia_anthem_slug": "Mali",
       "wikimedia_search_terms": [
-        "Mali national anthem"
+        "Le Mali",
+        "Mali",
+        "Mali national anthem Pour l'Afrique et pour toi vocal",
+        "Mali national anthem",
+        "Malian national anthem, full version"
       ],
-      "existing_anthem": null,
-      "status": {
-        "audio": "no_entry",
-        "lyrics": "no_entry"
+      "existing_anthem": {
+        "title": "Le Mali",
+        "title_en": "Mali",
+        "wiki_file": "Malian national anthem, full version.ogg",
+        "wiki_search": "Mali national anthem Pour l'Afrique et pour toi vocal",
+        "language": "fr",
+        "instrumental_marked": false,
+        "line_count": 10,
+        "lines_with_word_timings": 0,
+        "has_word_timestamps": false
       },
-      "lyrics_license_source": null
+      "status": {
+        "audio": "vocal_uncertain",
+        "lyrics": "line_aligned"
+      },
+      "lyrics_license_source": "wikipedia_cc-by-sa-4.0"
     },
     {
       "iso3": "MLT",
@@ -5778,16 +5816,30 @@
       "official_languages": [
         "ar"
       ],
-      "wikipedia_anthem_slug": "State_of_Palestine_national_anthem",
+      "wikipedia_anthem_slug": "Warrior",
       "wikimedia_search_terms": [
-        "State of Palestine national anthem"
+        "فدائي",
+        "Warrior",
+        "Fida'i Palestine national anthem vocal",
+        "State of Palestine national anthem",
+        "National Anthem of Palestine (Vocal)"
       ],
-      "existing_anthem": null,
-      "status": {
-        "audio": "no_entry",
-        "lyrics": "no_entry"
+      "existing_anthem": {
+        "title": "فدائي",
+        "title_en": "Warrior",
+        "wiki_file": "National Anthem of Palestine (Vocal).ogg",
+        "wiki_search": "Fida'i Palestine national anthem vocal",
+        "language": "ar",
+        "instrumental_marked": false,
+        "line_count": 8,
+        "lines_with_word_timings": 0,
+        "has_word_timestamps": false
       },
-      "lyrics_license_source": null
+      "status": {
+        "audio": "vocal_likely",
+        "lyrics": "line_aligned"
+      },
+      "lyrics_license_source": "wikipedia_cc-by-sa-4.0"
     }
   ]
 }

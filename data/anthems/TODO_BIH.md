@@ -1,27 +1,26 @@
 # TODO: Bosnia and Herzegovina (BIH / BA)
 
-**Gap category:** `missing_entry`
+**Gap category:** `no_lyrics_documented`
 **Official language(s):** bs, hr, sr
-**Wikipedia anthem slug (guess):** `Bosnia_and_Herzegovina_national_anthem`
+**Wikipedia anthem slug (guess):** `Intermeco`
 
 ## Status
-No entry exists in `src/data/nationalAnthems.ts` for this country.
-Both lyrics *and* an audio source must be sourced before this
-country can join the karaoke player.
+This anthem has no official lyrics. The existing entry is marked
+instrumental and is kept as a documented exception alongside Vatican
+(Holy See).
 
 ## What to do
-1. Find the official native-language lyrics on Wikipedia (preferred)
-   or the relevant government site. Capture an English translation
-   with provenance (`official_translation` / `wikipedia_translation`).
-2. Find a freely licensed vocal recording on Wikimedia Commons.
-   Acceptable licences: Public Domain, CC0, CC-BY, CC-BY-SA.
-3. Add a `wikiFile` + `lines[]` block to `src/data/nationalAnthems.ts`.
-4. Re-run `npm run anthems:catalog` to confirm the gap closes.
+No action required for the karaoke build. The player should fall
+back to a non-karaoke instrumental playback view for this country.
+Confirm the documented-exception list is rendered in the UI
+(e.g. an "instrumental only — no lyrics" badge).
 
 ## Search seeds
 Wikimedia Commons keyword candidates:
 
+- `Intermeco`
 - `Bosnia and Herzegovina national anthem`
+- `Bosnian National Anthem (US Navy Band)`
 
 ## Acceptance criteria
 - [ ] Lyrics in native script committed
