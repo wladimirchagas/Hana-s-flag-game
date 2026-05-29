@@ -23,6 +23,21 @@ const INSTR_HINT = /instrumental|instr\.|orchestra only|without.?vocal/i;
 const OGG_EXT = /\.(ogg|oga)$/i;
 const API = "https://commons.wikimedia.org/w/api.php";
 
+// Wikimedia API calls without an explicit timeout can hang indefinitely on a
+// stalled CDN, which previously left the player stuck on "Loading anthem…"
+// with no error path. 8s per call lets one slow lookup fail fast so the next
+// fallback strategy in `resolveWikimediaUrl` can take a turn.
+const FETCH_TIMEOUT_MS = 8000;
+async function fetchWithTimeout(input: string, timeoutMs = FETCH_TIMEOUT_MS): Promise<Response> {
+  const ctrl = new AbortController();
+  const id = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    return await fetch(input, { signal: ctrl.signal });
+  } finally {
+    clearTimeout(id);
+  }
+}
+
 // Detect native OGG Vorbis support (absent on Safari / all iOS browsers)
 const _probe = typeof Audio !== "undefined" ? new Audio() : null;
 const _supportsOgg = (_probe?.canPlayType("audio/ogg; codecs=vorbis") ?? "") !== "";
@@ -40,7 +55,7 @@ const NATIVE_EXT = new RegExp(`\\.(${_nativeExts})$`, "i");
 async function getFileUrl(title: string, exclude?: Set<string>): Promise<string | null> {
   const full = title.startsWith("File:") ? title : `File:${title}`;
   const url = `${API}?action=query&titles=${encodeURIComponent(full)}&prop=imageinfo&iiprop=url&format=json&origin=*`;
-  const res = await fetch(url);
+  const res = await fetchWithTimeout(url);
   if (!res.ok) throw new Error(`Wikimedia API HTTP ${res.status}`);
   const data = await res.json();
   const pages = data?.query?.pages ?? {};
@@ -53,7 +68,7 @@ async function getFileUrl(title: string, exclude?: Set<string>): Promise<string 
 }
 
 async function searchAudio(query: string, preferVocal = true, exclude?: Set<string>): Promise<string | null> {
-  const res = await fetch(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=12&srprop=title&format=json&origin=*`);
+  const res = await fetchWithTimeout(`${API}?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=6&srlimit=12&srprop=title&format=json&origin=*`);
   if (!res.ok) throw new Error(`Wikimedia search HTTP ${res.status}`);
   const data = await res.json();
   const results: { title: string }[] = data?.query?.search ?? [];

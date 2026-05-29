@@ -329,14 +329,14 @@
       "wikipedia_anthem_slug": "Advance_Australia_Fair",
       "wikimedia_search_terms": [
         "Advance Australia Fair",
-        "Advance Australia Fair Peter Dawson vocal sung anthem",
+        "Advance Australia Fair vocal sung anthem",
         "Australia national anthem",
-        "Advance Australia Fair (1927)"
+        "U.S. Navy Band, Advance Australia Fair (instrumental)"
       ],
       "existing_anthem": {
         "title": "Advance Australia Fair",
-        "wiki_file": "Advance Australia Fair (1927).ogg",
-        "wiki_search": "Advance Australia Fair Peter Dawson vocal sung anthem",
+        "wiki_file": "U.S. Navy Band, Advance Australia Fair (instrumental).ogg",
+        "wiki_search": "Advance Australia Fair vocal sung anthem",
         "language": "en",
         "instrumental_marked": false,
         "line_count": 10,
@@ -344,7 +344,7 @@
         "has_word_timestamps": false
       },
       "status": {
-        "audio": "vocal_uncertain",
+        "audio": "instrumental_inferred",
         "lyrics": "line_aligned"
       },
       "audio": {

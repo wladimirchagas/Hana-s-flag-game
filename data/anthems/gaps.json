@@ -3,13 +3,13 @@
   "generated_at": "2026-05-29",
   "counts": {
     "total_nations": 195,
-    "gaps": 12,
-    "blockers": 9,
+    "gaps": 13,
+    "blockers": 10,
     "documented_exceptions": 3,
-    "advisories": 174
+    "advisories": 173
   },
   "by_category": {
-    "instrumental_audio_only": 9,
+    "instrumental_audio_only": 10,
     "no_lyrics_documented": 3
   },
   "gaps": [
@@ -20,6 +20,15 @@
       "category": "instrumental_audio_only",
       "blocker": true,
       "existing_wiki_file": "Angolan-National-Anthem- US-Navy-Band.ogg",
+      "line_count": 10
+    },
+    {
+      "iso3": "AUS",
+      "iso2": "AU",
+      "name_en": "Australia",
+      "category": "instrumental_audio_only",
+      "blocker": true,
+      "existing_wiki_file": "U.S. Navy Band, Advance Australia Fair (instrumental).ogg",
       "line_count": 10
     },
     {
@@ -164,13 +173,6 @@
       "name_en": "Armenia",
       "category": "advisory_vocal_unknown",
       "existing_wiki_file": "Armenian National Anthem.ogg"
-    },
-    {
-      "iso3": "AUS",
-      "iso2": "AU",
-      "name_en": "Australia",
-      "category": "advisory_vocal_unknown",
-      "existing_wiki_file": "Advance Australia Fair (1927).ogg"
     },
     {
       "iso3": "AUT",
