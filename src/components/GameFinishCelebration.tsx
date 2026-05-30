@@ -40,10 +40,20 @@ export function GameFinishCelebration({
   onContinue,
 }: GameFinishCelebrationProps) {
   const saveRef = useRef<HTMLButtonElement>(null);
+  const onContinueRef = useRef(onContinue);
+  useEffect(() => {
+    onContinueRef.current = onContinue;
+  }, [onContinue]);
 
+  // Mount-only: lock body scroll, focus the Save button once, and bind the
+  // Escape-to-dismiss listener. Splitting this from any prop dependency keeps
+  // the setTimeout from re-firing on every parent render — otherwise typing
+  // in the name input below would steal focus 50ms after each keystroke and
+  // (on mobile) cause the next character to replace the field instead of
+  // appending to it.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onContinue();
+      if (e.key === "Escape") onContinueRef.current();
     };
     window.addEventListener("keydown", onKey);
     const prevOverflow = document.body.style.overflow;
@@ -54,7 +64,7 @@ export function GameFinishCelebration({
       document.body.style.overflow = prevOverflow;
       window.clearTimeout(t);
     };
-  }, [onContinue]);
+  }, []);
 
   const accuracy =
     totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
