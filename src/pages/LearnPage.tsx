@@ -741,11 +741,11 @@ export default function LearnPage() {
                         aria-pressed={inList}
                         title={
                           inList
-                            ? `Remove ${display.country.name} from your Hana's list`
-                            : `Add ${display.country.name} to your Hana's list`
+                            ? `Remove ${display.country.name} from your list`
+                            : `Add ${display.country.name} to your list`
                         }
                       >
-                        {inList ? "✓ In Hana's list" : "+ Add to Hana's list"}
+                        {inList ? "✓ In my list" : "+ Add to my list"}
                       </button>
                     </div>
                   );
