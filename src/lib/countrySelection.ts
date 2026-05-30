@@ -208,7 +208,7 @@ export const ALL_COUNTRY_OPTIONS: readonly CountryOption[] = [...UN_MEMBERS].sor
 const VALID_CODES: ReadonlySet<string> = new Set(UN_MEMBERS.map((c) => c.code));
 
 export const DEFAULT_SELECTED_CODES: readonly string[] = [
-  "AU", "BR", "IS", "IT", "CA", "NZ", "IN", "JP", "MY", "FR", "ZA",
+  "AU", "BR", "IS", "IT", "CA", "NZ", "IN", "JP", "MY", "FR", "ZA", "CN",
 ];
 
 const ORDER_KEY = "flagGame.selectedCountryOrder";
@@ -230,7 +230,14 @@ export function loadStoredSelection(): StoredSelection {
   } catch {
     // fall through to defaults
   }
-  return { codes: [...DEFAULT_SELECTED_CODES] };
+  // First-load fallback: persist the defaults immediately so the picker
+  // modal and the Learn-page "In Hana's list" toggle read the same data
+  // instead of an implicit in-memory fallback. Without this the toggle
+  // would flip back to "Add to Hana's list" after any state change that
+  // re-runs loadStoredSelection without the corresponding save.
+  const defaults: StoredSelection = { codes: [...DEFAULT_SELECTED_CODES] };
+  saveStoredSelection(defaults);
+  return defaults;
 }
 
 export function saveStoredSelection(selection: StoredSelection): void {
