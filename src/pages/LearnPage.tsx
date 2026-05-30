@@ -22,6 +22,10 @@ import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
+  loadStoredSelection,
+  saveStoredSelection,
+} from "../lib/countrySelection";
+import {
   DEFAULT_ERA_ID,
   eraAllowsModernFlagFallback,
   getEra,
@@ -101,6 +105,23 @@ export default function LearnPage() {
     name: string;
     flagUrl: string | null;
   } | null>(null);
+
+  // Codes currently in the user's Hana's Game list (persisted to
+  // localStorage). Initialised from storage so the in-panel toggle below
+  // the highlighted flag reflects whatever the picker modal would show.
+  const [hanaCodes, setHanaCodes] = useState<string[]>(
+    () => loadStoredSelection().codes,
+  );
+
+  const toggleHanaForCode = useCallback((code: string) => {
+    setHanaCodes((prev) => {
+      const next = prev.includes(code)
+        ? prev.filter((c) => c !== code)
+        : [code, ...prev];
+      saveStoredSelection({ codes: next });
+      return next;
+    });
+  }, []);
 
   // Debounce hover-clearing so the panel doesn't vanish when the user
   // moves the mouse from a map country toward the side panel.
@@ -705,6 +726,30 @@ export default function LearnPage() {
                     or none survives.
                   </p>
                 )}
+                {display.kind === "modern" && (() => {
+                  const code = display.country.code;
+                  const inList = hanaCodes.includes(code);
+                  return (
+                    <div
+                      className={`learn-fs__hana-row${inList ? " learn-fs__hana-row--added" : ""}`}
+                    >
+                      <span className="learn-fs__hana-label">Hana&rsquo;s Game</span>
+                      <button
+                        type="button"
+                        className={`learn-fs__hana-btn${inList ? " learn-fs__hana-btn--added" : ""}`}
+                        onClick={() => toggleHanaForCode(code)}
+                        aria-pressed={inList}
+                        title={
+                          inList
+                            ? `Remove ${display.country.name} from your Hana's Game list`
+                            : `Add ${display.country.name} to your Hana's Game list`
+                        }
+                      >
+                        {inList ? "✓ In my list" : "+ Add to my list"}
+                      </button>
+                    </div>
+                  );
+                })()}
               </>
             ) : (
               <div className="learn-fs__empty">

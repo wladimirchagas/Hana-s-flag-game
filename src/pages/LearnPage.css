@@ -641,6 +641,84 @@
   box-shadow: 0 1px 0 var(--ink);
 }
 
+/* === Hana's Game add/remove row ====================================
+   Sits below the highlighted flag in the detail panel (modern era
+   only). Lets the user add the currently-displayed country to — or
+   remove it from — the Hana's Game flag list, which is persisted in
+   localStorage and read back by the picker modal on the landing page.
+   Mirrors the anthem-row layout for visual consistency, but the row
+   shifts to a soft mint background once the flag is in the list. */
+.learn-fs__hana-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  margin-top: 0.2rem;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.learn-fs__hana-row--added {
+  background: rgba(78, 205, 196, 0.18);
+  border-color: var(--ink);
+}
+
+.learn-fs__hana-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.learn-fs__hana-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.85rem;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-fixed);
+  background: var(--mustard, var(--lemon, #ffe58a));
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  white-space: nowrap;
+}
+
+.learn-fs__hana-btn:hover,
+.learn-fs__hana-btn:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  background: var(--coral);
+  color: #fff;
+}
+
+.learn-fs__hana-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.learn-fs__hana-btn--added {
+  background: var(--green, #2ecc71);
+  color: #fff;
+}
+
+.learn-fs__hana-btn--added:hover,
+.learn-fs__hana-btn--added:focus-visible {
+  background: var(--coral);
+  color: #fff;
+}
+
 /* Optional note shown in the detail panel below the country name —
    used now mainly for historical entities (curated registry note). */
 .learn-fs__note,
