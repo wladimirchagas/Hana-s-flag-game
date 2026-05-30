@@ -1,6 +1,8 @@
 // ISO 3166-1 alpha-2 codes for the 195 UN states (193 members + 2 observers),
 // paired with their English short names. Kept in sync with
 // src/api/countries.ts UN_MEMBER_CODES.
+import { loadLearnedCodes } from "./learnedFlags";
+
 export type CountryOption = { code: string; name: string };
 
 const UN_MEMBERS: readonly CountryOption[] = [
@@ -207,9 +209,41 @@ export const ALL_COUNTRY_OPTIONS: readonly CountryOption[] = [...UN_MEMBERS].sor
 
 const VALID_CODES: ReadonlySet<string> = new Set(UN_MEMBERS.map((c) => c.code));
 
-export const DEFAULT_SELECTED_CODES: readonly string[] = [
+/**
+ * Starter set Hana ships with. The effective default selection (returned
+ * by `loadStoredSelection` when nothing is saved yet) also merges in any
+ * codes the player has unlocked via the perfect-streak reward flow — see
+ * `getDefaultSelectedCodes` below.
+ */
+export const STARTER_SELECTED_CODES: readonly string[] = [
   "AU", "BR", "IS", "IT", "CA", "NZ", "IN", "JP", "MY", "FR", "ZA", "CN",
 ];
+
+/**
+ * Legacy export kept so any out-of-tree consumers that still reference
+ * DEFAULT_SELECTED_CODES continue to compile. New code should prefer
+ * `getDefaultSelectedCodes()` which also folds in learned flags.
+ */
+export const DEFAULT_SELECTED_CODES = STARTER_SELECTED_CODES;
+
+/**
+ * Default selection = starter set + any flags the user has unlocked.
+ * Order: unlocked-first (newest unlocks float to the top of the list, the
+ * starter set follows), uniqued so a code never appears twice.
+ */
+export function getDefaultSelectedCodes(
+  learnedCodes: readonly string[] = [],
+): string[] {
+  const valid = learnedCodes.filter((c) => VALID_CODES.has(c));
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const code of [...valid, ...STARTER_SELECTED_CODES]) {
+    if (seen.has(code)) continue;
+    seen.add(code);
+    out.push(code);
+  }
+  return out;
+}
 
 const ORDER_KEY = "flagGame.selectedCountryOrder";
 
@@ -234,8 +268,13 @@ export function loadStoredSelection(): StoredSelection {
   // modal and the Learn-page "In my list" toggle read the same data
   // instead of an implicit in-memory fallback. Without this the toggle
   // would flip back to "Add to my list" after any state change that
-  // re-runs loadStoredSelection without the corresponding save.
-  const defaults: StoredSelection = { codes: [...DEFAULT_SELECTED_CODES] };
+  // re-runs loadStoredSelection without the corresponding save. The
+  // starter set is merged with any flags the player has already unlocked
+  // via the perfect-streak reward so unlocks survive a "no saved
+  // selection" state (cleared storage, fresh device).
+  const defaults: StoredSelection = {
+    codes: getDefaultSelectedCodes(loadLearnedCodes()),
+  };
   saveStoredSelection(defaults);
   return defaults;
 }
@@ -246,4 +285,19 @@ export function saveStoredSelection(selection: StoredSelection): void {
   } catch {
     // ignore quota / privacy mode errors
   }
+}
+
+/**
+ * Add a single country code to the saved selection if it isn't already
+ * there. Used by the streak-reward unlock flow so a freshly-learned flag
+ * is immediately part of the next Hana's Game run. Newly-added codes are
+ * placed at the front so they're visible at the top of the picker list.
+ */
+export function addCodeToStoredSelection(code: string): string[] {
+  if (!VALID_CODES.has(code)) return loadStoredSelection().codes;
+  const current = loadStoredSelection().codes;
+  if (current.includes(code)) return current;
+  const next = [code, ...current];
+  saveStoredSelection({ codes: next });
+  return next;
 }

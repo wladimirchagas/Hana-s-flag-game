@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
@@ -14,6 +14,16 @@ import { GameClock } from "../components/GameClock";
 import { GameResultsFlags } from "../components/GameResultsFlags";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameFinishCelebration } from "../components/GameFinishCelebration";
+import { FlagUnlockModal } from "../components/FlagUnlockModal";
+import {
+  PERFECT_STREAK_THRESHOLD,
+  addLearnedCode,
+  loadPerfectStreak,
+  pickNextUnlockCode,
+  savePerfectStreak,
+} from "../lib/learnedFlags";
+import { addCodeToStoredSelection } from "../lib/countrySelection";
+import { fetchCountries, type Country } from "../api/countries";
 import "../App.css";
 
 type QuizState = {
@@ -96,6 +106,115 @@ export default function FlagGamePage() {
       setPlayerName("");
     }
   }, [game.phase]);
+
+  // --- Perfect-streak reward (Hana's Game only) ---
+  // Track consecutive 100%-perfect completions so the celebration can offer
+  // the player a new flag to learn every PERFECT_STREAK_THRESHOLD wins. Only
+  // Hana's Game (the custom-codes mode) counts — Quick Quiz and Flag Master
+  // have their own pacing and would muddy the signal.
+  //
+  // `displayedStreak` is what the celebration reads; we re-read the
+  // authoritative value from localStorage inside the effect so the streak
+  // logic doesn't form a render → state → render loop.
+  const [displayedStreak, setDisplayedStreak] = useState<number>(0);
+  const [unlockTarget, setUnlockTarget] = useState<Country | null>(null);
+  // Full 195-country UN list, fetched once so the unlock flow can resolve a
+  // freshly-picked code to a Country (flag URL, name, continent) even when
+  // that country isn't in the active game pool.
+  const [allCountries, setAllCountries] = useState<Country[]>([]);
+  useEffect(() => {
+    let cancelled = false;
+    fetchCountries()
+      .then((list) => {
+        if (!cancelled) setAllCountries(list);
+      })
+      .catch(() => {
+        // Non-blocking — the unlock CTA falls back to a flagcdn-only Country
+        // shell if this list isn't available when the player clicks.
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  // Guard so the streak only ticks once per finished game, even if React
+  // re-runs the effect (Strict Mode in development).
+  const streakAppliedRef = useRef(false);
+
+  // Detect a 100%-perfect run: every flag answered, score equals total flags
+  // (every confirm() that doesn't add to score is a wrong guess via the retry
+  // path, which decrements score by 1, so score === totalFlags <=> zero wrong
+  // attempts across the whole game).
+  const isPerfectRun =
+    game.phase === "finished" &&
+    game.totalAnswered >= game.totalFlags &&
+    game.score === game.totalFlags &&
+    game.totalFlags > 0;
+
+  useEffect(() => {
+    if (game.phase !== "finished") {
+      streakAppliedRef.current = false;
+      return;
+    }
+    if (streakAppliedRef.current) return;
+    streakAppliedRef.current = true;
+    // Only Hana's Game (custom codes mode) counts toward the unlock streak.
+    if (!isCustomGame) {
+      setDisplayedStreak(0);
+      return;
+    }
+    const prev = loadPerfectStreak();
+    if (isPerfectRun) {
+      const next = prev + 1;
+      savePerfectStreak(next);
+      setDisplayedStreak(next);
+    } else {
+      if (prev !== 0) savePerfectStreak(0);
+      setDisplayedStreak(0);
+    }
+  }, [game.phase, isPerfectRun, isCustomGame]);
+
+  const handleUnlockFlag = () => {
+    if (!isCustomGame || displayedStreak < PERFECT_STREAK_THRESHOLD) return;
+    // Pick from a country pool that already excludes anything the player
+    // is currently practising — the next unlock should always be a flag
+    // they haven't been quizzed on.
+    const playingCodes = (filterCodes ?? game.countries.map((c) => c.code)).map(
+      (c) => c.toUpperCase(),
+    );
+    const code = pickNextUnlockCode(playingCodes);
+    if (!code) return;
+    // Resolve to a Country object from the in-memory pool; if the unlock
+    // target isn't in the current game's countries (the usual case), fall
+    // back to fetching from the leaderboard's full UN list — but the
+    // useGame hook already loaded the full list internally. We approximate
+    // by reusing whatever the game has plus a synthesised entry pulled from
+    // the REST Countries fetch shape via flagcdn for the missing fields.
+    const fromAll = allCountries.find((c) => c.code === code);
+    if (fromAll) {
+      setUnlockTarget(fromAll);
+      return;
+    }
+    // Fallback shell — REST Countries hasn't returned yet (or failed). The
+    // flag image and map highlight still work from the static code alone;
+    // the name + continent will populate on subsequent unlocks.
+    setUnlockTarget({
+      code,
+      name: code,
+      flagSvg: `https://flagcdn.com/${code.toLowerCase()}.svg`,
+      continent: "Africa",
+    });
+  };
+
+  const handleFlagLearned = () => {
+    if (!unlockTarget) return;
+    addLearnedCode(unlockTarget.code);
+    addCodeToStoredSelection(unlockTarget.code);
+    // Cash in the streak — the user has to earn another three wins to
+    // unlock the next flag.
+    savePerfectStreak(0);
+    setDisplayedStreak(0);
+    setUnlockTarget(null);
+  };
 
   const handleSave = () => {
     if (!playerName.trim()) {
@@ -186,7 +305,7 @@ export default function FlagGamePage() {
 
   return (
     <div className="app">
-      {isFinished && !celebrationDismissed && (
+      {isFinished && !celebrationDismissed && !unlockTarget && (
         <GameFinishCelebration
           score={game.score}
           correctCount={game.correctCount}
@@ -203,6 +322,16 @@ export default function FlagGamePage() {
           saveHint={saveHint}
           onSave={handleSave}
           onContinue={() => setCelebrationDismissed(true)}
+          perfectStreak={displayedStreak}
+          perfectStreakThreshold={PERFECT_STREAK_THRESHOLD}
+          onUnlockFlag={isCustomGame ? handleUnlockFlag : undefined}
+        />
+      )}
+      {unlockTarget && (
+        <FlagUnlockModal
+          country={unlockTarget}
+          onLearned={handleFlagLearned}
+          onClose={() => setUnlockTarget(null)}
         />
       )}
       {/* The burst is position:fixed/centered, so it always appears in the

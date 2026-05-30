@@ -3,6 +3,7 @@ import {
   continentOrder,
   type FlagListEntry,
 } from "../lib/flagList";
+import { loadLearnedCodes } from "../lib/learnedFlags";
 import {
   FLAG_SHAPE_LABELS,
   FLAG_SHAPE_ORDER,
@@ -108,6 +109,14 @@ export function FlagGrid({
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>("none");
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  // Codes the player has unlocked via the Hana's Game streak reward — read
+  // once on mount and shown as a "Learned" badge so the player can see
+  // which flags they've collected. Only meaningful for the modern era (the
+  // ids in historical eras are polity names, not alpha-2 codes).
+  const learnedCodes = useMemo(
+    () => (isModernEra ? new Set(loadLearnedCodes()) : new Set<string>()),
+    [isModernEra],
+  );
 
   // When the era switches away from today, fall back to "none" if the active
   // mode is not available for historical eras.
@@ -326,6 +335,7 @@ export function FlagGrid({
             {g.items.map((item) => {
               const active = item.id === selectedId;
               const url = item.flag ? resolveFlag(item.flag) : null;
+              const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
               // groups. Make the React key + ref key unique per
               // (group, id) pair to avoid duplicate-ref clobbering.
@@ -338,10 +348,14 @@ export function FlagGrid({
                       if (el) cardRefs.current.set(refKey, el);
                       else cardRefs.current.delete(refKey);
                     }}
-                    className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+                    className={`flag-grid__card${active ? " flag-grid__card--active" : ""}${isLearned ? " flag-grid__card--learned" : ""}`}
                     onClick={() => onSelect(item.id)}
                     aria-pressed={active}
-                    aria-label={`Select ${item.name}`}
+                    aria-label={
+                      isLearned
+                        ? `Select ${item.name} (learned)`
+                        : `Select ${item.name}`
+                    }
                   >
                     <span className="flag-grid__thumb">
                       {url ? (
@@ -355,6 +369,15 @@ export function FlagGrid({
                       ) : (
                         <span className="flag-grid__thumb-empty" aria-hidden="true">
                           —
+                        </span>
+                      )}
+                      {isLearned && (
+                        <span
+                          className="flag-grid__learned-badge"
+                          title="You unlocked this flag in Hana's Game"
+                          aria-hidden="true"
+                        >
+                          ⭐
                         </span>
                       )}
                     </span>
