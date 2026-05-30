@@ -208,7 +208,7 @@ export const ALL_COUNTRY_OPTIONS: readonly CountryOption[] = [...UN_MEMBERS].sor
 const VALID_CODES: ReadonlySet<string> = new Set(UN_MEMBERS.map((c) => c.code));
 
 export const DEFAULT_SELECTED_CODES: readonly string[] = [
-  "AU", "BR", "CA", "JP", "MY", "IN", "NZ",
+  "AU", "BR", "IS", "IT", "CA", "NZ", "IN", "JP", "MY", "FR", "ZA",
 ];
 
 const ORDER_KEY = "flagGame.selectedCountryOrder";
