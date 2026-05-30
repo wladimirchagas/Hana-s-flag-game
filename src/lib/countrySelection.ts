@@ -231,9 +231,9 @@ export function loadStoredSelection(): StoredSelection {
     // fall through to defaults
   }
   // First-load fallback: persist the defaults immediately so the picker
-  // modal and the Learn-page "In Hana's list" toggle read the same data
+  // modal and the Learn-page "In my list" toggle read the same data
   // instead of an implicit in-memory fallback. Without this the toggle
-  // would flip back to "Add to Hana's list" after any state change that
+  // would flip back to "Add to my list" after any state change that
   // re-runs loadStoredSelection without the corresponding save.
   const defaults: StoredSelection = { codes: [...DEFAULT_SELECTED_CODES] };
   saveStoredSelection(defaults);
