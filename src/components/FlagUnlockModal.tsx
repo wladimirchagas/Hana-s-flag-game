@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef } from "react";
 import type { Country } from "../api/countries";
 import { WorldProgressMap } from "./WorldProgressMap";
+import { isLearned } from "../lib/learnedFlags";
 
 export type FlagUnlockModalProps = {
   country: Country;
@@ -30,6 +31,12 @@ export function FlagUnlockModal({
     () => new Set([country.code]),
     [country.code],
   );
+  // The daily flag is the same for every player on a given calendar
+  // date, so it can land on a code the player has already unlocked on a
+  // previous day. We still show the modal (same flag for everyone is
+  // the whole point) but adapt the framing so it doesn't look like the
+  // app is trying to give them something they already have.
+  const alreadyLearned = useMemo(() => isLearned(country.code), [country.code]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -62,7 +69,10 @@ export function FlagUnlockModal({
         >
           ×
         </button>
-        <p className="flag-unlock__eyebrow">A new flag for your collection</p>
+        <p className="flag-unlock__eyebrow">
+          Today&rsquo;s flag
+          {alreadyLearned ? " · already in your list ⭐" : ""}
+        </p>
         <h2 id="flag-unlock__title" className="flag-unlock__title">
           {country.name}
         </h2>
@@ -91,17 +101,19 @@ export function FlagUnlockModal({
             ref={learnedBtnRef}
             type="button"
             className="flag-unlock__learned"
-            onClick={onLearned}
+            onClick={alreadyLearned ? onClose : onLearned}
           >
-            I&rsquo;ve learned it! ✨
+            {alreadyLearned ? "Cool, got it! ✨" : "I’ve learned it! ✨"}
           </button>
-          <button
-            type="button"
-            className="flag-unlock__skip"
-            onClick={onClose}
-          >
-            Maybe later
-          </button>
+          {!alreadyLearned && (
+            <button
+              type="button"
+              className="flag-unlock__skip"
+              onClick={onClose}
+            >
+              Maybe later
+            </button>
+          )}
         </div>
       </div>
     </div>

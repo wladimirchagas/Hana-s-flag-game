@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
@@ -15,13 +15,7 @@ import { GameResultsFlags } from "../components/GameResultsFlags";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameFinishCelebration } from "../components/GameFinishCelebration";
 import { FlagUnlockModal } from "../components/FlagUnlockModal";
-import {
-  addLearnedCode,
-  getLocalDateKey,
-  pickNextUnlockCode,
-  saveLastUnlockOfferedDate,
-  shouldOfferDailyUnlock,
-} from "../lib/learnedFlags";
+import { addLearnedCode, getDailyFlagCode } from "../lib/learnedFlags";
 import { addCodeToStoredSelection } from "../lib/countrySelection";
 import { fetchCountries, type Country } from "../api/countries";
 import "../App.css";
@@ -120,16 +114,11 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   }, [game.phase]);
 
   // --- Daily learn-a-new-flag offer (Hana's Game only) ---
-  // The first time the player completes a Hana's Game on any given local
-  // calendar day, the celebration shows a "want to learn a new flag?"
-  // CTA. Once shown that day the offer doesn't re-appear until the local
-  // date rolls over (browser timezone, midnight → midnight). Other game
-  // modes never trigger the offer.
-  //
-  // `offerUnlock` is the per-render flag the celebration component reads
-  // (it controls whether `onUnlockFlag` is passed); the localStorage day-
-  // key is the persistent gate.
-  const [offerUnlock, setOfferUnlock] = useState(false);
+  // Every completed Hana's Game offers the player today's daily flag.
+  // The daily flag is deterministic per local calendar date, so multiple
+  // games in the same day will show the same flag — the unlock modal
+  // adapts ("already in your list ⭐") if the player has already learned
+  // it from an earlier run. Other game modes never trigger the offer.
   const [unlockTarget, setUnlockTarget] = useState<Country | null>(null);
   // Full 195-country UN list, fetched once so the unlock flow can resolve a
   // freshly-picked code to a Country (flag URL, name, continent) even when
@@ -149,51 +138,27 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
       cancelled = true;
     };
   }, []);
-  // Guard so the daily-offer check only runs once per finished game, even
-  // if React re-runs the effect (Strict Mode in development).
-  const offerAppliedRef = useRef(false);
-
-  // A game "counts" for the daily offer when it's a Hana's Game that
+  // A game "counts" for the unlock offer when it's a Hana's Game that
   // played through every flag. Ending early or playing a different mode
-  // does not consume the day's offer.
+  // doesn't trigger it. Derived purely from game state, so the CTA
+  // appears on every qualifying completion without any persistent gate.
   const completedHanasGame =
     game.phase === "finished" &&
     isCustomGame &&
     game.totalAnswered >= game.totalFlags &&
     game.totalFlags > 0;
 
-  useEffect(() => {
-    if (game.phase !== "finished") {
-      offerAppliedRef.current = false;
-      setOfferUnlock(false);
-      return;
-    }
-    if (offerAppliedRef.current) return;
-    offerAppliedRef.current = true;
-    if (!completedHanasGame) return;
-    if (!shouldOfferDailyUnlock()) return;
-    // Stamp the day immediately so subsequent Hana's completions today
-    // (whether the player accepts or dismisses this one) don't re-offer.
-    saveLastUnlockOfferedDate(getLocalDateKey());
-    setOfferUnlock(true);
-  }, [game.phase, completedHanasGame]);
-
   const handleUnlockFlag = () => {
-    if (!isCustomGame || !offerUnlock) return;
-    // Pick from a country pool that already excludes anything the player
-    // is currently practising — the next unlock should always be a flag
-    // they haven't been quizzed on.
-    const playingCodes = (filterCodes ?? game.countries.map((c) => c.code)).map(
-      (c) => c.toUpperCase(),
-    );
-    const code = pickNextUnlockCode(playingCodes);
-    if (!code) return;
-    // Resolve to a Country object from the in-memory pool; if the unlock
-    // target isn't in the current game's countries (the usual case), fall
-    // back to fetching from the leaderboard's full UN list — but the
-    // useGame hook already loaded the full list internally. We approximate
-    // by reusing whatever the game has plus a synthesised entry pulled from
-    // the REST Countries fetch shape via flagcdn for the missing fields.
+    if (!completedHanasGame) return;
+    // Today's flag is deterministic — every player on the same local
+    // calendar date sees the same flag, regardless of game history.
+    // The unlock modal handles the "you've already learned this one"
+    // case gracefully so we don't need to filter it out here.
+    const code = getDailyFlagCode();
+    // Resolve to a full Country object from the in-memory list (loaded
+    // on mount for this purpose). If the fetch hasn't returned yet,
+    // synthesise a minimal shell so the flag image and map highlight
+    // still work from the code alone.
     const fromAll = allCountries.find((c) => c.code === code);
     if (fromAll) {
       setUnlockTarget(fromAll);
@@ -214,9 +179,6 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
     if (!unlockTarget) return;
     addLearnedCode(unlockTarget.code);
     addCodeToStoredSelection(unlockTarget.code);
-    // The day's offer was already consumed when the celebration appeared;
-    // just close the unlock modal and let the player keep going.
-    setOfferUnlock(false);
     setUnlockTarget(null);
   };
 
@@ -326,7 +288,7 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
           saveHint={saveHint}
           onSave={handleSave}
           onContinue={() => setCelebrationDismissed(true)}
-          onUnlockFlag={offerUnlock ? handleUnlockFlag : undefined}
+          onUnlockFlag={completedHanasGame ? handleUnlockFlag : undefined}
           onPlayAgain={isCustomGame ? onPlayAgain : undefined}
         />
       )}
