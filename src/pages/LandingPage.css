@@ -619,6 +619,38 @@
   color: rgba(26, 34, 56, 0.7);
 }
 
+.picker__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.picker__settings {
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ink);
+  box-shadow: 0 3px 0 var(--ink);
+  padding: 0;
+}
+
+.picker__settings:hover,
+.picker__settings:focus-visible {
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.picker__settings--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
 .picker__close {
   background: var(--mustard);
   border: 3px solid var(--ink);
