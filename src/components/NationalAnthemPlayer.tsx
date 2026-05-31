@@ -114,7 +114,9 @@ async function attempt<T>(fn: () => Promise<T | null>, label: string): Promise<T
 async function resolveWikimediaUrl(anthem: AnthemData, countryName: string, exclude?: Set<string>): Promise<string> {
   console.debug("[anthem] resolving for", countryName, "wikiFile:", anthem.wikiFile);
 
-  const direct = await attempt(() => getFileUrl(anthem.wikiFile, exclude), "direct file");
+  const direct = anthem.wikiFile
+    ? await attempt(() => getFileUrl(anthem.wikiFile!, exclude), "direct file")
+    : null;
   if (direct) return direct;
 
   if (anthem.wikiSearch) {
@@ -175,6 +177,56 @@ function loadOgvPlayer(base: string): Promise<(new () => OGVPlayerLike) | null> 
   return _ogvPromise;
 }
 
+// ── YouTube IFrame API ───────────────────────────────────────────────────────
+type YTPlayerInstance = {
+  playVideo(): void;
+  pauseVideo(): void;
+  seekTo(seconds: number, allowSeekAhead: boolean): void;
+  getCurrentTime(): number;
+  getDuration(): number;
+  getPlayerState(): number;
+  destroy(): void;
+};
+
+declare global {
+  interface Window {
+    YT: {
+      Player: new (element: HTMLElement | string, options: {
+        videoId: string;
+        width?: number | string;
+        height?: number | string;
+        playerVars?: Record<string, string | number>;
+        events?: {
+          onReady?: (e: { target: YTPlayerInstance }) => void;
+          onStateChange?: (e: { data: number; target: YTPlayerInstance }) => void;
+          onError?: (e: { data: number }) => void;
+        };
+      }) => YTPlayerInstance;
+    };
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+
+let _ytApiPromise: Promise<void> | null = null;
+function loadYTApi(): Promise<void> {
+  if (_ytApiPromise) return _ytApiPromise;
+  _ytApiPromise = new Promise((resolve) => {
+    if (typeof window !== "undefined" && (window.YT as unknown as { Player?: unknown })?.Player) {
+      resolve();
+      return;
+    }
+    const prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => {
+      if (prev) prev();
+      resolve();
+    };
+    const script = document.createElement("script");
+    script.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(script);
+  });
+  return _ytApiPromise;
+}
+
 // ── Component ───────────────────────────────────────────────────────────────
 
 export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClose }: Props) {
@@ -184,9 +236,15 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   const audioRef = useRef<HTMLAudioElement>(null);
   // OGV player instance ref (used when URL is OGG and browser can't play it natively)
   const ogvRef = useRef<OGVPlayerLike | null>(null);
+  // YouTube player refs
+  const ytContainerRef = useRef<HTMLDivElement>(null);
+  const ytPlayerRef = useRef<YTPlayerInstance | null>(null);
+  const ytPollRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const lyricsRef = useRef<HTMLDivElement>(null);
   const triedUrls = useRef<Set<string>>(new Set());
   const retryCount = useRef(0);
+
+  const isYoutube = !!(anthem?.youtubeId);
 
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isLoadingAudio, setIsLoadingAudio] = useState(true);
@@ -234,6 +292,8 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
 
   // ── Fetch audio URL from Wikimedia ──────────────────────────────────────
   useEffect(() => {
+    // YouTube-backed anthems bypass Wikimedia entirely
+    if (isYoutube) return;
     triedUrls.current = new Set();
     retryCount.current = 0;
     if (!anthem) {
@@ -252,7 +312,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
         if (!cancelled) { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); }
       });
     return () => { cancelled = true; };
-  }, [anthem, countryName]);
+  }, [anthem, countryName, isYoutube]);
 
   // ── Wire up OGV player when URL needs it ────────────────────────────────
   useEffect(() => {
@@ -364,8 +424,10 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   // The fetch re-uses the browser's HTTP cache (the <audio> element will have
   // already downloaded the file), so in practice this causes no extra network
   // traffic.  introOffsetRef = detectedOnset − scaledLines[0].start.
+  //
+  // Skipped for YouTube-backed anthems: `youtubeIntroOffset` is used instead.
   useEffect(() => {
-    if (!audioUrl) return;
+    if (!audioUrl || isYoutube) return;
     introOffsetRef.current = 0;
     let cancelled = false;
 
@@ -412,6 +474,99 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
     return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioUrl]);
+
+  // ── YouTube player setup ────────────────────────────────────────────────
+  useEffect(() => {
+    if (!isYoutube || !anthem?.youtubeId) return;
+
+    let cancelled = false;
+    setIsLoadingAudio(true);
+    setAudioError(null);
+
+    // Apply the manually specified intro offset so vocal-relative line
+    // timestamps stay accurate (same mechanism as offline VAD, but static).
+    introOffsetRef.current = anthem.youtubeIntroOffset ?? 0;
+
+    loadYTApi().then(() => {
+      if (cancelled || !ytContainerRef.current) return;
+
+      const mountDiv = document.createElement("div");
+      ytContainerRef.current.appendChild(mountDiv);
+
+      const player = new window.YT.Player(mountDiv, {
+        videoId: anthem.youtubeId!,
+        width: "100%",
+        height: "195",
+        playerVars: { rel: 0, modestbranding: 1 },
+        events: {
+          onReady: (e) => {
+            if (cancelled) return;
+            ytPlayerRef.current = e.target;
+            setDuration(e.target.getDuration());
+            setIsLoadingAudio(false);
+          },
+          onStateChange: (e) => {
+            const YT_PLAYING = 1;
+            const YT_ENDED = 0;
+            if (e.data === YT_PLAYING) {
+              setIsPlaying(true);
+              if (ytPollRef.current) clearInterval(ytPollRef.current);
+              ytPollRef.current = setInterval(() => {
+                const p = ytPlayerRef.current;
+                if (!p) return;
+                const t = p.getCurrentTime();
+                setCurrentTime(t);
+                const lines = scaledLinesRef.current;
+                if (!lines) return;
+                const adj = t - introOffsetRef.current;
+                let li = -1;
+                for (let i = lines.length - 1; i >= 0; i--) {
+                  if (adj >= lines[i].start) { li = i; break; }
+                }
+                setActiveLine(li);
+                if (li >= 0) {
+                  const words = lines[li].words;
+                  if (words?.length) {
+                    let wi = -1;
+                    for (let i = words.length - 1; i >= 0; i--) {
+                      if (adj >= words[i].t) { wi = i; break; }
+                    }
+                    setActiveWordIdx(wi);
+                  } else {
+                    setActiveWordIdx(-1);
+                  }
+                } else {
+                  setActiveWordIdx(-1);
+                }
+              }, 200);
+            } else {
+              setIsPlaying(false);
+              if (ytPollRef.current) { clearInterval(ytPollRef.current); ytPollRef.current = null; }
+              if (e.data === YT_ENDED) {
+                setActiveLine(-1);
+                setActiveWordIdx(-1);
+                setCurrentTime(0);
+              }
+            }
+          },
+          onError: () => {
+            if (!cancelled) setAudioError("YouTube video could not be loaded.");
+          },
+        },
+      });
+
+      return () => {
+        try { player.destroy(); } catch { /* ignore */ }
+      };
+    });
+
+    return () => {
+      cancelled = true;
+      if (ytPollRef.current) { clearInterval(ytPollRef.current); ytPollRef.current = null; }
+      if (ytPlayerRef.current) { try { ytPlayerRef.current.destroy(); } catch { /* ignore */ } ytPlayerRef.current = null; }
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isYoutube, anthem]);
 
   // ── Native audio event handlers ─────────────────────────────────────────
   const handleTimeUpdate = useCallback(() => {
@@ -502,6 +657,12 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   }
 
   function togglePlay() {
+    if (isYoutube) {
+      const ytp = ytPlayerRef.current;
+      if (!ytp) return;
+      if (isPlaying) ytp.pauseVideo(); else ytp.playVideo();
+      return;
+    }
     const player = getActivePlayer();
     if (!player) return;
     if (isPlaying) {
@@ -513,12 +674,26 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   }
 
   function skip(seconds: number) {
+    if (isYoutube) {
+      const ytp = ytPlayerRef.current;
+      if (!ytp) return;
+      ytp.seekTo(Math.max(0, Math.min(duration || Infinity, ytp.getCurrentTime() + seconds)), true);
+      return;
+    }
     const player = getActivePlayer();
     if (!player) return;
     player.currentTime = Math.max(0, Math.min(duration || Infinity, player.currentTime + seconds));
   }
 
   function handleSeek(e: React.MouseEvent<HTMLDivElement>) {
+    if (isYoutube) {
+      const ytp = ytPlayerRef.current;
+      if (!ytp || !duration) return;
+      const rect = e.currentTarget.getBoundingClientRect();
+      const fraction = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+      ytp.seekTo(fraction * duration, true);
+      return;
+    }
     const player = getActivePlayer();
     if (!player || !duration) return;
     const rect = e.currentTarget.getBoundingClientRect();
@@ -541,8 +716,8 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   }, []);
 
   const progress = duration ? (currentTime / duration) * 100 : 0;
-  const playerReady = !!audioUrl && !isLoadingAudio && !audioError;
-  const showLoading = isLoadingAudio || (needsOgv && ogvLoading && playerReady);
+  const playerReady = (isYoutube ? !isLoadingAudio : !!audioUrl && !isLoadingAudio) && !audioError;
+  const showLoading = isLoadingAudio || (!isYoutube && needsOgv && ogvLoading && playerReady);
 
   return (
     <div className="anthem-modal" role="dialog" aria-modal="true" aria-label={`${countryName} national anthem`}>
@@ -580,11 +755,16 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
           <div className="anthem-modal__status anthem-modal__status--error">{audioError}</div>
         ) : playerReady ? (
           <>
-            {/* Native audio element — only used when NOT using ogv.js */}
-            {!needsOgv && (
+            {/* YouTube player — shown instead of native audio when youtubeId is set */}
+            {isYoutube && (
+              <div ref={ytContainerRef} className="anthem-player__youtube" />
+            )}
+
+            {/* Native audio element — only used when NOT using ogv.js or YouTube */}
+            {!isYoutube && !needsOgv && (
               <audio
                 ref={audioRef}
-                src={audioUrl}
+                src={audioUrl!}
                 onTimeUpdate={handleTimeUpdate}
                 onLoadedMetadata={handleLoadedMetadata}
                 onEnded={handleEnded}
@@ -593,8 +773,8 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
               />
             )}
 
-            {/* Progress bar */}
-            <div
+            {/* Progress bar — hidden for YouTube (native controls handle seeking) */}
+            {!isYoutube && <div
               className="anthem-player__progress"
               onClick={handleSeek}
               role="slider"
@@ -610,16 +790,16 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
             >
               <div className="anthem-player__progress-fill" style={{ width: `${progress}%` }} />
               <div className="anthem-player__progress-thumb" style={{ left: `${progress}%` }} />
-            </div>
+            </div>}
 
-            {/* Time labels */}
-            <div className="anthem-player__time">
+            {/* Time labels — hidden for YouTube */}
+            {!isYoutube && <div className="anthem-player__time">
               <span>{formatTime(currentTime)}</span>
               <span>{formatTime(duration)}</span>
-            </div>
+            </div>}
 
-            {/* Controls */}
-            <div className="anthem-player__controls">
+            {/* Controls — hidden for YouTube (native controls handle play/pause) */}
+            {!isYoutube && <div className="anthem-player__controls">
               <button
                 className="anthem-player__btn anthem-player__btn--skip"
                 onClick={() => skip(-15)}
@@ -651,7 +831,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
                 <span className="anthem-player__skip-label">15</span>
                 <span className="anthem-player__skip-icon">↻</span>
               </button>
-            </div>
+            </div>}
 
             {/* Lyrics */}
             <div className="anthem-lyrics" ref={lyricsRef} aria-label="Lyrics">
