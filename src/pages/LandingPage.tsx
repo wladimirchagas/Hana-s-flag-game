@@ -7,6 +7,7 @@ import { CountryPickerModal } from '../components/CountryPickerModal'
 import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQuizSetupModal'
 import { AllFlagsSetupModal, type AllFlagsStart } from '../components/AllFlagsSetupModal'
 import { HeroCarousel } from '../components/HeroCharacters'
+import { InstallAppButton } from '../components/InstallAppButton'
 import './LandingPage.css'
 
 const TITLE_LETTERS: { ch: string; color: string }[] = [
@@ -184,6 +185,11 @@ export default function LandingPage() {
         >
           🏆 Leaderboard
         </button>
+
+        {/* Renders itself only when an install path is available on this
+            platform (Chrome/Edge/Android install prompt or Safari Share
+            menu). Hidden once the app is already launched standalone. */}
+        <InstallAppButton />
       </main>
 
       <CountryPickerModal

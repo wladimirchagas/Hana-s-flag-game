@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { VitePWA } from 'vite-plugin-pwa'
 import { copyFileSync, mkdirSync } from 'node:fs'
 import { execSync } from 'node:child_process'
 import { resolve } from 'node:path'
@@ -67,5 +68,51 @@ export default defineConfig({
     __BUILD_COMMIT__: JSON.stringify(BUILD_COMMIT),
     __BUILD_ISO__: JSON.stringify(BUILD_ISO),
   },
-  plugins: [react(), spaFallback()],
+  plugins: [
+    react(),
+    // PWA support — generates a web manifest + service worker so the site
+    // is installable as a home-screen / desktop shortcut. Used by the
+    // InstallAppButton on the landing page.
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['app-icon.svg', 'icons/apple-touch-icon.png'],
+      manifest: {
+        name: 'Guess the Country Flag',
+        short_name: 'Flag Game',
+        description: 'Guess the Country Flag — quick rounds, world flags, and streaks.',
+        start_url: base,
+        scope: base,
+        display: 'standalone',
+        orientation: 'portrait',
+        background_color: '#fff8ee',
+        theme_color: '#ffc857',
+        icons: [
+          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          {
+            src: 'icons/icon-maskable-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
+        ],
+      },
+      workbox: {
+        // Cache the SPA shell + assets so the app loads from the home-screen
+        // shortcut even when offline (first-launch still needs network).
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2,json}'],
+        navigateFallback: `${base}index.html`,
+        // Public dir contains a couple of large data blobs (countries-50m.json,
+        // historical maps) — exclude from precache so the install footprint
+        // stays small.
+        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**'],
+      },
+      devOptions: {
+        // Keep the install button working in `npm run dev` so we can test
+        // the flow without a production build.
+        enabled: true,
+      },
+    }),
+    spaFallback(),
+  ],
 })
