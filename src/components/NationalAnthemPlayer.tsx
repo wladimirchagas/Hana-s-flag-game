@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { NATIONAL_ANTHEMS, type AnthemData } from "../data/nationalAnthems";
 import { detectVocalOnset } from "../lib/anthemCalibrate";
+import { gameAudio } from "../lib/gameAudio";
 import "./NationalAnthemPlayer.css";
 
 interface Props {
@@ -468,6 +469,19 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       .then(url => { setAudioUrl(url); setIsLoadingAudio(false); })
       .catch(() => { setAudioError("Audio not available — check back later."); setIsLoadingAudio(false); });
   }, [anthem, countryName]);
+
+  // ── Background music: pause while anthem plays, resume when it stops ──────
+  useEffect(() => {
+    if (isPlaying) {
+      gameAudio.pauseBackgroundMusic();
+    } else {
+      gameAudio.resumeBackgroundMusic();
+    }
+    return () => {
+      // Always resume when the player is closed.
+      gameAudio.resumeBackgroundMusic();
+    };
+  }, [isPlaying]);
 
   // ── Auto-scroll active lyric line into view ──────────────────────────────
   useEffect(() => {

@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
+import { gameAudio } from "../lib/gameAudio";
 import type { LeaderboardFilter } from "../context/LeaderboardContext";
 import { buildLeaderboardEntryFromGame } from "../lib/buildLeaderboardEntryFromGame";
 import { FlagCard } from "../components/FlagCard";
@@ -111,6 +112,23 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
       setSaveHint("idle");
       setPlayerName("");
     }
+  }, [game.phase]);
+
+  // Sound: correct / wrong guess. attemptNonce increments on every confirm().
+  useEffect(() => {
+    if (game.attemptNonce === 0 || game.wasCorrect === null) return;
+    if (game.wasCorrect) gameAudio.playCorrect();
+    else gameAudio.playWrong();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [game.attemptNonce]);
+
+  // Sound: game complete celebration.
+  const prevPhaseRef = useRef(game.phase);
+  useEffect(() => {
+    if (game.phase === "finished" && prevPhaseRef.current !== "finished") {
+      gameAudio.playGameComplete();
+    }
+    prevPhaseRef.current = game.phase;
   }, [game.phase]);
 
   // --- Daily learn-a-new-flag offer (Hana's Game only) ---
