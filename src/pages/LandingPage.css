@@ -160,6 +160,33 @@
   box-shadow: 0 4px 0 var(--ink), 0 8px 14px rgba(26, 34, 56, 0.18);
 }
 
+.hero-card__settings {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  z-index: 3;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--ink);
+  box-shadow: 0 3px 0 var(--ink);
+  padding: 0;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.hero-card__settings:hover,
+.hero-card__settings:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 var(--ink);
+  outline: none;
+}
+
 .hero-card__poster {
   /* Override the standalone .kdh-panel--poster styling so the poster sits as
      a framed picture inside the hero card with a small inset on all sides
@@ -617,38 +644,6 @@
   font-size: 0.95rem;
   font-weight: 500;
   color: rgba(26, 34, 56, 0.7);
-}
-
-.picker__header-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.picker__settings {
-  background: var(--cream);
-  border: 3px solid var(--ink);
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--ink);
-  box-shadow: 0 3px 0 var(--ink);
-  padding: 0;
-}
-
-.picker__settings:hover,
-.picker__settings:focus-visible {
-  transform: translateY(-1px);
-  outline: none;
-}
-
-.picker__settings--active {
-  background: var(--sky);
-  color: var(--ink-fixed);
 }
 
 .picker__close {
