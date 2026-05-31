@@ -31,6 +31,12 @@ export type GameFinishCelebrationProps = {
    * `shouldOfferDailyUnlock` in lib/learnedFlags.
    */
   onUnlockFlag?: () => void;
+  /**
+   * Hana's Game only: when provided, the celebration shows a "Play again"
+   * button that restarts the run with the same flag pool. Other game modes
+   * (Quick Quiz, Flag Master, group games) leave this undefined.
+   */
+  onPlayAgain?: () => void;
 };
 
 export function GameFinishCelebration({
@@ -46,6 +52,7 @@ export function GameFinishCelebration({
   onSave,
   onContinue,
   onUnlockFlag,
+  onPlayAgain,
 }: GameFinishCelebrationProps) {
   const canUnlock = typeof onUnlockFlag === "function";
   const saveRef = useRef<HTMLButtonElement>(null);
@@ -167,6 +174,15 @@ export function GameFinishCelebration({
               >
                 See your results →
               </button>
+              {onPlayAgain && (
+                <button
+                  type="button"
+                  className="finish__play-again"
+                  onClick={onPlayAgain}
+                >
+                  Play again 🔄
+                </button>
+              )}
             </div>
           ) : (
             <div className="finish__save-actions">
@@ -205,6 +221,15 @@ export function GameFinishCelebration({
               >
                 See results first →
               </button>
+              {onPlayAgain && (
+                <button
+                  type="button"
+                  className="finish__play-again"
+                  onClick={onPlayAgain}
+                >
+                  Play again 🔄
+                </button>
+              )}
             </div>
           )}
         </div>

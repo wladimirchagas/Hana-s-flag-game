@@ -39,6 +39,18 @@ type GroupGameState = {
 };
 
 export default function FlagGamePage() {
+  // Bumping this remounts FlagGameInner, which re-runs useGame with the same
+  // router state — the cleanest reset for the "Play again" CTA in Hana's Game.
+  const [playAgainNonce, setPlayAgainNonce] = useState(0);
+  return (
+    <FlagGameInner
+      key={playAgainNonce}
+      onPlayAgain={() => setPlayAgainNonce((n) => n + 1)}
+    />
+  );
+}
+
+function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   const location = useLocation();
   const navState = location.state as
     | { codes?: string[]; quiz?: QuizState; groupGame?: GroupGameState }
@@ -315,6 +327,7 @@ export default function FlagGamePage() {
           onSave={handleSave}
           onContinue={() => setCelebrationDismissed(true)}
           onUnlockFlag={offerUnlock ? handleUnlockFlag : undefined}
+          onPlayAgain={isCustomGame ? onPlayAgain : undefined}
         />
       )}
       {unlockTarget && (
