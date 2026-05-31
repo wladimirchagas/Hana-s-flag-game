@@ -26,9 +26,9 @@ export type GameFinishCelebrationProps = {
   onContinue: () => void;
   /**
    * Invoked when the player accepts the daily learn-a-new-flag offer.
-   * When provided, the celebration shows the offer CTA. The parent gates
-   * presence to "first Hana's Game completion of today" — see
-   * `shouldOfferDailyUnlock` in lib/learnedFlags.
+   * When provided, the celebration shows the offer CTA. The parent
+   * passes it on every completed Hana's Game; the modal that opens
+   * handles the "today's flag is one I already have" case.
    */
   onUnlockFlag?: () => void;
   /**
