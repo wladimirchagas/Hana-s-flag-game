@@ -24,6 +24,17 @@ export type GameFinishCelebrationProps = {
   saveHint: "idle" | "saved" | "need-name";
   onSave: () => void;
   onContinue: () => void;
+  /**
+   * The user's current streak of consecutive 100%-perfect Hana's Game
+   * completions, including the one that just ended. When this is at or
+   * above the unlock threshold and `onUnlockFlag` is provided, the
+   * celebration shows a special "ready to learn a new flag?" CTA.
+   */
+  perfectStreak?: number;
+  /** Threshold the streak must reach before the unlock CTA appears. */
+  perfectStreakThreshold?: number;
+  /** Invoked when the player accepts the unlock-a-new-flag invitation. */
+  onUnlockFlag?: () => void;
 };
 
 export function GameFinishCelebration({
@@ -38,7 +49,13 @@ export function GameFinishCelebration({
   saveHint,
   onSave,
   onContinue,
+  perfectStreak = 0,
+  perfectStreakThreshold = 3,
+  onUnlockFlag,
 }: GameFinishCelebrationProps) {
+  const canUnlock =
+    typeof onUnlockFlag === "function" &&
+    perfectStreak >= perfectStreakThreshold;
   const saveRef = useRef<HTMLButtonElement>(null);
   const onContinueRef = useRef(onContinue);
   useEffect(() => {
@@ -128,6 +145,22 @@ export function GameFinishCelebration({
               </span>
             </div>
           </div>
+
+          {canUnlock && (
+            <div className="finish__unlock">
+              <p className="finish__unlock-blurb">
+                Wow! Congratulations — you guessed every flag right{" "}
+                {perfectStreak} games in a row! 🌟
+              </p>
+              <button
+                type="button"
+                className="finish__unlock-btn"
+                onClick={onUnlockFlag}
+              >
+                Ready to learn a new flag? 🌍
+              </button>
+            </div>
+          )}
 
           {saveHint === "saved" ? (
             <div className="finish__save-actions">

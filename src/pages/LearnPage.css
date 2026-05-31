@@ -1026,6 +1026,28 @@
   font-weight: 700;
 }
 
+/* Star badge shown on flag tiles the player unlocked via the Hana's Game
+   streak reward — links the Learn-mode sandbox to the player's earned
+   progress in the game. Positioned at the top-right of the thumbnail so
+   it doesn't crowd the country name underneath. */
+.flag-grid__learned-badge {
+  position: absolute;
+  top: -0.3rem;
+  right: -0.3rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1;
+  background: var(--mustard);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  pointer-events: none;
+}
+
 /* (The bottom-right "⤢" zoom badge that used to sit on each flag tile
    has been removed. The flag-zoom modal is still reachable from the
    detail panel's flag image at the top of the page.) */
