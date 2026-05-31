@@ -745,6 +745,16 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
           </div>
         </div>
 
+        {/* YouTube container — always mounted when isYoutube so the IFrame API
+            can inject into it even before playerReady flips true. */}
+        {isYoutube && (
+          <div
+            ref={ytContainerRef}
+            className="anthem-player__youtube"
+            style={{ display: playerReady ? undefined : "none" }}
+          />
+        )}
+
         {/* Player body */}
         {showLoading ? (
           <div className="anthem-modal__status">
@@ -755,11 +765,6 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
           <div className="anthem-modal__status anthem-modal__status--error">{audioError}</div>
         ) : playerReady ? (
           <>
-            {/* YouTube player — shown instead of native audio when youtubeId is set */}
-            {isYoutube && (
-              <div ref={ytContainerRef} className="anthem-player__youtube" />
-            )}
-
             {/* Native audio element — only used when NOT using ogv.js or YouTube */}
             {!isYoutube && !needsOgv && (
               <audio
