@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Guess the Flag">
+  <!-- Solid background so Safari / Android home-screen icons look intentional
+       (transparent PNGs render with a black square behind them on iOS). -->
+  <rect width="512" height="512" rx="96" fill="#ffc857"/>
+
+  <!-- Decorative stars echoing the landing page title -->
+  <g fill="#fff" opacity="0.5">
+    <path d="M96 88 l8 22 l22 0 l-18 14 l7 22 l-19 -14 l-19 14 l7 -22 l-18 -14 l22 0 z"/>
+    <path d="M416 408 l6 16 l16 0 l-13 10 l5 16 l-14 -10 l-14 10 l5 -16 l-13 -10 l16 0 z"/>
+  </g>
+
+  <!-- Mascot, centered with 80% safe zone (room for maskable masks). -->
+  <g transform="translate(106 76) scale(3.0)">
+    <path d="M50 6 C76 6,88 22,88 40 C88 60,70 74,50 96 C30 74,12 60,12 40 C12 22,24 6,50 6 Z"
+      fill="#ff6b6b" stroke="#1a2238" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="50" cy="40" r="26" fill="#ff8888" opacity="0.25"/>
+    <circle cx="40" cy="36" r="4.5" fill="#1a2238"/>
+    <circle cx="60" cy="36" r="4.5" fill="#1a2238"/>
+    <circle cx="41" cy="35" r="1.8" fill="white"/>
+    <circle cx="61" cy="35" r="1.8" fill="white"/>
+    <path d="M37 50 Q50 62 63 50" fill="none" stroke="#1a2238" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="30" cy="46" r="4" fill="#ffc857" opacity="0.75"/>
+    <circle cx="70" cy="46" r="4" fill="#ffc857" opacity="0.75"/>
+    <path d="M50 18 L52.5 25 L60 25 L54.5 29.5 L56.5 37 L50 33 L43.5 37 L45.5 29.5 L40 25 L47.5 25 Z"
+      fill="white" opacity="0.7"/>
+  </g>
+</svg>
