@@ -10,51 +10,28 @@
  *     "unlocked" via the daily offer. These are merged into the default
  *     Hana's Game selection and badged in Learn-your-flag mode.
  *
- * The unlock pool is a hand-curated priority list of globally well-known
- * flags. United States and Israel are intentionally deprioritised per
- * product spec.
+ * The daily flag is deterministic — every player on the same local
+ * calendar date is offered the same flag (NYT Wordle parity). The pool
+ * is the project's curated EASY-difficulty list, which intentionally
+ * excludes Israel (currently classified as MODERATE / "hard for now").
  */
+
+import { EASY_CODES } from "./flagDifficulty";
 
 const LAST_OFFERED_KEY = "flagGame.lastUnlockOfferedDate";
 const LEARNED_KEY = "flagGame.learnedCountryCodes";
 
 /**
- * Priority order for picking the next "easy" flag to unlock. Iconic,
- * widely-recognised national flags listed first. United States (US) and
- * Israel (IL) are at the very end so they are only offered once the rest
- * have been learned.
+ * Pool of flags eligible to be offered as the daily unlock. Sorted
+ * ascending so the rotation is deterministic across deployments —
+ * `EASY_CODES` happens to be alphabetised in source today but we don't
+ * want the rotation to drift if that ever changes.
+ *
+ * Coupled to `EASY_CODES`: adding a new easy flag automatically expands
+ * the rotation; promoting Israel out of MODERATE would automatically
+ * fold it in. Both intended.
  */
-const UNLOCK_PRIORITY: readonly string[] = [
-  "FR", // France
-  "DE", // Germany
-  "GB", // United Kingdom
-  "IT", // Italy
-  "CN", // China
-  "ES", // Spain
-  "AR", // Argentina
-  "KR", // South Korea
-  "CH", // Switzerland
-  "SE", // Sweden
-  "GR", // Greece
-  "MX", // Mexico
-  "ZA", // South Africa
-  "RU", // Russia
-  "NL", // Netherlands
-  "PT", // Portugal
-  "NO", // Norway
-  "DK", // Denmark
-  "IE", // Ireland
-  "EG", // Egypt
-  "VA", // Vatican City
-  "NP", // Nepal
-  "SG", // Singapore
-  "SA", // Saudi Arabia
-  "ID", // Indonesia
-  "TR", // Turkey
-  // Deprioritised — only offered after the rest are exhausted.
-  "US", // United States
-  "IL", // Israel
-];
+const DAILY_FLAG_POOL: readonly string[] = [...EASY_CODES].sort();
 
 /**
  * Local-calendar date key in YYYY-MM-DD form, anchored to the browser's
@@ -125,22 +102,32 @@ export function addLearnedCode(code: string): string[] {
 }
 
 /**
- * Pick the next flag to offer the user when they take the daily unlock.
- * Walks the curated priority list and returns the first code that is
- * neither already learned nor present in their current Hana's Game pool
- * (so the unlock is always something genuinely new to them).
- *
- * Returns `null` only if every priority-list flag is already known —
- * extremely unlikely in practice.
+ * Number of whole UTC days between the Unix epoch and the midnight at
+ * the start of `dateKey` (YYYY-MM-DD). Anchored at UTC noon so DST
+ * transitions can't flip the integer one day forward / back.
  */
-export function pickNextUnlockCode(
-  alreadyKnown: readonly string[],
-): string | null {
-  const known = new Set(alreadyKnown.map((c) => c.toUpperCase()));
-  const learned = new Set(loadLearnedCodes().map((c) => c.toUpperCase()));
-  for (const code of UNLOCK_PRIORITY) {
-    if (known.has(code) || learned.has(code)) continue;
-    return code;
-  }
-  return null;
+function daysSinceEpoch(dateKey: string): number {
+  const [y, m, d] = dateKey.split("-").map(Number);
+  return Math.floor(Date.UTC(y!, (m ?? 1) - 1, d ?? 1, 12, 0, 0) / 86_400_000);
+}
+
+/**
+ * Today's daily flag — same alpha-2 code for every player on the same
+ * local calendar date, like NYT Wordle's puzzle-of-the-day. Cycles
+ * through `DAILY_FLAG_POOL` deterministically by date so two players
+ * who finish their first Hana's Game of the day are offered identical
+ * flags, regardless of timezone or game history.
+ *
+ * Always returns a valid pool entry (the pool is non-empty by
+ * construction — `EASY_CODES` ships with the project).
+ */
+export function getDailyFlagCode(now: Date = new Date()): string {
+  const dateKey = getLocalDateKey(now);
+  const idx = daysSinceEpoch(dateKey) % DAILY_FLAG_POOL.length;
+  return DAILY_FLAG_POOL[idx]!;
+}
+
+/** True iff the given alpha-2 code is already in the player's learned list. */
+export function isLearned(code: string): boolean {
+  return loadLearnedCodes().includes(code);
 }

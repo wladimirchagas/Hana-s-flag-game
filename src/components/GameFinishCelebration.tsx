@@ -148,16 +148,16 @@ export function GameFinishCelebration({
           {canUnlock && (
             <div className="finish__unlock">
               <p className="finish__unlock-blurb">
-                Nice work finishing today&rsquo;s game! 🌟 You&rsquo;ve
-                earned today&rsquo;s flag unlock — want to learn a brand new
-                one?
+                Nice work finishing today&rsquo;s game! 🌟 Today&rsquo;s
+                daily flag is ready — the same one for every player around
+                the world today.
               </p>
               <button
                 type="button"
                 className="finish__unlock-btn"
                 onClick={onUnlockFlag}
               >
-                Ready to learn a new flag? 🌍
+                See today&rsquo;s flag 🌍
               </button>
             </div>
           )}

@@ -17,8 +17,8 @@ import { GameFinishCelebration } from "../components/GameFinishCelebration";
 import { FlagUnlockModal } from "../components/FlagUnlockModal";
 import {
   addLearnedCode,
+  getDailyFlagCode,
   getLocalDateKey,
-  pickNextUnlockCode,
   saveLastUnlockOfferedDate,
   shouldOfferDailyUnlock,
 } from "../lib/learnedFlags";
@@ -180,20 +180,15 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
 
   const handleUnlockFlag = () => {
     if (!isCustomGame || !offerUnlock) return;
-    // Pick from a country pool that already excludes anything the player
-    // is currently practising — the next unlock should always be a flag
-    // they haven't been quizzed on.
-    const playingCodes = (filterCodes ?? game.countries.map((c) => c.code)).map(
-      (c) => c.toUpperCase(),
-    );
-    const code = pickNextUnlockCode(playingCodes);
-    if (!code) return;
-    // Resolve to a Country object from the in-memory pool; if the unlock
-    // target isn't in the current game's countries (the usual case), fall
-    // back to fetching from the leaderboard's full UN list — but the
-    // useGame hook already loaded the full list internally. We approximate
-    // by reusing whatever the game has plus a synthesised entry pulled from
-    // the REST Countries fetch shape via flagcdn for the missing fields.
+    // Today's flag is deterministic — every player on the same local
+    // calendar date sees the same flag, regardless of game history.
+    // The unlock modal handles the "you've already learned this one"
+    // case gracefully so we don't need to filter it out here.
+    const code = getDailyFlagCode();
+    // Resolve to a full Country object from the in-memory list (loaded
+    // on mount for this purpose). If the fetch hasn't returned yet,
+    // synthesise a minimal shell so the flag image and map highlight
+    // still work from the code alone.
     const fromAll = allCountries.find((c) => c.code === code);
     if (fromAll) {
       setUnlockTarget(fromAll);
