@@ -57,7 +57,12 @@ export default function CalibratePage() {
       updateResult(code, { status: "pending" });
 
       try {
-        // 1. Resolve audio URL
+        // 1. Resolve audio URL (YouTube-backed anthems are skipped — no wikiFile)
+        if (!anthem.wikiFile) {
+          updateResult(code, { status: "skipped", error: "YouTube source — calibration N/A" });
+          setProgress(p => ({ ...p, done: p.done + 1 }));
+          continue;
+        }
         const audioUrl = await resolveWikiUrl(anthem.wikiFile);
         if (!audioUrl) {
           updateResult(code, { status: "skipped", error: "URL not resolved" });
