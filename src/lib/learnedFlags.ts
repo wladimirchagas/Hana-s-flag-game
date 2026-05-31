@@ -9,25 +9,45 @@
  * The celebration offers today's flag on every completed Hana's Game.
  * Today's flag is deterministic — every player on the same local
  * calendar date is offered the same flag (NYT Wordle parity). The pool
- * is the project's curated EASY-difficulty list, which intentionally
- * excludes Israel (currently classified as MODERATE / "hard for now").
+ * is the project's curated EASY-difficulty list, minus anything that
+ * ships in the default Hana's Game starter set (so the daily offer is
+ * always a genuinely new flag for a brand-new player) and minus Israel
+ * (currently classified as MODERATE / "hard for now").
  */
 
 import { EASY_CODES } from "./flagDifficulty";
+import { STARTER_SELECTED_CODES } from "./countrySelection";
 
 const LEARNED_KEY = "flagGame.learnedCountryCodes";
 
 /**
- * Pool of flags eligible to be offered as the daily unlock. Sorted
- * ascending so the rotation is deterministic across deployments —
- * `EASY_CODES` happens to be alphabetised in source today but we don't
- * want the rotation to drift if that ever changes.
+ * Pool of flags eligible to be offered as the daily unlock.
  *
- * Coupled to `EASY_CODES`: adding a new easy flag automatically expands
- * the rotation; promoting Israel out of MODERATE would automatically
- * fold it in. Both intended.
+ *  - Source: `EASY_CODES` (project's curated easy-difficulty list).
+ *  - Filtered: anything also in `STARTER_SELECTED_CODES` is removed so
+ *    the daily offer is never a flag the player already has on day 1.
+ *    This is the *only* place that invariant is enforced — adding a
+ *    new code to the starter set automatically removes it from the
+ *    daily rotation; dropping one from the starter set automatically
+ *    folds it back in. Same applies in reverse for EASY_CODES.
+ *  - Sorted ascending so the rotation is deterministic across
+ *    deployments (every player on the same local calendar date sees
+ *    the same flag, NYT-Wordle style).
+ *
+ * Computed lazily on first call to side-step the
+ * learnedFlags ↔ countrySelection import cycle: by the time
+ * `getDailyFlagCode` first runs (a user click), both modules have
+ * fully initialised their top-level `const`s.
  */
-const DAILY_FLAG_POOL: readonly string[] = [...EASY_CODES].sort();
+let dailyFlagPoolCache: readonly string[] | null = null;
+function getDailyFlagPool(): readonly string[] {
+  if (dailyFlagPoolCache) return dailyFlagPoolCache;
+  const starter = new Set(STARTER_SELECTED_CODES);
+  dailyFlagPoolCache = [...EASY_CODES]
+    .filter((c) => !starter.has(c))
+    .sort();
+  return dailyFlagPoolCache;
+}
 
 /**
  * Local-calendar date key in YYYY-MM-DD form, anchored to the browser's
@@ -91,9 +111,10 @@ function daysSinceEpoch(dateKey: string): number {
  * construction — `EASY_CODES` ships with the project).
  */
 export function getDailyFlagCode(now: Date = new Date()): string {
+  const pool = getDailyFlagPool();
   const dateKey = getLocalDateKey(now);
-  const idx = daysSinceEpoch(dateKey) % DAILY_FLAG_POOL.length;
-  return DAILY_FLAG_POOL[idx]!;
+  const idx = daysSinceEpoch(dateKey) % pool.length;
+  return pool[idx]!;
 }
 
 /** True iff the given alpha-2 code is already in the player's learned list. */
