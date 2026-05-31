@@ -2244,7 +2244,7 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   padding: 1.75rem clamp(1.25rem, 4vw, 2.5rem) 1.75rem;
-  max-width: min(720px, 96vw);
+  max-width: min(960px, 96vw);
   width: 100%;
   text-align: center;
   color: var(--ink);
@@ -2286,31 +2286,38 @@
 }
 
 .flag-unlock__title {
-  margin: 0 0 1rem;
-  font-size: clamp(1.6rem, 5vw, 2.6rem);
+  margin: 0 0 1.25rem;
+  font-size: clamp(2rem, 6vw, 3.4rem);
   font-weight: 800;
   color: var(--ink);
-  line-height: 1.1;
+  line-height: 1.05;
 }
 
 .flag-unlock__flag-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1rem;
-  padding: 0.6rem;
+  margin: 0 auto 1.25rem;
+  padding: 0.75rem;
   background: var(--cream);
   border: 3px solid var(--ink);
-  border-radius: 14px;
-  box-shadow: 0 4px 0 var(--ink);
-  max-width: min(560px, 100%);
+  border-radius: 16px;
+  box-shadow: 0 5px 0 var(--ink);
+  /* Hero element — fill nearly the whole panel width. */
+  width: 100%;
+  max-width: 100%;
 }
 
 .flag-unlock__flag {
   width: 100%;
-  max-width: 520px;
+  /* Cap by viewport height so the title + map + actions still fit on a
+     standard desktop / laptop viewport without forcing the modal to
+     scroll. The flag still dominates — it's the largest element on the
+     screen — while the map and CTA remain immediately visible below. */
+  max-height: 38vh;
   height: auto;
   display: block;
+  object-fit: contain;
   filter:
     drop-shadow(0 0 0.5px var(--ink))
     drop-shadow(0 2px 4px rgba(26, 34, 56, 0.2));
@@ -2320,19 +2327,24 @@
   margin: 0 auto 0.5rem;
   max-width: 100%;
   /* Constrain the embedded WorldProgressMap so it doesn't dominate the
-     modal — the flag is the hero element here. */
+     modal — the flag is the hero element here. Cap by viewport height too
+     so on short windows the map shrinks rather than pushing buttons off-
+     screen. */
+  max-height: 32vh;
+  overflow: hidden;
   border: 3px solid var(--ink);
   border-radius: 14px;
   background: var(--cream);
-  overflow: hidden;
   box-shadow: 0 4px 0 var(--ink);
 }
 
-/* The map controls inside the unlock modal aren't useful (the user just
-   needs to see where the country sits) — hide the zoom +/- buttons. */
-.flag-unlock__map .world-map__zoom {
-  display: none;
-}
+/* The map's own chrome inside this modal would be redundant or get in the
+   way — the user just needs to see *where* the country sits. Hide the
+   "World map" heading, the +/-/rotate buttons, and any extras. */
+.flag-unlock__map .map-section { padding: 0; }
+.flag-unlock__map .map-heading { display: none; }
+.flag-unlock__map .world-map__zoom-controls { display: none; }
+.flag-unlock__map .map-with-zoom { display: block; }
 
 .flag-unlock__caption {
   margin: 0.6rem 0 1.25rem;
