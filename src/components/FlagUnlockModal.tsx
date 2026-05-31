@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import { WorldProgressMap } from "./WorldProgressMap";
 import { isLearned } from "../lib/learnedFlags";
+import { gameAudio } from "../lib/gameAudio";
 
 export type FlagUnlockModalProps = {
   country: Country;
@@ -31,6 +32,11 @@ export function FlagUnlockModal({
   // route the key to the right action (close zoom first, then modal).
   const zoomedRef = useRef(zoomed);
   zoomedRef.current = zoomed;
+
+  // Play the unlock sparkle sound when the modal first appears.
+  useEffect(() => {
+    gameAudio.playUnlock();
+  }, []);
 
   const highlightCodes = useMemo(
     () => new Set([country.code]),
