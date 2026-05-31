@@ -56,7 +56,14 @@ export function FlagUnlockModal({
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    const t = window.setTimeout(() => learnedBtnRef.current?.focus(), 50);
+    // `preventScroll` keeps the modal's overflow:auto container at the
+    // top so the eyebrow + country name remain visible. Without it the
+    // browser scrolls the focused button into view, parking the panel
+    // at the bottom and hiding the title.
+    const t = window.setTimeout(
+      () => learnedBtnRef.current?.focus({ preventScroll: true }),
+      50,
+    );
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;

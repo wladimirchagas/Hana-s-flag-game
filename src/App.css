@@ -2255,7 +2255,11 @@
   inset: 0;
   z-index: 110;
   display: flex;
-  align-items: center;
+  /* `safe center` so the panel centers when it fits but top-aligns when
+     it doesn't — without this, an overflowing panel pushes its top
+     above the viewport (so the title scrolls off-screen and the user
+     can't scroll up to it). */
+  align-items: safe center;
   justify-content: center;
   background: rgba(26, 34, 56, 0.82);
   padding: 1.25rem;
