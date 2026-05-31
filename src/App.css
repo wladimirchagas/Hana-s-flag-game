@@ -259,7 +259,10 @@
 .flag-zoom {
   position: fixed;
   inset: 0;
-  z-index: 60;
+  /* Sits above .flag-unlock (z-index 110) so the enlarge view is also
+     reachable from the daily-flag unlock modal, not only the in-game
+     FlagCard. */
+  z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2317,6 +2320,10 @@
 }
 
 .flag-unlock__flag-wrap {
+  /* Renders as a <button> so the flag is clickable for the fullscreen
+     enlarge view (same pattern as FlagCard + Learn mode). Strip the UA
+     button defaults so it matches the original framed-flag look. */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2329,6 +2336,33 @@
   /* Hero element — fill nearly the whole panel width. */
   width: 100%;
   max-width: 100%;
+  cursor: zoom-in;
+  font-family: inherit;
+  color: inherit;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.flag-unlock__flag-wrap:hover,
+.flag-unlock__flag-wrap:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--ink);
+  outline: none;
+}
+
+.flag-unlock__flag-hint {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.8rem;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink-fixed);
+  background: var(--mustard);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  pointer-events: none;
+  opacity: 0.92;
 }
 
 .flag-unlock__flag {
@@ -2348,13 +2382,11 @@
 
 .flag-unlock__map {
   margin: 0 auto 0.5rem;
-  max-width: 100%;
-  /* Constrain the embedded WorldProgressMap so it doesn't dominate the
-     modal — the flag is the hero element here. Cap by viewport height too
-     so on short windows the map shrinks rather than pushing buttons off-
-     screen. */
-  max-height: 32vh;
-  overflow: hidden;
+  width: 100%;
+  /* Let the map render at its natural aspect ratio (960:500). Capping
+     by viewport height was clipping the projection's poles. The modal
+     panel scrolls if the total content exceeds the viewport. */
+  overflow: hidden; /* keep — needed to clip the SVG to rounded corners */
   border: 3px solid var(--ink);
   border-radius: 14px;
   background: var(--cream);
