@@ -14,9 +14,16 @@ export interface AnthemData {
   title: string;
   titleEn?: string;
   /** Wikimedia Commons file name (without "File:" prefix). Used to fetch the audio URL. */
-  wikiFile: string;
+  wikiFile?: string;
   /** Fallback search query if wikiFile lookup fails */
   wikiSearch?: string;
+  /** YouTube video ID — when set, audio is sourced from YouTube instead of Wikimedia. */
+  youtubeId?: string;
+  /**
+   * Seconds from the start of the YouTube video to where vocals begin.
+   * Applied as introOffsetRef so that line `start` times remain vocal-relative.
+   */
+  youtubeIntroOffset?: number;
   language: string;
   instrumental?: boolean;
   lines?: AnthemLine[];
@@ -1960,7 +1967,9 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
   },
   MY: {
     title: "Negaraku", titleEn: "My Country",
-    wikiFile: "Negaraku.ogg", language: "ms",
+    youtubeId: "2alzBDgkAeI",
+    youtubeIntroOffset: 5.5,
+    language: "ms",
     lines: [
       { text: "Negaraku,", textEn: "My country,", start: 0 },
       { text: "Tanah tumpahnya darahku,", textEn: "The land where my blood is shed,", start: 5 },
