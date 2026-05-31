@@ -8,6 +8,7 @@ import { QuickQuizSetupModal, type QuickQuizConfig } from '../components/QuickQu
 import { AllFlagsSetupModal, type AllFlagsStart } from '../components/AllFlagsSetupModal'
 import { HeroCarousel } from '../components/HeroCharacters'
 import { InstallAppButton } from '../components/InstallAppButton'
+import { loadStoredSelection } from '../lib/countrySelection'
 import './LandingPage.css'
 
 const TITLE_LETTERS: { ch: string; color: string }[] = [
@@ -105,22 +106,46 @@ export default function LandingPage() {
         </div>
 
         {/* Hero card — integrates the rotating poster with the Hana's Game
-            CTA so they read as a single visual unit. The whole card is
-            clickable (role=button) to open the picker; the carousel arrows
-            inside stopPropagation so they don't trigger play. */}
+            CTA so they read as a single visual unit. Clicking the card
+            starts the game with the stored selection; the gear in the
+            top-right opens the picker so users can edit their list. */}
         <div
           className="hero-card"
           role="button"
           tabIndex={0}
           aria-label="Play Hana's Game"
-          onClick={() => setPickerOpen(true)}
+          onClick={() => playWith(loadStoredSelection().codes)}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
               e.preventDefault()
-              setPickerOpen(true)
+              playWith(loadStoredSelection().codes)
             }
           }}
         >
+          <button
+            type="button"
+            className="hero-card__settings"
+            aria-label="Edit country list"
+            onClick={(e) => {
+              e.stopPropagation()
+              setPickerOpen(true)
+            }}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+          </button>
           <HeroCarousel className="hero-card__poster" />
           <div className="hero-card__content">
             <h2 className="hero-card__title">Hana&rsquo;s Game</h2>
