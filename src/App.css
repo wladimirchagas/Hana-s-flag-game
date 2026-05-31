@@ -2115,6 +2115,29 @@
   outline: none;
 }
 
+/* Hana's Game "Play again" — green pill matching the chunky-button family. */
+.finish__play-again {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 2rem;
+  background: var(--lime);
+  color: var(--ink-fixed);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 var(--ink);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.finish__play-again:hover,
+.finish__play-again:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--ink);
+  outline: none;
+}
+
 /* Confetti rain — full-viewport, falls continuously while the overlay shows */
 .finish__confetti {
   position: absolute;
