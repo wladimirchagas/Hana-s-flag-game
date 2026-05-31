@@ -2,25 +2,21 @@
  * Learned-flag progression for Hana's Game mode.
  *
  * Tracks two pieces of state in localStorage:
- *   - `flagGame.perfectStreak` — number of consecutive 100%-perfect Hana's
- *     Game completions. Resets to 0 on any imperfect or early-ended game.
+ *   - `flagGame.lastUnlockOfferedDate` — YYYY-MM-DD (browser-local) of the
+ *     last day on which the celebration showed the "learn a new flag" CTA.
+ *     The CTA is offered at most once per local calendar day: the first
+ *     time the player completes a Hana's Game that day.
  *   - `flagGame.learnedCountryCodes` — alpha-2 codes of flags the user has
- *     "unlocked" via the streak-reward flow. These are merged into the
- *     default Hana's Game selection and badged in Learn-your-flag mode.
+ *     "unlocked" via the daily offer. These are merged into the default
+ *     Hana's Game selection and badged in Learn-your-flag mode.
  *
  * The unlock pool is a hand-curated priority list of globally well-known
  * flags. United States and Israel are intentionally deprioritised per
  * product spec.
  */
 
-const STREAK_KEY = "flagGame.perfectStreak";
+const LAST_OFFERED_KEY = "flagGame.lastUnlockOfferedDate";
 const LEARNED_KEY = "flagGame.learnedCountryCodes";
-
-/**
- * Number of consecutive perfect games required to unlock the next flag.
- * Exposed so the celebration UI can mention the threshold consistently.
- */
-export const PERFECT_STREAK_THRESHOLD = 3;
 
 /**
  * Priority order for picking the next "easy" flag to unlock. Iconic,
@@ -60,23 +56,44 @@ const UNLOCK_PRIORITY: readonly string[] = [
   "IL", // Israel
 ];
 
-export function loadPerfectStreak(): number {
+/**
+ * Local-calendar date key in YYYY-MM-DD form, anchored to the browser's
+ * timezone. We compare day keys (not millis) so the boundary is
+ * "midnight local" regardless of the player's locale, and so the same
+ * device opened twice in one day always sees the same key.
+ */
+export function getLocalDateKey(d: Date = new Date()): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${dd}`;
+}
+
+export function loadLastUnlockOfferedDate(): string | null {
   try {
-    const raw = localStorage.getItem(STREAK_KEY);
-    if (raw == null) return 0;
-    const n = Number.parseInt(raw, 10);
-    return Number.isFinite(n) && n >= 0 ? n : 0;
+    const raw = localStorage.getItem(LAST_OFFERED_KEY);
+    return typeof raw === "string" && raw.length > 0 ? raw : null;
   } catch {
-    return 0;
+    return null;
   }
 }
 
-export function savePerfectStreak(streak: number): void {
+export function saveLastUnlockOfferedDate(dateKey: string): void {
   try {
-    localStorage.setItem(STREAK_KEY, String(Math.max(0, streak)));
+    localStorage.setItem(LAST_OFFERED_KEY, dateKey);
   } catch {
     // ignore quota / privacy mode errors
   }
+}
+
+/**
+ * True if the player hasn't yet been offered the daily unlock today —
+ * i.e., the stored last-offered date differs from today's local-date key.
+ * Caller is responsible for stamping `saveLastUnlockOfferedDate` once the
+ * offer is presented so we don't show it twice in the same day.
+ */
+export function shouldOfferDailyUnlock(now: Date = new Date()): boolean {
+  return loadLastUnlockOfferedDate() !== getLocalDateKey(now);
 }
 
 export function loadLearnedCodes(): string[] {
@@ -108,7 +125,7 @@ export function addLearnedCode(code: string): string[] {
 }
 
 /**
- * Pick the next flag to offer the user when they cash in their streak.
+ * Pick the next flag to offer the user when they take the daily unlock.
  * Walks the curated priority list and returns the first code that is
  * neither already learned nor present in their current Hana's Game pool
  * (so the unlock is always something genuinely new to them).
