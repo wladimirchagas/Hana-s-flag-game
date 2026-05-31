@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import { WorldProgressMap } from "./WorldProgressMap";
 import { isLearned } from "../lib/learnedFlags";
@@ -26,6 +26,11 @@ export function FlagUnlockModal({
   onClose,
 }: FlagUnlockModalProps) {
   const learnedBtnRef = useRef<HTMLButtonElement>(null);
+  const [zoomed, setZoomed] = useState(false);
+  // Track zoom in a ref so the Esc handler — bound once at mount — can
+  // route the key to the right action (close zoom first, then modal).
+  const zoomedRef = useRef(zoomed);
+  zoomedRef.current = zoomed;
 
   const highlightCodes = useMemo(
     () => new Set([country.code]),
@@ -40,7 +45,13 @@ export function FlagUnlockModal({
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key !== "Escape") return;
+      if (zoomedRef.current) {
+        // Close the fullscreen flag first; leave the unlock modal up.
+        setZoomed(false);
+      } else {
+        onClose();
+      }
     };
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
@@ -76,14 +87,22 @@ export function FlagUnlockModal({
         <h2 id="flag-unlock__title" className="flag-unlock__title">
           {country.name}
         </h2>
-        <div className="flag-unlock__flag-wrap">
+        <button
+          type="button"
+          className="flag-unlock__flag-wrap"
+          onClick={() => setZoomed(true)}
+          aria-label={`Enlarge ${country.name} flag`}
+        >
           <img
             src={country.flagSvg}
             alt={`Flag of ${country.name}`}
             className="flag-unlock__flag"
             draggable={false}
           />
-        </div>
+          <span className="flag-unlock__flag-hint" aria-hidden="true">
+            ⤢ Click to enlarge
+          </span>
+        </button>
         <div className="flag-unlock__map" aria-label={`Location of ${country.name} on the world map`}>
           <WorldProgressMap
             countryResults={{}}
@@ -116,6 +135,36 @@ export function FlagUnlockModal({
           )}
         </div>
       </div>
+
+      {/* Fullscreen flag view — same .flag-zoom pattern used by FlagCard
+          and Learn-mode. Click the backdrop or press Esc to dismiss. */}
+      {zoomed && (
+        <div
+          className="flag-zoom"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Enlarged ${country.name} flag`}
+          onClick={() => setZoomed(false)}
+        >
+          <img
+            src={country.flagSvg}
+            alt={`Flag of ${country.name}`}
+            className="flag-zoom__img"
+            draggable={false}
+          />
+          <button
+            type="button"
+            className="flag-zoom__close"
+            onClick={(e) => {
+              e.stopPropagation();
+              setZoomed(false);
+            }}
+            aria-label="Close enlarged flag"
+          >
+            ×
+          </button>
+        </div>
+      )}
     </div>
   );
 }
