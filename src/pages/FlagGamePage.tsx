@@ -16,11 +16,11 @@ import { AnswerBurst } from "../components/AnswerBurst";
 import { GameFinishCelebration } from "../components/GameFinishCelebration";
 import { FlagUnlockModal } from "../components/FlagUnlockModal";
 import {
-  PERFECT_STREAK_THRESHOLD,
   addLearnedCode,
-  loadPerfectStreak,
+  getLocalDateKey,
   pickNextUnlockCode,
-  savePerfectStreak,
+  saveLastUnlockOfferedDate,
+  shouldOfferDailyUnlock,
 } from "../lib/learnedFlags";
 import { addCodeToStoredSelection } from "../lib/countrySelection";
 import { fetchCountries, type Country } from "../api/countries";
@@ -107,16 +107,17 @@ export default function FlagGamePage() {
     }
   }, [game.phase]);
 
-  // --- Perfect-streak reward (Hana's Game only) ---
-  // Track consecutive 100%-perfect completions so the celebration can offer
-  // the player a new flag to learn every PERFECT_STREAK_THRESHOLD wins. Only
-  // Hana's Game (the custom-codes mode) counts — Quick Quiz and Flag Master
-  // have their own pacing and would muddy the signal.
+  // --- Daily learn-a-new-flag offer (Hana's Game only) ---
+  // The first time the player completes a Hana's Game on any given local
+  // calendar day, the celebration shows a "want to learn a new flag?"
+  // CTA. Once shown that day the offer doesn't re-appear until the local
+  // date rolls over (browser timezone, midnight → midnight). Other game
+  // modes never trigger the offer.
   //
-  // `displayedStreak` is what the celebration reads; we re-read the
-  // authoritative value from localStorage inside the effect so the streak
-  // logic doesn't form a render → state → render loop.
-  const [displayedStreak, setDisplayedStreak] = useState<number>(0);
+  // `offerUnlock` is the per-render flag the celebration component reads
+  // (it controls whether `onUnlockFlag` is passed); the localStorage day-
+  // key is the persistent gate.
+  const [offerUnlock, setOfferUnlock] = useState(false);
   const [unlockTarget, setUnlockTarget] = useState<Country | null>(null);
   // Full 195-country UN list, fetched once so the unlock flow can resolve a
   // freshly-picked code to a Country (flag URL, name, continent) even when
@@ -136,45 +137,37 @@ export default function FlagGamePage() {
       cancelled = true;
     };
   }, []);
-  // Guard so the streak only ticks once per finished game, even if React
-  // re-runs the effect (Strict Mode in development).
-  const streakAppliedRef = useRef(false);
+  // Guard so the daily-offer check only runs once per finished game, even
+  // if React re-runs the effect (Strict Mode in development).
+  const offerAppliedRef = useRef(false);
 
-  // Detect a 100%-perfect run: every flag answered, score equals total flags
-  // (every confirm() that doesn't add to score is a wrong guess via the retry
-  // path, which decrements score by 1, so score === totalFlags <=> zero wrong
-  // attempts across the whole game).
-  const isPerfectRun =
+  // A game "counts" for the daily offer when it's a Hana's Game that
+  // played through every flag. Ending early or playing a different mode
+  // does not consume the day's offer.
+  const completedHanasGame =
     game.phase === "finished" &&
+    isCustomGame &&
     game.totalAnswered >= game.totalFlags &&
-    game.score === game.totalFlags &&
     game.totalFlags > 0;
 
   useEffect(() => {
     if (game.phase !== "finished") {
-      streakAppliedRef.current = false;
+      offerAppliedRef.current = false;
+      setOfferUnlock(false);
       return;
     }
-    if (streakAppliedRef.current) return;
-    streakAppliedRef.current = true;
-    // Only Hana's Game (custom codes mode) counts toward the unlock streak.
-    if (!isCustomGame) {
-      setDisplayedStreak(0);
-      return;
-    }
-    const prev = loadPerfectStreak();
-    if (isPerfectRun) {
-      const next = prev + 1;
-      savePerfectStreak(next);
-      setDisplayedStreak(next);
-    } else {
-      if (prev !== 0) savePerfectStreak(0);
-      setDisplayedStreak(0);
-    }
-  }, [game.phase, isPerfectRun, isCustomGame]);
+    if (offerAppliedRef.current) return;
+    offerAppliedRef.current = true;
+    if (!completedHanasGame) return;
+    if (!shouldOfferDailyUnlock()) return;
+    // Stamp the day immediately so subsequent Hana's completions today
+    // (whether the player accepts or dismisses this one) don't re-offer.
+    saveLastUnlockOfferedDate(getLocalDateKey());
+    setOfferUnlock(true);
+  }, [game.phase, completedHanasGame]);
 
   const handleUnlockFlag = () => {
-    if (!isCustomGame || displayedStreak < PERFECT_STREAK_THRESHOLD) return;
+    if (!isCustomGame || !offerUnlock) return;
     // Pick from a country pool that already excludes anything the player
     // is currently practising — the next unlock should always be a flag
     // they haven't been quizzed on.
@@ -209,10 +202,9 @@ export default function FlagGamePage() {
     if (!unlockTarget) return;
     addLearnedCode(unlockTarget.code);
     addCodeToStoredSelection(unlockTarget.code);
-    // Cash in the streak — the user has to earn another three wins to
-    // unlock the next flag.
-    savePerfectStreak(0);
-    setDisplayedStreak(0);
+    // The day's offer was already consumed when the celebration appeared;
+    // just close the unlock modal and let the player keep going.
+    setOfferUnlock(false);
     setUnlockTarget(null);
   };
 
@@ -322,9 +314,7 @@ export default function FlagGamePage() {
           saveHint={saveHint}
           onSave={handleSave}
           onContinue={() => setCelebrationDismissed(true)}
-          perfectStreak={displayedStreak}
-          perfectStreakThreshold={PERFECT_STREAK_THRESHOLD}
-          onUnlockFlag={isCustomGame ? handleUnlockFlag : undefined}
+          onUnlockFlag={offerUnlock ? handleUnlockFlag : undefined}
         />
       )}
       {unlockTarget && (
