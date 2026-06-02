@@ -105,7 +105,7 @@ export default defineConfig({
         // Public dir contains a couple of large data blobs (countries-50m.json,
         // historical maps) — exclude from precache so the install footprint
         // stays small.
-        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**'],
+        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**'],
       },
       devOptions: {
         // Keep the install button working in `npm run dev` so we can test
