@@ -34,7 +34,7 @@ import {
   polityModernName,
   type Era,
 } from "../lib/historicalEras";
-import { fetchSubdivisionGeo, subdivisionFlagUrl, subdivisionFlagPngUrl } from "../api/subdivisions";
+import { fetchSubdivisionGeo, subdivisionFlagUrl } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
@@ -494,16 +494,6 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, showFlagMap, flagEntries, baseUrl]);
 
-  // Flag overlay for subdivision map: maps ISO 3166-2 code → PNG URL.
-  const subdivisionFlagOverlay = useMemo(() => {
-    if (!subdivisionMode || !subdivisionGeo) return null;
-    const m = new Map<string, string>();
-    for (const f of subdivisionGeo.features) {
-      const code = f.properties.iso_3166_2;
-      if (code) m.set(code, subdivisionFlagPngUrl(code));
-    }
-    return m;
-  }, [subdivisionMode, subdivisionGeo]);
 
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
   // component is not bypassed when unrelated state (selected, hovered, …)
@@ -642,7 +632,6 @@ export default function LearnPage() {
           <SubdivisionMap
             geoData={subdivisionGeo}
             loading={subdivisionLoading}
-            flagOverlay={subdivisionFlagOverlay}
             selectedCode={selectedSubdivision?.code ?? null}
             onSelect={(code) => {
               const countryCode = display?.kind === "modern" ? display.country.code : "";
