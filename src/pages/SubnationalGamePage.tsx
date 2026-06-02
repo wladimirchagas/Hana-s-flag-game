@@ -186,7 +186,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
         {game.phase !== "loading" && (
           <SubdivisionMap
             geoData={game.geoData}
-            loading={game.phase === "loading"}
+            loading={false}
             flagOverlay={game.direction === "map-to-flag" ? flagOverlay : null}
             selectedCode={
               game.direction === "flag-to-map"
