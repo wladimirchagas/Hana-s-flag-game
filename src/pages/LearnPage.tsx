@@ -814,12 +814,14 @@ export default function LearnPage() {
                           <div className="learn-fs__subdiv-info">
                             <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
                             <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
-                            <img
-                              src={subdivisionFlagUrl(selectedSubdivision.code)}
-                              alt={selectedSubdivision.name}
-                              className="learn-fs__subdiv-flag"
-                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                            />
+                            {subdivisionFlagUrl(selectedSubdivision.code) && (
+                              <img
+                                src={subdivisionFlagUrl(selectedSubdivision.code)!}
+                                alt={selectedSubdivision.name}
+                                className="learn-fs__subdiv-flag"
+                                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                              />
+                            )}
                           </div>
                         )}
                       </>
@@ -922,12 +924,14 @@ export default function LearnPage() {
                       if (meta) setSelectedSubdivision(meta);
                     }}
                   >
-                    <img
-                      src={subdivisionFlagUrl(code)}
-                      alt={name}
-                      className="subdiv-flag-row__img"
-                      onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                    />
+                    {subdivisionFlagUrl(code) && (
+                      <img
+                        src={subdivisionFlagUrl(code)!}
+                        alt={name}
+                        className="subdiv-flag-row__img"
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                      />
+                    )}
                     <span className="subdiv-flag-row__name">{name}</span>
                   </button>
                 );

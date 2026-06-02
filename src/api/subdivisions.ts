@@ -1,4 +1,5 @@
 import type { SubdivisionFeatureCollection } from "../types/subdivision";
+import { subdivisionFlagCdnUrl, hasSubdivisionFlag } from "../lib/subdivisionFlagIndex";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -25,11 +26,12 @@ export async function fetchSubdivisionGeo(
   }
 }
 
-export function subdivisionFlagUrl(isoCode: string): string {
-  // flagcdn.com supports ISO 3166-2 as lowercase with hyphen (e.g. "us-ca")
-  return `https://flagcdn.com/${isoCode.toLowerCase()}.svg`;
+/**
+ * Returns the CDN URL for a subdivision flag, or null if none is indexed.
+ * Source: amckenna41/iso3166-flags via jsDelivr.
+ */
+export function subdivisionFlagUrl(isoCode: string): string | null {
+  return subdivisionFlagCdnUrl(isoCode);
 }
 
-export function subdivisionFlagPngUrl(isoCode: string): string {
-  return `https://flagcdn.com/w320/${isoCode.toLowerCase()}.png`;
-}
+export { hasSubdivisionFlag };

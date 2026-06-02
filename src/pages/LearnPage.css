@@ -1545,3 +1545,18 @@
   border-color: var(--ink);
   color: var(--ink-fixed);
 }
+
+/* When an alternative has a flag, display it above the name */
+.subdiv-game__name-option--has-flag {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.subdiv-game__option-flag {
+  width: 64px;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  border-radius: 3px;
+  pointer-events: none;
+}

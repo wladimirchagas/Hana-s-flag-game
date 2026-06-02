@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useSubdivisionGame, type SubdivGameDirection } from "../hooks/useSubdivisionGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { SubdivisionMap } from "../components/SubdivisionMap";
+import { subdivisionFlagUrl } from "../api/subdivisions";
 import { gameAudio } from "../lib/gameAudio";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameClock } from "../components/GameClock";
@@ -99,7 +100,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
   const isGuessing = game.phase === "guessing";
 
   const directionLabel: Record<SubdivGameDirection, string> = {
-    "flag-to-map": "Name → click on map",
+    "flag-to-map": "Flag → click on map",
     "map-to-flag": "Highlighted → pick name",
   };
 
@@ -148,13 +149,28 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           </div>
         )}
 
-        {/* Name-to-map: show division name, player clicks on map */}
-        {!isFinished && game.direction === "flag-to-map" && game.current && (
-          <div className="subdiv-game__name-card">
-            <p className="subdiv-game__card-hint">Click on the map:</p>
-            <p className="subdiv-game__division-name">{game.current.name}</p>
-          </div>
-        )}
+        {/* Flag-to-map: show flag (with name fallback) — player clicks on map */}
+        {!isFinished && game.direction === "flag-to-map" && game.current && (() => {
+          const flagUrl = subdivisionFlagUrl(game.current.code);
+          return flagUrl ? (
+            <div className="subdiv-game__flag-card">
+              <p className="subdiv-game__flag-label">
+                Which {game.current.typeLabel.toLowerCase()} has this flag?
+              </p>
+              <img
+                src={flagUrl}
+                alt=""
+                className="subdiv-game__flag-img"
+                onError={(e) => { e.currentTarget.style.display = "none"; }}
+              />
+            </div>
+          ) : (
+            <div className="subdiv-game__name-card">
+              <p className="subdiv-game__card-hint">Click on the map:</p>
+              <p className="subdiv-game__division-name">{game.current.name}</p>
+            </div>
+          );
+        })()}
 
         {/* Map-to-name: highlight division on map, player picks name */}
         {!isFinished && game.direction === "map-to-flag" && game.current && (
@@ -193,20 +209,32 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           />
         )}
 
-        {/* Map-to-name: name option buttons for picking */}
+        {/* Map-to-name: pick from alternatives — show flag + name when available */}
         {!isFinished && game.direction === "map-to-flag" && isGuessing && (
           <div className="subdiv-game__name-picker">
             <div className="subdiv-game__name-options">
-              {game.questionAlternatives.map((alt) => (
-                <button
-                  key={alt.code}
-                  type="button"
-                  className={`subdiv-game__name-option${game.selected?.code === alt.code ? " subdiv-game__name-option--selected" : ""}`}
-                  onClick={() => game.setSelected(alt)}
-                >
-                  {alt.name}
-                </button>
-              ))}
+              {game.questionAlternatives.map((alt) => {
+                const altFlag = subdivisionFlagUrl(alt.code);
+                const isSelected = game.selected?.code === alt.code;
+                return (
+                  <button
+                    key={alt.code}
+                    type="button"
+                    className={`subdiv-game__name-option${isSelected ? " subdiv-game__name-option--selected" : ""}${altFlag ? " subdiv-game__name-option--has-flag" : ""}`}
+                    onClick={() => game.setSelected(alt)}
+                  >
+                    {altFlag && (
+                      <img
+                        src={altFlag}
+                        alt=""
+                        className="subdiv-game__option-flag"
+                        onError={(e) => { e.currentTarget.style.display = "none"; }}
+                      />
+                    )}
+                    <span>{alt.name}</span>
+                  </button>
+                );
+              })}
             </div>
             <button
               type="button"
