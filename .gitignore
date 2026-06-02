@@ -31,3 +31,4 @@ dev-dist
 # Admin-1 inputs for the patchwork split scripts.
 # Re-downloaded on demand by scripts/split-patchwork.py.
 scripts/data/*-adm1.geojson
+.claude/worktrees/
