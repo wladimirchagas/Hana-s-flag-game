@@ -291,9 +291,7 @@ export function SubdivisionMap({
     const placement: "above" | "below" = placeAbove ? "above" : "below";
 
     onSelect?.(code);
-    if (onConfirm) {
-      setPopover({ code, name, x, y, placement });
-    }
+    setPopover({ code, name, x, y, placement });
   }
 
   function handleConfirm() {

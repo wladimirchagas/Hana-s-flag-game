@@ -62,7 +62,9 @@ export function AllFlagsSetupModal({
   onStart,
 }: AllFlagsSetupModalProps) {
   const [mode, setMode] = useState<FlagMasterMode>("all195");
-  const [subnationalSearch, setSubnationalSearch] = useState("");
+  const [subnationalCountry, setSubnationalCountry] = useState(
+    SUBNATIONAL_COUNTRIES[0]?.code ?? ""
+  );
 
   const closeRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
@@ -91,7 +93,7 @@ export function AllFlagsSetupModal({
   useEffect(() => {
     if (!open) {
       setMode("all195");
-      setSubnationalSearch("");
+      setSubnationalCountry(SUBNATIONAL_COUNTRIES[0]?.code ?? "");
     }
   }, [open]);
 
@@ -107,12 +109,6 @@ export function AllFlagsSetupModal({
       : mode === "subnational"
       ? "Pick a country — you'll guess all its sub-national division flags."
       : "Pick a group of visually similar flags to test yourself on.";
-
-  const filteredCountries = subnationalSearch.trim()
-    ? SUBNATIONAL_COUNTRIES.filter((c) =>
-        c.name.toLowerCase().includes(subnationalSearch.toLowerCase())
-      )
-    : SUBNATIONAL_COUNTRIES;
 
   return (
     <div
@@ -286,55 +282,54 @@ export function AllFlagsSetupModal({
           </>
         )}
 
-        {/* ── Sub-national flags — pick a country ── */}
-        {mode === "subnational" && (
-          <>
-            <div className="all195__body">
-              <div className="all195__subnational-search">
-                <input
-                  type="search"
-                  className="all195__subnational-input"
-                  placeholder="Search countries…"
-                  value={subnationalSearch}
-                  onChange={(e) => setSubnationalSearch(e.target.value)}
-                  aria-label="Search countries for sub-national game"
-                />
-              </div>
-              <div className="all195__body--groups">
-                {filteredCountries.map((c) => {
-                  const meta = SUBDIVISION_META[c.code];
-                  const count = meta?.divisions.length ?? 0;
-                  return (
-                    <button
-                      key={c.code}
-                      type="button"
-                      className="all195__group-row"
-                      onClick={() =>
-                        onStart({ type: "subnational", countryCode: c.code, countryName: c.name })
-                      }
-                    >
-                      <span className="all195__group-label">{c.name}</span>
-                      <span className="all195__group-count">
-                        {count} {meta?.pluralLabel?.toLowerCase() ?? "division"}
-                        {count === 1 ? "" : "s"}
-                      </span>
-                    </button>
-                  );
-                })}
-                {filteredCountries.length === 0 && (
-                  <p style={{ padding: "1rem", color: "var(--ink-soft)", fontStyle: "italic" }}>
-                    No countries found.
+        {/* ── Sub-national flags — pick a country via dropdown ── */}
+        {mode === "subnational" && (() => {
+          const selected = SUBNATIONAL_COUNTRIES.find((c) => c.code === subnationalCountry);
+          const meta = selected ? SUBDIVISION_META[selected.code] : null;
+          const count = meta?.divisions.length ?? 0;
+          return (
+            <>
+              <div className="all195__body all195__body--subnational">
+                <div className="all195__subnational-select-row">
+                  <label className="all195__subnational-label" htmlFor="subnational-country-select">
+                    Country
+                  </label>
+                  <select
+                    id="subnational-country-select"
+                    className="all195__subnational-select"
+                    value={subnationalCountry}
+                    onChange={(e) => setSubnationalCountry(e.target.value)}
+                  >
+                    {SUBNATIONAL_COUNTRIES.map((c) => (
+                      <option key={c.code} value={c.code}>{c.name}</option>
+                    ))}
+                  </select>
+                </div>
+                {selected && (
+                  <p className="all195__subnational-count">
+                    {count} {meta?.pluralLabel?.toLowerCase() ?? "division"}{count === 1 ? "" : "s"}
                   </p>
                 )}
               </div>
-            </div>
-            <footer className="all195__footer">
-              <button type="button" className="all195__cancel" onClick={onClose}>
-                Cancel
-              </button>
-            </footer>
-          </>
-        )}
+              <footer className="all195__footer">
+                <button type="button" className="all195__cancel" onClick={onClose}>
+                  Cancel
+                </button>
+                {selected && (
+                  <button
+                    type="button"
+                    className="qquiz__play"
+                    onClick={() =>
+                      onStart({ type: "subnational", countryCode: selected.code, countryName: selected.name })
+                    }
+                  >
+                    Play
+                  </button>
+                )}
+              </footer>
+            </>
+          );
+        })()}
       </div>
     </div>
   );

@@ -22,6 +22,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
   const [playerName, setPlayerName] = useState("");
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
   const [celebrationDismissed, setCelebrationDismissed] = useState(false);
+  const [flagImgError, setFlagImgError] = useState(false);
 
   // Sound effects
   useEffect(() => {
@@ -46,6 +47,11 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
       setPlayerName("");
     }
   }, [game.phase]);
+
+  // Reset flag error when question changes
+  useEffect(() => {
+    setFlagImgError(false);
+  }, [game.current?.code]);
 
   function handleSave() {
     if (!playerName.trim()) {
@@ -149,10 +155,10 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           </div>
         )}
 
-        {/* Flag-to-map: show flag (with name fallback) — player clicks on map */}
+        {/* Flag-to-map: show flag (with name fallback if no flag or load error) */}
         {!isFinished && game.direction === "flag-to-map" && game.current && (() => {
           const flagUrl = subdivisionFlagUrl(game.current.code);
-          return flagUrl ? (
+          return (flagUrl && !flagImgError) ? (
             <div className="subdiv-game__flag-card">
               <p className="subdiv-game__flag-label">
                 Which {game.current.typeLabel.toLowerCase()} has this flag?
@@ -161,7 +167,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
                 src={flagUrl}
                 alt=""
                 className="subdiv-game__flag-img"
-                onError={(e) => { e.currentTarget.style.display = "none"; }}
+                onError={() => setFlagImgError(true)}
               />
             </div>
           ) : (
