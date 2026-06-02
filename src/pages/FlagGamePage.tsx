@@ -19,7 +19,10 @@ import { FlagUnlockModal } from "../components/FlagUnlockModal";
 import { addLearnedCode, getDailyFlagCode } from "../lib/learnedFlags";
 import { addCodeToStoredSelection } from "../lib/countrySelection";
 import { fetchCountries, type Country } from "../api/countries";
+import { SubnationalGamePage } from "./SubnationalGamePage";
 import "../App.css";
+
+type SubnationalState = { countryCode: string; countryName: string };
 
 type QuizState = {
   flagCount: number;
@@ -34,8 +37,25 @@ type GroupGameState = {
 };
 
 export default function FlagGamePage() {
+  const location = useLocation();
+  const navStateRaw = location.state as { subnational?: SubnationalState } | null;
+
+  // Subnational game: completely separate component tree so hooks aren't conditional
+  if (navStateRaw?.subnational) {
+    return (
+      <SubnationalGamePage
+        countryCode={navStateRaw.subnational.countryCode}
+        countryName={navStateRaw.subnational.countryName}
+      />
+    );
+  }
+
   // Bumping this remounts FlagGameInner, which re-runs useGame with the same
   // router state — the cleanest reset for the "Play again" CTA in Hana's Game.
+  return <FlagGamePageInner />;
+}
+
+function FlagGamePageInner() {
   const [playAgainNonce, setPlayAgainNonce] = useState(0);
   return (
     <FlagGameInner

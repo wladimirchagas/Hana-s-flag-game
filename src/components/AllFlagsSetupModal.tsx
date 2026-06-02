@@ -10,6 +10,8 @@ import {
   CONTINENT_ORDER,
   SUBREGION_GROUPS,
 } from "../lib/continentGroups";
+import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
+import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 
 function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
   const map: Partial<Record<FlagSimilarity, string[]>> = {};
@@ -24,11 +26,17 @@ function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
 
 const SIM_GROUP_CODES = buildGroupCodesMap();
 
+// Countries that have subdivision data, sorted by name
+const SUBNATIONAL_COUNTRIES = ALL_COUNTRY_OPTIONS
+  .filter((c) => SUBDIVISION_META[c.code] != null)
+  .sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
+
 export type AllFlagsStart =
   | { type: "all195" }
   | { type: "similarity"; groupCodes: string[]; groupLabel: string; hardcore: boolean }
   | { type: "continent"; groupCodes: string[]; groupLabel: string }
-  | { type: "subregion"; groupCodes: string[]; groupLabel: string };
+  | { type: "subregion"; groupCodes: string[]; groupLabel: string }
+  | { type: "subnational"; countryCode: string; countryName: string };
 
 export type AllFlagsSetupModalProps = {
   open: boolean;
@@ -36,16 +44,17 @@ export type AllFlagsSetupModalProps = {
   onStart: (start: AllFlagsStart) => void;
 };
 
-type FlagMasterMode = "all195" | "continent" | "subregion" | "similarity";
+type FlagMasterMode = "all195" | "continent" | "subregion" | "similarity" | "subnational";
 
 const MODE_LABELS: Record<FlagMasterMode, string> = {
-  all195:     "All 195 World Flags",
-  continent:  "Flags by continent",
-  subregion:  "Flags by sub-continent",
-  similarity: "Similar flags only",
+  all195:      "All 195 World Flags",
+  continent:   "Flags by continent",
+  subregion:   "Flags by sub-continent",
+  similarity:  "Similar flags only",
+  subnational: "Sub-national flags",
 };
 
-const MODE_ORDER: readonly FlagMasterMode[] = ["all195", "continent", "subregion", "similarity"];
+const MODE_ORDER: readonly FlagMasterMode[] = ["all195", "continent", "subregion", "similarity", "subnational"];
 
 export function AllFlagsSetupModal({
   open,
@@ -53,6 +62,7 @@ export function AllFlagsSetupModal({
   onStart,
 }: AllFlagsSetupModalProps) {
   const [mode, setMode] = useState<FlagMasterMode>("all195");
+  const [subnationalSearch, setSubnationalSearch] = useState("");
 
   const closeRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
@@ -79,7 +89,10 @@ export function AllFlagsSetupModal({
   }, [open, onClose]);
 
   useEffect(() => {
-    if (!open) setMode("all195");
+    if (!open) {
+      setMode("all195");
+      setSubnationalSearch("");
+    }
   }, [open]);
 
   if (!open) return null;
@@ -91,7 +104,15 @@ export function AllFlagsSetupModal({
       ? "Pick a continent — you'll guess every flag from it."
       : mode === "subregion"
       ? "Pick a sub-continent — you'll guess every flag from it."
+      : mode === "subnational"
+      ? "Pick a country — you'll guess all its sub-national division flags."
       : "Pick a group of visually similar flags to test yourself on.";
+
+  const filteredCountries = subnationalSearch.trim()
+    ? SUBNATIONAL_COUNTRIES.filter((c) =>
+        c.name.toLowerCase().includes(subnationalSearch.toLowerCase())
+      )
+    : SUBNATIONAL_COUNTRIES;
 
   return (
     <div
@@ -256,6 +277,56 @@ export function AllFlagsSetupModal({
                     </button>
                   );
                 })}
+            </div>
+            <footer className="all195__footer">
+              <button type="button" className="all195__cancel" onClick={onClose}>
+                Cancel
+              </button>
+            </footer>
+          </>
+        )}
+
+        {/* ── Sub-national flags — pick a country ── */}
+        {mode === "subnational" && (
+          <>
+            <div className="all195__body">
+              <div className="all195__subnational-search">
+                <input
+                  type="search"
+                  className="all195__subnational-input"
+                  placeholder="Search countries…"
+                  value={subnationalSearch}
+                  onChange={(e) => setSubnationalSearch(e.target.value)}
+                  aria-label="Search countries for sub-national game"
+                />
+              </div>
+              <div className="all195__body--groups">
+                {filteredCountries.map((c) => {
+                  const meta = SUBDIVISION_META[c.code];
+                  const count = meta?.divisions.length ?? 0;
+                  return (
+                    <button
+                      key={c.code}
+                      type="button"
+                      className="all195__group-row"
+                      onClick={() =>
+                        onStart({ type: "subnational", countryCode: c.code, countryName: c.name })
+                      }
+                    >
+                      <span className="all195__group-label">{c.name}</span>
+                      <span className="all195__group-count">
+                        {count} {meta?.pluralLabel?.toLowerCase() ?? "division"}
+                        {count === 1 ? "" : "s"}
+                      </span>
+                    </button>
+                  );
+                })}
+                {filteredCountries.length === 0 && (
+                  <p style={{ padding: "1rem", color: "var(--ink-soft)", fontStyle: "italic" }}>
+                    No countries found.
+                  </p>
+                )}
+              </div>
             </div>
             <footer className="all195__footer">
               <button type="button" className="all195__cancel" onClick={onClose}>

@@ -4,6 +4,7 @@ import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { LearnTopToolbar } from "../components/LearnTopToolbar";
+import { SubdivisionMap } from "../components/SubdivisionMap";
 import { useZoomPan } from "../hooks/useZoomPan";
 import { MapViewControl } from "../components/MapViewControl";
 import {
@@ -33,6 +34,9 @@ import {
   polityModernName,
   type Era,
 } from "../lib/historicalEras";
+import { fetchSubdivisionGeo, subdivisionFlagUrl, subdivisionFlagPngUrl } from "../api/subdivisions";
+import { SUBDIVISION_META } from "../lib/subdivisionMeta";
+import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
 import "./LearnPage.css";
 
@@ -91,6 +95,12 @@ export default function LearnPage() {
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const [showFlagMap, setShowFlagMap] = useState(false);
+
+  // Sub-national divisions mode
+  const [subdivisionMode, setSubdivisionMode] = useState(false);
+  const [subdivisionGeo, setSubdivisionGeo] = useState<SubdivisionFeatureCollection | null>(null);
+  const [subdivisionLoading, setSubdivisionLoading] = useState(false);
+  const [selectedSubdivision, setSelectedSubdivision] = useState<SubdivisionMeta | null>(null);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
   // cross-era selection-validation effect below to keep a selection alive
@@ -164,6 +174,14 @@ export default function LearnPage() {
   const toggleFlagMap = useCallback(() => {
     setShowFlagMap((prev) => !prev);
   }, []);
+
+  // Exit subdivision mode when a different country is selected
+  useEffect(() => {
+    setSubdivisionMode(false);
+    setSubdivisionGeo(null);
+    setSelectedSubdivision(null);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selected?.kind === "modern" ? selected.country.code : null]);
   useEffect(() => {
     saveMapView(mapView);
   }, [mapView]);
@@ -287,6 +305,16 @@ export default function LearnPage() {
   // also follows this (drawn from `display`), giving the user a clear
   // "this is my selection" signal.
   const display = selected ?? hovered;
+
+  const handleEnterSubdivisionMode = useCallback(async () => {
+    if (!display || display.kind !== "modern") return;
+    setSubdivisionMode(true);
+    setSubdivisionLoading(true);
+    setSelectedSubdivision(null);
+    const geo = await fetchSubdivisionGeo(display.country.code);
+    setSubdivisionGeo(geo);
+    setSubdivisionLoading(false);
+  }, [display]);
 
   // Build a polity → Selection helper for historical eras. The HistoricalMap
   // emits a NAME string when the user clicks/hovers a polity; we wrap that
@@ -466,6 +494,17 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, showFlagMap, flagEntries, baseUrl]);
 
+  // Flag overlay for subdivision map: maps ISO 3166-2 code → PNG URL.
+  const subdivisionFlagOverlay = useMemo(() => {
+    if (!subdivisionMode || !subdivisionGeo) return null;
+    const m = new Map<string, string>();
+    for (const f of subdivisionGeo.features) {
+      const code = f.properties.iso_3166_2;
+      if (code) m.set(code, subdivisionFlagPngUrl(code));
+    }
+    return m;
+  }, [subdivisionMode, subdivisionGeo]);
+
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
   // component is not bypassed when unrelated state (selected, hovered, …)
   // changes. The deps match what selectionFromPolityName reads from closure.
@@ -576,29 +615,46 @@ export default function LearnPage() {
   return (
     <div className="learn-page">
       {/* Top toolbar: era selector (Today / Historical periods) + the
-          country search. Lives above the map so it's reachable without
-          scrolling and away from the flag panel. */}
-      <LearnTopToolbar
-        currentEraId={eraId}
-        onEraChange={setEraId}
-        isModernEra={isModernEra}
-        search={
-          isModernEra
-            ? {
-                countries,
-                value: display?.kind === "modern" ? display.country : null,
-                onChange: (c) => {
-                  if (c) setSelected({ kind: "modern", country: c });
-                  setHovered(null);
-                },
-                disabled: countries.length === 0,
-              }
-            : null
-        }
-      />
+          country search. Hidden in subdivision mode. */}
+      {!subdivisionMode && (
+        <LearnTopToolbar
+          currentEraId={eraId}
+          onEraChange={setEraId}
+          isModernEra={isModernEra}
+          search={
+            isModernEra
+              ? {
+                  countries,
+                  value: display?.kind === "modern" ? display.country : null,
+                  onChange: (c) => {
+                    if (c) setSelected({ kind: "modern", country: c });
+                    setHovered(null);
+                  },
+                  disabled: countries.length === 0,
+                }
+              : null
+          }
+        />
+      )}
     <div className="learn-fs">
       <div className="learn-fs__map" aria-label="World map">
-        {isModernEra ? (
+        {isModernEra && subdivisionMode ? (
+          <SubdivisionMap
+            geoData={subdivisionGeo}
+            loading={subdivisionLoading}
+            flagOverlay={subdivisionFlagOverlay}
+            selectedCode={selectedSubdivision?.code ?? null}
+            onSelect={(code) => {
+              const countryCode = display?.kind === "modern" ? display.country.code : "";
+              const countryMeta = SUBDIVISION_META[countryCode];
+              const meta = countryMeta?.divisions.find((d) => d.code === code);
+              if (meta) setSelectedSubdivision(meta);
+            }}
+            onHover={undefined}
+            disabled={false}
+            countryResults={{}}
+          />
+        ) : isModernEra ? (
           <WorldProgressMap
             countryResults={{}}
             selectedCode={
@@ -750,6 +806,45 @@ export default function LearnPage() {
                     </div>
                   );
                 })()}
+                {display.kind === "modern" && isModernEra && (
+                  <div className="learn-fs__subdiv-row">
+                    {subdivisionMode ? (
+                      <>
+                        <button
+                          type="button"
+                          className="learn-fs__subdiv-btn learn-fs__subdiv-btn--active"
+                          onClick={() => {
+                            setSubdivisionMode(false);
+                            setSubdivisionGeo(null);
+                            setSelectedSubdivision(null);
+                          }}
+                        >
+                          ← Back to world map
+                        </button>
+                        {selectedSubdivision && (
+                          <div className="learn-fs__subdiv-info">
+                            <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
+                            <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                            <img
+                              src={subdivisionFlagUrl(selectedSubdivision.code)}
+                              alt={selectedSubdivision.name}
+                              className="learn-fs__subdiv-flag"
+                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                            />
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      <button
+                        type="button"
+                        className="learn-fs__subdiv-btn"
+                        onClick={handleEnterSubdivisionMode}
+                      >
+                        View sub-national divisions
+                      </button>
+                    )}
+                  </div>
+                )}
               </>
             ) : (
               <div className="learn-fs__empty">
@@ -814,6 +909,44 @@ export default function LearnPage() {
         resolveFlag={resolveFlag}
         isModernEra={isModernEra}
       />
+      {subdivisionMode && isModernEra && subdivisionGeo && (() => {
+        const countryCode = display?.kind === "modern" ? display.country.code : "";
+        const countryMeta = SUBDIVISION_META[countryCode];
+        return (
+          <div className="subdiv-flag-row">
+            <div className="subdiv-flag-row__header">
+              <h3 className="subdiv-flag-row__title">
+                {display?.kind === "modern" ? display.country.name : ""} — {countryMeta?.pluralLabel ?? "Divisions"}
+              </h3>
+            </div>
+            <div className="subdiv-flag-row__list">
+              {subdivisionGeo.features.map((f) => {
+                const code = f.properties.iso_3166_2 ?? f.properties.name;
+                const name = f.properties.name_en ?? f.properties.name;
+                return (
+                  <button
+                    key={code}
+                    type="button"
+                    className={`subdiv-flag-row__item${selectedSubdivision?.code === code ? " subdiv-flag-row__item--active" : ""}`}
+                    onClick={() => {
+                      const meta = countryMeta?.divisions.find((d) => d.code === code);
+                      if (meta) setSelectedSubdivision(meta);
+                    }}
+                  >
+                    <img
+                      src={subdivisionFlagUrl(code)}
+                      alt={name}
+                      className="subdiv-flag-row__img"
+                      onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                    />
+                    <span className="subdiv-flag-row__name">{name}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }
