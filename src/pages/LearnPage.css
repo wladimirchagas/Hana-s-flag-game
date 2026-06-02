@@ -1078,3 +1078,395 @@
     padding: 0.32rem 1.85rem 0.32rem 0.7rem;
   }
 }
+
+/* === Sub-national divisions ==========================================
+   Panel row + info block for the "View sub-national divisions" feature
+   in Learn mode. Mirrors .learn-fs__anthem-row / .learn-fs__hana-row
+   in structure but uses the green accent colour to distinguish it.
+========================================================================*/
+
+.learn-fs__subdiv-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  margin-top: 0.2rem;
+}
+
+.learn-fs__subdiv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.85rem;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-fixed);
+  background: var(--green, #2ecc71);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  white-space: nowrap;
+}
+
+.learn-fs__subdiv-btn:hover,
+.learn-fs__subdiv-btn:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  background: var(--coral);
+  color: #fff;
+}
+
+.learn-fs__subdiv-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.learn-fs__subdiv-btn--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+.learn-fs__subdiv-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--ink-faint);
+}
+
+.learn-fs__subdiv-type {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.learn-fs__subdiv-name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.learn-fs__subdiv-flag {
+  display: block;
+  max-width: 100%;
+  max-height: 4rem;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 1px 3px rgba(26, 34, 56, 0.15));
+  border-radius: 4px;
+}
+
+/* === Subdivision map section =========================================
+   Overrides .map-section defaults so SubdivisionMap fills the same
+   map column as WorldProgressMap / HistoricalMap.
+========================================================================*/
+.subdiv-map-section {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.subdiv-map-section .map-frame {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.subdiv-map-section .world-map {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+/* === Subdivision flag row ============================================
+   Horizontal scrollable row of flag thumbnails shown below the main
+   FlagGrid when subdivision mode is active.
+========================================================================*/
+.subdiv-flag-row {
+  padding: 1.5rem clamp(1rem, 3vw, 2.5rem) 2rem;
+  border-top: 3px solid var(--ink-faint);
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+.subdiv-flag-row__header {
+  margin-bottom: 1rem;
+}
+
+.subdiv-flag-row__title {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--coral-deep);
+  text-shadow: 0 2px 0 var(--ink);
+}
+
+.subdiv-flag-row__list {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  /* Keep the scroll area from clipping the box-shadows. */
+  padding: 0.25rem 0.1rem 0.5rem;
+}
+
+.subdiv-flag-row__item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.5rem;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  text-align: center;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+  min-width: 80px;
+  max-width: 100px;
+}
+
+.subdiv-flag-row__item:hover,
+.subdiv-flag-row__item:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(78, 205, 196, 0.12);
+  border-color: var(--ink-faint);
+  outline: none;
+}
+
+.subdiv-flag-row__item--active {
+  background: var(--sky);
+  border-color: var(--ink);
+  color: var(--ink-fixed);
+}
+
+.subdiv-flag-row__img {
+  width: 80px;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 1px 2px rgba(26, 34, 56, 0.15));
+  pointer-events: none;
+}
+
+.subdiv-flag-row__name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  max-width: 90px;
+  text-align: center;
+}
+
+/* === Sub-national setup modal — country search =======================*/
+.all195__subnational-search {
+  padding: 0.6rem 0.75rem 0.4rem;
+  border-bottom: 2px solid var(--ink-faint);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 1;
+}
+
+.all195__subnational-input {
+  width: 100%;
+  padding: 0.5rem 0.85rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: var(--cream);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: inset 0 2px 0 rgba(26,34,56,0.06);
+  outline: none;
+}
+
+.all195__subnational-input:focus {
+  border-color: var(--green, #2ecc71);
+  box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.25);
+}
+
+/* === Sub-national game page styles ==================================*/
+.subdiv-game__direction-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.subdiv-game__direction-btn {
+  flex: 1 1 auto;
+  padding: 0.4rem 0.85rem;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink-faint);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.subdiv-game__direction-btn--active {
+  background: var(--green, #2ecc71);
+  border-color: var(--ink);
+  color: var(--ink-fixed);
+}
+
+.subdiv-game__flag-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 4px 0 var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.subdiv-game__flag-label {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.subdiv-game__flag-img {
+  max-width: 280px;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 3px 6px rgba(26, 34, 56, 0.18));
+}
+
+.subdiv-game__map-prompt {
+  padding: 0.5rem 0;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subdiv-game__flag-picker {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.subdiv-game__picker-label {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.subdiv-game__flag-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.subdiv-game__flag-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.5rem;
+  background: var(--paper);
+  border: 2px solid var(--ink-faint);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+  min-width: 80px;
+}
+
+.subdiv-game__flag-option:hover,
+.subdiv-game__flag-option:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--ink);
+  outline: none;
+}
+
+.subdiv-game__flag-option--selected {
+  background: var(--sky);
+  border-color: var(--ink);
+  color: var(--ink-fixed);
+}
+
+.subdiv-game__option-img {
+  width: 72px;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.subdiv-game__option-name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+  max-width: 80px;
+  overflow-wrap: break-word;
+}
+
+.subdiv-game__feedback {
+  padding: 0.65rem 1rem;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.subdiv-game__feedback--correct {
+  background: rgba(63, 174, 90, 0.15);
+  border: 2px solid var(--green, #2ecc71);
+  color: var(--ink);
+}
+
+.subdiv-game__feedback--wrong {
+  background: rgba(255, 107, 107, 0.15);
+  border: 2px solid var(--coral);
+  color: var(--ink);
+}

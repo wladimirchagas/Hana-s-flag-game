@@ -73,6 +73,15 @@ export default function LandingPage() {
           },
         },
       })
+    } else if (start.type === 'subnational') {
+      navigate('/game', {
+        state: {
+          subnational: {
+            countryCode: start.countryCode,
+            countryName: start.countryName,
+          },
+        },
+      })
     }
   }
 
