@@ -335,7 +335,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.55rem clamp(0.75rem, 2vw, 1.25rem);
+  padding: calc(0.55rem + env(safe-area-inset-top)) clamp(0.75rem, 2vw, 1.25rem) 0.55rem;
   background: var(--cream);
   border-bottom: 2px solid var(--ink-faint);
   backdrop-filter: saturate(140%) blur(2px);
