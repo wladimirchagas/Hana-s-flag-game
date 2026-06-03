@@ -1030,7 +1030,10 @@ export default function LearnPage() {
             selectedCode={selectedSubdivision?.code ?? null}
             onSelect={(code: string) => {
               const div = meta?.divisions.find((d) => d.code === code);
-              if (div) setSelectedSubdivision(div);
+              if (div) {
+                setSelectedSubdivision(div);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
             }}
           />
         );
