@@ -243,6 +243,8 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   const lyricsRef = useRef<HTMLDivElement>(null);
   const triedUrls = useRef<Set<string>>(new Set());
   const retryCount = useRef(0);
+  // Ensures autoplay fires only once per player mount, not on every re-render.
+  const autoPlayedRef = useRef(false);
 
   const isYoutube = !!(anthem?.youtubeId);
 
@@ -504,6 +506,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
             ytPlayerRef.current = e.target;
             setDuration(e.target.getDuration());
             setIsLoadingAudio(false);
+            e.target.playVideo();
           },
           onStateChange: (e) => {
             const YT_PLAYING = 1;
@@ -637,6 +640,19 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       gameAudio.resumeBackgroundMusic();
     };
   }, [isPlaying]);
+
+  // ── Autoplay when audio is ready ────────────────────────────────────────
+  // The user already expressed intent by clicking "Play" in the country panel,
+  // so we start playback as soon as the audio source is ready. YouTube uses
+  // its own onReady callback instead.
+  useEffect(() => {
+    const ready = (isYoutube ? !isLoadingAudio : !!audioUrl && !isLoadingAudio) && !audioError;
+    if (!ready || isYoutube || autoPlayedRef.current) return;
+    if (needsOgv && ogvLoading) return;
+    autoPlayedRef.current = true;
+    const player = needsOgv ? ogvRef.current : audioRef.current;
+    player?.play().then(() => setIsPlaying(true)).catch(() => {});
+  }, [isYoutube, isLoadingAudio, audioUrl, audioError, needsOgv, ogvLoading]);
 
   // ── Auto-scroll active lyric line into view ──────────────────────────────
   useEffect(() => {
