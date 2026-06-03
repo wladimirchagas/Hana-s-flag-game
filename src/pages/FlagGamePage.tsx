@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useBlocker, useLocation } from "react-router-dom";
+import { LeaveGameDialog } from "../components/LeaveGameDialog";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { gameAudio } from "../lib/gameAudio";
@@ -93,6 +94,9 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const [playerName, setPlayerName] = useState("");
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
+
+  const gameIsActive = game.phase === "guessing" || game.phase === "revealed";
+  const blocker = useBlocker(gameIsActive);
 
   // Derive a stable game mode string used for leaderboard filtering.
   const gameMode = useMemo((): string => {
@@ -309,6 +313,12 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
 
   return (
     <div className="app">
+      {blocker.state === "blocked" && (
+        <LeaveGameDialog
+          onConfirm={() => blocker.proceed()}
+          onCancel={() => blocker.reset()}
+        />
+      )}
       {isFinished && !celebrationDismissed && !unlockTarget && (
         <GameFinishCelebration
           score={game.score}

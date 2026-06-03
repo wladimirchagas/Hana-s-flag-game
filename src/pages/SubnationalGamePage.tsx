@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useBlocker } from "react-router-dom";
+import { LeaveGameDialog } from "../components/LeaveGameDialog";
 import { useSubdivisionGame } from "../hooks/useSubdivisionGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { SubdivisionMap } from "../components/SubdivisionMap";
@@ -112,6 +113,9 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
   const [celebrationDismissed, setCelebrationDismissed] = useState(false);
 
+  const gameIsActive = game.phase === "guessing" || game.phase === "revealed";
+  const blocker = useBlocker(gameIsActive);
+
   // Sound effects
   useEffect(() => {
     if (game.attemptNonce === 0 || game.wasCorrect === null) return;
@@ -200,6 +204,12 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
 
   return (
     <div className="app">
+      {blocker.state === "blocked" && (
+        <LeaveGameDialog
+          onConfirm={() => blocker.proceed()}
+          onCancel={() => blocker.reset()}
+        />
+      )}
       <AnswerBurst
         nonce={game.attemptNonce}
         wasCorrect={game.wasCorrect}
