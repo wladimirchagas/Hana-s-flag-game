@@ -23,6 +23,8 @@ export type LearnTopToolbarProps = {
   onEraChange: (id: Era["id"]) => void;
   /** Whether the era selector is on "Today" (modern era). */
   isModernEra: boolean;
+  /** Hides the era/period picker — used in subdivision mode where era is fixed. */
+  hideEraPicker?: boolean;
   /** Search props — null in historical eras to hide the search. */
   search: {
     countries: readonly Country[];
@@ -35,6 +37,7 @@ export type LearnTopToolbarProps = {
 export function LearnTopToolbar({
   currentEraId,
   onEraChange,
+  hideEraPicker,
   search,
 }: LearnTopToolbarProps) {
   const [historicalOpen, setHistoricalOpen] = useState(false);
@@ -65,7 +68,7 @@ export function LearnTopToolbar({
 
   return (
     <div className="learn-toolbar">
-      <div className="learn-toolbar__eras">
+      {!hideEraPicker && <div className="learn-toolbar__eras">
         <div className="learn-toolbar__historical" ref={historicalRef}>
           <button
             type="button"
@@ -123,7 +126,7 @@ export function LearnTopToolbar({
             </ul>
           )}
         </div>
-      </div>
+      </div>}
 
       <div className="learn-toolbar__search">
         {search ? (

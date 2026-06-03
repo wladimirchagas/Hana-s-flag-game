@@ -333,6 +333,18 @@ export default function LearnPage() {
     setSubdivisionLoading(false);
   }, [display]);
 
+  // Navigate to the subdivision view for a specific country without touching
+  // `selected` — avoids triggering the exit-subdivision effect.
+  const enterSubdivisionModeForCountry = useCallback(async (country: import("../api/countries").Country) => {
+    const { code, name, flagSvg } = country;
+    setSubdivisionLoading(true);
+    setSelectedSubdivision(null);
+    setSubdivisionCountry({ code, name, flagSvg });
+    const geo = await fetchSubdivisionGeo(code);
+    setSubdivisionGeo(geo);
+    setSubdivisionLoading(false);
+  }, []);
+
   // Build a polity → Selection helper for historical eras. The HistoricalMap
   // emits a NAME string when the user clicks/hovers a polity; we wrap that
   // into a HistoricalSelection enriched with registry info — and, where
@@ -644,14 +656,22 @@ export default function LearnPage() {
         currentEraId={eraId}
         onEraChange={setEraId}
         isModernEra={isModernEra}
+        hideEraPicker={subdivisionMode}
         search={
           isModernEra
             ? {
                 countries,
-                value: display?.kind === "modern" ? display.country : null,
+                value: subdivisionMode && subdivisionCountry
+                  ? (codeToCountry.get(subdivisionCountry.code) ?? null)
+                  : (display?.kind === "modern" ? display.country : null),
                 onChange: (c) => {
-                  if (c) setSelected({ kind: "modern", country: c });
-                  setHovered(null);
+                  if (!c) return;
+                  if (subdivisionMode) {
+                    enterSubdivisionModeForCountry(c);
+                  } else {
+                    setSelected({ kind: "modern", country: c });
+                    setHovered(null);
+                  }
                 },
                 disabled: countries.length === 0,
               }
