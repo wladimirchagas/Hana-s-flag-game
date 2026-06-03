@@ -35,7 +35,7 @@ export function Topbar() {
     } else if (navState?.groupGame || navState?.subnational || !navState?.codes) {
       navigate("/", { state: { openModal: "flagMaster" } });
     } else {
-      navigate("/", { state: { openModal: "picker" } });
+      navigate("/");
     }
   };
 
