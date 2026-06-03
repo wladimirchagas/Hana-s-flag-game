@@ -111,7 +111,7 @@ export default function LearnPage() {
   // when the same entity also appears in the new era (and to clear it
   // when it doesn't).
   const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
-  const [zoomed, setZoomed] = useState(false);
+  const [zoomedFlagUrl, setZoomedFlagUrl] = useState<string | null>(null);
   const [flagLoadFailed, setFlagLoadFailed] = useState(false);
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -267,9 +267,9 @@ export default function LearnPage() {
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
   useEffect(() => {
-    if (!zoomed) return;
+    if (!zoomedFlagUrl) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setZoomed(false);
+      if (e.key === "Escape") setZoomedFlagUrl(null);
     };
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
@@ -278,7 +278,7 @@ export default function LearnPage() {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [zoomed]);
+  }, [zoomedFlagUrl]);
 
   const codeToCountry = useMemo(
     () => new Map(countries.map((c) => [c.code, c])),
@@ -762,7 +762,7 @@ export default function LearnPage() {
                   <button
                     type="button"
                     className="learn-fs__flag"
-                    onClick={() => setZoomed(true)}
+                    onClick={() => setZoomedFlagUrl(flagUrl)}
                     aria-label={`Enlarge ${selectionName(display)} flag`}
                   >
                     <img
@@ -829,20 +829,32 @@ export default function LearnPage() {
                         >
                           ← Back to world map
                         </button>
-                        {selectedSubdivision && (
-                          <div className="learn-fs__subdiv-info">
-                            <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
-                            <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
-                            {subdivisionFlagUrl(selectedSubdivision.code) && (
-                              <img
-                                src={subdivisionFlagUrl(selectedSubdivision.code)!}
-                                alt={selectedSubdivision.name}
-                                className="learn-fs__subdiv-flag"
-                                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                              />
-                            )}
-                          </div>
-                        )}
+                        {selectedSubdivision && (() => {
+                          const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
+                          return (
+                            <div className="learn-fs__subdiv-info">
+                              <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
+                              <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                              {sdUrl && (
+                                <button
+                                  type="button"
+                                  className="learn-fs__flag"
+                                  onClick={() => setZoomedFlagUrl(sdUrl)}
+                                  aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                                >
+                                  <img
+                                    src={sdUrl}
+                                    alt=""
+                                    className="learn-fs__flag-img"
+                                    draggable={false}
+                                    onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                                  />
+                                  <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                                </button>
+                              )}
+                            </div>
+                          );
+                        })()}
                       </>
                     ) : (
                       <button
@@ -874,7 +886,7 @@ export default function LearnPage() {
                   <button
                     type="button"
                     className="learn-fs__flag"
-                    onClick={() => setZoomed(true)}
+                    onClick={() => setZoomedFlagUrl(subdivisionCountry.flagSvg)}
                     aria-label={`Enlarge ${subdivisionCountry.name} flag`}
                   >
                     <img
@@ -893,20 +905,32 @@ export default function LearnPage() {
                   </button>
                 )}
                 <p className="learn-fs__subdiv-country">{subdivisionCountry.name}</p>
-                {selectedSubdivision && (
-                  <div className="learn-fs__subdiv-info">
-                    <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
-                    <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
-                    {subdivisionFlagUrl(selectedSubdivision.code) && (
-                      <img
-                        src={subdivisionFlagUrl(selectedSubdivision.code)!}
-                        alt={selectedSubdivision.name}
-                        className="learn-fs__subdiv-flag"
-                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                      />
-                    )}
-                  </div>
-                )}
+                {selectedSubdivision && (() => {
+                  const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
+                  return (
+                    <div className="learn-fs__subdiv-info">
+                      <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
+                      <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                      {sdUrl && (
+                        <button
+                          type="button"
+                          className="learn-fs__flag"
+                          onClick={() => setZoomedFlagUrl(sdUrl)}
+                          aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                        >
+                          <img
+                            src={sdUrl}
+                            alt=""
+                            className="learn-fs__flag-img"
+                            draggable={false}
+                            onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                          />
+                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                        </button>
+                      )}
+                    </div>
+                  );
+                })()}
               </div>
             ) : (
               <div className="learn-fs__empty">
@@ -932,22 +956,18 @@ export default function LearnPage() {
         />
       )}
 
-      {zoomed && (flagUrl ?? subdivisionCountry?.flagSvg) && (
+      {zoomedFlagUrl && (
         <div
           className="flag-zoom"
           role="dialog"
           aria-modal="true"
-          aria-label={`Enlarged ${subdivisionCountry && !display ? subdivisionCountry.name : selectionName(display!)} flag`}
-          onClick={() => setZoomed(false)}
+          aria-label="Enlarged flag"
+          onClick={() => setZoomedFlagUrl(null)}
         >
           <img
-            src={(flagUrl ?? subdivisionCountry?.flagSvg)!}
+            src={zoomedFlagUrl}
             alt=""
             className="flag-zoom__img"
-            onError={flagPngFallback ? (e) => {
-              const img = e.currentTarget
-              if (img.src !== flagPngFallback) img.src = flagPngFallback
-            } : undefined}
             draggable={false}
           />
           <button
@@ -955,7 +975,7 @@ export default function LearnPage() {
             className="flag-zoom__close"
             onClick={(e) => {
               e.stopPropagation();
-              setZoomed(false);
+              setZoomedFlagUrl(null);
             }}
             aria-label="Close enlarged flag"
           >
