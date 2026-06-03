@@ -1,6 +1,7 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { MuteToggle } from "./MuteToggle";
+import { useNavigationGuard } from "../context/NavigationGuardContext";
 
 type GameNavState = {
   codes?: string[];
@@ -21,10 +22,13 @@ type GameNavState = {
 export function Topbar() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { triggerGuard } = useNavigationGuard();
   const isHome = location.pathname === "/";
   const isGame = location.pathname === "/game";
 
-  const handleBackToGameSelection = () => {
+  const doNavigateHome = () => navigate("/");
+
+  const doBackToGameSelection = () => {
     const navState = location.state as GameNavState;
     if (navState?.quiz) {
       navigate("/", { state: { openModal: "quiz" } });
@@ -35,15 +39,23 @@ export function Topbar() {
     }
   };
 
+  const handleHomeClick = () => {
+    if (!triggerGuard(doNavigateHome)) doNavigateHome();
+  };
+
+  const handleBackToGameSelection = () => {
+    if (!triggerGuard(doBackToGameSelection)) doBackToGameSelection();
+  };
+
   return (
     <header className="site-topbar">
       <div className="site-topbar__left">
         {isHome ? (
           <span className="site-topbar__brand">Hana&apos;s Flag Game</span>
         ) : (
-          <Link className="site-topbar__home" to="/">
+          <button type="button" className="site-topbar__home" onClick={handleHomeClick}>
             ← Home
-          </Link>
+          </button>
         )}
         {isGame && (
           <button
