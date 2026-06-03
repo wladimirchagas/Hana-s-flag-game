@@ -639,27 +639,25 @@ export default function LearnPage() {
         );
       })()}
       {/* Top toolbar: era selector (Today / Historical periods) + the
-          country search. Hidden in subdivision mode. */}
-      {!subdivisionMode && (
-        <LearnTopToolbar
-          currentEraId={eraId}
-          onEraChange={setEraId}
-          isModernEra={isModernEra}
-          search={
-            isModernEra
-              ? {
-                  countries,
-                  value: display?.kind === "modern" ? display.country : null,
-                  onChange: (c) => {
-                    if (c) setSelected({ kind: "modern", country: c });
-                    setHovered(null);
-                  },
-                  disabled: countries.length === 0,
-                }
-              : null
-          }
-        />
-      )}
+          country search. */}
+      <LearnTopToolbar
+        currentEraId={eraId}
+        onEraChange={setEraId}
+        isModernEra={isModernEra}
+        search={
+          isModernEra
+            ? {
+                countries,
+                value: display?.kind === "modern" ? display.country : null,
+                onChange: (c) => {
+                  if (c) setSelected({ kind: "modern", country: c });
+                  setHovered(null);
+                },
+                disabled: countries.length === 0,
+              }
+            : null
+        }
+      />
     <div className="learn-fs">
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra && subdivisionMode ? (
