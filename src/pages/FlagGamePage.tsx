@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import { Link, useBlocker, useLocation } from "react-router-dom";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { LeaveGameDialog } from "../components/LeaveGameDialog";
+import { useNavigationGuard } from "../context/NavigationGuardContext";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { gameAudio } from "../lib/gameAudio";
@@ -96,7 +97,32 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
 
   const gameIsActive = game.phase === "guessing" || game.phase === "revealed";
-  const blocker = useBlocker(gameIsActive);
+
+  const { setGuard } = useNavigationGuard();
+  const [pendingNavigate, setPendingNavigate] = useState<(() => void) | null>(null);
+
+  const guardFn = useCallback((proceed: () => void) => {
+    setPendingNavigate(() => proceed);
+  }, []);
+
+  useEffect(() => {
+    if (gameIsActive) {
+      setGuard(guardFn);
+    } else {
+      setGuard(null);
+    }
+    return () => setGuard(null);
+  }, [gameIsActive, setGuard, guardFn]);
+
+  useEffect(() => {
+    if (!gameIsActive) return;
+    const handler = (e: BeforeUnloadEvent) => {
+      e.preventDefault();
+      e.returnValue = "";
+    };
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [gameIsActive]);
 
   // Derive a stable game mode string used for leaderboard filtering.
   const gameMode = useMemo((): string => {
@@ -313,10 +339,10 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
 
   return (
     <div className="app">
-      {blocker.state === "blocked" && (
+      {pendingNavigate && (
         <LeaveGameDialog
-          onConfirm={() => blocker.proceed()}
-          onCancel={() => blocker.reset()}
+          onConfirm={() => { pendingNavigate(); setPendingNavigate(null); }}
+          onCancel={() => setPendingNavigate(null)}
         />
       )}
       {isFinished && !celebrationDismissed && !unlockTarget && (
