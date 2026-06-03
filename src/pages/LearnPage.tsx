@@ -902,14 +902,6 @@ export default function LearnPage() {
               const inList = hanaCodes.includes(subdivisionCountry.code);
               return (
                 <>
-                  <CountryDropdown
-                    countries={countries as Country[]}
-                    value={codeToCountry.get(subdivisionCountry.code) ?? null}
-                    onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
-                    disabled={countries.length === 0}
-                    label="Find a country's subdivisions"
-                    listPlacement="down"
-                  />
                   {countryObj && (
                     <p className="learn-fs__continent">{countryObj.continent}</p>
                   )}
