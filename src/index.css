@@ -74,8 +74,8 @@ body {
   color: var(--ink);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  /* Reserve space for the sticky .build-footer bottom bar. */
-  padding-bottom: 2rem;
+  /* Reserve space for the sticky .build-footer bottom bar (+ iOS home indicator). */
+  padding-bottom: max(2rem, env(safe-area-inset-bottom));
 }
 
 #root {
