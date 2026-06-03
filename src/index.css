@@ -270,6 +270,53 @@ a {
   }
 }
 
+/* === Mute toggle =========================================================
+   Simple icon button shown in the topbar right area, before the theme
+   toggle. Matches the visual weight of the theme-toggle pill. */
+.mute-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.mute-toggle:hover,
+.mute-toggle:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  outline: none;
+}
+
+.mute-toggle:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.mute-toggle--muted {
+  background: var(--cream);
+  border-style: dashed;
+}
+
+.mute-toggle__icon {
+  pointer-events: none;
+  display: flex;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mute-toggle { transition: none; }
+}
+
 /* === Site-wide top bar ===
    Sticky bar mounted at the App root above every Route. Home link (or
    landing-page brand) on the left, theme toggle on the right. Replaces

@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
+import { MuteToggle } from "./MuteToggle";
 
 /**
  * Site-wide top bar — replaces the old floating .global-theme-toggle +
@@ -28,6 +29,7 @@ export function Topbar() {
       </div>
       <div className="site-topbar__center" id="site-topbar-slot" />
       <div className="site-topbar__right">
+        <MuteToggle />
         <ThemeToggle />
       </div>
     </header>
