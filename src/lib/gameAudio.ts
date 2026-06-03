@@ -23,12 +23,45 @@ const BG_MELODY: Array<[number, number]> = [
   [392.00, 1.0], // G4 (held)
 ];
 
+const MUTED_KEY = "sfx-muted";
+
 class GameAudioManager {
   private ctx: AudioContext | null = null;
+  // User-facing global mute (persisted to localStorage; default true = muted).
+  private globalMuted = true;
   private bgMuted = false;
   private bgActive = false;
   private noteIndex = 0;
   private bgTimer: ReturnType<typeof setTimeout> | null = null;
+
+  get muted(): boolean {
+    return this.globalMuted;
+  }
+
+  setGlobalMuted(muted: boolean): void {
+    this.globalMuted = muted;
+    try {
+      localStorage.setItem(MUTED_KEY, String(muted));
+    } catch { /* storage unavailable */ }
+    if (muted) {
+      this.bgMuted = true;
+      this.clearBgTimer();
+    } else if (this.bgActive) {
+      this.bgMuted = false;
+      this.scheduleNextNote();
+    }
+  }
+
+  /** Call once at app startup to restore the user's saved preference. */
+  loadMutedPreference(): void {
+    try {
+      const stored = localStorage.getItem(MUTED_KEY);
+      // Default to muted (true) when no preference is saved yet.
+      this.globalMuted = stored === null ? true : stored === "true";
+    } catch {
+      this.globalMuted = true;
+    }
+  }
 
   private getCtx(): AudioContext {
     if (!this.ctx) {
@@ -63,6 +96,8 @@ class GameAudioManager {
   }
 
   playCorrect(): void {
+    this.haptic("correct");
+    if (this.globalMuted) return;
     try {
       const ctx = this.getCtx();
       const now = ctx.currentTime;
@@ -72,10 +107,11 @@ class GameAudioManager {
     } catch {
       // AudioContext unavailable
     }
-    this.haptic("correct");
   }
 
   playWrong(): void {
+    this.haptic("wrong");
+    if (this.globalMuted) return;
     try {
       const ctx = this.getCtx();
       const now = ctx.currentTime;
@@ -94,10 +130,11 @@ class GameAudioManager {
     } catch {
       // AudioContext unavailable
     }
-    this.haptic("wrong");
   }
 
   playGameComplete(): void {
+    this.haptic("celebrate");
+    if (this.globalMuted) return;
     try {
       const ctx = this.getCtx();
       const now = ctx.currentTime;
@@ -120,10 +157,11 @@ class GameAudioManager {
     } catch {
       // AudioContext unavailable
     }
-    this.haptic("celebrate");
   }
 
   playUnlock(): void {
+    this.haptic("unlock");
+    if (this.globalMuted) return;
     try {
       const ctx = this.getCtx();
       const now = ctx.currentTime;
@@ -135,14 +173,17 @@ class GameAudioManager {
     } catch {
       // AudioContext unavailable
     }
-    this.haptic("unlock");
   }
 
   startBackgroundMusic(): void {
     if (this.bgActive) return;
     this.bgActive = true;
-    this.bgMuted = false;
-    this.scheduleNextNote();
+    // Don't start notes if the user has muted — bgActive=true means "started"
+    // so unmuting later will call scheduleNextNote() via setGlobalMuted().
+    if (!this.globalMuted) {
+      this.bgMuted = false;
+      this.scheduleNextNote();
+    }
   }
 
   stopBackgroundMusic(): void {
@@ -156,7 +197,7 @@ class GameAudioManager {
   }
 
   resumeBackgroundMusic(): void {
-    if (!this.bgActive || !this.bgMuted) return;
+    if (!this.bgActive || !this.bgMuted || this.globalMuted) return;
     this.bgMuted = false;
     this.scheduleNextNote();
   }
@@ -169,7 +210,7 @@ class GameAudioManager {
   }
 
   private scheduleNextNote(): void {
-    if (!this.bgActive || this.bgMuted) return;
+    if (!this.bgActive || this.bgMuted || this.globalMuted) return;
 
     const [freq, durationS] = BG_MELODY[this.noteIndex % BG_MELODY.length]!;
     this.noteIndex++;

@@ -9,8 +9,10 @@ import { BuildFooter } from './components/BuildFooter'
 import { gameAudio } from './lib/gameAudio'
 
 export default function App() {
-  // Start background music on first user interaction (browser autoplay policy).
+  // Restore user's saved mute preference, then start background music on
+  // first user interaction (browser autoplay policy requires a gesture).
   useEffect(() => {
+    gameAudio.loadMutedPreference();
     const start = () => gameAudio.startBackgroundMusic();
     window.addEventListener('click', start, { once: true });
     window.addEventListener('keydown', start, { once: true });
