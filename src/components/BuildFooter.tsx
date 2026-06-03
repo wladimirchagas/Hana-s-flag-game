@@ -42,6 +42,7 @@ export function BuildFooter() {
       window.location.reload();
     }
   }
+  return (
     <footer className="build-footer" role="contentinfo" aria-label="Build info">
       <span className="build-footer__label">Build</span>{" "}
       {commitHref ? (
@@ -72,3 +73,4 @@ export function BuildFooter() {
     </footer>
   );
 }
+
