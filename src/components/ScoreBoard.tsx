@@ -53,22 +53,24 @@ export function ScoreBoard({
         </p>
       </div>
 
-      <div className="score-board-continent" aria-label="Continent breakdown">
-        <p className="score-board-continent-title">By continent (UN)</p>
-        {continentBreakdown.map((item) => (
-          <p key={item.continent} className="score-board-continent-row">
-            <span className="score-board-continent-name">
-              {item.continent} ({item.countriesInContinent})
-            </span>{" "}
-            <span className="score-board-continent-correct">
-              Right {item.correct} ({formatPercent(item.correctPct)})
-            </span>{" "}
-            <span className="score-board-continent-wrong">
-              Wrong {item.wrong} ({formatPercent(item.wrongPct)})
-            </span>
-          </p>
-        ))}
-      </div>
+      {continentBreakdown.length > 0 && (
+        <div className="score-board-continent" aria-label="Continent breakdown">
+          <p className="score-board-continent-title">By continent (UN)</p>
+          {continentBreakdown.map((item) => (
+            <p key={item.continent} className="score-board-continent-row">
+              <span className="score-board-continent-name">
+                {item.continent} ({item.countriesInContinent})
+              </span>{" "}
+              <span className="score-board-continent-correct">
+                Right {item.correct} ({formatPercent(item.correctPct)})
+              </span>{" "}
+              <span className="score-board-continent-wrong">
+                Wrong {item.wrong} ({formatPercent(item.wrongPct)})
+              </span>
+            </p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

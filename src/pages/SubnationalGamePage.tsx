@@ -4,6 +4,7 @@ import { useSubdivisionGame } from "../hooks/useSubdivisionGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { SubdivisionMap } from "../components/SubdivisionMap";
 import { SubdivisionDropdown } from "../components/SubdivisionDropdown";
+import { SubdivisionResultsFlags } from "../components/SubdivisionResultsFlags";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import { gameAudio } from "../lib/gameAudio";
 import { AnswerBurst } from "../components/AnswerBurst";
@@ -386,6 +387,13 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
               End game
             </button>
           </div>
+        )}
+
+        {isFinished && (
+          <SubdivisionResultsFlags
+            divisions={game.divisions}
+            divisionResults={game.divisionResults}
+          />
         )}
       </main>
     </div>
