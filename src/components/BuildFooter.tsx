@@ -15,22 +15,33 @@ export function BuildFooter() {
   const commit = __BUILD_COMMIT__;
   const builtAt = new Date(__BUILD_ISO__);
 
-  // Format in the visitor's local time + locale. The 'medium' style hits
-  // a decent sweet spot — "May 18, 2026, 6:48:23 AM" in en-US, "18 mai
-  // 2026 à 06:48:23" in fr-FR, etc.
   const localTime = builtAt.toLocaleString(undefined, {
     dateStyle: "medium",
     timeStyle: "medium",
   });
 
-  // Link the commit short-SHA to its GitHub diff so people can quickly
-  // jump to what changed in the deploy they're seeing.
   const commitHref =
     commit && commit !== "dev"
       ? `https://github.com/wladimirchagas/Hana-s-flag-game/commit/${commit}`
       : null;
 
-  return (
+  async function hardRefresh() {
+    try {
+      // Clear SW caches so the reload fetches fresh assets, not cached ones.
+      if ("caches" in window) {
+        const names = await window.caches.keys();
+        await Promise.all(names.map((n) => window.caches.delete(n)));
+      }
+      // Unregister the service worker so it can't intercept the reload and
+      // serve stale content. vite-plugin-pwa re-registers it on next load.
+      if ("serviceWorker" in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((r) => r.unregister()));
+      }
+    } finally {
+      window.location.reload();
+    }
+  }
     <footer className="build-footer" role="contentinfo" aria-label="Build info">
       <span className="build-footer__label">Build</span>{" "}
       {commitHref ? (
@@ -52,7 +63,7 @@ export function BuildFooter() {
       <button
         type="button"
         className="build-footer__refresh"
-        onClick={() => window.location.reload()}
+        onClick={hardRefresh}
         title="Hard refresh to get the latest version"
         aria-label="Refresh page"
       >
