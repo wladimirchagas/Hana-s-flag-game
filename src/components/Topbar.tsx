@@ -1,6 +1,13 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { MuteToggle } from "./MuteToggle";
+
+type GameNavState = {
+  codes?: string[];
+  quiz?: { flagCount: number };
+  groupGame?: object;
+  subnational?: object;
+} | null;
 
 /**
  * Site-wide top bar — replaces the old floating .global-theme-toggle +
@@ -13,7 +20,20 @@ import { MuteToggle } from "./MuteToggle";
  */
 export function Topbar() {
   const location = useLocation();
+  const navigate = useNavigate();
   const isHome = location.pathname === "/";
+  const isGame = location.pathname === "/game";
+
+  const handleBackToGameSelection = () => {
+    const navState = location.state as GameNavState;
+    if (navState?.quiz) {
+      navigate("/", { state: { openModal: "quiz" } });
+    } else if (navState?.groupGame || navState?.subnational || !navState?.codes) {
+      navigate("/", { state: { openModal: "flagMaster" } });
+    } else {
+      navigate("/", { state: { openModal: "picker" } });
+    }
+  };
 
   return (
     <header className="site-topbar">
@@ -24,6 +44,15 @@ export function Topbar() {
           <Link className="site-topbar__home" to="/">
             ← Home
           </Link>
+        )}
+        {isGame && (
+          <button
+            type="button"
+            className="site-topbar__back"
+            onClick={handleBackToGameSelection}
+          >
+            ← Game selection
+          </button>
         )}
         <div id="site-topbar-left-slot" className="site-topbar__left-slot" />
       </div>
