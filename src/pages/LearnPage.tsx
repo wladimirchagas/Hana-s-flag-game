@@ -662,17 +662,10 @@ export default function LearnPage() {
           isModernEra && !subdivisionMode
             ? {
                 countries,
-                value: subdivisionMode && subdivisionCountry
-                  ? (codeToCountry.get(subdivisionCountry.code) ?? null)
-                  : (display?.kind === "modern" ? display.country : null),
+                value: display?.kind === "modern" ? display.country : null,
                 onChange: (c) => {
-                  if (!c) return;
-                  if (subdivisionMode) {
-                    enterSubdivisionModeForCountry(c);
-                  } else {
-                    setSelected({ kind: "modern", country: c });
-                    setHovered(null);
-                  }
+                  if (c) setSelected({ kind: "modern", country: c });
+                  setHovered(null);
                 },
                 disabled: countries.length === 0,
               }
