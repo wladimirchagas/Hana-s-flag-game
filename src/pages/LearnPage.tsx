@@ -763,6 +763,16 @@ export default function LearnPage() {
       <div className="learn-fs__panel-wrap">
         <aside className="learn-fs__panel" aria-live="polite">
           <div className="learn-fs__detail">
+            {subdivisionMode && subdivisionCountry && (
+              <CountryDropdown
+                countries={countries as Country[]}
+                value={codeToCountry.get(subdivisionCountry.code) ?? null}
+                onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
+                disabled={countries.length === 0}
+                label="Find a country's subdivisions"
+                listPlacement="down"
+              />
+            )}
             {display ? (
               <>
                 <p className="learn-fs__continent">
