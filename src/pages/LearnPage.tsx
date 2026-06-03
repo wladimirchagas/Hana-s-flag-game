@@ -5,6 +5,7 @@ import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { LearnTopToolbar } from "../components/LearnTopToolbar";
+import { CountryDropdown } from "../components/CountryDropdown";
 import { SITE_TOPBAR_LEFT_SLOT_ID } from "../components/Topbar";
 import { SubdivisionMap } from "../components/SubdivisionMap";
 import { useZoomPan } from "../hooks/useZoomPan";
@@ -658,7 +659,7 @@ export default function LearnPage() {
         isModernEra={isModernEra}
         hideEraPicker={subdivisionMode}
         search={
-          isModernEra
+          isModernEra && !subdivisionMode
             ? {
                 countries,
                 value: subdivisionMode && subdivisionCountry
@@ -898,6 +899,14 @@ export default function LearnPage() {
               const inList = hanaCodes.includes(subdivisionCountry.code);
               return (
                 <>
+                  <CountryDropdown
+                    countries={countries as Country[]}
+                    value={codeToCountry.get(subdivisionCountry.code) ?? null}
+                    onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
+                    disabled={countries.length === 0}
+                    label="Find a country's subdivisions"
+                    listPlacement="down"
+                  />
                   {countryObj && (
                     <p className="learn-fs__continent">{countryObj.continent}</p>
                   )}
