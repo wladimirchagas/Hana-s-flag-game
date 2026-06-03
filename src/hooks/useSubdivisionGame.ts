@@ -32,14 +32,6 @@ export type UseSubdivisionGameResult = {
   meanAnswerMs: number | null;
 };
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j]!, a[i]!];
-  }
-  return a;
-}
 
 export function useSubdivisionGame(
   countryCode: string,
@@ -84,7 +76,13 @@ export function useSubdivisionGame(
       return;
     }
     const pool = list.filter((d) => !askedRef.current.has(d.code));
-    const pick = shuffle(pool)[0]!;
+    if (pool.length === 0) {
+      // Safety net: all unique codes already asked, end the game.
+      setGameEndedAtMs(Date.now());
+      setPhase("finished");
+      return;
+    }
+    const pick = pool[Math.floor(Math.random() * pool.length)]!;
     askedRef.current.add(pick.code);
     roundStartedAtRef.current = Date.now();
     setCurrent(pick);
@@ -114,8 +112,14 @@ export function useSubdivisionGame(
         }
 
         setGeoData(geo);
-        // Only include divisions that have a flag in the index
-        const divs = metaEntry.divisions.filter((d) => hasSubdivisionFlag(d.code));
+        // Only include divisions that have a flag; deduplicate by ISO code
+        // (SUBDIVISION_META source data sometimes has the same code twice).
+        const seen = new Set<string>();
+        const divs = metaEntry.divisions.filter((d) => {
+          if (!hasSubdivisionFlag(d.code) || seen.has(d.code)) return false;
+          seen.add(d.code);
+          return true;
+        });
         if (divs.length === 0) {
           setError(`No sub-national flags available for ${countryName}.`);
           setPhase("error");
