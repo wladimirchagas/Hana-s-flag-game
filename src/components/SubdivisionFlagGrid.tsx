@@ -26,6 +26,9 @@ export function SubdivisionFlagGrid({
 }: Props) {
   const [groupMode, setGroupMode] = useState<GroupMode>("none");
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  // Set to true by a grid click so the selectedCode effect skips scrollIntoView
+  // (the parent scrolls the page to the top instead).
+  const gridClickRef = useRef(false);
 
   const sorted = useMemo(
     () => [...divisions].sort((a, b) => a.name.localeCompare(b.name, "en")),
@@ -50,9 +53,15 @@ export function SubdivisionFlagGrid({
     return list.map(([heading, items]) => ({ heading, items }));
   }, [sorted, groupMode]);
 
-  // Scroll the active card into view when the map click changes selection
+  // Scroll the active card into view when an external source (e.g. the map)
+  // changes selection. Skip when the change came from a grid click — in that
+  // case the parent scrolls the page to the top instead.
   useEffect(() => {
     if (!selectedCode) return;
+    if (gridClickRef.current) {
+      gridClickRef.current = false;
+      return;
+    }
     const el = cardRefs.current.get(selectedCode);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }, [selectedCode]);
@@ -101,7 +110,7 @@ export function SubdivisionFlagGrid({
                       else cardRefs.current.delete(div.code);
                     }}
                     className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
-                    onClick={() => onSelect(div.code)}
+                    onClick={() => { gridClickRef.current = true; onSelect(div.code); }}
                     aria-pressed={active}
                     aria-label={`Select ${div.name}`}
                   >
