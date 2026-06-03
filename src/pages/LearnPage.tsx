@@ -111,6 +111,7 @@ export default function LearnPage() {
   // when it doesn't).
   const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
   const [zoomed, setZoomed] = useState(false);
+  const [flagLoadFailed, setFlagLoadFailed] = useState(false);
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
   const [anthemTarget, setAnthemTarget] = useState<{
@@ -571,6 +572,13 @@ export default function LearnPage() {
   }
 
   const flagUrl = display ? selectionFlag(display, baseUrl) : null;
+  // Reset load-failed state whenever the displayed entity changes
+  const prevFlagUrlRef = useRef<string | null>(null);
+  if (prevFlagUrlRef.current !== flagUrl) {
+    prevFlagUrlRef.current = flagUrl;
+    // Sync reset without triggering an extra render cycle
+    if (flagLoadFailed) setFlagLoadFailed(false);
+  }
   const flagPngFallback =
     display?.kind === "modern"
       ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
@@ -749,7 +757,7 @@ export default function LearnPage() {
                     population={display.population}
                   />
                 )}
-                {flagUrl ? (
+                {flagUrl && !flagLoadFailed ? (
                   <button
                     type="button"
                     className="learn-fs__flag"
@@ -761,10 +769,14 @@ export default function LearnPage() {
                       alt=""
                       className="learn-fs__flag-img"
                       draggable={false}
-                      onError={flagPngFallback ? (e) => {
-                        const img = e.currentTarget
-                        if (img.src !== flagPngFallback) img.src = flagPngFallback
-                      } : undefined}
+                      onError={(e) => {
+                        const img = e.currentTarget;
+                        if (flagPngFallback && img.src !== flagPngFallback) {
+                          img.src = flagPngFallback;
+                        } else {
+                          setFlagLoadFailed(true);
+                        }
+                      }}
                     />
                     <span className="learn-fs__flag-hint" aria-hidden="true">
                       ⤢ Click to enlarge
