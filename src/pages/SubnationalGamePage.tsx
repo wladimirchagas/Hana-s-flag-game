@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { useSubdivisionGame, type SubdivGameDirection } from "../hooks/useSubdivisionGame";
+import { useSubdivisionGame } from "../hooks/useSubdivisionGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
 import { SubdivisionMap } from "../components/SubdivisionMap";
+import { SubdivisionDropdown } from "../components/SubdivisionDropdown";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import { gameAudio } from "../lib/gameAudio";
 import { AnswerBurst } from "../components/AnswerBurst";
@@ -16,13 +17,99 @@ type Props = {
   countryName: string;
 };
 
+/** Inline flag card for subdivision flags — click to enlarge, same UX as FlagCard. */
+function SubdivisionFlagCard({
+  flagUrl,
+  typeLabel,
+}: {
+  flagUrl: string;
+  typeLabel: string;
+}) {
+  const [zoomed, setZoomed] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
+  useEffect(() => {
+    if (!zoomed) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setZoomed(false);
+    };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [zoomed]);
+
+  useEffect(() => {
+    setImgError(false);
+  }, [flagUrl]);
+
+  if (imgError) {
+    return (
+      <div className="flag-card flag-card--placeholder">
+        <p style={{ color: "var(--ink-soft)", fontStyle: "italic", fontSize: "0.9rem" }}>
+          Flag image unavailable
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <button
+        type="button"
+        className="flag-card flag-card--content"
+        onClick={() => setZoomed(true)}
+        aria-label={`Enlarge ${typeLabel} flag`}
+      >
+        <img
+          src={flagUrl}
+          alt=""
+          className="flag-image"
+          draggable={false}
+          onError={() => setImgError(true)}
+        />
+        <span className="flag-card__zoom-hint" aria-hidden="true">⤢ Click to enlarge</span>
+      </button>
+      {zoomed && (
+        <div
+          className="flag-zoom"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Enlarged ${typeLabel} flag`}
+          onClick={() => setZoomed(false)}
+        >
+          <img
+            src={flagUrl}
+            alt=""
+            className="flag-zoom__img"
+            draggable={false}
+          />
+          <button
+            type="button"
+            className="flag-zoom__close"
+            onClick={(e) => {
+              e.stopPropagation();
+              setZoomed(false);
+            }}
+            aria-label="Close enlarged flag"
+          >
+            ×
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
+
 export function SubnationalGamePage({ countryCode, countryName }: Props) {
   const game = useSubdivisionGame(countryCode, countryName);
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const [playerName, setPlayerName] = useState("");
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
   const [celebrationDismissed, setCelebrationDismissed] = useState(false);
-  const [flagImgError, setFlagImgError] = useState(false);
 
   // Sound effects
   useEffect(() => {
@@ -47,11 +134,6 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
       setPlayerName("");
     }
   }, [game.phase]);
-
-  // Reset flag error when question changes
-  useEffect(() => {
-    setFlagImgError(false);
-  }, [game.current?.code]);
 
   function handleSave() {
     if (!playerName.trim()) {
@@ -104,11 +186,9 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
 
   const isFinished = game.phase === "finished";
   const isGuessing = game.phase === "guessing";
+  const isRevealed = game.phase === "revealed";
 
-  const directionLabel: Record<SubdivGameDirection, string> = {
-    "flag-to-map": "Flag → click on map",
-    "map-to-flag": "Highlighted → pick name",
-  };
+  const currentFlagUrl = game.current ? subdivisionFlagUrl(game.current.code) : null;
 
   return (
     <div className="app">
@@ -138,52 +218,39 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           </p>
         </header>
 
-        {/* Direction toggle */}
-        {!isFinished && (
-          <div className="subdiv-game__direction-row">
-            {(["flag-to-map", "map-to-flag"] as SubdivGameDirection[]).map((d) => (
-              <button
-                key={d}
-                type="button"
-                className={`subdiv-game__direction-btn${game.direction === d ? " subdiv-game__direction-btn--active" : ""}`}
-                onClick={() => game.setDirection(d)}
-                aria-pressed={game.direction === d}
-              >
-                {directionLabel[d]}
-              </button>
-            ))}
+        {/* Flag display — shown during active game */}
+        {!isFinished && game.phase !== "loading" && game.current && currentFlagUrl && (
+          <SubdivisionFlagCard
+            flagUrl={currentFlagUrl}
+            typeLabel={game.current.typeLabel}
+          />
+        )}
+        {game.phase === "loading" && (
+          <div className="flag-card flag-card--placeholder" aria-busy="true">
+            <div className="flag-skeleton" />
           </div>
         )}
 
-        {/* Flag-to-map: show flag (with name fallback if no flag or load error) */}
-        {!isFinished && game.direction === "flag-to-map" && game.current && (() => {
-          const flagUrl = subdivisionFlagUrl(game.current.code);
-          return (flagUrl && !flagImgError) ? (
-            <div className="subdiv-game__flag-card">
-              <p className="subdiv-game__flag-label">
-                Which {game.current.typeLabel.toLowerCase()} has this flag?
-              </p>
-              <img
-                src={flagUrl}
-                alt=""
-                className="subdiv-game__flag-img"
-                onError={() => setFlagImgError(true)}
-              />
-            </div>
-          ) : (
-            <div className="subdiv-game__name-card">
-              <p className="subdiv-game__card-hint">Click on the map:</p>
-              <p className="subdiv-game__division-name">{game.current.name}</p>
-            </div>
-          );
-        })()}
-
-        {/* Map-to-name: highlight division on map, player picks name */}
-        {!isFinished && game.direction === "map-to-flag" && game.current && (
-          <div className="subdiv-game__map-prompt">
-            <p className="subdiv-game__flag-label">
-              Which {game.current.typeLabel.toLowerCase()} is highlighted on the map?
-            </p>
+        {/* Answer row: dropdown + confirm */}
+        {!isFinished && (
+          <div className="answer-row">
+            <SubdivisionDropdown
+              divisions={game.divisions}
+              value={game.selected}
+              onChange={game.setSelected}
+              disabled={isRevealed || game.phase === "loading"}
+              label="Your answer"
+            />
+            {!isRevealed && (
+              <button
+                type="button"
+                className="btn btn-primary answer-row__confirm"
+                disabled={!game.selected || !isGuessing}
+                onClick={game.confirm}
+              >
+                Confirm
+              </button>
+            )}
           </div>
         )}
 
@@ -192,69 +259,23 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           <SubdivisionMap
             geoData={game.geoData}
             loading={false}
-            selectedCode={
-              game.direction === "flag-to-map"
-                ? (game.selected?.code ?? null)
-                : (game.current?.code ?? null)
-            }
+            selectedCode={game.selected?.code ?? null}
             onSelect={
-              game.direction === "flag-to-map" && isGuessing
+              isGuessing
                 ? (code) => {
                     const div = game.divisions.find((d) => d.code === code);
                     if (div) game.setSelected(div);
                   }
                 : undefined
             }
-            onConfirm={
-              game.direction === "flag-to-map" && isGuessing
-                ? game.confirm
-                : undefined
-            }
-            disabled={!isGuessing || game.direction === "map-to-flag"}
+            onConfirm={isGuessing ? game.confirm : undefined}
+            disabled={!isGuessing}
             countryResults={game.divisionResults}
           />
         )}
 
-        {/* Map-to-name: pick from alternatives — show flag + name when available */}
-        {!isFinished && game.direction === "map-to-flag" && isGuessing && (
-          <div className="subdiv-game__name-picker">
-            <div className="subdiv-game__name-options">
-              {game.questionAlternatives.map((alt) => {
-                const altFlag = subdivisionFlagUrl(alt.code);
-                const isSelected = game.selected?.code === alt.code;
-                return (
-                  <button
-                    key={alt.code}
-                    type="button"
-                    className={`subdiv-game__name-option${isSelected ? " subdiv-game__name-option--selected" : ""}${altFlag ? " subdiv-game__name-option--has-flag" : ""}`}
-                    onClick={() => game.setSelected(alt)}
-                  >
-                    {altFlag && (
-                      <img
-                        src={altFlag}
-                        alt=""
-                        className="subdiv-game__option-flag"
-                        onError={(e) => { e.currentTarget.style.display = "none"; }}
-                      />
-                    )}
-                    <span>{alt.name}</span>
-                  </button>
-                );
-              })}
-            </div>
-            <button
-              type="button"
-              className="btn btn-primary"
-              disabled={!game.selected}
-              onClick={game.confirm}
-            >
-              Confirm
-            </button>
-          </div>
-        )}
-
         {/* Reveal feedback */}
-        {game.phase === "revealed" && game.current && (
+        {(isRevealed || isFinished) && game.current && game.wasCorrect !== null && (
           <div className={`subdiv-game__feedback subdiv-game__feedback--${game.wasCorrect ? "correct" : "wrong"}`}>
             {game.wasCorrect
               ? `Correct! ${game.current.name}`

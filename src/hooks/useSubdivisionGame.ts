@@ -1,17 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { fetchSubdivisionGeo } from "../api/subdivisions";
+import { fetchSubdivisionGeo, hasSubdivisionFlag } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import type { SubdivisionMeta } from "../types/subdivision";
 import type { SubdivisionFeatureCollection } from "../types/subdivision";
 
 export type SubdivGamePhase = "loading" | "error" | "guessing" | "revealed" | "finished";
-export type SubdivGameDirection = "flag-to-map" | "map-to-flag";
 
 export type UseSubdivisionGameResult = {
   phase: SubdivGamePhase;
   error: string | null;
-  direction: SubdivGameDirection;
-  setDirection: (d: SubdivGameDirection) => void;
   current: SubdivisionMeta | null;
   selected: SubdivisionMeta | null;
   setSelected: (d: SubdivisionMeta | null) => void;
@@ -25,7 +22,6 @@ export type UseSubdivisionGameResult = {
   attemptNonce: number;
   divisionResults: Record<string, "correct" | "wrong">;
   divisions: SubdivisionMeta[];
-  questionAlternatives: SubdivisionMeta[];
   geoData: SubdivisionFeatureCollection | null;
   countryCode: string;
   countryName: string;
@@ -45,23 +41,12 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function buildAlternatives(
-  correct: SubdivisionMeta,
-  all: SubdivisionMeta[],
-  count = 6,
-): SubdivisionMeta[] {
-  const others = all.filter((d) => d.code !== correct.code);
-  const shuffled = shuffle(others).slice(0, Math.max(0, count - 1));
-  return shuffle([correct, ...shuffled]);
-}
-
 export function useSubdivisionGame(
   countryCode: string,
   countryName: string,
 ): UseSubdivisionGameResult {
   const [phase, setPhase] = useState<SubdivGamePhase>("loading");
   const [error, setError] = useState<string | null>(null);
-  const [direction, setDirectionState] = useState<SubdivGameDirection>("flag-to-map");
   const [geoData, setGeoData] = useState<SubdivisionFeatureCollection | null>(null);
   const [divisions, setDivisions] = useState<SubdivisionMeta[]>([]);
   const [current, setCurrent] = useState<SubdivisionMeta | null>(null);
@@ -72,7 +57,6 @@ export function useSubdivisionGame(
   const [wrongCount, setWrongCount] = useState(0);
   const [divisionResults, setDivisionResults] = useState<Record<string, "correct" | "wrong">>({});
   const [attemptNonce, setAttemptNonce] = useState(0);
-  const [questionAlternatives, setQuestionAlternatives] = useState<SubdivisionMeta[]>([]);
   const [gameStartedAtMs, setGameStartedAtMs] = useState<number | null>(null);
   const [gameEndedAtMs, setGameEndedAtMs] = useState<number | null>(null);
   const [answerDurationsMs, setAnswerDurationsMs] = useState<number[]>([]);
@@ -95,20 +79,18 @@ export function useSubdivisionGame(
       setGameStartedAtMs(t);
     }
     if (askedRef.current.size >= list.length) {
-      // All asked: game is complete
       setGameEndedAtMs(Date.now());
       setPhase("finished");
       return;
     }
     const pool = list.filter((d) => !askedRef.current.has(d.code));
-    const pick = pool[Math.floor(Math.random() * pool.length)]!;
+    const pick = shuffle(pool)[0]!;
     askedRef.current.add(pick.code);
     roundStartedAtRef.current = Date.now();
     setCurrent(pick);
     setSelected(null);
     setPhase("guessing");
     setWasCorrect(null);
-    setQuestionAlternatives(buildAlternatives(pick, list));
   }, []);
 
   startRoundRef.current = startRound;
@@ -132,7 +114,13 @@ export function useSubdivisionGame(
         }
 
         setGeoData(geo);
-        const divs = metaEntry.divisions;
+        // Only include divisions that have a flag in the index
+        const divs = metaEntry.divisions.filter((d) => hasSubdivisionFlag(d.code));
+        if (divs.length === 0) {
+          setError(`No sub-national flags available for ${countryName}.`);
+          setPhase("error");
+          return;
+        }
         setDivisions(divs);
         divisionsRef.current = divs;
 
@@ -202,23 +190,6 @@ export function useSubdivisionGame(
     setPhase("finished");
   }, [phase]);
 
-  const setDirection = useCallback((d: SubdivGameDirection) => {
-    setDirectionState(d);
-    // Reset game when direction changes
-    const list = divisionsRef.current;
-    if (list.length === 0) return;
-    askedRef.current = new Set();
-    setScore(0);
-    setCorrectCount(0);
-    setWrongCount(0);
-    setDivisionResults({});
-    setAnswerDurationsMs([]);
-    gameStartedAtRef.current = null;
-    setGameStartedAtMs(null);
-    setGameEndedAtMs(null);
-    startRoundRef.current(list);
-  }, []);
-
   const meanAnswerMs = useMemo(() => {
     if (answerDurationsMs.length === 0) return null;
     const sum = answerDurationsMs.reduce((a, b) => a + b, 0);
@@ -228,8 +199,6 @@ export function useSubdivisionGame(
   return useMemo(() => ({
     phase,
     error,
-    direction,
-    setDirection,
     current,
     selected,
     setSelected,
@@ -243,7 +212,6 @@ export function useSubdivisionGame(
     attemptNonce,
     divisionResults,
     divisions,
-    questionAlternatives: questionAlternatives.length > 0 ? questionAlternatives : divisions,
     geoData,
     countryCode,
     countryName,
@@ -253,9 +221,9 @@ export function useSubdivisionGame(
     gameEndedAtMs,
     meanAnswerMs,
   }), [
-    phase, error, direction, setDirection, current, selected, confirm,
+    phase, error, current, selected, confirm,
     wasCorrect, score, correctCount, wrongCount, divisions, attemptNonce,
-    divisionResults, questionAlternatives, geoData, countryCode, countryName,
+    divisionResults, geoData, countryCode, countryName,
     pluralLabel, endGameEarly, gameStartedAtMs, gameEndedAtMs, meanAnswerMs,
   ]);
 }
