@@ -346,6 +346,39 @@ a {
   box-shadow: 0 1px 0 var(--ink);
 }
 
+.site-topbar__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.site-topbar__back:hover,
+.site-topbar__back:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  outline: none;
+}
+
+.site-topbar__back:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.site-topbar__left-slot {
+  display: contents;
+}
+
 /* Deprecated names — kept as no-ops so any straggling references don't
    blow up. The actual rules above are on .site-topbar. */
 .global-theme-toggle,

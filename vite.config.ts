@@ -103,9 +103,10 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,json}'],
         navigateFallback: `${base}index.html`,
         // Public dir contains a couple of large data blobs (countries-50m.json,
-        // historical maps) — exclude from precache so the install footprint
-        // stays small.
+        // historical maps, large subdivision GeoJSON) — exclude from precache
+        // so the install footprint stays small.
         globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**'],
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },
       devOptions: {
         // Keep the install button working in `npm run dev` so we can test

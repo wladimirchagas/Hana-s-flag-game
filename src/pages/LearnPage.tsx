@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { LearnTopToolbar } from "../components/LearnTopToolbar";
+import { SITE_TOPBAR_LEFT_SLOT_ID } from "../components/Topbar";
 import { SubdivisionMap } from "../components/SubdivisionMap";
 import { useZoomPan } from "../hooks/useZoomPan";
 import { MapViewControl } from "../components/MapViewControl";
@@ -312,6 +314,13 @@ export default function LearnPage() {
   // "this is my selection" signal.
   const display = selected ?? hovered;
 
+  function exitSubdivisionMode() {
+    setSubdivisionMode(false);
+    setSubdivisionGeo(null);
+    setSelectedSubdivision(null);
+    setSubdivisionCountry(null);
+  }
+
   const handleEnterSubdivisionMode = useCallback(async () => {
     if (!display || display.kind !== "modern") return;
     const { code, name, flagSvg } = display.country;
@@ -619,6 +628,16 @@ export default function LearnPage() {
 
   return (
     <div className="learn-page">
+      {subdivisionMode && (() => {
+        const slot = document.getElementById(SITE_TOPBAR_LEFT_SLOT_ID);
+        if (!slot) return null;
+        return createPortal(
+          <button type="button" className="site-topbar__back" onClick={exitSubdivisionMode}>
+            ← World map
+          </button>,
+          slot,
+        );
+      })()}
       {/* Top toolbar: era selector (Today / Historical periods) + the
           country search. Hidden in subdivision mode. */}
       {!subdivisionMode && (
@@ -817,18 +836,6 @@ export default function LearnPage() {
                   <div className="learn-fs__subdiv-row">
                     {subdivisionMode ? (
                       <>
-                        <button
-                          type="button"
-                          className="learn-fs__subdiv-btn learn-fs__subdiv-btn--active"
-                          onClick={() => {
-                            setSubdivisionMode(false);
-                            setSubdivisionGeo(null);
-                            setSelectedSubdivision(null);
-                            setSubdivisionCountry(null);
-                          }}
-                        >
-                          ← Back to world map
-                        </button>
                         {selectedSubdivision && (() => {
                           const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
                           return (
@@ -870,18 +877,6 @@ export default function LearnPage() {
               </>
             ) : subdivisionMode && subdivisionCountry ? (
               <div className="learn-fs__subdiv-row">
-                <button
-                  type="button"
-                  className="learn-fs__subdiv-btn learn-fs__subdiv-btn--active"
-                  onClick={() => {
-                    setSubdivisionMode(false);
-                    setSubdivisionGeo(null);
-                    setSelectedSubdivision(null);
-                    setSubdivisionCountry(null);
-                  }}
-                >
-                  ← Back to world map
-                </button>
                 {subdivisionCountry.flagSvg && (
                   <button
                     type="button"
@@ -992,7 +987,7 @@ export default function LearnPage() {
             pluralLabel={meta?.pluralLabel ?? "Divisions"}
             countryName={subdivisionCountry.name}
             selectedCode={selectedSubdivision?.code ?? null}
-            onSelect={(code) => {
+            onSelect={(code: string) => {
               const div = meta?.divisions.find((d) => d.code === code);
               if (div) setSelectedSubdivision(div);
             }}
