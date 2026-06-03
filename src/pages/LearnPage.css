@@ -1135,6 +1135,16 @@
   color: var(--ink-fixed);
 }
 
+.learn-fs__subdiv-country {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
 .learn-fs__subdiv-info {
   display: flex;
   flex-direction: column;

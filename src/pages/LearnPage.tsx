@@ -101,6 +101,9 @@ export default function LearnPage() {
   const [subdivisionGeo, setSubdivisionGeo] = useState<SubdivisionFeatureCollection | null>(null);
   const [subdivisionLoading, setSubdivisionLoading] = useState(false);
   const [selectedSubdivision, setSelectedSubdivision] = useState<SubdivisionMeta | null>(null);
+  // Country whose subdivisions are currently shown — stored separately so the
+  // panel doesn't depend on `display` remaining set after entering subdivision mode.
+  const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string } | null>(null);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
   // cross-era selection-validation effect below to keep a selection alive
@@ -180,6 +183,7 @@ export default function LearnPage() {
     setSubdivisionMode(false);
     setSubdivisionGeo(null);
     setSelectedSubdivision(null);
+    setSubdivisionCountry(null);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected?.kind === "modern" ? selected.country.code : null]);
   useEffect(() => {
@@ -308,10 +312,12 @@ export default function LearnPage() {
 
   const handleEnterSubdivisionMode = useCallback(async () => {
     if (!display || display.kind !== "modern") return;
+    const { code, name } = display.country;
     setSubdivisionMode(true);
     setSubdivisionLoading(true);
     setSelectedSubdivision(null);
-    const geo = await fetchSubdivisionGeo(display.country.code);
+    setSubdivisionCountry({ code, name });
+    const geo = await fetchSubdivisionGeo(code);
     setSubdivisionGeo(geo);
     setSubdivisionLoading(false);
   }, [display]);
@@ -634,8 +640,7 @@ export default function LearnPage() {
             loading={subdivisionLoading}
             selectedCode={selectedSubdivision?.code ?? null}
             onSelect={(code) => {
-              const countryCode = display?.kind === "modern" ? display.country.code : "";
-              const countryMeta = SUBDIVISION_META[countryCode];
+              const countryMeta = subdivisionCountry ? SUBDIVISION_META[subdivisionCountry.code] : null;
               const meta = countryMeta?.divisions.find((d) => d.code === code);
               if (meta) setSelectedSubdivision(meta);
             }}
@@ -806,6 +811,7 @@ export default function LearnPage() {
                             setSubdivisionMode(false);
                             setSubdivisionGeo(null);
                             setSelectedSubdivision(null);
+                            setSubdivisionCountry(null);
                           }}
                         >
                           ← Back to world map
@@ -837,6 +843,36 @@ export default function LearnPage() {
                   </div>
                 )}
               </>
+            ) : subdivisionMode && subdivisionCountry ? (
+              <div className="learn-fs__subdiv-row">
+                <button
+                  type="button"
+                  className="learn-fs__subdiv-btn learn-fs__subdiv-btn--active"
+                  onClick={() => {
+                    setSubdivisionMode(false);
+                    setSubdivisionGeo(null);
+                    setSelectedSubdivision(null);
+                    setSubdivisionCountry(null);
+                  }}
+                >
+                  ← Back to world map
+                </button>
+                <p className="learn-fs__subdiv-country">{subdivisionCountry.name}</p>
+                {selectedSubdivision && (
+                  <div className="learn-fs__subdiv-info">
+                    <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
+                    <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                    {subdivisionFlagUrl(selectedSubdivision.code) && (
+                      <img
+                        src={subdivisionFlagUrl(selectedSubdivision.code)!}
+                        alt={selectedSubdivision.name}
+                        className="learn-fs__subdiv-flag"
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                      />
+                    )}
+                  </div>
+                )}
+              </div>
             ) : (
               <div className="learn-fs__empty">
                 <p className="learn-fs__empty-title">Learn your flags</p>
