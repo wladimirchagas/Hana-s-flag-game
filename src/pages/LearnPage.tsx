@@ -103,7 +103,7 @@ export default function LearnPage() {
   const [selectedSubdivision, setSelectedSubdivision] = useState<SubdivisionMeta | null>(null);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
-  const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string } | null>(null);
+  const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
   // cross-era selection-validation effect below to keep a selection alive
@@ -313,11 +313,11 @@ export default function LearnPage() {
 
   const handleEnterSubdivisionMode = useCallback(async () => {
     if (!display || display.kind !== "modern") return;
-    const { code, name } = display.country;
+    const { code, name, flagSvg } = display.country;
     setSubdivisionMode(true);
     setSubdivisionLoading(true);
     setSelectedSubdivision(null);
-    setSubdivisionCountry({ code, name });
+    setSubdivisionCountry({ code, name, flagSvg });
     const geo = await fetchSubdivisionGeo(code);
     setSubdivisionGeo(geo);
     setSubdivisionLoading(false);
@@ -869,6 +869,28 @@ export default function LearnPage() {
                 >
                   ← Back to world map
                 </button>
+                {subdivisionCountry.flagSvg && (
+                  <button
+                    type="button"
+                    className="learn-fs__flag"
+                    onClick={() => setZoomed(true)}
+                    aria-label={`Enlarge ${subdivisionCountry.name} flag`}
+                  >
+                    <img
+                      src={subdivisionCountry.flagSvg}
+                      alt=""
+                      className="learn-fs__flag-img"
+                      draggable={false}
+                      onError={(e) => {
+                        const img = e.currentTarget;
+                        const png = `https://flagcdn.com/${subdivisionCountry.code.toLowerCase()}.png`;
+                        if (img.src !== png) img.src = png;
+                        else img.closest("button")?.remove();
+                      }}
+                    />
+                    <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                  </button>
+                )}
                 <p className="learn-fs__subdiv-country">{subdivisionCountry.name}</p>
                 {selectedSubdivision && (
                   <div className="learn-fs__subdiv-info">
@@ -909,16 +931,16 @@ export default function LearnPage() {
         />
       )}
 
-      {zoomed && flagUrl && (
+      {zoomed && (flagUrl ?? subdivisionCountry?.flagSvg) && (
         <div
           className="flag-zoom"
           role="dialog"
           aria-modal="true"
-          aria-label={`Enlarged ${selectionName(display!)} flag`}
+          aria-label={`Enlarged ${subdivisionCountry && !display ? subdivisionCountry.name : selectionName(display!)} flag`}
           onClick={() => setZoomed(false)}
         >
           <img
-            src={flagUrl}
+            src={(flagUrl ?? subdivisionCountry?.flagSvg)!}
             alt=""
             className="flag-zoom__img"
             onError={flagPngFallback ? (e) => {
