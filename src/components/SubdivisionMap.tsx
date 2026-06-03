@@ -174,10 +174,9 @@ export function SubdivisionMap({
   }, [selectedCode]);
 
   // Compute projection + paths fitted to the feature collection
-  const { pathByIdx, spherePath, flagPolygonsById } = useMemo(() => {
+  const { pathByIdx, flagPolygonsById } = useMemo(() => {
     const empty = {
       pathByIdx: new Map<number, string>(),
-      spherePath: null as string | null,
       flagPolygonsById: new Map<string, FlagPoly[]>(),
     };
     if (!geoData || geoData.features.length === 0) return empty;
@@ -197,8 +196,6 @@ export function SubdivisionMap({
       const p = mapPath(geoData.features[i] as never);
       if (p) pathByIdx.set(i, p);
     }
-
-    const spherePath = mapPath({ type: "Sphere" } as never) ?? null;
 
     // Flag polygon data for clip-path overlay
     const flagPolygonsById = new Map<string, FlagPoly[]>();
@@ -252,7 +249,7 @@ export function SubdivisionMap({
       }
     }
 
-    return { pathByIdx, spherePath, flagPolygonsById };
+    return { pathByIdx, flagPolygonsById };
     // Intentionally not include flagOverlay in deps — we recompute paths only when geo changes.
     // Flag overlay polygons are computed here too but we'll recompute on flagOverlay change via
     // the flagPolygonsById useMemo below. Split for performance.
@@ -347,18 +344,12 @@ export function SubdivisionMap({
               />
             )}
 
+            {/* Static ocean background — using a rect instead of the projected
+                sphere path avoids the "globe arc cut off" artifact that appears
+                when the projection is scaled to fit a single country. */}
+            <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill={palette.ocean} />
+
             <g transform={zoom.transform}>
-              {/* Ocean background */}
-              {spherePath && (
-                <path
-                  d={spherePath}
-                  fill={palette.ocean}
-                  stroke={palette.stroke}
-                  strokeWidth={0.45}
-                  strokeOpacity={0.55}
-                  vectorEffect="non-scaling-stroke"
-                />
-              )}
 
               {/* Subdivision feature paths */}
               {geoData.features.map((feat, idx) => {

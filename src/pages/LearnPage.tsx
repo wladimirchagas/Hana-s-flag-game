@@ -875,59 +875,100 @@ export default function LearnPage() {
                   </div>
                 )}
               </>
-            ) : subdivisionMode && subdivisionCountry ? (
-              <div className="learn-fs__subdiv-row">
-                {subdivisionCountry.flagSvg && (
-                  <button
-                    type="button"
-                    className="learn-fs__flag"
-                    onClick={() => setZoomedFlagUrl(subdivisionCountry.flagSvg)}
-                    aria-label={`Enlarge ${subdivisionCountry.name} flag`}
-                  >
-                    <img
-                      src={subdivisionCountry.flagSvg}
-                      alt=""
-                      className="learn-fs__flag-img"
-                      draggable={false}
-                      onError={(e) => {
-                        const img = e.currentTarget;
-                        const png = `https://flagcdn.com/${subdivisionCountry.code.toLowerCase()}.png`;
-                        if (img.src !== png) img.src = png;
-                        else img.closest("button")?.remove();
-                      }}
-                    />
-                    <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                  </button>
-                )}
-                <p className="learn-fs__subdiv-country">{subdivisionCountry.name}</p>
-                {selectedSubdivision && (() => {
-                  const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
-                  return (
-                    <div className="learn-fs__subdiv-info">
-                      <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
-                      <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
-                      {sdUrl && (
-                        <button
-                          type="button"
-                          className="learn-fs__flag"
-                          onClick={() => setZoomedFlagUrl(sdUrl)}
-                          aria-label={`Enlarge ${selectedSubdivision.name} flag`}
-                        >
-                          <img
-                            src={sdUrl}
-                            alt=""
-                            className="learn-fs__flag-img"
-                            draggable={false}
-                            onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-                          />
-                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                        </button>
-                      )}
+            ) : subdivisionMode && subdivisionCountry ? (() => {
+              const countryObj = countries.find(c => c.code === subdivisionCountry.code);
+              const inList = hanaCodes.includes(subdivisionCountry.code);
+              return (
+                <>
+                  {countryObj && (
+                    <p className="learn-fs__continent">{countryObj.continent}</p>
+                  )}
+                  <h2 className="learn-fs__name">{subdivisionCountry.name}</h2>
+                  {countryObj && <EntitySummary kind="modern" country={countryObj} />}
+                  {countryObj && (
+                    <div className="learn-fs__anthem-row">
+                      <span className="learn-fs__anthem-label">National Anthem</span>
+                      <button
+                        type="button"
+                        className="learn-fs__anthem-btn"
+                        onClick={() => setAnthemTarget({
+                          code: subdivisionCountry.code,
+                          name: subdivisionCountry.name,
+                          flagUrl: subdivisionCountry.flagSvg || null,
+                        })}
+                        aria-label={`Play national anthem of ${subdivisionCountry.name}`}
+                      >
+                        ▶ Play
+                      </button>
                     </div>
-                  );
-                })()}
-              </div>
-            ) : (
+                  )}
+                  {subdivisionCountry.flagSvg && (
+                    <button
+                      type="button"
+                      className="learn-fs__flag"
+                      onClick={() => setZoomedFlagUrl(subdivisionCountry.flagSvg)}
+                      aria-label={`Enlarge ${subdivisionCountry.name} flag`}
+                    >
+                      <img
+                        src={subdivisionCountry.flagSvg}
+                        alt=""
+                        className="learn-fs__flag-img"
+                        draggable={false}
+                        onError={(e) => {
+                          const img = e.currentTarget;
+                          const png = `https://flagcdn.com/${subdivisionCountry.code.toLowerCase()}.png`;
+                          if (img.src !== png) img.src = png;
+                          else img.closest("button")?.remove();
+                        }}
+                      />
+                      <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                    </button>
+                  )}
+                  {countryObj && (
+                    <div className={`learn-fs__hana-row${inList ? " learn-fs__hana-row--added" : ""}`}>
+                      <span className="learn-fs__hana-label">Hana&rsquo;s Game</span>
+                      <button
+                        type="button"
+                        className={`learn-fs__hana-btn${inList ? " learn-fs__hana-btn--added" : ""}`}
+                        onClick={() => toggleHanaForCode(subdivisionCountry.code)}
+                        aria-pressed={inList}
+                        title={inList ? `Remove ${subdivisionCountry.name} from your list` : `Add ${subdivisionCountry.name} to your list`}
+                      >
+                        {inList ? "✓ In my list" : "+ Add to my list"}
+                      </button>
+                    </div>
+                  )}
+                  <div className="learn-fs__subdiv-row">
+                    {selectedSubdivision && (() => {
+                      const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
+                      return (
+                        <div className="learn-fs__subdiv-info">
+                          <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
+                          <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                          {sdUrl && (
+                            <button
+                              type="button"
+                              className="learn-fs__flag"
+                              onClick={() => setZoomedFlagUrl(sdUrl)}
+                              aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                            >
+                              <img
+                                src={sdUrl}
+                                alt=""
+                                className="learn-fs__flag-img"
+                                draggable={false}
+                                onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                              />
+                              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                            </button>
+                          )}
+                        </div>
+                      );
+                    })()}
+                  </div>
+                </>
+              );
+            })() : (
               <div className="learn-fs__empty">
                 <p className="learn-fs__empty-title">Learn your flags</p>
                 <p className="learn-fs__empty-sub">
