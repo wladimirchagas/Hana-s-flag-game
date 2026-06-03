@@ -136,6 +136,13 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
     }
   }, [game.phase]);
 
+  const currentCode = game.current?.code;
+  useEffect(() => {
+    if (currentCode) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [currentCode]);
+
   function handleSave() {
     if (!playerName.trim()) {
       setSaveHint("need-name");
