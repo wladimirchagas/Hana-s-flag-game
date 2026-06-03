@@ -174,10 +174,12 @@ export function SubdivisionMap({
   }, [selectedCode]);
 
   // Compute projection + paths fitted to the feature collection
-  const { pathByIdx, flagPolygonsById } = useMemo(() => {
+  const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes } = useMemo(() => {
     const empty = {
       pathByIdx: new Map<number, string>(),
       flagPolygonsById: new Map<string, FlagPoly[]>(),
+      centroidByCode: new Map<string, [number, number]>(),
+      smallSubdivCodes: new Set<string>(),
     };
     if (!geoData || geoData.features.length === 0) return empty;
 
@@ -195,6 +197,33 @@ export function SubdivisionMap({
     for (let i = 0; i < geoData.features.length; i++) {
       const p = mapPath(geoData.features[i] as never);
       if (p) pathByIdx.set(i, p);
+    }
+
+    // Centroids and small-feature detection
+    // Features with a bounding box area below this threshold (SVG square units)
+    // are considered too small to see and get the pulsing indicator.
+    const SMALL_AREA_THRESHOLD = 200;
+    const centroidByCode = new Map<string, [number, number]>();
+    const smallSubdivCodes = new Set<string>();
+    for (let i = 0; i < geoData.features.length; i++) {
+      const feat = geoData.features[i];
+      const code = getSubdivCode(feat);
+      if (!code) continue;
+      const geoC = geoCentroid(feat as never);
+      const svgC = projection(geoC);
+      if (svgC && isFinite(svgC[0]) && isFinite(svgC[1])) {
+        centroidByCode.set(code, [svgC[0], svgC[1]]);
+      }
+      if (!pathByIdx.has(i)) {
+        // Feature produced no renderable path — definitely too small to see
+        smallSubdivCodes.add(code);
+      } else {
+        const b = mapPath.bounds(feat as never);
+        if (b && isFinite(b[0][0]) && isFinite(b[1][0])) {
+          const area = (b[1][0] - b[0][0]) * (b[1][1] - b[0][1]);
+          if (area < SMALL_AREA_THRESHOLD) smallSubdivCodes.add(code);
+        }
+      }
     }
 
     // Flag polygon data for clip-path overlay
@@ -249,10 +278,7 @@ export function SubdivisionMap({
       }
     }
 
-    return { pathByIdx, flagPolygonsById };
-    // Intentionally not include flagOverlay in deps — we recompute paths only when geo changes.
-    // Flag overlay polygons are computed here too but we'll recompute on flagOverlay change via
-    // the flagPolygonsById useMemo below. Split for performance.
+    return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes };
   }, [geoData, flagOverlay]);
 
   function getFill(code: string): string {
@@ -296,6 +322,21 @@ export function SubdivisionMap({
     onConfirm();
     setPopover(null);
   }
+
+  // Pulsing ring indicator — shown for subdivisions that are too small to
+  // spot at the default zoom level. Rendered outside the zoom <g> so the
+  // ring's visual size stays constant regardless of zoom level, but
+  // positioned via the live zoom transform so it tracks the territory.
+  const selCentroid = selectedCode ? centroidByCode.get(selectedCode) : null;
+  const showPulse = !!(selCentroid && selectedCode && smallSubdivCodes.has(selectedCode));
+  const { k: zk, tx: ztx, ty: zty } = zoom.view;
+  const pulseX = selCentroid ? selCentroid[0] * zk + ztx : 0;
+  const pulseY = selCentroid ? selCentroid[1] * zk + zty : 0;
+  const PULSE_MARGIN = 30;
+  const pulseVisible =
+    showPulse &&
+    pulseX > -PULSE_MARGIN && pulseX < WIDTH  + PULSE_MARGIN &&
+    pulseY > -PULSE_MARGIN && pulseY < HEIGHT + PULSE_MARGIN;
 
   if (loading) {
     return (
@@ -406,6 +447,19 @@ export function SubdivisionMap({
                 />
               )}
             </g>
+
+            {/* Pulsing ring — outside the zoom group so its pixel size is
+                constant; positioned via zoom-transformed centroid coords. */}
+            {pulseVisible && (
+              <g
+                transform={`translate(${pulseX.toFixed(1)} ${pulseY.toFixed(1)})`}
+                aria-hidden="true"
+              >
+                <circle r={7} className="map-country-pulse__ring" />
+                <circle r={7} className="map-country-pulse__ring map-country-pulse__ring--2" />
+                <circle r={3.5} className="map-country-pulse__dot" />
+              </g>
+            )}
           </svg>
 
           {popover && isInteractive && (
