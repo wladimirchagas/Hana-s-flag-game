@@ -193,15 +193,18 @@
   display: grid;
   /* Panel column shrinks first; map column expands to fill. */
   grid-template-columns: 1fr clamp(260px, 22vw, 320px);
-  grid-template-rows: minmax(0, 1fr);
+  /* Row auto-sizes to content so no artificial blank space forms below the
+     map on smaller screens (iPads, laptops). The flag-grid sibling below is
+     never covered because the row always expands to fit the tallest column. */
+  grid-template-rows: auto;
   grid-template-areas:
     "map panel";
   column-gap: 1rem;
   row-gap: 0.5rem;
   width: 100%;
-  /* Map column fills viewport height after the two sticky bars
-     (~2.5rem + ~3.5rem ≈ 6rem). */
-  min-height: calc(100vh - 7rem);
+  /* Let content determine height — no viewport-filling min-height that would
+     create a gap between the map area and the flag grid below it. */
+  min-height: 0;
   background:
     radial-gradient(1200px 600px at 50% -10%, var(--cream-glow-1) 0%, transparent 60%),
     radial-gradient(900px 500px at 90% 110%, var(--cream-glow-2) 0%, transparent 60%),
