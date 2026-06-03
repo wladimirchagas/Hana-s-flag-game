@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { useLeaderboard } from '../context/LeaderboardContext'
 import { FlagConfetti } from '../components/FlagConfetti'
 import { Mascot } from '../components/Mascot'
@@ -22,9 +22,18 @@ const TITLE_LETTERS: { ch: string; color: string }[] = [
 export default function LandingPage() {
   const { openLeaderboard } = useLeaderboard()
   const navigate = useNavigate()
+  const location = useLocation()
   const [pickerOpen, setPickerOpen] = useState(false)
   const [quizOpen, setQuizOpen] = useState(false)
   const [flagMasterOpen, setFlagMasterOpen] = useState(false)
+
+  useEffect(() => {
+    const state = location.state as { openModal?: string } | null
+    if (state?.openModal === 'quiz') setQuizOpen(true)
+    else if (state?.openModal === 'flagMaster') setFlagMasterOpen(true)
+    else if (state?.openModal === 'picker') setPickerOpen(true)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const playWith = (codes: string[]) => {
     setPickerOpen(false)
