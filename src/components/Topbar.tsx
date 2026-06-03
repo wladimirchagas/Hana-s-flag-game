@@ -24,6 +24,7 @@ export function Topbar() {
             ← Home
           </Link>
         )}
+        <div id="site-topbar-left-slot" className="site-topbar__left-slot" />
       </div>
       <div className="site-topbar__center" id="site-topbar-slot" />
       <div className="site-topbar__right">
@@ -36,3 +37,4 @@ export function Topbar() {
 /** Stable id used by descendant pages (e.g. FlagGamePage) to portal
  *  content into the topbar's centre slot. */
 export const SITE_TOPBAR_SLOT_ID = "site-topbar-slot";
+export const SITE_TOPBAR_LEFT_SLOT_ID = "site-topbar-left-slot";
