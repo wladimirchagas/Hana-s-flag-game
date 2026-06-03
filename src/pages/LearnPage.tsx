@@ -13,6 +13,7 @@ import {
   type MapViewSettings,
 } from "../lib/mapView";
 import { FlagGrid } from "../components/FlagGrid";
+import { SubdivisionFlagGrid } from "../components/SubdivisionFlagGrid";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
@@ -963,53 +964,29 @@ export default function LearnPage() {
         </div>
       )}
     </div>
-      <FlagGrid
-        entries={flagEntries}
-        selectedId={selectedId}
-        onSelect={handleGridSelect}
-        resolveFlag={resolveFlag}
-        isModernEra={isModernEra}
-      />
-      {subdivisionMode && isModernEra && subdivisionGeo && (() => {
-        const countryCode = display?.kind === "modern" ? display.country.code : "";
-        const countryMeta = SUBDIVISION_META[countryCode];
+      {subdivisionMode && subdivisionCountry ? (() => {
+        const meta = SUBDIVISION_META[subdivisionCountry.code];
         return (
-          <div className="subdiv-flag-row">
-            <div className="subdiv-flag-row__header">
-              <h3 className="subdiv-flag-row__title">
-                {display?.kind === "modern" ? display.country.name : ""} — {countryMeta?.pluralLabel ?? "Divisions"}
-              </h3>
-            </div>
-            <div className="subdiv-flag-row__list">
-              {subdivisionGeo.features.map((f) => {
-                const code = f.properties.iso_3166_2 ?? f.properties.name;
-                const name = f.properties.name_en ?? f.properties.name;
-                return (
-                  <button
-                    key={code}
-                    type="button"
-                    className={`subdiv-flag-row__item${selectedSubdivision?.code === code ? " subdiv-flag-row__item--active" : ""}`}
-                    onClick={() => {
-                      const meta = countryMeta?.divisions.find((d) => d.code === code);
-                      if (meta) setSelectedSubdivision(meta);
-                    }}
-                  >
-                    {subdivisionFlagUrl(code) && (
-                      <img
-                        src={subdivisionFlagUrl(code)!}
-                        alt={name}
-                        className="subdiv-flag-row__img"
-                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                      />
-                    )}
-                    <span className="subdiv-flag-row__name">{name}</span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+          <SubdivisionFlagGrid
+            divisions={meta?.divisions ?? []}
+            pluralLabel={meta?.pluralLabel ?? "Divisions"}
+            countryName={subdivisionCountry.name}
+            selectedCode={selectedSubdivision?.code ?? null}
+            onSelect={(code) => {
+              const div = meta?.divisions.find((d) => d.code === code);
+              if (div) setSelectedSubdivision(div);
+            }}
+          />
         );
-      })()}
+      })() : (
+        <FlagGrid
+          entries={flagEntries}
+          selectedId={selectedId}
+          onSelect={handleGridSelect}
+          resolveFlag={resolveFlag}
+          isModernEra={isModernEra}
+        />
+      )}
     </div>
   );
 }
