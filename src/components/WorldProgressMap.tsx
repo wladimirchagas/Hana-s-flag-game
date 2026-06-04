@@ -438,8 +438,10 @@ export function WorldProgressMap({
         const svgC = projection(geoC);
         if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
         const imgH = Math.max(bh, 20);
-        const imgW = imgH * 1.5;
-        polys.push({ path: pd, x: svgC[0] - imgW / 2, y: svgC[1] - imgH / 2, w: imgW, h: imgH });
+        // Ensure the image rect covers the full bbox width so wide countries
+        // like Russia (bw/bh ≈ 8) aren't left with a tiny central patch.
+        const imgW = Math.max(imgH * 1.5, bw);
+        polys.push({ path: pd, x: b[0][0], y: svgC[1] - imgH / 2, w: imgW, h: imgH });
       }
       if (polys.length > 0) {
         const existing = result.get(alpha2);
