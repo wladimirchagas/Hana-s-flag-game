@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wrong Answer Feedback — 3 Visual Proposals</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #1a2238;
+    --ink-fixed: #1a2238;
+    --ink-soft: rgba(26,34,56,0.7);
+    --ink-faint: rgba(26,34,56,0.18);
+    --cream: #fff8ee;
+    --cream-deep: #ffe8c2;
+    --paper: #ffffff;
+    --coral: #ff6b6b;
+    --coral-deep: #d83030;
+    --mustard: #ffc857;
+    --sky: #4ecdc4;
+    --lime: #7ed957;
+    --pink: #ff8fbf;
+    --shadow: 0 8px 0 var(--ink), 0 14px 24px rgba(26,34,56,0.18);
+    --shadow-soft: 0 6px 18px rgba(26,34,56,0.12);
+    --font: 'Fredoka', system-ui, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--cream);
+    color: var(--ink);
+    padding: 2rem 1rem 4rem;
+    line-height: 1.4;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--ink);
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 1rem;
+    margin: 0 0 3rem;
+  }
+
+  /* ============================================================
+     LAYOUT: 3 columns
+     ============================================================ */
+  .proposals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  @media (max-width: 900px) {
+    .proposals { grid-template-columns: 1fr; max-width: 480px; }
+  }
+
+  .proposal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .proposal__label {
+    text-align: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .proposal__title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--ink);
+  }
+  .proposal__desc {
+    text-align: center;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* ============================================================
+     Shared: game card shell (simulates the game in progress)
+     ============================================================ */
+  .game-card {
+    background: var(--paper);
+    border: 4px solid var(--ink);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    position: relative;
+    min-height: 340px;
+  }
+  .game-card__inner {
+    padding: 1.25rem 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Simulated flag */
+  .flag-img {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    border: 3px solid var(--ink);
+    border-radius: 10px;
+    box-shadow: 0 4px 0 var(--ink);
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  /* Simulated dropdown (greyed out, showing wrong guess) */
+  .dropdown-sim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0.9rem;
+    border: 3px solid var(--coral-deep);
+    border-radius: 12px;
+    background: rgba(255, 107, 107, 0.08);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--coral-deep);
+    opacity: 0.75;
+  }
+  .dropdown-sim__x { font-size: 1.1rem; }
+
+
+  /* ============================================================
+     PROPOSAL A — "Reveal Burst"
+     Full-screen overlay (same mechanics as AnswerBurst),
+     but shows flag + country name instead of generic message.
+     ============================================================ */
+
+  .burst-a {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(26, 34, 56, 0.18);
+    backdrop-filter: blur(2px);
+    border-radius: 18px;
+    animation: burst-a-in 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  @keyframes burst-a-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .burst-a__panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.4rem 2rem 1.6rem;
+    border-radius: 24px;
+    border: 4px solid var(--ink);
+    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, #ff6b6b, #ff8fbf);
+    animation: burst-a-pop 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+    text-align: center;
+    max-width: 80%;
+  }
+  @keyframes burst-a-pop {
+    from { transform: scale(0.5) rotate(-8deg); opacity: 0; }
+    to   { transform: scale(1) rotate(0deg);    opacity: 1; }
+  }
+
+  .burst-a__wrong-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-fixed);
+    background: rgba(26,34,56,0.15);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+  }
+
+  .burst-a__label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink-fixed);
+    opacity: 0.85;
+    margin: 0;
+  }
+
+  .burst-a__flag {
+    width: 100px;
+    border: 3px solid var(--ink-fixed);
+    border-radius: 8px;
+    box-shadow: 0 4px 0 rgba(26,34,56,0.4);
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    animation: burst-a-flag 0.55s 0.1s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  @keyframes burst-a-flag {
+    from { transform: scale(0.6); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+  }
+
+  .burst-a__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--ink-fixed);
+    text-shadow: 0 2px 0 rgba(26,34,56,0.2);
+    margin: 0;
+    line-height: 1.1;
+  }
+
+
+  /* ============================================================
+     PROPOSAL B — "Inline Answer Card"
+     A card slides down within the normal page flow, replacing
+     the Feedback line with a richer reveal block.
+     No full-screen overlay — game layout stays visible.
+     ============================================================ */
+
+  .answer-card-b {
+    border: 3px solid var(--coral-deep);
+    border-radius: 14px;
+    background: rgba(255, 107, 107, 0.08);
+    box-shadow: 0 4px 0 var(--coral-deep);
+    overflow: hidden;
+    animation: slide-down-b 0.4s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  @keyframes slide-down-b {
+    from { transform: translateY(-12px) scaleY(0.85); opacity: 0; }
+    to   { transform: translateY(0)     scaleY(1);    opacity: 1; }
+  }
+
+  .answer-card-b__top {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    background: var(--coral-deep);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .answer-card-b__top-x { font-size: 1rem; }
+
+  .answer-card-b__body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .answer-card-b__flag {
+    width: 72px;
+    flex-shrink: 0;
+    border: 2.5px solid var(--ink);
+    border-radius: 6px;
+    box-shadow: 0 3px 0 var(--ink);
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    animation: pop-in-b 0.4s 0.15s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  @keyframes pop-in-b {
+    from { transform: scale(0.7); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+  }
+
+  .answer-card-b__text { flex: 1; min-width: 0; }
+  .answer-card-b__it-was {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.15rem;
+  }
+  .answer-card-b__name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.1;
+  }
+  .answer-card-b__score {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--coral-deep);
+    margin: 0.2rem 0 0;
+  }
+
+
+  /* ============================================================
+     PROPOSAL C — "Bottom Sheet Reveal"
+     A panel slides up from the bottom of the card,
+     covering the lower half. Big flag + name. Feels like a
+     "dramatic reveal" moment before the next flag appears.
+     ============================================================ */
+
+  .game-card--c {
+    min-height: 380px;
+  }
+
+  .bottom-sheet-c {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 4px solid var(--ink);
+    border-radius: 0 0 18px 18px;
+    background: linear-gradient(160deg, #fff0f0 0%, #ffe0e8 100%);
+    padding: 1.1rem 1.25rem 1.4rem;
+    box-shadow: 0 -4px 24px rgba(26,34,56,0.14);
+    animation: sheet-up-c 0.45s cubic-bezier(0.34,1.56,0.64,1) both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+    text-align: center;
+  }
+  @keyframes sheet-up-c {
+    from { transform: translateY(100%); opacity: 0.4; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+
+  .bottom-sheet-c__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--coral-deep);
+  }
+  .bottom-sheet-c__header-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--coral-deep);
+    flex-shrink: 0;
+  }
+
+  .bottom-sheet-c__row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bottom-sheet-c__flag {
+    width: 90px;
+    flex-shrink: 0;
+    border: 3px solid var(--ink);
+    border-radius: 8px;
+    box-shadow: 0 4px 0 var(--ink);
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    animation: pop-in-c 0.45s 0.15s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  @keyframes pop-in-c {
+    from { transform: scale(0.5) rotate(-6deg); opacity: 0; }
+    to   { transform: scale(1)   rotate(0deg);  opacity: 1; }
+  }
+
+  .bottom-sheet-c__info { text-align: left; }
+  .bottom-sheet-c__it-was {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin: 0 0 0.2rem;
+  }
+  .bottom-sheet-c__name {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.1;
+  }
+  .bottom-sheet-c__continent {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    margin: 0.2rem 0 0;
+  }
+
+  .bottom-sheet-c__score {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--coral-deep);
+    background: rgba(216,48,48,0.1);
+    padding: 0.2rem 0.75rem;
+    border-radius: 999px;
+    border: 2px solid rgba(216,48,48,0.25);
+  }
+
+
+  /* ============================================================
+     Divider + notes
+     ============================================================ */
+  .notes {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
+  }
+  .notes__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  @media (max-width: 900px) {
+    .notes__grid { grid-template-columns: 1fr; max-width: 480px; }
+  }
+  .note {
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 14px;
+    box-shadow: 0 4px 0 var(--ink);
+    padding: 1rem 1.1rem;
+  }
+  .note__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+  .note__list {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.875rem;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .note__list li + li { margin-top: 0.2rem; }
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+  }
+  .tag--green { background: rgba(126,217,87,0.3); color: #2d6a1a; }
+  .tag--blue  { background: rgba(78,205,196,0.3); color: #1a6a66; }
+  .tag--red   { background: rgba(255,107,107,0.3); color: var(--coral-deep); }
+</style>
+</head>
+<body>
+
+<h1>Wrong Answer Feedback — 3 Proposals</h1>
+<p class="subtitle">Quick Quiz &amp; Flag Master only · Hana's Game unchanged<br>
+All three show "France" as the correct answer after a wrong guess.</p>
+
+<div class="proposals">
+
+  <!-- ===== PROPOSAL A ===== -->
+  <div class="proposal">
+    <p class="proposal__label">Proposal A</p>
+    <h2 class="proposal__title">Reveal Burst</h2>
+    <p class="proposal__desc">Full-screen overlay (same as today's AnswerBurst), but replaced with a big flag + country name. Feels dramatic and unmissable.</p>
+
+    <div class="game-card">
+      <!-- Dimmed background content -->
+      <div class="game-card__inner" style="opacity:0.35; filter: blur(1px); pointer-events:none;">
+        <img class="flag-img" src="https://flagcdn.com/w320/cn.png" alt="China flag" />
+        <div class="dropdown-sim">
+          China ✗
+          <span class="dropdown-sim__x">✗</span>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="burst-a">
+        <div class="burst-a__panel">
+          <div class="burst-a__wrong-badge">✗ Wrong</div>
+          <p class="burst-a__label">The answer was…</p>
+          <img class="burst-a__flag" src="https://flagcdn.com/w320/fr.png" alt="France flag" />
+          <p class="burst-a__name">France</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROPOSAL B ===== -->
+  <div class="proposal">
+    <p class="proposal__label">Proposal B</p>
+    <h2 class="proposal__title">Inline Answer Card</h2>
+    <p class="proposal__desc">No overlay — an answer card slides in below the flag, within the normal page layout. Less intrusive, more like a lesson flashcard.</p>
+
+    <div class="game-card">
+      <div class="game-card__inner">
+        <img class="flag-img" src="https://flagcdn.com/w320/cn.png" alt="China flag" />
+
+        <!-- Wrong-answer dropdown (locked) -->
+        <div class="dropdown-sim">
+          China
+          <span class="dropdown-sim__x">✗</span>
+        </div>
+
+        <!-- Slides in where the Feedback line normally is -->
+        <div class="answer-card-b">
+          <div class="answer-card-b__top">
+            <span class="answer-card-b__top-x">✗</span>
+            Wrong guess · −1 point
+          </div>
+          <div class="answer-card-b__body">
+            <img class="answer-card-b__flag" src="https://flagcdn.com/w160/fr.png" alt="France flag" />
+            <div class="answer-card-b__text">
+              <p class="answer-card-b__it-was">The answer was</p>
+              <p class="answer-card-b__name">France</p>
+              <p class="answer-card-b__score">−1 point</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROPOSAL C ===== -->
+  <div class="proposal">
+    <p class="proposal__label">Proposal C</p>
+    <h2 class="proposal__title">Bottom Sheet Reveal</h2>
+    <p class="proposal__desc">A panel slides up from the bottom of the card, covering the answer area. Big flag + name with a "reveal" feel — like uncovering the answer.</p>
+
+    <div class="game-card game-card--c">
+      <!-- Background content (partially visible above the sheet) -->
+      <div class="game-card__inner" style="pointer-events:none;">
+        <img class="flag-img" src="https://flagcdn.com/w320/cn.png" alt="China flag" />
+      </div>
+
+      <!-- Bottom sheet -->
+      <div class="bottom-sheet-c">
+        <div class="bottom-sheet-c__header">
+          <div class="bottom-sheet-c__header-dot"></div>
+          Wrong guess
+        </div>
+        <div class="bottom-sheet-c__row">
+          <img class="bottom-sheet-c__flag" src="https://flagcdn.com/w320/fr.png" alt="France flag" />
+          <div class="bottom-sheet-c__info">
+            <p class="bottom-sheet-c__it-was">The answer was</p>
+            <p class="bottom-sheet-c__name">France</p>
+            <p class="bottom-sheet-c__continent">Europe</p>
+          </div>
+        </div>
+        <div class="bottom-sheet-c__score">−1 point</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /proposals -->
+
+
+<!-- ============================================================
+     Notes section
+     ============================================================ -->
+<div class="notes">
+  <div class="notes__grid">
+
+    <div class="note">
+      <p class="note__title">A — Reveal Burst</p>
+      <ul class="note__list">
+        <li>Reuses the existing AnswerBurst overlay system</li>
+        <li>Most visually bold — impossible to miss</li>
+        <li>Same coral/pink gradient replaces mustard/pink "wrong" colours</li>
+        <li>Hana's Game keeps its current "Try again!" burst unchanged</li>
+        <li>Smallest code change — swap the panel content only</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <p class="note__title">B — Inline Answer Card</p>
+      <ul class="note__list">
+        <li>Stays in-flow — no overlay, game layout always visible</li>
+        <li>Replaces the existing "Wrong — it was…" Feedback line</li>
+        <li>Flag image reinforces the country name visually</li>
+        <li>Most educational feel — like a flashcard correction</li>
+        <li>Cleanest transition to the next flag (no overlay to dismiss)</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <p class="note__title">C — Bottom Sheet Reveal</p>
+      <ul class="note__list">
+        <li>"Dramatic reveal" moment — satisfying slide-up animation</li>
+        <li>Shows continent as extra learning context</li>
+        <li>Flag stays visible at top; answer appears below</li>
+        <li>Largest display area for the correct flag image</li>
+        <li>Most noticeable change to the current UX rhythm</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
