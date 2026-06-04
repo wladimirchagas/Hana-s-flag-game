@@ -7,7 +7,9 @@ struct HanaFlagGameApp: App {
     @StateObject private var leaderboardVM = LeaderboardViewModel()
 
     init() {
-        FirebaseApp.configure()
+        if Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") != nil {
+            FirebaseApp.configure()
+        }
     }
 
     var body: some Scene {
