@@ -5,6 +5,10 @@ extension View {
         self
             .background(Color.flagGamePaper(scheme))
             .clipShape(RoundedRectangle(cornerRadius: radius))
+            .overlay(
+                RoundedRectangle(cornerRadius: radius)
+                    .stroke(Color.flagGameInk(scheme).opacity(0.80), lineWidth: 2)
+            )
             .stickerShadow()
     }
 

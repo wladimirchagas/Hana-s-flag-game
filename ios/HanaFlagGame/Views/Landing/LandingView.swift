@@ -157,6 +157,7 @@ struct LandingView: View {
                 Text(String(char))
                     .fredoka(38, weight: .bold)
                     .foregroundColor(char == " " ? .clear : colors[i % colors.count])
+                    .shadow(color: colors[i % colors.count].opacity(0.35), radius: 0, x: 2, y: 3)
             }
         }
     }
@@ -175,6 +176,7 @@ struct LandingView: View {
                     buttonLabel: "Explore",
                     action: { path.append(LearnRoute()) }
                 )
+                .rotationEffect(.degrees(-1.5))
 
                 // Quick Quiz
                 GameModeCard(
@@ -185,7 +187,10 @@ struct LandingView: View {
                     buttonLabel: "Start",
                     action: { showQuizSetup = true }
                 )
+                .rotationEffect(.degrees(1.2))
             }
+
+            Spacer(minLength: 4)
 
             // Flag Master (full width)
             GameModeCard(
@@ -196,6 +201,7 @@ struct LandingView: View {
                 buttonLabel: "Choose Mode",
                 action: { showFlagMaster = true }
             )
+            .rotationEffect(.degrees(-0.7))
         }
     }
 
@@ -244,10 +250,12 @@ struct LandingView: View {
 
 // MARK: - Preview
 
-#Preview {
-    NavigationStack {
-        LandingView(path: .constant(NavigationPath()))
-            .environmentObject(AppViewModel())
-            .environmentObject(LeaderboardViewModel())
+struct LandingView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            LandingView(path: .constant(NavigationPath()))
+                .environmentObject(AppViewModel())
+                .environmentObject(LeaderboardViewModel())
+        }
     }
 }

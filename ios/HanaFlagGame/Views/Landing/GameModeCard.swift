@@ -38,6 +38,13 @@ struct GameModeCard: View {
                 }
 
                 Spacer(minLength: 0)
+
+                if isLarge {
+                    VStack(spacing: 2) {
+                        Text("✦").font(.system(size: 10)).foregroundColor(.mustard)
+                        Text("✦").font(.system(size: 7)).foregroundColor(.coral)
+                    }
+                }
             }
 
             // Action button
@@ -53,26 +60,28 @@ struct GameModeCard: View {
     }
 }
 
-#Preview {
-    VStack(spacing: 16) {
-        GameModeCard(
-            title: "Hana's Game",
-            subtitle: "32 countries selected",
-            iconName: "heart.fill",
-            accentColor: .coral,
-            buttonLabel: "Play",
-            action: {},
-            isLarge: true
-        )
-        GameModeCard(
-            title: "Quick Quiz",
-            subtitle: "Random 20 flags",
-            iconName: "bolt.fill",
-            accentColor: .mustard,
-            buttonLabel: "Start",
-            action: {}
-        )
+struct GameModeCard_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack(spacing: 16) {
+            GameModeCard(
+                title: "Hana's Game",
+                subtitle: "32 countries selected",
+                iconName: "heart.fill",
+                accentColor: .coral,
+                buttonLabel: "Play",
+                action: {},
+                isLarge: true
+            )
+            GameModeCard(
+                title: "Quick Quiz",
+                subtitle: "Random 20 flags",
+                iconName: "bolt.fill",
+                accentColor: .mustard,
+                buttonLabel: "Start",
+                action: {}
+            )
+        }
+        .padding()
+        .background(Color.flagGameBackground(.light))
     }
-    .padding()
-    .background(Color.flagGameBackground(.light))
 }
