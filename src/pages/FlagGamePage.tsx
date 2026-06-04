@@ -381,6 +381,7 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
         nonce={game.attemptNonce}
         wasCorrect={game.wasCorrect}
         active={!isFinished}
+        correctCountry={!isCustomGame ? game.current : undefined}
       />
       <GameClock
         startedAt={game.gameStartedAtMs}
