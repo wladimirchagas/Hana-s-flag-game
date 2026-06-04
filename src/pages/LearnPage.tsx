@@ -100,6 +100,10 @@ export default function LearnPage() {
   const [selected, setSelected] = useState<Selection | null>(null);
   const [showFlagMap, setShowFlagMap] = useState(false);
 
+  // Suppresses the exit-subdivision effect for one cycle when navigating
+  // between subdivision countries via the dropdown.
+  const suppressSubdivisionExitRef = useRef(false);
+
   // Sub-national divisions mode
   const [subdivisionMode, setSubdivisionMode] = useState(false);
   const [subdivisionGeo, setSubdivisionGeo] = useState<SubdivisionFeatureCollection | null>(null);
@@ -183,8 +187,13 @@ export default function LearnPage() {
     setShowFlagMap((prev) => !prev);
   }, []);
 
-  // Exit subdivision mode when a different country is selected
+  // Exit subdivision mode when a different country is selected — unless the
+  // dropdown is navigating between subdivision countries (suppress ref set).
   useEffect(() => {
+    if (suppressSubdivisionExitRef.current) {
+      suppressSubdivisionExitRef.current = false;
+      return;
+    }
     setSubdivisionMode(false);
     setSubdivisionGeo(null);
     setSelectedSubdivision(null);
@@ -334,10 +343,14 @@ export default function LearnPage() {
     setSubdivisionLoading(false);
   }, [display]);
 
-  // Navigate to the subdivision view for a specific country without touching
-  // `selected` — avoids triggering the exit-subdivision effect.
-  const enterSubdivisionModeForCountry = useCallback(async (country: import("../api/countries").Country) => {
+  // Navigate to the subdivision view for a specific country. Suppresses the
+  // exit-subdivision effect so the panel updates to the new country while
+  // staying in subdivision mode.
+  const enterSubdivisionModeForCountry = useCallback(async (country: Country) => {
     const { code, name, flagSvg } = country;
+    suppressSubdivisionExitRef.current = true;
+    setSelected({ kind: "modern", country });
+    setHovered(null);
     setSubdivisionLoading(true);
     setSelectedSubdivision(null);
     setSubdivisionCountry({ code, name, flagSvg });
