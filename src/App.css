@@ -1714,6 +1714,58 @@
   animation: burst-wiggle 2.8s ease-out forwards;
 }
 
+/* Answer-reveal variant (Quick Quiz / Flag Master wrong guess) */
+.burst--reveal .burst__panel {
+  background: linear-gradient(135deg, var(--coral), var(--pink));
+  color: var(--ink-fixed);
+  animation: burst-wiggle 2.8s ease-out forwards;
+}
+
+.burst__reveal-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-fixed);
+  background: rgba(26, 34, 56, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.burst__reveal-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-fixed);
+  opacity: 0.85;
+  margin: 0;
+}
+
+.burst__reveal-flag {
+  width: 100px;
+  border: 3px solid var(--ink-fixed);
+  border-radius: 8px;
+  box-shadow: 0 4px 0 rgba(26, 34, 56, 0.35);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  animation: burst-reveal-flag 0.55s 0.1s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes burst-reveal-flag {
+  from { transform: scale(0.6); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.burst__reveal-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink-fixed);
+  text-shadow: 0 2px 0 rgba(26, 34, 56, 0.2);
+  margin: 0;
+  line-height: 1.1;
+}
+
 .burst__emoji {
   font-size: 3rem;
   line-height: 1;
@@ -1824,10 +1876,12 @@
   .burst__panel,
   .burst__emoji,
   .burst__text,
-  .burst__confetti-piece {
+  .burst__confetti-piece,
+  .burst__reveal-flag {
     animation: none !important;
   }
   .burst__panel { opacity: 1; transform: none; }
+  .burst__reveal-flag { opacity: 1; transform: none; }
 }
 
 /* --- Character cut-ins inside the AnswerBurst overlay --- */

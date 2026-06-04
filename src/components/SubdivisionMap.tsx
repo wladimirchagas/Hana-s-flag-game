@@ -257,7 +257,7 @@ export function SubdivisionMap({
           const bw = b[1][0] - b[0][0];
           const bh = b[1][1] - b[0][1];
           if (bw <= 0 || bh <= 0) continue;
-          if (bw / bh > 8) continue;
+          if (bw / bh > 8 && bh < 20) continue;
           const geoC = geoCentroid(pf as never);
           const svgC = projection(geoC);
           if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
