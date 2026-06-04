@@ -156,13 +156,11 @@ final class CountryService: ObservableObject {
         guard let arr = (try? JSONSerialization.jsonObject(with: data)) as? [Any],
               arr.count >= 2,
               let rows = arr[1] as? [[String: Any]] else { return }
-        var popMap: [String: Int] = [:]
-        for row in rows {
-            if let countryDict = row["country"] as? [String: String],
-               let id = countryDict["id"]?.uppercased(),
-               let val = row["value"] as? Double, val > 0 {
-                popMap[id] = Int(val)
-            }
+        let popMap: [String: Int] = rows.reduce(into: [:]) { acc, row in
+            guard let countryDict = row["country"] as? [String: String],
+                  let id = countryDict["id"]?.uppercased(),
+                  let val = row["value"] as? Double, val > 0 else { return }
+            acc[id] = Int(val)
         }
         await MainActor.run {
             self.countries = self.countries.map { c in
@@ -172,7 +170,7 @@ final class CountryService: ObservableObject {
                 return updated
             }
             self.worldBankPopulationLoaded = true
+            self.saveToCache(self.countries)
         }
-        saveToCache(self.countries)
     }
 }

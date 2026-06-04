@@ -27,15 +27,15 @@ struct TopoGeometry: Decodable {
 }
 
 enum TopoArcs: Decodable {
-    case polygon([[[Int]]])
-    case multipolygon([[[[Int]]]])
+    case polygon([[Int]])
+    case multipolygon([[[Int]]])
 
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
-        if let p = try? container.decode([[[Int]]].self) {
+        if let p = try? container.decode([[Int]].self) {
             self = .polygon(p); return
         }
-        if let mp = try? container.decode([[[[Int]]]].self) {
+        if let mp = try? container.decode([[[Int]]].self) {
             self = .multipolygon(mp); return
         }
         throw DecodingError.typeMismatch(
