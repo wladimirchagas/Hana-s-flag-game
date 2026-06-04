@@ -168,9 +168,9 @@ export function SubdivisionMap({
     if (disabled) setPopover(null);
   }, [disabled]);
 
-  // Hide popover when selectedCode is cleared
+  // Hide popover when selectedCode changes to a different location or is cleared
   useEffect(() => {
-    if (!selectedCode) setPopover(null);
+    setPopover(prev => (prev && prev.code !== selectedCode) ? null : prev);
   }, [selectedCode]);
 
   // Compute projection + paths fitted to the feature collection
