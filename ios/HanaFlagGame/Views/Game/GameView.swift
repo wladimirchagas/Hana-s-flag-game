@@ -14,6 +14,8 @@ struct GameView: View {
     @State private var showEndEarlyAlert = false
     @State private var showFinish = false
     @State private var scoreBoardExpanded = false
+    @State private var showBurst = false
+    @State private var burstWasCorrect = false
 
     init(config: GameConfig, path: Binding<NavigationPath>) {
         self.config = config
@@ -56,11 +58,25 @@ struct GameView: View {
                 .padding(.bottom, 8)
             }
         }
+        .overlay {
+            if showBurst {
+                AnswerBurstView(wasCorrect: burstWasCorrect)
+                    .transition(.opacity)
+            }
+        }
         .navigationBarHidden(true)
         .onAppear {
             gameVM.load()
         }
         .onChange(of: gameVM.phase) { phase in
+            if case .revealed(let wasCorrect) = phase {
+                burstWasCorrect = wasCorrect
+                showBurst = true
+                Task {
+                    try? await Task.sleep(nanoseconds: 900_000_000)
+                    showBurst = false
+                }
+            }
             if case .finished = phase {
                 showFinish = true
             }
@@ -107,11 +123,18 @@ struct GameView: View {
             Spacer()
 
             // Mode label in center
-            Text(config.mode.displayLabel)
-                .fredoka(16, weight: .bold)
-                .foregroundColor(Color.flagGameInk(scheme))
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
+            VStack(spacing: 1) {
+                Text(config.mode.displayLabel)
+                    .fredoka(16, weight: .bold)
+                    .foregroundColor(Color.flagGameInk(scheme))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+                Text(config.mode.tagline)
+                    .fredoka(11)
+                    .foregroundColor(Color.flagGameInk(scheme).opacity(0.55))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+            }
 
             Spacer()
 
@@ -195,6 +218,13 @@ struct GameView: View {
         }
     }
 
+    // MARK: - Auto-confirm helper
+
+    private var autoConfirms: Bool {
+        if case .hana = config.mode { return false }
+        return true
+    }
+
     // MARK: - Guessing phase
 
     private var guessingView: some View {
@@ -214,17 +244,30 @@ struct GameView: View {
                         )
                         .padding(.horizontal, 20)
 
-                        Button("Confirm") {
-                            gameVM.confirm()
+                        if !autoConfirms {
+                            // nothing — auto-confirm fires via onChange below
+                        } else {
+                            Button("Confirm") {
+                                gameVM.confirm()
+                            }
+                            .pillButton(color: .lime, scheme: scheme)
+                            .opacity(gameVM.selected == nil ? 0.45 : 1.0)
+                            .disabled(gameVM.selected == nil)
+                            .padding(.top, 4)
                         }
-                        .pillButton(color: .lime, scheme: scheme)
-                        .opacity(gameVM.selected == nil ? 0.45 : 1.0)
-                        .disabled(gameVM.selected == nil)
-                        .padding(.top, 4)
                     }
                     Spacer(minLength: 24)
                 }
                 .frame(minHeight: geo.size.height)
+            }
+            .onChange(of: gameVM.selected) { newSel in
+                guard newSel != nil, autoConfirms else { return }
+                Task {
+                    try? await Task.sleep(nanoseconds: 320_000_000)
+                    if case .guessing = gameVM.phase, gameVM.selected != nil {
+                        gameVM.confirm()
+                    }
+                }
             }
         }
     }

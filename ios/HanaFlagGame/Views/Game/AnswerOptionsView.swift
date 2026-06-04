@@ -2,8 +2,8 @@ import SwiftUI
 
 // MARK: - AnswerOptionsView
 
-/// Renders answer choices either as a 2-column button grid (≤ 10 options) or
-/// as a searchable text-field + filtered list (> 10 options).
+/// Renders answer choices either as a 2-column button grid (≤ 6 options) or
+/// as a searchable text-field + filtered list (> 6 options).
 struct AnswerOptionsView: View {
     let alternatives: [Country]
     @Binding var selected: Country?
@@ -13,7 +13,7 @@ struct AnswerOptionsView: View {
     @Environment(\.colorScheme) var scheme
 
     var body: some View {
-        if alternatives.count <= 10 {
+        if alternatives.count <= 6 {
             buttonGrid
         } else {
             searchDropdown
