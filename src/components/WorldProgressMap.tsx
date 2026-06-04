@@ -430,9 +430,10 @@ export function WorldProgressMap({
         const bh = b[1][1] - b[0][1];
         if (bw <= 0 || bh <= 0) continue;
         // Antimeridian-crossing tiny rings get a D3 sphere-cap closure
-        // segment that is very wide but very short (high bw/bh ratio).
-        // Filter these out without rejecting large mainlands.
-        if (bw / bh > 8) continue;
+        // segment that is very wide but very short (bh < 2px in practice).
+        // Russia's mainland has bw/bh ≈ 8.19, so guard on bh < 20 to avoid
+        // falsely filtering large countries that are just wide and flat.
+        if (bw / bh > 8 && bh < 20) continue;
         const geoC = geoCentroid(pf as never);
         const svgC = projection(geoC);
         if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
