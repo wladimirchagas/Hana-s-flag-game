@@ -86,7 +86,6 @@ final class GameViewModel: ObservableObject {
                 phase = .error("No countries selected for Hana's Game. Add some countries first!")
                 return
             }
-            let codeSet = Set(codes)
             // Preserve order from the selected codes list
             let lookup = Dictionary(uniqueKeysWithValues: all.map { ($0.code, $0) })
             gamePool = codes.compactMap { lookup[$0] }
