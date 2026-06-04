@@ -60,6 +60,10 @@
 		400000000000000000000003 /* subdivisions in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000003 /* subdivisions */; };
 		400000000000000000000004 /* historical-maps in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000004 /* historical-maps */; };
 		800000000000000000000003 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 800000000000000000000002 /* FirebaseFirestore */; };
+		200000000000000000000031 /* AnswerBurstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000031 /* AnswerBurstView.swift */; };
+		200000000000000000000032 /* FinishConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000032 /* FinishConfettiView.swift */; };
+		200000000000000000000033 /* GameProgressMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000033 /* GameProgressMapView.swift */; };
+		400000000000000000000005 /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000006 /* Fredoka.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +115,10 @@
 		10000000000000000000002E /* AnthemPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnthemPlayerView.swift; sourceTree = "<group>"; };
 		10000000000000000000002F /* FlagImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagImageView.swift; sourceTree = "<group>"; };
 		100000000000000000000030 /* TopbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopbarView.swift; sourceTree = "<group>"; };
+		100000000000000000000031 /* AnswerBurstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerBurstView.swift; sourceTree = "<group>"; };
+		100000000000000000000032 /* FinishConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishConfettiView.swift; sourceTree = "<group>"; };
+		100000000000000000000033 /* GameProgressMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameProgressMapView.swift; sourceTree = "<group>"; };
+		300000000000000000000006 /* Fredoka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/Fredoka.ttf"; sourceTree = "<group>"; };
 		300000000000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		300000000000000000000002 /* countries-50m.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "countries-50m.json"; sourceTree = "<group>"; };
 		300000000000000000000003 /* subdivisions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = subdivisions; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 				300000000000000000000003 /* subdivisions */,
 				300000000000000000000004 /* historical-maps */,
 				300000000000000000000005 /* Info.plist */,
+				300000000000000000000006 /* Fredoka.ttf */,
 			);
 			path = HanaFlagGame;
 			sourceTree = "<group>";
@@ -256,6 +265,9 @@
 				100000000000000000000021 /* ScoreBoardView.swift */,
 				100000000000000000000022 /* GameView.swift */,
 				100000000000000000000023 /* GameFinishView.swift */,
+				100000000000000000000031 /* AnswerBurstView.swift */,
+				100000000000000000000032 /* FinishConfettiView.swift */,
+				100000000000000000000033 /* GameProgressMapView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -379,6 +391,7 @@
 				400000000000000000000002 /* countries-50m.json in Resources */,
 				400000000000000000000003 /* subdivisions in Resources */,
 				400000000000000000000004 /* historical-maps in Resources */,
+				400000000000000000000005 /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +450,9 @@
 				20000000000000000000002E /* AnthemPlayerView.swift in Sources */,
 				20000000000000000000002F /* FlagImageView.swift in Sources */,
 				200000000000000000000030 /* TopbarView.swift in Sources */,
+				200000000000000000000031 /* AnswerBurstView.swift in Sources */,
+				200000000000000000000032 /* FinishConfettiView.swift in Sources */,
+				200000000000000000000033 /* GameProgressMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
