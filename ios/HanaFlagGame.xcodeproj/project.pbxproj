@@ -60,7 +60,6 @@
 		400000000000000000000003 /* subdivisions in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000003 /* subdivisions */; };
 		400000000000000000000004 /* historical-maps in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000004 /* historical-maps */; };
 		800000000000000000000003 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 800000000000000000000002 /* FirebaseFirestore */; };
-		800000000000000000000005 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 800000000000000000000004 /* FirebaseCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				800000000000000000000003 /* FirebaseFirestore in Frameworks */,
-				800000000000000000000005 /* FirebaseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +329,6 @@
 			name = HanaFlagGame;
 			packageProductDependencies = (
 				800000000000000000000002 /* FirebaseFirestore */,
-				800000000000000000000004 /* FirebaseCore */,
 			);
 			productName = HanaFlagGame;
 			productReference = 700000000000000000000009 /* HanaFlagGame.app */;
@@ -648,11 +645,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 800000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
-		};
-		800000000000000000000004 /* FirebaseCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 800000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 
