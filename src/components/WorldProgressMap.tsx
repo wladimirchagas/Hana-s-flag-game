@@ -165,14 +165,29 @@ const FlagDefs = memo(function FlagDefs({
         if (!alpha2 || !flagOverlay.has(alpha2)) return null;
         const polys = flagPolygonsById.get(alpha2);
         if (!polys) return null;
+        const flagUrl = flagOverlay.get(alpha2)!;
         return polys.map((poly, i) => (
-          <clipPath
-            key={`fcp-${alpha2}-${i}`}
-            id={`wm-fcp-${alpha2}-${i}`}
-            clipPathUnits="userSpaceOnUse"
+          // patternUnits="userSpaceOnUse" keeps x/y in the referencing
+          // element's coordinate system — same reason clipPathUnits was set
+          // above (Safari bug, rotation offsets, zoom/flip transforms).
+          <pattern
+            key={`fp-${alpha2}-${i}`}
+            id={`wm-fp-${alpha2}-${i}`}
+            x={poly.x}
+            y={poly.y}
+            width={poly.w}
+            height={poly.h}
+            patternUnits="userSpaceOnUse"
           >
-            <path d={poly.path} />
-          </clipPath>
+            <image
+              href={flagUrl}
+              x={0}
+              y={0}
+              width={poly.w}
+              height={poly.h}
+              preserveAspectRatio="xMidYMid meet"
+            />
+          </pattern>
         ));
       })}
     </defs>
@@ -196,23 +211,16 @@ const FlagImages = memo(function FlagImages({
     <>
       {geographies.map((geo) => {
         const alpha2 = toIsoAlpha2(geo.id);
-        if (!alpha2) return null;
-        const flagUrl = flagOverlay.get(alpha2);
-        if (!flagUrl) return null;
+        if (!alpha2 || !flagOverlay.has(alpha2)) return null;
         const polys = flagPolygonsById.get(alpha2);
         if (!polys) return null;
         const isSelected =
           alpha2 === selectedCode || !!highlightCodes?.has(alpha2);
         return polys.map((poly, i) => (
-          <image
-            key={`fimg-${alpha2}-${i}`}
-            href={flagUrl}
-            x={poly.x}
-            y={poly.y}
-            width={poly.w}
-            height={poly.h}
-            clipPath={`url(#wm-fcp-${alpha2}-${i})`}
-            preserveAspectRatio="xMidYMid slice"
+          <path
+            key={`fp-${alpha2}-${i}`}
+            d={poly.path}
+            fill={`url(#wm-fp-${alpha2}-${i})`}
             opacity={isSelected ? 0.35 : 1}
             style={{ pointerEvents: "none" }}
           />
@@ -438,10 +446,10 @@ export function WorldProgressMap({
         const svgC = projection(geoC);
         if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
         const imgH = Math.max(bh, 20);
-        // Ensure the image rect covers the full bbox width so wide countries
-        // like Russia (bw/bh ≈ 8) aren't left with a tiny central patch.
-        const imgW = Math.max(imgH * 1.5, bw);
-        polys.push({ path: pd, x: b[0][0], y: svgC[1] - imgH / 2, w: imgW, h: imgH });
+        const imgW = imgH * 1.5;
+        // Anchor at bbox top-left so the pattern tile aligns with the country's
+        // top/bottom edges — all flag stripes are visible via tiling.
+        polys.push({ path: pd, x: b[0][0], y: b[0][1], w: imgW, h: imgH });
       }
       if (polys.length > 0) {
         const existing = result.get(alpha2);
