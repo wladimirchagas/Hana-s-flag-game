@@ -310,8 +310,8 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Aztec Empire", { continent: "Mesoamerica", note: "Triple-alliance empire centred on Tenochtitlan.", population: 5_000_000 }],
   ["Inca Empire", { continent: "South America", note: "Andean empire stretching from Ecuador to Chile.", population: 12_000_000 }],
   ["Ming", { continent: "East Asia", note: "Ming dynasty — Great Wall, Forbidden City, voyages of Zheng He.", population: 160_000_000 }],
-  ["Qing", { continent: "East Asia", note: "Last imperial Chinese dynasty.", population: 432_000_000 }],
-  ["Manchu Empire", { continent: "East Asia", note: "Qing dynasty — China's last imperial dynasty. Used the yellow dragon banner, not the modern Chinese flag.", population: 432_000_000 }],
+  ["Qing", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Last imperial Chinese dynasty. The yellow dragon banner was China's national flag from 1889 until the 1912 revolution.", population: 432_000_000 }],
+  ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing dynasty — China's last imperial dynasty. The yellow dragon banner was the national flag from 1889 until the 1912 revolution.", population: 432_000_000 }],
   ["Mughal Empire", { continent: "South Asia", note: "Persianate Muslim empire that built the Taj Mahal.", population: 150_000_000 }],
   ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Sultanate ruling Anatolia, the Balkans, and the Middle East.", population: 35_000_000 }],
   ["Spanish Empire", { continent: "Global", note: "First truly global empire; covered the Americas, Philippines, and parts of Africa.", population: 70_000_000 }],
@@ -321,7 +321,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / North Asia", note: "Vast Eurasian empire under the Romanovs.", population: 178_000_000 }],
   ["Tokugawa Shogunate", { continent: "East Asia", note: "Edo-period Japan.", population: 32_000_000 }],
   ["Safavid Empire", { continent: "Western Asia", note: "Iranian Shia empire; rival of the Ottomans.", population: 10_000_000 }],
-  ["Prussia", { continent: "Central Europe", note: "German kingdom that unified Germany in 1871.", population: 11_000_000 }],
+  ["Prussia", { continent: "Central Europe", note: "Kingdom of Prussia — the dominant German state that unified Germany in 1871. Flew the black eagle on white; the German tricolour didn't exist until 1848.", noFlag: true, population: 11_000_000 }],
   ["Maratha Confederacy", { continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India.", population: 80_000_000 }],
   ["Viceroyalty of Brazil", { flag: "historical-flags/ukpba.png", continent: "South America", note: "United Kingdom of Portugal, Brazil and the Algarves (1815–1825) — Brazil was part of a joint kingdom with Portugal, not yet independent." }],
 
@@ -569,6 +569,139 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // to today's flag for kid-level recognition.
   ["Kingfom of Italy", { continent: "Italy", note: "Kingdom of Italy, 1861–1946 (dataset has a typo of \"Kingdom\").", modernName: "Italy", population: 36_000_000 }],
 
+  // === 1815 / 1850 independent states ======================================
+  // These polities had established national identities and flags (or clear
+  // colonial-power flags) well before 1850. Added explicitly because the
+  // modern-flag auto-fallback only applies to 1914+ eras.
+
+  // Latin American republics — all adopted national flags at independence
+  // (1810s–1820s) that are essentially the same as today's.
+  ["Haiti", { continent: "Caribbean", note: "Republic of Haiti — the world's first Black republic, independent since 1804. The blue-and-red bicolour with coat of arms has been in use since 1820.", modernName: "Haiti", population: 700_000 }],
+  ["United Provinces of La Plata", { continent: "South America", note: "United Provinces of the Río de la Plata — the revolutionary predecessor of Argentina (1810–1831). The sky-blue and white flag with the Sun of May was adopted in 1818.", modernName: "Argentina", population: 500_000 }],
+  ["Paraguay", { continent: "South America", note: "Republic of Paraguay, independent since 1811. The distinctive tricolour with different emblems on each face has been in use since 1842.", modernName: "Paraguay", population: 600_000 }],
+
+  // Asian monarchies with long-established flags or symbols
+  ["Nepal", { continent: "South Asia", note: "Kingdom of Nepal — the unique double-pennant crimson flag is one of the world's oldest national symbols, formalised in 1962 but in use for centuries.", modernName: "Nepal", population: 3_000_000 }],
+  ["Bhutan", { continent: "South Asia", note: "Kingdom of Bhutan — the Druk (Thunder Dragon) flag has been in use since at least the 18th century.", modernName: "Bhutan", population: 300_000 }],
+  ["Oman", { continent: "Arabia", note: "Sultanate of Oman — the Al Said dynasty has flown a red flag since 1744; the modern design with emblems was formalised in 1970.", modernName: "Oman", population: 700_000 }],
+
+  // Joseon Korea — no modern-style national flag until the Taegukgi (1882)
+  ["Korea", { continent: "East Asia", note: "Joseon (Yi) dynasty of Korea. No standardised national flag until the Taegukgi was introduced in 1882.", noFlag: true, population: 7_000_000 }],
+
+  // Malay peninsula & Borneo sultanates — the same dynasties whose
+  // modern Malaysian state flags descend directly from them. Safe to use
+  // as both 1815 and 1850 representations.
+  ["Johor Sultanate", { flag: "historical-flags/johor.png", continent: "Southeast Asia", note: "Independent Malay sultanate of the southern peninsula and Singapore, founded 1528 by the heirs of Malacca.", population: 150_000 }],
+  ["Kedah Sultanate", { flag: "historical-flags/kedah.png", continent: "Southeast Asia", note: "Oldest sultanate on the peninsula (founded c. 1136); paid tribute to Siam.", population: 100_000 }],
+  ["Perak Sultanate", { flag: "historical-flags/perak.png", continent: "Southeast Asia", note: "Sultanate of the silver-rich Perak River valley.", population: 80_000 }],
+  ["Selangor Sultanate", { flag: "historical-flags/selangor.png", continent: "Southeast Asia", note: "Sultanate founded by Bugis migrants in the 18th century.", population: 60_000 }],
+  ["Pahang Sultanate", { flag: "historical-flags/pahang.png", continent: "Southeast Asia", note: "Largest east-coast sultanate by land area.", population: 60_000 }],
+  ["Terengganu Sultanate", { flag: "historical-flags/terengganu.png", continent: "Southeast Asia", note: "East-coast sultanate famed for its songket weaving.", population: 70_000 }],
+  ["Kelantan Sultanate", { flag: "historical-flags/kelantan.png", continent: "Southeast Asia", note: "North-east sultanate, long under Siamese influence.", population: 90_000 }],
+  ["Negeri Sembilan", { flag: "historical-flags/negeri-sembilan.png", continent: "Southeast Asia", note: "Confederation of nine Minangkabau-descended chieftaincies.", population: 30_000 }],
+  ["Perlis", { flag: "historical-flags/perlis.png", continent: "Southeast Asia", note: "Small northern principality; vassal of Kedah and Siam.", population: 15_000 }],
+  ["Brunei", { flag: "historical-flags/brunei-1815.png", continent: "Southeast Asia", note: "Brunei Sultanate — in this era Brunei controlled most of northern Borneo and flew a plain yellow flag (the modern design with stripes dates from 1906).", population: 500_000 }],
+  ["Brunei Sultanate", { flag: "historical-flags/brunei-1815.png", continent: "Southeast Asia", note: "Brunei Sultanate — in 1815/1850 Brunei still controlled most of northern Borneo; the plain yellow flag was used until 1906 when the modern design was formalised.", population: 600_000 }],
+  ["British Penang", { flag: "historical-flags/penang.png", continent: "Southeast Asia", note: "Penang — ceded to the British East India Company in 1786, the first British foothold on the Malay Peninsula.", population: 25_000 }],
+  ["British Malacca", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Malacca — part of the Straits Settlements with Penang and Singapore from 1826, flying the Union Jack.", population: 30_000 }],
+
+  // === 1815 / 1850 European minor states ====================================
+  ["San Marino", { continent: "Italy", note: "Most Serene Republic of San Marino — one of the world's oldest republics; the blue-and-white flag has been in use since at least the 19th century.", modernName: "San Marino", population: 20_000 }],
+  ["Papal States", { continent: "Italy", note: "The Pope's temporal domains in central Italy — yellow-and-white flag. The papacy lost these territories to united Italy in 1870.", noFlag: true, population: 3_000_000 }],
+  ["Luxembourg", { continent: "Western Europe", note: "Grand Duchy of Luxembourg — the tricolour (red-white-light blue) has been in use since 1845.", modernName: "Luxembourg", population: 300_000 }],
+
+  // === Caribbean colonial territories ======================================
+  // British West Indies — Union Jack flew over these territories in 1815/1850
+  ["Anguilla", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 3_000 }],
+  ["Antigua and Barbuda", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 37_000 }],
+  ["Barbados", { modernName: "United Kingdom", continent: "Caribbean", note: "British crown colony since 1625 — the Union Jack flew until independence in 1966.", population: 100_000 }],
+  ["Dominica", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 22_000 }],
+  ["Grenada", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 30_000 }],
+  ["Montserrat", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 10_000 }],
+  ["Saint Kitts and Nevis", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 30_000 }],
+  ["Saint Lucia", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 30_000 }],
+  ["Saint Vincent and the Grenadines", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony — the Union Jack was the official flag.", population: 30_000 }],
+  ["Trinidad", { modernName: "United Kingdom", continent: "Caribbean", note: "British colony from 1797 — the Union Jack flew until independence in 1962.", population: 90_000 }],
+  // French West Indies — the French tricolour flew over these territories
+  ["Guadeloupe", { modernName: "France", continent: "Caribbean", note: "French colony — the tricolour was the official flag.", population: 120_000 }],
+  ["Martinique", { modernName: "France", continent: "Caribbean", note: "French colony — the tricolour was the official flag.", population: 100_000 }],
+  ["Saint Barthelemy", { modernName: "France", continent: "Caribbean", note: "French colony (briefly Swedish 1784–1878) — the French tricolour was the official flag in 1815.", population: 3_000 }],
+  ["Saint Martin", { modernName: "France", continent: "Caribbean", note: "Northern half French, southern half Dutch — the French tricolour flew on the French side.", population: 5_000 }],
+  ["Guiana", { modernName: "France", continent: "South America", note: "French Guiana — French colony on the South American mainland; the tricolour was the official flag.", population: 20_000 }],
+  // Dutch Caribbean
+  ["Netherlands Antilles", { modernName: "Netherlands", continent: "Caribbean", note: "Dutch Caribbean colonies — the Dutch tricolour was the official flag.", population: 50_000 }],
+
+  // === African kingdoms (1815 / 1850) =======================================
+  // These were powerful pre-colonial African polities with their own
+  // royal symbols, but no standardised modern-style national flags.
+  ["Asante", { continent: "West Africa", note: "Asante Empire (Ashanti) — one of West Africa's most powerful kingdoms, in modern Ghana. Famous for Kente cloth and the Golden Stool.", noFlag: true, population: 3_000_000 }],
+  ["Sokoto Caliphate", { continent: "West Africa", note: "Sokoto Caliphate (Fulani Empire) — founded 1804 by Usman dan Fodio; the largest state in 19th-century sub-Saharan Africa, covering most of northern Nigeria.", noFlag: true, population: 10_000_000 }],
+  ["Fulani Empire", { continent: "West Africa", note: "The Fulani Empire is another name for the Sokoto Caliphate — see Sokoto Caliphate.", noFlag: true, population: 10_000_000 }],
+  ["Bornu-Kanem", { continent: "West Africa", note: "Kanem-Bornu Empire — one of the longest-lasting states in African history (around Lake Chad, in modern Nigeria and Chad).", noFlag: true, population: 5_000_000 }],
+  ["Fante", { continent: "West Africa", note: "Fante Confederation — a loose alliance of Akan peoples of coastal Ghana, rivals of the Asante.", noFlag: true, population: 800_000 }],
+  ["Kaarta", { continent: "West Africa", note: "Kingdom of Kaarta — a Bambara state in modern western Mali, sibling rival of the Ségou empire.", noFlag: true, population: 300_000 }],
+  ["Buganda", { continent: "East Africa", note: "Kingdom of Buganda — the largest of the Great Lakes kingdoms, in modern Uganda.", noFlag: true, population: 1_500_000 }],
+  ["Bunyoro", { continent: "East Africa", note: "Kingdom of Bunyoro-Kitara — ancient rival of Buganda, in modern Uganda.", noFlag: true, population: 800_000 }],
+  ["Nkore", { continent: "East Africa", note: "Kingdom of Nkore (Ankole) — one of the inter-lacustrine Great Lakes kingdoms, in modern Uganda.", noFlag: true, population: 600_000 }],
+  ["Rwanda", { continent: "East Africa", note: "Kingdom of Rwanda — pre-colonial Great Lakes monarchy; the modern nation's flag dates from 2001.", noFlag: true, population: 1_000_000 }],
+  ["Burundi", { continent: "East Africa", note: "Kingdom of Burundi (Urundi) — pre-colonial Great Lakes monarchy; the modern flag dates from 1966.", noFlag: true, population: 1_200_000 }],
+  ["Lozi", { continent: "Southern Africa", note: "Lozi Kingdom (Barotseland) — in modern western Zambia.", noFlag: true, population: 500_000 }],
+  ["Lunda", { continent: "Central Africa", note: "Lunda Empire — a major Central African trading state straddling modern Angola/DRC/Zambia.", noFlag: true, population: 1_000_000 }],
+  ["Kazembe", { continent: "Central Africa", note: "Kingdom of Kazembe — eastern branch of the Lunda Empire, in modern Zambia.", noFlag: true, population: 500_000 }],
+  ["Imbangala", { continent: "Central Africa", note: "Imbangala (Jaga) polities of modern Angola — warrior states in the Angolan interior.", noFlag: true, population: 300_000 }],
+  ["Zanzibar", { continent: "East Africa", note: "Sultanate of Zanzibar — governed by the Omani Busaidi dynasty from the 1690s; flew the Omani red flag.", modernName: "Oman", population: 200_000 }],
+  ["Somalia", { continent: "East Africa", note: "Patchwork of Somali sultanates (Majeerteen, Geledi, etc.) — no unified Somali state or flag until 1960.", noFlag: true, population: 2_000_000 }],
+  ["Zulu", { continent: "Southern Africa", note: "Zulu Kingdom under Shaka and his successors — the most powerful state in 19th-century southern Africa.", noFlag: true, population: 600_000 }],
+  ["Xhosa", { continent: "Southern Africa", note: "Xhosa-speaking chiefdoms of the Eastern Cape — no standardised national flag.", noFlag: true, population: 500_000 }],
+  ["Sotho", { continent: "Southern Africa", note: "Basotho Kingdom founded by Moshoeshoe I (c. 1820) — precursor to modern Lesotho.", noFlag: true, population: 300_000 }],
+  ["Congo", { continent: "Central Africa", note: "Kingdom of Kongo (or successor Loango / Kakongo states) — pre-colonial Central African kingdom in modern Angola / DRC / Congo-Brazzaville.", noFlag: true, population: 2_000_000 }],
+
+  // === South and Southeast Asian states =====================================
+  ["Travancore", { continent: "South Asia", note: "Kingdom of Travancore — Indian princely state on the Malabar coast; under British paramountcy after 1795.", noFlag: true, population: 3_000_000 }],
+  ["Oudh", { continent: "South Asia", note: "Kingdom of Oudh (Awadh) — Indian princely state in the Ganges plain, annexed by the British in 1856.", noFlag: true, population: 11_000_000 }],
+  ["Mysore (Indian princely state)", { continent: "South Asia", note: "Kingdom of Mysore — reduced to a British-protected princely state after Tipu Sultan's defeat in 1799.", noFlag: true, population: 6_000_000 }],
+  ["Sikkim (Indian princely state)", { continent: "South Asia", note: "Kingdom of Sikkim — small Himalayan Buddhist monarchy, became a British protectorate in 1890.", noFlag: true, population: 100_000 }],
+  ["Assam", { continent: "South Asia", note: "Ahom Kingdom of Assam — Southeast Asian dynasty that ruled Assam for 600 years; annexed by Britain in 1826.", noFlag: true, population: 3_000_000 }],
+  ["Arakan", { continent: "Southeast Asia", note: "Kingdom of Arakan (Mrauk-U) — coastal kingdom in modern Rakhine State, Myanmar; annexed by the Konbaung Burmese in 1785.", noFlag: true, population: 1_000_000 }],
+  ["Cambodia", { continent: "Southeast Asia", note: "Khmer kingdom under Vietnamese and Siamese pressure. No standardised national flag before the French colonial period (1863).", noFlag: true, population: 1_000_000 }],
+  ["Afghanistan", { continent: "Central Asia", note: "Durrani/Barakzai emirate. The Black-Red-Green tricolour wasn't formalised until 1928; no standardised national flag in this era.", noFlag: true, population: 4_000_000 }],
+  ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the Crown of Castile's red-yellow-red flag flew over the islands from 1785 onwards. The modern Philippine flag wasn't adopted until the 1898 revolution.", population: 4_000_000 }],
+  ["Arakan (Indian princely state)", { continent: "Southeast Asia", note: "Arakan under British-Indian administration.", noFlag: true, population: 800_000 }],
+  ["Laos", { continent: "Southeast Asia", note: "Various Lao kingdoms (Lane Xang, Vientiane, Luang Prabang, Champasak) — no unified Laotian state or standardised flag.", noFlag: true, population: 1_000_000 }],
+
+  // === British Crown Colonies / territories =================================
+  ["Canada", { modernName: "United Kingdom", continent: "North America", note: "British North America — the Union Jack flew over the colonial territories that would unite as Canada in 1867.", population: 400_000 }],
+  ["Hong Kong", { modernName: "United Kingdom", continent: "East Asia", note: "British Crown Colony of Hong Kong — ceded from Qing China in 1842; the Union Jack flew until 1997.", population: 100_000 }],
+  ["Sierra Leone", { modernName: "United Kingdom", continent: "West Africa", note: "British Crown Colony of Sierra Leone — established 1808; the Union Jack was the official flag.", population: 500_000 }],
+  ["Senegal", { modernName: "France", continent: "West Africa", note: "French colonial Senegal (Saint-Louis, Gorée) — the tricolour was the official flag.", population: 700_000 }],
+  ["Angola", { flag: "historical-flags/ukpba.png", continent: "Central Africa", note: "Portuguese Angola — colonial territory of Portugal, which in 1815 flew the United Kingdom of Portugal, Brazil and the Algarves banner.", population: 1_500_000 }],
+
+  // === Oceania / Pacific ===================================================
+  ["Kongldom of Hawaii", { continent: "Pacific", note: "Kingdom of Hawaiʻi — an independent Polynesian monarchy from 1810 until the US-backed overthrow of Queen Liliuokalani in 1893. The kingdom's flag combined the Union Jack with horizontal stripes.", noFlag: true, population: 130_000 }],
+  ["Tuʻi Tonga Empire", { continent: "Pacific", note: "Tuʻi Tonga Empire — a maritime Polynesian empire centred on Tonga that influenced much of the Pacific.", noFlag: true, population: 30_000 }],
+  ["Expansionist Kingdom of Merina", { continent: "East Africa", note: "Kingdom of Merina — the dominant Malagasy kingdom that was unifying Madagascar in the early 19th century.", noFlag: true, population: 1_000_000 }],
+
+  // === European minor states (1815 / 1850) ==================================
+  // The German Confederation had ~39 member states; the larger ones shown
+  // here all had their own dynastic flags but the modern German flag is
+  // entirely anachronistic (Germany didn't unify until 1871). Better to
+  // show no flag than the wrong one.
+  ["Bavaria", { continent: "Central Europe", note: "Kingdom of Bavaria — major German state in the pre-unification era.", noFlag: true, population: 4_200_000 }],
+  ["Saxony", { continent: "Central Europe", note: "Kingdom of Saxony — German state in the pre-unification era.", noFlag: true, population: 1_900_000 }],
+  ["Hanover", { continent: "Central Europe", note: "Kingdom of Hanover — German state in the pre-unification era; the British monarch was also King of Hanover until 1837.", noFlag: true, population: 1_800_000 }],
+  ["Württemberg", { continent: "Central Europe", note: "Kingdom of Württemberg — German state in the pre-unification era.", noFlag: true, population: 1_600_000 }],
+  ["Baden", { continent: "Central Europe", note: "Grand Duchy of Baden — German state in the pre-unification era.", noFlag: true, population: 1_000_000 }],
+  ["Lombardy", { continent: "Italy", note: "Lombardy-Venetia — Austrian crownland in northern Italy until the 1859 Italian wars of independence.", noFlag: true, population: 2_500_000 }],
+  ["Venetia", { continent: "Italy", note: "The Venetia (former Republic of Venice) — Austrian crownland until 1866.", noFlag: true, population: 2_300_000 }],
+  ["Tuscany", { continent: "Italy", note: "Grand Duchy of Tuscany — Habsburg-Lorraine dynasty; Italian unification ended it in 1859.", noFlag: true, population: 1_100_000 }],
+  ["Republic of Kraków", { continent: "Central Europe", note: "Free City of Kraków — a nominally independent republic 1815–1846, then annexed by Austria.", noFlag: true, population: 80_000 }],
+  ["Tripolitania", { continent: "North Africa", note: "Ottoman Vilayet of Tripolitania (western Libya) — the Ottoman flag flew over it until Italian conquest in 1912.", noFlag: true, population: 500_000 }],
+  ["Cyrenaica", { continent: "North Africa", note: "Ottoman Vilayet of Cyrenaica (eastern Libya) — the Ottoman flag flew over it until Italian conquest in 1912.", noFlag: true, population: 200_000 }],
+  ["Tunis", { continent: "North Africa", note: "Beylik of Tunis — autonomous Ottoman regency; had its own red flag with crescent and star (forerunner of modern Tunisia's flag).", noFlag: true, population: 1_000_000 }],
+  ["Algiers", { continent: "North Africa", note: "Regency of Algiers — autonomous Ottoman state until France invaded in 1830. No standardised national flag.", noFlag: true, population: 3_000_000 }],
+  ["central Asian khanates", { continent: "Central Asia", note: "Khanates of the Central Asian steppe (Khiva, Bukhara, Kokand) — independent Islamic successor states of the Mongol era.", noFlag: true, population: 5_000_000 }],
+  ["Kuril Islands", { continent: "East Asia", note: "Kuril Islands — disputed between Russia and Japan; the 1825 Simoda Treaty began clarifying boundaries.", noFlag: true, population: 5_000 }],
+
   // Modern (1914 – today) --------------------------------------------------
   ["Austro-Hungarian Empire", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Dual monarchy of the Habsburgs.", population: 51_000_000 }],
   ["German Empire", { flag: "historical-flags/german-empire.png", continent: "Central Europe", note: "Kaiserreich under Wilhelm II.", population: 67_000_000 }],
@@ -588,7 +721,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Burma", { continent: "Southeast Asia", note: "Pre-1989 name for Myanmar.", modernName: "Myanmar", population: 17_000_000 }],
   ["Ceylon", { continent: "South Asia", note: "Pre-1972 name for Sri Lanka.", modernName: "Sri Lanka", population: 10_000_000 }],
   ["Siam", { continent: "Southeast Asia", note: "Pre-1939 name for Thailand.", modernName: "Thailand", population: 15_000_000 }],
-  ["Zaire", { continent: "Central Africa", note: "Name of the DRC under Mobutu, 1971–1997.", modernName: "DR Congo", population: 30_000_000 }],
+  ["Zaire", { flag: "historical-flags/zaire.png", continent: "Central Africa", note: "Name of the DRC under Mobutu, 1971–1997. The Zairian flag (green with yellow torch and arm) is very different from today's DRC flag.", population: 30_000_000 }],
   ["United Kingdom of Great Britain and Ireland", { continent: "Northern Europe", note: "Pre-1922 UK including all of Ireland.", modernName: "United Kingdom", population: 46_000_000 }],
   ["Gambia, The", { continent: "West Africa", modernName: "Gambia" }],
   ["Tanzania, United Republic of", { continent: "East Africa", modernName: "Tanzania" }],
@@ -743,61 +876,104 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Portuguese Guinea", { flag: "historical-flags/ukpba.png", continent: "West Africa", note: "Portuguese colony in modern Guinea-Bissau.", population: 200_000 }],
     ["Delagoa Bay", { flag: "historical-flags/ukpba.png", continent: "East Africa", note: "Portuguese trading post in modern Mozambique.", population: 5_000 }],
     ["Goa", { flag: "historical-flags/ukpba.png", continent: "South Asia", note: "Portuguese India — held until 1961.", population: 250_000 }],
-    // === Malay peninsula + Borneo (1815) =====================================
-    // The dataset's lumped "Malaya" feature is split into the actual
-    // contemporary polities by /scripts/split-malaya.py — see the
-    // resulting feature NAMEs below. Each sultanate's modern Malaysian
-    // state flag is used as a faithful descendant of the sultanate's
-    // historic banner (the dynasties continue today as constitutional
-    // rulers and the flags trace directly to them).
-    ["Johor Sultanate", { flag: "historical-flags/johor.png", continent: "Southeast Asia", note: "Independent Malay sultanate of the southern peninsula and Singapore, founded 1528 by the heirs of Malacca.", population: 150_000 }],
-    ["Kedah Sultanate", { flag: "historical-flags/kedah.png", continent: "Southeast Asia", note: "Oldest sultanate on the peninsula (founded c. 1136); paid tribute to Siam.", population: 100_000 }],
-    ["Perak Sultanate", { flag: "historical-flags/perak.png", continent: "Southeast Asia", note: "Sultanate of the silver-rich Perak River valley.", population: 80_000 }],
-    ["Selangor Sultanate", { flag: "historical-flags/selangor.png", continent: "Southeast Asia", note: "Sultanate founded by Bugis migrants in the 18th century — covered the whole west coast around modern KL.", population: 60_000 }],
-    ["Pahang Sultanate", { flag: "historical-flags/pahang.png", continent: "Southeast Asia", note: "Largest east-coast sultanate by land area.", population: 60_000 }],
-    ["Terengganu Sultanate", { flag: "historical-flags/terengganu.png", continent: "Southeast Asia", note: "East-coast sultanate famed for its songket weaving.", population: 70_000 }],
-    ["Kelantan Sultanate", { flag: "historical-flags/kelantan.png", continent: "Southeast Asia", note: "North-east sultanate, long under Siamese influence.", population: 90_000 }],
-    ["Negeri Sembilan", { flag: "historical-flags/negeri-sembilan.png", continent: "Southeast Asia", note: "Confederation of nine Minangkabau-descended chieftaincies — a federation of small states rather than a single sultanate.", population: 30_000 }],
-    ["Perlis", { flag: "historical-flags/perlis.png", continent: "Southeast Asia", note: "Small northern principality; vassal of Kedah and Siam in 1815.", population: 15_000 }],
-    // European holdings on the peninsula — use the metropole's then-current flag.
-    ["Dutch Malacca", { continent: "Southeast Asia", note: "Former Malay sultanate; held by the Dutch 1641–1825 before being ceded to Britain.", modernName: "Netherlands", population: 25_000 }],
-    ["British Penang", { continent: "Southeast Asia", note: "Ceded to the British East India Company in 1786 — the first British holding on the peninsula. Flew the Union Jack (1801 design).", modernName: "United Kingdom", population: 25_000 }],
-    // Northern Borneo in 1815 was the Brunei Sultanate's territory, not
-    // British. Before 1906 Brunei flew a plain yellow flag — same colour
-    // as today's, without the modern emblems and stripes.
-    ["Brunei Sultanate", { flag: "historical-flags/brunei-1815.png", continent: "Southeast Asia", note: "In 1815 Brunei still controlled most of northern Borneo; James Brooke and the British North Borneo Co. wouldn't carve out Sarawak and Sabah until 1841 and 1881.", population: 600_000 }],
-    // Burma in the dataset 1815 = Konbaung dynasty. The white-elephant-on-
-    // red flag we've sourced for Siam doesn't apply here; Konbaung used a
-    // golden peacock symbol but had no standardised national flag in 1815.
-    // Burma 1948+ is handled by ad1945/ad1960 entries below.
-    ["Burma", { continent: "Southeast Asia", note: "Konbaung dynasty of Burma, 1752–1885. No standardised national flag — royal banners used the green peacock.", population: 3_500_000, noFlag: true }],
-    // (The dataset uses "Rattanakosin Kingdom" rather than "Siam" for the
-    // 1815 era; the registry's global Rattanakosin entry already routes
-    // to siam.png, so no override needed here.)
-    // Ceylon in 1815 had just been ceded by the Dutch to the British
-    // (Kandyan Convention 1815). Flew the Union Jack thereafter.
-    ["Ceylon", { continent: "South Asia", note: "Ceded by the Dutch to the British in 1796; in 1815 the British annexed the Kandyan Kingdom and Ceylon became a Crown Colony. Flew the Union Jack.", modernName: "United Kingdom", population: 1_500_000 }],
-    // Egypt in 1815 was Ottoman with autonomy under Muhammad Ali — no
-    // distinct national flag yet (the Khedivate's red+crescent flag with
-    // 3 stars came later under Ismail). Show no flag honestly.
-    ["Egypt", { continent: "North Africa", note: "Ottoman Egypt under Muhammad Ali — autonomous viceroyalty using the Ottoman red+crescent banner. The Khedive's distinctive 3-star flag wouldn't appear until later in the 19th c.", population: 4_500_000, noFlag: true }],
-    // Yemen in 1815 was a patchwork of Imamate / Zaidi rulers / Ottoman
-    // garrison; no national flag.
+    // Dutch Malacca — held by the Dutch until 1825 cession to Britain.
+    ["Dutch Malacca", { modernName: "Netherlands", continent: "Southeast Asia", note: "Former Malay sultanate; held by the Dutch 1641–1825 before being ceded to Britain. Flew the Dutch tricolour.", population: 25_000 }],
+    // Note: Johor, Kedah, Perak, Selangor, Pahang, Terengganu, Kelantan,
+    // Negeri Sembilan, Perlis, Brunei Sultanate, British Penang are all in
+    // the global POLITY_REGISTRY and don't need era-specific overrides here.
+    // Burma in 1815 = Konbaung dynasty. Used golden-peacock royal banners
+    // but had no standardised national flag.
+    ["Burma", { continent: "Southeast Asia", note: "Konbaung dynasty of Burma, 1752–1885. Royal banners used the green peacock; no standardised national flag.", population: 3_500_000, noFlag: true }],
+    ["Ceylon", { modernName: "United Kingdom", continent: "South Asia", note: "Ceded by the Dutch to the British in 1796; in 1815 the British annexed the Kandyan Kingdom. Ceylon became a Crown Colony flying the Union Jack.", population: 1_500_000 }],
+    ["Egypt", { continent: "North Africa", note: "Ottoman Egypt under Muhammad Ali — autonomous viceroyalty. The Khedive's 3-star crescent flag was adopted later under Ismail; in 1815 the Ottoman banner flew.", population: 4_500_000, noFlag: true }],
     ["Yemen", { continent: "Arabia", note: "Zaydi Imamate of Yemen plus Ottoman garrisons on the coast — no national flag.", population: 2_000_000, noFlag: true }],
-    // Annam, Cochin China in 1815 = Nguyen dynasty Vietnam (Empire of
-    // Vietnam under Gia Long). Royal yellow banner with red character.
-    // Without a curated PNG, show no flag rather than mislabel.
     ["Annam", { continent: "Southeast Asia", note: "Annam in 1815 was part of Nguyen-dynasty Vietnam (Đại Nam) under Emperor Gia Long. Royal banners used yellow with red imperial characters.", population: 6_500_000, noFlag: true }],
     ["Cochin China", { continent: "Southeast Asia", note: "Cochinchina under the Nguyen dynasty — southern Vietnam. Same Nguyen royal yellow banner as Annam.", population: 3_000_000, noFlag: true }],
-    // Morocco — the Sultanate of Morocco in 1815 used a plain red flag
-    // (no green star until 1915 under French/Spanish protectorate). The
-    // modern flag is also red with a green pentagram, similar shape but
-    // visually distinct. Without curated PNG, no flag.
-    ["Morocco", { continent: "North Africa", note: "Sultanate of Morocco — Alawi dynasty. Flew a plain red flag in 1815; the green pentagram was added by Mawlay Yusuf in 1915.", population: 3_500_000, noFlag: true }],
-    // Ethiopia in 1815 was the Era of the Princes (Zemene Mesafint) —
-    // weak central monarchy, no national flag.
-    ["Ethiopia", { continent: "East Africa", note: "Era of the Princes (Zemene Mesafint): emperors in Gondar held only nominal authority, regional lords dominated. No national flag yet.", population: 4_000_000, noFlag: true }],
-    // Portugal in 1815 = UKPBA (already covered above in this same map).
+    ["Morocco", { continent: "North Africa", note: "Alawi Sultanate of Morocco — flew a plain red flag in 1815; the green pentagram wasn't added until 1915.", population: 3_500_000, noFlag: true }],
+    ["Ethiopia", { continent: "East Africa", note: "Era of the Princes (Zemene Mesafint) — emperors in Gondar held only nominal authority; no national flag.", population: 4_000_000, noFlag: true }],
+    // Haiti — independent republic since 1804; the blue-and-red bicolour
+    // adopted in 1820 is essentially the same as today's.
+    ["Haiti", { modernName: "Haiti", continent: "Caribbean", note: "Republic of Haiti — the world's first Black republic, independent since 1804. The blue-and-red bicolour has been in use since 1820.", population: 700_000 }],
+    // United Provinces of La Plata — precursor to Argentina (1810–1831).
+    ["United Provinces of La Plata", { modernName: "Argentina", continent: "South America", note: "United Provinces of the Río de la Plata — precursor to Argentina. The sky-blue and white flag with the Sun of May was adopted in 1818.", population: 500_000 }],
+    // Japan in 1815 = Tokugawa Shogunate. Hinomaru is effectively contemporary.
+    ["Japan", { modernName: "Japan", continent: "East Asia", note: "Tokugawa Shogunate Japan — the Hinomaru (red disc on white) dates to the medieval era and was officially designated in 1870.", population: 30_000_000 }],
+    // Korea in 1815 = Joseon (Yi) dynasty, no national flag.
+    ["Korea", { continent: "East Asia", note: "Joseon (Yi) dynasty of Korea — no standardised national flag until the Taegukgi in 1882.", noFlag: true, population: 7_000_000 }],
+    // Afghanistan — no standardised flag.
+    ["Afghanistan", { continent: "Central Asia", note: "Durrani/Barakzai emirate — no standardised national flag in this era.", noFlag: true, population: 4_000_000 }],
+    // Cambodia — no flag before French colonisation.
+    ["Cambodia", { continent: "Southeast Asia", note: "Khmer kingdom under Vietnamese and Siamese pressure — no standardised flag before the French colonial period.", noFlag: true, population: 1_000_000 }],
+    // Hong Kong in 1815 was still Qing China — British sovereignty began 1842.
+    ["Hong Kong", { continent: "East Asia", note: "In 1815 Hong Kong Island was Qing Chinese territory — Britain didn't acquire it until the Treaty of Nanking (1842).", noFlag: true, population: 5_000 }],
+    // Philippines in 1815 = Spanish colony
+    ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the red-yellow-red Crown of Castile flag flew until the 1898 revolution.", population: 2_500_000 }],
+  ])],
+
+  // === 1850 (Industrial age) overrides ======================================
+  // 1850 is the first era with many newly independent Latin American and
+  // Asian states. Most adopted national flags at independence in the 1810s–
+  // 1820s that are essentially the same today, so we use `modernName` for
+  // those. The Empire of Brazil is the major exception — the imperial flag
+  // is strikingly different from modern Brazil's republican flag.
+  ["ad1850", new Map<string, PolityInfo>([
+    // Empire of Brazil — Pedro II's empire (1831–1889). The green flag with
+    // the imperial coat of arms was completely replaced by a republican flag
+    // when Brazil became a republic in 1889.
+    ["Empire of Brazil", { flag: "historical-flags/empire-of-brazil.png", continent: "South America", note: "Empire of Brazil under Emperor Pedro II. The green flag with the golden lozenge and imperial coat of arms is very different from modern Brazil's republican flag, adopted at the 1889 proclamation.", population: 7_500_000 }],
+    // Latin American republics — flags adopted at independence (1810s–1820s)
+    // are essentially the same today.
+    ["Mexico", { modernName: "Mexico", continent: "Mesoamerica", note: "Republic of Mexico — the green-white-red tricolour was adopted at independence in 1821; the eagle design has been updated but the colours are the same.", population: 7_500_000 }],
+    ["Peru", { modernName: "Peru", continent: "South America", note: "Republic of Peru — independent since 1821; the vertical red-white-red tricolour was adopted in 1825.", population: 2_500_000 }],
+    ["Argentine Confederation", { modernName: "Argentina", continent: "South America", note: "Argentine Confederation under Juan Manuel de Rosas. The sky-blue and white flag with the Sun of May has been in use since 1818.", population: 1_000_000 }],
+    ["New Granada", { modernName: "Colombia", continent: "South America", note: "Republic of New Granada (1831–1858) — precursor to Colombia. The yellow-blue-red tricolour adopted from Gran Colombia in 1819 is essentially today's Colombian flag.", population: 2_000_000 }],
+    ["Haiti", { modernName: "Haiti", continent: "Caribbean", note: "Republic of Haiti — the blue-and-red bicolour with coat of arms has been in use since 1820.", population: 900_000 }],
+    ["Paraguay", { modernName: "Paraguay", continent: "South America", note: "Republic of Paraguay — the tricolour with different emblems on each face has been in use since 1842.", population: 600_000 }],
+    // Egypt in 1850 — under Abbas I Pasha (Muhammad Ali dynasty, Ottoman
+    // suzerainty). The red flag with white crescent and 3 stars was
+    // introduced by Muhammad Ali in the 1840s.
+    ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Ottoman Egypt under Abbas I Pasha (Muhammad Ali dynasty) — the red flag with white crescent and 3 stars was adopted in the 1840s and flew throughout the mid-19th century.", population: 4_500_000 }],
+    // France in 1850 = Second Republic / Second Empire
+    // The tricolour was restored in 1830 and used through 1850.
+    // No override needed — `modernName` auto-fallback will find modern France
+    // via the 1914+ pathway doesn't apply to 1850... actually for 1850 era,
+    // `eraAllowsModernFlagFallback` is false, so "France" would have no flag
+    // unless we add an explicit entry. Add it here.
+    ["France", { modernName: "France", continent: "Western Europe", note: "France in 1850 — the Second Republic (1848–1851) flew the tricolour, later confirmed by Napoleon III's Second Empire (1852–1870).", population: 36_000_000 }],
+    // Japan in 1850 = Tokugawa Shogunate
+    ["Japan", { modernName: "Japan", continent: "East Asia", note: "Tokugawa Japan — the Hinomaru has been in use since the medieval era and was formally designated Japan's national flag in 1870.", population: 32_000_000 }],
+    // Korea in 1850 = Joseon dynasty, no national flag.
+    ["Korea", { continent: "East Asia", note: "Joseon (Yi) dynasty of Korea — no standardised national flag until the Taegukgi in 1882.", noFlag: true, population: 7_000_000 }],
+    // Morocco in 1850 — plain red flag (green star added 1915)
+    ["Morocco", { continent: "North Africa", note: "Alawi Sultanate of Morocco — flew a plain red flag in 1850; the green pentagram wasn't added until 1915.", noFlag: true, population: 4_000_000 }],
+    // Yemen in 1850 — patchwork of tribal / Zaydi / Ottoman powers
+    ["Yemen", { continent: "Arabia", note: "Imamate of Yemen plus Ottoman-influenced coastal areas — no unified national flag.", noFlag: true, population: 2_500_000 }],
+    // Annam / Cochin China in 1850 = Nguyen dynasty Vietnam
+    ["Annam", { continent: "Southeast Asia", note: "Annam under the Nguyen dynasty (Đại Nam). Royal banners used yellow with red imperial characters; no modern-style national flag.", noFlag: true, population: 7_000_000 }],
+    ["Cochin China", { continent: "Southeast Asia", note: "Southern Vietnam (Cochinchinchina) under the Nguyen dynasty — same Nguyen royal yellow banner as Annam.", noFlag: true, population: 3_500_000 }],
+    // Portugal in 1850 — the green-and-red flag wasn't adopted until 1911;
+    // in 1850 Portugal flew a blue-and-white royal standard. Show UKPBA
+    // (closest available Portuguese historical flag).
+    ["Portugal", { flag: "historical-flags/ukpba.png", continent: "Iberia", note: "Kingdom of Portugal in 1850 — flew a blue-and-white royal standard; the modern green-and-red flag wasn't adopted until 1911.", population: 3_500_000 }],
+    ["Portuguese East Africa", { flag: "historical-flags/ukpba.png", continent: "East Africa", note: "Portuguese Mozambique under the Portuguese royal banner.", population: 2_500_000 }],
+    ["Portuguese Guinea", { flag: "historical-flags/ukpba.png", continent: "West Africa", note: "Portuguese colony in modern Guinea-Bissau.", population: 250_000 }],
+    ["Delagoa Bay", { flag: "historical-flags/ukpba.png", continent: "East Africa", note: "Portuguese trading post in modern Mozambique.", population: 5_000 }],
+    ["Goa", { flag: "historical-flags/ukpba.png", continent: "South Asia", note: "Portuguese India — held until 1961.", population: 300_000 }],
+    // Angola in 1850 = Portuguese colony; use UKPBA as the closest
+    // available Portuguese historical flag (the modern red-green was 1911).
+    ["Angola", { flag: "historical-flags/ukpba.png", continent: "Central Africa", note: "Portuguese Angola — flew the Portuguese royal banner (the modern red-and-green wasn't adopted until 1911).", population: 2_000_000 }],
+    // Afghanistan in 1850 = Barakzai emirate, no standardised flag.
+    ["Afghanistan", { continent: "Central Asia", note: "Barakzai emirate of Afghanistan — no standardised national flag.", noFlag: true, population: 4_500_000 }],
+    // Cambodia in 1850 = Khmer kingdom under French pressure, no flag.
+    ["Cambodia", { continent: "Southeast Asia", note: "Khmer kingdom — no standardised national flag before the French protectorate (1863).", noFlag: true, population: 1_000_000 }],
+    // Hong Kong in 1850 = British Crown Colony (since 1842). Union Jack flew.
+    ["Hong Kong", { modernName: "United Kingdom", continent: "East Asia", note: "British Crown Colony of Hong Kong — ceded by Qing China in 1842. The Union Jack flew.", population: 25_000 }],
+    // Sokoto Caliphate in 1850 — major Islamic caliphate in West Africa.
+    ["Sokoto Caliphate", { continent: "West Africa", note: "Sokoto Caliphate (Fulani Empire) — founded 1804 by Usman dan Fodio; the largest state in 19th-century sub-Saharan Africa. No standardised flag survives.", noFlag: true, population: 10_000_000 }],
+    // Philippines in 1850 = Spanish colony.
+    ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the red-yellow-red Crown of Castile flag flew until the 1898 revolution.", population: 4_000_000 }],
+    // Manchu Empire in 1850 = Qing dynasty; use the yellow dragon banner.
+    ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing dynasty China — the yellow dragon banner was the national flag. In 1850 the Taiping Rebellion was beginning to tear the empire apart.", population: 430_000_000 }],
   ])],
 
   // === 1914 (eve of WWI) overrides ==========================================
@@ -806,6 +982,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    // Manchu Empire in 1914 = Republic of China (ROC). The Qing dynasty was
+    // overthrown in January 1912 and the ROC was proclaimed; by 1914 the
+    // dataset still labels the territory "Manchu Empire" but the ROC flag
+    // (blue-sky/white-sun on red) was already the national flag.
+    ["Manchu Empire", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Republic of China (ROC) — the Qing dynasty was overthrown in January 1912 and the five-colour flag (later the ROC's current flag) was adopted. The dataset keeps the 'Manchu Empire' label but by 1914 the ROC governed the territory.", population: 430_000_000 }],
     // Egypt 1914 — nominally Ottoman until Dec 1914, then British
     // protectorate as the Sultanate of Egypt. Both periods flew the
     // red+white-crescent+3-stars Khedive flag.
@@ -875,6 +1056,15 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Algeria", { continent: "North Africa", note: "Still legally French — three Algerian départements of metropolitan France. The independence war wouldn't start until 1954.", modernName: "France", population: 8_500_000 }],
     ["Tunisia", { continent: "North Africa", note: "French protectorate (1881–1956). The French tricolour flew alongside the bey's flag.", modernName: "France", population: 3_200_000 }],
     ["Morocco", { continent: "North Africa", note: "French and Spanish protectorate (1912–1956). The French tricolour was the dominant flag.", modernName: "France", population: 10_000_000 }],
+    // Sri Lanka in 1945 = Dominion of Ceylon (independence not until 1948).
+    // The dataset labels it "Sri Lanka" anachronistically; show the Ceylon
+    // dominion flag rather than the modern Sri Lanka flag.
+    ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "In 1945 the island was still the British Crown Colony of Ceylon (independence came in 1948). The Dominion of Ceylon's lion flag was adopted in 1948.", population: 6_500_000 }],
+    // Taiwan in 1945 = surrendered to the Republic of China (KMT) after
+    // Japan's defeat. Use the ROC flag.
+    ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan (Formosa) reverted to Republic of China (ROC) control in October 1945 after Japan's surrender — the ROC's blue-sky/white-sun flag flew.", population: 6_000_000 }],
+    // French Indochina in 1945: Annam, Tonkin still referenced as French;
+    // Cochin China alias already routes to France. No extra overrides needed.
   ])],
 
   // === 1960 (Cold War snapshot) overrides ==================================
@@ -905,6 +1095,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // field with red+green stripes + white crescent and star. The modern
     // flag (1977-2011 green, 2011 reverted to Idris). The modern Libyan
     // flag IS visually equivalent to the Idris flag. OK to use modern.
+    // Vietnam in 1960 was split into North and South. The dataset labels it
+    // "Vietnam" — the modern flag (red with yellow star) represents the
+    // victorious North / reunified Vietnam (1976). Use modernName for
+    // North Vietnam since the flag is essentially the same from 1955.
+    ["Vietnam", { modernName: "Vietnam", continent: "Southeast Asia", note: "Vietnam in 1960 was divided: the Democratic Republic of Vietnam (North, communist) and the Republic of Vietnam (South, US-backed). The modern red-star flag represents the North/reunified Vietnam.", population: 30_000_000 }],
+    // Sri Lanka in 1960 = Dominion of Ceylon. Use the Ceylon flag.
+    ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was the Dominion of Ceylon in 1960 (it became the Republic of Sri Lanka only in 1972). The Dominion's lion flag flew from 1948 to 1972.", population: 9_500_000 }],
   ])],
 ]);
 
