@@ -495,9 +495,11 @@ private struct EraSliderPanelView: View {
 
 // MARK: - Preview
 
-#Preview {
-    NavigationStack {
-        LearnView(path: .constant(NavigationPath()))
-            .environmentObject(AppViewModel())
+struct LearnView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            LearnView(path: .constant(NavigationPath()))
+                .environmentObject(AppViewModel())
+        }
     }
 }

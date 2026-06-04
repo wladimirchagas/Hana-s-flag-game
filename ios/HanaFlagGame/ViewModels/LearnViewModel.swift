@@ -58,7 +58,7 @@ final class LearnViewModel: ObservableObject {
     }
 }
 
-struct HistoricalPolity: Identifiable {
+struct HistoricalPolity: Identifiable, Equatable {
     let id: String
     let name: String
     var note: String?
