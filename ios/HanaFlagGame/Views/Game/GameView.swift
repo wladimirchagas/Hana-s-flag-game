@@ -16,6 +16,7 @@ struct GameView: View {
     @State private var scoreBoardExpanded = false
     @State private var showBurst = false
     @State private var burstWasCorrect = false
+    @State private var progressShapes: [CountryShape] = []
 
     init(config: GameConfig, path: Binding<NavigationPath>) {
         self.config = config
@@ -49,12 +50,23 @@ struct GameView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
 
                 // Score board at bottom
-                ScoreBoardView(
-                    score: gameVM.score,
-                    correctCount: gameVM.correctCount,
-                    wrongCount: gameVM.wrongCount,
-                    continentBreakdown: gameVM.continentBreakdown
-                )
+                VStack(spacing: 6) {
+                    if !progressShapes.isEmpty && (!gameVM.answeredCorrect.isEmpty || !gameVM.answeredWrong.isEmpty) {
+                        GameProgressMapView(
+                            answeredCorrect: gameVM.answeredCorrect,
+                            answeredWrong: gameVM.answeredWrong,
+                            shapes: progressShapes,
+                            allCountries: CountryService.shared.countries
+                        )
+                        .padding(.horizontal, 16)
+                    }
+                    ScoreBoardView(
+                        score: gameVM.score,
+                        correctCount: gameVM.correctCount,
+                        wrongCount: gameVM.wrongCount,
+                        continentBreakdown: gameVM.continentBreakdown
+                    )
+                }
                 .padding(.bottom, 8)
             }
         }
@@ -67,6 +79,12 @@ struct GameView: View {
         .navigationBarHidden(true)
         .onAppear {
             gameVM.load()
+            if progressShapes.isEmpty {
+                Task.detached(priority: .background) {
+                    let loaded = TopoJSONDecoder.loadCountries()
+                    await MainActor.run { self.progressShapes = loaded }
+                }
+            }
         }
         .onChange(of: gameVM.phase) { phase in
             if case .revealed(let wasCorrect) = phase {
