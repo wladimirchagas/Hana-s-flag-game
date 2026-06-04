@@ -4,8 +4,8 @@ Native SwiftUI app (iPhone + iPad) built from the existing web app. Full feature
 
 ## Requirements
 
-- macOS 14 (Sonoma) or later
-- Xcode 15.2 or later
+- macOS 13.5 (Ventura) or later — **Xcode 15.2 is the last version that runs on Ventura; Xcode 15.3+ requires macOS 14 Sonoma**
+- **Xcode 15.2** (download from [developer.apple.com/download/all](https://developer.apple.com/download/all/) if not already installed)
 - iOS 16.0+ deployment target (already set)
 - Apple Developer account (free account works for personal device; paid account needed for TestFlight)
 - Firebase project (same one as the web app)
