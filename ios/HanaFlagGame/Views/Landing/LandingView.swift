@@ -96,15 +96,8 @@ struct LandingView: View {
         .navigationBarHidden(true)
         // ── Sheets ────────────────────────────────────────────────────────
         .sheet(isPresented: $showCountryPicker) {
-            CountryPickerView { _ in
-                showCountryPicker = false
-                if appVM.selectedCountryCodes.count > 0 {
-                    let config = GameConfig(
-                        mode: .hana,
-                        selectedCodes: appVM.selectedCountryCodes
-                    )
-                    path.append(GameRoute(config: config))
-                }
+            CountryPickerView { codes in
+                appVM.selectedCountryCodes = codes
             }
             .environmentObject(appVM)
         }
@@ -133,7 +126,7 @@ struct LandingView: View {
     // MARK: - Title section
 
     private var titleSection: some View {
-        HStack(alignment: .center, spacing: 0) {
+        HStack(alignment: .top, spacing: 0) {
             // Letter-by-letter coloured title
             VStack(alignment: .leading, spacing: 0) {
                 coloredTitle("Guess the")
@@ -142,27 +135,16 @@ struct LandingView: View {
 
             Spacer()
 
-            // Mascot + decorative stars
-            ZStack {
-                Text("✦")
-                    .font(.system(size: 14))
-                    .foregroundColor(.mustard)
-                    .offset(x: -18, y: -24)
-
-                Text("✦")
-                    .font(.system(size: 9))
-                    .foregroundColor(.coral)
-                    .offset(x: 20, y: -32)
-
-                Text("✦")
-                    .font(.system(size: 11))
-                    .foregroundColor(.sky)
-                    .offset(x: 30, y: 10)
-
+            VStack(alignment: .trailing, spacing: 10) {
+                // Theme + sound toggles
+                HStack(spacing: 0) {
+                    ThemeToggleView()
+                    MuteToggleView()
+                }
+                // Mascot flag
                 Text("🏳️")
-                    .font(.system(size: 52))
+                    .font(.system(size: 48))
             }
-            .frame(width: 80, height: 80)
         }
         .padding(.horizontal, 24)
     }

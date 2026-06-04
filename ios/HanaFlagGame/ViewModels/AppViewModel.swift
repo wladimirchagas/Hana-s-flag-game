@@ -47,6 +47,7 @@ final class AppViewModel: ObservableObject {
             (UserDefaults.standard.array(forKey: selectedKey) as? [String]) ?? []
         }
         set {
+            objectWillChange.send()
             UserDefaults.standard.set(newValue, forKey: selectedKey)
         }
     }

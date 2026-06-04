@@ -198,31 +198,33 @@ struct GameView: View {
     // MARK: - Guessing phase
 
     private var guessingView: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 16) {
-                if let country = gameVM.current {
-                    FlagCardView(country: country)
+        GeometryReader { geo in
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 16) {
+                    Spacer(minLength: 0)
+                    if let country = gameVM.current {
+                        FlagCardView(country: country)
+                            .padding(.horizontal, 20)
+
+                        AnswerOptionsView(
+                            alternatives: gameVM.questionAlternatives,
+                            selected: $gameVM.selected,
+                            phase: gameVM.phase,
+                            currentCountry: country
+                        )
                         .padding(.horizontal, 20)
-                        .padding(.top, 8)
 
-                    AnswerOptionsView(
-                        alternatives: gameVM.questionAlternatives,
-                        selected: $gameVM.selected,
-                        phase: gameVM.phase,
-                        currentCountry: country
-                    )
-                    .padding(.horizontal, 20)
-
-                    // Confirm button
-                    Button("Confirm") {
-                        gameVM.confirm()
+                        Button("Confirm") {
+                            gameVM.confirm()
+                        }
+                        .pillButton(color: .lime, scheme: scheme)
+                        .opacity(gameVM.selected == nil ? 0.45 : 1.0)
+                        .disabled(gameVM.selected == nil)
+                        .padding(.top, 4)
                     }
-                    .pillButton(color: .lime, scheme: scheme)
-                    .opacity(gameVM.selected == nil ? 0.45 : 1.0)
-                    .disabled(gameVM.selected == nil)
-                    .padding(.top, 4)
-                    .padding(.bottom, 24)
+                    Spacer(minLength: 24)
                 }
+                .frame(minHeight: geo.size.height)
             }
         }
     }
@@ -230,18 +232,21 @@ struct GameView: View {
     // MARK: - Revealed phase
 
     private func revealedView(wasCorrect: Bool) -> some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 16) {
-                if let country = gameVM.current {
-                    FeedbackView(
-                        wasCorrect: wasCorrect,
-                        country: country,
-                        onNext: { gameVM.next() }
-                    )
-                    .padding(.horizontal, 20)
-                    .padding(.top, 8)
-                    .padding(.bottom, 24)
+        GeometryReader { geo in
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 16) {
+                    Spacer(minLength: 0)
+                    if let country = gameVM.current {
+                        FeedbackView(
+                            wasCorrect: wasCorrect,
+                            country: country,
+                            onNext: { gameVM.next() }
+                        )
+                        .padding(.horizontal, 20)
+                    }
+                    Spacer(minLength: 24)
                 }
+                .frame(minHeight: geo.size.height)
             }
         }
     }
