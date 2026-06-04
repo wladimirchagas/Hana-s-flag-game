@@ -17,9 +17,15 @@ type Props = {
   wasCorrect: boolean | null;
   /** Only animate when retry mode is active (Custom Game). */
   active: boolean;
+  /**
+   * When provided and wasCorrect is false, show the correct flag + name
+   * instead of a generic "Try again!" message (Quick Quiz / Flag Master).
+   * Omit or pass null to keep the encouragement message (Hana's Game).
+   */
+  correctCountry?: { name: string; flagSvg: string } | null;
 };
 
-export function AnswerBurst({ nonce, wasCorrect, active }: Props) {
+export function AnswerBurst({ nonce, wasCorrect, active, correctCountry }: Props) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -32,6 +38,30 @@ export function AnswerBurst({ nonce, wasCorrect, active }: Props) {
   }, [nonce, wasCorrect, active]);
 
   if (!active || !visible || wasCorrect === null) return null;
+
+  // Quick Quiz / Flag Master: reveal the correct flag + name on a wrong guess.
+  if (!wasCorrect && correctCountry != null) {
+    return (
+      <div
+        key={nonce}
+        className="burst burst--reveal"
+        role="status"
+        aria-live="polite"
+      >
+        <div className="burst__panel">
+          <div className="burst__reveal-badge">✗ Wrong</div>
+          <p className="burst__reveal-label">The answer was…</p>
+          <img
+            className="burst__reveal-flag"
+            src={correctCountry.flagSvg}
+            alt={`Flag of ${correctCountry.name}`}
+          />
+          <p className="burst__reveal-name">{correctCountry.name}</p>
+        </div>
+        <HeroCutIn variant="boy" side="right" />
+      </div>
+    );
+  }
 
   const variant = wasCorrect ? "right" : "wrong";
   const message = pick(
