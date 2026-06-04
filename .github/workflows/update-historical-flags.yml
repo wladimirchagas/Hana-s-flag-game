@@ -1,0 +1,71 @@
+name: Update Historical Flag Images
+
+# Run manually from GitHub Actions UI, or trigger automatically on schedule.
+# The workflow downloads SVG flags from Wikimedia Commons, converts them to
+# PNG, and commits any changed files back to the branch.
+#
+# This runs in GitHub's cloud environment which has unrestricted internet
+# access — unlike the dev container where Wikimedia is network-blocked.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-download files that already exist"
+        type: boolean
+        default: false
+      only:
+        description: "Comma-separated list of output filenames to update (blank = all)"
+        type: string
+        default: ""
+
+  # Optionally run monthly to pick up any Wikimedia file updates
+  # schedule:
+  #   - cron: "0 4 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  download-flags:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install cairosvg
+          # cairosvg needs libcairo — pre-installed on ubuntu-latest
+
+      - name: Download & convert historical flags
+        run: |
+          ARGS=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+          if [ -n "${{ inputs.only }}" ]; then
+            ARGS="$ARGS --only ${{ inputs.only }}"
+          fi
+          python3 scripts/download_historical_flags.py $ARGS
+
+      - name: Commit updated flags
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/historical-flags/
+          if git diff --staged --quiet; then
+            echo "No flag files changed — nothing to commit."
+          else
+            CHANGED=$(git diff --staged --name-only | wc -l)
+            git commit -m "chore: update historical flag images from Wikimedia Commons ($CHANGED files)"
+            git push
+          fi

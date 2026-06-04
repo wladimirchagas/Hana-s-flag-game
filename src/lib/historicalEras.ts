@@ -727,6 +727,78 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Tanzania, United Republic of", { continent: "East Africa", modernName: "Tanzania" }],
   ["Korea, Democratic People's Republic of", { continent: "East Asia", modernName: "North Korea" }],
   ["Korea, Republic of", { continent: "East Asia", modernName: "South Korea" }],
+
+  // === Medieval European kingdoms (1300–1700) ================================
+  // Added to provide info panels for eras without specific ERA_OVERRIDES.
+  // All flag-less here (medieval heraldry ≠ national flags); ERA_OVERRIDES
+  // for ad1500/ad1700 add flag images where appropriate.
+  ["France", { continent: "Western Europe", note: "Medieval Kingdom of France — Capetian and Valois rulers. Fleur-de-lis heraldry predates the Bourbon white royal banner.", noFlag: true, population: 18_000_000 }],
+  ["Portugal", { continent: "Iberia", note: "Kingdom of Portugal — the Quinas (five blue shields) banner dates from the 12th century but no standard national flag existed in the modern sense.", noFlag: true, population: 1_500_000 }],
+  ["England", { continent: "Northern Europe", note: "Kingdom of England — flew the Cross of St George (white field, red cross) from the medieval era.", noFlag: true, population: 4_000_000 }],
+  ["English territory", { continent: "Northern Europe", note: "English-controlled territory — the Cross of St George was the English national emblem.", noFlag: true, population: 3_500_000 }],
+  ["Castile", { continent: "Iberia", note: "Crown of Castile — the castle banner; would merge with Aragón to form Spain.", noFlag: true, population: 5_000_000 }],
+  ["Castille", { continent: "Iberia", note: "Crown of Castile — the castle banner; would later unite with Aragón to form Spain.", noFlag: true, population: 5_200_000 }],
+  ["Aragón", { continent: "Iberia", note: "Crown of Aragón — a Mediterranean power controlling Sicily and Sardinia in the later Middle Ages.", noFlag: true, population: 3_000_000 }],
+  ["Navarre", { continent: "Iberia", note: "Kingdom of Navarre — small but strategically placed kingdom between France and Spain.", noFlag: true, population: 200_000 }],
+  ["Hungary", { continent: "Central Europe", note: "Kingdom of Hungary — major power in Central Europe; the Apostolic Double Cross banner.", noFlag: true, population: 3_500_000 }],
+  ["Imperial Hungary", { continent: "Central Europe", note: "Habsburg-ruled Hungary — contested between the Habsburgs, local nobles, and the Ottomans.", noFlag: true, population: 3_000_000 }],
+  ["Poland", { continent: "Eastern Europe", note: "Kingdom of Poland — later merged with Lithuania into the Polish-Lithuanian Commonwealth.", noFlag: true, population: 2_500_000 }],
+  ["Lithuania", { continent: "Eastern Europe", note: "Grand Duchy of Lithuania — one of the largest states in 14th-century Europe.", noFlag: true, population: 2_000_000 }],
+  ["Poland-Lithuania", { continent: "Eastern Europe", note: "Polish-Lithuanian Commonwealth — a major European power from 1569 to 1795.", noFlag: true, population: 11_000_000 }],
+  ["Polish–Lithuanian Commonwealth", { continent: "Eastern Europe", note: "Polish-Lithuanian Commonwealth (Rzeczpospolita) — a vast noble republic stretching from the Baltic to the Black Sea.", noFlag: true, population: 11_000_000 }],
+  ["Novgorod", { continent: "Eastern Europe", note: "Novgorod Republic — a wealthy trading republic of north-western Russia; member of the Hanseatic League.", noFlag: true, population: 400_000 }],
+  ["Georgia", { continent: "Western Asia", note: "Kingdom of Georgia — a medieval Christian kingdom at its peak in the 12th–13th centuries before the Mongol invasion.", noFlag: true, population: 2_000_000 }],
+  ["Venice", { continent: "Italy", note: "Most Serene Republic of Venice — a maritime trading empire; the golden Lion of St Mark on red was its emblem.", noFlag: true, population: 800_000 }],
+  ["Scotland", { continent: "Northern Europe", note: "Kingdom of Scotland — the Cross of St Andrew (Saltire), white diagonal cross on blue, is one of Europe's oldest national symbols.", noFlag: true, population: 1_000_000 }],
+  ["Scottland", { continent: "Northern Europe", note: "Kingdom of Scotland (dataset spelling variant) — Saltire, white diagonal cross on blue.", noFlag: true, population: 1_000_000 }],
+  ["Teutonic Knights", { continent: "Central Europe", note: "Teutonic Order state — crusading military-religious order that colonised Prussia and the Baltic.", noFlag: true, population: 700_000 }],
+  ["Kalmar Union", { continent: "Northern Europe", note: "Kalmar Union (1397–1523) — personal union of Denmark, Sweden and Norway under one Scandinavian monarch.", noFlag: true, population: 3_000_000 }],
+  ["Raška", { continent: "SE Europe", note: "Raška (medieval Serbia) — the Nemanjić dynasty's kingdom; ancestor of the Serbian state.", noFlag: true, population: 1_000_000 }],
+  ["Trebizond", { continent: "Eastern Mediterranean", note: "Empire of Trebizond — last surviving remnant of the Byzantine Empire, on the Black Sea coast.", noFlag: true, population: 200_000 }],
+  ["Norway", { continent: "Northern Europe", note: "Kingdom of Norway — the red-field-with-golden-lion banner (before the Dannebrog-influenced modern flag).", noFlag: true, population: 500_000 }],
+  ["Genoa", { continent: "Italy", note: "Republic of Genoa — rival of Venice; the red cross on white (St George Cross) was its banner.", noFlag: true, population: 400_000 }],
+  ["Florence", { continent: "Italy", note: "Republic of Florence — the great centre of the Italian Renaissance.", noFlag: true, population: 600_000 }],
+  ["Milan", { continent: "Italy", note: "Duchy of Milan — wealthy northern Italian state; Visconti and later Sforza rulers.", noFlag: true, population: 800_000 }],
+  ["Naples", { continent: "Italy", note: "Kingdom of Naples — southern Italy under Angevin and later Aragonese rule.", noFlag: true, population: 2_000_000 }],
+  ["Sardinia", { continent: "Italy", note: "Kingdom of Sardinia (medieval) — contested between Aragon and Genoa.", noFlag: true, population: 200_000 }],
+  ["Cyprus", { continent: "Mediterranean", note: "Kingdom of Cyprus — Lusignan dynasty crusader kingdom; later Venetian.", noFlag: true, population: 150_000 }],
+  ["Corsica", { continent: "Mediterranean", note: "Medieval Corsica — nominally Genoese after 1346.", noFlag: true, population: 50_000 }],
+  ["Granada", { continent: "Iberia", note: "Emirate of Granada — last Muslim kingdom of Iberia; fell to Castile and Aragón in 1492.", noFlag: true, population: 500_000 }],
+  ["Morocco", { continent: "North Africa", note: "Medieval Morocco — Marinid/Wattasid sultantes. No standardised national flag in this era.", noFlag: true, population: 3_000_000 }],
+  ["Ethiopia", { continent: "East Africa", note: "Ethiopian highlands in this era — Solomon dynasty rule of the Zagwe successors. No national flag.", noFlag: true, population: 3_000_000 }],
+  ["Benin", { continent: "West Africa", note: "Kingdom of Benin — the Benin Empire of modern southern Nigeria, famous for its bronze plaques.", noFlag: true, population: 1_000_000 }],
+  ["Oyo", { continent: "West Africa", note: "Oyo Empire — Yoruba empire of modern south-western Nigeria; one of the largest West African states in the 17th–18th centuries.", noFlag: true, population: 2_000_000 }],
+  // === Medieval/early-modern Asian kingdoms (1300–1700) ======================
+  ["Shogun Japan (Kamakura)", { continent: "East Asia", note: "Kamakura Shogunate Japan (1185–1333) — samurai government that coexisted with the emperor.", modernName: "Japan", population: 8_000_000 }],
+  ["Sukhothai", { continent: "Southeast Asia", note: "Sukhothai Kingdom — the first Thai kingdom; developed the Thai script; preceded the Ayutthaya Kingdom.", noFlag: true, population: 500_000 }],
+  ["Ayutthaya", { continent: "Southeast Asia", note: "Ayutthaya Kingdom (1351–1767) — the predecessor to the Bangkok-based Rattanakosin Kingdom; a major trading state.", noFlag: true, population: 3_000_000 }],
+  ["Sultanate of Delhi", { continent: "South Asia", note: "Delhi Sultanate — the first major Islamic sultanate of northern India; five successive dynasties.", noFlag: true, population: 20_000_000 }],
+  ["Vijayanagara", { continent: "South Asia", note: "Vijayanagara Empire — the last great Hindu empire of South India; centre of art, architecture and learning.", noFlag: true, population: 25_000_000 }],
+  ["Songhai", { continent: "West Africa", note: "Songhai Empire — the largest empire in West African history at its peak (15th–16th c.); controlled Timbuktu and the trans-Saharan gold trade.", noFlag: true, population: 4_000_000 }],
+  ["Tibet", { continent: "Central Asia", note: "Phagmodrupa dynasty's Tibet — nominally subject to the Yuan and Ming Chinese empires but practically independent.", noFlag: true, population: 2_000_000 }],
+  ["Malacca", { continent: "Southeast Asia", note: "Sultanate of Malacca — dominant maritime trading state of the Malay world; fell to the Portuguese in 1511.", noFlag: true, population: 300_000 }],
+  ["Grand Duchy of Moscow", { continent: "Eastern Europe", note: "Grand Duchy of Moscow — the rising principality that would unify Russia and become the Tsardom of Muscovy.", noFlag: true, population: 3_000_000 }],
+  ["Tsardom of Muscovy", { continent: "Eastern Europe", note: "Tsardom of Muscovy — Ivan the Terrible's centralised Russian state (1547–1721); precursor to the Russian Empire.", noFlag: true, population: 6_000_000 }],
+  ["Ming Chinese Empire", { continent: "East Asia", note: "Ming dynasty China (dataset label 'Ming Chinese Empire') — the Great Wall, the Forbidden City, and Zheng He's treasure voyages.", population: 160_000_000, modernName: "China", noFlag: true }],
+  ["Đại Việt", { continent: "Southeast Asia", note: "Đại Việt — medieval Vietnamese kingdom, centred on the Red River delta; long period of independence from China.", noFlag: true, population: 5_000_000 }],
+  ["Orissa", { continent: "South Asia", note: "Gajapati Kingdom of Orissa — a major Hindu dynasty of eastern India (14th–16th c.).", noFlag: true, population: 3_000_000 }],
+  ["Hafsid Caliphate", { continent: "North Africa", note: "Hafsid Caliphate — Arab Berber rulers of Ifriqiya (modern Tunisia and Libya); nominal successors of the Abbasids.", noFlag: true, population: 2_000_000 }],
+  ["Mamluke Sultanate", { continent: "Middle East", note: "Mamluk Sultanate of Egypt and Syria — slave-soldier dynasty that defeated the Mongols at Ain Jalut (1260).", noFlag: true, population: 5_000_000 }],
+  ["Seljuk Caliphate", { continent: "Western Asia", note: "Rum Sultanate (Seljuks of Anatolia) — the Turkic successor in Anatolia after the main Seljuk empire fragmented.", noFlag: true, population: 2_500_000 }],
+  ["Timurid Emirates", { continent: "Central Asia", note: "Timurid Empire — Timur (Tamerlane)'s successors ruled Persia and Central Asia; great patrons of the arts.", noFlag: true, population: 8_000_000 }],
+  ["White Horde", { continent: "Eurasian Steppe", note: "White Horde — eastern division of the Golden Horde; the Ural and Caspian steppes.", noFlag: true, population: 1_000_000 }],
+  ["Crimean Khanate", { continent: "Eastern Europe", note: "Crimean Khanate — Mongol successor state; a major slavers and raiders of the Black Sea steppe until 1783.", noFlag: true, population: 500_000 }],
+  ["Khanate of Sibir", { continent: "Central Asia", note: "Khanate of Siberia — Mongol successor state in western Siberia; conquered by Yermak for Russia in the 1580s.", noFlag: true, population: 300_000 }],
+  ["Wattasid Caliphate", { continent: "North Africa", note: "Wattasid Sultanate of Morocco (1472–1554) — Berber dynasty; contemporaries of the Ottoman expansion.", noFlag: true, population: 1_500_000 }],
+  ["Zayyanid Caliphate", { continent: "North Africa", note: "Zayyanid Kingdom of Tlemcen (1235–1556) — Berber dynasty of western Algeria; rivals of the Hafsids and Marinids.", noFlag: true, population: 700_000 }],
+  // === 1700-era specific entries =============================================
+  ["Dutch Republic", { continent: "Western Europe", note: "Dutch Republic (Republic of the Seven United Netherlands) — a global maritime and trading empire; the Dutch tricolour was introduced by the Prince of Orange in the 1570s.", modernName: "Netherlands", population: 2_000_000 }],
+  ["England and Ireland", { continent: "Northern Europe", note: "England and Ireland under a personal union (pre-1707). Did not yet fly the Union Jack — the cross of St George (England) + cross of St Patrick (Ireland) were used separately.", noFlag: true, population: 7_500_000 }],
+  ["New France", { continent: "North America", note: "New France — French colonial territory in Canada; the Bourbon royal banner and later the French tricolour flew over it.", noFlag: true, population: 20_000 }],
+  ["New Amsterdam", { continent: "North America", note: "New Amsterdam (the Dutch colony on Manhattan Island) — became British New York in 1664. Dutch tricolour in the earlier period.", modernName: "Netherlands", population: 9_000 }],
+  ["Portuguese Brazil", { continent: "South America", note: "Colonial Brazil — Portuguese Crown colony before 1815; royal Portuguese banner flew (not the modern red-green flag).", noFlag: true, population: 2_000_000 }],
+  ["Vice Royalty of Peru", { flag: "historical-flags/spain-1785.png", continent: "South America", note: "Spanish Viceroyalty of Peru — 1700 spelling variant in the dataset. The Crown of Castile's red-yellow-red flag flew.", population: 2_000_000 }],
+  ["Middag Kingdom", { continent: "East Asia", note: "Middag Kingdom — one of several Taiwanese aboriginal chiefdoms in the 17th-century central plains.", noFlag: true, population: 50_000 }],
 ]);
 
 /**
@@ -843,6 +915,30 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   // Yemen — modern flag adopted 1990 (post-unification); pre-1990 was the
   // YAR + PDRY split. For 1300/1500/1815/1945 the modern flag is wrong.
   // Drop alias — leave flag-less; 1960 YAR/PDRY handled separately if needed.
+
+  // 1700-era colonial territories → route to the colonial power that actually
+  // flew its national flag over these territories.
+  ["Cuba (Spain)", "Spain"],
+  ["Hispaniola (Spain)", "Spain"],
+  ["Florida", "Spain"],       // Spanish Florida (1700)
+  ["Virginia", "United Kingdom"],
+  ["South Carolina", "United Kingdom"],
+  ["Massachusetts Bay", "United Kingdom"],
+  ["Dutch East Indies", "Netherlands"],
+  ["Surinam", "Netherlands"],
+  ["Essequibo", "Netherlands"],
+  ["Cayenne", "France"],
+  ["Portuguese East Africa", "Portugal"],
+  ["Portuguese Guinea", "Portugal"],
+  // Delagoa Bay was a Portuguese trading post — flag: UKPBA entry in 1815 registry
+  // handles this already for 1815+. For 1700 fall through to noFlag.
+  // "Dutch Formosa" and "Dutch Brazil" were historical (ended before 1700)
+  // so they are dataset anachronisms; route to Netherlands as closest.
+  ["Dutch Formosa", "Netherlands"],
+  ["Dutch Brazil", "Netherlands"],
+  // Lan Na — northern Thai kingdom, essentially absorbed by Ayutthaya.
+  // No standardised flag; leave flag-less via missing-entry behaviour.
+  // Laotian states — multiple Lao principalities in 1700; no unified flag.
 ]);
 
 /**
@@ -857,16 +953,136 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
  * the override; the registry fallback still runs for every other era.
  */
 const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = new Map([
+  // === 1300 (High/Late Medieval) overrides ==================================
+  // The 1300 era uses the same polity NAMEs as the global POLITY_REGISTRY but
+  // some need era-specific notes (the registry's generic entry may describe the
+  // wrong century). In particular, we suppress any flag fallback for states
+  // whose modern-sounding names exist in MODERN_NAME_ALIASES but whose 1300
+  // situation was very different (e.g. Morocco was Marinid, not modern).
+  ["ad1300", new Map<string, PolityInfo>([
+    // France (Capetian/Valois): the fleur-de-lis banner ≠ Bourbon white flag
+    ["France", { continent: "Western Europe", note: "Kingdom of France — Capetian dynasty in 1300; the Valois would follow in 1328. The fleur-de-lis azure banner predates the Bourbon white standard.", noFlag: true, population: 14_000_000 }],
+    // Portugal: medieval Quinas banner — no modern-style flag
+    ["Portugal", { continent: "Iberia", note: "Kingdom of Portugal — the Quinas (five blue shields) banner was used, but no standardised flag in the modern sense.", noFlag: true, population: 1_200_000 }],
+    // English territory (Plantagenet England in 1300)
+    ["English territory", { continent: "Northern Europe", note: "Plantagenet England — the Cross of St George (white field, red cross) was the English emblem.", noFlag: true, population: 5_000_000 }],
+    // Morocco (Marinid Sultanate in 1300): not the modern flag
+    ["Morocco", { continent: "North Africa", note: "Marinid Sultanate of Morocco — the Marinids had their own banner; the modern red flag with green pentagram didn't exist.", noFlag: true, population: 3_000_000 }],
+    // Yemen (Rasulid Sultanate in 1300)
+    ["Yemen", { continent: "Arabia", note: "Rasulid Sultanate — based in Aden and Zabid; the modern Yemeni flag is 20th-century.", noFlag: true, population: 1_500_000 }],
+    // Ethiopia (Solomonic dynasty in 1300)
+    ["Ethiopia", { continent: "East Africa", note: "Solomonic dynasty of Ethiopia (restored 1270) — the Lion of Judah emblem pre-dates the modern flag by centuries.", noFlag: true, population: 3_000_000 }],
+    // Japan (Kamakura Shogunate → shortly after, the Muromachi)
+    ["Shogun Japan (Kamakura)", { continent: "East Asia", note: "Kamakura Shogunate Japan — samurai government alongside the emperor. The Hinomaru dates to medieval Japan.", modernName: "Japan", population: 7_000_000 }],
+    // Thailand (Sukhothai Kingdom in 1300)
+    ["Sukhothai", { continent: "Southeast Asia", note: "Sukhothai Kingdom — earliest Thai state; developed the Thai script.", noFlag: true, population: 500_000 }],
+    // Khmer (Angkor period ending)
+    ["Khmer Empire", { continent: "Southeast Asia", note: "Khmer Empire at the end of the classical Angkor period — the great temple city of Angkor Wat was built here.", noFlag: true, population: 1_000_000 }],
+    // Delhi Sultanate (Khalji dynasty in 1300)
+    ["Sultanate of Delhi", { continent: "South Asia", note: "Khalji dynasty Delhi Sultanate — at its 1300 peak it briefly reached southern India. No national flag.", noFlag: true, population: 15_000_000 }],
+    // Trebizond in 1300 — Byzantine splinter state
+    ["Trebizond", { continent: "Eastern Mediterranean", note: "Empire of Trebizond — Komnenian dynasty clinging to the Black Sea coast after the Latin sack of Constantinople.", noFlag: true, population: 150_000 }],
+    // Georgia (weakened after Mongol invasions)
+    ["Georgia", { continent: "Western Asia", note: "Kingdom of Georgia — weakened by repeated Mongol invasions; its golden age (12th–13th c.) was over.", noFlag: true, population: 1_500_000 }],
+  ])],
+
   ["ad1500", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Kingdom of France under the Valois — the white Bourbon-style royal banner with fleur-de-lis was used in this period.", population: 16_000_000 }],
     // Spain flew the Cross of Burgundy (a red ragged saltire on white)
     // from the Habsburg union (1506) until 1701 — Bourbon ascension
     // changed the design. The familiar red-yellow-red flag is from 1785.
     ["Spain", { flag: "historical-flags/spain-burgundy.png", continent: "Iberia", note: "Habsburg Spain under the Cross of Burgundy — the red-yellow-red flag we know today wasn't adopted until 1785.", population: 7_500_000 }],
+    // England 1500 = Plantagenet/Tudor monarchy. Cross of St George.
+    // No image yet — use noFlag until england-stgeorge.png is downloaded.
+    ["England", { continent: "Northern Europe", note: "Tudor England — Henry VII/VIII's era. The Cross of St George (white with red cross) was England's national emblem; the Union Jack wasn't designed until 1606.", noFlag: true, population: 2_500_000 }],
+    // Portugal 1500 = Age of Discoveries. Quinas banner.
+    ["Portugal", { continent: "Iberia", note: "Age-of-Discoveries Portugal — Vasco da Gama reached India (1498), Cabral claimed Brazil (1500). Flew the Quinas banner (white with blue shields).", noFlag: true, population: 1_400_000 }],
+    // Scottland (dataset typo for Scotland)
+    ["Scottland", { continent: "Northern Europe", note: "Kingdom of Scotland — the Saltire (white diagonal cross on blue) is one of the world's oldest national symbols. The Union with England wasn't until 1707.", noFlag: true, population: 700_000 }],
+    // Ming Chinese Empire (different dataset name from "Ming")
+    ["Ming Chinese Empire", { continent: "East Asia", note: "Ming dynasty China at the height of the Yongle era — the Great Wall expanded, Zheng He's treasure fleets, the Forbidden City built.", noFlag: true, population: 100_000_000 }],
+    // Vijayanagara — the last great Hindu empire of South India
+    ["Vijayanagara", { continent: "South Asia", note: "Vijayanagara Empire — at its 1500s peak the largest state in the subcontinent south of the Deccan. No standardised national flag.", noFlag: true, population: 25_000_000 }],
+    // Songhai — largest empire in West African history
+    ["Songhai", { continent: "West Africa", note: "Songhai Empire under Askia Muhammad — the largest empire in West African history; Timbuktu was its intellectual capital.", noFlag: true, population: 4_000_000 }],
+    // Ayutthaya 1500 = mature trading kingdom
+    ["Ayutthaya", { continent: "Southeast Asia", note: "Ayutthaya Kingdom — the dominant state of mainland Southeast Asia, trading with China, India, and Europe.", noFlag: true, population: 3_000_000 }],
+    // Japan 1500 = Sengoku (Warring States)
+    ["Japan", { modernName: "Japan", continent: "East Asia", note: "Sengoku (Warring States) Japan — a century of civil war between rival warlords (daimyo). The Hinomaru pre-dates this era.", population: 15_000_000 }],
+    // Korea 1500 = Joseon dynasty
+    ["Korea", { continent: "East Asia", note: "Joseon dynasty Korea — classical period; Hangul script and the great King Sejong. No national flag until the Taegukgi in 1882.", noFlag: true, population: 8_000_000 }],
+    // Tibet 1500 = Phagmodrupa/Rinpungpa
+    ["Tibet", { continent: "Central Asia", note: "Tibet in 1500 was under the Rinpungpa Tibetan warlords; nominally under the Ming but practically independent.", noFlag: true, population: 2_000_000 }],
+    // Malacca 1500 = about to fall to Portugal (fell 1511)
+    ["Malacca", { continent: "Southeast Asia", note: "Sultanate of Malacca — the greatest Malay maritime power; conquered by Portugal in 1511, just after this snapshot.", noFlag: true, population: 300_000 }],
+    // Grand Duchy of Moscow 1500 = Ivan III expanding
+    ["Grand Duchy of Moscow", { continent: "Eastern Europe", note: "Grand Duchy of Moscow under Ivan III — the 'Gatherer of Russian Lands'; just conquered Novgorod and expelled the Tatars.", noFlag: true, population: 5_000_000 }],
+    // Teutonic Knights (still independent in 1500, secularised 1525)
+    ["Teutonic Knights", { continent: "Central Europe", note: "Teutonic Order state — still controlling Prussia and Livonia in 1500; the Grand Master would secularise it as the Duchy of Prussia in 1525.", noFlag: true, population: 700_000 }],
+    // Poland-Lithuania (Commonwealth created 1569)
+    ["Poland-Lithuania", { continent: "Eastern Europe", note: "Jagiellonian Poland-Lithuania (precursor to the 1569 Commonwealth) — a major European power from the Baltic to the Black Sea.", noFlag: true, population: 7_500_000 }],
+    // Morocco 1500 = Wattasid (Marinid successor)
+    ["Morocco", { continent: "North Africa", note: "Wattasid Sultanate of Morocco in 1500 — a weakened Marinid successor facing the rise of the Saadian dynasty and Portuguese coastal raids.", noFlag: true, population: 2_000_000 }],
+    // Ethiopia 1500 = Solomonic dynasty
+    ["Ethiopia", { continent: "East Africa", note: "Solomonic-dynasty Ethiopia in 1500 — prospering until the devastating Adal jihad (1527–1543).", noFlag: true, population: 4_000_000 }],
+    // Benin 1500 = golden age
+    ["Benin", { continent: "West Africa", note: "Kingdom of Benin at its golden age — the famous bronze plaques, sophisticated court culture, and expanding trade with the Portuguese.", noFlag: true, population: 1_500_000 }],
+    // Congo 1500 = Kongo Kingdom
+    ["Congo", { continent: "Central Africa", note: "Kingdom of Kongo — the dominant Central African kingdom; just beginning to trade with and convert to Christianity via Portugal.", noFlag: true, population: 3_000_000 }],
+    // Oyo 1500 = early Oyo kingdom
+    ["Oyo", { continent: "West Africa", note: "Early Oyo Kingdom — the Yoruba empire was still in its formative stage in 1500, before its great expansion in the 17th–18th centuries.", noFlag: true, population: 500_000 }],
+    // Venice 1500 = still the major Mediterranean trading power
+    ["Venice", { continent: "Italy", note: "Most Serene Republic of Venice — still a major Mediterranean power in 1500, though the Portuguese rerouting of the spice trade was beginning to undermine it.", noFlag: true, population: 800_000 }],
+    // Kalmar Union (dissolved 1523)
+    ["Kalmar Union", { continent: "Northern Europe", note: "Kalmar Union — the Scandinavian personal union was unravelling; Sweden would break free under Gustav Vasa in 1521.", noFlag: true, population: 2_000_000 }],
+    // Cambodia (Khmer, declining in 1500)
+    ["Cambodia", { continent: "Southeast Asia", note: "Post-Angkor Khmer Kingdom — the empire had declined and abandoned Angkor in 1431; Phnom Penh became the new capital.", noFlag: true, population: 800_000 }],
+    // Novgorod — annexed by Moscow in 1478, no longer independent
+    ["Novgorod-Seversky", { continent: "Eastern Europe", note: "Principality of Novgorod-Seversky — a small Russian principality that resisted Muscovite unification.", noFlag: true, population: 100_000 }],
   ])],
   ["ad1700", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon France under Louis XIV. White royal banner with fleur-de-lis — the tricolour wasn't adopted until 1790.", population: 21_500_000 }],
     ["Spain", { flag: "historical-flags/spain-burgundy.png", continent: "Iberia", note: "Spain at the start of the War of Spanish Succession — still flying the Cross of Burgundy as it had since 1506. The Bourbon white royal flag would come in 1701, the modern red-yellow-red in 1785.", population: 8_000_000 }],
+    // Dutch Republic 1700 = still independent; the familiar Dutch tricolour
+    ["Dutch Republic", { modernName: "Netherlands", continent: "Western Europe", note: "Dutch Republic — still at the height of its global trading empire; the VOC dominated Asian trade. The Prince's Flag (tricolour) was in use.", population: 2_000_000 }],
+    // Polish-Lithuanian Commonwealth 1700 = in decline
+    ["Polish–Lithuanian Commonwealth", { continent: "Eastern Europe", note: "Polish-Lithuanian Commonwealth — entering its period of decline; the 'liberum veto' paralysed its parliament. A unique noble republic.", noFlag: true, population: 11_000_000 }],
+    // Tsardom of Muscovy → just before Peter the Great's reforms; the Russian tricolour was introduced ~1699
+    ["Tsardom of Muscovy", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe", note: "Tsardom of Muscovy under Peter the Great — on the cusp of becoming the Russian Empire (formally 1721). Peter adopted the Russian tricolour around 1699.", population: 14_000_000 }],
+    // Austria 1700 = Habsburg Monarchy (not yet 'Austrian Empire', created 1804)
+    ["Austrian Empire", { flag: "historical-flags/austrian-empire.png", continent: "Central Europe", note: "Habsburg Monarchy — in 1700 not yet officially called the 'Austrian Empire' (created 1804), but using the same Habsburg black-and-gold colours. Fighting the War of Spanish Succession.", population: 8_000_000 }],
+    // England and Ireland (pre-Union Jack, 1707 union hadn't happened)
+    ["England and Ireland", { continent: "Northern Europe", note: "Kingdom of England and Kingdom of Ireland — a personal union before the Act of Union (1707) that created Great Britain. The Cross of St George was England's flag.", noFlag: true, population: 6_500_000 }],
+    // Japan 1700 = Tokugawa Shogunate (covered by "Tokugawa Shogunate" entry but dataset says "Japan")
+    ["Japan", { modernName: "Japan", continent: "East Asia", note: "Tokugawa Shogunate Japan — the Edo period (1603–1868); peace and isolation policy (sakoku). The Hinomaru dates to the medieval era.", population: 28_000_000 }],
+    // Korea 1700 = Joseon dynasty
+    ["Korea", { continent: "East Asia", note: "Joseon dynasty Korea in 1700 — a sophisticated Confucian kingdom; no national flag until the Taegukgi in 1882.", noFlag: true, population: 7_000_000 }],
+    // Morocco 1700 = Alaouite dynasty
+    ["Morocco", { continent: "North Africa", note: "Alaouite Sultanate of Morocco — the same dynasty that rules today, established in 1631. Flew a plain red flag; the green pentagram was added in 1915.", noFlag: true, population: 2_500_000 }],
+    // Portuguese Brazil 1700 = major colony
+    ["Portuguese Brazil", { flag: "historical-flags/ukpba.png", continent: "South America", note: "Colonial Brazil — Portuguese Crown colony. The UKPBA flag is an approximation (1815 era); for 1700 Portugal flew a blue-and-white royal banner, not the modern red-green.", population: 1_500_000 }],
+    // Portugal 1700 = Blue-and-white royal standard (not the 1911 red-green flag)
+    ["Portugal", { continent: "Iberia", note: "Kingdom of Portugal in 1700 — a major colonial power (Brazil, Africa, India). Flew a blue-and-white royal standard; the modern red-and-green wasn't adopted until 1911.", noFlag: true, population: 2_000_000 }],
+    // New France 1700 = major French colonial territory in Canada
+    ["New France", { flag: "historical-flags/france-bourbon.png", continent: "North America", note: "New France — French colonial territory in Canada and the Mississippi valley, under the Bourbon royal banner.", population: 15_000 }],
+    // Vietnamese states in 1700
+    ["Đại Việt", { continent: "Southeast Asia", note: "Đại Việt in 1700 — divided between the Trịnh lords in the north and Nguyễn lords in the south; nominally one Lê dynasty kingdom.", noFlag: true, population: 4_000_000 }],
+    // Ayutthaya 1700 = still a major trading kingdom
+    ["Ayutthaya", { continent: "Southeast Asia", note: "Ayutthaya Kingdom in 1700 — at its peak as a major trading hub. Destroyed by Burma in 1767.", noFlag: true, population: 3_000_000 }],
+    // Kan Na (northern Thai kingdom under Burmese suzerainty in 1700)
+    ["Lan Na", { continent: "Southeast Asia", note: "Lan Na Kingdom (Chiang Mai) — northern Thailand; under Burmese suzerainty from the late 16th century.", noFlag: true, population: 400_000 }],
+    // Cambodia 1700 = post-Angkor Khmer under Vietnamese / Siamese pressure
+    ["Cambodia", { continent: "Southeast Asia", note: "Post-Angkor Khmer Kingdom — reduced to the Phnom Penh-centred rump, squeezed between Vietnam and Siam.", noFlag: true, population: 700_000 }],
+    // Ethiopia 1700 = Zemene Mesafint (Era of Princes) approaching
+    ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire in 1700 — the centralised Solomonic state was beginning to fragment into the Zemene Mesafint (Era of Princes) period.", noFlag: true, population: 4_000_000 }],
+    // Tibet 1700 = Dzungar Mongol invasion approaching
+    ["Tibet", { continent: "Central Asia", note: "Tibet in 1700 — the Dalai Lama's temporal rule; the 5th Dalai Lama had recently died and the Dzungar Mongols would soon invade (1717).", noFlag: true, population: 2_000_000 }],
+    // Oyo 1700 = peak of the Oyo Empire
+    ["Oyo", { continent: "West Africa", note: "Oyo Empire at or near its peak — the Yoruba empire dominated the West African savanna and was a major force in the Atlantic slave trade.", noFlag: true, population: 3_000_000 }],
+    // Congo 1700 = Kingdom of Kongo in decline after civil wars
+    ["Congo", { continent: "Central Africa", note: "Kingdom of Kongo in 1700 — torn by decades of civil wars (the Mwissikongo succession crises) and Portuguese interference.", noFlag: true, population: 2_000_000 }],
+    // Benin 1700 = still a powerful state
+    ["Benin", { continent: "West Africa", note: "Benin Kingdom (Edo) in 1700 — still a sophisticated and powerful state despite increasing contact with European slavers.", noFlag: true, population: 1_200_000 }],
   ])],
   ["ad1815", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon Restoration (1814–1830) — France flew the white royal banner with fleur-de-lis. The tricolour wasn't readopted until 1830.", population: 30_500_000 }],
