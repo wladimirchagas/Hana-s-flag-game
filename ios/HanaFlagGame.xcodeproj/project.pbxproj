@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200000000000000000000001 /* HanaFlagGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* HanaFlagGameApp.swift */; };
+		200000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000002 /* RootView.swift */; };
+		200000000000000000000003 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000003 /* Color+Theme.swift */; };
+		200000000000000000000004 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000004 /* View+Modifiers.swift */; };
+		200000000000000000000005 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000005 /* Country.swift */; };
+		200000000000000000000006 /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000006 /* GameConfig.swift */; };
+		200000000000000000000007 /* LeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000007 /* LeaderboardEntry.swift */; };
+		200000000000000000000008 /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000008 /* CountryData.swift */; };
+		200000000000000000000009 /* FlagDifficultyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000009 /* FlagDifficultyData.swift */; };
+		20000000000000000000000A /* FlagSimilarityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000A /* FlagSimilarityData.swift */; };
+		20000000000000000000000B /* NationalAnthemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000B /* NationalAnthemData.swift */; };
+		20000000000000000000000C /* HistoricalEraData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000C /* HistoricalEraData.swift */; };
+		20000000000000000000000D /* SubdivisionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000D /* SubdivisionData.swift */; };
+		20000000000000000000000E /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000E /* AppViewModel.swift */; };
+		20000000000000000000000F /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000F /* GameViewModel.swift */; };
+		200000000000000000000010 /* LearnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000010 /* LearnViewModel.swift */; };
+		200000000000000000000011 /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000011 /* LeaderboardViewModel.swift */; };
+		200000000000000000000012 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000012 /* CountryService.swift */; };
+		200000000000000000000013 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000013 /* AudioService.swift */; };
+		200000000000000000000014 /* AnthemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000014 /* AnthemService.swift */; };
+		200000000000000000000015 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000015 /* HapticService.swift */; };
+		200000000000000000000016 /* LeaderboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000016 /* LeaderboardService.swift */; };
+		200000000000000000000017 /* MapProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000017 /* MapProjection.swift */; };
+		200000000000000000000018 /* GeoJSONTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000018 /* GeoJSONTypes.swift */; };
+		200000000000000000000019 /* WorldMapRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000019 /* WorldMapRenderer.swift */; };
+		20000000000000000000001A /* FlagConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001A /* FlagConfettiView.swift */; };
+		20000000000000000000001B /* GameModeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001B /* GameModeCard.swift */; };
+		20000000000000000000001C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001C /* LandingView.swift */; };
+		20000000000000000000001D /* FlagCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001D /* FlagCardView.swift */; };
+		20000000000000000000001E /* AnswerOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001E /* AnswerOptionsView.swift */; };
+		20000000000000000000001F /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001F /* FeedbackView.swift */; };
+		200000000000000000000020 /* GameClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000020 /* GameClockView.swift */; };
+		200000000000000000000021 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000021 /* ScoreBoardView.swift */; };
+		200000000000000000000022 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000022 /* GameView.swift */; };
+		200000000000000000000023 /* GameFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000023 /* GameFinishView.swift */; };
+		200000000000000000000024 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000024 /* CountryPickerView.swift */; };
+		200000000000000000000025 /* QuickQuizSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000025 /* QuickQuizSetupView.swift */; };
+		200000000000000000000026 /* AllFlagsSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000026 /* AllFlagsSetupView.swift */; };
+		200000000000000000000027 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000027 /* LeaderboardView.swift */; };
+		200000000000000000000028 /* FlagUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000028 /* FlagUnlockView.swift */; };
+		200000000000000000000029 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000029 /* LearnView.swift */; };
+		20000000000000000000002A /* WorldMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002A /* WorldMapView.swift */; };
+		20000000000000000000002B /* HistoricalMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002B /* HistoricalMapView.swift */; };
+		20000000000000000000002C /* CountryDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002C /* CountryDetailPanel.swift */; };
+		20000000000000000000002D /* FlagGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002D /* FlagGridView.swift */; };
+		20000000000000000000002E /* AnthemPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002E /* AnthemPlayerView.swift */; };
+		20000000000000000000002F /* FlagImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002F /* FlagImageView.swift */; };
+		200000000000000000000030 /* TopbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000030 /* TopbarView.swift */; };
+		400000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000001 /* Assets.xcassets */; };
+		400000000000000000000002 /* countries-50m.json in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000002 /* countries-50m.json */; };
+		400000000000000000000003 /* subdivisions in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000003 /* subdivisions */; };
+		400000000000000000000004 /* historical-maps in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000004 /* historical-maps */; };
+		800000000000000000000003 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 800000000000000000000002 /* FirebaseFirestore */; };
+		800000000000000000000005 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 800000000000000000000004 /* FirebaseCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* HanaFlagGameApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanaFlagGameApp.swift; sourceTree = "<group>"; };
+		100000000000000000000002 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		100000000000000000000003 /* Color+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		100000000000000000000004 /* View+Modifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
+		100000000000000000000005 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		100000000000000000000006 /* GameConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		100000000000000000000007 /* LeaderboardEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardEntry.swift; sourceTree = "<group>"; };
+		100000000000000000000008 /* CountryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		100000000000000000000009 /* FlagDifficultyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagDifficultyData.swift; sourceTree = "<group>"; };
+		10000000000000000000000A /* FlagSimilarityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagSimilarityData.swift; sourceTree = "<group>"; };
+		10000000000000000000000B /* NationalAnthemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalAnthemData.swift; sourceTree = "<group>"; };
+		10000000000000000000000C /* HistoricalEraData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalEraData.swift; sourceTree = "<group>"; };
+		10000000000000000000000D /* SubdivisionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubdivisionData.swift; sourceTree = "<group>"; };
+		10000000000000000000000E /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		10000000000000000000000F /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000010 /* LearnViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000011 /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000012 /* CountryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		100000000000000000000013 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		100000000000000000000014 /* AnthemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnthemService.swift; sourceTree = "<group>"; };
+		100000000000000000000015 /* HapticService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
+		100000000000000000000016 /* LeaderboardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardService.swift; sourceTree = "<group>"; };
+		100000000000000000000017 /* MapProjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapProjection.swift; sourceTree = "<group>"; };
+		100000000000000000000018 /* GeoJSONTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONTypes.swift; sourceTree = "<group>"; };
+		100000000000000000000019 /* WorldMapRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapRenderer.swift; sourceTree = "<group>"; };
+		10000000000000000000001A /* FlagConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagConfettiView.swift; sourceTree = "<group>"; };
+		10000000000000000000001B /* GameModeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModeCard.swift; sourceTree = "<group>"; };
+		10000000000000000000001C /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		10000000000000000000001D /* FlagCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagCardView.swift; sourceTree = "<group>"; };
+		10000000000000000000001E /* AnswerOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerOptionsView.swift; sourceTree = "<group>"; };
+		10000000000000000000001F /* FeedbackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		100000000000000000000020 /* GameClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameClockView.swift; sourceTree = "<group>"; };
+		100000000000000000000021 /* ScoreBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		100000000000000000000022 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		100000000000000000000023 /* GameFinishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFinishView.swift; sourceTree = "<group>"; };
+		100000000000000000000024 /* CountryPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+		100000000000000000000025 /* QuickQuizSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickQuizSetupView.swift; sourceTree = "<group>"; };
+		100000000000000000000026 /* AllFlagsSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllFlagsSetupView.swift; sourceTree = "<group>"; };
+		100000000000000000000027 /* LeaderboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		100000000000000000000028 /* FlagUnlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagUnlockView.swift; sourceTree = "<group>"; };
+		100000000000000000000029 /* LearnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		10000000000000000000002A /* WorldMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapView.swift; sourceTree = "<group>"; };
+		10000000000000000000002B /* HistoricalMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalMapView.swift; sourceTree = "<group>"; };
+		10000000000000000000002C /* CountryDetailPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailPanel.swift; sourceTree = "<group>"; };
+		10000000000000000000002D /* FlagGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagGridView.swift; sourceTree = "<group>"; };
+		10000000000000000000002E /* AnthemPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnthemPlayerView.swift; sourceTree = "<group>"; };
+		10000000000000000000002F /* FlagImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagImageView.swift; sourceTree = "<group>"; };
+		100000000000000000000030 /* TopbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopbarView.swift; sourceTree = "<group>"; };
+		300000000000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		300000000000000000000002 /* countries-50m.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "countries-50m.json"; sourceTree = "<group>"; };
+		300000000000000000000003 /* subdivisions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = subdivisions; sourceTree = "<group>"; };
+		300000000000000000000004 /* historical-maps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "historical-maps"; sourceTree = "<group>"; };
+		300000000000000000000005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700000000000000000000009 /* HanaFlagGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanaFlagGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		600000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800000000000000000000003 /* FirebaseFirestore in Frameworks */,
+				800000000000000000000005 /* FirebaseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500000000000000000000010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				700000000000000000000009 /* HanaFlagGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		500000000000000000000001 /* HanaFlagGame */ = {
+			isa = PBXGroup;
+			children = (
+				500000000000000000000002 /* App */,
+				500000000000000000000003 /* Models */,
+				500000000000000000000004 /* Data */,
+				500000000000000000000005 /* ViewModels */,
+				500000000000000000000006 /* Services */,
+				500000000000000000000007 /* Map */,
+				500000000000000000000008 /* Views */,
+				50000000000000000000000E /* Extensions */,
+				300000000000000000000001 /* Assets.xcassets */,
+				300000000000000000000002 /* countries-50m.json */,
+				300000000000000000000003 /* subdivisions */,
+				300000000000000000000004 /* historical-maps */,
+				300000000000000000000005 /* Info.plist */,
+			);
+			path = HanaFlagGame;
+			sourceTree = "<group>";
+		};
+		500000000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000001 /* HanaFlagGameApp.swift */,
+				100000000000000000000002 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		500000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000005 /* Country.swift */,
+				100000000000000000000006 /* GameConfig.swift */,
+				100000000000000000000007 /* LeaderboardEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		500000000000000000000004 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000008 /* CountryData.swift */,
+				100000000000000000000009 /* FlagDifficultyData.swift */,
+				10000000000000000000000A /* FlagSimilarityData.swift */,
+				10000000000000000000000B /* NationalAnthemData.swift */,
+				10000000000000000000000C /* HistoricalEraData.swift */,
+				10000000000000000000000D /* SubdivisionData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		500000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000000E /* AppViewModel.swift */,
+				10000000000000000000000F /* GameViewModel.swift */,
+				100000000000000000000010 /* LearnViewModel.swift */,
+				100000000000000000000011 /* LeaderboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		500000000000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000012 /* CountryService.swift */,
+				100000000000000000000013 /* AudioService.swift */,
+				100000000000000000000014 /* AnthemService.swift */,
+				100000000000000000000015 /* HapticService.swift */,
+				100000000000000000000016 /* LeaderboardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		500000000000000000000007 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000017 /* MapProjection.swift */,
+				100000000000000000000018 /* GeoJSONTypes.swift */,
+				100000000000000000000019 /* WorldMapRenderer.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		500000000000000000000008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				500000000000000000000009 /* Landing */,
+				50000000000000000000000A /* Game */,
+				50000000000000000000000B /* Learn */,
+				50000000000000000000000C /* Modals */,
+				50000000000000000000000D /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		500000000000000000000009 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000001A /* FlagConfettiView.swift */,
+				10000000000000000000001B /* GameModeCard.swift */,
+				10000000000000000000001C /* LandingView.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000001D /* FlagCardView.swift */,
+				10000000000000000000001E /* AnswerOptionsView.swift */,
+				10000000000000000000001F /* FeedbackView.swift */,
+				100000000000000000000020 /* GameClockView.swift */,
+				100000000000000000000021 /* ScoreBoardView.swift */,
+				100000000000000000000022 /* GameView.swift */,
+				100000000000000000000023 /* GameFinishView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000B /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000029 /* LearnView.swift */,
+				10000000000000000000002A /* WorldMapView.swift */,
+				10000000000000000000002B /* HistoricalMapView.swift */,
+				10000000000000000000002C /* CountryDetailPanel.swift */,
+				10000000000000000000002D /* FlagGridView.swift */,
+				10000000000000000000002E /* AnthemPlayerView.swift */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000C /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000024 /* CountryPickerView.swift */,
+				100000000000000000000025 /* QuickQuizSetupView.swift */,
+				100000000000000000000026 /* AllFlagsSetupView.swift */,
+				100000000000000000000027 /* LeaderboardView.swift */,
+				100000000000000000000028 /* FlagUnlockView.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000002F /* FlagImageView.swift */,
+				100000000000000000000030 /* TopbarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000003 /* Color+Theme.swift */,
+				100000000000000000000004 /* View+Modifiers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF000000000000000000FFFF = {
+			isa = PBXGroup;
+			children = (
+				500000000000000000000001 /* HanaFlagGame */,
+				500000000000000000000010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		700000000000000000000002 /* HanaFlagGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700000000000000000000004 /* Build configuration list for PBXNativeTarget "HanaFlagGame" */;
+			buildPhases = (
+				600000000000000000000001 /* Sources */,
+				600000000000000000000002 /* Frameworks */,
+				600000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HanaFlagGame;
+			packageProductDependencies = (
+				800000000000000000000002 /* FirebaseFirestore */,
+				800000000000000000000004 /* FirebaseCore */,
+			);
+			productName = HanaFlagGame;
+			productReference = 700000000000000000000009 /* HanaFlagGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					700000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 700000000000000000000003 /* Build configuration list for PBXProject "HanaFlagGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF000000000000000000FFFF;
+			packageReferences = (
+				800000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 500000000000000000000010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				700000000000000000000002 /* HanaFlagGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		600000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400000000000000000000001 /* Assets.xcassets in Resources */,
+				400000000000000000000002 /* countries-50m.json in Resources */,
+				400000000000000000000003 /* subdivisions in Resources */,
+				400000000000000000000004 /* historical-maps in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		600000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200000000000000000000001 /* HanaFlagGameApp.swift in Sources */,
+				200000000000000000000002 /* RootView.swift in Sources */,
+				200000000000000000000003 /* Color+Theme.swift in Sources */,
+				200000000000000000000004 /* View+Modifiers.swift in Sources */,
+				200000000000000000000005 /* Country.swift in Sources */,
+				200000000000000000000006 /* GameConfig.swift in Sources */,
+				200000000000000000000007 /* LeaderboardEntry.swift in Sources */,
+				200000000000000000000008 /* CountryData.swift in Sources */,
+				200000000000000000000009 /* FlagDifficultyData.swift in Sources */,
+				20000000000000000000000A /* FlagSimilarityData.swift in Sources */,
+				20000000000000000000000B /* NationalAnthemData.swift in Sources */,
+				20000000000000000000000C /* HistoricalEraData.swift in Sources */,
+				20000000000000000000000D /* SubdivisionData.swift in Sources */,
+				20000000000000000000000E /* AppViewModel.swift in Sources */,
+				20000000000000000000000F /* GameViewModel.swift in Sources */,
+				200000000000000000000010 /* LearnViewModel.swift in Sources */,
+				200000000000000000000011 /* LeaderboardViewModel.swift in Sources */,
+				200000000000000000000012 /* CountryService.swift in Sources */,
+				200000000000000000000013 /* AudioService.swift in Sources */,
+				200000000000000000000014 /* AnthemService.swift in Sources */,
+				200000000000000000000015 /* HapticService.swift in Sources */,
+				200000000000000000000016 /* LeaderboardService.swift in Sources */,
+				200000000000000000000017 /* MapProjection.swift in Sources */,
+				200000000000000000000018 /* GeoJSONTypes.swift in Sources */,
+				200000000000000000000019 /* WorldMapRenderer.swift in Sources */,
+				20000000000000000000001A /* FlagConfettiView.swift in Sources */,
+				20000000000000000000001B /* GameModeCard.swift in Sources */,
+				20000000000000000000001C /* LandingView.swift in Sources */,
+				20000000000000000000001D /* FlagCardView.swift in Sources */,
+				20000000000000000000001E /* AnswerOptionsView.swift in Sources */,
+				20000000000000000000001F /* FeedbackView.swift in Sources */,
+				200000000000000000000020 /* GameClockView.swift in Sources */,
+				200000000000000000000021 /* ScoreBoardView.swift in Sources */,
+				200000000000000000000022 /* GameView.swift in Sources */,
+				200000000000000000000023 /* GameFinishView.swift in Sources */,
+				200000000000000000000024 /* CountryPickerView.swift in Sources */,
+				200000000000000000000025 /* QuickQuizSetupView.swift in Sources */,
+				200000000000000000000026 /* AllFlagsSetupView.swift in Sources */,
+				200000000000000000000027 /* LeaderboardView.swift in Sources */,
+				200000000000000000000028 /* FlagUnlockView.swift in Sources */,
+				200000000000000000000029 /* LearnView.swift in Sources */,
+				20000000000000000000002A /* WorldMapView.swift in Sources */,
+				20000000000000000000002B /* HistoricalMapView.swift in Sources */,
+				20000000000000000000002C /* CountryDetailPanel.swift in Sources */,
+				20000000000000000000002D /* FlagGridView.swift in Sources */,
+				20000000000000000000002E /* AnthemPlayerView.swift in Sources */,
+				20000000000000000000002F /* FlagImageView.swift in Sources */,
+				200000000000000000000030 /* TopbarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		700000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		700000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		700000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HanaFlagGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanaflaggame.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		700000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HanaFlagGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanaflaggame.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		700000000000000000000003 /* Build configuration list for PBXProject "HanaFlagGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700000000000000000000005 /* Debug */,
+				700000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700000000000000000000004 /* Build configuration list for PBXNativeTarget "HanaFlagGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700000000000000000000007 /* Debug */,
+				700000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		800000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "11.0.0";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		800000000000000000000002 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 800000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		800000000000000000000004 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 800000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = 700000000000000000000001 /* Project object */;
+}
