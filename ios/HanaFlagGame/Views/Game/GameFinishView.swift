@@ -36,10 +36,16 @@ struct GameFinishView: View {
             Color.flagGameBackground(scheme)
                 .ignoresSafeArea()
 
+            // Confetti layer (behind content)
+            FinishConfettiView()
+
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 24) {
                     // Header
                     VStack(spacing: 6) {
+                        Text("🎉 🌟 🎊")
+                            .font(.system(size: 32))
+                            .padding(.bottom, 4)
                         Text("🎉")
                             .font(.system(size: 64))
                         Text("You Finished!")
@@ -73,6 +79,9 @@ struct GameFinishView: View {
                         continentBreakdownSection
                             .padding(.horizontal, 24)
                     }
+
+                    // Flag results grid
+                    flagResultsSection
 
                     // Elapsed time
                     if let elapsed = elapsedFormatted {
@@ -191,6 +200,39 @@ struct GameFinishView: View {
             .padding(.bottom, 12)
         }
         .cardStyle(scheme: scheme)
+    }
+
+    // MARK: - Flag results grid
+
+    private var flagResultsSection: some View {
+        let results = gameVM.countryResults  // [String: Bool]
+        guard !results.isEmpty else { return AnyView(EmptyView()) }
+        let sorted = results.keys.sorted()
+        let cols = [GridItem(.adaptive(minimum: 52, maximum: 68), spacing: 8)]
+        return AnyView(
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Flags Answered")
+                    .fredoka(15, weight: .semibold)
+                    .foregroundColor(Color.flagGameInk(scheme).opacity(0.7))
+                    .padding(.horizontal, 4)
+                LazyVGrid(columns: cols, spacing: 10) {
+                    ForEach(sorted, id: \.self) { code in
+                        let correct = results[code] ?? false
+                        ZStack(alignment: .topTrailing) {
+                            FlagImageView(code: code, size: 52, cornerRadius: 8)
+                            Image(systemName: correct ? "checkmark.circle.fill" : "xmark.circle.fill")
+                                .font(.system(size: 17, weight: .bold))
+                                .foregroundColor(correct ? .lime : .coral)
+                                .background(Circle().fill(Color.white).frame(width: 15, height: 15))
+                                .offset(x: 5, y: -5)
+                        }
+                    }
+                }
+            }
+            .padding(16)
+            .cardStyle(scheme: scheme)
+            .padding(.horizontal, 20)
+        )
     }
 
     // MARK: - Leaderboard section
