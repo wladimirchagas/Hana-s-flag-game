@@ -33,6 +33,18 @@ enum GameMode: Hashable, Codable {
         }
     }
 
+    var tagline: String {
+        switch self {
+        case .hana:                     return "Keep going until you get it right!"
+        case .quickQuiz:                return "One guess per flag — make it count!"
+        case .all195:                   return "All 195 flags. No mercy."
+        case .continent(_, let l):      return "\(l) — one chance per flag."
+        case .subregion(_, let l):      return "\(l) — one chance per flag."
+        case .similarity(_, let l, let hc): return hc ? "\(l) · Hardcore" : "\(l) — spot the difference!"
+        case .subnational(_, let n):    return "\(n) — guess the regional flags!"
+        }
+    }
+
     var allowsRetry: Bool {
         if case .hana = self { return true }
         return false
