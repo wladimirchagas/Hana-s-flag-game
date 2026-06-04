@@ -49,7 +49,6 @@ struct PillButton: ViewModifier {
             .padding(.horizontal, 28)
             .background(color)
             .clipShape(Capsule())
-            .stickerShadow()
     }
 }
 
