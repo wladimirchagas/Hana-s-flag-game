@@ -37,6 +37,8 @@ final class GameViewModel: ObservableObject {
     @Published private(set) var gameEndedAt: Date? = nil
     @Published private(set) var meanAnswerMs: Double? = nil
     @Published private(set) var continentBreakdown: [ContinentStats] = []
+    @Published private(set) var answeredCorrect: Set<String> = []
+    @Published private(set) var answeredWrong: Set<String> = []
 
     // MARK: - Config
     let config: GameConfig
@@ -110,9 +112,26 @@ final class GameViewModel: ObservableObject {
             let codeSet = Set(codes.map { $0.uppercased() })
             gamePool = all.filter { codeSet.contains($0.code) }
 
-        case .subnational:
-            phase = .error("Subnational game not yet supported in this mode.")
-            return
+        case .subnational(let countryCode, let countryName):
+            let meta = SubdivisionDataService.shared.subdivisions(for: countryCode)
+            guard let meta, !meta.divisions.isEmpty else {
+                phase = .error("No subdivision data available for \(countryName).")
+                return
+            }
+            let parentContinent = all.first { $0.code == countryCode.uppercased() }?.continent ?? .americas
+            gamePool = meta.divisions.map { div in
+                Country(
+                    code: div.code,
+                    name: div.name,
+                    nameOfficial: "\(div.typeLabel) of \(countryName)",
+                    capital: nil,
+                    subregion: countryName,
+                    continent: parentContinent,
+                    population: nil,
+                    languages: nil,
+                    currencies: nil
+                )
+            }
         }
 
         if gamePool.isEmpty {
@@ -126,6 +145,8 @@ final class GameViewModel: ObservableObject {
         correctCount = 0
         wrongCount = 0
         countryResults = [:]
+        answeredCorrect = []
+        answeredWrong = []
         answerDurations = []
         gameStartedAt = nil
         gameEndedAt = nil
@@ -224,10 +245,12 @@ final class GameViewModel: ObservableObject {
 
         if isCorrect {
             correctCount += 1
+            answeredCorrect.insert(current.code)
             AudioService.shared.playCorrect()
             HapticService.shared.correct()
         } else {
             wrongCount += 1
+            answeredWrong.insert(current.code)
             AudioService.shared.playWrong()
             HapticService.shared.wrong()
         }
