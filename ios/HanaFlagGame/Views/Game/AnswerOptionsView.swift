@@ -221,23 +221,27 @@ private struct AnswerButton: View {
 
 // MARK: - Preview
 
-#Preview {
-    let countries = Array(STATIC_COUNTRIES.prefix(6))
-    VStack(spacing: 20) {
-        AnswerOptionsView(
-            alternatives: countries,
-            selected: .constant(countries[0]),
-            phase: .guessing,
-            currentCountry: countries[0]
-        )
-        AnswerOptionsView(
-            alternatives: countries,
-            selected: .constant(countries[1]),
-            phase: .revealed(wasCorrect: false),
-            currentCountry: countries[0]
-        )
+// MARK: - Preview
+
+struct AnswerOptionsView_Previews: PreviewProvider {
+    static var previews: some View {
+        let countries = Array(STATIC_COUNTRIES.prefix(6))
+        return VStack(spacing: 20) {
+            AnswerOptionsView(
+                alternatives: countries,
+                selected: .constant(countries[0]),
+                phase: .guessing,
+                currentCountry: countries[0]
+            )
+            AnswerOptionsView(
+                alternatives: countries,
+                selected: .constant(countries[1]),
+                phase: .revealed(wasCorrect: false),
+                currentCountry: countries[0]
+            )
+        }
+        .padding()
+        .background(Color.flagGameBackground(.light))
+        .environmentObject(AppViewModel())
     }
-    .padding()
-    .background(Color.flagGameBackground(.light))
-    .environmentObject(AppViewModel())
 }

@@ -165,26 +165,29 @@ private struct ContinentBarRow: View {
 
 // MARK: - Preview
 
-#Preview {
-    let breakdown: [ContinentStats] = {
-        var s1 = ContinentStats(continent: .europe)
-        s1.correct = 7; s1.wrong = 2
-        var s2 = ContinentStats(continent: .asia)
-        s2.correct = 3; s2.wrong = 4
-        var s3 = ContinentStats(continent: .americas)
-        s3.correct = 5; s3.wrong = 1
-        return [s1, s2, s3]
-    }()
+// MARK: - Preview
 
-    VStack {
-        Spacer()
-        ScoreBoardView(
-            score: 12,
-            correctCount: 15,
-            wrongCount: 7,
-            continentBreakdown: breakdown
-        )
+struct ScoreBoardView_Previews: PreviewProvider {
+    static var previews: some View {
+        let breakdown: [ContinentStats] = {
+            var s1 = ContinentStats(continent: .europe)
+            s1.correct = 7; s1.wrong = 2
+            var s2 = ContinentStats(continent: .asia)
+            s2.correct = 3; s2.wrong = 4
+            var s3 = ContinentStats(continent: .americas)
+            s3.correct = 5; s3.wrong = 1
+            return [s1, s2, s3]
+        }()
+        return VStack {
+            Spacer()
+            ScoreBoardView(
+                score: 12,
+                correctCount: 15,
+                wrongCount: 7,
+                continentBreakdown: breakdown
+            )
+        }
+        .background(Color.flagGameBackground(.light))
+        .environmentObject(AppViewModel())
     }
-    .background(Color.flagGameBackground(.light))
-    .environmentObject(AppViewModel())
 }

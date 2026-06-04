@@ -173,7 +173,8 @@ struct CountryPickerView: View {
 
     private var countryList: some View {
         List {
-            ForEach(filteredSections, id: \.continent) { section in
+            ForEach(filteredSections.indices, id: \.self) { i in
+                let section = filteredSections[i]
                 Section {
                     ForEach(section.countries) { country in
                         CountryPickerRow(
@@ -216,7 +217,7 @@ struct CountryPickerView: View {
             Spacer()
             Text("🔍")
                 .font(.system(size: 48))
-            Text("No countries match "\(searchText)"")
+            Text("No countries match \"\(searchText)\"")
                 .fredoka(17)
                 .foregroundColor(Color.flagGameInk(scheme).opacity(0.6))
                 .multilineTextAlignment(.center)
