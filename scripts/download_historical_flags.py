@@ -126,7 +126,7 @@ FLAG_MAPPINGS: dict[str, str] = {
     # used from its founding in 1912 until the Nationalists standardised the
     # blue-sky flag in 1928.  Five equal horizontal bands: red, yellow, blue,
     # white, black — representing the Han, Manchu, Mongol, Hui, and Tibetan peoples.
-    "roc-1912.png": "Flag_of_the_Republic_of_China_(1912–1928).svg",
+    "roc-1912.png": "Flag_of_China_(1912–1928).svg",
 
     # Egypt Khedivate / Kingdom: red with white crescent and 3 stars
     "egypt-khedive.png": "Flag_of_Egypt_(1882-1952).svg",
@@ -164,7 +164,7 @@ FLAG_MAPPINGS: dict[str, str] = {
     # Brunei Sultanate (pre-1906): plain yellow flag
     # =========================================================================
 
-    "brunei-1815.png": "Flag_of_Brunei_(before_1906).svg",
+    "brunei-1815.png": "Old_Flag_of_Brunei.svg",
 
     # =========================================================================
     # Malay sultanate flags (used for 1815/1850 eras)

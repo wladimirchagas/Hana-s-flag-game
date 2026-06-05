@@ -47,6 +47,9 @@ jobs:
           # cairosvg needs libcairo — pre-installed on ubuntu-latest
 
       - name: Download & convert historical flags
+        # continue-on-error so that a single failed download doesn't block
+        # the commit step from saving the flags that did succeed.
+        continue-on-error: true
         run: |
           ARGS=""
           if [ "${{ inputs.force }}" = "true" ]; then
@@ -58,6 +61,7 @@ jobs:
           python3 scripts/download_historical_flags.py $ARGS
 
       - name: Commit updated flags
+        if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
