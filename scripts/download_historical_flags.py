@@ -255,7 +255,18 @@ def get_wikimedia_direct_url(filename: str) -> str:
     return f"{WIKIMEDIA_UPLOAD}/{md5[0]}/{md5[0:2]}/{encoded}"
 
 
-def get_wikimedia_url_via_api(filename: str, retries: int = 3) -> str | None:
+def _retry_wait(e: urllib.error.HTTPError, attempt: int) -> int:
+    """Return seconds to wait after a 429, honouring Retry-After if present."""
+    try:
+        after = e.headers.get("Retry-After")
+        if after:
+            return max(int(after), 1)
+    except Exception:
+        pass
+    return 60 * (2 ** attempt)  # 60, 120, 240, 480 s
+
+
+def get_wikimedia_url_via_api(filename: str, retries: int = 5) -> str | None:
     """Use the Wikimedia Commons API to get the direct file URL."""
     params = {
         "action": "query",
@@ -278,7 +289,7 @@ def get_wikimedia_url_via_api(filename: str, retries: int = 3) -> str | None:
             return None
         except urllib.error.HTTPError as e:
             if e.code == 429 and attempt < retries - 1:
-                wait = 15 * (2 ** attempt)  # 15, 30 seconds
+                wait = _retry_wait(e, attempt)
                 print(f"  API rate-limited, retrying in {wait}s...", file=sys.stderr)
                 time.sleep(wait)
             else:
@@ -290,7 +301,7 @@ def get_wikimedia_url_via_api(filename: str, retries: int = 3) -> str | None:
     return None
 
 
-def download_svg(url: str, retries: int = 3) -> bytes | None:
+def download_svg(url: str, retries: int = 5) -> bytes | None:
     """Download a file from a URL, returning its bytes or None on failure."""
     req = urllib.request.Request(url, headers={
         "User-Agent": "HistoricalFlagsBot/1.0",
@@ -302,7 +313,7 @@ def download_svg(url: str, retries: int = 3) -> bytes | None:
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code == 429 and attempt < retries - 1:
-                wait = 15 * (2 ** attempt)  # 15, 30 seconds
+                wait = _retry_wait(e, attempt)
                 print(f"  Rate-limited (429), retrying in {wait}s...", file=sys.stderr)
                 time.sleep(wait)
             else:
