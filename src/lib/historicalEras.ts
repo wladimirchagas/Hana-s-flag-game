@@ -954,6 +954,25 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
  * the override; the registry fallback still runs for every other era.
  */
 const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = new Map([
+  // === 600 AD overrides =====================================================
+  // The Palaiologos dynasty flag (1261–1453) is the global Byzantine entry,
+  // but in 600 AD the Byzantine Empire was the Justinian/Heraclian dynasty —
+  // 661 years before Palaiologos. No surviving standardised flag for this era.
+  ["ad600", new Map<string, PolityInfo>([
+    ["Eastern Roman Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 600 AD — Heraclian dynasty, capital Constantinople. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 661 years too late.", population: 26_000_000 }],
+  ])],
+
+  // === 800 AD overrides =====================================================
+  // "Byzantine Empire" name used from 800 onwards in the dataset.
+  // The Palaiologos dynasty (1261–1453) is the global entry; in 800 AD the
+  // Macedonian dynasty was ruling — 461 years before Palaiologos.
+  // Holy Roman Empire: the post-1400 imperial banner is the global entry;
+  // in 800 AD the Carolingian Empire was just forming (HRE formally 962 AD).
+  ["ad800", new Map<string, PolityInfo>([
+    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 800 AD — Macedonian dynasty era. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 461 years too late.", population: 20_000_000 }],
+    ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire — Carolingian/Ottonian era, 800–962 AD. The post-1400 imperial banner (our only HRE PNG) is 400+ years too late for this dynasty.", population: 20_000_000 }],
+  ])],
+
   // === 1300 (High/Late Medieval) overrides ==================================
   // The 1300 era uses the same polity NAMEs as the global POLITY_REGISTRY but
   // some need era-specific notes (the registry's generic entry may describe the
@@ -985,6 +1004,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Trebizond", { continent: "Eastern Mediterranean", note: "Empire of Trebizond — Komnenian dynasty clinging to the Black Sea coast after the Latin sack of Constantinople.", noFlag: true, population: 150_000 }],
     // Georgia (weakened after Mongol invasions)
     ["Georgia", { continent: "Western Asia", note: "Kingdom of Georgia — weakened by repeated Mongol invasions; its golden age (12th–13th c.) was over.", noFlag: true, population: 1_500_000 }],
+    // Ottoman Empire in 1300: the 1844–1922 crescent-and-star flag is 544
+    // years too late. Pre-Ottoman Seljuk / early Anatolian beyliks — no
+    // standardised Ottoman flag yet (Ottomans only founded c.1299).
+    ["Ottoman Empire", { continent: "SE Europe / Western Asia", noFlag: true, note: "Ottoman Sultanate in 1300 — newly founded (c.1299) under Osman I; no standardised flag. The familiar crescent-and-star wasn't formalised until 1844.", population: 2_000_000 }],
+    // Holy Roman Empire in 1300: the post-1400 imperial banner is the global
+    // entry, but in 1300 the double-headed eagle was only beginning to emerge.
+    ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire in 1300 — late Hohenstaufen / early Habsburg era. The post-1400 imperial banner (our only HRE PNG) had not yet been formalised.", population: 12_000_000 }],
   ])],
 
   ["ad1500", new Map<string, PolityInfo>([
@@ -1019,8 +1045,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Grand Duchy of Moscow", { continent: "Eastern Europe", note: "Grand Duchy of Moscow under Ivan III — the 'Gatherer of Russian Lands'; just conquered Novgorod and expelled the Tatars.", noFlag: true, population: 5_000_000 }],
     // Teutonic Knights (still independent in 1500, secularised 1525)
     ["Teutonic Knights", { continent: "Central Europe", note: "Teutonic Order state — still controlling Prussia and Livonia in 1500; the Grand Master would secularise it as the Duchy of Prussia in 1525.", noFlag: true, population: 700_000 }],
-    // Poland-Lithuania (Commonwealth created 1569)
-    ["Poland-Lithuania", { flag: "historical-flags/poland-lithuania.png", continent: "Eastern Europe", note: "Jagiellonian Poland-Lithuania (precursor to the 1569 Commonwealth) — a major European power from the Baltic to the Black Sea.", population: 7_500_000 }],
+    // Poland-Lithuania (Commonwealth created 1569 — not yet in 1500)
+    ["Poland-Lithuania", { noFlag: true, continent: "Eastern Europe", note: "Jagiellonian Poland-Lithuania (1385–1569) — the precursor to the Polish-Lithuanian Commonwealth, which was only founded in 1569. The Commonwealth flag is anachronistic here.", population: 7_500_000 }],
+    // Ottoman Empire 1500: the 1844–1922 crescent-and-star flag is 344 years
+    // too late. The Ottomans used various red-crescent banners before 1844.
+    ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire under Suleiman the Magnificent's predecessors. The familiar crescent-and-star flag wasn't formalised until 1844 — 344 years after this era.", population: 12_000_000 }],
     // Morocco 1500 = Wattasid (Marinid successor)
     ["Morocco", { continent: "North Africa", note: "Wattasid Sultanate of Morocco in 1500 — a weakened Marinid successor facing the rise of the Saadian dynasty and Portuguese coastal raids.", noFlag: true, population: 2_000_000 }],
     // Ethiopia 1500 = Solomonic dynasty
@@ -1084,6 +1113,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Congo", { continent: "Central Africa", note: "Kingdom of Kongo in 1700 — torn by decades of civil wars (the Mwissikongo succession crises) and Portuguese interference.", noFlag: true, population: 2_000_000 }],
     // Benin 1700 = still a powerful state
     ["Benin", { continent: "West Africa", note: "Benin Kingdom (Edo) in 1700 — still a sophisticated and powerful state despite increasing contact with European slavers.", noFlag: true, population: 1_200_000 }],
+    // Ottoman Empire 1700: 1844 flag is 144 years too late.
+    ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1700 — still a major power under the Köprülü viziers. The crescent-and-star flag wasn't standardised until 1844.", population: 30_000_000 }],
   ])],
   ["ad1815", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon Restoration (1814–1830) — France flew the white royal banner with fleur-de-lis. The tricolour wasn't readopted until 1830.", population: 30_500_000 }],
@@ -1131,6 +1162,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Luxembourg", { noFlag: true, continent: "Western Europe", note: "Grand Duchy of Luxembourg in 1815 — member of the German Confederation after the Congress of Vienna. The red-white-blue tricolour wasn't adopted until 1845.", population: 300_000 }],
     // Siam (Rattanakosin) used the red elephant flag — different from the 1917 tricolour.
     ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam (Rattanakosin) — Chakri dynasty, capital Bangkok. The red-field white elephant flag was in use; the modern Thai tricolour wasn't adopted until 1917.", population: 4_000_000 }],
+    // Ottoman Empire in 1815: the 1844 crescent-and-star was 29 years away.
+    // Red crescent banners were used informally but not standardised yet.
+    ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1815 — under Mahmud II. The crescent-and-star flag wasn't standardised until 1844, 29 years after this era.", population: 25_000_000 }],
   ])],
 
   // === 1850 (Industrial age) overrides ======================================
@@ -1258,12 +1292,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Manchuria 1945 — Manchukuo (Japanese puppet state) until Aug 1945,
     // then handed to ROC. Use ROC flag for end-of-1945 representation.
     ["Manchuria", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Manchukuo (Japanese puppet state) until August 1945, then occupied by Soviet then Nationalist (ROC) forces.", population: 50_000_000 }],
-    // Burma 1945 — still British military administration after the
-    // Japanese withdrawal; independent in 1948 with the burma-1948 flag
-    // (red field with blue canton, large white star + 5 smaller stars).
-    // For 1945 we show the imminent independence flag as the next stable
-    // banner with a note explaining the year-of-overlap.
-    ["Burma", { flag: "historical-flags/burma-1948.png", continent: "Southeast Asia", note: "Just liberated from Japanese occupation; under British military administration until 1948 independence as the Union of Burma. The 1948–1974 flag (red with blue canton + 6 stars) appeared at independence.", population: 17_500_000 }],
+    // Burma 1945 — under British military administration (SEAC) after
+    // Japanese withdrawal. Independence and the 1948 flag both came in 1948.
+    // Showing the 1948 flag for 1945 is a 3-year anachronism; use UK flag.
+    ["Burma", { modernName: "United Kingdom", continent: "Southeast Asia", note: "Burma in 1945 — just liberated from Japanese occupation, under British South East Asia Command (SEAC) military administration. Independence and the Union of Burma flag came in 1948.", population: 17_500_000 }],
     // Egypt 1945 — Kingdom of Egypt (1922–1953). Green field with white
     // crescent + 3 stars (a colour-swap of the Khedive flag). We don't
     // have a curated PNG; show no flag rather than the wrong modern one.
@@ -1292,10 +1324,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Algeria", { continent: "North Africa", note: "Still legally French — three Algerian départements of metropolitan France. The independence war wouldn't start until 1954.", modernName: "France", population: 8_500_000 }],
     ["Tunisia", { continent: "North Africa", note: "French protectorate (1881–1956). The French tricolour flew alongside the bey's flag.", modernName: "France", population: 3_200_000 }],
     ["Morocco", { continent: "North Africa", note: "French and Spanish protectorate (1912–1956). The French tricolour was the dominant flag.", modernName: "France", population: 10_000_000 }],
-    // Sri Lanka in 1945 = Dominion of Ceylon (independence not until 1948).
-    // The dataset labels it "Sri Lanka" anachronistically; show the Ceylon
-    // dominion flag rather than the modern Sri Lanka flag.
-    ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "In 1945 the island was still the British Crown Colony of Ceylon (independence came in 1948). The Dominion of Ceylon's lion flag was adopted in 1948.", population: 6_500_000 }],
+    // Sri Lanka in 1945 = British Crown Colony of Ceylon (until 1948).
+    // The Ceylon dominion flag was adopted in 1948; the 1951 version (our PNG)
+    // came even later. Show Union Jack — the correct flag for 1945.
+    ["Sri Lanka", { modernName: "United Kingdom", continent: "South Asia", note: "British Crown Colony of Ceylon in 1945 — independence came in 1948. The Dominion's lion flag (and our ceylon.png) weren't adopted until 1948/1951.", population: 6_500_000 }],
     // Taiwan in 1945 = surrendered to the Republic of China (KMT) after
     // Japan's defeat. Use the ROC flag.
     ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan (Formosa) reverted to Republic of China (ROC) control in October 1945 after Japan's surrender — the ROC's blue-sky/white-sun flag flew.", population: 6_000_000 }],

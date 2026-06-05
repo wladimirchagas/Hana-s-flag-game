@@ -214,9 +214,10 @@ FLAG_MAPPINGS: dict[str, str] = {
     # Ayutthaya Kingdom (Thai kingdom, 1351–1767): different from Rattanakosin
     "ayutthaya.png": "Flag_of_Thailand_(Ayutthaya_period).svg",
 
-    # Shogunate Japan (1300/1500 era): used various Ashikaga/Sengoku banners
-    # Best approximation: the Hinomaru (used since medieval era)
-    "japan-shogunate.png": "Hinomaru.svg",
+    # Tokugawa Shogunate Japan (1603–1868): the actual shogunate government flag
+    # (white field with black central stripe — the Great Middle Black flag).
+    # Previously used Hinomaru.svg (modern Japan flag) which is not distinctly Tokugawa.
+    "japan-shogunate.png": "Flag_of_the_Tokugawa_Shogunate.svg",
 
     # Denmark (medieval): Dannebrog is one of the world's oldest flags
     # (already using modernName: Denmark for most eras — this entry allows
