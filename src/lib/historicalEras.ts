@@ -317,7 +317,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Spanish Empire", { continent: "Global", note: "First truly global empire; covered the Americas, Philippines, and parts of Africa.", population: 70_000_000 }],
   ["Portuguese Empire", { continent: "Global", note: "Maritime empire — Brazil, Africa, India, Macau, Timor.", population: 22_000_000 }],
   ["French Empire", { continent: "Global", note: "Napoleonic France at its peak.", population: 44_000_000 }],
-  ["Austrian Empire", { flag: "historical-flags/austrian-empire.png", continent: "Central Europe", note: "Habsburg empire (1804–1867), before Austria-Hungary. Flew the gold-and-black Habsburg colours.", population: 30_000_000 }],
+  ["Austrian Empire", { flag: "historical-flags/austrian-empire.png", continent: "Central Europe", note: "Habsburg empire (1804–1867), before Austria-Hungary. The red-white-red civil ensign is one of Europe's oldest national symbols, in use since the 13th century.", population: 30_000_000 }],
   ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / North Asia", note: "Vast Eurasian empire under the Romanovs.", population: 178_000_000 }],
   ["Tokugawa Shogunate", { continent: "East Asia", note: "Edo-period Japan.", population: 32_000_000 }],
   ["Safavid Empire", { continent: "Western Asia", note: "Iranian Shia empire; rival of the Ottomans.", population: 10_000_000 }],
@@ -1050,7 +1050,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Tsardom of Muscovy → just before Peter the Great's reforms; the Russian tricolour was introduced ~1699
     ["Tsardom of Muscovy", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe", note: "Tsardom of Muscovy under Peter the Great — on the cusp of becoming the Russian Empire (formally 1721). Peter adopted the Russian tricolour around 1699.", population: 14_000_000 }],
     // Austria 1700 = Habsburg Monarchy (not yet 'Austrian Empire', created 1804)
-    ["Austrian Empire", { flag: "historical-flags/austrian-empire.png", continent: "Central Europe", note: "Habsburg Monarchy — in 1700 not yet officially called the 'Austrian Empire' (created 1804), but using the same Habsburg black-and-gold colours. Fighting the War of Spanish Succession.", population: 8_000_000 }],
+    ["Austrian Empire", { flag: "historical-flags/austrian-empire.png", continent: "Central Europe", note: "Habsburg Monarchy — in 1700 not yet officially called the 'Austrian Empire' (created 1804). Flew the red-white-red civil ensign, one of Europe's oldest national symbols. Fighting the War of Spanish Succession.", population: 8_000_000 }],
     // England and Ireland (pre-Union Jack, 1707 union hadn't happened)
     ["England and Ireland", { continent: "Northern Europe", note: "Kingdom of England and Kingdom of Ireland — a personal union before the Act of Union (1707) that created Great Britain. The Cross of St George was England's flag.", noFlag: true, population: 6_500_000 }],
     // Japan 1700 = Tokugawa Shogunate (covered by "Tokugawa Shogunate" entry but dataset says "Japan")
@@ -1190,8 +1190,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Sokoto Caliphate", { continent: "West Africa", note: "Sokoto Caliphate (Fulani Empire) — founded 1804 by Usman dan Fodio; the largest state in 19th-century sub-Saharan Africa. No standardised flag survives.", noFlag: true, population: 10_000_000 }],
     // Philippines in 1850 = Spanish colony.
     ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the red-yellow-red Crown of Castile flag flew until the 1898 revolution.", population: 4_000_000 }],
-    // Manchu Empire in 1850 = Qing dynasty; use the yellow dragon banner.
-    ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing dynasty China — the yellow dragon banner was the national flag. In 1850 the Taiping Rebellion was beginning to tear the empire apart.", population: 430_000_000 }],
+    // Manchu Empire in 1850 = Qing dynasty. The Yellow Dragon Banner was only
+    // adopted in 1889; in 1850 the Qing had no standardised national flag.
+    ["Manchu Empire", { noFlag: true, continent: "East Asia", note: "Qing dynasty China in 1850 — the Taiping Rebellion had just begun. The Yellow Dragon Banner was not adopted until 1889; before then the Qing had no standardised national flag.", population: 430_000_000 }],
     // New South Wales in 1850 = British Crown Colony.
     ["New South Wales", { modernName: "United Kingdom", continent: "Oceania", note: "British Crown Colony of New South Wales — the Union Jack flew over the colony throughout the 19th century until Australian federation in 1901.", population: 265_000 }],
   ])],
@@ -1203,10 +1204,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
     // Manchu Empire in 1914 = Republic of China (ROC). The Qing dynasty was
-    // overthrown in January 1912 and the ROC was proclaimed; by 1914 the
-    // dataset still labels the territory "Manchu Empire" but the ROC flag
-    // (blue-sky/white-sun on red) was already the national flag.
-    ["Manchu Empire", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Republic of China (ROC) — the Qing dynasty was overthrown in January 1912 and the five-colour flag (later the ROC's current flag) was adopted. The dataset keeps the 'Manchu Empire' label but by 1914 the ROC governed the territory.", population: 430_000_000 }],
+    // overthrown in January 1912 and the ROC was proclaimed. In 1914 the ROC
+    // was using the Five-Colored Flag (五色旗) — five horizontal stripes of
+    // red, yellow, blue, white, and black representing the five main peoples.
+    // The blue-sky/white-sun flag wasn't standardised until 1928.
+    ["Manchu Empire", { flag: "historical-flags/roc-1912.png", continent: "East Asia", note: "Republic of China (ROC) — the Qing dynasty was overthrown in January 1912. In 1914 the ROC flew the Five-Colored Flag (五色旗): five horizontal stripes of red, yellow, blue, white, and black representing the Han, Manchu, Mongol, Hui, and Tibetan peoples. The current blue-sky flag wasn't adopted until 1928.", population: 430_000_000 }],
     // Egypt 1914 — nominally Ottoman until Dec 1914, then British
     // protectorate as the Sultanate of Egypt. Both periods flew the
     // red+white-crescent+3-stars Khedive flag.
