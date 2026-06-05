@@ -649,7 +649,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Lunda", { continent: "Central Africa", note: "Lunda Empire — a major Central African trading state straddling modern Angola/DRC/Zambia.", noFlag: true, population: 1_000_000 }],
   ["Kazembe", { continent: "Central Africa", note: "Kingdom of Kazembe — eastern branch of the Lunda Empire, in modern Zambia.", noFlag: true, population: 500_000 }],
   ["Imbangala", { continent: "Central Africa", note: "Imbangala (Jaga) polities of modern Angola — warrior states in the Angolan interior.", noFlag: true, population: 300_000 }],
-  ["Zanzibar", { continent: "East Africa", note: "Sultanate of Zanzibar — governed by the Omani Busaidi dynasty from the 1690s; flew the Omani red flag.", modernName: "Oman", population: 200_000 }],
+  ["Zanzibar", { continent: "East Africa", note: "Sultanate of Zanzibar — governed by the Omani Busaidi dynasty from the 1690s. Flew a plain red flag (same as Omani Muscat); the modern Oman flag was only adopted in 1970.", noFlag: true, population: 200_000 }],
   ["Somalia", { continent: "East Africa", note: "Patchwork of Somali sultanates (Majeerteen, Geledi, etc.) — no unified Somali state or flag until 1960.", noFlag: true, population: 2_000_000 }],
   ["Zulu", { continent: "Southern Africa", note: "Zulu Kingdom under Shaka and his successors — the most powerful state in 19th-century southern Africa.", noFlag: true, population: 600_000 }],
   ["Xhosa", { continent: "Southern Africa", note: "Xhosa-speaking chiefdoms of the Eastern Cape — no standardised national flag.", noFlag: true, population: 500_000 }],
