@@ -271,7 +271,7 @@ def get_wikimedia_url_via_api(filename: str, retries: int = 3) -> str | None:
             return None
         except urllib.error.HTTPError as e:
             if e.code == 429 and attempt < retries - 1:
-                wait = 2 ** (attempt + 2)  # 4, 8 seconds
+                wait = 15 * (2 ** attempt)  # 15, 30 seconds
                 print(f"  API rate-limited, retrying in {wait}s...", file=sys.stderr)
                 time.sleep(wait)
             else:
@@ -295,7 +295,7 @@ def download_svg(url: str, retries: int = 3) -> bytes | None:
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code == 429 and attempt < retries - 1:
-                wait = 2 ** (attempt + 2)  # 4, 8 seconds
+                wait = 15 * (2 ** attempt)  # 15, 30 seconds
                 print(f"  Rate-limited (429), retrying in {wait}s...", file=sys.stderr)
                 time.sleep(wait)
             else:
@@ -331,14 +331,22 @@ def process_flag(output_name: str, wikimedia_name: str, force: bool) -> bool:
 
     print(f"  GET   {output_name}  ←  {wikimedia_name}")
 
-    # Try the Wikimedia Commons API first (gives the canonical URL)
+    used_api_url = False
     svg_url = get_wikimedia_url_via_api(wikimedia_name)
-    if not svg_url:
-        # Fall back to computing the hash-based URL directly
+    if svg_url:
+        used_api_url = True
+    else:
         svg_url = get_wikimedia_direct_url(wikimedia_name)
         print(f"        (API failed, trying direct: {svg_url})")
 
     svg_bytes = download_svg(svg_url)
+
+    # If API-sourced URL returned non-SVG (e.g. HTML rate-limit page), retry with direct URL
+    if svg_bytes and used_api_url and not svg_bytes.lstrip().startswith(b"<"):
+        direct_url = get_wikimedia_direct_url(wikimedia_name)
+        print(f"        (API URL returned non-SVG, retrying direct: {direct_url})", file=sys.stderr)
+        svg_bytes = download_svg(direct_url)
+
     if not svg_bytes:
         print(f"  FAIL  {output_name}: could not download SVG", file=sys.stderr)
         return False
@@ -399,8 +407,9 @@ def main() -> int:
             ok += 1
         else:
             fail += 1
-        # Be a good citizen — Wikimedia rate-limits aggressive scrapers
-        time.sleep(2.0)
+        # Be a good citizen — Wikimedia rate-limits aggressive scrapers.
+        # 15 s between requests keeps us well under their ~1 req/12 s limit.
+        time.sleep(15.0)
 
     print()
     print(f"Done: {ok} succeeded, {fail} failed, {skip} skipped")
