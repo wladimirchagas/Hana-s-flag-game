@@ -88,8 +88,8 @@ FLAG_MAPPINGS: dict[str, str] = {
     # Russian Empire: white-blue-red tricolour
     "russian-empire.png": "Flag_of_Russia.svg",
 
-    # Austrian Empire: black-and-yellow Habsburg colours (1804–1867)
-    "austrian-empire.png": "Civil_Ensign_of_Austria_(1869–1918).svg",
+    # Austrian Empire: red-white-red civil ensign (one of Europe's oldest)
+    "austrian-empire.png": "Flag_of_Austria.svg",
 
     # Rattanakosin Siam: red field with white elephant (pre-1917)
     "siam.png": "Flag_of_Thailand_(until_1855).svg",
@@ -248,7 +248,7 @@ def get_wikimedia_direct_url(filename: str) -> str:
     return f"{WIKIMEDIA_UPLOAD}/{md5[0]}/{md5[0:2]}/{encoded}"
 
 
-def get_wikimedia_url_via_api(filename: str) -> str | None:
+def get_wikimedia_url_via_api(filename: str, retries: int = 3) -> str | None:
     """Use the Wikimedia Commons API to get the direct file URL."""
     params = {
         "action": "query",
@@ -259,32 +259,51 @@ def get_wikimedia_url_via_api(filename: str) -> str | None:
     }
     url = WIKIMEDIA_API + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": "HistoricalFlagsBot/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=15) as r:
-            data = json.load(r)
-            pages = data.get("query", {}).get("pages", {})
-            for page in pages.values():
-                imageinfo = page.get("imageinfo", [])
-                if imageinfo:
-                    return imageinfo[0].get("url")
-    except Exception as e:
-        print(f"  API lookup failed for {filename}: {e}", file=sys.stderr)
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=15) as r:
+                data = json.load(r)
+                pages = data.get("query", {}).get("pages", {})
+                for page in pages.values():
+                    imageinfo = page.get("imageinfo", [])
+                    if imageinfo:
+                        return imageinfo[0].get("url")
+            return None
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < retries - 1:
+                wait = 2 ** (attempt + 2)  # 4, 8 seconds
+                print(f"  API rate-limited, retrying in {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+            else:
+                print(f"  API lookup failed for {filename}: HTTP {e.code}", file=sys.stderr)
+                return None
+        except Exception as e:
+            print(f"  API lookup failed for {filename}: {e}", file=sys.stderr)
+            return None
     return None
 
 
-def download_svg(url: str) -> bytes | None:
+def download_svg(url: str, retries: int = 3) -> bytes | None:
     """Download a file from a URL, returning its bytes or None on failure."""
     req = urllib.request.Request(url, headers={
         "User-Agent": "HistoricalFlagsBot/1.0",
         "Accept": "*/*",
     })
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.read()
-    except urllib.error.HTTPError as e:
-        print(f"  HTTP {e.code}: {url}", file=sys.stderr)
-    except Exception as e:
-        print(f"  Error: {e}: {url}", file=sys.stderr)
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < retries - 1:
+                wait = 2 ** (attempt + 2)  # 4, 8 seconds
+                print(f"  Rate-limited (429), retrying in {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+            else:
+                print(f"  HTTP {e.code}: {url}", file=sys.stderr)
+                return None
+        except Exception as e:
+            print(f"  Error: {e}: {url}", file=sys.stderr)
+            return None
     return None
 
 
@@ -380,8 +399,8 @@ def main() -> int:
             ok += 1
         else:
             fail += 1
-        # Be a good citizen — don't hammer Wikimedia
-        time.sleep(0.5)
+        # Be a good citizen — Wikimedia rate-limits aggressive scrapers
+        time.sleep(2.0)
 
     print()
     print(f"Done: {ok} succeeded, {fail} failed, {skip} skipped")
