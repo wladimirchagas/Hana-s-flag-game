@@ -344,6 +344,14 @@ def ensure_svg_bytes(data: bytes) -> bytes | None:
     return data
 
 
+def get_wikimedia_thumbnail_url(wikimedia_name: str, width: int = OUTPUT_WIDTH) -> str:
+    """Build the pre-rendered thumbnail PNG URL served by Wikimedia's CDN cache."""
+    name = wikimedia_name.replace(" ", "_")
+    md5 = hashlib.md5(name.encode("utf-8")).hexdigest()
+    encoded = urllib.parse.quote(name, safe="")
+    return f"{WIKIMEDIA_UPLOAD}/thumb/{md5[0]}/{md5[0:2]}/{encoded}/{width}px-{encoded}.png"
+
+
 def svg_to_png(svg_bytes: bytes, output_path: Path) -> bool:
     """Convert SVG bytes to PNG at the configured dimensions."""
     try:
@@ -356,6 +364,24 @@ def svg_to_png(svg_bytes: bytes, output_path: Path) -> bool:
         return True
     except Exception as e:
         print(f"  SVG→PNG conversion failed: {e}", file=sys.stderr)
+        return False
+
+
+def thumbnail_to_png(png_bytes: bytes, output_path: Path) -> bool:
+    """Fit a pre-rendered thumbnail PNG into 320×192, centred on a grey background."""
+    try:
+        from PIL import Image
+        import io
+        img = Image.open(io.BytesIO(png_bytes)).convert("RGBA")
+        bg = Image.new("RGBA", (OUTPUT_WIDTH, OUTPUT_HEIGHT), (238, 238, 238, 255))
+        img.thumbnail((OUTPUT_WIDTH, OUTPUT_HEIGHT), Image.LANCZOS)
+        x = (OUTPUT_WIDTH - img.width) // 2
+        y = (OUTPUT_HEIGHT - img.height) // 2
+        bg.paste(img, (x, y), img)
+        bg.convert("RGB").save(str(output_path), "PNG")
+        return True
+    except Exception as e:
+        print(f"  Thumbnail resize failed: {e}", file=sys.stderr)
         return False
 
 
@@ -385,21 +411,27 @@ def process_flag(output_name: str, wikimedia_name: str, force: bool) -> bool:
         print(f"        (API URL returned non-SVG, retrying direct: {direct_url})", file=sys.stderr)
         svg_bytes = download_svg(direct_url)
 
-    if not svg_bytes:
-        print(f"  FAIL  {output_name}: could not download SVG", file=sys.stderr)
-        return False
+    svg_bytes = ensure_svg_bytes(svg_bytes) if svg_bytes else None
 
-    svg_bytes = ensure_svg_bytes(svg_bytes)
-    if svg_bytes is None:
-        print(f"  FAIL  {output_name}: response doesn't look like SVG", file=sys.stderr)
-        return False
+    if svg_bytes and svg_to_png(svg_bytes, output_path):
+        size = output_path.stat().st_size
+        print(f"  OK    {output_name} ({size:,} bytes)")
+        return True
 
-    if not svg_to_png(svg_bytes, output_path):
-        return False
+    # Fallback: try the pre-rendered thumbnail PNG served from Wikimedia's CDN cache.
+    # The /thumb/ path is cached independently from direct SVG downloads and may
+    # succeed when the origin is rate-limiting direct requests.
+    thumb_url = get_wikimedia_thumbnail_url(wikimedia_name)
+    print(f"        (SVG path blocked, trying CDN thumbnail: {thumb_url})", file=sys.stderr)
+    png_bytes = download_svg(thumb_url)
+    if png_bytes and png_bytes[:8] == b'\x89PNG\r\n\x1a\n':
+        if thumbnail_to_png(png_bytes, output_path):
+            size = output_path.stat().st_size
+            print(f"  OK    {output_name} (via thumbnail, {size:,} bytes)")
+            return True
 
-    size = output_path.stat().st_size
-    print(f"  OK    {output_name} ({size:,} bytes)")
-    return True
+    print(f"  FAIL  {output_name}: could not download via SVG or CDN thumbnail", file=sys.stderr)
+    return False
 
 
 # ---------------------------------------------------------------------------
