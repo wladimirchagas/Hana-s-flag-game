@@ -19,6 +19,7 @@ Options:
 
 import sys
 import os
+import gzip
 import hashlib
 import urllib.request
 import urllib.parse
@@ -312,6 +313,25 @@ def download_svg(url: str, retries: int = 3) -> bytes | None:
     return None
 
 
+def looks_like_svg(data: bytes) -> bool:
+    """Return True if data looks like SVG/SVGZ or could be one after decompression."""
+    stripped = data.lstrip(b"\xef\xbb\xbf")  # strip UTF-8 BOM if present
+    return stripped.startswith(b"<") or data[:2] == b"\x1f\x8b"
+
+
+def ensure_svg_bytes(data: bytes) -> bytes | None:
+    """Decompress gzip/SVGZ and strip BOM; return None if not SVG-like."""
+    if data[:2] == b"\x1f\x8b":
+        try:
+            data = gzip.decompress(data)
+        except Exception:
+            return None
+    data = data.lstrip(b"\xef\xbb\xbf")  # strip UTF-8 BOM
+    if not data.lstrip().startswith(b"<"):
+        return None
+    return data
+
+
 def svg_to_png(svg_bytes: bytes, output_path: Path) -> bool:
     """Convert SVG bytes to PNG at the configured dimensions."""
     try:
@@ -346,8 +366,9 @@ def process_flag(output_name: str, wikimedia_name: str, force: bool) -> bool:
 
     svg_bytes = download_svg(svg_url)
 
-    # If API-sourced URL returned non-SVG (e.g. HTML rate-limit page), retry with direct URL
-    if svg_bytes and used_api_url and not svg_bytes.lstrip().startswith(b"<"):
+    # If API-sourced URL returned non-SVG (e.g. HTML rate-limit page), retry with direct URL.
+    # Note: also handles gzip/SVGZ — looks_like_svg accepts those too.
+    if svg_bytes and used_api_url and not looks_like_svg(svg_bytes):
         direct_url = get_wikimedia_direct_url(wikimedia_name)
         print(f"        (API URL returned non-SVG, retrying direct: {direct_url})", file=sys.stderr)
         svg_bytes = download_svg(direct_url)
@@ -356,7 +377,8 @@ def process_flag(output_name: str, wikimedia_name: str, force: bool) -> bool:
         print(f"  FAIL  {output_name}: could not download SVG", file=sys.stderr)
         return False
 
-    if not svg_bytes.lstrip().startswith(b"<"):
+    svg_bytes = ensure_svg_bytes(svg_bytes)
+    if svg_bytes is None:
         print(f"  FAIL  {output_name}: response doesn't look like SVG", file=sys.stderr)
         return False
 
