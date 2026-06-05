@@ -66,8 +66,8 @@ FLAG_MAPPINGS: dict[str, str] = {
     # Qing dynasty / Manchu Empire: the Yellow Dragon Banner (adopted 1889)
     # Used for 1850/1914 eras (Qing; in 1914 the dataset keeps "Manchu Empire"
     # even though the ROC replaced it — but the yellow dragon is most iconic).
-    # Source: https://commons.wikimedia.org/wiki/File:Flag_of_the_Qing_dynasty_(1889).svg
-    "qing-dynasty.png": "Flag_of_the_Qing_dynasty_(1889).svg",
+    # Source: https://commons.wikimedia.org/wiki/File:Flag_of_the_Qing_dynasty_(1889-1912).svg
+    "qing-dynasty.png": "Flag_of_the_Qing_dynasty_(1889-1912).svg",
 
     # =========================================================================
     # Flags used in 1500–1815 eras
@@ -80,10 +80,10 @@ FLAG_MAPPINGS: dict[str, str] = {
     "spain-burgundy.png": "Flag_of_Cross_of_Burgundy.svg",
 
     # Spain 1785 flag: red-yellow-red tricolour adopted by Charles III
-    "spain-1785.png": "Flag_of_Spain_(1785-1873,_1875-1931).svg",
+    "spain-1785.png": "Flag_of_Spain_(1785–1873,_1875–1931).svg",
 
     # Ottoman Empire: red with white crescent and star (adopted 1844)
-    "ottoman-empire.png": "Flag_of_the_Ottoman_Empire_(1844-1922).svg",
+    "ottoman-empire.png": "Flag_of_the_Ottoman_Empire_(1844–1922).svg",
 
     # Russian Empire: white-blue-red tricolour
     "russian-empire.png": "Flag_of_Russia.svg",
@@ -91,11 +91,13 @@ FLAG_MAPPINGS: dict[str, str] = {
     # Austrian Empire: red-white-red civil ensign (one of Europe's oldest)
     "austrian-empire.png": "Flag_of_Austria.svg",
 
-    # Rattanakosin Siam: red field with white elephant (pre-1917)
-    "siam.png": "Flag_of_Thailand_(until_1855).svg",
+    # Rattanakosin Siam: red field with white elephant in chakra (State Ensign 1817–1855)
+    # This flag was used 1817-1855 covering the 1815 and 1850 eras; the plain elephant
+    # design that lasted until 1917 was adopted at the Treaty of Bowring in 1855.
+    "siam.png": "Flag_of_Thailand_(1817).svg",
 
-    # Portuguese UKPBA flag: United Kingdom of Portugal, Brazil and Algarves
-    "ukpba.png": "Flag_of_the_United_Kingdom_of_Portugal,_Brazil_and_the_Algarves.svg",
+    # Portuguese UKPBA flag: United Kingdom of Portugal, Brazil and the Algarves
+    "ukpba.png": "Flag_of_the_United_Kingdom_of_Portugal,_Brazil,_and_the_Algarves.svg",
 
     # =========================================================================
     # 19th–20th century flags
@@ -128,37 +130,39 @@ FLAG_MAPPINGS: dict[str, str] = {
     # white, black — representing the Han, Manchu, Mongol, Hui, and Tibetan peoples.
     "roc-1912.png": "Flag_of_China_(1912–1928).svg",
 
-    # Egypt Khedivate / Kingdom: red with white crescent and 3 stars
-    "egypt-khedive.png": "Flag_of_Egypt_(1882-1952).svg",
+    # Egypt Khedivate / Kingdom: red with white crescent and 3 stars (1882–1922)
+    "egypt-khedive.png": "Flag_of_Egypt_(1882-1922).svg",
 
-    # Abyssinia / Ethiopia (1897–1936): green-yellow-red with Lion of Judah
-    "abyssinia.png": "Flag_of_Ethiopia_(1897-1936).svg",
+    # Abyssinia / Ethiopia (1897–1974): green-yellow-red with Lion of Judah
+    "abyssinia.png": "Flag_of_Ethiopia_(1897–1974).svg",
 
     # United States 15-star flag (1795–1818): the Star-Spangled Banner
     "us-15star.png": "Flag_of_the_United_States_(1795-1818).svg",
 
     # Union of Burma (1948–1974): red with blue canton and 6 stars
-    "burma-1948.png": "Flag_of_Burma_(1948-1974).svg",
+    "burma-1948.png": "Flag_of_Burma_(1948–1974).svg",
 
-    # Dominion of Ceylon (1948–1972): lion with bo-leaves, saffron and green
-    "ceylon.png": "Flag_of_Ceylon_(1948–1972).svg",
+    # Dominion of Ceylon (1951–1972): lion with bo-leaves, saffron and green strips
+    # The 1948–1951 flag had the lion without bo-leaves; the 1951 update is the
+    # recognisable version used for the 1960 era.
+    "ceylon.png": "Flag_of_Ceylon_(1951–1972).svg",
 
     # =========================================================================
     # Roman / ancient era
     # =========================================================================
 
-    # Roman Empire: SPQR vexillum (no surviving flag; this is a reconstructed
-    # vexillum used as a conventional symbol)
-    "roman-empire.png": "Vexillum_of_the_Roman_Empire.svg",
+    # Roman Empire: SPQR vexilloid (no surviving flag; this is a reconstructed
+    # vexilloid used as a conventional symbol)
+    "roman-empire.png": "Vexilloid_of_the_Roman_Empire.svg",
 
     # Parthian Empire: Arsacid dynasty standard
-    "parthian-empire.png": "Flag_of_Arsacid_Empire.svg",
+    "parthian-empire.png": "Flag_of_Parthian_Empire.svg",
 
     # =========================================================================
     # British Penang (BEIC): East India Company ensign
     # =========================================================================
 
-    "penang.png": "British_East_India_Company_Flag_(1801).svg",
+    "penang.png": "Flag_of_the_British_East_India_Company_(1801).svg",
 
     # =========================================================================
     # Brunei Sultanate (pre-1906): plain yellow flag
@@ -192,7 +196,7 @@ FLAG_MAPPINGS: dict[str, str] = {
 
     # Portugal (medieval / early-modern era): the Quinas banner
     # The traditional five shields design dates back to the 12th century
-    "portugal-1500.png": "Flag_of_Portugal_(1830).svg",
+    "portugal-1500.png": "Flag_of_Portugal_(1830–1910).svg",
 
     # Dutch Republic (1700 era): Prince's Flag / Dutch tricolour
     "dutch-republic.png": "Flag_of_the_Netherlands.svg",
@@ -204,7 +208,7 @@ FLAG_MAPPINGS: dict[str, str] = {
     "venice.png": "Flag_of_Most_Serene_Republic_of_Venice.svg",
 
     # Polish-Lithuanian Commonwealth (1569–1795)
-    "poland-lithuania.png": "Flag_of_Polish-Lithuanian_Commonwealth.svg",
+    "poland-lithuania.png": "Flag_of_the_Polish-Lithuanian_Commonwealth_(2-3).svg",
 
     # Ayutthaya Kingdom (Thai kingdom, 1351–1767): different from Rattanakosin
     "ayutthaya.png": "Flag_of_Thailand_(Ayutthaya_period).svg",
@@ -218,8 +222,9 @@ FLAG_MAPPINGS: dict[str, str] = {
     #  showing the Dannebrog explicitly for pre-modern eras if needed)
     # Skipped — already covered via MODERN_NAME_ALIASES["Denmark-Norway"]
 
-    # Mughal Empire: the red/green crescent-and-star standard
-    "mughal-empire.png": "Flag_of_the_Mughal_Empire.svg",
+    # Mughal Empire: triangular pennant (the only well-documented Mughal battle standard)
+    # Note: this flag is not yet referenced in historicalEras.ts
+    "mughal-empire.png": "Flag_of_the_Mughal_Empire_(triangular).svg",
 
     # Byzantine Empire (Eastern Roman): purple/gold imperial labarum
     "byzantine-empire.png": "Palaiologos_dynasty_flag.svg",
