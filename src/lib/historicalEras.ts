@@ -583,7 +583,8 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // Asian monarchies with long-established flags or symbols
   ["Nepal", { continent: "South Asia", note: "Kingdom of Nepal — the unique double-pennant crimson flag is one of the world's oldest national symbols, formalised in 1962 but in use for centuries.", modernName: "Nepal", population: 3_000_000 }],
   ["Bhutan", { continent: "South Asia", note: "Kingdom of Bhutan — the Druk (Thunder Dragon) flag has been in use since at least the 18th century.", modernName: "Bhutan", population: 300_000 }],
-  ["Oman", { continent: "Arabia", note: "Sultanate of Oman — the Al Said dynasty has flown a red flag since 1744; the modern design with emblems was formalised in 1970.", modernName: "Oman", population: 700_000 }],
+  // Modern Oman flag adopted 1970 — wrong for 1815/1850 (they flew a plain red flag).
+  ["Oman", { continent: "Arabia", note: "Sultanate of Oman — the Al Said dynasty has flown a red flag since 1744; the modern design with white stripe and emblem was formalised in 1970.", noFlag: true, population: 700_000 }],
 
   // Joseon Korea — no modern-style national flag until the Taegukgi (1882)
   ["Korea", { continent: "East Asia", note: "Joseon (Yi) dynasty of Korea. No standardised national flag until the Taegukgi was introduced in 1882.", noFlag: true, population: 7_000_000 }],
@@ -1126,6 +1127,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the red-yellow-red Crown of Castile flag flew until the 1898 revolution.", population: 2_500_000 }],
     // New South Wales in 1815 = British Crown Colony (est. 1788).
     ["New South Wales", { modernName: "United Kingdom", continent: "Oceania", note: "British Crown Colony of New South Wales — established as a penal colony in 1788. The Union Jack flew over the colony until Australian federation in 1901.", population: 30_000 }],
+    // Luxembourg tricolour adopted 1845 — wrong for 1815 (part of German Confederation).
+    ["Luxembourg", { noFlag: true, continent: "Western Europe", note: "Grand Duchy of Luxembourg in 1815 — member of the German Confederation after the Congress of Vienna. The red-white-blue tricolour wasn't adopted until 1845.", population: 300_000 }],
+    // Siam (Rattanakosin) used the red elephant flag — different from the 1917 tricolour.
+    ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam (Rattanakosin) — Chakri dynasty, capital Bangkok. The red-field white elephant flag was in use; the modern Thai tricolour wasn't adopted until 1917.", population: 4_000_000 }],
   ])],
 
   // === 1850 (Industrial age) overrides ======================================
@@ -1195,6 +1200,12 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Manchu Empire", { noFlag: true, continent: "East Asia", note: "Qing dynasty China in 1850 — the Taiping Rebellion had just begun. The Yellow Dragon Banner was not adopted until 1889; before then the Qing had no standardised national flag.", population: 430_000_000 }],
     // New South Wales in 1850 = British Crown Colony.
     ["New South Wales", { modernName: "United Kingdom", continent: "Oceania", note: "British Crown Colony of New South Wales — the Union Jack flew over the colony throughout the 19th century until Australian federation in 1901.", population: 265_000 }],
+    // Burma in 1850 = Konbaung dynasty. Same as 1815 — no standardised flag.
+    ["Burma", { noFlag: true, continent: "Southeast Asia", note: "Konbaung dynasty of Burma in 1850 — royal peacock banners were used but no standardised national flag existed.", population: 4_000_000 }],
+    // Siam in 1850 = Rattanakosin under Rama IV (Mongkut). Red elephant flag.
+    ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam under Rama IV (King Mongkut). The red-field white elephant flag was in use; the modern Thai tricolour wasn't adopted until 1917.", population: 5_500_000 }],
+    // Ceylon in 1850 = British Crown Colony. Union Jack, not the modern Sri Lanka flag (1972).
+    ["Ceylon", { modernName: "United Kingdom", continent: "South Asia", note: "British Crown Colony of Ceylon in 1850 — the Union Jack flew until independence in 1948.", population: 1_800_000 }],
   ])],
 
   // === 1914 (eve of WWI) overrides ==========================================
@@ -1234,6 +1245,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Ethiopia (1914 dataset spells it Abyssinia — handled above; if it
     // appears as 'Ethiopia' separately, mirror the Menelik flag).
     ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Empire of Ethiopia — same Menelik II flag (1897–1936).", population: 11_000_000 }],
+    // Burma in 1914 = British Burma (part of British India since 1886). Union Jack.
+    ["Burma", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Burma — under British colonial rule as part of British India from 1886. The Union Jack flew over the territory.", population: 10_000_000 }],
+    // Siam in 1914 = Rattanakosin Kingdom, still using the red elephant flag.
+    // The modern Thai tricolour wasn't adopted until 1917.
+    ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam — the red-field white elephant flag was in use in 1914; the modern Thai tricolour was adopted in 1917.", population: 8_000_000 }],
   ])],
 
   // === 1945 (end of WWII) overrides =========================================
