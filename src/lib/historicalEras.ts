@@ -1124,6 +1124,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Hong Kong", { continent: "East Asia", note: "In 1815 Hong Kong Island was Qing Chinese territory — Britain didn't acquire it until the Treaty of Nanking (1842).", noFlag: true, population: 5_000 }],
     // Philippines in 1815 = Spanish colony
     ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the red-yellow-red Crown of Castile flag flew until the 1898 revolution.", population: 2_500_000 }],
+    // New South Wales in 1815 = British Crown Colony (est. 1788).
+    ["New South Wales", { modernName: "United Kingdom", continent: "Oceania", note: "British Crown Colony of New South Wales — established as a penal colony in 1788. The Union Jack flew over the colony until Australian federation in 1901.", population: 30_000 }],
   ])],
 
   // === 1850 (Industrial age) overrides ======================================
@@ -1190,6 +1192,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the red-yellow-red Crown of Castile flag flew until the 1898 revolution.", population: 4_000_000 }],
     // Manchu Empire in 1850 = Qing dynasty; use the yellow dragon banner.
     ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing dynasty China — the yellow dragon banner was the national flag. In 1850 the Taiping Rebellion was beginning to tear the empire apart.", population: 430_000_000 }],
+    // New South Wales in 1850 = British Crown Colony.
+    ["New South Wales", { modernName: "United Kingdom", continent: "Oceania", note: "British Crown Colony of New South Wales — the Union Jack flew over the colony throughout the 19th century until Australian federation in 1901.", population: 265_000 }],
   ])],
 
   // === 1914 (eve of WWI) overrides ==========================================
