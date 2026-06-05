@@ -32,3 +32,5 @@ dev-dist
 # Re-downloaded on demand by scripts/split-patchwork.py.
 scripts/data/*-adm1.geojson
 .claude/worktrees/
+flag-audit.html
+scripts/__pycache__/
