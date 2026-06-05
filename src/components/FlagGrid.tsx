@@ -359,13 +359,23 @@ export function FlagGrid({
                   >
                     <span className="flag-grid__thumb">
                       {url ? (
-                        <img
-                          src={url}
-                          alt=""
-                          loading="lazy"
-                          draggable={false}
-                          className="flag-grid__thumb-img"
-                        />
+                        <>
+                          <img
+                            src={url}
+                            alt=""
+                            loading="lazy"
+                            draggable={false}
+                            className="flag-grid__thumb-img"
+                            onError={(e) => {
+                              e.currentTarget.hidden = true;
+                              const sib = e.currentTarget.nextElementSibling as HTMLElement | null;
+                              if (sib) sib.hidden = false;
+                            }}
+                          />
+                          <span className="flag-grid__thumb-empty" aria-hidden="true" hidden>
+                            —
+                          </span>
+                        </>
                       ) : (
                         <span className="flag-grid__thumb-empty" aria-hidden="true">
                           —
