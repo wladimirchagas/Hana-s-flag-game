@@ -1595,3 +1595,12 @@
   border-radius: 3px;
   pointer-events: none;
 }
+
+.learn-fs__nsgt-note {
+  font-size: 0.72rem;
+  color: var(--ink-muted, #888);
+  margin: 0.2rem 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}

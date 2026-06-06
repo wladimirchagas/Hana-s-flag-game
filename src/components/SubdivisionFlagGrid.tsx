@@ -2,11 +2,12 @@ import { useMemo, useState } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 
-type GroupMode = "none" | "alpha";
+type GroupMode = "none" | "alpha" | "type";
 
 const GROUP_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
   alpha: "A–Z",
+  type: "By type",
 };
 
 type Props = {
@@ -24,7 +25,14 @@ export function SubdivisionFlagGrid({
   selectedCode,
   onSelect,
 }: Props) {
-  const [groupMode, setGroupMode] = useState<GroupMode>("none");
+  const distinctTypeCount = useMemo(
+    () => new Set(divisions.map((d) => d.typeLabel)).size,
+    [divisions],
+  );
+
+  const [groupMode, setGroupMode] = useState<GroupMode>(() =>
+    distinctTypeCount > 1 ? "type" : "none",
+  );
 
   const sorted = useMemo(
     () => [...divisions].sort((a, b) => a.name.localeCompare(b.name, "en")),
@@ -33,18 +41,35 @@ export function SubdivisionFlagGrid({
 
   const groups = useMemo(() => {
     if (groupMode === "none") return [{ heading: null, items: sorted }];
+
+    if (groupMode === "alpha") {
+      const buckets = new Map<string, SubdivisionMeta[]>();
+      for (const d of sorted) {
+        const letter = (d.name[0] ?? "").toUpperCase();
+        const key = /[A-Z]/.test(letter) ? letter : "#";
+        const arr = buckets.get(key) ?? [];
+        arr.push(d);
+        buckets.set(key, arr);
+      }
+      const list = [...buckets.entries()].sort(([a], [b]) => {
+        if (a === "#") return 1;
+        if (b === "#") return -1;
+        return a.localeCompare(b, "en");
+      });
+      return list.map(([heading, items]) => ({ heading, items }));
+    }
+
+    // "type" grouping — most populous type first, then alphabetical
     const buckets = new Map<string, SubdivisionMeta[]>();
     for (const d of sorted) {
-      const letter = (d.name[0] ?? "").toUpperCase();
-      const key = /[A-Z]/.test(letter) ? letter : "#";
-      const arr = buckets.get(key) ?? [];
+      const arr = buckets.get(d.typeLabel) ?? [];
       arr.push(d);
-      buckets.set(key, arr);
+      buckets.set(d.typeLabel, arr);
     }
-    const list = [...buckets.entries()].sort(([a], [b]) => {
-      if (a === "#") return 1;
-      if (b === "#") return -1;
-      return a.localeCompare(b, "en");
+    const list = [...buckets.entries()].sort(([labelA, itemsA], [labelB, itemsB]) => {
+      const diff = itemsB.length - itemsA.length;
+      if (diff !== 0) return diff;
+      return labelA.localeCompare(labelB, "en");
     });
     return list.map(([heading, items]) => ({ heading, items }));
   }, [sorted, groupMode]);
