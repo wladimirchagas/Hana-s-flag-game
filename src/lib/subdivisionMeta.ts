@@ -255,7 +255,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AU-X03~", name: "Macquarie Island", typeLabel: "State" },
     { code: "AU-NSW", name: "Lord Howe Island", typeLabel: "Territory" },
     { code: "AU-X04~", name: "Ashmore and Cartier Islands", typeLabel: "State" },
-    { code: "AU-ACT", name: "Australian Capital Territory", typeLabel: "Territory" }
+    { code: "AU-ACT", name: "Australian Capital Territory", typeLabel: "Territory" },
+    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "Territory" }
     ],
   },
   "AW": {
