@@ -1117,6 +1117,7 @@ export default function LearnPage() {
         const meta = SUBDIVISION_META[subdivisionCountry.code];
         return (
           <SubdivisionFlagGrid
+            key={subdivisionCountry.code}
             divisions={meta?.divisions ?? []}
             pluralLabel={meta?.pluralLabel ?? "Divisions"}
             countryName={subdivisionCountry.name}
