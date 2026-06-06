@@ -81,3 +81,61 @@ export const PARENT_TERRITORIES: Record<string, string[]> = {};
 for (const { code, parent } of ENTRIES) {
   (PARENT_TERRITORIES[parent] ??= []).push(code);
 }
+
+/**
+ * GeoJSON sources to merge into a country's subdivision map.
+ * Each entry maps the territory ISO alpha-2 code (the *.json file in /subdivisions/)
+ * to the subdivision code used in SUBDIVISION_META for that parent country.
+ * All features loaded from the territory GeoJSON are rewritten to use subdivCode
+ * so clicks on those features resolve to the correct subdivision meta entry.
+ *
+ * Only territories that actually appear in SUBDIVISION_META are listed here.
+ * Territories excluded from the meta (e.g. NSGTs without a disputed-claim exception)
+ * are intentionally omitted.
+ */
+export const TERRITORY_GEO_FOR_PARENT: Record<
+  string,
+  Array<{ geoCode: string; subdivCode: string }>
+> = {
+  DK: [
+    { geoCode: "GL", subdivCode: "DK-GL" },
+    { geoCode: "FO", subdivCode: "DK-FO" },
+  ],
+  CN: [
+    { geoCode: "HK", subdivCode: "CN-HK" },
+    { geoCode: "MO", subdivCode: "CN-MO" },
+  ],
+  NL: [
+    { geoCode: "AW", subdivCode: "NL-AW" },
+    { geoCode: "CW", subdivCode: "NL-CW" },
+    { geoCode: "SX", subdivCode: "NL-SX" },
+  ],
+  GB: [
+    { geoCode: "JE", subdivCode: "GB-JE" },
+    { geoCode: "GG", subdivCode: "GB-GG" },
+    { geoCode: "IM", subdivCode: "GB-IM" },
+    { geoCode: "GI", subdivCode: "GB-GI" },
+    { geoCode: "FK", subdivCode: "GB-FK" },
+    { geoCode: "IO", subdivCode: "GB-IO" },
+    { geoCode: "GS", subdivCode: "GB-GS" },
+  ],
+  US: [
+    { geoCode: "PR", subdivCode: "US-PR" },
+    { geoCode: "MP", subdivCode: "US-MP" },
+  ],
+  FR: [
+    { geoCode: "BL", subdivCode: "FR-BL" },
+    { geoCode: "MF", subdivCode: "FR-MF" },
+    { geoCode: "PM", subdivCode: "FR-PM" },
+    { geoCode: "WF", subdivCode: "FR-WF" },
+  ],
+  NZ: [
+    { geoCode: "CK", subdivCode: "NZ-CK" },
+    { geoCode: "NU", subdivCode: "NZ-NU" },
+  ],
+  FI: [{ geoCode: "AX", subdivCode: "FI-AX" }],
+  AU: [{ geoCode: "CC", subdivCode: "AU-CC" }],
+  // Disputed territory claimants — same GeoJSON, different subdivision codes
+  AR: [{ geoCode: "FK", subdivCode: "AR-ML~" }],
+  ES: [{ geoCode: "GI", subdivCode: "ES-GIB~" }],
+};

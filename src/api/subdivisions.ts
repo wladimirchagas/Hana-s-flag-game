@@ -4,10 +4,26 @@ import { subdivisionFlagCdnUrl, hasSubdivisionFlag } from "../lib/subdivisionFla
 const BASE = import.meta.env.BASE_URL;
 
 // Local corrected flag overrides (keyed by uppercase ISO 3166-2 code).
-// Use these to replace flags from the CDN that contain errors.
+// Use these to replace flags from the CDN that contain errors, or to
+// supply flags for territory subdivisions not in the subdivision CDN.
 const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // CDN source has a spurious red horizontal stripe; corrected locally.
   "BR-RR": `${BASE}flags/BR-RR.svg`,
+  // Territory flags via flagcdn.com — the subdivision CDN doesn't index these codes.
+  "DK-GL":  "https://flagcdn.com/gl.svg",
+  "DK-FO":  "https://flagcdn.com/fo.svg",
+  "GB-FK":  "https://flagcdn.com/fk.svg",
+  "GB-JE":  "https://flagcdn.com/je.svg",
+  "GB-GG":  "https://flagcdn.com/gg.svg",
+  "GB-IM":  "https://flagcdn.com/im.svg",
+  "GB-GI":  "https://flagcdn.com/gi.svg",
+  "GB-IO":  "https://flagcdn.com/io.svg",
+  "GB-GS":  "https://flagcdn.com/gs.svg",
+  "NZ-CK":  "https://flagcdn.com/ck.svg",
+  "NZ-NU":  "https://flagcdn.com/nu.svg",
+  "FI-AX":  "https://flagcdn.com/ax.svg",
+  "AU-CC":  "https://flagcdn.com/cc.svg",
+  "ES-GIB~": "https://flagcdn.com/gi.svg",
 };
 
 // Cache so we only fetch each country once per session.
