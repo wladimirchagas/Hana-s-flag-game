@@ -22,6 +22,11 @@ import { addLearnedCode, getDailyFlagCode } from "../lib/learnedFlags";
 import { addCodeToStoredSelection } from "../lib/countrySelection";
 import { fetchCountries, type Country } from "../api/countries";
 import { SubnationalGamePage } from "./SubnationalGamePage";
+import {
+  TERRITORY_NAME,
+  DISPUTED_TERRITORY_CODES,
+  UNDISPUTED_TERRITORY_PARENT,
+} from "../lib/territoryParentMap";
 import "../App.css";
 
 type SubnationalState = { countryCode: string; countryName: string };
@@ -288,7 +293,14 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
     [alternatives],
   );
   const countryNames = useMemo(
-    () => new Map(alternatives.map((c) => [c.code, c.name])),
+    () => new Map<string, string>([
+      ...alternatives.map((c) => [c.code, c.name] as [string, string]),
+      // Territory names for hover tooltips; disputed territories excluded so
+      // they never appear as selectable on the world map.
+      ...Object.entries(TERRITORY_NAME).filter(
+        ([code]) => !DISPUTED_TERRITORY_CODES.has(code),
+      ),
+    ]),
     [alternatives],
   );
   const codeToCountry = useMemo(
@@ -489,10 +501,13 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
             codes: countryCodes,
             names: countryNames,
             onSelect: (code) => {
+              // WorldProgressMap resolves territory codes to parent country
+              // codes before calling onSelect, so code is always a country code.
               const country = codeToCountry.get(code);
               if (country) game.setSelected(country);
             },
             onConfirm: game.confirm,
+            territoryParent: UNDISPUTED_TERRITORY_PARENT,
           }}
         />
 

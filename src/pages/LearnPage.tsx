@@ -41,7 +41,13 @@ import {
 import { fetchSubdivisionGeo, subdivisionFlagUrl } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { NSGT_CODES } from "../lib/nsgtTerritories";
-import { TERRITORY_PARENT, TERRITORY_NAME, PARENT_TERRITORIES, TERRITORY_GEO_FOR_PARENT } from "../lib/territoryParentMap";
+import {
+  TERRITORY_NAME,
+  PARENT_TERRITORIES,
+  TERRITORY_GEO_FOR_PARENT,
+  DISPUTED_TERRITORY_CODES,
+  UNDISPUTED_TERRITORY_PARENT,
+} from "../lib/territoryParentMap";
 import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
 import "./LearnPage.css";
@@ -301,14 +307,18 @@ export default function LearnPage() {
   const codes = useMemo(
     () => new Set([
       ...countries.map((c) => c.code),
-      ...Object.keys(TERRITORY_PARENT),
+      // Include only undisputed territories so disputed ones (e.g. Falkland
+      // Islands, Gibraltar) are not highlighted or clickable on the world map.
+      ...Object.keys(UNDISPUTED_TERRITORY_PARENT),
     ]),
     [countries],
   );
   const names = useMemo(
     () => new Map([
       ...countries.map((c) => [c.code, c.name] as [string, string]),
-      ...Object.entries(TERRITORY_NAME),
+      ...Object.entries(TERRITORY_NAME).filter(
+        ([code]) => !DISPUTED_TERRITORY_CODES.has(code),
+      ),
     ]),
     [countries],
   );
@@ -754,9 +764,11 @@ export default function LearnPage() {
             selectable={{
               codes,
               names,
+              // WorldProgressMap resolves territory codes to parent country
+              // codes before calling onSelect/onHover, so these handlers
+              // always receive a sovereign-country code.
               onSelect: (code) => {
-                const resolved = TERRITORY_PARENT[code] ?? code;
-                const c = codeToCountry.get(resolved);
+                const c = codeToCountry.get(code);
                 if (c) {
                   if (hoverClearTimer.current) {
                     clearTimeout(hoverClearTimer.current);
@@ -780,10 +792,10 @@ export default function LearnPage() {
                   clearTimeout(hoverClearTimer.current);
                   hoverClearTimer.current = null;
                 }
-                const resolved = TERRITORY_PARENT[code] ?? code;
-                const c = codeToCountry.get(resolved);
+                const c = codeToCountry.get(code);
                 if (c) setHovered({ kind: "modern", country: c });
               },
+              territoryParent: UNDISPUTED_TERRITORY_PARENT,
             }}
             highlightCodes={territoryHighlightCodes}
             zoom={sharedZoom}

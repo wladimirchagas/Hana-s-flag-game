@@ -139,3 +139,25 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
   AR: [{ geoCode: "FK", subdivCode: "AR-ML~" }],
   ES: [{ geoCode: "GI", subdivCode: "ES-GIB~" }],
 };
+
+// Territory alpha-2 codes contested by multiple UN member states.
+// Derived from TERRITORY_GEO_FOR_PARENT: any geoCode appearing under two or
+// more administering states is disputed and must not be clickable on the world
+// map (clicking it would silently pick one claimant over the other).
+const _disputedCount = new Map<string, number>();
+for (const mappings of Object.values(TERRITORY_GEO_FOR_PARENT)) {
+  for (const { geoCode } of mappings) {
+    _disputedCount.set(geoCode, (_disputedCount.get(geoCode) ?? 0) + 1);
+  }
+}
+export const DISPUTED_TERRITORY_CODES: ReadonlySet<string> = new Set(
+  [..._disputedCount].filter(([, n]) => n > 1).map(([code]) => code),
+);
+
+/** territory alpha-2 → parent alpha-2, excluding all disputed territories */
+export const UNDISPUTED_TERRITORY_PARENT: Record<string, string> =
+  Object.fromEntries(
+    Object.entries(TERRITORY_PARENT).filter(
+      ([code]) => !DISPUTED_TERRITORY_CODES.has(code),
+    ),
+  );
