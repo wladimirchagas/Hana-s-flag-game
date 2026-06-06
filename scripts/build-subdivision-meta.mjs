@@ -33,6 +33,68 @@ function pluralize(type) {
   return t + 's';
 }
 
+const PLURAL_LABEL_OVERRIDES = {
+  "DK": "Regions & Autonomous Territories",
+  "ES": "Autonomous Communities & Claimed Territory",
+  "FI": "Provinces & Autonomous Region",
+  "FR": "Departments & Overseas Territories",
+  "GB": "Divisions, Crown Dependencies & Disputed Territories",
+  "NL": "Provinces & Special Territories",
+  "NZ": "Regional Councils & Associated States",
+  "US": "States & Territories"
+};
+
+const TERRITORIES_TO_APPEND = {
+  "DK": [
+    { code: "DK-GL", name: "Greenland", typeLabel: "Autonomous Territory" },
+    { code: "DK-FO", name: "Faroe Islands", typeLabel: "Autonomous Territory" }
+  ],
+  "CN": [
+    { code: "CN-HK", name: "Hong Kong", typeLabel: "Special Administrative Region" },
+    { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" }
+  ],
+  "NL": [
+    { code: "NL-AW", name: "Aruba", typeLabel: "Constituent Country" },
+    { code: "NL-CW", name: "Curaçao", typeLabel: "Constituent Country" },
+    { code: "NL-SX", name: "Sint Maarten", typeLabel: "Constituent Country" }
+  ],
+  "GB": [
+    { code: "GB-JE", name: "Jersey", typeLabel: "Crown Dependency" },
+    { code: "GB-GG", name: "Guernsey", typeLabel: "Crown Dependency" },
+    { code: "GB-IM", name: "Isle of Man", typeLabel: "Crown Dependency" },
+    { code: "GB-GI", name: "Gibraltar", typeLabel: "Disputed Territory" },
+    { code: "GB-FK", name: "Falkland Islands", typeLabel: "Disputed Territory" },
+    { code: "GB-IO", name: "British Indian Ocean Territory", typeLabel: "Overseas Territory" },
+    { code: "GB-GS", name: "South Georgia and South Sandwich Islands", typeLabel: "Overseas Territory" }
+  ],
+  "US": [
+    { code: "US-PR", name: "Puerto Rico", typeLabel: "Territory" },
+    { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Territory" }
+  ],
+  "FR": [
+    { code: "FR-BL", name: "Saint Barthélemy", typeLabel: "Overseas Collectivity" },
+    { code: "FR-MF", name: "Saint Martin", typeLabel: "Overseas Collectivity" },
+    { code: "FR-PM", name: "Saint Pierre and Miquelon", typeLabel: "Overseas Collectivity" },
+    { code: "FR-WF", name: "Wallis and Futuna", typeLabel: "Overseas Collectivity" }
+  ],
+  "NZ": [
+    { code: "NZ-CK", name: "Cook Islands", typeLabel: "Associated State" },
+    { code: "NZ-NU", name: "Niue", typeLabel: "Associated State" }
+  ],
+  "FI": [
+    { code: "FI-AX", name: "Åland Islands", typeLabel: "Autonomous Region" }
+  ],
+  "AU": [
+    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "Territory" }
+  ],
+  "AR": [
+    { code: "AR-ML~", name: "Islas Malvinas", typeLabel: "Claimed Territory" }
+  ],
+  "ES": [
+    { code: "ES-GIB~", name: "Gibraltar", typeLabel: "Claimed Territory" }
+  ]
+};
+
 const files = readdirSync(INPUT_DIR).filter(f => {
   // Only include valid ISO 3166-1 alpha-2 codes (2 uppercase letters)
   const code = f.replace('.json', '');
@@ -73,7 +135,10 @@ for (const file of files.sort()) {
   }
   if (!bestType) bestType = 'Division';
 
-  const pluralLabel = pluralize(bestType);
+  let pluralLabel = pluralize(bestType);
+  if (PLURAL_LABEL_OVERRIDES[code]) {
+    pluralLabel = PLURAL_LABEL_OVERRIDES[code];
+  }
 
   // Build divisions list
   const divisions = [];
@@ -84,6 +149,10 @@ for (const file of files.sort()) {
     const name = p.name_en || p.name || divCode;
     const typeLabel = p.type_en || p.type || bestType;
     divisions.push({ code: divCode, name, typeLabel });
+  }
+
+  if (TERRITORIES_TO_APPEND[code]) {
+    divisions.push(...TERRITORIES_TO_APPEND[code]);
   }
 
   if (divisions.length === 0) continue;
