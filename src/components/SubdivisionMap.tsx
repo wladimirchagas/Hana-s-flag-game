@@ -173,19 +173,25 @@ export function SubdivisionMap({
     setPopover(prev => (prev && prev.code !== selectedCode) ? null : prev);
   }, [selectedCode]);
 
-  // Reset zoom when switching between a territory view and the main country view
-  // so the map always starts at the correct scale for whatever is being shown.
+  // Reset zoom whenever the view switches to a different territory (or back to
+  // the main country). This ensures stale zoom/pan from a previous territory
+  // doesn't carry over when the projection re-fits to a new area.
   const prevIsTerritoryRef = useRef(false);
+  const prevSelectedCodeRef = useRef<string | null>(null);
   useEffect(() => {
-    if (!geoData || !selectedCode) return;
-    const isTerritory = geoData.features.some(
+    if (!geoData) return;
+    const isTerritory = !!selectedCode && geoData.features.some(
       (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
     );
-    if (isTerritory !== prevIsTerritoryRef.current) {
-      prevIsTerritoryRef.current = isTerritory;
+    const wasTerritory = prevIsTerritoryRef.current;
+    const prevCode = prevSelectedCodeRef.current;
+    prevIsTerritoryRef.current = isTerritory;
+    prevSelectedCodeRef.current = selectedCode ?? null;
+    // Reset on territory↔main switch OR when moving between two different territories
+    if (isTerritory !== wasTerritory || (isTerritory && selectedCode !== prevCode)) {
       zoom.reset();
     }
-  // zoom.reset is stable; geoData reference changes only on country switch
+  // zoom.reset is stable; geoData changes only on country switch
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCode, geoData]);
 
@@ -321,6 +327,27 @@ export function SubdivisionMap({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [geoData, flagOverlay, selectedCode]);
 
+  // Determine which features to show:
+  //  - Territory selected: only that territory's features (avoids enormous
+  //    main-country paths dominating the territory-focused projection)
+  //  - Otherwise: only main-country features (territory features stay hidden
+  //    until explicitly selected, since their projection-space positions are
+  //    far off the main-country viewport)
+  const selectedTerritoryCode =
+    selectedCode &&
+    geoData?.features.some(
+      (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
+    )
+      ? selectedCode
+      : null;
+
+  function isFeatureVisible(feat: { properties: { _isTerritory?: boolean } }): boolean {
+    if (selectedTerritoryCode) {
+      return getSubdivCode(feat as SubdivisionGeoFeature) === selectedTerritoryCode;
+    }
+    return !feat.properties._isTerritory;
+  }
+
   function getFill(code: string): string {
     if (code === selectedCode) return palette.selectedFill;
     const result = countryResults[code];
@@ -421,7 +448,7 @@ export function SubdivisionMap({
               <FlagDefsSubdiv
                 flagOverlay={flagOverlay}
                 flagPolygonsById={flagPolygonsById}
-                features={geoData.features}
+                features={geoData.features.filter(isFeatureVisible)}
               />
             )}
 
@@ -434,6 +461,7 @@ export function SubdivisionMap({
 
               {/* Subdivision feature paths */}
               {geoData.features.map((feat, idx) => {
+                if (!isFeatureVisible(feat)) return null;
                 const path = pathByIdx.get(idx);
                 if (!path) return null;
                 const code = getSubdivCode(feat);
@@ -482,7 +510,7 @@ export function SubdivisionMap({
                 <FlagImagesSubdiv
                   flagOverlay={flagOverlay}
                   flagPolygonsById={flagPolygonsById}
-                  features={geoData.features}
+                  features={geoData.features.filter(isFeatureVisible)}
                   selectedCode={selectedCode}
                 />
               )}
