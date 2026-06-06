@@ -2646,12 +2646,15 @@
 
 /* Persistent build-info bottom bar rendered globally by App.tsx.
    Sticks to the bottom of the viewport across every route.
-   NOTE: backdrop-filter is intentionally omitted here — on iOS Safari,
-   combining backdrop-filter with position:fixed causes the element to be
-   composited against a layer rather than the visual viewport, making it
-   appear mid-page during scroll. The solid background makes blur invisible
-   anyway. The translateZ(0) hint ensures a separate GPU layer so iOS
-   correctly tracks the viewport edge on every frame. */
+   NOTE: backdrop-filter AND transform: translateZ(0) are both intentionally
+   omitted. Either property forces GPU compositing on the element. On iOS
+   Safari, a composited position:fixed element layered alongside the composited
+   sticky topbar (which also had backdrop-filter, now removed) gets positioned
+   against the wrong compositor origin during scroll — appearing mid-page
+   instead of at the viewport bottom. Plain position:fixed without any
+   compositing hint is handled in software and tracks the visual viewport
+   correctly on every frame. The solid --cream background makes any blur
+   effect invisible anyway. */
 .build-footer {
   position: fixed;
   bottom: 0;
@@ -2671,8 +2674,6 @@
   color: var(--ink-soft);
   background: var(--cream);
   border-top: 2px solid var(--ink-faint);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
   user-select: none;
 }
 

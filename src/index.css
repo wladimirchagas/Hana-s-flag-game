@@ -338,7 +338,11 @@ a {
   padding: calc(0.55rem + env(safe-area-inset-top)) clamp(0.75rem, 2vw, 1.25rem) 0.55rem;
   background: var(--cream);
   border-bottom: 2px solid var(--ink-faint);
-  backdrop-filter: saturate(140%) blur(2px);
+  /* NOTE: backdrop-filter intentionally omitted. On iOS Safari, a compositor-
+     promoted sticky sibling (backdrop-filter forces GPU compositing) causes
+     the position:fixed build-footer to be layered against the wrong origin
+     during scroll, making it appear mid-page. The solid --cream background
+     makes the blur invisible anyway. */
 }
 
 .site-topbar__left,
