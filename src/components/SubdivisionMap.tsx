@@ -173,7 +173,29 @@ export function SubdivisionMap({
     setPopover(prev => (prev && prev.code !== selectedCode) ? null : prev);
   }, [selectedCode]);
 
-  // Compute projection + paths fitted to the feature collection
+  // Reset zoom when switching between a territory view and the main country view
+  // so the map always starts at the correct scale for whatever is being shown.
+  const prevIsTerritoryRef = useRef(false);
+  useEffect(() => {
+    if (!geoData || !selectedCode) return;
+    const isTerritory = geoData.features.some(
+      (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
+    );
+    if (isTerritory !== prevIsTerritoryRef.current) {
+      prevIsTerritoryRef.current = isTerritory;
+      zoom.reset();
+    }
+  // zoom.reset is stable; geoData reference changes only on country switch
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCode, geoData]);
+
+  // Compute projection + paths fitted to the feature collection.
+  // The projection is fitted to:
+  //   - The selected territory's features when a territory subdivision is active
+  //     (so the territory fills the viewport instead of appearing as a tiny dot)
+  //   - Otherwise, the main-country features only (territory features — tagged with
+  //     _isTerritory — are excluded from fitExtent so distant territories like the
+  //     Falklands don't force a near-global zoom-out for the UK view)
   const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes } = useMemo(() => {
     const empty = {
       pathByIdx: new Map<number, string>(),
@@ -183,12 +205,28 @@ export function SubdivisionMap({
     };
     if (!geoData || geoData.features.length === 0) return empty;
 
+    // If the selected code belongs to a territory feature, fit the projection
+    // to only that territory's features so it fills the viewport.
+    const selectedTerritoryFeatures = selectedCode
+      ? geoData.features.filter(
+          (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
+        )
+      : [];
+    const mainFeatures = geoData.features.filter((f) => !f.properties._isTerritory);
+
+    const fitFeatures =
+      selectedTerritoryFeatures.length > 0
+        ? selectedTerritoryFeatures
+        : mainFeatures.length > 0
+          ? mainFeatures
+          : geoData.features;
+
     const projection = geoEqualEarth().fitExtent(
       [
         [PADDING, PADDING],
         [WIDTH - PADDING, HEIGHT - PADDING],
       ],
-      { type: "FeatureCollection", features: geoData.features } as never,
+      { type: "FeatureCollection", features: fitFeatures } as never,
     );
     const mapPath = geoPath(projection);
 
@@ -279,7 +317,9 @@ export function SubdivisionMap({
     }
 
     return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes };
-  }, [geoData, flagOverlay]);
+  // selectedCode drives which features are used for fitExtent (territory vs main)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [geoData, flagOverlay, selectedCode]);
 
   function getFill(code: string): string {
     if (code === selectedCode) return palette.selectedFill;
