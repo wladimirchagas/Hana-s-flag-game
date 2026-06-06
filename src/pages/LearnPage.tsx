@@ -40,6 +40,7 @@ import {
 } from "../lib/historicalEras";
 import { fetchSubdivisionGeo, subdivisionFlagUrl } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
+import { NSGT_CODES } from "../lib/nsgtTerritories";
 import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
 import "./LearnPage.css";
@@ -873,10 +874,16 @@ export default function LearnPage() {
                       <>
                         {selectedSubdivision && (() => {
                           const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
+                          const isNsgt = NSGT_CODES.has(selectedSubdivision.code);
                           return (
                             <div className="learn-fs__subdiv-info">
                               <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
                               <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                              {isNsgt && (
+                                <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
+                                  🌐 UN Non-Self-Governing Territory
+                                </p>
+                              )}
                               {sdUrl && (
                                 <button
                                   type="button"
@@ -976,10 +983,16 @@ export default function LearnPage() {
                   <div className="learn-fs__subdiv-row">
                     {selectedSubdivision && (() => {
                       const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
+                      const isNsgt = NSGT_CODES.has(selectedSubdivision.code);
                       return (
                         <div className="learn-fs__subdiv-info">
                           <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
                           <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                          {isNsgt && (
+                            <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
+                              🌐 UN Non-Self-Governing Territory
+                            </p>
+                          )}
                           {sdUrl && (
                             <button
                               type="button"

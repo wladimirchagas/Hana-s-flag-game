@@ -186,7 +186,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "AR": {
     countryCode: "AR",
-    pluralLabel: "Provinces",
+    pluralLabel: "Provinces & Claimed Territory",
     divisions: [
     { code: "AR-E", name: "Entre Ríos", typeLabel: "Province" },
     { code: "AR-A", name: "Salta", typeLabel: "Province" },
@@ -211,7 +211,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AR-G", name: "Santiago del Estero", typeLabel: "Province" },
     { code: "AR-D", name: "San Luis", typeLabel: "Province" },
     { code: "AR-L", name: "La Pampa", typeLabel: "Province" },
-    { code: "AR-X", name: "Córdoba", typeLabel: "Province" }
+    { code: "AR-X", name: "Córdoba", typeLabel: "Province" },
+    { code: "AR-ML~", name: "Islas Malvinas", typeLabel: "Claimed Territory" }
     ],
   },
   "AS": {
@@ -1395,7 +1396,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "ES": {
     countryCode: "ES",
-    pluralLabel: "Autonomous Communities",
+    pluralLabel: "Autonomous Communities & Claimed Territory",
     divisions: [
     { code: "ES-CE", name: "Ceuta", typeLabel: "Autonomous City" },
     { code: "ES-ML", name: "Melilla", typeLabel: "Autonomous City" },
@@ -1448,7 +1449,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "ES-J", name: "Jaén", typeLabel: "Autonomous Community" },
     { code: "ES-M", name: "Community of Madrid", typeLabel: "Autonomous Community" },
     { code: "ES-SG", name: "Segovia", typeLabel: "Autonomous Community" },
-    { code: "ES-VA", name: "Valladolid", typeLabel: "Autonomous Community" }
+    { code: "ES-VA", name: "Valladolid", typeLabel: "Autonomous Community" },
+    { code: "ES-GIB~", name: "Gibraltar", typeLabel: "Claimed Territory" }
     ],
   },
   "ET": {
@@ -1633,8 +1635,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FR-91", name: "Essonne", typeLabel: "Metropolitan department" },
     { code: "FR-77", name: "Seine-et-Marne", typeLabel: "Metropolitan department" },
     { code: "FR-94", name: "Val-de-Marne", typeLabel: "Metropolitan department" },
-    { code: "FR-PF", name: "French Polynesia", typeLabel: "Overseas Collectivity" },
-    { code: "FR-NC", name: "New Caledonia", typeLabel: "Special Collectivity" },
     { code: "FR-BL", name: "Saint Barthélemy", typeLabel: "Overseas Collectivity" },
     { code: "FR-MF", name: "Saint Martin", typeLabel: "Overseas Collectivity" },
     { code: "FR-PM", name: "Saint Pierre and Miquelon", typeLabel: "Overseas Collectivity" },
@@ -1658,7 +1658,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "GB": {
     countryCode: "GB",
-    pluralLabel: "Divisions, Crown Dependencies & Overseas Territories",
+    pluralLabel: "Divisions, Crown Dependencies & Disputed Territories",
     divisions: [
     { code: "GB-DRY", name: "Derry", typeLabel: "London Borough (city)" },
     { code: "GB-STB", name: "Strabane", typeLabel: "District" },
@@ -1895,18 +1895,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "GB-JE", name: "Jersey", typeLabel: "Crown Dependency" },
     { code: "GB-GG", name: "Guernsey", typeLabel: "Crown Dependency" },
     { code: "GB-IM", name: "Isle of Man", typeLabel: "Crown Dependency" },
-    { code: "GB-GI", name: "Gibraltar", typeLabel: "Overseas Territory" },
-    { code: "GB-BM", name: "Bermuda", typeLabel: "Overseas Territory" },
-    { code: "GB-KY", name: "Cayman Islands", typeLabel: "Overseas Territory" },
-    { code: "GB-VG", name: "British Virgin Islands", typeLabel: "Overseas Territory" },
-    { code: "GB-FK", name: "Falkland Islands", typeLabel: "Overseas Territory" },
-    { code: "GB-MS", name: "Montserrat", typeLabel: "Overseas Territory" },
-    { code: "GB-TC", name: "Turks and Caicos Islands", typeLabel: "Overseas Territory" },
-    { code: "GB-AI", name: "Anguilla", typeLabel: "Overseas Territory" },
-    { code: "GB-SH", name: "Saint Helena, Ascension and Tristan da Cunha", typeLabel: "Overseas Territory" },
+    { code: "GB-GI", name: "Gibraltar", typeLabel: "Disputed Territory" },
+    { code: "GB-FK", name: "Falkland Islands", typeLabel: "Disputed Territory" },
     { code: "GB-IO", name: "British Indian Ocean Territory", typeLabel: "Overseas Territory" },
-    { code: "GB-GS", name: "South Georgia and South Sandwich Islands", typeLabel: "Overseas Territory" },
-    { code: "GB-PN", name: "Pitcairn Islands", typeLabel: "Overseas Territory" }
+    { code: "GB-GS", name: "South Georgia and South Sandwich Islands", typeLabel: "Overseas Territory" }
     ],
   },
   "GD": {
@@ -4008,7 +4000,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "NZ": {
     countryCode: "NZ",
-    pluralLabel: "Regional Councils & Territories",
+    pluralLabel: "Regional Councils & Associated States",
     divisions: [
     { code: "NZ-X06~", name: "Auckland Islands", typeLabel: "Regional Council" },
     { code: "NZ-X05~", name: "Campbell Islands", typeLabel: "Regional Council" },
@@ -4034,8 +4026,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "NZ-GIS", name: "Gisborne", typeLabel: "Unitary Authority" },
     { code: "NZ-HKB", name: "Hawke's Bay", typeLabel: "Regional Council" },
     { code: "NZ-CK", name: "Cook Islands", typeLabel: "Associated State" },
-    { code: "NZ-NU", name: "Niue", typeLabel: "Associated State" },
-    { code: "NZ-TK", name: "Tokelau", typeLabel: "Territory" }
+    { code: "NZ-NU", name: "Niue", typeLabel: "Associated State" }
     ],
   },
   "OM": {
@@ -5741,9 +5732,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "US-WV", name: "West Virginia", typeLabel: "State" },
     { code: "US-IN", name: "Indiana", typeLabel: "State" },
     { code: "US-PR", name: "Puerto Rico", typeLabel: "Territory" },
-    { code: "US-GU", name: "Guam", typeLabel: "Territory" },
-    { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Territory" },
-    { code: "US-AS", name: "American Samoa", typeLabel: "Territory" },
     { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Territory" }
     ],
   },
