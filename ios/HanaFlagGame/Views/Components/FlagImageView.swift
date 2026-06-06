@@ -6,7 +6,7 @@ struct FlagImageView: View {
     var cornerRadius: CGFloat = 8
 
     private var flagURL: URL {
-        URL(string: "https://flagcdn.com/w320/\(code.lowercased()).png")!
+        URL(string: "https://flagcdn.com/w320/\(code.flagCdnCode).png")!
     }
 
     var body: some View {

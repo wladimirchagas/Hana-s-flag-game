@@ -1,5 +1,5 @@
 import type { SubdivisionFeatureCollection } from "../types/subdivision";
-import { subdivisionFlagCdnUrl, hasSubdivisionFlag } from "../lib/subdivisionFlagIndex";
+import { subdivisionFlagCdnUrl, hasSubdivisionFlag as hasSubdivisionFlagCdn } from "../lib/subdivisionFlagIndex";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -24,6 +24,13 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FI-AX":  "https://flagcdn.com/ax.svg",
   "AU-CC":  "https://flagcdn.com/cc.svg",
   "ES-GIB~": "https://flagcdn.com/gi.svg",
+  
+  // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
+  "FR-GF":  `${BASE}flags/FR-GF.svg`, // Custom local diagonal green/yellow flag with red star
+  "FR-GP":  "https://flagcdn.com/gp.svg",
+  "FR-MQ":  "https://flagcdn.com/mq.svg",
+  "FR-RE":  "https://flagcdn.com/re.svg",
+  "FR-YT":  "https://flagcdn.com/yt.svg",
 };
 
 // Cache so we only fetch each country once per session.
@@ -58,4 +65,8 @@ export function subdivisionFlagUrl(isoCode: string): string | null {
   return LOCAL_FLAG_OVERRIDES[key] ?? subdivisionFlagCdnUrl(isoCode);
 }
 
-export { hasSubdivisionFlag };
+export function hasSubdivisionFlag(isoCode: string): boolean {
+  const key = isoCode.toUpperCase().replace(/_/g, "-");
+  return (key in LOCAL_FLAG_OVERRIDES) || hasSubdivisionFlagCdn(isoCode);
+}
+

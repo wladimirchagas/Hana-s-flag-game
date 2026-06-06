@@ -13,10 +13,38 @@ struct Country: Identifiable, Codable, Hashable {
     var currencies: [CurrencyInfo]?
 
     var flagSvgURL: URL {
-        URL(string: "https://flagcdn.com/\(code.lowercased()).svg")!
+        URL(string: "https://flagcdn.com/\(code.flagCdnCode).svg")!
     }
     var flagPngURL: URL {
-        URL(string: "https://flagcdn.com/w320/\(code.lowercased()).png")!
+        URL(string: "https://flagcdn.com/w320/\(code.flagCdnCode).png")!
+    }
+}
+
+extension String {
+    var flagCdnCode: String {
+        let upper = self.uppercased()
+        let territoryMap: [String: String] = [
+            "DK-GL": "gl",
+            "DK-FO": "fo",
+            "GB-FK": "fk",
+            "GB-JE": "je",
+            "GB-GG": "gg",
+            "GB-IM": "im",
+            "GB-GI": "gi",
+            "GB-IO": "io",
+            "GB-GS": "gs",
+            "NZ-CK": "ck",
+            "NZ-NU": "nu",
+            "FI-AX": "ax",
+            "AU-CC": "cc",
+            "ES-GIB~": "gi",
+            "FR-GF": "gf",
+            "FR-GP": "gp",
+            "FR-MQ": "mq",
+            "FR-RE": "re",
+            "FR-YT": "yt"
+        ]
+        return territoryMap[upper] ?? self.lowercased()
     }
 }
 
