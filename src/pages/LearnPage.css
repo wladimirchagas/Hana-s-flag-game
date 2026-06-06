@@ -1604,3 +1604,14 @@
   align-items: center;
   gap: 0.3em;
 }
+
+.learn-fs__unofficial-note {
+  font-size: 0.72rem;
+  color: var(--ink-muted, #888);
+  margin: 0.4rem 0 0;
+  line-height: 1.35;
+  font-style: italic;
+  max-width: 280px;
+  text-align: center;
+}
+

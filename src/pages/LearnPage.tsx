@@ -52,6 +52,8 @@ import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/sub
 import "../App.css";
 import "./LearnPage.css";
 
+const UNOFFICIAL_FR_SUBDIVS = new Set(["FR-GF", "FR-GP", "FR-MQ", "FR-RE", "FR-YT"]);
+
 /**
  * Learn-mode sandbox with a historical era slider.
  *
@@ -958,6 +960,11 @@ export default function LearnPage() {
                                   <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                                 </button>
                               )}
+                              {UNOFFICIAL_FR_SUBDIVS.has(selectedSubdivision.code) && (
+                                <p className="learn-fs__unofficial-note">
+                                  {selectedSubdivision.name}. The flag is used locally, but the only national official flag is the French Tricolour.
+                                </p>
+                              )}
                             </div>
                           );
                         })()}
@@ -1066,6 +1073,11 @@ export default function LearnPage() {
                               />
                               <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                             </button>
+                          )}
+                          {UNOFFICIAL_FR_SUBDIVS.has(selectedSubdivision.code) && (
+                            <p className="learn-fs__unofficial-note">
+                              {selectedSubdivision.name}. The flag is used locally, but the only national official flag is the French Tricolour.
+                            </p>
                           )}
                         </div>
                       );
