@@ -313,14 +313,6 @@ export default function LearnPage() {
     [countries],
   );
 
-  // Territories of the currently-displayed country — used to co-highlight
-  // their geometries on the world map alongside the parent country.
-  const territoryHighlightCodes = useMemo(() => {
-    if (!display || display.kind !== "modern") return null;
-    const territories = PARENT_TERRITORIES[display.country.code];
-    return territories?.length ? new Set(territories) : null;
-  }, [display]);
-
   // Case-insensitive name→Country lookup, used to resolve historical polity
   // NAMEs to a modern flag (via `modernName` in the registry or the
   // MODERN_NAME_ALIASES table). Lets us cover hundreds of post-1815
@@ -339,6 +331,14 @@ export default function LearnPage() {
   // also follows this (drawn from `display`), giving the user a clear
   // "this is my selection" signal.
   const display = selected ?? hovered;
+
+  // Territories of the currently-displayed country — used to co-highlight
+  // their geometries on the world map alongside the parent country.
+  const territoryHighlightCodes = useMemo(() => {
+    if (!display || display.kind !== "modern") return null;
+    const territories = PARENT_TERRITORIES[display.country.code];
+    return territories?.length ? new Set(territories) : null;
+  }, [display]);
 
   function exitSubdivisionMode() {
     setSubdivisionMode(false);
