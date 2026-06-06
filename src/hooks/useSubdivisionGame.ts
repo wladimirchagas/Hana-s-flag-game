@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { fetchSubdivisionGeo, hasSubdivisionFlag } from "../api/subdivisions";
+import { fetchMergedSubdivisionGeo, hasSubdivisionFlag } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import type { SubdivisionMeta } from "../types/subdivision";
 import type { SubdivisionFeatureCollection } from "../types/subdivision";
@@ -101,7 +101,7 @@ export function useSubdivisionGame(
 
     (async () => {
       try {
-        const geo = await fetchSubdivisionGeo(countryCode);
+        const geo = await fetchMergedSubdivisionGeo(countryCode);
         if (cancelled) return;
 
         const metaEntry = SUBDIVISION_META[countryCode.toUpperCase()];

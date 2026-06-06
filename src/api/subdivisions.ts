@@ -1,5 +1,6 @@
 import type { SubdivisionFeatureCollection } from "../types/subdivision";
 import { subdivisionFlagCdnUrl, hasSubdivisionFlag as hasSubdivisionFlagCdn } from "../lib/subdivisionFlagIndex";
+import { TERRITORY_GEO_FOR_PARENT } from "../lib/territoryParentMap";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -54,6 +55,38 @@ export async function fetchSubdivisionGeo(
     cache.set(key, null);
     return null;
   }
+}
+
+export async function fetchMergedSubdivisionGeo(
+  code: string,
+): Promise<SubdivisionFeatureCollection | null> {
+  const territoryMappings = TERRITORY_GEO_FOR_PARENT[code] ?? [];
+  const [mainGeo, ...territoryGeos] = await Promise.all([
+    fetchSubdivisionGeo(code),
+    ...territoryMappings.map((t) => fetchSubdivisionGeo(t.geoCode)),
+  ]);
+  const extraFeatures = territoryGeos.flatMap((geo, i) => {
+    const subdivCode = territoryMappings[i]!.subdivCode;
+    return (geo?.features ?? []).map((feat) => ({
+      ...feat,
+      properties: { ...feat.properties, iso_3166_2: subdivCode, _isTerritory: true },
+    }));
+  });
+  if (!mainGeo && extraFeatures.length === 0) return null;
+  const updatedMainFeatures = (mainGeo?.features ?? []).map((feat) => {
+    const subdivCode = feat.properties?.iso_3166_2 || "";
+    if (["FR-GF", "FR-GP", "FR-MQ", "FR-RE", "FR-YT"].includes(subdivCode)) {
+      return {
+        ...feat,
+        properties: { ...feat.properties, _isTerritory: true },
+      };
+    }
+    return feat;
+  });
+  return {
+    type: "FeatureCollection",
+    features: [...updatedMainFeatures, ...extraFeatures],
+  };
 }
 
 /**

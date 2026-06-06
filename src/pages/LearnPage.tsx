@@ -38,13 +38,12 @@ import {
   polityModernName,
   type Era,
 } from "../lib/historicalEras";
-import { fetchSubdivisionGeo, subdivisionFlagUrl } from "../api/subdivisions";
+import { subdivisionFlagUrl, fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { NSGT_CODES } from "../lib/nsgtTerritories";
 import {
   TERRITORY_NAME,
   PARENT_TERRITORIES,
-  TERRITORY_GEO_FOR_PARENT,
   DISPUTED_TERRITORY_CODES,
   UNDISPUTED_TERRITORY_PARENT,
 } from "../lib/territoryParentMap";
@@ -359,30 +358,7 @@ export default function LearnPage() {
     setSubdivisionCountry(null);
   }
 
-  // Fetch + merge GeoJSON for a country and all its associated territories.
-  // Features from territory files are rewritten so their iso_3166_2 matches
-  // the subdivision code in SUBDIVISION_META, enabling click resolution.
-  async function fetchMergedSubdivisionGeo(
-    code: string,
-  ): Promise<SubdivisionFeatureCollection | null> {
-    const territoryMappings = TERRITORY_GEO_FOR_PARENT[code] ?? [];
-    const [mainGeo, ...territoryGeos] = await Promise.all([
-      fetchSubdivisionGeo(code),
-      ...territoryMappings.map((t) => fetchSubdivisionGeo(t.geoCode)),
-    ]);
-    const extraFeatures = territoryGeos.flatMap((geo, i) => {
-      const subdivCode = territoryMappings[i]!.subdivCode;
-      return (geo?.features ?? []).map((feat) => ({
-        ...feat,
-        properties: { ...feat.properties, iso_3166_2: subdivCode, _isTerritory: true },
-      }));
-    });
-    if (!mainGeo && extraFeatures.length === 0) return null;
-    return {
-      type: "FeatureCollection",
-      features: [...(mainGeo?.features ?? []), ...extraFeatures],
-    };
-  }
+
 
   const handleEnterSubdivisionMode = useCallback(async () => {
     if (!display || display.kind !== "modern") return;

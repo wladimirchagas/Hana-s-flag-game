@@ -165,6 +165,11 @@ export function SubdivisionMap({
 
   const isInteractive = !!onSelect && !disabled;
 
+  const isNetherlands = useMemo(() => {
+    return geoData?.features.some((f) => getSubdivCode(f).startsWith("NL-")) ?? false;
+  }, [geoData]);
+
+
   // Hide popover when disabled
   useEffect(() => {
     if (disabled) setPopover(null);
@@ -182,7 +187,7 @@ export function SubdivisionMap({
   const prevSelectedCodeRef = useRef<string | null>(null);
   useEffect(() => {
     if (!geoData) return;
-    const isTerritory = !!selectedCode && geoData.features.some(
+    const isTerritory = !isNetherlands && !!selectedCode && geoData.features.some(
       (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
     );
     const wasTerritory = prevIsTerritoryRef.current;
@@ -195,7 +200,7 @@ export function SubdivisionMap({
     }
   // zoom.reset is stable; geoData changes only on country switch
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedCode, geoData]);
+  }, [selectedCode, geoData, isNetherlands]);
 
   // Compute projection + paths fitted to the feature collection.
   // The projection is fitted to:
@@ -215,7 +220,7 @@ export function SubdivisionMap({
 
     // If the selected code belongs to a territory feature, fit the projection
     // to only that territory's features so it fills the viewport.
-    const selectedTerritoryFeatures = selectedCode
+    const selectedTerritoryFeatures = selectedCode && !isNetherlands
       ? geoData.features.filter(
           (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
         )
@@ -223,11 +228,13 @@ export function SubdivisionMap({
     const mainFeatures = geoData.features.filter((f) => !f.properties._isTerritory);
 
     const fitFeatures =
-      selectedTerritoryFeatures.length > 0
-        ? selectedTerritoryFeatures
-        : mainFeatures.length > 0
-          ? mainFeatures
-          : geoData.features;
+      isNetherlands
+        ? geoData.features
+        : selectedTerritoryFeatures.length > 0
+          ? selectedTerritoryFeatures
+          : mainFeatures.length > 0
+            ? mainFeatures
+            : geoData.features;
 
     const projection = geoEqualEarth().fitExtent(
       [
@@ -327,7 +334,7 @@ export function SubdivisionMap({
     return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes };
   // selectedCode drives which features are used for fitExtent (territory vs main)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [geoData, flagOverlay, selectedCode]);
+  }, [geoData, flagOverlay, selectedCode, isNetherlands]);
 
   // Determine which features to show:
   //  - Territory selected: only that territory's features (avoids enormous
@@ -337,6 +344,7 @@ export function SubdivisionMap({
   //    far off the main-country viewport)
   const selectedTerritoryCode =
     selectedCode &&
+    !isNetherlands &&
     geoData?.features.some(
       (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
     )
@@ -344,6 +352,9 @@ export function SubdivisionMap({
       : null;
 
   function isFeatureVisible(feat: { properties: { _isTerritory?: boolean } }): boolean {
+    if (isNetherlands) {
+      return true;
+    }
     if (selectedTerritoryCode) {
       return getSubdivCode(feat as SubdivisionGeoFeature) === selectedTerritoryCode;
     }
