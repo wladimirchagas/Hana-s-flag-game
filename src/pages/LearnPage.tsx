@@ -372,7 +372,7 @@ export default function LearnPage() {
       const subdivCode = territoryMappings[i]!.subdivCode;
       return (geo?.features ?? []).map((feat) => ({
         ...feat,
-        properties: { ...feat.properties, iso_3166_2: subdivCode },
+        properties: { ...feat.properties, iso_3166_2: subdivCode, _isTerritory: true },
       }));
     });
     if (!mainGeo && extraFeatures.length === 0) return null;

@@ -18,6 +18,8 @@ export type SubdivisionGeoFeature = {
     iso_3166_2?: string;
     type_en?: string;
     type?: string;
+    /** True for features merged from a territory GeoJSON file (not the parent country's own admin-1 data). */
+    _isTerritory?: boolean;
   };
   geometry: unknown;
 };
