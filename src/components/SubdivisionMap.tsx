@@ -225,6 +225,26 @@ export function SubdivisionMap({
     setPopover(prev => (prev && prev.code !== selectedCode) ? null : prev);
   }, [selectedCode]);
 
+  // Reset zoom when switching between a territory subdivision and the main
+  // country view, or when jumping from one territory to another.
+  const prevIsTerritoryRef = useRef(false);
+  const prevSelectedCodeRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (!geoData) return;
+    const isTerritory = !!selectedCode && geoData.features.some(
+      (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
+    );
+    const wasTerritory = prevIsTerritoryRef.current;
+    const prevCode = prevSelectedCodeRef.current;
+    prevIsTerritoryRef.current = isTerritory;
+    prevSelectedCodeRef.current = selectedCode ?? null;
+    if (isTerritory !== wasTerritory || (isTerritory && selectedCode !== prevCode)) {
+      zoom.reset();
+    }
+  // zoom.reset is stable; geoData changes only on country switch
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedCode, geoData]);
+
   // Compute projection + paths fitted to the feature collection
   const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes } = useMemo(() => {
     const empty = {
@@ -235,11 +255,23 @@ export function SubdivisionMap({
     };
     if (!geoData || geoData.features.length === 0) return empty;
 
-    // Use only the main geographic cluster for fitExtent so that distant
-    // overseas territories (e.g. Caribbean islands in NL.json, Bouvet Island
-    // in NO, overseas departments in FR) don't shrink the main country to
-    // an invisible speck. All features are still rendered below.
-    const fitFeatures = getProjectionFitFeatures(geoData.features);
+    // When a territory subdivision is selected, fit the projection to just
+    // that territory's features so it fills the viewport. Otherwise, fit to
+    // the main-country cluster (excluding _isTerritory-tagged features added
+    // from separate territory GeoJSON files) to keep the main country large
+    // and legible. getProjectionFitFeatures further filters out distant
+    // outliers that are embedded in the parent country's own GeoJSON (e.g.
+    // Caribbean features in NL.json, Bouvet Island in NO.json).
+    const selectedTerritoryFeaturesForFit = selectedCode
+      ? geoData.features.filter(
+          (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
+        )
+      : [];
+    const mainFeatures = geoData.features.filter((f) => !f.properties._isTerritory);
+    const fitFeatures =
+      selectedTerritoryFeaturesForFit.length > 0
+        ? selectedTerritoryFeaturesForFit
+        : getProjectionFitFeatures(mainFeatures.length > 0 ? mainFeatures : geoData.features);
     const projection = geoEqualEarth().fitExtent(
       [
         [PADDING, PADDING],
@@ -336,7 +368,26 @@ export function SubdivisionMap({
     }
 
     return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes };
-  }, [geoData, flagOverlay]);
+  // selectedCode drives which features are used for fitExtent (territory vs main)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [geoData, flagOverlay, selectedCode]);
+
+  // Which territory (if any) is currently selected — used to show only that
+  // territory's polygon and hide everything else while it's in focus.
+  const selectedTerritoryCode =
+    selectedCode &&
+    geoData?.features.some(
+      (f) => f.properties._isTerritory && getSubdivCode(f) === selectedCode,
+    )
+      ? selectedCode
+      : null;
+
+  function isFeatureVisible(feat: { properties: { _isTerritory?: boolean } }): boolean {
+    if (selectedTerritoryCode) {
+      return getSubdivCode(feat as SubdivisionGeoFeature) === selectedTerritoryCode;
+    }
+    return !feat.properties._isTerritory;
+  }
 
   function getFill(code: string): string {
     if (code === selectedCode) return palette.selectedFill;
@@ -438,7 +489,7 @@ export function SubdivisionMap({
               <FlagDefsSubdiv
                 flagOverlay={flagOverlay}
                 flagPolygonsById={flagPolygonsById}
-                features={geoData.features}
+                features={geoData.features.filter(isFeatureVisible)}
               />
             )}
 
@@ -451,6 +502,7 @@ export function SubdivisionMap({
 
               {/* Subdivision feature paths */}
               {geoData.features.map((feat, idx) => {
+                if (!isFeatureVisible(feat)) return null;
                 const path = pathByIdx.get(idx);
                 if (!path) return null;
                 const code = getSubdivCode(feat);
@@ -499,7 +551,7 @@ export function SubdivisionMap({
                 <FlagImagesSubdiv
                   flagOverlay={flagOverlay}
                   flagPolygonsById={flagPolygonsById}
-                  features={geoData.features}
+                  features={geoData.features.filter(isFeatureVisible)}
                   selectedCode={selectedCode}
                 />
               )}
