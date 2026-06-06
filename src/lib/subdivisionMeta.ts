@@ -112,7 +112,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AI-X11~", name: "The Farrington", typeLabel: "District" },
     { code: "AI-X08~", name: "Sandy Hill Bay", typeLabel: "District" },
     { code: "AI-X04~", name: "Island Harbour", typeLabel: "District" },
-    { code: "AI-X00", name: "AI-X00", typeLabel: "District" },
     { code: "AI-X03~", name: "George Hill", typeLabel: "District" },
     { code: "AI-X12~", name: "The Quarter", typeLabel: "District" }
     ],
@@ -180,8 +179,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "AQ",
     pluralLabel: "Divisions",
     divisions: [
-    { code: "AQ-X01~", name: "Antarctica", typeLabel: "Division" },
-    { code: "AQ-X02~", name: "AQ-X02~", typeLabel: "Division" }
+    { code: "AQ-X01~", name: "Antarctica", typeLabel: "Division" }
     ],
   },
   "AR": {
@@ -243,7 +241,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "AU": {
     countryCode: "AU",
-    pluralLabel: "States",
+    pluralLabel: "States & Territories",
     divisions: [
     { code: "AU-WA", name: "Western Australia", typeLabel: "State" },
     { code: "AU-NT", name: "Northern Territory", typeLabel: "Territory" },
@@ -253,9 +251,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AU-X02~", name: "Jervis Bay Territory", typeLabel: "Territory" },
     { code: "AU-VIC", name: "Victoria", typeLabel: "State" },
     { code: "AU-TAS", name: "Tasmania", typeLabel: "State" },
-    { code: "AU-X03~", name: "Macquarie Island", typeLabel: "State" },
+    { code: "AU-X03~", name: "Macquarie Island", typeLabel: "Territory" },
     { code: "AU-NSW", name: "Lord Howe Island", typeLabel: "Territory" },
-    { code: "AU-X04~", name: "Ashmore and Cartier Islands", typeLabel: "State" },
+    { code: "AU-X04~", name: "Ashmore and Cartier Islands", typeLabel: "Territory" },
     { code: "AU-ACT", name: "Australian Capital Territory", typeLabel: "Territory" },
     { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "Territory" }
     ],
@@ -965,7 +963,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "CN": {
     countryCode: "CN",
-    pluralLabel: "Provinces",
+    pluralLabel: "Provinces & Special Territories",
     divisions: [
     { code: "CN-XJ", name: "Xinjiang", typeLabel: "Autonomous Region" },
     { code: "CN-XZ", name: "Tibet", typeLabel: "Autonomous Region" },
@@ -985,7 +983,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CN-SD", name: "Shandong", typeLabel: "Province" },
     { code: "CN-HE", name: "Hebei", typeLabel: "Province" },
     { code: "CN-TJ", name: "Tianjin", typeLabel: "Municipality" },
-    { code: "CN-X01~", name: "Paracel Islands", typeLabel: "Province" },
+    { code: "CN-X01~", name: "Paracel Islands", typeLabel: "Territory" },
     { code: "CN-BJ", name: "Beijing", typeLabel: "Municipality" },
     { code: "CN-SC", name: "Sichuan", typeLabel: "Province" },
     { code: "CN-CQ", name: "Chongqing", typeLabel: "Municipality" },
@@ -1028,7 +1026,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CO-ATL", name: "Atlántico", typeLabel: "Department" },
     { code: "CO-MAG", name: "Magdalena", typeLabel: "Department" },
     { code: "CO-SAP", name: "Archipelago of Saint Andréws", typeLabel: "Department" },
-    { code: "CO-X01~", name: "CO-X01~", typeLabel: "Department" },
     { code: "CO-CAQ", name: "Caquetá", typeLabel: "Intendancy" },
     { code: "CO-HUI", name: "Huila", typeLabel: "Department" },
     { code: "CO-GUV", name: "Guaviare", typeLabel: "Commissiary" },
@@ -2786,8 +2783,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "KI",
     pluralLabel: "Divisions",
     divisions: [
-    { code: "KI-X01~", name: "Kiribati", typeLabel: "Division" },
-    { code: "KI-X02~", name: "KI-X02~", typeLabel: "Division" }
+    { code: "KI-X01~", name: "Kiribati", typeLabel: "Division" }
     ],
   },
   "KM": {
@@ -3739,7 +3735,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MX-MIC", name: "Michoacán", typeLabel: "State" },
     { code: "MX-GRO", name: "Guerrero", typeLabel: "State" },
     { code: "MX-OAX", name: "Oaxaca", typeLabel: "State" },
-    { code: "MX-X01~", name: "MX-X01~", typeLabel: "State" },
     { code: "MX-MEX", name: "State of Mexico", typeLabel: "State" },
     { code: "MX-PUE", name: "Puebla", typeLabel: "State" },
     { code: "MX-MOR", name: "Morelos", typeLabel: "State" },
@@ -3934,7 +3929,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "NO": {
     countryCode: "NO",
-    pluralLabel: "Counties",
+    pluralLabel: "Counties & Dependencies",
     divisions: [
     { code: "NO-19", name: "Troms", typeLabel: "County" },
     { code: "NO-18", name: "Nordland", typeLabel: "County" },
@@ -3955,7 +3950,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "NO-14", name: "Sogn og Fjordane", typeLabel: "County" },
     { code: "NO-15", name: "Møre og Romsdal", typeLabel: "County" },
     { code: "NO-21", name: "Svalbard", typeLabel: "Territory" },
-    { code: "NO-X01~", name: "Bouvet Island", typeLabel: "County" },
+    { code: "NO-X01~", name: "Bouvet Island", typeLabel: "Territory" },
     { code: "NO-05", name: "Oppland", typeLabel: "County" }
     ],
   },
@@ -4008,14 +4003,14 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "NZ": {
     countryCode: "NZ",
-    pluralLabel: "Regional Councils & Associated States",
+    pluralLabel: "Regional Councils, Associated States & Territories",
     divisions: [
-    { code: "NZ-X06~", name: "Auckland Islands", typeLabel: "Regional Council" },
-    { code: "NZ-X05~", name: "Campbell Islands", typeLabel: "Regional Council" },
-    { code: "NZ-X04~", name: "Antipodes Islands", typeLabel: "Regional Council" },
+    { code: "NZ-X06~", name: "Auckland Islands", typeLabel: "Territory" },
+    { code: "NZ-X05~", name: "Campbell Islands", typeLabel: "Territory" },
+    { code: "NZ-X04~", name: "Antipodes Islands", typeLabel: "Territory" },
     { code: "NZ-CIT", name: "Chatham Islands", typeLabel: "Special Island Authority" },
-    { code: "NZ-X01~", name: "Kermadec Islands", typeLabel: "Regional Council" },
-    { code: "NZ-X07~", name: "Snares Islands", typeLabel: "Regional Council" },
+    { code: "NZ-X01~", name: "Kermadec Islands", typeLabel: "Territory" },
+    { code: "NZ-X07~", name: "Snares Islands", typeLabel: "Territory" },
     { code: "NZ-STL", name: "Southland", typeLabel: "Regional Council" },
     { code: "NZ-MBH", name: "Marlborough", typeLabel: "Unitary Authority" },
     { code: "NZ-NSN", name: "Nelson", typeLabel: "Unitary Authority" },
@@ -4025,7 +4020,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "NZ-CAN", name: "Canterbury", typeLabel: "Regional Council" },
     { code: "NZ-AUK", name: "Auckland", typeLabel: "Unitary Authority" },
     { code: "NZ-WKO", name: "Waikato", typeLabel: "Regional Council" },
-    { code: "NZ-X03~", name: "Three Kings Islands", typeLabel: "Regional Council" },
+    { code: "NZ-X03~", name: "Three Kings Islands", typeLabel: "Territory" },
     { code: "NZ-WGN", name: "Wellington", typeLabel: "Regional Council" },
     { code: "NZ-MWT", name: "Manawatū-Whanganui", typeLabel: "Regional Council" },
     { code: "NZ-TKI", name: "Taranaki", typeLabel: "Regional Council" },
@@ -4548,7 +4543,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RU-KYA", name: "Krasnoyarsk Krai", typeLabel: "Territory" },
     { code: "RU-KL", name: "Republic of Kalmykia", typeLabel: "Republic" },
     { code: "RU-KAM", name: "Kamchatka Krai", typeLabel: "Region" },
-    { code: "RU-X01~", name: "RU-X01~", typeLabel: "Region" },
     { code: "RU-BA", name: "Bashkortostan", typeLabel: "Republic" },
     { code: "RU-SVE", name: "Sverdlovsk", typeLabel: "Region" },
     { code: "RU-KHM", name: "Khanty-Mansi Autonomous Okrug", typeLabel: "Autonomous Province" },
@@ -5083,7 +5077,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "SY",
     pluralLabel: "Provinces",
     divisions: [
-    { code: "SY-X01~", name: "Western al-Samadania", typeLabel: "Province" },
+    { code: "SY-X01~", name: "Western al-Samadania", typeLabel: "Territory" },
     { code: "SY-HI", name: "Homs", typeLabel: "Province" },
     { code: "SY-TA", name: "Tartus", typeLabel: "Province" },
     { code: "SY-RD", name: "Rif Dimashq", typeLabel: "Province" },
@@ -5830,7 +5824,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "VE-N", name: "Monagas", typeLabel: "State" },
     { code: "VE-O", name: "Nueva Esparta", typeLabel: "State" },
     { code: "VE-W", name: "Federal Dependencies", typeLabel: "Federal Dependency" },
-    { code: "VE-X01~", name: "VE-X01~", typeLabel: "State" },
     { code: "VE-J", name: "Guárico State", typeLabel: "State" },
     { code: "VE-H", name: "Cojedes", typeLabel: "State" },
     { code: "VE-A", name: "Capital", typeLabel: "Capital District" },

@@ -34,14 +34,31 @@ function pluralize(type) {
 }
 
 const PLURAL_LABEL_OVERRIDES = {
+  "AU": "States & Territories",
+  "CN": "Provinces & Special Territories",
   "DK": "Regions & Autonomous Territories",
   "ES": "Autonomous Communities & Claimed Territory",
   "FI": "Provinces & Autonomous Region",
   "FR": "Departments & Overseas Territories",
   "GB": "Divisions, Crown Dependencies & Disputed Territories",
   "NL": "Provinces & Special Territories",
-  "NZ": "Regional Councils & Associated States",
+  "NO": "Counties & Dependencies",
+  "NZ": "Regional Councils, Associated States & Territories",
   "US": "States & Territories"
+};
+
+const SUBDIVISION_TYPE_OVERRIDES = {
+  "AU-X03~": "Territory", // Macquarie Island
+  "AU-X04~": "Territory", // Ashmore and Cartier Islands
+  "CN-X01~": "Territory", // Paracel Islands
+  "NO-X01~": "Territory", // Bouvet Island
+  "NZ-X01~": "Territory", // Kermadec Islands
+  "NZ-X03~": "Territory", // Three Kings Islands
+  "NZ-X04~": "Territory", // Antipodes Islands
+  "NZ-X05~": "Territory", // Campbell Islands
+  "NZ-X06~": "Territory", // Auckland Islands
+  "NZ-X07~": "Territory", // Snares Islands
+  "SY-X01~": "Territory"  // Western al-Samadania
 };
 
 const TERRITORIES_TO_APPEND = {
@@ -147,7 +164,17 @@ for (const file of files.sort()) {
     const divCode = p.iso_3166_2 || p.name || '';
     if (!divCode) continue;
     const name = p.name_en || p.name || divCode;
-    const typeLabel = p.type_en || p.type || bestType;
+    
+    // Skip nameless placeholder features
+    if (name === divCode && divCode.includes('-X')) {
+      continue;
+    }
+    
+    let typeLabel = p.type_en || p.type || bestType;
+    if (SUBDIVISION_TYPE_OVERRIDES[divCode]) {
+      typeLabel = SUBDIVISION_TYPE_OVERRIDES[divCode];
+    }
+    
     divisions.push({ code: divCode, name, typeLabel });
   }
 
