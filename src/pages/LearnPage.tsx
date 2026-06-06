@@ -41,7 +41,7 @@ import {
 import { fetchSubdivisionGeo, subdivisionFlagUrl } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { NSGT_CODES } from "../lib/nsgtTerritories";
-import { TERRITORY_PARENT, TERRITORY_NAME, PARENT_TERRITORIES } from "../lib/territoryParentMap";
+import { TERRITORY_PARENT, TERRITORY_NAME, PARENT_TERRITORIES, TERRITORY_GEO_FOR_PARENT } from "../lib/territoryParentMap";
 import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
 import "./LearnPage.css";
@@ -347,6 +347,31 @@ export default function LearnPage() {
     setSubdivisionCountry(null);
   }
 
+  // Fetch + merge GeoJSON for a country and all its associated territories.
+  // Features from territory files are rewritten so their iso_3166_2 matches
+  // the subdivision code in SUBDIVISION_META, enabling click resolution.
+  async function fetchMergedSubdivisionGeo(
+    code: string,
+  ): Promise<SubdivisionFeatureCollection | null> {
+    const territoryMappings = TERRITORY_GEO_FOR_PARENT[code] ?? [];
+    const [mainGeo, ...territoryGeos] = await Promise.all([
+      fetchSubdivisionGeo(code),
+      ...territoryMappings.map((t) => fetchSubdivisionGeo(t.geoCode)),
+    ]);
+    const extraFeatures = territoryGeos.flatMap((geo, i) => {
+      const subdivCode = territoryMappings[i]!.subdivCode;
+      return (geo?.features ?? []).map((feat) => ({
+        ...feat,
+        properties: { ...feat.properties, iso_3166_2: subdivCode },
+      }));
+    });
+    if (!mainGeo && extraFeatures.length === 0) return null;
+    return {
+      type: "FeatureCollection",
+      features: [...(mainGeo?.features ?? []), ...extraFeatures],
+    };
+  }
+
   const handleEnterSubdivisionMode = useCallback(async () => {
     if (!display || display.kind !== "modern") return;
     const { code, name, flagSvg } = display.country;
@@ -354,9 +379,10 @@ export default function LearnPage() {
     setSubdivisionLoading(true);
     setSelectedSubdivision(null);
     setSubdivisionCountry({ code, name, flagSvg });
-    const geo = await fetchSubdivisionGeo(code);
+    const geo = await fetchMergedSubdivisionGeo(code);
     setSubdivisionGeo(geo);
     setSubdivisionLoading(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [display]);
 
   // Navigate to the subdivision view for a specific country. Suppresses the
@@ -370,9 +396,10 @@ export default function LearnPage() {
     setSubdivisionLoading(true);
     setSelectedSubdivision(null);
     setSubdivisionCountry({ code, name, flagSvg });
-    const geo = await fetchSubdivisionGeo(code);
+    const geo = await fetchMergedSubdivisionGeo(code);
     setSubdivisionGeo(geo);
     setSubdivisionLoading(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Build a polity → Selection helper for historical eras. The HistoricalMap
