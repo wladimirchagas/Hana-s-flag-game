@@ -1577,7 +1577,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FR-76", name: "Seine-Maritime", typeLabel: "Metropolitan department" },
     { code: "FR-80", name: "Somme", typeLabel: "Metropolitan department" },
     { code: "FR-62", name: "Pas-de-Calais", typeLabel: "Metropolitan department" },
-    { code: "FR-MQ", name: "Martinique (unofficial flag)", typeLabel: "Overseas department" },
+    { code: "FR-MQ", name: "Martinique", typeLabel: "Overseas department" },
     { code: "FR-GP", name: "Guadeloupe (unofficial flag)", typeLabel: "Overseas department" },
     { code: "FR-RE", name: "Réunion (unofficial flag)", typeLabel: "Overseas department" },
     { code: "FR-YT", name: "Mayotte (unofficial flag)", typeLabel: "Overseas department" },

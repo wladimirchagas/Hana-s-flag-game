@@ -52,7 +52,7 @@ import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/sub
 import "../App.css";
 import "./LearnPage.css";
 
-const UNOFFICIAL_FR_SUBDIVS = new Set(["FR-GF", "FR-GP", "FR-MQ", "FR-RE", "FR-YT"]);
+const UNOFFICIAL_FR_SUBDIVS = new Set(["FR-GF", "FR-GP", "FR-RE", "FR-YT"]);
 
 /**
  * Learn-mode sandbox with a historical era slider.
