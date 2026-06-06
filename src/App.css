@@ -2645,7 +2645,13 @@
 }
 
 /* Persistent build-info bottom bar rendered globally by App.tsx.
-   Sticks to the bottom of the viewport across every route. */
+   Sticks to the bottom of the viewport across every route.
+   NOTE: backdrop-filter is intentionally omitted here — on iOS Safari,
+   combining backdrop-filter with position:fixed causes the element to be
+   composited against a layer rather than the visual viewport, making it
+   appear mid-page during scroll. The solid background makes blur invisible
+   anyway. The translateZ(0) hint ensures a separate GPU layer so iOS
+   correctly tracks the viewport edge on every frame. */
 .build-footer {
   position: fixed;
   bottom: 0;
@@ -2665,7 +2671,8 @@
   color: var(--ink-soft);
   background: var(--cream);
   border-top: 2px solid var(--ink-faint);
-  backdrop-filter: saturate(140%) blur(2px);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   user-select: none;
 }
 

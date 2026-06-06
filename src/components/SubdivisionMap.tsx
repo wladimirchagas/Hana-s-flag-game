@@ -41,6 +41,58 @@ const DARK_PALETTE: MapPalette = {
   selectedFill: "#74e4dc",
 };
 
+/**
+ * When a feature collection spans widely separated regions (e.g. a country's
+ * mainland plus distant overseas territories), fitting the projection to ALL
+ * features makes the main territory tiny/invisible. This function returns the
+ * subset that forms the main geographic cluster so the projection is fitted
+ * to that cluster. All features are still rendered — only fitExtent is affected.
+ */
+function getProjectionFitFeatures(
+  features: SubdivisionGeoFeature[],
+): SubdivisionGeoFeature[] {
+  if (features.length <= 3) return features;
+
+  const centroids: Array<[number, number] | null> = features.map((f) => {
+    const c = geoCentroid(f as never);
+    return isFinite(c[0]) && isFinite(c[1]) ? c : null;
+  });
+
+  const valid = centroids.filter((c): c is [number, number] => c !== null);
+  if (valid.length === 0) return features;
+
+  // Median centroid — robust against outliers.
+  const sortedLons = valid.map((c) => c[0]).sort((a, b) => a - b);
+  const sortedLats = valid.map((c) => c[1]).sort((a, b) => a - b);
+  const mid = Math.floor(valid.length / 2);
+  const medLon = sortedLons[mid]!;
+  const medLat = sortedLats[mid]!;
+
+  // Euclidean distance (degrees) from each feature's centroid to the median.
+  const dists = centroids.map((c) =>
+    c ? Math.hypot(c[0] - medLon, c[1] - medLat) : Infinity,
+  );
+
+  const sorted = dists.filter(isFinite).sort((a, b) => a - b);
+  if (sorted.length <= 1) return features;
+
+  // Detect a gap: a jump > 3× between consecutive sorted distances that is
+  // also > 20 degrees absolute — marks where the main cluster ends and
+  // distant outliers (overseas territories, remote islands) begin.
+  let cutoff = sorted[sorted.length - 1]!;
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = sorted[i - 1]!;
+    const curr = sorted[i]!;
+    if (curr > 20 && curr / Math.max(prev, 0.001) > 3) {
+      cutoff = prev;
+      break;
+    }
+  }
+
+  const core = features.filter((_, i) => dists[i]! <= cutoff);
+  return core.length > 0 ? core : features;
+}
+
 function getSubdivCode(feature: SubdivisionGeoFeature): string {
   return (
     feature.properties.iso_3166_2?.trim().toUpperCase() ||

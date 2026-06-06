@@ -113,6 +113,13 @@ type Props = {
      * code on enter and `null` on leave.
      */
     onHover?: (code: string | null) => void;
+    /**
+     * Maps territory alpha-2 codes → administering country alpha-2 codes.
+     * Territories in this map become clickable on the world map; clicking one
+     * resolves to the parent country code before calling onSelect/onHover.
+     * Disputed territories must be excluded by the caller.
+     */
+    territoryParent?: Readonly<Record<string, string>>;
   };
   /** When true, click handlers are disabled even if `selectable` is provided. */
   disabled?: boolean;
@@ -503,21 +510,26 @@ export function WorldProgressMap({
     const y = placeAbove ? clickY - MARGIN : clickY + MARGIN;
     const placement: "above" | "below" = placeAbove ? "above" : "below";
 
-    const isInPool = selectable.codes.has(alpha2);
+    // Territories resolve to their administering parent country before any
+    // pool check, name lookup, or onSelect call.
+    const resolvedCode = selectable.territoryParent?.[alpha2] ?? alpha2;
+    const isInPool = selectable.codes.has(resolvedCode);
     const name =
-      selectable.names.get(alpha2) ?? ALL_UN_NAMES.get(alpha2) ?? alpha2;
+      selectable.names.get(resolvedCode) ??
+      ALL_UN_NAMES.get(resolvedCode) ??
+      resolvedCode;
 
     if (isInPool) {
-      selectable.onSelect(alpha2);
+      selectable.onSelect(resolvedCode);
       // Skip the popover entirely when no onConfirm is supplied — used by
       // the Learn-mode sandbox where clicks just select, no confirm.
       if (selectable.onConfirm) {
-        setPopover({ code: alpha2, name, x, y, kind: "confirm", placement });
+        setPopover({ code: resolvedCode, name, x, y, kind: "confirm", placement });
       }
     } else {
       // Country is rendered on the map but isn't part of this game's pool
       // (typical in Custom Game). Tell the user instead of silently failing.
-      setPopover({ code: alpha2, name, x, y, kind: "info", placement });
+      setPopover({ code: resolvedCode, name, x, y, kind: "info", placement });
     }
   }
 
@@ -644,7 +656,12 @@ export function WorldProgressMap({
                   const isInPool =
                     !!alpha2 && !!selectable && selectable.codes.has(alpha2);
                   const isUnMember = !!alpha2 && ALL_UN_NAMES.has(alpha2);
-                  const clickable = isInteractive && isUnMember;
+                  // A territory with an entry in selectable.territoryParent is
+                  // also clickable — it resolves to the parent country on click.
+                  const isClickableTerritory =
+                    !!alpha2 && !!selectable?.territoryParent?.[alpha2];
+                  const clickable =
+                    isInteractive && (isUnMember || isClickableTerritory);
                   const isSelected =
                     !!alpha2 &&
                     (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
@@ -676,7 +693,11 @@ export function WorldProgressMap({
                       }
                       onMouseEnter={
                         clickable && alpha2 && selectable?.onHover
-                          ? () => selectable.onHover!(alpha2)
+                          ? () => {
+                              const resolved =
+                                selectable!.territoryParent?.[alpha2!] ?? alpha2!;
+                              selectable!.onHover!(resolved);
+                            }
                           : undefined
                       }
                       onMouseLeave={
