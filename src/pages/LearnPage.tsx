@@ -41,6 +41,7 @@ import {
 import { fetchSubdivisionGeo, subdivisionFlagUrl } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { NSGT_CODES } from "../lib/nsgtTerritories";
+import { TERRITORY_PARENT, TERRITORY_NAME, PARENT_TERRITORIES } from "../lib/territoryParentMap";
 import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/subdivision";
 import "../App.css";
 import "./LearnPage.css";
@@ -298,13 +299,27 @@ export default function LearnPage() {
     [countries],
   );
   const codes = useMemo(
-    () => new Set(countries.map((c) => c.code)),
+    () => new Set([
+      ...countries.map((c) => c.code),
+      ...Object.keys(TERRITORY_PARENT),
+    ]),
     [countries],
   );
   const names = useMemo(
-    () => new Map(countries.map((c) => [c.code, c.name])),
+    () => new Map([
+      ...countries.map((c) => [c.code, c.name] as [string, string]),
+      ...Object.entries(TERRITORY_NAME),
+    ]),
     [countries],
   );
+
+  // Territories of the currently-displayed country — used to co-highlight
+  // their geometries on the world map alongside the parent country.
+  const territoryHighlightCodes = useMemo(() => {
+    if (!display || display.kind !== "modern") return null;
+    const territories = PARENT_TERRITORIES[display.country.code];
+    return territories?.length ? new Set(territories) : null;
+  }, [display]);
 
   // Case-insensitive name→Country lookup, used to resolve historical polity
   // NAMEs to a modern flag (via `modernName` in the registry or the
@@ -713,7 +728,8 @@ export default function LearnPage() {
               codes,
               names,
               onSelect: (code) => {
-                const c = codeToCountry.get(code);
+                const resolved = TERRITORY_PARENT[code] ?? code;
+                const c = codeToCountry.get(resolved);
                 if (c) {
                   if (hoverClearTimer.current) {
                     clearTimeout(hoverClearTimer.current);
@@ -737,10 +753,12 @@ export default function LearnPage() {
                   clearTimeout(hoverClearTimer.current);
                   hoverClearTimer.current = null;
                 }
-                const c = codeToCountry.get(code);
+                const resolved = TERRITORY_PARENT[code] ?? code;
+                const c = codeToCountry.get(resolved);
                 if (c) setHovered({ kind: "modern", country: c });
               },
             }}
+            highlightCodes={territoryHighlightCodes}
             zoom={sharedZoom}
             centerLongitude={mapView.centerLongitude}
             rotationOffset={rotationOffset}
