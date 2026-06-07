@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { LeaveGameDialog } from "../components/LeaveGameDialog";
 import { useNavigationGuard } from "../context/NavigationGuardContext";
 import { useGame } from "../hooks/useGame";
@@ -74,6 +74,7 @@ function FlagGamePageInner() {
 
 function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const navState = location.state as
     | { codes?: string[]; quiz?: QuizState; groupGame?: GroupGameState }
     | null;
@@ -251,8 +252,18 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   const handleFlagLearned = () => {
     if (!unlockTarget) return;
     addLearnedCode(unlockTarget.code);
-    addCodeToStoredSelection(unlockTarget.code);
+    const nextCodes = addCodeToStoredSelection(unlockTarget.code);
     setUnlockTarget(null);
+
+    // Update current history state so that subsequent rounds (e.g. Play again)
+    // in this session will include the newly unlocked flag.
+    navigate(".", {
+      replace: true,
+      state: {
+        ...(location.state || {}),
+        codes: nextCodes,
+      },
+    });
   };
 
   const handleSave = () => {
