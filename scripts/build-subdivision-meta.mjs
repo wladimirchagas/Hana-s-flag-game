@@ -82,27 +82,43 @@ const TERRITORIES_TO_APPEND = {
     { code: "GB-GI", name: "Gibraltar", typeLabel: "Disputed Territory" },
     { code: "GB-FK", name: "Falkland Islands", typeLabel: "Disputed Territory" },
     { code: "GB-IO", name: "British Indian Ocean Territory", typeLabel: "Overseas Territory" },
-    { code: "GB-GS", name: "South Georgia and South Sandwich Islands", typeLabel: "Overseas Territory" }
+    { code: "GB-GS", name: "South Georgia and South Sandwich Islands", typeLabel: "Overseas Territory" },
+    { code: "GB-AI", name: "Anguilla", typeLabel: "Overseas Territory" },
+    { code: "GB-BM", name: "Bermuda", typeLabel: "Overseas Territory" },
+    { code: "GB-VG", name: "British Virgin Islands", typeLabel: "Overseas Territory" },
+    { code: "GB-KY", name: "Cayman Islands", typeLabel: "Overseas Territory" },
+    { code: "GB-MS", name: "Montserrat", typeLabel: "Overseas Territory" },
+    { code: "GB-SH", name: "Saint Helena", typeLabel: "Overseas Territory" },
+    { code: "GB-TC", name: "Turks and Caicos Islands", typeLabel: "Overseas Territory" },
+    { code: "GB-PN", name: "Pitcairn Islands", typeLabel: "Overseas Territory" }
   ],
   "US": [
     { code: "US-PR", name: "Puerto Rico", typeLabel: "Territory" },
-    { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Territory" }
+    { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Territory" },
+    { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Territory" },
+    { code: "US-AS", name: "American Samoa", typeLabel: "Territory" },
+    { code: "US-GU", name: "Guam", typeLabel: "Territory" }
   ],
   "FR": [
     { code: "FR-BL", name: "Saint Barthélemy", typeLabel: "Overseas Collectivity" },
     { code: "FR-MF", name: "Saint Martin", typeLabel: "Overseas Collectivity" },
     { code: "FR-PM", name: "Saint Pierre and Miquelon", typeLabel: "Overseas Collectivity" },
-    { code: "FR-WF", name: "Wallis and Futuna", typeLabel: "Overseas Collectivity" }
+    { code: "FR-WF", name: "Wallis and Futuna", typeLabel: "Overseas Collectivity" },
+    { code: "FR-PF", name: "French Polynesia", typeLabel: "Overseas Collectivity" },
+    { code: "FR-NC", name: "New Caledonia", typeLabel: "Overseas Collectivity" }
   ],
   "NZ": [
     { code: "NZ-CK", name: "Cook Islands", typeLabel: "Associated State" },
-    { code: "NZ-NU", name: "Niue", typeLabel: "Associated State" }
+    { code: "NZ-NU", name: "Niue", typeLabel: "Associated State" },
+    { code: "NZ-TK", name: "Tokelau", typeLabel: "Territory" }
   ],
   "FI": [
     { code: "FI-AX", name: "Åland Islands", typeLabel: "Autonomous Region" }
   ],
   "AU": [
-    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "Territory" }
+    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "Territory" },
+    { code: "AU-CX", name: "Christmas Island", typeLabel: "Territory" },
+    { code: "AU-NF", name: "Norfolk Island", typeLabel: "Territory" }
   ],
   "AR": [
     { code: "AR-ML~", name: "Islas Malvinas", typeLabel: "Claimed Territory" }
@@ -111,6 +127,21 @@ const TERRITORIES_TO_APPEND = {
     { code: "ES-GIB~", name: "Gibraltar", typeLabel: "Claimed Territory" }
   ]
 };
+
+// Load flagCodes from the flag index and subdivisions override file
+const flagIndexText = readFileSync(join(projectRoot, 'src', 'lib', 'subdivisionFlagIndex.ts'), 'utf8');
+const flagCodes = new Set();
+const matches = flagIndexText.match(/"[A-Z0-9~_-]+"/g) || [];
+for (const m of matches) {
+  flagCodes.add(m.slice(1, -1));
+}
+
+const apiText = readFileSync(join(projectRoot, 'src', 'api', 'subdivisions.ts'), 'utf8');
+const overrideMatches = apiText.match(/"[A-Z0-9~_-]+"\s*:/g) || [];
+for (const m of overrideMatches) {
+  const code = m.replace(/["\s:]/g, '');
+  flagCodes.add(code);
+}
 
 const files = readdirSync(INPUT_DIR).filter(f => {
   // Only include valid ISO 3166-1 alpha-2 codes (2 uppercase letters)
@@ -167,6 +198,11 @@ for (const file of files.sort()) {
     
     // Skip nameless placeholder features
     if (name === divCode && divCode.includes('-X')) {
+      continue;
+    }
+    
+    // Skip custom-coded subdivisions (~ or -X) that do not have a flag
+    if ((divCode.includes('~') || divCode.includes('-X')) && !flagCodes.has(divCode)) {
       continue;
     }
     

@@ -25,6 +25,24 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FI-AX":  "https://flagcdn.com/ax.svg",
   "AU-CC":  "https://flagcdn.com/cc.svg",
   "ES-GIB~": "https://flagcdn.com/gi.svg",
+
+  // Newly added populated territories
+  "AU-CX":  "https://flagcdn.com/cx.svg",
+  "AU-NF":  "https://flagcdn.com/nf.svg",
+  "US-VI":  "https://flagcdn.com/vi.svg",
+  "US-AS":  "https://flagcdn.com/as.svg",
+  "US-GU":  "https://flagcdn.com/gu.svg",
+  "FR-PF":  "https://flagcdn.com/pf.svg",
+  "FR-NC":  "https://flagcdn.com/nc.svg",
+  "NZ-TK":  "https://flagcdn.com/tk.svg",
+  "GB-AI":  "https://flagcdn.com/ai.svg",
+  "GB-BM":  "https://flagcdn.com/bm.svg",
+  "GB-VG":  "https://flagcdn.com/vg.svg",
+  "GB-KY":  "https://flagcdn.com/ky.svg",
+  "GB-MS":  "https://flagcdn.com/ms.svg",
+  "GB-SH":  "https://flagcdn.com/sh.svg",
+  "GB-TC":  "https://flagcdn.com/tc.svg",
+  "GB-PN":  "https://flagcdn.com/pn.svg",
   
   // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // Custom local diagonal green/yellow flag with red star
