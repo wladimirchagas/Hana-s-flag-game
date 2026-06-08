@@ -245,29 +245,7 @@ export function CountryDropdown({
           <div className="dropdown-modal__sheet">
             <header className="dropdown-modal__header">
               <h3 className="dropdown-modal__title">{modalTitle}</h3>
-              <button
-                type="button"
-                className="dropdown-modal__close"
-                onClick={() => setModalOpen(false)}
-                aria-label="Close"
-              >
-                ×
-              </button>
             </header>
-            <div className="dropdown-modal__search">
-              <input
-                ref={modalSearchRef}
-                type="text"
-                className="dropdown-modal__input"
-                placeholder="Type to filter…"
-                value={query}
-                inputMode="search"
-                autoCapitalize="off"
-                autoCorrect="off"
-                spellCheck={false}
-                onChange={(e) => setQuery(e.target.value)}
-              />
-            </div>
             <ul className="dropdown-modal__list" role="listbox">
               {filteredAll.length === 0 ? (
                 <li className="dropdown-empty">No matches</li>
@@ -291,6 +269,30 @@ export function CountryDropdown({
                 ))
               )}
             </ul>
+            <div className="dropdown-modal__footer">
+              <div className="dropdown-modal__search">
+                <input
+                  ref={modalSearchRef}
+                  type="text"
+                  className="dropdown-modal__input"
+                  placeholder="Type to filter…"
+                  value={query}
+                  inputMode="search"
+                  autoCapitalize="off"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  onChange={(e) => setQuery(e.target.value)}
+                />
+              </div>
+              <button
+                type="button"
+                className="dropdown-modal__close-bottom"
+                onClick={() => setModalOpen(false)}
+                aria-label="Close"
+              >
+                ✕
+              </button>
+            </div>
           </div>
         </div>
       )}
