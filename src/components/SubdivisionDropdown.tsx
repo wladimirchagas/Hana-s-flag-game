@@ -1,5 +1,6 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { SubdivisionMeta } from "../types/subdivision";
+import { useVisualViewport } from "../hooks/useVisualViewport";
 
 type Props = {
   divisions: SubdivisionMeta[];
@@ -26,6 +27,7 @@ export function SubdivisionDropdown({
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
+  const viewportStyle = useVisualViewport(modalOpen);
 
   useEffect(() => {
     if (disabled) {
@@ -202,6 +204,7 @@ export function SubdivisionDropdown({
           onClick={(e) => {
             if (e.target === e.currentTarget) setModalOpen(false);
           }}
+          style={viewportStyle}
         >
           <div className="dropdown-modal__sheet">
             <header className="dropdown-modal__header">

@@ -1,5 +1,6 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
+import { useVisualViewport } from "../hooks/useVisualViewport";
 
 type Props = {
   countries: Country[];
@@ -51,6 +52,7 @@ export function CountryDropdown({
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
+  const viewportStyle = useVisualViewport(modalOpen);
 
   // --- Shared state syncing -------------------------------------------------
 
@@ -241,6 +243,7 @@ export function CountryDropdown({
           onClick={(e) => {
             if (e.target === e.currentTarget) setModalOpen(false);
           }}
+          style={viewportStyle}
         >
           <div className="dropdown-modal__sheet">
             <header className="dropdown-modal__header">
