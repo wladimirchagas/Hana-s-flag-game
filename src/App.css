@@ -596,19 +596,6 @@
   .dropdown-tile {
     display: flex;
   }
-  .dropdown-modal {
-    align-items: flex-start;
-  }
-  .dropdown-modal__sheet {
-    max-height: 100vh;
-    height: 100vh;
-    max-height: 100dvh;
-    height: 100dvh;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
