@@ -137,6 +137,8 @@ export default function LearnPage() {
     flagUrl: string | null;
   } | null>(null);
 
+  const anthemPlayerRef = useRef<{ play: () => void } | null>(null);
+
   // Codes currently in the user's Hana's Game list (persisted to
   // localStorage). Initialised from storage so the in-panel toggle below
   // the highlighted flag reflects whatever the picker modal would show.
@@ -683,6 +685,15 @@ export default function LearnPage() {
     return `${baseUrl}${raw}`;
   }
 
+  const currentCountry =
+    anthemTarget
+      ? { code: anthemTarget.code, name: anthemTarget.name, flagSvg: anthemTarget.flagUrl }
+      : display?.kind === "modern"
+        ? display.country
+        : (subdivisionMode && subdivisionCountry)
+          ? { code: subdivisionCountry.code, name: subdivisionCountry.name, flagSvg: subdivisionCountry.flagSvg }
+          : null;
+
   return (
     <div className="learn-page">
       {subdivisionMode && (() => {
@@ -831,11 +842,14 @@ export default function LearnPage() {
                       <button
                         type="button"
                         className="learn-fs__anthem-btn"
-                        onClick={() => setAnthemTarget({
-                          code: display.country.code,
-                          name: display.country.name,
-                          flagUrl: selectionFlag(display, baseUrl),
-                        })}
+                        onClick={() => {
+                          setAnthemTarget({
+                            code: display.country.code,
+                            name: display.country.name,
+                            flagUrl: selectionFlag(display, baseUrl),
+                          });
+                          anthemPlayerRef.current?.play();
+                        }}
                         aria-label={`Play national anthem of ${display.country.name}`}
                       >
                         ▶ Play
@@ -975,11 +989,14 @@ export default function LearnPage() {
                       <button
                         type="button"
                         className="learn-fs__anthem-btn"
-                        onClick={() => setAnthemTarget({
-                          code: subdivisionCountry.code,
-                          name: subdivisionCountry.name,
-                          flagUrl: subdivisionCountry.flagSvg || null,
-                        })}
+                        onClick={() => {
+                          setAnthemTarget({
+                            code: subdivisionCountry.code,
+                            name: subdivisionCountry.name,
+                            flagUrl: subdivisionCountry.flagSvg || null,
+                          });
+                          anthemPlayerRef.current?.play();
+                        }}
                         aria-label={`Play national anthem of ${subdivisionCountry.name}`}
                       >
                         ▶ Play
@@ -1078,12 +1095,14 @@ export default function LearnPage() {
         </aside>
       </div>
 
-      {anthemTarget && (
+      {currentCountry && (
         <NationalAnthemPlayer
-          countryCode={anthemTarget.code}
-          countryName={anthemTarget.name}
-          flagUrl={anthemTarget.flagUrl}
+          ref={anthemPlayerRef}
+          countryCode={currentCountry.code}
+          countryName={currentCountry.name}
+          flagUrl={currentCountry.flagSvg || (display ? selectionFlag(display, baseUrl) : null)}
           onClose={() => setAnthemTarget(null)}
+          visible={anthemTarget !== null}
         />
       )}
 

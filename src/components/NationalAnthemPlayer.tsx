@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, forwardRef, useImperativeHandle } from "react";
 import { NATIONAL_ANTHEMS, type AnthemData } from "../data/nationalAnthems";
 import { detectVocalOnset } from "../lib/anthemCalibrate";
 import { gameAudio } from "../lib/gameAudio";
@@ -9,6 +9,7 @@ interface Props {
   countryName: string;
   flagUrl: string | null;
   onClose: () => void;
+  visible: boolean;
 }
 
 function formatTime(s: number): string {
@@ -236,8 +237,15 @@ if (typeof window !== "undefined") {
 
 // ── Component ───────────────────────────────────────────────────────────────
 
-export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClose }: Props) {
-  const anthem: AnthemData | undefined = NATIONAL_ANTHEMS[countryCode];
+export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
+  ({ countryCode, countryName, flagUrl, onClose, visible }, ref) => {
+    const anthem: AnthemData | undefined = NATIONAL_ANTHEMS[countryCode];
+
+    const visibleRef = useRef(visible);
+    visibleRef.current = visible;
+
+    const isYoutube = !!(anthem?.youtubeId);
+    const [isPlaying, setIsPlaying] = useState(false);
 
   // Native <audio> element ref (used when URL is MP3/WebM)
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -253,15 +261,66 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   // Ensures autoplay fires only once per player mount, not on every re-render.
   const autoPlayedRef = useRef(false);
 
-  const isYoutube = !!(anthem?.youtubeId);
+  useImperativeHandle(ref, () => ({
+    play() {
+      if (isYoutube) {
+        const ytp = ytPlayerRef.current;
+        if (ytp) {
+          try {
+            ytp.playVideo();
+          } catch (e) {
+            console.error("[anthem] playVideo failed:", e);
+          }
+        }
+      } else {
+        const player = getActivePlayer();
+        if (player) {
+          player.play().then(() => setIsPlaying(true)).catch((e) => {
+            console.warn("[anthem] native play failed:", e);
+          });
+        }
+      }
+    }
+  }));
+
+  // Reset autoplay flag when visible is set to false
+  useEffect(() => {
+    if (!visible) {
+      autoPlayedRef.current = false;
+    }
+  }, [visible]);
+
+  // Pause playback when the player becomes invisible
+  useEffect(() => {
+    if (!visible) {
+      if (isYoutube) {
+        const ytp = ytPlayerRef.current;
+        if (ytp && isPlaying) {
+          try {
+            ytp.pauseVideo();
+          } catch (e) {
+            // ignore
+          }
+        }
+      } else {
+        const player = getActivePlayer();
+        if (player && isPlaying) {
+          try {
+            player.pause();
+            setIsPlaying(false);
+          } catch (e) {
+            // ignore
+          }
+        }
+      }
+    }
+  }, [visible, isYoutube, isPlaying]);
 
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isLoadingAudio, setIsLoadingAudio] = useState(true);
   const [audioError, setAudioError] = useState<string | null>(null);
   // true while ogv.js is loading or the OGV player is initialising
   const [ogvLoading, setOgvLoading] = useState(false);
-
-  const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [activeLine, setActiveLine] = useState(-1);
@@ -513,7 +572,9 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
             ytPlayerRef.current = e.target;
             setDuration(e.target.getDuration());
             setIsLoadingAudio(false);
-            e.target.playVideo();
+            if (visibleRef.current) {
+              e.target.playVideo();
+            }
           },
           onStateChange: (e) => {
             const YT_PLAYING = 1;
@@ -653,13 +714,14 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
   // so we start playback as soon as the audio source is ready. YouTube uses
   // its own onReady callback instead.
   useEffect(() => {
+    if (!visible) return;
     const ready = (isYoutube ? !isLoadingAudio : !!audioUrl && !isLoadingAudio) && !audioError;
     if (!ready || isYoutube || autoPlayedRef.current) return;
     if (needsOgv && ogvLoading) return;
     autoPlayedRef.current = true;
     const player = needsOgv ? ogvRef.current : audioRef.current;
     player?.play().then(() => setIsPlaying(true)).catch(() => {});
-  }, [isYoutube, isLoadingAudio, audioUrl, audioError, needsOgv, ogvLoading]);
+  }, [isYoutube, isLoadingAudio, audioUrl, audioError, needsOgv, ogvLoading, visible]);
 
   // ── Auto-scroll active lyric line into view ──────────────────────────────
   useEffect(() => {
@@ -726,24 +788,37 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
 
   // Close on Escape
   useEffect(() => {
+    if (!visible) return;
     function onKey(e: KeyboardEvent) { if (e.key === "Escape") onClose(); }
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [onClose]);
+  }, [onClose, visible]);
 
   // Lock body scroll
   useEffect(() => {
+    if (!visible) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = prev; };
-  }, []);
+  }, [visible]);
 
   const progress = duration ? (currentTime / duration) * 100 : 0;
   const playerReady = (isYoutube ? !isLoadingAudio : !!audioUrl && !isLoadingAudio) && !audioError;
   const showLoading = isLoadingAudio || (!isYoutube && needsOgv && ogvLoading && playerReady);
 
+  const modalStyle: React.CSSProperties = visible ? {} : {
+    position: "absolute",
+    left: "-9999px",
+    top: "-9999px",
+    width: "1px",
+    height: "1px",
+    overflow: "hidden",
+    opacity: 0,
+    pointerEvents: "none",
+  };
+
   return (
-    <div className="anthem-modal" role="dialog" aria-modal="true" aria-label={`${countryName} national anthem`}>
+    <div className="anthem-modal" style={modalStyle} role="dialog" aria-modal="true" aria-label={`${countryName} national anthem`}>
       <div className="anthem-modal__backdrop" onClick={onClose} aria-hidden="true" />
       <div className="anthem-modal__card">
         <button className="anthem-modal__close" onClick={onClose} aria-label="Close anthem player">×</button>
@@ -772,7 +847,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
           <div
             ref={ytContainerRef}
             className="anthem-player__youtube"
-            style={playerReady ? {} : {
+            style={(playerReady && visible) ? {} : {
               position: "absolute",
               width: "1px",
               height: "1px",
@@ -919,4 +994,6 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
       </div>
     </div>
   );
-}
+});
+
+NationalAnthemPlayer.displayName = "NationalAnthemPlayer";
