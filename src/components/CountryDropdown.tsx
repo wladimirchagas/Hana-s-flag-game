@@ -14,9 +14,6 @@ type Props = {
    * of opening off-screen.
    */
   listPlacement?: "down" | "up";
-  placeholder?: string;
-  mobilePlaceholder?: string;
-  modalTitle?: string;
 };
 
 const MAX_OPTIONS = 200;
@@ -39,9 +36,6 @@ export function CountryDropdown({
   disabled,
   label,
   listPlacement = "down",
-  placeholder = "Search countries…",
-  mobilePlaceholder = "Tap to pick a country",
-  modalTitle = "Pick a country",
 }: Props) {
   const listId = useId();
   const inputId = useId();
@@ -164,7 +158,7 @@ export function CountryDropdown({
         className="dropdown-input dropdown-input--desktop"
         value={query}
         disabled={disabled}
-        placeholder={placeholder}
+        placeholder="Search countries…"
         onChange={(e) => {
           setQuery(e.target.value);
           onChange(null);
@@ -213,7 +207,7 @@ export function CountryDropdown({
         onClick={openModal}
       >
         <span className="dropdown-tile__text">
-          {value ? value.name : mobilePlaceholder}
+          {value ? value.name : "Tap to pick a country"}
         </span>
         <span className="dropdown-tile__chevron" aria-hidden="true">
           ▾
@@ -232,7 +226,7 @@ export function CountryDropdown({
         >
           <div className="dropdown-modal__sheet">
             <header className="dropdown-modal__header">
-              <h3 className="dropdown-modal__title">{modalTitle}</h3>
+              <h3 className="dropdown-modal__title">Pick a country</h3>
               <button
                 type="button"
                 className="dropdown-modal__close"

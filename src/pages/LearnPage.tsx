@@ -817,16 +817,14 @@ export default function LearnPage() {
         <aside className="learn-fs__panel" aria-live="polite">
           <div className="learn-fs__detail">
             {subdivisionMode && subdivisionCountry && (
-              <div className="learn-fs__search">
-                <CountryDropdown
-                  countries={countries as Country[]}
-                  value={codeToCountry.get(subdivisionCountry.code) ?? null}
-                  onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
-                  disabled={countries.length === 0}
-                  label="Find a country's subdivisions"
-                  listPlacement="up"
-                />
-              </div>
+              <CountryDropdown
+                countries={countries as Country[]}
+                value={codeToCountry.get(subdivisionCountry.code) ?? null}
+                onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
+                disabled={countries.length === 0}
+                label="Find a country's subdivisions"
+                listPlacement="down"
+              />
             )}
             {display ? (
               <>
