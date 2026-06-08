@@ -1,6 +1,5 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
-import { useVisualViewport } from "../hooks/useVisualViewport";
 
 type Props = {
   countries: Country[];
@@ -52,7 +51,6 @@ export function CountryDropdown({
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
-  const viewportStyle = useVisualViewport(modalOpen);
 
   // --- Shared state syncing -------------------------------------------------
 
@@ -243,12 +241,33 @@ export function CountryDropdown({
           onClick={(e) => {
             if (e.target === e.currentTarget) setModalOpen(false);
           }}
-          style={viewportStyle}
         >
           <div className="dropdown-modal__sheet">
             <header className="dropdown-modal__header">
               <h3 className="dropdown-modal__title">{modalTitle}</h3>
+              <button
+                type="button"
+                className="dropdown-modal__close"
+                onClick={() => setModalOpen(false)}
+                aria-label="Close"
+              >
+                ×
+              </button>
             </header>
+            <div className="dropdown-modal__search">
+              <input
+                ref={modalSearchRef}
+                type="text"
+                className="dropdown-modal__input"
+                placeholder="Type to filter…"
+                value={query}
+                inputMode="search"
+                autoCapitalize="off"
+                autoCorrect="off"
+                spellCheck={false}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+            </div>
             <ul className="dropdown-modal__list" role="listbox">
               {filteredAll.length === 0 ? (
                 <li className="dropdown-empty">No matches</li>
@@ -272,30 +291,6 @@ export function CountryDropdown({
                 ))
               )}
             </ul>
-            <div className="dropdown-modal__footer">
-              <div className="dropdown-modal__search">
-                <input
-                  ref={modalSearchRef}
-                  type="text"
-                  className="dropdown-modal__input"
-                  placeholder="Type to filter…"
-                  value={query}
-                  inputMode="search"
-                  autoCapitalize="off"
-                  autoCorrect="off"
-                  spellCheck={false}
-                  onChange={(e) => setQuery(e.target.value)}
-                />
-              </div>
-              <button
-                type="button"
-                className="dropdown-modal__close-bottom"
-                onClick={() => setModalOpen(false)}
-                aria-label="Close"
-              >
-                ✕
-              </button>
-            </div>
           </div>
         </div>
       )}
