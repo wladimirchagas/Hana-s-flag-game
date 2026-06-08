@@ -394,8 +394,10 @@
   font-weight: 500;
 }
 
-/* Search section. The CountryDropdown receives listPlacement="up" so the
-   suggestions rise above the input into the panel. */
+.learn-fs__search {
+  width: 100%;
+}
+
 .learn-fs__search .dropdown {
   margin: 0;
 }
