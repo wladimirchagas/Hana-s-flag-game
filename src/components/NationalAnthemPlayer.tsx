@@ -768,13 +768,21 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
           </div>
         </div>
 
-        {/* YouTube container — always mounted when isYoutube so the IFrame API
-            can inject into it even before playerReady flips true. */}
         {isYoutube && (
           <div
             ref={ytContainerRef}
             className="anthem-player__youtube"
-            style={{ display: playerReady ? undefined : "none" }}
+            style={playerReady ? {} : {
+              position: "absolute",
+              width: "1px",
+              height: "1px",
+              padding: 0,
+              margin: "-1px",
+              overflow: "hidden",
+              clip: "rect(0, 0, 0, 0)",
+              whiteSpace: "nowrap",
+              border: 0,
+            }}
           />
         )}
 
