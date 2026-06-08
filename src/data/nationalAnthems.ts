@@ -31,6 +31,7 @@ export interface AnthemData {
 
 export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
   AD: {
+    youtubeId: "abVL0L3hans", youtubeIntroOffset: 3.6,
     title: "El Gran Carlemany", titleEn: "The Great Charlemagne",
     wikiFile: "National anthem of Andorra.ogg", language: "ca",
     lines: [
@@ -47,6 +48,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AE: {
+    youtubeId: "8mHysiZ0hac", youtubeIntroOffset: 20.4,
     title: "عيشي بلادي", titleEn: "Long Live My Nation",
     wikiFile: "Ishy Bilady.ogg", language: "ar",
     lines: [
@@ -64,22 +66,20 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AF: {
-    title: "ملی سرود", titleEn: "National Anthem",
-    wikiFile: "Milli Surood.ogg", language: "ps",
+    youtubeId: "9UvtCQip8I0", youtubeIntroOffset: 25.1,
+    title: "دا د باتورانو کور", titleEn: "This Is the Home of the Brave",
+    wikiFile: "Dā də bātorāno kor.ogg", language: "ps",
     lines: [
-      { text: "دا وطن افغانستان دی", textEn: "This land is Afghanistan,", start: 4 },
-      { text: "دا عزت د هر افغان دی", textEn: "it is the pride of every Afghan.", start: 10 },
-      { text: "کور د سولې، کور د تورې", textEn: "The land of peace, the land of the sword,", start: 16 },
-      { text: "هر بچی يې قهرمان دی", textEn: "each of its sons is brave.", start: 22 },
-      { text: "دا وطن د ټولو کور دی", textEn: "This is the country of every tribe,", start: 28 },
-      { text: "د بلوڅو، د ازبکو", textEn: "the land of Balochs and Uzbeks,", start: 34 },
-      { text: "د پښتون او هزارهوو", textEn: "Pashtuns and Hazaras,", start: 40 },
-      { text: "د ترکمنو، د تاجکو", textEn: "Turkmens and Tajiks.", start: 46 },
-      { text: "ور سره عرب، ګوجر دي", textEn: "With them are Arabs and Gujjars,", start: 52 },
-      { text: "پاميريان، نورستانيان", textEn: "Pamiris, Nuristanis,", start: 58 },
+      { text: "ساتو يې په سرو وينو، دا د شهيدانو کور", textEn: "We defend thee with our blood, this is the home of martyrs", start: 0 },
+      { text: "دا د باتورانو کور، دا د باتورانو کور", textEn: "This is the home of the brave, this is the home of the brave", start: 8 },
+      { text: "ستا کاڼي او بوټي ټول، مونږه ته لعلونه دي", textEn: "All thy stones and bushes look like rubies to us", start: 16 },
+      { text: "وينه پرې توی شوې ده، سره لکه گلونه دي", textEn: "Upon them blood is spilt, they are all red like roses", start: 24 },
+      { text: "کله يې څوک نيولای شي؟ دا دی د زمريانو کور", textEn: "Dost thou think 'tis conquerable? This is the home of lions", start: 32 },
+      { text: "دا د باتورانو کور، دا د باتورانو کور", textEn: "This is the home of the brave, this is the home of the brave", start: 40 },
     ],
   },
   AG: {
+    youtubeId: "x35sDNFHNNs", youtubeIntroOffset: 14.6,
     title: "Fair Antigua, We Salute Thee",
     wikiFile: "Fair Antigua, We Salute Thee.ogg", language: "en",
     lines: [
@@ -94,6 +94,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AL: {
+    youtubeId: "P_q9g46K8HU", youtubeIntroOffset: 20.2,
     title: "Himni i Flamurit", titleEn: "Hymn to the Flag",
     wikiFile: "Himni i Flamurit.ogg",
     wikiSearch: "Himni Flamurit Albania vocal national anthem",
@@ -108,6 +109,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AM: {
+    youtubeId: "q3bbo1001eM", youtubeIntroOffset: 29.5,
     title: "Մեր Հայրենիք", titleEn: "Our Fatherland",
     wikiFile: "Armenian National Anthem.ogg",
     language: "hy",
@@ -123,6 +125,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AO: {
+    youtubeId: "uEF8X3v7L9A", youtubeIntroOffset: 5.4,
     title: "Angola Avante", titleEn: "Forward Angola",
     wikiFile: "Angolan-National-Anthem- US-Navy-Band.ogg", language: "pt",
     wikiSearch: "Angola Avante national anthem vocal Portuguese",
@@ -140,6 +143,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AR: {
+    youtubeId: "7FVYYn-_gOo", youtubeIntroOffset: 19.3,
     title: "Himno Nacional Argentino", titleEn: "Argentine National Anthem",
     wikiFile: "Himno Nacional de Argentina (Coro Polifónico Nacional y Banda Militar).ogg",
     wikiSearch: "Himno Nacional Argentino vocal coral coro Argentina",
@@ -162,6 +166,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AT: {
+    youtubeId: "VSThH27v2Ik", youtubeIntroOffset: 49.2,
     title: "Bundeshymne der Republik Österreich", titleEn: "Federal Anthem of Austria",
     wikiFile: "Bundeshymne Österreich.ogg", language: "de",
     lines: [
@@ -175,6 +180,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AU: {
+    youtubeId: "BNEqS4zPI30", youtubeIntroOffset: 26.3,
     title: "Advance Australia Fair",
     wikiFile: "U.S. Navy Band, Advance Australia Fair (instrumental).ogg", language: "en",
     wikiSearch: "Advance Australia Fair vocal sung anthem",
@@ -192,6 +198,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AZ: {
+    youtubeId: "RkBNG88184E", youtubeIntroOffset: 29.8,
     title: "Azərbaycan marşı", titleEn: "March of Azerbaijan",
     wikiFile: "Azerbaijan national anthem (vocal version).ogg",
     language: "az",
@@ -207,6 +214,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BA: {
+    youtubeId: "683WnJHbUX4", youtubeIntroOffset: 38.8,
     title: "Intermeco",
     wikiFile: "Bosnian National Anthem (US Navy Band).ogg", language: "bs",
     instrumental: true,
@@ -215,6 +223,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BB: {
+    youtubeId: "-CTF8jyLIe4", youtubeIntroOffset: 7.2,
     title: "In Plenty and in Time of Need",
     wikiFile: "In Plenty and in Time of Need.ogg", language: "en",
     lines: [
@@ -229,6 +238,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BD: {
+    youtubeId: "Ogkr_Kt0fJ0", youtubeIntroOffset: 6.8,
     title: "আমার সোনার বাংলা", titleEn: "My Golden Bengal",
     wikiFile: "Amar Shonar Bangla.ogg", language: "bn",
     lines: [
@@ -240,6 +250,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BE: {
+    youtubeId: "7bXPOIgioCI", youtubeIntroOffset: 9.1,
     title: "La Brabançonne", titleEn: "The Brabantian",
     wikiFile: "La Brabançonne instrumental.ogg", language: "fr",
     lines: [
@@ -254,6 +265,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BF: {
+    youtubeId: "bGjYDhj9UkI", youtubeIntroOffset: 22.8,
     title: "Ditanyè", titleEn: "Hymn of Victory",
     wikiFile: "Ditanyè.ogg", language: "fr",
     lines: [
@@ -268,6 +280,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BG: {
+    youtubeId: "E0A6WxjAIj8", youtubeIntroOffset: 5.6,
     title: "Мила Родино", titleEn: "Dear Motherland",
     wikiFile: "Mila Rodino.ogg",
     language: "bg",
@@ -283,6 +296,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BH: {
+    youtubeId: "K3_xr4ilMGU", youtubeIntroOffset: 28.5,
     title: "بحريننا", titleEn: "Our Bahrain",
     wikiFile: "Bahrainona.ogg", language: "ar",
     lines: [
@@ -297,6 +311,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BI: {
+    youtubeId: "CJCpUE_Mc0Y", youtubeIntroOffset: 24.7,
     title: "Burundi Bwacu", titleEn: "Our Burundi",
     wikiFile: "Burundi Bwacu.ogg", language: "rn",
     lines: [
@@ -311,6 +326,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BJ: {
+    youtubeId: "NbpeAaRpyZs", youtubeIntroOffset: 23.3,
     title: "L'Aube Nouvelle", titleEn: "The New Dawn",
     wikiFile: "L'Aube Nouvelle.ogg", language: "fr",
     lines: [
@@ -327,6 +343,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BN: {
+    youtubeId: "vxfVDAs2Aug", youtubeIntroOffset: 18.5,
     title: "Allah Peliharakan Sultan", titleEn: "God Bless His Majesty",
     wikiFile: "Allah Peliharakan Sultan.ogg", language: "ms",
     lines: [
@@ -339,6 +356,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BO: {
+    youtubeId: "sdXKppyotkA", youtubeIntroOffset: 30.0,
     title: "Himno Nacional de Bolivia", titleEn: "National Anthem of Bolivia",
     wikiFile: "Himno Nacional de Bolivia instrumental.ogg", language: "es",
     lines: [
@@ -355,6 +373,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BR: {
+    youtubeId: "PCpV6sdBQRw", youtubeIntroOffset: 23.4,
     title: "Hino Nacional Brasileiro", titleEn: "Brazilian National Anthem",
     wikiFile: "Hino-Nacional-Brasil-coral-mec.ogg",
     wikiSearch: "Hino Nacional Brasileiro vocal coral MEC Brazil",
@@ -438,6 +457,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BS: {
+    youtubeId: "M2CtJYpLsNw", youtubeIntroOffset: 18.1,
     title: "March On, Bahamaland", wikiFile: "March On Bahamaland.ogg", language: "en",
     lines: [
       { text: "Lift up your head to the rising sun, Bahamaland;", start: 5 },
@@ -454,6 +474,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BT: {
+    youtubeId: "ptP7KlWIaQg", youtubeIntroOffset: 24.7,
     title: "Druk Tsendhen", titleEn: "Thunder Dragon Kingdom", wikiFile: "Druk Tsendhen.ogg", language: "dz",
     lines: [
       { text: "འབྲུག་ཙན་དན་བཀོད་པའི་རྒྱལ་ཁབ་ནང༌༎", textEn: "In the Thunder Dragon Kingdom, adorned with sandalwood,", start: 6 },
@@ -465,6 +486,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BW: {
+    youtubeId: "bUPDIsi1pHU", youtubeIntroOffset: 18.6,
     title: "Fatshe leno la rona", titleEn: "Blessed Be This Noble Land", wikiFile: "Fatshe leno la rona.ogg", language: "tn",
     lines: [
       { text: "Fatshe leno la rona,", textEn: "This land of ours,", start: 5 },
@@ -478,6 +500,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BY: {
+    youtubeId: "sHeaLl0XcGM", youtubeIntroOffset: 5.6,
     title: "Мы, беларусы", titleEn: "We, Belarusians", wikiFile: "My Belarusy.ogg", language: "be",
     lines: [
       { text: "Мы, беларусы — мірныя людзі,", textEn: "We Belarusians are peaceful people,", start: 5 },
@@ -491,6 +514,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   BZ: {
+    youtubeId: "RfRNYQDk2SM", youtubeIntroOffset: 10.7,
     title: "Land of the Free", wikiFile: "Land of the Free (Belize).ogg", language: "en",
     lines: [
       { text: "O, Land of the Free by the Carib Sea,", start: 6 },
@@ -508,6 +532,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CA: {
+    youtubeId: "A9FUjLnXNbI", youtubeIntroOffset: 1.4,
     title: "O Canada",
     wikiFile: "O Canada English Weir 1928.ogg",
     wikiSearch: "O Canada vocal sung national anthem",
@@ -526,6 +551,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CD: {
+    youtubeId: "gugXj2RaBYQ", youtubeIntroOffset: 1.1,
     title: "Debout Congolais", titleEn: "Rise, Congolese", wikiFile: "Debout Congolais.ogg", language: "fr",
     lines: [
       { text: "Debout Congolais,", textEn: "Arise, Congolese,", start: 5 },
@@ -540,6 +566,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CF: {
+    youtubeId: "258Ei5NHwHg", youtubeIntroOffset: 21.8,
     title: "La Renaissance", titleEn: "The Renaissance", wikiFile: "La Renaissance.ogg", language: "fr",
     lines: [
       { text: "Ô Centrafrique, ô berceau des Bantous !", textEn: "O Central Africa, cradle of the Bantu!", start: 5 },
@@ -553,6 +580,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CG: {
+    youtubeId: "JRK8aWLtTDA", youtubeIntroOffset: 3.6,
     title: "La Congolaise", titleEn: "The Congolese", wikiFile: "La Congolaise.ogg", language: "fr",
     lines: [
       { text: "En ce jour le soleil se lève", textEn: "On this day the sun rises", start: 5 },
@@ -566,6 +594,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CH: {
+    youtubeId: "ymMS99i41QA", youtubeIntroOffset: 23.2,
     title: "Schweizerpsalm", titleEn: "Swiss Psalm",
     wikiFile: "Schweizerpsalm.ogg", language: "de",
     lines: [
@@ -579,6 +608,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CI: {
+    youtubeId: "dMZjdXSxeJw", youtubeIntroOffset: 21.0,
     title: "L'Abidjanaise", titleEn: "Song of Abidjan", wikiFile: "L'Abidjanaise.ogg", language: "fr",
     lines: [
       { text: "Salut, ô terre d'espérance,", textEn: "We salute you, O land of hope,", start: 5 },
@@ -592,6 +622,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CL: {
+    youtubeId: "nH-6-8SFEkU", youtubeIntroOffset: 0.5,
     title: "Himno Nacional de Chile", titleEn: "National Anthem of Chile",
     wikiFile: "National Anthem of Chile.ogg",
     wikiSearch: "national anthem Chile vocal sung himno",
@@ -610,6 +641,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CM: {
+    youtubeId: "iJDW6Wy3Mj0", youtubeIntroOffset: 0.0,
     title: "Ô Cameroun, Berceau de nos Ancêtres", titleEn: "O Cameroon, Cradle of Our Forefathers", wikiFile: "O Cameroun Berceau de nos Ancetres.ogg", language: "fr",
     lines: [
       { text: "Ô Cameroun, berceau de nos ancêtres,", textEn: "O Cameroon, cradle of our forefathers,", start: 5 },
@@ -627,6 +659,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CN: {
+    youtubeId: "FmECjacTy6E", youtubeIntroOffset: 24.8,
     title: "义勇军进行曲", titleEn: "March of the Volunteers",
     wikiFile: "March of the Volunteers.ogg", language: "zh",
     lines: [
@@ -642,6 +675,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CO: {
+    youtubeId: "GK67Cc8ny7I", youtubeIntroOffset: 21.4,
     title: "Himno Nacional de Colombia", titleEn: "National Anthem of Colombia",
     wikiFile: "United States Navy Band - ¡Oh, gloria inmarcesible!.ogg",
     wikiSearch: "Oh gloria inmarcesible Colombia vocal national anthem",
@@ -663,6 +697,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CR: {
+    youtubeId: "J7wHSSr8Nzg", youtubeIntroOffset: 15.8,
     title: "Himno Nacional de Costa Rica", titleEn: "National Anthem of Costa Rica", wikiFile: "Costa Rica National Anthem.ogg", language: "es",
     lines: [
       { text: "Noble patria, tu hermosa bandera", textEn: "Noble homeland, your beautiful flag", start: 6 },
@@ -676,6 +711,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CU: {
+    youtubeId: "-BOVzAn3NpU", youtubeIntroOffset: 15.9,
     title: "La Bayamesa", titleEn: "The Bayamo Song", wikiFile: "La Bayamesa 1940.oga", language: "es",
     lines: [
       { text: "¡Al combate, corred, bayameses!,", textEn: "To battle, run, people of Bayamo!", start: 4 },
@@ -689,6 +725,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CV: {
+    youtubeId: "hFpLvJsC9wM", youtubeIntroOffset: 29.7,
     title: "Cântico da Liberdade", titleEn: "Canticle of Freedom", wikiFile: "Cantico da Liberdade.ogg", language: "pt",
     lines: [
       { text: "Canta, irmão", textEn: "Sing, brother,", start: 4 },
@@ -707,6 +744,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CY: {
+    youtubeId: "vVZRJIvT76M", youtubeIntroOffset: 14.2,
     title: "Ύμνος εις την Ελευθερίαν", titleEn: "Hymn to Liberty", wikiFile: "Hymn to Liberty.ogg", wikiSearch: "national anthem Cyprus Hymn Liberty", language: "el",
     lines: [
       { text: "Σε γνωρίζω από την κόψη", textEn: "I recognize you by the fierce edge", start: 0 },
@@ -720,6 +758,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   CZ: {
+    youtubeId: "uMJ7xPcM-58", youtubeIntroOffset: 18.6,
     title: "Kde domov můj", titleEn: "Where Is My Home",
     wikiFile: "Kde domov muj.ogg",
     language: "cs",
@@ -735,6 +774,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   DE: {
+    youtubeId: "w6sAbu6ruEs", youtubeIntroOffset: 16.3,
     title: "Das Lied der Deutschen", titleEn: "Song of the Germans",
     wikiFile: "Deutschlandlied.ogg", language: "de",
     lines: [
@@ -751,6 +791,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   DJ: {
+    youtubeId: "ysixZLtt4V0", youtubeIntroOffset: 6.1,
     title: "Jabuuti", wikiFile: "Jabuuti.ogg", language: "so",
     lines: [
       { text: "Hinjinne u sara kaca,", textEn: "Arise with strength,", start: 5 },
@@ -764,6 +805,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   DK: {
+    youtubeId: "CNe-Mumd9bI", youtubeIntroOffset: 28.5,
     title: "Kong Christian stod ved højen mast", titleEn: "King Christian Stood by the Lofty Mast",
     wikiFile: "Kong Christian.ogg", language: "da",
     lines: [
@@ -779,6 +821,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   DM: {
+    youtubeId: "UQsyikhJsFE", youtubeIntroOffset: 9.7,
     title: "Isle of Beauty, Isle of Splendour", wikiFile: "Isle of Beauty Isle of Splendour.ogg", language: "en",
     lines: [
       { text: "Isle of beauty, isle of splendour,", start: 5 },
@@ -792,6 +835,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   DO: {
+    youtubeId: "YWM6rOb7Erc", youtubeIntroOffset: 0.9,
     title: "Himno Nacional Dominicano", titleEn: "Dominican National Anthem", wikiFile: "Himno Nacional Dominicano.ogg", language: "es",
     lines: [
       { text: "Quisqueyanos valientes, alcemos", textEn: "Valiant people of Quisqueya, let us raise", start: 5 },
@@ -805,6 +849,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   DZ: {
+    youtubeId: "PmBE8Vpl9WQ", youtubeIntroOffset: 13.1,
     title: "قسمًا", titleEn: "We Pledge",
     wikiFile: "Kassaman.ogg", language: "ar",
     lines: [
@@ -817,6 +862,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   EC: {
+    youtubeId: "d-NPI-zZwPA", youtubeIntroOffset: 37.2,
     title: "Himno Nacional del Ecuador", titleEn: "National Anthem of Ecuador", wikiFile: "Ecuadorian national anthem (abridged).ogg", language: "es",
     lines: [
       { text: "¡Salve, Oh Patria, mil veces! ¡Oh Patria!", textEn: "Hail, O Homeland, a thousand times! O Homeland!", start: 5 },
@@ -830,6 +876,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   EE: {
+    youtubeId: "IfozTsj8BVc", youtubeIntroOffset: 26.6,
     title: "Mu isamaa, mu õnn ja rõõm", titleEn: "My Fatherland, My Happiness and Joy",
     wikiFile: "Mu isamaa, mu õnn ja rõõm (first vocal recording).ogg",
     wikiSearch: "Mu isamaa mu onn ja room Estonia vocal national anthem",
@@ -844,6 +891,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   EG: {
+    youtubeId: "2bvgCOSSjRA", youtubeIntroOffset: 3.8,
     title: "بلادي، بلادي، بلادي", titleEn: "My Homeland, My Homeland, My Homeland",
     wikiFile: "Bilady, Bilady, Bilady.ogg", language: "ar",
     lines: [
@@ -858,6 +906,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ER: {
+    youtubeId: "gtsoBRDWzUg", youtubeIntroOffset: 12.1,
     title: "ኤርትራ ኤርትራ ኤርትራ", titleEn: "Eritrea Eritrea Eritrea", wikiFile: "Ertra Ertra Ertra.ogg", language: "ti",
     lines: [
       { text: "ኤርትራ ኤርትራ ኤርትራ", textEn: "Eritrea, Eritrea, Eritrea,", start: 5 },
@@ -871,6 +920,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ES: {
+    youtubeId: "6WNaHuAHKFU", youtubeIntroOffset: 0.7,
     title: "Marcha Real", titleEn: "Royal March",
     wikiFile: "Marcha Real.ogg", language: "es", instrumental: true,
     lines: [
@@ -878,6 +928,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ET: {
+    youtubeId: "NbIDfmQly8U", youtubeIntroOffset: 30.0,
     title: "ወደፊት ገስግሺ ፣ ውድ እናት ኢትዮጵያ", titleEn: "March Forward, Dear Mother Ethiopia", wikiFile: "Whedefit Gesgeshi Woude Henate Ethiopia.ogg", language: "am",
     lines: [
       { text: "የዜግነት ክብር በኢትዮጵያችን ጸንቶ", textEn: "Respect for citizenship is strong in our Ethiopia,", start: 5 },
@@ -893,6 +944,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   FI: {
+    youtubeId: "vOu2f6IHYD4", youtubeIntroOffset: 19.7,
     title: "Maamme", titleEn: "Our Land",
     wikiFile: "Maamme.ogg", language: "fi",
     lines: [
@@ -911,6 +963,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   FJ: {
+    youtubeId: "wiMaDrO42c8", youtubeIntroOffset: 11.0,
     title: "God Bless Fiji", wikiFile: "God Bless Fiji.ogg", language: "en",
     lines: [
       { text: "Blessing grant, oh God of nations,", start: 5 },
@@ -928,6 +981,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   FM: {
+    youtubeId: "HiKo-IEL5bc", youtubeIntroOffset: 55.9,
     title: "Patriots of Micronesia", wikiFile: "Patriots of Micronesia.ogg", language: "en",
     lines: [
       { text: "Here we are pledging with heart and with hand,", start: 5 },
@@ -941,6 +995,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   FR: {
+    youtubeId: "4vXU1vm01Ig", youtubeIntroOffset: 28.5,
     title: "La Marseillaise",
     wikiFile: "La Marseillaise.ogg", language: "fr",
     lines: [
@@ -961,6 +1016,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GA: {
+    youtubeId: "resutft00vY", youtubeIntroOffset: 9.8,
     title: "La Concorde", titleEn: "The Concord", wikiFile: "La Concorde.ogg", language: "fr",
     lines: [
       { text: "Uni dans la concorde et la fraternité,", textEn: "United in concord and brotherhood,", start: 5 },
@@ -974,6 +1030,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GB: {
+    youtubeId: "tqhJHqAMvNo", youtubeIntroOffset: 10.6,
     title: "God Save the King",
     wikiFile: "God Save the King - Instrumental.ogg", wikiSearch: "God save king queen national anthem United Kingdom instrumental", language: "en",
     lines: [
@@ -987,6 +1044,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GD: {
+    youtubeId: "OX1XwH-scP4", youtubeIntroOffset: 14.6,
     title: "Hail Grenada", wikiFile: "Hail Grenada.ogg", language: "en",
     lines: [
       { text: "Hail! Grenada, land of ours,", start: 5 },
@@ -1002,6 +1060,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GE: {
+    youtubeId: "CSnwL0XxV1Q", youtubeIntroOffset: 0.9,
     title: "თავისუფლება", titleEn: "Liberty",
     wikiFile: "Tavisupleba vocal.ogg",
     language: "ka",
@@ -1015,6 +1074,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GH: {
+    youtubeId: "Wba2Ge6FP74", youtubeIntroOffset: 7.2,
     title: "God Bless Our Homeland Ghana", wikiFile: "God Bless Our Homeland Ghana.ogg", language: "en",
     lines: [
       { text: "God bless our homeland Ghana,", start: 5 },
@@ -1028,6 +1088,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GM: {
+    youtubeId: "XXXjdZ1FRhE", youtubeIntroOffset: 8.2,
     title: "For the Gambia Our Homeland", wikiFile: "For The Gambia Our Homeland.ogg", language: "en",
     lines: [
       { text: "For The Gambia, our homeland,", start: 5 },
@@ -1045,6 +1106,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GN: {
+    youtubeId: "PoYgPJUZXlQ", youtubeIntroOffset: 12.8,
     title: "Liberté", titleEn: "Liberty", wikiFile: "Liberté (Guinea).ogg", language: "fr",
     lines: [
       { text: "Peuple d'Afrique !", textEn: "People of Africa!", start: 5 },
@@ -1061,6 +1123,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GQ: {
+    youtubeId: "PoYgPJUZXlQ", youtubeIntroOffset: 37.2,
     title: "Caminemos Pisando la Senda", titleEn: "Let Us Tread the Path", wikiFile: "Caminemos Pisando la Senda.ogg", language: "es",
     lines: [
       { text: "Caminemos pisando la senda", textEn: "Let us walk treading the path", start: 5 },
@@ -1076,6 +1139,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GR: {
+    youtubeId: "vVZRJIvT76M", youtubeIntroOffset: 14.2,
     title: "Ύμνος εις την Ελευθερίαν", titleEn: "Hymn to Liberty",
     wikiFile: "Hymn to Liberty.ogg", language: "el",
     lines: [
@@ -1090,6 +1154,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GT: {
+    youtubeId: "_PH6xR3rgGI", youtubeIntroOffset: 6.8,
     title: "Himno Nacional de Guatemala", titleEn: "National Anthem of Guatemala", wikiFile: "National anthem of Guatemala, by the U.S. Navy Band.oga", language: "es",
     lines: [
       { text: "¡Guatemala feliz! que tus aras", textEn: "Happy Guatemala! May your altars", start: 6 },
@@ -1103,6 +1168,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GW: {
+    youtubeId: "X9Iu5nzsp7E", youtubeIntroOffset: 2.4,
     title: "Esta É a Nossa Pátria Bem Amada", titleEn: "This Is Our Well-Beloved Fatherland", wikiFile: "Esta E a Nossa Patria Bem Amada.ogg", language: "pt",
     lines: [
       { text: "Sol, suor e o verde e mar,", textEn: "Sun, sweat, the verdure and sea,", start: 5 },
@@ -1120,6 +1186,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   GY: {
+    youtubeId: "3UVL_ydHJ3A", youtubeIntroOffset: 3.9,
     title: "Dear Land of Guyana", wikiFile: "Dear Land of Guyana.ogg", language: "en",
     lines: [
       { text: "Dear land of Guyana, of rivers and plains,", start: 5 },
@@ -1133,6 +1200,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   HN: {
+    youtubeId: "-WbV5metCdY", youtubeIntroOffset: 17.4,
     title: "Tu bandera es un lampo de cielo", titleEn: "Your Flag Is a Heavenly Light", wikiFile: "Honduras National Anthem.ogg", language: "es",
     lines: [
       { text: "Tu bandera es un lampo de cielo", textEn: "Your flag is a splendor of sky", start: 6 },
@@ -1146,6 +1214,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   HR: {
+    youtubeId: "zejNPVrjRTg", youtubeIntroOffset: 35.0,
     title: "Lijepa naša domovino", titleEn: "Our Beautiful Homeland",
     wikiFile: "Lijepa naša domovino.ogg",
     wikiSearch: "Lijepa nasa domovino Croatia vocal sung national anthem",
@@ -1162,6 +1231,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   HT: {
+    youtubeId: "dStt3q8ZoEg", youtubeIntroOffset: 12.8,
     title: "La Dessalinienne", titleEn: "The Dessalines Song", wikiFile: "La Dessalinienne.ogg", language: "fr",
     lines: [
       { text: "Pour le Pays, pour les ancêtres,", textEn: "For our country, for our forefathers,", start: 5 },
@@ -1175,6 +1245,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   HU: {
+    youtubeId: "ntvdA7a-QMQ", youtubeIntroOffset: 38.9,
     title: "Himnusz", titleEn: "Hymn",
     wikiFile: "Himnusz.ogg",
     wikiSearch: "Himnusz Hungary vocal sung national anthem Isten aldd",
@@ -1191,6 +1262,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ID: {
+    youtubeId: "KWlSgtyUpsw", youtubeIntroOffset: 16.8,
     title: "Indonesia Raya", titleEn: "Great Indonesia",
     wikiFile: "Indonesia Raya.ogg", language: "id",
     lines: [
@@ -1217,6 +1289,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   IE: {
+    youtubeId: "cdkJlZ9tDFg", youtubeIntroOffset: 23.6,
     title: "Amhrán na bhFiann", titleEn: "The Soldier's Song",
     wikiFile: "Amhran na bhFiann.ogg", language: "ga",
     lines: [
@@ -1234,6 +1307,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   IL: {
+    youtubeId: "rQGH7BP4U8I", youtubeIntroOffset: 35.8,
     title: "הַתִּקְוָה", titleEn: "The Hope",
     wikiFile: "Hatikvah.ogg", language: "he",
     lines: [
@@ -1248,6 +1322,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   IN: {
+    youtubeId: "nyX5zQckN00", youtubeIntroOffset: 28.0,
     title: "জন গণ মন", titleEn: "Thou Art the Ruler of the Minds of All People",
     wikiFile: "Jana Gana Mana.ogg", language: "bn",
     lines: [
@@ -1263,6 +1338,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   IQ: {
+    youtubeId: "MnL-KR1Vn_I", youtubeIntroOffset: 48.4,
     title: "موطني", titleEn: "My Homeland", wikiFile: "Mawtini.ogg", language: "ar",
     lines: [
       { text: "موطني موطني", textEn: "My homeland, my homeland,", start: 4 },
@@ -1278,6 +1354,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   IR: {
+    youtubeId: "iEkOZ3t1-Ak", youtubeIntroOffset: 17.0,
     title: "سرود ملی جمهوری اسلامی ایران", titleEn: "National Anthem of the Islamic Republic of Iran", wikiFile: "Soroud-e Melliye Jomhoorie Eslamiye Iran.ogg", language: "fa",
     lines: [
       { text: "سر زد از افق مهر خاوران", textEn: "Upwards on the horizon rises the Eastern Sun,", start: 5 },
@@ -1290,6 +1367,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   IS: {
+    youtubeId: "lDPyQpKqxM0", youtubeIntroOffset: 26.9,
     title: "Lofsöngur", titleEn: "Hymn",
     wikiFile: "Lofsöngur.ogg", language: "is",
     lines: [
@@ -1304,6 +1382,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   IT: {
+    youtubeId: "CW-AYZF4PHg", youtubeIntroOffset: 29.0,
     title: "Il Canto degli Italiani", titleEn: "The Song of the Italians",
     wikiFile: "Il Canto degli Italiani.ogg", language: "it",
     lines: [
@@ -1325,6 +1404,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   JM: {
+    youtubeId: "aLP9Lvb7ZI0", youtubeIntroOffset: 26.7,
     title: "Jamaica, Land We Love", wikiFile: "Jamaica Land We Love.ogg", language: "en",
     lines: [
       { text: "Eternal Father, bless our land,", start: 5 },
@@ -1339,6 +1419,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   JO: {
+    youtubeId: "TEw5azXgrSs", youtubeIntroOffset: 3.0,
     title: "السلام الملكي الأردني", titleEn: "The Royal Jordanian Anthem", wikiFile: "As-salam al-malaki al-urduni.ogg", language: "ar",
     lines: [
       { text: "عاش المليك", textEn: "Long live the King!", start: 4 },
@@ -1352,6 +1433,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   JP: {
+    youtubeId: "6pGRxiloeSo", youtubeIntroOffset: 40.6,
     title: "君が代", titleEn: "His Majesty's Reign",
     wikiFile: "Kimi ga yo.ogg", language: "ja",
     lines: [
@@ -1364,6 +1446,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KE: {
+    youtubeId: "_47GLgG-m3g", youtubeIntroOffset: 0.6,
     title: "Ee Mungu Nguvu Yetu", titleEn: "O God of All Creation", wikiFile: "Ee Mungu Nguvu Yetu.ogg", language: "sw",
     lines: [
       { text: "Ee Mungu nguvu yetu", textEn: "O God of all creation,", start: 5 },
@@ -1375,6 +1458,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KG: {
+    youtubeId: "PV7-ptm4UeM", youtubeIntroOffset: 10.6,
     title: "Кыргыз Республикасынын Мамлекеттик Гимни", titleEn: "National Anthem of Kyrgyzstan", wikiFile: "National anthem of Kyrgyzstan.ogg", language: "ky",
     lines: [
       { text: "Ак мөңгүлүү аска зоолор, талаалар,", textEn: "High mountains, valleys and fields", start: 5 },
@@ -1388,6 +1472,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KH: {
+    youtubeId: "w-RZw2x-G-Q", youtubeIntroOffset: 17.2,
     title: "នគររាជ", titleEn: "Nokor Reach", wikiFile: "Nokor Reach.ogg", language: "km",
     lines: [
       { text: "សូមពួកទេវត្តា រក្សាមហាក្សត្រយើង", textEn: "Heaven protects our King", start: 5 },
@@ -1401,6 +1486,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KI: {
+    youtubeId: "nFOFc-P9bC4", youtubeIntroOffset: 27.6,
     title: "Teirake kaini Kiribati", titleEn: "Stand Up, Kiribati", wikiFile: "Teirake kaini Kiribati.ogg", language: "gil",
     lines: [
       { text: "Teirake kaini Kiribati,", textEn: "Stand up, Kiribati!", start: 5 },
@@ -1414,6 +1500,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KM: {
+    youtubeId: "PEKbYiuOIHg", youtubeIntroOffset: 0.0,
     title: "Udzima wa ya Masiwa", titleEn: "The Union of the Great Islands", wikiFile: "Udzima wa ya Masiwa.ogg", language: "zdj",
     lines: [
       { text: "I béramu isi pépéza", textEn: "The flag is flying,", start: 5 },
@@ -1429,6 +1516,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KN: {
+    youtubeId: "cskrrzT-aFE", youtubeIntroOffset: 17.5,
     title: "Oh Land of Beauty!", wikiFile: "Oh Land of Beauty.ogg", language: "en",
     lines: [
       { text: "O Land of Beauty!", start: 5 },
@@ -1446,6 +1534,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KP: {
+    youtubeId: "iCr8GEIvdrA", youtubeIntroOffset: 32.5,
     title: "애국가", titleEn: "Patriotic Song", wikiFile: "Aegukka (North Korea).ogg", language: "ko",
     lines: [
       { text: "아침은 빛나라 이 강산", textEn: "Let morning shine on the silver and gold of this land,", start: 5 },
@@ -1459,6 +1548,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KR: {
+    youtubeId: "CceXXXubvdE", youtubeIntroOffset: 14.6,
     title: "애국가", titleEn: "Patriotic Song",
     wikiFile: "Aegukga.ogg", language: "ko",
     lines: [
@@ -1473,6 +1563,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KW: {
+    youtubeId: "eaCl9XWUn1I", youtubeIntroOffset: 19.9,
     title: "النشيد الوطني الكويتي", titleEn: "National Anthem of Kuwait",
     wikiFile: "Al-Nasheed Al-Watani.ogg", language: "ar",
     lines: [
@@ -1487,6 +1578,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   KZ: {
+    youtubeId: "oUSZtkNuhDI", youtubeIntroOffset: 7.5,
     title: "Менің Қазақстаным", titleEn: "My Kazakhstan",
     wikiFile: "Meniñ Qazaqstanym.ogg", language: "kk",
     lines: [
@@ -1505,6 +1597,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LA: {
+    youtubeId: "VNHHn1Qn8CU", youtubeIntroOffset: 25.4,
     title: "ເພງຊາດລາວ", titleEn: "Hymn of the Lao People",
     wikiFile: "Pheng Xat Lao.ogg", language: "lo",
     lines: [
@@ -1523,6 +1616,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LB: {
+    youtubeId: "mliVgidrVvo", youtubeIntroOffset: 23.9,
     title: "كلّنا للوطن", titleEn: "All of Us for the Homeland",
     wikiFile: "Kulluna lil-watan.ogg", language: "ar",
     lines: [
@@ -1541,6 +1635,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LC: {
+    youtubeId: "C2oITasWT2E", youtubeIntroOffset: 0.0,
     title: "Sons and Daughters of Saint Lucia",
     wikiFile: "Sons and Daughters of Saint Lucia.ogg", language: "en",
     lines: [
@@ -1559,6 +1654,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LI: {
+    youtubeId: "frpIQgsnNoU", youtubeIntroOffset: 29.2,
     title: "Oben am jungen Rhein", titleEn: "Up on the Young Rhine",
     wikiFile: "Oben am jungen Rhein.ogg", language: "de",
     lines: [
@@ -1579,6 +1675,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LK: {
+    youtubeId: "33k4UTMO3JU", youtubeIntroOffset: 42.3,
     title: "ශ්‍රී ලංකා මාතා", titleEn: "Mother Sri Lanka",
     wikiFile: "Sri Lanka Matha.ogg", language: "si",
     lines: [
@@ -1596,6 +1693,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LR: {
+    youtubeId: "m1aSg8o_KIM", youtubeIntroOffset: 12.1,
     title: "All Hail, Liberia, Hail!",
     wikiFile: "All Hail Liberia Hail.ogg", language: "en",
     lines: [
@@ -1617,6 +1715,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LS: {
+    youtubeId: "q7Ne2xs65PA", youtubeIntroOffset: 38.0,
     title: "Lesotho Fatse La Bo-ntata Rona", titleEn: "Lesotho, Land of Our Fathers",
     wikiFile: "Lesotho Fatse La Bo-ntata Rona.ogg", language: "st",
     lines: [
@@ -1633,6 +1732,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LT: {
+    youtubeId: "vGj7Onu2LN4", youtubeIntroOffset: 9.2,
     title: "Tautiška giesmė", titleEn: "National Hymn",
     wikiFile: "National Anthem of Lithuania (Vocal).ogg",
     language: "lt",
@@ -1652,6 +1752,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LU: {
+    youtubeId: "S1Pp2l8n1wY", youtubeIntroOffset: 32.9,
     title: "Ons Heemecht", titleEn: "Our Homeland",
     wikiFile: "Ons Heemecht.ogg", language: "lb",
     lines: [
@@ -1668,6 +1769,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LV: {
+    youtubeId: "uAmWk4rO7nA", youtubeIntroOffset: 25.5,
     title: "Dievs, svētī Latviju!", titleEn: "God Bless Latvia!",
     wikiFile: "Latvian National Anthem.ogg",
     language: "lv",
@@ -1683,6 +1785,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   LY: {
+    youtubeId: "yaV6-guBc-A", youtubeIntroOffset: 5.7,
     title: "ليبيا ليبيا ليبيا", titleEn: "Libya Libya Libya",
     wikiFile: "Libya, Libya, Libya.ogg", language: "ar",
     lines: [
@@ -1700,6 +1803,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MA: {
+    youtubeId: "hkHS-hbt1-Q", youtubeIntroOffset: 6.9,
     title: "النشيد الوطني المغربي", titleEn: "Cherifian Anthem",
     wikiFile: "Hymne Cherifien.ogg", language: "ar",
     lines: [
@@ -1723,6 +1827,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MC: {
+    youtubeId: "vh9jzx5I00g", youtubeIntroOffset: 14.9,
     title: "Hymne Monégasque", titleEn: "Monégasque Anthem",
     wikiFile: "Hymne Monegasque.ogg", language: "fr",
     lines: [
@@ -1742,6 +1847,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MD: {
+    youtubeId: "fp51Jaao_k4", youtubeIntroOffset: 13.2,
     title: "Limba noastră", titleEn: "Our Language",
     wikiFile: "National Anthem of Moldova (Vocal).ogg",
     language: "ro",
@@ -1757,6 +1863,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ME: {
+    youtubeId: "JoIi2C_VyzI", youtubeIntroOffset: 33.3,
     title: "Oj, svijetla majska zoro", titleEn: "Oh, Bright Dawn of May",
     wikiFile: "National Anthem of Montenegro.ogg",
     language: "sr",
@@ -1772,6 +1879,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MG: {
+    youtubeId: "0l685xjVMf8", youtubeIntroOffset: 6.2,
     title: "Ry Tanindraza nay malala ô", titleEn: "O, Our Beloved Fatherland",
     wikiFile: "Ry Tanindraza nay malala o.ogg", language: "mg",
     lines: [
@@ -1790,6 +1898,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MH: {
+    youtubeId: "ebW_xUddpBI", youtubeIntroOffset: 10.4,
     title: "Forever Marshall Islands",
     wikiFile: "Forever Marshall Islands.ogg", language: "mh",
     lines: [
@@ -1804,6 +1913,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MK: {
+    youtubeId: "vV2k1Wj56e8", youtubeIntroOffset: 8.5,
     title: "Денес над Македонија", titleEn: "Today Over Macedonia",
     wikiFile: "Denes nad Makedonija.ogg",
     language: "mk",
@@ -1817,6 +1927,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ML: {
+    youtubeId: "kmPAA6zJl80", youtubeIntroOffset: 42.8,
     title: "Le Mali", titleEn: "Mali",
     wikiFile: "Malian national anthem, full version.ogg", language: "fr",
     wikiSearch: "Mali national anthem Pour l'Afrique et pour toi vocal",
@@ -1834,6 +1945,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MM: {
+    youtubeId: "pJJ8CxmxhJU", youtubeIntroOffset: 30.0,
     title: "ကမ္ဘာမကြေ", titleEn: "Until the End of the World",
     wikiFile: "Kaba Ma Kyei.ogg", language: "my",
     lines: [
@@ -1853,6 +1965,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MN: {
+    youtubeId: "S39zkey1gEc", youtubeIntroOffset: 26.4,
     title: "Монгол улсын төрийн дуулал", titleEn: "National Anthem of Mongolia",
     wikiFile: "Mongol ulsyn toriin duulal.ogg", language: "mn",
     lines: [
@@ -1871,6 +1984,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MR: {
+    youtubeId: "giPBxHorA1Y", youtubeIntroOffset: 10.0,
     title: "النشيد الوطني الموريتاني", titleEn: "National Anthem of Mauritania",
     wikiFile: "National anthem of Mauritania.ogg", language: "ar",
     lines: [
@@ -1888,6 +2002,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MT: {
+    youtubeId: "OlzH4wPmrXE", youtubeIntroOffset: 9.7,
     title: "L-Innu Malti", titleEn: "The Maltese Anthem",
     wikiFile: "L-Innu Malti.ogg", language: "mt",
     lines: [
@@ -1900,6 +2015,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MU: {
+    youtubeId: "CDW6HUXXwDw", youtubeIntroOffset: 21.5,
     title: "Motherland",
     wikiFile: "Motherland (Mauritius).ogg", language: "en",
     lines: [
@@ -1916,6 +2032,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MV: {
+    youtubeId: "QVh5wovDpks", youtubeIntroOffset: 3.8,
     title: "ޤައުމީ ސަލާމް", titleEn: "National Salute",
     wikiFile: "Qaumee salaam.ogg", language: "dv",
     lines: [
@@ -1930,6 +2047,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MW: {
+    youtubeId: "ifqcueGRPx0", youtubeIntroOffset: 0.0,
     title: "Mlungu dalitsani Malawi", titleEn: "O God Bless Our Land of Malawi",
     wikiFile: "Mlungu dalitsani Malawi.ogg", language: "ny",
     lines: [
@@ -1944,6 +2062,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MX: {
+    youtubeId: "a01Hbemnay4", youtubeIntroOffset: 7.1,
     title: "Himno Nacional Mexicano", titleEn: "Mexican National Anthem",
     wikiFile: "Mexican anthem vocal (short version).ogg",
     wikiSearch: "Mexican national anthem vocal sung himno",
@@ -1986,6 +2105,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   MZ: {
+    youtubeId: "BQLi-KnK5yY", youtubeIntroOffset: 11.9,
     title: "Pátria Amada", titleEn: "Beloved Fatherland",
     wikiFile: "Patria Amada (Mozambique).ogg", language: "pt",
     lines: [
@@ -2004,6 +2124,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NA: {
+    youtubeId: "nZdwqRgQ-XM", youtubeIntroOffset: 0.1,
     title: "Namibia, Land of the Brave",
     wikiFile: "Namibia Land of the Brave.ogg", language: "en",
     lines: [
@@ -2023,6 +2144,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NE: {
+    youtubeId: "XoH-XD07ORQ", youtubeIntroOffset: 44.8,
     title: "La Nigérienne", titleEn: "The Nigerien",
     wikiFile: "La Nigerienne.ogg", language: "fr",
     lines: [
@@ -2043,6 +2165,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NG: {
+    youtubeId: "0BhM0-tbtd8", youtubeIntroOffset: 1.0,
     title: "Arise, O Compatriots",
     wikiFile: "Arise O Compatriots.ogg", language: "en",
     lines: [
@@ -2066,6 +2189,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NI: {
+    youtubeId: "EZvlTrOnizE", youtubeIntroOffset: 21.1,
     title: "Salve a ti, Nicaragua", titleEn: "Hail to Thee, Nicaragua",
     wikiFile: "National Anthem of Nicaragua by US Navy Band.ogg", language: "es",
     lines: [
@@ -2080,6 +2204,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NL: {
+    youtubeId: "HHoIiJ5v8v8", youtubeIntroOffset: 52.8,
     title: "Het Wilhelmus", titleEn: "The William",
     wikiFile: "Wilhelmus.ogg", language: "nl",
     lines: [
@@ -2094,6 +2219,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NO: {
+    youtubeId: "05qpKikj0nk", youtubeIntroOffset: 15.0,
     title: "Ja, vi elsker dette landet", titleEn: "Yes, We Love This Land",
     wikiFile: "Ja vi elsker dette landet.ogg", language: "no",
     lines: [
@@ -2110,6 +2236,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NP: {
+    youtubeId: "RgH7yJDkaSQ", youtubeIntroOffset: 25.7,
     title: "सयौं थुँगा फूलका", titleEn: "Made of Hundreds of Flowers",
     wikiFile: "Sayaun Thunga Phool Ka.ogg", language: "ne",
     lines: [
@@ -2124,6 +2251,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NR: {
+    youtubeId: "Fe6RS3Bcwfk", youtubeIntroOffset: 10.7,
     title: "Nauru Bwiema", titleEn: "Nauru, Our Homeland",
     wikiFile: "Nauru Bwiema.ogg", language: "na",
     lines: [
@@ -2137,6 +2265,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   NZ: {
+    youtubeId: "2DtMOutU4pc", youtubeIntroOffset: 0.0,
     title: "God Defend New Zealand",
     wikiFile: "God Defend New Zealand.ogg", language: "en",
     lines: [
@@ -2151,6 +2280,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   OM: {
+    youtubeId: "3RCp9Y14ktg", youtubeIntroOffset: 26.3,
     title: "النشيد الوطني السلطاني", titleEn: "The Sultan's Anthem",
     wikiFile: "Nashid as-Salaam as-Sultani.ogg", language: "ar",
     lines: [
@@ -2168,6 +2298,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PA: {
+    youtubeId: "ibJDS-98Hq4", youtubeIntroOffset: 11.1,
     title: "Himno Istmeño", titleEn: "Isthmus Hymn",
     wikiFile: "Panama National Anthem.ogg", language: "es",
     lines: [
@@ -2186,6 +2317,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PE: {
+    youtubeId: "PO2QlJ8iQaM", youtubeIntroOffset: 27.6,
     title: "Himno Nacional del Perú", titleEn: "National Anthem of Peru",
     wikiFile: "Himno Nacional del Perú.ogg",
     wikiSearch: "Himno Nacional Peru vocal sung",
@@ -2200,6 +2332,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PG: {
+    youtubeId: "DSpQlU1m_iw", youtubeIntroOffset: 17.4,
     title: "O Arise, All You Sons",
     wikiFile: "O Arise All You Sons.ogg", language: "en",
     lines: [
@@ -2222,6 +2355,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PH: {
+    youtubeId: "z_4byyMr9uU", youtubeIntroOffset: 17.7,
     title: "Lupang Hinirang", titleEn: "Chosen Land",
     wikiFile: "Lupang Hinirang.ogg", language: "tl",
     lines: [
@@ -2248,6 +2382,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PK: {
+    youtubeId: "Z7hib_JWV-8", youtubeIntroOffset: 4.1,
     title: "قومی ترانہ", titleEn: "National Anthem",
     wikiFile: "Qaumi Tarana.ogg", language: "ur",
     lines: [
@@ -2264,6 +2399,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PL: {
+    youtubeId: "F_7xA6i2zoQ", youtubeIntroOffset: 13.9,
     title: "Mazurek Dąbrowskiego", titleEn: "Dąbrowski's Mazurka",
     wikiFile: "Mazurek Dabrowskiego.ogg",
     language: "pl",
@@ -2279,6 +2415,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PS: {
+    youtubeId: "fn6FdK3S92A", youtubeIntroOffset: 21.3,
     title: "فدائي", titleEn: "Warrior",
     wikiFile: "National Anthem of Palestine (Vocal).ogg", language: "ar",
     wikiSearch: "Fida'i Palestine national anthem vocal",
@@ -2294,6 +2431,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PT: {
+    youtubeId: "UdjOcOC0aDI", youtubeIntroOffset: 15.7,
     title: "A Portuguesa", titleEn: "The Portuguese",
     wikiFile: "A Portuguesa.ogg", language: "pt",
     lines: [
@@ -2313,6 +2451,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PW: {
+    youtubeId: "mmLYh-9Lz0Y", youtubeIntroOffset: 6.1,
     title: "Belau rekid", titleEn: "Our Palau",
     wikiFile: "Belau rekid.ogg", language: "pau",
     lines: [
@@ -2331,6 +2470,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   PY: {
+    youtubeId: "q_VlU7z18E4", youtubeIntroOffset: 34.9,
     title: "Himno Nacional Paraguayo", titleEn: "National Anthem of Paraguay",
     wikiFile: "Paraguayan National Anthem.oga", language: "es",
     lines: [
@@ -2349,6 +2489,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   QA: {
+    youtubeId: "8HWPG9DP3IY", youtubeIntroOffset: 25.9,
     title: "السلام الأميري", titleEn: "The Amiri Salute",
     wikiFile: "As-Salam al-Amiri.ogg", language: "ar",
     lines: [
@@ -2368,6 +2509,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   RO: {
+    youtubeId: "3RCp9Y14ktg", youtubeIntroOffset: 21.5,
     title: "Deșteaptă-te, române!", titleEn: "Wake Up, Romanian!",
     wikiFile: "Romania National Anthem - Desteapta-te Romane.ogg",
     language: "ro",
@@ -2383,6 +2525,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   RS: {
+    youtubeId: "oX39FXD-qAw", youtubeIntroOffset: 8.5,
     title: "Боже правде", titleEn: "God of Justice",
     wikiFile: "Boze pravde.ogg",
     wikiSearch: "Boze pravde Serbia vocal national anthem",
@@ -2399,6 +2542,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   RU: {
+    youtubeId: "PqJcg8W-Kgw", youtubeIntroOffset: 11.1,
     title: "Государственный гимн Российской Федерации", titleEn: "State Anthem of the Russian Federation",
     wikiFile: "State Anthem of the Russian Federation.ogg",
     language: "ru",
@@ -2414,6 +2558,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   RW: {
+    youtubeId: "71mkmK5jfck", youtubeIntroOffset: 15.8,
     title: "Rwanda nziza", titleEn: "Beautiful Rwanda",
     wikiFile: "Rwanda nziza.ogg", language: "rw",
     lines: [
@@ -2434,6 +2579,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SA: {
+    youtubeId: "aEmY5r-J7SI", youtubeIntroOffset: 36.6,
     title: "النشيد الوطني السعودي", titleEn: "National Anthem of Saudi Arabia",
     wikiFile: "Aash Al Maleek.ogg", language: "ar",
     lines: [
@@ -2448,6 +2594,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SB: {
+    youtubeId: "dxsl8-CAxDc", youtubeIntroOffset: 10.1,
     title: "God Save Our Solomon Islands",
     wikiFile: "God Save Our Solomon Islands.ogg", language: "en",
     lines: [
@@ -2462,6 +2609,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SC: {
+    youtubeId: "uL8nwGQvl_w", youtubeIntroOffset: 14.9,
     title: "Koste Seselwa", titleEn: "Join Together All Seychellois",
     wikiFile: "Koste Seselwa.ogg", language: "crs",
     lines: [
@@ -2480,6 +2628,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SD: {
+    youtubeId: "uJl5DgHDNb4", youtubeIntroOffset: 17.8,
     title: "نحن جند الله", titleEn: "We Are the Army of God",
     wikiFile: "Nahnu Jund Allah.ogg", language: "ar",
     lines: [
@@ -2496,6 +2645,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SE: {
+    youtubeId: "AIOCPZ2UCTE", youtubeIntroOffset: 10.7,
     title: "Du gamla, du fria", titleEn: "Thou Ancient, Thou Free",
     wikiFile: "Du gamla, du fria.ogg", language: "sv",
     lines: [
@@ -2511,6 +2661,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SG: {
+    youtubeId: "HzDi-ABskDo", youtubeIntroOffset: 17.2,
     title: "Majulah Singapura", titleEn: "Onward Singapore",
     wikiFile: "Majulah Singapura.ogg", language: "ms",
     lines: [
@@ -2526,6 +2677,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SI: {
+    youtubeId: "JWkHHcEdt64", youtubeIntroOffset: 9.1,
     title: "Zdravljica", titleEn: "A Toast",
     wikiFile: "Zdravljica.ogg",
     language: "sl",
@@ -2540,6 +2692,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SK: {
+    youtubeId: "wqt4hC5kQ_I", youtubeIntroOffset: 10.9,
     title: "Nad Tatrou sa blýska", titleEn: "Lightning Over the Tatras",
     wikiFile: "Nad Tatrou sa blyska.ogg",
     language: "sk",
@@ -2557,6 +2710,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SL: {
+    youtubeId: "TdkOn-OCi5w", youtubeIntroOffset: 0.0,
     title: "High We Exalt Thee, Realm of the Free",
     wikiFile: "High We Exalt Thee Realm of the Free.ogg", language: "en",
     lines: [
@@ -2575,6 +2729,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SM: {
+    youtubeId: "z9zQV7J5X6g", youtubeIntroOffset: 24.2,
     title: "Inno Nazionale della Repubblica", titleEn: "National Anthem of the Republic",
     wikiFile: "Inno Nazionale della Repubblica di San Marino.ogg", language: "it",
     instrumental: true,
@@ -2583,6 +2738,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SN: {
+    youtubeId: "QX79LMaZx80", youtubeIntroOffset: 28.9,
     title: "Pincez Tous vos Koras, Frappez les Balafons", titleEn: "Pluck Your Koras, Strike the Balafons",
     wikiFile: "Pincez Tous vos Koras, Frappez les Balafons.ogg", language: "fr",
     lines: [
@@ -2602,6 +2758,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SO: {
+    youtubeId: "kmPAA6zJl80", youtubeIntroOffset: 29.7,
     title: "Qolobaa Calankeed", titleEn: "Praise Be to the Flag",
     wikiFile: "Qolobaa Calankeed.ogg", language: "so",
     lines: [
@@ -2615,6 +2772,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SR: {
+    youtubeId: "lwLJkUdWDlg", youtubeIntroOffset: 13.1,
     title: "God zij met ons Suriname", titleEn: "God Be With Our Suriname",
     wikiFile: "God zij met ons Suriname.ogg", language: "nl",
     lines: [
@@ -2633,6 +2791,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SS: {
+    youtubeId: "_C5Tt8DPLMA", youtubeIntroOffset: 14.8,
     title: "South Sudan Oyee!",
     wikiFile: "South Sudan Oyee.ogg", language: "en",
     lines: [
@@ -2652,6 +2811,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ST: {
+    youtubeId: "Zx93vHDHil0", youtubeIntroOffset: 25.8,
     title: "Independência total", titleEn: "Total Independence",
     wikiFile: "Independencia total.ogg", language: "pt",
     lines: [
@@ -2672,6 +2832,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SV: {
+    youtubeId: "0yoy_MtlRio", youtubeIntroOffset: 0.8,
     title: "Himno Nacional de El Salvador", titleEn: "National Anthem of El Salvador",
     wikiFile: "El Salvador National Anthem.ogg", language: "es",
     lines: [
@@ -2690,6 +2851,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SY: {
+    youtubeId: "92LXF9D7fO8", youtubeIntroOffset: 29.8,
     title: "حماة الديار", titleEn: "Guardians of the Homeland",
     wikiFile: "Humat ad-Diyar.ogg", language: "ar",
     lines: [
@@ -2704,6 +2866,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   SZ: {
+    youtubeId: "UDAsu8nSN5k", youtubeIntroOffset: 6.5,
     title: "Ingoma Yesive", titleEn: "Oh God, Bestower of the Blessings of the Swazi",
     wikiFile: "Ingoma Yesive.ogg", language: "ss",
     lines: [
@@ -2718,6 +2881,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TD: {
+    youtubeId: "9SqomfMynJ0", youtubeIntroOffset: 0.0,
     title: "La Tchadienne", titleEn: "The Chadian",
     wikiFile: "La Tchadienne.ogg", language: "fr",
     lines: [
@@ -2732,6 +2896,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TG: {
+    youtubeId: "Xxi2YSNxcNM", youtubeIntroOffset: 0.0,
     title: "Terre de nos aïeux", titleEn: "Land of Our Ancestors",
     wikiFile: "Terre de nos aieux.ogg", language: "fr",
     lines: [
@@ -2750,6 +2915,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TH: {
+    youtubeId: "KTNNBb_YaTs", youtubeIntroOffset: 15.1,
     title: "เพลงชาติไทย", titleEn: "Thai National Anthem",
     wikiFile: "Phleng Chat Thai.ogg", language: "th",
     lines: [
@@ -2764,6 +2930,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TJ: {
+    youtubeId: "-8lMOAZWMUU", youtubeIntroOffset: 25.7,
     title: "Суруди миллӣ", titleEn: "National Anthem",
     wikiFile: "Surudi milli.ogg", language: "tg",
     lines: [
@@ -2781,6 +2948,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TL: {
+    youtubeId: "Ho5QaXhHI3Y", youtubeIntroOffset: 0.0,
     title: "Pátria", titleEn: "Fatherland",
     wikiFile: "Patria (Timor-Leste).ogg", language: "pt",
     lines: [
@@ -2799,6 +2967,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TM: {
+    youtubeId: "eV3-xbxPaAU", youtubeIntroOffset: 10.3,
     title: "Garaşsyz, Bitarap Türkmenistanyň Döwlet Gimni", titleEn: "National Anthem of Neutral Turkmenistan",
     wikiFile: "National anthem of Turkmenistan.ogg", language: "tk",
     lines: [
@@ -2813,6 +2982,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TN: {
+    youtubeId: "0VNVE1xeZ4Y", youtubeIntroOffset: 20.0,
     title: "حماة الحمى", titleEn: "Defenders of the Homeland",
     wikiFile: "Humat Al Hima.ogg", language: "ar",
     lines: [
@@ -2831,6 +3001,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TO: {
+    youtubeId: "q2Pz6zxMhMI", youtubeIntroOffset: 6.5,
     title: "Ko e fasi ʻo e tuʻi ʻo e ʻOtu Tonga", titleEn: "Song of the King of the Tonga Islands",
     wikiFile: "Ko e fasi o e tui o e otu Tonga.ogg", language: "to",
     lines: [
@@ -2845,6 +3016,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TR: {
+    youtubeId: "W1qyxVPVRW8", youtubeIntroOffset: 10.1,
     title: "İstiklâl Marşı", titleEn: "Independence March",
     wikiFile: "Istiklal Marsi.ogg", language: "tr",
     lines: [
@@ -2859,6 +3031,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TT: {
+    youtubeId: "VDI1MuzkmzA", youtubeIntroOffset: 29.6,
     title: "Forged from the Love of Liberty",
     wikiFile: "Forged from the Love of Liberty.ogg", language: "en",
     lines: [
@@ -2877,6 +3050,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TV: {
+    youtubeId: "eUKXG7CCIM0", youtubeIntroOffset: 13.5,
     title: "Tuvalu mo te Atua", titleEn: "Tuvalu for the Almighty",
     wikiFile: "Tuvalu mo te Atua.ogg", language: "tvl",
     lines: [
@@ -2895,6 +3069,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   TZ: {
+    youtubeId: "TzsTSVnss1g", youtubeIntroOffset: 15.6,
     title: "Mungu ibariki Afrika", titleEn: "God Bless Africa",
     wikiFile: "Mungu ibariki Afrika.ogg", language: "sw",
     lines: [
@@ -2912,6 +3087,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   UA: {
+    youtubeId: "Fd_r4WLU32E", youtubeIntroOffset: 7.9,
     title: "Державний Гімн України", titleEn: "State Anthem of Ukraine",
     wikiFile: "Shche ne vmerla Ukraina.ogg",
     language: "uk",
@@ -2925,6 +3101,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   UG: {
+    youtubeId: "s4TU-6xB94U", youtubeIntroOffset: 15.6,
     title: "Oh Uganda, Land of Beauty",
     wikiFile: "Oh Uganda Land of Beauty.ogg", language: "en",
     lines: [
@@ -2945,6 +3122,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   US: {
+    youtubeId: "GEZb7VZGEJY", youtubeIntroOffset: 27.7,
     title: "The Star-Spangled Banner",
     wikiFile: '"The Star-Spangled Banner" - Solo vocalist - U.S. Navy Band.oga',
     wikiSearch: "Star Spangled Banner vocal national anthem United States",
@@ -2968,6 +3146,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   UY: {
+    youtubeId: "68nA1B5KK8g", youtubeIntroOffset: 26.3,
     title: "Himno Nacional de Uruguay", titleEn: "National Anthem of Uruguay",
     wikiFile: "United States Navy Band - National Anthem of Uruguay (short with intro).ogg", language: "es",
     lines: [
@@ -2986,6 +3165,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   UZ: {
+    youtubeId: "Ci2JQH4055k", youtubeIntroOffset: 26.6,
     title: "O'zbekiston Respublikasining Davlat Madhiyasi", titleEn: "State Anthem of Uzbekistan",
     wikiFile: "National anthem of Uzbekistan.ogg", language: "uz",
     lines: [
@@ -3000,6 +3180,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   VA: {
+    youtubeId: "dD3rkdVnjOM", youtubeIntroOffset: 19.8,
     title: "Inno e Marcia Pontificale", titleEn: "Pontifical Anthem and March",
     wikiFile: "Inno e Marcia Pontificale.ogg", language: "la",
     lines: [
@@ -3018,6 +3199,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   VC: {
+    youtubeId: "8isOSD7douE", youtubeIntroOffset: 12.6,
     title: "Saint Vincent! Land So Beautiful!",
     wikiFile: "Saint Vincent Land So Beautiful.ogg", language: "en",
     lines: [
@@ -3036,6 +3218,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   VE: {
+    youtubeId: "JXrVP87fMVY", youtubeIntroOffset: 20.2,
     title: "Gloria al Bravo Pueblo", titleEn: "Glory to the Brave People",
     wikiFile: "United States Navy Band - Gloria al Bravo Pueblo.ogg",
     wikiSearch: "Gloria Bravo Pueblo Venezuela vocal national anthem",
@@ -3058,6 +3241,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   VN: {
+    youtubeId: "5pnkNgKn08Y", youtubeIntroOffset: 0.0,
     title: "Tiến Quân Ca", titleEn: "Army March",
     wikiFile: "Tien Quan Ca.ogg", language: "vi",
     lines: [
@@ -3075,6 +3259,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   VU: {
+    youtubeId: "t2153orNj7M", youtubeIntroOffset: 11.6,
     title: "Yumi, Yumi, Yumi", titleEn: "We, We, We",
     wikiFile: "Yumi Yumi Yumi.ogg", language: "bi",
     lines: [
@@ -3095,6 +3280,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   WS: {
+    youtubeId: "pRk4As35rHY", youtubeIntroOffset: 14.2,
     title: "O le Fu'a o le Sa'olotoga o Samoa", titleEn: "The Banner of Freedom",
     wikiFile: "O le Fua o le Saolotoga o Samoa.ogg", language: "sm",
     lines: [
@@ -3109,6 +3295,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   YE: {
+    youtubeId: "wj5YXPLMa2o", youtubeIntroOffset: 25.6,
     title: "الجمهورية المتحدة", titleEn: "United Republic",
     wikiFile: "United Republic (Yemen).ogg", language: "ar",
     lines: [
@@ -3125,6 +3312,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ZA: {
+    youtubeId: "pu0qKRgNa1U", youtubeIntroOffset: 14.9,
     title: "Nkosi Sikelel' iAfrika / Die Stem van Suid-Afrika",
     titleEn: "Lord Bless Africa / The Voice of South Africa",
     wikiFile: "Nkosi Sikelel iAfrika.ogg", language: "zu",
@@ -3148,6 +3336,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ZM: {
+    youtubeId: "aRoXjI6jSj0", youtubeIntroOffset: 16.2,
     title: "Stand and Sing of Zambia, Proud and Free",
     wikiFile: "Stand and Sing of Zambia Proud and Free.ogg", language: "en",
     lines: [
@@ -3168,6 +3357,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   ZW: {
+    youtubeId: "AdJRwmbm4wQ", youtubeIntroOffset: 11.3,
     title: "Blessed Be the Land of Zimbabwe",
     wikiFile: "Blessed Be the Land of Zimbabwe.ogg", language: "en",
     lines: [

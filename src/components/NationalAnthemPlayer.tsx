@@ -565,13 +565,21 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
         videoId: anthem.youtubeId!,
         width: "100%",
         height: "195",
-        playerVars: { rel: 0, modestbranding: 1, autoplay: 1 },
+        playerVars: { rel: 0, modestbranding: 1, autoplay: 1, start: Math.floor(anthem.youtubeIntroOffset ?? 0) },
         events: {
           onReady: (e) => {
             if (cancelled) return;
             ytPlayerRef.current = e.target;
             setDuration(e.target.getDuration());
             setIsLoadingAudio(false);
+            try {
+              const targetAny = e.target as any;
+              if (typeof targetAny.setPlaybackQuality === 'function') {
+                targetAny.setPlaybackQuality('highres');
+              }
+            } catch (err) {
+              console.warn("Failed to set quality:", err);
+            }
             if (visibleRef.current) {
               e.target.playVideo();
             }
@@ -581,6 +589,14 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
             const YT_ENDED = 0;
             if (e.data === YT_PLAYING) {
               setIsPlaying(true);
+              try {
+                const targetAny = e.target as any;
+                if (typeof targetAny.setPlaybackQuality === 'function') {
+                  targetAny.setPlaybackQuality('highres');
+                }
+              } catch (err) {
+                console.warn("Failed to set quality on play:", err);
+              }
               if (ytPollRef.current) clearInterval(ytPollRef.current);
               ytPollRef.current = setInterval(() => {
                 const p = ytPlayerRef.current;
