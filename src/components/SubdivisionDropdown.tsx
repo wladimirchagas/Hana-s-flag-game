@@ -34,12 +34,24 @@ export function SubdivisionDropdown({
     }
   }, [disabled]);
 
+  const lastSyncedValueRef = useRef<SubdivisionMeta | null>(value);
+  const prevOpenRef = useRef(open);
+  const prevModalOpenRef = useRef(modalOpen);
+
   useEffect(() => {
-    if (value) {
-      setQuery(value.name);
-    } else if (!open && !modalOpen) {
+    const becameClosed = (prevOpenRef.current && !open) || (prevModalOpenRef.current && !modalOpen);
+    const valueChanged = value !== lastSyncedValueRef.current;
+    const shouldSyncValue = valueChanged && (value !== null || (!open && !modalOpen));
+
+    if (shouldSyncValue || becameClosed) {
+      lastSyncedValueRef.current = value;
+      setQuery(value ? value.name : "");
+    } else if (!value && !open && !modalOpen) {
       setQuery("");
     }
+
+    prevOpenRef.current = open;
+    prevModalOpenRef.current = modalOpen;
   }, [value, open, modalOpen]);
 
   const sortedDivisions = useMemo(
