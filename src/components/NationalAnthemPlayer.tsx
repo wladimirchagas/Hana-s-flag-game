@@ -227,6 +227,13 @@ function loadYTApi(): Promise<void> {
   return _ytApiPromise;
 }
 
+// Preload the YouTube IFrame API as soon as the module is imported.
+// This ensures that when the user clicks play, the script is already cached
+// and the promise resolves synchronously (preserving the user gesture).
+if (typeof window !== "undefined") {
+  loadYTApi();
+}
+
 // ── Component ───────────────────────────────────────────────────────────────
 
 export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClose }: Props) {
@@ -499,7 +506,7 @@ export function NationalAnthemPlayer({ countryCode, countryName, flagUrl, onClos
         videoId: anthem.youtubeId!,
         width: "100%",
         height: "195",
-        playerVars: { rel: 0, modestbranding: 1 },
+        playerVars: { rel: 0, modestbranding: 1, autoplay: 1 },
         events: {
           onReady: (e) => {
             if (cancelled) return;
