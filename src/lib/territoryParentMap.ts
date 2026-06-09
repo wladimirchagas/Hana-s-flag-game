@@ -156,6 +156,24 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
   // Disputed territory claimants — same GeoJSON, different subdivision codes
   AR: [{ geoCode: "FK", subdivCode: "AR-ML~" }],
   ES: [{ geoCode: "GI", subdivCode: "ES-GIB~" }],
+  // Crimea & Sevastopol — shown under Russia (administers) and Ukraine (internationally recognised claim)
+  RU: [
+    { geoCode: "UA-43", subdivCode: "UA-43" },
+    { geoCode: "UA-40", subdivCode: "UA-40" },
+  ],
+  UA: [
+    { geoCode: "UA-43", subdivCode: "UA-43" },
+    { geoCode: "UA-40", subdivCode: "UA-40" },
+  ],
+  // Azad Kashmir & Gilgit-Baltistan — shown under Pakistan (administers) and India (claims)
+  PK: [
+    { geoCode: "PK-JK", subdivCode: "PK-JK" },
+    { geoCode: "PK-GB", subdivCode: "PK-GB" },
+  ],
+  IN: [
+    { geoCode: "PK-JK", subdivCode: "IN-AK~" },
+    { geoCode: "PK-GB", subdivCode: "IN-GB~" },
+  ],
 };
 
 // Territory alpha-2 codes contested by multiple UN member states.

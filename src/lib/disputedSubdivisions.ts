@@ -18,7 +18,9 @@ export const DISPUTED_SUBDIV_NOTES: Record<string, string> = {
   "UA-40": "Sevastopol (ISO 3166-2: UA-40) is internationally recognised as Ukrainian territory. Russia has administered it as a federal city since its 2014 annexation of Crimea, which is not recognised by Ukraine or the United Nations. It is shown here under both Russia (which administers it) and Ukraine (which holds the internationally recognised claim).",
 
   // Azad Kashmir & Gilgit-Baltistan — administered by Pakistan; claimed by India.
-  // Shown under both Pakistan (administers) and India (claims).
+  // Shown under both Pakistan (administers) and India (claims, as IN-AK~ / IN-GB~).
   "PK-JK": "Azad Jammu and Kashmir is administered by Pakistan as a self-governing territory, but India claims it in full as part of its Union Territory of Jammu and Kashmir. A United Nations-mandated plebiscite on the region's final status has never been held. It is shown here under both Pakistan (which administers it) and India (which claims it).",
   "PK-GB": "Gilgit-Baltistan is administered by Pakistan but claimed by India as part of its Union Territory of Jammu and Kashmir. China also disputes a portion of the territory (the Trans-Karakoram Tract, ceded by Pakistan to China in 1963 but not recognised by India). It is shown here under both Pakistan (which administers it) and India (which claims it).",
+  "IN-AK~": "Azad Jammu and Kashmir is administered by Pakistan as a self-governing territory, but India claims it in full as part of its Union Territory of Jammu and Kashmir. A United Nations-mandated plebiscite on the region's final status has never been held. It is shown here under both Pakistan (which administers it) and India (which claims it).",
+  "IN-GB~": "Gilgit-Baltistan is administered by Pakistan but claimed by India as part of its Union Territory of Jammu and Kashmir. China also disputes a portion of the territory (the Trans-Karakoram Tract, ceded by Pakistan to China in 1963 but not recognised by India). It is shown here under both Pakistan (which administers it) and India (which claims it).",
 };

@@ -48,6 +48,10 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // Source: Wikimedia Commons (Flag_of_Tibet.svg)
   "CN-XZ":  "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
 
+  // India's claimed territories in Pakistan-administered Kashmir — same flags as the PK entries
+  "IN-AK~": subdivisionFlagCdnUrl("PK-JK") ?? "",
+  "IN-GB~": subdivisionFlagCdnUrl("PK-GB") ?? "",
+
   // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // Custom local diagonal green/yellow flag with red star
   "FR-GP":  "https://flagcdn.com/gp.svg",

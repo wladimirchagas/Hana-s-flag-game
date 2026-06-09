@@ -2225,8 +2225,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "IN-CT", name: "Chhattisgarh", typeLabel: "State" },
     { code: "IN-HR", name: "Haryana", typeLabel: "State" },
     { code: "IN-TG", name: "Telangana", typeLabel: "State" },
-    { code: "PK-JK", name: "Azad Kashmir", typeLabel: "Disputed Territory" },
-    { code: "PK-GB", name: "Gilgit-Baltistan", typeLabel: "Disputed Territory" }
+    { code: "IN-AK~", name: "Azad Kashmir", typeLabel: "Claimed Territory" },
+    { code: "IN-GB~", name: "Gilgit-Baltistan", typeLabel: "Claimed Territory" }
     ],
   },
   "IQ": {
@@ -4223,10 +4223,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RU-SAR", name: "Saratov", typeLabel: "Region" },
     { code: "RU-AST", name: "Astrakhan", typeLabel: "Region" },
     { code: "RU-VGG", name: "Volgograd", typeLabel: "Region" },
-    { code: "UA-43", name: "Autonomous Republic of Crimea", typeLabel: "Autonomous Republic" },
+    { code: "UA-43", name: "Autonomous Republic of Crimea", typeLabel: "Disputed Territory" },
     { code: "RU-MAG", name: "Magadan", typeLabel: "Region" },
     { code: "RU-SAK", name: "Sakhalin", typeLabel: "Region" },
-    { code: "UA-40", name: "Sevastopol", typeLabel: "Federal City" },
+    { code: "UA-40", name: "Sevastopol", typeLabel: "Disputed Territory" },
     { code: "RU-CHU", name: "Chukotka Autonomous Okrug", typeLabel: "Autonomous Province" },
     { code: "RU-YAN", name: "Yamalo-Nenets Autonomous Okrug", typeLabel: "Autonomous Province" },
     { code: "RU-NEN", name: "Nenets Autonomous Okrug", typeLabel: "Autonomous Province" },
