@@ -785,6 +785,8 @@ export default function LearnPage() {
                 const c = codeToCountry.get(code);
                 if (c) setHovered({ kind: "modern", country: c });
               },
+              // Rule #2: UNDISPUTED only — disputed territories must not be
+              // clickable on the map (see territoryParentMap.ts Rule #2 comment).
               territoryParent: UNDISPUTED_TERRITORY_PARENT,
             }}
             highlightCodes={territoryHighlightCodes}

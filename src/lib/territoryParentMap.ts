@@ -177,6 +177,27 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
   ],
 };
 
+// RULE #2 — MAP CLICK BEHAVIOUR (hard-coded):
+//
+// • NON-DISPUTED territories (e.g. Greenland GL, Puerto Rico PR):
+//   Clicking them on the world map REDIRECTS to the administering UN-member
+//   state (e.g. GL → Denmark DK). They are never independent destinations.
+//
+// • DISPUTED territories (e.g. Crimea UA-43, Falklands FK, Taiwan TW):
+//   Clicking them on the world map does NOTHING — no redirect, no popup.
+//   Disputed territories are only visible inside the subdivision section
+//   of each claiming UN-member state, labelled "(disputed territory)".
+//   Silently redirecting a disputed territory click to one claimant over
+//   another would imply a political position the game must not take.
+//
+// HOW IT IS ENFORCED:
+//   DISPUTED_TERRITORY_CODES is auto-derived: any geoCode that appears
+//   under TWO OR MORE entries in TERRITORY_GEO_FOR_PARENT is disputed.
+//   UNDISPUTED_TERRITORY_PARENT excludes all disputed codes.
+//   The map component (WorldProgressMap) receives ONLY
+//   UNDISPUTED_TERRITORY_PARENT, so disputed polygons are never clickable.
+//   DO NOT pass the full TERRITORY_PARENT to the map — it would break this.
+
 // Territory alpha-2 codes contested by multiple UN member states.
 // Derived from TERRITORY_GEO_FOR_PARENT: any geoCode appearing under two or
 // more administering states is disputed and must not be clickable on the world
@@ -191,7 +212,14 @@ export const DISPUTED_TERRITORY_CODES: ReadonlySet<string> = new Set(
   [..._disputedCount].filter(([, n]) => n > 1).map(([code]) => code),
 );
 
-/** territory alpha-2 → parent alpha-2, excluding all disputed territories */
+/**
+ * territory alpha-2 → parent alpha-2, EXCLUDING all disputed territories.
+ *
+ * ALWAYS pass this (not TERRITORY_PARENT) to the world map component.
+ * Disputed territories must not be clickable on the world map — see Rule #2
+ * comment above. Using the full TERRITORY_PARENT would silently redirect
+ * disputed-territory clicks to one claimant, implying a political position.
+ */
 export const UNDISPUTED_TERRITORY_PARENT: Record<string, string> =
   Object.fromEntries(
     Object.entries(TERRITORY_PARENT).filter(
