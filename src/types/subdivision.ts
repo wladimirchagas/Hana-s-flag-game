@@ -2,6 +2,7 @@ export type SubdivisionMeta = {
   code: string;        // ISO 3166-2 (e.g. "US-CA") or fallback ID
   name: string;
   typeLabel: string;   // "State", "Province", "Prefecture", etc.
+  isDisputed?: boolean;
 };
 
 export type CountrySubdivisionMeta = {

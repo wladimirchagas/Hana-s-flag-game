@@ -735,6 +735,7 @@ export default function LearnPage() {
             geoData={subdivisionGeo}
             loading={subdivisionLoading}
             selectedCode={selectedSubdivision?.code ?? null}
+            countryCode={subdivisionCountry?.code}
             onSelect={(code) => {
               const countryMeta = subdivisionCountry ? SUBDIVISION_META[subdivisionCountry.code] : null;
               const meta = countryMeta?.divisions.find((d) => d.code === code);

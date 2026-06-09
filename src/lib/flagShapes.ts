@@ -29,7 +29,7 @@
  *   - "sun"         Sun face / sun rays / sun disc (Argentina, Uruguay,
  *                   Japan with its red disc, North Macedonia, Kazakhstan,
  *                   Bangladesh, Nepal, Niger, Laos, Tunisia).
- *   - "crescent"    Crescent moon (Turkey-family, Tunisia, Pakistan,
+ *   - "crescent"    Crescent moon (Türkiye-family, Tunisia, Pakistan,
  *                   Malaysia, Singapore, Mauritania, Algeria, Libya,
  *                   Maldives, Comoros, Uzbekistan, Turkmenistan,
  *                   Azerbaijan, Nepal).

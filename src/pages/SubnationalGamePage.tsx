@@ -304,6 +304,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
             geoData={game.geoData}
             loading={false}
             selectedCode={game.selected?.code ?? null}
+            countryCode={countryCode}
             onSelect={
               isGuessing
                 ? (code) => {

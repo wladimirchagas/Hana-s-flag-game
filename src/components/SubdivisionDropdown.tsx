@@ -45,7 +45,7 @@ export function SubdivisionDropdown({
 
     if (shouldSyncValue || becameClosed) {
       lastSyncedValueRef.current = value;
-      setQuery(value ? value.name : "");
+      setQuery(value ? `${value.name}${value.isDisputed ? " (Disputed/Claimed)" : ""}` : "");
     } else if (!value && !open && !modalOpen) {
       setQuery("");
     }
@@ -166,7 +166,7 @@ export function SubdivisionDropdown({
                   onMouseDown={(e) => e.preventDefault()}
                   onClick={() => selectDivision(d)}
                 >
-                  {d.name}
+                  {d.name}{d.isDisputed ? " (Disputed/Claimed)" : ""}
                 </button>
               </li>
             ))
@@ -186,7 +186,7 @@ export function SubdivisionDropdown({
         onClick={openModal}
       >
         <span className="dropdown-tile__text">
-          {value ? value.name : "Tap to pick an answer"}
+          {value ? `${value.name}${value.isDisputed ? " (Disputed/Claimed)" : ""}` : "Tap to pick an answer"}
         </span>
         <span className="dropdown-tile__chevron" aria-hidden="true">
           ▾
@@ -246,7 +246,7 @@ export function SubdivisionDropdown({
                       }`}
                       onClick={() => selectDivision(d)}
                     >
-                      {d.name}
+                      {d.name}{d.isDisputed ? " (Disputed/Claimed)" : ""}
                     </button>
                   </li>
                 ))

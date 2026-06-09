@@ -66,6 +66,8 @@ const ENTRIES: TerritoryEntry[] = [
   // Norway
   { code: "SJ", name: "Svalbard and Jan Mayen",                       parent: "NO" },
   { code: "BV", name: "Bouvet Island",                                parent: "NO" },
+  // Disputed
+  { code: "NC", name: "Northern Cyprus",                              parent: "CY" },
 ];
 
 /** territory alpha-2 → administering country alpha-2 */
@@ -175,6 +177,8 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "PK-JK", subdivCode: "IN-AK~" },
     { geoCode: "PK-GB", subdivCode: "IN-GB~" },
   ],
+  TR: [{ geoCode: "NC", subdivCode: "TR-NC~" }],
+  CY: [{ geoCode: "NC", subdivCode: "CY-06~" }],
 };
 
 // RULE #2 — MAP CLICK BEHAVIOUR (hard-coded):

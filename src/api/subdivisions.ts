@@ -1,4 +1,4 @@
-import type { SubdivisionFeatureCollection } from "../types/subdivision";
+import type { SubdivisionFeatureCollection, SubdivisionGeoFeature } from "../types/subdivision";
 import { subdivisionFlagCdnUrl, hasSubdivisionFlag as hasSubdivisionFlagCdn } from "../lib/subdivisionFlagIndex";
 import { TERRITORY_GEO_FOR_PARENT } from "../lib/territoryParentMap";
 
@@ -25,6 +25,7 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FI-AX":  "https://flagcdn.com/ax.svg",
   "AU-CC":  "https://flagcdn.com/cc.svg",
   "ES-GIB~": "https://flagcdn.com/gi.svg",
+  "TR-NC~": `${BASE}flags/trnc.svg`,
 
   // Newly added populated territories
   "AU-CX":  "https://flagcdn.com/cx.svg",
@@ -91,13 +92,27 @@ export async function fetchMergedSubdivisionGeo(
     fetchSubdivisionGeo(code),
     ...territoryMappings.map((t) => fetchSubdivisionGeo(t.geoCode)),
   ]);
-  const extraFeatures = territoryGeos.flatMap((geo, i) => {
+  let extraFeatures: SubdivisionGeoFeature[] = territoryGeos.flatMap((geo, i) => {
     const subdivCode = territoryMappings[i]!.subdivCode;
     return (geo?.features ?? []).map((feat) => ({
       ...feat,
       properties: { ...feat.properties, iso_3166_2: subdivCode, _isTerritory: true },
     }));
   });
+
+  // If the parent country is Ukraine (UA), dynamically load Russia (RU) to copy Crimea/Sevastopol features
+  if (code.toUpperCase() === "UA") {
+    const ruGeo = await fetchSubdivisionGeo("RU");
+    if (ruGeo) {
+      const crimeaFeatures = ruGeo.features.filter(
+        (feat) =>
+          feat.properties.iso_3166_2 === "UA-43" ||
+          feat.properties.iso_3166_2 === "UA-40",
+      );
+      extraFeatures = [...extraFeatures, ...crimeaFeatures];
+    }
+  }
+
   if (!mainGeo && extraFeatures.length === 0) return null;
   const updatedMainFeatures = (mainGeo?.features ?? []).map((feat) => {
     const subdivCode = feat.properties?.iso_3166_2 || "";

@@ -346,6 +346,55 @@ export function WorldProgressMap({
         if (!res.ok) throw new Error("Failed to load world map");
         const topo = (await res.json()) as WorldTopo;
         const fc = feature(topo, topo.objects.countries) as FeatureCollection;
+
+        // Extract Crimea from Russia (id=643 / "RU")
+        const russiaFeature = fc.features.find((f) => {
+          const alpha2 = toIsoAlpha2(f.id);
+          return alpha2 === "RU";
+        });
+
+        if (russiaFeature && russiaFeature.geometry && (russiaFeature.geometry as any).type === "MultiPolygon") {
+          const coords = (russiaFeature.geometry as any).coordinates as number[][][][];
+          const filteredCoords: number[][][][] = [];
+          let crimeaCoords: number[][][] | null = null;
+          
+          for (const poly of coords) {
+            let sumLon = 0;
+            let sumLat = 0;
+            const pts = poly[0];
+            if (pts && pts.length > 0) {
+              for (let i = 0; i < pts.length; i++) {
+                sumLon += pts[i][0];
+                sumLat += pts[i][1];
+              }
+              const cLon = sumLon / pts.length;
+              const cLat = sumLat / pts.length;
+              
+              if (cLon >= 32.0 && cLon <= 37.0 && cLat >= 44.0 && cLat <= 46.5) {
+                crimeaCoords = poly;
+                continue;
+              }
+            }
+            filteredCoords.push(poly);
+          }
+          
+          if (crimeaCoords) {
+            (russiaFeature.geometry as any).coordinates = filteredCoords;
+            
+            // Create a new separate feature for Crimea
+            const crimeaFeature: GeoFeature = {
+              type: "Feature",
+              id: "DISPUTED_CRIMEA",
+              properties: { name: "Crimea (Disputed/Claimed)" },
+              geometry: {
+                type: "Polygon",
+                coordinates: crimeaCoords
+              }
+            };
+            fc.features.push(crimeaFeature);
+          }
+        }
+
         if (!cancelled) setGeographies(fc.features);
       } catch {
         if (!cancelled) setGeographies([]);
@@ -671,7 +720,7 @@ export function WorldProgressMap({
                       ? selectable?.names.get(alpha2) ??
                         ALL_UN_NAMES.get(alpha2) ??
                         null
-                      : null;
+                      : (geo.properties?.name as string || null);
                   return (
                     <path
                       key={key}

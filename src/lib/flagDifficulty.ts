@@ -57,7 +57,7 @@ export const EASY_CODES: readonly string[] = [
   "SA", // Saudi Arabia — distinctive Arabic + sword
   "SE", // Sweden
   "SG", // Singapore
-  "TR", // Turkey
+  "TR", // Türkiye
   "US", // United States
   "VA", // Vatican City — iconic crossed keys
   "ZA", // South Africa — rainbow Y-shape

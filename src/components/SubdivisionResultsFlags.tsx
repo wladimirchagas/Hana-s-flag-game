@@ -40,7 +40,14 @@ function FlagColumn({
                     />
                   </div>
                 )}
-                <span className="results-flags__name">{d.name}</span>
+                <span className="results-flags__name">
+                  {d.name}
+                  {d.isDisputed && (
+                    <span className="results-flags__name-disputed" style={{ fontSize: "0.85em", color: "var(--ink-soft)", marginLeft: "5px" }}>
+                      (Disputed/Claimed)
+                    </span>
+                  )}
+                </span>
               </li>
             );
           })}

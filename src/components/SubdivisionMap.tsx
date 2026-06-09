@@ -6,6 +6,7 @@ import type {
   SubdivisionFeatureCollection,
   SubdivisionGeoFeature,
 } from "../types/subdivision";
+import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -40,6 +41,17 @@ const DARK_PALETTE: MapPalette = {
   selectedStroke: "#f4ecd8",
   selectedFill: "#74e4dc",
 };
+
+const DISPUTED_SUBDIV_CODES = new Set([
+  "UA-43",
+  "UA-40",
+  "GB-GI",
+  "ES-GIB~",
+  "GB-FK",
+  "AR-ML~",
+  "TR-NC~",
+  "CY-06~",
+]);
 
 
 
@@ -144,6 +156,7 @@ type Props = {
   onHover?: (code: string | null) => void;
   disabled?: boolean;
   countryResults?: Record<string, "correct" | "wrong">;
+  countryCode?: string;
 };
 
 export function SubdivisionMap({
@@ -156,6 +169,7 @@ export function SubdivisionMap({
   onHover,
   disabled = false,
   countryResults = {},
+  countryCode,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -417,8 +431,15 @@ export function SubdivisionMap({
                 const path = pathByIdx.get(idx);
                 if (!path) return null;
                 const code = getSubdivCode(feat);
-                const name =
+                let name =
                   feat.properties.name_en || feat.properties.name || code;
+                if (countryCode) {
+                  const countryMeta = SUBDIVISION_META[countryCode.toUpperCase()];
+                  const meta = countryMeta?.divisions.find((d) => d.code === code);
+                  if (meta) {
+                    name = meta.name;
+                  }
+                }
                 const isSelected = code === selectedCode;
                 const fill = getFill(code);
                 return (
@@ -452,7 +473,12 @@ export function SubdivisionMap({
                         : undefined
                     }
                   >
-                    {name ? <title>{name}</title> : null}
+                    {name ? (
+                      <title>
+                        {name}
+                        {DISPUTED_SUBDIV_CODES.has(code) ? " (Disputed/Claimed)" : ""}
+                      </title>
+                    ) : null}
                   </path>
                 );
               })}
@@ -489,7 +515,10 @@ export function SubdivisionMap({
               role="dialog"
               aria-label={`Confirm: ${popover.name}`}
             >
-              <span className="map-popover__name">{popover.name}</span>
+              <span className="map-popover__name">
+                {popover.name}
+                {DISPUTED_SUBDIV_CODES.has(popover.code) ? " (Disputed/Claimed)" : ""}
+              </span>
               {onConfirm ? (
                 <button
                   type="button"

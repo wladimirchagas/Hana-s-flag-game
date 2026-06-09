@@ -71,13 +71,13 @@ function EntryDetail({ entry }: { entry: LeaderboardEntry }) {
 
 const SLUG_TO_LABEL: Record<string, string> = {
   "all-195": "All flags",
-  custom: "Custom",
+  hana: "Hana's Game",
   "quiz-easy": "Easy",
   "quiz-moderate": "Moderate",
   "quiz-hard": "Hard",
 };
 
-const SLUG_ORDER = ["all-195", "quiz-easy", "quiz-moderate", "quiz-hard", "custom"];
+const SLUG_ORDER = ["all-195", "quiz-easy", "quiz-moderate", "quiz-hard", "hana"];
 
 function gameModeLabel(slug: string): string {
   if (SLUG_TO_LABEL[slug]) return SLUG_TO_LABEL[slug];

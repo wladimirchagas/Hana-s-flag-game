@@ -61,6 +61,27 @@ const SUBDIVISION_TYPE_OVERRIDES = {
   "SY-X01~": "Territory"  // Western al-Samadania
 };
 
+const SUBDIVISION_NAME_OVERRIDES_NEW = {
+  "RU": {
+    "UA-43": "Republic of Crimea",
+    "UA-40": "Sevastopol"
+  }
+};
+
+const SUBDIVISION_TYPE_OVERRIDES_NEW = {
+  "RU": {
+    "UA-43": "Republic",
+    "UA-40": "Federal City"
+  },
+  "UA": {
+    "UA-40": "Special Status City"
+  }
+};
+
+const DISPUTED_SUBDIV_CODES = new Set([
+  "UA-43", "UA-40", "GB-GI", "ES-GIB~", "GB-FK", "AR-ML~", "TR-NC~", "CY-06~"
+]);
+
 const TERRITORIES_TO_APPEND = {
   "DK": [
     { code: "DK-GL", name: "Greenland", typeLabel: "Autonomous Territory" },
@@ -121,10 +142,20 @@ const TERRITORIES_TO_APPEND = {
     { code: "AU-NF", name: "Norfolk Island", typeLabel: "Territory" }
   ],
   "AR": [
-    { code: "AR-ML~", name: "Islas Malvinas", typeLabel: "Claimed Territory" }
+    { code: "AR-ML~", name: "Malvinas Islands", typeLabel: "Claimed Territory" }
   ],
   "ES": [
     { code: "ES-GIB~", name: "Gibraltar", typeLabel: "Claimed Territory" }
+  ],
+  "TR": [
+    { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Claimed State" }
+  ],
+  "CY": [
+    { code: "CY-06~", name: "Kyrenia", typeLabel: "District" }
+  ],
+  "UA": [
+    { code: "UA-43", name: "Autonomous Republic of Crimea", typeLabel: "Autonomous Republic" },
+    { code: "UA-40", name: "Sevastopol", typeLabel: "Special Status City" }
   ]
 };
 
@@ -194,7 +225,7 @@ for (const file of files.sort()) {
     const p = f.properties || {};
     const divCode = p.iso_3166_2 || p.name || '';
     if (!divCode) continue;
-    const name = p.name_en || p.name || divCode;
+    let name = p.name_en || p.name || divCode;
     
     // Skip nameless placeholder features
     if (name === divCode && divCode.includes('-X')) {
@@ -207,8 +238,14 @@ for (const file of files.sort()) {
     }
     
     let typeLabel = p.type_en || p.type || bestType;
-    if (SUBDIVISION_TYPE_OVERRIDES[divCode]) {
+    if (SUBDIVISION_TYPE_OVERRIDES_NEW[code]?.[divCode]) {
+      typeLabel = SUBDIVISION_TYPE_OVERRIDES_NEW[code][divCode];
+    } else if (SUBDIVISION_TYPE_OVERRIDES[divCode]) {
       typeLabel = SUBDIVISION_TYPE_OVERRIDES[divCode];
+    }
+
+    if (SUBDIVISION_NAME_OVERRIDES_NEW[code]?.[divCode]) {
+      name = SUBDIVISION_NAME_OVERRIDES_NEW[code][divCode];
     }
     
     divisions.push({ code: divCode, name, typeLabel });
@@ -233,6 +270,7 @@ export type SubdivisionMeta = {
   code: string;       // ISO 3166-2 (e.g. "US-CA") or name fallback
   name: string;
   typeLabel: string;  // "State", "Province", "Prefecture", etc.
+  isDisputed?: boolean;
 };
 
 export type CountrySubdivisionMeta = {
@@ -245,7 +283,17 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {\n`;
 
 for (const entry of entries) {
   const divsJson = entry.divisions
-    .map(d => `    { code: ${JSON.stringify(d.code)}, name: ${JSON.stringify(d.name)}, typeLabel: ${JSON.stringify(d.typeLabel)} }`)
+    .map(d => {
+      const parts = [
+        `code: ${JSON.stringify(d.code)}`,
+        `name: ${JSON.stringify(d.name)}`,
+        `typeLabel: ${JSON.stringify(d.typeLabel)}`
+      ];
+      if (DISPUTED_SUBDIV_CODES.has(d.code)) {
+        parts.push(`isDisputed: true`);
+      }
+      return `    { ${parts.join(', ')} }`;
+    })
     .join(',\n');
   ts += `  ${JSON.stringify(entry.countryCode)}: {\n`;
   ts += `    countryCode: ${JSON.stringify(entry.countryCode)},\n`;

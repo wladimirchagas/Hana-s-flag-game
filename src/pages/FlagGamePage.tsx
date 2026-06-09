@@ -133,7 +133,7 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   // Derive a stable game mode string used for leaderboard filtering.
   const gameMode = useMemo((): string => {
     if (isQuickQuiz && quiz) return `quiz-${quiz.flagCount}`;
-    if (isCustomGame) return "custom";
+    if (isCustomGame) return "hana";
     if (isGroupGame && groupGame) {
       const slug = groupGame.groupLabel
         .toLowerCase()
@@ -149,7 +149,7 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
     if (isQuickQuiz && quiz) {
       label = `Quick Quiz · ${game.totalFlags} flags`;
     } else if (isCustomGame) {
-      label = `Custom Game · ${game.totalFlags} flags`;
+      label = `Hana's Game · ${game.totalFlags} flags`;
     } else if (isGroupGame && groupGame) {
       label = `${groupGame.hardcore ? "Hardcore" : groupGame.modeLabel} — ${groupGame.groupLabel} · ${game.totalFlags} flags`;
     } else {
@@ -417,7 +417,7 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
         <header className="card-header">
           <h1>
             Guess the Flag{" "}
-            {isCustomGame && <span className="card-header__chip">Custom</span>}
+            {isCustomGame && <span className="card-header__chip">Hana's Game</span>}
             {isQuickQuiz && (
               <span className="card-header__chip">Quick Quiz</span>
             )}

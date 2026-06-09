@@ -118,7 +118,7 @@ export function SubdivisionFlagGrid({
                     className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
                     onClick={() => onSelect(div.code)}
                     aria-pressed={active}
-                    aria-label={`Select ${div.name}`}
+                    aria-label={`Select ${div.name}${div.isDisputed ? " (Disputed/Claimed)" : ""}`}
                   >
                     <span className="flag-grid__thumb">
                       {flagUrl ? (
@@ -139,8 +139,8 @@ export function SubdivisionFlagGrid({
                       {UNOFFICIAL_SUBDIV_NOTES[div.code] && (
                         <span className="flag-grid__unofficial-tag">(unofficial flag)</span>
                       )}
-                      {DISPUTED_SUBDIV_NOTES[div.code] && (
-                        <span className="flag-grid__disputed-tag">(disputed territory)</span>
+                      {(DISPUTED_SUBDIV_NOTES[div.code] || div.isDisputed) && (
+                        <span className="flag-grid__disputed-tag">(Disputed/Claimed)</span>
                       )}
                     </span>
                   </button>

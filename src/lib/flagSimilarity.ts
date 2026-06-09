@@ -68,7 +68,7 @@
  *
  *  11. crescent-star
  *      Flags featuring a crescent moon and one or more stars — the
- *      dominant visual signature of Islamic-heritage flags. Turkey,
+ *      dominant visual signature of Islamic-heritage flags. Türkiye,
  *      Tunisia, Algeria, Pakistan, Libya, Azerbaijan, Turkmenistan,
  *      Uzbekistan, Malaysia, Comoros, Mauritania, Maldives, and
  *      Singapore are regularly lumped together in "which flag?" quizzes.
@@ -94,8 +94,8 @@
  *      vertical + large COA) are frequently confused with each other.
  *
  *  15. red-crescent-star
- *      Turkey and Tunisia both feature a white crescent and star on a
- *      plain red field — Turkey directly, Tunisia inside a white circle.
+ *      Türkiye and Tunisia both feature a white crescent and star on a
+ *      plain red field — Türkiye directly, Tunisia inside a white circle.
  *      Among the most commonly mixed-up Islamic-flag pairs in quizzes.
  *
  *  16. blue-white

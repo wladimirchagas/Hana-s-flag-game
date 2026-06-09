@@ -36,6 +36,7 @@ function toRemote(entry: LeaderboardEntry): RemoteLeaderboardEntry {
 function fromRemote(remote: RemoteLeaderboardEntry): LeaderboardEntry {
   return {
     ...remote,
+    gameMode: remote.gameMode === "custom" ? "hana" : remote.gameMode,
     countryResults: remote.countryResults ?? {},
     continentBreakdown: remote.continentBreakdown ?? [],
     countriesPlayed: (remote.countriesPlayed ?? []).map((c) => ({
