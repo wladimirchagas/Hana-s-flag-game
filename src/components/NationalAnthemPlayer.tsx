@@ -823,11 +823,11 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
   const showLoading = isLoadingAudio || (!isYoutube && needsOgv && ogvLoading && playerReady);
 
   const modalStyle: React.CSSProperties = visible ? {} : {
-    position: "absolute",
+    position: "fixed",
     left: "-9999px",
     top: "-9999px",
-    width: "1px",
-    height: "1px",
+    width: "480px",
+    height: "300px",
     overflow: "hidden",
     opacity: 0,
     pointerEvents: "none",
@@ -865,12 +865,12 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
             className="anthem-player__youtube"
             style={(playerReady && visible) ? {} : {
               position: "absolute",
-              width: "1px",
-              height: "1px",
-              padding: 0,
-              margin: "-1px",
-              overflow: "hidden",
-              clip: "rect(0, 0, 0, 0)",
+              left: "-9999px",
+              top: "-9999px",
+              width: "300px",
+              height: "195px",
+              opacity: 0.01,
+              pointerEvents: "none",
               whiteSpace: "nowrap",
               border: 0,
             }}
