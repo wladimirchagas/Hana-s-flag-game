@@ -1068,6 +1068,15 @@
   color: var(--ink-fixed);
 }
 
+.flag-grid__unofficial-tag {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink-muted, #888);
+  margin-top: 0.15em;
+}
+
 /* Phones — slightly tighter tiles and a more compact toolbar. */
 @media (max-width: 540px) {
   .flag-grid {

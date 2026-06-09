@@ -40,6 +40,7 @@ import {
 } from "../lib/historicalEras";
 import { subdivisionFlagUrl, fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
+import { UNOFFICIAL_SUBDIV_NOTES } from "../lib/unofficialSubdivFlags";
 import { NSGT_CODES } from "../lib/nsgtTerritories";
 import {
   TERRITORY_NAME,
@@ -51,13 +52,6 @@ import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/sub
 import "../App.css";
 import "./LearnPage.css";
 
-const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
-  "FR-GF": "The flag is used locally, but the only national official flag is the French Tricolour.",
-  "FR-GP": "The flag is used locally, but the only national official flag is the French Tricolour.",
-  "FR-RE": "The flag is used locally, but the only national official flag is the French Tricolour.",
-  "FR-YT": "The flag is used locally, but the only national official flag is the French Tricolour.",
-  "CN-XZ": "The Snow Lion Flag is associated with the Tibetan independence movement. The Tibet Autonomous Region has no distinct official flag under PRC governance.",
-};
 
 /**
  * Learn-mode sandbox with a historical era slider.
