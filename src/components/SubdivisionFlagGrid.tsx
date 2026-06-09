@@ -1,8 +1,7 @@
 import { useMemo, useState } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
-import { UNOFFICIAL_SUBDIV_NOTES } from "../lib/unofficialSubdivFlags";
-import { DISPUTED_SUBDIV_NOTES } from "../lib/disputedSubdivisions";
+import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
 
 type GroupMode = "none" | "alpha" | "type";
 
@@ -18,6 +17,7 @@ type Props = {
   countryName: string;
   selectedCode: string | null;
   onSelect: (code: string) => void;
+  countryCode?: string;
 };
 
 export function SubdivisionFlagGrid({
@@ -26,6 +26,7 @@ export function SubdivisionFlagGrid({
   countryName,
   selectedCode,
   onSelect,
+  countryCode,
 }: Props) {
   const distinctTypeCount = useMemo(
     () => new Set(divisions.map((d) => d.typeLabel)).size,
@@ -37,7 +38,12 @@ export function SubdivisionFlagGrid({
   );
 
   const sorted = useMemo(
-    () => [...divisions].sort((a, b) => a.name.localeCompare(b.name, "en")),
+    () => [...divisions].sort((a, b) => {
+      // Disputed/claimed territories must always be listed last
+      if (a.isDisputed && !b.isDisputed) return 1;
+      if (!a.isDisputed && b.isDisputed) return -1;
+      return a.name.localeCompare(b.name, "en");
+    }),
     [divisions],
   );
 
@@ -69,6 +75,12 @@ export function SubdivisionFlagGrid({
       buckets.set(d.typeLabel, arr);
     }
     const list = [...buckets.entries()].sort(([labelA, itemsA], [labelB, itemsB]) => {
+      // Groups consisting entirely of disputed items must go last
+      const aDisputed = itemsA.every(item => item.isDisputed);
+      const bDisputed = itemsB.every(item => item.isDisputed);
+      if (aDisputed && !bDisputed) return 1;
+      if (!aDisputed && bDisputed) return -1;
+
       const diff = itemsB.length - itemsA.length;
       if (diff !== 0) return diff;
       return labelA.localeCompare(labelB, "en");
@@ -136,12 +148,15 @@ export function SubdivisionFlagGrid({
                     </span>
                     <span className="flag-grid__name">
                       {div.name}
-                      {UNOFFICIAL_SUBDIV_NOTES[div.code] && (
-                        <span className="flag-grid__unofficial-tag">(unofficial flag)</span>
-                      )}
-                      {(DISPUTED_SUBDIV_NOTES[div.code] || div.isDisputed) && (
-                        <span className="flag-grid__disputed-tag">(Disputed/Claimed)</span>
-                      )}
+                      {(() => {
+                        const dispute = getSubdivisionDisputeLabel(div.code, div.typeLabel, countryCode);
+                        if (!dispute) return null;
+                        return (
+                          <span className={dispute.isUnofficial ? "flag-grid__unofficial-tag" : "flag-grid__disputed-tag"}>
+                            ({dispute.text})
+                          </span>
+                        );
+                      })()}
                     </span>
                   </button>
                 </li>

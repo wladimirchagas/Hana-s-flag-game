@@ -28,3 +28,45 @@ export const DISPUTED_SUBDIV_NOTES: Record<string, string> = {
   "IN-AK~": "Azad Jammu and Kashmir is administered by Pakistan as a self-governing territory, but India claims it in full as part of its Union Territory of Jammu and Kashmir. A United Nations-mandated plebiscite on the region's final status has never been held. It is shown here under both Pakistan (which administers it) and India (which claims it).",
   "IN-GB~": "Gilgit-Baltistan is administered by Pakistan but claimed by India as part of its Union Territory of Jammu and Kashmir. China also disputes a portion of the territory (the Trans-Karakoram Tract, ceded by Pakistan to China in 1963 but not recognised by India). It is shown here under both Pakistan (which administers it) and India (which claims it).",
 };
+
+/**
+ * Returns the disputed/claimed or unofficial label for a subdivision under a given parent country.
+ * If the subdivision is not disputed, returns null.
+ */
+export function getSubdivisionDisputeLabel(
+  code: string,
+  typeLabel: string,
+  parentCountryCode?: string
+): { text: string; isUnofficial: boolean } | null {
+  const disputedCodes = new Set([
+    "UA-43", "UA-40", "GB-GI", "ES-GIB~", "GB-FK", "AR-ML~", "TR-NC~", "CY-06~", "CN-TW"
+  ]);
+
+  if (!disputedCodes.has(code)) return null;
+
+  const parent = parentCountryCode?.toUpperCase();
+
+  // Rule: flag is unofficial if inspected under a country that claims it but does not recognise its flag.
+  // These countries are CN (claims TW), ES (claims GI), AR (claims FK/ML), CY (claims NC).
+  const isUnofficial = !!parent && ["CN", "ES", "AR", "CY"].includes(parent);
+
+  if (isUnofficial) {
+    return { text: "unofficial flag", isUnofficial: true };
+  }
+
+  // Otherwise, format label based on typeLabel
+  let text = "disputed territory";
+  const type = typeLabel.toLowerCase();
+  if (type.includes("claimed")) {
+    if (type.includes("state")) {
+      text = "claimed state";
+    } else {
+      text = "claimed territory";
+    }
+  } else if (type.includes("disputed")) {
+    text = "disputed territory";
+  }
+
+  return { text, isUnofficial: false };
+}
+

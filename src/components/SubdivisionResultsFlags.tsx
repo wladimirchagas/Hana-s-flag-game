@@ -1,20 +1,24 @@
 import { useMemo } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
+import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
 
 type Props = {
   divisions: SubdivisionMeta[];
   divisionResults: Record<string, "correct" | "wrong">;
+  countryCode?: string;
 };
 
 function FlagColumn({
   title,
   variant,
   items,
+  countryCode,
 }: {
   title: string;
   variant: "correct" | "wrong";
   items: SubdivisionMeta[];
+  countryCode?: string;
 }) {
   return (
     <div
@@ -42,11 +46,18 @@ function FlagColumn({
                 )}
                 <span className="results-flags__name">
                   {d.name}
-                  {d.isDisputed && (
-                    <span className="results-flags__name-disputed" style={{ fontSize: "0.85em", color: "var(--ink-soft)", marginLeft: "5px" }}>
-                      (Disputed/Claimed)
-                    </span>
-                  )}
+                  {(() => {
+                    const dispute = getSubdivisionDisputeLabel(d.code, d.typeLabel, countryCode);
+                    if (!dispute) return null;
+                    return (
+                      <span
+                        className={dispute.isUnofficial ? "flag-grid__unofficial-tag" : "flag-grid__disputed-tag"}
+                        style={{ display: "inline-block", marginLeft: "5px" }}
+                      >
+                        ({dispute.text})
+                      </span>
+                    );
+                  })()}
                 </span>
               </li>
             );
@@ -57,7 +68,7 @@ function FlagColumn({
   );
 }
 
-export function SubdivisionResultsFlags({ divisions, divisionResults }: Props) {
+export function SubdivisionResultsFlags({ divisions, divisionResults, countryCode }: Props) {
   const correct = useMemo(
     () =>
       [...divisions]
@@ -79,8 +90,8 @@ export function SubdivisionResultsFlags({ divisions, divisionResults }: Props) {
         Flags from this game
       </h2>
       <div className="results-flags__grid">
-        <FlagColumn title="Correct" variant="correct" items={correct} />
-        <FlagColumn title="Wrong" variant="wrong" items={wrong} />
+        <FlagColumn title="Correct" variant="correct" items={correct} countryCode={countryCode} />
+        <FlagColumn title="Wrong" variant="wrong" items={wrong} countryCode={countryCode} />
       </div>
     </section>
   );

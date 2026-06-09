@@ -79,7 +79,7 @@ const SUBDIVISION_TYPE_OVERRIDES_NEW = {
 };
 
 const DISPUTED_SUBDIV_CODES = new Set([
-  "UA-43", "UA-40", "GB-GI", "ES-GIB~", "GB-FK", "AR-ML~", "TR-NC~", "CY-06~"
+  "UA-43", "UA-40", "GB-GI", "ES-GIB~", "GB-FK", "AR-ML~", "TR-NC~", "CY-06~", "CN-TW"
 ]);
 
 const TERRITORIES_TO_APPEND = {
@@ -89,7 +89,8 @@ const TERRITORIES_TO_APPEND = {
   ],
   "CN": [
     { code: "CN-HK", name: "Hong Kong", typeLabel: "Special Administrative Region" },
-    { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" }
+    { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" },
+    { code: "CN-TW", name: "Taiwan", typeLabel: "Disputed Territory" }
   ],
   "NL": [
     { code: "NL-AW", name: "Aruba", typeLabel: "Constituent Country" },

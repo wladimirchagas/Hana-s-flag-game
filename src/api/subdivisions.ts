@@ -10,6 +10,7 @@ const BASE = import.meta.env.BASE_URL;
 const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // CDN source has a spurious red horizontal stripe; corrected locally.
   "BR-RR": `${BASE}flags/BR-RR.svg`,
+  "CN-TW":  "https://flagcdn.com/tw.svg",
   // Territory flags via flagcdn.com — the subdivision CDN doesn't index these codes.
   "DK-GL":  "https://flagcdn.com/gl.svg",
   "DK-FO":  "https://flagcdn.com/fo.svg",

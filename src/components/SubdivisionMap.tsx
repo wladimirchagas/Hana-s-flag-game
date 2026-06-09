@@ -7,6 +7,7 @@ import type {
   SubdivisionGeoFeature,
 } from "../types/subdivision";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
+import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
 
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -41,17 +42,6 @@ const DARK_PALETTE: MapPalette = {
   selectedStroke: "#f4ecd8",
   selectedFill: "#74e4dc",
 };
-
-const DISPUTED_SUBDIV_CODES = new Set([
-  "UA-43",
-  "UA-40",
-  "GB-GI",
-  "ES-GIB~",
-  "GB-FK",
-  "AR-ML~",
-  "TR-NC~",
-  "CY-06~",
-]);
 
 
 
@@ -178,6 +168,13 @@ export function SubdivisionMap({
   const zoom = useZoomPan(WIDTH, HEIGHT);
 
   const isInteractive = !!onSelect && !disabled;
+
+  const getDisputedSuffix = (code: string) => {
+    const countryMeta = countryCode ? SUBDIVISION_META[countryCode.toUpperCase()] : null;
+    const div = countryMeta?.divisions.find((d) => d.code === code);
+    const dispute = getSubdivisionDisputeLabel(code, div?.typeLabel ?? "", countryCode);
+    return dispute ? ` (${dispute.text})` : "";
+  };
   // Hide popover when disabled
   useEffect(() => {
     if (disabled) setPopover(null);
@@ -476,7 +473,7 @@ export function SubdivisionMap({
                     {name ? (
                       <title>
                         {name}
-                        {DISPUTED_SUBDIV_CODES.has(code) ? " (Disputed/Claimed)" : ""}
+                        {getDisputedSuffix(code)}
                       </title>
                     ) : null}
                   </path>
@@ -517,7 +514,7 @@ export function SubdivisionMap({
             >
               <span className="map-popover__name">
                 {popover.name}
-                {DISPUTED_SUBDIV_CODES.has(popover.code) ? " (Disputed/Claimed)" : ""}
+                {getDisputedSuffix(popover.code)}
               </span>
               {onConfirm ? (
                 <button

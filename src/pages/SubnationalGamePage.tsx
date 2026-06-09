@@ -284,6 +284,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
               onChange={game.setSelected}
               disabled={isRevealed || game.phase === "loading"}
               label="Your answer"
+              countryCode={countryCode}
             />
             {!isRevealed && (
               <button
@@ -437,6 +438,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           <SubdivisionResultsFlags
             divisions={game.divisions}
             divisionResults={game.divisionResults}
+            countryCode={countryCode}
           />
         )}
       </main>

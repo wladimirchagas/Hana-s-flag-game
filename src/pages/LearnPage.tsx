@@ -1152,6 +1152,7 @@ export default function LearnPage() {
             pluralLabel={meta?.pluralLabel ?? "Divisions"}
             countryName={subdivisionCountry.name}
             selectedCode={selectedSubdivision?.code ?? null}
+            countryCode={subdivisionCountry.code}
             onSelect={(code: string) => {
               const div = meta?.divisions.find((d) => d.code === code);
               if (div) {

@@ -1,5 +1,6 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { SubdivisionMeta } from "../types/subdivision";
+import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
 
 type Props = {
   divisions: SubdivisionMeta[];
@@ -7,6 +8,7 @@ type Props = {
   onChange: (division: SubdivisionMeta | null) => void;
   disabled: boolean;
   label: string;
+  countryCode?: string;
 };
 
 const MAX_OPTIONS = 200;
@@ -17,7 +19,15 @@ export function SubdivisionDropdown({
   onChange,
   disabled,
   label,
+  countryCode,
 }: Props) {
+  const formatSubdivisionName = (d: SubdivisionMeta, parentCountryCode?: string): string => {
+    const dispute = getSubdivisionDisputeLabel(d.code, d.typeLabel, parentCountryCode);
+    if (dispute) {
+      return `${d.name} (${dispute.text})`;
+    }
+    return d.name;
+  };
   const listId = useId();
   const inputId = useId();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -45,7 +55,7 @@ export function SubdivisionDropdown({
 
     if (shouldSyncValue || becameClosed) {
       lastSyncedValueRef.current = value;
-      setQuery(value ? `${value.name}${value.isDisputed ? " (Disputed/Claimed)" : ""}` : "");
+      setQuery(value ? formatSubdivisionName(value, countryCode) : "");
     } else if (!value && !open && !modalOpen) {
       setQuery("");
     }
@@ -166,7 +176,7 @@ export function SubdivisionDropdown({
                   onMouseDown={(e) => e.preventDefault()}
                   onClick={() => selectDivision(d)}
                 >
-                  {d.name}{d.isDisputed ? " (Disputed/Claimed)" : ""}
+                  {formatSubdivisionName(d, countryCode)}
                 </button>
               </li>
             ))
@@ -186,7 +196,7 @@ export function SubdivisionDropdown({
         onClick={openModal}
       >
         <span className="dropdown-tile__text">
-          {value ? `${value.name}${value.isDisputed ? " (Disputed/Claimed)" : ""}` : "Tap to pick an answer"}
+          {value ? formatSubdivisionName(value, countryCode) : "Tap to pick an answer"}
         </span>
         <span className="dropdown-tile__chevron" aria-hidden="true">
           ▾
@@ -246,7 +256,7 @@ export function SubdivisionDropdown({
                       }`}
                       onClick={() => selectDivision(d)}
                     >
-                      {d.name}{d.isDisputed ? " (Disputed/Claimed)" : ""}
+                      {formatSubdivisionName(d, countryCode)}
                     </button>
                   </li>
                 ))

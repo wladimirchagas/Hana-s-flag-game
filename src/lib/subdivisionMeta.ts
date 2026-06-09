@@ -886,7 +886,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CN-HB", name: "Hubei", typeLabel: "Province" },
     { code: "CN-AH", name: "Anhui", typeLabel: "Province" },
     { code: "CN-HK", name: "Hong Kong", typeLabel: "Special Administrative Region" },
-    { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" }
+    { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" },
+    { code: "CN-TW", name: "Taiwan", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "CO": {
