@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, forwardRef, useImperativeHandle } from "react";
-import { NATIONAL_ANTHEMS, type AnthemData } from "../data/nationalAnthems";
+import { NATIONAL_ANTHEMS, type AnthemData, type AnthemLine } from "../data/nationalAnthems";
 import { detectVocalOnset } from "../lib/anthemCalibrate";
 import { gameAudio } from "../lib/gameAudio";
 import "./NationalAnthemPlayer.css";
@@ -235,6 +235,120 @@ if (typeof window !== "undefined") {
   loadYTApi();
 }
 
+// ── Caption-driven lyrics sync ─────────────────────────────────────────────
+// Fetches YouTube caption cues at runtime and matches them to stored lyric
+// lines via Jaccard similarity, producing per-line timestamps that mirror what
+// the video itself is displaying — for all scripts (Latin, CJK, Arabic, etc.).
+
+function normalizeLyric(s: string): string {
+  return s.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
+}
+
+function wordJaccard(a: string, b: string): number {
+  const setA = new Set(normalizeLyric(a).split(" ").filter(Boolean));
+  const setB = new Set(normalizeLyric(b).split(" ").filter(Boolean));
+  if (!setA.size || !setB.size) return 0;
+  let inter = 0;
+  for (const w of setA) if (setB.has(w)) inter++;
+  return inter / (setA.size + setB.size - inter);
+}
+
+interface CaptionCue { start: number; text: string; }
+
+function parseCaptionJson3(data: unknown): CaptionCue[] {
+  const NOISE = /^\s*\[/;
+  const events = (data as Record<string, unknown>)?.events;
+  if (!Array.isArray(events)) return [];
+  return (events as unknown[])
+    .filter((e) => {
+      const ev = e as Record<string, unknown>;
+      return Array.isArray(ev.segs) && ev.tStartMs !== undefined;
+    })
+    .map((e) => {
+      const ev = e as Record<string, unknown>;
+      const segs = ev.segs as Array<Record<string, unknown>>;
+      return {
+        start: (ev.tStartMs as number) / 1000,
+        text: segs.map((s) => (s.utf8 as string) ?? "").join("").trim(),
+      };
+    })
+    .filter((e) => e.text && !NOISE.test(e.text) && e.text !== "\n");
+}
+
+function deriveTimingFromCaptions(
+  cues: CaptionCue[],
+  lines: AnthemLine[],
+): { introOffset: number; starts: number[] } | null {
+  if (!cues.length || !lines.length) return null;
+  const THRESHOLD = 0.25;
+
+  const matches: (CaptionCue | null)[] = lines.map((line) => {
+    let best: CaptionCue | null = null;
+    let bestScore = THRESHOLD;
+    for (const cue of cues) {
+      const score = wordJaccard(line.text, cue.text);
+      if (score > bestScore) { bestScore = score; best = cue; }
+    }
+    return best;
+  });
+
+  if (matches.filter(Boolean).length / lines.length < 0.25) return null;
+
+  const firstMatchIdx = matches.findIndex(Boolean);
+  const introOffset = matches[firstMatchIdx]!.start;
+
+  const starts: (number | null)[] = new Array(lines.length).fill(null);
+  for (let i = 0; i < matches.length; i++) {
+    if (matches[i]) {
+      starts[i] = Math.max(0, Math.round((matches[i]!.start - introOffset) * 10) / 10);
+    }
+  }
+  if (starts[0] === null) starts[0] = 0;
+
+  let prevKnown = 0;
+  for (let i = 1; i < starts.length; i++) {
+    if (starts[i] !== null) {
+      const gapStart = starts[prevKnown]!;
+      const gapEnd = starts[i]!;
+      const gapLen = i - prevKnown;
+      for (let j = prevKnown + 1; j < i; j++) {
+        starts[j] = Math.round((gapStart + ((gapEnd - gapStart) * (j - prevKnown)) / gapLen) * 10) / 10;
+      }
+      prevKnown = i;
+    }
+  }
+  if (prevKnown < starts.length - 1 && prevKnown > 0) {
+    const avgGap = starts[prevKnown]! / prevKnown;
+    for (let i = prevKnown + 1; i < starts.length; i++) {
+      starts[i] = Math.round((starts[i - 1]! + avgGap) * 10) / 10;
+    }
+  }
+
+  return {
+    introOffset: Math.round(introOffset * 100) / 100,
+    starts: (starts as number[]).map((s) => s ?? 0),
+  };
+}
+
+// Tries the YouTube timedtext API for the anthem's language then English.
+// Returns null on CORS failure or when no cues are available.
+async function fetchYoutubeCaptions(videoId: string, language: string): Promise<CaptionCue[] | null> {
+  const langCodes = language !== "en" ? [language, "en"] : ["en"];
+  for (const lang of langCodes) {
+    const url = `https://www.youtube.com/api/timedtext?v=${encodeURIComponent(videoId)}&lang=${encodeURIComponent(lang)}&fmt=json3`;
+    try {
+      const resp = await fetchWithTimeout(url);
+      if (!resp.ok) continue;
+      const data = await resp.json();
+      const cues = parseCaptionJson3(data);
+      if (cues.length > 0) return cues;
+    } catch {
+      // CORS or network error — try next lang
+    }
+  }
+  return null;
+}
+
 // ── Component ───────────────────────────────────────────────────────────────
 
 export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
@@ -354,6 +468,13 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
   // backwards by this amount so lyrics only highlight when singing begins.
   // Reset each time a new audio URL loads.
   const introOffsetRef = useRef(0);
+
+  // Caption-derived line timing (overrides scaledLines when available).
+  // Populated asynchronously after the YouTube player is ready.
+  const [captionLines, setCaptionLines] = useState<AnthemLine[] | null>(null);
+  const captionLinesRef = useRef<AnthemLine[] | null>(null);
+  captionLinesRef.current = captionLines;
+  const captionFetchedRef = useRef(false);
 
   // Determine whether we'll need ogv.js for the current URL
   const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
@@ -543,6 +664,13 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioUrl]);
 
+  // Reset caption state whenever the anthem changes so we don't show stale
+  // captions from a previous country.
+  useEffect(() => {
+    setCaptionLines(null);
+    captionFetchedRef.current = false;
+  }, [anthem]);
+
   // ── YouTube player setup ────────────────────────────────────────────────
   useEffect(() => {
     if (!isYoutube || !anthem?.youtubeId) return;
@@ -583,6 +711,26 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
             if (visibleRef.current) {
               e.target.playVideo();
             }
+            // Async caption sync — non-blocking, silently falls back to stored timing
+            if (anthem?.lines?.length && !captionFetchedRef.current) {
+              captionFetchedRef.current = true;
+              fetchYoutubeCaptions(anthem.youtubeId!, anthem.language)
+                .then((cues) => {
+                  if (!cues || cancelled) return;
+                  const timing = deriveTimingFromCaptions(cues, anthem.lines!);
+                  if (!timing) return;
+                  introOffsetRef.current = timing.introOffset;
+                  setCaptionLines(
+                    anthem.lines!.map((line, i) => ({
+                      ...line,
+                      start: timing.starts[i] ?? line.start,
+                      words: undefined,
+                    })),
+                  );
+                  console.debug(`[captions] ${anthem.youtubeId}: offset=${timing.introOffset}s, ${timing.starts.length} lines`);
+                })
+                .catch(() => { /* silently keep stored timing */ });
+            }
           },
           onStateChange: (e) => {
             const YT_PLAYING = 1;
@@ -603,7 +751,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
                 if (!p) return;
                 const t = p.getCurrentTime();
                 setCurrentTime(t);
-                const lines = scaledLinesRef.current;
+                const lines = captionLinesRef.current ?? scaledLinesRef.current;
                 if (!lines) return;
                 const adj = t - introOffsetRef.current;
                 let li = -1;
@@ -962,9 +1110,9 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
 
             {/* Lyrics */}
             <div className="anthem-lyrics" ref={lyricsRef} aria-label="Lyrics">
-              {scaledLines ? (
+              {(captionLines ?? scaledLines) ? (
                 <>
-                  {scaledLines.map((line, i) => {
+                  {(captionLines ?? scaledLines)!.map((line, i) => {
                     const state =
                       i === activeLine ? "active" :
                       i < activeLine ? "past" : "future";
