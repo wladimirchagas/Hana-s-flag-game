@@ -883,6 +883,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CN-HA", name: "Henan", typeLabel: "Province" },
     { code: "CN-HB", name: "Hubei", typeLabel: "Province" },
     { code: "CN-AH", name: "Anhui", typeLabel: "Province" },
+    { code: "CN-XZ", name: "Tibet (Xizang)", typeLabel: "Autonomous Region" },
     { code: "CN-HK", name: "Hong Kong", typeLabel: "Special Administrative Region" },
     { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" }
     ],

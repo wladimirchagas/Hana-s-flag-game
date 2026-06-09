@@ -51,7 +51,13 @@ import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/sub
 import "../App.css";
 import "./LearnPage.css";
 
-const UNOFFICIAL_FR_SUBDIVS = new Set(["FR-GF", "FR-GP", "FR-RE", "FR-YT"]);
+const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
+  "FR-GF": "The flag is used locally, but the only national official flag is the French Tricolour.",
+  "FR-GP": "The flag is used locally, but the only national official flag is the French Tricolour.",
+  "FR-RE": "The flag is used locally, but the only national official flag is the French Tricolour.",
+  "FR-YT": "The flag is used locally, but the only national official flag is the French Tricolour.",
+  "CN-XZ": "The Snow Lion Flag is associated with the Tibetan independence movement. The Tibet Autonomous Region has no distinct official flag under PRC governance.",
+};
 
 /**
  * Learn-mode sandbox with a historical era slider.
@@ -952,9 +958,9 @@ export default function LearnPage() {
                                   <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                                 </button>
                               )}
-                              {UNOFFICIAL_FR_SUBDIVS.has(selectedSubdivision.code) && (
+                              {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                                 <p className="learn-fs__unofficial-note">
-                                  {selectedSubdivision.name}. The flag is used locally, but the only national official flag is the French Tricolour.
+                                  {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
                                 </p>
                               )}
                             </div>
@@ -1069,9 +1075,9 @@ export default function LearnPage() {
                               <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                             </button>
                           )}
-                          {UNOFFICIAL_FR_SUBDIVS.has(selectedSubdivision.code) && (
+                          {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                             <p className="learn-fs__unofficial-note">
-                              {selectedSubdivision.name}. The flag is used locally, but the only national official flag is the French Tricolour.
+                              {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
                             </p>
                           )}
                         </div>

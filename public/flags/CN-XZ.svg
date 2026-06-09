@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- blue sky -->
+  <rect width="900" height="600" fill="#003893"/>
+
+  <!-- snow field + mountain silhouette -->
+  <path d="M0,600 L0,430 L80,395 L150,360 L220,320 L270,295 L330,345 L390,290 L430,260 L450,230 L470,260 L510,290 L570,345 L630,295 L680,320 L730,360 L800,395 L870,430 L900,450 L900,600 Z" fill="#FFF"/>
+
+  <!-- sun rays -->
+  <polygon points="450.0,30.0 439.5,71.0 460.5,71.0" fill="#FFCC00"/>
+  <polygon points="497.5,42.7 467.9,73.0 486.1,83.5" fill="#C00000"/>
+  <polygon points="532.3,77.5 491.5,88.9 502.0,107.1" fill="#FFCC00"/>
+  <polygon points="545.0,125.0 504.0,114.5 504.0,135.5" fill="#C00000"/>
+  <polygon points="532.3,172.5 502.0,142.9 491.5,161.1" fill="#FFCC00"/>
+  <polygon points="497.5,207.3 486.1,166.5 467.9,177.0" fill="#C00000"/>
+  <polygon points="450.0,220.0 460.5,179.0 439.5,179.0" fill="#FFCC00"/>
+  <polygon points="402.5,207.3 432.1,177.0 413.9,166.5" fill="#C00000"/>
+  <polygon points="367.7,172.5 408.5,161.1 398.0,142.9" fill="#FFCC00"/>
+  <polygon points="355.0,125.0 396.0,135.5 396.0,114.5" fill="#C00000"/>
+  <polygon points="367.7,77.5 398.0,107.1 408.5,88.9" fill="#FFCC00"/>
+  <polygon points="402.5,42.7 413.9,83.5 432.1,73.0" fill="#C00000"/>
+  <!-- sun disc -->
+  <circle cx="450" cy="125" r="48" fill="#FFCC00"/>
+  <circle cx="450" cy="125" r="20"         fill="#C00000"/>
+  <circle cx="450" cy="125" r="11"         fill="#FFCC00"/>
+
+  <!-- left snow lion (facing right) -->
+  <g transform="translate(220,360)">
+    <!-- haunches -->
+    <ellipse cx="-2" cy="20" rx="42" ry="50" fill="#FFF"/>
+    <!-- upper chest -->
+    <ellipse cx="12" cy="-40" rx="33" ry="42" fill="#FFF"/>
+    <!-- neck -->
+    <ellipse cx="22" cy="-68" rx="20" ry="24" fill="#FFF"/>
+    <!-- mane ring (gold) -->
+    <circle cx="32" cy="-85" r="42" fill="#FFCC00"/>
+    <!-- head -->
+    <circle cx="32" cy="-85" r="30" fill="#FFF"/>
+    <!-- snout bump -->
+    <ellipse cx="58" cy="-80" rx="12" ry="9" fill="#FFF"/>
+    <!-- eye -->
+    <circle cx="44" cy="-90" r="5" fill="#003893"/>
+    <circle cx="46" cy="-92" r="2" fill="#FFF"/>
+    <!-- ear -->
+    <polygon points="18,-113 28,-122 38,-108" fill="#FFCC00"/>
+    <!-- front right arm (raised toward centre) -->
+    <ellipse cx="52" cy="-38" rx="13" ry="25" fill="#FFF" transform="rotate(-20,52,-38)"/>
+    <ellipse cx="67" cy="-16" rx="16" ry="12" fill="#FFF"/>
+    <!-- front left arm (raised up-left) -->
+    <ellipse cx="-22" cy="-52" rx="12" ry="26" fill="#FFF" transform="rotate(15,-22,-52)"/>
+    <ellipse cx="-30" cy="-28" rx="15" ry="11" fill="#FFF"/>
+    <!-- hind legs -->
+    <ellipse cx="-22" cy="62" rx="14" ry="32" fill="#FFF"/>
+    <ellipse cx="18"  cy="64" rx="14" ry="32" fill="#FFF"/>
+    <!-- hind paws -->
+    <ellipse cx="-22" cy="92"  rx="18" ry="10" fill="#FFF"/>
+    <ellipse cx="18"  cy="94"  rx="18" ry="10" fill="#FFF"/>
+    <!-- tail (arching over back) -->
+    <path d="M-38,5 C-75,-20 -80,-75 -52,-100" stroke="#FFCC00" stroke-width="9"
+          fill="none" stroke-linecap="round"/>
+    <!-- tail tuft -->
+    <circle cx="-52" cy="-100" r="14" fill="#FFCC00"/>
+    <circle cx="-52" cy="-100" r="7"  fill="#FFF"/>
+</g>
+
+  <!-- right snow lion (facing left, mirrored) -->
+  <g transform="translate(680,360) scale(-1,1)">
+    <!-- haunches -->
+    <ellipse cx="-2" cy="20" rx="42" ry="50" fill="#FFF"/>
+    <!-- upper chest -->
+    <ellipse cx="12" cy="-40" rx="33" ry="42" fill="#FFF"/>
+    <!-- neck -->
+    <ellipse cx="22" cy="-68" rx="20" ry="24" fill="#FFF"/>
+    <!-- mane ring (gold) -->
+    <circle cx="32" cy="-85" r="42" fill="#FFCC00"/>
+    <!-- head -->
+    <circle cx="32" cy="-85" r="30" fill="#FFF"/>
+    <!-- snout bump -->
+    <ellipse cx="58" cy="-80" rx="12" ry="9" fill="#FFF"/>
+    <!-- eye -->
+    <circle cx="44" cy="-90" r="5" fill="#003893"/>
+    <circle cx="46" cy="-92" r="2" fill="#FFF"/>
+    <!-- ear -->
+    <polygon points="18,-113 28,-122 38,-108" fill="#FFCC00"/>
+    <!-- front right arm (raised toward centre) -->
+    <ellipse cx="52" cy="-38" rx="13" ry="25" fill="#FFF" transform="rotate(-20,52,-38)"/>
+    <ellipse cx="67" cy="-16" rx="16" ry="12" fill="#FFF"/>
+    <!-- front left arm (raised up-left) -->
+    <ellipse cx="-22" cy="-52" rx="12" ry="26" fill="#FFF" transform="rotate(15,-22,-52)"/>
+    <ellipse cx="-30" cy="-28" rx="15" ry="11" fill="#FFF"/>
+    <!-- hind legs -->
+    <ellipse cx="-22" cy="62" rx="14" ry="32" fill="#FFF"/>
+    <ellipse cx="18"  cy="64" rx="14" ry="32" fill="#FFF"/>
+    <!-- hind paws -->
+    <ellipse cx="-22" cy="92"  rx="18" ry="10" fill="#FFF"/>
+    <ellipse cx="18"  cy="94"  rx="18" ry="10" fill="#FFF"/>
+    <!-- tail (arching over back) -->
+    <path d="M-38,5 C-75,-20 -80,-75 -52,-100" stroke="#FFCC00" stroke-width="9"
+          fill="none" stroke-linecap="round"/>
+    <!-- tail tuft -->
+    <circle cx="-52" cy="-100" r="14" fill="#FFCC00"/>
+    <circle cx="-52" cy="-100" r="7"  fill="#FFF"/>
+</g>
+
+
+  <!-- norbu jewel -->
+  <!-- three gems -->
+  <ellipse cx="450"    cy="278"  rx="17" ry="24" fill="#003893"/>
+  <ellipse cx="428" cy="288" rx="15" ry="20" fill="#FFCC00"/>
+  <ellipse cx="472" cy="288" rx="15" ry="20" fill="#C00000"/>
+  <!-- flames -->
+  <path d="M450,254 Q440,232 450,215 Q460,232 450,254"
+        fill="#C00000"/>
+  <path d="M450,248 Q444,232 450,222 Q456,232 450,248"
+        fill="#FFCC00"/>
+
+</svg>
