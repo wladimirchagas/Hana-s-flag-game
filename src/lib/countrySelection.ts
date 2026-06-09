@@ -1,6 +1,6 @@
 // ISO 3166-1 alpha-2 codes for the 195 UN states (193 members + 2 observers),
-// paired with their English short names. Kept in sync with
-// src/api/countries.ts UN_MEMBER_CODES.
+// paired with their English short names. Must stay in sync with
+// src/lib/unMemberStates.ts UN_MEMBER_CODES (the authoritative source for rule #1).
 import { loadLearnedCodes } from "./learnedFlags";
 
 export type CountryOption = { code: string; name: string };
