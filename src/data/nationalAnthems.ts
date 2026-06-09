@@ -180,7 +180,7 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     ],
   },
   AU: {
-    youtubeId: "BNEqS4zPI30", youtubeIntroOffset: 11.0,
+    youtubeId: "BNEqS4zPI30", youtubeIntroOffset: 5.0,
     title: "Advance Australia Fair",
     wikiFile: "U.S. Navy Band, Advance Australia Fair (instrumental).ogg", language: "en",
     wikiSearch: "Advance Australia Fair vocal sung anthem",
