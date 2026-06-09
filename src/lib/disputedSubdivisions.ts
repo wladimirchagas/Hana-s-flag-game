@@ -9,6 +9,10 @@
  * GE-AB has an unofficial flag AND is a disputed territory).
  */
 export const DISPUTED_SUBDIV_NOTES: Record<string, string> = {
+  // Taiwan — self-governing as the Republic of China; claimed by the PRC.
+  // Taiwan is not a UN member state; the PRC holds China's UN seat.
+  "CN-TW": "Taiwan has been governed by the Republic of China (ROC) since 1949, when the ROC government retreated to the island following the Chinese Civil War. The People's Republic of China (PRC) claims Taiwan as a province and considers itself the sole legitimate government of China. Taiwan is not a UN member state; the PRC holds China's seat in the United Nations. The flag shown is the ROC national flag used by Taiwan's government.",
+
   // Abkhazia — de facto independent; Georgia claims it; Russia backs independence.
   "GE-AB": "Abkhazia has operated as a de facto independent state since the 1992–1993 war with Georgia. It is recognised as independent by only a handful of countries (Russia, Nicaragua, Venezuela, Nauru, and Syria); Georgia and most of the international community regard it as Georgian territory under occupation. It appears here under Georgia, which holds the internationally recognised claim.",
 

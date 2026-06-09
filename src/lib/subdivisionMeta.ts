@@ -885,7 +885,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CN-AH", name: "Anhui", typeLabel: "Province" },
     { code: "CN-XZ", name: "Tibet (Xizang)", typeLabel: "Autonomous Region" },
     { code: "CN-HK", name: "Hong Kong", typeLabel: "Special Administrative Region" },
-    { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" }
+    { code: "CN-MO", name: "Macau", typeLabel: "Special Administrative Region" },
+    { code: "CN-TW", name: "Taiwan", typeLabel: "Disputed Territory" }
     ],
   },
   "CO": {
@@ -5103,33 +5104,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "TT-ETO", name: "Tobago", typeLabel: "Region" },
     { code: "TT-WTO", name: "Tobago", typeLabel: "Region" },
     { code: "TT-ARI", name: "Arima", typeLabel: "City" }
-    ],
-  },
-  "TW": {
-    countryCode: "TW",
-    pluralLabel: "Counties",
-    divisions: [
-    { code: "TW-TAO", name: "Taoyuan", typeLabel: "County" },
-    { code: "TW-HSQ", name: "Hsinchu", typeLabel: "County" },
-    { code: "TW-HSZ", name: "Hsinchu", typeLabel: "Provincial City" },
-    { code: "TW-MIA", name: "Miaoli", typeLabel: "County" },
-    { code: "TW-TXG", name: "Taichung City", typeLabel: "Special Municipality" },
-    { code: "TW-CHA", name: "Changhua", typeLabel: "County" },
-    { code: "TW-YUN", name: "Yunlin", typeLabel: "County" },
-    { code: "TW-CYQ", name: "Chiayi", typeLabel: "County" },
-    { code: "TW-TNN", name: "Tainan", typeLabel: "Special Municipality" },
-    { code: "TW-KHH", name: "Kaohsiung", typeLabel: "Special Municipality" },
-    { code: "TW-PIF", name: "Pingtung", typeLabel: "County" },
-    { code: "TW-TTT", name: "Taitung", typeLabel: "County" },
-    { code: "TW-HUA", name: "Hualien", typeLabel: "County" },
-    { code: "TW-ILA", name: "Yilan", typeLabel: "County" },
-    { code: "TW-TPQ", name: "New Taipei", typeLabel: "Special Municipality" },
-    { code: "TW-KEE", name: "Keelung", typeLabel: "Provincial City" },
-    { code: "TW-KIN", name: "Kinmen", typeLabel: "County" },
-    { code: "TW-PEN", name: "Penghu", typeLabel: "County" },
-    { code: "TW-NAN", name: "Nantou", typeLabel: "County" },
-    { code: "TW-TPE", name: "Taipei", typeLabel: "Special Municipality" },
-    { code: "TW-CYI", name: "Chiayi", typeLabel: "Provincial City" }
     ],
   },
   "TZ": {

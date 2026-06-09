@@ -104,6 +104,7 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
   CN: [
     { geoCode: "HK", subdivCode: "CN-HK" },
     { geoCode: "MO", subdivCode: "CN-MO" },
+    { geoCode: "TW", subdivCode: "CN-TW" },
   ],
   NL: [
     { geoCode: "AW", subdivCode: "NL-AW" },
