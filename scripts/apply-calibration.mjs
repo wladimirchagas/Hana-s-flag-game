@@ -2,17 +2,26 @@
 /**
  * apply-calibration.mjs
  *
- * Patches src/data/nationalAnthems.ts with measured start timestamps
- * exported by the /calibrate page.
+ * Patches src/data/nationalAnthems.ts with timing data produced by either:
+ *   • The /calibrate browser tool (Wikimedia audio → VAD-measured line starts)
+ *   • scripts/sync-youtube-captions.mjs (YouTube caption → visual timing)
  *
  * Usage:
  *   node scripts/apply-calibration.mjs anthem-calibration.json
  *
- * The JSON file maps ISO-3166 alpha-2 codes to arrays of start times:
- *   { "BR": [5.2, 14.0, 22.8, ...], "US": [3.4, 11.0, ...], ... }
+ * Input formats accepted
+ * ──────────────────────
+ * Legacy (line starts only — produced by /calibrate page):
+ *   { "BR": [5.2, 14.0, 22.8, …], "US": [3.4, 11.0, …], … }
  *
- * Each array must have exactly the same length as the corresponding
- * anthem's lines[] array — the calibration page guarantees this.
+ * Extended (line starts + YouTube intro offset — produced by sync-youtube-captions.mjs):
+ *   {
+ *     "AU": { "introOffset": 5.2, "starts": [0.0, 6.8, 12.5, …] },
+ *     "US": { "introOffset": 8.1, "starts": [0.0, 7.0, …] },
+ *     …
+ *   }
+ *
+ * Mixed files (some entries old-format, some new-format) are also accepted.
  */
 
 import { readFileSync, writeFileSync } from "node:fs";
@@ -28,67 +37,112 @@ if (!calibrationFile) {
   process.exit(1);
 }
 
-const calibration = JSON.parse(readFileSync(calibrationFile, "utf8"));
+const rawCalibration = JSON.parse(readFileSync(calibrationFile, "utf8"));
 let source = readFileSync(dataPath, "utf8");
+
+// Normalise to a unified shape: { timestamps: number[], introOffset?: number }
+function normalise(entry) {
+  if (Array.isArray(entry)) {
+    return { timestamps: entry, introOffset: undefined };
+  }
+  if (entry && typeof entry === "object") {
+    return {
+      timestamps: Array.isArray(entry.starts) ? entry.starts : [],
+      introOffset: typeof entry.introOffset === "number" ? entry.introOffset : undefined,
+    };
+  }
+  return { timestamps: [], introOffset: undefined };
+}
 
 let patchedCount = 0;
 let skippedCount = 0;
 
-for (const [code, timestamps] of Object.entries(calibration)) {
-  if (!Array.isArray(timestamps) || timestamps.length === 0) {
-    console.warn(`⚠  ${code}: empty timestamps array — skipping`);
+for (const [code, rawEntry] of Object.entries(rawCalibration)) {
+  const { timestamps, introOffset } = normalise(rawEntry);
+
+  if (!timestamps.length && introOffset === undefined) {
+    console.warn(`⚠  ${code}: no data — skipping`);
     skippedCount++;
     continue;
   }
 
-  // Find the anthem entry block for this code.
-  // We match the opening of the entry and then find each `start:` value
-  // within the lines[] array, replacing them in order.
-  //
-  // We identify the lines[] array by finding the first `lines: [` after the
-  // code's opening brace, and replace `start:` values up to the matching `]`.
-
-  // Locate the entry: "  XX: {" pattern
-  const entryPattern = new RegExp(`(  ${code}: \\{[\\s\\S]*?lines:\\s*\\[)([\\s\\S]*?)(\\])`, "m");
+  // ── Locate the entry block ──────────────────────────────────────────────
+  const entryPattern = new RegExp(
+    `(  ${code}: \\{[\\s\\S]*?lines:\\s*\\[)([\\s\\S]*?)(\\])`,
+    "m",
+  );
   const match = source.match(entryPattern);
 
   if (!match) {
-    console.warn(`⚠  ${code}: could not locate entry or lines[] in file — skipping`);
+    console.warn(`⚠  ${code}: could not locate entry or lines[] — skipping`);
     skippedCount++;
     continue;
   }
 
-  const linesBlock = match[2];
+  let patched = false;
 
-  // Count existing start: values in this block
-  const existingStarts = [...linesBlock.matchAll(/start:\s*[\d.]+/g)];
+  // ── Patch line start times ──────────────────────────────────────────────
+  if (timestamps.length) {
+    const linesBlock = match[2];
+    const existingStarts = [...linesBlock.matchAll(/start:\s*[\d.]+/g)];
 
-  if (existingStarts.length !== timestamps.length) {
-    console.warn(
-      `⚠  ${code}: data has ${existingStarts.length} lines but calibration has ` +
-      `${timestamps.length} timestamps — skipping to avoid mismatch`,
+    if (existingStarts.length !== timestamps.length) {
+      console.warn(
+        `⚠  ${code}: data has ${existingStarts.length} lines but calibration has ` +
+        `${timestamps.length} timestamps — skipping line starts`,
+      );
+    } else {
+      let idx = 0;
+      const patchedBlock = linesBlock.replace(/start:\s*[\d.]+/g, () => {
+        return `start: ${timestamps[idx++]}`;
+      });
+      source = source.replace(entryPattern, `$1${patchedBlock}$3`);
+      patched = true;
+    }
+  }
+
+  // ── Patch youtubeIntroOffset ────────────────────────────────────────────
+  if (introOffset !== undefined) {
+    // Find the entry preamble (before "lines:") and update or insert the field.
+    // Matches: youtubeIntroOffset: <number>, (with optional trailing comma/space)
+    const offsetPattern = new RegExp(
+      `(  ${code}: \\{[\\s\\S]*?)(youtubeIntroOffset:\\s*[-\\d.]+)`,
+      "m",
     );
-    skippedCount++;
-    continue;
+
+    if (offsetPattern.test(source)) {
+      source = source.replace(
+        offsetPattern,
+        `$1youtubeIntroOffset: ${introOffset}`,
+      );
+      patched = true;
+    } else {
+      // Field doesn't exist yet — insert after youtubeId line
+      const insertPattern = new RegExp(
+        `(  ${code}: \\{[\\s\\S]*?youtubeId:\\s*"[^"]*")`,
+        "m",
+      );
+      if (insertPattern.test(source)) {
+        source = source.replace(
+          insertPattern,
+          `$1, youtubeIntroOffset: ${introOffset}`,
+        );
+        patched = true;
+      } else {
+        console.warn(`⚠  ${code}: could not find youtubeId to insert introOffset — skipping offset`);
+      }
+    }
   }
 
-  // Replace each start value in order
-  let idx = 0;
-  const patchedBlock = linesBlock.replace(/start:\s*[\d.]+/g, () => {
-    const newVal = timestamps[idx++];
-    return `start: ${newVal}`;
-  });
-
-  source = source.replace(
-    entryPattern,
-    `$1${patchedBlock}$3`,
-  );
-
-  console.log(
-    `✅ ${code}: patched ${timestamps.length} timestamps` +
-    ` (${timestamps[0]}s → ${timestamps[timestamps.length - 1]}s)`,
-  );
-  patchedCount++;
+  if (patched) {
+    const parts = [];
+    if (timestamps.length) parts.push(`${timestamps.length} line starts (${timestamps[0]}s → ${timestamps[timestamps.length - 1]}s)`);
+    if (introOffset !== undefined) parts.push(`introOffset=${introOffset}s`);
+    console.log(`✅ ${code}: patched ${parts.join(", ")}`);
+    patchedCount++;
+  } else {
+    skippedCount++;
+  }
 }
 
 writeFileSync(dataPath, source, "utf8");
