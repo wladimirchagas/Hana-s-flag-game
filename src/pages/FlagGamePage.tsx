@@ -518,6 +518,8 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
               if (country) game.setSelected(country);
             },
             onConfirm: game.confirm,
+            // Rule #2: UNDISPUTED only — disputed territories must not be
+            // clickable on the map (see territoryParentMap.ts Rule #2 comment).
             territoryParent: UNDISPUTED_TERRITORY_PARENT,
           }}
         />

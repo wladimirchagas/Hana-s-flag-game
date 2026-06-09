@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { UNOFFICIAL_SUBDIV_NOTES } from "../lib/unofficialSubdivFlags";
+import { DISPUTED_SUBDIV_NOTES } from "../lib/disputedSubdivisions";
 
 type GroupMode = "none" | "alpha" | "type";
 
@@ -137,6 +138,9 @@ export function SubdivisionFlagGrid({
                       {div.name}
                       {UNOFFICIAL_SUBDIV_NOTES[div.code] && (
                         <span className="flag-grid__unofficial-tag">(unofficial flag)</span>
+                      )}
+                      {DISPUTED_SUBDIV_NOTES[div.code] && (
+                        <span className="flag-grid__disputed-tag">(disputed territory)</span>
                       )}
                     </span>
                   </button>

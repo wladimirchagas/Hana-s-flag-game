@@ -1077,6 +1077,15 @@
   margin-top: 0.15em;
 }
 
+.flag-grid__disputed-tag {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-warn, #b45309);
+  margin-top: 0.15em;
+}
+
 /* Phones — slightly tighter tiles and a more compact toolbar. */
 @media (max-width: 540px) {
   .flag-grid {
@@ -1622,6 +1631,15 @@
   margin: 0.4rem 0 0;
   line-height: 1.35;
   font-style: italic;
+  max-width: 280px;
+  text-align: center;
+}
+
+.learn-fs__disputed-note {
+  font-size: 0.72rem;
+  color: var(--color-warn, #b45309);
+  margin: 0.4rem 0 0;
+  line-height: 1.35;
   max-width: 280px;
   text-align: center;
 }
