@@ -331,19 +331,28 @@ function deriveTimingFromCaptions(
 }
 
 // Tries the YouTube timedtext API for the anthem's language then English.
-// Returns null on CORS failure or when no cues are available.
+// Attempts the direct URL first; on CORS/network failure falls through a
+// public CORS proxy so that mobile browsers (e.g. iOS Safari) which block
+// the direct cross-origin request can still receive the caption data.
+// Returns null when no cues are available after all attempts.
 async function fetchYoutubeCaptions(videoId: string, language: string): Promise<CaptionCue[] | null> {
   const langCodes = language !== "en" ? [language, "en"] : ["en"];
   for (const lang of langCodes) {
-    const url = `https://www.youtube.com/api/timedtext?v=${encodeURIComponent(videoId)}&lang=${encodeURIComponent(lang)}&fmt=json3`;
-    try {
-      const resp = await fetchWithTimeout(url);
-      if (!resp.ok) continue;
-      const data = await resp.json();
-      const cues = parseCaptionJson3(data);
-      if (cues.length > 0) return cues;
-    } catch {
-      // CORS or network error — try next lang
+    const direct = `https://www.youtube.com/api/timedtext?v=${encodeURIComponent(videoId)}&lang=${encodeURIComponent(lang)}&fmt=json3`;
+    const candidates = [
+      direct,
+      `https://corsproxy.io/?${encodeURIComponent(direct)}`,
+    ];
+    for (const url of candidates) {
+      try {
+        const resp = await fetchWithTimeout(url);
+        if (!resp.ok) continue;
+        const data = await resp.json();
+        const cues = parseCaptionJson3(data);
+        if (cues.length > 0) return cues;
+      } catch {
+        // CORS or network error — try next candidate
+      }
     }
   }
   return null;
