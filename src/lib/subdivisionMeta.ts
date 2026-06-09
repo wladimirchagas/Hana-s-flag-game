@@ -2224,7 +2224,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "IN-MP", name: "Madhya Pradesh", typeLabel: "State" },
     { code: "IN-CT", name: "Chhattisgarh", typeLabel: "State" },
     { code: "IN-HR", name: "Haryana", typeLabel: "State" },
-    { code: "IN-TG", name: "Telangana", typeLabel: "State" }
+    { code: "IN-TG", name: "Telangana", typeLabel: "State" },
+    { code: "PK-JK", name: "Azad Kashmir", typeLabel: "Disputed Territory" },
+    { code: "PK-GB", name: "Gilgit-Baltistan", typeLabel: "Disputed Territory" }
     ],
   },
   "IQ": {
@@ -5194,7 +5196,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "UA-12", name: "Dnipropetrovsk", typeLabel: "Region" },
     { code: "UA-71", name: "Cherkasy", typeLabel: "Region" },
     { code: "UA-35", name: "Kirovohrad", typeLabel: "Region" },
-    { code: "UA-30", name: "Kyiv", typeLabel: "Municipality" }
+    { code: "UA-30", name: "Kyiv", typeLabel: "Municipality" },
+    { code: "UA-43", name: "Autonomous Republic of Crimea", typeLabel: "Autonomous Republic" },
+    { code: "UA-40", name: "Sevastopol", typeLabel: "City" }
     ],
   },
   "UG": {

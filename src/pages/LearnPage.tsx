@@ -41,6 +41,7 @@ import {
 import { subdivisionFlagUrl, fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { UNOFFICIAL_SUBDIV_NOTES } from "../lib/unofficialSubdivFlags";
+import { DISPUTED_SUBDIV_NOTES } from "../lib/disputedSubdivisions";
 import { NSGT_CODES } from "../lib/nsgtTerritories";
 import {
   TERRITORY_NAME,
@@ -955,6 +956,11 @@ export default function LearnPage() {
                               {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                                 <p className="learn-fs__unofficial-note">
                                   {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
+                                </p>
+                              )}
+                              {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code] && (
+                                <p className="learn-fs__disputed-note">
+                                  {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code]}
                                 </p>
                               )}
                             </div>

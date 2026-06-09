@@ -19,12 +19,7 @@ export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
   // not to the PRC-administered region.
   "CN-XZ": "The Snow Lion Flag (first adopted 1959) is the flag of the Central Tibetan Administration, the Tibetan government-in-exile based in Dharamsala, India. It is not recognised by the PRC, which administers the Tibet Autonomous Region and has designated no distinct official regional flag for it.",
 
-  // Abkhazia — de facto independent state unrecognised by Georgia and most of the world.
-  // The CDN shows the Republic of Abkhazia flag, not a Georgia-recognised regional symbol.
-  "GE-AB": "The flag shown is that of the self-declared Republic of Abkhazia, which has operated as a de facto independent state since the 1992–1993 war with Georgia. Abkhazia is recognised by only a handful of states (Russia, Nicaragua, Venezuela, Nauru, and Syria); Georgia and most of the international community regard it as Georgian territory under Russian occupation.",
-
-  // Crimea and Sevastopol — internationally recognised as Ukrainian territory (ISO codes UA-43/UA-40)
-  // but administered by Russia since its 2014 annexation, which is not recognised by the UN.
-  "UA-43": "The Autonomous Republic of Crimea (ISO 3166-2: UA-43) is internationally recognised as Ukrainian territory. Russia annexed Crimea in February–March 2014 in a move rejected by Ukraine, the United Nations General Assembly (Resolution 68/262), and most countries. The flag shown is the regional flag used by the Crimean administration.",
-  "UA-40": "Sevastopol (ISO 3166-2: UA-40) is internationally recognised as Ukrainian territory. Russia has administered it as a federal city since its 2014 annexation of Crimea, which is not recognised by Ukraine or the United Nations. The flag shown is the city flag used by the local administration.",
+  // Abkhazia — the CDN shows the Republic of Abkhazia flag, not a Georgia-recognised regional symbol.
+  // (Abkhazia is also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
+  "GE-AB": "The flag shown is that of the self-declared Republic of Abkhazia, not a flag recognised by Georgia (the ISO-administering state). Georgia has no separately designated flag for the region; it regards the Georgian national flag as the only official symbol.",
 };
