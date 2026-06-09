@@ -45,7 +45,8 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "GB-PN":  "https://flagcdn.com/pn.svg",
   
   // Tibet Autonomous Region — Snow Lion Flag (historical Tibetan flag, unofficial)
-  "CN-XZ":  `${BASE}flags/CN-XZ.svg`,
+  // Source: Wikimedia Commons (Flag_of_Tibet.svg)
+  "CN-XZ":  "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
 
   // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // Custom local diagonal green/yellow flag with red star
