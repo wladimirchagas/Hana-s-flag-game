@@ -565,7 +565,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
         videoId: anthem.youtubeId!,
         width: "100%",
         height: "195",
-        playerVars: { rel: 0, modestbranding: 1, autoplay: 1, start: Math.floor(anthem.youtubeIntroOffset ?? 0) },
+        playerVars: { rel: 0, modestbranding: 1, autoplay: 1, start: Math.max(0, Math.floor(anthem.youtubeIntroOffset ?? 0)) },
         events: {
           onReady: (e) => {
             if (cancelled) return;
