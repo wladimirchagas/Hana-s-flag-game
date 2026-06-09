@@ -47,20 +47,6 @@ interface YTEntry {
   markStatus: YTMark;
 }
 
-// Minimal YouTube IFrame types
-declare global {
-  interface Window {
-    YT: {
-      Player: new (el: HTMLElement | string, opts: Record<string, unknown>) => {
-        playVideo(): void;
-        pauseVideo(): void;
-        getCurrentTime(): number;
-        destroy(): void;
-      };
-    };
-    onYouTubeIframeAPIReady?: () => void;
-  }
-}
 
 let _ytReady: Promise<void> | null = null;
 function ensureYTApi(): Promise<void> {
@@ -131,7 +117,7 @@ function YouTubeCalibration() {
   const [filter, setFilter] = useState<"all" | "pending" | "marked" | "skipped">("all");
 
   const playerContainerRef = useRef<HTMLDivElement>(null);
-  const playerRef = useRef<ReturnType<typeof window.YT.Player> | null>(null);
+  const playerRef = useRef<InstanceType<typeof window.YT.Player> | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
   const [liveTime, setLiveTime] = useState<number | null>(null);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
