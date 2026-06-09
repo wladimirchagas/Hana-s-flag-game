@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "anthems:catalog": "node scripts/anthems/01_catalog.mjs",
     "anthems:audit": "node scripts/anthems/02_audit.mjs",
-    "anthems:phase1": "npm run anthems:catalog && npm run anthems:audit"
+    "anthems:phase1": "npm run anthems:catalog && npm run anthems:audit",
+    "anthems:sync-captions": "node scripts/sync-youtube-captions.mjs",
+    "anthems:apply-calibration": "node scripts/apply-calibration.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
