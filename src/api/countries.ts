@@ -140,9 +140,26 @@ export async function fetchCountries(): Promise<Country[]> {
           }))
           .filter((c) => c.name)
       : undefined;
+    let finalName = name;
+    let finalNameOfficial = nameOfficial;
+    if (code === "TR") {
+      finalName = "Türkiye";
+      finalNameOfficial = "Republic of Türkiye";
+    } else if (code === "CI") {
+      finalName = "Côte d’Ivoire";
+      finalNameOfficial = "Republic of Côte d'Ivoire";
+    } else if (code === "CV") {
+      finalName = "Cabo Verde";
+      finalNameOfficial = "Republic of Cabo Verde";
+    } else if (code === "CD") {
+      finalName = "Congo (DRC)";
+    } else if (code === "CG") {
+      finalName = "Congo";
+    }
+
     countries.push({
-      name,
-      nameOfficial,
+      name: finalName,
+      nameOfficial: finalNameOfficial,
       code,
       flagSvg: flagUrl,
       continent: region,
