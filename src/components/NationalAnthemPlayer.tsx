@@ -331,19 +331,28 @@ function deriveTimingFromCaptions(
 }
 
 // Tries the YouTube timedtext API for the anthem's language then English.
-// Returns null on CORS failure or when no cues are available.
+// Attempts the direct URL first; on CORS/network failure falls through a
+// public CORS proxy so that mobile browsers (e.g. iOS Safari) which block
+// the direct cross-origin request can still receive the caption data.
+// Returns null when no cues are available after all attempts.
 async function fetchYoutubeCaptions(videoId: string, language: string): Promise<CaptionCue[] | null> {
   const langCodes = language !== "en" ? [language, "en"] : ["en"];
   for (const lang of langCodes) {
-    const url = `https://www.youtube.com/api/timedtext?v=${encodeURIComponent(videoId)}&lang=${encodeURIComponent(lang)}&fmt=json3`;
-    try {
-      const resp = await fetchWithTimeout(url);
-      if (!resp.ok) continue;
-      const data = await resp.json();
-      const cues = parseCaptionJson3(data);
-      if (cues.length > 0) return cues;
-    } catch {
-      // CORS or network error — try next lang
+    const direct = `https://www.youtube.com/api/timedtext?v=${encodeURIComponent(videoId)}&lang=${encodeURIComponent(lang)}&fmt=json3`;
+    const candidates = [
+      direct,
+      `https://corsproxy.io/?${encodeURIComponent(direct)}`,
+    ];
+    for (const url of candidates) {
+      try {
+        const resp = await fetchWithTimeout(url);
+        if (!resp.ok) continue;
+        const data = await resp.json();
+        const cues = parseCaptionJson3(data);
+        if (cues.length > 0) return cues;
+      } catch {
+        // CORS or network error — try next candidate
+      }
     }
   }
   return null;
@@ -711,25 +720,61 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
             if (visibleRef.current) {
               e.target.playVideo();
             }
-            // Async caption sync — non-blocking, silently falls back to stored timing
+            // Async caption sync — non-blocking, silently falls back to stored timing.
+            // Tries two approaches in order:
+            //   1. loadModule('captions') → getOption tracklist → signed baseUrl
+            //      (these URLs come from within the YT iframe context and often
+            //       bypass CORS restrictions that block the plain timedtext API)
+            //   2. Direct timedtext API as final fallback
             if (anthem?.lines?.length && !captionFetchedRef.current) {
               captionFetchedRef.current = true;
-              fetchYoutubeCaptions(anthem.youtubeId!, anthem.language)
-                .then((cues) => {
-                  if (!cues || cancelled) return;
-                  const timing = deriveTimingFromCaptions(cues, anthem.lines!);
-                  if (!timing) return;
-                  introOffsetRef.current = timing.introOffset;
-                  setCaptionLines(
-                    anthem.lines!.map((line, i) => ({
-                      ...line,
-                      start: timing.starts[i] ?? line.start,
-                      words: undefined,
-                    })),
-                  );
-                  console.debug(`[captions] ${anthem.youtubeId}: offset=${timing.introOffset}s, ${timing.starts.length} lines`);
-                })
-                .catch(() => { /* silently keep stored timing */ });
+              const playerAny = e.target as unknown as Record<string, unknown>;
+
+              (async () => {
+                let cues: CaptionCue[] | null = null;
+
+                // Try 1: signed tracklist URLs via the player's captions module
+                try {
+                  if (typeof (playerAny as any).loadModule === "function") {
+                    (playerAny as any).loadModule("captions");
+                    await new Promise<void>((r) => setTimeout(r, 800));
+                  }
+                  const tracklist = (playerAny as any).getOption?.("captions", "tracklist") as unknown[];
+                  if (Array.isArray(tracklist) && tracklist.length > 0) {
+                    const langBase = anthem.language.split(/[-_]/)[0].toLowerCase();
+                    const track = (
+                      tracklist.find((t: any) => t.languageCode?.toLowerCase().startsWith(langBase)) ??
+                      tracklist.find((t: any) => t.languageCode?.toLowerCase() === "en") ??
+                      tracklist[0]
+                    ) as any;
+                    if (track?.baseUrl) {
+                      const url: string = track.baseUrl.includes("fmt=")
+                        ? track.baseUrl
+                        : `${track.baseUrl}&fmt=json3`;
+                      const resp = await fetchWithTimeout(url);
+                      if (resp.ok) cues = parseCaptionJson3(await resp.json());
+                    }
+                  }
+                } catch { /* tracklist unavailable — try next approach */ }
+
+                // Try 2: direct timedtext API (may fail with CORS on some browsers)
+                if (!cues?.length) {
+                  cues = await fetchYoutubeCaptions(anthem.youtubeId!, anthem.language);
+                }
+
+                if (!cues || cancelled) return;
+                const timing = deriveTimingFromCaptions(cues, anthem.lines!);
+                if (!timing) return;
+                introOffsetRef.current = timing.introOffset;
+                setCaptionLines(
+                  anthem.lines!.map((line, i) => ({
+                    ...line,
+                    start: timing.starts[i] ?? line.start,
+                    words: undefined,
+                  })),
+                );
+                console.debug(`[captions] ${anthem.youtubeId}: offset=${timing.introOffset}s, ${timing.starts.length} lines`);
+              })().catch(() => { /* silently keep stored timing */ });
             }
           },
           onStateChange: (e) => {
