@@ -1,22 +1,19 @@
 name: Sync anthem caption timestamps
-# v2
 
 on:
   push:
-    branches: [main]
-    # Only run on non-bot commits to avoid infinite loop when the workflow
-    # itself commits updated timestamps back to main.
+    branches:
+      - main
     paths-ignore:
-      - 'src/data/nationalAnthems.ts'
+      - src/data/nationalAnthems.ts
   schedule:
-    # Run every Sunday at 03:00 UTC so fresh caption data lands before the week
-    - cron: '0 3 * * 0'
+    - cron: "0 3 * * 0"
   workflow_dispatch:
     inputs:
       countries:
-        description: 'Space-separated ISO-3166 codes to sync (blank = all)'
-        required: false
-        default: ''
+        description: "Space-separated ISO-3166 codes to sync (blank = all)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -25,8 +22,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -39,7 +35,7 @@ jobs:
 
       - name: Fetch YouTube caption timestamps
         run: |
-          CODES="${{ github.event.inputs.countries }}"
+          CODES="${{ inputs.countries }}"
           if [ -n "$CODES" ]; then
             node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json $CODES
           else
@@ -51,7 +47,7 @@ jobs:
           if [ -f anthem-yt-calibration.json ]; then
             node scripts/apply-calibration.mjs anthem-yt-calibration.json
           else
-            echo "No calibration output — nothing to apply"
+            echo "No calibration output - nothing to apply"
           fi
 
       - name: Commit if timestamps changed
@@ -60,7 +56,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/nationalAnthems.ts
           if git diff --staged --quiet; then
-            echo "No timestamp changes — nothing to commit"
+            echo "No timestamp changes - nothing to commit"
           else
             CHANGED=$(git diff --staged --stat | tail -1)
             git commit -m "chore(anthems): sync YouTube caption timestamps
