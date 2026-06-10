@@ -27,6 +27,14 @@ export const DISPUTED_SUBDIV_NOTES: Record<string, string> = {
   "PK-GB": "Gilgit-Baltistan is administered by Pakistan but claimed by India as part of its Union Territory of Jammu and Kashmir. China also disputes a portion of the territory (the Trans-Karakoram Tract, ceded by Pakistan to China in 1963 but not recognised by India). It is shown here under both Pakistan (which administers it) and India (which claims it).",
   "IN-AK~": "Azad Jammu and Kashmir is administered by Pakistan as a self-governing territory, but India claims it in full as part of its Union Territory of Jammu and Kashmir. A United Nations-mandated plebiscite on the region's final status has never been held. It is shown here under both Pakistan (which administers it) and India (which claims it).",
   "IN-GB~": "Gilgit-Baltistan is administered by Pakistan but claimed by India as part of its Union Territory of Jammu and Kashmir. China also disputes a portion of the territory (the Trans-Karakoram Tract, ceded by Pakistan to China in 1963 but not recognised by India). It is shown here under both Pakistan (which administers it) and India (which claims it).",
+
+  // Western Sahara — Morocco administers; SADR/Polisario Front claims sovereignty.
+  // SADR is not a UN member state; the UN lists Western Sahara as a Non-Self-Governing Territory.
+  "MA-EH~": "Western Sahara is listed by the United Nations as a Non-Self-Governing Territory. Morocco administers approximately 80% of the territory and considers it its 'Southern Provinces'. The Sahrawi Arab Democratic Republic (SADR), backed by the Polisario Front and recognised by around 40 countries, claims the whole territory. A UN-mandated referendum on self-determination has been repeatedly postponed since 1991. Because SADR is not a UN member state, Western Sahara is shown only under Morocco here.",
+
+  // Northern Cyprus — Turkey administers; Cyprus and the international community do not recognise TRNC.
+  "TR-NC~": "The Turkish Republic of Northern Cyprus (TRNC) was proclaimed in 1983 following Turkey's 1974 military intervention on the island. It is recognised only by Turkey; the United Nations, Cyprus, and the rest of the international community regard the territory as part of the Republic of Cyprus under illegal occupation. It is shown here under Turkey (which administers and recognises it) and under Cyprus (which holds the internationally recognised claim to the whole island).",
+  "CY-NC~": "Northern Cyprus has been administered by Turkey and the self-declared Turkish Republic of Northern Cyprus (TRNC) since Turkey's 1974 military intervention. The United Nations regards the continued presence of Turkish forces as unlawful (UNSC Resolution 541). Cyprus and virtually all countries other than Turkey consider Northern Cyprus to be part of the Republic of Cyprus. It is shown here under both Turkey (which administers it) and Cyprus (which holds the internationally recognised claim).",
 };
 
 /**
@@ -38,17 +46,16 @@ export function getSubdivisionDisputeLabel(
   typeLabel: string,
   parentCountryCode?: string
 ): { text: string; isUnofficial: boolean } | null {
-  const disputedCodes = new Set([
-    "UA-43", "UA-40", "GB-GI", "ES-GIB~", "GB-FK", "AR-ML~", "TR-NC~", "CY-06~", "CN-TW"
-  ]);
+  const disputedCodes = new Set(Object.keys(DISPUTED_SUBDIV_NOTES));
 
   if (!disputedCodes.has(code)) return null;
 
   const parent = parentCountryCode?.toUpperCase();
 
-  // Rule: flag is unofficial if inspected under a country that claims it but does not recognise its flag.
-  // These countries are CN (claims TW), ES (claims GI), AR (claims FK/ML), CY (claims NC).
-  const isUnofficial = !!parent && ["CN", "ES", "AR", "CY"].includes(parent);
+  // Flag is unofficial when viewed under a claiming country that does not recognise the displayed flag.
+  // CN claims TW (shows ROC flag), ES claims GI, AR claims FK/ML,
+  // CY claims Northern Cyprus (shows TRNC flag), MA claims Western Sahara (shows Sahrawi flag).
+  const isUnofficial = !!parent && ["CN", "ES", "AR", "CY", "MA"].includes(parent);
 
   if (isUnofficial) {
     return { text: "unofficial flag", isUnofficial: true };

@@ -1001,7 +1001,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CY-01", name: "Nicosia", typeLabel: "District" },
     { code: "CY-02", name: "Limassol", typeLabel: "District" },
     { code: "CY-05", name: "Paphos", typeLabel: "District" },
-    { code: "CY-06~", name: "Kyrenia", typeLabel: "District", isDisputed: true }
+    { code: "CY-NC~", name: "Northern Cyprus", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "CZ": {
@@ -3003,7 +3003,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MA-10", name: "Doukkala Abda", typeLabel: "Region" },
     { code: "MA-11", name: "Marrakesh-Tensift-El Haouz", typeLabel: "Region" },
     { code: "MA-05", name: "Fès-méknas-boulmane", typeLabel: "Region" },
-    { code: "MA-12", name: "Tadla-Azilal", typeLabel: "Region" }
+    { code: "MA-12", name: "Tadla-Azilal", typeLabel: "Region" },
+    { code: "MA-EH~", name: "Western Sahara", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "MD": {
@@ -3554,13 +3555,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "NA-KH", name: "Khomas", typeLabel: "Region" },
     { code: "NA-ON", name: "Oshana", typeLabel: "Region" },
     { code: "NA-OT", name: "Oshikoto", typeLabel: "Region" }
-    ],
-  },
-  "NC": {
-    countryCode: "NC",
-    pluralLabel: "Disputed Territorys",
-    divisions: [
-    { code: "NC", name: "Northern Cyprus", typeLabel: "Disputed Territory" }
     ],
   },
   "NE": {

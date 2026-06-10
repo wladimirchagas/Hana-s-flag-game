@@ -22,4 +22,12 @@ export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
   // Abkhazia — the CDN shows the Republic of Abkhazia flag, not a Georgia-recognised regional symbol.
   // (Abkhazia is also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
   "GE-AB": "The flag shown is that of the self-declared Republic of Abkhazia, not a flag recognised by Georgia (the ISO-administering state). Georgia has no separately designated flag for the region; it regards the Georgian national flag as the only official symbol.",
+
+  // Northern Cyprus under Cyprus — the TRNC flag is shown but is not recognised by Cyprus or the UN.
+  // (Also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
+  "CY-NC~": "The flag shown is that of the self-declared Turkish Republic of Northern Cyprus (TRNC). Cyprus and virtually all countries other than Turkey do not recognise the TRNC or its flag; Cyprus regards Northern Cyprus as part of its own sovereign territory.",
+
+  // Western Sahara under Morocco — the Sahrawi flag is shown but Morocco does not recognise it.
+  // (Also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
+  "MA-EH~": "The flag shown is that of the Sahrawi Arab Democratic Republic (SADR), which claims sovereignty over Western Sahara. Morocco, which administers the territory as its 'Southern Provinces', does not recognise the SADR or its flag.",
 };

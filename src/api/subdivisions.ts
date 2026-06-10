@@ -26,7 +26,11 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FI-AX":  "https://flagcdn.com/ax.svg",
   "AU-CC":  "https://flagcdn.com/cc.svg",
   "ES-GIB~": "https://flagcdn.com/gi.svg",
-  "TR-NC~": `${BASE}flags/trnc.svg`,
+  "TR-NC~":  `${BASE}flags/trnc.svg`,
+  // Northern Cyprus under Cyprus — shows TRNC flag; unofficial from Cyprus's perspective.
+  "CY-NC~":  `${BASE}flags/trnc.svg`,
+  // Western Sahara — Sahrawi flag; unofficial from Morocco's perspective (Morocco rejects Sahrawi sovereignty).
+  "MA-EH~":  "https://flagcdn.com/eh.svg",
 
   // Newly added populated territories
   "AU-CX":  "https://flagcdn.com/cx.svg",
