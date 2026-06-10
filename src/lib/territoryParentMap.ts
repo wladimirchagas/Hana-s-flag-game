@@ -66,8 +66,10 @@ const ENTRIES: TerritoryEntry[] = [
   // Norway
   { code: "SJ", name: "Svalbard and Jan Mayen",                       parent: "NO" },
   { code: "BV", name: "Bouvet Island",                                parent: "NO" },
-  // Disputed
-  { code: "NC", name: "Northern Cyprus",                              parent: "CY" },
+  // Western Sahara — administered by Morocco; claimed as "Southern Provinces".
+  // The Sahrawi Arab Democratic Republic (SADR/Polisario Front) also claims it,
+  // but SADR is not a UN member state, so WS shows only under Morocco here.
+  { code: "EH", name: "Western Sahara",                               parent: "MA" },
 ];
 
 /** territory alpha-2 → administering country alpha-2 */
@@ -177,8 +179,13 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "PK-JK", subdivCode: "IN-AK~" },
     { geoCode: "PK-GB", subdivCode: "IN-GB~" },
   ],
-  TR: [{ geoCode: "NC", subdivCode: "TR-NC~" }],
-  CY: [{ geoCode: "NC", subdivCode: "CY-06~" }],
+  // Northern Cyprus — Turkey administers; Cyprus claims the whole island.
+  // geoCode "XN" is a non-standard internal code (Northern Cyprus has no ISO 3166-1 code).
+  TR: [{ geoCode: "XN", subdivCode: "TR-NC~" }],
+  CY: [{ geoCode: "XN", subdivCode: "CY-NC~" }],
+  // Western Sahara — Morocco administers and claims as "Southern Provinces".
+  // SADR is not a UN member, so shown only under Morocco.
+  MA: [{ geoCode: "EH", subdivCode: "MA-EH~" }],
 };
 
 // RULE #2 — MAP CLICK BEHAVIOUR (hard-coded):
