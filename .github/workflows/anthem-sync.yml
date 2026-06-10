@@ -1,8 +1,13 @@
 name: Sync anthem caption timestamps
 
+# Manual trigger only. YouTube bot-blocks all GitHub Actions runner IPs
+# ("Sign in to confirm you're not a bot"), so automated caption fetching
+# (InnerTube, timedtext, yt-dlp, Invidious) finds nothing without auth.
+# Kept for future use: add a YT_COOKIES secret and pass --cookies to make
+# the yt-dlp strategy work. Until then, use the /calibrate page in the app
+# to tap-calibrate line timings and apply them with apply-calibration.mjs.
+
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -26,17 +31,8 @@ jobs:
       - name: Install yt-dlp
         run: pipx install yt-dlp
 
-      - name: Diagnostic - invidious caption availability for AU video
-        run: |
-          for inst in inv.nadeko.net yewtu.be invidious.nerdvpn.de iv.melmac.space; do
-            echo "== $inst =="
-            curl -s --max-time 15 "https://$inst/api/v1/captions/BNEqS4zPI30" | head -c 400 || true
-            echo ""
-          done
-
       - name: Fetch YouTube caption timestamps
-        # Temporarily limited to 3 countries while diagnosing caption availability
-        run: node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json AU US FR
+        run: node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json
 
       - name: Apply calibration to nationalAnthems.ts
         run: |

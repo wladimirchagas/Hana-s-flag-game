@@ -43,8 +43,26 @@ interface YTEntry {
   youtubeId: string;
   title: string;
   currentOffset: number;          // stored youtubeIntroOffset
-  measuredOffset?: number;        // what the user marked
+  lines: string[];                // lyric line texts, in order
+  lineMarks: number[];            // absolute video time (s) of each marked line
   markStatus: YTMark;
+}
+
+// Marks survive page reloads — calibrating 195 anthems takes multiple sessions.
+const LINE_MARKS_STORAGE_KEY = "anthem-yt-line-marks-v1";
+
+function loadStoredMarks(): Record<string, number[]> {
+  try {
+    return JSON.parse(localStorage.getItem(LINE_MARKS_STORAGE_KEY) ?? "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveStoredMarks(marks: Record<string, number[]>) {
+  try {
+    localStorage.setItem(LINE_MARKS_STORAGE_KEY, JSON.stringify(marks));
+  } catch { /* storage full or blocked — marks stay in memory */ }
 }
 
 
@@ -102,18 +120,29 @@ export default function CalibratePage() {
 // ═══════════════════════════════════════════════════════════════════════════
 
 function YouTubeCalibration() {
-  const allEntries: YTEntry[] = Object.entries(NATIONAL_ANTHEMS)
-    .filter(([, a]) => !!a.youtubeId)
-    .map(([code, a]) => ({
-      code,
-      youtubeId: a.youtubeId!,
-      title: a.title,
-      currentOffset: a.youtubeIntroOffset ?? 0,
-      markStatus: "pending" as YTMark,
-    }));
-
-  const [entries, setEntries] = useState<YTEntry[]>(allEntries);
-  const [selectedCode, setSelectedCode] = useState<string>(allEntries[0]?.code ?? "");
+  const [entries, setEntries] = useState<YTEntry[]>(() => {
+    const stored = loadStoredMarks();
+    return Object.entries(NATIONAL_ANTHEMS)
+      .filter(([, a]) => !!a.youtubeId)
+      .map(([code, a]) => {
+        const lines = a.lines?.map(l => l.text) ?? [];
+        const lineMarks = stored[code] ?? [];
+        return {
+          code,
+          youtubeId: a.youtubeId!,
+          title: a.title,
+          currentOffset: a.youtubeIntroOffset ?? 0,
+          lines,
+          lineMarks,
+          markStatus: (lines.length > 0 && lineMarks.length >= lines.length
+            ? "marked"
+            : "pending") as YTMark,
+        };
+      });
+  });
+  const [selectedCode, setSelectedCode] = useState<string>(
+    () => Object.keys(NATIONAL_ANTHEMS).find(c => !!NATIONAL_ANTHEMS[c].youtubeId) ?? "",
+  );
   const [filter, setFilter] = useState<"all" | "pending" | "marked" | "skipped">("all");
 
   const playerContainerRef = useRef<HTMLDivElement>(null);
@@ -165,15 +194,52 @@ function YouTubeCalibration() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCode]);
 
+  function persist(updated: YTEntry[]) {
+    const stored: Record<string, number[]> = {};
+    for (const e of updated) {
+      if (e.lineMarks.length) stored[e.code] = e.lineMarks;
+    }
+    saveStoredMarks(stored);
+  }
+
   function markNow() {
     const t = liveTime;
     if (t === null) return;
-    setEntries(es =>
-      es.map(e => e.code === selectedCode
-        ? { ...e, measuredOffset: Math.round(t * 100) / 100, markStatus: "marked" }
-        : e,
-      ),
-    );
+    setEntries(es => {
+      const updated = es.map(e => {
+        if (e.code !== selectedCode) return e;
+        if (e.lineMarks.length >= e.lines.length) return e; // all lines done
+        const lineMarks = [...e.lineMarks, Math.round(t * 100) / 100];
+        return {
+          ...e,
+          lineMarks,
+          markStatus: (lineMarks.length >= e.lines.length ? "marked" : "pending") as YTMark,
+        };
+      });
+      persist(updated);
+      return updated;
+    });
+  }
+
+  function undoLastMark() {
+    setEntries(es => {
+      const updated = es.map(e => {
+        if (e.code !== selectedCode || !e.lineMarks.length) return e;
+        return { ...e, lineMarks: e.lineMarks.slice(0, -1), markStatus: "pending" as YTMark };
+      });
+      persist(updated);
+      return updated;
+    });
+  }
+
+  function resetMarks() {
+    setEntries(es => {
+      const updated = es.map(e =>
+        e.code === selectedCode ? { ...e, lineMarks: [], markStatus: "pending" as YTMark } : e,
+      );
+      persist(updated);
+      return updated;
+    });
   }
 
   function skipEntry() {
@@ -196,18 +262,36 @@ function YouTubeCalibration() {
     );
   }
 
-  function exportJSON() {
-    const out: Record<string, { introOffset: number }> = {};
+  function buildCalibrationJSON(): string {
+    const out: Record<string, { introOffset: number; starts?: number[] }> = {};
     for (const e of entries) {
-      if (e.markStatus === "marked" && e.measuredOffset !== undefined) {
-        out[e.code] = { introOffset: e.measuredOffset };
+      if (!e.lineMarks.length) continue;
+      const intro = e.lineMarks[0];
+      const entry: { introOffset: number; starts?: number[] } = { introOffset: intro };
+      // Per-line starts only when every line was marked — apply-calibration
+      // rejects mismatched counts, but introOffset alone is still useful.
+      if (e.lineMarks.length === e.lines.length) {
+        entry.starts = e.lineMarks.map(t => Math.max(0, Math.round((t - intro) * 10) / 10));
       }
+      out[e.code] = entry;
     }
-    const blob = new Blob([JSON.stringify(out, null, 2)], { type: "application/json" });
+    return JSON.stringify(out, null, 2);
+  }
+
+  function exportJSON() {
+    const blob = new Blob([buildCalibrationJSON()], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url; a.download = "anthem-yt-calibration.json"; a.click();
     URL.revokeObjectURL(url);
+  }
+
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
+  function copyJSON() {
+    navigator.clipboard.writeText(buildCalibrationJSON()).then(
+      () => { setCopyState("copied"); setTimeout(() => setCopyState("idle"), 2000); },
+      () => { setCopyState("failed"); setTimeout(() => setCopyState("idle"), 2000); },
+    );
   }
 
   const markedCount = entries.filter(e => e.markStatus === "marked").length;
@@ -217,13 +301,14 @@ function YouTubeCalibration() {
   return (
     <div>
       <p style={{ color: "#555", fontFamily: "sans-serif", fontSize: 13, marginBottom: 16 }}>
-        Play each YouTube lyric video. At the exact frame where the <strong>first lyric line</strong> appears,
-        click <em>First lyric shown</em>. The current video time is recorded as the new{" "}
-        <code>youtubeIntroOffset</code>.<br />
-        Or run the automated script on a machine with internet access:<br />
+        Play the video. Each time the video shows the <strong>next lyric line</strong>, tap{" "}
+        <em>Mark line</em> — the exact video time is recorded for that line. Mark every line,
+        then move to the next anthem. Marks are saved in this browser automatically.<br />
+        When done, tap <em>Copy JSON</em> and paste the result into the chat (or commit it with{" "}
         <code style={{ background: "#f5f5f5", padding: "2px 6px", borderRadius: 4 }}>
-          node scripts/sync-youtube-captions.mjs
+          node scripts/apply-calibration.mjs anthem-yt-calibration.json
         </code>
+        ).
       </p>
 
       {/* Stats + export */}
@@ -231,10 +316,15 @@ function YouTubeCalibration() {
         <span style={{ fontFamily: "sans-serif", fontSize: 13, alignSelf: "center" }}>
           {markedCount} marked · {pendingCount} pending
         </span>
-        {markedCount > 0 && (
-          <button onClick={exportJSON} style={btnStyle("green")}>
-            ↓ Export JSON ({markedCount})
-          </button>
+        {entries.some(e => e.lineMarks.length > 0) && (
+          <>
+            <button onClick={copyJSON} style={btnStyle("green")}>
+              {copyState === "copied" ? "✓ Copied!" : copyState === "failed" ? "✗ Copy failed" : "⧉ Copy JSON"}
+            </button>
+            <button onClick={exportJSON} style={btnStyle("green")}>
+              ↓ Download JSON
+            </button>
+          </>
         )}
       </div>
 
@@ -273,9 +363,9 @@ function YouTubeCalibration() {
                   {e.markStatus === "marked" ? "✅" : e.markStatus === "skipped" ? "⏭" : "⏳"}
                 </span>
                 <strong>{e.code}</strong>
-                {e.markStatus === "marked" && e.measuredOffset !== undefined && (
+                {e.lineMarks.length > 0 && (
                   <span style={{ color: e.code === selectedCode ? "#cff" : "#888", marginLeft: 4 }}>
-                    {e.measuredOffset}s
+                    {e.lineMarks.length}/{e.lines.length}
                   </span>
                 )}
               </button>
@@ -314,10 +404,20 @@ function YouTubeCalibration() {
 
                 <button
                   onClick={markNow}
-                  disabled={!playerReady || liveTime === null}
-                  style={btnStyle("blue")}
+                  disabled={!playerReady || liveTime === null || selected.lineMarks.length >= selected.lines.length}
+                  style={{ ...btnStyle("blue"), fontSize: 15, padding: "12px 20px" }}
                 >
-                  ⏱ First lyric shown
+                  {selected.lineMarks.length >= selected.lines.length
+                    ? "✅ All lines marked"
+                    : `⏱ Mark line ${selected.lineMarks.length + 1}/${selected.lines.length}`}
+                </button>
+
+                <button onClick={undoLastMark} disabled={!selected.lineMarks.length} style={btnStyle("orange")}>
+                  ↩ Undo
+                </button>
+
+                <button onClick={resetMarks} disabled={!selected.lineMarks.length} style={btnStyle("gray")}>
+                  ✕ Reset
                 </button>
 
                 <button onClick={skipEntry} style={btnStyle("orange")}>
@@ -327,18 +427,46 @@ function YouTubeCalibration() {
                 <button onClick={advanceToNext} style={btnStyle("gray")}>
                   → Next
                 </button>
-
-                {selected.markStatus === "marked" && selected.measuredOffset !== undefined && (
-                  <span style={{ color: "#2e7d32", fontFamily: "sans-serif", fontSize: 13 }}>
-                    ✅ Marked at {selected.measuredOffset}s
-                    {" "}(Δ {(selected.measuredOffset - selected.currentOffset).toFixed(2)}s from stored)
-                  </span>
-                )}
               </div>
 
-              {markedCount > 0 && (
+              {/* Line checklist — next line to mark is highlighted */}
+              <div style={{ marginTop: 12, border: "1px solid #ddd", borderRadius: 8, overflow: "hidden" }}>
+                {selected.lines.map((text, i) => {
+                  const isMarked = i < selected.lineMarks.length;
+                  const isNext = i === selected.lineMarks.length;
+                  return (
+                    <div
+                      key={i}
+                      style={{
+                        display: "flex",
+                        gap: 10,
+                        alignItems: "center",
+                        padding: "6px 12px",
+                        fontFamily: "sans-serif",
+                        fontSize: 13,
+                        background: isNext ? "#fff8e1" : isMarked ? "#f1f8e9" : "#fff",
+                        borderBottom: "1px solid #eee",
+                        fontWeight: isNext ? 700 : 400,
+                      }}
+                    >
+                      <span style={{ width: 24, textAlign: "center" }}>
+                        {isMarked ? "✅" : isNext ? "👉" : `${i + 1}`}
+                      </span>
+                      <span style={{ flex: 1 }}>{text}</span>
+                      {isMarked && (
+                        <span style={{ fontFamily: "monospace", color: "#555", fontSize: 12 }}>
+                          {selected.lineMarks[i].toFixed(2)}s
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
+              {entries.some(e => e.lineMarks.length > 0) && (
                 <div style={{ marginTop: 16, padding: 12, background: "#e8f5e9", borderRadius: 8, fontFamily: "sans-serif", fontSize: 12 }}>
-                  When done, click <em>Export JSON</em>, then run:<br />
+                  When done, tap <em>Copy JSON</em> at the top and paste the result into the chat —
+                  or download it and run:<br />
                   <code style={{ display: "block", marginTop: 4, background: "#f5f5f5", padding: "4px 8px", borderRadius: 4 }}>
                     node scripts/apply-calibration.mjs anthem-yt-calibration.json
                   </code>
