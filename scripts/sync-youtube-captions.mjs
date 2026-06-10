@@ -43,9 +43,11 @@
  *   }
  */
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, unlinkSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
+import { tmpdir } from "node:os";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const dataPath = resolve(__dir, "../src/data/nationalAnthems.ts");
@@ -205,6 +207,49 @@ async function fetchCaptionCuesViaTimedtext(videoId, language) {
   return null;
 }
 
+// Strategy 3: yt-dlp (pre-installed on GitHub Actions ubuntu-latest).
+// Fetches the video page, extracts signed caption URLs, writes JSON3 files.
+// Works from server IPs where the timedtext API returns empty.
+function fetchCaptionCuesViaYtDlp(videoId, language) {
+  const tmpBase = resolve(tmpdir(), `ytcap_${videoId}`);
+  const langBase = language.split(/[-_]/)[0].toLowerCase();
+  const langArgs = langBase !== "en" ? [langBase, "en"] : ["en"];
+
+  for (const lang of langArgs) {
+    try {
+      // yt-dlp writes: tmpBase.LANG.json3  (auto-sub) or tmpBase.LANG.json3
+      spawnSync(
+        "yt-dlp",
+        [
+          "--write-auto-sub",
+          "--skip-download",
+          "--sub-format", "json3",
+          "--sub-lang", lang,
+          "--no-check-certificate",
+          "--quiet",
+          "-o", tmpBase,
+          `https://www.youtube.com/watch?v=${videoId}`,
+        ],
+        { timeout: 30_000 },
+      );
+
+      // yt-dlp may append the lang code in various ways
+      for (const candidate of [
+        `${tmpBase}.${lang}.json3`,
+        `${tmpBase}.${lang}-orig.json3`,
+      ]) {
+        if (existsSync(candidate)) {
+          const json = JSON.parse(readFileSync(candidate, "utf8"));
+          try { unlinkSync(candidate); } catch { /* ignore */ }
+          const cues = parseCaptionJson(json);
+          if (cues.length) return cues;
+        }
+      }
+    } catch { /* try next lang */ }
+  }
+  return null;
+}
+
 // ── Text similarity ────────────────────────────────────────────────────────
 // Unicode-aware normalise: strip everything that isn't a letter, digit, or space.
 const KEEP = /[^\p{L}\p{N}\s]/gu;
@@ -343,6 +388,11 @@ for (const code of codes) {
     // Strategy 2: direct timedtext API (no InnerTube needed, works from CI)
     if (!cues?.length) {
       cues = await fetchCaptionCuesViaTimedtext(youtubeId, language);
+    }
+
+    // Strategy 3: yt-dlp (handles server IPs where timedtext returns empty)
+    if (!cues?.length) {
+      cues = fetchCaptionCuesViaYtDlp(youtubeId, language);
     }
 
     if (!cues?.length) {
