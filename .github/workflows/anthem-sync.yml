@@ -2,18 +2,8 @@ name: Sync anthem caption timestamps
 
 on:
   push:
-    branches:
-      - main
-    paths-ignore:
-      - src/data/nationalAnthems.ts
-  schedule:
-    - cron: "0 3 * * 0"
+    branches: [main]
   workflow_dispatch:
-    inputs:
-      countries:
-        description: "Space-separated ISO-3166 codes to sync (blank = all)"
-        type: string
-        default: ""
 
 permissions:
   contents: write
@@ -34,13 +24,7 @@ jobs:
         run: npm ci
 
       - name: Fetch YouTube caption timestamps
-        run: |
-          CODES="${{ inputs.countries }}"
-          if [ -n "$CODES" ]; then
-            node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json $CODES
-          else
-            node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json
-          fi
+        run: node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json
 
       - name: Apply calibration to nationalAnthems.ts
         run: |
@@ -58,14 +42,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No timestamp changes - nothing to commit"
           else
-            CHANGED=$(git diff --staged --stat | tail -1)
-            git commit -m "chore(anthems): sync YouTube caption timestamps
-
-Real per-line start times derived from YouTube caption cue timestamps,
-replacing the previous uniform-pacing estimates. Fixes lyrics panel
-sync drift on all devices including iOS Safari where runtime caption
-fetching is blocked by CORS.
-
-$CHANGED"
+            git commit -m "chore(anthems): sync YouTube caption timestamps"
             git push origin main
           fi
