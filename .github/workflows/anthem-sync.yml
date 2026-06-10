@@ -26,10 +26,13 @@ jobs:
       - name: Install yt-dlp
         run: pipx install yt-dlp
 
-      - name: Diagnostic - list subtitles for AU video
+      - name: Diagnostic - invidious caption availability for AU video
         run: |
-          yt-dlp --list-subs --no-check-certificate \
-            "https://www.youtube.com/watch?v=BNEqS4zPI30" 2>&1 | head -60 || true
+          for inst in inv.nadeko.net yewtu.be invidious.nerdvpn.de iv.melmac.space; do
+            echo "== $inst =="
+            curl -s --max-time 15 "https://$inst/api/v1/captions/BNEqS4zPI30" | head -c 400 || true
+            echo ""
+          done
 
       - name: Fetch YouTube caption timestamps
         # Temporarily limited to 3 countries while diagnosing caption availability

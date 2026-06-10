@@ -258,6 +258,61 @@ function fetchCaptionCuesViaYtDlp(videoId, language) {
   return null;
 }
 
+// Strategy 4: Invidious public instances. These proxy YouTube through their
+// own backends, sidestepping the bot-check that blocks datacenter IPs.
+// API: GET /api/v1/captions/{id} lists tracks; track url returns WebVTT.
+const INVIDIOUS_INSTANCES = [
+  "https://inv.nadeko.net",
+  "https://yewtu.be",
+  "https://invidious.nerdvpn.de",
+  "https://iv.melmac.space",
+];
+
+function parseVtt(text) {
+  const NOISE = /^\s*\[/; // [Music], [Applause]
+  const cues = [];
+  const re = /(?:(\d{1,2}):)?(\d{2}):(\d{2})[.,](\d{3})\s*-->\s*[\d:.,]+.*\n([\s\S]*?)(?=\n\n|\n*$)/g;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    const h = m[1] ? parseInt(m[1], 10) : 0;
+    const start =
+      h * 3600 + parseInt(m[2], 10) * 60 + parseInt(m[3], 10) + parseInt(m[4], 10) / 1000;
+    const cueText = m[5].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    if (cueText && !NOISE.test(cueText)) cues.push({ start, dur: 0, text: cueText });
+  }
+  return cues;
+}
+
+async function fetchCaptionCuesViaInvidious(videoId, language) {
+  const langBase = language.split(/[-_]/)[0].toLowerCase();
+  for (const base of INVIDIOUS_INSTANCES) {
+    try {
+      const listResp = await fetch(`${base}/api/v1/captions/${videoId}`, {
+        headers: { "User-Agent": "Mozilla/5.0 (compatible; AnthemSyncBot/1.0)" },
+        signal: AbortSignal.timeout(12000),
+      });
+      if (!listResp.ok) continue;
+      const { captions } = await listResp.json();
+      if (!Array.isArray(captions) || !captions.length) continue;
+
+      const pick =
+        captions.find(c => c.languageCode?.toLowerCase().split(/[-_]/)[0] === langBase) ??
+        captions.find(c => c.languageCode?.toLowerCase().startsWith("en")) ??
+        captions[0];
+      if (!pick?.url) continue;
+
+      const cueResp = await fetch(`${base}${pick.url}`, {
+        headers: { "User-Agent": "Mozilla/5.0 (compatible; AnthemSyncBot/1.0)" },
+        signal: AbortSignal.timeout(12000),
+      });
+      if (!cueResp.ok) continue;
+      const cues = parseVtt(await cueResp.text());
+      if (cues.length) return cues;
+    } catch { /* try next instance */ }
+  }
+  return null;
+}
+
 // ── Text similarity ────────────────────────────────────────────────────────
 // Unicode-aware normalise: strip everything that isn't a letter, digit, or space.
 const KEEP = /[^\p{L}\p{N}\s]/gu;
@@ -401,6 +456,11 @@ for (const code of codes) {
     // Strategy 3: yt-dlp (handles server IPs where timedtext returns empty)
     if (!cues?.length) {
       cues = fetchCaptionCuesViaYtDlp(youtubeId, language);
+    }
+
+    // Strategy 4: Invidious instances (sidestep YouTube datacenter bot-check)
+    if (!cues?.length) {
+      cues = await fetchCaptionCuesViaInvidious(youtubeId, language);
     }
 
     if (!cues?.length) {
