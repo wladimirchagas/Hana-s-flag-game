@@ -1,6 +1,12 @@
 name: Sync anthem caption timestamps
 
 on:
+  push:
+    branches: [main]
+    # Only run on non-bot commits to avoid infinite loop when the workflow
+    # itself commits updated timestamps back to main.
+    paths-ignore:
+      - 'src/data/nationalAnthems.ts'
   schedule:
     # Run every Sunday at 03:00 UTC so fresh caption data lands before the week
     - cron: '0 3 * * 0'
