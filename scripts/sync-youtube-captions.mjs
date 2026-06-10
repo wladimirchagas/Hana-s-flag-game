@@ -167,9 +167,11 @@ async function fetchCaptionCues(baseUrl) {
   });
   if (!resp.ok) throw new Error(`Caption fetch HTTP ${resp.status}`);
   const json = await resp.json();
+  return parseCaptionJson(json);
+}
 
+function parseCaptionJson(json) {
   const NOISE = /^\s*\[/; // [Music], [Applause], etc.
-
   return (json.events ?? [])
     .filter(e => Array.isArray(e.segs) && e.tStartMs !== undefined)
     .map(e => ({
@@ -178,6 +180,29 @@ async function fetchCaptionCues(baseUrl) {
       text: e.segs.map(s => s.utf8 ?? "").join("").trim(),
     }))
     .filter(e => e.text && !NOISE.test(e.text) && e.text !== "\n");
+}
+
+// Fallback: the public timedtext endpoint does not need InnerTube.
+// Works server-side (no CORS restriction). Tries the anthem's own
+// language first, then English auto-generated captions.
+async function fetchCaptionCuesViaTimedtext(videoId, language) {
+  const langCodes = language !== "en" ? [language, "en"] : ["en"];
+  for (const lang of langCodes) {
+    try {
+      const url =
+        `https://www.youtube.com/api/timedtext` +
+        `?v=${encodeURIComponent(videoId)}&lang=${encodeURIComponent(lang)}&fmt=json3`;
+      const resp = await fetch(url, {
+        headers: { "User-Agent": "Mozilla/5.0 (compatible; AnthemSyncBot/1.0)" },
+        signal: AbortSignal.timeout(12000),
+      });
+      if (!resp.ok) continue;
+      const json = await resp.json();
+      const cues = parseCaptionJson(json);
+      if (cues.length) return cues;
+    } catch { /* try next lang */ }
+  }
+  return null;
 }
 
 // ── Text similarity ────────────────────────────────────────────────────────
@@ -197,28 +222,26 @@ function jaccardWords(a, b) {
   return inter / (setA.size + setB.size - inter);
 }
 
-// Find which caption cue best matches a lyric line.
-// Returns { cue, score } or null if nothing exceeds the threshold.
-function findBestCue(lineText, cues, threshold = 0.25) {
-  let best = null;
-  let bestScore = threshold;
-
-  for (const cue of cues) {
-    const score = jaccardWords(lineText, cue.text);
-    if (score > bestScore) {
-      bestScore = score;
-      best = cue;
-    }
-  }
-
-  return best ? { cue: best, score: bestScore } : null;
-}
-
 // ── Core calibration ───────────────────────────────────────────────────────
 function deriveCalibration(lineTexts, cues) {
   if (!cues.length || !lineTexts.length) return null;
+  const THRESHOLD = 0.25;
 
-  const matches = lineTexts.map(text => findBestCue(text, cues));
+  // Forward-pass: advance the search window after each match so repeated
+  // lyric lines don't both match the same early cue (temporal order preserved).
+  let cueSearchStart = 0;
+  const matches = lineTexts.map(text => {
+    let best = null;
+    let bestScore = THRESHOLD;
+    let bestIdx = cueSearchStart;
+    const windowEnd = Math.min(cues.length, cueSearchStart + 30);
+    for (let j = cueSearchStart; j < windowEnd; j++) {
+      const score = jaccardWords(text, cues[j].text);
+      if (score > bestScore) { bestScore = score; best = cues[j]; bestIdx = j; }
+    }
+    if (best) cueSearchStart = bestIdx + 1;
+    return best ? { cue: best, score: bestScore } : null;
+  });
 
   // Need at least the first line matched to establish introOffset
   if (!matches[0]) {
@@ -305,25 +328,25 @@ for (const code of codes) {
   process.stdout.write(`  ${code} (${youtubeId})… `);
 
   try {
-    const tracks = await getCaptionTracks(youtubeId);
+    let cues = null;
 
-    if (!tracks.length) {
-      console.log("⏭  no caption tracks");
-      skipCount++;
-      continue;
+    // Strategy 1: InnerTube API → signed caption track URL
+    try {
+      const tracks = await getCaptionTracks(youtubeId);
+      const track = chooseBestTrack(tracks, language);
+      if (track?.baseUrl) {
+        const fetched = await fetchCaptionCues(track.baseUrl);
+        if (fetched.length) cues = fetched;
+      }
+    } catch { /* InnerTube blocked or unavailable — try fallback */ }
+
+    // Strategy 2: direct timedtext API (no InnerTube needed, works from CI)
+    if (!cues?.length) {
+      cues = await fetchCaptionCuesViaTimedtext(youtubeId, language);
     }
 
-    const track = chooseBestTrack(tracks, language);
-    if (!track) {
-      console.log("⏭  no suitable track");
-      skipCount++;
-      continue;
-    }
-
-    const cues = await fetchCaptionCues(track.baseUrl);
-
-    if (!cues.length) {
-      console.log("⏭  empty caption track");
+    if (!cues?.length) {
+      console.log("⏭  no captions available");
       skipCount++;
       continue;
     }
