@@ -218,10 +218,11 @@ function fetchCaptionCuesViaYtDlp(videoId, language) {
   for (const lang of langArgs) {
     try {
       // yt-dlp writes: tmpBase.LANG.json3  (auto-sub) or tmpBase.LANG.json3
-      spawnSync(
+      const res = spawnSync(
         "yt-dlp",
         [
           "--write-auto-sub",
+          "--write-sub",
           "--skip-download",
           "--sub-format", "json3",
           "--sub-lang", lang,
@@ -230,8 +231,15 @@ function fetchCaptionCuesViaYtDlp(videoId, language) {
           "-o", tmpBase,
           `https://www.youtube.com/watch?v=${videoId}`,
         ],
-        { timeout: 30_000 },
+        { timeout: 30_000, encoding: "utf8" },
       );
+      if (res.error) {
+        if (!fetchCaptionCuesViaYtDlp.warned) {
+          fetchCaptionCuesViaYtDlp.warned = true;
+          console.error(`\n  [yt-dlp unavailable: ${res.error.message}]`);
+        }
+        return null;
+      }
 
       // yt-dlp may append the lang code in various ways
       for (const candidate of [
