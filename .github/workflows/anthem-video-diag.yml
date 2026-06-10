@@ -1,0 +1,41 @@
+name: Anthem video download diagnostic
+
+# Temporary diagnostic: can CI download anthem videos at all?
+# If yes, an OCR pipeline (frames -> tesseract -> match lyric lines)
+# can derive the exact on-screen lyric timings automatically.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install yt-dlp and deno
+        run: |
+          pipx install yt-dlp
+          curl -fsSL https://deno.land/install.sh | sh -s -- -y > /dev/null 2>&1 || true
+          echo "$HOME/.deno/bin" >> "$GITHUB_PATH"
+
+      - name: Try yt-dlp player clients
+        run: |
+          for client in tv tv_embedded web_embedded mweb android ios web_safari; do
+            echo "=== client: $client ==="
+            yt-dlp --skip-download --print "OK %(title)s | dur=%(duration)s" \
+              --extractor-args "youtube:player_client=$client" \
+              "https://www.youtube.com/watch?v=BNEqS4zPI30" 2>&1 | tail -2 || true
+          done
+
+      - name: Try cobalt API instances
+        run: |
+          for api in https://cobalt-api.kwiatekmiki.com https://capi.3kh0.net https://co.eepy.today https://cobalt-backend.canine.tools https://api.cobalt.best; do
+            echo "== $api =="
+            curl -s --max-time 20 -X POST "$api/" \
+              -H "Accept: application/json" -H "Content-Type: application/json" \
+              -d '{"url":"https://www.youtube.com/watch?v=BNEqS4zPI30"}' | head -c 400 || true
+            echo ""
+          done
