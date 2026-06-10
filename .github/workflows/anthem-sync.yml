@@ -26,8 +26,14 @@ jobs:
       - name: Install yt-dlp
         run: pipx install yt-dlp
 
+      - name: Diagnostic - list subtitles for AU video
+        run: |
+          yt-dlp --list-subs --no-check-certificate \
+            "https://www.youtube.com/watch?v=BNEqS4zPI30" 2>&1 | head -60 || true
+
       - name: Fetch YouTube caption timestamps
-        run: node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json
+        # Temporarily limited to 3 countries while diagnosing caption availability
+        run: node scripts/sync-youtube-captions.mjs --out anthem-yt-calibration.json AU US FR
 
       - name: Apply calibration to nationalAnthems.ts
         run: |
