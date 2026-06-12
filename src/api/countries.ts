@@ -92,6 +92,19 @@ const UN_CONTINENTS: ReadonlySet<Continent> = new Set([
   "Oceania",
 ]);
 
+/**
+ * Hardcoded flag SVG overrides for countries where the upstream CDN
+ * (flagcdn.com / restcountries.com) serves an outdated or politically
+ * disputed version. Values here always win over whatever the API returns.
+ *
+ * Afghanistan: flagcdn.com reverted to the pre-2021 Republic flag;
+ * we pin the Islamic Emirate (Taliban) flag from Wikimedia Commons,
+ * which is the de facto national flag since August 2021.
+ */
+const FLAG_OVERRIDES: Readonly<Record<string, string>> = {
+  AF: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+};
+
 
 /**
  * Offline / API-outage fallback: build the 195-country list entirely from
@@ -120,7 +133,7 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
       countries.push({
         name,
         code,
-        flagSvg: `https://flagcdn.com/${code.toLowerCase()}.svg`,
+        flagSvg: FLAG_OVERRIDES[code] ?? `https://flagcdn.com/${code.toLowerCase()}.svg`,
         continent,
         subregion: subregionByCode.get(code),
         population: wbPop.get(code),
@@ -211,7 +224,7 @@ export async function fetchCountries(): Promise<Country[]> {
       name: finalName,
       nameOfficial: finalNameOfficial,
       code,
-      flagSvg: flagUrl,
+      flagSvg: FLAG_OVERRIDES[code] ?? flagUrl,
       continent: region,
       subregion,
       capital,
