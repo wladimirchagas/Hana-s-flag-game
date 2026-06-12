@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text
+    x="450" y="370"
+    font-family="'Scheherazade New','Amiri','Traditional Arabic','Arabic Typesetting',serif"
+    font-size="96"
+    font-weight="bold"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    fill="#000000"
+    direction="rtl"
+  >لَا إِلَٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِ</text>
+</svg>
