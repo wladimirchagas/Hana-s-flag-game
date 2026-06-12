@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import type { Country } from "../api/countries";
 
+// Codes where flagcdn.com serves a politically incorrect flag.
+// These must never fall back to flagcdn — show broken image instead.
+const FLAGCDN_EXCLUDED = new Set(["AF"]);
+
 type Props = {
   country: Country | null;
   phase: "loading" | "error" | "guessing" | "revealed" | "finished";
@@ -46,6 +50,7 @@ export function FlagCard({ country, phase }: Props) {
           draggable={false}
           onError={(e) => {
             const img = e.currentTarget
+            if (FLAGCDN_EXCLUDED.has(country.code)) return
             const png = `https://flagcdn.com/${country.code.toLowerCase()}.png`
             if (img.src !== png) img.src = png
           }}

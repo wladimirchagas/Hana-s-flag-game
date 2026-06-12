@@ -122,7 +122,7 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
       countries.push({
         name,
         code,
-        flagSvg: `https://flagcdn.com/${code.toLowerCase()}.svg`,
+        flagSvg: `${BASE}flags/${code.toLowerCase()}.svg`,
         continent,
         subregion: subregionByCode.get(code),
         population: wbPop.get(code),

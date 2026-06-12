@@ -53,6 +53,9 @@ import type { SubdivisionFeatureCollection, SubdivisionMeta } from "../types/sub
 import "../App.css";
 import "./LearnPage.css";
 
+// Codes where flagcdn.com serves a politically incorrect flag.
+// These must never fall back to flagcdn — show broken image instead.
+const FLAGCDN_FALLBACK_EXCLUDED = new Set(["AF"]);
 
 /**
  * Learn-mode sandbox with a historical era slider.
@@ -654,7 +657,7 @@ export default function LearnPage() {
     );
   }
   const flagPngFallback =
-    display?.kind === "modern"
+    display?.kind === "modern" && !FLAGCDN_FALLBACK_EXCLUDED.has(display.country.code)
       ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
       : null
 
