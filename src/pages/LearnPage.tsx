@@ -626,6 +626,19 @@ export default function LearnPage() {
     [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap],
   );
 
+  const flagUrl = display ? selectionFlag(display, baseUrl) : null;
+  // Reset load-failed state whenever the displayed entity changes.
+  // NOTE: this ref MUST be declared before the loadError early-return below —
+  // hooks after a conditional return violate the Rules of Hooks, and when
+  // loadError flipped on, React threw "Rendered fewer hooks than expected"
+  // and unmounted the entire app (blank page) instead of showing the error card.
+  const prevFlagUrlRef = useRef<string | null>(null);
+  if (prevFlagUrlRef.current !== flagUrl) {
+    prevFlagUrlRef.current = flagUrl;
+    // Sync reset without triggering an extra render cycle
+    if (flagLoadFailed) setFlagLoadFailed(false);
+  }
+
   if (loadError && isModernEra) {
     return (
       <div className="app app--center">
@@ -639,15 +652,6 @@ export default function LearnPage() {
         </main>
       </div>
     );
-  }
-
-  const flagUrl = display ? selectionFlag(display, baseUrl) : null;
-  // Reset load-failed state whenever the displayed entity changes
-  const prevFlagUrlRef = useRef<string | null>(null);
-  if (prevFlagUrlRef.current !== flagUrl) {
-    prevFlagUrlRef.current = flagUrl;
-    // Sync reset without triggering an extra render cycle
-    if (flagLoadFailed) setFlagLoadFailed(false);
   }
   const flagPngFallback =
     display?.kind === "modern"

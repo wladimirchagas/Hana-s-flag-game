@@ -1,4 +1,6 @@
 import { UN_MEMBER_CODES } from "../lib/unMemberStates";
+import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
+import { CONTINENT_GROUPS, SUBREGION_GROUPS } from "../lib/continentGroups";
 
 export type Country = {
   name: string;
@@ -91,18 +93,66 @@ const UN_CONTINENTS: ReadonlySet<Continent> = new Set([
 ]);
 
 
+/**
+ * Offline / API-outage fallback: build the 195-country list entirely from
+ * data bundled with the app. restcountries.com has a history of outages and
+ * is blocked on some networks; when it fails, the previous behaviour was a
+ * "Couldn't load countries" dead-end (and, until the rules-of-hooks fix in
+ * LearnPage, a blank-page crash). The bundled UN_MEMBERS name list,
+ * CONTINENT_GROUPS and SUBREGION_GROUPS cover name / code / continent /
+ * subregion for every UN state, and the flag SVGs come from flagcdn.com —
+ * the exact same URLs REST Countries returns. Only the panel extras
+ * (capital, languages, currencies) are unavailable; EntitySummary omits
+ * missing rows gracefully. Population still comes from the World Bank
+ * fetch when that succeeds.
+ */
+function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
+  const nameByCode = new Map(ALL_COUNTRY_OPTIONS.map((o) => [o.code, o.name]));
+  const subregionByCode = new Map<string, string>();
+  for (const group of SUBREGION_GROUPS) {
+    for (const code of group.codes) subregionByCode.set(code, group.label);
+  }
+  const countries: Country[] = [];
+  for (const [continent, codes] of Object.entries(CONTINENT_GROUPS) as [Continent, readonly string[]][]) {
+    for (const code of codes) {
+      const name = nameByCode.get(code);
+      if (!name) continue;
+      countries.push({
+        name,
+        code,
+        flagSvg: `https://flagcdn.com/${code.toLowerCase()}.svg`,
+        continent,
+        subregion: subregionByCode.get(code),
+        population: wbPop.get(code),
+      });
+    }
+  }
+  countries.sort((a, b) => a.name.localeCompare(b.name, "en"));
+  return countries;
+}
+
 export async function fetchCountries(): Promise<Country[]> {
   // Run the two fetches in parallel — REST Countries gives us names,
   // flags, capital, languages; the World Bank gives us the most-current
   // population figures (REST Countries' numbers are often years stale).
-  const [res, wbPop] = await Promise.all([
-    fetch(API_URL),
+  // Each fetch is independently failure-safe: a REST Countries outage
+  // falls back to the bundled country list instead of an error page.
+  const [restResult, wbPop] = await Promise.all([
+    fetch(API_URL).catch(() => null),
     fetchWorldBankPopulation(),
   ]);
-  if (!res.ok) {
-    throw new Error(`Failed to load countries (${res.status})`);
+  if (!restResult || !restResult.ok) {
+    return buildFallbackCountries(wbPop);
   }
-  const data = (await res.json()) as RestCountry[];
+  let data: RestCountry[];
+  try {
+    data = (await restResult.json()) as RestCountry[];
+    if (!Array.isArray(data) || data.length === 0) {
+      return buildFallbackCountries(wbPop);
+    }
+  } catch {
+    return buildFallbackCountries(wbPop);
+  }
 
   const countries: Country[] = [];
   for (const item of data) {
