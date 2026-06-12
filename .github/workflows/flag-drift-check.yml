@@ -1,0 +1,147 @@
+name: Flag drift check
+
+# Runs weekly to detect upstream flag changes.
+# If any bundled flag SVG differs from its canonical source, a PR is opened
+# for review: merge to accept the new flag, close to keep the current one.
+#
+# Can also be triggered manually with seed=true to do the initial download
+# of all flags (or a full re-download) and commit directly to main.
+#
+# Historical flags (public/historical-flags/) are managed separately by
+# the update-historical-flags workflow and are not included here.
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"  # Every Monday at 09:00 UTC
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: "Seed mode — download ALL flags and commit directly to this branch"
+        type: boolean
+        default: false
+      force:
+        description: "Re-download even files that already exist (only used with seed=true)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  flag-drift:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Download flags
+        run: |
+          ARGS=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            ARGS="$ARGS --force"
+          elif [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.seed }}" = "true" ]; then
+            # Always re-download on scheduled runs and seed mode to detect upstream changes
+            ARGS="$ARGS --force"
+          fi
+          node scripts/download-flags.mjs $ARGS
+
+      # -----------------------------------------------------------------------
+      # SEED MODE: commit downloaded flags directly to the current branch
+      # -----------------------------------------------------------------------
+      - name: "[Seed] Commit downloaded flags to branch"
+        if: ${{ inputs.seed == true }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/flags/
+          if git diff --staged --quiet; then
+            echo "No flag files changed — nothing to commit."
+          else
+            COUNT=$(git diff --staged --name-only | grep -c '\.svg$' || true)
+            git commit -m "chore(flags): seed ${COUNT} flag SVGs from upstream sources"
+            git push
+          fi
+
+      # -----------------------------------------------------------------------
+      # DRIFT-CHECK MODE: open a PR if anything changed
+      # -----------------------------------------------------------------------
+      - name: "[Drift] Check for upstream changes"
+        if: ${{ inputs.seed != true }}
+        id: diff
+        run: |
+          # List changed SVG files only (not sources.json)
+          CHANGED=$(git diff --name-only public/flags/ | grep '\.svg$' || true)
+          NEW=$(git ls-files --others --exclude-standard public/flags/ | grep '\.svg$' || true)
+          ALL_CHANGED=$(printf '%s\n%s' "$CHANGED" "$NEW" | grep -v '^$' | sort -u || true)
+
+          if [ -z "$ALL_CHANGED" ]; then
+            echo "No flag changes detected."
+            echo "changed=" >> "$GITHUB_OUTPUT"
+          else
+            echo "Changed files:"
+            echo "$ALL_CHANGED"
+            # Summarise as comma-separated country/subdivision codes for the PR title
+            CODES=$(echo "$ALL_CHANGED" \
+              | sed 's|public/flags/||' \
+              | sed 's|sub/[^/]*/||' \
+              | sed 's|\.[a-z]*$||' \
+              | tr '[:lower:]' '[:upper:]' \
+              | tr '\n' ',' | sed 's/,$//')
+            echo "changed=$CODES" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: "[Drift] Open PR for changed flags"
+        if: ${{ inputs.seed != true && steps.diff.outputs.changed != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          CODES="${{ steps.diff.outputs.changed }}"
+          BRANCH="flag-update/$(date +%Y-%m-%d)"
+
+          # If a branch for today already exists, append a counter
+          if git ls-remote --exit-code origin "refs/heads/${BRANCH}" > /dev/null 2>&1; then
+            BRANCH="${BRANCH}-2"
+          fi
+
+          git checkout -b "$BRANCH"
+          git add public/flags/
+          git commit -m "chore(flags): upstream changes detected — ${CODES}"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --title "flag update: upstream changes for ${CODES}" \
+            --body "$(cat <<EOF
+          ## Upstream flag changes detected
+
+          The weekly flag drift check found differences between the bundled SVGs
+          in \`public/flags/\` and their canonical upstream sources.
+
+          **Changed flag codes:** \`${CODES}\`
+
+          Review the **Files** tab to see what changed visually.
+
+          | Action | How |
+          |--------|-----|
+          | ✅ Accept change(s) | Merge this PR |
+          | ❌ Decline change(s) | Close this PR without merging |
+          | ✅ Accept some, ❌ decline others | Remove the unwanted files from the commit before merging |
+
+          > If you want to permanently pin a flag regardless of what the upstream
+          > source does, add an entry to \`NATIONAL_SOURCE_OVERRIDES\` (or
+          > \`TERRITORY_FLAGS\`) in \`scripts/download-flags.mjs\` pointing to a
+          > stable URL (e.g. a specific Wikimedia Commons revision).
+          EOF
+          )" \
+            --base main \
+            --head "$BRANCH"
