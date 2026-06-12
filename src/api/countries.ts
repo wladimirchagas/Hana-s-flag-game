@@ -92,6 +92,57 @@ const UN_CONTINENTS: ReadonlySet<Continent> = new Set([
   "Oceania",
 ]);
 
+/**
+ * Hardcoded flag SVG overrides for countries where the upstream CDN
+ * (flagcdn.com / restcountries.com) serves an outdated or politically
+ * disputed version. Values here always win over whatever the API returns.
+ *
+ * Afghanistan: flagcdn.com reverted to the pre-2021 Republic flag;
+ * we pin the Islamic Emirate (Taliban) flag from Wikimedia Commons,
+ * which is the de facto national flag since August 2021.
+ */
+const FLAG_OVERRIDES: Readonly<Record<string, string>> = {
+  AF: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+};
+
+
+/**
+ * Offline / API-outage fallback: build the 195-country list entirely from
+ * data bundled with the app. restcountries.com has a history of outages and
+ * is blocked on some networks; when it fails, the previous behaviour was a
+ * "Couldn't load countries" dead-end (and, until the rules-of-hooks fix in
+ * LearnPage, a blank-page crash). The bundled UN_MEMBERS name list,
+ * CONTINENT_GROUPS and SUBREGION_GROUPS cover name / code / continent /
+ * subregion for every UN state, and the flag SVGs come from flagcdn.com —
+ * the exact same URLs REST Countries returns. Only the panel extras
+ * (capital, languages, currencies) are unavailable; EntitySummary omits
+ * missing rows gracefully. Population still comes from the World Bank
+ * fetch when that succeeds.
+ */
+function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
+  const nameByCode = new Map(ALL_COUNTRY_OPTIONS.map((o) => [o.code, o.name]));
+  const subregionByCode = new Map<string, string>();
+  for (const group of SUBREGION_GROUPS) {
+    for (const code of group.codes) subregionByCode.set(code, group.label);
+  }
+  const countries: Country[] = [];
+  for (const [continent, codes] of Object.entries(CONTINENT_GROUPS) as [Continent, readonly string[]][]) {
+    for (const code of codes) {
+      const name = nameByCode.get(code);
+      if (!name) continue;
+      countries.push({
+        name,
+        code,
+        flagSvg: FLAG_OVERRIDES[code] ?? `https://flagcdn.com/${code.toLowerCase()}.svg`,
+        continent,
+        subregion: subregionByCode.get(code),
+        population: wbPop.get(code),
+      });
+    }
+  }
+  countries.sort((a, b) => a.name.localeCompare(b.name, "en"));
+  return countries;
+}
 
 /**
  * Offline / API-outage fallback: build the 195-country list entirely from
@@ -211,7 +262,7 @@ export async function fetchCountries(): Promise<Country[]> {
       name: finalName,
       nameOfficial: finalNameOfficial,
       code,
-      flagSvg: flagUrl,
+      flagSvg: FLAG_OVERRIDES[code] ?? flagUrl,
       continent: region,
       subregion,
       capital,
