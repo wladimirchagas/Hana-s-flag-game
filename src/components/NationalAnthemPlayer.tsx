@@ -1041,10 +1041,18 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
   const playerReady = (isYoutube ? !isLoadingAudio : !!audioUrl && !isLoadingAudio) && !audioError;
   const showLoading = isLoadingAudio || (!isYoutube && needsOgv && ogvLoading && playerReady);
 
+  // When hidden: explicitly override all four sides from .anthem-modal's
+  // `inset: 0` so the element is truly off-screen (480×300 at -9999,-9999)
+  // rather than spanning the viewport. On iOS Safari, `backdrop-filter` on a
+  // child element is composited before the parent's `opacity: 0` is applied,
+  // meaning an `inset: 0` element whose `right`/`bottom` weren't overridden
+  // would blur/darken the entire visible viewport even at opacity 0.
   const modalStyle: React.CSSProperties = visible ? {} : {
     position: "fixed",
     left: "-9999px",
     top: "-9999px",
+    right: "auto",
+    bottom: "auto",
     width: "480px",
     height: "300px",
     overflow: "hidden",
@@ -1054,7 +1062,11 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
 
   return (
     <div className="anthem-modal" style={modalStyle} role="dialog" aria-modal="true" aria-label={`${countryName} national anthem`}>
-      <div className="anthem-modal__backdrop" onClick={onClose} aria-hidden="true" />
+      {/* Only render the backdrop (which has backdrop-filter: blur) when the
+          modal is actually visible. This prevents the iOS Safari compositing
+          bug where backdrop-filter on a child is applied before the parent's
+          opacity:0, leaking the blur/overlay onto the visible page. */}
+      {visible && <div className="anthem-modal__backdrop" onClick={onClose} aria-hidden="true" />}
       <div className="anthem-modal__card">
         <button className="anthem-modal__close" onClick={onClose} aria-label="Close anthem player">×</button>
 
