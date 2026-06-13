@@ -138,7 +138,7 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
       countries.push({
         name,
         code,
-        flagSvg: FLAG_OVERRIDES[code] ?? `https://flagcdn.com/${code.toLowerCase()}.svg`,
+        flagSvg: FLAG_OVERRIDES[code] ?? `${BASE}flags/${code.toLowerCase()}.svg`,
         continent,
         subregion: subregionByCode.get(code),
         population: wbPop.get(code),
@@ -229,7 +229,7 @@ export async function fetchCountries(): Promise<Country[]> {
       name: finalName,
       nameOfficial: finalNameOfficial,
       code,
-      flagSvg: FLAG_OVERRIDES[code] ?? flagUrl,
+      flagSvg: FLAG_OVERRIDES[code] ?? `${BASE}flags/${code.toLowerCase()}.svg`,
       continent: region,
       subregion,
       capital,

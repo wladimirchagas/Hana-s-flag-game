@@ -367,8 +367,25 @@ export function FlagGrid({
                             draggable={false}
                             className="flag-grid__thumb-img"
                             onError={(e) => {
-                              e.currentTarget.hidden = true;
-                              const sib = e.currentTarget.nextElementSibling as HTMLElement | null;
+                              const img = e.currentTarget;
+                              // Safety net: if a bundled local flag is missing,
+                              // fall back once to flagcdn.com — except for codes
+                              // where flagcdn serves a politically incorrect flag
+                              // (AF: pre-2021 Republic flag). Those show the
+                              // empty placeholder rather than the wrong flag.
+                              const code = item.id.toLowerCase();
+                              const png = `https://flagcdn.com/${code}.png`;
+                              if (
+                                item.id.toUpperCase() !== "AF" &&
+                                !img.dataset.fellBack &&
+                                img.src !== png
+                              ) {
+                                img.dataset.fellBack = "1";
+                                img.src = png;
+                                return;
+                              }
+                              img.hidden = true;
+                              const sib = img.nextElementSibling as HTMLElement | null;
                               if (sib) sib.hidden = false;
                             }}
                           />
