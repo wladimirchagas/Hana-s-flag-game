@@ -9,11 +9,10 @@
 export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
   // French overseas departments — locally-used regional symbols with no
   // official legal status.  France's only official flag is the Tricolour.
+  // Only departments where an unofficial regional flag image is actually shown
+  // are listed here; others display the French Tricolour (the official flag).
   "FR-GF": "This flag is used locally as a regional symbol but has no official legal status. France does not recognise regional flags; the only official national flag is the French Tricolour.",
-  "FR-GP": "This flag is used locally as a regional symbol but has no official legal status. France does not recognise regional flags; the only official national flag is the French Tricolour.",
   "FR-MQ": "The blue-and-white flag with four gold serpents is a historical informal symbol. France does not recognise regional flags; the only official national flag is the French Tricolour.",
-  "FR-RE": "This flag is used locally as a regional symbol but has no official legal status. France does not recognise regional flags; the only official national flag is the French Tricolour.",
-  "FR-YT": "This flag is used locally as a regional symbol but has no official legal status. France does not recognise regional flags; the only official national flag is the French Tricolour.",
 
   // Tibet Autonomous Region — the Snow Lion Flag belongs to the government-in-exile,
   // not to the PRC-administered region.
