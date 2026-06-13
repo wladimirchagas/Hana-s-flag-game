@@ -163,7 +163,7 @@ let STATIC_COUNTRIES: [Country] = [
     Country(code: "TJ", name: "Tajikistan", continent: .asia),
     Country(code: "TH", name: "Thailand", continent: .asia),
     Country(code: "TL", name: "Timor-Leste", continent: .asia),
-    Country(code: "TR", name: "Turkey", continent: .asia),
+    Country(code: "TR", name: "Türkiye", continent: .asia),
     Country(code: "TM", name: "Turkmenistan", continent: .asia),
     Country(code: "AE", name: "United Arab Emirates", continent: .asia),
     Country(code: "UZ", name: "Uzbekistan", continent: .asia),

@@ -179,7 +179,7 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "PK-JK", subdivCode: "IN-AK~" },
     { geoCode: "PK-GB", subdivCode: "IN-GB~" },
   ],
-  // Northern Cyprus — Turkey administers; Cyprus claims the whole island.
+  // Northern Cyprus — Türkiye administers; Cyprus claims the whole island.
   // geoCode "XN" is a non-standard internal code (Northern Cyprus has no ISO 3166-1 code).
   TR: [{ geoCode: "XN", subdivCode: "TR-NC~" }],
   CY: [{ geoCode: "XN", subdivCode: "CY-NC~" }],
