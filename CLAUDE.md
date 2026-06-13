@@ -45,3 +45,19 @@ To re-download all flags correctly:
 ```
 node scripts/download-flags.mjs --force --national-only
 ```
+
+## PR workflow — hard rule for all agents
+
+After pushing a branch and creating a pull request, an agent **MUST**:
+
+1. **Immediately merge** the PR (squash merge) — do not leave it open waiting for manual action unless the user has explicitly asked to review first.
+2. **Confirm the merge succeeded** by checking the merge response.
+3. **Report back** with:
+   - Merge status (success/failure)
+   - Current time in **AEST** (Australian Eastern Standard Time, UTC+10; or AEDT UTC+11 during daylight saving, which runs October–April)
+   - The merge commit SHA (this is the build code/number)
+
+Example confirmation message format:
+> Merged ✓ — commit `b05323a` — 9:56 PM AEST
+
+Do not report the time in UTC or any other timezone unless asked.
