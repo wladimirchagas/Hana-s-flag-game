@@ -105,7 +105,11 @@ export default defineConfig({
         // Public dir contains a couple of large data blobs (countries-50m.json,
         // historical maps, large subdivision GeoJSON) — exclude from precache
         // so the install footprint stays small.
-        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**'],
+        // Subdivision flags (public/flags/sub/**) are ~1800 files only used in
+        // sub-national mode; load them on demand rather than bloating the
+        // install. National + territory flags (public/flags/*.svg) stay
+        // precached — they're small and on the main flag grid.
+        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**', '**/flags/sub/**'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },
       devOptions: {
