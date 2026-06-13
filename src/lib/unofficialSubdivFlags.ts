@@ -7,12 +7,19 @@
  * Values are the detail-panel note text (one sentence per note).
  */
 export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
-  // French overseas departments — locally-used regional symbols with no
-  // official legal status.  France's only official flag is the Tricolour.
-  // Only departments where an unofficial regional flag image is actually shown
-  // are listed here; others display the French Tricolour (the official flag).
+  // ── POLICY: show most-used unofficial flag when official flag = national flag ──
+  // (Do NOT remove these entries or the corresponding LOCAL_FLAG_OVERRIDES in
+  // src/api/subdivisions.ts without explicit owner approval.)
+  //
+  // France grants no official regional flags; every French department's official
+  // flag is the national Tricolour.  For overseas departments with a widely-used
+  // local/unofficial regional flag we display that flag instead of the Tricolour
+  // and label it "(unofficial flag)" here so users are clearly informed.
   "FR-GF": "This flag is used locally as a regional symbol but has no official legal status. France does not recognise regional flags; the only official national flag is the French Tricolour.",
+  "FR-GP": "The flag shown is an unofficial local flag used in cultural and sporting contexts — a black field with a 30-rayed yellow sun, a green sugarcane stalk, and a blue stripe charged with three golden fleurs-de-lis. France does not recognise regional flags; the only official national flag is the French Tricolour.",
   "FR-MQ": "The blue-and-white flag with four gold serpents is a historical informal symbol. France does not recognise regional flags; the only official national flag is the French Tricolour.",
+  "FR-RE": "The flag shown is the Lo Mahavéli, designed by Guy Pignolet (1975) and adopted by several municipal councils since 2014 — a blue field bearing a red depiction of the Piton de la Fournaise volcano with five golden rays. France does not recognise regional flags; the only official national flag is the French Tricolour.",
+  "FR-YT": "The flag shown is an unofficial local flag bearing Mayotte's coat of arms (a shield with a crescent and ylang-ylang flowers, supported by seahorses) on a white field. France does not recognise regional flags; the only official national flag is the French Tricolour.",
 
   // Tibet Autonomous Region — the Snow Lion Flag belongs to the government-in-exile,
   // not to the PRC-administered region.

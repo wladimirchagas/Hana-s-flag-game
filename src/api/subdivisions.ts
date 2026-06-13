@@ -62,11 +62,22 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "IN-GB~": subdivisionFlagCdnUrl("PK-GB") ?? "",
 
   // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
-  "FR-GF":  `${BASE}flags/FR-GF.svg`, // Custom local diagonal green/yellow flag with red star
-  "FR-GP":  `${BASE}flags/gp.svg`,
-  "FR-MQ":  `${BASE}flags/mq.svg`,
-  "FR-RE":  `${BASE}flags/re.svg`,
-  "FR-YT":  `${BASE}flags/yt.svg`,
+  "FR-GF":  `${BASE}flags/FR-GF.svg`, // Local file — unofficial regional flag (green/yellow diagonal with red star)
+  "FR-MQ":  `${BASE}flags/mq.svg`,    // Local file — Martinique's regional serpent flag
+
+  // ── POLICY: show most-used unofficial flag when official flag = national flag ──
+  // (Do NOT revert these to the French Tricolour without explicit owner approval.)
+  //
+  // Guadeloupe, Réunion, and Mayotte have no distinct official flag; their
+  // official flag is the French Tricolour.  Per project policy we instead show
+  // the most widely-used local/unofficial regional flag and label it
+  // "(unofficial flag)" in the grid (see UNOFFICIAL_SUBDIV_NOTES in
+  // src/lib/unofficialSubdivFlags.ts for the corresponding label + detail note).
+  //
+  // Sources: Wikimedia Commons (all three are freely licensed SVGs)
+  "FR-GP":  "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg",
+  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/0/05/Proposed_flag_of_R%C3%A9union_%28ARF%29.svg",
+  "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
 };
 
 // Cache so we only fetch each country once per session.
