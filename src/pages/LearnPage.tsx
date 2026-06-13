@@ -95,10 +95,12 @@ function selectionContinent(s: Selection): string {
 function selectionFlag(s: Selection, baseUrl: string): string | null {
   if (s.kind === "modern") return s.country.flagSvg;
   if (!s.flag) return null;
-  // Historical selections may carry either a relative asset path (curated
-  // historical flag PNG in /public) or an absolute URL (modern flagcdn flag,
-  // used when we fall back to a modern country's flag for a historical name).
+  // Historical selections may carry a relative asset path (curated historical
+  // flag PNG in /public), an absolute URL, or a bundled modern-flag path that
+  // already includes the base (when we fall back to a modern country's flag).
+  // The last must not be base-prefixed twice.
   if (/^https?:\/\//.test(s.flag) || s.flag.startsWith("data:")) return s.flag;
+  if (s.flag.startsWith(baseUrl)) return s.flag;
   return `${baseUrl}${s.flag}`;
 }
 // (The pre-EntitySummary single-line `selectionSummary` helper used to live
@@ -565,7 +567,9 @@ export default function LearnPage() {
     for (const entry of flagEntries) {
       if (!entry.flag) continue;
       const raw =
-        /^https?:\/\//.test(entry.flag) || entry.flag.startsWith("data:")
+        /^https?:\/\//.test(entry.flag) ||
+        entry.flag.startsWith("data:") ||
+        entry.flag.startsWith(baseUrl)
           ? entry.flag
           : `${baseUrl}${entry.flag}`;
       m.set(entry.id, toMapFlagUrl(raw));
@@ -686,10 +690,13 @@ export default function LearnPage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // Resolver passed to FlagGrid so it can render both absolute http(s)
-  // flagcdn URLs and relative /historical-flags/*.png paths.
+  // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
+  // relative historical-flags/*.png paths, AND bundled flag paths that
+  // already include the base URL (country.flagSvg = `${BASE}flags/xx.svg`).
+  // The last case must NOT be prefixed again or it becomes `/base/base/...`.
   function resolveFlag(raw: string): string {
     if (/^https?:\/\//.test(raw) || raw.startsWith("data:")) return raw;
+    if (raw.startsWith(baseUrl)) return raw;
     return `${baseUrl}${raw}`;
   }
 
