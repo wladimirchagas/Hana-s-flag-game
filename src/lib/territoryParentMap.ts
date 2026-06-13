@@ -66,10 +66,13 @@ const ENTRIES: TerritoryEntry[] = [
   // Norway
   { code: "SJ", name: "Svalbard and Jan Mayen",                       parent: "NO" },
   { code: "BV", name: "Bouvet Island",                                parent: "NO" },
-  // Western Sahara — administered by Morocco; claimed as "Southern Provinces".
-  // The Sahrawi Arab Democratic Republic (SADR/Polisario Front) also claims it,
-  // but SADR is not a UN member state, so WS shows only under Morocco here.
-  { code: "EH", name: "Western Sahara",                               parent: "MA" },
+  // Western Sahara is intentionally OMITTED from this list.
+  // Although Morocco administers ~80% of the territory, the SADR/Polisario Front
+  // disputes sovereignty. Linking EH → MA would highlight Western Sahara alongside
+  // Morocco on the world map, implying a political position the game must not take.
+  // Western Sahara still appears in Morocco's subdivision grid via TERRITORY_GEO_FOR_PARENT.
+  // Clicks on the EH polygon on the world map do nothing (non-clickable).
+  // { code: "EH", name: "Western Sahara", parent: "MA" }, — deliberately excluded
 ];
 
 /** territory alpha-2 → administering country alpha-2 */
