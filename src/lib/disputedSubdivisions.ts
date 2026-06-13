@@ -40,6 +40,49 @@ export const DISPUTED_SUBDIV_NOTES: Record<string, string> = {
 };
 
 /**
+ * Maps a disputed/claimed subdivision code to the code of the parent subdivision
+ * within the claiming nation's official political hierarchy.
+ *
+ * When present, the territory is NOT treated as a standalone entity by that nation:
+ *   1. FLAG GRID — the entry is hidden (it is covered by its hierarchy parent's card).
+ *   2. SUBDIVISION MAP — clicking the territory's landmass redirects to the parent code.
+ *   3. GAME — the territory is excluded from game questions (its parent is asked instead).
+ *
+ * Only the CLAIMING / non-administering nation has a hierarchy parent.
+ * The administering nation (e.g. UK for Falklands and Gibraltar) always shows the
+ * territory as its own standalone division and is NOT listed here.
+ *
+ * See CLAUDE.md "Disputed territory neutrality" for the full policy.
+ */
+export const DISPUTED_TERRITORY_HIERARCHY: Readonly<Record<string, string>> = {
+  // Argentina's constitution places the Malvinas / Falkland Islands inside the
+  // Province of Tierra del Fuego, Antártida e Islas del Atlántico Sur (AR-V).
+  "AR-ML~": "AR-V",
+
+  // Spain's administrative law places Gibraltar in the Province of Cádiz (ES-CA),
+  // within the Autonomous Community of Andalusia.
+  "ES-GIB~": "ES-CA",
+
+  // India's 1947 Instrument of Accession covers all of the former princely state of
+  // Jammu and Kashmir. India's Union Territory of Jammu and Kashmir (IN-JK) includes
+  // the Pakistani-administered Azad Jammu and Kashmir.
+  "IN-AK~": "IN-JK",
+
+  // Following India's 2019 reorganisation of J&K, the area bordering Gilgit-Baltistan
+  // falls within India's Union Territory of Ladakh (IN-LA).
+  "IN-GB~": "IN-LA",
+};
+
+// Reverse lookup: parent subdivision → set of disputed child codes.
+// Used by SubdivisionMap to highlight child polygons when the parent is selected.
+const _reverseHierarchy: Record<string, Set<string>> = {};
+for (const [child, parent] of Object.entries(DISPUTED_TERRITORY_HIERARCHY)) {
+  (_reverseHierarchy[parent] ??= new Set()).add(child);
+}
+export const DISPUTED_HIERARCHY_CHILDREN_OF: Readonly<Record<string, ReadonlySet<string>>> =
+  _reverseHierarchy;
+
+/**
  * Returns the disputed/claimed or unofficial label for a subdivision under a given parent country.
  * If the subdivision is not disputed, returns null.
  */
@@ -60,10 +103,11 @@ export function getSubdivisionDisputeLabel(
 
   const parent = parentCountryCode?.toUpperCase();
 
-  // Flag is unofficial when viewed under a claiming country that does not recognise the displayed flag.
+  // Flag is unofficial when viewed under a country that does not recognise the displayed flag.
   // CN claims TW (shows ROC flag), ES claims GI, AR claims FK/ML,
   // CY claims Northern Cyprus (shows TRNC flag), MA claims Western Sahara (shows Sahrawi flag).
-  const isUnofficial = !!parent && ["CN", "ES", "AR", "CY", "MA"].includes(parent);
+  // GE shows the Republic of Abkhazia flag, which Georgia does not recognise.
+  const isUnofficial = !!parent && ["CN", "ES", "AR", "CY", "MA", "GE"].includes(parent);
 
   if (isUnofficial) {
     return { text: "unofficial flag", isUnofficial: true };

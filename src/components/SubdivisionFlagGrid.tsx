@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
-import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
+import { getSubdivisionDisputeLabel, DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 
 type GroupMode = "none" | "alpha" | "type";
 
@@ -38,12 +38,17 @@ export function SubdivisionFlagGrid({
   );
 
   const sorted = useMemo(
-    () => [...divisions].sort((a, b) => {
-      // Disputed/claimed territories must always be listed last
-      if (a.isDisputed && !b.isDisputed) return 1;
-      if (!a.isDisputed && b.isDisputed) return -1;
-      return a.name.localeCompare(b.name, "en");
-    }),
+    () =>
+      divisions
+        // Hierarchy children are absorbed into their parent subdivision and must
+        // not appear as standalone cards (see CLAUDE.md "Disputed territory neutrality").
+        .filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY))
+        .sort((a, b) => {
+          // Disputed/claimed territories must always be listed last
+          if (a.isDisputed && !b.isDisputed) return 1;
+          if (!a.isDisputed && b.isDisputed) return -1;
+          return a.name.localeCompare(b.name, "en");
+        }),
     [divisions],
   );
 

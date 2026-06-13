@@ -46,6 +46,61 @@ To re-download all flags correctly:
 node scripts/download-flags.mjs --force --national-only
 ```
 
+## Disputed territory neutrality — hard rule, do not override without approval
+
+When two or more nations claim or dispute a subnational territory, the game takes no side.
+The rules below are **hard-coded** and must be preserved in all future changes.
+
+### World map view
+
+Clicking on a disputed/claimed territory on the world map **must never select or highlight any nation**.
+The mechanism: `DISPUTED_TERRITORY_CODES` (auto-derived in `src/lib/territoryParentMap.ts`) lists all
+disputed geo codes. `UNDISPUTED_TERRITORY_PARENT` excludes them. The world map receives only
+`UNDISPUTED_TERRITORY_PARENT`, making disputed polygons non-clickable.
+**Always pass `UNDISPUTED_TERRITORY_PARENT`, never the full `TERRITORY_PARENT`, to the world map.**
+
+### Nation subnational view — flag grid
+
+When browsing a nation's subnational divisions, disputed/claimed territories **are** shown — but only
+with a flag if the parent nation officially recognises one.
+
+| Territory | Under UK (administers) | Under Argentina (claims) |
+|-----------|----------------------|--------------------------|
+| Falkland Islands / Malvinas | Shown with FK flag ✓ | No flag shown (Argentina has no recognised flag for it) |
+
+**Never** add a flag URL for a claimed entry (`AR-ML~`, `ES-GIB~`, etc.) under the claiming nation unless
+that nation officially recognises a distinct flag for the territory.
+
+### Hierarchy rule — most important
+
+A claimed/disputed territory **must respect the political hierarchy of its parent nation**.
+If the claiming nation groups the territory as part of an existing administrative division,
+the territory **must not appear as a standalone entity in the flag grid**.
+Instead, clicking its landmass on the subdivision map must redirect to the parent subdivision.
+
+This is implemented via `DISPUTED_TERRITORY_HIERARCHY` in `src/lib/disputedSubdivisions.ts`:
+
+| Claimed code | Hierarchy parent | Rationale |
+|--------------|-----------------|-----------|
+| `AR-ML~` | `AR-V` (Tierra del Fuego) | Argentine constitution places Malvinas inside the Province of Tierra del Fuego |
+| `ES-GIB~` | `ES-CA` (Cádiz) | Spanish administrative law places Gibraltar in the Province of Cádiz |
+| `IN-AK~` | `IN-JK` (Jammu & Kashmir UT) | India's Instrument of Accession covers all of J&K, including Azad Kashmir |
+| `IN-GB~` | `IN-LA` (Ladakh UT) | India's 2019 reorganisation places this border area in Ladakh |
+
+Any new disputed entry must declare a `DISPUTED_TERRITORY_HIERARCHY` parent **unless** the claiming nation
+treats the territory as a standalone entity (e.g. Turkey → TRNC, Cyprus → Northern Cyprus, Ukraine → Crimea).
+
+The **administering** nation (e.g. UK for Falklands and Gibraltar) always shows the territory as its own
+standalone division with its recognised flag.
+
+### Enforcement
+
+`src/lib/disputedSubdivisions.ts` contains `DISPUTED_TERRITORY_HIERARCHY` and `DISPUTED_HIERARCHY_CHILDREN_OF`.
+`SubdivisionFlagGrid` filters out hierarchy children from the visible grid.
+`SubdivisionMap` redirects clicks on hierarchy children to their parent subdivision code, and highlights
+child polygons when their parent is selected.
+`useSubdivisionGame` excludes hierarchy children from game questions.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
