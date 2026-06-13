@@ -41,7 +41,8 @@ const SUB_DIR   = join(FLAGS_DIR, "sub");
 const NATIONAL_SOURCE_OVERRIDES = {
   // flagcdn.com reverted to the pre-2021 Republic flag; we pin the Islamic
   // Emirate (Taliban) flag — de facto national flag since August 2021.
-  AF: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+  // Source: Ristoufe/Jeu_Capitale (Wikimedia-derived Thuluth calligraphy artwork, pinned commit).
+  AF: "https://raw.githubusercontent.com/Ristoufe/Jeu_Capitale/cbba1206533388af0f0b4768acdef696df30c452/Drapeaux/Flag_of_Afghanistan.svg",
 };
 
 // ---------------------------------------------------------------------------
@@ -85,7 +86,8 @@ const TERRITORY_FLAGS = {
   vi: "https://flagcdn.com/vi.svg",   // US Virgin Islands     (US-VI)
   yt: "https://flagcdn.com/yt.svg",   // Mayotte               (FR-YT)
   // Tibet — Snow Lion Flag (de facto flag of Tibetan government-in-exile)
-  "cn-xz": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
+  // Source: rahul2104/react-country-flag-currency-picker (512×336 SVG, pinned default branch)
+  "cn-xz": "https://raw.githubusercontent.com/rahul2104/react-country-flag-currency-picker/master/flags/tibet.svg",
 };
 
 // ---------------------------------------------------------------------------
