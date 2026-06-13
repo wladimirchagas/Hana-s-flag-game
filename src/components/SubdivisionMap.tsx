@@ -7,7 +7,11 @@ import type {
   SubdivisionGeoFeature,
 } from "../types/subdivision";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
-import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
+import {
+  getSubdivisionDisputeLabel,
+  DISPUTED_TERRITORY_HIERARCHY,
+  DISPUTED_HIERARCHY_CHILDREN_OF,
+} from "../lib/disputedSubdivisions";
 
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -314,6 +318,11 @@ export function SubdivisionMap({
 
   function getFill(code: string): string {
     if (code === selectedCode) return palette.selectedFill;
+    // Hierarchy children (e.g. AR-ML~ when AR-V is selected) are shown highlighted
+    // together with their parent — they are administratively part of the same division.
+    if (selectedCode && DISPUTED_HIERARCHY_CHILDREN_OF[selectedCode]?.has(code)) {
+      return palette.selectedFill;
+    }
     const result = countryResults[code];
     if (result === "correct") return palette.correct;
     if (result === "wrong") return palette.wrong;
@@ -328,6 +337,17 @@ export function SubdivisionMap({
     if (!isInteractive) return;
     const frameRect = frameRef.current?.getBoundingClientRect();
     if (!frameRect) return;
+
+    // Hierarchy rule: disputed territories that belong inside a parent subdivision
+    // must redirect to that parent — clicking Malvinas selects Tierra del Fuego, etc.
+    const resolvedCode = DISPUTED_TERRITORY_HIERARCHY[code] ?? code;
+    let resolvedName = name;
+    if (resolvedCode !== code && countryCode) {
+      const parentDiv = SUBDIVISION_META[countryCode.toUpperCase()]?.divisions.find(
+        (d) => d.code === resolvedCode,
+      );
+      if (parentDiv) resolvedName = parentDiv.name;
+    }
 
     const clickX = e.clientX - frameRect.left;
     const clickY = e.clientY - frameRect.top;
@@ -344,8 +364,8 @@ export function SubdivisionMap({
     const y = placeAbove ? clickY - MARGIN : clickY + MARGIN;
     const placement: "above" | "below" = placeAbove ? "above" : "below";
 
-    onSelect?.(code);
-    setPopover({ code, name, x, y, placement });
+    onSelect?.(resolvedCode);
+    setPopover({ code: resolvedCode, name: resolvedName, x, y, placement });
   }
 
   function handleConfirm() {

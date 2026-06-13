@@ -1795,7 +1795,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "GE",
     pluralLabel: "Regions",
     divisions: [
-    { code: "GE-AB", name: "Abkhazia", typeLabel: "Autonomous Republic" },
+    { code: "GE-AB", name: "Abkhazia", typeLabel: "Autonomous Republic", isDisputed: true },
     { code: "GE-SZ", name: "Samegrelo-Zemo Svaneti", typeLabel: "Region" },
     { code: "GE-SK", name: "Shida Kartli", typeLabel: "Region" },
     { code: "GE-RL", name: "Racha-Lechkhumi and Kvemo Svaneti", typeLabel: "Region" },
