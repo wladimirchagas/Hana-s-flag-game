@@ -101,6 +101,33 @@ standalone division with its recognised flag.
 child polygons when their parent is selected.
 `useSubdivisionGame` excludes hierarchy children from game questions.
 
+## Natural Earth topology and projection — hard rule, do not override without approval
+
+The world map uses the Natural Earth 50m topology bundled at `public/countries-50m.json`
+and renders it with the Equal Earth projection (`geoEqualEarth()` from `d3-geo`).
+
+### Rules
+
+1. **Never** replace `public/countries-50m.json` with a different topology file or resolution
+   without explicit approval. The 50m resolution was chosen over 110m for better border accuracy,
+   and specific polygon adjacency in this file is relied on by the disputed-territory rendering
+   (e.g. Morocco and Western Sahara share exact boundary arcs; Crimea is extracted at runtime).
+
+2. **Never** change the map projection from Equal Earth (`geoEqualEarth()`). This is the
+   canonical projection for the entire game — it must be used on every map view, present and future.
+
+3. **Never** clip, simplify, or alter country polygon geometries in the topology file or at
+   runtime, **except** for the existing Crimea extraction in `WorldProgressMap.tsx` (which is
+   documented inline). Any additional runtime geometry adjustment must be documented in both
+   `CLAUDE.md` and inline in the code.
+
+4. Morocco (id=504) and Western Sahara (id=732) are **adjacent** polygons sharing boundary arcs
+   in the topology — they do NOT overlap (confirmed via `polygon-clipping.intersection()` = ∅).
+   **Do not add polygon clipping for Morocco.** EH renders at feature index 104 (after MA at 103),
+   so EH's fill correctly paints over MA's selection highlight in the WS area. EH renders with
+   `palette.disputedLand` (not `palette.land`) to remain visually distinct from both ocean and
+   regular country fills.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:

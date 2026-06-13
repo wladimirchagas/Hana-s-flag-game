@@ -145,6 +145,12 @@ type Props = {
   flagOverlay?: ReadonlyMap<string, string> | null;
 };
 
+// Alpha-2 codes of non-UN-member or de-facto-disputed territories that appear
+// as standalone polygons in the 50m topology. These receive palette.disputedLand
+// rather than palette.land so they are visually distinct from both ocean and
+// regular country fills — no political judgement is implied by the colour.
+const WORLD_MAP_DISPUTED_ALPHA2 = new Set(["EH"]);
+
 const GEO_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -257,6 +263,9 @@ type MapPalette = {
   stroke: string;
   selectedStroke: string;
   selectedFill: string;
+  /** Non-UN / disputed territories (e.g. Western Sahara, Crimea). Rendered
+   *  distinct from both ocean and regular land to avoid visual ambiguity. */
+  disputedLand: string;
 };
 
 const LIGHT_PALETTE: MapPalette = {
@@ -272,6 +281,7 @@ const LIGHT_PALETTE: MapPalette = {
   stroke: "#1a2238",
   selectedStroke: "#1a2238",
   selectedFill: "#4ecdc4",
+  disputedLand: "#ccc8be",
 };
 
 const DARK_PALETTE: MapPalette = {
@@ -284,6 +294,7 @@ const DARK_PALETTE: MapPalette = {
   stroke: "#f4ecd8",
   selectedStroke: "#f4ecd8",
   selectedFill: "#74e4dc",
+  disputedLand: "#606a82",
 };
 
 function getFill(
@@ -723,7 +734,12 @@ export function WorldProgressMap({
                   const isSelected =
                     !!alpha2 &&
                     (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
-                  const baseFill = getFill(alpha2, countryResults, palette, isInPool);
+                  const isDisputedTerritory =
+                    geo.id === "DISPUTED_CRIMEA" ||
+                    (alpha2 !== null && WORLD_MAP_DISPUTED_ALPHA2.has(alpha2));
+                  const baseFill = isDisputedTerritory
+                    ? palette.disputedLand
+                    : getFill(alpha2, countryResults, palette, isInPool);
                   const tooltip =
                     alpha2
                       ? selectable?.names.get(alpha2) ??
@@ -736,8 +752,8 @@ export function WorldProgressMap({
                       d={path}
                       fill={isSelected ? palette.selectedFill : baseFill}
                       stroke={isSelected ? palette.selectedStroke : palette.stroke}
-                      strokeWidth={isSelected ? 1.4 : 0.45}
-                      strokeOpacity={isSelected ? 1 : 0.55}
+                      strokeWidth={isSelected ? 1.4 : isDisputedTerritory ? 0.75 : 0.45}
+                      strokeOpacity={isSelected ? 1 : isDisputedTerritory ? 0.8 : 0.55}
                       vectorEffect="non-scaling-stroke"
                       className={
                         clickable
