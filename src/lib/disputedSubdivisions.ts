@@ -1,3 +1,5 @@
+import { UNOFFICIAL_SUBDIV_NOTES } from "./unofficialSubdivFlags";
+
 /**
  * Subdivision codes whose territory is contested between two or more countries.
  * A disputed subdivision appears in the flag grid of EVERY country that claims it,
@@ -48,7 +50,13 @@ export function getSubdivisionDisputeLabel(
 ): { text: string; isUnofficial: boolean } | null {
   const disputedCodes = new Set(Object.keys(DISPUTED_SUBDIV_NOTES));
 
-  if (!disputedCodes.has(code)) return null;
+  // Codes in UNOFFICIAL_SUBDIV_NOTES but not in the disputed set always show "unofficial flag".
+  if (!disputedCodes.has(code)) {
+    if (code in UNOFFICIAL_SUBDIV_NOTES) {
+      return { text: "unofficial flag", isUnofficial: true };
+    }
+    return null;
+  }
 
   const parent = parentCountryCode?.toUpperCase();
 
