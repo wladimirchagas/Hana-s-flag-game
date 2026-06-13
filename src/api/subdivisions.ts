@@ -68,16 +68,19 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // ── POLICY: show most-used unofficial flag when official flag = national flag ──
   // (Do NOT revert these to the French Tricolour without explicit owner approval.)
   //
-  // Guadeloupe, Réunion, and Mayotte have no distinct official flag; their
-  // official flag is the French Tricolour.  Per project policy we instead show
-  // the most widely-used local/unofficial regional flag and label it
-  // "(unofficial flag)" in the grid (see UNOFFICIAL_SUBDIV_NOTES in
-  // src/lib/unofficialSubdivFlags.ts for the corresponding label + detail note).
+  // The territories below have no distinct official flag; their official flag is
+  // the French Tricolour.  Per project policy we show the most widely-used
+  // local/unofficial regional flag and label it "(unofficial flag)" in the grid
+  // (see UNOFFICIAL_SUBDIV_NOTES in src/lib/unofficialSubdivFlags.ts).
   //
-  // Sources: Wikimedia Commons (all three are freely licensed SVGs)
+  // Sources: Wikimedia Commons (all freely licensed SVGs)
   "FR-GP":  "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg",
-  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/0/05/Proposed_flag_of_R%C3%A9union_%28ARF%29.svg",
+  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_R%C3%A9union_(Lo_Mahav%C3%A9li).svg",
   "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
+  "FR-BL":  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Saint_Barth%C3%A9lemy_(local).svg",
+  "FR-MF":  "https://upload.wikimedia.org/wikipedia/commons/3/3d/Local_flag_of_the_Collectivity_of_Saint_Martin.svg",
+  "FR-PM":  "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg",
+  "FR-WF":  "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg",
 };
 
 // Cache so we only fetch each country once per session.
