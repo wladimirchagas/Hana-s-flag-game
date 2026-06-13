@@ -1,0 +1,24 @@
+name: Flag integrity check
+
+# Runs on any PR that touches flag SVGs or the download script, blocking
+# merges that would introduce flags with standardised (wrong) aspect ratios.
+
+on:
+  pull_request:
+    paths:
+      - "public/flags/**"
+      - "scripts/download-flags.mjs"
+      - "scripts/check-flag-proportions.mjs"
+
+jobs:
+  check-proportions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Verify flag aspect ratios
+        run: node scripts/check-flag-proportions.mjs
