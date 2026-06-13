@@ -719,7 +719,7 @@ const FLAG_CODES = new Set<string>([
   "ZM-05","ZM-06","ZM-07","ZM-08","ZM-09","ZM-10","ZUBEROA","ZW-BU","ZW-HA"
 ]);
 
-const CDN_BASE = `${import.meta.env.BASE_URL}flags/sub`;
+const CDN_BASE = "https://cdn.jsdelivr.net/gh/amckenna41/iso3166-flags@main/iso3166-2-flags";
 
 /**
  * Returns a CDN URL for the flag of the given ISO 3166-2 subdivision code,
