@@ -4,64 +4,66 @@ import { TERRITORY_GEO_FOR_PARENT } from "../lib/territoryParentMap";
 
 const BASE = import.meta.env.BASE_URL;
 
-// Local flag overrides (keyed by uppercase ISO 3166-2 code).
-// All flags are served from public/flags/ — bundled with the app.
+// Local corrected flag overrides (keyed by uppercase ISO 3166-2 code).
+// Use these to replace flags from the CDN that contain errors, or to
+// supply flags for territory subdivisions not in the subdivision CDN.
 const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // CDN source has a spurious red horizontal stripe; corrected locally.
   "BR-RR": `${BASE}flags/BR-RR.svg`,
-  "CN-TW":  `${BASE}flags/tw.svg`,
-  // Territory flags — bundled in public/flags/ (downloaded by scripts/download-flags.mjs).
-  "DK-GL":  `${BASE}flags/gl.svg`,
-  "DK-FO":  `${BASE}flags/fo.svg`,
-  "GB-FK":  `${BASE}flags/fk.svg`,
-  "GB-JE":  `${BASE}flags/je.svg`,
-  "GB-GG":  `${BASE}flags/gg.svg`,
-  "GB-IM":  `${BASE}flags/im.svg`,
-  "GB-GI":  `${BASE}flags/gi.svg`,
-  "GB-IO":  `${BASE}flags/io.svg`,
-  "GB-GS":  `${BASE}flags/gs.svg`,
-  "NZ-CK":  `${BASE}flags/ck.svg`,
-  "NZ-NU":  `${BASE}flags/nu.svg`,
-  "FI-AX":  `${BASE}flags/ax.svg`,
-  "AU-CC":  `${BASE}flags/cc.svg`,
-  "ES-GIB~": `${BASE}flags/gi.svg`,
+  "CN-TW":  "https://flagcdn.com/tw.svg",
+  // Territory flags via flagcdn.com — the subdivision CDN doesn't index these codes.
+  "DK-GL":  "https://flagcdn.com/gl.svg",
+  "DK-FO":  "https://flagcdn.com/fo.svg",
+  "GB-FK":  "https://flagcdn.com/fk.svg",
+  "GB-JE":  "https://flagcdn.com/je.svg",
+  "GB-GG":  "https://flagcdn.com/gg.svg",
+  "GB-IM":  "https://flagcdn.com/im.svg",
+  "GB-GI":  "https://flagcdn.com/gi.svg",
+  "GB-IO":  "https://flagcdn.com/io.svg",
+  "GB-GS":  "https://flagcdn.com/gs.svg",
+  "NZ-CK":  "https://flagcdn.com/ck.svg",
+  "NZ-NU":  "https://flagcdn.com/nu.svg",
+  "FI-AX":  "https://flagcdn.com/ax.svg",
+  "AU-CC":  "https://flagcdn.com/cc.svg",
+  "ES-GIB~": "https://flagcdn.com/gi.svg",
   "TR-NC~":  `${BASE}flags/trnc.svg`,
   // Northern Cyprus under Cyprus — shows TRNC flag; unofficial from Cyprus's perspective.
   "CY-NC~":  `${BASE}flags/trnc.svg`,
-  // Western Sahara — Sahrawi flag; unofficial from Morocco's perspective.
-  "MA-EH~":  `${BASE}flags/eh.svg`,
+  // Western Sahara — Sahrawi flag; unofficial from Morocco's perspective (Morocco rejects Sahrawi sovereignty).
+  "MA-EH~":  "https://flagcdn.com/eh.svg",
 
-  // Populated territories
-  "AU-CX":  `${BASE}flags/cx.svg`,
-  "AU-NF":  `${BASE}flags/nf.svg`,
-  "US-VI":  `${BASE}flags/vi.svg`,
-  "US-AS":  `${BASE}flags/as.svg`,
-  "US-GU":  `${BASE}flags/gu.svg`,
-  "FR-PF":  `${BASE}flags/pf.svg`,
-  "FR-NC":  `${BASE}flags/nc.svg`,
-  "NZ-TK":  `${BASE}flags/tk.svg`,
-  "GB-AI":  `${BASE}flags/ai.svg`,
-  "GB-BM":  `${BASE}flags/bm.svg`,
-  "GB-VG":  `${BASE}flags/vg.svg`,
-  "GB-KY":  `${BASE}flags/ky.svg`,
-  "GB-MS":  `${BASE}flags/ms.svg`,
-  "GB-SH":  `${BASE}flags/sh.svg`,
-  "GB-TC":  `${BASE}flags/tc.svg`,
-  "GB-PN":  `${BASE}flags/pn.svg`,
-
-  // Tibet Autonomous Region — Snow Lion Flag (bundled from Wikimedia Commons)
-  "CN-XZ":  `${BASE}flags/cn-xz.svg`,
+  // Newly added populated territories
+  "AU-CX":  "https://flagcdn.com/cx.svg",
+  "AU-NF":  "https://flagcdn.com/nf.svg",
+  "US-VI":  "https://flagcdn.com/vi.svg",
+  "US-AS":  "https://flagcdn.com/as.svg",
+  "US-GU":  "https://flagcdn.com/gu.svg",
+  "FR-PF":  "https://flagcdn.com/pf.svg",
+  "FR-NC":  "https://flagcdn.com/nc.svg",
+  "NZ-TK":  "https://flagcdn.com/tk.svg",
+  "GB-AI":  "https://flagcdn.com/ai.svg",
+  "GB-BM":  "https://flagcdn.com/bm.svg",
+  "GB-VG":  "https://flagcdn.com/vg.svg",
+  "GB-KY":  "https://flagcdn.com/ky.svg",
+  "GB-MS":  "https://flagcdn.com/ms.svg",
+  "GB-SH":  "https://flagcdn.com/sh.svg",
+  "GB-TC":  "https://flagcdn.com/tc.svg",
+  "GB-PN":  "https://flagcdn.com/pn.svg",
+  
+  // Tibet Autonomous Region — Snow Lion Flag (historical Tibetan flag, unofficial)
+  // Source: Wikimedia Commons (Flag_of_Tibet.svg)
+  "CN-XZ":  "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
 
   // India's claimed territories in Pakistan-administered Kashmir — same flags as the PK entries
   "IN-AK~": subdivisionFlagCdnUrl("PK-JK") ?? "",
   "IN-GB~": subdivisionFlagCdnUrl("PK-GB") ?? "",
 
-  // French overseas departments (subdivision CDN uses dept numbers 971-976 instead of ISO codes)
-  "FR-GF":  `${BASE}flags/FR-GF.svg`, // custom local diagonal green/yellow flag with red star
-  "FR-GP":  `${BASE}flags/gp.svg`,
-  "FR-MQ":  `${BASE}flags/mq.svg`,
-  "FR-RE":  `${BASE}flags/re.svg`,
-  "FR-YT":  `${BASE}flags/yt.svg`,
+  // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
+  "FR-GF":  `${BASE}flags/FR-GF.svg`, // Custom local diagonal green/yellow flag with red star
+  "FR-GP":  "https://flagcdn.com/gp.svg",
+  "FR-MQ":  "https://flagcdn.com/mq.svg",
+  "FR-RE":  "https://flagcdn.com/re.svg",
+  "FR-YT":  "https://flagcdn.com/yt.svg",
 };
 
 // Cache so we only fetch each country once per session.

@@ -32,6 +32,7 @@ export type Continent =
 type RestCountry = {
   name?: { common?: string; official?: string };
   cca2?: string;
+  flags?: { svg?: string; png?: string };
   region?: string;
   subregion?: string;
   capital?: string[];
@@ -41,7 +42,7 @@ type RestCountry = {
 };
 
 const API_URL =
-  "https://restcountries.com/v3.1/all?fields=name,cca2,region,subregion,capital,population,languages,currencies";
+  "https://restcountries.com/v3.1/all?fields=name,flags,cca2,region,subregion,capital,population,languages,currencies";
 
 /**
  * World Bank "Population, total" indicator. The most-current authoritative
@@ -94,6 +95,21 @@ const UN_CONTINENTS: ReadonlySet<Continent> = new Set([
 /** Vite base URL — resolves to "/" in dev and "/<repo>/" on GitHub Pages. */
 const BASE = import.meta.env.BASE_URL;
 
+/**
+ * Hardcoded flag SVG overrides for countries where the upstream CDN
+ * (flagcdn.com / restcountries.com) serves an outdated or politically
+ * disputed version. Values here always win over whatever the API returns.
+ *
+ * Afghanistan: flagcdn.com reverted to the pre-2021 Republic flag; we pin
+ * the Islamic Emirate (Taliban) flag — the de facto national flag since
+ * August 2021. Served from a bundled local SVG (public/flags/af.svg, the
+ * Wikimedia Thuluth-calligraphy artwork) so it is always available and can
+ * never silently revert to whatever the CDN happens to serve.
+ */
+const FLAG_OVERRIDES: Readonly<Record<string, string>> = {
+  AF: `${BASE}flags/af.svg`,
+};
+
 
 /**
  * Offline / API-outage fallback: build the 195-country list entirely from
@@ -102,8 +118,8 @@ const BASE = import.meta.env.BASE_URL;
  * "Couldn't load countries" dead-end (and, until the rules-of-hooks fix in
  * LearnPage, a blank-page crash). The bundled UN_MEMBERS name list,
  * CONTINENT_GROUPS and SUBREGION_GROUPS cover name / code / continent /
- * subregion for every UN state, and flag SVGs are served from public/flags/
- * — bundled with the app so they are always available. Only the panel extras
+ * subregion for every UN state, and the flag SVGs come from flagcdn.com —
+ * the exact same URLs REST Countries returns. Only the panel extras
  * (capital, languages, currencies) are unavailable; EntitySummary omits
  * missing rows gracefully. Population still comes from the World Bank
  * fetch when that succeeds.
@@ -122,7 +138,7 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
       countries.push({
         name,
         code,
-        flagSvg: `${BASE}flags/${code.toLowerCase()}.svg`,
+        flagSvg: FLAG_OVERRIDES[code] ?? `https://flagcdn.com/${code.toLowerCase()}.svg`,
         continent,
         subregion: subregionByCode.get(code),
         population: wbPop.get(code),
@@ -160,8 +176,11 @@ export async function fetchCountries(): Promise<Country[]> {
   for (const item of data) {
     const name = item.name?.common?.trim();
     const code = item.cca2?.trim().toUpperCase();
+    const flagSvg = item.flags?.svg?.trim();
+    const flagPng = item.flags?.png?.trim();
     const region = item.region?.trim() as Continent | undefined;
-    if (!name || !code || !region) continue;
+    const flagUrl = flagSvg || flagPng;
+    if (!name || !code || !flagUrl || !region) continue;
     if (!UN_CONTINENTS.has(region)) continue;
     if (!UN_MEMBER_CODES.has(code)) continue;
     const subregion = item.subregion?.trim() || undefined;
@@ -210,7 +229,7 @@ export async function fetchCountries(): Promise<Country[]> {
       name: finalName,
       nameOfficial: finalNameOfficial,
       code,
-      flagSvg: `${BASE}flags/${code.toLowerCase()}.svg`,
+      flagSvg: FLAG_OVERRIDES[code] ?? flagUrl,
       continent: region,
       subregion,
       capital,
