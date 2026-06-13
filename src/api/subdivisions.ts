@@ -52,10 +52,8 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "GB-PN":  `${BASE}flags/pn.svg`,
   
   // Tibet Autonomous Region — Snow Lion Flag (historical Tibetan flag, unofficial)
-  // Source: Wikimedia Commons (Flag_of_Tibet.svg)
-  // Tibet Snow Lion flag — the only flag still served externally; it isn't in
-  // any GitHub-reachable flag set to bundle from. Loads fine in browsers.
-  "CN-XZ":  "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
+  // Source: github.com/rahul2104/react-country-flag-currency-picker (512×336 SVG)
+  "CN-XZ":  `${BASE}flags/cn-xz.svg`,
 
   // India's claimed territories in Pakistan-administered Kashmir — same flags as the PK entries
   "IN-AK~": subdivisionFlagCdnUrl("PK-JK") ?? "",
