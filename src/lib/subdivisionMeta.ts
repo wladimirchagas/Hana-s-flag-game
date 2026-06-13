@@ -3979,7 +3979,11 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PK-BA", name: "Balochistan", typeLabel: "Province" },
     { code: "PK-PB", name: "Punjab", typeLabel: "Province" },
     { code: "PK-SD", name: "Sindh", typeLabel: "Province" },
-    { code: "PK-IS", name: "Islamabad Capital Territory", typeLabel: "Capital Territory" }
+    { code: "PK-IS", name: "Islamabad Capital Territory", typeLabel: "Capital Territory" },
+    // Administered disputed territories — shown under Pakistan (administers);
+    // also appear under India (claims) as IN-AK~ and IN-GB~ respectively.
+    { code: "PK-JK", name: "Azad Kashmir", typeLabel: "Administered Territory", isDisputed: true },
+    { code: "PK-GB", name: "Gilgit-Baltistan", typeLabel: "Administered Territory", isDisputed: true }
     ],
   },
   "PL": {
@@ -4269,7 +4273,11 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RU-PER", name: "Perm Krai", typeLabel: "Territory" },
     { code: "RU-SAM", name: "Samara", typeLabel: "Region" },
     { code: "RU-STA", name: "Stavropol Krai", typeLabel: "Territory" },
-    { code: "RU-AD", name: "Republic of Adygea", typeLabel: "Republic" }
+    { code: "RU-AD", name: "Republic of Adygea", typeLabel: "Republic" },
+    // Administered disputed territories — shown under Russia (administers);
+    // also appear under Ukraine (internationally recognised claim).
+    { code: "UA-43", name: "Autonomous Republic of Crimea", typeLabel: "Disputed Territory", isDisputed: true },
+    { code: "UA-40", name: "Sevastopol", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "RW": {
