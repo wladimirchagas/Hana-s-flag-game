@@ -7,8 +7,8 @@
  *   public/flags/sources.json        – source manifest consumed by flag-drift-check
  *
  * Sources:
- *   • flagcdn.com  – national and territory flags (default)
- *   • Wikimedia Commons  – overrides where flagcdn.com is outdated/disputed
+ *   • hampusborgos/country-flags (GitHub) – national and territory flags (correct real-world proportions)
+ *   • Wikimedia Commons  – overrides where the GitHub source is outdated/disputed
  *   • amckenna41/iso3166-flags CDN – subdivision flags
  *
  * Historical flags (public/historical-flags/) are managed separately by
@@ -33,6 +33,9 @@ const ROOT      = join(__dirname, "..");
 const FLAGS_DIR = join(ROOT, "public", "flags");
 const SUB_DIR   = join(FLAGS_DIR, "sub");
 
+// Source for national and territory flags — SVGs with correct real-world aspect ratios.
+const GITHUB_FLAGS_BASE = "https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg";
+
 // ---------------------------------------------------------------------------
 // National flag source overrides
 // Entries here replace the flagcdn.com default for that ISO alpha-2 code.
@@ -49,41 +52,41 @@ const NATIONAL_SOURCE_OVERRIDES = {
 // override map (src/api/subdivisions.ts).  Stored alongside national flags.
 // ---------------------------------------------------------------------------
 const TERRITORY_FLAGS = {
-  ai: "https://flagcdn.com/ai.svg",   // Anguilla              (GB-AI)
-  as: "https://flagcdn.com/as.svg",   // American Samoa        (US-AS)
-  ax: "https://flagcdn.com/ax.svg",   // Åland Islands         (FI-AX)
-  bm: "https://flagcdn.com/bm.svg",   // Bermuda               (GB-BM)
-  cc: "https://flagcdn.com/cc.svg",   // Cocos Islands         (AU-CC)
-  ck: "https://flagcdn.com/ck.svg",   // Cook Islands          (NZ-CK)
-  cx: "https://flagcdn.com/cx.svg",   // Christmas Island      (AU-CX)
-  eh: "https://flagcdn.com/eh.svg",   // Western Sahara        (MA-EH~)
-  fk: "https://flagcdn.com/fk.svg",   // Falkland Islands      (GB-FK)
-  fo: "https://flagcdn.com/fo.svg",   // Faroe Islands         (DK-FO)
-  gi: "https://flagcdn.com/gi.svg",   // Gibraltar             (GB-GI, ES-GIB~)
-  gl: "https://flagcdn.com/gl.svg",   // Greenland             (DK-GL)
-  gg: "https://flagcdn.com/gg.svg",   // Guernsey              (GB-GG)
-  gp: "https://flagcdn.com/gp.svg",   // Guadeloupe            (FR-GP)
-  gs: "https://flagcdn.com/gs.svg",   // South Georgia         (GB-GS)
-  gu: "https://flagcdn.com/gu.svg",   // Guam                  (US-GU)
-  im: "https://flagcdn.com/im.svg",   // Isle of Man           (GB-IM)
-  io: "https://flagcdn.com/io.svg",   // British Indian Ocean  (GB-IO)
-  je: "https://flagcdn.com/je.svg",   // Jersey                (GB-JE)
-  ky: "https://flagcdn.com/ky.svg",   // Cayman Islands        (GB-KY)
-  mq: "https://flagcdn.com/mq.svg",   // Martinique            (FR-MQ)
-  ms: "https://flagcdn.com/ms.svg",   // Montserrat            (GB-MS)
-  nc: "https://flagcdn.com/nc.svg",   // New Caledonia         (FR-NC)
-  nf: "https://flagcdn.com/nf.svg",   // Norfolk Island        (AU-NF)
-  nu: "https://flagcdn.com/nu.svg",   // Niue                  (NZ-NU)
-  pf: "https://flagcdn.com/pf.svg",   // French Polynesia      (FR-PF)
-  pn: "https://flagcdn.com/pn.svg",   // Pitcairn Islands      (GB-PN)
-  re: "https://flagcdn.com/re.svg",   // Réunion               (FR-RE)
-  sh: "https://flagcdn.com/sh.svg",   // Saint Helena          (GB-SH)
-  tc: "https://flagcdn.com/tc.svg",   // Turks & Caicos        (GB-TC)
-  tk: "https://flagcdn.com/tk.svg",   // Tokelau               (NZ-TK)
-  tw: "https://flagcdn.com/tw.svg",   // Taiwan                (CN-TW)
-  vg: "https://flagcdn.com/vg.svg",   // British Virgin Islands (GB-VG)
-  vi: "https://flagcdn.com/vi.svg",   // US Virgin Islands     (US-VI)
-  yt: "https://flagcdn.com/yt.svg",   // Mayotte               (FR-YT)
+  ai: `${GITHUB_FLAGS_BASE}/ai.svg`,   // Anguilla              (GB-AI)
+  as: `${GITHUB_FLAGS_BASE}/as.svg`,   // American Samoa        (US-AS)
+  ax: `${GITHUB_FLAGS_BASE}/ax.svg`,   // Åland Islands         (FI-AX)
+  bm: `${GITHUB_FLAGS_BASE}/bm.svg`,   // Bermuda               (GB-BM)
+  cc: `${GITHUB_FLAGS_BASE}/cc.svg`,   // Cocos Islands         (AU-CC)
+  ck: `${GITHUB_FLAGS_BASE}/ck.svg`,   // Cook Islands          (NZ-CK)
+  cx: `${GITHUB_FLAGS_BASE}/cx.svg`,   // Christmas Island      (AU-CX)
+  eh: `${GITHUB_FLAGS_BASE}/eh.svg`,   // Western Sahara        (MA-EH~)
+  fk: `${GITHUB_FLAGS_BASE}/fk.svg`,   // Falkland Islands      (GB-FK)
+  fo: `${GITHUB_FLAGS_BASE}/fo.svg`,   // Faroe Islands         (DK-FO)
+  gi: `${GITHUB_FLAGS_BASE}/gi.svg`,   // Gibraltar             (GB-GI, ES-GIB~)
+  gl: `${GITHUB_FLAGS_BASE}/gl.svg`,   // Greenland             (DK-GL)
+  gg: `${GITHUB_FLAGS_BASE}/gg.svg`,   // Guernsey              (GB-GG)
+  gp: `${GITHUB_FLAGS_BASE}/gp.svg`,   // Guadeloupe            (FR-GP)
+  gs: `${GITHUB_FLAGS_BASE}/gs.svg`,   // South Georgia         (GB-GS)
+  gu: `${GITHUB_FLAGS_BASE}/gu.svg`,   // Guam                  (US-GU)
+  im: `${GITHUB_FLAGS_BASE}/im.svg`,   // Isle of Man           (GB-IM)
+  io: `${GITHUB_FLAGS_BASE}/io.svg`,   // British Indian Ocean  (GB-IO)
+  je: `${GITHUB_FLAGS_BASE}/je.svg`,   // Jersey                (GB-JE)
+  ky: `${GITHUB_FLAGS_BASE}/ky.svg`,   // Cayman Islands        (GB-KY)
+  mq: `${GITHUB_FLAGS_BASE}/mq.svg`,   // Martinique            (FR-MQ)
+  ms: `${GITHUB_FLAGS_BASE}/ms.svg`,   // Montserrat            (GB-MS)
+  nc: `${GITHUB_FLAGS_BASE}/nc.svg`,   // New Caledonia         (FR-NC)
+  nf: `${GITHUB_FLAGS_BASE}/nf.svg`,   // Norfolk Island        (AU-NF)
+  nu: `${GITHUB_FLAGS_BASE}/nu.svg`,   // Niue                  (NZ-NU)
+  pf: `${GITHUB_FLAGS_BASE}/pf.svg`,   // French Polynesia      (FR-PF)
+  pn: `${GITHUB_FLAGS_BASE}/pn.svg`,   // Pitcairn Islands      (GB-PN)
+  re: `${GITHUB_FLAGS_BASE}/re.svg`,   // Réunion               (FR-RE)
+  sh: `${GITHUB_FLAGS_BASE}/sh.svg`,   // Saint Helena          (GB-SH)
+  tc: `${GITHUB_FLAGS_BASE}/tc.svg`,   // Turks & Caicos        (GB-TC)
+  tk: `${GITHUB_FLAGS_BASE}/tk.svg`,   // Tokelau               (NZ-TK)
+  tw: `${GITHUB_FLAGS_BASE}/tw.svg`,   // Taiwan                (CN-TW)
+  vg: `${GITHUB_FLAGS_BASE}/vg.svg`,   // British Virgin Islands (GB-VG)
+  vi: `${GITHUB_FLAGS_BASE}/vi.svg`,   // US Virgin Islands     (US-VI)
+  yt: `${GITHUB_FLAGS_BASE}/yt.svg`,   // Mayotte               (FR-YT)
   // Tibet — Snow Lion Flag (de facto flag of Tibetan government-in-exile)
   "cn-xz": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Tibet.svg",
 };
@@ -583,7 +586,7 @@ async function main() {
   // ---- National + territory flags ----------------------------------------
   if (!subOnly) {
     const nationalEntries = [
-      ...NATIONAL_CODES.map((c) => [c, NATIONAL_SOURCE_OVERRIDES[c] ?? `https://flagcdn.com/${c.toLowerCase()}.svg`]),
+      ...NATIONAL_CODES.map((c) => [c, NATIONAL_SOURCE_OVERRIDES[c] ?? `${GITHUB_FLAGS_BASE}/${c.toLowerCase()}.svg`]),
       ...Object.entries(TERRITORY_FLAGS),
     ];
     for (const [code, src] of nationalEntries) {
