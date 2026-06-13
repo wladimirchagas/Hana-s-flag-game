@@ -31,7 +31,7 @@ export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
 
   // Northern Cyprus under Cyprus — the TRNC flag is shown but is not recognised by Cyprus or the UN.
   // (Also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
-  "CY-NC~": "The flag shown is that of the self-declared Turkish Republic of Northern Cyprus (TRNC). Cyprus and virtually all countries other than Turkey do not recognise the TRNC or its flag; Cyprus regards Northern Cyprus as part of its own sovereign territory.",
+  "CY-NC~": "The flag shown is that of the self-declared Turkish Republic of Northern Cyprus (TRNC). Cyprus and virtually all countries other than Türkiye do not recognise the TRNC or its flag; Cyprus regards Northern Cyprus as part of its own sovereign territory.",
 
   // Western Sahara under Morocco — the Sahrawi flag is shown but Morocco does not recognise it.
   // (Also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
