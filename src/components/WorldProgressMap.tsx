@@ -380,7 +380,7 @@ export function WorldProgressMap({
           
           if (crimeaCoords) {
             (russiaFeature.geometry as any).coordinates = filteredCoords;
-            
+
             // Create a new separate feature for Crimea
             const crimeaFeature: GeoFeature = {
               type: "Feature",
@@ -392,6 +392,37 @@ export function WorldProgressMap({
               }
             };
             fc.features.push(crimeaFeature);
+          }
+        }
+
+        // Clip Morocco (id=504) polygon to exclude Western Sahara territory.
+        // The countries-50m.json topology has Morocco's exterior ring extending
+        // south to ~21.4°N (the Mauritanian border), encompassing all of Western
+        // Sahara territory. This causes Morocco's selected-fill (teal) to visually
+        // cover Western Sahara even though WS is a politically disputed territory
+        // and the game must not imply Moroccan sovereignty over it.
+        // Fix: detect the indices where the ring dips south of the MA-WS border
+        // (~27.65°N) and remove the WS sub-loop, connecting the two border points
+        // directly — leaving only Morocco proper in the polygon.
+        const moroccoFeature = fc.features.find((f) => toIsoAlpha2(f.id) === "MA");
+        if (moroccoFeature?.geometry && (moroccoFeature.geometry as any).type === "Polygon") {
+          const ring = (moroccoFeature.geometry as any).coordinates[0] as [number, number][];
+          const BORDER_LAT = 27.65;
+          let entryIdx = -1;
+          let exitIdx = -1;
+          for (let i = 0; i < ring.length - 1; i++) {
+            const lat = ring[i][1];
+            const nextLat = ring[i + 1][1];
+            if (lat >= BORDER_LAT && nextLat < BORDER_LAT && entryIdx === -1) {
+              entryIdx = i;
+            } else if (lat < BORDER_LAT && nextLat >= BORDER_LAT && entryIdx !== -1) {
+              exitIdx = i + 1;
+              break;
+            }
+          }
+          if (entryIdx !== -1 && exitIdx !== -1 && exitIdx > entryIdx + 1) {
+            const clipped = [...ring.slice(0, entryIdx + 1), ...ring.slice(exitIdx)];
+            (moroccoFeature.geometry as any).coordinates[0] = clipped;
           }
         }
 
