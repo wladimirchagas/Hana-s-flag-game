@@ -1000,7 +1000,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CY-01", name: "Nicosia", typeLabel: "District" },
     { code: "CY-02", name: "Limassol", typeLabel: "District" },
     { code: "CY-05", name: "Paphos", typeLabel: "District" },
-    { code: "CY-06~", name: "Kyrenia", typeLabel: "District", isDisputed: true }
+    { code: "CY-06~", name: "Kyrenia", typeLabel: "District", isDisputed: true },
+    // Northern Cyprus — TRNC declared 1983; recognised only by Türkiye.
+    // Cyprus regards it as occupied territory; TRNC flag shown as unofficial.
+    { code: "CY-NC~", name: "Northern Cyprus", typeLabel: "Claimed Territory", isDisputed: true }
     ],
   },
   "CZ": {
@@ -2774,7 +2777,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MA-10", name: "Doukkala Abda", typeLabel: "Region" },
     { code: "MA-11", name: "Marrakesh-Tensift-El Haouz", typeLabel: "Region" },
     { code: "MA-05", name: "Fès-méknas-boulmane", typeLabel: "Region" },
-    { code: "MA-12", name: "Tadla-Azilal", typeLabel: "Region" }
+    { code: "MA-12", name: "Tadla-Azilal", typeLabel: "Region" },
+    // Western Sahara — administered by Morocco as its "Southern Provinces";
+    // claimed by the SADR/Polisario Front. SADR flag shown as unofficial.
+    { code: "MA-EH~", name: "Western Sahara", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "MD": {
@@ -3749,7 +3755,13 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PK-BA", name: "Balochistan", typeLabel: "Province" },
     { code: "PK-PB", name: "Punjab", typeLabel: "Province" },
     { code: "PK-SD", name: "Sindh", typeLabel: "Province" },
-    { code: "PK-IS", name: "Islamabad Capital Territory", typeLabel: "Capital Territory" }
+    { code: "PK-IS", name: "Islamabad Capital Territory", typeLabel: "Capital Territory" },
+    // Azad Kashmir — administered by Pakistan; claimed by India as part of
+    // Union Territory of Jammu and Kashmir (IN-JK). Both sides have CDN flags.
+    { code: "PK-JK", name: "Azad Jammu and Kashmir", typeLabel: "Territory", isDisputed: true },
+    // Gilgit-Baltistan — administered by Pakistan; claimed by India as part of
+    // Ladakh (IN-LA) and partly by China (Trans-Karakoram Tract). Has CDN flag.
+    { code: "PK-GB", name: "Gilgit-Baltistan", typeLabel: "Territory", isDisputed: true }
     ],
   },
   "PL": {
@@ -3950,7 +3962,11 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RS-13", name: "Pomoravski", typeLabel: "District" },
     { code: "RS-12", name: "Šumadija", typeLabel: "District" },
     { code: "RS-17", name: "Moravica", typeLabel: "District" },
-    { code: "RS-09", name: "Kolubara", typeLabel: "District" }
+    { code: "RS-09", name: "Kolubara", typeLabel: "District" },
+    // Kosovo — declared independence 2008; recognised by ~100 states but not Serbia.
+    // Serbia regards it as its Autonomous Province of Kosovo and Metohija.
+    // Kosovo flag shown as unofficial from Serbia's perspective.
+    { code: "RS-KM~", name: "Kosovo", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "RU": {
@@ -4463,7 +4479,11 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SO-SH", name: "Lower Shebelle", typeLabel: "Region" },
     { code: "SO-BN", name: "Banaadir", typeLabel: "Region" },
     { code: "SO-SD", name: "Middle Shebelle", typeLabel: "Region" },
-    { code: "SO-BY", name: "Bay", typeLabel: "Region" }
+    { code: "SO-BY", name: "Bay", typeLabel: "Region" },
+    // Somaliland — declared independence 1991; not recognised by any UN member.
+    // Somalia claims sovereignty over the whole Somali territory including Somaliland.
+    // Somaliland flag shown as unofficial from Somalia's perspective.
+    { code: "SO-SL~", name: "Somaliland", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "SR": {
