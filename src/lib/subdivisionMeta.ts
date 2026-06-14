@@ -4706,7 +4706,12 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SO-SH", name: "Lower Shebelle", typeLabel: "Region" },
     { code: "SO-BN", name: "Banaadir", typeLabel: "Region" },
     { code: "SO-SD", name: "Middle Shebelle", typeLabel: "Region" },
-    { code: "SO-BY", name: "Bay", typeLabel: "Region" }
+    { code: "SO-BY", name: "Bay", typeLabel: "Region" },
+    // Claimed disputed territory — shown under Somalia (claims it as its northern
+    // regions). The self-declared Republic of Somaliland administers it but is not
+    // a UN member and is unrecognised, so it appears only here. Somalia recognises
+    // no distinct flag for it, so none is shown (same rule as Taiwan/Kosovo).
+    { code: "SO-SL~", name: "Somaliland", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "SR": {
