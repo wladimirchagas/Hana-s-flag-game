@@ -89,6 +89,22 @@ for (const [child, parent] of Object.entries(DISPUTED_TERRITORY_HIERARCHY)) {
 export const DISPUTED_HIERARCHY_CHILDREN_OF: Readonly<Record<string, ReadonlySet<string>>> =
   _reverseHierarchy;
 
+// English short names for countries that have unofficial or disputed-territory flags
+// shown in their subdivision grids. Used to build the "not officially recognised by X" label.
+const COUNTRY_NAME: Record<string, string> = {
+  AR: "Argentina",
+  CN: "China",
+  CY: "Cyprus",
+  ES: "Spain",
+  FR: "France",
+  GE: "Georgia",
+  MA: "Morocco",
+  RS: "Serbia",
+  SO: "Somalia",
+  TR: "Türkiye",
+  UK: "the United Kingdom",
+};
+
 /**
  * Returns the disputed/claimed or unofficial label for a subdivision under a given parent country.
  * If the subdivision is not disputed, returns null.
@@ -100,29 +116,31 @@ export function getSubdivisionDisputeLabel(
 ): { text: string; isUnofficial: boolean } | null {
   const disputedCodes = new Set(Object.keys(DISPUTED_SUBDIV_NOTES));
 
-  // "(unofficial flag)" only makes sense when a flag is ACTUALLY displayed.
+  // This label only makes sense when a flag is ACTUALLY displayed.
   const flagShown = hasSubdivisionFlag(code);
 
-  // Codes in UNOFFICIAL_SUBDIV_NOTES but not in the disputed set show
-  // "unofficial flag" — but only when their (unofficial) flag is actually shown.
+  const parent = parentCountryCode?.toUpperCase();
+  const parentName = (parent && COUNTRY_NAME[parent]) ?? parent ?? "";
+  const unofficialText = parentName
+    ? `Flag not officially recognised by ${parentName}`
+    : "Unofficial flag";
+
+  // Codes in UNOFFICIAL_SUBDIV_NOTES but not in the disputed set show the
+  // "not officially recognised" label — but only when their flag is actually shown.
   if (!disputedCodes.has(code)) {
     if (code in UNOFFICIAL_SUBDIV_NOTES && flagShown) {
-      return { text: "unofficial flag", isUnofficial: true };
+      return { text: unofficialText, isUnofficial: true };
     }
     return null;
   }
 
-  const parent = parentCountryCode?.toUpperCase();
-
   // Flag is "unofficial" when displayed under a claimant that does not officially
-  // recognise the territory's flag. Consistent with the French overseas territories
-  // policy: when the parent has no official flag, show the territory's own flag
-  // labelled "(unofficial flag)".
+  // recognise the territory's flag.
   const isUnofficial =
     flagShown && !!parent && ["CN", "ES", "AR", "CY", "MA", "GE", "RS", "SO"].includes(parent);
 
   if (isUnofficial) {
-    return { text: "unofficial flag", isUnofficial: true };
+    return { text: unofficialText, isUnofficial: true };
   }
 
   // When no flag is shown, the group heading ("DISPUTED TERRITORY") already
