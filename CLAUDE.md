@@ -53,6 +53,17 @@ Known viewBox values for common real-world proportions:
    in `scripts/download-flags.mjs`). Do not replace it with the hampusborgos
    file — that repo carries the pre-2021 Republic flag for `AF`.
 
+6. **HARD RULE — never generate, invent, or approximate flag SVG content.** Every
+   flag must come from an authoritative source (hampusborgos/country-flags, lipis/flag-icons,
+   or Wikimedia Commons). If no accessible source is found:
+   - **Do not** write SVG polygons/paths/shapes that attempt to approximate the flag's appearance.
+   - **Do not** describe a flag's colours and programmatically compute a "close enough" version.
+   - **Do** leave the flag absent (remove or omit the `LOCAL_FLAG_OVERRIDES` entry) and document
+     the missing source in a code comment and in the PR description.
+   - **Do** search harder: try alternate Wikimedia filenames, check the raw GitHub URL, or ask.
+   A subdivision card with no flag is always better than a card showing an invented flag.
+   This rule has been violated before (Tibet 2024, Guadeloupe/Réunion 2026) — do not repeat it.
+
 ### Enforcement
 
 `npm run flags:check` (and the `flag-integrity` CI workflow) fail if any
@@ -144,6 +155,14 @@ This rule applies to:
 Concretely: if adding a flag URL to `LOCAL_FLAG_OVERRIDES` in `src/api/subdivisions.ts`, verify the
 SVG is **not** the parent nation's national flag. If the CDN or local file returns the parent flag,
 find and use the local unofficial alternative.
+
+#### Hard rule — never embed "(unofficial flag)" in a subdivision name
+
+The `name` field in every `SUBDIVISION_META` entry in `src/lib/subdivisionMeta.ts` is the plain
+geographic name only (e.g. `"Guadeloupe"`, not `"Guadeloupe (unofficial flag)"`). The status label
+is rendered separately by `getSubdivisionDisputeLabel()` in `src/lib/disputedSubdivisions.ts`.
+Putting the label in the name causes it to appear twice on the card. Never suffix a name with
+`(unofficial flag)`, `(disputed)`, `(claimed)`, `(unofficial)`, or any similar qualifier.
 
 When browsing a nation's subnational divisions, disputed/claimed territories **are** shown with the
 territory's own flag labelled **"Flag not officially recognised by [Country]"** — the same treatment as

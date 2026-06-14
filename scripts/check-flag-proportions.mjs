@@ -35,8 +35,7 @@ const EXEMPT_UNOFFICIAL_FLAGS = new Set([
   "mq.svg",  // Martinique — unofficial serpent flag; no defined ratio
   "nc.svg",  // New Caledonia — FLNKS/Kanak flag; no defined ratio
   "mf.svg",  // Saint Martin — local collectivity flag; no defined ratio
-  "gp.svg",  // Guadeloupe — unofficial sun flag; no defined ratio
-  "re.svg",  // Réunion — Lö Mahavéli; no defined ratio
+  // gp.svg and re.svg are served via Wikimedia URLs, not local files
 ]);
 
 /** Recursively collect all .svg files under a directory. */
