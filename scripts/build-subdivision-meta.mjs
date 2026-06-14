@@ -40,7 +40,7 @@ const PLURAL_LABEL_OVERRIDES = {
   "ES": "Autonomous Communities & Claimed Territory",
   "FI": "Provinces & Autonomous Region",
   "FR": "Departments & Overseas Territories",
-  "GB": "Divisions, Crown Dependencies & Disputed Territories",
+  "GB": "Countries, Crown Dependencies & Territories",
   "NL": "Provinces & Special Territories",
   "NO": "Counties & Dependencies",
   "NZ": "Regional Councils, Associated States & Territories",
