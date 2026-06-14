@@ -66,19 +66,26 @@ or more nations **must** render in `palette.disputedLand` (a neutral grey), neve
 `land`/`poolLand` colour. Painting a contested territory as ordinary sovereign land would imply
 a political position the game must not take.
 
-This is enforced by `WORLD_MAP_DISPUTED_ALPHA2` in `src/components/WorldProgressMap.tsx`, which
-lists the disputed territories that appear as their own standalone polygon (Crimea is matched
-separately by its runtime id `DISPUTED_CRIMEA`):
+This is enforced in `src/components/WorldProgressMap.tsx` by two sets plus the Crimea id.
+Territories that carry an ISO alpha-2 code in the topology are matched by code
+(`WORLD_MAP_DISPUTED_ALPHA2`); territories that have **no** code are matched by their Natural
+Earth feature name (`WORLD_MAP_DISPUTED_NAMES`), because without this they fall through to the
+neutral `unknown` colour rather than `disputedLand`:
 
-| Code | Territory | Status |
-|------|-----------|--------|
-| `EH` | Western Sahara | Claimed/administered by Morocco; SADR/Polisario dispute it |
-| `TW` | Taiwan | Governed by the ROC; claimed by the PRC; not a UN member |
-| `DISPUTED_CRIMEA` | Crimea | Administered by Russia; claimed by Ukraine |
+| Match key | Territory | Status |
+|-----------|-----------|--------|
+| `EH` (code) | Western Sahara | Claimed/administered by Morocco; SADR/Polisario dispute it |
+| `TW` (code) | Taiwan | Governed by the ROC; claimed by the PRC; not a UN member |
+| `DISPUTED_CRIMEA` (id) | Crimea | Administered by Russia; claimed by Ukraine |
+| `Kosovo` (name) | Kosovo | Declared independence 2008; claimed by Serbia; not a UN member |
+| `Somaliland` (name) | Somaliland | Self-declared 1991; claimed by Somalia; unrecognised |
+| `N. Cyprus` (name) | Northern Cyprus | TRNC; claimed by the Republic of Cyprus; recognised only by Türkiye |
+| `Siachen Glacier` (name) | Siachen Glacier | Disputed between India and Pakistan |
 
-**Any** future contested non-UN landmass that renders as its own polygon must be added to
-`WORLD_MAP_DISPUTED_ALPHA2` (or matched by id) and to this table. Do not give a disputed
-landmass the regular country colour.
+`Indian Ocean Ter.` is deliberately excluded — it is undisputed Australian territory, not claimed
+by another nation. **Any** future contested non-UN landmass that renders as its own polygon must
+be added to the matching set and to this table. Do not give a disputed landmass the regular
+country colour.
 
 ### Nation subnational view — flag grid
 
