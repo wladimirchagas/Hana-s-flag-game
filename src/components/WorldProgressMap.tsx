@@ -1,5 +1,5 @@
 import { memo, useEffect, useMemo, useRef, useState } from "react";
-import { geoEqualEarth, geoPath, geoCentroid } from "d3-geo";
+import { geoEqualEarth, geoPath, geoCentroid, geoArea } from "d3-geo";
 import { feature } from "topojson-client";
 import polygonClipping from "polygon-clipping";
 import countries from "i18n-iso-countries";
@@ -433,13 +433,22 @@ export function WorldProgressMap({
             const CLIP_LAT = 27.657;
             const northBox: [number,number][] = [[-20, CLIP_LAT],[0, CLIP_LAT],[0, 90],[-20, 90],[-20, CLIP_LAT]];
             const southBox: [number,number][] = [[-20, -90],[0, -90],[0, CLIP_LAT],[-20, CLIP_LAT],[-20, -90]];
+            // polygon-clipping winds rings opposite to the GeoJSON/d3-geo
+            // convention. d3's spherical geoPath treats a backwards-wound ring
+            // as "everything OUTSIDE this ring", filling the whole globe minus
+            // a tiny hole. Detect that (area > a hemisphere) and reverse every
+            // ring so the polygon fills its small interior, not the planet.
+            const fixWinding = (poly: [number,number][][]): [number,number][][] =>
+              geoArea({ type: "Polygon", coordinates: poly } as never) > 2 * Math.PI
+                ? poly.map((ring) => ring.slice().reverse())
+                : poly;
             try {
               const maProper   = polygonClipping.intersection([maRings], [[northBox]]);
               const maSouthern = polygonClipping.intersection([maRings], [[southBox]]);
               const fullWS     = polygonClipping.union([ehRings], maSouthern);
               if (maProper.length > 0 && fullWS.length > 0) {
-                (maFeat.geometry as {coordinates:unknown}).coordinates = maProper[0];
-                (ehFeat.geometry as {coordinates:unknown}).coordinates = fullWS[0];
+                (maFeat.geometry as {coordinates:unknown}).coordinates = fixWinding(maProper[0] as [number,number][][]);
+                (ehFeat.geometry as {coordinates:unknown}).coordinates = fixWinding(fullWS[0] as [number,number][][]);
               }
             } catch {
               // Leave original geometries intact if surgery fails
