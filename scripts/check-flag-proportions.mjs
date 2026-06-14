@@ -32,10 +32,12 @@ const FORBIDDEN_VIEWBOXES = new Set([
 // (they are local/unofficial designs), so a 4:3 source is acceptable.
 // Source for all entries below: lipis/flag-icons (GitHub), kept as-is.
 const EXEMPT_UNOFFICIAL_FLAGS = new Set([
-  "mq.svg",  // Martinique — unofficial serpent flag; no defined ratio
-  "nc.svg",  // New Caledonia — FLNKS/Kanak flag; no defined ratio
-  "mf.svg",  // Saint Martin — local collectivity flag; no defined ratio
-  // gp.svg and re.svg are served via Wikimedia URLs, not local files
+  "mq.svg",     // Martinique — unofficial serpent flag; no defined ratio
+  "nc.svg",     // New Caledonia — FLNKS/Kanak flag; no defined ratio
+  "mf.svg",     // Saint Martin — local collectivity flag; no defined ratio
+  "GB-NIR.svg", // Ulster Banner — Northern Ireland has no official flag; banner has no
+                // mandated proportions. Source: lipis/flag-icons (via git history).
+                // Wikimedia URL was unreachable; this local copy is used instead.
 ]);
 
 /** Recursively collect all .svg files under a directory. */
