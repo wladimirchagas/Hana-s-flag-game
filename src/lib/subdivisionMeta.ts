@@ -213,9 +213,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AU-TAS", name: "Tasmania", typeLabel: "State" },
     { code: "AU-NSW", name: "Lord Howe Island", typeLabel: "Territory" },
     { code: "AU-ACT", name: "Australian Capital Territory", typeLabel: "Territory" },
-    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "Territory" },
-    { code: "AU-CX", name: "Christmas Island", typeLabel: "Territory" },
-    { code: "AU-NF", name: "Norfolk Island", typeLabel: "Territory" }
+    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "External Territory" },
+    { code: "AU-CX", name: "Christmas Island", typeLabel: "External Territory" },
+    { code: "AU-NF", name: "Norfolk Island", typeLabel: "External Territory" }
     ],
   },
   "AZ": {
@@ -1353,7 +1353,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "FI": {
     countryCode: "FI",
-    pluralLabel: "Provinces & Autonomous Region",
+    pluralLabel: "Provinces & Autonomous Territory",
     divisions: [
     { code: "FI-10", name: "Lapland", typeLabel: "Province" },
     { code: "FI-14", name: "Northern Ostrobothnia", typeLabel: "Province" },
@@ -1373,7 +1373,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FI-11", name: "Pirkanmaa", typeLabel: "Region" },
     { code: "FI-06", name: "Tavastia Proper", typeLabel: "Region" },
     { code: "FI-16", name: "Päijänne Tavastia", typeLabel: "Province" },
-    { code: "FI-AX", name: "Åland Islands", typeLabel: "Autonomous Region" }
+    { code: "FI-AX", name: "Åland Islands", typeLabel: "Autonomous Territory" }
     ],
   },
   "FJ": {
@@ -1401,7 +1401,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "FR",
     pluralLabel: "Departments & Overseas Territories",
     divisions: [
-    { code: "FR-GF", name: "French Guiana", typeLabel: "Overseas department" },
+    { code: "FR-GF", name: "French Guiana (unofficial flag)", typeLabel: "Overseas department" },
     { code: "FR-59", name: "Nord", typeLabel: "Metropolitan department" },
     { code: "FR-08", name: "Ardennes", typeLabel: "Metropolitan department" },
     { code: "FR-02", name: "Aisne", typeLabel: "Metropolitan department" },
@@ -1445,9 +1445,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FR-80", name: "Somme", typeLabel: "Metropolitan department" },
     { code: "FR-62", name: "Pas-de-Calais", typeLabel: "Metropolitan department" },
     { code: "FR-MQ", name: "Martinique", typeLabel: "Overseas department" },
-    { code: "FR-GP", name: "Guadeloupe", typeLabel: "Overseas department" },
-    { code: "FR-RE", name: "Réunion", typeLabel: "Overseas department" },
-    { code: "FR-YT", name: "Mayotte", typeLabel: "Overseas department" },
+    { code: "FR-GP", name: "Guadeloupe (unofficial flag)", typeLabel: "Overseas department" },
+    { code: "FR-RE", name: "Réunion (unofficial flag)", typeLabel: "Overseas department" },
+    { code: "FR-YT", name: "Mayotte (unofficial flag)", typeLabel: "Overseas department" },
     { code: "FR-2B", name: "Haute-Corse", typeLabel: "Metropolitan department" },
     { code: "FR-2A", name: "Corse-du-Sud", typeLabel: "Metropolitan department" },
     { code: "FR-32", name: "Gers", typeLabel: "Metropolitan department" },
@@ -3500,7 +3500,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
   },
   "NZ": {
     countryCode: "NZ",
-    pluralLabel: "Regional Councils, Associated States & Territories",
+    pluralLabel: "Regional Councils, Associated States & External Territories",
     divisions: [
     { code: "NZ-CIT", name: "Chatham Islands", typeLabel: "Special Island Authority" },
     { code: "NZ-STL", name: "Southland", typeLabel: "Regional Council" },
@@ -3521,7 +3521,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "NZ-HKB", name: "Hawke's Bay", typeLabel: "Regional Council" },
     { code: "NZ-CK", name: "Cook Islands", typeLabel: "Associated State" },
     { code: "NZ-NU", name: "Niue", typeLabel: "Associated State" },
-    { code: "NZ-TK", name: "Tokelau", typeLabel: "Territory" }
+    { code: "NZ-TK", name: "Tokelau", typeLabel: "External Territory" }
     ],
   },
   "OM": {
@@ -5158,11 +5158,11 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "US-TN", name: "Tennessee", typeLabel: "State" },
     { code: "US-WV", name: "West Virginia", typeLabel: "State" },
     { code: "US-IN", name: "Indiana", typeLabel: "State" },
-    { code: "US-PR", name: "Puerto Rico", typeLabel: "Territory" },
-    { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Territory" },
-    { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Territory" },
-    { code: "US-AS", name: "American Samoa", typeLabel: "Territory" },
-    { code: "US-GU", name: "Guam", typeLabel: "Territory" }
+    { code: "US-PR", name: "Puerto Rico", typeLabel: "Unincorporated Territory" },
+    { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Unincorporated Territory" },
+    { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Unincorporated Territory" },
+    { code: "US-AS", name: "American Samoa", typeLabel: "Unincorporated Territory" },
+    { code: "US-GU", name: "Guam", typeLabel: "Unincorporated Territory" }
     ],
   },
   "UY": {

@@ -20,6 +20,8 @@ function pluralize(type) {
   // Special cases
   if (t === 'Land') return 'Länder';
   if (t === 'Territory') return 'Territories';
+  if (t === 'External Territory') return 'External Territories';
+  if (t === 'Unincorporated Territory') return 'Unincorporated Territories';
   if (t === 'County') return 'Counties';
   if (t === 'City') return 'Cities';
   if (t === 'Dependency') return 'Dependencies';
@@ -38,12 +40,12 @@ const PLURAL_LABEL_OVERRIDES = {
   "CN": "Provinces & Special Territories",
   "DK": "Regions & Autonomous Territories",
   "ES": "Autonomous Communities & Claimed Territory",
-  "FI": "Provinces & Autonomous Region",
+  "FI": "Provinces & Autonomous Territory",
   "FR": "Departments & Overseas Territories",
   "GB": "Countries, Crown Dependencies & Territories",
   "NL": "Provinces & Special Territories",
   "NO": "Counties & Dependencies",
-  "NZ": "Regional Councils, Associated States & Territories",
+  "NZ": "Regional Councils, Associated States & External Territories",
   "US": "States & Territories"
 };
 
@@ -115,11 +117,11 @@ const TERRITORIES_TO_APPEND = {
     { code: "GB-PN", name: "Pitcairn Islands", typeLabel: "Overseas Territory" }
   ],
   "US": [
-    { code: "US-PR", name: "Puerto Rico", typeLabel: "Territory" },
-    { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Territory" },
-    { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Territory" },
-    { code: "US-AS", name: "American Samoa", typeLabel: "Territory" },
-    { code: "US-GU", name: "Guam", typeLabel: "Territory" }
+    { code: "US-PR", name: "Puerto Rico", typeLabel: "Unincorporated Territory" },
+    { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Unincorporated Territory" },
+    { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Unincorporated Territory" },
+    { code: "US-AS", name: "American Samoa", typeLabel: "Unincorporated Territory" },
+    { code: "US-GU", name: "Guam", typeLabel: "Unincorporated Territory" }
   ],
   "FR": [
     { code: "FR-BL", name: "Saint Barthélemy", typeLabel: "Overseas Collectivity" },
@@ -132,15 +134,15 @@ const TERRITORIES_TO_APPEND = {
   "NZ": [
     { code: "NZ-CK", name: "Cook Islands", typeLabel: "Associated State" },
     { code: "NZ-NU", name: "Niue", typeLabel: "Associated State" },
-    { code: "NZ-TK", name: "Tokelau", typeLabel: "Territory" }
+    { code: "NZ-TK", name: "Tokelau", typeLabel: "External Territory" }
   ],
   "FI": [
-    { code: "FI-AX", name: "Åland Islands", typeLabel: "Autonomous Region" }
+    { code: "FI-AX", name: "Åland Islands", typeLabel: "Autonomous Territory" }
   ],
   "AU": [
-    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "Territory" },
-    { code: "AU-CX", name: "Christmas Island", typeLabel: "Territory" },
-    { code: "AU-NF", name: "Norfolk Island", typeLabel: "Territory" }
+    { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "External Territory" },
+    { code: "AU-CX", name: "Christmas Island", typeLabel: "External Territory" },
+    { code: "AU-NF", name: "Norfolk Island", typeLabel: "External Territory" }
   ],
   "AR": [
     { code: "AR-ML~", name: "Malvinas Islands", typeLabel: "Claimed Territory" }
