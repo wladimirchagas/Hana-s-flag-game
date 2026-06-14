@@ -122,7 +122,13 @@ export function getSubdivisionDisputeLabel(
     return { text: "unofficial flag", isUnofficial: true };
   }
 
-  // Otherwise, format label based on typeLabel
+  // When no flag is shown, the group heading ("DISPUTED TERRITORY") already
+  // communicates the status — a redundant per-card label adds nothing.
+  if (!flagShown) {
+    return null;
+  }
+
+  // Flag is shown and not unofficial — label by type so the card notes the status.
   let text = "disputed territory";
   const type = typeLabel.toLowerCase();
   if (type.includes("claimed")) {
