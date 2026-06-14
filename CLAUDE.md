@@ -1,5 +1,34 @@
 # Hana's Flag Game — development guide
 
+## Mandatory visual verification before every push — hard rule, do not override without approval
+
+**Every task that touches flags, maps, or any other visible UI must be verified in the running app
+before the branch is pushed and the PR is created.** Skipping this step is what caused Northern
+Ireland to ship with the Union Jack (PR #284/286 — the parent nation's flag was served by the
+authoritative source for `gb-nir`, which is a violation of the subdivision flag rule).
+
+### What to verify
+
+| Change type | What to check in the running app |
+|-------------|----------------------------------|
+| Any flag added or changed | Open every affected subdivision or country card; confirm the correct flag image is displayed, NOT the parent nation's flag |
+| Any subdivision removed/replaced | Open the parent country's flag grid; confirm the grid shows the correct divisions and none are blank or duplicated |
+| Any GeoJSON replaced | Open the parent country's subdivision map; confirm the map renders mainland regions visibly (not blank/zoomed-out) |
+| Any territory added/removed | Open the parent country's flag grid and map; confirm tier ordering (primary → external → disputed) is correct |
+
+### Mandatory checklist — complete before every push
+
+1. `npm run dev` — start the dev server
+2. Navigate to the affected country/subdivision page in a browser
+3. Visually confirm every affected flag shows the **correct** image
+4. Confirm **no subdivision displays the parent nation's flag** (this is always wrong)
+5. Confirm the **subdivision map renders** (is not blank)
+6. Confirm **flag labels** are correct: `(unofficial flag)` where expected, absent where not
+7. Run `npm run flags:check` — it must pass
+
+**There are no exceptions to this checklist.** If the dev server is not available in the current
+environment, explicitly state that in the PR description and do not mark the task as complete.
+
 ## Flag aspect ratios — hard rule, do not override without approval
 
 **This rule applies to every flag in the repository** — national flags, territory
