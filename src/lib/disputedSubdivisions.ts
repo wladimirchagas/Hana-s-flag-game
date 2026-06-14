@@ -17,7 +17,7 @@ export const DISPUTED_SUBDIV_NOTES: Record<string, string> = {
   "CN-TW": "Taiwan has been governed by the Republic of China (ROC) since 1949, when the ROC government retreated to the island following the Chinese Civil War. The People's Republic of China (PRC) claims Taiwan as a province and considers itself the sole legitimate government of China. Taiwan is not a UN member state; the PRC holds China's seat in the United Nations. The flag shown is the ROC national flag used by Taiwan's government.",
 
   // Abkhazia — de facto independent; Georgia claims it; Russia backs independence.
-  "GE-AB": "Abkhazia has operated as a de facto independent state since the 1992–1993 war with Georgia. It is recognised as independent by only a handful of countries (Russia, Nicaragua, Venezuela, Nauru, and Syria); Georgia and most of the international community regard it as Georgian territory under occupation. It appears here under Georgia, which holds the internationally recognised claim.",
+  "GE-AB": "Abkhazia has operated as a de facto independent state since the 1992–1993 war with Georgia. It is recognised as independent by only a handful of countries (Russia, Nicaragua, Venezuela, Nauru, and Syria); Georgia and most of the international community regard it as Georgian territory under occupation. It appears here under Georgia, which holds the internationally recognised claim. The flag shown is the Republic of Abkhazia's own flag; Georgia does not officially recognise it.",
 
   // Crimea & Sevastopol — Ukrainian ISO codes placed under Russia in the source data.
   // Shown under both Russia (administers) and Ukraine (internationally recognised claim).
@@ -33,11 +33,17 @@ export const DISPUTED_SUBDIV_NOTES: Record<string, string> = {
 
   // Western Sahara — Morocco administers; SADR/Polisario Front claims sovereignty.
   // SADR is not a UN member state; the UN lists Western Sahara as a Non-Self-Governing Territory.
-  "MA-EH~": "Western Sahara is listed by the United Nations as a Non-Self-Governing Territory. Morocco administers approximately 80% of the territory and considers it its 'Southern Provinces'. The Sahrawi Arab Democratic Republic (SADR), backed by the Polisario Front and recognised by around 40 countries, claims the whole territory. A UN-mandated referendum on self-determination has been repeatedly postponed since 1991. Because SADR is not a UN member state, Western Sahara is shown only under Morocco here.",
+  "MA-EH~": "Western Sahara is listed by the United Nations as a Non-Self-Governing Territory. Morocco administers approximately 80% of the territory and considers it its 'Southern Provinces'. The Sahrawi Arab Democratic Republic (SADR), backed by the Polisario Front and recognised by around 40 countries, claims the whole territory. A UN-mandated referendum on self-determination has been repeatedly postponed since 1991. Because SADR is not a UN member state, Western Sahara is shown only under Morocco here. The flag shown is the SADR national flag; Morocco does not officially recognise it.",
 
   // Northern Cyprus — Türkiye administers; Cyprus and the international community do not recognise TRNC.
   "TR-NC~": "The Turkish Republic of Northern Cyprus (TRNC) was proclaimed in 1983 following Türkiye's 1974 military intervention on the island. It is recognised only by Türkiye; the United Nations, Cyprus, and the rest of the international community regard the territory as part of the Republic of Cyprus under illegal occupation. It is shown here under Türkiye (which administers and recognises it) and under Cyprus (which holds the internationally recognised claim to the whole island).",
-  "CY-NC~": "Northern Cyprus has been administered by Türkiye and the self-declared Turkish Republic of Northern Cyprus (TRNC) since Türkiye's 1974 military intervention. The United Nations regards the continued presence of Turkish forces as unlawful (UNSC Resolution 541). Cyprus and virtually all countries other than Türkiye consider Northern Cyprus to be part of the Republic of Cyprus. It is shown here under both Türkiye (which administers it) and Cyprus (which holds the internationally recognised claim).",
+  "CY-NC~": "Northern Cyprus has been administered by Türkiye and the self-declared Turkish Republic of Northern Cyprus (TRNC) since Türkiye's 1974 military intervention. The United Nations regards the continued presence of Turkish forces as unlawful (UNSC Resolution 541). Cyprus and virtually all countries other than Türkiye consider Northern Cyprus to be part of the Republic of Cyprus. It is shown here under both Türkiye (which administers it) and Cyprus (which holds the internationally recognised claim). The flag shown is the TRNC flag; the Republic of Cyprus does not officially recognise it.",
+
+  // Kosovo — declared independence from Serbia in 2008; not a UN member state.
+  "RS-KM~": "Kosovo declared independence from Serbia in 2008 and is recognised by approximately 100 countries, including the United States and most EU members. Serbia, Russia, China, and others do not recognise it, and Serbia regards the territory as its Autonomous Province of Kosovo and Metohija. Kosovo is not a UN member state; a Security Council resolution on membership has been blocked by Russia and China. It is shown here under Serbia (which claims it). The flag shown is Kosovo's official flag; Serbia does not recognise it.",
+
+  // Somaliland — declared independence from Somalia in 1991; not recognised by any UN member.
+  "SO-SL~": "Somaliland declared independence from Somalia in 1991, claiming the territory of the former British Somaliland Protectorate. It operates as a de facto independent state with its own government, military, currency, and democratic elections, but is not recognised by any UN member state. Somalia claims sovereignty over the whole Somali territory, including Somaliland. It is shown here under Somalia (which claims it). The flag shown is the flag of the Republic of Somaliland; Somalia does not recognise it.",
 };
 
 /**
@@ -94,10 +100,7 @@ export function getSubdivisionDisputeLabel(
 ): { text: string; isUnofficial: boolean } | null {
   const disputedCodes = new Set(Object.keys(DISPUTED_SUBDIV_NOTES));
 
-  // "unofficial flag" only makes sense when a flag is ACTUALLY displayed. After
-  // the disputed-territory neutrality refactor, most claimed entries (CN-TW,
-  // MA-EH~, CY-NC~, ES-GIB~, AR-ML~, GE-AB) show NO flag — so they must never be
-  // captioned "unofficial flag", which would describe a flag that isn't there.
+  // "(unofficial flag)" only makes sense when a flag is ACTUALLY displayed.
   const flagShown = hasSubdivisionFlag(code);
 
   // Codes in UNOFFICIAL_SUBDIV_NOTES but not in the disputed set show
@@ -111,12 +114,12 @@ export function getSubdivisionDisputeLabel(
 
   const parent = parentCountryCode?.toUpperCase();
 
-  // Flag is "unofficial" only when a claimant-unrecognised flag is actually
-  // displayed under that claimant. CN claims TW, ES claims GI, AR claims FK/ML,
-  // CY claims Northern Cyprus, MA claims Western Sahara, GE shows the Abkhazia
-  // flag. When no flag is shown, fall through to the neutral disputed/claimed label.
+  // Flag is "unofficial" when displayed under a claimant that does not officially
+  // recognise the territory's flag. Consistent with the French overseas territories
+  // policy: when the parent has no official flag, show the territory's own flag
+  // labelled "(unofficial flag)".
   const isUnofficial =
-    flagShown && !!parent && ["CN", "ES", "AR", "CY", "MA", "GE"].includes(parent);
+    flagShown && !!parent && ["CN", "ES", "AR", "CY", "MA", "GE", "RS", "SO"].includes(parent);
 
   if (isUnofficial) {
     return { text: "unofficial flag", isUnofficial: true };

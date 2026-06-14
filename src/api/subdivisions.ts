@@ -9,17 +9,30 @@ const BASE = import.meta.env.BASE_URL;
 // supply flags for territory subdivisions not in the subdivision CDN.
 //
 // DISPUTED-TERRITORY RULE (see CLAUDE.md):
-//   Only add a flag URL for a disputed/claimed entry when the parent nation
-//   officially recognises a distinct flag for that territory.
-//   If it does not recognise the flag, omit the entry entirely so the flag
-//   falls back to `—` (no CDN entry exists for ~ codes).
+//   When the parent nation has no official flag for a disputed/claimed territory,
+//   show the territory's own flag as "(unofficial flag)" — same treatment as
+//   France's overseas territories (Réunion, Mayotte, etc.) which lack a distinct
+//   official flag and show their local/unofficial flags instead.
 //   For standard ISO codes whose CDN flag must be actively suppressed, see
 //   SUPPRESSED_SUBDIVISION_FLAGS below.
 const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // CDN source has a spurious red horizontal stripe; corrected locally.
   "BR-RR": `${BASE}flags/BR-RR.svg`,
-  // CN-TW (Taiwan under China) — intentionally has NO override.
-  // The PRC does not recognise the ROC flag; no CDN fallback exists for CN-TW.
+
+  // ── Disputed / claimed territories — unofficial flags ───────────────────────
+  // The claiming nation has no official flag for these territories; we show the
+  // territory's own flag labelled "(unofficial flag)" — consistent with how
+  // French overseas departments (Réunion, Mayotte, etc.) are handled.
+  "CN-TW":  `${BASE}flags/tw.svg`,    // Taiwan ROC flag; PRC does not recognise it
+  "MA-EH~": `${BASE}flags/eh.svg`,    // SADR flag; Morocco does not recognise it
+  "RS-KM~": `${BASE}flags/xk.svg`,    // Kosovo flag; Serbia does not recognise it
+  "SO-SL~": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Somaliland.svg",
+  "CY-NC~": `${BASE}flags/trnc.svg`,  // TRNC flag; Republic of Cyprus does not recognise it
+  // GE-AB (Abkhazia under Georgia) — CDN serves the Abkhazia flag; un-suppressed
+  // below so it renders as "(unofficial flag)" under Georgia.
+  // ES-GIB~ and AR-ML~ — hidden from Spain's/Argentina's grid via hierarchy; no flag needed.
+  // IN-AK~ and IN-GB~ — hidden from India's grid via hierarchy; no flag needed.
+
   // Territory flags — bundled locally in public/flags/; the subdivision index
   // doesn't cover these national-level dependency codes.
   "DK-GL":  `${BASE}flags/gl.svg`,
@@ -38,11 +51,7 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // ES-GIB~ (Gibraltar under Spain) — intentionally has NO override.
   // Spain does not recognise a distinct flag for the territory (it claims Gibraltar
   // as part of Cádiz). Also hidden from Spain's grid via DISPUTED_TERRITORY_HIERARCHY.
-  "TR-NC~":  `${BASE}flags/trnc.svg`,
-  // CY-NC~ (Northern Cyprus under Cyprus) — intentionally has NO flag override.
-  // MA-EH~ (Western Sahara under Morocco) — same reason.
-  // IN-AK~, IN-GB~ (India's Kashmir claims) — same reason.
-  // See CLAUDE.md "Disputed territory neutrality" for the full policy.
+  "TR-NC~":  `${BASE}flags/trnc.svg`,  // Turkey recognises TRNC — not "unofficial" from Turkey's view
 
   // Newly added populated territories
   "AU-CX":  `${BASE}flags/cx.svg`,
@@ -66,10 +75,7 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // Source: github.com/rahul2104/react-country-flag-currency-picker (512×336 SVG)
   "CN-XZ":  `${BASE}flags/cn-xz.svg`,
 
-  // IN-AK~ and IN-GB~ (India's Kashmir claims) — intentionally have NO flag override.
-  // India does not recognise any distinct flag for Pakistan-administered Azad Kashmir or
-  // Gilgit-Baltistan; these entries are also hidden from India's grid via the hierarchy
-  // rule (IN-AK~ → IN-JK, IN-GB~ → IN-LA in DISPUTED_TERRITORY_HIERARCHY).
+  // IN-AK~ and IN-GB~ — hidden from India's grid via hierarchy; no flag override needed.
 
   // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // Local file — unofficial regional flag (green/yellow diagonal with red star)
@@ -93,18 +99,11 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FR-WF":  "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg",
 };
 
-// Subdivision codes whose CDN flag must be actively suppressed because the
-// administering/claiming nation does not recognise the flag the CDN provides.
-// Unlike ~ codes (which have no CDN entry), these are standard ISO 3166-2 codes
-// that exist in the CDN index and would otherwise be shown.
-//
-// DISPUTED-TERRITORY RULE: only suppress here when the parent nation does NOT
-// recognise the displayed flag. See CLAUDE.md "Disputed territory neutrality".
-const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
-  // Abkhazia under Georgia — the CDN serves the Republic of Abkhazia flag, which
-  // Georgia does not recognise. Georgia has no separately designated regional flag.
-  "GE-AB",
-]);
+// Subdivision codes whose CDN flag must be actively suppressed.
+// Under the current policy, no codes are suppressed — disputed territories now
+// show their own flag as "(unofficial flag)" rather than hiding it entirely.
+// Keep this set in place for future overrides if needed.
+const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([]);
 
 // Cache so we only fetch each country once per session.
 const cache = new Map<string, SubdivisionFeatureCollection | null>();
