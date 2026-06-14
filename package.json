@@ -14,7 +14,8 @@
     "anthems:sync-captions": "node scripts/sync-youtube-captions.mjs",
     "anthems:apply-calibration": "node scripts/apply-calibration.mjs",
     "flags:check": "node scripts/check-flag-proportions.mjs",
-    "flags:download": "node scripts/download-flags.mjs"
+    "flags:download": "node scripts/download-flags.mjs",
+    "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

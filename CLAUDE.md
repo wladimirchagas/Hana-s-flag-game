@@ -1,5 +1,48 @@
 # Hana's Flag Game — development guide
 
+## All flag files must be bundled in the repository — hard rule, do not override without approval
+
+**Every flag image used by the game must be committed to the repository as a local file.**
+External runtime URLs (Wikimedia Commons, CDNs, any third-party host) are **forbidden** in
+`LOCAL_FLAG_OVERRIDES`. Network availability, URL stability, and CORS policy are all outside
+our control — a remote URL that works today may be blocked, moved, or rate-limited tomorrow.
+
+### Where to store flag files
+
+| Flag type | Local path |
+|-----------|-----------|
+| National / territory flags | `public/flags/{code}.svg` (e.g. `public/flags/fo.svg`) |
+| Subdivision flags (unofficial, e.g. Ulster Banner) | `public/flags/sub/{CC}/{CC-code}.svg` (e.g. `public/flags/sub/GB/GB-NIR.svg`) |
+
+### How to add a new flag
+
+1. Download the SVG from an authoritative source (see **Flag aspect ratios** section)
+2. Verify the `viewBox` is a real-world ratio (not `0 0 640 480` or `0 0 512 512`)
+3. Commit the file to the correct path above
+4. In `LOCAL_FLAG_OVERRIDES`, use `` `${BASE}flags/...` `` — never a raw `https://` URL
+
+### Outstanding files (currently still using Wikimedia URLs — must be fixed)
+
+The following 8 entries in `LOCAL_FLAG_OVERRIDES` still use remote URLs because Wikimedia is
+blocked by the current server network policy. They must be downloaded and bundled before the
+next release. Use `node scripts/download-unofficial-flags.mjs` once network egress to
+`upload.wikimedia.org` is enabled.
+
+| Code | Local target | Wikimedia source |
+|------|-------------|-----------------|
+| `GB-NIR` | `public/flags/sub/GB/GB-NIR.svg` | `commons/d/d0/Ulster_Banner.svg` |
+| `SO-SL~` | `public/flags/so-sl.svg` | `commons/4/4d/Flag_of_Somaliland.svg` |
+| `FR-GP` | `public/flags/gp.svg` | `commons/0/04/Flag_of_Guadeloupe_(local).svg` |
+| `FR-RE` | `public/flags/re.svg` | `commons/c/c3/Flag_of_Réunion_(Lö_Mahavéli).svg` |
+| `FR-YT` | `public/flags/yt-local.svg` | `commons/4/4a/Flag_of_Mayotte_(local).svg` |
+| `FR-BL` | `public/flags/bl.svg` | `commons/b/b4/Flag_of_Saint_Barthélemy_(local).svg` |
+| `FR-PM` | `public/flags/pm.svg` | `commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg` |
+| `FR-WF` | `public/flags/wf.svg` | `commons/d/d2/Flag_of_Wallis_and_Futuna.svg` |
+
+**Enforcement:** `LOCAL_FLAG_OVERRIDES` must never contain a string that starts with `https://`
+or `http://`. When reviewing any PR that modifies `src/api/subdivisions.ts`, check that every
+value in `LOCAL_FLAG_OVERRIDES` uses the `` `${BASE}flags/...` `` template literal pattern.
+
 ## Mandatory visual verification before every push — hard rule, do not override without approval
 
 **Every task that touches flags, maps, or any other visible UI must be verified in the running app
