@@ -89,8 +89,8 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
   "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
   "FR-MF":  `${BASE}flags/mf.svg`,    // Saint Martin local flag (lipis/flag-icons)
-  "FR-GP":  "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg",
-  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_R%C3%A9union_(Lo_Mahav%C3%A9li).svg",
+  "FR-GP":  `${BASE}flags/gp.svg`,    // Guadeloupe sun flag (local SVG — Wikimedia URL was unreliable)
+  "FR-RE":  `${BASE}flags/re.svg`,    // Réunion Lö Mahavéli (local SVG — Wikimedia URL was unreliable)
   "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
   "FR-BL":  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Saint_Barth%C3%A9lemy_(local).svg",
   "FR-PM":  "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg",
