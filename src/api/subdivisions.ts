@@ -28,6 +28,12 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "RS-KM~": `${BASE}flags/xk.svg`,    // Kosovo flag; Serbia does not recognise it
   "SO-SL~": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Somaliland.svg",
   "CY-NC~": `${BASE}flags/trnc.svg`,  // TRNC flag; Republic of Cyprus does not recognise it
+  // Northern Ireland — the Ulster Banner (1953–1973) is the most widely used
+  // unofficial symbol internationally. Northern Ireland has no designated official
+  // devolved flag; hampusborgos/country-flags serves the UK national flag (Union Jack)
+  // for gb-nir, which violates the "never show parent nation's flag" rule.
+  "GB-NIR": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Ulster_Banner.svg",
+
   // GE-AB (Abkhazia under Georgia) — CDN serves the Abkhazia flag; un-suppressed
   // below so it renders as "(unofficial flag)" under Georgia.
   // ES-GIB~ and AR-ML~ — hidden from Spain's/Argentina's grid via hierarchy; no flag needed.

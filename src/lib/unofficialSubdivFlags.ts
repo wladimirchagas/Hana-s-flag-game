@@ -25,6 +25,12 @@ export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
   "FR-PM": "The flag shown is a semi-official local flag: a blue field with a yellow depiction of the Grande Hermine (the ship that carried Jacques Cartier to Saint-Pierre in 1535) at the fly, and three vertical panels at the hoist showing the Basque, Breton, and Norman flags — representing the main ancestral origins of the islanders. France does not recognise regional flags; the only official national flag is the French Tricolour.",
   "FR-WF": "The flag shown is an unofficial local flag used at international events such as the Pacific Games — a red field with four white triangles and a French Tricolour canton, derived from a 19th-century cross pattée banner introduced by French missionaries. France does not recognise regional flags; the only official national flag is the French Tricolour.",
 
+  // Northern Ireland — no official devolved flag has been designated. The Ulster Banner
+  // (banner of the abolished Government of Northern Ireland, 1953–1973) is the most
+  // widely used symbol representing Northern Ireland internationally, including at the
+  // Commonwealth Games. The UK Government has not designated an official regional flag.
+  "GB-NIR": "The Ulster Banner was the banner of the Government of Northern Ireland from 1953 until the government was abolished in 1973. Northern Ireland has no officially designated devolved flag; the UK Government has never designated one. The Ulster Banner remains the most widely used symbol representing Northern Ireland internationally, including at the Commonwealth Games.",
+
   // Tibet Autonomous Region — the Snow Lion Flag belongs to the government-in-exile,
   // not to the PRC-administered region.
   "CN-XZ": "The Snow Lion Flag (first adopted 1959) is the flag of the Central Tibetan Administration, the Tibetan government-in-exile based in Dharamsala, India. It is not recognised by the PRC, which administers the Tibet Autonomous Region and has designated no distinct official regional flag for it.",
