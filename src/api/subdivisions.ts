@@ -100,10 +100,14 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
   "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
   "FR-MF":  `${BASE}flags/mf.svg`,    // Saint Martin local flag (lipis/flag-icons)
-  "FR-GP":  "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg",
-  // RE: the previous URL used "Lo_Mahavéli" (no umlaut) — incorrect filename.
-  // Correct Wikimedia filename is "Lö_Mahavéli" (with ö), path c/c3/.
-  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_R%C3%A9union_%28L%C3%B6_Mahav%C3%A9li%29.svg",
+  // GP: fonttools/region-flags GP.svg — sourced from Wikimedia Commons
+  // (File:Unofficial_flag_of_Guadeloupe_(local).svg, commons/e/e7/). Bundled locally;
+  // viewBox "0 0 600 400" (3:2). Replaces the blank Wikimedia URL (wrong filename 0/04/).
+  "FR-GP":  `${BASE}flags/gp.svg`,
+  // RE: Wikimedia Commons File:Flag_of_Réunion_(Local).svg (commons/f/f8/), 1000×600 (5:3).
+  // Previous URLs used wrong filenames (Lö_Mahavéli c/c3/, Lo_Mahavéli f/f8/) — both blank.
+  // Bundle locally via: node scripts/download-unofficial-flags.mjs
+  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_R%C3%A9union_%28Local%29.svg",
   "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
   "FR-BL":  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Saint_Barth%C3%A9lemy_(local).svg",
   "FR-PM":  "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg",
