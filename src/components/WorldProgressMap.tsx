@@ -146,11 +146,20 @@ type Props = {
   flagOverlay?: ReadonlyMap<string, string> | null;
 };
 
-// Alpha-2 codes of non-UN-member or de-facto-disputed territories that appear
-// as standalone polygons in the 50m topology. These receive palette.disputedLand
-// rather than palette.land so they are visually distinct from both ocean and
-// regular country fills — no political judgement is implied by the colour.
-const WORLD_MAP_DISPUTED_ALPHA2 = new Set(["EH"]);
+// HARD RULE — disputed/claimed landmass colour.
+// Any landmass that (a) is NOT one of the 195 UN states and (b) is claimed or
+// disputed by one or more nations must render in palette.disputedLand, NOT the
+// regular land/poolLand colour. This keeps the game neutral: a contested
+// territory is never painted as if it were undisputed sovereign land.
+//
+// This set lists the disputed territories that appear as their OWN standalone
+// polygon (with an ISO alpha-2 code) in the 50m topology. Crimea is handled
+// separately because it is extracted at runtime as the id "DISPUTED_CRIMEA".
+//   • EH — Western Sahara (claimed by Morocco; SADR/Polisario dispute it)
+//   • TW — Taiwan (governed by the ROC; claimed by the PRC; not a UN member)
+// Any future contested non-UN landmass that renders as its own polygon MUST be
+// added here (and documented in CLAUDE.md) so it is coloured consistently.
+const WORLD_MAP_DISPUTED_ALPHA2 = new Set(["EH", "TW"]);
 
 const GEO_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 const WIDTH = 960;
