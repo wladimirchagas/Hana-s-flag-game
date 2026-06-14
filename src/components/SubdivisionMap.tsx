@@ -212,7 +212,11 @@ export function SubdivisionMap({
     };
     if (!geoData || geoData.features.length === 0) return empty;
 
-    const fitFeatures = geoData.features;
+    // Exclude territory features so distant overseas territories (e.g. Falkland Islands
+    // at −52°S, South Georgia, British Indian Ocean Territory) don't force a near-global
+    // zoom-out that makes the mainland appear as a tiny invisible speck.
+    const mainFeatures = geoData.features.filter(f => !f.properties._isTerritory);
+    const fitFeatures = mainFeatures.length > 0 ? mainFeatures : geoData.features;
 
     const projection = geoEqualEarth().fitExtent(
       [
