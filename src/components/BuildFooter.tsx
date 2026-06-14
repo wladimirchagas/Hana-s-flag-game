@@ -26,21 +26,37 @@ export function BuildFooter() {
       : null;
 
   async function hardRefresh() {
-    try {
-      // Clear SW caches so the reload fetches fresh assets, not cached ones.
+    // Clear SW caches + unregister the service worker so it can't intercept the
+    // reload and serve stale content. vite-plugin-pwa re-registers on next load.
+    const cleanup = (async () => {
       if ("caches" in window) {
         const names = await window.caches.keys();
         await Promise.all(names.map((n) => window.caches.delete(n)));
       }
-      // Unregister the service worker so it can't intercept the reload and
-      // serve stale content. vite-plugin-pwa re-registers it on next load.
       if ("serviceWorker" in navigator) {
         const regs = await navigator.serviceWorker.getRegistrations();
         await Promise.all(regs.map((r) => r.unregister()));
       }
-    } finally {
-      window.location.reload();
-    }
+    })().catch(() => {
+      // Never let a cache/SW error block the refresh.
+    });
+
+    // If the cache/SW APIs hang (seen on some iOS/Safari PWA states), don't let
+    // the refresh stall — cap the wait and reload regardless.
+    await Promise.race([
+      cleanup,
+      new Promise((resolve) => setTimeout(resolve, 1500)),
+    ]);
+
+    // A plain location.reload() can still be served from the browser's HTTP
+    // cache: GitHub Pages sends index.html with `Cache-Control: max-age=600`,
+    // so within 10 minutes the reload returns the SAME stale bundle and the
+    // build never changes — which looks like the refresh "failing". Navigating
+    // to a unique URL forces a fresh network fetch of index.html (and therefore
+    // the latest hashed JS/CSS). `replace` avoids adding a history entry.
+    const url = new URL(window.location.href);
+    url.searchParams.set("_cb", Date.now().toString(36));
+    window.location.replace(url.toString());
   }
   return (
     <footer className="build-footer" role="contentinfo" aria-label="Build info">
