@@ -161,6 +161,23 @@ type Props = {
 // added here (and documented in CLAUDE.md) so it is coloured consistently.
 const WORLD_MAP_DISPUTED_ALPHA2 = new Set(["EH", "TW"]);
 
+// Same hard rule, for disputed/claimed non-UN landmasses that appear in the
+// topology WITHOUT an ISO country code (so toIsoAlpha2 returns null and they
+// would otherwise fall through to the neutral palette.unknown colour). Matched
+// by Natural Earth feature name (geometry.properties.name), which is stable.
+//   • Kosovo          — claimed by Serbia
+//   • Somaliland      — claimed by Somalia
+//   • N. Cyprus       — claimed by the Republic of Cyprus (TRNC)
+//   • Siachen Glacier — disputed between India and Pakistan
+// "Indian Ocean Ter." is deliberately NOT here: it is undisputed Australian
+// territory, not claimed by another nation.
+const WORLD_MAP_DISPUTED_NAMES = new Set([
+  "Kosovo",
+  "Somaliland",
+  "N. Cyprus",
+  "Siachen Glacier",
+]);
+
 const GEO_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -784,9 +801,12 @@ export function WorldProgressMap({
                   const isSelected =
                     !!alpha2 &&
                     (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
+                  const featureName =
+                    typeof geo.properties?.name === "string" ? geo.properties.name : null;
                   const isDisputedTerritory =
                     geo.id === "DISPUTED_CRIMEA" ||
-                    (alpha2 !== null && WORLD_MAP_DISPUTED_ALPHA2.has(alpha2));
+                    (alpha2 !== null && WORLD_MAP_DISPUTED_ALPHA2.has(alpha2)) ||
+                    (featureName !== null && WORLD_MAP_DISPUTED_NAMES.has(featureName));
                   const baseFill = isDisputedTerritory
                     ? palette.disputedLand
                     : getFill(alpha2, countryResults, palette, isInPool);
