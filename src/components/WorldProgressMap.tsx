@@ -1,6 +1,7 @@
 import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath, geoCentroid } from "d3-geo";
 import { feature } from "topojson-client";
+import { union as polyUnion, intersection as polyIntersect } from "polygon-clipping";
 import countries from "i18n-iso-countries";
 import { useTheme } from "../context/ThemeContext";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
@@ -406,14 +407,45 @@ export function WorldProgressMap({
           }
         }
 
-        // NOTE: Morocco's polygon in this topology extends south to ~21.4°N,
-        // encompassing Western Sahara territory. The separate Western Sahara
-        // polygon (EH, feature 732) renders at z-index 104 — one position
-        // AFTER Morocco (103) — so EH's palette.land fill correctly paints
-        // on top of Morocco's selected-fill (teal) in the WS area. Western
-        // Sahara is therefore never highlighted when Morocco is selected.
-        // EH is also absent from TERRITORY_PARENT so it is never in
-        // highlightCodes. No polygon clipping of Morocco is required.
+        // Fix Western Sahara / Morocco border in the Natural Earth 50m topology.
+        //
+        // Natural Earth assigns the Moroccan-controlled Southern Provinces to
+        // Morocco's polygon (MA, id=504). EH (id=732) only covers the Polisario
+        // Free Zone east of the Berm, so cities like Laayoune and Dakhla would
+        // appear as Morocco rather than as Western Sahara.
+        //
+        // Remedy: clip MA at the internationally recognised Morocco-WS border
+        // (~27.657°N, the northernmost extent of EH's polygon in the topology)
+        // and union the removed Southern Provinces area with EH. The result:
+        //   • Morocco = pre-1975 territory, ending cleanly at ~27.657°N
+        //   • Western Sahara = full non-self-governing territory (coast to Berm)
+        {
+          const maFeat = fc.features.find(f => toIsoAlpha2(f.id) === "MA");
+          const ehFeat = fc.features.find(f => toIsoAlpha2(f.id) === "EH");
+          if (
+            maFeat?.geometry && ehFeat?.geometry &&
+            (maFeat.geometry as {type:string}).type === "Polygon" &&
+            (ehFeat.geometry as {type:string}).type === "Polygon"
+          ) {
+            const maRings = (maFeat.geometry as {coordinates:[number,number][][]}).coordinates;
+            const ehRings = (ehFeat.geometry as {coordinates:[number,number][][]}).coordinates;
+            // Clip latitude: EH's exact northernmost extent in the topology
+            const CLIP_LAT = 27.657;
+            const northBox: [number,number][] = [[-20, CLIP_LAT],[0, CLIP_LAT],[0, 90],[-20, 90],[-20, CLIP_LAT]];
+            const southBox: [number,number][] = [[-20, -90],[0, -90],[0, CLIP_LAT],[-20, CLIP_LAT],[-20, -90]];
+            try {
+              const maProper   = polyIntersect([maRings], [[northBox]]);
+              const maSouthern = polyIntersect([maRings], [[southBox]]);
+              const fullWS     = polyUnion([ehRings], maSouthern);
+              if (maProper.length > 0 && fullWS.length > 0) {
+                (maFeat.geometry as {coordinates:unknown}).coordinates = maProper[0];
+                (ehFeat.geometry as {coordinates:unknown}).coordinates = fullWS[0];
+              }
+            } catch {
+              // Leave original geometries intact if surgery fails
+            }
+          }
+        }
 
         if (!cancelled) setGeographies(fc.features);
       } catch {

@@ -117,16 +117,19 @@ and renders it with the Equal Earth projection (`geoEqualEarth()` from `d3-geo`)
    canonical projection for the entire game — it must be used on every map view, present and future.
 
 3. **Never** clip, simplify, or alter country polygon geometries in the topology file or at
-   runtime, **except** for the existing Crimea extraction in `WorldProgressMap.tsx` (which is
-   documented inline). Any additional runtime geometry adjustment must be documented in both
-   `CLAUDE.md` and inline in the code.
+   runtime, **except** for the two documented runtime adjustments in `WorldProgressMap.tsx`:
+   - **Crimea extraction**: extracted from Russia's MultiPolygon into a separate `DISPUTED_CRIMEA` feature.
+   - **Western Sahara / Morocco border fix**: Natural Earth 50m puts the Moroccan-controlled Southern
+     Provinces inside Morocco's polygon (MA) and only gives EH the Polisario Free Zone. At runtime
+     the component clips MA at ~27.657°N (the internationally recognised Morocco-WS border) and unions
+     the clipped area with EH so that the full Western Sahara territory renders as EH.
+   Any additional runtime geometry adjustment must be documented here AND inline in the code.
 
-4. Morocco (id=504) and Western Sahara (id=732) are **adjacent** polygons sharing boundary arcs
-   in the topology — they do NOT overlap (confirmed via `polygon-clipping.intersection()` = ∅).
-   **Do not add polygon clipping for Morocco.** EH renders at feature index 104 (after MA at 103),
-   so EH's fill correctly paints over MA's selection highlight in the WS area. EH renders with
+4. Morocco (id=504) and Western Sahara (id=732): Natural Earth 50m assigns the Moroccan-controlled
+   Southern Provinces to MA and only the Polisario Free Zone to EH. A runtime clip at 27.657°N
+   corrects this so MA = Morocco proper and EH = full WS territory. EH renders with
    `palette.disputedLand` (not `palette.land`) to remain visually distinct from both ocean and
-   regular country fills.
+   regular country fills, and is excluded from `UNDISPUTED_TERRITORY_PARENT` so it is non-clickable.
 
 ## PR workflow — hard rule for all agents
 
