@@ -91,8 +91,13 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
   "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
   "FR-MF":  `${BASE}flags/mf.svg`,    // Saint Martin local flag (lipis/flag-icons)
-  "FR-GP":  "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg",
-  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_R%C3%A9union_(Lo_Mahav%C3%A9li).svg",
+  // FR-GP and FR-RE: no authoritative unofficial flag SVG is currently accessible.
+  // Wikimedia files (0/04/Flag_of_Guadeloupe_%28local%29.svg and
+  // f/f8/Flag_of_R%C3%A9union_(Lo_Mahav%C3%A9li).svg) no longer serve the correct
+  // content in the browser — returning French Tricolour or empty. lipis/flag-icons
+  // and hampusborgos both serve French Tricolour; amckenna41/iso3166-flags has no file.
+  // No fake SVG may be generated per CLAUDE.md. These codes are suppressed below.
+  // Reinstate once a valid Wikimedia URL or other authoritative source is confirmed.
   "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
   "FR-BL":  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Saint_Barth%C3%A9lemy_(local).svg",
   "FR-PM":  "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg",
@@ -110,6 +115,11 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
   // Bahrain governorates — no authoritative flag source with correct aspect
   // ratio found; amckenna41/iso3166-flags served 640×480 placeholders.
   "BH-13", "BH-14", "BH-15", "BH-17",
+  // Guadeloupe and Réunion — Wikimedia URLs no longer serve the correct unofficial
+  // flag (returning French Tricolour or empty). No valid authoritative source found.
+  // Suppressed to prevent CDN fallback from serving French Tricolour in their place.
+  // See LOCAL_FLAG_OVERRIDES comment above for details.
+  "FR-GP", "FR-RE",
 ]);
 
 // Cache so we only fetch each country once per session.
