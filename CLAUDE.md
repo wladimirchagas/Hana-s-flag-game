@@ -111,11 +111,26 @@ The same rule applies to every nation, subdivision and landmass on every map.
 
 ### Nation subnational view — flag grid
 
+#### Hard rule — never show the parent nation's flag for a subdivision
+
+If a subdivision has **no distinct official flag** (i.e. its flag is the same as the parent nation's
+flag, or no flag file exists), **always** show the most widely-used local/unofficial flag instead, and
+label it **"Flag not officially recognised by [Country]"**. Showing the parent nation's flag as if it
+were a subdivision flag gives no useful information and is misleading.
+
+This rule applies to:
+- French overseas departments/collectivities (Réunion, Martinique, New Caledonia, Saint Martin, etc.)
+- Any other subdivision where the only "official" flag is the parent nation's tricolour/ensign
+
+Concretely: if adding a flag URL to `LOCAL_FLAG_OVERRIDES` in `src/api/subdivisions.ts`, verify the
+SVG is **not** the parent nation's national flag. If the CDN or local file returns the parent flag,
+find and use the local unofficial alternative.
+
 When browsing a nation's subnational divisions, disputed/claimed territories **are** shown with the
-territory's own flag labelled **"(unofficial flag)"** — the same treatment as subdivisions that lack a
-distinct official flag (e.g. French overseas departments Réunion and Mayotte, which show their local
-unofficial flags). The claiming nation not recognising the flag is not a reason to hide it; it IS the
-reason the label says "unofficial".
+territory's own flag labelled **"Flag not officially recognised by [Country]"** — the same treatment as
+subdivisions that lack a distinct official flag (e.g. French overseas departments Réunion and Mayotte,
+which show their local unofficial flags). The claiming nation not recognising the flag is not a reason
+to hide it; it IS the reason the label reads "not officially recognised".
 
 | Territory | Under administering nation | Under claiming nation |
 |-----------|---------------------------|----------------------|
