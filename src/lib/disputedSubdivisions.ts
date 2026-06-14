@@ -1,4 +1,5 @@
 import { UNOFFICIAL_SUBDIV_NOTES } from "./unofficialSubdivFlags";
+import { hasSubdivisionFlag } from "../api/subdivisions";
 
 /**
  * Subdivision codes whose territory is contested between two or more countries.
@@ -93,9 +94,16 @@ export function getSubdivisionDisputeLabel(
 ): { text: string; isUnofficial: boolean } | null {
   const disputedCodes = new Set(Object.keys(DISPUTED_SUBDIV_NOTES));
 
-  // Codes in UNOFFICIAL_SUBDIV_NOTES but not in the disputed set always show "unofficial flag".
+  // "unofficial flag" only makes sense when a flag is ACTUALLY displayed. After
+  // the disputed-territory neutrality refactor, most claimed entries (CN-TW,
+  // MA-EH~, CY-NC~, ES-GIB~, AR-ML~, GE-AB) show NO flag — so they must never be
+  // captioned "unofficial flag", which would describe a flag that isn't there.
+  const flagShown = hasSubdivisionFlag(code);
+
+  // Codes in UNOFFICIAL_SUBDIV_NOTES but not in the disputed set show
+  // "unofficial flag" — but only when their (unofficial) flag is actually shown.
   if (!disputedCodes.has(code)) {
-    if (code in UNOFFICIAL_SUBDIV_NOTES) {
+    if (code in UNOFFICIAL_SUBDIV_NOTES && flagShown) {
       return { text: "unofficial flag", isUnofficial: true };
     }
     return null;
@@ -103,11 +111,12 @@ export function getSubdivisionDisputeLabel(
 
   const parent = parentCountryCode?.toUpperCase();
 
-  // Flag is unofficial when viewed under a country that does not recognise the displayed flag.
-  // CN claims TW (shows ROC flag), ES claims GI, AR claims FK/ML,
-  // CY claims Northern Cyprus (shows TRNC flag), MA claims Western Sahara (shows Sahrawi flag).
-  // GE shows the Republic of Abkhazia flag, which Georgia does not recognise.
-  const isUnofficial = !!parent && ["CN", "ES", "AR", "CY", "MA", "GE"].includes(parent);
+  // Flag is "unofficial" only when a claimant-unrecognised flag is actually
+  // displayed under that claimant. CN claims TW, ES claims GI, AR claims FK/ML,
+  // CY claims Northern Cyprus, MA claims Western Sahara, GE shows the Abkhazia
+  // flag. When no flag is shown, fall through to the neutral disputed/claimed label.
+  const isUnofficial =
+    flagShown && !!parent && ["CN", "ES", "AR", "CY", "MA", "GE"].includes(parent);
 
   if (isUnofficial) {
     return { text: "unofficial flag", isUnofficial: true };

@@ -2677,8 +2677,10 @@
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  padding: 0.3rem clamp(0.75rem, 2vw, 1.25rem);
-  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  /* Bar height raised ~1.5x via larger vertical padding (see index.css body
+     padding-bottom, which reserves matching space so content isn't hidden). */
+  padding: 0.75rem clamp(0.75rem, 2vw, 1.25rem);
+  padding-bottom: max(0.95rem, env(safe-area-inset-bottom));
   font-family: var(--font-display, system-ui, sans-serif);
   font-size: 0.7rem;
   font-weight: 500;

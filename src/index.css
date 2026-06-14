@@ -74,8 +74,9 @@ body {
   color: var(--ink);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  /* Reserve space for the sticky .build-footer bottom bar (+ iOS home indicator). */
-  padding-bottom: max(2rem, env(safe-area-inset-bottom));
+  /* Reserve space for the sticky .build-footer bottom bar (+ iOS home indicator).
+     Raised to ~1.5x with the taller footer (see .build-footer in App.css). */
+  padding-bottom: max(3rem, env(safe-area-inset-bottom));
 }
 
 #root {
