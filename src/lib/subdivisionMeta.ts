@@ -4184,7 +4184,12 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RS-13", name: "Pomoravski", typeLabel: "District" },
     { code: "RS-12", name: "Šumadija", typeLabel: "District" },
     { code: "RS-17", name: "Moravica", typeLabel: "District" },
-    { code: "RS-09", name: "Kolubara", typeLabel: "District" }
+    { code: "RS-09", name: "Kolubara", typeLabel: "District" },
+    // Claimed disputed territory — shown under Serbia (claims as the Autonomous
+    // Province of Kosovo and Metohija). The Republic of Kosovo administers it but
+    // is not a UN member, so it appears only here. Serbia recognises no distinct
+    // flag for it, so none is shown (same rule as Taiwan under China).
+    { code: "RS-KM~", name: "Kosovo and Metohija", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "RU": {

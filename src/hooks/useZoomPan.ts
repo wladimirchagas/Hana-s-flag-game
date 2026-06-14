@@ -15,8 +15,11 @@ import { useCallback, useRef, useState } from "react";
  * event handlers to spread onto the `<svg>` element. `reset()` is exposed
  * for an explicit "Reset zoom" button.
  *
- * Zoom is clamped to a sensible range (currently 1× to 12×) so users
- * can't lose the map by overzooming or shrinking it into the void. Pan
+ * Zoom is clamped to a sensible range (currently 1× to 24×) so users
+ * can't lose the map by overzooming or shrinking it into the void. The
+ * upper bound is generous so tightly-packed micro-states and small
+ * disputed territories (e.g. Gibraltar, the Caribbean, the Aegean) can be
+ * zoomed in far enough to be inspected. Pan
  * is clamped so the viewBox always stays covered by the map — at k=1
  * pan is effectively disabled (the clamp collapses to zero).
  */
@@ -57,7 +60,7 @@ export type ZoomPanState = {
 };
 
 const MIN_K = 1;
-const MAX_K = 12;
+const MAX_K = 24;
 const WHEEL_SENSITIVITY = 0.0015;
 
 type View = { k: number; tx: number; ty: number };

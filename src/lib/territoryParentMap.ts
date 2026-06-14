@@ -189,6 +189,12 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
   // Western Sahara — Morocco administers and claims as "Southern Provinces".
   // SADR is not a UN member, so shown only under Morocco.
   MA: [{ geoCode: "EH", subdivCode: "MA-EH~" }],
+  // Kosovo — Serbia claims it as the Autonomous Province of Kosovo and Metohija.
+  // The Republic of Kosovo (which administers it) is not a UN member, so — like
+  // Taiwan under China and Western Sahara under Morocco — Kosovo is shown only
+  // under the claiming UN member (Serbia). All XK districts collapse to the single
+  // RS-KM~ entity. Serbia recognises no distinct flag for it, so no flag is shown.
+  RS: [{ geoCode: "XK", subdivCode: "RS-KM~" }],
 };
 
 // RULE #2 — MAP CLICK BEHAVIOUR (hard-coded):

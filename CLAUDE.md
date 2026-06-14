@@ -66,16 +66,22 @@ or more nations **must** render in `palette.disputedLand` (a neutral grey), neve
 `land`/`poolLand` colour. Painting a contested territory as ordinary sovereign land would imply
 a political position the game must not take.
 
-This is enforced in `src/components/WorldProgressMap.tsx` by two sets plus the Crimea id.
-Territories that carry an ISO alpha-2 code in the topology are matched by code
-(`WORLD_MAP_DISPUTED_ALPHA2`); territories that have **no** code are matched by their Natural
-Earth feature name (`WORLD_MAP_DISPUTED_NAMES`), because without this they fall through to the
-neutral `unknown` colour rather than `disputedLand`:
+This is enforced in `src/components/WorldProgressMap.tsx` by **three** matchers plus the Crimea id:
+
+1. **`DISPUTED_TERRITORY_CODES`** (auto-derived) — territories disputed between two or more UN
+   members. This is the SAME set that makes them non-clickable on the world map, so colour and
+   click-neutrality never drift apart. Catches e.g. the Falkland Islands (`FK`, claimed by
+   Argentina) and Gibraltar (`GI`, claimed by Spain).
+2. **`WORLD_MAP_DISPUTED_ALPHA2`** — ISO-coded non-UN entities claimed by a SINGLE UN member,
+   which the 2+-claimants rule above does not catch (`EH`, `TW`).
+3. **`WORLD_MAP_DISPUTED_NAMES`** — code-less polygons matched by Natural Earth feature name,
+   which would otherwise fall through to the neutral `unknown` colour.
 
 | Match key | Territory | Status |
 |-----------|-----------|--------|
-| `EH` (code) | Western Sahara | Claimed/administered by Morocco; SADR/Polisario dispute it |
-| `TW` (code) | Taiwan | Governed by the ROC; claimed by the PRC; not a UN member |
+| `FK` (DISPUTED_TERRITORY_CODES) | Falkland Islands | Administered by the UK; claimed by Argentina |
+| `EH` (alpha-2) | Western Sahara | Claimed/administered by Morocco; SADR/Polisario dispute it |
+| `TW` (alpha-2) | Taiwan | Governed by the ROC; claimed by the PRC; not a UN member |
 | `DISPUTED_CRIMEA` (id) | Crimea | Administered by Russia; claimed by Ukraine |
 | `Kosovo` (name) | Kosovo | Declared independence 2008; claimed by Serbia; not a UN member |
 | `Somaliland` (name) | Somaliland | Self-declared 1991; claimed by Somalia; unrecognised |
@@ -86,6 +92,18 @@ neutral `unknown` colour rather than `disputedLand`:
 by another nation. **Any** future contested non-UN landmass that renders as its own polygon must
 be added to the matching set and to this table. Do not give a disputed landmass the regular
 country colour.
+
+**Disputed territories absent from the topology.** Some disputed territories are too small to
+exist as a polygon in the 50m topology (sub-pixel at world scale) and would render nowhere.
+These are drawn as a **fixed-size grey marker** at their true coordinates via
+`DISPUTED_MARKER_COORDS` in `WorldProgressMap.tsx`, so the territory is still represented:
+
+| Marker | Territory | Status |
+|--------|-----------|--------|
+| `Gibraltar` | Gibraltar | UK Overseas Territory (~6.7 km²); claimed by Spain |
+
+A disputed territory must never be silently missing from the world map: if it has no polygon,
+it gets a marker here.
 
 ### Nation subnational view — flag grid
 
