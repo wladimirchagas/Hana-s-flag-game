@@ -316,6 +316,43 @@ as a single standalone disputed entity with its own flag shown as **(unofficial 
 child polygons when their parent is selected.
 `useSubdivisionGame` excludes hierarchy children from game questions.
 
+## Subdivision research — hard rule, do not override without approval
+
+**Before introducing, removing, reclassifying, or changing the tier of any subdivision, you MUST
+verify its official status using authoritative sources.** Assumptions based on names, geography,
+or analogy to other countries are not acceptable — every entry must be grounded in the actual
+legal/administrative framework of the country concerned.
+
+### What to verify
+
+| Action | What to research |
+|--------|-----------------|
+| Add a new subdivision | Does it exist as a distinct administrative division under the country's own law? What tier is it? |
+| Remove a subdivision | Is it truly part of a larger entity (same ISO code, governed under parent's law)? |
+| Change type label / tier | What is the subdivision's actual legal status (state, territory, external territory, dependency, etc.)? |
+| Add an external territory | Is it governed under national law or the parent state/province's law? (e.g. Lord Howe Island → NSW law, not Commonwealth law) |
+
+### Authoritative sources
+
+- **ISO 3166-2** (iso.org or Wikipedia's per-country ISO 3166-2 article) — official codes and type labels
+- **The country's own constitution or territorial legislation** — definitive for status and tier
+- **UN LOCODE / UNSD M49** — for statistical groupings
+- **Wikipedia's "Administrative divisions of [Country]"** article — good starting point, but cross-check against primary sources
+
+### Hard rules
+
+1. **Never assume** a geographic island or enclave is a distinct administrative subdivision just because
+   Natural Earth gives it a separate polygon. Always check the `iso_3166_2` field: if it shares a code
+   with a larger entity (e.g. Lord Howe Island → `AU-NSW`), it is part of that entity and must NOT
+   appear as a standalone entry in the flag grid.
+
+2. **Never assume** that two subdivisions with the same type label have the same tier. "Territory" can
+   mean a self-governing internal territory (e.g. AU-NT), an external territory (e.g. AU-CX), or a
+   wholly different concept in another country's framework. Always verify the governing legislation.
+
+3. **Document your source** in a code comment whenever you add or change a type label or tier —
+   e.g. `// Governed under Lord Howe Island Act 1953 (NSW), not Commonwealth law`.
+
 ## Flag grid ordering — hard rule, do not override without approval
 
 When a country's subdivision flag grid is grouped **by type** (the default when multiple

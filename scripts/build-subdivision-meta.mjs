@@ -84,6 +84,14 @@ const DISPUTED_SUBDIV_CODES = new Set([
   "UA-43", "UA-40", "GB-GI", "ES-GIB~", "GB-FK", "AR-ML~", "TR-NC~", "CY-06~", "CN-TW"
 ]);
 
+// Features whose iso_3166_2 code belongs to a larger entity they are physically part of.
+// Natural Earth gives these their own polygons, but they are NOT distinct administrative
+// subdivisions and must not appear as separate entries in the flag grid.
+// Format: "CODE|feature name" to be maximally specific.
+const SUBDIVISION_FEATURE_EXCLUDE = new Set([
+  "AU-NSW|Lord Howe Island", // Island dependency of NSW; governed under NSW law, not Commonwealth law
+]);
+
 const TERRITORIES_TO_APPEND = {
   "DK": [
     { code: "DK-GL", name: "Greenland", typeLabel: "Autonomous Territory" },
@@ -237,6 +245,11 @@ for (const file of files.sort()) {
     
     // Skip custom-coded subdivisions (~ or -X) that do not have a flag
     if ((divCode.includes('~') || divCode.includes('-X')) && !flagCodes.has(divCode)) {
+      continue;
+    }
+
+    // Skip features that share a code with a larger entity they are part of
+    if (SUBDIVISION_FEATURE_EXCLUDE.has(`${divCode}|${name}`)) {
       continue;
     }
     
