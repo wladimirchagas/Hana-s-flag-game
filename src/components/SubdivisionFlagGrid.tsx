@@ -72,7 +72,35 @@ export function SubdivisionFlagGrid({
       return list.map(([heading, items]) => ({ heading, items }));
     }
 
-    // "type" grouping — most populous type first, then alphabetical
+    // "type" grouping — constituent subdivisions first, external territories
+    // second, disputed/claimed territories always last.
+    //
+    // RULE (hard-coded, see CLAUDE.md): within a parent nation's flag grid,
+    // groups representing primary subdivisions (countries, states, provinces,
+    // etc.) must appear before groups representing external/dependent
+    // territories (crown dependencies, overseas territories, associated states,
+    // etc.). Groups consisting entirely of disputed/claimed items are always
+    // shown last regardless of size.
+    //
+    // Tier 0 — primary subdivisions (anything not in tier 1 or 2)
+    // Tier 1 — dependency / external territory types
+    // Tier 2 — disputed/claimed (isDisputed flag on every item)
+    const DEPENDENCY_TYPES: ReadonlySet<string> = new Set([
+      "Crown Dependency",
+      "Overseas Territory",
+      "Overseas Collectivity",
+      "Autonomous Territory",
+      "Special Administrative Region",
+      "Constituent Country",
+      "Associated State",
+    ]);
+
+    function groupTier(typeLabel: string, allDisputed: boolean): number {
+      if (allDisputed) return 2;
+      if (DEPENDENCY_TYPES.has(typeLabel)) return 1;
+      return 0;
+    }
+
     const buckets = new Map<string, SubdivisionMeta[]>();
     for (const d of sorted) {
       const arr = buckets.get(d.typeLabel) ?? [];
@@ -80,12 +108,11 @@ export function SubdivisionFlagGrid({
       buckets.set(d.typeLabel, arr);
     }
     const list = [...buckets.entries()].sort(([labelA, itemsA], [labelB, itemsB]) => {
-      // Groups consisting entirely of disputed items must go last
-      const aDisputed = itemsA.every(item => item.isDisputed);
-      const bDisputed = itemsB.every(item => item.isDisputed);
-      if (aDisputed && !bDisputed) return 1;
-      if (!aDisputed && bDisputed) return -1;
+      const tierA = groupTier(labelA, itemsA.every(item => item.isDisputed));
+      const tierB = groupTier(labelB, itemsB.every(item => item.isDisputed));
+      if (tierA !== tierB) return tierA - tierB;
 
+      // Within the same tier: larger groups first, then alphabetical
       const diff = itemsB.length - itemsA.length;
       if (diff !== 0) return diff;
       return labelA.localeCompare(labelB, "en");

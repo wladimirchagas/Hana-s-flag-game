@@ -14,7 +14,7 @@
  */
 
 import { readdir, readFile } from "fs/promises";
-import { join, dirname } from "path";
+import { join, dirname, basename } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
@@ -39,20 +39,36 @@ const EXEMPT_UNOFFICIAL_FLAGS = new Set([
   "re.svg",  // Réunion — Lö Mahavéli; no defined ratio
 ]);
 
+/** Recursively collect all .svg files under a directory. */
+async function collectSvgs(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const results = [];
+  for (const entry of entries) {
+    if (entry.name.startsWith(".")) continue;
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) {
+      results.push(...await collectSvgs(full));
+    } else if (entry.name.endsWith(".svg")) {
+      results.push(full);
+    }
+  }
+  return results;
+}
+
 async function main() {
-  const files = (await readdir(FLAGS_DIR))
-    .filter((f) => f.endsWith(".svg") && !f.startsWith("."));
+  const files = await collectSvgs(FLAGS_DIR);
 
   const errors = [];
 
   for (const file of files) {
-    if (EXEMPT_UNOFFICIAL_FLAGS.has(file)) continue;
-    const content = await readFile(join(FLAGS_DIR, file), "utf8");
+    if (EXEMPT_UNOFFICIAL_FLAGS.has(basename(file))) continue;
+    const content = await readFile(file, "utf8");
     const match = content.slice(0, 512).match(/viewBox=["']([^"']+)["']/);
     if (!match) continue;
     const viewBox = match[1].trim();
     if (FORBIDDEN_VIEWBOXES.has(viewBox)) {
-      errors.push(`  ${file}: viewBox="${viewBox}"`);
+      const rel = file.replace(join(FLAGS_DIR, ".."), "public");
+      errors.push(`  ${rel}: viewBox="${viewBox}"`);
     }
   }
 
