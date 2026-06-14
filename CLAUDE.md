@@ -111,15 +111,25 @@ The same rule applies to every nation, subdivision and landmass on every map.
 
 ### Nation subnational view — flag grid
 
-When browsing a nation's subnational divisions, disputed/claimed territories **are** shown — but only
-with a flag if the parent nation officially recognises one.
+When browsing a nation's subnational divisions, disputed/claimed territories **are** shown with the
+territory's own flag labelled **"(unofficial flag)"** — the same treatment as subdivisions that lack a
+distinct official flag (e.g. French overseas departments Réunion and Mayotte, which show their local
+unofficial flags). The claiming nation not recognising the flag is not a reason to hide it; it IS the
+reason the label says "unofficial".
 
-| Territory | Under UK (administers) | Under Argentina (claims) |
-|-----------|----------------------|--------------------------|
-| Falkland Islands / Malvinas | Shown with FK flag ✓ | No flag shown (Argentina has no recognised flag for it) |
+| Territory | Under administering nation | Under claiming nation |
+|-----------|---------------------------|----------------------|
+| Falkland Islands / Malvinas | Shown with FK flag (official) ✓ | Shown with FK flag as "(unofficial flag)" — AR-ML~ is hidden via hierarchy (Tierra del Fuego) |
+| Taiwan | Shown as its own country | Shown with ROC flag as "(unofficial flag)" under China |
+| Kosovo | Shown as its own country | Shown with Kosovo flag as "(unofficial flag)" under Serbia |
+| Western Sahara | N/A — SADR not a UN member | Shown with SADR flag as "(unofficial flag)" under Morocco |
+| Somaliland | N/A — not recognised | Shown with Somaliland flag as "(unofficial flag)" under Somalia |
+| Northern Cyprus | Shown with TRNC flag (Türkiye recognises it) | Shown with TRNC flag as "(unofficial flag)" under Cyprus |
+| Abkhazia | Shown with Abkhazia flag (CDN) | Shown as "(unofficial flag)" under Georgia |
 
-**Never** add a flag URL for a claimed entry (`AR-ML~`, `ES-GIB~`, etc.) under the claiming nation unless
-that nation officially recognises a distinct flag for the territory.
+**Exception — hierarchy entries**: `AR-ML~` and `ES-GIB~` are hidden from their claimants' grids via
+`DISPUTED_TERRITORY_HIERARCHY` (replaced by Tierra del Fuego and Cádiz respectively). No flag override
+is needed for them. `IN-AK~` and `IN-GB~` are likewise hidden from India's grid via hierarchy.
 
 ### Hierarchy rule — most important
 
@@ -146,14 +156,14 @@ standalone division with its recognised flag.
 
 **Claimant-only de-facto states.** Where the entity that administers a territory is itself not a UN member
 (Taiwan, Kosovo, Somaliland, Western Sahara), the territory is shown **only** under the claiming UN member,
-as a single standalone disputed entity with **no flag** (the claimant does not recognise the entity's flag):
+as a single standalone disputed entity with its own flag shown as **(unofficial flag)**:
 
-| Claimed code | Claiming nation | Geometry source | Flag |
-|--------------|-----------------|-----------------|------|
-| `CN-TW` | China | `TW.json` | none |
-| `MA-EH~` | Morocco | `EH.json` | none |
-| `RS-KM~` | Serbia (Kosovo and Metohija) | `XK.json` | none |
-| `SO-SL~` | Somalia (Somaliland) | `XS.json` (extracted from the world topology) | none |
+| Claimed code | Claiming nation | Geometry source | Flag shown |
+|--------------|-----------------|-----------------|------------|
+| `CN-TW` | China | `TW.json` | ROC (Taiwan) flag — `tw.svg` |
+| `MA-EH~` | Morocco | `EH.json` | SADR flag — `eh.svg` |
+| `RS-KM~` | Serbia (Kosovo and Metohija) | `XK.json` | Kosovo flag — `xk.svg` |
+| `SO-SL~` | Somalia (Somaliland) | `XS.json` (extracted from world topology) | Somaliland flag — Wikimedia |
 
 ### Enforcement
 
