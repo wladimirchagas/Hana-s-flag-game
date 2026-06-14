@@ -28,8 +28,8 @@ export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
   // Northern Ireland — no official devolved flag has been designated. The Ulster Banner
   // (banner of the abolished Government of Northern Ireland, 1953–1973) is the most
   // widely used symbol representing Northern Ireland internationally, including at the
-  // Commonwealth Games. The UK Government has not designated an official regional flag.
-  "GB-NIR": "The Ulster Banner was the banner of the Government of Northern Ireland from 1953 until the government was abolished in 1973. Northern Ireland has no officially designated devolved flag; the UK Government has never designated one. The Ulster Banner remains the most widely used symbol representing Northern Ireland internationally, including at the Commonwealth Games.",
+  // Commonwealth Games. The United Kingdom Government has not designated an official regional flag.
+  "GB-NIR": "The Ulster Banner was the banner of the Government of Northern Ireland from 1953 until the government was abolished in 1973. Northern Ireland has no officially designated devolved flag; the United Kingdom Government has never designated one. The Ulster Banner remains the most widely used symbol representing Northern Ireland internationally, including at the Commonwealth Games.",
 
   // Tibet Autonomous Region — the Snow Lion Flag belongs to the government-in-exile,
   // not to the PRC-administered region.

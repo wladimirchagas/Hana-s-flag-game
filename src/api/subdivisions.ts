@@ -30,11 +30,11 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "CY-NC~": `${BASE}flags/trnc.svg`,  // TRNC flag; Republic of Cyprus does not recognise it
   // Northern Ireland — the Ulster Banner (1953–1973) is the most widely used
   // unofficial symbol internationally. Northern Ireland has no designated official
-  // devolved flag; hampusborgos/country-flags serves the UK national flag (Union Jack)
-  // for gb-nir, which violates the "never show parent nation's flag" rule.
-  // Source: lipis/flag-icons (via our git history at 5a52412); viewBox="0 0 640 480"
-  // is exempt in check-flag-proportions.mjs because NI has no official flag and
-  // the Ulster Banner therefore has no government-mandated real-world proportions.
+  // devolved flag; hampusborgos/country-flags serves the United Kingdom national flag
+  // (Union Jack) for gb-nir, which violates the "never show parent nation's flag" rule.
+  // Source: lipis/flag-icons (via our git history at 5a52412); viewBox="0 0 640 320"
+  // (2:1 ratio — Crown heraldic banner proportions, corrected from the lipis 640×480
+  // source by wrapping content in <g transform="scale(1,0.6667)">).
   "GB-NIR": `${BASE}flags/sub/GB/GB-NIR.svg`,
 
   // GE-AB (Abkhazia under Georgia) — CDN serves the Abkhazia flag; un-suppressed
