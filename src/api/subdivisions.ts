@@ -32,7 +32,7 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // unofficial symbol internationally. Northern Ireland has no designated official
   // devolved flag; hampusborgos/country-flags serves the UK national flag (Union Jack)
   // for gb-nir, which violates the "never show parent nation's flag" rule.
-  "GB-NIR": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Ulster_Banner.svg",
+  "GB-NIR": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ulster_Banner.svg",
 
   // GE-AB (Abkhazia under Georgia) — CDN serves the Abkhazia flag; un-suppressed
   // below so it renders as "(unofficial flag)" under Georgia.
