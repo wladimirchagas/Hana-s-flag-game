@@ -97,12 +97,12 @@ const COUNTRY_NAME: Record<string, string> = {
   CY: "Cyprus",
   ES: "Spain",
   FR: "France",
+  GB: "the United Kingdom",
   GE: "Georgia",
   MA: "Morocco",
   RS: "Serbia",
   SO: "Somalia",
   TR: "Türkiye",
-  UK: "the United Kingdom",
 };
 
 /**
