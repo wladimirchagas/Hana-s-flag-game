@@ -330,7 +330,7 @@ export function SubdivisionMap({
   }
 
   function handlePathClick(
-    e: React.MouseEvent<SVGPathElement>,
+    e: React.MouseEvent,
     code: string,
     name: string,
   ) {
@@ -510,6 +510,42 @@ export function SubdivisionMap({
                 />
               )}
             </g>
+
+            {/* Static location dots for features too small to render a visible
+                path (e.g. tiny island territories when the projection is fitted
+                to a country whose subdivisions span multiple continents).
+                Rendered outside the zoom group so the dot size stays constant;
+                positioned via zoom-transformed centroid so they pan/zoom
+                correctly. The selected small feature uses the pulsing ring
+                below instead. */}
+            {geoData && [...smallSubdivCodes].map((code) => {
+              if (code === selectedCode) return null;
+              const centroid = centroidByCode.get(code);
+              if (!centroid) return null;
+              const cx = centroid[0] * zk + ztx;
+              const cy = centroid[1] * zk + zty;
+              if (cx < -PULSE_MARGIN || cx > WIDTH + PULSE_MARGIN ||
+                  cy < -PULSE_MARGIN || cy > HEIGHT + PULSE_MARGIN) return null;
+              const feat = geoData.features.find((f) => getSubdivCode(f) === code);
+              const name = feat
+                ? feat.properties.name_en || feat.properties.name || code
+                : code;
+              const fill = getFill(code);
+              return (
+                <g
+                  key={`dot-${code}`}
+                  transform={`translate(${cx.toFixed(1)} ${cy.toFixed(1)})`}
+                  onClick={isInteractive ? (e) => handlePathClick(e, code, name) : undefined}
+                  onMouseEnter={isInteractive && onHover ? () => onHover(code) : undefined}
+                  onMouseLeave={isInteractive && onHover ? () => onHover(null) : undefined}
+                  style={{ cursor: isInteractive ? "pointer" : "default" }}
+                  aria-hidden="true"
+                >
+                  <circle r={6} fill="transparent" />
+                  <circle r={3} fill={fill} stroke={palette.stroke} strokeWidth={0.5} vectorEffect="non-scaling-stroke" />
+                </g>
+              );
+            })}
 
             {/* Pulsing ring — outside the zoom group so its pixel size is
                 constant; positioned via zoom-transformed centroid coords. */}
