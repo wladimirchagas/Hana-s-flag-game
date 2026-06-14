@@ -101,6 +101,36 @@ standalone division with its recognised flag.
 child polygons when their parent is selected.
 `useSubdivisionGame` excludes hierarchy children from game questions.
 
+## Natural Earth topology and projection — hard rule, do not override without approval
+
+The world map uses the Natural Earth 50m topology bundled at `public/countries-50m.json`
+and renders it with the Equal Earth projection (`geoEqualEarth()` from `d3-geo`).
+
+### Rules
+
+1. **Never** replace `public/countries-50m.json` with a different topology file or resolution
+   without explicit approval. The 50m resolution was chosen over 110m for better border accuracy,
+   and specific polygon adjacency in this file is relied on by the disputed-territory rendering
+   (e.g. Morocco and Western Sahara share exact boundary arcs; Crimea is extracted at runtime).
+
+2. **Never** change the map projection from Equal Earth (`geoEqualEarth()`). This is the
+   canonical projection for the entire game — it must be used on every map view, present and future.
+
+3. **Never** clip, simplify, or alter country polygon geometries in the topology file or at
+   runtime, **except** for the two documented runtime adjustments in `WorldProgressMap.tsx`:
+   - **Crimea extraction**: extracted from Russia's MultiPolygon into a separate `DISPUTED_CRIMEA` feature.
+   - **Western Sahara / Morocco border fix**: Natural Earth 50m puts the Moroccan-controlled Southern
+     Provinces inside Morocco's polygon (MA) and only gives EH the Polisario Free Zone. At runtime
+     the component clips MA at ~27.657°N (the internationally recognised Morocco-WS border) and unions
+     the clipped area with EH so that the full Western Sahara territory renders as EH.
+   Any additional runtime geometry adjustment must be documented here AND inline in the code.
+
+4. Morocco (id=504) and Western Sahara (id=732): Natural Earth 50m assigns the Moroccan-controlled
+   Southern Provinces to MA and only the Polisario Free Zone to EH. A runtime clip at 27.657°N
+   corrects this so MA = Morocco proper and EH = full WS territory. EH renders with
+   `palette.disputedLand` (not `palette.land`) to remain visually distinct from both ocean and
+   regular country fills, and is excluded from `UNDISPUTED_TERRITORY_PARENT` so it is non-clickable.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
