@@ -134,10 +134,22 @@ This is implemented via `DISPUTED_TERRITORY_HIERARCHY` in `src/lib/disputedSubdi
 | `IN-GB~` | `IN-LA` (Ladakh UT) | India's 2019 reorganisation places this border area in Ladakh |
 
 Any new disputed entry must declare a `DISPUTED_TERRITORY_HIERARCHY` parent **unless** the claiming nation
-treats the territory as a standalone entity (e.g. Turkey → TRNC, Cyprus → Northern Cyprus, Ukraine → Crimea).
+treats the territory as a standalone entity (e.g. Turkey → TRNC, Cyprus → Northern Cyprus, Ukraine → Crimea,
+Serbia → Kosovo, Somalia → Somaliland).
 
 The **administering** nation (e.g. UK for Falklands and Gibraltar) always shows the territory as its own
 standalone division with its recognised flag.
+
+**Claimant-only de-facto states.** Where the entity that administers a territory is itself not a UN member
+(Taiwan, Kosovo, Somaliland, Western Sahara), the territory is shown **only** under the claiming UN member,
+as a single standalone disputed entity with **no flag** (the claimant does not recognise the entity's flag):
+
+| Claimed code | Claiming nation | Geometry source | Flag |
+|--------------|-----------------|-----------------|------|
+| `CN-TW` | China | `TW.json` | none |
+| `MA-EH~` | Morocco | `EH.json` | none |
+| `RS-KM~` | Serbia (Kosovo and Metohija) | `XK.json` | none |
+| `SO-SL~` | Somalia (Somaliland) | `XS.json` (extracted from the world topology) | none |
 
 ### Enforcement
 

@@ -195,6 +195,12 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
   // under the claiming UN member (Serbia). All XK districts collapse to the single
   // RS-KM~ entity. Serbia recognises no distinct flag for it, so no flag is shown.
   RS: [{ geoCode: "XK", subdivCode: "RS-KM~" }],
+  // Somaliland — Somalia claims it as its northern regions. The self-declared
+  // Republic of Somaliland (which administers it) is not a UN member and is
+  // unrecognised, so — like Kosovo under Serbia — it is shown only under the
+  // claiming UN member (Somalia) as the single SO-SL~ entity. Geometry comes from
+  // the bundled XS.json (extracted from the world topology). No flag is shown.
+  SO: [{ geoCode: "XS", subdivCode: "SO-SL~" }],
 };
 
 // RULE #2 — MAP CLICK BEHAVIOUR (hard-coded):
