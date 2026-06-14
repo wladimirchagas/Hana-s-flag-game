@@ -123,6 +123,21 @@ Known viewBox values for common real-world proportions:
    `SUPPRESSED_SUBDIVISION_FLAGS` in `src/api/subdivisions.ts` with a comment
    explaining the reason, rather than serving a wrong-ratio flag.
 
+4a. **`EXEMPT_UNOFFICIAL_FLAGS` in `check-flag-proportions.mjs` is for flags
+    with genuinely NO official real-world aspect ratio** — i.e. local/unofficial
+    designs that no government authority has ever specified proportions for
+    (e.g. Martinique's serpent banner, New Caledonia's FLNKS flag). Do **not**
+    add a flag to this exempt list just because a correctly-proportioned source
+    could not be found. If a flag has known real-world proportions (even for an
+    unofficial flag — e.g. the Ulster Banner follows Crown heraldic banner
+    proportions at 2:1), you must source or produce a correctly-proportioned
+    version. Technique allowed when no authoritative 2:1 source exists:
+    wrap the 640×480 SVG body in `<g transform="scale(1, H/480)">` and change
+    the viewBox to `0 0 640 H` (where H = 640 / aspect_ratio), but only after
+    verifying that all content coordinates fit within the new height. This is a
+    coordinate-system rescale, not invented content — it is the only permitted
+    exception to the "never modify flag SVG content" rule.
+
 5. **Afghanistan exception**: `public/flags/af.svg` uses the Taliban / Islamic
    Emirate flag from Wikimedia Commons (pinned in `NATIONAL_SOURCE_OVERRIDES`
    in `scripts/download-flags.mjs`). Do not replace it with the hampusborgos
@@ -352,6 +367,38 @@ and renders it with the Equal Earth projection (`geoEqualEarth()` from `d3-geo`)
    corrects this so MA = Morocco proper and EH = full WS territory. EH renders with
    `palette.disputedLand` (not `palette.land`) to remain visually distinct from both ocean and
    regular country fills, and is excluded from `UNDISPUTED_TERRITORY_PARENT` so it is non-clickable.
+
+## No ISO code abbreviations in user-facing text — hard rule, do not override without approval
+
+**Never use bare ISO country codes (e.g. `GB`, `FR`, `US`, `AU`) in any string that is
+displayed to the user.** This applies to: flag labels, subdivision labels, tooltip text,
+heading text, aria-labels, and any other visible or screen-reader-accessible string.
+
+### Where this matters most
+
+The `COUNTRY_NAME` map in `src/lib/disputedSubdivisions.ts` drives the label
+**"Flag not officially recognised by X"**. Every country that has unofficial or
+disputed subdivision flags shown in its grid **must** have a full English name entry
+in that map. The key must be the ISO 3166-1 alpha-2 code (`GB`, not `UK`), but the
+**value** must be the full name (`"the United Kingdom"`, never `"GB"`).
+
+### Rules
+
+1. `COUNTRY_NAME` must be keyed by ISO alpha-2 (`GB`, `FR`, `US`, …) — **not** by the
+   colloquial two-letter abbreviation (`UK`) which is not a valid ISO 3166-1 code.
+2. Whenever a new unofficial or disputed flag is added to `UNOFFICIAL_SUBDIV_NOTES`
+   or `DISPUTED_SUBDIV_NOTES` in `src/lib/disputedSubdivisions.ts`, add the parent
+   country to `COUNTRY_NAME` with its full English name at the same time.
+3. Audit the rendered label in the browser before pushing: open the parent country's
+   flag grid, select the unofficial/disputed subdivision card, and confirm the label
+   reads "Flag not officially recognised by [full name]", not a bare code.
+
+### Enforcement
+
+If `COUNTRY_NAME` is missing an entry for a parent country, `getSubdivisionDisputeLabel`
+silently falls back to the raw ISO code (`parentName = parent ?? ""`). The only way to
+catch this is the visual verification step — there is no automated check. Add the
+visual check to every PR that touches `disputedSubdivisions.ts` or `unofficialSubdivFlags.ts`.
 
 ## PR workflow — hard rule for all agents
 
