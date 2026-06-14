@@ -1,7 +1,7 @@
 import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath, geoCentroid } from "d3-geo";
 import { feature } from "topojson-client";
-import { union as polyUnion, intersection as polyIntersect } from "polygon-clipping";
+import polygonClipping from "polygon-clipping";
 import countries from "i18n-iso-countries";
 import { useTheme } from "../context/ThemeContext";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
@@ -434,9 +434,9 @@ export function WorldProgressMap({
             const northBox: [number,number][] = [[-20, CLIP_LAT],[0, CLIP_LAT],[0, 90],[-20, 90],[-20, CLIP_LAT]];
             const southBox: [number,number][] = [[-20, -90],[0, -90],[0, CLIP_LAT],[-20, CLIP_LAT],[-20, -90]];
             try {
-              const maProper   = polyIntersect([maRings], [[northBox]]);
-              const maSouthern = polyIntersect([maRings], [[southBox]]);
-              const fullWS     = polyUnion([ehRings], maSouthern);
+              const maProper   = polygonClipping.intersection([maRings], [[northBox]]);
+              const maSouthern = polygonClipping.intersection([maRings], [[southBox]]);
+              const fullWS     = polygonClipping.union([ehRings], maSouthern);
               if (maProper.length > 0 && fullWS.length > 0) {
                 (maFeat.geometry as {coordinates:unknown}).coordinates = maProper[0];
                 (ehFeat.geometry as {coordinates:unknown}).coordinates = fullWS[0];
