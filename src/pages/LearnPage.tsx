@@ -842,7 +842,7 @@ export default function LearnPage() {
                   onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
                   disabled={countries.length === 0}
                   label="Find a country's subdivisions"
-                  listPlacement="up"
+                  listPlacement="down"
                 />
               </div>
             )}
