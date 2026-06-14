@@ -98,10 +98,17 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
 };
 
 // Subdivision codes whose CDN flag must be actively suppressed.
-// Under the current policy, no codes are suppressed — disputed territories now
-// show their own flag as "(unofficial flag)" rather than hiding it entirely.
-// Keep this set in place for future overrides if needed.
-const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([]);
+// Disputed territories now show their own flag as "(unofficial flag)" rather
+// than hiding it entirely, so no codes are suppressed for that reason.
+// Codes whose only sourced flag file has a forbidden standardised viewBox
+// (640×480, 512×512) are suppressed here until a correctly proportioned
+// source is found. The local bad files have been deleted; these entries
+// prevent the CDN fallback from serving a wrongly-proportioned substitute.
+const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
+  // Bahrain governorates — no authoritative flag source with correct aspect
+  // ratio found; amckenna41/iso3166-flags served 640×480 placeholders.
+  "BH-13", "BH-14", "BH-15", "BH-17",
+]);
 
 // Cache so we only fetch each country once per session.
 const cache = new Map<string, SubdivisionFeatureCollection | null>();

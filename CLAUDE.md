@@ -2,15 +2,28 @@
 
 ## Flag aspect ratios — hard rule, do not override without approval
 
-Every national and territory flag SVG in `public/flags/` is sourced from
-[hampusborgos/country-flags](https://github.com/hampusborgos/country-flags)
-and encodes the **real-world aspect ratio** in its `viewBox`:
+**This rule applies to every flag in the repository** — national flags, territory
+flags, and subdivision flags (e.g. England, Scotland, Åland, Puerto Rico).
+Every flag SVG must encode the **real-world official aspect ratio** in its `viewBox`.
+
+### Authoritative sources
+
+| Flag type | Authoritative source |
+|-----------|----------------------|
+| National/territory flags (`public/flags/*.svg`) | [hampusborgos/country-flags](https://github.com/hampusborgos/country-flags): `https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{code}.svg` |
+| Constituent-country subdivision flags (`public/flags/sub/{CC}/`) | [hampusborgos/country-flags](https://github.com/hampusborgos/country-flags): `https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{lowercase-code}.svg` (e.g. `gb-eng`, `gb-sct`, `gb-wls`, `gb-nir`) |
+| Other subdivision flags | [amckenna41/iso3166-flags](https://github.com/amckenna41/iso3166-flags) via jsDelivr CDN — **only** if the file has a real-world viewBox. If the CDN file is 640×480, suppress the code in `SUPPRESSED_SUBDIVISION_FLAGS` and document why. |
+| Exceptions requiring Wikimedia Commons | Individual entries in `NATIONAL_SOURCE_OVERRIDES` or `LOCAL_FLAG_OVERRIDES` — document each one explicitly. |
+
+Known viewBox values for common real-world proportions:
 
 | Flag | viewBox | Ratio |
 |------|---------|-------|
 | France, most of Africa/Americas | `0 0 3 2` | 3:2 |
 | Germany, Austria, Belgium | `0 0 5 3` | 5:3 |
 | UK, Australia, New Zealand, Fiji | `0 0 60 30` | 2:1 |
+| England, Scotland, Wales (GB subdivisions) | `0 0 25 15` / `0 0 5 3` / `0 0 830 498` | 5:3 |
+| Northern Ireland (GB subdivision) | `0 0 60 30` | 2:1 |
 | Switzerland, Vatican City | `0 0 32 32` | 1:1 |
 | Qatar | `0 0 1400 550` | ~28:11 |
 | Nepal | negative-origin viewBox | pentagon |
@@ -25,12 +38,17 @@ and encodes the **real-world aspect ratio** in its `viewBox`:
 2. **Never** use `object-fit: cover` on flag `<img>` elements — it crops
    flags. Always use `object-fit: contain`.
 
-3. **Never** download national/territory flags from `flagcdn.com` or the
-   `flag-icons` npm package. These standardise every flag to `640×480` (4:3),
-   destroying the real-world proportions. The correct source is
-   `https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{code}.svg`.
+3. **Never** download any flag (national, territory, or subdivision) from
+   `flagcdn.com` or the `flag-icons` npm package. These standardise every
+   flag to `640×480` (4:3), destroying the real-world proportions.
 
-4. **Afghanistan exception**: `public/flags/af.svg` uses the Taliban / Islamic
+4. **Never** use a subdivision flag file from `amckenna41/iso3166-flags` that
+   has a forbidden standardised viewBox (`640×480`, `512×512`). If no
+   correctly-proportioned source exists, add the code to
+   `SUPPRESSED_SUBDIVISION_FLAGS` in `src/api/subdivisions.ts` with a comment
+   explaining the reason, rather than serving a wrong-ratio flag.
+
+5. **Afghanistan exception**: `public/flags/af.svg` uses the Taliban / Islamic
    Emirate flag from Wikimedia Commons (pinned in `NATIONAL_SOURCE_OVERRIDES`
    in `scripts/download-flags.mjs`). Do not replace it with the hampusborgos
    file — that repo carries the pre-2021 Republic flag for `AF`.
@@ -38,10 +56,11 @@ and encodes the **real-world aspect ratio** in its `viewBox`:
 ### Enforcement
 
 `npm run flags:check` (and the `flag-integrity` CI workflow) fail if any
-bundled SVG has a forbidden standardised viewBox. Any PR that touches
-`public/flags/` must pass this check.
+bundled SVG under `public/flags/` **or `public/flags/sub/`** has a forbidden
+standardised viewBox. The check is recursive. Any PR that touches any flag
+file must pass this check.
 
-To re-download all flags correctly:
+To re-download all national/territory flags correctly:
 ```
 node scripts/download-flags.mjs --force --national-only
 ```
@@ -187,6 +206,28 @@ as a single standalone disputed entity with its own flag shown as **(unofficial 
 `SubdivisionMap` redirects clicks on hierarchy children to their parent subdivision code, and highlights
 child polygons when their parent is selected.
 `useSubdivisionGame` excludes hierarchy children from game questions.
+
+## Flag grid ordering — hard rule, do not override without approval
+
+When a country's subdivision flag grid is grouped **by type** (the default when multiple
+types exist), the groups **must** appear in this fixed tier order:
+
+| Tier | What goes here | Examples |
+|------|---------------|---------|
+| **0 — primary subdivisions** | The country's core administrative divisions | Countries (England, Scotland…), States, Provinces, Regions, Departments, Prefectures |
+| **1 — external/dependent territories** | Dependencies or territories outside the mainland | Crown Dependencies, Overseas Territories, Overseas Collectivities, Autonomous Territories, Special Administrative Regions, Constituent Countries, Associated States |
+| **2 — disputed/claimed territories** | Subdivisions whose `isDisputed` flag is set | Falkland Islands (from UK), Gibraltar (from UK), Malvinas (from Argentina) |
+
+**Hard rules:**
+
+1. Tier 0 groups (primary subdivisions) must **always** appear above tier 1 groups (external territories), regardless of how many items are in each group. This prevents a large number of overseas territories from visually displacing the main constituent divisions.
+2. Disputed/claimed territory groups must **always** appear last (tier 2), also regardless of count.
+3. Within each tier, groups are sorted largest first (by item count), then alphabetically by type label.
+
+**Enforcement:** `DEPENDENCY_TYPES` in `src/components/SubdivisionFlagGrid.tsx` lists the
+known tier-1 type labels. Any new external-territory type added to `TERRITORIES_TO_APPEND`
+in `scripts/build-subdivision-meta.mjs` must also be added to `DEPENDENCY_TYPES` if it
+should appear below primary subdivisions.
 
 ## Natural Earth topology and projection — hard rule, do not override without approval
 
