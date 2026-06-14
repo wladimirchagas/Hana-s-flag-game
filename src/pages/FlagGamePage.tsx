@@ -22,6 +22,7 @@ import { addLearnedCode, getDailyFlagCode } from "../lib/learnedFlags";
 import { addCodeToStoredSelection } from "../lib/countrySelection";
 import { fetchCountries, type Country } from "../api/countries";
 import { SubnationalGamePage } from "./SubnationalGamePage";
+import { DisputedTerritoriesGamePage } from "./DisputedTerritoriesGamePage";
 import {
   TERRITORY_NAME,
   DISPUTED_TERRITORY_CODES,
@@ -30,6 +31,7 @@ import {
 import "../App.css";
 
 type SubnationalState = { countryCode: string; countryName: string };
+type DisputedTerritoriesState = { disputedTerritories: true };
 
 type QuizState = {
   flagCount: number;
@@ -45,7 +47,15 @@ type GroupGameState = {
 
 export default function FlagGamePage() {
   const location = useLocation();
-  const navStateRaw = location.state as { subnational?: SubnationalState } | null;
+  const navStateRaw = location.state as {
+    subnational?: SubnationalState;
+    disputedTerritories?: DisputedTerritoriesState["disputedTerritories"];
+  } | null;
+
+  // Disputed territories game: separate component tree so hooks aren't conditional
+  if (navStateRaw?.disputedTerritories) {
+    return <DisputedTerritoriesGamePage />;
+  }
 
   // Subnational game: completely separate component tree so hooks aren't conditional
   if (navStateRaw?.subnational) {

@@ -36,7 +36,8 @@ export type AllFlagsStart =
   | { type: "similarity"; groupCodes: string[]; groupLabel: string; hardcore: boolean }
   | { type: "continent"; groupCodes: string[]; groupLabel: string }
   | { type: "subregion"; groupCodes: string[]; groupLabel: string }
-  | { type: "subnational"; countryCode: string; countryName: string };
+  | { type: "subnational"; countryCode: string; countryName: string }
+  | { type: "disputed" };
 
 export type AllFlagsSetupModalProps = {
   open: boolean;
@@ -44,7 +45,7 @@ export type AllFlagsSetupModalProps = {
   onStart: (start: AllFlagsStart) => void;
 };
 
-type FlagMasterMode = "all195" | "continent" | "subregion" | "similarity" | "subnational";
+type FlagMasterMode = "all195" | "continent" | "subregion" | "similarity" | "subnational" | "disputed";
 
 const MODE_LABELS: Record<FlagMasterMode, string> = {
   all195:      "All 195 World Flags",
@@ -52,9 +53,10 @@ const MODE_LABELS: Record<FlagMasterMode, string> = {
   subregion:   "Flags by sub-continent",
   similarity:  "Similar flags only",
   subnational: "Sub-national flags",
+  disputed:    "Disputed & Claimed Territories",
 };
 
-const MODE_ORDER: readonly FlagMasterMode[] = ["all195", "continent", "subregion", "similarity", "subnational"];
+const MODE_ORDER: readonly FlagMasterMode[] = ["all195", "continent", "subregion", "similarity", "subnational", "disputed"];
 
 export function AllFlagsSetupModal({
   open,
@@ -108,6 +110,8 @@ export function AllFlagsSetupModal({
       ? "Pick a sub-continent — you'll guess every flag from it."
       : mode === "subnational"
       ? "Pick a country — you'll guess all its sub-national division flags."
+      : mode === "disputed"
+      ? "Every disputed & claimed territory flag across all nations. One guess each — no retries."
       : "Pick a group of visually similar flags to test yourself on.";
 
   return (
@@ -280,6 +284,22 @@ export function AllFlagsSetupModal({
               </button>
             </footer>
           </>
+        )}
+
+        {/* ── Disputed & Claimed Territories ── */}
+        {mode === "disputed" && (
+          <footer className="all195__footer">
+            <button type="button" className="all195__cancel" onClick={onClose}>
+              Cancel
+            </button>
+            <button
+              type="button"
+              className="qquiz__play"
+              onClick={() => onStart({ type: "disputed" })}
+            >
+              Play
+            </button>
+          </footer>
         )}
 
         {/* ── Sub-national flags — pick a country via dropdown ── */}

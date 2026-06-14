@@ -91,6 +91,8 @@ export default function LandingPage() {
           },
         },
       })
+    } else if (start.type === 'disputed') {
+      navigate('/game', { state: { disputedTerritories: true } })
     }
   }
 
