@@ -85,12 +85,14 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   //
   // Sources: Wikimedia Commons for complex heraldic SVGs; lipis/flag-icons (GitHub)
   // for mq/nc/mf which have no defined real-world proportions (exempt from viewBox check).
+  // NEVER generate or approximate flag SVG content — if no authoritative source is accessible,
+  // leave the flag absent rather than inventing content. A missing flag is always better than a fake one.
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // green/yellow diagonal with red star; local file
   "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
   "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
   "FR-MF":  `${BASE}flags/mf.svg`,    // Saint Martin local flag (lipis/flag-icons)
-  "FR-GP":  `${BASE}flags/gp.svg`,    // Guadeloupe sun flag (local SVG — Wikimedia URL was unreliable)
-  "FR-RE":  `${BASE}flags/re.svg`,    // Réunion Lö Mahavéli (local SVG — Wikimedia URL was unreliable)
+  "FR-GP":  "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg",
+  "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_R%C3%A9union_(Lo_Mahav%C3%A9li).svg",
   "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
   "FR-BL":  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Saint_Barth%C3%A9lemy_(local).svg",
   "FR-PM":  "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg",
