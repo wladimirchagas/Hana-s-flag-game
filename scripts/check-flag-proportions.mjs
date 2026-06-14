@@ -38,6 +38,7 @@ const EXEMPT_UNOFFICIAL_FLAGS = new Set([
   "GB-NIR.svg", // Ulster Banner — Northern Ireland has no official flag; banner has no
                 // mandated proportions. Source: lipis/flag-icons (via git history).
                 // Wikimedia URL was unreachable; this local copy is used instead.
+  // gp.svg is now bundled (viewBox "0 0 600 400", not exempt); re.svg served via Wikimedia URL
 ]);
 
 /** Recursively collect all .svg files under a directory. */

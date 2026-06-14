@@ -31,17 +31,20 @@ const FLAGS = [
     localOverride: '"SO-SL~": `${BASE}flags/so-sl.svg`',
     note: 'Somaliland flag (unofficial — shown under Somalia)',
   },
+  // GP is already bundled from fonttools/region-flags (viewBox "0 0 600 400").
+  // The entry below uses the CORRECT Wikimedia filename (Unofficial_flag_of_Guadeloupe_(local).svg,
+  // path e/e7/) to re-download it if the local file needs refreshing.
   {
-    url: `${WIKIMEDIA}/0/04/Flag_of_Guadeloupe_%28local%29.svg`,
+    url: `${WIKIMEDIA}/e/e7/Unofficial_flag_of_Guadeloupe_%28local%29.svg`,
     dest: 'public/flags/gp.svg',
     localOverride: '"FR-GP": `${BASE}flags/gp.svg`',
-    note: 'Guadeloupe local/unofficial flag',
+    note: 'Guadeloupe local/unofficial flag (already bundled; re-run to refresh)',
   },
   {
-    url: `${WIKIMEDIA}/c/c3/Flag_of_R%C3%A9union_%28L%C3%B6_Mahav%C3%A9li%29.svg`,
+    url: `${WIKIMEDIA}/f/f8/Flag_of_R%C3%A9union_%28Local%29.svg`,
     dest: 'public/flags/re.svg',
     localOverride: '"FR-RE": `${BASE}flags/re.svg`',
-    note: 'Réunion Lö Mahavéli flag (unofficial)',
+    note: 'Réunion local flag (File:Flag_of_Réunion_(Local).svg, 1000×600 on Wikimedia)',
   },
   {
     url: `${WIKIMEDIA}/4/4a/Flag_of_Mayotte_%28local%29.svg`,

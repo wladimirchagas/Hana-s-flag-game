@@ -23,17 +23,20 @@ our control — a remote URL that works today may be blocked, moved, or rate-lim
 
 ### Outstanding files (currently still using Wikimedia URLs — must be fixed)
 
-The following 8 entries in `LOCAL_FLAG_OVERRIDES` still use remote URLs because Wikimedia is
+The following entries in `LOCAL_FLAG_OVERRIDES` still use remote URLs because Wikimedia is
 blocked by the current server network policy. They must be downloaded and bundled before the
 next release. Use `node scripts/download-unofficial-flags.mjs` once network egress to
 `upload.wikimedia.org` is enabled.
+
+`FR-GP` (`public/flags/gp.svg`) is already bundled from fonttools/region-flags (the Wikimedia
+source file is `commons/e/e7/Unofficial_flag_of_Guadeloupe_(local).svg`; the download script
+will re-download it if the local copy needs refreshing).
 
 | Code | Local target | Wikimedia source |
 |------|-------------|-----------------|
 | `GB-NIR` | `public/flags/sub/GB/GB-NIR.svg` | `commons/d/d0/Ulster_Banner.svg` |
 | `SO-SL~` | `public/flags/so-sl.svg` | `commons/4/4d/Flag_of_Somaliland.svg` |
-| `FR-GP` | `public/flags/gp.svg` | `commons/0/04/Flag_of_Guadeloupe_(local).svg` |
-| `FR-RE` | `public/flags/re.svg` | `commons/c/c3/Flag_of_Réunion_(Lö_Mahavéli).svg` |
+| `FR-RE` | `public/flags/re.svg` | `commons/f/f8/Flag_of_Réunion_(Local).svg` |
 | `FR-YT` | `public/flags/yt-local.svg` | `commons/4/4a/Flag_of_Mayotte_(local).svg` |
 | `FR-BL` | `public/flags/bl.svg` | `commons/b/b4/Flag_of_Saint_Barthélemy_(local).svg` |
 | `FR-PM` | `public/flags/pm.svg` | `commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg` |
