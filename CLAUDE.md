@@ -59,6 +59,27 @@ disputed geo codes. `UNDISPUTED_TERRITORY_PARENT` excludes them. The world map r
 `UNDISPUTED_TERRITORY_PARENT`, making disputed polygons non-clickable.
 **Always pass `UNDISPUTED_TERRITORY_PARENT`, never the full `TERRITORY_PARENT`, to the world map.**
 
+### World map view — disputed landmass colour (hard rule)
+
+Any landmass that is **not** one of the 195 UN states **and** is claimed or disputed by one
+or more nations **must** render in `palette.disputedLand` (a neutral grey), never the regular
+`land`/`poolLand` colour. Painting a contested territory as ordinary sovereign land would imply
+a political position the game must not take.
+
+This is enforced by `WORLD_MAP_DISPUTED_ALPHA2` in `src/components/WorldProgressMap.tsx`, which
+lists the disputed territories that appear as their own standalone polygon (Crimea is matched
+separately by its runtime id `DISPUTED_CRIMEA`):
+
+| Code | Territory | Status |
+|------|-----------|--------|
+| `EH` | Western Sahara | Claimed/administered by Morocco; SADR/Polisario dispute it |
+| `TW` | Taiwan | Governed by the ROC; claimed by the PRC; not a UN member |
+| `DISPUTED_CRIMEA` | Crimea | Administered by Russia; claimed by Ukraine |
+
+**Any** future contested non-UN landmass that renders as its own polygon must be added to
+`WORLD_MAP_DISPUTED_ALPHA2` (or matched by id) and to this table. Do not give a disputed
+landmass the regular country colour.
+
 ### Nation subnational view — flag grid
 
 When browsing a nation's subnational divisions, disputed/claimed territories **are** shown — but only
