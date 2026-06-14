@@ -27,6 +27,16 @@ const FORBIDDEN_VIEWBOXES = new Set([
   "0 0 512 512", // some icon libraries — 1:1, applied to every flag
 ]);
 
+// Unofficial regional/subdivision flags that are intentionally exempt from the
+// viewBox check. These flags have NO government-defined real-world aspect ratio
+// (they are local/unofficial designs), so a 4:3 source is acceptable.
+// Source for all entries below: lipis/flag-icons (GitHub), kept as-is.
+const EXEMPT_UNOFFICIAL_FLAGS = new Set([
+  "mq.svg",  // Martinique — unofficial serpent flag; no defined ratio
+  "nc.svg",  // New Caledonia — FLNKS/Kanak flag; no defined ratio
+  "mf.svg",  // Saint Martin — local collectivity flag; no defined ratio
+]);
+
 async function main() {
   const files = (await readdir(FLAGS_DIR))
     .filter((f) => f.endsWith(".svg") && !f.startsWith("."));
@@ -34,6 +44,7 @@ async function main() {
   const errors = [];
 
   for (const file of files) {
+    if (EXEMPT_UNOFFICIAL_FLAGS.has(file)) continue;
     const content = await readFile(join(FLAGS_DIR, file), "utf8");
     const match = content.slice(0, 512).match(/viewBox=["']([^"']+)["']/);
     if (!match) continue;

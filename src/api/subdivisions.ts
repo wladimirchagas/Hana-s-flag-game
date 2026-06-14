@@ -60,7 +60,6 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "US-AS":  `${BASE}flags/as.svg`,
   "US-GU":  `${BASE}flags/gu.svg`,
   "FR-PF":  `${BASE}flags/pf.svg`,
-  "FR-NC":  `${BASE}flags/nc.svg`,
   "NZ-TK":  `${BASE}flags/tk.svg`,
   "GB-AI":  `${BASE}flags/ai.svg`,
   "GB-BM":  `${BASE}flags/bm.svg`,
@@ -77,24 +76,23 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
 
   // IN-AK~ and IN-GB~ — hidden from India's grid via hierarchy; no flag override needed.
 
-  // French overseas departments (CDN uses department numbers 971-976 instead of ISO codes)
-  "FR-GF":  `${BASE}flags/FR-GF.svg`, // Local file — unofficial regional flag (green/yellow diagonal with red star)
-  "FR-MQ":  `${BASE}flags/mq.svg`,    // Local file — Martinique's regional serpent flag
-
   // ── POLICY: show most-used unofficial flag when official flag = national flag ──
-  // (Do NOT revert these to the French Tricolour without explicit owner approval.)
+  // (Do NOT revert any of these to the French Tricolour without explicit owner approval.)
   //
-  // The territories below have no distinct official flag; their official flag is
-  // the French Tricolour.  Per project policy we show the most widely-used
-  // local/unofficial regional flag and label it "(unofficial flag)" in the grid
-  // (see UNOFFICIAL_SUBDIV_NOTES in src/lib/unofficialSubdivFlags.ts).
+  // Rule: if a subdivision has no distinct official flag (its official flag is the
+  // same as the parent nation's), show the most widely-used local/unofficial flag
+  // and label it "Flag not officially recognised by [Country]".
   //
-  // Sources: Wikimedia Commons (all freely licensed SVGs)
+  // Sources: Wikimedia Commons for complex heraldic SVGs; lipis/flag-icons (GitHub)
+  // for mq/nc/mf which have no defined real-world proportions (exempt from viewBox check).
+  "FR-GF":  `${BASE}flags/FR-GF.svg`, // green/yellow diagonal with red star; local file
+  "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
+  "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
+  "FR-MF":  `${BASE}flags/mf.svg`,    // Saint Martin local flag (lipis/flag-icons)
   "FR-GP":  "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg",
   "FR-RE":  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_R%C3%A9union_(Lo_Mahav%C3%A9li).svg",
   "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
   "FR-BL":  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Saint_Barth%C3%A9lemy_(local).svg",
-  "FR-MF":  "https://upload.wikimedia.org/wikipedia/commons/3/3d/Local_flag_of_the_Collectivity_of_Saint_Martin.svg",
   "FR-PM":  "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg",
   "FR-WF":  "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg",
 };
