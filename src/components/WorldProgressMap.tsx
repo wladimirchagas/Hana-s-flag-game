@@ -180,17 +180,8 @@ const WORLD_MAP_DISPUTED_NAMES = new Set([
   "Somaliland",
   "N. Cyprus",
   "Siachen Glacier",
+  "Gibraltar",
 ]);
-
-// Disputed/claimed territories that are too small to exist as a polygon in the
-// 50m topology (sub-pixel at world scale), so they would render NOWHERE. Each is
-// drawn as a fixed-size grey marker at its true [longitude, latitude] so the
-// territory is still represented and visibly distinct — same neutral treatment
-// as the polygon-based disputed territories, no political judgement implied.
-//   • Gibraltar — UK Overseas Territory; claimed by Spain (~6.7 km²)
-const DISPUTED_MARKER_COORDS: ReadonlyArray<{ name: string; lonLat: [number, number] }> = [
-  { name: "Gibraltar", lonLat: [-5.3536, 36.1408] },
-];
 
 const GEO_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 const WIDTH = 960;
@@ -496,6 +487,36 @@ export function WorldProgressMap({
           }
         }
 
+        // Gibraltar is absent from the 50m topology (~6.7 km² — sub-pixel at
+        // world scale). Inject it at TRUE scale as a small polygon so it is
+        // represented WITHOUT misrepresenting its size: it is a tiny speck at
+        // world zoom and becomes legible only when the user zooms in. Coloured
+        // grey via the name matcher (a disputed UK territory claimed by Spain).
+        // Never enlarge it — a fixed-size marker would misrepresent the territory.
+        {
+          const gibraltarRing: [number, number][] = [
+            [-5.3389, 36.1083], // Europa Point (south tip)
+            [-5.3470, 36.1180],
+            [-5.3540, 36.1350],
+            [-5.3565, 36.1500],
+            [-5.3560, 36.1551], // north-west frontier with Spain
+            [-5.3400, 36.1545], // north-east frontier
+            [-5.3360, 36.1430],
+            [-5.3370, 36.1300],
+            [-5.3389, 36.1083], // close
+          ];
+          // Guard the spherical winding (a backwards ring makes d3 fill the
+          // whole globe minus this speck — see the WS surgery note above).
+          const ar = geoArea({ type: "Polygon", coordinates: [gibraltarRing] } as never);
+          const ring = ar > 2 * Math.PI ? gibraltarRing.slice().reverse() : gibraltarRing;
+          fc.features.push({
+            type: "Feature",
+            id: "GIBRALTAR",
+            properties: { name: "Gibraltar" },
+            geometry: { type: "Polygon", coordinates: [ring] },
+          });
+        }
+
         if (!cancelled) setGeographies(fc.features);
       } catch {
         if (!cancelled) setGeographies([]);
@@ -509,13 +530,12 @@ export function WorldProgressMap({
   // Cold path — only reruns when geography data or center meridian changes.
   // rotationOffset is intentionally excluded: the three-copy translate approach
   // handles globe rotation in O(1) without reprojecting paths on every frame.
-  const { pathByIdx, centroidByAlpha2, spherePath, pxPerDegree, disputedMarkers } = useMemo(() => {
+  const { pathByIdx, centroidByAlpha2, spherePath, pxPerDegree } = useMemo(() => {
     const empty = {
       pathByIdx: new Map<number, string>(),
       centroidByAlpha2: new Map<string, [number, number]>(),
       spherePath: null as string | null,
       pxPerDegree: WIDTH / 360,
-      disputedMarkers: [] as Array<{ name: string; x: number; y: number }>,
     };
     if (geographies.length === 0) return empty;
     const projection = geoEqualEarth()
@@ -556,18 +576,7 @@ export function WorldProgressMap({
     const p1 = projection([centerLongitude + 1, 0]);
     const pxPerDegree = p0 && p1 ? p1[0] - p0[0] : WIDTH / 360;
 
-    // Project the fixed-position markers for disputed territories that have no
-    // polygon in the topology (e.g. Gibraltar). Drawn at constant pixel size so
-    // they stay visible regardless of how small the real territory is.
-    const disputedMarkers: Array<{ name: string; x: number; y: number }> = [];
-    for (const { name, lonLat } of DISPUTED_MARKER_COORDS) {
-      const pt = projection(lonLat);
-      if (pt && isFinite(pt[0]) && isFinite(pt[1])) {
-        disputedMarkers.push({ name, x: pt[0], y: pt[1] });
-      }
-    }
-
-    return { pathByIdx, centroidByAlpha2, spherePath, pxPerDegree, disputedMarkers };
+    return { pathByIdx, centroidByAlpha2, spherePath, pxPerDegree };
   }, [geographies, centerLongitude]);
 
   // O(1) hot path — no memo, no reprojection. Three copies of the country
@@ -891,29 +900,6 @@ export function WorldProgressMap({
                     highlightCodes={highlightCodes}
                   />
                 )}
-                {/* Disputed territories with no polygon in the topology
-                    (e.g. Gibraltar) — drawn as a small fixed-size grey diamond
-                    at their true location so they are still represented. Inside
-                    the per-copy group so they rotate with the map. Non-clickable
-                    and neutral, matching the polygon-based disputed territories. */}
-                {disputedMarkers.map((m) => (
-                  <rect
-                    key={`dm-${m.name}`}
-                    x={m.x - 3}
-                    y={m.y - 3}
-                    width={6}
-                    height={6}
-                    transform={`rotate(45 ${m.x.toFixed(2)} ${m.y.toFixed(2)})`}
-                    fill={palette.disputedLand}
-                    stroke={palette.stroke}
-                    strokeWidth={0.6}
-                    strokeOpacity={0.85}
-                    vectorEffect="non-scaling-stroke"
-                    style={{ pointerEvents: "none" }}
-                  >
-                    <title>{m.name}</title>
-                  </rect>
-                ))}
               </g>
             ))}
           </g>

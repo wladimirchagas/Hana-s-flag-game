@@ -93,17 +93,21 @@ by another nation. **Any** future contested non-UN landmass that renders as its 
 be added to the matching set and to this table. Do not give a disputed landmass the regular
 country colour.
 
-**Disputed territories absent from the topology.** Some disputed territories are too small to
-exist as a polygon in the 50m topology (sub-pixel at world scale) and would render nowhere.
-These are drawn as a **fixed-size grey marker** at their true coordinates via
-`DISPUTED_MARKER_COORDS` in `WorldProgressMap.tsx`, so the territory is still represented:
+**Disputed territories absent from the topology — represent at TRUE scale, never enlarge.**
+Some disputed territories are too small to exist as a polygon in the 50m topology (sub-pixel at
+world scale) and would render nowhere. These are injected at runtime as a **true-scale polygon**
+at their real coordinates (in the `WorldProgressMap` `useEffect`, like the Crimea extraction), so
+the territory is represented but its size is never distorted — it is a tiny speck at world zoom and
+becomes legible only when the user zooms in (max zoom is 24×).
 
-| Marker | Territory | Status |
-|--------|-----------|--------|
-| `Gibraltar` | Gibraltar | UK Overseas Territory (~6.7 km²); claimed by Spain |
+| Injected polygon | Territory | True area |
+|------------------|-----------|-----------|
+| id `GIBRALTAR` (name "Gibraltar") | Gibraltar | ~6 km² (real ≈ 6.7 km²); UK territory claimed by Spain |
 
-A disputed territory must never be silently missing from the world map: if it has no polygon,
-it gets a marker here.
+**HARD RULE — never misrepresent size.** A disputed territory must never be silently missing from
+the world map, but it must NEVER be drawn larger than its real footprint (no fixed-size markers,
+no enlarged dots, no minimum sizes). If it is too small to see, the answer is zoom, not enlargement.
+The same rule applies to every nation, subdivision and landmass on every map.
 
 ### Nation subnational view — flag grid
 
