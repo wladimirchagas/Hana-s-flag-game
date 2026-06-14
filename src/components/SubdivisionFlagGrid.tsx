@@ -93,6 +93,8 @@ export function SubdivisionFlagGrid({
       "Special Administrative Region",
       "Constituent Country",
       "Associated State",
+      "External Territory",
+      "Unincorporated Territory",
     ]);
 
     function groupTier(typeLabel: string, allDisputed: boolean): number {
