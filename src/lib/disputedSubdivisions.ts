@@ -134,19 +134,6 @@ export function getSubdivisionDisputeLabel(
     return null;
   }
 
-  // Some disputed territories are shown under a nation that OFFICIALLY RECOGNISES
-  // them (not a claimant). No dispute label is appropriate there — the nation
-  // considers the flag and territory fully legitimate.
-  // Key: disputed subdivision code → ISO alpha-2 of the recognising parent.
-  const RECOGNISED_BY: Readonly<Record<string, string>> = {
-    // Türkiye is the sole UN member that recognises the TRNC as an independent state.
-    // When TR-NC~ is shown under Turkey's flag grid it must carry no dispute label.
-    "TR-NC~": "TR",
-  };
-  if (parent && RECOGNISED_BY[code] === parent) {
-    return null;
-  }
-
   // Flag is "unofficial" when displayed under a claimant that does not officially
   // recognise the territory's flag.
   const isUnofficial =
