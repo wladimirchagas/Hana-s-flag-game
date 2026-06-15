@@ -190,12 +190,20 @@ export function SubdivisionMap({
   }, [geoData]);
 
   // Compute projection + paths fitted to the feature collection.
-  // The projection is fitted to:
-  //   - The selected territory's features when a territory subdivision is active
-  //     (so the territory fills the viewport instead of appearing as a tiny dot)
-  //   - Otherwise, the main-country features only (territory features — tagged with
-  //     _isTerritory — are excluded from fitExtent so distant territories like the
-  //     Falklands don't force a near-global zoom-out for the UK view)
+  //
+  // HARD RULE — fit the projection to ALL features (see CLAUDE.md
+  // "Subdivision map default view"). Every subdivision a country has — including
+  // its distant overseas departments and territories — MUST be inside the viewport
+  // when the user first lands on the page. The user only sees specific parts by
+  // choosing to zoom/pan. This is why we fit to `geoData.features` (every feature),
+  // NOT to a "main-country-only" subset.
+  //
+  // This rule has been reverted before (commit 65337d9 excluded `_isTerritory`
+  // features from fitExtent, which made France's overseas departments — French
+  // Guiana, Guadeloupe, Martinique, Réunion, Mayotte — invisible on landing,
+  // showing only metropolitan France). DO NOT re-introduce a `_isTerritory`
+  // filter here. Features too small to see at the fitted scale are still made
+  // discoverable via the constant-size dot indicators (smallSubdivCodes) below.
   const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes } = useMemo(() => {
     const empty = {
       pathByIdx: new Map<number, string>(),
@@ -205,11 +213,11 @@ export function SubdivisionMap({
     };
     if (!geoData || geoData.features.length === 0) return empty;
 
-    // Exclude territory features so distant overseas territories (e.g. Falkland Islands
-    // at −52°S, South Georgia, British Indian Ocean Territory) don't force a near-global
-    // zoom-out that makes the mainland appear as a tiny invisible speck.
-    const mainFeatures = geoData.features.filter(f => !f.properties._isTerritory);
-    const fitFeatures = mainFeatures.length > 0 ? mainFeatures : geoData.features;
+    // Fit to EVERY feature so all subdivisions (including distant overseas
+    // departments/territories) are visible on landing. See the HARD RULE comment
+    // above and CLAUDE.md "Subdivision map default view". Do NOT filter out
+    // `_isTerritory` features here — that hides France's overseas departments.
+    const fitFeatures = geoData.features;
 
     const projection = geoEqualEarth().fitExtent(
       [
