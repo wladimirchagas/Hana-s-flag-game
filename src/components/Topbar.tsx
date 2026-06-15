@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { MuteToggle } from "./MuteToggle";
+import { ShareLinkButton } from "./ShareLinkButton";
 import { useNavigationGuard } from "../context/NavigationGuardContext";
 
 type GameNavState = {
@@ -25,6 +26,7 @@ export function Topbar() {
   const { triggerGuard } = useNavigationGuard();
   const isHome = location.pathname === "/";
   const isGame = location.pathname === "/game";
+  const isLearn = location.pathname === "/learn";
 
   const doNavigateHome = () => navigate("/");
 
@@ -70,6 +72,7 @@ export function Topbar() {
       </div>
       <div className="site-topbar__center" id="site-topbar-slot" />
       <div className="site-topbar__right">
+        {(isGame || isLearn) && <ShareLinkButton />}
         <MuteToggle />
         <ThemeToggle />
       </div>

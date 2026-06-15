@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
@@ -32,6 +32,7 @@ import {
 } from "../lib/countrySelection";
 import {
   DEFAULT_ERA_ID,
+  ERAS,
   eraAllowsModernFlagFallback,
   getEra,
   polityInfo,
@@ -108,7 +109,38 @@ function selectionFlag(s: Selection, baseUrl: string): string | null {
 // for both modern + historical entities.)
 
 export default function LearnPage() {
-  const [eraId, setEraId] = useState<Era["id"]>(DEFAULT_ERA_ID);
+  // --- Shareable-link URL state ---
+  // The page reflects its view (era, selected country/polity, subdivision
+  // drill-down) in the query string so a copied URL reproduces the view.
+  const [searchParams, setSearchParams] = useSearchParams();
+  // Captured exactly once so async hydration (countries / map data arrive
+  // later) reads the link's intent, not the live URL we then write back to.
+  const initialParamsRef = useRef<{
+    era: string | null;
+    country: string | null;
+    subdivisions: boolean;
+    sub: string | null;
+    polity: string | null;
+  } | null>(null);
+  if (initialParamsRef.current === null) {
+    initialParamsRef.current = {
+      era: searchParams.get("era"),
+      country: searchParams.get("country")?.toUpperCase() ?? null,
+      subdivisions: searchParams.get("subdivisions") === "1",
+      sub: searchParams.get("sub")?.toUpperCase() ?? null,
+      polity: searchParams.get("polity"),
+    };
+  }
+  // Tracks whether the one-time hydration from the URL has completed; the
+  // write-back effect stays silent until it has, so it can't clobber the link.
+  const hydratedRef = useRef(false);
+  const subHydratedRef = useRef(false);
+  const polityHydratedRef = useRef(false);
+
+  const [eraId, setEraId] = useState<Era["id"]>(() => {
+    const e = initialParamsRef.current!.era;
+    return e && ERAS.some((x) => x.id === e) ? e : DEFAULT_ERA_ID;
+  });
   const [countries, setCountries] = useState<Country[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [hovered, setHovered] = useState<Selection | null>(null);
@@ -491,6 +523,97 @@ export default function LearnPage() {
     // state from closure; intentional that we don't add it to deps.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [eraId, isModernEra, availableHistoricalNames, countries]);
+
+  // --- URL hydration (shared/bookmarked link → state) ---
+  // Country & subdivision drill-down need the country list loaded first, so
+  // this retries until `countries` arrives, then applies the link once.
+  useEffect(() => {
+    if (hydratedRef.current) return;
+    const init = initialParamsRef.current!;
+    if (init.country && isModernEra) {
+      if (countries.length === 0) return; // wait for the country list
+      const c = codeToCountry.get(init.country);
+      if (c) {
+        if (init.subdivisions) {
+          // enterSubdivisionModeForCountry handles the selection + geo fetch
+          // but assumes the view is already in subdivision mode (it's used to
+          // hop between countries), so turn the mode on first for a cold link.
+          setSubdivisionMode(true);
+          void enterSubdivisionModeForCountry(c);
+        } else {
+          setSelected({ kind: "modern", country: c });
+        }
+      }
+    }
+    hydratedRef.current = true;
+  }, [countries, codeToCountry, enterSubdivisionModeForCountry, isModernEra]);
+
+  // Select the deep-linked subdivision once its country's geometry has loaded.
+  useEffect(() => {
+    if (subHydratedRef.current) return;
+    const init = initialParamsRef.current!;
+    if (!init.sub || !init.subdivisions) {
+      subHydratedRef.current = true;
+      return;
+    }
+    if (!subdivisionCountry || subdivisionGeo == null) return; // wait for geo
+    const meta = SUBDIVISION_META[subdivisionCountry.code];
+    const div = meta?.divisions.find((d) => d.code === init.sub);
+    if (div) setSelectedSubdivision(div);
+    subHydratedRef.current = true;
+  }, [subdivisionCountry, subdivisionGeo]);
+
+  // Select the deep-linked historical polity once the era's map data loads.
+  useEffect(() => {
+    if (polityHydratedRef.current) return;
+    const init = initialParamsRef.current!;
+    if (!init.polity || isModernEra) {
+      polityHydratedRef.current = true;
+      return;
+    }
+    if (availableHistoricalNames.size === 0) return; // wait for map data
+    if (availableHistoricalNames.has(init.polity)) {
+      const sel = selectionFromPolityName(init.polity);
+      if (sel) setSelected(sel);
+    }
+    polityHydratedRef.current = true;
+    // selectionFromPolityName is recreated each render and read from closure.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [availableHistoricalNames, isModernEra]);
+
+  // --- URL write-back (state → URL) ---
+  // Stays silent until the initial hydration completes so the link's intent
+  // is consumed first. Only navigational state is serialised — transient UI
+  // (hover, rotation, zoom, map orientation) is deliberately left out so the
+  // links stay clean and reproducible.
+  useEffect(() => {
+    if (!hydratedRef.current) return;
+    const next = new URLSearchParams();
+    if (eraId !== DEFAULT_ERA_ID) next.set("era", eraId);
+    if (isModernEra) {
+      if (subdivisionMode && subdivisionCountry) {
+        next.set("country", subdivisionCountry.code);
+        next.set("subdivisions", "1");
+        if (selectedSubdivision) next.set("sub", selectedSubdivision.code);
+      } else if (selected?.kind === "modern") {
+        next.set("country", selected.country.code);
+      }
+    } else if (selected?.kind === "historical") {
+      next.set("polity", selected.name);
+    }
+    if (next.toString() !== searchParams.toString()) {
+      setSearchParams(next, { replace: true });
+    }
+  }, [
+    eraId,
+    isModernEra,
+    selected,
+    subdivisionMode,
+    subdivisionCountry,
+    selectedSubdivision,
+    searchParams,
+    setSearchParams,
+  ]);
 
   // Compute the flag list for the current era. For Today this is just
   // the modern country list with REST Countries’ subregion. For

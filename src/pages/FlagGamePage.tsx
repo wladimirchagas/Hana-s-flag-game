@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { LeaveGameDialog } from "../components/LeaveGameDialog";
 import { useNavigationGuard } from "../context/NavigationGuardContext";
 import { useGame } from "../hooks/useGame";
@@ -28,74 +28,81 @@ import {
   DISPUTED_TERRITORY_CODES,
   UNDISPUTED_TERRITORY_PARENT,
 } from "../lib/territoryParentMap";
+import {
+  hasGameMode,
+  paramsToGameConfig,
+  type GameConfig,
+} from "../lib/gameShareUrl";
 import "../App.css";
-
-type SubnationalState = { countryCode: string; countryName: string };
-type DisputedTerritoriesState = { disputedTerritories: true };
 
 type QuizState = {
   flagCount: number;
 };
 
-type GroupGameState = {
-  groupCodes: string[];
-  groupLabel: string;
-  hardcore: boolean;
-  /** Short label shown in the header chip, e.g. "By Continent". */
-  modeLabel: string;
-};
+/**
+ * Resolve the game config from router state (set when launched in-app) or,
+ * failing that, from the URL query string (a shared/bookmarked link). This is
+ * what makes `/game?mode=…` deep-links reproduce the right game.
+ */
+function useResolvedGameConfig(): GameConfig {
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
+  const navState = location.state as GameConfig | null;
+  if (hasGameMode(navState)) return navState;
+  return paramsToGameConfig(searchParams) ?? {};
+}
 
 export default function FlagGamePage() {
-  const location = useLocation();
-  const navStateRaw = location.state as {
-    subnational?: SubnationalState;
-    disputedTerritories?: DisputedTerritoriesState["disputedTerritories"];
-  } | null;
+  const config = useResolvedGameConfig();
 
   // Disputed territories game: separate component tree so hooks aren't conditional
-  if (navStateRaw?.disputedTerritories) {
+  if (config.disputedTerritories) {
     return <DisputedTerritoriesGamePage />;
   }
 
   // Subnational game: completely separate component tree so hooks aren't conditional
-  if (navStateRaw?.subnational) {
+  if (config.subnational) {
     return (
       <SubnationalGamePage
-        countryCode={navStateRaw.subnational.countryCode}
-        countryName={navStateRaw.subnational.countryName}
+        countryCode={config.subnational.countryCode}
+        countryName={config.subnational.countryName}
       />
     );
   }
 
   // Bumping this remounts FlagGameInner, which re-runs useGame with the same
-  // router state — the cleanest reset for the "Play again" CTA in Hana's Game.
-  return <FlagGamePageInner />;
+  // config — the cleanest reset for the "Play again" CTA in Hana's Game.
+  return <FlagGamePageInner config={config} />;
 }
 
-function FlagGamePageInner() {
+function FlagGamePageInner({ config }: { config: GameConfig }) {
   const [playAgainNonce, setPlayAgainNonce] = useState(0);
   return (
     <FlagGameInner
       key={playAgainNonce}
+      config={config}
       onPlayAgain={() => setPlayAgainNonce((n) => n + 1)}
     />
   );
 }
 
-function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
+function FlagGameInner({
+  config,
+  onPlayAgain,
+}: {
+  config: GameConfig;
+  onPlayAgain: () => void;
+}) {
   const location = useLocation();
   const navigate = useNavigate();
-  const navState = location.state as
-    | { codes?: string[]; quiz?: QuizState; groupGame?: GroupGameState }
-    | null;
   const filterCodes =
-    Array.isArray(navState?.codes) && navState!.codes!.length > 0
-      ? navState!.codes!
-      : navState?.groupGame?.groupCodes && navState.groupGame.groupCodes.length > 0
-        ? navState.groupGame.groupCodes
+    Array.isArray(config.codes) && config.codes.length > 0
+      ? config.codes
+      : config.groupGame?.groupCodes && config.groupGame.groupCodes.length > 0
+        ? config.groupGame.groupCodes
         : null;
-  const quiz = navState?.quiz ?? null;
-  const groupGame = navState?.groupGame ?? null;
+  const quiz: QuizState | null = config.quiz ?? null;
+  const groupGame = config.groupGame ?? null;
   const isCustomGame = filterCodes !== null && quiz === null && groupGame === null;
   const isQuickQuiz = quiz !== null;
   const isGroupGame = groupGame !== null;
