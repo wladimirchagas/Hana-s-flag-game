@@ -42,7 +42,8 @@ export function ShareLinkButton() {
       aria-label="Share a link to this page"
       title="Share a link to this page"
     >
-      {copied ? "✓ Copied" : "🔗 Share"}
+      <span className="site-topbar__btn-icon" aria-hidden="true">{copied ? "✓" : "🔗"}</span>
+      <span className="site-topbar__btn-label">{copied ? "Copied" : "Share"}</span>
     </button>
   );
 }

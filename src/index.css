@@ -461,6 +461,36 @@ a {
   display: contents;
 }
 
+/* Leading glyph inside the pill nav buttons (Home / Game selection / Share /
+   World map). Kept at a steady size so the icon reads clearly when the text
+   label collapses on narrow screens. */
+.site-topbar__btn-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* === Narrow screens: collapse nav buttons to icons ===
+   On phones the full set (Home, Game selection, the in-game timer, Share,
+   mute, theme) overflows the bar and clips. Hiding the text labels turns the
+   pills into compact icon buttons; aria-label/title keep them accessible. */
+@media (max-width: 600px) {
+  .site-topbar {
+    gap: 0.45rem;
+  }
+  .site-topbar__left,
+  .site-topbar__right {
+    gap: 0.4rem;
+  }
+  .site-topbar__home,
+  .site-topbar__back,
+  .site-topbar__share {
+    padding: 0.4rem 0.6rem;
+  }
+  .site-topbar__btn-label {
+    display: none;
+  }
+}
+
 /* Deprecated names — kept as no-ops so any straggling references don't
    blow up. The actual rules above are on .site-topbar. */
 .global-theme-toggle,

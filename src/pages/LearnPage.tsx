@@ -838,8 +838,15 @@ export default function LearnPage() {
         const slot = document.getElementById(SITE_TOPBAR_LEFT_SLOT_ID);
         if (!slot) return null;
         return createPortal(
-          <button type="button" className="site-topbar__back" onClick={exitSubdivisionMode}>
-            ← World map
+          <button
+            type="button"
+            className="site-topbar__back"
+            onClick={exitSubdivisionMode}
+            aria-label="World map"
+            title="World map"
+          >
+            <span className="site-topbar__btn-icon" aria-hidden="true">←</span>
+            <span className="site-topbar__btn-label">World map</span>
           </button>,
           slot,
         );
