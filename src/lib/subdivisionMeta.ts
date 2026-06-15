@@ -4869,10 +4869,12 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "TR-56", name: "Siirt", typeLabel: "Province" },
     { code: "TR-69", name: "Bayburt", typeLabel: "Province" },
     { code: "TR-29", name: "Gümüşhane", typeLabel: "Province" },
-    // Türkiye RECOGNISES the TRNC as an independent state (it does not merely "claim" it).
-    // typeLabel "Recognised State" prevents the "(claimed state)" misnomer from appearing
-    // in the learn-mode flag grid under Turkey.
-    { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Recognised State", isDisputed: true }
+    // Türkiye RECOGNISES the TRNC as an independent state (does not merely "claim" it).
+    // typeLabel "Disputed Territory" matches the treatment of Falkland Islands (GB-FK)
+    // and Gibraltar (GB-GI) under the UK — the administering nation groups the territory
+    // as "disputed" to inform users of the international contest, without implying the
+    // administering nation itself disputes the territory.
+    { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "TT": {
