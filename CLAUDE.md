@@ -407,6 +407,47 @@ a card label; change the label logic instead.
 `"Claimed Territory"` because they are **hidden** from their claimant's flag grid entirely
 via `DISPUTED_TERRITORY_HIERARCHY` and are never rendered as visible cards.
 
+## Subdivision map default view — hard rule, do not override without approval
+
+**When the user first lands on a country's subdivision map, EVERY subdivision the country
+has must be inside the viewport — including all distant overseas departments and territories.**
+The user sees specific parts of the country **only** by choosing to zoom/pan. The default
+(unzoomed) view must never crop out any subdivision.
+
+### Rule
+
+`SubdivisionMap.tsx` fits the Equal Earth projection (`fitExtent`) to **all** features in
+`geoData.features`. **Never** filter the feature set passed to `fitExtent` down to a
+"main-country-only" subset (e.g. by excluding `_isTerritory` features). Doing so hides a
+country's overseas subdivisions on landing.
+
+```ts
+// CORRECT — fit to every feature so all subdivisions are visible on landing
+const fitFeatures = geoData.features;
+
+// WRONG — hides France's overseas departments (French Guiana, Guadeloupe,
+// Martinique, Réunion, Mayotte), New Caledonia, French Polynesia, etc.
+const mainFeatures = geoData.features.filter(f => !f.properties._isTerritory);
+const fitFeatures = mainFeatures.length > 0 ? mainFeatures : geoData.features;
+```
+
+### Why this keeps getting reverted (do not repeat)
+
+This was implemented in #228 (commit `c151303`, "show all subdivisions including distant
+territories"), then **wrongly reverted** in commit `65337d9` which re-added an `_isTerritory`
+filter to avoid a "tiny mainland speck" for the UK. That revert broke France: only metropolitan
+France rendered and all five overseas departments disappeared. The trade-off is intentional —
+**a small-but-complete view always beats a large-but-incomplete one.** Features too small to
+see at the fitted scale are kept discoverable by the constant-size dot indicators
+(`smallSubdivCodes`), so nothing is ever truly invisible.
+
+### Verification
+
+When changing anything in `SubdivisionMap.tsx`'s projection/`fitExtent` logic, open France's
+subdivision map in the running app and confirm all five overseas departments (French Guiana,
+Guadeloupe, Martinique, Réunion, Mayotte) plus the overseas collectivities are visible (as
+polygons or dots) on the default, unzoomed view — not just metropolitan France.
+
 ## Natural Earth topology and projection — hard rule, do not override without approval
 
 The world map uses the Natural Earth 50m topology bundled at `public/countries-50m.json`
