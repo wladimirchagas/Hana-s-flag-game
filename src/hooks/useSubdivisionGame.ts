@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { fetchMergedSubdivisionGeo, hasSubdivisionFlag } from "../api/subdivisions";
+import { fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
-import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
+import { getPlayableSubdivisions } from "../lib/playableSubdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 import type { SubdivisionFeatureCollection } from "../types/subdivision";
 
@@ -113,18 +113,10 @@ export function useSubdivisionGame(
         }
 
         setGeoData(geo);
-        // Only include divisions that have a flag; deduplicate by ISO code
-        // (SUBDIVISION_META source data sometimes has the same code twice).
-        // Hierarchy children (e.g. AR-ML~, ES-GIB~, IN-AK~, IN-GB~) are excluded:
-        // their landmass redirects to the parent subdivision on the map, so asking
-        // about them as standalone game targets would be incorrect.
-        const seen = new Set<string>();
-        const divs = metaEntry.divisions.filter((d) => {
-          if (d.code in DISPUTED_TERRITORY_HIERARCHY) return false;
-          if (!hasSubdivisionFlag(d.code) || seen.has(d.code)) return false;
-          seen.add(d.code);
-          return true;
-        });
+        // Only quiz divisions that have a flag, aren't hierarchy children, and are
+        // deduplicated by ISO code. This is shared with the Flag Master menu (via
+        // getPlayableSubdivisions) so the count shown there matches what's played.
+        const divs = getPlayableSubdivisions(countryCode);
         if (divs.length === 0) {
           setError(`No sub-national flags available for ${countryName}.`);
           setPhase("error");

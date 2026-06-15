@@ -12,6 +12,7 @@ import {
 } from "../lib/continentGroups";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
+import { playableSubdivisionFlagCount } from "../lib/playableSubdivisions";
 
 function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
   const map: Partial<Record<FlagSimilarity, string[]>> = {};
@@ -26,9 +27,12 @@ function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
 
 const SIM_GROUP_CODES = buildGroupCodesMap();
 
-// Countries that have subdivision data, sorted by name
+// Countries that actually have playable sub-national flags, sorted by name.
+// We filter on the playable flag count (not just the presence of SUBDIVISION_META)
+// so countries whose divisions have no distinct flags — e.g. Afghanistan — never
+// appear as a selectable option that would lead to an empty game.
 const SUBNATIONAL_COUNTRIES = ALL_COUNTRY_OPTIONS
-  .filter((c) => SUBDIVISION_META[c.code] != null)
+  .filter((c) => SUBDIVISION_META[c.code] != null && playableSubdivisionFlagCount(c.code) > 0)
   .sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
 
 export type AllFlagsStart =
@@ -305,8 +309,9 @@ export function AllFlagsSetupModal({
         {/* ── Sub-national flags — pick a country via dropdown ── */}
         {mode === "subnational" && (() => {
           const selected = SUBNATIONAL_COUNTRIES.find((c) => c.code === subnationalCountry);
-          const meta = selected ? SUBDIVISION_META[selected.code] : null;
-          const count = meta?.divisions.length ?? 0;
+          // Count the flags the game will actually quiz, not the raw division
+          // total — they differ whenever some divisions have no distinct flag.
+          const count = selected ? playableSubdivisionFlagCount(selected.code) : 0;
           return (
             <>
               <div className="all195__body all195__body--subnational">
@@ -327,7 +332,7 @@ export function AllFlagsSetupModal({
                 </div>
                 {selected && (
                   <p className="all195__subnational-count">
-                    {count} {meta?.pluralLabel?.toLowerCase() ?? "division"}{count === 1 ? "" : "s"}
+                    {count} flag{count === 1 ? "" : "s"}
                   </p>
                 )}
               </div>
