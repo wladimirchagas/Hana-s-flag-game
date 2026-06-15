@@ -8,7 +8,6 @@ import type {
 } from "../types/subdivision";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import {
-  getSubdivisionDisputeLabel,
   DISPUTED_TERRITORY_HIERARCHY,
   DISPUTED_HIERARCHY_CHILDREN_OF,
 } from "../lib/disputedSubdivisions";
@@ -173,12 +172,6 @@ export function SubdivisionMap({
 
   const isInteractive = !!onSelect && !disabled;
 
-  const getDisputedSuffix = (code: string) => {
-    const countryMeta = countryCode ? SUBDIVISION_META[countryCode.toUpperCase()] : null;
-    const div = countryMeta?.divisions.find((d) => d.code === code);
-    const dispute = getSubdivisionDisputeLabel(code, div?.typeLabel ?? "", countryCode);
-    return dispute ? ` (${dispute.text})` : "";
-  };
   // Hide popover when disabled
   useEffect(() => {
     if (disabled) setPopover(null);
@@ -495,10 +488,7 @@ export function SubdivisionMap({
                     }
                   >
                     {name ? (
-                      <title>
-                        {name}
-                        {getDisputedSuffix(code)}
-                      </title>
+                      <title>{name}</title>
                     ) : null}
                   </path>
                 );
@@ -574,7 +564,6 @@ export function SubdivisionMap({
             >
               <span className="map-popover__name">
                 {popover.name}
-                {getDisputedSuffix(popover.code)}
               </span>
               {onConfirm ? (
                 <button
