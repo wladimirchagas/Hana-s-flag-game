@@ -55,8 +55,15 @@ export function Topbar() {
         {isHome ? (
           <span className="site-topbar__brand">Hana&apos;s Flag Game</span>
         ) : (
-          <button type="button" className="site-topbar__home" onClick={handleHomeClick}>
-            ← Home
+          <button
+            type="button"
+            className="site-topbar__home"
+            onClick={handleHomeClick}
+            aria-label="Home"
+            title="Home"
+          >
+            <span className="site-topbar__btn-icon" aria-hidden="true">🏠</span>
+            <span className="site-topbar__btn-label">Home</span>
           </button>
         )}
         {isGame && (
@@ -64,8 +71,11 @@ export function Topbar() {
             type="button"
             className="site-topbar__back"
             onClick={handleBackToGameSelection}
+            aria-label="Game selection"
+            title="Game selection"
           >
-            ← Game selection
+            <span className="site-topbar__btn-icon" aria-hidden="true">←</span>
+            <span className="site-topbar__btn-label">Game selection</span>
           </button>
         )}
         <div id="site-topbar-left-slot" className="site-topbar__left-slot" />
