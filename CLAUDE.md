@@ -529,6 +529,48 @@ silently falls back to the raw ISO code (`parentName = parent ?? ""`). The only 
 catch this is the visual verification step — there is no automated check. Add the
 visual check to every PR that touches `disputedSubdivisions.ts` or `unofficialSubdivFlags.ts`.
 
+## Sub-national flags menu must match the game exactly — hard rule, do not override without approval
+
+**The Flag Master "Sub-national flags" picker must only offer countries that have at least one
+playable flag, and the count it shows must equal the number of flags the game will actually quiz.**
+
+A country only belongs in the picker if it contributes **playable** subdivision flags. A
+subdivision is *playable* when **all** of the following hold (this is the single source of truth,
+implemented in `getPlayableSubdivisions()` in `src/lib/playableSubdivisions.ts`):
+
+1. it has a distinct flag — `hasSubdivisionFlag(code)` is `true`;
+2. it is **not** a disputed-territory hierarchy child (`code in DISPUTED_TERRITORY_HIERARCHY`) —
+   those redirect to a parent subdivision and are never standalone questions; and
+3. its ISO code has not already been counted (the source data occasionally lists a code twice).
+
+### Rules
+
+1. **Never list a country with zero playable flags** in the `SUBNATIONAL_COUNTRIES` dropdown in
+   `src/components/AllFlagsSetupModal.tsx`. Filtering on `SUBDIVISION_META[code] != null` alone is
+   **wrong** — it let flagless countries (e.g. Afghanistan, whose 34 provinces have no flags)
+   appear and drop the player into an empty "No sub-national flags available" game. Always also
+   require `playableSubdivisionFlagCount(code) > 0`.
+
+2. **Never display the raw `divisions.length`** as the menu count. Show
+   `playableSubdivisionFlagCount(code)` — the count of flags the game will actually ask about.
+   The label reads `N flag(s)`; do not append an extra plural "s" to the already-plural
+   `pluralLabel` (that produced the "provincess" bug).
+
+3. **Never duplicate the playable-flag filter inline.** Both the menu and the game
+   (`useSubdivisionGame` in `src/hooks/useSubdivisionGame.ts`) **must** call
+   `getPlayableSubdivisions()` / `playableSubdivisionFlagCount()`. If the filter logic ever needs
+   to change, change it in `src/lib/playableSubdivisions.ts` only, so the menu and the game can
+   never drift apart.
+
+### Enforcement
+
+There is no automated check. When reviewing any PR that touches `AllFlagsSetupModal.tsx`,
+`useSubdivisionGame.ts`, or `playableSubdivisions.ts`, confirm the dropdown is filtered by
+`playableSubdivisionFlagCount(code) > 0` and that both the menu and the game derive their
+division set from `getPlayableSubdivisions()`. Verify in the running app that a known flagless
+country (Afghanistan) is absent from the picker and that a listed country's "N flags" count
+matches the number of questions the game then asks.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
