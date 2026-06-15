@@ -32,11 +32,15 @@ next release. Use `node scripts/download-unofficial-flags.mjs` once network egre
 source file is `commons/e/e7/Unofficial_flag_of_Guadeloupe_(local).svg`; the download script
 will re-download it if the local copy needs refreshing).
 
+`FR-RE` (`public/flags/re.png`) is already bundled as a 1280×854 PNG (3:2). The Wikimedia SVG
+URL (`commons/f/f8/Flag_of_Réunion_(Local).svg`) was blank on all tested devices — the file
+appears not to exist or was renamed. The PNG was provided directly and shows the correct
+Lö Mahavéli design (blue field, yellow rays, red triangle).
+
 | Code | Local target | Wikimedia source |
 |------|-------------|-----------------|
 | `GB-NIR` | `public/flags/sub/GB/GB-NIR.svg` | `commons/d/d0/Ulster_Banner.svg` |
 | `SO-SL~` | `public/flags/so-sl.svg` | `commons/4/4d/Flag_of_Somaliland.svg` |
-| `FR-RE` | `public/flags/re.svg` | `commons/f/f8/Flag_of_Réunion_(Local).svg` |
 | `FR-YT` | `public/flags/yt-local.svg` | `commons/4/4a/Flag_of_Mayotte_(local).svg` |
 | `FR-BL` | `public/flags/bl.svg` | `commons/b/b4/Flag_of_Saint_Barthélemy_(local).svg` |
 | `FR-PM` | `public/flags/pm.svg` | `commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg` |
