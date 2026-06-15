@@ -1003,7 +1003,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CY-06~", name: "Kyrenia", typeLabel: "District", isDisputed: true },
     // Northern Cyprus — TRNC declared 1983; recognised only by Türkiye.
     // Cyprus regards it as occupied territory; TRNC flag shown as unofficial.
-    { code: "CY-NC~", name: "Northern Cyprus", typeLabel: "Claimed Territory", isDisputed: true }
+    { code: "CY-NC~", name: "Northern Cyprus", typeLabel: "Disputed Territory", isDisputed: true }
     ],
   },
   "CZ": {
@@ -4869,7 +4869,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "TR-56", name: "Siirt", typeLabel: "Province" },
     { code: "TR-69", name: "Bayburt", typeLabel: "Province" },
     { code: "TR-29", name: "Gümüşhane", typeLabel: "Province" },
-    { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Claimed State", isDisputed: true }
+    // Türkiye RECOGNISES the TRNC as an independent state (it does not merely "claim" it).
+    // typeLabel "Recognised State" prevents the "(claimed state)" misnomer from appearing
+    // in the learn-mode flag grid under Turkey.
+    { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Recognised State", isDisputed: true }
     ],
   },
   "TT": {
