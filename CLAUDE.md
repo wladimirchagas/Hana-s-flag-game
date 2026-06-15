@@ -79,6 +79,25 @@ authoritative source for `gb-nir`, which is a violation of the subdivision flag 
 **There are no exceptions to this checklist.** If the dev server is not available in the current
 environment, explicitly state that in the PR description and do not mark the task as complete.
 
+### When no browser is available — precedence over the merge rule
+
+This repository ships a SessionStart hook (`.claude/hooks/session-start.sh`) that installs a
+headless Chromium so the checklist above can actually be performed. **Use it** — drive the running
+app with Playwright and attach/screenshot the result.
+
+If, and only if, a browser genuinely cannot run in the environment (the Chromium download is blocked
+by the network policy and no system browser is installed), then:
+
+1. Complete every non-visual check that *is* possible (`tsc`, `npm run build`, `npm run flags:check`,
+   the dev server transforms the changed modules without error).
+2. State the visual-verification gap **explicitly in the PR description**.
+3. **Still merge** per the PR-workflow rule below — an unavailable browser is a documented caveat,
+   **not** a reason to pause the merge or to ask the user whether to merge. Do not silently resolve
+   the tension between this rule and the merge rule; surface the caveat and proceed.
+
+The "do not mark the task as complete" line above applies when the **dev server itself** can't run
+(the build is broken / deps won't install), not when only the *browser* is missing.
+
 ## Flag aspect ratios — hard rule, do not override without approval
 
 **This rule applies to every flag in the repository** — national flags, territory
@@ -516,7 +535,8 @@ After pushing a branch and creating a pull request, an agent **MUST**:
 
 1. **Immediately merge** the PR (squash merge) — do not leave it open waiting for manual action unless the user has explicitly asked to review first.
 2. **Confirm the merge succeeded** by checking the merge response.
-3. **Report back** with:
+3. **Verify the work is live** — after merging, confirm the GitHub Pages **Deploy** workflow run for the merge commit completes with `success`. (Fetching the live `github.io` page itself may be blocked by the environment's network egress policy; if so, the workflow conclusion is the source of truth.)
+4. **Report back** with:
    - Merge status (success/failure)
    - Current time in **AEST** (Australian Eastern Standard Time, UTC+10; or AEDT UTC+11 during daylight saving, which runs October–April)
    - The merge commit SHA (this is the build code/number)
@@ -525,3 +545,8 @@ Example confirmation message format:
 > Merged ✓ — commit `b05323a` — 9:56 PM AEST
 
 Do not report the time in UTC or any other timezone unless asked.
+
+**This merge step is unconditional.** Inability to perform the in-app visual verification because no
+browser is available is **not** a reason to pause, hold the PR open, or ask the user whether to merge
+— see "When no browser is available — precedence over the merge rule" above. Document the caveat in
+the PR body and merge.
