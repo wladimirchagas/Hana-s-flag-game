@@ -28,12 +28,23 @@ export type UseDisputedTerritoriesGameResult = {
   meanAnswerMs: number | null;
 };
 
+// Codes excluded from the game even though they appear in DISPUTED_SUBDIV_NOTES or
+// have isDisputed: true — because they represent the SAME physical territory as
+// another entry in the game but from the perspective of the nation that ADMINISTERS
+// or OFFICIALLY RECOGNISES the territory (not the disputing side). Including both
+// would show an identical flag twice, confusing players.
+//
+// TR-NC~ (Turkish Republic of Northern Cyprus, under Türkiye) — same TRNC flag
+// and same territory as CY-NC~ (Northern Cyprus, under Cyprus). Türkiye officially
+// RECOGNISES the TRNC; it does not "dispute" it. CY-NC~ covers the disputed angle.
+const ADMINISTERING_SIDE_CODES: ReadonlySet<string> = new Set(["TR-NC~"]);
+
 /** Collects all disputed/claimed subnational divisions across every country in
  *  SUBDIVISION_META that have an actual flag. A division qualifies when it has
  *  `isDisputed: true` OR its code appears in DISPUTED_SUBDIV_NOTES (the
  *  documented list of politically contested territories). Excludes hierarchy
- *  children (e.g. AR-ML~, ES-GIB~, IN-AK~, IN-GB~) and deduplicates by code
- *  so the same territory appearing under multiple claimants is only asked once. */
+ *  children, administering-side duplicates, and deduplicates by code so the same
+ *  territory appearing under multiple claimants is only asked once. */
 function buildDisputedDivisions(): SubdivisionMeta[] {
   const disputedCodes = new Set(Object.keys(DISPUTED_SUBDIV_NOTES));
   const seen = new Set<string>();
@@ -43,6 +54,7 @@ function buildDisputedDivisions(): SubdivisionMeta[] {
     for (const d of meta.divisions) {
       if (seen.has(d.code)) continue;
       if (d.code in DISPUTED_TERRITORY_HIERARCHY) continue;
+      if (ADMINISTERING_SIDE_CODES.has(d.code)) continue;
       if (!d.isDisputed && !disputedCodes.has(d.code)) continue;
       if (!hasSubdivisionFlag(d.code)) continue;
       seen.add(d.code);
