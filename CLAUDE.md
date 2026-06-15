@@ -375,6 +375,34 @@ known tier-1 type labels. Any new external-territory type added to `TERRITORIES_
 in `scripts/build-subdivision-meta.mjs` must also be added to `DEPENDENCY_TYPES` if it
 should appear below primary subdivisions.
 
+### Administering-nation rule — disputed territories always use typeLabel "Disputed Territory"
+
+A disputed/claimed territory **must always** use `typeLabel: "Disputed Territory"` in
+`subdivisionMeta.ts`, regardless of whether it is shown under the **administering/recognising**
+nation or the **claiming** nation. This is what places the territory in the tier-2 "Disputed
+Territory" group in the flag grid and causes the card to show the "(disputed territory)" label.
+
+**Never** invent a different typeLabel (e.g. `"Recognised State"`, `"Claimed State"`,
+`"Administered Territory"`) to reflect a nation's political relationship with the territory.
+Those details belong in `DISPUTED_SUBDIV_NOTES` (the detail-panel note), not in `typeLabel`.
+
+The card-level label text (e.g. "disputed territory" vs "unofficial flag") is controlled
+entirely by `getSubdivisionDisputeLabel()` via the `isUnofficial` list and the
+`parentCountryCode` argument — **not** by `typeLabel`. Do not change `typeLabel` to fix
+a card label; change the label logic instead.
+
+| Nation | Territory | typeLabel | Card label | Group heading |
+|--------|-----------|-----------|------------|---------------|
+| UK (administers) | Falkland Islands `GB-FK` | `Disputed Territory` | (disputed territory) | Disputed Territory |
+| UK (administers) | Gibraltar `GB-GI` | `Disputed Territory` | (disputed territory) | Disputed Territory |
+| Türkiye (recognises) | N. Cyprus `TR-NC~` | `Disputed Territory` | (disputed territory) | Disputed Territory |
+| Cyprus (claims) | N. Cyprus `CY-NC~` | `Disputed Territory` | Flag not officially recognised by Cyprus | Disputed Territory |
+| Argentina (claims) | Malvinas `AR-ML~` | `Claimed Territory` | (hidden via hierarchy — no card shown) | — |
+
+`AR-ML~` and `ES-GIB~` are the only exceptions to `"Disputed Territory"` — they use
+`"Claimed Territory"` because they are **hidden** from their claimant's flag grid entirely
+via `DISPUTED_TERRITORY_HIERARCHY` and are never rendered as visible cards.
+
 ## Natural Earth topology and projection — hard rule, do not override without approval
 
 The world map uses the Natural Earth 50m topology bundled at `public/countries-50m.json`
