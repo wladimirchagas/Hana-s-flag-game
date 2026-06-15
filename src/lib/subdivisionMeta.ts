@@ -1415,7 +1415,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FR-05", name: "Hautes-Alpes", typeLabel: "Metropolitan department" },
     { code: "FR-73", name: "Savoie", typeLabel: "Metropolitan department" },
     { code: "FR-74", name: "Haute-Savoie", typeLabel: "Metropolitan department" },
-    { code: "FR-64", name: "Pyrenees-Atlantics", typeLabel: "Metropolitan department" },
+    { code: "FR-64", name: "Pyrénées-Atlantiques", typeLabel: "Metropolitan department" },
     { code: "FR-31", name: "Haute-Garonne", typeLabel: "Metropolitan department" },
     { code: "FR-65", name: "Hautes-Pyrénées", typeLabel: "Metropolitan department" },
     { code: "FR-09", name: "Ariège", typeLabel: "Metropolitan department" },
@@ -1509,7 +1509,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FR-PM", name: "Saint Pierre and Miquelon", typeLabel: "Overseas Collectivity" },
     { code: "FR-WF", name: "Wallis and Futuna", typeLabel: "Overseas Collectivity" },
     { code: "FR-PF", name: "French Polynesia", typeLabel: "Overseas Collectivity" },
-    { code: "FR-NC", name: "New Caledonia", typeLabel: "Overseas Collectivity" }
+    { code: "FR-NC", name: "New Caledonia", typeLabel: "Sui generis collectivity" }
     ],
   },
   "GA": {

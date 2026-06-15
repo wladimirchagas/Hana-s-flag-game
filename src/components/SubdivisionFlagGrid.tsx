@@ -89,6 +89,7 @@ export function SubdivisionFlagGrid({
       "Crown Dependency",
       "Overseas Territory",
       "Overseas Collectivity",
+      "Sui generis collectivity",
       "Autonomous Territory",
       "Special Administrative Region",
       "Constituent Country",
