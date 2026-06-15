@@ -33,8 +33,9 @@ const FORBIDDEN_VIEWBOXES = new Set([
 // Source for all entries below: lipis/flag-icons (GitHub), kept as-is.
 const EXEMPT_UNOFFICIAL_FLAGS = new Set([
   "mq.svg",  // Martinique — unofficial serpent flag; no defined ratio
-  "nc.svg",  // New Caledonia — FLNKS/Kanak flag; no defined ratio
   "mf.svg",  // Saint Martin — local collectivity flag; no defined ratio
+  // nc.svg (FLNKS/Kanak flag) is NOT exempt: now sourced from fonttools/region-flags
+  // (900×450, viewBox "0 0 900 450", 2:1 ratio). Removed from exemption 2026-06-15.
   // GB-NIR.svg (Ulster Banner) is NOT exempt: the banner follows Crown heraldic
   // proportions (2:1, same as the Union Jack). viewBox is now "0 0 640 320"
   // achieved by wrapping the lipis 640×480 content in scale(1, 0.6667).
