@@ -67,6 +67,11 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
   "RU": {
     "UA-43": "Republic of Crimea",
     "UA-40": "Sevastopol"
+  },
+  "FR": {
+    // Natural Earth's name_en for FR-64 is the anglicised, mis-spelled
+    // "Pyrenees-Atlantics". Correct it to the official French spelling.
+    "FR-64": "Pyrénées-Atlantiques"
   }
 };
 
@@ -137,7 +142,10 @@ const TERRITORIES_TO_APPEND = {
     { code: "FR-PM", name: "Saint Pierre and Miquelon", typeLabel: "Overseas Collectivity" },
     { code: "FR-WF", name: "Wallis and Futuna", typeLabel: "Overseas Collectivity" },
     { code: "FR-PF", name: "French Polynesia", typeLabel: "Overseas Collectivity" },
-    { code: "FR-NC", name: "New Caledonia", typeLabel: "Overseas Collectivity" }
+    // New Caledonia is a sui generis collectivity, a unique status distinct from
+    // the standard Overseas Collectivities. Defined by Title XIII of the French
+    // Constitution (Arts. 76–77) following the 1998 Nouméa Accord.
+    { code: "FR-NC", name: "New Caledonia", typeLabel: "Sui generis collectivity" }
   ],
   "NZ": [
     { code: "NZ-CK", name: "Cook Islands", typeLabel: "Associated State" },
