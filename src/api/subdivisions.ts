@@ -105,6 +105,14 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // green/yellow diagonal with red star; local file
   "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
   "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
+  // FR-75: Paris. The flag source (amckenna41/iso3166-flags) indexes Paris under the
+  // current ISO 3166-2 code "FR-75C" (the Ville de Paris collectivity, 2019), but the
+  // game keys Paris by the Natural Earth code "FR-75", so the CDN lookup missed and
+  // Paris showed no flag. Bundle the Paris flag locally (armorial banner: blue/red
+  // bicolour with the city arms, the ship, and the motto "Fluctuat nec mergitur"),
+  // a 1280×854 PNG (3:2) provided directly by the owner. As a metropolitan department,
+  // Paris carries NO "(unofficial flag)" label — same as every other French department.
+  "FR-75":  `${BASE}flags/sub/FR/FR-75.png`,
   // FR-MF: Saint Martin's own flag — a white field bearing the collectivity's
   // emblem (a brown pelican in flight over a hibiscus, sunrise and a "Saint-Martin"
   // banner). This is the Saint Martin flag, NOT the French Tricolour. Bundled as a
