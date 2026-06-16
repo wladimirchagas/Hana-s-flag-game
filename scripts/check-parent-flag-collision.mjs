@@ -131,12 +131,24 @@ function parentFlagPath(code) {
   return null;
 }
 
-async function checkSet(items, threshold, errors) {
+async function checkSet(items, threshold, errors, { requireFile = false, report = false } = {}) {
   let compared = 0;
   for (const { code, file } of items) {
     const subPath = join(projectRoot, file);
     const parentPath = parentFlagPath(code);
-    if (!parentPath || !existsSync(subPath)) continue; // missing files covered elsewhere
+    // A curated override (requireFile) declares "this code's flag is THIS bundled
+    // file". If the file is missing, that is a broken state — fail loudly rather
+    // than silently skipping, which would let a dangling override go unchecked.
+    if (!existsSync(subPath)) {
+      if (requireFile) {
+        errors.push(
+          `  ${code} → ${file} is declared in LOCAL_FLAG_OVERRIDES but the file is missing. ` +
+            `Bundle the file, or remove the override and suppress the code.`,
+        );
+      }
+      continue; // bulk sub/** missing files are covered elsewhere
+    }
+    if (!parentPath) continue;
     // Skip a file that IS its own parent (e.g. a national-level code).
     if (parentPath === subPath) continue;
     let subHash, parentHash;
@@ -148,6 +160,12 @@ async function checkSet(items, threshold, errors) {
     }
     compared++;
     const dist = hamming(subHash, parentHash);
+    // Surface every curated-override distance so drift TOWARD the parent flag is
+    // visible in CI logs as an early warning, long before it crosses the threshold.
+    if (report) {
+      const flag = dist < threshold ? "  ✗" : dist < threshold * 2 ? "  ⚠" : "   ";
+      console.log(`${flag} ${code}: distance ${dist} to ${parentPath.split("/").pop()} (threshold ${threshold})`);
+    }
     if (dist < threshold) {
       errors.push(
         `  ${code} → ${file} is the parent nation's flag ` +
@@ -161,7 +179,8 @@ async function checkSet(items, threshold, errors) {
 async function main() {
   const errors = [];
   let compared = 0;
-  compared += await checkSet(parseOverrides(), OVERRIDE_THRESHOLD, errors);
+  console.log("Curated LOCAL_FLAG_OVERRIDES (distance to parent flag):");
+  compared += await checkSet(parseOverrides(), OVERRIDE_THRESHOLD, errors, { requireFile: true, report: true });
   compared += await checkSet(collectSubFlags(), SUB_THRESHOLD, errors);
 
   if (errors.length > 0) {

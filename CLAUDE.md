@@ -53,8 +53,16 @@ suppression) once egress is enabled — do **not** restore the parent-flag file.
 
 | Code | Needed flag | Why suppressed | Wikimedia source |
 |------|-------------|----------------|-----------------|
-| `FR-MF` | Saint Martin unofficial emblem flag (white field, pelican/hibiscus emblem) | lipis & hampusborgos `mf` are the French Tricolour | `commons/...Flag_of_Saint-Martin...` (local emblem flag) |
 | `GB-SH` | Saint Helena flag (blue ensign defaced with the St Helena coat of arms) | hampusborgos & lipis `sh` are the bare Union Jack | `commons/4/4c/Flag_of_Saint_Helena.svg` |
+
+`FR-MF` (`public/flags/mf.png`) is now **bundled and shown** — the Saint Martin flag: a white
+field bearing the collectivity's emblem (a brown pelican in flight over a hibiscus, with a sunrise
+and a "Saint-Martin" banner), provided directly by the owner as a 1280×854 PNG (3:2). It scores a
+perceptual distance of **334** from the French Tricolour (`fr.svg`) — far above the 30 threshold —
+versus the old mislabelled Tricolour, which scored 18. **Never** revert `FR-MF` to the lipis or
+hampusborgos `mf` file (both are the French Tricolour) and **never** re-suppress it without owner
+approval. It carries the "Flag not officially recognised by France" label, which is correct: France
+recognises no regional flags, exactly as for Réunion and Mayotte.
 
 **Enforcement:** `LOCAL_FLAG_OVERRIDES` must never contain a string that starts with `https://`
 or `http://`. When reviewing any PR that modifies `src/api/subdivisions.ts`, check that every
@@ -291,17 +299,24 @@ Tricolour and Saint Helena Union Jack, 2026-06-16) because the bad file comes fr
 national-flag source* (lipis/flag-icons serves the French Tricolour for `mf`; hampusborgos serves the
 bare Union Jack for `gb`/`sh`), so it passes the proportions check and every text/lint check. A byte
 comparison does **not** catch it — the subdivision file and the parent file come from different sources
-with different viewBoxes and hex shades.
+with different viewBoxes and hex shades. **Saint Martin recurred a second time** (2026-06-16): after the
+Tricolour was suppressed it was re-bundled correctly as the white emblem flag (`mf.png`, distance 334).
+The lesson is permanent: the parent flag will keep arriving from these "trusted" sources, so the
+perceptual guard below is the only thing standing between it and the live site — never weaken it.
 
 `scripts/check-parent-flag-collision.mjs` (run by `npm run flags:check` and the `flag-integrity` CI
 workflow) rasterises **every** bundled subdivision flag — both the `${BASE}flags/...` files in
-`LOCAL_FLAG_OVERRIDES` **and** every file under `public/flags/sub/**` — together with its parent
-nation's flag, reduces each to a 576-bit perceptual difference hash (grayscale + R/G/B planes,
-horizontal **and** vertical gradients), and **fails the build** if a subdivision flag's Hamming
-distance to its parent is below the threshold for its set:
+`LOCAL_FLAG_OVERRIDES` **and** every file under `public/flags/sub/**`, in **any** format (`.svg`,
+`.png`, `.jpg`) — together with its parent nation's flag, reduces each to a 576-bit perceptual
+difference hash (grayscale + R/G/B planes, horizontal **and** vertical gradients), and **fails the
+build** if a subdivision flag's Hamming distance to its parent is below the threshold for its set.
+It also **prints the distance for every curated override** (so drift toward the parent flag is visible
+as an early warning long before it crosses the threshold) and **fails if any curated override names a
+file that is not bundled** (a dangling override must never go unchecked). Thresholds:
 
 - **Curated overrides** are checked at distance **< 30**. Known-bad flags scored 0 (GB-SH = Union Jack)
-  and 18 (FR-MF = French Tricolour); the nearest legitimate flag scored 125.
+  and 18 (FR-MF = French Tricolour); the nearest legitimate flag scored 125, and the now-correct
+  Saint Martin emblem flag scores 334 — the bad and good cases are separated by a wide margin.
 - **Bulk `sub/**` files** are checked at the stricter distance **< 12** (near-identical duplicates
   only). The verbatim national-flag duplicates found (Bosnia flag for Brčko `BA-BRC`; Nigeria flag for
   `NG-IM`/`NG-TA`; plus dead Tricolour/US-flag files) scored 0; the nearest *legitimate* sub flag — the
@@ -320,6 +335,15 @@ distance to its parent is below the threshold for its set:
 4. If a flag is correctly flagged but no authoritative replacement is accessible, delete the file and
    add the code to `SUPPRESSED_SUBDIVISION_FLAGS` (so no flag and no "(unofficial flag)" label render),
    then document it in the suppressed-flags table above.
+5. **Never** silence the guard by deleting an override's bundled file while leaving the override entry,
+   or by pointing an override at a missing file — the check now **fails** on any curated override whose
+   file is absent. To stop showing a flag you must remove the override **and** suppress the code.
+6. The guard covers `.png` and `.jpg` flags (e.g. `mf.png`, `re.png`), not just `.svg` — an
+   owner-provided raster flag is checked against the parent exactly like an SVG. Bundling a flag in a
+   raster format does **not** exempt it from the collision check.
+7. A user/owner who provides a flag image directly is an **authoritative source** (like the Réunion and
+   Saint Martin PNGs); bundle it as-is. This is never licence to invent/approximate flag content
+   yourself — see the "never generate flag SVG content" hard rule.
 
 #### Hard rule — never embed "(unofficial flag)" in a subdivision name
 

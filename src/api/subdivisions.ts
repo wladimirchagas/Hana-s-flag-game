@@ -105,12 +105,13 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // green/yellow diagonal with red star; local file
   "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
   "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
-  // FR-MF (Saint Martin) — intentionally has NO override and is SUPPRESSED below.
-  // The lipis/flag-icons `mf` file is the French Tricolour (Saint Martin has no
-  // distinct official flag; only an unofficial white emblem flag exists), so it was
-  // showing the parent nation's flag mislabelled "(unofficial flag)". hampusborgos
-  // also carries the Tricolour for `mf`. The unofficial emblem flag is only on
-  // Wikimedia (network-blocked). Re-bundle it when Wikimedia egress is enabled.
+  // FR-MF: Saint Martin's own flag — a white field bearing the collectivity's
+  // emblem (a brown pelican in flight over a hibiscus, sunrise and a "Saint-Martin"
+  // banner). This is the Saint Martin flag, NOT the French Tricolour. Bundled as a
+  // 1280×854 PNG (3:2) provided directly by the owner. The lipis/flag-icons and
+  // hampusborgos `mf` files are the French Tricolour and must NEVER be used here.
+  // (Do NOT revert to the Tricolour, and do NOT re-suppress, without owner approval.)
+  "FR-MF":  `${BASE}flags/mf.png`,
   // GP: fonttools/region-flags GP.svg — sourced from Wikimedia Commons
   // (File:Unofficial_flag_of_Guadeloupe_(local).svg, commons/e/e7/). Bundled locally;
   // viewBox "0 0 600 400" (3:2). Replaces the blank Wikimedia URL (wrong filename 0/04/).
@@ -139,7 +140,6 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
   // which must never be shown for a subdivision (see CLAUDE.md, enforced by
   // scripts/check-parent-flag-collision.mjs). No flag is shown — and crucially no
   // "(unofficial flag)" label — until the subdivision's OWN flag can be bundled.
-  "FR-MF",  // Saint Martin — only "official" flag is the French Tricolour
   "GB-SH",  // Saint Helena — bundled file was the bare Union Jack
   // Bulk-downloaded sub/ files that were the parent nation's flag verbatim
   // (caught by check-parent-flag-collision.mjs; the duplicate files were deleted).
