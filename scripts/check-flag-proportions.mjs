@@ -33,7 +33,9 @@ const FORBIDDEN_VIEWBOXES = new Set([
 // Source for all entries below: lipis/flag-icons (GitHub), kept as-is.
 const EXEMPT_UNOFFICIAL_FLAGS = new Set([
   "mq.svg",  // Martinique — unofficial serpent flag; no defined ratio
-  "mf.svg",  // Saint Martin — local collectivity flag; no defined ratio
+  // mf.svg removed 2026-06-16: the bundled file was the French Tricolour (the
+  // parent nation's flag), now deleted and the FR-MF code suppressed. See
+  // scripts/check-parent-flag-collision.mjs and CLAUDE.md.
   // nc.svg (FLNKS/Kanak flag) is NOT exempt: now sourced from fonttools/region-flags
   // (900×450, viewBox "0 0 900 450", 2:1 ratio). Removed from exemption 2026-06-15.
   // GB-NIR.svg (Ulster Banner) is NOT exempt: the banner follows Crown heraldic
