@@ -75,7 +75,13 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "GB-VG":  `${BASE}flags/vg.svg`,
   "GB-KY":  `${BASE}flags/ky.svg`,
   "GB-MS":  `${BASE}flags/ms.svg`,
-  "GB-SH":  `${BASE}flags/sh.svg`,
+  // GB-SH (Saint Helena, Ascension and Tristan da Cunha) — intentionally has NO
+  // override and is SUPPRESSED below. Its real flag is a blue ensign defaced with
+  // the St Helena coat of arms, but the only previously-bundled file (sh.svg) was
+  // the bare Union Jack — i.e. the parent UK flag — which the parent-flag-collision
+  // check now rejects. No correctly-proportioned authoritative source is currently
+  // reachable (Wikimedia is network-blocked; hampusborgos/lipis carry the Union
+  // Jack for `sh`). Re-bundle the real flag when Wikimedia egress is enabled.
   "GB-TC":  `${BASE}flags/tc.svg`,
   "GB-PN":  `${BASE}flags/pn.svg`,
   
@@ -99,7 +105,12 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "FR-GF":  `${BASE}flags/FR-GF.svg`, // green/yellow diagonal with red star; local file
   "FR-MQ":  `${BASE}flags/mq.svg`,    // Martinique serpent flag (lipis/flag-icons); replaces French Tricolour
   "FR-NC":  `${BASE}flags/nc.svg`,    // New Caledonia FLNKS/Kanak flag (lipis/flag-icons); replaces French Tricolour
-  "FR-MF":  `${BASE}flags/mf.svg`,    // Saint Martin local flag (lipis/flag-icons)
+  // FR-MF (Saint Martin) — intentionally has NO override and is SUPPRESSED below.
+  // The lipis/flag-icons `mf` file is the French Tricolour (Saint Martin has no
+  // distinct official flag; only an unofficial white emblem flag exists), so it was
+  // showing the parent nation's flag mislabelled "(unofficial flag)". hampusborgos
+  // also carries the Tricolour for `mf`. The unofficial emblem flag is only on
+  // Wikimedia (network-blocked). Re-bundle it when Wikimedia egress is enabled.
   // GP: fonttools/region-flags GP.svg — sourced from Wikimedia Commons
   // (File:Unofficial_flag_of_Guadeloupe_(local).svg, commons/e/e7/). Bundled locally;
   // viewBox "0 0 600 400" (3:2). Replaces the blank Wikimedia URL (wrong filename 0/04/).
@@ -124,6 +135,17 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
   // Bahrain governorates — no authoritative flag source with correct aspect
   // ratio found; amckenna41/iso3166-flags served 640×480 placeholders.
   "BH-13", "BH-14", "BH-15", "BH-17",
+  // Suppressed because every accessible source serves the PARENT NATION'S flag,
+  // which must never be shown for a subdivision (see CLAUDE.md, enforced by
+  // scripts/check-parent-flag-collision.mjs). No flag is shown — and crucially no
+  // "(unofficial flag)" label — until the subdivision's OWN flag can be bundled.
+  "FR-MF",  // Saint Martin — only "official" flag is the French Tricolour
+  "GB-SH",  // Saint Helena — bundled file was the bare Union Jack
+  // Bulk-downloaded sub/ files that were the parent nation's flag verbatim
+  // (caught by check-parent-flag-collision.mjs; the duplicate files were deleted).
+  "BA-BRC", // Brčko District — file was the Bosnia & Herzegovina national flag
+  "NG-IM",  // Imo State — file was the Nigeria national flag
+  "NG-TA",  // Taraba State — file was the Nigeria national flag
 ]);
 
 // Cache so we only fetch each country once per session.

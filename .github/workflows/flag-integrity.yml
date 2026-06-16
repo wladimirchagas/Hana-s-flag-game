@@ -1,7 +1,8 @@
 name: Flag integrity check
 
-# Runs on any PR that touches flag SVGs or the download script, blocking
-# merges that would introduce flags with standardised (wrong) aspect ratios.
+# Runs on any PR that touches flag SVGs, the flag overrides, or the check scripts,
+# blocking merges that would introduce flags with standardised (wrong) aspect
+# ratios OR a subdivision flag that is actually its parent nation's flag.
 
 on:
   pull_request:
@@ -9,6 +10,8 @@ on:
       - "public/flags/**"
       - "scripts/download-flags.mjs"
       - "scripts/check-flag-proportions.mjs"
+      - "scripts/check-parent-flag-collision.mjs"
+      - "src/api/subdivisions.ts"
 
 jobs:
   check-proportions:
@@ -22,3 +25,20 @@ jobs:
 
       - name: Verify flag aspect ratios
         run: node scripts/check-flag-proportions.mjs
+
+  check-parent-collision:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      # sharp is required to rasterise the flags for perceptual comparison.
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify no subdivision flag duplicates its parent nation's flag
+        run: node scripts/check-parent-flag-collision.mjs

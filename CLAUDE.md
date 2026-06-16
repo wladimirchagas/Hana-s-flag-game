@@ -46,6 +46,16 @@ Lö Mahavéli design (blue field, yellow rays, red triangle).
 | `FR-PM` | `public/flags/pm.svg` | `commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg` |
 | `FR-WF` | `public/flags/wf.svg` | `commons/d/d2/Flag_of_Wallis_and_Futuna.svg` |
 
+**Currently SUPPRESSED (no flag shown) because every accessible source serves the parent nation's
+flag.** These were caught by `scripts/check-parent-flag-collision.mjs` and added to
+`SUPPRESSED_SUBDIVISION_FLAGS`. Bundle the real subdivision flag from Wikimedia (then remove the
+suppression) once egress is enabled — do **not** restore the parent-flag file.
+
+| Code | Needed flag | Why suppressed | Wikimedia source |
+|------|-------------|----------------|-----------------|
+| `FR-MF` | Saint Martin unofficial emblem flag (white field, pelican/hibiscus emblem) | lipis & hampusborgos `mf` are the French Tricolour | `commons/...Flag_of_Saint-Martin...` (local emblem flag) |
+| `GB-SH` | Saint Helena flag (blue ensign defaced with the St Helena coat of arms) | hampusborgos & lipis `sh` are the bare Union Jack | `commons/4/4c/Flag_of_Saint_Helena.svg` |
+
 **Enforcement:** `LOCAL_FLAG_OVERRIDES` must never contain a string that starts with `https://`
 or `http://`. When reviewing any PR that modifies `src/api/subdivisions.ts`, check that every
 value in `LOCAL_FLAG_OVERRIDES` uses the `` `${BASE}flags/...` `` template literal pattern.
@@ -249,6 +259,48 @@ This rule applies to:
 Concretely: if adding a flag URL to `LOCAL_FLAG_OVERRIDES` in `src/api/subdivisions.ts`, verify the
 SVG is **not** the parent nation's national flag. If the CDN or local file returns the parent flag,
 find and use the local unofficial alternative.
+
+**If no authoritative source for the subdivision's OWN flag is accessible, you MUST suppress the flag**
+(remove the `LOCAL_FLAG_OVERRIDES` entry and add the code to `SUPPRESSED_SUBDIVISION_FLAGS`) so that
+**no** flag and **no** "(unofficial flag)" label is shown. A blank flag is always correct; the parent
+nation's flag is always wrong. Never bundle the parent flag as a stop-gap.
+
+##### Automated enforcement (`scripts/check-parent-flag-collision.mjs`) — hard rule
+
+This bug has shipped **repeatedly** (Northern Ireland Union Jack #284/286; Saint Martin French
+Tricolour and Saint Helena Union Jack, 2026-06-16) because the bad file comes from an *authoritative
+national-flag source* (lipis/flag-icons serves the French Tricolour for `mf`; hampusborgos serves the
+bare Union Jack for `gb`/`sh`), so it passes the proportions check and every text/lint check. A byte
+comparison does **not** catch it — the subdivision file and the parent file come from different sources
+with different viewBoxes and hex shades.
+
+`scripts/check-parent-flag-collision.mjs` (run by `npm run flags:check` and the `flag-integrity` CI
+workflow) rasterises **every** bundled subdivision flag — both the `${BASE}flags/...` files in
+`LOCAL_FLAG_OVERRIDES` **and** every file under `public/flags/sub/**` — together with its parent
+nation's flag, reduces each to a 576-bit perceptual difference hash (grayscale + R/G/B planes,
+horizontal **and** vertical gradients), and **fails the build** if a subdivision flag's Hamming
+distance to its parent is below the threshold for its set:
+
+- **Curated overrides** are checked at distance **< 30**. Known-bad flags scored 0 (GB-SH = Union Jack)
+  and 18 (FR-MF = French Tricolour); the nearest legitimate flag scored 125.
+- **Bulk `sub/**` files** are checked at the stricter distance **< 12** (near-identical duplicates
+  only). The verbatim national-flag duplicates found (Bosnia flag for Brčko `BA-BRC`; Nigeria flag for
+  `NG-IM`/`NG-TA`; plus dead Tricolour/US-flag files) scored 0; the nearest *legitimate* sub flag — the
+  Opole voivodeship `PL-16`, a yellow/blue bicolour that merely shares a light-over-dark layout with
+  Poland's flag — scored 18. The two sets need different thresholds because a legitimate bulk flag can
+  score as low as a different-shade national-flag copy; they are distinguishable only by treating the
+  curated list (where the design is intentional) more strictly than the bulk import.
+
+**Rules:**
+1. **Never** delete, weaken, or raise either threshold to make a flag pass. If a flag trips the check,
+   the flag is the parent's flag — fix the flag, not the check.
+2. **Never** add a flag to `EXEMPT_UNOFFICIAL_FLAGS` (in `check-flag-proportions.mjs`) to dodge this —
+   that list is **only** for aspect ratios and does not exempt anything from the collision check.
+3. Any new bundled subdivision flag (an override `${BASE}flags/...` file or a `public/flags/sub/**`
+   file) is checked automatically; run `npm run flags:check` before pushing any flag change.
+4. If a flag is correctly flagged but no authoritative replacement is accessible, delete the file and
+   add the code to `SUPPRESSED_SUBDIVISION_FLAGS` (so no flag and no "(unofficial flag)" label render),
+   then document it in the suppressed-flags table above.
 
 #### Hard rule — never embed "(unofficial flag)" in a subdivision name
 
