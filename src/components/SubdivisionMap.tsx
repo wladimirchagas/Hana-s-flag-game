@@ -228,9 +228,12 @@ export function SubdivisionMap({
     }
 
     // Centroids and small-feature detection
-    // Features with a bounding box area below this threshold (SVG square units)
-    // are considered too small to see and get the pulsing indicator.
-    const SMALL_AREA_THRESHOLD = 200;
+    // A feature gets a location dot only when d3 produced NO renderable path
+    // (i.e. the polygon is genuinely invisible at any scale). Features that DO
+    // have a renderable path — even a tiny one — are represented by that path;
+    // overlaying a dot on top deforms the territory outline and causes the
+    // stippling effect seen on mainland France when the projection is fitted to
+    // all of France's worldwide territories at once.
     const centroidByCode = new Map<string, [number, number]>();
     const smallSubdivCodes = new Set<string>();
     for (let i = 0; i < geoData.features.length; i++) {
@@ -243,14 +246,8 @@ export function SubdivisionMap({
         centroidByCode.set(code, [svgC[0], svgC[1]]);
       }
       if (!pathByIdx.has(i)) {
-        // Feature produced no renderable path — definitely too small to see
+        // Feature produced no renderable path — show a dot so it is locatable.
         smallSubdivCodes.add(code);
-      } else {
-        const b = mapPath.bounds(feat as never);
-        if (b && isFinite(b[0][0]) && isFinite(b[1][0])) {
-          const area = (b[1][0] - b[0][0]) * (b[1][1] - b[0][1]);
-          if (area < SMALL_AREA_THRESHOLD) smallSubdivCodes.add(code);
-        }
       }
     }
 
