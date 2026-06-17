@@ -207,6 +207,50 @@ To re-download all national/territory flags correctly:
 node scripts/download-flags.mjs --force --national-only
 ```
 
+## Never trust a bulk-imported subdivision flag as correct by default — hard rule, do not override without approval
+
+**A subdivision flag must never ship as a generic placeholder.** Paraguay's Misiones Department
+(`PY-8`) shipped for an extended period with a flag that was NOT the real Misiones flag: a generic
+red/navy/white horizontal-tricolour. The root cause was traced (2026-06): the bulk flag dataset this
+project originally imported from (`amckenna41/iso3166-flags`) appears to have confused Paraguay's
+Misiones Department with **Argentina's Misiones Province** (`AR-N`) — a real flag that is *also*
+red/blue/white horizontal bands in the same order and near-identical proportions — almost certainly
+because both subdivisions share the English name "Misiones". The bad flag passed every other check
+(it has a real-world-looking viewBox, and it isn't byte-identical to Paraguay's own national flag,
+so the parent-flag-collision check did not catch it) because the bug is specific to a **third-party
+data error**, not a local mistake.
+
+**Lesson: do not assume a flag bundled from a bulk third-party source (the amckenna41 CDN, or any
+future bulk import) is correct just because it loads and passes the proportions/parent-collision
+checks.** Bulk sources can and do mix up two unrelated subdivisions that happen to share a name
+across different countries.
+
+### Rules
+
+1. Whenever a subdivision's flag looks suspicious, generic, or you cannot find it described that
+   way by an authoritative source for **that country specifically**, verify it independently —
+   do not assume the bulk-imported file is right by default.
+2. If a subdivision shares its name with a subdivision in a **different** country (e.g. Paraguay's
+   "Misiones" vs. Argentina's "Misiones"; "Córdoba" in Argentina/Colombia/Spain; "Amazonas" in
+   Brazil/Colombia/Peru/Venezuela), treat that as a specific risk factor for this exact bug and
+   double check both flags come from sources specific to their own country, not a shared/confused
+   asset.
+3. When in doubt, leave the flag absent (suppress it) rather than ship a placeholder that merely
+   "looks plausible" — same as the broader "never invent flag content" rule above.
+
+### Enforcement
+
+`scripts/check-subdivision-name-collisions.mjs` (run by `npm run flags:check` and the
+`flag-integrity` CI workflow) finds every subdivision name shared by two or more countries in
+`SUBDIVISION_META`, and for every cross-country pair that both have a bundled local flag
+(`LOCAL_FLAG_OVERRIDES` or `public/flags/sub/**`), computes the same 576-bit perceptual difference
+hash used by the parent-flag-collision check. It **fails the build** if a same-name pair's
+flags are suspiciously similar (Hamming distance < 130) — the historical Misiones bug scored 87;
+every legitimate same-name-different-country pair currently bundled scores >= 171, so the
+threshold sits at a wide margin from both. This check only covers bundled **local** flags — it
+cannot fetch CDN-only flags over the network — so it is a safety net, not a substitute for manual
+verification per the rules above.
+
 ## Disputed territory neutrality — hard rule, do not override without approval
 
 When two or more nations claim or dispute a subnational territory, the game takes no side.

@@ -11,7 +11,9 @@ on:
       - "scripts/download-flags.mjs"
       - "scripts/check-flag-proportions.mjs"
       - "scripts/check-parent-flag-collision.mjs"
+      - "scripts/check-subdivision-name-collisions.mjs"
       - "src/api/subdivisions.ts"
+      - "src/lib/subdivisionMeta.ts"
 
 jobs:
   check-proportions:
@@ -42,3 +44,6 @@ jobs:
 
       - name: Verify no subdivision flag duplicates its parent nation's flag
         run: node scripts/check-parent-flag-collision.mjs
+
+      - name: Verify no same-name subdivision in another country has a near-identical flag
+        run: node scripts/check-subdivision-name-collisions.mjs

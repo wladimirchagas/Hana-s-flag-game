@@ -13,9 +13,10 @@
     "anthems:phase1": "npm run anthems:catalog && npm run anthems:audit",
     "anthems:sync-captions": "node scripts/sync-youtube-captions.mjs",
     "anthems:apply-calibration": "node scripts/apply-calibration.mjs",
-    "flags:check": "node scripts/check-flag-proportions.mjs && node scripts/check-parent-flag-collision.mjs",
+    "flags:check": "node scripts/check-flag-proportions.mjs && node scripts/check-parent-flag-collision.mjs && node scripts/check-subdivision-name-collisions.mjs",
     "flags:check:proportions": "node scripts/check-flag-proportions.mjs",
     "flags:check:parent-collision": "node scripts/check-parent-flag-collision.mjs",
+    "flags:check:name-collision": "node scripts/check-subdivision-name-collisions.mjs",
     "flags:download": "node scripts/download-flags.mjs",
     "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs"
   },
