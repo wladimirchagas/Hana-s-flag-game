@@ -18,6 +18,12 @@ const BASE = import.meta.env.BASE_URL;
 const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // CDN source has a spurious red horizontal stripe; corrected locally.
   "BR-RR": `${BASE}flags/BR-RR.svg`,
+  // PY-8 (Misiones Department, Paraguay): the bundled amckenna41/iso3166-flags
+  // source was a generic red/navy/white placeholder unrelated to the real flag.
+  // Replaced with the correct design (yellow/red/white/blue/green horizontal
+  // bands, 2:1:4:1:2), provided directly by the owner as a 1280x860 PNG (~3:2),
+  // matching the flag shown at https://www.crwflags.com/fotw/images/p/py-08.gif.
+  "PY-8": `${BASE}flags/sub/PY/PY-8.png`,
 
   // ── Disputed / claimed territories — unofficial flags ───────────────────────
   // The claiming nation has no official flag for these territories; we show the
