@@ -43,6 +43,19 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // source by wrapping content in <g transform="scale(1,0.6667)">).
   "GB-NIR": `${BASE}flags/sub/GB/GB-NIR.svg`,
 
+  // ── ISO 3166-2 code-alias fixes (same territory, different code) ─────────────
+  // Like Paris (FR-75 vs FR-75C): the game keys these subdivisions by the code in
+  // the Natural Earth topology, but the flag source bundles the flag under the
+  // territory's CURRENT ISO 3166-2 code. Without these aliases the lookup misses
+  // and a well-known flag is shown as blank. The target files are already bundled
+  // under public/flags/sub/<CC>/ (verified same territory by name); we point the
+  // game's code at the existing file.
+  "MX-DIF": `${BASE}flags/sub/MX/MX-CMX.png`, // Mexico City: Distrito Federal → Ciudad de México (2016)
+  "ZA-GT":  `${BASE}flags/sub/ZA/ZA-GP.png`,  // Gauteng: legacy ZA-GT → ISO ZA-GP
+  "ZA-NL":  `${BASE}flags/sub/ZA/ZA-KZN.png`, // KwaZulu-Natal: legacy ZA-NL → ISO ZA-KZN
+  "TW-TPQ": `${BASE}flags/sub/TW/TW-NWT.svg`, // New Taipei: legacy TW-TPQ → ISO TW-NWT
+  "HU-ED":  `${BASE}flags/sub/HU/HU-ER.svg`,  // Érd: legacy HU-ED → ISO HU-ER
+
   // GE-AB (Abkhazia under Georgia) — CDN serves the Abkhazia flag; un-suppressed
   // below so it renders as "(unofficial flag)" under Georgia.
   // ES-GIB~ and AR-ML~ — hidden from Spain's/Argentina's grid via hierarchy; no flag needed.
