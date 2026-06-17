@@ -55,6 +55,7 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "ZA-NL":  `${BASE}flags/sub/ZA/ZA-KZN.png`, // KwaZulu-Natal: legacy ZA-NL → ISO ZA-KZN
   "TW-TPQ": `${BASE}flags/sub/TW/TW-NWT.svg`, // New Taipei: legacy TW-TPQ → ISO TW-NWT
   "HU-ED":  `${BASE}flags/sub/HU/HU-ER.svg`,  // Érd: legacy HU-ED → ISO HU-ER
+  "TT-RCM": `${BASE}flags/sub/TT/TT-MRC.png`, // Mayaro-Rio Claro: transposed code TT-RCM → ISO TT-MRC
 
   // GE-AB (Abkhazia under Georgia) — CDN serves the Abkhazia flag; un-suppressed
   // below so it renders as "(unofficial flag)" under Georgia.
