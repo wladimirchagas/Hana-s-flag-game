@@ -18,7 +18,8 @@
     "flags:check:parent-collision": "node scripts/check-parent-flag-collision.mjs",
     "flags:check:name-collision": "node scripts/check-subdivision-name-collisions.mjs",
     "flags:download": "node scripts/download-flags.mjs",
-    "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs"
+    "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs",
+    "people:build": "node scripts/build-people-images.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
