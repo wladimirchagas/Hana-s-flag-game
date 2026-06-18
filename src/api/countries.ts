@@ -1,6 +1,7 @@
 import { UN_MEMBER_CODES } from "../lib/unMemberStates";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { CONTINENT_GROUPS, SUBREGION_GROUPS } from "../lib/continentGroups";
+import { COUNTRY_FACTS } from "../data/countryFacts";
 
 export type Country = {
   name: string;
@@ -119,10 +120,12 @@ const FLAG_OVERRIDES: Readonly<Record<string, string>> = {
  * LearnPage, a blank-page crash). The bundled UN_MEMBERS name list,
  * CONTINENT_GROUPS and SUBREGION_GROUPS cover name / code / continent /
  * subregion for every UN state, and the flag SVGs come from flagcdn.com —
- * the exact same URLs REST Countries returns. Only the panel extras
- * (capital, languages, currencies) are unavailable; EntitySummary omits
- * missing rows gracefully. Population still comes from the World Bank
- * fetch when that succeeds.
+ * the exact same URLs REST Countries returns. The panel extras (official
+ * name, capital, languages, currencies) come from the bundled COUNTRY_FACTS
+ * dataset (src/data/countryFacts.ts), so the Learn-mode widget stays complete
+ * even when restcountries.com is blocked or down — see the "Country widget
+ * information" hard rule in CLAUDE.md. Population still comes from the World
+ * Bank fetch when that succeeds.
  */
 function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
   const nameByCode = new Map(ALL_COUNTRY_OPTIONS.map((o) => [o.code, o.name]));
@@ -135,13 +138,18 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
     for (const code of codes) {
       const name = nameByCode.get(code);
       if (!name) continue;
+      const facts = COUNTRY_FACTS[code];
       countries.push({
         name,
+        nameOfficial: facts?.nameOfficial,
         code,
         flagSvg: FLAG_OVERRIDES[code] ?? `${BASE}flags/${code.toLowerCase()}.svg`,
         continent,
         subregion: subregionByCode.get(code),
+        capital: facts?.capital,
         population: wbPop.get(code),
+        languages: facts?.languages,
+        currencies: facts?.currencies,
       });
     }
   }
@@ -183,8 +191,12 @@ export async function fetchCountries(): Promise<Country[]> {
     if (!name || !code || !flagUrl || !region) continue;
     if (!UN_CONTINENTS.has(region)) continue;
     if (!UN_MEMBER_CODES.has(code)) continue;
+    // Bundled fallback facts for this country — used to backfill any field
+    // restcountries.com happens to omit, so the Learn-mode widget never loses
+    // information (see the "Country widget information" hard rule in CLAUDE.md).
+    const facts = COUNTRY_FACTS[code];
     const subregion = item.subregion?.trim() || undefined;
-    const capital = item.capital?.[0]?.trim() || undefined;
+    const capital = item.capital?.[0]?.trim() || facts?.capital || undefined;
     // Prefer the World Bank figure (refreshed annually); fall back to
     // REST Countries (which can be a few years stale) when the WB doesn't
     // publish a number for this country (e.g., Vatican City).
@@ -195,11 +207,13 @@ export async function fetchCountries(): Promise<Country[]> {
         : typeof item.population === "number" && item.population > 0
           ? item.population
           : undefined;
-    const languages = item.languages
+    const restLanguages = item.languages
       ? Array.from(new Set(Object.values(item.languages).map((l) => l.trim()).filter(Boolean)))
       : undefined;
-    const nameOfficial = item.name?.official?.trim() || undefined;
-    const currencies = item.currencies
+    const languages =
+      restLanguages && restLanguages.length > 0 ? restLanguages : facts?.languages;
+    const nameOfficial = item.name?.official?.trim() || facts?.nameOfficial || undefined;
+    const restCurrencies = item.currencies
       ? Object.entries(item.currencies)
           .map(([currCode, info]) => ({
             code: currCode,
@@ -208,6 +222,8 @@ export async function fetchCountries(): Promise<Country[]> {
           }))
           .filter((c) => c.name)
       : undefined;
+    const currencies =
+      restCurrencies && restCurrencies.length > 0 ? restCurrencies : facts?.currencies;
     let finalName = name;
     let finalNameOfficial = nameOfficial;
     if (code === "TR") {
