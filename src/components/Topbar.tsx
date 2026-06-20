@@ -1,7 +1,9 @@
+import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { MuteToggle } from "./MuteToggle";
 import { useNavigationGuard } from "../context/NavigationGuardContext";
+import { searchToGameState } from "../lib/shareLinks";
 
 type GameNavState = {
   codes?: string[];
@@ -25,11 +27,51 @@ export function Topbar() {
   const { triggerGuard } = useNavigationGuard();
   const isHome = location.pathname === "/";
   const isGame = location.pathname === "/game";
+  const isLearn = location.pathname === "/learn";
+  // Show the Share affordance on the in-game / learn views, where the URL now
+  // encodes the user's selections and is worth copying.
+  const canShare = isGame || isLearn;
+
+  const [shareLabel, setShareLabel] = useState<"idle" | "copied">("idle");
+  const shareResetRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(
+    () => () => {
+      if (shareResetRef.current) clearTimeout(shareResetRef.current);
+    },
+    [],
+  );
+
+  const handleShare = async () => {
+    const url = window.location.href;
+    // Prefer the native share sheet on mobile; fall back to clipboard with a
+    // brief "Copied!" confirmation on desktop.
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "Hana's Flag Game", url });
+        return;
+      }
+    } catch {
+      // User dismissed the share sheet, or it failed — fall through to copy.
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareLabel("copied");
+      if (shareResetRef.current) clearTimeout(shareResetRef.current);
+      shareResetRef.current = setTimeout(() => setShareLabel("idle"), 1800);
+    } catch {
+      // Clipboard blocked (e.g. insecure context) — last resort prompt.
+      window.prompt("Copy this link to share:", url);
+    }
+  };
 
   const doNavigateHome = () => navigate("/");
 
   const doBackToGameSelection = () => {
-    const navState = location.state as GameNavState;
+    // Fall back to the URL params when arriving via a shared deep link with no
+    // router state, so the correct setup modal reopens.
+    const navState =
+      (location.state as GameNavState) ??
+      (searchToGameState(new URLSearchParams(location.search)) as GameNavState);
     if (navState?.quiz) {
       navigate("/", { state: { openModal: "quiz" } });
     } else if (navState?.groupGame || navState?.subnational || !navState?.codes) {
@@ -70,6 +112,17 @@ export function Topbar() {
       </div>
       <div className="site-topbar__center" id="site-topbar-slot" />
       <div className="site-topbar__right">
+        {canShare && (
+          <button
+            type="button"
+            className="site-topbar__share"
+            onClick={handleShare}
+            aria-label="Copy a shareable link to this view"
+            title="Copy a shareable link to this view"
+          >
+            {shareLabel === "copied" ? "✓ Copied!" : "↗ Share"}
+          </button>
+        )}
         <MuteToggle />
         <ThemeToggle />
       </div>

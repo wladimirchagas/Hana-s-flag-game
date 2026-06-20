@@ -28,10 +28,13 @@ import {
   DISPUTED_TERRITORY_CODES,
   UNDISPUTED_TERRITORY_PARENT,
 } from "../lib/territoryParentMap";
+import {
+  gameStateToSearch,
+  hasGameSelection,
+  searchToGameState,
+  type GameNavState,
+} from "../lib/shareLinks";
 import "../App.css";
-
-type SubnationalState = { countryCode: string; countryName: string };
-type DisputedTerritoriesState = { disputedTerritories: true };
 
 type QuizState = {
   flagCount: number;
@@ -45,12 +48,23 @@ type GroupGameState = {
   modeLabel: string;
 };
 
-export default function FlagGamePage() {
+/**
+ * Resolve the game navigation state from EITHER router state (the fast path
+ * when arriving from the landing page) OR the URL query params (the shareable
+ * deep-link path when a recipient opens a copied link cold). This is what
+ * makes /game?mode=subnational&country=AR reconstruct the same game.
+ */
+function useResolvedGameNavState(): GameNavState {
   const location = useLocation();
-  const navStateRaw = location.state as {
-    subnational?: SubnationalState;
-    disputedTerritories?: DisputedTerritoriesState["disputedTerritories"];
-  } | null;
+  return useMemo(() => {
+    const fromState = location.state as GameNavState;
+    if (hasGameSelection(fromState)) return fromState;
+    return searchToGameState(new URLSearchParams(location.search));
+  }, [location.state, location.search]);
+}
+
+export default function FlagGamePage() {
+  const navStateRaw = useResolvedGameNavState();
 
   // Disputed territories game: separate component tree so hooks aren't conditional
   if (navStateRaw?.disputedTerritories) {
@@ -85,7 +99,7 @@ function FlagGamePageInner() {
 function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
   const location = useLocation();
   const navigate = useNavigate();
-  const navState = location.state as
+  const navState = useResolvedGameNavState() as
     | { codes?: string[]; quiz?: QuizState; groupGame?: GroupGameState }
     | null;
   const filterCodes =
@@ -266,14 +280,13 @@ function FlagGameInner({ onPlayAgain }: { onPlayAgain: () => void }) {
     setUnlockTarget(null);
 
     // Update current history state so that subsequent rounds (e.g. Play again)
-    // in this session will include the newly unlocked flag.
-    navigate(".", {
-      replace: true,
-      state: {
-        ...(location.state || {}),
-        codes: nextCodes,
-      },
-    });
+    // in this session will include the newly unlocked flag. Keep the URL query
+    // string in sync too, so the link stays shareable with the updated list.
+    const nextState = { ...(navState ?? {}), codes: nextCodes };
+    navigate(
+      { pathname: location.pathname, search: gameStateToSearch(nextState) },
+      { replace: true, state: nextState },
+    );
   };
 
   const handleSave = () => {

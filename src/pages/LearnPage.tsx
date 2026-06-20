@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
@@ -38,6 +38,7 @@ import {
   polityModernName,
   type Era,
 } from "../lib/historicalEras";
+import { eraIdFromParam } from "../lib/shareLinks";
 import { subdivisionFlagUrl, fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { UNOFFICIAL_SUBDIV_NOTES } from "../lib/unofficialSubdivFlags";
@@ -108,7 +109,13 @@ function selectionFlag(s: Selection, baseUrl: string): string | null {
 // for both modern + historical entities.)
 
 export default function LearnPage() {
-  const [eraId, setEraId] = useState<Era["id"]>(DEFAULT_ERA_ID);
+  const location = useLocation();
+  const navigate = useNavigate();
+  // Initialise the era from the URL (?era=ad1945) so a shared historical-map
+  // link lands on the right period; falls back to "today".
+  const [eraId, setEraId] = useState<Era["id"]>(
+    () => eraIdFromParam(new URLSearchParams(location.search).get("era")) ?? DEFAULT_ERA_ID,
+  );
   const [countries, setCountries] = useState<Country[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [hovered, setHovered] = useState<Selection | null>(null);
@@ -397,6 +404,79 @@ export default function LearnPage() {
     setSubdivisionLoading(false);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // --- Shareable-link URL sync ---
+  // Once-only hydration from the URL: when arriving via a shared link such as
+  // /learn?country=FR&view=subdivisions, apply the country selection (and enter
+  // subdivision mode) after the modern country list has loaded. The era is read
+  // separately in the eraId initialiser above. Gated behind a ref so it runs a
+  // single time and the write effect below never clobbers the incoming params.
+  const urlHydratedRef = useRef(false);
+  // Committed-state mirror of the ref. The write effect below is gated on this
+  // (not the ref) so it cannot run in the same commit that hydration schedules
+  // its state updates — otherwise it would compute a URL from stale state and
+  // wipe the incoming params before they're applied.
+  const [urlHydrated, setUrlHydrated] = useState(false);
+  useEffect(() => {
+    if (urlHydratedRef.current) return;
+    if (countries.length === 0) return;
+    urlHydratedRef.current = true;
+    setUrlHydrated(true);
+    const params = new URLSearchParams(location.search);
+    const countryCode = params.get("country");
+    if (!countryCode) return;
+    const c = countries.find((x) => x.code === countryCode);
+    if (!c) return;
+    if (params.get("view") === "subdivisions") {
+      // Enter subdivision mode from a cold load. Mirrors
+      // handleEnterSubdivisionMode, but the country comes from the URL rather
+      // than `display`. The suppress ref stops the exit-subdivision effect
+      // (which fires when `selected` changes) from immediately closing it.
+      suppressSubdivisionExitRef.current = true;
+      setSelected({ kind: "modern", country: c });
+      setHovered(null);
+      setSubdivisionMode(true);
+      setSubdivisionLoading(true);
+      setSelectedSubdivision(null);
+      setSubdivisionCountry({ code: c.code, name: c.name, flagSvg: c.flagSvg });
+      fetchMergedSubdivisionGeo(c.code).then((geo) => {
+        setSubdivisionGeo(geo);
+        setSubdivisionLoading(false);
+      });
+    } else {
+      setSelected({ kind: "modern", country: c });
+    }
+  }, [countries, location.search]);
+
+  // Reflect the current view back into the URL (replace, so the back button
+  // isn't flooded) so the address bar / Share button always yields a link that
+  // reproduces what the user is looking at. Waits for hydration so it doesn't
+  // overwrite incoming params before they're applied.
+  useEffect(() => {
+    if (!urlHydrated) return;
+    const params = new URLSearchParams();
+    if (eraId !== DEFAULT_ERA_ID) params.set("era", eraId);
+    if (subdivisionMode && subdivisionCountry) {
+      params.set("country", subdivisionCountry.code);
+      params.set("view", "subdivisions");
+    } else if (selected?.kind === "modern") {
+      params.set("country", selected.country.code);
+    }
+    const qs = params.toString();
+    const search = qs ? `?${qs}` : "";
+    if (search !== location.search) {
+      navigate({ pathname: location.pathname, search }, { replace: true });
+    }
+  }, [
+    urlHydrated,
+    eraId,
+    selected,
+    subdivisionMode,
+    subdivisionCountry,
+    location.search,
+    location.pathname,
+    navigate,
+  ]);
 
   // Build a polity → Selection helper for historical eras. The HistoricalMap
   // emits a NAME string when the user clicks/hovers a polity; we wrap that

@@ -9,6 +9,7 @@ import { AllFlagsSetupModal, type AllFlagsStart } from '../components/AllFlagsSe
 import { HeroCarousel } from '../components/HeroCharacters'
 import { InstallAppButton } from '../components/InstallAppButton'
 import { loadStoredSelection } from '../lib/countrySelection'
+import { gameStateToSearch, type GameNavState } from '../lib/shareLinks'
 import './LandingPage.css'
 
 const TITLE_LETTERS: { ch: string; color: string }[] = [
@@ -35,64 +36,66 @@ export default function LandingPage() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // Navigate to the game with both an in-memory state object (fast path) and
+  // an equivalent query string, so the resulting URL is shareable and a
+  // recipient opening it cold reconstructs the same game from the params.
+  const goToGame = (state: GameNavState) => {
+    navigate(
+      { pathname: '/game', search: gameStateToSearch(state) },
+      { state: state ?? undefined },
+    )
+  }
+
   const playWith = (codes: string[]) => {
     setPickerOpen(false)
-    navigate('/game', { state: { codes } })
+    goToGame({ codes })
   }
 
   const playQuiz = (config: QuickQuizConfig) => {
     setQuizOpen(false)
-    navigate('/game', { state: { quiz: { flagCount: config.flagCount } } })
+    goToGame({ quiz: { flagCount: config.flagCount } })
   }
 
   const playFlagMaster = (start: AllFlagsStart) => {
     setFlagMasterOpen(false)
     if (start.type === 'all195') {
-      navigate('/game')
+      goToGame(null)
     } else if (start.type === 'similarity') {
-      navigate('/game', {
-        state: {
-          groupGame: {
-            groupCodes: start.groupCodes,
-            groupLabel: start.groupLabel,
-            hardcore: start.hardcore,
-            modeLabel: 'By Similarity',
-          },
+      goToGame({
+        groupGame: {
+          groupCodes: start.groupCodes,
+          groupLabel: start.groupLabel,
+          hardcore: start.hardcore,
+          modeLabel: 'By Similarity',
         },
       })
     } else if (start.type === 'continent') {
-      navigate('/game', {
-        state: {
-          groupGame: {
-            groupCodes: start.groupCodes,
-            groupLabel: start.groupLabel,
-            hardcore: false,
-            modeLabel: 'By Continent',
-          },
+      goToGame({
+        groupGame: {
+          groupCodes: start.groupCodes,
+          groupLabel: start.groupLabel,
+          hardcore: false,
+          modeLabel: 'By Continent',
         },
       })
     } else if (start.type === 'subregion') {
-      navigate('/game', {
-        state: {
-          groupGame: {
-            groupCodes: start.groupCodes,
-            groupLabel: start.groupLabel,
-            hardcore: false,
-            modeLabel: 'By Sub-Continent',
-          },
+      goToGame({
+        groupGame: {
+          groupCodes: start.groupCodes,
+          groupLabel: start.groupLabel,
+          hardcore: false,
+          modeLabel: 'By Sub-Continent',
         },
       })
     } else if (start.type === 'subnational') {
-      navigate('/game', {
-        state: {
-          subnational: {
-            countryCode: start.countryCode,
-            countryName: start.countryName,
-          },
+      goToGame({
+        subnational: {
+          countryCode: start.countryCode,
+          countryName: start.countryName,
         },
       })
     } else if (start.type === 'disputed') {
-      navigate('/game', { state: { disputedTerritories: true } })
+      goToGame({ disputedTerritories: true })
     }
   }
 
