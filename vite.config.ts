@@ -98,10 +98,39 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Cache the SPA shell + assets so the app loads from the home-screen
-        // shortcut even when offline (first-launch still needs network).
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,json}'],
-        navigateFallback: `${base}index.html`,
+        // Precache the immutable, content-hashed build assets (JS/CSS/icons/
+        // fonts/data) so the app loads offline from the home-screen shortcut.
+        // The HTML shell is deliberately NOT precached: a precached shell is
+        // served cache-first, which left returning visitors a whole build behind
+        // after every deploy — the stale shell points at the previous JS bundle,
+        // so newly shipped features (e.g. shareable-link routes) silently fail to
+        // appear until a second reload, and on iOS the stale shell can stick for
+        // days. The shell is served network-first below instead.
+        globPatterns: ['**/*.{js,css,svg,png,woff2,json}'],
+        // Disable vite-plugin-pwa's default cache-first navigation fallback (it
+        // defaults navigateFallback to "index.html"). That route is registered
+        // before our runtimeCaching rule and would otherwise win, re-introducing
+        // the stale-shell problem. With it off, the network-first rule governs
+        // navigations.
+        navigateFallback: undefined,
+        // App shell (full-page navigations + *.html): network-first so an online
+        // visitor always boots the latest deploy, falling back to the cached copy
+        // only when offline. SPA client-side route changes don't hit the service
+        // worker, so this only governs cold loads, reloads, and shared deep links.
+        runtimeCaching: [
+          {
+            urlPattern: ({ request, url }) =>
+              request.mode === 'navigate' || url.pathname.endsWith('.html'),
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'app-shell',
+              networkTimeoutSeconds: 4,
+              expiration: { maxEntries: 16 },
+            },
+          },
+        ],
+        // Purge precaches from earlier builds when a new service worker activates.
+        cleanupOutdatedCaches: true,
         // Public dir contains a couple of large data blobs (countries-50m.json,
         // historical maps, large subdivision GeoJSON) — exclude from precache
         // so the install footprint stays small.
