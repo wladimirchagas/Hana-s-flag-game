@@ -12,14 +12,14 @@ service cloud.firestore {
       allow update, delete: if false;
     }
 
-    // User profiles (Netflix-style personas). PASSWORDLESS by design: the
-    // document id IS an unguessable share code, so anyone who holds the code
-    // (the capability) may read and edit the profile. Every client authes
-    // anonymously, so `request.auth != null` simply blocks unauthenticated
-    // traffic, not specific users. Deletes are disabled; forgetting a profile
-    // is a device-local action only.
+    // User profiles (shared personas). PUBLIC by design: profiles have no
+    // password or share code — anyone on any device may list, read, pick,
+    // edit, or delete any profile. `request.auth != null` only blocks fully
+    // unauthenticated traffic (every client authes anonymously); it does not
+    // scope access to a specific user. This is the accepted trade-off of a
+    // passwordless, kiosk-style model.
     match /profiles/{profileId} {
-      allow read: if request.auth != null;
+      allow read, delete: if request.auth != null;
       allow create, update: if request.auth != null
         && request.resource.data.displayName is string
         && request.resource.data.displayName.size() >= 1
@@ -28,7 +28,6 @@ service cloud.firestore {
         && request.resource.data.avatarId.size() <= 400000
         && request.resource.data.selectedCodes is list
         && request.resource.data.learnedCodes is list;
-      allow delete: if false;
     }
   }
 }

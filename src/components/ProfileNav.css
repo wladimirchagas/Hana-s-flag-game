@@ -231,19 +231,25 @@ body:has(.profile-overlay) .bottom-nav {
   color: var(--ink-soft);
 }
 
-.profile-card__forget {
+.profile-card__delete {
   position: absolute;
   top: -8px;
   right: -2px;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 2px solid var(--ink);
   background: var(--paper);
   color: var(--ink);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   line-height: 1;
   cursor: pointer;
+}
+
+.profile-card__delete:hover,
+.profile-card__delete:focus-visible {
+  background: var(--coral);
+  outline: none;
 }
 
 /* Actions + buttons */
@@ -271,6 +277,11 @@ body:has(.profile-overlay) .bottom-nav {
 .profile-btn--ghost {
   background: var(--paper);
   color: var(--ink);
+}
+
+.profile-btn--danger {
+  background: var(--coral-deep);
+  color: #fff;
 }
 
 .profile-btn:hover:not(:disabled),

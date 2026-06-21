@@ -26,12 +26,14 @@ import {
 } from "react";
 import { ensureAnonymousAuth } from "../lib/firebase";
 import {
+  deleteProfile as deleteProfileRemote,
   fetchProfile,
   forgetDeviceProfile,
   loadActiveProfileId,
   loadDeviceProfiles,
   rememberDeviceProfile,
   saveActiveProfileId,
+  subscribeToAllProfiles,
   type DeviceProfileRef,
   type Profile,
 } from "../lib/profileStore";
@@ -48,16 +50,18 @@ type ProfileContextValue = {
   activeProfile: Profile | null;
   /** True when no persona is selected (today's default, unchanged behaviour). */
   isGuest: boolean;
-  /** Profiles this browser has used, for the "who's playing?" picker. */
+  /** Profiles this browser has used (offline fallback for the picker). */
   deviceProfiles: DeviceProfileRef[];
+  /** EVERY profile, live from Firestore — profiles are public/shared. */
+  allProfiles: DeviceProfileRef[];
   /** Switch to a known/loaded profile (null → play as Guest). */
   setActiveProfile: (profile: Profile | null) => void;
-  /** Load a profile by its share code (cross-device retrieval). */
+  /** Load a profile by its id and make it active. */
   activateProfileByCode: (id: string) => Promise<Profile | null>;
   /** Remember a freshly-created/loaded profile on this device. */
   rememberProfile: (profile: Profile) => void;
-  /** Forget a profile on this device (does not delete the shared document). */
-  forgetProfile: (id: string) => void;
+  /** Delete a profile for everyone (shared document + local cache). */
+  deleteProfile: (id: string) => void;
 };
 
 const ProfileContext = createContext<ProfileContextValue | null>(null);
@@ -73,6 +77,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
   const [deviceProfiles, setDeviceProfiles] = useState<DeviceProfileRef[]>(() =>
     loadDeviceProfiles(),
   );
+  const [allProfiles, setAllProfiles] = useState<DeviceProfileRef[]>([]);
 
   // Bootstrap the device's anonymous identity. Best-effort: if Firebase is
   // unconfigured or unreachable we fall back to "offline" and the app keeps
@@ -129,12 +134,25 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     [],
   );
 
+  // Subscribe to the full, shared profile list once we have an identity.
+  useEffect(() => {
+    if (authStatus !== "ready") return;
+    return subscribeToAllProfiles(
+      (profiles) => setAllProfiles(profiles),
+      () => {
+        /* offline — picker falls back to the device-local list */
+      },
+    );
+  }, [authStatus]);
+
   const rememberProfile = useCallback((profile: Profile) => {
     setDeviceProfiles(rememberDeviceProfile(toRef(profile)));
   }, []);
 
-  const forgetProfile = useCallback((id: string) => {
+  const deleteProfile = useCallback((id: string) => {
+    void deleteProfileRemote(id);
     setDeviceProfiles(forgetDeviceProfile(id));
+    setAllProfiles((current) => current.filter((p) => p.id !== id));
     setActiveProfileState((current) => (current?.id === id ? null : current));
   }, []);
 
@@ -145,20 +163,22 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       activeProfile,
       isGuest: activeProfile === null,
       deviceProfiles,
+      allProfiles,
       setActiveProfile,
       activateProfileByCode,
       rememberProfile,
-      forgetProfile,
+      deleteProfile,
     }),
     [
       authStatus,
       uid,
       activeProfile,
       deviceProfiles,
+      allProfiles,
       setActiveProfile,
       activateProfileByCode,
       rememberProfile,
-      forgetProfile,
+      deleteProfile,
     ],
   );
 
