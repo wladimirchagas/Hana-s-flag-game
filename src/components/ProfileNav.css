@@ -1,0 +1,365 @@
+/* === Bottom navigation bar (hosts the profile chip) ===
+   Sits at the very bottom of the viewport; the thin build-info footer is
+   offset to sit just above it (see .build-footer in App.css). Body
+   padding-bottom (index.css) reserves space for both so content is never
+   hidden behind them. */
+
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 41;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem clamp(0.75rem, 2vw, 1.25rem);
+  padding-bottom: max(0.45rem, env(safe-area-inset-bottom));
+  background: var(--cream);
+  border-top: 2px solid var(--ink-faint);
+}
+
+/* The build-footer hides itself when a modal/input is active; keep the bottom
+   nav in step so the two bars don't separate. */
+body:has(.dropdown-modal) .bottom-nav,
+body:has(.profile-overlay) .bottom-nav {
+  display: none;
+}
+
+.profile-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.3rem 0.85rem 0.3rem 0.35rem;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  font-family: var(--font-display);
+  color: var(--ink);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.profile-chip:hover,
+.profile-chip:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  outline: none;
+}
+
+.profile-chip:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.profile-chip__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
+}
+
+.profile-chip__name {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.profile-chip__hint {
+  font-size: 0.66rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+/* === Shared avatar frame === */
+.avatar {
+  display: block;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.avatar--photo {
+  object-fit: cover;
+  border: 3px solid var(--ink);
+  background: var(--paper);
+}
+
+/* === Profile picker modal === */
+.profile-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  background: rgba(26, 34, 56, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: profile-fade-in 150ms ease;
+}
+
+@keyframes profile-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.profile-modal {
+  background: var(--cream);
+  border: 4px solid var(--ink);
+  border-radius: var(--radius-lg, 22px);
+  box-shadow: var(--shadow);
+  width: min(560px, 100%);
+  max-height: min(88vh, 760px);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+
+.profile-modal__header {
+  padding: 1.1rem 1.4rem 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 2px dashed var(--ink-faint);
+}
+
+.profile-modal__title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  text-shadow: 0 2px 0 var(--ink);
+}
+
+.profile-modal__close {
+  background: var(--mustard);
+  border: 3px solid var(--ink);
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--ink-fixed, var(--ink));
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.profile-modal__body {
+  padding: 1.1rem 1.4rem 1.4rem;
+  overflow-y: auto;
+}
+
+.profile-modal__error {
+  margin: 0 0 0.9rem;
+  padding: 0.55rem 0.8rem;
+  background: rgba(216, 48, 48, 0.12);
+  border: 2px solid var(--coral-deep);
+  border-radius: var(--radius-md, 14px);
+  color: var(--coral-deep);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Profile grid */
+.profile-grid {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 0.9rem;
+}
+
+.profile-grid__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0.7rem 0.4rem;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-md, 14px);
+  box-shadow: 0 3px 0 var(--ink);
+  cursor: pointer;
+  font-family: var(--font-display);
+  color: var(--ink);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.profile-card:hover:not(:disabled),
+.profile-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 var(--ink);
+  outline: none;
+}
+
+.profile-card:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.profile-card--active {
+  border-color: var(--sky);
+  box-shadow: 0 3px 0 var(--sky);
+}
+
+.profile-card__name {
+  font-weight: 700;
+  font-size: 0.86rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.profile-card--add .profile-card__plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px dashed var(--ink-faint);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.profile-card__forget {
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Actions + buttons */
+.profile-modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.profile-btn {
+  padding: 0.55rem 1.1rem;
+  background: var(--sky);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 3px 0 var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--ink-fixed, var(--ink));
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.profile-btn--ghost {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.profile-btn:hover:not(:disabled),
+.profile-btn:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 var(--ink);
+  outline: none;
+}
+
+.profile-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Add / join form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.profile-form__preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.profile-form__label {
+  margin: 0.4rem 0 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.profile-form__hint {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.profile-form__input {
+  padding: 0.55rem 0.8rem;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-md, 14px);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.profile-form__input--code {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.profile-form__upload {
+  margin-top: 0.2rem;
+}
+
+.avatar-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.avatar-picker__option {
+  padding: 3px;
+  background: transparent;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.avatar-picker__option--selected {
+  border-color: var(--sky);
+}
+
+.profile-code-display {
+  margin: 0.2rem 0;
+  padding: 0.7rem;
+  text-align: center;
+  background: var(--paper);
+  border: 3px dashed var(--ink);
+  border-radius: var(--radius-md, 14px);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  user-select: all;
+}

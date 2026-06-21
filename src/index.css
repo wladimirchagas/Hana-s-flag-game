@@ -28,6 +28,10 @@
   --radius-lg: 22px;
   --radius-md: 14px;
   --font-display: 'Fredoka', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  /* Approx visual height of the fixed .bottom-nav (excl. iOS safe-area inset,
+     which the nav adds itself). The build-footer is offset above it and the
+     body reserves space for both. */
+  --bottom-nav-h: 3rem;
 }
 
 /* === Dark mode === */
@@ -74,9 +78,10 @@ body {
   color: var(--ink);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  /* Reserve space for the sticky .build-footer bottom bar (+ iOS home indicator).
-     Raised to ~1.5x with the taller footer (see .build-footer in App.css). */
-  padding-bottom: max(3rem, env(safe-area-inset-bottom));
+  /* Reserve space for the fixed .bottom-nav (profile) + the .build-footer that
+     sits just above it (+ iOS home indicator), so page content is never hidden
+     behind either bar. */
+  padding-bottom: calc(var(--bottom-nav-h) + 3.2rem + env(safe-area-inset-bottom));
 }
 
 #root {

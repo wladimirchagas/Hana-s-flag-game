@@ -69,6 +69,7 @@ export type DeviceProfileRef = {
 
 const DEVICE_PROFILES_KEY = "flagGame.profiles";
 const ACTIVE_PROFILE_KEY = "flagGame.activeProfileId";
+const PROFILE_CACHE_PREFIX = "flagGame.profile.";
 const COLLECTION = "profiles";
 
 /**
@@ -166,6 +167,31 @@ export function saveActiveProfileId(id: string | null): void {
 }
 
 // ---------------------------------------------------------------------------
+// Local profile cache (so a persona keeps working offline / before the
+// Firestore `profiles` rules are deployed). Cross-device retrieval still needs
+// the network, but the device that *created* a profile never loses it.
+// ---------------------------------------------------------------------------
+
+export function cacheProfileLocally(profile: Profile): void {
+  try {
+    localStorage.setItem(PROFILE_CACHE_PREFIX + profile.id, JSON.stringify(profile));
+  } catch {
+    // ignore quota / privacy-mode errors
+  }
+}
+
+export function loadCachedProfile(id: string): Profile | null {
+  try {
+    const raw = localStorage.getItem(PROFILE_CACHE_PREFIX + id);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as Profile;
+    return parsed && typeof parsed.id === "string" ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Firestore CRUD for the shared `profiles/{id}` documents
 // ---------------------------------------------------------------------------
 
@@ -205,17 +231,53 @@ export async function createProfile(input: {
     createdAt: now,
     updatedAt: now,
   };
-  const { id: _omit, ...remote } = profile;
-  void _omit;
-  await setDoc(doc(db, COLLECTION, id), { ...remote, updatedAt: serverTimestamp() });
+  // Cache locally first so the persona is usable immediately, even if the
+  // remote write is rejected (rules not yet deployed) or offline.
+  cacheProfileLocally(profile);
+  // Fire-and-forget remote write. We deliberately do NOT await it: when the
+  // device is offline (or Firebase is unconfigured) the Firestore SDK queues
+  // the write and the promise stays pending indefinitely, which would hang the
+  // create flow. Local cache already guarantees persistence; cross-device sync
+  // catches up whenever the write reaches the server.
+  void writeProfileRemote(profile);
   return profile;
 }
 
-/** Fetch a profile by its share code. Returns `null` if no such profile. */
+function writeProfileRemote(profile: Profile): Promise<void> {
+  const { id, ...remote } = profile;
+  return setDoc(doc(db, COLLECTION, id), { ...remote, updatedAt: serverTimestamp() }).catch(
+    (err) => {
+      console.warn("Profile remote write failed; using local cache only.", err);
+    },
+  );
+}
+
+/**
+ * Fetch a profile by its share code. Tries Firestore first (time-boxed so an
+ * offline SDK can't hang the UI); falls back to this device's local cache if
+ * the network/rules block the read. Returns `null` only when the profile is
+ * genuinely unknown here and remotely.
+ */
 export async function fetchProfile(id: string): Promise<Profile | null> {
-  const snap = await getDoc(doc(db, COLLECTION, id));
-  if (!snap.exists()) return null;
-  return fromRemote(id, snap.data() as RemoteProfile);
+  try {
+    const snap = await withTimeout(getDoc(doc(db, COLLECTION, id)), 4000);
+    if (snap && snap.exists()) {
+      const profile = fromRemote(id, snap.data() as RemoteProfile);
+      cacheProfileLocally(profile);
+      return profile;
+    }
+  } catch {
+    // fall through to local cache
+  }
+  return loadCachedProfile(id);
+}
+
+/** Resolve `null` if the promise doesn't settle within `ms` (offline guard). */
+function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T | null> {
+  return Promise.race([
+    promise,
+    new Promise<null>((resolve) => setTimeout(() => resolve(null), ms)),
+  ]);
 }
 
 /** Live-subscribe to a profile so edits on another device update this one. */
