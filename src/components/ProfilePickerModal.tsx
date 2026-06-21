@@ -10,7 +10,7 @@ import { createProfile, normaliseShareCode, type Profile } from "../lib/profileS
 import { loadStoredSelection } from "../lib/countrySelection";
 import { loadLearnedCodes } from "../lib/learnedFlags";
 
-type View = "list" | "add" | "join" | "created";
+type View = "list" | "add" | "join" | "code";
 
 /**
  * "Who's playing?" — the Netflix-style persona picker, opened from the bottom
@@ -34,8 +34,11 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
   // Add-profile form state
   const [name, setName] = useState("");
   const [avatarId, setAvatarId] = useState<string>(DEFAULT_AVATAR_ID);
-  const [createdProfile, setCreatedProfile] = useState<Profile | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
+
+  // Share-code view: which profile's code to reveal (opt-in, never shown
+  // automatically during profile creation).
+  const [codeProfile, setCodeProfile] = useState<Profile | null>(null);
 
   // Join-by-code state
   const [code, setCode] = useState("");
@@ -90,8 +93,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
         },
       });
       setActiveProfile(profile);
-      setCreatedProfile(profile);
-      setView("created");
+      onClose();
     } catch {
       setError("Couldn't create the profile. Please try again.");
     } finally {
@@ -136,8 +138,8 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
               ? "New profile"
               : view === "join"
                 ? "Add from another device"
-                : view === "created"
-                  ? "Profile ready!"
+                : view === "code"
+                  ? "Share code"
                   : "Who's playing?"}
           </h2>
           <button
@@ -213,6 +215,19 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                 >
                   Use a profile from another device
                 </button>
+                {activeProfile && (
+                  <button
+                    type="button"
+                    className="profile-btn profile-btn--ghost"
+                    onClick={() => {
+                      setCodeProfile(activeProfile);
+                      setError(null);
+                      setView("code");
+                    }}
+                  >
+                    Show share code
+                  </button>
+                )}
                 <button
                   type="button"
                   className="profile-btn profile-btn--ghost"
@@ -347,28 +362,25 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
             </div>
           )}
 
-          {view === "created" && createdProfile && (
+          {view === "code" && codeProfile && (
             <div className="profile-form">
               <div className="profile-form__preview">
-                <MascotAvatar
-                  avatarId={createdProfile.avatarId}
-                  size={88}
-                  alt=""
-                />
-                <span className="profile-card__name">{createdProfile.displayName}</span>
+                <MascotAvatar avatarId={codeProfile.avatarId} size={88} alt="" />
+                <span className="profile-card__name">{codeProfile.displayName}</span>
               </div>
               <p className="profile-form__hint">
-                Save this code to use <strong>{createdProfile.displayName}</strong>{" "}
-                on another device. There's no password — anyone with the code can
-                open this profile, so keep it private.
+                Enter this code on another device to use{" "}
+                <strong>{codeProfile.displayName}</strong> there. There's no
+                password — anyone with the code can open this profile, so keep it
+                private.
               </p>
-              <p className="profile-code-display">{createdProfile.id}</p>
+              <p className="profile-code-display">{codeProfile.id}</p>
               <div className="profile-modal__actions">
                 <button
                   type="button"
                   className="profile-btn"
                   onClick={() => {
-                    void navigator.clipboard?.writeText(createdProfile.id);
+                    void navigator.clipboard?.writeText(codeProfile.id);
                   }}
                 >
                   Copy code
@@ -376,9 +388,12 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                 <button
                   type="button"
                   className="profile-btn profile-btn--ghost"
-                  onClick={onClose}
+                  onClick={() => {
+                    setError(null);
+                    setView("list");
+                  }}
                 >
-                  Done
+                  Back
                 </button>
               </div>
             </div>
