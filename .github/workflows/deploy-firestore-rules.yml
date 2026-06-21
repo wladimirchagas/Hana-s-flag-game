@@ -1,0 +1,84 @@
+name: Deploy Firestore rules
+
+# Deploys firestore.rules (and Firestore indexes) to the Firebase project.
+# The GitHub Pages "Deploy" workflow only publishes the web app — it does NOT
+# push security rules, so this workflow closes that gap: whenever the rules
+# change on main (or you trigger it manually) the live Firestore rules are
+# updated to match the repo.
+#
+# ── One-time setup (repository Settings → Secrets and variables → Actions) ──
+# Pick ONE auth method and add the matching secret(s):
+#
+#   A. Service account (recommended, future-proof)
+#      - FIREBASE_SERVICE_ACCOUNT  = the full JSON of a Google service-account
+#        key for the project, with a role that can deploy rules (e.g.
+#        "Firebase Rules Admin" + "Firebase Admin", or "Editor"). Create it in
+#        Google Cloud Console → IAM & Admin → Service Accounts → Keys → Add key.
+#      - FIREBASE_PROJECT_ID       = optional; if omitted it's read from the
+#        service-account JSON's project_id.
+#
+#   B. CI token (simpler, but Google has deprecated it)
+#      - FIREBASE_TOKEN      = output of `firebase login:ci` run on your machine.
+#      - FIREBASE_PROJECT_ID = your Firebase project id (required for this method).
+#
+# After adding the secret(s), run this workflow once from the Actions tab
+# ("Run workflow") to push the current rules. Thereafter it runs automatically
+# whenever firestore.rules / firestore.indexes.json change on main.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - firestore.rules
+      - firestore.indexes.json
+      - .github/workflows/deploy-firestore-rules.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: firestore-rules
+  cancel-in-progress: false
+
+jobs:
+  deploy-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy firestore:rules
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -n "${FIREBASE_SERVICE_ACCOUNT:-}" ]; then
+            echo "Authenticating with a service account."
+            printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/sa.json"
+            export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+            PID="${FIREBASE_PROJECT_ID:-$(jq -r .project_id "$RUNNER_TEMP/sa.json")}"
+            if [ -z "$PID" ] || [ "$PID" = "null" ]; then
+              echo "::error::Could not determine the project id. Set the FIREBASE_PROJECT_ID secret."
+              exit 1
+            fi
+            firebase deploy --only firestore:rules --project "$PID" --non-interactive
+          elif [ -n "${FIREBASE_TOKEN:-}" ]; then
+            echo "Authenticating with a CI token."
+            if [ -z "${FIREBASE_PROJECT_ID:-}" ]; then
+              echo "::error::FIREBASE_PROJECT_ID secret is required when using FIREBASE_TOKEN."
+              exit 1
+            fi
+            firebase deploy --only firestore:rules --project "$FIREBASE_PROJECT_ID" --token "$FIREBASE_TOKEN" --non-interactive
+          else
+            echo "::error::No Firebase credentials found. Add FIREBASE_SERVICE_ACCOUNT (recommended) or FIREBASE_TOKEN in repository secrets — see the comment at the top of this workflow."
+            exit 1
+          fi
