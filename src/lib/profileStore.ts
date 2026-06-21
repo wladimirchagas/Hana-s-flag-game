@@ -25,9 +25,14 @@
  */
 
 import {
+  collection,
+  deleteDoc,
   doc,
   getDoc,
+  limit,
   onSnapshot,
+  orderBy,
+  query,
   serverTimestamp,
   setDoc,
   updateDoc,
@@ -302,5 +307,55 @@ export async function updateProfile(
   await updateDoc(doc(db, COLLECTION, id), {
     ...patch,
     updatedAt: serverTimestamp(),
+  });
+}
+
+/**
+ * Live-subscribe to EVERY profile. Profiles are public/shared: anyone on any
+ * device sees all of them in the "Who's playing?" picker and can pick one —
+ * there is no password or share code. Ordered by most-recently-updated so
+ * active personas surface first; capped so the list stays bounded.
+ */
+export function subscribeToAllProfiles(
+  onUpdate: (profiles: DeviceProfileRef[]) => void,
+  onError: (error: Error) => void,
+): Unsubscribe {
+  const q = query(collection(db, COLLECTION), orderBy("updatedAt", "desc"), limit(200));
+  return onSnapshot(
+    q,
+    (snap) =>
+      onUpdate(
+        snap.docs.map((d) => {
+          const data = d.data() as RemoteProfile;
+          return {
+            id: d.id,
+            displayName: data.displayName ?? "",
+            avatarId: data.avatarId ?? "",
+          };
+        }),
+      ),
+    onError,
+  );
+}
+
+/** Drop a profile from this device's local cache. */
+export function removeCachedProfile(id: string): void {
+  try {
+    localStorage.removeItem(PROFILE_CACHE_PREFIX + id);
+  } catch {
+    // ignore
+  }
+}
+
+/**
+ * Delete a profile for everyone. Clears the local cache immediately and fires
+ * the remote delete (non-blocking — an offline SDK queues the delete and its
+ * promise would otherwise hang). The global subscription reflects the removal
+ * once the delete reaches the server.
+ */
+export async function deleteProfile(id: string): Promise<void> {
+  removeCachedProfile(id);
+  void deleteDoc(doc(db, COLLECTION, id)).catch((err) => {
+    console.warn("Profile remote delete failed.", err);
   });
 }

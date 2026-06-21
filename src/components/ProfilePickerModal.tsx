@@ -6,26 +6,34 @@ import {
   MASCOT_AVATARS,
   fileToAvatarDataUrl,
 } from "../lib/avatars";
-import { createProfile, normaliseShareCode, type Profile } from "../lib/profileStore";
+import { createProfile, type DeviceProfileRef } from "../lib/profileStore";
 import { loadStoredSelection } from "../lib/countrySelection";
 import { loadLearnedCodes } from "../lib/learnedFlags";
 
-type View = "list" | "add" | "join" | "code";
+type View = "list" | "add" | "confirmDelete";
 
 /**
- * "Who's playing?" — the Netflix-style persona picker, opened from the bottom
- * nav. Lets the user switch between profiles known on this device, create a new
- * one (name + mascot colour or uploaded photo), or bring a profile from another
- * device in by its share code.
+ * "Who's playing?" — the persona picker, opened from the bottom nav.
+ *
+ * Profiles are PUBLIC/SHARED: the list shows every profile that exists, on any
+ * device, with no password or code. Anyone can pick any profile (the accepted
+ * trade-off of a passwordless, kiosk-style model). Users can also create a new
+ * profile or delete one — deletion is guarded by a confirmation screen because
+ * it removes the profile for everyone.
  */
 export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
   const {
+    allProfiles,
     deviceProfiles,
     activeProfile,
     setActiveProfile,
     activateProfileByCode,
-    forgetProfile,
+    deleteProfile,
   } = useProfile();
+
+  // Prefer the live, shared list; fall back to this device's cached list when
+  // offline so the picker is never empty for profiles created here.
+  const profiles = allProfiles.length > 0 ? allProfiles : deviceProfiles;
 
   const [view, setView] = useState<View>("list");
   const [busy, setBusy] = useState(false);
@@ -36,12 +44,8 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
   const [avatarId, setAvatarId] = useState<string>(DEFAULT_AVATAR_ID);
   const fileRef = useRef<HTMLInputElement>(null);
 
-  // Share-code view: which profile's code to reveal (opt-in, never shown
-  // automatically during profile creation).
-  const [codeProfile, setCodeProfile] = useState<Profile | null>(null);
-
-  // Join-by-code state
-  const [code, setCode] = useState("");
+  // Delete-confirmation state: which profile is pending deletion.
+  const [pendingDelete, setPendingDelete] = useState<DeviceProfileRef | null>(null);
 
   const switchTo = async (id: string) => {
     setBusy(true);
@@ -101,24 +105,11 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
     }
   };
 
-  const handleJoin = async () => {
-    const id = normaliseShareCode(code);
-    if (!id) {
-      setError("Please enter a profile code.");
-      return;
-    }
-    setBusy(true);
-    setError(null);
-    try {
-      const profile = await activateProfileByCode(id);
-      if (!profile) {
-        setError("No profile found for that code.");
-        return;
-      }
-      onClose();
-    } finally {
-      setBusy(false);
-    }
+  const confirmDelete = () => {
+    if (!pendingDelete) return;
+    deleteProfile(pendingDelete.id);
+    setPendingDelete(null);
+    setView("list");
   };
 
   return (
@@ -136,11 +127,9 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
           <h2 id="profile-modal-title" className="profile-modal__title">
             {view === "add"
               ? "New profile"
-              : view === "join"
-                ? "Add from another device"
-                : view === "code"
-                  ? "Share code"
-                  : "Who's playing?"}
+              : view === "confirmDelete"
+                ? "Delete profile?"
+                : "Who's playing?"}
           </h2>
           <button
             type="button"
@@ -158,7 +147,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
           {view === "list" && (
             <>
               <ul className="profile-grid">
-                {deviceProfiles.map((p) => (
+                {profiles.map((p) => (
                   <li key={p.id} className="profile-grid__item">
                     <button
                       type="button"
@@ -174,12 +163,16 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                     </button>
                     <button
                       type="button"
-                      className="profile-card__forget"
-                      onClick={() => forgetProfile(p.id)}
-                      aria-label={`Remove ${p.displayName} from this device`}
-                      title="Remove from this device"
+                      className="profile-card__delete"
+                      onClick={() => {
+                        setPendingDelete(p);
+                        setError(null);
+                        setView("confirmDelete");
+                      }}
+                      aria-label={`Delete ${p.displayName}`}
+                      title="Delete profile"
                     >
-                      ×
+                      🗑
                     </button>
                   </li>
                 ))}
@@ -204,30 +197,6 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
               </ul>
 
               <div className="profile-modal__actions">
-                <button
-                  type="button"
-                  className="profile-btn profile-btn--ghost"
-                  onClick={() => {
-                    setCode("");
-                    setError(null);
-                    setView("join");
-                  }}
-                >
-                  Use a profile from another device
-                </button>
-                {activeProfile && (
-                  <button
-                    type="button"
-                    className="profile-btn profile-btn--ghost"
-                    onClick={() => {
-                      setCodeProfile(activeProfile);
-                      setError(null);
-                      setView("code");
-                    }}
-                  >
-                    Show share code
-                  </button>
-                )}
                 <button
                   type="button"
                   className="profile-btn profile-btn--ghost"
@@ -321,79 +290,34 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
             </div>
           )}
 
-          {view === "join" && (
-            <div className="profile-form">
-              <p className="profile-form__hint">
-                Enter the share code shown on your other device to load that
-                profile here.
-              </p>
-              <label className="profile-form__label" htmlFor="profile-code">
-                Profile code
-              </label>
-              <input
-                id="profile-code"
-                className="profile-form__input profile-form__input--code"
-                type="text"
-                value={code}
-                placeholder="HANA-XXXX-XXXX-XXXX"
-                onChange={(e) => setCode(e.target.value)}
-                autoFocus
-              />
-              <div className="profile-modal__actions">
-                <button
-                  type="button"
-                  className="profile-btn"
-                  onClick={handleJoin}
-                  disabled={busy}
-                >
-                  {busy ? "Loading…" : "Load profile"}
-                </button>
-                <button
-                  type="button"
-                  className="profile-btn profile-btn--ghost"
-                  onClick={() => {
-                    setError(null);
-                    setView("list");
-                  }}
-                >
-                  Back
-                </button>
-              </div>
-            </div>
-          )}
-
-          {view === "code" && codeProfile && (
+          {view === "confirmDelete" && pendingDelete && (
             <div className="profile-form">
               <div className="profile-form__preview">
-                <MascotAvatar avatarId={codeProfile.avatarId} size={88} alt="" />
-                <span className="profile-card__name">{codeProfile.displayName}</span>
+                <MascotAvatar avatarId={pendingDelete.avatarId} size={88} alt="" />
+                <span className="profile-card__name">{pendingDelete.displayName}</span>
               </div>
               <p className="profile-form__hint">
-                Enter this code on another device to use{" "}
-                <strong>{codeProfile.displayName}</strong> there. There's no
-                password — anyone with the code can open this profile, so keep it
-                private.
+                Delete <strong>{pendingDelete.displayName}</strong>? This removes
+                the profile for everyone, on every device, along with its saved
+                and learned flags. This can't be undone.
               </p>
-              <p className="profile-code-display">{codeProfile.id}</p>
               <div className="profile-modal__actions">
                 <button
                   type="button"
-                  className="profile-btn"
-                  onClick={() => {
-                    void navigator.clipboard?.writeText(codeProfile.id);
-                  }}
+                  className="profile-btn profile-btn--danger"
+                  onClick={confirmDelete}
                 >
-                  Copy code
+                  Delete profile
                 </button>
                 <button
                   type="button"
                   className="profile-btn profile-btn--ghost"
                   onClick={() => {
-                    setError(null);
+                    setPendingDelete(null);
                     setView("list");
                   }}
                 >
-                  Back
+                  Cancel
                 </button>
               </div>
             </div>
