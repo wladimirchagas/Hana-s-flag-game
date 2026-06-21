@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAuth, onAuthStateChanged, signInAnonymously } from "firebase/auth";
+import { getAuth, onAuthStateChanged, signInAnonymously, type Auth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -13,7 +13,18 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
-export const auth = getAuth(app);
+
+// `getAuth` throws synchronously (e.g. auth/invalid-api-key) when Firebase
+// isn't configured — which is the case in local dev and any environment
+// without the VITE_FIREBASE_* vars. That must never blank-screen the app, so
+// we contain it here and treat a missing `auth` as "offline / local-only".
+let auth: Auth | null = null;
+try {
+  auth = getAuth(app);
+} catch (err) {
+  console.warn("Firebase Auth unavailable; profiles run local-only.", err);
+}
+export { auth };
 
 /**
  * Ensure the device has a Firebase identity. Profiles (personas) are
@@ -29,6 +40,8 @@ export const auth = getAuth(app);
  * "offline / local-only" and fall back to localStorage — never block play.
  */
 export function ensureAnonymousAuth(): Promise<string | null> {
+  if (!auth) return Promise.resolve(null);
+  const authInstance = auth;
   return new Promise((resolve) => {
     let settled = false;
     const finish = (uid: string | null) => {
@@ -37,7 +50,7 @@ export function ensureAnonymousAuth(): Promise<string | null> {
       resolve(uid);
     };
     const unsub = onAuthStateChanged(
-      auth,
+      authInstance,
       (user) => {
         if (user) {
           unsub();
@@ -46,12 +59,12 @@ export function ensureAnonymousAuth(): Promise<string | null> {
       },
       () => finish(null),
     );
-    if (auth.currentUser) {
+    if (authInstance.currentUser) {
       unsub();
-      finish(auth.currentUser.uid);
+      finish(authInstance.currentUser.uid);
       return;
     }
-    signInAnonymously(auth).catch(() => {
+    signInAnonymously(authInstance).catch(() => {
       unsub();
       finish(null);
     });

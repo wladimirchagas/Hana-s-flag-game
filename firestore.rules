@@ -11,5 +11,24 @@ service cloud.firestore {
         && request.resource.data.score >= 0;
       allow update, delete: if false;
     }
+
+    // User profiles (Netflix-style personas). PASSWORDLESS by design: the
+    // document id IS an unguessable share code, so anyone who holds the code
+    // (the capability) may read and edit the profile. Every client authes
+    // anonymously, so `request.auth != null` simply blocks unauthenticated
+    // traffic, not specific users. Deletes are disabled; forgetting a profile
+    // is a device-local action only.
+    match /profiles/{profileId} {
+      allow read: if request.auth != null;
+      allow create, update: if request.auth != null
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() >= 1
+        && request.resource.data.displayName.size() <= 48
+        && request.resource.data.avatarId is string
+        && request.resource.data.avatarId.size() <= 400000
+        && request.resource.data.selectedCodes is list
+        && request.resource.data.learnedCodes is list;
+      allow delete: if false;
+    }
   }
 }

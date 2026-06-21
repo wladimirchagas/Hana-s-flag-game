@@ -2669,7 +2669,9 @@
    effect invisible anyway. */
 .build-footer {
   position: fixed;
-  bottom: 0;
+  /* Sits directly above the fixed .bottom-nav (which owns the safe-area inset),
+     not at the screen edge. */
+  bottom: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
   left: 0;
   right: 0;
   z-index: 40;
@@ -2677,10 +2679,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  /* Bar height raised ~1.5x via larger vertical padding (see index.css body
-     padding-bottom, which reserves matching space so content isn't hidden). */
-  padding: 0.75rem clamp(0.75rem, 2vw, 1.25rem);
-  padding-bottom: max(0.95rem, env(safe-area-inset-bottom));
+  padding: 0.6rem clamp(0.75rem, 2vw, 1.25rem);
   font-family: var(--font-display, system-ui, sans-serif);
   font-size: 0.7rem;
   font-weight: 500;

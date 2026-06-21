@@ -6,6 +6,7 @@ import LearnPage from './pages/LearnPage'
 import CalibratePage from './pages/CalibratePage'
 import { Topbar } from './components/Topbar'
 import { BuildFooter } from './components/BuildFooter'
+import { ProfileBottomNav } from './components/ProfileBottomNav'
 import { gameAudio } from './lib/gameAudio'
 
 export default function App() {
@@ -38,6 +39,8 @@ export default function App() {
       </Routes>
       {/* Persistent build-info footer across every route. */}
       <BuildFooter />
+      {/* Bottom nav bar hosting the active profile (sits below the footer). */}
+      <ProfileBottomNav />
     </>
   )
 }
