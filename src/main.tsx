@@ -7,6 +7,7 @@ import { LeaderboardProvider } from './context/LeaderboardContext.tsx'
 import { LeaderboardLightbox } from './components/LeaderboardLightbox.tsx'
 import { ThemeProvider } from './context/ThemeContext.tsx'
 import { NavigationGuardProvider } from './context/NavigationGuardContext.tsx'
+import { ProfileProvider } from './context/ProfileContext.tsx'
 
 // Vite injects BASE_URL from the `base` option in vite.config.ts. Trailing slash
 // is stripped because react-router expects e.g. "/flag-game" not "/flag-game/".
@@ -16,12 +17,14 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename={routerBasename}>
       <ThemeProvider>
-        <NavigationGuardProvider>
-          <LeaderboardProvider>
-            <App />
-            <LeaderboardLightbox />
-          </LeaderboardProvider>
-        </NavigationGuardProvider>
+        <ProfileProvider>
+          <NavigationGuardProvider>
+            <LeaderboardProvider>
+              <App />
+              <LeaderboardLightbox />
+            </LeaderboardProvider>
+          </NavigationGuardProvider>
+        </ProfileProvider>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,
