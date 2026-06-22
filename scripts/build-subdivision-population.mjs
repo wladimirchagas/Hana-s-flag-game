@@ -108,6 +108,54 @@ async function fetchNational(cc) {
   return [...best.values()][0] ?? null;
 }
 
+/**
+ * Some subdivisions (mostly external territories / crown dependencies, e.g.
+ * Norfolk Island, the Cayman Islands, the US Virgin Islands) have a dated
+ * Wikidata population statement but no P300 (ISO 3166-2 code) property, so
+ * the P300-filtered queries above can never find them — not a missing
+ * figure, just a missing link in Wikidata. Loading the *previous* run's
+ * output as a baseline and only ever adding to it (never dropping a code the
+ * new fetch didn't return) means a refresh can't silently regress coverage,
+ * matching this project's "never reduce bundled information" rule.
+ */
+function loadExisting(path, sectionRe, entryRe) {
+  const map = new Map();
+  let text;
+  try {
+    text = readFileSync(path, "utf8");
+  } catch {
+    return map;
+  }
+  const section = text.match(sectionRe);
+  if (!section) return map;
+  for (const m of section[1].matchAll(entryRe)) map.set(m[1], m.slice(2));
+  return map;
+}
+
+function loadExistingSubdivisions() {
+  const raw = loadExisting(
+    OUTPUT,
+    /SUBDIVISION_POPULATION:[^{]*\{([\s\S]*?)\n\};/,
+    /"([^"]+)":\s*\{\s*population:\s*(\d+),\s*year:\s*(\d+),\s*basis:\s*"(\w+)"\s*\}/g,
+  );
+  const out = new Map();
+  for (const [code, [pop, year, basis]] of raw) {
+    out.set(code, { population: Number(pop), year: Number(year), basis });
+  }
+  return out;
+}
+
+function loadExistingNational() {
+  const raw = loadExisting(
+    OUTPUT,
+    /NATIONAL_REFERENCE_POPULATION[^{]*\{([\s\S]*?)\n\};/,
+    /"([^"]+)":\s*(\d+)/g,
+  );
+  const out = new Map();
+  for (const [cc, [pop]] of raw) out.set(cc, Number(pop));
+  return out;
+}
+
 async function main() {
   const codes = countryCodes();
   const subdivisions = new Map(); // code -> {population, year, basis}
@@ -126,6 +174,30 @@ async function main() {
       console.log(`→ FAILED (${e.message})`);
     }
     await sleep(200); // be polite
+  }
+
+  // Never let a refresh drop a code the new fetch didn't return — preserve
+  // any previously-known figure (e.g. territories Wikidata doesn't tag with
+  // P300) instead of silently losing coverage.
+  let preserved = 0;
+  for (const [code, v] of loadExistingSubdivisions()) {
+    if (!subdivisions.has(code)) {
+      subdivisions.set(code, v);
+      preserved++;
+    }
+  }
+  let preservedNational = 0;
+  for (const [cc, pop] of loadExistingNational()) {
+    if (!national.has(cc)) {
+      national.set(cc, pop);
+      preservedNational++;
+    }
+  }
+  if (preserved > 0 || preservedNational > 0) {
+    console.log(
+      `\nPreserved ${preserved} subdivision(s) and ${preservedNational} national total(s) ` +
+        `from the previous run that the new fetch didn't return.`,
+    );
   }
 
   writeOutput(subdivisions, national);
