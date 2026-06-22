@@ -33,6 +33,14 @@ export type LeaderboardEntry = {
   continentBreakdown: LeaderboardContinentBreakdown;
   /** Identifies the game mode for leaderboard filtering, e.g. "all-195", "quiz-easy", "custom". */
   gameMode?: string;
+  /** ID of the profile that scored this run, when played under a profile. */
+  profileId?: string;
+  /**
+   * The profile's mascot avatar token (e.g. "mascot:teal") for showing the
+   * player's avatar on the board. Only mascot tokens are stored — uploaded
+   * photos are deliberately NOT denormalised into the public leaderboard.
+   */
+  profileAvatarId?: string;
 };
 
 const STORAGE_KEY = "flag-game-leaderboard-v1";

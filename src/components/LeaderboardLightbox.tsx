@@ -4,6 +4,7 @@ import { ScoreBoard } from "./ScoreBoard";
 import { WorldProgressMap } from "./WorldProgressMap";
 import { GameResultsFlags } from "./GameResultsFlags";
 import type { LeaderboardEntry } from "../lib/leaderboardStorage";
+import { MascotAvatar } from "./MascotAvatar";
 import "../App.css";
 
 function formatLeaderboardDate(ts: number): string {
@@ -31,7 +32,15 @@ function EntryDetail({ entry }: { entry: LeaderboardEntry }) {
   return (
     <div className="leaderboard-lightbox__detail">
       <div className="leaderboard-lightbox__detail-meta">
-        <p className="leaderboard-lightbox__detail-name">{entry.playerName}</p>
+        <p
+          className="leaderboard-lightbox__detail-name"
+          style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+        >
+          {entry.profileAvatarId && (
+            <MascotAvatar avatarId={entry.profileAvatarId} size={32} alt="" />
+          )}
+          {entry.playerName}
+        </p>
         <p className="leaderboard-lightbox__detail-sub">
           {formatLeaderboardDate(entry.createdAt)}
           {" · "}
@@ -264,6 +273,13 @@ export function LeaderboardLightbox() {
                         onClick={() => selectEntry(entry.id)}
                       >
                         <span className="leaderboard-lightbox__rank">{index + 1}</span>
+                        {entry.profileAvatarId && (
+                          <MascotAvatar
+                            avatarId={entry.profileAvatarId}
+                            size={28}
+                            alt=""
+                          />
+                        )}
                         <span className="leaderboard-lightbox__row-main">
                           <span className="leaderboard-lightbox__row-name">
                             {entry.playerName}
