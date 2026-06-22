@@ -2,11 +2,13 @@ import { useState } from "react";
 import { useProfile } from "../context/ProfileContext";
 import { MascotAvatar } from "./MascotAvatar";
 import { ProfilePickerModal } from "./ProfilePickerModal";
+import { BuildFooter } from "./BuildFooter";
 import { DEFAULT_AVATAR_ID } from "../lib/avatars";
 import "./ProfileNav.css";
 
 /**
- * Persistent bottom navigation bar that hosts the active profile chip.
+ * Persistent bottom bar: build info + hard-refresh on the left, the active
+ * profile chip on the right, sharing a single row.
  *
  * The profile lives here (not the already-crowded top bar). Tapping the chip
  * opens the "Who's playing?" picker so the user can switch persona, create a
@@ -22,14 +24,15 @@ export function ProfileBottomNav() {
 
   return (
     <>
-      <nav className="bottom-nav" aria-label="Profile">
+      <nav className="bottom-nav" aria-label="App status and profile">
+        <BuildFooter />
         <button
           type="button"
           className="profile-chip"
           onClick={() => setPickerOpen(true)}
           aria-haspopup="dialog"
         >
-          <MascotAvatar avatarId={avatarId} size={30} alt="" />
+          <MascotAvatar avatarId={avatarId} size={24} alt="" />
           <span className="profile-chip__text">
             <span className="profile-chip__name">{name}</span>
             <span className="profile-chip__hint">

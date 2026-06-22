@@ -5,7 +5,6 @@ import FlagGamePage from './pages/FlagGamePage'
 import LearnPage from './pages/LearnPage'
 import CalibratePage from './pages/CalibratePage'
 import { Topbar } from './components/Topbar'
-import { BuildFooter } from './components/BuildFooter'
 import { ProfileBottomNav } from './components/ProfileBottomNav'
 import { gameAudio } from './lib/gameAudio'
 
@@ -37,9 +36,8 @@ export default function App() {
         <Route path="/learn" element={<LearnPage />} />
         <Route path="/calibrate" element={<CalibratePage />} />
       </Routes>
-      {/* Persistent build-info footer across every route. */}
-      <BuildFooter />
-      {/* Bottom nav bar hosting the active profile (sits below the footer). */}
+      {/* Persistent bottom bar: build info + refresh on the left, active
+          profile chip on the right, both in one row. */}
       <ProfileBottomNav />
     </>
   )

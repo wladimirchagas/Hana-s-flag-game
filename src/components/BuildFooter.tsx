@@ -1,5 +1,7 @@
 /**
- * Persistent build-info footer rendered on every page.
+ * Build-info readout (SHA + timestamp + hard-refresh button), rendered as
+ * the left-hand side of the shared bottom bar (see ProfileBottomNav, which
+ * places this alongside the profile chip in the same row).
  *
  * Shows the short git SHA + a localized timestamp of when the bundle was
  * built. Lets you (and users reporting bugs) tell at a glance whether the
@@ -59,23 +61,25 @@ export function BuildFooter() {
     window.location.replace(url.toString());
   }
   return (
-    <footer className="build-footer" role="contentinfo" aria-label="Build info">
-      <span className="build-footer__label">Build</span>{" "}
-      {commitHref ? (
-        <a
-          className="build-footer__sha"
-          href={commitHref}
-          target="_blank"
-          rel="noreferrer noopener"
-          title="View this commit on GitHub"
-        >
-          {commit}
-        </a>
-      ) : (
-        <span className="build-footer__sha">{commit}</span>
-      )}{" "}
-      <span className="build-footer__time" title={builtAt.toISOString()}>
-        · {localTime}
+    <div className="build-footer" role="contentinfo" aria-label="Build info">
+      <span className="build-footer__text">
+        <span className="build-footer__label">Build</span>{" "}
+        {commitHref ? (
+          <a
+            className="build-footer__sha"
+            href={commitHref}
+            target="_blank"
+            rel="noreferrer noopener"
+            title="View this commit on GitHub"
+          >
+            {commit}
+          </a>
+        ) : (
+          <span className="build-footer__sha">{commit}</span>
+        )}{" "}
+        <span className="build-footer__time" title={builtAt.toISOString()}>
+          · {localTime}
+        </span>
       </span>
       <button
         type="button"
@@ -86,7 +90,7 @@ export function BuildFooter() {
       >
         ↺
       </button>
-    </footer>
+    </div>
   );
 }
 

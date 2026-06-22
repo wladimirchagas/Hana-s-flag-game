@@ -29,8 +29,8 @@
   --radius-md: 14px;
   --font-display: 'Fredoka', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   /* Approx visual height of the fixed .bottom-nav (excl. iOS safe-area inset,
-     which the nav adds itself). The build-footer is offset above it and the
-     body reserves space for both. */
+     which the nav adds itself). Build info + the profile chip share this one
+     row, so the body only needs to reserve space for a single bar. */
   --bottom-nav-h: 3rem;
 }
 
@@ -78,10 +78,9 @@ body {
   color: var(--ink);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  /* Reserve space for the fixed .bottom-nav (profile) + the .build-footer that
-     sits just above it (+ iOS home indicator), so page content is never hidden
-     behind either bar. */
-  padding-bottom: calc(var(--bottom-nav-h) + 3.2rem + env(safe-area-inset-bottom));
+  /* Reserve space for the fixed .bottom-nav (build info + profile, one row)
+     + iOS home indicator, so page content is never hidden behind it. */
+  padding-bottom: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
 }
 
 #root {
