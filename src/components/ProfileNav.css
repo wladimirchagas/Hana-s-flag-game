@@ -1,8 +1,8 @@
-/* === Bottom navigation bar (hosts the profile chip) ===
-   Sits at the very bottom of the viewport; the thin build-info footer is
-   offset to sit just above it (see .build-footer in App.css). Body
-   padding-bottom (index.css) reserves space for both so content is never
-   hidden behind them. */
+/* === Bottom bar (build info + the profile chip share one row) ===
+   Sits at the very bottom of the viewport. Build info (BuildFooter) sits on
+   the left and grows/shrinks with the available width; the profile chip is
+   a fixed-size item pinned to the right via the bar's space-between layout.
+   Body padding-bottom (index.css) reserves space for this single bar. */
 
 .bottom-nav {
   position: fixed;
@@ -12,27 +12,35 @@
   z-index: 41;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.45rem clamp(0.75rem, 2vw, 1.25rem);
-  padding-bottom: max(0.45rem, env(safe-area-inset-bottom));
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.4rem clamp(0.75rem, 2vw, 1.25rem);
+  padding-bottom: max(0.4rem, env(safe-area-inset-bottom));
   background: var(--cream);
   border-top: 2px solid var(--ink-faint);
 }
 
-/* The build-footer hides itself when a modal/input is active; keep the bottom
-   nav in step so the two bars don't separate. */
+/* Hide the whole bar when a modal/input is active, on phones/tablets where
+   it would otherwise sit above the on-screen keyboard. */
 body:has(.dropdown-modal) .bottom-nav,
 body:has(.profile-overlay) .bottom-nav {
   display: none;
 }
 
+@media (max-width: 768px) {
+  body:has(input:focus, select:focus, textarea:focus) .bottom-nav {
+    display: none;
+  }
+}
+
 .profile-chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  padding: 0.3rem 0.85rem 0.3rem 0.35rem;
+  gap: 0.4rem;
+  flex: 0 0 auto;
+  padding: 0.18rem 0.6rem 0.18rem 0.25rem;
   background: var(--paper);
-  border: 3px solid var(--ink);
+  border: 2px solid var(--ink);
   border-radius: 999px;
   box-shadow: 0 2px 0 var(--ink);
   cursor: pointer;
@@ -62,11 +70,11 @@ body:has(.profile-overlay) .bottom-nav {
 
 .profile-chip__name {
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.8rem;
 }
 
 .profile-chip__hint {
-  font-size: 0.66rem;
+  font-size: 0.6rem;
   font-weight: 500;
   color: var(--ink-soft);
 }

@@ -2656,50 +2656,29 @@
   }
 }
 
-/* Persistent build-info bottom bar rendered globally by App.tsx.
-   Sticks to the bottom of the viewport across every route.
-   NOTE: backdrop-filter AND transform: translateZ(0) are both intentionally
-   omitted. Either property forces GPU compositing on the element. On iOS
-   Safari, a composited position:fixed element layered alongside the composited
-   sticky topbar (which also had backdrop-filter, now removed) gets positioned
-   against the wrong compositor origin during scroll — appearing mid-page
-   instead of at the viewport bottom. Plain position:fixed without any
-   compositing hint is handled in software and tracks the visual viewport
-   correctly on every frame. The solid --cream background makes any blur
-   effect invisible anyway. */
+/* Build-info readout: the left-hand item inside the shared .bottom-nav bar
+   (see ProfileNav.css), sitting next to the profile chip on the right.
+   It no longer positions itself — .bottom-nav owns the fixed placement,
+   background and border for the whole row. */
 .build-footer {
-  position: fixed;
-  /* Sits directly above the fixed .bottom-nav (which owns the safe-area inset),
-     not at the screen edge. */
-  bottom: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
-  left: 0;
-  right: 0;
-  z-index: 40;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.35rem;
-  padding: 0.6rem clamp(0.75rem, 2vw, 1.25rem);
+  min-width: 0;
+  flex: 1 1 auto;
   font-family: var(--font-display, system-ui, sans-serif);
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   color: var(--ink-soft);
-  background: var(--cream);
-  border-top: 2px solid var(--ink-faint);
   user-select: none;
 }
 
-/* Hide build footer when dropdown modals are active */
-body:has(.dropdown-modal) .build-footer {
-  display: none;
-}
-
-/* Hide build footer when any input is focused on mobile/tablet viewports to avoid keyboard overlap */
-@media (max-width: 768px) {
-  body:has(input:focus, select:focus, textarea:focus) .build-footer {
-    display: none;
-  }
+.build-footer__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .build-footer__label {
@@ -2728,7 +2707,7 @@ body:has(.dropdown-modal) .build-footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.4rem;
+  flex: 0 0 auto;
   padding: 0.05rem 0.4rem;
   font-size: 0.85rem;
   font-family: inherit;
