@@ -4,6 +4,7 @@ import { LeaveGameDialog } from "../components/LeaveGameDialog";
 import { useNavigationGuard } from "../context/NavigationGuardContext";
 import { useGame } from "../hooks/useGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
+import { useProfile } from "../context/ProfileContext";
 import { gameAudio } from "../lib/gameAudio";
 import type { LeaderboardFilter } from "../context/LeaderboardContext";
 import { buildLeaderboardEntryFromGame } from "../lib/buildLeaderboardEntryFromGame";
@@ -116,8 +117,16 @@ function FlagGameInner({
     useFullAlternatives: isGroupGame && groupGame.hardcore,
   });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
+  const { activeProfile } = useProfile();
   const [playerName, setPlayerName] = useState("");
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
+
+  // Pre-fill the leaderboard name from the active profile so a signed-in player
+  // never has to retype it. Only seeds when the field is still empty, so a
+  // Guest's manual entry (or a hand-edited name) is never overwritten.
+  useEffect(() => {
+    if (activeProfile && !playerName) setPlayerName(activeProfile.displayName);
+  }, [activeProfile, playerName]);
 
   const gameIsActive = game.phase === "guessing" || game.phase === "revealed";
 
@@ -283,13 +292,22 @@ function FlagGameInner({
     });
   };
 
+  const saveRun = useCallback(
+    (name: string) => {
+      saveGameToLeaderboard(
+        buildLeaderboardEntryFromGame(game, name, gameMode, activeProfile ?? undefined),
+      );
+      setSaveHint("saved");
+    },
+    [saveGameToLeaderboard, game, gameMode, activeProfile],
+  );
+
   const handleSave = () => {
     if (!playerName.trim()) {
       setSaveHint("need-name");
       return;
     }
-    saveGameToLeaderboard(buildLeaderboardEntryFromGame(game, playerName, gameMode));
-    setSaveHint("saved");
+    saveRun(playerName);
   };
 
   const handleSaveFromPage = () => {
@@ -297,9 +315,24 @@ function FlagGameInner({
       setSaveHint("need-name");
       return;
     }
-    saveGameToLeaderboard(buildLeaderboardEntryFromGame(game, playerName, gameMode));
-    setSaveHint("saved");
+    saveRun(playerName);
   };
+
+  // Auto-save the run for a signed-in profile: a profile player's scores go to
+  // the leaderboard automatically (under their name + mascot), exactly once per
+  // finished game. Guests still save manually via the name field. The ref guard
+  // survives re-renders (and StrictMode's double-invoke); it resets when a new
+  // game starts.
+  const autoSavedRef = useRef(false);
+  useEffect(() => {
+    if (game.phase !== "finished") {
+      autoSavedRef.current = false;
+      return;
+    }
+    if (autoSavedRef.current || !activeProfile) return;
+    autoSavedRef.current = true;
+    saveRun(activeProfile.displayName);
+  }, [game.phase, activeProfile, saveRun]);
 
   // Reset scroll to the top whenever a new flag is shown — both on initial
   // landing (current goes null → flag) and after a correct guess advances
