@@ -311,6 +311,32 @@ export async function updateProfile(
 }
 
 /**
+ * Edit a profile's display name and/or avatar. Updates the local cache
+ * immediately (so the change is visible even offline) and fires a
+ * non-blocking remote `updateDoc` — a partial merge, so it can't clobber
+ * `selectedCodes`/`learnedCodes` written concurrently from another device.
+ * Mirrors `createProfile`'s fire-and-forget pattern.
+ */
+export async function editProfile(
+  current: Profile,
+  patch: { displayName?: string; avatarId?: AvatarId },
+): Promise<Profile> {
+  const updated: Profile = {
+    ...current,
+    ...(patch.displayName !== undefined
+      ? { displayName: patch.displayName.trim().slice(0, 48) }
+      : {}),
+    ...(patch.avatarId !== undefined ? { avatarId: patch.avatarId } : {}),
+    updatedAt: Date.now(),
+  };
+  cacheProfileLocally(updated);
+  void updateProfile(current.id, patch).catch((err) => {
+    console.warn("Profile remote edit failed; using local cache only.", err);
+  });
+  return updated;
+}
+
+/**
  * Live-subscribe to EVERY profile. Profiles are public/shared: anyone on any
  * device sees all of them in the "Who's playing?" picker and can pick one —
  * there is no password or share code. Ordered by most-recently-updated so

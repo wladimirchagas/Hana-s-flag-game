@@ -239,24 +239,38 @@ body:has(.profile-overlay) .bottom-nav {
   color: var(--ink-soft);
 }
 
-.profile-card__delete {
+.profile-card__delete,
+.profile-card__edit {
   position: absolute;
   top: -8px;
-  right: -2px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
   border: 2px solid var(--ink);
   background: var(--paper);
   color: var(--ink);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 1;
   cursor: pointer;
+}
+
+.profile-card__delete {
+  right: -2px;
+}
+
+.profile-card__edit {
+  left: -2px;
 }
 
 .profile-card__delete:hover,
 .profile-card__delete:focus-visible {
   background: var(--coral);
+  outline: none;
+}
+
+.profile-card__edit:hover,
+.profile-card__edit:focus-visible {
+  background: var(--sky);
   outline: none;
 }
 
