@@ -4,6 +4,7 @@ import {
   type FlagListEntry,
 } from "../lib/flagList";
 import { loadLearnedCodes } from "../lib/learnedFlags";
+import { FLAG_DATA_EVENT } from "../lib/profileSync";
 import {
   FLAG_SHAPE_LABELS,
   FLAG_SHAPE_ORDER,
@@ -109,14 +110,24 @@ export function FlagGrid({
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>("none");
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
-  // Codes the player has unlocked via the Hana's Game streak reward — read
-  // once on mount and shown as a "Learned" badge so the player can see
-  // which flags they've collected. Only meaningful for the modern era (the
-  // ids in historical eras are polity names, not alpha-2 codes).
-  const learnedCodes = useMemo(
-    () => (isModernEra ? new Set(loadLearnedCodes()) : new Set<string>()),
-    [isModernEra],
+  // Codes the player has unlocked via the Hana's Game streak reward, shown as a
+  // "Learned" badge. Held in state and re-read whenever the flag data changes —
+  // including when it syncs DOWN from the active profile on another device — so
+  // the badges update live, not just on mount. Only meaningful for the modern
+  // era (historical-era ids are polity names, not alpha-2 codes).
+  const [learnedCodes, setLearnedCodes] = useState<Set<string>>(() =>
+    isModernEra ? new Set(loadLearnedCodes()) : new Set<string>(),
   );
+  useEffect(() => {
+    if (!isModernEra) {
+      setLearnedCodes(new Set<string>());
+      return;
+    }
+    const reread = () => setLearnedCodes(new Set(loadLearnedCodes()));
+    reread();
+    window.addEventListener(FLAG_DATA_EVENT, reread);
+    return () => window.removeEventListener(FLAG_DATA_EVENT, reread);
+  }, [isModernEra]);
 
   // When the era switches away from today, fall back to "none" if the active
   // mode is not available for historical eras.

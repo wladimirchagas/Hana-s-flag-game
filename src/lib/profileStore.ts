@@ -299,6 +299,26 @@ export function subscribeProfile(
   );
 }
 
+/**
+ * Merge-write just the flag arrays for a profile (cross-device sync of saved &
+ * learned flags). `merge: true` keeps the other fields intact, so the rules'
+ * full-field validation still passes against the existing document, and two
+ * devices editing different fields don't clobber each other.
+ */
+export async function updateProfileFlags(
+  id: string,
+  patch: { selectedCodes?: string[]; learnedCodes?: string[] },
+): Promise<void> {
+  // Also refresh the local cache so a later offline read sees the new values.
+  const cached = loadCachedProfile(id);
+  if (cached) cacheProfileLocally({ ...cached, ...patch, updatedAt: Date.now() });
+  await setDoc(
+    doc(db, COLLECTION, id),
+    { ...patch, updatedAt: serverTimestamp() },
+    { merge: true },
+  );
+}
+
 /** Patch a profile's flag data and/or display fields. */
 export async function updateProfile(
   id: string,
@@ -330,9 +350,13 @@ export async function editProfile(
     updatedAt: Date.now(),
   };
   cacheProfileLocally(updated);
-  void updateProfile(current.id, patch).catch((err) => {
-    console.warn("Profile remote edit failed; using local cache only.", err);
-  });
+  // Write the FULL document (upsert), not a partial patch: the profile may not
+  // exist in Firestore yet (e.g. it was created before the rules were deployed,
+  // so it lives only in this device's cache). `updateDoc` would throw "No
+  // document to update" in that case and the edit would never sync. A full
+  // `setDoc` creates-or-replaces it and satisfies the create/update rules,
+  // which require the complete field set.
+  void writeProfileRemote(updated);
   return updated;
 }
 

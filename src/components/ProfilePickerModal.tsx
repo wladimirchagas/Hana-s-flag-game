@@ -26,6 +26,8 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
     allProfiles,
     deviceProfiles,
     activeProfile,
+    syncState,
+    syncError,
     setActiveProfile,
     activateProfileByCode,
     deleteProfile,
@@ -248,6 +250,14 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
 
           {view === "list" && (
             <>
+              <p className={"profile-sync profile-sync--" + syncState}>
+                {syncState === "loading" && "Connecting…"}
+                {syncState === "synced" && "☁️ Synced across devices"}
+                {syncState === "offline" &&
+                  "⚠️ Not connected — sign-in unavailable, so profiles stay on this device only."}
+                {syncState === "error" &&
+                  `⚠️ Sync error — profiles won't cross devices. (${syncError})`}
+              </p>
               <ul className="profile-grid">
                 {profiles.map((p) => (
                   <li key={p.id} className="profile-grid__item">

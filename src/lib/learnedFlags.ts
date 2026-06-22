@@ -17,6 +17,7 @@
 
 import { EASY_CODES } from "./flagDifficulty";
 import { STARTER_SELECTED_CODES } from "./countrySelection";
+import { notifyFlagDataChanged, pushLearnedCodes } from "./profileSync";
 
 const LEARNED_KEY = "flagGame.learnedCountryCodes";
 
@@ -74,12 +75,29 @@ export function loadLearnedCodes(): string[] {
   }
 }
 
-export function saveLearnedCodes(codes: readonly string[]): void {
+function writeLearnedLocal(codes: readonly string[]): void {
   try {
     localStorage.setItem(LEARNED_KEY, JSON.stringify([...codes]));
   } catch {
     // ignore quota / privacy mode errors
   }
+}
+
+/** Save learned codes locally AND sync them up to the active profile. */
+export function saveLearnedCodes(codes: readonly string[]): void {
+  writeLearnedLocal(codes);
+  pushLearnedCodes(codes);
+  notifyFlagDataChanged();
+}
+
+/**
+ * Write learned codes that came DOWN from the active profile (another device).
+ * Updates localStorage and notifies the UI, but does NOT push back to Firestore
+ * — that would echo the change into an update loop.
+ */
+export function hydrateLearnedCodes(codes: readonly string[]): void {
+  writeLearnedLocal(codes);
+  notifyFlagDataChanged();
 }
 
 export function addLearnedCode(code: string): string[] {

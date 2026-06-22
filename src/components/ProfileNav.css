@@ -169,6 +169,33 @@ body:has(.profile-overlay) .bottom-nav {
   font-size: 0.9rem;
 }
 
+/* Cross-device sync status banner */
+.profile-sync {
+  margin: 0 0 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md, 14px);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile-sync--synced {
+  color: var(--ink-soft);
+  background: rgba(78, 205, 196, 0.16);
+}
+
+.profile-sync--loading {
+  color: var(--ink-soft);
+  background: var(--paper);
+}
+
+.profile-sync--offline,
+.profile-sync--error {
+  color: var(--coral-deep);
+  background: rgba(216, 48, 48, 0.12);
+  border: 2px solid var(--coral-deep);
+}
+
 /* Profile grid */
 .profile-grid {
   list-style: none;
