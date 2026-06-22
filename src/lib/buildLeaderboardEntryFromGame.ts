@@ -1,6 +1,6 @@
 import type { UseGameResult } from "../hooks/useGame";
 import type { NewLeaderboardEntry } from "./leaderboardStorage";
-import { isPhotoAvatar } from "./avatars";
+import { profileEntryFields } from "./profileLeaderboard";
 
 export function buildLeaderboardEntryFromGame(
   game: UseGameResult,
@@ -23,13 +23,6 @@ export function buildLeaderboardEntryFromGame(
       ? Math.max(0, game.gameEndedAtMs - game.gameStartedAtMs)
       : 0;
 
-  // Only a mascot token is denormalised onto the (public) leaderboard — never
-  // an uploaded photo data URL.
-  const profileAvatarId =
-    profile?.avatarId && !isPhotoAvatar(profile.avatarId)
-      ? profile.avatarId
-      : undefined;
-
   return {
     playerName: name,
     score: game.score,
@@ -43,7 +36,6 @@ export function buildLeaderboardEntryFromGame(
     countriesPlayed,
     continentBreakdown: game.continentBreakdown.map((row) => ({ ...row })),
     gameMode,
-    ...(profile?.id ? { profileId: profile.id } : {}),
-    ...(profileAvatarId ? { profileAvatarId } : {}),
+    ...profileEntryFields(profile),
   };
 }
