@@ -4,6 +4,8 @@ import { LeaveGameDialog } from "../components/LeaveGameDialog";
 import { useNavigationGuard } from "../context/NavigationGuardContext";
 import { useDisputedTerritoriesGame } from "../hooks/useDisputedTerritoriesGame";
 import { useLeaderboard } from "../context/LeaderboardContext";
+import { useProfile } from "../context/ProfileContext";
+import { profileEntryFields } from "../lib/profileLeaderboard";
 import { SubdivisionResultsFlags } from "../components/SubdivisionResultsFlags";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import { gameAudio } from "../lib/gameAudio";
@@ -98,9 +100,15 @@ function DisputedFlagCard({
 export function DisputedTerritoriesGamePage() {
   const game = useDisputedTerritoriesGame();
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
+  const { activeProfile } = useProfile();
   const [playerName, setPlayerName] = useState("");
   const [saveHint, setSaveHint] = useState<"idle" | "saved" | "need-name">("idle");
   const [celebrationDismissed, setCelebrationDismissed] = useState(false);
+
+  // Pre-fill the leaderboard name from the active profile (only while empty).
+  useEffect(() => {
+    if (activeProfile && !playerName) setPlayerName(activeProfile.displayName);
+  }, [activeProfile, playerName]);
 
   const gameIsActive = game.phase === "guessing" || game.phase === "revealed";
 
@@ -155,32 +163,52 @@ export function DisputedTerritoriesGamePage() {
     if (currentCode) window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentCode]);
 
+  const saveRun = useCallback(
+    (name: string) => {
+      const elapsedMs =
+        game.gameStartedAtMs != null && game.gameEndedAtMs != null
+          ? Math.max(0, game.gameEndedAtMs - game.gameStartedAtMs)
+          : 0;
+      const entry: NewLeaderboardEntry = {
+        playerName: name.trim().slice(0, 48),
+        score: game.score,
+        correctCount: game.correctCount,
+        wrongCount: game.wrongCount,
+        totalAnswered: game.totalAnswered,
+        totalFlags: game.totalDivisions,
+        elapsedMs,
+        meanAnswerMs: game.meanAnswerMs,
+        countryResults: { ...game.divisionResults },
+        countriesPlayed: [],
+        continentBreakdown: [],
+        gameMode: GAME_MODE,
+        ...profileEntryFields(activeProfile),
+      };
+      saveGameToLeaderboard(entry);
+      setSaveHint("saved");
+    },
+    [game, activeProfile, saveGameToLeaderboard],
+  );
+
   function handleSave() {
     if (!playerName.trim()) {
       setSaveHint("need-name");
       return;
     }
-    const elapsedMs =
-      game.gameStartedAtMs != null && game.gameEndedAtMs != null
-        ? Math.max(0, game.gameEndedAtMs - game.gameStartedAtMs)
-        : 0;
-    const entry: NewLeaderboardEntry = {
-      playerName: playerName.trim().slice(0, 48),
-      score: game.score,
-      correctCount: game.correctCount,
-      wrongCount: game.wrongCount,
-      totalAnswered: game.totalAnswered,
-      totalFlags: game.totalDivisions,
-      elapsedMs,
-      meanAnswerMs: game.meanAnswerMs,
-      countryResults: { ...game.divisionResults },
-      countriesPlayed: [],
-      continentBreakdown: [],
-      gameMode: GAME_MODE,
-    };
-    saveGameToLeaderboard(entry);
-    setSaveHint("saved");
+    saveRun(playerName);
   }
+
+  // Auto-save a profile player's finished run (once per game).
+  const autoSavedRef = useRef(false);
+  useEffect(() => {
+    if (game.phase !== "finished") {
+      autoSavedRef.current = false;
+      return;
+    }
+    if (autoSavedRef.current || !activeProfile) return;
+    autoSavedRef.current = true;
+    saveRun(activeProfile.displayName);
+  }, [game.phase, activeProfile, saveRun]);
 
   const leaderboardFilter = useMemo(() => ({
     gameMode: GAME_MODE,
