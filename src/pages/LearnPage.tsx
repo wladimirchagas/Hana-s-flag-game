@@ -25,6 +25,7 @@ import { FLAG_SIMILARITIES } from "../lib/flagSimilarity";
 import { getDriveSide } from "../lib/flagDriveSide";
 import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
+import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
   loadStoredSelection,
@@ -1088,6 +1089,12 @@ export default function LearnPage() {
                             <div className="learn-fs__subdiv-info">
                               <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
                               <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                              <SubdivisionPopulation
+                                code={selectedSubdivision.code}
+                                countryCode={display.country.code}
+                                countryName={display.country.name}
+                                nationalPopulation={display.country.population}
+                              />
                               {isNsgt && (
                                 <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
                                   🌐 UN Non-Self-Governing Territory
@@ -1210,6 +1217,12 @@ export default function LearnPage() {
                         <div className="learn-fs__subdiv-info">
                           <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
                           <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
+                          <SubdivisionPopulation
+                            code={selectedSubdivision.code}
+                            countryCode={subdivisionCountry.code}
+                            countryName={subdivisionCountry.name}
+                            nationalPopulation={countryObj?.population}
+                          />
                           {isNsgt && (
                             <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
                               🌐 UN Non-Self-Governing Territory
