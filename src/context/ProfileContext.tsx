@@ -27,6 +27,7 @@ import {
 import { ensureAnonymousAuth } from "../lib/firebase";
 import {
   deleteProfile as deleteProfileRemote,
+  editProfile as editProfileRemote,
   fetchProfile,
   forgetDeviceProfile,
   loadActiveProfileId,
@@ -34,6 +35,7 @@ import {
   rememberDeviceProfile,
   saveActiveProfileId,
   subscribeToAllProfiles,
+  type AvatarId,
   type DeviceProfileRef,
   type Profile,
 } from "../lib/profileStore";
@@ -62,6 +64,15 @@ type ProfileContextValue = {
   rememberProfile: (profile: Profile) => void;
   /** Delete a profile for everyone (shared document + local cache). */
   deleteProfile: (id: string) => void;
+  /**
+   * Edit a profile's display name and/or avatar (works on any known
+   * profile, not just the active one — mirrors `deleteProfile`). Resolves
+   * to `null` if the profile couldn't be found locally or remotely.
+   */
+  editProfile: (
+    id: string,
+    patch: { displayName?: string; avatarId?: AvatarId },
+  ) => Promise<Profile | null>;
 };
 
 const ProfileContext = createContext<ProfileContextValue | null>(null);
@@ -156,6 +167,22 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     setActiveProfileState((current) => (current?.id === id ? null : current));
   }, []);
 
+  const editProfile = useCallback(
+    async (
+      id: string,
+      patch: { displayName?: string; avatarId?: AvatarId },
+    ): Promise<Profile | null> => {
+      const current = activeProfile?.id === id ? activeProfile : await fetchProfile(id);
+      if (!current) return null;
+      const updated = await editProfileRemote(current, patch);
+      setDeviceProfiles(rememberDeviceProfile(toRef(updated)));
+      setAllProfiles((list) => list.map((p) => (p.id === id ? toRef(updated) : p)));
+      setActiveProfileState((curActive) => (curActive?.id === id ? updated : curActive));
+      return updated;
+    },
+    [activeProfile],
+  );
+
   const value = useMemo(
     () => ({
       authStatus,
@@ -168,6 +195,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       activateProfileByCode,
       rememberProfile,
       deleteProfile,
+      editProfile,
     }),
     [
       authStatus,
@@ -179,6 +207,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       activateProfileByCode,
       rememberProfile,
       deleteProfile,
+      editProfile,
     ],
   );
 

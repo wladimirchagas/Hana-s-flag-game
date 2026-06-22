@@ -10,7 +10,7 @@ import { createProfile, type DeviceProfileRef } from "../lib/profileStore";
 import { loadStoredSelection } from "../lib/countrySelection";
 import { loadLearnedCodes } from "../lib/learnedFlags";
 
-type View = "list" | "add" | "confirmDelete";
+type View = "list" | "add" | "edit" | "confirmDelete";
 
 /**
  * "Who's playing?" — the persona picker, opened from the bottom nav.
@@ -29,6 +29,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
     setActiveProfile,
     activateProfileByCode,
     deleteProfile,
+    editProfile,
   } = useProfile();
 
   // Prefer the live, shared list; fall back to this device's cached list when
@@ -39,10 +40,13 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Add-profile form state
+  // Add/edit form state (shared between the two views — only one is ever active).
   const [name, setName] = useState("");
   const [avatarId, setAvatarId] = useState<string>(DEFAULT_AVATAR_ID);
   const fileRef = useRef<HTMLInputElement>(null);
+
+  // Which profile is being edited, when view === "edit".
+  const [editingId, setEditingId] = useState<string | null>(null);
 
   // Delete-confirmation state: which profile is pending deletion.
   const [pendingDelete, setPendingDelete] = useState<DeviceProfileRef | null>(null);
@@ -112,6 +116,102 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
     setView("list");
   };
 
+  const openEdit = (p: DeviceProfileRef) => {
+    setEditingId(p.id);
+    setName(p.displayName);
+    setAvatarId(p.avatarId || DEFAULT_AVATAR_ID);
+    setError(null);
+    setView("edit");
+  };
+
+  const handleSaveEdit = async () => {
+    if (!editingId) return;
+    const displayName = name.trim();
+    if (!displayName) {
+      setError("Please enter a name.");
+      return;
+    }
+    setBusy(true);
+    setError(null);
+    try {
+      const updated = await editProfile(editingId, { displayName, avatarId });
+      if (!updated) {
+        setError("Couldn't save changes. Please try again.");
+        return;
+      }
+      setEditingId(null);
+      setView("list");
+    } catch {
+      setError("Couldn't save changes. Please try again.");
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  // Shared by the "add" and "edit" forms — name field, mascot picker, and
+  // photo upload are identical in both; only the surrounding title/submit
+  // button differ.
+  const avatarFormFields = (
+    <>
+      <div className="profile-form__preview">
+        <MascotAvatar avatarId={avatarId} size={88} alt="Avatar preview" />
+      </div>
+
+      <label className="profile-form__label" htmlFor="profile-name">
+        Name
+      </label>
+      <input
+        id="profile-name"
+        className="profile-form__input"
+        type="text"
+        value={name}
+        maxLength={48}
+        placeholder="e.g. Hana"
+        onChange={(e) => setName(e.target.value)}
+        autoFocus
+      />
+
+      <p className="profile-form__label">Choose a mascot colour</p>
+      <div className="avatar-picker">
+        {MASCOT_AVATARS.map((a) => (
+          <button
+            key={a.id}
+            type="button"
+            className={
+              "avatar-picker__option" +
+              (avatarId === a.id ? " avatar-picker__option--selected" : "")
+            }
+            onClick={() => setAvatarId(a.id)}
+            aria-label={a.label}
+            title={a.label}
+          >
+            <MascotAvatar avatarId={a.id} size={44} alt="" />
+          </button>
+        ))}
+      </div>
+
+      <div className="profile-form__upload">
+        <button
+          type="button"
+          className="profile-btn profile-btn--ghost"
+          onClick={() => fileRef.current?.click()}
+        >
+          📷 Upload a photo
+        </button>
+        <input
+          ref={fileRef}
+          type="file"
+          accept="image/*"
+          hidden
+          onChange={(e) => {
+            void handleUpload(e.target.files?.[0]);
+            e.target.value = "";
+          }}
+        />
+      </div>
+    </>
+  );
+
   return (
     <div
       className="profile-overlay"
@@ -127,9 +227,11 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
           <h2 id="profile-modal-title" className="profile-modal__title">
             {view === "add"
               ? "New profile"
-              : view === "confirmDelete"
-                ? "Delete profile?"
-                : "Who's playing?"}
+              : view === "edit"
+                ? "Edit profile"
+                : view === "confirmDelete"
+                  ? "Delete profile?"
+                  : "Who's playing?"}
           </h2>
           <button
             type="button"
@@ -160,6 +262,15 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                     >
                       <MascotAvatar avatarId={p.avatarId} size={64} alt="" />
                       <span className="profile-card__name">{p.displayName}</span>
+                    </button>
+                    <button
+                      type="button"
+                      className="profile-card__edit"
+                      onClick={() => openEdit(p)}
+                      aria-label={`Edit ${p.displayName}`}
+                      title="Edit profile"
+                    >
+                      ✏️
                     </button>
                     <button
                       type="button"
@@ -210,62 +321,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
 
           {view === "add" && (
             <div className="profile-form">
-              <div className="profile-form__preview">
-                <MascotAvatar avatarId={avatarId} size={88} alt="Avatar preview" />
-              </div>
-
-              <label className="profile-form__label" htmlFor="profile-name">
-                Name
-              </label>
-              <input
-                id="profile-name"
-                className="profile-form__input"
-                type="text"
-                value={name}
-                maxLength={48}
-                placeholder="e.g. Hana"
-                onChange={(e) => setName(e.target.value)}
-                autoFocus
-              />
-
-              <p className="profile-form__label">Choose a mascot colour</p>
-              <div className="avatar-picker">
-                {MASCOT_AVATARS.map((a) => (
-                  <button
-                    key={a.id}
-                    type="button"
-                    className={
-                      "avatar-picker__option" +
-                      (avatarId === a.id ? " avatar-picker__option--selected" : "")
-                    }
-                    onClick={() => setAvatarId(a.id)}
-                    aria-label={a.label}
-                    title={a.label}
-                  >
-                    <MascotAvatar avatarId={a.id} size={44} alt="" />
-                  </button>
-                ))}
-              </div>
-
-              <div className="profile-form__upload">
-                <button
-                  type="button"
-                  className="profile-btn profile-btn--ghost"
-                  onClick={() => fileRef.current?.click()}
-                >
-                  📷 Upload a photo
-                </button>
-                <input
-                  ref={fileRef}
-                  type="file"
-                  accept="image/*"
-                  hidden
-                  onChange={(e) => {
-                    void handleUpload(e.target.files?.[0]);
-                    e.target.value = "";
-                  }}
-                />
-              </div>
+              {avatarFormFields}
 
               <div className="profile-modal__actions">
                 <button
@@ -285,6 +341,34 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                   }}
                 >
                   Back
+                </button>
+              </div>
+            </div>
+          )}
+
+          {view === "edit" && (
+            <div className="profile-form">
+              {avatarFormFields}
+
+              <div className="profile-modal__actions">
+                <button
+                  type="button"
+                  className="profile-btn"
+                  onClick={handleSaveEdit}
+                  disabled={busy}
+                >
+                  {busy ? "Saving…" : "Save changes"}
+                </button>
+                <button
+                  type="button"
+                  className="profile-btn profile-btn--ghost"
+                  onClick={() => {
+                    setEditingId(null);
+                    setError(null);
+                    setView("list");
+                  }}
+                >
+                  Cancel
                 </button>
               </div>
             </div>
