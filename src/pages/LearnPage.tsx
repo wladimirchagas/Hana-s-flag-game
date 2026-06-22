@@ -28,6 +28,11 @@ import { EntitySummary } from "../components/EntitySummary";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
+  hasPeopleImage,
+  peopleImageUrl,
+  PEOPLE_IMAGE_CAPTION,
+} from "../data/peopleImages";
+import {
   loadStoredSelection,
   saveStoredSelection,
 } from "../lib/countrySelection";
@@ -178,6 +183,13 @@ export default function LearnPage() {
   } | null>(null);
 
   const anthemPlayerRef = useRef<{ play: () => void } | null>(null);
+
+  // Fullscreen "people of this country" image viewer target (captured at click
+  // time, like anthemTarget, so the modal survives the hovered display clearing).
+  const [peopleTarget, setPeopleTarget] = useState<{
+    code: string;
+    name: string;
+  } | null>(null);
 
   // Codes currently in the user's Hana's Game list (persisted to
   // localStorage). Initialised from storage so the in-panel toggle below
@@ -351,6 +363,21 @@ export default function LearnPage() {
       document.body.style.overflow = prev;
     };
   }, [zoomedFlagUrl]);
+
+  // Lock body scroll while the fullscreen people viewer is open + close on Esc.
+  useEffect(() => {
+    if (!peopleTarget) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setPeopleTarget(null);
+    };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [peopleTarget]);
 
   const codeToCountry = useMemo(
     () => new Map(countries.map((c) => [c.code, c])),
@@ -1014,6 +1041,24 @@ export default function LearnPage() {
                         ▶ Play
                       </button>
                     </div>
+                    {hasPeopleImage(display.country.code) && (
+                      <div className="learn-fs__people-row">
+                        <span className="learn-fs__people-label">People</span>
+                        <button
+                          type="button"
+                          className="learn-fs__people-btn"
+                          onClick={() =>
+                            setPeopleTarget({
+                              code: display.country.code,
+                              name: display.country.name,
+                            })
+                          }
+                          aria-label={`See people from ${display.country.name}`}
+                        >
+                          👥 See people from this country
+                        </button>
+                      </div>
+                    )}
                   </>
                 ) : (
                   <EntitySummary
@@ -1304,6 +1349,40 @@ export default function LearnPage() {
               setZoomedFlagUrl(null);
             }}
             aria-label="Close enlarged flag"
+          >
+            ×
+          </button>
+        </div>
+      )}
+
+      {peopleTarget && (
+        <div
+          className="people-viewer"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`People from ${peopleTarget.name}`}
+          onClick={() => setPeopleTarget(null)}
+        >
+          <figure className="people-viewer__figure" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={peopleImageUrl(peopleTarget.code, baseUrl)}
+              alt={`A diverse group of people from ${peopleTarget.name}`}
+              className="people-viewer__img"
+              draggable={false}
+            />
+            <figcaption className="people-viewer__caption">
+              People of {peopleTarget.name}
+              <span className="people-viewer__disclaimer">{PEOPLE_IMAGE_CAPTION}</span>
+            </figcaption>
+          </figure>
+          <button
+            type="button"
+            className="people-viewer__close"
+            onClick={(e) => {
+              e.stopPropagation();
+              setPeopleTarget(null);
+            }}
+            aria-label="Close people viewer"
           >
             ×
           </button>

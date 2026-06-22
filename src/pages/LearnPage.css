@@ -646,6 +646,63 @@
   box-shadow: 0 1px 0 var(--ink);
 }
 
+/* === People-of-this-country row ====================================
+   Sits directly below the anthem row (modern era only). Mirrors the
+   anthem-row layout; only renders when a reviewed image is bundled. */
+.learn-fs__people-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  margin-top: 0.2rem;
+}
+
+.learn-fs__people-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.learn-fs__people-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.85rem;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-fixed);
+  background: var(--sky);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  text-align: left;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.learn-fs__people-btn:hover,
+.learn-fs__people-btn:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  background: var(--coral);
+  color: #fff;
+}
+
+.learn-fs__people-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
 /* === Hana's Game add/remove row ====================================
    Sits below the highlighted flag in the detail panel (modern era
    only). Lets the user add the currently-displayed country to — or
