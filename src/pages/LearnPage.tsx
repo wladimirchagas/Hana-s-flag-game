@@ -30,6 +30,7 @@ import {
   loadStoredSelection,
   saveStoredSelection,
 } from "../lib/countrySelection";
+import { FLAG_DATA_EVENT } from "../lib/profileSync";
 import {
   DEFAULT_ERA_ID,
   ERAS,
@@ -183,6 +184,15 @@ export default function LearnPage() {
   const [hanaCodes, setHanaCodes] = useState<string[]>(
     () => loadStoredSelection().codes,
   );
+
+  // Re-read the selection whenever flag data changes — including when it syncs
+  // down from the active profile on another device — so "In my list" stays in
+  // step across devices, not just on first load.
+  useEffect(() => {
+    const reread = () => setHanaCodes(loadStoredSelection().codes);
+    window.addEventListener(FLAG_DATA_EVENT, reread);
+    return () => window.removeEventListener(FLAG_DATA_EVENT, reread);
+  }, []);
 
   const toggleHanaForCode = useCallback((code: string) => {
     setHanaCodes((prev) => {

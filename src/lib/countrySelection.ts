@@ -2,6 +2,7 @@
 // paired with their English short names. Must stay in sync with
 // src/lib/unMemberStates.ts UN_MEMBER_CODES (the authoritative source for rule #1).
 import { loadLearnedCodes } from "./learnedFlags";
+import { notifyFlagDataChanged, pushSelectedCodes } from "./profileSync";
 
 export type CountryOption = { code: string; name: string };
 
@@ -279,12 +280,28 @@ export function loadStoredSelection(): StoredSelection {
   return defaults;
 }
 
-export function saveStoredSelection(selection: StoredSelection): void {
+function writeSelectionLocal(codes: readonly string[]): void {
   try {
-    localStorage.setItem(ORDER_KEY, JSON.stringify(selection.codes));
+    localStorage.setItem(ORDER_KEY, JSON.stringify([...codes]));
   } catch {
     // ignore quota / privacy mode errors
   }
+}
+
+/** Save the selection locally AND sync it up to the active profile. */
+export function saveStoredSelection(selection: StoredSelection): void {
+  writeSelectionLocal(selection.codes);
+  pushSelectedCodes(selection.codes);
+  notifyFlagDataChanged();
+}
+
+/**
+ * Write a selection that came DOWN from the active profile (another device).
+ * Updates localStorage and notifies the UI, but does NOT push back to Firestore.
+ */
+export function hydrateSelectedCodes(codes: readonly string[]): void {
+  writeSelectionLocal(codes);
+  notifyFlagDataChanged();
 }
 
 /**

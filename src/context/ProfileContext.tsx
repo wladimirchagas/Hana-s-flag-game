@@ -34,11 +34,15 @@ import {
   loadDeviceProfiles,
   rememberDeviceProfile,
   saveActiveProfileId,
+  subscribeProfile,
   subscribeToAllProfiles,
   type AvatarId,
   type DeviceProfileRef,
   type Profile,
 } from "../lib/profileStore";
+import { setActiveSyncProfile } from "../lib/profileSync";
+import { hydrateSelectedCodes } from "../lib/countrySelection";
+import { hydrateLearnedCodes } from "../lib/learnedFlags";
 
 /** Auth/sync status for the device's anonymous identity. */
 export type ProfileAuthStatus = "loading" | "ready" | "offline";
@@ -56,6 +60,16 @@ type ProfileContextValue = {
   deviceProfiles: DeviceProfileRef[];
   /** EVERY profile, live from Firestore — profiles are public/shared. */
   allProfiles: DeviceProfileRef[];
+  /**
+   * Cross-device sync health, for a user-visible indicator:
+   *   - "loading"  — still establishing the device identity
+   *   - "synced"   — anonymous auth is up and the shared list is streaming
+   *   - "offline"  — no Firebase identity (sign-in unavailable); local-only
+   *   - "error"    — authed, but Firestore rejected the read (see syncError)
+   */
+  syncState: "loading" | "synced" | "offline" | "error";
+  /** Firestore error message when syncState === "error" (else null). */
+  syncError: string | null;
   /** Switch to a known/loaded profile (null → play as Guest). */
   setActiveProfile: (profile: Profile | null) => void;
   /** Load a profile by its id and make it active. */
@@ -89,6 +103,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     loadDeviceProfiles(),
   );
   const [allProfiles, setAllProfiles] = useState<DeviceProfileRef[]>([]);
+  const [syncError, setSyncError] = useState<string | null>(null);
 
   // Bootstrap the device's anonymous identity. Best-effort: if Firebase is
   // unconfigured or unreachable we fall back to "offline" and the app keeps
@@ -149,12 +164,53 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (authStatus !== "ready") return;
     return subscribeToAllProfiles(
-      (profiles) => setAllProfiles(profiles),
-      () => {
-        /* offline — picker falls back to the device-local list */
+      (profiles) => {
+        setAllProfiles(profiles);
+        setSyncError(null);
+      },
+      (err) => {
+        // Authed but Firestore rejected the read (e.g. rules not deployed).
+        // Surface it so the picker can show a real reason instead of an empty
+        // list that looks like "nothing synced".
+        setSyncError(err?.message ?? "Unknown sync error");
       },
     );
   }, [authStatus]);
+
+  // Cross-device flag sync for the ACTIVE profile. When a profile is active we
+  //   1. hydrate localStorage from its saved & learned flags (synchronously,
+  //      from the data we already hold, so the device reflects the profile),
+  //   2. mark it as the push target so local edits flow up to Firestore, and
+  //   3. subscribe to its document so a change on another device flows down.
+  // Guest (no active profile) clears the push target and leaves local data be.
+  const activeProfileId = activeProfile?.id ?? null;
+  useEffect(() => {
+    if (!activeProfile) {
+      setActiveSyncProfile(null);
+      return;
+    }
+    hydrateSelectedCodes(activeProfile.selectedCodes);
+    hydrateLearnedCodes(activeProfile.learnedCodes);
+    setActiveSyncProfile(activeProfile.id);
+
+    if (authStatus !== "ready") return;
+    const id = activeProfile.id;
+    return subscribeProfile(
+      id,
+      (remote) => {
+        if (!remote) return;
+        hydrateSelectedCodes(remote.selectedCodes);
+        hydrateLearnedCodes(remote.learnedCodes);
+        // Keep name/avatar fresh too, but only if this is still the active one.
+        setActiveProfileState((cur) => (cur?.id === id ? remote : cur));
+      },
+      () => {
+        /* offline / transient — local data stays usable */
+      },
+    );
+    // Keyed on the id + auth so we don't resubscribe when only name/avatar change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeProfileId, authStatus]);
 
   const rememberProfile = useCallback((profile: Profile) => {
     setDeviceProfiles(rememberDeviceProfile(toRef(profile)));
@@ -191,6 +247,15 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       isGuest: activeProfile === null,
       deviceProfiles,
       allProfiles,
+      syncState:
+        authStatus === "loading"
+          ? ("loading" as const)
+          : authStatus === "offline"
+            ? ("offline" as const)
+            : syncError
+              ? ("error" as const)
+              : ("synced" as const),
+      syncError,
       setActiveProfile,
       activateProfileByCode,
       rememberProfile,
@@ -203,6 +268,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       activeProfile,
       deviceProfiles,
       allProfiles,
+      syncError,
       setActiveProfile,
       activateProfileByCode,
       rememberProfile,
