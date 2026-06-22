@@ -2431,7 +2431,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     pluralLabel: "Regions",
     divisions: [
     { code: "KZ-VOS", name: "East Kazakhstan", typeLabel: "Region" },
-    { code: "KZ-ALA", name: "Almaty", typeLabel: "Region" },
+    { code: "KZ-ALM", name: "Almaty", typeLabel: "Region" },
     { code: "KZ-ZHA", name: "Jambyl", typeLabel: "Region" },
     { code: "KZ-YUZ", name: "Turkistan", typeLabel: "Region" },
     { code: "KZ-MAN", name: "Mangystau", typeLabel: "Region" },
@@ -3197,7 +3197,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MV-12", name: "Meemu Atoll", typeLabel: "Atoll" },
     { code: "MV-14", name: "Faafu Atoll", typeLabel: "Atoll" },
     { code: "MV-04", name: "Vaavu Atoll", typeLabel: "Atoll" },
-    { code: "MV-12", name: "Malé", typeLabel: "Capital" },
+    { code: "MV-MLE", name: "Malé", typeLabel: "Capital" },
     { code: "MV-25", name: "Noonu Atoll", typeLabel: "Atoll" },
     { code: "MV-23", name: "Haa Dhaalu Atoll", typeLabel: "Atoll" },
     { code: "MV-07", name: "Haa Alif Atoll", typeLabel: "Atoll" }
@@ -3308,7 +3308,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MZ-B", name: "Manica", typeLabel: "Province" },
     { code: "MZ-G", name: "Gaza", typeLabel: "Province" },
     { code: "MZ-Q", name: "Zambezia", typeLabel: "Province" },
-    { code: "MZ-L", name: "Maputo", typeLabel: "Province" },
+    { code: "MZ-MPM", name: "Maputo City", typeLabel: "City" },
     { code: "MZ-I", name: "Inhambane", typeLabel: "Province" },
     { code: "MZ-S", name: "Sofala", typeLabel: "Province" },
     { code: "MZ-N", name: "Nampula", typeLabel: "Province" }
