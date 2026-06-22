@@ -19,7 +19,9 @@ name: Deploy Firestore rules
 #
 #   B. CI token (simpler, but Google has deprecated it)
 #      - FIREBASE_TOKEN      = output of `firebase login:ci` run on your machine.
-#      - FIREBASE_PROJECT_ID = your Firebase project id (required for this method).
+#      - FIREBASE_PROJECT_ID = your Firebase project id. OPTIONAL if the repo
+#        already has a VITE_FIREBASE_PROJECT_ID secret (the web build's) — this
+#        workflow falls back to it automatically.
 #
 # After adding the secret(s), run this workflow once from the Actions tab
 # ("Run workflow") to push the current rules. Thereafter it runs automatically
@@ -58,7 +60,10 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+          # Reuse the existing VITE_FIREBASE_PROJECT_ID secret (used by the web
+          # build) when a dedicated FIREBASE_PROJECT_ID isn't set, so the owner
+          # only needs to add a credential, not the project id again.
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID || secrets.VITE_FIREBASE_PROJECT_ID }}
         run: |
           set -euo pipefail
           if [ -n "${FIREBASE_SERVICE_ACCOUNT:-}" ]; then
