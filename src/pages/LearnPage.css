@@ -1193,6 +1193,20 @@
   color: var(--ink);
 }
 
+.learn-fs__subdiv-pop {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--ink-soft);
+  max-width: 22rem;
+}
+
+.learn-fs__subdiv-pop-label {
+  font-weight: 700;
+  color: var(--ink);
+}
+
 .learn-fs__subdiv-flag {
   display: block;
   max-width: 100%;
