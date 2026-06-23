@@ -287,6 +287,32 @@ const CODE_ALIASES = {
   "ZA-GP": "ZA-GT", // Gauteng
 };
 
+/**
+ * Subdivisions whose Wikidata item carries a dated P1082 population but NO
+ * P300 (ISO 3166-2 code) property at all, so the P300-filtered queries above
+ * can never find them even via CODE_ALIASES (there is no Wikidata code to
+ * alias from). New Zealand's two states in free association, plus its
+ * external territory, are not modelled as ISO-coded subdivisions in
+ * Wikidata's data model. Fetched directly by QID below; each QID was
+ * confirmed by checking the item's label/description against the country it
+ * belongs to before use.
+ */
+const NO_ISO_CODE_QIDS = {
+  "NZ-CK": "Q26988", // Cook Islands — self-governing state in free association with NZ
+  "NZ-NU": "Q34020", // Niue — self-governing state in free association with NZ
+  "NZ-TK": "Q36823", // Tokelau — NZ external territory
+};
+
+async function fetchByQid(code, qid) {
+  const q = `SELECT ?pop ?date ?method WHERE {
+    wd:${qid} p:P1082 ?st . ?st ps:P1082 ?pop .
+    OPTIONAL { ?st pq:P585 ?date . }
+    OPTIONAL { ?st pq:P459 ?method . }
+  }`;
+  const rows = (await sparql(q)).map((r) => ({ ...r, code: { value: code } }));
+  return pickLatest(rows, "code").get(code) ?? null;
+}
+
 /** Keep, per code, the row with the most recent point-in-time. */
 function pickLatest(rows, codeKey, popKey = "pop", dateKey = "date", methodKey = "method") {
   const best = new Map();
@@ -393,6 +419,22 @@ async function main() {
       console.log(`→ FAILED (${e.message})`);
     }
     await sleep(200); // be polite
+  }
+
+  console.log("\nFetching subdivisions with no Wikidata P300 code (by QID)...");
+  for (const [code, qid] of Object.entries(NO_ISO_CODE_QIDS)) {
+    try {
+      const v = await fetchByQid(code, qid);
+      if (v) {
+        subdivisions.set(code, v);
+        console.log(`  ${code} (${qid}) → ${v.population} (${v.year}, ${v.basis})`);
+      } else {
+        console.log(`  ${code} (${qid}) → no dated population found`);
+      }
+    } catch (e) {
+      console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(1500);
   }
 
   // Never let a refresh drop a code the new fetch didn't return — preserve
