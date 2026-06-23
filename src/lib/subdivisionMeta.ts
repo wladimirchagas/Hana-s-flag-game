@@ -64,7 +64,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AF-ZAB", name: "Zabul", typeLabel: "Province" },
     { code: "AF-KAN", name: "Kandahar", typeLabel: "Province" },
     { code: "AF-HEL", name: "Helmand", typeLabel: "Province" },
-    { code: "AF-URU", name: "Urozgan", typeLabel: "Province" },
+    { code: "AF-URU", name: "Uruzgan", typeLabel: "Province" },
     { code: "AF-GHA", name: "Ghazni", typeLabel: "Province" },
     { code: "AF-PAR", name: "Parwan", typeLabel: "Province" },
     { code: "AF-KAB", name: "Kabul", typeLabel: "Province" },
@@ -73,12 +73,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AF-KAP", name: "Kapisa", typeLabel: "Province" },
     { code: "AF-WAR", name: "Maidan Wardak", typeLabel: "Province" },
     { code: "AF-BAM", name: "Bamyan", typeLabel: "Province" },
-    { code: "AF-PAR", name: "Parwan", typeLabel: "Province" },
     { code: "AF-SAR", name: "Sar-e Pol", typeLabel: "Province" },
     { code: "AF-GHO", name: "Ghōr", typeLabel: "Province" },
     { code: "AF-BGL", name: "Baghlan", typeLabel: "Province" },
-    { code: "AF-SAM", name: "Samangan", typeLabel: "Province" },
-    { code: "AF-URU", name: "Urozgan", typeLabel: "Province" }
+    { code: "AF-SAM", name: "Samangan", typeLabel: "Province" }
     ],
   },
   "AG": {
@@ -241,7 +239,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AZ-ZAQ", name: "Zaqatala", typeLabel: "District" },
     { code: "AZ-QUS", name: "Qusar", typeLabel: "District" },
     { code: "AZ-OGU", name: "Oghuz", typeLabel: "District" },
-    { code: "AZ-SA", name: "Sheki", typeLabel: "District" },
+    { code: "AZ-SA", name: "Şəki", typeLabel: "District" },
     { code: "AZ-QAX", name: "Qakh", typeLabel: "District" },
     { code: "AZ-QAB", name: "Qabala", typeLabel: "District" },
     { code: "AZ-SMX", name: "Samukh", typeLabel: "District" },
@@ -262,7 +260,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AZ-NEF", name: "Neftchala", typeLabel: "District" },
     { code: "AZ-LA", name: "Lankaran", typeLabel: "District" },
     { code: "AZ-MAS", name: "Masally", typeLabel: "District" },
-    { code: "AZ-LA", name: "Lankaran", typeLabel: "Municipality" },
     { code: "AZ-NX", name: "Nakhchivan", typeLabel: "Municipality" },
     { code: "AZ-SUS", name: "Susa", typeLabel: "District" },
     { code: "AZ-AGM", name: "Agdam", typeLabel: "District" },
@@ -284,32 +281,30 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AZ-UCA", name: "Ujar", typeLabel: "District" },
     { code: "AZ-QOB", name: "Gobustan", typeLabel: "District" },
     { code: "AZ-ISM", name: "Ismayilli", typeLabel: "District" },
-    { code: "AZ-YEV", name: "Yevlakh", typeLabel: "District" },
+    { code: "AZ-YEV", name: "Yevlakh Rayon", typeLabel: "District" },
     { code: "AZ-GA", name: "Ganja", typeLabel: "Municipality" },
     { code: "AZ-MI", name: "Mingachevir", typeLabel: "Municipality" },
     { code: "AZ-GOY", name: "Goychay", typeLabel: "District" },
     { code: "AZ-AGS", name: "Agdash", typeLabel: "District" },
     { code: "AZ-AGC", name: "Aghjabadi", typeLabel: "District" },
-    { code: "AZ-YEV", name: "Yevlakh", typeLabel: "Municipality" },
-    { code: "AZ-NA", name: "Naftalan", typeLabel: "Municipality" },
-    { code: "AZ-SA", name: "Shaki", typeLabel: "Municipality" }
+    { code: "AZ-NA", name: "Naftalan", typeLabel: "Municipality" }
     ],
   },
   "BA": {
     countryCode: "BA",
     pluralLabel: "Cantons",
     divisions: [
-    { code: "BA-BIH", name: "Herzegovina-Neretva Canton", typeLabel: "Canton" },
-    { code: "BA-BIH", name: "Una-Sana Canton", typeLabel: "Canton" },
+    { code: "Herzegovina-Neretva", name: "Herzegovina-Neretva", typeLabel: "Canton" },
+    { code: "Una-Sana", name: "Una-Sana", typeLabel: "Canton" },
     { code: "BA-SRP", name: "Posavina Canton", typeLabel: "Canton" },
     { code: "BA-BRC", name: "Brčko", typeLabel: "Condominium" },
-    { code: "BA-BIH", name: "Livno", typeLabel: "Canton" },
-    { code: "BA-BIH", name: "West Herzegovina Canton", typeLabel: "Canton" },
-    { code: "BA-BIH", name: "Central Bosnia Canton", typeLabel: "Canton" },
-    { code: "BA-BIH", name: "Zenica-Doboj Canton", typeLabel: "Canton" },
-    { code: "BA-BIH", name: "Tuzla Canton", typeLabel: "Canton" },
-    { code: "BA-BIH", name: "Sarajevo Canton", typeLabel: "Canton" },
-    { code: "BA-BIH", name: "Bosnian Podrinje Canton", typeLabel: "Canton" }
+    { code: "West Bosnia", name: "West Bosnia", typeLabel: "Canton" },
+    { code: "West Herzegovina", name: "West Herzegovina", typeLabel: "Canton" },
+    { code: "Central Bosnia", name: "Central Bosnia", typeLabel: "Canton" },
+    { code: "Zenica-Doboj", name: "Zenica-Doboj", typeLabel: "Canton" },
+    { code: "Tuzla", name: "Tuzla", typeLabel: "Canton" },
+    { code: "Sarajevo", name: "Sarajevo", typeLabel: "Canton" },
+    { code: "Bosnian Podrinje", name: "Bosnian Podrinje", typeLabel: "Canton" }
     ],
   },
   "BB": {
@@ -1000,10 +995,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CY-01", name: "Nicosia", typeLabel: "District" },
     { code: "CY-02", name: "Limassol", typeLabel: "District" },
     { code: "CY-05", name: "Paphos", typeLabel: "District" },
-    { code: "CY-06~", name: "Kyrenia", typeLabel: "District", isDisputed: true },
-    // Northern Cyprus — TRNC declared 1983; recognised only by Türkiye.
-    // Cyprus regards it as occupied territory; TRNC flag shown as unofficial.
-    { code: "CY-NC~", name: "Northern Cyprus", typeLabel: "Disputed Territory", isDisputed: true }
+    { code: "CY-06~", name: "Kyrenia", typeLabel: "District", isDisputed: true }
     ],
   },
   "CZ": {
@@ -1351,8 +1343,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "ET-DD", name: "Dire Dawa", typeLabel: "Administrative State" },
     { code: "ET-AA", name: "Addis Ababa", typeLabel: "Administrative State" },
     { code: "ET-HA", name: "Harari", typeLabel: "Administrative State" },
-    // Established 2020 after the 2019 referendum, split from the former Southern
-    // Nations, Nationalities and Peoples' Region; absent from Natural Earth.
     { code: "ET-SI", name: "Sidama", typeLabel: "Administrative State" }
     ],
   },
@@ -1406,7 +1396,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "FR",
     pluralLabel: "Departments & Overseas Territories",
     divisions: [
-    { code: "FR-GF", name: "French Guiana", typeLabel: "Overseas department" },
+    { code: "FR-GF", name: "French Guiana (unofficial flag)", typeLabel: "Overseas department" },
     { code: "FR-59", name: "Nord", typeLabel: "Metropolitan department" },
     { code: "FR-08", name: "Ardennes", typeLabel: "Metropolitan department" },
     { code: "FR-02", name: "Aisne", typeLabel: "Metropolitan department" },
@@ -1450,9 +1440,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FR-80", name: "Somme", typeLabel: "Metropolitan department" },
     { code: "FR-62", name: "Pas-de-Calais", typeLabel: "Metropolitan department" },
     { code: "FR-MQ", name: "Martinique", typeLabel: "Overseas department" },
-    { code: "FR-GP", name: "Guadeloupe", typeLabel: "Overseas department" },
-    { code: "FR-RE", name: "Réunion", typeLabel: "Overseas department" },
-    { code: "FR-YT", name: "Mayotte", typeLabel: "Overseas department" },
+    { code: "FR-GP", name: "Guadeloupe (unofficial flag)", typeLabel: "Overseas department" },
+    { code: "FR-RE", name: "Réunion (unofficial flag)", typeLabel: "Overseas department" },
+    { code: "FR-YT", name: "Mayotte (unofficial flag)", typeLabel: "Overseas department" },
     { code: "FR-2B", name: "Haute-Corse", typeLabel: "Metropolitan department" },
     { code: "FR-2A", name: "Corse-du-Sud", typeLabel: "Metropolitan department" },
     { code: "FR-32", name: "Gers", typeLabel: "Metropolitan department" },
@@ -1607,9 +1597,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     pluralLabel: "Divisions",
     divisions: [
     { code: "GL-SM", name: "Sermersooq", typeLabel: "Lansdele" },
-    { code: "GL-UO", name: "Northeast Greenland National Park", typeLabel: "Lansdele" },
+    { code: "Nationalparken", name: "Nationalparken", typeLabel: "Lansdele" },
     { code: "GL-QA", name: "Qaasuitsup", typeLabel: "Lansdele" },
-    { code: "GL-UO", name: "Pituffik", typeLabel: "Lansdele" },
+    { code: "Pituffik", name: "Pituffik", typeLabel: "Lansdele" },
     { code: "GL-QE", name: "Qeqqata", typeLabel: "Lansdele" },
     { code: "GL-KU", name: "Kujalleq", typeLabel: "Lansdele" }
     ],
@@ -1922,35 +1912,30 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "IE-CN", name: "Cavan", typeLabel: "County" },
     { code: "IE-MN", name: "Monaghan", typeLabel: "Administrative County" },
     { code: "IE-LH", name: "Louth", typeLabel: "County" },
-    { code: "IE-D", name: "Dublin", typeLabel: "County" },
-    { code: "IE-D", name: "Dún Laoghaire–Rathdown", typeLabel: "County" },
+    { code: "Dublin", name: "Dublin", typeLabel: "County" },
+    { code: "Dún Laoghaire–Rathdown", name: "Dún Laoghaire–Rathdown", typeLabel: "County" },
     { code: "IE-WW", name: "Wicklow", typeLabel: "County" },
     { code: "IE-WX", name: "Wexford", typeLabel: "County" },
     { code: "IE-KK", name: "Kilkenny", typeLabel: "County" },
     { code: "IE-WD", name: "Waterford", typeLabel: "County" },
     { code: "IE-CO", name: "Cork", typeLabel: "County" },
-    { code: "IE-CO", name: "Cork", typeLabel: "City" },
     { code: "IE-KY", name: "Kerry", typeLabel: "County" },
     { code: "IE-LK", name: "Limerick", typeLabel: "County" },
     { code: "IE-CE", name: "Clare", typeLabel: "County" },
     { code: "IE-G", name: "Galway", typeLabel: "County" },
-    { code: "IE-G", name: "Galway", typeLabel: "City" },
     { code: "IE-MO", name: "Mayo", typeLabel: "County" },
     { code: "IE-SO", name: "Sligo", typeLabel: "County" },
     { code: "IE-MH", name: "Meath", typeLabel: "County" },
-    { code: "IE-D", name: "Fingal", typeLabel: "County" },
+    { code: "Fingal", name: "Fingal", typeLabel: "County" },
     { code: "IE-KE", name: "Kildare", typeLabel: "County" },
     { code: "IE-CW", name: "Carlow", typeLabel: "County" },
     { code: "IE-LS", name: "Laois", typeLabel: "County" },
-    { code: "IE-D", name: "South Dublin", typeLabel: "County" },
+    { code: "South Dublin", name: "South Dublin", typeLabel: "County" },
     { code: "IE-OY", name: "Offaly", typeLabel: "County" },
     { code: "IE-WH", name: "Westmeath", typeLabel: "County" },
     { code: "IE-LD", name: "Longford", typeLabel: "County" },
     { code: "IE-RN", name: "Roscommon", typeLabel: "County" },
-    { code: "IE-TA", name: "Tipperary", typeLabel: "County" },
-    { code: "IE-TA", name: "Tipperary", typeLabel: "County" },
-    { code: "IE-WD", name: "Waterford", typeLabel: "City" },
-    { code: "IE-LK", name: "Limerick", typeLabel: "City" }
+    { code: "IE-TA", name: "Tipperary", typeLabel: "County" }
     ],
   },
   "IL": {
@@ -2064,8 +2049,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "IR-20", name: "Lorestan", typeLabel: "Province" },
     { code: "IR-25", name: "Yazd", typeLabel: "Province" },
     { code: "IR-26", name: "Qom", typeLabel: "Province" },
-    { code: "IR-07", name: "Tehran", typeLabel: "Province" },
-    { code: "IR-07", name: "Alborz", typeLabel: "Province" }
+    { code: "Tehran", name: "Tehran", typeLabel: "Province" },
+    { code: "Alborz", name: "Alborz", typeLabel: "Province" }
     ],
   },
   "IS": {
@@ -2463,7 +2448,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "LA-KH", name: "Khammouane", typeLabel: "Province" },
     { code: "LA-SV", name: "Savannakhet", typeLabel: "Province" },
     { code: "LA-SL", name: "Salavan", typeLabel: "Province" },
-    { code: "LA-VI", name: "Vientiane Prefecture", typeLabel: "Municipality|Prefecture" },
     { code: "LA-VI", name: "Vientiane", typeLabel: "Province" },
     { code: "LA-CH", name: "Champasak", typeLabel: "Province" },
     { code: "LA-LP", name: "Luang Prabang", typeLabel: "Province" },
@@ -2648,7 +2632,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "LV-032", name: "Grobiņa", typeLabel: "Municipality" },
     { code: "LV-071", name: "Pāvilosta", typeLabel: "Municipality" },
     { code: "LV-VEN", name: "Ventspils", typeLabel: "Municipality" },
-    { code: "LV-VEN", name: "Ventspils", typeLabel: "Republican City" },
     { code: "LV-027", name: "Dundaga", typeLabel: "Municipality" },
     { code: "LV-079", name: "Roja", typeLabel: "Municipality" },
     { code: "LV-097", name: "Talsi", typeLabel: "Municipality" },
@@ -2665,7 +2648,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "LV-017", name: "Valmiera", typeLabel: "Municipality" },
     { code: "LV-019", name: "Valmiera", typeLabel: "Municipality" },
     { code: "LV-045", name: "Valmiera", typeLabel: "Municipality" },
-    { code: "LV-REZ", name: "Rēzekne", typeLabel: "Municipality" },
+    { code: "LV-REZ", name: "Rēzekne", typeLabel: "Republican City" },
     { code: "LV-104", name: "Valmiera", typeLabel: "Municipality" },
     { code: "LV-076", name: "Valmiera", typeLabel: "Municipality" },
     { code: "LV-075", name: "Valmiera", typeLabel: "Municipality" },
@@ -2708,7 +2691,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "LV-073", name: "Preiļi", typeLabel: "Municipality" },
     { code: "LV-056", name: "Līvāni", typeLabel: "Municipality" },
     { code: "LV-103", name: "Vārkava", typeLabel: "Municipality" },
-    { code: "LV-JKB", name: "Jēkabpils", typeLabel: "Municipality" },
+    { code: "LV-JKB", name: "Jekabpils", typeLabel: "Municipality" },
     { code: "LV-049", name: "Krustpils", typeLabel: "Municipality" },
     { code: "LV-086", name: "Sala", typeLabel: "Municipality" },
     { code: "LV-003", name: "Aizpute", typeLabel: "Municipality" },
@@ -2721,16 +2704,12 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "LV-040", name: "Jaunpils", typeLabel: "Municipality" },
     { code: "LV-018", name: "Brocēni", typeLabel: "Municipality" },
     { code: "LV-069", name: "Ozolnieki", typeLabel: "Municipality" },
-    { code: "LV-JEL", name: "Jelgava", typeLabel: "Republican City" },
-    { code: "LV-DGV", name: "Daugavpils", typeLabel: "Republican City" },
-    { code: "LV-REZ", name: "Rēzekne", typeLabel: "Republican City" },
     { code: "LV-028", name: "Durbe", typeLabel: "Municipality" },
     { code: "LV-037", name: "Inčukalns", typeLabel: "Municipality" },
     { code: "LV-011", name: "Ādaži", typeLabel: "Municipality" },
     { code: "LV-VMR", name: "Valmiera", typeLabel: "Republican City" },
     { code: "LV-022", name: "Cēsis", typeLabel: "Municipality" },
-    { code: "LV-055", name: "Valmiera", typeLabel: "Municipality" },
-    { code: "LV-JKB", name: "Jēkabpils", typeLabel: "Republican City" }
+    { code: "LV-055", name: "Valmiera", typeLabel: "Municipality" }
     ],
   },
   "LY": {
@@ -2780,10 +2759,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MA-10", name: "Doukkala Abda", typeLabel: "Region" },
     { code: "MA-11", name: "Marrakesh-Tensift-El Haouz", typeLabel: "Region" },
     { code: "MA-05", name: "Fès-méknas-boulmane", typeLabel: "Region" },
-    { code: "MA-12", name: "Tadla-Azilal", typeLabel: "Region" },
-    // Western Sahara — administered by Morocco as its "Southern Provinces";
-    // claimed by the SADR/Polisario Front. SADR flag shown as unofficial.
-    { code: "MA-EH~", name: "Western Sahara", typeLabel: "Disputed Territory", isDisputed: true }
+    { code: "MA-12", name: "Tadla-Azilal", typeLabel: "Region" }
     ],
   },
   "MD": {
@@ -2819,12 +2795,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MD-ST", name: "Strășeni", typeLabel: "District" },
     { code: "MD-AN", name: "Anenii Noi", typeLabel: "District" },
     { code: "MD-OR", name: "Orhei", typeLabel: "District" },
-    { code: "MD-SN", name: "Transnistria", typeLabel: "District" },
     { code: "MD-CU", name: "Chișinău", typeLabel: "City" },
     { code: "MD-TE", name: "Telenești", typeLabel: "District" },
     { code: "MD-SD", name: "Șoldănești", typeLabel: "District" },
     { code: "MD-FL", name: "Florești", typeLabel: "District" },
-    { code: "MD-RE", name: "Rezina", typeLabel: "District" },
     { code: "MD-IA", name: "Ialoveni", typeLabel: "District" },
     { code: "MD-CL", name: "Călărași", typeLabel: "District" },
     { code: "MD-DR", name: "Drochia", typeLabel: "District" },
@@ -2863,28 +2837,28 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "MG",
     pluralLabel: "Autonomous Provinces",
     divisions: [
-    { code: "MG-M", name: "Boeny", typeLabel: "Autonomous Province" },
-    { code: "MG-M", name: "Sofia", typeLabel: "Autonomous Province" },
-    { code: "MG-D", name: "Diana", typeLabel: "Autonomous Province" },
-    { code: "MG-D", name: "Sava", typeLabel: "Autonomous Province" },
-    { code: "MG-A", name: "Toamasina", typeLabel: "Autonomous Province" },
-    { code: "MG-A", name: "Toamasina", typeLabel: "Autonomous Province" },
-    { code: "MG-F", name: "Vatovavy-Fitovinany", typeLabel: "Autonomous Province" },
-    { code: "MG-F", name: "Atsimo-Atsinanana", typeLabel: "Autonomous Province" },
-    { code: "MG-U", name: "Anosy", typeLabel: "Autonomous Province" },
-    { code: "MG-U", name: "Androy", typeLabel: "Autonomous Province" },
-    { code: "MG-U", name: "Atsimo-Andrefana", typeLabel: "Autonomous Province" },
-    { code: "MG-U", name: "Menabe", typeLabel: "Autonomous Province" },
-    { code: "MG-M", name: "Melaky", typeLabel: "Autonomous Province" },
-    { code: "MG-T", name: "Antananarivo", typeLabel: "Autonomous Province" },
-    { code: "MG-M", name: "Betsiboka", typeLabel: "Autonomous Province" },
-    { code: "MG-T", name: "Antananarivo", typeLabel: "Autonomous Province" },
-    { code: "MG-T", name: "Antananarivo", typeLabel: "Autonomous Province" },
-    { code: "MG-F", name: "Amoron'i Mania", typeLabel: "Autonomous Province" },
-    { code: "MG-A", name: "Toamasina", typeLabel: "Autonomous Province" },
-    { code: "MG-F", name: "Ihorombe", typeLabel: "Autonomous Province" },
-    { code: "MG-F", name: "Haute Matsiatra", typeLabel: "Autonomous Province" },
-    { code: "MG-T", name: "Antananarivo", typeLabel: "Autonomous Province" }
+    { code: "Boeny", name: "Boeny", typeLabel: "Autonomous Province" },
+    { code: "Sofia", name: "Sofia", typeLabel: "Autonomous Province" },
+    { code: "Diana", name: "Diana", typeLabel: "Autonomous Province" },
+    { code: "Sava", name: "Sava", typeLabel: "Autonomous Province" },
+    { code: "Analanjirofo", name: "Analanjirofo", typeLabel: "Autonomous Province" },
+    { code: "Atsinanana", name: "Atsinanana", typeLabel: "Autonomous Province" },
+    { code: "Vatovavy-Fitovinany", name: "Vatovavy-Fitovinany", typeLabel: "Autonomous Province" },
+    { code: "Atsimo-Atsinanana", name: "Atsimo-Atsinanana", typeLabel: "Autonomous Province" },
+    { code: "Anosy", name: "Anosy", typeLabel: "Autonomous Province" },
+    { code: "Androy", name: "Androy", typeLabel: "Autonomous Province" },
+    { code: "Atsimo-Andrefana", name: "Atsimo-Andrefana", typeLabel: "Autonomous Province" },
+    { code: "Menabe", name: "Menabe", typeLabel: "Autonomous Province" },
+    { code: "Melaky", name: "Melaky", typeLabel: "Autonomous Province" },
+    { code: "Analamanga", name: "Analamanga", typeLabel: "Autonomous Province" },
+    { code: "Betsiboka", name: "Betsiboka", typeLabel: "Autonomous Province" },
+    { code: "Bongolava", name: "Bongolava", typeLabel: "Autonomous Province" },
+    { code: "Vakinankaratra", name: "Vakinankaratra", typeLabel: "Autonomous Province" },
+    { code: "Amoron'i Mania", name: "Amoron'i Mania", typeLabel: "Autonomous Province" },
+    { code: "Alaotra-Mangoro", name: "Alaotra-Mangoro", typeLabel: "Autonomous Province" },
+    { code: "Ihorombe", name: "Ihorombe", typeLabel: "Autonomous Province" },
+    { code: "Haute Matsiatra", name: "Haute Matsiatra", typeLabel: "Autonomous Province" },
+    { code: "Itasy", name: "Itasy", typeLabel: "Autonomous Province" }
     ],
   },
   "MH": {
@@ -3018,8 +2992,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MM-02", name: "Bago", typeLabel: "Division" },
     { code: "MM-03", name: "Magway", typeLabel: "Division" },
     { code: "MM-04", name: "Mandalay", typeLabel: "Division" },
-    // Union Territory created 2010 as the seat of government, administered
-    // directly by the Union; absent from Natural Earth.
     { code: "MM-18", name: "Nay Pyi Taw", typeLabel: "Union Territory" }
     ],
   },
@@ -3176,7 +3148,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MU-MO", name: "Moka", typeLabel: "District" },
     { code: "MU-PW", name: "Plaines Wilhems", typeLabel: "District" },
     { code: "MU-BR", name: "Beau Bassin-Rose Hill", typeLabel: "City" },
-    { code: "MU-PL", name: "Port Louis", typeLabel: "City" },
     { code: "MU-QB", name: "Quatre Bornes", typeLabel: "City" },
     { code: "MU-VP", name: "Vacoas-Phoenix", typeLabel: "City" },
     { code: "MU-CU", name: "Curepipe", typeLabel: "City" }
@@ -3217,7 +3188,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MW-RU", name: "Rumphi", typeLabel: "District" },
     { code: "MW-NB", name: "Nkhata Bay", typeLabel: "District" },
     { code: "MW-LK", name: "Likoma", typeLabel: "District" },
-    { code: "MW-CT", name: "Chitipa", typeLabel: "District" },
     { code: "MW-MZ", name: "Mzimba", typeLabel: "District" },
     { code: "MW-KS", name: "Kasungu", typeLabel: "District" },
     { code: "MW-MC", name: "Mchinji", typeLabel: "District" },
@@ -3568,10 +3538,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PA-NB", name: "Ngöbe-Buglé Comarca", typeLabel: "Indigenous Territory" },
     { code: "PA-7", name: "Los Santos", typeLabel: "Province" },
     { code: "PA-6", name: "Herrera", typeLabel: "Province" },
-    // Created 2014 (Law 119) from the eastern part of Panamá Province; absent from
-    // the Natural Earth admin-1 topology, so appended from PRIMARY_SUBDIVISIONS_TO_APPEND.
     { code: "PA-10", name: "Panamá Oeste", typeLabel: "Province" },
-    // Comarca created 2020 (Law 156) from parts of Bocas del Toro province.
     { code: "PA-NT", name: "Naso Tjër Di", typeLabel: "Indigenous Territory" }
     ],
   },
@@ -3592,7 +3559,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PE-ARE", name: "Arequipa", typeLabel: "Department" },
     { code: "PE-ICA", name: "Ica", typeLabel: "Department" },
     { code: "PE-LIM", name: "Lima", typeLabel: "Department" },
-    { code: "PE-LIM", name: "Lima", typeLabel: "Captial District" },
     { code: "PE-CAL", name: "Callao", typeLabel: "Departamento" },
     { code: "PE-ANC", name: "Áncash", typeLabel: "Department" },
     { code: "PE-LAL", name: "La Libertad", typeLabel: "Department" },
@@ -3631,8 +3597,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PG-WHM", name: "Western Highlands", typeLabel: "Province" },
     { code: "PG-SHM", name: "Southern Highlands", typeLabel: "Province" },
     { code: "PG-EHG", name: "Eastern Highlands", typeLabel: "Province" },
-    // Hela and Jiwaka provinces created 2012, split from Southern Highlands and
-    // Western Highlands respectively; absent from Natural Earth.
     { code: "PG-HLA", name: "Hela", typeLabel: "Province" },
     { code: "PG-JWK", name: "Jiwaka", typeLabel: "Province" }
     ],
@@ -3648,23 +3612,18 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PH-SUN", name: "Dinagat Islands", typeLabel: "Province" },
     { code: "PH-SUR", name: "Surigao del Sur", typeLabel: "Province" },
     { code: "PH-AGN", name: "Agusan del Norte", typeLabel: "Province" },
-    { code: "PH-AGN", name: "Butuan", typeLabel: "Highly Urbanized City" },
     { code: "PH-MSR", name: "Misamis Oriental", typeLabel: "Province" },
-    { code: "PH-MSR", name: "Cagayan de Oro", typeLabel: "Highly Urbanized City" },
-    { code: "PH-LAN", name: "Iligan", typeLabel: "Highly Urbanized City" },
     { code: "PH-LAN", name: "Lanao del Norte", typeLabel: "Province" },
     { code: "PH-ZAS", name: "Zamboanga del Sur", typeLabel: "Province" },
     { code: "PH-MSC", name: "Misamis Occidental", typeLabel: "Province" },
     { code: "PH-ZAN", name: "Zamboanga del Norte", typeLabel: "Province" },
-    { code: "PH-ZAN", name: "Zamboanga Peninsula", typeLabel: "Highly Urbanized City" },
     { code: "PH-LAS", name: "Lanao del Sur", typeLabel: "Province" },
     { code: "PH-MAG", name: "Maguindanao", typeLabel: "Province" },
-    { code: "PH-NCO", name: "Cotabato", typeLabel: "Independent Component City" },
+    { code: "PH-NCO", name: "Cotabato", typeLabel: "Province" },
     { code: "PH-SUK", name: "Sultan Kudarat", typeLabel: "Province" },
     { code: "PH-SAR", name: "Sarangani", typeLabel: "Province" },
-    { code: "PH-SCO", name: "General Santos", typeLabel: "Highly Urbanized City" },
+    { code: "PH-SCO", name: "South Cotabato", typeLabel: "Province" },
     { code: "PH-DAS", name: "Davao del Sur", typeLabel: "Province" },
-    { code: "PH-DAV", name: "Davao", typeLabel: "Highly Urbanized City" },
     { code: "PH-COM", name: "Davao de Oro", typeLabel: "Province" },
     { code: "PH-DAO", name: "Davao Oriental", typeLabel: "Province" },
     { code: "PH-SLE", name: "Southern Leyte", typeLabel: "Province" },
@@ -3678,21 +3637,14 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PH-CAS", name: "Camarines Sur", typeLabel: "Province" },
     { code: "PH-ALB", name: "Albay", typeLabel: "Province" },
     { code: "PH-SOR", name: "Sorsogon", typeLabel: "Province" },
-    { code: "PH-QUE", name: "Lucena", typeLabel: "Highly Urbanized City" },
     { code: "PH-BTG", name: "Batangas", typeLabel: "Province" },
     { code: "PH-CAV", name: "Cavite", typeLabel: "Province" },
-    { code: "PH-MNL", name: "Las Pinas", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Parañaque", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Pasay", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Metro Manila", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Navotas", typeLabel: "Highly Urbanized City" },
+    { code: "PH-MNL", name: "Metro Manila", typeLabel: "Region" },
     { code: "PH-BUL", name: "Bulacan", typeLabel: "Province" },
     { code: "PH-PAM", name: "Pampanga", typeLabel: "Province" },
     { code: "PH-BAN", name: "Bataan", typeLabel: "Province" },
-    { code: "PH-ZMB", name: "Olongapo", typeLabel: "Highly Urbanized City" },
     { code: "PH-ZMB", name: "Zambales", typeLabel: "Province" },
     { code: "PH-PAN", name: "Pangasinan", typeLabel: "Province" },
-    { code: "PH-PAN", name: "Dagupan", typeLabel: "Independent Component City" },
     { code: "PH-LUN", name: "La Union", typeLabel: "Province" },
     { code: "PH-ILS", name: "Ilocos Sur", typeLabel: "Province" },
     { code: "PH-ILN", name: "Ilocos Norte", typeLabel: "Province" },
@@ -3707,16 +3659,11 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PH-BCD", name: "Bacolod", typeLabel: "Highly Urbanized City" },
     { code: "PH-NEC", name: "Negros Occidental", typeLabel: "Province" },
     { code: "PH-NER", name: "Negros Oriental", typeLabel: "Province" },
-    { code: "PH-CEB", name: "Cebu", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MDE", name: "Mandaue", typeLabel: "Highly Urbanized City" },
     { code: "PH-CEB", name: "Cebu", typeLabel: "Province" },
-    { code: "PH-PLW", name: "Puerto Princesa", typeLabel: "Highly Urbanized City" },
-    { code: "PH-LEY", name: "Tacloban", typeLabel: "Highly Urbanized City" },
-    { code: "PH-LEY", name: "Ormoc", typeLabel: "Independent Component City" },
+    { code: "PH-MDE", name: "Mandaue", typeLabel: "Highly Urbanized City" },
     { code: "PH-AKL", name: "Aklan", typeLabel: "Province" },
     { code: "PH-ANT", name: "Antique", typeLabel: "Province" },
     { code: "PH-ILI", name: "Iloilo", typeLabel: "Province" },
-    { code: "PH-ILI", name: "Iloilo", typeLabel: "Highly Urbanized City" },
     { code: "PH-CAP", name: "Capiz", typeLabel: "Province" },
     { code: "PH-ROM", name: "Romblon", typeLabel: "Province" },
     { code: "PH-NSA", name: "Northern Samar", typeLabel: "Province" },
@@ -3729,21 +3676,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PH-LAP", name: "Lapu-Lapu", typeLabel: "Highly Urbanized City" },
     { code: "PH-AGS", name: "Agusan del Sur", typeLabel: "Province" },
     { code: "PH-BUK", name: "Bukidnon", typeLabel: "Province" },
-    { code: "PH-NCO", name: "Cotabato", typeLabel: "Province" },
-    { code: "PH-SCO", name: "South Cotabato", typeLabel: "Province" },
-    { code: "PH-MNL", name: "Muntinlupa", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Caloocan", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Malabon", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Valenzuela City", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Quezon City", typeLabel: "Highly Urbanized City" },
     { code: "PH-NUE", name: "Nueva Ecija", typeLabel: "Province" },
     { code: "PH-LAG", name: "Laguna", typeLabel: "Province" },
     { code: "PH-RIZ", name: "Rizal", typeLabel: "Province" },
-    { code: "PH-MNL", name: "Taguig City", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Marikina", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Pasig", typeLabel: "Highly Urbanized City" },
     { code: "PH-QUI", name: "Quirino", typeLabel: "Province" },
-    { code: "PH-ISA", name: "Santiago", typeLabel: "Independent Component City" },
     { code: "PH-NUV", name: "Nueva Vizcaya", typeLabel: "Province" },
     { code: "PH-BEN", name: "Benguet", typeLabel: "Province" },
     { code: "PH-IFU", name: "Ifugao", typeLabel: "Province" },
@@ -3751,14 +3687,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PH-TAR", name: "Tarlac", typeLabel: "Province" },
     { code: "PH-APA", name: "Apayao", typeLabel: "Province" },
     { code: "PH-KAL", name: "Kalinga", typeLabel: "Province" },
-    { code: "PH-ABR", name: "Abra", typeLabel: "Province" },
-    { code: "PH-CAS", name: "Naga", typeLabel: "Independent Component City" },
-    { code: "PH-PAM", name: "Angeles", typeLabel: "Highly Urbanized City" },
-    { code: "PH-BEN", name: "Baguio", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Makati", typeLabel: "Highly Urbanized City" },
-    { code: "PH-MNL", name: "Pateros", typeLabel: "Independent Municipality" },
-    { code: "PH-MNL", name: "Mandaluyong", typeLabel: "Province" },
-    { code: "PH-MNL", name: "San Juan", typeLabel: "Highly Urbanized City" }
+    { code: "PH-ABR", name: "Abra", typeLabel: "Province" }
     ],
   },
   "PK": {
@@ -3770,13 +3699,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PK-BA", name: "Balochistan", typeLabel: "Province" },
     { code: "PK-PB", name: "Punjab", typeLabel: "Province" },
     { code: "PK-SD", name: "Sindh", typeLabel: "Province" },
-    { code: "PK-IS", name: "Islamabad Capital Territory", typeLabel: "Capital Territory" },
-    // Azad Kashmir — administered by Pakistan; claimed by India as part of
-    // Union Territory of Jammu and Kashmir (IN-JK). Both sides have CDN flags.
-    { code: "PK-JK", name: "Azad Jammu and Kashmir", typeLabel: "Territory", isDisputed: true },
-    // Gilgit-Baltistan — administered by Pakistan; claimed by India as part of
-    // Ladakh (IN-LA) and partly by China (Trans-Karakoram Tract). Has CDN flag.
-    { code: "PK-GB", name: "Gilgit-Baltistan", typeLabel: "Territory", isDisputed: true }
+    { code: "PK-IS", name: "Islamabad Capital Territory", typeLabel: "Capital Territory" }
     ],
   },
   "PL": {
@@ -3977,11 +3900,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RS-13", name: "Pomoravski", typeLabel: "District" },
     { code: "RS-12", name: "Šumadija", typeLabel: "District" },
     { code: "RS-17", name: "Moravica", typeLabel: "District" },
-    { code: "RS-09", name: "Kolubara", typeLabel: "District" },
-    // Kosovo — declared independence 2008; recognised by ~100 states but not Serbia.
-    // Serbia regards it as its Autonomous Province of Kosovo and Metohija.
-    // Kosovo flag shown as unofficial from Serbia's perspective.
-    { code: "RS-KM~", name: "Kosovo", typeLabel: "Disputed Territory", isDisputed: true }
+    { code: "RS-09", name: "Kolubara", typeLabel: "District" }
     ],
   },
   "RU": {
@@ -4171,8 +4090,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SD-GZ", name: "Al Jazirah", typeLabel: "State" },
     { code: "SD-KH", name: "Khartoum", typeLabel: "Region" },
     { code: "SD-KN", name: "North Kordofan", typeLabel: "State" },
-    // West Kordofan re-established 2013 from parts of North and South Kordofan;
-    // absent from Natural Earth.
     { code: "SD-GK", name: "West Kordofan", typeLabel: "State" }
     ],
   },
@@ -4284,7 +4201,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SI-149", name: "Bistrica ob Sotli", typeLabel: "Commune|Municipality" },
     { code: "SI-092", name: "Podčetrtek", typeLabel: "Commune|Municipality" },
     { code: "SI-009", name: "Brežice", typeLabel: "Commune|Municipality" },
-    { code: "SI-054", name: "Krško", typeLabel: "Statistical Region" },
+    { code: "SI-054", name: "Krsko", typeLabel: "Commune|Municipality" },
     { code: "SI-119", name: "Šentjernej", typeLabel: "Commune|Municipality" },
     { code: "SI-085", name: "Novo Mesto", typeLabel: "Commune|Municipality" },
     { code: "SI-073", name: "Metlika", typeLabel: "Commune|Municipality" },
@@ -4405,7 +4322,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SI-129", name: "Trbovlje", typeLabel: "Statistical Region" },
     { code: "SI-151", name: "Braslovče", typeLabel: "Commune|Municipality" },
     { code: "SI-184", name: "Tabor", typeLabel: "Commune|Municipality" },
-    { code: "SI-054", name: "Krsko", typeLabel: "Commune|Municipality" },
     { code: "SI-159", name: "Hajdina", typeLabel: "Commune|Municipality" },
     { code: "SI-096", name: "Ptuj", typeLabel: "Commune|Municipality" },
     { code: "SI-069", name: "Majšperk", typeLabel: "Commune|Municipality" },
@@ -4497,11 +4413,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SO-SH", name: "Lower Shebelle", typeLabel: "Region" },
     { code: "SO-BN", name: "Banaadir", typeLabel: "Region" },
     { code: "SO-SD", name: "Middle Shebelle", typeLabel: "Region" },
-    { code: "SO-BY", name: "Bay", typeLabel: "Region" },
-    // Somaliland — declared independence 1991; not recognised by any UN member.
-    // Somalia claims sovereignty over the whole Somali territory including Somaliland.
-    // Somaliland flag shown as unofficial from Somalia's perspective.
-    { code: "SO-SL~", name: "Somaliland", typeLabel: "Disputed Territory", isDisputed: true }
+    { code: "SO-BY", name: "Bay", typeLabel: "Region" }
     ],
   },
   "SR": {
@@ -4887,12 +4799,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "TR-56", name: "Siirt", typeLabel: "Province" },
     { code: "TR-69", name: "Bayburt", typeLabel: "Province" },
     { code: "TR-29", name: "Gümüşhane", typeLabel: "Province" },
-    // Türkiye RECOGNISES the TRNC as an independent state (does not merely "claim" it).
-    // typeLabel "Disputed Territory" matches the treatment of Falkland Islands (GB-FK)
-    // and Gibraltar (GB-GI) under the UK — the administering nation groups the territory
-    // as "disputed" to inform users of the international contest, without implying the
-    // administering nation itself disputes the territory.
-    { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Disputed Territory", isDisputed: true }
+    { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Claimed State", isDisputed: true }
     ],
   },
   "TT": {
@@ -5086,7 +4993,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "UG-326", name: "Kole", typeLabel: "District" },
     { code: "UG-312", name: "Pader", typeLabel: "District" },
     { code: "UG-416", name: "Ibanda", typeLabel: "County" },
-    { code: "UG-410", name: "Mbarara", typeLabel: "County" },
+    { code: "UG-410", name: "Mbarara", typeLabel: "District" },
     { code: "UG-304", name: "Gulu", typeLabel: "County" },
     { code: "UG-420", name: "Kiryandongo", typeLabel: "District" },
     { code: "UG-203", name: "Iganga", typeLabel: "District" },
@@ -5105,7 +5012,6 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "UG-232", name: "Serere", typeLabel: "District" },
     { code: "UG-211", name: "Soroti", typeLabel: "District" },
     { code: "UG-210", name: "Pallisa", typeLabel: "District" },
-    { code: "UG-410", name: "Mbarara", typeLabel: "District" },
     { code: "UG-116", name: "Lyantonde", typeLabel: "District" },
     { code: "UG-105", name: "Masaka", typeLabel: "District" },
     { code: "UG-108", name: "Mukono", typeLabel: "District" },

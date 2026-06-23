@@ -292,6 +292,11 @@ for (const file of files.sort()) {
 
   // Build divisions list
   const divisions = [];
+  // Multiple polygons can legitimately share a code after dedupe-subdivision-codes.mjs
+  // (Pattern A "same place" merges and Pattern B "absorb sub-units" groups keep the
+  // shared code so every polygon highlights together on the map, but must appear as a
+  // SINGLE card in the flag grid). Collapse those to one division per code.
+  const seenCodes = new Set();
   for (const f of fc.features) {
     const p = f.properties || {};
     const divCode = p.iso_3166_2 || p.name || '';
@@ -323,7 +328,11 @@ for (const file of files.sort()) {
     if (SUBDIVISION_NAME_OVERRIDES_NEW[code]?.[divCode]) {
       name = SUBDIVISION_NAME_OVERRIDES_NEW[code][divCode];
     }
-    
+
+    // One card per code — see seenCodes note above.
+    if (seenCodes.has(divCode)) continue;
+    seenCodes.add(divCode);
+
     divisions.push({ code: divCode, name, typeLabel });
   }
 
