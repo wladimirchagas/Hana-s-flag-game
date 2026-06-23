@@ -920,7 +920,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "CO-CAL", name: "Caldas", typeLabel: "Department" },
     { code: "CO-CAS", name: "Casanare", typeLabel: "Intendancy" },
     { code: "CO-MET", name: "Meta", typeLabel: "Department" },
-    { code: "CO-CUN", name: "Bogotá", typeLabel: "Federal District" },
+    { code: "CO-DC", name: "Bogotá", typeLabel: "Federal District" },
     { code: "CO-SAN", name: "Santander", typeLabel: "Department" },
     { code: "CO-TOL", name: "Tolima", typeLabel: "Department" },
     { code: "CO-QUI", name: "Quindío", typeLabel: "Department" },
@@ -1803,7 +1803,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "HR-09", name: "Lika-Senj", typeLabel: "County" },
     { code: "HR-07", name: "Bjelovar-Bilogora", typeLabel: "County" },
     { code: "HR-21", name: "Zagreb", typeLabel: "City" },
-    { code: "HR-12", name: "Požega-Slavonia", typeLabel: "County" }
+    { code: "HR-11", name: "Požega-Slavonia", typeLabel: "County" }
     ],
   },
   "HT": {
@@ -4099,7 +4099,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SB-CT", name: "Honiara", typeLabel: "Province" },
     { code: "SB-GU", name: "Guadalcanal", typeLabel: "Province" },
     { code: "SB-CE", name: "Central", typeLabel: "Province" },
-    { code: "SB-CH", name: "Western", typeLabel: "Province" },
+    { code: "SB-WE", name: "Western", typeLabel: "Province" },
     { code: "SB-IS", name: "Isabel", typeLabel: "Province" },
     { code: "SB-CH", name: "Choiseul", typeLabel: "Province" }
     ],
@@ -4139,7 +4139,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "SD",
     pluralLabel: "States",
     divisions: [
-    { code: "SD-DE", name: "Central Darfur", typeLabel: "State" },
+    { code: "SD-DC", name: "Central Darfur", typeLabel: "State" },
     { code: "SD-DS", name: "South Darfur", typeLabel: "State" },
     { code: "SD-GD", name: "Al Qadarif", typeLabel: "State" },
     { code: "SD-NB", name: "Blue Nile", typeLabel: "State" },
@@ -4152,7 +4152,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SD-KA", name: "Kassala", typeLabel: "State" },
     { code: "SD-NW", name: "White Nile", typeLabel: "State" },
     { code: "SD-KS", name: "South Kordofan", typeLabel: "State" },
-    { code: "SD-DS", name: "East Darfur", typeLabel: "State" },
+    { code: "SD-DE", name: "East Darfur", typeLabel: "State" },
     { code: "SD-GZ", name: "Al Jazirah", typeLabel: "State" },
     { code: "SD-KH", name: "Khartoum", typeLabel: "Region" },
     { code: "SD-KN", name: "North Kordofan", typeLabel: "State" }
