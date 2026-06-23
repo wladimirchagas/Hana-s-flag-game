@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { dedupeFeatures } from './dedupe-subdivision-codes.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, '..');
@@ -59,6 +60,9 @@ console.log(`Countries found: ${byCountry.size}`);
 
 let written = 0;
 for (const [code, features] of byCountry) {
+  // Resolve Natural Earth's shared-iso_3166_2 collisions so every selectable
+  // subdivision has a unique code (see dedupe-subdivision-codes.mjs).
+  dedupeFeatures(code, features);
   const fc = {
     type: 'FeatureCollection',
     features,
