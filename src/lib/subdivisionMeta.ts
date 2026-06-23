@@ -1350,7 +1350,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "ET-OR", name: "Oromia", typeLabel: "Administrative State" },
     { code: "ET-DD", name: "Dire Dawa", typeLabel: "Administrative State" },
     { code: "ET-AA", name: "Addis Ababa", typeLabel: "Administrative State" },
-    { code: "ET-HA", name: "Harari", typeLabel: "Administrative State" }
+    { code: "ET-HA", name: "Harari", typeLabel: "Administrative State" },
+    // Established 2020 after the 2019 referendum, split from the former Southern
+    // Nations, Nationalities and Peoples' Region; absent from Natural Earth.
+    { code: "ET-SI", name: "Sidama", typeLabel: "Administrative State" }
     ],
   },
   "FI": {
@@ -3014,7 +3017,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MM-06", name: "Yangon", typeLabel: "Division" },
     { code: "MM-02", name: "Bago", typeLabel: "Division" },
     { code: "MM-03", name: "Magway", typeLabel: "Division" },
-    { code: "MM-04", name: "Mandalay", typeLabel: "Division" }
+    { code: "MM-04", name: "Mandalay", typeLabel: "Division" },
+    // Union Territory created 2010 as the seat of government, administered
+    // directly by the Union; absent from Natural Earth.
+    { code: "MM-18", name: "Nay Pyi Taw", typeLabel: "Union Territory" }
     ],
   },
   "MN": {
@@ -3550,7 +3556,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     countryCode: "PA",
     pluralLabel: "Provinces",
     divisions: [
-    { code: "PA-1", name: "comarca Ngäbe-Buglé", typeLabel: "Province" },
+    { code: "PA-1", name: "Bocas del Toro", typeLabel: "Province" },
     { code: "PA-4", name: "Chiriquí", typeLabel: "Province" },
     { code: "PA-KY", name: "Guna Yala", typeLabel: "Indigenous Territory" },
     { code: "PA-EM", name: "Emberá-Wounaan Comarca", typeLabel: "Indigenous Territory" },
@@ -3561,7 +3567,12 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PA-3", name: "Colón", typeLabel: "Province" },
     { code: "PA-NB", name: "Ngöbe-Buglé Comarca", typeLabel: "Indigenous Territory" },
     { code: "PA-7", name: "Los Santos", typeLabel: "Province" },
-    { code: "PA-6", name: "Herrera", typeLabel: "Province" }
+    { code: "PA-6", name: "Herrera", typeLabel: "Province" },
+    // Created 2014 (Law 119) from the eastern part of Panamá Province; absent from
+    // the Natural Earth admin-1 topology, so appended from PRIMARY_SUBDIVISIONS_TO_APPEND.
+    { code: "PA-10", name: "Panamá Oeste", typeLabel: "Province" },
+    // Comarca created 2020 (Law 156) from parts of Bocas del Toro province.
+    { code: "PA-NT", name: "Naso Tjër Di", typeLabel: "Indigenous Territory" }
     ],
   },
   "PE": {
@@ -3619,7 +3630,11 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PG-EPW", name: "Enga", typeLabel: "Province" },
     { code: "PG-WHM", name: "Western Highlands", typeLabel: "Province" },
     { code: "PG-SHM", name: "Southern Highlands", typeLabel: "Province" },
-    { code: "PG-EHG", name: "Eastern Highlands", typeLabel: "Province" }
+    { code: "PG-EHG", name: "Eastern Highlands", typeLabel: "Province" },
+    // Hela and Jiwaka provinces created 2012, split from Southern Highlands and
+    // Western Highlands respectively; absent from Natural Earth.
+    { code: "PG-HLA", name: "Hela", typeLabel: "Province" },
+    { code: "PG-JWK", name: "Jiwaka", typeLabel: "Province" }
     ],
   },
   "PH": {
@@ -4155,7 +4170,10 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "SD-DS", name: "East Darfur", typeLabel: "State" },
     { code: "SD-GZ", name: "Al Jazirah", typeLabel: "State" },
     { code: "SD-KH", name: "Khartoum", typeLabel: "Region" },
-    { code: "SD-KN", name: "North Kordofan", typeLabel: "State" }
+    { code: "SD-KN", name: "North Kordofan", typeLabel: "State" },
+    // West Kordofan re-established 2013 from parts of North and South Kordofan;
+    // absent from Natural Earth.
+    { code: "SD-GK", name: "West Kordofan", typeLabel: "State" }
     ],
   },
   "SE": {
