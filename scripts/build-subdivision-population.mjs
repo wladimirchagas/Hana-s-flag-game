@@ -303,6 +303,50 @@ const NO_ISO_CODE_QIDS = {
   "NZ-TK": "Q36823", // Tokelau — NZ external territory
 };
 
+/**
+ * Subdivisions with no P300 link AND no usable code-bearing item at all —
+ * found instead by an exact (or administrative-suffix-variant) name match
+ * against the subdivision's own name in subdivisionMeta.ts, scoped to the
+ * correct country via P17, then independently verified by checking the
+ * matched item's Wikidata description/P31 classes to rule out a same-name
+ * collision (a different place that merely shares the name) before being
+ * trusted — exactly the verification this project's "never trust a
+ * bulk-imported subdivision flag as correct by default" rule requires for
+ * any unsupervised match, applied here to population data. Each entry below
+ * was individually confirmed this way; many other same-name candidates found
+ * by the same search were REJECTED for failing this check (e.g. it would
+ * have matched Madagascar's MG-T "Antananarivo" to the city of Antananarivo
+ * rather than the autonomous province; Mexico's MX-DIF to the country of
+ * Mexico itself; Venezuela's VE-M "Miranda" state to an unrelated Miranda
+ * Municipality in Anzoátegui State; Italy's province codes to their
+ * same-named capital comune, which is a much smaller population) — those are
+ * deliberately left absent rather than shipped, per the "never invent or
+ * guess" rule.
+ */
+const VERIFIED_NAME_MATCH_QIDS = {
+  "AZ-NA": "Q152825", // Naftalan — city in Azerbaijan; AZ-NA is itself a city-level Municipality
+  "BS-AK": "Q341919", // Acklins — district-island of the Bahamas
+  "CV-BR": "Q492528", // Brava — island of Cape Verde, coterminous with the Brava concelho
+  "CV-BV": "Q110440", // Boa Vista — island of Cape Verde, coterminous with the Boa Vista concelho
+  "CV-SL": "Q111989", // Sal — island of Cape Verde, coterminous with the Sal concelho
+  "CV-MA": "Q492551", // Maio — island of Cape Verde, coterminous with the Maio concelho
+  "GB-GS": "Q35086", // South Georgia and the South Sandwich Islands — British Overseas Territory
+  "GB-IO": "Q43448", // British Indian Ocean Territory
+  "IN-CH": "Q5071071", // Chandigarh district — matches the Chandigarh Union Territory
+  "KN-14": "Q376738", // Trinity Palmetto Point Parish
+  "MD-SN": "Q907112", // Transnistria — the Stînga Nistrului territory MD-SN represents
+  "NP-KO": "Q2284812", // Bhojpur District, Koshi Province
+  "NZ-CIT": "Q86771569", // Chatham Islands Territory — NZ Special Island Authority
+  "PS-WBK": "Q36678", // West Bank
+  "PS-GZZ": "Q39760", // Gaza Strip
+  "PW-350": "Q14752295", // Peleliu — island of Palau, coterminous with Peleliu State
+  "RS-KM~": "Q1255", // Kosovo and Metohija — Serbia's autonomous province (disputed territory)
+  "SO-SL~": "Q34754", // Somaliland — de facto state (disputed territory, claimed by Somalia)
+  "TO-01": "Q423528", // ʻEua — island of Tonga, coterminous with the ʻEua division
+  "TO-04": "Q620452", // Tongatapu — main island of Tonga, coterminous with the Tongatapu division
+  "TT-ETO": "Q185111", // Tobago — island of Trinidad and Tobago
+};
+
 async function fetchByQid(code, qid) {
   const q = `SELECT ?pop ?date ?method WHERE {
     wd:${qid} p:P1082 ?st . ?st ps:P1082 ?pop .
@@ -423,6 +467,22 @@ async function main() {
 
   console.log("\nFetching subdivisions with no Wikidata P300 code (by QID)...");
   for (const [code, qid] of Object.entries(NO_ISO_CODE_QIDS)) {
+    try {
+      const v = await fetchByQid(code, qid);
+      if (v) {
+        subdivisions.set(code, v);
+        console.log(`  ${code} (${qid}) → ${v.population} (${v.year}, ${v.basis})`);
+      } else {
+        console.log(`  ${code} (${qid}) → no dated population found`);
+      }
+    } catch (e) {
+      console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(1500);
+  }
+
+  console.log("\nFetching verified name-matched subdivisions (by QID)...");
+  for (const [code, qid] of Object.entries(VERIFIED_NAME_MATCH_QIDS)) {
     try {
       const v = await fetchByQid(code, qid);
       if (v) {
