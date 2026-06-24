@@ -347,6 +347,48 @@ const VERIFIED_NAME_MATCH_QIDS = {
   "TT-ETO": "Q185111", // Tobago — island of Trinidad and Tobago
 };
 
+/**
+ * Subdivisions with NO Wikidata coverage at all (no P300 code, no QID with a
+ * dated P1082, no name-matchable item) — population, year and basis sourced
+ * directly from each subdivision's own national statistics authority and
+ * independently verified, never copied from an unverified (including
+ * LLM-generated) table. Every figure below was cross-checked against the
+ * primary publication before being trusted; entries that could not be pinned
+ * to an exact, sourced figure are deliberately left out rather than
+ * approximated, per the "never invent or guess" rule.
+ */
+const MANUAL_VERIFIED_POPULATION = {
+  // 2011 Population and Housing Census, Antigua and Barbuda Statistics Division
+  "AG-04": { population: 51737, year: 2011, basis: "census" }, // Saint John
+  // 2002 census, State Statistical Office of the Republic of North Macedonia
+  "MK-31": { population: 11605, year: 2002, basis: "census" }, // Zajas
+  "MK-28": { population: 3249, year: 2002, basis: "census" }, // Drugovo
+  // 2005 regional estimate, Eritrean Ministry of Local Government (no census has been held)
+  "ER-DK": { population: 83500, year: 2005, basis: "estimate" }, // Southern Red Sea
+  "ER-SK": { population: 653300, year: 2005, basis: "estimate" }, // Northern Red Sea
+  "ER-GB": { population: 708800, year: 2005, basis: "estimate" }, // Gash-Barka
+  // 2020 census, Planning and Statistics Authority, Qatar
+  "QA-RA": { population: 826786, year: 2020, basis: "census" }, // Al Rayyan
+  "QA-MS": { population: 16730, year: 2020, basis: "census" }, // Madinat ash Shamal
+  "QA-US": { population: 149701, year: 2020, basis: "census" }, // Umm Salal
+  // 2013 census, Gambia Bureau of Statistics
+  "GM-M": { population: 226018, year: 2013, basis: "census" }, // Central River
+  "GM-L": { population: 82361, year: 2013, basis: "census" }, // Lower River
+  "GM-W": { population: 699704, year: 2013, basis: "census" }, // West Coast
+  // 2015 census, Statistics Sierra Leone — district figures summed to the province
+  // (Kailahun 526,379 + Kenema 609,891 + Kono 506,100; Western Area Rural 444,270 +
+  // Western Area Urban 1,055,964)
+  "SL-E": { population: 1642370, year: 2015, basis: "census" }, // Eastern Province
+  "SL-W": { population: 1500234, year: 2015, basis: "census" }, // Western Area
+  // 2022 Census of Gibraltar, HM Government of Gibraltar
+  "ES-GIB~": { population: 37936, year: 2022, basis: "census" }, // Gibraltar (claimed by Spain)
+  // 2012 census, Algemeen Bureau voor de Statistiek, Suriname
+  "SR-WA": { population: 118222, year: 2012, basis: "census" }, // Wanica
+  // 2023 census (7th Population and Housing Census), Pakistan Bureau of Statistics
+  "PK-SD": { population: 55696147, year: 2023, basis: "census" }, // Sindh
+  "PK-IS": { population: 2363863, year: 2023, basis: "census" }, // Islamabad Capital Territory
+};
+
 async function fetchByQid(code, qid) {
   const q = `SELECT ?pop ?date ?method WHERE {
     wd:${qid} p:P1082 ?st . ?st ps:P1082 ?pop .
@@ -495,6 +537,12 @@ async function main() {
       console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
     }
     await sleep(1500);
+  }
+
+  console.log("\nApplying manually verified population figures...");
+  for (const [code, v] of Object.entries(MANUAL_VERIFIED_POPULATION)) {
+    subdivisions.set(code, v);
+    console.log(`  ${code} → ${v.population} (${v.year}, ${v.basis})`);
   }
 
   // Never let a refresh drop a code the new fetch didn't return — preserve
