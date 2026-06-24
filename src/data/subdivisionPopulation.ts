@@ -280,6 +280,7 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "AF-NUR": { population: 160000, year: 2019, basis: "estimate" },
 
   // ── AG ──
+  "AG-04": { population: 51737, year: 2011, basis: "census" },
   "AG-06": { population: 7979, year: 2011, basis: "census" },
   "AG-03": { population: 7496, year: 2011, basis: "census" },
   "AG-05": { population: 7067, year: 2011, basis: "census" },
@@ -1407,6 +1408,11 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "EG-WAD": { population: 241247, year: 2017, basis: "census" },
   "EG-JS": { population: 150088, year: 2006, basis: "census" },
 
+  // ── ER ──
+  "ER-GB": { population: 708800, year: 2005, basis: "estimate" },
+  "ER-SK": { population: 653300, year: 2005, basis: "estimate" },
+  "ER-DK": { population: 83500, year: 2005, basis: "estimate" },
+
   // ── ES ──
   "ES-AN": { population: 8619616, year: 2024, basis: "estimate" },
   "ES-CT": { population: 8034743, year: 2024, basis: "estimate" },
@@ -1477,6 +1483,7 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "ES-SO": { population: 90150, year: 2024, basis: "estimate" },
   "ES-ML": { population: 86780, year: 2025, basis: "estimate" },
   "ES-CE": { population: 83595, year: 2025, basis: "estimate" },
+  "ES-GIB~": { population: 37936, year: 2022, basis: "census" },
 
   // ── ET ──
   "ET-OR": { population: 35467001, year: 2017, basis: "estimate" },
@@ -1962,7 +1969,10 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "GL-QT": { population: 6176, year: 2021, basis: "estimate" },
 
   // ── GM ──
+  "GM-W": { population: 699704, year: 2013, basis: "census" },
+  "GM-M": { population: 226018, year: 2013, basis: "census" },
   "GM-U": { population: 198773, year: 2010, basis: "estimate" },
+  "GM-L": { population: 82361, year: 2013, basis: "census" },
   "GM-B": { population: 31356, year: 2013, basis: "census" },
 
   // ── GN ──
@@ -3356,6 +3366,7 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "MK-503": { population: 13126, year: 2021, basis: "census" },
   "MK-02": { population: 12676, year: 2021, basis: "census" },
   "MK-802": { population: 12676, year: 2021, basis: "census" },
+  "MK-31": { population: 11605, year: 2002, basis: "census" },
   "MK-07": { population: 11508, year: 2021, basis: "census" },
   "MK-402": { population: 11508, year: 2021, basis: "census" },
   "MK-03": { population: 10890, year: 2021, basis: "census" },
@@ -3415,6 +3426,7 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "MK-205": { population: 3420, year: 2021, basis: "census" },
   "MK-32": { population: 3361, year: 2021, basis: "census" },
   "MK-806": { population: 3361, year: 2021, basis: "census" },
+  "MK-28": { population: 3249, year: 2002, basis: "census" },
   "MK-26": { population: 3084, year: 2021, basis: "census" },
   "MK-406": { population: 3084, year: 2021, basis: "census" },
   "MK-41": { population: 2725, year: 2021, basis: "census" },
@@ -3988,9 +4000,11 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
 
   // ── PK ──
   "PK-PB": { population: 127688922, year: 2023, basis: "census" },
+  "PK-SD": { population: 55696147, year: 2023, basis: "census" },
   "PK-KP": { population: 26896829, year: 2011, basis: "estimate" },
   "PK-BA": { population: 13162222, year: 2014, basis: "estimate" },
   "PK-JK": { population: 4567982, year: 2008, basis: "estimate" },
+  "PK-IS": { population: 2363863, year: 2023, basis: "census" },
   "PK-GB": { population: 1155755, year: 2011, basis: "census" },
 
   // ── PL ──
@@ -4092,10 +4106,13 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
 
   // ── QA ──
   "QA-DA": { population: 1186023, year: 2020, basis: "census" },
+  "QA-RA": { population: 826786, year: 2020, basis: "census" },
   "QA-KH": { population: 202031, year: 2015, basis: "estimate" },
   "QA-SH": { population: 161240, year: 2020, basis: "estimate" },
+  "QA-US": { population: 149701, year: 2020, basis: "census" },
   "QA-WA": { population: 87970, year: 2015, basis: "estimate" },
   "QA-ZA": { population: 54339, year: 2015, basis: "estimate" },
+  "QA-MS": { population: 16730, year: 2020, basis: "census" },
 
   // ── RO ──
   "RO-B": { population: 1716961, year: 2021, basis: "census" },
@@ -4348,7 +4365,7 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "SI-071": { population: 16829, year: 2020, basis: "census" },
   "SI-112": { population: 16609, year: 2020, basis: "census" },
   "SI-094": { population: 16442, year: 2020, basis: "census" },
-  "SI-05": { population: 16402, year: 2020, basis: "census" },
+  "SI-05": { population: 16439, year: 2020, basis: "census" },
   "SI-142": { population: 16402, year: 2020, basis: "census" },
   "SI-129": { population: 16014, year: 2020, basis: "census" },
   "SI-048": { population: 15702, year: 2020, basis: "census" },
@@ -4434,8 +4451,8 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "SI-134": { population: 4410, year: 2020, basis: "census" },
   "SI-192": { population: 4394, year: 2020, basis: "census" },
   "SI-201": { population: 4371, year: 2020, basis: "census" },
+  "SI-019": { population: 4255, year: 2020, basis: "census" },
   "SI-079": { population: 4216, year: 2020, basis: "census" },
-  "SI-019": { population: 4213, year: 2020, basis: "census" },
   "SI-028": { population: 4152, year: 2020, basis: "census" },
   "SI-099": { population: 4142, year: 2020, basis: "census" },
   "SI-171": { population: 4137, year: 2020, basis: "census" },
@@ -4451,7 +4468,7 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "SI-020": { population: 3878, year: 2020, basis: "census" },
   "SI-109": { population: 3864, year: 2020, basis: "census" },
   "SI-090": { population: 3787, year: 2023, basis: "estimate" },
-  "SI-065": { population: 3757, year: 2020, basis: "census" },
+  "SI-065": { population: 3770, year: 2020, basis: "census" },
   "SI-095": { population: 3714, year: 2020, basis: "census" },
   "SI-208": { population: 3642, year: 2020, basis: "census" },
   "SI-074": { population: 3596, year: 2020, basis: "census" },
@@ -4466,8 +4483,8 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "SI-125": { population: 3291, year: 2020, basis: "census" },
   "SI-016": { population: 3285, year: 2020, basis: "census" },
   "SI-213": { population: 3224, year: 2020, basis: "census" },
-  "SI-006": { population: 3193, year: 2020, basis: "census" },
   "SI-132": { population: 3193, year: 2020, basis: "census" },
+  "SI-006": { population: 3193, year: 2020, basis: "census" },
   "SI-107": { population: 3105, year: 2020, basis: "census" },
   "SI-199": { population: 3089, year: 2020, basis: "census" },
   "SI-105": { population: 3046, year: 2020, basis: "census" },
@@ -4492,7 +4509,6 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "SI-093": { population: 2354, year: 2020, basis: "census" },
   "SI-209": { population: 2322, year: 2020, basis: "census" },
   "SI-181": { population: 2294, year: 2020, basis: "census" },
-  "SI-137": { population: 2272, year: 2020, basis: "census" },
   "SI-155": { population: 2234, year: 2020, basis: "census" },
   "SI-179": { population: 2215, year: 2020, basis: "census" },
   "SI-204": { population: 2161, year: 2020, basis: "census" },
@@ -4503,8 +4519,8 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "SI-031": { population: 1995, year: 2020, basis: "census" },
   "SI-205": { population: 1988, year: 2020, basis: "census" },
   "SI-076": { population: 1877, year: 2020, basis: "census" },
-  "SI-066": { population: 1814, year: 2020, basis: "census" },
   "SI-172": { population: 1801, year: 2020, basis: "census" },
+  "SI-066": { population: 1789, year: 2020, basis: "census" },
   "SI-152": { population: 1746, year: 2020, basis: "census" },
   "SI-138": { population: 1706, year: 2020, basis: "census" },
   "SI-184": { population: 1669, year: 2020, basis: "census" },
@@ -4521,11 +4537,12 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
   "SI-191": { population: 1311, year: 2020, basis: "census" },
   "SI-176": { population: 1277, year: 2020, basis: "census" },
   "SI-156": { population: 1273, year: 2020, basis: "census" },
-  "SI-182": { population: 1180, year: 2020, basis: "census" },
+  "SI-182": { population: 1184, year: 2020, basis: "census" },
   "SI-044": { population: 1127, year: 2020, basis: "census" },
   "SI-177": { population: 1116, year: 2020, basis: "census" },
   "SI-202": { population: 965, year: 2020, basis: "census" },
   "SI-154": { population: 949, year: 2020, basis: "census" },
+  "SI-137": { population: 859, year: 2020, basis: "census" },
   "SI-189": { population: 805, year: 2020, basis: "census" },
   "SI-165": { population: 635, year: 2020, basis: "census" },
   "SI-163": { population: 625, year: 2020, basis: "census" },
@@ -4546,6 +4563,8 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
 
   // ── SL ──
   "SL-S": { population: 1830881, year: 2021, basis: "estimate" },
+  "SL-E": { population: 1642370, year: 2015, basis: "census" },
+  "SL-W": { population: 1500234, year: 2015, basis: "census" },
 
   // ── SM ──
   "SM-09": { population: 10591, year: 2013, basis: "estimate" },
@@ -4584,6 +4603,7 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
 
   // ── SR ──
   "SR-PM": { population: 242946, year: 2004, basis: "estimate" },
+  "SR-WA": { population: 118222, year: 2012, basis: "census" },
   "SR-SI": { population: 37065, year: 2012, basis: "census" },
   "SR-MA": { population: 18294, year: 2012, basis: "census" },
 
