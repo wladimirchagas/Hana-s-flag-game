@@ -72,6 +72,12 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
     // Natural Earth's name_en for FR-64 is the anglicised, mis-spelled
     // "Pyrenees-Atlantics". Correct it to the official French spelling.
     "FR-64": "Pyrénées-Atlantiques"
+  },
+  "PA": {
+    // Natural Earth mislabels PA-1: its name_en is "comarca Ngäbe-Buglé"
+    // (which is actually PA-NB) while its name/geometry is Bocas del Toro.
+    // PA-1 is the Province of Bocas del Toro per ISO 3166-2:PA.
+    "PA-1": "Bocas del Toro"
   }
 };
 
@@ -96,6 +102,52 @@ const DISPUTED_SUBDIV_CODES = new Set([
 const SUBDIVISION_FEATURE_EXCLUDE = new Set([
   "AU-NSW|Lord Howe Island", // Island dependency of NSW; governed under NSW law, not Commonwealth law
 ]);
+
+// Primary (tier-0) subdivisions that genuinely exist under the country's own law
+// but are ABSENT from the Natural Earth admin-1 topology (the geometry source).
+// Natural Earth's admin-1 dataset is stale: it never added several subdivisions
+// created/redrawn in the 2010s–2020s, so they were silently dropped from the flag
+// grid and the Sub-national flags game even though their flags are bundled in
+// public/flags/sub/<CC>/. Unlike TERRITORIES_TO_APPEND (external/dependent
+// tier-1 territories), these are core administrative divisions and use a
+// primary typeLabel so they group with their siblings (tier 0).
+//
+// Each entry is verified against ISO 3166-2 and the country's own territorial
+// law (see inline source notes), per the "subdivision research" hard rule in
+// CLAUDE.md. Their flags are bundled and pass scripts/check-parent-flag-collision.mjs.
+// They have no polygon in the per-country GeoJSON, so they appear in the flag
+// grid / game but their landmass is not separately drawn on the subdivision map
+// (it remains part of the parent division it was split from) until Natural Earth
+// ships geometry for them.
+const PRIMARY_SUBDIVISIONS_TO_APPEND = {
+  "PA": [
+    // Created 2014 by Law 119 from the eastern part of Panamá Province.
+    { code: "PA-10", name: "Panamá Oeste", typeLabel: "Province" },
+    // Comarca created 2020 by Law 156 from parts of Bocas del Toro province.
+    { code: "PA-NT", name: "Naso Tjër Di", typeLabel: "Indigenous Territory" }
+  ],
+  "ET": [
+    // Sidama Region — established 2020 after the 2019 referendum, split from the
+    // former Southern Nations, Nationalities and Peoples' Region.
+    { code: "ET-SI", name: "Sidama", typeLabel: "Administrative State" }
+  ],
+  "MM": [
+    // Nay Pyi Taw Union Territory — created 2010 as the seat of government,
+    // administered directly by the Union (President), not a state/region.
+    { code: "MM-18", name: "Nay Pyi Taw", typeLabel: "Union Territory" }
+  ],
+  "PG": [
+    // Hela and Jiwaka provinces — created 2012, split from Southern Highlands
+    // and Western Highlands respectively.
+    { code: "PG-HLA", name: "Hela", typeLabel: "Province" },
+    { code: "PG-JWK", name: "Jiwaka", typeLabel: "Province" }
+  ],
+  "SD": [
+    // West Kordofan State — re-established 2013 from parts of North and
+    // South Kordofan.
+    { code: "SD-GK", name: "West Kordofan", typeLabel: "State" }
+  ]
+};
 
 const TERRITORIES_TO_APPEND = {
   "DK": [
@@ -240,6 +292,11 @@ for (const file of files.sort()) {
 
   // Build divisions list
   const divisions = [];
+  // Multiple polygons can legitimately share a code after dedupe-subdivision-codes.mjs
+  // (Pattern A "same place" merges and Pattern B "absorb sub-units" groups keep the
+  // shared code so every polygon highlights together on the map, but must appear as a
+  // SINGLE card in the flag grid). Collapse those to one division per code.
+  const seenCodes = new Set();
   for (const f of fc.features) {
     const p = f.properties || {};
     const divCode = p.iso_3166_2 || p.name || '';
@@ -271,8 +328,21 @@ for (const file of files.sort()) {
     if (SUBDIVISION_NAME_OVERRIDES_NEW[code]?.[divCode]) {
       name = SUBDIVISION_NAME_OVERRIDES_NEW[code][divCode];
     }
-    
+
+    // One card per code — see seenCodes note above.
+    if (seenCodes.has(divCode)) continue;
+    seenCodes.add(divCode);
+
     divisions.push({ code: divCode, name, typeLabel });
+  }
+
+  if (PRIMARY_SUBDIVISIONS_TO_APPEND[code]) {
+    // Only append entries not already present from the geometry source, so a
+    // future Natural Earth update that adds them does not create duplicates.
+    const existing = new Set(divisions.map(d => d.code));
+    for (const d of PRIMARY_SUBDIVISIONS_TO_APPEND[code]) {
+      if (!existing.has(d.code)) divisions.push(d);
+    }
   }
 
   if (TERRITORIES_TO_APPEND[code]) {
