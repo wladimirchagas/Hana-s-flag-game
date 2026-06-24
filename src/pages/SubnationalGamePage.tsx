@@ -204,6 +204,10 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
         ...profileEntryFields(activeProfile),
       };
       saveGameToLeaderboard(entry);
+      // Reflect the name actually saved so the "Saved as …" message always
+      // shows it — the auto-save path saves under the profile name before the
+      // prefill effect populates playerName, which otherwise left it blank.
+      setPlayerName(name.trim().slice(0, 48));
       setSaveHint("saved");
     },
     [game, countryCode, activeProfile, saveGameToLeaderboard],
