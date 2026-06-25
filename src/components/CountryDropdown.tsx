@@ -1,5 +1,6 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
+import { blurActiveElementThenRun } from "../lib/dismissKeyboard";
 
 type Props = {
   countries: Country[];
@@ -133,7 +134,7 @@ export function CountryDropdown({
     previouslyFocusedRef.current = document.activeElement as HTMLElement | null;
     const t = window.setTimeout(() => modalSearchRef.current?.focus(), 60);
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setModalOpen(false);
+      if (e.key === "Escape") closeModal();
     };
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
@@ -145,11 +146,18 @@ export function CountryDropdown({
     };
   }, [modalOpen]);
 
+  // Closes the mobile modal via blurActiveElementThenRun — see
+  // src/lib/dismissKeyboard.ts. Never call setModalOpen(false) directly from
+  // a path where the modal's search input may be focused.
+  function closeModal() {
+    blurActiveElementThenRun(() => setModalOpen(false));
+  }
+
   function selectCountry(c: Country) {
     onChange(c);
     setQuery(c.name);
     setOpen(false);
-    setModalOpen(false);
+    closeModal();
   }
 
   function openModal() {
@@ -239,7 +247,7 @@ export function CountryDropdown({
           aria-modal="true"
           aria-label={label}
           onClick={(e) => {
-            if (e.target === e.currentTarget) setModalOpen(false);
+            if (e.target === e.currentTarget) closeModal();
           }}
         >
           <div className="dropdown-modal__sheet">
@@ -248,7 +256,7 @@ export function CountryDropdown({
               <button
                 type="button"
                 className="dropdown-modal__close"
-                onClick={() => setModalOpen(false)}
+                onClick={closeModal}
                 aria-label="Close"
               >
                 ×

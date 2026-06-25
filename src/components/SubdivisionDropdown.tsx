@@ -1,6 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
+import { blurActiveElementThenRun } from "../lib/dismissKeyboard";
 
 type Props = {
   divisions: SubdivisionMeta[];
@@ -105,7 +106,7 @@ export function SubdivisionDropdown({
     previouslyFocusedRef.current = document.activeElement as HTMLElement | null;
     const t = window.setTimeout(() => modalSearchRef.current?.focus(), 60);
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setModalOpen(false);
+      if (e.key === "Escape") closeModal();
     };
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
@@ -117,11 +118,18 @@ export function SubdivisionDropdown({
     };
   }, [modalOpen]);
 
+  // Closes the mobile modal via blurActiveElementThenRun — see
+  // src/lib/dismissKeyboard.ts. Never call setModalOpen(false) directly from
+  // a path where the modal's search input may be focused.
+  function closeModal() {
+    blurActiveElementThenRun(() => setModalOpen(false));
+  }
+
   function selectDivision(d: SubdivisionMeta) {
     onChange(d);
     setQuery(d.name);
     setOpen(false);
-    setModalOpen(false);
+    closeModal();
   }
 
   function openModal() {
@@ -210,7 +218,7 @@ export function SubdivisionDropdown({
           aria-modal="true"
           aria-label={label}
           onClick={(e) => {
-            if (e.target === e.currentTarget) setModalOpen(false);
+            if (e.target === e.currentTarget) closeModal();
           }}
         >
           <div className="dropdown-modal__sheet">
@@ -219,7 +227,7 @@ export function SubdivisionDropdown({
               <button
                 type="button"
                 className="dropdown-modal__close"
-                onClick={() => setModalOpen(false)}
+                onClick={closeModal}
                 aria-label="Close"
               >
                 ×

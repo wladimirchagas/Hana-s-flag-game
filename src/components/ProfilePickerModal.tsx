@@ -9,6 +9,7 @@ import {
 import { createProfile, type DeviceProfileRef } from "../lib/profileStore";
 import { loadStoredSelection } from "../lib/countrySelection";
 import { loadLearnedCodes } from "../lib/learnedFlags";
+import { blurActiveElementThenRun } from "../lib/dismissKeyboard";
 
 type View = "list" | "add" | "edit" | "confirmDelete";
 
@@ -53,6 +54,13 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
   // Delete-confirmation state: which profile is pending deletion.
   const [pendingDelete, setPendingDelete] = useState<DeviceProfileRef | null>(null);
 
+  // The "add"/"edit" forms keep a text input focused. Closing the modal (or
+  // navigating away from those views) must blur that input BEFORE it unmounts
+  // — see src/lib/dismissKeyboard.ts for why. Every path that calls onClose()
+  // or leaves the add/edit view must go through one of these two helpers
+  // instead of calling onClose()/setView() directly.
+  const closeAndBlur = () => blurActiveElementThenRun(onClose);
+
   const switchTo = async (id: string) => {
     setBusy(true);
     setError(null);
@@ -62,7 +70,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
         setError("That profile could not be loaded.");
         return;
       }
-      onClose();
+      closeAndBlur();
     } finally {
       setBusy(false);
     }
@@ -70,7 +78,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
 
   const playAsGuest = () => {
     setActiveProfile(null);
-    onClose();
+    closeAndBlur();
   };
 
   const handleUpload = async (file: File | undefined) => {
@@ -103,7 +111,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
         },
       });
       setActiveProfile(profile);
-      onClose();
+      closeAndBlur();
     } catch {
       setError("Couldn't create the profile. Please try again.");
     } finally {
@@ -141,8 +149,10 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
         setError("Couldn't save changes. Please try again.");
         return;
       }
-      setEditingId(null);
-      setView("list");
+      blurActiveElementThenRun(() => {
+        setEditingId(null);
+        setView("list");
+      });
     } catch {
       setError("Couldn't save changes. Please try again.");
     } finally {
@@ -221,7 +231,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
       aria-modal="true"
       aria-labelledby="profile-modal-title"
       onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
+        if (e.target === e.currentTarget) closeAndBlur();
       }}
     >
       <div className="profile-modal">
@@ -238,7 +248,7 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
           <button
             type="button"
             className="profile-modal__close"
-            onClick={onClose}
+            onClick={closeAndBlur}
             aria-label="Close"
           >
             ×
@@ -345,10 +355,12 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                 <button
                   type="button"
                   className="profile-btn profile-btn--ghost"
-                  onClick={() => {
-                    setError(null);
-                    setView("list");
-                  }}
+                  onClick={() =>
+                    blurActiveElementThenRun(() => {
+                      setError(null);
+                      setView("list");
+                    })
+                  }
                 >
                   Back
                 </button>
@@ -372,11 +384,13 @@ export function ProfilePickerModal({ onClose }: { onClose: () => void }) {
                 <button
                   type="button"
                   className="profile-btn profile-btn--ghost"
-                  onClick={() => {
-                    setEditingId(null);
-                    setError(null);
-                    setView("list");
-                  }}
+                  onClick={() =>
+                    blurActiveElementThenRun(() => {
+                      setEditingId(null);
+                      setError(null);
+                      setView("list");
+                    })
+                  }
                 >
                   Cancel
                 </button>
