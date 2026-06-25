@@ -387,6 +387,250 @@ const MANUAL_VERIFIED_POPULATION = {
   // 2023 census (7th Population and Housing Census), Pakistan Bureau of Statistics
   "PK-SD": { population: 55696147, year: 2023, basis: "census" }, // Sindh
   "PK-IS": { population: 2363863, year: 2023, basis: "census" }, // Islamabad Capital Territory
+
+  // Population estimates "al 01/01/2026" (tuttitalia.it, sourced from ISTAT)
+  "IT-AO": { population: 122554, year: 2026, basis: "estimate" }, // Aosta
+  "IT-RN": { population: 341244, year: 2026, basis: "estimate" }, // Rimini
+  "IT-PU": { population: 349556, year: 2026, basis: "estimate" }, // Pesaro and Urbino
+  "IT-TS": { population: 227840, year: 2026, basis: "estimate" }, // Trieste
+  "IT-PD": { population: 934540, year: 2026, basis: "estimate" }, // Padua
+  "IT-RO": { population: 227183, year: 2026, basis: "estimate" }, // Rovigo
+  "IT-FE": { population: 340482, year: 2026, basis: "estimate" }, // Ferrara
+  "IT-FC": { population: 394337, year: 2026, basis: "estimate" }, // Forlì-Cesena
+  "IT-AN": { population: 461613, year: 2026, basis: "estimate" }, // Ancona
+  "IT-MC": { population: 301689, year: 2026, basis: "estimate" }, // Macerata
+  "IT-FM": { population: 166772, year: 2026, basis: "estimate" }, // Fermo
+  "IT-AP": { population: 200202, year: 2026, basis: "estimate" }, // Ascoli Piceno
+  "IT-CB": { population: 207723, year: 2026, basis: "estimate" }, // Campobasso
+  "IT-BA": { population: 1218073, year: 2026, basis: "estimate" }, // Bari
+  "IT-MT": { population: 187754, year: 2026, basis: "estimate" }, // Matera
+  "IT-TP": { population: 410602, year: 2026, basis: "estimate" }, // Trapani
+  "IT-ME": { population: 594074, year: 2026, basis: "estimate" }, // Messina
+  "IT-PA": { population: 1195307, year: 2026, basis: "estimate" }, // Palermo
+  "IT-AG": { population: 407041, year: 2026, basis: "estimate" }, // Agrigento
+  "IT-CL": { population: 243501, year: 2026, basis: "estimate" }, // Caltanissetta
+  "IT-RG": { population: 323144, year: 2026, basis: "estimate" }, // Ragusa
+  "IT-SR": { population: 382450, year: 2026, basis: "estimate" }, // Syracuse
+  "IT-SS": { population: 311128, year: 2026, basis: "estimate" }, // Sassari
+  "IT-EN": { population: 151525, year: 2026, basis: "estimate" }, // Enna
+  "IT-AT": { population: 207059, year: 2026, basis: "estimate" }, // Asti
+  "IT-NO": { population: 365930, year: 2026, basis: "estimate" }, // Novara
+  "IT-VI": { population: 855212, year: 2026, basis: "estimate" }, // Vicenza
+  "IT-VR": { population: 930842, year: 2026, basis: "estimate" }, // Verona
+  "IT-TV": { population: 878341, year: 2026, basis: "estimate" }, // Treviso
+  "IT-PC": { population: 287745, year: 2026, basis: "estimate" }, // Piacenza
+  "IT-PR": { population: 457509, year: 2026, basis: "estimate" }, // Parma
+  "IT-MO": { population: 711502, year: 2026, basis: "estimate" }, // Modena
+  "IT-BO": { population: 1024290, year: 2026, basis: "estimate" }, // Bologna
+  "IT-PN": { population: 311114, year: 2026, basis: "estimate" }, // Pordenone
+  "IT-IS": { population: 78217, year: 2026, basis: "estimate" }, // Isernia
+  // Last available estimate before the province was abolished in 2016 (tuttitalia.it/ISTAT)
+  "IT-CI": { population: 126324, year: 2016, basis: "estimate" }, // Carbonia-Iglesias
+
+  // 2019 RGPH census, Institut National de la Statistique et de la Démographie, Burkina Faso (citypopulation.de)
+  "BF-KMP": { population: 117682, year: 2019, basis: "census" }, // Kompienga
+  "BF-LER": { population: 179423, year: 2019, basis: "census" }, // Léraba
+  "BF-COM": { population: 633043, year: 2019, basis: "census" }, // Comoé
+  "BF-PON": { population: 356918, year: 2019, basis: "census" }, // Poni
+  "BF-NOU": { population: 98915, year: 2019, basis: "census" }, // Noumbiel
+  "BF-SOM": { population: 363661, year: 2019, basis: "census" }, // Soum
+  "BF-SOR": { population: 285011, year: 2019, basis: "census" }, // Sourou
+  "BF-KOS": { population: 357089, year: 2019, basis: "census" }, // Kossi
+  "BF-HOU": { population: 1510638, year: 2019, basis: "census" }, // Houet
+  "BF-KEN": { population: 399949, year: 2019, basis: "census" }, // Kénédougou
+  "BF-SEN": { population: 404716, year: 2019, basis: "census" }, // Séno
+  "BF-YAG": { population: 171594, year: 2019, basis: "census" }, // Yagha
+  "BF-KMD": { population: 105604, year: 2019, basis: "census" }, // Komondjari
+  "BF-KOP": { population: 362644, year: 2019, basis: "census" }, // Koulpélogo
+  "BF-BLG": { population: 737843, year: 2019, basis: "census" }, // Boulgou
+  "BF-NAO": { population: 195816, year: 2019, basis: "census" }, // Nahouri
+  "BF-SIS": { population: 337078, year: 2019, basis: "census" }, // Sissili
+  "BF-IOB": { population: 265956, year: 2019, basis: "census" }, // Ioba
+  "BF-BAL": { population: 297468, year: 2019, basis: "census" }, // Balé
+  "BF-SNG": { population: 391617, year: 2019, basis: "census" }, // Sanguié
+  "BF-TUI": { population: 329253, year: 2019, basis: "census" }, // Tuy
+  "BF-BGR": { population: 153653, year: 2019, basis: "census" }, // Bougouriba
+  "BF-KOT": { population: 480021, year: 2019, basis: "census" }, // Kouritenga
+  "BF-GAN": { population: 482763, year: 2019, basis: "census" }, // Ganzourgou
+  "BF-ZOU": { population: 312045, year: 2019, basis: "census" }, // Zoundwéogo
+  "BF-ZIR": { population: 241731, year: 2019, basis: "census" }, // Ziro
+  "BF-BLK": { population: 689709, year: 2019, basis: "census" }, // Boulkiemdé
+  "BF-OUB": { population: 314609, year: 2019, basis: "census" }, // Oubritenga
+  "BF-GOU": { population: 437310, year: 2019, basis: "census" }, // Gourma
+  "BF-GNA": { population: 676476, year: 2019, basis: "census" }, // Gnagna
+  "BF-BAZ": { population: 280870, year: 2019, basis: "census" }, // Bazèga
+  "BF-KOW": { population: 181242, year: 2019, basis: "census" }, // Kourwéogo
+  "BF-NAY": { population: 223151, year: 2019, basis: "census" }, // Nayala
+  "BF-PAS": { population: 457930, year: 2019, basis: "census" }, // Passoré
+  "BF-ZON": { population: 240018, year: 2019, basis: "census" }, // Zondoma
+  "BF-SMT": { population: 884819, year: 2019, basis: "census" }, // Sanmatenga
+
+  // 2018 Malawi Population and Housing Census Main Report (via Wikipedia)
+  "MW-CT": { population: 234927, year: 2018, basis: "census" }, // Chitipa
+  "MW-RU": { population: 229161, year: 2018, basis: "census" }, // Rumphi
+  "MW-NB": { population: 284681, year: 2018, basis: "census" }, // Nkhata Bay
+  "MW-LK": { population: 14527, year: 2018, basis: "census" }, // Likoma
+  "MW-MZ": { population: 1161456, year: 2018, basis: "census" }, // Mzimba
+  "MW-KS": { population: 842953, year: 2018, basis: "census" }, // Kasungu
+  "MW-MC": { population: 602305, year: 2018, basis: "census" }, // Mchinji
+  "MW-NK": { population: 393077, year: 2018, basis: "census" }, // Nkhotakota
+  "MW-SA": { population: 478346, year: 2018, basis: "census" }, // Salima
+  "MW-MG": { population: 1148611, year: 2018, basis: "census" }, // Mangochi
+  "MW-MH": { population: 735438, year: 2018, basis: "census" }, // Machinga
+  "MW-DE": { population: 830512, year: 2018, basis: "census" }, // Dedza
+  "MW-LI": { population: 2626901, year: 2018, basis: "census" }, // Lilongwe
+  "MW-NS": { population: 299168, year: 2018, basis: "census" }, // Nsanje
+  "MW-CK": { population: 564684, year: 2018, basis: "census" }, // Chikwawa
+  "MW-MW": { population: 130949, year: 2018, basis: "census" }, // Mwanza
+  "MW-NE": { population: 138291, year: 2018, basis: "census" }, // Neno
+  "MW-NU": { population: 659608, year: 2018, basis: "census" }, // Ntcheu
+  "MW-ZO": { population: 851737, year: 2018, basis: "census" }, // Zomba
+  "MW-PH": { population: 429450, year: 2018, basis: "census" }, // Phalombe
+  "MW-MU": { population: 684107, year: 2018, basis: "census" }, // Mulanje
+  "MW-TH": { population: 721456, year: 2018, basis: "census" }, // Thyolo
+  "MW-DO": { population: 772569, year: 2018, basis: "census" }, // Dowa
+  "MW-BA": { population: 438379, year: 2018, basis: "census" }, // Balaka
+  "MW-CR": { population: 356875, year: 2018, basis: "census" }, // Chiradzulu
+  "MW-BL": { population: 1251484, year: 2018, basis: "census" }, // Blantyre
+  "MW-NI": { population: 317069, year: 2018, basis: "census" }, // Ntchisi
+
+  // 2014 RGPH3 census, Institut National de la Statistique, Guinea (via Wikipedia)
+  "GN-FA": { population: 280511, year: 2014, basis: "census" }, // Faranah
+  "GN-MM": { population: 318738, year: 2014, basis: "census" }, // Mamou Prefecture
+  "GN-FO": { population: 244649, year: 2014, basis: "census" }, // Forécariah Prefecture
+  "GN-GU": { population: 291823, year: 2014, basis: "census" }, // Guéckédou Prefecture
+  "GN-BE": { population: 325482, year: 2014, basis: "census" }, // Beyla Prefecture
+  "GN-LO": { population: 175213, year: 2014, basis: "census" }, // Lola Prefecture
+  "GN-KN": { population: 130205, year: 2014, basis: "census" }, // Koundara Prefecture
+  "GN-ML": { population: 290320, year: 2014, basis: "census" }, // Mali Prefecture
+  "GN-MC": { population: 298282, year: 2014, basis: "census" }, // Macenta Prefecture
+  "GN-YO": { population: 176664, year: 2014, basis: "census" }, // Yomou Prefecture
+  "GN-NZ": { population: 396118, year: 2014, basis: "census" }, // Nzérékoré Prefecture
+  "GN-GA": { population: 194245, year: 2014, basis: "census" }, // Gaoual Prefecture
+  "GN-SI": { population: 695449, year: 2014, basis: "census" }, // Siguiri Prefecture
+  "GN-KB": { population: 101171, year: 2014, basis: "census" }, // Koubia Prefecture
+  "GN-TO": { population: 122959, year: 2014, basis: "census" }, // Tougué Prefecture
+  "GN-DI": { population: 195662, year: 2014, basis: "census" }, // Dinguiraye Prefecture
+  "GN-BF": { population: 211063, year: 2014, basis: "census" }, // Boffa Prefecture
+  "GN-DU": { population: 328418, year: 2014, basis: "census" }, // Dubréka Prefecture
+  "GN-CO": { population: 264164, year: 2014, basis: "census" }, // Coyah Prefecture
+  "GN-KS": { population: 283609, year: 2014, basis: "census" }, // Kissidougou Prefecture
+  "GN-TE": { population: 283639, year: 2014, basis: "census" }, // Télimélé Prefecture
+  "GN-DL": { population: 136320, year: 2014, basis: "census" }, // Dalaba Prefecture
+  "GN-LA": { population: 318633, year: 2014, basis: "census" }, // Labé Prefecture
+  "GN-PI": { population: 277059, year: 2014, basis: "census" }, // Pita Prefecture
+  "GN-KO": { population: 268224, year: 2014, basis: "census" }, // Kouroussa Prefecture
+  "GN-FR": { population: 96527, year: 2014, basis: "census" }, // Fria Prefecture
+
+  // 2012 Census of Sri Lanka, Department of Census and Statistics (via Wikipedia)
+  "LK-53": { population: 379541, year: 2012, basis: "census" }, // Trincomalee
+  "LK-45": { population: 92238, year: 2012, basis: "census" }, // Mullaitivu
+  "LK-41": { population: 583882, year: 2012, basis: "census" }, // Jaffna
+  "LK-42": { population: 113510, year: 2012, basis: "census" }, // Kilinochchi
+  "LK-43": { population: 99570, year: 2012, basis: "census" }, // Mannar
+  "LK-12": { population: 2304833, year: 2012, basis: "census" }, // Gampaha
+  "LK-11": { population: 2324349, year: 2012, basis: "census" }, // Colombo
+  "LK-13": { population: 1221948, year: 2012, basis: "census" }, // Kalutara
+  "LK-32": { population: 814048, year: 2012, basis: "census" }, // Matara
+  "LK-33": { population: 599903, year: 2012, basis: "census" }, // Hambantota
+  "LK-52": { population: 649402, year: 2012, basis: "census" }, // Ampara
+  "LK-51": { population: 526567, year: 2012, basis: "census" }, // Batticaloa
+  "LK-91": { population: 1088007, year: 2012, basis: "census" }, // Ratnapura
+  "LK-82": { population: 451058, year: 2012, basis: "census" }, // Monaragala
+  "LK-92": { population: 840648, year: 2012, basis: "census" }, // Kegalle
+  "LK-81": { population: 815405, year: 2012, basis: "census" }, // Badulla
+  "LK-22": { population: 484531, year: 2012, basis: "census" }, // Matale
+  "LK-72": { population: 406088, year: 2012, basis: "census" }, // Polonnaruwa
+  "LK-61": { population: 1618465, year: 2012, basis: "census" }, // Kurunegala
+  "LK-23": { population: 711644, year: 2012, basis: "census" }, // Nuwara Eliya
+  "LK-44": { population: 172115, year: 2012, basis: "census" }, // Vavuniya
+  "LK-21": { population: 1375382, year: 2012, basis: "census" }, // Kandy
+
+  // 2022 census, National Statistics Bureau, Seychelles (citypopulation.de)
+  // SC-13 and SC-14 are both mislabelled "Grand'Anse Praslin" in subdivisionMeta.ts; the ISO
+  // 3166-2:SC standard defines SC-13 = Grand'Anse Mahé and SC-14 = Grand'Anse Praslin, and the
+  // figures below are assigned per the correct ISO code identity, not the existing (buggy) label.
+  "SC-15": { population: 3934, year: 2022, basis: "census" }, // La Digue
+  "SC-13": { population: 4140, year: 2022, basis: "census" }, // Grand'Anse Mahé
+  "SC-06": { population: 4795, year: 2022, basis: "census" }, // Baie Lazare
+  "SC-23": { population: 3871, year: 2022, basis: "census" }, // Takamaka
+  "SC-05": { population: 5046, year: 2022, basis: "census" }, // Anse Royale
+  "SC-04": { population: 5974, year: 2022, basis: "census" }, // Au Cap
+  "SC-20": { population: 3750, year: 2022, basis: "census" }, // Pointe La Rue
+  "SC-11": { population: 7263, year: 2022, basis: "census" }, // Cascade
+  "SC-25": { population: 3828, year: 2022, basis: "census" }, // Roche Caiman
+  "SC-19": { population: 4622, year: 2022, basis: "census" }, // Plaisance
+  "SC-18": { population: 4055, year: 2022, basis: "census" }, // Mont Fleuri
+  "SC-09": { population: 3129, year: 2022, basis: "census" }, // Bel Air
+  "SC-16": { population: 4236, year: 2022, basis: "census" }, // La Rivière Anglaise (English River)
+  "SC-03": { population: 6555, year: 2022, basis: "census" }, // Anse Etoile
+  "SC-12": { population: 4496, year: 2022, basis: "census" }, // Glacis
+  "SC-08": { population: 5603, year: 2022, basis: "census" }, // Beau Vallon
+  "SC-10": { population: 4829, year: 2022, basis: "census" }, // Bel Ombre
+  "SC-21": { population: 3243, year: 2022, basis: "census" }, // Port Glaud
+  "SC-07": { population: 5063, year: 2022, basis: "census" }, // Baie Sainte Anne
+  "SC-14": { population: 4344, year: 2022, basis: "census" }, // Grand'Anse Praslin
+  "SC-17": { population: 3383, year: 2022, basis: "census" }, // Mont Buxton
+  "SC-22": { population: 3692, year: 2022, basis: "census" }, // Saint Louis
+  "SC-24": { population: 2719, year: 2022, basis: "census" }, // Les Mamelles
+
+  // 2022 census, Maldives Bureau of Statistics (Table P2: Resident population by place of
+  // enumeration and administrative division and intercensal growth rate, 2014 & 2022)
+  "MV-29": { population: 9166, year: 2022, basis: "census" }, // Gnaviyani Atoll
+  "MV-28": { population: 12775, year: 2022, basis: "census" }, // Gaafu Dhaalu Atoll
+  "MV-27": { population: 9174, year: 2022, basis: "census" }, // Gaafu Alif Atoll
+  "MV-00": { population: 10532, year: 2022, basis: "census" }, // Alif Dhaal Atoll
+  "MV-26": { population: 17714, year: 2022, basis: "census" }, // Kaafu Atoll
+  "MV-02": { population: 7997, year: 2022, basis: "census" }, // Alif Alif Atoll
+  "MV-20": { population: 10655, year: 2022, basis: "census" }, // Baa Atoll
+  "MV-03": { population: 8969, year: 2022, basis: "census" }, // Lhaviyani Atoll
+  "MV-13": { population: 17565, year: 2022, basis: "census" }, // Raa Atoll
+  "MV-24": { population: 13686, year: 2022, basis: "census" }, // Shaviyani Atoll
+  "MV-05": { population: 14642, year: 2022, basis: "census" }, // Laamu Atoll
+  "MV-08": { population: 10249, year: 2022, basis: "census" }, // Thaa Atoll
+  "MV-17": { population: 6628, year: 2022, basis: "census" }, // Dhaalu Atoll
+  "MV-12": { population: 5471, year: 2022, basis: "census" }, // Meemu Atoll
+  "MV-14": { population: 4858, year: 2022, basis: "census" }, // Faafu Atoll
+  "MV-04": { population: 1995, year: 2022, basis: "census" }, // Vaavu Atoll
+  "MV-25": { population: 12481, year: 2022, basis: "census" }, // Noonu Atoll
+  "MV-23": { population: 22534, year: 2022, basis: "census" }, // Haa Dhaalu Atoll
+  "MV-07": { population: 14603, year: 2022, basis: "census" }, // Haa Alif Atoll
+
+  // 2022 census, Bahamas Department of Statistics (geo-ref.net "Census Bahamas 2022"). Black
+  // Point, Mangrove Cay, Central Eleuthera, Moore's Island and Central Abaco are deliberately
+  // left unfilled: they do not appear as standalone rows in the primary source's district table.
+  "BS-IN": { population: 831, year: 2022, basis: "census" }, // Inagua
+  "BS-MG": { population: 203, year: 2022, basis: "census" }, // Mayaguana
+  "BS-CK": { population: 293, year: 2022, basis: "census" }, // Crooked Island
+  "BS-LI": { population: 2718, year: 2022, basis: "census" }, // Long Island
+  "BS-SS": { population: 819, year: 2022, basis: "census" }, // San Salvador Island
+  "BS-SA": { population: 3666, year: 2022, basis: "census" }, // South Andros
+  "BS-NS": { population: 4029, year: 2022, basis: "census" }, // North Andros
+  "BS-NE": { population: 3893, year: 2022, basis: "census" }, // North Eleuthera
+  "BS-SE": { population: 5211, year: 2022, basis: "census" }, // South Eleuthera
+  "BS-WG": { population: 5884, year: 2022, basis: "census" }, // West Grand Bahama
+  "BS-EG": { population: 11194, year: 2022, basis: "census" }, // East Grand Bahama
+  "BS-SO": { population: 6523, year: 2022, basis: "census" }, // South Abaco
+  "BS-NO": { population: 10172, year: 2022, basis: "census" }, // North Abaco
+  "BS-HI": { population: 1843, year: 2022, basis: "census" }, // Harbour Island
+
+  // 2006 census, Libyan General Information Authority (via Wikipedia's 22-district table).
+  // Ghadames, Nuqat al Khams, Ajdabiya, Al Qubbah and Mizdah are deliberately left unfilled:
+  // they appear only in the older, uncited 32-district (2001-2007) table.
+  "LY-MQ": { population: 78621, year: 2006, basis: "census" }, // Murzuq
+  "LY-BU": { population: 159536, year: 2006, basis: "census" }, // Butnan
+  "LY-WS": { population: 78532, year: 2006, basis: "census" }, // Ash Shati (Wadi al Shatii)
+  "LY-GT": { population: 23518, year: 2006, basis: "census" }, // Ghat
+  "LY-MI": { population: 550938, year: 2006, basis: "census" }, // Misrata
+  "LY-MB": { population: 432202, year: 2006, basis: "census" }, // Murqub
+  "LY-TN": { population: 1065405, year: 2006, basis: "census" }, // Tripoli District
+  "LY-ZA": { population: 290993, year: 2006, basis: "census" }, // Zawiya
+  "LY-JA": { population: 203156, year: 2006, basis: "census" }, // Jabal al Akhdar
+  "LY-MJ": { population: 185848, year: 2006, basis: "census" }, // Marj
+  "LY-JI": { population: 453198, year: 2006, basis: "census" }, // Jafara
+  "LY-JU": { population: 52342, year: 2006, basis: "census" }, // Jufra
+  "LY-SB": { population: 134162, year: 2006, basis: "census" }, // Sabha
+  "LY-WD": { population: 76858, year: 2006, basis: "census" }, // Wadi al Hayaa (Wadi al Hayat)
 };
 
 async function fetchByQid(code, qid) {
