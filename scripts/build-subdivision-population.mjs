@@ -631,6 +631,379 @@ const MANUAL_VERIFIED_POPULATION = {
   "LY-JU": { population: 52342, year: 2006, basis: "census" }, // Jufra
   "LY-SB": { population: 134162, year: 2006, basis: "census" }, // Sabha
   "LY-WD": { population: 76858, year: 2006, basis: "census" }, // Wadi al Hayaa (Wadi al Hayat)
+
+  // Papua New Guinea, National Statistical Office 2011 Census (via citypopulation.de aggregation)
+  "PG-CPM": { population: 269756, year: 2011, basis: "census" }, // Central
+  "PG-CPK": { population: 376473, year: 2011, basis: "census" }, // Chimbu (Simbu)
+  "PG-EBR": { population: 328369, year: 2011, basis: "census" }, // East New Britain
+  "PG-ESW": { population: 450530, year: 2011, basis: "census" }, // East Sepik
+  "PG-EHG": { population: 579825, year: 2011, basis: "census" }, // Eastern Highlands
+  "PG-EPW": { population: 432045, year: 2011, basis: "census" }, // Enga
+  "PG-GPK": { population: 158197, year: 2011, basis: "census" }, // Gulf
+  "PG-MPM": { population: 493906, year: 2011, basis: "census" }, // Madang
+  "PG-MRL": { population: 60485, year: 2011, basis: "census" }, // Manus
+  "PG-MBA": { population: 276512, year: 2011, basis: "census" }, // Milne Bay
+  "PG-MPL": { population: 674810, year: 2011, basis: "census" }, // Morobe
+  "PG-NIK": { population: 194067, year: 2011, basis: "census" }, // New Ireland
+  "PG-NPP": { population: 186309, year: 2011, basis: "census" }, // Oro (Northern)
+  "PG-NSB": { population: 249358, year: 2011, basis: "census" }, // Bougainville
+  "PG-SAN": { population: 248411, year: 2011, basis: "census" }, // Sandaun (West Sepik)
+  "PG-SHM": { population: 510245, year: 2011, basis: "census" }, // Southern Highlands
+  "PG-WBK": { population: 264264, year: 2011, basis: "census" }, // West New Britain
+
+  // Solomon Islands, National Statistics Office (SINSO) 2019 Census
+  "SB-CE": { population: 30318, year: 2019, basis: "census" }, // Central
+  "SB-CH": { population: 30775, year: 2019, basis: "census" }, // Choiseul
+  "SB-GU": { population: 154022, year: 2019, basis: "census" }, // Guadalcanal
+  "SB-CT": { population: 129569, year: 2019, basis: "census" }, // Honiara
+  "SB-IS": { population: 31420, year: 2019, basis: "census" }, // Isabel
+  "SB-MK": { population: 51587, year: 2019, basis: "census" }, // Makira-Ulawa
+  "SB-ML": { population: 172740, year: 2019, basis: "census" }, // Malaita
+  "SB-RB": { population: 4100, year: 2019, basis: "census" }, // Rennell and Bellona
+  "SB-TE": { population: 22319, year: 2019, basis: "census" }, // Temotu
+  "SB-WE": { population: 94106, year: 2019, basis: "census" }, // Western
+
+  // Vanuatu, National Statistics Office 2020 Census. Sanma and Shefa omitted —
+  // two independent queries against the same secondary source returned
+  // conflicting figures that could not be reconciled against the primary PDF.
+  "VU-MAP": { population: 42499, year: 2020, basis: "census" }, // Malampa
+  "VU-PAM": { population: 35607, year: 2020, basis: "census" }, // Penama
+  "VU-TAE": { population: 45714, year: 2020, basis: "census" }, // Tafea
+  "VU-TOB": { population: 11330, year: 2020, basis: "census" }, // Torba
+
+  // Samoa, Samoa Bureau of Statistics 2021 Census
+  "WS-AA": { population: 24563, year: 2021, basis: "census" }, // A'ana
+  "WS-AL": { population: 5000, year: 2021, basis: "census" }, // Aiga-i-le-Tai
+  "WS-AT": { population: 23926, year: 2021, basis: "census" }, // Atua
+  "WS-FA": { population: 14831, year: 2021, basis: "census" }, // Fa'asaleleaga
+  "WS-GE": { population: 5548, year: 2021, basis: "census" }, // Gaga'emauga
+  "WS-GI": { population: 4797, year: 2021, basis: "census" }, // Gaga'ifomauga
+  "WS-PA": { population: 9251, year: 2021, basis: "census" }, // Palauli
+  "WS-SA": { population: 5403, year: 2021, basis: "census" }, // Satupa'itea
+  "WS-TU": { population: 103801, year: 2021, basis: "census" }, // Tuamasaga
+  "WS-VF": { population: 1680, year: 2021, basis: "census" }, // Va'a-o-Fonoti
+  "WS-VS": { population: 6757, year: 2021, basis: "census" }, // Vaisigano
+
+  // Tonga, Statistics Department 2021 Census
+  "TO-02": { population: 5665, year: 2021, basis: "census" }, // Ha'apai
+  "TO-03": { population: 1148, year: 2021, basis: "census" }, // Niuas
+  "TO-04": { population: 74320, year: 2021, basis: "census" }, // Tongatapu
+  "TO-05": { population: 14182, year: 2021, basis: "census" }, // Vava'u
+  "TO-01": { population: 4864, year: 2021, basis: "census" }, // 'Eua
+
+  // Bermuda, Dept of Statistics 2016 Census Parish Profiles (gov.bm). BM-SG
+  // omitted — two conflicting figures (1,298 vs 1,527) both attributed to the
+  // 2016 census, neither resolvable against a single confirmed source PDF.
+  "BM-DEV": { population: 8127, year: 2016, basis: "census" }, // Devonshire
+  "BM-HAM": { population: 4131, year: 2016, basis: "census" }, // Hamilton Parish
+  "BM-HA": { population: 854, year: 2016, basis: "census" }, // City of Hamilton
+  "BM-PAG": { population: 4708, year: 2016, basis: "census" }, // Paget
+  "BM-PEM": { population: 10118, year: 2016, basis: "census" }, // Pembroke
+  "BM-SAN": { population: 8593, year: 2016, basis: "census" }, // Sandys
+  "BM-SGE": { population: 4549, year: 2016, basis: "census" }, // St. George's Parish
+  "BM-SMI": { population: 4773, year: 2016, basis: "census" }, // Smith's
+  "BM-SOU": { population: 5816, year: 2016, basis: "census" }, // Southampton
+  "BM-WAR": { population: 8077, year: 2016, basis: "census" }, // Warwick
+
+  // Trinidad and Tobago, CSO 2011 Population & Housing Census Community
+  // Register (official xlsx, cso.gov.tt), subtotal rows
+  "TT-POS": { population: 37074, year: 2011, basis: "census" }, // Port of Spain
+  "TT-SFO": { population: 55419, year: 2011, basis: "census" }, // San Fernando
+  "TT-ARI": { population: 33606, year: 2011, basis: "census" }, // Arima
+  "TT-CHA": { population: 83516, year: 2011, basis: "census" }, // Chaguanas
+  "TT-PTF": { population: 20083, year: 2011, basis: "census" }, // Point Fortin
+  "TT-DMN": { population: 105910, year: 2011, basis: "census" }, // Diego Martin
+  "TT-SJL": { population: 156792, year: 2011, basis: "census" }, // San Juan-Laventille
+  "TT-TUP": { population: 212170, year: 2011, basis: "census" }, // Tunapuna-Piarco
+  "TT-CTT": { population: 80049, year: 2011, basis: "census" }, // Couva-Tabaquite-Talparo
+  "TT-RCM": { population: 33486, year: 2011, basis: "census" }, // Mayaro-Rio Claro
+  "TT-PRT": { population: 72175, year: 2011, basis: "census" }, // Princes Town
+  "TT-SGE": { population: 87866, year: 2011, basis: "census" }, // Sangre Grande
+  "TT-SIP": { population: 152217, year: 2011, basis: "census" }, // Siparia
+  "TT-PED": { population: 55708, year: 2011, basis: "census" }, // Penal-Debe
+
+  // Saint Vincent and the Grenadines, Statistical Office 2012 Census
+  // Preliminary Report. Only the Grenadines split maps cleanly to an ISO
+  // parish; the 13 census divisions don't align 1:1 with the other 5 parishes.
+  "VC-06": { population: 10234, year: 2012, basis: "census" }, // Grenadines (Northern 6,184 + Southern 4,050)
+
+  // Grenada, Central Statistical Office 2011 National Population & Housing
+  // Census Report (Table 1.3.1/1.3.2) — supersedes the conflicting
+  // "Population Estimates by Parish 2011-2019" secondary series; all 7
+  // figures sum exactly to the document's stated total of 106,669.
+  "GD-01": { population: 26501, year: 2011, basis: "census" }, // Saint Andrew
+  "GD-02": { population: 12877, year: 2011, basis: "census" }, // Saint David
+  "GD-03": { population: 38249, year: 2011, basis: "census" }, // Saint George
+  "GD-04": { population: 8469, year: 2011, basis: "census" }, // Saint John
+  "GD-05": { population: 4408, year: 2011, basis: "census" }, // Saint Mark
+  "GD-06": { population: 10504, year: 2011, basis: "census" }, // Saint Patrick
+  "GD-10": { population: 5661, year: 2011, basis: "census" }, // Carriacou and Petite Martinique
+
+  // Haiti, IHSI/DSDS "Estimations Désagrégées de la Population Haïtienne en
+  // 2024" (July 2024) — all 10 figures sum exactly to the document's stated
+  // national total of 11,867,032.
+  "HT-OU": { population: 4038816, year: 2024, basis: "estimate" }, // Ouest
+  "HT-SE": { population: 749803, year: 2024, basis: "estimate" }, // Sud-Est
+  "HT-ND": { population: 1172476, year: 2024, basis: "estimate" }, // Nord
+  "HT-NE": { population: 430925, year: 2024, basis: "estimate" }, // Nord-Est
+  "HT-AR": { population: 1896380, year: 2024, basis: "estimate" }, // Artibonite
+  "HT-CE": { population: 852280, year: 2024, basis: "estimate" }, // Centre
+  "HT-SD": { population: 955607, year: 2024, basis: "estimate" }, // Sud
+  "HT-GA": { population: 570687, year: 2024, basis: "estimate" }, // Grand'Anse
+  "HT-NO": { population: 797013, year: 2024, basis: "estimate" }, // Nord-Ouest
+  "HT-NI": { population: 403045, year: 2024, basis: "estimate" }, // Nippes
+
+  // Zambia, Zambia Statistics Agency 2022 Census of Population and Housing
+  // (checksum-verified against the national total)
+  "ZM-01": { population: 1043159, year: 2022, basis: "census" }, // Western
+  "ZM-02": { population: 2204426, year: 2022, basis: "census" }, // Central
+  "ZM-03": { population: 2191047, year: 2022, basis: "census" }, // Eastern
+  "ZM-04": { population: 1156629, year: 2022, basis: "census" }, // Luapula
+  "ZM-05": { population: 1747177, year: 2022, basis: "census" }, // Northern
+  "ZM-06": { population: 961385, year: 2022, basis: "census" }, // North-Western
+  "ZM-07": { population: 1855426, year: 2022, basis: "census" }, // Southern
+  "ZM-08": { population: 2706609, year: 2022, basis: "census" }, // Copperbelt
+  "ZM-09": { population: 3360918, year: 2022, basis: "census" }, // Lusaka
+  "ZM-10": { population: 1042841, year: 2022, basis: "census" }, // Muchinga
+
+  // Benin, INSAE RGPH-4 2013 census (instad.bj)
+  "BJ-AL": { population: 861166, year: 2013, basis: "census" }, // Alibori
+  "BJ-AK": { population: 769337, year: 2013, basis: "census" }, // Atakora
+  "BJ-AQ": { population: 1396671, year: 2013, basis: "census" }, // Atlantique
+  "BJ-BO": { population: 1212646, year: 2013, basis: "census" }, // Borgou
+  "BJ-CO": { population: 717763, year: 2013, basis: "census" }, // Collines
+  "BJ-KO": { population: 741895, year: 2013, basis: "census" }, // Kouffo
+  "BJ-LI": { population: 678874, year: 2013, basis: "census" }, // Littoral (Cotonou)
+  "BJ-DO": { population: 543130, year: 2013, basis: "census" }, // Donga
+  "BJ-MO": { population: 495307, year: 2013, basis: "census" }, // Mono
+  "BJ-OU": { population: 1100404, year: 2013, basis: "census" }, // Ouémé
+  "BJ-PL": { population: 622372, year: 2013, basis: "census" }, // Plateau
+  "BJ-ZO": { population: 851580, year: 2013, basis: "census" }, // Zou
+
+  // Republic of the Congo, INS-Congo RGPH-5 2023 census (checksum-verified
+  // against press-cited totals)
+  "CG-BZV": { population: 2295127, year: 2023, basis: "census" }, // Brazzaville
+  "CG-16": { population: 1268706, year: 2023, basis: "census" }, // Pointe-Noire
+  "CG-11": { population: 275531, year: 2023, basis: "census" }, // Bouenza
+  "CG-8": { population: 269408, year: 2023, basis: "census" }, // Cuvette
+  "CG-15": { population: 94254, year: 2023, basis: "census" }, // Cuvette-Ouest
+  "CG-7": { population: 145378, year: 2023, basis: "census" }, // Likouala
+  "CG-2": { population: 104728, year: 2023, basis: "census" }, // Lékoumou
+  "CG-9": { population: 259884, year: 2023, basis: "census" }, // Niari
+  "CG-14": { population: 261636, year: 2023, basis: "census" }, // Plateaux
+  "CG-12": { population: 308162, year: 2023, basis: "census" }, // Pool
+  "CG-13": { population: 104645, year: 2023, basis: "census" }, // Sangha
+  "CG-5": { population: 149375, year: 2023, basis: "census" }, // Kouilou
+
+  // Comoros, INSEED RGPH 2017 census
+  "KM-G": { population: 361308, year: 2017, basis: "census" }, // Andjazîdja (Grande Comore)
+  "KM-A": { population: 327382, year: 2017, basis: "census" }, // Anjouan
+  "KM-M": { population: 40310, year: 2017, basis: "census" }, // Mohéli
+
+  // Ghana, Ghana Statistical Service 2021 PHC. The codebase carries the
+  // pre-2018 10-region boundaries; the 2021 census reports only the 16 new
+  // regions directly, so figures are reconstituted by summing each old
+  // region's known successor regions per GSS's own documented split lineage.
+  // Checksum exact against the published national total (30,792,608).
+  "GH-WP": { population: 2938080, year: 2021, basis: "census" }, // Western (Western + Western North)
+  "GH-CP": { population: 2859821, year: 2021, basis: "census" }, // Central
+  "GH-AA": { population: 5446237, year: 2021, basis: "census" }, // Greater Accra
+  "GH-TV": { population: 2396750, year: 2021, basis: "census" }, // Volta (Volta + Oti)
+  "GH-EP": { population: 2917039, year: 2021, basis: "census" }, // Eastern
+  "GH-AH": { population: 5432485, year: 2021, basis: "census" }, // Ashanti
+  "GH-BA": { population: 2976807, year: 2021, basis: "census" }, // Brong-Ahafo (Bono + Bono East + Ahafo)
+  "GH-NP": { population: 3619473, year: 2021, basis: "census" }, // Northern (Northern + Savannah + North East)
+  "GH-UE": { population: 1301221, year: 2021, basis: "census" }, // Upper East
+  "GH-UW": { population: 904695, year: 2021, basis: "census" }, // Upper West
+
+  // Somalia, UNFPA Population Estimation Survey 2014 — pre-war 18-region
+  // basis; no government census has been held since 1975, so basis is
+  // "estimate" throughout.
+  "SO-NU": { population: 392698, year: 2014, basis: "estimate" }, // Nugal
+  "SO-MU": { population: 717863, year: 2014, basis: "estimate" }, // Mudug
+  "SO-GA": { population: 569434, year: 2014, basis: "estimate" }, // Galguduud
+  "SO-HI": { population: 520685, year: 2014, basis: "estimate" }, // Hiran
+  "SO-BK": { population: 367226, year: 2014, basis: "estimate" }, // Bakool
+  "SO-GE": { population: 508405, year: 2014, basis: "estimate" }, // Gedo
+  "SO-BR": { population: 719512, year: 2014, basis: "estimate" }, // Bari
+  "SO-JH": { population: 489307, year: 2014, basis: "estimate" }, // Lower Juba
+  "SO-JD": { population: 362921, year: 2014, basis: "estimate" }, // Middle Juba
+  "SO-SH": { population: 1202219, year: 2014, basis: "estimate" }, // Lower Shebelle
+  "SO-BN": { population: 1650227, year: 2014, basis: "estimate" }, // Banaadir
+  "SO-SD": { population: 516036, year: 2014, basis: "estimate" }, // Middle Shebelle
+  "SO-BY": { population: 792182, year: 2014, basis: "estimate" }, // Bay
+
+  // Sudan, 2008 Fifth Population Census (CBS Sudan). SD-DE (East Darfur) and
+  // SD-DC (Central Darfur) omitted — both states were created in 2012 from
+  // South/West Darfur and did not exist as separate units in 2008; SD-GK
+  // (West Kordofan) and SD-DS (South Darfur) below are 2008-era figures
+  // retrofitted onto states later split, per the source's own documentation.
+  "SD-KH": { population: 5274321, year: 2008, basis: "census" }, // Khartoum
+  "SD-GZ": { population: 3575280, year: 2008, basis: "census" }, // Al Jazirah
+  "SD-NW": { population: 1480015, year: 2008, basis: "census" }, // White Nile
+  "SD-NR": { population: 1130412, year: 2008, basis: "census" }, // River Nile
+  "SD-NO": { population: 706055, year: 2008, basis: "census" }, // Northern
+  "SD-RS": { population: 1396097, year: 2008, basis: "census" }, // Red Sea
+  "SD-KA": { population: 1781999, year: 2008, basis: "census" }, // Kassala
+  "SD-GD": { population: 1448591, year: 2008, basis: "census" }, // Al Qadarif
+  "SD-SI": { population: 1285717, year: 2008, basis: "census" }, // Sennar
+  "SD-NB": { population: 832112, year: 2008, basis: "census" }, // Blue Nile
+  "SD-KN": { population: 2920992, year: 2008, basis: "census" }, // North Kordofan
+  "SD-KS": { population: 1406404, year: 2008, basis: "census" }, // South Kordofan
+  "SD-GK": { population: 1665725, year: 2008, basis: "census" }, // West Kordofan
+  "SD-DN": { population: 2113626, year: 2008, basis: "census" }, // North Darfur
+  "SD-DW": { population: 1264043, year: 2008, basis: "census" }, // West Soudan (West Darfur)
+  "SD-DS": { population: 4093594, year: 2008, basis: "census" }, // South Darfur
+
+  // Mauritania, ANSADE recensement 2023-12-25 (checksum exact: sum 4,927,530
+  // against published national total 4,927,532)
+  "MR-01": { population: 625643, year: 2023, basis: "census" }, // Hodh Ech Chargui
+  "MR-02": { population: 403089, year: 2023, basis: "census" }, // Hodh El Gharbi
+  "MR-03": { population: 451804, year: 2023, basis: "census" }, // Assaba
+  "MR-04": { population: 442490, year: 2023, basis: "census" }, // Gorgol
+  "MR-05": { population: 391310, year: 2023, basis: "census" }, // Brakna
+  "MR-06": { population: 323903, year: 2023, basis: "census" }, // Trarza
+  "MR-07": { population: 71623, year: 2023, basis: "census" }, // Adrar
+  "MR-08": { population: 184459, year: 2023, basis: "census" }, // Dakhlet Nouadhibou
+  "MR-09": { population: 114760, year: 2023, basis: "census" }, // Tagant
+  "MR-10": { population: 363075, year: 2023, basis: "census" }, // Guidimaka
+  "MR-11": { population: 79129, year: 2023, basis: "census" }, // Tiris Zemmour
+  "MR-12": { population: 29484, year: 2023, basis: "census" }, // Inchiri
+  "MR-NKC": { population: 1446761, year: 2023, basis: "census" }, // Nouakchott
+
+  // Gambia, Gambia Bureau of Statistics 2013 Population and Housing Census
+  // (checksum exact against the national total 1,857,181)
+  "GM-B": { population: 31054, year: 2013, basis: "census" }, // Banjul
+  "GM-W": { population: 688744, year: 2013, basis: "census" }, // West Coast
+  "GM-L": { population: 81042, year: 2013, basis: "census" }, // Lower River
+  "GM-N": { population: 220080, year: 2013, basis: "census" }, // North Bank
+  "GM-M": { population: 221907, year: 2013, basis: "census" }, // Central River (Kuntaur + Janjanbureh LGAs)
+  "GM-U": { population: 237220, year: 2013, basis: "census" }, // Upper River
+
+  // Mauritius, Statistics Mauritius / Central Statistical Office, 2022 census.
+  // The 9 mainland districts sum to 1,189,493 vs. the official island total
+  // of 1,191,280 — a small (~0.15%) unreconciled gap; Rodrigues and Agalega
+  // are taken directly from the official press release. The 4 city codes
+  // (MU-BR/QB/VP/CU) are not broken out in any source found and are omitted.
+  "MU-PL": { population: 106332, year: 2022, basis: "census" }, // Port Louis
+  "MU-PA": { population: 140856, year: 2022, basis: "census" }, // Pamplemousses
+  "MU-RR": { population: 111195, year: 2022, basis: "census" }, // Rivière du Rempart
+  "MU-FL": { population: 138529, year: 2022, basis: "census" }, // Flacq
+  "MU-GP": { population: 110783, year: 2022, basis: "census" }, // Grand Port
+  "MU-SA": { population: 67779, year: 2022, basis: "census" }, // Savanne
+  "MU-PW": { population: 340780, year: 2022, basis: "census" }, // Plaines Wilhems
+  "MU-MO": { population: 85538, year: 2022, basis: "census" }, // Moka
+  "MU-BL": { population: 87701, year: 2022, basis: "census" }, // Rivière Noire
+  "MU-RO": { population: 43650, year: 2022, basis: "census" }, // Rodrigues
+  "MU-AG": { population: 330, year: 2022, basis: "census" }, // Agaléga
+
+  // Botswana, Statistics Botswana 2022 PHC Preliminary Results. 6 of these 15
+  // are sums of official census-district components per Statistics
+  // Botswana's own reconciliation notes (Appendix 3); total under-counts the
+  // true national figure (2,346,179) by ~16,500 — gap not resolved.
+  "BW-GA": { population: 244107, year: 2022, basis: "census" }, // Gaborone
+  "BW-FR": { population: 102444, year: 2022, basis: "census" }, // Francistown
+  "BW-LO": { population: 29457, year: 2022, basis: "census" }, // Lobatse
+  "BW-SP": { population: 41839, year: 2022, basis: "census" }, // Selebi-Phikwe
+  "BW-JW": { population: 18576, year: 2022, basis: "census" }, // Jwaneng
+  "BW-ST": { population: 2901, year: 2022, basis: "census" }, // Sowa
+  "BW-SO": { population: 221968, year: 2022, basis: "census" }, // Southern (Ngwaketse + Barolong + Ngwaketse West)
+  "BW-SE": { population: 111474, year: 2022, basis: "census" }, // South-East
+  "BW-KW": { population: 387703, year: 2022, basis: "census" }, // Kweneng (East + West)
+  "BW-KL": { population: 121411, year: 2022, basis: "census" }, // Kgatleng
+  "BW-CE": { population: 668854, year: 2022, basis: "census" }, // Central
+  "BW-NE": { population: 68910, year: 2022, basis: "census" }, // North-East
+  "BW-NW": { population: 196224, year: 2022, basis: "census" }, // North-West (Ngamiland East + West)
+  "BW-GH": { population: 55884, year: 2022, basis: "census" }, // Ghanzi (Ghanzi + CKGR)
+  "BW-KG": { population: 58375, year: 2022, basis: "census" }, // Kgalagadi (South + North)
+
+  // Zimbabwe, ZIMSTAT 2022 PHC Preliminary Report, Table 1.2 (checksum exact
+  // against the national total 15,178,979)
+  "ZW-BU": { population: 665940, year: 2022, basis: "census" }, // Bulawayo
+  "ZW-MA": { population: 2037762, year: 2022, basis: "census" }, // Manicaland
+  "ZW-MC": { population: 1384891, year: 2022, basis: "census" }, // Mashonaland Central
+  "ZW-ME": { population: 1731181, year: 2022, basis: "census" }, // Mashonaland East
+  "ZW-MW": { population: 1893578, year: 2022, basis: "census" }, // Mashonaland West
+  "ZW-MN": { population: 827626, year: 2022, basis: "census" }, // Matabeleland North
+  "ZW-MS": { population: 760345, year: 2022, basis: "census" }, // Matabeleland South
+  "ZW-MI": { population: 1811908, year: 2022, basis: "census" }, // Midlands
+  "ZW-MV": { population: 1638539, year: 2022, basis: "census" }, // Masvingo
+  "ZW-HA": { population: 2427209, year: 2022, basis: "census" }, // Harare
+
+  // Djibouti, INSTAD RGPH-3 2024-05-20 (checksum exact against the national
+  // total 1,066,809)
+  "DJ-DJ": { population: 767250, year: 2024, basis: "census" }, // Djibouti (city/region)
+  "DJ-AS": { population: 76414, year: 2024, basis: "census" }, // Ali Sabieh
+  "DJ-AR": { population: 48922, year: 2024, basis: "census" }, // Arta
+  "DJ-DI": { population: 66196, year: 2024, basis: "census" }, // Dikhil
+  "DJ-TA": { population: 60645, year: 2024, basis: "census" }, // Tadjourah
+  "DJ-OB": { population: 47382, year: 2024, basis: "census" }, // Obock
+
+  // Azerbaijan, State Statistical Committee 2019 census. AZ-CAB (Jabrayil)
+  // omitted — the district was occupied/depopulated until liberated Nov 2020
+  // and has no official published population figure during resettlement.
+  "AZ-TAR": { population: 73627, year: 2019, basis: "census" }, // Tartar
+  "AZ-BAR": { population: 182633, year: 2019, basis: "census" }, // Barda
+  "AZ-KUR": { population: 111483, year: 2019, basis: "census" }, // Kurdamir
+  "AZ-AGS": { population: 103267, year: 2019, basis: "census" }, // Agdash
+  "AZ-CAL": { population: 207565, year: 2019, basis: "census" }, // Jalilabad
+  "AZ-IMI": { population: 129259, year: 2019, basis: "census" }, // Imishli
+  "AZ-FUZ": { population: 63582, year: 2019, basis: "census" }, // Fuzuli
+  "AZ-SIY": { population: 40896, year: 2019, basis: "census" }, // Siyazan
+  "AZ-DAS": { population: 33797, year: 2019, basis: "census" }, // Dashkasan
+  "AZ-KAN": { population: 32621, year: 2019, basis: "census" }, // Kangarli
+  "AZ-AGU": { population: 77712, year: 2019, basis: "census" }, // Agsu
+  "AZ-TOV": { population: 164119, year: 2019, basis: "census" }, // Tovuz
+
+  // Kuwait, Central Statistical Office 2021 census (registered population, 30 June 2021)
+  "KW-JA": { population: 566861, year: 2021, basis: "census" }, // Al Jahra
+  "KW-MU": { population: 279666, year: 2021, basis: "census" }, // Mubarak Al-Kabeer
+  "KW-HA": { population: 926170, year: 2021, basis: "census" }, // Hawally
+  "KW-KU": { population: 574839, year: 2021, basis: "census" }, // Capital
+  "KW-FA": { population: 1110560, year: 2021, basis: "census" }, // Al Farwaniyah
+
+  // Jordan, Department of Statistics, General Population and Housing Census
+  // 2015 (census date 30 Nov 2015)
+  "JO-IR": { population: 1770158, year: 2015, basis: "census" }, // Irbid
+  "JO-AT": { population: 96291, year: 2015, basis: "census" }, // Tafilah
+  "JO-AQ": { population: 188160, year: 2015, basis: "census" }, // Aqaba
+  "JO-AZ": { population: 1364878, year: 2015, basis: "census" }, // Zarqa
+
+  // Lebanon, Ministry of Public Health / UNHCR / Lebanese Palestinian
+  // Dialogue Committee 2017 composite estimate — same source pattern already
+  // used for the other bundled Lebanon entries (CAS has not run a full census since 1932)
+  "LB-AS": { population: 790951, year: 2017, basis: "estimate" }, // North
+  "LB-BA": { population: 433249, year: 2017, basis: "estimate" }, // Beirut
+
+  // Malaysia, Department of Statistics Malaysia, Census 2020 (MyCensus 2020)
+  "MY-08": { population: 2611600, year: 2020, basis: "census" }, // Perak
+  "MY-06": { population: 1750100, year: 2020, basis: "census" }, // Pahang
+
+  // Philippines, Philippine Statistics Authority 2024 Census of Population (POPCEN)
+  "PH-BCD": { population: 624787, year: 2024, basis: "census" }, // Bacolod
+  "PH-MDE": { population: 364482, year: 2024, basis: "census" }, // Mandaue
+  "PH-LAP": { population: 497813, year: 2024, basis: "census" }, // Lapu-Lapu
+  "PH-MNL": { population: 14001751, year: 2024, basis: "census" }, // Metro Manila (as of 1 July 2024)
+
+  // Uzbekistan, State Statistics Committee (Stat.uz), permanent population as of 1 January 2024
+  "UZ-SI": { population: 914000, year: 2024, basis: "estimate" }, // Sirdaryo
+  "UZ-SU": { population: 2877100, year: 2024, basis: "estimate" }, // Surxondaryo
+
+  // North Macedonia, State Statistical Office
+  "MK-29": { population: 44844, year: 2021, basis: "census" }, // Gjorče Petrov
+  "MK-15": { population: 1322, year: 2002, basis: "census" }, // Vraneštica (dissolved into Kičevo Municipality in 2013; no later count exists)
+  "MK-20": { population: 3233, year: 2021, basis: "census" }, // Gradsko
+
+  // Portugal, Instituto Nacional de Estatística, Census 2021 (21 March 2021)
+  "PT-02": { population: 144401, year: 2021, basis: "census" }, // Beja
+  "PT-11": { population: 2275385, year: 2021, basis: "census" }, // Lisbon
+  "PT-13": { population: 1785405, year: 2021, basis: "census" }, // Porto
+
+  // Saint Helena, Ascension and Tristan da Cunha, St Helena Government
+  // Statistics Office 2021 census
+  "SH-HL": { population: 4439, year: 2021, basis: "census" }, // Saint Helena (7 Feb 2021)
+  "SH-AC": { population: 1023, year: 2021, basis: "census" }, // Ascension (March 2021)
+  "SH-TA": { population: 260, year: 2021, basis: "census" }, // Tristan da Cunha (March 2021)
 };
 
 async function fetchByQid(code, qid) {
