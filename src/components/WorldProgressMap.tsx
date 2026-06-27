@@ -198,19 +198,27 @@ const FlagDefs = memo(function FlagDefs({
   flagOverlay,
   flagPolygonsById,
   geographies,
+  territoryParent,
 }: {
   flagOverlay: ReadonlyMap<string, string>;
   flagPolygonsById: Map<string, FlagPoly[]>;
   geographies: GeoFeature[];
+  territoryParent?: Readonly<Record<string, string>>;
 }) {
   return (
     <defs>
       {geographies.map((geo) => {
         const alpha2 = toIsoAlpha2(geo.id);
-        if (!alpha2 || !flagOverlay.has(alpha2)) return null;
+        if (!alpha2) return null;
+        // Non-disputed territories (Greenland, Puerto Rico, …) have no flag
+        // of their own in the overlay map — they show their administering
+        // country's flag, the same resolution selectable.territoryParent
+        // already applies to clicks/hover (see handlePathClick above).
+        const flagCode = territoryParent?.[alpha2] ?? alpha2;
+        if (!flagOverlay.has(flagCode)) return null;
         const polys = flagPolygonsById.get(alpha2);
         if (!polys) return null;
-        const flagUrl = flagOverlay.get(alpha2)!;
+        const flagUrl = flagOverlay.get(flagCode)!;
         return polys.map((poly, i) => (
           // patternUnits="userSpaceOnUse" keeps x/y in the referencing
           // element's coordinate system — same reason clipPathUnits was set
@@ -245,18 +253,22 @@ const FlagImages = memo(function FlagImages({
   geographies,
   selectedCode,
   highlightCodes,
+  territoryParent,
 }: {
   flagOverlay: ReadonlyMap<string, string>;
   flagPolygonsById: Map<string, FlagPoly[]>;
   geographies: GeoFeature[];
   selectedCode: string | null;
   highlightCodes: ReadonlySet<string> | null;
+  territoryParent?: Readonly<Record<string, string>>;
 }) {
   return (
     <>
       {geographies.map((geo) => {
         const alpha2 = toIsoAlpha2(geo.id);
-        if (!alpha2 || !flagOverlay.has(alpha2)) return null;
+        if (!alpha2) return null;
+        const flagCode = territoryParent?.[alpha2] ?? alpha2;
+        if (!flagOverlay.has(flagCode)) return null;
         const polys = flagPolygonsById.get(alpha2);
         if (!polys) return null;
         const isSelected =
@@ -782,6 +794,7 @@ export function WorldProgressMap({
               flagOverlay={flagOverlay}
               flagPolygonsById={flagPolygonsById}
               geographies={geographies}
+              territoryParent={selectable?.territoryParent}
             />
           )}
           <g transform={zoom.transform}>
@@ -898,6 +911,7 @@ export function WorldProgressMap({
                     geographies={geographies}
                     selectedCode={selectedCode}
                     highlightCodes={highlightCodes}
+                    territoryParent={selectable?.territoryParent}
                   />
                 )}
               </g>
