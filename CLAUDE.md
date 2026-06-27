@@ -743,6 +743,48 @@ division set from `getPlayableSubdivisions()`. Verify in the running app that a 
 country (Afghanistan) is absent from the picker and that a listed country's "N flags" count
 matches the number of questions the game then asks.
 
+## Modals with a text input must blur it before closing — hard rule, do not override without approval
+
+**On mobile WebKit/Chrome, a stuck "keyboard accessory toolbar" (autofill field-navigation
+chevrons, voice input, hide-keyboard) can float over the page, overlapping whatever is scrolled
+underneath — including our own fixed `.bottom-nav` — if a focused text input is removed from the
+DOM (a modal closing/unmounting) before the browser has processed a blur.** This is what a user
+reported as "the bottom keeps showing a bug when users scroll": after using the country search
+(`CountryDropdown`) or the profile picker (`ProfilePickerModal`), the OS's leftover keyboard
+toolbar appeared stacked above the app's bottom-nav while scrolling the flag grid.
+
+### The fix — `blurActiveElementThenRun` in `src/lib/dismissKeyboard.ts`
+
+Calling `.blur()` on the focused input **synchronously, before** the React state update that
+unmounts it, gives the browser a clean signal to dismiss the toolbar; deferring the actual state
+update by one tick (`setTimeout(fn, 0)`) gives it time to do so. `document.activeElement` being
+implicitly blurred by node removal (the old behaviour) is too late — by then the toolbar has
+already detached from a live input.
+
+### Rules
+
+1. **Every modal/overlay that contains a `text`/`search` input MUST close exclusively through a
+   handler that calls `blurActiveElementThenRun(...)`** — never call the modal's `setOpen`/
+   `setModalOpen`/`onClose` directly from a click handler, backdrop click, Escape-key handler, or
+   "select an option" handler while that input could still be focused. This applies today to
+   `CountryDropdown.tsx`, `SubdivisionDropdown.tsx` (their mobile search modal) and
+   `ProfilePickerModal.tsx` (the profile name field in the add/edit views) — see their `closeModal`
+   / `closeAndBlur` helpers for the pattern to copy.
+2. **Any new component that opens a modal/sheet/overlay containing a `text` or `search` input**
+   (now or in the future) must follow the same pattern: wrap every path that can close the modal
+   or navigate away from the view holding the focused input in `blurActiveElementThenRun`.
+3. **Never** revert to calling the raw state setter (`setModalOpen(false)`, `onClose()`,
+   `setView(...)`) from a closing path once it has been wrapped — that reintroduces the exact bug.
+
+### Why this isn't caught by an automated check
+
+The stuck toolbar is an OS/browser-level rendering artifact — headless Chromium (used for the
+mandatory visual-verification checklist) cannot reproduce it, so there is no automated test for
+it. The verification that **is** possible: confirm the modal's input is the focused element while
+open, then confirm focus has moved off it (not just "the modal is gone") immediately after every
+closing action, in the running app or via the dev tools / Playwright `document.activeElement`
+check.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
