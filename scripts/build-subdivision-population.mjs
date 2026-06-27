@@ -1004,6 +1004,199 @@ const MANUAL_VERIFIED_POPULATION = {
   "SH-HL": { population: 4439, year: 2021, basis: "census" }, // Saint Helena (7 Feb 2021)
   "SH-AC": { population: 1023, year: 2021, basis: "census" }, // Ascension (March 2021)
   "SH-TA": { population: 260, year: 2021, basis: "census" }, // Tristan da Cunha (March 2021)
+
+  // Statistics Faroe Islands (Hagstova Føroya), population register, 1 July 2025
+  "DK-FO": { population: 55042, year: 2025, basis: "estimate" }, // Faroe Islands
+  // Statistics Norway (SSB), Population Register of Svalbard, 1 Jan 2026.
+  // Norwegian-administered settlements only (Longyearbyen + Ny-Ålesund) — per project
+  // rule, a subdivision's population follows its parent country's own administrative
+  // count, not a total that includes the Russian-administered Barentsburg/Pyramiden.
+  "NO-21": { population: 2512, year: 2026, basis: "estimate" }, // Svalbard
+  // Central Statistics Office (CSO) Ireland, Census of Population 2022 (3 Apr 2022)
+  "IE-DL": { population: 167084, year: 2022, basis: "census" }, // Donegal
+  // Statistical Office in Katowice / GUS (Statistics Poland), end-2024 estimate.
+  // PL-SL is the pre-2018 ISO 3166-2 code for the same entity as PL-24 (Śląskie).
+  "PL-SL": { population: 4291400, year: 2024, basis: "estimate" }, // Śląskie
+  // State Statistical Office of North Macedonia, Census 2021 (5 Sep 2021)
+  "MK-50": { population: 5042, year: 2021, basis: "census" }, // Mavrovo and Rostuša
+  // TRNC Statistical Institute, 2011 census (4 Dec 2011), via citypopulation.de.
+  // Northern Cyprus is administered by the unrecognised Turkish Republic of
+  // Northern Cyprus; no Republic-of-Cyprus or UN-recognised figure exists for the
+  // territory as actually administered. CY-06~ is the Kyrenia/Girne district
+  // specifically (Cyprus's own district-level view); TR-NC~ is the standalone
+  // disputed entity for the whole TRNC territory shown under Turkey, so it takes
+  // the territory-wide total, not the Kyrenia district figure.
+  "CY-06~": { population: 69163, year: 2011, basis: "census" }, // Kyrenia/Girne district (Northern Cyprus)
+  "TR-NC~": { population: 286257, year: 2011, basis: "census" }, // Turkish Republic of Northern Cyprus (whole territory)
+  // State Statistics Service of Pridnestrovie (PMR), 2015 census, via citypopulation.de.
+  // Transnistria is an unrecognised breakaway region of Moldova; no Moldovan
+  // government figure exists for these districts as actually administered.
+  "MD-CAM": { population: 20542, year: 2015, basis: "census" }, // Camenca (Transnistria)
+  "MD-GRI": { population: 39795, year: 2015, basis: "census" }, // Grigoriopol (Transnistria)
+
+  // Uninhabited — no permanent population (US Fish & Wildlife Service refuges)
+  "UM-67": { population: 0, year: 2005, basis: "estimate" }, // Johnston Atoll (uninhabited since 2005; personnel withdrew May 2005)
+  "UM-86": { population: 0, year: 2024, basis: "estimate" }, // Jarvis Island (never permanently inhabited)
+  "UM-95": { population: 0, year: 2024, basis: "estimate" }, // Palmyra Atoll (never permanently inhabited)
+  // Nauru Bureau of Statistics / PRISM, 2021 census (30 Oct 2021), via citypopulation.de
+  "NR-01": { population: 1258, year: 2021, basis: "census" }, // Aiwo
+  "NR-02": { population: 565, year: 2021, basis: "census" }, // Anabar
+  "NR-03": { population: 795, year: 2021, basis: "census" }, // Anetan
+  "NR-04": { population: 373, year: 2021, basis: "census" }, // Anibare
+  "NR-05": { population: 523, year: 2021, basis: "census" }, // Baiti
+  "NR-06": { population: 845, year: 2021, basis: "census" }, // Boe
+  "NR-07": { population: 969, year: 2021, basis: "census" }, // Buada
+  "NR-08": { population: 1874, year: 2021, basis: "census" }, // Denigomodu
+  "NR-09": { population: 537, year: 2021, basis: "census" }, // Ewa
+  "NR-10": { population: 276, year: 2021, basis: "census" }, // Ijuw
+  "NR-11": { population: 1797, year: 2021, basis: "census" }, // Meneng
+  "NR-12": { population: 724, year: 2021, basis: "census" }, // Nibok
+  "NR-13": { population: 341, year: 2021, basis: "census" }, // Uaboe
+  "NR-14": { population: 803, year: 2021, basis: "census" }, // Yaren
+  // Palau Bureau of Budget & Planning / Office of Planning & Statistics, 2020 census,
+  // via citypopulation.de
+  "PW-002": { population: 363, year: 2020, basis: "census" }, // Aimeliik
+  "PW-004": { population: 2529, year: 2020, basis: "census" }, // Airai
+  "PW-010": { population: 114, year: 2020, basis: "census" }, // Angaur
+  "PW-050": { population: 39, year: 2020, basis: "census" }, // Hatohobei
+  "PW-100": { population: 41, year: 2020, basis: "census" }, // Kayangel
+  "PW-150": { population: 11199, year: 2020, basis: "census" }, // Koror
+  "PW-212": { population: 318, year: 2020, basis: "census" }, // Melekeok
+  "PW-214": { population: 396, year: 2020, basis: "census" }, // Ngaraard
+  "PW-218": { population: 384, year: 2020, basis: "census" }, // Ngarchelong
+  "PW-222": { population: 238, year: 2020, basis: "census" }, // Ngardmau
+  "PW-224": { population: 289, year: 2020, basis: "census" }, // Ngatpang
+  "PW-226": { population: 319, year: 2020, basis: "census" }, // Ngchesar
+  "PW-227": { population: 349, year: 2020, basis: "census" }, // Ngeremlengui
+  "PW-228": { population: 312, year: 2020, basis: "census" }, // Ngiwal
+  "PW-350": { population: 470, year: 2020, basis: "census" }, // Peleliu
+  "PW-370": { population: 53, year: 2020, basis: "census" }, // Sonsorol
+  // Papua New Guinea National Statistical Office, 2011 census. Hela and Jiwaka did
+  // not yet exist as separate provinces (created 17 May 2012 from Southern Highlands
+  // and Western Highlands respectively); figures are the territory's 2011 count.
+  "PG-HLA": { population: 249449, year: 2011, basis: "census" }, // Hela
+  "PG-JWK": { population: 343987, year: 2011, basis: "census" }, // Jiwaka
+  "PG-WHM": { population: 362850, year: 2011, basis: "census" }, // Western Highlands (pre-Jiwaka-split boundary)
+  // Fiji Bureau of Statistics, 2017 Population and Housing Census, Release 1
+  "FJ-C": { population: 378148, year: 2017, basis: "census" }, // Central Division
+  "FJ-N": { population: 131918, year: 2017, basis: "census" }, // Northern Division
+  "FJ-W": { population: 337071, year: 2017, basis: "census" }, // Western Division
+  "FJ-R": { population: 1594, year: 2017, basis: "census" }, // Rotuma (on-island population only)
+
+  // National Statistics and Information Authority (NSIA) of Afghanistan, ~2021
+  // population estimate, via UNFPA Afghanistan and IOM PLACES factsheets (Afghanistan
+  // has held no full census since 1979; NSIA figures are projections)
+  "AF-NIM": { population: 186963, year: 2021, basis: "estimate" }, // Nimroz
+  // Oman National Centre for Statistics and Information (NCSI), 2010 census.
+  // Ash Sharqiyah split into North/South governorates on 28 Oct 2011; this is the
+  // sum of the two successor governorates' 2010 figures (162,482 + 188,032), the
+  // last year a figure for the unified pre-split boundary can be derived.
+  "OM-SH": { population: 350514, year: 2010, basis: "census" }, // Ash Sharqiyah (pre-2011-split boundary)
+
+  // Institut National de la Statistique (INS) / BTPR Côte d'Ivoire, RGPH-98 census
+  // (Tableau 1.7), for regions abolished in the 2011/2015 district reorganisation.
+  // Dix-Huit Montagnes (CI-06) is deliberately omitted: the only figure circulating
+  // (936,510) covers the smaller post-2000-split remainder territory, not the
+  // region as it existed at the 1998 census, and would misrepresent it.
+  "CI-03": { population: 929673, year: 1998, basis: "census" }, // Savanes
+  "CI-05": { population: 394761, year: 1998, basis: "census" }, // Moyen-Comoé
+  "CI-07": { population: 476235, year: 1998, basis: "census" }, // Lacs
+  "CI-10": { population: 222446, year: 1998, basis: "census" }, // Denguélé
+  "CI-15": { population: 682021, year: 1998, basis: "census" }, // Sud-Bandama
+  "CI-18": { population: 542992, year: 1998, basis: "census" }, // Fromager
+  "CI-19": { population: 508733, year: 1998, basis: "census" }, // Moyen-Cavally
+  // Instituto Nacional de Estatística de Cabo Verde (INE-CV), RGPH-2021, Tabela 21
+  "CV-CA": { population: 37982, year: 2021, basis: "census" }, // Santa Catarina
+  "CV-CF": { population: 4743, year: 2021, basis: "census" }, // Santa Catarina do Fogo
+  "CV-CR": { population: 25152, year: 2021, basis: "census" }, // Santa Cruz
+  "CV-MO": { population: 8084, year: 2021, basis: "census" }, // Mosteiros
+  "CV-PR": { population: 145378, year: 2021, basis: "census" }, // Praia
+  "CV-RS": { population: 7757, year: 2021, basis: "census" }, // Ribeira Grande de Santiago
+  "CV-SD": { population: 14051, year: 2021, basis: "census" }, // São Domingos
+  "CV-SM": { population: 12966, year: 2021, basis: "census" }, // São Miguel
+  "CV-SO": { population: 6328, year: 2021, basis: "census" }, // São Lourenço dos Órgãos
+  "CV-SS": { population: 7482, year: 2021, basis: "census" }, // São Salvador do Mundo
+  "CV-TA": { population: 16892, year: 2021, basis: "census" }, // Tarrafal
+  // INSTAT-Mali, RGPH-2009 regional result sheets
+  "ML-1": { population: 1996812, year: 2009, basis: "census" }, // Kayes
+  "ML-2": { population: 2418305, year: 2009, basis: "census" }, // Koulikoro
+  // Instituto Nacional de Estadística de Guinea Ecuatorial (INEGE), "Guinea en
+  // Cifras 2016", IV Censo General de Población y Viviendas 2015
+  "GQ-BS": { population: 34627, year: 2015, basis: "census" }, // Bioko Sur
+  "GQ-CS": { population: 141903, year: 2015, basis: "census" }, // Centro Sur
+  "GQ-KN": { population: 183331, year: 2015, basis: "census" }, // Kié-Ntem
+  "GQ-WN": { population: 191383, year: 2015, basis: "census" }, // Wele-Nzas
+
+  // Libya General Census, 1995-08-25, via statoids.com — legacy municipalities
+  // abolished in the 2007/2010 reorganisation into 22 current codes
+  "LY-AJ": { population: 108139, year: 1995, basis: "census" }, // Ajdabiya
+  "LY-GD": { population: 15280, year: 1995, basis: "census" }, // Ghadamis
+  "LY-MZ": { population: 29580, year: 1995, basis: "census" }, // Mizdah
+  "LY-NQ": { population: 166067, year: 1995, basis: "census" }, // An Nuqat al Khams
+  "LY-QB": { population: 58810, year: 1995, basis: "census" }, // Al Qubbah
+  // Haut-Commissariat au Plan (HCP), "La Région en Chiffres", Guelmim regional
+  // office, legal population 2014 (pre-Sept-2015 16-region boundary)
+  "MA-14": { population: 501921, year: 2014, basis: "census" }, // Guelmim-Es Semara
+  // Sudan Central Bureau of Statistics, 2008 census, district figures summed to the
+  // state boundary (per citypopulation.de methodology note) — Central and East
+  // Darfur states were both created in 2012, after the 2008 census
+  "SD-DC": { population: 553515, year: 2008, basis: "census" }, // Central Darfur
+  "SD-DE": { population: 1213784, year: 2008, basis: "census" }, // East Darfur
+  // National Statistics and Evaluation Office, Eritrea, 2005 regional estimate
+  "ER-MA": { population: 675700, year: 2005, basis: "estimate" }, // Maekel
+  "ER-DU": { population: 952100, year: 2005, basis: "estimate" }, // Debub
+  "ER-AN": { population: 549000, year: 2005, basis: "estimate" }, // Anseba
+  // Ethiopian Statistics Service, 2022 projection, via citypopulation.de. Sidama
+  // Region was created 18 June 2020 by splitting from SNNPR.
+  "ET-SI": { population: 4623162, year: 2022, basis: "estimate" }, // Sidama
+
+  // Instituto Nacional de Estadística de Venezuela (INE), XIV Censo Nacional de
+  // Población y Vivienda, 2011
+  "VE-A": { population: 1943901, year: 2011, basis: "census" }, // Distrito Capital
+  "VE-E": { population: 816264, year: 2011, basis: "census" }, // Barinas
+  "VE-L": { population: 828592, year: 2011, basis: "census" }, // Mérida
+  "VE-M": { population: 2675165, year: 2011, basis: "census" }, // Miranda
+  "VE-P": { population: 876496, year: 2011, basis: "census" }, // Portuguesa
+  "VE-S": { population: 1168908, year: 2011, basis: "census" }, // Táchira
+  "VE-T": { population: 686367, year: 2011, basis: "census" }, // Trujillo
+  "VE-V": { population: 3704404, year: 2011, basis: "census" }, // Zulia
+  "VE-X": { population: 352920, year: 2011, basis: "census" }, // Vargas/La Guaira
+  // Algemeen Bureau voor de Statistiek (Suriname), Achtste Volks- en Woningtelling,
+  // reference date 13 August 2012
+  "SR-BR": { population: 15909, year: 2012, basis: "census" }, // Brokopondo
+  "SR-CM": { population: 31420, year: 2012, basis: "census" }, // Commewijne
+  "SR-CR": { population: 3391, year: 2012, basis: "census" }, // Coronie
+  "SR-NI": { population: 34233, year: 2012, basis: "census" }, // Nickerie
+  "SR-PR": { population: 24700, year: 2012, basis: "census" }, // Para
+  "SR-SA": { population: 17480, year: 2012, basis: "census" }, // Saramacca
+  // MX-DIF is the pre-2016 ISO 3166-2 code for the same entity as MX-CMX (Mexico
+  // City, then named "Distrito Federal"); aliases MX-CMX's INEGI 2020 census figure
+  "MX-DIF": { population: 9209944, year: 2020, basis: "census" }, // Mexico City (legacy code)
+
+  // Bermuda Government, 2016 Census Parish Profile (20 May 2016)
+  "BM-SG": { population: 5659, year: 2016, basis: "census" }, // Saint George's Parish
+  // Bahamas Department of Statistics, 2010 census, via citypopulation.de
+  "BS-BP": { population: 414, year: 2010, basis: "census" }, // Black Point
+  "BS-MC": { population: 892, year: 2010, basis: "census" }, // Mangrove Cay
+  "BS-CE": { population: 2363, year: 2010, basis: "census" }, // Central Eleuthera
+  "BS-MI": { population: 593, year: 2010, basis: "census" }, // Moore's Island
+  "BS-CO": { population: 9196, year: 2010, basis: "census" }, // Central Abaco
+  // Uninhabited — no permanent population (Redonda Annexation Act; abandoned
+  // mining camp, last occupied ~1930. Saint Anthony and Saint Georges parishes lie
+  // entirely within Montserrat's volcanic exclusion zone, evacuated since 1995-97)
+  "AG-11": { population: 0, year: 2011, basis: "estimate" }, // Redonda
+  "MS-A": { population: 0, year: 2011, basis: "estimate" }, // Saint Anthony
+  "MS-G": { population: 0, year: 2011, basis: "estimate" }, // Saint Georges
+  // Montserrat Statistics Department, 2011 Population & Housing Census. The census
+  // tabulates 22 enumeration districts and the island's entire surveyed population
+  // (4,922) by geographic region, all of which lie within Saint Peter parish — the
+  // other two parishes (Saint Anthony, Saint Georges) are uninhabited exclusion zone.
+  "MS-P": { population: 4922, year: 2011, basis: "census" }, // Saint Peter
+  // Trinidad and Tobago Central Statistical Office (CSO), 2011 Population and
+  // Housing Census Community Register — sum of Saint Andrew, Saint David and Saint
+  // Patrick parishes. TT-WTO was deleted from ISO 3166-2 in 2015 (replaced by the
+  // single ward TT-TOB) but the figure remains a real, sourced 2011 count.
+  "TT-WTO": { population: 41829, year: 2011, basis: "census" }, // Western Tobago (legacy code)
 };
 
 async function fetchByQid(code, qid) {
