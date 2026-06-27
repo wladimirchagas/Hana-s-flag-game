@@ -58,6 +58,13 @@ function getSubdivCode(feature: SubdivisionGeoFeature): string {
 
 type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
 
+// Pattern-tile approach (matches WorldProgressMap's FlagDefs/FlagImages) —
+// the flag image is tiled into a pattern sized to each polygon ring's own
+// bbox and the ring's path is filled with that pattern. preserveAspectRatio
+// "xMidYMid meet" means each tile shows the flag's full, undistorted
+// proportions (never cropped) — important given how carefully this project
+// sources/verifies real-world flag aspect ratios. A tall/irregular division
+// shape just repeats the flag tile rather than stretching or cropping it.
 const FlagDefsSubdiv = memo(function FlagDefsSubdiv({
   flagOverlay,
   flagPolygonsById,
@@ -74,16 +81,27 @@ const FlagDefsSubdiv = memo(function FlagDefsSubdiv({
         if (!code || !flagOverlay.has(code)) return null;
         const polys = flagPolygonsById.get(code);
         if (!polys) return null;
-        // Sanitize the code for use as an XML ID
+        const flagUrl = flagOverlay.get(code)!;
         const safeId = code.replace(/[^a-zA-Z0-9_-]/g, "_");
-        return polys.map((_, i) => (
-          <clipPath
-            key={`sdcp-${idx}-${i}`}
-            id={`sdm-fcp-${safeId}-${i}`}
-            clipPathUnits="userSpaceOnUse"
+        return polys.map((poly, i) => (
+          <pattern
+            key={`sdfp-${idx}-${i}`}
+            id={`sdm-fp-${safeId}-${i}`}
+            x={poly.x}
+            y={poly.y}
+            width={poly.w}
+            height={poly.h}
+            patternUnits="userSpaceOnUse"
           >
-            <path d={flagPolygonsById.get(code)![i]!.path} />
-          </clipPath>
+            <image
+              href={flagUrl}
+              x={0}
+              y={0}
+              width={poly.w}
+              height={poly.h}
+              preserveAspectRatio="xMidYMid meet"
+            />
+          </pattern>
         ));
       })}
     </defs>
@@ -105,23 +123,16 @@ const FlagImagesSubdiv = memo(function FlagImagesSubdiv({
     <>
       {features.map((feat, idx) => {
         const code = getSubdivCode(feat);
-        if (!code) return null;
-        const flagUrl = flagOverlay.get(code);
-        if (!flagUrl) return null;
+        if (!code || !flagOverlay.has(code)) return null;
         const polys = flagPolygonsById.get(code);
         if (!polys) return null;
         const isSelected = code === selectedCode;
         const safeId = code.replace(/[^a-zA-Z0-9_-]/g, "_");
         return polys.map((poly, i) => (
-          <image
+          <path
             key={`sdimg-${idx}-${i}`}
-            href={flagUrl}
-            x={poly.x}
-            y={poly.y}
-            width={poly.w}
-            height={poly.h}
-            clipPath={`url(#sdm-fcp-${safeId}-${i})`}
-            preserveAspectRatio="xMidYMid slice"
+            d={poly.path}
+            fill={`url(#sdm-fp-${safeId}-${i})`}
             opacity={isSelected ? 0.35 : 1}
             style={{ pointerEvents: "none" }}
           />
@@ -150,6 +161,9 @@ type Props = {
   disabled?: boolean;
   countryResults?: Record<string, "correct" | "wrong">;
   countryCode?: string;
+  /** Optional extra controls rendered after the +/-/⟲ zoom buttons (e.g. the
+   *  flag-overlay toggle in Learn mode). Matches WorldProgressMap's prop. */
+  extraControls?: React.ReactNode;
 };
 
 export function SubdivisionMap({
@@ -161,6 +175,7 @@ export function SubdivisionMap({
   onConfirm,
   onHover,
   disabled = false,
+  extraControls,
   countryResults = {},
   countryCode,
 }: Props) {
@@ -291,15 +306,15 @@ export function SubdivisionMap({
           const bh = b[1][1] - b[0][1];
           if (bw <= 0 || bh <= 0) continue;
           if (bw / bh > 8 && bh < 20) continue;
-          const geoC = geoCentroid(pf as never);
-          const svgC = projection(geoC);
-          if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
           const imgH = Math.max(bh, 20);
           const imgW = imgH * 1.5;
+          // Anchor at bbox top-left, like WorldProgressMap, so the pattern
+          // tile aligns with the division's top/bottom edges — tall/odd
+          // shapes tile the flag rather than stretching or cropping it.
           polys.push({
             path: pd,
-            x: svgC[0] - imgW / 2,
-            y: svgC[1] - imgH / 2,
+            x: b[0][0],
+            y: b[0][1],
             w: imgW,
             h: imgH,
           });
@@ -622,6 +637,7 @@ export function SubdivisionMap({
           >
             ⟲
           </button>
+          {extraControls}
         </div>
       </div>
     </section>

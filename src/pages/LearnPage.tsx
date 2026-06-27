@@ -42,6 +42,7 @@ import {
   type Era,
 } from "../lib/historicalEras";
 import { subdivisionFlagUrl, fetchMergedSubdivisionGeo } from "../api/subdivisions";
+import { getPlayableSubdivisions } from "../lib/playableSubdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { UNOFFICIAL_SUBDIV_NOTES } from "../lib/unofficialSubdivFlags";
 import { DISPUTED_SUBDIV_NOTES } from "../lib/disputedSubdivisions";
@@ -712,6 +713,22 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, showFlagMap, flagEntries, baseUrl]);
 
+  // Flag overlay for the sub-national division map: maps subdivision ISO
+  // code → flag URL. Built from getPlayableSubdivisions so the overlay is
+  // exactly the set the Sub-national flags game/grid would quiz on — this
+  // already excludes disputed-hierarchy children (their landmass redirects
+  // to a parent subdivision, so it shows the parent's highlight colour but
+  // no flag of its own) and any code with a suppressed/missing flag (which
+  // must render with no flag at all, never the parent country's flag).
+  const subdivisionFlagOverlay = useMemo(() => {
+    if (!showFlagMap || !subdivisionCountry) return null;
+    const m = new Map<string, string>();
+    for (const d of getPlayableSubdivisions(subdivisionCountry.code)) {
+      const url = subdivisionFlagUrl(d.code);
+      if (url) m.set(d.code, url);
+    }
+    return m;
+  }, [showFlagMap, subdivisionCountry]);
 
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
   // component is not bypassed when unrelated state (selected, hovered, …)
@@ -765,6 +782,28 @@ export default function LearnPage() {
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap],
+  );
+
+  // Leaner control set for the subdivision map: just the flag-overlay
+  // toggle, reusing the same showFlagMap state as the world map (so toggling
+  // it on the world map and then drilling into a country keeps it on, and
+  // vice versa). SubdivisionMap has no rotation/view-centre controls.
+  const subdivisionMapExtraControls = useMemo(
+    () => (
+      <>
+        <hr className="world-map__zoom-divider" />
+        <button
+          type="button"
+          className={`world-map__zoom-btn${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+          onClick={toggleFlagMap}
+          aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+          title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+        >
+          🚩
+        </button>
+      </>
+    ),
+    [showFlagMap, toggleFlagMap],
   );
 
   const flagUrl = display ? selectionFlag(display, baseUrl) : null;
@@ -899,6 +938,8 @@ export default function LearnPage() {
             onHover={undefined}
             disabled={false}
             countryResults={{}}
+            flagOverlay={subdivisionFlagOverlay}
+            extraControls={subdivisionMapExtraControls}
           />
         ) : isModernEra ? (
           <WorldProgressMap
