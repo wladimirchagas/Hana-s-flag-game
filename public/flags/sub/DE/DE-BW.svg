@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600">
-<path stroke="#F9DD16" stroke-width="600" d="m0,600h1300V-300H0"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+	width="500"
+	height="300"
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 500 300">
+	<desc>Civil flag of Baden-Württemberg (black over gold)</desc>
+	<rect width="500" height="300" fill="#F9C700"/>
+	<rect width="500" height="150" fill="#000000"/>
 </svg>
