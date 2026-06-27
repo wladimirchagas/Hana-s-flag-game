@@ -1077,6 +1077,7 @@ const MANUAL_VERIFIED_POPULATION = {
   "PG-HLA": { population: 249449, year: 2011, basis: "census" }, // Hela
   "PG-JWK": { population: 343987, year: 2011, basis: "census" }, // Jiwaka
   "PG-WHM": { population: 362850, year: 2011, basis: "census" }, // Western Highlands (pre-Jiwaka-split boundary)
+  "PG-WPD": { population: 201351, year: 2011, basis: "census" }, // Western
   // Fiji Bureau of Statistics, 2017 Population and Housing Census, Release 1
   "FJ-C": { population: 378148, year: 2017, basis: "census" }, // Central Division
   "FJ-N": { population: 131918, year: 2017, basis: "census" }, // Northern Division
