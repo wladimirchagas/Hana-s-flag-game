@@ -716,10 +716,13 @@ export default function LearnPage() {
   // Flag overlay for the sub-national division map: maps subdivision ISO
   // code → flag URL. Built from getPlayableSubdivisions so the overlay is
   // exactly the set the Sub-national flags game/grid would quiz on — this
-  // already excludes disputed-hierarchy children (their landmass redirects
-  // to a parent subdivision, so it shows the parent's highlight colour but
-  // no flag of its own) and any code with a suppressed/missing flag (which
-  // must render with no flag at all, never the parent country's flag).
+  // already excludes disputed-hierarchy children (e.g. AR-ML~) and any code
+  // with a suppressed/missing flag (which must render with no flag at all,
+  // never the parent country's flag). A hierarchy child's own landmass still
+  // gets a flag tile on the map: SubdivisionMap resolves it to its hierarchy
+  // PARENT's entry in this map (same redirect DISPUTED_TERRITORY_HIERARCHY
+  // already does for clicks and selection highlighting), so it is shown as
+  // part of that subdivision rather than as a flagless gap.
   const subdivisionFlagOverlay = useMemo(() => {
     if (!showFlagMap || !subdivisionCountry) return null;
     const m = new Map<string, string>();

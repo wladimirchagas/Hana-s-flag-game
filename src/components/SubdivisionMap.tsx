@@ -56,6 +56,18 @@ function getSubdivCode(feature: SubdivisionGeoFeature): string {
   );
 }
 
+// Hierarchy rule: a disputed-territory hierarchy child (e.g. AR-ML~) is
+// administratively part of its parent subdivision (AR-V) — never its own
+// standalone entity. The flag overlay must mirror this exactly like
+// getFill()/handlePathClick() already do for selection highlighting and
+// click redirection: the child's OWN landmass is tiled with its PARENT's
+// flag, not left blank and not given a flag of its own. This is generic —
+// it applies to every entry in DISPUTED_TERRITORY_HIERARCHY, not just
+// Argentina/Malvinas.
+function resolveFlagCode(code: string): string {
+  return DISPUTED_TERRITORY_HIERARCHY[code] ?? code;
+}
+
 type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
 
 // Pattern-tile approach (matches WorldProgressMap's FlagDefs/FlagImages) —
@@ -78,10 +90,12 @@ const FlagDefsSubdiv = memo(function FlagDefsSubdiv({
     <defs>
       {features.map((feat, idx) => {
         const code = getSubdivCode(feat);
-        if (!code || !flagOverlay.has(code)) return null;
+        if (!code) return null;
+        const flagCode = resolveFlagCode(code);
+        if (!flagOverlay.has(flagCode)) return null;
         const polys = flagPolygonsById.get(code);
         if (!polys) return null;
-        const flagUrl = flagOverlay.get(code)!;
+        const flagUrl = flagOverlay.get(flagCode)!;
         const safeId = code.replace(/[^a-zA-Z0-9_-]/g, "_");
         return polys.map((poly, i) => (
           <pattern
@@ -123,7 +137,9 @@ const FlagImagesSubdiv = memo(function FlagImagesSubdiv({
     <>
       {features.map((feat, idx) => {
         const code = getSubdivCode(feat);
-        if (!code || !flagOverlay.has(code)) return null;
+        if (!code) return null;
+        const flagCode = resolveFlagCode(code);
+        if (!flagOverlay.has(flagCode)) return null;
         const polys = flagPolygonsById.get(code);
         if (!polys) return null;
         const isSelected = code === selectedCode;
@@ -279,7 +295,7 @@ export function SubdivisionMap({
     if (flagOverlay) {
       for (const feat of geoData.features) {
         const code = getSubdivCode(feat);
-        if (!code || !flagOverlay.has(code)) continue;
+        if (!code || !flagOverlay.has(resolveFlagCode(code))) continue;
         const geom = feat.geometry as {
           type: string;
           coordinates: unknown;
