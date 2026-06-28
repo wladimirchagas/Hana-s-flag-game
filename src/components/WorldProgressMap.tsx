@@ -6,6 +6,7 @@ import countries from "i18n-iso-countries";
 import { useTheme } from "../context/ThemeContext";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { DISPUTED_TERRITORY_CODES } from "../lib/territoryParentMap";
+import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 
 // Countries whose land area is ≤ Denmark (~43,094 km²).  These get the
@@ -187,7 +188,12 @@ const GEO_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 const WIDTH = 960;
 const HEIGHT = 500;
 
-type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
+// `h` is the pattern tile height (the ring's bbox height, floored at 20px). The
+// tile WIDTH is derived per-flag at render time from the flag's true aspect
+// ratio (flagOverlayAspectRatio) — not stored here — so the tile matches the
+// flag's proportions and `preserveAspectRatio="…meet"` fills it with no
+// letterbox gap, letting the tiling cover the whole landmass.
+type FlagPoly = { path: string; x: number; y: number; h: number };
 
 // Defined at module scope so React.memo() works — component type must be
 // stable across renders. Both components depend only on overlay/polygon data
@@ -219,7 +225,12 @@ const FlagDefs = memo(function FlagDefs({
         const polys = flagPolygonsById.get(alpha2);
         if (!polys) return null;
         const flagUrl = flagOverlay.get(flagCode)!;
-        return polys.map((poly, i) => (
+        // Size the tile to the flag's TRUE aspect ratio so it fills exactly
+        // (no letterbox) and the tiling covers the entire landmass.
+        const ratio = flagOverlayAspectRatio(flagUrl);
+        return polys.map((poly, i) => {
+          const tileW = poly.h * ratio;
+          return (
           // patternUnits="userSpaceOnUse" keeps x/y in the referencing
           // element's coordinate system — same reason clipPathUnits was set
           // above (Safari bug, rotation offsets, zoom/flip transforms).
@@ -228,7 +239,7 @@ const FlagDefs = memo(function FlagDefs({
             id={`wm-fp-${alpha2}-${i}`}
             x={poly.x}
             y={poly.y}
-            width={poly.w}
+            width={tileW}
             height={poly.h}
             patternUnits="userSpaceOnUse"
           >
@@ -236,12 +247,13 @@ const FlagDefs = memo(function FlagDefs({
               href={flagUrl}
               x={0}
               y={0}
-              width={poly.w}
+              width={tileW}
               height={poly.h}
               preserveAspectRatio="xMidYMid meet"
             />
           </pattern>
-        ));
+          );
+        });
       })}
     </defs>
   );
@@ -636,10 +648,10 @@ export function WorldProgressMap({
         const svgC = projection(geoC);
         if (!svgC || !isFinite(svgC[0]) || !isFinite(svgC[1])) continue;
         const imgH = Math.max(bh, 20);
-        const imgW = imgH * 1.5;
         // Anchor at bbox top-left so the pattern tile aligns with the country's
-        // top/bottom edges — all flag stripes are visible via tiling.
-        polys.push({ path: pd, x: b[0][0], y: b[0][1], w: imgW, h: imgH });
+        // top/bottom edges — all flag stripes are visible via tiling. The tile
+        // width is derived from the flag's true ratio in FlagDefs (see above).
+        polys.push({ path: pd, x: b[0][0], y: b[0][1], h: imgH });
       }
       if (polys.length > 0) {
         const existing = result.get(alpha2);
