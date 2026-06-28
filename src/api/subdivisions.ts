@@ -174,6 +174,13 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
   "BA-BRC", // Brčko District — file was the Bosnia & Herzegovina national flag
   "NG-IM",  // Imo State — file was the Nigeria national flag
   "NG-TA",  // Taraba State — file was the Nigeria national flag
+  // Bulk-downloaded sub/ files that were blank/degraded (caught by
+  // scripts/check-flag-image-quality.mjs; the bad files were deleted). No
+  // authoritative non-blank source is accessible, so no flag is shown.
+  "NG-AD",  // Adamawa State — amckenna41 CDN file was a near-solid green field
+            // with no emblem; the only Wikimedia files (SVG + JPG) are also
+            // solid-green stubs. A blank flag is wrong — suppress until a real
+            // Adamawa flag can be sourced.
 ]);
 
 // Cache so we only fetch each country once per session.

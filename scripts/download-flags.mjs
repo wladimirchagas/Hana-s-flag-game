@@ -203,7 +203,7 @@ const SUB_NON_SVG_EXT = {
   "SV-AH":"png","SV-CU":"png","SV-PA":"jpg","SV-SM":"png","SV-SO":"png","SV-SS":"png",
   "TH-16":"png","TH-17":"png","TH-23":"png","TH-24":"png","TH-30":"png","TH-31":"png",
   "TH-32":"png","TH-36":"png","TH-37":"png","TH-38":"png","TH-39":"png","TH-40":"png",
-  "TH-44":"png","TH-49":"png","TH-52":"png","TH-58":"png","TH-60":"png","TH-66":"png",
+  "TH-44":"png","TH-49":"png","TH-52":"png","TH-60":"png","TH-66":"png",
   "TH-72":"png","TH-75":"png","TH-86":"png","TH-91":"png","TH-95":"png","TH-S":"png",
   "TT-ARI":"png","TT-CHA":"png","TT-CTT":"png","TT-DMN":"png","TT-MRC":"png","TT-PRT":"png",
   "UY-FD":"png","UY-FS":"png","UY-MA":"png","UY-MO":"png","UY-RV":"png","UY-TA":"png",
@@ -529,6 +529,18 @@ const SUB_CODES = [
 
 const SUB_CDN = "https://cdn.jsdelivr.net/gh/amckenna41/iso3166-flags@main/iso3166-2-flags";
 
+// Subdivision flags where the amckenna41 CDN serves a broken/blank/degraded file
+// (a corrupt thumbnail, a solid-colour stub, etc.). Pinned to an authoritative
+// Wikimedia Commons source so a forced re-download does NOT clobber the good file
+// with the bad CDN one. The file extension is taken from the override URL.
+// Caught by scripts/check-flag-image-quality.mjs — see that script for the bug.
+const SUB_SOURCE_OVERRIDES = {
+  // amckenna41 served a 105×90 blurry thumbnail (not the real flag).
+  "TH-58": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Flag_of_Mae_Hong_Son_Province.svg",
+  // amckenna41 served a 111-byte solid-green field with no emblem.
+  "NG-ZA": "https://upload.wikimedia.org/wikipedia/commons/9/94/Zamfara_flag.png",
+};
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -606,8 +618,11 @@ async function main() {
     for (const key of SUB_CODES) {
       if (onlyCodes && !onlyCodes.includes(key.toUpperCase())) continue;
       const cc  = key.split("-")[0];
-      const ext = SUB_NON_SVG_EXT[key] ?? "svg";
-      const src  = `${SUB_CDN}/${cc}/${key}.${ext}`;
+      const override = SUB_SOURCE_OVERRIDES[key];
+      const ext = override
+        ? override.split(".").pop().toLowerCase()
+        : (SUB_NON_SVG_EXT[key] ?? "svg");
+      const src  = override ?? `${SUB_CDN}/${cc}/${key}.${ext}`;
       const dest = join(SUB_DIR, cc, `${key}.${ext}`);
       const localPath = `flags/sub/${cc}/${key}.${ext}`;
       const result = await downloadOne(dest, src, force);

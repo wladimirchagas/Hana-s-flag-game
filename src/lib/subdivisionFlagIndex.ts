@@ -58,7 +58,7 @@ const NON_SVG_EXT: Record<string, string> = {
   "SS-WR":"png","SV-AH":"png","SV-CU":"png","SV-PA":"jpg","SV-SM":"png","SV-SO":"png","SV-SS":"png",
   "TH-16":"png","TH-17":"png","TH-23":"png","TH-24":"png","TH-30":"png","TH-31":"png","TH-32":"png",
   "TH-36":"png","TH-37":"png","TH-38":"png","TH-39":"png","TH-40":"png","TH-44":"png","TH-49":"png",
-  "TH-52":"png","TH-58":"png","TH-60":"png","TH-66":"png","TH-72":"png","TH-75":"png","TH-86":"png",
+  "TH-52":"png","TH-60":"png","TH-66":"png","TH-72":"png","TH-75":"png","TH-86":"png",
   "TH-91":"png","TH-95":"png","TH-S":"png","TT-CTT":"png","TT-DMN":"png","TT-MRC":"png","TT-PRT":"png",
   "UY-FD":"png","UY-FS":"png","UY-MA":"png","UY-MO":"png","UY-RV":"png","UY-TA":"png","ZA-EC":"png",
   "ZA-FS":"png","ZA-GP":"png","ZA-KZN":"png","ZA-LP":"png","ZA-NC":"png","ZA-NW":"png","ZA-WC":"png",
