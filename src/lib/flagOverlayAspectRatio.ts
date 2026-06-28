@@ -15,16 +15,23 @@ export const DEFAULT_FLAG_OVERLAY_ASPECT_RATIO = 1.5;
  * The overlay sizes each tile to this ratio so the flag fills its tile exactly
  * (with preserveAspectRatio="…meet") and the tiling covers the whole landmass
  * — no letterbox gaps, no distortion, no cropping. The lookup key is the file
- * path after "/flags/" (e.g. "au.svg", "sub/MY/MY-13.svg"), matching how
- * flagOverlayAspectRatios.ts is keyed; anything else (remote flagcdn /
- * historical URLs, jsDelivr CDN fallbacks) returns the default.
+ * path after "/flags/" (e.g. "au.svg", "sub/MY/MY-13.svg") for national /
+ * subdivision flags, and "historical-flags/<file>" for the curated
+ * historical-era flags used by HistoricalMap — matching how
+ * flagOverlayAspectRatios.ts is keyed. Anything else (remote flagcdn URLs,
+ * jsDelivr CDN fallbacks) returns the default.
  *
  * NOTE: this is for the MAP OVERLAY only — it is unrelated to the flag-card
  * aspect-ratio buckets in src/lib/flagAspectRatio.ts.
  */
 export function flagOverlayAspectRatio(url: string | null | undefined): number {
   if (!url) return DEFAULT_FLAG_OVERLAY_ASPECT_RATIO;
-  const m = /\/flags\/(.+)$/.exec(url);
+  // Match either ".../flags/<key>" or ".../historical-flags/<file>". The
+  // "historical-flags" alternative is tried first because "historical-flags"
+  // ends in "flags" but is NOT preceded by "/", so a bare "/flags/" can never
+  // match inside it.
+  const m = /\/(historical-flags|flags)\/(.+)$/.exec(url);
   if (!m) return DEFAULT_FLAG_OVERLAY_ASPECT_RATIO;
-  return FLAG_OVERLAY_ASPECT_RATIOS[m[1]] ?? DEFAULT_FLAG_OVERLAY_ASPECT_RATIO;
+  const key = m[1] === "flags" ? m[2] : `${m[1]}/${m[2]}`;
+  return FLAG_OVERLAY_ASPECT_RATIOS[key] ?? DEFAULT_FLAG_OVERLAY_ASPECT_RATIO;
 }

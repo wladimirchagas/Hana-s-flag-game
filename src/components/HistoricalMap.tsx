@@ -2,6 +2,7 @@ import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
 import { useTheme } from "../context/ThemeContext";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
+import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
 
 /**
  * Renders an era-specific historical world map.
@@ -191,7 +192,12 @@ export const HistoricalMap = memo(function HistoricalMap({
       .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
     const pathFn = geoPath(projection);
-    type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
+    // `h` is the pattern tile height (the ring's bbox height). The tile WIDTH is
+    // derived per-flag at render time from the flag's true aspect ratio
+    // (flagOverlayAspectRatio) so the tile matches the flag's proportions and
+    // `preserveAspectRatio="…meet"` fills it with no letterbox gap — letting the
+    // tiling cover the whole landmass, exactly like WorldProgressMap.
+    type FlagPoly = { path: string; x: number; y: number; h: number };
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
       const name = f.properties?.NAME ?? null;
@@ -212,7 +218,7 @@ export const HistoricalMap = memo(function HistoricalMap({
           if (!pd) continue;
           const b = pathFn.bounds(pf as never);
           if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
-            flagPolys.push({ path: pd, x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] });
+            flagPolys.push({ path: pd, x: b[0][0], y: b[0][1], h: b[1][1] - b[0][1] });
           }
         }
       }
@@ -264,22 +270,47 @@ export const HistoricalMap = memo(function HistoricalMap({
               touchAction: zoom.isZoomed ? "none" : "auto",
             }}
           >
-            {/* Flag clip paths at SVG root — same Safari-transform-bug fix
-                as WorldProgressMap. See that file for the full explanation. */}
+            {/* Flag pattern tiles at SVG root — same approach as
+                WorldProgressMap (see FlagDefs there). Each landmass ring is
+                painted with a <pattern> whose tile is sized to the flag's TRUE
+                aspect ratio, so `preserveAspectRatio="…meet"` fills the tile
+                exactly and the seamless tiling covers the whole landmass with no
+                letterbox gap, no distortion and no cropping. This replaces the
+                old single <image preserveAspectRatio="…slice"> + clipPath, whose
+                "slice" was silently ignored for bundled SVG flags that carry
+                their own preserveAspectRatio — leaving country edges uncovered.
+                patternUnits="userSpaceOnUse" keeps x/y in the referencing
+                element's coordinate system (Safari transform/zoom/flip bug). */}
             {flagOverlay && (
               <defs>
                 {renderedFeatures.map((f) => {
                   if (!f.name) return null;
                   if (!flagOverlay.has(f.name)) return null;
-                  return f.flagPolys.map((poly, i) => (
-                    <clipPath
-                      key={`hm-fcp-${f.idx}-${i}`}
-                      id={`hm-fcp-${f.idx}-${i}`}
-                      clipPathUnits="userSpaceOnUse"
-                    >
-                      <path d={poly.path} />
-                    </clipPath>
-                  ));
+                  const flagUrl = flagOverlay.get(f.name)!;
+                  const ratio = flagOverlayAspectRatio(flagUrl);
+                  return f.flagPolys.map((poly, i) => {
+                    const tileW = poly.h * ratio;
+                    return (
+                      <pattern
+                        key={`hm-fp-${f.idx}-${i}`}
+                        id={`hm-fp-${f.idx}-${i}`}
+                        x={poly.x}
+                        y={poly.y}
+                        width={tileW}
+                        height={poly.h}
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <image
+                          href={flagUrl}
+                          x={0}
+                          y={0}
+                          width={tileW}
+                          height={poly.h}
+                          preserveAspectRatio="xMidYMid meet"
+                        />
+                      </pattern>
+                    );
+                  });
                 })}
               </defs>
             )}
@@ -335,18 +366,16 @@ export const HistoricalMap = memo(function HistoricalMap({
             })}
             {flagOverlay && renderedFeatures.map((f) => {
               if (!f.name || !flagOverlay.has(f.name)) return null;
-              const flagUrl = flagOverlay.get(f.name)!;
               const isHighlighted = f.name === highlightName;
+              // Paint each ring with its flag <pattern>; the ring path itself is
+              // the clip, so the tiled flag covers the landmass exactly. When the
+              // polity is highlighted we drop to 0.35 so the selection colour
+              // underneath shows through (same as WorldProgressMap).
               return f.flagPolys.map((poly, i) => (
-                <image
+                <path
                   key={`hm-fimg-${f.idx}-${i}`}
-                  href={flagUrl}
-                  x={poly.x}
-                  y={poly.y}
-                  width={poly.w}
-                  height={poly.h}
-                  clipPath={`url(#hm-fcp-${f.idx}-${i})`}
-                  preserveAspectRatio="xMidYMid slice"
+                  d={poly.path}
+                  fill={`url(#hm-fp-${f.idx}-${i})`}
                   opacity={isHighlighted ? 0.35 : 1}
                   style={{ pointerEvents: "none" }}
                 />
