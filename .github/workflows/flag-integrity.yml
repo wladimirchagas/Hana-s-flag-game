@@ -12,6 +12,7 @@ on:
       - "scripts/check-flag-proportions.mjs"
       - "scripts/check-parent-flag-collision.mjs"
       - "scripts/check-subdivision-name-collisions.mjs"
+      - "scripts/check-flag-image-quality.mjs"
       - "src/api/subdivisions.ts"
       - "src/lib/subdivisionMeta.ts"
 
@@ -47,3 +48,6 @@ jobs:
 
       - name: Verify no same-name subdivision in another country has a near-identical flag
         run: node scripts/check-subdivision-name-collisions.mjs
+
+      - name: Verify no bundled flag is a degraded thumbnail or near-blank stub
+        run: node scripts/check-flag-image-quality.mjs
