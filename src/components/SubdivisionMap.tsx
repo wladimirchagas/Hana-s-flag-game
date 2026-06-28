@@ -11,6 +11,7 @@ import {
   DISPUTED_TERRITORY_HIERARCHY,
   DISPUTED_HIERARCHY_CHILDREN_OF,
 } from "../lib/disputedSubdivisions";
+import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
 
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -68,7 +69,11 @@ function resolveFlagCode(code: string): string {
   return DISPUTED_TERRITORY_HIERARCHY[code] ?? code;
 }
 
-type FlagPoly = { path: string; x: number; y: number; w: number; h: number };
+// `h` is the pattern tile height (the ring's bbox height, floored at 20px). The
+// tile WIDTH is derived per-flag at render time from the flag's true aspect
+// ratio (flagOverlayAspectRatio) so the tile matches the flag's proportions and
+// `preserveAspectRatio="…meet"` fills it with no letterbox gap.
+type FlagPoly = { path: string; x: number; y: number; h: number };
 
 // Pattern-tile approach (matches WorldProgressMap's FlagDefs/FlagImages) —
 // the flag image is tiled into a pattern sized to each polygon ring's own
@@ -97,13 +102,16 @@ const FlagDefsSubdiv = memo(function FlagDefsSubdiv({
         if (!polys) return null;
         const flagUrl = flagOverlay.get(flagCode)!;
         const safeId = code.replace(/[^a-zA-Z0-9_-]/g, "_");
+        // Size the tile to the flag's TRUE aspect ratio so it fills exactly
+        // (no letterbox) and the tiling covers the entire division landmass.
+        const tileW = (h: number) => h * flagOverlayAspectRatio(flagUrl);
         return polys.map((poly, i) => (
           <pattern
             key={`sdfp-${idx}-${i}`}
             id={`sdm-fp-${safeId}-${i}`}
             x={poly.x}
             y={poly.y}
-            width={poly.w}
+            width={tileW(poly.h)}
             height={poly.h}
             patternUnits="userSpaceOnUse"
           >
@@ -111,7 +119,7 @@ const FlagDefsSubdiv = memo(function FlagDefsSubdiv({
               href={flagUrl}
               x={0}
               y={0}
-              width={poly.w}
+              width={tileW(poly.h)}
               height={poly.h}
               preserveAspectRatio="xMidYMid meet"
             />
@@ -323,15 +331,14 @@ export function SubdivisionMap({
           if (bw <= 0 || bh <= 0) continue;
           if (bw / bh > 8 && bh < 20) continue;
           const imgH = Math.max(bh, 20);
-          const imgW = imgH * 1.5;
           // Anchor at bbox top-left, like WorldProgressMap, so the pattern
           // tile aligns with the division's top/bottom edges — tall/odd
-          // shapes tile the flag rather than stretching or cropping it.
+          // shapes tile the flag rather than stretching or cropping it. The
+          // tile width is derived from the flag's true ratio in FlagDefsSubdiv.
           polys.push({
             path: pd,
             x: b[0][0],
             y: b[0][1],
-            w: imgW,
             h: imgH,
           });
         }
