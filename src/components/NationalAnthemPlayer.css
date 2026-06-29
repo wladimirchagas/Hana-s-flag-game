@@ -308,7 +308,7 @@
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
-  transition: background 200ms ease, color 200ms ease, transform 200ms ease, font-size 200ms ease;
+  color: var(--ink);
   cursor: default;
   display: flex;
   flex-direction: column;
@@ -325,52 +325,6 @@
   font-style: italic;
   opacity: 0.72;
   line-height: 1.3;
-}
-
-.anthem-lyrics__line--past {
-  color: var(--ink-soft);
-  font-size: 0.82rem;
-}
-
-.anthem-lyrics__line--active {
-  background: var(--sky);
-  color: var(--ink-fixed);
-  font-size: 1rem;
-  font-weight: 700;
-  transform: scale(1.03);
-  box-shadow: 0 2px 0 var(--ink);
-}
-
-.anthem-lyrics__line--active .anthem-lyrics__translation {
-  opacity: 0.85;
-}
-
-.anthem-lyrics__line--future {
-  color: var(--ink);
-}
-
-/* === Word-level karaoke highlighting =================================== */
-.anthem-word {
-  display: inline;
-  border-radius: 3px;
-  padding: 0 1px;
-  transition: background 120ms ease, color 120ms ease, font-weight 120ms ease;
-}
-
-.anthem-lyrics__line--active .anthem-word--active {
-  background: var(--coral);
-  color: #fff;
-  font-weight: 800;
-  padding: 0 3px;
-  border-radius: 4px;
-}
-
-.anthem-lyrics__line--active .anthem-word--past {
-  opacity: 0.5;
-}
-
-.anthem-lyrics__line--active .anthem-word--future {
-  opacity: 0.85;
 }
 
 .anthem-lyrics__unavailable,
