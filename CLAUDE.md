@@ -785,6 +785,40 @@ open, then confirm focus has moved off it (not just "the modal is gone") immedia
 closing action, in the running app or via the dev tools / Playwright `document.activeElement`
 check.
 
+## National anthems must autoplay at the best resolution — hard rule, do not override without approval
+
+**When the user opens the National Anthem player (`NationalAnthemPlayer`, used in
+`src/pages/LearnPage.tsx`), the anthem MUST start playing automatically, and YouTube-backed
+anthems MUST request the highest resolution available.** Both behaviours have been implemented and
+have silently regressed before — this rule locks them in.
+
+### Why this rule exists
+
+- **Autoplay:** the player mounts and a YouTube player is created asynchronously. If the user taps
+  "Play" before `onReady` fires, the imperative `play()` call hits a `null` player and the tap is
+  lost; the later `onReady` then runs *outside the user gesture*, where browsers block
+  autoplay-with-sound, so nothing plays. The fix records the intent (`pendingPlayRef`) and replays
+  it in `onReady`.
+- **Resolution:** `setPlaybackQuality('highres')` on its own is a **no-op** on the modern YouTube
+  IFrame API — it was called but never actually forced HD. The player auto-selects quality, so we
+  must request the highest level the player reports.
+
+### Rules — in `src/components/NationalAnthemPlayer.tsx`
+
+1. **Autoplay must survive the load race.** The YouTube `onReady` handler MUST call `playVideo()`
+   when **either** `visibleRef.current` **or** `pendingPlayRef.current` is set, and the imperative
+   `play()` MUST set `pendingPlayRef.current = true` when the player isn't ready yet. Never reduce
+   this back to a plain `if (ytp) ytp.playVideo()` that drops the tap. Keep `autoplay: 1` in
+   `playerVars`.
+2. **Always request the best resolution.** Use the `forceHighestQuality()` helper — which reads
+   `getAvailableQualityLevels()` (ordered highest → lowest) and pins the top level via
+   `setPlaybackQualityRange` + `setPlaybackQuality` — in `onReady`, on the `PLAYING` state change,
+   and in `onPlaybackQualityChange`. Keep `vq: "hd1080"` in `playerVars`. **Never** delete these or
+   revert to a bare `setPlaybackQuality('highres')` call (it does nothing on its own).
+3. **Verify in the running app** (the mandatory visual-verification rule applies): open a country in
+   Learn mode, tap Play, and confirm the anthem starts on its own and the YouTube gear/quality shows
+   the highest level the video offers.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
