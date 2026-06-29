@@ -802,6 +802,11 @@ have silently regressed before — this rule locks them in.
 - **Resolution:** `setPlaybackQuality('highres')` on its own is a **no-op** on the modern YouTube
   IFrame API — it was called but never actually forced HD. The player auto-selects quality, so we
   must request the highest level the player reports.
+- **YouTube failure must never dead-end:** a YouTube embed can fail at runtime — the video was
+  removed (error 100), the owner disabled embedding (101/150), or it is region/VPN-blocked. The
+  player used to show a terminal "YouTube video could not be loaded" message and play nothing. Since
+  194/195 anthems also carry a Wikimedia `wikiFile` (and the resolver can search by name), the player
+  MUST fall back to the Wikimedia audio source instead of dead-ending.
 
 ### Rules — in `src/components/NationalAnthemPlayer.tsx`
 
@@ -815,7 +820,12 @@ have silently regressed before — this rule locks them in.
    `setPlaybackQualityRange` + `setPlaybackQuality` — in `onReady`, on the `PLAYING` state change,
    and in `onPlaybackQualityChange`. Keep `vq: "hd1080"` in `playerVars`. **Never** delete these or
    revert to a bare `setPlaybackQuality('highres')` call (it does nothing on its own).
-3. **Verify in the running app** (the mandatory visual-verification rule applies): open a country in
+3. **YouTube errors must fall back, not dead-end.** The YouTube `onError` handler MUST set the
+   `youtubeFailed` state (which flips `isYoutube` to `false` and re-runs the Wikimedia fetch effect),
+   NOT set a terminal `audioError`. Reset `youtubeFailed` whenever the anthem changes so each new
+   country re-attempts its YouTube embed first. Never revert `onError` to a bare
+   `setAudioError("YouTube video could not be loaded.")` that plays nothing.
+4. **Verify in the running app** (the mandatory visual-verification rule applies): open a country in
    Learn mode, tap Play, and confirm the anthem starts on its own and the YouTube gear/quality shows
    the highest level the video offers.
 
