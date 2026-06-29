@@ -273,7 +273,12 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
     const visibleRef = useRef(visible);
     visibleRef.current = visible;
 
-    const isYoutube = !!(anthem?.youtubeId);
+    // When a YouTube embed fails (removed video, embedding disabled, or a
+    // region/VPN block — the "YouTube video could not be loaded" error), we flip
+    // this so the component falls back to the Wikimedia audio source instead of
+    // dead-ending. Reset whenever the anthem changes.
+    const [youtubeFailed, setYoutubeFailed] = useState(false);
+    const isYoutube = !!(anthem?.youtubeId) && !youtubeFailed;
     const [isPlaying, setIsPlaying] = useState(false);
 
   // Native <audio> element ref (used when URL is MP3/WebM)
@@ -363,6 +368,12 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
   // playback-synced highlighting. The karaoke-style line/word syncing (caption
   // fetching + vocal-onset detection) was removed because it never aligned
   // reliably across all 195 anthems. Do not reintroduce it.
+
+  // Reset the YouTube-failure fallback whenever the anthem changes, so a new
+  // country gets a fresh attempt at its YouTube embed before falling back.
+  useEffect(() => {
+    setYoutubeFailed(false);
+  }, [anthem]);
 
   // Determine whether we'll need ogv.js for the current URL
   const needsOgv = !!audioUrl && OGG_EXT.test(audioUrl) && !_supportsOgg;
@@ -510,8 +521,15 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
               setIsPlaying(false);
             }
           },
-          onError: () => {
-            if (!cancelled) setAudioError("YouTube video could not be loaded.");
+          onError: (err) => {
+            if (cancelled) return;
+            // Removed video (100), embedding disabled (101/150), or a
+            // region/VPN block all surface here. Rather than dead-ending on
+            // "YouTube video could not be loaded", fall back to the Wikimedia
+            // audio source (194/195 anthems have one, and the resolver can also
+            // search by name).
+            console.warn("[anthem] YouTube error", err?.data, "— falling back to Wikimedia audio");
+            setYoutubeFailed(true);
           },
           // If YouTube auto-downgrades the stream, re-request the best level so
           // the anthem keeps playing at the highest resolution available.
