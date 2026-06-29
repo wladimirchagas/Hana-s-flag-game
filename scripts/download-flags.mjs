@@ -588,13 +588,25 @@ async function main() {
 
   const sources = {};
   const counts = { downloaded: 0, skipped: 0, failed: 0 };
-  const failedList = [];
+  // National/territory flags come from a stable, curated source — a failure there
+  // is a real problem and must fail the run. Subdivision flags come from the
+  // third-party amckenna41 CDN, whose file listing churns constantly (files get
+  // renamed/removed upstream); a 404 there just leaves any existing bundled file
+  // untouched, so it is expected drift, not an error. A subdivision download is
+  // only treated as fatal if the file is currently bundled (so we never silently
+  // lose a flag the game actually ships).
+  const failedNational = [];
+  const failedSub = [];
 
-  function tally(code, result, localPath, srcUrl) {
+  function tally(code, result, localPath, srcUrl, { isNational = false, destPath } = {}) {
     sources[localPath] = srcUrl;
     if (result === "downloaded") counts.downloaded++;
     else if (result === "skipped") counts.skipped++;
-    else { counts.failed++; failedList.push(code); }
+    else {
+      counts.failed++;
+      if (isNational || (destPath && existsSync(destPath))) failedNational.push(code);
+      else failedSub.push(code);
+    }
   }
 
   // ---- National + territory flags ----------------------------------------
@@ -608,7 +620,7 @@ async function main() {
       const filename = code.includes("-") ? code.toLowerCase() : code.toLowerCase();
       const dest = join(FLAGS_DIR, `${filename}.svg`);
       const result = await downloadOne(dest, src, force);
-      tally(code, result, `flags/${filename}.svg`, src);
+      tally(code, result, `flags/${filename}.svg`, src, { isNational: true });
       if (result !== "skipped") await new Promise((r) => setTimeout(r, 80));
     }
   }
@@ -626,7 +638,7 @@ async function main() {
       const dest = join(SUB_DIR, cc, `${key}.${ext}`);
       const localPath = `flags/sub/${cc}/${key}.${ext}`;
       const result = await downloadOne(dest, src, force);
-      tally(key, result, localPath, src);
+      tally(key, result, localPath, src, { destPath: dest });
       if (result !== "skipped") await new Promise((r) => setTimeout(r, 60));
     }
   }
@@ -643,8 +655,21 @@ async function main() {
 
   const total = counts.downloaded + counts.skipped + counts.failed;
   console.log(`\nDone: ${total} total | ${counts.downloaded} downloaded | ${counts.skipped} skipped | ${counts.failed} failed`);
-  if (failedList.length > 0) {
-    console.error("Failed:", failedList.join(", "));
+
+  // Non-fatal: third-party subdivision-CDN files that no longer exist upstream.
+  // These are not bundled, so there is nothing to update — just report them.
+  if (failedSub.length > 0) {
+    console.warn(
+      `\nNote: ${failedSub.length} subdivision flag(s) are unavailable from the amckenna41 CDN ` +
+      `(expected upstream churn — none are bundled, so nothing changed):`
+    );
+    console.warn(failedSub.join(", "));
+  }
+
+  // Fatal: a national/territory flag, or a currently-bundled subdivision flag,
+  // failed to download. These come from stable sources / ship with the game.
+  if (failedNational.length > 0) {
+    console.error("\nFailed (must succeed):", failedNational.join(", "));
     process.exit(1);
   }
 }
