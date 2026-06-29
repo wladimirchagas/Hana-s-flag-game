@@ -187,7 +187,35 @@ type YTPlayerInstance = {
   getDuration(): number;
   getPlayerState(): number;
   destroy(): void;
+  // Quality controls. setPlaybackQuality is officially deprecated (YouTube
+  // ultimately auto-selects), but requesting the highest available level still
+  // nudges modern embeds away from the 360p default — see HIGHEST_QUALITY rule.
+  getAvailableQualityLevels?: () => string[];
+  getPlaybackQuality?: () => string;
+  setPlaybackQuality?: (q: string) => void;
+  setPlaybackQualityRange?: (min: string, max: string) => void;
 };
+
+// ── Anthem playback: autoplay + best resolution (HARD RULE) ──────────────────
+// National anthems MUST start playing automatically when the player opens, and
+// MUST request the highest available resolution. Both behaviours are mandated
+// by the "National anthems must autoplay at the best resolution" rule in
+// CLAUDE.md — do not weaken or remove them.
+//
+// `setPlaybackQuality` alone is a no-op on the modern IFrame API, so we ask the
+// player for the levels it actually has (ordered highest → lowest) and pin the
+// top one via both setPlaybackQualityRange and setPlaybackQuality. Combined
+// with the `vq` playerVar this is the most reliable best-effort available.
+function forceHighestQuality(player: YTPlayerInstance): void {
+  try {
+    const levels = player.getAvailableQualityLevels?.() ?? [];
+    const best = levels[0] ?? "highres";
+    player.setPlaybackQualityRange?.(best, best);
+    player.setPlaybackQuality?.(best);
+  } catch (err) {
+    console.warn("[anthem] failed to set quality:", err);
+  }
+}
 
 declare global {
   interface Window {
@@ -202,6 +230,7 @@ declare global {
           onStateChange?: (e: { data: number; target: YTPlayerInstance }) => void;
           onError?: (e: { data: number }) => void;
           onApiChange?: (e: { target: YTPlayerInstance }) => void;
+          onPlaybackQualityChange?: (e: { data: string; target: YTPlayerInstance }) => void;
         };
       }) => YTPlayerInstance;
     };
@@ -392,6 +421,11 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
   const retryCount = useRef(0);
   // Ensures autoplay fires only once per player mount, not on every re-render.
   const autoPlayedRef = useRef(false);
+  // Records a play() intent that arrived before the YouTube player was ready
+  // (fast click after selecting a country). onReady consumes it so the user's
+  // tap still results in autoplay instead of being silently dropped — keeping
+  // the "anthems must autoplay" hard rule working even during the load race.
+  const pendingPlayRef = useRef(false);
 
   useImperativeHandle(ref, () => ({
     play() {
@@ -403,6 +437,9 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
           } catch (e) {
             console.error("[anthem] playVideo failed:", e);
           }
+        } else {
+          // Player not created yet — remember the intent for onReady.
+          pendingPlayRef.current = true;
         }
       } else {
         const player = getActivePlayer();
@@ -711,22 +748,21 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
         videoId: anthem.youtubeId!,
         width: "100%",
         height: "195",
-        playerVars: { rel: 0, modestbranding: 1, autoplay: 1, start: Math.max(0, Math.floor(anthem.youtubeIntroOffset ?? 0)) },
+        // `vq: hd1080` requests the highest resolution at the URL level (the
+        // setPlaybackQuality API is deprecated on its own); `autoplay: 1` is the
+        // first line of defence for the autoplay rule — see CLAUDE.md.
+        playerVars: { rel: 0, modestbranding: 1, autoplay: 1, vq: "hd1080", start: Math.max(0, Math.floor(anthem.youtubeIntroOffset ?? 0)) },
         events: {
           onReady: (e) => {
             if (cancelled) return;
             ytPlayerRef.current = e.target;
             setDuration(e.target.getDuration());
             setIsLoadingAudio(false);
-            try {
-              const targetAny = e.target as any;
-              if (typeof targetAny.setPlaybackQuality === 'function') {
-                targetAny.setPlaybackQuality('highres');
-              }
-            } catch (err) {
-              console.warn("Failed to set quality:", err);
-            }
-            if (visibleRef.current) {
+            forceHighestQuality(e.target);
+            // Autoplay rule: start as soon as the player is ready if the modal
+            // is visible OR a play() tap arrived before the player existed.
+            if (visibleRef.current || pendingPlayRef.current) {
+              pendingPlayRef.current = false;
               e.target.playVideo();
             }
             // Async caption sync — non-blocking, silently falls back to stored timing.
@@ -808,14 +844,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
             const YT_ENDED = 0;
             if (e.data === YT_PLAYING) {
               setIsPlaying(true);
-              try {
-                const targetAny = e.target as any;
-                if (typeof targetAny.setPlaybackQuality === 'function') {
-                  targetAny.setPlaybackQuality('highres');
-                }
-              } catch (err) {
-                console.warn("Failed to set quality on play:", err);
-              }
+              forceHighestQuality(e.target);
               if (ytPollRef.current) clearInterval(ytPollRef.current);
               ytPollRef.current = setInterval(() => {
                 const p = ytPlayerRef.current;
@@ -857,6 +886,12 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
           },
           onError: () => {
             if (!cancelled) setAudioError("YouTube video could not be loaded.");
+          },
+          // If YouTube auto-downgrades the stream, re-request the best level so
+          // the anthem keeps playing at the highest resolution available.
+          onPlaybackQualityChange: (e) => {
+            const best = e.target.getAvailableQualityLevels?.()?.[0];
+            if (best && e.data !== best) forceHighestQuality(e.target);
           },
         },
       });
