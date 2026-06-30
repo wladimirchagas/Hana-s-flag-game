@@ -1658,3 +1658,41 @@
   text-align: center;
 }
 
+
+/* City-overlay marker legend — floats over the top-left of the map when the
+   "Show cities" overlay is on. Explains the star/dot + size iconography. */
+.city-legend {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  max-width: 12rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--surface, #fffaf0) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink, #1a2238) 18%, transparent);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+  color: var(--ink, #1a2238);
+  font-size: 0.66rem;
+  line-height: 1.1;
+  pointer-events: none;
+}
+.city-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.city-legend__glyph {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 640px) {
+  .city-legend {
+    font-size: 0.6rem;
+    max-width: 9.5rem;
+    padding: 0.3rem 0.4rem;
+  }
+}

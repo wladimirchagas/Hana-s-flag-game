@@ -12,6 +12,8 @@ import {
   DISPUTED_HIERARCHY_CHILDREN_OF,
 } from "../lib/disputedSubdivisions";
 import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
+import { CityMarkers, type ScreenCity } from "./CityMarkers";
+import type { PlacedCity } from "../lib/cityRoles";
 
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -178,6 +180,8 @@ type Props = {
   geoData: SubdivisionFeatureCollection | null;
   loading?: boolean;
   flagOverlay?: ReadonlyMap<string, string> | null;
+  /** City markers: national capital(s)/largest + each subdivision's capital/largest. */
+  cityOverlay?: PlacedCity[] | null;
   selectedCode?: string | null;
   onSelect?: (code: string) => void;
   onConfirm?: () => void;
@@ -194,6 +198,7 @@ export function SubdivisionMap({
   geoData,
   loading = false,
   flagOverlay = null,
+  cityOverlay = null,
   selectedCode = null,
   onSelect,
   onConfirm,
@@ -243,12 +248,13 @@ export function SubdivisionMap({
   // showing only metropolitan France). DO NOT re-introduce a `_isTerritory`
   // filter here. Features too small to see at the fitted scale are still made
   // discoverable via the constant-size dot indicators (smallSubdivCodes) below.
-  const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes } = useMemo(() => {
+  const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes, cityBase } = useMemo(() => {
     const empty = {
       pathByIdx: new Map<number, string>(),
       flagPolygonsById: new Map<string, FlagPoly[]>(),
       centroidByCode: new Map<string, [number, number]>(),
       smallSubdivCodes: new Set<string>(),
+      cityBase: [] as { city: PlacedCity; bx: number; by: number }[],
     };
     if (!geoData || geoData.features.length === 0) return empty;
 
@@ -349,10 +355,21 @@ export function SubdivisionMap({
       }
     }
 
-    return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes };
-  // paths and projection bounds only change if the country dataset or flag list changes
+    // Project city markers with the SAME fitted projection so they land on the
+    // correct subdivisions. Rotation isn't used here; zoom is applied per-frame
+    // in the render so markers stay a constant pixel size.
+    const cityBase: { city: PlacedCity; bx: number; by: number }[] = [];
+    if (cityOverlay) {
+      for (const city of cityOverlay) {
+        const p = projection([city.lon, city.lat]);
+        if (p && isFinite(p[0]) && isFinite(p[1])) cityBase.push({ city, bx: p[0], by: p[1] });
+      }
+    }
+
+    return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes, cityBase };
+  // paths and projection bounds only change if the country dataset, flag list, or cities change
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [geoData, flagOverlay]);
+  }, [geoData, flagOverlay, cityOverlay]);
 
 
 
@@ -428,6 +445,20 @@ export function SubdivisionMap({
     showPulse &&
     pulseX > -PULSE_MARGIN && pulseX < WIDTH  + PULSE_MARGIN &&
     pulseY > -PULSE_MARGIN && pulseY < HEIGHT + PULSE_MARGIN;
+
+  // City markers: apply zoom (constant pixel size). Labels are revealed once
+  // the user zooms in, so the default fitted view of a dense country (many
+  // subdivisions) shows glyphs without a wall of text — zoom to read.
+  const CITY_MARGIN = 40;
+  const cityScreen: ScreenCity[] = cityBase
+    .map(({ city, bx, by }) => ({ city, x: bx * zk + ztx, y: by * zk + zty }))
+    .filter(
+      (m) =>
+        m.x > -CITY_MARGIN && m.x < WIDTH + CITY_MARGIN &&
+        m.y > -CITY_MARGIN && m.y < HEIGHT + CITY_MARGIN,
+    );
+  const showCityLabels = zk >= 1.8;
+  const cityLabelHalo = theme === "dark" ? palette.ocean : "#ffffff";
 
   if (loading) {
     return (
@@ -595,6 +626,16 @@ export function SubdivisionMap({
                 <circle r={7} className="map-country-pulse__ring map-country-pulse__ring--2" />
                 <circle r={3.5} className="map-country-pulse__dot" />
               </g>
+            )}
+            {/* City markers — constant pixel size, outside the zoom group. */}
+            {cityScreen.length > 0 && (
+              <CityMarkers
+                markers={cityScreen}
+                showLabels={showCityLabels}
+                stroke={palette.stroke}
+                labelHalo={cityLabelHalo}
+                labelFill={palette.stroke}
+              />
             )}
           </svg>
 

@@ -1,5 +1,45 @@
 # Hana's Flag Game — development guide
 
+## City overlay data must be sourced, never fabricated — hard rule, do not override without approval
+
+**The Learn-mode map city overlay (the 📍 toggle next to the 🚩 flag toggle; markers rendered by
+`src/components/CityMarkers.tsx`) shows national + subnational capitals and largest cities. Every
+city, coordinate, capital classification and population MUST come from an authoritative source —
+exactly like the flag and subdivision-population rules. Never hand-write a capital, a "largest
+city", or a coordinate from memory.**
+
+The dataset (`src/data/cities.ts`) is **auto-generated** by `scripts/build-cities.mjs` (re-run:
+`node scripts/build-cities.mjs`). Sourcing:
+
+1. **Geography** — which cities exist, capital classification (national vs subnational), and
+   coordinates — comes from **Natural Earth 10m populated places** (the same data lineage as the
+   bundled basemap), via the committed extract `scripts/data/ne_places_test.geojson`. Cities are
+   assigned to subdivisions by **point-in-polygon** against the app's own `public/subdivisions/*.json`
+   (geography decides — NE's `adm1name` is encoding-corrupted and must NOT be trusted for mapping).
+2. **Largest-city corrections** — Natural Earth's `pop_max` is an urban-agglomeration figure and
+   mis-ranks "largest city" in some countries (e.g. it ranks George Town above Kuala Lumpur, and
+   Geneva above Zürich). These are corrected in the generator's `LARGEST_OVERRIDE` table, each with
+   a cited reason. Historical/false-positive capital tags (e.g. NE labels Kyoto an "Admin-0 capital
+   alt") are removed via `HISTORICAL_CAPITAL_BLOCK`.
+3. **Multi-capital / de-facto roles** — a country with several capitals (Bolivia: Sucre +
+   La Paz; South Africa: Pretoria/Cape Town/Bloemfontein) or a de-facto capital (Switzerland: Bern)
+   carries a **sourced** role note from `CAPITAL_ROLES`. The national capital is a **list**
+   (`NationalCities.capitals`), never a single value, so these are represented honestly.
+
+### Rules
+
+1. **Never invent or approximate** a city, coordinate, capital, or population (same spirit as the
+   "never generate flag content" rule). If the source has no figure, omit it — the markers render
+   only the data that exists.
+2. **Never trust NE `pop_max` blindly** for "largest city". When a country's largest city looks
+   wrong, verify against an authoritative city-proper population and add a cited `LARGEST_OVERRIDE`.
+3. The overlay currently covers a **test set** of countries (see `TEST_COUNTRIES` in the generator).
+   Expanding coverage means regenerating from the authoritative sources, not hand-adding rows.
+4. **Verify in the running app** (the mandatory visual-verification rule applies): toggle 📍 on the
+   world map and confirm capitals show as ★, largest cities as ●, combined as ★+dot; drill into a
+   country and confirm national + subdivision markers, the dual-level ring where a city is both
+   (e.g. London for the UK/England), and that multi-capital nations show every capital.
+
 ## Country widget information must never be reduced — hard rule, do not override without approval
 
 **The Learn-mode country widget (`EntitySummary`, rendered in `src/pages/LearnPage.tsx`) is a
