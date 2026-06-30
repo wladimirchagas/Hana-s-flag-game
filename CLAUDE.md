@@ -829,6 +829,47 @@ have silently regressed before — this rule locks them in.
    Learn mode, tap Play, and confirm the anthem starts on its own and the YouTube gear/quality shows
    the highest level the video offers.
 
+## Anthem lyrics must be complete and per-line aligned — hard rule, do not override without approval
+
+**The lyrics shown under the anthem player (`lines` in `src/data/nationalAnthems.ts`) are a static
+fact-sheet of the anthem's text. They MUST be the complete official lyrics, and every line's `textEn`
+translation MUST correspond to that exact line.** Two real defects motivated this rule (2026-06):
+
+- **Brazil (`BR`):** the refrain that closes Part I ("Terra adorada, Entre outras mil… Pátria amada,
+  Brasil!") — sung twice in the anthem — was carried only once, and two consecutive lines
+  ("Brasil, de amor eterno seja símbolo" / "O lábaro que ostentas estrelado,") had their English
+  translations **swapped**, so each line sat above a translation belonging to its neighbour.
+- **Japan (`JP`):** from line 2 the English translations were **shifted by one line** (each line
+  carried the next line's meaning), ending with "lush with moss" duplicated.
+
+### Rules
+
+1. **Complete text.** Include every officially-sung stanza and refrain, in order — including refrains
+   that repeat to close more than one part of the anthem. Do not drop a stanza because a particular
+   recording abbreviates it; the lyrics are the reference text, not a transcript of one video.
+2. **Per-line translation alignment.** `textEn[i]` must be the translation of `text[i]` — never the
+   previous/next line's translation, never two original lines merged into one line's translation with
+   the rest shifted. A repeated original line must carry the *same* translation everywhere it appears.
+3. **Authoritative source only.** Anthem lyrics and their translations are public-domain text or
+   established published translations — never invent, paraphrase to fill a gap, or machine-translate a
+   missing line (same spirit as the "never generate flag content" rule). If a faithful translation for
+   a line is unavailable, leave `textEn` off that line rather than guess.
+4. **Singable-version anthems** (where `textEn` is the official singable English mapped by verse, not a
+   literal per-line gloss — e.g. Tuvalu) are listed in `SINGABLE_TRANSLATION_EXEMPT` in the check
+   script. Keep that list tiny and documented; it is **not** a place to silence a genuine misalignment.
+
+### Enforcement
+
+`scripts/check-anthem-lyrics.mjs` (`npm run anthems:check-lyrics`, and the `anthem-lyrics` CI
+workflow on any PR touching `nationalAnthems.ts`) loads all 195 anthems and **fails the build** on:
+empty line text; a repeated line whose translations differ by more than case/punctuation; one
+translation cross-wired onto two substantially-different original lines (the swap/shift fingerprint —
+this is what caught the Japan bug); and an untranslated line (`textEn` identical to `text`) on a
+non-English anthem. **This check cannot detect a swap that keeps proper nouns aligned (it did not
+catch Brazil) nor a missing stanza** — so it is a safety net, NOT a substitute for verifying
+completeness and alignment against the authoritative lyrics whenever anthem `lines` are added or
+edited. Never weaken a threshold or add an anthem to the exempt list to make a real misalignment pass.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:

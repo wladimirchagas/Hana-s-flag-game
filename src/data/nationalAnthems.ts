@@ -414,6 +414,13 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
         words: [{ w: "És", t: 101 }, { w: "belo,", t: 101.3 }, { w: "és", t: 101.9 }, { w: "forte,", t: 102.2 }, { w: "impávido", t: 102.8 }, { w: "colosso,", t: 103.9 }] },
       { text: "E o teu futuro espelha essa grandeza.", textEn: "And your future mirrors this greatness.", start: 105,
         words: [{ w: "E", t: 105 }, { w: "o", t: 105.4 }, { w: "teu", t: 105.8 }, { w: "futuro", t: 106.2 }, { w: "espelha", t: 107.5 }, { w: "essa", t: 108.7 }, { w: "grandeza.", t: 109.6 }] },
+      // Refrain that closes Part I — identical to the one closing Part II below.
+      // (start values are nominal; this MEC recording abbreviates the Part I
+      //  refrain, but the complete official lyrics carry it here.)
+      { text: "Terra adorada, Entre outras mil,", textEn: "Beloved land, among a thousand others,", start: 109.7 },
+      { text: "És tu, Brasil, Ó Pátria amada!", textEn: "you are the one, Brazil, O beloved Homeland!", start: 109.8 },
+      { text: "Dos filhos deste solo és mãe gentil,", textEn: "Of the children of this soil you are a gentle mother,", start: 109.9 },
+      { text: "Pátria amada, Brasil!", textEn: "beloved Homeland, Brazil!", start: 110.0 },
       { text: "Deitado eternamente em berço esplêndido,", textEn: "Eternally lying on a splendid cradle,", start: 111,
         words: [{ w: "Deitado", t: 111 }, { w: "eternamente", t: 112 }, { w: "em", t: 113.6 }, { w: "berço", t: 113.9 }, { w: "esplêndido,", t: 114.5 }] },
       { text: "Ao som do mar e à luz do céu profundo,", textEn: "To the sound of the sea and the light of the deep sky,", start: 116,
@@ -432,9 +439,9 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
         words: [{ w: "\"Nossa", t: 144 }, { w: "vida\"", t: 145.1 }, { w: "no", t: 146.1 }, { w: "teu", t: 146.6 }, { w: "seio", t: 147.2 }, { w: "\"mais", t: 147.7 }, { w: "amores\".", t: 148.2 }] },
       { text: "Ó Pátria amada, Idolatrada, Salve! Salve!", textEn: "O beloved Homeland, idolized, Hail! Hail!", start: 150,
         words: [{ w: "Ó", t: 150 }, { w: "Pátria", t: 150.5 }, { w: "amada,", t: 151.4 }, { w: "Idolatrada,", t: 152.7 }, { w: "Salve!", t: 155 }, { w: "Salve!", t: 155.9 }] },
-      { text: "Brasil, de amor eterno seja símbolo", textEn: "Brazil, may the star-spangled banner you display", start: 157,
+      { text: "Brasil, de amor eterno seja símbolo", textEn: "Brazil, of eternal love may it be the symbol,", start: 157,
         words: [{ w: "Brasil,", t: 157 }, { w: "de", t: 157.7 }, { w: "amor", t: 158.1 }, { w: "eterno", t: 158.8 }, { w: "seja", t: 160 }, { w: "símbolo", t: 160.7 }] },
-      { text: "O lábaro que ostentas estrelado,", textEn: "be the symbol of eternal love,", start: 162,
+      { text: "O lábaro que ostentas estrelado,", textEn: "the star-spangled banner that you display,", start: 162,
         words: [{ w: "O", t: 162 }, { w: "lábaro", t: 162.4 }, { w: "que", t: 163.6 }, { w: "ostentas", t: 164 }, { w: "estrelado,", t: 165.2 }] },
       { text: "E diga o verde-louro dessa flâmula", textEn: "And may the laurel-green of that pennant say", start: 167,
         words: [{ w: "E", t: 167 }, { w: "diga", t: 167.4 }, { w: "o", t: 168.1 }, { w: "verde-louro", t: 168.5 }, { w: "dessa", t: 170 }, { w: "flâmula", t: 170.7 }] },
@@ -1438,11 +1445,11 @@ export const NATIONAL_ANTHEMS: Record<string, AnthemData> = {
     wikiFile: "Kimi ga yo.ogg", language: "ja",
     lines: [
       { text: "君が代は", textEn: "May His Majesty's reign", start: 0 },
-      { text: "千代に", textEn: "last for a thousand, eight thousand generations,", start: 8 },
-      { text: "八千代に", textEn: "until the pebbles", start: 14 },
-      { text: "さざれ石の", textEn: "grow into boulders", start: 21 },
-      { text: "巌となりて", textEn: "lush with moss.", start: 30 },
-      { text: "苔のむすまで", textEn: "Lush with moss.", start: 39 },
+      { text: "千代に", textEn: "continue for a thousand generations,", start: 8 },
+      { text: "八千代に", textEn: "and eight thousand generations,", start: 14 },
+      { text: "さざれ石の", textEn: "until the pebbles", start: 21 },
+      { text: "巌となりて", textEn: "grow into boulders", start: 30 },
+      { text: "苔のむすまで", textEn: "lush with moss.", start: 39 },
     ],
   },
   KE: {
