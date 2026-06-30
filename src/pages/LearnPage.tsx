@@ -25,6 +25,8 @@ import { FLAG_SIMILARITIES } from "../lib/flagSimilarity";
 import { getDriveSide } from "../lib/flagDriveSide";
 import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
+import { CityLegend } from "../components/CityMarkers";
+import { worldCityMarkers, subdivisionCityMarkers } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
@@ -149,6 +151,10 @@ export default function LearnPage() {
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const [showFlagMap, setShowFlagMap] = useState(false);
+  // City overlay (national/subnational capitals + largest cities). Like the
+  // flag overlay, it is OFF by default and shared across the world + subdivision
+  // maps, so toggling it on one keeps it on after drilling into a country.
+  const [showCities, setShowCities] = useState(false);
 
   // Suppresses the exit-subdivision effect for one cycle when navigating
   // between subdivision countries via the dropdown.
@@ -246,6 +252,9 @@ export default function LearnPage() {
   }, []);
   const toggleFlagMap = useCallback(() => {
     setShowFlagMap((prev) => !prev);
+  }, []);
+  const toggleCities = useCallback(() => {
+    setShowCities((prev) => !prev);
   }, []);
 
   // Exit subdivision mode when a different country is selected — unless the
@@ -733,6 +742,22 @@ export default function LearnPage() {
     return m;
   }, [showFlagMap, subdivisionCountry]);
 
+  // City overlay for the world map: every covered country's national capital(s)
+  // + largest city. Modern era only (no city data for historical polities).
+  const worldCityOverlay = useMemo(
+    () => (isModernEra && showCities ? worldCityMarkers() : null),
+    [isModernEra, showCities],
+  );
+
+  // City overlay for the subdivision map: the country's national capital(s) +
+  // largest city, plus each subdivision's capital + largest city.
+  const subdivisionCityOverlay = useMemo(() => {
+    if (!showCities || !subdivisionCountry) return null;
+    const meta = SUBDIVISION_META[subdivisionCountry.code];
+    const codes = meta?.divisions.map((d) => d.code) ?? [];
+    return subdivisionCityMarkers(subdivisionCountry.code, codes);
+  }, [showCities, subdivisionCountry]);
+
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
   // component is not bypassed when unrelated state (selected, hovered, …)
   // changes. The deps match what selectionFromPolityName reads from closure.
@@ -781,10 +806,19 @@ export default function LearnPage() {
         >
           🚩
         </button>
+        <button
+          type="button"
+          className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
+          onClick={toggleCities}
+          aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
+          title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
+        >
+          📍
+        </button>
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap],
+    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, showCities, toggleCities],
   );
 
   // Leaner control set for the subdivision map: just the flag-overlay
@@ -804,9 +838,18 @@ export default function LearnPage() {
         >
           🚩
         </button>
+        <button
+          type="button"
+          className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
+          onClick={toggleCities}
+          aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
+          title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
+        >
+          📍
+        </button>
       </>
     ),
-    [showFlagMap, toggleFlagMap],
+    [showFlagMap, toggleFlagMap, showCities, toggleCities],
   );
 
   const flagUrl = display ? selectionFlag(display, baseUrl) : null;
@@ -927,6 +970,7 @@ export default function LearnPage() {
       />
     <div className="learn-fs">
       <div className="learn-fs__map" aria-label="World map">
+        {isModernEra && showCities && <CityLegend stroke="currentColor" />}
         {isModernEra && subdivisionMode ? (
           <SubdivisionMap
             geoData={subdivisionGeo}
@@ -942,6 +986,7 @@ export default function LearnPage() {
             disabled={false}
             countryResults={{}}
             flagOverlay={subdivisionFlagOverlay}
+            cityOverlay={subdivisionCityOverlay}
             extraControls={subdivisionMapExtraControls}
           />
         ) : isModernEra ? (
@@ -996,6 +1041,7 @@ export default function LearnPage() {
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
             flagOverlay={modernFlagOverlay}
+            cityOverlay={worldCityOverlay}
           />
         ) : (
           <HistoricalMap

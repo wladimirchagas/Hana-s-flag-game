@@ -21,7 +21,8 @@
     "flags:check:image-quality": "node scripts/check-flag-image-quality.mjs",
     "flags:aspect-ratios": "node scripts/build-flag-aspect-ratios.mjs",
     "flags:download": "node scripts/download-flags.mjs",
-    "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs"
+    "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs",
+    "cities:build": "node scripts/build-cities.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

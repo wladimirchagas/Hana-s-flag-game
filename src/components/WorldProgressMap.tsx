@@ -8,6 +8,8 @@ import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { DISPUTED_TERRITORY_CODES } from "../lib/territoryParentMap";
 import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
+import { CityMarkers, type ScreenCity } from "./CityMarkers";
+import type { PlacedCity } from "../lib/cityRoles";
 
 // Countries whose land area is ≤ Denmark (~43,094 km²).  These get the
 // pulsing indicator when selected so they're easy to locate on the map.
@@ -146,6 +148,9 @@ type Props = {
    *  will have its flag image (the map value — an absolute URL) rendered
    *  filling its territory. Countries absent from the map show normally. */
   flagOverlay?: ReadonlyMap<string, string> | null;
+  /** When provided, these city markers (national capital(s) + largest city)
+   *  are plotted at constant pixel size over the map. */
+  cityOverlay?: PlacedCity[] | null;
 };
 
 // HARD RULE — disputed/claimed landmass colour.
@@ -394,6 +399,7 @@ export function WorldProgressMap({
   southUp = false,
   extraControls,
   flagOverlay = null,
+  cityOverlay = null,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -661,6 +667,23 @@ export function WorldProgressMap({
     return result;
   }, [geographies, centerLongitude]);
 
+  // Cold path — project each city's lon/lat to the base (non-rotated) SVG
+  // coordinates once. Rotation/zoom/south-up are applied per-frame in the
+  // constant-size marker render below (same approach as the pulse indicator).
+  const cityBase = useMemo(() => {
+    if (!cityOverlay || cityOverlay.length === 0)
+      return [] as { city: PlacedCity; bx: number; by: number }[];
+    const projection = geoEqualEarth()
+      .rotate([-centerLongitude, 0])
+      .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
+    const out: { city: PlacedCity; bx: number; by: number }[] = [];
+    for (const city of cityOverlay) {
+      const p = projection([city.lon, city.lat]);
+      if (p && isFinite(p[0]) && isFinite(p[1])) out.push({ city, bx: p[0], by: p[1] });
+    }
+    return out;
+  }, [cityOverlay, centerLongitude]);
+
   // Hide the popover when the parent clears the selection (e.g., new round
   // starts after a correct answer, or wrong-in-Custom clears the dropdown).
   useEffect(() => {
@@ -764,6 +787,30 @@ export function WorldProgressMap({
     showPulse &&
     pulseX > -PULSE_MARGIN && pulseX < WIDTH  + PULSE_MARGIN &&
     pulseY > -PULSE_MARGIN && pulseY < HEIGHT + PULSE_MARGIN;
+
+  // Project city markers to screen space — apply the same rotation-wrap + zoom
+  // + south-up transform the pulse indicator uses, so markers track the map but
+  // stay a constant pixel size (never enlarged with zoom).
+  const CITY_MARGIN = 40;
+  const cityScreen: ScreenCity[] = cityBase
+    .map(({ city, bx, by }) => {
+      const baseX = bx + flagTranslateX;
+      const wrappedX = baseX < 0 ? baseX + WIDTH : baseX >= WIDTH ? baseX - WIDTH : baseX;
+      const x = wrappedX * zk + ztx;
+      const y = (southUp ? HEIGHT - by : by) * zk + zty;
+      return { city, x, y };
+    })
+    .filter(
+      (m) =>
+        m.x > -CITY_MARGIN && m.x < WIDTH + CITY_MARGIN &&
+        m.y > -CITY_MARGIN && m.y < HEIGHT + CITY_MARGIN,
+    );
+  const labelHalo = theme === "dark" ? palette.ocean : "#ffffff";
+  // Labels are revealed once the user zooms in, so the default world view shows
+  // clean glyphs (no overlapping text where capitals/cities cluster) — the same
+  // "zoom to read" behaviour the subdivision map uses. The legend explains the
+  // glyphs; names appear on zoom.
+  const showCityLabels = zk >= 1.8;
 
   return (
     <section className="map-section" aria-labelledby="map-heading">
@@ -942,6 +989,17 @@ export function WorldProgressMap({
               <circle r={7} className="map-country-pulse__ring map-country-pulse__ring--2" />
               <circle r={3.5} className="map-country-pulse__dot" />
             </g>
+          )}
+          {/* City markers — outside the zoom group so they keep a constant
+              pixel size; positioned via the zoom/rotation transform above. */}
+          {cityScreen.length > 0 && (
+            <CityMarkers
+              markers={cityScreen}
+              showLabels={showCityLabels}
+              stroke={palette.stroke}
+              labelHalo={labelHalo}
+              labelFill={palette.stroke}
+            />
           )}
         </svg>
         {popover && isInteractive && (
