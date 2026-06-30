@@ -1,0 +1,26 @@
+name: Anthem lyrics check
+
+# Runs on any PR that touches the anthem lyrics data or the check script,
+# blocking merges that introduce empty lines, inconsistent translations of a
+# repeated line, or a translation cross-wired onto an unrelated line — the
+# fingerprints of the swapped / misaligned-translation bug fixed for the
+# Brazilian and Japanese anthems. This is a safety net only; completeness and
+# per-line alignment must still be verified against the authoritative lyrics
+# per the hard rule in CLAUDE.md.
+
+on:
+  pull_request:
+    paths:
+      - "src/data/nationalAnthems.ts"
+      - "scripts/check-anthem-lyrics.mjs"
+
+jobs:
+  check-anthem-lyrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Audit anthem lyrics for alignment / consistency defects
+        run: node scripts/check-anthem-lyrics.mjs
