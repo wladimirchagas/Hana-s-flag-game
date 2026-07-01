@@ -1718,6 +1718,98 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  NA: {
+    description:
+      "A white-edged red diagonal band running from the lower hoist to the upper fly, dividing a blue " +
+      "triangle (with a twelve-rayed golden sun) from a green triangle. The red stands for the people " +
+      "and their determination, the white for peace and unity, the green for vegetation and the blue " +
+      "for the sky and the Atlantic; the sun’s twelve rays represent the country’s main ethnic groups. " +
+      "Adopted at independence in 1990.",
+    sources: [
+      { title: "Flag of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    ],
+  },
+
+  LS: {
+    description:
+      "A horizontal tricolour of blue, white and green with a black mokorotlo — a Basotho straw hat — " +
+      "at the centre. The blue stands for rain and the sky, the white for peace and the green for " +
+      "prosperity, and the hat represents the Basotho nation. Adopted in 2006, replacing a " +
+      "military-themed flag to emphasise peace.",
+    sources: [
+      { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    ],
+  },
+
+  SZ: {
+    description:
+      "Horizontal bands of blue, yellow and red (the red widest) with a black-and-white Nguni shield, " +
+      "two spears and a fighting staff across the centre. The red stands for past battles, the blue " +
+      "for peace and stability and the yellow for the country’s resources; the shield’s black and " +
+      "white represent people of different colours living in peace. Adopted in 1968, based on a " +
+      "military flag of King Sobhuza II from 1941.",
+    sources: [
+      { title: "Flag of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+    ],
+  },
+
+  MW: {
+    description:
+      "Horizontal bands of black, red and green with a red rising sun on the black band. The black " +
+      "represents the people of Africa, the red the blood of the struggle for freedom and the green " +
+      "the land, while the rising sun stands for the dawn of hope and freedom. Adopted in 1964; a " +
+      "2010 redesign (a full white sun) was widely rejected and the original was restored in 2012.",
+    sources: [
+      { title: "Flag of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+    ],
+  },
+
+  KM: {
+    description:
+      "Four horizontal stripes — yellow, white, red and blue — with a green triangle at the hoist " +
+      "bearing a white crescent and four white stars. The four stripes and four stars each stand for " +
+      "the islands of the archipelago (Grande Comore, Mohéli, Anjouan and Mayotte, the last " +
+      "administered by France but claimed by the Comoros); the crescent and green reflect the " +
+      "country’s Islamic faith. Adopted in 2001.",
+    sources: [
+      { title: "Flag of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    ],
+  },
+
+  CD: {
+    description:
+      "A sky-blue field with a yellow five-pointed star in the upper hoist and a red diagonal band " +
+      "edged in yellow. The blue stands for peace, the red for the blood of the country’s martyrs, " +
+      "the yellow for its wealth and the star for a bright future. Adopted in 2006, reviving the " +
+      "design used just after independence (1966–1971).",
+    sources: [
+      { title: "Flag of the Democratic Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" },
+    ],
+  },
+
+  CG: {
+    description:
+      "A diagonal Pan-African design: a green upper triangle and red lower triangle divided by a " +
+      "yellow band running from the lower hoist to the upper fly. The green stands for the country’s " +
+      "agriculture and forests and the yellow for the friendship and nobility of its people. Adopted " +
+      "in 1959, dropped under the Marxist republic, and restored in 1991; it is the only Pan-African " +
+      "flag with a diagonal layout.",
+    sources: [
+      { title: "Flag of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo" },
+    ],
+  },
+
+  DJ: {
+    description:
+      "A horizontal bicolour of light blue over light green with a white triangle at the hoist bearing " +
+      "a red star. The blue stands for the sky and sea and for the Issa (Somali) people, the green for " +
+      "the earth and for the Afar people, the white for peace, and the red star for unity and the " +
+      "sacrifices of independence. Adopted at independence in 1977.",
+    sources: [
+      { title: "Flag of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
