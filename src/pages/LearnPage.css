@@ -1658,6 +1658,149 @@
   text-align: center;
 }
 
+/* === Flag-meaning progressive-disclosure panel =====================
+   Sits below the flag image in the Learn detail panel, for both
+   national and subnational flags. Collapsed by default (the copy is
+   long); expands to a sourced factual description, a myth-vs-fact
+   block, and source links. Data + rules: src/data/flagMeanings.ts. */
+.flag-meaning {
+  width: 100%;
+  max-width: 320px;
+  margin: 0.5rem auto 0;
+  text-align: left;
+}
+
+.flag-meaning__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.flag-meaning__toggle:hover,
+.flag-meaning__toggle:focus-visible {
+  outline: none;
+  border-color: var(--ink);
+  background: var(--paper, #fff);
+}
+
+.flag-meaning__toggle-icon {
+  font-size: 0.95rem;
+}
+
+.flag-meaning__toggle-label {
+  flex: 1;
+}
+
+.flag-meaning__toggle-chev {
+  color: var(--ink-muted, #888);
+}
+
+.flag-meaning__panel {
+  margin-top: 0.4rem;
+  padding: 0.6rem 0.7rem;
+  background: var(--paper, #fff);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+}
+
+.flag-meaning__desc {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.flag-meaning__myths {
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--ink-faint);
+}
+
+.flag-meaning__myths-heading {
+  margin: 0 0 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.flag-meaning__myth + .flag-meaning__myth {
+  margin-top: 0.5rem;
+}
+
+.flag-meaning__myth-claim,
+.flag-meaning__myth-reality {
+  margin: 0.15rem 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.flag-meaning__myth-claim {
+  color: var(--ink-muted, #888);
+}
+
+.flag-meaning__myth-reality {
+  color: var(--ink);
+}
+
+.flag-meaning__myth-tag,
+.flag-meaning__fact-tag {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.02rem 0.4rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  vertical-align: 0.08em;
+}
+
+.flag-meaning__myth-tag {
+  background: var(--color-warn, #b45309);
+  color: #fff;
+}
+
+.flag-meaning__fact-tag {
+  background: var(--mint, #2f855a);
+  color: #fff;
+}
+
+.flag-meaning__sources {
+  margin: 0.6rem 0 0;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--ink-faint);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  color: var(--ink-muted, #888);
+}
+
+.flag-meaning__sources-label {
+  font-weight: 700;
+}
+
+.flag-meaning__source-link {
+  color: var(--ink-soft);
+  text-decoration: underline;
+}
+
+.flag-meaning__source-link:hover,
+.flag-meaning__source-link:focus-visible {
+  color: var(--coral, #e05a47);
+}
+
 
 /* City-overlay marker legend — floats over the top-left of the map when the
    "Show cities" overlay is on. Explains the star/dot + size iconography. */

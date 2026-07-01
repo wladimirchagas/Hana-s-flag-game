@@ -25,6 +25,7 @@ import { FLAG_SIMILARITIES } from "../lib/flagSimilarity";
 import { getDriveSide } from "../lib/flagDriveSide";
 import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
+import { FlagMeaning } from "../components/FlagMeaning";
 import { CityLegend } from "../components/CityMarkers";
 import { worldCityMarkers, subdivisionCityMarkers } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
@@ -1144,6 +1145,9 @@ export default function LearnPage() {
                     or none survives.
                   </p>
                 )}
+                {display.kind === "modern" && (
+                  <FlagMeaning code={display.country.code} />
+                )}
                 {display.kind === "modern" && (() => {
                   const code = display.country.code;
                   const inList = hanaCodes.includes(code);
@@ -1207,6 +1211,7 @@ export default function LearnPage() {
                                   <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                                 </button>
                               )}
+                              <FlagMeaning code={selectedSubdivision.code} />
                               {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                                 <p className="learn-fs__unofficial-note">
                                   {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
@@ -1335,6 +1340,7 @@ export default function LearnPage() {
                               <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                             </button>
                           )}
+                          <FlagMeaning code={selectedSubdivision.code} />
                           {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                             <p className="learn-fs__unofficial-note">
                               {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}

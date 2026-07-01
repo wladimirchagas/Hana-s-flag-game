@@ -910,6 +910,52 @@ catch Brazil) nor a missing stanza** — so it is a safety net, NOT a substitute
 completeness and alignment against the authoritative lyrics whenever anthem `lines` are added or
 edited. Never weaken a threshold or add an anthem to the exempt list to make a real misalignment pass.
 
+## Flag-meaning explanations must be sourced and must separate myth from fact — hard rule, do not override without approval
+
+**The Learn-mode flag-meaning disclosure — the "What this flag means" progressive-disclosure expander
+rendered below the flag image in the country/subdivision widget (`src/components/FlagMeaning.tsx`,
+data in `src/data/flagMeanings.ts`) — explains flag symbolism for BOTH national and subnational
+flags. Every explanation MUST come from an authoritative source and MUST distinguish myth from fact.**
+
+### Why this rule exists
+
+Flag "meanings" are a magnet for folk-etymology: colours are routinely given patriotic meanings that
+were invented long after the flag, or retro-fitted to erase an inconvenient origin. The reference case
+is Brazil — the near-universal belief that its green means "forests" and yellow means "gold" is a myth
+deliberately popularised in 1889 to erase the flag's monarchical (Braganza/Habsburg) origin. Presenting
+such a claim as fact would be the same class of error as inventing flag SVG content or fabricating
+anthem lyrics. This feature must teach the difference, never launder the myth.
+
+### Rules
+
+1. **Never fabricate, guess, paraphrase-to-fill, or machine-generate** a flag meaning — same spirit as
+   the "never generate flag content" and "anthem lyrics must be authoritative" hard rules. If a meaning
+   cannot be sourced, omit the entry entirely; a flag with no explanation is always better than an
+   invented one.
+2. **Every entry MUST carry at least one authoritative `sources` citation** (an official government /
+   vexillological authority, or the flag's referenced encyclopaedia article — never a blog, forum, or
+   AI output), each with a real `http(s)` URL.
+3. **Myth vs fact must be explicit.** Any widely-believed symbolism that is folk-etymology,
+   retro-fitted, or disputed MUST go in the entry's `myths` array (each a `claim` plus a sourced
+   `reality`) and be rendered as myth — never mixed into `description` as established fact. The Brazil
+   "green = forests, yellow = gold" case is the canonical example.
+4. **Data lives only in `src/data/flagMeanings.ts`**, keyed by ISO 3166-1 alpha-2 (nations) or ISO
+   3166-2 subdivision code (subnationals) — never inlined into a component. Coverage is an
+   incrementally-growing curated set; expanding it means adding sourced rows, not lowering the bar.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open a country and a
+   subdivision that have entries, expand the disclosure, and confirm the description, the myth/fact
+   separation, and the working source links all render.
+
+### Enforcement
+
+`scripts/check-flag-meanings.mjs` (run by `npm run flags:check` and the `flag-integrity` CI workflow on
+any PR touching `flagMeanings.ts` or the script) **fails the build** if any entry has an empty
+`description`, no `sources`, a source with an empty title or a non-`http(s)` URL, or a malformed myth
+(missing `claim`/`reality`). Like the anthem-lyrics check it is a **safety net** — it cannot tell a
+sourced fact from a plausible fabrication, so it never replaces verifying each claim against its cited
+source by hand. **Never** weaken the check, and never add an entry whose claims you have not confirmed
+against the cited source.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
