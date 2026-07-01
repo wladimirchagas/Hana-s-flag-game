@@ -1810,6 +1810,87 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  BI: {
+    description:
+      "A white saltire dividing the field into red panels (top and bottom) and green panels (sides), " +
+      "with a white disc at the centre bearing three red, green-outlined six-pointed stars. The white " +
+      "stands for peace, the green for hope and development and the red for the struggle for freedom; " +
+      "the three stars stand for the motto “Unity, Work, Progress” and for the country’s three " +
+      "peoples — the Hutu, the Twa and the Tutsi. Adopted in 1967.",
+    sources: [
+      { title: "Flag of Burundi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+    ],
+  },
+
+  CV: {
+    description:
+      "A blue field with a horizontal band of white-red-white below the centre and a ring of ten " +
+      "yellow stars near the hoist. The blue stands for the sky and sea, the white and red for the " +
+      "people’s desire for peace and their nation-building effort, and the ten stars — arranged in a " +
+      "circle for unity — for the ten islands of the archipelago. Adopted in 1992, replacing the " +
+      "earlier flag that resembled Guinea-Bissau’s.",
+    sources: [
+      { title: "Flag of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
+    ],
+  },
+
+  GQ: {
+    description:
+      "A horizontal tricolour of green, white and red with a blue triangle at the hoist and the coat " +
+      "of arms (a silk-cotton tree and six stars) on the white band. The green stands for natural " +
+      "resources and agriculture, the blue for the sea linking the mainland and the islands, the " +
+      "white for peace and the red for the fighters for independence. Dating from independence in " +
+      "1968 and restored in 1979.",
+    sources: [
+      { title: "Flag of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
+    ],
+  },
+
+  ST: {
+    description:
+      "A horizontal green-yellow-green triband with a red triangle at the hoist and two black stars on " +
+      "the yellow band. The green, yellow and red are the Pan-African colours of the independence " +
+      "movement; the triangle stands for equality and the two black stars for the country’s two " +
+      "islands, São Tomé and Príncipe. Adopted at independence in 1975.",
+    sources: [
+      { title: "Flag of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+    ],
+  },
+
+  GW: {
+    description:
+      "A red vertical band at the hoist bearing a black star, with horizontal yellow and green bands " +
+      "in the fly — the Pan-African colours popularised by Ghana and Ethiopia. The black star stands " +
+      "for African unity, the yellow for the savannas, the green for the forests and the red for the " +
+      "blood of the independence struggle. Based on the flag of the PAIGC and adopted in 1973.",
+    sources: [
+      { title: "Flag of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    ],
+  },
+
+  SC: {
+    description:
+      "Five oblique bands — blue, yellow, red, white and green — radiating from the lower hoist " +
+      "corner. The blue stands for the sky and sea, the yellow for the sun, the red for the people " +
+      "and their unity, the white for social justice and harmony, and the green for the land. Adopted " +
+      "in 1996; the colours combine those of the country’s two main political parties.",
+    sources: [
+      { title: "Flag of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+    ],
+  },
+
+  MU: {
+    description:
+      "Four equal horizontal bands of red, blue, yellow and green. The red stands for the struggle for " +
+      "freedom, the blue for the Indian Ocean around the island, the yellow for the light of " +
+      "independence and the green for the island’s year-round vegetation. Adopted at independence in " +
+      "1968; the four colours were also chosen to represent the country’s main communities and " +
+      "parties, to help unite the nation.",
+    sources: [
+      { title: "Flag of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
