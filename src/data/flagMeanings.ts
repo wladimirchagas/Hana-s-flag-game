@@ -1426,6 +1426,94 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  MZ: {
+    description:
+      "Horizontal green, black and yellow bands with white fimbriations and a red triangle at the " +
+      "hoist bearing a yellow star on which sit an open book, a hoe and an AK-47 rifle. The red is " +
+      "anti-colonial resistance, the green the land, the black Africa, the yellow mineral wealth and " +
+      "the white peace; the star is internationalism, and the book, hoe and rifle stand for education, " +
+      "production and defence. Adopted in 1983, it is the only national flag depicting a modern firearm.",
+    sources: [
+      { title: "Flag of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
+    ],
+  },
+
+  AO: {
+    description:
+      "A horizontal bicolour of red over black with a yellow emblem — a half cogwheel, a machete and a " +
+      "star. The red recalls the blood shed under colonial rule and in war, and the black stands for " +
+      "Africa; the cogwheel represents industrial workers, the machete the peasantry and agriculture, " +
+      "and the star internationalism. Adopted at independence in 1975, based on the flag of the MPLA " +
+      "movement.",
+    sources: [
+      { title: "Flag of Angola — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
+    ],
+  },
+
+  ML: {
+    description:
+      "A vertical tricolour of green, yellow and red — the Pan-African colours — read as fertility, " +
+      "mineral wealth and independence. Adopted in 1961; the earlier 1959 flag carried a black human " +
+      "figure (a kanaga) on the yellow band, which was removed after opposition in the mostly Muslim " +
+      "country. It is the mirror image of Guinea’s flag.",
+    sources: [
+      { title: "Flag of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+    ],
+  },
+
+  BF: {
+    description:
+      "A horizontal bicolour of red over green with a yellow five-pointed star at the centre — the " +
+      "Pan-African colours. The red stands for the revolution, the green for agricultural wealth and " +
+      "hope, and the yellow star for the guiding light of the revolution. Adopted in 1984 when Thomas " +
+      "Sankara renamed the country from Upper Volta to Burkina Faso, replacing the old black-white-red " +
+      "tricolour.",
+    sources: [
+      { title: "Flag of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
+    ],
+  },
+
+  CM: {
+    description:
+      "A vertical tricolour of green, red and yellow — the Pan-African colours — with a gold star on " +
+      "the red band. The green stands for the southern forests, the yellow for the sun and the " +
+      "savannas of the north, and the red for unity, of which the central star is the emblem. Adopted " +
+      "in 1975, replacing the federal flag that bore two stars for East and West Cameroon.",
+    sources: [
+      { title: "Flag of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+    ],
+  },
+
+  ZM: {
+    description:
+      "A green field with an orange African fish eagle in flight over a block of three vertical " +
+      "stripes — red, black and orange — at the fly. The green stands for agriculture and natural " +
+      "resources, the red for the struggle for freedom, the black for the Zambian people and the " +
+      "orange for mineral wealth (copper); the eagle represents freedom and rising above the nation’s " +
+      "problems. Adopted at independence in 1964.",
+    sources: [
+      { title: "Flag of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
+    ],
+  },
+
+  CI: {
+    description:
+      "A vertical tricolour of orange, white and green. In the 1959 explanation the orange stands for " +
+      "the land and the blood of a young people, the white for peace and the green for hope in the " +
+      "future. Adopted at independence in 1960.",
+    myths: [
+      {
+        claim: "It is the same as the flag of Ireland.",
+        reality:
+          "Ireland’s flag carries the same three colours in the reverse order (green–white–orange) " +
+          "and a different proportion; the two are distinct flags often confused for one another.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
