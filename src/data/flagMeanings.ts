@@ -861,6 +861,104 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  UA: {
+    description:
+      "Two equal horizontal bands, blue over yellow. Blue and yellow have been associated with " +
+      "Ukrainian heraldry since at least the 15th century; the bicolour was adopted by the Supreme " +
+      "Ruthenian Council in Lviv in 1848, used by the independence movements of 1917–1921, banned " +
+      "under Soviet rule, and officially restored in 1992.",
+    myths: [
+      {
+        claim: "Officially, the blue represents the sky and the yellow a field of wheat.",
+        reality:
+          "A widespread and evocative interpretation, but not an official one — the colours’ " +
+          "documented origin is heraldic, not a depiction of sky and wheat.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
+    ],
+  },
+
+  NO: {
+    description:
+      "A red field with a white-bordered blue Nordic (off-centre) cross. Designed by Fredrik Meltzer " +
+      "in 1821, it combined red, white and blue as “colours of freedom” (echoing the French, Dutch " +
+      "and American flags): the red recalled Norway’s union with Denmark and the blue the new Swedish " +
+      "dynasty, while the cross follows Nordic and Christian tradition.",
+    sources: [
+      { title: "Flag of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
+    ],
+  },
+
+  FI: {
+    description:
+      "A white field with a blue Nordic cross. The blue is said to represent Finland’s thousands of " +
+      "lakes and its sky, and the white the snow that covers the land in winter. The design was " +
+      "chosen by competition after independence and adopted in 1918.",
+    myths: [
+      {
+        claim: "The blue-cross flag is an ancient, medieval Finnish design.",
+        reality:
+          "It was standardised only in the early 20th century, emerging from a modern 1918 design " +
+          "competition (with a ~1860 concept by the poet Zachris Topelius as an inspiration).",
+      },
+    ],
+    sources: [
+      { title: "Flag of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
+    ],
+  },
+
+  IS: {
+    description:
+      "A blue field with a white-bordered red Nordic cross. The colours are read as Iceland’s " +
+      "landscape: blue for the mountains and the surrounding ocean, white for ice and snow, and red " +
+      "for volcanic fire. A blue-and-white flag appeared in the 1890s; the red cross was added in " +
+      "1915, and the design became official when Iceland became a republic in 1944.",
+    sources: [
+      { title: "Flag of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
+    ],
+  },
+
+  AT: {
+    description:
+      "A horizontal triband of red, white, red — among the oldest national symbols still in use. It " +
+      "derives from the arms of the Babenberg dynasty (a silver band on a red field), first recorded " +
+      "on a seal of 1230.",
+    myths: [
+      {
+        claim:
+          "The flag comes from Duke Leopold V’s surcoat, soaked red with blood in battle except for " +
+          "a white band left by his belt.",
+        reality:
+          "A colourful legend (recorded from about 1260), separate from — and later than — the " +
+          "documented 1230 heraldic origin.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Austria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
+    ],
+  },
+
+  RO: {
+    description:
+      "A vertical tricolour of blue, yellow and red, read as liberty (blue), justice (yellow) and " +
+      "fraternity (red). The colours crystallised in the uprisings of 1821 and the 1848 revolution " +
+      "and were standardised by the 1866 constitution. The flag is almost identical to Chad’s, which " +
+      "developed independently.",
+    myths: [
+      {
+        claim: "Romania simply borrowed the French tricolour.",
+        reality:
+          "The individual colours have independent roots in Romanian heraldry dating back centuries " +
+          "before their combination as a national flag.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Romania" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
