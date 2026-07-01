@@ -2096,6 +2096,106 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  KZ: {
+    description:
+      "A turquoise field with a golden sun above a soaring golden steppe eagle, and a vertical golden " +
+      "“koshkar-muiz” (ram’s-horns) ornament along the hoist. The blue stands for unity and the wide " +
+      "sky, the sun and its rays for prosperity and life, the eagle for freedom and the nation’s " +
+      "aspirations, and the ornament for the art and culture of the Kazakh people. Adopted in 1992.",
+    sources: [
+      { title: "Flag of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+    ],
+  },
+
+  UZ: {
+    description:
+      "Horizontal bands of azure, white and green separated by thin red stripes, with a white crescent " +
+      "and small white stars in the upper hoist. The azure is commonly linked to the sky and to " +
+      "Turkic heritage, the white to peace, the green to nature and the red stripes to the life-force; " +
+      "the crescent marks the new republic. Adopted in 1991. The government has not fixed a single " +
+      "official meaning for the elements.",
+    sources: [
+      { title: "Flag of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
+    ],
+  },
+
+  KG: {
+    description:
+      "A red field with a yellow sun of forty rays, and at its centre a red tündük — the crown of a " +
+      "yurt seen from below. The forty rays stand for the forty clans united in legend by the hero " +
+      "Manas, and the tündük for the family home and the unity of the people. Adopted in 1992; in " +
+      "2023 the sun’s wavy rays were straightened.",
+    sources: [
+      { title: "Flag of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    ],
+  },
+
+  AZ: {
+    description:
+      "A horizontal tricolour of blue, red and green with a white crescent and eight-pointed star on " +
+      "the red band. The blue stands for the country’s Turkic heritage, the red for progress and the " +
+      "building of a modern state, and the green for Islam; the crescent and star are Islamic symbols. " +
+      "First adopted in 1918 and restored in 1991.",
+    sources: [
+      { title: "Flag of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
+    ],
+  },
+
+  GE: {
+    description:
+      "The Five Cross Flag: a white field with a large central red cross reaching all four edges and a " +
+      "small red Bolnisi cross in each quarter. The crosses reflect Georgia’s Christian heritage and " +
+      "are variously read as the Five Holy Wounds or as Christ and the Four Evangelists. A medieval " +
+      "banner of the Kingdom of Georgia, it was readopted as the national flag in 2004.",
+    sources: [
+      { title: "Flag of Georgia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Georgia_(country)" },
+    ],
+  },
+
+  AM: {
+    description:
+      "A horizontal tricolour of red, blue and orange. By the 2006 law the red stands for the Armenian " +
+      "Highland and the people’s struggle for survival, the blue for the peaceful sky, and the orange " +
+      "for the creative talent and hard work of the Armenian people. First adopted in 1918 and " +
+      "restored in 1990.",
+    myths: [
+      {
+        claim: "The three colours were given these meanings by the flag’s designer.",
+        reality:
+          "Its designer offered no official symbolism; the meanings were interpreted later (and " +
+          "codified in 2006). A popular rainbow/Mount Ararat reading is likewise a later gloss.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
+    ],
+  },
+
+  TM: {
+    description:
+      "A green field with a red-carpet vertical stripe near the hoist bearing five carpet guls above " +
+      "two crossed olive branches, and a white crescent with five stars alongside. The five guls " +
+      "stand for the five major Turkmen tribes and the five stars for the five provinces; the crescent " +
+      "and green field evoke the clear sky, Islam and prosperity, and the olive branches Turkmenistan’s " +
+      "neutrality. One of the most intricate national flags; adopted in 1992, with the current form " +
+      "from 2001.",
+    sources: [
+      { title: "Flag of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+    ],
+  },
+
+  TJ: {
+    description:
+      "A horizontal red, white and green tricolour (the white band widest) with a gold crown beneath " +
+      "an arc of seven stars at the centre. The red stands for unity and sacrifice, the white for " +
+      "purity and the country’s cotton, and the green for nature and Islam; the crown recalls the " +
+      "Samanid dynasty (and the word tâj, “crown”) and the seven stars stand for perfection and " +
+      "happiness. Adopted in 1992.",
+    sources: [
+      { title: "Flag of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
