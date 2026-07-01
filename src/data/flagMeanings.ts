@@ -4307,6 +4307,175 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Cesar Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cesar_Department" },
     ],
   },
+
+  "BR-RJ": {
+    description:
+      "A blue and white field bearing the state coat of arms, whose emblems include an eagle and " +
+      "mountains. Adopted in 1965, it was kept unchanged after the state merged with Guanabara in 1975.",
+    sources: [
+      { title: "Flag of Rio de Janeiro — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rio_de_Janeiro_(state)" },
+    ],
+  },
+
+  "BR-RS": {
+    description:
+      "Green, red and yellow horizontal stripes with the state arms at the centre. The green and " +
+      "yellow stand for Brazil and the red for the revolution and courage of the province; the design " +
+      "comes from the flag of the Riograndense Republic of the 1836–45 Farroupilha revolt and was " +
+      "re-established in 1966.",
+    sources: [
+      { title: "Flag of Rio Grande do Sul — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rio_Grande_do_Sul" },
+    ],
+  },
+
+  "BR-AL": {
+    description:
+      "A vertical tricolour of red, white and blue — echoing the French flag and the ideals of the " +
+      "Revolution — with the state arms at the centre. The arms show three shells for three historic " +
+      "towns, three fish for the main lagoons and the fishing industry, sugarcane and cotton, and a " +
+      "silver star.",
+    sources: [
+      { title: "Flag of Alagoas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Alagoas" },
+    ],
+  },
+
+  "MY-01": {
+    description:
+      "A navy-blue field with a red canton bearing a white crescent and five-pointed star. The blue " +
+      "stands for the state, the red for the warriors who defend Johor, and the crescent and star for " +
+      "Islam and the ruler.",
+    sources: [
+      { title: "Flag of Johor — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Johor" },
+    ],
+  },
+
+  "MY-02": {
+    description:
+      "A red field with the state arms at the hoist: a yellow shield for the ruler’s authority, a " +
+      "green crescent for Islam and a wreath of rice stalks for the state’s agriculture. Adopted in " +
+      "1912.",
+    sources: [
+      { title: "Flag of Kedah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kedah" },
+    ],
+  },
+
+  "MY-03": {
+    description:
+      "A red field with a white emblem of a crescent and star between two kris and spears. The red " +
+      "stands for the honesty of the people and ruler and the white for the sanctity of the Sultan; " +
+      "the crescent and star are Islam. Adopted in 1924.",
+    sources: [
+      { title: "Flag of Kelantan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kelantan" },
+    ],
+  },
+
+  "MY-04": {
+    description:
+      "Red and white bands with a blue canton bearing a yellow crescent and star — the national " +
+      "colours, with the crescent and star for Islam. Adopted in 1957, before Malayan independence.",
+    sources: [
+      { title: "Flag of Malacca — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malacca" },
+    ],
+  },
+
+  "MY-05": {
+    description:
+      "A yellow field with a canton split diagonally, red over black. The yellow stands for the ruler " +
+      "(Yang di-Pertuan Besar), the red for the people and the black for the four traditional " +
+      "chiefs (undang), reflecting the state’s Minangkabau heritage. Adopted in 1895.",
+    sources: [
+      { title: "Flag of Negeri Sembilan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Negeri_Sembilan" },
+    ],
+  },
+
+  "MY-06": {
+    description:
+      "Two horizontal bands, white over black. The white stands for the Sultan and the black for the " +
+      "bendahara (chief minister) and the people. Adopted in 1903.",
+    sources: [
+      { title: "Flag of Pahang — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pahang" },
+    ],
+  },
+
+  "MY-07": {
+    description:
+      "Light-blue, white and yellow vertical bands with an areca-nut palm on the white. The blue " +
+      "stands for the sea around the island, the white for peace and the yellow for prosperity.",
+    sources: [
+      { title: "Flag of Penang — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Penang" },
+    ],
+  },
+
+  "MY-08": {
+    description:
+      "Three horizontal bands of white, yellow and black for the royal hierarchy: white for the " +
+      "Sultan, yellow for the crown prince (Raja Muda) and black for the next heir (Raja Di Hilir). " +
+      "Adopted in 1879.",
+    sources: [
+      { title: "Flag of Perak — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Perak" },
+    ],
+  },
+
+  "MY-09": {
+    description:
+      "A yellow band over a dark-blue one. The yellow stands for the Raja of Perlis and the blue for " +
+      "the people; the yellow set above the blue signifies the close bond between ruler and people.",
+    sources: [
+      { title: "Flag of Perlis — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Perlis" },
+    ],
+  },
+
+  "MY-10": {
+    description:
+      "A field quartered red and yellow with a white crescent and star in the canton. The red stands " +
+      "for bravery and the yellow for royalty; the crescent and star are Islam. In its current form " +
+      "since 1965.",
+    sources: [
+      { title: "Flag of Selangor — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Selangor" },
+    ],
+  },
+
+  "MY-11": {
+    description:
+      "A black field within a thick white border, with a white crescent and star at the centre. The " +
+      "white stands for the Sultan and the black for the people; the white border represents the " +
+      "Sultan’s duty to protect his subjects, and the crescent and star are Islam. Adopted in 1953.",
+    sources: [
+      { title: "Flag of Terengganu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Terengganu" },
+    ],
+  },
+
+  "MY-12": {
+    description:
+      "Horizontal blue, white and red bands with a dark-blue silhouette of Mount Kinabalu on a " +
+      "light-blue canton. The blues stand for peace, unity and strength, the white for purity and " +
+      "justice and the red for courage; Mount Kinabalu represents the state. Adopted in 1988.",
+    sources: [
+      { title: "Flag of Sabah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sabah" },
+    ],
+  },
+
+  "MY-13": {
+    description:
+      "Called Ibu Pertiwi (“Motherland”): a yellow field crossed by black and red diagonal bars with " +
+      "a yellow nine-pointed star. The yellow stands for the rule of law and unity, the red for " +
+      "courage and the black for natural resources; the nine points recall Sarawak’s original nine " +
+      "divisions. Adopted in 1988.",
+    sources: [
+      { title: "Flag of Sarawak — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sarawak" },
+    ],
+  },
+
+  "MY-14": {
+    description:
+      "A blue field with red and white stripes and a yellow crescent and fourteen-pointed star — a " +
+      "variant of the national flag for the federal capital. The red stands for courage, the blue for " +
+      "the unity of its people, the yellow for sovereignty and the white for cleanliness. Adopted in " +
+      "1990.",
+    sources: [
+      { title: "Flag of Kuala Lumpur — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kuala_Lumpur" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
