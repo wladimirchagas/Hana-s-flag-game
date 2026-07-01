@@ -2650,6 +2650,165 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  SB: {
+    description:
+      "A yellow diagonal stripe dividing a blue upper triangle from a green lower triangle, with five " +
+      "white stars in the blue. The blue stands for the water — rivers, rain and the ocean — the " +
+      "green for the land and the yellow for the sun; the five stars stood for the five original " +
+      "provinces. Adopted in 1977; the number of stars has been kept even as more provinces were added.",
+    sources: [
+      { title: "Flag of the Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands" },
+    ],
+  },
+
+  KI: {
+    description:
+      "A red upper half with a gold frigatebird flying over a rising sun, and a blue lower half with " +
+      "three white wavy stripes. The frigatebird stands for power, freedom and the command of the sea, " +
+      "the rising sun for Kiribati’s position on the Equator (its seventeen rays for the sixteen " +
+      "Gilbert Islands plus Banaba), and the three waves for the three island groups. Adopted in 1979.",
+    sources: [
+      { title: "Flag of Kiribati — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
+    ],
+  },
+
+  TV: {
+    description:
+      "A light-blue ensign with the Union Jack in the canton and nine yellow stars laid out like the " +
+      "map of the country’s nine islands. The blue stands for the Pacific Ocean. Adopted in 1978; a " +
+      "1996 redesign that reduced the flag to eight stars was reversed after public protest, restoring " +
+      "the nine stars in 1997.",
+    sources: [
+      { title: "Flag of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+    ],
+  },
+
+  NR: {
+    description:
+      "A blue field with a narrow gold stripe across the centre and a white twelve-pointed star just " +
+      "below it near the hoist. The blue is the Pacific Ocean, the gold stripe the Equator and the " +
+      "star Nauru itself, lying just south of the line; the star’s twelve points stand for the " +
+      "island’s twelve original tribes. Adopted at independence in 1968.",
+    sources: [
+      { title: "Flag of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nauru" },
+    ],
+  },
+
+  MH: {
+    description:
+      "A blue field crossed by orange and white stripes that widen from the lower hoist to the upper " +
+      "fly, with a white 24-pointed star in the canton. The blue is the ocean and the rising stripes " +
+      "the Equator; the white stands for the Ratak (sunrise) chain and peace and the orange for the " +
+      "Ralik (sunset) chain and courage. The star’s 24 points are the electoral districts, its four " +
+      "longer rays the main cultural centres — the most points on any national flag’s star. Adopted " +
+      "in 1979.",
+    sources: [
+      { title: "Flag of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands" },
+    ],
+  },
+
+  FM: {
+    description:
+      "A light-blue field with four white five-pointed stars in a diamond. The blue stands for the " +
+      "Pacific Ocean and the four stars for the federation’s four states — Yap, Chuuk, Pohnpei and " +
+      "Kosrae. Adopted in 1978, developed from the earlier Trust Territory flag.",
+    sources: [
+      { title: "Flag of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
+    ],
+  },
+
+  PW: {
+    description:
+      "A light-blue field with a golden-yellow disc set slightly toward the hoist. The blue stands for " +
+      "the ocean and the move to self-government, and the disc for the full moon, regarded in Palauan " +
+      "culture as the best time for fishing, harvesting and celebration; it is placed off-centre so it " +
+      "looks centred when the flag flies. Adopted in 1981.",
+    myths: [
+      {
+        claim: "The disc is a tribute to Japan’s Rising Sun flag.",
+        reality:
+          "The designer denied any link: the disc is the moon, not the sun, and its off-centre " +
+          "placement and lunar meaning set it apart from the Japanese design.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Palau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
+    ],
+  },
+
+  VA: {
+    description:
+      "Two vertical bands of yellow and white, the white charged with the crossed gold and silver keys " +
+      "of Saint Peter beneath the papal tiara. The yellow and white are the papal colours; the keys " +
+      "are the keys of heaven given to Saint Peter and the tiara the authority of the papacy. Adopted " +
+      "in 1929 with the founding of Vatican City, modelled on the earlier Papal States flag.",
+    myths: [
+      {
+        claim: "The papal tiara on the flag is lined in red.",
+        reality:
+          "The lining is white; a red-lined version circulated widely online for years but is an " +
+          "error, not the official flag.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Vatican City — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
+    ],
+  },
+
+  PS: {
+    description:
+      "A horizontal black-white-green tricolour with a red triangle at the hoist — the Pan-Arab " +
+      "colours of the 1916 Arab Revolt flag. The black, white and green recall the Abbasid, Umayyad " +
+      "and Fatimid periods and the red the Hashemites and Arab unity. Adopted as the flag of the " +
+      "Palestinian people by the PLO in 1964.",
+    myths: [
+      {
+        claim: "The flag’s designer and precise origin are firmly established.",
+        reality:
+          "They are disputed: competing accounts credit a 1909 Istanbul literary society, the 1911 " +
+          "Young Arab Society and the British official Mark Sykes, and the record is a matter of " +
+          "dispute and mythology.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
+    ],
+  },
+
+  LA: {
+    description:
+      "A horizontal red-blue-red triband (the blue band double height) with a white disc at the " +
+      "centre. In the designer’s explanation the red stands for the blood shed by the Lao people in " +
+      "their struggle, the blue for the Mekong River and the nation’s prosperity, and the white disc " +
+      "for the full moon over the Mekong and the unity of the people. Created in 1945 and readopted " +
+      "in 1975.",
+    sources: [
+      { title: "Flag of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+    ],
+  },
+
+  ME: {
+    description:
+      "A red field within a gold border, with the national coat of arms — a golden double-headed " +
+      "eagle bearing a lion — at the centre. Drawn from Montenegro’s historical royal banners, it was " +
+      "adopted in 2004 as the country asserted a distinct identity before its 2006 independence.",
+    sources: [
+      { title: "Flag of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
+    ],
+  },
+
+  SM: {
+    description:
+      "Two horizontal bands, white over light blue, with the coat of arms at the centre: three towers " +
+      "on Monte Titano within oak and laurel wreaths, beneath a crown and the motto Libertas " +
+      "(“Liberty”). The white stands for peace (and the snow of the mountain) and the blue for " +
+      "liberty and the sky; the three towers are the fortifications of Monte Titano. The arms were " +
+      "standardised in 1862.",
+    sources: [
+      { title: "Flag of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
