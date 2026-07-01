@@ -1992,6 +1992,110 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  JO: {
+    description:
+      "Horizontal black, white and green bands joined by a red chevron at the hoist bearing a white " +
+      "seven-pointed star, based on the flag of the 1916 Arab Revolt. The black, white and green " +
+      "recall the Abbasid, Umayyad and Fatimid/Rashidun caliphates; the red chevron stands for the " +
+      "Hashemite dynasty and Arab freedom; and the star’s seven points for the seven verses of the " +
+      "opening chapter of the Qur’an. Adopted in 1928.",
+    sources: [
+      { title: "Flag of Jordan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+    ],
+  },
+
+  LB: {
+    description:
+      "A horizontal red-white-red triband (the white band double height) with a green cedar tree in " +
+      "the centre touching both red stripes. The red stands for the blood shed for independence, the " +
+      "white for peace and the snow of the mountains, and the cedar for immortality, resilience and " +
+      "holiness. Adopted in 1943.",
+    sources: [
+      { title: "Flag of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    ],
+  },
+
+  AE: {
+    description:
+      "A red vertical band at the hoist with three horizontal bands of green, white and black — the " +
+      "Pan-Arab colours. The red stands for sacrifice and energy, the green for growth and " +
+      "prosperity, the white for peace and the black for dignity and strength. Designed by Abdullah " +
+      "Al Maainah and adopted at the federation’s formation in 1971.",
+    sources: [
+      { title: "Flag of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
+    ],
+  },
+
+  QA: {
+    description:
+      "A maroon field with a white serrated band of nine points at the hoist; it is the only national " +
+      "flag more than twice as wide as it is tall. The white stands for peace (from the 19th-century " +
+      "treaties) and the nine points for Qatar as the ninth of the “reconciled emirates” under the " +
+      "1916 treaty with Britain. Adopted in 1971.",
+    myths: [
+      {
+        claim: "The maroon is simply red dye that faded to purple in the desert sun.",
+        reality:
+          "Qatar deliberately kept the deep maroon: while a faded-dye story is often told, the colour " +
+          "was retained to reflect the region’s historic purple-dye heritage.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Qatar — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
+    ],
+  },
+
+  BH: {
+    description:
+      "A white band at the hoist separated from a red field by five white triangles forming a " +
+      "serrated line. The red is the traditional colour of the Gulf states and the white recalls the " +
+      "19th-century peace treaties; the five points stand for the five pillars of Islam. The " +
+      "five-point design was adopted in 2002 (reduced from an earlier eight).",
+    sources: [
+      { title: "Flag of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    ],
+  },
+
+  OM: {
+    description:
+      "White and green horizontal bands with a red band running along the hoist and across the top " +
+      "(forming a “T”), and the national emblem — a khanjar dagger over two crossed swords — in the " +
+      "upper hoist. The white stands for peace and the Imams, the green for the fertile Jabal Akhdar " +
+      "mountains and the red for the battles against foreign invaders. Adopted in 1970.",
+    sources: [
+      { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+    ],
+  },
+
+  IQ: {
+    description:
+      "A horizontal red-white-black tricolour — the Pan-Arab colours of al-Hilli’s verse — with the " +
+      "Takbir (“God is greatest”) in green Kufic script across the white band. Adopted in 2008, when " +
+      "the three green stars of the earlier flag were removed.",
+    myths: [
+      {
+        claim: "The 2008 flag broke completely with Saddam Hussein–era symbolism.",
+        reality:
+          "The Takbir it keeps was itself added under Saddam in 1991; the 2008 change removed the " +
+          "three stars but retained that inscription.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    ],
+  },
+
+  YE: {
+    description:
+      "A horizontal red-white-black tricolour — the Arab Liberation colours. The red stands for unity " +
+      "and the blood of martyrs, the white for a bright future and the black for the dark past. " +
+      "Adopted in 1990 at the unification of North and South Yemen, dropping the distinct emblems the " +
+      "two states had used.",
+    sources: [
+      { title: "Flag of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
