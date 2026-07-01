@@ -4082,6 +4082,231 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Federal District (Brazil) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_District_(Brazil)" },
     ],
   },
+
+  "AR-A": {
+    description:
+      "A burgundy field bearing the provincial arms — a light-blue shield with a Sun of May and a " +
+      "six-pointed star, ringed by 23 gold gaucho spurs for the province’s departments. The burgundy " +
+      "and black recall the Salta poncho of Güemes’s “Infernales” cavalry in the war of independence. " +
+      "Adopted in 1997.",
+    sources: [
+      { title: "Flag of Salta — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Salta_Province" },
+    ],
+  },
+
+  "AR-B": {
+    description:
+      "Blue over green, split by a thin red line, with half a sun and sunflower and a half cogwheel. " +
+      "The green stands for the farmland, the blue for the rivers, the red for federalism, the " +
+      "sunflower for agriculture and the cogwheel for industry. It won a 1997 contest among the " +
+      "province’s schoolchildren.",
+    sources: [
+      { title: "Flag of Buenos Aires Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Province_of_Buenos_Aires" },
+    ],
+  },
+
+  "AR-E": {
+    description:
+      "A blue-white-blue field with a red diagonal, based on José Artigas’s flag of the League of the " +
+      "Free Peoples. Artigas added the red — the colour of federalism — to Belgrano’s blue and white " +
+      "to distinguish his forces during the war of independence.",
+    sources: [
+      { title: "Flag of Entre Ríos Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Entre_R%C3%ADos_Province" },
+    ],
+  },
+
+  "AR-F": {
+    description:
+      "A white field with the city’s coat of arms: a black crowned eagle holding a Calatrava cross, " +
+      "with four eaglets at its feet. Established by the city’s founder Juan de Garay in 1580, the " +
+      "eagle and crown stand for the Spanish monarchy, the cross for the Order of Calatrava and " +
+      "evangelism, and the eaglets for cities founded in the same period.",
+    sources: [
+      { title: "Flag of Buenos Aires — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Autonomous_City_of_Buenos_Aires" },
+    ],
+  },
+
+  "AR-G": {
+    description:
+      "Five vertical light-blue and white stripes with a red central square bearing a golden sun and " +
+      "the red Cross of Saint James. The blue and white are the national colours, the red stands for " +
+      "the Federalist Party that won the province its autonomy, and the cross for its Spanish and " +
+      "Catholic heritage.",
+    sources: [
+      { title: "Flag of Santiago del Estero Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Santiago_del_Estero_Province" },
+    ],
+  },
+
+  "AR-J": {
+    description:
+      "A light-blue, white, light-blue triband that uniquely shows different faces: the coat of arms " +
+      "on the front and the Sun of May on the back. It was painted by the people of San Juan in 1816 " +
+      "as a gift to the Army of the Andes as it formed for the crossing to Chile.",
+    sources: [
+      { title: "Flag of San Juan Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_San_Juan_Province,_Argentina" },
+    ],
+  },
+
+  "AR-N": {
+    description:
+      "A red, blue and white horizontal tricolour in the tradition of Artigas: the red for the blood " +
+      "shed for freedom, the blue for the resolve toward a republic and the white for greatness. It " +
+      "descends from Andrés Guacurarí’s 1815 adaptation of the League of the Free Peoples flag and " +
+      "was restored in 1992.",
+    sources: [
+      { title: "Flag of Misiones Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Misiones_Province" },
+    ],
+  },
+
+  "AR-P": {
+    description:
+      "Light-blue, white and gold horizontal stripes with nine stars and a garland of bay leaves " +
+      "marking the Tropic of Capricorn, which crosses the province. It won a provincial competition " +
+      "and was adopted in 1991.",
+    sources: [
+      { title: "Flag of Formosa Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Formosa_Province" },
+    ],
+  },
+
+  "AR-Q": {
+    description:
+      "A light-blue, white, light-blue triband (the national colours) with the provincial emblem on " +
+      "the white: a monkey-puzzle tree, the Lanín volcano, a poinsettia and sixteen stars for the " +
+      "departments, within a laurel wreath. Adopted in 1989.",
+    sources: [
+      { title: "Flag of Neuquén Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Neuqu%C3%A9n_Province" },
+    ],
+  },
+
+  "AR-R": {
+    description:
+      "Blue, white and green horizontal stripes with a black canton of thirteen stars for the " +
+      "province’s departments. The blue stands for justice and its water, the black canton for the " +
+      "Río Negro (“Black River”) that gives the province its name, the white for unity and the green " +
+      "for hope and fertile land.",
+    sources: [
+      { title: "Flag of Río Negro Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_R%C3%ADo_Negro_Province" },
+    ],
+  },
+
+  "AR-S": {
+    description:
+      "A red, white and blue vertical triband with the provincial arms (crossed arrows, a spear and a " +
+      "half-sun). The white and blue are the national colours and the red is Artigas’s colour of " +
+      "federalism; the design was fixed by Governor Estanislao López in 1822.",
+    sources: [
+      { title: "Flag of Santa Fe Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Santa_Fe_Province" },
+    ],
+  },
+
+  "AR-T": {
+    description:
+      "A light-blue stripe between two white ones — a “negative” of the Argentine flag. It reproduces " +
+      "a war-of-independence flag of Belgrano, hidden in a church after the 1813 Battle of Ayohuma and " +
+      "rediscovered in 1883; the province adopted it in 2010.",
+    sources: [
+      { title: "Flag of Tucumán — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tucum%C3%A1n" },
+    ],
+  },
+
+  "AR-W": {
+    description:
+      "A light-blue, white, light-blue triband with a blue triangle at the hoist, the provincial motto " +
+      "and coat of arms. Adopted in 1986, it combines an earlier flag bearing the 1821 arms with " +
+      "another carrying an 1823 hoist triangle.",
+    sources: [
+      { title: "Flag of Corrientes Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Corrientes_Province" },
+    ],
+  },
+
+  "AR-X": {
+    description:
+      "A red, white and light-blue triband with a golden Sun of May of 32 rays. The white and blue are " +
+      "the national colours and the sun refers both to the Sol de Mayo and to the Jesuit emblem, " +
+      "standing for the province’s autonomy and its ties to the League of the Free Peoples.",
+    sources: [
+      { title: "Flag of Córdoba Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_C%C3%B3rdoba_Province,_Argentina" },
+    ],
+  },
+
+  "AR-Y": {
+    description:
+      "A white field with the coat of arms of the Assembly of the Year XIII. This is the very flag " +
+      "General Belgrano donated to the city of Jujuy in 1813 to honour its people’s courage at the " +
+      "Battles of Tucumán and Salta; it became the provincial flag in 1994.",
+    sources: [
+      { title: "Flag of Jujuy Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jujuy_Province" },
+    ],
+  },
+
+  "AR-Z": {
+    description:
+      "A flag showing a Sun of May, the peak of Mount Fitz Roy (Cerro Chaltén, sacred to the Aónikenk " +
+      "people), waves of the Atlantic and the Southern Cross. It was chosen from 149 entries in a " +
+      "competition and adopted in 2000.",
+    sources: [
+      { title: "Flag of Santa Cruz Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Santa_Cruz_Province,_Argentina" },
+    ],
+  },
+
+  "CO-ANT": {
+    description:
+      "A white band over a green one. The white stands for purity, integrity and triumph and the " +
+      "green for the department’s mountains, hope and wealth. The design originated at the University " +
+      "of Antioquia and became official in 1962.",
+    sources: [
+      { title: "Flag of Antioquia Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Antioquia_Department" },
+    ],
+  },
+
+  "CO-BOL": {
+    description:
+      "A horizontal tricolour of yellow, green and red. The yellow stands for wealth and abundance, " +
+      "the green for hope for the future and the red for valour and the blood of patriots; the flag’s " +
+      "precise origin has been lost.",
+    sources: [
+      { title: "Flag of Bolívar Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bol%C3%ADvar_Department" },
+    ],
+  },
+
+  "CO-BOY": {
+    description:
+      "Green, white and red horizontal stripes with the wide red band at the centre. The green stands " +
+      "for faith, service and the fertile countryside, the white for love of the homeland and unity, " +
+      "and the central red for those who died in the wars of independence — above all at the Battle of " +
+      "Boyacá. Adopted 1967–68.",
+    sources: [
+      { title: "Flag of Boyacá Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Boyac%C3%A1_Department" },
+    ],
+  },
+
+  "CO-SAN": {
+    description:
+      "A red stripe at the hoist bearing eight stars, alongside green, gold and black bands. The red " +
+      "stands for nobility and bravery, the green for loyalty and hope, and the gold and black for the " +
+      "region’s natural resources — gold, coal and petroleum.",
+    sources: [
+      { title: "Flag of Santander Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Santander_Department" },
+    ],
+  },
+
+  "CO-MAG": {
+    description:
+      "Six alternating red and blue bands with a large star formed of thirty small white stars, " +
+      "standing for the department’s twenty-nine municipalities and its one district.",
+    sources: [
+      { title: "Flag of Magdalena Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Magdalena_Department" },
+    ],
+  },
+
+  "CO-CES": {
+    description:
+      "A white band between two green bands. The green stands for the department’s fertile vegetation " +
+      "and the white for the hope of peace.",
+    sources: [
+      { title: "Flag of Cesar Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cesar_Department" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
