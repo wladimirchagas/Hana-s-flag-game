@@ -3227,6 +3227,140 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of North Carolina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Carolina" },
     ],
   },
+
+  "CA-QC": {
+    description:
+      "The Fleurdelisé: a white cross on a blue field with a white fleur-de-lis in each quarter. The " +
+      "blue stands for heaven and the fleurs-de-lis for Québec’s French and Catholic heritage — they " +
+      "derive from banners honouring the Virgin Mary carried by French-Canadian militia in the 18th " +
+      "century. Adopted in 1948, the first provincial flag in Canada.",
+    sources: [
+      { title: "Flag of Quebec — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Quebec" },
+    ],
+  },
+
+  "CA-BC": {
+    description:
+      "The Union Jack topped by a gold crown, above a golden setting sun over wavy blue and white " +
+      "stripes. The Union Jack marks British Columbia’s colonial origins and the crown its status as " +
+      "a Crown colony; the setting sun reflects the province’s place as Canada’s westernmost, and the " +
+      "wavy stripes its position between the Pacific Ocean and the mountains. Adopted in 1960.",
+    sources: [
+      { title: "Flag of British Columbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_British_Columbia" },
+    ],
+  },
+
+  "CA-NL": {
+    description:
+      "An abstract design in blue, white, red and gold by the artist Christopher Pratt. The blue " +
+      "stands for the sea, the white for snow and ice, the red for human effort and the gold for " +
+      "confidence in the future; the two red triangles represent mainland Labrador and the island of " +
+      "Newfoundland, and the gold arrow points to a brighter future. Adopted in 1980.",
+    sources: [
+      { title: "Flag of Newfoundland and Labrador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Newfoundland_and_Labrador" },
+    ],
+  },
+
+  "CA-NS": {
+    description:
+      "A blue Saint Andrew’s saltire on white — the reverse of Scotland’s colours — charged with the " +
+      "royal arms of Scotland, a red lion on gold. It reflects the province’s name and heritage as " +
+      "“New Scotland,” and is the oldest provincial flag in Canada (in use from 1858 and granted by " +
+      "royal warrant in 1929).",
+    sources: [
+      { title: "Flag of Nova Scotia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nova_Scotia" },
+    ],
+  },
+
+  "CA-ON": {
+    description:
+      "A Red Ensign with the Union Jack in the canton and the Ontario shield in the fly — a red Saint " +
+      "George’s Cross above three gold maple leaves on green. Adopted in 1965 to preserve the Red " +
+      "Ensign after Canada replaced it nationally with the Maple Leaf flag.",
+    sources: [
+      { title: "Flag of Ontario — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ontario" },
+    ],
+  },
+
+  "CA-NU": {
+    description:
+      "Gold and white fields divided by a red inuksuk, with a blue star in the upper fly. The inuksuk " +
+      "is the traditional Inuit stone marker used for guidance, and the blue star is Niqirtsuituq, the " +
+      "North Star, standing for the guidance of the sky and the wisdom of elders; the gold, white and " +
+      "blue evoke the riches of land, snow and sky. Adopted when Nunavut was created in 1999.",
+    sources: [
+      { title: "Flag of Nunavut — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nunavut" },
+    ],
+  },
+
+  "CA-MB": {
+    description:
+      "A Red Ensign with the Union Jack in the canton and the Manitoba shield — a bison standing on a " +
+      "rock beneath a Saint George’s Cross. Adopted in 1966 to keep the Red Ensign after it was " +
+      "dropped nationally.",
+    myths: [
+      {
+        claim: "The flag was chosen through a public design competition.",
+        reality:
+          "It was not: after the bruising national flag debate there was no public contest — " +
+          "provincial officials simply adopted the Red Ensign format.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Manitoba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Manitoba" },
+    ],
+  },
+
+  "CA-AB": {
+    description:
+      "An ultramarine-blue field bearing the provincial shield: a Saint George’s Cross above a " +
+      "landscape of the Rocky Mountains, foothills, prairie and wheat. The shield comes from a 1907 " +
+      "royal warrant; the flag was adopted in 1968.",
+    sources: [
+      { title: "Flag of Alberta — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Alberta" },
+    ],
+  },
+
+  "CA-SK": {
+    description:
+      "A green upper half and gold lower half with the provincial shield (a red lion above three " +
+      "wheat sheaves) and a western red lily in the fly. The green stands for the forested north, the " +
+      "gold for the grain fields of the south and the lily for the provincial flower. Adopted in 1969.",
+    sources: [
+      { title: "Flag of Saskatchewan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saskatchewan" },
+    ],
+  },
+
+  "CA-NB": {
+    description:
+      "An armorial banner of New Brunswick’s arms: a gold lion on a red band above a gold galley " +
+      "(lymphad) on blue and white waves. The lion reflects ties to England and to Brunswick, and the " +
+      "ship the province’s shipbuilding heritage and the vessels of the Loyalists. Adopted in 1965.",
+    sources: [
+      { title: "Flag of New Brunswick — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Brunswick" },
+    ],
+  },
+
+  "CA-NT": {
+    description:
+      "Blue-white-blue vertical bands with the territorial shield on the white: a white fox for the " +
+      "fur trade, gold bars for minerals, a wavy blue line for the Arctic Ocean and Northwest Passage " +
+      "and a diagonal tree line dividing green forest from red tundra. The white stands for snow and " +
+      "ice and the blue for the territory’s waters. Adopted in 1969.",
+    sources: [
+      { title: "Flag of the Northwest Territories — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northwest_Territories" },
+    ],
+  },
+
+  "CA-YT": {
+    description:
+      "Green, white and blue vertical panels with the territorial coat of arms above a wreath of " +
+      "fireweed on the white. The green stands for the forests, the white for snow and the blue for " +
+      "the lakes and rivers; the fireweed is Yukon’s floral emblem. Adopted in 1967.",
+    sources: [
+      { title: "Flag of Yukon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Yukon" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
