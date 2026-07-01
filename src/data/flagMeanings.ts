@@ -1330,6 +1330,102 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  TN: {
+    description:
+      "A red field with a central white disc bearing a red crescent and five-pointed star. The red is " +
+      "associated with the blood of martyrs, and the crescent and star with the unity of Muslims and " +
+      "the Five Pillars of Islam. The design dates from the reign of Bey Hussein II and was adopted " +
+      "in 1831.",
+    myths: [
+      {
+        claim: "The crescent and star are purely Islamic symbols.",
+        reality:
+          "The crescent may descend from ancient Carthage — it appears on Punic artefacts from the " +
+          "region — so it predates its later Islamic association.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    ],
+  },
+
+  LY: {
+    description:
+      "A horizontal triband of red, black (double height) and green, with a white crescent and star " +
+      "on the black band. Its designer, Omar Faiek Shennib, described the red as the blood shed for " +
+      "freedom, the black as the dark years of Italian occupation and the green as the nation’s " +
+      "agricultural wealth. Adopted for the Kingdom of Libya in 1951, it was restored in 2011 after " +
+      "the fall of Gaddafi, whose plain all-green flag (1977–2011) had been the world’s only " +
+      "single-colour national flag.",
+    sources: [
+      { title: "Flag of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    ],
+  },
+
+  SD: {
+    description:
+      "A horizontal red-white-black tricolour with a green triangle at the hoist — the Arab Liberation " +
+      "colours. The red stands for struggle and sacrifice, the white for peace and the anti-colonial " +
+      "White Flag League, the black for Sudan itself (whose name means “land of the black people”), " +
+      "and the green for Islam and agriculture. Adopted in 1970.",
+    myths: [
+      {
+        claim: "This flag has been Sudan’s since independence in 1956.",
+        reality:
+          "Sudan’s first flag (1956–1970) was a blue-yellow-green tricolour for the Nile, the desert " +
+          "and the farmland; the current Arab Liberation design replaced it only in 1970.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+    ],
+  },
+
+  RW: {
+    description:
+      "A horizontal tricolour of blue, yellow and green with a golden sun in the upper fly. The blue " +
+      "represents happiness and peace, the yellow economic development and the green hope of " +
+      "prosperity, while the sun stands for unity and enlightenment. Adopted in 2001 to replace the " +
+      "earlier red-yellow-green flag, which had become associated with the 1994 genocide.",
+    sources: [
+      { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    ],
+  },
+
+  UG: {
+    description:
+      "Six horizontal bands alternating black, yellow and red, with a white disc at the centre bearing " +
+      "a grey crowned crane. The black stands for the people, the yellow for Africa’s sunshine and the " +
+      "red for brotherhood; the crowned crane — a former military badge, shown with one leg raised — " +
+      "symbolises the country moving forward. Adopted at independence in 1962.",
+    sources: [
+      { title: "Flag of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
+    ],
+  },
+
+  TZ: {
+    description:
+      "A green upper triangle and a blue lower triangle divided by a black, gold-edged diagonal band. " +
+      "The green represents the land and agriculture, the black the Swahili people, the blue the " +
+      "Indian Ocean and the country’s lakes and rivers, and the gold edging its mineral wealth. " +
+      "Adopted in 1964, when Tanganyika and Zanzibar united, combining elements of their two flags.",
+    sources: [
+      { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    ],
+  },
+
+  ZW: {
+    description:
+      "Seven horizontal stripes (green, yellow, red and black, mirrored) with a white triangle at the " +
+      "hoist bearing a red star and the golden Zimbabwe Bird. The green stands for agriculture, the " +
+      "yellow for mineral wealth, the red for the blood of the liberation struggle and the black for " +
+      "the Black majority; the white triangle is peace, the red star national aspirations, and the " +
+      "Zimbabwe Bird is the soapstone emblem of the ruins of Great Zimbabwe. Adopted in 1980.",
+    sources: [
+      { title: "Flag of Zimbabwe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
