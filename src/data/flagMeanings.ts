@@ -2557,6 +2557,99 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  AG: {
+    description:
+      "A red field with an inverted V of black, blue and white bands and a golden rising sun on the " +
+      "black. The rising sun stands for the dawn of a new era; the black for African heritage, the " +
+      "blue for hope and the Caribbean Sea and the red for the energy of the people; the yellow, blue " +
+      "and white together stand for the sun, sea and sand, and the V for victory. Adopted in 1967.",
+    sources: [
+      { title: "Flag of Antigua and Barbuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
+    ],
+  },
+
+  KN: {
+    description:
+      "A green upper triangle and red lower triangle divided by a yellow-edged black diagonal band " +
+      "bearing two white stars. The green stands for the fertile land, the red for the fight against " +
+      "slavery and colonialism, the black for African heritage and the yellow for year-round " +
+      "sunshine; the two stars stand for hope and liberty and for the two islands. Adopted at " +
+      "independence in 1983.",
+    sources: [
+      { title: "Flag of Saint Kitts and Nevis — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
+    ],
+  },
+
+  NZ: {
+    description:
+      "A blue ensign with the Union Jack in the canton and the four red, white-edged stars of the " +
+      "Southern Cross in the fly. The blue evokes the sea and sky, the Southern Cross New Zealand’s " +
+      "place in the South Pacific, and the Union Jack its historical ties to Britain. Given statutory " +
+      "status in 1902; referendums in 2015–2016 considered a silver-fern design but voters chose to " +
+      "keep this flag.",
+    sources: [
+      { title: "Flag of New Zealand — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
+    ],
+  },
+
+  FJ: {
+    description:
+      "A light-blue ensign with the Union Jack in the canton and the shield of Fiji’s coat of arms in " +
+      "the fly. The light blue stands for the Pacific Ocean, so central to island life; the shield " +
+      "shows a British lion with a cocoa pod above panels of sugar cane, a coconut palm, a dove of " +
+      "peace and bananas. Adopted in 1970 and kept after Fiji became a republic; a proposed redesign " +
+      "was abandoned in 2016.",
+    sources: [
+      { title: "Flag of Fiji — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
+    ],
+  },
+
+  PG: {
+    description:
+      "A flag split diagonally: a red upper triangle with a golden Raggiana bird-of-paradise in flight " +
+      "and a black lower triangle with the five white stars of the Southern Cross. Red, black and " +
+      "gold are traditional colours of Papua New Guinea; the bird stands for the country’s tribal " +
+      "culture and emergence into nationhood and the constellation for its place in the southern " +
+      "hemisphere. Designed by the schoolgirl Susan Karike and adopted in 1971.",
+    sources: [
+      { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    ],
+  },
+
+  WS: {
+    description:
+      "A red field with a blue canton bearing the five white stars of the Southern Cross. The red is " +
+      "commonly read as courage, the white as purity and the blue as freedom, while the Southern " +
+      "Cross marks Samoa’s place in the South Pacific. The design dates from 1948–49 and was kept at " +
+      "independence in 1962.",
+    sources: [
+      { title: "Flag of Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+    ],
+  },
+
+  TO: {
+    description:
+      "A red field with a white canton bearing a red couped cross. The cross and the red stand for " +
+      "Christianity and the blood of Christ shed at the crucifixion, and the white for purity. Adopted " +
+      "in 1875 and protected by the constitution so that it can never be changed; the red field was " +
+      "added because an earlier white flag with a red cross was too like the Red Cross emblem.",
+    sources: [
+      { title: "Flag of Tonga — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
+    ],
+  },
+
+  VU: {
+    description:
+      "Red and green horizontal bands with a black, gold-edged Y-shape (pall) at the hoist, on which a " +
+      "gold boar’s tusk encloses two crossed namele fern fronds. The red stands for the blood that " +
+      "unites people, the green for the richness of the islands and the black for the Melanesian " +
+      "ni-Vanuatu people; the Y traces the layout of the islands, the boar’s tusk stands for " +
+      "prosperity and tradition and the fern fronds for peace. Adopted at independence in 1980.",
+    sources: [
+      { title: "Flag of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
