@@ -959,6 +959,79 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  HU: {
+    description:
+      "A horizontal tricolour of red, white and green. In the interpretation set out in the 2012 " +
+      "constitution the red stands for strength, the white for fidelity and the green for hope. The " +
+      "colours come from the medieval Hungarian coat of arms (they appear on seal cords from at least " +
+      "the 15th century); the tricolour itself dates from the revolution of 1848.",
+    myths: [
+      {
+        claim:
+          "The colours mean the blood shed for the homeland (red), freedom (white) and the country’s " +
+          "pastures (green).",
+        reality:
+          "A romantic-era folk interpretation. The documented origin is heraldic — the colours of the " +
+          "coat of arms — with the official meanings (strength, fidelity, hope) set only later.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hungary" },
+    ],
+  },
+
+  CZ: {
+    description:
+      "Two horizontal bands, white over red, with a blue isosceles triangle at the hoist. The white " +
+      "is associated with Bohemia, the red with Moravia and the blue with sovereignty (originally " +
+      "with Slovakia). Designed by Jaroslav Kursa and adopted in 1920 — the blue triangle was added " +
+      "to distinguish the plain white-over-red from Poland’s flag. It is the former Czechoslovak " +
+      "flag, kept by the Czech Republic when Czechoslovakia split in 1993.",
+    sources: [
+      { title: "Flag of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Czech_Republic" },
+    ],
+  },
+
+  HR: {
+    description:
+      "Three horizontal bands of red, white and blue (the Pan-Slavic colours) with the national coat " +
+      "of arms at the centre: the red-and-white checkerboard shield, the šahovnica, topped by a crown " +
+      "of five smaller shields for the historical regions of Croatia, Dubrovnik, Dalmatia, Istria and " +
+      "Slavonia. The tricolour dates from 1848; the current design was adopted in 1990, replacing the " +
+      "communist-era red star.",
+    sources: [
+      { title: "Flag of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    ],
+  },
+
+  RS: {
+    description:
+      "A horizontal tricolour of red, blue and white — the Pan-Slavic colours — with the coat of arms " +
+      "toward the hoist on the state flag. The tricolour has represented Serbia since 1835.",
+    myths: [
+      {
+        claim:
+          "Serbs created their flag by flying the Russian flag upside-down at a celebration.",
+        reality:
+          "The colours were adopted through official channels — set out in Serbia’s 1835 constitution " +
+          "and permitted by an Ottoman decree — not by inverting another country’s flag.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
+    ],
+  },
+
+  BG: {
+    description:
+      "A horizontal tricolour of white, green and red. It was first adopted in 1879 after Bulgaria’s " +
+      "liberation in the Russo-Turkish War, and the same colours have been used ever since (a state " +
+      "emblem was added in the hoist during the communist era and removed in 1990).",
+    sources: [
+      { title: "Flag of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
