@@ -2196,6 +2196,85 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  BT: {
+    description:
+      "A flag divided diagonally from the lower hoist to the upper fly — yellow above, orange below — " +
+      "with a white Druk (thunder dragon) holding jewels along the divide. The yellow stands for the " +
+      "king and secular authority, the orange for Buddhism, and the white dragon for the country " +
+      "itself (Druk Yul, the “Land of the Thunder Dragon”) and purity; the jewels represent wealth. " +
+      "The current design dates from 1969.",
+    sources: [
+      { title: "Flag of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+    ],
+  },
+
+  MV: {
+    description:
+      "A red field with a green rectangle bearing a white crescent. The red stands for the blood and " +
+      "sacrifice of the nation’s heroes, the green for peace and prosperity, and the crescent for " +
+      "Islam, the state religion. Adopted at independence in 1965.",
+    sources: [
+      { title: "Flag of the Maldives — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Maldives" },
+    ],
+  },
+
+  BN: {
+    description:
+      "A yellow field crossed by black and white diagonal stripes with the red national crest at the " +
+      "centre. The yellow stands for the Sultan, the white and black stripes for his two chief " +
+      "ministers, and the crest — whose upraised hands signify unity — for the protection of the " +
+      "state. Adopted in 1959.",
+    sources: [
+      { title: "Flag of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
+    ],
+  },
+
+  TL: {
+    description:
+      "A red field with a black triangle at the hoist bearing a white five-pointed star, over a larger " +
+      "yellow triangle. In the constitution the black stands for the obscurantism to be overcome, the " +
+      "yellow for the country’s wealth, the red for the struggle for liberation and the white star — " +
+      "“the light that guides” — for peace. Adopted at the restoration of independence in 2002.",
+    sources: [
+      { title: "Flag of East Timor — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_East_Timor" },
+    ],
+  },
+
+  KP: {
+    description:
+      "A broad central red band edged with thin white stripes between blue bands top and bottom, with " +
+      "a red five-pointed star in a white disc near the hoist. In the official reading the red stands " +
+      "for revolutionary spirit, the white for purity and the blue for sovereignty and peace, while " +
+      "the red star stands for socialism. Adopted in 1948.",
+    sources: [
+      { title: "Flag of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
+    ],
+  },
+
+  AF: {
+    description:
+      "A white field bearing the Shahada — the Islamic declaration of faith — in black. The white is " +
+      "said to stand for the purity of faith and government and the black text for the creed itself. " +
+      "This flag of the Islamic Emirate was adopted in 2021; the former Islamic Republic’s " +
+      "black-red-green tricolour is still used internationally and by the opposition, so the flag’s " +
+      "status is disputed.",
+    sources: [
+      { title: "Flag of Afghanistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
+    ],
+  },
+
+  SY: {
+    description:
+      "A horizontal tricolour of green, white and black with three red stars on the white band. The " +
+      "green, white and black recall the Rashidun, Umayyad and Abbasid periods, and the three stars " +
+      "were originally taken to stand for regions of the country. This is Syria’s 1930s independence " +
+      "flag, revived during the civil war and restored as the national flag in 2025 after the fall of " +
+      "the Assad government.",
+    sources: [
+      { title: "Flag of Syria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
