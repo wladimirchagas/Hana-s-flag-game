@@ -4944,6 +4944,45 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
     ],
   },
+
+  "JP-13": {
+    description:
+      "An Edo-purple field bearing the white Tokyo Metropolitan crest — a six-rayed sun with a dot at " +
+      "the centre, marking Tokyo as the metaphorical heart of Japan and its rays as development in all " +
+      "directions. Adopted in 1964.",
+    sources: [
+      { title: "Flag of Tokyo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tokyo" },
+    ],
+  },
+
+  "JP-01": {
+    description:
+      "A navy-blue field with a red seven-pointed star. The star, a modern reworking of the historic " +
+      "seven-pointed “North Star,” stands for Hokkaido’s pioneering spirit; the blue represents the " +
+      "northern seas and sky and the white the region’s snow. Adopted in 1967.",
+    sources: [
+      { title: "Flag of Hokkaido — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hokkaido" },
+    ],
+  },
+
+  "JP-34": {
+    description:
+      "A crimson field with a white stylised katakana “ヒ” (hi, for Hiroshima); the emblem’s " +
+      "overlapping circles express the prefecture’s growth and development.",
+    sources: [
+      { title: "Flag of Hiroshima Prefecture — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hiroshima_Prefecture" },
+    ],
+  },
+
+  "JP-47": {
+    description:
+      "A white field with three stacked circles, red around white around red. The emblem stands for " +
+      "the ocean, peace and development, with the central white circle forming the letter “O” for " +
+      "Okinawa.",
+    sources: [
+      { title: "Flag of Okinawa Prefecture — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Okinawa_Prefecture" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
