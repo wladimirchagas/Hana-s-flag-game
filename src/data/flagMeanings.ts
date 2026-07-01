@@ -578,6 +578,184 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  VN: {
+    description:
+      "A red field with a large gold five-pointed star at the centre. The red represents revolution " +
+      "and the blood of the struggle; the gold star stands for the nation, its five points " +
+      "traditionally taken to represent the workers, peasants, soldiers, intellectuals and traders " +
+      "united under the Communist Party. First raised in 1940 and adopted in 1945; the star’s points " +
+      "were straightened in 1955.",
+    myths: [
+      {
+        claim: "The flag was definitively designed by the revolutionary Nguyễn Hữu Tiến.",
+        reality:
+          "Authorship is disputed; Vietnam’s Ministry of Culture reported in 2001 that there is no " +
+          "documentation confirming Tiến as the designer.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
+    ],
+  },
+
+  ID: {
+    description:
+      "Two equal horizontal bands, red over white, called Sang Saka Merah-Putih. The red represents " +
+      "courage (and the body) and the white purity (and the spirit); the red-and-white pairing goes " +
+      "back to banners of the 13th-century Majapahit empire. Adopted at the declaration of " +
+      "independence in 1945.",
+    myths: [
+      {
+        claim: "Indonesia copied its flag from Monaco (which is near-identical).",
+        reality:
+          "The two flags resemble each other by coincidence (they differ slightly in shade and " +
+          "proportion). Indonesia’s red-and-white derives from its own Majapahit-era heritage, " +
+          "long predating the modern comparison.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Indonesia" },
+    ],
+  },
+
+  TH: {
+    description:
+      "The Trairong (“tricolour”): five horizontal stripes of red, white, blue, white, red, the " +
+      "central blue stripe double width. The colours follow the “Nation–Religion–King” theme — red " +
+      "for the nation and people, white for religion (Buddhism), and blue for the monarchy (also the " +
+      "auspicious colour of King Vajiravudh, Rama VI, who introduced it in 1917).",
+    myths: [
+      {
+        claim:
+          "King Vajiravudh created the symmetric design after seeing the old elephant flag flown " +
+          "upside-down.",
+        reality:
+          "A popular legend rather than documented fact; what is recorded is the 1917 adoption and " +
+          "the king’s role in the design.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Thailand" },
+    ],
+  },
+
+  PH: {
+    description:
+      "A horizontal bicolour of royal blue over red, with a white equilateral triangle at the hoist " +
+      "bearing a golden eight-rayed sun and three five-pointed stars. The eight rays represent the " +
+      "eight provinces that first rose in the 1896 revolution; the three stars stand for the island " +
+      "groups of Luzon, the Visayas and Mindanao; the white triangle represents the Katipunan and " +
+      "the ideals of liberty, equality and fraternity. Uniquely, the flag is inverted — red above " +
+      "blue — to signify a state of war. First flown in 1898.",
+    sources: [
+      { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
+    ],
+  },
+
+  PK: {
+    description:
+      "A dark green field with a white crescent and five-pointed star, and a white vertical stripe at " +
+      "the hoist (one-quarter of the flag). The green represents Pakistan’s Muslim majority and the " +
+      "white stripe its religious minorities; the crescent represents progress and the star light " +
+      "and knowledge. Based on the All-India Muslim League flag and adopted in 1947, days before " +
+      "independence.",
+    sources: [
+      { title: "Flag of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    ],
+  },
+
+  EG: {
+    description:
+      "Three horizontal bands of red, white and black with the golden Eagle of Saladin on the white " +
+      "band. In the symbolism of the 1952 revolution the red recalls the struggle and blood shed " +
+      "against colonial rule, the white the bright/peaceful future, and the black the end of a dark " +
+      "period of oppression. The current design was adopted in 1984.",
+    myths: [
+      {
+        claim: "The red-white-black tricolour is uniquely Egyptian.",
+        reality:
+          "It is the Arab Liberation Flag that spread from Egypt’s 1952 revolution; Iraq, Sudan, " +
+          "Syria and Yemen use closely related red-white-black designs.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Egypt — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
+    ],
+  },
+
+  NG: {
+    description:
+      "A vertical triband of green, white, green. The green bands represent Nigeria’s agriculture and " +
+      "natural wealth and the white band peace and unity. The design won a 1959 national competition " +
+      "by Taiwo Akinkunmi and was adopted at independence in 1960; the committee removed a red sun " +
+      "from his original entry.",
+    sources: [
+      { title: "Flag of Nigeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
+    ],
+  },
+
+  KE: {
+    description:
+      "Horizontal bands of black, red and green separated by thin white fimbriations, with a red, " +
+      "white and black Maasai shield over two crossed white spears at the centre. The black " +
+      "represents the people, the red the blood shed in the struggle for independence, the green the " +
+      "land, and the white peace; the shield and spears stand for the defence of freedom. Adopted at " +
+      "independence in 1963.",
+    sources: [
+      { title: "Flag of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
+    ],
+  },
+
+  ET: {
+    description:
+      "A horizontal tricolour of green, yellow and red with a blue disc bearing a golden pentagram " +
+      "and rays at the centre. The green stands for labour and development, the yellow for hope and " +
+      "justice, and the red for sacrifice; the blue disc represents peace and the star the unity of " +
+      "Ethiopia’s peoples. The current emblem dates from 1996 (modified 2009).",
+    myths: [
+      {
+        claim: "Ethiopia’s green-yellow-red are “Pan-African” colours borrowed from elsewhere.",
+        reality:
+          "The reverse is true: Ethiopia is the source of the Pan-African colours. After it kept its " +
+          "independence (notably at Adwa in 1896), newly independent African states adopted green, " +
+          "yellow and red in homage to it.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+    ],
+  },
+
+  KW: {
+    description:
+      "A horizontal triband of green, white and red with a black trapezium at the hoist. The colours " +
+      "come from a classical poem by Safi al-Din al-Hilli, in which white stands for the Arabs’ " +
+      "deeds, green for their lands, red for their swords and black for their battles. Adopted in " +
+      "1961; it is the only national flag whose charge is an acute trapezium.",
+    sources: [
+      { title: "Flag of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
+    ],
+  },
+
+  SA: {
+    description:
+      "A green field bearing, in white, the Islamic declaration of faith (the Shahada) in Thuluth " +
+      "script above a horizontal sword. The green is associated with Islam and the sword with " +
+      "justice and strength. Because the Shahada is sacred, the flag is never lowered to half-mast " +
+      "and is woven with two mirrored sides so the text reads correctly from both. Standardised in 1973.",
+    myths: [
+      {
+        claim: "The flag was designed by Hafiz Wahba.",
+        reality:
+          "A common misattribution; the King Abdulaziz Foundation records that the design was " +
+          "finalised by the Shura Council, not a single individual.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
