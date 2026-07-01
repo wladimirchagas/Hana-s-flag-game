@@ -3458,6 +3458,227 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Australian Capital Territory — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Australian_Capital_Territory" },
     ],
   },
+
+  "CH-ZH": {
+    description:
+      "A blue and white flag divided diagonally, in use since the 1220s. The diagonal split (and its " +
+      "former red Schwenkel pennant) is one of the oldest of the Swiss cantonal arms.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-BE": {
+    description:
+      "A black bear climbing a diagonal yellow band on a red field. The bear is canting arms for Bern " +
+      "(Bär), the city’s emblem since the Middle Ages (recorded from 1289).",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-LU": {
+    description:
+      "A field divided blue and white — set vertically in the coat of arms but horizontally on the " +
+      "flag, a difference that comes from the canton’s medieval gonfalon banner. Documented from 1386.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-UR": {
+    description:
+      "A black bull’s head on a gold field — canting arms for Uri (from Latin urus, the aurochs). It " +
+      "was carried into medieval battles including Morgarten in 1315.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-SZ": {
+    description:
+      "A plain red field with a small white cross in the upper hoist. Schwyz gave both its name and " +
+      "its red colour to the Swiss Confederation; in 1480 Pope Sixtus IV linked the red to the " +
+      "Passion of Christ.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-OW": {
+    description:
+      "A field divided red and white with a single key. The single (rather than double) key was fixed " +
+      "in 1816 to distinguish Obwalden from Nidwalden.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-NW": {
+    description:
+      "A red field with a double key — the keys of Saint Peter — derived from 15th-century seals.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-GL": {
+    description:
+      "A red field bearing Saint Fridolin, the pilgrim who brought Christianity to the region, in use " +
+      "since 1388; the current design dates from 1959.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-ZG": {
+    description:
+      "A white field crossed by a single blue horizontal stripe — one of the earliest documented " +
+      "cantonal designs, recorded in 1319.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-FR": {
+    description:
+      "A field divided black over white (per fess), first recorded in 1478 as Fribourg gained its " +
+      "independence from Savoy.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-SO": {
+    description:
+      "A field divided red over white, documented from 1443.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-BS": {
+    description:
+      "A white field with a black bishop’s crozier, the Baselstab, adopted as a heraldic emblem in " +
+      "1385 from earlier civic seals.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-BL": {
+    description:
+      "A white field with a red crozier bearing seven crockets, adopted in 1834; the staff is turned " +
+      "to face the opposite way from Basel-Stadt’s to mark the two half-cantons’ separation.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-SH": {
+    description:
+      "A gold field with a black ram — canting arms for Schaffhausen (Schaf, “sheep/ram”), documented " +
+      "from 1218; the ram was given a crown in 1512.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-AR": {
+    description:
+      "A white field with a black rampant bear flanked by the letters V and R (for Ussere Rhoden, the " +
+      "“outer districts”). The bear comes from the Abbey of Saint Gall; the design dates from after " +
+      "the Reformation-era split of the Appenzell districts.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-SG": {
+    description:
+      "A green field with a silver fasces (a bundle of rods). It was created in 1803, when the canton " +
+      "was assembled from previously separate territories under the Helvetic Republic.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-GR": {
+    description:
+      "Three historical arms combined in one shield, adopted in 1933, standing for the Three Leagues " +
+      "that united to form the canton of Graubünden (the Grisons).",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-TG": {
+    description:
+      "A field divided diagonally white and green with two gold lions, created in 1803 from the arms " +
+      "of the House of Kyburg (the gold-on-white being an intentional break with the usual heraldic " +
+      "colour rule).",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-TI": {
+    description:
+      "A field divided red and blue, designed in 1803. Neither its designer nor its intended " +
+      "symbolism was recorded.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-VD": {
+    description:
+      "A green and white flag bearing the motto “Liberté et Patrie” (“Liberty and Homeland”) in gold. " +
+      "Adopted in 1803, it derives from the flag of the Vaudois uprising against Bernese rule.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-VS": {
+    description:
+      "A field divided vertically white and red with thirteen stars, formalised in 1815. The stars " +
+      "stand for the districts (dizains) of the canton; the thirteenth was added when Valais joined " +
+      "the restored Swiss Confederation in 1815.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-NE": {
+    description:
+      "A green, white and red flag with a small white Swiss cross in the canton, adopted in 1857 from " +
+      "the flag of the 1848 republican revolution that ended Neuchâtel’s status as a Prussian " +
+      "principality.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-GE": {
+    description:
+      "A shield divided per pale: half a gold imperial eagle and half a gold key of Saint Peter, " +
+      "representing Geneva’s medieval status as both a free imperial city and an episcopal seat. " +
+      "Documented from the 15th century.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
+
+  "CH-JU": {
+    description:
+      "A shield divided per pale: a red bishop’s crozier on white, and red-and-white stripes whose " +
+      "seven bands stand for the historic districts of the Bernese Jura. Designed in 1943 and adopted " +
+      "when the canton was created in 1979.",
+    sources: [
+      { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
