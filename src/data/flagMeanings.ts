@@ -4824,6 +4824,126 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Wisconsin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wisconsin" },
     ],
   },
+
+  "US-OK": {
+    description:
+      "A sky-blue field with an Osage buffalo-skin war shield hung with seven eagle feathers, crossed " +
+      "by a peace pipe and an olive branch. The shield covered by symbols of peace expresses a united " +
+      "people’s love of peace.",
+    sources: [
+      { title: "Flag of Oklahoma — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oklahoma" },
+    ],
+  },
+
+  "US-NV": {
+    description:
+      "A cobalt-blue field with a silver star, sprays of sagebrush and a gold scroll reading “Battle " +
+      "Born.” The motto recalls Nevada’s admission during the Civil War (1864) and the silver star its " +
+      "nickname, the Silver State.",
+    sources: [
+      { title: "Flag of Nevada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nevada" },
+    ],
+  },
+
+  "US-SD": {
+    description:
+      "A sky-blue field with the state seal ringed by golden sun-rays and the words “South Dakota — " +
+      "The Mount Rushmore State.” The sun stands for the state’s plentiful sunshine and the seal for " +
+      "its farming, mining and river trade.",
+    sources: [
+      { title: "Flag of South Dakota — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Dakota" },
+    ],
+  },
+
+  "US-MT": {
+    description:
+      "A blue field with the Great Seal — mountains and the Great Falls of the Missouri, with a " +
+      "plough, pick and shovel for agriculture and mining — beneath the motto “Oro y Plata” (“Gold " +
+      "and Silver”).",
+    sources: [
+      { title: "Flag of Montana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Montana" },
+    ],
+  },
+
+  "US-ID": {
+    description:
+      "A blue field with the state seal — the only U.S. state seal designed by a woman, Emma Edwards " +
+      "Green — showing a miner and a woman for equality, liberty and justice, an elk’s head, and the " +
+      "motto “Esto Perpetua” (“Let it be perpetual”).",
+    sources: [
+      { title: "Flag of Idaho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Idaho" },
+    ],
+  },
+
+  "US-ND": {
+    description:
+      "A blue field with a bald eagle holding an olive branch and a sheaf of seven arrows, copied from " +
+      "the regimental banner carried by North Dakota troops in the Spanish-American and " +
+      "Philippine-American Wars.",
+    sources: [
+      { title: "Flag of North Dakota — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Dakota" },
+    ],
+  },
+
+  "US-NE": {
+    description:
+      "A blue field with the state seal — a blacksmith, a steamboat on the Missouri, sheaves of wheat " +
+      "and a railroad running toward the Rocky Mountains — beneath the motto “Equality Before the " +
+      "Law.”",
+    sources: [
+      { title: "Flag of Nebraska — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nebraska" },
+    ],
+  },
+
+  "US-WV": {
+    description:
+      "A white field with a blue border and the state arms: a farmer and a miner beside a boulder " +
+      "dated June 20, 1863 (statehood), with crossed rifles and a liberty cap, wreathed in " +
+      "rhododendron and the motto “Montani Semper Liberi” (“Mountaineers Are Always Free”).",
+    sources: [
+      { title: "Flag of West Virginia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_West_Virginia" },
+    ],
+  },
+
+  "US-KY": {
+    description:
+      "A blue field with the state seal — two men embracing beneath the motto “United We Stand, " +
+      "Divided We Fall,” with sprigs of goldenrod. The figures stand for the unity of frontiersmen " +
+      "and statesmen (popularly, though not officially, Daniel Boone and Henry Clay).",
+    sources: [
+      { title: "Flag of Kentucky — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kentucky" },
+    ],
+  },
+
+  "US-IA": {
+    description:
+      "A blue, white and red vertical tricolour recalling the French flag and Iowa’s French colonial " +
+      "heritage, with an eagle bearing the motto “Our Liberties We Prize and Our Rights We Will " +
+      "Maintain.” Blue stands for loyalty and justice, white for purity and red for courage.",
+    sources: [
+      { title: "Flag of Iowa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iowa" },
+    ],
+  },
+
+  "US-NH": {
+    description:
+      "A blue field with the state seal — the frigate Raleigh under construction at Portsmouth beside " +
+      "a granite boulder — ringed by a laurel wreath and nine stars for New Hampshire as the ninth " +
+      "state to ratify the Constitution.",
+    sources: [
+      { title: "Flag of New Hampshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Hampshire" },
+    ],
+  },
+
+  "US-MP": {
+    description:
+      "A dark-blue field, for the Pacific Ocean, with a white star for the United States over a grey " +
+      "latte stone representing the Chamorro people, all encircled by a mwarmwar flower garland for " +
+      "the Carolinian people. Adopted in 1985.",
+    sources: [
+      { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
