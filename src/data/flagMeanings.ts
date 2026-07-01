@@ -4628,6 +4628,202 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Thuringia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Thuringia" },
     ],
   },
+
+  "US-CA": {
+    description:
+      "The Bear Flag: a California grizzly walking on a patch of grass, with a red star, a red bottom " +
+      "stripe and the words “California Republic” on a white field. It descends from the banner of the " +
+      "1846 Bear Flag Revolt; the red star echoes an earlier 1836 “Lone Star” independence flag.",
+    sources: [
+      { title: "Flag of California — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_California" },
+    ],
+  },
+
+  "US-WA": {
+    description:
+      "A green field with the state seal bearing a portrait of George Washington — the only U.S. state " +
+      "flag with a green field and the only one depicting a president. The green stands for the " +
+      "forests of western Washington and the gold seal for the wheat country of the east. Adopted 1923.",
+    sources: [
+      { title: "Flag of Washington — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Washington_(state)" },
+    ],
+  },
+
+  "US-OR": {
+    description:
+      "A navy-blue flag with the state seal and 33 stars (Oregon being the 33rd state) on the front " +
+      "and a gold beaver, the state animal, on the back — the last U.S. state flag with a different " +
+      "design on each side.",
+    sources: [
+      { title: "Flag of Oregon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oregon" },
+    ],
+  },
+
+  "US-NJ": {
+    description:
+      "A buff (tan) field with the state arms — the goddesses Liberty and Ceres flanking a shield of " +
+      "three ploughs, beneath a horse’s head. The buff colour comes from the facings George Washington " +
+      "ordered in 1779 for the uniforms of the New Jersey Continental Line.",
+    sources: [
+      { title: "Flag of New Jersey — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Jersey" },
+    ],
+  },
+
+  "US-WY": {
+    description:
+      "A blue field with white and red borders and a white bison branded with the state seal. The " +
+      "bison is the “monarch of the plains,” the red border honours Native Americans and the pioneers, " +
+      "and the blue stands for fidelity and justice. Adopted 1917.",
+    sources: [
+      { title: "Flag of Wyoming — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wyoming" },
+    ],
+  },
+
+  "US-NY": {
+    description:
+      "A dark-blue field with the state arms: Liberty (treading on a crown) and Justice flanking a " +
+      "Hudson River landscape, beneath the motto “Excelsior” (“ever upward”).",
+    sources: [
+      { title: "Flag of New York — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_York_(state)" },
+    ],
+  },
+
+  "US-VT": {
+    description:
+      "A blue field with the state arms — a pine tree, a red cow and sheaves of wheat, the Green " +
+      "Mountains and a deer’s head — standing for the state’s forests, farming and wildlife. Adopted " +
+      "1923.",
+    sources: [
+      { title: "Flag of Vermont — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vermont" },
+    ],
+  },
+
+  "US-FL": {
+    description:
+      "A white field with a red saltire and the state seal (a Seminole woman scattering flowers, a " +
+      "steamboat, a sabal palm and sun rays). The red bars were added by amendment in 1900; no single " +
+      "reason for them was ever documented.",
+    sources: [
+      { title: "Flag of Florida — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Florida" },
+    ],
+  },
+
+  "US-KS": {
+    description:
+      "A blue field with the state seal — a sunflower above a scene of a rising sun, a steamboat, " +
+      "wagon trains and bison — beneath 34 stars for Kansas as the 34th state and the motto “Ad astra " +
+      "per aspera” (“to the stars through difficulties”).",
+    sources: [
+      { title: "Flag of Kansas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kansas" },
+    ],
+  },
+
+  "US-LA": {
+    description:
+      "A blue field with a white pelican tearing its breast to feed its young (with three drops of " +
+      "blood) and the motto “Union, Justice, Confidence.” The “pelican in her piety” is an old " +
+      "symbol of self-sacrifice and devotion.",
+    sources: [
+      { title: "Flag of Louisiana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Louisiana" },
+    ],
+  },
+
+  "US-MA": {
+    description:
+      "A white field bearing the state arms — an Algonquian figure holding a bow with a downward " +
+      "(peaceful) arrow and a single star for statehood. A public redesign process was under way as " +
+      "of 2024.",
+    sources: [
+      { title: "Flag of Massachusetts — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Massachusetts" },
+    ],
+  },
+
+  "US-PA": {
+    description:
+      "A blue field with the state arms: a ship for commerce, a plough for agriculture and three wheat " +
+      "sheaves for prosperity, flanked by two horses and topped by an eagle, with the motto “Virtue, " +
+      "Liberty and Independence.”",
+    sources: [
+      { title: "Flag of Pennsylvania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pennsylvania" },
+    ],
+  },
+
+  "US-MI": {
+    description:
+      "A blue field with the state arms — an elk and a moose flanking a shield of a sunrise over a " +
+      "peninsula, a bald eagle above — with the mottos “Tuebor” (“I will defend”) and “Si quaeris " +
+      "peninsulam amoenam circumspice” (“If you seek a pleasant peninsula, look about you”).",
+    sources: [
+      { title: "Flag of Michigan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Michigan" },
+    ],
+  },
+
+  "US-ME": {
+    description:
+      "A blue field with the state arms — a farmer and a sailor beside a shield showing a moose " +
+      "resting under a pine tree — with the North Star and the motto “Dirigo” (“I lead”).",
+    sources: [
+      { title: "Flag of Maine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Maine" },
+    ],
+  },
+
+  "US-CT": {
+    description:
+      "A blue field with a white shield of three grapevines and the motto “Qui transtulit sustinet” " +
+      "(“He who transplanted sustains”), recalling the colony’s founding settlers.",
+    sources: [
+      { title: "Flag of Connecticut — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Connecticut" },
+    ],
+  },
+
+  "US-IL": {
+    description:
+      "A white field with the Great Seal of Illinois — a bald eagle on a boulder holding a shield of " +
+      "stars and stripes, with the dates 1818 and 1868 and the motto “State Sovereignty, National " +
+      "Union.”",
+    sources: [
+      { title: "Flag of Illinois — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Illinois" },
+    ],
+  },
+
+  "US-VA": {
+    description:
+      "A blue field with the state seal — Virtus, personifying virtue, standing over a defeated tyrant " +
+      "— beneath the motto “Sic Semper Tyrannis” (“Thus always to tyrants”).",
+    sources: [
+      { title: "Flag of Virginia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Virginia" },
+    ],
+  },
+
+  "US-MO": {
+    description:
+      "Red, white and blue horizontal stripes with the state arms in a blue band of 24 stars, for " +
+      "Missouri as the 24th state. Red stands for valour, white for purity and blue for vigilance and " +
+      "justice; the tricolour also recalls the state’s French Louisiana heritage.",
+    sources: [
+      { title: "Flag of Missouri — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Missouri" },
+    ],
+  },
+
+  "US-DE": {
+    description:
+      "A colonial-blue field with a buff diamond bearing the state arms (a ship, an ox, wheat, a " +
+      "farmer and a soldier) and the date December 7, 1787 — the day Delaware became the first state " +
+      "to ratify the Constitution. The colours recall Washington’s uniform.",
+    sources: [
+      { title: "Flag of Delaware — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Delaware" },
+    ],
+  },
+
+  "US-WI": {
+    description:
+      "A blue field with the state arms — a sailor and a yeoman flanking a shield of a plough, tools " +
+      "and an anchor for farming, mining, manufacturing and navigation — with the motto “Forward” and " +
+      "a badger crest.",
+    sources: [
+      { title: "Flag of Wisconsin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wisconsin" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
