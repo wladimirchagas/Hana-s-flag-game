@@ -2366,6 +2366,108 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  GT: {
+    description:
+      "Sky-blue and white vertical bands (blue at the sides) with the coat of arms at the centre: a " +
+      "resplendent quetzal, a scroll dated 15 September 1821, crossed rifles and swords and a laurel " +
+      "wreath. The blue stands for justice and loyalty (and the two oceans) and the white for purity " +
+      "and peace; the quetzal is liberty, the scroll independence, the rifles defence, the swords " +
+      "honour and the laurel victory. The blue and white come from the Federal Republic of Central " +
+      "America. Adopted in 1871.",
+    sources: [
+      { title: "Flag of Guatemala — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
+    ],
+  },
+
+  BZ: {
+    description:
+      "A blue field with a red band top and bottom and a white disc bearing the coat of arms, in which " +
+      "two woodcutters — one of Mestizo and one of African descent — flank a mahogany tree with " +
+      "logging tools, above the motto Sub Umbra Floreo (“In the shade I flourish”). It is the only " +
+      "national flag with people as a central element. The blue honours one main party and the red " +
+      "borders the other. Adopted at independence in 1981.",
+    sources: [
+      { title: "Flag of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
+    ],
+  },
+
+  HN: {
+    description:
+      "A horizontal blue-white-blue triband with five blue stars arranged in an X on the white band. " +
+      "The blue stands for the Pacific and the Caribbean and the sky, and the white for the land and " +
+      "peace; the five stars represent the five states of the former Federal Republic of Central " +
+      "America and the hope that they might one day reunite. Adopted in 1866.",
+    sources: [
+      { title: "Flag of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
+    ],
+  },
+
+  NI: {
+    description:
+      "A horizontal blue-white-blue triband with the coat of arms at the centre: a triangle enclosing " +
+      "five volcanoes, a rising sun, a cap of liberty and a rainbow. The blue stands for the two " +
+      "oceans and the sky and the white for peace; the five volcanoes represent the five Central " +
+      "American states. Adopted in 1908, it is one of the few national flags to include the colour " +
+      "purple (in the rainbow).",
+    sources: [
+      { title: "Flag of Nicaragua — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
+    ],
+  },
+
+  SV: {
+    description:
+      "A horizontal blue-white-blue triband with the national coat of arms in the centre. The blue " +
+      "stands for the sky and the oceans on either side of Central America and the white for peace. " +
+      "Its design descends from the flag of the Federal Republic of Central America; adopted in 1912.",
+    sources: [
+      { title: "Flag of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
+    ],
+  },
+
+  CR: {
+    description:
+      "Five horizontal stripes — blue, white, red, white, blue, with the red band double width — and " +
+      "the coat of arms on the state flag. The colours echo the ideals of the French Revolution: the " +
+      "blue for the sky and opportunity, the white for peace and wisdom, and the red for the warmth " +
+      "and blood of the people. The red stripe was added in 1848 at the suggestion of Pacífica " +
+      "Fernández.",
+    sources: [
+      { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    ],
+  },
+
+  HT: {
+    description:
+      "Two horizontal bands, blue over red, with the coat of arms on a white panel (on the state " +
+      "flag). The blue and red stand for the union of Haiti’s Black and mixed-race citizens; the arms " +
+      "show a royal palm crowned with a cap of liberty over weapons, beneath the motto L’Union fait " +
+      "la Force (“Unity makes strength”). First adopted in 1806 and restored in 1986.",
+    myths: [
+      {
+        claim:
+          "Dessalines made the flag in 1803 by tearing the white out of the French tricolour, which " +
+          "Catherine Flon then sewed together.",
+        reality:
+          "A cherished national story; the design in fact evolved over time, and the coat of arms was " +
+          "not added until 1937 (partly to distinguish it from Liechtenstein’s similar blue-red flag).",
+      },
+    ],
+    sources: [
+      { title: "Flag of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+    ],
+  },
+
+  DO: {
+    description:
+      "A white cross that divides the flag into four rectangles — blue and red above, red and blue " +
+      "below — with the coat of arms at the centre. The blue stands for liberty, the white cross for " +
+      "salvation and the red for the blood of the heroes. The arms uniquely include an open Bible, " +
+      "making it the only national flag to depict one. First hoisted in 1844.",
+    sources: [
+      { title: "Flag of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
