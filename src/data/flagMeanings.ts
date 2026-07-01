@@ -4307,6 +4307,643 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Cesar Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cesar_Department" },
     ],
   },
+
+  "BR-RJ": {
+    description:
+      "A blue and white field bearing the state coat of arms, whose emblems include an eagle and " +
+      "mountains. Adopted in 1965, it was kept unchanged after the state merged with Guanabara in 1975.",
+    sources: [
+      { title: "Flag of Rio de Janeiro — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rio_de_Janeiro_(state)" },
+    ],
+  },
+
+  "BR-RS": {
+    description:
+      "Green, red and yellow horizontal stripes with the state arms at the centre. The green and " +
+      "yellow stand for Brazil and the red for the revolution and courage of the province; the design " +
+      "comes from the flag of the Riograndense Republic of the 1836–45 Farroupilha revolt and was " +
+      "re-established in 1966.",
+    sources: [
+      { title: "Flag of Rio Grande do Sul — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rio_Grande_do_Sul" },
+    ],
+  },
+
+  "BR-AL": {
+    description:
+      "A vertical tricolour of red, white and blue — echoing the French flag and the ideals of the " +
+      "Revolution — with the state arms at the centre. The arms show three shells for three historic " +
+      "towns, three fish for the main lagoons and the fishing industry, sugarcane and cotton, and a " +
+      "silver star.",
+    sources: [
+      { title: "Flag of Alagoas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Alagoas" },
+    ],
+  },
+
+  "MY-01": {
+    description:
+      "A navy-blue field with a red canton bearing a white crescent and five-pointed star. The blue " +
+      "stands for the state, the red for the warriors who defend Johor, and the crescent and star for " +
+      "Islam and the ruler.",
+    sources: [
+      { title: "Flag of Johor — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Johor" },
+    ],
+  },
+
+  "MY-02": {
+    description:
+      "A red field with the state arms at the hoist: a yellow shield for the ruler’s authority, a " +
+      "green crescent for Islam and a wreath of rice stalks for the state’s agriculture. Adopted in " +
+      "1912.",
+    sources: [
+      { title: "Flag of Kedah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kedah" },
+    ],
+  },
+
+  "MY-03": {
+    description:
+      "A red field with a white emblem of a crescent and star between two kris and spears. The red " +
+      "stands for the honesty of the people and ruler and the white for the sanctity of the Sultan; " +
+      "the crescent and star are Islam. Adopted in 1924.",
+    sources: [
+      { title: "Flag of Kelantan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kelantan" },
+    ],
+  },
+
+  "MY-04": {
+    description:
+      "Red and white bands with a blue canton bearing a yellow crescent and star — the national " +
+      "colours, with the crescent and star for Islam. Adopted in 1957, before Malayan independence.",
+    sources: [
+      { title: "Flag of Malacca — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malacca" },
+    ],
+  },
+
+  "MY-05": {
+    description:
+      "A yellow field with a canton split diagonally, red over black. The yellow stands for the ruler " +
+      "(Yang di-Pertuan Besar), the red for the people and the black for the four traditional " +
+      "chiefs (undang), reflecting the state’s Minangkabau heritage. Adopted in 1895.",
+    sources: [
+      { title: "Flag of Negeri Sembilan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Negeri_Sembilan" },
+    ],
+  },
+
+  "MY-06": {
+    description:
+      "Two horizontal bands, white over black. The white stands for the Sultan and the black for the " +
+      "bendahara (chief minister) and the people. Adopted in 1903.",
+    sources: [
+      { title: "Flag of Pahang — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pahang" },
+    ],
+  },
+
+  "MY-07": {
+    description:
+      "Light-blue, white and yellow vertical bands with an areca-nut palm on the white. The blue " +
+      "stands for the sea around the island, the white for peace and the yellow for prosperity.",
+    sources: [
+      { title: "Flag of Penang — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Penang" },
+    ],
+  },
+
+  "MY-08": {
+    description:
+      "Three horizontal bands of white, yellow and black for the royal hierarchy: white for the " +
+      "Sultan, yellow for the crown prince (Raja Muda) and black for the next heir (Raja Di Hilir). " +
+      "Adopted in 1879.",
+    sources: [
+      { title: "Flag of Perak — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Perak" },
+    ],
+  },
+
+  "MY-09": {
+    description:
+      "A yellow band over a dark-blue one. The yellow stands for the Raja of Perlis and the blue for " +
+      "the people; the yellow set above the blue signifies the close bond between ruler and people.",
+    sources: [
+      { title: "Flag of Perlis — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Perlis" },
+    ],
+  },
+
+  "MY-10": {
+    description:
+      "A field quartered red and yellow with a white crescent and star in the canton. The red stands " +
+      "for bravery and the yellow for royalty; the crescent and star are Islam. In its current form " +
+      "since 1965.",
+    sources: [
+      { title: "Flag of Selangor — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Selangor" },
+    ],
+  },
+
+  "MY-11": {
+    description:
+      "A black field within a thick white border, with a white crescent and star at the centre. The " +
+      "white stands for the Sultan and the black for the people; the white border represents the " +
+      "Sultan’s duty to protect his subjects, and the crescent and star are Islam. Adopted in 1953.",
+    sources: [
+      { title: "Flag of Terengganu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Terengganu" },
+    ],
+  },
+
+  "MY-12": {
+    description:
+      "Horizontal blue, white and red bands with a dark-blue silhouette of Mount Kinabalu on a " +
+      "light-blue canton. The blues stand for peace, unity and strength, the white for purity and " +
+      "justice and the red for courage; Mount Kinabalu represents the state. Adopted in 1988.",
+    sources: [
+      { title: "Flag of Sabah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sabah" },
+    ],
+  },
+
+  "MY-13": {
+    description:
+      "Called Ibu Pertiwi (“Motherland”): a yellow field crossed by black and red diagonal bars with " +
+      "a yellow nine-pointed star. The yellow stands for the rule of law and unity, the red for " +
+      "courage and the black for natural resources; the nine points recall Sarawak’s original nine " +
+      "divisions. Adopted in 1988.",
+    sources: [
+      { title: "Flag of Sarawak — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sarawak" },
+    ],
+  },
+
+  "MY-14": {
+    description:
+      "A blue field with red and white stripes and a yellow crescent and fourteen-pointed star — a " +
+      "variant of the national flag for the federal capital. The red stands for courage, the blue for " +
+      "the unity of its people, the yellow for sovereignty and the white for cleanliness. Adopted in " +
+      "1990.",
+    sources: [
+      { title: "Flag of Kuala Lumpur — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kuala_Lumpur" },
+    ],
+  },
+
+  "DE-BW": {
+    description:
+      "A black band over a gold one. The colours were drawn in 1952 from the flags of the states that " +
+      "merged to form Baden-Württemberg — Baden’s yellow-and-red and Württemberg’s black-and-red.",
+    sources: [
+      { title: "Flag of Baden-Württemberg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Baden-W%C3%BCrttemberg" },
+    ],
+  },
+
+  "DE-BY": {
+    description:
+      "White and blue, shown either as horizontal bands or as a field of lozenges. Both are the " +
+      "colours of the Wittelsbach dynasty, which ruled Bavaria from 1180 to 1918; the lozenge " +
+      "pattern’s exact origin is disputed.",
+    sources: [
+      { title: "Flag of Bavaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bavaria" },
+    ],
+  },
+
+  "DE-BE": {
+    description:
+      "A white field with red stripes at top and bottom and a black bear striding across it. The bear " +
+      "is a canting emblem for Berlin, used on the city’s seals and coins since the late 12th century.",
+    sources: [
+      { title: "Flag of Berlin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Berlin" },
+    ],
+  },
+
+  "DE-BB": {
+    description:
+      "A red band over a white one, with the red eagle (the Märkischer Adler) on the state flag. The " +
+      "red and white are the historic colours of the Margraviate of Brandenburg, restored when the " +
+      "state was re-established in 1990.",
+    sources: [
+      { title: "Flag of Brandenburg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brandenburg" },
+    ],
+  },
+
+  "DE-HB": {
+    description:
+      "The Speckflagge (“bacon flag”): at least eight alternating red and white horizontal stripes, " +
+      "checked at the hoist. The red and white are Bremen’s Hanseatic colours; the origin of the " +
+      "colours themselves is not documented.",
+    sources: [
+      { title: "Flag of Bremen — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bremen" },
+    ],
+  },
+
+  "DE-HH": {
+    description:
+      "A red field with a white three-towered castle, the arms of the Hanseatic city of Hamburg. The " +
+      "castle appears on the city’s seals from as early as 1241 and became the flag design in 1751.",
+    sources: [
+      { title: "Flag of Hamburg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hamburg" },
+    ],
+  },
+
+  "DE-HE": {
+    description:
+      "A red band over a white one, from the red-and-white barry lion of the Ludowingian dynasty, " +
+      "which passed to the House of Hesse in 1247.",
+    sources: [
+      { title: "Flag of Hesse — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hesse" },
+    ],
+  },
+
+  "DE-MV": {
+    description:
+      "Five horizontal stripes — blue, white, yellow, white and red — designed in 1991 to combine the " +
+      "blue-and-white of Western Pomerania with the blue-yellow-red of Mecklenburg, the two regions " +
+      "that make up the state.",
+    sources: [
+      { title: "Flag of Mecklenburg-Vorpommern — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mecklenburg-Vorpommern" },
+    ],
+  },
+
+  "DE-NI": {
+    description:
+      "The German black-red-gold with the state arms — a white Saxon steed on red — toward the hoist. " +
+      "Adopted in 1951 as a neutral flag for a state assembled from the formerly separate lands of " +
+      "Hanover, Brunswick, Oldenburg and Schaumburg-Lippe.",
+    sources: [
+      { title: "Flag of Lower Saxony — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lower_Saxony" },
+    ],
+  },
+
+  "DE-NW": {
+    description:
+      "A horizontal tricolour of green, white and red, combining the colours of the former Prussian " +
+      "provinces the state was built from — the Rhineland and Westphalia. The state arms show the " +
+      "Rhine, the Westphalian horse and the rose of Lippe.",
+    sources: [
+      { title: "Flag of North Rhine-Westphalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Rhine-Westphalia" },
+    ],
+  },
+
+  "DE-RP": {
+    description:
+      "The German black-red-gold tricolour with the state coat of arms in the upper hoist. Adopted in " +
+      "1948.",
+    sources: [
+      { title: "Flag of Rhineland-Palatinate — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rhineland-Palatinate" },
+    ],
+  },
+
+  "DE-SL": {
+    description:
+      "The German black-red-gold tricolour bearing the arms of Saarland, whose quarters stand for the " +
+      "four historic territories of the region — Nassau-Saarbrücken, the Archbishopric of Trier, the " +
+      "Duchy of Lorraine and Palatinate-Zweibrücken.",
+    sources: [
+      { title: "Flag of Saarland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saarland" },
+    ],
+  },
+
+  "DE-SN": {
+    description:
+      "A white band over a green one — the colours established for the Kingdom of Saxony in 1815. No " +
+      "deeper symbolism is documented beyond their long use as the state colours.",
+    sources: [
+      { title: "Flag of Saxony — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saxony" },
+    ],
+  },
+
+  "DE-ST": {
+    description:
+      "A yellow band over a black one, from the black-and-yellow of the former Prussian Province of " +
+      "Saxony; the order was reversed in 1991 to avoid confusion with Baden-Württemberg.",
+    sources: [
+      { title: "Flag of Saxony-Anhalt — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saxony-Anhalt" },
+    ],
+  },
+
+  "DE-SH": {
+    description:
+      "A horizontal tricolour of blue, white and red, combining the colours of Schleswig (blue, with " +
+      "two lions) and Holstein (red and white, with a nettle leaf), the two duchies that make up the " +
+      "state.",
+    sources: [
+      { title: "Flag of Schleswig-Holstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Schleswig-Holstein" },
+    ],
+  },
+
+  "DE-TH": {
+    description:
+      "A white band over a red one, from the heraldic colours of the Ludowingian rulers of the " +
+      "medieval Landgraviate of Thuringia.",
+    sources: [
+      { title: "Flag of Thuringia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Thuringia" },
+    ],
+  },
+
+  "US-CA": {
+    description:
+      "The Bear Flag: a California grizzly walking on a patch of grass, with a red star, a red bottom " +
+      "stripe and the words “California Republic” on a white field. It descends from the banner of the " +
+      "1846 Bear Flag Revolt; the red star echoes an earlier 1836 “Lone Star” independence flag.",
+    sources: [
+      { title: "Flag of California — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_California" },
+    ],
+  },
+
+  "US-WA": {
+    description:
+      "A green field with the state seal bearing a portrait of George Washington — the only U.S. state " +
+      "flag with a green field and the only one depicting a president. The green stands for the " +
+      "forests of western Washington and the gold seal for the wheat country of the east. Adopted 1923.",
+    sources: [
+      { title: "Flag of Washington — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Washington_(state)" },
+    ],
+  },
+
+  "US-OR": {
+    description:
+      "A navy-blue flag with the state seal and 33 stars (Oregon being the 33rd state) on the front " +
+      "and a gold beaver, the state animal, on the back — the last U.S. state flag with a different " +
+      "design on each side.",
+    sources: [
+      { title: "Flag of Oregon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oregon" },
+    ],
+  },
+
+  "US-NJ": {
+    description:
+      "A buff (tan) field with the state arms — the goddesses Liberty and Ceres flanking a shield of " +
+      "three ploughs, beneath a horse’s head. The buff colour comes from the facings George Washington " +
+      "ordered in 1779 for the uniforms of the New Jersey Continental Line.",
+    sources: [
+      { title: "Flag of New Jersey — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Jersey" },
+    ],
+  },
+
+  "US-WY": {
+    description:
+      "A blue field with white and red borders and a white bison branded with the state seal. The " +
+      "bison is the “monarch of the plains,” the red border honours Native Americans and the pioneers, " +
+      "and the blue stands for fidelity and justice. Adopted 1917.",
+    sources: [
+      { title: "Flag of Wyoming — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wyoming" },
+    ],
+  },
+
+  "US-NY": {
+    description:
+      "A dark-blue field with the state arms: Liberty (treading on a crown) and Justice flanking a " +
+      "Hudson River landscape, beneath the motto “Excelsior” (“ever upward”).",
+    sources: [
+      { title: "Flag of New York — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_York_(state)" },
+    ],
+  },
+
+  "US-VT": {
+    description:
+      "A blue field with the state arms — a pine tree, a red cow and sheaves of wheat, the Green " +
+      "Mountains and a deer’s head — standing for the state’s forests, farming and wildlife. Adopted " +
+      "1923.",
+    sources: [
+      { title: "Flag of Vermont — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vermont" },
+    ],
+  },
+
+  "US-FL": {
+    description:
+      "A white field with a red saltire and the state seal (a Seminole woman scattering flowers, a " +
+      "steamboat, a sabal palm and sun rays). The red bars were added by amendment in 1900; no single " +
+      "reason for them was ever documented.",
+    sources: [
+      { title: "Flag of Florida — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Florida" },
+    ],
+  },
+
+  "US-KS": {
+    description:
+      "A blue field with the state seal — a sunflower above a scene of a rising sun, a steamboat, " +
+      "wagon trains and bison — beneath 34 stars for Kansas as the 34th state and the motto “Ad astra " +
+      "per aspera” (“to the stars through difficulties”).",
+    sources: [
+      { title: "Flag of Kansas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kansas" },
+    ],
+  },
+
+  "US-LA": {
+    description:
+      "A blue field with a white pelican tearing its breast to feed its young (with three drops of " +
+      "blood) and the motto “Union, Justice, Confidence.” The “pelican in her piety” is an old " +
+      "symbol of self-sacrifice and devotion.",
+    sources: [
+      { title: "Flag of Louisiana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Louisiana" },
+    ],
+  },
+
+  "US-MA": {
+    description:
+      "A white field bearing the state arms — an Algonquian figure holding a bow with a downward " +
+      "(peaceful) arrow and a single star for statehood. A public redesign process was under way as " +
+      "of 2024.",
+    sources: [
+      { title: "Flag of Massachusetts — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Massachusetts" },
+    ],
+  },
+
+  "US-PA": {
+    description:
+      "A blue field with the state arms: a ship for commerce, a plough for agriculture and three wheat " +
+      "sheaves for prosperity, flanked by two horses and topped by an eagle, with the motto “Virtue, " +
+      "Liberty and Independence.”",
+    sources: [
+      { title: "Flag of Pennsylvania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pennsylvania" },
+    ],
+  },
+
+  "US-MI": {
+    description:
+      "A blue field with the state arms — an elk and a moose flanking a shield of a sunrise over a " +
+      "peninsula, a bald eagle above — with the mottos “Tuebor” (“I will defend”) and “Si quaeris " +
+      "peninsulam amoenam circumspice” (“If you seek a pleasant peninsula, look about you”).",
+    sources: [
+      { title: "Flag of Michigan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Michigan" },
+    ],
+  },
+
+  "US-ME": {
+    description:
+      "A blue field with the state arms — a farmer and a sailor beside a shield showing a moose " +
+      "resting under a pine tree — with the North Star and the motto “Dirigo” (“I lead”).",
+    sources: [
+      { title: "Flag of Maine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Maine" },
+    ],
+  },
+
+  "US-CT": {
+    description:
+      "A blue field with a white shield of three grapevines and the motto “Qui transtulit sustinet” " +
+      "(“He who transplanted sustains”), recalling the colony’s founding settlers.",
+    sources: [
+      { title: "Flag of Connecticut — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Connecticut" },
+    ],
+  },
+
+  "US-IL": {
+    description:
+      "A white field with the Great Seal of Illinois — a bald eagle on a boulder holding a shield of " +
+      "stars and stripes, with the dates 1818 and 1868 and the motto “State Sovereignty, National " +
+      "Union.”",
+    sources: [
+      { title: "Flag of Illinois — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Illinois" },
+    ],
+  },
+
+  "US-VA": {
+    description:
+      "A blue field with the state seal — Virtus, personifying virtue, standing over a defeated tyrant " +
+      "— beneath the motto “Sic Semper Tyrannis” (“Thus always to tyrants”).",
+    sources: [
+      { title: "Flag of Virginia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Virginia" },
+    ],
+  },
+
+  "US-MO": {
+    description:
+      "Red, white and blue horizontal stripes with the state arms in a blue band of 24 stars, for " +
+      "Missouri as the 24th state. Red stands for valour, white for purity and blue for vigilance and " +
+      "justice; the tricolour also recalls the state’s French Louisiana heritage.",
+    sources: [
+      { title: "Flag of Missouri — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Missouri" },
+    ],
+  },
+
+  "US-DE": {
+    description:
+      "A colonial-blue field with a buff diamond bearing the state arms (a ship, an ox, wheat, a " +
+      "farmer and a soldier) and the date December 7, 1787 — the day Delaware became the first state " +
+      "to ratify the Constitution. The colours recall Washington’s uniform.",
+    sources: [
+      { title: "Flag of Delaware — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Delaware" },
+    ],
+  },
+
+  "US-WI": {
+    description:
+      "A blue field with the state arms — a sailor and a yeoman flanking a shield of a plough, tools " +
+      "and an anchor for farming, mining, manufacturing and navigation — with the motto “Forward” and " +
+      "a badger crest.",
+    sources: [
+      { title: "Flag of Wisconsin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wisconsin" },
+    ],
+  },
+
+  "US-OK": {
+    description:
+      "A sky-blue field with an Osage buffalo-skin war shield hung with seven eagle feathers, crossed " +
+      "by a peace pipe and an olive branch. The shield covered by symbols of peace expresses a united " +
+      "people’s love of peace.",
+    sources: [
+      { title: "Flag of Oklahoma — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oklahoma" },
+    ],
+  },
+
+  "US-NV": {
+    description:
+      "A cobalt-blue field with a silver star, sprays of sagebrush and a gold scroll reading “Battle " +
+      "Born.” The motto recalls Nevada’s admission during the Civil War (1864) and the silver star its " +
+      "nickname, the Silver State.",
+    sources: [
+      { title: "Flag of Nevada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nevada" },
+    ],
+  },
+
+  "US-SD": {
+    description:
+      "A sky-blue field with the state seal ringed by golden sun-rays and the words “South Dakota — " +
+      "The Mount Rushmore State.” The sun stands for the state’s plentiful sunshine and the seal for " +
+      "its farming, mining and river trade.",
+    sources: [
+      { title: "Flag of South Dakota — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Dakota" },
+    ],
+  },
+
+  "US-MT": {
+    description:
+      "A blue field with the Great Seal — mountains and the Great Falls of the Missouri, with a " +
+      "plough, pick and shovel for agriculture and mining — beneath the motto “Oro y Plata” (“Gold " +
+      "and Silver”).",
+    sources: [
+      { title: "Flag of Montana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Montana" },
+    ],
+  },
+
+  "US-ID": {
+    description:
+      "A blue field with the state seal — the only U.S. state seal designed by a woman, Emma Edwards " +
+      "Green — showing a miner and a woman for equality, liberty and justice, an elk’s head, and the " +
+      "motto “Esto Perpetua” (“Let it be perpetual”).",
+    sources: [
+      { title: "Flag of Idaho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Idaho" },
+    ],
+  },
+
+  "US-ND": {
+    description:
+      "A blue field with a bald eagle holding an olive branch and a sheaf of seven arrows, copied from " +
+      "the regimental banner carried by North Dakota troops in the Spanish-American and " +
+      "Philippine-American Wars.",
+    sources: [
+      { title: "Flag of North Dakota — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Dakota" },
+    ],
+  },
+
+  "US-NE": {
+    description:
+      "A blue field with the state seal — a blacksmith, a steamboat on the Missouri, sheaves of wheat " +
+      "and a railroad running toward the Rocky Mountains — beneath the motto “Equality Before the " +
+      "Law.”",
+    sources: [
+      { title: "Flag of Nebraska — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nebraska" },
+    ],
+  },
+
+  "US-WV": {
+    description:
+      "A white field with a blue border and the state arms: a farmer and a miner beside a boulder " +
+      "dated June 20, 1863 (statehood), with crossed rifles and a liberty cap, wreathed in " +
+      "rhododendron and the motto “Montani Semper Liberi” (“Mountaineers Are Always Free”).",
+    sources: [
+      { title: "Flag of West Virginia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_West_Virginia" },
+    ],
+  },
+
+  "US-KY": {
+    description:
+      "A blue field with the state seal — two men embracing beneath the motto “United We Stand, " +
+      "Divided We Fall,” with sprigs of goldenrod. The figures stand for the unity of frontiersmen " +
+      "and statesmen (popularly, though not officially, Daniel Boone and Henry Clay).",
+    sources: [
+      { title: "Flag of Kentucky — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kentucky" },
+    ],
+  },
+
+  "US-IA": {
+    description:
+      "A blue, white and red vertical tricolour recalling the French flag and Iowa’s French colonial " +
+      "heritage, with an eagle bearing the motto “Our Liberties We Prize and Our Rights We Will " +
+      "Maintain.” Blue stands for loyalty and justice, white for purity and red for courage.",
+    sources: [
+      { title: "Flag of Iowa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iowa" },
+    ],
+  },
+
+  "US-NH": {
+    description:
+      "A blue field with the state seal — the frigate Raleigh under construction at Portsmouth beside " +
+      "a granite boulder — ringed by a laurel wreath and nine stars for New Hampshire as the ninth " +
+      "state to ratify the Constitution.",
+    sources: [
+      { title: "Flag of New Hampshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Hampshire" },
+    ],
+  },
+
+  "US-MP": {
+    description:
+      "A dark-blue field, for the Pacific Ocean, with a white star for the United States over a grey " +
+      "latte stone representing the Chamorro people, all encircled by a mwarmwar flower garland for " +
+      "the Carolinian people. Adopted in 1985.",
+    sources: [
+      { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
