@@ -1619,6 +1619,105 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  LR: {
+    description:
+      "Eleven horizontal red and white stripes with a blue square canton bearing a single white " +
+      "five-pointed star. The eleven stripes stand for the signatories of Liberia’s 1847 Declaration " +
+      "of Independence; the red is courage and the white moral excellence; the lone star marks " +
+      "Africa’s first independent republic on the blue of the continent. Its resemblance to the flag " +
+      "of the United States is deliberate — Liberia was founded by freed African Americans. Adopted " +
+      "in 1847.",
+    sources: [
+      { title: "Flag of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
+    ],
+  },
+
+  GA: {
+    description:
+      "Three equal horizontal bands of green, yellow and blue. The green stands for the country’s " +
+      "forests and natural resources, the yellow for the Equator that crosses Gabon and for the sun, " +
+      "and the blue for the Atlantic Ocean. Adopted in 1960, replacing a version that had carried the " +
+      "French tricolour in the canton.",
+    sources: [
+      { title: "Flag of Gabon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
+    ],
+  },
+
+  CF: {
+    description:
+      "Four horizontal bands — blue, white, green and yellow — crossed by a vertical red band, with a " +
+      "gold star in the upper hoist. Its designer, Barthélemy Boganda, combined the blue and white of " +
+      "France with the green and yellow of Africa, bound together by the central red band, which he " +
+      "called the symbol of the blood shared by all. Adopted in 1958.",
+    sources: [
+      { title: "Flag of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
+    ],
+  },
+
+  GN: {
+    description:
+      "A vertical tricolour of red, yellow and green — the Pan-African colours, aligned with the " +
+      "national motto “Work, Justice, Solidarity.” In President Sékou Touré’s explanation the red is " +
+      "the blood of martyrs and the labour of the people, the yellow the country’s gold and the sun, " +
+      "and the green its vegetation. Adopted in 1958; it is the mirror image of Mali’s flag.",
+    sources: [
+      { title: "Flag of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
+    ],
+  },
+
+  TG: {
+    description:
+      "Five alternating horizontal stripes of green and yellow with a red canton bearing a white " +
+      "five-pointed star. In the Pan-African scheme the green stands for agriculture and hope, the " +
+      "yellow for mineral wealth, the red for the blood of independence and the white star for peace " +
+      "and purity. Designed by the artist Paul Ahyi and adopted in 1960.",
+    myths: [
+      {
+        claim: "The flag’s proportions were laid out using the golden ratio.",
+        reality:
+          "Unverified — vexillologists disagree on its exact ratio (estimates range from 3:5 to 2:3), " +
+          "so the golden-ratio claim is not established fact.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    ],
+  },
+
+  BJ: {
+    description:
+      "A green vertical band at the hoist with two horizontal bands, yellow over red, in the fly — the " +
+      "Pan-African colours, echoing Ethiopia. The green represents hope and renewal, the red the " +
+      "courage of the ancestors and the yellow the nation’s treasures. Adopted in 1959 and restored " +
+      "in 1990 after the Marxist period’s green flag with a red star.",
+    sources: [
+      { title: "Flag of Benin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    ],
+  },
+
+  SL: {
+    description:
+      "Three horizontal bands of green, white and blue. The green stands for agriculture and the " +
+      "country’s mountains and natural resources, the white for unity and justice, and the blue for " +
+      "the natural harbour of Freetown and a hope of contributing to world peace. Adopted at " +
+      "independence in 1961.",
+    sources: [
+      { title: "Flag of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+    ],
+  },
+
+  GM: {
+    description:
+      "Three horizontal bands of red, blue and green separated by thin white stripes. The blue stands " +
+      "for the River Gambia running through the country, the red for the sun and the savannah, the " +
+      "green for the forests and farmland, and the white stripes for unity and peace. Designed by " +
+      "Louis Thomasi and adopted at independence in 1965; it is deliberately free of any political " +
+      "party’s colours.",
+    sources: [
+      { title: "Flag of The Gambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Gambia" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
