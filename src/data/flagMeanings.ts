@@ -212,6 +212,372 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  DE: {
+    description:
+      "A horizontal tricolour of black, red and gold. Germany’s constitution (Basic Law) simply " +
+      "states that the federal flag is black, red and gold and assigns no official meaning to the " +
+      "individual colours. The colours are commonly traced to the black uniforms, red facings and " +
+      "gold buttons of the Lützow Free Corps volunteers of the Napoleonic Wars, and were carried by " +
+      "the liberal-nationalist movement of the 19th century.",
+    myths: [
+      {
+        claim:
+          "The colours officially mean the “blackness of servitude, through bloody battles, to the " +
+          "golden light of freedom,” or derive definitively from the Lützow Free Corps.",
+        reality:
+          "These are popular interpretations, not official doctrine — no meaning is assigned in law — " +
+          "and historians treat the Lützow-uniform origin as one plausible theory among several rather " +
+          "than a settled fact.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Germany" },
+    ],
+  },
+
+  IT: {
+    description:
+      "A vertical tricolour of green, white and red, first adopted by the Cispadane Republic in 1797. " +
+      "Italian Jacobins are documented as choosing green (in place of the French blue) to represent " +
+      "nature and, by extension, natural rights, equality and freedom. The colours became emblematic " +
+      "of Italian identity through the Napoleonic era and the Risorgimento.",
+    myths: [
+      {
+        claim:
+          "The colours depict the landscape: green for the plains/hills, white for the Alpine snow, " +
+          "and red for the blood of war.",
+        reality:
+          "A popular interpretation with no official endorsement. The documented rationale for the " +
+          "colours is philosophical (nature, natural rights, equality, freedom), not geographic.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
+    ],
+  },
+
+  AR: {
+    description:
+      "Three horizontal bands of light blue, white and light blue, with the golden Sun of May (a " +
+      "face surrounded by 32 alternating straight and wavy rays) on the central white band of the " +
+      "official flag. General Manuel Belgrano raised it in 1812; the colours came from the national " +
+      "cockade, and the Sun of May (added 1818) reproduces the emblem on Argentina’s first coin of 1813.",
+    myths: [
+      {
+        claim: "The light blue and white represent the sky, the clouds and the sun.",
+        reality:
+          "A popular reading — reinforced by patriotic songs — that historians generally reject. The " +
+          "colours are attributed to the national cockade, and scholarly explanations link them to " +
+          "Bourbon loyalty (the ribbon of the Order of Charles III) or the arms of Buenos Aires.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
+    ],
+  },
+
+  ES: {
+    description:
+      "Three horizontal stripes of red, yellow and red, the yellow being twice the height of each red " +
+      "stripe (giving the nickname la Rojigualda). The coat of arms sits on the yellow band. The " +
+      "colours derive from the heraldic traditions of the medieval kingdoms that formed Spain — the " +
+      "yellow from the Crown of Aragon, the red from Castile. The design was chosen by Charles III as " +
+      "a naval ensign by royal decree in 1785 and extended to all the armed forces in 1843.",
+    myths: [
+      {
+        claim: "The red stripes stand for blood and the yellow for the sand of the bullring.",
+        reality:
+          "A popular saying with no historical basis. The colours trace to the heraldry of the " +
+          "kingdoms of Aragon and Castile.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
+    ],
+  },
+
+  PT: {
+    description:
+      "A field of green (hoist) and red (fly) with the national coat of arms — a white shield on a " +
+      "yellow armillary sphere — over the boundary. In the official symbolism the red represents " +
+      "sacrifice and the blood of those who defended the nation, and the green represents hope (also " +
+      "chosen to distinguish the flag from the old royal standard). The armillary sphere recalls the " +
+      "Age of Discoveries; the five small blue shields are traditionally associated with the Five " +
+      "Wounds of Christ. Adopted in 1911 after the republican revolution, using the red and green of " +
+      "the Portuguese Republican Party.",
+    myths: [
+      {
+        claim:
+          "The five blue shields commemorate five Moorish kings defeated by Afonso I at the Battle of " +
+          "Ourique in 1139.",
+        reality:
+          "Regarded as a pure legend: the number of bezants on each shield varied over long periods, " +
+          "and the story is first recorded only in the 15th century.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Portugal" },
+    ],
+  },
+
+  NL: {
+    description:
+      "A horizontal tricolour of red, white and blue. In heraldic tradition the red is associated with " +
+      "bravery and strength, the white with peace and honesty, and the blue with vigilance, loyalty " +
+      "and justice. The flag descends from the late-16th-century Prince’s Flag of orange-white-blue " +
+      "(after the livery of William of Orange); red gradually replaced orange over the 17th century as " +
+      "the Republic distanced itself from the House of Orange, and red-white-blue was reaffirmed by " +
+      "royal decree in 1937.",
+    myths: [
+      {
+        claim: "The Dutch flag has always been red, white and blue.",
+        reality:
+          "The original flag was orange-white-blue; the top stripe became red during the 17th century.",
+      },
+    ],
+    sources: [
+      { title: "Flag of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands" },
+    ],
+  },
+
+  BE: {
+    description:
+      "A vertical tricolour of black, yellow and red (with unusual proportions close to 13:15). The " +
+      "colours are taken from the arms of the Duchy of Brabant — a red-tongued, red-clawed gold lion " +
+      "on a black field. The horizontal tricolour of the 1830 Belgian Revolution was changed to " +
+      "vertical stripes by the National Congress in 1831 and written into the Constitution.",
+    sources: [
+      { title: "Flag of Belgium — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
+    ],
+  },
+
+  SE: {
+    description:
+      "A blue field bearing a yellow Nordic (off-centre) cross, which traditionally represents " +
+      "Christianity. The blue and gold are drawn from the Swedish royal coat of arms, recorded from " +
+      "the late 13th century. A blue cloth with a yellow cross is documented from the early 16th " +
+      "century and first described in law in 1562; the modern design was fixed by the Flag Law of 1906.",
+    myths: [
+      {
+        claim: "King Eric IX adopted the flag after seeing a golden cross in the sky in 1157.",
+        reality:
+          "A piece of folklore with no historical documentation; the flag’s recorded origin lies in " +
+          "the royal arms, not a vision.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
+    ],
+  },
+
+  DK: {
+    description:
+      "The Dannebrog: a white Nordic cross on a red field. A banner with a white-on-red cross is " +
+      "documented in use by the kings of Denmark from the 14th century, and it holds the Guinness " +
+      "record as the oldest continuously used national flag.",
+    myths: [
+      {
+        claim:
+          "The flag fell from the sky during the Battle of Lyndanisse (Lindanise) in Estonia in 1219, " +
+          "granting victory to King Valdemar II.",
+        reality:
+          "A legend first recorded in 16th-century writings, echoing a wider Christian tradition of " +
+          "miraculous crosses — not a documented historical event.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
+    ],
+  },
+
+  GR: {
+    description:
+      "Nine equal horizontal stripes alternating blue and white, with a white cross on a blue canton; " +
+      "the cross represents the Greek Orthodox Christian faith. The blue-and-white cross design was " +
+      "adopted by the First National Assembly in 1822; the striped form was standardised in its " +
+      "current proportions in 1978. Greek law has never fixed an exact shade of blue.",
+    myths: [
+      {
+        claim:
+          "The nine stripes stand for the nine syllables of the motto “Eleftheria i Thanatos” " +
+          "(“Freedom or Death”).",
+        reality:
+          "A popular but unconfirmed interpretation; others link the nine stripes to Greece’s regions " +
+          "or to the sky and sea. No official meaning is recorded.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
+    ],
+  },
+
+  CH: {
+    description:
+      "A white cross on a square red field, the cross arms one-sixth longer than they are wide. The " +
+      "white cross began as a field mark to identify Confederate soldiers, documented from the Battle " +
+      "of Laupen (1339), and was formally adopted by the Swiss Diet by 1540. It received a legal " +
+      "definition in 1889 and precise proportions in 2017.",
+    myths: [
+      {
+        claim: "The cross was always a religious (Christian) symbol.",
+        reality:
+          "It originated as practical military identification; the Christian reading was applied " +
+          "retrospectively (notably in the Federal Council’s 1889 description), and the competing " +
+          "origin legends have no definitive historical support.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
+    ],
+  },
+
+  MX: {
+    description:
+      "A vertical tricolour of green, white and red with the national coat of arms — a golden eagle " +
+      "on a nopal cactus devouring a serpent — on the white stripe. The emblem depicts the Aztec " +
+      "legend of the founding of Tenochtitlan, the sign marking where the Mexica were to build their " +
+      "capital. The tricolour dates from independence (1821); the current design was fixed in 1968.",
+    myths: [
+      {
+        claim: "The colours have fixed official meanings (e.g. green = hope, white = unity, red = blood).",
+        reality:
+          "The meanings ascribed to the colours have changed over time, and current Mexican flag law " +
+          "assigns them no official symbolism.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mexico" },
+    ],
+  },
+
+  PL: {
+    description:
+      "Two equal horizontal bands, white over red. The colours are heraldic: they come from the White " +
+      "Eagle of Poland (and the white knight, the Pahonia, of Lithuania) set on a red shield in the " +
+      "arms of the Polish-Lithuanian Commonwealth. White and red were declared national colours in " +
+      "1831 and the flag was officially adopted in 1919.",
+    sources: [
+      { title: "Flag of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
+    ],
+  },
+
+  TR: {
+    description:
+      "A red field bearing a white crescent and star, set slightly left of centre. The star-and-" +
+      "crescent is an Ottoman and Turkic emblem — it appeared on Ottoman flags from the late 18th or " +
+      "early 19th century and the white crescent-and-star was standardised in 1844. The Republic of " +
+      "Türkiye kept the Ottoman design in 1923, and it was fixed by the Turkish Flag Law of 1936.",
+    myths: [
+      {
+        claim:
+          "The design shows the reflection of the moon and a star in a pool of blood of soldiers " +
+          "fallen in battle.",
+        reality:
+          "A romantic origin story that is not historically documented. The star-and-crescent is an " +
+          "inherited Ottoman/Turkic emblem and — contrary to common belief — predates its association " +
+          "with Islam.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Turkey — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkey" },
+    ],
+  },
+
+  RU: {
+    description:
+      "A horizontal tricolour of white, blue and red, introduced by Peter the Great in the 1690s and " +
+      "later a source of the Pan-Slavic colours. Under Alexander III the colours were officially read " +
+      "as white for nobility and frankness, blue for faithfulness and honesty, and red for courage " +
+      "and love.",
+    myths: [
+      {
+        claim:
+          "The three stripes stand for the three “Russias”: White (Belarus), Little (Ukraine) and " +
+          "Great Russia.",
+        reality:
+          "A common unofficial interpretation with no historical verification; it is not the flag’s " +
+          "documented origin.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
+    ],
+  },
+
+  CN: {
+    description:
+      "A red field with five golden stars in the canton — one large star with four smaller stars " +
+      "arced toward it. The red symbolises the communist revolution; the large star represents the " +
+      "Chinese Communist Party and the four smaller stars the unity of the Chinese people under its " +
+      "leadership (originally the four social classes of Mao’s “New Democracy”). Designed by Zeng " +
+      "Liansong and first raised on 1 October 1949.",
+    myths: [
+      {
+        claim: "The five stars represent China’s five largest ethnic groups.",
+        reality:
+          "A misconception that confuses this flag with the earlier “Five Races Under One Union” flag " +
+          "of the Beiyang government (1912–1928). The stars stand for the Party and the people it leads.",
+      },
+    ],
+    sources: [
+      { title: "Flag of China — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_China" },
+    ],
+  },
+
+  KR: {
+    description:
+      "The Taegeukgi: a white field bearing a central red-and-blue taegeuk (yin-yang) circle, with " +
+      "four black trigrams from the I Ching in the corners. The white field stands for peace and " +
+      "purity; the taegeuk represents the balance of yin (blue) and yang (red); and the four trigrams " +
+      "represent heaven, earth, water and fire, together expressing harmony and movement. Adopted in " +
+      "1883 under the Joseon dynasty.",
+    sources: [
+      { title: "Flag of South Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
+    ],
+  },
+
+  GB: {
+    description:
+      "The Union Flag (Union Jack): the red cross of Saint George (England) over the white saltire of " +
+      "Saint Andrew (Scotland) and the red saltire of Saint Patrick (Ireland), combined on a blue " +
+      "field. James I first united the English and Scottish crosses in 1606; the Irish saltire was " +
+      "added in 1801. Wales is not represented because it had already been incorporated into the " +
+      "Kingdom of England before the first Union Flag was created.",
+    myths: [
+      {
+        claim: "The flag may only be called the “Union Jack” when flown at sea.",
+        reality:
+          "Although “jack” has a maritime origin, official bodies including the Flag Institute accept " +
+          "both “Union Jack” and “Union Flag” for the flag in any context.",
+      },
+    ],
+    sources: [
+      { title: "Union Jack — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_Jack" },
+    ],
+  },
+
+  AU: {
+    description:
+      "A blue field with the Union Jack in the canton, a large white seven-pointed Commonwealth " +
+      "(Federation) Star below it, and the five stars of the Southern Cross in the fly. The " +
+      "Commonwealth Star’s points stand for the six federating colonies plus a seventh (added 1908) " +
+      "for the territories; the Southern Cross is the constellation that marks the southern sky. The " +
+      "design came from a 1901 public competition after federation.",
+    myths: [
+      {
+        claim:
+          "The four main stars of the Southern Cross officially stand for the moral virtues justice, " +
+          "prudence, temperance and fortitude.",
+        reality:
+          "That association was the personal intent of one of the winning designers, Ivor Evans — it " +
+          "is not part of the flag’s official symbolism.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Australia" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
