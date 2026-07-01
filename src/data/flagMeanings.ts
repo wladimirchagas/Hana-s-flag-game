@@ -2860,6 +2860,373 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Texas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Texas" },
     ],
   },
+
+  "US-AK": {
+    description:
+      "Eight gold stars on a dark blue field: the seven stars of the Big Dipper plus a larger North " +
+      "Star. The blue stands for the sky, the sea and Alaska’s forget-me-not flower, the Big Dipper " +
+      "for strength (it forms part of Ursa Major, the Great Bear) and the North Star for Alaska’s " +
+      "far-northern position. It was designed in 1927 by a schoolboy, Benny Benson, in a territorial " +
+      "contest.",
+    myths: [
+      {
+        claim: "Benny Benson was 13 years old when he designed the flag.",
+        reality: "He was in fact 14 at the time; the “13-year-old” version is a common retelling.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Alaska — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Alaska" },
+    ],
+  },
+
+  "US-HI": {
+    description:
+      "Eight horizontal white, red and blue stripes for Hawaii’s eight main islands, with the British " +
+      "Union Jack in the canton — the only U.S. state flag to contain another country’s flag. The " +
+      "Union Jack reflects close ties with Britain in the early 19th century; the flag dates from the " +
+      "Kingdom of Hawaii and was standardised in 1845.",
+    myths: [
+      {
+        claim: "King Kamehameha I deliberately combined the British and American flags to please both powers.",
+        reality:
+          "A frequently-repeated but unverified account; what is documented is the strong British " +
+          "naval influence on the design, not a specific diplomatic intention.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Hawaii — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hawaii" },
+    ],
+  },
+
+  "US-NM": {
+    description:
+      "A red Zia sun symbol on a yellow field, in the red and yellow of old Spain. The Zia sun’s four " +
+      "groups of rays stand for the four directions, the four seasons, the four times of day and the " +
+      "four stages of life. Adopted in 1925.",
+    myths: [
+      {
+        claim: "The sacred Zia symbol was freely given for use on the flag.",
+        reality:
+          "It was adopted without the consent of the Zia Pueblo, who later objected; a 2012 state " +
+          "memorial acknowledged the appropriation.",
+      },
+    ],
+    sources: [
+      { title: "Flag of New Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Mexico" },
+    ],
+  },
+
+  "US-MD": {
+    description:
+      "The quartered arms of the Calvert family (gold and black) and the Crossland family (red and " +
+      "white, with a bottony cross) — the personal heraldry of the Barons Baltimore, Maryland’s " +
+      "founders. It is the only U.S. state flag based on genuine English heraldry. Adopted in 1904.",
+    myths: [
+      {
+        claim: "The two halves were simply an aesthetic choice.",
+        reality:
+          "During the Civil War the Calvert colours were linked to Unionists and the Crossland cross " +
+          "to Confederate sympathisers; combining them is read as a gesture of reconciliation.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Maryland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Maryland" },
+    ],
+  },
+
+  "US-SC": {
+    description:
+      "A blue field with a white palmetto tree and a white crescent. The palmetto commemorates the " +
+      "palmetto-log fort on Sullivan’s Island that withstood British cannon fire in 1776; the blue " +
+      "and the crescent come from the uniforms and cap badges of the Revolutionary militia.",
+    myths: [
+      {
+        claim: "The crescent is a moon.",
+        reality:
+          "It is not a lunar symbol but a gorget-shaped emblem taken from the silver crescent badge " +
+          "on the militia’s caps.",
+      },
+    ],
+    sources: [
+      { title: "Flag of South Carolina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Carolina" },
+    ],
+  },
+
+  "US-OH": {
+    description:
+      "The Ohio Burgee — the only non-rectangular U.S. state flag, a swallowtail pennant of red and " +
+      "white stripes with a blue triangle bearing 17 stars around a red-and-white disc. The stripes " +
+      "stand for roads and waterways, the triangle for hills and valleys, the 17 stars for Ohio as " +
+      "the 17th state and the “O” for its name and the buckeye. Adopted in 1902.",
+    myths: [
+      {
+        claim: "The design copied the Cuban, Filipino or Japanese flags it was compared to.",
+        reality:
+          "Its designer drew on Civil War cavalry guidons; the foreign-flag comparisons were made by " +
+          "the press after the fact.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Ohio — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ohio" },
+    ],
+  },
+
+  "US-AZ": {
+    description:
+      "Thirteen red and gold rays of a setting sun over a blue lower half, with a copper-coloured " +
+      "star at the centre. The thirteen rays stand for the original colonies, the red and gold recall " +
+      "Spanish colonial banners, the blue matches the U.S. flag and the copper star marks Arizona as " +
+      "the country’s leading copper producer. Adopted in 1917.",
+    myths: [
+      {
+        claim: "An earlier sun design was changed so the flag would not resemble Japan’s.",
+        reality:
+          "A popular story with no support in the record; the state credits Spanish colonial " +
+          "influence for the rayed-sun design.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Arizona — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Arizona" },
+    ],
+  },
+
+  "US-CO": {
+    description:
+      "Blue, white and blue horizontal stripes with a red “C” filled by a gold disc. The blue is the " +
+      "sky, the gold the sunshine, the white the snow-capped Rockies and the red the state’s ruddy " +
+      "earth; the C stands at once for Colorado (Spanish for “ruddy/red”), for its centennial " +
+      "statehood and for the columbine flower. Adopted in 1911.",
+    sources: [
+      { title: "Flag of Colorado — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Colorado" },
+    ],
+  },
+
+  "US-TN": {
+    description:
+      "A red field with a blue vertical bar at the fly and a blue disc bearing three white stars. The " +
+      "three stars stand for Tennessee’s three Grand Divisions — East, Middle and West — and the " +
+      "circle for their unity. Designed by LeRoy Reeves and adopted in 1905.",
+    myths: [
+      {
+        claim: "The three stars mean Tennessee was the third state to join the Union.",
+        reality:
+          "That claim (from a 1917 magazine article) is incorrect; the designer stated the stars " +
+          "represent the three Grand Divisions.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Tennessee — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tennessee" },
+    ],
+  },
+
+  "US-RI": {
+    description:
+      "A white field with a gold anchor encircled by thirteen gold stars and a blue ribbon bearing " +
+      "the state motto, “Hope.” The anchor and motto — long used on the colony’s seal — echo a " +
+      "biblical image of hope, and the thirteen stars stand for the original colonies (Rhode Island " +
+      "being the 13th to ratify the Constitution). Adopted in 1897.",
+    sources: [
+      { title: "Flag of Rhode Island — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rhode_Island" },
+    ],
+  },
+
+  "US-PR": {
+    description:
+      "Five red and white stripes with a blue triangle at the hoist bearing a single white star. It " +
+      "was created in 1895 by exiles in New York as a mirror of the Cuban flag, in solidarity between " +
+      "the two independence movements; the star is the island, the triangle the three branches of " +
+      "government, the red stripes the blood that sustains them and the white the rights of the people.",
+    myths: [
+      {
+        claim: "The shade of blue is fixed and meaningless.",
+        reality:
+          "The original left the blue unspecified, and the shade has become political — light blue is " +
+          "associated with independence, dark blue (used since 1952) with statehood — so the colour " +
+          "chosen can signal a viewpoint.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
+    ],
+  },
+
+  "US-MN": {
+    description:
+      "A dark-blue field shaped like the state at the hoist bearing a white eight-pointed star, beside " +
+      "a light-blue fly. The dark blue stands for the shape of Minnesota and the night sky, the star " +
+      "for the state motto L’Étoile du Nord (“the Star of the North”) and the light blue for the " +
+      "state’s abundant waters. Adopted in 2024, replacing the former seal flag.",
+    myths: [
+      {
+        claim: "The new flag was made to resemble Somalia’s flag.",
+        reality:
+          "State officials call the resemblance coincidental, noting that several U.S. state flags " +
+          "happen to echo foreign ones (Iowa and France, Texas and Chile).",
+      },
+    ],
+    sources: [
+      { title: "Flag of Minnesota — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Minnesota" },
+    ],
+  },
+
+  "US-UT": {
+    description:
+      "A gold beehive inside a hexagon on a white band, between a blue sky above and red canyon-rock " +
+      "below, with a white star. The beehive is Utah’s emblem of industry and the hexagon its " +
+      "honeycomb of collective effort; the blue is the sky, the red the desert rock and the star the " +
+      "state’s tribal nations. Adopted in 2024 as the new state flag.",
+    myths: [
+      {
+        claim: "The star stands for Utah being the 45th state.",
+        reality:
+          "The five-pointed star specifically honours Utah’s five original tribal nations (Navajo, " +
+          "Shoshone, Goshute, Paiute and Ute), though it also alludes to statehood.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Utah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Utah" },
+    ],
+  },
+
+  "US-MS": {
+    description:
+      "The “New Magnolia” flag: a white magnolia blossom ringed by twenty white stars and one gold " +
+      "star on a navy field between gold and red bands, with the motto “In God We Trust.” The magnolia " +
+      "is the state flower and a symbol of hospitality and rebirth, the twenty stars mark Mississippi " +
+      "as the 20th state and the gold star honours its Native American peoples. Adopted in 2021 to " +
+      "replace the flag that had carried a Confederate battle emblem.",
+    sources: [
+      { title: "Flag of Mississippi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mississippi" },
+    ],
+  },
+
+  "US-DC": {
+    description:
+      "Three red stars over two red bars on white — an armorial banner of the coat of arms of George " +
+      "Washington’s family. Adopted in 1938 for the District named after the first president.",
+    myths: [
+      {
+        claim: "The bars and stars stand for Congress and the commissioners ruling the District.",
+        reality:
+          "That reading arose from residents’ frustration at having no vote; the design is simply the " +
+          "Washington family heraldry.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Washington, D.C. — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Washington,_D.C." },
+    ],
+  },
+
+  "US-IN": {
+    description:
+      "A gold torch with rays, ringed by nineteen stars, on a blue field. The torch stands for liberty " +
+      "and enlightenment and its rays for their far-reaching influence; the nineteen stars mark " +
+      "Indiana as the 19th state, with the large star above the torch standing for Indiana itself. " +
+      "Designed by Paul Hadley for the state’s 1916 centennial and adopted in 1917.",
+    sources: [
+      { title: "Flag of Indiana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Indiana" },
+    ],
+  },
+
+  "US-AL": {
+    description:
+      "A crimson St Andrew’s cross (saltire) on a white field. Adopted in 1895.",
+    myths: [
+      {
+        claim: "The flag was definitively created to honour the Confederate battle flag.",
+        reality:
+          "This is disputed: the adopting legislation records no such intent, and historians disagree " +
+          "on whether the saltire was meant to evoke the battle flag or was simply a new design for a " +
+          "planned exposition.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Alabama — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Alabama" },
+    ],
+  },
+
+  "US-AR": {
+    description:
+      "A red field with a large white diamond bordered in blue and 25 stars, the word “ARKANSAS” " +
+      "within, and four larger stars. The diamond marks Arkansas as the only U.S. state that has " +
+      "produced diamonds and the 25 border stars its place as the 25th state; of the four inner " +
+      "stars, the three below stand for the nations that once held the land (France, Spain and the " +
+      "United States) and the 1803 Louisiana Purchase. Adopted in 1913.",
+    myths: [
+      {
+        claim: "The star above the state’s name has no particular meaning.",
+        reality:
+          "It was added in 1923–24 specifically to represent the Confederacy, a documented feature of " +
+          "the design.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Arkansas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Arkansas" },
+    ],
+  },
+
+  "US-AS": {
+    description:
+      "A red-edged white triangle pointing to the hoist on a blue field, bearing a bald eagle that " +
+      "holds a uatogi (war club) and a fue (fly-whisk staff). The eagle stands for the United States " +
+      "and the two Samoan emblems for traditional chiefly authority. Adopted in 1960, on the " +
+      "60th anniversary of U.S. sovereignty over the territory.",
+    sources: [
+      { title: "Flag of American Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
+    ],
+  },
+
+  "US-GA": {
+    description:
+      "Red, white and red bands with a blue canton bearing the state coat of arms in a ring of " +
+      "thirteen stars and the motto “In God We Trust.” The thirteen stars mark Georgia as one of the " +
+      "original colonies and the arms’ arch and pillars its constitution and three branches of " +
+      "government; the design is modelled on the first national flag of the Confederacy, the “Stars " +
+      "and Bars.” Adopted in 2003.",
+    sources: [
+      { title: "Flag of Georgia (U.S. state) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Georgia_(U.S._state)" },
+    ],
+  },
+
+  "US-GU": {
+    description:
+      "A blue field with a red border and a central almond-shaped seal — its shape recalling ancient " +
+      "Chamorro sling stones — showing a flying proa in Hagåtña Bay, a coconut palm and the word " +
+      "“GUAM.” The red border was added in 1948 to commemorate the suffering of the Japanese " +
+      "occupation during the Second World War.",
+    sources: [
+      { title: "Flag of Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
+    ],
+  },
+
+  "US-VI": {
+    description:
+      "A white field with a simplified U.S. eagle between the letters V and I, holding a laurel sprig " +
+      "in one talon and three blue arrows in the other. The eagle stands for the United States, the " +
+      "laurel for victory and — unlike the thirteen arrows of the national arms — the three arrows for " +
+      "the territory’s three main islands, Saint Croix, Saint Thomas and Saint John. Adopted in 1921.",
+    sources: [
+      { title: "Flag of the U.S. Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
+    ],
+  },
+
+  "US-NC": {
+    description:
+      "A blue union with a white star between gold letters N and C, two gold scrolls dated “May 20th " +
+      "1775” and “April 12th 1776,” and red-over-white bars. The dates commemorate the Halifax " +
+      "Resolves of 1776 and the Mecklenburg Declaration said to have been made in 1775. Adopted in 1885.",
+    myths: [
+      {
+        claim: "The Mecklenburg Declaration of 20 May 1775 is firmly established history.",
+        reality:
+          "Its existence is doubted by most historians — no original text survives and the account " +
+          "appeared decades later — yet the date remains on the flag.",
+      },
+    ],
+    sources: [
+      { title: "Flag of North Carolina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Carolina" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
