@@ -1189,6 +1189,71 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  LU: {
+    description:
+      "A horizontal tricolour of red, white and light blue, taken from the arms of the House of " +
+      "Luxembourg (a red lion on a white-and-blue striped field). Standardised in 1848 and defined in " +
+      "law in 1993.",
+    myths: [
+      {
+        claim: "Luxembourg’s flag is identical to that of the Netherlands.",
+        reality:
+          "They differ: Luxembourg’s blue is a lighter shade and its flag is longer in proportion. " +
+          "The 1993 law fixed the brighter blue specifically to avoid confusion.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
+    ],
+  },
+
+  MD: {
+    description:
+      "A vertical tricolour of blue, yellow and red — echoing Romania’s colours in a reflection of " +
+      "the two countries’ shared heritage — with the national coat of arms on the yellow band: a " +
+      "golden eagle holding an Orthodox cross in its beak and a shield bearing an aurochs’ head with a " +
+      "star, a rose and a crescent. Adopted in 1990. Until 2010 it was one of the few flags whose " +
+      "reverse differed from its front (the coat of arms showed only on one side); the reverse is now " +
+      "a mirror image.",
+    sources: [
+      { title: "Flag of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+    ],
+  },
+
+  BA: {
+    description:
+      "A blue field with a yellow right-angled triangle and a row of white stars along its " +
+      "hypotenuse. The triangle’s three points stand for the country’s three main peoples — Bosniaks, " +
+      "Croats and Serbs — and its shape echoes the map of the country; the stars represent Europe and " +
+      "are meant to be infinite, so they are cut off top and bottom. The blue and yellow are neutral, " +
+      "European colours. The flag was imposed in 1998 by the international High Representative after " +
+      "parliament could not agree, and it deliberately avoids references to earlier Bosnian symbols.",
+    sources: [
+      { title: "Flag of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
+    ],
+  },
+
+  MC: {
+    description:
+      "Two equal horizontal bands, red over white, from the heraldic colours of the ruling House of " +
+      "Grimaldi (documented from at least 1339). The current flag was adopted in 1881. It is nearly " +
+      "identical to Indonesia’s flag, differing mainly in proportion.",
+    sources: [
+      { title: "Flag of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
+    ],
+  },
+
+  LI: {
+    description:
+      "Two horizontal bands, blue over red, with a gold crown in the upper hoist. The blue represents " +
+      "the sky and the red the evening fires lit in the country’s houses; the crown represents the " +
+      "principality and the unity of the people and ruling house. The crown was added in 1937 after " +
+      "the 1936 Berlin Olympics revealed that Liechtenstein’s flag was identical to Haiti’s.",
+    sources: [
+      { title: "Flag of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
