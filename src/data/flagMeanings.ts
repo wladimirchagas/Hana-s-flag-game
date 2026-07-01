@@ -4476,6 +4476,158 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Kuala Lumpur — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kuala_Lumpur" },
     ],
   },
+
+  "DE-BW": {
+    description:
+      "A black band over a gold one. The colours were drawn in 1952 from the flags of the states that " +
+      "merged to form Baden-Württemberg — Baden’s yellow-and-red and Württemberg’s black-and-red.",
+    sources: [
+      { title: "Flag of Baden-Württemberg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Baden-W%C3%BCrttemberg" },
+    ],
+  },
+
+  "DE-BY": {
+    description:
+      "White and blue, shown either as horizontal bands or as a field of lozenges. Both are the " +
+      "colours of the Wittelsbach dynasty, which ruled Bavaria from 1180 to 1918; the lozenge " +
+      "pattern’s exact origin is disputed.",
+    sources: [
+      { title: "Flag of Bavaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bavaria" },
+    ],
+  },
+
+  "DE-BE": {
+    description:
+      "A white field with red stripes at top and bottom and a black bear striding across it. The bear " +
+      "is a canting emblem for Berlin, used on the city’s seals and coins since the late 12th century.",
+    sources: [
+      { title: "Flag of Berlin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Berlin" },
+    ],
+  },
+
+  "DE-BB": {
+    description:
+      "A red band over a white one, with the red eagle (the Märkischer Adler) on the state flag. The " +
+      "red and white are the historic colours of the Margraviate of Brandenburg, restored when the " +
+      "state was re-established in 1990.",
+    sources: [
+      { title: "Flag of Brandenburg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brandenburg" },
+    ],
+  },
+
+  "DE-HB": {
+    description:
+      "The Speckflagge (“bacon flag”): at least eight alternating red and white horizontal stripes, " +
+      "checked at the hoist. The red and white are Bremen’s Hanseatic colours; the origin of the " +
+      "colours themselves is not documented.",
+    sources: [
+      { title: "Flag of Bremen — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bremen" },
+    ],
+  },
+
+  "DE-HH": {
+    description:
+      "A red field with a white three-towered castle, the arms of the Hanseatic city of Hamburg. The " +
+      "castle appears on the city’s seals from as early as 1241 and became the flag design in 1751.",
+    sources: [
+      { title: "Flag of Hamburg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hamburg" },
+    ],
+  },
+
+  "DE-HE": {
+    description:
+      "A red band over a white one, from the red-and-white barry lion of the Ludowingian dynasty, " +
+      "which passed to the House of Hesse in 1247.",
+    sources: [
+      { title: "Flag of Hesse — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hesse" },
+    ],
+  },
+
+  "DE-MV": {
+    description:
+      "Five horizontal stripes — blue, white, yellow, white and red — designed in 1991 to combine the " +
+      "blue-and-white of Western Pomerania with the blue-yellow-red of Mecklenburg, the two regions " +
+      "that make up the state.",
+    sources: [
+      { title: "Flag of Mecklenburg-Vorpommern — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mecklenburg-Vorpommern" },
+    ],
+  },
+
+  "DE-NI": {
+    description:
+      "The German black-red-gold with the state arms — a white Saxon steed on red — toward the hoist. " +
+      "Adopted in 1951 as a neutral flag for a state assembled from the formerly separate lands of " +
+      "Hanover, Brunswick, Oldenburg and Schaumburg-Lippe.",
+    sources: [
+      { title: "Flag of Lower Saxony — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lower_Saxony" },
+    ],
+  },
+
+  "DE-NW": {
+    description:
+      "A horizontal tricolour of green, white and red, combining the colours of the former Prussian " +
+      "provinces the state was built from — the Rhineland and Westphalia. The state arms show the " +
+      "Rhine, the Westphalian horse and the rose of Lippe.",
+    sources: [
+      { title: "Flag of North Rhine-Westphalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Rhine-Westphalia" },
+    ],
+  },
+
+  "DE-RP": {
+    description:
+      "The German black-red-gold tricolour with the state coat of arms in the upper hoist. Adopted in " +
+      "1948.",
+    sources: [
+      { title: "Flag of Rhineland-Palatinate — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rhineland-Palatinate" },
+    ],
+  },
+
+  "DE-SL": {
+    description:
+      "The German black-red-gold tricolour bearing the arms of Saarland, whose quarters stand for the " +
+      "four historic territories of the region — Nassau-Saarbrücken, the Archbishopric of Trier, the " +
+      "Duchy of Lorraine and Palatinate-Zweibrücken.",
+    sources: [
+      { title: "Flag of Saarland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saarland" },
+    ],
+  },
+
+  "DE-SN": {
+    description:
+      "A white band over a green one — the colours established for the Kingdom of Saxony in 1815. No " +
+      "deeper symbolism is documented beyond their long use as the state colours.",
+    sources: [
+      { title: "Flag of Saxony — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saxony" },
+    ],
+  },
+
+  "DE-ST": {
+    description:
+      "A yellow band over a black one, from the black-and-yellow of the former Prussian Province of " +
+      "Saxony; the order was reversed in 1991 to avoid confusion with Baden-Württemberg.",
+    sources: [
+      { title: "Flag of Saxony-Anhalt — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saxony-Anhalt" },
+    ],
+  },
+
+  "DE-SH": {
+    description:
+      "A horizontal tricolour of blue, white and red, combining the colours of Schleswig (blue, with " +
+      "two lions) and Holstein (red and white, with a nettle leaf), the two duchies that make up the " +
+      "state.",
+    sources: [
+      { title: "Flag of Schleswig-Holstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Schleswig-Holstein" },
+    ],
+  },
+
+  "DE-TH": {
+    description:
+      "A white band over a red one, from the heraldic colours of the Ludowingian rulers of the " +
+      "medieval Landgraviate of Thuringia.",
+    sources: [
+      { title: "Flag of Thuringia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Thuringia" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
