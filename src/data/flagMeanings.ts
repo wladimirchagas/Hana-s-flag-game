@@ -2275,6 +2275,97 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  VE: {
+    description:
+      "A horizontal tricolour of yellow, blue and red with an arc of eight white stars on the blue " +
+      "band. The yellow stands for the wealth of the land, the blue for the Caribbean Sea separating " +
+      "Venezuela from Spain, and the red for the blood of independence. The eight stars stand for the " +
+      "seven provinces that signed the 1811 declaration plus Guayana, added by Bolívar’s decree of " +
+      "1817. The tricolour is Francisco de Miranda’s.",
+    sources: [
+      { title: "Flag of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
+    ],
+  },
+
+  EC: {
+    description:
+      "A horizontal tricolour of yellow (double height), blue and red — the colours of Gran Colombia, " +
+      "from Miranda’s flag — with the coat of arms at the centre showing Mount Chimborazo, the Guayas " +
+      "river with a steamship and a condor. The yellow stands for the country’s riches, the blue for " +
+      "the sky, sea and rivers, and the red for the blood of its heroes. Adopted in 1860.",
+    sources: [
+      { title: "Flag of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
+    ],
+  },
+
+  BO: {
+    description:
+      "A horizontal tricolour of red, yellow and green, with the coat of arms on the state flag. The " +
+      "red stands for the blood shed by the country’s heroes, the yellow for its mineral wealth and " +
+      "the green for fertility and hope. Adopted in 1851. Since 2009 the indigenous Wiphala — a square " +
+      "rainbow-chequered banner of the Andean peoples — is a co-official national flag flown beside it.",
+    sources: [
+      { title: "Flag of Bolivia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
+    ],
+  },
+
+  UY: {
+    description:
+      "Nine alternating white and blue horizontal stripes with a golden Sun of May in the upper hoist " +
+      "canton. The nine stripes stand for the nine original departments of Uruguay and the sun for " +
+      "the May Revolution of 1810. Adopted in 1830; an earlier version had nineteen stripes, reduced " +
+      "to nine for clarity at a distance.",
+    sources: [
+      { title: "Flag of Uruguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
+    ],
+  },
+
+  PY: {
+    description:
+      "A horizontal red-white-blue triband whose colours were inspired by the French tricolour and " +
+      "the ideals of liberty. It is the only national flag in the world with a different emblem on " +
+      "each side: the national coat of arms on the front and the treasury seal on the back. Adopted " +
+      "in 1842.",
+    sources: [
+      { title: "Flag of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    ],
+  },
+
+  GY: {
+    description:
+      "The Golden Arrowhead: a green field with a long gold triangle (edged white) and a shorter red " +
+      "triangle (edged black) pointing toward the fly. The green stands for agriculture and forests, " +
+      "the gold for mineral wealth, the red for zeal and nation-building, the black for endurance and " +
+      "the white for the country’s rivers. Designed by the vexillologist Whitney Smith and adopted at " +
+      "independence in 1966.",
+    sources: [
+      { title: "Flag of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
+    ],
+  },
+
+  SR: {
+    description:
+      "Horizontal bands of green, white, red, white and green (the red the widest) with a gold star " +
+      "at the centre. The green stands for the fertility of the land, the white for freedom and " +
+      "justice and the red for progress; the gold star stands for unity and a golden future. Adopted " +
+      "at independence in 1975.",
+    sources: [
+      { title: "Flag of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
+    ],
+  },
+
+  PA: {
+    description:
+      "A flag quartered into a white canton with a blue star, a red upper-fly, a blue lower-hoist and " +
+      "a white lower-fly with a red star. The blue and red were meant to represent the country’s two " +
+      "historic political parties and the white the peace between them; the blue star stands for " +
+      "honesty and purity and the red star for authority and law. Designed by María de la Ossa de " +
+      "Amador in 1903.",
+    sources: [
+      { title: "Flag of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
