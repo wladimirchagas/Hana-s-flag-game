@@ -756,6 +756,111 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  CO: {
+    description:
+      "Three horizontal bands of yellow (the top half), blue and red. In the official reading the " +
+      "yellow stands for the nation’s riches, sovereignty and the sun, the blue for the sky and the " +
+      "seas and rivers, and the red for the blood shed for independence. The colour scheme was " +
+      "created by Francisco de Miranda and adopted by Colombia in 1861.",
+    myths: [
+      {
+        claim:
+          "Miranda chose the colours after a 1785 conversation with Goethe about warm/cool colours " +
+          "and light.",
+        reality:
+          "A romantic anecdote attributed to Miranda; he also cited more concrete inspirations, such " +
+          "as a similarly-coloured flag in a Genoa fresco and the standard of Hamburg’s civic guard.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
+    ],
+  },
+
+  CL: {
+    description:
+      "Two horizontal bands, white over red, with a blue square canton bearing a single white " +
+      "five-pointed star (La Estrella Solitaria). Officially the blue represents the sky and the " +
+      "Pacific, the white the snow of the Andes, and the red the blood shed for independence; the " +
+      "star is a guide to progress and honour, linked to Venus in Mapuche tradition. Adopted in 1817.",
+    myths: [
+      {
+        claim: "The Chilean flag was voted the “most beautiful flag in the world” in Belgium in 1907.",
+        reality:
+          "A popular legend with internal errors (it misdescribes Belgium’s geography) and no " +
+          "reliable evidence; it is not a documented event.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Chile — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
+    ],
+  },
+
+  PE: {
+    description:
+      "A vertical triband of red, white, red. Officially the red represents the blood of those who " +
+      "fell for independence and the white represents purity and peace. First decreed by José de San " +
+      "Martín in 1820; the current vertical form was standardised in 1825.",
+    myths: [
+      {
+        claim:
+          "San Martín chose red and white after seeing (or dreaming of) red-and-white parihuana " +
+          "flamingos.",
+        reality:
+          "A popular story; the real reasons for the colours are not documented. One scholarly " +
+          "suggestion is that he combined the colours of his Chilean and Argentine allies.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
+    ],
+  },
+
+  CU: {
+    description:
+      "Five horizontal stripes (three blue, two white) with a red equilateral triangle at the hoist " +
+      "bearing a white five-pointed star. The three blue stripes stand for the three divisions into " +
+      "which Cuba was then split, the white for the purity of the patriotic cause, and the red " +
+      "triangle — with Masonic influence — for strength and the ideals of liberty, equality and " +
+      "fraternity; the star represents the independent nation. Designed in 1849 and adopted in 1902.",
+    sources: [
+      { title: "Flag of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    ],
+  },
+
+  IL: {
+    description:
+      "A white field with two horizontal blue stripes and a blue Star of David (Magen David) at the " +
+      "centre. The design is based on the tallit, the Jewish prayer shawl, and the Star of David is a " +
+      "long-standing Jewish symbol. Adopted by the Zionist movement in 1897 and as the national flag " +
+      "in 1948.",
+    myths: [
+      {
+        claim:
+          "The two blue stripes represent the Nile and the Euphrates, signalling a plan to expand " +
+          "between those rivers.",
+        reality:
+          "A documented misconception, refuted by scholars: the stripes reproduce the bands of the " +
+          "prayer shawl, not rivers.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
+    ],
+  },
+
+  IR: {
+    description:
+      "A horizontal tricolour of green, white and red with the red national emblem — a stylised form " +
+      "of the word “Allah” made of four crescents and a sword — at the centre, and the Takbir " +
+      "(“God is greatest”) written 22 times in white Kufic script along the inner edges of the green " +
+      "and red bands, recalling 22 Bahman, the date of the 1979 revolution. Green, white and red are " +
+      "traditional Iranian colours. Adopted in 1980, replacing the earlier Lion and Sun flag.",
+    sources: [
+      { title: "Flag of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
