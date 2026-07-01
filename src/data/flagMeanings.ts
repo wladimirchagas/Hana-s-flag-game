@@ -1891,6 +1891,107 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  NP: {
+    description:
+      "The world’s only non-rectangular national flag: two stacked crimson pennants with a blue " +
+      "border, the upper bearing a white crescent moon and the lower a white twelve-rayed sun. The " +
+      "crimson is the colour of bravery and of the national flower, and the blue stands for peace; " +
+      "the moon and sun express the hope that Nepal will endure as long as they do, and are also " +
+      "linked to the country’s Hindu and Buddhist traditions. Standardised in 1962, when the faces " +
+      "were removed from the sun and moon.",
+    sources: [
+      { title: "Flag of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
+    ],
+  },
+
+  LK: {
+    description:
+      "A golden lion holding a kastane sword on a dark red field, with a gold bo (bodhi) leaf in each " +
+      "corner and two vertical stripes — orange and green — at the hoist, all within a gold border. " +
+      "The lion stands for the Sinhalese people and courage; the four bo leaves for Buddhism and the " +
+      "virtues of loving-kindness, compassion, sympathetic joy and equanimity; the orange stripe for " +
+      "the Tamils and the green for the Muslim Moors. Adopted in 1948, with the bo leaves added in 1972.",
+    sources: [
+      { title: "Flag of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
+    ],
+  },
+
+  BD: {
+    description:
+      "A dark green field with a red disc set slightly toward the hoist, so that it appears centred " +
+      "when the flag is flying. The green stands for the land and its vitality, and the red disc for " +
+      "the sun rising over Bengal and the blood shed in the 1971 Liberation War. Adopted in 1972; the " +
+      "wartime version had also shown a yellow map of the country inside the disc, which was then " +
+      "removed.",
+    sources: [
+      { title: "Flag of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+    ],
+  },
+
+  KH: {
+    description:
+      "Blue and red horizontal bands (the red double width) with a white image of Angkor Wat, outlined " +
+      "in black, at the centre. The blue stands for royalty, the red for the nation and the white " +
+      "temple for religion and the country’s heritage. Cambodia is one of the very few nations whose " +
+      "flag depicts a building. First adopted in 1948 and restored in 1993 with the monarchy.",
+    sources: [
+      { title: "Flag of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+    ],
+  },
+
+  MY: {
+    description:
+      "Fourteen alternating red and white stripes with a blue canton bearing a yellow crescent and a " +
+      "fourteen-pointed star. The fourteen stripes and fourteen points stand for the thirteen states " +
+      "and the federal government; the crescent is Islam, the yellow the sovereignty of the Malay " +
+      "rulers, the blue the unity of the people, the red bravery and the white purity. Adopted in 1963.",
+    sources: [
+      { title: "Flag of Malaysia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
+    ],
+  },
+
+  SG: {
+    description:
+      "A horizontal bicolour of red over white with a white crescent and a ring of five white stars in " +
+      "the upper hoist. The red stands for universal brotherhood and equality and the white for " +
+      "purity and virtue; the crescent represents a young nation on the rise, and the five stars the " +
+      "ideals of democracy, peace, progress, justice and equality. Adopted in 1959.",
+    myths: [
+      {
+        claim: "The crescent and stars make it an Islamic flag.",
+        reality:
+          "The design is deliberately multicultural: the crescent answered the wish of the " +
+          "Malay-Muslim community and the stars that of the Chinese majority, so the symbol is " +
+          "intentionally inclusive rather than tied to one group.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
+    ],
+  },
+
+  MN: {
+    description:
+      "A vertical triband of red, blue and red with the golden Soyombo symbol on the hoist band. The " +
+      "blue stands for the eternal blue sky and the red for progress and prosperity; the Soyombo is a " +
+      "composite emblem of fire, sun, moon, earth, water and a yin-yang of two fish. Adopted in 1992, " +
+      "when the communist star above the Soyombo was removed.",
+    sources: [
+      { title: "Flag of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+    ],
+  },
+
+  MM: {
+    description:
+      "A horizontal tricolour of yellow, green and red with a large white five-pointed star in the " +
+      "centre. The yellow stands for unity and wisdom, the green for peace and fertility and the red " +
+      "for courage and decisiveness, while the white star represents the union of the country. Adopted " +
+      "in 2010, echoing earlier nationalist tricolours.",
+    sources: [
+      { title: "Flag of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
