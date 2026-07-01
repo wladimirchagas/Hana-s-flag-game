@@ -1514,6 +1514,111 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  SO: {
+    description:
+      "A light blue field with a single white five-pointed star. The blue was chosen in tribute to " +
+      "the United Nations, which oversaw Somalia’s path to independence; the star’s five points stand " +
+      "for the regions where Somalis form the majority — Somalia, Somaliland, Djibouti, the Somali " +
+      "region of Ethiopia and north-eastern Kenya. Designed by Mohammed Awale Liban and adopted in 1954.",
+    sources: [
+      { title: "Flag of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    ],
+  },
+
+  MR: {
+    description:
+      "A green field with a gold star and crescent, bordered by a red stripe at top and bottom. The " +
+      "green and the gold star and crescent stand for Islam; the red stripes, added in 2017, " +
+      "commemorate the blood shed by those who fought for independence from France. The original " +
+      "flag dates from 1959.",
+    sources: [
+      { title: "Flag of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+    ],
+  },
+
+  TD: {
+    description:
+      "A vertical tricolour of indigo blue, yellow and red — combining the French tricolour form with " +
+      "the Pan-African colours. The blue evokes the sky, hope and Lake Chad, the yellow the sun and " +
+      "the Sahara, and the red progress and the blood shed for independence. Adopted in 1959.",
+    myths: [
+      {
+        claim: "Chad copied its flag from Romania (the two are almost identical).",
+        reality:
+          "The designs arose independently. Romania’s tricolour is much older, but for years it " +
+          "carried a communist emblem; once that was removed in 1989 the two became nearly " +
+          "indistinguishable. Chad raised the matter at the UN in 2004 and neither country changed.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+    ],
+  },
+
+  ER: {
+    description:
+      "A red isosceles triangle pointing from the hoist to the fly, with a green triangle above and a " +
+      "blue triangle below, and a gold olive wreath on the red near the hoist. The green stands for " +
+      "agriculture, the blue for the sea and its wealth, and the red for the blood of the " +
+      "independence struggle; the olive wreath is taken from Eritrea’s 1952 flag. Adopted in 1995.",
+    sources: [
+      { title: "Flag of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
+    ],
+  },
+
+  SS: {
+    description:
+      "A horizontal black, red and green tricolour with white fimbriations and a blue triangle at the " +
+      "hoist bearing a gold star. The black stands for the people, the red for the blood shed for " +
+      "freedom, the green for the land and its wealth, the white for peace, the blue for the waters of " +
+      "the Nile and the gold star for the unity of the states. Adopted in 2005 and kept at " +
+      "independence in 2011.",
+    sources: [
+      { title: "Flag of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
+    ],
+  },
+
+  MG: {
+    description:
+      "A white vertical band at the hoist with two horizontal bands, red over green, in the fly. On " +
+      "adoption the colours were declared to mean purity (white), sovereignty (red) and hope (green); " +
+      "the red and white also recall the historical Merina monarchy. Adopted in 1958.",
+    sources: [
+      { title: "Flag of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
+    ],
+  },
+
+  BW: {
+    description:
+      "A light blue field crossed by a black horizontal stripe edged in white. The blue stands for " +
+      "water and rain — precious in a dry country, and the source of the national motto Pula (“rain”) " +
+      "— while the black-and-white stripe stands for racial harmony and echoes the zebra, the national " +
+      "animal. It was deliberately designed without Pan-African colours to contrast with " +
+      "apartheid-era South Africa. Adopted at independence in 1966.",
+    sources: [
+      { title: "Flag of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+    ],
+  },
+
+  NE: {
+    description:
+      "A horizontal tricolour of orange, white and green with an orange disc at the centre. The " +
+      "colours are commonly read as the Sahara in the north (orange), purity and the River Niger " +
+      "(white) and the fertile south (green), with the disc as the sun, though these meanings are " +
+      "not officially confirmed. Adopted in 1959.",
+    myths: [
+      {
+        claim: "The colours have fixed, officially-defined meanings.",
+        reality:
+          "Official sources have never confirmed the symbolism; the sun/Sahara/river readings are " +
+          "widespread interpretations rather than documented fact.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Niger — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
