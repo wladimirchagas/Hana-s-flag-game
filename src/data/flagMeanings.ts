@@ -3839,6 +3839,249 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Region of Murcia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Region_of_Murcia" },
     ],
   },
+
+  "BR-SP": {
+    description:
+      "Thirteen black and white horizontal stripes with a red canton bearing a white disc, the blue " +
+      "map of Brazil and four stars. The stripes stand for the days and nights the bandeirante " +
+      "pioneers fought, the red for their blood and the disc for the strength they brought. Designed " +
+      "in 1888 and made official in 1946.",
+    sources: [
+      { title: "Flag of São Paulo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Paulo_(state)" },
+    ],
+  },
+
+  "BR-MG": {
+    description:
+      "A white field with a red triangle and the Latin motto “Libertas Quæ Sera Tamen” (“Liberty, " +
+      "even if delayed,” from Virgil). It recalls the Inconfidência Mineira of 1789; the triangle is " +
+      "read as the Holy Trinity and the red as revolution. Adopted in 1963.",
+    sources: [
+      { title: "Flag of Minas Gerais — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Minas_Gerais" },
+    ],
+  },
+
+  "BR-BA": {
+    description:
+      "Four white and red horizontal stripes with a blue canton bearing a white triangle. The triangle " +
+      "recalls the Inconfidência and Freemasonry, and the red, white and blue echo the 1798 Revolt of " +
+      "the Tailors. Adopted in 1960.",
+    sources: [
+      { title: "Flag of Bahia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahia" },
+    ],
+  },
+
+  "BR-PE": {
+    description:
+      "A blue band over a white one bearing a rainbow, a sun with a star and a red cross. It " +
+      "commemorates the Pernambucan Revolt of 1817: the blue is the sky, the white peace, the rainbow " +
+      "union, the sun strength and the cross faith in justice. Adopted in 1917.",
+    sources: [
+      { title: "Flag of Pernambuco — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pernambuco" },
+    ],
+  },
+
+  "BR-PR": {
+    description:
+      "A green field crossed by a white diagonal band for the Tropic of Capricorn, with a blue circle " +
+      "showing the Southern Cross framed by branches of Paraná pine and yerba mate. The design " +
+      "expresses the state’s geography and natural heritage.",
+    sources: [
+      { title: "Flag of Paraná — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Paran%C3%A1_(state)" },
+    ],
+  },
+
+  "BR-PA": {
+    description:
+      "A red field with a white diagonal band and a blue star. The band stands for the Equator and the " +
+      "Amazon River, the star (Spica) for Pará on the national flag, and the red for the blood of the " +
+      "Cabanagem revolt. Adopted in 1890.",
+    sources: [
+      { title: "Flag of Pará — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Par%C3%A1" },
+    ],
+  },
+
+  "BR-ES": {
+    description:
+      "A tricolour of blue, white and pink with the motto “Trabalha e Confia” (“Work and Trust,” from " +
+      "Saint Ignatius of Loyola). The colours come from the mantle of Our Lady of Victory, the " +
+      "capital’s patron: blue for harmony, white for peace and pink for happiness.",
+    sources: [
+      { title: "Flag of Espírito Santo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Esp%C3%ADrito_Santo" },
+    ],
+  },
+
+  "BR-SC": {
+    description:
+      "A red and white field with a green lozenge and the state arms at the centre. The green lozenge " +
+      "stands for Saint Catherine of Alexandria, the state’s patron; there is no official meaning for " +
+      "the red and white. Adopted in 1953.",
+    sources: [
+      { title: "Flag of Santa Catarina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Santa_Catarina" },
+    ],
+  },
+
+  "BR-CE": {
+    description:
+      "A green field with a yellow rhombus and a white disc bearing the state arms, adapted from " +
+      "Brazil’s national flag. The arms carry a fort and lighthouse, seven stars for the state’s " +
+      "regions and the four classical elements; the dove and jangada boat recall the Jangadeiros’ " +
+      "strike, which helped Ceará abolish slavery early.",
+    sources: [
+      { title: "Flag of Ceará — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cear%C3%A1" },
+    ],
+  },
+
+  "BR-MT": {
+    description:
+      "A blue field with a white rhombus enclosing a green sphere and a yellow star. The blue recalls " +
+      "the Rio de Janeiro sky the night the republic was proclaimed, the rhombus positivism and " +
+      "purity, the sphere hope and nature, and the star (Sirius) wealth and the bandeirantes.",
+    sources: [
+      { title: "Flag of Mato Grosso — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mato_Grosso" },
+    ],
+  },
+
+  "BR-MS": {
+    description:
+      "A green upper and blue lower triangle split by a white diagonal band, with a yellow star. It " +
+      "won a 1979 design contest; the government changed the students’ original ochre field — meant " +
+      "for the state’s red Terra Roxa soil — to blue to match the national colours.",
+    sources: [
+      { title: "Flag of Mato Grosso do Sul — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mato_Grosso_do_Sul" },
+    ],
+  },
+
+  "BR-GO": {
+    description:
+      "Four green and four yellow stripes with a blue canton bearing the five stars of the Southern " +
+      "Cross. The green stands for the House of Braganza and the yellow for the House of Habsburg — " +
+      "the dynasties of Brazil’s imperial family. Adopted in 1919.",
+    sources: [
+      { title: "Flag of Goiás — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Goi%C3%A1s" },
+    ],
+  },
+
+  "BR-MA": {
+    description:
+      "Nine white, red and black stripes with a blue canton bearing a white star. The three stripe " +
+      "colours stand for the state’s Indigenous, Afro-Brazilian and white peoples, and the star " +
+      "(Beta Scorpii) for Maranhão on the national flag. Adopted in 1889.",
+    sources: [
+      { title: "Flag of Maranhão — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Maranh%C3%A3o" },
+    ],
+  },
+
+  "BR-AM": {
+    description:
+      "White and red bands with a blue canton bearing a large star and twenty-five smaller ones. The " +
+      "twenty-five stars stand for the municipalities existing in 1897 and the large star for the " +
+      "capital, Manaus; white is hope, blue the sky and red the overcoming of hardship.",
+    sources: [
+      { title: "Flag of Amazonas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Amazonas_(Brazilian_state)" },
+    ],
+  },
+
+  "BR-SE": {
+    description:
+      "Green and yellow stripes with a blue canton bearing five white stars. The five stars stand for " +
+      "the state’s main rivers — the Sergipe, São Francisco, Real, Vaza-Barris and Japaratuba — and " +
+      "the green and gold for integration with Brazil.",
+    sources: [
+      { title: "Flag of Sergipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sergipe" },
+    ],
+  },
+
+  "BR-AC": {
+    description:
+      "A field split diagonally, yellow above with a red star and green below. The red “Altaneira” " +
+      "star stands for the blood of those who fought to annex Acre to Brazil, the yellow for the " +
+      "land’s riches and the green for hope.",
+    sources: [
+      { title: "Flag of Acre — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Acre" },
+    ],
+  },
+
+  "BR-RN": {
+    description:
+      "A green and white field with the state coat of arms, designed by the folklorist Luís da Câmara " +
+      "Cascudo. The arms depict the state’s economy and geography — coconut and carnauba palms, " +
+      "sugarcane and cotton, jangada fishing boats and salt pans.",
+    sources: [
+      { title: "Flag of Rio Grande do Norte — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rio_Grande_do_Norte" },
+    ],
+  },
+
+  "BR-PB": {
+    description:
+      "A red field over black bearing the word “Nego” (“I refuse”). It was adopted in 1930 to honour " +
+      "the assassinated governor João Pessoa — whose “no” rejected the era’s power-sharing politics; " +
+      "the red stands for his blood and the black for the people’s mourning and struggle.",
+    sources: [
+      { title: "Flag of Paraíba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Para%C3%ADba" },
+    ],
+  },
+
+  "BR-PI": {
+    description:
+      "Thirteen green and yellow stripes with a blue canton bearing a white star and the date " +
+      "“13 de Março de 1823.” The yellow is mineral wealth and the green hope; the star (Antares) " +
+      "stands for Piauí on the national flag, and the date marks the Battle of Jenipapo.",
+    sources: [
+      { title: "Flag of Piauí — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Piau%C3%AD" },
+    ],
+  },
+
+  "BR-TO": {
+    description:
+      "A blue upper and yellow lower triangle split by a white diagonal band bearing a gold sun. The " +
+      "sun stands for a land where dawn comes for all, the white for peace, the blue for its waters " +
+      "and the gold for mineral wealth.",
+    sources: [
+      { title: "Flag of Tocantins — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tocantins" },
+    ],
+  },
+
+  "BR-RO": {
+    description:
+      "A blue upper half with a white star over a green band, with yellow at the sides. It presents " +
+      "Rondônia as “the newest star in the sky of the Union” (the star Muliphein); the blue is the " +
+      "sky, the green the roads that opened the state to settlement, and the yellow its resources.",
+    sources: [
+      { title: "Flag of Rondônia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rond%C3%B4nia" },
+    ],
+  },
+
+  "BR-AP": {
+    description:
+      "Horizontal blue, green and yellow bands with a green triangle at the hoist showing the fortress " +
+      "of São José de Macapá. Green stands for the rainforest and hope, yellow for the union and the " +
+      "soil, blue for justice and the sky, white for peace, and the black line for those who died for " +
+      "the region.",
+    sources: [
+      { title: "Flag of Amapá — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Amap%C3%A1" },
+    ],
+  },
+
+  "BR-RR": {
+    description:
+      "Diagonal blue, white and green bands with a narrow red band and a gold star. The green stands " +
+      "for the forests, the gold star for mineral wealth (the star Wezen, for Roraima on the national " +
+      "flag), the white for peace and the blue for the sky; the red band marks the Equator.",
+    sources: [
+      { title: "Flag of Roraima — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Roraima" },
+    ],
+  },
+
+  "BR-DF": {
+    description:
+      "A white field with a green-and-gold “Cross of Brasília” of four arrows pointing to the cardinal " +
+      "directions. The white stands for peace and the vastness of Brazil; the converging arrows " +
+      "evoke Indigenous heritage, the central seat of power at Brasília and the Southern Cross.",
+    sources: [
+      { title: "Flag of the Federal District (Brazil) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_District_(Brazil)" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
