@@ -3679,6 +3679,166 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flags and coats of arms of cantons of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_and_coats_of_arms_of_cantons_of_Switzerland" },
     ],
   },
+
+  "ES-CT": {
+    description:
+      "The Senyera: four red stripes on a gold field, taken from the arms of the Crown of Aragon and " +
+      "the Counts of Barcelona (attested on a royal seal around 1159).",
+    myths: [
+      {
+        claim:
+          "The four bars were drawn in blood by a Frankish king across Wilfred the Hairy’s golden " +
+          "shield.",
+        reality:
+          "A 14th-century legend, impossible even on its own terms — the king it credits had died " +
+          "decades before Wilfred. The stripes are simply the heraldry of the House of Aragon.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Catalonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Catalonia" },
+    ],
+  },
+
+  "ES-GA": {
+    description:
+      "A white field crossed by a light-blue diagonal band, with the Galician arms (a golden chalice) " +
+      "on the official version. The band comes from the 19th-century maritime ensign of A Coruña, " +
+      "changed to a single diagonal in 1891 to avoid confusion with the Russian naval flag.",
+    myths: [
+      {
+        claim: "The flag descends directly from the medieval Kingdom of Galicia.",
+        reality:
+          "The design is a modern creation of the 1890s; only the chalice arms are medieval, and they " +
+          "are canting (a pun on “calice”/“Galicia”).",
+      },
+    ],
+    sources: [
+      { title: "Flag of Galicia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Galicia" },
+    ],
+  },
+
+  "ES-PV": {
+    description:
+      "The Ikurriña: a red field with a green saltire and a white upright cross over it. Designed by " +
+      "the brothers Sabino and Luis Arana in 1894, the red is taken for the Basque people, the green " +
+      "saltire for the Oak of Gernika and the old Basque laws (Fueros) and the white cross for " +
+      "religious faith.",
+    myths: [
+      {
+        claim: "These colour meanings are the flag’s firmly documented, official symbolism.",
+        reality:
+          "They are the commonly-cited interpretations rather than a definitively recorded intent — " +
+          "meaning accumulated around the design after 1894.",
+      },
+    ],
+    sources: [
+      { title: "Ikurriña — Wikipedia", url: "https://en.wikipedia.org/wiki/Ikurri%C3%B1a" },
+    ],
+  },
+
+  "ES-VC": {
+    description:
+      "The Reial Senyera: the four red bars of Aragon on gold with an added blue, crown-topped stripe " +
+      "at the hoist. The blue stripe marks a royal honour granted to the city of Valencia by Peter IV " +
+      "of Aragon for its loyalty.",
+    myths: [
+      {
+        claim: "James I granted this flag to Valencia after the conquest of 1238.",
+        reality:
+          "The earliest evidence dates only to 1377, when the city council replaced its old seal-arms " +
+          "with the Senyera; the 1238 grant is traditional, not documented.",
+      },
+    ],
+    sources: [
+      { title: "Flag of the Valencian Community — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Valencian_Community" },
+    ],
+  },
+
+  "ES-AS": {
+    description:
+      "A light-blue field bearing the gold Victory Cross (Cruz de la Victoria), from which hang the " +
+      "Greek letters alpha and omega. The cross is the emblem of the medieval Kingdom of Asturias and " +
+      "the Reconquista.",
+    myths: [
+      {
+        claim: "The cross was the very one carried by Pelagius at the Battle of Covadonga in 722.",
+        reality:
+          "There is no historical evidence for that; the flag itself dates only from 1808, made during " +
+          "the war against Napoleon.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Asturias — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Asturias" },
+    ],
+  },
+
+  "ES-EX": {
+    description:
+      "A horizontal green-white-black tricolour with the regional arms on the official version. In the " +
+      "official reading the green stands for the Order of Alcántara, the white for the Kingdom of " +
+      "León and the black for the Aftasid kings of Badajoz. Adopted in 1983.",
+    myths: [
+      {
+        claim: "The colours were copied from local football clubs (Cacereño and Badajoz).",
+        reality:
+          "The relationship runs the other way — those clubs took their colours from their cities’ " +
+          "traditional colours, the same source as the flag.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Extremadura — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Extremadura" },
+    ],
+  },
+
+  "ES-CL": {
+    description:
+      "The quartered arms of Castile (a gold castle on red) and León (a lion on white), recalling the " +
+      "union of the two medieval kingdoms under Ferdinand III in 1230. Adopted in 1983.",
+    sources: [
+      { title: "Flag of Castile and León — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Castile_and_Le%C3%B3n" },
+    ],
+  },
+
+  "ES-CM": {
+    description:
+      "A flag divided vertically: a crimson half with a gold castle for Castile, and a plain white " +
+      "half for the military orders that took La Mancha during the Reconquista. Adopted in the 1980s.",
+    sources: [
+      { title: "Flag of Castilla–La Mancha — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Castilla-La_Mancha" },
+    ],
+  },
+
+  "ES-IB": {
+    description:
+      "The four red bars of Aragon on gold with a purple quarter at the hoist bearing a white " +
+      "five-towered castle — the arms of the historic Kingdom of Mallorca. Adopted with the 1983 " +
+      "Statute of Autonomy.",
+    sources: [
+      { title: "Flag of the Balearic Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Balearic_Islands" },
+    ],
+  },
+
+  "ES-MD": {
+    description:
+      "A crimson field with seven white five-pointed stars (four over three). The crimson recalls " +
+      "Castile; the seven stars stand for the administrative districts of the province of Madrid and " +
+      "are also linked to the Great/Little Bear constellations — a nod to the bear of the City of " +
+      "Madrid’s arms. Adopted in 1983.",
+    sources: [
+      { title: "Flag of the Community of Madrid — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Community_of_Madrid" },
+    ],
+  },
+
+  "ES-MC": {
+    description:
+      "A crimson field with four gold castles at the upper hoist and seven royal crowns at the lower " +
+      "fly. The castles reflect Murcia’s place in the Crown of Castile and its frontier history; the " +
+      "seven crowns are honours granted by Castilian kings (five by Alfonso X in 1281, one by Peter " +
+      "in 1361 and one by Philip V in 1709). Adopted in the 1980s.",
+    sources: [
+      { title: "Flag of the Region of Murcia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Region_of_Murcia" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
