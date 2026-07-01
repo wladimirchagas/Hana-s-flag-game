@@ -4248,6 +4248,65 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Santa Cruz Province — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Santa_Cruz_Province,_Argentina" },
     ],
   },
+
+  "CO-ANT": {
+    description:
+      "A white band over a green one. The white stands for purity, integrity and triumph and the " +
+      "green for the department’s mountains, hope and wealth. The design originated at the University " +
+      "of Antioquia and became official in 1962.",
+    sources: [
+      { title: "Flag of Antioquia Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Antioquia_Department" },
+    ],
+  },
+
+  "CO-BOL": {
+    description:
+      "A horizontal tricolour of yellow, green and red. The yellow stands for wealth and abundance, " +
+      "the green for hope for the future and the red for valour and the blood of patriots; the flag’s " +
+      "precise origin has been lost.",
+    sources: [
+      { title: "Flag of Bolívar Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bol%C3%ADvar_Department" },
+    ],
+  },
+
+  "CO-BOY": {
+    description:
+      "Green, white and red horizontal stripes with the wide red band at the centre. The green stands " +
+      "for faith, service and the fertile countryside, the white for love of the homeland and unity, " +
+      "and the central red for those who died in the wars of independence — above all at the Battle of " +
+      "Boyacá. Adopted 1967–68.",
+    sources: [
+      { title: "Flag of Boyacá Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Boyac%C3%A1_Department" },
+    ],
+  },
+
+  "CO-SAN": {
+    description:
+      "A red stripe at the hoist bearing eight stars, alongside green, gold and black bands. The red " +
+      "stands for nobility and bravery, the green for loyalty and hope, and the gold and black for the " +
+      "region’s natural resources — gold, coal and petroleum.",
+    sources: [
+      { title: "Flag of Santander Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Santander_Department" },
+    ],
+  },
+
+  "CO-MAG": {
+    description:
+      "Six alternating red and blue bands with a large star formed of thirty small white stars, " +
+      "standing for the department’s twenty-nine municipalities and its one district.",
+    sources: [
+      { title: "Flag of Magdalena Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Magdalena_Department" },
+    ],
+  },
+
+  "CO-CES": {
+    description:
+      "A white band between two green bands. The green stands for the department’s fertile vegetation " +
+      "and the white for the hope of peace.",
+    sources: [
+      { title: "Flag of Cesar Department — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cesar_Department" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
