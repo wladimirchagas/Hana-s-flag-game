@@ -956,6 +956,56 @@ sourced fact from a plausible fabrication, so it never replaces verifying each c
 source by hand. **Never** weaken the check, and never add an entry whose claims you have not confirmed
 against the cited source.
 
+## Token-efficient work — hard rule, do not override without approval
+
+**Every agent working in this repo MUST minimise token usage on every task. Efficiency is a
+requirement, not a nicety — but it must NEVER come at the cost of output quality, correctness, or
+any of the hard rules above (sourcing, visual verification, the collision/proportions/anthem/lyric
+checks, the merge workflow).** If saving tokens would mean skipping a mandated check, sourcing step,
+or verification, spend the tokens — quality always wins. This rule is about eliminating *waste*, not
+cutting *work*.
+
+### Why this rule exists
+
+This is a large repo with a very long `CLAUDE.md` and big generated data files (`src/data/cities.ts`,
+`src/data/countryFacts.ts`, `src/data/nationalAnthems.ts`, `src/data/flagMeanings.ts`, the flag
+SVGs). Blindly reading whole files, re-reading unchanged files, dumping large command output, or
+fanning out redundant searches burns tokens (and money/latency) without improving the result. Past
+sessions have wasted large context budgets re-reading data files they had already seen.
+
+### Rules
+
+1. **Read narrowly, not wholesale.** Prefer `Grep`/`Glob` to locate the exact lines, then `Read`
+   with `offset`/`limit` around them. Do NOT read an entire multi-thousand-line generated data file
+   (e.g. `src/data/*.ts`) when you need one entry — search for the key and read the surrounding
+   window. Never re-read a file you just edited to "confirm" the edit — the tool already reports
+   success.
+
+2. **Search once, precisely.** Craft a targeted `Grep` regex/`glob` rather than several broad sweeps.
+   Do not spawn a sub-agent for a search you can do directly in one or two calls; sub-agents start
+   cold and re-derive context you already have. Reserve `Agent`/sub-agents for genuinely large
+   fan-out work the user asked for.
+
+3. **Keep command output small.** Add `-n`, `head_limit`, path filters, `--quiet`, `| head`, or
+   `--name-only` so a command returns what you need, not a screenful. Avoid `cat`/`find`/`grep` via
+   Bash when a dedicated tool (`Read`/`Grep`/`Glob`) does it with less noise.
+
+4. **Batch independent calls.** Issue independent tool calls in a single message so they run in
+   parallel and you don't pay for extra round-trips of narration.
+
+5. **Say less, do more.** Keep chat prose tight and skip restating what the diff or tool output
+   already shows. Don't re-explain the codebase or re-list options you won't pursue. (This does not
+   apply to PR descriptions, code comments, or the sourced data the hard rules require — those stay
+   as complete as mandated.)
+
+6. **Reuse what's already in context.** Don't re-establish facts, re-open files, or re-run checks
+   whose results you already have this session unless something changed them.
+
+**Enforcement:** there is no automated check — this is a discipline every agent applies to its own
+tool use. When reviewing a PR, wasteful patterns (whole-file reads of generated data for a one-line
+change, redundant sub-agent fan-out, huge unfiltered command dumps) are legitimate review feedback.
+Never cite this rule to justify skipping a mandated sourcing, verification, or check step.
+
 ## PR workflow — hard rule for all agents
 
 After pushing a branch and creating a pull request, an agent **MUST**:
