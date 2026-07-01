@@ -2468,6 +2468,95 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  JM: {
+    description:
+      "A gold saltire dividing the flag into two green triangles (top and bottom) and two black " +
+      "triangles (at the hoist and fly). The black stands for the strength and creativity of the " +
+      "people, the gold for sunshine and natural wealth and the green for the land and hope. Since " +
+      "Mauritania changed its flag in 2017, Jamaica’s has been the only national flag with no red, " +
+      "white or blue. Adopted in 1962.",
+    sources: [
+      { title: "Flag of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+    ],
+  },
+
+  TT: {
+    description:
+      "A red field with a white-edged black diagonal band running from the upper hoist to the lower " +
+      "fly. The red stands for the warmth and energy of the people and the sun, the black for their " +
+      "strength and dedication and the wealth of the land, and the white for the sea, purity and " +
+      "equality. Adopted at independence in 1962.",
+    sources: [
+      { title: "Flag of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
+    ],
+  },
+
+  BS: {
+    description:
+      "Aquamarine and gold horizontal bands with a black triangle at the hoist. The aquamarine stands " +
+      "for the surrounding sea, the gold for the sun and the land, and the black triangle for the " +
+      "vigour, unity and enterprise of the Bahamian people. Adopted at independence in 1973.",
+    sources: [
+      { title: "Flag of the Bahamas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Bahamas" },
+    ],
+  },
+
+  BB: {
+    description:
+      "A vertical triband of blue, gold and blue with a black broken trident head on the gold band. " +
+      "The blue stands for the sea and sky and the gold for the sand; the trident is that of the " +
+      "colonial-era emblem, and breaking off its shaft symbolises Barbados’s break from colonial " +
+      "rule. Adopted at independence in 1966.",
+    sources: [
+      { title: "Flag of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
+    ],
+  },
+
+  GD: {
+    description:
+      "A red border with six yellow stars, green and yellow triangles meeting at the centre, a " +
+      "seventh star on a red disc, and a nutmeg at the hoist. The seven stars stand for the country’s " +
+      "seven parishes and the nutmeg for its famous spice crop; the green is for vegetation, the " +
+      "yellow for sunshine and wisdom and the red for courage and unity. Adopted in 1974.",
+    sources: [
+      { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    ],
+  },
+
+  LC: {
+    description:
+      "A cerulean-blue field with a gold triangle set in front of a white-edged black triangle. The " +
+      "blue stands for the sky and the sea and the triangles for the Pitons, Saint Lucia’s twin " +
+      "volcanic peaks; the gold is for sunshine and prosperity and the black and white for the " +
+      "harmony of the island’s peoples. Adopted in 1967.",
+    sources: [
+      { title: "Flag of Saint Lucia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
+    ],
+  },
+
+  VC: {
+    description:
+      "Three vertical bands of blue, gold (the widest) and green, with three green diamonds arranged " +
+      "in a V on the gold. The diamonds stand for the islands as the “Gems of the Antilles” and their " +
+      "V for Saint Vincent; the blue is the sky and sea, the gold the warmth and the sand, and the " +
+      "green the vegetation. Adopted in 1985.",
+    sources: [
+      { title: "Flag of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+    ],
+  },
+
+  DM: {
+    description:
+      "A green field with a cross of yellow, black and white stripes and a central red disc bearing a " +
+      "Sisserou parrot ringed by ten green stars. The green is the island’s vegetation and the cross " +
+      "the Christian faith, its three colours standing for the indigenous people, the fertile soil " +
+      "and the pure water; the ten stars are the ten parishes and the parrot is the national bird. " +
+      "Adopted in 1978, it is one of the few national flags to contain purple.",
+    sources: [
+      { title: "Flag of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
