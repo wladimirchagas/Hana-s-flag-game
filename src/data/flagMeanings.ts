@@ -1032,6 +1032,89 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  LV: {
+    description:
+      "A dark carmine-red field crossed by a narrow white stripe (the red bands each twice the height " +
+      "of the white). It is among the oldest flags in the world: a red banner with a white stripe " +
+      "carried by warriors from Cēsis is recorded in the Rhymed Chronicle of Livonia describing a " +
+      "battle of 1279.",
+    myths: [
+      {
+        claim:
+          "The flag comes from a mortally wounded Latgalian chief wrapped in a white sheet, its edges " +
+          "stained red with his blood while the centre stayed white.",
+        reality:
+          "A folk legend, unverified. What is documented is the flag’s 13th-century use in the Rhymed " +
+          "Chronicle; the actual origin of the design is unknown.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
+    ],
+  },
+
+  LT: {
+    description:
+      "A horizontal tricolour of yellow, green and red. Officially the yellow symbolises the sun and " +
+      "prosperity, the green the forests, countryside, freedom and hope, and the red the blood and " +
+      "bravery of those who died for Lithuania. The colours were drawn from traditional folk weaving " +
+      "and dress, and the design was settled by a commission in 1918.",
+    myths: [
+      {
+        claim: "The flag was created by a single designer.",
+        reality:
+          "It was the work of a commission — Jonas Basanavičius, Antanas Žmuidzinavičius and Tadas " +
+          "Daugirdas — who finalised the yellow-green-red tricolour in 1918.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
+    ],
+  },
+
+  EE: {
+    description:
+      "A horizontal tricolour of blue, black and white (sinimustvalge). In the popular interpretation " +
+      "the blue is the sky, the black the soil and the homeland, and the white purity and hard work. " +
+      "The colours began with a Tartu university students’ society, whose first flag was consecrated " +
+      "in 1884, decades before Estonian independence in 1918.",
+    myths: [
+      {
+        claim: "The colours carry an official symbolic meaning.",
+        reality:
+          "Estonia’s Flag Act specifies only the technical colours; the sky/soil/purity reading is a " +
+          "cultural interpretation that developed after the flag was adopted.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
+    ],
+  },
+
+  BY: {
+    description:
+      "An unequal bicolour of red (upper two-thirds) over green (lower third), with a red-on-white " +
+      "decorative pattern taken from traditional Belarusian textiles running vertically at the hoist. " +
+      "In the official reading the red represents freedom and the sacrifice of the nation’s " +
+      "forefathers and the green represents life. It is adapted from the 1951 Soviet-era republican " +
+      "flag (with the hammer, sickle and star removed), approved by a 1995 referendum and revised in " +
+      "2012. A historical white-red-white flag is also used, notably by the opposition.",
+    sources: [
+      { title: "Flag of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Belarus" },
+    ],
+  },
+
+  SK: {
+    description:
+      "A horizontal tricolour of white, blue and red (the Pan-Slavic colours) with the national coat " +
+      "of arms toward the hoist: a white double cross on three blue hills, within a narrow white " +
+      "border. The double cross is a Christian symbol, and the modern arms (adopted with the flag in " +
+      "1992) are based on a 14th-century coat of arms.",
+    sources: [
+      { title: "Flag of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
