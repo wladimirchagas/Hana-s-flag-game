@@ -1115,6 +1115,80 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  AL: {
+    description:
+      "A red field with a black double-headed eagle at the centre. The red is associated with " +
+      "bravery, strength and bloodshed, and the black double-headed eagle represents the Albanian " +
+      "people; it derives from the Byzantine imperial eagle adopted by the national hero Skanderbeg " +
+      "in the 15th century. Established as the national flag at independence in 1912 (a communist-era " +
+      "star above the eagle was removed in 1992).",
+    sources: [
+      { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    ],
+  },
+
+  MK: {
+    description:
+      "A red field with a stylised golden-yellow sun of eight broadening rays reaching the edges. The " +
+      "sun stands for the “new sun of Liberty” of the national anthem. The current design (by " +
+      "Miroslav Grčev) was adopted in 1995, replacing the 1992 flag that bore the ancient Vergina " +
+      "Sun — a change made to settle a dispute with Greece over that symbol.",
+    sources: [
+      { title: "Flag of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
+    ],
+  },
+
+  MT: {
+    description:
+      "A vertical bicolour of white (hoist) and red, with the George Cross — edged in red — in the " +
+      "upper hoist corner of the white band. King George VI awarded the George Cross to Malta in 1942 " +
+      "for its people’s bravery in the Second World War, and it was added to the flag in 1943.",
+    myths: [
+      {
+        claim:
+          "The white and red come from Count Roger of Sicily, who in 1091 tore his red-and-white " +
+          "banner to give the Maltese their colours.",
+        reality:
+          "This story has been debunked as a 19th-century myth; the colours more likely derive from " +
+          "the white-cross-on-red flag of the Knights of Malta.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
+    ],
+  },
+
+  CY: {
+    description:
+      "A white field bearing a copper-coloured silhouette of the island of Cyprus above two green " +
+      "olive branches. The copper colour refers to the island’s copper deposits (from which its name " +
+      "derives) and the olive branches to peace between its Greek and Turkish communities. It was " +
+      "designed to be deliberately neutral — avoiding the blue and red of the Greek and Turkish flags " +
+      "— and was adopted at independence in 1960.",
+    sources: [
+      { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+    ],
+  },
+
+  SI: {
+    description:
+      "A horizontal tricolour of white, blue and red with the national coat of arms in the upper " +
+      "hoist: Mount Triglav (Slovenia’s highest peak) in white, two wavy blue lines for the sea and " +
+      "rivers, and three golden stars taken from the arms of the medieval Counts of Celje. Adopted " +
+      "for independent Slovenia in 1991.",
+    myths: [
+      {
+        claim: "The white, blue and red are simply the Pan-Slavic colours.",
+        reality:
+          "Although commonly linked to the Pan-Slavic palette, the colours actually derive from the " +
+          "medieval arms of the Duchy of Carniola.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
