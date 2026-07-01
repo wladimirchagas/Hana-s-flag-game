@@ -3361,6 +3361,103 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Yukon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Yukon" },
     ],
   },
+
+  "AU-NSW": {
+    description:
+      "A British Blue Ensign defaced with the state badge: a white disc bearing a red Saint George’s " +
+      "Cross with a golden lion at the centre and a gold eight-pointed star on each arm. The lion " +
+      "reflects the colony’s English origins. Adopted in 1876, replacing a design thought too like " +
+      "Victoria’s.",
+    sources: [
+      { title: "Flag of New South Wales — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_South_Wales" },
+    ],
+  },
+
+  "AU-QLD": {
+    description:
+      "A British Blue Ensign defaced with the state badge — a light-blue Maltese cross with a royal " +
+      "crown at its centre, on a white disc. Adopted in 1876, it replaced an earlier badge showing " +
+      "Queen Victoria’s head that was too hard to reproduce on bunting.",
+    myths: [
+      {
+        claim: "The crown on the badge changed automatically when King Charles III acceded in 2022.",
+        reality:
+          "It did not: Queensland has chosen to keep the St Edward’s Crown of the 1963 design rather " +
+          "than switch to the Tudor Crown.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Queensland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Queensland" },
+    ],
+  },
+
+  "AU-SA": {
+    description:
+      "A British Blue Ensign defaced with the state badge: a piping shrike with outstretched wings on " +
+      "a gold disc representing the sun. Adopted in 1904, replacing an earlier badge that resembled " +
+      "other colonies’ designs.",
+    myths: [
+      {
+        claim: "The bird on the badge is a distinct species called the “piping shrike.”",
+        reality:
+          "“Piping shrike” is a traditional South Australian name; the bird is more commonly known as " +
+          "the white-backed magpie.",
+      },
+    ],
+    sources: [
+      { title: "Flag of South Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Australia" },
+    ],
+  },
+
+  "AU-WA": {
+    description:
+      "A British Blue Ensign defaced with the state badge — a native black swan on a gold disc, facing " +
+      "the hoist. The swan stands for Western Australia, recalling the Swan River Colony. The badge " +
+      "dates from 1870; the swan was turned to face the hoist in 1953 to follow flag convention.",
+    sources: [
+      { title: "Flag of Western Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Western_Australia" },
+    ],
+  },
+
+  "AU-VIC": {
+    description:
+      "A British Blue Ensign defaced with the state badge: the five stars of the Southern Cross " +
+      "beneath a St Edward’s Crown. Adopted in 1877, it was the first Australian colonial flag to use " +
+      "the Southern Cross.",
+    sources: [
+      { title: "Flag of Victoria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Victoria_(state)" },
+    ],
+  },
+
+  "AU-TAS": {
+    description:
+      "A British Blue Ensign defaced with the state badge — a red lion passant on a white disc. " +
+      "Adopted in 1876; there is no official record of how the lion came to be chosen.",
+    sources: [
+      { title: "Flag of Tasmania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tasmania" },
+    ],
+  },
+
+  "AU-NT": {
+    description:
+      "A black panel at the hoist bearing the white Southern Cross, beside an ochre panel with a " +
+      "stylised white Sturt’s desert rose. It uses the Territory’s official colours of black, white " +
+      "and ochre — the only Australian state or territory flag without blue — and the desert rose’s " +
+      "seven petals stand for the six states plus the Northern Territory. Designed by Robert Ingpen " +
+      "for self-government in 1978.",
+    sources: [
+      { title: "Flag of the Northern Territory — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Territory" },
+    ],
+  },
+
+  "AU-ACT": {
+    description:
+      "Vertical blue and gold panels — Canberra’s colours — the blue bearing the white Southern Cross " +
+      "and the gold the city’s coat of arms. Adopted in 1993, drawn from a community design competition.",
+    sources: [
+      { title: "Flag of the Australian Capital Territory — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Australian_Capital_Territory" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
