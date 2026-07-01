@@ -1254,6 +1254,82 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  AD: {
+    description:
+      "A vertical tricolour of blue, yellow and red (the yellow band slightly wider) with the national " +
+      "coat of arms at the centre. The colours combine those of France (blue and red) with those of " +
+      "Catalonia and the County of Foix (red and yellow), reflecting Andorra’s status as a " +
+      "co-principality. The arms’ four quarters stand for the Bishop of Urgell, the Count of Foix, " +
+      "Catalonia and Béarn, under the motto Virtus Unita Fortior (“united virtue is stronger”). The " +
+      "tricolour dates from 1866.",
+    myths: [
+      {
+        claim: "The flag was designed by Napoleon III.",
+        reality:
+          "Often credited to him, but it may actually be the work of Guillem d’Areny-Plandolit, whose " +
+          "1866 reforms coincided with its adoption.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
+    ],
+  },
+
+  GH: {
+    description:
+      "Horizontal bands of red, gold and green with a black five-pointed star in the centre. The red " +
+      "represents the blood of those who died in the struggle for independence, the gold the " +
+      "country’s mineral wealth, and the green its forests and natural riches. The black star is a " +
+      "symbol of African emancipation, taken from Marcus Garvey’s Black Star Line. Designed by " +
+      "Theodosia Okoh and adopted at independence in 1957.",
+    sources: [
+      { title: "Flag of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ghana" },
+    ],
+  },
+
+  SN: {
+    description:
+      "A vertical tricolour of green, yellow and red — the Pan-African colours of continental unity — " +
+      "with a green five-pointed star on the central band. The green carries religious meaning (in " +
+      "Islam, the colour of the Prophet) as well as hope and fertility; the yellow stands for wealth " +
+      "and for the arts and knowledge; and the red for the blood and sacrifice of the nation. The " +
+      "star recalls the ideogram of the former Mali Federation flag. Adopted in 1960.",
+    sources: [
+      { title: "Flag of Senegal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
+    ],
+  },
+
+  DZ: {
+    description:
+      "Two equal vertical halves, green (hoist) and white, with a red star and crescent over the " +
+      "centre line. The green represents Islam and the white purity; the red star and crescent are " +
+      "Islamic symbols. Adopted at independence in 1962.",
+    myths: [
+      {
+        claim: "The design first appeared spontaneously during the independence war.",
+        reality:
+          "It has earlier precedents: the same green-and-white flag with a red star and crescent was " +
+          "displayed at May Day parades in 1919–1920, and Émilie Busquant is credited with sewing a " +
+          "version in 1934.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+    ],
+  },
+
+  MA: {
+    description:
+      "A red field with a green five-pointed interlaced star (the pentagram, or Seal of Solomon) at " +
+      "the centre. The red is the historic colour of the ruling Alaouite dynasty, which claims " +
+      "descent from the Prophet Muhammad, and the green star is associated with the five pillars of " +
+      "Islam. Morocco’s flag had been plain red until Sultan Yusef added the green pentagram by " +
+      "decree in 1915 to make it distinctive, especially at sea.",
+    sources: [
+      { title: "Flag of Morocco — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
+    ],
+  },
+
   // ── Subnational flags (keyed by ISO 3166-2 code) ────────────────────────
   "GB-SCT": {
     description:
