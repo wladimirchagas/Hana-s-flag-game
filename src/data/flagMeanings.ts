@@ -8814,6 +8814,50 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Cheshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cheshire" },
     ],
   },
+
+  "BA-SRP": {
+    description:
+      "A horizontal tricolour of red, blue and white. The colours are those associated with Serbian " +
+      "heritage but are also read as the pan-Slavic colours — the basis on which the constitutional " +
+      "court upheld the flag. It differs from Serbia’s civil flag mainly in its 1:2 proportion. Adopted " +
+      "1992.",
+    sources: [
+      { title: "Flag of Republika Srpska — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Republika_Srpska" },
+    ],
+  },
+
+  "FR-73": {
+    description:
+      "A white cross reaching the edges on a red field — the arms of the Counts and Dukes of Savoy " +
+      "(“de gueules à la croix d’argent”). The cross is first documented on a 1143 seal of Count " +
+      "Amédée III and became the permanent Savoyard emblem under Amédée V in the 14th century. It has " +
+      "no official standardisation.",
+    sources: [
+      { title: "Drapeau de la Savoie — Wikipédia", url: "https://fr.wikipedia.org/wiki/Drapeau_de_la_Savoie" },
+    ],
+  },
+
+  "FR-2A": {
+    description:
+      "A black Moor’s head in profile wearing a white headband, on a white field — the flag of Corsica, " +
+      "used for both Corsican departments. The Moor’s head appears on a 1281 seal of Peter III of " +
+      "Aragon and was taken up by Pasquale Paoli as a symbol of Corsican resistance; the headband was " +
+      "raised from the eyes to the brow in 1755. Adopted as the regional flag in 1980.",
+    sources: [
+      { title: "Drapeau de la Corse — Wikipédia", url: "https://fr.wikipedia.org/wiki/Drapeau_de_la_Corse" },
+    ],
+  },
+
+  "FR-2B": {
+    description:
+      "A black Moor’s head in profile wearing a white headband, on a white field — the flag of Corsica, " +
+      "used for both Corsican departments. The emblem appears on a 1281 Aragonese seal and became a " +
+      "symbol of Corsican resistance under Pasquale Paoli, who in 1755 moved the headband up to the " +
+      "brow. Adopted as the regional flag in 1980.",
+    sources: [
+      { title: "Drapeau de la Corse — Wikipédia", url: "https://fr.wikipedia.org/wiki/Drapeau_de_la_Corse" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
