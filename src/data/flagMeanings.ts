@@ -7708,6 +7708,152 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bandera de Yucatán — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Yucat%C3%A1n" },
     ],
   },
+
+  "ES-AN": {
+    description:
+      "Three equal horizontal stripes of green, white and green with the coat of arms — Hercules " +
+      "between two columns taming two lions — at the centre. Green and white stand for hope and peace; " +
+      "the design was adopted by Blas Infante’s 1918 Assembly of Ronda as Andalusia’s national symbol. " +
+      "Recognised officially in 1982.",
+    sources: [
+      { title: "Flag of Andalusia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Andalusia" },
+    ],
+  },
+
+  "ES-AR": {
+    description:
+      "Four red bars on a gold field (the “Senyera” / bars of Aragon) with the community’s coat of arms " +
+      "at the hoist. The four red bars are the historic arms of the Crown of Aragon, borne by its kings " +
+      "since the 13th century. Confirmed as the community flag in 1984.",
+    sources: [
+      { title: "Flag of Aragon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Aragon" },
+    ],
+  },
+
+  "ES-CN": {
+    description:
+      "A vertical tricolour of white, blue and yellow, with the coat of arms on the blue band in the " +
+      "state version. The colours merge those of the two provinces — the white and blue of Santa Cruz " +
+      "de Tenerife and the blue and yellow of Las Palmas. Official since 1982; the design grew out of " +
+      "the 1960s Canarias Libre movement.",
+    sources: [
+      { title: "Flag of the Canary Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Canary_Islands" },
+    ],
+  },
+
+  "ES-O": {
+    description:
+      "A blue field with a yellow Victory Cross (Cruz de la Victoria) toward the hoist, the Greek " +
+      "letters Alpha and Omega hanging from its arms. The cross is the one tradition says King Pelagius " +
+      "carried at Covadonga (722), regarded as the start of the Reconquista, later gilded by Alfonso " +
+      "III in 908 and kept in Oviedo Cathedral. Adopted 1990.",
+    sources: [
+      { title: "Flag of Asturias — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Asturias" },
+    ],
+  },
+
+  "ES-CB": {
+    description:
+      "Two equal horizontal stripes, white over red, with the community’s coat of arms at the centre. " +
+      "The bicolour comes from the ship-registration flag of the maritime province of Santander, " +
+      "assigned by royal order in 1845. The arms were made official in 1981.",
+    sources: [
+      { title: "Flag of Cantabria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cantabria" },
+    ],
+  },
+
+  "ES-S": {
+    description:
+      "Two equal horizontal stripes, white over red, with the region’s coat of arms at the centre. The " +
+      "bicolour derives from the 1845 ship-registration flag of the maritime province of Santander (the " +
+      "province coextensive with Cantabria). The arms were made official in 1981.",
+    sources: [
+      { title: "Flag of Cantabria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cantabria" },
+    ],
+  },
+
+  "ES-NC": {
+    description:
+      "A red field with the coat of arms of Navarre — gold chains linked to a central emerald on red, " +
+      "under a royal crown — at the centre. Red is taken from the field of the arms; the chains recall " +
+      "the ancient Kingdom of Navarre. Design created 1910, adopted 1982.",
+    sources: [
+      { title: "Flag of Navarre — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Navarre" },
+    ],
+  },
+
+  "ES-NA": {
+    description:
+      "A red field bearing the coat of arms of Navarre — gold chains around a central emerald on red, " +
+      "beneath a royal crown. Red comes from the field of the arms; the chains symbolise the historic " +
+      "Kingdom of Navarre. Design created 1910, adopted 1982.",
+    sources: [
+      { title: "Flag of Navarre — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Navarre" },
+    ],
+  },
+
+  "ES-RI": {
+    description:
+      "Four horizontal bands of red, white, green and yellow with the coat of arms at the centre. " +
+      "Officially red is the wine, white the rivers and sky, green the fields, orchards and forests, " +
+      "and yellow the land and monuments. Known as the “cuatricolor.” Adopted 1982.",
+    sources: [
+      { title: "Flag of La Rioja (Spain) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_La_Rioja_(Spain)" },
+    ],
+  },
+
+  "ES-LO": {
+    description:
+      "Four horizontal bands of red, white, green and yellow with the coat of arms at the centre — the " +
+      "flag of La Rioja (the province of Logroño). Red is the wine, white the rivers and sky, green the " +
+      "fields and forests, yellow the land and monuments. Adopted 1982.",
+    sources: [
+      { title: "Flag of La Rioja (Spain) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_La_Rioja_(Spain)" },
+    ],
+  },
+
+  "ES-M": {
+    description:
+      "A crimson field with seven white five-pointed stars set four-and-three. Crimson is the colour of " +
+      "Castile, to which Madrid has always belonged; the seven stars stand for the historic districts " +
+      "of the province and echo the constellation of the Bear (Ursa Major/Minor) from the city’s arms. " +
+      "Adopted 1983.",
+    sources: [
+      { title: "Flag of the Community of Madrid — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Community_of_Madrid" },
+    ],
+  },
+
+  "ES-MU": {
+    description:
+      "A crimson field with four gold castles in the upper hoist and seven royal crowns in the lower " +
+      "fly. The castles recall the region’s history as a contested frontier and the four lordships it " +
+      "was first divided into; the seven crowns were granted by successive kings (five by Alfonso X in " +
+      "1281, and one each in 1361 and 1709) for Murcia’s loyalty. Adopted 1983.",
+    sources: [
+      { title: "Flag of the Region of Murcia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Region_of_Murcia" },
+    ],
+  },
+
+  "ES-CE": {
+    description:
+      "A black-and-white gyronny (radiating triangles) with the city’s coat of arms on a central " +
+      "shield. The gyronny copies the flag of Lisbon, commemorating Portugal’s 1415 conquest of Ceuta; " +
+      "the arms carry Portuguese castles and escutcheons from the city’s time under Portugal until it " +
+      "chose to remain Spanish in 1640. Adopted 1995.",
+    sources: [
+      { title: "Flag of Ceuta — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ceuta" },
+    ],
+  },
+
+  "ES-ML": {
+    description:
+      "A pale-blue field bearing the coat of arms of Melilla. The arms are those of the Ducal House of " +
+      "Medina Sidonia, which funded the 1497 capture of the city, with the Pillars of Hercules as " +
+      "supporters and the motto “Non Plus Ultra.” Adopted 1995.",
+    sources: [
+      { title: "Flag of Melilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Melilla" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
