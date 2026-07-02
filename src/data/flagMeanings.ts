@@ -8288,6 +8288,217 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bandera de Canelones — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Canelones" },
     ],
   },
+
+  "AR-C": {
+    description:
+      "A white field bearing the historic coat of arms of the city drawn by Juan de Garay: a crowned " +
+      "black eagle with four smaller mixed eagles (hawks) and a red cross. The great eagle represents " +
+      "the Spanish conquest, the crown the Spanish monarchy, the red cross the evangelisation, and the " +
+      "four small eagles the four cities founded in the era — Santa Fe, Buenos Aires, Corrientes and " +
+      "Concepción del Bermejo. Adopted 1995.",
+    sources: [
+      { title: "Bandera de la Ciudad Autónoma de Buenos Aires — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_la_Ciudad_Aut%C3%B3noma_de_Buenos_Aires" },
+    ],
+  },
+
+  "AR-D": {
+    description:
+      "A white field bearing the provincial coat of arms at the centre. Adopted 1988; the law specifies " +
+      "a white flag with the provincial shield and does not assign a separate meaning to the field.",
+    sources: [
+      { title: "Bandera de la provincia de San Luis — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_la_provincia_de_San_Luis" },
+    ],
+  },
+
+  "AR-M": {
+    description:
+      "A white-and-light-blue (celeste) flag reproducing the flag of the Army of the Andes, which " +
+      "General José de San Martín created in Mendoza for the campaigns that liberated Chile and Peru. " +
+      "Adopted 1992.",
+    sources: [
+      { title: "Bandera de la provincia de Mendoza — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_la_provincia_de_Mendoza" },
+    ],
+  },
+
+  "GB-CON": {
+    description:
+      "A white cross on a black field — Saint Piran’s Flag, the banner of Cornwall. By a tradition " +
+      "first recorded in 1838 the white cross on black represents the white tin flowing from the black " +
+      "ore of Cornwall’s historic mining, and it is attributed to the 5th-century Cornish abbot Saint " +
+      "Piran.",
+    sources: [
+      { title: "Flag of Cornwall — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cornwall" },
+    ],
+  },
+
+  "GB-KEN": {
+    description:
+      "A white horse rearing on a red field — the White Horse of Kent (heraldically “Gules, a horse " +
+      "rampant argent”). Of Germanic heraldic origin (it also appears for Hanover and Lower Saxony), it " +
+      "is linked to the legendary Jutish leaders Hengist and Horsa and to Kent’s motto “Invicta” " +
+      "(unconquered). Adopted by Kent County Council in 1933.",
+    sources: [
+      { title: "Flag of Kent — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kent" },
+    ],
+  },
+
+  "GB-DEV": {
+    description:
+      "A white cross edged black on a green field — Saint Petroc’s Flag, chosen by public vote and " +
+      "adopted by Devon County Council in 2006. Green stands for the county’s rolling hills; black for " +
+      "the windswept moors of Dartmoor and Exmoor; white for the salt spray of its two coasts and its " +
+      "china-clay industry. It honours Saint Petroc, who ministered to the Britons of Dumnonia.",
+    sources: [
+      { title: "Flag of Devon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Devon" },
+    ],
+  },
+
+  "GB-ESS": {
+    description:
+      "Three gold-hilted Saxon seaxes (notched swords) on a red field. The seaxes are a nod to the " +
+      "Germanic, Saxon origins of Essex and appeared on the arms of the ancient Kingdom of Essex; the " +
+      "design is attested from the 17th century and was made official by the county council in 1889.",
+    sources: [
+      { title: "Flag of Essex — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Essex" },
+    ],
+  },
+
+  "GB-NBL": {
+    description:
+      "Eight vertical stripes alternating yellow and red. The design is based on the arms medieval " +
+      "heralds gave the Anglo-Saxon Kingdom of Bernicia, from Bede’s description of a gold-and-purple " +
+      "banner on the tomb of St Oswald; granted to Northumberland County Council in 1951.",
+    sources: [
+      { title: "Flag of Northumberland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Northumberland" },
+    ],
+  },
+
+  "GB-DOR": {
+    description:
+      "A cross of red, white and gold — St Wite’s Cross — in the colours of Dorset County Council’s " +
+      "arms. Adopted 2008. The gold is read variously as the Wessex golden dragon, the county’s sandy " +
+      "beaches and Golden Cap, and its rapeseed and cornfields; the flag is dedicated to the Anglo-Saxon " +
+      "St Wite buried at Whitchurch Canonicorum.",
+    sources: [
+      { title: "Flag of Dorset — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dorset" },
+    ],
+  },
+
+  "GB-LIN": {
+    description:
+      "A red St George’s cross edged yellow, bearing a yellow fleur-de-lis, over quarters of green and " +
+      "blue. The red cross is for England; yellow for the county’s crops and the “Yellowbellies” " +
+      "nickname; blue for the East-coast sea and Lincolnshire’s wide skies; green for the fenland " +
+      "fields; the fleur-de-lis is the emblem of the city of Lincoln. Adopted 2005.",
+    sources: [
+      { title: "Flag of Lincolnshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lincolnshire" },
+    ],
+  },
+
+  "GB-DBY": {
+    description:
+      "A green cross on blue with a gold Tudor rose at the centre. Green stands for Derbyshire’s " +
+      "countryside, blue for its rivers and reservoirs; the Tudor rose has been the county badge since " +
+      "the 15th century, coloured gold here to distinguish it from the roses of Yorkshire and " +
+      "Lancashire and to signify quality. Adopted 2006.",
+    sources: [
+      { title: "Flag of Derbyshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Derbyshire" },
+    ],
+  },
+
+  "GB-NFK": {
+    description:
+      "A gold-and-black vertical bicolour crossed by a white diagonal band bearing nine black ermine " +
+      "spots. It derives from the banner of arms attributed to Ralph de Gael, the first Earl of Norfolk; " +
+      "the ermine band recalls his lordship of Gaël in Brittany, whose dukes bore ermine. Adopted 2014.",
+    sources: [
+      { title: "Flag of Norfolk — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Norfolk" },
+    ],
+  },
+
+  "GB-DUR": {
+    description:
+      "A gold-over-blue bicolour with St Cuthbert’s cross counterchanged across the centre. Blue and " +
+      "gold are the historic colours of County Durham, taken from the arms of the Diocese of Durham; " +
+      "the cross is the pectoral cross found in St Cuthbert’s coffin (died 687) and now kept in Durham " +
+      "Cathedral.",
+    sources: [
+      { title: "Flag of County Durham — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_County_Durham" },
+    ],
+  },
+
+  "GB-LAN": {
+    description:
+      "A red rose on a gold field. The Red Rose of Lancaster is the traditional emblem of the county " +
+      "(worn by Edmund Crouchback, Earl of Lancaster, and later folded into the Tudor Rose); red and " +
+      "gold are Lancashire’s livery colours. Registered 2008.",
+    sources: [
+      { title: "Flag of Lancashire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lancashire" },
+    ],
+  },
+
+  "GB-HAM": {
+    description:
+      "A gold Saxon crown on red above a red-and-white double Tudor rose on gold. The rose and crown " +
+      "have identified Hampshire for centuries; the Saxon (rather than royal) crown recalls Alfred the " +
+      "Great and his capital at Winchester, and the double rose echoes the one on the “Arthurian” Round " +
+      "Table in Winchester Great Hall. Registered 2019.",
+    sources: [
+      { title: "Flag of Hampshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hampshire" },
+    ],
+  },
+
+  "GB-HEF": {
+    description:
+      "A white Hereford bull’s head on red above three wavy white-and-blue lines. The red field is the " +
+      "red earth of Herefordshire and the red coat of its famous cattle; the wavy lines are the River " +
+      "Wye and, as canting arms, the “ford” in the county’s name. Based on the council’s 1946 arms; " +
+      "adopted 2019.",
+    sources: [
+      { title: "Flag of Herefordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Herefordshire" },
+    ],
+  },
+
+  "GB-GLS": {
+    description:
+      "The “Severn Cross” — a mid-blue cross outlined cream on an apple-green field. The blue cross is " +
+      "the River Severn; the cream outline Cotswold stone; the green the Golden Valley at Stroud. " +
+      "Adopted 2008 for the county’s millennium.",
+    sources: [
+      { title: "Flag of Gloucestershire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gloucestershire" },
+    ],
+  },
+
+  "GB-CMA": {
+    description:
+      "A blue field with three green triangles at the base under gold-green-gold zigzags and a gold " +
+      "ancient crown. The zigzags stand for the rugged Cumbrian fells (home to Scafell Pike); the crown " +
+      "for the area’s past as an independent kingdom. Adopted 2012 as a free-to-use public flag.",
+    sources: [
+      { title: "Flag of Cumbria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cumbria" },
+    ],
+  },
+
+  "GB-ERY": {
+    description:
+      "A white Yorkshire rose on a field of blue (hoist) and green (fly). Blue stands for the East " +
+      "Riding’s tie to the rest of Yorkshire and its maritime past; green for its position in the east " +
+      "and its farmland; the white rose is the historic emblem of Yorkshire. Registered 2013.",
+    sources: [
+      { title: "Flag of the East Riding of Yorkshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_East_Riding_of_Yorkshire" },
+    ],
+  },
+
+  "GB-NTT": {
+    description:
+      "A red St George’s cross fimbriated white on green, with a central white shield bearing a green " +
+      "silhouette of Robin Hood drawing his bow. Green is the county’s fields; the cross is England’s; " +
+      "Robin Hood is Nottinghamshire’s heroic emblem, after the bronze statue near Nottingham Cathedral. " +
+      "Registered 2011.",
+    sources: [
+      { title: "Flag of Nottinghamshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nottinghamshire" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
