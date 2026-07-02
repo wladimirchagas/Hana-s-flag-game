@@ -8277,6 +8277,17 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bandera de Vaupés — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Vaup%C3%A9s" },
     ],
   },
+
+  "UY-CA": {
+    description:
+      "A white field crossed by nine light-blue stripes and one red stripe. The nine blue stripes " +
+      "recall Uruguay’s 1828–1830 second national flag, whose nine stripes stood for the nine " +
+      "departments of the time (Canelones among them); the red stripe echoes the red band of the flag " +
+      "of Artigas, honouring his ideals. Adopted 2010.",
+    sources: [
+      { title: "Bandera de Canelones — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Canelones" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
