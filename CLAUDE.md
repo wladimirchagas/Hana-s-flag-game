@@ -1003,6 +1003,45 @@ sourced fact from a plausible fabrication, so it never replaces verifying each c
 source by hand. **Never** weaken the check, and never add an entry whose claims you have not confirmed
 against the cited source.
 
+## Flag-meaning coverage sweep is a standing mandate — finish it without asking — hard rule, do not override without approval
+
+**Expanding `flagMeanings.ts` to cover every subdivision that has a bundled/playable flag is an
+ongoing, standing task. Once asked to continue the sweep, an agent MUST keep going until the job is
+done — sourcing every remaining subdivision from authoritative sources — and MUST NOT stop to ask the
+user whether to proceed, whether to do "one more set", or which country to do next.** The owner has
+made clear (repeatedly) that pausing to ask "should I continue?" is unwanted; treat "continue the
+subdivision sweep" as durable authorization that persists across every merge, branch reset, and
+context window until the sweep is complete or the user explicitly says stop.
+
+### What "keep going" means concretely
+
+1. **Do not ask for permission to continue.** After merging a milestone and resetting the branch,
+   immediately pick the next set and start sourcing it. Never end a turn with "want me to continue?",
+   "say the word", "shall I proceed?", or a status report that waits for a go-ahead. The only
+   acceptable reasons to stop and surface to the user are: (a) the user said stop; (b) a genuine
+   blocker you cannot resolve (build broken, network/egress down, a real ambiguity that changes the
+   work); or (c) **every** remaining subdivision has been either sourced or investigated-and-omitted.
+2. **Pick the next set yourself.** Use `node scripts/subdiv-remaining.mjs [CC]` to see what's left and
+   choose the next country by documentation strength (prefer local-language Wikipedia coverage). You
+   do not need the user to name a country — choosing is your job, not theirs.
+3. **The quality bar never drops to hit the mandate.** Every entry is still fetched-then-written from
+   an authoritative source (the "never fabricate a flag meaning" rule is absolute). A set whose flags
+   have **no reachable per-element symbolism** (only "the colours of the arms") is handled by
+   **investigating each code and logging genuine omissions** in `scripts/data/subdiv-meaning-omitted.txt`
+   — not by padding with invented meaning, and not by silently skipping the country. Omitting an
+   unsourceable flag *is* finishing that flag; moving on to the next country *is* continuing.
+4. **Checkpoint by merging, don't wait.** Accumulate a country (or a few) on the branch, run the
+   checks, commit, push, open the PR, squash-merge it, reset the branch from `main`, and go straight to
+   the next set — all without a confirmation round-trip, exactly as the PR-workflow rule already
+   requires.
+5. **This does not override the safety rules.** Sourcing discipline, `npm run flags:check`, `tsc`, the
+   visual-verification rule, and the merge workflow all still apply on every push. "Keep going" means
+   never stalling on a *permission* question — it never means skipping a mandated check.
+
+**Enforcement:** there is no automated check for this — it is a behavioural mandate. When reviewing a
+session, a turn that ended by asking the user whether to continue the subdivision sweep (instead of
+just continuing) is a violation of this rule.
+
 ## Token-efficient work — hard rule, do not override without approval
 
 **Every agent working in this repo MUST minimise token usage on every task. Efficiency is a
