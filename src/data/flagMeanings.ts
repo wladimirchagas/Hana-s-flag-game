@@ -5595,6 +5595,241 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Basilicata — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Basilicata" },
     ],
   },
+
+  "RU-AD": {
+    description:
+      "A green field bearing twelve gold stars and three crossed gold arrows. Green stands for life, " +
+      "nature and Islam; gold for a bright peaceful future and an abundant harvest. Nine stars in an " +
+      "arc plus three in a row represent the twelve historical provinces of Circassia, and the crossed " +
+      "arrows their unity. Based on a historic Circassian flag; adopted 1992.",
+    sources: [
+      { title: "Флаг Адыгеи — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%B4%D1%8B%D0%B3%D0%B5%D0%B8" },
+    ],
+  },
+
+  "RU-AL": {
+    description:
+      "Horizontal bands of white and blue separated by narrow white and blue stripes. Blue stands for " +
+      "the purity of Altai’s sky, mountains, rivers and lakes; white for eternity, the striving for " +
+      "rebirth, and the love and accord of the peoples of the Altai Republic. First adopted 1992.",
+    sources: [
+      { title: "Флаг Республики Алтай — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8_%D0%90%D0%BB%D1%82%D0%B0%D0%B9" },
+    ],
+  },
+
+  "RU-ALT": {
+    description:
+      "A red field with a blue vertical band at the hoist bearing a gold ear of wheat, symbolising " +
+      "agriculture as the region’s leading economic sector; the krai’s coat of arms is set at the " +
+      "centre. The layout derives from the 1954 RSFSR flag. Adopted 2000.",
+    sources: [
+      { title: "Флаг Алтайского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BB%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-AMU": {
+    description:
+      "Three horizontal bands: a broad red, a narrow white wavy stripe, and blue. Red stands for the " +
+      "rich history of the Amur region and the martial and labour feats of its people; the blue band, " +
+      "with its waves, for the mighty Amur River along the region’s southern border. Adopted 1999.",
+    sources: [
+      { title: "Флаг Амурской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BC%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ARK": {
+    description:
+      "A white field crossed diagonally by an azure saltire, with the region’s coat of arms at the " +
+      "centre. Adopted 2009 — though critics note the blue saltire echoes the naval St Andrew’s cross " +
+      "rather than the Archangel Michael for whom the region is named, and it has not received federal " +
+      "heraldic registration.",
+    sources: [
+      { title: "Флаг Архангельской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-AST": {
+    description:
+      "A blue field bearing a gold royal crown above a silver eastern sabre — the arms of Astrakhan, " +
+      "recalling the former Astrakhan Khanate and Tsardom. Adopted 2001.",
+    sources: [
+      { title: "Флаг Астраханской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-BA": {
+    description:
+      "Three horizontal bands of blue, white and green with a gold ring at the centre enclosing a " +
+      "seven-petalled kurai flower. Blue stands for clarity, virtue and purity of thought; white for " +
+      "peace, openness and cooperation; green for freedom and the eternity of life. The kurai is a " +
+      "symbol of friendship and its seven petals the seven Bashkir tribes united into one people. " +
+      "Adopted 1992.",
+    sources: [
+      { title: "Флаг Башкортостана — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D0%B0%D1%88%D0%BA%D0%BE%D1%80%D1%82%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+  "RU-BEL": {
+    description:
+      "A blue cross divides the field into four quarters — white, red, green and black — with the " +
+      "region’s coat of arms in the white quarter. White stands for the chalk deposits and dairy and " +
+      "sugar production; red for the blood shed by defenders of the frontier from the 16th–20th " +
+      "centuries; green for the fertility of the land; black for the rich chernozem soil and minerals. " +
+      "Adopted 2000.",
+    sources: [
+      { title: "Флаг Белгородской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-BRY": {
+    description:
+      "A burgundy field bearing the region’s coat of arms. The burgundy recalls the colour of the " +
+      "banners under which the army and partisans fought to liberate the Bryansk region during the " +
+      "Second World War. Adopted 1998.",
+    sources: [
+      { title: "Флаг Брянской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-BU": {
+    description:
+      "Three horizontal bands of blue, white and yellow, with the traditional Soyombo — crescent, sun " +
+      "and three-tongued flame — in the hoist. Blue is the national colour of the Buryats and the " +
+      "Eternal Blue Sky (Khukhe Munkhe Tengri); white stands for peace, unity and well-being; yellow " +
+      "for the faith (Tibetan Buddhism) and spiritual perfection. Adopted 1992.",
+    sources: [
+      { title: "Флаг Бурятии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D1%83%D1%80%D1%8F%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-CE": {
+    description:
+      "Horizontal bands of green, white and red with a white vertical band of Chechen national " +
+      "ornament at the hoist, the whole edged in gold. Green is associated with Islam. The design was " +
+      "modelled on the flag of Tatarstan. Adopted 2004.",
+    sources: [
+      { title: "Флаг Чечни — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D0%B5%D1%87%D0%BD%D0%B8" },
+    ],
+  },
+
+  "RU-CHE": {
+    description:
+      "A red field with a narrow yellow stripe low across it, bearing a white camel laden with yellow " +
+      "packs. The camel — an enduring, noble beast — stands for wisdom, patience and fidelity; red for " +
+      "life, courage and the region’s metallurgy; the yellow stripe for the Ural Mountains and their " +
+      "mineral wealth; white for nobility and justice. Adopted 2001.",
+    sources: [
+      { title: "Флаг Челябинской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-CHU": {
+    description:
+      "A blue field with a white triangle at the hoist enclosing a yellow ring around the Russian " +
+      "national colours. The triangle is the Chukotka Peninsula, Russia’s far north-eastern extremity; " +
+      "blue the surrounding Arctic and Pacific oceans; white the Arctic snows; the yellow ring the sun " +
+      "that rises first over Russia here, and the region’s gold mining. Adopted 1997.",
+    sources: [
+      { title: "Флаг Чукотского автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D1%83%D0%BA%D0%BE%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-CU": {
+    description:
+      "A yellow field with a narrow dark-red band along the foot, charged with the dark-red “Tree of " +
+      "Life” and, above it, “Three Suns.” Yellow is the space under the sun inhabited by the Chuvash " +
+      "people; dark red the Chuvash land. The Tree of Life expresses the people’s striving for " +
+      "spiritual harmony; the three eight-pointed suns mean “Were, Are, Will Be.” Adopted 1992.",
+    sources: [
+      { title: "Флаг Чувашии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D1%83%D0%B2%D0%B0%D1%88%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-DA": {
+    description:
+      "Three equal horizontal bands of green, blue and red. Green stands for the fertility of the land " +
+      "and for Islam; blue for the Caspian Sea and the greatness of the Dagestani people; red for " +
+      "democracy, reason and the courage of the people of this mountain country. Adopted 2003.",
+    sources: [
+      { title: "Флаг Дагестана — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%94%D0%B0%D0%B3%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+  "RU-IN": {
+    description:
+      "A white field with a red solar sign at the centre and a green stripe along the top and bottom " +
+      "edges. White stands for the purity of the people’s thoughts and deeds; green for the fertility " +
+      "of the land and for Islam; red for their centuries-long struggle to survive on their ancestral " +
+      "land. The three curved rays of the sun turn with the Earth’s rotation, meaning eternal motion, " +
+      "creation and prosperity. Designed 1993, adopted 1999.",
+    sources: [
+      { title: "Флаг Ингушетии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D0%BD%D0%B3%D1%83%D1%88%D0%B5%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-IRK": {
+    description:
+      "Vertical bands of blue, white and blue, the white one bearing a black babr (Siberian tiger) " +
+      "carrying a red sable in its jaws within a wreath of green cedar. Blue stands for the region’s " +
+      "waters — Lake Baikal and the Angara; white for the purity of thought of its people and Siberian " +
+      "snows; the cedar for the region’s forest wealth; the red sable for courage. Adopted 1997.",
+    sources: [
+      { title: "Флаг Иркутской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-IVA": {
+    description:
+      "A field split vertically red (hoist) and blue (fly), crossed low by three narrow silver stripes, " +
+      "with the region’s coat of arms at the centre. The colours and metal repeat those of the arms’ " +
+      "heraldic field. Adopted 1998.",
+    sources: [
+      { title: "Флаг Ивановской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KAM": {
+    description:
+      "A white-over-blue field with an emblem in the hoist: three black volcanoes with silver, flaming " +
+      "peaks and, behind them, a red-and-silver rising sun ringed by an indigenous ornament of red and " +
+      "blue triangles. The volcanoes and rising sun evoke Kamchatka’s active volcanic landscape and its " +
+      "peoples. Adopted 2010.",
+    sources: [
+      { title: "Флаг Камчатского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-KB": {
+    description:
+      "Three equal bands of light blue, white and green, with a central roundel showing white Mount " +
+      "Elbrus over blue and green fields. Light blue stands for the boundless pure sky, rivers and " +
+      "waters (a colour revered by Turkic peoples such as the Balkars); white for peace, purity and " +
+      "Islam; green for fertility and beauty. Adopted 1994.",
+    sources: [
+      { title: "Флаг Кабардино-Балкарии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%B1%D0%B0%D1%80%D0%B4%D0%B8%D0%BD%D0%BE-%D0%91%D0%B0%D0%BB%D0%BA%D0%B0%D1%80%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KC": {
+    description:
+      "Three equal bands of light blue, green and red, the green one bearing a pale roundel with a sun " +
+      "rising behind mountains. Officially light blue stands for peace and calm aspiration; green for " +
+      "nature, fertility, youth and wisdom; red for the warmth and closeness between peoples. Adopted " +
+      "1994.",
+    sources: [
+      { title: "Флаг Карачаево-Черкесии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D1%80%D0%B0%D1%87%D0%B0%D0%B5%D0%B2%D0%BE-%D0%A7%D0%B5%D1%80%D0%BA%D0%B5%D1%81%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KDA": {
+    description:
+      "Three horizontal bands of blue, crimson and green with the krai’s gold coat of arms at the " +
+      "centre. The colours repeat those of the flag of the Kuban People’s Republic, regarded as the " +
+      "national flag of the Kuban Cossacks. Adopted 1995.",
+    sources: [
+      { title: "Флаг Краснодарского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
