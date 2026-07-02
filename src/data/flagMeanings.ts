@@ -4984,6 +4984,307 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "JP-10": {
+    description:
+      "A purple field with a white emblem: the old form of the kanji “群” (gun, “group”) drawn as a " +
+      "circle to express the harmony of the prefecture’s people, framed by three crescents standing " +
+      "for the Jōmō Sanzan (Mounts Akagi, Haruna and Myōgi). The purple recalls the cultural " +
+      "flourishing of the ancient Kōzuke Province. Adopted 1968 for the Meiji centennial.",
+    sources: [
+      { title: "群馬県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%BE%A4%E9%A6%AC%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-11": {
+    description:
+      "A white field bearing a red disc formed of 16 comma-shaped magatama jewels arranged in a ring. " +
+      "The magatama allude to the “saki-mitama” (fortunate spirit) from which the name Saitama derives, " +
+      "and the emblem as a whole stands for the sun, development, passion and strength. Adopted 1964.",
+    sources: [
+      { title: "埼玉県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%9F%BC%E7%8E%89%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-12": {
+    description:
+      "A sky-blue field — for hope and development — carrying the prefectural emblem, the kana “チ” and " +
+      "“ハ” (chi-ha) combined, outlined in white and edged in pale yellow for the canola blossom, the " +
+      "prefectural flower. The emblem dates to 1909; the flag was adopted 1963.",
+    sources: [
+      { title: "千葉県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%8D%83%E8%91%89%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-15": {
+    description:
+      "A red field with the prefectural emblem: a stylised kanji “新” (shin, “new”) above the kana “ガ” " +
+      "and “タ” (ga-ta) set in a necklace-like ring, standing for harmony, hope and the prefecture’s " +
+      "smooth development. Adopted 1963.",
+    sources: [
+      { title: "新潟県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%96%B0%E6%BD%9F%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-16": {
+    description:
+      "A white field with a green emblem: the hiragana “と” (to) set within the outline of Mount " +
+      "Tateyama, expressing the prefecture’s leap toward the great sky. The emblem was designated 1957; " +
+      "the current white-ground version has been used since 1989.",
+    sources: [
+      { title: "富山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B1%B1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-17": {
+    description:
+      "A blue field with the kanji “石川” (Ishikawa) stylised in white into the shape of the Noto " +
+      "Peninsula. The blue stands for the Sea of Japan and the prefecture’s greenery, clean water and " +
+      "clear air. Uniquely, Ishikawa uses this flag design as its emblem, having set no separate one. " +
+      "Adopted 1972.",
+    sources: [
+      { title: "石川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-18": {
+    description:
+      "An indigo field with a white emblem combining the kana “フ,” “ク” and “イ” (fu-ku-i) into a " +
+      "circular form said to resemble young leaves sprouting between two leaves, wishing for the " +
+      "prefecture’s growth. Established 1952.",
+    sources: [
+      { title: "福井県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E4%BA%95%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-19": {
+    description:
+      "A purple field — for the prefecture’s grapes — with a white trapezoid evoking the silhouette of " +
+      "Mount Fuji, standing for purity and honest nature. Within it, three “人” (person) characters form " +
+      "the kanji “山” (mountain), and curved lines express flow and endless advancement. Adopted 1966.",
+    sources: [
+      { title: "山梨県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%A2%A8%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-21": {
+    description:
+      "A white field with a green emblem: an abbreviated kanji “岐” (gi) enclosed in a circle, the green " +
+      "standing for the natural beauty found throughout the prefecture. The emblem was chosen by public " +
+      "competition and designated 1932.",
+    sources: [
+      { title: "岐阜県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%90%E9%98%9C%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-22": {
+    description:
+      "A blue field — for the sky and the Pacific — bearing a stylised map of the prefecture: Mount " +
+      "Fuji, the Izu Peninsula, Suruga Bay and Cape Omaezaki. The orange stands for bright sunlight and " +
+      "the passion and unity of the people. Chosen from 6,915 public entries; adopted 1968.",
+    sources: [
+      { title: "静岡県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-24": {
+    description:
+      "A blue-green field — combining the green of the mountains with the blue of the long coastline — " +
+      "with a white emblem based on the hiragana “み” (mi) shaped as an upward arrow for the prefecture’s " +
+      "advancement; a circle at lower left represents the pearl cultivation of Ago Bay. Adopted 1964.",
+    sources: [
+      { title: "三重県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%B8%89%E9%87%8D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-25": {
+    description:
+      "A light-blue field for the surface of Lake Biwa, with a white emblem combining the kana “シ” and " +
+      "“ガ” (shi-ga) in a circle expressing harmony; the inner circle is Lake Biwa and the wings the " +
+      "prefecture’s advancement. Emblem designated 1957; flag adopted 1968.",
+    sources: [
+      { title: "滋賀県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%BB%8B%E8%B3%80%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-28": {
+    description:
+      "A cerulean-blue field with a white kanji “兵” (hyō) drawn as waves, representing a prefecture that " +
+      "faces both the Sea of Japan and the Seto Inland Sea. The blue stands for youth and the white for " +
+      "brightness and honesty. Adopted 1964.",
+    sources: [
+      { title: "兵庫県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%85%B5%E5%BA%AB%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-29": {
+    description:
+      "A white field with a dark-red emblem based on the kana “ナ” (na): the outer ring stands for the " +
+      "nature of “Mahoroba” Yamato and the inner ring for the spirit of harmony (“wa”) from Prince " +
+      "Shōtoku’s Seventeen-Article Constitution; the horizontal axis expresses ceaseless progress in " +
+      "government. Adopted 1968.",
+    sources: [
+      { title: "奈良県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%A5%88%E8%89%AF%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-30": {
+    description:
+      "A white field with a navy-blue emblem: the kana “ワ” (wa) drawn as a fan, standing for boundless " +
+      "development in the southern Kii country and the progressive spirit of the people. Adopted 1969.",
+    sources: [
+      { title: "和歌山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-31": {
+    description:
+      "A navy-blue field with a white emblem: a flying bird formed from the hiragana “と” (to), standing " +
+      "for freedom, peace and the prefecture’s progress toward the future. Adopted 1968 for the Meiji " +
+      "centennial.",
+    sources: [
+      { title: "鳥取県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%B3%A5%E5%8F%96%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-32": {
+    description:
+      "A brown field with a gold emblem: four kana “マ” (ma) combined to read “Shima” (island) and form " +
+      "a cloud-shaped ring, standing for the unity of the people and the prefecture’s harmonious " +
+      "development. Adopted 1968.",
+    sources: [
+      { title: "島根県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B3%B6%E6%A0%B9%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-33": {
+    description:
+      "An eggplant-navy field with a gold emblem: the kanji “岡” (oka, “hill”) drawn as a circle, " +
+      "standing for the unity of the people and the prefecture’s development and advancement. Adopted " +
+      "1967.",
+    sources: [
+      { title: "岡山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-35": {
+    description:
+      "A deep reddish-brown (ebicha) field with a white emblem combining the kanji “山” and “口” " +
+      "(Yamaguchi) into a circle for the unity and advancement of the people, with birds flying toward " +
+      "the sun. Adopted 1962 for the prefecture’s 90th anniversary.",
+    sources: [
+      { title: "山口県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%8F%A3%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-36": {
+    description:
+      "An indigo field — for Tokushima’s famous indigo dyeing — with a yellow emblem based on the kana " +
+      "“とく” (toku) in an Asuka-period style, standing for the prefecture’s harmony, unity, soaring " +
+      "spirit and development. Adopted 1966.",
+    sources: [
+      { title: "徳島県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%BE%B3%E5%B3%B6%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-37": {
+    description:
+      "An olive-green field with a white emblem based on the kana “カ” (ka), incorporating the " +
+      "prefecture’s mountain ranges and olive leaves — the olive being a symbol of peace — to express " +
+      "its blessed nature and progress. Adopted 1977.",
+    sources: [
+      { title: "香川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-38": {
+    description:
+      "A flag bearing the blossom of the mikan (mandarin orange), the prefectural flower: white petals " +
+      "for modesty and purity, green for peace and hope, and yellow for happiness. Adopted 1952.",
+    sources: [
+      { title: "愛媛県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%84%9B%E5%AA%9B%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-39": {
+    description:
+      "A maroon field with a white circular emblem combining the “土” of the old province name Tosa, the " +
+      "kana for “tosa,” and the “こ” of Kōchi; a sword-point rising from the circle signifies progress " +
+      "while the ring stands for peace and cooperation. Adopted 1953.",
+    sources: [
+      { title: "高知県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%9F%A5%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-40": {
+    description:
+      "A blue field with a white emblem combining the kana “ふ” and “く” (fu-ku) drawn to resemble the " +
+      "plum blossom, the prefectural flower, standing for peace, the prefecture’s development, and the " +
+      "harmony and progress of its people. Adopted 1966.",
+    sources: [
+      { title: "福岡県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-41": {
+    description:
+      "A deep-green field with a stylised camphor-tree (kusu) flower, the prefectural flower: white " +
+      "petals for public brightness and purity, vermilion stamens for sincerity and passion, the six " +
+      "petals expressing harmony and vigorous development. Adopted 1968.",
+    sources: [
+      { title: "佐賀県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%B3%80%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-42": {
+    description:
+      "A field in white, light blue and black bearing an emblem based on the letter “N” with a stylised " +
+      "dove for peace and a sphere for the bright sea and sky, expressing the prefecture’s international " +
+      "character. Adopted 1991, replacing an earlier crane mark used from 1925.",
+    sources: [
+      { title: "長崎県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-43": {
+    description:
+      "An eggplant-brown field with a white emblem: the kana “ク” (ku) shaped like the island of Kyūshū, " +
+      "with an inner circle marking Kumamoto’s position at its centre. Adopted 1966.",
+    sources: [
+      { title: "熊本県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%86%8A%E6%9C%AC%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-44": {
+    description:
+      "A white field with a red emblem of three kanji “大” (dai) joined hands-in-a-ring to form a rising " +
+      "sun. The three characters stand for faith-and-righteousness, diligence and friendship; the ring " +
+      "for harmony, peace and cooperation. Red is the true heart of the people, white peace and " +
+      "equality. Adopted 1956.",
+    sources: [
+      { title: "大分県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%88%86%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-45": {
+    description:
+      "A green field — for the prefecture’s verdant land — with yellow shapes for sunlight: three " +
+      "diagonally-set diamonds styled as the kana “ミ” (mi), depicting radiant sun pouring onto the " +
+      "greenery. Adopted 1964.",
+    sources: [
+      { title: "宮崎県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%B4%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-46": {
+    description:
+      "A white field with a red-and-black emblem: the Satsuma and Ōsumi peninsulas stylised into a " +
+      "circle with an indentation for Shibushi Bay, and a red disc at the centre for the volcano " +
+      "Sakurajima. Adopted 1967.",
+    sources: [
+      { title: "鹿児島県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
   "JP-27": {
     description:
       "A blue field with a white emblem based on the letter “O,” derived from Toyotomi Hideyoshi’s " +
