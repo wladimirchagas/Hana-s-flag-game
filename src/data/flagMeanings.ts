@@ -7273,6 +7273,189 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flaga województwa zachodniopomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_zachodniopomorskiego" },
     ],
   },
+
+  "NL-DR": {
+    description:
+      "A white field with two red horizontal stripes, and between them a black castle tower flanked by " +
+      "six red five-pointed stars (three on each side). Red and white are the traditional Saxon colours and those " +
+      "of the Archbishopric of Utrecht, which once ruled Drenthe; the six stars are the six historic " +
+      "dingspelen (judicial districts) and allude to the Star of Bethlehem in the province’s arms; the " +
+      "tower is Coevorden Castle, seat of the bishop’s law. Adopted 1947 — the first official Dutch " +
+      "provincial flag.",
+    sources: [
+      { title: "Vlag van Drenthe — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Drenthe" },
+    ],
+  },
+
+  "NL-FR": {
+    description:
+      "Seven diagonal bands, alternating cobalt-blue and white, the white bands bearing seven red " +
+      "“pompeblêden” (water-lily leaves) arranged 2-3-2. The seven leaves stand for the Seven Frisian " +
+      "Sea Lands (and “seven” connotes “many”); the white diagonal bands are Friesland’s streams and " +
+      "lakes and the blue the waters themselves. Adopted 1957.",
+    sources: [
+      { title: "Vlag van Friesland — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Friesland" },
+    ],
+  },
+
+  "NL-ZE": {
+    description:
+      "A blue field with three white wavy bands and the crowned coat of arms of Zeeland — a lion rising " +
+      "from the waves — at the centre. The wavy bands are read either as the sea and the province’s " +
+      "constant struggle against the water or as its resistance to Spanish forces; the arms have been " +
+      "used since 1440. Adopted 1949.",
+    sources: [
+      { title: "Vlag van Zeeland (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Zeeland_(provincie)" },
+    ],
+  },
+
+  "NL-GE": {
+    description:
+      "A horizontal tricolour of blue, yellow and black. The colours come from the province’s arms: " +
+      "blue for the field of the golden lion of the Duchy of Gelre, and gold and black for the lion of " +
+      "the Duchy of Jülich, joined to Gelre’s arms in the 14th century. Adopted 1953.",
+    sources: [
+      { title: "Vlag van Gelderland — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Gelderland" },
+    ],
+  },
+
+  "NL-GR": {
+    description:
+      "A white cross bordered green over a field quartered red and blue. The white-and-green cross is " +
+      "for the city of Groningen and its central role; the red and blue quarters come from the flag of " +
+      "the Ommelanden (whose blue bands were the districts Hunsingo, Fivelingo and Westerkwartier); the " +
+      "cross form alludes to Scandinavian trade ties. Adopted 1950.",
+    sources: [
+      { title: "Vlag van Groningen (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Groningen_(provincie)" },
+    ],
+  },
+
+  "NL-FL": {
+    description:
+      "A dark-blue band over a light-green band separated by a narrow wavy yellow stripe, with a white " +
+      "fleur-de-lis in the upper hoist. Blue is the water from which the province was reclaimed; green " +
+      "the flat meadow landscape; yellow the ripening grain and rapeseed; the fleur-de-lis comes from " +
+      "the arms of engineer Cornelis Lely, initiator of the Zuiderzee works. Adopted 1989.",
+    sources: [
+      { title: "Vlag van Flevoland — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Flevoland" },
+    ],
+  },
+
+  "NL-NB": {
+    description:
+      "A chequerboard of 24 red and white squares in four rows of six — the “Brabants Bont” pattern. " +
+      "The red and white are the medieval colours of the Duchy of Brabant. In use since the Middle " +
+      "Ages, revived and officially adopted 1959.",
+    sources: [
+      { title: "Vlag van Noord-Brabant — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Noord-Brabant" },
+    ],
+  },
+
+  "NL-NH": {
+    description:
+      "A horizontal tricolour of yellow, red and blue, taken from the province’s arms, which combine " +
+      "Holland (yellow and red) with West-Friesland (yellow and blue); yellow sits on top because it " +
+      "appears in both. Adopted 1958.",
+    sources: [
+      { title: "Vlag van Noord-Holland — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Noord-Holland" },
+    ],
+  },
+
+  "NL-OV": {
+    description:
+      "Five horizontal stripes — red, yellow, blue, yellow, red — the blue one drawn as three waves. " +
+      "The yellow and red are the colours of Holland, marking the historic tie to it; the wavy blue " +
+      "stripe is the river IJssel. Adopted 1948.",
+    sources: [
+      { title: "Vlag van Overijssel — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Overijssel" },
+    ],
+  },
+
+  "NL-UT": {
+    description:
+      "A white band over a red band with a red canton at the hoist bearing a white cross. It combines " +
+      "two historic flags — the white-red bicolour of the Archdiocese of Utrecht and the white cross on " +
+      "red of the Sticht of Utrecht. Adopted 1952.",
+    sources: [
+      { title: "Vlag van Utrecht (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Utrecht_(provincie)" },
+    ],
+  },
+
+  "NL-ZH": {
+    description:
+      "A yellow field bearing a red lion with a black outline — the banner of the arms of South " +
+      "Holland. Yellow and red are the historic colours of Holland, the lion the emblem of the Counts " +
+      "of Holland since the Crusades. Adopted 1986, replacing a 1948 yellow-red-yellow tricolour.",
+    sources: [
+      { title: "Vlag van Zuid-Holland — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Zuid-Holland" },
+    ],
+  },
+
+  "NL-AW": {
+    description:
+      "A light-blue field with a red four-pointed star fimbriated white in the upper hoist and two " +
+      "yellow stripes across the lower half. Blue is the surrounding sea; yellow abundance and " +
+      "solidarity (and the island’s gold and aloe); the four-pointed star the four points of the " +
+      "compass and the diverse origins of Arubans; the white border peace and the beaches. Adopted 1976.",
+    sources: [
+      { title: "Flag of Aruba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
+    ],
+  },
+
+  "NL-CW": {
+    description:
+      "A blue field with a yellow horizontal stripe below the middle and two white five-pointed stars " +
+      "in the canton. The upper and lower blue are sky and sea, divided by the yellow of the bright " +
+      "sun; the two stars are Curaçao and Klein Curaçao, their five points the five continents its " +
+      "people descend from. Adopted 1984.",
+    sources: [
+      { title: "Flag of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao" },
+    ],
+  },
+
+  "NL-SX": {
+    description:
+      "A white triangle at the hoist bearing the country’s coat of arms, with horizontal bands of red " +
+      "and blue. Blue is the sea and sky, red the blood of Sint Maarteners; the arms carry the yellow " +
+      "sage flower, the courthouse of Philipsburg, the Dutch-French border monument and a pelican over " +
+      "a sun, with the motto “Semper progrediens.” Adopted 1985.",
+    sources: [
+      { title: "Flag of Sint Maarten — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten" },
+    ],
+  },
+
+  "NL-BQ1": {
+    description:
+      "A yellow band in the upper hoist and a dark-blue band in the lower fly, divided by a white " +
+      "diagonal bearing a black ship’s compass and a red six-pointed star. Blue is the sea, yellow the " +
+      "sun, white the sky; the compass is Bonaire’s seafaring people and the four cardinal directions; " +
+      "the star’s six points are the island’s six original villages. Adopted 1981.",
+    sources: [
+      { title: "Flag of Bonaire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bonaire" },
+    ],
+  },
+
+  "NL-BQ2": {
+    description:
+      "Two red triangles at top and two blue triangles at bottom around a central white diamond bearing " +
+      "a yellow star. The star is the island of Saba; red, white and blue mark the link with the " +
+      "Netherlands — red for courage, unity and strength, white for peace, blue for the sea. Adopted " +
+      "1985.",
+    sources: [
+      { title: "Flag of Saba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saba_(island)" },
+    ],
+  },
+
+  "NL-BQ3": {
+    description:
+      "Four red-edged blue polygons around a white diamond that holds the green silhouette of the " +
+      "island, topped by a gold star. The star is unity; the blue the surrounding ocean; the green the " +
+      "volcano “the Quill”; the red the flamboyant tree tied to Emancipation Day; the white diamond a " +
+      "former waterfall named in the anthem “Golden Rock.” Adopted 2004.",
+    sources: [
+      { title: "Flag of Sint Eustatius — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sint_Eustatius" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
