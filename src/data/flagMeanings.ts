@@ -8579,6 +8579,113 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Shetland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Shetland" },
     ],
   },
+
+  "GB-ESX": {
+    description:
+      "Six gold martlets on a blue field — the traditional emblem of Sussex, shared by East and West " +
+      "Sussex. The six martlets (heraldic swifts) stand for the six historic “rapes” of Sussex; the " +
+      "emblem goes back to a 14th-century knight’s arms and was used by John Speed in 1611 for the " +
+      "Kingdom of the South Saxons. Registered 2011 as St Richard’s Flag.",
+    sources: [
+      { title: "Flag of Sussex — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sussex" },
+    ],
+  },
+
+  "GB-WSX": {
+    description:
+      "Six gold martlets on a blue field — the flag of Sussex, shared by West and East Sussex. The six " +
+      "martlets stand for the six historic rapes of Sussex; the emblem derives from a 14th-century " +
+      "knight’s arms and was used to represent the South Saxons from 1611. Registered 2011 as " +
+      "St Richard’s Flag.",
+    sources: [
+      { title: "Flag of Sussex — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sussex" },
+    ],
+  },
+
+  "GB-OXF": {
+    description:
+      "A dark-blue field (Oxford blue) with two white wavy stripes for the River Thames, a red ox head " +
+      "at the centre, and a gold oak and wheatsheaf in the corners. The ox and the ford (wavy stripes) " +
+      "together name Oxford; the oak and sheaf are the county’s woodland and farming. From the 1949 " +
+      "county arms; registered 2017.",
+    sources: [
+      { title: "Flag of Oxfordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oxfordshire" },
+    ],
+  },
+
+  "GB-STS": {
+    description:
+      "A gold Stafford knot on a red field. The Stafford knot is unique to the county — adapted around " +
+      "1443 by Lady Joan de Stafford for her seal and later a heraldic badge, and by the 19th century a " +
+      "symbol of Staffordshire pottery; gold-on-red are the colours of many local arms. Registered 2016.",
+    sources: [
+      { title: "Flag of Staffordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Staffordshire" },
+    ],
+  },
+
+  "GB-RUT": {
+    description:
+      "A green field with a gold horseshoe and thirteen gold acorns. The horseshoe recalls the custom " +
+      "by which noble visitors to Oakham gave a horseshoe (over 230 hang in Oakham Castle); the acorns " +
+      "stand for the town of Oakham and the forest that once covered the county; green is its farmland. " +
+      "Registered 2015.",
+    sources: [
+      { title: "Flag of Rutland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rutland" },
+    ],
+  },
+
+  "GB-SHR": {
+    description:
+      "A gold (erminois) field with three blue triangles each bearing a gold leopard’s head — the " +
+      "Shropshire “loggerheads.” The loggerheads derive from the Royal Arms of England and the blue and " +
+      "gold from Roger de Montgomery, Earl of Shrewsbury; the design comes from Shrewsbury’s town arms. " +
+      "Adopted 2013.",
+    sources: [
+      { title: "Flag of Shropshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Shropshire" },
+    ],
+  },
+
+  "GB-WAR": {
+    description:
+      "A white bear and ragged staff on a red field — the heraldic emblem of the Earldom of Warwick, " +
+      "used by the Beauchamp earls since the Middle Ages and long associated with the county. Adopted " +
+      "2016.",
+    sources: [
+      { title: "Flag of Warwickshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Warwickshire" },
+    ],
+  },
+
+  "GB-WIL": {
+    description:
+      "Eight alternating green and white wavy stripes with a great bustard on a green disc. The stripes " +
+      "are Wiltshire’s pastures and chalk downs; the great bustard is the bird reintroduced to " +
+      "Salisbury Plain after dying out in England in 1832; the disc’s six segments stand for the " +
+      "county’s stone circles (Stonehenge, Avebury) and its six neighbouring counties. Adopted 2009.",
+    sources: [
+      { title: "Flag of Wiltshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wiltshire" },
+    ],
+  },
+
+  "GB-WOR": {
+    description:
+      "Three black pears on a green-and-blue wavy field. The wavy green and blue are the flood plain of " +
+      "the River Severn; the dark green is the county cricket team’s colour; the black pears recall the " +
+      "Worcestershire bowmen at Agincourt (1415) and the augmentation Elizabeth I granted the city of " +
+      "Worcester in 1575. Adopted 2013.",
+    sources: [
+      { title: "Flag of Worcestershire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Worcestershire" },
+    ],
+  },
+
+  "GB-LND": {
+    description:
+      "A red St George’s cross on white with a red sword in the upper hoist canton. The sword " +
+      "represents the one that beheaded St Paul, patron saint of the City of London, an emblem in use " +
+      "since the 13th century; the arms were first recorded in 1381.",
+    sources: [
+      { title: "Flag of the City of London — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_City_of_London" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
