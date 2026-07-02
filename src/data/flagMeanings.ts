@@ -5684,6 +5684,234 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Флаг Калининградской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
     ],
   },
+
+  "RU-KGN": {
+    description:
+      "White over emerald-green over white, the green band bearing two silver mounds (kurgans) one " +
+      "behind the other, taken from the region’s arms. The mounds refer to the region’s name (kurgan " +
+      "means “burial mound”) and its geography and history. Adopted 1997.",
+    sources: [
+      { title: "Флаг Курганской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KHA": {
+    description:
+      "White over blue with a green isosceles triangle at the hoist. White stands for purity, modesty " +
+      "and a peaceful sky; blue for beauty, grandeur and the region’s vast waters; green for hope, " +
+      "abundance, the unique flora and fauna and the boundless taiga. Adopted 1994.",
+    sources: [
+      { title: "Флаг Хабаровского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-KHM": {
+    description:
+      "A blue-cyan band over a green band, with a white vertical stripe at the hoist bearing a white " +
+      "“Siberian crown” of stylised deer antlers from the region’s arms. Blue stands for the region’s " +
+      "water; green for the taiga; white for the snow that lies seven months a year, the antlers " +
+      "recalling the reindeer-herding Khanty and Mansi peoples. Adopted 1995.",
+    sources: [
+      { title: "Флаг Ханты-Мансийского автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A5%D0%B0%D0%BD%D1%82%D1%8B-%D0%9C%D0%B0%D0%BD%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-KIR": {
+    description:
+      "A broad white band over narrow green and blue bands, with the region’s red-outlined heraldic " +
+      "shield at the centre. White stands for purity of moral principles, goodness and snowy winters; " +
+      "green for hope, health, and the fertility and forest wealth of the land; blue for loyalty and " +
+      "honesty and for the Vyatka River that united the region’s people. Adopted 2003.",
+    sources: [
+      { title: "Флаг Кировской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KK": {
+    description:
+      "Blue, white and red horizontal bands — echoing the Russian tricolour — with a green vertical " +
+      "band at the hoist bearing a gold solar (solstice) sign. Green is the traditional colour of " +
+      "Siberia, standing for the eternity of life, revival and the friendship of Khakassia’s peoples; " +
+      "the solar sign honours the ancient peoples who carved it on stone monuments found only in " +
+      "Khakassia. Adopted 2003.",
+    sources: [
+      { title: "Флаг Хакасии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A5%D0%B0%D0%BA%D0%B0%D1%81%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KL": {
+    description:
+      "A golden-yellow field with a blue disc at the centre enclosing a white nine-petalled lotus. The " +
+      "five upper petals stand for the five continents and the four lower petals for the four cardinal " +
+      "directions, expressing the Kalmyk people’s wish for friendship and cooperation with all peoples " +
+      "of the world. Adopted 1993.",
+    sources: [
+      { title: "Флаг Калмыкии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BB%D0%BC%D1%8B%D0%BA%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KLU": {
+    description:
+      "A red band over a green band separated by a narrow silver stripe, with a gold imperial crown on " +
+      "the red. Red stands for love of the homeland, courage and blood shed against invaders; the " +
+      "silver stripe for pure noble thoughts, the Oka River and the girdle of the Virgin; green — the " +
+      "arms’ main colour — for peace, nature, youth and eternal life; the crown for imperial authority. " +
+      "Adopted 2004.",
+    sources: [
+      { title: "Флаг Калужской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BB%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KO": {
+    description:
+      "Three equal horizontal bands of blue, green and white. Blue stands for the celestial principle " +
+      "and the boundless expanse of the northern spaces; green for the vast taiga (the “parma”) that is " +
+      "the Komi people’s chief wealth and traditional environment; white for the whiteness of snow, the " +
+      "severe beauty of nature and the region’s far-northern position. Adopted 1991 (confirmed 1997).",
+    sources: [
+      { title: "Флаг Коми — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%BE%D0%BC%D0%B8" },
+    ],
+  },
+
+  "RU-KEM": {
+    description:
+      "A red field with a blue vertical band at the hoist bearing the region’s coat of arms. The arms " +
+      "carry a pick and hammer for one of Russia’s major coal- and metal-mining regions and, on a red " +
+      "Order-of-Lenin ribbon, the year 1943 of the oblast’s founding. Adopted 2002; present form 2020, " +
+      "after the region was renamed Kemerovo Oblast–Kuzbass.",
+    sources: [
+      { title: "Flag of Kemerovo Oblast — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kemerovo_Oblast" },
+    ],
+  },
+
+  "RU-KOS": {
+    description:
+      "Two red vertical bands at the edges and a blue band at the centre bearing a gold ship — the main " +
+      "charge of the region’s coat of arms, recalling Empress Catherine II’s river voyage to Kostroma. " +
+      "Adopted 2006.",
+    sources: [
+      { title: "Флаг Костромской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KR": {
+    description:
+      "Three equal horizontal bands of red, light blue and green. Red stands for the strength and " +
+      "courage of the people and their red-on-white embroidery; light blue for the republic’s lakes " +
+      "and rivers, its greatness and beauty; green for nature and the hope and faith in happiness. " +
+      "Adopted 1993.",
+    sources: [
+      { title: "Флаг Карелии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KRS": {
+    description:
+      "Five horizontal stripes — red, silver, gold, black, red — with the region’s coat of arms at the " +
+      "centre. The red stands for the bravery and blood of the inhabitants in severe trials; black for " +
+      "the fertile chernozem soil; gold for the grain fields; silver for the historic Kursk shield and " +
+      "the purity of the people’s thoughts. The palette draws on the 1858–83 imperial banner. Adopted " +
+      "1996.",
+    sources: [
+      { title: "Флаг Курской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KYA": {
+    description:
+      "A red field bearing the krai’s coat of arms at the centre — a golden lion holding a spade and a " +
+      "sickle, for the region’s mining and agriculture. The law specifies the design without assigning " +
+      "a separate meaning to the red field. Adopted 2000.",
+    sources: [
+      { title: "Флаг Красноярского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%8F%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-LEN": {
+    description:
+      "A white field with the region’s coat of arms and, along the foot, wavy stripes of red, light " +
+      "blue and white. The main colours repeat the Russian tricolour to show the region’s unity with " +
+      "the country; the waves stand for its position on the Gulf of Finland and its 1,800 lakes and " +
+      "25,000 rivers. The arms carry a fortress wall, a silver anchor and a gold key. Adopted 1997.",
+    sources: [
+      { title: "Флаг Ленинградской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-LIP": {
+    description:
+      "A red field with a golden linden tree standing on five green hills. This is a “canting” flag — " +
+      "the linden (lipa) names Lipetsk — and stands for cordiality and life; the five green hills are " +
+      "the region and the four neighbours from whose lands it was formed in 1954, and the fertile " +
+      "chernozem soil; red is the labour of its metallurgists and machine-builders. Adopted 2003.",
+    sources: [
+      { title: "Флаг Липецкой области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9B%D0%B8%D0%BF%D0%B5%D1%86%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-MAG": {
+    description:
+      "A scarlet field with the region’s coat of arms in the upper hoist over a blue V-shaped stripe " +
+      "with two white wavy bands. The arms show gold and silver ingots with a geologist’s hammer and " +
+      "pick (mining), a dam and aircraft (energy and transport) and three fish (fishing) — the region’s " +
+      "chief industries. Adopted 2001.",
+    sources: [
+      { title: "Флаг Магаданской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D0%B0%D0%B3%D0%B0%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ME": {
+    description:
+      "A white (silver) field with a red vertical band of Mari ornament at the hoist and the state coat " +
+      "of arms at the centre. White is an ancient Mari symbol of purity, goodness and good intent; the " +
+      "arms bear a rearing red bear — protector of the forest — with sword and hammer, a shield with " +
+      "the Mari cross of fertility, and a crown stylising the letter “M.” Adopted 2011.",
+    sources: [
+      { title: "Флаг Марий Эл — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D0%B0%D1%80%D0%B8%D0%B9_%D0%AD%D0%BB" },
+    ],
+  },
+
+  "RU-MO": {
+    description:
+      "Three horizontal bands of dark red, white and dark blue, the white one bearing a dark-red " +
+      "eight-pointed solar rosette — a symbol of the sun in Mordovian folk ornament. Adopted 1995. The " +
+      "law specifies the sun sign but gives no separate meaning for each colour band.",
+    sources: [
+      { title: "Флаг Мордовии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-MUR": {
+    description:
+      "A broad blue band over a narrow red one, the blue bearing a golden aurora borealis of rays " +
+      "spreading upward from a triple arc. The northern lights are the characteristic natural " +
+      "phenomenon of this Arctic region. Adopted 2004.",
+    sources: [
+      { title: "Флаг Мурманской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D1%83%D1%80%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-NEN": {
+    description:
+      "Horizontal bands of white, blue and green, the blue one edged with a traditional Northern " +
+      "ornament of white and blue rafters — the “khor lambei” (reindeer antlers) of the Nenets. Silver " +
+      "stands for nobility, purity and truthfulness; azure for magnanimity, fidelity and the sky; green " +
+      "for hope, abundance, freedom and the meadow grass. Adopted 2003.",
+    sources: [
+      { title: "Флаг Ненецкого автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%B5%D0%BD%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-NGR": {
+    description:
+      "Vertical bands of blue, white and red — recalling the flag of France — with the region’s " +
+      "heraldic shield on the white. The shield shows a gold throne bearing a candelabrum and cross " +
+      "sceptre and archbishop’s staff, flanked by two black bears, over two white fish — the historic " +
+      "arms of Veliky Novgorod. Adopted 2007.",
+    sources: [
+      { title: "Флаг Новгородской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
