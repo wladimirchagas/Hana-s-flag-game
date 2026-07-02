@@ -4984,6 +4984,250 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+
+  "JP-11": {
+    description:
+      "A white field bearing a red disc formed of 16 comma-shaped magatama jewels arranged in a ring. " +
+      "The magatama allude to the “saki-mitama” (fortunate spirit) from which the name Saitama derives, " +
+      "and the emblem as a whole stands for the sun, development, passion and strength. Adopted 1964.",
+    sources: [
+      { title: "埼玉県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%9F%BC%E7%8E%89%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+  "JP-16": {
+    description:
+      "A white field with a green emblem: the hiragana “と” (to) set within the outline of Mount " +
+      "Tateyama, expressing the prefecture’s leap toward the great sky. The emblem was designated 1957; " +
+      "the current white-ground version has been used since 1989.",
+    sources: [
+      { title: "富山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B1%B1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+  "JP-19": {
+    description:
+      "A purple field — for the prefecture’s grapes — with a white trapezoid evoking the silhouette of " +
+      "Mount Fuji, standing for purity and honest nature. Within it, three “人” (person) characters form " +
+      "the kanji “山” (mountain), and curved lines express flow and endless advancement. Adopted 1966.",
+    sources: [
+      { title: "山梨県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%A2%A8%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+  "JP-22": {
+    description:
+      "A blue field — for the sky and the Pacific — bearing a stylised map of the prefecture: Mount " +
+      "Fuji, the Izu Peninsula, Suruga Bay and Cape Omaezaki. The orange stands for bright sunlight and " +
+      "the passion and unity of the people. Chosen from 6,915 public entries; adopted 1968.",
+    sources: [
+      { title: "静岡県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+
+  "JP-29": {
+    description:
+      "A white field with a dark-red emblem based on the kana “ナ” (na): the outer ring stands for the " +
+      "nature of “Mahoroba” Yamato and the inner ring for the spirit of harmony (“wa”) from Prince " +
+      "Shōtoku’s Seventeen-Article Constitution; the horizontal axis expresses ceaseless progress in " +
+      "government. Adopted 1968.",
+    sources: [
+      { title: "奈良県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%A5%88%E8%89%AF%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+  "JP-32": {
+    description:
+      "A brown field with a gold emblem: four kana “マ” (ma) combined to read “Shima” (island) and form " +
+      "a cloud-shaped ring, standing for the unity of the people and the prefecture’s harmonious " +
+      "development. Adopted 1968.",
+    sources: [
+      { title: "島根県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B3%B6%E6%A0%B9%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+  "JP-36": {
+    description:
+      "An indigo field — for Tokushima’s famous indigo dyeing — with a yellow emblem based on the kana " +
+      "“とく” (toku) in an Asuka-period style, standing for the prefecture’s harmony, unity, soaring " +
+      "spirit and development. Adopted 1966.",
+    sources: [
+      { title: "徳島県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%BE%B3%E5%B3%B6%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+  "JP-39": {
+    description:
+      "A maroon field with a white circular emblem combining the “土” of the old province name Tosa, the " +
+      "kana for “tosa,” and the “こ” of Kōchi; a sword-point rising from the circle signifies progress " +
+      "while the ring stands for peace and cooperation. Adopted 1953.",
+    sources: [
+      { title: "高知県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%9F%A5%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+
+  "JP-43": {
+    description:
+      "An eggplant-brown field with a white emblem: the kana “ク” (ku) shaped like the island of Kyūshū, " +
+      "with an inner circle marking Kumamoto’s position at its centre. Adopted 1966.",
+    sources: [
+      { title: "熊本県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%86%8A%E6%9C%AC%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+
+
+  "JP-46": {
+    description:
+      "A white field with a red-and-black emblem: the Satsuma and Ōsumi peninsulas stylised into a " +
+      "circle with an indentation for Shibushi Bay, and a red disc at the centre for the volcano " +
+      "Sakurajima. Adopted 1967.",
+    sources: [
+      { title: "鹿児島県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-27": {
+    description:
+      "A blue field with a white emblem based on the letter “O,” derived from Toyotomi Hideyoshi’s " +
+      "gourd-shaped battle standard; its branching form expresses hope, prosperity and harmony. " +
+      "Adopted in 1968 (blue field from 1984).",
+    sources: [
+      { title: "大阪府旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%97%97" },
+    ],
+  },
+
+  "JP-26": {
+    description:
+      "A reddish-purple field with a stylised character “京” (Kyō) formed as a human figure among six " +
+      "petals, representing the unity and strength of the prefecture’s people. Adopted in 1976.",
+    sources: [
+      { title: "京都府旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD%E5%BA%9C%E6%97%97" },
+    ],
+  },
+
+  "JP-23": {
+    description:
+      "A crimson field with a white emblem stylising the kana あ・い・ち (a-i-chi) as rising, sun-lit " +
+      "wave crests, expressing the Pacific-facing prefecture’s drive toward international development. " +
+      "Adopted in 1950.",
+    sources: [
+      { title: "愛知県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-14": {
+    description:
+      "A red-and-white flag whose white central emblem is the kanji “神” (kami) of Kanagawa rendered " +
+      "in a symmetrical, stylised form. Adopted in 1948.",
+    sources: [
+      { title: "神奈川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-20": {
+    description:
+      "An orange field with a white emblem — the katakana “ナ” (na) drawn as a bird flying over a " +
+      "mountain lake. The orange stands for sunlight on the land and the white for the snow of “the " +
+      "roof of Japan” and the honest character of its people. Adopted in 1967.",
+    sources: [
+      { title: "長野県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%95%B7%E9%87%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-02": {
+    description:
+      "A white field with a deep-green emblem shaped like the outline of the prefecture. The white " +
+      "stands for an infinitely expanding universe and the green for ceaseless hope and progress. " +
+      "Adopted in 1961.",
+    sources: [
+      { title: "青森県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%9D%92%E6%A3%AE%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-03": {
+    description:
+      "A greenish-grey field with a white stylised kanji “岩” (iwa, “rock”), expressing the " +
+      "prefecture’s progress toward a prosperous, comfortable homeland. Adopted in 1965.",
+    sources: [
+      { title: "岩手県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%89%8B%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-04": {
+    description:
+      "A blue-green field with a white emblem stylising the kana “み” (mi) from the leaf of the " +
+      "Japanese bush clover, the prefectural flower; its three leaves stand for eternal development, " +
+      "the people’s harmony and love of homeland. Adopted in 1966.",
+    sources: [
+      { title: "宮城県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%9F%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-05": {
+    description:
+      "A white field with a reddish-brown katakana “ア” (a), its dynamic form expressing the " +
+      "prefecture’s leap forward and development. Adopted in 1959.",
+    sources: [
+      { title: "秋田県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A7%8B%E7%94%B0%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-06": {
+    description:
+      "A blue field with a white emblem of three peaks, standing for the kanji “山” (mountain) and the " +
+      "Mogami River; the white evokes the snow and frost-flowers of Mount Zao and the honest " +
+      "character of residents. Adopted in 1971.",
+    sources: [
+      { title: "山形県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%BD%A2%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-07": {
+    description:
+      "An orange-red field with a white circular emblem stylising the kana “ふ” (fu), representing " +
+      "civic harmony and unity and the prefecture’s progress (its shape also evoking a peach). " +
+      "Adopted in 1968.",
+    sources: [
+      { title: "福島県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B3%B6%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-08": {
+    description:
+      "A blue field with a white spiral emblem stylising a rosebud, the prefectural flower, expressing " +
+      "advancement, creativity, dynamism and development. Adopted in 1991.",
+    sources: [
+      { title: "茨城県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E8%8C%A8%E5%9F%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-09": {
+    description:
+      "A yellow-green field with a white emblem stylising the kanji “栃” with an archaic “木” (tree) " +
+      "radical, expressing dynamic, energetic advancement. Adopted in 1964.",
+    sources: [
+      { title: "栃木県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%A0%83%E6%9C%A8%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
   "IT-82": {
     description:
       "The Trinacria: a triskeles of three bent legs — for Sicily’s three capes — around the winged " +
@@ -5168,6 +5412,1093 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "region’s four main rivers — the Basento, Agri, Bradano and Sinni.",
     sources: [
       { title: "Flag of Basilicata — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Basilicata" },
+    ],
+  },
+
+
+  "RU-AL": {
+    description:
+      "Horizontal bands of white and blue separated by narrow white and blue stripes. Blue stands for " +
+      "the purity of Altai’s sky, mountains, rivers and lakes; white for eternity, the striving for " +
+      "rebirth, and the love and accord of the peoples of the Altai Republic. First adopted 1992.",
+    sources: [
+      { title: "Флаг Республики Алтай — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8_%D0%90%D0%BB%D1%82%D0%B0%D0%B9" },
+    ],
+  },
+
+
+
+  "RU-ARK": {
+    description:
+      "A white field crossed diagonally by an azure saltire, with the region’s coat of arms at the " +
+      "centre. Adopted 2009 — though critics note the blue saltire echoes the naval St Andrew’s cross " +
+      "rather than the Archangel Michael for whom the region is named, and it has not received federal " +
+      "heraldic registration.",
+    sources: [
+      { title: "Флаг Архангельской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+
+
+  "RU-BEL": {
+    description:
+      "A blue cross divides the field into four quarters — white, red, green and black — with the " +
+      "region’s coat of arms in the white quarter. White stands for the chalk deposits and dairy and " +
+      "sugar production; red for the blood shed by defenders of the frontier from the 16th–20th " +
+      "centuries; green for the fertility of the land; black for the rich chernozem soil and minerals. " +
+      "Adopted 2000.",
+    sources: [
+      { title: "Флаг Белгородской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-BRY": {
+    description:
+      "A burgundy field bearing the region’s coat of arms. The burgundy recalls the colour of the " +
+      "banners under which the army and partisans fought to liberate the Bryansk region during the " +
+      "Second World War. Adopted 1998.",
+    sources: [
+      { title: "Флаг Брянской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+
+
+  "RU-CHE": {
+    description:
+      "A red field with a narrow yellow stripe low across it, bearing a white camel laden with yellow " +
+      "packs. The camel — an enduring, noble beast — stands for wisdom, patience and fidelity; red for " +
+      "life, courage and the region’s metallurgy; the yellow stripe for the Ural Mountains and their " +
+      "mineral wealth; white for nobility and justice. Adopted 2001.",
+    sources: [
+      { title: "Флаг Челябинской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+
+
+  "RU-DA": {
+    description:
+      "Three equal horizontal bands of green, blue and red. Green stands for the fertility of the land " +
+      "and for Islam; blue for the Caspian Sea and the greatness of the Dagestani people; red for " +
+      "democracy, reason and the courage of the people of this mountain country. Adopted 2003.",
+    sources: [
+      { title: "Флаг Дагестана — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%94%D0%B0%D0%B3%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+
+
+
+  "RU-KAM": {
+    description:
+      "A white-over-blue field with an emblem in the hoist: three black volcanoes with silver, flaming " +
+      "peaks and, behind them, a red-and-silver rising sun ringed by an indigenous ornament of red and " +
+      "blue triangles. The volcanoes and rising sun evoke Kamchatka’s active volcanic landscape and its " +
+      "peoples. Adopted 2010.",
+    sources: [
+      { title: "Флаг Камчатского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+
+
+  "RU-KDA": {
+    description:
+      "Three horizontal bands of blue, crimson and green with the krai’s gold coat of arms at the " +
+      "centre. The colours repeat those of the flag of the Kuban People’s Republic, regarded as the " +
+      "national flag of the Kuban Cossacks. Adopted 1995.",
+    sources: [
+      { title: "Флаг Краснодарского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-AD": {
+    description:
+      "A green field charged with twelve gold stars and three crossed gold arrows; nine stars form a " +
+      "bow-like arc and three sit in a row. Green stands for life, nature and Islam; gold for a bright " +
+      "peaceful future and an abundant grain harvest. The twelve stars are the twelve historical " +
+      "provinces of Circassia and the three arrows their unity and martial spirit. Based on a historic " +
+      "Circassian flag; adopted 1992.",
+    sources: [
+      { title: "Флаг Адыгеи — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%B4%D1%8B%D0%B3%D0%B5%D0%B8" },
+    ],
+  },
+
+  "RU-ALT": {
+    description:
+      "A red field with a blue vertical band at the hoist bearing a stylised yellow ear of wheat, and " +
+      "the krai’s coat of arms at the centre. The wheat ear stands for agriculture, the region’s " +
+      "leading economic sector; the layout derives from the 1954 RSFSR flag. Adopted 2000.",
+    sources: [
+      { title: "Флаг Алтайского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BB%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-AMU": {
+    description:
+      "A broad red band over a white wavy stripe and a blue band. Red stands for the rich history of " +
+      "the Amur region and the martial and labour feats of its people; the blue band, with its four " +
+      "waves, for the waters and the might of the great Amur River along the region’s southern border. " +
+      "Adopted 1999 (present form 2008).",
+    sources: [
+      { title: "Флаг Амурской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BC%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-AST": {
+    description:
+      "A light-blue field bearing a gold royal crown — an arch of three leaf-shaped points over a gold " +
+      "mitre topped by an orb and cross — above a silver eastern sabre with a gold hilt, point to the " +
+      "fly. These are the historic charges of Astrakhan’s arms. Adopted 2001; the law gives the " +
+      "heraldic description without assigning a separate meaning to each element.",
+    sources: [
+      { title: "Флаг Астраханской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-BA": {
+    description:
+      "Three horizontal bands of blue, white and green with a gold ring at the centre enclosing a " +
+      "seven-petalled kurai flower. Blue stands for clarity, virtue and purity of thought; white for " +
+      "peace, openness and readiness to cooperate; green for freedom and the eternity of life. The " +
+      "kurai is a symbol of friendship, its seven petals the seven clans that founded the unity of the " +
+      "peoples of Bashkortostan. Adopted 1992.",
+    sources: [
+      { title: "Флаг Башкортостана — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D0%B0%D1%88%D0%BA%D0%BE%D1%80%D1%82%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+  "RU-BU": {
+    description:
+      "Horizontal bands of blue, white and yellow, with a gold Soyombo — crescent, sun and three " +
+      "flames — in the hoist. Blue is the national colour of the Buryats and the Eternal Blue Sky " +
+      "(Khukhe Munkhe Tengri), standing for fidelity; white for high morals, happiness, peace and " +
+      "unity; gold for the spiritual principle and Tibetan Buddhism. The three flames mean past, " +
+      "present and future generations. Adopted 1992.",
+    sources: [
+      { title: "Флаг Бурятии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D1%83%D1%80%D1%8F%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-CE": {
+    description:
+      "Horizontal bands of green, white and red with a white vertical band of Chechen national " +
+      "ornament at the hoist, the whole edged in gold fringe. The design was modelled on the flag of " +
+      "Tatarstan; the article gives the layout but no official per-colour meaning. Adopted 2004.",
+    sources: [
+      { title: "Флаг Чечни — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D0%B5%D1%87%D0%BD%D0%B8" },
+    ],
+  },
+
+  "RU-CHU": {
+    description:
+      "A blue field with a white triangle based on the hoist enclosing a yellow ring around the Russian " +
+      "national colours. The triangle is the Chukotka Peninsula, Russia’s far north-eastern extremity; " +
+      "white the Arctic snows and clean fragile land; blue the two oceans — Arctic and Pacific — that " +
+      "wash it; the yellow ring the sun that rises first over Russia here, an indigenous drum (yarar), " +
+      "and the region’s gold mining. Adopted 1997.",
+    sources: [
+      { title: "Флаг Чукотского автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D1%83%D0%BA%D0%BE%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-CU": {
+    description:
+      "A field of yellow over a narrow dark-red band along the foot, charged with the dark-red “Tree of " +
+      "Life” and, above it, “Three Suns.” Yellow is the sun-filled space of the Chuvash people (and in " +
+      "heraldry wealth, justice and strength); dark red the Chuvash land. The Tree of Life expresses the " +
+      "people’s striving for spiritual harmony and the unity of peoples; the three eight-pointed suns " +
+      "mean “Were, Are, Will Be.” Adopted 1992.",
+    sources: [
+      { title: "Флаг Чувашии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D1%83%D0%B2%D0%B0%D1%88%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-IN": {
+    description:
+      "A white field with a green stripe along the top and bottom edges and a red solar sign of three " +
+      "curved rays at the centre. White stands for the purity of the people’s thoughts and deeds; green " +
+      "for the awakening of nature, the land’s fertility and Islam; red for their centuries-long " +
+      "struggle to survive on their ancestral land in peace. The sun’s three rays turn with the Earth, " +
+      "meaning eternal motion, creation and prosperity. Designed 1993, adopted 1999.",
+    sources: [
+      { title: "Флаг Ингушетии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D0%BD%D0%B3%D1%83%D1%88%D0%B5%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-IRK": {
+    description:
+      "Vertical bands of blue, white and blue, the white one bearing a black babr (a legendary Siberian " +
+      "tiger) running toward the hoist with a red sable in its jaws within an open green cedar wreath. " +
+      "Blue stands for the region’s waters — Lake Baikal and the Angara; white for purity, modesty and " +
+      "Siberian snows; the green cedar for hope and the region’s forest wealth; the red sable for " +
+      "courage and valour. Adopted 1997.",
+    sources: [
+      { title: "Флаг Иркутской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-IVA": {
+    description:
+      "A field split vertically red (hoist) and blue (fly), crossed low by three narrow silver stripes, " +
+      "with the region’s coat of arms above them. The colours and metal repeat those of the arms’ " +
+      "heraldic field, and the design is said to express the unity and interaction of the region’s " +
+      "people. Adopted 1998.",
+    sources: [
+      { title: "Флаг Ивановской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KB": {
+    description:
+      "Three equal bands of blue-grey, white and green, with a central roundel — divided blue-grey and " +
+      "green — bearing a white Mount Elbrus. Blue-grey stands for the boundless pure sky and waters (a " +
+      "colour honoured among Turkic peoples); white for peace, purity and Islam; green for fertility " +
+      "and natural beauty, also honoured in Islam and by the Kabardians. Adopted 1994.",
+    sources: [
+      { title: "Флаг Кабардино-Балкарии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%B1%D0%B0%D1%80%D0%B4%D0%B8%D0%BD%D0%BE-%D0%91%D0%B0%D0%BB%D0%BA%D0%B0%D1%80%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KC": {
+    description:
+      "Three equal bands of light blue, green and red, the green one bearing a pale roundel with a sun " +
+      "rising behind mountains. Officially light blue stands for peace and good intentions; green for " +
+      "nature, fertility, youth and wisdom; red for the warmth and closeness between peoples. An " +
+      "unofficial reading ties the three colours to the region’s Turkic, Adyghe and Slavic peoples. " +
+      "Adopted 1994.",
+    sources: [
+      { title: "Флаг Карачаево-Черкесии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D1%80%D0%B0%D1%87%D0%B0%D0%B5%D0%B2%D0%BE-%D0%A7%D0%B5%D1%80%D0%BA%D0%B5%D1%81%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KGD": {
+    description:
+      "Three horizontal bands of red, yellow and blue, with a white crenellated castle and the gold " +
+      "monogram of Empress Elizabeth Petrovna in the upper hoist. The castle is drawn from the region’s " +
+      "coat of arms and recalls Elizabeth’s historical tie to the territory; the law gives no separate " +
+      "meaning for each colour band. Adopted 2006.",
+    sources: [
+      { title: "Флаг Калининградской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KGN": {
+    description:
+      "White over emerald-green over white, the green band bearing two silver mounds (kurgans) one " +
+      "behind the other, taken from the region’s arms. The mounds refer to the region’s name (kurgan " +
+      "means “burial mound”) and its geography and history. Adopted 1997.",
+    sources: [
+      { title: "Флаг Курганской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KHA": {
+    description:
+      "White over blue with a green isosceles triangle at the hoist. White stands for purity, modesty " +
+      "and a peaceful sky; blue for beauty, grandeur and the region’s vast waters; green for hope, " +
+      "abundance, the unique flora and fauna and the boundless taiga. Adopted 1994.",
+    sources: [
+      { title: "Флаг Хабаровского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-KHM": {
+    description:
+      "A blue-cyan band over a green band, with a white vertical stripe at the hoist bearing a white " +
+      "“Siberian crown” of stylised deer antlers from the region’s arms. Blue stands for the region’s " +
+      "water; green for the taiga; white for the snow that lies seven months a year, the antlers " +
+      "recalling the reindeer-herding Khanty and Mansi peoples. Adopted 1995.",
+    sources: [
+      { title: "Флаг Ханты-Мансийского автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A5%D0%B0%D0%BD%D1%82%D1%8B-%D0%9C%D0%B0%D0%BD%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-KIR": {
+    description:
+      "A broad white band over narrow green and blue bands, with the region’s red-outlined heraldic " +
+      "shield at the centre. White stands for purity of moral principles, goodness and snowy winters; " +
+      "green for hope, health, and the fertility and forest wealth of the land; blue for loyalty and " +
+      "honesty and for the Vyatka River that united the region’s people. Adopted 2003.",
+    sources: [
+      { title: "Флаг Кировской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KK": {
+    description:
+      "Blue, white and red horizontal bands — echoing the Russian tricolour — with a green vertical " +
+      "band at the hoist bearing a gold solar (solstice) sign. Green is the traditional colour of " +
+      "Siberia, standing for the eternity of life, revival and the friendship of Khakassia’s peoples; " +
+      "the solar sign honours the ancient peoples who carved it on stone monuments found only in " +
+      "Khakassia. Adopted 2003.",
+    sources: [
+      { title: "Флаг Хакасии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A5%D0%B0%D0%BA%D0%B0%D1%81%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KL": {
+    description:
+      "A golden-yellow field with a blue disc at the centre enclosing a white nine-petalled lotus. The " +
+      "five upper petals stand for the five continents and the four lower petals for the four cardinal " +
+      "directions, expressing the Kalmyk people’s wish for friendship and cooperation with all peoples " +
+      "of the world. Adopted 1993.",
+    sources: [
+      { title: "Флаг Калмыкии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BB%D0%BC%D1%8B%D0%BA%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KLU": {
+    description:
+      "A red band over a green band separated by a narrow silver stripe, with a gold imperial crown on " +
+      "the red. Red stands for love of the homeland, courage and blood shed against invaders; the " +
+      "silver stripe for pure noble thoughts, the Oka River and the girdle of the Virgin; green — the " +
+      "arms’ main colour — for peace, nature, youth and eternal life; the crown for imperial authority. " +
+      "Adopted 2004.",
+    sources: [
+      { title: "Флаг Калужской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%BB%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KO": {
+    description:
+      "Three equal horizontal bands of blue, green and white. Blue stands for the celestial principle " +
+      "and the boundless expanse of the northern spaces; green for the vast taiga (the “parma”) that is " +
+      "the Komi people’s chief wealth and traditional environment; white for the whiteness of snow, the " +
+      "severe beauty of nature and the region’s far-northern position. Adopted 1991 (confirmed 1997).",
+    sources: [
+      { title: "Флаг Коми — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%BE%D0%BC%D0%B8" },
+    ],
+  },
+
+  "RU-KEM": {
+    description:
+      "A red field with a blue vertical band at the hoist bearing the region’s coat of arms. The arms " +
+      "carry a pick and hammer for one of Russia’s major coal- and metal-mining regions and, on a red " +
+      "Order-of-Lenin ribbon, the year 1943 of the oblast’s founding. Adopted 2002; present form 2020, " +
+      "after the region was renamed Kemerovo Oblast–Kuzbass.",
+    sources: [
+      { title: "Flag of Kemerovo Oblast — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kemerovo_Oblast" },
+    ],
+  },
+
+  "RU-KOS": {
+    description:
+      "Two red vertical bands at the edges and a blue band at the centre bearing a gold ship — the main " +
+      "charge of the region’s coat of arms, recalling Empress Catherine II’s river voyage to Kostroma. " +
+      "Adopted 2006.",
+    sources: [
+      { title: "Флаг Костромской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KR": {
+    description:
+      "Three equal horizontal bands of red, light blue and green. Red stands for the strength and " +
+      "courage of the people and their red-on-white embroidery; light blue for the republic’s lakes " +
+      "and rivers, its greatness and beauty; green for nature and the hope and faith in happiness. " +
+      "Adopted 1993.",
+    sources: [
+      { title: "Флаг Карелии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-KRS": {
+    description:
+      "Five horizontal stripes — red, silver, gold, black, red — with the region’s coat of arms at the " +
+      "centre. The red stands for the bravery and blood of the inhabitants in severe trials; black for " +
+      "the fertile chernozem soil; gold for the grain fields; silver for the historic Kursk shield and " +
+      "the purity of the people’s thoughts. The palette draws on the 1858–83 imperial banner. Adopted " +
+      "1996.",
+    sources: [
+      { title: "Флаг Курской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-KYA": {
+    description:
+      "A red field bearing the krai’s coat of arms at the centre — a golden lion holding a spade and a " +
+      "sickle, for the region’s mining and agriculture. The law specifies the design without assigning " +
+      "a separate meaning to the red field. Adopted 2000.",
+    sources: [
+      { title: "Флаг Красноярского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%8F%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-LEN": {
+    description:
+      "A white field with the region’s coat of arms and, along the foot, wavy stripes of red, light " +
+      "blue and white. The main colours repeat the Russian tricolour to show the region’s unity with " +
+      "the country; the waves stand for its position on the Gulf of Finland and its 1,800 lakes and " +
+      "25,000 rivers. The arms carry a fortress wall, a silver anchor and a gold key. Adopted 1997.",
+    sources: [
+      { title: "Флаг Ленинградской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-LIP": {
+    description:
+      "A red field with a golden linden tree standing on five green hills. This is a “canting” flag — " +
+      "the linden (lipa) names Lipetsk — and stands for cordiality and life; the five green hills are " +
+      "the region and the four neighbours from whose lands it was formed in 1954, and the fertile " +
+      "chernozem soil; red is the labour of its metallurgists and machine-builders. Adopted 2003.",
+    sources: [
+      { title: "Флаг Липецкой области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9B%D0%B8%D0%BF%D0%B5%D1%86%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-MAG": {
+    description:
+      "A scarlet field with the region’s coat of arms in the upper hoist over a blue V-shaped stripe " +
+      "with two white wavy bands. The arms show gold and silver ingots with a geologist’s hammer and " +
+      "pick (mining), a dam and aircraft (energy and transport) and three fish (fishing) — the region’s " +
+      "chief industries. Adopted 2001.",
+    sources: [
+      { title: "Флаг Магаданской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D0%B0%D0%B3%D0%B0%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ME": {
+    description:
+      "A white (silver) field with a red vertical band of Mari ornament at the hoist and the state coat " +
+      "of arms at the centre. White is an ancient Mari symbol of purity, goodness and good intent; the " +
+      "arms bear a rearing red bear — protector of the forest — with sword and hammer, a shield with " +
+      "the Mari cross of fertility, and a crown stylising the letter “M.” Adopted 2011.",
+    sources: [
+      { title: "Флаг Марий Эл — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D0%B0%D1%80%D0%B8%D0%B9_%D0%AD%D0%BB" },
+    ],
+  },
+
+  "RU-MO": {
+    description:
+      "Three horizontal bands of dark red, white and dark blue, the white one bearing a dark-red " +
+      "eight-pointed solar rosette — a symbol of the sun in Mordovian folk ornament. Adopted 1995. The " +
+      "law specifies the sun sign but gives no separate meaning for each colour band.",
+    sources: [
+      { title: "Флаг Мордовии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-MUR": {
+    description:
+      "A broad blue band over a narrow red one, the blue bearing a golden aurora borealis of rays " +
+      "spreading upward from a triple arc. The northern lights are the characteristic natural " +
+      "phenomenon of this Arctic region. Adopted 2004.",
+    sources: [
+      { title: "Флаг Мурманской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9C%D1%83%D1%80%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-NEN": {
+    description:
+      "Horizontal bands of white, blue and green, the blue one edged with a traditional Northern " +
+      "ornament of white and blue rafters — the “khor lambei” (reindeer antlers) of the Nenets. Silver " +
+      "stands for nobility, purity and truthfulness; azure for magnanimity, fidelity and the sky; green " +
+      "for hope, abundance, freedom and the meadow grass. Adopted 2003.",
+    sources: [
+      { title: "Флаг Ненецкого автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%B5%D0%BD%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-NGR": {
+    description:
+      "Vertical bands of blue, white and red — recalling the flag of France — with the region’s " +
+      "heraldic shield on the white. The shield shows a gold throne bearing a candelabrum and cross " +
+      "sceptre and archbishop’s staff, flanked by two black bears, over two white fish — the historic " +
+      "arms of Veliky Novgorod. Adopted 2007.",
+    sources: [
+      { title: "Флаг Новгородской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-NIZ": {
+    description:
+      "A white field bearing the region’s coat of arms — a crowned red deer walking toward the hoist, " +
+      "with black hooves and antlers, the historic emblem of Nizhny Novgorod, set on ermine ornament. " +
+      "Adopted 2005.",
+    sources: [
+      { title: "Флаг Нижегородской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%B8%D0%B6%D0%B5%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-NVS": {
+    description:
+      "Five vertical bands of red, white, blue, white and green, with two black sables holding a gold " +
+      "loaf and salt across the centre. White stands for purity, faith and the harsh Siberian winter; " +
+      "green for hope, abundance and the region’s natural wealth; red for courage and the heroism of " +
+      "its defenders; blue for the Ob River and the many lakes covering nearly a third of the region. " +
+      "Adopted 2003.",
+    sources: [
+      { title: "Флаг Новосибирской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-OMS": {
+    description:
+      "Two red vertical bands at the edges and a white band at the centre carrying a wavy blue stripe. " +
+      "Red stands for valour, fearlessness, life, mercy and love; white for nobility, purity and " +
+      "justice and the Siberian climate; the wavy blue stripe for the Irtysh, the region’s main river, " +
+      "and for beauty and grandeur. Adopted 2003.",
+    sources: [
+      { title: "Флаг Омской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9E%D0%BC%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ORE": {
+    description:
+      "A red field bearing the full coat of arms of Orenburg Oblast at the centre. Adopted 1997; the " +
+      "law specifies the design without assigning a separate meaning to the red field.",
+    sources: [
+      { title: "Флаг Оренбургской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-PER": {
+    description:
+      "A white cross divides the field into four quarters — red and blue above, blue and red below — " +
+      "with the krai’s coat of arms at the centre. White stands for purity, goodness and the peaceful, " +
+      "clean thoughts of the people; blue for the warmth of human relations and the waters of the Kama " +
+      "and the region’s many rivers and lakes; red for the bravery of the inhabitants. Adopted 2007.",
+    sources: [
+      { title: "Флаг Пермского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D0%B5%D1%80%D0%BC%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-PNZ": {
+    description:
+      "Bands of green and yellow bearing the region’s coat of arms — three gold wheat sheaves bound " +
+      "with crimson ribbons. Green stands for nature, forests, fertility and health; yellow for the " +
+      "fields, wisdom, light and an abundant harvest. Adopted 2022, replacing a 2002 flag that showed " +
+      "the Saviour-Not-Made-by-Hands.",
+    sources: [
+      { title: "Флаг Пензенской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D0%B5%D0%BD%D0%B7%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-PRI": {
+    description:
+      "A field divided diagonally by a white stripe into a red upper triangle at the hoist and a blue " +
+      "lower one, with a gold walking Amur tiger in the upper hoist. Red stands for the courage, " +
+      "valour and sacrifice of the region’s people; blue for honesty, loyalty and the beauty of the " +
+      "sea; the white stripe for purity and the unity of the region with Russia. The Amur tiger is the " +
+      "region’s heraldic emblem. Adopted 1995.",
+    sources: [
+      { title: "Флаг Приморского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D1%80%D0%B8%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-PSK": {
+    description:
+      "A light-blue field bearing the charges of the Pskov arms — a gold leopard (bars) beneath a hand " +
+      "issuing from a cloud — with a white vertical band of the traditional Pskov “begunets” brick " +
+      "ornament at the hoist. Adopted 2018; the law gives the design without a separate meaning for " +
+      "each element.",
+    sources: [
+      { title: "Флаг Псковской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ROS": {
+    description:
+      "Horizontal bands of blue, yellow and red with a white vertical stripe at the hoist. The three " +
+      "bands come from the 1918 Don Cossack flag, where they stood for the union of the region’s three " +
+      "peoples — the Don Cossacks (blue), the Kalmyks (yellow) and the Russians (red); the white stripe, " +
+      "added in 1996, stands for the region’s unity with Russia. Adopted 1996.",
+    sources: [
+      { title: "Флаг Ростовской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-RYA": {
+    description:
+      "Horizontal bands of white, yellow and red, the yellow one bearing the standing prince from the " +
+      "region’s arms. Gold stands for wealth, justice and, in Orthodox tradition, eternity and " +
+      "holiness; red for courage and strength; white for purity and spirituality. The prince recalls " +
+      "St Oleg of Ryazan, builder and protector of the land. Adopted 2000.",
+    sources: [
+      { title: "Флаг Рязанской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SA": {
+    description:
+      "A broad blue field with a central white disc, over narrow bands of white, red and green. The " +
+      "white disc on blue is the Arctic sun at its zenith and the continuity of generations — the Sakha " +
+      "considered themselves “children of the white sun”; blue is honour and loyalty; white the beauty " +
+      "and severity of the North; red loyalty to the homeland; green the brief Yakut summer and the " +
+      "taiga. Adopted 1992.",
+    sources: [
+      { title: "Флаг Якутии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%AF%D0%BA%D1%83%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-SAK": {
+    description:
+      "A sea-wave blue field (blue with an emerald tint) bearing the white outlines of Sakhalin Island " +
+      "and the Kuril Islands set diagonally — the territory that forms the united Sakhalin Oblast. One " +
+      "of the few flags to depict a map of its territory. Adopted 1995.",
+    sources: [
+      { title: "Флаг Сахалинской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SAM": {
+    description:
+      "Three horizontal bands of red, white and blue with the region’s coat of arms at the centre. " +
+      "White stands for nobility and candour; blue for loyalty, honesty and virtue; red for courage, " +
+      "boldness and love. The colours echo the historic Samara Banner carried in the Slavic peoples’ " +
+      "struggle against Ottoman rule. Adopted 1998.",
+    sources: [
+      { title: "Флаг Самарской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SAR": {
+    description:
+      "A white band over a red band (2:1), with the region’s coat of arms — three silver sturgeons — " +
+      "within a wreath of oak, laurel and wheat on the white. Adopted 2001; the law specifies the " +
+      "design without assigning a separate meaning to each colour.",
+    sources: [
+      { title: "Флаг Саратовской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SE": {
+    description:
+      "Three equal horizontal bands of white, red and gold. White stands for moral and spiritual " +
+      "purity; red for courage, strength and honour; gold for abundance, well-being and prosperity. The " +
+      "three correspond to the three-part structure of ancient society reflected in the Ossetian Nart " +
+      "epic. Adopted 1994.",
+    sources: [
+      { title: "Флаг Северной Осетии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B9_%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-SMO": {
+    description:
+      "A red field with two yellow stripes low across it and the region’s abbreviated coat of arms " +
+      "(shield and crown) in the upper hoist. Red is the field of battle — Smolensk land being a great " +
+      "historical battlefield; the yellow is the colour of the birds Gamayun and the Phoenix, for a " +
+      "city that twice rose from the ashes (1812 and 1941–45), and forms a scheme of the Order of " +
+      "Lenin. Adopted 1998.",
+    sources: [
+      { title: "Флаг Смоленской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%BC%D0%BE%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SPE": {
+    description:
+      "A red field bearing the historic arms of the city: two crossed silver anchors — one sea, one " +
+      "river, for the maritime and river port — behind a gold sceptre topped by the double-headed " +
+      "eagle. Adopted 1992; it was the first territorial flag entered in Russia’s State Heraldic " +
+      "Register.",
+    sources: [
+      { title: "Флаг Санкт-Петербурга — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-STA": {
+    description:
+      "A gold field with a white cross and the region’s coat of arms at its centre. Gold marks a sunny " +
+      "southern land of golden grain and golden fleece, standing for richness and fertility; the white " +
+      "cross recalls the name Stavropol (Greek for “city of the cross”), the region’s Orthodox role in " +
+      "the North Caucasus, and its crossroads position. Adopted 1997.",
+    sources: [
+      { title: "Флаг Ставропольского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D1%82%D0%B0%D0%B2%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-SVE": {
+    description:
+      "A broad white band over a blue band, with a narrow white stripe above a green band along the " +
+      "foot. White stands for purity; blue for sincerity and honour; green for freedom and the wealth " +
+      "of Ural nature. The white and blue also echo the Russian flag. Adopted 2005.",
+    sources: [
+      { title: "Флаг Свердловской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B2%D0%B5%D1%80%D0%B4%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TA": {
+    description:
+      "Green over red, separated by a thin white stripe. Green stands for the greenery of spring and " +
+      "rebirth; white for purity; red for the maturity, energy, strength and life of the peoples of " +
+      "Tatarstan. Adopted 1991.",
+    sources: [
+      { title: "Флаг Татарстана — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+  "RU-TAM": {
+    description:
+      "Two equal vertical bands of red and blue with the region’s coat of arms at the centre. Red " +
+      "stands for the courage, resilience and solidarity of the inhabitants and recalls historic " +
+      "Russian banners; blue for the grandeur, natural beauty and purity of the Tambov land and for " +
+      "loyalty to tradition. Adopted 2005.",
+    sources: [
+      { title: "Флаг Тамбовской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TOM": {
+    description:
+      "A white field bearing the region’s coat of arms at the centre. The white and green of the arms " +
+      "and flag are traditional Siberian colours — green for the forest, white for the snow. Adopted " +
+      "1997.",
+    sources: [
+      { title: "Флаг Томской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TUL": {
+    description:
+      "A red field bearing the charges of the region’s arms: a horizontal white sword blade over two " +
+      "crossed sword blades, accompanied above and below by gold hammers — emblems of Tula’s historic " +
+      "arms and armaments industry. Adopted 2005.",
+    sources: [
+      { title: "Флаг Тульской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TVE": {
+    description:
+      "A red central panel bearing the region’s emblem, flanked by two gold vertical bands. The emblem " +
+      "is a throne with a high back bearing the Cap of Monomakh on a green cushion — the historic arms " +
+      "of the Principality of Tver, approved by Catherine II in 1780. Adopted 1996.",
+    sources: [
+      { title: "Флаг Тверской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TY": {
+    description:
+      "A blue field with a yellow wedge at the hoist from which white diagonal stripes run to meet in a " +
+      "central white band. Blue stands for the pure boundless sky and the valour and harmony of the " +
+      "Tuvans; white for purity, nobility and the milk-tea offered to guests; gold for wealth, justice " +
+      "and the region’s Buddhist and shamanist faiths. The diagonal stripes are the Biy-Khem and " +
+      "Kaa-Khem rivers meeting to form the Yenisei at Kyzyl. Adopted 1992.",
+    sources: [
+      { title: "Флаг Тывы — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D1%8B%D0%B2%D1%8B" },
+    ],
+  },
+
+  "RU-TYU": {
+    description:
+      "Three horizontal bands of white, blue and green with a red triangle at the hoist and three " +
+      "yellow crowns shaped as deer antlers on the blue band. The antler-crowns are a traditional " +
+      "ornament of the region’s northern peoples, the first taken from the region’s coat of arms. " +
+      "Adopted 1995 (present form 2008).",
+    sources: [
+      { title: "Флаг Тюменской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-UD": {
+    description:
+      "Three equal vertical bands of black, white and red, the white one bearing a red eight-pointed " +
+      "solar “cross-arrow.” Black stands for earth and stability; white for the cosmos and purity of " +
+      "moral principles; red for the sun and life. The solar sign is a traditional amulet believed to " +
+      "guard its bearer from misfortune. Adopted 1993.",
+    sources: [
+      { title: "Флаг Удмуртии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A3%D0%B4%D0%BC%D1%83%D1%80%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-ULY": {
+    description:
+      "A blue field with a white column on a pedestal, topped by the Imperial Crown with blue ribbons " +
+      "to the sides — the historic emblem of Simbirsk (now Ulyanovsk), a symbol of statehood and " +
+      "steadfastness. Adopted 2013.",
+    sources: [
+      { title: "Флаг Ульяновской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A3%D0%BB%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VGG": {
+    description:
+      "A red field bearing a white image of the Motherland Calls statue of Mamayev Kurgan, with two " +
+      "blue vertical stripes at the hoist. Red recalls the historic Tsaritsyn regiments and the courage " +
+      "and sacrifice of the region’s defenders; the statue embodies the heroism of the Battle of " +
+      "Stalingrad; the two blue stripes are the Volga and the Don. Adopted 2000.",
+    sources: [
+      { title: "Флаг Волгоградской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VLA": {
+    description:
+      "A red field bearing the gold coat of arms of Vladimir — a crowned lion rampant — with a " +
+      "light-blue band at the hoist carrying a gold hammer and sickle. Based on the RSFSR flag, it " +
+      "unusually combines Soviet emblems with the region’s historic crowned lion. Adopted 1999.",
+    sources: [
+      { title: "Флаг Владимирской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VOR": {
+    description:
+      "A red field with a gold mountain of stones issuing from the hoist, on whose slope a white " +
+      "overturned pitcher pours white water. The pitcher and water stand for the fertility of the land " +
+      "and the Voronezh River and the diligence of the people; the gold mountain for the steep right " +
+      "bank of Voronezh and for abundance. Drawn from the city’s 1781 arms. Adopted 2005.",
+    sources: [
+      { title: "Флаг Воронежской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VLG": {
+    description:
+      "A white field with a red vertical band at the fly and, in the upper hoist, the region’s red seal " +
+      "charge — a hand emerging from a cloud holding an orb and a sword, with a crown above. Adopted " +
+      "1997.",
+    sources: [
+      { title: "Flag of Vologda Oblast — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vologda_Oblast" },
+    ],
+  },
+
+  "RU-YAN": {
+    description:
+      "A bright blue-cyan field with a white “Deer Horns” ornament, framed by red and blue bands, along " +
+      "the foot. Blue stands for the sea, sky and Yamal’s natural gas; white for purity, independence " +
+      "and the long severe winters; the reindeer-antler ornament for the herding life of the region’s " +
+      "indigenous peoples on the white snows. Adopted 1996.",
+    sources: [
+      { title: "Флаг Ямало-Ненецкого автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%AF%D0%BC%D0%B0%D0%BB%D0%BE-%D0%9D%D0%B5%D0%BD%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-YAR": {
+    description:
+      "A yellow field bearing a black bear standing on its hind legs and holding a white axe on its " +
+      "shoulder — the historic emblem of Yaroslavl, matching the figure on the region’s coat of arms. " +
+      "Adopted 2001.",
+    sources: [
+      { title: "Флаг Ярославской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-YEV": {
+    description:
+      "A white field with a horizontal rainbow of seven narrow bands across the centre. White stands " +
+      "for purity; the rainbow is a biblical symbol of peace, happiness and good, and its seven stripes " +
+      "recall the seven candles of the menorah and the seven days of creation — a nod to the region’s " +
+      "Jewish heritage. Adopted 1996.",
+    sources: [
+      { title: "Флаг Еврейской автономной области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%95%D0%B2%D1%80%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ZAB": {
+    description:
+      "Green over red bands with a yellow triangle at the hoist. Yellow stands for the boundless " +
+      "steppe; green for the taiga and its rich wildlife; red for the region’s energy and mineral " +
+      "resources. The layout derives from a palisade element on the 1859 arms of Zabaykalsky Oblast. " +
+      "Adopted 2009.",
+    sources: [
+      { title: "Флаг Забайкальского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%97%D0%B0%D0%B1%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "JP-10": {
+    description:
+      "A purple field with a white emblem: the old form of the kanji “群” (gun, “group”) drawn as a " +
+      "circle for the harmony of the people, framed by three white crescents for the Jōmō Three " +
+      "Mountains (Akagi, Haruna and Myōgi) expressing an advancing Gunma. Purple recalls the refined " +
+      "culture of the ancient Kōzuke province. Adopted 1968 for the Meiji centennial.",
+    sources: [
+      { title: "群馬県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%BE%A4%E9%A6%AC%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-12": {
+    description:
+      "A sky-blue field — for hope and development — bearing the prefectural emblem in white edged with " +
+      "a thin yellow border evoking the rapeseed blossom (nanohana), the prefectural flower. The emblem, " +
+      "dating to 1909, combines the kana “チ” and “ハ” (chi-ha). Flag adopted 1963.",
+    sources: [
+      { title: "千葉県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%8D%83%E8%91%89%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-15": {
+    description:
+      "A red field with a gold emblem: a stylised kanji “新” (shin, “new”) above a circle flanked by the " +
+      "kana “ガ” and “タ” (ga-ta) set like a necklace, expressing harmony, hope and the prefecture’s " +
+      "smooth development. Adopted 1963.",
+    sources: [
+      { title: "新潟県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%96%B0%E6%BD%9F%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-17": {
+    description:
+      "A blue field with a white emblem: the kanji “石川” (Ishikawa) stylised into the shape of the Noto " +
+      "Peninsula. The blue stands for the Sea of Japan and the prefecture’s greenery, clean water and " +
+      "clear air. Ishikawa sets no separate emblem, so this flag design also serves as its emblem. " +
+      "Adopted 1972.",
+    sources: [
+      { title: "石川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-18": {
+    description:
+      "A navy-blue field with a white emblem combining the kana “フ,” “ク” and “イ” (fu-ku-i) into a " +
+      "circle said to resemble young leaves sprouting between two leaves, carrying the wish for the " +
+      "prefecture’s development. One of the oldest prefectural emblems. Adopted 1952.",
+    sources: [
+      { title: "福井県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E4%BA%95%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-21": {
+    description:
+      "A white field with a green emblem: an abbreviated kanji “岐” (gi) enclosed in a circle, the green " +
+      "standing for the beauty of the prefecture’s nature. The emblem was designated 1932; the flag " +
+      "arose as a de-facto standard through use.",
+    sources: [
+      { title: "岐阜県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%90%E9%98%9C%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-24": {
+    description:
+      "A blue-green field — combining the green of the mountains with the blue of the roughly " +
+      "1,000-km coastline — with a white emblem: the hiragana “み” (mi) shaped as an upward arrow for " +
+      "the prefecture’s advancement, and a circle at lower left for the world-renowned pearl " +
+      "cultivation of Ago Bay. Adopted 1964.",
+    sources: [
+      { title: "三重県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%B8%89%E9%87%8D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-25": {
+    description:
+      "A light-blue field for the surface of Lake Biwa, with a white emblem combining the kana “シ” and " +
+      "“ガ” (shi-ga) in a circle for harmony; the inner circle is Lake Biwa and the wings the " +
+      "prefecture’s leap forward. Emblem designated 1957; flag adopted 1968.",
+    sources: [
+      { title: "滋賀県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%BB%8B%E8%B3%80%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-28": {
+    description:
+      "A cerulean-blue field with a white kanji “兵” (hyō) drawn as waves, representing a prefecture " +
+      "that faces both the Sea of Japan and the Seto Inland Sea. Cerulean stands for youth, white for " +
+      "brightness and sincerity. Adopted 1964.",
+    sources: [
+      { title: "兵庫県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%85%B5%E5%BA%AB%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-30": {
+    description:
+      "A white field with a dark navy-blue emblem: the kana “ワ” (wa) drawn as a fan, standing for the " +
+      "limitless development of the Kishū region toward tomorrow and the progressive spirit of the " +
+      "people. Adopted 1969.",
+    sources: [
+      { title: "和歌山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-31": {
+    description:
+      "A navy-blue field with a white emblem: a flying bird formed from the hiragana “と” (to), standing " +
+      "for freedom, peace and the prefecture’s progress toward the future. Adopted 1968 for the Meiji " +
+      "centennial.",
+    sources: [
+      { title: "鳥取県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%B3%A5%E5%8F%96%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-33": {
+    description:
+      "An eggplant-navy field with a gold emblem: the kanji “岡” (oka, “hill”) drawn as a circle, " +
+      "standing for the unity of the people and the prefecture’s development and advancement. Adopted " +
+      "1967.",
+    sources: [
+      { title: "岡山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-35": {
+    description:
+      "A deep reddish-brown (ebicha) and white flag whose emblem combines the kanji “山” and “口” " +
+      "(Yamaguchi) into a circle for the unity and advancement of the people, with a bird flying toward " +
+      "the sun. Adopted 1962 for the prefecture’s 90th anniversary.",
+    sources: [
+      { title: "山口県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%8F%A3%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-37": {
+    description:
+      "An olive-green field with a white emblem based on the kana “カ” (ka) combined with the " +
+      "prefecture’s mountain ranges and olive leaves — a symbol of peace — expressing its blessed " +
+      "nature and development. Adopted 1977.",
+    sources: [
+      { title: "香川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-38": {
+    description:
+      "A flag bearing the blossom of the mikan (mandarin orange), the prefectural flower, on a green " +
+      "and yellow field: the white petals stand for simplicity and purity, green for peace and hope, " +
+      "and yellow for happiness. Adopted 1952.",
+    sources: [
+      { title: "愛媛県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%84%9B%E5%AA%9B%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-40": {
+    description:
+      "A blue field with a white emblem combining the kana “ふ” and “く” (fu-ku) drawn as plum blossoms, " +
+      "the prefectural flower, standing for peace, the prefecture’s development, and the harmony and " +
+      "progress of its people. Adopted 1966.",
+    sources: [
+      { title: "福岡県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-41": {
+    description:
+      "A deep-green field bearing a stylised camphor-tree (kusu) flower, the prefectural flower: white " +
+      "petals for public integrity and purity, crimson stamens and pistils for sincerity and passion, " +
+      "the six petals expressing harmony and vigorous development. Adopted 1968.",
+    sources: [
+      { title: "佐賀県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%B3%80%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-42": {
+    description:
+      "A water-blue field with a white emblem based on the letter “N,” deformed into a dove for peace " +
+      "with a sphere for the bright sea, sky and earth, expressing the prefecture’s international " +
+      "character. Adopted 1991, replacing an earlier crane mark used from 1925.",
+    sources: [
+      { title: "長崎県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-44": {
+    description:
+      "A white field with a red emblem of three kanji “大” (dai) joined into a ring like a rising sun. " +
+      "The three characters stand for integrity, diligence and friendship; the ring for harmony, peace " +
+      "and cooperation. Red is the sincerity of the people, white peace and equality. Adopted 1956.",
+    sources: [
+      { title: "大分県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%88%86%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-45": {
+    description:
+      "A green field — for the fertile land — with three yellow diamonds set diagonally, forming the " +
+      "kana “ミ” (mi) and depicting sunlight pouring down on the prefecture’s soil. Adopted 1964.",
+    sources: [
+      { title: "宮崎県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%B4%8E%E7%9C%8C%E6%97%97" },
     ],
   },
 };
