@@ -8749,6 +8749,38 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of England — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_England" },
     ],
   },
+
+  "GB-BDF": {
+    description:
+      "Quarters of yellow and red crossed by blue-and-white wavy bands and a black vertical panel with " +
+      "three white scallop shells. The yellow and red come from the Beauchamp family, builders of " +
+      "Bedford Castle; the wavy bands are the River Great Ouse; the three scallops are from the Dukes " +
+      "of Bedford’s arms. Adopted 2014.",
+    sources: [
+      { title: "Flag of Bedfordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bedfordshire" },
+    ],
+  },
+
+  "GB-CGN": {
+    description:
+      "A gold lion rampant looking back (regardant) on a black field. It derives from the arms of the " +
+      "ancient Welsh ruler Gwaithfoed of Ceredigion (a black lion on gold), the colours later reversed " +
+      "for the county; a de-facto county flag in widespread use.",
+    sources: [
+      { title: "Flag of Ceredigion — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ceredigion" },
+    ],
+  },
+
+  "GB-ELN": {
+    description:
+      "A blue field with a gold saltire and a gold lion rampant, the saltire’s arms crossed by blue " +
+      "wavy stripes. Blue recalls that Scotland’s Saltire was born at nearby Athelstaneford; the gold " +
+      "saltire is the county’s farmland (the “granary of Scotland”); the lion recalls William the Lion, " +
+      "born at Haddington; the wavy stripes are the rivers Esk and Tyne. Registered 2018.",
+    sources: [
+      { title: "Flag of East Lothian — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_East_Lothian" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
