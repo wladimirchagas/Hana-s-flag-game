@@ -8803,6 +8803,17 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Plymouth — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Plymouth" },
     ],
   },
+
+  "GB-CHW": {
+    description:
+      "Three gold wheat sheaves (garbs) around an upward gold sword on a blue field. The sword recalls " +
+      "that the Earl of Chester held his County Palatine “as freely by his sword as the King of England " +
+      "held by his crown”; the wheat sheaves come from the de Blondeville earls and have been in " +
+      "Chester’s arms since at least 1560. Registered 2013.",
+    sources: [
+      { title: "Flag of Cheshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cheshire" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
