@@ -8499,6 +8499,86 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Nottinghamshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nottinghamshire" },
     ],
   },
+
+  "GB-LEC": {
+    description:
+      "A red-and-white zigzag (dancetté) field bearing a gold cinquefoil and a running black fox. The " +
+      "zigzag comes from the arms of Simon de Montfort, Earl of Leicester; the cinquefoil from the " +
+      "de Beaumont earls; the fox from the county crest and its long hunting tradition. Adopted 2021 — " +
+      "the last English county to register a flag.",
+    sources: [
+      { title: "Flag of Leicestershire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Leicestershire" },
+    ],
+  },
+
+  "GB-SOM": {
+    description:
+      "A red dragon rampant on a gold field. The red Somerset dragon is a long-standing county emblem, " +
+      "linked in legend to King Arthur. Adopted 2013.",
+    sources: [
+      { title: "Flag of Somerset — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somerset" },
+    ],
+  },
+
+  "GB-SFK": {
+    description:
+      "Two gold arrows crossed through a gold ancient crown on a blue field — the medieval banner of " +
+      "arms of St Edmund, the Anglo-Saxon king of East Anglia. The arrows recall his martyrdom (bound " +
+      "to a tree and shot by the Danes around 870). Registered 2017.",
+    sources: [
+      { title: "Flag of Suffolk — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Suffolk" },
+    ],
+  },
+
+  "GB-CAM": {
+    description:
+      "A royal-blue field with three gold Saxon crowns (two above one) and two pale wavy lines across it. " +
+      "The blue and three crowns are taken from the flag of East Anglia; the wavy lines are the River " +
+      "Cam, in the Cambridge-blue of the university. Registered 2015.",
+    sources: [
+      { title: "Flag of Cambridgeshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cambridgeshire" },
+    ],
+  },
+
+  "GB-IOW": {
+    description:
+      "A white diamond — the island — hovering over blue-and-white waves, with a notch at its top for " +
+      "the River Medina, the island’s largest river. Registered 2009 after a public competition.",
+    sources: [
+      { title: "Flag of the Isle of Wight — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Wight" },
+    ],
+  },
+
+  "GB-HRT": {
+    description:
+      "Eight alternating blue and white wavy lines with a gold shield bearing a reclining hart. The " +
+      "wavy lines are a heraldic water-course, for the county’s many rivers; the hart on a ford is " +
+      "canting arms for “Hertford,” and the gold field honours St Alban, the county’s patron and " +
+      "Britain’s first Christian martyr. Adopted 2008.",
+    sources: [
+      { title: "Flag of Hertfordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hertfordshire" },
+    ],
+  },
+
+  "GB-ORK": {
+    description:
+      "A yellow-edged blue Nordic cross on a red field. Red and yellow come from the Scottish and " +
+      "Norwegian royal arms, marking Orkney’s dual Scottish and Norwegian heritage; the blue is taken " +
+      "from Scotland’s flag and also stands for the surrounding sea. Adopted 2007.",
+    sources: [
+      { title: "Flag of Orkney — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Orkney" },
+    ],
+  },
+
+  "GB-ZET": {
+    description:
+      "A white Nordic cross on a blue field. It uses the colours of the Scottish Saltire in the form of " +
+      "a Nordic cross to symbolise Shetland’s ties to both Scotland and Scandinavia. Created 1969 by " +
+      "Roy Grønneberg and Bill Adams to mark 500 years since the islands passed from Norway to Scotland.",
+    sources: [
+      { title: "Flag of Shetland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Shetland" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
