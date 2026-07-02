@@ -7593,6 +7593,121 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Vlag van Namen (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Namen_(provincie)" },
     ],
   },
+
+  "PT-20": {
+    description:
+      "A blue band at the hoist and a white field, over which nine gold stars arch above a gold " +
+      "goshawk (açor) with outspread wings; the Portuguese shield sits in the canton. Blue and white " +
+      "are the traditional Portuguese colours of the constitutional monarchy; the nine stars are the " +
+      "archipelago’s nine islands; the goshawk gives the Azores their name; the shield marks Azorean " +
+      "Portuguese patriotism. Adopted 1979.",
+    sources: [
+      { title: "Flag of the Azores — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Azores" },
+    ],
+  },
+
+  "PT-30": {
+    description:
+      "A vertical triband of blue, gold and blue with the red Cross of the Order of Christ on the gold. " +
+      "Blue stands for the sea and for nobility and serenity; gold for the mild climate and for wealth, " +
+      "faith and constancy; the cross recalls that Madeira was discovered by knights of Henry the " +
+      "Navigator, Grand Master of the Order of Christ, which owned and settled the islands. Adopted 1978.",
+    sources: [
+      { title: "Flag of Madeira — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Madeira" },
+    ],
+  },
+
+  "MX-BCS": {
+    description:
+      "A white field bearing the state coat of arms at the centre. Adopted 2017 as the state’s first " +
+      "official flag; the law specifies the white field and the arms without assigning a separate " +
+      "colour symbolism.",
+    sources: [
+      { title: "Bandera de Baja California Sur — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Baja_California_Sur" },
+    ],
+  },
+
+  "MX-DUR": {
+    description:
+      "A white field bearing the coat of arms of Durango at the centre. Adopted 2014; the law specifies " +
+      "the white field and the arms without assigning a separate colour symbolism.",
+    sources: [
+      { title: "Bandera de Durango — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Durango" },
+    ],
+  },
+
+  "MX-GUA": {
+    description:
+      "A white field with a gold border bearing the coat of arms of Guanajuato — Saint Faith with " +
+      "chalice and cross over a scallop shell and laurel, under the royal crown of Castile. White " +
+      "stands for freedom, peace and harmony; gold for the region’s mining wealth. Adopted 2023 for the " +
+      "state’s bicentenary.",
+    sources: [
+      { title: "Bandera de Guanajuato — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Guanajuato" },
+    ],
+  },
+
+  "MX-GRO": {
+    description:
+      "A white field bearing the coat of arms of Guerrero at the centre. Adopted 2019; the law " +
+      "specifies the white field and the arms without assigning a separate colour symbolism.",
+    sources: [
+      { title: "Bandera de Guerrero — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Guerrero" },
+    ],
+  },
+
+  "MX-JAL": {
+    description:
+      "Two equal vertical bands of blue and gold with the state coat of arms — two lions and a golden " +
+      "pine on blue — between them. Gold stands for doing good to the poor, blue for serving the rulers " +
+      "and fostering agriculture; the colours derive from the Kingdom of Galicia and Guadalajara’s " +
+      "original arms. Adopted 2011 (first officialised 2008, the first Mexican state flag).",
+    sources: [
+      { title: "Bandera de Jalisco — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Jalisco" },
+    ],
+  },
+
+  "MX-QUE": {
+    description:
+      "A white field bearing the coat of arms of Querétaro at the centre. Adopted 2015; the law " +
+      "specifies the white field and the arms without assigning a separate colour symbolism.",
+    sources: [
+      { title: "Bandera de Querétaro — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Quer%C3%A9taro" },
+    ],
+  },
+
+  "MX-ROO": {
+    description:
+      "A white field bearing the coat of arms of Quintana Roo at the centre. Adopted 2013 as the " +
+      "state’s first official flag; the law specifies the white field and the arms without a separate " +
+      "colour symbolism.",
+    sources: [
+      { title: "Bandera de Quintana Roo — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Quintana_Roo" },
+    ],
+  },
+
+  "MX-TLA": {
+    description:
+      "A field divided diagonally, red at the hoist and white, with the state coat of arms at the " +
+      "centre. The red and white are the colours that have identified the Tlaxcaltecs since " +
+      "pre-Hispanic times — associated with the war-god Camaxtli and the Teochichimeca — and echo the " +
+      "arms of Castile and León. Adopted 2016, the second Mexican state flag with a distinctive design.",
+    sources: [
+      { title: "Bandera de Tlaxcala — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Tlaxcala" },
+    ],
+  },
+
+  "MX-YUC": {
+    description:
+      "A green field with five white stars at the hoist and, at the fly, three horizontal stripes of " +
+      "red, white and red. Green stands for the Maya people (from “ya’ax,” green, and the sacred ceiba " +
+      "tree); the five stars were the five departments of independent Yucatán and now mean freedom, " +
+      "equality, identity, peace and progress; the red and white stripes mark three historical eras. " +
+      "Based on the 1841 Republic of Yucatán flag; officialised as the state flag in 2024.",
+    sources: [
+      { title: "Bandera de Yucatán — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Yucat%C3%A1n" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
