@@ -7120,6 +7120,159 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Zastava Međimurske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Me%C4%91imurske_%C5%BEupanije" },
     ],
   },
+
+  "PL-12": {
+    description:
+      "Three horizontal stripes of white, gold and red, taken from the colours of the voivodeship’s " +
+      "coat of arms: white for the white eagle, gold for its crown, beak, talons and sash, and red for " +
+      "the shield’s field. Introduced 1999.",
+    sources: [
+      { title: "Flaga województwa małopolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_ma%C5%82opolskiego" },
+    ],
+  },
+
+  "PL-24": {
+    description:
+      "Three horizontal stripes of blue, yellow and blue, drawn from the colours of the voivodeship’s " +
+      "coat of arms (a gold eagle on blue). A ceremonial variant is a blue banner bearing the arms. " +
+      "Adopted 2001; 15 July is marked as Silesian Flag Day.",
+    sources: [
+      { title: "Flaga województwa śląskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%9Bl%C4%85skiego" },
+    ],
+  },
+
+  "PL-02": {
+    description:
+      "A gold field bearing the black Lower Silesian eagle at the centre. The black eagle recalls the " +
+      "great Silesian dukes Henry the Bearded and Henry the Pious. Adopted 2009, replacing a 2001 " +
+      "white-and-red striped design.",
+    sources: [
+      { title: "Flaga województwa dolnośląskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_dolno%C5%9Bl%C4%85skiego" },
+    ],
+  },
+
+  "PL-04": {
+    description:
+      "Three horizontal stripes of red, white and black. The article gives the design without assigning " +
+      "a separate meaning to each colour. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa kujawsko-pomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_kujawsko-pomorskiego" },
+    ],
+  },
+
+  "PL-06": {
+    description:
+      "Three horizontal stripes of silver, red and gold with the voivodeship’s coat of arms at the " +
+      "centre. The colours are those of the arms. Adopted 2004.",
+    sources: [
+      { title: "Flaga województwa lubelskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_lubelskiego" },
+    ],
+  },
+
+  "PL-08": {
+    description:
+      "A yellow band over a green band, separated by a narrow white-and-red stripe; the colours derive " +
+      "from the voivodeship’s heraldic emblem (a ceremonial variant bears the arms). Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa lubuskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_lubuskiego" },
+    ],
+  },
+
+  "PL-10": {
+    description:
+      "Five vertical stripes alternating red and gold (red at the edges and centre), the colours of the " +
+      "voivodeship’s arms. An official variant also bears the coat of arms. Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa łódzkiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%82%C3%B3dzkiego" },
+    ],
+  },
+
+  "PL-14": {
+    description:
+      "A red field with a white eagle with golden beak and talons at the hoist — the historic emblem of " +
+      "Mazovia. Adopted 2006, replacing a 2002 eagle design.",
+    sources: [
+      { title: "Flaga województwa mazowieckiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_mazowieckiego" },
+    ],
+  },
+
+  "PL-16": {
+    description:
+      "A broad yellow band over a narrower blue band (5:2), the colours of the voivodeship’s arms; the " +
+      "official version bears the coat of arms in the upper hoist. Adopted 2004.",
+    sources: [
+      { title: "Flaga województwa opolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_opolskiego" },
+    ],
+  },
+
+  "PL-18": {
+    description:
+      "Three vertical stripes — blue, white and blue — with a wide white centre bearing the " +
+      "voivodeship’s coat of arms. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa podkarpackiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_podkarpackiego" },
+    ],
+  },
+
+  "PL-20": {
+    description:
+      "Four equal horizontal stripes — white, red, yellow and blue — each drawn from the arms: white " +
+      "for the Eagle and the Pogoń (Pursuit); red for the shields; yellow for the eagle’s crown, beak " +
+      "and talons and the knight’s golden fittings; blue for the rider’s shield, saddle and horse-cloth. " +
+      "Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa podlaskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_podlaskiego" },
+    ],
+  },
+
+  "PL-22": {
+    description:
+      "A gold field bearing the black Pomeranian griffin with wings raised and red tongue. The griffin " +
+      "is the historic Pomeranian-Wendish emblem, here referencing a 16th-century fresco in the " +
+      "cathedral of Gdańsk-Oliwa. Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa pomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_pomorskiego" },
+    ],
+  },
+
+  "PL-26": {
+    description:
+      "A gold vertical stripe at the hoist and three horizontal stripes — blue, white and red — with " +
+      "the voivodeship’s coat of arms on the white. The gold is placed at the hoist because it appears " +
+      "least in the arms; all colours are drawn from the coat of arms. Adopted 2012.",
+    sources: [
+      { title: "Flaga województwa świętokrzyskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%9Bwi%C4%99tokrzyskiego" },
+    ],
+  },
+
+  "PL-28": {
+    description:
+      "A red swallow-tailed field with a white border on three sides, bearing the crowned head of the " +
+      "White Eagle with a gold beak. Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa warmińsko-mazurskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_warmi%C5%84sko-mazurskiego" },
+    ],
+  },
+
+  "PL-30": {
+    description:
+      "A white trapezoid at the hoist and a red square at the fly bearing the white eagle of the " +
+      "voivodeship’s arms. The eagle echoes the majestic seal of King Przemysł II (crowned 1295), an " +
+      "emblem of the Piast dynasty. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa wielkopolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_wielkopolskiego" },
+    ],
+  },
+
+  "PL-32": {
+    description:
+      "Three vertical stripes of white, red and white, the red one bearing the West-Pomeranian griffin " +
+      "from the voivodeship’s arms. Placing the emblem on the red follows Polish vexillological " +
+      "tradition. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa zachodniopomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_zachodniopomorskiego" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
