@@ -6501,6 +6501,269 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "宮崎県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%B4%8E%E7%9C%8C%E6%97%97" },
     ],
   },
+
+  "UA-05": {
+    description:
+      "A blue field with a red stripe along the top and bottom edges, bearing at the centre a golden sun " +
+      "(the emblem of Podilia) and a silver cross with a blue shield holding a silver crescent (the " +
+      "emblem of eastern Podilia/Bratslav). Blue is the historic colour of the Podilian land; the red " +
+      "stripes recall the Bratslav Voivodeship; the two blue edges also stand for the Dniester and " +
+      "Southern Bug rivers. Adopted 1997.",
+    sources: [
+      { title: "Прапор Вінницької області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-07": {
+    description:
+      "A red field — the colour of ripe cherries — with a white cross reaching to the edges, and a " +
+      "historic 15th–18th-century cross emblem in the upper hoist. Developed from the historical " +
+      "traditions of the Volyn region. Adopted 1997.",
+    sources: [
+      { title: "Прапор Волинської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%92%D0%BE%D0%BB%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-12": {
+    description:
+      "A field divided by a diagonal band into blue (upper hoist) and white (lower fly), reproducing " +
+      "graphic elements of the oblast’s lesser coat of arms. Adopted 2002.",
+    sources: [
+      { title: "Прапор Дніпропетровської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-14": {
+    description:
+      "A flag split into an upper blue half with a golden 12-rayed rising sun and a lower black half " +
+      "with five vertical golden ovals. The upper field stands for the east of Ukraine; the lower for " +
+      "coal, the earth and the night-time Sea of Azov with golden reflections. Adopted 1999.",
+    sources: [
+      { title: "Прапор Донецької області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-09": {
+    description:
+      "A cobalt-blue field with a circular emblem in the upper hoist: a ring of stars — 17 gold and 14 " +
+      "white for the oblast’s 17 districts and 14 cities — around a small shield bearing the oblast’s " +
+      "coat of arms. Adopted 1998.",
+    sources: [
+      { title: "Прапор Луганської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9B%D1%83%D0%B3%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-18": {
+    description:
+      "A red field with a yellow cross reaching the edges and the coat of arms of the city of Zhytomyr " +
+      "at the centre. Adopted 2003.",
+    sources: [
+      { title: "Прапор Житомирської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%96%D0%B8%D1%82%D0%BE%D0%BC%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-21": {
+    description:
+      "Blue over yellow with the oblast’s quartered coat of arms in the hoist — three gold bars on blue " +
+      "and a red bear on silver. The blue and yellow have long regional roots (recorded from 1709 and " +
+      "used by Carpathian Ukraine in 1919); the bear derives from the 1920 arms of Subcarpathian " +
+      "Ruthenia. Adopted 2009.",
+    sources: [
+      { title: "Прапор Закарпатської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%97%D0%B0%D0%BA%D0%B0%D1%80%D0%BF%D0%B0%D1%82%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-23": {
+    description:
+      "A crimson field bearing the oblast’s full coat of arms — a Cossack with sabre and musket, with " +
+      "the mace, bunchuk and other Cossack symbols of authority. Crimson was the main colour of the " +
+      "Zaporozhian Cossack banners and today symbolises Cossackdom itself. Adopted 2001.",
+    sources: [
+      { title: "Прапор Запорізької області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D1%96%D0%B7%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-26": {
+    description:
+      "A white field with a black crowned jackdaw (kavka) facing the hoist — the region’s historic " +
+      "emblem — flanked by red-black bands at the hoist and blue-yellow bands at the fly. The striped " +
+      "bands embody the region’s traditions of struggle for Ukrainian independence. Adopted 2001.",
+    sources: [
+      { title: "Прапор Івано-Франківської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-30": {
+    description:
+      "A blue field bearing the figure of the Archangel Michael — the city’s patron saint — with a " +
+      "flaming sword and shield, framed by a gold fringed band. Adopted 1995, restoring the city’s " +
+      "historic heraldic emblem.",
+    sources: [
+      { title: "Прапор Києва — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9A%D0%B8%D1%94%D0%B2%D0%B0" },
+    ],
+  },
+
+  "UA-32": {
+    description:
+      "Three vertical bands of blue, yellow and blue, the yellow one bearing St George slaying the " +
+      "dragon — the figure from the oblast’s coat of arms. Adopted 1999.",
+    sources: [
+      { title: "Прапор Київської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-35": {
+    description:
+      "Two vertical bands of crimson and yellow, the crimson one bearing a yellow eagle. The eagle " +
+      "stands for courage, insight and strength and for the native land inherited from ancestors; gold " +
+      "for wealth and justice; crimson for dignity and might. Adopted 1998.",
+    sources: [
+      { title: "Прапор Кіровоградської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9A%D1%96%D1%80%D0%BE%D0%B2%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-40": {
+    description:
+      "A red field bearing the coat of arms of the city of Sevastopol at the centre. Adopted 2000.",
+    sources: [
+      { title: "Прапор Севастополя — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8F" },
+    ],
+  },
+
+  "UA-43": {
+    description:
+      "Three horizontal bands — a narrow blue at the top, a broad white in the middle and a narrow red " +
+      "at the foot. Adopted 1992 as the flag of the Autonomous Republic of Crimea within Ukraine; the " +
+      "law states the design without assigning a separate meaning to each colour.",
+    sources: [
+      { title: "Прапор Автономної Республіки Крим — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%90%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D1%97_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D1%96%D0%BA%D0%B8_%D0%9A%D1%80%D0%B8%D0%BC" },
+    ],
+  },
+
+  "UA-46": {
+    description:
+      "A blue field bearing the oblast’s coat of arms — a golden crowned lion. Adopted 2001.",
+    sources: [
+      { title: "Прапор Львівської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-48": {
+    description:
+      "A white band over yellow and blue bands, the lower blue one with a wavy upper edge, and the " +
+      "oblast’s small coat of arms at the centre. White stands for purity and the region’s shipbuilding " +
+      "and maritime traditions; yellow for the fertile steppe soil; blue for water, stability and " +
+      "loyalty, the wave for the Black Sea and the Southern Bug and Inhul rivers. Adopted 2026.",
+    sources: [
+      { title: "Прапор Миколаївської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-51": {
+    description:
+      "Three vertical bands of yellow, blue and white, the blue one bearing the oblast’s coat of arms " +
+      "(without crown). Adopted 2002.",
+    sources: [
+      { title: "Прапор Одеської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-53": {
+    description:
+      "A blue field with a yellow Cossack cross, modelled on the banner of the Poltava Regiment of the " +
+      "Zaporozhian Host. Adopted 2000.",
+    sources: [
+      { title: "Прапор Полтавської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-56": {
+    description:
+      "Five horizontal stripes — white, yellow, light blue, yellow, white — with the oblast’s coat of " +
+      "arms in a yellow cartouche at the centre. White is the colour of the cloth; the light blue and " +
+      "yellow are the colours of Ukraine’s national flag. Adopted 2005.",
+    sources: [
+      { title: "Прапор Рівненської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-59": {
+    description:
+      "A blue field bearing the oblast’s coat of arms at the centre. Adopted 2000.",
+    sources: [
+      { title: "Прапор Сумської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A1%D1%83%D0%BC%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-61": {
+    description:
+      "A blue field with a crossed yellow sword and key beneath three white towers — the charges of the " +
+      "oblast’s arms. Adopted 2003.",
+    sources: [
+      { title: "Прапор Тернопільської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-63": {
+    description:
+      "A crimson field bearing the oblast’s coat of arms at the centre, representing the history and " +
+      "traditions of the region. Adopted 1999.",
+    sources: [
+      { title: "Прапор Харківської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-65": {
+    description:
+      "Three horizontal bands of blue, white and blue (the white twice as wide), with the oblast’s coat " +
+      "of arms on the white band near the hoist. Adopted 2001.",
+    sources: [
+      { title: "Прапор Херсонської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A5%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-68": {
+    description:
+      "Two vertical bands, blue at the hoist and red at the fly, with the oblast’s coat of arms at the " +
+      "centre: a gold sun and two wheat stalks over a blue-and-red shield. The sun is the traditional " +
+      "symbol of Podilia; the red comes from the arms of Volyn; the wheat stalks stand for the region’s " +
+      "farming and form the letter “Kh” of its name. Adopted 2002.",
+    sources: [
+      { title: "Прапор Хмельницької області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-71": {
+    description:
+      "A blue field with the oblast’s coat of arms at the centre and a yellow fringe on three sides. " +
+      "Blue symbolises celestial height and dignity. Adopted 2000.",
+    sources: [
+      { title: "Прапор Черкаської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-74": {
+    description:
+      "A green field with a white horizontal band across the centre and the oblast’s coat of arms in " +
+      "the upper hoist. Green stands for the Polissia and forest-steppe; the white band for the Desna " +
+      "River. The arms bear the black double-headed eagle of the historic Chernihiv principality. " +
+      "Adopted 2000.",
+    sources: [
+      { title: "Прапор Чернігівської області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
+
+  "UA-77": {
+    description:
+      "A green field with a white falcon at the centre and blue and yellow stripes along the top and " +
+      "bottom edges. The falcon is the protective symbol of Bukovina — beauty, courage and wisdom — " +
+      "drawn from a heraldic find at Zamchysche; green is the green Bukovina and rebirth; the blue and " +
+      "yellow bands are Ukraine’s colours and the Prut and Dniester rivers and the grain fields. " +
+      "Adopted 2001.",
+    sources: [
+      { title: "Прапор Чернівецької області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
