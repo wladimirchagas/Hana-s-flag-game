@@ -8129,6 +8129,154 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bandera del estado Amazonas — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Amazonas" },
     ],
   },
+
+  "BO-S": {
+    description:
+      "Three horizontal stripes, green-white-green. The green stripes stand for the department’s " +
+      "vegetation and forests; the white stripe for the nobility of its people. Created 1864.",
+    sources: [
+      { title: "Bandera de Santa Cruz (Bolivia) — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Santa_Cruz_(Bolivia)" },
+    ],
+  },
+
+  "CO-QUI": {
+    description:
+      "Three equal vertical stripes of green, yellow and purple. Green stands for the department’s " +
+      "abundant vegetation and agriculture; yellow for the gold of the Quimbaya culture and its " +
+      "economy; purple for the coffee cherry at ripe harvest, the region’s chief product. Adopted 1972.",
+    sources: [
+      { title: "Bandera del Quindío — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_Quind%C3%ADo" },
+    ],
+  },
+
+  "CO-LAG": {
+    description:
+      "Two equal horizontal stripes, green over white. Green symbolises the hope of the farmers in " +
+      "sowing and raising their crops; white the purity of the indigenous population and the " +
+      "department’s sea salt and pearls. Adopted 1966.",
+    sources: [
+      { title: "Bandera de La Guajira — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_La_Guajira" },
+    ],
+  },
+
+  "CO-RIS": {
+    description:
+      "An emerald-green field with fourteen silver stars in an arc. The fourteen stars are the " +
+      "department’s fourteen municipalities; the green stands for the fertility of its land and its " +
+      "agricultural vocation. Adopted 1969.",
+    sources: [
+      { title: "Bandera de Risaralda — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Risaralda" },
+    ],
+  },
+
+  "CO-ARA": {
+    description:
+      "Two equal horizontal stripes, red over green. Red stands for the blood shed by those who fought " +
+      "for freedom; green for the vast plains (llanos). Adopted 1979.",
+    sources: [
+      { title: "Bandera de Arauca (departamento) — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Arauca_(departamento)" },
+    ],
+  },
+
+  "CO-CAS": {
+    description:
+      "A field divided diagonally, red above and green below, with a yellow eight-pointed sun at the " +
+      "centre. Red is the blood of the independence heroes; green the department’s plains and natural " +
+      "resources; the sun the warmth and fertility of the llanos, its eight points one for each letter " +
+      "of “Casanare.”",
+    sources: [
+      { title: "Bandera de Casanare — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Casanare" },
+    ],
+  },
+
+  "CO-SUC": {
+    description:
+      "Two equal horizontal stripes, green over white. Green symbolises prosperity, white peace. " +
+      "Adopted 1974.",
+    sources: [
+      { title: "Bandera de Sucre (Colombia) — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Sucre_(Colombia)" },
+    ],
+  },
+
+  "CO-CAQ": {
+    description:
+      "Seven horizontal stripes alternating white and green, with sixteen stars for the department’s " +
+      "municipalities. Green stands for the forest wealth and the people’s hope for the future; white " +
+      "for the clarity of morning and peace. Adopted 1974.",
+    sources: [
+      { title: "Bandera de Caquetá — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Caquet%C3%A1" },
+    ],
+  },
+
+  "CO-PUT": {
+    description:
+      "Three horizontal stripes of black, green and white. Black is the department’s petroleum (its " +
+      "“black gold”); green the hope and the virgin forests that cover almost all of it; white the " +
+      "peaceful character of its people.",
+    sources: [
+      { title: "Bandera de Putumayo — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Putumayo" },
+    ],
+  },
+
+  "CO-VID": {
+    description:
+      "Two equal horizontal stripes, yellow over green. Yellow represents the wealth of the territory; " +
+      "green the plains and the forested part of the department.",
+    sources: [
+      { title: "Bandera de Vichada — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Vichada" },
+    ],
+  },
+
+  "CO-DC": {
+    description:
+      "Two horizontal stripes, yellow over red, with the city’s coat of arms at the centre. Yellow " +
+      "stands for justice, clemency, virtue and benignity; red for liberty, health and charity. The " +
+      "colours derive from a historic revolutionary armband worn in the city. Adopted 1952.",
+    sources: [
+      { title: "Bandera de Bogotá — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Bogot%C3%A1" },
+    ],
+  },
+
+  "CO-AMA": {
+    description:
+      "Three horizontal stripes — green, mustard-yellow and white, edged in black — bearing black " +
+      "figures of an indigenous warrior drawing a bow and a leaping jaguar on the green, and a " +
+      "five-pointed star for the capital Leticia on the yellow. Adopted 1974.",
+    sources: [
+      { title: "Bandera del Amazonas (Colombia) — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_Amazonas_(Colombia)" },
+    ],
+  },
+
+  "CO-GUA": {
+    description:
+      "Three equal horizontal stripes of yellow, blue and green. Yellow stands for the department’s " +
+      "mineral wealth (gold, diamonds, amethysts and more); blue for its waters — “Guainía” means " +
+      "“land of many waters” — and its many rivers and lakes; green for the biodiversity of its forests " +
+      "and savannas.",
+    sources: [
+      { title: "Bandera de Guainía — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Guain%C3%ADa" },
+    ],
+  },
+
+  "CO-GUV": {
+    description:
+      "Three equal horizontal stripes of green, white and blue with the departmental coat of arms at " +
+      "the centre. Green stands for the wealth and effort of the settlers; white for peace and honest " +
+      "work; blue for the Guayabero and Ariari rivers that join to form the Guaviare.",
+    sources: [
+      { title: "Bandera del Guaviare — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_Guaviare" },
+    ],
+  },
+
+  "CO-VAU": {
+    description:
+      "Two equal horizontal stripes, white over green, with a rubber-tree leaf at the centre. White " +
+      "stands for the purity of the indigenous peoples; green for the jungle and natural resources; the " +
+      "rubber leaf for the rubber whose exploitation shaped the department’s history. Adopted 1984.",
+    sources: [
+      { title: "Bandera de Vaupés — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Vaup%C3%A9s" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
