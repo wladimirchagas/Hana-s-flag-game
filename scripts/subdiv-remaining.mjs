@@ -1,8 +1,13 @@
 // Progress tracker for the subdivision flag-meaning sweep.
-// Universe = FLAG_CODES (the authoritative index of every subdivision code that has
-// a flag in the game, CDN + local, from src/lib/subdivisionFlagIndex.ts) minus
-// SUPPRESSED_SUBDIVISION_FLAGS. remaining = universe − (has FLAG_MEANINGS entry ∪
-// investigated-and-omitted in subdiv-meaning-omitted.txt).
+// Universe = subdivisions the game ACTUALLY DISPLAYS with a flag, i.e. the codes that are
+// BOTH in SUBDIVISION_META (src/lib/subdivisionMeta.ts — what the flag grid/map shows) AND
+// in FLAG_CODES (src/lib/subdivisionFlagIndex.ts — which of those have a bundled flag),
+// minus SUPPRESSED_SUBDIVISION_FLAGS. This matters because FLAG_CODES (the raw CDN index)
+// uses a different ISO scheme than SUBDIVISION_META for some countries (e.g. the game shows
+// Czech regions as CZ-JM and Polish voivodeships as PL-SL, and shows Italian/Spanish
+// PROVINCES, not regions) — so a FLAG_CODES-only universe includes codes the game never
+// displays (UK counties, region-numeric CZ-64/PL-24, etc.). Only the intersection renders.
+// remaining = universe − (has FLAG_MEANINGS entry ∪ investigated-and-omitted).
 import { readFileSync, existsSync } from "node:fs";
 const read = (p) => readFileSync(p, "utf8");
 const codesFrom = (src, marker) => {
@@ -16,7 +21,12 @@ const codesFrom = (src, marker) => {
   return new Set([...buf.matchAll(/["'`]([A-Z]{2}-[A-Z0-9~]+)["'`]/g)].map(m=>m[1]));
 };
 const idx = read("src/lib/subdivisionFlagIndex.ts");
-const universe = codesFrom(idx, "const FLAG_CODES");
+const flagged = codesFrom(idx, "const FLAG_CODES");
+// codes the game actually DISPLAYS (every `code: "CC-XXX"` in SUBDIVISION_META)
+const meta = read("src/lib/subdivisionMeta.ts");
+const shown = new Set([...meta.matchAll(/code:\s*"([A-Z]{2}-[A-Z0-9~]+)"/g)].map(m=>m[1]));
+// universe = displayed ∩ flagged  (the subdivisions that appear in the flag grid with a flag)
+const universe = new Set([...shown].filter(c=>flagged.has(c)));
 const subs = read("src/api/subdivisions.ts");
 const suppressed = codesFrom(subs, "SUPPRESSED_SUBDIVISION_FLAGS");
 for (const s of suppressed) universe.delete(s);

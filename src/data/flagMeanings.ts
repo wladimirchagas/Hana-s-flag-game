@@ -3680,165 +3680,16 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "ES-CT": {
-    description:
-      "The Senyera: four red stripes on a gold field, taken from the arms of the Crown of Aragon and " +
-      "the Counts of Barcelona (attested on a royal seal around 1159).",
-    myths: [
-      {
-        claim:
-          "The four bars were drawn in blood by a Frankish king across Wilfred the Hairy’s golden " +
-          "shield.",
-        reality:
-          "A 14th-century legend, impossible even on its own terms — the king it credits had died " +
-          "decades before Wilfred. The stripes are simply the heraldry of the House of Aragon.",
-      },
-    ],
-    sources: [
-      { title: "Flag of Catalonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Catalonia" },
-    ],
-  },
 
-  "ES-GA": {
-    description:
-      "A white field crossed by a light-blue diagonal band, with the Galician arms (a golden chalice) " +
-      "on the official version. The band comes from the 19th-century maritime ensign of A Coruña, " +
-      "changed to a single diagonal in 1891 to avoid confusion with the Russian naval flag.",
-    myths: [
-      {
-        claim: "The flag descends directly from the medieval Kingdom of Galicia.",
-        reality:
-          "The design is a modern creation of the 1890s; only the chalice arms are medieval, and they " +
-          "are canting (a pun on “calice”/“Galicia”).",
-      },
-    ],
-    sources: [
-      { title: "Flag of Galicia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Galicia" },
-    ],
-  },
 
-  "ES-PV": {
-    description:
-      "The Ikurriña: a red field with a green saltire and a white upright cross over it. Designed by " +
-      "the brothers Sabino and Luis Arana in 1894, the red is taken for the Basque people, the green " +
-      "saltire for the Oak of Gernika and the old Basque laws (Fueros) and the white cross for " +
-      "religious faith.",
-    myths: [
-      {
-        claim: "These colour meanings are the flag’s firmly documented, official symbolism.",
-        reality:
-          "They are the commonly-cited interpretations rather than a definitively recorded intent — " +
-          "meaning accumulated around the design after 1894.",
-      },
-    ],
-    sources: [
-      { title: "Ikurriña — Wikipedia", url: "https://en.wikipedia.org/wiki/Ikurri%C3%B1a" },
-    ],
-  },
 
-  "ES-VC": {
-    description:
-      "The Reial Senyera: the four red bars of Aragon on gold with an added blue, crown-topped stripe " +
-      "at the hoist. The blue stripe marks a royal honour granted to the city of Valencia by Peter IV " +
-      "of Aragon for its loyalty.",
-    myths: [
-      {
-        claim: "James I granted this flag to Valencia after the conquest of 1238.",
-        reality:
-          "The earliest evidence dates only to 1377, when the city council replaced its old seal-arms " +
-          "with the Senyera; the 1238 grant is traditional, not documented.",
-      },
-    ],
-    sources: [
-      { title: "Flag of the Valencian Community — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Valencian_Community" },
-    ],
-  },
 
-  "ES-AS": {
-    description:
-      "A light-blue field bearing the gold Victory Cross (Cruz de la Victoria), from which hang the " +
-      "Greek letters alpha and omega. The cross is the emblem of the medieval Kingdom of Asturias and " +
-      "the Reconquista.",
-    myths: [
-      {
-        claim: "The cross was the very one carried by Pelagius at the Battle of Covadonga in 722.",
-        reality:
-          "There is no historical evidence for that; the flag itself dates only from 1808, made during " +
-          "the war against Napoleon.",
-      },
-    ],
-    sources: [
-      { title: "Flag of Asturias — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Asturias" },
-    ],
-  },
 
-  "ES-EX": {
-    description:
-      "A horizontal green-white-black tricolour with the regional arms on the official version. In the " +
-      "official reading the green stands for the Order of Alcántara, the white for the Kingdom of " +
-      "León and the black for the Aftasid kings of Badajoz. Adopted in 1983.",
-    myths: [
-      {
-        claim: "The colours were copied from local football clubs (Cacereño and Badajoz).",
-        reality:
-          "The relationship runs the other way — those clubs took their colours from their cities’ " +
-          "traditional colours, the same source as the flag.",
-      },
-    ],
-    sources: [
-      { title: "Flag of Extremadura — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Extremadura" },
-    ],
-  },
 
-  "ES-CL": {
-    description:
-      "The quartered arms of Castile (a gold castle on red) and León (a lion on white), recalling the " +
-      "union of the two medieval kingdoms under Ferdinand III in 1230. Adopted in 1983.",
-    sources: [
-      { title: "Flag of Castile and León — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Castile_and_Le%C3%B3n" },
-    ],
-  },
 
-  "ES-CM": {
-    description:
-      "A flag divided vertically: a crimson half with a gold castle for Castile, and a plain white " +
-      "half for the military orders that took La Mancha during the Reconquista. Adopted in the 1980s.",
-    sources: [
-      { title: "Flag of Castilla–La Mancha — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Castilla-La_Mancha" },
-    ],
-  },
 
-  "ES-IB": {
-    description:
-      "The four red bars of Aragon on gold with a purple quarter at the hoist bearing a white " +
-      "five-towered castle — the arms of the historic Kingdom of Mallorca. Adopted with the 1983 " +
-      "Statute of Autonomy.",
-    sources: [
-      { title: "Flag of the Balearic Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Balearic_Islands" },
-    ],
-  },
 
-  "ES-MD": {
-    description:
-      "A crimson field with seven white five-pointed stars (four over three). The crimson recalls " +
-      "Castile; the seven stars stand for the administrative districts of the province of Madrid and " +
-      "are also linked to the Great/Little Bear constellations — a nod to the bear of the City of " +
-      "Madrid’s arms. Adopted in 1983.",
-    sources: [
-      { title: "Flag of the Community of Madrid — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Community_of_Madrid" },
-    ],
-  },
 
-  "ES-MC": {
-    description:
-      "A crimson field with four gold castles at the upper hoist and seven royal crowns at the lower " +
-      "fly. The castles reflect Murcia’s place in the Crown of Castile and its frontier history; the " +
-      "seven crowns are honours granted by Castilian kings (five by Alfonso X in 1281, one by Peter " +
-      "in 1361 and one by Philip V in 1709). Adopted in the 1980s.",
-    sources: [
-      { title: "Flag of the Region of Murcia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Region_of_Murcia" },
-    ],
-  },
 
   "BR-SP": {
     description:
@@ -5228,192 +5079,25 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "IT-82": {
-    description:
-      "The Trinacria: a triskeles of three bent legs — for Sicily’s three capes — around the winged " +
-      "head of Medusa with ears of wheat, on a field divided diagonally red (Palermo) over yellow " +
-      "(Corleone). The wheat marks the island’s fertility.",
-    sources: [
-      { title: "Flag of Sicily — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sicily" },
-    ],
-  },
 
-  "IT-88": {
-    description:
-      "The Four Moors: a red Saint George’s cross dividing the white field into quarters, each bearing " +
-      "the head of a Moor with a white band around the brow. In use since the Middle Ages, the design " +
-      "was fixed by regional law in 1999.",
-    sources: [
-      { title: "Flag of Sardinia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sardinia" },
-    ],
-  },
 
-  "IT-25": {
-    description:
-      "A green field with a white Rosa Camuna (a curvilinear cross) at the centre. The green stands " +
-      "for the Po Valley and the rose — taken from prehistoric Camunian rock carvings — for light and " +
-      "regional identity.",
-    sources: [
-      { title: "Flag of Lombardy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lombardy" },
-    ],
-  },
 
-  "IT-36": {
-    description:
-      "A blue field with a golden eagle standing on white fortifications. The blue and gold are the " +
-      "colours of the historic Patria del Friuli, and the eagle represents ancient Aquileia — whose " +
-      "name is linked to the Latin aquila (“eagle”).",
-    sources: [
-      { title: "Flag of Friuli-Venezia Giulia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Friuli-Venezia_Giulia" },
-    ],
-  },
 
-  "IT-42": {
-    description:
-      "A vertical tricolour of green, red and blue with the regional arms — a caravel beneath the " +
-      "Genoese Saint George’s cross and four stars for the provinces. The green stands for the " +
-      "mountains, the red for the blood of Italian unification and the blue for the Ligurian Sea.",
-    sources: [
-      { title: "Flag of Liguria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liguria" },
-    ],
-  },
 
-  "IT-52": {
-    description:
-      "A white field with a silver rampant Pegasus between two red bands. The Pegasus, from a 1537 " +
-      "coin by Benvenuto Cellini, stands for creativity and the flowering of the Tuscan language.",
-    sources: [
-      { title: "Flag of Tuscany — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tuscany" },
-    ],
-  },
 
-  "IT-34": {
-    description:
-      "The winged Lion of Saint Mark, holding the open Gospel, resting on the region’s sea, plain and " +
-      "mountains — taken from the flag of the Republic of Venice. Adopted in 1975.",
-    sources: [
-      { title: "Flag of Veneto — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Veneto" },
-    ],
-  },
 
-  "IT-21": {
-    description:
-      "A red field with a blue-bordered white cross — essentially the arms of the Prince of Piedmont, " +
-      "reflecting the region’s ties to the House of Savoy and its role in Italian unification.",
-    sources: [
-      { title: "Flag of Piedmont — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Piedmont" },
-    ],
-  },
 
-  "IT-23": {
-    description:
-      "A vertical bicolour of black and red, drawn from a 16th-century coat of arms of the Duchy of " +
-      "Aosta; the design was created in 1942 and used by the region’s anti-fascist resistance.",
-    sources: [
-      { title: "Flag of Aosta Valley — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Aosta_Valley" },
-    ],
-  },
 
-  "IT-62": {
-    description:
-      "A sky-blue field with the regional arms — combining the heraldry of Rome with that of its four " +
-      "other provinces — beneath a gold crown.",
-    sources: [
-      { title: "Flag of Lazio — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lazio" },
-    ],
-  },
 
-  "IT-72": {
-    description:
-      "A blue field with a white shield bearing a red diagonal band — the arms of the medieval " +
-      "Maritime Republic of Amalfi, reflecting Campania’s seafaring past.",
-    sources: [
-      { title: "Flag of Campania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Campania" },
-    ],
-  },
 
-  "IT-78": {
-    description:
-      "A blue field with the regional arms, quartering a pine tree, a Teutonic cross, a truncated " +
-      "Doric column and a Byzantine cross — emblems of Calabria’s layered history.",
-    sources: [
-      { title: "Flag of Calabria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Calabria" },
-    ],
-  },
 
-  "IT-45": {
-    description:
-      "A white flag with a stylised emblem on green: a curved line for the River Po and nature and a " +
-      "straight line for the road and human labour, the green standing for the Po Valley.",
-    sources: [
-      { title: "Flag of Emilia-Romagna — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Emilia-Romagna" },
-    ],
-  },
 
-  "IT-75": {
-    description:
-      "A white field with the regional arms: six bezants for the six provinces, an octagon for " +
-      "Frederick II’s Castel del Monte and an olive tree for peace, with green and red side stripes " +
-      "echoing the national flag.",
-    sources: [
-      { title: "Flag of Apulia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Apulia" },
-    ],
-  },
 
-  "IT-55": {
-    description:
-      "A silver field with three red candles — the Ceri carried in the annual Festa dei Ceri at " +
-      "Gubbio in honour of Saint Ubaldo — reflecting Umbria’s medieval traditions.",
-    sources: [
-      { title: "Flag of Umbria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Umbria" },
-    ],
-  },
 
-  "IT-57": {
-    description:
-      "A white field with the regional emblem — a stylised woodpecker forming the letter M within a " +
-      "green-bordered shield. The woodpecker was the sacred totem of the ancient Picentes, said to " +
-      "have guided the tribe’s founders.",
-    sources: [
-      { title: "Flag of Marche — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Marche" },
-    ],
-  },
 
-  "IT-65": {
-    description:
-      "A burgundy field with a tricolour regional emblem in which white stands for the snowy " +
-      "Apennines, green for the hills and national parks and blue for the Adriatic Sea.",
-    sources: [
-      { title: "Flag of Abruzzo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Abruzzo" },
-    ],
-  },
 
-  "IT-32": {
-    description:
-      "A white-and-blue field with arms combining the eagles of Saint Wenceslas (Trentino) with the " +
-      "red Tyrolean eagles (South Tyrol), the historic emblems of the region’s two provinces.",
-    sources: [
-      { title: "Flag of Trentino-Alto Adige/Südtirol — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Trentino-Alto_Adige/S%C3%BCdtirol" },
-    ],
-  },
 
-  "IT-67": {
-    description:
-      "A blue field with the regional arms — a red field crossed by a silver diagonal band and set " +
-      "with an eight-pointed star.",
-    sources: [
-      { title: "Flag of Molise — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Molise" },
-    ],
-  },
 
-  "IT-77": {
-    description:
-      "An azure field with a white, gold-bordered shield of four blue wavy bands, standing for the " +
-      "region’s four main rivers — the Basento, Agri, Bradano and Sinni.",
-    sources: [
-      { title: "Flag of Basilicata — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Basilicata" },
-    ],
-  },
 
 
   "RU-AL": {
@@ -6765,168 +6449,19 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "CZ-64": {
-    description:
-      "A quartered flag: blue with the Moravian eagle (hoist top), red with a golden grape cluster " +
-      "(hoist bottom), white-and-red horizontal stripes from Brno’s arms (fly top), and blue with a " +
-      "gold-and-red chequered eagle (fly bottom). The Moravian eagles are the historic symbols of " +
-      "Moravia, the stripes are drawn from the arms of Brno the regional capital, and the golden grapes " +
-      "stand for the region’s vitality and prosperity. Adopted 2003.",
-    sources: [
-      { title: "Symboly Jihomoravského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Jihomoravsk%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-20": {
-    description:
-      "A red-and-white quartered flag: a Czech lion in the upper hoist and lower fly, two wavy blue " +
-      "stripes in the lower hoist, and a black flaming eagle in the upper fly. The Czech lion is the " +
-      "historic symbol of Bohemia; the flaming eagle is the Přemyslid dynastic emblem; the two wavy " +
-      "stripes are the Elbe and the Vltava. Adopted 2001.",
-    sources: [
-      { title: "Symboly Středočeského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_St%C5%99edo%C4%8Desk%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-31": {
-    description:
-      "A quartered flag: a Czech lion (hoist top), green-yellow-white-green vertical stripes (hoist " +
-      "bottom), roses on white and blue fields (fly top), and a white three-towered fortress on red " +
-      "(fly bottom). The lion is Bohemia; the roses recall the Rožmberk and Hradec noble houses; the " +
-      "stripes stand for forests (green), the Golden Trail (gold) and the Vltava (silver); the fortress " +
-      "is from the arms of České Budějovice. Adopted 2002.",
-    sources: [
-      { title: "Symboly Jihočeského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Jiho%C4%8Desk%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-32": {
-    description:
-      "A quartered flag: a Czech lion (hoist top), green, white and yellow horizontal stripes (hoist " +
-      "bottom), a gold two-humped camel on green (fly top), and a white Romanesque rotunda with a gold " +
-      "cross on red (fly bottom). The lion is Bohemia; the camel is from Plzeň’s arms (a 15th-century " +
-      "Hussite siege episode); the green stripes are the Šumava and Český les borderland forests, the " +
-      "others the Berounka and Otava rivers; the rotunda is the ancient church of Starý Plzenec. " +
-      "Adopted 2002.",
-    sources: [
-      { title: "Symboly Plzeňského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Plze%C5%88sk%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-41": {
-    description:
-      "A red-and-blue quartered flag: a Czech lion (hoist top), white mining hammers on gold handles " +
-      "over crossed sprigs (hoist bottom), a gold fountain spurting white water (fly top), and red-and-" +
-      "white wavy stripes with a white crowned lion (fly bottom). The lion is Bohemia; the fountain " +
-      "stands for the region’s famous spas; the hammers for its mining; the lower lion is from the arms " +
-      "of Karlovy Vary. Adopted 2001.",
-    sources: [
-      { title: "Symboly Karlovarského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Karlovarsk%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-42": {
-    description:
-      "A quartered flag: a Czech lion (hoist top), blue and green stripes with a white plough (hoist " +
-      "bottom), a crenellated tower over blue waves and a green trefoil (fly top), and a white lion on " +
-      "red (fly bottom). The lion is Bohemia; the gate is the Porta Bohemica; the waves are the region’s " +
-      "rivers; the trefoil the mountains; the plough the legendary founder Přemysl the Ploughman; the " +
-      "lower lion from the capital Ústí nad Labem. Adopted 2002.",
-    sources: [
-      { title: "Symboly Ústeckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_%C3%9Asteck%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-51": {
-    description:
-      "A red-and-blue quartered flag: a Czech lion in the upper hoist and lower fly, a white upward " +
-      "arrowhead (hoist bottom), and a white eight-spoked wagon wheel (fly top). The lion is Bohemia; " +
-      "the wheel is from the Redern family and Liberec’s seal; the arrowhead is the silhouette of Mount " +
-      "Ještěd above the regional capital. Adopted 2001.",
-    sources: [
-      { title: "Symboly Libereckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Libereck%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-52": {
-    description:
-      "A red-and-blue quartered flag: a Czech lion in the upper hoist and lower fly, a gold crown (hoist " +
-      "bottom) and a gold uncial letter “G” (fly top). The lion is the Czech lands; the “G” is from the " +
-      "arms of Hradec Králové (from a 1463 cathedral keystone); the crown stands for the five royal " +
-      "dower towns and the “Králové” (Queen’s) in the region’s name. Adopted 2001.",
-    sources: [
-      { title: "Symboly Královéhradeckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Kr%C3%A1lov%C3%A9hradeck%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-53": {
-    description:
-      "A red-and-blue quartered flag: a Czech lion (hoist top), a white fortress wall with an open gate " +
-      "holding a black lyre and gold globe (hoist bottom), the Moravian eagle (fly top), and a white " +
-      "half-horse (fly bottom). The lion and eagle are the Czech and Moravian lands; the four-toothed " +
-      "wall stands for the region’s four areas; the open gate with globe for openness to the world; the " +
-      "lyre for composers Smetana, Martinů and Tomášek; the half-horse from Pardubice’s arms. Adopted " +
-      "2001.",
-    sources: [
-      { title: "Symboly Pardubického kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Pardubick%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-63": {
-    description:
-      "A quartered flag: the Moravian eagle on blue (hoist top), a red rowan cluster on white (hoist " +
-      "bottom), a red hedgehog on white (fly top), and the Czech lion on red (fly bottom). The eagle " +
-      "and lion are the historic Moravian and Bohemian lands the region straddles; the hedgehog is from " +
-      "the arms of Jihlava, the capital; the rowan stands for the resilience and simple beauty of the " +
-      "highlands. Adopted 2002.",
-    sources: [
-      { title: "Symboly Kraje Vysočina — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Kraje_Vyso%C4%8Dina" },
-    ],
-  },
 
-  "CZ-71": {
-    description:
-      "A blue-and-yellow quartered flag: the Moravian eagle (hoist top), a wavy blue stripe (hoist " +
-      "bottom), the Silesian eagle (fly top), and the gold letters “SPQO” (fly bottom). The two eagles " +
-      "are the historic Moravian and Silesian lands; the wave is the river Morava through its wheat " +
-      "lands; SPQO — from Olomouc’s arms — stands for “the Senate and People of Olomouc.” Adopted 2001.",
-    sources: [
-      { title: "Symboly Olomouckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Olomouck%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-72": {
-    description:
-      "A blue-and-yellow quartered flag: the Moravian eagle (hoist top), crossed axes, a plough and " +
-      "grapes (hoist bottom), a closed book with a patriarchal cross (fly top), and a gold eight-" +
-      "pointed star (fly bottom). The eagle is Moravia; the axes and plough the cultures of Valašsko " +
-      "and Haná; the grapes the wine of Uherské Hradiště; the cross the Great-Moravian mission of Sts " +
-      "Cyril and Methodius; the star from Zlín’s arms. Adopted 2002.",
-    sources: [
-      { title: "Symboly Zlínského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Zl%C3%ADnsk%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-80": {
-    description:
-      "A quartered flag: the Silesian eagle (hoist top), a white galloping horse with a gold rose on " +
-      "green grass (hoist bottom), the Moravian eagle (fly top), and white-red-blue stripes with a " +
-      "half gold eagle (fly bottom). The two eagles are Silesia and Moravia; the horse and rose are " +
-      "from the arms of Ostrava, the capital; the stripes stand for the Opava region and the half-eagle " +
-      "for the Těšín region. Adopted 2002.",
-    sources: [
-      { title: "Symboly Moravskoslezského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Moravskoslezsk%C3%A9ho_kraje" },
-    ],
-  },
 
-  "CZ-10": {
-    description:
-      "Two equal horizontal bands of yellow over red — the historic colours of Prague, derived by the " +
-      "city archivist Josef Emler from Prague’s coat of arms. Adopted 1891.",
-    sources: [
-      { title: "Flag of Prague — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Prague" },
-    ],
-  },
 
   "HR-01": {
     description:
@@ -7121,158 +6656,21 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "PL-12": {
-    description:
-      "Three horizontal stripes of white, gold and red, taken from the colours of the voivodeship’s " +
-      "coat of arms: white for the white eagle, gold for its crown, beak, talons and sash, and red for " +
-      "the shield’s field. Introduced 1999.",
-    sources: [
-      { title: "Flaga województwa małopolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_ma%C5%82opolskiego" },
-    ],
-  },
 
-  "PL-24": {
-    description:
-      "Three horizontal stripes of blue, yellow and blue, drawn from the colours of the voivodeship’s " +
-      "coat of arms (a gold eagle on blue). A ceremonial variant is a blue banner bearing the arms. " +
-      "Adopted 2001; 15 July is marked as Silesian Flag Day.",
-    sources: [
-      { title: "Flaga województwa śląskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%9Bl%C4%85skiego" },
-    ],
-  },
 
-  "PL-02": {
-    description:
-      "A gold field bearing the black Lower Silesian eagle at the centre. The black eagle recalls the " +
-      "great Silesian dukes Henry the Bearded and Henry the Pious. Adopted 2009, replacing a 2001 " +
-      "white-and-red striped design.",
-    sources: [
-      { title: "Flaga województwa dolnośląskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_dolno%C5%9Bl%C4%85skiego" },
-    ],
-  },
 
-  "PL-04": {
-    description:
-      "Three horizontal stripes of red, white and black. The article gives the design without assigning " +
-      "a separate meaning to each colour. Adopted 2000.",
-    sources: [
-      { title: "Flaga województwa kujawsko-pomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_kujawsko-pomorskiego" },
-    ],
-  },
 
-  "PL-06": {
-    description:
-      "Three horizontal stripes of silver, red and gold with the voivodeship’s coat of arms at the " +
-      "centre. The colours are those of the arms. Adopted 2004.",
-    sources: [
-      { title: "Flaga województwa lubelskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_lubelskiego" },
-    ],
-  },
 
-  "PL-08": {
-    description:
-      "A yellow band over a green band, separated by a narrow white-and-red stripe; the colours derive " +
-      "from the voivodeship’s heraldic emblem (a ceremonial variant bears the arms). Adopted 2000.",
-    sources: [
-      { title: "Flaga województwa lubuskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_lubuskiego" },
-    ],
-  },
 
-  "PL-10": {
-    description:
-      "Five vertical stripes alternating red and gold (red at the edges and centre), the colours of the " +
-      "voivodeship’s arms. An official variant also bears the coat of arms. Adopted 2002.",
-    sources: [
-      { title: "Flaga województwa łódzkiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%82%C3%B3dzkiego" },
-    ],
-  },
 
-  "PL-14": {
-    description:
-      "A red field with a white eagle with golden beak and talons at the hoist — the historic emblem of " +
-      "Mazovia. Adopted 2006, replacing a 2002 eagle design.",
-    sources: [
-      { title: "Flaga województwa mazowieckiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_mazowieckiego" },
-    ],
-  },
 
-  "PL-16": {
-    description:
-      "A broad yellow band over a narrower blue band (5:2), the colours of the voivodeship’s arms; the " +
-      "official version bears the coat of arms in the upper hoist. Adopted 2004.",
-    sources: [
-      { title: "Flaga województwa opolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_opolskiego" },
-    ],
-  },
 
-  "PL-18": {
-    description:
-      "Three vertical stripes — blue, white and blue — with a wide white centre bearing the " +
-      "voivodeship’s coat of arms. Adopted 2000.",
-    sources: [
-      { title: "Flaga województwa podkarpackiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_podkarpackiego" },
-    ],
-  },
 
-  "PL-20": {
-    description:
-      "Four equal horizontal stripes — white, red, yellow and blue — each drawn from the arms: white " +
-      "for the Eagle and the Pogoń (Pursuit); red for the shields; yellow for the eagle’s crown, beak " +
-      "and talons and the knight’s golden fittings; blue for the rider’s shield, saddle and horse-cloth. " +
-      "Adopted 2002.",
-    sources: [
-      { title: "Flaga województwa podlaskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_podlaskiego" },
-    ],
-  },
 
-  "PL-22": {
-    description:
-      "A gold field bearing the black Pomeranian griffin with wings raised and red tongue. The griffin " +
-      "is the historic Pomeranian-Wendish emblem, here referencing a 16th-century fresco in the " +
-      "cathedral of Gdańsk-Oliwa. Adopted 2002.",
-    sources: [
-      { title: "Flaga województwa pomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_pomorskiego" },
-    ],
-  },
 
-  "PL-26": {
-    description:
-      "A gold vertical stripe at the hoist and three horizontal stripes — blue, white and red — with " +
-      "the voivodeship’s coat of arms on the white. The gold is placed at the hoist because it appears " +
-      "least in the arms; all colours are drawn from the coat of arms. Adopted 2012.",
-    sources: [
-      { title: "Flaga województwa świętokrzyskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%9Bwi%C4%99tokrzyskiego" },
-    ],
-  },
 
-  "PL-28": {
-    description:
-      "A red swallow-tailed field with a white border on three sides, bearing the crowned head of the " +
-      "White Eagle with a gold beak. Adopted 2002.",
-    sources: [
-      { title: "Flaga województwa warmińsko-mazurskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_warmi%C5%84sko-mazurskiego" },
-    ],
-  },
 
-  "PL-30": {
-    description:
-      "A white trapezoid at the hoist and a red square at the fly bearing the white eagle of the " +
-      "voivodeship’s arms. The eagle echoes the majestic seal of King Przemysł II (crowned 1295), an " +
-      "emblem of the Piast dynasty. Adopted 2000.",
-    sources: [
-      { title: "Flaga województwa wielkopolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_wielkopolskiego" },
-    ],
-  },
 
-  "PL-32": {
-    description:
-      "Three vertical stripes of white, red and white, the red one bearing the West-Pomeranian griffin " +
-      "from the voivodeship’s arms. Placing the emblem on the red follows Polish vexillological " +
-      "tradition. Adopted 2000.",
-    sources: [
-      { title: "Flaga województwa zachodniopomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_zachodniopomorskiego" },
-    ],
-  },
 
   "NL-DR": {
     description:
@@ -7457,27 +6855,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "BE-VLG": {
-    description:
-      "A yellow field with a black lion rampant with red claws and tongue — the “Flemish Lion.” It " +
-      "derives from the medieval arms of the Counts of Flanders (first seen on a 1163 seal) and became " +
-      "a symbol of Flemish identity and resistance, tied to the 1302 Battle of the Golden Spurs. " +
-      "Adopted 1973, confirmed 1985.",
-    sources: [
-      { title: "Flag of Flanders — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Flanders" },
-    ],
-  },
 
-  "BE-WAL": {
-    description:
-      "A yellow field with a red “bold rooster” (coq hardi), head raised and one leg lifted. Inspired " +
-      "by the Gallic rooster of Revolutionary France (many early Walloon activists shared its ideals) " +
-      "but given a distinct pose; originally a Walloon-movement emblem, now an apolitical symbol of " +
-      "regional identity. Created 1913, made official 1998.",
-    sources: [
-      { title: "Flag of Wallonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wallonia" },
-    ],
-  },
 
   "BE-BRU": {
     description:
@@ -7709,37 +7087,8 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "ES-AN": {
-    description:
-      "Three equal horizontal stripes of green, white and green with the coat of arms — Hercules " +
-      "between two columns taming two lions — at the centre. Green and white stand for hope and peace; " +
-      "the design was adopted by Blas Infante’s 1918 Assembly of Ronda as Andalusia’s national symbol. " +
-      "Recognised officially in 1982.",
-    sources: [
-      { title: "Flag of Andalusia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Andalusia" },
-    ],
-  },
 
-  "ES-AR": {
-    description:
-      "Four red bars on a gold field (the “Senyera” / bars of Aragon) with the community’s coat of arms " +
-      "at the hoist. The four red bars are the historic arms of the Crown of Aragon, borne by its kings " +
-      "since the 13th century. Confirmed as the community flag in 1984.",
-    sources: [
-      { title: "Flag of Aragon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Aragon" },
-    ],
-  },
 
-  "ES-CN": {
-    description:
-      "A vertical tricolour of white, blue and yellow, with the coat of arms on the blue band in the " +
-      "state version. The colours merge those of the two provinces — the white and blue of Santa Cruz " +
-      "de Tenerife and the blue and yellow of Las Palmas. Official since 1982; the design grew out of " +
-      "the 1960s Canarias Libre movement.",
-    sources: [
-      { title: "Flag of the Canary Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Canary_Islands" },
-    ],
-  },
 
   "ES-O": {
     description:
@@ -7752,15 +7101,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "ES-CB": {
-    description:
-      "Two equal horizontal stripes, white over red, with the community’s coat of arms at the centre. " +
-      "The bicolour comes from the ship-registration flag of the maritime province of Santander, " +
-      "assigned by royal order in 1845. The arms were made official in 1981.",
-    sources: [
-      { title: "Flag of Cantabria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cantabria" },
-    ],
-  },
 
   "ES-S": {
     description:
@@ -7772,15 +7112,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "ES-NC": {
-    description:
-      "A red field with the coat of arms of Navarre — gold chains linked to a central emerald on red, " +
-      "under a royal crown — at the centre. Red is taken from the field of the arms; the chains recall " +
-      "the ancient Kingdom of Navarre. Design created 1910, adopted 1982.",
-    sources: [
-      { title: "Flag of Navarre — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Navarre" },
-    ],
-  },
 
   "ES-NA": {
     description:
@@ -7792,15 +7123,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "ES-RI": {
-    description:
-      "Four horizontal bands of red, white, green and yellow with the coat of arms at the centre. " +
-      "Officially red is the wine, white the rivers and sky, green the fields, orchards and forests, " +
-      "and yellow the land and monuments. Known as the “cuatricolor.” Adopted 1982.",
-    sources: [
-      { title: "Flag of La Rioja (Spain) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_La_Rioja_(Spain)" },
-    ],
-  },
 
   "ES-LO": {
     description:
@@ -8320,424 +7642,45 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "GB-CON": {
-    description:
-      "A white cross on a black field — Saint Piran’s Flag, the banner of Cornwall. By a tradition " +
-      "first recorded in 1838 the white cross on black represents the white tin flowing from the black " +
-      "ore of Cornwall’s historic mining, and it is attributed to the 5th-century Cornish abbot Saint " +
-      "Piran.",
-    sources: [
-      { title: "Flag of Cornwall — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cornwall" },
-    ],
-  },
 
-  "GB-KEN": {
-    description:
-      "A white horse rearing on a red field — the White Horse of Kent (heraldically “Gules, a horse " +
-      "rampant argent”). Of Germanic heraldic origin (it also appears for Hanover and Lower Saxony), it " +
-      "is linked to the legendary Jutish leaders Hengist and Horsa and to Kent’s motto “Invicta” " +
-      "(unconquered). Adopted by Kent County Council in 1933.",
-    sources: [
-      { title: "Flag of Kent — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kent" },
-    ],
-  },
 
-  "GB-DEV": {
-    description:
-      "A white cross edged black on a green field — Saint Petroc’s Flag, chosen by public vote and " +
-      "adopted by Devon County Council in 2006. Green stands for the county’s rolling hills; black for " +
-      "the windswept moors of Dartmoor and Exmoor; white for the salt spray of its two coasts and its " +
-      "china-clay industry. It honours Saint Petroc, who ministered to the Britons of Dumnonia.",
-    sources: [
-      { title: "Flag of Devon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Devon" },
-    ],
-  },
 
-  "GB-ESS": {
-    description:
-      "Three gold-hilted Saxon seaxes (notched swords) on a red field. The seaxes are a nod to the " +
-      "Germanic, Saxon origins of Essex and appeared on the arms of the ancient Kingdom of Essex; the " +
-      "design is attested from the 17th century and was made official by the county council in 1889.",
-    sources: [
-      { title: "Flag of Essex — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Essex" },
-    ],
-  },
 
-  "GB-NBL": {
-    description:
-      "Eight vertical stripes alternating yellow and red. The design is based on the arms medieval " +
-      "heralds gave the Anglo-Saxon Kingdom of Bernicia, from Bede’s description of a gold-and-purple " +
-      "banner on the tomb of St Oswald; granted to Northumberland County Council in 1951.",
-    sources: [
-      { title: "Flag of Northumberland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Northumberland" },
-    ],
-  },
 
-  "GB-DOR": {
-    description:
-      "A cross of red, white and gold — St Wite’s Cross — in the colours of Dorset County Council’s " +
-      "arms. Adopted 2008. The gold is read variously as the Wessex golden dragon, the county’s sandy " +
-      "beaches and Golden Cap, and its rapeseed and cornfields; the flag is dedicated to the Anglo-Saxon " +
-      "St Wite buried at Whitchurch Canonicorum.",
-    sources: [
-      { title: "Flag of Dorset — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dorset" },
-    ],
-  },
 
-  "GB-LIN": {
-    description:
-      "A red St George’s cross edged yellow, bearing a yellow fleur-de-lis, over quarters of green and " +
-      "blue. The red cross is for England; yellow for the county’s crops and the “Yellowbellies” " +
-      "nickname; blue for the East-coast sea and Lincolnshire’s wide skies; green for the fenland " +
-      "fields; the fleur-de-lis is the emblem of the city of Lincoln. Adopted 2005.",
-    sources: [
-      { title: "Flag of Lincolnshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lincolnshire" },
-    ],
-  },
 
-  "GB-DBY": {
-    description:
-      "A green cross on blue with a gold Tudor rose at the centre. Green stands for Derbyshire’s " +
-      "countryside, blue for its rivers and reservoirs; the Tudor rose has been the county badge since " +
-      "the 15th century, coloured gold here to distinguish it from the roses of Yorkshire and " +
-      "Lancashire and to signify quality. Adopted 2006.",
-    sources: [
-      { title: "Flag of Derbyshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Derbyshire" },
-    ],
-  },
 
-  "GB-NFK": {
-    description:
-      "A gold-and-black vertical bicolour crossed by a white diagonal band bearing nine black ermine " +
-      "spots. It derives from the banner of arms attributed to Ralph de Gael, the first Earl of Norfolk; " +
-      "the ermine band recalls his lordship of Gaël in Brittany, whose dukes bore ermine. Adopted 2014.",
-    sources: [
-      { title: "Flag of Norfolk — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Norfolk" },
-    ],
-  },
 
-  "GB-DUR": {
-    description:
-      "A gold-over-blue bicolour with St Cuthbert’s cross counterchanged across the centre. Blue and " +
-      "gold are the historic colours of County Durham, taken from the arms of the Diocese of Durham; " +
-      "the cross is the pectoral cross found in St Cuthbert’s coffin (died 687) and now kept in Durham " +
-      "Cathedral.",
-    sources: [
-      { title: "Flag of County Durham — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_County_Durham" },
-    ],
-  },
 
-  "GB-LAN": {
-    description:
-      "A red rose on a gold field. The Red Rose of Lancaster is the traditional emblem of the county " +
-      "(worn by Edmund Crouchback, Earl of Lancaster, and later folded into the Tudor Rose); red and " +
-      "gold are Lancashire’s livery colours. Registered 2008.",
-    sources: [
-      { title: "Flag of Lancashire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lancashire" },
-    ],
-  },
 
-  "GB-HAM": {
-    description:
-      "A gold Saxon crown on red above a red-and-white double Tudor rose on gold. The rose and crown " +
-      "have identified Hampshire for centuries; the Saxon (rather than royal) crown recalls Alfred the " +
-      "Great and his capital at Winchester, and the double rose echoes the one on the “Arthurian” Round " +
-      "Table in Winchester Great Hall. Registered 2019.",
-    sources: [
-      { title: "Flag of Hampshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hampshire" },
-    ],
-  },
 
-  "GB-HEF": {
-    description:
-      "A white Hereford bull’s head on red above three wavy white-and-blue lines. The red field is the " +
-      "red earth of Herefordshire and the red coat of its famous cattle; the wavy lines are the River " +
-      "Wye and, as canting arms, the “ford” in the county’s name. Based on the council’s 1946 arms; " +
-      "adopted 2019.",
-    sources: [
-      { title: "Flag of Herefordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Herefordshire" },
-    ],
-  },
 
-  "GB-GLS": {
-    description:
-      "The “Severn Cross” — a mid-blue cross outlined cream on an apple-green field. The blue cross is " +
-      "the River Severn; the cream outline Cotswold stone; the green the Golden Valley at Stroud. " +
-      "Adopted 2008 for the county’s millennium.",
-    sources: [
-      { title: "Flag of Gloucestershire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gloucestershire" },
-    ],
-  },
 
-  "GB-CMA": {
-    description:
-      "A blue field with three green triangles at the base under gold-green-gold zigzags and a gold " +
-      "ancient crown. The zigzags stand for the rugged Cumbrian fells (home to Scafell Pike); the crown " +
-      "for the area’s past as an independent kingdom. Adopted 2012 as a free-to-use public flag.",
-    sources: [
-      { title: "Flag of Cumbria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cumbria" },
-    ],
-  },
 
-  "GB-ERY": {
-    description:
-      "A white Yorkshire rose on a field of blue (hoist) and green (fly). Blue stands for the East " +
-      "Riding’s tie to the rest of Yorkshire and its maritime past; green for its position in the east " +
-      "and its farmland; the white rose is the historic emblem of Yorkshire. Registered 2013.",
-    sources: [
-      { title: "Flag of the East Riding of Yorkshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_East_Riding_of_Yorkshire" },
-    ],
-  },
 
-  "GB-NTT": {
-    description:
-      "A red St George’s cross fimbriated white on green, with a central white shield bearing a green " +
-      "silhouette of Robin Hood drawing his bow. Green is the county’s fields; the cross is England’s; " +
-      "Robin Hood is Nottinghamshire’s heroic emblem, after the bronze statue near Nottingham Cathedral. " +
-      "Registered 2011.",
-    sources: [
-      { title: "Flag of Nottinghamshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nottinghamshire" },
-    ],
-  },
 
-  "GB-LEC": {
-    description:
-      "A red-and-white zigzag (dancetté) field bearing a gold cinquefoil and a running black fox. The " +
-      "zigzag comes from the arms of Simon de Montfort, Earl of Leicester; the cinquefoil from the " +
-      "de Beaumont earls; the fox from the county crest and its long hunting tradition. Adopted 2021 — " +
-      "the last English county to register a flag.",
-    sources: [
-      { title: "Flag of Leicestershire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Leicestershire" },
-    ],
-  },
 
-  "GB-SOM": {
-    description:
-      "A red dragon rampant on a gold field. The red Somerset dragon is a long-standing county emblem, " +
-      "linked in legend to King Arthur. Adopted 2013.",
-    sources: [
-      { title: "Flag of Somerset — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somerset" },
-    ],
-  },
 
-  "GB-SFK": {
-    description:
-      "Two gold arrows crossed through a gold ancient crown on a blue field — the medieval banner of " +
-      "arms of St Edmund, the Anglo-Saxon king of East Anglia. The arrows recall his martyrdom (bound " +
-      "to a tree and shot by the Danes around 870). Registered 2017.",
-    sources: [
-      { title: "Flag of Suffolk — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Suffolk" },
-    ],
-  },
 
-  "GB-CAM": {
-    description:
-      "A royal-blue field with three gold Saxon crowns (two above one) and two pale wavy lines across it. " +
-      "The blue and three crowns are taken from the flag of East Anglia; the wavy lines are the River " +
-      "Cam, in the Cambridge-blue of the university. Registered 2015.",
-    sources: [
-      { title: "Flag of Cambridgeshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cambridgeshire" },
-    ],
-  },
 
-  "GB-IOW": {
-    description:
-      "A white diamond — the island — hovering over blue-and-white waves, with a notch at its top for " +
-      "the River Medina, the island’s largest river. Registered 2009 after a public competition.",
-    sources: [
-      { title: "Flag of the Isle of Wight — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Wight" },
-    ],
-  },
 
-  "GB-HRT": {
-    description:
-      "Eight alternating blue and white wavy lines with a gold shield bearing a reclining hart. The " +
-      "wavy lines are a heraldic water-course, for the county’s many rivers; the hart on a ford is " +
-      "canting arms for “Hertford,” and the gold field honours St Alban, the county’s patron and " +
-      "Britain’s first Christian martyr. Adopted 2008.",
-    sources: [
-      { title: "Flag of Hertfordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hertfordshire" },
-    ],
-  },
 
-  "GB-ORK": {
-    description:
-      "A yellow-edged blue Nordic cross on a red field. Red and yellow come from the Scottish and " +
-      "Norwegian royal arms, marking Orkney’s dual Scottish and Norwegian heritage; the blue is taken " +
-      "from Scotland’s flag and also stands for the surrounding sea. Adopted 2007.",
-    sources: [
-      { title: "Flag of Orkney — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Orkney" },
-    ],
-  },
 
-  "GB-ZET": {
-    description:
-      "A white Nordic cross on a blue field. It uses the colours of the Scottish Saltire in the form of " +
-      "a Nordic cross to symbolise Shetland’s ties to both Scotland and Scandinavia. Created 1969 by " +
-      "Roy Grønneberg and Bill Adams to mark 500 years since the islands passed from Norway to Scotland.",
-    sources: [
-      { title: "Flag of Shetland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Shetland" },
-    ],
-  },
 
-  "GB-ESX": {
-    description:
-      "Six gold martlets on a blue field — the traditional emblem of Sussex, shared by East and West " +
-      "Sussex. The six martlets (heraldic swifts) stand for the six historic “rapes” of Sussex; the " +
-      "emblem goes back to a 14th-century knight’s arms and was used by John Speed in 1611 for the " +
-      "Kingdom of the South Saxons. Registered 2011 as St Richard’s Flag.",
-    sources: [
-      { title: "Flag of Sussex — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sussex" },
-    ],
-  },
 
-  "GB-WSX": {
-    description:
-      "Six gold martlets on a blue field — the flag of Sussex, shared by West and East Sussex. The six " +
-      "martlets stand for the six historic rapes of Sussex; the emblem derives from a 14th-century " +
-      "knight’s arms and was used to represent the South Saxons from 1611. Registered 2011 as " +
-      "St Richard’s Flag.",
-    sources: [
-      { title: "Flag of Sussex — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sussex" },
-    ],
-  },
 
-  "GB-OXF": {
-    description:
-      "A dark-blue field (Oxford blue) with two white wavy stripes for the River Thames, a red ox head " +
-      "at the centre, and a gold oak and wheatsheaf in the corners. The ox and the ford (wavy stripes) " +
-      "together name Oxford; the oak and sheaf are the county’s woodland and farming. From the 1949 " +
-      "county arms; registered 2017.",
-    sources: [
-      { title: "Flag of Oxfordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oxfordshire" },
-    ],
-  },
 
-  "GB-STS": {
-    description:
-      "A gold Stafford knot on a red field. The Stafford knot is unique to the county — adapted around " +
-      "1443 by Lady Joan de Stafford for her seal and later a heraldic badge, and by the 19th century a " +
-      "symbol of Staffordshire pottery; gold-on-red are the colours of many local arms. Registered 2016.",
-    sources: [
-      { title: "Flag of Staffordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Staffordshire" },
-    ],
-  },
 
-  "GB-RUT": {
-    description:
-      "A green field with a gold horseshoe and thirteen gold acorns. The horseshoe recalls the custom " +
-      "by which noble visitors to Oakham gave a horseshoe (over 230 hang in Oakham Castle); the acorns " +
-      "stand for the town of Oakham and the forest that once covered the county; green is its farmland. " +
-      "Registered 2015.",
-    sources: [
-      { title: "Flag of Rutland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rutland" },
-    ],
-  },
 
-  "GB-SHR": {
-    description:
-      "A gold (erminois) field with three blue triangles each bearing a gold leopard’s head — the " +
-      "Shropshire “loggerheads.” The loggerheads derive from the Royal Arms of England and the blue and " +
-      "gold from Roger de Montgomery, Earl of Shrewsbury; the design comes from Shrewsbury’s town arms. " +
-      "Adopted 2013.",
-    sources: [
-      { title: "Flag of Shropshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Shropshire" },
-    ],
-  },
 
-  "GB-WAR": {
-    description:
-      "A white bear and ragged staff on a red field — the heraldic emblem of the Earldom of Warwick, " +
-      "used by the Beauchamp earls since the Middle Ages and long associated with the county. Adopted " +
-      "2016.",
-    sources: [
-      { title: "Flag of Warwickshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Warwickshire" },
-    ],
-  },
 
-  "GB-WIL": {
-    description:
-      "Eight alternating green and white wavy stripes with a great bustard on a green disc. The stripes " +
-      "are Wiltshire’s pastures and chalk downs; the great bustard is the bird reintroduced to " +
-      "Salisbury Plain after dying out in England in 1832; the disc’s six segments stand for the " +
-      "county’s stone circles (Stonehenge, Avebury) and its six neighbouring counties. Adopted 2009.",
-    sources: [
-      { title: "Flag of Wiltshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wiltshire" },
-    ],
-  },
 
-  "GB-WOR": {
-    description:
-      "Three black pears on a green-and-blue wavy field. The wavy green and blue are the flood plain of " +
-      "the River Severn; the dark green is the county cricket team’s colour; the black pears recall the " +
-      "Worcestershire bowmen at Agincourt (1415) and the augmentation Elizabeth I granted the city of " +
-      "Worcester in 1575. Adopted 2013.",
-    sources: [
-      { title: "Flag of Worcestershire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Worcestershire" },
-    ],
-  },
 
-  "GB-LND": {
-    description:
-      "A red St George’s cross on white with a red sword in the upper hoist canton. The sword " +
-      "represents the one that beheaded St Paul, patron saint of the City of London, an emblem in use " +
-      "since the 13th century; the arms were first recorded in 1381.",
-    sources: [
-      { title: "Flag of the City of London — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_City_of_London" },
-    ],
-  },
 
-  "GB-PEM": {
-    description:
-      "A blue field with a yellow cross (after the flag of St David) and a central red-and-white Tudor " +
-      "rose on a green pentagon. Blue is the sea, yellow the summer sun; the rose honours Henry VII, " +
-      "founder of the Tudor dynasty, born at Pembroke Castle; the green pentagon is the county’s fields " +
-      "and cliff-tops. Dedicated 1988.",
-    sources: [
-      { title: "Flag of Pembrokeshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pembrokeshire" },
-    ],
-  },
 
-  "GB-AGY": {
-    description:
-      "A red field with a gold chevron and three gold lions rampant (two above, one below). It is based " +
-      "on the arms attributed to Hwfa ap Cynddelw, a 12th-century Anglesey ruler, recorded by medieval " +
-      "bards and in a 15th-century church window. Registered 2014.",
-    sources: [
-      { title: "Flag of Anglesey — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Anglesey" },
-    ],
-  },
 
-  "GB-IOS": {
-    description:
-      "The Scillonian Cross — a white cross over an orange (upper) and blue (lower) field with five " +
-      "white stars in the upper fly. The white cross is St Piran’s, for the islands’ Cornish ties; " +
-      "orange the famous Scilly sunsets; blue the surrounding sea; the five stars the main islands. " +
-      "Adopted 2002.",
-    sources: [
-      { title: "Flag of the Isles of Scilly — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Isles_of_Scilly" },
-    ],
-  },
 
-  "GB-MON": {
-    description:
-      "A field split vertically blue and black with three gold fleur-de-lis across it. The design comes " +
-      "from arms attributed by medieval heralds to King Ynyr of the old Welsh Kingdom of Gwent, from " +
-      "which Monmouthshire descends. Adopted 2011.",
-    sources: [
-      { title: "Flag of Monmouthshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Monmouthshire" },
-    ],
-  },
 
-  "GB-FLN": {
-    description:
-      "A white field with a black engrailed cross between four red-and-black Cornish choughs. It is " +
-      "based on the arms attributed to Edwin of Tegeingl, an 11th-century ruler of the area; the choughs " +
-      "recall a bird once widespread there. Adopted 2015.",
-    sources: [
-      { title: "Flag of Flintshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Flintshire" },
-    ],
-  },
 
   "GB-ENG": {
     description:
@@ -8750,70 +7693,11 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "GB-BDF": {
-    description:
-      "Quarters of yellow and red crossed by blue-and-white wavy bands and a black vertical panel with " +
-      "three white scallop shells. The yellow and red come from the Beauchamp family, builders of " +
-      "Bedford Castle; the wavy bands are the River Great Ouse; the three scallops are from the Dukes " +
-      "of Bedford’s arms. Adopted 2014.",
-    sources: [
-      { title: "Flag of Bedfordshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bedfordshire" },
-    ],
-  },
 
-  "GB-CGN": {
-    description:
-      "A gold lion rampant looking back (regardant) on a black field. It derives from the arms of the " +
-      "ancient Welsh ruler Gwaithfoed of Ceredigion (a black lion on gold), the colours later reversed " +
-      "for the county; a de-facto county flag in widespread use.",
-    sources: [
-      { title: "Flag of Ceredigion — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ceredigion" },
-    ],
-  },
 
-  "GB-ELN": {
-    description:
-      "A blue field with a gold saltire and a gold lion rampant, the saltire’s arms crossed by blue " +
-      "wavy stripes. Blue recalls that Scotland’s Saltire was born at nearby Athelstaneford; the gold " +
-      "saltire is the county’s farmland (the “granary of Scotland”); the lion recalls William the Lion, " +
-      "born at Haddington; the wavy stripes are the rivers Esk and Tyne. Registered 2018.",
-    sources: [
-      { title: "Flag of East Lothian — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_East_Lothian" },
-    ],
-  },
 
-  "GB-MRY": {
-    description:
-      "A flag bearing a distillery cupola and a zigzag of hills, in green, gold, blue and heather-" +
-      "purple. The cupola is the pagoda roof seen atop Speyside whisky distilleries; the zigzag is the " +
-      "hills; blue is sky and sea, purple the heather, gold the farming and whisky industries. Adopted " +
-      "2023.",
-    sources: [
-      { title: "Flag of Moray — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moray" },
-    ],
-  },
 
-  "GB-PLY": {
-    description:
-      "A red field with a white shield bearing a green saltire (diagonal cross) between four black " +
-      "towers. The four towers are the forts that defended Plymouth in the English Civil War, echoing " +
-      "the city’s motto “the strongest tower is the name of Jehovah”; green, black and white are the " +
-      "traditional colours of the city and of Devon.",
-    sources: [
-      { title: "Flag of Plymouth — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Plymouth" },
-    ],
-  },
 
-  "GB-CHW": {
-    description:
-      "Three gold wheat sheaves (garbs) around an upward gold sword on a blue field. The sword recalls " +
-      "that the Earl of Chester held his County Palatine “as freely by his sword as the King of England " +
-      "held by his crown”; the wheat sheaves come from the de Blondeville earls and have been in " +
-      "Chester’s arms since at least 1560. Registered 2013.",
-    sources: [
-      { title: "Flag of Cheshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cheshire" },
-    ],
-  },
 
   "BA-SRP": {
     description:
