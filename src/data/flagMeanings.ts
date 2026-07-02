@@ -7874,6 +7874,261 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Balearic Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Balearic_Islands" },
     ],
   },
+
+  "VE-V": {
+    description:
+      "Two equal horizontal bands, blue over black, with a yellow sun crossed by a white diagonal " +
+      "lightning bolt at the centre. Blue is the waters of Lake Maracaibo; black the state’s petroleum " +
+      "wealth; the yellow sun marks Maracaibo as the “beloved city of the sun”; the white bolt is the " +
+      "Catatumbo Lightning. Adopted 1991.",
+    sources: [
+      { title: "Bandera del estado Zulia — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Zulia" },
+    ],
+  },
+
+  "VE-L": {
+    description:
+      "Three triangles — emerald green at the hoist, white in the centre and sky-blue at the fly — with " +
+      "a red five-pointed star on the white. Green is the beauty of the mountains, valleys and " +
+      "agriculture; white the purity and the snows of the Sierra de Mérida (Pico Bolívar); blue the sky " +
+      "and the route to Lake Maracaibo; the red star marks Mérida as a founding province of independent " +
+      "Venezuela and the patriots’ blood. Adopted 1996.",
+    sources: [
+      { title: "Bandera del estado Mérida — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_M%C3%A9rida" },
+    ],
+  },
+
+  "VE-G": {
+    description:
+      "A wine-red (vinotinto) field with a thin green stripe low across it, interrupted by a yellow sun " +
+      "around the Arch of Carabobo. Vinotinto is the blood shed by patriots on the field of Carabobo; " +
+      "blue tones its maritime outlet at Puerto Cabello; the sun the light that overcomes darkness; the " +
+      "green stripe its farming and ecology; the arch commemorates the decisive 1821 Battle of Carabobo.",
+    sources: [
+      { title: "Bandera del estado Carabobo — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Carabobo" },
+    ],
+  },
+
+  "VE-B": {
+    description:
+      "Three equal horizontal bands of blue, yellow and green with the black-outlined silhouette of the " +
+      "state at the centre. Blue is the seas, rivers and skies; yellow the warmth of the state and its " +
+      "people; green its natural wealth; the black outline its petroleum. Adopted 1999.",
+    sources: [
+      { title: "Bandera del estado Anzoátegui — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Anzo%C3%A1tegui" },
+    ],
+  },
+
+  "VE-D": {
+    description:
+      "Four triangles — red at top and bottom, yellow at the sides — with the state coat of arms at the " +
+      "centre. Yellow stands for the tropical climate and for nobility and charity; red for strength, " +
+      "valour and fidelity and the blood of the independence heroes. Adopted 1993.",
+    sources: [
+      { title: "Bandera del estado Aragua — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Aragua" },
+    ],
+  },
+
+  "VE-E": {
+    description:
+      "Three horizontal bands of green, white and blue with a red square, and a central emblem of a " +
+      "seven-rayed sun, a path/pyramid and a palm. Green is the savanna, white its vastness, blue the " +
+      "sky, red the warrior past and independence sacrifice; the seven-rayed sun is the seven provinces " +
+      "of the old Captaincy General, and the sun-path-palm express the essence of “Barinidad.” Adopted " +
+      "1997.",
+    sources: [
+      { title: "Bandera del estado Barinas — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Barinas" },
+    ],
+  },
+
+  "VE-C": {
+    description:
+      "Three horizontal bands of yellow, blue and green with a white triangle at the hoist bearing the " +
+      "state arms, and seven white stars on the blue band. Yellow is the sun; blue the Apure River that " +
+      "names the state; green the plains (llanos); the white triangle integrity; the seven stars the " +
+      "state’s seven municipalities. Adopted 1996.",
+    sources: [
+      { title: "Bandera del estado Apure — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Apure" },
+    ],
+  },
+
+  "VE-F": {
+    description:
+      "A yellow field with a green circle and three blue horizontal stripes bearing eight white stars, " +
+      "with the state arms in the upper hoist. Yellow is the state’s mineral wealth; the green circle " +
+      "its vegetation; the blue stripes its rivers; seven stars are the seven provinces that declared " +
+      "independence and the eighth is Guayana Province, added by Bolívar to the national flag in 1817. " +
+      "Adopted 2000.",
+    sources: [
+      { title: "Bandera del estado Bolívar — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Bol%C3%ADvar" },
+    ],
+  },
+
+  "VE-I": {
+    description:
+      "A blue field for sky and sea with a red band across the top bearing the motto “Muera la tiranía " +
+      "y viva la libertad,” a radiant sun in the upper hoist and a white moon in the lower fly. It is " +
+      "based on Francisco de Miranda’s 1806 flag; the rising sun is American liberty dawning and the " +
+      "waning moon Spain’s declining power. Adopted 2006.",
+    sources: [
+      { title: "Bandera del estado Falcón — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Falc%C3%B3n" },
+    ],
+  },
+
+  "VE-H": {
+    description:
+      "Three horizontal bands — a broad orange, a black and a blue — with a gold sun. Orange stands for " +
+      "the wealth of the soil and the people’s faith, constancy and courage; black for iron, science " +
+      "and industry; blue for the firmament and the state’s waters; the gold sun commemorates the 1813 " +
+      "Battle of Taguanes, its rays the lances of the independence fighters. Adopted 1997.",
+    sources: [
+      { title: "Bandera del estado Cojedes — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Cojedes" },
+    ],
+  },
+
+  "VE-J": {
+    description:
+      "Four horizontal bands of blue, white, yellow and green with a central emblem of the state map, " +
+      "Los Morros de San Juan, a bull’s head and rice and sorghum branches. Blue is the sky; white the " +
+      "purity of the llanero soul; yellow the farming and cattle wealth; green the land in the rainy " +
+      "season; the fifteen stars the state’s municipalities. Adopted 1995.",
+    sources: [
+      { title: "Bandera del estado Guárico — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Gu%C3%A1rico" },
+    ],
+  },
+
+  "VE-M": {
+    description:
+      "Three horizontal bands of black, red and yellow, based on Francisco de Miranda’s 1800 flag. The " +
+      "three colours stand for the three peoples who fought with Miranda — black for Africans, red for " +
+      "the mixed “pardos,” yellow for the indigenous; the black band bears a rising sun with cacao " +
+      "branches and “Libertad o Muerte,” and six white stars mark the state’s subregions. Adopted 2006.",
+    sources: [
+      { title: "Bandera del estado Miranda — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Miranda" },
+    ],
+  },
+
+  "VE-K": {
+    description:
+      "A red field divided by a setting sun rising from a horizontal line two-thirds down, its rays " +
+      "formed of yellow and silver stripes. Adopted 2000; the decree gives the heraldic design without " +
+      "assigning a separate meaning to each element.",
+    sources: [
+      { title: "Bandera del estado Lara — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Lara" },
+    ],
+  },
+
+  "VE-O": {
+    description:
+      "Three horizontal bands — yellow with a white semicircle, green with three white stars, and dark " +
+      "blue. Yellow is the tropical sky and Caribbean wealth; the white semicircle unity and purity; " +
+      "green the vegetation and life; blue the Caribbean Sea; the three stars the state’s three islands " +
+      "— Margarita, Coche and Cubagua. Adopted 1998.",
+    sources: [
+      { title: "Bandera del estado Nueva Esparta — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Nueva_Esparta" },
+    ],
+  },
+
+  "VE-P": {
+    description:
+      "Three horizontal bands of blue, white and green with a yellow sun on the blue. Blue is the " +
+      "firmament and the plainsman’s spirit; white pristine purity and the union of the material and " +
+      "spiritual; green the state’s natural and agricultural wealth; the yellow sun — inspired by " +
+      "aboriginal geometric art — power, riches and creative energy. Adopted 1996.",
+    sources: [
+      { title: "Bandera del estado Portuguesa — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Portuguesa" },
+    ],
+  },
+
+  "VE-S": {
+    description:
+      "Three equal horizontal bands of yellow, black and red. Yellow is the wealth of the land, law and " +
+      "the wisdom of the people; black the hardships overcome and the state’s oil and coal, bearing " +
+      "four stars for the cantons of 1864 (San Cristóbal, Lobatera, San Antonio and La Grita) and " +
+      "coffee branches; red the bravery and the blood of the independence heroes. Adopted 1997.",
+    sources: [
+      { title: "Bandera del estado Táchira — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_T%C3%A1chira" },
+    ],
+  },
+
+  "VE-T": {
+    description:
+      "A red band over a white band with a green triangle at the hoist enclosing a white star and a " +
+      "dove. Red is the blood shed for the nation and the 1813 “War to the Death” decree; white the " +
+      "humanising peace treaties signed at Trujillo in 1820 and a call to friendship; the green " +
+      "triangle the verdant Andean land and its farming. Adopted 1994.",
+    sources: [
+      { title: "Bandera del estado Trujillo — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Trujillo" },
+    ],
+  },
+
+  "VE-R": {
+    description:
+      "A field of white and light blue with the state coat of arms above and fifteen stars below. " +
+      "White symbolises the loyalty and purity of the Grand Marshal of Ayacucho, Antonio José de Sucre; " +
+      "light blue the salt waters around the state and its fishing; the fifteen stars its municipalities. " +
+      "Adopted 1965.",
+    sources: [
+      { title: "Bandera del estado Sucre — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Sucre" },
+    ],
+  },
+
+  "VE-U": {
+    description:
+      "Three diagonal stripes of red, blue and white with a central roundel of yellow, blue and green. " +
+      "Red is the indomitable spirit of the indigenous peoples who resisted the conquest and fought for " +
+      "the province’s autonomy; the blue and yellow honour the national flag and the state’s waters; in " +
+      "the roundel yellow is the sun and the soil’s wealth, blue the sky and green the earth.",
+    sources: [
+      { title: "Bandera del estado Yaracuy — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Yaracuy" },
+    ],
+  },
+
+  "VE-Y": {
+    description:
+      "Light blue over a narrow green over dark blue, with a dark-blue triangle at the hoist holding a " +
+      "green map of the state and four white stars on the upper band. Light blue is the sky and the " +
+      "people’s hopes, the four stars the state’s four municipalities; green the forests and ecosystem; " +
+      "dark blue the many arms of the Orinoco; the triangle is the river delta and the Greek letter " +
+      "delta that names the state. Adopted 2004.",
+    sources: [
+      { title: "Bandera del estado Delta Amacuro — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Delta_Amacuro" },
+    ],
+  },
+
+  "VE-N": {
+    description:
+      "A light-blue field with three superimposed horizontal bands of blue, green and black and a " +
+      "yellow sun on the green, charged with the black silhouette of the independence heroine Juana " +
+      "Ramírez under an arc of thirteen white stars. Adopted 2002.",
+    sources: [
+      { title: "Flag of Monagas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Monagas" },
+    ],
+  },
+
+  "VE-X": {
+    description:
+      "A white field over a blue stripe, with four vertical stripes of yellow, red, white and blue at " +
+      "the hoist; a sun on the white and four blue stars. The design is the 1797 flag of Gual and " +
+      "España: the sun is the Homeland; the four stars the four provinces of the old Captaincy General " +
+      "(Cumaná, Guayana, Maracaibo and Caracas); the four vertical stripes the peoples of Venezuela — " +
+      "whites, pardos, blacks and indigenous. Adopted 2012 (state renamed La Guaira in 2019).",
+    sources: [
+      { title: "Bandera del estado Vargas — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Vargas" },
+    ],
+  },
+
+  "VE-Z": {
+    description:
+      "A multicolour flag bearing the Autana tepui, seven stars, a Yanomami face and the state map. " +
+      "Blue is nobility and the Amazonian rivers; white purity and freedom; green the vast forests and " +
+      "biodiversity; red the indigenous heritage; yellow light, wealth and life; brown the mineral-rich " +
+      "land. The seven stars mark the state’s seven municipalities and the Yanomami face its aboriginal " +
+      "peoples. Adopted 2002.",
+    sources: [
+      { title: "Bandera del estado Amazonas — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_del_estado_Amazonas" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
