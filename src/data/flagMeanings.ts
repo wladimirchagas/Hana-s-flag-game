@@ -7593,6 +7593,29 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Vlag van Namen (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Namen_(provincie)" },
     ],
   },
+
+  "PT-20": {
+    description:
+      "A blue band at the hoist and a white field, over which nine gold stars arch above a gold " +
+      "goshawk (açor) with outspread wings; the Portuguese shield sits in the canton. Blue and white " +
+      "are the traditional Portuguese colours of the constitutional monarchy; the nine stars are the " +
+      "archipelago’s nine islands; the goshawk gives the Azores their name; the shield marks Azorean " +
+      "Portuguese patriotism. Adopted 1979.",
+    sources: [
+      { title: "Flag of the Azores — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Azores" },
+    ],
+  },
+
+  "PT-30": {
+    description:
+      "A vertical triband of blue, gold and blue with the red Cross of the Order of Christ on the gold. " +
+      "Blue stands for the sea and for nobility and serenity; gold for the mild climate and for wealth, " +
+      "faith and constancy; the cross recalls that Madeira was discovered by knights of Henry the " +
+      "Navigator, Grand Master of the Order of Christ, which owned and settled the islands. Adopted 1978.",
+    sources: [
+      { title: "Flag of Madeira — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Madeira" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
