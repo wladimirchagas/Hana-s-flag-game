@@ -6764,6 +6764,169 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Прапор Чернівецької області — Вікіпедія", url: "https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%BF%D0%BE%D1%80_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96" },
     ],
   },
+
+  "CZ-64": {
+    description:
+      "A quartered flag: blue with the Moravian eagle (hoist top), red with a golden grape cluster " +
+      "(hoist bottom), white-and-red horizontal stripes from Brno’s arms (fly top), and blue with a " +
+      "gold-and-red chequered eagle (fly bottom). The Moravian eagles are the historic symbols of " +
+      "Moravia, the stripes are drawn from the arms of Brno the regional capital, and the golden grapes " +
+      "stand for the region’s vitality and prosperity. Adopted 2003.",
+    sources: [
+      { title: "Symboly Jihomoravského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Jihomoravsk%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-20": {
+    description:
+      "A red-and-white quartered flag: a Czech lion in the upper hoist and lower fly, two wavy blue " +
+      "stripes in the lower hoist, and a black flaming eagle in the upper fly. The Czech lion is the " +
+      "historic symbol of Bohemia; the flaming eagle is the Přemyslid dynastic emblem; the two wavy " +
+      "stripes are the Elbe and the Vltava. Adopted 2001.",
+    sources: [
+      { title: "Symboly Středočeského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_St%C5%99edo%C4%8Desk%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-31": {
+    description:
+      "A quartered flag: a Czech lion (hoist top), green-yellow-white-green vertical stripes (hoist " +
+      "bottom), roses on white and blue fields (fly top), and a white three-towered fortress on red " +
+      "(fly bottom). The lion is Bohemia; the roses recall the Rožmberk and Hradec noble houses; the " +
+      "stripes stand for forests (green), the Golden Trail (gold) and the Vltava (silver); the fortress " +
+      "is from the arms of České Budějovice. Adopted 2002.",
+    sources: [
+      { title: "Symboly Jihočeského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Jiho%C4%8Desk%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-32": {
+    description:
+      "A quartered flag: a Czech lion (hoist top), green, white and yellow horizontal stripes (hoist " +
+      "bottom), a gold two-humped camel on green (fly top), and a white Romanesque rotunda with a gold " +
+      "cross on red (fly bottom). The lion is Bohemia; the camel is from Plzeň’s arms (a 15th-century " +
+      "Hussite siege episode); the green stripes are the Šumava and Český les borderland forests, the " +
+      "others the Berounka and Otava rivers; the rotunda is the ancient church of Starý Plzenec. " +
+      "Adopted 2002.",
+    sources: [
+      { title: "Symboly Plzeňského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Plze%C5%88sk%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-41": {
+    description:
+      "A red-and-blue quartered flag: a Czech lion (hoist top), white mining hammers on gold handles " +
+      "over crossed sprigs (hoist bottom), a gold fountain spurting white water (fly top), and red-and-" +
+      "white wavy stripes with a white crowned lion (fly bottom). The lion is Bohemia; the fountain " +
+      "stands for the region’s famous spas; the hammers for its mining; the lower lion is from the arms " +
+      "of Karlovy Vary. Adopted 2001.",
+    sources: [
+      { title: "Symboly Karlovarského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Karlovarsk%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-42": {
+    description:
+      "A quartered flag: a Czech lion (hoist top), blue and green stripes with a white plough (hoist " +
+      "bottom), a crenellated tower over blue waves and a green trefoil (fly top), and a white lion on " +
+      "red (fly bottom). The lion is Bohemia; the gate is the Porta Bohemica; the waves are the region’s " +
+      "rivers; the trefoil the mountains; the plough the legendary founder Přemysl the Ploughman; the " +
+      "lower lion from the capital Ústí nad Labem. Adopted 2002.",
+    sources: [
+      { title: "Symboly Ústeckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_%C3%9Asteck%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-51": {
+    description:
+      "A red-and-blue quartered flag: a Czech lion in the upper hoist and lower fly, a white upward " +
+      "arrowhead (hoist bottom), and a white eight-spoked wagon wheel (fly top). The lion is Bohemia; " +
+      "the wheel is from the Redern family and Liberec’s seal; the arrowhead is the silhouette of Mount " +
+      "Ještěd above the regional capital. Adopted 2001.",
+    sources: [
+      { title: "Symboly Libereckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Libereck%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-52": {
+    description:
+      "A red-and-blue quartered flag: a Czech lion in the upper hoist and lower fly, a gold crown (hoist " +
+      "bottom) and a gold uncial letter “G” (fly top). The lion is the Czech lands; the “G” is from the " +
+      "arms of Hradec Králové (from a 1463 cathedral keystone); the crown stands for the five royal " +
+      "dower towns and the “Králové” (Queen’s) in the region’s name. Adopted 2001.",
+    sources: [
+      { title: "Symboly Královéhradeckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Kr%C3%A1lov%C3%A9hradeck%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-53": {
+    description:
+      "A red-and-blue quartered flag: a Czech lion (hoist top), a white fortress wall with an open gate " +
+      "holding a black lyre and gold globe (hoist bottom), the Moravian eagle (fly top), and a white " +
+      "half-horse (fly bottom). The lion and eagle are the Czech and Moravian lands; the four-toothed " +
+      "wall stands for the region’s four areas; the open gate with globe for openness to the world; the " +
+      "lyre for composers Smetana, Martinů and Tomášek; the half-horse from Pardubice’s arms. Adopted " +
+      "2001.",
+    sources: [
+      { title: "Symboly Pardubického kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Pardubick%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-63": {
+    description:
+      "A quartered flag: the Moravian eagle on blue (hoist top), a red rowan cluster on white (hoist " +
+      "bottom), a red hedgehog on white (fly top), and the Czech lion on red (fly bottom). The eagle " +
+      "and lion are the historic Moravian and Bohemian lands the region straddles; the hedgehog is from " +
+      "the arms of Jihlava, the capital; the rowan stands for the resilience and simple beauty of the " +
+      "highlands. Adopted 2002.",
+    sources: [
+      { title: "Symboly Kraje Vysočina — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Kraje_Vyso%C4%8Dina" },
+    ],
+  },
+
+  "CZ-71": {
+    description:
+      "A blue-and-yellow quartered flag: the Moravian eagle (hoist top), a wavy blue stripe (hoist " +
+      "bottom), the Silesian eagle (fly top), and the gold letters “SPQO” (fly bottom). The two eagles " +
+      "are the historic Moravian and Silesian lands; the wave is the river Morava through its wheat " +
+      "lands; SPQO — from Olomouc’s arms — stands for “the Senate and People of Olomouc.” Adopted 2001.",
+    sources: [
+      { title: "Symboly Olomouckého kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Olomouck%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-72": {
+    description:
+      "A blue-and-yellow quartered flag: the Moravian eagle (hoist top), crossed axes, a plough and " +
+      "grapes (hoist bottom), a closed book with a patriarchal cross (fly top), and a gold eight-" +
+      "pointed star (fly bottom). The eagle is Moravia; the axes and plough the cultures of Valašsko " +
+      "and Haná; the grapes the wine of Uherské Hradiště; the cross the Great-Moravian mission of Sts " +
+      "Cyril and Methodius; the star from Zlín’s arms. Adopted 2002.",
+    sources: [
+      { title: "Symboly Zlínského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Zl%C3%ADnsk%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-80": {
+    description:
+      "A quartered flag: the Silesian eagle (hoist top), a white galloping horse with a gold rose on " +
+      "green grass (hoist bottom), the Moravian eagle (fly top), and white-red-blue stripes with a " +
+      "half gold eagle (fly bottom). The two eagles are Silesia and Moravia; the horse and rose are " +
+      "from the arms of Ostrava, the capital; the stripes stand for the Opava region and the half-eagle " +
+      "for the Těšín region. Adopted 2002.",
+    sources: [
+      { title: "Symboly Moravskoslezského kraje — Wikipedie", url: "https://cs.wikipedia.org/wiki/Symboly_Moravskoslezsk%C3%A9ho_kraje" },
+    ],
+  },
+
+  "CZ-10": {
+    description:
+      "Two equal horizontal bands of yellow over red — the historic colours of Prague, derived by the " +
+      "city archivist Josef Emler from Prague’s coat of arms. Adopted 1891.",
+    sources: [
+      { title: "Flag of Prague — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Prague" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
