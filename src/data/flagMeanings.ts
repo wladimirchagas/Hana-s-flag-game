@@ -6087,6 +6087,218 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Флаг Смоленской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%BC%D0%BE%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
     ],
   },
+
+  "RU-SPE": {
+    description:
+      "A red field bearing the historic arms of the city: two crossed silver anchors — one sea, one " +
+      "river, for the maritime and river port — behind a gold sceptre topped by the double-headed " +
+      "eagle. Adopted 1992; it was the first territorial flag entered in Russia’s State Heraldic " +
+      "Register.",
+    sources: [
+      { title: "Флаг Санкт-Петербурга — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-STA": {
+    description:
+      "A gold field with a white cross and the region’s coat of arms at its centre. Gold marks a sunny " +
+      "southern land of golden grain and golden fleece, standing for richness and fertility; the white " +
+      "cross recalls the name Stavropol (Greek for “city of the cross”), the region’s Orthodox role in " +
+      "the North Caucasus, and its crossroads position. Adopted 1997.",
+    sources: [
+      { title: "Флаг Ставропольского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D1%82%D0%B0%D0%B2%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-SVE": {
+    description:
+      "A broad white band over a blue band, with a narrow white stripe above a green band along the " +
+      "foot. White stands for purity; blue for sincerity and honour; green for freedom and the wealth " +
+      "of Ural nature. The white and blue also echo the Russian flag. Adopted 2005.",
+    sources: [
+      { title: "Флаг Свердловской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B2%D0%B5%D1%80%D0%B4%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TA": {
+    description:
+      "Green over red, separated by a thin white stripe. Green stands for the greenery of spring and " +
+      "rebirth; white for purity; red for the maturity, energy, strength and life of the peoples of " +
+      "Tatarstan. Adopted 1991.",
+    sources: [
+      { title: "Флаг Татарстана — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+  "RU-TAM": {
+    description:
+      "Two equal vertical bands of red and blue with the region’s coat of arms at the centre. Red " +
+      "stands for the courage, resilience and solidarity of the inhabitants and recalls historic " +
+      "Russian banners; blue for the grandeur, natural beauty and purity of the Tambov land and for " +
+      "loyalty to tradition. Adopted 2005.",
+    sources: [
+      { title: "Флаг Тамбовской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TOM": {
+    description:
+      "A white field bearing the region’s coat of arms at the centre. The white and green of the arms " +
+      "and flag are traditional Siberian colours — green for the forest, white for the snow. Adopted " +
+      "1997.",
+    sources: [
+      { title: "Флаг Томской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TUL": {
+    description:
+      "A red field bearing the charges of the region’s arms: a horizontal white sword blade over two " +
+      "crossed sword blades, accompanied above and below by gold hammers — emblems of Tula’s historic " +
+      "arms and armaments industry. Adopted 2005.",
+    sources: [
+      { title: "Флаг Тульской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TVE": {
+    description:
+      "A red central panel bearing the region’s emblem, flanked by two gold vertical bands. The emblem " +
+      "is a throne with a high back bearing the Cap of Monomakh on a green cushion — the historic arms " +
+      "of the Principality of Tver, approved by Catherine II in 1780. Adopted 1996.",
+    sources: [
+      { title: "Флаг Тверской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-TY": {
+    description:
+      "A blue field with a yellow wedge at the hoist from which white diagonal stripes run to meet in a " +
+      "central white band. Blue stands for the pure boundless sky and the valour and harmony of the " +
+      "Tuvans; white for purity, nobility and the milk-tea offered to guests; gold for wealth, justice " +
+      "and the region’s Buddhist and shamanist faiths. The diagonal stripes are the Biy-Khem and " +
+      "Kaa-Khem rivers meeting to form the Yenisei at Kyzyl. Adopted 1992.",
+    sources: [
+      { title: "Флаг Тывы — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D1%8B%D0%B2%D1%8B" },
+    ],
+  },
+
+  "RU-TYU": {
+    description:
+      "Three horizontal bands of white, blue and green with a red triangle at the hoist and three " +
+      "yellow crowns shaped as deer antlers on the blue band. The antler-crowns are a traditional " +
+      "ornament of the region’s northern peoples, the first taken from the region’s coat of arms. " +
+      "Adopted 1995 (present form 2008).",
+    sources: [
+      { title: "Флаг Тюменской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-UD": {
+    description:
+      "Three equal vertical bands of black, white and red, the white one bearing a red eight-pointed " +
+      "solar “cross-arrow.” Black stands for earth and stability; white for the cosmos and purity of " +
+      "moral principles; red for the sun and life. The solar sign is a traditional amulet believed to " +
+      "guard its bearer from misfortune. Adopted 1993.",
+    sources: [
+      { title: "Флаг Удмуртии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A3%D0%B4%D0%BC%D1%83%D1%80%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-ULY": {
+    description:
+      "A blue field with a white column on a pedestal, topped by the Imperial Crown with blue ribbons " +
+      "to the sides — the historic emblem of Simbirsk (now Ulyanovsk), a symbol of statehood and " +
+      "steadfastness. Adopted 2013.",
+    sources: [
+      { title: "Флаг Ульяновской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A3%D0%BB%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VGG": {
+    description:
+      "A red field bearing a white image of the Motherland Calls statue of Mamayev Kurgan, with two " +
+      "blue vertical stripes at the hoist. Red recalls the historic Tsaritsyn regiments and the courage " +
+      "and sacrifice of the region’s defenders; the statue embodies the heroism of the Battle of " +
+      "Stalingrad; the two blue stripes are the Volga and the Don. Adopted 2000.",
+    sources: [
+      { title: "Флаг Волгоградской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VLA": {
+    description:
+      "A red field bearing the gold coat of arms of Vladimir — a crowned lion rampant — with a " +
+      "light-blue band at the hoist carrying a gold hammer and sickle. Based on the RSFSR flag, it " +
+      "unusually combines Soviet emblems with the region’s historic crowned lion. Adopted 1999.",
+    sources: [
+      { title: "Флаг Владимирской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VOR": {
+    description:
+      "A red field with a gold mountain of stones issuing from the hoist, on whose slope a white " +
+      "overturned pitcher pours white water. The pitcher and water stand for the fertility of the land " +
+      "and the Voronezh River and the diligence of the people; the gold mountain for the steep right " +
+      "bank of Voronezh and for abundance. Drawn from the city’s 1781 arms. Adopted 2005.",
+    sources: [
+      { title: "Флаг Воронежской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-VLG": {
+    description:
+      "A white field with a red vertical band at the fly and, in the upper hoist, the region’s red seal " +
+      "charge — a hand emerging from a cloud holding an orb and a sword, with a crown above. Adopted " +
+      "1997.",
+    sources: [
+      { title: "Flag of Vologda Oblast — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vologda_Oblast" },
+    ],
+  },
+
+  "RU-YAN": {
+    description:
+      "A bright blue-cyan field with a white “Deer Horns” ornament, framed by red and blue bands, along " +
+      "the foot. Blue stands for the sea, sky and Yamal’s natural gas; white for purity, independence " +
+      "and the long severe winters; the reindeer-antler ornament for the herding life of the region’s " +
+      "indigenous peoples on the white snows. Adopted 1996.",
+    sources: [
+      { title: "Флаг Ямало-Ненецкого автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%AF%D0%BC%D0%B0%D0%BB%D0%BE-%D0%9D%D0%B5%D0%BD%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
+    ],
+  },
+
+  "RU-YAR": {
+    description:
+      "A yellow field bearing a black bear standing on its hind legs and holding a white axe on its " +
+      "shoulder — the historic emblem of Yaroslavl, matching the figure on the region’s coat of arms. " +
+      "Adopted 2001.",
+    sources: [
+      { title: "Флаг Ярославской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-YEV": {
+    description:
+      "A white field with a horizontal rainbow of seven narrow bands across the centre. White stands " +
+      "for purity; the rainbow is a biblical symbol of peace, happiness and good, and its seven stripes " +
+      "recall the seven candles of the menorah and the seven days of creation — a nod to the region’s " +
+      "Jewish heritage. Adopted 1996.",
+    sources: [
+      { title: "Флаг Еврейской автономной области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%95%D0%B2%D1%80%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ZAB": {
+    description:
+      "Green over red bands with a yellow triangle at the hoist. Yellow stands for the boundless " +
+      "steppe; green for the taiga and its rich wildlife; red for the region’s energy and mineral " +
+      "resources. The layout derives from a palisade element on the 1859 arms of Zabaykalsky Oblast. " +
+      "Adopted 2009.",
+    sources: [
+      { title: "Флаг Забайкальского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%97%D0%B0%D0%B1%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
