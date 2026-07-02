@@ -5912,6 +5912,181 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Флаг Новгородской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
     ],
   },
+
+  "RU-NIZ": {
+    description:
+      "A white field bearing the region’s coat of arms — a crowned red deer walking toward the hoist, " +
+      "with black hooves and antlers, the historic emblem of Nizhny Novgorod, set on ermine ornament. " +
+      "Adopted 2005.",
+    sources: [
+      { title: "Флаг Нижегородской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%B8%D0%B6%D0%B5%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-NVS": {
+    description:
+      "Five vertical bands of red, white, blue, white and green, with two black sables holding a gold " +
+      "loaf and salt across the centre. White stands for purity, faith and the harsh Siberian winter; " +
+      "green for hope, abundance and the region’s natural wealth; red for courage and the heroism of " +
+      "its defenders; blue for the Ob River and the many lakes covering nearly a third of the region. " +
+      "Adopted 2003.",
+    sources: [
+      { title: "Флаг Новосибирской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-OMS": {
+    description:
+      "Two red vertical bands at the edges and a white band at the centre carrying a wavy blue stripe. " +
+      "Red stands for valour, fearlessness, life, mercy and love; white for nobility, purity and " +
+      "justice and the Siberian climate; the wavy blue stripe for the Irtysh, the region’s main river, " +
+      "and for beauty and grandeur. Adopted 2003.",
+    sources: [
+      { title: "Флаг Омской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9E%D0%BC%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ORE": {
+    description:
+      "A red field bearing the full coat of arms of Orenburg Oblast at the centre. Adopted 1997; the " +
+      "law specifies the design without assigning a separate meaning to the red field.",
+    sources: [
+      { title: "Флаг Оренбургской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-PER": {
+    description:
+      "A white cross divides the field into four quarters — red and blue above, blue and red below — " +
+      "with the krai’s coat of arms at the centre. White stands for purity, goodness and the peaceful, " +
+      "clean thoughts of the people; blue for the warmth of human relations and the waters of the Kama " +
+      "and the region’s many rivers and lakes; red for the bravery of the inhabitants. Adopted 2007.",
+    sources: [
+      { title: "Флаг Пермского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D0%B5%D1%80%D0%BC%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-PNZ": {
+    description:
+      "Bands of green and yellow bearing the region’s coat of arms — three gold wheat sheaves bound " +
+      "with crimson ribbons. Green stands for nature, forests, fertility and health; yellow for the " +
+      "fields, wisdom, light and an abundant harvest. Adopted 2022, replacing a 2002 flag that showed " +
+      "the Saviour-Not-Made-by-Hands.",
+    sources: [
+      { title: "Флаг Пензенской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D0%B5%D0%BD%D0%B7%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-PRI": {
+    description:
+      "A field divided diagonally by a white stripe into a red upper triangle at the hoist and a blue " +
+      "lower one, with a gold walking Amur tiger in the upper hoist. Red stands for the courage, " +
+      "valour and sacrifice of the region’s people; blue for honesty, loyalty and the beauty of the " +
+      "sea; the white stripe for purity and the unity of the region with Russia. The Amur tiger is the " +
+      "region’s heraldic emblem. Adopted 1995.",
+    sources: [
+      { title: "Флаг Приморского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D1%80%D0%B8%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
+    ],
+  },
+
+  "RU-PSK": {
+    description:
+      "A light-blue field bearing the charges of the Pskov arms — a gold leopard (bars) beneath a hand " +
+      "issuing from a cloud — with a white vertical band of the traditional Pskov “begunets” brick " +
+      "ornament at the hoist. Adopted 2018; the law gives the design without a separate meaning for " +
+      "each element.",
+    sources: [
+      { title: "Флаг Псковской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9F%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-ROS": {
+    description:
+      "Horizontal bands of blue, yellow and red with a white vertical stripe at the hoist. The three " +
+      "bands come from the 1918 Don Cossack flag, where they stood for the union of the region’s three " +
+      "peoples — the Don Cossacks (blue), the Kalmyks (yellow) and the Russians (red); the white stripe, " +
+      "added in 1996, stands for the region’s unity with Russia. Adopted 1996.",
+    sources: [
+      { title: "Флаг Ростовской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-RYA": {
+    description:
+      "Horizontal bands of white, yellow and red, the yellow one bearing the standing prince from the " +
+      "region’s arms. Gold stands for wealth, justice and, in Orthodox tradition, eternity and " +
+      "holiness; red for courage and strength; white for purity and spirituality. The prince recalls " +
+      "St Oleg of Ryazan, builder and protector of the land. Adopted 2000.",
+    sources: [
+      { title: "Флаг Рязанской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SA": {
+    description:
+      "A broad blue field with a central white disc, over narrow bands of white, red and green. The " +
+      "white disc on blue is the Arctic sun at its zenith and the continuity of generations — the Sakha " +
+      "considered themselves “children of the white sun”; blue is honour and loyalty; white the beauty " +
+      "and severity of the North; red loyalty to the homeland; green the brief Yakut summer and the " +
+      "taiga. Adopted 1992.",
+    sources: [
+      { title: "Флаг Якутии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%AF%D0%BA%D1%83%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-SAK": {
+    description:
+      "A sea-wave blue field (blue with an emerald tint) bearing the white outlines of Sakhalin Island " +
+      "and the Kuril Islands set diagonally — the territory that forms the united Sakhalin Oblast. One " +
+      "of the few flags to depict a map of its territory. Adopted 1995.",
+    sources: [
+      { title: "Флаг Сахалинской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SAM": {
+    description:
+      "Three horizontal bands of red, white and blue with the region’s coat of arms at the centre. " +
+      "White stands for nobility and candour; blue for loyalty, honesty and virtue; red for courage, " +
+      "boldness and love. The colours echo the historic Samara Banner carried in the Slavic peoples’ " +
+      "struggle against Ottoman rule. Adopted 1998.",
+    sources: [
+      { title: "Флаг Самарской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SAR": {
+    description:
+      "A white band over a red band (2:1), with the region’s coat of arms — three silver sturgeons — " +
+      "within a wreath of oak, laurel and wheat on the white. Adopted 2001; the law specifies the " +
+      "design without assigning a separate meaning to each colour.",
+    sources: [
+      { title: "Флаг Саратовской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "RU-SE": {
+    description:
+      "Three equal horizontal bands of white, red and gold. White stands for moral and spiritual " +
+      "purity; red for courage, strength and honour; gold for abundance, well-being and prosperity. The " +
+      "three correspond to the three-part structure of ancient society reflected in the Ossetian Nart " +
+      "epic. Adopted 1994.",
+    sources: [
+      { title: "Флаг Северной Осетии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B9_%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%B8" },
+    ],
+  },
+
+  "RU-SMO": {
+    description:
+      "A red field with two yellow stripes low across it and the region’s abbreviated coat of arms " +
+      "(shield and crown) in the upper hoist. Red is the field of battle — Smolensk land being a great " +
+      "historical battlefield; the yellow is the colour of the birds Gamayun and the Phoenix, for a " +
+      "city that twice rose from the ashes (1812 and 1941–45), and forms a scheme of the Order of " +
+      "Lenin. Adopted 1998.",
+    sources: [
+      { title: "Флаг Смоленской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A1%D0%BC%D0%BE%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
