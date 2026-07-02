@@ -8686,6 +8686,69 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the City of London — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_City_of_London" },
     ],
   },
+
+  "GB-PEM": {
+    description:
+      "A blue field with a yellow cross (after the flag of St David) and a central red-and-white Tudor " +
+      "rose on a green pentagon. Blue is the sea, yellow the summer sun; the rose honours Henry VII, " +
+      "founder of the Tudor dynasty, born at Pembroke Castle; the green pentagon is the county’s fields " +
+      "and cliff-tops. Dedicated 1988.",
+    sources: [
+      { title: "Flag of Pembrokeshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pembrokeshire" },
+    ],
+  },
+
+  "GB-AGY": {
+    description:
+      "A red field with a gold chevron and three gold lions rampant (two above, one below). It is based " +
+      "on the arms attributed to Hwfa ap Cynddelw, a 12th-century Anglesey ruler, recorded by medieval " +
+      "bards and in a 15th-century church window. Registered 2014.",
+    sources: [
+      { title: "Flag of Anglesey — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Anglesey" },
+    ],
+  },
+
+  "GB-IOS": {
+    description:
+      "The Scillonian Cross — a white cross over an orange (upper) and blue (lower) field with five " +
+      "white stars in the upper fly. The white cross is St Piran’s, for the islands’ Cornish ties; " +
+      "orange the famous Scilly sunsets; blue the surrounding sea; the five stars the main islands. " +
+      "Adopted 2002.",
+    sources: [
+      { title: "Flag of the Isles of Scilly — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Isles_of_Scilly" },
+    ],
+  },
+
+  "GB-MON": {
+    description:
+      "A field split vertically blue and black with three gold fleur-de-lis across it. The design comes " +
+      "from arms attributed by medieval heralds to King Ynyr of the old Welsh Kingdom of Gwent, from " +
+      "which Monmouthshire descends. Adopted 2011.",
+    sources: [
+      { title: "Flag of Monmouthshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Monmouthshire" },
+    ],
+  },
+
+  "GB-FLN": {
+    description:
+      "A white field with a black engrailed cross between four red-and-black Cornish choughs. It is " +
+      "based on the arms attributed to Edwin of Tegeingl, an 11th-century ruler of the area; the choughs " +
+      "recall a bird once widespread there. Adopted 2015.",
+    sources: [
+      { title: "Flag of Flintshire — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Flintshire" },
+    ],
+  },
+
+  "GB-ENG": {
+    description:
+      "A red cross on a white field — the Cross of St George. Red crosses marked English soldiers from " +
+      "the late 13th century, and Edward III made St George England’s special patron around 1348; by " +
+      "1552 the St George’s flag was the only saint’s banner permitted in public. It has become the " +
+      "popular flag of England, especially at sporting events.",
+    sources: [
+      { title: "Flag of England — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_England" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
