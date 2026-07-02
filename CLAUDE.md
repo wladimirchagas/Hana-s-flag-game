@@ -825,6 +825,53 @@ open, then confirm focus has moved off it (not just "the modal is gone") immedia
 closing action, in the running app or via the dev tools / Playwright `document.activeElement`
 check.
 
+## A listed profile must always be selectable — hard rule, do not override without approval
+
+**Every profile shown in the "Who's playing?" picker (`ProfilePickerModal`) MUST be selectable.
+Tapping a visible profile must never dead-end with "That profile could not be loaded."** Showing a
+profile the user cannot actually pick is the profile-feature equivalent of the "never show the parent
+nation's flag" bug — the UI advertises something it can't deliver.
+
+### Why this rule exists
+
+The picker gets its list from `subscribeToAllProfiles()` in `src/lib/profileStore.ts` — a live
+Firestore collection query that reads **every profile's full document**. Selecting a profile,
+however, goes through `activateProfileByCode()` → `fetchProfile()`, which issues a **separate,
+single-document `getDoc` time-boxed to 4 s with no retry**, then falls back to this device's local
+cache. For a profile created on **another device** (the whole point of the "☁️ Synced across
+devices" model), that document is **not** in this device's local cache, so if the one `getDoc` is
+slow/flaky or transiently fails, `fetchProfile` returns `null` and the user gets **"That profile
+could not be loaded."** for a profile sitting right there in the list. This shipped and was reported
+via screenshots (2026-07): "Hana", created on another device, appeared in the picker but could not be
+loaded.
+
+### Rules
+
+1. **The list source and the load source must never be able to disagree about what's loadable.**
+   Because `subscribeToAllProfiles()` already reads each profile's full document, it **MUST**
+   `cacheProfileLocally()` every profile it lists. That guarantees `fetchProfile()`'s local-cache
+   fallback can always resolve any profile the picker shows — even offline, even cross-device, even
+   when the per-profile `getDoc` fails. Do **not** reduce that subscription back to mapping only
+   `{id, displayName, avatarId}` without caching the full doc (`fromRemote(...)` → `cacheProfileLocally(...)`);
+   that reintroduces this exact dead-end.
+2. **Never make a profile appear in the picker from a data path that the loader cannot also
+   resolve.** If you add a new way to list profiles, ensure the corresponding load path (or the
+   local cache) can always return that profile's full data. A profile the user can see but cannot
+   pick is always a bug.
+3. **A load failure must degrade honestly, not silently.** `fetchProfile` returning `null` for a
+   listed profile indicates a broken invariant (rule 1) — fix the invariant, do not paper over it by
+   hiding the error or by activating a hollow profile with empty flag lists (that would silently lose
+   the user's saved/learned flags).
+
+### Verification
+
+Open the picker in the running app with at least one profile that exists in Firestore but is **not**
+in this device's local cache (simulate by clearing `localStorage` keys prefixed
+`flagGame.profile.` while leaving the Firestore doc intact, then reloading). Confirm the profile
+still appears **and** selecting it activates successfully with its saved/learned flags — no "That
+profile could not be loaded." message. There is no automated check for this (it needs a live
+Firestore + a second device); the invariant in rule 1 is the guard, and this manual check confirms it.
+
 ## National anthems must autoplay at the best resolution — hard rule, do not override without approval
 
 **When the user opens the National Anthem player (`NationalAnthemPlayer`, used in

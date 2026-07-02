@@ -365,6 +365,15 @@ export async function editProfile(
  * device sees all of them in the "Who's playing?" picker and can pick one —
  * there is no password or share code. Ordered by most-recently-updated so
  * active personas surface first; capped so the list stays bounded.
+ *
+ * CRITICAL — every listed profile MUST also be cached locally here. This query
+ * already reads each profile's FULL document; caching it means `fetchProfile`'s
+ * local-cache fallback can always resolve a profile the user can see, so
+ * selecting one can never dead-end with "That profile could not be loaded."
+ * even when the per-profile `getDoc` in `fetchProfile` is slow/flaky or the
+ * profile was created on another device (and so isn't otherwise cached here).
+ * Do NOT reduce this back to mapping only {id, displayName, avatarId} without
+ * caching the full doc — that reintroduces the picker dead-end bug.
  */
 export function subscribeToAllProfiles(
   onUpdate: (profiles: DeviceProfileRef[]) => void,
@@ -376,12 +385,11 @@ export function subscribeToAllProfiles(
     (snap) =>
       onUpdate(
         snap.docs.map((d) => {
-          const data = d.data() as RemoteProfile;
-          return {
-            id: d.id,
-            displayName: data.displayName ?? "",
-            avatarId: data.avatarId ?? "",
-          };
+          const profile = fromRemote(d.id, d.data() as RemoteProfile);
+          // Persist the full doc so a listed profile is always loadable offline
+          // / without a second network round-trip (see the note above).
+          cacheProfileLocally(profile);
+          return { id: profile.id, displayName: profile.displayName, avatarId: profile.avatarId };
         }),
       ),
     onError,
