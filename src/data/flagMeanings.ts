@@ -8781,6 +8781,28 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of East Lothian — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_East_Lothian" },
     ],
   },
+
+  "GB-MRY": {
+    description:
+      "A flag bearing a distillery cupola and a zigzag of hills, in green, gold, blue and heather-" +
+      "purple. The cupola is the pagoda roof seen atop Speyside whisky distilleries; the zigzag is the " +
+      "hills; blue is sky and sea, purple the heather, gold the farming and whisky industries. Adopted " +
+      "2023.",
+    sources: [
+      { title: "Flag of Moray — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moray" },
+    ],
+  },
+
+  "GB-PLY": {
+    description:
+      "A red field with a white shield bearing a green saltire (diagonal cross) between four black " +
+      "towers. The four towers are the forts that defended Plymouth in the English Civil War, echoing " +
+      "the city’s motto “the strongest tower is the name of Jehovah”; green, black and white are the " +
+      "traditional colours of the city and of Devon.",
+    sources: [
+      { title: "Flag of Plymouth — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Plymouth" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
