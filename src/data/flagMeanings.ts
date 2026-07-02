@@ -4944,6 +4944,232 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
     ],
   },
+
+  "JP-13": {
+    description:
+      "An Edo-purple field bearing the white Tokyo Metropolitan crest — a six-rayed sun with a dot at " +
+      "the centre, marking Tokyo as the metaphorical heart of Japan and its rays as development in all " +
+      "directions. Adopted in 1964.",
+    sources: [
+      { title: "Flag of Tokyo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tokyo" },
+    ],
+  },
+
+  "JP-01": {
+    description:
+      "A navy-blue field with a red seven-pointed star. The star, a modern reworking of the historic " +
+      "seven-pointed “North Star,” stands for Hokkaido’s pioneering spirit; the blue represents the " +
+      "northern seas and sky and the white the region’s snow. Adopted in 1967.",
+    sources: [
+      { title: "Flag of Hokkaido — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hokkaido" },
+    ],
+  },
+
+  "JP-34": {
+    description:
+      "A crimson field with a white stylised katakana “ヒ” (hi, for Hiroshima); the emblem’s " +
+      "overlapping circles express the prefecture’s growth and development.",
+    sources: [
+      { title: "Flag of Hiroshima Prefecture — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hiroshima_Prefecture" },
+    ],
+  },
+
+  "JP-47": {
+    description:
+      "A white field with three stacked circles, red around white around red. The emblem stands for " +
+      "the ocean, peace and development, with the central white circle forming the letter “O” for " +
+      "Okinawa.",
+    sources: [
+      { title: "Flag of Okinawa Prefecture — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Okinawa_Prefecture" },
+    ],
+  },
+
+  "IT-82": {
+    description:
+      "The Trinacria: a triskeles of three bent legs — for Sicily’s three capes — around the winged " +
+      "head of Medusa with ears of wheat, on a field divided diagonally red (Palermo) over yellow " +
+      "(Corleone). The wheat marks the island’s fertility.",
+    sources: [
+      { title: "Flag of Sicily — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sicily" },
+    ],
+  },
+
+  "IT-88": {
+    description:
+      "The Four Moors: a red Saint George’s cross dividing the white field into quarters, each bearing " +
+      "the head of a Moor with a white band around the brow. In use since the Middle Ages, the design " +
+      "was fixed by regional law in 1999.",
+    sources: [
+      { title: "Flag of Sardinia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sardinia" },
+    ],
+  },
+
+  "IT-25": {
+    description:
+      "A green field with a white Rosa Camuna (a curvilinear cross) at the centre. The green stands " +
+      "for the Po Valley and the rose — taken from prehistoric Camunian rock carvings — for light and " +
+      "regional identity.",
+    sources: [
+      { title: "Flag of Lombardy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lombardy" },
+    ],
+  },
+
+  "IT-36": {
+    description:
+      "A blue field with a golden eagle standing on white fortifications. The blue and gold are the " +
+      "colours of the historic Patria del Friuli, and the eagle represents ancient Aquileia — whose " +
+      "name is linked to the Latin aquila (“eagle”).",
+    sources: [
+      { title: "Flag of Friuli-Venezia Giulia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Friuli-Venezia_Giulia" },
+    ],
+  },
+
+  "IT-42": {
+    description:
+      "A vertical tricolour of green, red and blue with the regional arms — a caravel beneath the " +
+      "Genoese Saint George’s cross and four stars for the provinces. The green stands for the " +
+      "mountains, the red for the blood of Italian unification and the blue for the Ligurian Sea.",
+    sources: [
+      { title: "Flag of Liguria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liguria" },
+    ],
+  },
+
+  "IT-52": {
+    description:
+      "A white field with a silver rampant Pegasus between two red bands. The Pegasus, from a 1537 " +
+      "coin by Benvenuto Cellini, stands for creativity and the flowering of the Tuscan language.",
+    sources: [
+      { title: "Flag of Tuscany — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tuscany" },
+    ],
+  },
+
+  "IT-34": {
+    description:
+      "The winged Lion of Saint Mark, holding the open Gospel, resting on the region’s sea, plain and " +
+      "mountains — taken from the flag of the Republic of Venice. Adopted in 1975.",
+    sources: [
+      { title: "Flag of Veneto — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Veneto" },
+    ],
+  },
+
+  "IT-21": {
+    description:
+      "A red field with a blue-bordered white cross — essentially the arms of the Prince of Piedmont, " +
+      "reflecting the region’s ties to the House of Savoy and its role in Italian unification.",
+    sources: [
+      { title: "Flag of Piedmont — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Piedmont" },
+    ],
+  },
+
+  "IT-23": {
+    description:
+      "A vertical bicolour of black and red, drawn from a 16th-century coat of arms of the Duchy of " +
+      "Aosta; the design was created in 1942 and used by the region’s anti-fascist resistance.",
+    sources: [
+      { title: "Flag of Aosta Valley — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Aosta_Valley" },
+    ],
+  },
+
+  "IT-62": {
+    description:
+      "A sky-blue field with the regional arms — combining the heraldry of Rome with that of its four " +
+      "other provinces — beneath a gold crown.",
+    sources: [
+      { title: "Flag of Lazio — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lazio" },
+    ],
+  },
+
+  "IT-72": {
+    description:
+      "A blue field with a white shield bearing a red diagonal band — the arms of the medieval " +
+      "Maritime Republic of Amalfi, reflecting Campania’s seafaring past.",
+    sources: [
+      { title: "Flag of Campania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Campania" },
+    ],
+  },
+
+  "IT-78": {
+    description:
+      "A blue field with the regional arms, quartering a pine tree, a Teutonic cross, a truncated " +
+      "Doric column and a Byzantine cross — emblems of Calabria’s layered history.",
+    sources: [
+      { title: "Flag of Calabria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Calabria" },
+    ],
+  },
+
+  "IT-45": {
+    description:
+      "A white flag with a stylised emblem on green: a curved line for the River Po and nature and a " +
+      "straight line for the road and human labour, the green standing for the Po Valley.",
+    sources: [
+      { title: "Flag of Emilia-Romagna — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Emilia-Romagna" },
+    ],
+  },
+
+  "IT-75": {
+    description:
+      "A white field with the regional arms: six bezants for the six provinces, an octagon for " +
+      "Frederick II’s Castel del Monte and an olive tree for peace, with green and red side stripes " +
+      "echoing the national flag.",
+    sources: [
+      { title: "Flag of Apulia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Apulia" },
+    ],
+  },
+
+  "IT-55": {
+    description:
+      "A silver field with three red candles — the Ceri carried in the annual Festa dei Ceri at " +
+      "Gubbio in honour of Saint Ubaldo — reflecting Umbria’s medieval traditions.",
+    sources: [
+      { title: "Flag of Umbria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Umbria" },
+    ],
+  },
+
+  "IT-57": {
+    description:
+      "A white field with the regional emblem — a stylised woodpecker forming the letter M within a " +
+      "green-bordered shield. The woodpecker was the sacred totem of the ancient Picentes, said to " +
+      "have guided the tribe’s founders.",
+    sources: [
+      { title: "Flag of Marche — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Marche" },
+    ],
+  },
+
+  "IT-65": {
+    description:
+      "A burgundy field with a tricolour regional emblem in which white stands for the snowy " +
+      "Apennines, green for the hills and national parks and blue for the Adriatic Sea.",
+    sources: [
+      { title: "Flag of Abruzzo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Abruzzo" },
+    ],
+  },
+
+  "IT-32": {
+    description:
+      "A white-and-blue field with arms combining the eagles of Saint Wenceslas (Trentino) with the " +
+      "red Tyrolean eagles (South Tyrol), the historic emblems of the region’s two provinces.",
+    sources: [
+      { title: "Flag of Trentino-Alto Adige/Südtirol — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Trentino-Alto_Adige/S%C3%BCdtirol" },
+    ],
+  },
+
+  "IT-67": {
+    description:
+      "A blue field with the regional arms — a red field crossed by a silver diagonal band and set " +
+      "with an eight-pointed star.",
+    sources: [
+      { title: "Flag of Molise — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Molise" },
+    ],
+  },
+
+  "IT-77": {
+    description:
+      "An azure field with a white, gold-bordered shield of four blue wavy bands, standing for the " +
+      "region’s four main rivers — the Basento, Agri, Bradano and Sinni.",
+    sources: [
+      { title: "Flag of Basilicata — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Basilicata" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
