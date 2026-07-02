@@ -4984,16 +4984,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-10": {
-    description:
-      "A purple field with a white emblem: the old form of the kanji “群” (gun, “group”) drawn as a " +
-      "circle to express the harmony of the prefecture’s people, framed by three crescents standing " +
-      "for the Jōmō Sanzan (Mounts Akagi, Haruna and Myōgi). The purple recalls the cultural " +
-      "flourishing of the ancient Kōzuke Province. Adopted 1968 for the Meiji centennial.",
-    sources: [
-      { title: "群馬県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%BE%A4%E9%A6%AC%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-11": {
     description:
@@ -5005,25 +4995,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-12": {
-    description:
-      "A sky-blue field — for hope and development — carrying the prefectural emblem, the kana “チ” and " +
-      "“ハ” (chi-ha) combined, outlined in white and edged in pale yellow for the canola blossom, the " +
-      "prefectural flower. The emblem dates to 1909; the flag was adopted 1963.",
-    sources: [
-      { title: "千葉県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%8D%83%E8%91%89%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-15": {
-    description:
-      "A red field with the prefectural emblem: a stylised kanji “新” (shin, “new”) above the kana “ガ” " +
-      "and “タ” (ga-ta) set in a necklace-like ring, standing for harmony, hope and the prefecture’s " +
-      "smooth development. Adopted 1963.",
-    sources: [
-      { title: "新潟県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%96%B0%E6%BD%9F%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-16": {
     description:
@@ -5035,26 +5007,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-17": {
-    description:
-      "A blue field with the kanji “石川” (Ishikawa) stylised in white into the shape of the Noto " +
-      "Peninsula. The blue stands for the Sea of Japan and the prefecture’s greenery, clean water and " +
-      "clear air. Uniquely, Ishikawa uses this flag design as its emblem, having set no separate one. " +
-      "Adopted 1972.",
-    sources: [
-      { title: "石川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-18": {
-    description:
-      "An indigo field with a white emblem combining the kana “フ,” “ク” and “イ” (fu-ku-i) into a " +
-      "circular form said to resemble young leaves sprouting between two leaves, wishing for the " +
-      "prefecture’s growth. Established 1952.",
-    sources: [
-      { title: "福井県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E4%BA%95%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-19": {
     description:
@@ -5066,15 +5019,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-21": {
-    description:
-      "A white field with a green emblem: an abbreviated kanji “岐” (gi) enclosed in a circle, the green " +
-      "standing for the natural beauty found throughout the prefecture. The emblem was chosen by public " +
-      "competition and designated 1932.",
-    sources: [
-      { title: "岐阜県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%90%E9%98%9C%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-22": {
     description:
@@ -5086,35 +5030,8 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-24": {
-    description:
-      "A blue-green field — combining the green of the mountains with the blue of the long coastline — " +
-      "with a white emblem based on the hiragana “み” (mi) shaped as an upward arrow for the prefecture’s " +
-      "advancement; a circle at lower left represents the pearl cultivation of Ago Bay. Adopted 1964.",
-    sources: [
-      { title: "三重県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%B8%89%E9%87%8D%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-25": {
-    description:
-      "A light-blue field for the surface of Lake Biwa, with a white emblem combining the kana “シ” and " +
-      "“ガ” (shi-ga) in a circle expressing harmony; the inner circle is Lake Biwa and the wings the " +
-      "prefecture’s advancement. Emblem designated 1957; flag adopted 1968.",
-    sources: [
-      { title: "滋賀県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%BB%8B%E8%B3%80%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-28": {
-    description:
-      "A cerulean-blue field with a white kanji “兵” (hyō) drawn as waves, representing a prefecture that " +
-      "faces both the Sea of Japan and the Seto Inland Sea. The blue stands for youth and the white for " +
-      "brightness and honesty. Adopted 1964.",
-    sources: [
-      { title: "兵庫県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%85%B5%E5%BA%AB%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-29": {
     description:
@@ -5127,24 +5044,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-30": {
-    description:
-      "A white field with a navy-blue emblem: the kana “ワ” (wa) drawn as a fan, standing for boundless " +
-      "development in the southern Kii country and the progressive spirit of the people. Adopted 1969.",
-    sources: [
-      { title: "和歌山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-31": {
-    description:
-      "A navy-blue field with a white emblem: a flying bird formed from the hiragana “と” (to), standing " +
-      "for freedom, peace and the prefecture’s progress toward the future. Adopted 1968 for the Meiji " +
-      "centennial.",
-    sources: [
-      { title: "鳥取県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%B3%A5%E5%8F%96%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-32": {
     description:
@@ -5156,25 +5056,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-33": {
-    description:
-      "An eggplant-navy field with a gold emblem: the kanji “岡” (oka, “hill”) drawn as a circle, " +
-      "standing for the unity of the people and the prefecture’s development and advancement. Adopted " +
-      "1967.",
-    sources: [
-      { title: "岡山県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-35": {
-    description:
-      "A deep reddish-brown (ebicha) field with a white emblem combining the kanji “山” and “口” " +
-      "(Yamaguchi) into a circle for the unity and advancement of the people, with birds flying toward " +
-      "the sun. Adopted 1962 for the prefecture’s 90th anniversary.",
-    sources: [
-      { title: "山口県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%8F%A3%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-36": {
     description:
@@ -5186,24 +5068,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-37": {
-    description:
-      "An olive-green field with a white emblem based on the kana “カ” (ka), incorporating the " +
-      "prefecture’s mountain ranges and olive leaves — the olive being a symbol of peace — to express " +
-      "its blessed nature and progress. Adopted 1977.",
-    sources: [
-      { title: "香川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-38": {
-    description:
-      "A flag bearing the blossom of the mikan (mandarin orange), the prefectural flower: white petals " +
-      "for modesty and purity, green for peace and hope, and yellow for happiness. Adopted 1952.",
-    sources: [
-      { title: "愛媛県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%84%9B%E5%AA%9B%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-39": {
     description:
@@ -5215,35 +5080,8 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-40": {
-    description:
-      "A blue field with a white emblem combining the kana “ふ” and “く” (fu-ku) drawn to resemble the " +
-      "plum blossom, the prefectural flower, standing for peace, the prefecture’s development, and the " +
-      "harmony and progress of its people. Adopted 1966.",
-    sources: [
-      { title: "福岡県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-41": {
-    description:
-      "A deep-green field with a stylised camphor-tree (kusu) flower, the prefectural flower: white " +
-      "petals for public brightness and purity, vermilion stamens for sincerity and passion, the six " +
-      "petals expressing harmony and vigorous development. Adopted 1968.",
-    sources: [
-      { title: "佐賀県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%B3%80%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-42": {
-    description:
-      "A field in white, light blue and black bearing an emblem based on the letter “N” with a stylised " +
-      "dove for peace and a sphere for the bright sea and sky, expressing the prefecture’s international " +
-      "character. Adopted 1991, replacing an earlier crane mark used from 1925.",
-    sources: [
-      { title: "長崎県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-43": {
     description:
@@ -5254,26 +5092,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "JP-44": {
-    description:
-      "A white field with a red emblem of three kanji “大” (dai) joined hands-in-a-ring to form a rising " +
-      "sun. The three characters stand for faith-and-righteousness, diligence and friendship; the ring " +
-      "for harmony, peace and cooperation. Red is the true heart of the people, white peace and " +
-      "equality. Adopted 1956.",
-    sources: [
-      { title: "大分県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%88%86%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
-  "JP-45": {
-    description:
-      "A green field — for the prefecture’s verdant land — with yellow shapes for sunlight: three " +
-      "diagonally-set diamonds styled as the kana “ミ” (mi), depicting radiant sun pouring onto the " +
-      "greenery. Adopted 1964.",
-    sources: [
-      { title: "宮崎県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%B4%8E%E7%9C%8C%E6%97%97" },
-    ],
-  },
 
   "JP-46": {
     description:
@@ -5596,16 +5415,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "RU-AD": {
-    description:
-      "A green field bearing twelve gold stars and three crossed gold arrows. Green stands for life, " +
-      "nature and Islam; gold for a bright peaceful future and an abundant harvest. Nine stars in an " +
-      "arc plus three in a row represent the twelve historical provinces of Circassia, and the crossed " +
-      "arrows their unity. Based on a historic Circassian flag; adopted 1992.",
-    sources: [
-      { title: "Флаг Адыгеи — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%B4%D1%8B%D0%B3%D0%B5%D0%B8" },
-    ],
-  },
 
   "RU-AL": {
     description:
@@ -5617,25 +5426,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "RU-ALT": {
-    description:
-      "A red field with a blue vertical band at the hoist bearing a gold ear of wheat, symbolising " +
-      "agriculture as the region’s leading economic sector; the krai’s coat of arms is set at the " +
-      "centre. The layout derives from the 1954 RSFSR flag. Adopted 2000.",
-    sources: [
-      { title: "Флаг Алтайского края — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BB%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F" },
-    ],
-  },
 
-  "RU-AMU": {
-    description:
-      "Three horizontal bands: a broad red, a narrow white wavy stripe, and blue. Red stands for the " +
-      "rich history of the Amur region and the martial and labour feats of its people; the blue band, " +
-      "with its waves, for the mighty Amur River along the region’s southern border. Adopted 1999.",
-    sources: [
-      { title: "Флаг Амурской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D0%BC%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
-    ],
-  },
 
   "RU-ARK": {
     description:
@@ -5648,26 +5439,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "RU-AST": {
-    description:
-      "A blue field bearing a gold royal crown above a silver eastern sabre — the arms of Astrakhan, " +
-      "recalling the former Astrakhan Khanate and Tsardom. Adopted 2001.",
-    sources: [
-      { title: "Флаг Астраханской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%90%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
-    ],
-  },
 
-  "RU-BA": {
-    description:
-      "Three horizontal bands of blue, white and green with a gold ring at the centre enclosing a " +
-      "seven-petalled kurai flower. Blue stands for clarity, virtue and purity of thought; white for " +
-      "peace, openness and cooperation; green for freedom and the eternity of life. The kurai is a " +
-      "symbol of friendship and its seven petals the seven Bashkir tribes united into one people. " +
-      "Adopted 1992.",
-    sources: [
-      { title: "Флаг Башкортостана — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D0%B0%D1%88%D0%BA%D0%BE%D1%80%D1%82%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%B0" },
-    ],
-  },
 
   "RU-BEL": {
     description:
@@ -5691,26 +5463,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "RU-BU": {
-    description:
-      "Three horizontal bands of blue, white and yellow, with the traditional Soyombo — crescent, sun " +
-      "and three-tongued flame — in the hoist. Blue is the national colour of the Buryats and the " +
-      "Eternal Blue Sky (Khukhe Munkhe Tengri); white stands for peace, unity and well-being; yellow " +
-      "for the faith (Tibetan Buddhism) and spiritual perfection. Adopted 1992.",
-    sources: [
-      { title: "Флаг Бурятии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%91%D1%83%D1%80%D1%8F%D1%82%D0%B8%D0%B8" },
-    ],
-  },
 
-  "RU-CE": {
-    description:
-      "Horizontal bands of green, white and red with a white vertical band of Chechen national " +
-      "ornament at the hoist, the whole edged in gold. Green is associated with Islam. The design was " +
-      "modelled on the flag of Tatarstan. Adopted 2004.",
-    sources: [
-      { title: "Флаг Чечни — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D0%B5%D1%87%D0%BD%D0%B8" },
-    ],
-  },
 
   "RU-CHE": {
     description:
@@ -5723,27 +5476,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "RU-CHU": {
-    description:
-      "A blue field with a white triangle at the hoist enclosing a yellow ring around the Russian " +
-      "national colours. The triangle is the Chukotka Peninsula, Russia’s far north-eastern extremity; " +
-      "blue the surrounding Arctic and Pacific oceans; white the Arctic snows; the yellow ring the sun " +
-      "that rises first over Russia here, and the region’s gold mining. Adopted 1997.",
-    sources: [
-      { title: "Флаг Чукотского автономного округа — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D1%83%D0%BA%D0%BE%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B3%D0%B0" },
-    ],
-  },
 
-  "RU-CU": {
-    description:
-      "A yellow field with a narrow dark-red band along the foot, charged with the dark-red “Tree of " +
-      "Life” and, above it, “Three Suns.” Yellow is the space under the sun inhabited by the Chuvash " +
-      "people; dark red the Chuvash land. The Tree of Life expresses the people’s striving for " +
-      "spiritual harmony; the three eight-pointed suns mean “Were, Are, Will Be.” Adopted 1992.",
-    sources: [
-      { title: "Флаг Чувашии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%A7%D1%83%D0%B2%D0%B0%D1%88%D0%B8%D0%B8" },
-    ],
-  },
 
   "RU-DA": {
     description:
@@ -5755,38 +5488,8 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "RU-IN": {
-    description:
-      "A white field with a red solar sign at the centre and a green stripe along the top and bottom " +
-      "edges. White stands for the purity of the people’s thoughts and deeds; green for the fertility " +
-      "of the land and for Islam; red for their centuries-long struggle to survive on their ancestral " +
-      "land. The three curved rays of the sun turn with the Earth’s rotation, meaning eternal motion, " +
-      "creation and prosperity. Designed 1993, adopted 1999.",
-    sources: [
-      { title: "Флаг Ингушетии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D0%BD%D0%B3%D1%83%D1%88%D0%B5%D1%82%D0%B8%D0%B8" },
-    ],
-  },
 
-  "RU-IRK": {
-    description:
-      "Vertical bands of blue, white and blue, the white one bearing a black babr (Siberian tiger) " +
-      "carrying a red sable in its jaws within a wreath of green cedar. Blue stands for the region’s " +
-      "waters — Lake Baikal and the Angara; white for the purity of thought of its people and Siberian " +
-      "snows; the cedar for the region’s forest wealth; the red sable for courage. Adopted 1997.",
-    sources: [
-      { title: "Флаг Иркутской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
-    ],
-  },
 
-  "RU-IVA": {
-    description:
-      "A field split vertically red (hoist) and blue (fly), crossed low by three narrow silver stripes, " +
-      "with the region’s coat of arms at the centre. The colours and metal repeat those of the arms’ " +
-      "heraldic field. Adopted 1998.",
-    sources: [
-      { title: "Флаг Ивановской области — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
-    ],
-  },
 
   "RU-KAM": {
     description:
@@ -5799,27 +5502,7 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "RU-KB": {
-    description:
-      "Three equal bands of light blue, white and green, with a central roundel showing white Mount " +
-      "Elbrus over blue and green fields. Light blue stands for the boundless pure sky, rivers and " +
-      "waters (a colour revered by Turkic peoples such as the Balkars); white for peace, purity and " +
-      "Islam; green for fertility and beauty. Adopted 1994.",
-    sources: [
-      { title: "Флаг Кабардино-Балкарии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D0%B1%D0%B0%D1%80%D0%B4%D0%B8%D0%BD%D0%BE-%D0%91%D0%B0%D0%BB%D0%BA%D0%B0%D1%80%D0%B8%D0%B8" },
-    ],
-  },
 
-  "RU-KC": {
-    description:
-      "Three equal bands of light blue, green and red, the green one bearing a pale roundel with a sun " +
-      "rising behind mountains. Officially light blue stands for peace and calm aspiration; green for " +
-      "nature, fertility, youth and wisdom; red for the warmth and closeness between peoples. Adopted " +
-      "1994.",
-    sources: [
-      { title: "Флаг Карачаево-Черкесии — Википедия", url: "https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9A%D0%B0%D1%80%D0%B0%D1%87%D0%B0%D0%B5%D0%B2%D0%BE-%D0%A7%D0%B5%D1%80%D0%BA%D0%B5%D1%81%D0%B8%D0%B8" },
-    ],
-  },
 
   "RU-KDA": {
     description:
