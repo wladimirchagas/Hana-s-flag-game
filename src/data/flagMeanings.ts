@@ -7854,6 +7854,26 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Melilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Melilla" },
     ],
   },
+
+  "ES-B": {
+    description:
+      "A banner of the province’s arms: the red St George’s cross of the city of Barcelona combined " +
+      "with the four red bars of Aragon on gold, rendered as horizontal stripes. Established by royal " +
+      "ordinance in 1871 and approved by the provincial council in 1874.",
+    sources: [
+      { title: "Flag of the Province of Barcelona — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Province_of_Barcelona" },
+    ],
+  },
+
+  "ES-PM": {
+    description:
+      "Four red bars on gold (the Senyera of the Crown of Aragon) with a purple canton at the hoist " +
+      "bearing a white five-towered castle. The four bars mark the historic tie to the Crown of Aragon; " +
+      "the castle on purple derives from the flag of the medieval Kingdom of Mallorca. Adopted 1983.",
+    sources: [
+      { title: "Flag of the Balearic Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Balearic_Islands" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
