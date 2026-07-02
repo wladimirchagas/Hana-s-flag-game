@@ -6927,6 +6927,352 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Prague — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Prague" },
     ],
   },
+
+  "HR-01": {
+    description:
+      "Five horizontal stripes alternating green and white, with a central emblem showing the " +
+      "Manduševac spring (the historic well of Zagreb’s main square) together with the Croatian " +
+      "chequy shield, the marten of Slavonia and the leopard of Dalmatia; green and white lines at the " +
+      "lower hoist stand for the Sava and Kupa rivers.",
+    sources: [
+      { title: "Zastava Zagrebačke županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Zagreba%C4%8Dke_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-17": {
+    description:
+      "A golden band at the hoist (one third) and a blue field (two thirds), with the county’s coat of " +
+      "arms — the golden crown of King Zvonimir on blue — set in the gold. The crown is drawn from a " +
+      "relief in the baptistery of the Cathedral of St Domnius in Split and recalls medieval Croatian " +
+      "kingship.",
+    sources: [
+      { title: "Zastava Splitsko-dalmatinske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Splitsko-dalmatinske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-18": {
+    description:
+      "A blue-green field bearing the county’s coat of arms: a golden goat facing the hoist with red " +
+      "hooves and horns on a blue shield — the historic emblem of the Istrian peninsula.",
+    sources: [
+      { title: "Zastava Istarske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Istarske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-05": {
+    description:
+      "Five horizontal stripes alternating red and white, with the county’s coat of arms on the hoist " +
+      "half. The arms combine a crowned red eagle, gold stars over wavy silver-and-blue bands, a walled " +
+      "tower, and a central shield with a green hill, wheel and deer. The county’s historic arms were " +
+      "granted by Empress Maria Theresa in 1763.",
+    sources: [
+      { title: "Zastava Varaždinske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Vara%C5%BEdinske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-19": {
+    description:
+      "A horizontal bicolour of red over white with the county’s gold-bordered coat of arms at the " +
+      "centre, its own red-and-white division aligned to the flag’s. Adopted 1996.",
+    sources: [
+      { title: "Zastava Dubrovačko-neretvanske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Dubrova%C4%8Dko-neretvanske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-02": {
+    description:
+      "A horizontal bicolour of dark red over golden yellow, edged top and bottom with narrow gold " +
+      "stripes, and the county’s gold-bordered coat of arms at the centre. The article gives the design " +
+      "without assigning a separate meaning to each colour.",
+    sources: [
+      { title: "Zastava Krapinsko-zagorske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Krapinsko-zagorske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-03": {
+    description:
+      "A blue field with a thin red-and-white stripe along the top edge and the county’s coat of arms " +
+      "at the centre: a stork — for the Lonjsko Polje wetlands famed for its storks — and a downward " +
+      "sword standing for the people’s defensive resolve and readiness for peace.",
+    sources: [
+      { title: "Zastava Sisačko-moslavačke županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Sisa%C4%8Dko-moslava%C4%8Dke_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-04": {
+    description:
+      "A horizontal bicolour of dark red over golden yellow with the county’s coat of arms at the " +
+      "centre. The article gives the design without assigning a separate meaning to each colour.",
+    sources: [
+      { title: "Zastava Karlovačke županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Karlova%C4%8Dke_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-06": {
+    description:
+      "A red-and-blue flag bearing the county’s quartered coat of arms, edged in gold. The quarters " +
+      "represent its constituent regions: a rooster for Podravina and Đurđevac, a trefoil for Prigorje, " +
+      "a double cross for Križevci, and a double lily from the arms of Koprivnica.",
+    sources: [
+      { title: "Zastava Koprivničko-križevačke županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Koprivni%C4%8Dko-kri%C5%BEeva%C4%8Dke_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-08": {
+    description:
+      "A blue field with a narrow white stripe near the top and bottom edges and the county’s coat of " +
+      "arms at the centre. The arms combine twenty alternating red and silver squares, a fortified " +
+      "coastal town below green mountains, and a sailing ship flying the Croatian flag with a golden " +
+      "Frankopan star — evoking the county’s coast (Primorje) and highlands (Gorski Kotar).",
+    sources: [
+      { title: "Zastava Primorsko-goranske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Primorsko-goranske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-09": {
+    description:
+      "A white field with a blue stripe above and below the centre, bearing the county’s coat of arms: " +
+      "a golden Velebit degenia — a rare alpine flower endemic to the region — on a blue heart-shaped " +
+      "shield, standing for the area’s natural heritage.",
+    sources: [
+      { title: "Zastava Ličko-senjske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Li%C4%8Dko-senjske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-10": {
+    description:
+      "A blue-white-blue horizontal field with the county’s gold-bordered coat of arms at the centre: " +
+      "a marten running between two silver bands, a gold six-pointed star above and a gold anchor " +
+      "below, on red. The marten is the historic emblem of the Croatian lands; the anchor recalls the " +
+      "region’s riverine (Drava) heritage.",
+    sources: [
+      { title: "Zastava Virovitičko-podravske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Viroviti%C4%8Dko-podravske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-11": {
+    description:
+      "A horizontal field with green at the top and bottom quarters and yellow in the middle half, " +
+      "bearing the county’s coat of arms on the yellow. The article gives the design without assigning " +
+      "a separate meaning to each colour.",
+    sources: [
+      { title: "Zastava Požeško-slavonske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Po%C5%BEe%C5%A1ko-slavonske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-12": {
+    description:
+      "A blue-white-blue field crossed by a diagonal red-and-silver band for the River Sava, with the " +
+      "county’s coat of arms at the centre. The silver band is the Sava, a symbol of fertility and " +
+      "wealth; the running marten ties the region to Slavonia and Croatia; the five gold stars are " +
+      "historic Croatian symbols.",
+    sources: [
+      { title: "Zastava Brodsko-posavske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Brodsko-posavske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-13": {
+    description:
+      "A field divided by a wavy line, white above and blue below, with the county’s gold-bordered " +
+      "coat of arms at the centre: a green olive branch with gold fruit above (the region’s agriculture) " +
+      "and the white Church of the Holy Cross below (its historic and religious heritage).",
+    sources: [
+      { title: "Zastava Zadarske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Zadarske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-14": {
+    description:
+      "A white field with two blue bands running its length and the county’s coat of arms at the " +
+      "centre. The arms show two silver bands (the Drava and Danube rivers) on blue, a silver " +
+      "three-arched bridge with a tower, a gold cross, star and anchor, and a gold marten on red.",
+    sources: [
+      { title: "Zastava Osječko-baranjske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Osje%C4%8Dko-baranjske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-15": {
+    description:
+      "A blue field — for the sea — with two silver stripes along the edges for the River Krka, and the " +
+      "county’s coat of arms at the centre: a gold medieval Croatian royal crown and an Old-Croatian " +
+      "sword on a red shield.",
+    sources: [
+      { title: "Zastava Šibensko-kninske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_%C5%A0ibensko-kninske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-16": {
+    description:
+      "Longitudinal stripes of gold and white with a scalloped (dentilated) lower edge, and the " +
+      "county’s coat of arms at the centre: three silver bands for the Danube, Bosut and Sava rivers on " +
+      "blue, and a resting deer with a golden collar beside a Slavonian oak — the natural wealth of the " +
+      "region.",
+    sources: [
+      { title: "Zastava Vukovarsko-srijemske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Vukovarsko-srijemske_%C5%BEupanije" },
+    ],
+  },
+
+  "HR-20": {
+    description:
+      "A horizontal tricolour of red, white and blue with a gold six-pointed star centred on the blue " +
+      "band. The article gives the design without assigning a separate meaning to each colour.",
+    sources: [
+      { title: "Zastava Međimurske županije — Wikipedija", url: "https://hr.wikipedia.org/wiki/Zastava_Me%C4%91imurske_%C5%BEupanije" },
+    ],
+  },
+
+  "PL-12": {
+    description:
+      "Three horizontal stripes of white, gold and red, taken from the colours of the voivodeship’s " +
+      "coat of arms: white for the white eagle, gold for its crown, beak, talons and sash, and red for " +
+      "the shield’s field. Introduced 1999.",
+    sources: [
+      { title: "Flaga województwa małopolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_ma%C5%82opolskiego" },
+    ],
+  },
+
+  "PL-24": {
+    description:
+      "Three horizontal stripes of blue, yellow and blue, drawn from the colours of the voivodeship’s " +
+      "coat of arms (a gold eagle on blue). A ceremonial variant is a blue banner bearing the arms. " +
+      "Adopted 2001; 15 July is marked as Silesian Flag Day.",
+    sources: [
+      { title: "Flaga województwa śląskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%9Bl%C4%85skiego" },
+    ],
+  },
+
+  "PL-02": {
+    description:
+      "A gold field bearing the black Lower Silesian eagle at the centre. The black eagle recalls the " +
+      "great Silesian dukes Henry the Bearded and Henry the Pious. Adopted 2009, replacing a 2001 " +
+      "white-and-red striped design.",
+    sources: [
+      { title: "Flaga województwa dolnośląskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_dolno%C5%9Bl%C4%85skiego" },
+    ],
+  },
+
+  "PL-04": {
+    description:
+      "Three horizontal stripes of red, white and black. The article gives the design without assigning " +
+      "a separate meaning to each colour. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa kujawsko-pomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_kujawsko-pomorskiego" },
+    ],
+  },
+
+  "PL-06": {
+    description:
+      "Three horizontal stripes of silver, red and gold with the voivodeship’s coat of arms at the " +
+      "centre. The colours are those of the arms. Adopted 2004.",
+    sources: [
+      { title: "Flaga województwa lubelskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_lubelskiego" },
+    ],
+  },
+
+  "PL-08": {
+    description:
+      "A yellow band over a green band, separated by a narrow white-and-red stripe; the colours derive " +
+      "from the voivodeship’s heraldic emblem (a ceremonial variant bears the arms). Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa lubuskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_lubuskiego" },
+    ],
+  },
+
+  "PL-10": {
+    description:
+      "Five vertical stripes alternating red and gold (red at the edges and centre), the colours of the " +
+      "voivodeship’s arms. An official variant also bears the coat of arms. Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa łódzkiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%82%C3%B3dzkiego" },
+    ],
+  },
+
+  "PL-14": {
+    description:
+      "A red field with a white eagle with golden beak and talons at the hoist — the historic emblem of " +
+      "Mazovia. Adopted 2006, replacing a 2002 eagle design.",
+    sources: [
+      { title: "Flaga województwa mazowieckiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_mazowieckiego" },
+    ],
+  },
+
+  "PL-16": {
+    description:
+      "A broad yellow band over a narrower blue band (5:2), the colours of the voivodeship’s arms; the " +
+      "official version bears the coat of arms in the upper hoist. Adopted 2004.",
+    sources: [
+      { title: "Flaga województwa opolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_opolskiego" },
+    ],
+  },
+
+  "PL-18": {
+    description:
+      "Three vertical stripes — blue, white and blue — with a wide white centre bearing the " +
+      "voivodeship’s coat of arms. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa podkarpackiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_podkarpackiego" },
+    ],
+  },
+
+  "PL-20": {
+    description:
+      "Four equal horizontal stripes — white, red, yellow and blue — each drawn from the arms: white " +
+      "for the Eagle and the Pogoń (Pursuit); red for the shields; yellow for the eagle’s crown, beak " +
+      "and talons and the knight’s golden fittings; blue for the rider’s shield, saddle and horse-cloth. " +
+      "Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa podlaskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_podlaskiego" },
+    ],
+  },
+
+  "PL-22": {
+    description:
+      "A gold field bearing the black Pomeranian griffin with wings raised and red tongue. The griffin " +
+      "is the historic Pomeranian-Wendish emblem, here referencing a 16th-century fresco in the " +
+      "cathedral of Gdańsk-Oliwa. Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa pomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_pomorskiego" },
+    ],
+  },
+
+  "PL-26": {
+    description:
+      "A gold vertical stripe at the hoist and three horizontal stripes — blue, white and red — with " +
+      "the voivodeship’s coat of arms on the white. The gold is placed at the hoist because it appears " +
+      "least in the arms; all colours are drawn from the coat of arms. Adopted 2012.",
+    sources: [
+      { title: "Flaga województwa świętokrzyskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_%C5%9Bwi%C4%99tokrzyskiego" },
+    ],
+  },
+
+  "PL-28": {
+    description:
+      "A red swallow-tailed field with a white border on three sides, bearing the crowned head of the " +
+      "White Eagle with a gold beak. Adopted 2002.",
+    sources: [
+      { title: "Flaga województwa warmińsko-mazurskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_warmi%C5%84sko-mazurskiego" },
+    ],
+  },
+
+  "PL-30": {
+    description:
+      "A white trapezoid at the hoist and a red square at the fly bearing the white eagle of the " +
+      "voivodeship’s arms. The eagle echoes the majestic seal of King Przemysł II (crowned 1295), an " +
+      "emblem of the Piast dynasty. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa wielkopolskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_wielkopolskiego" },
+    ],
+  },
+
+  "PL-32": {
+    description:
+      "Three vertical stripes of white, red and white, the red one bearing the West-Pomeranian griffin " +
+      "from the voivodeship’s arms. Placing the emblem on the red follows Polish vexillological " +
+      "tradition. Adopted 2000.",
+    sources: [
+      { title: "Flaga województwa zachodniopomorskiego — Wikipedia", url: "https://pl.wikipedia.org/wiki/Flaga_wojew%C3%B3dztwa_zachodniopomorskiego" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
