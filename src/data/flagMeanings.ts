@@ -7456,6 +7456,143 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Sint Eustatius — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sint_Eustatius" },
     ],
   },
+
+  "BE-VLG": {
+    description:
+      "A yellow field with a black lion rampant with red claws and tongue — the “Flemish Lion.” It " +
+      "derives from the medieval arms of the Counts of Flanders (first seen on a 1163 seal) and became " +
+      "a symbol of Flemish identity and resistance, tied to the 1302 Battle of the Golden Spurs. " +
+      "Adopted 1973, confirmed 1985.",
+    sources: [
+      { title: "Flag of Flanders — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Flanders" },
+    ],
+  },
+
+  "BE-WAL": {
+    description:
+      "A yellow field with a red “bold rooster” (coq hardi), head raised and one leg lifted. Inspired " +
+      "by the Gallic rooster of Revolutionary France (many early Walloon activists shared its ideals) " +
+      "but given a distinct pose; originally a Walloon-movement emblem, now an apolitical symbol of " +
+      "regional identity. Created 1913, made official 1998.",
+    sources: [
+      { title: "Flag of Wallonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wallonia" },
+    ],
+  },
+
+  "BE-BRU": {
+    description:
+      "A blue field with a stylised yellow iris (Iris pseudacorus). The yellow iris symbolises Brussels: " +
+      "it grew in the marshes on which the city was founded, is said to have guided the Dukes of Brabant " +
+      "across flooded ground, and featured on the scepter of the Carolingian founders of the city. " +
+      "First adopted 1991; present stylised version 2015.",
+    sources: [
+      { title: "Flag of the Brussels-Capital Region — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Brussels-Capital_Region" },
+    ],
+  },
+
+  "BE-VAN": {
+    description:
+      "A field of 24 squares (red, white, yellow and blue) set diagonally. The colours are those of the " +
+      "province’s three main cities — Antwerp (red and white), Mechelen (yellow and red) and Turnhout " +
+      "(white and blue) — with Antwerp’s colours emphasised in the centre rows. Adopted 1996.",
+    sources: [
+      { title: "Vlag van Antwerpen (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Antwerpen_(provincie)" },
+    ],
+  },
+
+  "BE-VBR": {
+    description:
+      "A black field with a yellow lion with red tongue and claws and a central heart-shield of red " +
+      "with a white bar. The lion is the historic lion of the Duchy of Brabant, standing for strength, " +
+      "courage and royal dignity; the heart-shield carries the colours of the capital, Leuven. Adopted " +
+      "1995.",
+    sources: [
+      { title: "Vlag van Vlaams-Brabant — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Vlaams-Brabant" },
+    ],
+  },
+
+  "BE-VOV": {
+    description:
+      "A green field with four white horizontal stripes and a black lion with red tongue and claws. The " +
+      "green stands for the province’s environmental character; the four white stripes are its four " +
+      "major rivers (Scheldt, Leie, Dender and Durme); the black lion is the historic lion of the " +
+      "County of Flanders. Adopted 1998.",
+    sources: [
+      { title: "Vlag van Oost-Vlaanderen — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Oost-Vlaanderen" },
+    ],
+  },
+
+  "BE-VLI": {
+    description:
+      "A white field with a red double-tailed crowned lion holding a shield of ten yellow-and-red bars. " +
+      "The red lion is that of the medieval Duchy of Limburg (the second tail added by Walram III in " +
+      "1221 for his two territories); the barred shield is the historic County of Loon, which covered " +
+      "much of the province. Adopted 1996.",
+    sources: [
+      { title: "Vlag van Limburg (Belgische provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Limburg_(Belgische_provincie)" },
+    ],
+  },
+
+  "BE-VWV": {
+    description:
+      "A field quartered blue and yellow in twelve pieces with a red heart-shield across the centre. " +
+      "The colours derive from the province’s historic arms. Adopted 1997.",
+    sources: [
+      { title: "Vlag van West-Vlaanderen — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_West-Vlaanderen" },
+    ],
+  },
+
+  "BE-WBR": {
+    description:
+      "A black field with a gold Brabant lion with red tongue and claws facing the hoist, wearing a " +
+      "gold cap bearing two facing red Walloon roosters. The lion is the historic Duchy of Brabant and " +
+      "the former united province of Brabant; the two roosters mark the Walloon Region in which the " +
+      "province lies. Adopted 1995 at the split of Brabant.",
+    sources: [
+      { title: "Vlag van Waals-Brabant — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Waals-Brabant" },
+    ],
+  },
+
+  "BE-WHT": {
+    description:
+      "A yellow field quartered with lions: black in the upper hoist and lower fly, red in the upper " +
+      "fly and lower hoist. Drawn from the province’s arms, it combines the black lion of the County of " +
+      "Hainaut with the red lion of the County of Holland, whose rulers were once shared. Used since " +
+      "1815 as the province’s de-facto flag (never formally adopted).",
+    sources: [
+      { title: "Vlag van Henegouwen — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Henegouwen" },
+    ],
+  },
+
+  "BE-WLG": {
+    description:
+      "A banner of the province’s arms in five parts: the gold perron of Liège on red (the medieval " +
+      "symbol of justice of the Prince-Bishopric), the red-white-red of Bouillon, the red-and-yellow " +
+      "bars of Loon, three green lions for Verviers, and three horns for the County of Horn. Used as the " +
+      "province’s de-facto flag.",
+    sources: [
+      { title: "Vlag van Luik (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Luik_(provincie)" },
+    ],
+  },
+
+  "BE-WLX": {
+    description:
+      "Three equal horizontal stripes of red, white and light blue with the provincial coat of arms at " +
+      "the centre. The colours are taken from the flag of the Grand Duchy of Luxembourg, from which the " +
+      "province was separated in 1839. Adopted 1955.",
+    sources: [
+      { title: "Vlag van Luxemburg (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Luxemburg_(provincie)" },
+    ],
+  },
+
+  "BE-WNA": {
+    description:
+      "Two vertical bands of black and red, taken from the province’s arms: black for the Namur lion " +
+      "and red for the diagonal bar across its shield. Adopted 1953.",
+    sources: [
+      { title: "Vlag van Namen (provincie) — Wikipedia", url: "https://nl.wikipedia.org/wiki/Vlag_van_Namen_(provincie)" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
