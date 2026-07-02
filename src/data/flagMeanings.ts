@@ -4984,6 +4984,130 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "JP-27": {
+    description:
+      "A blue field with a white emblem based on the letter “O,” derived from Toyotomi Hideyoshi’s " +
+      "gourd-shaped battle standard; its branching form expresses hope, prosperity and harmony. " +
+      "Adopted in 1968 (blue field from 1984).",
+    sources: [
+      { title: "大阪府旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%97%97" },
+    ],
+  },
+
+  "JP-26": {
+    description:
+      "A reddish-purple field with a stylised character “京” (Kyō) formed as a human figure among six " +
+      "petals, representing the unity and strength of the prefecture’s people. Adopted in 1976.",
+    sources: [
+      { title: "京都府旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD%E5%BA%9C%E6%97%97" },
+    ],
+  },
+
+  "JP-23": {
+    description:
+      "A crimson field with a white emblem stylising the kana あ・い・ち (a-i-chi) as rising, sun-lit " +
+      "wave crests, expressing the Pacific-facing prefecture’s drive toward international development. " +
+      "Adopted in 1950.",
+    sources: [
+      { title: "愛知県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-14": {
+    description:
+      "A red-and-white flag whose white central emblem is the kanji “神” (kami) of Kanagawa rendered " +
+      "in a symmetrical, stylised form. Adopted in 1948.",
+    sources: [
+      { title: "神奈川県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-20": {
+    description:
+      "An orange field with a white emblem — the katakana “ナ” (na) drawn as a bird flying over a " +
+      "mountain lake. The orange stands for sunlight on the land and the white for the snow of “the " +
+      "roof of Japan” and the honest character of its people. Adopted in 1967.",
+    sources: [
+      { title: "長野県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%95%B7%E9%87%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-02": {
+    description:
+      "A white field with a deep-green emblem shaped like the outline of the prefecture. The white " +
+      "stands for an infinitely expanding universe and the green for ceaseless hope and progress. " +
+      "Adopted in 1961.",
+    sources: [
+      { title: "青森県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E9%9D%92%E6%A3%AE%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-03": {
+    description:
+      "A greenish-grey field with a white stylised kanji “岩” (iwa, “rock”), expressing the " +
+      "prefecture’s progress toward a prosperous, comfortable homeland. Adopted in 1965.",
+    sources: [
+      { title: "岩手県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%89%8B%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-04": {
+    description:
+      "A blue-green field with a white emblem stylising the kana “み” (mi) from the leaf of the " +
+      "Japanese bush clover, the prefectural flower; its three leaves stand for eternal development, " +
+      "the people’s harmony and love of homeland. Adopted in 1966.",
+    sources: [
+      { title: "宮城県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%9F%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-05": {
+    description:
+      "A white field with a reddish-brown katakana “ア” (a), its dynamic form expressing the " +
+      "prefecture’s leap forward and development. Adopted in 1959.",
+    sources: [
+      { title: "秋田県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A7%8B%E7%94%B0%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-06": {
+    description:
+      "A blue field with a white emblem of three peaks, standing for the kanji “山” (mountain) and the " +
+      "Mogami River; the white evokes the snow and frost-flowers of Mount Zao and the honest " +
+      "character of residents. Adopted in 1971.",
+    sources: [
+      { title: "山形県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%BD%A2%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-07": {
+    description:
+      "An orange-red field with a white circular emblem stylising the kana “ふ” (fu), representing " +
+      "civic harmony and unity and the prefecture’s progress (its shape also evoking a peach). " +
+      "Adopted in 1968.",
+    sources: [
+      { title: "福島県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B3%B6%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-08": {
+    description:
+      "A blue field with a white spiral emblem stylising a rosebud, the prefectural flower, expressing " +
+      "advancement, creativity, dynamism and development. Adopted in 1991.",
+    sources: [
+      { title: "茨城県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E8%8C%A8%E5%9F%8E%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
+  "JP-09": {
+    description:
+      "A yellow-green field with a white emblem stylising the kanji “栃” with an archaic “木” (tree) " +
+      "radical, expressing dynamic, energetic advancement. Adopted in 1964.",
+    sources: [
+      { title: "栃木県旗 — Wikipedia (Japanese)", url: "https://ja.wikipedia.org/wiki/%E6%A0%83%E6%9C%A8%E7%9C%8C%E6%97%97" },
+    ],
+  },
+
   "IT-82": {
     description:
       "The Trinacria: a triskeles of three bent legs — for Sicily’s three capes — around the winged " +
