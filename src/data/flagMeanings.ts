@@ -9337,6 +9337,57 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Västmanland — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4stmanland" },
     ],
   },
+
+  "SE-E": {
+    description:
+      "The county arms as a banner: on a red field a golden griffin with dragon’s wings, rampant " +
+      "between four silver roses — the arms of Östergötland, granted in 1884 from two 16th-century " +
+      "seals.",
+    sources: [
+      { title: "Östergötland — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%96sterg%C3%B6tland" },
+    ],
+  },
+
+  "SE-F": {
+    description:
+      "The county arms as a banner, combining Sweden’s three golden crowns (the lesser state arms) with " +
+      "the arms of the town of Jönköping — a silver three-towered castle on red rising from wavy blue " +
+      "water — formalised for Jönköping County in 1942.",
+    sources: [
+      { title: "Jönköping County — Wikipedia", url: "https://en.wikipedia.org/wiki/J%C3%B6nk%C3%B6ping_County" },
+    ],
+  },
+
+  "SE-G": {
+    description:
+      "The county arms as a banner: on a gold field over a green mount the red Småland lion holding a " +
+      "black crossbow — the martial emblem of Småland, the province Kronoberg County lies in, granted " +
+      "in 1569.",
+    sources: [
+      { title: "Småland — Wikipedia", url: "https://en.wikipedia.org/wiki/Sm%C3%A5land" },
+    ],
+  },
+
+  "SE-H": {
+    description:
+      "The county arms as a banner, quartering the arms of two provinces: the red Småland lion holding " +
+      "a crossbow on gold, and a golden red-antlered hart on blue for Öland — the island that was a " +
+      "royal game park.",
+    sources: [
+      { title: "Småland — Wikipedia", url: "https://en.wikipedia.org/wiki/Sm%C3%A5land" },
+      { title: "Öland — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%96land" },
+    ],
+  },
+
+  "SE-K": {
+    description:
+      "The county arms as a banner: on a blue field a golden uprooted oak tree (for Blekinge’s oak " +
+      "forests) charged with Sweden’s three crowns up the trunk — marking the former Danish province’s " +
+      "passing to Sweden in 1658; arms granted in 1660.",
+    sources: [
+      { title: "Blekinge — Wikipedia", url: "https://en.wikipedia.org/wiki/Blekinge" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
