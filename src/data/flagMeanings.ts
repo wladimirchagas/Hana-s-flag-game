@@ -9287,6 +9287,56 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Ångermanland — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%85ngermanland" },
     ],
   },
+
+  "SE-C": {
+    description:
+      "The county arms as a banner: on a red field a golden royal orb (riksäpple) gemmed and topped " +
+      "with a silver cross — the arms of Uppland, the province Uppsala County covers. The orb is the " +
+      "globus cruciger, an emblem of sovereignty, marking Uppland’s historic rank as a duchy.",
+    sources: [
+      { title: "Uppland — Wikipedia", url: "https://en.wikipedia.org/wiki/Uppland" },
+    ],
+  },
+
+  "SE-D": {
+    description:
+      "The county arms as a banner: on a gold field a black griffin rampant with red beak, tongue and " +
+      "claws — the arms of Södermanland, granted in 1560 and given to Södermanland County in 1940.",
+    sources: [
+      { title: "Södermanland — Wikipedia", url: "https://en.wikipedia.org/wiki/S%C3%B6dermanland" },
+    ],
+  },
+
+  "SE-S": {
+    description:
+      "The county arms as a banner: on a silver field a blue eagle displayed with red beak and claws " +
+      "— the arms of Värmland, the province Värmland County covers.",
+    sources: [
+      { title: "Värmland — Wikipedia (Swedish)", url: "https://sv.wikipedia.org/wiki/V%C3%A4rmland" },
+    ],
+  },
+
+  "SE-T": {
+    description:
+      "The county arms as a banner, combining the arms of three provinces: red with golden crossed " +
+      "arrows between silver roses for Närke (the peasants’ favoured weapon), a blue eagle on silver " +
+      "for Värmland, and silver with blue fire-mountains flaming red for Västmanland’s mines.",
+    sources: [
+      { title: "Närke — Wikipedia", url: "https://en.wikipedia.org/wiki/N%C3%A4rke" },
+      { title: "Värmland — Wikipedia (Swedish)", url: "https://sv.wikipedia.org/wiki/V%C3%A4rmland" },
+      { title: "Västmanland — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4stmanland" },
+    ],
+  },
+
+  "SE-U": {
+    description:
+      "The county arms as a banner: on a silver field three blue mounts each issuing red flames — the " +
+      "‘fire-mountains’ of Västmanland, standing for its mining districts (Sala, Lindesberg and " +
+      "Norberg/Skinnskatteberg).",
+    sources: [
+      { title: "Västmanland — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4stmanland" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
