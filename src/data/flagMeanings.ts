@@ -9863,6 +9863,85 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Western Cape — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Western_Cape" },
     ],
   },
+
+  "LI-11": {
+    description:
+      "The commune arms on the flag: a quartered shield with a red princely hat (Fürstenhut) on silver " +
+      "for Vaduz’s role as the prince’s residence and capital, and the silver Montfort church banner on " +
+      "red — inherited from the Werdenberg counts — in the other two quarters.",
+    sources: [
+      { title: "Vaduz — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Vaduz" },
+    ],
+  },
+
+  "LI-07": {
+    description:
+      "The commune arms on the flag: a shield split blue and red (Liechtenstein’s colours) by a silver " +
+      "pale, a golden wheat ear on the blue for Schaan’s farming and a silver wavy bar on the red for " +
+      "the Rhine along its western edge.",
+    sources: [
+      { title: "Schaan — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Schaan" },
+    ],
+  },
+
+  "LI-09": {
+    description:
+      "The commune arms on the flag: on a blue field three silver scythe blades one above another — the " +
+      "arms of the Edlen von Trisun, the oldest local noble family (first recorded 1273), the scythes " +
+      "also recalling Triesen’s farming heritage.",
+    sources: [
+      { title: "Triesen — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Triesen" },
+    ],
+  },
+
+  "LI-10": {
+    description:
+      "The commune arms on the flag: on a blue field a golden bell over a golden three-peaked mountain. " +
+      "The bell is the Theodul bell of the chapel at Masescha, built soon after the Walser settlers " +
+      "arrived around 1300, and the peaks mark Triesenberg as the principality’s mountain commune.",
+    sources: [
+      { title: "Triesenberg — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Triesenberg" },
+    ],
+  },
+
+  "LI-04": {
+    description:
+      "The commune arms on the flag: a shield diagonally divided black and gold, bearing a golden key " +
+      "and sword crossed in a saltire — the key of Saint Peter and the sword of Saint Paul, the parish " +
+      "patrons of Mauren.",
+    sources: [
+      { title: "Mauren (Liechtenstein) — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Mauren_(Liechtenstein)" },
+    ],
+  },
+
+  "LI-06": {
+    description:
+      "The commune arms on the flag: on a red field a blue silver-edged wavy bar for the Rhine, with a " +
+      "golden stalked ear of grain near the base for the grain fields of the Ruggeller Riet wetland — " +
+      "Ruggell’s farming heritage.",
+    sources: [
+      { title: "Ruggell — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Ruggell" },
+    ],
+  },
+
+  "LI-05": {
+    description:
+      "The commune arms on the flag: a shield divided diagonally white and green with a six-pointed " +
+      "golden star — the arms of Planken, the smallest of Liechtenstein’s communes.",
+    sources: [
+      { title: "Planken — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Planken" },
+    ],
+  },
+
+  "LI-08": {
+    description:
+      "The commune arms on the flag: a field divided three times black and gold with a crenellated " +
+      "lower edge — the arms of the medieval lords of Schellenberg (recorded in the 1340 Zürich " +
+      "armorial), whose seat was on the Eschnerberg.",
+    sources: [
+      { title: "Schellenberg — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Schellenberg" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
