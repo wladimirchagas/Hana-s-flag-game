@@ -228,3 +228,7 @@ ZA-EC ZA-FS ZA-LP ZA-MP ZA-NC ZA-NW
 # Denmark: the 5 administrative regions (2007) use modern corporate-style logos ("Region X"),
 # not heraldic flags — no sourceable per-element symbolism. Omitted rather than fabricate.
 DK-81 DK-82 DK-83 DK-84 DK-85
+
+# Uzbekistan: Karakalpakstan (UZ-QR) flag is documented (sourced). Tashkent (UZ-TK) flag is
+# image-only on en/ru.wikipedia — omitted.
+UZ-TK
