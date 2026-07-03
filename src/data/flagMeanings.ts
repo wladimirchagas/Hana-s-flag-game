@@ -8679,6 +8679,72 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Lambang Kalimantan Tengah — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Kalimantan_Tengah" },
     ],
   },
+
+  "ID-KI": {
+    description:
+      "A flag bearing the five-sided East Kalimantan emblem: a star for belief in God over a hexagonal " +
+      "talawang shield for peace, a mandau sword and a sumpit blowpipe for the people’s struggle, and " +
+      "drops of oil and dammar resin for the province’s abundant natural wealth. Its Banjar motto " +
+      "“Ruhui Rahayu” means truly peaceful and harmonious.",
+    sources: [
+      { title: "Lambang Kalimantan Timur — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Kalimantan_Timur" },
+    ],
+  },
+
+  "ID-KR": {
+    description:
+      "A flag bearing the Riau Islands emblem: a gold star for devotion to God, a yellow boat with " +
+      "white sail for the islanders’ maritime life, a serindit-headed seven-curve keris for courage, " +
+      "and rice and cotton for prosperity. Its 32 chain links mark the 32nd province, and the counts " +
+      "of grains and waves encode 2002 and 1 July 2004. Motto: “Berpancang Amanah, Bersauh Marwah.”",
+    sources: [
+      { title: "Lambang Kepulauan Riau — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Kepulauan_Riau" },
+    ],
+  },
+
+  "ID-GO": {
+    description:
+      "A flag bearing the heart-shaped Gorontalo emblem for loyalty and protection: a star for high " +
+      "ideals, an open book for learning, a coconut tree for steady progress, the wings of the endemic " +
+      "maleo bird, and rice and cotton for welfare. The 16 maleo feathers and the chain and grain " +
+      "counts encode 16 February 2000, when the province was formed.",
+    sources: [
+      { title: "Lambang Gorontalo — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Gorontalo" },
+    ],
+  },
+
+  "ID-BT": {
+    description:
+      "A flag bearing the Banten emblem: a star for belief in God over the tower of the Great Mosque " +
+      "of Banten and the Kaibon gate — the sultanate’s gateway to global trade — above black mountains, " +
+      "a blue sea and the endemic Javan rhinoceros for determination in justice, framed by 17 rice " +
+      "stalks and 8 cotton blooms for 1945. Motto: “Iman Taqwa” (faith and piety).",
+    sources: [
+      { title: "Lambang Banten — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Banten" },
+    ],
+  },
+
+  "ID-SA": {
+    description:
+      "A flag bearing the five-sided North Sulawesi emblem (the pentagon and five coconuts for " +
+      "Pancasila): coconut, clove, nutmeg, rice and corn for the province’s mainstay crops, with the " +
+      "counts of kernels, fronds and grains encoding both 23 September 1964, when the province was " +
+      "formed, and 17 August 1945, Indonesia’s independence.",
+    sources: [
+      { title: "Lambang Sulawesi Utara — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sulawesi_Utara" },
+    ],
+  },
+
+  "ID-SG": {
+    description:
+      "A flag bearing the five-sided Southeast Sulawesi emblem (the pentagon for Pancasila): the head " +
+      "of the endemic anoa for perseverance and agility above a shield in four colours for the founding " +
+      "regions — green Kendari, brown Kolaka nickel, yellow Muna teak and black Buton asphalt — with " +
+      "rice, cotton and a 27-link chain encoding 27 April 1964 and 17 August 1945.",
+    sources: [
+      { title: "Lambang Sulawesi Tenggara — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sulawesi_Tenggara" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
