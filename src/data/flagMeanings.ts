@@ -9760,6 +9760,16 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Oslo — Wikipedia", url: "https://en.wikipedia.org/wiki/Oslo" },
     ],
   },
+
+  "LR-MO": {
+    description:
+      "The county flag: a blue upper half for Montserrado being Liberia’s first county and a red lower " +
+      "half for the blood shed in the wars between the settlers and native peoples, with a central " +
+      "circle of trees for farming and the soil, and the Liberian flag in the canton.",
+    sources: [
+      { title: "Montserrado County — Wikipedia", url: "https://en.wikipedia.org/wiki/Montserrado_County" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
