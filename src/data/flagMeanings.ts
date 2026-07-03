@@ -9822,6 +9822,26 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Герб Могилёвской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%91%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
     ],
   },
+
+  "BY-MI": {
+    description:
+      "The region arms on the flag: on a gold field three blue wavy bars for the region’s many rivers " +
+      "and lakes, with the arms of the city of Minsk in the upper corner, beneath a golden crown. The " +
+      "design revives elements of Minsk city’s 1591 arms and the 1878 governorate arms.",
+    sources: [
+      { title: "Герб Минской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "BY-HM": {
+    description:
+      "The city arms on the flag: the Ascension of the Virgin Mary — Mary standing on a silver cloud " +
+      "with hands raised in blessing, flanked by two kneeling angels and cherubim with golden haloes. " +
+      "The arms were granted to Minsk with its Magdeburg rights by King Sigismund III Vasa in 1591.",
+    sources: [
+      { title: "Герб Минска — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
