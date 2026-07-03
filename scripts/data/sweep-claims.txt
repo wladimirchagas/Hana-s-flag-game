@@ -53,6 +53,8 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
+NG  claude  wall         # Nigeria — state flags image-only (en.wikipedia)
+ME  claude  wall         # Montenegro — municipal arms image-only (en + sr.wikipedia)
 FR  claude  done         # France — all 97 departments + overseas collectivities sourced (Armorial/Commons)
 MU  claude  wall         # Mauritius — Rodrigues/Port Louis flags image-only (en.wikipedia)
 TT  claude  wall         # Trinidad & Tobago — regional corp flags image-only (en.wikipedia)
