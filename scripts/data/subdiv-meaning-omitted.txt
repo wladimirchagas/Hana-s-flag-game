@@ -224,3 +224,7 @@ LR-MY LR-SI LR-NI LR-GB LR-CM LR-LO LR-GG LR-BM LR-MG LR-RI LR-GK
 # the other six show the arms as an image with only a motto, no per-element symbolism — omitted
 # rather than fabricated.
 ZA-EC ZA-FS ZA-LP ZA-MP ZA-NC ZA-NW
+
+# Denmark: the 5 administrative regions (2007) use modern corporate-style logos ("Region X"),
+# not heraldic flags — no sourceable per-element symbolism. Omitted rather than fabricate.
+DK-81 DK-82 DK-83 DK-84 DK-85

@@ -53,6 +53,10 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
+SB  claude  wall         # Solomon Islands — provincial flags image-only (en.wikipedia)
+CR  claude  wall         # Costa Rica — province flags image-only (es.wikipedia)
+CN  claude  done         # China — Hong Kong + Macau SAR flags sourced (en.wikipedia)
+DK  claude  omitted      # Denmark — 5 regions use modern logos, no symbolism (omitted)
 AE  claude  done         # UAE — 7 emirate flags sourced (en.wikipedia Flag of X / Trucial States)
 SM  claude  done         # San Marino — 9 castelli sourced (it.wikipedia Stemma + national arms)
 LI  claude  done         # Liechtenstein — 8 remaining communes sourced (de.wikipedia Wappen)
