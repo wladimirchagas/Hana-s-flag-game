@@ -11132,6 +11132,87 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Saint Martin (France) — Wikipedia", url: "https://en.wikipedia.org/wiki/Saint_Martin_(France)" },
     ],
   },
+
+  "IT-AG": {
+    description:
+      "The provincial arms (gonfalone): a shield of three parts for its historic towns — Agrigento " +
+      "(three giants bearing a triple-towered castle crowned by a consecrated Host for the faith), " +
+      "Sciacca (an armoured knight riding up to a fortress beneath a radiant sun), and Bivona (a river " +
+      "crab on a green field under sky and moon). Recognised by the Kingdom of Italy in 1938.",
+    sources: [
+      { title: "Provincia di Agrigento — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Agrigento" },
+    ],
+  },
+
+  "IT-AL": {
+    description:
+      "The provincial arms (gonfalone): a shield combining the arms of the province’s chief towns — " +
+      "Asti, Novi, Tortona, Acqui and Casale — around the central arms of Alessandria itself (silver " +
+      "with a red cross); composed from the 1912 royal decree.",
+    sources: [
+      { title: "Provincia di Alessandria — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Alessandria" },
+    ],
+  },
+
+  "IT-AN": {
+    description:
+      "The provincial arms (gonfalone): on blue a bent flesh-coloured arm holding a sprig of " +
+      "strawberry-tree (corbezzolo) with two golden berries — a canting emblem, the plant of Monte " +
+      "Conero whose Greek name kómaros gives Ancona its association.",
+    sources: [
+      { title: "Provincia di Ancona — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Ancona" },
+    ],
+  },
+
+  "IT-AR": {
+    description:
+      "The provincial arms (gonfalone): over all a black horse on silver for the city of Arezzo, on a " +
+      "quartered field showing the rivers Arno and Tiber as old men with oars, Monte Falterona, and the " +
+      "white ox of the Val di Chiana. Motto: “Intra Tevere et Arno” (between the Tiber and the Arno).",
+    sources: [
+      { title: "Provincia di Arezzo — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Arezzo" },
+    ],
+  },
+
+  "IT-AP": {
+    description:
+      "The provincial arms (gonfalone): a quartered shield with towered castles, an imperial eagle and " +
+      "a red cross, and the woodpecker (picchio) of the ancient Piceni — the bird sacred to Mars that, " +
+      "by legend, led the Piceni people into the valley of the Tronto.",
+    sources: [
+      { title: "Provincia di Ascoli Piceno — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Ascoli_Piceno" },
+    ],
+  },
+
+  "IT-AQ": {
+    description:
+      "The provincial arms (gonfalone): on blue a silver eagle with lowered wings, gold-crowned in the " +
+      "antique style, standing on the two outer peaks of a golden three-peaked mountain. The eagle is a " +
+      "canting emblem for L’Aquila (‘the eagle’) and the peaks the Apennines; the arms come from the old " +
+      "province of Abruzzo Ulteriore II.",
+    sources: [
+      { title: "Provincia dell'Aquila — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_dell%27Aquila" },
+    ],
+  },
+
+  "IT-BG": {
+    description:
+      "The provincial arms (gonfalone): a red-and-gold party shield with a central inescutcheon bearing " +
+      "a black eagle displayed on gold (for imperial authority) and a running golden stag on red (for " +
+      "the province’s land), beneath a marquis’s crown.",
+    sources: [
+      { title: "Provincia di Bergamo — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Bergamo" },
+    ],
+  },
+
+  "IT-AV": {
+    description:
+      "The provincial arms (gonfalone): per fess, a golden gemmed crown on red above a silver field — " +
+      "the arms of the Province of Avellino, recognised in 1938.",
+    sources: [
+      { title: "Provincia di Avellino — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Avellino" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

@@ -53,6 +53,7 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
+IT  claude  in-progress  # Italy — re-sourcing 81 provinces wrongly omitted by #401 (it.wikipedia Stemma)
 PE  claude  omitted      # image-only wall — all codes logged omitted (rule 6)
 PG  claude  omitted      # image-only wall — all codes logged omitted (rule 6)
 TW  claude  omitted      # image-only wall — all codes logged omitted (rule 6)
