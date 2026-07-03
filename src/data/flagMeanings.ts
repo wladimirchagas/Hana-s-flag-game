@@ -9590,6 +9590,56 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Province of Karelia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Province_of_Karelia" },
     ],
   },
+
+  "FI-11": {
+    description:
+      "The regional arms as a banner: on a gold field a red fur crown (lakio). The fur crown recalls " +
+      "Pirkanmaa’s medieval fur trade — the wealth of the pirkkalaiset traders — while gold for " +
+      "Satakunta and red for Häme mark the two historic provinces the region grew from.",
+    sources: [
+      { title: "Pirkanmaan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Pirkanmaan_vaakuna" },
+    ],
+  },
+
+  "FI-10": {
+    description:
+      "The regional arms as a banner: on a red field a wild man (villimies) in natural colour bearing a " +
+      "golden club on his shoulder, with green garlands at his brow and waist — the ‘wild north’ figure " +
+      "first used on Charles IX’s coins in 1606, standardised as Lapland’s arms in 1963.",
+    sources: [
+      { title: "Lapin maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Lapin_maakunnan_vaakuna" },
+    ],
+  },
+
+  "FI-09": {
+    description:
+      "The regional arms as a banner: a divided shield with a leaping silver salmon on blue above and a " +
+      "blue fishing net on silver below. Both honour the Kymijoki river that runs through Kymenlaakso — " +
+      "long famous as a salmon river — the design drawn from the old seal of the Kymi hundred.",
+    sources: [
+      { title: "Kymenlaakson vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Kymenlaakson_vaakuna" },
+    ],
+  },
+
+  "FI-05": {
+    description:
+      "The regional arms as a banner: on a gold field a green bar with six points along its top edge " +
+      "and wavy points below — the points standing for Kainuu’s vast forests and the wavy edge for its " +
+      "waterways, together recalling a history of forestry and log-floating.",
+    sources: [
+      { title: "Kainuun vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Kainuun_vaakuna" },
+    ],
+  },
+
+  "FI-12": {
+    description:
+      "The regional arms as a banner: on a red field the golden Vasa sheaf of arrows below a gold chief " +
+      "bearing four running red martens. The Vasa sheaf comes from the city of Vaasa and the royal " +
+      "house of Vasa; the martens recall Ostrobothnia’s historic 1576 arms.",
+    sources: [
+      { title: "Pohjanmaan maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Pohjanmaan_maakunnan_vaakuna" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
