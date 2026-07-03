@@ -9770,6 +9770,58 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Montserrado County — Wikipedia", url: "https://en.wikipedia.org/wiki/Montserrado_County" },
     ],
   },
+
+  "BY-BR": {
+    description:
+      "The region arms on the flag: a shield of blue over red topped by a fortress wall, with a golden " +
+      "bison (żubr). The bison — Belarus’s largest animal, native to the Białowieża Forest — stands for " +
+      "the region’s wealth, strength and constancy; the wall recalls the 13th-century Kamyenyets Tower " +
+      "and Brest’s heroic past, and red is courage.",
+    sources: [
+      { title: "Герб Брестской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%91%D1%80%D0%B5%D1%81%D1%82%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "BY-HO": {
+    description:
+      "The region arms on the flag: a green shield split into nine by a silver cross, with a small blue " +
+      "inescutcheon bearing Gomel’s golden reclining lynx. The cross’s arms carry the old emblems of the " +
+      "region’s historic towns — Turaŭ’s archer, Rahačoŭ’s horn, Mazyr’s eagle and Rechytsa’s horseman — " +
+      "the nine fields standing for the region’s variety.",
+    sources: [
+      { title: "Герб Гомельской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "BY-HR": {
+    description:
+      "The region arms on the flag: on a red field a golden aurochs/bison (zubr) beneath a golden mural " +
+      "crown, framed by oak branches and a blue St Andrew’s ribbon. The arms revive the 1878 arms of the " +
+      "Grodno Governorate; the bison stands for the region’s strength and wildlife.",
+    sources: [
+      { title: "Герб Гродненской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "BY-VI": {
+    description:
+      "The region arms on the flag: on a red field the silver mounted knight ‘Pahonia’ (the Pursuit) " +
+      "with a raised sword, his shield bearing the golden six-pointed Cross of Saint Euphrosyne of " +
+      "Polotsk. The rider descends from the arms of the old Vitebsk Voivodeship.",
+    sources: [
+      { title: "Герб Витебской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
+
+  "BY-MA": {
+    description:
+      "The region arms on the flag: on a gold field a blue oval with the Mahilioŭ-Bratsk icon of the " +
+      "Mother of God (for divine protection of the land), over three green hills bearing three red " +
+      "wheat ears whose 21 grains stand for the oblast’s 21 districts.",
+    sources: [
+      { title: "Герб Могилёвской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%91%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
