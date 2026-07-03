@@ -53,6 +53,10 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
+MU  claude  wall         # Mauritius — Rodrigues/Port Louis flags image-only (en.wikipedia)
+TT  claude  wall         # Trinidad & Tobago — regional corp flags image-only (en.wikipedia)
+GL  claude  wall         # Greenland — municipal arms image-only (en.wikipedia)
+UZ  claude  partial      # Uzbekistan — Karakalpakstan sourced; Tashkent omitted (image-only)
 SB  claude  wall         # Solomon Islands — provincial flags image-only (en.wikipedia)
 CR  claude  wall         # Costa Rica — province flags image-only (es.wikipedia)
 CN  claude  done         # China — Hong Kong + Macau SAR flags sourced (en.wikipedia)

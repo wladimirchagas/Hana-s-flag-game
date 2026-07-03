@@ -10122,6 +10122,17 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     ],
   },
+
+  "UZ-QR": {
+    description:
+      "The republic flag: blue, gold and green stripes edged with red, and on the blue a white crescent " +
+      "with five stars. Blue is water and sky, gold the Karakalpak people and their deserts, green " +
+      "nature and renewal; the crescent and stars are for Islam, the five stars for Karakalpakstan’s " +
+      "five oldest cities. Adopted 1992.",
+    sources: [
+      { title: "Flag of Karakalpakstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Karakalpakstan" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
