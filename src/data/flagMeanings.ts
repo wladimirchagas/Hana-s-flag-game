@@ -9690,6 +9690,36 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Päijät-Hämeen maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/P%C3%A4ij%C3%A4t-H%C3%A4meen_maakunnan_vaakuna" },
     ],
   },
+
+  "FI-07": {
+    description:
+      "The regional arms as a banner: on a blue field a silver marten with gold claws looking back, " +
+      "with five silver cross-nails (three above, two below). The marten comes from old Ostrobothnia’s " +
+      "1562 arms; the five nails stand for the region’s five original parishes and its craftsmanship.",
+    sources: [
+      { title: "Keski-Pohjanmaan maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Keski-Pohjanmaan_maakunnan_vaakuna" },
+    ],
+  },
+
+  "FI-08": {
+    description:
+      "The regional arms as a banner: on a silver field a black capercaillie (wood grouse) with red " +
+      "markings — Central Finland’s provincial bird since 1985; its black, silver and red are the old " +
+      "colours of the region’s student association.",
+    sources: [
+      { title: "Keski-Suomen maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Keski-Suomen_maakunnan_vaakuna" },
+    ],
+  },
+
+  "FI-14": {
+    description:
+      "The regional arms as a banner: on a blue field six running silver martens with black tail-tips, " +
+      "set 2:2:2 — the fur animal that made Ostrobothnia’s medieval wealth. The six-marten design is the " +
+      "crownless historic Ostrobothnia arms, adopted by Northern Ostrobothnia in 1997.",
+    sources: [
+      { title: "Pohjois-Pohjanmaan maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Pohjois-Pohjanmaan_maakunnan_vaakuna" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
