@@ -9388,6 +9388,64 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Blekinge — Wikipedia", url: "https://en.wikipedia.org/wiki/Blekinge" },
     ],
   },
+
+  "SE-N": {
+    description:
+      "The county arms as a banner: on a blue field a silver lion rampant with red tongue and claws — " +
+      "the arms of Halland, created in 1660 after the province passed to Sweden, echoing the lion of " +
+      "the 14th-century duke Bengt Algotsson.",
+    sources: [
+      { title: "Halland — Wikipedia", url: "https://en.wikipedia.org/wiki/Halland" },
+    ],
+  },
+
+  "SE-X": {
+    description:
+      "The county arms as a banner, quartering the arms of two provinces: a red elk on silver strewn " +
+      "with blue roundels for Gästrikland, and a golden goat on black for Hälsingland — the goat " +
+      "recalling the province’s old goat-herding economy.",
+    sources: [
+      { title: "Gästrikland — Wikipedia", url: "https://en.wikipedia.org/wiki/G%C3%A4strikland" },
+      { title: "Hälsingland — Wikipedia", url: "https://en.wikipedia.org/wiki/H%C3%A4lsingland" },
+    ],
+  },
+
+  "SE-Y": {
+    description:
+      "The county arms as a banner, combining the arms of two provinces: three silver salmon on blue — " +
+      "the middle one swimming against the others — for Ångermanland’s spawning rivers, and blue, " +
+      "silver and red wavy bars for Medelpad, the land between the Ljungan and Indalsälven rivers.",
+    sources: [
+      { title: "Ångermanland — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%85ngermanland" },
+      { title: "Medelpad — Wikipedia", url: "https://en.wikipedia.org/wiki/Medelpad" },
+    ],
+  },
+
+  "SE-Z": {
+    description:
+      "The county arms as a banner, combining two provinces: on blue a silver moose with a golden " +
+      "falcon striking its back and a golden hound rearing before it — Jämtland caught between hunters " +
+      "(popularly, between Norway and Sweden) — and on silver a black sledgehammer with tongs and " +
+      "hammers for Härjedalen’s ironworking heritage.",
+    sources: [
+      { title: "Jämtland — Wikipedia", url: "https://en.wikipedia.org/wiki/J%C3%A4mtland" },
+      { title: "Härjedalen — Wikipedia", url: "https://en.wikipedia.org/wiki/H%C3%A4rjedalen" },
+    ],
+  },
+
+  "SE-O": {
+    description:
+      "The county arms as a banner, quartering four arms: the Swedish lion holding a three-crowns " +
+      "shield for the city of Gothenburg, a red castle for Bohuslän (Bohus fortress), a red ox on " +
+      "silver for Dalsland, and the black-and-gold counterchanged lion between two stars for " +
+      "Västergötland.",
+    sources: [
+      { title: "Västra Götaland County — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4stra_G%C3%B6taland_County" },
+      { title: "Bohuslän — Wikipedia", url: "https://en.wikipedia.org/wiki/Bohusl%C3%A4n" },
+      { title: "Dalsland — Wikipedia", url: "https://en.wikipedia.org/wiki/Dalsland" },
+      { title: "Västergötland — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4sterg%C3%B6tland" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
