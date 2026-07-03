@@ -8160,6 +8160,120 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Sukhothai province — Wikipedia", url: "https://en.wikipedia.org/wiki/Sukhothai_province" },
     ],
   },
+
+  "TH-73": {
+    description:
+      "A flag bearing the provincial seal, which shows Phra Pathommachedi, a great stupa and Buddhist " +
+      "centre since the 6th century, topped by a royal crown for King Mongkut, who rebuilt it in 1860.",
+    sources: [
+      { title: "Nakhon Pathom province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nakhon_Pathom_province" },
+    ],
+  },
+
+  "TH-70": {
+    description:
+      "A flag bearing the provincial seal, which shows the royal sword above royal sandals on a phan " +
+      "(tray). It reflects the name Ratchaburi, “city of the king,” linked to the birthplace of King " +
+      "Rama I.",
+    sources: [
+      { title: "Ratchaburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Ratchaburi_province" },
+    ],
+  },
+
+  "TH-71": {
+    description:
+      "A flag bearing the provincial seal, which shows the three stupas on Bantadthong Mountain that " +
+      "give their name to the Three Pagodas Pass, the mountain route to Myanmar.",
+    sources: [
+      { title: "Kanchanaburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Kanchanaburi_province" },
+    ],
+  },
+
+  "TH-72": {
+    description:
+      "A flag bearing the provincial seal, which shows the 1592 elephant duel fought in Suphan Buri " +
+      "between King Naresuan the Great and the Burmese crown prince.",
+    sources: [
+      { title: "Suphan Buri province — Wikipedia", url: "https://en.wikipedia.org/wiki/Suphan_Buri_province" },
+    ],
+  },
+
+  "TH-76": {
+    description:
+      "A flag bearing the provincial seal, which shows the Khao Wang palace behind rice fields flanked " +
+      "by two coconut palms, standing for the province’s main crops.",
+    sources: [
+      { title: "Phetchaburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phetchaburi_province" },
+    ],
+  },
+
+  "TH-77": {
+    description:
+      "A flag bearing the provincial seal, which shows the Kuha Karuhas pavilion, built for King " +
+      "Chulalongkorn’s visit to the Phraya Nakhon Cave, with the island of Ko Lak in Prachuap Bay " +
+      "behind it.",
+    sources: [
+      { title: "Prachuap Khiri Khan province — Wikipedia", url: "https://en.wikipedia.org/wiki/Prachuap_Khiri_Khan_province" },
+    ],
+  },
+
+  "TH-92": {
+    description:
+      "A flag bearing the provincial seal, which shows a lighthouse over sea waves, marking Trang as a " +
+      "historic seaport trading with foreign countries; the waves also echo the province’s undulating " +
+      "hill-and-plain landscape.",
+    sources: [
+      { title: "Trang province — Wikipedia", url: "https://en.wikipedia.org/wiki/Trang_province" },
+    ],
+  },
+
+  "TH-93": {
+    description:
+      "A flag bearing the provincial seal, which shows the 177-metre Khao Ok Thalu mountain — the " +
+      "pierced peak that is the emblem of the province.",
+    sources: [
+      { title: "Phatthalung province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phatthalung_province" },
+    ],
+  },
+
+  "TH-94": {
+    description:
+      "A flag bearing the provincial seal, which shows the cannon Phraya Tani (Sri Pattani in Malay), " +
+      "cast in Pattani and taken to Bangkok in 1785, where it now stands before the Ministry of " +
+      "Defence.",
+    sources: [
+      { title: "Pattani province — Wikipedia", url: "https://en.wikipedia.org/wiki/Pattani_province" },
+    ],
+  },
+
+  "TH-95": {
+    description:
+      "A flag bearing the provincial seal, which shows a miner with simple tools — hoes, crowbars and " +
+      "baskets — recalling Yala’s origins as a tin- and tungsten-mining town.",
+    sources: [
+      { title: "Yala province — Wikipedia", url: "https://en.wikipedia.org/wiki/Yala_province" },
+    ],
+  },
+
+  "TH-96": {
+    description:
+      "A flag bearing the provincial seal, which shows a sailing boat with a white elephant on its " +
+      "sail. The white elephant — a royal symbol — commemorates Phra Sri Nararat Rajakarini, an " +
+      "elephant caught here and presented to the king.",
+    sources: [
+      { title: "Narathiwat province — Wikipedia", url: "https://en.wikipedia.org/wiki/Narathiwat_province" },
+    ],
+  },
+
+  "TH-81": {
+    description:
+      "A flag bearing the provincial seal, which shows two ancient crossed swords (krabi) before the " +
+      "Andaman Sea and Khao Phanom Bencha, the province’s highest mountain. The sword (krabi) gives the " +
+      "province its name.",
+    sources: [
+      { title: "Krabi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Krabi_province" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
