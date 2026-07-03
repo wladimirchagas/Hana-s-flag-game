@@ -9446,6 +9446,48 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Västergötland — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4sterg%C3%B6tland" },
     ],
   },
+
+  "AT-6": {
+    description:
+      "The state arms on the white-and-green flag: on a green field the silver Styrian Panther, a " +
+      "heraldic beast with red horns and claws that breathes fire from its mouth. It has been Styria’s " +
+      "emblem since the duchy was created in 1180 — one of Europe’s oldest state symbols, essentially " +
+      "unchanged for over 750 years.",
+    sources: [
+      { title: "Steirischer Panther — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Steirischer_Panther" },
+    ],
+  },
+
+  "AT-2": {
+    description:
+      "The state arms on the flag: a shield split between three black lions on gold — inherited from " +
+      "the Babenberg dukes — and a silver bar on red, the Austrian Bindenschild marking Carinthia’s " +
+      "ties to Austria. The small (shield-only) version appears on the state flag.",
+    sources: [
+      { title: "Kärntner Wappen — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/K%C3%A4rntner_Wappen" },
+    ],
+  },
+
+  "AT-3": {
+    description:
+      "The state arms on the flag: on a blue field five golden eagles (two facing pairs and one turned) " +
+      "beneath a golden mural crown. The eagles are the emblem of ‘old’ Austria — recorded from about " +
+      "1330 at Klosterneuburg — and are nicknamed the ‘lark arms’ (Lerchenwappen) from a historic " +
+      "misreading of the birds.",
+    sources: [
+      { title: "Wappen Niederösterreichs — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_Nieder%C3%B6sterreichs" },
+    ],
+  },
+
+  "AT-7": {
+    description:
+      "The state arms on the flag: on a silver field the red Tyrolean Eagle, gold-crowned with golden " +
+      "wing-clasps ending in trefoils and a green wreath behind its head. The eagle has stood for the " +
+      "County of Tyrol since the 13th century, from the Counts of Tirol near Meran.",
+    sources: [
+      { title: "Tiroler Adler — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Tiroler_Adler" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
