@@ -10508,6 +10508,133 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
     ],
   },
+
+  "FR-42": {
+    description:
+      "The department arms as a banner: on red a golden dolphin — the historic arms of the Forez, the " +
+      "old county at the heart of the Loire department.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-43": {
+    description:
+      "The department arms as a banner: on red a silver arm issuing from a blue cloud — the historic " +
+      "arms of the Velay, the old land around Le Puy that forms the Haute-Loire.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-44": {
+    description:
+      "The department arms as a banner: a quartered shield combining the arms of the department’s main " +
+      "towns — including the golden ship of Nantes on blue — adopted in 1930 for Loire-Atlantique.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-45": {
+    description:
+      "The department arms as a banner: on blue a silver wavy bar and three golden fleurs-de-lis — the " +
+      "arms of the Orléanais, the wave standing for the little river Loiret that names the department.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-46": {
+    description:
+      "The department arms as a banner: on red a silver six-arched bridge — recalling the fortified " +
+      "Valentré bridge of Cahors — the arms of the Quercy, the old province of the Lot.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-47": {
+    description:
+      "The department arms as a banner: a quartered shield combining the arms of the department’s main " +
+      "towns — including a silver eagle for Agen — officially adopted for Lot-et-Garonne in 2003.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-48": {
+    description:
+      "The department arms as a banner: a party shield with a blue field of golden fleurs-de-lis — the " +
+      "historic arms of the Gévaudan, the old land that forms the Lozère.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-49": {
+    description:
+      "The department arms as a banner: the arms of Anjou — blue strewn with golden fleurs-de-lis — with " +
+      "the double-barred patriarchal ‘Cross of Anjou’, the historic emblem of Maine-et-Loire.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-50": {
+    description:
+      "The department arms as a banner: a wavy division of blue and red bearing the two golden leopards " +
+      "of Normandy, the wave standing for the sea that all but surrounds the Manche (‘the Channel’).",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-51": {
+    description:
+      "The department arms as a banner: the arms of Champagne — on blue a silver fess (band) between " +
+      "golden potent cotises — the fess standing for the river Marne that names the department.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-52": {
+    description:
+      "The department arms as a banner: the arms of Champagne turned upright — on blue a silver pale " +
+      "between golden potent vergettes — the pale standing for the upper Marne, giving Haute-Marne its " +
+      "name.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-53": {
+    description:
+      "The department arms as a banner: on blue a golden leopard between two golden fleurs-de-lis — " +
+      "arms drawn from Anjou, Normandy and Brittany, the lands meeting in the Mayenne.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-54": {
+    description:
+      "The department arms as a banner: the arms of Lorraine — on gold a red bend charged with three " +
+      "silver alerions (eaglets) — the two flanking cotices standing for the rivers Meurthe and Moselle.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-55": {
+    description:
+      "The department arms as a banner: on blue strewn with cross-crosslets two golden barbel fish back " +
+      "to back — the arms of Bar (the Barrois), the old duchy that forms the Meuse.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
