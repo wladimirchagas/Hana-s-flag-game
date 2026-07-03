@@ -1020,7 +1020,18 @@ context window until the sweep is complete or the user explicitly says stop.
    "say the word", "shall I proceed?", or a status report that waits for a go-ahead. The only
    acceptable reasons to stop and surface to the user are: (a) the user said stop; (b) a genuine
    blocker you cannot resolve (build broken, network/egress down, a real ambiguity that changes the
-   work); or (c) **every** remaining subdivision has been either sourced or investigated-and-omitted.
+   work); or (c) **every** remaining subdivision has been either sourced or investigated-and-omitted
+   (i.e. `node scripts/subdiv-remaining.mjs` prints `remaining:0`).
+   **A "documentation wall" is NOT a blocker and NOT a stopping condition.** Discovering that a
+   country's flags are image-only (no reachable per-element symbolism) does not license you to stop,
+   summarise progress, or ask the user to "point you at a harder target" — it is the ordinary,
+   expected outcome for many countries, and the mandated response is to **investigate that country's
+   codes and log them as omitted** (rule 3), which *closes* them and drives `remaining` down. Reaching
+   a "frontier" of image-only countries is therefore never a reason to end the sweep; you keep going,
+   converting each wall country into logged omissions, until `remaining:0`. Ending a turn with a
+   status report, a recap of what's done, or any variant of "say the word / let me know / want me to
+   continue" while `remaining` is still above 0 is a violation of this rule, **even if every remaining
+   country looks like a wall.**
 2. **Pick the next set yourself.** Use `node scripts/subdiv-remaining.mjs [CC]` to see what's left and
    choose the next country by documentation strength (prefer local-language Wikipedia coverage). You
    do not need the user to name a country — choosing is your job, not theirs.
@@ -1038,9 +1049,18 @@ context window until the sweep is complete or the user explicitly says stop.
    visual-verification rule, and the merge workflow all still apply on every push. "Keep going" means
    never stalling on a *permission* question — it never means skipping a mandated check.
 
+6. **Walls get closed, not reported.** For every remaining country that is a documentation wall,
+   confirm the image-only pattern across a representative sample of its codes, then append **all** of
+   that country's remaining codes to `scripts/data/subdiv-meaning-omitted.txt` with a one-line reason,
+   mark it in `scripts/data/sweep-claims.txt`, and move straight to the next country in the same turn.
+   Batch several wall-countries per PR to keep moving. The sweep is finished — and only then may you
+   report — when `node scripts/subdiv-remaining.mjs` shows `remaining:0`.
+
 **Enforcement:** there is no automated check for this — it is a behavioural mandate. When reviewing a
-session, a turn that ended by asking the user whether to continue the subdivision sweep (instead of
-just continuing) is a violation of this rule.
+session, a turn that ended by asking the user whether to continue the subdivision sweep — **or that
+ended with a progress recap / "documentation frontier" report while `remaining` was still above 0** —
+instead of just continuing (sourcing documented sets, omission-logging wall sets) is a violation of
+this rule.
 
 ## Token-efficient work — hard rule, do not override without approval
 
