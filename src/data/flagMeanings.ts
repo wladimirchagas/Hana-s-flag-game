@@ -9220,6 +9220,73 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Veszprém — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Veszpr%C3%A9m" },
     ],
   },
+
+  "SE-M": {
+    description:
+      "The county arms as a banner: on a red field a crowned golden griffin’s head. The griffin comes " +
+      "from the old arms of Malmö, granted in 1437 by Eric of Pomerania (a Pomeranian griffin); the " +
+      "provincial arms of Skåne were formed from it in 1660, and the 1997 county arms reversed the " +
+      "tinctures to gold-on-red.",
+    sources: [
+      { title: "Scania — Wikipedia", url: "https://en.wikipedia.org/wiki/Scania" },
+    ],
+  },
+
+  "SE-W": {
+    description:
+      "The county arms as a banner: on a blue field two golden Dalecarlian arrows (dalpilar) crossed in " +
+      "saltire points upward, with a crown above. The crossed arrows appear on Dalarna’s seals from " +
+      "1525 and became the arms in 1560; the ducal crown marks the historic title Duke of Dalarna.",
+    sources: [
+      { title: "Dalarna — Wikipedia", url: "https://en.wikipedia.org/wiki/Dalarna" },
+    ],
+  },
+
+  "SE-I": {
+    description:
+      "The county arms as a banner: on a blue field a silver ram walking, holding a red banner with " +
+      "five tails on a golden cross-staff — the Paschal-Lamb-style ‘Gute ram’ of Gotland. The arms " +
+      "were granted about 1560 and adopted by the county in 1936.",
+    sources: [
+      { title: "Gotland — Wikipedia", url: "https://en.wikipedia.org/wiki/Gotland" },
+    ],
+  },
+
+  "SE-AB": {
+    description:
+      "The county arms as a banner, combining the arms of its three constituent parts: the crowned " +
+      "head of Saint Eric — patron of Stockholm — for the City of Stockholm, a black griffin on gold " +
+      "for Södermanland, and a golden royal orb (riksäpple) on red for Uppland.",
+    sources: [
+      { title: "Coat of arms of Stockholm — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Stockholm" },
+      { title: "Södermanland — Wikipedia", url: "https://en.wikipedia.org/wiki/S%C3%B6dermanland" },
+      { title: "Uppland — Wikipedia", url: "https://en.wikipedia.org/wiki/Uppland" },
+    ],
+  },
+
+  "SE-BD": {
+    description:
+      "The county arms as a banner, quartering the arms of its two historic provinces: a running " +
+      "reindeer among golden stars on blue for Västerbotten, and the red club-bearing wildman wrapped " +
+      "in birch leaves on silver for Lapland — the old heraldic figure of the untamed north.",
+    sources: [
+      { title: "Västerbotten — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4sterbotten" },
+      { title: "Lapland (Sweden) — Wikipedia", url: "https://en.wikipedia.org/wiki/Lapland_(Sweden)" },
+    ],
+  },
+
+  "SE-AC": {
+    description:
+      "The county arms as a banner, combining the arms of three provinces: a running reindeer among " +
+      "golden stars on blue for Västerbotten, the red club-bearing wildman on silver for Lapland, and " +
+      "three silver salmon on blue — the middle one swimming against the others — for Ångermanland’s " +
+      "spawning rivers.",
+    sources: [
+      { title: "Västerbotten — Wikipedia", url: "https://en.wikipedia.org/wiki/V%C3%A4sterbotten" },
+      { title: "Lapland (Sweden) — Wikipedia", url: "https://en.wikipedia.org/wiki/Lapland_(Sweden)" },
+      { title: "Ångermanland — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%85ngermanland" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
