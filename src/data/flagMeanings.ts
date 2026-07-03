@@ -9720,6 +9720,46 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Pohjois-Pohjanmaan maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Pohjois-Pohjanmaan_maakunnan_vaakuna" },
     ],
   },
+
+  "NO-18": {
+    description:
+      "The county arms as a banner: on a gold field a black Nordland boat (nordlandsbåt) with mast and " +
+      "square sail — the traditional fishing craft of the coast. Its black is the protective tar, and " +
+      "the gold field is the sun of the region’s midnight-sun summers; granted 1965.",
+    sources: [
+      { title: "Nordland — Wikipedia", url: "https://en.wikipedia.org/wiki/Nordland" },
+    ],
+  },
+
+  "NO-11": {
+    description:
+      "The county arms as a banner: on a blue field a silver pointed cross, modelled on the old stone " +
+      "cross at Sola — Norway’s oldest national monument, raised about 1028 in memory of the chieftain " +
+      "Erling Skjalgsson. Granted 1974.",
+    sources: [
+      { title: "Rogaland — Wikipedia", url: "https://en.wikipedia.org/wiki/Rogaland" },
+    ],
+  },
+
+  "NO-15": {
+    description:
+      "The county arms as a banner: on a blue field three golden Viking ships, one for each of the " +
+      "county’s districts — Sunnmøre, Romsdal and Nordmøre — for the region’s seafaring and " +
+      "shipbuilding; their masts form crosses for the county’s strong Christian tradition. Granted 1978.",
+    sources: [
+      { title: "Møre og Romsdal — Wikipedia", url: "https://en.wikipedia.org/wiki/M%C3%B8re_og_Romsdal" },
+    ],
+  },
+
+  "NO-03": {
+    description:
+      "The city arms (seal) as a banner: Saint Hallvard, Oslo’s patron, enthroned on a lion throne with " +
+      "his martyr’s attributes — a millstone and three arrows — and a woman at his feet, the innocent he " +
+      "died defending. He became the city’s patron under King Olaf III in the 11th century.",
+    sources: [
+      { title: "Oslo — Wikipedia", url: "https://en.wikipedia.org/wiki/Oslo" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
