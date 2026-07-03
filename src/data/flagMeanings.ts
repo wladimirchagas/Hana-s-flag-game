@@ -9019,6 +9019,69 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Tolna vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Tolna_v%C3%A1rmegye" },
     ],
   },
+
+  "HU-VA": {
+    description:
+      "The county coat of arms on the flag: on a blue field a tall silver bastion on a green mound, " +
+      "crowned by an ostrich holding a horseshoe — a pun on the name Vas (‘iron’) and its old title " +
+      "‘Iron Castle County’ — with a chalice of golden grapes above for the region’s wine.",
+    sources: [
+      { title: "Vas vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Vas_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-VE": {
+    description:
+      "The county coat of arms on the flag: on a blue field a silver three-towered castle on a green " +
+      "triple mound for the old episcopal seat of Veszprém, the central tower sprouting oak branches " +
+      "with golden acorns for the Bakony hills, flanked by a crescent and a six-pointed star.",
+    sources: [
+      { title: "Veszprém vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Veszpr%C3%A9m_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-ZA": {
+    description:
+      "The county coat of arms on the flag: on a blue field a silver bar crossed by a black arrow for " +
+      "the Zala River flowing west to east, with an open golden crown above for the historic role and " +
+      "pride of Zala’s common nobility; the blue stands for sky, water and loyalty.",
+    sources: [
+      { title: "Zala vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Zala_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-BU": {
+    description:
+      "The city coat of arms on the flag: a red shield split by a white wavy band for the Danube — a " +
+      "single golden tower above for Pest and a three-towered golden castle below for Buda and Óbuda, " +
+      "the cities the river joined into Budapest — beneath the Holy Crown, flanked by a lion and a " +
+      "griffin.",
+    sources: [
+      { title: "Budapest címere — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Budapest_c%C3%ADmere" },
+    ],
+  },
+
+  "HU-DE": {
+    description:
+      "The city coat of arms on the flag: on a blue field a green palm tree for growth and a white " +
+      "Lamb of God standing on two open books, holding a cross-staff with a red banner — the emblem of " +
+      "Debrecen as the ‘Calvinist Rome’, its faith and learning — crested by a phoenix rising for " +
+      "renewal.",
+    sources: [
+      { title: "Debrecen címere — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Debrecen_c%C3%ADmere" },
+    ],
+  },
+
+  "HU-MI": {
+    description:
+      "The city coat of arms on the flag: Saint Stephen, Hungary’s first king, in purple robes with " +
+      "sceptre and orb, crested by a hajdú frontier soldier bearing wheat and grapes for the region’s " +
+      "farming and vineyards, the shield flanked by a golden lion and griffin. Adopted 1909, restored " +
+      "1990.",
+    sources: [
+      { title: "Miskolc címere — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Miskolc_c%C3%ADmere" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
