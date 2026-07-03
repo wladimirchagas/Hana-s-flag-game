@@ -66,3 +66,6 @@ AE  claude  done         # UAE — 7 emirate flags sourced (en.wikipedia Flag of
 SM  claude  done         # San Marino — 9 castelli sourced (it.wikipedia Stemma + national arms)
 LI  claude  done         # Liechtenstein — 8 remaining communes sourced (de.wikipedia Wappen)
 ZA  claude  partial      # South Africa — Western Cape sourced; other 6 provinces omitted (arms image-only)
+GB  antigravity  done     # Great Britain — GB-NIR (Northern Ireland) sourced (en.wikipedia Ulster Banner)
+CA  antigravity  done     # Canada — CA-PE (Prince Edward Island) sourced (en.wikipedia)
+PK  antigravity  done     # Pakistan — 4 provinces sourced (en.wikipedia Flag of X articles)

@@ -10762,9 +10762,88 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
     ],
   },
+
+  // ── Northern Ireland (GB) ──────────────────────────────────────────────
+
+  "GB-NIR": {
+    description:
+      "The Ulster Banner: a red cross of St George on white — Northern Ireland's " +
+      "link to the United Kingdom — charged with a white six-pointed star for the " +
+      "six counties, the Red Hand of Ulster (a historic Gaelic symbol of the province), " +
+      "and St Edward's Crown representing loyalty to the British monarchy. Used officially " +
+      "1953–1972; no official flag has replaced it since the 1973 abolition of the " +
+      "Northern Ireland government.",
+    sources: [
+      { title: "Ulster Banner — Wikipedia", url: "https://en.wikipedia.org/wiki/Ulster_Banner" },
+    ],
+  },
+
+  // ── Prince Edward Island (CA) ──────────────────────────────────────────
+
+  "CA-PE": {
+    description:
+      "An armorial banner of the provincial arms, bordered on three sides by alternating " +
+      "red and white rectangles. The chief shows a golden lion passant guardant on red, " +
+      "from the Royal Arms of England, referencing Prince Edward, Duke of Kent. Below, " +
+      "a large oak tree represents Great Britain and three oak saplings represent the " +
+      "province's three counties (Kings, Queens, and Prince).",
+    sources: [
+      { title: "Flag of Prince Edward Island — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Prince_Edward_Island" },
+    ],
+  },
+
+  // ── Pakistan provinces ─────────────────────────────────────────────────
+
+  "PK-PB": {
+    description:
+      "A dark-green flag bearing the provincial emblem in white: five wavy lines for " +
+      "the five rivers (Indus, Chenab, Jhelum, Ravi, Sutlej) that give Punjab its " +
+      "name ('Land of Five Waters' in Persian), flanked by wheat stalks for the " +
+      "province's fertile agriculture, with a crescent and star for Pakistan's Islamic " +
+      "heritage. A scroll reads 'Government of Punjab' in Shahmukhi Punjabi.",
+    sources: [
+      { title: "Flag of Punjab, Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Punjab,_Pakistan" },
+    ],
+  },
+
+  "PK-KP": {
+    description:
+      "A dark-green flag with the provincial seal: Jamrud Fort — the historic guardian " +
+      "of the Khyber Pass — against a backdrop of mountains, with a crescent and star " +
+      "above for the Muslim-majority province's Islamic heritage. A scroll below bears " +
+      "the province's official name in Urdu. The green-and-white colour scheme reflects " +
+      "the Pakistani national colours.",
+    sources: [
+      { title: "Flag of Khyber Pakhtunkhwa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Khyber_Pakhtunkhwa" },
+    ],
+  },
+
+  "PK-SD": {
+    description:
+      "A dark-green flag bearing the Sindh provincial emblem in white. The emblem " +
+      "features the province's major crops (wheat, cotton, rice, sugarcane) representing " +
+      "the agrarian economy of the Indus River valley, with a crescent and star for " +
+      "Islamic heritage. The green field and white emblem use Pakistan's national colours.",
+    sources: [
+      { title: "Flag of Sindh — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sindh" },
+    ],
+  },
+
+  "PK-BA": {
+    description:
+      "A dark-green flag with the Balochistan provincial emblem in white. The emblem " +
+      "features stylised mountains representing the province's rugged highland terrain, " +
+      "a crescent and star for Islamic heritage, and traditional motifs reflecting " +
+      "Baloch culture. The green-and-white colour scheme reflects the Pakistani " +
+      "national colours.",
+    sources: [
+      { title: "Flag of Balochistan, Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Balochistan,_Pakistan" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
 export function hasFlagMeaning(code: string | null | undefined): boolean {
   return !!code && code in FLAG_MEANINGS;
 }
+
