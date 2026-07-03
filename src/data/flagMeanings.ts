@@ -10133,6 +10133,123 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Karakalpakstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Karakalpakstan" },
     ],
   },
+
+  "FR-01": {
+    description:
+      "The department arms as a banner: a shield quartered for the four historic lands that make up the " +
+      "Ain — the ermine lion of Bresse, the morailles and lion of the Pays de Gex, the fleurs-de-lis and " +
+      "red baton of Dombes, and the ermine lion of Bugey — with the silver cross of Bourg-en-Bresse over " +
+      "all.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-02": {
+    description:
+      "The department arms as a banner: joined arms of Ponthieu (gold with three blue bands) and " +
+      "Champagne (blue with gold potent cotises), crossed by a silver wavy bar for the river Aisne that " +
+      "names the department.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-03": {
+    description:
+      "The department arms as a banner: on blue strewn with golden fleurs-de-lis a red bend — the arms " +
+      "of the Bourbonnais, the historic province (and cradle of the House of Bourbon) from which the " +
+      "Allier was formed.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-04": {
+    description:
+      "The department arms as a banner: the Angevin arms of Provence — a golden fleur-de-lis with a red " +
+      "label on blue — over a white indented base evoking the Alpine peaks of Alpes-de-Haute-Provence.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-05": {
+    description:
+      "The department arms as a banner: party of the clechée cross of the Marquisate of Provence (red) " +
+      "and the blue dolphin of the Dauphiné (gold), beneath a blue chief strewn with fleurs-de-lis — the " +
+      "two historic lands meeting in the Hautes-Alpes.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-06": {
+    description:
+      "The department arms as a banner: on silver a red crowned eagle rising from a three-peaked " +
+      "mountain over the sea — the historic arms of the County of Nice, the eagle and mountains " +
+      "standing for the territory.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-07": {
+    description:
+      "The department arms as a banner: on blue strewn with golden fleurs-de-lis, a golden border set " +
+      "with eight blue escutcheons — the arms of the Vivarais, the historic province that became the " +
+      "Ardèche.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-08": {
+    description:
+      "The department arms as a banner: on blue a silver bend between golden potent cotises, a silver " +
+      "escutcheon charged with a black boar at the centre, and a red chief with three golden rakes — " +
+      "regional emblems of the Ardennes (adopted 1950).",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-09": {
+    description:
+      "The department arms as a banner: gold with three red pales for the County of Foix, and a blue " +
+      "escutcheon bearing a silver bell for the Couserans — the two historic lands of the Ariège.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-10": {
+    description:
+      "The department arms as a banner: on blue a silver bend between golden potent cotices (from the " +
+      "arms of Champagne) beneath a silver wavy chief — the white (Latin ‘alba’) a play on the name of " +
+      "the river Aube.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-11": {
+    description:
+      "The department arms as a banner: on red the golden clechée cross of Languedoc within a " +
+      "crenellated silver border evoking the ramparts of Carcassonne — the arms of the Aude.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-12": {
+    description:
+      "The department arms as a banner: on red a golden lion-leopard — the historic arms of the " +
+      "Rouergue, the old county that became the Aveyron.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
