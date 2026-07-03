@@ -481,11 +481,20 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
     if (!isYoutube || !anthem?.youtubeId) return;
 
     let cancelled = false;
+    // Track the player created inside the async .then() so the outer cleanup
+    // can destroy the correct instance even if ytPlayerRef was overwritten.
+    let localPlayer: YTPlayerInstance | null = null;
     setIsLoadingAudio(true);
     setAudioError(null);
 
     loadYTApi().then(() => {
       if (cancelled || !ytContainerRef.current) return;
+
+      // Remove any stale iframes / child nodes left by a previous player
+      // instance that wasn't fully cleaned up (e.g. rapid country switching).
+      while (ytContainerRef.current.firstChild) {
+        ytContainerRef.current.removeChild(ytContainerRef.current.firstChild);
+      }
 
       const mountDiv = document.createElement("div");
       ytContainerRef.current.appendChild(mountDiv);
@@ -540,14 +549,26 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
         },
       });
 
-      return () => {
-        try { player.destroy(); } catch { /* ignore */ }
-      };
+      localPlayer = player;
     });
 
     return () => {
       cancelled = true;
-      if (ytPlayerRef.current) { try { ytPlayerRef.current.destroy(); } catch { /* ignore */ } ytPlayerRef.current = null; }
+      if (ytPollRef.current) { clearInterval(ytPollRef.current); ytPollRef.current = null; }
+      // Destroy the player created by this specific effect invocation.
+      // localPlayer is captured in this closure so it's always the right one,
+      // even if ytPlayerRef.current was already overwritten by a newer mount.
+      const playerToDestroy = localPlayer ?? ytPlayerRef.current;
+      if (playerToDestroy) {
+        try { playerToDestroy.destroy(); } catch { /* ignore */ }
+        if (ytPlayerRef.current === playerToDestroy) ytPlayerRef.current = null;
+      }
+      // Clear any orphaned DOM nodes from the container as a safety net.
+      if (ytContainerRef.current) {
+        while (ytContainerRef.current.firstChild) {
+          ytContainerRef.current.removeChild(ytContainerRef.current.firstChild);
+        }
+      }
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isYoutube, anthem]);
