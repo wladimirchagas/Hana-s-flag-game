@@ -9853,6 +9853,16 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Yerevan — Wikipedia", url: "https://en.wikipedia.org/wiki/Yerevan" },
     ],
   },
+
+  "ZA-WC": {
+    description:
+      "The provincial arms on the flag: a golden Khoi clay pot on a blue pile, flanked by a red anchor " +
+      "for the Cape of Good Hope and a bunch of grapes for the winelands, over a blue Table Mountain; " +
+      "supported by a quagga and a bontebok and crowned with proteas. Motto: “Spes Bona” (Good Hope).",
+    sources: [
+      { title: "Coat of arms of the Western Cape — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Western_Cape" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

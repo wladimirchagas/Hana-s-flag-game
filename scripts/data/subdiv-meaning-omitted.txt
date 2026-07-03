@@ -218,3 +218,9 @@ HU-GY HU-KM HU-SD HU-SF HU-NK HU-SK HU-TB
 # as images with no sourceable per-element meaning (some list only the bare design), so they are
 # omitted rather than fabricated. LR-MO is sourced in flagMeanings.ts.
 LR-MY LR-SI LR-NI LR-GB LR-CM LR-LO LR-GG LR-BM LR-MG LR-RI LR-GK
+
+# South African provinces: the game shows each province coat of arms. Only the Western Cape
+# (ZA-WC) has an element-by-element blazon documented on en.wikipedia (sourced in flagMeanings.ts);
+# the other six show the arms as an image with only a motto, no per-element symbolism — omitted
+# rather than fabricated.
+ZA-EC ZA-FS ZA-LP ZA-MP ZA-NC ZA-NW
