@@ -9188,6 +9188,38 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Dunaújváros — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Duna%C3%BAjv%C3%A1ros" },
     ],
   },
+
+  "HU-BC": {
+    description:
+      "The city coat of arms on the flag: a lion holding two wheat stalks for the region’s rich " +
+      "wheatlands, with a fish below recalling the old Fehér-Körös river that once flowed through the " +
+      "town, and a grapevine above the crown for the 19th-century vineyards that later vanished to " +
+      "phylloxera.",
+    sources: [
+      { title: "Békéscsaba — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/B%C3%A9k%C3%A9scsaba" },
+    ],
+  },
+
+  "HU-HV": {
+    description:
+      "The city coat of arms on the flag: on a light-blue field a golden faced sun with a silver " +
+      "crescent moon opposite, and below an armoured arm holding three silver arrows pointing up — a " +
+      "martial emblem crested by a helm with a noble crown.",
+    sources: [
+      { title: "Hódmezővásárhely — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/H%C3%B3dmez%C5%91v%C3%A1s%C3%A1rhely" },
+    ],
+  },
+
+  "HU-VM": {
+    description:
+      "The city coat of arms on the flag: on a red field over green a silver horse bearing an armoured " +
+      "knight with a sword, crested by a hussar rising from a crown. Red stands for blood and life and " +
+      "the town’s war-torn past, green for nature and culture, and the crown for Veszprém’s municipal " +
+      "self-government.",
+    sources: [
+      { title: "Veszprém — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Veszpr%C3%A9m" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
