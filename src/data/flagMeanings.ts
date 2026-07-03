@@ -8047,6 +8047,119 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Chaiyaphum province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chaiyaphum_province" },
     ],
   },
+
+  "TH-41": {
+    description:
+      "A flag bearing the provincial seal, which shows Vaiśravaṇa (Thao Wessuwan), the Heavenly King of " +
+      "the North — fitting for a province whose name means “northern city.”",
+    sources: [
+      { title: "Udon Thani province — Wikipedia", url: "https://en.wikipedia.org/wiki/Udon_Thani_province" },
+    ],
+  },
+
+  "TH-42": {
+    description:
+      "A flag bearing the provincial seal, which shows the stupa of Phra That Si Song Rak, built in " +
+      "1560 by King Maha Chakkraphat of Ayutthaya and King Sai Setthathirath of Lan Xang as a symbol of " +
+      "friendship between the two kingdoms.",
+    sources: [
+      { title: "Loei province — Wikipedia", url: "https://en.wikipedia.org/wiki/Loei_province" },
+    ],
+  },
+
+  "TH-43": {
+    description:
+      "A flag bearing the provincial seal, which shows a pond with a clump of bamboo beside it; the " +
+      "bamboo stands for the stability, glory and continuity of this peaceful and fertile land.",
+    sources: [
+      { title: "Nong Khai province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nong_Khai_province" },
+    ],
+  },
+
+  "TH-45": {
+    description:
+      "A flag bearing the provincial seal, which shows the shrine of the city pillar standing in the " +
+      "artificial lake Bueng Phlan Chai; its guardian spirit, Mahesak, is revered by local people.",
+    sources: [
+      { title: "Roi Et province — Wikipedia", url: "https://en.wikipedia.org/wiki/Roi_Et_province" },
+    ],
+  },
+
+  "TH-46": {
+    description:
+      "A flag bearing the provincial seal, which shows a pond of black water before the Phu Phan " +
+      "mountains — the black water canting the name Kalasin (“black water”), and the pond and clouds " +
+      "standing for the province’s fertility.",
+    sources: [
+      { title: "Kalasin province — Wikipedia", url: "https://en.wikipedia.org/wiki/Kalasin_province" },
+    ],
+  },
+
+  "TH-47": {
+    description:
+      "A flag bearing the provincial seal, which shows Phra That Choeng Chum, a Lao-style chedi raised " +
+      "in the Ayutthaya period over an older Khmer prang — reflecting the region’s layered Khmer and " +
+      "Lao heritage.",
+    sources: [
+      { title: "Sakon Nakhon province — Wikipedia", url: "https://en.wikipedia.org/wiki/Sakon_Nakhon_province" },
+    ],
+  },
+
+  "TH-48": {
+    description:
+      "A flag bearing the provincial seal, which shows the pagoda of Phra That Phanom — a revered " +
+      "stupa, Khmer in origin and rebuilt in Lao style after it collapsed in 1675.",
+    sources: [
+      { title: "Nakhon Phanom province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nakhon_Phanom_province" },
+    ],
+  },
+
+  "TH-49": {
+    description:
+      "A flag bearing the provincial seal, which shows the Prasat Song Nang Sathit palace with a " +
+      "moonstone on a tray inside it — the moonstone alluding to the province’s name, Mukdahan.",
+    sources: [
+      { title: "Mukdahan province — Wikipedia", url: "https://en.wikipedia.org/wiki/Mukdahan_province" },
+    ],
+  },
+
+  "TH-44": {
+    description:
+      "A flag bearing the provincial seal, which shows a tree before rice fields, symbolising the " +
+      "richness of the province’s natural resources.",
+    sources: [
+      { title: "Maha Sarakham province — Wikipedia", url: "https://en.wikipedia.org/wiki/Maha_Sarakham_province" },
+    ],
+  },
+
+  "TH-55": {
+    description:
+      "A flag bearing the provincial seal, which shows a sacred Usupharat bull carrying the stupa of " +
+      "Phra That Chae Haeng. The bull recalls the legend that the ruler of Nan came to mark the border " +
+      "with neighbouring Phrae riding a bovine.",
+    sources: [
+      { title: "Nan province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nan_province" },
+    ],
+  },
+
+  "TH-65": {
+    description:
+      "A flag bearing the provincial seal, which shows Phra Phuttha Chinnarat, one of the most revered " +
+      "and beautiful Buddha images in Thailand, enshrined at Wat Phra Si Rattana Mahathat.",
+    sources: [
+      { title: "Phitsanulok province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phitsanulok_province" },
+    ],
+  },
+
+  "TH-64": {
+    description:
+      "A flag bearing the provincial seal, which shows King Ramkhamhaeng the Great seated on the " +
+      "Manangkhasila throne — the Sukhothai king who created the Thai script and made Theravada " +
+      "Buddhism the state religion.",
+    sources: [
+      { title: "Sukhothai province — Wikipedia", url: "https://en.wikipedia.org/wiki/Sukhothai_province" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
