@@ -9082,6 +9082,50 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Miskolc címere — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Miskolc_c%C3%ADmere" },
     ],
   },
+
+  "HU-PS": {
+    description:
+      "The city coat of arms on the flag: a walled city with four gates and a central cathedral tower, " +
+      "set among three green peaks — the central Mecsek crowned in gold, flanked by Aranyhegy and " +
+      "Tettye — with a stream, a six-pointed star and a crescent, and the supporters Loyalty and " +
+      "Industry. Granted by Maria Theresa in 1780.",
+    sources: [
+      { title: "Pécs címere — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/P%C3%A9cs_c%C3%ADmere" },
+    ],
+  },
+
+  "HU-EG": {
+    description:
+      "The city coat of arms on the flag: on a blue field a three-bastioned fortress wall — Eger’s " +
+      "famous castle — a silver unicorn holding a sword entwined by a serpent (faith overcoming " +
+      "deceit), and an eagle with an open book for Saint John, patron of the Eger archdiocese, with a " +
+      "star and half-sun for day and night.",
+    sources: [
+      { title: "Eger címere — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Eger_c%C3%ADmere" },
+    ],
+  },
+
+  "HU-SN": {
+    description:
+      "The city coat of arms on the flag: a red shield with a three-towered fortified wall for the " +
+      "walled medieval city, two crowned haloed heads and an olive branch, and the inscription " +
+      "“Civitas Fidelissima” — the Most Loyal City — earned when Sopron voted in 1921 to stay with " +
+      "Hungary.",
+    sources: [
+      { title: "Sopron — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Sopron" },
+    ],
+  },
+
+  "HU-KV": {
+    description:
+      "The city coat of arms on the flag: on a blue field a silver gate-fortress of ashlar stone with " +
+      "a raised portcullis on a green triple mound, three crenellated towers above. The gated castle " +
+      "is a pun on the name Kaposvár — ‘gate’ (kapu) and ‘castle’ (vár) — the 13th-century fort on the " +
+      "Kapos River.",
+    sources: [
+      { title: "Kaposvár — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Kaposv%C3%A1r" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
