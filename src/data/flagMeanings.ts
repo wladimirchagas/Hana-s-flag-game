@@ -8476,6 +8476,76 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Satun province — Wikipedia", url: "https://en.wikipedia.org/wiki/Satun_province" },
     ],
   },
+
+  "ID-AC": {
+    description:
+      "A green flag bearing the province’s Pancacita (“Five Ideals”) emblem in a pentagon shaped like a " +
+      "traditional kopiah. Its five symbols are the scales (justice), rencong daggers (heroism), rice, " +
+      "cotton and factory chimneys (welfare), a mosque dome (harmony) and a book and pen (prosperity), " +
+      "together expressing Aceh’s Islamic faith and learning. White is purity, yellow and green " +
+      "prosperity. Adopted 2007; the choice of a distinct flag remains politically contested.",
+    sources: [
+      { title: "Flag of Aceh — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Aceh" },
+    ],
+  },
+
+  "ID-JB": {
+    description:
+      "A green flag bearing the West Java emblem: a kujang (Sundanese blade) whose five holes are the " +
+      "Pancasila, flanked by 17 rice stalks and 8 cotton blossoms (for 17 August, independence day), " +
+      "over mountains, rivers, paddy grids and the Jatiluhur dam. Green is fertility, yellow nobility, " +
+      "blue peace, red courage, black steadfastness, white purity; the motto reads “Gemah Ripah Repeh " +
+      "Rapih.”",
+    sources: [
+      { title: "Lambang Jawa Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Jawa_Barat" },
+    ],
+  },
+
+  "ID-BA": {
+    description:
+      "A flag bearing the Bali emblem, a dark-blue pentagon holding a gold five-pointed star (belief in " +
+      "God), the Margarana heroes’ temple and a split candi bentar gate, a red padma lotus (the throne " +
+      "of Shiva), rice and cotton for prosperity, a chain for unity and fans for Balinese arts. Blue is " +
+      "tolerance, gold nobility, red heroism, white purity; the motto is “Bali Dwipa Jaya.”",
+    sources: [
+      { title: "Lambang Bali — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Bali" },
+    ],
+  },
+
+  "ID-JT": {
+    description:
+      "A flag bearing the Central Java emblem, shaped like a kendi (water vessel) on a pentagonal base " +
+      "(Pancasila). It holds the silhouette of Borobudur (the region’s cultural identity), twin " +
+      "mountains and waters (unity of people and government, and life), a five-pointed star " +
+      "(divinity), and rice and cotton (prosperity), with red-and-white ornament for the national " +
+      "spirit. Motto: “Prasetya Ulah Sakti Bhakti Praja.”",
+    sources: [
+      { title: "Lambang Jawa Tengah — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Jawa_Tengah" },
+    ],
+  },
+
+  "ID-JI": {
+    description:
+      "A flag bearing the East Java emblem: a star (divinity), the Tugu Pahlawan heroes’ monument " +
+      "(heroism in the independence war), a volcano (striving for a just society), a temple gate (the " +
+      "ideals of struggle), rice and cotton (food and clothing), rivers and fields (prosperity) and a " +
+      "gear and chain (strength and development). Motto: “Jer Basuki Mawa Beya” — success requires " +
+      "sacrifice. In use since 1966.",
+    sources: [
+      { title: "Lambang Jawa Timur — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Jawa_Timur" },
+    ],
+  },
+
+  "ID-JK": {
+    description:
+      "A flag bearing the Jakarta emblem, a five-pointed shield (Pancasila) holding a gate and the " +
+      "National Monument (Monas) — for the capital’s grandeur and its role as the nation’s gateway — " +
+      "with rice and cotton (welfare), sea waves (its port and coast) and a gold binding (unity). Gold " +
+      "is nobility, red heroism, white purity, blue the open sky. Motto: “Jaya Raya.”",
+    sources: [
+      { title: "Lambang DKI Jakarta — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Daerah_Khusus_Ibukota_Jakarta" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
