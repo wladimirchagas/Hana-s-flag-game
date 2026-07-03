@@ -8612,6 +8612,73 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Lambang Lampung — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Lampung" },
     ],
   },
+
+  "ID-BE": {
+    description:
+      "A flag bearing the Bengkulu emblem: a gold star for belief in God above a shield with two " +
+      "crossed rudus daggers for heroism, the giant Rafflesia arnoldii flower of the province, and " +
+      "rice and coffee for prosperity. Its 18 waves, 11 coffee leaves and further counts encode 18 " +
+      "November 1968, the day Bengkulu became a province.",
+    sources: [
+      { title: "Lambang Bengkulu — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Bengkulu" },
+    ],
+  },
+
+  "ID-BB": {
+    description:
+      "A flag bearing the five-sided Bangka Belitung emblem (the pentagon for Pancasila): a map of " +
+      "the green islands in a light-blue sea, a grey tin ingot for the wealth that has sustained the " +
+      "islands for over three centuries, and rice and pepper for prosperity. The 27 rice grains and " +
+      "31 pepper corns mark Law 27/2000 that made it Indonesia’s 31st province. Motto: “Serumpun Sebalai.”",
+    sources: [
+      { title: "Lambang Kepulauan Bangka Belitung — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Kepulauan_Bangka_Belitung" },
+    ],
+  },
+
+  "ID-YO": {
+    description:
+      "A flag bearing the Yogyakarta golong-gilig emblem: a gold star for belief in God over a red " +
+      "shield holding the white Tugu monument crowned with jasmine, winged by feathers counting 9 " +
+      "and 8 for Sultan Hamengkubuwono IX and Paku Alam VIII, and framed by rice and cotton for " +
+      "welfare. Its Javanese motto encodes 1876/1945; the regional motto is “Hamemayu Hayuning Bawana.”",
+    sources: [
+      { title: "Lambang Daerah Istimewa Yogyakarta — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Daerah_Istimewa_Yogyakarta" },
+    ],
+  },
+
+  "ID-KB": {
+    description:
+      "A flag bearing the five-sided West Kalimantan emblem (the pentagon for Pancasila): a white " +
+      "talawang shield with a crossed mandau sword and keris for ancestral heritage, a line for the " +
+      "equator that crosses the province, and an ever-burning flame for an unquenchable fighting " +
+      "spirit, framed by 45 rice stalks and 17 cotton blooms for 1945. Its Sanskrit motto “Akçaya” " +
+      "means “never perishing.”",
+    sources: [
+      { title: "Lambang Kalimantan Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Kalimantan_Barat" },
+    ],
+  },
+
+  "ID-KS": {
+    description:
+      "A flag bearing the South Kalimantan emblem: a gold star for belief in God over a shield holding " +
+      "a black Banjar “Bubungan Tinggi” high-roofed house for the region’s culture, an eight-pointed " +
+      "diamond for its wealth, and rice and rubber for its farming and tapping livelihoods. Its motto " +
+      "“Waja sampai kaputing” means to stay strong as steel from beginning to end.",
+    sources: [
+      { title: "Lambang Kalimantan Selatan — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Kalimantan_Selatan" },
+    ],
+  },
+
+  "ID-KT": {
+    description:
+      "A flag bearing the talawang-shield Central Kalimantan emblem: a belanga vessel holding a coiled " +
+      "knotted root for strength and solidarity, a star for belief in God, a tingang (hornbill) for " +
+      "greatness, a mandau sword for Dayak glory and a sumpitan blowpipe for peace, with rice and " +
+      "cotton for prosperity. Its Sangen motto “Isen Mulang” means “never retreat.”",
+    sources: [
+      { title: "Lambang Kalimantan Tengah — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Kalimantan_Tengah" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
