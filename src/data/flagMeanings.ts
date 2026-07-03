@@ -8965,6 +8965,60 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Komárom-Esztergom vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Kom%C3%A1rom-Esztergom_v%C3%A1rmegye" },
     ],
   },
+
+  "HU-NO": {
+    description:
+      "The county coat of arms on the flag: on a blue field over green ground a silver-armoured knight " +
+      "with a raised sword, leaning on a shield of Hungary’s arms. The soldier recalls Nógrád’s long " +
+      "role as a frontier and fortress land — from the medieval castles through the Ottoman wars — and " +
+      "appears already on a 1551 county seal.",
+    sources: [
+      { title: "Nógrád vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/N%C3%B3gr%C3%A1d_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-PE": {
+    description:
+      "The county coat of arms on the flag: on a blue field a golden lion rampant on a green triple " +
+      "mound, holding an open golden crown and a cross-topped orb — the royal regalia. The arms date " +
+      "from the 1659 union of Pest, Pilis and Solt counties around the historic heart of the kingdom.",
+    sources: [
+      { title: "Pest vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Pest_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-SO": {
+    description:
+      "The county coat of arms on the flag: on a blue field an armoured hand holding a vine heavy with " +
+      "ripe grapes for the region’s viticulture, over a crown for the Somogy people’s loyalty to king " +
+      "and crown, crested by a red-and-silver chequered eagle. Granted in 1498, it was the first " +
+      "Hungarian county arms.",
+    sources: [
+      { title: "Somogy vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Somogy_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-SZ": {
+    description:
+      "The county coat of arms on the flag: three historic county shields joined together — Szabolcs " +
+      "(wheat ears, fish, tree trunk and a drawn bow), Szatmár (a crab, a cannon tower and a pike for " +
+      "its wine hills, oak forests and rivers) and Bereg (a silver cross, grapes, a bear and two trout) " +
+      "— under a jewelled county crown.",
+    sources: [
+      { title: "Szabolcs-Szatmár-Bereg vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Szabolcs-Szatm%C3%A1r-Bereg_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-TO": {
+    description:
+      "The county coat of arms on the flag: Saint Stephen — Hungary’s first king, in whose reign Tolna " +
+      "was founded — enthroned with sceptre and orb beneath angels bearing the Holy Crown, with the " +
+      "young Saint Emeric holding lilies and a shield of Hungary’s arms alongside. Granted anew by " +
+      "Leopold I in 1699 after Ottoman rule.",
+    sources: [
+      { title: "Tolna vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Tolna_v%C3%A1rmegye" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
