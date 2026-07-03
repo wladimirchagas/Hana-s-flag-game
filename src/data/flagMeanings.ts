@@ -10376,6 +10376,138 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
     ],
   },
+
+  "FR-27": {
+    description:
+      "The department arms as a banner: the two golden leopards of Normandy on red above blue with " +
+      "golden fleurs-de-lis and a red-and-silver compony bend for the County of Évreux — the two lands " +
+      "of the Eure.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-28": {
+    description:
+      "The department arms as a banner: a wavy division joining the Orléanais (blue with fleurs-de-lis " +
+      "and a silver label) and the Perche (silver with three red chevrons) — the two historic lands of " +
+      "Eure-et-Loir.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-29": {
+    description:
+      "The department arms as a banner: the black lion of Léon (on gold) beside the silver ram of " +
+      "Cornouaille (on blue), beneath a silver chief with five ermine spots for Brittany — the arms of " +
+      "Finistère since 1975.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-30": {
+    description:
+      "The department arms as a banner: on red the golden clechée cross of Languedoc, beneath an " +
+      "engrailed silver chief that evokes the arches of the Pont du Gard — the arms of the Gard.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-32": {
+    description:
+      "The department arms as a banner: on silver a red lion — the historic arms of the Armagnac, the " +
+      "old county that forms most of the Gers.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-33": {
+    description:
+      "The department arms as a banner: gyronny of silver and blue (a play on the name Gironde) beneath " +
+      "a red chief bearing a golden leopard for Guyenne — the arms of the Gironde.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-34": {
+    description:
+      "The department arms as a banner: on silver a red roundel charged with the golden clechée cross of " +
+      "Languedoc — the cross of the counts of Toulouse over the field of Montpellier, the arms of the " +
+      "Hérault.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-35": {
+    description:
+      "The department arms as a banner: Breton ermine with two blue wavy pales for its two rivers, the " +
+      "Ille and the Vilaine, which name the department.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-36": {
+    description:
+      "The department arms as a banner: on blue three silver wavy twin-bars for its rivers with a silver " +
+      "castle (the Château Raoul of Châteauroux), under a gold chief within a red engrailed border — the " +
+      "arms of the Indre.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-37": {
+    description:
+      "The department arms as a banner: blue strewn with golden fleurs-de-lis within a red-and-silver " +
+      "compony border — the historic arms of the Touraine, the province of Indre-et-Loire.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-38": {
+    description:
+      "The department arms as a banner: a wavy division of blue with a silver wavy fess (the river Isère) " +
+      "over the blue dolphin of the Dauphiné on gold — the arms of the Isère.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-39": {
+    description:
+      "The department arms as a banner: Franche-Comté (blue billetty with a golden crowned lion) over an " +
+      "indented red-and-gold base evoking the Jura mountains that name the department.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-40": {
+    description:
+      "The department arms as a banner: on gold a red fess bearing a golden leopard for Guyenne, " +
+      "accompanied by three black pine cones for the great pine forest of the Landes.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-41": {
+    description:
+      "The department arms as a banner: a wavy division joining the Orléanais (blue with fleurs-de-lis " +
+      "and a silver label) and a golden field with a blue fleur-de-lis, the wave standing for the Loire " +
+      "— the arms of Loir-et-Cher.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
