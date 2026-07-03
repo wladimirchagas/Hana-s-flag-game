@@ -1,0 +1,55 @@
+# Flag-meaning subdivision sweep — shared claim ledger
+#
+# Purpose: two (or more) agents are expanding src/data/flagMeanings.ts in parallel.
+# Both edit the SAME file, so before starting a country you MUST claim it here to
+# avoid duplicated work and merge conflicts.
+#
+# Protocol:
+#   1. `git fetch origin main` and read this file.
+#   2. Pick a country NOT already listed as `done`, `omitted`, or `in-progress`.
+#   3. Add/append a line here, commit THIS file first, push, and merge it before
+#      you start sourcing that country.
+#   4. Update your line to `done` / `omitted` when finished.
+#   If check-flag-meanings.mjs reports a code you didn't add, someone else did —
+#   fetch/rebase and drop your duplicate.
+#
+# Format:  <ISO alpha-2>  <agent>  <status>  # note
+#   status = in-progress | done | omitted(=investigated, no sourceable symbolism) | partial
+#
+# Find remaining work:  node scripts/subdiv-remaining.mjs [CC]
+# Log genuine omissions in: scripts/data/subdiv-meaning-omitted.txt
+# ---------------------------------------------------------------------------
+
+# ===== COMPLETED (every displayed subdivision sourced, or investigated-and-omitted) =====
+TH  claude  done       # Thailand — 77 provinces (provincial seals)
+ID  claude  done       # Indonesia — all 33 provinces (id.wikipedia "Lambang X")
+HU  claude  done       # Hungary — counties + cities (hu.wikipedia címer); 7 undocumented cities omitted
+SE  claude  done       # Sweden — 21 counties (en.wikipedia province arms)
+AT  claude  done       # Austria — 9 states (de.wikipedia "Wappen …")
+FI  claude  done       # Finland — 18 regions (fi.wikipedia "…n vaakuna")
+NO  claude  done       # Norway — remaining counties (en.wikipedia)
+BY  claude  done       # Belarus — 7 regions (ru.wikipedia "Герб … области")
+LR  claude  partial    # Liberia — Montserrado sourced; other 11 counties omitted (image-only)
+AM  claude  done       # Armenia — Yerevan sourced (only remaining AM code)
+
+# ===== CONFIRMED WALLS — image-only on reachable Wikipedias, no per-element symbolism =====
+# Do NOT re-probe these via Wikipedia. Only attempt with a NON-Wikipedia authoritative
+# source (government gazette / official decree). Otherwise leave for omission-logging.
+RO  claude  wall       # Romania — county arms image-only (en + ro.wikipedia)
+EG  claude  wall       # Egypt — governorate emblems image-only (ar.wikipedia)
+PA  claude  wall       # Panama — province flags image-only (es.wikipedia)
+SI  claude  wall       # Slovenia — municipal arms image-only (sl.wikipedia)
+SK  claude  wall       # Slovakia — region arms composite/undescribed (sk.wikipedia)
+MN  claude  wall       # Mongolia — aimag emblems image-only
+AD  claude  wall       # Andorra — parish arms image-only (en + ca.wikipedia)
+KG  claude  wall       # Kyrgyzstan — oblast emblems image-only (ru.wikipedia)
+UY  claude  wall       # Uruguay — department flags image-only (es.wikipedia)
+CL  claude  wall       # Chile — regional flags image-only / no official symbolism
+MM  claude  wall       # Myanmar — state/region flags image-only (en.wikipedia)
+ET  claude  wall       # Ethiopia — regional flags image-only (en.wikipedia)
+GE  claude  wall       # Georgia — Tbilisi arms not described (en.wikipedia)
+AZ  claude  wall       # Azerbaijan — Baku arms image-only (en.wikipedia)
+PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
+
+# ===== IN PROGRESS =====
+# (add your claim lines below before starting a country)
