@@ -9539,6 +9539,57 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Wappen des Burgenlandes — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_des_Burgenlandes" },
     ],
   },
+
+  "FI-18": {
+    description:
+      "The regional arms as a banner: on a blue field between two silver wavy bars a golden boat with a " +
+      "rudder. The boat stands for Uusimaa’s seafaring coast and the wavy bars for its rivers; the arms " +
+      "date from the late 16th century (attested 1599).",
+    sources: [
+      { title: "Uusimaa — Wikipedia", url: "https://en.wikipedia.org/wiki/Uusimaa" },
+    ],
+  },
+
+  "FI-17": {
+    description:
+      "The regional arms as a banner: on a field parted blue over gold a black crowned bear rampant " +
+      "holding a silver sword in both paws, with two silver seven-pointed stars above — the bear being " +
+      "the historic emblem of Satakunta.",
+    sources: [
+      { title: "Satakunta — Wikipedia", url: "https://en.wikipedia.org/wiki/Satakunta" },
+    ],
+  },
+
+  "FI-19": {
+    description:
+      "The regional arms as a banner: on a red field a golden crowned knight’s tournament helm — the " +
+      "arms of the historic province of Finland Proper. The helmet is read as the court of the Duke of " +
+      "Finland, and marks the region’s role as the old administrative centre of the land.",
+    sources: [
+      { title: "Southwest Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Southwest_Finland" },
+    ],
+  },
+
+  "FI-13": {
+    description:
+      "The regional arms as a banner: two armoured arms fighting beneath a golden crown — one holding a " +
+      "straight sword, the other an eastern scimitar. The duelling weapons stand for Karelia’s place " +
+      "between the Swedish (western sword) and Russian (eastern scimitar) realms; the arms date from " +
+      "1562.",
+    sources: [
+      { title: "Coat of arms of the Province of Karelia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Province_of_Karelia" },
+    ],
+  },
+
+  "FI-02": {
+    description:
+      "The regional arms as a banner: two armoured arms fighting beneath a golden crown — one with a " +
+      "straight western sword, the other with an eastern scimitar — the historic arms of Karelia, " +
+      "symbolising the province caught between the Swedish and Russian realms.",
+    sources: [
+      { title: "Coat of arms of the Province of Karelia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Province_of_Karelia" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
