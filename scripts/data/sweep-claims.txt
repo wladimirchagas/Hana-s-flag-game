@@ -53,5 +53,6 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
+SM  claude  done         # San Marino — 9 castelli sourced (it.wikipedia Stemma + national arms)
 LI  claude  done         # Liechtenstein — 8 remaining communes sourced (de.wikipedia Wappen)
 ZA  claude  partial      # South Africa — Western Cape sourced; other 6 provinces omitted (arms image-only)
