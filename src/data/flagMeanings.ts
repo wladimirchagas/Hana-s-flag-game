@@ -9488,6 +9488,57 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Tiroler Adler — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Tiroler_Adler" },
     ],
   },
+
+  "AT-4": {
+    description:
+      "The state arms on the flag: a shield split between a golden eagle with red tongue and claws on " +
+      "black, and three red-and-silver bars. The eagle — once shown holding scales for the office of " +
+      "the regional judge ‘above the Enns’ — has marked Upper Austria since the 14th century.",
+    sources: [
+      { title: "Wappen Oberösterreichs — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_Ober%C3%B6sterreichs" },
+    ],
+  },
+
+  "AT-5": {
+    description:
+      "The state arms on the flag: a shield split between a golden lion rampant on black and a silver " +
+      "bar on red. The two halves come from the historic arms of the Archbishopric of Salzburg, which " +
+      "ruled the land as an ecclesiastical principality until 1803.",
+    sources: [
+      { title: "Wappen Salzburgs — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_Salzburgs" },
+    ],
+  },
+
+  "AT-8": {
+    description:
+      "The state arms on the flag: on a silver field the red Montfort church banner (a gonfalon with " +
+      "three fringed pendants and three rings) — the war emblem of the medieval Counts of Montfort, " +
+      "whose name means ‘strong mountain’. It is the only Austrian state arms with no heraldic animal.",
+    sources: [
+      { title: "Wappen Vorarlbergs — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_Vorarlbergs" },
+    ],
+  },
+
+  "AT-9": {
+    description:
+      "The state arms on the flag: a silver cross on a red shield. The cross — in the red-and-silver of " +
+      "the crusading Knights of St John — is recorded on a Vienna coin as early as 1278; the city " +
+      "adopted this simple cross shield as its main arms in 1925 after the double eagle of the empire.",
+    sources: [
+      { title: "Wappen Wiens — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_Wiens" },
+    ],
+  },
+
+  "AT-1": {
+    description:
+      "The state arms on the flag: on a gold field a red crowned eagle standing on a black rock, with " +
+      "two black crosses above and a small red-and-fur breast shield. The eagle recalls the Counts of " +
+      "Mattersdorf-Forchtenstein and the breast shield the Counts of Güssing — combined in 1922 to mark " +
+      "Burgenland’s union with Austria after 1921.",
+    sources: [
+      { title: "Wappen des Burgenlandes — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_des_Burgenlandes" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
