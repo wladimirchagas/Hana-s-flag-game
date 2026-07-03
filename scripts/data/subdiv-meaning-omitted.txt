@@ -207,3 +207,8 @@ GB-POW
 GB-ANS
 GB-GWN
 TH-30
+
+# Hungarian cities with county rights: flag = the city coat of arms on a field, but neither
+# hu.wikipedia nor en.wikipedia blazons the arms element-by-element (only grant date is given),
+# so no sourced per-element symbolism is reachable. Omitted rather than fabricate.
+HU-GY HU-KM HU-SD HU-SF HU-NK HU-SK HU-TB
