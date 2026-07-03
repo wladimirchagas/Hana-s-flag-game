@@ -53,3 +53,4 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
+ZA  claude  in-progress  # South Africa — 7 remaining provincial coats of arms (en.wikipedia "Coat of arms of X")
