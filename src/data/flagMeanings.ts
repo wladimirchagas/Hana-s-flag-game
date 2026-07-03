@@ -8846,6 +8846,71 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Lambang Papua Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Papua_Barat" },
     ],
   },
+
+  "HU-BA": {
+    description:
+      "The county coat of arms on the flag: on a blue field over a green base, a silver four-turreted " +
+      "fortress (for county rank) whose gate holds a shield with the letters L and J; below, two men " +
+      "carry a huge cluster of grapes slung on a pole — the biblical grapes of Canaan, here a sign of " +
+      "Baranya’s fertile vineyards and its ‘heveng’ harvest tradition.",
+    sources: [
+      { title: "Baranya vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Baranya_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-BK": {
+    description:
+      "The county coat of arms on the flag: a shield joining the two predecessor counties — Saint Paul " +
+      "the Apostle with sword and book (for old Bács-Bodrog) and an armoured knight with a sabre (for " +
+      "Pest-Pilis-Solt-Kiskun) — over wavy silver-and-blue bars for the Danube and the Tisza, the two " +
+      "rivers between which Bács-Kiskun lies.",
+    sources: [
+      { title: "Bács-Kiskun vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/B%C3%A1cs-Kiskun_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-BE": {
+    description:
+      "The county coat of arms on the flag: on the blue half a golden lion rampant on a green triple " +
+      "mount, holding three wheat stalks and a silver sabre and gazing up at the Holy Crown; on the " +
+      "green half three silver bands for the county’s three rivers — the White, Black and Sebes Körös.",
+    sources: [
+      { title: "Békés vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/B%C3%A9k%C3%A9s_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-BZ": {
+    description:
+      "The county coat of arms on the flag: a shield quartered for the four historic counties merged " +
+      "in 1950 — a crowned silver falcon (Borsod), golden grapes with angels (Abaúj), a crowned " +
+      "double-tailed lion with a scale (Gömör) and a silver castle (Zemplén) — crested by a crowned " +
+      "black eagle.",
+    sources: [
+      { title: "Borsod-Abaúj-Zemplén vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Borsod-Aba%C3%BAj-Zempl%C3%A9n_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-CS": {
+    description:
+      "The county coat of arms on the flag: a quartered shield joining three historic counties — Saint " +
+      "Gellért with the Danube (Csanád), a golden lion, a black turul bird, and a silver bastion with " +
+      "a human-faced sun and a cornucopia (Torontál) — over a small inescutcheon of a black eagle above " +
+      "three silver waves for old Csongrád.",
+    sources: [
+      { title: "Csongrád-Csanád vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Csongr%C3%A1d-Csan%C3%A1d_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-FE": {
+    description:
+      "The county coat of arms on the flag: Saint Stephen, Hungary’s first king, in golden robes " +
+      "kneeling before the Virgin and Child and offering up the Holy Crown, sceptre and sword — the " +
+      "legendary dedication of the country to Mary — with the county’s red-and-silver bars and a silver " +
+      "double cross on a crowned green mount.",
+    sources: [
+      { title: "Fejér vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Fej%C3%A9r_v%C3%A1rmegye" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
