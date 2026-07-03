@@ -10906,6 +10906,103 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Yonne (département) — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Yonne_(d%C3%A9partement)" },
     ],
   },
+
+  "FR-84": {
+    description:
+      "The department arms as a banner: a quartered shield for the lands that make up the Vaucluse — the " +
+      "crossed keys of Saint Peter for the papal Comtat Venaissin, the fleur-de-lis with a red label for " +
+      "France, an orange branch for the principality of Orange, and three golden keys — with a hunting " +
+      "horn in the chief.",
+    sources: [
+      { title: "Vaucluse (département) — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Vaucluse_(d%C3%A9partement)" },
+    ],
+  },
+
+  "FR-90": {
+    description:
+      "The department arms as a banner: on blue three golden twin-bars with a golden crenellated tower " +
+      "over all — the arms of the county of Belfort joined with the tower of the town, for the Territoire " +
+      "de Belfort.",
+    sources: [
+      { title: "Territoire de Belfort — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Territoire_de_Belfort" },
+    ],
+  },
+
+  "FR-91": {
+    description:
+      "The department arms as a banner: on blue a silver wavy bend for the river Essonne, a golden " +
+      "radiant sun above, and golden fleurs-de-lis below for the Île-de-France — the arms of the " +
+      "Essonne.",
+    sources: [
+      { title: "Blason département fr Essonne — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Essonne.svg" },
+    ],
+  },
+
+  "FR-83": {
+    description:
+      "The department arms as a banner: on blue a golden fleur-de-lis with a red label over a golden " +
+      "base (chaussé) — the arms of Provence, of which the Var was the eastern part.",
+    sources: [
+      { title: "Blason département fr Var — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Var.svg" },
+    ],
+  },
+
+  "FR-77": {
+    description:
+      "The department arms as a banner: on blue strewn with golden fleurs-de-lis, two silver wavy fesses " +
+      "for the two rivers that name the department, the Seine and the Marne — the arms of Seine-et-Marne " +
+      "on the field of the Île-de-France.",
+    sources: [
+      { title: "Blason département fr Seine-et-Marne — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Seine-et-Marne.svg" },
+    ],
+  },
+
+  "FR-78": {
+    description:
+      "The department arms as a banner: on blue strewn with golden fleurs-de-lis (for the Île-de-France), " +
+      "two silver wavy bends for the department’s rivers — the arms of the Yvelines.",
+    sources: [
+      { title: "Blason département fr Yvelines — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Yvelines.svg" },
+    ],
+  },
+
+  "FR-79": {
+    description:
+      "The department arms as a banner: on red two silver wavy bars for the two Sèvres rivers that name " +
+      "the department, accompanied by five golden towers set 2-1-2 — the arms of the Deux-Sèvres.",
+    sources: [
+      { title: "Blason département fr Deux-Sèvres — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Deux-S%C3%A8vres.svg" },
+    ],
+  },
+
+  "FR-82": {
+    description:
+      "The department arms as a banner: a divided shield of a golden leopard on red (for Guyenne, the " +
+      "Quercy) and the golden clechée Occitan cross of Languedoc on red — the two historic lands of " +
+      "Tarn-et-Garonne.",
+    sources: [
+      { title: "Blason département fr Tarn-et-Garonne — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Tarn-et-Garonne.svg" },
+    ],
+  },
+
+  "FR-87": {
+    description:
+      "The department arms as a banner: an ermine field within a red border, crossed by a blue wavy fess " +
+      "for the river Vienne — the arms of the Haute-Vienne.",
+    sources: [
+      { title: "Blason département fr Haute-Vienne — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Haute-Vienne.svg" },
+    ],
+  },
+
+  "FR-85": {
+    description:
+      "The department arms as a banner: on silver a red crowned double heart topped with a cross — the " +
+      "‘Vendéen heart’, the Sacred-Heart emblem worn by the Catholic-Royalist insurgents of the 1793 " +
+      "Vendée uprising — within a border alternating fleurs-de-lis and castles.",
+    sources: [
+      { title: "Blason département fr Vendée — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Vend%C3%A9e.svg" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
