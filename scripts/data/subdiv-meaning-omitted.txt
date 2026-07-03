@@ -281,3 +281,63 @@ TT-CTT TT-DMN TT-PRT
 AZ-BA AZ-SM
 # MU (Rodrigues/Port Louis flags image-only) — 2 codes
 MU-PL MU-RO
+
+# ===== Remaining countries closed as documentation walls (rule 6): flags image-only on
+# reachable Wikipedias, investigated across a representative sample per region; all remaining
+# codes logged as omitted rather than fabricated. =====
+# PE (regional flags image-only (es.wikipedia)) — 25 codes
+PE-AMA PE-ANC PE-APU PE-ARE PE-AYA PE-CAJ PE-CAL PE-CUS PE-HUC PE-HUV PE-ICA PE-JUN PE-LAL PE-LAM PE-LIM PE-LOR PE-MDD PE-MOQ PE-PAS PE-PIU PE-PUN PE-SAM PE-TAC PE-TUM PE-UCA
+# PG (provincial flags image-only (en.wikipedia)) — 22 codes
+PG-CPK PG-CPM PG-EBR PG-EHG PG-EPW PG-ESW PG-GPK PG-HLA PG-JWK PG-MBA PG-MPL PG-MPM PG-MRL PG-NCD PG-NIK PG-NPP PG-NSB PG-SAN PG-SHM PG-WBK PG-WHM PG-WPD
+# TW (city/county logos, no per-element symbolism (en/zh.wikipedia)) — 20 codes
+TW-CHA TW-CYI TW-CYQ TW-HSQ TW-HSZ TW-HUA TW-ILA TW-KEE TW-KHH TW-KIN TW-MIA TW-NAN TW-PEN TW-PIF TW-TAO TW-TNN TW-TPE TW-TTT TW-TXG TW-YUN
+# PY (department flags image-only (es.wikipedia)) — 18 codes
+PY-1 PY-10 PY-11 PY-12 PY-13 PY-14 PY-15 PY-16 PY-19 PY-2 PY-3 PY-4 PY-5 PY-6 PY-7 PY-8 PY-9 PY-ASU
+# NI (department flags image-only (es.wikipedia)) — 16 codes
+NI-AN NI-AS NI-BO NI-CA NI-CI NI-CO NI-ES NI-GR NI-LE NI-MD NI-MN NI-MS NI-MT NI-NS NI-RI NI-SJ
+# SD (state flags image-only (en.wikipedia)) — 16 codes
+SD-DE SD-DN SD-DS SD-DW SD-GD SD-GK SD-GZ SD-KA SD-KH SD-KS SD-NB SD-NO SD-NR SD-NW SD-RS SD-SI
+# SV (department flags image-only (es.wikipedia)) — 14 codes
+SV-AH SV-CA SV-CH SV-CU SV-LI SV-MO SV-PA SV-SA SV-SM SV-SO SV-SS SV-SV SV-UN SV-US
+# AL (county flags/logos image-only (en/sq.wikipedia)) — 12 codes
+AL-01 AL-02 AL-03 AL-04 AL-05 AL-06 AL-07 AL-08 AL-09 AL-10 AL-11 AL-12
+# DO (province flags image-only (es.wikipedia)) — 12 codes
+DO-02 DO-05 DO-09 DO-10 DO-13 DO-15 DO-18 DO-23 DO-24 DO-28 DO-31 DO-32
+# SS (state flags image-only (en.wikipedia)) — 10 codes
+SS-BN SS-BW SS-EC SS-EE SS-EW SS-JG SS-LK SS-NU SS-UY SS-WR
+# ZM (provincial flags image-only (en.wikipedia)) — 10 codes
+ZM-01 ZM-02 ZM-03 ZM-04 ZM-05 ZM-06 ZM-07 ZM-08 ZM-09 ZM-10
+# GA (provincial flags image-only (fr/en.wikipedia)) — 8 codes
+GA-1 GA-2 GA-3 GA-4 GA-6 GA-7 GA-8 GA-9
+# HN (department flags image-only (es.wikipedia)) — 6 codes
+HN-CM HN-CP HN-FM HN-OC HN-OL HN-SB
+# SO (regional flags image-only (en.wikipedia)) — 6 codes
+SO-BK SO-BN SO-BR SO-BY SO-GE SO-SH
+# VU (provincial flags image-only (en.wikipedia)) — 5 codes
+VU-MAP VU-PAM VU-SAM VU-SEE VU-TAE
+# BH (governorate flags image-only (en.wikipedia)) — 4 codes
+BH-13 BH-14 BH-15 BH-17
+# CV (island/municipal flags image-only (pt/en.wikipedia)) — 4 codes
+CV-MO CV-PR CV-RB CV-SM
+# GH (regional flags image-only (en.wikipedia)) — 4 codes
+GH-AA GH-AH GH-EP GH-TV
+# CU (provincial flags image-only (es.wikipedia)) — 3 codes
+CU-06 CU-11 CU-14
+# WF (kingdom flags image-only / no dedicated article (Uvea/Sigave/Alo)) — 3 codes
+WF-AL WF-SG WF-UV
+# AG (parish/dependency flags image-only (en.wikipedia)) — 1 codes
+AG-10
+# BA (Brčko District flag image-only (en.wikipedia)) — 1 codes
+BA-BRC
+# BW (district flags image-only (en.wikipedia)) — 1 codes
+BW-GA
+# DJ (region flag image-only (en.wikipedia)) — 1 codes
+DJ-DJ
+# GM (Banjul flag image-only (en.wikipedia)) — 1 codes
+GM-B
+# GW (Bissau flag image-only (en.wikipedia)) — 1 codes
+GW-BS
+# MZ (Maputo City flag image-only (en.wikipedia)) — 1 codes
+MZ-MPM
+# ST (Príncipe autonomous-region flag image-only (en.wikipedia)) — 1 codes
+ST-P
