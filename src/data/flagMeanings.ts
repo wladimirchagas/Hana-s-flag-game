@@ -9640,6 +9640,56 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Pohjanmaan maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Pohjanmaan_maakunnan_vaakuna" },
     ],
   },
+
+  "FI-03": {
+    description:
+      "The regional arms as a banner: on a blue field three running silver martens with black-tipped " +
+      "tails, taken from old Ostrobothnia’s arms. The marten, a fur animal, stands for purity and — as " +
+      "valuable fur — for prosperity.",
+    sources: [
+      { title: "Etelä-Pohjanmaan maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Etel%C3%A4-Pohjanmaan_maakunnan_vaakuna" },
+    ],
+  },
+
+  "FI-04": {
+    description:
+      "The regional arms as a banner: on a black field a drawn golden bow with a silver string and " +
+      "arrow — the Savonian bow, the historic emblem of Savonia, here drawn in the older (reversed) " +
+      "direction that makes Southern Savonia’s arms a noted exception.",
+    sources: [
+      { title: "Etelä-Savon maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Etel%C3%A4-Savon_maakunnan_vaakuna" },
+    ],
+  },
+
+  "FI-06": {
+    description:
+      "The regional arms as a banner: on a red field a walking golden lynx with black ear-tufts, three " +
+      "silver stars above and four silver roses below. The lynx recalls the animal’s abundance in Häme " +
+      "and the importance of hunting it in the Middle Ages; the arms go back to 1560.",
+    sources: [
+      { title: "Kanta-Hämeen maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Kanta-H%C3%A4meen_maakunnan_vaakuna" },
+    ],
+  },
+
+  "FI-15": {
+    description:
+      "The regional arms as a banner: on a black field a drawn golden bow with a silver string and " +
+      "arrow — the Savonian bow, recalling Northern Savonia’s role as the easternmost march of the " +
+      "Swedish realm before 1617; the arms date from 1560.",
+    sources: [
+      { title: "Pohjois-Savon maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/Pohjois-Savon_maakunnan_vaakuna" },
+    ],
+  },
+
+  "FI-16": {
+    description:
+      "The regional arms as a banner: on a blue field a golden mermaid (the water-spirit Vellamo) with " +
+      "a golden cuckoo above. Vellamo stands for Päijät-Häme’s lakes and ridges, and the cuckoo for the " +
+      "region’s Karelian people; adopted in 1997.",
+    sources: [
+      { title: "Päijät-Hämeen maakunnan vaakuna — Wikipedia (Finnish)", url: "https://fi.wikipedia.org/wiki/P%C3%A4ij%C3%A4t-H%C3%A4meen_maakunnan_vaakuna" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
