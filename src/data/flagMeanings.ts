@@ -8389,6 +8389,93 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Ranong province — Wikipedia", url: "https://en.wikipedia.org/wiki/Ranong_province" },
     ],
   },
+
+  "TH-10": {
+    description:
+      "A flag bearing the seal of Bangkok, which shows the Hindu god Indra riding through the clouds on " +
+      "Airavata (Erawan), the divine white elephant, holding his vajra. Based on a painting by Prince " +
+      "Naris, it echoes the city’s ceremonial name as a “city of angels” erected at Indra’s behest.",
+    sources: [
+      { title: "Bangkok — Wikipedia", url: "https://en.wikipedia.org/wiki/Bangkok" },
+    ],
+  },
+
+  "TH-17": {
+    description:
+      "A flag bearing the provincial seal, which commemorates the Bang Rachan stand: when the Burmese " +
+      "marched on Ayutthaya in 1765, eleven leaders and the villagers of Bang Rachan held them off for " +
+      "five months. The current seal (2004) depicts the eleven heroes.",
+    sources: [
+      { title: "Sing Buri province — Wikipedia", url: "https://en.wikipedia.org/wiki/Sing_Buri_province" },
+    ],
+  },
+
+  "TH-37": {
+    description:
+      "A flag bearing the provincial seal, which shows Phra Mongkhon Ming Muang (Phra Yai, the “Big " +
+      "Buddha”), a 20-metre statue among the most sacred images in Amnat Charoen.",
+    sources: [
+      { title: "Amnat Charoen province — Wikipedia", url: "https://en.wikipedia.org/wiki/Amnat_Charoen_province" },
+    ],
+  },
+
+  "TH-38": {
+    description:
+      "A flag bearing the provincial seal, which shows Phu Thok, a mountain in Si Wilai district whose " +
+      "Isan-language name means “lonely mountain.”",
+    sources: [
+      { title: "Bueng Kan province — Wikipedia", url: "https://en.wikipedia.org/wiki/Bueng_Kan_province" },
+    ],
+  },
+
+  "TH-39": {
+    description:
+      "A flag bearing the provincial seal, which shows King Naresuan in a shrine — commemorating his " +
+      "1574 visit to gather troops against Burma — with a lotus pond behind (the water lily being the " +
+      "provincial flower).",
+    sources: [
+      { title: "Nong Bua Lamphu province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nong_Bua_Lamphu_province" },
+    ],
+  },
+
+  "TH-82": {
+    description:
+      "A flag bearing the provincial seal, which shows the Phu Khao Chang mountains behind the city " +
+      "hall, with a tin dredge for the province’s historic tin-mining industry.",
+    sources: [
+      { title: "Phang Nga province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phang_Nga_province" },
+    ],
+  },
+
+  "TH-74": {
+    description:
+      "A flag bearing the provincial seal, which shows a Chinese junk off the coast with a factory and " +
+      "smoking chimney behind — together standing for the province’s old trading tradition and its " +
+      "local industries.",
+    sources: [
+      { title: "Samut Sakhon province — Wikipedia", url: "https://en.wikipedia.org/wiki/Samut_Sakhon_province" },
+    ],
+  },
+
+  "TH-75": {
+    description:
+      "A flag bearing the provincial seal, which shows a drum over a river between coconut palms. The " +
+      "Thai word for drum, klong, alludes to the Mae Klong River and the province’s former name Mae " +
+      "Klong; the palms stand for its coconut farming.",
+    sources: [
+      { title: "Samut Songkhram province — Wikipedia", url: "https://en.wikipedia.org/wiki/Samut_Songkhram_province" },
+    ],
+  },
+
+  "TH-91": {
+    description:
+      "A flag bearing the provincial seal, which shows the sea deity Phra Samut Thewa seated on his " +
+      "rock in the sea against a sunset — the setting sun standing for the Andaman Sea to the west of " +
+      "the province.",
+    sources: [
+      { title: "Satun province — Wikipedia", url: "https://en.wikipedia.org/wiki/Satun_province" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
