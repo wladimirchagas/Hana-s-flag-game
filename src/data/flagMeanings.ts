@@ -7742,6 +7742,197 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Drapeau de la Corse — Wikipédia", url: "https://fr.wikipedia.org/wiki/Drapeau_de_la_Corse" },
     ],
   },
+
+  "TH-13": {
+    description:
+      "A navy-blue and white flag bearing the provincial seal: a pink lotus with two rice stalks " +
+      "bending over it, standing for the fertility of the province. The lotus also gives the province " +
+      "its name — after citizens presented King Rama II with lotus flowers on his 1815 visit, he " +
+      "renamed the town Pathum Thani, “lotus-flower town.”",
+    sources: [
+      { title: "Pathum Thani province — Wikipedia", url: "https://en.wikipedia.org/wiki/Pathum_Thani_province" },
+    ],
+  },
+
+  "TH-14": {
+    description:
+      "A navy-blue flag with a light-blue central band bearing the provincial seal: a pavilion " +
+      "enshrining a conch shell on a pedestal tray, with the provincial tree behind. By tradition King " +
+      "Ramathibodi I found a beautiful conch buried at the spot and chose it for his capital, building " +
+      "a pavilion over the shell.",
+    sources: [
+      { title: "Phra Nakhon Si Ayutthaya province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phra_Nakhon_Si_Ayutthaya_province" },
+    ],
+  },
+
+  "TH-50": {
+    description:
+      "A light-blue flag bearing the provincial seal: a white elephant in a glass pavilion. The white " +
+      "elephant commemorates the one offered by Thammalangka, a ruler of Chiang Mai, to his overlord " +
+      "King Rama II; the glass pavilion alludes to the Buddhist flourishing of the region, recalling " +
+      "the 1477 review of the Tripitaka.",
+    sources: [
+      { title: "Chiang Mai province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chiang_Mai_province" },
+    ],
+  },
+
+  "TH-20": {
+    description:
+      "A flag bearing the provincial seal, which shows the hill Khao Sam Muk with a sala (open " +
+      "pavilion) holding a statue of the goddess Chao Mae Sam Muk, the local deity who by tradition " +
+      "protects the seafarers and people of the coast.",
+    sources: [
+      { title: "Chonburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chonburi_province" },
+    ],
+  },
+
+  "TH-40": {
+    description:
+      "A flag bearing the provincial seal, which shows the stupa of Phra That Kham Kaen — believed to " +
+      "hold relics of the Buddha — flanked by a banyan tree and a golden-shower tree, the latter’s Thai " +
+      "name meaning “providing support and preventing decline.”",
+    sources: [
+      { title: "Khon Kaen province — Wikipedia", url: "https://en.wikipedia.org/wiki/Khon_Kaen_province" },
+    ],
+  },
+
+  "TH-80": {
+    description:
+      "A flag bearing the provincial seal, which shows the Phra Boromathat chedi of Wat Phra Mahathat " +
+      "encircled by the twelve animals of the zodiac. Each animal stood for one of the tributary " +
+      "city-states of the historical Nakhon Si Thammarat kingdom, whose sway once ran from Chumphon " +
+      "south to Pahang.",
+    sources: [
+      { title: "Nakhon Si Thammarat province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nakhon_Si_Thammarat_province" },
+    ],
+  },
+
+  "TH-57": {
+    description:
+      "A flag bearing the provincial seal, which shows a white elephant — the royal symbol. It recalls " +
+      "the legend that King Mangrai founded Chiang Rai on the spot because his elephant favoured the " +
+      "place.",
+    sources: [
+      { title: "Chiang Rai province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chiang_Rai_province" },
+    ],
+  },
+
+  "TH-11": {
+    description:
+      "A flag bearing the provincial seal, which shows Phra Samut Chedi — a pagoda raised on an island " +
+      "in the Chao Phraya in King Rama II’s reign and the province’s most important Buddhist site. The " +
+      "name Samut Prakan means “sea fortress,” recalling its role as a fortified river port.",
+    sources: [
+      { title: "Samut Prakan province — Wikipedia", url: "https://en.wikipedia.org/wiki/Samut_Prakan_province" },
+    ],
+  },
+
+  "TH-12": {
+    description:
+      "A flag bearing the provincial seal, which depicts earthenware — the traditional pottery for " +
+      "which Nonthaburi has long been known, representing the province’s craft heritage.",
+    sources: [
+      { title: "Nonthaburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nonthaburi_province" },
+    ],
+  },
+
+  "TH-83": {
+    description:
+      "A flag bearing the provincial seal, which shows the Two Heroines Monument within a Thai kranok " +
+      "border. The monument honours Thao Thep Krasattri and Thao Si Sunthon, the sisters who rallied " +
+      "Phuket’s defence against a Burmese invasion in 1785. In use since 1985.",
+    sources: [
+      { title: "Phuket province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phuket_province" },
+    ],
+  },
+
+  "TH-21": {
+    description:
+      "A flag bearing the provincial seal, which depicts the island of Ko Samet off the Rayong coast — " +
+      "the island celebrated, together with the poet Sunthon Phu, in the province’s motto.",
+    sources: [
+      { title: "Rayong province — Wikipedia", url: "https://en.wikipedia.org/wiki/Rayong_province" },
+    ],
+  },
+
+  "TH-22": {
+    description:
+      "A flag bearing the provincial seal, which shows a rabbit within a haloed moon. The moon canting " +
+      "the province’s name — “Chantha” means moon, so Chanthaburi is “city of the moon” — and the " +
+      "rabbit (the shape Thai folklore sees in the moon) conveys the peace and tranquillity of the " +
+      "province.",
+    sources: [
+      { title: "Chanthaburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chanthaburi_province" },
+    ],
+  },
+
+  "TH-84": {
+    description:
+      "A flag bearing the provincial seal, which shows the pagoda of Wat Phra Borommathat Chaiya, a " +
+      "historic Srivijaya-era stupa some 1,200 years old and the province’s foremost religious " +
+      "monument.",
+    sources: [
+      { title: "Surat Thani province — Wikipedia", url: "https://en.wikipedia.org/wiki/Surat_Thani_province" },
+    ],
+  },
+
+  "TH-51": {
+    description:
+      "A flag bearing the provincial seal, which shows the gold-covered chedi of Wat Phra That " +
+      "Hariphunchai, the city’s principal temple since Mon times, said to enshrine a relic of the " +
+      "Buddha.",
+    sources: [
+      { title: "Lamphun province — Wikipedia", url: "https://en.wikipedia.org/wiki/Lamphun_province" },
+    ],
+  },
+
+  "TH-52": {
+    description:
+      "A flag bearing the provincial seal, which shows a white rooster in the gateway of Wat Phra That " +
+      "Lampang Luang. By legend, when the Buddha visited, the god Indra turned himself into a white " +
+      "rooster to wake the people so they would pay their respects.",
+    sources: [
+      { title: "Lampang province — Wikipedia", url: "https://en.wikipedia.org/wiki/Lampang_province" },
+    ],
+  },
+
+  "TH-90": {
+    description:
+      "A flag bearing the provincial seal, which shows a conch shell on a phan (offering tray) with " +
+      "glass decorations. By the most accepted account the emblem derives from a decoration on the " +
+      "jacket of the Prince of Songkhla.",
+    sources: [
+      { title: "Songkhla province — Wikipedia", url: "https://en.wikipedia.org/wiki/Songkhla_province" },
+    ],
+  },
+
+  "TH-31": {
+    description:
+      "A flag bearing the provincial seal, which shows the Phanom Rung sanctuary, a Khmer-style Hindu " +
+      "temple to Shiva built between the 9th and 12th centuries when the Khmer Empire held the region.",
+    sources: [
+      { title: "Buriram province — Wikipedia", url: "https://en.wikipedia.org/wiki/Buriram_province" },
+    ],
+  },
+
+  "TH-32": {
+    description:
+      "A flag bearing the provincial seal, which shows the god Indra on his white three-headed elephant " +
+      "Airavata, based on a carving at a famous Khmer temple in the province — apt for a province known " +
+      "for both its Khmer temples and its elephants.",
+    sources: [
+      { title: "Surin province — Wikipedia", url: "https://en.wikipedia.org/wiki/Surin_province" },
+    ],
+  },
+
+  "TH-34": {
+    description:
+      "A flag bearing the provincial seal, which shows a lotus flower in a pond — alluding to the " +
+      "province’s name, which means “royal city of the lotus.”",
+    sources: [
+      { title: "Ubon Ratchathani province — Wikipedia", url: "https://en.wikipedia.org/wiki/Ubon_Ratchathani_province" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
