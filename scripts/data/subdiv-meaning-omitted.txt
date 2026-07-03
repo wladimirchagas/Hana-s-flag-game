@@ -212,3 +212,9 @@ TH-30
 # hu.wikipedia nor en.wikipedia blazons the arms element-by-element (only grant date is given),
 # so no sourced per-element symbolism is reachable. Omitted rather than fabricate.
 HU-GY HU-KM HU-SD HU-SF HU-NK HU-SK HU-TB
+
+# Liberian counties: each county has a distinct flag, but only Montserrado (LR-MO) has
+# element-by-element symbolism documented on en.wikipedia. The other 11 county flags are shown
+# as images with no sourceable per-element meaning (some list only the bare design), so they are
+# omitted rather than fabricated. LR-MO is sourced in flagMeanings.ts.
+LR-MY LR-SI LR-NI LR-GB LR-CM LR-LO LR-GG LR-BM LR-MG LR-RI LR-GK
