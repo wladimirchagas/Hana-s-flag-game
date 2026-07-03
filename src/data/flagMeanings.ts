@@ -8546,6 +8546,72 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Lambang DKI Jakarta — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Daerah_Khusus_Ibukota_Jakarta" },
     ],
   },
+
+  "ID-SU": {
+    description:
+      "A flag bearing the heart-shaped North Sumatra emblem: a woman planting rice among palm, rubber " +
+      "and tobacco with fish, below the five peaks of the Bukit Barisan (noble society and mutual " +
+      "cooperation) and a gold star, held by a fist on a chain. The 17 cotton bolls, 8 web-angles and " +
+      "45 rice grains mark 17 August 1945.",
+    sources: [
+      { title: "Lambang Sumatera Utara — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sumatera_Utara" },
+    ],
+  },
+
+  "ID-SB": {
+    description:
+      "A flag bearing the West Sumatra emblem: the silhouette of a Minangkabau rumah gadang with its " +
+      "horn-shaped gonjong roof and a tiered mosque roof, a star for belief in God, and three white " +
+      "waves for social dynamism — together standing for a people firm in religion and adat. Motto: " +
+      "“Tuah Sakato.”",
+    sources: [
+      { title: "Lambang Sumatera Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sumatera_Barat" },
+    ],
+  },
+
+  "ID-SS": {
+    description:
+      "A flag bearing the South Sumatra emblem: a five-petalled lotus (courage and justice, and the " +
+      "sacred flower of the old Srivijaya kingdom), nine rivers (the “Batang Hari Sembilan” that name " +
+      "the province), the Ampera Bridge, and a mountain, under a traditional roof whose 17 peaks, 8 " +
+      "rows and 45 tiles mark independence in 1945. Motto: “Bersatu Teguh.”",
+    sources: [
+      { title: "Lambang Sumatera Selatan — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sumatera_Selatan" },
+    ],
+  },
+
+  "ID-RI": {
+    description:
+      "A flag bearing the Riau emblem: a yellow lancang sailing boat with white sails riding a " +
+      "five-layered wave (the five principles of Pancasila), a keris dagger tipped with a serindit " +
+      "bird for wisdom and heroism, and framing rice and cotton for prosperity. A chain of 45 links " +
+      "marks 1945, the year of Indonesian independence.",
+    sources: [
+      { title: "Lambang Riau — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Riau" },
+    ],
+  },
+
+  "ID-JA": {
+    description:
+      "A flag bearing the pentagonal Jambi emblem (the pentagon for Pancasila): a mosque for faith, " +
+      "the Keris Siginjai recalling the struggle against colonial rule, and a gong for democratic " +
+      "consensus, with a betel cerana for sincerity. Its motto “Sepucuk Jambi Sembilan Lurah” — one " +
+      "Jambi, nine districts — stands for the unity of the province’s nine river regions.",
+    sources: [
+      { title: "Lambang Jambi — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Jambi" },
+    ],
+  },
+
+  "ID-LA": {
+    description:
+      "A flag bearing the Lampung emblem: a golden siger (the traditional bridal crown) for cultural " +
+      "dignity above a shield with a tiered parasol sheltering the people, flanked by 45 rice stalks " +
+      "and 17 pepper leaves for the province’s harvests. Its motto “Sang Bumi Ruwa Jurai” means one " +
+      "land of two traditions — the Saibatin and Pepadun peoples.",
+    sources: [
+      { title: "Lambang Lampung — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Lampung" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
