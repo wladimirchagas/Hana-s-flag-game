@@ -53,7 +53,7 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
-FR  claude  in-progress  # France — 97 department armorial banners (fr.wikipedia Heraldique/blason)
+FR  claude  done         # France — all 97 departments + overseas collectivities sourced (Armorial/Commons)
 MU  claude  wall         # Mauritius — Rodrigues/Port Louis flags image-only (en.wikipedia)
 TT  claude  wall         # Trinidad & Tobago — regional corp flags image-only (en.wikipedia)
 GL  claude  wall         # Greenland — municipal arms image-only (en.wikipedia)

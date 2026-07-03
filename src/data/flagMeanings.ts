@@ -11043,6 +11043,95 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Blason département fr Val-d'Oise — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Val-d%27Oise.svg" },
     ],
   },
+
+  "FR-59": {
+    description:
+      "The department arms as a banner: on gold a black lion with red claws and tongue — the Lion of " +
+      "Flanders, the arms of the historic County of Flanders from which the Nord was formed.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-67": {
+    description:
+      "The department arms as a banner: on red a silver bend flanked by two flowered cotises — the arms " +
+      "of Lower Alsace, the historic land of the Bas-Rhin.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-68": {
+    description:
+      "The department arms as a banner: on red a golden bend accompanied by six golden crowns (three " +
+      "above, three inverted below) — the arms of Upper Alsace, the historic land of the Haut-Rhin.",
+    sources: [
+      { title: "Blason département fr Haut-Rhin — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Haut-Rhin.svg" },
+    ],
+  },
+
+  "FR-PF": {
+    description:
+      "The collectivity flag: two red bands around a white band bearing the emblem of French Polynesia " +
+      "— a Polynesian outrigger canoe (pirogue) riding blue-and-white waves beneath a golden sun, with " +
+      "five figures for the five island groups (Society, Tuamotu, Gambier, Marquesas and Austral). Red " +
+      "and white are traditional Polynesian colours.",
+    sources: [
+      { title: "Flag of French Polynesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
+    ],
+  },
+
+  "FR-PM": {
+    description:
+      "The collectivity flag (unofficial): on blue the golden ship Grande Hermine, in which Jacques " +
+      "Cartier reached Saint-Pierre in 1536, over waves; the hoist carries the Basque, Breton and Norman " +
+      "flags for the three homelands most islanders descend from.",
+    sources: [
+      { title: "Flag of Saint-Pierre and Miquelon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint-Pierre_and_Miquelon" },
+    ],
+  },
+
+  "FR-NC": {
+    description:
+      "The Kanak (FLNKS) flag: blue, red and green bands with a yellow disc bearing a black flèche " +
+      "faîtière — the carved spire that crowns Kanak houses. Blue is the sky and sea, red the blood " +
+      "shed in the independence struggle and Kanak unity, green the land and the ancestors within it, " +
+      "and the disc is the sun.",
+    sources: [
+      { title: "Flags of New Caledonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
+    ],
+  },
+
+  "FR-WF": {
+    description:
+      "The collectivity flag (unofficial, 1985): a red field with a white square bearing a red saltire " +
+      "(cross) at the fly, and the French tricolour in the canton. It is the territory’s de-facto flag; " +
+      "on official occasions the French flag is flown.",
+    sources: [
+      { title: "Flag of Wallis and Futuna — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wallis_and_Futuna" },
+    ],
+  },
+
+  "FR-BL": {
+    description:
+      "The collectivity arms: a shield bearing the Three Crowns of Sweden, recalling the island’s time " +
+      "as a Swedish colony (1784–1878), when King Gustav III made Gustavia a free port. (France " +
+      "recognises no official regional flag.)",
+    sources: [
+      { title: "Saint Barthélemy — Wikipedia", url: "https://en.wikipedia.org/wiki/Saint_Barth%C3%A9lemy" },
+    ],
+  },
+
+  "FR-MF": {
+    description:
+      "The collectivity emblem on a white flag: a brown pelican in flight over a hibiscus flower and a " +
+      "rising sun, above a “Saint-Martin” banner — the emblem of the French collectivity of Saint-Martin. " +
+      "(France recognises no official regional flag.)",
+    sources: [
+      { title: "Saint Martin (France) — Wikipedia", url: "https://en.wikipedia.org/wiki/Saint_Martin_(France)" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
