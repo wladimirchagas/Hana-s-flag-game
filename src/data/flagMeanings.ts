@@ -9842,6 +9842,17 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Герб Минска — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0" },
     ],
   },
+
+  "AM-ER": {
+    description:
+      "The city flag: on white the seal of Yerevan — a crowned lion on orange holding a shield with " +
+      "Mount Ararat, Armenia’s national symbol, and half of the Armenian eternity sign — surrounded by " +
+      "twelve small red triangles for the twelve historic capitals of Armenia. Its colours are those of " +
+      "the national flag.",
+    sources: [
+      { title: "Yerevan — Wikipedia", url: "https://en.wikipedia.org/wiki/Yerevan" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
