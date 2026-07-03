@@ -8274,6 +8274,121 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Krabi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Krabi_province" },
     ],
   },
+
+  "TH-54": {
+    description:
+      "A flag bearing the provincial seal, which shows a horse together with the stupa of Phra That Cho " +
+      "Hae. The horse recalls the legend that the ruler of Phrae came riding a horse (while Nan’s came " +
+      "on a buffalo) to divide their lands; the stupa was added to the design in 1940.",
+    sources: [
+      { title: "Phrae province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phrae_province" },
+    ],
+  },
+
+  "TH-56": {
+    description:
+      "A flag bearing the provincial seal, which shows the revered Buddha image Phra Chao Ton Luang of " +
+      "Wat Si Khom Kham, backed by seven flames for the glory of the Buddha, with an alms bowl and two " +
+      "ears of rice before it.",
+    sources: [
+      { title: "Phayao province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phayao_province" },
+    ],
+  },
+
+  "TH-53": {
+    description:
+      "A flag bearing the provincial seal, which shows the mondop of Wat Phra Thaen Sila At, built over " +
+      "a laterite block said to have been used by the Buddha in seeking enlightenment.",
+    sources: [
+      { title: "Uttaradit province — Wikipedia", url: "https://en.wikipedia.org/wiki/Uttaradit_province" },
+    ],
+  },
+
+  "TH-60": {
+    description:
+      "A flag bearing the provincial seal, which shows a wiman — a mythological heavenly castle — " +
+      "alluding to the province’s name, Nakhon Sawan, “heavenly city.”",
+    sources: [
+      { title: "Nakhon Sawan province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nakhon_Sawan_province" },
+    ],
+  },
+
+  "TH-67": {
+    description:
+      "A flag bearing the provincial seal, which shows a diamond on a mountain — diamonds being found " +
+      "in the province — above tobacco plants, one of its crops.",
+    sources: [
+      { title: "Phetchabun province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phetchabun_province" },
+    ],
+  },
+
+  "TH-66": {
+    description:
+      "A flag bearing the provincial seal, which shows a pond — recalling Phichit’s old name Mueang Sa " +
+      "Luang, “city of the royal pond” — with a banyan tree for Wat Pho Prathap Chang, built in the " +
+      "1660s by King Luang Sorasak, born between a banyan and a sacred fig.",
+    sources: [
+      { title: "Phichit province — Wikipedia", url: "https://en.wikipedia.org/wiki/Phichit_province" },
+    ],
+  },
+
+  "TH-63": {
+    description:
+      "A flag bearing the provincial seal, which shows King Naresuan on a royal elephant pouring " +
+      "consecrated water on the ground to declare independence — commemorating Tak as the first border " +
+      "town freed from Burmese control in the 1584 war.",
+    sources: [
+      { title: "Tak province — Wikipedia", url: "https://en.wikipedia.org/wiki/Tak_province" },
+    ],
+  },
+
+  "TH-62": {
+    description:
+      "A flag bearing the provincial seal, which shows city walls topped by diamonds — the name " +
+      "Kamphaeng Phet means “diamond wall,” after the strong ramparts that once guarded the Ayutthaya " +
+      "kingdom’s frontier with Burma.",
+    sources: [
+      { title: "Kamphaeng Phet province — Wikipedia", url: "https://en.wikipedia.org/wiki/Kamphaeng_Phet_province" },
+    ],
+  },
+
+  "TH-61": {
+    description:
+      "A flag bearing the provincial seal, which shows the pavilion atop Khao Sakae Krang at Wat Sangkat " +
+      "Rattana Khiri, housing a statue of Thongdi (father of King Rama I) and a Buddha footprint.",
+    sources: [
+      { title: "Uthai Thani province — Wikipedia", url: "https://en.wikipedia.org/wiki/Uthai_Thani_province" },
+    ],
+  },
+
+  "TH-58": {
+    description:
+      "A flag bearing the provincial seal, which shows an elephant in water, recalling the province’s " +
+      "origins as an elephant-training centre — set up in the 1820s–40s when Lord Kaeo was sent to " +
+      "catch elephants for the ruler of Chiang Mai.",
+    sources: [
+      { title: "Mae Hong Son province — Wikipedia", url: "https://en.wikipedia.org/wiki/Mae_Hong_Son_province" },
+    ],
+  },
+
+  "TH-86": {
+    description:
+      "A flag bearing the provincial seal, which shows a fortune-bringing thewada on a lotus pedestal " +
+      "between two fig trees, with a fort and two watchtowers behind — a reference to the camp where " +
+      "the province’s warriors mustered before battle.",
+    sources: [
+      { title: "Chumphon province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chumphon_province" },
+    ],
+  },
+
+  "TH-85": {
+    description:
+      "A flag bearing the provincial seal, which shows a castle on a hill — Ratana Rangsan Palace on " +
+      "Niwetkhiri Hill, where King Chulalongkorn (Rama V) stayed on his 1890 visit to Ranong.",
+    sources: [
+      { title: "Ranong province — Wikipedia", url: "https://en.wikipedia.org/wiki/Ranong_province" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
