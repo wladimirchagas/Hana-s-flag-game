@@ -8745,6 +8745,72 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Lambang Sulawesi Tenggara — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sulawesi_Tenggara" },
     ],
   },
+
+  "ID-SN": {
+    description:
+      "A flag bearing the South Sulawesi emblem: a gold star for belief in God over a white mountain, " +
+      "a badik dagger and green ricefields, and a shield showing Fort Somba Opu with a pinisi ship for " +
+      "the seafaring spirit of Makassar, with coconut, hoe and gear for farming and industry, framed " +
+      "by 17 rice stalks and 8 cotton blooms for 1945. Its Lontara motto “Toddo’ Puli” means steadfast.",
+    sources: [
+      { title: "Lambang Sulawesi Selatan — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sulawesi_Selatan" },
+    ],
+  },
+
+  "ID-ST": {
+    description:
+      "A flag bearing the heart-shaped Central Sulawesi emblem: a star for belief in God and firm " +
+      "ideals, a coconut tree for the crop that underpins the people’s welfare, and rice and cotton " +
+      "for prosperity. The counts of cotton petals, rice grains and waves encode 13 April 1964, when " +
+      "the province was established.",
+    sources: [
+      { title: "Lambang Sulawesi Tengah — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sulawesi_Tengah" },
+    ],
+  },
+
+  "ID-SR": {
+    description:
+      "A flag bearing the West Sulawesi emblem: a star for belief in God and a white Balenga Leta " +
+      "vessel holding fourteen gold meanders for the historic Mandar kingdoms, a forward-facing sandeq " +
+      "boat for progress over five waves for the founding districts, a black trisula for courage and " +
+      "knowledge, and rice and jasmine for refinement. Motto: “Mellete Diatonganan” (pursuing truth).",
+    sources: [
+      { title: "Lambang Sulawesi Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Sulawesi_Barat" },
+    ],
+  },
+
+  "ID-MA": {
+    description:
+      "A flag bearing the three-cornered Maluku shield: sago and coconut palms for the islands’ staple " +
+      "food and farming, pearls, nutmeg and cloves for the famed spice and sea wealth, a spear for the " +
+      "warrior spirit, and a boat on the sea for perpetual unity. Its motto “Siwa Lima” means “ours " +
+      "together” — belonging to all.",
+    sources: [
+      { title: "Lambang Maluku — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Maluku" },
+    ],
+  },
+
+  "ID-MU": {
+    description:
+      "A flag bearing the five-sided North Maluku emblem: a star for belief in God over a mountain for " +
+      "forest wealth and a sea for unity, with rice, cloves, nutmeg and palm for prosperity and the " +
+      "crossed salawaku shield and parang machete for heroism. Its motto “Marimoi Ngone Futuru” means " +
+      "“united we are strong.”",
+    sources: [
+      { title: "Lambang Maluku Utara — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Maluku_Utara" },
+    ],
+  },
+
+  "ID-NB": {
+    description:
+      "A flag bearing the West Nusa Tenggara emblem: a star for Pancasila over the smoking peak of " +
+      "Mount Rinjani, a mosque dome for the people’s devotion, and a Sumbawa deer for the local fauna, " +
+      "framed by rice and cotton whose counts mark 14 August 1958, when the province was formed, with " +
+      "a chain for the 1945 independence.",
+    sources: [
+      { title: "Lambang Nusa Tenggara Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Nusa_Tenggara_Barat" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
