@@ -11213,6 +11213,105 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Provincia di Avellino — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Avellino" },
     ],
   },
+
+  "IT-CR": {
+    description:
+      "The provincial arms (gonfalone): a shield joining its chief towns — Cremona (barry red and " +
+      "silver with an arm holding a golden ball), Crema (a hand with a sword between deer horns) and " +
+      "Casalmaggiore (a town gate on blue). Granted by royal decree in 1938.",
+    sources: [
+      { title: "Provincia di Cremona — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Cremona" },
+    ],
+  },
+
+  "IT-CO": {
+    description:
+      "The provincial arms (gonfalone): a silver cross on red with the motto “Libertas” for Como " +
+      "itself, a golden gemmed cross of Rovenna ringed by four stars for the lands once separated from " +
+      "Como (Sondrio, Varese, Lecco and Ticino), and a golden interlace recalling the medieval Como " +
+      "master builders (Magistri cumacini).",
+    sources: [
+      { title: "Provincia di Como — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Como" },
+    ],
+  },
+
+  "IT-CN": {
+    description:
+      "The provincial arms (gonfalone): a quartered shield of the four former district capitals — " +
+      "Cuneo (silver with red bars and a cross), Alba (a red cross with the letters ALBA), Saluzzo (a " +
+      "gold Gothic S on blue and silver) and Mondovì (a silver cross over three mountains on red).",
+    sources: [
+      { title: "Provincia di Cuneo — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Cuneo" },
+    ],
+  },
+
+  "IT-FE": {
+    description:
+      "The provincial arms (gonfalone): a shield combining the arms of its three original district " +
+      "capitals — Ferrara, Cento and Comacchio — adopted in its present form in 1943.",
+    sources: [
+      { title: "Provincia di Ferrara — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Ferrara" },
+    ],
+  },
+
+  "IT-IM": {
+    description:
+      "The provincial arms (gonfalone): a shield of three parts for the towns that formed Imperia — " +
+      "four silver towers on red for Porto Maurizio, a green olive tree on silver for Oneglia, and a " +
+      "crowned golden lion on a palm on red for Sanremo. Granted by royal decree in 1927.",
+    sources: [
+      { title: "Provincia di Imperia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Imperia" },
+    ],
+  },
+
+  "IT-FR": {
+    description:
+      "The provincial arms (gonfalone): on blue a golden lion holding a silver dagger, with two golden " +
+      "cornucopiae of fruit and grain below. The lion comes from Frosinone’s own arms (the old Papal " +
+      "State), the dagger for the martial Volsci, and the cornucopiae from the Terra di Lavoro for the " +
+      "land’s plenty. Motto: “Ferocior ad bellandum.”",
+    sources: [
+      { title: "Provincia di Frosinone — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Frosinone" },
+    ],
+  },
+
+  "IT-LE": {
+    description:
+      "The provincial arms (gonfalone): on gold four red pales of the Crown of Aragon, over all a " +
+      "dolphin leaping head-down and biting a silver crescent — the crescent for the Ottoman threat and " +
+      "the dolphin for the Salento’s resistance to Turkish raids.",
+    sources: [
+      { title: "Provincia di Lecce — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Lecce" },
+    ],
+  },
+
+  "IT-MN": {
+    description:
+      "The provincial arms (gonfalone): a shield combining the emblems of Mantua, Bozzolo and " +
+      "Castiglione delle Stiviere — the towns of the province — replacing an earlier version that bore " +
+      "the Gonzaga eagle.",
+    sources: [
+      { title: "Provincia di Mantova — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Mantova" },
+    ],
+  },
+
+  "IT-MO": {
+    description:
+      "The provincial arms (gonfalone): on a black field a golden lion rampant — the arms of the " +
+      "Province of Modena.",
+    sources: [
+      { title: "Provincia di Modena (stemma) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Provincia_di_Modena-Stemma.svg" },
+    ],
+  },
+
+  "IT-PR": {
+    description:
+      "The provincial arms (gonfalone): a shield parted by a thin blue line — a blue cross on gold, and " +
+      "six blue fleurs-de-lis (3-2-1) on gold — the arms of the Province of Parma, granted in 2001.",
+    sources: [
+      { title: "Provincia di Parma (stemma) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Provincia_di_Parma-Stemma.svg" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
