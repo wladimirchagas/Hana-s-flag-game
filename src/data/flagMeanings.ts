@@ -10027,6 +10027,79 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Serravalle (San Marino) — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Serravalle_(San_Marino)" },
     ],
   },
+
+  "AE-AZ": {
+    description:
+      "The emirate flag: a red field with a white rectangle at the canton. Under the 1820 maritime " +
+      "treaty with Britain the coastal sheikhdoms added white to the old red flag as a sign of the " +
+      "maritime truce (the ‘Trucial States’); Abu Dhabi kept a mostly-red flag with just a white " +
+      "corner to set itself apart from the Qawasim emirates.",
+    sources: [
+      { title: "Flag of Abu Dhabi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Abu_Dhabi" },
+    ],
+  },
+
+  "AE-DU": {
+    description:
+      "The emirate flag: red with a white vertical bar at the hoist (the ‘White-Red Halved’). It was " +
+      "adopted to distinguish Dubai (and Ajman) from the white-pierced-red flag of the Qawasim, the " +
+      "white marking the maritime truce with Britain under the 1820 treaty.",
+    sources: [
+      { title: "Flag of Dubai — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dubai" },
+    ],
+  },
+
+  "AE-AJ": {
+    description:
+      "The emirate flag: red with a white vertical bar at the hoist — the same ‘White-Red Halved’ design " +
+      "as Dubai, marking Ajman apart from the Qawasim emirates; the white records the 1820 maritime " +
+      "truce with Britain.",
+    sources: [
+      { title: "List of flags of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_Arab_Emirates" },
+    ],
+  },
+
+  "AE-SH": {
+    description:
+      "The emirate flag: a large red rectangle on white (the ‘White Pierced Red’). Under the 1820 " +
+      "treaty this was the intended flag for all the Trucial States; it became the flag of the Qawasim " +
+      "federation, to which Sharjah belongs.",
+    sources: [
+      { title: "Flag of Sharjah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sharjah" },
+    ],
+  },
+
+  "AE-RK": {
+    description:
+      "The emirate flag: a large red rectangle on white — the ‘White Pierced Red’ Qawasim flag, shared " +
+      "with Sharjah because Ras Al Khaimah is ruled by the same house; the white records the 1820 " +
+      "maritime truce with Britain.",
+    sources: [
+      { title: "Flag of Sharjah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sharjah" },
+    ],
+  },
+
+  "AE-UQ": {
+    description:
+      "The emirate flag: red with a white bar at the hoist and a large white star and crescent in the " +
+      "centre. The white follows the Trucial-States pattern that distinguishes the emirates’ flags, and " +
+      "the star and crescent stand for Islam.",
+    sources: [
+      { title: "List of flags of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_Arab_Emirates" },
+    ],
+  },
+
+  "AE-FU": {
+    description:
+      "Fujairah flies the UAE national flag: a green–white–black tricolour with a red bar at the hoist, " +
+      "the pan-Arab colours of Arab unity (green for the land, white for its deeds, black for hard " +
+      "times, red for the sword). Its own historic emirate flag (1952–61) was red bearing the name " +
+      "“Al-Fujairah” in white.",
+    sources: [
+      { title: "Flag of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
+      { title: "List of flags of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_Arab_Emirates" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
