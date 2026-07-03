@@ -10840,6 +10840,72 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Balochistan, Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Balochistan,_Pakistan" },
     ],
   },
+
+  "FR-74": {
+    description:
+      "The department arms as a banner: on silver a red escutcheon charged with a silver cross — the " +
+      "cross of Savoy — beneath a blue chappé evoking the mountains of the Haute-Savoie.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-76": {
+    description:
+      "The department arms as a banner: on red the two golden leopards of Normandy with a silver wavy " +
+      "band between them for the river Seine — the arms of the Seine-Maritime.",
+    sources: [
+      { title: "Seine-Maritime — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Seine-Maritime" },
+    ],
+  },
+
+  "FR-80": {
+    description:
+      "The department arms as a banner: a quartered shield of the fleurs-de-lis of France and three " +
+      "golden lions (for the Ponthieu and Amiénois lands), crossed by a silver bar — the arms of " +
+      "Picardy, the historic province of the Somme.",
+    sources: [
+      { title: "Somme (département) — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Somme_(d%C3%A9partement)" },
+    ],
+  },
+
+  "FR-81": {
+    description:
+      "The department arms as a banner: on gold a red chief-pale (a T-shape for ‘Tarn’) charged with the " +
+      "golden clechée Occitan cross of Languedoc — the historic province of the Tarn.",
+    sources: [
+      { title: "Tarn (département) — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Tarn_(d%C3%A9partement)" },
+    ],
+  },
+
+  "FR-86": {
+    description:
+      "The department arms as a banner: on red a silver wavy pale for the river Vienne, accompanied by " +
+      "five golden castles set in a saltire — the arms of the Vienne, drawn from the Poitou.",
+    sources: [
+      { title: "Vienne (département) — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Vienne_(d%C3%A9partement)" },
+    ],
+  },
+
+  "FR-88": {
+    description:
+      "The department arms as a banner: silver mantled in green with three uprooted fir trees for the " +
+      "forested Vosges mountains, beneath a golden chief bearing a red bend with three silver alerions " +
+      "— the arms of Lorraine, to which most of the department belonged.",
+    sources: [
+      { title: "Vosges (département) — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Vosges_(d%C3%A9partement)" },
+    ],
+  },
+
+  "FR-89": {
+    description:
+      "The department arms as a banner: on gold a blue pall (Y-shape), beneath a chief joining Burgundy " +
+      "(blue with fleurs-de-lis and a compony border) and the gold-and-blue bendy of the duchy — the " +
+      "composite arms of the Yonne.",
+    sources: [
+      { title: "Yonne (département) — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Yonne_(d%C3%A9partement)" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
