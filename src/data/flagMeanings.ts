@@ -9156,6 +9156,38 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Szekszárd — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Szeksz%C3%A1rd" },
     ],
   },
+
+  "HU-ZE": {
+    description:
+      "The city coat of arms on the flag: Mary Magdalene, the city’s patron, holding a cross with a " +
+      "whip at her feet for the Penitent Magdalene, against fortress walls recalling Zalaegerszeg’s " +
+      "16th–17th-century defences during the Ottoman wars.",
+    sources: [
+      { title: "Zalaegerszeg — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Zalaegerszeg" },
+    ],
+  },
+
+  "HU-ST": {
+    description:
+      "The city coat of arms on the flag: a divided shield — three silver wavy lines on black for the " +
+      "Salgó, Tarján and Pécskő streams (and the region’s mining), and a black eagle on a green triple " +
+      "mound for the Tarján conquering tribe — beneath a battlement crown standing for the three " +
+      "castles around Salgótarján.",
+    sources: [
+      { title: "Salgótarján — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Salg%C3%B3tarj%C3%A1n" },
+    ],
+  },
+
+  "HU-DU": {
+    description:
+      "The city coat of arms on the flag: a quartered shield — a silver Lamb of God with a banner for " +
+      "the medieval village of Dunapentele, a red-and-silver chequered field for the planned industrial " +
+      "city, and a silver Roman capital for ancient Intercisa — on blue fields for the Danube from which " +
+      "Dunaújváros (‘Danube New Town’) takes its name.",
+    sources: [
+      { title: "Dunaújváros — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Duna%C3%BAjv%C3%A1ros" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
