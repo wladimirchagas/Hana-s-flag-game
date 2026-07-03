@@ -7933,6 +7933,120 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Ubon Ratchathani province — Wikipedia", url: "https://en.wikipedia.org/wiki/Ubon_Ratchathani_province" },
     ],
   },
+
+  "TH-16": {
+    description:
+      "A flag bearing the provincial seal, which shows the god Vishnu before Phra Prang Sam Yot, the " +
+      "Khmer “Sanctuary of the Three Towers.” It recalls King Narai, who in 1664 fortified Lopburi as " +
+      "an alternative capital when Ayutthaya was threatened by a Dutch blockade.",
+    sources: [
+      { title: "Lopburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Lopburi_province" },
+    ],
+  },
+
+  "TH-19": {
+    description:
+      "A flag bearing the provincial seal, which shows the temple of Wat Phra Phutthabat. A 17th-century " +
+      "hunter found a footprint-shaped pool taken to be the Buddha’s footprint (Phra Phutthabat), and a " +
+      "temple was built over the spot.",
+    sources: [
+      { title: "Saraburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Saraburi_province" },
+    ],
+  },
+
+  "TH-33": {
+    description:
+      "A flag bearing the provincial seal, which shows Prasat Hin Ban Samo, a Khmer temple about a " +
+      "thousand years old in the Prang Ku area of the province.",
+    sources: [
+      { title: "Sisaket province — Wikipedia", url: "https://en.wikipedia.org/wiki/Sisaket_province" },
+    ],
+  },
+
+  "TH-15": {
+    description:
+      "A flag bearing the provincial seal, which shows golden ears of rice in a bowl of water, " +
+      "standing for the fertility of Ang Thong as one of the country’s major rice-producing provinces.",
+    sources: [
+      { title: "Ang Thong province — Wikipedia", url: "https://en.wikipedia.org/wiki/Ang_Thong_province" },
+    ],
+  },
+
+  "TH-24": {
+    description:
+      "A flag bearing the provincial seal, which shows the hall of Wat Sothonwararam enshrining " +
+      "Luangpho Phutthasothon, the province’s most revered Buddha image.",
+    sources: [
+      { title: "Chachoengsao province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chachoengsao_province" },
+    ],
+  },
+
+  "TH-26": {
+    description:
+      "A flag bearing the provincial seal, which shows an elephant holding an ear of rice in its trunk, " +
+      "with straw, trees and clouds. It stands for the province’s fertile rice fields and forests and " +
+      "its natural beauty.",
+    sources: [
+      { title: "Nakhon Nayok province — Wikipedia", url: "https://en.wikipedia.org/wiki/Nakhon_Nayok_province" },
+    ],
+  },
+
+  "TH-18": {
+    description:
+      "A flag bearing the provincial seal, which shows a dharma wheel (dhammachakka) with a mountain " +
+      "behind it, referring to the Dhammachak Buddha image at Wat Thammamun, built on a mountainside.",
+    sources: [
+      { title: "Chai Nat province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chai_Nat_province" },
+    ],
+  },
+
+  "TH-23": {
+    description:
+      "A flag bearing the provincial seal, which shows the sea with the Khao Banthat mountain range " +
+      "behind — Trat being a coastal province known as “the city of half a hundred islands.”",
+    sources: [
+      { title: "Trat province — Wikipedia", url: "https://en.wikipedia.org/wiki/Trat_province" },
+    ],
+  },
+
+  "TH-25": {
+    description:
+      "A red-and-yellow flag bearing the provincial seal, which shows the Bodhi tree — for the first " +
+      "Bodhi tree planted about 2,000 years ago at Wat Si Maha Phot. Red stands for the land and yellow " +
+      "for Buddhism.",
+    sources: [
+      { title: "Prachinburi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Prachinburi_province" },
+    ],
+  },
+
+  "TH-27": {
+    description:
+      "A flag bearing the provincial seal, which shows the sun rising over the Khmer ruins of Prasat " +
+      "Khao Noi Si Chomphu — the rising sun marking the province’s eastern position — with a Buddha " +
+      "image in a lotus pond below, alluding to the sacred ponds that give Sa Kaeo its name.",
+    sources: [
+      { title: "Sa Kaeo province — Wikipedia", url: "https://en.wikipedia.org/wiki/Sa_Kaeo_province" },
+    ],
+  },
+
+  "TH-35": {
+    description:
+      "A flag bearing the provincial seal, which shows two mythical lions (singha) facing the chedi " +
+      "Phra That Anon at Wat Maha That, over a lotus flower. The lions recall the founding legend that " +
+      "a lion emerged from the forest when the site was chosen, giving the old name Ban Singha Tha.",
+    sources: [
+      { title: "Yasothon province — Wikipedia", url: "https://en.wikipedia.org/wiki/Yasothon_province" },
+    ],
+  },
+
+  "TH-36": {
+    description:
+      "A flag bearing the provincial seal, which shows a triangular banner — a symbol of victory in " +
+      "war.",
+    sources: [
+      { title: "Chaiyaphum province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chaiyaphum_province" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
