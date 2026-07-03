@@ -10635,6 +10635,133 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
     ],
   },
+
+  "FR-56": {
+    description:
+      "The department arms as a banner: a wavy division of Breton ermine and blue — the ermine of " +
+      "Brittany with blue for the sea, fitting the name Morbihan (Breton for ‘little sea’).",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-57": {
+    description:
+      "The department arms as a banner: a shield quartering the arms of Metz, Lorraine, Bar and " +
+      "Luxembourg — the historic lands meeting in the Moselle — adopted in 1948.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-58": {
+    description:
+      "The department arms as a banner: bendy of gold and blue within a red engrailed border — the arms " +
+      "of the Nivernais, the old county that became the Nièvre.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-60": {
+    description:
+      "The department arms as a banner: a diagonal division joining Ponthieu (gold with three blue " +
+      "bands) and the Île-de-France (blue strewn with golden fleurs-de-lis) — the two lands of the Oise.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-61": {
+    description:
+      "The department arms as a banner: the two golden leopards of Normandy on red above the blue and " +
+      "golden fleurs-de-lis of Alençon — the arms of the Orne.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-62": {
+    description:
+      "The department arms as a banner: on blue strewn with golden fleurs-de-lis a red label in chief — " +
+      "the arms of Artois, joined with the Boulonnais to form the Pas-de-Calais.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-63": {
+    description:
+      "The department arms as a banner: the red green-fringed gonfanon of Auvergne on gold, with a " +
+      "griffin — the arms of the Puy-de-Dôme, formed from lower Auvergne.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-64": {
+    description:
+      "The department arms as a banner: a shield quartered for its four Basque and Béarnais lands — the " +
+      "golden chains of Lower Navarre, the arms of Béarn, of Labourd, and a golden lion for Soule (on " +
+      "red) — the arms of the Pyrénées-Atlantiques.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-65": {
+    description:
+      "The department arms as a banner: on gold two red leopard-lions — the historic arms of Bigorre, " +
+      "the old county that became the Hautes-Pyrénées.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-66": {
+    description:
+      "The department arms as a banner: on gold four red pales — the Catalan bars, the arms of the " +
+      "Roussillon, which forms the Pyrénées-Orientales.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-69": {
+    description:
+      "The department arms as a banner: a party shield with the silver lion of the Lyonnais (on red) and " +
+      "the black lion of the Beaujolais (on gold) — the two lands of the Rhône, joined in 1911.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-70": {
+    description:
+      "The department arms as a banner: Franche-Comté — on blue strewn with golden billets a golden " +
+      "crowned lion — beneath a wavy chief for the river Saône that names the Haute-Saône.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-71": {
+    description:
+      "The department arms as a banner: on gold two blue wavy pales for the rivers Saône and Loire, " +
+      "under a chief drawn from the arms of Burgundy — the arms of Saône-et-Loire.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-72": {
+    description:
+      "The department arms as a banner: on blue strewn with golden fleurs-de-lis within a red border, a " +
+      "silver lion — the historic arms of Maine, the province of the Sarthe.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
