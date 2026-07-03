@@ -8811,6 +8811,41 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Lambang Nusa Tenggara Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Nusa_Tenggara_Barat" },
     ],
   },
+
+  "ID-NT": {
+    description:
+      "A flag bearing the five-sided East Nusa Tenggara emblem (the pentagon for Pancasila): a star " +
+      "for the greatness of God, the Komodo dragon found only in the province, a spear for glory and " +
+      "a banyan tree for enduring unity, framed by rice and cotton whose counts mark 20 December 1958, " +
+      "when the province was established.",
+    sources: [
+      { title: "Lambang Nusa Tenggara Timur — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Nusa_Tenggara_Timur" },
+    ],
+  },
+
+  "ID-PA": {
+    description:
+      "A flag bearing the official five-sided Papua government emblem (the pentagon for Pancasila): " +
+      "three pillars on stacked stones recalling the Trikora campaign and the 1969 act of integration, " +
+      "three snow-capped mountains for Papua’s highlands, and rice and cotton counted 17 and 8 for " +
+      "1945. Its motto “Karya Swadaya” means self-reliant work. (This is the provincial coat of arms, " +
+      "not the Morning Star flag.)",
+    sources: [
+      { title: "Lambang Papua — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Papua" },
+    ],
+  },
+
+  "ID-PB": {
+    description:
+      "A flag bearing the official five-sided West Papua government emblem (the pentagon for Pancasila): " +
+      "a white star for God, a tree and fish for forest and marine wealth, a red refinery tower for " +
+      "mineral riches, and a cassowary head marking the province at Papua’s ‘bird’s-head’. The 12 and " +
+      "10 sago-frond pairs encode 12 October 1999, its founding. Motto: “Cintaku Negeriku” (my love, " +
+      "my country).",
+    sources: [
+      { title: "Lambang Papua Barat — Wikipedia (Indonesian)", url: "https://id.wikipedia.org/wiki/Lambang_Papua_Barat" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
