@@ -10250,6 +10250,132 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
     ],
   },
+
+  "FR-13": {
+    description:
+      "The department arms as a banner: the Angevin arms of Provence — a golden fleur-de-lis with a red " +
+      "label on blue — set in an inverted gusset that stands for the delta where the Rhône meets the sea, " +
+      "giving Bouches-du-Rhône (‘mouths of the Rhône’) its name.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-14": {
+    description:
+      "The department arms as a banner: a wavy division of blue (for the sea) over the two golden " +
+      "leopards of Normandy — the historic province the Calvados belongs to.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-15": {
+    description:
+      "The department arms as a banner: on gold the red green-fringed gonfanon of Auvergne, over a blue " +
+      "inescutcheon with a golden bend and six silver scallop shells for the viscounty of Aurillac — the " +
+      "arms of the Cantal.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-16": {
+    description:
+      "The department arms as a banner: joined arms of the house of Angoulême (blue with fleurs-de-lis " +
+      "and a silver label) and the Taillefer counts (lozengy gold and red), crossed by a silver wavy bar " +
+      "for the river Charente.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-17": {
+    description:
+      "The department arms as a banner: a wavy division joining Saintonge (blue with a silver mitre and " +
+      "three golden fleurs-de-lis) and Aunis (red with a golden crowned partridge), the wave standing " +
+      "for the Charente — the two historic lands of Charente-Maritime.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-18": {
+    description:
+      "The department arms as a banner: blue strewn with golden fleurs-de-lis within a red engrailed " +
+      "border — the arms of Berry — crossed by a silver wavy fess for the river Cher.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-19": {
+    description:
+      "The department arms as a banner: a shield quartered for four historic Limousin lordships — " +
+      "Comborn (two red leopards on gold), Ventadour (chequy red and gold), Turenne (gold and red " +
+      "cotices) and Limoges (three blue lioncels on gold) — adopted for the Corrèze in 1975.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-21": {
+    description:
+      "The department arms as a banner: a golden field beneath a chief of Burgundy (old Burgundy’s " +
+      "fleurs-de-lis border and the gold-and-blue bendy of the duchy). The gold field is a play on the " +
+      "name Côte-d’Or (‘golden slope’).",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-22": {
+    description:
+      "The department arms as a banner: a shield divided by an indented line into blue and Breton ermine " +
+      "— the ermine of Brittany with blue for the sea, fitting the name Côtes-d’Armor (‘coasts of the " +
+      "sea’).",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-23": {
+    description:
+      "The department arms as a banner: blue strewn with golden fleurs-de-lis, a red bend charged with " +
+      "three silver lioncels — the historic arms of La Marche, the county that became the Creuse.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-24": {
+    description:
+      "The department arms as a banner: on red three golden lioncels with blue crowns — the historic " +
+      "arms of the Périgord, the old county that became the Dordogne.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-25": {
+    description:
+      "The department arms as a banner: a wavy division joining Franche-Comté (blue billetty with a " +
+      "golden crowned lion) and a golden field with a blue wavy fess for the river Doubs that names the " +
+      "department.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
+
+  "FR-26": {
+    description:
+      "The department arms as a banner: a shield quartered for four historic lands of the Drôme — the " +
+      "blue dolphin of the Dauphiné, the besants of Saint-Vallier, the bends of the Adhémar de Monteil, " +
+      "and the ermine of Mévouillon.",
+    sources: [
+      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
