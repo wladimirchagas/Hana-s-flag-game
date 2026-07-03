@@ -9126,6 +9126,36 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Kaposvár — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Kaposv%C3%A1r" },
     ],
   },
+
+  "HU-SH": {
+    description:
+      "The city coat of arms on the flag: a fortified gate with a section of wall and a small tower " +
+      "above it, the tower flanked by a star and a crescent moon. The design goes back to a 1734 civic " +
+      "seal of Szombathely, the ancient Roman Savaria; the walled gate stands for civic defence.",
+    sources: [
+      { title: "Szombathely — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Szombathely" },
+    ],
+  },
+
+  "HU-NY": {
+    description:
+      "The city coat of arms on the flag: on a blue field a white church with a silver star among " +
+      "birch trees — a rebus of the name Nyíregyháza, ‘house among the birches’ (nyír = birch) — over " +
+      "a red field where an arm holds golden wheat for the region’s farming.",
+    sources: [
+      { title: "Nyíregyháza — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Ny%C3%ADregyh%C3%A1za" },
+    ],
+  },
+
+  "HU-SS": {
+    description:
+      "The city coat of arms on the flag: on a blue field a red stone fortress-tower recalling the " +
+      "Benedictine abbey of Szekszárd, a golden grape cluster above and a bell below, flanked by wheat " +
+      "and a vine of noble grapes — emblems of the town’s famed red-wine country.",
+    sources: [
+      { title: "Szekszárd — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Szeksz%C3%A1rd" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
