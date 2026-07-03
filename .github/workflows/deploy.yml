@@ -63,8 +63,34 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      # GitHub Pages' backend intermittently returns "Deployment failed, try
+      # again later." during syncing_files, especially under a rapid series of
+      # merges. The build always succeeds; only this final publish step flakes.
+      # Retry it up to two more times (with a pause) before failing the run, so
+      # a transient Pages error no longer leaves the deploy red. Content is
+      # cumulative, so a retry re-publishes the same artifact harmlessly.
+      - name: Deploy to GitHub Pages (attempt 1)
+        id: deploy1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before retry
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 45
+
+      - name: Deploy to GitHub Pages (attempt 2)
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before final retry
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 90
+
+      - name: Deploy to GitHub Pages (attempt 3)
         id: deployment
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
         uses: actions/deploy-pages@v4
