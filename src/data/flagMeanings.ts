@@ -8911,6 +8911,60 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Fejér vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Fej%C3%A9r_v%C3%A1rmegye" },
     ],
   },
+
+  "HU-GS": {
+    description:
+      "The county coat of arms on the flag: a shield joining its three founding counties — golden " +
+      "twin-tailed lions holding a crown on a triple mound (Moson) and an armoured knight with a sword " +
+      "(Sopron) on the blue upper half, and three silver waves on the red lower half (Győr) — beneath " +
+      "a golden county crown.",
+    sources: [
+      { title: "Győr-Moson-Sopron vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Gy%C5%91r-Moson-Sopron_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-HB": {
+    description:
+      "The county coat of arms on the flag: two shields side by side for the counties merged in 1950 — " +
+      "Bihar’s wheat sheaves and grapes above three silver fish among reeds (its farming and waters), " +
+      "and Hajdú’s blue shield ringed by a dragon with an armoured arm holding sabre and pistol (its " +
+      "warrior heritage).",
+    sources: [
+      { title: "Hajdú-Bihar vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Hajd%C3%BA-Bihar_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-HE": {
+    description:
+      "The county coat of arms on the flag: on a blue field a stork with a green serpent in its beak " +
+      "and a grapevine in its raised claw. The stork stands for Heves as a ‘shield of Christianity’, " +
+      "the serpent for its healing waters and mining, and the grapes for its famed wine hills; blue is " +
+      "faith and green is hope.",
+    sources: [
+      { title: "Heves vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Heves_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-JN": {
+    description:
+      "The county coat of arms on the flag: a shield for its three founding peoples — a stork (Heves " +
+      "és Külső-Szolnok), a double-tailed lion with a crescent and star (the Nagykun), and a horseman " +
+      "sounding the Horn of Lehel (the Jász) — over silver bands for the Tisza, Zagyva and Körös rivers.",
+    sources: [
+      { title: "Jász-Nagykun-Szolnok vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/J%C3%A1sz-Nagykun-Szolnok_v%C3%A1rmegye" },
+    ],
+  },
+
+  "HU-KE": {
+    description:
+      "The county coat of arms on the flag: two shields for the counties merged in 1950 — an armoured " +
+      "knight fending off a bear with his sword (Komárom’s martial tradition) and Saint Adalbert " +
+      "enthroned with three lances of his martyrdom and a crosier (Esztergom, the old ecclesiastical " +
+      "seat).",
+    sources: [
+      { title: "Komárom-Esztergom vármegye — Wikipédia (Hungarian)", url: "https://hu.wikipedia.org/wiki/Kom%C3%A1rom-Esztergom_v%C3%A1rmegye" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
