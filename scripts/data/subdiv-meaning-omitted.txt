@@ -232,3 +232,52 @@ DK-81 DK-82 DK-83 DK-84 DK-85
 # Uzbekistan: Karakalpakstan (UZ-QR) flag is documented (sourced). Tashkent (UZ-TK) flag is
 # image-only on en/ru.wikipedia — omitted.
 UZ-TK
+
+# ===== Confirmed documentation walls — flags image-only on reachable Wikipedias, no
+# reachable per-element symbolism. Investigated across a representative sample per country;
+# all remaining codes logged as omitted rather than fabricated. =====
+
+# NG (state flags image-only) — 32 codes
+NG-AD NG-AK NG-AN NG-BA NG-BE NG-BY NG-EB NG-ED NG-EN NG-FC NG-GO NG-IM NG-JI NG-KD NG-KE NG-KN NG-KO NG-KT NG-KW NG-LA NG-NA NG-NI NG-OG NG-ON NG-OS NG-OY NG-PL NG-RI NG-SO NG-TA NG-YO NG-ZA
+# EG (governorate emblems image-only) — 26 codes
+EG-ALX EG-ASN EG-AST EG-BA EG-BH EG-BNS EG-C EG-DK EG-DT EG-FYM EG-GH EG-GZ EG-IS EG-JS EG-KB EG-KFS EG-KN EG-LX EG-MNF EG-MT EG-PTS EG-SHG EG-SHR EG-SIN EG-SUZ EG-WAD
+# SI (municipal arms image-only) — 25 codes
+SI-026 SI-027 SI-029 SI-030 SI-032 SI-033 SI-034 SI-036 SI-040 SI-041 SI-043 SI-096 SI-099 SI-104 SI-106 SI-108 SI-109 SI-147 SI-150 SI-151 SI-167 SI-168 SI-172 SI-187 SI-192
+# MN (aimag emblems image-only) — 22 codes
+MN-035 MN-037 MN-039 MN-041 MN-043 MN-046 MN-047 MN-049 MN-051 MN-053 MN-055 MN-057 MN-059 MN-061 MN-063 MN-064 MN-065 MN-067 MN-069 MN-071 MN-073 MN-1
+# RO (county arms image-only) — 21 codes
+RO-AB RO-AG RO-AR RO-B RO-BH RO-BV RO-BZ RO-CS RO-CT RO-CV RO-GR RO-HD RO-IF RO-IL RO-MH RO-MM RO-OT RO-SB RO-SM RO-SV RO-TM
+# UY (department flags image-only) — 18 codes
+UY-AR UY-CL UY-CO UY-DU UY-FD UY-FS UY-LA UY-MA UY-MO UY-PA UY-RN UY-RO UY-RV UY-SA UY-SJ UY-SO UY-TA UY-TT
+# CL (regional flags image-only / no official symbolism) — 16 codes
+CL-AI CL-AN CL-AP CL-AR CL-AT CL-BI CL-CO CL-LI CL-LL CL-LR CL-MA CL-ML CL-NB CL-RM CL-TA CL-VS
+# PW (state flags image-only) — 16 codes
+PW-002 PW-004 PW-010 PW-050 PW-100 PW-150 PW-212 PW-214 PW-218 PW-222 PW-224 PW-226 PW-227 PW-228 PW-350 PW-370
+# MM (state/region flags image-only) — 14 codes
+MM-01 MM-02 MM-03 MM-04 MM-06 MM-07 MM-11 MM-12 MM-13 MM-14 MM-15 MM-16 MM-17 MM-18
+# PA (province flags image-only) — 13 codes
+PA-1 PA-10 PA-2 PA-3 PA-4 PA-5 PA-6 PA-7 PA-9 PA-EM PA-KY PA-NB PA-NT
+# ET (regional flags image-only) — 12 codes
+ET-AA ET-AF ET-AM ET-BE ET-DD ET-GA ET-HA ET-OR ET-SI ET-SN ET-SO ET-TI
+# ME (municipal arms image-only) — 12 codes
+ME-06 ME-08 ME-11 ME-13 ME-14 ME-15 ME-16 ME-17 ME-18 ME-19 ME-20 ME-21
+# SB (provincial flags image-only) — 10 codes
+SB-CE SB-CH SB-CT SB-GU SB-IS SB-MK SB-ML SB-RB SB-TE SB-WE
+# KG (oblast emblems image-only) — 8 codes
+KG-B KG-C KG-GB KG-J KG-N KG-O KG-T KG-Y
+# AD (parish arms image-only) — 7 codes
+AD-02 AD-03 AD-04 AD-05 AD-06 AD-07 AD-08
+# CR (province flags image-only) — 7 codes
+CR-A CR-C CR-G CR-H CR-L CR-P CR-SJ
+# SK (region arms composite/undescribed) — 6 codes
+SK-KI SK-NI SK-PV SK-TA SK-TC SK-ZI
+# GE (Tbilisi/region arms image-only) — 3 codes
+GE-AB GE-AJ GE-TB
+# GL (municipal arms image-only) — 3 codes
+GL-KU GL-QE GL-SM
+# TT (regional-corp flags image-only) — 3 codes
+TT-CTT TT-DMN TT-PRT
+# AZ (Baku/region arms image-only) — 2 codes
+AZ-BA AZ-SM
+# MU (Rodrigues/Port Louis flags image-only) — 2 codes
+MU-PL MU-RO
