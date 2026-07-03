@@ -554,7 +554,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
 
     return () => {
       cancelled = true;
-      if (ytPollRef.current) { clearInterval(ytPollRef.current); ytPollRef.current = null; }
+
       // Destroy the player created by this specific effect invocation.
       // localPlayer is captured in this closure so it's always the right one,
       // even if ytPlayerRef.current was already overwritten by a newer mount.
