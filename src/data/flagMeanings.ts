@@ -10100,6 +10100,28 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "List of flags of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_Arab_Emirates" },
     ],
   },
+
+  "CN-HK": {
+    description:
+      "The region flag: on a red field a white five-petal Bauhinia × blakeana flower, each petal " +
+      "bearing a red star. The bauhinia — native to Hong Kong — stands for the territory, red for " +
+      "China (the same red as the national flag), and the five stars echo China’s flag, marking Hong " +
+      "Kong as part of China under ‘one country, two systems’.",
+    sources: [
+      { title: "Flag of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
+    ],
+  },
+
+  "CN-MO": {
+    description:
+      "The region flag: on a green field a white lotus (Macau’s floral emblem) above a stylised " +
+      "Governador Nobre de Carvalho Bridge and white waves for Macau’s life as a port, crowned by an " +
+      "arc of five golden stars echoing China’s flag — the bond with its sovereign state. Adopted at " +
+      "the 1999 handover.",
+    sources: [
+      { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
