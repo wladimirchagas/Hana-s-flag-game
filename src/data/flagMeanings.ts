@@ -9942,6 +9942,91 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Schellenberg — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Schellenberg" },
     ],
   },
+
+  "SM-01": {
+    description:
+      "The castle arms on the flag: on a blue field three green oak trees (cerri) rooted on a golden " +
+      "three-peaked hill. The oaks refer to Acquaviva’s old name, Montecerreto — the ‘mount of oaks’.",
+    sources: [
+      { title: "Acquaviva (San Marino) — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Acquaviva_(San_Marino)" },
+    ],
+  },
+
+  "SM-06": {
+    description:
+      "The castle arms on the flag: an emblem showing Borgo Maggiore at the foot of Monte Titano with " +
+      "its clock tower — depicting the town’s position below the capital and its landmark tower.",
+    sources: [
+      { title: "Borgo Maggiore — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Borgo_Maggiore" },
+    ],
+  },
+
+  "SM-02": {
+    description:
+      "The castle arms on the flag: on a blue field a red ostrich feather curved to the right; the arms " +
+      "of Chiesanuova, fixed by decree in 1997.",
+    sources: [
+      { title: "Chiesanuova (San Marino) — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Chiesanuova_(San_Marino)" },
+    ],
+  },
+
+  "SM-03": {
+    description:
+      "The castle arms on the flag: a wolf walking and a ruined tower on a mountain top — the wolf a pun " +
+      "on Domagnano’s old name Montelupo (‘wolf mount’), and the broken tower the Malatesta stronghold " +
+      "taken by San Marino in 1463.",
+    sources: [
+      { title: "Domagnano — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Domagnano" },
+    ],
+  },
+
+  "SM-04": {
+    description:
+      "The castle arms on the flag: on a gold field an uprooted beech tree in natural colour. The beech " +
+      "(faggio) is a canting emblem for Faetano, whose name comes from the beech woods of the area.",
+    sources: [
+      { title: "Faetano — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Faetano" },
+    ],
+  },
+
+  "SM-05": {
+    description:
+      "The castle arms on the flag: on a gold field three red roses with gold centres — the arms of " +
+      "Fiorentino.",
+    sources: [
+      { title: "Fiorentino (San Marino) — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Fiorentino_(San_Marino)" },
+    ],
+  },
+
+  "SM-08": {
+    description:
+      "The castle arms on the flag: on a blue field three red roses with green stems fanning out from a " +
+      "golden three-peaked mountain — the greenery evoking the wooded, garden-like hills that give " +
+      "Montegiardino (‘garden mount’) its name.",
+    sources: [
+      { title: "Montegiardino — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Montegiardino" },
+    ],
+  },
+
+  "SM-07": {
+    description:
+      "The castle flag bears San Marino’s arms: on blue, three silver towers — Guaita, Cesta and Montale " +
+      "— on the three green peaks of Monte Titano, each tower topped by an ostrich-feather vane, within " +
+      "an oak-and-laurel wreath. The motto “Libertas” (liberty) recalls the republic’s tradition as a " +
+      "refuge for the persecuted.",
+    sources: [
+      { title: "Coat of arms of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino" },
+    ],
+  },
+
+  "SM-09": {
+    description:
+      "The castle arms on the flag: on a blue field a square red tower with three Ghibelline " +
+      "(swallow-tailed) battlements — the arms of Serravalle.",
+    sources: [
+      { title: "Serravalle (San Marino) — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Serravalle_(San_Marino)" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
