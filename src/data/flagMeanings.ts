@@ -11003,6 +11003,46 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Blason département fr Vendée — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Vend%C3%A9e.svg" },
     ],
   },
+
+  "FR-92": {
+    description:
+      "The department arms as a banner: a party shield of a golden fleur-de-lis and a silver ship, both " +
+      "on blue, beneath a silver chief with a blue wavy fess — the fleur-de-lis for the Île-de-France, " +
+      "the ship and wave for the Seine that names the Hauts-de-Seine.",
+    sources: [
+      { title: "Blason département fr Hauts-de-Seine — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Hauts-de-Seine.svg" },
+    ],
+  },
+
+  "FR-93": {
+    description:
+      "The department arms as a banner: on blue golden fleurs-de-lis (for the Île-de-France) above a red " +
+      "field where a silver wing embraces three golden wheat ears, a silver gear over the division — " +
+      "the wheat for farming and the gear for industry in the Seine-Saint-Denis.",
+    sources: [
+      { title: "Blason département fr Seine-Saint-Denis — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Seine-Saint-Denis.svg" },
+    ],
+  },
+
+  "FR-94": {
+    description:
+      "The department arms as a banner: on blue strewn with golden fleurs-de-lis a silver inverted wavy " +
+      "chevron over a gold base — the fleurs-de-lis for the Île-de-France and the wavy chevron for the " +
+      "river Marne that names the Val-de-Marne.",
+    sources: [
+      { title: "Blason département fr Val-de-Marne — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Val-de-Marne.svg" },
+    ],
+  },
+
+  "FR-95": {
+    description:
+      "The department arms as a banner: on red a silver wavy diagonal band for the river Oise, with a " +
+      "golden alerion (eaglet) above and an anchored cross below, within a blue border of ten golden " +
+      "fleurs-de-lis for the Île-de-France — the arms of the Val-d’Oise.",
+    sources: [
+      { title: "Blason département fr Val-d'Oise — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Blason_d%C3%A9partement_fr_Val-d%27Oise.svg" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
