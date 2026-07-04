@@ -11473,6 +11473,186 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Utenos apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Utenos_apskrities_herbas" },
     ],
   },
+  "EE-39": {
+    description:
+      "The county arms: a silver shield charged with a vertical red rope tied in three knots, flanked by " +
+      "four red lilies (two each side). The four lilies (drawn from the Ungern-Sternberg arms) stand for " +
+      "Hiiumaa’s four historic parishes; the knotted rope recalls the island legend of a Hiiumaa elder " +
+      "giving departing sailors a rope to secure their safe return.",
+    sources: [
+      { title: "Hiiu maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Hiiu_maakonna_vapp" },
+    ],
+  },
+
+  "EE-74": {
+    description:
+      "The county arms: on a blue shield a silver Viking ship under sail bearing seven round shields in a " +
+      "row, above three wavy silver bars at the base. The Viking ship recalls the Saaremaa islanders’ once-" +
+      "formidable naval power (the Oeselians); the wavy bars are the surrounding sea. Confirmed in 1937.",
+    sources: [
+      { title: "Saare maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Saare_maakonna_vapp" },
+    ],
+  },
+
+  "EE-84": {
+    description:
+      "The county arms: on a blue shield a silver eagle with raised wings and golden legs and beak, " +
+      "grasping a silver golden-hilted sword; on its breast a green shield with three golden ears of grain " +
+      "springing from one stalk. The three grain ears mark the county’s agrarian character; the eagle and " +
+      "sword denote sovereignty and authority. Confirmed in 1937.",
+    sources: [
+      { title: "Viljandi maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Viljandi_maakonna_vapp" },
+    ],
+  },
+
+  "AR-K": {
+    description:
+      "The province flag (2011, the last Argentine province to adopt one): a light-blue-and-white upper " +
+      "field over a blood-red lower stripe, within a gold border, charged with an Inca-inspired sun and an " +
+      "olive wreath. The sky-blue and white evoke the national flag and the Virgin’s mantle; the red is " +
+      "“the mixture of our blood”; the wreath’s 16 leaves are the province’s 16 departments; the gold " +
+      "border is its inherited cultural wealth.",
+    sources: [
+      { title: "Bandera de la Provincia de Catamarca — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_la_Provincia_de_Catamarca" },
+    ],
+  },
+
+  "AR-L": {
+    description:
+      "The province flag (1994): the Argentine light-blue/white/light-blue triband with the provincial arms " +
+      "on the centre. In the arms a rising sun marks the dawn of a new province joining Argentina; crossed " +
+      "indigenous lances and an indigenous figure honour the region’s original peoples; wheat sheaves stand " +
+      "for the plains’ fertility and a caldén tree for its native woodland; a blue-and-white ribbon signals " +
+      "integration into the nation.",
+    sources: [
+      { title: "Bandera de la Provincia de La Pampa — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_la_Provincia_de_La_Pampa" },
+    ],
+  },
+
+  "AR-U": {
+    description:
+      "The province flag (2005): a light-blue field bearing a dark-blue cogwheel crossed by a yellow band, " +
+      "a white sawtooth line above and a wavy white line below, with a 16-rayed rising sun. The cogwheel is " +
+      "industry; the 16 sun-rays are the province’s 16 departments; the upper line is the Andes and the " +
+      "lower wavy line the Atlantic; light-blue is sky, yellow the farm harvest, dark-blue justice and " +
+      "loyalty, white purity and faith.",
+    sources: [
+      { title: "Bandera de Chubut — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_Chubut" },
+    ],
+  },
+
+  "AR-V": {
+    description:
+      "The province flag (1999): a blue and an orange field split by a soaring white albatross. The orange " +
+      "recalls the fire that named Tierra del Fuego and traces the outline of the Argentine part of the Isla " +
+      "Grande; the white albatross is the local fauna and freedom in flight; the blue is the sea and sky and " +
+      "carries the Southern Cross, whose stars also stand for the South Atlantic islands Argentina claims.",
+    sources: [
+      { title: "Bandera de la provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_la_provincia_de_Tierra_del_Fuego,_Ant%C3%A1rtida_e_Islas_del_Atl%C3%A1ntico_Sur" },
+    ],
+  },
+  "CO-CAL": {
+    description:
+      "The department flag: two equal vertical bands, yellow at the hoist and green at the fly. Yellow " +
+      "stands for nobility, wealth, constancy and wisdom; green for the foliage of the coffee bushes, the " +
+      "freshness and fertility of the fields, and hope for the department’s prosperity.",
+    sources: [
+      { title: "Bandera de Caldas — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_Caldas" },
+    ],
+  },
+
+  "CO-CHO": {
+    description:
+      "The department flag: three horizontal stripes, green over yellow over blue. Green is the wealth of " +
+      "Chocó’s forests and jungles; yellow the gold of its lands and mines; blue the abundance of its waters " +
+      "and the two oceans (Pacific and Caribbean) that border the department.",
+    sources: [
+      { title: "Bandera del Chocó — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_del_Choc%C3%B3" },
+    ],
+  },
+
+  "CO-COR": {
+    description:
+      "The department flag (1951): three equal horizontal stripes, blue over white over green. Blue is the " +
+      "Sinú and San Jorge rivers, their wetlands and the Caribbean Sea; white is peace and concord; green " +
+      "the wide green plains, savannas and mountains of the territory.",
+    sources: [
+      { title: "Bandera de Córdoba (Colombia) — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_C%C3%B3rdoba_(Colombia)" },
+    ],
+  },
+
+  "CO-CUN": {
+    description:
+      "The department flag: three vertical stripes of sky-blue, golden-yellow and red, dating to 1813 when " +
+      "Antonio Nariño raised it over the Free State of Cundinamarca. The yellow and red descend from the " +
+      "old Spanish arms granted to the province of Santa Fe; the sky-blue was added for the mantle of the " +
+      "Virgin Mary.",
+    sources: [
+      { title: "Bandera de Cundinamarca — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_Cundinamarca" },
+    ],
+  },
+
+  "CO-HUI": {
+    description:
+      "The department flag (1952): three equal horizontal stripes, white over green over yellow. White is " +
+      "the department’s snow-capped peaks and the honesty of its people; green the exuberance of the Huila " +
+      "land and hope for a better future; yellow the ripening ears of the harvest, fruit of its people’s " +
+      "labour.",
+    sources: [
+      { title: "Bandera del Huila — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_del_Huila" },
+    ],
+  },
+
+  "CO-MET": {
+    description:
+      "The department flag (1970): seventeen equal horizontal stripes — nine green enclosing eight white. " +
+      "The count is symbolic: it marks Meta’s rank as the seventeenth department created in the Republic.",
+    sources: [
+      { title: "Bandera del Meta — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_del_Meta" },
+    ],
+  },
+
+  "CO-NAR": {
+    description:
+      "The department flag: two equal horizontal bands, yellow over green. Yellow stands for magnanimity, " +
+      "generosity, wealth and constancy — for Nariño specifically the riches of its mines, the ripened " +
+      "grain and patriotic hearts; green for honour, abundance and fertility — the fecundity of the fields " +
+      "and ever-renewing hope on the southern horizons.",
+    sources: [
+      { title: "Bandera de Nariño (Colombia) — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_Nari%C3%B1o_(Colombia)" },
+    ],
+  },
+
+  "CO-NSA": {
+    description:
+      "The department flag (1978): two horizontal stripes, red over black, with four gold stars in a " +
+      "lozenge. Red is heroism and the blood of the patriots; black the oil drawn from the region. The " +
+      "three lower stars are the provinces (Cúcuta, Pamplona, Ocaña) split from Santander to form the new " +
+      "department; the top star marks the north as its cardinal position.",
+    sources: [
+      { title: "Bandera de Norte de Santander — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_Norte_de_Santander" },
+    ],
+  },
+
+  "CO-TOL": {
+    description:
+      "The department flag (1968): two horizontal stripes, wine-red over yellow. The wine-red is the blood " +
+      "shed by Tolima’s heroes in the wars of independence; the yellow is the department’s mineral wealth.",
+    sources: [
+      { title: "Bandera del Tolima — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_del_Tolima" },
+    ],
+  },
+
+  "CO-VAC": {
+    description:
+      "The department flag (1960): two equal horizontal stripes of sky-blue and white within a silver " +
+      "border, attributed to independence leader José María Cabal. Sky-blue stands for frankness, honesty " +
+      "and loyalty; white for peace, beauty and purity; the silver border for integrity and innocence. " +
+      "Tradition ties the blue-and-white to a vision of the Virgin of the Immaculate Conception.",
+    sources: [
+      { title: "Bandera del Valle del Cauca — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_del_Valle_del_Cauca" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
