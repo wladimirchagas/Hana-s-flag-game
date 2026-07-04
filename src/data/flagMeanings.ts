@@ -11312,6 +11312,45 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Provincia di Parma (stemma) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Provincia_di_Parma-Stemma.svg" },
     ],
   },
+
+  "IT-LI": {
+    description:
+      "The provincial arms (gonfalone): the arms of the city of Livorno surmounted by the flag of the " +
+      "island of Elba — together standing for the mainland-and-island territory of the province, as " +
+      "granted by royal decree in 1902.",
+    sources: [
+      { title: "Provincia di Livorno — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Livorno" },
+    ],
+  },
+
+  "IT-AT": {
+    description:
+      "The provincial arms (gonfalone): on red a silver cross — the historic arms of Asti, carried on " +
+      "the province’s red banner.",
+    sources: [
+      { title: "Provincia di Alessandria — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Alessandria" },
+    ],
+  },
+
+  "IT-PD": {
+    description:
+      "The provincial arms (gonfalone): on silver the red cross of Padua, bordered by seven small " +
+      "shields for the province’s historic district capitals — Este, Cittadella, Monselice, Montagnana, " +
+      "Camposampiero, Conselve and Piove di Sacco. Granted in 2003.",
+    sources: [
+      { title: "Provincia di Padova — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Padova" },
+    ],
+  },
+
+  "IT-VR": {
+    description:
+      "The provincial arms (gonfalone): on red a silver ladder of five rungs set vertically — the " +
+      "‘scala’ of the Della Scala (Scaligeri) family who ruled Verona, a canting emblem (scala = " +
+      "ladder). Motto: “nec descendere, nec morari.”",
+    sources: [
+      { title: "Provincia di Verona — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Verona" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

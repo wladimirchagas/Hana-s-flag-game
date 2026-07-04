@@ -1041,6 +1041,28 @@ context window until the sweep is complete or the user explicitly says stop.
    **investigating each code and logging genuine omissions** in `scripts/data/subdiv-meaning-omitted.txt`
    — not by padding with invented meaning, and not by silently skipping the country. Omitting an
    unsourceable flag *is* finishing that flag; moving on to the next country *is* continuing.
+
+   **3a. Before omitting ANY set as "image-only / unsourceable" you MUST exhaust the dedicated
+   local-language sources, not just the main article or en.wikipedia — this is a hard sub-rule.**
+   The reference failure: a session batch-omitted all 81 Italian provinces as unsourceable because it
+   only looked at the province's *main* article; in fact every one is documented in that article's
+   **Stemma/Simboli** section and in a **Wikimedia Commons** blason file (`blasonatura`). The same
+   error then turned out to be widespread — Lithuania (`X apskrities herbas`), Estonia (`X maakonna
+   vapp`), Latvia (`X ģerbonis`), North Macedonia (`Грб на X`) and Argentina (`Bandera de la provincia
+   de X`) subdivisions were all wrongly omitted the same way: each has a **dedicated** arms/flag
+   article, or a section within the subdivision article, carrying the blazon and symbolism. So a set is
+   **only** a genuine wall after ALL of these come up empty:
+   - the subdivision's own article on the **local-language** Wikipedia, in its heraldry/flag section
+     (`Stemma`/`Simboli`/`Wappen`/`Vaakuna`/`Герб`/`Grb`/`Escudo`/`Bandera`/`Blason`/`Héraldique`/…);
+   - the **dedicated** arms/flag article (`Coat of arms of X`, `Escudo de X`, `Bandera de X`,
+     `X vapp`, `X herbas`, `X ģerbonis`, `Грб на X`, `Wappen X`, …) — the main article often only shows
+     the image while a *separate* page carries the blazon;
+   - the **Wikimedia Commons** file page for the flag/arms (its description frequently contains the full
+     `blasonatura`/blazon even when every Wikipedia article is image-only).
+   Only when a coat of arms genuinely has no textual blazon anywhere (e.g. Romanian counties, whose
+   blazon lives only in an un-fetchable government gazette) is it a real wall. **Coats of arms are
+   almost always sourceable via one of the above; treat any heraldic subdivision omitted without these
+   checks as a bug to reverse.**
 4. **Checkpoint by merging, don't wait.** Accumulate a country (or a few) on the branch, run the
    checks, commit, push, open the PR, squash-merge it, reset the branch from `main`, and go straight to
    the next set — all without a confirmation round-trip, exactly as the PR-workflow rule already
