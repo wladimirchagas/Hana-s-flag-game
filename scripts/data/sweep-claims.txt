@@ -71,7 +71,7 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 IT  claude  in-progress  # Italy — re-sourcing 81 provinces wrongly omitted by #401 (it.wiki Stemma); ~22/81 done, 59 left
 LT  claude  done         # Lithuania — all 10 counties re-sourced ("X apskrities herbas"); was wrongly omitted
 EE  claude  done         # Estonia — all counties re-sourced ("X maakonna vapp"); was wrongly omitted
-LV  claude  in-progress  # Latvia — re-sourcing "X ģerbonis"; 31 left (was wrongly omitted)
+LV  claude  done         # Latvia — 7 cities + 21 municipalities re-sourced (lv.wiki "X ģerbonis"); LV-052/062/102 omitted (modern arms, no published symbolism)
 CO  claude  done         # Colombia — 10 depts re-sourced ("Bandera de X"); CO-ATL/CAU/SAP omitted (no per-element symbolism, rule 3a exhausted)
 AR  claude  done         # Argentina — all provinces re-sourced ("Bandera de la provincia de X"); was wrongly omitted
 MK  claude  in-progress  # Macedonia — re-sourcing "Грб на X" (was wrongly omitted)

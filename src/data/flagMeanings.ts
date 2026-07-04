@@ -11653,6 +11653,292 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Bandera del Valle del Cauca — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_del_Valle_del_Cauca" },
     ],
   },
+  "LV-RIX": {
+    description:
+      "The city arms as a banner: on silver a red brick wall with two towers and an open gate, a golden " +
+      "lion’s head in the gateway, crossed keys under a golden cross, and a crown above; two golden lions " +
+      "support the shield. The fortified towers and open gate stand for the city’s independence and " +
+      "strength; the lion’s head for its citizens’ courage; the crossed keys for Saint Peter’s protection; " +
+      "the cross for the Livonian Order’s authority; the crown was added under Swedish rule for the " +
+      "sovereign’s power over Riga.",
+    sources: [
+      { title: "Rīgas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/R%C4%ABgas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-DGV": {
+    description:
+      "The city arms: on blue a silver wavy bar, a golden lily above and a detached silver embattled brick " +
+      "wall at the base. The wavy bar is the Daugava river that runs through the city; the lily is the " +
+      "Virgin Mary, the city’s patroness; the embattled wall recalls the old Dinaburg (Daugavpils) castle.",
+    sources: [
+      { title: "Daugavpils ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Daugavpils_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-LPX": {
+    description:
+      "The city arms: on silver a red Courland lion with a forked tail clasping a green linden tree. The red " +
+      "lion is the heraldic beast of Courland (the Duchy of Courland and Semigallia), tying the city to its " +
+      "region; the linden tree stands for Liepāja itself. Granted 1625, current form confirmed 1925.",
+    sources: [
+      { title: "Liepājas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Liep%C4%81jas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-JEL": {
+    description:
+      "The city arms: on a purple field an elk’s head in natural colour bearing Latvia’s small state arms " +
+      "(without stars) on its neck. The elk is the heraldic symbol of Zemgale, the region Jelgava lies in; " +
+      "the state shield marks the city’s belonging to Latvia. Granted 1573, current form confirmed 1925.",
+    sources: [
+      { title: "Jelgavas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Jelgavas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-JUR": {
+    description:
+      "The city arms: a shield parted by a wavy line, silver waves below and a blue field above, with a " +
+      "silver seagull in flight and three golden five-pointed stars. The seagull and waves are the seaside " +
+      "resort city on the Gulf of Riga; the three stars mark its belonging to Latvia.",
+    sources: [
+      { title: "Jūrmalas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/J%C5%ABrmalas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-REZ": {
+    description:
+      "The city arms: on a sky-blue field a golden griffin holding a shield in Latvia’s national colours. " +
+      "The griffin — power, valour and speed — is the emblem of Latgale, whose cultural centre is Rēzekne; " +
+      "in place of the griffin’s usual sword it holds the red-white-red shield to mark the city’s allegiance " +
+      "to Latvia. Designed by Rihards Zariņš, adopted 1925, restored 2000.",
+    sources: [
+      { title: "Rēzeknes ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/R%C4%93zeknes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-VEN": {
+    description:
+      "The city arms: on a purple field diapered with silver, a silver hunting horn with golden mouthpiece, " +
+      "band and rim, surmounted by a golden cross. The charges date from the Livonian period and mark " +
+      "Ventspils as a city within the Order’s state.",
+    sources: [
+      { title: "Ventspils ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Ventspils_%C4%A3erbonis" },
+    ],
+  },
+  "LV-016": {
+    description:
+      "The municipality arms (from the town of Bauska): on red a golden lion bearing on its breast a small " +
+      "red shield with a silver bar in the national-flag colours. The golden lion is the symbol of the " +
+      "Duchy of Courland; the small red-and-silver shield marks the town’s belonging to Latvia. Adopted 1925.",
+    sources: [
+      { title: "Bauskas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Bauskas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-022": {
+    description:
+      "The municipality arms (from the town of Cēsis): on blue a red embattled brick wall with five towers " +
+      "and an open portcullis gate, and above it a white-clad soldier with a raised sword and shield. The " +
+      "wall stands for Cēsis Castle; the soldier for the town’s history as a knights’ town and seat of the " +
+      "master of the Livonian Order. The seal dates to 1383; arms confirmed 1925.",
+    sources: [
+      { title: "Cēsu ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/C%C4%93su_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-026": {
+    description:
+      "The municipality arms (from the town of Dobele): on red a silver bar in the national-flag colours " +
+      "crossed by a golden-hilted sword. The sword stands for the Semigallians’ resistance against the " +
+      "German crusaders. Adopted 1925.",
+    sources: [
+      { title: "Dobeles ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Dobeles_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-033": {
+    description:
+      "The municipality arms (from the town of Gulbene): on black a swimming silver swan. The swan puns on " +
+      "the town’s name (gulbis = “swan”); the image was drawn from a bas-relief on the façade of the old " +
+      "Vecgulbene manor inn. Adopted 1938, restored 1989.",
+    sources: [
+      { title: "Gulbenes ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Gulbenes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-047": {
+    description:
+      "The municipality arms (from the town of Krāslava): on blue a silver boat with a raised sail and five " +
+      "oars. The boat is navigation on the Daugava; the five oars stand for the five main peoples of the " +
+      "town — Latvians, Russians, Belarusians, Poles and Jews. Adopted 1925.",
+    sources: [
+      { title: "Krāslavas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Kr%C4%81slavas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-050": {
+    description:
+      "The municipality arms (from the town of Kuldīga): on red Saint Catherine of Alexandria, the town’s " +
+      "patroness, with a martyr’s crown, a stylised breaking-wheel and a rosary in her right hand and a " +
+      "sword in her left. The wheel recalls her martyrdom; the imagery follows a relief over the side door " +
+      "of Kuldīga’s St Catherine’s Church. Adopted 1938.",
+    sources: [
+      { title: "Kuldīgas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Kuld%C4%ABgas_%C4%A3erbonis" },
+    ],
+  },
+  "LV-054": {
+    description:
+      "The municipality arms (from the town of Limbaži): on silver a red brick wall with two turrets and a " +
+      "central dome, an open portcullis gate below the middle turret with a golden lion’s head behind it, " +
+      "and a golden cross and bishop’s crozier crossed above. The design echoes Riga’s arms, marking the " +
+      "town’s historic belonging to the Archbishopric of Riga. Adopted 1928.",
+    sources: [
+      { title: "Limbažu ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Limba%C5%BEu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-056": {
+    description:
+      "The municipality arms (from the town of Līvāni): on blue a silver band below and a silver hawk with " +
+      "outspread wings above. The bands mark the confluence of the Dubna into the Daugava where the town " +
+      "stands; the hawk is the town’s guardian and a symbol of high flight. Established 1938, current form 1996.",
+    sources: [
+      { title: "Līvānu ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/L%C4%ABv%C4%81nu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-058": {
+    description:
+      "The municipality arms (from the town of Ludza): on silver a red embattled brick wall, above it a " +
+      "black key crossed by a golden-hilted sword. The wall stands for Ludza Castle; the key for the town’s " +
+      "border location; the sword for the battles fought around Ludza. Adopted 1925.",
+    sources: [
+      { title: "Ludzas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Ludzas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-067": {
+    description:
+      "The municipality arms (from the town of Ogre): on blue three black pines rooted on a silver wavy bar. " +
+      "The pines stand for the pine forests around Ogre; the wavy bar is the river Ogre. Adopted 1938.",
+    sources: [
+      { title: "Ogres ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Ogres_%C4%A3erbonis" },
+    ],
+  },
+  "LV-068": {
+    description:
+      "The municipality arms (from the town of Olaine): a shield divided silver and green; on the silver " +
+      "three red drops of blood, on the green a black cranberry sprig with silver leaves and two red " +
+      "berries. The blood-drops mark the Olainfarm pharmaceutical works (health and life); the cranberry " +
+      "the peat bogs of the region — together the industries that built the town. Adopted 1998.",
+    sources: [
+      { title: "Olaines ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Olaines_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-073": {
+    description:
+      "The municipality arms (from the town of Preiļi): on gold a black raven in profile with a golden eye. " +
+      "The raven — a symbol of wisdom, courage and strength and a noted counsellor in folklore — is drawn " +
+      "from the arms of the von der Borch family, Preiļi’s long-time owners. Adopted 1938.",
+    sources: [
+      { title: "Preiļu ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Prei%C4%BCu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-080": {
+    description:
+      "The municipality arms: on red four silver strands woven together into a plait. Red places the " +
+      "municipality in the Vidzeme region; the silver stands for wisdom, prudence and purity; the four " +
+      "woven strands are its four constituent territories (Garkalne, Ropaži and Stopiņi parishes and " +
+      "Vangaži town), the weave their shared history and future. Adopted 2022.",
+    sources: [
+      { title: "Ropažu novada ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Ropa%C5%BEu_novada_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-087": {
+    description:
+      "The municipality arms (from the town of Salaspils): a shield divided gold and blue; on the gold a " +
+      "green leafy ash tree, on the blue a silver brick wall with a gateway. The ash is the National " +
+      "Botanic Garden; the blue is the Daugava; the walled gate recalls the castle that stood on Mārtiņsala " +
+      "island. Adopted 1996.",
+    sources: [
+      { title: "Salaspils ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Salaspils_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-088": {
+    description:
+      "The municipality arms (from the town of Saldus): on blue a silver wooden castle with towers on a " +
+      "silver base. The timber fort recalls the Saldus hillfort, a Curonian stronghold at the south end of " +
+      "Saldus Lake. Adopted 1925.",
+    sources: [
+      { title: "Saldus ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Saldus_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-089": {
+    description:
+      "The municipality arms (from the town of Saulkrasti): a shield with, below, four silver and five green " +
+      "pales, and above, a golden half-sun on blue. The four silver pales are the rivers Aģe, Pēterupe, " +
+      "Inčupe and Ķīšupe; the five green ones the villages that merged to form the town; the half-sun puns " +
+      "on the name (saule = “sun”). Adopted 1998.",
+    sources: [
+      { title: "Saulkrastu ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Saulkrastu_%C4%A3erbonis" },
+    ],
+  },
+  "LV-091": {
+    description:
+      "The municipality arms (from the town of Sigulda): a shield divided diagonally, silver above and green " +
+      "below, with three green leaves on the silver and three silver five-petalled ivy blossoms on the " +
+      "green. The flora together stand for the natural beauty of Sigulda. Adopted 1938.",
+    sources: [
+      { title: "Siguldas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Siguldas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-094": {
+    description:
+      "The municipality arms (from the town of Smiltene): on blue three golden hills below and three silver " +
+      "falcons flying to the right above. The hills are Smiltene’s Jāņu kalns, Lazdu kalns and Pilskalns; " +
+      "the falcons stand for strong spirit, strength and lofty goals. Adopted 1925.",
+    sources: [
+      { title: "Smiltenes ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Smiltenes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-097": {
+    description:
+      "The municipality arms (from the town of Talsi): on gold a green hill from which rises a natural-" +
+      "coloured hand holding a green wreath. The hill stands for Talsi, a town spread over nine hills; the " +
+      "wreath is a symbol of strength and power, the rising hand the town’s ascent. Adopted 1925.",
+    sources: [
+      { title: "Talsu ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Talsu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-099": {
+    description:
+      "The municipality arms (from the town of Tukums): on silver a green hill bearing three green firs. The " +
+      "hill is the Tukums mound; the three firs stand for the natural wealth of the town. The design dates " +
+      "to 1837, confirmed by the Russian emperor in 1846 and re-confirmed by Latvia in 1925.",
+    sources: [
+      { title: "Tukuma ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Tukuma_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-101": {
+    description:
+      "The municipality arms (from the town of Valka): on green an armoured hand issuing from a cloud and " +
+      "holding a golden-hilted curved sword, with three golden stars. The armoured hand and sword stand for " +
+      "knightly power; the cloud puns on the German name Wolke; the three stars, added in 1925, stand for " +
+      "the Latvian Republic. The design goes back to 1590.",
+    sources: [
+      { title: "Valkas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Valkas_%C4%A3erbonis" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
