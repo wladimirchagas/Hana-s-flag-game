@@ -336,3 +336,6 @@ ST-P
 CO-ATL  # Atlántico flag (white/red/white) — design documented but no per-element symbolism in dedicated article, dept article, or Commons blazon (rule 3a exhausted 2026-07-04)
 CO-CAU  # Cauca flag (green/gold/green) — dedicated "Bandera del Cauca" article states no colour symbolism; dept article + Commons file give none (rule 3a exhausted 2026-07-04)
 CO-SAP  # San Andrés y Providencia flag (white saltire on sky-blue) — no sourced per-element symbolism in flag article, dept article, or Commons (rule 3a exhausted 2026-07-04)
+LV-052  # Ķekava municipality arms (blue/green, wavy bar, three stars) — modern 2010 arms, dedicated lv.wiki article gives blazon but no symbolism; no Commons blazon (rule 3a exhausted 2026-07-04)
+LV-062  # Mārupe municipality arms (green, golden hoopoe, birch leaf) — modern 2022 arms, dedicated lv.wiki article gives blazon but no symbolism; no Commons blazon (rule 3a exhausted 2026-07-04)
+LV-102  # Varakļāni municipality arms — dedicated arms article 404, town/novads article image-only, no reachable Commons blazon (rule 3a exhausted 2026-07-04)
