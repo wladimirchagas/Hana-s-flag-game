@@ -64,6 +64,14 @@ import "./LearnPage.css";
 // These must never fall back to flagcdn — show broken image instead.
 const FLAGCDN_FALLBACK_EXCLUDED = new Set(["AF"]);
 
+// Feature flag — the city overlay (📍 capitals + largest cities toggle) is
+// hidden from the UI for now. The whole feature (data, markers, map wiring)
+// stays intact; only the two toggle buttons that expose it are gated off, and
+// since `showCities` can flip only via those buttons, the overlay and legend
+// (both downstream of `showCities`) never render while this is false. Flip to
+// `true` to bring the feature back.
+const CITIES_FEATURE_ENABLED = false;
+
 /**
  * Learn-mode sandbox with a historical era slider.
  *
@@ -807,15 +815,17 @@ export default function LearnPage() {
         >
           🚩
         </button>
-        <button
-          type="button"
-          className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
-          onClick={toggleCities}
-          aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
-          title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
-        >
-          📍
-        </button>
+        {CITIES_FEATURE_ENABLED && (
+          <button
+            type="button"
+            className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
+            onClick={toggleCities}
+            aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
+            title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
+          >
+            📍
+          </button>
+        )}
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -839,15 +849,17 @@ export default function LearnPage() {
         >
           🚩
         </button>
-        <button
-          type="button"
-          className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
-          onClick={toggleCities}
-          aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
-          title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
-        >
-          📍
-        </button>
+        {CITIES_FEATURE_ENABLED && (
+          <button
+            type="button"
+            className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
+            onClick={toggleCities}
+            aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
+            title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
+          >
+            📍
+          </button>
+        )}
       </>
     ),
     [showFlagMap, toggleFlagMap, showCities, toggleCities],
