@@ -11351,6 +11351,128 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Provincia di Verona — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Verona" },
     ],
   },
+
+  "LT-VL": {
+    description:
+      "The county arms as a banner: on red a silver armoured knight on a black horse — the Vytis, " +
+      "brandishing a spear, a blue shield with a golden double cross at his shoulder — within a blue " +
+      "border of ten double crosses. The mounted knight has stood for Vilnius and the Grand Duchy of " +
+      "Lithuania since Grand Duke Algirdas’s seal of 1366.",
+    sources: [
+      { title: "Vilniaus apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Vilniaus_apskrities_herbas" },
+    ],
+  },
+
+  "EE-37": {
+    description:
+      "The county arms as a banner: on a red field a silver cross — the arms of Harju County, taken " +
+      "from the small arms of Tallinn, confirmed in 1937.",
+    sources: [
+      { title: "Harju maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Harju_maakonna_vapp" },
+    ],
+  },
+
+  "AR-H": {
+    description:
+      "The province flag: green, white and light-blue vertical stripes; on the white a golden 32-ray " +
+      "sun of Argentina above a plough ringed by 25 five-pointed stars. Green is the Chaco forest, the " +
+      "plough the tilling of virgin land (the province’s first livelihood), and the 25 stars its " +
+      "departments.",
+    sources: [
+      { title: "Bandera de la provincia del Chaco — Wikipedia (Spanish)", url: "https://es.wikipedia.org/wiki/Bandera_de_la_provincia_del_Chaco" },
+    ],
+  },
+
+  "LT-KU": {
+    description:
+      "The county arms as a banner: on red a silver aurochs head with a golden cross between its horns, " +
+      "within a blue border of ten double crosses. The aurochs comes from the arms of Kaunas, the " +
+      "county’s centre; the border marks county rank.",
+    sources: [
+      { title: "Kauno apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Kauno_apskrities_herbas" },
+    ],
+  },
+
+  "LT-KL": {
+    description:
+      "The county arms as a banner: on red a golden three-towered wall over a silver wavy base, within " +
+      "a blue border of ten double crosses. The castle and red-and-gold come from Klaipėda’s arms (from " +
+      "a 13th-century seal); the wavy base is the Baltic Sea.",
+    sources: [
+      { title: "Klaipėdos apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Klaip%C4%97dos_apskrities_herbas" },
+    ],
+  },
+
+  "LT-SA": {
+    description:
+      "The county arms as a banner: on silver a black bear with red tongue, teeth and claws, within a " +
+      "blue border of ten double crosses. The bear is the emblem of Samogitia (Žemaitija), the region " +
+      "Šiauliai belongs to — here without the Samogitian bear’s chain.",
+    sources: [
+      { title: "Šiaulių apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/%C5%A0iauli%C5%B3_apskrities_herbas" },
+    ],
+  },
+
+  "LT-PN": {
+    description:
+      "The county arms as a banner: on silver over a red masonry base a black armoured knight with a " +
+      "sword and a blue shield bearing a golden double cross, within a blue border of ten double " +
+      "crosses. The knight is from the 16th-century seal of the historic Upytė land, and the masonry " +
+      "base recalls Upytė itself.",
+    sources: [
+      { title: "Panevėžio apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Panev%C4%97%C5%BEio_apskrities_herbas" },
+    ],
+  },
+
+  "LT-AL": {
+    description:
+      "The county arms as a banner: on blue a silver armoured knight holding a golden halberd and a " +
+      "silver shield, within a blue border of ten double crosses — the arms drawn from the historic " +
+      "Trakai land that Alytus County overlaps.",
+    sources: [
+      { title: "Alytaus apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Alytaus_apskrities_herbas" },
+    ],
+  },
+
+  "LT-MR": {
+    description:
+      "The county arms as a banner: on red a silver sower scattering golden grain, within a blue border " +
+      "of ten double crosses. The sower is Marijampolė’s farming heritage, the ‘golden thoughts’ also " +
+      "standing for the spread of knowledge in a region famed for its scholars.",
+    sources: [
+      { title: "Marijampolės apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Marijampol%C4%97s_apskrities_herbas" },
+    ],
+  },
+
+  "LT-TA": {
+    description:
+      "The county arms as a banner: on red a golden lynx rampant with a silver sword and a shield " +
+      "bearing a red hunting horn, within a blue border of ten double crosses. The lynx stands for " +
+      "alertness and defence, the red for blood shed for Lithuania, and the horn for Tauragė.",
+    sources: [
+      { title: "Tauragės apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Taurag%C4%97s_apskrities_herbas" },
+    ],
+  },
+
+  "LT-TE": {
+    description:
+      "The county arms as a banner: on red a black bear with silver tongue, teeth and claws wearing a " +
+      "chained collar, within a blue border of ten double crosses — the chained bear of Samogitia " +
+      "(Žemaitija), the region of Telšiai.",
+    sources: [
+      { title: "Telšių apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Tel%C5%A1i%C5%B3_apskrities_herbas" },
+    ],
+  },
+
+  "LT-UT": {
+    description:
+      "The county arms as a banner: on red a silver horse with a golden eight-pointed star above, " +
+      "within a blue border of ten double crosses. The horse honours the region’s equestrian tradition " +
+      "and the warrior’s mount; the star is taken from the arms of Utena city.",
+    sources: [
+      { title: "Utenos apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Utenos_apskrities_herbas" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
