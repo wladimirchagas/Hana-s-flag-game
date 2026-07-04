@@ -10820,10 +10820,11 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
 
   "PK-SD": {
     description:
-      "A dark-green flag bearing the Sindh provincial emblem in white. The emblem " +
-      "features the province's major crops (wheat, cotton, rice, sugarcane) representing " +
-      "the agrarian economy of the Indus River valley, with a crescent and star for " +
-      "Islamic heritage. The green field and white emblem use Pakistan's national colours.",
+      "A dark-green flag (adopted 2005) bearing the Sindh provincial emblem in white, made " +
+      "up of the province's four major crops — cotton, rice, wheat and sugar cane — for the " +
+      "agriculture of the fertile Indus valley, above a crescent-shaped scroll reading " +
+      "\"Government of Sindh\" in Urdu and Sindhi. The white-and-dark-green scheme is the " +
+      "Pakistani national colours, reflecting the country's Islamic heritage.",
     sources: [
       { title: "Flag of Sindh — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sindh" },
     ],
@@ -10831,11 +10832,10 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
 
   "PK-BA": {
     description:
-      "A dark-green flag with the Balochistan provincial emblem in white. The emblem " +
-      "features stylised mountains representing the province's rugged highland terrain, " +
-      "a crescent and star for Islamic heritage, and traditional motifs reflecting " +
-      "Baloch culture. The green-and-white colour scheme reflects the Pakistani " +
-      "national colours.",
+      "A dark-green flag (adopted 23 May 2005) whose emblem shows the stylised mountains of " +
+      "the province's barren terrain and a camel — Balochistan's principal traditional means " +
+      "of transport and its official provincial animal. The white-and-dark-green scheme is the " +
+      "Pakistani national colours.",
     sources: [
       { title: "Flag of Balochistan, Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Balochistan,_Pakistan" },
     ],
