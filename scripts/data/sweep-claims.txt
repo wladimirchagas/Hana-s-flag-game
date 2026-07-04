@@ -19,6 +19,21 @@
 # Find remaining work:  node scripts/subdiv-remaining.mjs [CC]
 # Log genuine omissions in: scripts/data/subdiv-meaning-omitted.txt
 # ---------------------------------------------------------------------------
+#
+# ===== 2026-07-04 AUDIT — READ BEFORE OMITTING ANY SET (Antigravity: this is new scope) =====
+# A pervasive wrong-omission bug was found: sets were batch-omitted as "image-only /
+# unsourceable" after checking ONLY the subdivision's MAIN article or en.wikipedia. In fact
+# their symbolism IS sourceable via a DEDICATED local-language arms/flag article and/or the
+# Wikimedia Commons file blazon. Confirmed wrongly-omitted and now being RE-SOURCED:
+#   IT (81 provinces — it.wiki Stemma + Commons blason), LT (10 counties — "X apskrities herbas"),
+#   EE ("X maakonna vapp"), LV ("X ģerbonis"), MK ("Грб на X"), AR/CO ("Bandera de la provincia de X").
+# NEW HARD RULE (CLAUDE.md rule 3a): before omitting a set you MUST exhaust all three of:
+#   (a) the subdivision's own LOCAL-language wiki heraldry section (Stemma/Wappen/Vaakuna/Герб/…),
+#   (b) the DEDICATED arms/flag article (main article often shows only the image), and
+#   (c) the Wikimedia Commons file page (its description usually carries the full blazon).
+# Only a coat of arms with NO textual blazon anywhere (e.g. RO counties — gazette-only) is a real wall.
+# Antigravity: do NOT trust an old `omitted`/`wall` line without re-checking via (a)+(b)+(c).
+# ---------------------------------------------------------------------------
 
 # ===== COMPLETED (every displayed subdivision sourced, or investigated-and-omitted) =====
 TH  claude  done       # Thailand — 77 provinces (provincial seals)
@@ -53,7 +68,13 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
-IT  claude  in-progress  # Italy — re-sourcing 81 provinces wrongly omitted by #401 (it.wikipedia Stemma)
+IT  claude  in-progress  # Italy — re-sourcing 81 provinces wrongly omitted by #401 (it.wiki Stemma); ~22/81 done, 59 left
+LT  claude  done         # Lithuania — all 10 counties re-sourced ("X apskrities herbas"); was wrongly omitted
+EE  claude  in-progress  # Estonia — re-sourcing counties ("X maakonna vapp"); EE-37 Harju done, 3 left (EE-39/74/84)
+LV  claude  in-progress  # Latvia — re-sourcing "X ģerbonis"; 31 left (was wrongly omitted)
+CO  claude  in-progress  # Colombia — re-sourcing "Bandera de la provincia/departamento de X"; 13 left
+AR  claude  in-progress  # Argentina — re-sourcing "Bandera de la provincia de X"; AR-H Chaco done, 4 left
+MK  claude  in-progress  # Macedonia — re-sourcing "Грб на X" (was wrongly omitted)
 PE  claude  omitted      # image-only wall — all codes logged omitted (rule 6)
 PG  claude  omitted      # image-only wall — all codes logged omitted (rule 6)
 TW  claude  omitted      # image-only wall — all codes logged omitted (rule 6)
@@ -101,5 +122,8 @@ GB  antigravity  done     # Great Britain — GB-NIR (Northern Ireland) sourced 
 CA  antigravity  done     # Canada — CA-PE (Prince Edward Island) sourced (en.wikipedia)
 PK  antigravity  done     # Pakistan — 4 provinces sourced (en.wikipedia Flag of X articles)
 
-# ===== SWEEP COMPLETE — node scripts/subdiv-remaining.mjs => remaining:0 =====
-# Every displayed subdivision flag is sourced or investigated-and-omitted.
+# ===== SWEEP RE-OPENED (2026-07-04) — remaining:110 across 5 countries =====
+# The audit above reversed the wrong omissions; those sets are now being re-sourced.
+# Current: IT:59 LV:31 CO:13 AR:4 EE:3 (run `node scripts/subdiv-remaining.mjs` for live count).
+# Antigravity: safe to claim LV or CO (independent of the Italy/Estonia work in flight) — add an
+# `in-progress` line first, or leave them to claude. Do not re-omit without the (a)+(b)+(c) checks.
