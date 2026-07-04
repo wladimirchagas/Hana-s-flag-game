@@ -11939,6 +11939,220 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Valkas ģerbonis — Wikipedia (Latvian)", url: "https://lv.wikipedia.org/wiki/Valkas_%C4%A3erbonis" },
     ],
   },
+  "IT-BA": {
+    description:
+      "The province arms: quartered per saltire (a St Andrew’s cross) blue and silver, with a golden " +
+      "bishop’s crosier over all. The crosier stands for Saint Nicholas, patron of Bari; the arms continue " +
+      "those of the historic Terra di Bari province.",
+    sources: [
+      { title: "Provincia di Bari — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Bari" },
+    ],
+  },
+
+  "IT-CZ": {
+    description:
+      "The province arms (royal decree 1938): quartered per saltire — the first and third gold with four " +
+      "red pales, the second and fourth silver with a black cross potent. The arms are shared with the " +
+      "province of Reggio Calabria: both descend from the medieval Calabria Ulteriore, later split into a " +
+      "Prima and a Seconda province.",
+    sources: [
+      { title: "Provincia di Catanzaro — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Catanzaro" },
+    ],
+  },
+  "IT-CT": {
+    description:
+      "The arms (Catania’s civic arms, carried by the metropolitan city): on blue a red elephant with " +
+      "raised trunk and natural tusks, surmounted by a red letter A. The elephant is the Liotru, the ancient " +
+      "lava-stone statue in Piazza Duomo that has stood for the city for centuries (Catania was known in " +
+      "Arabic as Madīnat al-Fīl, “city of the elephant”); the A commemorates the patroness Sant’Agata and " +
+      "the 1357 battle-cry “Sant’Agata e Alagona”.",
+    sources: [
+      { title: "Stemma di Catania — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Stemma_di_Catania" },
+    ],
+  },
+  "IT-CH": {
+    description:
+      "The province arms (royal decree 1938): on gold a natural boar’s head surmounted by a red yoke pierced " +
+      "and nailed in silver. The boar’s head is a long-standing emblem of the Abruzzo; the yoke recalls the " +
+      "region’s ancient peoples.",
+    sources: [
+      { title: "Provincia di Chieti — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Chieti" },
+    ],
+  },
+  "IT-FG": {
+    description:
+      "The province arms (decree 1938): a sky field over a foothill landscape on which the Archangel " +
+      "Michael, in Roman armour, tramples a serpent. Michael is the patron of the Foggia province " +
+      "(the Gargano sanctuary of Monte Sant’Angelo is dedicated to him).",
+    sources: [
+      { title: "Provincia di Foggia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Foggia" },
+    ],
+  },
+
+  "IT-GO": {
+    description:
+      "The province arms: per bend, the first blue with a crowned golden lion, the second barry of silver " +
+      "and red. It repeats the arms of the medieval County of Gorizia: the lion stood for the counts’ " +
+      "authority, the red-and-silver bars for their vassalage to the Patriarchate of Aquileia. Recognised " +
+      "1929.",
+    sources: [
+      { title: "Provincia di Gorizia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Gorizia" },
+    ],
+  },
+
+  "IT-IS": {
+    description:
+      "The province arms: quartered, combining the arms of its four chief towns — Isernia (a silver " +
+      "S-shaped serpent holding a baton of command on blue), Agnone (a golden hippogriff seizing an antique " +
+      "letter A on red), Venafro (three silver bands on black) and Frosolone (a dove and a letter F with a " +
+      "star, gold on blue).",
+    sources: [
+      { title: "Provincia di Isernia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Isernia" },
+    ],
+  },
+
+  "IT-KR": {
+    description:
+      "The province arms: divided in three — on blue six golden eight-pointed stars in two rows; on gold a " +
+      "black anchor with a red stock; on green seven golden ears of wheat bound in red — an anchor for the " +
+      "Ionian port city and ears of wheat for its farmland.",
+    sources: [
+      { title: "Provincia di Crotone — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Crotone" },
+    ],
+  },
+  "IT-FI": {
+    description:
+      "The arms (Florence’s civic arms, carried by the metropolitan city): on a silver field an open red " +
+      "lily (the giglio). The lily has stood for Florence since the 11th century; in 1251 the ruling Guelphs " +
+      "inverted the older white-on-red to red-on-white to set themselves apart from the exiled Ghibellines. " +
+      "It is often linked to the wild iris that grew around the city and to the Roman name Florentia.",
+    sources: [
+      { title: "Stemma di Firenze — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Stemma_di_Firenze" },
+    ],
+  },
+
+  "IT-GR": {
+    description:
+      "The arms (from the city of Grosseto): a griffin on a red shield, later given a sword. The griffin, a " +
+      "winged mythical beast, evokes the Etruscan origins of the Grosseto people; the sword is traditionally " +
+      "tied to 1328, when the city withstood the siege of Ludwig of Bavaria.",
+    sources: [
+      { title: "Grosseto — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Grosseto" },
+    ],
+  },
+  "IT-LC": {
+    description:
+      "The province arms: per pale and per fess — a green field with a red six-petalled Alpine flower, a " +
+      "silver field with a red cross (the Visconti of Milan), and a blue field with a golden lion. The " +
+      "Alpine flower is local craft tradition, the cross the Visconti lordship, the blue the lake and the " +
+      "lion the people’s tenacity.",
+    sources: [
+      { title: "Provincia di Lecco — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Lecco" },
+    ],
+  },
+
+  "IT-LO": {
+    description:
+      "The province arms: per pale, the first green with a silver bendlet-sinister, the second red with a " +
+      "golden bend.",
+    sources: [
+      { title: "Provincia di Lodi — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Lodi" },
+    ],
+  },
+
+  "IT-LT": {
+    description:
+      "The province arms (presidential decree 1954): a sky field crossed by a green band edged silver and " +
+      "charged with three ears of wheat, a black-windowed tower on three hills above and an anchor in a " +
+      "rough sea below. The green band is the wheat-growing Pontine plain dividing sea from mountain; the " +
+      "tower recalls the hill towns and their watchtowers, the anchor the coast’s maritime past.",
+    sources: [
+      { title: "Provincia di Latina — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Latina" },
+    ],
+  },
+
+  "IT-MB": {
+    description:
+      "The province arms (presidential decree 2022): on green a silver Celtic triskele meeting at the point " +
+      "of honour. It draws on the Celtic root of “Brianza” (brig, “hill”) and on the local rivers, the " +
+      "triskele’s three arms evoking the waterways that divide the territory.",
+    sources: [
+      { title: "Provincia di Monza e della Brianza — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Monza_e_della_Brianza" },
+    ],
+  },
+  "IT-MC": {
+    description:
+      "The arms (from the city of Macerata): a red field quartered by black filets, with silver cross " +
+      "patées in the first and fourth quarters and silver mill-wheels (mole) in the second and third.",
+    sources: [
+      { title: "Macerata — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Macerata" },
+    ],
+  },
+  "IT-CE": {
+    description:
+      "The province arms: on blue two golden cornucopias crossed at the base and passed through a " +
+      "marquess’s crown, the right one heaped with ears of wheat and the left with fruit. The overflowing " +
+      "horns of plenty stand for the fertility of the Terra di Lavoro, the historic land Caserta inherited.",
+    sources: [
+      { title: "File:Provincia di Caserta-Stemma.svg — Wikimedia Commons (blazon)", url: "https://commons.wikimedia.org/wiki/File:Provincia_di_Caserta-Stemma.svg" },
+    ],
+  },
+  "IT-MI": {
+    description:
+      "The metropolitan-city arms: on blue a golden sun with wavy and pointed rays and a silver crescent " +
+      "moon, beneath a silver chief charged with a red cross — the historic cross of the comune of Milan.",
+    sources: [
+      { title: "Città metropolitana di Milano — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Citt%C3%A0_metropolitana_di_Milano" },
+    ],
+  },
+
+  "IT-MS": {
+    description:
+      "The province arms: on blue a natural chain of mountains rising from the base, above it a silver " +
+      "crescent surmounted by a golden star. The motto is “Extollunt marmora lunam” (the marbles exalt the " +
+      "moon), a reference to the province’s famous Carrara marble.",
+    sources: [
+      { title: "Provincia di Massa-Carrara — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Massa-Carrara" },
+    ],
+  },
+
+  "IT-NA": {
+    description:
+      "The metropolitan-city arms: on gold a black rampant horse — the historic emblem of Naples, the " +
+      "unbridled “Corsiero del Sole”.",
+    sources: [
+      { title: "Città metropolitana di Napoli — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Citt%C3%A0_metropolitana_di_Napoli" },
+    ],
+  },
+
+  "IT-OR": {
+    description:
+      "The province arms: on silver a stylised uprooted green leafy tree.",
+    sources: [
+      { title: "Provincia di Oristano — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Oristano" },
+    ],
+  },
+  "IT-ME": {
+    description:
+      "The arms (from the city of Messina): a horse-head-shaped shield, red with a golden cross, framed by " +
+      "two natural vine branches with golden fruit and ensigned with a city crown. The golden cross is the " +
+      "chief charge; the fruited vines stand for fertility and prosperity.",
+    sources: [
+      { title: "Messina — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Messina" },
+    ],
+  },
+
+  "IT-MT": {
+    description:
+      "The arms (from the city of Matera): on blue a standing silver ox with three ears of wheat in its " +
+      "mouth and a fleuron crown on its horns, topped by a letter M, all in gold. The ox with the wheat is " +
+      "canting arms — the Greek for wheat with the ox forms “Mather-Eros”, echoing Matera; the crown marks " +
+      "the city as a free royal town of the Regio Demanio. Motto: “Bos lassus firmius figit pedem” (the " +
+      "tired ox plants its foot more firmly), recalling the 1514 revolt.",
+    sources: [
+      { title: "Matera — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Matera" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

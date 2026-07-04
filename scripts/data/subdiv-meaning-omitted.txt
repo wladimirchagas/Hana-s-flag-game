@@ -339,3 +339,5 @@ CO-SAP  # San Andrés y Providencia flag (white saltire on sky-blue) — no sour
 LV-052  # Ķekava municipality arms (blue/green, wavy bar, three stars) — modern 2010 arms, dedicated lv.wiki article gives blazon but no symbolism; no Commons blazon (rule 3a exhausted 2026-07-04)
 LV-062  # Mārupe municipality arms (green, golden hoopoe, birch leaf) — modern 2022 arms, dedicated lv.wiki article gives blazon but no symbolism; no Commons blazon (rule 3a exhausted 2026-07-04)
 LV-102  # Varakļāni municipality arms — dedicated arms article 404, town/novads article image-only, no reachable Commons blazon (rule 3a exhausted 2026-07-04)
+IT-FC  # Forlì-Cesena province arms — no blasonatura in article Simboli section, no dedicated stemma page, no Commons blazon (rule 3a exhausted 2026-07-04)
+IT-LU  # Lucca province arms — no blasonatura on it.wiki (province or city article) nor Commons file description (rule 3a exhausted 2026-07-04)
