@@ -12153,6 +12153,346 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Matera — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Matera" },
     ],
   },
+  "IT-PC": {
+    description:
+      "The province arms: on red a silver die (a square block), ensigned with the golden provincial crown " +
+      "wreathed in oak and laurel with golden berries.",
+    sources: [
+      { title: "Provincia di Piacenza — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Piacenza" },
+    ],
+  },
+
+  "IT-PE": {
+    description:
+      "The province arms: per pale — the first a sky field with a river rising from three mountains and " +
+      "flowing to a sea on which a sailing boat rides (the province from mountains to coast); the second " +
+      "green with a natural boar, alluding to the theory that “Abruzzo” derives from the Latin aper (boar).",
+    sources: [
+      { title: "Provincia di Pescara — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Pescara" },
+    ],
+  },
+
+  "IT-PG": {
+    description:
+      "The province arms (from the city of Perugia): on red a silver griffin passant, crowned and armed in " +
+      "gold. The griffin has been Perugia’s emblem since the 11th century and reproduces an Etruscan bronze " +
+      "over the door of the Palazzo dei Priori.",
+    sources: [
+      { title: "Provincia di Perugia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Perugia" },
+    ],
+  },
+
+  "IT-PN": {
+    description:
+      "The province arms: on blue with a golden border, the goddess Concordia holding an olive sprig in her " +
+      "right hand and a cornucopia of fruit in her left. Motto: “Concordia parvae res crescunt” (in harmony " +
+      "small things grow), from Sallust — the province’s ideal of concord and prosperity.",
+    sources: [
+      { title: "Provincia di Pordenone — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Pordenone" },
+    ],
+  },
+  "IT-PA": {
+    description:
+      "The arms (from the city of Palermo): on red a golden Roman eagle with open wings holding in its " +
+      "talons a band with the letters S.P.Q.P. — Senatus Populusque Panormitanus, “the Senate and People of " +
+      "Palermo”, on the Roman model.",
+    sources: [
+      { title: "Palermo — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Palermo" },
+    ],
+  },
+
+  "IT-PI": {
+    description:
+      "The arms (from the city of Pisa): on red a white Pisan cross — a cross patty with forked ends studded " +
+      "with twelve small spheres. Red and the Pisan cross have marked the city’s arms since the medieval " +
+      "republic.",
+    sources: [
+      { title: "Pisa — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Pisa" },
+    ],
+  },
+  "IT-PT": {
+    description:
+      "The province arms: per fess blue and green, the blue charged with a golden six-peaked mountain rising " +
+      "from the division (the Apennine heights over the plain), within a border checky of red and silver " +
+      "taken from the arms of the city of Pistoia.",
+    sources: [
+      { title: "Provincia di Pistoia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Pistoia" },
+    ],
+  },
+
+  "IT-PU": {
+    description:
+      "The province arms (royal decree 1938): per pale, Pesaro and Urbino combined — Pesaro’s golden oak of " +
+      "the Della Rovere with the motto “Perpetua et firma fidelitas”, and Urbino’s three golden bends with a " +
+      "black eagle, from the Montefeltro. The two halves join the arms of the province’s historic ducal houses.",
+    sources: [
+      { title: "Provincia di Pesaro e Urbino — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Pesaro_e_Urbino" },
+    ],
+  },
+
+  "IT-RA": {
+    description:
+      "The province arms (from the city of Ravenna): on gold a red eagle.",
+    sources: [
+      { title: "Provincia di Ravenna — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Ravenna" },
+    ],
+  },
+  "IT-RC": {
+    description:
+      "The arms (from the city of Reggio Calabria, carried by the metropolitan city): on blue, all in gold, " +
+      "Saint George on horseback spearing the dragon, beside him a kneeling crowned maiden haloed with rays " +
+      "of light, ringed by the motto “Urbs Rhegina nobilis insignis fidelissima provinciae prima mater et " +
+      "caput” and topped by an Aragonese royal crown.",
+    sources: [
+      { title: "Reggio Calabria — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Reggio_Calabria" },
+    ],
+  },
+  "IT-PO": {
+    description:
+      "The arms (from the city of Prato): on red strewn with golden lilies, an Angevin chief. The design " +
+      "dates from 1313, when Prato put itself under the protection of King Robert of Anjou, and has been the " +
+      "city’s emblem since the 13th century.",
+    sources: [
+      { title: "Prato — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Prato_(Italia)" },
+    ],
+  },
+
+  "IT-PZ": {
+    description:
+      "The arms (from the city of Potenza, decree 1942): on blue a golden crowned lion resting on a lowered " +
+      "red band, with three silver stars in the chief.",
+    sources: [
+      { title: "Potenza — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Potenza_(Italia)" },
+    ],
+  },
+  "IT-RI": {
+    description:
+      "The province arms: on red a red band edged gold bearing the letters S.P.Q.S. (Senatus Populusque " +
+      "Sabinus) alternating with three groups of interlaced gold rings. Motto: “Tota Sabina Civitas” (all " +
+      "Sabina as one community).",
+    sources: [
+      { title: "Provincia di Rieti — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Rieti" },
+    ],
+  },
+
+  "IT-RN": {
+    description:
+      "The province arms: a sky field with a golden four-masted sailing ship, red-trimmed, riding a wavy " +
+      "silver-and-blue sea. The vessel is taken from a bas-relief by Agostino di Duccio in Rimini’s Tempio " +
+      "Malatestiano.",
+    sources: [
+      { title: "Provincia di Rimini — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Rimini" },
+    ],
+  },
+
+  "IT-SA": {
+    description:
+      "The province arms: on blue a silver Cross of Amalfi, adopted by the province in 2010 from the arms of " +
+      "the former maritime republic of Amalfi.",
+    sources: [
+      { title: "Provincia di Salerno — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Salerno" },
+    ],
+  },
+  "IT-RE": {
+    description:
+      "The arms (from the city of Reggio Emilia): on silver a red cross cantoned by the letters S.P.Q.R., " +
+      "recalling the city’s Roman origin under the consul Marcus Aemilius Lepidus. Motto: “Pace belloque " +
+      "fidelis” (faithful in peace and war).",
+    sources: [
+      { title: "Reggio Emilia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Reggio_Emilia" },
+    ],
+  },
+
+  "IT-RM": {
+    description:
+      "The arms (from Rome, carried by the metropolitan city Roma Capitale): a pointed purple shield with a " +
+      "golden Greek cross and the golden letters S.P.Q.R. set bendwise, topped by a gold crown. S.P.Q.R. — " +
+      "Senatus Populusque Romanus — is the ancient formula for the Senate and People of Rome.",
+    sources: [
+      { title: "Roma — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Roma" },
+    ],
+  },
+
+  "IT-RO": {
+    description:
+      "The province arms (from the city of Rovigo): per pale — the first blue with a natural loopholed wall " +
+      "of three towers surmounted by a silver passant Lion of Saint Mark (Venetian rule); the second per " +
+      "fess silver and green for the fertile Polesine plain.",
+    sources: [
+      { title: "Rovigo — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Rovigo" },
+    ],
+  },
+  "IT-SO": {
+    description:
+      "The province arms: quartered, combining the emblems of its historic towns — Bormio, Tirano (a castle " +
+      "with the imperial eagle of the Visconti Venosta), Morbegno (keys and sword for Saints Peter and " +
+      "Paul), Chiavenna (crossed keys) and Sondrio (crossed swords and palms for the soldier-martyrs " +
+      "Gervasius and Protasius, with the lily of the Masegra captains).",
+    sources: [
+      { title: "Provincia di Sondrio — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Sondrio" },
+    ],
+  },
+
+  "IT-SP": {
+    description:
+      "The province arms: on blue a natural stone tower of two Ghibelline-battlemented tiers on a green " +
+      "three-peaked mount, bearing a crowned black eagle, beneath a black chief with a silver crescent and " +
+      "an eight-pointed golden star. The crescent and the motto “Civium Romanorum colonia” recall the " +
+      "ancient Roman colony of Luni.",
+    sources: [
+      { title: "Provincia della Spezia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_della_Spezia" },
+    ],
+  },
+
+  "IT-SR": {
+    description:
+      "The province arms: on green a silver bend flanked by the two faces of the ancient silver Demareteion " +
+      "coin of Syracuse — the obverse with the legend ΣΥΡΑΚΟΣΙΟΝ, the reverse with a flying Victory crowning " +
+      "a chariot team above a running lion.",
+    sources: [
+      { title: "Libero consorzio comunale di Siracusa — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Libero_consorzio_comunale_di_Siracusa" },
+    ],
+  },
+
+  "IT-SS": {
+    description:
+      "The province arms (royal decree 1938): quartered — the first and fourth blue with a silver cross (the " +
+      "Savoy cross), the second and third red with a golden battlemented tower (the Tower of the Judicate of " +
+      "Torres).",
+    sources: [
+      { title: "Provincia di Sassari — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Sassari" },
+    ],
+  },
+
+  "IT-SV": {
+    description:
+      "The province arms: a sky field with a caravel under full sail on a wavy silver-and-blue sea, and a " +
+      "silver scroll with the motto “Par paribus”. The ship celebrates the province’s maritime past — " +
+      "Savona’s historic port and Noli’s standing as a maritime republic.",
+    sources: [
+      { title: "Provincia di Savona — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Savona" },
+    ],
+  },
+
+  "IT-TA": {
+    description:
+      "The province arms: on silver a black scorpion charged with three golden lilies and holding an antique " +
+      "golden crown in its claws. The scorpion carries the heritage of ancient Taras (Taranto) and was " +
+      "adopted as the provincial emblem in 1927.",
+    sources: [
+      { title: "Provincia di Taranto — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Taranto" },
+    ],
+  },
+  "IT-TN": {
+    description:
+      "The autonomous province’s emblem is the eagle of Saint Wenceslas, adopted from the seal granted to " +
+      "Bishop Nicolò da Bruna in 1339 and still the symbol of Trentino today.",
+    sources: [
+      { title: "Provincia autonoma di Trento — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_autonoma_di_Trento" },
+    ],
+  },
+
+  "IT-TR": {
+    description:
+      "The province arms: on blue five wavy silver bars at the base surmounted by three golden bees (2 and " +
+      "1). The wavy bars are the province’s waters — the Tiber, the Nera–Velino and the Marmore falls — and " +
+      "recall Terni’s ancient name Interamna (“between rivers”); the three bees, from Napoleonic heraldry of " +
+      "the former Trasimeno department, stand for the people’s industriousness.",
+    sources: [
+      { title: "Provincia di Terni — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Terni" },
+    ],
+  },
+
+  "IT-TV": {
+    description:
+      "The province arms: on blue a silver bar bearing the black name TARVISIUM, above it a Guelph-" +
+      "battlemented castle of three towers. It derives from the seal of the capital city, Treviso; the " +
+      "inscription round the shield names the bounds of the Marca Trevigiana.",
+    sources: [
+      { title: "Provincia di Treviso — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Treviso" },
+    ],
+  },
+  "IT-TO": {
+    description:
+      "The arms (from the city of Turin, carried by the metropolitan city): on a blue shield a golden " +
+      "rampant bull with silver horns, ensigned with a comital crown. The bull is canting — it stands for " +
+      "the ancient Taurini people from whom the city takes its name.",
+    sources: [
+      { title: "Torino — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Torino" },
+    ],
+  },
+
+  "IT-TP": {
+    description:
+      "The arms (from the city of Trapani): on red a golden bridge of towers on a wavy sea, surmounted by a " +
+      "golden sickle laid fesswise. The sickle is canting — the Greek Drépanon, “sickle”, named the city for " +
+      "the crescent-shaped peninsula on which it sits.",
+    sources: [
+      { title: "Trapani — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Trapani" },
+    ],
+  },
+
+  "IT-UD": {
+    description:
+      "The arms (from the city of Udine): on silver a black chevron, ensigned with a ducal crown and a " +
+      "rising silver horse as crest. The arms derive from those of the Savorgnan, the city’s leading family " +
+      "under Venetian rule.",
+    sources: [
+      { title: "Udine — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Udine" },
+    ],
+  },
+  "IT-VB": {
+    description:
+      "The province arms: per fess — above, on red a golden key palewise flanked by two silver three-peaked " +
+      "mountains; below, on silver three half-wavy blue bands. The mountains are the Alps, the key the " +
+      "Simplon Pass as Italy’s gateway, the waves the province’s many lakes and the arms of the Borromeo " +
+      "family long tied to the territory.",
+    sources: [
+      { title: "Provincia del Verbano-Cusio-Ossola — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_del_Verbano-Cusio-Ossola" },
+    ],
+  },
+  "IT-VA": {
+    description:
+      "The province arms: silver quartered by a slender red cross — the first quarter Saint Victor (patron " +
+      "of Varese), the second a rooster (Gallarate), the third a flaming letter B (Busto Arsizio), the " +
+      "fourth a castle (Saronno). The four charges reflect the province’s polycentric structure around its " +
+      "chief towns.",
+    sources: [
+      { title: "Provincia di Varese — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Varese" },
+    ],
+  },
+
+  "IT-VI": {
+    description:
+      "The province arms: five silver war ossuaries on their green mounts, each named in black — PASUBIO, " +
+      "CIMONE, ASIAGO and GRAPPA — around a central red field with a silver cross (Vicenza’s own arms). The " +
+      "ossuaries commemorate the roughly 85,000 soldiers of the First World War buried on the province’s " +
+      "mountains.",
+    sources: [
+      { title: "Provincia di Vicenza — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Vicenza" },
+    ],
+  },
+
+  "IT-VV": {
+    description:
+      "The province arms: divided in three — on gold a black tau cross, on blue the upper part of a silver " +
+      "Doric column, on red a golden lion. The Doric column recalls the area’s Greek colonisation; the tau " +
+      "cross is a mark characteristic of Calabria; the lion alludes to the capital’s former name, Monteleone " +
+      "Calabro.",
+    sources: [
+      { title: "Provincia di Vibo Valentia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Vibo_Valentia" },
+    ],
+  },
+  "IT-VE": {
+    description:
+      "The arms (from the city of Venice, carried by the metropolitan city): on blue the golden winged and " +
+      "haloed Lion of Saint Mark, seated face-on, holding an open silver book inscribed “PAX TIBI MARCE " +
+      "EVANGELISTA MEUS” (Peace to you, Mark, my Evangelist). The lion is the emblem of Saint Mark, patron " +
+      "of Venice and of its former maritime republic.",
+    sources: [
+      { title: "Venezia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Venezia" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

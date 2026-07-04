@@ -68,7 +68,7 @@ PW  claude  wall       # Palau — state flags image-only (en.wikipedia)
 
 # ===== IN PROGRESS =====
 # (add your claim lines below before starting a country)
-IT  claude  in-progress  # Italy — re-sourcing 81 provinces wrongly omitted by #401 (it.wiki Stemma); ~22/81 done, 59 left
+IT  claude  done         # Italy — all provinces re-sourced (it.wiki Simboli/Stemma + Commons blason); IT-FC/IT-LU omitted (no blasonatura anywhere)
 LT  claude  done         # Lithuania — all 10 counties re-sourced ("X apskrities herbas"); was wrongly omitted
 EE  claude  done         # Estonia — all counties re-sourced ("X maakonna vapp"); was wrongly omitted
 LV  claude  done         # Latvia — 7 cities + 21 municipalities re-sourced (lv.wiki "X ģerbonis"); LV-052/062/102 omitted (modern arms, no published symbolism)
@@ -122,8 +122,8 @@ GB  antigravity  done     # Great Britain — GB-NIR (Northern Ireland) sourced 
 CA  antigravity  done     # Canada — CA-PE (Prince Edward Island) sourced (en.wikipedia)
 PK  antigravity  done     # Pakistan — 4 provinces sourced (en.wikipedia Flag of X articles)
 
-# ===== SWEEP RE-OPENED (2026-07-04) — remaining:110 across 5 countries =====
-# The audit above reversed the wrong omissions; those sets are now being re-sourced.
-# Current: IT:59 LV:31 CO:13 AR:4 EE:3 (run `node scripts/subdiv-remaining.mjs` for live count).
-# Antigravity: safe to claim LV or CO (independent of the Italy/Estonia work in flight) — add an
-# `in-progress` line first, or leave them to claude. Do not re-omit without the (a)+(b)+(c) checks.
+# ===== SWEEP COMPLETE AGAIN (2026-07-04) — node scripts/subdiv-remaining.mjs => remaining:0 =====
+# The audit's wrongly-omitted sets have all been re-sourced: EE, AR, CO, LV, IT (plus LT earlier).
+# Every displayed subdivision flag is now sourced or investigated-and-omitted with the rule-3a
+# (dedicated arms/flag article + Commons blazon) checks applied. If `remaining` rises again, a new
+# flag/subdivision was added upstream — source it the same way; do not re-omit without (a)+(b)+(c).
