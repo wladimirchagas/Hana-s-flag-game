@@ -64,13 +64,12 @@ import "./LearnPage.css";
 // These must never fall back to flagcdn — show broken image instead.
 const FLAGCDN_FALLBACK_EXCLUDED = new Set(["AF"]);
 
-// Feature flag — the city overlay (📍 capitals + largest cities toggle) is
-// hidden from the UI for now. The whole feature (data, markers, map wiring)
-// stays intact; only the two toggle buttons that expose it are gated off, and
-// since `showCities` can flip only via those buttons, the overlay and legend
-// (both downstream of `showCities`) never render while this is false. Flip to
-// `true` to bring the feature back.
-const CITIES_FEATURE_ENABLED = false;
+// Feature flag for the city overlay (📍 capitals toggle). Kept as a single
+// switch so the whole feature can be pulled from the UI again without ripping
+// out the data/markers/wiring — flipping it to `false` gates the two toggle
+// buttons, and since `showCities` can only flip via those buttons, the overlay
+// and legend (both downstream of `showCities`) then never render.
+const CITIES_FEATURE_ENABLED = true;
 
 /**
  * Learn-mode sandbox with a historical era slider.
@@ -160,9 +159,10 @@ export default function LearnPage() {
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const [showFlagMap, setShowFlagMap] = useState(false);
-  // City overlay (national/subnational capitals + largest cities). Like the
-  // flag overlay, it is OFF by default and shared across the world + subdivision
-  // maps, so toggling it on one keeps it on after drilling into a country.
+  // City overlay (capitals only: national on the world map, national +
+  // subdivision on the subdivision map). Like the flag overlay, it is OFF by
+  // default and shared across the world + subdivision maps, so toggling it on
+  // one keeps it on after drilling into a country.
   const [showCities, setShowCities] = useState(false);
 
   // Suppresses the exit-subdivision effect for one cycle when navigating
@@ -751,15 +751,15 @@ export default function LearnPage() {
     return m;
   }, [showFlagMap, subdivisionCountry]);
 
-  // City overlay for the world map: every covered country's national capital(s)
-  // + largest city. Modern era only (no city data for historical polities).
+  // City overlay for the world map: every covered country's national capital(s).
+  // Modern era only (no city data for historical polities).
   const worldCityOverlay = useMemo(
     () => (isModernEra && showCities ? worldCityMarkers() : null),
     [isModernEra, showCities],
   );
 
-  // City overlay for the subdivision map: the country's national capital(s) +
-  // largest city, plus each subdivision's capital + largest city.
+  // City overlay for the subdivision map: the country's national capital(s)
+  // plus each subdivision's capital.
   const subdivisionCityOverlay = useMemo(() => {
     if (!showCities || !subdivisionCountry) return null;
     const meta = SUBDIVISION_META[subdivisionCountry.code];
@@ -820,8 +820,8 @@ export default function LearnPage() {
             type="button"
             className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
             onClick={toggleCities}
-            aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
-            title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
+            aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
+            title={showCities ? "Hide capitals" : "Show capitals"}
           >
             📍
           </button>
@@ -854,8 +854,8 @@ export default function LearnPage() {
             type="button"
             className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
             onClick={toggleCities}
-            aria-label={showCities ? "Hide cities on map" : "Show cities on map"}
-            title={showCities ? "Hide capitals & largest cities" : "Show capitals & largest cities"}
+            aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
+            title={showCities ? "Hide capitals" : "Show capitals"}
           >
             📍
           </button>
