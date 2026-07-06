@@ -5,16 +5,19 @@ import {
 } from "../data/cities";
 
 /**
- * Role flags for a city marker. A single city can hold several at once — e.g.
- * London is the national capital AND national largest city of the UK, AND the
- * capital AND largest city of England — so roles are a bitmask and coincident
- * cities are merged into one marker carrying every role they hold.
+ * Role flags for a capital marker. A single city can hold several at once — e.g.
+ * a subdivision capital that is ALSO the national capital (Buenos Aires is
+ * Argentina's capital and the capital of the Autonomous City, AR-C) — so roles
+ * are a bitmask and coincident cities merge into one marker carrying every role.
+ *
+ * The overlay shows CAPITALS ONLY: national capital(s) on the world map, and
+ * national capital(s) + each subdivision's capital on the subdivision map.
+ * Largest-city data still lives in `src/data/cities.ts` but is intentionally
+ * NOT displayed (simplified per owner request, 2026-07).
  */
 export const CityRole = {
   NationalCapital: 1,
-  NationalLargest: 2,
-  SubnationalCapital: 4,
-  SubnationalLargest: 8,
+  SubnationalCapital: 2,
 } as const;
 
 export type PlacedCity = {
@@ -55,7 +58,7 @@ function add(acc: Map<string, PlacedCity>, c: City, role: number) {
 }
 
 /**
- * Markers for the world map: each country's national capital(s) + largest city.
+ * Markers for the world map: each country's national capital(s) only.
  * `codes` defaults to every country with city data.
  */
 export function worldCityMarkers(codes?: Iterable<string>): PlacedCity[] {
@@ -65,16 +68,14 @@ export function worldCityMarkers(codes?: Iterable<string>): PlacedCity[] {
     const nat = NATIONAL_CITIES[code];
     if (!nat) continue;
     for (const cap of nat.capitals ?? []) add(acc, cap, CityRole.NationalCapital);
-    if (nat.largest) add(acc, nat.largest, CityRole.NationalLargest);
   }
   return [...acc.values()];
 }
 
 /**
- * Markers for a country's subdivision map: the national capital(s) + national
- * largest city, PLUS each listed subdivision's capital + largest city.
- * Coincident cities (e.g. London for both the UK and England) merge into one
- * marker carrying all of their roles.
+ * Markers for a country's subdivision map: the national capital(s) PLUS each
+ * listed subdivision's capital. Coincident cities (e.g. a state capital that is
+ * also the national capital) merge into one marker carrying both roles.
  */
 export function subdivisionCityMarkers(
   countryCode: string,
@@ -84,36 +85,16 @@ export function subdivisionCityMarkers(
   const nat = NATIONAL_CITIES[countryCode];
   if (nat) {
     for (const cap of nat.capitals ?? []) add(acc, cap, CityRole.NationalCapital);
-    if (nat.largest) add(acc, nat.largest, CityRole.NationalLargest);
   }
   for (const code of subdivisionCodes) {
     const sub = SUBNATIONAL_CITIES[code];
     if (!sub) continue;
     if (sub.capital) add(acc, sub.capital, CityRole.SubnationalCapital);
-    if (sub.largest) add(acc, sub.largest, CityRole.SubnationalLargest);
   }
   return [...acc.values()];
 }
 
 // --- Role helpers used by the marker renderer + legend ----------------------
 
-export const isCapital = (r: number) =>
-  (r & (CityRole.NationalCapital | CityRole.SubnationalCapital)) !== 0;
-export const isLargest = (r: number) =>
-  (r & (CityRole.NationalLargest | CityRole.SubnationalLargest)) !== 0;
-export const isNational = (r: number) =>
-  (r & (CityRole.NationalCapital | CityRole.NationalLargest)) !== 0;
-export const isSubnational = (r: number) =>
-  (r & (CityRole.SubnationalCapital | CityRole.SubnationalLargest)) !== 0;
-
-/** Human-readable description of every role a city holds (for tooltips/aria). */
-export function describeRoles(c: PlacedCity, countryName?: string): string {
-  const parts: string[] = [];
-  if (c.roles & CityRole.NationalCapital)
-    parts.push(c.note ? c.note.toLowerCase() : `capital${countryName ? ` of ${countryName}` : ""}`);
-  if (c.roles & CityRole.NationalLargest) parts.push("largest city");
-  if (c.roles & CityRole.SubnationalCapital) parts.push("subdivision capital");
-  if (c.roles & CityRole.SubnationalLargest) parts.push("subdivision largest city");
-  // De-duplicate while preserving order.
-  return [...new Set(parts)].join(" · ");
-}
+export const isNational = (r: number) => (r & CityRole.NationalCapital) !== 0;
+export const isSubnational = (r: number) => (r & CityRole.SubnationalCapital) !== 0;

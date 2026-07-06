@@ -3,10 +3,15 @@
 ## City overlay data must be sourced, never fabricated — hard rule, do not override without approval
 
 **The Learn-mode map city overlay (the 📍 toggle next to the 🚩 flag toggle; markers rendered by
-`src/components/CityMarkers.tsx`) shows national + subnational capitals and largest cities. Every
-city, coordinate, capital classification and population MUST come from an authoritative source —
-exactly like the flag and subdivision-population rules. Never hand-write a capital, a "largest
-city", or a coordinate from memory.**
+`src/components/CityMarkers.tsx`) shows CAPITALS ONLY — national capital(s) on the world map, and
+national capital(s) + each subdivision's capital on the subdivision map. Every city, coordinate and
+capital classification MUST come from an authoritative source — exactly like the flag and
+subdivision-population rules. Never hand-write a capital or a coordinate from memory.**
+
+Simplified to capitals-only per owner request (2026-07): largest-city markers were removed from the
+UI. The largest-city data still exists in `src/data/cities.ts` (and its sourcing rules below still
+apply if it is ever shown again) but `cityRoles.ts` no longer emits largest-city markers, and the
+name of each capital is hidden by default and revealed on hover / tap (see `CityMarkers.tsx`).
 
 The dataset (`src/data/cities.ts`) is **auto-generated** by `scripts/build-cities.mjs` (re-run:
 `node scripts/build-cities.mjs`). Sourcing:
@@ -36,9 +41,10 @@ The dataset (`src/data/cities.ts`) is **auto-generated** by `scripts/build-citie
 3. The overlay currently covers a **test set** of countries (see `TEST_COUNTRIES` in the generator).
    Expanding coverage means regenerating from the authoritative sources, not hand-adding rows.
 4. **Verify in the running app** (the mandatory visual-verification rule applies): toggle 📍 on the
-   world map and confirm capitals show as ★, largest cities as ●, combined as ★+dot; drill into a
-   country and confirm national + subdivision markers, the dual-level ring where a city is both
-   (e.g. London for the UK/England), and that multi-capital nations show every capital.
+   world map and confirm national capitals show as a large ★ (and multi-capital nations show every
+   capital); drill into a country and confirm national (large ★) + subdivision (small ★) capitals,
+   the dual-level ring where a city is both (e.g. a state capital that is also the national capital),
+   and that hovering or tapping a marker reveals that capital's name.
 
 ## Country widget information must never be reduced — hard rule, do not override without approval
 

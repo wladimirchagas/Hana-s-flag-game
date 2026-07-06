@@ -806,11 +806,9 @@ export function WorldProgressMap({
         m.y > -CITY_MARGIN && m.y < HEIGHT + CITY_MARGIN,
     );
   const labelHalo = theme === "dark" ? palette.ocean : "#ffffff";
-  // Labels are revealed once the user zooms in, so the default world view shows
-  // clean glyphs (no overlapping text where capitals/cities cluster) — the same
-  // "zoom to read" behaviour the subdivision map uses. The legend explains the
-  // glyphs; names appear on zoom.
-  const showCityLabels = zk >= 1.8;
+  // Names stay hidden by default so the world view shows clean glyphs; a capital's
+  // name is revealed when the user hovers or taps its marker (handled inside
+  // CityMarkers). The legend explains the glyphs.
 
   return (
     <section className="map-section" aria-labelledby="map-heading">
@@ -995,7 +993,6 @@ export function WorldProgressMap({
           {cityScreen.length > 0 && (
             <CityMarkers
               markers={cityScreen}
-              showLabels={showCityLabels}
               stroke={palette.stroke}
               labelHalo={labelHalo}
               labelFill={palette.stroke}

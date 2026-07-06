@@ -446,9 +446,10 @@ export function SubdivisionMap({
     pulseX > -PULSE_MARGIN && pulseX < WIDTH  + PULSE_MARGIN &&
     pulseY > -PULSE_MARGIN && pulseY < HEIGHT + PULSE_MARGIN;
 
-  // City markers: apply zoom (constant pixel size). Labels are revealed once
-  // the user zooms in, so the default fitted view of a dense country (many
-  // subdivisions) shows glyphs without a wall of text — zoom to read.
+  // City markers: apply zoom (constant pixel size). Names stay hidden by default
+  // so a dense country (many subdivision capitals) isn't a wall of text; a
+  // capital's name is revealed when the user hovers or taps its marker (handled
+  // inside CityMarkers).
   const CITY_MARGIN = 40;
   const cityScreen: ScreenCity[] = cityBase
     .map(({ city, bx, by }) => ({ city, x: bx * zk + ztx, y: by * zk + zty }))
@@ -457,7 +458,6 @@ export function SubdivisionMap({
         m.x > -CITY_MARGIN && m.x < WIDTH + CITY_MARGIN &&
         m.y > -CITY_MARGIN && m.y < HEIGHT + CITY_MARGIN,
     );
-  const showCityLabels = zk >= 1.8;
   const cityLabelHalo = theme === "dark" ? palette.ocean : "#ffffff";
 
   if (loading) {
@@ -631,7 +631,6 @@ export function SubdivisionMap({
             {cityScreen.length > 0 && (
               <CityMarkers
                 markers={cityScreen}
-                showLabels={showCityLabels}
                 stroke={palette.stroke}
                 labelHalo={cityLabelHalo}
                 labelFill={palette.stroke}
