@@ -222,7 +222,17 @@ const TERRITORIES_TO_APPEND = {
     { code: "TR-NC~", name: "Turkish Republic of Northern Cyprus", typeLabel: "Claimed State" }
   ],
   "CY": [
-    { code: "CY-06~", name: "Kyrenia", typeLabel: "District" }
+    // Northern Cyprus — the TRNC, recognised only by Türkiye; the Republic of
+    // Cyprus claims it. The merged geometry (XN.json) is the WHOLE of Northern
+    // Cyprus, so it must be one disputed-territory card (CY-NC~), not mislabelled
+    // as the single "Kyrenia" district (CY-06~) it used to carry.
+    { code: "CY-NC~", name: "Northern Cyprus", typeLabel: "Disputed Territory" }
+  ],
+  "MA": [
+    // Western Sahara — Morocco administers and claims most of it as its "Southern
+    // Provinces"; the SADR/Polisario dispute it. Shown as a single disputed
+    // territory under Morocco (geometry merged from EH.json as MA-EH~).
+    { code: "MA-EH~", name: "Western Sahara", typeLabel: "Disputed Territory" }
   ],
   "RS": [
     // Kosovo — declared independence 2008; Serbia claims it as its Autonomous
@@ -230,6 +240,13 @@ const TERRITORIES_TO_APPEND = {
     // Serbia (its own internal municipalities are dissolved away at render time),
     // not a UN member. typeLabel "Disputed Territory" per the CLAUDE.md rule.
     { code: "RS-KM~", name: "Kosovo", typeLabel: "Disputed Territory" }
+  ],
+  "SO": [
+    // Somaliland — declared independence from Somalia in 1991; unrecognised by any
+    // UN member. Somalia claims it. Shown as a single disputed territory under
+    // Somalia (geometry merged from XS.json as SO-SL~), so it is a proper card with
+    // its own flag ("not officially recognised by Somalia") and capital (Hargeisa).
+    { code: "SO-SL~", name: "Somaliland", typeLabel: "Disputed Territory" }
   ],
   "UA": [
     { code: "UA-43", name: "Autonomous Republic of Crimea", typeLabel: "Autonomous Republic" },

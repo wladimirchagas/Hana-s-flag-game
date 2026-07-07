@@ -132,6 +132,22 @@ const DISPUTED_CAPITAL_QIDS = {
   "GB-GI": "Q1410", // Gibraltar → Gibraltar (UK; claimed by Spain)
   "CN-TW": "Q865", // Taiwan → Taipei (ROC; claimed by the PRC)
   "RS-KM~": "Q1246", // Kosovo → Pristina (declared independence 2008; claimed by Serbia)
+  "SO-SL~": "Q34754", // Somaliland → Hargeisa (declared independence 1991; claimed by Somalia)
+  "CY-NC~": "Q23681", // Northern Cyprus under Cyprus → North Nicosia (same territory as TR-NC~)
+};
+
+/**
+ * Disputed territories whose OWN Wikidata item carries no `capital` (P36) at all —
+ * Western Sahara (Q6250) deliberately has none — so they are keyed instead by the
+ * QID of the capital CITY itself, and the city's own coordinates (P625) are used.
+ * Each city was individually confirmed to be the territory's largest city and
+ * administrative centre. Neutral, sourced fact (the game takes no political side).
+ */
+const DISPUTED_CAPITAL_CITY_QIDS = {
+  // El Aaiún (Laâyoune) — the largest city and administrative centre of Western
+  // Sahara; Morocco's regional capital of Laâyoune-Sakia El Hamra and the SADR's
+  // de jure claimed capital. (Western Sahara's own item Q6250 has no P36.)
+  "MA-EH~": "Q47837",
 };
 
 /**
@@ -182,6 +198,19 @@ async function fetchByQid(code, qid) {
     BIND("${code}" AS ?code)
     wd:${qid} wdt:P36 ?capital .
     ?capital p:P625 ?coordStmt . ?coordStmt psv:P625 ?coordNode .
+    ?coordNode wikibase:geoLongitude ?lon ; wikibase:geoLatitude ?lat .
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  }`;
+  return collectCapitals(await sparql(q), false).get(code.toUpperCase()) ?? null;
+}
+
+/** Fetch a capital directly from the CITY's own QID (its P625), for territories
+ *  whose item has no P36. `qid` IS the capital city, not the territory. */
+async function fetchCityByQid(code, qid) {
+  const q = `SELECT ?code ?capital ?capitalLabel ?lon ?lat WHERE {
+    BIND("${code}" AS ?code)
+    BIND(wd:${qid} AS ?capital)
+    wd:${qid} p:P625 ?coordStmt . ?coordStmt psv:P625 ?coordNode .
     ?coordNode wikibase:geoLongitude ?lon ; wikibase:geoLatitude ?lat .
     SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
   }`;
@@ -258,6 +287,26 @@ async function main() {
       }
     } catch (e) {
       console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(1000);
+  }
+
+  for (const [code, qid] of Object.entries(DISPUTED_CAPITAL_CITY_QIDS)) {
+    const CODE = code.toUpperCase();
+    if (!metaCodes.has(CODE)) {
+      console.log(`  ${code} (city ${qid}) → skipped (not in SUBDIVISION_META)`);
+      continue;
+    }
+    try {
+      const v = await fetchCityByQid(code, qid);
+      if (v) {
+        capitals.set(CODE, v);
+        console.log(`  ${code} (city ${qid}) → ${v.name} (${v.lon}, ${v.lat})`);
+      } else {
+        console.log(`  ${code} (city ${qid}) → no coordinates found`);
+      }
+    } catch (e) {
+      console.log(`  ${code} (city ${qid}) → FAILED (${e.message})`);
     }
     await sleep(1000);
   }

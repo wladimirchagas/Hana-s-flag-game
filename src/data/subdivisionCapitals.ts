@@ -247,6 +247,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
 
   // ── CY ──
   "CY-04": {"name":"Famagusta Municipality","lon":33.9434,"lat":35.1176},
+  "CY-NC~": {"name":"North Nicosia","lon":33.3636,"lat":35.19},
 
   // ── CZ ──
   "CZ-KA": {"name":"Karlovy Vary","lon":12.8725,"lat":50.2306},
@@ -886,6 +887,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
 
   // ── MA ──
   "MA-12": {"name":"Dakhla","lon":-15.95,"lat":23.7167},
+  "MA-EH~": {"name":"Laayoune","lon":-13.2,"lat":27.15},
 
   // ── MD ──
   "MD-AN": {"name":"Anenii Noi","lon":29.2308,"lat":46.8817},
@@ -1305,6 +1307,9 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "SN-KE": {"name":"Kédougou","lon":-12.1807,"lat":12.5556},
   "SN-SE": {"name":"Sédhiou","lon":-15.5569,"lat":12.7081},
   "SN-SL": {"name":"Saint-Louis","lon":-16.5,"lat":16.0333},
+
+  // ── SO ──
+  "SO-SL~": {"name":"Hargeisa","lon":44.0606,"lat":9.5656},
 
   // ── SR ──
   "SR-MA": {"name":"Albina","lon":-54.05,"lat":5.5},

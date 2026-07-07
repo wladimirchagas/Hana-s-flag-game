@@ -605,6 +605,49 @@ as a single standalone disputed entity with its own flag shown as **(unofficial 
 child polygons when their parent is selected.
 `useSubdivisionGame` excludes hierarchy children from game questions.
 
+## A merged disputed territory must be a COMPLETE subdivision of the nation claiming it — hard rule, do not override without approval
+
+**When a disputed/claimed territory's geometry is merged into the map of the nation that claims it (via
+`TERRITORY_GEO_FOR_PARENT` in `src/lib/territoryParentMap.ts`), the territory's `subdivCode` MUST also be a
+first-class entry in that nation's `SUBDIVISION_META`, MUST carry a capital, and (being disputed) MUST have a
+disputed-nature note and its own flag.** Merging only the geometry is not enough — the polygon renders, but with
+no card, no capital and no note.
+
+### Why this rule exists
+
+This shipped **repeatedly** (2026-07): a disputed territory's geometry was merged into the claiming country and
+re-tagged with its `subdivCode` (e.g. **Kosovo `RS-KM~` under Serbia**, **Somaliland `SO-SL~` under Somalia**,
+**Northern Cyprus `CY-NC~` under Cyprus**, **Western Sahara `MA-EH~` under Morocco**), but that code was **never
+added to the claiming nation's `SUBDIVISION_META`**. Because the flag grid and the capital overlay both iterate the
+meta divisions, the territory rendered as a bare polygon: **no flag-grid card, no capital marker, and no
+disputed-nature explanation** under the flag. Cyprus was worse — the whole of Northern Cyprus was mislabelled as the
+single "Kyrenia" district (`CY-06~`) it happened to carry. Each was reported one at a time.
+
+### Rules
+
+1. **Every disputed `subdivCode` in `TERRITORY_GEO_FOR_PARENT` (any code ending `~`, plus `CN-TW`) that is not a
+   `DISPUTED_TERRITORY_HIERARCHY` child MUST be appended to its parent nation's `TERRITORIES_TO_APPEND` in
+   `scripts/build-subdivision-meta.mjs`** with `typeLabel: "Disputed Territory"`, then the meta regenerated. The geo
+   `subdivCode`, the `SUBDIVISION_META` code, the `LOCAL_FLAG_OVERRIDES` key and the `DISPUTED_SUBDIV_NOTES` key must
+   all be the **same** string — never let them drift (that is what left Kosovo/Somaliland/Cyprus broken).
+2. **It MUST carry a capital**, sourced authoritatively into `src/data/subdivisionCapitals.ts` via the generator's
+   `DISPUTED_CAPITAL_QIDS` (territory QID → its `P36` capital) or, when the territory's Wikidata item has no `P36`
+   (Western Sahara Q6250 has none), `DISPUTED_CAPITAL_CITY_QIDS` (the capital CITY's own QID → its `P625`). Same
+   "never fabricate a capital or coordinate" discipline as every other capital.
+3. **Its internal subdivisions are dissolved away** — `fetchMergedSubdivisionGeo` unions a merged territory's features
+   into one, so it shows as a single unit (see the disputed-territory dissolve). Do not reintroduce its internal
+   borders.
+4. Adding a *new* merged disputed territory means doing **all** of the above (meta + capital + note + flag) in the
+   same change — never merge geometry alone.
+
+### Enforcement
+
+`scripts/check-disputed-territory-coverage.mjs` (run by `npm run flags:check` and the `flag-integrity` CI workflow)
+cross-references `TERRITORY_GEO_FOR_PARENT` against `SUBDIVISION_META` and `subdivisionCapitals.ts` and **fails the
+build** if any merged disputed territory (a `~`/`CN-TW` code that is not a hierarchy child) is missing from its
+claiming nation's meta or has no capital. Never weaken or bypass it; if it fails, add the meta entry and the capital
+rather than the check.
+
 ## Subdivision research — hard rule, do not override without approval
 
 **Before introducing, removing, reclassifying, or changing the tier of any subdivision, you MUST
