@@ -628,6 +628,44 @@ legal/administrative framework of the country concerned.
 3. **Document your source** in a code comment whenever you add or change a type label or tier —
    e.g. `// Governed under Lord Howe Island Act 1953 (NSW), not Commonwealth law`.
 
+## Every rendered subdivision must be selectable — geo and meta must not drift — hard rule, do not override without approval
+
+**If a subdivision is drawn on the subdivision map (it has a polygon in
+`public/subdivisions/{CC}.json`), clicking it MUST select it.** Selection resolves the clicked
+GeoJSON code against `SUBDIVISION_META[CC].divisions` (see `LearnPage`'s subdivision `onSelect`); if
+the code is absent from the meta, the click silently no-ops — the area doesn't highlight and the
+panel doesn't update, so the subdivision looks broken/unselectable.
+
+### Why this rule exists
+
+This shipped and was reported (2026-07): **Xinjiang (`CN-XJ`) and other provinces were unselectable**
+even though they rendered. Root cause: the meta generator (`scripts/build-subdivision-meta.mjs`)
+skipped custom placeholder island codes by matching `divCode.includes('-X')` — which **also matched
+every legitimate ISO 3166-2 code that merely starts with X** (Xinjiang `CN-XJ`, Xorazm `UZ-XO`, Laos
+`LA-XA/XI/XE`, Azerbaijan `AZ-XAC/XIZ/XCI/XVD/XA`), dropping them from `SUBDIVISION_META`. Real
+placeholder codes are `-X` **followed by a digit** (`CN-X01~`, `AU-X03~`, `AI-X00`); legitimate ones
+are `-X` **followed by a letter**. The generator now uses `/-X\d/` and must never revert to a broad
+`-X` match.
+
+### Rules
+
+1. **Never filter subdivisions by a broad `-X` / `X`-prefix match.** Only `-X` + a **digit** (or a
+   trailing `~`) is a custom placeholder/disputed code. An ISO 3166-2 code whose subdivision part
+   starts with `X` + a **letter** is a real subdivision and MUST appear in `SUBDIVISION_META`.
+2. **Geo and meta must stay in sync.** Every non-placeholder subdivision code in
+   `public/subdivisions/**` MUST have a matching `SUBDIVISION_META` entry. This is enforced by
+   `scripts/check-subdivision-meta-coverage.mjs` (run by `npm run flags:check` and the
+   `flag-integrity` CI workflow on any change to the geo files, the meta, or the generator). Never
+   weaken or bypass it; if it fails, re-run `node scripts/build-subdivision-meta.mjs` and fix the
+   generator rather than the check.
+3. **Selection must degrade gracefully, never silently.** `LearnPage`'s subdivision `onSelect` falls
+   back to synthesizing a minimal entry from the GeoJSON feature when the meta lacks the code, so a
+   rendered subdivision is always selectable even under drift. Never remove that fallback or gate
+   selection solely on a meta lookup that can silently miss.
+4. **Verify in the running app** (the mandatory visual-verification rule applies): with a country's
+   subdivisions shown, click a subdivision whose code starts with X (e.g. China → Xinjiang) and
+   confirm it highlights and the panel updates — not just that a name popover appears.
+
 ## Flag grid ordering — hard rule, do not override without approval
 
 When a country's subdivision flag grid is grouped **by type** (the default when multiple

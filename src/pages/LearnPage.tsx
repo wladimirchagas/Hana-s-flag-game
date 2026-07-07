@@ -990,7 +990,21 @@ export default function LearnPage() {
             countryCode={subdivisionCountry?.code}
             onSelect={(code) => {
               const countryMeta = subdivisionCountry ? SUBDIVISION_META[subdivisionCountry.code] : null;
-              const meta = countryMeta?.divisions.find((d) => d.code === code);
+              let meta = countryMeta?.divisions.find((d) => d.code === code);
+              if (!meta && subdivisionGeo) {
+                // HARD RULE (CLAUDE.md "Every rendered subdivision must be
+                // selectable"): the map rendered this subdivision, so a click MUST
+                // select it — never silently no-op because SUBDIVISION_META lacks
+                // the code (geo/meta drift). `check-subdivision-meta-coverage`
+                // prevents that drift in the build; this synthesizes a minimal
+                // entry from the GeoJSON as a runtime safety net.
+                const feat = subdivisionGeo.features.find((f) => {
+                  const c = (f.properties.iso_3166_2 || f.properties.name || "").trim().toUpperCase();
+                  return c === code;
+                });
+                if (feat)
+                  meta = { code, name: feat.properties.name_en || feat.properties.name || code, typeLabel: "" };
+              }
               if (meta) setSelectedSubdivision(meta);
             }}
             onHover={undefined}
