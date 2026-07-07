@@ -181,6 +181,18 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
             // with no emblem; the only Wikimedia files (SVG + JPG) are also
             // solid-green stubs. A blank flag is wrong — suppress until a real
             // Adamawa flag can be sourced.
+  // Portugal's mainland DISTRICTS (PT-01..PT-18) have NO official flag of their
+  // own. The bulk source (amckenna41/iso3166-flags) served — and this repo had
+  // bundled for PT-01..07 — the district CAPITAL CITY'S municipal gonfalon (e.g.
+  // the "CIDADE DE BEJA" city flag for the Beja district). Using a municipality's
+  // flag to represent the district is misleading (owner ruling 2026-07: "do not
+  // use municipal flags to represent the district"), so every mainland district is
+  // suppressed — no flag and no "(unofficial flag)" label. The municipal PNGs that
+  // were bundled (PT-01..05) have been deleted. Portugal's two AUTONOMOUS REGIONS,
+  // the Azores (PT-20) and Madeira (PT-30), DO have their own official flags and
+  // are intentionally NOT suppressed.
+  "PT-01", "PT-02", "PT-03", "PT-04", "PT-05", "PT-06", "PT-07", "PT-08", "PT-09",
+  "PT-10", "PT-11", "PT-12", "PT-13", "PT-14", "PT-15", "PT-16", "PT-17", "PT-18",
 ]);
 
 // Cache so we only fetch each country once per session.
