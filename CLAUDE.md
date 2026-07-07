@@ -46,6 +46,20 @@ subdivision polygon file** (subdivision capitals) — 194 national + ~2,700 subd
    de-facto capital (Switzerland: Bern) carries a **sourced** role note from `CAPITAL_ROLES`. The
    national capital is a **list** (`NationalCities.capitals`), never a single value, so these are
    represented honestly.
+5. **Subdivision-capital Wikidata fallback layer** — Natural Earth only tags a capital for the
+   subdivisions it happens to carry a capital *point* for, leaving ~1,800 of the app's ~4,170
+   subdivisions (Slovenia's & Latvia's municipalities, Italy's provinces, external territories such
+   as Norfolk Island → Kingston, …) with **no** capital marker. These gaps are filled from
+   **Wikidata** (`capital` P36 + its coordinates `P625`, keyed by ISO 3166-2 `P300`; a few code-less
+   external territories fetched by QID), auto-generated into `src/data/subdivisionCapitals.ts` by
+   `scripts/build-subdivision-capitals.mjs` (re-run: `node scripts/build-subdivision-capitals.mjs`,
+   needs egress to `query.wikidata.org`). This is a **FALLBACK, never an override**: `cityRoles.ts`
+   uses it **only** where `cities.ts` has no NE capital for a code — NE (already reconciled against
+   `COUNTRY_FACTS`) always wins where it has data. The generator only re-formats authoritative
+   Wikidata data — it never invents a capital or coordinate; a subdivision Wikidata has no
+   `P36`+`P625` for is simply left absent. The Wikidata→app code remap (`CODE_ALIASES`) is shared
+   with the population generator via `scripts/data/wikidata-subdivision-code-aliases.mjs` so the two
+   can never drift.
 
 ### Rules
 
