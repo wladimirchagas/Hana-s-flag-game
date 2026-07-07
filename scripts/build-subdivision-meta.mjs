@@ -224,6 +224,13 @@ const TERRITORIES_TO_APPEND = {
   "CY": [
     { code: "CY-06~", name: "Kyrenia", typeLabel: "District" }
   ],
+  "RS": [
+    // Kosovo — declared independence 2008; Serbia claims it as its Autonomous
+    // Province of Kosovo and Metohija. Shown as a single disputed territory under
+    // Serbia (its own internal municipalities are dissolved away at render time),
+    // not a UN member. typeLabel "Disputed Territory" per the CLAUDE.md rule.
+    { code: "RS-KM~", name: "Kosovo", typeLabel: "Disputed Territory" }
+  ],
   "UA": [
     { code: "UA-43", name: "Autonomous Republic of Crimea", typeLabel: "Autonomous Republic" },
     { code: "UA-40", name: "Sevastopol", typeLabel: "Special Status City" }

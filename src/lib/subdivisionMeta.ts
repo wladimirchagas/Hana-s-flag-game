@@ -3909,7 +3909,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RS-13", name: "Pomoravski", typeLabel: "District" },
     { code: "RS-12", name: "Šumadija", typeLabel: "District" },
     { code: "RS-17", name: "Moravica", typeLabel: "District" },
-    { code: "RS-09", name: "Kolubara", typeLabel: "District" }
+    { code: "RS-09", name: "Kolubara", typeLabel: "District" },
+    { code: "RS-KM~", name: "Kosovo", typeLabel: "Disputed Territory" }
     ],
   },
   "RU": {

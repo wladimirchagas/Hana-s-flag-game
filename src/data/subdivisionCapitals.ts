@@ -1207,6 +1207,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "RS-22": {"name":"Pirot","lon":22.585,"lat":43.1519},
   "RS-23": {"name":"Leskovac","lon":21.9461,"lat":42.9981},
   "RS-24": {"name":"Vranje","lon":21.8972,"lat":42.5542},
+  "RS-KM~": {"name":"Pristina","lon":21.1667,"lat":42.6667},
 
   // ── RU ──
   "RU-KK": {"name":"Abakan","lon":91.4167,"lat":53.7167},
