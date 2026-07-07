@@ -51,12 +51,17 @@ function Marker({
   showLabel,
   labelHalo,
   labelFill,
+  unitPx,
 }: {
   city: PlacedCity;
   stroke: string;
   showLabel: boolean;
   labelHalo: string;
   labelFill: string;
+  /** Screen pixels per SVG user unit (rendered map width / viewBox width). Used
+   *  to counter-scale the label so it renders at a CONSTANT on-screen size
+   *  regardless of how small the map is drawn (phone vs. desktop). */
+  unitPx: number;
 }) {
   const r = city.roles;
   const big = isNational(r);
@@ -64,6 +69,14 @@ function Marker({
   const dualLevel = isNational(r) && isSubnational(r);
   const sw = big ? 1.4 : 1.1;
   const fill = big ? NATIONAL_CAPITAL_FILL : CAPITAL_FILL;
+
+  // The label must NOT shrink with the map — size it in real screen pixels by
+  // dividing the desired px by unitPx (SVG scales it back up by unitPx on render).
+  const scale = unitPx > 0 ? unitPx : 1;
+  const LABEL_PX = big ? 15 : 13; // constant on-screen font size
+  const fontSize = LABEL_PX / scale;
+  const haloPx = 3.2 / scale;
+  const labelX = R * 1.5 + 4 / scale; // clear the star + a ~4px screen gap
 
   const label = city.note ? `${city.name} · ${city.note}` : city.name;
 
@@ -94,14 +107,14 @@ function Marker({
       />
       {showLabel && (
         <text
-          x={R * 1.4 + 2}
+          x={labelX}
           y={0}
           dominantBaseline="central"
-          fontSize={big ? 14 : 12}
+          fontSize={fontSize}
           fontWeight={big ? 700 : 600}
           fill={labelFill}
           stroke={labelHalo}
-          strokeWidth={3.4}
+          strokeWidth={haloPx}
           paintOrder="stroke"
           strokeLinejoin="round"
         >
@@ -118,6 +131,7 @@ export const CityMarkers = memo(function CityMarkers({
   stroke,
   labelHalo,
   labelFill,
+  unitPx = 1,
 }: {
   markers: ScreenCity[];
   /** ISO code of the hovered/selected territory; that marker's name is revealed. */
@@ -125,6 +139,9 @@ export const CityMarkers = memo(function CityMarkers({
   stroke: string;
   labelHalo: string;
   labelFill: string;
+  /** Screen px per SVG user unit — keeps the revealed label a constant on-screen
+   *  size instead of shrinking with the map on small screens. */
+  unitPx?: number;
 }) {
   return (
     // Non-interactive container — the whole overlay is decorative (see HARD RULE).
@@ -139,6 +156,7 @@ export const CityMarkers = memo(function CityMarkers({
               showLabel={show}
               labelHalo={labelHalo}
               labelFill={labelFill}
+              unitPx={unitPx}
             />
           </g>
         );

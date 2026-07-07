@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath, geoCentroid } from "d3-geo";
 import { useTheme } from "../context/ThemeContext";
 import { useZoomPan } from "../hooks/useZoomPan";
@@ -14,6 +14,7 @@ import {
 import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
 import { CityMarkers, type ScreenCity } from "./CityMarkers";
 import type { PlacedCity } from "../lib/cityRoles";
+import { useUnitPx } from "../hooks/useUnitPx";
 
 const WIDTH = 960;
 const HEIGHT = 500;
@@ -216,6 +217,15 @@ export function SubdivisionMap({
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
   const zoom = useZoomPan(WIDTH, HEIGHT);
+  // Screen px per user unit — keeps the revealed capital label a constant size.
+  const [unitPx, measureFrame] = useUnitPx(WIDTH);
+  const setFrame = useCallback(
+    (el: HTMLDivElement | null) => {
+      frameRef.current = el;
+      measureFrame(el);
+    },
+    [measureFrame],
+  );
 
   const isInteractive = !!onSelect && !disabled;
 
@@ -486,7 +496,7 @@ export function SubdivisionMap({
   return (
     <section className="map-section subdiv-map-section" aria-label="Subdivision map">
       <div className="map-with-zoom">
-        <div className="map-frame" ref={frameRef}>
+        <div className="map-frame" ref={setFrame}>
           <svg
             className="world-map"
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
@@ -635,6 +645,7 @@ export function SubdivisionMap({
               <CityMarkers
                 markers={cityScreen}
                 activeCode={hoveredCode ?? selectedCode}
+                unitPx={unitPx}
                 stroke={palette.stroke}
                 labelHalo={cityLabelHalo}
                 labelFill={palette.stroke}
