@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath, geoCentroid, geoArea } from "d3-geo";
 import { feature } from "topojson-client";
 import polygonClipping from "polygon-clipping";
@@ -8,6 +8,7 @@ import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { DISPUTED_TERRITORY_CODES } from "../lib/territoryParentMap";
 import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
+import { useUnitPx } from "../hooks/useUnitPx";
 import { CityMarkers, type ScreenCity } from "./CityMarkers";
 import type { PlacedCity } from "../lib/cityRoles";
 
@@ -409,6 +410,15 @@ export function WorldProgressMap({
   // label in the (non-interactive) city overlay.
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
+  // Screen px per user unit — keeps the revealed capital label a constant size.
+  const [unitPx, measureFrame] = useUnitPx(WIDTH);
+  const setFrame = useCallback(
+    (el: HTMLDivElement | null) => {
+      frameRef.current = el;
+      measureFrame(el);
+    },
+    [measureFrame],
+  );
   // See HistoricalMap for the same pattern — local hook always runs, but
   // the caller can pass a `zoom` to share state with a sibling map.
   const localZoom = useZoomPan(WIDTH, HEIGHT);
@@ -822,7 +832,7 @@ export function WorldProgressMap({
         )}
       </h2>
       <div className="map-with-zoom">
-      <div className="map-frame" ref={frameRef}>
+      <div className="map-frame" ref={setFrame}>
         <svg
           className="world-map"
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
@@ -1001,6 +1011,7 @@ export function WorldProgressMap({
             <CityMarkers
               markers={cityScreen}
               activeCode={hoveredCode ?? selectedCode}
+              unitPx={unitPx}
               stroke={palette.stroke}
               labelHalo={labelHalo}
               labelFill={palette.stroke}
