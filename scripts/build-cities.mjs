@@ -1,6 +1,7 @@
 // Build the bundled, offline-safe city dataset for the Learn-mode map overlays
-// (src/data/cities.ts) — national capitals + largest cities, and per-subdivision
-// capitals + largest cities, for the countries the feature currently covers.
+// (src/data/cities.ts) — national capitals + largest city, and per-subdivision
+// capitals + largest city, for every UN member state and every country whose
+// subdivisions the game shows.
 //
 // Re-run with:  node scripts/build-cities.mjs
 //
@@ -9,39 +10,93 @@
 //   • Geography (which cities exist, capital classification, coordinates) and
 //     the candidate-city list come from Natural Earth 10m populated places
 //     (nvkelso/natural-earth-vector) — the same dataset lineage as the bundled
-//     basemap. A filtered extract is committed at scripts/data/ne_places_test.geojson
-//     so this build is reproducible without network egress.
+//     basemap. A filtered, all-country extract is committed at
+//     scripts/data/ne_places.geojson so this build is reproducible without
+//     network egress. (To refresh it, re-download ne_10m_populated_places.geojson
+//     and re-run the filter that produced it — see the extract's provenance.)
+//   • NATIONAL capitals are RECONCILED against the authoritative, already-bundled
+//     COUNTRY_FACTS.capital (from mledoze/countries — the same source the country
+//     widget trusts). Natural Earth's adm0cap tag is stale/ambiguous for a number
+//     of countries (it tags Dar es Salaam for Tanzania — the capital is Dodoma;
+//     the former seat for Benin/Burundi; the pre-2022 name "Nur-Sultan" for
+//     Kazakhstan's Astana), so where NE's adm0cap city disagrees with the
+//     authoritative capital we trust COUNTRY_FACTS and take only the coordinates
+//     from NE. Where NE genuinely tags several national capitals AND the
+//     authoritative capital is one of them, every capital is kept (multi-capital
+//     nations — South Africa, Bolivia, Côte d'Ivoire — are represented honestly).
 //   • Natural Earth's `pop_max` is an URBAN-AGGLOMERATION figure and is known to
-//     misrank "largest city" in some countries (it ranks George Town above Kuala
-//     Lumpur, and Geneva above Zürich). Those cases are corrected via the curated
-//     LARGEST_OVERRIDE table below, each with a cited reason. NE also tags a few
-//     HISTORICAL capitals as "Admin-0 capital alt" (e.g. Kyoto for Japan); those
-//     are removed via HISTORICAL_CAPITAL_BLOCK.
-//   • Multi-capital arrangements and de-facto capitals (Bolivia, South Africa,
-//     Switzerland, Malaysia) carry a sourced role note from CAPITAL_ROLES.
+//     misrank "largest city" in some countries; those cases are corrected via the
+//     curated LARGEST_OVERRIDE table below, each with a cited reason.
+//   • Multi-capital arrangements and de-facto capitals carry a sourced role note
+//     from CAPITAL_ROLES.
 //
 // This generator only RE-FORMATS authoritative source data and applies a small,
 // individually-cited correction layer. It never invents a city, a coordinate, or
 // a population — anything it cannot resolve from the source is omitted, exactly
 // like the country-facts and subdivision-population generators.
 
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const NE = resolve(__dirname, "data/ne_places_test.geojson");
-const META = resolve(__dirname, "../src/lib/subdivisionMeta.ts");
+const NE = resolve(__dirname, "data/ne_places.geojson");
+const FACTS = resolve(__dirname, "../src/data/countryFacts.ts");
 const SUBDIV_DIR = resolve(__dirname, "../public/subdivisions");
 const OUT = resolve(__dirname, "../src/data/cities.ts");
 
-// Countries the city overlay currently covers (the agreed test set).
-const TEST_COUNTRIES = ["BR", "JP", "MY", "AU", "BO", "ZA", "CH", "AR", "GB", "DK", "SG"];
+// --- Authoritative capital names (mledoze/countries via COUNTRY_FACTS) --------
+// Parsed from the committed src/data/countryFacts.ts so national capitals stay in
+// lock-step with the country widget's capital. Keyed by ISO 3166-1 alpha-2.
+function loadCountryFactsCapitals() {
+  const txt = readFileSync(FACTS, "utf8");
+  const caps = {};
+  for (const m of txt.matchAll(/^\s*([A-Z]{2}): (\{.*\}),?\s*$/gm)) {
+    try {
+      const obj = JSON.parse(m[2]);
+      if (obj.capital) caps[m[1]] = obj.capital;
+    } catch {
+      /* skip malformed line */
+    }
+  }
+  return caps;
+}
+const FACT_CAPITAL = loadCountryFactsCapitals();
+
+// National scope = every country the widget/game knows (the UN member +
+// observer set that COUNTRY_FACTS covers). Subnational scope = every country
+// with a bundled subdivision polygon file.
+const NATIONAL_ISO = Object.keys(FACT_CAPITAL).sort();
+const SUBNATIONAL_ISO = readdirSync(SUBDIV_DIR)
+  .filter((f) => /^[A-Z]{2}\.json$/.test(f))
+  .map((f) => f.slice(0, 2))
+  .sort();
 
 // --- Curated correction layer (each entry cited) -----------------------------
 
+// Explicit national-capital sets that override BOTH Natural Earth and the
+// single-value COUNTRY_FACTS capital — only for genuine multi-capital nations
+// the authoritative single-capital field cannot express on its own. City names
+// are resolved to coordinates from the NE extract.
+//   • Eswatini — Mbabane is the administrative (executive) capital; Lobamba is
+//     the royal and legislative capital. COUNTRY_FACTS carries only Lobamba.
+const NATIONAL_CAPITAL_OVERRIDE = {
+  SZ: ["Mbabane", "Lobamba"],
+};
+
+// Rename a Natural Earth place to its current authoritative name (same city,
+// same coordinates — NE's label is simply out of date). Keyed `${iso}|${neName}`.
+//   • Kazakhstan — NE still labels the capital "Nur-Sultan"; it was renamed back
+//     to Astana in September 2022. COUNTRY_FACTS already says "Astana", but that
+//     name is absent from NE, so we keep NE's coordinates and correct the label.
+const NE_NAME_ALIAS = {
+  "KZ|Nur-Sultan": "Astana",
+};
+
 // Cities Natural Earth tags as a national-capital "alt" that are NOT a current
-// capital (historical / former seats). Removed so they don't show as co-capitals.
+// capital (historical / former seats). All current NE "Admin-0 capital alt"
+// entries carry adm0cap=0 and are therefore already excluded by the adm0cap
+// filter; this set is kept as belt-and-braces for the few tagged adm0cap=1.
 const HISTORICAL_CAPITAL_BLOCK = new Set([
   "JP|Kyoto", // Imperial capital until 1869; NE tags it "Admin-0 capital alt".
 ]);
@@ -66,6 +121,13 @@ const CAPITAL_ROLES = {
   "ZA|Pretoria": "Executive capital",
   "ZA|Cape Town": "Legislative capital",
   "ZA|Bloemfontein": "Judicial capital",
+  // Côte d'Ivoire — Yamoussoukro is the official political capital; Abidjan is
+  // the economic capital and de-facto seat of government.
+  "CI|Yamoussoukro": "Political capital",
+  "CI|Abidjan": "Economic capital / seat of government",
+  // Eswatini — two capitals.
+  "SZ|Mbabane": "Administrative capital",
+  "SZ|Lobamba": "Royal & legislative capital",
   // Switzerland has no de jure capital; Bern is the "federal city" (de facto).
   "CH|Bern": "De facto capital (federal city)",
   // Malaysia — constitutional vs administrative capital.
@@ -75,7 +137,8 @@ const CAPITAL_ROLES = {
 
 // Largest-city corrections where NE's urban-agglomeration pop_max misranks the
 // city-proper largest city. Each is the well-established largest city of its
-// country by city-proper population.
+// country by city-proper population. (Not shown by the current capitals-only
+// overlay, but kept so the data stays correct if largest cities are shown again.)
 const LARGEST_OVERRIDE = {
   // NE ranks George Town (Penang conurbation) first; Kuala Lumpur is Malaysia's
   // largest city (and is also its constitutional capital).
@@ -86,14 +149,10 @@ const LARGEST_OVERRIDE = {
 };
 
 // Subdivision capital/largest overrides, keyed by ISO 3166-2 code. Used where
-// Natural Earth's adm1name does not map to this app's subdivision codes — most
-// importantly the United Kingdom, whose app subdivisions are the four
-// constituent countries (GB-ENG/SCT/WLS/NIR) while NE's adm1name is the historic
-// counties. City names are resolved to coordinates from the NE extract.
-//   • England   — London is both the capital and the largest city.
-//   • Scotland  — Edinburgh is the capital; Glasgow is the largest city.
-//   • Wales     — Cardiff is the capital and largest city.
-//   • N.Ireland — Belfast is the capital and largest city.
+// Natural Earth's Admin-1 capital tags do not map to this app's subdivision
+// codes — most importantly the United Kingdom, whose app subdivisions are the
+// four constituent countries (GB-ENG/SCT/WLS/NIR) while NE tags historic-county
+// capitals. City names are resolved to coordinates from the NE extract.
 const SUBNATIONAL_OVERRIDE = {
   "GB-ENG": { capital: "London", largest: "London" },
   "GB-SCT": { capital: "Edinburgh", largest: "Glasgow" },
@@ -134,7 +193,7 @@ const places = fc.features.map((f) => {
 
 const placesByIso = new Map();
 for (const pl of places) {
-  if (!TEST_COUNTRIES.includes(pl.iso)) continue;
+  if (!pl.iso) continue;
   if (!placesByIso.has(pl.iso)) placesByIso.set(pl.iso, []);
   placesByIso.get(pl.iso).push(pl);
 }
@@ -142,6 +201,7 @@ for (const pl of places) {
 /** Find a place by name within a country (normalised match). */
 function findPlace(iso, name) {
   const want = norm(name);
+  if (!want) return null;
   const arr = placesByIso.get(iso) || [];
   return (
     arr.find((p) => norm(p.name) === want) ||
@@ -150,39 +210,73 @@ function findPlace(iso, name) {
   );
 }
 
-function cityFrom(pl, note) {
+/** True when two place names refer to the same city (fuzzy, diacritic-insensitive). */
+function sameName(a, b) {
+  const x = norm(a), y = norm(b);
+  return x === y || x.includes(y) || y.includes(x);
+}
+
+const round = (n) => Math.round(n * 1e4) / 1e4;
+function cityFrom(pl, note, nameOverride) {
   if (!pl || !isFinite(pl.lon) || !isFinite(pl.lat)) return null;
-  const c = { name: pl.name, lon: round(pl.lon), lat: round(pl.lat) };
+  const c = { name: nameOverride || pl.name, lon: round(pl.lon), lat: round(pl.lat) };
   if (pl.pop > 0) c.population = pl.pop;
   if (note) c.note = note;
   return c;
 }
-const round = (n) => Math.round(n * 1e4) / 1e4;
 
 // --- Build national cities ---------------------------------------------------
 
 const national = {};
-for (const iso of TEST_COUNTRIES) {
+const unresolvedNationalCapital = [];
+for (const iso of NATIONAL_ISO) {
   const arr = placesByIso.get(iso) || [];
-  // Capitals: NE adm0cap places, minus historical blocks, plus curated extras.
-  const capPlaces = arr.filter(
-    (p) => p.adm0cap && !HISTORICAL_CAPITAL_BLOCK.has(`${iso}|${p.name}`),
-  );
-  for (const extra of EXTRA_NATIONAL_CAPITALS[iso] || []) {
-    const pl = findPlace(iso, extra);
-    if (pl && !capPlaces.includes(pl)) capPlaces.push(pl);
+
+  // 1) Explicit curated multi-capital override wins outright.
+  let capitals = null;
+  if (NATIONAL_CAPITAL_OVERRIDE[iso]) {
+    capitals = NATIONAL_CAPITAL_OVERRIDE[iso]
+      .map((nm) => {
+        const pl = findPlace(iso, nm);
+        return pl ? cityFrom(pl, CAPITAL_ROLES[`${iso}|${nm}`], nm) : null;
+      })
+      .filter(Boolean);
+  } else {
+    // 2) NE adm0cap places, minus historical blocks, plus curated extras.
+    let capPlaces = arr.filter(
+      (p) => p.adm0cap && !HISTORICAL_CAPITAL_BLOCK.has(`${iso}|${p.name}`),
+    );
+    for (const extra of EXTRA_NATIONAL_CAPITALS[iso] || []) {
+      const pl = findPlace(iso, extra);
+      if (pl && !capPlaces.includes(pl)) capPlaces.push(pl);
+    }
+
+    // 3) Reconcile with the authoritative capital. If NE's adm0cap city/cities
+    //    do not include the authoritative capital, NE is stale/wrong — trust
+    //    COUNTRY_FACTS and take just the coordinates from NE.
+    const factCap = FACT_CAPITAL[iso];
+    if (factCap && !capPlaces.some((p) => sameName(p.name, factCap))) {
+      const pl = findPlace(iso, factCap);
+      if (pl) capPlaces = [pl];
+      else if (capPlaces.length === 0) unresolvedNationalCapital.push(`${iso} (${factCap})`);
+      // else: keep NE's adm0cap city (authoritative name absent from NE, e.g.
+      // a spelling variant NE renders differently — København, Ulaanbaatar…).
+    }
+
+    capitals = capPlaces
+      .map((p) => {
+        const name = NE_NAME_ALIAS[`${iso}|${p.name}`] || p.name;
+        return cityFrom(p, CAPITAL_ROLES[`${iso}|${name}`], name);
+      })
+      .filter(Boolean);
   }
-  const capitals = capPlaces
-    .map((p) => cityFrom(p, CAPITAL_ROLES[`${iso}|${p.name}`]))
-    .filter(Boolean)
-    // Primary capital (capalt=false) first, then by population.
-    .sort((a, b) => (b.population || 0) - (a.population || 0));
+
+  // Primary capital first (by population).
+  capitals.sort((a, b) => (b.population || 0) - (a.population || 0));
 
   // Largest city: curated override, else NE max pop_max.
   let largest = null;
-  if (LARGEST_OVERRIDE[iso]) {
-    largest = cityFrom(findPlace(iso, LARGEST_OVERRIDE[iso]));
-  }
+  if (LARGEST_OVERRIDE[iso]) largest = cityFrom(findPlace(iso, LARGEST_OVERRIDE[iso]));
   if (!largest) {
     const top = [...arr].sort((a, b) => b.pop - a.pop)[0];
     largest = top ? cityFrom(top) : null;
@@ -197,12 +291,11 @@ for (const iso of TEST_COUNTRIES) {
 
 // --- Build subnational cities ------------------------------------------------
 //
-// Natural Earth's `adm1name` field is encoding-corrupted in the simplified
-// extract (e.g. "Córdoba" -> "CRrdoba"), so it cannot be trusted to map a city
-// to a subdivision. Instead we assign each city to a subdivision GEOMETRICALLY:
-// a point-in-polygon test of the city's (clean) coordinates against this app's
-// own subdivision polygons (public/subdivisions/{CC}.json), keyed by the same
-// iso_3166_2 code the maps use. Geography decides — no name matching involved.
+// Natural Earth's `adm1name` field cannot be trusted to map a city to a
+// subdivision (encoding corruption + name drift). Instead we assign each city to
+// a subdivision GEOMETRICALLY: a point-in-polygon test of the city's coordinates
+// against this app's own subdivision polygons (public/subdivisions/{CC}.json),
+// keyed by the same iso_3166_2 code the maps use. Geography decides.
 
 function pointInRing(pt, ring) {
   let inside = false;
@@ -234,7 +327,7 @@ const noGeo = [];
 
 // Group NE places by the subdivision polygon that geographically contains them.
 const placesByCode = new Map();
-for (const iso of TEST_COUNTRIES) {
+for (const iso of SUBNATIONAL_ISO) {
   const path = resolve(SUBDIV_DIR, `${iso}.json`);
   if (!existsSync(path)) {
     noGeo.push(iso);
@@ -254,16 +347,13 @@ for (const iso of TEST_COUNTRIES) {
 
 // Auto-derive capital + largest for each subdivision.
 //   • capital — the contained city Natural Earth tags as an Admin-1 capital
-//     (highest-population one if several); falls back to none when NE tags no
-//     Admin-1 capital inside the polygon.
+//     (highest-population one if several); falls back to any capital tag so a
+//     national capital sitting inside a subdivision (Tokyo in JP-13, Buenos Aires
+//     in AR-C) is also recognised as that subdivision's capital.
 //   • largest — the highest-population contained city.
 for (const [code, arr] of placesByCode) {
   const byPop = (a, b) => b.pop - a.pop;
   const capPlace =
-    // Prefer an Admin-1 capital tag; fall back to any capital tag so a national
-    // capital that sits in a subdivision (Tokyo in JP-13, Buenos Aires in AR-C)
-    // is also recognised as that subdivision's capital — NE only gives it the
-    // higher Admin-0 tag, which the Admin-1 filter would otherwise miss.
     [...arr].filter((p) => /Admin-1.*capital/i.test(p.featurecla)).sort(byPop)[0] ||
     [...arr].filter((p) => /capital/i.test(p.featurecla)).sort(byPop)[0] ||
     null;
@@ -297,15 +387,17 @@ const header = `// AUTO-GENERATED by scripts/build-cities.mjs — do not edit by
 // Re-run: node scripts/build-cities.mjs
 //
 // City overlay data for the Learn-mode maps: national capitals + largest city,
-// and per-subdivision capitals + largest city.
+// and per-subdivision capitals + largest city, for every UN member state and
+// every country whose subdivisions the game shows.
 //
 // SOURCING (hard rule — CLAUDE.md "City data must be sourced, never fabricated"):
-// geography/capital-class/coordinates come from Natural Earth 10m populated
-// places; a small cited correction layer in the generator fixes NE's
-// urban-agglomeration mis-rankings of "largest city" (e.g. Kuala Lumpur, Zürich),
-// removes historical capital tags (e.g. Kyoto), and adds sourced role notes for
-// multi-capital / de-facto arrangements (Bolivia, South Africa, Switzerland,
-// Malaysia). Nothing here is invented; unresolved data is omitted.
+// candidate cities, capital tagging, coordinates and populations come from
+// Natural Earth 10m populated places; NATIONAL capitals are reconciled against
+// the authoritative COUNTRY_FACTS.capital (mledoze/countries) so a stale/ambiguous
+// NE adm0cap tag (e.g. Dar es Salaam for Tanzania, "Nur-Sultan" for Kazakhstan)
+// is corrected. A small cited correction layer in the generator adds sourced role
+// notes for multi-capital / de-facto arrangements and fixes NE's largest-city
+// mis-rankings. Nothing here is invented; unresolved data is omitted.
 
 export type City = {
   /** City name as published by the source. */
@@ -342,13 +434,14 @@ export const SUBNATIONAL_CITIES: Readonly<Record<string, SubnationalCities>> = $
 writeFileSync(OUT, header, "utf8");
 
 function stringify(obj) {
-  // Compact, stable, one-key-per-line-ish JSON suited to a data module.
   const keys = Object.keys(obj).sort();
   const lines = keys.map((k) => `  ${JSON.stringify(k)}: ${JSON.stringify(obj[k])},`);
   return `{\n${lines.join("\n")}\n}`;
 }
 
-console.log(`Wrote ${Object.keys(national).length} national + ${Object.keys(subnational).length} subnational entries to ${OUT}`);
-if (noGeo.length) {
-  console.log(`No subdivision polygons found for: ${noGeo.join(", ")}`);
-}
+console.log(
+  `Wrote ${Object.keys(national).length} national + ${Object.keys(subnational).length} subnational entries to ${OUT}`,
+);
+if (unresolvedNationalCapital.length)
+  console.log(`National capital unresolved (omitted): ${unresolvedNationalCapital.join(", ")}`);
+if (noGeo.length) console.log(`No subdivision polygons for: ${noGeo.join(", ")}`);

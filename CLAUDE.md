@@ -16,20 +16,36 @@ name of each capital is hidden by default and revealed on hover / tap (see `City
 The dataset (`src/data/cities.ts`) is **auto-generated** by `scripts/build-cities.mjs` (re-run:
 `node scripts/build-cities.mjs`). Sourcing:
 
+Coverage is **all UN member states** (national capitals) **plus every country with a bundled
+subdivision polygon file** (subdivision capitals) — 194 national + ~2,700 subdivision capitals.
+
 1. **Geography** — which cities exist, capital classification (national vs subnational), and
    coordinates — comes from **Natural Earth 10m populated places** (the same data lineage as the
-   bundled basemap), via the committed extract `scripts/data/ne_places_test.geojson`. Cities are
-   assigned to subdivisions by **point-in-polygon** against the app's own `public/subdivisions/*.json`
-   (geography decides — NE's `adm1name` is encoding-corrupted and must NOT be trusted for mapping).
-2. **Largest-city corrections** — Natural Earth's `pop_max` is an urban-agglomeration figure and
+   bundled basemap), via the committed all-country extract `scripts/data/ne_places.geojson`. Cities
+   are assigned to subdivisions by **point-in-polygon** against the app's own
+   `public/subdivisions/*.json` (geography decides — NE's `adm1name` is encoding-corrupted and must
+   NOT be trusted for mapping).
+2. **National-capital reconciliation** — NE's `adm0cap` tag is stale or ambiguous for a number of
+   countries (it tags **Dar es Salaam** for Tanzania, whose capital is **Dodoma**; the former seat
+   for Benin/Burundi; the pre-2022 name **"Nur-Sultan"** for Kazakhstan's **Astana**). So each
+   national capital is **reconciled against the authoritative `COUNTRY_FACTS.capital`** (from
+   `mledoze/countries`, the same source the country widget trusts): where NE's `adm0cap` city
+   disagrees with the authoritative capital, `COUNTRY_FACTS` wins and only the **coordinates** are
+   taken from NE. Where NE genuinely tags several national capitals **and** the authoritative one is
+   among them, every capital is kept (multi-capital nations are shown honestly). A tiny cited layer
+   handles the residue: `NATIONAL_CAPITAL_OVERRIDE` (Eswatini's Mbabane + Lobamba) and
+   `NE_NAME_ALIAS` (Kazakhstan Nur-Sultan → Astana).
+3. **Largest-city corrections** — Natural Earth's `pop_max` is an urban-agglomeration figure and
    mis-ranks "largest city" in some countries (e.g. it ranks George Town above Kuala Lumpur, and
    Geneva above Zürich). These are corrected in the generator's `LARGEST_OVERRIDE` table, each with
-   a cited reason. Historical/false-positive capital tags (e.g. NE labels Kyoto an "Admin-0 capital
-   alt") are removed via `HISTORICAL_CAPITAL_BLOCK`.
-3. **Multi-capital / de-facto roles** — a country with several capitals (Bolivia: Sucre +
-   La Paz; South Africa: Pretoria/Cape Town/Bloemfontein) or a de-facto capital (Switzerland: Bern)
-   carries a **sourced** role note from `CAPITAL_ROLES`. The national capital is a **list**
-   (`NationalCities.capitals`), never a single value, so these are represented honestly.
+   a cited reason. (Largest cities are not currently displayed — capitals-only — but the data is
+   kept correct.) Historical/false-positive capital tags (e.g. NE labels Kyoto an "Admin-0 capital
+   alt") are excluded (all such tags carry `adm0cap=0`; `HISTORICAL_CAPITAL_BLOCK` is belt-and-braces).
+4. **Multi-capital / de-facto roles** — a country with several capitals (Bolivia: Sucre +
+   La Paz; South Africa: Pretoria/Cape Town/Bloemfontein; Côte d'Ivoire: Yamoussoukro + Abidjan) or a
+   de-facto capital (Switzerland: Bern) carries a **sourced** role note from `CAPITAL_ROLES`. The
+   national capital is a **list** (`NationalCities.capitals`), never a single value, so these are
+   represented honestly.
 
 ### Rules
 
@@ -38,8 +54,10 @@ The dataset (`src/data/cities.ts`) is **auto-generated** by `scripts/build-citie
    only the data that exists.
 2. **Never trust NE `pop_max` blindly** for "largest city". When a country's largest city looks
    wrong, verify against an authoritative city-proper population and add a cited `LARGEST_OVERRIDE`.
-3. The overlay currently covers a **test set** of countries (see `TEST_COUNTRIES` in the generator).
-   Expanding coverage means regenerating from the authoritative sources, not hand-adding rows.
+3. The overlay covers **all UN member states + every country with a bundled subdivision file**.
+   Changing coverage means regenerating from the authoritative sources (`node scripts/build-cities.mjs`),
+   not hand-adding rows. To refresh the NE extract, re-download `ne_10m_populated_places.geojson` and
+   re-run the filter that produced `scripts/data/ne_places.geojson`.
 4. **Verify in the running app** (the mandatory visual-verification rule applies): toggle 📍 on the
    world map and confirm national capitals show as a large ★ (and multi-capital nations show every
    capital); drill into a country and confirm national (large ★) + subdivision (small ★) capitals,
