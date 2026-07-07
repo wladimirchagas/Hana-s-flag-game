@@ -211,6 +211,9 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   // ── CL ──
   "CL-NB": {"name":"Chillán","lon":-72.1033,"lat":-36.6067},
 
+  // ── CN ──
+  "CN-TW": {"name":"Taipei","lon":121.5625,"lat":25.0375},
+
   // ── CO ──
   "CO-CUN": {"name":"Bogotá","lon":-74.0817,"lat":4.6097},
   "CO-GUV": {"name":"San José del Guaviare","lon":-72.6386,"lat":2.5653},
@@ -458,6 +461,10 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "FR-RE": {"name":"Saint-Denis","lon":55.4481,"lat":-20.8789},
   "FR-WF": {"name":"Mata-Utu","lon":-176.1737,"lat":-13.2827},
   "FR-YT": {"name":"Dzaoudzi","lon":45.2725,"lat":-12.7883},
+
+  // ── GB ──
+  "GB-FK": {"name":"Stanley","lon":-57.8496,"lat":-51.6939},
+  "GB-GI": {"name":"Gibraltar","lon":-5.35,"lat":36.14},
 
   // ── GD ──
   "GD-01": {"name":"Grenville","lon":-61.6264,"lat":12.1192},
@@ -1364,6 +1371,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "TR-78": {"name":"Karabük","lon":32.6333,"lat":41.2},
   "TR-80": {"name":"Osmaniye","lon":36.25,"lat":37.075},
   "TR-81": {"name":"Düzce","lon":31.1583,"lat":40.8417},
+  "TR-NC~": {"name":"North Nicosia","lon":33.3636,"lat":35.19},
 
   // ── TT ──
   "TT-CTT": {"name":"Couva","lon":-61.45,"lat":10.4167},

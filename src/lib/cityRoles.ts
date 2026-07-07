@@ -48,10 +48,30 @@ const key = (c: City) => `${c.name}|${c.lon.toFixed(3)},${c.lat.toFixed(3)}`;
 /** True for a subdivision code (has a hyphen, e.g. "JP-13") vs a country code. */
 const isSubdivisionCode = (code?: string) => !!code && code.includes("-");
 
+// A city that is BOTH a national capital and a subdivision capital (e.g. Kyiv is
+// Ukraine's capital and the capital of Kyiv Oblast) can arrive from two sources
+// with SLIGHTLY different coordinates — the national capital from Natural Earth,
+// the subdivision capital from the Wikidata fallback layer — so an exact-key merge
+// misses them and renders TWO overlapping stars ("two Kievs"). Treat same-named
+// capitals within this many degrees (~11 km) as the same city so they merge into
+// one dual-level marker. Kept tight so two genuinely distinct same-named towns in
+// one country are never wrongly merged.
+const COINCIDENT_DEG = 0.1;
+
+/** Find an already-placed city with the same name at (nearly) the same spot. */
+function findCoincident(acc: Map<string, PlacedCity>, c: City): PlacedCity | undefined {
+  const hit = acc.get(key(c));
+  if (hit) return hit;
+  for (const p of acc.values()) {
+    if (p.name === c.name && Math.abs(p.lon - c.lon) <= COINCIDENT_DEG && Math.abs(p.lat - c.lat) <= COINCIDENT_DEG)
+      return p;
+  }
+  return undefined;
+}
+
 /** Merge a city into the accumulator, OR-ing roles and keeping richest data. */
 function add(acc: Map<string, PlacedCity>, c: City, role: number, ownerCode?: string) {
-  const k = key(c);
-  const existing = acc.get(k);
+  const existing = findCoincident(acc, c);
   if (existing) {
     existing.roles |= role;
     if (!existing.note && c.note) existing.note = c.note;
@@ -63,6 +83,7 @@ function add(acc: Map<string, PlacedCity>, c: City, role: number, ownerCode?: st
       existing.population = c.population;
     return;
   }
+  const k = key(c);
   acc.set(k, {
     id: k,
     name: c.name,
