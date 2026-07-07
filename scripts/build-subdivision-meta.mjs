@@ -303,13 +303,21 @@ for (const file of files.sort()) {
     if (!divCode) continue;
     let name = p.name_en || p.name || divCode;
     
+    // Custom PLACEHOLDER island codes are `-X` + DIGITS (e.g. CN-X01~, AU-X03~,
+    // AI-X00). Legitimate ISO 3166-2 codes that merely START with X are `-X` + a
+    // LETTER (Xinjiang CN-XJ, Xorazm UZ-XO, Laos LA-XA/XI/XE, Azerbaijan AZ-XAC…)
+    // and MUST NOT be treated as placeholders — matching them on the old
+    // `includes('-X')` silently dropped those real subdivisions from the meta,
+    // making them unselectable on the map (see CLAUDE.md hard rule below).
+    const isPlaceholderXCode = /-X\d/.test(divCode);
+
     // Skip nameless placeholder features
-    if (name === divCode && divCode.includes('-X')) {
+    if (name === divCode && isPlaceholderXCode) {
       continue;
     }
-    
-    // Skip custom-coded subdivisions (~ or -X) that do not have a flag
-    if ((divCode.includes('~') || divCode.includes('-X')) && !flagCodes.has(divCode)) {
+
+    // Skip custom-coded subdivisions (~ or placeholder -X#) that do not have a flag
+    if ((divCode.includes('~') || isPlaceholderXCode) && !flagCodes.has(divCode)) {
       continue;
     }
 

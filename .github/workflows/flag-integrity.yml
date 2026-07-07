@@ -17,6 +17,9 @@ on:
       - "src/api/subdivisions.ts"
       - "src/lib/subdivisionMeta.ts"
       - "src/data/flagMeanings.ts"
+      - "public/subdivisions/**"
+      - "scripts/build-subdivision-meta.mjs"
+      - "scripts/check-subdivision-meta-coverage.mjs"
 
 jobs:
   check-proportions:
@@ -30,6 +33,9 @@ jobs:
 
       - name: Verify flag aspect ratios
         run: node scripts/check-flag-proportions.mjs
+
+      - name: Verify every renderable subdivision has a SUBDIVISION_META entry
+        run: node scripts/check-subdivision-meta-coverage.mjs
 
   check-parent-collision:
     runs-on: ubuntu-latest
