@@ -26,7 +26,6 @@ import { getDriveSide } from "../lib/flagDriveSide";
 import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
 import { FlagMeaning } from "../components/FlagMeaning";
-import { CityLegend } from "../components/CityMarkers";
 import { worldCityMarkers, subdivisionCityMarkers } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
@@ -983,7 +982,6 @@ export default function LearnPage() {
       />
     <div className="learn-fs">
       <div className="learn-fs__map" aria-label="World map">
-        {isModernEra && showCities && <CityLegend stroke="currentColor" />}
         {isModernEra && subdivisionMode ? (
           <SubdivisionMap
             geoData={subdivisionGeo}
