@@ -1,18 +1,23 @@
-import { memo, useState } from "react";
+import { memo } from "react";
 import { type PlacedCity, isNational, isSubnational } from "../lib/cityRoles";
 
 /**
  * City-overlay markers for the Learn-mode maps. The overlay shows CAPITALS ONLY:
  *
- *   ★ large gold star → a national capital
- *   ★ small gold star → a subdivision capital
- *   thin outer ring   → a city that is BOTH a national and a subdivision capital
- *                       (e.g. a state capital that is also the national capital)
+ *   ★ large salmon star → a national capital
+ *   ★ small gold star   → a subdivision capital
+ *   thin outer ring     → a city that is BOTH a national and a subdivision capital
+ *                         (e.g. a state capital that is also the national capital)
  *
- * The name is hidden by default and revealed on interaction: hovering a marker
- * (desktop) shows its label transiently; clicking/tapping it pins the label so
- * it stays until tapped again. This is the "hover or click reveals the name"
- * behaviour requested by the owner.
+ * HARD RULE — the overlay is PURELY DECORATIVE and MUST NOT capture pointer
+ * events (see CLAUDE.md "City overlay must never block selection"). Every element
+ * here carries `pointer-events: none` so a marker can never sit above the
+ * interactive subdivision/country layer and swallow a selection click — which
+ * previously made small subdivisions fully covered by their capital marker (e.g.
+ * Beijing, Shanghai) impossible to select. Names are therefore NOT revealed by
+ * interacting with the marker; instead the parent map passes `activeCode` (the
+ * hovered or selected territory) and the label for the matching marker is shown.
+ * This keeps clicks flowing to the map while still revealing a capital's name.
  *
  * This component projects nothing itself: the parent map converts each city to
  * pixel coordinates (handling its own zoom / rotation / south-up transforms) and
@@ -46,18 +51,12 @@ function Marker({
   showLabel,
   labelHalo,
   labelFill,
-  onEnter,
-  onLeave,
-  onToggle,
 }: {
   city: PlacedCity;
   stroke: string;
   showLabel: boolean;
   labelHalo: string;
   labelFill: string;
-  onEnter: () => void;
-  onLeave: () => void;
-  onToggle: () => void;
 }) {
   const r = city.roles;
   const big = isNational(r);
@@ -69,20 +68,11 @@ function Marker({
   const label = city.note ? `${city.name} · ${city.note}` : city.name;
 
   return (
-    <g
-      onPointerEnter={onEnter}
-      onPointerLeave={onLeave}
-      onClick={(e) => {
-        // Reveal the name instead of selecting the country/subdivision beneath.
-        e.stopPropagation();
-        onToggle();
-      }}
-      style={{ cursor: "pointer" }}
-    >
-      {/* Native tooltip + accessible name. */}
+    // HARD RULE: the whole marker group is non-interactive so it can never block
+    // a selection click on the map beneath it.
+    <g style={{ pointerEvents: "none" }}>
+      {/* Accessible name (no tooltip needed — the marker is non-interactive). */}
       <title>{label}</title>
-      {/* Invisible, generous hit area so the marker is easy to hover/tap. */}
-      <circle r={R * 1.9} fill="transparent" />
       {/* Dual-level ring: the city is both a national and a subdivision capital. */}
       {dualLevel && (
         <circle
@@ -92,7 +82,6 @@ function Marker({
           strokeWidth={0.9}
           strokeOpacity={0.85}
           vectorEffect="non-scaling-stroke"
-          style={{ pointerEvents: "none" }}
         />
       )}
       <path
@@ -102,7 +91,6 @@ function Marker({
         strokeWidth={sw}
         strokeLinejoin="round"
         vectorEffect="non-scaling-stroke"
-        style={{ pointerEvents: "none" }}
       />
       {showLabel && (
         <text
@@ -116,7 +104,6 @@ function Marker({
           strokeWidth={3.4}
           paintOrder="stroke"
           strokeLinejoin="round"
-          style={{ pointerEvents: "none" }}
         >
           {label}
         </text>
@@ -127,22 +114,23 @@ function Marker({
 
 export const CityMarkers = memo(function CityMarkers({
   markers,
+  activeCode,
   stroke,
   labelHalo,
   labelFill,
 }: {
   markers: ScreenCity[];
+  /** ISO code of the hovered/selected territory; that marker's name is revealed. */
+  activeCode?: string | null;
   stroke: string;
   labelHalo: string;
   labelFill: string;
 }) {
-  // Hover shows a label transiently; click/tap pins it until toggled off.
-  const [hoverId, setHoverId] = useState<string | null>(null);
-  const [pinnedId, setPinnedId] = useState<string | null>(null);
   return (
-    <g>
+    // Non-interactive container — the whole overlay is decorative (see HARD RULE).
+    <g style={{ pointerEvents: "none" }} aria-hidden="true">
       {markers.map(({ city, x, y }) => {
-        const show = city.id === hoverId || city.id === pinnedId;
+        const show = !!activeCode && city.ownerCode === activeCode;
         return (
           <g key={city.id} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}>
             <Marker
@@ -151,9 +139,6 @@ export const CityMarkers = memo(function CityMarkers({
               showLabel={show}
               labelHalo={labelHalo}
               labelFill={labelFill}
-              onEnter={() => setHoverId(city.id)}
-              onLeave={() => setHoverId((p) => (p === city.id ? null : p))}
-              onToggle={() => setPinnedId((p) => (p === city.id ? null : city.id))}
             />
           </g>
         );
@@ -184,7 +169,7 @@ export function CityLegend({ stroke }: { stroke: string }) {
         <circle r={9} fill="none" stroke={stroke} strokeWidth={0.9} strokeOpacity={0.85} />
         <path d={starPath(7)} fill={NATIONAL_CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
       </Item>
-      <Item label="Hover or tap a marker for its name">
+      <Item label="Hover or select a territory to see its capital">
         <path d={starPath(7)} fill={NATIONAL_CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
       </Item>
     </div>

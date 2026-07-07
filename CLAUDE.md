@@ -58,11 +58,27 @@ subdivision polygon file** (subdivision capitals) — 194 national + ~2,700 subd
    Changing coverage means regenerating from the authoritative sources (`node scripts/build-cities.mjs`),
    not hand-adding rows. To refresh the NE extract, re-download `ne_10m_populated_places.geojson` and
    re-run the filter that produced `scripts/data/ne_places.geojson`.
-4. **Verify in the running app** (the mandatory visual-verification rule applies): toggle 📍 on the
+4. **The city overlay MUST NEVER block territory selection — it is purely decorative.**
+   The marker layer renders on top of the interactive subdivision/country paths. If a marker
+   captures pointer events, its hit-area sits above the map and **swallows selection clicks** — and
+   because the markers are a constant pixel size, a small subdivision can be **entirely covered** by
+   its own (or a neighbour's) capital marker and become impossible to select. This shipped and was
+   reported (2026-07): with 📍 on, Beijing, Shanghai, Tianjin and other small city-provinces (and the
+   click-spot of larger ones like Xinjiang) could not be selected because the capital markers ate the
+   clicks. **Hard rule:** every element the overlay renders — the group, the star, the ring, the
+   label, and any hit/backdrop shape — MUST carry `pointer-events: none` (`CityMarkers.tsx` sets it on
+   the container and each marker group). The overlay must **never** attach `onClick` / `onPointer*`
+   handlers, `stopPropagation`, or a transparent hit-area that intercepts a tap meant for the map.
+   A capital's name is revealed NOT by interacting with the marker but by the parent map passing the
+   hovered/selected territory's code as `activeCode` (matched against each marker's `ownerCode`), so
+   clicks always flow through to select the subdivision/country. **Never** re-introduce an interactive
+   marker to get hover/tap-to-reveal — reveal via `activeCode` instead.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): toggle 📍 on the
    world map and confirm national capitals show as a large ★ (and multi-capital nations show every
    capital); drill into a country and confirm national (large ★) + subdivision (small ★) capitals,
    the dual-level ring where a city is both (e.g. a state capital that is also the national capital),
-   and that hovering or tapping a marker reveals that capital's name.
+   that hovering/selecting a territory reveals its capital's name, and — critically — that **every
+   subdivision (including tiny city-provinces like Beijing/Shanghai) is still selectable with 📍 on**.
 
 ## Country widget information must never be reduced — hard rule, do not override without approval
 

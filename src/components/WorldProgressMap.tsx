@@ -405,6 +405,9 @@ export function WorldProgressMap({
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
   const [geographies, setGeographies] = useState<GeoFeature[]>([]);
   const [popover, setPopover] = useState<Popover | null>(null);
+  // Locally-tracked hovered country, used to reveal that country's capital
+  // label in the (non-interactive) city overlay.
+  const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
   // See HistoricalMap for the same pattern — local hook always runs, but
   // the caller can pass a `zoom` to share state with a sibling map.
@@ -943,17 +946,21 @@ export function WorldProgressMap({
                           : undefined
                       }
                       onMouseEnter={
-                        clickable && alpha2 && selectable?.onHover
+                        clickable && alpha2
                           ? () => {
                               const resolved =
                                 selectable!.territoryParent?.[alpha2!] ?? alpha2!;
-                              selectable!.onHover!(resolved);
+                              setHoveredCode(resolved);
+                              selectable?.onHover?.(resolved);
                             }
                           : undefined
                       }
                       onMouseLeave={
-                        clickable && selectable?.onHover
-                          ? () => selectable.onHover!(null)
+                        clickable
+                          ? () => {
+                              setHoveredCode(null);
+                              selectable?.onHover?.(null);
+                            }
                           : undefined
                       }
                     >
@@ -993,6 +1000,7 @@ export function WorldProgressMap({
           {cityScreen.length > 0 && (
             <CityMarkers
               markers={cityScreen}
+              activeCode={hoveredCode ?? selectedCode}
               stroke={palette.stroke}
               labelHalo={labelHalo}
               labelFill={palette.stroke}
