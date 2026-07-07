@@ -3,6 +3,7 @@ import {
   SUBNATIONAL_CITIES,
   type City,
 } from "../data/cities";
+import { SUBDIVISION_CAPITALS } from "../data/subdivisionCapitals";
 
 /**
  * Role flags for a capital marker. A single city can hold several at once — e.g.
@@ -105,10 +106,14 @@ export function subdivisionCityMarkers(
     for (const cap of nat.capitals ?? []) add(acc, cap, CityRole.NationalCapital, countryCode);
   }
   for (const code of subdivisionCodes) {
-    const sub = SUBNATIONAL_CITIES[code];
-    if (!sub) continue;
     // ownerCode = subdivision code so hovering/selecting the subdivision reveals it.
-    if (sub.capital) add(acc, sub.capital, CityRole.SubnationalCapital, code);
+    // Natural Earth (already reconciled against COUNTRY_FACTS) wins where it has a
+    // capital; otherwise fall back to the authoritative Wikidata capital layer,
+    // which fills the ~1,800 subdivisions NE tags no capital for (e.g. Norfolk
+    // Island → Kingston). See src/data/subdivisionCapitals.ts.
+    const neCapital = SUBNATIONAL_CITIES[code]?.capital;
+    const capital = neCapital ?? SUBDIVISION_CAPITALS[code];
+    if (capital) add(acc, capital, CityRole.SubnationalCapital, code);
   }
   return [...acc.values()];
 }
