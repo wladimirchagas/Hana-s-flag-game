@@ -28,6 +28,15 @@ export type PlacedCity = {
   lat: number;
   /** Bitmask of CityRole values this city holds in the current view. */
   roles: number;
+  /**
+   * ISO code of the territory this marker "belongs to" for name-reveal: the
+   * subdivision code on the subdivision map (e.g. "JP-13"), or the country code
+   * on the world map (e.g. "JP"). The parent map reveals a marker's label when
+   * its `ownerCode` matches the currently hovered/selected territory. A
+   * subdivision code (with a hyphen) always wins over a plain country code when a
+   * city is both a national and a subdivision capital.
+   */
+  ownerCode?: string;
   /** Sourced capital role note (e.g. "Executive capital"), if any. */
   note?: string;
   population?: number;
@@ -35,13 +44,20 @@ export type PlacedCity = {
 
 const key = (c: City) => `${c.name}|${c.lon.toFixed(3)},${c.lat.toFixed(3)}`;
 
+/** True for a subdivision code (has a hyphen, e.g. "JP-13") vs a country code. */
+const isSubdivisionCode = (code?: string) => !!code && code.includes("-");
+
 /** Merge a city into the accumulator, OR-ing roles and keeping richest data. */
-function add(acc: Map<string, PlacedCity>, c: City, role: number) {
+function add(acc: Map<string, PlacedCity>, c: City, role: number, ownerCode?: string) {
   const k = key(c);
   const existing = acc.get(k);
   if (existing) {
     existing.roles |= role;
     if (!existing.note && c.note) existing.note = c.note;
+    // Prefer a subdivision code over a country code so hovering the subdivision
+    // reveals a city that is both a national and a subdivision capital.
+    if (ownerCode && (!existing.ownerCode || (isSubdivisionCode(ownerCode) && !isSubdivisionCode(existing.ownerCode))))
+      existing.ownerCode = ownerCode;
     if (c.population != null && (existing.population == null || c.population > existing.population))
       existing.population = c.population;
     return;
@@ -52,6 +68,7 @@ function add(acc: Map<string, PlacedCity>, c: City, role: number) {
     lon: c.lon,
     lat: c.lat,
     roles: role,
+    ownerCode,
     note: c.note,
     population: c.population,
   });
@@ -67,7 +84,8 @@ export function worldCityMarkers(codes?: Iterable<string>): PlacedCity[] {
   for (const code of list) {
     const nat = NATIONAL_CITIES[code];
     if (!nat) continue;
-    for (const cap of nat.capitals ?? []) add(acc, cap, CityRole.NationalCapital);
+    // ownerCode = country code so hovering the country reveals its capital.
+    for (const cap of nat.capitals ?? []) add(acc, cap, CityRole.NationalCapital, code);
   }
   return [...acc.values()];
 }
@@ -84,12 +102,13 @@ export function subdivisionCityMarkers(
   const acc = new Map<string, PlacedCity>();
   const nat = NATIONAL_CITIES[countryCode];
   if (nat) {
-    for (const cap of nat.capitals ?? []) add(acc, cap, CityRole.NationalCapital);
+    for (const cap of nat.capitals ?? []) add(acc, cap, CityRole.NationalCapital, countryCode);
   }
   for (const code of subdivisionCodes) {
     const sub = SUBNATIONAL_CITIES[code];
     if (!sub) continue;
-    if (sub.capital) add(acc, sub.capital, CityRole.SubnationalCapital);
+    // ownerCode = subdivision code so hovering/selecting the subdivision reveals it.
+    if (sub.capital) add(acc, sub.capital, CityRole.SubnationalCapital, code);
   }
   return [...acc.values()];
 }

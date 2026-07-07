@@ -211,6 +211,9 @@ export function SubdivisionMap({
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
   const [popover, setPopover] = useState<Popover | null>(null);
+  // Locally-tracked hovered subdivision, used to reveal that subdivision's
+  // capital label in the (non-interactive) city overlay.
+  const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
   const zoom = useZoomPan(WIDTH, HEIGHT);
 
@@ -551,13 +554,13 @@ export function SubdivisionMap({
                         : undefined
                     }
                     onMouseEnter={
-                      isInteractive && code && onHover
-                        ? () => onHover(code)
+                      isInteractive && code
+                        ? () => { setHoveredCode(code); onHover?.(code); }
                         : undefined
                     }
                     onMouseLeave={
-                      isInteractive && onHover
-                        ? () => onHover(null)
+                      isInteractive
+                        ? () => { setHoveredCode(null); onHover?.(null); }
                         : undefined
                     }
                   >
@@ -604,8 +607,8 @@ export function SubdivisionMap({
                   key={`dot-${code}`}
                   transform={`translate(${cx.toFixed(1)} ${cy.toFixed(1)})`}
                   onClick={isInteractive ? (e) => handlePathClick(e, code, name) : undefined}
-                  onMouseEnter={isInteractive && onHover ? () => onHover(code) : undefined}
-                  onMouseLeave={isInteractive && onHover ? () => onHover(null) : undefined}
+                  onMouseEnter={isInteractive ? () => { setHoveredCode(code); onHover?.(code); } : undefined}
+                  onMouseLeave={isInteractive ? () => { setHoveredCode(null); onHover?.(null); } : undefined}
                   style={{ cursor: isInteractive ? "pointer" : "default" }}
                   aria-hidden="true"
                 >
@@ -631,6 +634,7 @@ export function SubdivisionMap({
             {cityScreen.length > 0 && (
               <CityMarkers
                 markers={cityScreen}
+                activeCode={hoveredCode ?? selectedCode}
                 stroke={palette.stroke}
                 labelHalo={cityLabelHalo}
                 labelFill={palette.stroke}
