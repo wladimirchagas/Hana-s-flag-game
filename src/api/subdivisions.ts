@@ -1,8 +1,76 @@
+import { geoArea } from "d3-geo";
+import polygonClipping from "polygon-clipping";
 import type { SubdivisionFeatureCollection, SubdivisionGeoFeature } from "../types/subdivision";
 import { subdivisionFlagCdnUrl, hasSubdivisionFlag as hasSubdivisionFlagCdn } from "../lib/subdivisionFlagIndex";
 import { TERRITORY_GEO_FOR_PARENT } from "../lib/territoryParentMap";
 
 const BASE = import.meta.env.BASE_URL;
+
+type Ring = [number, number][];
+type Poly = Ring[];
+
+/** polygon-clipping winds rings opposite to the GeoJSON/d3-geo convention; d3's
+ *  spherical geoPath reads a backwards-wound polygon as "everything OUTSIDE it"
+ *  (area > a hemisphere), filling the whole map minus a hole. Reverse such rings
+ *  so the shape fills its own interior. Same fix as the Western Sahara union in
+ *  WorldProgressMap. */
+function fixWinding(poly: Poly): Poly {
+  return geoArea({ type: "Polygon", coordinates: poly } as never) > 2 * Math.PI
+    ? poly.map((ring) => ring.slice().reverse() as Ring)
+    : poly;
+}
+
+/** Every polygon (ring-set) of a Polygon/MultiPolygon geometry. */
+function polygonsOf(geometry: unknown): Poly[] {
+  const g = geometry as { type?: string; coordinates?: unknown };
+  if (g?.type === "Polygon") return [g.coordinates as Poly];
+  if (g?.type === "MultiPolygon") return g.coordinates as Poly[];
+  return [];
+}
+
+/**
+ * Dissolve every feature of a merged territory into ONE feature, so a disputed or
+ * dependent territory renders as a single unit WITHOUT its internal subdivision
+ * borders — Taiwan is one shape under China (not its 21 counties), Kosovo one
+ * shape under Serbia (not its 30 municipalities). All features of a territory geo
+ * already share one subdivCode (they are one logical unit), so this only removes
+ * the internal borders between them; polygon-clipping unions the polygons,
+ * dissolving shared edges. Falls back to simple re-tagging if the territory is a
+ * single polygon or the union fails.
+ */
+function dissolveTerritory(
+  features: SubdivisionGeoFeature[],
+  subdivCode: string,
+): SubdivisionGeoFeature[] {
+  const retag = (f: SubdivisionGeoFeature): SubdivisionGeoFeature => ({
+    ...f,
+    properties: { ...f.properties, iso_3166_2: subdivCode, _isTerritory: true },
+  });
+  const polys = features.flatMap((f) => polygonsOf(f.geometry));
+  if (polys.length <= 1) return features.map(retag);
+  try {
+    const unioned = polygonClipping.union(
+      polys[0] as never,
+      ...(polys.slice(1) as never[]),
+    ) as unknown as Poly[];
+    if (!unioned.length) return features.map(retag);
+    const name = features[0]?.properties?.name ?? subdivCode;
+    return [
+      {
+        type: "Feature",
+        properties: {
+          ...features[0]!.properties,
+          name,
+          iso_3166_2: subdivCode,
+          _isTerritory: true,
+        },
+        geometry: { type: "MultiPolygon", coordinates: unioned.map(fixWinding) },
+      },
+    ];
+  } catch {
+    return features.map(retag);
+  }
+}
 
 // Local corrected flag overrides (keyed by uppercase ISO 3166-2 code).
 // Use these to replace flags from the CDN that contain errors, or to
@@ -228,10 +296,9 @@ export async function fetchMergedSubdivisionGeo(
   ]);
   let extraFeatures: SubdivisionGeoFeature[] = territoryGeos.flatMap((geo, i) => {
     const subdivCode = territoryMappings[i]!.subdivCode;
-    return (geo?.features ?? []).map((feat) => ({
-      ...feat,
-      properties: { ...feat.properties, iso_3166_2: subdivCode, _isTerritory: true },
-    }));
+    // Dissolve each territory to a single feature so a disputed/dependent
+    // territory shows as one unit, never subdivided (Taiwan, Kosovo, …).
+    return dissolveTerritory(geo?.features ?? [], subdivCode);
   });
 
   // If the parent country is Ukraine (UA), dynamically load Russia (RU) to copy Crimea/Sevastopol features

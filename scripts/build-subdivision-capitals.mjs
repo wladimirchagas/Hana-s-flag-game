@@ -131,6 +131,7 @@ const DISPUTED_CAPITAL_QIDS = {
   "GB-FK": "Q9648", // Falkland Islands → Stanley (UK; claimed by Argentina)
   "GB-GI": "Q1410", // Gibraltar → Gibraltar (UK; claimed by Spain)
   "CN-TW": "Q865", // Taiwan → Taipei (ROC; claimed by the PRC)
+  "RS-KM~": "Q1246", // Kosovo → Pristina (declared independence 2008; claimed by Serbia)
 };
 
 /**
