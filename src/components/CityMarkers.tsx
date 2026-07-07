@@ -56,9 +56,9 @@ function Marker({
 }) {
   const r = city.roles;
   const big = isNational(r);
-  const R = big ? 8 : 5.5; // outer radius (constant px)
+  const R = big ? 12 : 8; // outer radius (constant px)
   const dualLevel = isNational(r) && isSubnational(r);
-  const sw = big ? 1.1 : 0.8;
+  const sw = big ? 1.4 : 1.1;
 
   const label = city.note ? `${city.name} · ${city.note}` : city.name;
 
@@ -100,14 +100,14 @@ function Marker({
       />
       {showLabel && (
         <text
-          x={R * 1.5 + 1}
+          x={R * 1.4 + 2}
           y={0}
           dominantBaseline="central"
-          fontSize={big ? 9 : 8}
-          fontWeight={big ? 600 : 500}
+          fontSize={big ? 14 : 12}
+          fontWeight={big ? 700 : 600}
           fill={labelFill}
           stroke={labelHalo}
-          strokeWidth={2.6}
+          strokeWidth={3.4}
           paintOrder="stroke"
           strokeLinejoin="round"
           style={{ pointerEvents: "none" }}
