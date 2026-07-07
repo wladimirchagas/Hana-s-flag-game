@@ -20,7 +20,12 @@ import { type PlacedCity, isNational, isSubnational } from "../lib/cityRoles";
  * regardless of zoom — they are never enlarged or shrunk with the map.
  */
 
-const CAPITAL_FILL = "#f2b50a"; // gold
+// National-capital stars use the game's coral/salmon accent (--coral, #ff6b6b —
+// the same warm tone as the headings and mascot); subdivision-capital stars stay
+// gold. The colour reinforces the size distinction (national = larger + salmon,
+// subdivision = smaller + gold).
+const NATIONAL_CAPITAL_FILL = "#ff6b6b"; // salmon / coral
+const CAPITAL_FILL = "#f2b50a"; // gold (subdivision capitals)
 
 export type ScreenCity = { city: PlacedCity; x: number; y: number };
 
@@ -59,6 +64,7 @@ function Marker({
   const R = big ? 12 : 8; // outer radius (constant px)
   const dualLevel = isNational(r) && isSubnational(r);
   const sw = big ? 1.4 : 1.1;
+  const fill = big ? NATIONAL_CAPITAL_FILL : CAPITAL_FILL;
 
   const label = city.note ? `${city.name} · ${city.note}` : city.name;
 
@@ -91,7 +97,7 @@ function Marker({
       )}
       <path
         d={starPath(R)}
-        fill={CAPITAL_FILL}
+        fill={fill}
         stroke={stroke}
         strokeWidth={sw}
         strokeLinejoin="round"
@@ -169,17 +175,17 @@ export function CityLegend({ stroke }: { stroke: string }) {
   return (
     <div className="city-legend" role="note" aria-label="City marker legend">
       <Item label="National capital">
-        <path d={starPath(8)} fill={CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
+        <path d={starPath(8)} fill={NATIONAL_CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
       </Item>
       <Item label="Subdivision capital">
         <path d={starPath(5.5)} fill={CAPITAL_FILL} stroke={stroke} strokeWidth={0.9} strokeLinejoin="round" />
       </Item>
       <Item label="Both (national & subdivision)">
         <circle r={9} fill="none" stroke={stroke} strokeWidth={0.9} strokeOpacity={0.85} />
-        <path d={starPath(7)} fill={CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
+        <path d={starPath(7)} fill={NATIONAL_CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
       </Item>
       <Item label="Hover or tap a marker for its name">
-        <path d={starPath(7)} fill={CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
+        <path d={starPath(7)} fill={NATIONAL_CAPITAL_FILL} stroke={stroke} strokeWidth={1} strokeLinejoin="round" />
       </Item>
     </div>
   );
