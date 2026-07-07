@@ -645,6 +645,11 @@ export function SubdivisionMap({
               <CityMarkers
                 markers={cityScreen}
                 activeCode={hoveredCode ?? selectedCode}
+                // Always label the national capital on a country's own subdivision
+                // view (subdivision capitals still reveal only on hover/select) so a
+                // city-state with nothing to hover (Monaco, Vatican City) still shows
+                // its capital's name, and larger countries always name their capital.
+                alwaysLabelNational
                 unitPx={unitPx}
                 stroke={palette.stroke}
                 labelHalo={cityLabelHalo}

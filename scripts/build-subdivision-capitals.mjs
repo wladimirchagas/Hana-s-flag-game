@@ -83,6 +83,16 @@ function appSubdivisionCodes() {
   return codes;
 }
 
+/** Every code SUBDIVISION_META carries, INCLUDING disputed "~" codes (which the
+ *  app still renders). Used to confirm a curated disputed capital will show. */
+function allMetaCodes() {
+  const codes = new Set();
+  for (const m of readFileSync(META, "utf8").matchAll(/code:\s*"([^"]+)"/g)) {
+    codes.add(m[1].trim().toUpperCase());
+  }
+  return codes;
+}
+
 /** Subdivision codes that ALREADY have a capital in cities.ts (NE-sourced). */
 function codesWithNeCapital() {
   const text = readFileSync(CITIES, "utf8");
@@ -103,6 +113,24 @@ function codesWithNeCapital() {
  */
 const NO_ISO_CODE_QIDS = {
   "AU-NF": "Q31057", // Norfolk Island → Kingston (Australian external territory)
+};
+
+/**
+ * Disputed/claimed territories the app renders as standalone subdivision cards
+ * (their code is in SUBDIVISION_META) but which the normal gap fill skips —
+ * either because the code carries a "~" custom suffix (excluded as a placeholder)
+ * or because Natural Earth simply tags no capital for them. Their capital is
+ * fetched from the TERRITORY's own Wikidata item (P36 → the capital's P625), the
+ * same authoritative path as every other row here. Keyed by app code → the
+ * territory's QID; each QID was confirmed against the item's English label. The
+ * game takes no political side — showing a territory's capital is neutral fact,
+ * exactly as its flag and population already are.
+ */
+const DISPUTED_CAPITAL_QIDS = {
+  "TR-NC~": "Q23681", // Northern Cyprus → North Nicosia (recognised only by Türkiye)
+  "GB-FK": "Q9648", // Falkland Islands → Stanley (UK; claimed by Argentina)
+  "GB-GI": "Q1410", // Gibraltar → Gibraltar (UK; claimed by Spain)
+  "CN-TW": "Q865", // Taiwan → Taipei (ROC; claimed by the PRC)
 };
 
 /**
@@ -207,6 +235,30 @@ async function main() {
       console.log(`→ FAILED (${e.message})`);
     }
     await sleep(200); // be polite
+  }
+
+  console.log("\nFetching disputed-territory capitals (by territory QID)...");
+  const metaCodes = allMetaCodes();
+  for (const [code, qid] of Object.entries(DISPUTED_CAPITAL_QIDS)) {
+    const CODE = code.toUpperCase();
+    // These bypass the gap() filter (their code may carry "~" or simply have no
+    // NE capital) but must still be a code the app renders.
+    if (!metaCodes.has(CODE)) {
+      console.log(`  ${code} (${qid}) → skipped (not in SUBDIVISION_META)`);
+      continue;
+    }
+    try {
+      const v = await fetchByQid(code, qid);
+      if (v) {
+        capitals.set(CODE, v);
+        console.log(`  ${code} (${qid}) → ${v.name} (${v.lon}, ${v.lat})`);
+      } else {
+        console.log(`  ${code} (${qid}) → no capital+coordinates found`);
+      }
+    } catch (e) {
+      console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(1000);
   }
 
   console.log("\nFetching capitals with no Wikidata P300 code (by QID)...");

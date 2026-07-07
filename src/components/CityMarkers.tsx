@@ -76,7 +76,10 @@ function Marker({
   const LABEL_PX = big ? 15 : 13; // constant on-screen font size
   const fontSize = LABEL_PX / scale;
   const haloPx = 3.2 / scale;
-  const labelX = R * 1.5 + 4 / scale; // clear the star + a ~4px screen gap
+  // The label sits centred ABOVE the star (clear of the dual-level ring), not
+  // beside it, so it stays readable and never overlaps the glyph or a neighbour's
+  // star (owner request 2026-07).
+  const labelY = -((dualLevel ? R * 1.7 : R) + 4 / scale);
 
   const label = city.note ? `${city.name} · ${city.note}` : city.name;
 
@@ -107,9 +110,10 @@ function Marker({
       />
       {showLabel && (
         <text
-          x={labelX}
-          y={0}
-          dominantBaseline="central"
+          x={0}
+          y={labelY}
+          textAnchor="middle"
+          dominantBaseline="auto"
           fontSize={fontSize}
           fontWeight={big ? 700 : 600}
           fill={labelFill}
@@ -128,6 +132,7 @@ function Marker({
 export const CityMarkers = memo(function CityMarkers({
   markers,
   activeCode,
+  alwaysLabelNational = false,
   stroke,
   labelHalo,
   labelFill,
@@ -136,6 +141,11 @@ export const CityMarkers = memo(function CityMarkers({
   markers: ScreenCity[];
   /** ISO code of the hovered/selected territory; that marker's name is revealed. */
   activeCode?: string | null;
+  /** When true, every NATIONAL capital's name is labelled unconditionally (used on
+   *  a country's own subdivision view so its capital is always named — its marker's
+   *  ownerCode is often the subdivision code once it merges with a state capital, so
+   *  matching the country code alone would miss it). */
+  alwaysLabelNational?: boolean;
   stroke: string;
   labelHalo: string;
   labelFill: string;
@@ -147,7 +157,9 @@ export const CityMarkers = memo(function CityMarkers({
     // Non-interactive container — the whole overlay is decorative (see HARD RULE).
     <g style={{ pointerEvents: "none" }} aria-hidden="true">
       {markers.map(({ city, x, y }) => {
-        const show = !!activeCode && city.ownerCode === activeCode;
+        const show =
+          (!!activeCode && city.ownerCode === activeCode) ||
+          (alwaysLabelNational && isNational(city.roles));
         return (
           <g key={city.id} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}>
             <Marker
