@@ -478,7 +478,16 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
 
   // ── YouTube player setup ────────────────────────────────────────────────
   useEffect(() => {
-    if (!isYoutube || !anthem?.youtubeId) return;
+    // Only create the YouTube player once the anthem is actually OPEN. The
+    // modal is always mounted (parked off-screen when hidden), so without this
+    // guard the iframe — which carries `autoplay: 1` — was built as soon as a
+    // country was selected. On mobile the queued autoplay then fired on the
+    // user's NEXT tap (e.g. the 📍 city toggle), producing a brief burst of
+    // hidden anthem audio before the "pause while invisible" effect silenced it.
+    // Gating creation on `visible` keeps the autoplay-on-open rule intact (the
+    // onReady handler below still plays when visible / pendingPlayRef) while
+    // never loading or autoplaying the anthem before the user opens it.
+    if (!visible || !isYoutube || !anthem?.youtubeId) return;
 
     let cancelled = false;
     // Track the player created inside the async .then() so the outer cleanup
@@ -571,7 +580,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
       }
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isYoutube, anthem]);
+  }, [visible, isYoutube, anthem]);
 
   // ── Native audio event handlers ─────────────────────────────────────────
   const handleTimeUpdate = useCallback(() => {
