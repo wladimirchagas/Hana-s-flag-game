@@ -12802,6 +12802,112 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Western (Fly River) Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-we.html" },
     ],
   },
+
+  // ── Ethiopia regions & chartered cities ────────────────────────────────────
+  // Designs and (where documented) symbolism from Flags of the World (FOTW).
+  "ET-TI": {
+    description:
+      "A red field bearing a yellow star and the regional emblem. The yellow represents fertility, hope and " +
+      "security; the red the history of the Tigrayan people, patriotism and sacrifice; and the star equality " +
+      "and unity with all the peoples of the world.",
+    sources: [
+      { title: "Tigray National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-ti.html" },
+    ],
+  },
+  "ET-AM": {
+    description:
+      "A golden field crossed by a broad red diagonal charged with a golden star, with the regional emblem (a " +
+      "crowned lion holding a cross, in the Solomonic tradition). The yellow stands for the Amhara people’s " +
+      "hope of economic and social prosperity, the red for their sacrifice and struggle for peace, democracy " +
+      "and freedom, and the star for their hope of living with other peoples in unity, love and caring.",
+    sources: [
+      { title: "Amhara National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-am.html" },
+    ],
+  },
+  "ET-OR": {
+    description:
+      "A horizontal red, white and black tricolour bearing an oda (sycamore fig) tree. In Oromo tradition the " +
+      "three colours stand for time — black for the past, red for the present and white for the future — and " +
+      "the oda is the tree under which Gada leaders gather for traditional assembly.",
+    sources: [
+      { title: "Oromiya National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-or.html" },
+    ],
+  },
+  "ET-AF": {
+    description:
+      "A red triangle at the hoist with horizontal blue, white and green stripes, bearing the regional emblem " +
+      "with a traditional dagger. The green stands for fertility, the blue for the region’s water and mineral " +
+      "wealth and the white for peace and stability; the dagger (jile) is a traditional Afar implement.",
+    sources: [
+      { title: "Afar National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-af.html" },
+    ],
+  },
+  "ET-SO": {
+    description:
+      "A horizontal green, white and dark-red tricolour with a light-blue triangle at the hoist bearing a " +
+      "white star — the design restored in 2018, echoing the star-and-blue of the Somali flag. (A 2008–2018 " +
+      "version used a yellow triangle with a camel.)",
+    sources: [
+      { title: "Somali National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-so.html" },
+    ],
+  },
+  "ET-BE": {
+    description:
+      "A horizontal tricolour of black, gold and green with a red triangle at the hoist (later given a white " +
+      "border). The colours are a rearrangement of the neighbouring Sudanese flag’s, with gold in place of " +
+      "white.",
+    sources: [
+      { title: "Benishangul/Gumuz National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-be.html" },
+    ],
+  },
+  "ET-GA": {
+    description:
+      "Four horizontal stripes of black, green, white and red with a black five-pointed star on the white " +
+      "stripe — a design associated with the region’s diversity.",
+    sources: [
+      { title: "Gambela National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-ga.html" },
+    ],
+  },
+  "ET-SI": {
+    description:
+      "A horizontal green, blue and red tricolour with white fimbriation between the stripes and five " +
+      "five-pointed stars arranged in a circle on the central blue stripe.",
+    sources: [
+      { title: "Sidama Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-sid.html" },
+    ],
+  },
+  "ET-HA": {
+    description:
+      "Unequal horizontal stripes — white, red, white, green, white, the central white being the broadest — " +
+      "bearing the regional emblem on the central stripe.",
+    sources: [
+      { title: "Harari National Regional State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-ha.html" },
+    ],
+  },
+  "ET-SN": {
+    description:
+      "A horizontal blue, white and red tricolour bearing the regional state emblem at the centre. (This is " +
+      "the flag of the former Southern Nations, Nationalities and Peoples’ Region.)",
+    sources: [
+      { title: "Southern Nations, Nationalities and Peoples’ Region — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-sn.html" },
+    ],
+  },
+  "ET-AA": {
+    description:
+      "A white field bearing the emblem of the Addis Ababa city administration at the centre. Addis Ababa is " +
+      "Ethiopia’s capital and a self-governing chartered city.",
+    sources: [
+      { title: "Addis Ababa Administrative Region — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-aa.html" },
+    ],
+  },
+  "ET-DD": {
+    description:
+      "A pale-grey field bearing the emblem of the Dire Dawa city administration at the centre. Dire Dawa is a " +
+      "self-governing chartered city.",
+    sources: [
+      { title: "Dire Dawa Administrative Council — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-dd.html" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
