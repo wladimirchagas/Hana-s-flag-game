@@ -78,6 +78,12 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
     // (which is actually PA-NB) while its name/geometry is Bocas del Toro.
     // PA-1 is the Province of Bocas del Toro per ISO 3166-2:PA.
     "PA-1": "Bocas del Toro"
+  },
+  "PG": {
+    // Source name_en for PG-NSB is a truncated "of Bougainville" (from
+    // "Autonomous Region of Bougainville"); its name is the former "North
+    // Solomons". Use the current short name.
+    "PG-NSB": "Bougainville"
   }
 };
 

@@ -12592,6 +12592,216 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
     ],
   },
+
+  // ── Papua New Guinea provinces ─────────────────────────────────────────────
+  // Provincial flag symbolism documented per-province by Flags of the World (FOTW).
+  "PG-CPM": {
+    description:
+      "A blue and red field bearing a lakatoi (traditional canoe) silhouette, one large star and five smaller " +
+      "stars. The lakatoi represents tradition and sits over the blue, which is the sea; the large star stands " +
+      "for the province and the five small stars for its five districts, over the red, which is the land.",
+    sources: [
+      { title: "Central Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-ce.html" },
+    ],
+  },
+  "PG-CPK": {
+    description:
+      "A flag carrying the bird of paradise and Southern Cross of the national flag together with two red " +
+      "spears, a white chain and a yellow coffee branch. The two red spears represent leadership, the white " +
+      "chain unity, and the coffee branch the province’s main cash crop.",
+    sources: [
+      { title: "Simbu (Chimbu) Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-si.html" },
+    ],
+  },
+  "PG-EBR": {
+    description:
+      "A green diagonal stripe separates a black upper field bearing the four white stars of the Southern " +
+      "Cross from a red lower field, with a central disc showing two traditional masks — the Duk-duk mask of " +
+      "the Tolai secret society and the fire-dance mask of the Baining — amid shell money. The masks stand for " +
+      "the province’s indigenous cultures.",
+    sources: [
+      { title: "East New Britain Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-en.html" },
+    ],
+  },
+  "PG-EHG": {
+    description:
+      "Red and green triangles behind a large yellow six-pointed star bearing Nokondi — a legendary one-legged " +
+      "man of local folklore — holding a coffee branch, encircled by eight smaller stars. The six points stand " +
+      "for the six districts, the eight small stars for the local government councils, and the coffee branch " +
+      "for the main cash crop.",
+    sources: [
+      { title: "Eastern Highlands Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-eh.html" },
+    ],
+  },
+  "PG-EPW": {
+    description:
+      "Black and green triangles bearing a Dendrobium engae orchid — the provincial flower. The black recalls " +
+      "the national flag and the green represents the region’s vegetation.",
+    sources: [
+      { title: "Enga Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-eg.html" },
+    ],
+  },
+  "PG-ESW": {
+    description:
+      "Quartered red and green, with a yellow bird of paradise on the red and, on the green, a haus tambaran " +
+      "(spirit house), crocodile, shark, kundu and garamut drums, a spear and a lime pot. The bird of paradise " +
+      "recalls the national flag; the haus tambaran represents the hill and plains people, the crocodile the " +
+      "river people and the shark the coast people, while the drums, spear and lime pot stand for culture.",
+    sources: [
+      { title: "East Sepik Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-es.html" },
+    ],
+  },
+  "PG-GPK": {
+    description:
+      "A blue field with two crocodiles flanking a central disc: a white seagull over red above the Southern " +
+      "Cross over black. The crocodiles represent the province’s rivers, the seagull its people and the " +
+      "Southern Cross its five original districts.",
+    sources: [
+      { title: "Gulf Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-gu.html" },
+    ],
+  },
+  "PG-HLA": {
+    description:
+      "Horizontal yellow, green and black stripes bearing a traditional Hela hat on the green, a red bird of " +
+      "paradise on the yellow, and five white stars in a crescent on the black. The bird of paradise stands " +
+      "for Papua New Guinea; the four larger stars represent the sons and the small star the daughter of Hela " +
+      "(Hewa), the ancestor from whom, by oral tradition, the Huli descend.",
+    sources: [
+      { title: "Hela Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-he.html" },
+    ],
+  },
+  "PG-JWK": {
+    description:
+      "Dark green over gold, divided by a white diagonal stripe, bearing a bird of paradise, a gerupeng " +
+      "(traditional headdress), a kundu drum and spear, and four stars. The bird of paradise shows Jiwaka is " +
+      "part of PNG; the gerupeng is the province’s own emblem; the kundu and spear stand for Highlands " +
+      "identity; the four stars for the Jimi, North Waghi, South Waghi and Kambia peoples; green for the " +
+      "province’s forests and resources, gold for its fertile land and the white stripe for its rivers.",
+    sources: [
+      { title: "Jiwaka Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-ji.html" },
+    ],
+  },
+  "PG-MBA": {
+    description:
+      "Green and white stripes at the hoist and a square divided into blue and red triangles bearing a golden " +
+      "star. Green stands for plants, white for beaches, blue for the sea and red for festivals; the star " +
+      "represents the Eastern Star (a seafarer’s guide) and the Christian missionaries.",
+    sources: [
+      { title: "Milne Bay Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-mb.html" },
+    ],
+  },
+  "PG-MPL": {
+    description:
+      "Three horizontal stripes — green, yellow and blue — bearing a white bird of paradise, white pig’s " +
+      "tusks, a kundu drum and spears. Green is for vegetation, yellow for the Markham Valley and blue for the " +
+      "sea; the bird of paradise stands for animal life, the pig’s tusks for traditional exchange, the drum " +
+      "for festivals and the spears for traditional warfare.",
+    sources: [
+      { title: "Morobe Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-mo.html" },
+    ],
+  },
+  "PG-MPM": {
+    description:
+      "Red, yellow and black horizontal stripes recalling the national flag, with a white canton bearing a " +
+      "memorial to the WWII coast-watchers, flanked by coconut-palm branches and a slit drum, and six white " +
+      "stars. The palm branches stand for agriculture, the slit drum for tradition and the six stars for the " +
+      "six districts.",
+    sources: [
+      { title: "Madang Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-md.html" },
+    ],
+  },
+  "PG-MRL": {
+    description:
+      "Brown and blue triangles bearing a yellow Manus friarbird (the “Chauka”) and five green snails. Brown " +
+      "stands for the inland people and blue for the island people; the Chauka — which by tradition heralds " +
+      "dawn and dusk and warns of danger — and the snail are both unique to Manus, and the five snails " +
+      "represent its five regions.",
+    sources: [
+      { title: "Manus Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-ma.html" },
+    ],
+  },
+  "PG-NCD": {
+    description:
+      "A yellow field bearing a circular emblem with a lakatoi (the traditional canoe of the local Motu " +
+      "people) and the words “National Capital District Commission / NCDC”. The National Capital District is " +
+      "Port Moresby, the national capital.",
+    sources: [
+      { title: "National Capital District (Port Moresby) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-nc.html" },
+    ],
+  },
+  "PG-NIK": {
+    description:
+      "A blue and orange field bearing the Southern Cross on the blue and a paradise-drongo silhouette on the " +
+      "orange. Blue is the sea and the Southern Cross a guide to seafarers and marker of the seasons; the " +
+      "paradise drongo is a bird found only in New Ireland.",
+    sources: [
+      { title: "New Ireland Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-ni.html" },
+    ],
+  },
+  "PG-NPP": {
+    description:
+      "A green field bearing a gold strip of tapa (bark cloth) with red and black markings and a yellow Queen " +
+      "Alexandra’s birdwing butterfly. The tapa cloth represents culture, the butterfly (the world’s largest, " +
+      "native to the province) wildlife, and the green vegetation.",
+    sources: [
+      { title: "Oro (Northern) Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-or.html" },
+    ],
+  },
+  "PG-NSB": {
+    description:
+      "A blue field with a central black disc ringed by a jagged white circle and green, bearing a red-and-" +
+      "white upei (traditional hat). Blue is the Pacific Ocean, the green the rich island, the jagged white " +
+      "ring shell money, and the black disc the islanders’ skin colour, of which they are proud; the upei is " +
+      "worn by young men at the passage from adolescence to manhood.",
+    sources: [
+      { title: "Bougainville / North Solomons — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-ns.html" },
+    ],
+  },
+  "PG-SAN": {
+    description:
+      "Black and red triangles bearing a gold bird of paradise over the red, and six stars above a light-blue " +
+      "setting sun with yellow rays. The setting sun gives the province its name — sandaun is Tok Pisin for " +
+      "“sunset” (the west) — and the six stars stand for its six original districts (Aitape, Lumi, Nuku, " +
+      "Telefomin, Vanimo and Green River).",
+    sources: [
+      { title: "Sandaun (West Sepik) Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-sa.html" },
+    ],
+  },
+  "PG-SHM": {
+    description:
+      "Red and green triangles separated by a black stripe, bearing seven white stars, a yellow cassowary head " +
+      "and two yellow spears. The seven stars stand for the seven districts, the cassowary for traditional " +
+      "exchange and the spears for defence.",
+    sources: [
+      { title: "Southern Highlands Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-sh.html" },
+    ],
+  },
+  "PG-WBK": {
+    description:
+      "A blue field, for the sea, bearing a white, brown and gold conch shell beside the national flag. The " +
+      "conch shell represents communication.",
+    sources: [
+      { title: "West New Britain Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-wn.html" },
+    ],
+  },
+  "PG-WHM": {
+    description:
+      "A white stripe divides a green upper triangle from a black lower one, with the provincial emblem and " +
+      "stars. The white stands for peace, the green for vegetation and the black recalls the national flag; " +
+      "the stars represent the province’s three geographic regions.",
+    sources: [
+      { title: "Western Highlands Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-wh.html" },
+    ],
+  },
+  "PG-WPD": {
+    description:
+      "Black and red borders frame a gold square bearing the provincial emblem — a headdress of white crane " +
+      "wing feathers with a bow and arrows. The crane feathers represent unity and the bow and arrows " +
+      "tradition.",
+    sources: [
+      { title: "Western (Fly River) Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-we.html" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

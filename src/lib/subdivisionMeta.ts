@@ -3597,7 +3597,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "PG-CPM", name: "Central", typeLabel: "Province" },
     { code: "PG-NCD", name: "Port Moresby", typeLabel: "Province" },
     { code: "PG-GPK", name: "Gulf", typeLabel: "Province" },
-    { code: "PG-NSB", name: "of Bougainville", typeLabel: "Province" },
+    { code: "PG-NSB", name: "Bougainville", typeLabel: "Province" },
     { code: "PG-WBK", name: "West New Britain", typeLabel: "Province" },
     { code: "PG-EBR", name: "East New Britain", typeLabel: "Province" },
     { code: "PG-NIK", name: "New Ireland", typeLabel: "Province" },
