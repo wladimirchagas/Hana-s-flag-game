@@ -253,7 +253,6 @@ PA-1 PA-10 PA-2 PA-3 PA-4 PA-5 PA-6 PA-7 PA-9 PA-EM PA-KY PA-NB PA-NT
 # ME (municipal arms image-only) — 12 codes
 ME-06 ME-08 ME-11 ME-13 ME-14 ME-15 ME-16 ME-17 ME-18 ME-19 ME-20 ME-21
 # SB (provincial flags image-only) — 10 codes
-SB-CE SB-CH SB-CT SB-GU SB-IS SB-MK SB-ML SB-RB SB-TE SB-WE
 # KG (oblast emblems image-only) — 8 codes
 KG-B KG-C KG-GB KG-J KG-N KG-O KG-T KG-Y
 # AD (parish arms image-only) — 7 codes
