@@ -60,30 +60,14 @@ ES-VI
 ES-Z
 ES-ZA
 VE-W
-EC-A
-EC-B
-EC-C
-EC-D
-EC-E
-EC-F
-EC-G
-EC-H
-EC-I
-EC-L
-EC-M
-EC-N
-EC-O
-EC-P
-EC-R
-EC-S
-EC-SD
-EC-SE
-EC-T
-EC-U
-EC-W
-EC-X
-EC-Y
-EC-Z
+# EC provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/ec-X.html;
+#   FOTW uses one-letter codes, e.g. Orellana=ec-v, Cotopaxi=ec-x, Santo Domingo=ec-k, Santa Elena=ec-j).
+#   FOTW documents per-element symbolism for Orellana (EC-D), Esmeraldas (EC-E), Cañar (EC-F),
+#   Imbabura (EC-I), Manabí (EC-M), Pichincha (EC-P), Santo Domingo (EC-SD), Santa Elena (EC-SE),
+#   Tungurahua (EC-T), Cotopaxi (EC-X), Pastaza (EC-Y) and Zamora-Chinchipe (EC-Z) — all now sourced in
+#   flagMeanings.ts. The provinces below have a FOTW page with only the flag/arms image and NO stated
+#   per-element meaning — genuine walls.
+EC-A EC-B EC-C EC-G EC-H EC-L EC-N EC-O EC-R EC-S EC-U EC-W
 BO-B
 BO-C
 BO-H
