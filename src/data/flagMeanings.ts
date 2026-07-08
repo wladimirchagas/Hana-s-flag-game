@@ -10134,6 +10134,131 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "UZ-TK": {
+    description:
+      "A white field bearing the round arms of Tashkent city in the centre: a dark-blue disc with a blue " +
+      "arch in gold collars, snow-capped mountains and a golden flat-bread (non) above them, a plane tree " +
+      "whose trunk is encircled by two white rivers, orange grapes and flowers, and the gold motto “Kuch " +
+      "adolatdadir” (“Strength is in justice”) with the city name on an arched ribbon. The flat-bread, the " +
+      "grapes and the harvest stand for agriculture, the land and labour; the snow-capped peaks and the " +
+      "plane tree for the nature of Tashkent.",
+    sources: [
+      { title: "Tashkent City (Uzbekistan) — Flags of the World", url: "https://crwflags.com/fotw/flags/uz-tashk.html" },
+    ],
+  },
+
+  "PY-5": {
+    description:
+      "The national colours — red, white and blue horizontal stripes — with five green stars across the " +
+      "centre, the middle star larger than the rest. The five stars are said to refer to Caaguazú being " +
+      "the fifth department in Paraguay's territorial order.",
+    sources: [
+      { title: "Caaguazú (Paraguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/py-05.html" },
+    ],
+  },
+
+  "PY-7": {
+    description:
+      "Three horizontal stripes — green, white and red — the white the broadest. Green is hope and the " +
+      "department's farming wealth (soy, wheat, rice and forests) that make Itapúa a breadbasket; the " +
+      "wide white stripe is peace and the people's industrious, peaceable spirit; red is labour and the " +
+      "red earth, the strength of a people built through work.",
+    sources: [
+      { title: "Itapúa (Paraguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/py-07.html" },
+    ],
+  },
+
+  "PY-11": {
+    description:
+      "The national colours — red, white and blue — charged with green stars. Red stands for justice, " +
+      "white for peace and blue for freedom; the stars represent the department's nineteen municipalities.",
+    sources: [
+      { title: "Central (Paraguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/py-11.html" },
+    ],
+  },
+
+  "PY-ASU": {
+    description:
+      "Red bands with a white central stripe bearing the city's coat of arms. The red recalls the field " +
+      "of the Spanish royal arms on the colonial banner of Asunción's Cabildo (city hall); the arms carry " +
+      "the Virgin of the Assumption, Saint Blas, a castle and supporters reflecting the city's Spanish " +
+      "colonial heritage.",
+    sources: [
+      { title: "Asunción City (Paraguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/py-as.html" },
+    ],
+  },
+
+  "NI-MT": {
+    description:
+      "Charged with the department arms and the motto “La Perla del Septentrión” (the Pearl of the " +
+      "North). Blue recalls Nicaragua's national colours and green the Matagalpa mountains; the white band " +
+      "is peace and carries the department's outline with maize and coffee, its principal crops. In the " +
+      "arms, yellow marks Matagalpa as a Catholic city, ten roundels stand for the town's first ten " +
+      "houses, and a loom recalls the region's indigenous weaving.",
+    sources: [
+      { title: "Matagalpa (Nicaragua) — Flags of the World", url: "https://crwflags.com/fotw/flags/ni-mt.html" },
+    ],
+  },
+
+  "SV-CA": {
+    description:
+      "A field divided blue and red by a narrow white S-shaped band. The S is the initial of Sensuntepeque, " +
+      "the department's capital, and its winding form stands for the ideal of peace.",
+    sources: [
+      { title: "Cabañas (El Salvador) — Flags of the World", url: "https://crwflags.com/fotw/flags/sv-ca.html" },
+    ],
+  },
+
+  "SV-CH": {
+    description:
+      "Three horizontal stripes — blue, white and green — the department name in gold on the white, and a " +
+      "white plough on the green. Blue is the sky and El Salvador, white is peace, and green the mountains " +
+      "and crops; the plough marks Chalatenango as a farming region.",
+    sources: [
+      { title: "Chalatenango (El Salvador) — Flags of the World", url: "https://crwflags.com/fotw/flags/sv-ch.html" },
+    ],
+  },
+
+  "SV-SM": {
+    description:
+      "Three horizontal stripes — red, white and blue — with the department emblem in the centre. Red is " +
+      "the brotherly love of the people of San Miguel, white the wish for a firm and lasting peace, and " +
+      "blue the liberty inherited from their ancestors.",
+    sources: [
+      { title: "San Miguel (El Salvador) — Flags of the World", url: "https://crwflags.com/fotw/flags/sv-sm.html" },
+    ],
+  },
+
+  "SV-SA": {
+    description:
+      "Thirteen blue and white stripes with coffee branches laid out as a laurel wreath. The thirteen " +
+      "stripes stand for the municipalities that make up the department, and the coffee branches for its " +
+      "wealth and principal crop.",
+    sources: [
+      { title: "Santa Ana (El Salvador) — Flags of the World", url: "https://crwflags.com/fotw/flags/sv-sa.html" },
+    ],
+  },
+
+  "SV-SO": {
+    description:
+      "A green, white and blue flag with the department arms. Green stands for Sonsonate's many fields, " +
+      "while the white and blue are in veneration of the national flag.",
+    sources: [
+      { title: "Sonsonate (El Salvador) — Flags of the World", url: "https://crwflags.com/fotw/flags/sv-so.html" },
+    ],
+  },
+
+  "SV-US": {
+    description:
+      "A blue, white and green flag scattered with yellow stars. Blue is the sky and the sea that washes " +
+      "the department, white is peace and harmony, and green the fertility of the soil; the twenty-three " +
+      "stars are its municipalities — one large star for the capital and three medium stars for the three " +
+      "founding municipalities.",
+    sources: [
+      { title: "Usulután (El Salvador) — Flags of the World", url: "https://crwflags.com/fotw/flags/sv-us.html" },
+    ],
+  },
+
   "FR-01": {
     description:
       "The department arms as a banner: a shield quartered for the four historic lands that make up the " +
