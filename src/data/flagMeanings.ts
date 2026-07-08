@@ -12908,6 +12908,90 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Dire Dawa Administrative Council — Flags of the World", url: "https://www.crwflags.com/fotw/flags/et-dd.html" },
     ],
   },
+
+  // ── Solomon Islands provinces ──────────────────────────────────────────────
+  // Designs and (where documented) symbolism from Flags of the World (FOTW).
+  "SB-CE": {
+    description:
+      "A dark-blue field, for the encircling Pacific, with six white six-pointed stars in the canton for the " +
+      "province’s parishes (Aeaun, Mbanika, Nggela, Russell, Savo and Tulagi) and, in the fly, an oval emblem " +
+      "showing a lagoon with two palm-clad islands.",
+    sources: [
+      { title: "Central Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-ct.html" },
+    ],
+  },
+  "SB-CH": {
+    description:
+      "Horizontal blue, yellow, green, red and black stripes bearing white stars and a white disc with a black " +
+      "Kuvojo (the Choiseul crested pigeon, a bird endemic to the island and now presumed extinct). Blue " +
+      "stands for the Pacific, yellow for the land of Choiseul, green for its flora, red for its fauna and " +
+      "black for the Melanesian people; the stars represent the island’s four church districts.",
+    sources: [
+      { title: "Choiseul Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-ch.html" },
+    ],
+  },
+  "SB-GU": {
+    description:
+      "A brown field bearing a central emblem with a white zigzag band and a black eagle. The island’s name " +
+      "was given by the Spanish explorer Álvaro de Mendaña after his home town of Guadalcanal in Spain.",
+    sources: [
+      { title: "Guadalcanal Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-gu.html" },
+    ],
+  },
+  "SB-IS": {
+    description:
+      "A yellow and green field with a hoist triangle, bearing a blue disc that contains an axe.",
+    sources: [
+      { title: "Isabel Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-is.html" },
+    ],
+  },
+  "SB-MK": {
+    description:
+      "Horizontal blue, white and red stripes with the national flag in the upper hoist canton and, where the " +
+      "white stripes meet, a yellow disc bearing an urn and seven purple stars.",
+    sources: [
+      { title: "Makira and Ulawa Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-mk.html" },
+    ],
+  },
+  "SB-ML": {
+    description:
+      "A red, white and blue horizontal tricolour with the national flag in the canton and, in the fly, an " +
+      "orange-bordered white disc bearing a flying eagle that clutches a sword.",
+    sources: [
+      { title: "Malaita Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-ml.html" },
+    ],
+  },
+  "SB-RB": {
+    description:
+      "Three vertical stripes of light blue, white and light blue, with a black naval crown of three pirogues " +
+      "(outrigger canoes) on the white. The light blue stands for the Pacific and Lake Te Nggano, and the " +
+      "white for peace between the province’s Polynesian people and the wider Melanesian Solomon Islands.",
+    sources: [
+      { title: "Rennell and Bellona Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-rb.html" },
+    ],
+  },
+  "SB-TE": {
+    description:
+      "A red field with the national flag in the canton and two white five-pointed stars in the fly.",
+    sources: [
+      { title: "Temotu Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-te.html" },
+    ],
+  },
+  "SB-WE": {
+    description:
+      "A field divided by a diagonal wave into black above and green below.",
+    sources: [
+      { title: "Western Province — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-we.html" },
+    ],
+  },
+  "SB-CT": {
+    description:
+      "A white field bearing the seal of the Honiara City Council — green, yellow and green bars with a white " +
+      "star, ringed by the council’s name — for the national capital.",
+    sources: [
+      { title: "Honiara — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-honia.html" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
