@@ -12493,6 +12493,105 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Venezia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Venezia" },
     ],
   },
+
+  // ── South Sudan states ─────────────────────────────────────────────────────
+  // Designs from the official state flags and Flags of the World (FOTW). Only
+  // Eastern Equatoria's colours/emblem carry a documented meaning; for the other
+  // states the emblem (an animal or resource) is described as depicted — no
+  // symbolic meaning is asserted beyond what the source states.
+  "SS-EC": {
+    description:
+      "A green field bearing a white disc that contains a black rhinoceros — the state emblem — with " +
+      "“CENTRAL EQUATORIA” arched above and “STATE” below. Central Equatoria is the state surrounding " +
+      "the national capital, Juba.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+    ],
+  },
+  "SS-EE": {
+    description:
+      "Four horizontal stripes of yellow, black and red charged with a green oval that bears a cheetah. " +
+      "Yellow stands for the state’s mineral resources, black for its African inhabitants and red for the " +
+      "blood shed in the liberation struggle; the green oval represents vegetation and agriculture, and the " +
+      "cheetah the pace of the state’s development.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+    ],
+  },
+  "SS-EW": {
+    description:
+      "A green field bearing a green disc charged with a pineapple, the state emblem. Western Equatoria, in " +
+      "South Sudan’s fertile southern “green belt”, is one of the country’s main crop- and fruit-growing " +
+      "regions.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+      { title: "Western Equatoria — Wikipedia", url: "https://en.wikipedia.org/wiki/Western_Equatoria" },
+    ],
+  },
+  "SS-JG": {
+    description:
+      "A white field bearing a roundel in which a white long-horned ox stands on green ground beneath a blue " +
+      "sky, with a “JONGLEI STATE” scroll below. Cattle are central to the pastoral life of Jonglei’s Dinka, " +
+      "Nuer and Murle communities.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+      { title: "Jonglei — Wikipedia", url: "https://en.wikipedia.org/wiki/Jonglei" },
+    ],
+  },
+  "SS-LK": {
+    description:
+      "A light-blue field bearing a white disc that shows a shoebill standing in wetland, with a “LAKES " +
+      "STATE” scroll below. (An earlier version placed the emblem in a green roundel on a white field.)",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+    ],
+  },
+  "SS-BN": {
+    description:
+      "A white field bearing the state arms: a grey crowned crane standing in a pale-blue disc within a " +
+      "laurel wreath, over a yellow scroll carrying the state’s name in Arabic and a “NORTHERN BAHR EL " +
+      "GHAZAL STATE” banner.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+    ],
+  },
+  "SS-BW": {
+    description:
+      "A white field bearing a blue disc in which a golden sunburst surrounds a white inner circle showing a " +
+      "gazelle on green ground — the emblem of Western Bahr el Ghazal.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+    ],
+  },
+  "SS-NU": {
+    description:
+      "A blue field bearing a brown traditional shield charged with a crossed spear and arrow, over a white " +
+      "scroll with the state’s name in Arabic (أعالي النيل, “Upper Nile”). The state takes its name from the " +
+      "upper reaches of the White Nile that run through it.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+      { title: "Upper Nile (state) — Wikipedia", url: "https://en.wikipedia.org/wiki/Upper_Nile_(state)" },
+    ],
+  },
+  "SS-UY": {
+    description:
+      "A yellow field bearing a black oil-drilling derrick topped by a flame, flanked by a green wreath, above " +
+      "a “UNITY STATE” scroll. The derrick reflects Unity — home to the Bentiu oilfields — as one of South " +
+      "Sudan’s principal oil-producing states.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+      { title: "Unity (state) — Wikipedia", url: "https://en.wikipedia.org/wiki/Unity_(state)" },
+    ],
+  },
+  "SS-WR": {
+    description:
+      "A white field bearing the state arms: a white long-horned bull’s head above stylised water within a " +
+      "pale-blue disc and a laurel wreath, over a “WARRAP STATE” scroll. Warrap is a cattle-herding region of " +
+      "the Bahr el Ghazal.",
+    sources: [
+      { title: "State and County flags of South Sudan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ss-state.html" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

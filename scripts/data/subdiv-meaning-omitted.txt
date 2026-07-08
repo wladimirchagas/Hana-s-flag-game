@@ -296,7 +296,6 @@ AL-01 AL-02 AL-03 AL-04 AL-05 AL-06 AL-07 AL-08 AL-09 AL-10 AL-11 AL-12
 # DO (province flags image-only (es.wikipedia)) — 12 codes
 DO-02 DO-05 DO-09 DO-10 DO-13 DO-15 DO-18 DO-23 DO-24 DO-28 DO-31 DO-32
 # SS (state flags image-only (en.wikipedia)) — 10 codes
-SS-BN SS-BW SS-EC SS-EE SS-EW SS-JG SS-LK SS-NU SS-UY SS-WR
 # ZM (provincial flags image-only (en.wikipedia)) — 10 codes
 ZM-01 ZM-02 ZM-03 ZM-04 ZM-05 ZM-06 ZM-07 ZM-08 ZM-09 ZM-10
 # GA (provincial flags image-only (fr/en.wikipedia)) — 8 codes
