@@ -218,9 +218,6 @@ HU-GY HU-KM HU-SD HU-SF HU-NK HU-SK HU-TB
 # not heraldic flags — no sourceable per-element symbolism. Omitted rather than fabricate.
 DK-81 DK-82 DK-83 DK-84 DK-85
 
-# Uzbekistan: Karakalpakstan (UZ-QR) flag is documented (sourced). Tashkent (UZ-TK) flag is
-# image-only on en/ru.wikipedia — omitted.
-UZ-TK
 
 # ===== Confirmed documentation walls — flags image-only on reachable Wikipedias, no
 # reachable per-element symbolism. Investigated across a representative sample per country;
@@ -281,17 +278,29 @@ PE-AMA PE-ANC PE-APU PE-ARE PE-AYA PE-CAJ PE-CAL PE-CUS PE-HUC PE-HUV PE-ICA PE-
 # PG (provincial flags image-only (en.wikipedia)) — 22 codes
 # TW (city/county logos, no per-element symbolism (en/zh.wikipedia)) — 20 codes
 TW-CHA TW-CYI TW-CYQ TW-HSQ TW-HSZ TW-HUA TW-ILA TW-KEE TW-KHH TW-KIN TW-MIA TW-NAN TW-PEN TW-PIF TW-TAO TW-TNN TW-TPE TW-TTT TW-TXG TW-YUN
-# PY (department flags image-only (es.wikipedia)) — 18 codes
-PY-1 PY-10 PY-11 PY-12 PY-13 PY-14 PY-15 PY-16 PY-19 PY-2 PY-3 PY-4 PY-5 PY-6 PY-7 PY-8 PY-9 PY-ASU
-# NI (department flags image-only (es.wikipedia)) — 16 codes
-NI-AN NI-AS NI-BO NI-CA NI-CI NI-CO NI-ES NI-GR NI-LE NI-MD NI-MN NI-MS NI-MT NI-NS NI-RI NI-SJ
+# PY departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/py-NN.html).
+#   FOTW documents per-element symbolism for Caaguazú (PY-5), Itapúa (PY-7), Central (PY-11) and
+#   Asunción (PY-ASU) — all now sourced in flagMeanings.ts. The remaining departments below have a
+#   FOTW page that shows only the flag/arms with NO per-element symbolism (many are literally
+#   captioned "a flag") — genuine walls. FOTW numbers by official department number, so app PY-19
+#   (Boquerón)=fotw py-16 and app PY-16 (Alto Paraguay)=fotw py-17; both checked, no symbolism.
+PY-1 PY-10 PY-12 PY-13 PY-14 PY-15 PY-16 PY-19 PY-2 PY-3 PY-4 PY-6 PY-8 PY-9
+# NI departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/ni-XX.html,
+#   autonomous regions ni-zn/ni-zs). FOTW documents per-element symbolism only for Matagalpa (NI-MT,
+#   now sourced in flagMeanings.ts). Every other department/region page shows only the flag or arms
+#   image with NO per-element symbolism (most are municipality directories) — genuine walls.
+NI-AN NI-AS NI-BO NI-CA NI-CI NI-CO NI-ES NI-GR NI-LE NI-MD NI-MN NI-MS NI-NS NI-RI NI-SJ
 # SD (state flags image-only (en.wikipedia)) — 16 codes
 #   Re-verified 2026-07 against FOTW (sd-.html): most states are a generic "state emblem
 #   on a green/white field" with the emblem's content undescribed, and several states are
 #   not covered at all; only a couple have any describable emblem. Confirmed wall.
 SD-DE SD-DN SD-DS SD-DW SD-GD SD-GK SD-GZ SD-KA SD-KH SD-KS SD-NB SD-NO SD-NR SD-NW SD-RS SD-SI
-# SV (department flags image-only (es.wikipedia)) — 14 codes
-SV-AH SV-CA SV-CH SV-CU SV-LI SV-MO SV-PA SV-SA SV-SM SV-SO SV-SS SV-SV SV-UN SV-US
+# SV departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/sv-XX.html).
+#   FOTW documents per-element symbolism for Cabañas (SV-CA), Chalatenango (SV-CH), San Miguel (SV-SM),
+#   Santa Ana (SV-SA), Sonsonate (SV-SO) and Usulután (SV-US) — all now sourced in flagMeanings.ts.
+#   The remaining departments below have a FOTW page showing only the flag image with NO per-element
+#   symbolism — genuine walls.
+SV-AH SV-CU SV-LI SV-MO SV-PA SV-SS SV-SV SV-UN
 # AL (county flags/logos image-only (en/sq.wikipedia)) — 12 codes
 AL-01 AL-02 AL-03 AL-04 AL-05 AL-06 AL-07 AL-08 AL-09 AL-10 AL-11 AL-12
 # DO (province flags image-only (es.wikipedia)) — 12 codes
