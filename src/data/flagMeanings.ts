@@ -6995,6 +6995,125 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "EC-D": {
+    description:
+      "Horizontal white, green and yellow with a black vertical stripe at the hoist and four stars. White " +
+      "is the peaceful Amazonian people, green the biodiversity of the rainforest, yellow the province's " +
+      "gold, and the black stripe the oil drawn from its soil; the four stars are its cantons.",
+    sources: [
+      { title: "Orellana (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-v.html" },
+    ],
+  },
+
+  "EC-E": {
+    description:
+      "A bicolour whose green stripe stands for the province's name — Esmeraldas means “emeralds”.",
+    sources: [
+      { title: "Esmeraldas (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-e.html" },
+    ],
+  },
+
+  "EC-F": {
+    description:
+      "Blue, yellow and red stripes with the arms on the yellow. Blue is the loftiness of the province's " +
+      "ideals, yellow its farming and mineral wealth, and red the enthusiasm and faith of its people. In " +
+      "the arms a moon recalls the Cañari ancestral deity, wheat and laurel its farming, a capulí tree " +
+      "love of homeland, a torch its aspirations, and the stars its cantons.",
+    sources: [
+      { title: "Cañar (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-f.html" },
+    ],
+  },
+
+  "EC-I": {
+    description:
+      "Red, white and green stripes with a blue triangle, usually charged with the arms. In the arms four " +
+      "stars are the province's four cantons, Mount Imbabura the loftiness of its people's thought, a lake " +
+      "the province's scenery, a cornucopia its crops, and laurel and olive branches its triumph and peace.",
+    sources: [
+      { title: "Imbabura (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-i.html" },
+    ],
+  },
+
+  "EC-M": {
+    description:
+      "Green, white and red with a red triangle and stars. Green is the fertility of the Manabí earth, red " +
+      "the blood shed in the liberal deeds of General Eloy Alfaro, and white the peace and work the " +
+      "province longs for; the stars are its cantons.",
+    sources: [
+      { title: "Manabí (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-m.html" },
+    ],
+  },
+
+  "EC-P": {
+    description:
+      "A yellow and red vertical bicolour, usually charged with the arms. In the arms a sun with nine stars " +
+      "marks the nine cantons that first formed the province, two green heights the La Marca mountains " +
+      "where pre-Columbian peoples held the equinox festival, the Mitad del Mundo monument the 1736–37 " +
+      "geodesic mission that measured the Earth, and a condor Ecuador and valour.",
+    sources: [
+      { title: "Pichincha (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-p.html" },
+    ],
+  },
+
+  "EC-SD": {
+    description:
+      "A flag rich in Tsáchila symbolism: red is fire, ancestral blood and achiote dye; green the region's " +
+      "lush vegetation and hope; white light and purity; black austerity and the huito plant; yellow gold " +
+      "and wealth. A white saltire is the four roads in the pattern of the Tsáchila men's dress, a sun the " +
+      "people's heritage with rays for their water, and a hummingbird their multi-ethnic culture — its 17 " +
+      "feathers the 17 months their province took to be created.",
+    sources: [
+      { title: "Santo Domingo de los Tsáchilas (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-k.html" },
+    ],
+  },
+
+  "EC-SE": {
+    description:
+      "Green over golden-yellow with the arms and six stars. Green is the ocean that washes the coast, " +
+      "yellow the province's mineral resources, and the six stars its parishes.",
+    sources: [
+      { title: "Santa Elena (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-j.html" },
+    ],
+  },
+
+  "EC-T": {
+    description:
+      "Red, green and red stripes with the arms on the green. Red is the tenacious nature of the people " +
+      "and green the happiness of its fields; the arms show the Tungurahua volcano, the ford of the river " +
+      "Topo and cinnamon with cornucopias for the province's abundance as a gateway to Amazonia.",
+    sources: [
+      { title: "Tungurahua (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-t.html" },
+    ],
+  },
+
+  "EC-X": {
+    description:
+      "A red-over-blue flag with the province's arms, which carry the volcano Cotopaxi, seven towers for " +
+      "its seven cantons, wheat and a bull for its farming and herds, forest and water for its resources, " +
+      "and a pre-Hispanic sun.",
+    sources: [
+      { title: "Cotopaxi (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-x.html" },
+    ],
+  },
+
+  "EC-Y": {
+    description:
+      "Green and yellow quarters — green for the province's natural fertility, yellow for its resources in " +
+      "gold and water.",
+    sources: [
+      { title: "Pastaza (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-y.html" },
+    ],
+  },
+
+  "EC-Z": {
+    description:
+      "White, green and yellow stripes — white for peace among its people, green for the flora of the " +
+      "Amazon basin, and yellow for the province's gold.",
+    sources: [
+      { title: "Zamora-Chinchipe (Ecuador) — Flags of the World", url: "https://crwflags.com/fotw/flags/ec-z.html" },
+    ],
+  },
+
   "MX-BCS": {
     description:
       "A white field bearing the state coat of arms at the centre. Adopted 2017 as the state’s first " +
