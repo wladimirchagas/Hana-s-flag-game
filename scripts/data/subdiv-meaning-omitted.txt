@@ -280,7 +280,6 @@ MU-PL MU-RO
 # PE (regional flags image-only (es.wikipedia)) — 25 codes
 PE-AMA PE-ANC PE-APU PE-ARE PE-AYA PE-CAJ PE-CAL PE-CUS PE-HUC PE-HUV PE-ICA PE-JUN PE-LAL PE-LAM PE-LIM PE-LOR PE-MDD PE-MOQ PE-PAS PE-PIU PE-PUN PE-SAM PE-TAC PE-TUM PE-UCA
 # PG (provincial flags image-only (en.wikipedia)) — 22 codes
-PG-CPK PG-CPM PG-EBR PG-EHG PG-EPW PG-ESW PG-GPK PG-HLA PG-JWK PG-MBA PG-MPL PG-MPM PG-MRL PG-NCD PG-NIK PG-NPP PG-NSB PG-SAN PG-SHM PG-WBK PG-WHM PG-WPD
 # TW (city/county logos, no per-element symbolism (en/zh.wikipedia)) — 20 codes
 TW-CHA TW-CYI TW-CYQ TW-HSQ TW-HSZ TW-HUA TW-ILA TW-KEE TW-KHH TW-KIN TW-MIA TW-NAN TW-PEN TW-PIF TW-TAO TW-TNN TW-TPE TW-TTT TW-TXG TW-YUN
 # PY (department flags image-only (es.wikipedia)) — 18 codes
