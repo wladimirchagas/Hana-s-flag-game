@@ -1187,6 +1187,15 @@ context window until the sweep is complete or the user explicitly says stop.
    de X`) subdivisions were all wrongly omitted the same way: each has a **dedicated** arms/flag
    article, or a section within the subdivision article, carrying the blazon and symbolism. So a set is
    **only** a genuine wall after ALL of these come up empty:
+   - **Flags of the World (FOTW, `crwflags.com/fotw` / `fotw.info`) — the FIRST and most important
+     source to check, and the one most often skipped.** FOTW carries a per-subdivision flag page for
+     most of the world (e.g. `lr-ni.html`, `za-nc.html`, `pg-en.html`, `et-am.html`) with the design AND
+     documented symbolism that en.wikipedia usually omits. **"Image-only on en.wikipedia" is NEVER a
+     sufficient basis to omit a flag — you MUST check FOTW first.** The reference failures this caused:
+     **Liberia's 15 county flags** (heraldic, quilt-tradition designs, every one on FOTW with symbolism)
+     and **South Africa's provincial arms** (registered with the SA Bureau of Heraldry, all on FOTW)
+     were BOTH batch-omitted as "image-only on Wikipedia" by agents who never opened FOTW — and a later
+     audit *repeated the miss by trusting those Wikipedia-only reasons instead of re-checking FOTW*.
    - the subdivision's own article on the **local-language** Wikipedia, in its heraldry/flag section
      (`Stemma`/`Simboli`/`Wappen`/`Vaakuna`/`Герб`/`Grb`/`Escudo`/`Bandera`/`Blason`/`Héraldique`/…);
    - the **dedicated** arms/flag article (`Coat of arms of X`, `Escudo de X`, `Bandera de X`,
@@ -1198,6 +1207,14 @@ context window until the sweep is complete or the user explicitly says stop.
    blazon lives only in an un-fetchable government gazette) is it a real wall. **Coats of arms are
    almost always sourceable via one of the above; treat any heraldic subdivision omitted without these
    checks as a bug to reverse.**
+
+   **3b. RE-VERIFY existing omissions — never trust a prior omission reason.** On every audit you MUST
+   independently re-check each already-omitted set against FOTW (3a), because past omissions were made
+   on the Wikipedia-only basis this rule now forbids. A reason that says only "image-only on
+   en.wikipedia" (no FOTW check) is presumed WRONG until re-verified. Every omission logged in
+   `scripts/data/subdiv-meaning-omitted.txt` MUST carry a reason that cites the FOTW re-verification
+   (name the `crwflags`/`fotw` page checked); a genuine wall is documented as "re-verified against FOTW:
+   still no reachable symbolism", never as "image-only on Wikipedia".
 4. **Checkpoint by merging, don't wait.** Accumulate a country (or a few) on the branch, run the
    checks, commit, push, open the PR, squash-merge it, reset the branch from `main`, and go straight to
    the next set — all without a confirmation round-trip, exactly as the PR-workflow rule already
@@ -1207,17 +1224,26 @@ context window until the sweep is complete or the user explicitly says stop.
    never stalling on a *permission* question — it never means skipping a mandated check.
 
 6. **Walls get closed, not reported.** For every remaining country that is a documentation wall,
-   confirm the image-only pattern across a representative sample of its codes, then append **all** of
-   that country's remaining codes to `scripts/data/subdiv-meaning-omitted.txt` with a one-line reason,
-   mark it in `scripts/data/sweep-claims.txt`, and move straight to the next country in the same turn.
-   Batch several wall-countries per PR to keep moving. The sweep is finished — and only then may you
-   report — when `node scripts/subdiv-remaining.mjs` shows `remaining:0`.
+   confirm the image-only pattern across a representative sample of its codes **after checking FOTW
+   (3a)**, then append **all** of that country's remaining codes to
+   `scripts/data/subdiv-meaning-omitted.txt` with a reason that **names the FOTW page(s) re-verified**,
+   and move straight to the next country in the same turn. Batch several wall-countries per PR.
 
-**Enforcement:** there is no automated check for this — it is a behavioural mandate. When reviewing a
-session, a turn that ended by asking the user whether to continue the subdivision sweep — **or that
-ended with a progress recap / "documentation frontier" report while `remaining` was still above 0** —
-instead of just continuing (sourcing documented sets, omission-logging wall sets) is a violation of
-this rule.
+7. **`remaining:0` does NOT mean the sweep is complete — the omission backlog must be clean too.**
+   `node scripts/subdiv-remaining.mjs` counts an omitted code as "done", so it reads `remaining:0` even
+   when omissions are unverified Wikipedia-only guesses. **The sweep is complete only when BOTH
+   `subdiv-remaining.mjs` shows `remaining:0` AND `npm run subdiv:audit-omissions` exits clean** (every
+   omission re-verified against FOTW). **NEVER tell the user the sweep is "complete"/"done" while
+   `npm run subdiv:audit-omissions` still reports Wikipedia-only or reasonless omissions.** Claiming
+   completion on `remaining:0` alone is exactly the over-claim that hid Liberia and South Africa.
+
+**Enforcement:** `scripts/audit-omitted-flag-reasons.mjs` (`npm run subdiv:audit-omissions`) fails while
+any omission was checked only against Wikipedia (or has no logged reason), listing each. It is the gate
+on any "sweep complete" claim; it is deliberately NOT in the build-gating `flags:check` (the pre-existing
+backlog would block unrelated work) — it is the audit's own tripwire. Beyond it this remains a
+behavioural mandate: a turn that ended by asking whether to continue the sweep, or with a progress
+recap while `subdiv-remaining` was above 0, **or that declared the sweep "complete" while
+`subdiv:audit-omissions` was still dirty**, is a violation of this rule.
 
 ## Token-efficient work — hard rule, do not override without approval
 

@@ -24,7 +24,8 @@
     "flags:aspect-ratios": "node scripts/build-flag-aspect-ratios.mjs",
     "flags:download": "node scripts/download-flags.mjs",
     "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs",
-    "cities:build": "node scripts/build-cities.mjs"
+    "cities:build": "node scripts/build-cities.mjs",
+    "subdiv:audit-omissions": "node scripts/audit-omitted-flag-reasons.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

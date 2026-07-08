@@ -12992,6 +12992,160 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Honiara — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sb-honia.html" },
     ],
   },
+
+  // ── Liberia counties ───────────────────────────────────────────────────────
+  // Liberia's county flags were introduced in 1965 under President Tubman; each
+  // bears the national flag in the canton, and their quilt-like designs carry
+  // documented symbolism. Designs and symbolism from Flags of the World (FOTW).
+  "LR-NI": {
+    description:
+      "The national flag in the canton with a central globe on bands of colour. The red, white and blue stand " +
+      "for valour, purity and fidelity; the globe represents Nimba County; the brown is for the county’s iron-" +
+      "ore deposits, the green for its forests and the light blue for the sky.",
+    sources: [
+      { title: "Nimba County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-ni.html" },
+    ],
+  },
+  "LR-GB": {
+    description:
+      "A very dark blue field with the national flag in the canton and four alternating dark-red and blue " +
+      "stripes in the fly. The dark blue stands for loyalty, and the four stripes for the four Grand Bassa men " +
+      "who signed Liberia’s Declaration of Independence.",
+    sources: [
+      { title: "Grand Bassa County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-gb.html" },
+    ],
+  },
+  "LR-GG": {
+    description:
+      "The national flag in the canton above a rising mountain on white and blue. The new county “rises like " +
+      "its namesake mountain”; the white stands for purity of heart and the blue for peace and prosperity.",
+    sources: [
+      { title: "Grand Gedeh County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-gg.html" },
+    ],
+  },
+  "LR-CM": {
+    description:
+      "A white field of peace and purity bearing the green outline of the county, with the national flag in " +
+      "the canton.",
+    sources: [
+      { title: "Grand Cape Mount County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-cm.html" },
+    ],
+  },
+  "LR-SI": {
+    description:
+      "A white field with a green cross behind the national flag in the canton. The white and green stand for " +
+      "purity and the county’s tropical forests.",
+    sources: [
+      { title: "Sinoe County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-si.html" },
+    ],
+  },
+  "LR-LO": {
+    description:
+      "The national flag in the canton with a central emblem of an arm holding a fagot (a bundle of sticks). " +
+      "The arm and fagot symbolise unity, across the county’s forests and the Lofa River.",
+    sources: [
+      { title: "Lofa County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-lo.html" },
+    ],
+  },
+  "LR-MY": {
+    description:
+      "Thirteen horizontal stripes with the national flag in the canton and an emblem of a tree and a " +
+      "lighthouse on a cliff. The design recalls the Republic of Maryland, which flew yellow stripes before it " +
+      "joined Liberia in 1857.",
+    sources: [
+      { title: "Maryland County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-my.html" },
+    ],
+  },
+  "LR-RI": {
+    description:
+      "A blue, white and blue horizontal triband with the national flag in the canton, the central white band " +
+      "bearing an orange sun, a green tree and a brown hut. The county was created in 1984 from part of Grand " +
+      "Bassa.",
+    sources: [
+      { title: "River Cess County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-ri.html" },
+    ],
+  },
+  "LR-BM": {
+    description:
+      "A purple field with the national flag in the canton and a light-blue roundel showing a brown mount with " +
+      "five green trees.",
+    sources: [
+      { title: "Bomi County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-bm.html" },
+    ],
+  },
+  "LR-MG": {
+    description:
+      "Green over red with the national flag in the canton and a roundel — blue over white over green — bearing " +
+      "a brown beehive and a white flower.",
+    sources: [
+      { title: "Margibi County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-mg.html" },
+    ],
+  },
+  "LR-GK": {
+    description:
+      "A white field with green and yellow bands at the hoist and fly and the national flag in the canton, " +
+      "bearing a brown tree with seven green leaves on a green base.",
+    sources: [
+      { title: "Grand Kru County — Flags of the World", url: "https://www.crwflags.com/fotw/flags/lr-gk.html" },
+    ],
+  },
+
+  // ── South Africa provinces ─────────────────────────────────────────────────
+  // The game shows each province's coat of arms (only Mpumalanga also has a
+  // distinct flag). Arms and symbolism registered with the South African Bureau
+  // of Heraldry; descriptions from Flags of the World (FOTW).
+  "ZA-EC": {
+    description:
+      "The provincial arms show three flowers springing from a single stem — a symbol of unity among the " +
+      "different peoples of the Eastern Cape.",
+    sources: [
+      { title: "Eastern Cape — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-ec.html" },
+    ],
+  },
+  "ZA-FS": {
+    description:
+      "The provincial arms feature a charging cheetah in pursuit of its prey — evoking the open plains of the " +
+      "Free State.",
+    sources: [
+      { title: "Free State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-fs.html" },
+    ],
+  },
+  "ZA-LP": {
+    description:
+      "The provincial arms stand on a black and green base and carry the motto “Peace, Unity and Prosperity”.",
+    sources: [
+      { title: "Limpopo — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-lp.html" },
+    ],
+  },
+  "ZA-MP": {
+    description:
+      "Mpumalanga (“the place where the sun rises”) is the one province with its own flag as well as arms. The " +
+      "arms have a green base with the Latin motto “Omnia Labor Vincit” (“Work conquers all”); the crest’s rays " +
+      "stand for both the rising sun and the peaks of the Drakensberg, with a Barberton daisy and black " +
+      "diamonds for the province’s coal, and two kudus as supporters; the shield’s gold-over-green division " +
+      "represents the Highveld escarpment above the Lowveld.",
+    sources: [
+      { title: "Mpumalanga — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-mp.html" },
+    ],
+  },
+  "ZA-NC": {
+    description:
+      "The provincial arms show a red-and-blue shield with a silver lozenge bearing a camelthorn tree and two " +
+      "golden daisies, supported by a gemsbok (oryx) and a kudu. The motto is in the ǀʼAuni (San) language of " +
+      "the Kalahari.",
+    sources: [
+      { title: "Northern Cape — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-nc.html" },
+    ],
+  },
+  "ZA-NW": {
+    description:
+      "The provincial arms show a red-and-blue shield with a green saltire bearing a calabash water-gourd, a " +
+      "crest of horns supporting a sunflower, and two sable antelopes as supporters. The motto “Kagiso le " +
+      "Tswelelopele” means “Peace and Progress”.",
+    sources: [
+      { title: "North West — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-nw.html" },
+    ],
+  },
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */
