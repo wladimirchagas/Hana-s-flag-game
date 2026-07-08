@@ -10123,6 +10123,99 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "PE-AMA": {
+    description:
+      "A red and white flag charged with a red triangle at the hoist and a green triangle at the fly. The " +
+      "red is a tribute to the martyrs who gave their lives for freedom and national sovereignty, the " +
+      "green stands for the region's Amazonian territory and a new dawn of hope, and the white for peace " +
+      "and the integration of its people.",
+    sources: [
+      { title: "Amazonas (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-z.html" },
+    ],
+  },
+
+  "PE-ARE": {
+    description:
+      "A garnet-red (grenado) field bearing the city's coat of arms. The arms were granted by Emperor " +
+      "Charles V and include a small banner lettered “Karlos” recalling the emperor.",
+    sources: [
+      { title: "Arequipa (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-3.html" },
+    ],
+  },
+
+  "PE-CAL": {
+    description:
+      "A light-blue field with the region's coat of arms. In the arms a golden castle tower recalls " +
+      "Callao's fortifications and a sun bears 28 rays; the motto reads “La fiel y generosa Ciudad del " +
+      "Callao, Asilo de las Leyes y de la Libertad” (the loyal and generous City of Callao, refuge of Law " +
+      "and Liberty). The blue is commonly understood as the sea of this coastal port, though not " +
+      "officially documented.",
+    sources: [
+      { title: "Callao (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-cl.html" },
+    ],
+  },
+
+  "PE-LAM": {
+    description:
+      "Yellow over red — the colours of the ancient Lambayeque culture — with the regional shield. In the " +
+      "shield, five blue waves stand for the sea and its wealth, an American carob tree for the region's " +
+      "natural resources, and a torch with the motto “Lucis gloriam et honoris” for honour and learning.",
+    sources: [
+      { title: "Lambayeque (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-q.html" },
+    ],
+  },
+
+  "PE-LIM": {
+    description:
+      "A white field — for integration and peace — bearing the region's emblem, a geometric design " +
+      "resembling the Andean cross that stands for union, fellowship and time. Its nine coloured shapes " +
+      "each represent one of the region's provinces.",
+    sources: [
+      { title: "Lima Region (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-l.html" },
+    ],
+  },
+
+  "PE-MDD": {
+    description:
+      "A green field crossed by a yellow diagonal stripe. Green is the region's lush vegetation and " +
+      "tropical forests teeming with life, and yellow its mineral wealth — the gold washed from the " +
+      "alluvial beds of its rivers.",
+    sources: [
+      { title: "Madre de Dios (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-d.html" },
+    ],
+  },
+
+  "PE-PAS": {
+    description:
+      "Three diagonal stripes — yellow, green and red — for the region's three provinces. Yellow is Pasco " +
+      "and its mining heritage (Pasco was named Peru's “Mining Capital” in 1960), green is Oxapampa, the " +
+      "region's lung and hope, and red is Daniel Carrión, for the blood its people shed fighting for the " +
+      "land.",
+    sources: [
+      { title: "Pasco (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-2.html" },
+    ],
+  },
+
+  "PE-PUN": {
+    description:
+      "A flag bearing a stepped chakana (Andean cross) in green and blue and a sun with thirteen rays for " +
+      "the thirteen provinces of Puno. Adopted through a regional contest in 2012.",
+    sources: [
+      { title: "Puno (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-7.html" },
+    ],
+  },
+
+  "PE-SAM": {
+    description:
+      "Wavy stripes of green, orange, light blue and white with the region's arms. Green is sustainable " +
+      "development and the department's geography, orange the youth of all ages and passion, light blue " +
+      "(celeste) social responsibility, and white the light of peace and hope; the wavy stripes stand for " +
+      "dynamism and freedom.",
+    sources: [
+      { title: "San Martín (Peru) — Flags of the World", url: "https://crwflags.com/fotw/flags/pe-o.html" },
+    ],
+  },
+
   "UZ-QR": {
     description:
       "The republic flag: blue, gold and green stripes edged with red, and on the blue a white crescent " +

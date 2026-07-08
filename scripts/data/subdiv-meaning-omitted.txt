@@ -273,8 +273,14 @@ MU-PL MU-RO
 # ===== Remaining countries closed as documentation walls (rule 6): flags image-only on
 # reachable Wikipedias, investigated across a representative sample per region; all remaining
 # codes logged as omitted rather than fabricated. =====
-# PE (regional flags image-only (es.wikipedia)) — 25 codes
-PE-AMA PE-ANC PE-APU PE-ARE PE-AYA PE-CAJ PE-CAL PE-CUS PE-HUC PE-HUV PE-ICA PE-JUN PE-LAL PE-LAM PE-LIM PE-LOR PE-MDD PE-MOQ PE-PAS PE-PIU PE-PUN PE-SAM PE-TAC PE-TUM PE-UCA
+# PE regions — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw, idiosyncratic
+#   filenames, e.g. Cusco=pe-x, Lima=pe-l, Callao=pe-cl). FOTW documents per-element symbolism for
+#   Amazonas (PE-AMA), Arequipa (PE-ARE), Callao (PE-CAL), Lambayeque (PE-LAM), Lima (PE-LIM),
+#   Madre de Dios (PE-MDD), Pasco (PE-PAS), Puno (PE-PUN) and San Martín (PE-SAM) — all now sourced in
+#   flagMeanings.ts. The remaining regions below are genuine walls: FOTW notes most Peruvian regions
+#   use a plain white flag with the arms or a logo and gives no per-element symbolism (Cusco, Ancash,
+#   Ayacucho, Tacna: "no information available").
+PE-ANC PE-APU PE-AYA PE-CAJ PE-CUS PE-HUC PE-HUV PE-ICA PE-JUN PE-LAL PE-LOR PE-MOQ PE-PIU PE-TAC PE-TUM PE-UCA
 # PG (provincial flags image-only (en.wikipedia)) — 22 codes
 # TW (city/county logos, no per-element symbolism (en/zh.wikipedia)) — 20 codes
 TW-CHA TW-CYI TW-CYQ TW-HSQ TW-HSZ TW-HUA TW-ILA TW-KEE TW-KHH TW-KIN TW-MIA TW-NAN TW-PEN TW-PIF TW-TAO TW-TNN TW-TPE TW-TTT TW-TXG TW-YUN
@@ -303,7 +309,11 @@ SD-DE SD-DN SD-DS SD-DW SD-GD SD-GK SD-GZ SD-KA SD-KH SD-KS SD-NB SD-NO SD-NR SD
 SV-AH SV-CU SV-LI SV-MO SV-PA SV-SS SV-SV SV-UN
 # AL (county flags/logos image-only (en/sq.wikipedia)) — 12 codes
 AL-01 AL-02 AL-03 AL-04 AL-05 AL-06 AL-07 AL-08 AL-09 AL-10 AL-11 AL-12
-# DO (province flags image-only (es.wikipedia)) — 12 codes
+# DO provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/do-NN.html).
+#   FOTW documents NO per-element symbolism for any Dominican province: the pages it has for these
+#   codes (Puerto Plata DO-18, San Pedro de Macorís DO-23) give only the colour layout with no meaning,
+#   and for several (Azua DO-02, Espaillat DO-09, Independencia DO-10, Santo Domingo DO-32) FOTW states
+#   "there is no known flag" at all. Genuine wall.
 DO-02 DO-05 DO-09 DO-10 DO-13 DO-15 DO-18 DO-23 DO-24 DO-28 DO-31 DO-32
 # SS (state flags image-only (en.wikipedia)) — 10 codes
 # ZM (provincial flags image-only (en.wikipedia)) — 10 codes
