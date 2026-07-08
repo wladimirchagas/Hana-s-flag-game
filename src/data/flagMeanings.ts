@@ -7087,6 +7087,114 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "MX-CMX": {
+    description:
+      "The city's coat of arms on a plain field (the state has no separate legislated flag). The arms, " +
+      "granted by royal decree in 1523, show a blue shield for the lake on which the city was founded, a " +
+      "golden castle approached by three stone bridges with a lion beside each, all bordered by ten green " +
+      "nopal (prickly-pear) pads recalling the city's Aztec origin.",
+    sources: [
+      { title: "Mexico City — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-cx.html" },
+    ],
+  },
+
+  "MX-COL": {
+    description:
+      "The state coat of arms on a white field. The shield bears the glyph of “Colliman” (from colli, " +
+      "hill or volcano, and ma, place), flanked by hibiscus and black indigo snakes; jaguars stand over " +
+      "sea-shells and waves and the Volcano of Colima rises below. The motto reads “El temple del brazo " +
+      "es vigor en la tierra” (the temper of the arm is vigour upon the land).",
+    sources: [
+      { title: "Colima — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-cl.html" },
+    ],
+  },
+
+  "MX-HID": {
+    description:
+      "The state coat of arms — designed in 1922 by the muralist Diego Rivera — on a white field. It " +
+      "celebrates Hidalgo's role in independence: the blue banner of the Virgin of Guadalupe that Padre " +
+      "Hidalgo raised, the Dolores bell rung to proclaim independence, a liberty cap for the freedom won " +
+      "in 1821, a war drum for the three great movements (Independence, Reform and Revolution), and " +
+      "mine-shaft openings for the state's mining.",
+    sources: [
+      { title: "Hidalgo — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-hg.html" },
+    ],
+  },
+
+  "MX-MEX": {
+    description:
+      "The state coat of arms on a white field, in three parts. Patria: the national eagle with the " +
+      "Xinantécatl volcano and the Pyramid of the Sun. Libertad: a cannon for the 1810 Battle of Monte de " +
+      "las Cruces. Trabajo y Cultura: corn, an open book and industrial tools, with sixteen bees for the " +
+      "state's judicial districts.",
+    sources: [
+      { title: "State of Mexico — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-em.html" },
+    ],
+  },
+
+  "MX-MIC": {
+    description:
+      "The state coat of arms on a white field. Its crest is the pre-Hispanic glyph for Michoacán, from " +
+      "the Nahuatl michin (fish) and can (place) — “the place of the fishermen”.",
+    sources: [
+      { title: "Michoacán — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-mi.html" },
+    ],
+  },
+
+  "MX-NLE": {
+    description:
+      "The state coat of arms on a white field. A lion stands for “Nuevo León” (New León, after León in " +
+      "Spain); the Cerro de la Silla (Saddle Hill) and Santa Catarina river of the capital Monterrey rise " +
+      "under a red dawn sky; the San Francisco monastery recalls the first Spanish settlement, the " +
+      "Fundidora steel-mill chimneys the state's industry, and bees its work ethic.",
+    sources: [
+      { title: "Nuevo León — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-nl.html" },
+    ],
+  },
+
+  "MX-PUE": {
+    description:
+      "The state coat of arms on a white field. A factory, river and cog-wheel stand for progress, a dam " +
+      "and power plant for electricity, an arm raising a rifle over fire for the 1910 Revolution, farmland " +
+      "for agriculture, the date “5 MAYO 1862” for the victory at the Battle of Puebla, and two feathered " +
+      "serpents (Quetzalcóatl) recalling the Toltec past.",
+    sources: [
+      { title: "Puebla — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-pu.html" },
+    ],
+  },
+
+  "MX-SLP": {
+    description:
+      "The state coat of arms on a white field: the hill of San Pedro on a field barred gold and silver " +
+      "for the wealth of its mines, with Saint Louis IX of France — the city's patron — at the summit. " +
+      "The “Potosí” in the name likens its mines to the rich silver of Potosí in Bolivia.",
+    sources: [
+      { title: "San Luis Potosí — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-si.html" },
+    ],
+  },
+
+  "MX-SON": {
+    description:
+      "The state coat of arms on a white field, quartered for Sonora's life and economy: a Yaqui dancing " +
+      "the Deer Dance for its indigenous tradition, a mine entrance with pick and shovel for mining, " +
+      "wheat and a sickle for farming, a cow's head for ranching, and the state's coast with a tuna for " +
+      "its fisheries.",
+    sources: [
+      { title: "Sonora — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-so.html" },
+    ],
+  },
+
+  "MX-TAM": {
+    description:
+      "The state coat of arms on a white field, quartered for Tamaulipas's economy: crops for its " +
+      "agriculture, the arms of the Count of Sierra Gorda who colonised the region, livestock and wildlife " +
+      "(bull, deer and goat), and a lower field gathering its industries — fishing, farming, energy and " +
+      "manufacturing.",
+    sources: [
+      { title: "Tamaulipas — Flags of the World", url: "https://crwflags.com/fotw/flags/mx-tm.html" },
+    ],
+  },
+
 
 
 

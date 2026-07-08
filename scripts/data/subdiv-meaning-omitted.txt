@@ -11,29 +11,13 @@ PT-04
 PT-05
 PT-06
 PT-07
-MX-AGU
-MX-BCN
-MX-CAM
-MX-CHH
-MX-CHP
-MX-CMX
-MX-COA
-MX-COL
-MX-HID
-MX-MEX
-MX-MIC
-MX-MOR
-MX-NAY
-MX-NLE
-MX-OAX
-MX-PUE
-MX-SIN
-MX-SLP
-MX-SON
-MX-TAB
-MX-TAM
-MX-VER
-MX-ZAC
+# MX states — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/mx-XX.html).
+#   Most Mexican states use the coat of arms on a plain white field as a de-facto flag. FOTW
+#   documents per-element arms symbolism for Mexico City (MX-CMX), Colima (MX-COL), Hidalgo (MX-HID),
+#   State of Mexico (MX-MEX), Michoacán (MX-MIC), Nuevo León (MX-NLE), Puebla (MX-PUE), San Luis Potosí
+#   (MX-SLP), Sonora (MX-SON) and Tamaulipas (MX-TAM) — all now sourced in flagMeanings.ts. The states
+#   below have a FOTW page that only shows/blazons the arms with NO stated per-element meaning — walls.
+MX-AGU MX-BCN MX-CAM MX-CHH MX-CHP MX-COA MX-MOR MX-NAY MX-OAX MX-SIN MX-TAB MX-VER MX-ZAC
 ES-A
 ES-AB
 ES-AL
