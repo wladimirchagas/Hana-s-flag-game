@@ -10768,6 +10768,157 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "UY-AR": {
+    description:
+      "Red, white and blue for the flag of José Gervasio Artigas, the revolutionary hero the department " +
+      "is named for. The displaced red triangle marks Artigas's border with two nations, Argentina and " +
+      "Brazil; the lower blue stripe is its waterways; and the oval stands for the wealth of its land, " +
+      "especially its agate stones.",
+    sources: [
+      { title: "Artigas (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-ar.html" },
+    ],
+  },
+
+  "UY-CO": {
+    description:
+      "A white flag with the department arms. In the blue chief the stars of the Southern Cross mark the " +
+      "region's place on the Río de la Plata; a golden wheat-sheaf recalls that here agriculture and " +
+      "civilisation first took root, its four ears the cardinal points; and a bee sits on the white.",
+    sources: [
+      { title: "Colonia (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-co.html" },
+    ],
+  },
+
+  "UY-DU": {
+    description:
+      "A blue flag with a large twelve-pointed star for the department's central position in the country " +
+      "(and its founding on 12 October 1821), ringed by eighteen smaller stars for Uruguay's other " +
+      "departments; a lamp within the star is light, energy and hope, and light-blue stripes are the " +
+      "rivers Yí and Negro.",
+    sources: [
+      { title: "Durazno (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-du.html" },
+    ],
+  },
+
+  "UY-FD": {
+    description:
+      "Red and white with the department arms. Red is strength and courage, white purity and liberty; the " +
+      "arms carry symbols of independence — a hand breaking chains, a rider for the Battle of Sarandí, and " +
+      "the Piedra Alta, the stone where Uruguay's independence was declared.",
+    sources: [
+      { title: "Florida (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-fd.html" },
+    ],
+  },
+
+  "UY-FS": {
+    description:
+      "Quartered red and sky-blue with the arms on a white oval within a golden cross. The cross recalls " +
+      "the Trinitarians who named the region; bolas stand for the fight for independence, cattle for " +
+      "ranching, wheat for farming, and the Gruta del Palacio cave for the department's prehistory. Motto: " +
+      "“Labor improba omnia vincit” (constant work conquers all).",
+    sources: [
+      { title: "Flores (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-fe.html" },
+    ],
+  },
+
+  "UY-LA": {
+    description:
+      "Three bands of red, white and blue for the flag of the Orientals led by Juan Antonio Lavalleja in " +
+      "the fight for independence, with a green triangle for the Cerro Arequita hill and, behind it, " +
+      "Uruguay's Sun of May.",
+    sources: [
+      { title: "Lavalleja (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-lv.html" },
+    ],
+  },
+
+  "UY-MA": {
+    description:
+      "A white flag with the historic arms of Maldonado (granted 1803): a whale for those once seen off " +
+      "its coast, a fortress for the town's founding as a military post, and an anchor for the colonists " +
+      "who crossed the ocean to settle there.",
+    sources: [
+      { title: "Maldonado (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-ma.html" },
+    ],
+  },
+
+  "UY-PA": {
+    description:
+      "Blue-white-blue bands with thin red stripes, from the “Flag of the League of Free Peoples” flown in " +
+      "Artigas's camp in 1815. On the white lies the mburucuyá (passion flower), its three pistils " +
+      "standing for the three historic defences of Paysandú.",
+    sources: [
+      { title: "Paysandú (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-pa.html" },
+    ],
+  },
+
+  "UY-RN": {
+    description:
+      "Blue-white-blue bands with, on the white, waves for the Uruguay River and life, an anchor for the " +
+      "port of Fray Bentos, a sun for the nation, and an ear of wheat for agriculture.",
+    sources: [
+      { title: "Río Negro (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-rn.html" },
+    ],
+  },
+
+  "UY-RO": {
+    description:
+      "A blue, red and white triband in the colours of the Artigas flag, with a battlemented white shield " +
+      "showing the Santa Teresa Fortress in gold and flanked by palms of the local environment; above it " +
+      "shines Uruguay's Sun of May, for Rocha as the easternmost department, where the sun first rises.",
+    sources: [
+      { title: "Rocha (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-ro.html" },
+    ],
+  },
+
+  "UY-RV": {
+    description:
+      "The department arms — a tree for the region's nature and the Cerro del Marco hill — over a red " +
+      "stripe lettered “RIVERA”, beside the nine blue and white stripes of the Uruguayan flag.",
+    sources: [
+      { title: "Rivera (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-ri.html" },
+    ],
+  },
+
+  "UY-SA": {
+    description:
+      "A flag bearing the department arms: a rising golden sun for the future, an anvil, hammer and bundle " +
+      "of rods for labour, the goddess Minerva for wisdom and prudence, and a waterfall for the city of " +
+      "Salto (whose name means “waterfall”), with olive and oak branches for peace and nobility and the " +
+      "motto “Trabajo – Sabiduría – Prudencia”.",
+    sources: [
+      { title: "Salto (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-st.html" },
+    ],
+  },
+
+  "UY-SJ": {
+    description:
+      "Red and blue Artiguist bands with forty white stars for the forty families that founded San José " +
+      "de Mayo, and Uruguay's Sun of May. Red is the blood shed for independence and blue the motherland's " +
+      "sky.",
+    sources: [
+      { title: "San José (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-sj.html" },
+    ],
+  },
+
+  "UY-SO": {
+    description:
+      "Blue, red and white bands in the colours of the Artigas flag, inscribed “Aquí nació la Patria” " +
+      "(here the fatherland was born) for the department's place in Uruguay's founding.",
+    sources: [
+      { title: "Soriano (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-so.html" },
+    ],
+  },
+
+  "UY-TT": {
+    description:
+      "A white flag with four blue waves for the department's rivers, a golden half-sun for its eastern " +
+      "position, a silver raven in flight for the Quebrada de los Cuervos ravine, and a zucaré plant in " +
+      "green and red for the native land.",
+    sources: [
+      { title: "Treinta y Tres (Uruguay) — Flags of the World", url: "https://crwflags.com/fotw/flags/uy-tt.html" },
+    ],
+  },
+
   "UZ-QR": {
     description:
       "The republic flag: blue, gold and green stripes edged with red, and on the blue a white crescent " +
