@@ -84,6 +84,11 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
     // "Autonomous Region of Bougainville"); its name is the former "North
     // Solomons". Use the current short name.
     "PG-NSB": "Bougainville"
+  },
+  "BR": {
+    // Natural Earth's name_en for BR-DF is the truncated "Federal" (from
+    // "Distrito Federal"). Correct it to the official Portuguese name.
+    "BR-DF": "Distrito Federal"
   }
 };
 

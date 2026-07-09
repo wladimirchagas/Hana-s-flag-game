@@ -566,7 +566,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "BR-RJ", name: "Rio de Janeiro", typeLabel: "State" },
     { code: "BR-SP", name: "São Paulo", typeLabel: "State" },
     { code: "BR-GO", name: "Goiás", typeLabel: "State" },
-    { code: "BR-DF", name: "Federal", typeLabel: "Federal District" },
+    { code: "BR-DF", name: "Distrito Federal", typeLabel: "Federal District" },
     { code: "BR-MG", name: "Minas Gerais", typeLabel: "State" },
     { code: "BR-TO", name: "Tocantins", typeLabel: "State" }
     ],
