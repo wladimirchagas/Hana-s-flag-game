@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { GOVERNMENT_TYPES } from "../lib/governmentTypes";
 import type { Country } from "../api/countries";
 
@@ -12,18 +11,16 @@ import type { Country } from "../api/countries";
  * visual consistency.
  *
  * Each row only renders when the underlying data is present, so a
- * partially-known entity still looks tidy.
+ * partially-known entity still looks tidy. The rows are ALWAYS visible —
+ * there is no collapse/disclosure (a hard rule: the fact-sheet is a
+ * reference, not something the user should have to expand).
  */
 
 export type ModernSummaryProps = {
   kind: "modern";
   country: Country;
-  /** When true, the fact rows are wrapped in a "Details" disclosure that
-   *  starts collapsed on narrow (≤900px) screens so the flag isn't pushed
-   *  below the fold. No rows are removed — they're one tap away. */
-  collapsible?: boolean;
-  /** Extra content rendered at the bottom of the fact list (inside the
-   *  "Details" disclosure when collapsible) — e.g. the National Anthem row. */
+  /** Extra content rendered at the bottom of the fact list — e.g. the
+   *  National Anthem row. */
   footer?: React.ReactNode;
 };
 
@@ -79,13 +76,7 @@ export function EntitySummary(props: EntitySummaryProps) {
     // bar at the top of the widget, and its continent/region moved here).
     if (c.continent) rows.push({ label: "Continent", value: c.continent });
     if (c.subregion) rows.push({ label: "Region", value: c.subregion });
-    return (
-      <SummaryList
-        rows={rows}
-        collapsible={props.collapsible}
-        footer={props.footer}
-      />
-    );
+    return <SummaryList rows={rows} footer={props.footer} />;
   }
 
   // Historical — sparser, with the curated note shown above the fact list.
@@ -105,59 +96,26 @@ export function EntitySummary(props: EntitySummaryProps) {
 
 function SummaryList({
   rows,
-  collapsible = false,
   footer,
 }: {
   rows: { label: string; value: React.ReactNode }[];
-  collapsible?: boolean;
   footer?: React.ReactNode;
 }) {
-  // Start collapsed only on narrow screens — on desktop the panel has room, so
-  // the fact sheet stays expanded exactly as before. SPA (no SSR), so reading
-  // matchMedia during the initial render is safe.
-  const [open, setOpen] = useState(() => {
-    if (!collapsible) return true;
-    try {
-      return !window.matchMedia("(max-width: 900px)").matches;
-    } catch {
-      return true;
-    }
-  });
-
   if (rows.length === 0 && !footer) return null;
 
-  const list = rows.length > 0 && (
-    <dl className="entity-summary">
-      {rows.map((r) => (
-        <div className="entity-summary__row" key={r.label}>
-          <dt className="entity-summary__label">{r.label}</dt>
-          <dd className="entity-summary__value">{r.value}</dd>
-        </div>
-      ))}
-    </dl>
-  );
-
-  if (!collapsible) {
-    return (
-      <>
-        {list}
-        {footer}
-      </>
-    );
-  }
-
   return (
-    <details
-      className="entity-summary__details"
-      open={open}
-      onToggle={(e) => setOpen(e.currentTarget.open)}
-    >
-      <summary className="entity-summary__summary">
-        <span>Details</span>
-        <span className="entity-summary__summary-count">{rows.length}</span>
-      </summary>
-      {list}
+    <>
+      {rows.length > 0 && (
+        <dl className="entity-summary">
+          {rows.map((r) => (
+            <div className="entity-summary__row" key={r.label}>
+              <dt className="entity-summary__label">{r.label}</dt>
+              <dd className="entity-summary__value">{r.value}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
       {footer}
-    </details>
+    </>
   );
 }
