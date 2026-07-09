@@ -6995,6 +6995,118 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "PA-1": {
+    description:
+      "Divided diagonally yellow over green, with the letter “B” and three white stars for the province's " +
+      "three districts. Designed in 1987.",
+    sources: [
+      { title: "Bocas del Toro (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-boc.html" },
+    ],
+  },
+
+  "PA-3": {
+    description:
+      "Light-blue, white and gold stripes with the provincial arms. Light-blue is the sea that bathes the " +
+      "coast, white the people's wish for peace and concord, and gold the province's resources; the arms " +
+      "carry a 15th-century caravel for Columbus's discovery and a phoenix rising from flames for the " +
+      "province's rebirth after it was destroyed in 1885 and 1915.",
+    sources: [
+      { title: "Colón (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-col.html" },
+    ],
+  },
+
+  "PA-4": {
+    description:
+      "Divided diagonally red over green with thirteen white stars in a ring for the province's thirteen " +
+      "districts. The red and green date from a brief 1965 independence movement that proclaimed a " +
+      "“Chiriquí republic”; an alternate version shapes the colour line as a mountain for the Cordillera " +
+      "de Talamanca.",
+    sources: [
+      { title: "Chiriquí (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-chiri.html" },
+    ],
+  },
+
+  "PA-6": {
+    description:
+      "Yellow and blue bands with the provincial map and seven blue stars in an arc for the province's " +
+      "seven districts — Chitré, Las Minas, Los Pozos, Ocú, Parita, Pesé and Santa María. Adopted 2013.",
+    sources: [
+      { title: "Herrera (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-her.html" },
+    ],
+  },
+
+  "PA-7": {
+    description:
+      "Orange, black and white with the province's name and seven stars for its seven districts — Guararé, " +
+      "Las Tablas, Los Santos, Macaracas, Pedasí, Pocrí and Tonosí. Adopted 2011.",
+    sources: [
+      { title: "Los Santos (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-los.html" },
+    ],
+  },
+
+  "PA-9": {
+    description:
+      "A blue flag with the province's map and twelve stars in a horseshoe for its twelve districts. The " +
+      "blue stands for the province's two coasts — Veraguas is the only Panamanian province reaching both " +
+      "the Atlantic and the Pacific.",
+    sources: [
+      { title: "Veraguas (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-ver.html" },
+    ],
+  },
+
+  "PA-10": {
+    description:
+      "A green triangle at the hoist for the province's fertile green mountains and its people's hope, " +
+      "yellow stripes for the sun and a white stripe for peace and unity, with five stars for its " +
+      "districts — Arraiján, La Chorrera, Capira, Chame and San Carlos. Adopted 2015.",
+    sources: [
+      { title: "Panamá Oeste (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-po.html" },
+    ],
+  },
+
+  "PA-EM": {
+    description:
+      "Green, yellow and blue stripes: green for the comarca's natural wealth and abundant wildlife, " +
+      "yellow for the people's customs and traditions handed to each new generation, and blue for the " +
+      "great network of rivers that runs through their territory.",
+    sources: [
+      { title: "Emberá-Wounaan (Panama) — Flags of the World", url: "https://crwflags.com/fotw/flags/pa-emb.html" },
+    ],
+  },
+
+  "CR-G": {
+    description:
+      "Blue, white and green stripes with a red triangle at the hoist. The red triangle is the heart of " +
+      "the Guanacastecans — their warmth, courage and joy; blue is the clear sky, white the province's " +
+      "fertility and peace, and green the Guanacaste tree that names it, with its pastures, crops and the " +
+      "work of farmer and cattleman. Made in 1974 for the 150th anniversary of Nicoya's annexation to " +
+      "Costa Rica.",
+    sources: [
+      { title: "Guanacaste (Costa Rica) — Flags of the World", url: "https://crwflags.com/fotw/flags/cr-g.html" },
+    ],
+  },
+
+  "CR-P": {
+    description:
+      "A flag of red, white, blue, green and orange with the province's emblem. Red is the mixed heritage " +
+      "of its people, white peace and fraternity, blue the Pacific coast, green its rich natural resources " +
+      "and orange the dynamism of the Puntarenians; the emblem's eleven rays are the province's eleven " +
+      "cantons and “1848” the year the Comarca of Puntarenas was founded.",
+    sources: [
+      { title: "Puntarenas (Costa Rica) — Flags of the World", url: "https://crwflags.com/fotw/flags/cr-p.html" },
+    ],
+  },
+
+  "CR-L": {
+    description:
+      "A blue and white flag bearing the province's arms: a sailing ship for this maritime province, a key " +
+      "for its Caribbean seaport, a fruit tree for its banana crop, and a wreath of laurel and coffee for " +
+      "peace and its harvest.",
+    sources: [
+      { title: "Limón (Costa Rica) — Flags of the World", url: "https://crwflags.com/fotw/flags/cr-l.html" },
+    ],
+  },
+
   "EC-D": {
     description:
       "Horizontal white, green and yellow with a black vertical stripe at the hoist and four stars. White " +
