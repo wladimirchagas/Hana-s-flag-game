@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { GOVERNMENT_TYPES } from "../lib/governmentTypes";
 import type { Country } from "../api/countries";
 
@@ -17,6 +18,10 @@ import type { Country } from "../api/countries";
 export type ModernSummaryProps = {
   kind: "modern";
   country: Country;
+  /** When true, the fact rows are wrapped in a "Details" disclosure that
+   *  starts collapsed on narrow (≤900px) screens so the flag isn't pushed
+   *  below the fold. No rows are removed — they're one tap away. */
+  collapsible?: boolean;
 };
 
 export type HistoricalSummaryProps = {
@@ -68,7 +73,7 @@ export function EntitySummary(props: EntitySummaryProps) {
         value: c.currencies.map(formatCurrency).join(", "),
       });
     if (government) rows.push({ label: "Government", value: government });
-    return <SummaryList rows={rows} />;
+    return <SummaryList rows={rows} collapsible={props.collapsible} />;
   }
 
   // Historical — sparser, with the curated note shown above the fact list.
@@ -88,11 +93,26 @@ export function EntitySummary(props: EntitySummaryProps) {
 
 function SummaryList({
   rows,
+  collapsible = false,
 }: {
   rows: { label: string; value: React.ReactNode }[];
+  collapsible?: boolean;
 }) {
+  // Start collapsed only on narrow screens — on desktop the panel has room, so
+  // the fact sheet stays expanded exactly as before. SPA (no SSR), so reading
+  // matchMedia during the initial render is safe.
+  const [open, setOpen] = useState(() => {
+    if (!collapsible) return true;
+    try {
+      return !window.matchMedia("(max-width: 900px)").matches;
+    } catch {
+      return true;
+    }
+  });
+
   if (rows.length === 0) return null;
-  return (
+
+  const list = (
     <dl className="entity-summary">
       {rows.map((r) => (
         <div className="entity-summary__row" key={r.label}>
@@ -101,5 +121,21 @@ function SummaryList({
         </div>
       ))}
     </dl>
+  );
+
+  if (!collapsible) return list;
+
+  return (
+    <details
+      className="entity-summary__details"
+      open={open}
+      onToggle={(e) => setOpen(e.currentTarget.open)}
+    >
+      <summary className="entity-summary__summary">
+        <span>Details</span>
+        <span className="entity-summary__summary-count">{rows.length}</span>
+      </summary>
+      {list}
+    </details>
   );
 }
