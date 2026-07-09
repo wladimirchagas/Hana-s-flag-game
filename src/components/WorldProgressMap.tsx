@@ -143,7 +143,7 @@ type Props = {
   rotationOffset?: number;
   /** When true, the rendered map is flipped vertically — south at the top. */
   southUp?: boolean;
-  /** Optional extra controls to render below the +/-/⟲ zoom buttons. */
+  /** Optional extra controls to render below the +/-/⛶ zoom buttons. */
   extraControls?: React.ReactNode;
   /** When provided, each country whose alpha-2 code is a key in this map
    *  will have its flag image (the map value — an absolute URL) rendered
@@ -1081,7 +1081,7 @@ export function WorldProgressMap({
             aria-label="Reset zoom"
             title="Reset zoom"
           >
-            ⟲
+            ⛶
           </button>
           {extraControls}
         </div>

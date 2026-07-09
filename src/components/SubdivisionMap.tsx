@@ -718,7 +718,7 @@ export function SubdivisionMap({
             aria-label="Reset zoom"
             title="Reset zoom"
           >
-            ⟲
+            ⛶
           </button>
           {extraControls}
         </div>

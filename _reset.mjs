@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const OUT='/tmp/claude-0/-home-user-Hana-s-flag-game/d466d3d3-d8e8-5708-996d-5ca182c966a7/scratchpad';
+const b=await chromium.launch();
+const p=await (await b.newContext({viewport:{width:1300,height:900}})).newPage();
+await p.goto('http://127.0.0.1:5177/learn',{waitUntil:'domcontentloaded'});
+await p.waitForSelector('.learn-fs__map .world-map__zoom-controls',{timeout:20000});
+await p.waitForTimeout(1000);
+const resetTxt = await p.evaluate(()=>document.querySelector('.learn-fs__map button[aria-label="Reset zoom"]')?.textContent?.trim());
+console.log('reset button glyph:', JSON.stringify(resetTxt));
+await p.locator('.learn-fs__map .world-map__zoom-controls').screenshot({path:`${OUT}/toolbar-reset.png`}).catch(()=>p.screenshot({path:`${OUT}/toolbar-reset.png`}));
+await b.close();
