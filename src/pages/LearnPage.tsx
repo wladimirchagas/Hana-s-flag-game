@@ -5,6 +5,7 @@ import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { EraPicker } from "../components/EraPicker";
+import { ToolbarOverflow } from "../components/ToolbarOverflow";
 import { CountryDropdown } from "../components/CountryDropdown";
 import { SITE_TOPBAR_LEFT_SLOT_ID } from "../components/Topbar";
 import { SubdivisionMap } from "../components/SubdivisionMap";
@@ -826,43 +827,46 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
-        <button
-          type="button"
-          className="world-map__zoom-btn"
-          onClick={toggleRotation}
-          aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
-          title={isRotating ? "Pause rotation" : "Resume rotation"}
-        >
-          {isRotating ? "⏸" : "▶"}
-        </button>
-        <MapViewControl view={mapView} onChange={setMapView} />
-        <hr className="world-map__zoom-divider" />
-        <button
-          type="button"
-          className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
-          onClick={toggleFlagMap}
-          aria-pressed={showFlagMap}
-          aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
-          title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
-        >
-          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>        </button>
-        {CITIES_FEATURE_ENABLED && (
+        <ToolbarOverflow>
           <button
             type="button"
-            className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
-            onClick={toggleCities}
-            aria-pressed={showCities}
-            aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
-            title={showCities ? "Hide capitals" : "Show capitals"}
+            className="world-map__zoom-btn"
+            onClick={toggleRotation}
+            aria-label={isRotating ? "Pause rotation" : "Resume rotation"}
+            title={isRotating ? "Pause rotation" : "Resume rotation"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>          </button>
-        )}
-        {CITIES_FEATURE_ENABLED && showCities && (
-          <p className="world-map__layer-legend">
-            <span className="world-map__layer-legend-glyph">★</span> Capital
-          </p>
-        )}
-        <hr className="world-map__zoom-divider" />
+            {isRotating ? "⏸" : "▶"}
+          </button>
+          <MapViewControl view={mapView} onChange={setMapView} />
+          <button
+            type="button"
+            className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+            onClick={toggleFlagMap}
+            aria-pressed={showFlagMap}
+            aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+            title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+          >
+            <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+          </button>
+          {CITIES_FEATURE_ENABLED && (
+            <button
+              type="button"
+              className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
+              onClick={toggleCities}
+              aria-pressed={showCities}
+              aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
+              title={showCities ? "Hide capitals" : "Show capitals"}
+            >
+              <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
+            </button>
+          )}
+          {CITIES_FEATURE_ENABLED && showCities && (
+            <p className="world-map__layer-legend">
+              <span className="world-map__layer-legend-glyph">★</span> Capital
+            </p>
+          )}
+        </ToolbarOverflow>
+        <hr className="world-map__zoom-divider world-map__zoom-divider--era" />
         <EraPicker currentEraId={eraId} onEraChange={setEraId} />
       </>
     ),
@@ -878,32 +882,36 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
-        <button
-          type="button"
-          className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
-          onClick={toggleFlagMap}
-          aria-pressed={showFlagMap}
-          aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
-          title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
-        >
-          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>        </button>
-        {CITIES_FEATURE_ENABLED && (
+        <ToolbarOverflow>
           <button
             type="button"
-            className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
-            onClick={toggleCities}
-            aria-pressed={showCities}
-            aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
-            title={showCities ? "Hide capitals" : "Show capitals"}
+            className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+            onClick={toggleFlagMap}
+            aria-pressed={showFlagMap}
+            aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+            title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>          </button>
-        )}
-        {CITIES_FEATURE_ENABLED && showCities && (
-          <p className="world-map__layer-legend">
-            <span className="world-map__layer-legend-glyph">★</span> National<br />
-            <span className="world-map__layer-legend-glyph">☆</span> Subdivision
-          </p>
-        )}
+            <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+          </button>
+          {CITIES_FEATURE_ENABLED && (
+            <button
+              type="button"
+              className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
+              onClick={toggleCities}
+              aria-pressed={showCities}
+              aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
+              title={showCities ? "Hide capitals" : "Show capitals"}
+            >
+              <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
+            </button>
+          )}
+          {CITIES_FEATURE_ENABLED && showCities && (
+            <p className="world-map__layer-legend">
+              <span className="world-map__layer-legend-glyph">★</span> National<br />
+              <span className="world-map__layer-legend-glyph">☆</span> Subdivision
+            </p>
+          )}
+        </ToolbarOverflow>
       </>
     ),
     [showFlagMap, toggleFlagMap, showCities, toggleCities],
@@ -940,6 +948,25 @@ export default function LearnPage() {
     display?.kind === "modern" && !FLAGCDN_FALLBACK_EXCLUDED.has(display.country.code)
       ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
       : null
+
+  // Compact "Add to my list" +/✓ button, rendered inside the country-search row
+  // so it sits centred against the dropdown. Modern-era only.
+  const renderHanaCorner = (code: string, name: string) => {
+    if (!isModernEra) return null;
+    const inList = hanaCodes.includes(code);
+    return (
+      <button
+        type="button"
+        className={`learn-fs__hana-corner${inList ? " learn-fs__hana-corner--added" : ""}`}
+        onClick={() => toggleHanaForCode(code)}
+        aria-pressed={inList}
+        aria-label={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
+        title={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
+      >
+        {inList ? "✓" : "+"}
+      </button>
+    );
+  };
 
   // Stable id for the currently-displayed entity — used by FlagGrid to
   // highlight the matching tile.
@@ -1143,62 +1170,85 @@ export default function LearnPage() {
       </div>
 
       <div className="learn-fs__panel-wrap">
-        {isModernEra && !subdivisionMode && (
-          <div className="learn-fs__topsearch">
-            <CountryDropdown
-              countries={countries as Country[]}
-              value={display?.kind === "modern" ? display.country : null}
-              onChange={(c) => {
-                if (c) setSelected({ kind: "modern", country: c });
-                setHovered(null);
-              }}
-              disabled={countries.length === 0}
-              label="Find a country"
-              listPlacement="down"
-            />
-          </div>
-        )}
         <aside className="learn-fs__panel" aria-live="polite">
           <div className="learn-fs__detail">
             {subdivisionMode && subdivisionCountry && (
               <div className="learn-fs__search">
-                <CountryDropdown
-                  countries={countries as Country[]}
-                  value={codeToCountry.get(subdivisionCountry.code) ?? null}
-                  onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
-                  disabled={countries.length === 0}
-                  label="Find a country's subdivisions"
-                  listPlacement="down"
-                />
+                <span className="learn-fs__search-label" aria-hidden="true">
+                  Choose a country&rsquo;s subdivisions
+                </span>
+                <div className="learn-fs__search-row">
+                  <CountryDropdown
+                    countries={countries as Country[]}
+                    value={codeToCountry.get(subdivisionCountry.code) ?? null}
+                    onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
+                    disabled={countries.length === 0}
+                    label="Choose a country's subdivisions"
+                    listPlacement="down"
+                  />
+                  {renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)}
+                </div>
+              </div>
+            )}
+            {isModernEra && !subdivisionMode && (
+              <div className="learn-fs__widget-search">
+                <span className="learn-fs__search-label" aria-hidden="true">
+                  Choose a country
+                </span>
+                <div className="learn-fs__search-row">
+                  <CountryDropdown
+                    countries={countries as Country[]}
+                    value={display?.kind === "modern" ? display.country : null}
+                    onChange={(c) => {
+                      if (c) setSelected({ kind: "modern", country: c });
+                      setHovered(null);
+                    }}
+                    disabled={countries.length === 0}
+                    label="Choose a country"
+                    listPlacement="down"
+                  />
+                  {display?.kind === "modern" &&
+                    renderHanaCorner(display.country.code, display.country.name)}
+                </div>
               </div>
             )}
             {display ? (
               <>
-                <p className="learn-fs__continent">
-                  {selectionContinent(display)}
-                </p>
-                <h2 className="learn-fs__name">{selectionName(display)}</h2>
+                {!(display.kind === "modern" && !subdivisionMode) && (
+                  <>
+                    <p className="learn-fs__continent">
+                      {selectionContinent(display)}
+                    </p>
+                    <h2 className="learn-fs__name">{selectionName(display)}</h2>
+                  </>
+                )}
                 {display.kind === "modern" ? (
                   <>
-                    <EntitySummary kind="modern" country={display.country} collapsible />
-                    <div className="learn-fs__anthem-row">
-                      <span className="learn-fs__anthem-label">National Anthem</span>
-                      <button
-                        type="button"
-                        className="learn-fs__anthem-btn"
-                        onClick={() => {
-                          setAnthemTarget({
-                            code: display.country.code,
-                            name: display.country.name,
-                            flagUrl: selectionFlag(display, baseUrl),
-                          });
-                          anthemPlayerRef.current?.play();
-                        }}
-                        aria-label={`Play national anthem of ${display.country.name}`}
-                      >
-                        ▶ Play
-                      </button>
-                    </div>
+                    <EntitySummary
+                      kind="modern"
+                      country={display.country}
+                      collapsible
+                      footer={
+                        <div className="learn-fs__anthem-row">
+                          <span className="learn-fs__anthem-label">National Anthem</span>
+                          <button
+                            type="button"
+                            className="learn-fs__anthem-btn"
+                            onClick={() => {
+                              setAnthemTarget({
+                                code: display.country.code,
+                                name: display.country.name,
+                                flagUrl: selectionFlag(display, baseUrl),
+                              });
+                              anthemPlayerRef.current?.play();
+                            }}
+                            aria-label={`Play national anthem of ${display.country.name}`}
+                          >
+                            ▶ Play
+                          </button>
+                        </div>
+                      }
+                    />
                   </>
                 ) : (
                   <EntitySummary
@@ -1209,63 +1259,41 @@ export default function LearnPage() {
                   />
                 )}
                 {flagUrl && !flagLoadFailed ? (
-                  <button
-                    type="button"
-                    className="learn-fs__flag"
-                    onClick={() => setZoomedFlagUrl(flagUrl)}
-                    aria-label={`Enlarge ${selectionName(display)} flag`}
-                  >
-                    <img
-                      src={flagUrl}
-                      alt=""
-                      className="learn-fs__flag-img"
-                      draggable={false}
-                      onError={(e) => {
-                        const img = e.currentTarget;
-                        if (flagPngFallback && img.src !== flagPngFallback) {
-                          img.src = flagPngFallback;
-                        } else {
-                          setFlagLoadFailed(true);
-                        }
-                      }}
-                    />
-                    <span className="learn-fs__flag-hint" aria-hidden="true">
-                      ⤢ Click to enlarge
-                    </span>
-                  </button>
+                  <div className="learn-fs__flag-box">
+                    <button
+                      type="button"
+                      className="learn-fs__flag"
+                      onClick={() => setZoomedFlagUrl(flagUrl)}
+                      aria-label={`Enlarge ${selectionName(display)} flag`}
+                    >
+                      <img
+                        src={flagUrl}
+                        alt=""
+                        className="learn-fs__flag-img"
+                        draggable={false}
+                        onError={(e) => {
+                          const img = e.currentTarget;
+                          if (flagPngFallback && img.src !== flagPngFallback) {
+                            img.src = flagPngFallback;
+                          } else {
+                            setFlagLoadFailed(true);
+                          }
+                        }}
+                      />
+                      <span className="learn-fs__flag-hint" aria-hidden="true">
+                        ⤢ Click to enlarge
+                      </span>
+                    </button>
+                    {display.kind === "modern" && (
+                      <FlagMeaning code={display.country.code} />
+                    )}
+                  </div>
                 ) : (
                   <p className="learn-fs__no-flag">
                     No flag image — this polity predates modern flag design
                     or none survives.
                   </p>
                 )}
-                {display.kind === "modern" && (
-                  <FlagMeaning code={display.country.code} />
-                )}
-                {display.kind === "modern" && (() => {
-                  const code = display.country.code;
-                  const inList = hanaCodes.includes(code);
-                  return (
-                    <div
-                      className={`learn-fs__hana-row${inList ? " learn-fs__hana-row--added" : ""}`}
-                    >
-                      <span className="learn-fs__hana-label">Hana&rsquo;s Game</span>
-                      <button
-                        type="button"
-                        className={`learn-fs__hana-btn${inList ? " learn-fs__hana-btn--added" : ""}`}
-                        onClick={() => toggleHanaForCode(code)}
-                        aria-pressed={inList}
-                        title={
-                          inList
-                            ? `Remove ${display.country.name} from your list`
-                            : `Add ${display.country.name} to your list`
-                        }
-                      >
-                        {inList ? "✓ In my list" : "+ Add to my list"}
-                      </button>
-                    </div>
-                  );
-                })()}
                 {display.kind === "modern" && isModernEra && (
                   <div className="learn-fs__subdiv-row">
                     {subdivisionMode ? (
@@ -1288,24 +1316,28 @@ export default function LearnPage() {
                                   🌐 UN Non-Self-Governing Territory
                                 </p>
                               )}
-                              {sdUrl && (
-                                <button
-                                  type="button"
-                                  className="learn-fs__flag"
-                                  onClick={() => setZoomedFlagUrl(sdUrl)}
-                                  aria-label={`Enlarge ${selectedSubdivision.name} flag`}
-                                >
-                                  <img
-                                    src={sdUrl}
-                                    alt=""
-                                    className="learn-fs__flag-img"
-                                    draggable={false}
-                                    onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-                                  />
-                                  <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                                </button>
+                              {sdUrl ? (
+                                <div className="learn-fs__flag-box">
+                                  <button
+                                    type="button"
+                                    className="learn-fs__flag"
+                                    onClick={() => setZoomedFlagUrl(sdUrl)}
+                                    aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                                  >
+                                    <img
+                                      src={sdUrl}
+                                      alt=""
+                                      className="learn-fs__flag-img"
+                                      draggable={false}
+                                      onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                                    />
+                                    <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                                  </button>
+                                  <FlagMeaning code={selectedSubdivision.code} />
+                                </div>
+                              ) : (
+                                <FlagMeaning code={selectedSubdivision.code} />
                               )}
-                              <FlagMeaning code={selectedSubdivision.code} />
                               {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                                 <p className="learn-fs__unofficial-note">
                                   {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
@@ -1334,33 +1366,38 @@ export default function LearnPage() {
               </>
             ) : subdivisionMode && subdivisionCountry ? (() => {
               const countryObj = countries.find(c => c.code === subdivisionCountry.code);
-              const inList = hanaCodes.includes(subdivisionCountry.code);
               return (
                 <>
                   {countryObj && (
                     <p className="learn-fs__continent">{countryObj.continent}</p>
                   )}
                   <h2 className="learn-fs__name">{subdivisionCountry.name}</h2>
-                  {countryObj && <EntitySummary kind="modern" country={countryObj} collapsible />}
                   {countryObj && (
-                    <div className="learn-fs__anthem-row">
-                      <span className="learn-fs__anthem-label">National Anthem</span>
-                      <button
-                        type="button"
-                        className="learn-fs__anthem-btn"
-                        onClick={() => {
-                          setAnthemTarget({
-                            code: subdivisionCountry.code,
-                            name: subdivisionCountry.name,
-                            flagUrl: subdivisionCountry.flagSvg || null,
-                          });
-                          anthemPlayerRef.current?.play();
-                        }}
-                        aria-label={`Play national anthem of ${subdivisionCountry.name}`}
-                      >
-                        ▶ Play
-                      </button>
-                    </div>
+                    <EntitySummary
+                      kind="modern"
+                      country={countryObj}
+                      collapsible
+                      footer={
+                        <div className="learn-fs__anthem-row">
+                          <span className="learn-fs__anthem-label">National Anthem</span>
+                          <button
+                            type="button"
+                            className="learn-fs__anthem-btn"
+                            onClick={() => {
+                              setAnthemTarget({
+                                code: subdivisionCountry.code,
+                                name: subdivisionCountry.name,
+                                flagUrl: subdivisionCountry.flagSvg || null,
+                              });
+                              anthemPlayerRef.current?.play();
+                            }}
+                            aria-label={`Play national anthem of ${subdivisionCountry.name}`}
+                          >
+                            ▶ Play
+                          </button>
+                        </div>
+                      }
+                    />
                   )}
                   {subdivisionCountry.flagSvg && (
                     <button
@@ -1383,20 +1420,6 @@ export default function LearnPage() {
                       />
                       <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                     </button>
-                  )}
-                  {countryObj && (
-                    <div className={`learn-fs__hana-row${inList ? " learn-fs__hana-row--added" : ""}`}>
-                      <span className="learn-fs__hana-label">Hana&rsquo;s Game</span>
-                      <button
-                        type="button"
-                        className={`learn-fs__hana-btn${inList ? " learn-fs__hana-btn--added" : ""}`}
-                        onClick={() => toggleHanaForCode(subdivisionCountry.code)}
-                        aria-pressed={inList}
-                        title={inList ? `Remove ${subdivisionCountry.name} from your list` : `Add ${subdivisionCountry.name} to your list`}
-                      >
-                        {inList ? "✓ In my list" : "+ Add to my list"}
-                      </button>
-                    </div>
                   )}
                   <div className="learn-fs__subdiv-row">
                     {selectedSubdivision && (() => {
@@ -1514,6 +1537,10 @@ export default function LearnPage() {
           flagUrl={currentCountry.flagSvg || (display ? selectionFlag(display, baseUrl) : null)}
           onClose={() => setAnthemTarget(null)}
           visible={anthemTarget !== null}
+          // Preload the player once a country is actually SELECTED (not merely
+          // hovered), so tapping Play can start it synchronously in-gesture —
+          // the fix for iOS autoplay. Hover-only previews don't preload.
+          preload={selected?.kind === "modern" || (subdivisionMode && !!subdivisionCountry)}
         />
       )}
 
