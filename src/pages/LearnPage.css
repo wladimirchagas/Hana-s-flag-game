@@ -996,28 +996,7 @@
 /* === National Anthem row ============================================
    Shown in the detail panel below the entity summary, only for the
    present-day (modern) era. A label + Play button on one line. */
-.learn-fs__anthem-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.6rem;
-  width: 100%;
-  padding: 0.4rem 0.6rem;
-  background: var(--cream);
-  border: 2px solid var(--ink-faint);
-  border-radius: 12px;
-  margin-top: 0.2rem;
-}
-
-.learn-fs__anthem-label {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  white-space: nowrap;
-}
-
+/* Play button sits in the Anthem fact-row's value column (no separate box). */
 .learn-fs__anthem-btn {
   display: inline-flex;
   align-items: center;
@@ -1625,8 +1604,7 @@
 
 /* === Sub-national divisions ==========================================
    Panel row + info block for the "View sub-national divisions" feature
-   in Learn mode. Mirrors .learn-fs__anthem-row / .learn-fs__hana-row
-   in structure but uses the green accent colour to distinguish it.
+   in Learn mode.
 ========================================================================*/
 
 /* Placeholder shown in the sub-national box before a division is picked. */
