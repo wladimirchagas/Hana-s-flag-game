@@ -6,6 +6,7 @@ import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { EraPicker } from "../components/EraPicker";
 import { ToolbarOverflow } from "../components/ToolbarOverflow";
+import { SubdivisionDropdown } from "../components/SubdivisionDropdown";
 import { CountryDropdown } from "../components/CountryDropdown";
 import { SITE_TOPBAR_LEFT_SLOT_ID } from "../components/Topbar";
 import { SubdivisionMap } from "../components/SubdivisionMap";
@@ -968,6 +969,13 @@ export default function LearnPage() {
     );
   };
 
+  // Divisions of the country currently drilled into — powers the sub-national
+  // dropdown in the second widget box (subdivision mode only).
+  const subdivisionDivisions: SubdivisionMeta[] =
+    subdivisionMode && subdivisionCountry
+      ? SUBDIVISION_META[subdivisionCountry.code]?.divisions ?? []
+      : [];
+
   // Stable id for the currently-displayed entity — used by FlagGrid to
   // highlight the matching tile.
   const selectedId =
@@ -1172,25 +1180,7 @@ export default function LearnPage() {
       <div className="learn-fs__panel-wrap">
         <aside className="learn-fs__panel" aria-live="polite">
           <div className="learn-fs__detail">
-            {subdivisionMode && subdivisionCountry && (
-              <div className="learn-fs__search">
-                <span className="learn-fs__search-label" aria-hidden="true">
-                  Choose a country&rsquo;s subdivisions
-                </span>
-                <div className="learn-fs__search-row">
-                  <CountryDropdown
-                    countries={countries as Country[]}
-                    value={codeToCountry.get(subdivisionCountry.code) ?? null}
-                    onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
-                    disabled={countries.length === 0}
-                    label="Choose a country's subdivisions"
-                    listPlacement="down"
-                  />
-                  {renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)}
-                </div>
-              </div>
-            )}
-            {isModernEra && !subdivisionMode && (
+            {isModernEra && (
               <div className="learn-fs__widget-search">
                 <span className="learn-fs__search-label" aria-hidden="true">
                   Choose a country
@@ -1200,8 +1190,15 @@ export default function LearnPage() {
                     countries={countries as Country[]}
                     value={display?.kind === "modern" ? display.country : null}
                     onChange={(c) => {
-                      if (c) setSelected({ kind: "modern", country: c });
-                      setHovered(null);
+                      if (!c) return;
+                      // In the drill-in view, picking a country re-enters that
+                      // country's subdivisions; otherwise it just selects it.
+                      if (subdivisionMode) {
+                        enterSubdivisionModeForCountry(c);
+                      } else {
+                        setSelected({ kind: "modern", country: c });
+                        setHovered(null);
+                      }
                     }}
                     disabled={countries.length === 0}
                     label="Choose a country"
@@ -1299,74 +1296,14 @@ export default function LearnPage() {
                     or none survives.
                   </p>
                 )}
-                {display.kind === "modern" && isModernEra && (
-                  <div className="learn-fs__subdiv-row">
-                    {subdivisionMode ? (
-                      <>
-                        {selectedSubdivision && (() => {
-                          const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
-                          const isNsgt = NSGT_CODES.has(selectedSubdivision.code);
-                          return (
-                            <div className="learn-fs__subdiv-info">
-                              <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
-                              <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
-                              <SubdivisionPopulation
-                                code={selectedSubdivision.code}
-                                countryCode={display.country.code}
-                                countryName={display.country.name}
-                                nationalPopulation={display.country.population}
-                              />
-                              {isNsgt && (
-                                <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
-                                  🌐 UN Non-Self-Governing Territory
-                                </p>
-                              )}
-                              {sdUrl ? (
-                                <div className="learn-fs__flag-box">
-                                  <button
-                                    type="button"
-                                    className="learn-fs__flag"
-                                    onClick={() => setZoomedFlagUrl(sdUrl)}
-                                    aria-label={`Enlarge ${selectedSubdivision.name} flag`}
-                                  >
-                                    <img
-                                      src={sdUrl}
-                                      alt=""
-                                      className="learn-fs__flag-img"
-                                      draggable={false}
-                                      onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-                                    />
-                                    <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                                  </button>
-                                  <FlagMeaning code={selectedSubdivision.code} />
-                                </div>
-                              ) : (
-                                <FlagMeaning code={selectedSubdivision.code} />
-                              )}
-                              {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
-                                <p className="learn-fs__unofficial-note">
-                                  {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
-                                </p>
-                              )}
-                              {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code] && (
-                                <p className="learn-fs__disputed-note">
-                                  {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code]}
-                                </p>
-                              )}
-                            </div>
-                          );
-                        })()}
-                      </>
-                    ) : (
-                      <button
-                        type="button"
-                        className="learn-fs__subdiv-btn"
-                        onClick={handleEnterSubdivisionMode}
-                      >
-                        View sub-national divisions
-                      </button>
-                    )}
-                  </div>
+                {display.kind === "modern" && isModernEra && !subdivisionMode && (
+                  <button
+                    type="button"
+                    className="learn-fs__subdiv-btn"
+                    onClick={handleEnterSubdivisionMode}
+                  >
+                    View sub-national divisions
+                  </button>
                 )}
               </>
             ) : subdivisionMode && subdivisionCountry ? (() => {
@@ -1424,52 +1361,8 @@ export default function LearnPage() {
                       <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                     </button>
                   )}
-                  <div className="learn-fs__subdiv-row">
-                    {selectedSubdivision && (() => {
-                      const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
-                      const isNsgt = NSGT_CODES.has(selectedSubdivision.code);
-                      return (
-                        <div className="learn-fs__subdiv-info">
-                          <p className="learn-fs__subdiv-type">{selectedSubdivision.typeLabel}</p>
-                          <p className="learn-fs__subdiv-name">{selectedSubdivision.name}</p>
-                          <SubdivisionPopulation
-                            code={selectedSubdivision.code}
-                            countryCode={subdivisionCountry.code}
-                            countryName={subdivisionCountry.name}
-                            nationalPopulation={countryObj?.population}
-                          />
-                          {isNsgt && (
-                            <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
-                              🌐 UN Non-Self-Governing Territory
-                            </p>
-                          )}
-                          {sdUrl && (
-                            <button
-                              type="button"
-                              className="learn-fs__flag"
-                              onClick={() => setZoomedFlagUrl(sdUrl)}
-                              aria-label={`Enlarge ${selectedSubdivision.name} flag`}
-                            >
-                              <img
-                                src={sdUrl}
-                                alt=""
-                                className="learn-fs__flag-img"
-                                draggable={false}
-                                onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-                              />
-                              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                            </button>
-                          )}
-                          <FlagMeaning code={selectedSubdivision.code} />
-                          {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
-                            <p className="learn-fs__unofficial-note">
-                              {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
-                            </p>
-                          )}
-                        </div>
-                      );
-                    })()}
-                  </div>
+                  {/* Subdivision info is rendered in the dedicated sub-national
+                      box below — not here — so it is never shown twice. */}
                 </>
               );
             })() : (
@@ -1530,6 +1423,90 @@ export default function LearnPage() {
           </div>
 
         </aside>
+
+        {/* ===== SUB-NATIONAL box — a second card, only in the drill-in view.
+            Its own dropdown picks the division; its flag + explainer sit in the
+            same box, mirroring the national box above. ===== */}
+        {subdivisionMode && subdivisionCountry && (
+          <aside className="learn-fs__panel" aria-live="polite">
+            <div className="learn-fs__detail">
+              <div className="learn-fs__widget-search">
+                <span className="learn-fs__search-label" aria-hidden="true">
+                  Choose a division
+                </span>
+                <div className="learn-fs__search-row">
+                  <SubdivisionDropdown
+                    divisions={subdivisionDivisions}
+                    value={selectedSubdivision}
+                    onChange={setSelectedSubdivision}
+                    disabled={subdivisionDivisions.length === 0}
+                    label="Choose a division"
+                    countryCode={subdivisionCountry.code}
+                  />
+                </div>
+              </div>
+              {selectedSubdivision ? (() => {
+                const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
+                const isNsgt = NSGT_CODES.has(selectedSubdivision.code);
+                const countryObj = codeToCountry.get(subdivisionCountry.code);
+                return (
+                  <>
+                    <p className="learn-fs__subdiv-type">
+                      {selectedSubdivision.typeLabel}
+                    </p>
+                    <SubdivisionPopulation
+                      code={selectedSubdivision.code}
+                      countryCode={subdivisionCountry.code}
+                      countryName={subdivisionCountry.name}
+                      nationalPopulation={countryObj?.population}
+                    />
+                    {isNsgt && (
+                      <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
+                        🌐 UN Non-Self-Governing Territory
+                      </p>
+                    )}
+                    {sdUrl ? (
+                      <div className="learn-fs__flag-box">
+                        <button
+                          type="button"
+                          className="learn-fs__flag"
+                          onClick={() => setZoomedFlagUrl(sdUrl)}
+                          aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                        >
+                          <img
+                            src={sdUrl}
+                            alt=""
+                            className="learn-fs__flag-img"
+                            draggable={false}
+                            onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                          />
+                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                        </button>
+                        <FlagMeaning code={selectedSubdivision.code} />
+                      </div>
+                    ) : (
+                      <FlagMeaning code={selectedSubdivision.code} />
+                    )}
+                    {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
+                      <p className="learn-fs__unofficial-note">
+                        {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
+                      </p>
+                    )}
+                    {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code] && (
+                      <p className="learn-fs__disputed-note">
+                        {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code]}
+                      </p>
+                    )}
+                  </>
+                );
+              })() : (
+                <p className="learn-fs__subdiv-prompt">
+                  Pick a division on the map, or from the list above.
+                </p>
+              )}
+            </div>
+          </aside>
+        )}
       </div>
 
       {currentCountry && (

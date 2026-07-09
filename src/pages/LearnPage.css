@@ -442,6 +442,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 1.25rem;
   padding: 0.25rem 1.25rem 1.25rem;
   /* Avoid stealing focus from the fixed top toolbar (Home + toggle). */
 }
@@ -578,14 +579,11 @@
 
 /* Box holding the flag image AND its "What this flag means" explainer, so the
    two read as one unit (national + subnational). */
+/* Flag + its explainer share ONE column inside the widget's own box — no
+   nested border/background, so the flag and the "Choose a country" dropdown
+   read as a single card (the redundant inner box was removed per request). */
 .learn-fs__flag-box {
   width: 100%;
-  margin-top: 0.4rem;
-  padding: 0.75rem;
-  background: var(--cream);
-  border: 3px solid var(--ink);
-  border-radius: 14px;
-  box-shadow: 0 4px 0 var(--ink);
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -611,16 +609,12 @@
   outline: none;
 }
 
-/* The explainer fills the flag box (drop its standalone centring/max-width). */
+/* The explainer fills the widget box (drop its standalone centring/max-width).
+   Its toggle keeps the default cream fill, which now reads as distinct against
+   the widget's paper background. */
 .learn-fs__flag-box .flag-meaning {
   max-width: none;
   margin: 0;
-}
-
-/* Its toggle sits on the box's cream background — give it a paper fill so it
-   reads as a distinct control, not part of the flag. */
-.learn-fs__flag-box .flag-meaning__toggle {
-  background: var(--paper, #fff);
 }
 
 .learn-fs__flag-img {
@@ -1714,16 +1708,13 @@
    in structure but uses the green accent colour to distinguish it.
 ========================================================================*/
 
-.learn-fs__subdiv-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  width: 100%;
-  padding: 0.4rem 0.6rem;
-  background: var(--cream);
-  border: 2px solid var(--ink-faint);
-  border-radius: 12px;
-  margin-top: 0.2rem;
+/* Placeholder shown in the sub-national box before a division is picked. */
+.learn-fs__subdiv-prompt {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  text-align: center;
 }
 
 .learn-fs__subdiv-btn {
@@ -1764,25 +1755,6 @@
   color: var(--ink-fixed);
 }
 
-.learn-fs__subdiv-country {
-  margin: 0.25rem 0 0;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-
-.learn-fs__subdiv-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  padding-top: 0.25rem;
-  border-top: 1px solid var(--ink-faint);
-}
-
 .learn-fs__subdiv-type {
   margin: 0;
   font-size: 0.7rem;
@@ -1790,13 +1762,6 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-soft);
-}
-
-.learn-fs__subdiv-name {
-  margin: 0;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--ink);
 }
 
 .learn-fs__subdiv-pop {
