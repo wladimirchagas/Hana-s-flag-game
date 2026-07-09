@@ -1214,7 +1214,12 @@ export default function LearnPage() {
             )}
             {display ? (
               <>
-                {!(display.kind === "modern" && !subdivisionMode) && (
+                {/* Show the continent+name title ONLY for historical polities.
+                    In the modern era the country's name is already shown in the
+                    search bar at the top of the widget (both normal and
+                    subdivision mode), so a title here would duplicate it; its
+                    continent lives in the Details section instead. */}
+                {display.kind === "historical" && (
                   <>
                     <p className="learn-fs__continent">
                       {selectionContinent(display)}
@@ -1368,10 +1373,8 @@ export default function LearnPage() {
               const countryObj = countries.find(c => c.code === subdivisionCountry.code);
               return (
                 <>
-                  {countryObj && (
-                    <p className="learn-fs__continent">{countryObj.continent}</p>
-                  )}
-                  <h2 className="learn-fs__name">{subdivisionCountry.name}</h2>
+                  {/* No country title here — the subdivision search above already
+                      shows the country name (and its continent is in Details). */}
                   {countryObj && (
                     <EntitySummary
                       kind="modern"
