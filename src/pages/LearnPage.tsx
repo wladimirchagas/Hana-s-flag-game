@@ -866,11 +866,6 @@ export default function LearnPage() {
             {isRotating ? "⏸" : "▶"}
           </button>
           <MapViewControl view={mapView} onChange={setMapView} />
-          {CITIES_FEATURE_ENABLED && showCities && (
-            <p className="world-map__layer-legend">
-              <span className="world-map__layer-legend-glyph">★</span> Capital
-            </p>
-          )}
         </ToolbarOverflow>
         <hr className="world-map__zoom-divider world-map__zoom-divider--era" />
         <EraPicker currentEraId={eraId} onEraChange={setEraId} />
@@ -911,12 +906,6 @@ export default function LearnPage() {
           >
             <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
           </button>
-        )}
-        {CITIES_FEATURE_ENABLED && showCities && (
-          <p className="world-map__layer-legend">
-            <span className="world-map__layer-legend-glyph">★</span> National{" "}
-            <span className="world-map__layer-legend-glyph">☆</span> Subdivision
-          </p>
         )}
       </>
     ),

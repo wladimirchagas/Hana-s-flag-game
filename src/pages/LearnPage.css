@@ -307,17 +307,6 @@
   align-self: center;
 }
 
-/* "Map layers" label + capitals legend flow inline in the toolbar. */
-.learn-fs__map .world-map__layers-title {
-  align-self: center;
-}
-
-.learn-fs__map .world-map__layer-legend {
-  max-width: none;
-  align-self: center;
-  text-align: left;
-}
-
 /* === Toolbar overflow (☰) ============================================
    Keeps the map-controls toolbar on ONE line. On wide screens the wrapper is
    transparent (display:contents) so its controls lay out inline; on narrow
@@ -388,11 +377,6 @@
   }
   .toolbar-overflow__items--open {
     display: flex;
-  }
-  .toolbar-overflow__items .world-map__layer-legend {
-    flex: 1 1 100%;
-    max-width: none;
-    text-align: center;
   }
 
   /* Compact the Period pill so the single-line toolbar fits on phones: drop the
