@@ -60,7 +60,7 @@ export function EntitySummary(props: EntitySummaryProps) {
     const government = GOVERNMENT_TYPES[c.code];
     const rows: { label: string; value: React.ReactNode }[] = [];
     if (c.nameOfficial && c.nameOfficial !== c.name)
-      rows.push({ label: "Official name", value: c.nameOfficial });
+      rows.push({ label: "Name", value: c.nameOfficial });
     if (c.capital) rows.push({ label: "Capital", value: c.capital });
     if (typeof c.population === "number")
       rows.push({ label: "Population", value: formatModernPop(c.population) });

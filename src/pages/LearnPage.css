@@ -1116,7 +1116,10 @@
 
 .entity-summary__row {
   display: grid;
-  grid-template-columns: minmax(5.5rem, auto) 1fr;
+  /* Fixed label column (not `auto`) so every value starts at the same x across
+     all rows — otherwise each row is its own grid and a long label (e.g. the
+     old "Official name") pushes only its own value to the right. */
+  grid-template-columns: 6rem 1fr;
   gap: 0.55rem;
   align-items: baseline;
 }
