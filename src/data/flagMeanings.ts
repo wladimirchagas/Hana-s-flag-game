@@ -7317,6 +7317,331 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
 
 
 
+  "ES-AL": {
+    description:
+      "A white flag with a purple cross of Saint George and the provincial arms. The cross recalls the " +
+      "Christian reconquest of Almería, which Genoese troops are said to have aided; the shield bears the " +
+      "silver Genoese cross on red for that role, within a border gathering the emblems of the old Spanish " +
+      "kingdoms — Castile, León, Aragón, Navarre and Granada.",
+    sources: [
+      { title: "Almería (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-an-al.html" },
+    ],
+  },
+
+  "ES-GR": {
+    description:
+      "A green flag — the green of al-Andalus and of the Nasrid standards taken in the war of Granada — " +
+      "with the provincial arms. Their pomegranate is a canting emblem (granada means “pomegranate”), " +
+      "added to the royal arms after the reconquest of 1492; the border of castles and lions stands for " +
+      "the province's historic territories.",
+    sources: [
+      { title: "Granada (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-an-gr.html" },
+    ],
+  },
+
+  "ES-H": {
+    description:
+      "A blue flag with the provincial arms: a three-towered fortress inscribed “Portus maris et terrae " +
+      "custodia” (guardian of sea and land), three caravels for Columbus's 1492 voyage that sailed from " +
+      "Huelva's shores, a caduceus of Mercury for commerce and a cornucopia for abundance.",
+    sources: [
+      { title: "Huelva (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-an-h.html" },
+    ],
+  },
+
+  "ES-J": {
+    description:
+      "A green flag — for the province's olive groves, fields and countryside — with the provincial arms. " +
+      "Their central Holy Face (the veil of Veronica) stands for the “Holy Kingdom of Jaén”, within a " +
+      "border of castles and lions for its historic territories.",
+    sources: [
+      { title: "Jaén (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-an-j.html" },
+    ],
+  },
+
+  "ES-MA": {
+    description:
+      "A white flag with a blue border, taken from the old flag of the Maritime Province of Málaga, " +
+      "bearing the provincial arms. One half shows the city's own arms; the other, twelve red and gold " +
+      "stripes for the twelve judicial districts that make up the rest of the province.",
+    sources: [
+      { title: "Málaga (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-an-ma.html" },
+    ],
+  },
+
+  "ES-SE": {
+    description:
+      "A green flag with the provincial arms, which honour three saints of Seville — King (Saint) " +
+      "Ferdinand III, who took the city in 1248, and the brothers Saint Isidore and Saint Leander, its " +
+      "great bishops — surrounded by a collar of shields for the province's district-capital towns.",
+    sources: [
+      { title: "Seville (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-an-se.html" },
+    ],
+  },
+
+  "ES-HU": {
+    description:
+      "A white flag with a red cross and the provincial arms, which gather the emblems of its historic " +
+      "districts — among them Jaca's patriarchal cross with the four Moorish kings' heads, and Huesca's " +
+      "silver horseman with the motto “Urbs Victrix Osca” (Huesca the victorious).",
+    sources: [
+      { title: "Huesca (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-ar-hu.html" },
+    ],
+  },
+
+  "ES-TE": {
+    description:
+      "A white flag with a red cross and the provincial arms: the red-and-gold bars of the old Kingdom of " +
+      "Aragón, the silver star and bull of Teruel, Santa María of Albarracín, the castle of Alcañiz, and " +
+      "at the centre Saint George — patron of Aragón — spearing the dragon.",
+    sources: [
+      { title: "Teruel (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-ar-te.html" },
+    ],
+  },
+
+  "ES-Z": {
+    description:
+      "A white flag with the red cross of Saint George and the provincial arms, which quarter the Sobrarbe " +
+      "oak and cross, Saint George's cross with four Moorish heads, and the red-and-gold bars of Aragón, " +
+      "over the silver Pillar (Pilar) of Zaragoza.",
+    sources: [
+      { title: "Zaragoza (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-ar-z.html" },
+    ],
+  },
+
+  "ES-CA": {
+    description:
+      "A green flag with the provincial arms. Their border quarters the arms of Castile and León, and the " +
+      "twelve fields of the shield each stand for a judicial district of the province — among them Cádiz " +
+      "with Hercules and his lions for the city's legendary founder, and the Pillars of Hercules with the " +
+      "motto “Plus Ultra” framing the whole.",
+    sources: [
+      { title: "Cádiz (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-an-ca.html" },
+    ],
+  },
+
+  "ES-LE": {
+    description:
+      "A crimson (purple) flag bearing the provincial arms — a silver field with a purple crowned lion " +
+      "rampant, the canting emblem of the old Kingdom of León (león means “lion”).",
+    sources: [
+      { title: "León (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cl-le.html" },
+    ],
+  },
+
+  "ES-BU": {
+    description:
+      "A purple flag bearing the provincial arms. They show King (Saint) Ferdinand III — for Burgos as " +
+      "the historic capital and court of Castile — the three castles on his robe standing for the lands " +
+      "of Lara, Muño and Cellorigo, beside the gold castle on red of Castile, all within a border of " +
+      "sixteen castles for the many towns gathered into the province.",
+    sources: [
+      { title: "Burgos (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cl-bu.html" },
+    ],
+  },
+
+  "ES-SA": {
+    description:
+      "A purple flag bearing the provincial arms, which quarter the emblems of its judicial districts — " +
+      "Ciudad Rodrigo's Roman columns, Béjar's bees, Peñaranda de Bracamonte's towers and Vitigudino's " +
+      "sword and cross — around an inescutcheon for the city of Salamanca with its Roman bridge, bull and " +
+      "fig tree.",
+    sources: [
+      { title: "Salamanca (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cl-sa.html" },
+    ],
+  },
+
+  "ES-SG": {
+    description:
+      "A crimson flag with the provincial arms, a patchwork of the arms of its judicial districts — " +
+      "Sepúlveda's castle and keys, Cuéllar's collared horse, Riaza's two trout and Santa María de Nieva's " +
+      "lily vase — around an inescutcheon for the city of Segovia with its Roman aqueduct.",
+    sources: [
+      { title: "Segovia (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cl-sg.html" },
+    ],
+  },
+
+  "ES-TO": {
+    description:
+      "A green flag with the provincial arms: a black double-headed eagle and the quartered arms of " +
+      "Castile and León, crowned with the Imperial crown of the old Kingdom of Toledo — the imperial city " +
+      "of Emperor Charles V — with the collar of the Golden Fleece and the Pillars of Hercules bearing the " +
+      "motto “Plus Ultra”.",
+    sources: [
+      { title: "Toledo (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cm-to.html" },
+    ],
+  },
+
+  "ES-BA": {
+    description:
+      "A blue flag with the provincial arms (adopted 1868): a silver column for the Pillars of Hercules " +
+      "bearing the scroll “Plus Ultra” (“further beyond”, the device of Spain's overseas expansion), " +
+      "flanked by a red lion for strength.",
+    sources: [
+      { title: "Badajoz (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-ex-ba.html" },
+    ],
+  },
+
+  "ES-AV": {
+    description:
+      "A red flag with the provincial arms, which quarter the emblems of its judicial districts — Arenas " +
+      "de San Pedro's burning castle, Piedrahíta's crow, Arévalo's bareback knight, Cebreros's zebra and " +
+      "El Barco de Ávila's bridge — with the capital's own arms showing the cathedral, King Alfonso and " +
+      "the motto “Ávila del Rey”.",
+    sources: [
+      { title: "Ávila (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cl-av.html" },
+    ],
+  },
+
+  "ES-VI": {
+    description:
+      "A crimson flag with the provincial arms: a castle on a rock for the fortified land, an armed arm " +
+      "with a sword and the motto “En aumento de la justicia contra malhechores” (“for the increase of " +
+      "justice against wrongdoers”), and a red lion for valour.",
+    sources: [
+      { title: "Álava (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-pv-vi.html" },
+    ],
+  },
+
+  "ES-SS": {
+    description:
+      "A white flag with the provincial arms: three green yew trees — an emblem of Gipuzkoa in its seals " +
+      "since the 1400s — over silver and blue waves for the sea. The older arms also bore twelve golden " +
+      "cannons for the French guns captured at the battle of Velate in 1512.",
+    sources: [
+      { title: "Gipuzkoa (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-pv-ss.html" },
+    ],
+  },
+
+  "ES-V": {
+    description:
+      "A flag bearing the provincial arms, whose shield carries the red-and-gold bars of the old Kingdom " +
+      "of Aragón (and of Valencia), crowned and crested with a winged dragon (drac alat).",
+    sources: [
+      { title: "Valencia (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-vc-v.html" },
+    ],
+  },
+
+  "ES-BI": {
+    description:
+      "A carmine-red flag with the provincial arms: on a silver field, the Oak of Gernika beneath a Latin " +
+      "cross. The oak stands for the traditional liberties of the Basque people, whose laws and privileges " +
+      "were sworn beneath that tree; a border of red saltires frames the shield.",
+    sources: [
+      { title: "Bizkaia (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-pv-bi.html" },
+    ],
+  },
+
+  "ES-A": {
+    description:
+      "A white and blue flag with the provincial arms: in the upper half the red-and-gold pallets of the " +
+      "Crown of Aragón and old Kingdom of Valencia, and below a golden castle on a rock above the sea — " +
+      "the coastal stronghold that gives the province its name.",
+    sources: [
+      { title: "Alicante (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-vc-a.html" },
+    ],
+  },
+
+  "ES-OR": {
+    description:
+      "Eleven white discs on a dark-blue field, standing for the rivers that gave rise to the province's " +
+      "natural regions (comarcas).",
+    sources: [
+      { title: "Ourense (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-ga-ou.html" },
+    ],
+  },
+
+  "ES-L": {
+    description:
+      "The provincial arms gather the emblems of its nine historic judicial districts — among them " +
+      "Solsona's castle and sun, the double-headed eagle of Pallars, the enthroned Virgin of Seu d'Urgell " +
+      "and the stag of Cervera — most quartered with the four red bars of Catalonia.",
+    sources: [
+      { title: "Lleida (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-ct-l.html" },
+    ],
+  },
+
+  "ES-CS": {
+    description:
+      "The provincial arms: a silver three-towered castle — a canting emblem, since Castellón means " +
+      "“little castle” — over the four red bars of the old Kingdom of Aragón.",
+    sources: [
+      { title: "Castellón (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-vc-cs.html" },
+    ],
+  },
+
+  "ES-CR": {
+    description:
+      "A red flag with the provincial arms, made up of ten shields for the capitals of its judicial " +
+      "districts — rich in the crosses of the military orders that settled La Mancha (Calatrava, Santiago " +
+      "and Saint John) — around the capital's own arms, a crowned king enthroned within a walled city.",
+    sources: [
+      { title: "Ciudad Real (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cm-cr.html" },
+    ],
+  },
+
+  "ES-P": {
+    description:
+      "A purple flag with the provincial arms, gathering the emblems of its judicial districts — " +
+      "Frechilla's eagle, Cervera's stags, Saldaña's “Ave María” saltire, Astudillo's bull and star, " +
+      "Carrión's cart and lion and Baltanás's towers — around the capital's cross and castle, with the " +
+      "motto “Armas y Ciencia” (Arms and Science).",
+    sources: [
+      { title: "Palencia (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cl-p.html" },
+    ],
+  },
+
+  "ES-SO": {
+    description:
+      "A purple flag with the provincial arms, a patchwork of its judicial districts — Ágreda's vine, " +
+      "Almazán's fig tree, Medinaceli's mounted knight and Osma's castle — around an inescutcheon with " +
+      "King Alfonso VIII, and the motto “Soria pura, cabeza de Extremadura”.",
+    sources: [
+      { title: "Soria (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cl-so.html" },
+    ],
+  },
+
+  "ES-CU": {
+    description:
+      "The provincial arms combine Castile's castle and lion with the emblems of Cuenca's 1177 " +
+      "reconquest — a chalice for Saint Matthew, on whose feast the city was taken, and a star for the " +
+      "Epiphany day the siege began, on a red field for the blood of that victory — with a pine tree for " +
+      "youth and liberty and a gold field recalling the royal Charter (Fuero) of Cuenca.",
+    sources: [
+      { title: "Cuenca (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cm-cu.html" },
+    ],
+  },
+
+  "ES-GU": {
+    description:
+      "The provincial arms gather the heraldry of its nine judicial-district capitals — among them Molina " +
+      "de Aragón's millstones, Sigüenza's castle and eagle, Atienza's lion, and the capital Guadalajara's " +
+      "walled gate with a mounted warrior bearing a banner.",
+    sources: [
+      { title: "Guadalajara (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cm-gu.html" },
+    ],
+  },
+
+  "ES-AB": {
+    description:
+      "A red flag with the provincial arms: the two crossed keys of Alcaraz, the winged hand and sword of " +
+      "the Manuel family (first lords of Villena), the sword-cross of the Order of Santiago, and at the " +
+      "centre Albacete's three towers crowned by a bat.",
+    sources: [
+      { title: "Albacete (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-cm-ab.html" },
+    ],
+  },
+
+  "ES-LU": {
+    description:
+      "A red and blue flag with the provincial arms, taken from the cathedral seal of Lugo: a chalice and " +
+      "host for the cathedral's privilege of perpetually displaying the Blessed Sacrament, and a castle " +
+      "with two lions for the town's Roman walls and the valour of its people through many sieges.",
+    sources: [
+      { title: "Lugo (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-ga-lu.html" },
+    ],
+  },
+
   "ES-O": {
     description:
       "A blue field with a yellow Victory Cross (Cruz de la Victoria) toward the hoist, the Greek " +
