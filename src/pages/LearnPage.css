@@ -318,6 +318,33 @@
   text-align: left;
 }
 
+/* Lift the map + controls toolbar up onto the same line as the "Find a
+   country" search, removing the empty band at the top. Desktop-only: this is
+   safe only in the two-column layout, where the controls occupy the LEFT (map)
+   column and the search the RIGHT column, so they never overlap horizontally.
+   On mobile (single column) the map sits full-width below the search, so the
+   lift must not apply there. The panel column gets matching top padding so it
+   stays clear of the search that now sits beside the controls. */
+@media (min-width: 901px) {
+  .learn-fs {
+    margin-top: -4.9rem;
+  }
+  /* Higher specificity (.learn-fs descendant) so this wins over the base
+     `.learn-fs__panel-wrap { padding: … }` shorthand that appears later in the
+     file — media queries add no specificity, so source order would otherwise
+     let the shorthand reset padding-top back to 0. */
+  .learn-fs .learn-fs__panel-wrap {
+    padding-top: 4.9rem;
+  }
+  /* The lifted .learn-fs (later in the DOM) would paint its background over the
+     search. Raise ONLY the search (it sits in the right column, clear of the
+     left-column controls) so it stays visible and clickable above the grid. */
+  .learn-toolbar__search {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 /* === Right-column panel ============================================
    Sits in its own grid cell, so it categorically cannot cover any
    countries on the map. Padded around the edges; the inner card holds
