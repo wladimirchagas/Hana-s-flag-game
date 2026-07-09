@@ -38,14 +38,11 @@ VE-W
 #   flagMeanings.ts. The provinces below have a FOTW page with only the flag/arms image and NO stated
 #   per-element meaning — genuine walls.
 EC-A EC-B EC-C EC-G EC-H EC-L EC-N EC-O EC-R EC-S EC-U EC-W
-BO-B
-BO-C
-BO-H
-BO-L
-BO-N
-BO-O
-BO-P
-BO-T
+# BO departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/bo-X.html).
+#   FOTW documents per-element symbolism for La Paz (BO-L), Cochabamba (BO-C), Beni (BO-B),
+#   Chuquisaca (BO-H), Oruro (BO-O) and Pando (BO-N) — all now sourced in flagMeanings.ts. Walls:
+#   Potosí (BO-P, a 16th-c Vicuñas pennant, no per-element meaning) and Tarija (BO-T, no symbolism).
+BO-P BO-T
 PH-14
 PH-15
 PH-ABR
@@ -277,7 +274,10 @@ DO-02 DO-05 DO-09 DO-10 DO-13 DO-15 DO-18 DO-23 DO-24 DO-28 DO-31 DO-32
 ZM-01 ZM-02 ZM-03 ZM-04 ZM-05 ZM-06 ZM-07 ZM-08 ZM-09 ZM-10
 # GA (provincial flags image-only (fr/en.wikipedia)) — 8 codes
 GA-1 GA-2 GA-3 GA-4 GA-6 GA-7 GA-8 GA-9
-# HN (department flags image-only (es.wikipedia)) — 6 codes
+# HN departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/hn-XX.html).
+#   Confirmed wall: each of these departments simply reuses its capital city's arms with NO documented
+#   per-element symbolism (Comayagua, Copán, Francisco Morazán/Tegucigalpa, Ocotepeque, Santa Bárbara),
+#   and Olancho (HN-OL) has never had an official flag — only a recent unofficial private design.
 HN-CM HN-CP HN-FM HN-OC HN-OL HN-SB
 # SO (regional flags image-only (en.wikipedia)) — 6 codes
 SO-BK SO-BN SO-BR SO-BY SO-GE SO-SH

@@ -8125,6 +8125,65 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "BO-L": {
+    description:
+      "Two horizontal stripes, ponceau red over emerald green, first raised in the La Paz revolution of " +
+      "1809. Red is the blood of the fifteen-year independence war and green the region's vegetation and " +
+      "hope; the colours were those of the Lanza brothers and the rebel army of the Audiencia de Charcas.",
+    sources: [
+      { title: "La Paz (Bolivia) — Flags of the World", url: "https://crwflags.com/fotw/flags/bo-l.html" },
+    ],
+  },
+
+  "BO-C": {
+    description:
+      "A light-blue (celeste) flag — celeste for freedom — the banner Cochabambans carried at the Battle " +
+      "of Aroma in the independence war. Its arms add scales for the people's love of justice, wheat for " +
+      "the richness of their fields, and a sword for their courage.",
+    sources: [
+      { title: "Cochabamba (Bolivia) — Flags of the World", url: "https://crwflags.com/fotw/flags/bo-c.html" },
+    ],
+  },
+
+  "BO-B": {
+    description:
+      "Eight golden stars in a ring on a green field. The eight stars are the department's eight " +
+      "provinces; the green is the Beni's lush land, its emblem of hope and abundance.",
+    sources: [
+      { title: "Beni (Bolivia) — Flags of the World", url: "https://crwflags.com/fotw/flags/bo-b.html" },
+    ],
+  },
+
+  "BO-H": {
+    description:
+      "A white field with a red Burgundian (saltire) cross, from the banner of the Audiencia de Charcas. " +
+      "White stands for peace, purity and faith, red for the blood shed by America and Alto Perú in the " +
+      "struggle for freedom.",
+    sources: [
+      { title: "Chuquisaca (Bolivia) — Flags of the World", url: "https://crwflags.com/fotw/flags/bo-h.html" },
+    ],
+  },
+
+  "BO-O": {
+    description:
+      "A red flag — red for courage and bravery — the colour carried in the independence war by Oruro's " +
+      "leaders Sebastián Pagador and Barrón. It is often shown with a yellow border and the department's " +
+      "arms.",
+    sources: [
+      { title: "Oruro (Bolivia) — Flags of the World", url: "https://crwflags.com/fotw/flags/bo-o.html" },
+    ],
+  },
+
+  "BO-N": {
+    description:
+      "A white and green flag, born from the flag of the “Columna del Porvenir”, the Bolivian Amazon " +
+      "volunteers of the Chaco War. White stands for peace, generosity and integrity, green for the " +
+      "rainforest and the hope of a new century.",
+    sources: [
+      { title: "Pando (Bolivia) — Flags of the World", url: "https://crwflags.com/fotw/flags/bo-n.html" },
+    ],
+  },
+
   "CO-QUI": {
     description:
       "Three equal vertical stripes of green, yellow and purple. Green stands for the department’s " +
