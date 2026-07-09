@@ -1,5 +1,5 @@
 import { GOVERNMENT_TYPES } from "../lib/governmentTypes";
-import { formatPopulationShort } from "../lib/formatPopulation";
+import { formatPopulation } from "../lib/formatPopulation";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import type { Country } from "../api/countries";
 
@@ -36,7 +36,7 @@ export type HistoricalSummaryProps = {
 export type EntitySummaryProps = ModernSummaryProps | HistoricalSummaryProps;
 
 function formatHistoricalPop(n: number): string {
-  return `${formatPopulationShort(n)} (peak)`;
+  return `${formatPopulation(n)} (peak)`;
 }
 
 function formatCurrency(c: { code: string; name: string; symbol?: string }) {
@@ -59,7 +59,7 @@ export function EntitySummary(props: EntitySummaryProps) {
         ? c.population
         : NATIONAL_REFERENCE_POPULATION[c.code];
     if (typeof pop === "number")
-      rows.push({ label: "Population", value: formatPopulationShort(pop) });
+      rows.push({ label: "Population", value: formatPopulation(pop) });
     if (c.capital) rows.push({ label: "Capital", value: c.capital });
     if (c.languages && c.languages.length > 0)
       rows.push({
