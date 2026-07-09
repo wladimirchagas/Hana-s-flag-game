@@ -1235,7 +1235,6 @@ export default function LearnPage() {
                     <EntitySummary
                       kind="modern"
                       country={display.country}
-                      collapsible
                       footer={
                         <div className="learn-fs__anthem-row">
                           <span className="learn-fs__anthem-label">National Anthem</span>
@@ -1322,7 +1321,6 @@ export default function LearnPage() {
                     <EntitySummary
                       kind="modern"
                       country={countryObj}
-                      collapsible
                       footer={
                         <div className="learn-fs__anthem-row">
                           <span className="learn-fs__anthem-label">National Anthem</span>

@@ -1182,69 +1182,6 @@
   overflow-wrap: anywhere;
 }
 
-/* Collapsible "Details" wrapper (Learn panel). Expanded on desktop, collapsed
-   by default on narrow screens so the flag rises up. All rows remain present. */
-.entity-summary__details {
-  width: 100%;
-}
-
-.entity-summary__summary {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  width: 100%;
-  padding: 0.4rem 0.6rem;
-  margin-top: 0.2rem;
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  background: var(--cream);
-  border: 2px solid var(--ink-faint);
-  border-radius: 12px;
-  cursor: pointer;
-  list-style: none;
-}
-
-.entity-summary__summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Disclosure triangle drawn as a rotating caret so it works cross-browser. */
-.entity-summary__summary::before {
-  content: "▸";
-  font-size: 0.8rem;
-  transition: transform 120ms ease;
-}
-
-.entity-summary__details[open] > .entity-summary__summary::before {
-  transform: rotate(90deg);
-}
-
-.entity-summary__summary:hover,
-.entity-summary__summary:focus-visible {
-  outline: none;
-  border-color: var(--ink);
-  color: var(--ink);
-}
-
-.entity-summary__summary-count {
-  margin-left: auto;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-  background: var(--paper);
-  border: 2px solid var(--ink-faint);
-  border-radius: 999px;
-  padding: 0 0.45rem;
-}
-
-.entity-summary__details[open] > .entity-summary {
-  margin-top: 0.45rem;
-}
-
 /* Shown when a historical polity has no flag image (rare for ancient
    cultures and tribal confederations). */
 .learn-fs__no-flag {
