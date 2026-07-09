@@ -18,47 +18,17 @@ PT-07
 #   (MX-SLP), Sonora (MX-SON) and Tamaulipas (MX-TAM) — all now sourced in flagMeanings.ts. The states
 #   below have a FOTW page that only shows/blazons the arms with NO stated per-element meaning — walls.
 MX-AGU MX-BCN MX-CAM MX-CHH MX-CHP MX-COA MX-MOR MX-NAY MX-OAX MX-SIN MX-TAB MX-VER MX-ZAC
-ES-A
-ES-AB
-ES-AL
-ES-AV
-ES-BA
-ES-BI
-ES-BU
-ES-CA
-ES-CC
-ES-CO
-ES-CR
-ES-CS
-ES-CU
-ES-GC
-ES-GI
-ES-GR
-ES-GU
-ES-H
-ES-HU
-ES-J
-ES-L
-ES-LE
-ES-LU
-ES-MA
-ES-OR
-ES-P
-ES-PO
-ES-SA
-ES-SE
-ES-SG
-ES-SO
-ES-SS
-ES-T
-ES-TE
-ES-TF
-ES-TO
-ES-V
-ES-VA
-ES-VI
-ES-Z
-ES-ZA
+# ES provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw, nested by
+#   autonomous community, e.g. Cádiz=es-an-ca, León=es-cl-le, Bizkaia=es-pv-bi, Ourense=es-ga-ou).
+#   FOTW documents per-element/canting/district-composite arms symbolism for 32 provinces (Alicante,
+#   Almería, Ávila, Badajoz, Burgos, Cádiz, Ciudad Real, Cuenca, Granada, Guadalajara, Huelva, Huesca,
+#   Jaén, Las-Palmas is a WALL; León, Lleida, Lugo, Málaga, Ourense, Palencia, Salamanca, Segovia,
+#   Seville, Soria, Teruel, Toledo, Valencia, Álava, Gipuzkoa, Bizkaia, Albacete, Castellón, Zaragoza)
+#   — all now sourced in flagMeanings.ts. The provinces below have a FOTW page giving only a bare
+#   blazon with NO stated per-element meaning (Córdoba, Valladolid, Zamora), no province flag / blazon
+#   only (Tarragona, Cáceres, Pontevedra), or only the arms with no meaning (Girona, Las Palmas,
+#   Santa Cruz de Tenerife) — genuine walls.
+ES-CO ES-VA ES-T ES-GI ES-ZA ES-CC ES-PO ES-GC ES-TF
 VE-W
 # EC provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/ec-X.html;
 #   FOTW uses one-letter codes, e.g. Orellana=ec-v, Cotopaxi=ec-x, Santo Domingo=ec-k, Santa Elena=ec-j).
