@@ -189,8 +189,14 @@ CL-AI CL-AN CL-AP CL-AR CL-AT CL-BI CL-CO CL-LI CL-LL CL-LR CL-MA CL-ML CL-NB CL
 PW-002 PW-004 PW-010 PW-050 PW-100 PW-150 PW-212 PW-214 PW-218 PW-222 PW-224 PW-226 PW-227 PW-228 PW-350 PW-370
 # MM (state/region flags image-only) — 14 codes
 MM-01 MM-02 MM-03 MM-04 MM-06 MM-07 MM-11 MM-12 MM-13 MM-14 MM-15 MM-16 MM-17 MM-18
-# PA (province flags image-only) — 13 codes
-PA-1 PA-10 PA-2 PA-3 PA-4 PA-5 PA-6 PA-7 PA-9 PA-EM PA-KY PA-NB PA-NT
+# PA provinces/comarcas — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw, e.g.
+#   Veraguas=pa-ver, Colón=pa-col, Chiriquí=pa-chiri, Bocas del Toro=pa-boc, Panamá Oeste=pa-po).
+#   FOTW documents per-element symbolism for Bocas del Toro (PA-1), Colón (PA-3), Chiriquí (PA-4),
+#   Herrera (PA-6), Los Santos (PA-7), Veraguas (PA-9), Panamá Oeste (PA-10) and Emberá-Wounaan (PA-EM)
+#   — all now sourced in flagMeanings.ts. Walls: Coclé (PA-2, current flag's meaning not stated),
+#   Darién (PA-5, no official flag), Guna Yala (PA-KY) and Naso Tjër Di (PA-NT) (image only, no meaning),
+#   Ngäbe-Buglé (PA-NB, only an unofficial/contest flag with no documented per-element meaning).
+PA-2 PA-5 PA-KY PA-NB PA-NT
 # ET (regional flags image-only) — 12 codes
 # ME (municipal arms image-only) — 12 codes
 ME-06 ME-08 ME-11 ME-13 ME-14 ME-15 ME-16 ME-17 ME-18 ME-19 ME-20 ME-21
@@ -199,8 +205,12 @@ ME-06 ME-08 ME-11 ME-13 ME-14 ME-15 ME-16 ME-17 ME-18 ME-19 ME-20 ME-21
 KG-B KG-C KG-GB KG-J KG-N KG-O KG-T KG-Y
 # AD (parish arms image-only) — 7 codes
 AD-02 AD-03 AD-04 AD-05 AD-06 AD-07 AD-08
-# CR (province flags image-only) — 7 codes
-CR-A CR-C CR-G CR-H CR-L CR-P CR-SJ
+# CR provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/cr-X.html).
+#   FOTW documents per-element symbolism for Guanacaste (CR-G), Puntarenas (CR-P) and Limón (CR-L) —
+#   all now sourced in flagMeanings.ts. Walls: Alajuela (CR-A) and San José (CR-SJ) have no province
+#   flag (arms only), and Cartago (CR-C) and Heredia (CR-H) have a flag derived from the arms with no
+#   stated per-element meaning.
+CR-A CR-C CR-H CR-SJ
 # SK (region arms composite/undescribed) — 6 codes
 SK-KI SK-NI SK-PV SK-TA SK-TC SK-ZI
 # GE (Tbilisi/region arms image-only) — 3 codes
