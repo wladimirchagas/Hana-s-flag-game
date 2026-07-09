@@ -175,8 +175,14 @@ SI-026 SI-027 SI-029 SI-030 SI-032 SI-033 SI-034 SI-036 SI-040 SI-041 SI-043 SI-
 MN-035 MN-037 MN-039 MN-041 MN-043 MN-046 MN-047 MN-049 MN-051 MN-053 MN-055 MN-057 MN-059 MN-061 MN-063 MN-064 MN-065 MN-067 MN-069 MN-071 MN-073 MN-1
 # RO (county arms image-only) — 21 codes
 RO-AB RO-AG RO-AR RO-B RO-BH RO-BV RO-BZ RO-CS RO-CT RO-CV RO-GR RO-HD RO-IF RO-IL RO-MH RO-MM RO-OT RO-SB RO-SM RO-SV RO-TM
-# UY (department flags image-only) — 18 codes
-UY-AR UY-CL UY-CO UY-DU UY-FD UY-FS UY-LA UY-MA UY-MO UY-PA UY-RN UY-RO UY-RV UY-SA UY-SJ UY-SO UY-TA UY-TT
+# UY departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/uy-XX.html).
+#   FOTW documents per-element symbolism for 15 departments — Artigas (UY-AR), Colonia (UY-CO),
+#   Durazno (UY-DU), Florida (UY-FD), Flores (UY-FS=fotw uy-fe), Lavalleja (UY-LA=uy-lv), Maldonado
+#   (UY-MA), Paysandú (UY-PA), Río Negro (UY-RN), Rocha (UY-RO), Rivera (UY-RV=uy-ri), Salto (UY-SA=uy-st),
+#   San José (UY-SJ), Soriano (UY-SO), Treinta y Tres (UY-TT) — all now sourced in flagMeanings.ts.
+#   Walls: Cerro Largo (UY-CL, historical banner, no per-element meaning), Montevideo (UY-MO, no FOTW
+#   page) and Tacuarembó (UY-TA, no official flag — only a failed proposal).
+UY-CL UY-MO UY-TA
 # CL (regional flags image-only / no official symbolism) — 16 codes
 CL-AI CL-AN CL-AP CL-AR CL-AT CL-BI CL-CO CL-LI CL-LL CL-LR CL-MA CL-ML CL-NB CL-RM CL-TA CL-VS
 # PW (state flags image-only) — 16 codes
