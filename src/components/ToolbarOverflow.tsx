@@ -41,11 +41,13 @@ export function ToolbarOverflow({ children }: { children: React.ReactNode }) {
       >
         ⋮
       </button>
+      {/* NOTE: do NOT auto-close the popover on child clicks. A nested control
+          with its own popover (MapViewControl's globe) opens on click; closing
+          the kebab here would immediately unmount that popover, so the globe
+          "does nothing" on mobile. The kebab closes on outside-click / Escape
+          (handled above) instead. */}
       <div
         className={`toolbar-overflow__items${open ? " toolbar-overflow__items--open" : ""}`}
-        // Close the popover after choosing a control on mobile (the inline
-        // desktop layout ignores this — clicks there don't open a popover).
-        onClick={() => setOpen(false)}
       >
         {children}
       </div>

@@ -139,6 +139,17 @@ export function subdivisionCityMarkers(
   return [...acc.values()];
 }
 
+/**
+ * The authoritative capital of a single subdivision (by ISO 3166-2 code), or
+ * undefined if no source has one. Uses the SAME NE→Wikidata fallback order as
+ * the map overlay (`subdivisionCityMarkers`) so the Learn widget's "Capital"
+ * row can never disagree with the ★ marker on the map. Never fabricated — a
+ * subdivision no source carries a capital for simply returns undefined.
+ */
+export function subdivisionCapital(code: string): City | undefined {
+  return SUBNATIONAL_CITIES[code]?.capital ?? SUBDIVISION_CAPITALS[code];
+}
+
 // --- Role helpers used by the marker renderer + legend ----------------------
 
 export const isNational = (r: number) => (r & CityRole.NationalCapital) !== 0;
