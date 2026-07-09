@@ -28,7 +28,7 @@ import { getDriveSide } from "../lib/flagDriveSide";
 import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
 import { FlagMeaning } from "../components/FlagMeaning";
-import { worldCityMarkers, subdivisionCityMarkers } from "../lib/cityRoles";
+import { worldCityMarkers, subdivisionCityMarkers, subdivisionCapital } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
@@ -828,6 +828,33 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
+        {/* Flag + capital layer toggles live in the main toolbar row (after the
+            zoom buttons, ahead of rotation/globe) — the most-used controls stay
+            one tap away instead of hiding in the kebab overflow. */}
+        <button
+          type="button"
+          className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+          onClick={toggleFlagMap}
+          aria-pressed={showFlagMap}
+          aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+          title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+        >
+          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+        </button>
+        {CITIES_FEATURE_ENABLED && (
+          <button
+            type="button"
+            className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
+            onClick={toggleCities}
+            aria-pressed={showCities}
+            aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
+            title={showCities ? "Hide capitals" : "Show capitals"}
+          >
+            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
+          </button>
+        )}
+        {/* Rotation + globe (view-centre) are secondary — they collapse into the
+            kebab on narrow screens. */}
         <ToolbarOverflow>
           <button
             type="button"
@@ -839,28 +866,6 @@ export default function LearnPage() {
             {isRotating ? "⏸" : "▶"}
           </button>
           <MapViewControl view={mapView} onChange={setMapView} />
-          <button
-            type="button"
-            className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
-            onClick={toggleFlagMap}
-            aria-pressed={showFlagMap}
-            aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
-            title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
-          >
-            <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
-          </button>
-          {CITIES_FEATURE_ENABLED && (
-            <button
-              type="button"
-              className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
-              onClick={toggleCities}
-              aria-pressed={showCities}
-              aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
-              title={showCities ? "Hide capitals" : "Show capitals"}
-            >
-              <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
-            </button>
-          )}
           {CITIES_FEATURE_ENABLED && showCities && (
             <p className="world-map__layer-legend">
               <span className="world-map__layer-legend-glyph">★</span> Capital
@@ -883,36 +888,36 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
-        <ToolbarOverflow>
+        {/* Flag + capital toggles inline (after the zoom buttons) — the
+            subdivision map has no rotation/globe, so nothing needs a kebab. */}
+        <button
+          type="button"
+          className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+          onClick={toggleFlagMap}
+          aria-pressed={showFlagMap}
+          aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+          title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+        >
+          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+        </button>
+        {CITIES_FEATURE_ENABLED && (
           <button
             type="button"
-            className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
-            onClick={toggleFlagMap}
-            aria-pressed={showFlagMap}
-            aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
-            title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
+            className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
+            onClick={toggleCities}
+            aria-pressed={showCities}
+            aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
+            title={showCities ? "Hide capitals" : "Show capitals"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
           </button>
-          {CITIES_FEATURE_ENABLED && (
-            <button
-              type="button"
-              className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
-              onClick={toggleCities}
-              aria-pressed={showCities}
-              aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
-              title={showCities ? "Hide capitals" : "Show capitals"}
-            >
-              <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
-            </button>
-          )}
-          {CITIES_FEATURE_ENABLED && showCities && (
-            <p className="world-map__layer-legend">
-              <span className="world-map__layer-legend-glyph">★</span> National<br />
-              <span className="world-map__layer-legend-glyph">☆</span> Subdivision
-            </p>
-          )}
-        </ToolbarOverflow>
+        )}
+        {CITIES_FEATURE_ENABLED && showCities && (
+          <p className="world-map__layer-legend">
+            <span className="world-map__layer-legend-glyph">★</span> National{" "}
+            <span className="world-map__layer-legend-glyph">☆</span> Subdivision
+          </p>
+        )}
       </>
     ),
     [showFlagMap, toggleFlagMap, showCities, toggleCities],
@@ -1188,7 +1193,17 @@ export default function LearnPage() {
                 <div className="learn-fs__search-row">
                   <CountryDropdown
                     countries={countries as Country[]}
-                    value={display?.kind === "modern" ? display.country : null}
+                    value={
+                      // While drilled in, the dropdown must always show the
+                      // country we're inside (subdivisionCountry) — never go
+                      // empty if `display` momentarily clears (e.g. drilled in
+                      // from a hovered, not selected, country).
+                      subdivisionMode && subdivisionCountry
+                        ? codeToCountry.get(subdivisionCountry.code) ?? null
+                        : display?.kind === "modern"
+                          ? display.country
+                          : null
+                    }
                     onChange={(c) => {
                       if (!c) return;
                       // In the drill-in view, picking a country re-enters that
@@ -1204,8 +1219,10 @@ export default function LearnPage() {
                     label="Choose a country"
                     listPlacement="down"
                   />
-                  {display?.kind === "modern" &&
-                    renderHanaCorner(display.country.code, display.country.name)}
+                  {subdivisionMode && subdivisionCountry
+                    ? renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)
+                    : display?.kind === "modern" &&
+                      renderHanaCorner(display.country.code, display.country.name)}
                 </div>
               </div>
             )}
@@ -1449,17 +1466,33 @@ export default function LearnPage() {
                 const sdUrl = subdivisionFlagUrl(selectedSubdivision.code);
                 const isNsgt = NSGT_CODES.has(selectedSubdivision.code);
                 const countryObj = codeToCountry.get(subdivisionCountry.code);
+                const capital = subdivisionCapital(selectedSubdivision.code);
                 return (
                   <>
-                    <p className="learn-fs__subdiv-type">
-                      {selectedSubdivision.typeLabel}
-                    </p>
-                    <SubdivisionPopulation
-                      code={selectedSubdivision.code}
-                      countryCode={subdivisionCountry.code}
-                      countryName={subdivisionCountry.name}
-                      nationalPopulation={countryObj?.population}
-                    />
+                    {/* Fact-sheet mirrors the national country widget: same
+                        entity-summary font + label-column alignment. */}
+                    <dl className="entity-summary">
+                      {selectedSubdivision.typeLabel && (
+                        <div className="entity-summary__row">
+                          <dt className="entity-summary__label">Type</dt>
+                          <dd className="entity-summary__value">
+                            {selectedSubdivision.typeLabel}
+                          </dd>
+                        </div>
+                      )}
+                      {capital && (
+                        <div className="entity-summary__row">
+                          <dt className="entity-summary__label">Capital</dt>
+                          <dd className="entity-summary__value">{capital.name}</dd>
+                        </div>
+                      )}
+                      <SubdivisionPopulation
+                        code={selectedSubdivision.code}
+                        countryCode={subdivisionCountry.code}
+                        countryName={subdivisionCountry.name}
+                        nationalPopulation={countryObj?.population}
+                      />
+                    </dl>
                     {isNsgt && (
                       <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
                         🌐 UN Non-Self-Governing Territory

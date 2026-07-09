@@ -71,10 +71,14 @@ export function SubdivisionPopulation({
     .filter(Boolean)
     .join(", ");
 
+  // Rendered as an entity-summary row so the subdivision fact-sheet shares the
+  // exact font + label-column alignment of the national country fact-sheet.
   return (
-    <p className="learn-fs__subdiv-pop">
-      <span className="learn-fs__subdiv-pop-label">Population:</span>{" "}
-      {formatPopulation(entry.population)} ({detail})
-    </p>
+    <div className="entity-summary__row">
+      <dt className="entity-summary__label">Population</dt>
+      <dd className="entity-summary__value">
+        {formatPopulation(entry.population)} ({detail})
+      </dd>
+    </div>
   );
 }
