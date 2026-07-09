@@ -269,7 +269,9 @@ SD-DE SD-DN SD-DS SD-DW SD-GD SD-GK SD-GZ SD-KA SD-KH SD-KS SD-NB SD-NO SD-NR SD
 #   The remaining departments below have a FOTW page showing only the flag image with NO per-element
 #   symbolism — genuine walls.
 SV-AH SV-CU SV-LI SV-MO SV-PA SV-SS SV-SV SV-UN
-# AL (county flags/logos image-only (en/sq.wikipedia)) — 12 codes
+# AL counties — RE-VERIFIED against Flags of the World 2026-07: FOTW has no per-county (qark) flag
+#   page for Albania (al-subd.html 404). Albania's counties use modern administrative logos, not
+#   heraldic flags — no reachable per-element symbolism. Confirmed wall.
 AL-01 AL-02 AL-03 AL-04 AL-05 AL-06 AL-07 AL-08 AL-09 AL-10 AL-11 AL-12
 # DO provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/do-NN.html).
 #   FOTW documents NO per-element symbolism for any Dominican province: the pages it has for these
@@ -283,7 +285,9 @@ DO-02 DO-05 DO-09 DO-10 DO-13 DO-15 DO-18 DO-23 DO-24 DO-28 DO-31 DO-32
 #   only on a fan wiki (not an authoritative source), with no government spec or FOTW
 #   per-element symbolism. Confirmed wall — stays omitted.
 ZM-01 ZM-02 ZM-03 ZM-04 ZM-05 ZM-06 ZM-07 ZM-08 ZM-09 ZM-10
-# GA (provincial flags image-only (fr/en.wikipedia)) — 8 codes
+# GA provinces — RE-VERIFIED against Flags of the World 2026-07: FOTW has no per-province flag page for
+#   Gabon (ga.html covers only the national flag). Gabon's provinces have no distinct heraldic flags —
+#   no reachable per-element symbolism. Confirmed wall.
 GA-1 GA-2 GA-3 GA-4 GA-6 GA-7 GA-8 GA-9
 # HN departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/hn-XX.html).
 #   Confirmed wall: each of these departments simply reuses its capital city's arms with NO documented
@@ -298,11 +302,16 @@ SO-BK SO-BN SO-BR SO-BY SO-GE SO-SH
 VU-MAP VU-PAM VU-SAM VU-SEE VU-TAE
 # BH (governorate flags image-only (en.wikipedia)) — 4 codes
 BH-13 BH-14 BH-15 BH-17
-# CV (island/municipal flags image-only (pt/en.wikipedia)) — 4 codes
+# CV municipalities — RE-VERIFIED against Flags of the World 2026-07: FOTW has no per-municipality flag
+#   page for Cape Verde (cv-praia.html etc. 404). No reachable per-element symbolism. Confirmed wall.
 CV-MO CV-PR CV-RB CV-SM
-# GH (regional flags image-only (en.wikipedia)) — 4 codes
+# GH regions — RE-VERIFIED against Flags of the World 2026-07: FOTW has no per-region flag page for Ghana
+#   (gh-ah.html, gh-.html 404). Ghana's regional flags are recent logos with no documented per-element
+#   symbolism. Confirmed wall.
 GH-AA GH-AH GH-EP GH-TV
-# CU (provincial flags image-only (es.wikipedia)) — 3 codes
+# CU provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/cu-XX.html):
+#   the province pages (Villa Clara cu-vc, Holguín cu-ho) carry only municipality directories, no flag
+#   symbolism — Cuban provinces have no distinct heraldic flags. Confirmed wall.
 CU-06 CU-11 CU-14
 # WF (kingdom flags image-only / no dedicated article (Uvea/Sigave/Alo)) — 3 codes
 WF-AL WF-SG WF-UV
