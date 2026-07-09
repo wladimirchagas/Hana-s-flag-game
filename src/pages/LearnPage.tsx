@@ -4,7 +4,6 @@ import { Link, useSearchParams } from "react-router-dom";
 import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
-import { LearnTopToolbar } from "../components/LearnTopToolbar";
 import { EraPicker } from "../components/EraPicker";
 import { CountryDropdown } from "../components/CountryDropdown";
 import { SITE_TOPBAR_LEFT_SLOT_ID } from "../components/Topbar";
@@ -1005,23 +1004,6 @@ export default function LearnPage() {
           slot,
         );
       })()}
-      {/* Top toolbar: the country search. The historical-period selector now
-          lives in the map-controls toolbar above the map (EraPicker). */}
-      <LearnTopToolbar
-        search={
-          isModernEra && !subdivisionMode
-            ? {
-                countries,
-                value: display?.kind === "modern" ? display.country : null,
-                onChange: (c) => {
-                  if (c) setSelected({ kind: "modern", country: c });
-                  setHovered(null);
-                },
-                disabled: countries.length === 0,
-              }
-            : null
-        }
-      />
     {subdivisionMode && subdivisionCountry && (
       <nav className="learn-breadcrumb" aria-label="Location">
         <button
@@ -1161,6 +1143,21 @@ export default function LearnPage() {
       </div>
 
       <div className="learn-fs__panel-wrap">
+        {isModernEra && !subdivisionMode && (
+          <div className="learn-fs__topsearch">
+            <CountryDropdown
+              countries={countries as Country[]}
+              value={display?.kind === "modern" ? display.country : null}
+              onChange={(c) => {
+                if (c) setSelected({ kind: "modern", country: c });
+                setHovered(null);
+              }}
+              disabled={countries.length === 0}
+              label="Find a country"
+              listPlacement="down"
+            />
+          </div>
+        )}
         <aside className="learn-fs__panel" aria-live="polite">
           <div className="learn-fs__detail">
             {subdivisionMode && subdivisionCountry && (
