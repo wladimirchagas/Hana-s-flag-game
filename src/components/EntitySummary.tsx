@@ -1,4 +1,6 @@
 import { GOVERNMENT_TYPES } from "../lib/governmentTypes";
+import { formatPopulationShort } from "../lib/formatPopulation";
+import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import type { Country } from "../api/countries";
 
 /**
@@ -33,18 +35,8 @@ export type HistoricalSummaryProps = {
 
 export type EntitySummaryProps = ModernSummaryProps | HistoricalSummaryProps;
 
-function formatModernPop(n: number): string {
-  if (n >= 1_000_000) {
-    const m = n / 1_000_000;
-    const rounded = m >= 10 ? Math.round(m) : Math.round(m * 10) / 10;
-    return `~${rounded} M`;
-  }
-  if (n >= 1_000) return `~${Math.round(n / 1_000)} k`;
-  return n.toLocaleString();
-}
-
 function formatHistoricalPop(n: number): string {
-  return `${formatModernPop(n)} (peak)`;
+  return `${formatPopulationShort(n)} (peak)`;
 }
 
 function formatCurrency(c: { code: string; name: string; symbol?: string }) {
@@ -58,9 +50,17 @@ export function EntitySummary(props: EntitySummaryProps) {
     const rows: { label: string; value: React.ReactNode }[] = [];
     if (c.nameOfficial && c.nameOfficial !== c.name)
       rows.push({ label: "Name", value: c.nameOfficial });
+    // Population sits ABOVE Capital and is ALWAYS shown: the live World Bank /
+    // REST figure wins, but a bundled reference (NATIONAL_REFERENCE_POPULATION,
+    // latest dated country-level P1082) fills in when the live source is blocked
+    // or slow, so the row never disappears.
+    const pop =
+      typeof c.population === "number"
+        ? c.population
+        : NATIONAL_REFERENCE_POPULATION[c.code];
+    if (typeof pop === "number")
+      rows.push({ label: "Population", value: formatPopulationShort(pop) });
     if (c.capital) rows.push({ label: "Capital", value: c.capital });
-    if (typeof c.population === "number")
-      rows.push({ label: "Population", value: formatModernPop(c.population) });
     if (c.languages && c.languages.length > 0)
       rows.push({
         label: c.languages.length === 1 ? "Language" : "Languages",

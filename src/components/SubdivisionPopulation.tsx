@@ -2,6 +2,7 @@ import {
   SUBDIVISION_POPULATION,
   NATIONAL_REFERENCE_POPULATION,
 } from "../data/subdivisionPopulation";
+import { formatPopulationShort } from "../lib/formatPopulation";
 
 /**
  * Population fact-line for the Learn-mode subdivision panel.
@@ -16,16 +17,6 @@ import {
  * national share is computed against the live national population passed in
  * (the same figure the country widget shows), and is omitted if that is absent.
  */
-
-function formatPopulation(n: number): string {
-  if (n >= 1_000_000) {
-    const m = n / 1_000_000;
-    const rounded =
-      m >= 100 ? Math.round(m) : m >= 10 ? Math.round(m * 10) / 10 : Math.round(m * 100) / 100;
-    return `${rounded} million`;
-  }
-  return n.toLocaleString("en-US");
-}
 
 /** Possessive form of a country name ("Australia" → "Australia's"). */
 function possessive(name: string): string {
@@ -77,7 +68,7 @@ export function SubdivisionPopulation({
     <div className="entity-summary__row">
       <dt className="entity-summary__label">Population</dt>
       <dd className="entity-summary__value">
-        {formatPopulation(entry.population)} ({detail})
+        {formatPopulationShort(entry.population)} ({detail})
       </dd>
     </div>
   );
