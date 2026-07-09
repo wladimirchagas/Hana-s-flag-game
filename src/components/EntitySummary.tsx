@@ -103,19 +103,17 @@ function SummaryList({
 }) {
   if (rows.length === 0 && !footer) return null;
 
+  // The footer (e.g. the Anthem row) renders INSIDE the same <dl> so it aligns
+  // with the fact rows — same label column + value column, no separate box.
   return (
-    <>
-      {rows.length > 0 && (
-        <dl className="entity-summary">
-          {rows.map((r) => (
-            <div className="entity-summary__row" key={r.label}>
-              <dt className="entity-summary__label">{r.label}</dt>
-              <dd className="entity-summary__value">{r.value}</dd>
-            </div>
-          ))}
-        </dl>
-      )}
+    <dl className="entity-summary">
+      {rows.map((r) => (
+        <div className="entity-summary__row" key={r.label}>
+          <dt className="entity-summary__label">{r.label}</dt>
+          <dd className="entity-summary__value">{r.value}</dd>
+        </div>
+      ))}
       {footer}
-    </>
+    </dl>
   );
 }

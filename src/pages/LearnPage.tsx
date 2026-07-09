@@ -1236,23 +1236,25 @@ export default function LearnPage() {
                       kind="modern"
                       country={display.country}
                       footer={
-                        <div className="learn-fs__anthem-row">
-                          <span className="learn-fs__anthem-label">National Anthem</span>
-                          <button
-                            type="button"
-                            className="learn-fs__anthem-btn"
-                            onClick={() => {
-                              setAnthemTarget({
-                                code: display.country.code,
-                                name: display.country.name,
-                                flagUrl: selectionFlag(display, baseUrl),
-                              });
-                              anthemPlayerRef.current?.play();
-                            }}
-                            aria-label={`Play national anthem of ${display.country.name}`}
-                          >
-                            ▶ Play
-                          </button>
+                        <div className="entity-summary__row">
+                          <dt className="entity-summary__label">Anthem</dt>
+                          <dd className="entity-summary__value">
+                            <button
+                              type="button"
+                              className="learn-fs__anthem-btn"
+                              onClick={() => {
+                                setAnthemTarget({
+                                  code: display.country.code,
+                                  name: display.country.name,
+                                  flagUrl: selectionFlag(display, baseUrl),
+                                });
+                                anthemPlayerRef.current?.play();
+                              }}
+                              aria-label={`Play national anthem of ${display.country.name}`}
+                            >
+                              ▶ Play
+                            </button>
+                          </dd>
                         </div>
                       }
                     />
@@ -1322,23 +1324,25 @@ export default function LearnPage() {
                       kind="modern"
                       country={countryObj}
                       footer={
-                        <div className="learn-fs__anthem-row">
-                          <span className="learn-fs__anthem-label">National Anthem</span>
-                          <button
-                            type="button"
-                            className="learn-fs__anthem-btn"
-                            onClick={() => {
-                              setAnthemTarget({
-                                code: subdivisionCountry.code,
-                                name: subdivisionCountry.name,
-                                flagUrl: subdivisionCountry.flagSvg || null,
-                              });
-                              anthemPlayerRef.current?.play();
-                            }}
-                            aria-label={`Play national anthem of ${subdivisionCountry.name}`}
-                          >
-                            ▶ Play
-                          </button>
+                        <div className="entity-summary__row">
+                          <dt className="entity-summary__label">Anthem</dt>
+                          <dd className="entity-summary__value">
+                            <button
+                              type="button"
+                              className="learn-fs__anthem-btn"
+                              onClick={() => {
+                                setAnthemTarget({
+                                  code: subdivisionCountry.code,
+                                  name: subdivisionCountry.name,
+                                  flagUrl: subdivisionCountry.flagSvg || null,
+                                });
+                                anthemPlayerRef.current?.play();
+                              }}
+                              aria-label={`Play national anthem of ${subdivisionCountry.name}`}
+                            >
+                              ▶ Play
+                            </button>
+                          </dd>
                         </div>
                       }
                     />
