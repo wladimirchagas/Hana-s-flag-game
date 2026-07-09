@@ -963,6 +963,17 @@ export default function LearnPage() {
     );
   };
 
+  // A labelled "Flag" block: the "FLAG" label sits at the top-left (left-aligned
+  // with the other detail labels), and the flag spans the full widget width
+  // below it (never wider than the widget), with its "click to enlarge" caption
+  // left-aligned. Same for national + subnational.
+  const flagRow = (flagButton: React.ReactNode) => (
+    <div className="learn-fs__flag-head">
+      <span className="entity-summary__label learn-fs__flag-label">Flag</span>
+      {flagButton}
+    </div>
+  );
+
   // Divisions of the country currently drilled into — powers the sub-national
   // dropdown in the second widget box (subdivision mode only).
   const subdivisionDivisions: SubdivisionMeta[] =
@@ -1269,30 +1280,32 @@ export default function LearnPage() {
                 )}
                 {flagUrl && !flagLoadFailed ? (
                   <div className="learn-fs__flag-box">
-                    <button
-                      type="button"
-                      className="learn-fs__flag"
-                      onClick={() => setZoomedFlagUrl(flagUrl)}
-                      aria-label={`Enlarge ${selectionName(display)} flag`}
-                    >
-                      <img
-                        src={flagUrl}
-                        alt=""
-                        className="learn-fs__flag-img"
-                        draggable={false}
-                        onError={(e) => {
-                          const img = e.currentTarget;
-                          if (flagPngFallback && img.src !== flagPngFallback) {
-                            img.src = flagPngFallback;
-                          } else {
-                            setFlagLoadFailed(true);
-                          }
-                        }}
-                      />
-                      <span className="learn-fs__flag-hint" aria-hidden="true">
-                        ⤢ Click to enlarge
-                      </span>
-                    </button>
+                    {flagRow(
+                      <button
+                        type="button"
+                        className="learn-fs__flag"
+                        onClick={() => setZoomedFlagUrl(flagUrl)}
+                        aria-label={`Enlarge ${selectionName(display)} flag`}
+                      >
+                        <img
+                          src={flagUrl}
+                          alt=""
+                          className="learn-fs__flag-img"
+                          draggable={false}
+                          onError={(e) => {
+                            const img = e.currentTarget;
+                            if (flagPngFallback && img.src !== flagPngFallback) {
+                              img.src = flagPngFallback;
+                            } else {
+                              setFlagLoadFailed(true);
+                            }
+                          }}
+                        />
+                        <span className="learn-fs__flag-hint" aria-hidden="true">
+                          ⤢ Click to enlarge
+                        </span>
+                      </button>,
+                    )}
                     {display.kind === "modern" && (
                       <FlagMeaning code={display.country.code} />
                     )}
@@ -1347,7 +1360,7 @@ export default function LearnPage() {
                       }
                     />
                   )}
-                  {subdivisionCountry.flagSvg && (
+                  {subdivisionCountry.flagSvg && flagRow(
                     <button
                       type="button"
                       className="learn-fs__flag"
@@ -1367,7 +1380,7 @@ export default function LearnPage() {
                         }}
                       />
                       <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                    </button>
+                    </button>,
                   )}
                   {/* Subdivision info is rendered in the dedicated sub-national
                       box below — not here — so it is never shown twice. */}
@@ -1471,18 +1484,19 @@ export default function LearnPage() {
                           </dd>
                         </div>
                       )}
-                      {capital && (
-                        <div className="entity-summary__row">
-                          <dt className="entity-summary__label">Capital</dt>
-                          <dd className="entity-summary__value">{capital.name}</dd>
-                        </div>
-                      )}
+                      {/* Population above Capital, mirroring the national fact-sheet. */}
                       <SubdivisionPopulation
                         code={selectedSubdivision.code}
                         countryCode={subdivisionCountry.code}
                         countryName={subdivisionCountry.name}
                         nationalPopulation={countryObj?.population}
                       />
+                      {capital && (
+                        <div className="entity-summary__row">
+                          <dt className="entity-summary__label">Capital</dt>
+                          <dd className="entity-summary__value">{capital.name}</dd>
+                        </div>
+                      )}
                     </dl>
                     {isNsgt && (
                       <p className="learn-fs__nsgt-note" title="Listed on the UN Non-Self-Governing Territories agenda (C-24)">
@@ -1491,21 +1505,23 @@ export default function LearnPage() {
                     )}
                     {sdUrl ? (
                       <div className="learn-fs__flag-box">
-                        <button
-                          type="button"
-                          className="learn-fs__flag"
-                          onClick={() => setZoomedFlagUrl(sdUrl)}
-                          aria-label={`Enlarge ${selectedSubdivision.name} flag`}
-                        >
-                          <img
-                            src={sdUrl}
-                            alt=""
-                            className="learn-fs__flag-img"
-                            draggable={false}
-                            onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-                          />
-                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                        </button>
+                        {flagRow(
+                          <button
+                            type="button"
+                            className="learn-fs__flag"
+                            onClick={() => setZoomedFlagUrl(sdUrl)}
+                            aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                          >
+                            <img
+                              src={sdUrl}
+                              alt=""
+                              className="learn-fs__flag-img"
+                              draggable={false}
+                              onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                            />
+                            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                          </button>,
+                        )}
                         <FlagMeaning code={selectedSubdivision.code} />
                       </div>
                     ) : (
