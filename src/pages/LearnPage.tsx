@@ -1174,32 +1174,42 @@ export default function LearnPage() {
           <div className="learn-fs__detail">
             {subdivisionMode && subdivisionCountry && (
               <div className="learn-fs__search">
-                <CountryDropdown
-                  countries={countries as Country[]}
-                  value={codeToCountry.get(subdivisionCountry.code) ?? null}
-                  onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
-                  disabled={countries.length === 0}
-                  label="Choose a country's subdivisions"
-                  listPlacement="down"
-                />
-                {renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)}
+                <span className="learn-fs__search-label" aria-hidden="true">
+                  Choose a country&rsquo;s subdivisions
+                </span>
+                <div className="learn-fs__search-row">
+                  <CountryDropdown
+                    countries={countries as Country[]}
+                    value={codeToCountry.get(subdivisionCountry.code) ?? null}
+                    onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
+                    disabled={countries.length === 0}
+                    label="Choose a country's subdivisions"
+                    listPlacement="down"
+                  />
+                  {renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)}
+                </div>
               </div>
             )}
             {isModernEra && !subdivisionMode && (
               <div className="learn-fs__widget-search">
-                <CountryDropdown
-                  countries={countries as Country[]}
-                  value={display?.kind === "modern" ? display.country : null}
-                  onChange={(c) => {
-                    if (c) setSelected({ kind: "modern", country: c });
-                    setHovered(null);
-                  }}
-                  disabled={countries.length === 0}
-                  label="Choose a country"
-                  listPlacement="down"
-                />
-                {display?.kind === "modern" &&
-                  renderHanaCorner(display.country.code, display.country.name)}
+                <span className="learn-fs__search-label" aria-hidden="true">
+                  Choose a country
+                </span>
+                <div className="learn-fs__search-row">
+                  <CountryDropdown
+                    countries={countries as Country[]}
+                    value={display?.kind === "modern" ? display.country : null}
+                    onChange={(c) => {
+                      if (c) setSelected({ kind: "modern", country: c });
+                      setHovered(null);
+                    }}
+                    disabled={countries.length === 0}
+                    label="Choose a country"
+                    listPlacement="down"
+                  />
+                  {display?.kind === "modern" &&
+                    renderHanaCorner(display.country.code, display.country.name)}
+                </div>
               </div>
             )}
             {display ? (

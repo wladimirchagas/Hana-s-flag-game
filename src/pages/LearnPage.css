@@ -514,21 +514,39 @@
 .learn-fs__search {
   width: 100%;
   display: flex;
-  align-items: flex-end;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.15rem;
   text-align: left;
 }
 
-.learn-fs__widget-search .dropdown,
-.learn-fs__search .dropdown {
+/* Our own label sits ABOVE the input+button row, so the row's only items are
+   the dropdown input and the +/✓ button — that lets align-items:center centre
+   the button exactly on the input pill (the dropdown's built-in label is
+   hidden, otherwise it would offset the centring). */
+.learn-fs__search-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.learn-fs__widget-search .dropdown-label,
+.learn-fs__search .dropdown-label {
+  display: none;
+}
+
+.learn-fs__search-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.learn-fs__search-row .dropdown {
   flex: 1 1 auto;
   min-width: 0;
   margin: 0;
-}
-
-.learn-fs__widget-search .dropdown-label {
-  font-size: 0.7rem;
-  margin-bottom: 0.15rem;
 }
 
 .learn-fs__detail {
@@ -620,17 +638,15 @@
   pointer-events: none;
 }
 
+/* Caption sits BELOW the flag image (no longer overlapping it). */
 .learn-fs__flag-hint {
-  position: absolute;
-  bottom: 0.45rem;
-  right: 0.5rem;
+  display: block;
+  margin-top: 0.4rem;
+  text-align: center;
   font-size: 0.7rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--ink-soft);
-  background: var(--paper);
-  border: 2px solid var(--ink-faint);
-  border-radius: 999px;
-  padding: 0.1rem 0.5rem;
   pointer-events: none;
 }
 
