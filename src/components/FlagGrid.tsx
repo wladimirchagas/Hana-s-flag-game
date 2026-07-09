@@ -85,6 +85,22 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "aspect-ratio": "By aspect ratio",
 };
 
+// The chosen grouping is remembered across visits (per the UX revision: the
+// grid used to reset to "No grouping" every time). Only persisted on an
+// explicit user choice, so the historical-era auto-fallback below never
+// clobbers a stored preference.
+const GROUP_MODE_STORAGE_KEY = "flagGame.learn.groupMode";
+
+function loadStoredGroupMode(): GroupMode {
+  try {
+    const s = localStorage.getItem(GROUP_MODE_STORAGE_KEY);
+    if (s && s in GROUP_MODE_LABELS) return s as GroupMode;
+  } catch {
+    /* localStorage unavailable — fall through to the default */
+  }
+  return "none";
+}
+
 // Modes that only make sense for today's world map (modern era). They rely on
 // data (shapes, families, colours, similarity groups, driving side) that is not
 // available for historical polities.
@@ -108,8 +124,22 @@ export function FlagGrid({
   resolveFlag,
   isModernEra = false,
 }: FlagGridProps) {
-  const [groupMode, setGroupMode] = useState<GroupMode>("none");
+  const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
+  // Free-text filter typed by the user — narrows the grid by country/polity
+  // name so you don't have to scroll ~195 tiles or leave the grid to use the
+  // map search. Composes with the grouping above.
+  const [filter, setFilter] = useState("");
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+
+  // Persist an explicit grouping choice (not the historical auto-fallback).
+  const chooseGroupMode = (mode: GroupMode) => {
+    setGroupMode(mode);
+    try {
+      localStorage.setItem(GROUP_MODE_STORAGE_KEY, mode);
+    } catch {
+      /* ignore — persistence is best-effort */
+    }
+  };
   // Codes the player has unlocked via the Hana's Game streak reward, shown as a
   // "Learned" badge. Held in state and re-read whenever the flag data changes —
   // including when it syncs DOWN from the active profile on another device — so
@@ -137,11 +167,20 @@ export function FlagGrid({
     }
   }, [isModernEra, groupMode]);
 
+  // Apply the free-text name filter before grouping. A trimmed, case-insensitive
+  // substring match against the entry name — non-matches are hidden, so the
+  // grid shrinks to what you're looking for.
+  const filteredEntries = useMemo(() => {
+    const q = filter.trim().toLowerCase();
+    if (!q) return entries;
+    return entries.filter((e) => e.name.toLowerCase().includes(q));
+  }, [entries, filter]);
+
   // Build the (heading → entries) groups for the current mode. We always
   // alphabetise within a group; the headings themselves are ordered by
   // a per-mode comparator below.
   const groups = useMemo(() => {
-    const sorted = [...entries].sort((a, b) =>
+    const sorted = [...filteredEntries].sort((a, b) =>
       a.name.localeCompare(b.name, "en"),
     );
 
@@ -301,7 +340,7 @@ export function FlagGrid({
     });
 
     return list.map(([heading, items]) => ({ heading, items }));
-  }, [entries, groupMode]);
+  }, [filteredEntries, groupMode]);
 
   if (entries.length === 0) {
     return null;
@@ -312,25 +351,65 @@ export function FlagGrid({
       <header className="flag-grid__header">
         <h2 className="flag-grid__title" id="flag-grid-heading">
           Flags of this era
-          <span className="flag-grid__count">{entries.length}</span>
+          <span className="flag-grid__count">
+            {filter.trim() && filteredEntries.length !== entries.length
+              ? `${filteredEntries.length} / ${entries.length}`
+              : entries.length}
+          </span>
         </h2>
-        <label className="flag-grid__group-select">
-          <span className="flag-grid__group-select-label">Group by:</span>
-          <select
-            value={groupMode}
-            onChange={(e) => setGroupMode(e.target.value as GroupMode)}
-            className="flag-grid__select"
-          >
-            {(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
-              .filter((m) => isModernEra || !TODAY_ONLY_MODES.has(m))
-              .map((m) => (
-                <option key={m} value={m}>
-                  {GROUP_MODE_LABELS[m]}
-                </option>
-              ))}
-          </select>
-        </label>
+        <div className="flag-grid__controls">
+          <div className="flag-grid__filter">
+            <span className="flag-grid__filter-icon" aria-hidden="true">🔍</span>
+            <input
+              type="search"
+              className="flag-grid__filter-input"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+              placeholder="Filter flags…"
+              aria-label="Filter flags by name"
+            />
+            {filter && (
+              <button
+                type="button"
+                className="flag-grid__filter-clear"
+                onClick={() => setFilter("")}
+                aria-label="Clear filter"
+              >
+                ×
+              </button>
+            )}
+          </div>
+          <label className="flag-grid__group-select">
+            <span className="flag-grid__group-select-label">Group by:</span>
+            <select
+              value={groupMode}
+              onChange={(e) => chooseGroupMode(e.target.value as GroupMode)}
+              className="flag-grid__select"
+            >
+              {(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
+                .filter((m) => isModernEra || !TODAY_ONLY_MODES.has(m))
+                .map((m) => (
+                  <option key={m} value={m}>
+                    {GROUP_MODE_LABELS[m]}
+                  </option>
+                ))}
+            </select>
+          </label>
+        </div>
       </header>
+
+      {filteredEntries.length === 0 && (
+        <p className="flag-grid__no-match">
+          No flags match “{filter.trim()}”.{" "}
+          <button
+            type="button"
+            className="flag-grid__no-match-clear"
+            onClick={() => setFilter("")}
+          >
+            Clear filter
+          </button>
+        </p>
+      )}
 
       {groups.map((g) => (
         <div key={g.heading ?? "_all"} className="flag-grid__group">

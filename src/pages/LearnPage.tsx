@@ -164,6 +164,25 @@ export default function LearnPage() {
   // one keeps it on after drilling into a country.
   const [showCities, setShowCities] = useState(false);
 
+  // First-run tips card shown in the empty state. Dismissal is remembered so
+  // it's a one-time nudge, re-openable from a "Show tips" affordance.
+  const [tourDismissed, setTourDismissed] = useState(() => {
+    try {
+      return localStorage.getItem("flagGame.learn.tourDismissed") === "1";
+    } catch {
+      return false;
+    }
+  });
+  const dismissTour = useCallback(() => {
+    setTourDismissed(true);
+    try {
+      localStorage.setItem("flagGame.learn.tourDismissed", "1");
+    } catch {
+      /* ignore — persistence is best-effort */
+    }
+  }, []);
+  const reopenTour = useCallback(() => setTourDismissed(false), []);
+
   // Suppresses the exit-subdivision effect for one cycle when navigating
   // between subdivision countries via the dropdown.
   const suppressSubdivisionExitRef = useRef(false);
@@ -255,6 +274,19 @@ export default function LearnPage() {
   const isModernEraRef = useRef(isModernEra);
   isModernEraRef.current = isModernEra;
 
+  // Honour the OS "reduce motion" setting: even if rotation is toggled on, a
+  // user who has asked for less motion never gets an auto-spinning globe.
+  const reduceMotionRef = useRef(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    reduceMotionRef.current = mq.matches;
+    const onChange = () => {
+      reduceMotionRef.current = mq.matches;
+    };
+    mq.addEventListener?.("change", onChange);
+    return () => mq.removeEventListener?.("change", onChange);
+  }, []);
+
   const toggleRotation = useCallback(() => {
     setIsRotating((prev) => !prev);
   }, []);
@@ -306,7 +338,7 @@ export default function LearnPage() {
     const tick = (now: number) => {
       const dt = (now - lastTime) / 1000;
       lastTime = now;
-      if (isRotatingRef.current) {
+      if (isRotatingRef.current && !reduceMotionRef.current) {
         const dir = southUpForRotRef.current ? -1 : 1;
         rotationAccumRef.current =
           (rotationAccumRef.current + dir * DEGREES_PER_SEC * dt) % 360;
@@ -805,25 +837,35 @@ export default function LearnPage() {
         </button>
         <MapViewControl view={mapView} onChange={setMapView} />
         <hr className="world-map__zoom-divider" />
+        <span className="world-map__layers-title" aria-hidden="true">Map layers</span>
         <button
           type="button"
-          className={`world-map__zoom-btn${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+          className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
           onClick={toggleFlagMap}
+          aria-pressed={showFlagMap}
           aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
           title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
         >
-          🚩
+          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+          <span className="world-map__zoom-caption">Flags</span>
         </button>
         {CITIES_FEATURE_ENABLED && (
           <button
             type="button"
-            className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
+            className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
             onClick={toggleCities}
+            aria-pressed={showCities}
             aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
             title={showCities ? "Hide capitals" : "Show capitals"}
           >
-            📍
+            <span className="world-map__zoom-icon" aria-hidden="true">📍</span>
+            <span className="world-map__zoom-caption">Capitals</span>
           </button>
+        )}
+        {CITIES_FEATURE_ENABLED && showCities && (
+          <p className="world-map__layer-legend">
+            <span className="world-map__layer-legend-glyph">★</span> Capital
+          </p>
         )}
       </>
     ),
@@ -839,25 +881,36 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
+        <span className="world-map__layers-title" aria-hidden="true">Map layers</span>
         <button
           type="button"
-          className={`world-map__zoom-btn${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
+          className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
           onClick={toggleFlagMap}
+          aria-pressed={showFlagMap}
           aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
           title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
         >
-          🚩
+          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
+          <span className="world-map__zoom-caption">Flags</span>
         </button>
         {CITIES_FEATURE_ENABLED && (
           <button
             type="button"
-            className={`world-map__zoom-btn${showCities ? " world-map__zoom-btn--active" : ""}`}
+            className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
             onClick={toggleCities}
+            aria-pressed={showCities}
             aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
             title={showCities ? "Hide capitals" : "Show capitals"}
           >
-            📍
+            <span className="world-map__zoom-icon" aria-hidden="true">📍</span>
+            <span className="world-map__zoom-caption">Capitals</span>
           </button>
+        )}
+        {CITIES_FEATURE_ENABLED && showCities && (
+          <p className="world-map__layer-legend">
+            <span className="world-map__layer-legend-glyph">★</span> National<br />
+            <span className="world-map__layer-legend-glyph">☆</span> Subdivision
+          </p>
         )}
       </>
     ),
@@ -980,6 +1033,37 @@ export default function LearnPage() {
             : null
         }
       />
+    {subdivisionMode && subdivisionCountry && (
+      <nav className="learn-breadcrumb" aria-label="Location">
+        <button
+          type="button"
+          className="learn-breadcrumb__crumb"
+          onClick={exitSubdivisionMode}
+        >
+          🌍 World
+        </button>
+        <span className="learn-breadcrumb__sep" aria-hidden="true">›</span>
+        {selectedSubdivision ? (
+          <>
+            <button
+              type="button"
+              className="learn-breadcrumb__crumb"
+              onClick={() => setSelectedSubdivision(null)}
+            >
+              {subdivisionCountry.name}
+            </button>
+            <span className="learn-breadcrumb__sep" aria-hidden="true">›</span>
+            <span className="learn-breadcrumb__here" aria-current="page">
+              {selectedSubdivision.name}
+            </span>
+          </>
+        ) : (
+          <span className="learn-breadcrumb__here" aria-current="page">
+            {subdivisionCountry.name}
+          </span>
+        )}
+      </nav>
+    )}
     <div className="learn-fs">
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra && subdivisionMode ? (
@@ -1110,7 +1194,7 @@ export default function LearnPage() {
                 <h2 className="learn-fs__name">{selectionName(display)}</h2>
                 {display.kind === "modern" ? (
                   <>
-                    <EntitySummary kind="modern" country={display.country} />
+                    <EntitySummary kind="modern" country={display.country} collapsible />
                     <div className="learn-fs__anthem-row">
                       <span className="learn-fs__anthem-label">National Anthem</span>
                       <button
@@ -1271,7 +1355,7 @@ export default function LearnPage() {
                     <p className="learn-fs__continent">{countryObj.continent}</p>
                   )}
                   <h2 className="learn-fs__name">{subdivisionCountry.name}</h2>
-                  {countryObj && <EntitySummary kind="modern" country={countryObj} />}
+                  {countryObj && <EntitySummary kind="modern" country={countryObj} collapsible />}
                   {countryObj && (
                     <div className="learn-fs__anthem-row">
                       <span className="learn-fs__anthem-label">National Anthem</span>
@@ -1381,9 +1465,54 @@ export default function LearnPage() {
                 <p className="learn-fs__empty-title">Learn your flags</p>
                 <p className="learn-fs__empty-sub">
                   {isModernEra
-                    ? "Hover or click any country on the map — or use the search."
-                    : "Hover or click any polity on the map to see its name and flag."}
+                    ? "Tap or click any country on the map — or use the search."
+                    : "Tap or click any polity on the map to see its name and flag."}
                 </p>
+                {isModernEra && !tourDismissed && (
+                  <div className="learn-tour" role="note">
+                    <button
+                      type="button"
+                      className="learn-tour__dismiss"
+                      onClick={dismissTour}
+                      aria-label="Dismiss tips"
+                    >
+                      ×
+                    </button>
+                    <p className="learn-tour__title">Three things to try</p>
+                    <ol className="learn-tour__list">
+                      <li>
+                        <span className="learn-tour__num">1</span>
+                        <span>
+                          Tap a country, then <strong>View sub-national
+                          divisions</strong> to drill into its states.
+                        </span>
+                      </li>
+                      <li>
+                        <span className="learn-tour__num">2</span>
+                        <span>
+                          Toggle <strong>🚩 Flags</strong> &amp;{" "}
+                          <strong>📍 Capitals</strong> onto the map.
+                        </span>
+                      </li>
+                      <li>
+                        <span className="learn-tour__num">3</span>
+                        <span>
+                          Use the <strong>Period</strong> picker to travel
+                          back in time.
+                        </span>
+                      </li>
+                    </ol>
+                  </div>
+                )}
+                {isModernEra && tourDismissed && (
+                  <button
+                    type="button"
+                    className="learn-tour__reopen"
+                    onClick={reopenTour}
+                  >
+                    Show tips
+                  </button>
+                )}
               </div>
             )}
           </div>

@@ -1014,6 +1014,66 @@
   color: var(--paper);
 }
 
+/* Small "Map layers" heading above the flag/capitals toggles so their
+   purpose is legible without hovering for a tooltip (there is no hover on
+   touch). */
+.world-map__layers-title {
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+  line-height: 1.1;
+  padding: 0 0.1rem;
+}
+
+/* Layer toggle = icon stacked over a short caption. Keeps the button roughly
+   in the zoom-stack width while making it self-describing. */
+.world-map__zoom-btn--layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  height: auto;
+  min-height: 2.25rem;
+  width: auto;
+  min-width: 2.25rem;
+  padding: 0.28rem 0.35rem;
+}
+
+.world-map__zoom-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.world-map__zoom-caption {
+  font-size: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Inline key for the capital glyphs, shown only while the capitals layer is
+   on. Sits under the toggles in the control stack. */
+.world-map__layer-legend {
+  margin: 0.1rem 0 0;
+  font-size: 0.55rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-align: center;
+  max-width: 3.4rem;
+}
+
+.world-map__layer-legend-glyph {
+  color: var(--mustard, #e0a80c);
+  font-size: 0.7rem;
+}
+
 /* Interactive countries — pointer cursor + soft hover highlight. */
 .world-map__country--selectable {
   cursor: pointer;

@@ -372,11 +372,159 @@
   pointer-events: none;
 }
 
+/* === Subdivision breadcrumb ========================================
+   Shown below the toolbar while drilled into a country's subdivisions,
+   so "where am I" (World › Country › Subdivision) is always visible and
+   each ancestor is clickable to step back up. */
+.learn-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.35rem clamp(0.75rem, 2vw, 1.25rem);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+}
+
+.learn-breadcrumb__crumb {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  color: var(--coral-deep);
+  background: transparent;
+  border: 0;
+  padding: 0.1rem 0.15rem;
+  cursor: pointer;
+  border-radius: 6px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.learn-breadcrumb__crumb:hover,
+.learn-breadcrumb__crumb:focus-visible {
+  outline: none;
+  color: var(--coral);
+  background: rgba(78, 205, 196, 0.14);
+}
+
+.learn-breadcrumb__sep {
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.learn-breadcrumb__here {
+  font-weight: 800;
+  color: var(--ink);
+}
+
 /* Empty state — no country selected/hovered yet. */
 .learn-fs__empty {
   padding: 0.75rem 0.5rem;
   color: var(--ink-soft);
   text-align: center;
+}
+
+/* === First-run tips card ==========================================
+   A one-time nudge in the empty state pointing at the mode's three
+   non-obvious powers. Dismissible and re-openable. */
+.learn-tour {
+  position: relative;
+  margin: 0.85rem auto 0;
+  max-width: 20rem;
+  padding: 0.85rem 0.9rem 0.9rem;
+  text-align: left;
+  background: rgba(78, 205, 196, 0.14);
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.learn-tour__dismiss {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.45rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.learn-tour__dismiss:hover,
+.learn-tour__dismiss:focus-visible {
+  outline: none;
+  color: #fff;
+  background: var(--coral);
+}
+
+.learn-tour__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--coral-deep);
+}
+
+.learn-tour__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.learn-tour__list li {
+  display: grid;
+  grid-template-columns: 1.4rem 1fr;
+  gap: 0.5rem;
+  align-items: start;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.learn-tour__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--ink-fixed);
+  background: var(--sky);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+}
+
+.learn-tour__reopen {
+  margin: 0.75rem auto 0;
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--ink-faint);
+  padding: 0 0.1rem 0.05rem;
+  cursor: pointer;
+}
+
+.learn-tour__reopen:hover,
+.learn-tour__reopen:focus-visible {
+  outline: none;
+  color: var(--coral-deep);
+  border-color: var(--coral-deep);
 }
 
 .learn-fs__empty-title {
@@ -775,6 +923,69 @@
   overflow-wrap: anywhere;
 }
 
+/* Collapsible "Details" wrapper (Learn panel). Expanded on desktop, collapsed
+   by default on narrow screens so the flag rises up. All rows remain present. */
+.entity-summary__details {
+  width: 100%;
+}
+
+.entity-summary__summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  margin-top: 0.2rem;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.entity-summary__summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Disclosure triangle drawn as a rotating caret so it works cross-browser. */
+.entity-summary__summary::before {
+  content: "▸";
+  font-size: 0.8rem;
+  transition: transform 120ms ease;
+}
+
+.entity-summary__details[open] > .entity-summary__summary::before {
+  transform: rotate(90deg);
+}
+
+.entity-summary__summary:hover,
+.entity-summary__summary:focus-visible {
+  outline: none;
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.entity-summary__summary-count {
+  margin-left: auto;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: var(--paper);
+  border: 2px solid var(--ink-faint);
+  border-radius: 999px;
+  padding: 0 0.45rem;
+}
+
+.entity-summary__details[open] > .entity-summary {
+  margin-top: 0.45rem;
+}
+
 /* Shown when a historical polity has no flag image (rare for ancient
    cultures and tribal confederations). */
 .learn-fs__no-flag {
@@ -903,6 +1114,105 @@
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 3px 0 var(--ink);
+}
+
+/* Controls cluster: text filter + group-by, right of the section title. */
+.flag-grid__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.flag-grid__filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.6rem;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 0 2px 0 var(--ink);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.flag-grid__filter:focus-within {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.flag-grid__filter-icon {
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+.flag-grid__filter-input {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: clamp(7rem, 18vw, 11rem);
+  padding: 0.1rem 0;
+}
+
+.flag-grid__filter-input::placeholder {
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+/* Suppress the native search-input clear affordance so only our styled
+   clear button shows (avoids a double "×"). */
+.flag-grid__filter-input::-webkit-search-cancel-button,
+.flag-grid__filter-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.flag-grid__filter-clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.flag-grid__filter-clear:hover,
+.flag-grid__filter-clear:focus-visible {
+  outline: none;
+  background: var(--coral);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.flag-grid__no-match {
+  margin: 0 0 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.flag-grid__no-match-clear {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--coral-deep);
+  cursor: pointer;
+  padding: 0;
 }
 
 .flag-grid__group {
