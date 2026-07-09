@@ -7320,6 +7320,81 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "HU-GY": {
+    description:
+      "The city arms on the flag: an old castle for Győr's history and three white stripes for its three " +
+      "rivers — the Danube, the Rába and the Rábca — beside a cog-wheel and hammer for its industry and a " +
+      "pen for its cultural traditions. The blue and red edges take the arms' colours.",
+    sources: [
+      { title: "Győr (Hungary) — Flags of the World", url: "https://crwflags.com/fotw/flags/hu-gyor.html" },
+    ],
+  },
+
+  "AD-02": {
+    description:
+      "The parish emblem on white: the map of Andorra with Canillo picked out, two crossed laurel branches " +
+      "and the Romanesque church of Sant Joan de Caselles rising behind the map.",
+    sources: [
+      { title: "Canillo (Andorra) — Flags of the World", url: "https://crwflags.com/fotw/flags/ad-100.html" },
+    ],
+  },
+
+  "AD-03": {
+    description:
+      "The parish arms: a white mountain for the parish's terrain and gold keys for its authority, on a " +
+      "purple band, with stars above.",
+    sources: [
+      { title: "Encamp (Andorra) — Flags of the World", url: "https://crwflags.com/fotw/flags/ad-200.html" },
+    ],
+  },
+
+  "AD-04": {
+    description:
+      "The parish arms, party per pale: blue wavy pales for its streams and the red-and-gold chequy of the " +
+      "counts of Foix, with a pine for La Massana's forests.",
+    sources: [
+      { title: "La Massana (Andorra) — Flags of the World", url: "https://crwflags.com/fotw/flags/ad-400.html" },
+    ],
+  },
+
+  "AD-05": {
+    description:
+      "The parish arms gather emblems of Ordino's life: a fir tree for its landscape, a church for its " +
+      "heritage, a cow for its pastoral tradition, an open book for learning, and a flower and a waterfall " +
+      "for its nature.",
+    sources: [
+      { title: "Ordino (Andorra) — Flags of the World", url: "https://crwflags.com/fotw/flags/ad-300.html" },
+    ],
+  },
+
+  "AD-06": {
+    description:
+      "The parish arms: four red pallets on gold — the arms of the counts of Foix — with green branches " +
+      "for nature tied in a ribbon of Andorra's national colours.",
+    sources: [
+      { title: "Sant Julià de Lòria (Andorra) — Flags of the World", url: "https://crwflags.com/fotw/flags/ad-600.html" },
+    ],
+  },
+
+  "AD-07": {
+    description:
+      "The parish arms: a holm oak for the sunny side of the valley and an oak for the shady side, three " +
+      "blue wavy bands for the three Valira rivers (Valira del Nord, Valira d'Orient and the Gran Valira), " +
+      "and green for the mountains and meadows.",
+    sources: [
+      { title: "Andorra la Vella (Andorra) — Flags of the World", url: "https://crwflags.com/fotw/flags/ad-500.html" },
+    ],
+  },
+
+  "AD-08": {
+    description:
+      "The parish emblem: a stone bridge for the local landmark and a mineral-spring fountain — canting " +
+      "for “les Escaldes”, the boiling thermal waters that name the parish — within a wreath.",
+    sources: [
+      { title: "Escaldes-Engordany (Andorra) — Flags of the World", url: "https://crwflags.com/fotw/flags/ad-700.html" },
+    ],
+  },
+
   "CR-G": {
     description:
       "Blue, white and green stripes with a red triangle at the hoist. The red triangle is the heart of " +
