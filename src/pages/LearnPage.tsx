@@ -64,7 +64,7 @@ import "./LearnPage.css";
 // These must never fall back to flagcdn — show broken image instead.
 const FLAGCDN_FALLBACK_EXCLUDED = new Set(["AF"]);
 
-// Feature flag for the city overlay (📍 capitals toggle). Kept as a single
+// Feature flag for the city overlay (⭐ capitals toggle). Kept as a single
 // switch so the whole feature can be pulled from the UI again without ripping
 // out the data/markers/wiring — flipping it to `false` gates the two toggle
 // buttons, and since `showCities` can only flip via those buttons, the overlay
@@ -827,8 +827,6 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
-        <EraPicker currentEraId={eraId} onEraChange={setEraId} />
-        <hr className="world-map__zoom-divider" />
         <button
           type="button"
           className="world-map__zoom-btn"
@@ -840,7 +838,6 @@ export default function LearnPage() {
         </button>
         <MapViewControl view={mapView} onChange={setMapView} />
         <hr className="world-map__zoom-divider" />
-        <span className="world-map__layers-title" aria-hidden="true">Map layers</span>
         <button
           type="button"
           className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
@@ -849,9 +846,7 @@ export default function LearnPage() {
           aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
           title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
         >
-          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
-          <span className="world-map__zoom-caption">Flags</span>
-        </button>
+          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>        </button>
         {CITIES_FEATURE_ENABLED && (
           <button
             type="button"
@@ -861,15 +856,15 @@ export default function LearnPage() {
             aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
             title={showCities ? "Hide capitals" : "Show capitals"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">📍</span>
-            <span className="world-map__zoom-caption">Capitals</span>
-          </button>
+            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>          </button>
         )}
         {CITIES_FEATURE_ENABLED && showCities && (
           <p className="world-map__layer-legend">
             <span className="world-map__layer-legend-glyph">★</span> Capital
           </p>
         )}
+        <hr className="world-map__zoom-divider" />
+        <EraPicker currentEraId={eraId} onEraChange={setEraId} />
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -884,7 +879,6 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
-        <span className="world-map__layers-title" aria-hidden="true">Map layers</span>
         <button
           type="button"
           className={`world-map__zoom-btn world-map__zoom-btn--layer${showFlagMap ? " world-map__zoom-btn--active" : ""}`}
@@ -893,9 +887,7 @@ export default function LearnPage() {
           aria-label={showFlagMap ? "Hide flags on map" : "Show flags on map"}
           title={showFlagMap ? "Hide flags on map" : "Show flags on map"}
         >
-          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
-          <span className="world-map__zoom-caption">Flags</span>
-        </button>
+          <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>        </button>
         {CITIES_FEATURE_ENABLED && (
           <button
             type="button"
@@ -905,9 +897,7 @@ export default function LearnPage() {
             aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
             title={showCities ? "Hide capitals" : "Show capitals"}
           >
-            <span className="world-map__zoom-icon" aria-hidden="true">📍</span>
-            <span className="world-map__zoom-caption">Capitals</span>
-          </button>
+            <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>          </button>
         )}
         {CITIES_FEATURE_ENABLED && showCities && (
           <p className="world-map__layer-legend">
@@ -1490,7 +1480,7 @@ export default function LearnPage() {
                         <span className="learn-tour__num">2</span>
                         <span>
                           Toggle <strong>🚩 Flags</strong> &amp;{" "}
-                          <strong>📍 Capitals</strong> onto the map.
+                          <strong>⭐ Capitals</strong> onto the map.
                         </span>
                       </li>
                       <li>
