@@ -2,7 +2,7 @@ import {
   SUBDIVISION_POPULATION,
   NATIONAL_REFERENCE_POPULATION,
 } from "../data/subdivisionPopulation";
-import { formatPopulationShort } from "../lib/formatPopulation";
+import { formatPopulation } from "../lib/formatPopulation";
 
 /**
  * Population fact-line for the Learn-mode subdivision panel.
@@ -68,7 +68,7 @@ export function SubdivisionPopulation({
     <div className="entity-summary__row">
       <dt className="entity-summary__label">Population</dt>
       <dd className="entity-summary__value">
-        {formatPopulationShort(entry.population)} ({detail})
+        {formatPopulation(entry.population)} ({detail})
       </dd>
     </div>
   );
