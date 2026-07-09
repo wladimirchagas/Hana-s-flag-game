@@ -6995,6 +6995,252 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "MT-03": {
+    description:
+      "An armoured arm holding a sword for the victory over the Ottomans in the Great Siege of 1565, with " +
+      "an olive branch for peace and a palm for victory (motto “Victrix Palmam Fero”) — canting arms for " +
+      "Città Vittoriosa; the four-towered crown marks Birgu as a former capital of the Knights.",
+    sources: [
+      { title: "Il-Birgu (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-03.html" },
+    ],
+  },
+
+  "MT-06": {
+    description:
+      "A green cotton plant on gold — the arms of the Cotoner Grand Masters, who built the Cottonera Lines " +
+      "of fortifications around the Three Cities that give Bormla its title, Città Cospicua.",
+    sources: [
+      { title: "Bormla / Cospicua (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-05.html" },
+    ],
+  },
+
+  "MT-09": {
+    description:
+      "A red lion and a winged arm with a sword, both taken from the arms of Grand Master Manoel de " +
+      "Vilhena, who built up Floriana as a suburb of Valletta.",
+    sources: [
+      { title: "Floriana (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-18.html" },
+    ],
+  },
+
+  "MT-10": {
+    description:
+      "A heraldic fountain — a white and blue wavy disc — as canting arms for Fontana, “fountain”.",
+    sources: [
+      { title: "Il-Fontana, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-19.html" },
+    ],
+  },
+
+  "MT-14": {
+    description:
+      "A gold star on blue and the red Dwejra tower (built in 1651 under Grand Master de Paule) on white. " +
+      "L-Għarb takes its name from the Arabic for “west/sunset”, as it lies at the western tip of Gozo, and " +
+      "its motto “In extremo vigilat” calls it a sentinel at the borderline.",
+    sources: [
+      { title: "L-Għarb, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-23.html" },
+    ],
+  },
+
+  "MT-20": {
+    description:
+      "A black saltire with five silver scallops on gold — the arms of Grand Master Claude de la Sengle, " +
+      "who founded and gave his name to the city of Senglea.",
+    sources: [
+      { title: "L-Isla / Senglea (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-04.html" },
+    ],
+  },
+
+  "MT-31": {
+    description:
+      "A trilithon for the neolithic temples near the village, above white and blue waves.",
+    sources: [
+      { title: "L-Imġarr (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-38.html" },
+    ],
+  },
+
+  "MT-32": {
+    description:
+      "A red cross for the Catholic faith of the locals, a golden circle for the Rotunda — Mosta's great " +
+      "domed parish church and its landmark — and a blue star for Our Lady, the town's patron, whose feast " +
+      "falls on 15 August.",
+    sources: [
+      { title: "Il-Mosta (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-39.html" },
+    ],
+  },
+
+  "MT-40": {
+    description:
+      "Two crossed gold swords for the village's military past — the former English barracks — ringed by " +
+      "the thirteen coastal watch-towers built by Grand Master de Redin.",
+    sources: [
+      { title: "Pembroke (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-46.html" },
+    ],
+  },
+
+  "MT-41": {
+    description:
+      "A pelican in her piety, feeding her young with her own blood — a symbol of Christ's sacrifice and a " +
+      "crypto-canting reference to the village's name, Pietà (“piety”).",
+    sources: [
+      { title: "Tal-Pietà (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-47.html" },
+    ],
+  },
+
+  "MT-42": {
+    description:
+      "A golden Gozo boat on rough water for the village's harbour (qala = “bay”), with the motto “In " +
+      "Tempestate Perfugium” (a haven from storms).",
+    sources: [
+      { title: "Il-Qala, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-48.html" },
+    ],
+  },
+
+  "MT-43": {
+    description:
+      "Five red crescents in saltire — the arms of Grand Master Pinto, who raised Qormi to the rank of " +
+      "city in 1743.",
+    sources: [
+      { title: "Ħal Qormi (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-06.html" },
+    ],
+  },
+
+  "MT-45": {
+    description:
+      "The triple-mount of the historic arms of Gozo (three hills rising above the sea), beneath the " +
+      "letters “VR” for Victoria Regina — added when Queen Victoria's 1887 jubilee gave the city its name.",
+    sources: [
+      { title: "Victoria / Rabat, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-11.html" },
+    ],
+  },
+
+  "MT-47": {
+    description:
+      "A blue band on silver with the motto “Sine Macula” (without stain), for the village's name — its " +
+      "pure air, or its people's escape from a plague (safi = clean, pure).",
+    sources: [
+      { title: "Ħal Safi (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-51.html" },
+    ],
+  },
+
+  "MT-49": {
+    description:
+      "A paschal lamb, the attribute of St John the Baptist — canting arms, since San Ġwann means “St " +
+      "John”.",
+    sources: [
+      { title: "San Ġwann (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-53.html" },
+    ],
+  },
+
+  "MT-50": {
+    description:
+      "St Lawrence's gridiron between two palms of martyrdom, for the village's patron saint.",
+    sources: [
+      { title: "San Lawrenz, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-54.html" },
+    ],
+  },
+
+  "MT-51": {
+    description:
+      "Wavy lines for the bay, a snake for the viper that bit St Paul without harming him (Acts 28), and a " +
+      "sword for the new faith and the saint's martyrdom.",
+    sources: [
+      { title: "San Pawl il-Baħar / St Paul's Bay (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-55.html" },
+    ],
+  },
+
+  "MT-52": {
+    description:
+      "A sheaf of wheat and two sickles for the village's farming heritage and its harvest.",
+    sources: [
+      { title: "Ta' Sannat, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-56.html" },
+    ],
+  },
+
+  "MT-53": {
+    description:
+      "A golden sun on black — canting arms for St Lucy, whose name comes from the Latin lux, “light”.",
+    sources: [
+      { title: "Santa Luċija (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-57.html" },
+    ],
+  },
+
+  "MT-56": {
+    description:
+      "A star for the Stella Maris — Our Lady, Star of the Sea, who guides seafarers safely to harbour — " +
+      "in the silver and red of Malta.",
+    sources: [
+      { title: "Tas-Sliema (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-59.html" },
+    ],
+  },
+
+  "MT-57": {
+    description:
+      "Quarters of boulders (braġġ, for the hamlet of Ibraġ) and trenches (swieqi, for the main village), " +
+      "with a saltire for St Andrew.",
+    sources: [
+      { title: "Is-Swieqi (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-60.html" },
+    ],
+  },
+
+  "MT-58": {
+    description:
+      "A bird on a golden ship's wheel, for Ta' Xbiex being Malta's main yacht marina.",
+    sources: [
+      { title: "Ta' Xbiex (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-61.html" },
+    ],
+  },
+
+  "MT-61": {
+    description:
+      "An apse of the Ġgantija temples in gold — a symbolic representation of the neolithic temple goddess.",
+    sources: [
+      { title: "Ix-Xagħra, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-63.html" },
+    ],
+  },
+
+  "MT-62": {
+    description:
+      "A red fess between two thistles — canting arms, since Xewkija comes from xewk, “thorns”.",
+    sources: [
+      { title: "Ix-Xewkija, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-64.html" },
+    ],
+  },
+
+  "MT-63": {
+    description:
+      "Three gold wheat-ears — canting arms, xgħajra being a Maltese word for grain — with a battery " +
+      "recalling that the town grew up around an English coastal battery in the Second World War.",
+    sources: [
+      { title: "Ix-Xgħajra (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-65.html" },
+    ],
+  },
+
+  "MT-64": {
+    description:
+      "An engrailed white saltire on red — the arms of Grand Master Ferdinand von Hompesch, for whom the " +
+      "town is styled Città Hompesch.",
+    sources: [
+      { title: "Ħaż-Żabbar (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-08.html" },
+    ],
+  },
+
+  "MT-65": {
+    description:
+      "A canting olive branch (żebbuġ = olive) above the nine gold mascles of Grand Master de Rohan, who " +
+      "raised the village to a city.",
+    sources: [
+      { title: "Ħaż-Żebbuġ (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-07.html" },
+    ],
+  },
+
+  "MT-66": {
+    description:
+      "An olive tree for the village's important olive-growing and for its name, which means “olive”.",
+    sources: [
+      { title: "Iż-Żebbuġ, Gozo (Malta) — Flags of the World", url: "https://crwflags.com/fotw/flags/mt-66.html" },
+    ],
+  },
+
   "PA-1": {
     description:
       "Divided diagonally yellow over green, with the letter “B” and three white stars for the province's " +
