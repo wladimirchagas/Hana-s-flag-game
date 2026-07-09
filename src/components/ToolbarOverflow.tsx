@@ -33,13 +33,13 @@ export function ToolbarOverflow({ children }: { children: React.ReactNode }) {
     <div className="toolbar-overflow" ref={ref}>
       <button
         type="button"
-        className="world-map__zoom-btn toolbar-overflow__toggle"
+        className="toolbar-overflow__toggle"
         onClick={() => setOpen((v) => !v)}
         aria-label="More map controls"
         aria-expanded={open}
         title="More controls"
       >
-        ☰
+        ⋮
       </button>
       <div
         className={`toolbar-overflow__items${open ? " toolbar-overflow__items--open" : ""}`}

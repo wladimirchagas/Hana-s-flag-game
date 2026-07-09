@@ -866,7 +866,7 @@ export default function LearnPage() {
             </p>
           )}
         </ToolbarOverflow>
-        <hr className="world-map__zoom-divider" />
+        <hr className="world-map__zoom-divider world-map__zoom-divider--era" />
         <EraPicker currentEraId={eraId} onEraChange={setEraId} />
       </>
     ),
@@ -948,6 +948,25 @@ export default function LearnPage() {
     display?.kind === "modern" && !FLAGCDN_FALLBACK_EXCLUDED.has(display.country.code)
       ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
       : null
+
+  // Compact "Add to my list" +/✓ button, rendered inside the country-search row
+  // so it sits centred against the dropdown. Modern-era only.
+  const renderHanaCorner = (code: string, name: string) => {
+    if (!isModernEra) return null;
+    const inList = hanaCodes.includes(code);
+    return (
+      <button
+        type="button"
+        className={`learn-fs__hana-corner${inList ? " learn-fs__hana-corner--added" : ""}`}
+        onClick={() => toggleHanaForCode(code)}
+        aria-pressed={inList}
+        aria-label={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
+        title={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
+      >
+        {inList ? "✓" : "+"}
+      </button>
+    );
+  };
 
   // Stable id for the currently-displayed entity — used by FlagGrid to
   // highlight the matching tile.
@@ -1152,36 +1171,6 @@ export default function LearnPage() {
 
       <div className="learn-fs__panel-wrap">
         <aside className="learn-fs__panel" aria-live="polite">
-          {isModernEra && (() => {
-            // "Add to my list" reduced to a compact +/✓ button in the widget's
-            // top-right corner (replacing the full-width row).
-            const code =
-              display?.kind === "modern"
-                ? display.country.code
-                : subdivisionMode && subdivisionCountry
-                  ? subdivisionCountry.code
-                  : null;
-            const name =
-              display?.kind === "modern"
-                ? display.country.name
-                : subdivisionMode && subdivisionCountry
-                  ? subdivisionCountry.name
-                  : "";
-            if (!code) return null;
-            const inList = hanaCodes.includes(code);
-            return (
-              <button
-                type="button"
-                className={`learn-fs__hana-corner${inList ? " learn-fs__hana-corner--added" : ""}`}
-                onClick={() => toggleHanaForCode(code)}
-                aria-pressed={inList}
-                aria-label={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
-                title={inList ? `Remove ${name} from your list` : `Add ${name} to your list`}
-              >
-                {inList ? "✓" : "+"}
-              </button>
-            );
-          })()}
           <div className="learn-fs__detail">
             {subdivisionMode && subdivisionCountry && (
               <div className="learn-fs__search">
@@ -1190,9 +1179,10 @@ export default function LearnPage() {
                   value={codeToCountry.get(subdivisionCountry.code) ?? null}
                   onChange={(c) => { if (c) enterSubdivisionModeForCountry(c); }}
                   disabled={countries.length === 0}
-                  label="Find a country's subdivisions"
+                  label="Choose a country's subdivisions"
                   listPlacement="down"
                 />
+                {renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)}
               </div>
             )}
             {isModernEra && !subdivisionMode && (
@@ -1205,9 +1195,11 @@ export default function LearnPage() {
                     setHovered(null);
                   }}
                   disabled={countries.length === 0}
-                  label="Find a country"
+                  label="Choose a country"
                   listPlacement="down"
                 />
+                {display?.kind === "modern" &&
+                  renderHanaCorner(display.country.code, display.country.name)}
               </div>
             )}
             {display ? (
@@ -1257,38 +1249,40 @@ export default function LearnPage() {
                   />
                 )}
                 {flagUrl && !flagLoadFailed ? (
-                  <button
-                    type="button"
-                    className="learn-fs__flag"
-                    onClick={() => setZoomedFlagUrl(flagUrl)}
-                    aria-label={`Enlarge ${selectionName(display)} flag`}
-                  >
-                    <img
-                      src={flagUrl}
-                      alt=""
-                      className="learn-fs__flag-img"
-                      draggable={false}
-                      onError={(e) => {
-                        const img = e.currentTarget;
-                        if (flagPngFallback && img.src !== flagPngFallback) {
-                          img.src = flagPngFallback;
-                        } else {
-                          setFlagLoadFailed(true);
-                        }
-                      }}
-                    />
-                    <span className="learn-fs__flag-hint" aria-hidden="true">
-                      ⤢ Click to enlarge
-                    </span>
-                  </button>
+                  <div className="learn-fs__flag-box">
+                    <button
+                      type="button"
+                      className="learn-fs__flag"
+                      onClick={() => setZoomedFlagUrl(flagUrl)}
+                      aria-label={`Enlarge ${selectionName(display)} flag`}
+                    >
+                      <img
+                        src={flagUrl}
+                        alt=""
+                        className="learn-fs__flag-img"
+                        draggable={false}
+                        onError={(e) => {
+                          const img = e.currentTarget;
+                          if (flagPngFallback && img.src !== flagPngFallback) {
+                            img.src = flagPngFallback;
+                          } else {
+                            setFlagLoadFailed(true);
+                          }
+                        }}
+                      />
+                      <span className="learn-fs__flag-hint" aria-hidden="true">
+                        ⤢ Click to enlarge
+                      </span>
+                    </button>
+                    {display.kind === "modern" && (
+                      <FlagMeaning code={display.country.code} />
+                    )}
+                  </div>
                 ) : (
                   <p className="learn-fs__no-flag">
                     No flag image — this polity predates modern flag design
                     or none survives.
                   </p>
-                )}
-                {display.kind === "modern" && (
-                  <FlagMeaning code={display.country.code} />
                 )}
                 {display.kind === "modern" && isModernEra && (
                   <div className="learn-fs__subdiv-row">
@@ -1312,24 +1306,28 @@ export default function LearnPage() {
                                   🌐 UN Non-Self-Governing Territory
                                 </p>
                               )}
-                              {sdUrl && (
-                                <button
-                                  type="button"
-                                  className="learn-fs__flag"
-                                  onClick={() => setZoomedFlagUrl(sdUrl)}
-                                  aria-label={`Enlarge ${selectedSubdivision.name} flag`}
-                                >
-                                  <img
-                                    src={sdUrl}
-                                    alt=""
-                                    className="learn-fs__flag-img"
-                                    draggable={false}
-                                    onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-                                  />
-                                  <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                                </button>
+                              {sdUrl ? (
+                                <div className="learn-fs__flag-box">
+                                  <button
+                                    type="button"
+                                    className="learn-fs__flag"
+                                    onClick={() => setZoomedFlagUrl(sdUrl)}
+                                    aria-label={`Enlarge ${selectedSubdivision.name} flag`}
+                                  >
+                                    <img
+                                      src={sdUrl}
+                                      alt=""
+                                      className="learn-fs__flag-img"
+                                      draggable={false}
+                                      onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                                    />
+                                    <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                                  </button>
+                                  <FlagMeaning code={selectedSubdivision.code} />
+                                </div>
+                              ) : (
+                                <FlagMeaning code={selectedSubdivision.code} />
                               )}
-                              <FlagMeaning code={selectedSubdivision.code} />
                               {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code] && (
                                 <p className="learn-fs__unofficial-note">
                                   {selectedSubdivision.name}. {UNOFFICIAL_SUBDIV_NOTES[selectedSubdivision.code]}
