@@ -415,7 +415,7 @@ export const HistoricalMap = memo(function HistoricalMap({
             aria-label="Reset zoom"
             title="Reset zoom"
           >
-            ⟲
+            ⛶
           </button>
           {extraControls}
         </div>

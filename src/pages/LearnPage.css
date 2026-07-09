@@ -163,6 +163,9 @@
   flex: 0 1 360px;
   min-width: 220px;
   max-width: 420px;
+  /* Keep the search pinned to the right (above the panel/widget), where it sat
+     before the Period pill was moved out of this row. */
+  margin-left: auto;
 }
 
 .learn-toolbar__search .dropdown {
@@ -191,8 +194,10 @@
 .learn-fs {
   position: relative;
   display: grid;
-  /* Panel column shrinks first; map column expands to fill. */
-  grid-template-columns: 1fr clamp(260px, 22vw, 320px);
+  /* Panel column shrinks first; map column expands to fill. The panel is
+     wider now that the map controls sit ABOVE the map (not in a right-hand
+     column), reclaiming that strip for the country/flag widget. */
+  grid-template-columns: 1fr clamp(320px, 30vw, 440px);
   /* Row auto-sizes to content so no artificial blank space forms below the
      map on smaller screens (iPads, laptops). The flag-grid sibling below is
      never covered because the row always expands to fit the tallest column. */
@@ -226,7 +231,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  overflow: hidden;
+  /* `visible` (not hidden) so the Period dropdown in the map-controls toolbar
+     above the map can extend past the map's bottom edge without being clipped.
+     The map SVG is width-constrained (100%), so this doesn't cause page
+     horizontal scroll. */
+  overflow: visible;
   padding: 0.25rem 0.25rem 0;
 }
 
@@ -259,6 +268,73 @@
   width: 100%;
   height: auto;
   max-width: none;
+}
+
+/* === Map controls moved ABOVE the map (Learn mode only) ==================
+   The zoom / rotation / view / overlay controls normally sit as a vertical
+   stack to the RIGHT of the map. In Learn mode we lay them out as a
+   horizontal toolbar ABOVE the map instead, which frees the right-hand strip
+   so the detail panel can be wider. Scoped to .learn-fs__map so the games'
+   maps keep the right-hand stack. */
+.learn-fs__map .map-with-zoom {
+  /* Children are [.map-frame, .world-map__zoom-controls]; column-reverse puts
+     the controls on top and the map below. */
+  flex-direction: column-reverse;
+  align-items: stretch;
+  gap: 0.4rem;
+}
+
+.learn-fs__map .world-map__zoom-controls {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem 0.4rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--paper);
+  border: 2px solid var(--ink-faint);
+  border-radius: 14px;
+}
+
+/* Dividers turn into vertical separators inside the horizontal toolbar. */
+.learn-fs__map .world-map__zoom-divider {
+  border-top: 0;
+  border-left: 2px solid var(--ink);
+  opacity: 0.18;
+  width: 0;
+  height: 1.7rem;
+  margin: 0 0.15rem;
+  align-self: center;
+}
+
+/* "Map layers" label + capitals legend flow inline in the toolbar. */
+.learn-fs__map .world-map__layers-title {
+  align-self: center;
+}
+
+.learn-fs__map .world-map__layer-legend {
+  max-width: none;
+  align-self: center;
+  text-align: left;
+}
+
+/* Country search sits at the top of the panel column, immediately above the
+   country/flag widget. In the two-column desktop layout it lines up with the
+   map-controls toolbar (both are the first row of .learn-fs); when the grid
+   collapses to one column on mobile it stacks directly above the widget rather
+   than being stranded at the very top of the page. */
+.learn-fs__topsearch {
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
+.learn-fs__topsearch .dropdown {
+  margin: 0;
+}
+
+.learn-fs__topsearch .dropdown-label {
+  font-size: 0.7rem;
+  margin-bottom: 0.15rem;
 }
 
 /* === Right-column panel ============================================
@@ -1975,7 +2051,7 @@
    block, and source links. Data + rules: src/data/flagMeanings.ts. */
 .flag-meaning {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   margin: 0.5rem auto 0;
   text-align: left;
 }
