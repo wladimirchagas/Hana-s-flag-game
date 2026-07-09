@@ -1,7 +1,10 @@
+# MY-15 (Labuan) & MY-16 (Putrajaya) federal territories — RE-VERIFIED against Flags of the World 2026-07:
+#   FOTW has no flag page for either (my-labuan, my-putrajaya both 404). Their flags are modern territory
+#   designs with no reachable per-element symbolism. US-UM (US Minor Outlying Islands) is a group of
+#   uninhabited islands with no flag of its own. Confirmed walls.
 MY-15 MY-16
 US-UM
- 
- 
+
 # MT local councils — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/mt-NN.html).
 #   NOTE: FOTW's mt-NN page numbers are NOT the ISO 3166-2 MT-NN codes — FOTW numbers the 11 cities first
 #   then villages alphabetically, so each council was matched by NAME. Maltese council flags are armorial
@@ -171,11 +174,10 @@ DK-81 DK-82 DK-83 DK-84 DK-85
 # reachable per-element symbolism. Investigated across a representative sample per country;
 # all remaining codes logged as omitted rather than fabricated. =====
 
-# NG (state flags image-only) — 32 codes
-#   Re-verified 2026-07: Nigerian state flags are inconsistent and largely unofficial
-#   (many are the national coat of arms in a ring; some states revived pre-1975 designs),
-#   documented mainly on blogs, not authoritative sources with per-element symbolism.
-#   Confirmed wall — stays omitted.
+# NG states — RE-VERIFIED against Flags of the World 2026-07: FOTW has no per-state flag page for Nigeria.
+#   Nigerian state flags are inconsistent and largely unofficial (many are the national coat of arms in a
+#   ring; some states revived pre-1975 designs), documented mainly on blogs, not authoritative sources with
+#   per-element symbolism. Confirmed wall — stays omitted.
 NG-AD NG-AK NG-AN NG-BA NG-BE NG-BY NG-EB NG-ED NG-EN NG-FC NG-GO NG-IM NG-JI NG-KD NG-KE NG-KN NG-KO NG-KT NG-KW NG-LA NG-NA NG-NI NG-OG NG-ON NG-OS NG-OY NG-PL NG-RI NG-SO NG-TA NG-YO NG-ZA
 # EG (governorate emblems image-only) — 26 codes
 EG-ALX EG-ASN EG-AST EG-BA EG-BH EG-BNS EG-C EG-DK EG-DT EG-FYM EG-GH EG-GZ EG-IS EG-JS EG-KB EG-KFS EG-KN EG-LX EG-MNF EG-MT EG-PTS EG-SHG EG-SHR EG-SIN EG-SUZ EG-WAD
@@ -246,8 +248,10 @@ MU-PL MU-RO
 #   use a plain white flag with the arms or a logo and gives no per-element symbolism (Cusco, Ancash,
 #   Ayacucho, Tacna: "no information available").
 PE-ANC PE-APU PE-AYA PE-CAJ PE-CUS PE-HUC PE-HUV PE-ICA PE-JUN PE-LAL PE-LOR PE-MOQ PE-PIU PE-TAC PE-TUM PE-UCA
-# PG (provincial flags image-only (en.wikipedia)) — 22 codes
-# TW (city/county logos, no per-element symbolism (en/zh.wikipedia)) — 20 codes
+# TW cities/counties — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/tw-XXX.html).
+#   (PNG's provinces, formerly grouped here, are now sourced in flagMeanings.ts.) Taiwan's city/county
+#   "flags" are modern municipal LOGOS, not heraldic flags — e.g. FOTW's Taipei page (tw-tpe) is the 2010
+#   corporate logo (a stylised 北 and city flower). No per-element symbolism to source. Confirmed wall.
 TW-CHA TW-CYI TW-CYQ TW-HSQ TW-HSZ TW-HUA TW-ILA TW-KEE TW-KHH TW-KIN TW-MIA TW-NAN TW-PEN TW-PIF TW-TAO TW-TNN TW-TPE TW-TTT TW-TXG TW-YUN
 # PY departments — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/py-NN.html).
 #   FOTW documents per-element symbolism for Caaguazú (PY-5), Itapúa (PY-7), Central (PY-11) and
@@ -297,13 +301,17 @@ GA-1 GA-2 GA-3 GA-4 GA-6 GA-7 GA-8 GA-9
 #   per-element symbolism (Comayagua, Copán, Francisco Morazán/Tegucigalpa, Ocotepeque, Santa Bárbara),
 #   and Olancho (HN-OL) has never had an official flag — only a recent unofficial private design.
 HN-CM HN-CP HN-FM HN-OC HN-OL HN-SB
-# SO (regional flags image-only (en.wikipedia)) — 6 codes
+# SO regions — RE-VERIFIED against Flags of the World 2026-07: FOTW has no per-region flag page for
+#   Somalia (so-.html 404). Somali administrative regions have no distinct official flags — no reachable
+#   per-element symbolism. Confirmed wall.
 SO-BK SO-BN SO-BR SO-BY SO-GE SO-SH
 # VU (provincial flags image-only (en.wikipedia)) — 5 codes
 #   Re-verified 2026-07 against FOTW (vu-.html) and Wikipedia: no reachable per-element
 #   symbolism; the government publishes no flag spec. Confirmed wall — stays omitted.
 VU-MAP VU-PAM VU-SAM VU-SEE VU-TAE
-# BH (governorate flags image-only (en.wikipedia)) — 4 codes
+# BH governorates — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/bh-.html).
+#   FOTW shows the four governorate flags (Capital, Muharraq, Northern, Southern) but gives NO symbolic
+#   interpretation — they are plain administrative flags with no reachable per-element meaning. Wall.
 BH-13 BH-14 BH-15 BH-17
 # CV municipalities — RE-VERIFIED against Flags of the World 2026-07: FOTW has no per-municipality flag
 #   page for Cape Verde (cv-praia.html etc. 404). No reachable per-element symbolism. Confirmed wall.
@@ -318,22 +326,12 @@ GH-AA GH-AH GH-EP GH-TV
 CU-06 CU-11 CU-14
 # WF (kingdom flags image-only / no dedicated article (Uvea/Sigave/Alo)) — 3 codes
 WF-AL WF-SG WF-UV
-# AG (parish/dependency flags image-only (en.wikipedia)) — 1 codes
-AG-10
-# BA (Brčko District flag image-only (en.wikipedia)) — 1 codes
-BA-BRC
-# BW (district flags image-only (en.wikipedia)) — 1 codes
-BW-GA
-# DJ (region flag image-only (en.wikipedia)) — 1 codes
-DJ-DJ
-# GM (Banjul flag image-only (en.wikipedia)) — 1 codes
-GM-B
-# GW (Bissau flag image-only (en.wikipedia)) — 1 codes
-GW-BS
-# MZ (Maputo City flag image-only (en.wikipedia)) — 1 codes
-MZ-MPM
-# ST (Príncipe autonomous-region flag image-only (en.wikipedia)) — 1 codes
-ST-P
+# Single-subdivision walls — RE-VERIFIED against Flags of the World 2026-07: FOTW has no dedicated flag
+#   page for any of these (ba-brc, gm-banjul, gw-bissau, mz-maputo, st-principe all 404), and no reachable
+#   per-element symbolism exists in the sources checked. AG-10 (Redonda/Barbuda dependency), Brčko District
+#   (BA-BRC), a Botswana district (BW-GA), a Djibouti region (DJ-DJ), Banjul (GM-B), Bissau (GW-BS),
+#   Maputo City (MZ-MPM) and the Príncipe autonomous region (ST-P). Confirmed walls.
+AG-10 BA-BRC BW-GA DJ-DJ GM-B GW-BS MZ-MPM ST-P
 CO-ATL  # Atlántico flag (white/red/white) — design documented but no per-element symbolism in dedicated article, dept article, or Commons blazon (rule 3a exhausted 2026-07-04)
 CO-CAU  # Cauca flag (green/gold/green) — dedicated "Bandera del Cauca" article states no colour symbolism; dept article + Commons file give none (rule 3a exhausted 2026-07-04)
 CO-SAP  # San Andrés y Providencia flag (white saltire on sky-blue) — no sourced per-element symbolism in flag article, dept article, or Commons (rule 3a exhausted 2026-07-04)
