@@ -9,6 +9,17 @@ interface Props {
   flagUrl: string | null;
   onClose: () => void;
   visible: boolean;
+  /**
+   * Create the (parked, non-autoplaying) YouTube player ahead of time, before
+   * the user opens the modal — set once a country is SELECTED. This is what
+   * makes autoplay work on iOS: because the player already exists when the user
+   * taps Play, the imperative play() can call playVideo() SYNCHRONOUSLY inside
+   * the tap gesture (iOS blocks a playVideo() that fires later, from onReady).
+   * Preloaded players are created with autoplay:0 so nothing plays until the
+   * tap — this is why pre-creating no longer resurrects the #495 stray-audio bug
+   * (which was caused by autoplay:1 on a parked, hidden player).
+   */
+  preload?: boolean;
 }
 
 function formatTime(s: number): string {
@@ -267,7 +278,7 @@ if (typeof window !== "undefined") {
 // ── Component ───────────────────────────────────────────────────────────────
 
 export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
-  ({ countryCode, countryName, flagUrl, onClose, visible }, ref) => {
+  ({ countryCode, countryName, flagUrl, onClose, visible, preload = false }, ref) => {
     const anthem: AnthemData | undefined = NATIONAL_ANTHEMS[countryCode];
 
     const visibleRef = useRef(visible);
@@ -477,17 +488,19 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
   }, [audioUrl, needsOgv]);
 
   // ── YouTube player setup ────────────────────────────────────────────────
+  // Create the player when the modal is OPEN, or ahead of time when a country
+  // is SELECTED (`preload`). Preloading is what fixes iOS autoplay: the player
+  // already exists when the user taps Play, so the imperative play() calls
+  // playVideo() synchronously inside the tap gesture (iOS blocks a playVideo()
+  // that fires later from onReady). Keyed on `wantYouTubePlayer` so merely
+  // toggling `visible` on an already-preloaded player does NOT tear it down and
+  // rebuild it. Parked (preload, not visible) players are created with
+  // autoplay:0, so pre-creating never resurrects the #495 stray-audio burst
+  // (that bug was autoplay:1 firing on a hidden, parked player).
+  const wantYouTubePlayer =
+    (visible || preload) && isYoutube && !!anthem?.youtubeId;
   useEffect(() => {
-    // Only create the YouTube player once the anthem is actually OPEN. The
-    // modal is always mounted (parked off-screen when hidden), so without this
-    // guard the iframe — which carries `autoplay: 1` — was built as soon as a
-    // country was selected. On mobile the queued autoplay then fired on the
-    // user's NEXT tap (e.g. the 📍 city toggle), producing a brief burst of
-    // hidden anthem audio before the "pause while invisible" effect silenced it.
-    // Gating creation on `visible` keeps the autoplay-on-open rule intact (the
-    // onReady handler below still plays when visible / pendingPlayRef) while
-    // never loading or autoplaying the anthem before the user opens it.
-    if (!visible || !isYoutube || !anthem?.youtubeId) return;
+    if (!wantYouTubePlayer || !anthem?.youtubeId) return;
 
     let cancelled = false;
     // Track the player created inside the async .then() so the outer cleanup
@@ -515,7 +528,9 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
         // `vq: hd1080` requests the highest resolution at the URL level (the
         // setPlaybackQuality API is deprecated on its own); `autoplay: 1` is the
         // first line of defence for the autoplay rule — see CLAUDE.md.
-        playerVars: { rel: 0, modestbranding: 1, autoplay: 1, vq: "hd1080", start: Math.max(0, Math.floor(anthem.youtubeIntroOffset ?? 0)) },
+        // autoplay:1 only when opening the modal; a preloaded (parked) player
+        // is created with autoplay:0 and started later via the in-gesture play().
+        playerVars: { rel: 0, modestbranding: 1, autoplay: visibleRef.current ? 1 : 0, vq: "hd1080", start: Math.max(0, Math.floor(anthem.youtubeIntroOffset ?? 0)) },
         events: {
           onReady: (e) => {
             if (cancelled) return;
@@ -580,7 +595,7 @@ export const NationalAnthemPlayer = forwardRef<{ play: () => void }, Props>(
       }
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visible, isYoutube, anthem]);
+  }, [wantYouTubePlayer, isYoutube, anthem]);
 
   // ── Native audio event handlers ─────────────────────────────────────────
   const handleTimeUpdate = useCallback(() => {

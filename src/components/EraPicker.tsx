@@ -47,7 +47,8 @@ export function EraPicker({
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
       >
-        Period: {currentEra.label}
+        <span className="learn-toolbar__era-prefix">Period: </span>
+        {currentEra.label}
         <span className="learn-toolbar__era-caption">({currentEra.caption})</span>
         <span className="learn-toolbar__caret" aria-hidden="true">
           ▾

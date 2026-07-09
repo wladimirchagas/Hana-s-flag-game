@@ -318,6 +318,69 @@
   text-align: left;
 }
 
+/* === Toolbar overflow (☰) ============================================
+   Keeps the map-controls toolbar on ONE line. On wide screens the wrapper is
+   transparent (display:contents) so its controls lay out inline; on narrow
+   screens they collapse into a popover behind a ☰ button. */
+.toolbar-overflow {
+  display: contents;
+}
+.toolbar-overflow__toggle {
+  display: none;
+}
+.toolbar-overflow__items {
+  display: contents;
+}
+
+@media (max-width: 680px) {
+  .toolbar-overflow {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+  }
+  .toolbar-overflow__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toolbar-overflow__items {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.45rem);
+    right: 0;
+    z-index: 60;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.55rem;
+    max-width: 13rem;
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 14px;
+    box-shadow: 0 6px 0 var(--ink), 0 12px 28px rgba(26, 34, 56, 0.22);
+  }
+  .toolbar-overflow__items--open {
+    display: flex;
+  }
+  .toolbar-overflow__items .world-map__layer-legend {
+    flex: 1 1 100%;
+    max-width: none;
+    text-align: center;
+  }
+
+  /* Compact the Period pill so the single-line toolbar fits on phones: drop the
+     "Period:" prefix and the "(caption)" so it reads just e.g. "Today ▾". */
+  .learn-toolbar__era-prefix,
+  .learn-toolbar__era-caption {
+    display: none;
+  }
+  .learn-fs__map .learn-toolbar__era-pill {
+    padding: 0.4rem 0.7rem;
+  }
+}
+
 /* Country search sits at the top of the panel column, immediately above the
    country/flag widget. In the two-column desktop layout it lines up with the
    map-controls toolbar (both are the first row of .learn-fs); when the grid
@@ -359,6 +422,7 @@
 }
 
 .learn-fs__panel {
+  position: relative;
   width: 100%;
   background: var(--paper);
   border: 4px solid var(--ink);
@@ -368,6 +432,80 @@
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+}
+
+/* "Add to my list" as a compact +/✓ button in the widget's top-right corner
+   (replaces the old full-width Hana's-Game row). */
+.learn-fs__hana-corner {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  z-index: 6;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--mustard, var(--lemon, #ffe58a));
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.learn-fs__hana-corner:hover,
+.learn-fs__hana-corner:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+  background: var(--coral);
+  color: #fff;
+}
+
+.learn-fs__hana-corner:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.learn-fs__hana-corner--added {
+  background: var(--green, #2ecc71);
+  color: #fff;
+}
+
+.learn-fs__hana-corner--added:hover,
+.learn-fs__hana-corner--added:focus-visible {
+  background: var(--coral);
+  color: #fff;
+}
+
+/* Search bar that lives at the top of the widget and doubles as its title
+   (the selected country's name shows in the input, so no separate heading).
+   Right padding leaves room for the +/✓ corner button. */
+.learn-fs__widget-search {
+  width: 100%;
+  padding-right: 2.4rem;
+  text-align: left;
+}
+
+.learn-fs__widget-search .dropdown {
+  margin: 0;
+}
+
+.learn-fs__widget-search .dropdown-label {
+  font-size: 0.7rem;
+  margin-bottom: 0.15rem;
+}
+
+/* The subdivision search shares the top-of-widget position, so it also needs
+   room for the corner button. */
+.learn-fs__search {
+  padding-right: 2.4rem;
 }
 
 .learn-fs__detail {
@@ -1192,18 +1330,23 @@
   box-shadow: 0 3px 0 var(--ink);
 }
 
-/* Controls cluster: text filter + group-by, right of the section title. */
+/* Controls cluster: text filter + group-by, right of the section title.
+   nowrap keeps the filter on the SAME line as "Group by" whenever they share a
+   row — the filter shrinks (min-width:0) rather than dropping to its own line. */
 .flag-grid__controls {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  gap: 0.6rem;
+  flex-wrap: nowrap;
+  min-width: 0;
 }
 
 .flag-grid__filter {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  flex: 1 1 auto;
+  min-width: 0;
   padding: 0.3rem 0.6rem;
   background: var(--paper);
   border: 3px solid var(--ink);
@@ -1231,7 +1374,8 @@
   background: transparent;
   border: 0;
   outline: none;
-  width: clamp(7rem, 18vw, 11rem);
+  width: 100%;
+  min-width: 0;
   padding: 0.1rem 0;
 }
 
@@ -1485,6 +1629,15 @@
   .flag-grid__select {
     font-size: 0.82rem;
     padding: 0.32rem 1.85rem 0.32rem 0.7rem;
+  }
+  /* Give the controls their own full-width row under the title so the filter
+     and "Group by" sit together on one line with room to shrink. */
+  .flag-grid__controls {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+  .flag-grid__group-select {
+    flex: 0 0 auto;
   }
 }
 

@@ -22,6 +22,9 @@ export type ModernSummaryProps = {
    *  starts collapsed on narrow (≤900px) screens so the flag isn't pushed
    *  below the fold. No rows are removed — they're one tap away. */
   collapsible?: boolean;
+  /** Extra content rendered at the bottom of the fact list (inside the
+   *  "Details" disclosure when collapsible) — e.g. the National Anthem row. */
+  footer?: React.ReactNode;
 };
 
 export type HistoricalSummaryProps = {
@@ -56,7 +59,6 @@ export function EntitySummary(props: EntitySummaryProps) {
     const c = props.country;
     const government = GOVERNMENT_TYPES[c.code];
     const rows: { label: string; value: React.ReactNode }[] = [];
-    if (c.subregion) rows.push({ label: "Region", value: c.subregion });
     if (c.nameOfficial && c.nameOfficial !== c.name)
       rows.push({ label: "Official name", value: c.nameOfficial });
     if (c.capital) rows.push({ label: "Capital", value: c.capital });
@@ -73,7 +75,17 @@ export function EntitySummary(props: EntitySummaryProps) {
         value: c.currencies.map(formatCurrency).join(", "),
       });
     if (government) rows.push({ label: "Government", value: government });
-    return <SummaryList rows={rows} collapsible={props.collapsible} />;
+    // Continent + Region shown last (the country name now lives in the search
+    // bar at the top of the widget, and its continent/region moved here).
+    if (c.continent) rows.push({ label: "Continent", value: c.continent });
+    if (c.subregion) rows.push({ label: "Region", value: c.subregion });
+    return (
+      <SummaryList
+        rows={rows}
+        collapsible={props.collapsible}
+        footer={props.footer}
+      />
+    );
   }
 
   // Historical — sparser, with the curated note shown above the fact list.
@@ -94,9 +106,11 @@ export function EntitySummary(props: EntitySummaryProps) {
 function SummaryList({
   rows,
   collapsible = false,
+  footer,
 }: {
   rows: { label: string; value: React.ReactNode }[];
   collapsible?: boolean;
+  footer?: React.ReactNode;
 }) {
   // Start collapsed only on narrow screens — on desktop the panel has room, so
   // the fact sheet stays expanded exactly as before. SPA (no SSR), so reading
@@ -110,9 +124,9 @@ function SummaryList({
     }
   });
 
-  if (rows.length === 0) return null;
+  if (rows.length === 0 && !footer) return null;
 
-  const list = (
+  const list = rows.length > 0 && (
     <dl className="entity-summary">
       {rows.map((r) => (
         <div className="entity-summary__row" key={r.label}>
@@ -123,7 +137,14 @@ function SummaryList({
     </dl>
   );
 
-  if (!collapsible) return list;
+  if (!collapsible) {
+    return (
+      <>
+        {list}
+        {footer}
+      </>
+    );
+  }
 
   return (
     <details
@@ -136,6 +157,7 @@ function SummaryList({
         <span className="entity-summary__summary-count">{rows.length}</span>
       </summary>
       {list}
+      {footer}
     </details>
   );
 }
