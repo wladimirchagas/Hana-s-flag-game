@@ -146,10 +146,12 @@ GB-ANS
 GB-GWN
 TH-30
 
-# Hungarian cities with county rights: flag = the city coat of arms on a field, but neither
-# hu.wikipedia nor en.wikipedia blazons the arms element-by-element (only grant date is given),
-# so no sourced per-element symbolism is reachable. Omitted rather than fabricate.
-HU-GY HU-KM HU-SD HU-SF HU-NK HU-SK HU-TB
+# HU cities with county rights — RE-VERIFIED against Flags of the World 2026-07. FOTW documents Győr's
+#   arms symbolism (crwflags.com/fotw/flags/hu-gyor.html) — now sourced in flagMeanings.ts. FOTW's simple
+#   city-slug pages 404 for the others and its Hungarian pages are county-nested and not locatable by
+#   name; en.wikipedia and the dedicated "<city> címere" hu.wikipedia articles give only the arms image /
+#   grant date with no reachable per-element blazon. The 6 below stay omitted rather than fabricate.
+HU-KM HU-SD HU-SF HU-NK HU-SK HU-TB
 
 # Liberian counties: all now sourced in flagMeanings.ts from Flags of the World (each
 # county's lr-XX.html page), which documents the designs and much of the symbolism. The
@@ -211,8 +213,9 @@ ME-06 ME-08 ME-11 ME-13 ME-14 ME-15 ME-16 ME-17 ME-18 ME-19 ME-20 ME-21
 # SB (provincial flags image-only) — 10 codes
 # KG (oblast emblems image-only) — 8 codes
 KG-B KG-C KG-GB KG-J KG-N KG-O KG-T KG-Y
-# AD (parish arms image-only) — 7 codes
-AD-02 AD-03 AD-04 AD-05 AD-06 AD-07 AD-08
+# AD parishes — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/ad-N00.html).
+#   FOTW documents the parish emblem/arms symbolism for all 7 parishes — all now sourced in
+#   flagMeanings.ts. (No walls remaining.)
 # CR provinces — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/cr-X.html).
 #   FOTW documents per-element symbolism for Guanacaste (CR-G), Puntarenas (CR-P) and Limón (CR-L) —
 #   all now sourced in flagMeanings.ts. Walls: Alajuela (CR-A) and San José (CR-SJ) have no province
