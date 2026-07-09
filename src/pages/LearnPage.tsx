@@ -5,6 +5,7 @@ import { fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { LearnTopToolbar } from "../components/LearnTopToolbar";
+import { EraPicker } from "../components/EraPicker";
 import { CountryDropdown } from "../components/CountryDropdown";
 import { SITE_TOPBAR_LEFT_SLOT_ID } from "../components/Topbar";
 import { SubdivisionMap } from "../components/SubdivisionMap";
@@ -826,6 +827,8 @@ export default function LearnPage() {
     () => (
       <>
         <hr className="world-map__zoom-divider" />
+        <EraPicker currentEraId={eraId} onEraChange={setEraId} />
+        <hr className="world-map__zoom-divider" />
         <button
           type="button"
           className="world-map__zoom-btn"
@@ -870,7 +873,7 @@ export default function LearnPage() {
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, showCities, toggleCities],
+    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, showCities, toggleCities, eraId, setEraId],
   );
 
   // Leaner control set for the subdivision map: just the flag-overlay
@@ -1012,13 +1015,9 @@ export default function LearnPage() {
           slot,
         );
       })()}
-      {/* Top toolbar: era selector (Today / Historical periods) + the
-          country search. */}
+      {/* Top toolbar: the country search. The historical-period selector now
+          lives in the map-controls toolbar above the map (EraPicker). */}
       <LearnTopToolbar
-        currentEraId={eraId}
-        onEraChange={setEraId}
-        isModernEra={isModernEra}
-        hideEraPicker={subdivisionMode}
         search={
           isModernEra && !subdivisionMode
             ? {

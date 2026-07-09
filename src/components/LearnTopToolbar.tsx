@@ -1,31 +1,19 @@
-import { useEffect, useRef, useState } from "react";
-import { ERAS, type Era } from "../lib/historicalEras";
 import { CountryDropdown } from "./CountryDropdown";
 import type { Country } from "../api/countries";
 
 /**
- * Top-of-page toolbar for the Learn map.
+ * Top-of-page toolbar for the Learn map — now just the country search.
  *
- * Two controls on one row:
- *   1. Era selector — a "Today" pill and a "Historical periods" pill.
- *      Selecting the latter pops a dropdown listing every historical
- *      era so the user picks the year they want. The current selection
- *      is reflected in the pill's label ("Historical periods · 1914").
- *   2. Country search — the same CountryDropdown that used to live
- *      inside the right-hand panel; promoted up here so it's accessible
- *      without scrolling.
+ * The historical-period selector used to live here too, but it was moved into
+ * the map-controls toolbar above the map (see EraPicker, rendered as one of the
+ * map's extra controls) to save a row of vertical space.
  *
- * The search column is rendered as an empty placeholder on historical
- * eras (the dropdown only makes sense for the modern 195-country set).
+ * The search column renders a hint instead of the dropdown on historical eras /
+ * subdivision mode (the dropdown only makes sense for the modern 195-country
+ * set), signalled by a null `search` prop.
  */
 export type LearnTopToolbarProps = {
-  currentEraId: Era["id"];
-  onEraChange: (id: Era["id"]) => void;
-  /** Whether the era selector is on "Today" (modern era). */
-  isModernEra: boolean;
-  /** Hides the era/period picker — used in subdivision mode where era is fixed. */
-  hideEraPicker?: boolean;
-  /** Search props — null in historical eras to hide the search. */
+  /** Search props — null in historical eras / subdivision mode to hide the search. */
   search: {
     countries: readonly Country[];
     value: Country | null;
@@ -34,100 +22,9 @@ export type LearnTopToolbarProps = {
   } | null;
 };
 
-export function LearnTopToolbar({
-  currentEraId,
-  onEraChange,
-  hideEraPicker,
-  search,
-}: LearnTopToolbarProps) {
-  const [historicalOpen, setHistoricalOpen] = useState(false);
-  const historicalRef = useRef<HTMLDivElement>(null);
-
-  // Close the historical-eras submenu on outside click / Escape, so it
-  // behaves like a real dropdown rather than a sticky modal.
-  useEffect(() => {
-    if (!historicalOpen) return;
-    function onDocClick(e: MouseEvent) {
-      if (!historicalRef.current) return;
-      if (!historicalRef.current.contains(e.target as Node)) {
-        setHistoricalOpen(false);
-      }
-    }
-    function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setHistoricalOpen(false);
-    }
-    document.addEventListener("mousedown", onDocClick);
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("mousedown", onDocClick);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [historicalOpen]);
-
-  const currentEra = ERAS.find((e) => e.id === currentEraId) ?? ERAS[ERAS.length - 1];
-
+export function LearnTopToolbar({ search }: LearnTopToolbarProps) {
   return (
     <div className="learn-toolbar">
-      {!hideEraPicker && <div className="learn-toolbar__eras">
-        <div className="learn-toolbar__historical" ref={historicalRef}>
-          <button
-            type="button"
-            className="learn-toolbar__era-pill learn-toolbar__era-pill--active"
-            aria-haspopup="listbox"
-            aria-expanded={historicalOpen}
-            onClick={() => setHistoricalOpen((v) => !v)}
-          >
-            Period: {currentEra.label}
-            <span className="learn-toolbar__era-caption">
-              ({currentEra.caption})
-            </span>
-            <span className="learn-toolbar__caret" aria-hidden="true">
-              ▾
-            </span>
-          </button>
-          {historicalOpen && (
-            <ul
-              className="learn-toolbar__era-menu"
-              role="listbox"
-              aria-label="Choose a period"
-            >
-              {[...ERAS].reverse().map((era) => {
-                const active = era.id === currentEraId;
-                const isToday = era.id === "today";
-                return (
-                  <li key={era.id} role="presentation">
-                    <button
-                      type="button"
-                      role="option"
-                      aria-selected={active}
-                      className={`learn-toolbar__era-option${
-                        active ? " learn-toolbar__era-option--active" : ""
-                      }${isToday ? " learn-toolbar__era-option--today" : ""}`}
-                      onClick={() => {
-                        onEraChange(era.id);
-                        setHistoricalOpen(false);
-                      }}
-                    >
-                      <span className="learn-toolbar__era-option-period">
-                        {era.label}
-                        {isToday && (
-                          <span className="learn-toolbar__era-today-badge" aria-label="current era">
-                            NOW
-                          </span>
-                        )}
-                      </span>
-                      <span className="learn-toolbar__era-option-caption">
-                        {era.caption}
-                      </span>
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-        </div>
-      </div>}
-
       <div className="learn-toolbar__search">
         {search ? (
           <CountryDropdown
