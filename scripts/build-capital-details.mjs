@@ -158,6 +158,8 @@ const CAPITAL_CITY_QIDS = {
 const CAPITAL_FLAG_SOURCE_OVERRIDES = {
   "PT-13": "Flag of Porto.svg", // Porto (Porto district) — municipal flag; the city item's P41 is Portugal's national flag
   "AU-NSW": "Flag of the City of Sydney.svg", // Sydney (New South Wales) — City of Sydney banner of arms; the "Sydney" item has no P41
+  "AU-WA": "Flag of Perth.svg", // Perth (Western Australia) — official City of Perth flag (St George cross + black swan; perth.wa.gov.au); no P41
+  "AU-NT": "Flag of Darwin.svg", // Darwin (Northern Territory) — City of Darwin flag (arms on green/white/red); no P41
 };
 
 const yearOf = (iso) => {
