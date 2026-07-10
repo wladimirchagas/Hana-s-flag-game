@@ -652,4 +652,143 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       { title: "Vitebsk — Wikipedia", url: "https://en.wikipedia.org/wiki/Vitebsk" },
     ],
   },
+
+  // ── Brussels — capital of Belgium ───────────────────────────────────────────
+  "BE-BRU": {
+    description:
+      "A horizontally divided green-and-red flag bearing a large golden silhouette of the Archangel " +
+      "Michael slaying the Devil with a cross-shaped spear — the flag of the City of Brussels. Saint " +
+      "Michael is the city’s patron (its cathedral is dedicated to Saints Michael and Gudula), and the " +
+      "archangel defeating the dragon, a symbol of the triumph of good over evil, has appeared on the " +
+      "city’s seal since the 13th century.",
+    sources: [
+      {
+        title: "Symbols of Brussels — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Symbols_of_Brussels",
+      },
+      {
+        title: "Brussels (Municipality) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-bxlbr.html",
+      },
+    ],
+  },
+
+  // ── Antwerp — capital of the Antwerp Province, Belgium ──────────────────────
+  "BE-VAN": {
+    description:
+      "A red-white-red horizontal triband — the flag of the City of Antwerp, its colours taken from the " +
+      "city arms (a red castle flanked by two white hands). The hands are canting arms tied to the folk " +
+      "etymology of the name: the legend of Silvius Brabo, who slew the giant Antigoon and threw his " +
+      "severed hand into the river Scheldt — “hand werpen” (“hand-throwing”), giving “Antwerpen”. The " +
+      "castle stands for the city itself.",
+    sources: [
+      {
+        title: "Antwerp (Municipality) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-vanan.html",
+      },
+    ],
+  },
+
+  // ── Leuven — capital of the Flemish Brabant Province, Belgium ───────────────
+  "BE-VBR": {
+    description:
+      "A red-white-red horizontal triband — the civic colours of Leuven, taken from the city arms. By " +
+      "legend the red and white recall the blood-stained banks of the river Dyle after the Battle of " +
+      "Leuven in 891, in which the East Frankish king Arnulf defeated a Viking army (a legend of the " +
+      "same kind told of the flags of Austria and Latvia).",
+    sources: [
+      { title: "Leuven — Wikipedia", url: "https://en.wikipedia.org/wiki/Leuven" },
+    ],
+  },
+
+  // ── Hasselt — capital of the Limburg Province, Belgium ──────────────────────
+  "BE-VLI": {
+    description:
+      "A flag of alternating white and green stripes (white-green-white-green-white) — the colours of " +
+      "the arms of Hasselt. Those arms halve the golden-and-red bars of the medieval County of Loon " +
+      "with a green hazel tree on silver; the hazel tree is canting arms, punning on the city’s name " +
+      "(Dutch hazel → Hasselt). The green-and-white stripes derive from that hazel-tree half of the " +
+      "shield.",
+    sources: [
+      {
+        title: "Hasselt (Municipality) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-vlihs.html",
+      },
+    ],
+  },
+
+  // ── Wavre — capital of the Walloon Brabant Province, Belgium ────────────────
+  "BE-WBR": {
+    description:
+      "A white field bearing three green water-lily leaves arranged two-and-one — the flag of Wavre. " +
+      "The water-lily leaves are drawn from the city arms and evoke Wavre’s setting in the marshy valley " +
+      "of the river Dyle.",
+    sources: [
+      {
+        title: "Wavre (Municipality) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-wbrwv.html",
+      },
+    ],
+  },
+
+  // ── Mons — capital of the Hainaut Province, Belgium ─────────────────────────
+  "BE-WHT": {
+    description:
+      "A red-white-red vertical triband — the flag of the City of Mons, in the traditional red and white " +
+      "heraldic colours long associated with the town (an earlier version arranged the same colours as " +
+      "horizontal stripes).",
+    sources: [
+      {
+        title: "Mons (Municipality) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-whtms.html",
+      },
+    ],
+  },
+
+  // ── Liège — capital of the Liège Province, Belgium ──────────────────────────
+  "BE-WLG": {
+    description:
+      "A vertical bicolour of red and yellow — the traditional colours of the city of Liège, seat of the " +
+      "former Prince-Bishopric of Liège. The city’s own emblem is the perron: a stone column topped by " +
+      "a cross-bearing orb that stood in the market place and came to symbolise Liège’s ancient civic " +
+      "liberties and self-government.",
+    sources: [
+      {
+        title: "Perron of Liège — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Perron_of_Li%C3%A8ge",
+      },
+      {
+        title: "Liège (Belgium) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-wlg.html",
+      },
+    ],
+  },
+
+  // ── Arlon — capital of the Luxembourg Province, Belgium ─────────────────────
+  "BE-WLX": {
+    description:
+      "A white-and-light-blue flag — a simplification of the arms of Arlon, blazoned “barruly of ten " +
+      "argent and azure, a lion gules” (alternating silver and blue bars with a red lion). The oldest " +
+      "known seal of Arlon, from 1311, already shows a lion.",
+    sources: [
+      {
+        title: "Arlon (Municipality) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-wlxar.html",
+      },
+    ],
+  },
+
+  // ── Namur — capital of the Namur Province and of Wallonia, Belgium ──────────
+  "BE-WNA": {
+    description:
+      "A bicolour of black and yellow — the colours the city of Namur adopted in 1909, long historically " +
+      "associated with the town and the County of Namur (as distinct from the black-and-red the province " +
+      "later took). The county’s arms are a black lion with a red bend on gold.",
+    sources: [
+      {
+        title: "Namur (Belgium) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/be-wna.html",
+      },
+    ],
+  },
 };
