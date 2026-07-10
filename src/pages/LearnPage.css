@@ -1845,6 +1845,9 @@
   justify-content: center;
   width: 100%;
   aspect-ratio: 3 / 2;
+  /* Fixed-height flag box (never shrinks), so every node's flag sits at the
+     same Y — the flags in a tier stay aligned regardless of name length. */
+  flex: 0 0 auto;
 }
 
 .hierarchy__thumb-img {
@@ -1858,9 +1861,18 @@
 }
 
 .hierarchy__name {
+  /* Reserve a uniform two-line height so every node in a tier is the same
+     height — this keeps the flags (and the city row below them) aligned whether
+     a name is one line ("Chiba Prefecture") or two ("Aomori Prefecture"). The
+     text is centred in the reserved space. */
+  min-height: 2.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.78rem;
   font-weight: 700;
   line-height: 1.15;
+  text-align: center;
   overflow-wrap: anywhere;
 }
 

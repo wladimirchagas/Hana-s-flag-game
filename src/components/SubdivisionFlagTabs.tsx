@@ -121,7 +121,6 @@ export function SubdivisionFlagTabs({
         {tab === "tree" && (
           <SubdivisionHierarchyChart
             divisions={divisions}
-            countryCode={countryCode}
             countryName={countryName}
             countryFlagUrl={countryFlagUrl}
             selectedCode={selectedCode}
