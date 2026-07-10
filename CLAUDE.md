@@ -120,10 +120,23 @@ prompted by owner reports of a wrong Johor Bahru flag and missing Porto/Sydney f
    the *City of Sydney* LGA item, not the "Sydney" metro item, so `P41` is absent though the city plainly
    has a flag; Porto's real municipal flag ("Flag of Porto.svg") is likewise not the city item's `P41`.
    **"No `P41`" must NEVER be read as "no flag exists."** Before concluding a capital has no flag, verify
-   against Commons / the city's own Wikipedia infobox. Confirmed misses are corrected via the curated
-   `CAPITAL_FLAG_SOURCE_OVERRIDES` table in `build-capital-details.mjs` (app code → authoritative Commons
-   filename), which survives regeneration and is guarded by the same national-flag check and the
-   dangling-override check (an override naming an unbundled file fails the build).
+   against Commons / the city's own Wikipedia infobox. Two mechanisms correct misses, both surviving a
+   regen (see `loadExistingFlagSources` in `build-capital-details.mjs`):
+   - the curated `CAPITAL_FLAG_SOURCE_OVERRIDES` table in `build-capital-details.mjs` (app code →
+     authoritative Commons filename), for hand-verified special cases (Porto, Sydney, Perth, Darwin, and
+     the **Johor Bahru** correction — its `P41` points to a *different, wrong* file, so the owner-confirmed
+     `Flag of Johor Bahru, Johor.svg` is pinned here); guarded by the national-flag check and the
+     dangling-override check (an override naming an unbundled file fails the build).
+   - the systematic **`scripts/backfill-capital-flags.mjs`** sweep, which fills every remaining flagless
+     capital from the **collision-safe** source — the capital city's OWN en.wikipedia infobox flag,
+     resolved via the Wikidata sitelink of the exact capital item (so "Liberia, Costa Rica" can never pull
+     the country Liberia's flag). It rejects national flags, hypothetical/proposed/fictional designs,
+     "flag absent" placeholders (e.g. "Vlag ontbreekt …"), SVGs with no `xmlns` (which render blank), and
+     640×480 CDN placeholders; it falls back to the en.wikipedia file host for flags Commons doesn't hold.
+     **Every batch it produces MUST be visually montage-scanned** before committing — that pass is what
+     caught the Latvian "Vlag ontbreekt" placeholders, the Kärdla no-`xmlns` blank, and the Santiago de
+     Cuba caption-baked image (all removed). A caption/annotation baked into the image, a placeholder, or
+     a blank is NOT a flag — omit it.
 
 ### Rules
 

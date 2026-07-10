@@ -160,6 +160,7 @@ const CAPITAL_FLAG_SOURCE_OVERRIDES = {
   "AU-NSW": "Flag of the City of Sydney.svg", // Sydney (New South Wales) — City of Sydney banner of arms; the "Sydney" item has no P41
   "AU-WA": "Flag of Perth.svg", // Perth (Western Australia) — official City of Perth flag (St George cross + black swan; perth.wa.gov.au); no P41
   "AU-NT": "Flag of Darwin.svg", // Darwin (Northern Territory) — City of Darwin flag (arms on green/white/red); no P41
+  "MY-01": "Flag of Johor Bahru, Johor.svg", // Johor Bahru — owner-confirmed correct flag (blue/red diagonal, white crescent/star, from the Johor District administration); the capital item's P41 points to a DIFFERENT, wrong file (Flag of Johor Bahru.svg)
 };
 
 const yearOf = (iso) => {
@@ -299,6 +300,21 @@ async function fetchNationalFlags(ccList) {
   return map;
 }
 
+/**
+ * Load the previous flag-source manifest (code → Commons filename). Used to
+ * PRESERVE flag sources this run didn't re-derive — chiefly the infobox-backfill
+ * layer added by scripts/backfill-capital-flags.mjs (real municipal flags whose
+ * capital item has no P41), so a plain regen of THIS generator never silently
+ * drops them. Mirrors loadExisting() for capitalDetails.
+ */
+function loadExistingFlagSources() {
+  try {
+    return JSON.parse(readFileSync(FLAG_MANIFEST, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
 /** Load the previous run's rows so a transient failure can't drop coverage. */
 function loadExisting() {
   const out = new Map();
@@ -434,6 +450,17 @@ async function main() {
     overridden++;
   }
   if (overridden) console.log(`Applied ${overridden} capital-flag source override(s).`);
+
+  // Preserve infobox-backfilled flag sources (scripts/backfill-capital-flags.mjs)
+  // that this P41+override run didn't re-derive, so a regen never drops them.
+  let preservedFlags = 0;
+  for (const [code, filename] of Object.entries(loadExistingFlagSources())) {
+    if (!flagSources[code] && (appCodes.has(code) || metaCodes.has(code))) {
+      flagSources[code] = filename;
+      preservedFlags++;
+    }
+  }
+  if (preservedFlags) console.log(`Preserved ${preservedFlags} backfilled flag source(s) from the previous manifest.`);
 
   writeOutput(details, flagSources);
 }
