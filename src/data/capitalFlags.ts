@@ -52,6 +52,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── AU ──
   "AU-NF": "capital-flags/au-nf.svg",
+  "AU-NSW": "capital-flags/au-nsw.svg",
   "AU-QLD": "capital-flags/au-qld.svg",
   "AU-SA": "capital-flags/au-sa.svg",
   "AU-VIC": "capital-flags/au-vic.svg",
@@ -1105,6 +1106,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "PT-10": "capital-flags/pt-10.png",
   "PT-11": "capital-flags/pt-11.png",
   "PT-12": "capital-flags/pt-12.png",
+  "PT-13": "capital-flags/pt-13.png",
   "PT-14": "capital-flags/pt-14.png",
   "PT-20": "capital-flags/pt-20.png",
   "PT-30": "capital-flags/pt-30.svg",

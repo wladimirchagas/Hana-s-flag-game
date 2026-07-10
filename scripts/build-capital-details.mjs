@@ -134,6 +134,32 @@ const CAPITAL_CITY_QIDS = {
   "AU-NF": "Q31057", // Norfolk Island → Kingston (external territory, no P300)
 };
 
+/**
+ * Curated capital-flag source overrides — a FALLBACK/CORRECTION layer for the
+ * capital city's `wdt:P41`, keyed app subdivision code → Commons flag filename.
+ *
+ * WHY THIS EXISTS: sourcing a capital's flag ONLY from the city's Wikidata P41
+ * has two failure modes the audit (2026-07) found:
+ *   1. MISS — a real municipal flag exists on Commons but is not recorded in the
+ *      capital item's P41 (Sydney: the flag belongs to the City of Sydney LGA,
+ *      not the "Sydney" item), so it is silently absent though the city HAS a
+ *      flag. "No P41" must never be read as "no flag exists".
+ *   2. WRONG — the capital item's P41 points to the NATIONAL flag (Porto/Q45's
+ *      P41 is "Flag of Portugal (official).svg"), which would bundle the national
+ *      flag as a "city flag" — the same class as the parent-flag-collision bug.
+ * Each entry is an authoritative Commons file VISUALLY VERIFIED to be that city's
+ * OWN municipal flag and NOT the national/parent flag. Never add a hypothetical,
+ * proposed or fictional flag here (Commons has e.g. "Hypothetical flag of …"
+ * files — those are forbidden, exactly like inventing flag content). A subdivision
+ * code appears only if src/lib/subdivisionMeta.ts already carries it and
+ * CAPITAL_DETAILS has the capital's name (so the app can name-match before showing
+ * the flag). The national-flag guard below still applies to overrides.
+ */
+const CAPITAL_FLAG_SOURCE_OVERRIDES = {
+  "PT-13": "Flag of Porto.svg", // Porto (Porto district) — municipal flag; the city item's P41 is Portugal's national flag
+  "AU-NSW": "Flag of the City of Sydney.svg", // Sydney (New South Wales) — City of Sydney banner of arms; the "Sydney" item has no P41
+};
+
 const yearOf = (iso) => {
   if (!iso) return null;
   // ISO 8601 point-in-time; may be BCE ("-0660-..."). Number() of the leading
@@ -245,6 +271,32 @@ async function fetchTerritoryQid(code, qid) {
   return reduceRows(rows, () => code.toUpperCase()).get(code.toUpperCase()) ?? null;
 }
 
+/**
+ * National flag filename per country (ISO 3166-1 alpha-2 → set of Commons
+ * filenames), used to REJECT a capital P41/override that is actually the national
+ * flag — the "national flag dressed up as a city flag" failure mode. One query.
+ */
+async function fetchNationalFlags(ccList) {
+  const values = ccList.map((c) => `"${c}"`).join(" ");
+  const q = `SELECT ?iso ?flag WHERE {
+    VALUES ?iso { ${values} }
+    ?country wdt:P297 ?iso; wdt:P41 ?flag.
+  }`;
+  const map = new Map(); // CC -> Set(lowercased filename)
+  try {
+    for (const r of await sparql(q)) {
+      const cc = r.iso.value;
+      const f = flagFilenameFromUrl(r.flag?.value);
+      if (!f) continue;
+      if (!map.has(cc)) map.set(cc, new Set());
+      map.get(cc).add(f.toLowerCase());
+    }
+  } catch (e) {
+    console.warn(`  national-flag guard disabled (fetch failed: ${e.message})`);
+  }
+  return map;
+}
+
 /** Load the previous run's rows so a transient failure can't drop coverage. */
 function loadExisting() {
   const out = new Map();
@@ -274,6 +326,13 @@ async function main() {
   const details = new Map(); // code -> { name, population?, year?, basis? }
   const flagSources = {}; // code -> commons filename
 
+  console.log("Fetching national flags for the collision guard...");
+  const nationalFlags = await fetchNationalFlags([...new Set(codes)]);
+
+  /** True when `filename` is `cc`'s national flag (rejected as a "city flag"). */
+  const isNationalFlag = (cc, filename) =>
+    !!filename && nationalFlags.get(cc)?.has(filename.toLowerCase());
+
   const record = (code, rec, allowSet) => {
     if (!rec || !rec.name) return false;
     if (!allowSet.has(code)) return false;
@@ -284,7 +343,13 @@ async function main() {
       clean.basis = rec.basis ?? "estimate";
     }
     details.set(code, clean);
-    if (rec.flagFile) flagSources[code] = rec.flagFile;
+    // Guard: a capital city's P41 that IS the national flag is the "national flag
+    // dressed up as a city flag" bug — never bundle it. A missing flag beats it.
+    if (rec.flagFile && !isNationalFlag(code.split("-")[0], rec.flagFile)) {
+      flagSources[code] = rec.flagFile;
+    } else if (rec.flagFile) {
+      console.log(`  ✗ ${code} → ${rec.flagFile} is the national flag; dropped`);
+    }
     return true;
   };
 
@@ -349,6 +414,24 @@ async function main() {
     }
   }
   if (preserved) console.log(`\nPreserved ${preserved} detail(s) from the previous run.`);
+
+  // Apply curated capital-flag source overrides (fill a MISS / correct a WRONG
+  // P41). Only for codes whose capital NAME is known (so the app can name-match),
+  // and never one that is the national flag.
+  let overridden = 0;
+  for (const [code, filename] of Object.entries(CAPITAL_FLAG_SOURCE_OVERRIDES)) {
+    if (!details.has(code)) {
+      console.log(`  override ${code} → skipped (no capital name in details)`);
+      continue;
+    }
+    if (isNationalFlag(code.split("-")[0], filename)) {
+      console.log(`  override ${code} → ${filename} is the national flag; refused`);
+      continue;
+    }
+    flagSources[code] = filename;
+    overridden++;
+  }
+  if (overridden) console.log(`Applied ${overridden} capital-flag source override(s).`);
 
   writeOutput(details, flagSources);
 }
