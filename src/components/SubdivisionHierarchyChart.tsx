@@ -77,6 +77,7 @@ export function SubdivisionHierarchyChart({
 
   return (
     <div className="hierarchy" role="tree" aria-label={`${countryName} flag hierarchy`}>
+      <div className="hierarchy__inner">
       <div className="hierarchy__root">
         <button
           type="button"
@@ -157,6 +158,7 @@ export function SubdivisionHierarchyChart({
             </div>
           );
         })}
+      </div>
       </div>
     </div>
   );

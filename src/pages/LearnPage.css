@@ -1663,18 +1663,23 @@
   color: var(--ink-fixed);
 }
 
+/* Inverted pill so the count always contrasts its tab in BOTH themes:
+   an inactive tab (bg --paper) gets an --ink badge with --paper text; an active
+   tab (bg --sky, always light) gets a fixed-dark badge with white text. Never
+   tie the badge to --cream — in dark mode --cream ≈ the tab background and the
+   number vanishes. */
 .flag-tabs__count {
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--ink-soft);
-  background: var(--cream);
-  padding: 0.08rem 0.45rem;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 0.08rem 0.5rem;
   border-radius: 999px;
-  border: 2px solid var(--ink);
 }
 
 .flag-tabs__tab--active .flag-tabs__count {
-  color: var(--ink-fixed);
+  color: #fff;
+  background: var(--ink-fixed);
 }
 
 /* A controls row (group-by / filter) that sits inside a tab panel rather than
@@ -1704,11 +1709,22 @@
    branches (scrolls sideways when there are many), each with an optional
    capital-city leaf below it. Connectors are drawn with pseudo-elements. */
 .hierarchy {
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Inner content sizes to its own width (max-content) but never narrower than the
+   viewport (min-width:100%). This is what makes the sideways scroll reach the
+   full chart: centering (align-items:center) directly on an overflow flex
+   container clips the wide row's left edge OUT of scroll range — here the inner
+   box starts at the scroll origin and only centres when it fits. */
+.hierarchy__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: auto;
-  padding-bottom: 0.5rem;
+  width: max-content;
+  min-width: 100%;
+  margin: 0 auto;
 }
 
 .hierarchy__root {
