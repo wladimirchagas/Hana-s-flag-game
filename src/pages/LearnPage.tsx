@@ -195,15 +195,14 @@ export default function LearnPage() {
   const [subdivisionGeo, setSubdivisionGeo] = useState<SubdivisionFeatureCollection | null>(null);
   const [subdivisionLoading, setSubdivisionLoading] = useState(false);
   const [selectedSubdivision, setSelectedSubdivision] = useState<SubdivisionMeta | null>(null);
-  // "View capital" drill-down: reveals the selected subdivision's capital city
-  // (name + population share + flag) as a third card below the sub-national one,
-  // mirroring how "View sub-national divisions" reveals the second card.
-  const [showCapital, setShowCapital] = useState(false);
-  // When a subdivision change is initiated by picking a *city* flag (the City
-  // flags tab / a hierarchy city node), the capital drill-down should open for
-  // the new subdivision. The reset effect below reads this to open (rather than
-  // collapse) the capital once the new selectedSubdivision has taken effect.
-  const desiredCapitalRef = useRef(false);
+  // The capital-city widget now opens AUTOMATICALLY whenever a subdivision with a
+  // known capital is selected (owner request 2026-07) — there is no manual "View
+  // capital" toggle. Derived, not stored: it is simply "a subdivision with a
+  // sourced capital is selected", so it can never fall out of sync with the
+  // selection or need a reset effect.
+  const showCapital =
+    selectedSubdivision != null &&
+    subdivisionCapital(selectedSubdivision.code) != null;
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
@@ -325,15 +324,6 @@ export default function LearnPage() {
   useEffect(() => {
     saveMapView(mapView);
   }, [mapView]);
-
-  // Collapse the capital drill-down whenever the selected subdivision changes,
-  // so it never shows a stale capital when switching divisions — UNLESS the
-  // change was triggered by picking a city flag, in which case open the capital
-  // for the new subdivision (desiredCapitalRef, consumed here once).
-  useEffect(() => {
-    setShowCapital(desiredCapitalRef.current);
-    desiredCapitalRef.current = false;
-  }, [selectedSubdivision?.code]);
 
   // Scroll to the very top of the page when the user first lands here.
   useEffect(() => {
@@ -478,7 +468,6 @@ export default function LearnPage() {
     setSubdivisionGeo(null);
     setSelectedSubdivision(null);
     setSubdivisionCountry(null);
-    setShowCapital(false);
   }
 
 
@@ -1558,18 +1547,6 @@ export default function LearnPage() {
                         {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code]}
                       </p>
                     )}
-                    {/* Drill one level deeper: the capital city. Mirrors the
-                        national widget's "View sub-national divisions" button. */}
-                    {capital && (
-                      <button
-                        type="button"
-                        className={`learn-fs__subdiv-btn${showCapital ? " learn-fs__subdiv-btn--active" : ""}`}
-                        onClick={() => setShowCapital((v) => !v)}
-                        aria-pressed={showCapital}
-                      >
-                        {showCapital ? "Hide capital" : `View capital (${capital.name})`}
-                      </button>
-                    )}
                   </>
                 );
               })() : (
@@ -1680,19 +1657,13 @@ export default function LearnPage() {
             onSelectCapital={(code: string) => {
               const div = divisions.find((d) => d.code === code);
               if (!div) return;
-              if (selectedSubdivision?.code === code) {
-                // Same division already selected — just open its capital.
-                setShowCapital(true);
-              } else {
-                // Switch division AND open its capital (consumed by the reset effect).
-                desiredCapitalRef.current = true;
-                setSelectedSubdivision(div);
-              }
+              // Selecting the division auto-opens its capital widget (showCapital
+              // is derived from the selection), so no explicit open is needed.
+              setSelectedSubdivision(div);
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             onSelectCountry={() => {
               setSelectedSubdivision(null);
-              setShowCapital(false);
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />
