@@ -479,4 +479,177 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Norfolk Island (capital Kingston) — Australian external territory ────────
+  "AU-NF": {
+    description:
+      "A green–white–green vertical triband bearing a green Norfolk Island pine in the central white " +
+      "band. The Norfolk Island pine is native to the island and its official tree; the green stands " +
+      "for the island’s abundant vegetation and fertile land, and the white for peace and harmony " +
+      "between the people and the natural world. The flag was set by the Norfolk Island Flag and Public " +
+      "Seal Act 1979 and has flown since 1980.",
+    sources: [
+      {
+        title: "Flag of Norfolk Island — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_Norfolk_Island",
+      },
+    ],
+  },
+
+  // ── Darwin — capital of the Northern Territory, Australia ───────────────────
+  "AU-NT": {
+    description:
+      "A green–yellow–red vertical tricolour with the arms of the City of Darwin (granted 1959) on the " +
+      "yellow. The shield’s ship marks Darwin’s natural harbour and its founding as a port; the fort " +
+      "recalls its origin as a military base defending the British claim to the north; the supporters " +
+      "are an Aboriginal man, for the area’s first inhabitants, and a European miner, for the mining " +
+      "industry that grew the town; and the encircled star is taken from the arms of Charles Darwin, " +
+      "the city’s namesake. The crest’s compass, north highlighted, marks Darwin as Australia’s " +
+      "northern city.",
+    sources: [
+      {
+        title: "Coat of arms of Darwin — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Darwin",
+      },
+    ],
+  },
+
+  // ── Brisbane — capital of Queensland, Australia ─────────────────────────────
+  "AU-QLD": {
+    description:
+      "The flag of the City of Brisbane, blue and gold with the city arms. The three caducei (the staff " +
+      "of Hermes) stand for commerce — Hermes being the Greek god and protector of trade — reflecting " +
+      "Brisbane’s role as a trading port; the stars (mullets) recall the astronomer Sir Thomas Brisbane, " +
+      "after whom the city is named, and the Stafford knot his old regiment. Blue represents the sea and " +
+      "the Brisbane River, gold the sun and the city’s warm climate.",
+    sources: [
+      {
+        title: "Coat of arms of Brisbane — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brisbane",
+      },
+    ],
+  },
+
+  // ── Adelaide — capital of South Australia ───────────────────────────────────
+  "AU-SA": {
+    description:
+      "A blue field divided into four quarters by a gold cross surmounted by a red cross, ensigned with " +
+      "a golden mural crown (the mark of a municipality) — the arms of the City of Adelaide, granted " +
+      "1929. The quarters show a three-masted ship (commerce and the sea link to Britain), a golden " +
+      "fleece (the wool trade), a bull’s head (the cattle industry) and a wheatsheaf (agriculture) — the " +
+      "foundations of the early city’s economy.",
+    sources: [
+      {
+        title: "Coat of arms of Adelaide — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Adelaide",
+      },
+    ],
+  },
+
+  // ── Melbourne — capital of Victoria, Australia ──────────────────────────────
+  "AU-VIC": {
+    description:
+      "A white (silver) field bearing the red cross of Saint George with a royal crown at its centre, " +
+      "and in the four corners a golden fleece, a black bull, a spouting whale and a three-masted ship " +
+      "— the arms of the City of Melbourne (approved for the city seal in 1843; granted by letters " +
+      "patent in 1940). The fleece, bull, whale and ship stand for wool, tallow and oil — the young " +
+      "city’s chief exports — and their transport by sea from Port Phillip; the cross and crown denote " +
+      "loyalty to the Crown and Britain.",
+    sources: [
+      {
+        title: "Coat of arms of Melbourne — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Melbourne",
+      },
+    ],
+  },
+
+  // ── Perth — capital of Western Australia ────────────────────────────────────
+  "AU-WA": {
+    description:
+      "The flag of the City of Perth: the red cross of Saint George bearing the city arms at its centre. " +
+      "The arms (granted 1926, amended 1949) show black swans — long common on the Swan River, whose " +
+      "estuary gave the Swan River Colony that became Perth its name — while a quarter is taken from the " +
+      "arms of Perth in Scotland, the city Perth was named after. The gold mural crown marks it as a " +
+      "municipality.",
+    sources: [
+      {
+        title: "Coat of arms of Perth — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Perth",
+      },
+    ],
+  },
+
+  // ── Brest — capital of the Brest Region, Belarus ────────────────────────────
+  "BY-BR": {
+    description:
+      "A sky-blue field bearing a silver arrow pointing upward and a silver bow — the arms of Brest, " +
+      "adopted in this form on 26 January 1991 and derived from the city’s historic seal. In Belarusian " +
+      "civic heraldry silver stands for nobility and valour, and blue for loyalty.",
+    sources: [
+      { title: "Brest, Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/Brest,_Belarus" },
+    ],
+  },
+
+  // ── Gomel (Homyel) — capital of the Gomel Region, Belarus ───────────────────
+  "BY-HO": {
+    description:
+      "A blue field bearing a reclining golden lynx — the arms of Gomel, based on the historic city " +
+      "arms of 1855. The lynx, an animal of the region’s forests, is the city’s long-standing emblem.",
+    sources: [
+      { title: "Gomel — Wikipedia", url: "https://en.wikipedia.org/wiki/Gomel" },
+    ],
+  },
+
+  // ── Hrodna (Grodno) — capital of the Grodno Region, Belarus ─────────────────
+  "BY-HR": {
+    description:
+      "A blue field bearing the deer of Saint Hubert — a stag with a golden cross rising between its " +
+      "antlers — leaping over a silver fence. The emblem refers to the legend of Saint Hubert, patron " +
+      "of hunters, who was converted by the vision of a crucifix between a stag’s antlers; it has been " +
+      "Grodno’s arms since the city was granted them under Magdeburg rights.",
+    sources: [
+      { title: "Grodno — Wikipedia", url: "https://en.wikipedia.org/wiki/Grodno" },
+    ],
+  },
+
+  // ── Mahilyow (Mogilev) — capital of the Mogilev Region, Belarus ─────────────
+  "BY-MA": {
+    description:
+      "A blue field bearing the arms of Mogilev: three silver towers on a green base, with an armoured " +
+      "knight standing in the open gate, sword raised, and above the gate the Pahonia (the “Pursuit,” a " +
+      "silver mounted knight — the historic emblem of the Grand Duchy of Lithuania). The three towers " +
+      "recall the three hills on which the city was founded; the knight in the gate signifies a city " +
+      "open to friends but ready to repel any enemy.",
+    sources: [
+      { title: "Mogilev — Wikipedia", url: "https://en.wikipedia.org/wiki/Mogilev" },
+      {
+        title: "Mogilyov City (Belarus) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/by-ma-mo.html",
+      },
+    ],
+  },
+
+  // ── Minsk — capital of Belarus ──────────────────────────────────────────────
+  "BY-MI": {
+    description:
+      "A blue field bearing the historic arms of Minsk: the Assumption of the Virgin Mary, flanked by " +
+      "two angels and two cherubs. The arms were granted to Minsk in 1591 by King Sigismund III Vasa " +
+      "under Magdeburg rights; through every later revision the figure of the Mother of God has always " +
+      "remained the heart of the city’s emblem.",
+    sources: [
+      { title: "Minsk — Wikipedia", url: "https://en.wikipedia.org/wiki/Minsk" },
+    ],
+  },
+
+  // ── Vitebsk (Viciebsk) — capital of the Vitebsk Region, Belarus ─────────────
+  "BY-VI": {
+    description:
+      "A light-blue field bearing the arms of Vitebsk: the image of the Saviour (Christ) in profile " +
+      "above a bare red sword, supported by angels. The Saviour reflects the city’s deep Orthodox " +
+      "Christian tradition, and the red sword its defence; the design descends from Vitebsk’s historic " +
+      "seal.",
+    sources: [
+      { title: "Vitebsk — Wikipedia", url: "https://en.wikipedia.org/wiki/Vitebsk" },
+    ],
+  },
 };
