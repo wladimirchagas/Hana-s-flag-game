@@ -1,24 +1,35 @@
 import { useId, useState } from "react";
-import { FLAG_MEANINGS } from "../data/flagMeanings";
+import { FLAG_MEANINGS, type FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
 
 /**
  * Progressive-disclosure "What this flag means" panel, shown below the flag
- * image in the Learn-mode widget for both national and subnational flags.
+ * image in the Learn-mode widget for national, subnational AND city (capital)
+ * flags.
  *
  * The copy can be long, so it is collapsed by default behind a toggle button.
  * When expanded it shows the sourced factual description, an explicit
  * "Myth vs fact" block for any widely-believed-but-false claims, and the
  * authoritative source links.
  *
- * Data + sourcing rules live in `src/data/flagMeanings.ts` and CLAUDE.md
+ * `meanings` selects which curated dataset to look the code up in — it defaults
+ * to `FLAG_MEANINGS` (national + subnational, keyed by ISO code) and is passed
+ * `CITY_FLAG_MEANINGS` by the capital-city widget so the city-flag explainer
+ * gets the IDENTICAL look, spacing and behaviour. Data + sourcing rules live in
+ * `src/data/flagMeanings.ts` / `src/data/cityFlagMeanings.ts` and CLAUDE.md
  * ("Flag-meaning explanations must be sourced and must separate myth from
- * fact"). This component renders nothing when the code has no entry, so the
+ * fact"). This component renders nothing when the code has no entry, so each
  * curated set can grow incrementally.
  */
-export function FlagMeaning({ code }: { code: string | null | undefined }) {
+export function FlagMeaning({
+  code,
+  meanings = FLAG_MEANINGS,
+}: {
+  code: string | null | undefined;
+  meanings?: Record<string, FlagMeaningData>;
+}) {
   const [open, setOpen] = useState(false);
   const panelId = useId();
-  const meaning = code ? FLAG_MEANINGS[code] : undefined;
+  const meaning = code ? meanings[code] : undefined;
   if (!meaning) return null;
 
   return (
