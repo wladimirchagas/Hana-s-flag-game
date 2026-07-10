@@ -18,6 +18,9 @@ type Props = {
   selectedCode: string | null;
   onSelect: (code: string) => void;
   countryCode?: string;
+  /** When true, render just the controls + grid (no <section>/title) so a
+   *  parent (e.g. the tabbed drill-down) can own the section shell + header. */
+  embedded?: boolean;
 };
 
 export function SubdivisionFlagGrid({
@@ -27,6 +30,7 @@ export function SubdivisionFlagGrid({
   selectedCode,
   onSelect,
   countryCode,
+  embedded = false,
 }: Props) {
   const distinctTypeCount = useMemo(
     () => new Set(divisions.map((d) => d.typeLabel)).size,
@@ -125,28 +129,22 @@ export function SubdivisionFlagGrid({
 
   if (divisions.length === 0) return null;
 
-  return (
-    <section className="flag-grid" aria-labelledby="subdiv-grid-heading">
-      <header className="flag-grid__header">
-        <h2 className="flag-grid__title" id="subdiv-grid-heading">
-          {countryName} — {pluralLabel}
-          <span className="flag-grid__count">{divisions.length}</span>
-        </h2>
-        <label className="flag-grid__group-select">
-          <span className="flag-grid__group-select-label">Group by:</span>
-          <select
-            value={groupMode}
-            onChange={(e) => setGroupMode(e.target.value as GroupMode)}
-            className="flag-grid__select"
-          >
-            {(Object.keys(GROUP_LABELS) as GroupMode[]).map((m) => (
-              <option key={m} value={m}>{GROUP_LABELS[m]}</option>
-            ))}
-          </select>
-        </label>
-      </header>
+  const groupSelect = (
+    <label className="flag-grid__group-select">
+      <span className="flag-grid__group-select-label">Group by:</span>
+      <select
+        value={groupMode}
+        onChange={(e) => setGroupMode(e.target.value as GroupMode)}
+        className="flag-grid__select"
+      >
+        {(Object.keys(GROUP_LABELS) as GroupMode[]).map((m) => (
+          <option key={m} value={m}>{GROUP_LABELS[m]}</option>
+        ))}
+      </select>
+    </label>
+  );
 
-      {groups.map((g) => (
+  const body = groups.map((g) => (
         <div key={g.heading ?? "_all"} className="flag-grid__group">
           {g.heading && (
             <h3 className="flag-grid__group-heading">
@@ -199,7 +197,29 @@ export function SubdivisionFlagGrid({
             })}
           </ul>
         </div>
-      ))}
+  ));
+
+  if (embedded) {
+    return (
+      <>
+        <div className="flag-grid__controls flag-grid__controls--tab">
+          {groupSelect}
+        </div>
+        {body}
+      </>
+    );
+  }
+
+  return (
+    <section className="flag-grid" aria-labelledby="subdiv-grid-heading">
+      <header className="flag-grid__header">
+        <h2 className="flag-grid__title" id="subdiv-grid-heading">
+          {countryName} — {pluralLabel}
+          <span className="flag-grid__count">{divisions.length}</span>
+        </h2>
+        {groupSelect}
+      </header>
+      {body}
     </section>
   );
 }

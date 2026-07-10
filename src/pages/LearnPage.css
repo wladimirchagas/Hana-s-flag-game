@@ -1623,11 +1623,252 @@
   margin-top: 0.15em;
 }
 
+/* === Tabbed drill-down (Sub-national / City / Hierarchy) ============== */
+
+/* Tab bar under the section title. Chunky pill tabs matching the app's
+   ink-outline / drop-shadow visual language. */
+.flag-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.75rem;
+}
+
+.flag-tabs__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 0 2px 0 var(--ink);
+  padding: 0.45rem 0.95rem;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.flag-tabs__tab:hover,
+.flag-tabs__tab:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.flag-tabs__tab--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+.flag-tabs__count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: var(--cream);
+  padding: 0.08rem 0.45rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+}
+
+.flag-tabs__tab--active .flag-tabs__count {
+  color: var(--ink-fixed);
+}
+
+/* A controls row (group-by / filter) that sits inside a tab panel rather than
+   in the section header. */
+.flag-grid__controls--tab {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0 0 1.5rem;
+}
+
+/* Capital-name subtitle under a city-flag tile. */
+.flag-grid__city-sub {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-top: 0.12em;
+}
+
+.flag-grid__card--active .flag-grid__city-sub {
+  color: var(--ink-fixed);
+}
+
+/* === Hierarchy org chart ============================================= */
+
+/* A pure-CSS org chart: national root, a horizontal bus of subdivision
+   branches (scrolls sideways when there are many), each with an optional
+   capital-city leaf below it. Connectors are drawn with pseudo-elements. */
+.hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.hierarchy__root {
+  position: relative;
+  padding-bottom: 22px;
+}
+
+/* Vertical connector dropping from the root to the branch bus. */
+.hierarchy__root::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 3px;
+  height: 22px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+.hierarchy__branches {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hierarchy__col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 22px 0.5rem 0;
+  flex: 0 0 auto;
+}
+
+/* Short vertical stub from the bus down to each branch node. */
+.hierarchy__col::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 22px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+/* Horizontal bus segment across the top of each branch column. */
+.hierarchy__col::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--ink);
+}
+
+.hierarchy__col:first-child::after { left: 50%; }
+.hierarchy__col:last-child::after { right: 50%; }
+.hierarchy__col:only-child::after { display: none; }
+.hierarchy__col:only-child::before { display: none; }
+
+/* Leaf city node: vertical connector up to its parent branch node. */
+.hierarchy__node--city {
+  position: relative;
+}
+
+.hierarchy__node--city::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -22px;
+  width: 3px;
+  height: 22px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+.hierarchy__node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: 120px;
+  padding: 0.5rem 0.4rem 0.6rem;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--ink);
+  text-align: center;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.hierarchy__node:hover,
+.hierarchy__node:focus-visible {
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 0 var(--ink);
+}
+
+.hierarchy__node--national {
+  width: 150px;
+  background: var(--cream);
+}
+
+.hierarchy__node--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+.hierarchy__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.hierarchy__thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 1px 1px rgba(26, 34, 56, 0.18));
+  pointer-events: none;
+}
+
+.hierarchy__name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.hierarchy__tier {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.hierarchy__node--active .hierarchy__name,
+.hierarchy__node--active .hierarchy__tier {
+  color: var(--ink-fixed);
+}
+
 /* Phones — slightly tighter tiles and a more compact toolbar. */
 @media (max-width: 540px) {
   .flag-grid {
     padding: 1.5rem 0.9rem 2rem;
   }
+  .flag-tabs__tab { font-size: 0.82rem; padding: 0.4rem 0.7rem; }
+  .hierarchy__node { width: 96px; }
+  .hierarchy__node--national { width: 120px; }
   .flag-grid__list {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: 0.6rem;

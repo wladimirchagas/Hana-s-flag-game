@@ -18,7 +18,7 @@ import {
   type MapViewSettings,
 } from "../lib/mapView";
 import { FlagGrid } from "../components/FlagGrid";
-import { SubdivisionFlagGrid } from "../components/SubdivisionFlagGrid";
+import { SubdivisionFlagTabs } from "../components/SubdivisionFlagTabs";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
@@ -199,6 +199,11 @@ export default function LearnPage() {
   // (name + population share + flag) as a third card below the sub-national one,
   // mirroring how "View sub-national divisions" reveals the second card.
   const [showCapital, setShowCapital] = useState(false);
+  // When a subdivision change is initiated by picking a *city* flag (the City
+  // flags tab / a hierarchy city node), the capital drill-down should open for
+  // the new subdivision. The reset effect below reads this to open (rather than
+  // collapse) the capital once the new selectedSubdivision has taken effect.
+  const desiredCapitalRef = useRef(false);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
@@ -322,9 +327,12 @@ export default function LearnPage() {
   }, [mapView]);
 
   // Collapse the capital drill-down whenever the selected subdivision changes,
-  // so it never shows a stale capital when switching divisions.
+  // so it never shows a stale capital when switching divisions — UNLESS the
+  // change was triggered by picking a city flag, in which case open the capital
+  // for the new subdivision (desiredCapitalRef, consumed here once).
   useEffect(() => {
-    setShowCapital(false);
+    setShowCapital(desiredCapitalRef.current);
+    desiredCapitalRef.current = false;
   }, [selectedSubdivision?.code]);
 
   // Scroll to the very top of the page when the user first lands here.
@@ -1649,20 +1657,43 @@ export default function LearnPage() {
     </div>
       {subdivisionMode && subdivisionCountry ? (() => {
         const meta = SUBDIVISION_META[subdivisionCountry.code];
+        const divisions = meta?.divisions ?? [];
+        const selectSubdivision = (code: string) => {
+          const div = divisions.find((d) => d.code === code);
+          if (div) {
+            setSelectedSubdivision(div);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        };
         return (
-          <SubdivisionFlagGrid
+          <SubdivisionFlagTabs
             key={subdivisionCountry.code}
-            divisions={meta?.divisions ?? []}
+            divisions={divisions}
             pluralLabel={meta?.pluralLabel ?? "Divisions"}
             countryName={subdivisionCountry.name}
-            selectedCode={selectedSubdivision?.code ?? null}
             countryCode={subdivisionCountry.code}
-            onSelect={(code: string) => {
-              const div = meta?.divisions.find((d) => d.code === code);
-              if (div) {
+            countryFlagUrl={subdivisionCountry.flagSvg || null}
+            selectedCode={selectedSubdivision?.code ?? null}
+            capitalActive={showCapital}
+            baseUrl={baseUrl}
+            onSelectSubdivision={selectSubdivision}
+            onSelectCapital={(code: string) => {
+              const div = divisions.find((d) => d.code === code);
+              if (!div) return;
+              if (selectedSubdivision?.code === code) {
+                // Same division already selected — just open its capital.
+                setShowCapital(true);
+              } else {
+                // Switch division AND open its capital (consumed by the reset effect).
+                desiredCapitalRef.current = true;
                 setSelectedSubdivision(div);
-                window.scrollTo({ top: 0, behavior: "smooth" });
               }
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            onSelectCountry={() => {
+              setSelectedSubdivision(null);
+              setShowCapital(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />
         );

@@ -1,0 +1,138 @@
+import { useMemo, useState } from "react";
+import type { SubdivisionMeta } from "../types/subdivision";
+import { SubdivisionFlagGrid } from "./SubdivisionFlagGrid";
+import { CityFlagGrid } from "./CityFlagGrid";
+import { SubdivisionHierarchyChart } from "./SubdivisionHierarchyChart";
+import { countryCityFlagCount } from "../lib/cityFlags";
+import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
+
+/**
+ * Tabbed sub-national drill-down grid shown below the Learn map.
+ *
+ * Three views of the same country's flags:
+ *  1. Sub-national flags — the existing subdivision flag grid.
+ *  2. City flags        — every available capital-city flag.
+ *  3. Hierarchy chart   — an interactive nation → subdivision → city org chart.
+ *
+ * All three drive the SAME selection callbacks, so picking a flag in any tab
+ * updates the world/subdivision map highlight and the country/subdivision widget.
+ */
+type TabId = "sub" | "city" | "tree";
+
+type Props = {
+  divisions: SubdivisionMeta[];
+  pluralLabel: string;
+  countryName: string;
+  countryCode: string;
+  countryFlagUrl: string | null;
+  /** Selected subdivision code (if any). */
+  selectedCode: string | null;
+  /** True when the "View capital" drill-down is open for the selected code. */
+  capitalActive: boolean;
+  baseUrl: string;
+  onSelectSubdivision: (code: string) => void;
+  onSelectCapital: (code: string) => void;
+  onSelectCountry: () => void;
+};
+
+export function SubdivisionFlagTabs({
+  divisions,
+  pluralLabel,
+  countryName,
+  countryCode,
+  countryFlagUrl,
+  selectedCode,
+  capitalActive,
+  baseUrl,
+  onSelectSubdivision,
+  onSelectCapital,
+  onSelectCountry,
+}: Props) {
+  const [tab, setTab] = useState<TabId>("sub");
+
+  const subCount = useMemo(
+    () => divisions.filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY)).length,
+    [divisions],
+  );
+  const cityCount = useMemo(
+    () => countryCityFlagCount(countryCode),
+    [countryCode],
+  );
+
+  const TABS: { id: TabId; label: string; count?: number }[] = [
+    { id: "sub", label: "Sub-national flags", count: subCount },
+    { id: "city", label: "City flags", count: cityCount },
+    { id: "tree", label: "Hierarchy chart" },
+  ];
+
+  if (divisions.length === 0) return null;
+
+  return (
+    <section className="flag-grid" aria-labelledby="subdiv-grid-heading">
+      <header className="flag-grid__header">
+        <h2 className="flag-grid__title" id="subdiv-grid-heading">
+          {countryName} — {pluralLabel}
+        </h2>
+      </header>
+
+      <div className="flag-tabs" role="tablist" aria-label="Flag views">
+        {TABS.map((t) => {
+          const active = t.id === tab;
+          return (
+            <button
+              key={t.id}
+              type="button"
+              role="tab"
+              aria-selected={active}
+              className={`flag-tabs__tab${active ? " flag-tabs__tab--active" : ""}`}
+              onClick={() => setTab(t.id)}
+            >
+              {t.label}
+              {t.count != null && (
+                <span className="flag-tabs__count">{t.count}</span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="flag-tabs__panel" role="tabpanel">
+        {tab === "sub" && (
+          <SubdivisionFlagGrid
+            embedded
+            divisions={divisions}
+            pluralLabel={pluralLabel}
+            countryName={countryName}
+            countryCode={countryCode}
+            selectedCode={capitalActive ? null : selectedCode}
+            onSelect={onSelectSubdivision}
+          />
+        )}
+        {tab === "city" && (
+          <CityFlagGrid
+            countryCode={countryCode}
+            countryName={countryName}
+            selectedCode={selectedCode}
+            capitalActive={capitalActive}
+            baseUrl={baseUrl}
+            onSelect={onSelectCapital}
+          />
+        )}
+        {tab === "tree" && (
+          <SubdivisionHierarchyChart
+            divisions={divisions}
+            countryCode={countryCode}
+            countryName={countryName}
+            countryFlagUrl={countryFlagUrl}
+            selectedCode={selectedCode}
+            capitalActive={capitalActive}
+            baseUrl={baseUrl}
+            onSelectCountry={onSelectCountry}
+            onSelectSubdivision={onSelectSubdivision}
+            onSelectCapital={onSelectCapital}
+          />
+        )}
+      </div>
+    </section>
+  );
+}
