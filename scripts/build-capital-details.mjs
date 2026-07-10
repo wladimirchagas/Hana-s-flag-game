@@ -1,0 +1,415 @@
+/**
+ * Generate src/data/capitalDetails.ts from Wikidata.
+ * Run: node scripts/build-capital-details.mjs
+ *
+ * WHY THIS EXISTS: the Learn-mode "View capital" drill-down (a third card under
+ * the sub-national widget) shows, for the selected subdivision's capital city:
+ * its name, a population estimate + the share it represents of the national
+ * population, and — via the sibling downloader — the city's own flag. This
+ * generator sources the NAME and POPULATION of each subdivision's capital.
+ *
+ * WHY WIKIDATA: it carries an authoritative capital (P36) whose own item holds a
+ * population (P1082) qualified with a point-in-time (P585) and a
+ * determination-method (P459, census vs estimate), plus a flag image (P41) —
+ * keyed to the ISO 3166-2 code (P300) the app already uses. Same authoritative
+ * lineage as scripts/build-subdivision-capitals.mjs and
+ * scripts/build-subdivision-population.mjs; the CLAUDE.md hard rule "City overlay
+ * data must be sourced, never fabricated" applies here exactly as it does there.
+ *
+ * WHAT IT EMITS:
+ *   1. src/data/capitalDetails.ts   — per ISO 3166-2 code: { name, population?,
+ *      year?, basis? }. `name` is the Wikidata P36 capital's English label; it is
+ *      stored so the app can confirm the population/flag belong to the SAME city
+ *      the sub-national panel already displays (from src/lib/cityRoles.ts) before
+ *      showing them — never a mismatched figure.
+ *   2. scripts/data/capital-flag-sources.json — per code: the Commons flag
+ *      filename (P41) for scripts/download-capital-flags.mjs to bundle. Not the
+ *      app's data; a build-time manifest only.
+ *
+ * DISCIPLINE (mirrors the population generator):
+ *   - Only DATED population statements are kept, so every emitted figure can
+ *     state its year. The statement with the most-recent point-in-time wins.
+ *   - A floor of year >= 1970 drops purely-historical city figures (e.g.
+ *     Wikidata's year-800 population for Kyoto) that are not a current estimate.
+ *   - basis = "census" iff the winning statement's P459 is Q39825 (census), else
+ *     "estimate".
+ *   - The generator only re-formats authoritative source data — it never invents
+ *     a name, a figure or a flag. A capital Wikidata carries no usable data for
+ *     is simply omitted, exactly like a fact-sheet row that renders only when
+ *     present.
+ *
+ * Requires network egress to query.wikidata.org. One query per country (filtered
+ * by the ISO 3166-2 prefix) keeps each request small.
+ */
+
+import { readFileSync, writeFileSync } from "fs";
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
+import { CODE_ALIASES } from "./data/wikidata-subdivision-code-aliases.mjs";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const projectRoot = join(__dirname, "..");
+const META = join(projectRoot, "src", "lib", "subdivisionMeta.ts");
+const OUTPUT = join(projectRoot, "src", "data", "capitalDetails.ts");
+const FLAG_MANIFEST = join(__dirname, "data", "capital-flag-sources.json");
+
+const ENDPOINT = "https://query.wikidata.org/sparql";
+const USER_AGENT =
+  "HanaFlagGame-capital-details/1.0 (https://github.com/wladimirchagas/Hana-s-flag-game)";
+const CENSUS_QID = "Q39825"; // "census" (determination method P459)
+const YEAR_FLOOR = 1970; // drop purely-historical city populations
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function sparql(query, attempt = 0) {
+  const url = `${ENDPOINT}?format=json&query=${encodeURIComponent(query)}`;
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": USER_AGENT, Accept: "application/sparql-results+json" },
+    });
+    if (res.status === 429 || res.status >= 500) throw new Error(`HTTP ${res.status}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    return json.results.bindings;
+  } catch (e) {
+    if (attempt < 4) {
+      const wait = 2000 * 2 ** attempt;
+      console.warn(`  retry in ${wait}ms (${e.message})`);
+      await sleep(wait);
+      return sparql(query, attempt + 1);
+    }
+    throw e;
+  }
+}
+
+/** Country codes the app actually shows subdivisions for. */
+function countryCodes() {
+  return [...readFileSync(META, "utf8").matchAll(/^  "([A-Z]{2})":\s*\{/gm)].map((m) => m[1]);
+}
+
+/** Every subdivision code the app renders (excludes ~ and -X# placeholders). */
+function appSubdivisionCodes() {
+  const codes = new Set();
+  for (const m of readFileSync(META, "utf8").matchAll(/code:\s*"([^"]+)"/g)) {
+    const code = m[1].trim().toUpperCase();
+    if (code.endsWith("~") || /-X\d/.test(code)) continue;
+    codes.add(code);
+  }
+  return codes;
+}
+
+/** Every code SUBDIVISION_META carries, INCLUDING disputed "~" codes. */
+function allMetaCodes() {
+  const codes = new Set();
+  for (const m of readFileSync(META, "utf8").matchAll(/code:\s*"([^"]+)"/g)) {
+    codes.add(m[1].trim().toUpperCase());
+  }
+  return codes;
+}
+
+/**
+ * Disputed/claimed territories the app renders as standalone subdivision cards.
+ * Their capital (and the capital's population + flag) is fetched from the
+ * TERRITORY's own Wikidata item (P36 → the capital's data). Keyed app code →
+ * territory QID. Mirrors scripts/build-subdivision-capitals.mjs so the capital
+ * NAME here can never disagree with the capital shown on the map overlay.
+ */
+const DISPUTED_TERRITORY_QIDS = {
+  "TR-NC~": "Q23681", // Northern Cyprus → North Nicosia
+  "GB-FK": "Q9648", // Falkland Islands → Stanley
+  "GB-GI": "Q1410", // Gibraltar → Gibraltar
+  "CN-TW": "Q865", // Taiwan → Taipei
+  "RS-KM~": "Q1246", // Kosovo → Pristina
+  "SO-SL~": "Q34754", // Somaliland → Hargeisa
+  "CY-NC~": "Q23681", // Northern Cyprus under Cyprus → North Nicosia
+};
+
+/**
+ * Disputed territories whose OWN item has no P36; keyed instead by the capital
+ * CITY's own QID (its population/flag are read directly). Mirrors
+ * DISPUTED_CAPITAL_CITY_QIDS in scripts/build-subdivision-capitals.mjs.
+ */
+const CAPITAL_CITY_QIDS = {
+  "MA-EH~": "Q47837", // Western Sahara → El Aaiún (Laâyoune)
+  "AU-NF": "Q31057", // Norfolk Island → Kingston (external territory, no P300)
+};
+
+const yearOf = (iso) => {
+  if (!iso) return null;
+  // ISO 8601 point-in-time; may be BCE ("-0660-..."). Number() of the leading
+  // (possibly signed) year segment gives a comparable integer.
+  const m = String(iso).match(/^(-?\d{1,})-/);
+  return m ? Number(m[1]) : null;
+};
+
+/** Decode a Commons Special:FilePath URL (P41 value) → the bare filename. */
+function flagFilenameFromUrl(url) {
+  if (!url) return null;
+  const m = String(url).match(/Special:FilePath\/(.+)$/);
+  if (!m) return null;
+  try {
+    return decodeURIComponent(m[1]).replace(/_/g, " ").trim();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Reduce raw SPARQL rows (one per pop-statement × flag) into per-code records:
+ * { name, population?, year?, basis?, flagFile? }. Keeps the most-recent dated
+ * population at/after YEAR_FLOOR; keeps the first flag filename seen.
+ */
+function reduceRows(rows, codeOf) {
+  const acc = new Map();
+  for (const r of rows) {
+    const code = codeOf(r);
+    if (!code) continue;
+    const name = r.capitalLabel?.value?.trim();
+    if (!name || /^Q\d+$/.test(name)) continue; // unresolved label
+    let rec = acc.get(code);
+    if (!rec) {
+      rec = { name, population: null, year: null, basis: null, flagFile: null };
+      acc.set(code, rec);
+    }
+    // Population: keep the most-recent DATED statement at/after the floor.
+    const pop = r.pop?.value != null ? Math.round(Number(r.pop.value)) : null;
+    const yr = yearOf(r.date?.value);
+    if (pop != null && Number.isFinite(pop) && pop > 0 && yr != null && yr >= YEAR_FLOOR) {
+      if (rec.year == null || yr > rec.year) {
+        rec.year = yr;
+        rec.population = pop;
+        rec.basis = r.method?.value?.endsWith(CENSUS_QID) ? "census" : "estimate";
+      }
+    }
+    // Flag: first non-empty filename wins (wdt:P41 is best-rank only).
+    if (!rec.flagFile) {
+      const f = flagFilenameFromUrl(r.flag?.value);
+      if (f) rec.flagFile = f;
+    }
+  }
+  return acc;
+}
+
+async function fetchCountry(cc) {
+  const q = `SELECT ?code ?capitalLabel ?pop ?date ?method ?flag WHERE {
+    ?sub wdt:P300 ?code . FILTER(STRSTARTS(?code, "${cc}-"))
+    ?sub wdt:P36 ?capital .
+    OPTIONAL {
+      ?capital p:P1082 ?ps . ?ps ps:P1082 ?pop .
+      OPTIONAL { ?ps pq:P585 ?date . }
+      OPTIONAL { ?ps pq:P459 ?method . }
+    }
+    OPTIONAL { ?capital wdt:P41 ?flag . }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  }`;
+  const rows = await sparql(q);
+  const raw = reduceRows(rows, (r) => {
+    const c = r.code?.value;
+    if (!c) return null;
+    return (CODE_ALIASES[c] ?? c).toUpperCase();
+  });
+  return raw;
+}
+
+/** Details for one capital CITY QID (the QID IS the capital). */
+async function fetchCityQid(code, qid) {
+  const q = `SELECT ?code ?capitalLabel ?pop ?date ?method ?flag WHERE {
+    BIND("${code}" AS ?code)
+    BIND(wd:${qid} AS ?capital)
+    OPTIONAL {
+      ?capital p:P1082 ?ps . ?ps ps:P1082 ?pop .
+      OPTIONAL { ?ps pq:P585 ?date . }
+      OPTIONAL { ?ps pq:P459 ?method . }
+    }
+    OPTIONAL { ?capital wdt:P41 ?flag . }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  }`;
+  const rows = await sparql(q);
+  return reduceRows(rows, () => code.toUpperCase()).get(code.toUpperCase()) ?? null;
+}
+
+/** Details for a TERRITORY QID's capital (P36 → its data). */
+async function fetchTerritoryQid(code, qid) {
+  const q = `SELECT ?code ?capitalLabel ?pop ?date ?method ?flag WHERE {
+    BIND("${code}" AS ?code)
+    wd:${qid} wdt:P36 ?capital .
+    OPTIONAL {
+      ?capital p:P1082 ?ps . ?ps ps:P1082 ?pop .
+      OPTIONAL { ?ps pq:P585 ?date . }
+      OPTIONAL { ?ps pq:P459 ?method . }
+    }
+    OPTIONAL { ?capital wdt:P41 ?flag . }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  }`;
+  const rows = await sparql(q);
+  return reduceRows(rows, () => code.toUpperCase()).get(code.toUpperCase()) ?? null;
+}
+
+/** Load the previous run's rows so a transient failure can't drop coverage. */
+function loadExisting() {
+  const out = new Map();
+  let text;
+  try {
+    text = readFileSync(OUTPUT, "utf8");
+  } catch {
+    return out;
+  }
+  const m = text.match(/CAPITAL_DETAILS[^{]*\{([\s\S]*?)\n\};/);
+  if (!m) return out;
+  for (const e of m[1].matchAll(/"([^"]+)":\s*(\{[^}]*\})/g)) {
+    try {
+      const v = JSON.parse(e[2]);
+      if (v && v.name) out.set(e[1].toUpperCase(), v);
+    } catch {
+      /* skip malformed */
+    }
+  }
+  return out;
+}
+
+async function main() {
+  const appCodes = appSubdivisionCodes();
+  const metaCodes = allMetaCodes();
+  const codes = countryCodes();
+  const details = new Map(); // code -> { name, population?, year?, basis? }
+  const flagSources = {}; // code -> commons filename
+
+  const record = (code, rec, allowSet) => {
+    if (!rec || !rec.name) return false;
+    if (!allowSet.has(code)) return false;
+    const clean = { name: rec.name };
+    if (rec.population != null && rec.year != null) {
+      clean.population = rec.population;
+      clean.year = rec.year;
+      clean.basis = rec.basis ?? "estimate";
+    }
+    details.set(code, clean);
+    if (rec.flagFile) flagSources[code] = rec.flagFile;
+    return true;
+  };
+
+  for (let i = 0; i < codes.length; i++) {
+    const cc = codes[i];
+    process.stdout.write(`[${i + 1}/${codes.length}] ${cc} `);
+    try {
+      const found = await fetchCountry(cc);
+      let n = 0;
+      for (const [code, rec] of found) {
+        // Only codes the app renders as a normal (non-placeholder) subdivision.
+        if (record(code, rec, appCodes)) n++;
+      }
+      console.log(`→ ${n} capital detail(s)`);
+    } catch (e) {
+      console.log(`→ FAILED (${e.message})`);
+    }
+    await sleep(200);
+  }
+
+  console.log("\nFetching disputed-territory capital details (by territory QID)...");
+  for (const [code, qid] of Object.entries(DISPUTED_TERRITORY_QIDS)) {
+    const CODE = code.toUpperCase();
+    if (!metaCodes.has(CODE)) {
+      console.log(`  ${code} (${qid}) → skipped (not in SUBDIVISION_META)`);
+      continue;
+    }
+    try {
+      const rec = await fetchTerritoryQid(code, qid);
+      const ok = record(CODE, rec, metaCodes);
+      console.log(`  ${code} (${qid}) → ${ok ? rec.name : "no data"}`);
+    } catch (e) {
+      console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(800);
+  }
+
+  console.log("\nFetching capital details by capital-city QID...");
+  for (const [code, qid] of Object.entries(CAPITAL_CITY_QIDS)) {
+    const CODE = code.toUpperCase();
+    if (!metaCodes.has(CODE)) {
+      console.log(`  ${code} (city ${qid}) → skipped (not in SUBDIVISION_META)`);
+      continue;
+    }
+    try {
+      const rec = await fetchCityQid(code, qid);
+      const ok = record(CODE, rec, metaCodes);
+      console.log(`  ${code} (city ${qid}) → ${ok ? rec.name : "no data"}`);
+    } catch (e) {
+      console.log(`  ${code} (city ${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(800);
+  }
+
+  // Preserve any code the new run didn't return (transient failure) from the
+  // previous output, so a refresh never silently drops coverage.
+  let preserved = 0;
+  for (const [code, v] of loadExisting()) {
+    if (!details.has(code) && (appCodes.has(code) || metaCodes.has(code))) {
+      details.set(code, v);
+      preserved++;
+    }
+  }
+  if (preserved) console.log(`\nPreserved ${preserved} detail(s) from the previous run.`);
+
+  writeOutput(details, flagSources);
+}
+
+function writeOutput(details, flagSources) {
+  const byCountry = new Map();
+  for (const [code, v] of details) {
+    const cc = code.split("-")[0];
+    if (!byCountry.has(cc)) byCountry.set(cc, []);
+    byCountry.get(cc).push([code, v]);
+  }
+  const countries = [...byCountry.keys()].sort();
+
+  let body = "";
+  let withPop = 0;
+  for (const cc of countries) {
+    body += `\n  // ── ${cc} ──\n`;
+    for (const [code, v] of byCountry.get(cc).sort((a, b) => a[0].localeCompare(b[0]))) {
+      if (v.population != null) withPop++;
+      body += `  ${JSON.stringify(code)}: ${JSON.stringify(v)},\n`;
+    }
+  }
+
+  const ts = `// Auto-generated by scripts/build-capital-details.mjs — DO NOT EDIT MANUALLY
+// Source: Wikidata — each subdivision's capital (P36), the capital city's most
+// recent DATED population (P1082 + point-in-time P585 + method P459), and its
+// flag image (P41). Powers the Learn-mode "View capital" drill-down under the
+// sub-national widget. \`name\` is the Wikidata capital's English label, stored so
+// the app only shows the population/flag when they belong to the SAME capital the
+// sub-national panel already displays (see src/lib/cityRoles.ts capitalDetail()).
+//
+// To refresh: node scripts/build-capital-details.mjs (needs egress to
+// query.wikidata.org), then node scripts/download-capital-flags.mjs to bundle the
+// flags. The generator only re-formats authoritative source data — it never
+// invents a name, figure or flag; a capital with no usable data is omitted.
+
+export type CapitalDetail = {
+  /** Capital city name (Wikidata English label). Used to confirm the population
+   *  and flag belong to the capital the sub-national panel shows. */
+  name: string;
+  /** Most-recent dated city-proper population estimate. Optional. */
+  population?: number;
+  /** Reference year of the population figure. Present iff population is. */
+  year?: number;
+  /** How the figure was produced. Present iff population is. */
+  basis?: "census" | "estimate";
+};
+
+/** Keyed by ISO 3166-2 subdivision code. */
+export const CAPITAL_DETAILS: Readonly<Record<string, CapitalDetail>> = {${body}};
+`;
+
+  writeFileSync(OUTPUT, ts);
+  writeFileSync(FLAG_MANIFEST, JSON.stringify(flagSources, null, 0) + "\n");
+  console.log(`\nWrote ${OUTPUT}`);
+  console.log(`  ${details.size} capitals (${withPop} with a dated population) across ${countries.length} countries`);
+  console.log(`Wrote ${FLAG_MANIFEST}`);
+  console.log(`  ${Object.keys(flagSources).length} capital flag source(s) for the downloader`);
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
