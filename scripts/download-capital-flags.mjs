@@ -39,7 +39,13 @@ const MANIFEST = join(__dirname, "data", "capital-flag-sources.json");
 const OUT_DIR = join(ROOT, "public", "capital-flags");
 const OUTPUT_TS = join(ROOT, "src", "data", "capitalFlags.ts");
 
-const FILEPATH = "https://commons.wikimedia.org/wiki/Special:FilePath";
+// Commons first; some flags are hosted LOCALLY on en.wikipedia (Commons
+// Special:FilePath 404s for them — e.g. several US state-capital flags), so fall
+// back to the en.wikipedia file host.
+const FILE_HOSTS = [
+  "https://commons.wikimedia.org/wiki/Special:FilePath",
+  "https://en.wikipedia.org/wiki/Special:FilePath",
+];
 const USER_AGENT =
   "HanaFlagGame-capital-flags/1.0 (https://github.com/wladimirchagas/Hana-s-flag-game)";
 // Some authoritative city flags are extremely detailed heraldic vectors (Venice's
@@ -65,8 +71,8 @@ function extOf(filename) {
 const extFromContentType = (ct) =>
   /svg/.test(ct) ? "svg" : /png/.test(ct) ? "png" : /jpe?g/.test(ct) ? "jpg" : /gif/.test(ct) ? "gif" : null;
 
-async function download(filename, width = null, attempt = 0) {
-  let url = `${FILEPATH}/${encodeURIComponent(filename)}`;
+async function downloadFrom(host, filename, width = null, attempt = 0) {
+  let url = `${host}/${encodeURIComponent(filename)}`;
   if (width) url += `?width=${width}`;
   try {
     const res = await fetch(url, { headers: { "User-Agent": USER_AGENT }, redirect: "follow" });
@@ -77,12 +83,22 @@ async function download(filename, width = null, attempt = 0) {
   } catch (e) {
     if (attempt < 6) {
       // Back off with jitter so concurrent workers don't retry in lockstep and
-      // re-trip Commons' rate limiter (HTTP 429).
+      // re-trip the rate limiter (HTTP 429).
       await sleep(1500 * 2 ** attempt + Math.random() * 1500);
-      return download(filename, width, attempt + 1);
+      return downloadFrom(host, filename, width, attempt + 1);
     }
     return { error: e.message };
   }
+}
+
+async function download(filename, width = null) {
+  let last = { error: "no host" };
+  for (const host of FILE_HOSTS) {
+    const r = await downloadFrom(host, filename, width);
+    if (!r.error && r.buf?.length) return r;
+    last = r;
+  }
+  return last;
 }
 
 /**

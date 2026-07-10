@@ -39,6 +39,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "AR-G": "capital-flags/ar-g.png",
   "AR-H": "capital-flags/ar-h.svg",
   "AR-K": "capital-flags/ar-k.svg",
+  "AR-P": "capital-flags/ar-p.png",
   "AR-Q": "capital-flags/ar-q.svg",
   "AR-S": "capital-flags/ar-s.png",
   "AR-W": "capital-flags/ar-w.svg",
@@ -83,8 +84,12 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "BG-07": "capital-flags/bg-07.svg",
   "BG-08": "capital-flags/bg-08.svg",
   "BG-09": "capital-flags/bg-09.gif",
+  "BG-10": "capital-flags/bg-10.svg",
+  "BG-11": "capital-flags/bg-11.svg",
   "BG-12": "capital-flags/bg-12.svg",
+  "BG-13": "capital-flags/bg-13.svg",
   "BG-14": "capital-flags/bg-14.svg",
+  "BG-15": "capital-flags/bg-15.svg",
   "BG-16": "capital-flags/bg-16.svg",
   "BG-17": "capital-flags/bg-17.png",
   "BG-18": "capital-flags/bg-18.png",
@@ -143,6 +148,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── BW ──
   "BW-NE": "capital-flags/bw-ne.png",
+  "BW-SO": "capital-flags/bw-so.png",
 
   // ── BY ──
   "BY-BR": "capital-flags/by-br.svg",
@@ -154,14 +160,22 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── BZ ──
   "BZ-BZ": "capital-flags/bz-bz.svg",
+  "BZ-CY": "capital-flags/bz-cy.svg",
+  "BZ-SC": "capital-flags/bz-sc.png",
 
   // ── CA ──
+  "CA-AB": "capital-flags/ca-ab.png",
   "CA-BC": "capital-flags/ca-bc.png",
   "CA-MB": "capital-flags/ca-mb.svg",
+  "CA-NL": "capital-flags/ca-nl.gif",
+  "CA-NS": "capital-flags/ca-ns.svg",
+  "CA-NT": "capital-flags/ca-nt.svg",
+  "CA-NU": "capital-flags/ca-nu.svg",
   "CA-ON": "capital-flags/ca-on.svg",
   "CA-PE": "capital-flags/ca-pe.svg",
   "CA-QC": "capital-flags/ca-qc.svg",
   "CA-SK": "capital-flags/ca-sk.svg",
+  "CA-YT": "capital-flags/ca-yt.gif",
 
   // ── CD ──
   "CD-KA": "capital-flags/cd-ka.svg",
@@ -236,23 +250,30 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "CO-RIS": "capital-flags/co-ris.svg",
   "CO-SAN": "capital-flags/co-san.svg",
   "CO-SUC": "capital-flags/co-suc.svg",
+  "CO-TOL": "capital-flags/co-tol.svg",
   "CO-VAC": "capital-flags/co-vac.svg",
   "CO-VAU": "capital-flags/co-vau.svg",
   "CO-VID": "capital-flags/co-vid.svg",
 
   // ── CR ──
+  "CR-A": "capital-flags/cr-a.svg",
   "CR-C": "capital-flags/cr-c.svg",
+  "CR-H": "capital-flags/cr-h.svg",
   "CR-P": "capital-flags/cr-p.svg",
   "CR-SJ": "capital-flags/cr-sj.svg",
 
   // ── CU ──
   "CU-03": "capital-flags/cu-03.svg",
   "CU-05": "capital-flags/cu-05.png",
+  "CU-06": "capital-flags/cu-06.png",
   "CU-11": "capital-flags/cu-11.svg",
   "CU-12": "capital-flags/cu-12.svg",
 
   // ── CV ──
   "CV-PR": "capital-flags/cv-pr.svg",
+
+  // ── CY ──
+  "CY-01": "capital-flags/cy-01.svg",
 
   // ── CZ ──
   "CZ-JC": "capital-flags/cz-jc.svg",
@@ -288,6 +309,10 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   // ── DK ──
   "DK-GL": "capital-flags/dk-gl.svg",
 
+  // ── DO ──
+  "DO-06": "capital-flags/do-06.png",
+  "DO-25": "capital-flags/do-25.png",
+
   // ── DZ ──
   "DZ-16": "capital-flags/dz-16.png",
   "DZ-29": "capital-flags/dz-29.svg",
@@ -297,6 +322,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "EC-B": "capital-flags/ec-b.svg",
   "EC-C": "capital-flags/ec-c.svg",
   "EC-D": "capital-flags/ec-d.svg",
+  "EC-E": "capital-flags/ec-e.svg",
   "EC-F": "capital-flags/ec-f.jpg",
   "EC-G": "capital-flags/ec-g.svg",
   "EC-H": "capital-flags/ec-h.svg",
@@ -329,11 +355,17 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "EG-BH": "capital-flags/eg-bh.svg",
   "EG-C": "capital-flags/eg-c.svg",
   "EG-DK": "capital-flags/eg-dk.png",
+  "EG-DT": "capital-flags/eg-dt.svg",
   "EG-GZ": "capital-flags/eg-gz.png",
+  "EG-KB": "capital-flags/eg-kb.png",
+  "EG-KFS": "capital-flags/eg-kfs.svg",
   "EG-LX": "capital-flags/eg-lx.png",
+  "EG-MN": "capital-flags/eg-mn.jpg",
+  "EG-MT": "capital-flags/eg-mt.png",
   "EG-PTS": "capital-flags/eg-pts.png",
   "EG-SHG": "capital-flags/eg-shg.png",
   "EG-SIN": "capital-flags/eg-sin.png",
+  "EG-SUZ": "capital-flags/eg-suz.svg",
 
   // ── ES ──
   "ES-A": "capital-flags/es-a.svg",
@@ -398,6 +430,10 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   // ── FJ ──
   "FJ-C": "capital-flags/fj-c.png",
 
+  // ── FM ──
+  "FM-PNI": "capital-flags/fm-pni.svg",
+  "FM-TRK": "capital-flags/fm-trk.gif",
+
   // ── FR ──
   "FR-01": "capital-flags/fr-01.svg",
   "FR-04": "capital-flags/fr-04.gif",
@@ -449,10 +485,12 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "GB-WLS": "capital-flags/gb-wls.svg",
 
   // ── GE ──
+  "GE-AB": "capital-flags/ge-ab.svg",
   "GE-AJ": "capital-flags/ge-aj.svg",
   "GE-IM": "capital-flags/ge-im.svg",
   "GE-KA": "capital-flags/ge-ka.svg",
   "GE-KK": "capital-flags/ge-kk.svg",
+  "GE-MM": "capital-flags/ge-mm.svg",
   "GE-RL": "capital-flags/ge-rl.svg",
   "GE-SJ": "capital-flags/ge-sj.svg",
   "GE-SK": "capital-flags/ge-sk.svg",
@@ -460,6 +498,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── GH ──
   "GH-AA": "capital-flags/gh-aa.png",
+  "GH-AH": "capital-flags/gh-ah.svg",
 
   // ── GL ──
   "GL-KU": "capital-flags/gl-ku.svg",
@@ -468,6 +507,10 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── GQ ──
   "GQ-BN": "capital-flags/gq-bn.png",
+
+  // ── GR ──
+  "GR-A1": "capital-flags/gr-a1.svg",
+  "GR-B": "capital-flags/gr-b.svg",
 
   // ── GT ──
   "GT-CQ": "capital-flags/gt-cq.png",
@@ -485,9 +528,11 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── GW ──
   "GW-GA": "capital-flags/gw-ga.png",
+  "GW-OI": "capital-flags/gw-oi.gif",
 
   // ── HN ──
   "HN-CH": "capital-flags/hn-ch.png",
+  "HN-CM": "capital-flags/hn-cm.png",
   "HN-CR": "capital-flags/hn-cr.svg",
   "HN-FM": "capital-flags/hn-fm.png",
   "HN-IB": "capital-flags/hn-ib.svg",
@@ -518,7 +563,9 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "HR-20": "capital-flags/hr-20.svg",
 
   // ── HT ──
+  "HT-AR": "capital-flags/ht-ar.jpg",
   "HT-OU": "capital-flags/ht-ou.jpg",
+  "HT-SD": "capital-flags/ht-sd.jpg",
 
   // ── HU ──
   "HU-BA": "capital-flags/hu-ba.png",
@@ -558,6 +605,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "ID-KS": "capital-flags/id-ks.png",
   "ID-KT": "capital-flags/id-kt.png",
   "ID-LA": "capital-flags/id-la.png",
+  "ID-MA": "capital-flags/id-ma.png",
   "ID-NB": "capital-flags/id-nb.png",
   "ID-NT": "capital-flags/id-nt.png",
   "ID-PA": "capital-flags/id-pa.png",
@@ -567,6 +615,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "ID-SG": "capital-flags/id-sg.png",
   "ID-SN": "capital-flags/id-sn.png",
   "ID-SS": "capital-flags/id-ss.png",
+  "ID-ST": "capital-flags/id-st.png",
   "ID-SU": "capital-flags/id-su.png",
   "ID-YO": "capital-flags/id-yo.svg",
 
@@ -575,15 +624,22 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "IE-LD": "capital-flags/ie-ld.svg",
   "IE-LK": "capital-flags/ie-lk.svg",
   "IE-OY": "capital-flags/ie-oy.svg",
+  "IE-TA": "capital-flags/ie-ta.svg",
   "IE-WD": "capital-flags/ie-wd.svg",
 
   // ── IL ──
+  "IL-D": "capital-flags/il-d.png",
   "IL-HA": "capital-flags/il-ha.svg",
   "IL-JM": "capital-flags/il-jm.svg",
   "IL-TA": "capital-flags/il-ta.svg",
   "IL-Z": "capital-flags/il-z.svg",
 
+  // ── IN ──
+  "IN-DL": "capital-flags/in-dl.svg",
+  "IN-KL": "capital-flags/in-kl.png",
+
   // ── IQ ──
+  "IQ-BA": "capital-flags/iq-ba.png",
   "IQ-BG": "capital-flags/iq-bg.svg",
   "IQ-NA": "capital-flags/iq-na.png",
 
@@ -637,6 +693,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "IT-GR": "capital-flags/it-gr.svg",
   "IT-IM": "capital-flags/it-im.png",
   "IT-IS": "capital-flags/it-is.svg",
+  "IT-LC": "capital-flags/it-lc.png",
   "IT-LE": "capital-flags/it-le.png",
   "IT-LI": "capital-flags/it-li.svg",
   "IT-LO": "capital-flags/it-lo.svg",
@@ -701,6 +758,14 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── JO ──
   "JO-AM": "capital-flags/jo-am.svg",
+  "JO-AT": "capital-flags/jo-at.png",
+  "JO-AZ": "capital-flags/jo-az.png",
+  "JO-BA": "capital-flags/jo-ba.png",
+  "JO-IR": "capital-flags/jo-ir.png",
+  "JO-KA": "capital-flags/jo-ka.png",
+  "JO-MA": "capital-flags/jo-ma.png",
+  "JO-MD": "capital-flags/jo-md.png",
+  "JO-MN": "capital-flags/jo-mn.png",
 
   // ── JP ──
   "JP-01": "capital-flags/jp-01.svg",
@@ -758,14 +823,21 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "KG-B": "capital-flags/kg-b.svg",
   "KG-C": "capital-flags/kg-c.svg",
   "KG-J": "capital-flags/kg-j.svg",
+  "KG-N": "capital-flags/kg-n.svg",
   "KG-O": "capital-flags/kg-o.svg",
   "KG-Y": "capital-flags/kg-y.svg",
 
   // ── KR ──
+  "KR-11": "capital-flags/kr-11.svg",
+  "KR-26": "capital-flags/kr-26.svg",
   "KR-41": "capital-flags/kr-41.svg",
   "KR-42": "capital-flags/kr-42.svg",
+  "KR-43": "capital-flags/kr-43.svg",
   "KR-44": "capital-flags/kr-44.svg",
   "KR-45": "capital-flags/kr-45.svg",
+  "KR-46": "capital-flags/kr-46.svg",
+  "KR-47": "capital-flags/kr-47.svg",
+  "KR-48": "capital-flags/kr-48.svg",
 
   // ── KZ ──
   "KZ-ALM": "capital-flags/kz-alm.gif",
@@ -848,6 +920,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── MA ──
   "MA-01": "capital-flags/ma-01.gif",
+  "MA-02": "capital-flags/ma-02.svg",
   "MA-03": "capital-flags/ma-03.svg",
   "MA-05": "capital-flags/ma-05.svg",
   "MA-09": "capital-flags/ma-09.svg",
@@ -888,15 +961,24 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── ME ──
   "ME-02": "capital-flags/me-02.svg",
+  "ME-03": "capital-flags/me-03.png",
+  "ME-04": "capital-flags/me-04.png",
   "ME-05": "capital-flags/me-05.svg",
   "ME-06": "capital-flags/me-06.svg",
+  "ME-07": "capital-flags/me-07.png",
   "ME-08": "capital-flags/me-08.svg",
   "ME-10": "capital-flags/me-10.jpg",
+  "ME-11": "capital-flags/me-11.png",
   "ME-12": "capital-flags/me-12.gif",
+  "ME-13": "capital-flags/me-13.gif",
+  "ME-14": "capital-flags/me-14.svg",
   "ME-15": "capital-flags/me-15.svg",
   "ME-16": "capital-flags/me-16.svg",
+  "ME-17": "capital-flags/me-17.svg",
   "ME-18": "capital-flags/me-18.svg",
+  "ME-19": "capital-flags/me-19.svg",
   "ME-20": "capital-flags/me-20.svg",
+  "ME-21": "capital-flags/me-21.png",
 
   // ── MK ──
   "MK-02": "capital-flags/mk-02.svg",
@@ -913,27 +995,49 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "MK-73": "capital-flags/mk-73.svg",
   "MK-83": "capital-flags/mk-83.svg",
 
+  // ── MM ──
+  "MM-04": "capital-flags/mm-04.svg",
+  "MM-06": "capital-flags/mm-06.svg",
+
   // ── MN ──
+  "MN-035": "capital-flags/mn-035.png",
   "MN-041": "capital-flags/mn-041.png",
+  "MN-053": "capital-flags/mn-053.png",
+  "MN-061": "capital-flags/mn-061.png",
+  "MN-065": "capital-flags/mn-065.png",
+  "MN-069": "capital-flags/mn-069.png",
 
   // ── MU ──
   "MU-PL": "capital-flags/mu-pl.svg",
 
   // ── MX ──
+  "MX-BCN": "capital-flags/mx-bcn.svg",
+  "MX-CHH": "capital-flags/mx-chh.svg",
+  "MX-CHP": "capital-flags/mx-chp.svg",
   "MX-JAL": "capital-flags/mx-jal.svg",
+  "MX-MEX": "capital-flags/mx-mex.svg",
   "MX-MIC": "capital-flags/mx-mic.svg",
+  "MX-MOR": "capital-flags/mx-mor.svg",
+  "MX-PUE": "capital-flags/mx-pue.svg",
+  "MX-QUE": "capital-flags/mx-que.svg",
+  "MX-YUC": "capital-flags/mx-yuc.svg",
   "MX-ZAC": "capital-flags/mx-zac.png",
 
   // ── MY ──
   "MY-01": "capital-flags/my-01.svg",
   "MY-02": "capital-flags/my-02.svg",
+  "MY-04": "capital-flags/my-04.jpg",
   "MY-05": "capital-flags/my-05.svg",
   "MY-07": "capital-flags/my-07.svg",
   "MY-08": "capital-flags/my-08.svg",
+  "MY-10": "capital-flags/my-10.png",
   "MY-11": "capital-flags/my-11.svg",
   "MY-12": "capital-flags/my-12.svg",
 
   // ── MZ ──
+  "MZ-L": "capital-flags/mz-l.png",
+  "MZ-N": "capital-flags/mz-n.png",
+  "MZ-S": "capital-flags/mz-s.png",
   "MZ-T": "capital-flags/mz-t.jpg",
 
   // ── NA ──
@@ -985,15 +1089,20 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── NZ ──
   "NZ-CAN": "capital-flags/nz-can.svg",
+  "NZ-HKB": "capital-flags/nz-hkb.png",
   "NZ-MWT": "capital-flags/nz-mwt.png",
   "NZ-NSN": "capital-flags/nz-nsn.svg",
   "NZ-OTA": "capital-flags/nz-ota.svg",
+  "NZ-STL": "capital-flags/nz-stl.svg",
+  "NZ-WGN": "capital-flags/nz-wgn.svg",
+  "NZ-WKO": "capital-flags/nz-wko.png",
 
   // ── OM ──
   "OM-MA": "capital-flags/om-ma.svg",
 
   // ── PA ──
   "PA-10": "capital-flags/pa-10.svg",
+  "PA-3": "capital-flags/pa-3.svg",
   "PA-6": "capital-flags/pa-6.svg",
   "PA-8": "capital-flags/pa-8.svg",
 
@@ -1013,6 +1122,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "PE-LAM": "capital-flags/pe-lam.png",
   "PE-LIM": "capital-flags/pe-lim.jpg",
   "PE-LOR": "capital-flags/pe-lor.svg",
+  "PE-MDD": "capital-flags/pe-mdd.svg",
   "PE-MOQ": "capital-flags/pe-moq.svg",
   "PE-PAS": "capital-flags/pe-pas.png",
   "PE-PIU": "capital-flags/pe-piu.svg",
@@ -1026,26 +1136,37 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "PG-CPM": "capital-flags/pg-cpm.svg",
 
   // ── PH ──
+  "PH-ABR": "capital-flags/ph-abr.png",
   "PH-AGN": "capital-flags/ph-agn.png",
   "PH-AGS": "capital-flags/ph-ags.png",
+  "PH-AKL": "capital-flags/ph-akl.svg",
   "PH-ALB": "capital-flags/ph-alb.png",
+  "PH-ANT": "capital-flags/ph-ant.png",
   "PH-APA": "capital-flags/ph-apa.png",
   "PH-AUR": "capital-flags/ph-aur.png",
   "PH-BAN": "capital-flags/ph-ban.png",
+  "PH-BAS": "capital-flags/ph-bas.png",
   "PH-BEN": "capital-flags/ph-ben.png",
+  "PH-BIL": "capital-flags/ph-bil.png",
   "PH-BOH": "capital-flags/ph-boh.png",
   "PH-BTG": "capital-flags/ph-btg.jpg",
   "PH-BTN": "capital-flags/ph-btn.png",
+  "PH-BUK": "capital-flags/ph-buk.png",
   "PH-BUL": "capital-flags/ph-bul.png",
   "PH-CAG": "capital-flags/ph-cag.png",
+  "PH-CAM": "capital-flags/ph-cam.png",
   "PH-CAN": "capital-flags/ph-can.svg",
+  "PH-CAP": "capital-flags/ph-cap.png",
+  "PH-CAS": "capital-flags/ph-cas.png",
   "PH-CAT": "capital-flags/ph-cat.png",
   "PH-CEB": "capital-flags/ph-ceb.svg",
   "PH-COM": "capital-flags/ph-com.png",
   "PH-DAO": "capital-flags/ph-dao.png",
   "PH-DAS": "capital-flags/ph-das.jpg",
   "PH-DAV": "capital-flags/ph-dav.png",
+  "PH-EAS": "capital-flags/ph-eas.png",
   "PH-IFU": "capital-flags/ph-ifu.png",
+  "PH-ILI": "capital-flags/ph-ili.jpg",
   "PH-ILN": "capital-flags/ph-iln.png",
   "PH-KAL": "capital-flags/ph-kal.png",
   "PH-LAG": "capital-flags/ph-lag.png",
@@ -1053,20 +1174,26 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "PH-LAS": "capital-flags/ph-las.png",
   "PH-LEY": "capital-flags/ph-ley.png",
   "PH-LUN": "capital-flags/ph-lun.png",
+  "PH-MAG": "capital-flags/ph-mag.png",
   "PH-MAS": "capital-flags/ph-mas.png",
   "PH-MDC": "capital-flags/ph-mdc.png",
   "PH-MDR": "capital-flags/ph-mdr.png",
   "PH-MOU": "capital-flags/ph-mou.png",
   "PH-MSC": "capital-flags/ph-msc.png",
+  "PH-MSR": "capital-flags/ph-msr.svg",
   "PH-NCO": "capital-flags/ph-nco.png",
+  "PH-NSA": "capital-flags/ph-nsa.png",
   "PH-NUE": "capital-flags/ph-nue.png",
   "PH-NUV": "capital-flags/ph-nuv.png",
+  "PH-PAM": "capital-flags/ph-pam.gif",
+  "PH-PAN": "capital-flags/ph-pan.jpg",
   "PH-PLW": "capital-flags/ph-plw.svg",
   "PH-QUI": "capital-flags/ph-qui.png",
   "PH-ROM": "capital-flags/ph-rom.png",
   "PH-SAR": "capital-flags/ph-sar.png",
   "PH-SCO": "capital-flags/ph-sco.png",
   "PH-SIG": "capital-flags/ph-sig.png",
+  "PH-SLE": "capital-flags/ph-sle.png",
   "PH-SLU": "capital-flags/ph-slu.png",
   "PH-SOR": "capital-flags/ph-sor.png",
   "PH-SUK": "capital-flags/ph-suk.png",
@@ -1076,10 +1203,13 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "PH-WSA": "capital-flags/ph-wsa.png",
   "PH-ZAN": "capital-flags/ph-zan.jpg",
   "PH-ZAS": "capital-flags/ph-zas.png",
+  "PH-ZMB": "capital-flags/ph-zmb.png",
   "PH-ZSI": "capital-flags/ph-zsi.png",
 
   // ── PK ──
+  "PK-BA": "capital-flags/pk-ba.png",
   "PK-IS": "capital-flags/pk-is.svg",
+  "PK-KP": "capital-flags/pk-kp.png",
   "PK-PB": "capital-flags/pk-pb.png",
   "PK-SD": "capital-flags/pk-sd.png",
 
@@ -1135,28 +1265,37 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   // ── RO ──
   "RO-AB": "capital-flags/ro-ab.png",
   "RO-AR": "capital-flags/ro-ar.png",
+  "RO-BC": "capital-flags/ro-bc.png",
   "RO-BH": "capital-flags/ro-bh.gif",
   "RO-BN": "capital-flags/ro-bn.svg",
   "RO-BV": "capital-flags/ro-bv.svg",
   "RO-CT": "capital-flags/ro-ct.svg",
   "RO-CV": "capital-flags/ro-cv.png",
+  "RO-GL": "capital-flags/ro-gl.png",
+  "RO-HD": "capital-flags/ro-hd.gif",
   "RO-HR": "capital-flags/ro-hr.svg",
+  "RO-IF": "capital-flags/ro-if.svg",
   "RO-IS": "capital-flags/ro-is.png",
   "RO-MM": "capital-flags/ro-mm.svg",
   "RO-MS": "capital-flags/ro-ms.gif",
   "RO-PH": "capital-flags/ro-ph.png",
+  "RO-SB": "capital-flags/ro-sb.png",
   "RO-SJ": "capital-flags/ro-sj.svg",
   "RO-SM": "capital-flags/ro-sm.svg",
+  "RO-TM": "capital-flags/ro-tm.svg",
 
   // ── RS ──
   "RS-00": "capital-flags/rs-00.svg",
   "RS-01": "capital-flags/rs-01.png",
   "RS-02": "capital-flags/rs-02.svg",
+  "RS-03": "capital-flags/rs-03.svg",
   "RS-04": "capital-flags/rs-04.svg",
   "RS-05": "capital-flags/rs-05.svg",
   "RS-06": "capital-flags/rs-06.svg",
+  "RS-07": "capital-flags/rs-07.gif",
   "RS-08": "capital-flags/rs-08.gif",
   "RS-09": "capital-flags/rs-09.gif",
+  "RS-10": "capital-flags/rs-10.svg",
   "RS-11": "capital-flags/rs-11.png",
   "RS-12": "capital-flags/rs-12.svg",
   "RS-13": "capital-flags/rs-13.png",
@@ -1166,6 +1305,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "RS-18": "capital-flags/rs-18.gif",
   "RS-19": "capital-flags/rs-19.svg",
   "RS-20": "capital-flags/rs-20.gif",
+  "RS-22": "capital-flags/rs-22.jpg",
   "RS-23": "capital-flags/rs-23.gif",
   "RS-24": "capital-flags/rs-24.png",
   "RS-KM~": "capital-flags/rs-km~.svg",
@@ -1191,6 +1331,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "RU-IVA": "capital-flags/ru-iva.svg",
   "RU-KAM": "capital-flags/ru-kam.svg",
   "RU-KB": "capital-flags/ru-kb.png",
+  "RU-KC": "capital-flags/ru-kc.png",
   "RU-KDA": "capital-flags/ru-kda.svg",
   "RU-KEM": "capital-flags/ru-kem.svg",
   "RU-KGD": "capital-flags/ru-kgd.svg",
@@ -1247,24 +1388,56 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "RU-VOR": "capital-flags/ru-vor.png",
   "RU-YAN": "capital-flags/ru-yan.svg",
   "RU-YAR": "capital-flags/ru-yar.svg",
+  "RU-YEV": "capital-flags/ru-yev.png",
   "RU-ZAB": "capital-flags/ru-zab.svg",
 
   // ── SB ──
   "SB-GU": "capital-flags/sb-gu.svg",
 
+  // ── SD ──
+  "SD-NO": "capital-flags/sd-no.png",
+
   // ── SE ──
   "SE-AB": "capital-flags/se-ab.svg",
+  "SE-D": "capital-flags/se-d.svg",
+  "SE-F": "capital-flags/se-f.svg",
   "SE-M": "capital-flags/se-m.svg",
   "SE-O": "capital-flags/se-o.svg",
+  "SE-Z": "capital-flags/se-z.svg",
 
   // ── SI ──
+  "SI-003": "capital-flags/si-003.svg",
+  "SI-006": "capital-flags/si-006.gif",
   "SI-011": "capital-flags/si-011.svg",
+  "SI-017": "capital-flags/si-017.svg",
+  "SI-023": "capital-flags/si-023.svg",
+  "SI-030": "capital-flags/si-030.svg",
+  "SI-032": "capital-flags/si-032.svg",
+  "SI-034": "capital-flags/si-034.svg",
+  "SI-041": "capital-flags/si-041.png",
+  "SI-043": "capital-flags/si-043.svg",
+  "SI-048": "capital-flags/si-048.svg",
   "SI-050": "capital-flags/si-050.svg",
   "SI-052": "capital-flags/si-052.svg",
   "SI-061": "capital-flags/si-061.svg",
   "SI-070": "capital-flags/si-070.svg",
   "SI-085": "capital-flags/si-085.svg",
+  "SI-094": "capital-flags/si-094.svg",
+  "SI-097": "capital-flags/si-097.gif",
+  "SI-099": "capital-flags/si-099.svg",
+  "SI-104": "capital-flags/si-104.svg",
+  "SI-106": "capital-flags/si-106.svg",
+  "SI-110": "capital-flags/si-110.gif",
+  "SI-124": "capital-flags/si-124.png",
+  "SI-129": "capital-flags/si-129.svg",
+  "SI-131": "capital-flags/si-131.gif",
   "SI-133": "capital-flags/si-133.svg",
+  "SI-147": "capital-flags/si-147.svg",
+  "SI-149": "capital-flags/si-149.gif",
+  "SI-151": "capital-flags/si-151.svg",
+  "SI-153": "capital-flags/si-153.gif",
+  "SI-158": "capital-flags/si-158.svg",
+  "SI-163": "capital-flags/si-163.svg",
 
   // ── SK ──
   "SK-BC": "capital-flags/sk-bc.svg",
@@ -1282,13 +1455,22 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "SN-DK": "capital-flags/sn-dk.svg",
 
   // ── SO ──
+  "SO-BN": "capital-flags/so-bn.svg",
   "SO-SL~": "capital-flags/so-sl~.svg",
 
+  // ── SS ──
+  "SS-EC": "capital-flags/ss-ec.png",
+
   // ── SV ──
+  "SV-AH": "capital-flags/sv-ah.png",
   "SV-CH": "capital-flags/sv-ch.svg",
+  "SV-LI": "capital-flags/sv-li.png",
   "SV-SA": "capital-flags/sv-sa.png",
+  "SV-SM": "capital-flags/sv-sm.png",
+  "SV-SO": "capital-flags/sv-so.png",
   "SV-SS": "capital-flags/sv-ss.svg",
   "SV-SV": "capital-flags/sv-sv.svg",
+  "SV-UN": "capital-flags/sv-un.jpg",
 
   // ── SY ──
   "SY-DI": "capital-flags/sy-di.svg",
@@ -1296,7 +1478,13 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "SY-RD": "capital-flags/sy-rd.svg",
 
   // ── TH ──
+  "TH-21": "capital-flags/th-21.png",
+  "TH-40": "capital-flags/th-40.png",
   "TH-50": "capital-flags/th-50.svg",
+  "TH-52": "capital-flags/th-52.png",
+  "TH-57": "capital-flags/th-57.png",
+  "TH-63": "capital-flags/th-63.png",
+  "TH-81": "capital-flags/th-81.png",
 
   // ── TJ ──
   "TJ-SU": "capital-flags/tj-su.svg",
@@ -1305,7 +1493,21 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "TL-DI": "capital-flags/tl-di.svg",
 
   // ── TN ──
+  "TN-11": "capital-flags/tn-11.svg",
   "TN-51": "capital-flags/tn-51.svg",
+
+  // ── TR ──
+  "TR-34": "capital-flags/tr-34.svg",
+
+  // ── TZ ──
+  "TZ-01": "capital-flags/tz-01.png",
+  "TZ-02": "capital-flags/tz-02.png",
+  "TZ-09": "capital-flags/tz-09.png",
+  "TZ-14": "capital-flags/tz-14.png",
+  "TZ-18": "capital-flags/tz-18.svg",
+  "TZ-19": "capital-flags/tz-19.png",
+  "TZ-21": "capital-flags/tz-21.png",
+  "TZ-25": "capital-flags/tz-25.png",
 
   // ── UA ──
   "UA-05": "capital-flags/ua-05.jpg",
@@ -1343,8 +1545,10 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "US-CO": "capital-flags/us-co.svg",
   "US-CT": "capital-flags/us-ct.svg",
   "US-DC": "capital-flags/us-dc.svg",
+  "US-DE": "capital-flags/us-de.gif",
   "US-FL": "capital-flags/us-fl.svg",
   "US-GA": "capital-flags/us-ga.svg",
+  "US-GU": "capital-flags/us-gu.svg",
   "US-HI": "capital-flags/us-hi.svg",
   "US-IA": "capital-flags/us-ia.svg",
   "US-ID": "capital-flags/us-id.gif",
@@ -1355,18 +1559,24 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "US-LA": "capital-flags/us-la.svg",
   "US-MA": "capital-flags/us-ma.svg",
   "US-MD": "capital-flags/us-md.svg",
+  "US-ME": "capital-flags/us-me.png",
+  "US-MI": "capital-flags/us-mi.svg",
   "US-MN": "capital-flags/us-mn.svg",
   "US-MO": "capital-flags/us-mo.svg",
   "US-MS": "capital-flags/us-ms.svg",
+  "US-MT": "capital-flags/us-mt.gif",
   "US-NC": "capital-flags/us-nc.svg",
   "US-ND": "capital-flags/us-nd.svg",
   "US-NE": "capital-flags/us-ne.svg",
+  "US-NH": "capital-flags/us-nh.jpg",
   "US-NJ": "capital-flags/us-nj.svg",
   "US-NM": "capital-flags/us-nm.png",
+  "US-NV": "capital-flags/us-nv.jpg",
   "US-NY": "capital-flags/us-ny.svg",
   "US-OH": "capital-flags/us-oh.svg",
   "US-OK": "capital-flags/us-ok.png",
   "US-OR": "capital-flags/us-or.svg",
+  "US-PA": "capital-flags/us-pa.svg",
   "US-PR": "capital-flags/us-pr.svg",
   "US-RI": "capital-flags/us-ri.png",
   "US-SC": "capital-flags/us-sc.svg",
@@ -1376,6 +1586,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "US-UT": "capital-flags/us-ut.svg",
   "US-VA": "capital-flags/us-va.svg",
   "US-VT": "capital-flags/us-vt.svg",
+  "US-WA": "capital-flags/us-wa.jpg",
   "US-WI": "capital-flags/us-wi.svg",
   "US-WV": "capital-flags/us-wv.svg",
   "US-WY": "capital-flags/us-wy.svg",
@@ -1387,6 +1598,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
 
   // ── VE ──
   "VE-A": "capital-flags/ve-a.svg",
+  "VE-C": "capital-flags/ve-c.png",
   "VE-D": "capital-flags/ve-d.svg",
   "VE-E": "capital-flags/ve-e.svg",
   "VE-F": "capital-flags/ve-f.svg",
@@ -1401,10 +1613,12 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "VE-O": "capital-flags/ve-o.png",
   "VE-P": "capital-flags/ve-p.png",
   "VE-R": "capital-flags/ve-r.jpg",
+  "VE-S": "capital-flags/ve-s.svg",
   "VE-T": "capital-flags/ve-t.svg",
   "VE-V": "capital-flags/ve-v.svg",
   "VE-X": "capital-flags/ve-x.svg",
   "VE-Y": "capital-flags/ve-y.svg",
+  "VE-Z": "capital-flags/ve-z.png",
 
   // ── VU ──
   "VU-SAM": "capital-flags/vu-sam.gif",
