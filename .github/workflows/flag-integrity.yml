@@ -14,9 +14,11 @@ on:
       - "scripts/check-subdivision-name-collisions.mjs"
       - "scripts/check-flag-image-quality.mjs"
       - "scripts/check-flag-meanings.mjs"
+      - "scripts/check-city-flag-meanings.mjs"
       - "src/api/subdivisions.ts"
       - "src/lib/subdivisionMeta.ts"
       - "src/data/flagMeanings.ts"
+      - "src/data/cityFlagMeanings.ts"
       - "public/subdivisions/**"
       - "scripts/build-subdivision-meta.mjs"
       - "scripts/check-subdivision-meta-coverage.mjs"
@@ -78,3 +80,6 @@ jobs:
 
       - name: Verify every flag-meaning entry is sourced and well-formed
         run: node scripts/check-flag-meanings.mjs
+
+      - name: Verify every city-flag-meaning entry is sourced and well-formed
+        run: node scripts/check-city-flag-meanings.mjs

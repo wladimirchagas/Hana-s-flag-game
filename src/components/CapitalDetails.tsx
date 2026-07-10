@@ -1,6 +1,8 @@
 import { capitalDetail, capitalFlagPath } from "../lib/capitalInfo";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { formatPopulation } from "../lib/formatPopulation";
+import { FlagMeaning } from "./FlagMeaning";
+import { CITY_FLAG_MEANINGS } from "../data/cityFlagMeanings";
 
 /**
  * "View capital" drill-down body for the Learn-mode sub-national panel.
@@ -113,6 +115,10 @@ export function CapitalDetails({
               </span>
             </button>
           </div>
+          {/* City-flag explainer — same progressive-disclosure component, look
+              and feel as the national/subnational "What this flag means" panel,
+              keyed by the subdivision code whose capital flag is shown. */}
+          <FlagMeaning code={code} meanings={CITY_FLAG_MEANINGS} />
         </div>
       )}
       {detail?.population == null && !flagUrl && (
