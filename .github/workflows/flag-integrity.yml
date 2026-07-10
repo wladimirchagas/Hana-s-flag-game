@@ -20,6 +20,10 @@ on:
       - "public/subdivisions/**"
       - "scripts/build-subdivision-meta.mjs"
       - "scripts/check-subdivision-meta-coverage.mjs"
+      - "public/capital-flags/**"
+      - "src/data/capitalFlags.ts"
+      - "scripts/check-capital-flags.mjs"
+      - "scripts/build-capital-details.mjs"
 
 jobs:
   check-proportions:
@@ -59,6 +63,9 @@ jobs:
 
       - name: Verify no bundled flag is a degraded thumbnail or near-blank stub
         run: node scripts/check-flag-image-quality.mjs
+
+      - name: Verify no capital-city flag duplicates its country's national flag
+        run: node scripts/check-capital-flags.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest
