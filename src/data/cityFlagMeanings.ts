@@ -83,4 +83,193 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Rome — capital of Italy and of the Lazio region ─────────────────────────
+  "IT-RM": {
+    description:
+      "A vertical bicolour of dark red (a Tyrian-purple/amaranth shade) at the hoist and golden " +
+      "yellow at the fly — the two civic colours of Rome. They continue the city’s medieval heraldic " +
+      "tradition: Rome’s coat of arms (officially adopted 1884) is a dark-red shield bearing a golden " +
+      "Greek cross and the golden letters SPQR set diagonally. “SPQR” stands for Senatus Populusque " +
+      "Romanus (“the Senate and People of Rome”), the formula of the ancient Roman state and, since " +
+      "1927, the city’s official motto. The vertical-stripe flag was introduced in 1870, when Rome " +
+      "became part of the Kingdom of Italy.",
+    sources: [
+      { title: "Flag of Rome — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rome" },
+    ],
+  },
+
+  // ── Barcelona — capital of the Barcelona province and of Catalonia ───────────
+  "ES-B": {
+    description:
+      "A flag quartered from the arms of the city of Barcelona: the first and fourth quarters bear the " +
+      "cross of Saint George (a red cross on white), and the second and third bear the four red pallets " +
+      "on gold of the Crown of Aragon and the Counts of Barcelona. Saint George (Sant Jordi) is the " +
+      "city’s and Catalonia’s patron — the cross was formally established as the city’s badge by 1395 — " +
+      "while the red-and-gold bars descend from the House of Barcelona and the Crown of Aragon. The " +
+      "citizens’ own emblem, the cross, is placed in the more honourable first and fourth quarters. The " +
+      "quartered arms are first documented in 1329.",
+    sources: [
+      {
+        title: "Coat of arms of Barcelona — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barcelona",
+      },
+    ],
+  },
+
+  // ── Warsaw — capital of Poland and of the Masovian Voivodeship ──────────────
+  "PL-MZ": {
+    description:
+      "A horizontal bicolour of yellow over red — the civic colours of Warsaw. They derive from the " +
+      "city’s coat of arms, the Syrenka (the Warsaw Mermaid): a mermaid brandishing a raised sword and " +
+      "a round shield on a red field, the city’s guardian and defender of legend. Warsaw’s arms have " +
+      "been rendered as a sword-and-shield mermaid since 1622 (an earlier 1390 seal showed a dragon-like " +
+      "creature); the present design was fixed in 1938 and restored in 1990.",
+    sources: [
+      {
+        title: "Coat of arms of Warsaw — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Warsaw",
+      },
+    ],
+  },
+
+  // ── Bern — capital of Switzerland and of the canton of Bern ─────────────────
+  "CH-BE": {
+    description:
+      "A red field crossed by a golden (yellow) diagonal band on which a black bear climbs upward — the " +
+      "arms shared by the city and canton of Bern. The bear is canting arms: by tradition Duke " +
+      "Berthold V of Zähringen vowed to name his new city after the first animal taken on a hunt in the " +
+      "surrounding forest, and the first was a bear (German Bär), giving “Bern”. The bear appears on the " +
+      "city’s seals from about 1224; live bears have been kept by the city (today at the Bärenpark) for " +
+      "centuries.",
+    sources: [
+      {
+        title: "Coat of arms of Bern — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bern",
+      },
+    ],
+  },
+
+  // ── Munich — capital of the German state of Bavaria ─────────────────────────
+  "DE-BY": {
+    description:
+      "A horizontal bicolour of black over gold — the civic colours of Munich. They come from the " +
+      "city’s coat of arms, the Münchner Kindl (“Munich Child”): a young monk in a black cowl trimmed " +
+      "with gold, holding a red oath-book. The monk is canting arms — München derives from an Old High " +
+      "German phrase meaning “by the monks” (Mönche), referring to the monastic community at the city’s " +
+      "origin — so the figure literally depicts the city’s name. Over the centuries the monk was " +
+      "increasingly drawn as a child, giving the emblem its name; the current form was standardised in " +
+      "1957.",
+    sources: [
+      {
+        title: "Coat of arms of Munich — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Munich",
+      },
+    ],
+  },
+
+  // ── Athens — capital of Greece and of the Attica region ─────────────────────
+  "GR-A1": {
+    description:
+      "A blue field within a gold-and-red border (modelled on the flag of Attica), charged with a white " +
+      "cross bearing at its centre a blue disc that shows the head of the goddess Athena in white and " +
+      "gold, framed by golden olive branches. Athena is the city’s patron and namesake, and the olive " +
+      "her sacred tree — by myth her gift of the olive won her the patronage of the city over Poseidon. " +
+      "The municipal flag was adopted in 1995.",
+    sources: [
+      {
+        title: "Athens (Municipality, Greece) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/gr-at-at.html",
+      },
+    ],
+  },
+
+  // ── Edinburgh — capital of Scotland ─────────────────────────────────────────
+  "GB-SCT": {
+    description:
+      "A white field bearing a black triple-towered castle on a rock — Edinburgh Castle, the arms of the " +
+      "City of Edinburgh (registered with the Lord Lyon in 1732). The full achievement’s supporters are " +
+      "a richly-attired maiden — recalling the castle’s old name Castellum Puellarum, the “Castle of the " +
+      "Maidens” — and a doe, for the city’s patron Saint Giles, who by legend lived as a hermit with " +
+      "only a doe for company; the crest is an anchor, marking the Lord Provost’s title of Admiral of " +
+      "the Firth of Forth. The motto is “Nisi Dominus Frustra” (“Except the Lord [build the house, they " +
+      "labour] in vain”), from Psalm 127.",
+    sources: [
+      {
+        title: "Coat of arms of Edinburgh — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Edinburgh",
+      },
+    ],
+  },
+
+  // ── Cardiff — capital of Wales ──────────────────────────────────────────────
+  "GB-WLS": {
+    description:
+      "A white field with a green mount on which a red dragon rears up — the arms of the City of Cardiff, " +
+      "granted in 1906. The red dragon is the national emblem of Wales; beside it grows a leek, the " +
+      "Welsh floral emblem; and the dragon upholds a red banner charged with three silver chevrons, the " +
+      "reputed ensign of Iestyn ap Gwrgant, the last Welsh prince of Glamorgan (11th century). The motto " +
+      "is “Y Ddraig Goch Ddyry Gychwyn” (“The Red Dragon Leads the Way”).",
+    sources: [
+      {
+        title: "Cardiff, City of (Glamorganshire) — public-arms reference (DrawShield)",
+        url: "https://drawshield.net/reference/public-arms/c/cardiff.html",
+      },
+      {
+        title: "National symbols of Wales — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/National_symbols_of_Wales",
+      },
+    ],
+  },
+
+  // ── Belfast — capital of Northern Ireland ───────────────────────────────────
+  "GB-NIR": {
+    description:
+      "A white field bearing a ship in full sail beneath a pile of vair (a heraldic fur), with a bell in " +
+      "a canton at the upper hoist — the arms of the City of Belfast (granted 1890, in use from a 1640 " +
+      "seal). The ship reflects Belfast’s maritime and shipbuilding heritage; the bell is canting arms, " +
+      "punning on the first syllable of “Bel-fast”; and the vair is drawn from the arms of Sir Arthur " +
+      "Chichester, founder of modern Belfast. The supporters (a chained wolf and a seahorse) repeat " +
+      "these themes — the wolf from the Chichester arms, the seahorse a sea emblem. The motto is “Pro " +
+      "Tanto Quid Retribuamus” (“In return for so much, what shall we give back?”), from Psalm 116. " +
+      "(This is the flag of the city of Belfast, not the Ulster Banner of Northern Ireland.)",
+    sources: [
+      {
+        title: "Coat of arms of Belfast — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belfast",
+      },
+    ],
+  },
+
+  // ── Stockholm — capital of Sweden ───────────────────────────────────────────
+  "SE-AB": {
+    description:
+      "A blue field bearing the golden, crowned head of Saint Erik — the arms of Stockholm. Erik IX, a " +
+      "12th-century king of Sweden, is the patron saint of both the kingdom and its capital; his crowned " +
+      "head has identified the city on its seals since the Middle Ages. Blue and gold are also the " +
+      "national colours of Sweden.",
+    sources: [
+      {
+        title: "Coat of arms of Stockholm — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Stockholm",
+      },
+    ],
+  },
+
+  // ── Sydney — capital of the Australian state of New South Wales ─────────────
+  "AU-NSW": {
+    description:
+      "The flag of the City of Sydney, a banner of the city arms granted in 1908. On a gold-and-blue " +
+      "field a three-masted sailing ship recalls the maritime founding of Sydney; the crest is an anchor " +
+      "within a mural crown surmounted by a star. As originally granted the supporters were an " +
+      "18th-century British seaman and an Aboriginal Australian, and the motto was “I take but I " +
+      "surrender” — read as the colony’s claim of the land and its later surrender to the emerging " +
+      "Australian nation. (A redesigned version of the arms followed in 1996.)",
+    sources: [
+      {
+        title: "Coat of arms of Sydney — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sydney",
+      },
+    ],
+  },
 };
