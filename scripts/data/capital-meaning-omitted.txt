@@ -9,3 +9,4 @@ AL-10  # Shkoder: FOTW (crwflags al-shko) documents only the town colours (blue/
 AL-12  # Vlore: EN Wikipedia + FOTW checked - only the national 1912 independence context is documented; Vlore's own city-arms per-element symbolism is not reachable.
 AM-AR  # Artashat: FOTW (crwflags am- local flags) notes the provincial capital has a flag, but Artashat's city-arms per-element symbolism is not documented in EN/FOTW.
 AT-1   # Eisenstadt: reachable EN/FOTW sources describe only the Burgenland STATE arms (eagle on rock); Eisenstadt's own city-arms per-element symbolism is not documented.
+BA-SRP  # Sarajevo flag bundled, but app data mismatch: BA-SRP maps to "Posavina Canton" (capital Orasje) in SUBDIVISION_META, so the capital-name guard never displays the Sarajevo flag; entry would be unreachable and mislabeled. (Bundled-data inconsistency, out of scope for the meaning sweep.)
