@@ -1,0 +1,11 @@
+# Capital-city flags investigated for the flag-meaning sweep but omitted, with the
+# source(s) checked. Format: "CODE  # reason (sources checked)".
+# A flag belongs here only after FOTW + the local-language article/Commons were
+# checked and no reachable per-element symbolism was found (see CLAUDE.md sweep rules).
+# The bundled flag still displays; only the "What this flag means" panel is absent.
+
+AL-06  # Korce: FOTW (crwflags al-korcc) confirms the yellow flag bears the municipal arms, but no per-element symbolism of those arms is documented in EN/FOTW/Commons.
+AL-10  # Shkoder: FOTW (crwflags al-shko) documents only the town colours (blue/white, red/blue); Shkoder's city-arms per-element symbolism is not documented in reachable sources.
+AL-12  # Vlore: EN Wikipedia + FOTW checked - only the national 1912 independence context is documented; Vlore's own city-arms per-element symbolism is not reachable.
+AM-AR  # Artashat: FOTW (crwflags am- local flags) notes the provincial capital has a flag, but Artashat's city-arms per-element symbolism is not documented in EN/FOTW.
+AT-1   # Eisenstadt: reachable EN/FOTW sources describe only the Burgenland STATE arms (eagle on rock); Eisenstadt's own city-arms per-element symbolism is not documented.
