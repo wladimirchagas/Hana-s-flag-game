@@ -30,6 +30,7 @@ import { EntitySummary } from "../components/EntitySummary";
 import { FlagMeaning } from "../components/FlagMeaning";
 import { worldCityMarkers, subdivisionCityMarkers, subdivisionCapital } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
+import { CapitalDetails } from "../components/CapitalDetails";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
   loadStoredSelection,
@@ -194,6 +195,10 @@ export default function LearnPage() {
   const [subdivisionGeo, setSubdivisionGeo] = useState<SubdivisionFeatureCollection | null>(null);
   const [subdivisionLoading, setSubdivisionLoading] = useState(false);
   const [selectedSubdivision, setSelectedSubdivision] = useState<SubdivisionMeta | null>(null);
+  // "View capital" drill-down: reveals the selected subdivision's capital city
+  // (name + population share + flag) as a third card below the sub-national one,
+  // mirroring how "View sub-national divisions" reveals the second card.
+  const [showCapital, setShowCapital] = useState(false);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
@@ -315,6 +320,12 @@ export default function LearnPage() {
   useEffect(() => {
     saveMapView(mapView);
   }, [mapView]);
+
+  // Collapse the capital drill-down whenever the selected subdivision changes,
+  // so it never shows a stale capital when switching divisions.
+  useEffect(() => {
+    setShowCapital(false);
+  }, [selectedSubdivision?.code]);
 
   // Scroll to the very top of the page when the user first lands here.
   useEffect(() => {
@@ -459,6 +470,7 @@ export default function LearnPage() {
     setSubdivisionGeo(null);
     setSelectedSubdivision(null);
     setSubdivisionCountry(null);
+    setShowCapital(false);
   }
 
 
@@ -1449,6 +1461,7 @@ export default function LearnPage() {
             Its own dropdown picks the division; its flag + explainer sit in the
             same box, mirroring the national box above. ===== */}
         {subdivisionMode && subdivisionCountry && (
+          <>
           <aside className="learn-fs__panel" aria-live="polite">
             <div className="learn-fs__detail">
               <div className="learn-fs__widget-search">
@@ -1537,6 +1550,18 @@ export default function LearnPage() {
                         {DISPUTED_SUBDIV_NOTES[selectedSubdivision.code]}
                       </p>
                     )}
+                    {/* Drill one level deeper: the capital city. Mirrors the
+                        national widget's "View sub-national divisions" button. */}
+                    {capital && (
+                      <button
+                        type="button"
+                        className={`learn-fs__subdiv-btn${showCapital ? " learn-fs__subdiv-btn--active" : ""}`}
+                        onClick={() => setShowCapital((v) => !v)}
+                        aria-pressed={showCapital}
+                      >
+                        {showCapital ? "Hide capital" : `View capital (${capital.name})`}
+                      </button>
+                    )}
                   </>
                 );
               })() : (
@@ -1546,6 +1571,36 @@ export default function LearnPage() {
               )}
             </div>
           </aside>
+
+          {/* ===== CAPITAL box — a third card, shown when the user taps
+              "View capital". Its capital name comes from the same source as the
+              sub-national panel's Capital row (cityRoles.subdivisionCapital); its
+              population + flag are authoritative Wikidata/Commons data shown only
+              when confirmed to belong to that capital. ===== */}
+          {showCapital && selectedSubdivision && (() => {
+            const capital = subdivisionCapital(selectedSubdivision.code);
+            if (!capital) return null;
+            const countryObj = codeToCountry.get(subdivisionCountry.code);
+            return (
+              <aside className="learn-fs__panel" aria-live="polite">
+                <div className="learn-fs__detail">
+                  <span className="learn-fs__search-label" aria-hidden="true">
+                    Capital of {selectedSubdivision.name}
+                  </span>
+                  <CapitalDetails
+                    code={selectedSubdivision.code}
+                    capitalName={capital.name}
+                    countryCode={subdivisionCountry.code}
+                    countryName={subdivisionCountry.name}
+                    nationalPopulation={countryObj?.population}
+                    baseUrl={baseUrl}
+                    onEnlarge={setZoomedFlagUrl}
+                  />
+                </div>
+              </aside>
+            );
+          })()}
+          </>
         )}
       </div>
 
