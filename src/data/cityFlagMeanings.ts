@@ -890,4 +890,77 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Burgas — capital of the Burgas Province, Bulgaria ───────────────────────
+  "BG-02": {
+    description:
+      "A white field with a blue band along the base, bearing the arms of Burgas: a crowned sea-lion (a " +
+      "lion with a fish’s tail) beneath a naval crown. The sea-lion and the naval crown reflect the " +
+      "city’s identity as Bulgaria’s principal Black Sea port and the centre of its fishing and " +
+      "fish-processing industry.",
+    sources: [
+      { title: "Burgas — Wikipedia", url: "https://en.wikipedia.org/wiki/Burgas" },
+    ],
+  },
+
+  // ── Dobrich — capital of the Dobrich Province, Bulgaria ─────────────────────
+  "BG-08": {
+    description:
+      "A flag bearing the arms of Dobrich: on a purple shield topped by a kobilitsa (a yoke-shaped " +
+      "ornament popular in the Bulgarian National Revival), a golden sheaf of wheat, with the town’s " +
+      "name above in old Bulgarian script. The wheat sheaf stands for the unity and glory of the " +
+      "Bulgarian people and for the fecundity of the surrounding Dobrudzha plains; purple is the colour " +
+      "of Bulgarian royal glory and sovereignty, and gold the welfare of the townspeople.",
+    sources: [
+      {
+        title: "Coat of Arms — Municipality of Dobrich",
+        url: "https://www.dobrich.bg/en/coat-of-arms",
+      },
+    ],
+  },
+
+  // ── Pleven — capital of the Pleven Province, Bulgaria ───────────────────────
+  "BG-15": {
+    description:
+      "A white field bearing the arms of Pleven, centred on the domed St George the Conqueror " +
+      "Chapel-Mausoleum. It commemorates the five-month Siege of Pleven (Plevna) in the Russo-Turkish " +
+      "War of 1877–78 — a battle decisive for the Liberation of Bulgaria — and the mausoleum holds the " +
+      "remains of the Bulgarian, Russian and Romanian soldiers who fell there.",
+    sources: [
+      {
+        title: "Pleven Panorama — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Pleven_Panorama",
+      },
+      { title: "Siege of Plevna — Wikipedia", url: "https://en.wikipedia.org/wiki/Siege_of_Plevna" },
+    ],
+  },
+
+  // ── Sliven — capital of the Sliven Province, Bulgaria ───────────────────────
+  "BG-20": {
+    description:
+      "A flag bearing the arms of Sliven, which since 1995 feature the Old Elm of Sliven — a field elm " +
+      "over 1,100 years old that still stands in the city centre beside the town hall. The best-known " +
+      "landmark of Sliven, the ancient tree stands for endurance, rootedness and the city’s long " +
+      "history.",
+    sources: [
+      { title: "The Old Elm — Wikipedia", url: "https://en.wikipedia.org/wiki/The_Old_Elm" },
+      {
+        title: "Symbols of Sliven — Sliven Regional Library",
+        url: "http://reglibsliven.iradeum.com/sliven/sliven_symbols_en.htm",
+      },
+    ],
+  },
+
+  // ── Shumen — capital of the Shumen Province, Bulgaria ───────────────────────
+  "BG-27": {
+    description:
+      "A green field bearing the golden arms of Shumen, an allegory of the Madara Rider — the early-8th " +
+      "century rock relief carved on the cliff near Shumen showing a mounted horseman spearing a lion, " +
+      "a dog running behind. Dated to the reign of the Bulgar Khan Tervel and a UNESCO World Heritage " +
+      "Site, the Rider is a symbol of victory and of the founding of the Bulgarian state; the speared " +
+      "lion represents enemies and chaos subdued.",
+    sources: [
+      { title: "Madara Rider — Wikipedia", url: "https://en.wikipedia.org/wiki/Madara_Rider" },
+    ],
+  },
 };
