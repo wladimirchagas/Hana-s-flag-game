@@ -791,4 +791,103 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Sofia — capital of Bulgaria (Sofia city) ────────────────────────────────
+  "BG-22": {
+    description:
+      "A light-blue field bearing the quartered arms of Sofia (created 1900). The quarters show the " +
+      "ancient city-goddess Ulpia Serdica (from a Roman coin), the church of St Sofia that gave the city " +
+      "its name, a statue of Apollo Medicus for the mineral springs, and Mount Vitosha at whose foot the " +
+      "city lies; the small central shield bears a rampant lion — the Bulgarian national emblem — placed " +
+      "there to symbolise the continuity between the old capital, Veliko Tarnovo, and the new one. The " +
+      "motto reads “Расте, но не старее” (“Ever growing, never aging”).",
+    sources: [
+      {
+        title: "Coat of arms of Sofia — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sofia",
+      },
+    ],
+  },
+
+  // ── Sofia — capital of the Sofia Province, Bulgaria ─────────────────────────
+  "BG-23": {
+    description:
+      "A light-blue field bearing the quartered arms of the city of Sofia (created 1900). The quarters " +
+      "show the ancient city-goddess Ulpia Serdica (from a Roman coin), the church of St Sofia that gave " +
+      "the city its name, a statue of Apollo Medicus for the mineral springs, and Mount Vitosha at whose " +
+      "foot the city lies; the central shield bears the Bulgarian rampant lion, marking the continuity " +
+      "between the old capital Veliko Tarnovo and the new one. The motto reads “Расте, но не старее” " +
+      "(“Ever growing, never aging”).",
+    sources: [
+      {
+        title: "Coat of arms of Sofia — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sofia",
+      },
+    ],
+  },
+
+  // ── Plovdiv — capital of the Plovdiv Province, Bulgaria ─────────────────────
+  "BG-16": {
+    description:
+      "A light-blue field bearing the arms of Plovdiv: two lions supporting a crown over a shield that " +
+      "shows a tower on seven small hillocks and a wavy stripe. The seven hillocks are Plovdiv’s seven " +
+      "syenite hills — the city is known as “the City of the Seven Hills” — and the wavy stripe is the " +
+      "river Maritsa that flows through it. The ribbon reads “Древен и вечен” (“Ancient and eternal”). " +
+      "The arms were adopted in 1997.",
+    sources: [
+      { title: "Plovdiv — Wikipedia", url: "https://en.wikipedia.org/wiki/Plovdiv" },
+    ],
+  },
+
+  // ── Ruse — capital of the Ruse Province, Bulgaria ───────────────────────────
+  "BG-18": {
+    description:
+      "A white field bearing the blue arms of Ruse: the city’s Monument of Liberty (a female figure " +
+      "holding a sword and pointing north-west toward the free peoples of Europe) above waves for the " +
+      "river Danube, beneath a fortress wall that marks the city’s antiquity. The monument, sculpted by " +
+      "Arnoldo Zocchi in the early 20th century, became the city’s emblem.",
+    sources: [
+      {
+        title: "Coat of arms and flag — Ruse Municipality",
+        url: "https://obshtinaruse.bg/en/coat-of-arms-and-flag",
+      },
+      {
+        title: "Monument of Liberty, Ruse — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Monument_of_Liberty,_Ruse",
+      },
+    ],
+  },
+
+  // ── Stara Zagora — capital of the Stara Zagora Province, Bulgaria ────────────
+  "BG-24": {
+    description:
+      "A green field bearing the arms of Stara Zagora (created 1979): on a red shield topped by a " +
+      "fortress wall, a golden lioness with her cub, and below, on green, golden furrows converging " +
+      "toward the centre. The lioness and cub are taken from an 11th–12th-century stone relief found in " +
+      "the city and stand for the maternal instinct and the city’s continual rebirth; the fortress wall " +
+      "marks its ancient standing (drawn from a fortress on Roman Augusta Traiana coins); the furrows " +
+      "represent the fertile Stara Zagora plain.",
+    sources: [
+      {
+        title: "City symbols — Stara Zagora Municipality",
+        url: "https://www.starazagora.bg/en/city-symbols",
+      },
+    ],
+  },
+
+  // ── Veliko Tarnovo — capital of the Veliko Tarnovo Province, Bulgaria ────────
+  "BG-04": {
+    description:
+      "A purple field bearing the golden arms of Veliko Tarnovo — a crowned lion above the Tsarevets " +
+      "fortress. Veliko Tarnovo was the capital of the Second Bulgarian Empire (1185–1393), and Tsarevets " +
+      "was its royal and patriarchal citadel and the empire’s strongest fortress; the crowned lion is the " +
+      "Bulgarian royal emblem and purple the imperial colour, together marking the city’s standing as the " +
+      "medieval capital.",
+    sources: [
+      {
+        title: "Tsarevets (fortress) — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Tsarevets_(fortress)",
+      },
+    ],
+  },
 };
