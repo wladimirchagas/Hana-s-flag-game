@@ -1095,7 +1095,7 @@ export default function LearnPage() {
         )}
       </nav>
     )}
-    <div className="learn-fs">
+    <div className={`learn-fs${subdivisionMode ? " learn-fs--drilldown" : ""}`}>
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra && subdivisionMode ? (
           <SubdivisionMap
