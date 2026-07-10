@@ -1,21 +1,25 @@
 import { useMemo } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
-import { countryCityFlags } from "../lib/cityFlags";
+import { subdivisionCapital } from "../lib/cityRoles";
+import { capitalFlagPath } from "../lib/capitalInfo";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
- * "Hierarchy chart" tab — an interactive org chart of a country's flags:
+ * "Hierarchy chart" tab — an interactive org chart of a country's structure:
  *
- *   national flag (root)
- *     └─ each subdivision's flag (branch)
- *          └─ that subdivision's capital-city flag (leaf), when one exists
+ *   nation (root)
+ *     └─ every subdivision (branch)
+ *          └─ that subdivision's capital city (leaf), when one is known
  *
- * Every flag is a real, bundled asset (national → country.flagSvg, subdivision →
- * subdivisionFlagUrl, city → the name-confirmed capital flag from
- * `countryCityFlags`); nothing is fabricated. Only subdivisions that carry a
- * flag OR a capital-city flag become branches, so every node shows real flag
- * content rather than a wall of placeholders.
+ * The chart shows the FULL administrative tree, not just the flagged parts: every
+ * subdivision appears, and every subdivision with a known capital gets a city
+ * leaf — whether or not a flag exists for it. Where a flag IS bundled it renders
+ * (national → country.flagSvg, subdivision → subdivisionFlagUrl, city → the
+ * name-confirmed capital flag), and where none exists a neutral "—" placeholder
+ * is shown. Nothing is fabricated: the capital NAME comes from the same
+ * authoritative source as the map ★ (`subdivisionCapital`), and a subdivision no
+ * source has a capital for simply gets no leaf.
  *
  * Clicking any node updates the parent selection (map highlight + widget):
  *  - root  → the country itself (clears the subdivision drill-down)
@@ -24,7 +28,6 @@ import type { SubdivisionMeta } from "../types/subdivision";
  */
 type Props = {
   divisions: SubdivisionMeta[];
-  countryCode: string;
   countryName: string;
   countryFlagUrl: string | null;
   /** Selected subdivision code (if any). */
@@ -39,7 +42,6 @@ type Props = {
 
 export function SubdivisionHierarchyChart({
   divisions,
-  countryCode,
   countryName,
   countryFlagUrl,
   selectedCode,
@@ -50,25 +52,27 @@ export function SubdivisionHierarchyChart({
   onSelectCapital,
 }: Props) {
   const nodes = useMemo(() => {
-    const cityByCode = new Map(
-      countryCityFlags(countryCode).map((c) => [c.code, c]),
-    );
     return divisions
       .filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY))
-      .map((d) => ({
-        div: d,
-        subFlag: subdivisionFlagUrl(d.code),
-        city: cityByCode.get(d.code) ?? null,
-      }))
-      // Keep the chart flag-focused: a branch must have its own flag or a city flag.
-      .filter((n) => n.subFlag || n.city)
+      .map((d) => {
+        const capital = subdivisionCapital(d.code);
+        return {
+          div: d,
+          subFlag: subdivisionFlagUrl(d.code),
+          // Every subdivision with a known capital gets a city leaf; the flag is
+          // shown when one is bundled, otherwise a placeholder.
+          city: capital
+            ? { name: capital.name, flagPath: capitalFlagPath(d.code, capital.name) }
+            : null,
+        };
+      })
       .sort((a, b) => a.div.name.localeCompare(b.div.name, "en"));
-  }, [divisions, countryCode]);
+  }, [divisions]);
 
   if (nodes.length === 0) {
     return (
       <p className="flag-grid__no-match">
-        No sub-national or city flags are available for {countryName} yet.
+        No sub-national divisions are available for {countryName} yet.
       </p>
     );
   }
@@ -140,19 +144,23 @@ export function SubdivisionHierarchyChart({
                   className={`hierarchy__node hierarchy__node--city${cityActive ? " hierarchy__node--active" : ""}`}
                   onClick={() => onSelectCapital(div.code)}
                   aria-pressed={cityActive}
-                  aria-label={`Select ${city.capitalName}, capital of ${div.name}`}
+                  aria-label={`Select ${city.name}, capital of ${div.name}`}
                 >
                   <span className="hierarchy__thumb">
-                    <img
-                      src={`${baseUrl}${city.flagPath}`}
-                      alt=""
-                      loading="lazy"
-                      draggable={false}
-                      className="hierarchy__thumb-img"
-                      onError={(e) => { e.currentTarget.style.display = "none"; }}
-                    />
+                    {city.flagPath ? (
+                      <img
+                        src={`${baseUrl}${city.flagPath}`}
+                        alt=""
+                        loading="lazy"
+                        draggable={false}
+                        className="hierarchy__thumb-img"
+                        onError={(e) => { e.currentTarget.style.display = "none"; }}
+                      />
+                    ) : (
+                      <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
+                    )}
                   </span>
-                  <span className="hierarchy__name">{city.capitalName}</span>
+                  <span className="hierarchy__name">{city.name}</span>
                 </button>
               )}
             </div>
