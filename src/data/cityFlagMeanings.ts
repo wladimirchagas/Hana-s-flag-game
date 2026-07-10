@@ -272,4 +272,211 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Graz — capital of the Austrian state of Styria ──────────────────────────
+  "AT-6": {
+    description:
+      "A green field bearing a white (silver) panther with red horns, claws and tongue, breathing red " +
+      "fire — the Grazer Panther. Graz has borne the panther of Styria since it was the medieval capital " +
+      "of the duchy (the Styrian panther appears from the seal of Margrave Ottokar III in 1160); the " +
+      "city’s version differs from the state arms in that its panther is crowned. In European heraldry " +
+      "the panther is a symbol of strength; the fire-breathing beast is the emblem of Styria and its " +
+      "capital.",
+    sources: [
+      {
+        title: "Coat of arms of Styria — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Styria",
+      },
+      { title: "Graz — Wikipedia", url: "https://en.wikipedia.org/wiki/Graz" },
+    ],
+  },
+
+  // ── Innsbruck — capital of the Austrian state of Tyrol ──────────────────────
+  "AT-7": {
+    description:
+      "A red field bearing a white bird’s-eye view of the bridge over the river Inn. These are canting " +
+      "arms — Innsbruck means “bridge over the Inn” (the river Inn + German Brücke, “bridge”) — so the " +
+      "flag literally depicts the city’s name and the crossing that gave the town its importance on the " +
+      "trade route. The bridge design has been used since 1267.",
+    sources: [
+      { title: "Innsbruck — Wikipedia", url: "https://en.wikipedia.org/wiki/Innsbruck" },
+    ],
+  },
+
+  // ── Salzburg — capital of the Austrian state of Salzburg ────────────────────
+  "AT-5": {
+    description:
+      "A horizontal bicolour of red over white — the traditional colours of Salzburg, taken from the " +
+      "arms of the former Prince-Archbishopric of Salzburg. Those arms are parted per pale: a black lion " +
+      "on gold and a silver bar on red; the official version of the flag adds them at the centre beneath " +
+      "the crown of a Prince of the Holy Roman Empire (added after Salzburg passed to Habsburg rule in " +
+      "1816).",
+    sources: [
+      {
+        title: "Salzburg (Austria) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/at-sa.html",
+      },
+    ],
+  },
+
+  // ── Tirana — capital of Albania ─────────────────────────────────────────────
+  "AL-11": {
+    description:
+      "A light-blue field bearing the arms of Tirana: a shield parted per pale red and blue showing, on " +
+      "the hoist side, the white Tirana Clock Tower (built 1822, a landmark of the city) and, on the fly " +
+      "side, a silver rampant lion, with a golden fleur-de-lis in chief; above the shield rises Tirana " +
+      "Castle (the Fortress of Justinian). The lion and fleur-de-lis are the emblem of the medieval " +
+      "Skuraj family that ruled central Albania. The arms were adopted by the city council in 2000.",
+    sources: [
+      {
+        title: "Symbols of Tirana — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Symbols_of_Tirana",
+      },
+      { title: "Flag of Tirana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tirana" },
+    ],
+  },
+
+  // ── Abu Dhabi — capital of the United Arab Emirates ─────────────────────────
+  "AE-AZ": {
+    description:
+      "A red field with a white rectangle in the upper hoist (canton) — the flag of the Emirate of Abu " +
+      "Dhabi. Red was the traditional banner colour of the Trucial emirates; under the 1820 General " +
+      "Maritime Treaty with Britain the emirates added white to their plain red flags as a sign of " +
+      "peace at sea, and Abu Dhabi carries the white as a canton to distinguish its flag from those of " +
+      "the neighbouring emirates.",
+    sources: [
+      {
+        title: "Flag of the United Arab Emirates — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates",
+      },
+      {
+        title: "General Maritime Treaty 1820 — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ae1820tr.html",
+      },
+    ],
+  },
+
+  // ── Dubai — capital of the Emirate of Dubai (UAE) ───────────────────────────
+  "AE-DU": {
+    description:
+      "A red field with a white vertical stripe along the hoist — the flag of the Emirate of Dubai. Red " +
+      "was the traditional colour of the Trucial emirates; the white was added under the 1820 General " +
+      "Maritime Treaty with Britain as a sign of peaceful intent at sea.",
+    sources: [
+      {
+        title: "Flag of the United Arab Emirates — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates",
+      },
+      {
+        title: "General Maritime Treaty 1820 — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ae1820tr.html",
+      },
+    ],
+  },
+
+  // ── Sharjah — capital of the Emirate of Sharjah (UAE) ───────────────────────
+  "AE-SH": {
+    description:
+      "A red rectangle within a broad white border — the “white-pierced-red” flag of the Emirate of " +
+      "Sharjah. This white-bordered red design was the pattern set for the Trucial States under the 1820 " +
+      "General Maritime Treaty with Britain (the white signalling peace at sea) and is associated with " +
+      "the Al Qawasim, Sharjah’s ruling house.",
+    sources: [
+      {
+        title: "Flag of the United Arab Emirates — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates",
+      },
+      {
+        title: "General Maritime Treaty 1820 — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ae1820tr.html",
+      },
+    ],
+  },
+
+  // ── Ajman — capital of the Emirate of Ajman (UAE) ───────────────────────────
+  "AE-AJ": {
+    description:
+      "A red field with a white vertical stripe along the hoist — the flag of the Emirate of Ajman. As " +
+      "with the other Trucial emirates, the red is the traditional field colour and the white was added " +
+      "under the 1820 General Maritime Treaty with Britain as a mark of peace at sea.",
+    sources: [
+      {
+        title: "Flag of the United Arab Emirates — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates",
+      },
+      {
+        title: "General Maritime Treaty 1820 — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ae1820tr.html",
+      },
+    ],
+  },
+
+  // ── Umm Al Quwain — capital of the Emirate of Umm Al Quwain (UAE) ────────────
+  "AE-UQ": {
+    description:
+      "A red field with a white vertical stripe along the hoist and a white star and crescent in the red " +
+      "— the flag of the Emirate of Umm Al Quwain. The red and white follow the Trucial pattern set by " +
+      "the 1820 General Maritime Treaty with Britain (red field, white for peace at sea); the star and " +
+      "crescent are a symbol of Islam.",
+    sources: [
+      {
+        title: "Flag of the United Arab Emirates — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates",
+      },
+      {
+        title: "General Maritime Treaty 1820 — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ae1820tr.html",
+      },
+    ],
+  },
+
+  // ── Luanda — capital of Angola ──────────────────────────────────────────────
+  "AO-LUA": {
+    description:
+      "A Portuguese-style municipal flag: the arms of Luanda on a gyronny of eight (eight triangles " +
+      "radiating from the centre) in purple and yellow, ensigned with a golden mural crown. In the " +
+      "Portuguese municipal-heraldry tradition Angola inherited, the gyronny of eight marks the rank of " +
+      "a city (as opposed to a town or village) and the golden five-towered mural crown denotes a city " +
+      "municipality.",
+    sources: [
+      {
+        title: "Luanda (Angola) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ao-lu.html",
+      },
+    ],
+  },
+
+  // ── Gyumri — capital of the Shirak Province, Armenia ────────────────────────
+  "AM-SH": {
+    description:
+      "A white field within a golden frame, bearing a red cross and the golden panther of the Bagratid " +
+      "dynasty. The red cross stands for the endurance of the people and their Christian faith; the " +
+      "golden panther, taken from the arms of the Bagratids, symbolises Armenian independence and " +
+      "statehood. The city arms were adopted in 2001 and the flag in 2011.",
+    sources: [
+      {
+        title: "Symbols of Gyumri — City of Gyumri (official)",
+        url: "https://www.gyumricity.am/en/gyumri/symbols-of-gyumri",
+      },
+      {
+        title: "Gyumri (Municipality, Armenia) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/am-gyumr.html",
+      },
+    ],
+  },
+
+  // ── Kabul — capital of Afghanistan ──────────────────────────────────────────
+  "AF-KAB": {
+    description:
+      "A dark-blue field bearing the white seal of the Kabul municipality: an eagle holding a key above " +
+      "the national emblem of Afghanistan, encircled by the municipality’s name, with the dates 1298 " +
+      "(1919, the year of Afghan independence from Britain) and 1389 (2010). The dark-blue field sets " +
+      "the city flag apart from Afghanistan’s national colours.",
+    sources: [
+      {
+        title: "Kabul (Afghanistan) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/af-kabul.html",
+      },
+    ],
+  },
 };
