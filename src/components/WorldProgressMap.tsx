@@ -7,6 +7,7 @@ import { useTheme } from "../context/ThemeContext";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { DISPUTED_TERRITORY_CODES } from "../lib/territoryParentMap";
 import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
+import { fetchWithRetry } from "../lib/fetchWithRetry";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 import { useUnitPx } from "../hooks/useUnitPx";
 import { CityMarkers, type ScreenCity } from "./CityMarkers";
@@ -428,7 +429,9 @@ export function WorldProgressMap({
     let cancelled = false;
     (async () => {
       try {
-        const res = await fetch(GEO_URL);
+        // Retry transient network failures: a single dropped request (common on
+        // flaky mobile / VPN connections) must not leave the world map blank.
+        const res = await fetchWithRetry(GEO_URL);
         if (!res.ok) throw new Error("Failed to load world map");
         const topo = (await res.json()) as WorldTopo;
         const fc = feature(topo, topo.objects.countries) as FeatureCollection;

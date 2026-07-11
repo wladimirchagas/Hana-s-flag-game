@@ -128,6 +128,27 @@ export default defineConfig({
               expiration: { maxEntries: 16 },
             },
           },
+          {
+            // Map data (world topology + per-country subdivision GeoJSON) is
+            // deliberately kept OUT of the precache above (globIgnores) to keep
+            // the install small — but it must still survive a flaky network. A
+            // returning visitor whose `countries-50m.json` request dropped saw a
+            // permanently BLANK map. StaleWhileRevalidate serves the cached copy
+            // instantly (offline included) and refreshes it in the background, so
+            // the map renders on every load once it has succeeded once.
+            urlPattern: ({ sameOrigin, url }) =>
+              sameOrigin &&
+              (url.pathname.endsWith('/countries-50m.json') ||
+                url.pathname.includes('/subdivisions/')),
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'map-data',
+              expiration: {
+                maxEntries: 64,
+                maxAgeSeconds: 60 * 60 * 24 * 30,
+              },
+            },
+          },
         ],
         // Purge precaches from earlier builds when a new service worker activates.
         cleanupOutdatedCaches: true,

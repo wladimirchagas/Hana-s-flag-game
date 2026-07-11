@@ -3,6 +3,7 @@ import polygonClipping from "polygon-clipping";
 import type { SubdivisionFeatureCollection, SubdivisionGeoFeature } from "../types/subdivision";
 import { subdivisionFlagCdnUrl, hasSubdivisionFlag as hasSubdivisionFlagCdn } from "../lib/subdivisionFlagIndex";
 import { TERRITORY_GEO_FOR_PARENT } from "../lib/territoryParentMap";
+import { fetchWithRetry } from "../lib/fetchWithRetry";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -272,8 +273,12 @@ export async function fetchSubdivisionGeo(
   const key = countryCode.toUpperCase();
   if (cache.has(key)) return cache.get(key)!;
   try {
-    const res = await fetch(`${BASE}subdivisions/${key}.json`);
+    // Retry transient network failures so a single dropped request doesn't blank
+    // the subdivision map (same fragility the world map had).
+    const res = await fetchWithRetry(`${BASE}subdivisions/${key}.json`);
     if (!res.ok) {
+      // A 4xx is a genuine "no subdivision file for this country" — cache the
+      // negative result so we don't re-request it every selection.
       cache.set(key, null);
       return null;
     }
@@ -281,7 +286,9 @@ export async function fetchSubdivisionGeo(
     cache.set(key, data);
     return data;
   } catch {
-    cache.set(key, null);
+    // Network error after retries: do NOT cache null — leaving it uncached lets
+    // a later selection of the same country try again (a poisoned session cache
+    // otherwise keeps the map blank for the rest of the session).
     return null;
   }
 }
