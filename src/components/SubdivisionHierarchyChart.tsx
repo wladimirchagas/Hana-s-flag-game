@@ -165,7 +165,7 @@ export function SubdivisionHierarchyChart({
                 <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
               )}
             </span>
-            <span className="hierarchy__name">{countryName}</span>
+            <span className="hierarchy__name" title={countryName}>{countryName}</span>
             <span className="hierarchy__tier">Nation</span>
           </button>
         </div>
@@ -205,7 +205,7 @@ export function SubdivisionHierarchyChart({
                             <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
                           )}
                         </span>
-                        <span className="hierarchy__name">{div.name}</span>
+                        <span className="hierarchy__name" title={div.name}>{div.name}</span>
                       </button>
 
                       {city && (
@@ -230,7 +230,7 @@ export function SubdivisionHierarchyChart({
                               <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
                             )}
                           </span>
-                          <span className="hierarchy__name">{city.name}</span>
+                          <span className="hierarchy__name" title={city.name}>{city.name}</span>
                         </button>
                       )}
                     </div>

@@ -1971,17 +1971,19 @@
 }
 
 .hierarchy__name {
-  /* Reserve a uniform two-line height so every node in a tier is the same
-     height — this keeps the flags (and the city row below them) aligned whether
-     a name is one line ("Chiba Prefecture") or two ("Aomori Prefecture"). The
-     text is centred in the reserved space. */
-  min-height: 2.3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* FIXED two-line height so EVERY node is exactly the same size — the flag
+     cards align top and bottom regardless of name length. Names longer than two
+     lines (e.g. "Australian Capital Territory") clamp with an ellipsis; the full
+     name is still available via the node's title tooltip and the widget on
+     selection. */
+  height: 2.3em;
+  line-height: 1.15;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   font-size: 0.78rem;
   font-weight: 700;
-  line-height: 1.15;
   text-align: center;
   overflow-wrap: anywhere;
 }
