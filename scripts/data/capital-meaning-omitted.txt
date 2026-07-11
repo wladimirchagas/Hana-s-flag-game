@@ -15,3 +15,13 @@ BE-VWV  # Bruges: flag sourced (white/red stripes, blue lion), but the app shows
 BG-03  # Varna: EN Wikipedia + heraldry-wiki checked; the city arms exist but no per-element symbolism is documented in reachable sources.
 BG-07  # Gabrovo: the famous tailless cat is a cultural mascot (humour/thrift), NOT confirmed as the city-arms charge; the actual arms' per-element symbolism is not documented in reachable EN/FOTW sources.
 BG-21  # Smolyan: EN Wikipedia + search checked; only the Slavic "Smolyani" tribe / Rhodope context is documented, not the city-arms per-element symbolism.
+BG-09  # Kardzhali: the bundled flag is a municipal wordmark/logo ("ОБЩИНА КЪРДЖАЛИ / KARDZHALI MUNICIPALITY") rather than heraldic arms with per-element symbolism.
+BG-10  # Kyustendil: EN Wikipedia + heraldry-wiki + bg.wikipedia file checked; the city's landmarks (mineral springs, Hisarlaka fortress) are documented but not confirmed as the arms charges, and no per-element arms symbolism is reachable.
+BG-11  # Lovech: covered bridge / fortress / lion are documented city landmarks, but no source confirms them as the arms charges or gives per-element arms symbolism (EN/FOTW/bg.wikipedia checked).
+BG-12  # Montana: the bundled municipal FLAG is a plain horizontal tricolour (green/red/blue); the Diana arms are not on it, and no sourced colour symbolism for the tricolour is reachable.
+BG-13  # Pazardzhik: EN Wikipedia + heraldika-bg + bg.wikipedia checked; the city has arms/emblem but no per-element symbolism is documented in reachable sources.
+BG-14  # Pernik: sources say the arms "depict Krakra fortress" but the bundled flag's charge could not be confirmed to match (montage shows a different figure); omitted rather than risk a wrong description.
+BG-17  # Razgrad: EN Wikipedia (Abritus/Roman context) + heraldika-bg checked; no per-element arms symbolism is documented in reachable sources.
+BG-19  # Silistra: the Medzhidi Tabia fortress is a documented city landmark but not confirmed as the arms charge; no per-element arms symbolism is reachable (EN/FOTW/bg.wikipedia checked).
+BG-25  # Targovishte: EN Wikipedia + heraldika-bg + bg.wikipedia checked; the city has arms but no per-element symbolism is documented in reachable sources.
+BG-28  # Yambol: the Bezisten is a documented city landmark but not confirmed as the arms charge; no per-element arms symbolism is reachable (EN/FOTW/bg.wikipedia checked).
