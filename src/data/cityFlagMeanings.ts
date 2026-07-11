@@ -1175,4 +1175,63 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Recife — capital of the Pernambuco State, Brazil ────────────────────────
+  "BR-PE": {
+    description:
+      "A flag of three vertical columns — blue, white, blue (echoing the Pernambuco state flag; blue for " +
+      "the sky and peace). The left column bears a star for the Republic, which Pernambucans trace to " +
+      "their 1817 revolution; the central white column carries a crowned Dutch lion (the “Lion of the " +
+      "North”, from the arms of Johan Maurits of Nassau and the nickname earned by Pernambuco for its " +
+      "history of struggle), a cross for the Portuguese colonisation and the coming of Christianity, and " +
+      "the motto “Virtus et Fides” (“Courage and Faith”); the right column bears a sun for the strong " +
+      "sunshine of the city.",
+    sources: [
+      { title: "Bandeira de Recife — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_de_Recife" },
+    ],
+  },
+
+  // ── Curitiba — capital of the Paraná State, Brazil ──────────────────────────
+  "BR-PR": {
+    description:
+      "A green field with red-and-white bands radiating from a white central rectangle in eight " +
+      "directions (an “oitavada” design), the city arms set on the central rectangle. The central " +
+      "rectangle represents the city itself and the arms the municipal government; the radiating bands " +
+      "stand for municipal authority reaching to every quarter of the territory, and the eight " +
+      "trapezoidal figures they form for the rural properties of the municipality. The arms show a " +
+      "silver Paraná pine (araucária) on red, with the city’s 1693 foundation date on the scroll.",
+    sources: [
+      { title: "Bandeira de Curitiba — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_de_Curitiba" },
+    ],
+  },
+
+  // ── Fortaleza — capital of the Ceará State, Brazil ──────────────────────────
+  "BR-CE": {
+    description:
+      "A white field overlaid with a blue cross of Saint Andrew, the city arms at the centre. The arms " +
+      "are canting: on a blue (Portuguese) field a golden castle stands over natural waves — a “fortress” " +
+      "for Fortaleza, whose name means fortress (after the Dutch-built Fort Schoonenborch that grew into " +
+      "the city) — beneath a golden mural crown, flanked by branches of tobacco and cotton. The motto is " +
+      "“Fortitudine” (Latin for strength / fortitude).",
+    sources: [
+      { title: "Bandeira de Fortaleza — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_de_Fortaleza" },
+    ],
+  },
+
+  // ── Porto Alegre — capital of the Rio Grande do Sul State, Brazil ───────────
+  "BR-RS": {
+    description:
+      "An all-white field — symbolising peace — bearing the city arms upright at the centre. The arms " +
+      "carry the Cross of Christ, for the Portuguese and Christian origin of the people, and a colonial " +
+      "gateway (built 1773) shown open, to signify a city open to all, beneath a mural crown marking a " +
+      "great city. The motto, “Leal e Valorosa Cidade de Porto Alegre” (“Loyal and Valorous City of " +
+      "Porto Alegre”), is the title granted by Emperor Pedro II in 1841 for the city’s loyalty during " +
+      "the Ragamuffin War.",
+    sources: [
+      {
+        title: "Bandeira de Porto Alegre — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Porto_Alegre",
+      },
+    ],
+  },
 };
