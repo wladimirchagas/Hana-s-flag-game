@@ -1494,6 +1494,36 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Macapá — capital of Amapá, Brazil ───────────────────────────────────────
+  "BR-AP": {
+    description:
+      "A green–yellow–green horizontal field separated by thin white stripes, with the silver " +
+      "silhouette of a fortress tower in the centre. The central figure is the Fortaleza de São José " +
+      "de Macapá, the 18th-century Portuguese fort around which the city grew, so the flag anchors " +
+      "Macapá to its colonial origin; the green and yellow repeat Brazil's national colours.",
+    sources: [
+      {
+        title: "Macapá (Amapá, Brazil) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/br-ap-ma.html",
+      },
+    ],
+  },
+
+  // ── Boa Vista — capital of Roraima, Brazil ──────────────────────────────────
+  "BR-RR": {
+    description:
+      "A green (upper) and yellow (lower) horizontal bicolour with a large white star in the upper " +
+      "hoist and a thin white stripe just above the centre line. The green and yellow are Brazil's " +
+      "national colours, while the white star and stripe are taken from the flag of Roraima state, " +
+      "marking Boa Vista as the state capital.",
+    sources: [
+      {
+        title: "Boa Vista (Roraima, Brazil) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/br-rr-bv.html",
+      },
+    ],
+  },
+
   // ── Toronto — capital of Ontario, Canada ────────────────────────────────────
   "CA-ON": {
     description:
