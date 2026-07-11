@@ -256,6 +256,189 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── San Luis — capital of San Luis Province, Argentina ──────────────────────
+  "AR-D": {
+    description:
+      "A modern minimalist flag divided by a diagonal: the upper celeste (sky-blue) field stands for the " +
+      "sky — liberty, loyalty and truth — while the lower green field stands for the sierras that ring the " +
+      "city and their vegetation. At the centre a clock tower recalls the city’s landmark tower, and the " +
+      "clock’s hands are drawn as a bird in flight, reinforcing the theme of the open sky.",
+    sources: [
+      {
+        title: "La Capital Department, San Luis (Argentina) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ar-d-ca.html",
+      },
+    ],
+  },
+
+  // ── Paraná — capital of Entre Ríos Province, Argentina ──────────────────────
+  "AR-E": {
+    description:
+      "A white field bearing the municipal coat of arms (adopted 1877; the flag was made official in 1994). " +
+      "The oval shield is split: the upper half carries the star of Entre Ríos on purple and the clasped " +
+      "hands of fraternity on blue, for the province the city belongs to; the lower half shows the city " +
+      "itself — the characteristic barranca of La Bajada, the Paraná river at its foot and islands beyond. " +
+      "The shield is framed by a sheaf of wheat, a log, an anchor and a piece of local shell-limestone, and " +
+      "topped by the Phrygian cap of liberty lit by the Sun of May for the Argentine Republic.",
+    sources: [
+      {
+        title: "Símbolos — Municipalidad de Paraná",
+        url: "https://www.parana.gob.ar/gobierno/simbolos.php",
+      },
+      {
+        title: "Bandera de Paraná — Wikipedia (es)",
+        url: "https://es.wikipedia.org/wiki/Bandera_de_Paran%C3%A1",
+      },
+    ],
+  },
+
+  // ── Santiago del Estero — capital of Santiago del Estero Province, Argentina ─
+  "AR-G": {
+    description:
+      "A white field — for purity, peace and “parliament” — enclosed by a golden rectangular border that " +
+      "stands for straightness on all four sides and for the sun, the first dignity of Argentine heraldry. " +
+      "At the centre is the city’s coat of arms, granted by King Felipe II in 1577: a golden castle of three " +
+      "towers (wealth, strength and faith) with blue doors and windows (nobility), the waters of the Dulce " +
+      "river, and three silver scallop shells for the city’s patron Santiago (St James). A light-blue ribbon " +
+      "reads “Muy Noble Ciudad” and the tie bears “Madre de Ciudades” (Mother of Cities), Santiago del Estero " +
+      "being the oldest continuously-inhabited city in Argentina.",
+    sources: [
+      {
+        title: "Capital Department, Santiago del Estero (Argentina) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ar-g-cp.html",
+      },
+    ],
+  },
+
+  // ── Resistencia — capital of Chaco Province, Argentina ──────────────────────
+  "AR-H": {
+    description:
+      "Adopted in 2019 from a public competition. Its colours echo the Chaco provincial flag: forest green " +
+      "for the territory’s nature, sky-blue for the national flag and for the waters the first Friulian " +
+      "immigrants arrived by, and golden yellow from the sun of the national flag. The white square set on " +
+      "point in the centre reflects a real feature of the city — its street grid is turned 45° from north, " +
+      "so the block corners point to the four cardinal directions, making the plan a compass. Within it the " +
+      "“Sol de Resistencia”, a Sun of May rendered as a sculptural form, alludes to Resistencia’s identity as " +
+      "“the City of Sculptures”.",
+    sources: [
+      {
+        title: "Bandera de Resistencia — Wikipedia (es)",
+        url: "https://es.wikipedia.org/wiki/Bandera_de_Resistencia",
+      },
+    ],
+  },
+
+  // ── San Fernando del Valle de Catamarca — capital of Catamarca, Argentina ───
+  "AR-K": {
+    description:
+      "Adopted in 2005 from an open competition (winning design by Fabián Martinena). The whole flag evokes " +
+      "the Catamarcan poncho, the region’s signature weaving: on a white field two blood-red stripes stand " +
+      "for the ochre earth and two green guard-bands for the sap that nourishes it, while the central figure " +
+      "of eight rectangles imitates the patterns the weavers (teleras) work into a poncho’s borders. The " +
+      "dark-brown motif represents the sacred spirit of the mountains, and the cross within it is the Cross " +
+      "of America — standing for water and joining the indigenous and Hispanic-Christian strands of the " +
+      "province’s culture.",
+    sources: [
+      {
+        title: "Simbología — Municipalidad de San Fernando del Valle de Catamarca",
+        url: "https://www.catamarcaciudad.gob.ar/simbologia/",
+      },
+      {
+        title: "Bandera de San Fernando del Valle de Catamarca — Wikipedia (es)",
+        url: "https://es.wikipedia.org/wiki/Bandera_de_San_Fernando_del_Valle_de_Catamarca",
+      },
+    ],
+  },
+
+  // ── Formosa — capital of Formosa Province, Argentina ────────────────────────
+  "AR-P": {
+    description:
+      "The flag of the city of Formosa, chosen by public vote in the “Mi Ciudad es Bandera” competition " +
+      "(winning design by Matilde E. Cañete and José M. Lezcano). Its centre is the municipal seat — the " +
+      "building where the city first took shape and where formoseños still gather — set with the railway " +
+      "station and the streets that stand for the city’s growth, the lapacho flower as the emblematic bloom " +
+      "of the region, and a sun for rebirth and hope.",
+    sources: [
+      {
+        title: "La Ciudad de Formosa ya tiene su bandera oficial — Diario Exprés",
+        url: "https://www.expresdiario.com.ar/la-ciudad-de-formosa-ya-tiene-su-bandera-oficial-un-simbolo-de-identidad-y-pertenencia/",
+      },
+    ],
+  },
+
+  // ── Neuquén — capital of Neuquén Province, Argentina ────────────────────────
+  "AR-Q": {
+    description:
+      "Titled “Confluencia” and first raised in 2010 (designed by Carlos Alberto Juárez), the flag has a " +
+      "sky-blue field crossed by two white wavy ribbons that picture the confluence of the Neuquén and Limay " +
+      "rivers — the meeting of waters that gives the city its site and its name.",
+    sources: [
+      {
+        title: "Neuquén (ciudad) — Wikipedia (es)",
+        url: "https://es.wikipedia.org/wiki/Neuqu%C3%A9n_(ciudad)",
+      },
+    ],
+  },
+
+  // ── Santa Fe — capital of Santa Fe Province, Argentina ──────────────────────
+  "AR-S": {
+    description:
+      "The first official flag of the city of Santa Fe, chosen by public competition. Its celeste and white " +
+      "recall Belgrano’s national flag, the sky-blue also standing for the city’s waters — the Paraná and " +
+      "Salado rivers and the Setúbal lagoon. It bears the Puente Colgante (hanging bridge) as a symbol of " +
+      "union, laurels for the achievements of its people, and a book for the national and provincial " +
+      "constitutions — Santa Fe being the “Cradle of the Constitution”, placed at the flag’s centre for that " +
+      "reason.",
+    sources: [
+      {
+        title: "Qué significan los símbolos de la bandera de la ciudad de Santa Fe — Aire de Santa Fe",
+        url: "https://www.airedesantafe.com.ar/santa-fe/que-significan-los-simbolos-la-bandera-la-ciudad-santa-fe-explicados-un-experto-n636405",
+      },
+    ],
+  },
+
+  // ── Corrientes — capital of Corrientes Province, Argentina ──────────────────
+  "AR-W": {
+    description:
+      "Established by municipal ordinance in 2014. Sky-blue side bands (the colour Belgrano chose for the " +
+      "national and provincial flags) frame thin red stripes for federalism and a central white band for God " +
+      "and peace. On the white band a setting sun — the sunset seen from the city’s riverfront Costanera — " +
+      "carries at its centre the founding Cross of Miracles (Cruz de los Milagros), and seven spear-points " +
+      "rise from the base for the “Siete Corrientes”, the seven river points in the city’s old name San Juan " +
+      "de Vera de las Siete Corrientes.",
+    sources: [
+      {
+        title: "Bandera de la Ciudad de Corrientes — Municipalidad de Corrientes",
+        url: "https://ciudaddecorrientes.gov.ar/informaci-n/bandera-de-la-ciudad-de-corrientes",
+      },
+      {
+        title: "Bandera de la Ciudad de Corrientes — Wikipedia (es)",
+        url: "https://es.wikipedia.org/wiki/Bandera_de_la_Ciudad_de_Corrientes",
+      },
+    ],
+  },
+
+  // ── Córdoba — capital of Córdoba Province, Argentina ────────────────────────
+  "AR-X": {
+    description:
+      "Adopted in 2023, the flag of the city of Córdoba has three equal horizontal stripes — red, white and " +
+      "yellow — with a golden Jesuit sun on the white centre. Red stands for the courage, strength and " +
+      "potential of the cordobés people; white for living together in harmony and for the city’s place as a " +
+      "geographic and strategic hub; yellow for joy, energy and liveliness. The golden Jesuit sun recalls " +
+      "Córdoba’s historic and cultural legacy and the presence of the Society of Jesus (whose Jesuit Block is " +
+      "a UNESCO World Heritage Site).",
+    sources: [
+      {
+        title: "La bandera oficial de la ciudad ya flamea en el cielo cordobés — Municipalidad de Córdoba",
+        url: "https://cordoba.gob.ar/la-bandera-oficial-de-la-ciudad-ya-flamea-en-el-cielo-cordobes/",
+      },
+      {
+        title: "Bandera de Córdoba (Argentina) — Wikipedia (es)",
+        url: "https://es.wikipedia.org/wiki/Bandera_de_C%C3%B3rdoba_(Argentina)",
+      },
+    ],
+  },
+
   // ── Sydney — capital of the Australian state of New South Wales ─────────────
   "AU-NSW": {
     description:
