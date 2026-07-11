@@ -2081,6 +2081,150 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Aarau — capital of the canton of Aargau, Switzerland ────────────────────
+  "CH-AG": {
+    description:
+      "A black eagle with a red beak and red claws, on gold, beneath a red bar — the arms of the city of " +
+      "Aarau (distinct from the Aargau cantonal flag). The eagle is thought to be a canting device: it " +
+      "arose from a folk-etymological reading of the city’s name as the “Au (meadow) of the Aar (eagle)”. " +
+      "The eagle has been Aarau’s emblem since the Middle Ages, the town having received its charter from " +
+      "King Rudolf I of Habsburg in 1283.",
+    sources: [
+      { title: "Aarau — Geographie.ch", url: "https://geographie.ch/index.php/Aarau" },
+      { title: "Datei:Wappen Aarau.svg — Wikipedia (de)", url: "https://de.wikipedia.org/wiki/Datei:Wappen_Aarau.svg" },
+    ],
+  },
+
+  // ── Chur — capital of the canton of Graubünden, Switzerland ─────────────────
+  "CH-GR": {
+    description:
+      "In silver, a three-merloned red city gate, and within the gateway an upright black ibex with red " +
+      "horns, hooves and tongue — the arms of the city of Chur. The ibex is the emblem of the Gotteshausbund " +
+      "(League of the House of God), originally the arms of the Bishops of Chur, first seen on episcopal " +
+      "seals in the 14th century. The red city gate and the ibex’s red arming emphasise the city’s own " +
+      "authority.",
+    sources: [
+      { title: "Das Wappen von Chur — Stadt Chur", url: "https://www.chur.ch/geschichte/5330" },
+    ],
+  },
+
+  // ── Fribourg — capital of the canton of Fribourg, Switzerland ───────────────
+  "CH-FR": {
+    description:
+      "On blue, a silver crenellated tower with a crenellated forewall to its left descending in two steps, " +
+      "and a silver half-ring rising from the base — the arms of the city of Fribourg. The tower, forewall " +
+      "and ring have appeared on the city’s seals since the 13th century. The city took the white-castle-on-" +
+      "blue flag when city and canton were separated in 1803 (the canton keeps the black-and-white of the " +
+      "Zähringen founders).",
+    sources: [
+      {
+        title: "Drapeau et armoiries du canton de Fribourg — Wikipédia",
+        url: "https://fr.wikipedia.org/wiki/Drapeau_et_armoiries_du_canton_de_Fribourg",
+      },
+      { title: "Fribourg (Switzerland) — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Fribourg_(Switzerland)" },
+    ],
+  },
+
+  // ── Neuchâtel — capital of the canton of Neuchâtel, Switzerland ─────────────
+  "CH-NE": {
+    description:
+      "On gold, a black eagle armed, beaked and tongued red, bearing on its breast a gold shield with a red " +
+      "pale charged with three silver chevrons — the arms of the city of Neuchâtel. The eagle is the " +
+      "primitive arms of the elder House of Neuchâtel (appearing in 1214); the chevron-pale is the family " +
+      "banner defined by Count Louis of Neuchâtel around the mid-14th century, its chevrons evoking the " +
+      "gable of the castle shown on the old city seal.",
+    sources: [
+      {
+        title: "Les armoiries de la Ville de Neuchâtel — Société d’histoire et d’archéologie",
+        url: "https://imagesdupatrimoine.ch/notices/les-armoiries-de-la-ville-de-neuchatel/",
+      },
+    ],
+  },
+
+  // ── Stans — capital of the canton of Nidwalden, Switzerland ─────────────────
+  "CH-NW": {
+    description:
+      "On red, a rearing ibex divided per fess black over gold — the arms of Stans (its municipal colours " +
+      "are black, gold and red). Stans adopted the design in 1901, taking the old Dinghof (manorial-court) " +
+      "arms and banner recorded in the Propst’s land-register of 1499 so that, as a cantonal capital, it " +
+      "would have its own emblem among the larger Swiss towns.",
+    sources: [
+      {
+        title: "Wappen und Fahnen der Gemeinden des Kantons Nidwalden — Wikipedia (de)",
+        url: "https://de.wikipedia.org/wiki/Wappen_und_Fahnen_der_Gemeinden_des_Kantons_Nidwalden",
+      },
+    ],
+  },
+
+  // ── Sarnen — capital of the canton of Obwalden, Switzerland ─────────────────
+  "CH-OW": {
+    description:
+      "On red, a white pair of deer’s antlers with the skull-piece (Grind), enclosing a six-pointed white " +
+      "star — the arms of Sarnen, the capital of Obwalden.",
+    sources: [
+      { title: "Gemeindewappen: Sarnen — Kanton Obwalden", url: "https://www.ow.ch/gemeindewappen/270" },
+    ],
+  },
+
+  // ── Frauenfeld — capital of the canton of Thurgau, Switzerland ──────────────
+  "CH-TG": {
+    description:
+      "On white, a rearing red lion led on a chain by a woman in a headscarf, also in red — the arms of " +
+      "Frauenfeld. The lion stands for the Habsburgs, who held the bailiwick over the town as successors of " +
+      "the Kyburgs when the arms first appeared on the seal; the woman is read as the Virgin Mary, patroness " +
+      "of Reichenau Abbey, the medieval overlord, whose red-and-white are the shield’s colours. (The name " +
+      "Frauenfeld — “women’s field” — makes the woman a canting figure too.)",
+    sources: [
+      {
+        title: "Name und Wappen der Stadt — Stadt Frauenfeld",
+        url: "https://www.frauenfeld.ch/portraet/geschichte/name-und-wappen.html/102",
+      },
+    ],
+  },
+
+  // ── Bellinzona — capital of the canton of Ticino, Switzerland ───────────────
+  "CH-TI": {
+    description:
+      "The city flag of Bellinzona bears the biscione — a serpent swallowing a child — the emblem of the " +
+      "Visconti Dukes of Milan. It recalls Bellinzona’s medieval history under the Duchy of Milan, whose " +
+      "dukes built and held the town’s three castles; the ducal serpent has marked the city’s banner for " +
+      "centuries.",
+    sources: [
+      { title: "Bellinzona — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Bellinzona" },
+      { title: "Biscione (araldica) — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Biscione_(araldica)" },
+    ],
+  },
+
+  // ── Lausanne — capital of the canton of Vaud, Switzerland ───────────────────
+  "CH-VD": {
+    description:
+      "A white-over-red flag — the colours of the city of Lausanne (its shield is blazoned “gules a chief " +
+      "argent”, red with a white chief, and is often shown as an equal white-and-red division). The white " +
+      "and red recall the arms of the Bishop of Lausanne, the city’s medieval lord; two lions were later " +
+      "added as supporters as symbols of power.",
+    sources: [
+      {
+        title: "Les armoiries et les couleurs de Lausanne (1913) — e-periodica",
+        url: "https://www.e-periodica.ch/cntmng?pid=cov-001%3A1913%3A51%3A%3A553",
+      },
+    ],
+  },
+
+  // ── Sion — capital of the canton of Valais, Switzerland ─────────────────────
+  "CH-VS": {
+    description:
+      "Party per pale white and red, with two counterchanged six-pointed stars — the arms of Sion. The white " +
+      "and red are the colours of the Prince-Bishopric of Sion, borne on the bishops’ banner since the early " +
+      "13th century, and the six-pointed stars are the mullets of the Valais arms (whose stars stand for the " +
+      "cantonal dizains/districts).",
+    sources: [
+      {
+        title: "Drapeau et armoiries du canton du Valais — Wikipédia",
+        url: "https://fr.wikipedia.org/wiki/Drapeau_et_armoiries_du_canton_du_Valais",
+      },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
