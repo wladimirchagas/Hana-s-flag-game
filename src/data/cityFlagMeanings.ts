@@ -975,4 +975,135 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       { title: "Vratsa — Wikipedia", url: "https://en.wikipedia.org/wiki/Vratsa" },
     ],
   },
+
+  // ── La Paz — administrative capital of Bolivia; capital of the La Paz Dept ───
+  "BO-L": {
+    description:
+      "A horizontal bicolour of carmine over emerald green — the flag of the La Paz department, whose " +
+      "capital is the city of La Paz. Created during the La Paz independence uprising of 1809, it is the " +
+      "direct predecessor of Bolivia’s national flag: the carmine stands for the blood shed in the war " +
+      "of independence and the green for wealth, glory and unity.",
+    sources: [
+      { title: "Flag of La Paz — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_La_Paz" },
+      {
+        title: "La Paz department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-l.html",
+      },
+    ],
+  },
+
+  // ── Santa Cruz de la Sierra — capital of the Santa Cruz Department, Bolivia ──
+  "BO-S": {
+    description:
+      "A green-white-green horizontal triband — the flag of the Santa Cruz department, whose capital is " +
+      "Santa Cruz de la Sierra. The green stripes stand for the department’s forests and plant wealth, " +
+      "and the white stripe for the nobility of its people.",
+    sources: [
+      {
+        title: "Santa Cruz department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-s.html",
+      },
+    ],
+  },
+
+  // ── Cochabamba — capital of the Cochabamba Department, Bolivia ───────────────
+  "BO-C": {
+    description:
+      "A plain celeste (sky-blue) field — the flag of the Cochabamba department, whose capital is " +
+      "Cochabamba. The sky-blue is said to symbolise liberty.",
+    sources: [
+      {
+        title: "Cochabamba department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-c.html",
+      },
+    ],
+  },
+
+  // ── Oruro — capital of the Oruro Department, Bolivia ────────────────────────
+  "BO-O": {
+    description:
+      "A plain red field — the flag of the Oruro department, whose capital is Oruro. The red stands for " +
+      "courage and bravery.",
+    sources: [
+      {
+        title: "Oruro department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-o.html",
+      },
+    ],
+  },
+
+  // ── Sucre — constitutional capital of Bolivia; capital of Chuquisaca Dept ────
+  "BO-H": {
+    description:
+      "A white field bearing a red ragged saltire — the Cross of Burgundy — ensigned with a crown; the " +
+      "flag of the Chuquisaca department, whose capital is Sucre (Bolivia’s constitutional capital). It " +
+      "is taken from the banner of the colonial Audiencia de Charcas, which used the Spanish military " +
+      "Cross of Burgundy; today the white is read as peace, purity and faith and the red as the blood of " +
+      "the fallen.",
+    sources: [
+      {
+        title: "Chuquisaca department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-h.html",
+      },
+    ],
+  },
+
+  // ── Potosí — capital of the Potosí Department, Bolivia ──────────────────────
+  "BO-P": {
+    description:
+      "A flag quartered white and red bearing golden castles and red lions — the arms of Castile and " +
+      "León — around a central medallion showing the Cerro Rico, the great silver mountain of Potosí. " +
+      "The design descends from the pennant of the Vicuñas, a faction in the 17th-century civil strife " +
+      "between Basque and other settlers over the silver of Potosí.",
+    sources: [
+      {
+        title: "Potosí department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-p.html",
+      },
+    ],
+  },
+
+  // ── Trinidad — capital of the Beni Department, Bolivia ──────────────────────
+  "BO-B": {
+    description:
+      "A green field with a red canton bearing a golden cross — the flag of the Beni department, whose " +
+      "capital is Trinidad. Since 2007 the flag also carries eight golden five-pointed stars in a ring " +
+      "at the centre, one for each of Beni’s eight provinces; the green evokes the forests and plains of " +
+      "the Bolivian Amazon lowlands.",
+    sources: [
+      {
+        title: "Beni department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-b.html",
+      },
+    ],
+  },
+
+  // ── Cobija — capital of the Pando Department, Bolivia ───────────────────────
+  "BO-N": {
+    description:
+      "A flag with a green triangle at the hoist bearing a golden star, and a field of white over red — " +
+      "the flag of the Pando department, whose capital is Cobija. The white stands for the purity and " +
+      "loyalty of the Pando people to the nation and the green for the forest wealth of the north-western " +
+      "Bolivian Amazon.",
+    sources: [
+      {
+        title: "List of Bolivian flags — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+      },
+    ],
+  },
+
+  // ── Tarija — capital of the Tarija Department, Bolivia ──────────────────────
+  "BO-T": {
+    description:
+      "A horizontal bicolour of red over white — the flag of the Tarija department, whose capital is " +
+      "Tarija; it is one of the oldest of Bolivia’s departmental flags, its red-and-white recalling the " +
+      "colours under which the region fought in the wars of independence.",
+    sources: [
+      {
+        title: "Tarija Department, Bolivia — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bo-t.html",
+      },
+    ],
+  },
 };
