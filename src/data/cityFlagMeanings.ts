@@ -2331,6 +2331,136 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Bogotá — capital of Colombia (and of Cundinamarca) ──────────────────────
+  "CO-CUN": {
+    description:
+      "Yellow over red, with the city arms at the centre — the flag the patriots flew on 20 July 1810. " +
+      "Yellow stands for justice, clemency and virtue; red for liberty, health and charity. The arms, " +
+      "granted to Santa Fe by Emperor Charles V in 1548, show a crowned black eagle on gold holding a red " +
+      "pomegranate (granada) in each talon: the eagle for firmness, the pomegranates for valour.",
+    sources: [
+      {
+        title: "Símbolos de Bogotá — Alcaldía Mayor de Bogotá",
+        url: "https://bogota.gov.co/mi-ciudad/simbolos-de-bogota-la-bandera-el-escudo-la-flor-y-el-arbol-de-bogot",
+      },
+      { title: "Bandera de Bogotá — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Bogot%C3%A1" },
+    ],
+  },
+
+  // ── Medellín — capital of Antioquia, Colombia ───────────────────────────────
+  "CO-ANT": {
+    description:
+      "White and green horizontal stripes bearing the city arms. White stands for purity and integrity, " +
+      "green for hope, abundance and faith. The arms — granted by King Charles II of Spain in 1678 — show, " +
+      "on blue, a golden tower between two turrets with the image of Our Lady of Candelaria, the city’s " +
+      "patroness, above.",
+    sources: [
+      { title: "Historia y Símbolos de Medellín — Alcaldía de Medellín", url: "https://www.medellin.gov.co/es/historia-y-simbolos-de-medellin/" },
+      { title: "Escudo de Medellín — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Medell%C3%ADn" },
+    ],
+  },
+
+  // ── Barranquilla — capital of Atlántico, Colombia ───────────────────────────
+  "CO-ATL": {
+    description:
+      "A “cuadrilonga” of three nested rectangles — red (outer), yellow and green (centre) — with a silver " +
+      "eight-pointed star at its heart. Red is the blood of the patriots, yellow the sun of liberty, green " +
+      "the hope of a worthy homeland; the star, resembling an eight-point compass rose, evokes Barranquilla’s " +
+      "seafaring spirit (and the eight confederated provinces). The city council adopted it in 1910, " +
+      "honouring the Cartagena flag its patriots first raised.",
+    sources: [
+      {
+        title: "Cumpleaños Barranquilla: significado de la bandera y el escudo — Semana",
+        url: "https://www.semana.com/nacion/barranquilla/articulo/cumpleanos-barranquilla-este-es-el-significado-de-la-bandera-y-el-escudo-de-la-ciudad/202254/",
+      },
+    ],
+  },
+
+  // ── Bucaramanga — capital of Santander, Colombia ────────────────────────────
+  "CO-SAN": {
+    description:
+      "Three horizontal stripes — green, yellow, green — with a blue disc edged in red bearing a white " +
+      "four-pointed star at the centre. The green stands for hope, the yellow for the wealth and progress " +
+      "of the people, the red ring for the blood the people of Santander shed for independence, and the " +
+      "four-pointed star for the city open to the four horizons of the fatherland. Adopted in 1958.",
+    sources: [
+      { title: "Símbolos — Alcaldía de Bucaramanga", url: "https://www.bucaramanga.gov.co/bucaramanga-nuestra-ciudad/simbolos/" },
+    ],
+  },
+
+  // ── Cali — capital of Valle del Cauca, Colombia ─────────────────────────────
+  "CO-VAC": {
+    description:
+      "Five horizontal stripes — blue, red, white, red, green — with the two red bands narrow. Blue is the " +
+      "sky and the seas, red the love for Cali and the blood its patriots shed for liberty on 3 July 1810, " +
+      "white the purity of its people and the river that crosses the city, and green the meadows and fields " +
+      "around it. Created in 1928 and made official in 1954.",
+    sources: [
+      { title: "Símbolos — Alcaldía de Santiago de Cali", url: "https://www.cali.gov.co/gobierno/publicaciones/226/simbolos/" },
+      { title: "Bandera de Cali — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Cali" },
+    ],
+  },
+
+  // ── Popayán — capital of Cauca, Colombia ────────────────────────────────────
+  "CO-CAU": {
+    description:
+      "Two yellow (gualdo) bands divided by a blue (azur) stripe, each yellow band charged with four " +
+      "Jerusalem crosses. Drawn from the city arms, the flag reads in heraldic terms as “the glory of high " +
+      "deeds and noble ideals, adorned by the cross of sacrifice”: yellow for glory, blue for ideals, and the " +
+      "Jerusalem crosses for sacrifice in the struggles of faith. Popayán is known as “the White City”.",
+    sources: [
+      { title: "Símbolos — Alcaldía de Popayán", url: "https://www.popayan.gov.co/MiMunicipio/Paginas/Simbolos.aspx" },
+      { title: "Escudo de Popayán — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Popay%C3%A1n" },
+    ],
+  },
+
+  // ── Cúcuta — capital of Norte de Santander, Colombia ────────────────────────
+  "CO-NSA": {
+    description:
+      "Two equal horizontal bands, black over red (with the city arms added at the centre for official use). " +
+      "Black stands for the wealth hidden in the region’s soil and the latent wealth of its people; red for " +
+      "heroism and the blood of the patriots. First flown in 1928 and made the city’s official ensign in 1988.",
+    sources: [
+      { title: "Bandera de Cúcuta — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_C%C3%BAcuta" },
+    ],
+  },
+
+  // ── Manizales — capital of Caldas, Colombia ─────────────────────────────────
+  "CO-CAL": {
+    description:
+      "Three plain horizontal stripes — white, green and red — standing for the coffee on which the region " +
+      "lives: white for the coffee flower, green for the foliage of the plantations, and red for the ripe " +
+      "coffee bean. Adopted in 1996.",
+    sources: [
+      { title: "Manizales (Caldas, Colombia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/co-cal-m.html" },
+      { title: "Símbolos — Sociedad de Mejoras Públicas de Manizales", url: "http://www.somepumanizales.org/p/institucional.html" },
+    ],
+  },
+
+  // ── Pereira — capital of Risaralda, Colombia ────────────────────────────────
+  "CO-RIS": {
+    description:
+      "A central deep-yellow triangle between scarlet side triangles, with the Phrygian Cap of Liberty on " +
+      "the yellow. Taken together the flag is read as “with the red blood of the sons of Pereira, liberty " +
+      "rises upon the wealth of its soil” — the yellow for liberty and the wealth of the land, the scarlet " +
+      "for the blood of its people. Adopted in 1923.",
+    sources: [
+      { title: "Escudo y Bandera — Concejo de Pereira", url: "https://www.concejopereira.gov.co/es/escudo-y-bandera-PG61" },
+      { title: "Pereira (Risaralda, Colombia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/co-ris-p.html" },
+    ],
+  },
+
+  // ── Armenia — capital of Quindío, Colombia ──────────────────────────────────
+  "CO-QUI": {
+    description:
+      "Three equal horizontal stripes — green, white and yellow. Green stands for the natural wealth and " +
+      "vegetation of the department, white for peace, and yellow for its coffee culture. The design dates to " +
+      "1927 (by the teacher Rosana Londoño Álzate) and was adopted officially in 2010.",
+    sources: [
+      { title: "Símbolos de Armenia (Quindío) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/S%C3%ADmbolos_de_Armenia_(Quind%C3%ADo)" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
