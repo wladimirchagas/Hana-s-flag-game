@@ -2575,6 +2575,101 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Leticia — capital of Amazonas, Colombia ─────────────────────────────────
+  "CO-AMA": {
+    description:
+      "A green field over blue, with a golden sun. Green stands for the semi-virgin jungle and its " +
+      "biodiversity, blue for the waters of the Amazon on whose bank the city sits, and the sun for Leticia, " +
+      "known as the “City of Light”.",
+    sources: [
+      { title: "Leticia (Colombia) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Leticia_(Colombia)" },
+      { title: "Leticia (Amazonas, Colombia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/co-amalt.html" },
+    ],
+  },
+
+  // ── Arauca — capital of Arauca, Colombia ────────────────────────────────────
+  "CO-ARA": {
+    description:
+      "Two equal horizontal stripes, green over red. Green stands for the department’s wide plains (llanos), " +
+      "red for the blood shed by those who fought for freedom.",
+    sources: [
+      { title: "Nuestros Símbolos — Alcaldía de Arauca", url: "https://www.arauca-arauca.gov.co/MiMunicipio/Paginas/Nuestros-Simbolos.aspx" },
+      { title: "Bandera de Arauca — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Arauca" },
+    ],
+  },
+
+  // ── Yopal — capital of Casanare, Colombia ───────────────────────────────────
+  "CO-CAS": {
+    description:
+      "Three horizontal stripes — red, yellow, green — with the city arms across them. Red stands for the " +
+      "blood the brave llaneros shed for freedom, yellow for the wealth of Yopal and the llano, and green " +
+      "for the region’s green savannas.",
+    sources: [
+      { title: "Nuestro municipio — Alcaldía de Yopal", url: "https://www.yopal-casanare.gov.co/municipio/nuestro-municipio" },
+    ],
+  },
+
+  // ── Quibdó — capital of Chocó, Colombia ─────────────────────────────────────
+  "CO-CHO": {
+    description:
+      "Green (half), red and brown (a quarter each). Green stands for the rainforest surrounding the city — a " +
+      "lung of humanity — red for the blood the ancestors shed in the struggle for freedom, and brown in " +
+      "homage to the city’s patron, Saint Francis of Assisi. Presented in 1995.",
+    sources: [
+      { title: "Nuestros Símbolos — Alcaldía de Quibdó", url: "https://www.quibdo-choco.gov.co/MiMunicipio/Paginas/Nuestros-Simbolos.aspx" },
+    ],
+  },
+
+  // ── Inírida — capital of Guainía, Colombia ──────────────────────────────────
+  "CO-GUA": {
+    description:
+      "A green field crossed by blue diagonal bands and charged with a radiant sun. Green stands for the " +
+      "region’s nature and growth, the blue bands for its rivers — the “fluvial star” where the Guaviare, " +
+      "Atabapo and Inírida meet — and the sun for wealth, strength and human warmth. (Inírida means “Little " +
+      "Mirror of the Sun”.)",
+    sources: [
+      { title: "Inírida — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/In%C3%ADrida" },
+    ],
+  },
+
+  // ── San José del Guaviare — capital of Guaviare, Colombia ───────────────────
+  "CO-GUV": {
+    description:
+      "Sky-blue and green fields joined by a golden wavy band, with white at the hoist. The blue is the sky " +
+      "of the plains giving way to the green of the jungle (and hope); the yellow band is the Guayabero and " +
+      "Ariari rivers that unite to form the Guaviare, gold for the wealth they carry; and the white is the " +
+      "peace hoped for all Colombia.",
+    sources: [
+      {
+        title: "Nuestros símbolos — Alcaldía de San José del Guaviare",
+        url: "https://www.sanjosedelguaviare-guaviare.gov.co/publicaciones/44/nuestros-simbolos/",
+      },
+    ],
+  },
+
+  // ── Mocoa — capital of Putumayo, Colombia ───────────────────────────────────
+  "CO-PUT": {
+    description:
+      "Blue, white and green horizontal stripes within a yellow border, a radiant sun on the white. Blue is " +
+      "the sky and rivers and the calm, reflective spirit; white is the peaceful character of the mocoanos, " +
+      "the sun standing for the tropical climate and for light and transparency; green is the mountains and " +
+      "forests and hope; and the yellow border is the riches around the town — the rivers’ alluvial gold and " +
+      "its people’s spirit of work.",
+    sources: [
+      { title: "Nuestros Símbolos — Alcaldía de Mocoa", url: "https://www.mocoa-putumayo.gov.co/MiMunicipio/Paginas/Nuestros-Simbolos.aspx" },
+    ],
+  },
+
+  // ── Sincelejo — capital of Sucre, Colombia ──────────────────────────────────
+  "CO-SUC": {
+    description:
+      "Three equal stripes — white, old-glory red and green. White stands for purity, red for passion and " +
+      "strength, and green for the richness of nature.",
+    sources: [
+      { title: "Nuestros Símbolos — Alcaldía de Sincelejo", url: "https://www.alcaldiadesincelejo.gov.co/MiMunicipio/Paginas/Nuestros-Simbolos.aspx" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
