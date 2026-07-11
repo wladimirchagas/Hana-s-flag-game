@@ -1302,4 +1302,69 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Natal — capital of the Rio Grande do Norte State, Brazil ────────────────
+  "BR-RN": {
+    description:
+      "A flag of two horizontal bands, green over white, with the city arms at the centre. The arms " +
+      "centre on a golden tailed star (estrela caudada) — the emblem of Natal, alluding to the " +
+      "comet-like Star of the Nativity, since “Natal” is Portuguese for Christmas (the city was founded " +
+      "on 25 December 1599) — on a blue shield above a scroll reading NATAL. Green stands for hope and " +
+      "white for peace.",
+    sources: [
+      {
+        title: "Bandeira de Natal (Rio Grande do Norte) — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Natal_(Rio_Grande_do_Norte)",
+      },
+    ],
+  },
+
+  // ── Vitória — capital of the Espírito Santo State, Brazil ───────────────────
+  "BR-ES": {
+    description:
+      "A white field bearing the arms of Vitória. An Iberian shield — of the kind used in Portugal at " +
+      "the time of Brazil’s discovery, honouring the first colonisers — rests on two crossed golden " +
+      "arrows that stand for the origins of the capixaba people; above it a silver mural crown, its gates " +
+      "open, proclaims the hospitality of the people and marks the city’s political standing as a " +
+      "capital.",
+    sources: [
+      {
+        title: "Bandeira de Vitória (Espírito Santo) — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Vit%C3%B3ria_(Esp%C3%ADrito_Santo)",
+      },
+    ],
+  },
+
+  // ── João Pessoa — capital of the Paraíba State, Brazil ──────────────────────
+  "BR-PB": {
+    description:
+      "A flag of seven horizontal stripes (four white, three red, alternating) crossed by a vertical " +
+      "black band bearing three silver mural-crown towers. The red stripes recall the Silveira and " +
+      "Leitão families, heroes of the conquest of the Paraíba captaincy; the three crowns stand for the " +
+      "city’s three successive historical names — Filipeia, Frederica (Frederikstadt) and Parahyba; and " +
+      "the red, black and white honour João Pessoa Cavalcanti de Albuquerque, after whom the city is " +
+      "named.",
+    sources: [
+      {
+        title: "Bandeira de João Pessoa — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Jo%C3%A3o_Pessoa",
+      },
+    ],
+  },
+
+  // ── Campo Grande — capital of the Mato Grosso do Sul State, Brazil ──────────
+  "BR-MS": {
+    description:
+      "A blue field with golden and red rays radiating from a central rectangle that bears the city " +
+      "arms — designed by the heraldist Arcinoé Antônio Peixoto de Faria and adopted in 1967. The " +
+      "rectangle stands for the city and the rays for municipal authority reaching every quarter; the " +
+      "arms show an eagle — for power, prosperity and altruism — grasping a berrante (a cattle-herder’s " +
+      "horn) that recalls the region’s cattle-ranching economy, beneath a mural crown.",
+    sources: [
+      {
+        title: "Bandeira de Campo Grande (Mato Grosso do Sul) — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Campo_Grande_(Mato_Grosso_do_Sul)",
+      },
+    ],
+  },
 };
