@@ -25,3 +25,6 @@ BG-17  # Razgrad: EN Wikipedia (Abritus/Roman context) + heraldika-bg checked; n
 BG-19  # Silistra: the Medzhidi Tabia fortress is a documented city landmark but not confirmed as the arms charge; no per-element arms symbolism is reachable (EN/FOTW/bg.wikipedia checked).
 BG-25  # Targovishte: EN Wikipedia + heraldika-bg + bg.wikipedia checked; the city has arms but no per-element symbolism is documented in reachable sources.
 BG-28  # Yambol: the Bezisten is a documented city landmark but not confirmed as the arms charge; no per-element arms symbolism is reachable (EN/FOTW/bg.wikipedia checked).
+BW-NE  # Francistown: the civic flag (silver field, "CITY OF FRANCISTOWN" seal) is documented, but the seal's charges have no per-element symbolism in reachable sources; the elephant/tusk symbolism found is Botswana's NATIONAL arms, not Francistown's.
+BW-SO  # Kanye: the bundled flag is a district-council logo ("KANYE DISTRICT COUNCIL"), not heraldic arms with per-element symbolism.
+BJ-LI  # Cotonou: no distinct municipal-flag symbolism is documented in reachable vexillological sources (EN/FOTW); the bundled shield's charge is not described.
