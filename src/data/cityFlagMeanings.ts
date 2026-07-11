@@ -1828,4 +1828,35 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
+  "MY-01": {
+    description:
+      "A dark-blue field with a red panel bearing a white crescent and a white five-pointed star — the " +
+      "flag of the state of Johor, whose capital is Johor Bahru. The crescent denotes Islam and the star " +
+      "the state’s sovereign ruler (the Sultan); the red stands for the bravery of the warriors and " +
+      "followers who opened and built the state, and the dark blue for the sea.",
+    sources: [
+      {
+        title: "Flag and coat of arms of Johor — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Johor",
+      },
+    ],
+  },
+
+  // ── George Town — capital of the state of Penang, Malaysia ──────────────────
+  "MY-07": {
+    description:
+      "A white field bearing the arms of the Penang Island City Council. The areca-nut palm on the crest " +
+      "refers to the origin of the island’s name — Pulau Pinang, “areca-nut palm island”; the wavy " +
+      "blue-and-white lines are the seas around the island, five of each for the five principles of " +
+      "Malaysia’s national philosophy (the Rukun Negara) and Penang’s five administrative districts; two " +
+      "dolphins support the shield, under the motto “Memimpin Sambil Berkhidmat” (“Leading We Serve”).",
+    sources: [
+      {
+        title: "Coat of arms of Penang — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Penang",
+      },
+    ],
+  },
 };
