@@ -1493,4 +1493,97 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Toronto — capital of Ontario, Canada ────────────────────────────────────
+  "CA-ON": {
+    description:
+      "A blue field bearing a white abstract outline of Toronto City Hall — its two curved towers — with " +
+      "a red maple leaf between them at the base standing for the domed Council Chamber. The negative " +
+      "space above and between the towers forms the letter “T” for Toronto, and the maple leaf links the " +
+      "city to Canada. The flag was designed by the 21-year-old student Renato De Santis and adopted in " +
+      "1974.",
+    sources: [
+      { title: "Flag of Toronto — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Toronto" },
+    ],
+  },
+
+  // ── Quebec City — capital of Quebec, Canada ─────────────────────────────────
+  "CA-QC": {
+    description:
+      "A deep-blue field bearing a golden ship within a crenellated white border. The ship is the " +
+      "Don-de-Dieu, the vessel of the city’s founder Samuel de Champlain, marking Quebec as a great " +
+      "seaport; the crenellated border recalls the city walls — Quebec is the only walled city in North " +
+      "America north of Mexico — and also the fortified town of Brouage in France from which Champlain " +
+      "came.",
+    sources: [
+      { title: "Flag of Quebec City — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Quebec_City" },
+    ],
+  },
+
+  // ── Winnipeg — capital of Manitoba, Canada ──────────────────────────────────
+  "CA-MB": {
+    description:
+      "A field divided diagonally, light blue at the upper hoist and gold at the lower fly, with the " +
+      "city arms on a white disc at the centre. Blue stands for Winnipeg’s clear prairie sky and gold " +
+      "for the wheat that was the city’s original economic mainstay. The arms include a gatehouse of " +
+      "Fort Garry — the Hudson’s Bay Company post at the confluence of the Red and Assiniboine rivers, " +
+      "where the city grew — and the prairie crocus, Manitoba’s floral emblem.",
+    sources: [
+      { title: "Flag of Winnipeg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Winnipeg" },
+      {
+        title: "Coat of arms of Winnipeg — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Winnipeg",
+      },
+    ],
+  },
+
+  // ── Halifax — capital of Nova Scotia, Canada ────────────────────────────────
+  "CA-NS": {
+    description:
+      "A blue field bearing a golden saltire (the cross of Saint Andrew), for the Scottish heritage of " +
+      "the region and its standing as the capital of Nova Scotia. At the centre a kingfisher — a symbol " +
+      "of industry and the oldest civic emblem in the region (1860) — stands for Halifax, flanked by two " +
+      "18th-century sailing ships for the neighbouring former city of Dartmouth and the area’s naval " +
+      "tradition; the blue is for the harbour, the sea and the lakes.",
+    sources: [
+      {
+        title: "Coat of arms of the Halifax Regional Municipality — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Halifax_Regional_Municipality",
+      },
+      {
+        title: "Halifax Regional Municipality — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/ca-ns-hf.html",
+      },
+    ],
+  },
+
+  // ── Iqaluit — capital of Nunavut, Canada ────────────────────────────────────
+  "CA-NU": {
+    description:
+      "A Canadian pale of blue, white and blue bearing the city’s emblem: a stylised two-peaked mountain " +
+      "(the Everett Mountains above Frobisher Bay) over stylised fish, with the city’s name in Latin and " +
+      "Inuktitut script. “Iqaluit” means “place of many fish” in Inuktitut, and fishing has sustained " +
+      "the people of the area for centuries.",
+    sources: [
+      {
+        title: "Iqaluit, Nunavut — Canadian Vexillology",
+        url: "https://www.canadianvexillology.com/blog/iqaluitnunavut",
+      },
+    ],
+  },
+
+  // ── Whitehorse — capital of Yukon, Canada ───────────────────────────────────
+  "CA-YT": {
+    description:
+      "A blue field bearing the seal of the City of Whitehorse, which depicts the city’s surroundings — " +
+      "mountains and the Yukon River — evoking its setting and its history in river transportation and " +
+      "the Klondike Gold Rush (Whitehorse grew as the head of navigation on the Yukon River during the " +
+      "1898 gold rush).",
+    sources: [
+      {
+        title: "Coat of arms of Whitehorse, Yukon — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Whitehorse,_Yukon",
+      },
+    ],
+  },
 };
