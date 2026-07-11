@@ -963,4 +963,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       { title: "Madara Rider — Wikipedia", url: "https://en.wikipedia.org/wiki/Madara_Rider" },
     ],
   },
+
+  // ── Vratsa — capital of the Vratsa Province, Bulgaria ───────────────────────
+  "BG-06": {
+    description:
+      "A green field bearing the golden arms of Vratsa, centred on the city’s fortress gate — the narrow " +
+      "rock passage that the Romans called Valve (“door of a fortress”) and that gave the town its name " +
+      "(from the Slavic vrata, “gate”, with the diminutive -itsa). The gateway, the entrance to the " +
+      "Vratsata gorge, is the enduring emblem of the city.",
+    sources: [
+      { title: "Vratsa — Wikipedia", url: "https://en.wikipedia.org/wiki/Vratsa" },
+    ],
+  },
 };
