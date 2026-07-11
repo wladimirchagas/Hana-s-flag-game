@@ -1806,8 +1806,97 @@
 
 .hierarchy__col:first-child::after { left: 50%; }
 .hierarchy__col:last-child::after { right: 50%; }
+/* A single child needs no horizontal bus, but MUST keep its vertical stub so it
+   still connects to the parent (drop line → stub → node, no gap). */
 .hierarchy__col:only-child::after { display: none; }
-.hierarchy__col:only-child::before { display: none; }
+
+/* ---- Type-group tier: nation → type label → its subdivisions ---- */
+
+/* Each type group is a column under the national bus (same stub+bus connectors
+   as a subdivision column). */
+.hierarchy__group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 0.6rem 0;
+  flex: 0 0 auto;
+}
+
+.hierarchy__group::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 22px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+.hierarchy__group::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--ink);
+}
+
+.hierarchy__group:first-child::after { left: 50%; }
+.hierarchy__group:last-child::after { right: 50%; }
+.hierarchy__group:only-child::after { display: none; }
+
+/* The type label pill, with a drop line down to its subdivision row. */
+.hierarchy__group-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 22px;
+  padding: 0.4rem 0.85rem;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.hierarchy__group-label::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -22px;
+  width: 3px;
+  height: 22px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+.hierarchy__group-type {
+  letter-spacing: 0.01em;
+}
+
+.hierarchy__group-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+}
+
+/* Row of subdivision columns under a type label. */
+.hierarchy__subrow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 /* Leaf city node: vertical connector up to its parent branch node. */
 .hierarchy__node--city {
