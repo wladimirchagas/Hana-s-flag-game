@@ -1234,4 +1234,72 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Belo Horizonte — capital of the Minas Gerais State, Brazil ──────────────
+  "BR-MG": {
+    description:
+      "A white field bearing the city arms at the centre. On a round Portuguese shield (for Brazil’s " +
+      "Portuguese origin) a golden rising sun climbs over the green Serra do Curral — the mountain range " +
+      "that frames the city and gave it its name (“beautiful horizon”) — on a blue field; a golden chief " +
+      "carries a red equilateral triangle, the emblem of the Inconfidência Mineira, the Minas Gerais " +
+      "independence conspiracy of 1789. The five-towered golden mural crown marks a state capital.",
+    sources: [
+      {
+        title: "Brasão de Belo Horizonte — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_Belo_Horizonte",
+      },
+    ],
+  },
+
+  // ── Manaus — capital of the Amazonas State, Brazil ──────────────────────────
+  "BR-AM": {
+    description:
+      "A beige field — the muddy colour of the Amazon river — bearing the elaborate arms of Manaus, " +
+      "designed by Thaumaturgo Vaz in 1906. Crowned by a sun bearing the date 21 November 1889 (when the " +
+      "city joined the proclamation of the Republic), the arms depict phases of the city’s history: the " +
+      "Meeting of the Waters where the Rio Negro joins the Solimões, a fortress with the Portuguese flag " +
+      "for the era of Portuguese rule, and a rubber tree (seringueira) for the rubber boom that made " +
+      "Manaus rich.",
+    sources: [
+      {
+        title: "Brasão de Manaus — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_Manaus",
+      },
+    ],
+  },
+
+  // ── Belém — capital of the Pará State, Brazil ───────────────────────────────
+  "BR-PA": {
+    description:
+      "A blue field bearing the arms of Belém, created in 1626. Two arms hold baskets of flowers and " +
+      "fruit, for the fertility of the surrounding land; an ox and a mule graze with heads raised toward " +
+      "a star — evoking the Nativity at Bethlehem (Belém in Portuguese), after which the city is named; " +
+      "and a castle alludes to the strength of Portuguese arms and to the founding fort on Guajará Bay.",
+    sources: [
+      {
+        title: "Brasão de Belém (Pará) — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_Bel%C3%A9m_(Par%C3%A1)",
+      },
+    ],
+  },
+
+  // ── Florianópolis — capital of the Santa Catarina State, Brazil ─────────────
+  "BR-SC": {
+    description:
+      "A white field crossed by two red stripes — the colours of Santa Catarina state — with the city " +
+      "arms at the centre. On a Portuguese shield a golden rising sun sits on blue above three silver " +
+      "wavy lines for the sea; a central golden escutcheon bordered red bears the Cross of the Order of " +
+      "Christ, standing for the island of Santa Catarina on which the city sits. The eight-towered " +
+      "golden mural crown marks a state capital.",
+    sources: [
+      {
+        title: "Bandeira de Florianópolis — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Florian%C3%B3polis",
+      },
+      {
+        title: "Brasão de Florianópolis — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_Florian%C3%B3polis",
+      },
+    ],
+  },
 };
