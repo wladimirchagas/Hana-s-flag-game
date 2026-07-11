@@ -458,10 +458,21 @@ export function FlagGrid({
                             className="flag-grid__thumb-img"
                             onError={(e) => {
                               const img = e.currentTarget;
-                              // Safety net: if a bundled local flag is missing,
-                              // fall back once to flagcdn.com — except for codes
-                              // where flagcdn serves a politically incorrect flag
-                              // (AF: pre-2021 Republic flag). Those show the
+                              // First, retry the LOCAL flag once. The bundled SVG
+                              // is the correct source; a single failure is usually
+                              // a transient network/VPN drop (or a load before the
+                              // service worker is controlling the page), not a
+                              // missing file. Re-assigning src forces a re-fetch,
+                              // which the SW then serves from cache.
+                              if (url && !img.dataset.localRetry) {
+                                img.dataset.localRetry = "1";
+                                img.src = url;
+                                return;
+                              }
+                              // Safety net: if the bundled local flag is genuinely
+                              // missing, fall back once to flagcdn.com — except for
+                              // codes where flagcdn serves a politically incorrect
+                              // flag (AF: pre-2021 Republic flag). Those show the
                               // empty placeholder rather than the wrong flag.
                               const code = item.id.toLowerCase();
                               const png = `https://flagcdn.com/${code}.png`;
