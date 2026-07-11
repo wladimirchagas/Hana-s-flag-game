@@ -1202,6 +1202,53 @@ sourced fact from a plausible fabrication, so it never replaces verifying each c
 source by hand. **Never** weaken the check, and never add an entry whose claims you have not confirmed
 against the cited source.
 
+## Capital-city flag-meaning explainer — exhaust every language before omitting — hard rule, do not override without approval
+
+**The Learn-mode capital-city flag also carries a "What this flag means" explainer** — the same
+`FlagMeaning.tsx` progressive-disclosure component reused via its `meanings` prop, rendered under the
+capital flag in `CapitalDetails.tsx`, with data in `src/data/cityFlagMeanings.ts` (`CITY_FLAG_MEANINGS`,
+keyed by the subdivision's ISO 3166-2 code, the same key as `CAPITAL_FLAGS`). Sourcing discipline is
+identical to the national/subnational flag-meaning rule above: every entry needs an authoritative
+`sources` citation with a real `http(s)` URL, myth is separated from fact, and nothing is fabricated.
+Structure is validated by `scripts/check-city-flag-meanings.mjs` (in `npm run flags:check`).
+
+Expanding `CITY_FLAG_MEANINGS` to cover every bundled capital flag is a **standing sweep**, run under
+the same "keep going, don't ask" mandate as the subdivision sweep below. Progress:
+`node scripts/capital-meaning-remaining.mjs [CC]`; omissions logged inline (`CODE  # reason`) in
+`scripts/data/capital-meaning-omitted.txt`.
+
+### The hard rule — omission requires multi-language source exhaustion
+
+**A capital flag may be omitted (logged in `capital-meaning-omitted.txt`) ONLY after its symbolism has
+been sought in EVERY reachable authoritative source, INCLUDING languages other than English.**
+"Image-only / not documented on en.wikipedia" is NEVER a sufficient basis to omit. Before omitting any
+capital flag as unsourceable you MUST check, at minimum:
+
+1. **Flags of the World (FOTW, `crwflags.com/fotw` / `fotw.info`)** — check FIRST; it carries per-city
+   flag pages with symbolism en.wikipedia omits. This is how Boa Vista (`BR-RR`) and Macapá (`BR-AP`)
+   were recovered from the omission list, and how Ipoh / Kuala Terengganu / Kota Kinabalu were recovered
+   for Malaysia.
+2. **the capital's own article on the LOCAL-language Wikipedia** (bg/ms/pt/de/fr/… .wikipedia), in its
+   heraldry/flag section, and any dedicated arms/flag article;
+3. **official city-council / government pages** (in the local language);
+4. **heraldic references** (heraldika, heraldry-wiki) and the **Wikimedia Commons** file page (its
+   `blasonatura`/description often carries the blazon).
+
+Only a flag that comes up empty in ALL of the above — or one that is structural (the capital-name guard
+blocks it, or it is a plain-colour flag / council wordmark with no heraldic content) — may be omitted,
+and its logged reason MUST name the deeper sources checked (cite the FOTW page), never just
+"en.wikipedia / search checked".
+
+### Enforcement
+
+`scripts/audit-omitted-capital-reasons.mjs` (`npm run capitals:audit-omissions`) **fails** if any
+non-structural omission cites only English Wikipedia / a bare search without showing a deeper
+(FOTW / local-language / official / heraldic / Commons) source was checked. Like the subdivision
+omission audit it is deliberately NOT in build-gating `flags:check` — it is the capital sweep's own
+tripwire, and **any "capitals sweep complete / thorough" claim is gated on a clean run of it.** Never
+weaken the audit or omit a flag to dodge it; if it flags an omission, re-check FOTW + the local-language
+sources and either recover the flag as a sourced entry or fix the reason to cite what was checked.
+
 ## Flag-meaning coverage sweep is a standing mandate — finish it without asking — hard rule, do not override without approval
 
 **Expanding `flagMeanings.ts` to cover every subdivision that has a bundled/playable flag is an
