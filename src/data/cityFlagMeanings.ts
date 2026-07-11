@@ -1367,4 +1367,72 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── São Luís — capital of the Maranhão State, Brazil ────────────────────────
+  "BR-MA": {
+    description:
+      "A yellow field bearing the city arms: on a blue shield, silver stars arranged as the Pleiades — " +
+      "the brightest star cluster visible to the naked eye — which cast São Luís as the “Brazilian " +
+      "Athens” and honour the Maranhão literary circle (Gonçalves Dias and others). A golden " +
+      "eight-towered mural crown marks a state capital, with laurel branches for the people’s virtue.",
+    sources: [
+      {
+        title: "Brasão de São Luís (Maranhão) — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_S%C3%A3o_Lu%C3%ADs_(Maranh%C3%A3o)",
+      },
+    ],
+  },
+
+  // ── Cuiabá — capital of the Mato Grosso State, Brazil ───────────────────────
+  "BR-MT": {
+    description:
+      "A flag divided vertically green (at the hoist) and white, with a golden roundel on the dividing " +
+      "line bearing the monument that marks the geodesic centre of South America (which lies at Cuiabá). " +
+      "Green stands for the palms that are the city’s chief emblem, white for the purity of the cuiabano " +
+      "soul, and the gold for Cuiabá’s gold — the mineral wealth on which the city was founded, the " +
+      "triangulated base reading as a mound of gold.",
+    sources: [
+      { title: "Bandeira de Cuiabá — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_de_Cuiab%C3%A1" },
+    ],
+  },
+
+  // ── Aracaju — capital of the Sergipe State, Brazil ──────────────────────────
+  "BR-SE": {
+    description:
+      "Four horizontal stripes alternating green and gold, with a white canton at the upper hoist " +
+      "bearing the city arms. The arms gather the city’s identity: a cross for faith, a weathervane for " +
+      "the salt industry, a coconut palm for the coconut harvest, a cogwheel for labour, a seahorse for " +
+      "the coast, and a mural crown for the capital, under the motto “Pax et Labor” (“Peace and Work”).",
+    sources: [
+      { title: "Bandeira de Aracaju — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_de_Aracaju" },
+    ],
+  },
+
+  // ── Palmas — capital of the Tocantins State, Brazil ─────────────────────────
+  "BR-TO": {
+    description:
+      "A white field — for peace — bearing a golden sun above two narrow parallel blue stripes. The blue " +
+      "stripes stand for the rivers Tocantins and Araguaia, vital to the state’s development, and the sun " +
+      "for Palmas as the seat of state power. Palmas is Brazil’s youngest state capital, a planned city " +
+      "founded in 1989.",
+    sources: [
+      {
+        title: "Lei nº 1.972 — Cria a Bandeira de Palmas (Câmara Municipal de Palmas)",
+        url: "https://legislativo.palmas.to.gov.br/media/leis/lei-ordinaria-1972-2013-05-23-20-3-2017-15-14-12.pdf",
+      },
+    ],
+  },
+
+  // ── Teresina — capital of the Piauí State, Brazil ───────────────────────────
+  "BR-PI": {
+    description:
+      "A flag gyronny-in-saltire of white and blue with the city arms at the centre. The arms carry " +
+      "black anchors corded in red, for the navigability of the rivers Parnaíba and Poti on which the " +
+      "city was founded (when the population moved from the old Vila Velha do Poti); the river Parnaíba " +
+      "runs along the base, and the scroll reads “TERESINA” with the foundation date 16 August 1852.",
+    sources: [
+      { title: "Bandeira de Teresina — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_de_Teresina" },
+      { title: "Brasão de Teresina — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_Teresina" },
+    ],
+  },
 };
