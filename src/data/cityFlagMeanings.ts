@@ -2461,6 +2461,120 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Tunja — capital of Boyacá, Colombia ─────────────────────────────────────
+  "CO-BOY": {
+    description:
+      "Three horizontal stripes — green, white, green. Green stands for the honour, friendship and courtesy " +
+      "of the city’s people and for hope and devotion to its progress; white for cleanliness and integrity " +
+      "and for greatness and culture. Created in 1939 for the fourth centenary of the city’s Hispanic " +
+      "founding.",
+    sources: [
+      { title: "Bandera — Alcaldía de Tunja", url: "https://www.tunja-boyaca.gov.co/municipio/bandera" },
+    ],
+  },
+
+  // ── Neiva — capital of Huila, Colombia ──────────────────────────────────────
+  "CO-HUI": {
+    description:
+      "Three horizontal stripes — red, green, yellow — crossed by an indigenous arrow set at 45° pointing to " +
+      "the upper hoist. Red is the courage and love of liberty of the huilense people, green a homage to " +
+      "work and to the land’s arts and culture (and hope), and yellow the nobility and the mineral wealth of " +
+      "the region. The three stripes recall the city’s three foundings (1539, 1551, 1612). Adopted in 1967.",
+    sources: [
+      { title: "Nuestros Símbolos — Alcaldía de Neiva", url: "https://www.alcaldianeiva.gov.co/MiMunicipio/Paginas/Nuestros-Simbolos.aspx" },
+    ],
+  },
+
+  // ── Pasto — capital of Nariño, Colombia ─────────────────────────────────────
+  "CO-NAR": {
+    description:
+      "A central ultramarine-blue band between two vermilion-red bands, with a gold triangle at the hoist. " +
+      "The red stands for highness and strength, the blue for justice, beauty, serenity and loyalty, and the " +
+      "gold triangle for the light, power, constancy and nobility of the pastuso people. Designed by " +
+      "Ignacio Rodríguez Guerrero.",
+    sources: [
+      { title: "Bandera de Pasto — Alcaldía de Pasto", url: "https://www.pasto.gov.co/index.php/nuestros-simbolos/bandera-de-pasto" },
+    ],
+  },
+
+  // ── Santa Marta — capital of Magdalena, Colombia ────────────────────────────
+  "CO-MAG": {
+    description:
+      "A white-and-blue flag. White stands for peace — all united without rancour for this land — and blue " +
+      "for the sky, the sea and the silvery horizon of the Sierra Nevada that rises behind the city.",
+    sources: [
+      { title: "Símbolos — Alcaldía Distrital de Santa Marta", url: "https://www.santamarta.gov.co/vive-en-santa-marta/simbolos" },
+    ],
+  },
+
+  // ── Villavicencio — capital of Meta, Colombia ───────────────────────────────
+  "CO-MET": {
+    description:
+      "Three horizontal stripes — blue, green, red. Blue stands for the immense sky and the region’s rich " +
+      "waters, green for the fertile plains of the Llanos Orientales, and red for the people’s struggle in " +
+      "the campaign of liberation. Adopted in 1970.",
+    sources: [
+      { title: "Nuestros Símbolos — Alcaldía de Villavicencio", url: "https://villavicencio.gov.co/municipio/nuestros-simbolos/" },
+    ],
+  },
+
+  // ── Ibagué — capital of Tolima, Colombia ────────────────────────────────────
+  "CO-TOL": {
+    description:
+      "Three horizontal stripes — yellow, green, red — echoing the flag of the United Provinces of New " +
+      "Granada. Yellow stands for the municipality’s mineral wealth, green for its vegetation and its coffee " +
+      "plantations, and red for the blood shed by Ibagué’s heroes in the wars of independence.",
+    sources: [
+      { title: "Escudo de Ibagué — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Ibagu%C3%A9" },
+    ],
+  },
+
+  // ── Valledupar — capital of Cesar, Colombia ─────────────────────────────────
+  "CO-CES": {
+    description:
+      "Three horizontal stripes — dark blue, white, red. Blue stands for the sky and the rivers that bathe " +
+      "the city, white for the perpetual snows of the Sierra Nevada that watches over it, and red for the " +
+      "blood the region’s native peoples shed in its defence.",
+    sources: [
+      { title: "Símbolos — Concejo de Valledupar", url: "https://concejodevalledupar.gov.co/simbolos/" },
+    ],
+  },
+
+  // ── Montería — capital of Córdoba, Colombia ─────────────────────────────────
+  "CO-COR": {
+    description:
+      "Quartered red, white, white and blue, with a golden five-pointed star at the centre. The red quarter " +
+      "stands for vigour and heroism, the two white quarters for peace, and the blue quarter for the sky and " +
+      "space; the gold star is the gold of the great Sinú river. Adopted in 1960.",
+    sources: [
+      { title: "Símbolos — Alcaldía de Montería", url: "https://www.monteria.gov.co/publicaciones/143/simbolos/" },
+    ],
+  },
+
+  // ── Riohacha — capital of La Guajira, Colombia ──────────────────────────────
+  "CO-LAG": {
+    description:
+      "A flag in two blues — sky-blue and royal blue — bearing a golden rising sun. The sun rises each " +
+      "morning bringing opportunity and a new day; among its rays, seven tall rays honour the Creator and " +
+      "the lesser rays stand for humankind under that guidance. Adopted in the 2002 redesign of the city’s " +
+      "emblems.",
+    sources: [
+      { title: "Nuestros Símbolos — Alcaldía de Riohacha", url: "https://www.riohacha-laguajira.gov.co/MiMunicipio/Paginas/Nuestros-Simbolos.aspx" },
+    ],
+  },
+
+  // ── Florencia — capital of Caquetá, Colombia ────────────────────────────────
+  "CO-CAQ": {
+    description:
+      "Three horizontal stripes — green, white, red. Green fills the upper half for the forest wealth of " +
+      "Caquetá and the hope of a bright future, white for the morning light and the peace with which the " +
+      "land is blessed, and red for the ardent, striving spirit of the caqueteño. Made official in 1964.",
+    sources: [
+      { title: "Bandera de Florencia (Caquetá) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Florencia_(Caquet%C3%A1)" },
+      { title: "Florencia (Caqueta, Colombia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/co-caqfl.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
