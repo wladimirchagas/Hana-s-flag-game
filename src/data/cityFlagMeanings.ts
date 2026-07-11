@@ -1435,4 +1435,62 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       { title: "Brasão de Teresina — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_Teresina" },
     ],
   },
+
+  // ── Rio Branco — capital of the Acre State, Brazil ──────────────────────────
+  "BR-AC": {
+    description:
+      "A white field bearing the arms of the Baron of Rio Branco — José Maria da Silva Paranhos Júnior, " +
+      "the diplomat who secured Acre for Brazil through the 1903 Treaty of Petrópolis, and after whom the " +
+      "city is named. The arms carry a crown for nobility, a globe crossed by a red band, and a river, " +
+      "with the Baron’s motto “Ubique Patria Memor” (“everywhere mindful of the fatherland”).",
+    sources: [
+      {
+        title: "Brasão de Rio Branco (Acre) — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bras%C3%A3o_de_Rio_Branco_(Acre)",
+      },
+    ],
+  },
+
+  // ── Maceió — capital of the Alagoas State, Brazil ───────────────────────────
+  "BR-AL": {
+    description:
+      "Three horizontal bands — green, white and blue — with the city arms at the centre and a red wavy " +
+      "line running across. The white band represents the white-sand restinga of Maceió’s shoreline and " +
+      "the red wave the Riacho Salgadinho stream that crosses the city; the arms, created by the " +
+      "folklorist Théo Brandão in 1957, show a silver sailing jangada and canoe on the water.",
+    sources: [
+      { title: "Bandeira de Maceió — Wikipédia", url: "https://pt.wikipedia.org/wiki/Bandeira_de_Macei%C3%B3" },
+    ],
+  },
+
+  // ── Porto Velho — capital of the Rondônia State, Brazil ─────────────────────
+  "BR-RO": {
+    description:
+      "A flag divided vertically — a narrow gold band at the hoist, a larger blue field beyond — bearing " +
+      "three superimposed black cylindrical water towers. Gold stands for the region’s mineral wealth and " +
+      "blue for its sky; the Três Caixas d’Água (Three Water Towers) were built for the Madeira–Mamoré " +
+      "Railway, around whose works the city of Porto Velho grew.",
+    sources: [
+      {
+        title: "Bandeira de Porto Velho — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Porto_Velho",
+      },
+    ],
+  },
+
+  // ── Goiânia — capital of the Goiás State, Brazil ────────────────────────────
+  "BR-GO": {
+    description:
+      "A green field with a red-and-white cross radiating from a central white panel that bears the city " +
+      "arms. On the arms, a blue shield carries a golden cross — for faith and leadership — beneath a " +
+      "silver mural crown that marks a state capital, encircled by eight golden sparks for the eight " +
+      "original districts of the municipality (Goiânia is a planned city, founded in 1933 to replace the " +
+      "old capital as the seat of Goiás).",
+    sources: [
+      {
+        title: "Brasão e Bandeira da Cidade de Goiânia (GO) — Simbolopédia (MBI)",
+        url: "https://www.mbi.com.br/mbi/biblioteca/simbolopedia/municipio-goiania-go-br/",
+      },
+    ],
+  },
 };

@@ -28,3 +28,5 @@ BG-28  # Yambol: the Bezisten is a documented city landmark but not confirmed as
 BW-NE  # Francistown: the civic flag (silver field, "CITY OF FRANCISTOWN" seal) is documented, but the seal's charges have no per-element symbolism in reachable sources; the elephant/tusk symbolism found is Botswana's NATIONAL arms, not Francistown's.
 BW-SO  # Kanye: the bundled flag is a district-council logo ("KANYE DISTRICT COUNCIL"), not heraldic arms with per-element symbolism.
 BJ-LI  # Cotonou: no distinct municipal-flag symbolism is documented in reachable vexillological sources (EN/FOTW); the bundled shield's charge is not described.
+BR-AP  # Macapá: the bundled municipal flag (red/yellow/green bands + Marco Zero/Fortaleza monument) — while the Equator/Marco Zero is Macapá's defining fact, no dedicated authoritative source confirms the flag's per-element (stripe-colour) symbolism; only educational/state-flag sources surfaced. Defer to a proper city source.
+BR-RR  # Boa Vista: searches returned only the Roraima STATE flag; the Boa Vista municipal flag (green field, white star, yellow band) has no per-element symbolism documented in reachable sources.
