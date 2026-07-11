@@ -1859,4 +1859,50 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Ipoh — capital of the state of Perak, Malaysia ──────────────────────────
+  "MY-08": {
+    description:
+      "A flag bearing the arms of the Ipoh City Council. The two tree trunks are the ipoh tree that gave " +
+      "the city its name; two tigers, from Malaysia’s federal coat of arms, flank the shield. Within it a " +
+      "fortress recalls Kota Dato’ Laksamana, whose builder is held to have founded the first settlement " +
+      "at Ipoh; a blue wavy line is the Kinta River that divides Ipoh’s Old and New Towns; a yellow band " +
+      "is the limestone hills around the city; a crescent marks Islam as the official religion; and three " +
+      "vertical stripes at the base are taken from the flag of Perak, Ipoh’s state.",
+    sources: [
+      {
+        title: "Logo MBI — Ipoh City Council (official)",
+        url: "https://www.mbi.gov.my/en/korporat/logo-mbi",
+      },
+    ],
+  },
+
+  // ── Kuala Terengganu — capital of the state of Terengganu, Malaysia ─────────
+  "MY-11": {
+    description:
+      "A yellow field — the royal colour of Terengganu — with a black canton bearing a white crescent " +
+      "and star within a white border. The crescent and star denote Islam, the state religion; the " +
+      "black-and-white canton follows the Terengganu state flag, on which white stands for the Sultan " +
+      "and black for the subjects he protects.",
+    sources: [
+      {
+        title: "Bendera Terengganu — Wikipedia Bahasa Melayu",
+        url: "https://ms.wikipedia.org/wiki/Bendera_Terengganu",
+      },
+    ],
+  },
+
+  // ── Kota Kinabalu — capital of the state of Sabah, Malaysia ─────────────────
+  "MY-12": {
+    description:
+      "A flag bearing Mount Kinabalu — the emblem of the Sabah state government — as a dark-blue " +
+      "silhouette on a light-blue canton, above horizontal bands of red, white, yellow and green. In " +
+      "Sabah’s flag tradition the red stands for courage and the readiness to sacrifice for the state, " +
+      "the white for purity, the yellow for the state’s wealth, and the green for its young land and " +
+      "forests.",
+    sources: [
+      { title: "Flag of Sabah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sabah" },
+      { title: "Bendera Sabah — Wikipedia Bahasa Melayu", url: "https://ms.wikipedia.org/wiki/Bendera_Sabah" },
+    ],
+  },
 };
