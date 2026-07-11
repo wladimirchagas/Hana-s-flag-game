@@ -2670,6 +2670,67 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── San José — capital of Costa Rica ────────────────────────────────────────
+  "CR-SJ": {
+    description:
+      "Blue, white and green bands with a row of eleven white stars. Blue is the sky, green is hope and white " +
+      "is transparency; the eleven stars stand for the eleven districts of the canton of San José.",
+    sources: [
+      { title: "Bandera del cantón — Municipalidad de San José", url: "https://www.msj.go.cr/MSJ/Capital/SitePages/bandera_canton.aspx" },
+      { title: "Cantón de San José — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Cant%C3%B3n_de_San_Jos%C3%A9" },
+    ],
+  },
+
+  // ── Alajuela — capital of Alajuela province, Costa Rica ─────────────────────
+  "CR-A": {
+    description:
+      "A white flag bearing the canton’s coat of arms (approved 1908). The shield is split: on the gold half " +
+      "a flaming black torch commemorates Juan Santamaría, the Alajuela drummer-boy who died for the country " +
+      "at Rivas in 1856; the other half carries the five stripes of the national flag, and a Phrygian cap of " +
+      "liberty on a lance crowns the shield. The motto reads “Pro Patria Nostra Sanguis Noster” (For our " +
+      "fatherland, our blood).",
+    sources: [
+      { title: "Escudo de la Ciudad de Alajuela — Escuela Nicolás Aguilar", url: "http://www.escnicol1905.ed.cr/sitionew/index.php/component/content/article/26-alajuela-historica/124-escudo-de-la-ciudad-de-alajuela" },
+    ],
+  },
+
+  // ── Cartago — capital of Cartago province, Costa Rica ──────────────────────
+  "CR-C": {
+    description:
+      "Red over blue, with the canton arms at the centre. Red stands for the courage and strength of the " +
+      "people of Cartago and the sacrifices made in defence of liberty; blue for the sky, peace, faith and " +
+      "hope. The arms carry a rampant lion (from the conqueror Juan Vázquez de Coronado’s family) and a " +
+      "golden castle, under the motto “Fide et Pace” (By Faith and Peace).",
+    sources: [
+      { title: "Símbolos — Municipalidad de Cartago", url: "https://patrimoniovirtual.muni-carta.go.cr/Simbolos.aspx" },
+    ],
+  },
+
+  // ── Heredia — capital of Heredia province, Costa Rica ──────────────────────
+  "CR-H": {
+    description:
+      "Three vertical stripes — yellow (hoist), white and red — with the canton arms on the white. The yellow " +
+      "and white are the colours of the Vatican, marking the city’s deep Catholic tradition (yellow and red " +
+      "are also the heredianos’ traditional colours). The arms show a silver fort — like the one Fadrique " +
+      "Gutiérrez built — on red within blue, with the mottoes “Libertad, Paz, Progreso” and “Heredia”.",
+    sources: [
+      { title: "Símbolos — Municipalidad de Heredia", url: "https://www.heredia.go.cr/es/el-canton/simbolos" },
+    ],
+  },
+
+  // ── Puntarenas — capital of Puntarenas province, Costa Rica ────────────────
+  "CR-P": {
+    description:
+      "Diagonal bands of red, white, blue and green with a large orange sun dated “1848”. The red, white and " +
+      "blue are the national colours (adopted in 1848) and green stands for the region’s nature; the sun’s " +
+      "eleven rays represent the eleven cantons of Puntarenas province. The flag was created in the early " +
+      "1990s.",
+    sources: [
+      { title: "Bandera de la Provincia de Puntarenas — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Puntarenas.svg" },
+      { title: "La heráldica de Puntarenas", url: "https://heraldica.website/heraldica/descubre-la-historia-detras-de-la-heraldica-de-puntarenas/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
