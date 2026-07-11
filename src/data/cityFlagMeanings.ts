@@ -1670,4 +1670,107 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Zürich — capital of the canton of Zürich, Switzerland ───────────────────
+  "CH-ZH": {
+    description:
+      "A flag divided diagonally (per bend) into blue and white — the arms of the canton and city of " +
+      "Zürich. Popularly the blue is read as the lake and the white as the snow-capped mountains, and " +
+      "the diagonal division is taken to represent justice. The blue-and-white is attested from the " +
+      "1220s, the diagonal from 1389.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Geneva — capital of the canton of Geneva, Switzerland ───────────────────
+  "CH-GE": {
+    description:
+      "A flag divided vertically: at the hoist a golden half-eagle on black, at the fly a golden key on " +
+      "red — the arms of Geneva, adopted in 1387. The half-eagle (from the double eagle of the Holy " +
+      "Roman Empire) stands for temporal authority and protection, and the golden key (the Key of Saint " +
+      "Peter, patron of the cathedral) for spiritual, ecclesiastical rule; together they symbolise the " +
+      "union of secular and religious power.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Basel — capital of the canton of Basel-Stadt, Switzerland ───────────────
+  "CH-BS": {
+    description:
+      "A white field bearing a black Baselstab — the staff (crozier) of the Bishops of Basel, curving to " +
+      "the hoist. Used on the city’s coins from the 11th century, it was adopted as the city arms in " +
+      "1385, when black came to represent the city (and the same staff in red the bishop).",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Schwyz — capital of the canton of Schwyz, Switzerland ───────────────────
+  "CH-SZ": {
+    description:
+      "A red field with a small white couped cross in the upper hoist. The plain red banner marked Schwyz " +
+      "as an imperial free territory with the sovereign power to administer justice; the white cross " +
+      "(which soldiers are said to have sewn on at the Battle of Laupen in 1339) became, on a red square, " +
+      "the national flag of Switzerland — the country itself taking its name from Schwyz.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Altdorf — capital of the canton of Uri, Switzerland ─────────────────────
+  "CH-UR": {
+    description:
+      "A yellow field bearing the black head of an aurochs — the Uristier — with a red nose-ring, the " +
+      "arms of the canton of Uri, here combined with the red and white of the town of Altdorf, the " +
+      "cantonal capital. The aurochs is canting arms: the name “Uri” was linked to ûr, the aurochs (the " +
+      "wild ox once common in the valley), so the beast’s head puns on the canton’s name.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Zug — capital of the canton of Zug, Switzerland ─────────────────────────
+  "CH-ZG": {
+    description:
+      "A horizontal triband of white, blue and white — the arms of the canton and city of Zug. The " +
+      "design descends from the arms of the Habsburgs (a silver fess on red) and of the counts of " +
+      "Lenzburg, the town’s medieval lords.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Solothurn — capital of the canton of Solothurn, Switzerland ─────────────
+  "CH-SO": {
+    description:
+      "A flag divided red over white — the colours of Saint Ursus, the patron of Solothurn, by tradition " +
+      "a soldier of the Theban Legion. The red-and-white has appeared on the city’s seal since at least " +
+      "1394.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
 };
