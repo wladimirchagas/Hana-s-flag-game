@@ -1773,4 +1773,59 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Appenzell — capital of the canton of Appenzell Innerrhoden, Switzerland ──
+  "CH-AI": {
+    description:
+      "A white field bearing an upright black bear with red claws and tongue — the arms of Appenzell. " +
+      "The bear comes from the legend of the Irish missionary Saint Gallus: rather than fight a bear he " +
+      "met in the forest, he shared his bread, and the grateful bear brought him wood to build his " +
+      "hermitage, around which the Abbey of St Gallen grew; the bear became the emblem of both St Gallen " +
+      "and Appenzell.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Schaffhausen — capital of the canton of Schaffhausen, Switzerland ────────
+  "CH-SH": {
+    description:
+      "A yellow field bearing a black ram leaping from a tower — canting arms for Schaffhausen: the ram " +
+      "for German Schaf (“ram/sheep”) and the tower for Haus (“house”). The gold-horned, crowned ram is " +
+      "an old emblem of strength and vigour.",
+    sources: [
+      { title: "Schaffhausen — Wikipedia", url: "https://en.wikipedia.org/wiki/Schaffhausen" },
+    ],
+  },
+
+  // ── Delémont — capital of the canton of Jura, Switzerland ───────────────────
+  "CH-JU": {
+    description:
+      "A red field bearing a white bishop’s crozier — the emblem of the Prince-Bishopric of Basel, which " +
+      "ruled Delémont and the Jura from the 14th century until 1815 (Delémont was a summer residence of " +
+      "the prince-bishops). The same crozier appears on the flag of the canton of Jura.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
+
+  // ── Glarus — capital of the canton of Glarus, Switzerland ───────────────────
+  "CH-GL": {
+    description:
+      "A red field bearing Saint Fridolin — the pilgrim-monk who by tradition christianised the Glarus " +
+      "valley — shown walking with his staff and Bible, in black robes with a golden halo. He is the " +
+      "only saint depicted on a Swiss cantonal flag.",
+    sources: [
+      {
+        title: "Flags and arms of cantons of Switzerland — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flags_and_arms_of_cantons_of_Switzerland",
+      },
+    ],
+  },
 };
