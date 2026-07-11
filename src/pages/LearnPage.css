@@ -239,20 +239,21 @@
   padding: 0.25rem 0.25rem 0;
 }
 
-/* === Sticky map in drill-down (sub-national) mode ==================
-   While drilled into a country, the map + its controls stay pinned to
-   the top as the user scrolls through the national / sub-national /
-   capital-city widget cards. Because the sticky element lives inside the
-   `.learn-fs` grid and the flag grid is a SIBLING rendered below it, the
-   map naturally un-sticks once the (taller) widget column ends — i.e. the
-   moment the user scrolls past the capital card and reaches the flag grid.
+/* === Sticky map (both world-map and drill-down modes) =============
+   In BOTH the world-map (non-drilldown) view and the drilled-into-a-country
+   view, the map + its controls stay pinned to the top as the user scrolls
+   through the widget/detail column and the flag grid below. Because the
+   sticky element lives inside the `.learn-fs` grid and the flag grid is a
+   SIBLING rendered below it, the map naturally un-sticks once the (taller)
+   panel column ends — i.e. the moment the user scrolls past the widget and
+   reaches the flag grid.
 
    `align-self: start` is essential on desktop: without it the map grid
    item stretches to the full (taller) row height, leaving sticky no room
    to travel. Pinning below the sticky site-topbar. A solid background +
    raised z-index keep the widget cards from bleeding through the map on
    the single-column mobile layout, where they scroll up beneath it. */
-.learn-fs--drilldown .learn-fs__map {
+.learn-fs__map {
   position: sticky;
   top: calc(3.3rem + env(safe-area-inset-top));
   align-self: start;
