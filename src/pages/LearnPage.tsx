@@ -1369,27 +1369,37 @@ export default function LearnPage() {
                       }
                     />
                   )}
-                  {subdivisionCountry.flagSvg && flagRow(
-                    <button
-                      type="button"
-                      className="learn-fs__flag"
-                      onClick={() => setZoomedFlagUrl(subdivisionCountry.flagSvg)}
-                      aria-label={`Enlarge ${subdivisionCountry.name} flag`}
-                    >
-                      <img
-                        src={subdivisionCountry.flagSvg}
-                        alt=""
-                        className="learn-fs__flag-img"
-                        draggable={false}
-                        onError={(e) => {
-                          const img = e.currentTarget;
-                          const png = `https://flagcdn.com/${subdivisionCountry.code.toLowerCase()}.png`;
-                          if (img.src !== png) img.src = png;
-                          else img.closest("button")?.remove();
-                        }}
-                      />
-                      <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-                    </button>,
+                  {subdivisionCountry.flagSvg && (
+                    /* Same structure as the primary country-widget flag block
+                       above (and the subnational/city flag boxes): wrapped in
+                       learn-fs__flag-box so the national flag here is identical
+                       in size, alignment, label and font, and carries the same
+                       "What this flag means" explainer. */
+                    <div className="learn-fs__flag-box">
+                      {flagRow(
+                        <button
+                          type="button"
+                          className="learn-fs__flag"
+                          onClick={() => setZoomedFlagUrl(subdivisionCountry.flagSvg)}
+                          aria-label={`Enlarge ${subdivisionCountry.name} flag`}
+                        >
+                          <img
+                            src={subdivisionCountry.flagSvg}
+                            alt=""
+                            className="learn-fs__flag-img"
+                            draggable={false}
+                            onError={(e) => {
+                              const img = e.currentTarget;
+                              const png = `https://flagcdn.com/${subdivisionCountry.code.toLowerCase()}.png`;
+                              if (img.src !== png) img.src = png;
+                              else img.closest("button")?.remove();
+                            }}
+                          />
+                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                        </button>,
+                      )}
+                      <FlagMeaning code={subdivisionCountry.code} />
+                    </div>
                   )}
                   {/* Subdivision info is rendered in the dedicated sub-national
                       box below — not here — so it is never shown twice. */}
