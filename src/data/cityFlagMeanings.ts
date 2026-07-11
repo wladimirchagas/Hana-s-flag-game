@@ -1586,4 +1586,88 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Edmonton — capital of Alberta, Canada ───────────────────────────────────
+  "CA-AB": {
+    description:
+      "A light-blue field with a white Canadian pale bearing the city arms; white stands for peace and " +
+      "blue for the North Saskatchewan River. On the arms, a double-winged wheel marks Edmonton as a " +
+      "centre of aviation and the “Gateway to the North” (the southern end of the wartime Alaska " +
+      "Highway); an explorer recalls its origin as a fur-trading post, and Athena, goddess of wisdom, " +
+      "its universities. Gold evokes the marigold — the city flower — sunny Alberta, and the Klondike " +
+      "Gold Rush.",
+    sources: [
+      { title: "Flag of Edmonton — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Edmonton" },
+    ],
+  },
+
+  // ── Victoria — capital of British Columbia, Canada ──────────────────────────
+  "CA-BC": {
+    description:
+      "A light-blue field with the city arms at the centre. On the arms a golden “V” for Victoria opens " +
+      "upward to suggest the city’s growth; a red inverted triangle above it is the peninsula on which " +
+      "Victoria sits, the blue the surrounding sea and a white stripe the surf of the coast. A royal " +
+      "crown honours Queen Victoria, the city’s namesake; angel supporters personify “Colonization” and " +
+      "“Civilization”, with laurel for those who have served the city.",
+    sources: [
+      {
+        title: "Flag of Victoria, British Columbia — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_Victoria,_British_Columbia",
+      },
+    ],
+  },
+
+  // ── St. John's — capital of Newfoundland and Labrador, Canada ───────────────
+  "CA-NL": {
+    description:
+      "A white field bearing the city arms, with the motto “Avancez” (French for “Advance”). The shield " +
+      "shows the Agnus Dei (the Lamb of God) with Saint George’s banner, for Saint John the Baptist, the " +
+      "city’s patron, and the ship Matthew for John Cabot’s voyage. The two mariner supporters bear the " +
+      "dates 1497 (Cabot’s landfall) and 1583 (Sir Humphrey Gilbert’s claim of Newfoundland as England’s " +
+      "first overseas colony).",
+    sources: [
+      {
+        title: "Coat of arms of St. John's, Newfoundland and Labrador — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_St._John's,_Newfoundland_and_Labrador",
+      },
+    ],
+  },
+
+  // ── Regina — capital of Saskatchewan, Canada ────────────────────────────────
+  "CA-SK": {
+    description:
+      "A horizontal bicolour of blue over gold with a royal crown at the upper hoist. Blue stands for " +
+      "the wide prairie sky and gold for the wheat fields central to the region’s economy; the crown " +
+      "marks Regina as the provincial capital and puns on its name — Regina is Latin for “queen” (the " +
+      "city was named in honour of Queen Victoria).",
+    sources: [
+      { title: "Flag of Regina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Regina" },
+    ],
+  },
+
+  // ── Charlottetown — capital of Prince Edward Island, Canada ─────────────────
+  "CA-PE": {
+    description:
+      "A banner of the city arms — a green-and-white shield charged with the coronation crown of Queen " +
+      "Charlotte, after whom the city is named — bordered on three sides with alternating green and " +
+      "white rectangles.",
+    sources: [
+      { title: "Flag of Charlottetown — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Charlottetown" },
+    ],
+  },
+
+  // ── Yellowknife — capital of the Northwest Territories, Canada ──────────────
+  "CA-NT": {
+    description:
+      "A flag bearing the city arms: a mine headframe flanked by a miner’s pick and shovel, with the " +
+      "northern lights above. The pick and shovel (and the gold colour) recall the gold-mining boom of " +
+      "the 1930s that built the town; the city’s name comes from the Yellowknives Dene, who were named " +
+      "for the copper-bladed knives they carried.",
+    sources: [
+      {
+        title: "Coat of arms of Yellowknife — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Yellowknife",
+      },
+    ],
+  },
 };
