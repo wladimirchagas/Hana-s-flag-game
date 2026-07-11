@@ -836,6 +836,45 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Belize City — capital of the Belize District, Belize ────────────────────
+  "BZ-BZ": {
+    description:
+      "A white field with red and blue waves along the base — Belize’s national colours — carrying the " +
+      "Belize City Council emblem and the motto “Government at your service”. In the emblem a house " +
+      "cradled by a pair of hands stands for community development supported by the city government, set " +
+      "beneath a ring of stars. The red, white and blue tie the city to the national flag.",
+    sources: [
+      {
+        title: "Belize City — Vexillology Wiki",
+        url: "https://vexillology.miraheze.org/wiki/Belize_City",
+      },
+      {
+        title: "Belize City (Belize) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/bz-bz-bz.html",
+      },
+    ],
+  },
+
+  // ── Dangriga — capital of the Stann Creek District, Belize ──────────────────
+  "BZ-SC": {
+    description:
+      "A black-white-yellow horizontal tricolour bearing the Dangriga Town Council seal. The three " +
+      "colours are those of the Garifuna flag — Dangriga is the cultural capital of the Garifuna (Garinagu) " +
+      "people: black for their African ancestry and the hardships they overcame, yellow for their " +
+      "Amerindian (Yellow Carib) ancestry and for hope and prosperity (the colour of the grated cassava " +
+      "used to make ereba), and white for the Europeans of their history and for the peace they sought.",
+    sources: [
+      {
+        title: "The Garifuna (Belize and Honduras) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/xh-garif.html",
+      },
+      {
+        title: "The Garifuna Flag — Warasa Garifuna Drum School",
+        url: "https://www.warasadrumschool.com/garifuna-culture/the-garifuna-flag/",
+      },
+    ],
+  },
+
   // ── Brussels — capital of Belgium ───────────────────────────────────────────
   "BE-BRU": {
     description:
