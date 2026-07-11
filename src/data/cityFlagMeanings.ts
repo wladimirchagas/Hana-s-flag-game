@@ -1106,4 +1106,73 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Brasília — capital of Brazil (Federal District) ─────────────────────────
+  "BR-DF": {
+    description:
+      "A green field bearing the golden “Cross of Brasília” — four diverging arrows radiating from the " +
+      "centre to the four cardinal points. Designed by the poet and heraldist Guilherme de Almeida and " +
+      "adopted in 1969, the arrows evoke Brazil’s indigenous heritage (the arrow being their oldest " +
+      "emblem) and the strength that spreads outward from the new capital; they also recall the crossing " +
+      "of Brasília’s Monumental and Road Axes. White stands for peace and green for the region’s forests, " +
+      "while the green and gold are Brazil’s national colours.",
+    sources: [
+      {
+        title: "Flag of the Federal District (Brazil) — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_District_(Brazil)",
+      },
+    ],
+  },
+
+  // ── São Paulo — capital of the São Paulo State, Brazil ──────────────────────
+  "BR-SP": {
+    description:
+      "A white field bearing the red Cross of the Order of Christ, with the city arms on a white " +
+      "roundel at the centre. Adopted in 1987, the flag’s cross recalls the city’s founding beside the " +
+      "Jesuit college and the Portuguese colonisation of Brazil; white stands for peace and the mixing " +
+      "of peoples, red for courage and honour. The arms — an armoured arm holding a banner — represent " +
+      "the Bandeirantes who set out from São Paulo to push Brazil’s frontiers inland, under the motto " +
+      "“Non Ducor, Duco” (“I am not led, I lead”).",
+    sources: [
+      {
+        title: "Bandeira da cidade de São Paulo — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_da_cidade_de_S%C3%A3o_Paulo",
+      },
+    ],
+  },
+
+  // ── Rio de Janeiro — capital of the Rio de Janeiro State, Brazil ────────────
+  "BR-RJ": {
+    description:
+      "A white field with two blue diagonal stripes forming the cross of Saint Andrew, and the city arms " +
+      "at the crossing. Blue and white are the traditional colours of the Portuguese monarchy, marking " +
+      "the city’s Portuguese origin. The arms centre on a Manueline armillary sphere (a symbol of the " +
+      "universe and of the age of discoveries) pierced by three arrows — the arrows that martyred Saint " +
+      "Sebastian, the city’s patron (Rio’s full name is São Sebastião do Rio de Janeiro) — topped by a " +
+      "Phrygian cap for the Republic, with silver dolphins for the maritime city. The design dates to " +
+      "1908.",
+    sources: [
+      {
+        title: "Bandeira da cidade do Rio de Janeiro — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_da_cidade_do_Rio_de_Janeiro",
+      },
+    ],
+  },
+
+  // ── Salvador — capital of the Bahia State, Brazil ───────────────────────────
+  "BR-BA": {
+    description:
+      "A royal-blue field bearing a white dove with open wings, an olive branch of three green leaves in " +
+      "its beak. The dove and olive branch — devised by the city’s founder Tomé de Sousa — allude to the " +
+      "biblical dove Noah released, which returned with an olive branch on finding dry land, casting " +
+      "Salvador as the firm ground on which the Portuguese could settle; the blue symbolises the hope " +
+      "won through the city’s many struggles. The motto reads “Sic illa ad arcam reversa est” (“thus it " +
+      "returned to the ark”).",
+    sources: [
+      {
+        title: "Bandeira de Salvador — Wikipédia",
+        url: "https://pt.wikipedia.org/wiki/Bandeira_de_Salvador",
+      },
+    ],
+  },
 };
