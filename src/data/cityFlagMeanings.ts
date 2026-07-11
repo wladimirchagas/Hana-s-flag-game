@@ -2225,6 +2225,97 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Santiago — capital of the Región Metropolitana, Chile ───────────────────
+  "CL-RM": {
+    description:
+      "Two vertical bands, blue and gold, charged with the arms of Santiago. The shield — granted by " +
+      "Emperor Charles I in 1552 — shows a lion rampant holding a drawn sword on silver, within a blue " +
+      "bordure of eight gold scallop shells. The lion honours the courage with which the settlers defended " +
+      "the city, and the scallop shells are the emblem of Saint James (Santiago), the city’s patron: it was " +
+      "founded in 1541 as Santiago de la Nueva Extremadura, named for the apostle said to have appeared in " +
+      "battle on the settlers’ side.",
+    sources: [
+      { title: "Santiago de Chile — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Santiago_de_Chile" },
+      { title: "¿Qué significa el Escudo de Santiago? — Hispanismo Chile", url: "https://hispanismo.cl/patrimonio/que-significa-el-escudo-de-santiago/" },
+    ],
+  },
+
+  // ── Valparaíso — capital of the Valparaíso Region, Chile ────── (see omitted) ─
+
+  // ── Concepción — capital of the Biobío Region, Chile ────────────────────────
+  "CL-BI": {
+    description:
+      "A gold-and-blue flag bearing the arms of Concepción, granted by royal decree on 5 April 1552: a black " +
+      "eagle on gold with a gold sun radiating over its head, a silver crescent at its feet, four gold stars " +
+      "to the sides and two branches of flowering lilies on blue. The eagle and sun stand for Emperor " +
+      "Charles V — Concepción being an imperial city “on which the sun never set”.",
+    sources: [
+      { title: "Concepción (Chile) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Concepci%C3%B3n_(Chile)" },
+      {
+        title: "El poco conocido origen e historia del escudo de armas de Concepción — Diario Concepción",
+        url: "https://www.diarioconcepcion.cl/ciudad/2018/10/16/el-poco-conocido-origen-e-historia-del-escudo-de-armas-de-concepcion.html",
+      },
+    ],
+  },
+
+  // ── La Serena — capital of the Coquimbo Region, Chile ───────────────────────
+  "CL-CO": {
+    description:
+      "A red flag bearing the arms of La Serena: a silver field with, in chief, a four-towered castle whose " +
+      "battlements spout flames, a bordure with four letters “F” and bundles of inverted arrows at the " +
+      "corners, and two griffins as supporters holding a chain. The four F’s are read as the initial of " +
+      "Felipe II (under whom the arms were granted) or of the city’s founder Francisco de Aguirre — the " +
+      "sources differ.",
+    sources: [
+      { title: "La Serena — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/La_Serena" },
+      { title: "Escudo de La Serena — Del Faro al Puerto", url: "https://delfaroalpuerto.cl/2020/03/19/escudo-de-la-serena/" },
+    ],
+  },
+
+  // ── Rancagua — capital of the O’Higgins Region, Chile ───────────────────────
+  "CL-LI": {
+    description:
+      "A white flag bearing the city seal of Rancagua. On a red field a golden eagle rises as a phoenix from " +
+      "flames, grasping the tree of liberty, flanked by two laurel branches. The arms were granted by " +
+      "Bernardo O’Higgins on 27 May 1818 to honour the town after the 1814 Battle of Rancagua: the phoenix " +
+      "reborn from its ashes is Rancagua rebuilt, and the red field is the blood its heroes shed for the " +
+      "fatherland.",
+    sources: [
+      {
+        title: "El escudo de armas que O’Higgins entregó a la “Heroica ciudad de Rancagua” — El Cachapoal",
+        url: "https://elcachapoal.cl/2014/10/01/el-escudo-de-armas-que-ohiggins-entrego-a-la-muy-heroica-ciudad-de-rancagua/",
+      },
+    ],
+  },
+
+  // ── Valdivia — capital of the Los Ríos Region, Chile ────────────────────────
+  "CL-LR": {
+    description:
+      "A white flag charged with a red saltire — a simplified Cross of Burgundy (the ragged red St Andrew’s " +
+      "cross of the Spanish Empire). Valdivia, chartered by Emperor Charles V in 1554 as the “very noble and " +
+      "very loyal” city, remained a royalist stronghold through the wars of independence, and the cross " +
+      "recalls that Hispanic loyalty.",
+    sources: [
+      { title: "Bandera de Valdivia — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Valdivia" },
+      { title: "Valdivia commune (Chile) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/cl-vld.html" },
+    ],
+  },
+
+  // ── Arica — capital of the Arica y Parinacota Region, Chile ─────────────────
+  "CL-AP": {
+    description:
+      "A dark-blue flag bearing the arms of Arica. The colonial shield — protocolised in 1657, after " +
+      "Philip II gave Arica the title of “noble, loyal and illustrious City of San Marcos de Arica” in 1570 " +
+      "— shows two crowned rampant lions guarding a central charge, a third lion below, and two towers that " +
+      "signified the town’s role in the military custody of the Spanish crown.",
+    sources: [
+      {
+        title: "El escudo de armas de la ciudad San Marcos de Arica — El Morrocotudo",
+        url: "https://www.elmorrocotudo.cl/noticia/politica/el-escudo-de-armas-de-la-ciudad-san-marcos-de-arica-analisis-del-documento-original",
+      },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
