@@ -2316,6 +2316,21 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Taipei — capital of Taiwan ──────────────────────────────────────────────
+  "CN-TW": {
+    description:
+      "The flag/emblem of Taipei is built from a brushstroke of the Chinese character 北 (běi, “north”), " +
+      "with the characters for Taipei (臺北) forming arrows that point both up and down for eternal " +
+      "prosperity; the lines crossing under the arrow stand for the modern city’s criss-crossing bridges and " +
+      "its cultural diversity. Its four colours each carry a meaning: red for enthusiasm and lively " +
+      "creativity, yellow for warmth and friendliness, green for peace, hope and care for the environment, " +
+      "and blue for reason and freedom — a modern, innovative city.",
+    sources: [
+      { title: "About the Taipei Brand Logo — Taipei Travel (official)", url: "https://www.travel.taipei/en/news/details/18830" },
+      { title: "Taipei City — Vexillology Wiki", url: "https://vexillology.miraheze.org/wiki/Taipei_City" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
