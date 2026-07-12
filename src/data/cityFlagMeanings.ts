@@ -3070,6 +3070,55 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Nuuk — capital of Greenland ─────────────────────────────────────────────
+  "DK-GL": {
+    description:
+      "A blue-and-white shield with, in the foreground, the red teachers’ college (the “red siminar”) with " +
+      "gold windows and a weathercock, and a yellow kayak paddle on the water before it; Mt Sermitsiaq rises " +
+      "behind. The red college stands for education and culture; the paddle for the Greenlanders’ hunting " +
+      "way of life and for Nuuk as the seat of Greenland; the three white waves are sea ice and the three " +
+      "blue waves the fjord; and the mountain stands for the people of Nuuk.",
+    sources: [
+      { title: "Coat of arms of Nuuk — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nuuk" },
+    ],
+  },
+
+  // ── San Francisco de Macorís — capital of Duarte province, Dominican Rep. ──
+  "DO-06": {
+    description:
+      "The city arms, first presented at a 1907 exhibition where each province was given arms for its main " +
+      "industry. Its defining charge is the cacao pod: San Francisco de Macorís, capital of Duarte province, " +
+      "is the country’s great cacao producer — the “Land of Cacao”. The design also shows the local mountain " +
+      "Loma Quita Espuela with a rising sun, and three white lilies.",
+    sources: [
+      { title: "Historia del Escudo de San Francisco de Macorís — El Jaya", url: "https://www.eljaya.com/40568/historia-del-escudo-de-san-francisco-de-macoris/" },
+    ],
+  },
+
+  // ── Santiago de los Caballeros — capital of Santiago province, Dominican Rep. ─
+  "DO-25": {
+    description:
+      "A red shield strewn with silver scallop shells (veneras) beneath a crown. The scallop is the emblem " +
+      "of Saint James the Greater (Santiago): the city, founded in 1495 as “Santiago de los Treinta " +
+      "Caballeros”, was named for the apostle and for the thirty knights of the Order of Santiago who " +
+      "settled it, and King Ferdinand granted it these arms in 1508.",
+    sources: [
+      { title: "Santiago (República Dominicana) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Santiago_(Rep%C3%BAblica_Dominicana)" },
+    ],
+  },
+
+  // ── Algiers — capital of Algeria ────────────────────────────────────────────
+  "DZ-16": {
+    description:
+      "The arms of Algiers show a fortress for the Casbah, the old citadel above the city, and a ship for " +
+      "the Algerian fleet on which the port’s life depends, flanked by two lions taken from the city’s " +
+      "historic gates. A crescent stands for Islam, the state religion, above symbols of the nation’s work — " +
+      "a sheaf of corn for agriculture and a cogwheel for industry.",
+    sources: [
+      { title: "Coat of arms of Algiers — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Algiers" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
