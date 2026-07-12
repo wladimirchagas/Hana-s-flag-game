@@ -3354,6 +3354,63 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Tallinn — capital of Estonia ────────────────────────────────────────────
+  "EE-37": {
+    description:
+      "Three blue and three white equal horizontal stripes. The blue stripes derive from the three blue " +
+      "lions of Tallinn’s (and Estonia’s) medieval arms and stand for strength and bravery; the white " +
+      "stripes stand for peace, freedom and integrity. The design served as the standard of the city’s " +
+      "medieval merchant fleet.",
+    sources: [
+      { title: "Flag of Tallinn — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tallinn" },
+    ],
+  },
+
+  // ── Tartu — capital of Tartu County, Estonia ───────────────────────────────
+  "EE-78": {
+    description:
+      "White over red, with the city arms — granted by the Polish king Stephen Báthory in 1584. The arms " +
+      "show a silver city wall with a gate and two towers on red; in the gateway a silver star above a " +
+      "chain, and over the wall crossed silver keys and a sword. The keys and sword are the attributes of " +
+      "Tartu’s patron saints Peter and Paul, and the open gate marks it as a Hanseatic trading town.",
+    sources: [
+      { title: "The Flag and the Coat of Arms of Tartu — Tartu linn", url: "https://tartu.ee/en/flag-and-coat-of-arms-of-tartu" },
+    ],
+  },
+
+  // ── Pärnu — capital of Pärnu County, Estonia ───────────────────────────────
+  "EE-67": {
+    description:
+      "A white Nordic (offset) cross on blue. The flag (approved 1934) takes the cross from the city arms, " +
+      "which descend from Pärnu’s oldest seal of 1361 showing God’s hand holding a cross and a key — the " +
+      "cross a relic said to have survived the Dome Church fire, the key the symbol of the town’s bylaws.",
+    sources: [
+      { title: "Symbols — Pärnu linn", url: "https://parnu.ee/en/home/symbols-of-parnu" },
+    ],
+  },
+
+  // ── Viljandi — capital of Viljandi County, Estonia ─────────────────────────
+  "EE-84": {
+    description:
+      "Light blue over white — the colours of the city arms, which show a white-and-gold rose on a blue " +
+      "field.",
+    sources: [
+      { title: "Viljandi, City of (Estonia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-vilja.html" },
+    ],
+  },
+
+  // ── Võru — capital of Võru County, Estonia ─────────────────────────────────
+  "EE-86": {
+    description:
+      "Yellow, green, yellow — the colours of the city arms, a green spruce on gold. Empress Catherine II " +
+      "confirmed the arms for the new county town in 1788, the spruce standing for the tree that grows " +
+      "abundantly around Võru.",
+    sources: [
+      { title: "Sümboolika — Võru linn", url: "https://www.voru.ee/sumboolika" },
+      { title: "Võru vapp — Vikipeedia (et)", url: "https://et.wikipedia.org/wiki/V%C3%B5ru_vapp" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
