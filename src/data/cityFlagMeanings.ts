@@ -3476,6 +3476,41 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Benha — capital of Qalyubia Governorate, Egypt ─────────────────────────
+  "EG-KB": {
+    description:
+      "On green, an emblem of a mosque set within a half-cogwheel above and a half-wreath of grain below — " +
+      "for the governorate’s industry (the cogwheel), the agriculture of its Nile-Delta land (the grain), " +
+      "and its religious life (the mosque).",
+    sources: [
+      { title: "al-Qalyubiyah (Governorate, Egypt) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/eg-g-qal.html" },
+    ],
+  },
+
+  // ── Kafr el-Sheikh — capital of Kafr el-Sheikh Governorate, Egypt ──────────
+  "EG-KFS": {
+    description:
+      "On turquoise — for the governorate’s Mediterranean coast — an emblem of a Pharaonic-style sailing " +
+      "ship above three wavy lines, flanked by two ears of grain. The three waves are the governorate’s " +
+      "waters (the Mediterranean, Lake Burullus and the Nile), the grain its agriculture, and the ship " +
+      "recalls the 1956 naval Battle of Burullus.",
+    sources: [
+      { title: "Flag of Kafr El Sheikh Governorate — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kafr_El_Sheikh_Governorate" },
+      { title: "Kafr el-Sheikh (Governorate, Egypt) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/eg-g-kaf.html" },
+    ],
+  },
+
+  // ── Sohag — capital of Sohag Governorate, Egypt ────────────────────────────
+  "EG-SHG": {
+    description:
+      "On dark green, the head of a pharaoh wearing the Pschent — the double crown of Upper and Lower " +
+      "Egypt — for this Upper-Egyptian governorate on the Nile.",
+    sources: [
+      { title: "Sawhaj (Governorate, Egypt) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/eg-g-saw.html" },
+      { title: "Sohag Governorate — Wikipedia", url: "https://en.wikipedia.org/wiki/Sohag_Governorate" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
