@@ -2999,6 +2999,77 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Potsdam — capital of Brandenburg, Germany ──────────────────────────────
+  "DE-BB": {
+    description:
+      "On gold, the red Brandenburg eagle (the “Märkischer Adler”) beneath a red mural crown. The eagle was " +
+      "first used as a seal by the Ascanian margrave Otto I in 1170; Potsdam was allowed the gold background " +
+      "from 1660, when it became a royal residence, to mark its special standing, and the mural crown denotes " +
+      "a city.",
+    sources: [
+      { title: "Wappen der Stadt Potsdam — Service Brandenburg", url: "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/wappen/~wappen-der-stadt-potsdam-336901" },
+    ],
+  },
+
+  // ── Schwerin — capital of Mecklenburg-Vorpommern, Germany ──────────────────
+  "DE-MV": {
+    description:
+      "Yellow-blue-yellow, bearing the city arms: on blue, a golden armoured horseman — Henry the Lion — " +
+      "riding with a lance and three-pointed pennon and a shield charged with a golden lion. Henry the Lion " +
+      "founded Schwerin in 1160, and the arms honour the founder (from a seal first attested in 1255).",
+    sources: [
+      { title: "Stadtwappen — Landeshauptstadt Schwerin", url: "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/pressestelle/stadtwappen-00001/" },
+    ],
+  },
+
+  // ── Hanover — capital of Lower Saxony, Germany ─────────────────────────────
+  "DE-NI": {
+    description:
+      "Red over white — the city colours — bearing the arms: on red, a silver wall with two towers, a golden " +
+      "lion between them and, in the open gate, a golden shield with a green cloverleaf (or Marian flower). " +
+      "The lion is that of the Welfs, the dynasty that ruled here and long held the British crown; the open " +
+      "gate stands for the trade on which the city lived. The arms are known from a seal of 1266.",
+    sources: [
+      { title: "Flagge und Wappen von Hannover — Fahnenmast.com", url: "https://www.fahnenmast.com/blog/flagge-und-wappen-von-hannover" },
+    ],
+  },
+
+  // ── Düsseldorf — capital of North Rhine-Westphalia, Germany ────────────────
+  "DE-NW": {
+    description:
+      "Red over white, bearing the city arms — on silver, the red Bergisch lion (double-tailed, blue-crowned) " +
+      "holding a blue anchor. The anchor is the city’s oldest emblem, for the citizens’ ties to Rhine " +
+      "shipping; the lion is that of the Duchy of Berg, added when Düsseldorf became the duchy’s capital in " +
+      "the 16th century.",
+    sources: [
+      { title: "Stadtwappen — Landeshauptstadt Düsseldorf", url: "https://www.duesseldorf.de/stadtarchiv/stadtgeschichte/aufsaetze/aufsaetze/stadtwappen" },
+    ],
+  },
+
+  // ── Kiel — capital of Schleswig-Holstein, Germany ──────────────────────────
+  "DE-SH": {
+    description:
+      "A red flag bearing the city arms: a silver nettle-leaf (Nesselblatt) on red with a black boat on it. " +
+      "The nettle-leaf on red comes from the Schauenburg counts of Holstein, and each Holstein town added its " +
+      "own mark — Kiel chose the boat, which stands for the city’s harbour (and, walled, for its town rights). " +
+      "Red and white were chosen as imperial colours over a lion that could read as Danish.",
+    sources: [
+      { title: "Wappen der Landeshauptstadt Kiel — Landeshauptstadt Kiel", url: "https://www.kiel.de/de/kultur_freizeit/stadtgeschichte/wappen.php" },
+      { title: "Kieler Wappen — Wikipedia (de)", url: "https://de.wikipedia.org/wiki/Kieler_Wappen" },
+    ],
+  },
+
+  // ── Saarbrücken — capital of Saarland, Germany ─────────────────────────────
+  "DE-SL": {
+    description:
+      "The city arms, formed in 1909 when Saarbrücken united three towns, combine an emblem from each: the " +
+      "red “St. Johann rose” from St. Johann, a crossed black hammer and mallet (mining) from " +
+      "Malstatt-Burbach, and the silver lion on blue of the Counts of Saarbrücken.",
+    sources: [
+      { title: "Das Wappen Saarbrückens — regionalgeschichte.net", url: "https://www.regionalgeschichte.net/saarland/saarbruecken/einzelaspekte/wappen.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
