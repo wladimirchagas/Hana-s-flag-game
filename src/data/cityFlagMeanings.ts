@@ -3511,6 +3511,61 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Albacete — capital of Albacete province, Spain ─────────────────────────
+  "ES-AB": {
+    description:
+      "A crimson field with the city arms — three silver towers set in a triangle, surmounted by a bat, " +
+      "beneath a marquis’ crown. The bat evolved from an eagle shown on the town’s 16th-century arms (the " +
+      "eagle appears by 1568); the reason for the beast is itself lost to history. Adopted 1992.",
+    sources: [
+      { title: "Bandera de Albacete — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Albacete" },
+    ],
+  },
+
+  // ── Cádiz — capital of Cádiz province, Spain ───────────────────────────────
+  "ES-CA": {
+    description:
+      "A crimson field with the city arms: Hercules in a lion skin between two lions, flanked by the two " +
+      "Pillars of Hercules inscribed PLUS and ULTRA, with the motto “Hercules Fundator Gadium " +
+      "Dominatorque”. By legend Hercules founded Cádiz and split the pillars to form the Strait of Gibraltar.",
+    sources: [
+      { title: "Escudo de Cádiz — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_C%C3%A1diz" },
+    ],
+  },
+
+  // ── Cáceres — capital of Cáceres province, Spain ───────────────────────────
+  "ES-CC": {
+    description:
+      "A party shield: on red a golden three-towered castle, and on silver a crowned rampant lion. Queen " +
+      "Isabella the Catholic ordered in 1477 that Cáceres unite the two into a single seal — the castle of " +
+      "Castile and the lion of León.",
+    sources: [
+      { title: "Escudo de Cáceres — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_C%C3%A1ceres" },
+    ],
+  },
+
+  // ── Córdoba — capital of Córdoba province, Spain ───────────────────────────
+  "ES-CO": {
+    description:
+      "A crimson field — from the “Purple Banner of Castile” whose colour the city adopted — bearing the " +
+      "city seal, a view of Córdoba from across the Guadalquivir showing the Roman bridge, the Mosque‑" +
+      "Cathedral and the Albolafia water-wheel.",
+    sources: [
+      { title: "Símbolos de Córdoba — Ayuntamiento de Córdoba", url: "https://sites.google.com/site/simbolosdecordoba/comarca-de-cordoba/cordoba" },
+    ],
+  },
+
+  // ── Granada — capital of Granada province, Spain ───────────────────────────
+  "ES-GR": {
+    description:
+      "Two vertical stripes, crimson at the mast and green, with the city arms at the centre. The red and " +
+      "green recall the Nasrid dynasty that ruled Granada; the arms show the Catholic Monarchs, Ferdinand " +
+      "and Isabella, enthroned — for the city they took in 1492. The flag was restored in 1980.",
+    sources: [
+      { title: "Bandera de Granada (España) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Granada_(Espa%C3%B1a)" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
