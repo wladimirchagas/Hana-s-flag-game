@@ -2915,6 +2915,90 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Stuttgart — capital of Baden-Württemberg, Germany ──────────────────────
+  "DE-BW": {
+    description:
+      "Black over gold, bearing the city arms — a rearing black horse on gold, the “Stuttgarter Rössle”. " +
+      "The horse is a canting device: Stuttgart grew from a stud farm and its name comes from “Stutengarten” " +
+      "(mare-garden). Black and gold are the city’s colours (the gold from the Württemberg house).",
+    sources: [
+      { title: "Flagge und Wappen von Stuttgart — Fahnenmast.com", url: "https://www.fahnenmast.com/blog/flagge-und-wappen-von-stuttgart" },
+    ],
+  },
+
+  // ── Bremen — city-state, Germany ───────────────────────────────────────────
+  "DE-HB": {
+    description:
+      "The “Speckflagge” (bacon flag): at least eight red-and-white stripes with a chequered field at the " +
+      "hoist, nicknamed for the streaky-bacon look of the stripes. The colours are those of the medieval " +
+      "imperial banner and the Hanseatic League; the Bremen key that appears with the arms is the key of " +
+      "Saint Peter, patron of Bremen Cathedral, taken from the city seal of 1366.",
+    sources: [
+      { title: "Bremer Landessymbole — Landesportal Bremen", url: "https://landesportal.bremen.de/bremer-landessymbole" },
+      { title: "Flagge Bremens — Wikipedia (de)", url: "https://de.wikipedia.org/wiki/Flagge_Bremens" },
+    ],
+  },
+
+  // ── Wiesbaden — capital of Hesse, Germany ──────────────────────────────────
+  "DE-HE": {
+    description:
+      "A blue flag with three golden lilies (two above, one below). The lilies were taken as symbols of " +
+      "Charlemagne, whom Wiesbaden’s citizens around 1500 believed had founded the city; gold on blue are " +
+      "also the colours of the Counts of Nassau. The arms were fixed in 1905.",
+    sources: [
+      { title: "Stadtwappen — Landeshauptstadt Wiesbaden", url: "https://www.wiesbaden.de/en/stadtlexikon/stadtlexikon-a-z/stadtwappen" },
+    ],
+  },
+
+  // ── Mainz — capital of Rhineland-Palatinate, Germany ───────────────────────
+  "DE-RP": {
+    description:
+      "A red flag bearing the Wheel of Mainz — two six-spoked silver wheels joined by a cross. It is the " +
+      "emblem of the Archbishopric and Electorate of Mainz, seen on coins from the 1230s. Its origin is " +
+      "uncertain; it is most often linked to Saint Martin, the patron of the city and its cathedral, who is " +
+      "shown with the two wheels on the council seal of 1300.",
+    sources: [
+      { title: "Stadtwappen — Landeshauptstadt Mainz", url: "https://www.mainz.de/kultur-und-wissenschaft/stadtgeschichte/stadtwappen.php" },
+      { title: "Mainzer Rad — Wikipedia (de)", url: "https://de.wikipedia.org/wiki/Mainzer_Rad" },
+    ],
+  },
+
+  // ── Dresden — capital of Saxony, Germany ───────────────────────────────────
+  "DE-SN": {
+    description:
+      "Black over gold, bearing the city arms — a shield split lengthwise with the black Meissen lion on the " +
+      "left and two black bars (the Landsberg pales) on the right. Both were dominion symbols of the Wettins, " +
+      "the margraves of Meissen who resided in Dresden; the pales are coloured black (rather than the blue of " +
+      "Leipzig’s) to tell the two cities apart. The arms have been used since the early 14th century.",
+    sources: [
+      { title: "Dresdner Stadtwappen — Wikipedia (de)", url: "https://de.wikipedia.org/wiki/Dresdner_Stadtwappen" },
+    ],
+  },
+
+  // ── Magdeburg — capital of Saxony-Anhalt, Germany ──────────────────────────
+  "DE-ST": {
+    description:
+      "Green over red, bearing the canting city arms of the “Maid and castle” (Magd + Burg) that voice the " +
+      "city’s name. On silver a red twin-towered castle with an open golden gate; between the towers a " +
+      "green-clad maiden holds a green wreath aloft, her loose hair and cloths marking her as a maiden and " +
+      "the wreath standing for purity. The maiden and towers give Magdeburg its colours, green and red.",
+    sources: [
+      { title: "Das Stadtwappen — Landeshauptstadt Magdeburg", url: "https://www.magdeburg.de/B%C3%BCrger-Stadt/Stadt/Stadtwappen/" },
+    ],
+  },
+
+  // ── Erfurt — capital of Thuringia, Germany ─────────────────────────────────
+  "DE-TH": {
+    description:
+      "A red flag with a silver six-spoked wheel — the “Erfurt Wheel”, taken from the Wheel of Mainz because " +
+      "Erfurt belonged to the Archbishopric of Mainz for over a thousand years (755–1802). By legend the " +
+      "humble-born archbishop Willegis, mocked with wheels chalked on his house, answered by having white " +
+      "wheels on red painted through all his rooms.",
+    sources: [
+      { title: "Warum Erfurt ein Wagenrad im Wappen trägt — Erfurt.de", url: "https://www.erfurt.de/ef/de/service/aktuelles/pm/2014/118042.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
