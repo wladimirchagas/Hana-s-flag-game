@@ -3119,6 +3119,87 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Quito — capital of Ecuador (and of Pichincha) ──────────────────────────
+  "EC-P": {
+    description:
+      "Three vertical stripes — blue, red, blue — with the city arms at the centre. Blue is the sky of " +
+      "Quito, red the blood of its people. The arms show a silver castle with three towers for the city’s " +
+      "strength, nobility and loyalty, and the golden cord of Saint Francis hangs from the staff. Made " +
+      "official in 1944.",
+    sources: [
+      { title: "Bandera de Quito — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Quito" },
+    ],
+  },
+
+  // ── Guayaquil — capital of Guayas, Ecuador ─────────────────────────────────
+  "EC-G": {
+    description:
+      "Five horizontal stripes — three light-blue alternating with two white — and three white stars on the " +
+      "central blue stripe. Adopted after the independence of 9 October 1820, the light blue stands for the " +
+      "sky and the Guayas river and the white for the peace sought; the three stars are read as the " +
+      "provinces of the old Audiencia de Quito (Guayaquil, Cuenca and Quito). The design is attributed to " +
+      "José Joaquín de Olmedo.",
+    sources: [
+      { title: "Bandera de Guayaquil — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Guayaquil" },
+    ],
+  },
+
+  // ── Cuenca — capital of Azuay, Ecuador ─────────────────────────────────────
+  "EC-A": {
+    description:
+      "Red over golden yellow. The colours echo the flag of Spain, reflecting the city’s Spanish founding; " +
+      "Cuenca first carried its own banner in 1590, for the feast of Saint James the Apostle.",
+    sources: [
+      { title: "Bandera de Cuenca (Ecuador) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Cuenca_(Ecuador)" },
+    ],
+  },
+
+  // ── Ambato — capital of Tungurahua, Ecuador ────────────────────────────────
+  "EC-T": {
+    description:
+      "Three horizontal stripes — red, green, red. The red bands stand for the rebellious spirit of the " +
+      "ambateños, the green for the countryside, its vegetation and the city’s cheer. Adopted in 1954.",
+    sources: [
+      { title: "Bandera de Ambato — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Ambato" },
+    ],
+  },
+
+  // ── Loja — capital of Loja province, Ecuador ───────────────────────────────
+  "EC-L": {
+    description:
+      "Five horizontal stripes alternating red, blue and yellow, with the city arms at the centre — the " +
+      "colours of the arms granted to the “very noble and very loyal” city by Philip II in 1571. Red is the " +
+      "loyalty and sacrifice of the lojanos in the colonial expeditions toward the Amazon, yellow the “city " +
+      "of gold” and the land’s riches, and silvery blue the Zamora and Malacatos rivers that flow to the " +
+      "Amazon.",
+    sources: [
+      { title: "Símbolos patrios — Municipio de Loja", url: "https://www.loja.gob.ec/contenido/simbolos-patrios" },
+      { title: "Bandera de Loja (Ecuador) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Loja_(Ecuador)" },
+    ],
+  },
+
+  // ── Riobamba — capital of Chimborazo, Ecuador ──────────────────────────────
+  "EC-H": {
+    description:
+      "Divided along the diagonal — red above, blue below. Red stands for the greatness of the riobambeño " +
+      "people, ready to shed their blood; blue for the Ecuadorian sky and the ideal of liberty. Defined in " +
+      "1958.",
+    sources: [
+      { title: "Bandera de Riobamba — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Riobamba" },
+    ],
+  },
+
+  // ── Ibarra — capital of Imbabura, Ecuador ──────────────────────────────────
+  "EC-I": {
+    description:
+      "Red over white, with the city arms at the centre. The colours come from the royal standard of the " +
+      "city’s founder Miguel de Ibarra and the House of Austria, and stand for valour and purity. The design " +
+      "dates to 1607 and was made official in 1951.",
+    sources: [
+      { title: "La bandera y el escudo atesoran el origen de Ibarra — La Hora", url: "https://www.lahora.com.ec/imbabura-carchi/bandera-escudo-ibarra-significado/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
