@@ -2841,6 +2841,80 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Prague — capital of Czechia (and seat of the Central Bohemian Region) ──
+  "CZ-ST": {
+    description:
+      "Two horizontal stripes, gold over red, taken from the city arms. The arms show, on red, a golden town " +
+      "wall with an open gate and raised portcullis and three golden towers, with a silver armoured arm " +
+      "holding a sword emerging from the gate. Emperor Frederick III changed the Old Town’s silver walls to " +
+      "gold as a reward for loyalty, and the sword-arm was added by Ferdinand III in 1649 for the city’s " +
+      "heroic defence against the Swedish siege.",
+    sources: [
+      { title: "Vlajka hlavního města Prahy — Wikipedie (cs)", url: "https://cs.wikipedia.org/wiki/Vlajka_hlavn%C3%ADho_m%C4%9Bsta_Prahy" },
+      { title: "Znak hlavního města Prahy — Wikipedie (cs)", url: "https://cs.wikipedia.org/wiki/Znak_hlavn%C3%ADho_m%C4%9Bsta_Prahy" },
+    ],
+  },
+
+  // ── Brno — capital of the South Moravian Region, Czechia ───────────────────
+  "CZ-JM": {
+    description:
+      "Four horizontal stripes — white, red, white, red (the top white stripe half-width) — from the city " +
+      "arms, one of the oldest municipal arms in Czechia (on a seal from 1315). By one reading the stripes " +
+      "picture the confluence of the Svitava and Svratka rivers south of the city, the narrower Svitava " +
+      "shown as the half-width stripe.",
+    sources: [
+      { title: "Znak města Brna — Wikipedie (cs)", url: "https://cs.wikipedia.org/wiki/Znak_m%C4%9Bsta_Brna" },
+    ],
+  },
+
+  // ── České Budějovice — capital of the South Bohemian Region, Czechia ───────
+  "CZ-JC": {
+    description:
+      "Two horizontal stripes, gold over red — one of the oldest documented flags in Bohemia (first " +
+      "mentioned in 1401). The colours are taken from the city arms: a red shield with a silver crenellated " +
+      "wall and three silver towers with golden roofs, and on the middle tower a red shield with the silver " +
+      "Bohemian lion.",
+    sources: [
+      { title: "Symboly města — Statutární město České Budějovice", url: "https://www.c-budejovice.cz/symboly-mesta" },
+      { title: "Vlajka Českých Budějovic — Wikipedie (cs)", url: "https://cs.wikipedia.org/wiki/Vlajka_%C4%8Cesk%C3%BDch_Bud%C4%9Bjovic" },
+    ],
+  },
+
+  // ── Hradec Králové — capital of the Hradec Králové Region, Czechia ─────────
+  "CZ-KR": {
+    description:
+      "The flag’s colours come from the city arms — a red shield with a silver crowned double-tailed lion " +
+      "holding a golden letter G. The lion is the Bohemian lion; the G (from the German Grätz / Hradec) has " +
+      "marked the city since the Middle Ages; and “Králové” (“of the Queen”) recalls that Hradec Králové was " +
+      "one of the dower towns of the Bohemian queens.",
+    sources: [
+      { title: "Znak města — Statutární město Hradec Králové", url: "https://www.hradeckralove.org/znak-mesta/d-54292" },
+    ],
+  },
+
+  // ── Karlovy Vary — capital of the Karlovy Vary Region, Czechia ─────────────
+  "CZ-KA": {
+    description:
+      "White over red, bearing the city arms: a silver crowned double-tailed Bohemian lion rising from three " +
+      "silver wavy bars that stand for the town’s thermal springs. The spa was founded by and named after " +
+      "Emperor Charles IV (“Charles’ Baths”), who by legend found the hot springs during a hunt — hence the " +
+      "royal lion above the waters.",
+    sources: [
+      { title: "Symbolika Karlovarského kraje — Karlovarský kraj", url: "https://www.kr-karlovarsky.cz/karlovarsky-kraj/symboly-zastity/symbolika-karlovarskeho-kraje" },
+    ],
+  },
+
+  // ── Ústí nad Labem — capital of the Ústí nad Labem Region, Czechia ─────────
+  "CZ-US": {
+    description:
+      "Red, white, red, from the city arms — a red shield with a silver lion adorned with two golden knots. " +
+      "King Vladislav II confirmed the arms in 1476, upgrading the earlier green shield to red (a higher " +
+      "heraldic rank); the flag itself dates from 1990.",
+    sources: [
+      { title: "Symboly Ústeckého kraje — Wikipedie (cs)", url: "https://cs.wikipedia.org/wiki/Symboly_%C3%9Asteck%C3%A9ho_kraje" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
