@@ -457,7 +457,19 @@
 .learn-fs__panel-wrap {
   grid-area: panel;
   position: relative;
-  z-index: 5;
+  /* MUST NOT set a z-index here. A positioned z-index makes this wrap a
+     stacking context, which TRAPS every overlay the panel renders —
+     the country-picker's full-screen modal (.dropdown-modal, z-index 60),
+     its desktop suggestion list (.dropdown-list, z-index 10) and the anthem
+     player modal (.anthem-modal, z-index 200) — INSIDE this context. Because
+     the sticky map (.learn-fs__map) sits at z-index 6 in the same parent, the
+     whole trapped context (and thus those overlays, however high their own
+     z-index) then paints BEHIND the map: on the single-column mobile layout
+     the picker modal's header/search rendered under the map and the dropdown
+     looked "hidden behind the world map" (reported 2026-07). With no z-index
+     here the wrap is z:auto, so the map (z:6) still covers normal panel cards
+     that scroll up beneath it, while the fixed/absolute overlays reach the
+     root stacking context and paint above the map as intended. */
   align-self: start;
   display: flex;
   flex-direction: column;
