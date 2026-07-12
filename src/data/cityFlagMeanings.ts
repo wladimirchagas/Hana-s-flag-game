@@ -3278,6 +3278,82 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Guaranda — capital of Bolívar province, Ecuador ────────────────────────
+  "EC-B": {
+    description:
+      "Three horizontal stripes — red, white, blue. Red is strength and the valiant character of the people " +
+      "and the sacrifice of their heroes; white is dignity, honesty, justice and peace; blue is the wide " +
+      "horizon and the sky of noble hopes, reflected in the rivers that water the Bolívar countryside. Made " +
+      "official in 1984.",
+    sources: [
+      { title: "Símbolos Cívicos del cantón Guaranda — GAD Guaranda", url: "https://www.guaranda.gob.ec/newsiteCMT/simbolos-civicos-del-canton-guaranda/" },
+    ],
+  },
+
+  // ── Azogues — capital of Cañar, Ecuador ────────────────────────────────────
+  "EC-F": {
+    description:
+      "Three horizontal stripes — red, white, green — with the city arms. Red stands for valour, white for " +
+      "integrity and purity, and green for hope and service. Adopted in 1948.",
+    sources: [
+      { title: "Bandera de Azogues — GAD Municipal de Azogues", url: "https://www.azogues.gob.ec/portal/index.php/azogues/s%C3%ADmbolos-cantonales/26-bandera-de-azogues" },
+    ],
+  },
+
+  // ── Puerto Francisco de Orellana (Coca) — capital of Orellana, Ecuador ─────
+  "EC-D": {
+    description:
+      "A yellow triangle at the hoist with green (upper) and black (lower) bands. Yellow stands for the " +
+      "richness of the canton’s soil, black for the oil wealth of the Amazonian subsoil, and green for the " +
+      "great plant biodiversity and forest and farm richness of the Amazon — and the hope of better days.",
+    sources: [
+      { title: "Historia y Símbolos — GAD Municipal de Francisco de Orellana", url: "https://orellana.gob.ec/historia_simbolos/" },
+    ],
+  },
+
+  // ── Tena — capital of Napo, Ecuador ────────────────────────────────────────
+  "EC-N": {
+    description:
+      "Gold over green, with the city arms. Gold stands for the region’s gold wealth, green for the " +
+      "abundant, rich flora of the canton.",
+    sources: [
+      { title: "Símbolos del Cantón — GAD Municipal de Tena", url: "https://tena.gob.ec/index.php/tena/simbolos-del-canton" },
+    ],
+  },
+
+  // ── Macas — capital of Morona Santiago, Ecuador ────────────────────────────
+  "EC-S": {
+    description:
+      "A green band over a white band, with a white canton at the hoist bearing a gold star. Green stands " +
+      "for the vegetal wealth and greenness of the Upano Valley, the gold star for the Virgen Purísima de " +
+      "Macas (the city’s patroness), and white for the purity, serenity and peace of the people of Morona.",
+    sources: [
+      { title: "Símbolos del Cantón Morona — Cultura Macabea", url: "http://culturamacabea.blogspot.com/2010/12/simbolos-del-canton-morona.html" },
+    ],
+  },
+
+  // ── Nueva Loja (Lago Agrio) — capital of Sucumbíos, Ecuador ────────────────
+  "EC-U": {
+    description:
+      "Three horizontal stripes — light blue, white and green. The light blue stands for the canton’s " +
+      "rivers, the white (with seven black stars for the canton’s parishes) for the community, and the green " +
+      "for the exuberant Amazon jungle.",
+    sources: [
+      { title: "Bandera de Lago Agrio — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Lago_Agrio" },
+    ],
+  },
+
+  // ── Puyo — capital of Pastaza, Ecuador ─────────────────────────────────────
+  "EC-Y": {
+    description:
+      "A flag of four colours — green, white, blue and yellow. Green is the exuberant Amazon vegetation, " +
+      "white the mist that wraps the city, blue (in curves) the river that bathes it, and yellow the wealth " +
+      "of the land.",
+    sources: [
+      { title: "Bandera — Municipio de Pastaza (Puyo)", url: "https://puyo.gob.ec/articulo-tag/bandera/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
