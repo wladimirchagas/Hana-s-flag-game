@@ -2731,6 +2731,44 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Havana — capital of Cuba ────────────────────────────────────────────────
+  "CU-03": {
+    description:
+      "A blue field with a yellow border, bearing the city arms. The shield, granted by royal decree in " +
+      "1665, shows three silver castles — the fortresses that guarded the port (La Fuerza, El Morro and La " +
+      "Punta) — and a golden key on blue, for Havana as the “Key to the Gulf of Mexico”.",
+    sources: [
+      { title: "Bandera de La Habana — EcuRed", url: "https://www.ecured.cu/Bandera_de_La_Habana" },
+      { title: "Escudo de La Habana — EcuRed", url: "https://www.ecured.cu/Escudo_de_La_Habana" },
+    ],
+  },
+
+  // ── Santa Clara — capital of Villa Clara, Cuba ─────────────────────────────
+  "CU-05": {
+    description:
+      "Three horizontal stripes — blue, white and red — with the city arms at the centre. The shield, under " +
+      "a mural crown, shows in its upper half a hill and cay (where the families from Remedios came to found " +
+      "the town) with the city key, and in its lower half a bohío (a traditional hut) and a tamarind tree; " +
+      "its motto reads “Patria, Prosperidad, Familia”.",
+    sources: [
+      { title: "Símbolos municipales — Portal del Ciudadano Mi Santa Clara", url: "https://www.misantaclara.gob.cu/nuestra-region/region-cizq/simbolos-municipales" },
+    ],
+  },
+
+  // ── Cienfuegos — capital of Cienfuegos province, Cuba ──────────────────────
+  "CU-06": {
+    description:
+      "Three vertical stripes — blue, white, red — recalling the French flag and the French origin of the " +
+      "founders of the colony of Fernandina de Jagua. A white cross on the blue stripe stands for " +
+      "Christianity and the city’s patroness, the Immaculate Conception; the white stripe carries the city " +
+      "arms with the motto “Fe, Trabajo y Unión” (Faith, Work and Union); and a white five-pointed star sits " +
+      "on the red.",
+    sources: [
+      { title: "Símbolos locales: La bandera de Cienfuegos — 5 de Septiembre", url: "https://www.5septiembre.cu/simbolos-locales-la-bandera-de-cienfuegos/" },
+      { title: "Atributos locales de Cienfuegos — EcuRed", url: "https://www.ecured.cu/Atributos_locales_de_Cienfuegos" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
