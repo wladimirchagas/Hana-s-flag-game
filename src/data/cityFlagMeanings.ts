@@ -3200,6 +3200,84 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Machala — capital of El Oro, Ecuador ───────────────────────────────────
+  "EC-O": {
+    description:
+      "Three horizontal bands: light blue on top, white in the middle, and the lower band split green (hoist) " +
+      "and red (fly). Light blue is the sky and sea, white the purity and peace of the machaleños, green the " +
+      "greenness of the fields and their hope, and red the blood of the city’s people. Adopted in 1949.",
+    sources: [
+      { title: "Bandera de Machala — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Machala" },
+    ],
+  },
+
+  // ── Portoviejo — capital of Manabí, Ecuador ────────────────────────────────
+  "EC-M": {
+    description:
+      "A flag quartered into four panels. The upper hoist repeats the light-blue-and-white of Guayaquil’s " +
+      "flag (without its stars), honouring Guayaquil’s lead in the 1820 independence that Portoviejo joined; " +
+      "the upper fly is green for the valley’s exuberance; the lower hoist is red for the blood of local and " +
+      "national heroes; and the lower fly is white for the nobility and purity of the city’s people. Created " +
+      "in 1968.",
+    sources: [
+      { title: "Bandera de Portoviejo — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Portoviejo" },
+    ],
+  },
+
+  // ── Esmeraldas — capital of Esmeraldas province, Ecuador ───────────────────
+  "EC-E": {
+    description:
+      "White over emerald green. White is the whiteness of the clouds that play in the wide sky, and the " +
+      "emerald green the fresh colour of the region’s rich, fertile fields and pastures.",
+    sources: [
+      { title: "Bandera de Esmeraldas (Ecuador) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Esmeraldas_(Ecuador)" },
+    ],
+  },
+
+  // ── Babahoyo — capital of Los Ríos, Ecuador ────────────────────────────────
+  "EC-R": {
+    description:
+      "A green field with a white diamond bearing the city arms. Green stands for the canton’s crops, " +
+      "vegetation and land; the white diamond for the peace and harmony of the city. Adopted in 1948.",
+    sources: [
+      { title: "Bandera de Babahoyo — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Babahoyo" },
+    ],
+  },
+
+  // ── Latacunga — capital of Cotopaxi, Ecuador ───────────────────────────────
+  "EC-X": {
+    description:
+      "Yellow over light blue, with the city arms. Taken from Ecuador’s national colours, they are read as " +
+      "Peace and Wealth, Spirituality and Beauty. Approved in 1972.",
+    sources: [
+      { title: "Ordenanza — Bandera de la ciudad de Latacunga (GAD Latacunga)", url: "https://latacunga.gob.ec/images/pdf/Ordenanzas/1_4_ordenanza_bandera_de_la_ciudad.pdf" },
+    ],
+  },
+
+  // ── Tulcán — capital of Carchi, Ecuador ────────────────────────────────────
+  "EC-C": {
+    description:
+      "Blue over red, with the national emblem in the upper hoist. Blue is the clear Ecuadorian sky, as wide " +
+      "as the ideal of liberty Tulcán has always upheld; red is the greatness of a proud people who shed " +
+      "their blood for independence and democracy. Adopted in 1949.",
+    sources: [
+      { title: "Bandera de Tulcán — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Tulc%C3%A1n" },
+    ],
+  },
+
+  // ── Santo Domingo — capital of Santo Domingo de los Tsáchilas, Ecuador ─────
+  "EC-SD": {
+    description:
+      "Red and green fields divided by a black-and-white diagonal cross, bearing the city arms. The colours " +
+      "are those of the traditional Tsáchila “manpe tsanpá” body-painting: red for fire, the blood of the " +
+      "ancestors and the achiote dye, and green for the lush region, nature’s renewal and hope. Defined in " +
+      "1969.",
+    sources: [
+      { title: "Bandera de Santo Domingo (Ecuador) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Santo_Domingo_(Ecuador)" },
+      { title: "Símbolos — Prefectura de Santo Domingo de los Tsáchilas", url: "https://gptsachila.gob.ec/simbolos/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
