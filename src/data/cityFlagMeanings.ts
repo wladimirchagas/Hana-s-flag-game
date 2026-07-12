@@ -2769,6 +2769,78 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Ostrava — capital of the Moravian-Silesian Region, Czechia ─────────────
+  "CZ-MO": {
+    description:
+      "A blue flag bearing a leaping white (silver) horse with a red saddle-cloth under a gold saddle, and a " +
+      "gold rose. The horse is often linked to Ostrava’s position on the old Amber Road trade route (or " +
+      "taken from the arms of the town’s first reeve); the gold rose was added under the Olomouc bishop " +
+      "Stanislav Thurzo (1497–1560). Blue and white are the city’s colours.",
+    sources: [
+      { title: "Znak města Ostravy — Statutární město Ostrava", url: "https://ostrava.cz/cs/o-meste/znak-mesta-ostravy" },
+      { title: "Vlajka Ostravy — Wikipedie (cs)", url: "https://cs.wikipedia.org/wiki/Vlajka_Ostravy" },
+    ],
+  },
+
+  // ── Olomouc — capital of the Olomouc Region, Czechia ───────────────────────
+  "CZ-OL": {
+    description:
+      "A blue flag bearing the crowned red-and-silver chequered eagle of Moravia and the gold letters " +
+      "S · P · Q · O. Olomouc was the historic Moravian capital, so it carries the Moravian eagle; the " +
+      "letters stand for Senatus Populusque Olomucensis (“the Senate and People of Olomouc”), added to the " +
+      "arms by Maria Theresa in 1758 to honour the citizens’ resistance during the Prussian sieges.",
+    sources: [
+      { title: "Znak a vlajka — Statutární město Olomouc / Wikipedie (cs)", url: "https://cs.wikipedia.org/wiki/Znak_a_vlajka_Olomouce" },
+    ],
+  },
+
+  // ── Pardubice — capital of the Pardubice Region, Czechia ───────────────────
+  "CZ-PA": {
+    description:
+      "A red flag bearing the front half of a leaping silver horse with a gold bridle — the arms of the " +
+      "Lords of Pardubice, used since the 16th century. By the old heraldic legend, Ješek of Pardubice had " +
+      "his horse severed in half by a portcullis during a 1158 night assault on Milan and carried the half " +
+      "away, earning the half-horse arms for his bravery; the horse stands for strength and endurance and " +
+      "the white horse for victorious peace.",
+    sources: [
+      { title: "Znak města — Parpedie / Statutární město Pardubice", url: "http://www.parpedie.cz/cti-zaznam.php?id=Znak_mesta" },
+    ],
+  },
+
+  // ── Jihlava — capital of the Vysočina Region, Czechia ──────────────────────
+  "CZ-VY": {
+    description:
+      "A flag divided per bend, white with a red hedgehog above and red with the crowned Bohemian lion " +
+      "below. As the oldest royal mining town, Jihlava bears the royal lion; the hedgehog is a canting " +
+      "device — the town’s German name Iglau was read from Igel, “hedgehog” — and the hedgehog has become " +
+      "the city’s emblem.",
+    sources: [
+      { title: "Znak a symbol města Jihlavy — Statutární město Jihlava", url: "https://www.jihlava.cz/znak-a-symbol-mesta-jihlavy/d-517486" },
+    ],
+  },
+
+  // ── Zlín — capital of the Zlín Region, Czechia ─────────────────────────────
+  "CZ-ZL": {
+    description:
+      "Five horizontal stripes — blue, yellow, blue, yellow, blue — with a yellow eight-pointed star on the " +
+      "wider central blue stripe. The star is taken from the city arms, which show a golden timber tower with " +
+      "an open gate on a green lawn beneath a golden eight-pointed star, on blue.",
+    sources: [
+      { title: "Symboly a ocenění města — Statutární město Zlín", url: "https://www.zlin.eu/symboly-a-oceneni-mesta" },
+    ],
+  },
+
+  // ── Liberec — capital of the Liberec Region, Czechia ───────────────────────
+  "CZ-LI": {
+    description:
+      "Two horizontal stripes, red over white, taken from the city arms: a silver shield with a red town " +
+      "wall of two towers, an open gate and a portcullis, and above the gate the Redern family shield and a " +
+      "lion. Red and white have been Liberec’s colours since the early 19th century.",
+    sources: [
+      { title: "O vlajce města Liberce — Muzeum Libea", url: "https://www.muzeum-libea.cz/vlajky-a-prapory/o-vlajce-mesta-liberce/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
