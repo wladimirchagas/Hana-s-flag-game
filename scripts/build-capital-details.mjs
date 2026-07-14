@@ -161,6 +161,8 @@ const CAPITAL_FLAG_SOURCE_OVERRIDES = {
   "AU-WA": "Flag of Perth.svg", // Perth (Western Australia) — official City of Perth flag (St George cross + black swan; perth.wa.gov.au); no P41
   "AU-NT": "Flag of Darwin.svg", // Darwin (Northern Territory) — City of Darwin flag (arms on green/white/red); no P41
   "MY-01": "Flag of Johor Bahru.svg", // Johor Bahru — official Johor Bahru City Council flag (horizontal red/white/blue tricolour with a yellow crescent and star), owner-confirmed against FOTW (crwflags.com/fotw/flags/my-j-jbc.html). Pinned because the earlier correction pointed at "Flag of Johor Bahru, Johor.svg", which is the Johor STATE flag, not the city's.
+  "MY-14": "Flag of Kuala Lumpur, Malaysia.svg", // Kuala Lumpur (Federal Territory) — official DBKL city flag adopted 14 May 1990 (blue central band with a yellow crescent + 14-pointed star, red/white stripes on white above and below). NOT the national flag (blue is the dominant field). Ref: en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Kuala_Lumpur.
+  "MY-16": "Flag of Putrajaya.svg", // Putrajaya (Federal Territory) — official city flag: three vertical bands blue/yellow(double-width)/blue with the Malaysian coat of arms in the yellow band. Ref: en.wikipedia.org/wiki/Flag_of_the_Federal_Territories.
 };
 
 const yearOf = (iso) => {

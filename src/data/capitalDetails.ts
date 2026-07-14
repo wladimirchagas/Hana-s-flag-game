@@ -2362,7 +2362,9 @@ export const CAPITAL_DETAILS: Readonly<Record<string, CapitalDetail>> = {
   "MY-11": {"name":"Kuala Terengganu","population":255109,"year":2000,"basis":"estimate"},
   "MY-12": {"name":"Kota Kinabalu"},
   "MY-13": {"name":"Kuching","population":325132,"year":2010,"basis":"estimate"},
+  "MY-14": {"name":"Kuala Lumpur"},
   "MY-15": {"name":"Victoria","population":54162,"year":2000,"basis":"estimate"},
+  "MY-16": {"name":"Putrajaya"},
 
   // ── MZ ──
   "MZ-A": {"name":"Lichinga","population":142253,"year":2007,"basis":"estimate"},

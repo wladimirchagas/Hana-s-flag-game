@@ -3616,4 +3616,48 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       { title: "Bendera Sabah — Wikipedia Bahasa Melayu", url: "https://ms.wikipedia.org/wiki/Bendera_Sabah" },
     ],
   },
+
+  // ── Kuala Lumpur — capital of the Federal Territory of Kuala Lumpur and of Malaysia ──
+  "MY-14": {
+    description:
+      "A white field crossed by a broad blue horizontal band through the centre, with three red stripes " +
+      "on the white above the band and three on the white below it; in the blue band at the hoist sit a " +
+      "yellow crescent and a yellow fourteen-pointed star. Adopted on 14 May 1990 to mark the centenary " +
+      "of Kuala Lumpur City Hall (DBKL) as the city’s local authority, it was designed by DBKL architect " +
+      "Azmi Ahmad Termizi as a distinct variant of Malaysia’s national flag, the Jalur Gemilang. " +
+      "According to the Malaysian Ministry of Information the colours stand for: red — the city’s courage " +
+      "and strength; blue — the unity of its multiracial citizens; yellow — sovereignty; and white — " +
+      "cleanliness and beauty. The crescent and the fourteen-pointed star are carried over from the " +
+      "national flag, where they represent Islam and the unity of the thirteen states with the federal " +
+      "government.",
+    sources: [
+      {
+        title: "Flag and coat of arms of Kuala Lumpur — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Kuala_Lumpur",
+      },
+    ],
+  },
+
+  // ── Putrajaya — capital of the Federal Territory of Putrajaya (federal administrative capital) ──
+  "MY-16": {
+    description:
+      "Three vertical bands — blue, a double-width yellow centre, and blue — bearing the coat of arms of " +
+      "Malaysia in the yellow band. The blue-and-yellow scheme is that of Malaysia’s Federal Territories, " +
+      "in which blue stands for unity, sincerity and harmony and yellow for respect, sovereignty and " +
+      "honour (yellow being the royal colour of the Malay rulers). Placing the federal arms — a shield " +
+      "upheld by two tigers, ensigned with a yellow crescent and fourteen-pointed federal star above a " +
+      "banner reading “Bersekutu Bertambah Mutu” (“Unity is Strength”) — at the flag’s centre marks " +
+      "Putrajaya as the nation’s federal administrative capital; the crescent and star again represent " +
+      "Islam and the Malay monarchy.",
+    sources: [
+      {
+        title: "Flag of the Federal Territories — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_Territories",
+      },
+      {
+        title: "Coat of arms of Malaysia — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia",
+      },
+    ],
+  },
 };

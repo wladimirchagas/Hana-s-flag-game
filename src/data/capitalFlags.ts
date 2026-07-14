@@ -1033,6 +1033,8 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "MY-10": "capital-flags/my-10.png",
   "MY-11": "capital-flags/my-11.svg",
   "MY-12": "capital-flags/my-12.svg",
+  "MY-14": "capital-flags/my-14.svg",
+  "MY-16": "capital-flags/my-16.svg",
 
   // ── MZ ──
   "MZ-L": "capital-flags/mz-l.png",
