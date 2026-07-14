@@ -3514,11 +3514,15 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
-      "A dark-blue field with a red panel bearing a white crescent and a white five-pointed star — the " +
-      "flag of the state of Johor, whose capital is Johor Bahru. The crescent denotes Islam and the star " +
-      "the state’s sovereign ruler (the Sultan); the red stands for the bravery of the warriors and " +
-      "followers who opened and built the state, and the dark blue for the sea.",
+      "The flag of the Johor Bahru City Council (Majlis Bandaraya Johor Bahru): a horizontal tricolour " +
+      "of red over white over blue, with a yellow crescent and five-pointed star centred on the white " +
+      "band. The crescent and star are the emblem of Islam, the state religion of Johor, whose capital " +
+      "the city is.",
     sources: [
+      {
+        title: "Johor Bahru City Council (Johore, Malaysia) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/my-j-jbc.html",
+      },
       {
         title: "Flag and coat of arms of Johor — Wikipedia",
         url: "https://en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Johor",

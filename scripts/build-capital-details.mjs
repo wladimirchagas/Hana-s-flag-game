@@ -160,7 +160,7 @@ const CAPITAL_FLAG_SOURCE_OVERRIDES = {
   "AU-NSW": "Flag of the City of Sydney.svg", // Sydney (New South Wales) — City of Sydney banner of arms; the "Sydney" item has no P41
   "AU-WA": "Flag of Perth.svg", // Perth (Western Australia) — official City of Perth flag (St George cross + black swan; perth.wa.gov.au); no P41
   "AU-NT": "Flag of Darwin.svg", // Darwin (Northern Territory) — City of Darwin flag (arms on green/white/red); no P41
-  "MY-01": "Flag of Johor Bahru, Johor.svg", // Johor Bahru — owner-confirmed correct flag (blue/red diagonal, white crescent/star, from the Johor District administration); the capital item's P41 points to a DIFFERENT, wrong file (Flag of Johor Bahru.svg)
+  "MY-01": "Flag of Johor Bahru.svg", // Johor Bahru — official Johor Bahru City Council flag (horizontal red/white/blue tricolour with a yellow crescent and star), owner-confirmed against FOTW (crwflags.com/fotw/flags/my-j-jbc.html). Pinned because the earlier correction pointed at "Flag of Johor Bahru, Johor.svg", which is the Johor STATE flag, not the city's.
 };
 
 const yearOf = (iso) => {
