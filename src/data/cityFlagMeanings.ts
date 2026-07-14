@@ -3608,6 +3608,86 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Alicante — capital of Alicante province, Spain ─────────────────────────
+  "ES-A": {
+    description:
+      "Divided vertically, white at the mast and blue at the fly, with the city arms in the centre. It began " +
+      "as an 1845 naval signal flag and was adopted by the city in 1893; blue stands for justice and " +
+      "loyalty, white for purity. The arms show the golden castle of Santa Bárbara on Mount Benacantil, the " +
+      "white rock (Greek “Akra Leuka”) beaten by the blue sea.",
+    sources: [
+      { title: "La bandera de Alicante — Ayuntamiento de Alicante", url: "https://www.alicante.es/es/contenidos/bandera-alicante" },
+    ],
+  },
+
+  // ── Almería — capital of Almería province, Spain ───────────────────────────
+  "ES-AL": {
+    description:
+      "A white field with the red cross of Saint George and the city arms. The cross comes from the Genoese " +
+      "banner — Genoa’s fleet helped Alfonso VII take Almería in 1147 — and the city kept it after the " +
+      "Catholic Monarchs’ reconquest in 1489; the arms’ quarters honour the kingdoms that shared in the " +
+      "conquest (Castile, León, Aragón, Navarre and Granada).",
+    sources: [
+      { title: "Bandera de Almería — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Almer%C3%ADa" },
+    ],
+  },
+
+  // ── Ávila — capital of Ávila province, Spain ───────────────────────────────
+  "ES-AV": {
+    description:
+      "A crimson field with the city arms — a golden castle from which the young King Alfonso VII looks out, " +
+      "with the motto “Ávila del Rey” recalling the city’s loyalty to that king in his minority. The arms " +
+      "were granted around 1130–1135; the crimson stands for the blood of the city’s defenders.",
+    sources: [
+      { title: "Escudo de Ávila — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_%C3%81vila" },
+    ],
+  },
+
+  // ── Badajoz — capital of Badajoz province, Spain ───────────────────────────
+  "ES-BA": {
+    description:
+      "A crimson field — the colour of the Kingdom of León, into which Badajoz was incorporated in 1230 — " +
+      "with the city arms: a golden lion (the emblem of León, granted by Alfonso IX), a silver column " +
+      "bearing “PLUS ULTRA” (for the frontier city, granted under Charles I), and three silver waves for the " +
+      "Guadiana river.",
+    sources: [
+      { title: "Bandera de la Ciudad de Badajoz — Ayuntamiento de Badajoz", url: "https://www.aytobadajoz.es/es/ayto/bandera" },
+    ],
+  },
+
+  // ── Bilbao — capital of Biscay, Spain ──────────────────────────────────────
+  "ES-BI": {
+    description:
+      "A white flag with a red square in the upper hoist. It is an old distinguishing flag of Bilbao’s " +
+      "merchant ships, taken up by the town and its council in 1845.",
+    sources: [
+      { title: "La bandera de Bilbao — Periódico Bilbao", url: "https://periodicobilbao.com/bandera-bilbao/" },
+    ],
+  },
+
+  // ── Burgos — capital of Burgos province, Spain ─────────────────────────────
+  "ES-BU": {
+    description:
+      "Two horizontal stripes, red over brown, with the city arms in the centre. The arms show, on green, " +
+      "the crowned bust of King Ferdinand III in a purple mantle charged with three golden castles, flanked " +
+      "by two shields of gold castles above a gate between two towers.",
+    sources: [
+      { title: "Escudo — Ayuntamiento de Burgos", url: "https://www.aytoburgos.es/escudo-e-himno/-/asset_publisher/5USVljaB20f0/content/id/477891" },
+    ],
+  },
+
+  // ── Cuenca — capital of Cuenca province, Spain ─────────────────────────────
+  "ES-CU": {
+    description:
+      "A red field with a golden chalice and an eight-pointed white star beneath a royal crown. The arms " +
+      "recall the reconquest of Cuenca by Alfonso VIII in 1177: the star for the start of the siege on 6 " +
+      "January (Epiphany), and the chalice of Saint Matthew for the city’s fall on 21 September, the saint’s " +
+      "feast day.",
+    sources: [
+      { title: "Escudo de Cuenca — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Cuenca" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
