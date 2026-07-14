@@ -167,6 +167,28 @@ const CAPITAL_FLAG_SOURCE_OVERRIDES = {
   "MY-16": "Flag of Putrajaya.svg", // Putrajaya (Federal Territory) — official city flag: three vertical bands blue/yellow(double-width)/blue with the Malaysian coat of arms in the yellow band. Ref: en.wikipedia.org/wiki/Flag_of_the_Federal_Territories.
 };
 
+/**
+ * Curated capital-population overrides, keyed by ISO 3166-2 code →
+ * { population, year, basis, source }. The Wikidata pass keeps ONLY dated
+ * (P585 ≥ 1970) population statements so every figure can cite a year — correct
+ * discipline, but it leaves a real GAP when a capital's Wikidata population is
+ * undated even though an authoritative DATED figure plainly exists (e.g. an
+ * official national-census local-authority total). This table fills those gaps
+ * from a cited, dated, authoritative source (NEVER an invented or approximate
+ * number — same discipline as the flag rules). Each entry MUST name its source
+ * and year. Applied after the Wikidata fetch + preserve step, so it fills a
+ * missing figure (and would correct a stale one) and survives every regen.
+ */
+const CAPITAL_POPULATION_OVERRIDES = {
+  // Shah Alam (Selangor / MBSA) — DOSM 2020 Census, local-authority total. Its
+  // Wikidata population statement is undated, so the dated-only pass drops it.
+  // Same lineage as George Town (MY-07, 794,313 / 2020 census), which the
+  // Wikidata pass already emits and which matches DOSM exactly.
+  "MY-10": { population: 812327, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Shah Alam local-authority total)" },
+  // Kota Kinabalu (Sabah / DBKK) — DOSM 2020 Census, city-hall local-authority total.
+  "MY-12": { population: 500425, year: 2020, basis: "census", source: "DOSM 2020 Census (Dewan Bandaraya Kota Kinabalu local-authority total)" },
+};
+
 const yearOf = (iso) => {
   if (!iso) return null;
   // ISO 8601 point-in-time; may be BCE ("-0660-..."). Number() of the leading
@@ -436,6 +458,26 @@ async function main() {
     }
   }
   if (preserved) console.log(`\nPreserved ${preserved} detail(s) from the previous run.`);
+
+  // Apply curated capital-population overrides (fill a real GAP the dated-only
+  // Wikidata pass leaves when an authoritative figure exists but is undated on
+  // Wikidata). Only for codes whose capital NAME is known, so the figure is
+  // attached to the same city the app names. Never invents a number.
+  let popOverrides = 0;
+  for (const [code, ov] of Object.entries(CAPITAL_POPULATION_OVERRIDES)) {
+    const CODE = code.toUpperCase();
+    const existing = details.get(CODE);
+    if (!existing || !existing.name) continue; // need the name to attach the figure
+    if (existing.population != null && existing.year != null && existing.year >= ov.year) continue; // keep a fresher sourced figure
+    details.set(CODE, {
+      name: existing.name,
+      population: ov.population,
+      year: ov.year,
+      basis: ov.basis ?? "estimate",
+    });
+    popOverrides++;
+  }
+  if (popOverrides) console.log(`Applied ${popOverrides} curated capital-population override(s).`);
 
   // Apply curated capital-flag source overrides (fill a MISS / correct a WRONG
   // P41). Only for codes whose capital NAME is known (so the app can name-match),
