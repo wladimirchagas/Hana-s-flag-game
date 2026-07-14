@@ -1801,7 +1801,7 @@ export const SUBNATIONAL_CITIES: Readonly<Record<string, SubnationalCities>> = {
   "MY-07": {"capital":{"name":"George Town","lon":100.3294,"lat":5.4136,"population":2500000},"largest":{"name":"George Town","lon":100.3294,"lat":5.4136,"population":2500000}},
   "MY-08": {"capital":{"name":"Ipoh","lon":101.065,"lat":4.6,"population":673318},"largest":{"name":"Ipoh","lon":101.065,"lat":4.6,"population":673318}},
   "MY-09": {"capital":{"name":"Kangar","lon":100.19,"lat":6.433,"population":63869},"largest":{"name":"Kangar","lon":100.19,"lat":6.433,"population":63869}},
-  "MY-10": {"capital":{"name":"Kelang","lon":101.5481,"lat":3.0223,"population":956000},"largest":{"name":"Kelang","lon":101.5481,"lat":3.0223,"population":956000}},
+  "MY-10": {"capital":{"name":"Shah Alam","lon":101.55,"lat":3.0667,"population":481654},"largest":{"name":"Kelang","lon":101.5481,"lat":3.0223,"population":956000}},
   "MY-11": {"capital":{"name":"Kuala Terengganu","lon":103.12,"lat":5.3304,"population":350210},"largest":{"name":"Kuala Terengganu","lon":103.12,"lat":5.3304,"population":350210}},
   "MY-12": {"capital":{"name":"Kota Kinabalu","lon":116.11,"lat":5.98,"population":527671},"largest":{"name":"Kota Kinabalu","lon":116.11,"lat":5.98,"population":527671}},
   "MY-13": {"capital":{"name":"Kuching","lon":110.33,"lat":1.53,"population":570407},"largest":{"name":"Kuching","lon":110.33,"lat":1.53,"population":570407}},
