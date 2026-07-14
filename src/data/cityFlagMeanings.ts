@@ -3563,6 +3563,31 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Shah Alam — capital of the state of Selangor, Malaysia ──────────────────
+  "MY-10": {
+    description:
+      "A blue field bearing the arms of the Shah Alam City Council (Majlis Bandaraya Shah Alam) at the " +
+      "hoist, with a blue-and-white arabesque geometric pattern toward the fly. On the emblem a tiger — " +
+      "each animal armed with a spear — stands for the council’s role as the city’s enforcement " +
+      "authority, and a deer for loyalty to the Ruler and the nation and readiness to defend Malay " +
+      "sovereignty and the Constitution; the orchid is Shah Alam’s official flower, chosen for its " +
+      "“Garden City” concept. A crescent and five-pointed star mark Islam as the official religion and " +
+      "the sovereignty of the Ruler and nation, the five points recalling the Pillars of Islam, and the " +
+      "geometric pattern the council’s core development objectives. Red and yellow are the state colours " +
+      "of Selangor; white stands for cleanliness and purity in the council’s service, and blue for calm " +
+      "and peace — efficient, precise and friendly service.",
+    sources: [
+      {
+        title: "Logo Rasmi MBSA — Shah Alam City Council (official)",
+        url: "https://www.mbsa.gov.my/ms-my/mbsa/kenalimbsa/profil/Halaman/logo_rasmi.aspx",
+      },
+      {
+        title: "Selangor (Shah Alam City Council) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/my-selan.html",
+      },
+    ],
+  },
+
   // ── Kuala Terengganu — capital of the state of Terengganu, Malaysia ─────────
   "MY-11": {
     description:
