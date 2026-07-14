@@ -762,6 +762,48 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Canberra — capital of the Australian Capital Territory and of Australia ──
+  "AU-ACT": {
+    description:
+      "The flag of the Australian Capital Territory, adopted on 25 March 1993 after a public design " +
+      "competition. The hoist is a blue panel bearing the five white stars of the Southern Cross; the " +
+      "fly is a gold (yellow) panel bearing the coat of arms of the City of Canberra. The blue stands " +
+      "for the Canberra sky and the gold for the land. On the Canberra arms the blue and white swans " +
+      "represent Aboriginal Australians and European Australians; the castle alludes to Canberra as the " +
+      "national capital and the royal crown to the role of the Sovereign; and the shield’s sword of " +
+      "justice, parliamentary mace and white rose of York recall the Duke of York (later King George VI) " +
+      "opening the first Parliament House in Canberra in 1927. Because Canberra is coextensive with the " +
+      "Territory, this flag serves as the capital city’s own flag.",
+    sources: [
+      {
+        title: "Flag of the Australian Capital Territory — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_Australian_Capital_Territory",
+      },
+      {
+        title: "Symbols of the Australian Capital Territory — Department of the Prime Minister and Cabinet",
+        url: "https://www.pmc.gov.au/resources/australian-symbols-booklet/state-and-territory-symbols/symbols-australian-capital-territory",
+      },
+    ],
+  },
+
+  // ── Hobart — capital of Tasmania ────────────────────────────────────────────
+  "AU-TAS": {
+    description:
+      "The flag of the City of Hobart, bearing the city’s coat of arms (designed by the architect " +
+      "I. G. Anderson in 1951 and first flown in 1953). On the shield a red lion — taken from the flag " +
+      "of Tasmania, and placed in the chief (top) to signify Hobart’s standing as the state capital — " +
+      "stands above a gold six-pointed star with wavy rays on blue, drawn from the arms of Robert Hobart, " +
+      "4th Earl of Buckinghamshire, the Secretary of State for War and the Colonies after whom the city " +
+      "was named in 1804. The city’s Latin motto is “Sic Fortis Hobartia Crevit” — “Thus in strength did " +
+      "Hobart grow”.",
+    sources: [
+      {
+        title: "Coat of arms of Hobart — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hobart",
+      },
+    ],
+  },
+
   // ── Brest — capital of the Brest Region, Belarus ────────────────────────────
   "BY-BR": {
     description:
