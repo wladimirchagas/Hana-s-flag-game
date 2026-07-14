@@ -160,6 +160,61 @@ prompted by owner reports of a wrong Johor Bahru flag and missing Porto/Sydney f
    "View capital", and confirm the correct municipal flag renders (Porto's white/green arms; the City of
    Sydney banner) — not the national flag and not a blank.
 
+## A newly added or newly surfaced entity must be COMPLETE — hard rule, do not override without approval
+
+**Whenever you add a new entity — or change data so that a *different* entity becomes the one the app
+surfaces (a subdivision, a state/province, a capital city, a country, a disputed territory) — that
+entity MUST carry EVERY field its siblings carry and for which an authoritative source exists. Filling
+only the one field that prompted the change, and leaving the rest blank, is a bug.**
+
+### Why this rule exists
+
+This shipped and was reported (2026-07): fixing Selangor's capital to **Shah Alam** (its `cities.ts`
+marker had been wrongly showing Klang) surfaced Shah Alam in the "View capital" panel — but Shah Alam
+was left **incomplete**: it had **no capital-flag "What this flag means" explainer**
+(`cityFlagMeanings.ts`) and **no population** (`capitalDetails.ts` held only `{"name":"Shah Alam"}`,
+while every sibling capital — Johor Bahru, George Town, Ipoh … — carried `population`, `year`, `basis`).
+The panel therefore rendered a capital with a name and a flag but no population row and no flag
+explanation, while the states around it were complete. The lesson: **when an entity becomes visible,
+complete ALL of it, not just the field you came to fix.**
+
+### The completeness contract — fill every field an authoritative source supports
+
+| Entity surfaced | Fields that MUST be present when a source exists |
+|-----------------|--------------------------------------------------|
+| **Capital city** (`capitalDetails.ts` + `capitalFlags.ts` + `cityFlagMeanings.ts`) | `name`; **`population` + `year` + `basis`** (dated, authoritative); the city's own **flag**; the **flag-meaning explainer** (`CITY_FLAG_MEANINGS`) |
+| **Subdivision / state** (`subdivisionMeta.ts` + friends) | `name`; `typeLabel`/tier; **capital** (+ its capital marker in `cities.ts`/`subdivisionCapitals.ts`); **population** (`subdivisionPopulation.ts`); **flag** (or a documented suppression); **flag-meaning** (`flagMeanings.ts`) where sourced; disputed note + flag if disputed |
+| **Country** | every `EntitySummary` row (see the country-widget rule): Region, Official name, Capital, Population, Languages, Currencies, Government |
+| **Disputed territory** (see the merged-disputed rule) | meta entry + capital + disputed note + flag — all in the same change |
+
+### Rules
+
+1. **Complete the whole entity in the same change.** Before finishing, walk the surfaced entity's fields
+   against a *complete* sibling and fill every one that has an authoritative source. "I only came to fix
+   the capital name" is not a licence to leave population/flag/explainer blank.
+2. **A field is omitted ONLY when genuinely unsourceable** — the same "missing ≠ wrong, never fabricate"
+   discipline as every flag/anthem/meaning rule. Never invent or approximate a population, coordinate,
+   capital, flag or meaning to satisfy this rule; an honestly-absent field always beats a fabricated one.
+3. **When a generator's discipline drops a real, sourceable figure, use the curated override — don't
+   leave the gap.** The capital-population generator keeps only *dated* Wikidata figures (so each cites a
+   year); when a capital's authoritative figure is undated on Wikidata it lands in
+   **`CAPITAL_POPULATION_OVERRIDES`** in `scripts/build-capital-details.mjs` with a cited, dated source
+   (as Shah Alam's DOSM-2020 figure now is), exactly as a missed capital flag lands in
+   `CAPITAL_FLAG_SOURCE_OVERRIDES`. The override survives every regen — never hand-edit only the
+   generated file and let the generator re-blank it.
+4. **Verify in the running app** (the mandatory visual-verification rule applies): open the surfaced
+   entity and confirm **every** row its complete siblings show is present — for a capital: the name,
+   the **Population** row (with year/basis + national share), the flag, and the expanded "What this flag
+   means" — not just the one field you changed.
+
+### Enforcement
+
+There is no single build-gating check (many small subdivisions legitimately have no dated population, so
+a blanket "must have population" check would false-positive on correct omissions). The guard is this
+rule plus the visual check in rule 4: when reviewing any PR that adds a subdivision/capital or changes
+which entity is surfaced, confirm the new/changed entity is as complete as its siblings, and that any
+blank field is a genuine unsourceable gap (documented) rather than an overlooked one.
+
 ## Country widget information must never be reduced — hard rule, do not override without approval
 
 **The Learn-mode country widget (`EntitySummary`, rendered in `src/pages/LearnPage.tsx`) is a
