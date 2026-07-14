@@ -124,8 +124,10 @@ prompted by owner reports of a wrong Johor Bahru flag and missing Porto/Sydney f
    regen (see `loadExistingFlagSources` in `build-capital-details.mjs`):
    - the curated `CAPITAL_FLAG_SOURCE_OVERRIDES` table in `build-capital-details.mjs` (app code →
      authoritative Commons filename), for hand-verified special cases (Porto, Sydney, Perth, Darwin, and
-     the **Johor Bahru** correction — its `P41` points to a *different, wrong* file, so the owner-confirmed
-     `Flag of Johor Bahru, Johor.svg` is pinned here); guarded by the national-flag check and the
+     the **Johor Bahru** correction — the owner-confirmed Johor Bahru City Council flag
+     `Flag of Johor Bahru.svg` (red/white/blue tricolour with a yellow crescent and star, per FOTW
+     `my-j-jbc`) is pinned here; an earlier pin used `Flag of Johor Bahru, Johor.svg`, which is the Johor
+     STATE flag, not the city's); guarded by the national-flag check and the
      dangling-override check (an override naming an unbundled file fails the build).
    - the systematic **`scripts/backfill-capital-flags.mjs`** sweep, which fills every remaining flagless
      capital from the **collision-safe** source — the capital city's OWN en.wikipedia infobox flag,
