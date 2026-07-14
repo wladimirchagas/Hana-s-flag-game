@@ -158,6 +158,14 @@ const SUBNATIONAL_OVERRIDE = {
   "GB-SCT": { capital: "Edinburgh", largest: "Glasgow" },
   "GB-WLS": { capital: "Cardiff", largest: "Cardiff" },
   "GB-NIR": { capital: "Belfast", largest: "Belfast" },
+  // Selangor (MY-10) — Natural Earth tags BOTH Shah Alam and Kelang (Klang) as
+  // "Admin-1 capital", and the auto-picker takes the higher-population one (Klang,
+  // 956k) over Shah Alam (482k). But Shah Alam has been Selangor's administrative
+  // STATE capital since 1978; Klang is the state's ROYAL capital, not the seat of
+  // government. Pin Shah Alam so the capital marker matches Selangor's actual
+  // administrative capital (and this app's own CAPITAL_DETAILS, which already
+  // records Shah Alam). Largest city stays Klang (NE's highest-pop Selangor city).
+  "MY-10": { capital: "Shah Alam", largest: "Kelang" },
 };
 
 // --- Load Natural Earth extract ---------------------------------------------
