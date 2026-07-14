@@ -3688,6 +3688,95 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Castellón de la Plana — capital of Castellón, Spain ────────────────────
+  "ES-CS": {
+    description:
+      "The yellow-and-red bars of the Senyera with a green band at the mast and the city arms beside it. The " +
+      "arms — the Aragonese bars beneath a silver castle — are a canting device: “Castelló” means “little " +
+      "castle”. The flag was fixed for the city’s 700th anniversary in 1952.",
+    sources: [
+      { title: "Bandera de Castellón de la Plana — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Castell%C3%B3n_de_la_Plana" },
+    ],
+  },
+
+  // ── Girona — capital of Girona province, Spain ─────────────────────────────
+  "ES-GI": {
+    description:
+      "The gold-and-red bars of the Senyera — the arms of the Crown of Aragón, which Girona has borne since " +
+      "the 13th century — with a small shield of wavy red-and-silver bars said to stand for the four rivers " +
+      "(Ter, Onyar, Güell and Galligants) that meet at the city.",
+    sources: [
+      { title: "Escudo de Gerona — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Gerona" },
+    ],
+  },
+
+  // ── Jaén — capital of Jaén province, Spain ─────────────────────────────────
+  "ES-J": {
+    description:
+      "An indigo field with the city arms — the quartered castle-and-lion of Castile and León that Ferdinand " +
+      "III granted after taking the city. He also gave Jaén a crimson pennant of Castile with the title " +
+      "“guardian and defence of the kingdoms of Castile”; over time that crimson darkened to today’s indigo.",
+    sources: [
+      { title: "Bandera de Jaén — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Ja%C3%A9n" },
+    ],
+  },
+
+  // ── Lleida — capital of Lleida province, Spain ─────────────────────────────
+  "ES-L": {
+    description:
+      "A crimson field with the city arms: on gold the four red bars of the Crown of Aragón, over all a " +
+      "green stalk bearing three silver fleurs-de-lis. The lilies are canting — the old name “Lerita” was " +
+      "linked to “liri”, the Catalan for fleur-de-lis — and the Aragón bars were added when the city came " +
+      "under royal rule.",
+    sources: [
+      { title: "Escudo de Lérida — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_L%C3%A9rida" },
+    ],
+  },
+
+  // ── León — capital of León province, Spain ─────────────────────────────────
+  "ES-LE": {
+    description:
+      "A crimson field bearing the city arms — on silver, the purple lion of León, one of the oldest " +
+      "heraldic devices in Europe (the purple tint is documented in 13th-century armorials).",
+    sources: [
+      { title: "Símbolos de León — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/S%C3%ADmbolos_de_Le%C3%B3n" },
+    ],
+  },
+
+  // ── Lugo — capital of Lugo province, Spain ─────────────────────────────────
+  "ES-LU": {
+    description:
+      "A white flag with the city arms held by two golden lions: a silver tower on blue, surmounted by a " +
+      "golden chalice with a radiant host between two praying angels, and a border with the motto “Hoc hic " +
+      "mysterium fidei firmiter profitemur” — “here we firmly profess this mystery of faith”, for the " +
+      "perpetual exposition of the Blessed Sacrament in Lugo’s cathedral.",
+    sources: [
+      { title: "Bandera de Lugo (ciudad) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Lugo_(ciudad)" },
+    ],
+  },
+
+  // ── Málaga — capital of Málaga province, Spain ─────────────────────────────
+  "ES-MA": {
+    description:
+      "Divided vertically, purple at the mast and green, with the city arms. The Catholic Monarchs granted " +
+      "the arms after taking Málaga in 1487: on red, the city and the hilltop fortress of Gibralfaro with " +
+      "the walled enclosure where Christian captives were held.",
+    sources: [
+      { title: "Escudo y bandera de la ciudad — Ayuntamiento de Málaga", url: "https://www.malaga.eu/identidad/escudo-y-bandera-de-la-ciudad/" },
+    ],
+  },
+
+  // ── Pamplona — capital of Navarre, Spain ───────────────────────────────────
+  "ES-NA": {
+    description:
+      "A green field with the city arms: on blue a silver lion beneath a royal crown, bordered by the golden " +
+      "chains of Navarre. King Charles III the Noble granted the arms and flag in the 1423 “Privilege of the " +
+      "Union” that joined Pamplona’s three rival boroughs into one city.",
+    sources: [
+      { title: "El Escudo de Pamplona — Ayuntamiento de Pamplona", url: "https://www.pamplona.es/ayuntamiento/varios/el-escudo-de-pamplona" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
