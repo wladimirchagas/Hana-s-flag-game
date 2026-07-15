@@ -5010,6 +5010,49 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "HU-BA": {
+    description:
+      "Pécs’s flag, blue over gold, carries the city’s historic seal, whose Latin legend names it the free royal " +
+      "city of “Quinque Ecclesiae” — “Five Churches”. The medieval name (also the German Fünfkirchen) recalls " +
+      "the five early Christian basilicas from whose remains the town’s churches were built; Pécs was a great " +
+      "religious centre with a bishopric founded in 1009.",
+    sources: [
+      { title: "Pécs — Wikipedia", url: "https://en.wikipedia.org/wiki/P%C3%A9cs" },
+    ],
+  },
+
+  "HU-GS": {
+    description:
+      "Győr’s arms show the city’s patron, Saint Stephen, beside its old castle on a red field crossed by three " +
+      "silver waves — the three rivers that meet at Győr: the Danube, the Rába and the Rábca. Under communist " +
+      "rule the saint was replaced by a cogwheel, hammer and candle for local industry; the historic arms were " +
+      "restored in 1990.",
+    sources: [
+      { title: "Győr — Heraldry of the World", url: "https://www.heraldry-wiki.com/heraldrywiki/index.php?title=Gy%C5%91r" },
+    ],
+  },
+
+  "HU-PE": {
+    description:
+      "Budapest’s flag bears the city arms: on red, two castles divided by a wavy white band — the Danube — with " +
+      "a single-towered castle above for Pest and a three-towered castle below for Buda and Óbuda, the three " +
+      "towns united in 1873; a lion and a griffin support the shield beneath the Holy Crown. The flag’s red and " +
+      "green triangular border was added in 2011.",
+    sources: [
+      { title: "Coat of arms of Budapest — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Budapest" },
+    ],
+  },
+
+  "HU-VA": {
+    description:
+      "Szombathely’s arms: on blue, a silver castle with an open, cross-topped gate and a many-windowed tower, " +
+      "with a golden star and a silver crescent flanking it. Szombathely stands on Roman Savaria, the birthplace " +
+      "of Saint Martin of Tours, the city’s patron.",
+    sources: [
+      { title: "Szombathely — Wikipedia", url: "https://en.wikipedia.org/wiki/Szombathely" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
