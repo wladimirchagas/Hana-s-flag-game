@@ -983,6 +983,32 @@ const MANUAL_VERIFIED_POPULATION = {
   // Patrick parishes. TT-WTO was deleted from ISO 3166-2 in 2015 (replaced by the
   // single ward TT-TOB) but the figure remains a real, sourced 2011 count.
   "TT-WTO": { population: 41829, year: 2011, basis: "census" }, // Western Tobago (legacy code)
+
+  // Malaysia, DOSM Population and Housing Census 2020 (Banci Penduduk dan
+  // Perumahan Malaysia 2020 / MyCensus 2020) — the latest authoritative
+  // enumeration. Wikidata's dated P1082 pass had left several states on stale
+  // 2010-census/2017-estimate figures (Selangor, Johor, Terengganu, Negeri
+  // Sembilan, Perlis), mislabelled non-census figures as census (Pahang, Perak),
+  // and — worst — keyed a Greater-KL metropolitan figure (~9,000,000) to the
+  // Kuala Lumpur federal territory (whose true 2020 census count is 1,982,112).
+  // All 16 are pinned here to the exact 2020 census figure; the 16 sum exactly to
+  // the published national total of 32,447,385 (checksum-verified).
+  "MY-01": { population: 4009670, year: 2020, basis: "census" }, // Johor
+  "MY-02": { population: 2131427, year: 2020, basis: "census" }, // Kedah
+  "MY-03": { population: 1792501, year: 2020, basis: "census" }, // Kelantan
+  "MY-04": { population: 998428, year: 2020, basis: "census" }, // Melaka
+  "MY-05": { population: 1199974, year: 2020, basis: "census" }, // Negeri Sembilan
+  "MY-06": { population: 1591295, year: 2020, basis: "census" }, // Pahang
+  "MY-07": { population: 1740405, year: 2020, basis: "census" }, // Pulau Pinang (Penang)
+  "MY-08": { population: 2496041, year: 2020, basis: "census" }, // Perak
+  "MY-09": { population: 284885, year: 2020, basis: "census" }, // Perlis
+  "MY-10": { population: 6994423, year: 2020, basis: "census" }, // Selangor
+  "MY-11": { population: 1149440, year: 2020, basis: "census" }, // Terengganu
+  "MY-12": { population: 3418785, year: 2020, basis: "census" }, // Sabah
+  "MY-13": { population: 2453677, year: 2020, basis: "census" }, // Sarawak
+  "MY-14": { population: 1982112, year: 2020, basis: "census" }, // Kuala Lumpur (Federal Territory)
+  "MY-15": { population: 95120, year: 2020, basis: "census" }, // Labuan (Federal Territory)
+  "MY-16": { population: 109202, year: 2020, basis: "census" }, // Putrajaya (Federal Territory)
 };
 
 async function fetchByQid(code, qid) {

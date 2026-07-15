@@ -215,6 +215,65 @@ rule plus the visual check in rule 4: when reviewing any PR that adds a subdivis
 which entity is surfaced, confirm the new/changed entity is as complete as its siblings, and that any
 blank field is a genuine unsourceable gap (documented) rather than an overlooked one.
 
+## Population figures must use the latest authoritative enumeration — hard rule, do not override without approval
+
+**Every population the app shows — a subdivision's total (`src/data/subdivisionPopulation.ts`), a
+capital city's (`src/data/capitalDetails.ts`), a country's (live, World Bank → REST Countries) — MUST
+be the LATEST authoritative figure available for that exact entity. A newer census or official estimate
+always supersedes an older one. Shipping a figure from a superseded enumeration when a newer
+authoritative one exists is a bug, in the same family as the "never fabricate a population" rule.**
+
+### Why this rule exists
+
+This was reported (2026-07): several Malaysian states were still on **2010-census / 2017-estimate**
+figures (Selangor, Johor, Terengganu, Negeri Sembilan, Perlis) even though the authoritative **DOSM
+2020 Census (MyCensus 2020)** had long superseded them; two states (Pahang, Perak) carried non-census
+figures **mislabelled `basis: "census"`**; and — worst — the **Kuala Lumpur** federal territory carried
+a **~9,000,000 Greater-KL *metropolitan* figure** instead of its true **2020 census 1,982,112**. The
+root cause was the population generator keeping "the most recent *dated* Wikidata statement", which
+(a) silently leaves a stale figure when Wikidata never got the newer census as a dated statement, and
+(b) can attach a **metro-area** figure to an **administrative** subdivision that shares the item.
+
+### Rules
+
+1. **Latest wins.** When two authoritative figures exist for the same entity, use the one from the most
+   recent enumeration (a 2020 census beats a 2010 census; a 2024 official estimate beats a 2020 one only
+   if it is genuinely more recent *and* authoritative — a census is preferred to a same-or-older-year
+   estimate). Never leave a subdivision on an older figure once a newer authoritative one is known.
+2. **Never confuse the metropolitan area with the administrative subdivision.** A subdivision's
+   population is the population of THAT administrative unit, not of its surrounding conurbation/urban
+   agglomeration. A federal-territory/city-province figure (Kuala Lumpur, Beijing, Jakarta, …) must be
+   the territory's own count, never the metro region's. When a figure looks implausibly large for the
+   unit, this is the first thing to suspect.
+3. **Keep the unit consistent within a dataset.** Capital-city figures follow the existing unit
+   (the city/municipal **local-authority** total — e.g. George Town/MBPP 794,313, Shah Alam/MBSA
+   812,327, Kota Kinabalu/DBKK 500,425), never a district or urban-agglomeration figure silently swapped
+   in. A coterminous city-territory (Kuala Lumpur, Putrajaya) legitimately uses its territory's census
+   total because the city *is* the territory.
+4. **Fix at the source of truth, then the generated file.** A stale/wrong figure the generator would
+   re-emit is corrected in the generator's curated override table
+   (`MANUAL_VERIFIED_POPULATION` in `scripts/build-subdivision-population.mjs`;
+   `CAPITAL_POPULATION_OVERRIDES` in `scripts/build-capital-details.mjs`) — each entry dated and cited —
+   so the correction survives every regen, exactly like a capital-flag override. Applying the same value
+   to the generated `.ts` keeps the shipped artifact correct until the next full network regen.
+5. **Never fabricate to satisfy freshness.** If the latest authoritative figure cannot be sourced, keep
+   the older *sourced* one (dated honestly) rather than invent or approximate a newer number — the
+   "never invent a population" discipline is absolute and outranks freshness. Prefer a checksum-verified
+   set (the DOSM 2020 figures sum exactly to the published national total 32,447,385).
+
+### Enforcement
+
+`scripts/check-population-freshness.mjs` (`npm run pop:check`, and part of `npm run flags:check` + the
+`flag-integrity` CI workflow) **fails the build** on: (1) any subdivision figure that predates its
+country's latest enumeration listed in the curated, sourced `LATEST_ENUMERATION_YEAR` table (seeded with
+`MY: 2020`; grows as audits establish a newer enumeration for more countries — **this is the hard-coded
+rule**); (2) any subdivision whose population exceeds its own national total (a wrong-entity signal);
+and (3) for countries in `SUM_CHECK`, a subdivision sum that exceeds the national total beyond tolerance
+(the metropolitan-confusion signal that caught the KL bug). The `year` freshness floor is the mechanism
+that hard-codes "2020, not 2010" — add a country to `LATEST_ENUMERATION_YEAR` **only** after refreshing
+all its subdivisions to that enumeration. Never weaken a floor or remove a country to make the build
+pass; fix the figure instead.
+
 ## Country widget information must never be reduced — hard rule, do not override without approval
 
 **The Learn-mode country widget (`EntitySummary`, rendered in `src/pages/LearnPage.tsx`) is a

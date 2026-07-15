@@ -187,6 +187,14 @@ const CAPITAL_POPULATION_OVERRIDES = {
   "MY-10": { population: 812327, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Shah Alam local-authority total)" },
   // Kota Kinabalu (Sabah / DBKK) — DOSM 2020 Census, city-hall local-authority total.
   "MY-12": { population: 500425, year: 2020, basis: "census", source: "DOSM 2020 Census (Dewan Bandaraya Kota Kinabalu local-authority total)" },
+  // Kuala Lumpur (MY-14 Federal Territory) — the city IS the federal territory
+  // (coterminous with Dewan Bandaraya Kuala Lumpur), so the 2020 census FT total
+  // is the exact city figure. Latest authoritative enumeration (MyCensus 2020).
+  "MY-14": { population: 1982112, year: 2020, basis: "census", source: "DOSM 2020 Census (Federal Territory of Kuala Lumpur, coterminous with DBKL)" },
+  // Putrajaya (MY-16 Federal Territory) — the planned administrative capital is
+  // coterminous with its federal territory, so the 2020 census FT total is the
+  // exact city figure.
+  "MY-16": { population: 109202, year: 2020, basis: "census", source: "DOSM 2020 Census (Federal Territory of Putrajaya)" },
 };
 
 const yearOf = (iso) => {
