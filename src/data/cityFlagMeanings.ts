@@ -4319,6 +4319,102 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "FR-38": {
+    description:
+      "A red-and-yellow flag in the colours of Grenoble’s arms — gold with three red roses. The three roses " +
+      "stand for the three powers that governed the medieval city: the bishop, the Dauphin of Viennois, and the " +
+      "municipal consuls. The arms were registered in the Armorial général de France in 1698.",
+    sources: [
+      { title: "Armoiries de Grenoble — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Armoiries_de_Grenoble" },
+    ],
+  },
+
+  "FR-39": {
+    description:
+      "A red-and-gold flag in the colours of Lons-le-Saunier’s arms, which unite the gold-and-red arms of the " +
+      "Chalon-Orange princes — to whom the town belonged — with a silver half recalling the salt springs that " +
+      "gave the town its name (a “saunier” is a salt-worker), the source of its medieval wealth.",
+    sources: [
+      { title: "Lons-le-Saunier — Heraldry of the World", url: "https://www.heraldry-wiki.com/heraldrywiki/index.php?title=Lons-le-Saunier" },
+    ],
+  },
+
+  "FR-42": {
+    description:
+      "Saint-Étienne’s arms: on blue, two golden palms crossed in saltire with a royal crown above and three " +
+      "silver crosses. The palms and crosses recall Saint Stephen (Saint Étienne), the first Christian martyr, " +
+      "stoned around AD 36 — the palm being the emblem of martyrdom; the crown marks the townspeople’s wish to " +
+      "answer directly to the king, and the blue their attachment to the French crown.",
+    sources: [
+      { title: "Armoiries — Archives municipales de Saint-Étienne", url: "https://archives.saint-etienne.fr/histoires-stephanoises-1/tranches-dhistoire/histoire-de-la-ville-et-de-son-administration/armoiries" },
+    ],
+  },
+
+  "FR-43": {
+    description:
+      "A yellow-and-blue flag in the colours of Le Puy-en-Velay’s arms — blue strewn with golden fleurs-de-lis, " +
+      "charged with a silver eagle. The eagle is a canting emblem for Le Puy (from the Latin podium, a raised " +
+      "place), said to have been granted by Hugh Capet in 992; the fleurs-de-lis were added by King Louis IX " +
+      "(Saint Louis) in 1254.",
+    sources: [
+      { title: "Armoiries du Puy-en-Velay — emblemes.free.fr", url: "http://emblemes.free.fr/site/index.php?option=com_content&id=1003:armoiries-du-puy-en-velay" },
+    ],
+  },
+
+  "FR-44": {
+    description:
+      "Nantes’ arms: on red, a golden ship dressed with ermine, sailing a green sea of silver waves, beneath an " +
+      "ermine chief. The ship stands for the city’s Atlantic and Loire trade; the ermine for the Duchy of " +
+      "Brittany, whose capital Nantes was; and the green sea for the Loire. The golden nef took this form after " +
+      "the funeral of Anne of Brittany in 1514.",
+    sources: [
+      { title: "Nantes — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=13894" },
+    ],
+  },
+
+  "FR-45": {
+    description:
+      "A yellow-and-red flag in the colours of Orléans’ arms — red with three silver “lily-hearts” beneath a " +
+      "blue chief of three golden fleurs-de-lis. The lily-hearts and the royal “chief of France” tie the city to " +
+      "the crown; their symbolism is linked to Joan of Arc’s deliverance of Orléans in 1429, and the motto “Hoc " +
+      "vernant lilia corde” (“by this heart the lilies flower”) was granted by Louis XII.",
+    sources: [
+      { title: "Orléans — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=9784" },
+    ],
+  },
+
+  "FR-47": {
+    description:
+      "Agen’s arms, party per pale on red: a silver eagle holding a scroll lettered “AGEN”, and a golden " +
+      "three-towered castle. The eagle — an imperial emblem — is traditionally linked to the memory of " +
+      "Charlemagne, who favoured the Agenais; the castle stands for the town’s fortifications. The arms are " +
+      "attested from the 13th century.",
+    sources: [
+      { title: "Armoiries d’Agen — emblemes.free.fr", url: "http://emblemes.free.fr/site/index.php?option=com_content&view=article&id=948:armoiries-dagen" },
+    ],
+  },
+
+  "FR-49": {
+    description:
+      "Angers’ arms: on red a silver key set upright, beneath a blue chief of two golden fleurs-de-lis. The key " +
+      "marks Angers as the chief stronghold of Anjou, guarding the frontier against then-independent Brittany; " +
+      "the fleurs-de-lis mark it as a royal apanage. The arms are among the oldest in France, attested in the " +
+      "13th century.",
+    sources: [
+      { title: "Armoiries — Archives patrimoniales de la ville d’Angers", url: "https://archives.angers.fr/aide-memoire/angers-en-dates/emblemes-et-devises/armoiries/index.html" },
+    ],
+  },
+
+  "FR-56": {
+    description:
+      "Vannes’ arms: on red a silver ermine passant, collared and leashed. The red recalls the ancient kingdom " +
+      "of Bro-Waroch of which Vannes was the capital; the ermine is the emblem of Brittany, popularised by Duke " +
+      "John IV, who founded the chivalric Order of the Ermine at Vannes in 1381 with the motto “À ma vie”.",
+    sources: [
+      { title: "Blason de Vannes — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Blason_de_Vannes" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
