@@ -4122,6 +4122,114 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "FR-01": {
+    description:
+      "Bourg-en-Bresse’s banner of arms: party per pale of green and black, with a silver budded cross over all. " +
+      "The green and black were granted in 1382 by Amadeus VI of Savoy (the “Green Count”); the silver cross of " +
+      "the Order of Saint Maurice was added in the 16th century to mark Bresse’s return to Savoy.",
+    sources: [
+      { title: "Armoiries de Bourg-en-Bresse — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=1692" },
+    ],
+  },
+
+  "FR-04": {
+    description:
+      "Digne-les-Bains’ arms: on blue a golden fleur-de-lis, with a small red cross above, two facing silver " +
+      "letters “L” at the sides and a golden “D” below. The fleur-de-lis recalls the counts of Provence of the " +
+      "House of Anjou, the cross the town’s bishopric, the “D” stands for Digne and the two “L”s were added under " +
+      "King Louis XIV.",
+    sources: [
+      { title: "Armoiries de Digne-les-Bains — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=2150" },
+    ],
+  },
+
+  "FR-05": {
+    description:
+      "A blue-and-yellow vertical bicolour taken from the arms of Gap. The arms — granted by the king in the 17th " +
+      "century when the town was walled — show four turrets standing for the shared rule of the city: the two " +
+      "roofed towers for the bishop’s (ecclesiastical) power and the two open ones for the civil power.",
+    sources: [
+      { title: "Drapeaux et armoiries de Gap — emblemes.free.fr", url: "http://emblemes.free.fr/site/index.php?option=com_content&view=article&id=1795:drapeaux-de-gap" },
+    ],
+  },
+
+  "FR-06": {
+    description:
+      "Nice’s arms on a white field: a red crowned eagle with lowered wings, perched on a green three-peaked " +
+      "mount rising from a silver-and-blue sea. The eagle marks Nice’s allegiance to the House of Savoy (red for " +
+      "Amadeus VII, the “Red Count”, under whose protection the city placed itself in 1388); the three hills " +
+      "stand for stability, and the sea for Nice’s Mediterranean port. The blazon dates from 1502.",
+    sources: [
+      { title: "Armoiries de Nice — Provence 7", url: "https://www.provence7.com/portails/identites/armoiries-de-nice/" },
+    ],
+  },
+
+  "FR-08": {
+    description:
+      "A blue-yellow-red vertical tricolour of the colours in which Charleville-Mézières was built — blue slate, " +
+      "ochre ashlar and red brick — also drawn from the city arms. Those arms join the older arms of Charleville " +
+      "(with the sun of the Gonzaga dukes who founded the town) and of Mézières, the two towns having merged in " +
+      "1966.",
+    sources: [
+      { title: "Drapeau de Charleville-Mézières — emblemes.free.fr", url: "http://emblemes.free.fr/site/index.php?option=com_content&view=article&id=1054:drapeau-de-charleville-mezieres" },
+    ],
+  },
+
+  "FR-09": {
+    description:
+      "The arms of the Counts of Foix: gold with three red pallets. They are a cadency of the four red pallets of " +
+      "the counts of Barcelona and kings of Aragon — the Foix line claimed descent from Barcelona as a junior " +
+      "branch, and so bore three pallets instead of four. The arms are attested from the 12th century, among the " +
+      "oldest in France.",
+    sources: [
+      { title: "Comté de Foix — Héraldique européenne", url: "http://www.heraldique.org/2011/07/provinces-de-france-comte-de-foix.html" },
+    ],
+  },
+
+  "FR-13": {
+    description:
+      "The flag of Marseille: a silver (white) field bearing an azure cross — “d’argent à la croix d’azur”, " +
+      "attested since the 13th century. Tradition traces the blue cross to the banner flown over Marseille’s " +
+      "harbour in the crusading age to mark it a safe haven for pilgrims bound for the Holy Land; the blue is " +
+      "that of the House of Anjou, which then ruled Provence.",
+    sources: [
+      { title: "Armoiries de Marseille — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Armoiries_de_Marseille" },
+    ],
+  },
+
+  "FR-18": {
+    description:
+      "A green-and-red flag in the livery colours of King Charles VII, who made Bourges his capital during the " +
+      "Hundred Years’ War (the “King of Bourges”). His livery was green, white and red, and he granted two of " +
+      "those colours to his loyal city. The city arms proper show three silver rams — for the Berry wool and " +
+      "cloth trade — beneath a blue chief of three golden fleurs-de-lis marking Berry as a royal apanage.",
+    sources: [
+      { title: "Drapeaux de Bourges — emblemes.free.fr", url: "http://emblemes.free.fr/site/index.php?option=com_content&view=article&id=98" },
+      { title: "Bourges — Armes et devise (Ville de Bourges)", url: "https://www.ville-bourges.fr/site/la-ville_armes-devise" },
+    ],
+  },
+
+  "FR-21": {
+    description:
+      "Dijon’s arms: a plain red field — the city’s oldest arms — beneath a divided chief granted by Duke Philip " +
+      "the Bold in 1391 for the city’s loyalty. The chief joins modern Burgundy (blue strewn with golden " +
+      "fleurs-de-lis, for the Valois dukes close to the French crown) and ancient Burgundy (bendy gold and blue, " +
+      "for the earlier Capetian ducal house that made Dijon its seat).",
+    sources: [
+      { title: "Dijon — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=4034" },
+    ],
+  },
+
+  "FR-22": {
+    description:
+      "Saint-Brieuc’s arms: on blue a golden griffin, armed, beaked and tongued red. The griffin — joining the " +
+      "lion’s courage to the eagle’s vigilance — stands for the union of the houses of Penthièvre and Montfort " +
+      "in Breton history; the arms were formally granted to the city in 1698.",
+    sources: [
+      { title: "Saint-Brieuc — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=4196" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
