@@ -4415,6 +4415,101 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "FR-57": {
+    description:
+      "Metz’s flag: party per pale of white and black — the “baucent”, the black-and-white banner the burghers " +
+      "raised against the noble families and flew as the arms of the Republic of Metz when the city freed itself " +
+      "from its bishop in the 13th century. A Messine couplet reads the colours as white for the life granted to " +
+      "the good and black for the death dealt to the wicked.",
+    sources: [
+      { title: "Le blason de Metz — Sapiens", url: "https://sapiens-france.fr/blogs/blasons-des-villes-de-france/le-blason-de-metz-signification-et-histoire" },
+    ],
+  },
+
+  "FR-63": {
+    description:
+      "Clermont-Ferrand’s arms: on blue, a red cross bordered gold with a golden fleur-de-lis in each quarter. " +
+      "The cross and fleurs-de-lis were the arms of the city’s bishop, its lord until the 16th century; the cross " +
+      "is often linked to the First Crusade, preached at Clermont by Pope Urban II in 1095, and the fleurs-de-lis " +
+      "to the bishopric’s ties to the kings of France.",
+    sources: [
+      { title: "Clermont-Ferrand — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=6166" },
+    ],
+  },
+
+  "FR-67": {
+    description:
+      "Strasbourg’s flag: silver with a red bend. It reverses the bishop’s arms (“de gueules à la bande " +
+      "d’argent”) after the burghers’ victory at Hausbergen in 1262, marking the city’s emancipation from its " +
+      "bishop and its rise as a free imperial city; the silver field also echoes the town’s Roman name, " +
+      "Argentoratum.",
+    sources: [
+      { title: "Blason de Strasbourg — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Blason_de_Strasbourg" },
+    ],
+  },
+
+  "FR-68": {
+    description:
+      "Colmar’s arms: party per pale red and green, with a golden mace set diagonally across the division. The " +
+      "mace stands for municipal justice and authority, and puns on the city’s name — Kolben (mace in Alemannic) " +
+      "against Columbaria, Colmar’s Latin name; a local legend has Hercules leave his club behind here. Red and " +
+      "green have been the city’s civic colours since the late Middle Ages.",
+    sources: [
+      { title: "L’histoire du blason de Colmar — Ville de Colmar", url: "https://www.colmar.fr/blason" },
+    ],
+  },
+
+  "FR-69": {
+    description:
+      "Lyon’s arms: on red a silver lion, beneath a blue chief of three golden fleurs-de-lis. The lion comes from " +
+      "the medieval counts of Lyon; the blue “chief of France” with its lilies was granted after Lyon joined the " +
+      "kingdom of France (1312), and the arms have stood essentially unchanged for five centuries.",
+    sources: [
+      { title: "Armoiries de Lyon — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Armoiries_de_Lyon" },
+    ],
+  },
+
+  "FR-71": {
+    description:
+      "Mâcon’s arms: on red three silver annulets (rings), beneath a blue chief of three golden fleurs-de-lis. " +
+      "The blue chief strewn with royal lilies is the “chief of France”, a mark of honour tying the city to the " +
+      "French crown.",
+    sources: [
+      { title: "Armoiries de Mâcon — emblemes.free.fr", url: "http://emblemes.free.fr/site/index.php?option=com_content&view=article&id=1145:armoiries-de-macon" },
+    ],
+  },
+
+  "FR-73": {
+    description:
+      "Chambéry’s arms: on red a silver cross — the cross of Savoy — with a golden star in the upper hoist. As " +
+      "the historic capital of the Duchy of Savoy, Chambéry bears the dukes’ own arms (the Savoy cross, taken " +
+      "from the Order of Saint John under Amadeus V in 1315), “differenced” by the addition of the golden star.",
+    sources: [
+      { title: "Chambéry — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=5437" },
+    ],
+  },
+
+  "FR-74": {
+    description:
+      "A red flag quartered by the white cross of Savoy — the region Annecy belongs to — charged with the silver " +
+      "trout that is the town’s own emblem. The trout evokes Lake Annecy and the river Thiou, and the fishing " +
+      "that was central to the medieval town’s economy.",
+    sources: [
+      { title: "Blason d’Annecy : la truite d’argent — Ville d’Annecy", url: "https://www.annecy-ville.fr/2022/12/truite-argent-histoire-armoiries-annecy/" },
+    ],
+  },
+
+  "FR-83": {
+    description:
+      "Toulon’s arms: a gold cross on blue. The blue evokes the Mediterranean sky and sea of this great naval " +
+      "port; the gold cross is a Christian and crusading emblem, echoing the arms of neighbouring Provençal " +
+      "ports such as Marseille and Fréjus. The motto is “Concordia parva crescunt” (“by concord small things " +
+      "grow”); the arms are attested from 1494.",
+    sources: [
+      { title: "Blason de Toulon — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Blason_de_Toulon" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
