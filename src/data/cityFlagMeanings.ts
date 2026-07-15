@@ -4736,6 +4736,37 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "HN-CM": {
+    description:
+      "A yellow flag bearing Comayagua’s colonial arms, centred on the black double-headed eagle of the " +
+      "Habsburgs. Comayagua — founded as Nueva Valladolid — was the first capital of Honduras and received its " +
+      "arms under the Spanish crown; the imperial eagle marks that Habsburg heritage of the colonial city.",
+    sources: [
+      { title: "Escudos españoles de ciudades hispanoamericanas — La América Española", url: "https://laamericaespanyola.com/2025/05/29/escudos-espanoles-de-ciudades-hispanoamericanas/" },
+    ],
+  },
+
+  "HN-CR": {
+    description:
+      "San Pedro Sula’s flag bears interlocking gears and a thrush (zorzal). The gears stand for the union of the " +
+      "city’s energies driving its development — San Pedro Sula is Honduras’s industrial capital — and the " +
+      "thrush for the cheerful, warm spirit of its people.",
+    sources: [
+      { title: "Significado del Escudo de San Pedro Sula", url: "http://patronatodelbarrio-riodepiedras.blogspot.com/2008/01/escudo-de-san-pedro-sula-honduras.html" },
+    ],
+  },
+
+  "HN-FM": {
+    description:
+      "Tegucigalpa’s flag (also used by the department of Francisco Morazán): blue over yellow with two white " +
+      "stars. The arms — designed in 1935 by the Spanish herald Vicente de Cadenas y Vicent — show a silver mine " +
+      "and a mill wheel for the city’s colonial silver-mining origins (Tegucigalpa means “silver hill”), with a " +
+      "lion for strength and nobility.",
+    sources: [
+      { title: "Heráldica de Tegucigalpa — heraldica.website", url: "https://heraldica.website/heraldica/heraldica-de-tegucigalpa-simbolos-e-historia-de-la-capital-hondurena/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
