@@ -4606,6 +4606,136 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "GT-CQ": {
+    description:
+      "Chiquimula’s flag: white and green, with the departmental arms on the white. White stands for the " +
+      "indigenous peoples and the Spanish settlers who shaped its traditions; green for the fertile soils, hills " +
+      "and mineral wealth. The arms show the Volcán Ipala with an open book above it — the inhabitants’ openness " +
+      "to learning.",
+    sources: [
+      { title: "Banderas y escudos del oriente — Aprende Guatemala", url: "https://aprende.guatemala.com/cultura-guatemalteca/banderas-de-los-departamentos-del-oriente-de-guatemala/" },
+    ],
+  },
+
+  "GT-ES": {
+    description:
+      "Escuintla’s flag: green and white, bearing the city arms. Green stands for the department’s nature — its " +
+      "rivers, beaches and wildlife — and white for its people. The arms show a palm tree (Escuintla is “the city " +
+      "of palms”), a sixteen-rayed sun for its hot climate, and the Nahuatl name “Izcuintlán” on a green ribbon.",
+    sources: [
+      { title: "Bandera y escudo de Escuintla — Mundo Chapín", url: "https://mundochapin.com/2018/04/bandera-y-escudo-del-departamento-de-escuintla/66522/" },
+    ],
+  },
+
+  "GT-GU": {
+    description:
+      "Guatemala City bears the arms of Santiago de los Caballeros de Guatemala, granted by Queen Joanna in 1532: " +
+      "above, Saint James (Santiago) on horseback — the city’s patron — and below, the three volcanoes Agua, " +
+      "Fuego (erupting) and Acatenango, with crosses for the country’s evangelisation; the border carries eight " +
+      "gold scallop shells, the badge of Saint James’s pilgrims.",
+    sources: [
+      { title: "Escudo de la ciudad de Guatemala — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_la_ciudad_de_Guatemala" },
+    ],
+  },
+
+  "GT-HU": {
+    description:
+      "Huehuetenango’s flag: alternating red and yellow stripes with a stepped pyramid at the centre. The red and " +
+      "yellow recall the Guatemalan national flags of 1851–71; the pyramid is the ruins of Zaculeu, the shrine " +
+      "and capital of the pre-Columbian Mam Maya kingdom that stood here.",
+    sources: [
+      { title: "Huehuetenango Department (Guatemala) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gt-hu.html" },
+    ],
+  },
+
+  "GT-IZ": {
+    description:
+      "Izabal’s flag (its capital is Puerto Barrios): green, white and blue, with the arms on the white. Green is " +
+      "for the fertile, mineral-rich land, white for peace, and blue for the department’s waters — Lake Izabal " +
+      "and its rivers. The arms are shaped like a ship’s wheel for the region’s ports, enclosing a ship, an " +
+      "aeroplane, a lorry and the interoceanic railway that linked Puerto Barrios to the Pacific.",
+    sources: [
+      { title: "Bandera y escudo de Izabal — Mundo Chapín", url: "https://mundochapin.com/2018/06/bandera-y-escudo-del-departamento-de-izabal/75658/" },
+    ],
+  },
+
+  "GT-JA": {
+    description:
+      "Jalapa’s flag: red, yellow and green, with the arms at the centre. Red recalls the Santa Marta earthquake, " +
+      "yellow the department’s volcanoes, green its forests. The arms show a green mountain (the volcanoes), a " +
+      "ploughed field for its farming, a hoe with laurel for triumph and olive branches for peace, and seven " +
+      "golden stars for the seven municipalities.",
+    sources: [
+      { title: "Bandera y escudo de Jalapa — Mundo Chapín", url: "https://mundochapin.com/2019/01/bandera-y-escudo-del-departamento-de-jalapa/88983/" },
+    ],
+  },
+
+  "GT-JU": {
+    description:
+      "Jutiapa’s flag: a white field with the arms at the centre. White stands for the department’s history and " +
+      "its Maya, Garífuna and Xinca peoples. The arms show the Cerro de la Cruz above a green valley of crops for " +
+      "its fertile fields, with books and a horn of plenty and a rising sun for its steady development, ringed by " +
+      "laurel for triumph.",
+    sources: [
+      { title: "Bandera y escudo de Jutiapa — Mundo Chapín", url: "https://mundochapin.com/2019/04/bandera-y-escudo-de-jutiapa/88989/" },
+    ],
+  },
+
+  "GT-PE": {
+    description:
+      "Petén’s flag (its capital, Flores, sits on an island in Lake Petén Itzá): green, white and sky-blue. Green " +
+      "is hope and the forest, white purity and peace, sky-blue the lakes, justice and loyalty. The arms show a " +
+      "Maya pyramid for the ruins of Tikal and El Mirador, Lake Petén Itzá, and coffee and palm plants for the " +
+      "land’s fertility. Adopted 1998.",
+    sources: [
+      { title: "Símbolos Patrios de Petén — simbolospatrios.org", url: "https://simbolospatrios.org/guatemala/peten/" },
+    ],
+  },
+
+  "GT-QZ": {
+    description:
+      "Quetzaltenango’s flag: blue, white and red. Blue stands for the department’s springs, lagoons and rivers " +
+      "and for freedom; white for its K’iche’ and Mam peoples and for peace; red for valour. The flag recalls the " +
+      "short-lived State of Los Altos, of which Quetzaltenango was the capital until 1840; its arms bear the " +
+      "Quetzal and the Santa María volcano.",
+    sources: [
+      { title: "Bandera y escudo de Quetzaltenango — Mundo Chapín", url: "https://mundochapin.com/2019/03/bandera-y-escudo-de-quetzaltenango/88995/" },
+    ],
+  },
+
+  "GT-SA": {
+    description:
+      "Antigua Guatemala bears the arms of Santiago de los Caballeros — the same granted by Queen Joanna in 1532 " +
+      "and shared with the modern capital, since Antigua was the country’s capital until an earthquake destroyed " +
+      "it in 1773. Saint James rides above the three volcanoes Agua, Fuego and Acatenango, within a border of the " +
+      "gold scallop shells of Saint James’s pilgrims.",
+    sources: [
+      { title: "Escudo de armas de la Ciudad de Guatemala y Antigua Guatemala — Aprende Guatemala", url: "https://aprende.guatemala.com/cultura-guatemalteca/general/escudo-de-armas-de-la-ciudad-de-guatemala-antigua-guatemala/" },
+    ],
+  },
+
+  "GT-SM": {
+    description:
+      "San Marcos’s flag: green, yellow and red, with the arms on the yellow. Green stands for its ecosystems and " +
+      "the volcanoes Tajumulco and Tacaná, yellow for its mineral soils, tropical coast and beaches, and red for " +
+      "the labour of the ancestors who founded its settlements. The arms show a green volcano on a sky-blue field " +
+      "for those two peaks.",
+    sources: [
+      { title: "Bandera y escudo de San Marcos — Mundo Chapín", url: "https://mundochapin.com/2019/02/bandera-y-escudo-de-san-marcos/89012/" },
+    ],
+  },
+
+  "GT-SO": {
+    description:
+      "Sololá’s flag: green and yellow, with the arms on the yellow. Green stands for the department’s diverse " +
+      "nature and yellow for its riches and its indigenous traditions. The arms picture Lake Atitlán with its " +
+      "volcanoes (Tolimán, Atitlán and San Pedro), a green valley, a village and a figure of its people, ringed " +
+      "with the words “Sololá, tierra del paisaje” (“Sololá, land of the landscape”).",
+    sources: [
+      { title: "Símbolos Patrios de Sololá — simbolospatrios.org", url: "https://simbolospatrios.org/guatemala/solola/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
