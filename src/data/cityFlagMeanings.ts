@@ -4801,6 +4801,59 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "HR-03": {
+    description:
+      "Sisak’s flag bears the town arms: the three-towered “Stari grad” fortress above the three rivers at whose " +
+      "confluence Sisak stands — the Odra meeting the Kupa, and the Kupa the Sava — with a ship sailing on the " +
+      "Kupa below. The arms were granted in 1838 when Sisak became a free merchant town, marking its role as a " +
+      "fortified river port.",
+    sources: [
+      { title: "Sisak (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-sk-sk.html" },
+    ],
+  },
+
+  "HR-05": {
+    description:
+      "Varaždin’s flag is striped red and white from the town arms — among the oldest in Europe — granted by King " +
+      "Matthias Corvinus in 1464 for the loyalty of its people. The arms show an angel with golden hair and red " +
+      "wings holding a shield with a blue-roofed, cross-topped tower between a golden star and crescent; the " +
+      "angel signifies dignity and honour.",
+    sources: [
+      { title: "Coat of arms — City of Varaždin", url: "https://varazdin.hr/en/coat-arms/" },
+    ],
+  },
+
+  "HR-06": {
+    description:
+      "Koprivnica’s flag: blue with the town arms — a white embattled tower without gates, a golden royal crown " +
+      "above it, and a double golden fleur-de-lis at either side. Crown and fleurs-de-lis are the emblems of the " +
+      "House of Anjou, which granted Koprivnica the status of a free royal town.",
+    sources: [
+      { title: "Koprivnica (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-kc-kc.html" },
+    ],
+  },
+
+  "HR-07": {
+    description:
+      "Bjelovar’s flag bears the town arms: a fortress with soldiers. Bjelovar was laid out as a planned " +
+      "garrison town around 1760 for the Habsburg Military Frontier, and its arms record that origin as a " +
+      "fortress town whose soldiers guarded the frontier.",
+    sources: [
+      { title: "Bjelovar — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Bjelovar" },
+    ],
+  },
+
+  "HR-11": {
+    description:
+      "Požega’s flag bears the town arms: on blue, a three-towered town wall surmounted by a golden eagle with " +
+      "spread wings, a silver star and crescent, and a golden radiating sun. In use since about 1702 and granted " +
+      "by Empress Maria Theresa in 1765 when Požega became a free royal town, the arms befit the town of the " +
+      "“Vallis Aurea” (Golden Valley).",
+    sources: [
+      { title: "Požega (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-pz-pz.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
