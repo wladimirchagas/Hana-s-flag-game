@@ -4947,6 +4947,69 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "HU-BK": {
+    description:
+      "Kecskemét’s flag bears the city arms — red with a golden goat. The goat is canting: the name Kecskemét " +
+      "comes from Hungarian “kecske” (goat), and the animal recalls the pastoral, stock-raising heritage of this " +
+      "town on the Great Plain.",
+    sources: [
+      { title: "Kecskemét — Wikipedia", url: "https://en.wikipedia.org/wiki/Kecskemet" },
+    ],
+  },
+
+  "HU-BZ": {
+    description:
+      "Miskolc’s arms: on red, the crowned and haloed bust of King Saint Stephen holding the orb and sceptre, " +
+      "crested with a hajdú herdsman bearing wheat sheaves and a grape cluster (for the region’s farming and " +
+      "wine) and supported by a lion and a griffin. The design goes back to medieval town seals and was granted " +
+      "royal sanction by Francis Joseph I in 1909.",
+    sources: [
+      { title: "Miskolc — History (City of Miskolc)", url: "https://www.miskolc.hu/en/life-city/city-information/history-miskolc" },
+    ],
+  },
+
+  "HU-CS": {
+    description:
+      "Szeged’s arms, granted by Charles III in 1719: a blue field crossed by silver bars for the Tisza and " +
+      "Maros rivers that meet at the city, a golden sun for Szeged the “city of sunshine” and its endless renewal " +
+      "(it rebuilt itself after the great flood of 1879), and a lamb (Agnus Dei) in the crest.",
+    sources: [
+      { title: "Szeged (Hungary) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hu-cs-sg.html" },
+    ],
+  },
+
+  "HU-FE": {
+    description:
+      "Székesfehérvár’s arms show a walled castle with an open gate. The town — whose name means “white castle " +
+      "with the seat (throne)” — was the coronation and burial city of the medieval Hungarian kings; the open " +
+      "gate signifies that the royal city welcomes all as its guests.",
+    sources: [
+      { title: "Székesfehérvár — Wikipedia", url: "https://en.wikipedia.org/wiki/Sz%C3%A9kesfeh%C3%A9rv%C3%A1r" },
+    ],
+  },
+
+  "HU-HB": {
+    description:
+      "Debrecen’s arms: the Lamb of God (Agnus Dei) with a banner, standing on two books — the Old and New " +
+      "Testaments, and a nod to the “Calvinist Rome’s” famous book culture — beneath a phoenix rising from " +
+      "flames, added by King Rudolf in 1600 as a symbol of the city’s endless renewal. Debrecen became a free " +
+      "royal town in 1693.",
+    sources: [
+      { title: "Debrecen — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Debrecen" },
+    ],
+  },
+
+  "HU-HE": {
+    description:
+      "Eger’s arms centre on its triple-towered castle — the fortress that in 1552 held out under István Dobó " +
+      "against a vast Ottoman army. A rampant unicorn holds a sword with a snake twined on it (faith defeating " +
+      "treachery), a sun and star mark day and night, and an eagle with a gospel stands for Saint John, patron of " +
+      "the Archdiocese of Eger.",
+    sources: [
+      { title: "Eger — Wikipedia", url: "https://en.wikipedia.org/wiki/Eger" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
