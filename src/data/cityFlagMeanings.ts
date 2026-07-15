@@ -4767,6 +4767,40 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "HR-01": {
+    description:
+      "Zagreb’s flag bears the city arms: on blue, a white three-towered fortress with an open golden gate on a " +
+      "green hill, a golden six-pointed star at upper right and a silver crescent at upper left. The hill is " +
+      "Gradec, the medieval town; the open gate signifies the hospitality and protectiveness of Zagreb’s people; " +
+      "the star and crescent are ancient Slavic symbols (of the deities Lada and Lelj). Adopted in its modern " +
+      "form in 1896.",
+    sources: [
+      { title: "Coat of arms of Zagreb — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zagreb" },
+    ],
+  },
+
+  "HR-04": {
+    description:
+      "Karlovac’s flag bears the city arms, which recall its origin as a star-shaped fortress. The town was built " +
+      "from nothing in 1579 by Archduke Charles II of Inner Austria — hence “Karlovac”, Charles’s town — as a " +
+      "six-pointed star fort guarding the Habsburg lands against the Ottomans, a geometric plan still legible in " +
+      "the old town today.",
+    sources: [
+      { title: "Karlovac — Wikipedia", url: "https://en.wikipedia.org/wiki/Karlovac" },
+    ],
+  },
+
+  "HR-08": {
+    description:
+      "Rijeka’s flag bears the city arms: a black double-headed eagle standing on a rock, holding a jug from " +
+      "which water pours endlessly into the sea. “Rijeka” means “river”, and the flowing water is the Rječina on " +
+      "which the city stands, under the motto “Indeficienter” (“inexhaustibly”); the imperial eagle and arms were " +
+      "granted by Emperor Leopold I in 1659.",
+    sources: [
+      { title: "Rijeka’s two-headed eagle — Rijeka 2020", url: "https://rijeka2020.eu/en/rijekas-two-headed-eagle/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
