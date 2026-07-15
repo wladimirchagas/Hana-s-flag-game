@@ -4510,6 +4510,70 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "GE-AJ": {
+    description:
+      "Batumi’s flag: a blue field with three white stripes, bearing the city arms — a shield divided by a wavy " +
+      "line, with three golden bezants (coins) on red above a silver base. The bezants stand for trade and the " +
+      "wavy line and crossed anchors for Batumi’s life as Georgia’s chief Black Sea port on the coast of Adjara.",
+    sources: [
+      { title: "Batumi (Georgia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge-batu.html" },
+    ],
+  },
+
+  "GE-IM": {
+    description:
+      "Kutaisi’s flag: quartered green and blue, with a large golden Georgian cross patty in the centre and a " +
+      "small one in each quarter. Gold stands for nobility, green for freedom and hope, blue for greatness; the " +
+      "colours come from Vakhushti Bagrationi’s 18th-century arms for Imereti, and the blue also recalls the sea " +
+      "by which the Argonauts reached ancient Colchis, whose capital Aia is identified with Kutaisi. Adopted 2009.",
+    sources: [
+      { title: "Kutaisi (Georgia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge-kuta.html" },
+    ],
+  },
+
+  "GE-KA": {
+    description:
+      "Telavi’s flag: divided red over blue with a white winged horse across it. The horse is Merani, the " +
+      "mythical steed of the Romantic poet Nikoloz Baratashvili’s poem — a Georgian Pegasus symbolising freedom " +
+      "and the soaring spirit. Telavi is the heart of Kakheti, Georgia’s “Wine Land”, whose vineyards its arms " +
+      "also celebrate. Adopted 2011.",
+    sources: [
+      { title: "Telavi (Georgia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge-tela.html" },
+    ],
+  },
+
+  "GE-MM": {
+    description:
+      "Mtskheta’s flag reverses the national five-cross flag — a red field with a white Georgian cross patty " +
+      "touching the edges and a smaller white cross in each canton. The Christian crosses befit Mtskheta, the " +
+      "ancient royal and spiritual capital of Georgia where Saint Nino brought Christianity and the country was " +
+      "baptised in the 4th century.",
+    sources: [
+      { title: "Mtskheta (Georgia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge-mtsk.html" },
+    ],
+  },
+
+  "GE-RL": {
+    description:
+      "Ambrolauri’s flag: purple over white with a white Georgian cross. The purple stands for the red " +
+      "Khvanchkara wine that made this Racha town famous — pressed from the local Aleksandrouli and Mujuretuli " +
+      "grapes — and the city arms add the 17th-century Machabeli watchtower of its old centre.",
+    sources: [
+      { title: "Ambrolauri (Georgia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge-ambr.html" },
+    ],
+  },
+
+  "GE-SZ": {
+    description:
+      "Zugdidi’s flag: quartered blue and purple by a golden cross, with a purple shield at its centre bearing " +
+      "the golden Robe of the Most Holy Mother of God over a wavy silver base. The Robe is the venerated relic " +
+      "kept at Zugdidi and borne each 2 July to the cathedral; the city was the seat of the Dadiani princes of " +
+      "Samegrelo.",
+    sources: [
+      { title: "Zugdidi (Georgia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ge-zugd.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
