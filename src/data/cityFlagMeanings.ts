@@ -4230,6 +4230,95 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "FR-25": {
+    description:
+      "Besançon’s arms: a black eagle on gold, clutching two red columns across its wings. The eagle marks the " +
+      "city as a free imperial city of the Holy Roman Empire (adopted in the late 13th century); the two columns " +
+      "recall the ancient columns that once stood on the hill of the citadel and evoke the Pillars of Hercules, " +
+      "the personal emblem of Emperor Charles V, who granted the present arms in 1537.",
+    sources: [
+      { title: "Armoiries de Besançon — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Armoiries_de_Besan%C3%A7on" },
+    ],
+  },
+
+  "FR-26": {
+    description:
+      "Valence’s arms: on red a silver cross charged at its centre with a blue tower, with two griffin supporters. " +
+      "The cross stands for the city’s ancient bishopric and the tower for comital power — the bishop of Valence " +
+      "was also its count — while the griffins carry the motto “Unguibus et rostro” (“with claws and beak”), for " +
+      "the city’s tenacious defence.",
+    sources: [
+      { title: "Valence — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=5236" },
+    ],
+  },
+
+  "FR-2A": {
+    description:
+      "A blue-and-white flag in the colours of Ajaccio’s arms: on blue, a silver column crowned, between two " +
+      "lions. The column is that of the Colonna family, whose name the device puns on; the Genoese Senate " +
+      "granted the arms in 1575, and the original greyhounds were later changed to lions as a mark of the city’s " +
+      "growing independence from Genoa.",
+    sources: [
+      { title: "Drapeaux d’Ajaccio — emblemes.free.fr", url: "http://emblemes.free.fr/site/index.php?option=com_content&view=article&id=1161:drapeaux-dajaccio" },
+    ],
+  },
+
+  "FR-31": {
+    description:
+      "A red field bearing the golden Occitan cross of Toulouse — a cross cléchée (its arms pierced like a key’s " +
+      "bit), voided, and tipped with twelve “pommettes” (little discs). It is the cross of the Counts of " +
+      "Toulouse, appearing on the seal of Raymond VI in 1211 and thereafter the arms of the city and of " +
+      "Languedoc; the twelve discs are popularly linked to the twelve months or the twelve Apostles.",
+    sources: [
+      { title: "Croix occitane — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Croix_occitane" },
+    ],
+  },
+
+  "FR-33": {
+    description:
+      "Bordeaux’s arms: a silver castle (the old Grosse-Cloche gate) above a silver crescent on the waves of the " +
+      "Garonne, with the leopard of England, beneath a blue chief of golden fleurs-de-lis. The crescent is the " +
+      "river’s bend that gives Bordeaux its nickname “Port de la Lune”; the leopard recalls three centuries of " +
+      "English rule, and the fleurs-de-lis its return to France in 1453. The motto “Lilia sola regunt lunam, " +
+      "undas, castra, leonem” reads the shield — the lilies alone rule the moon, the waves, the fort and the lion.",
+    sources: [
+      { title: "Blason de Bordeaux — Wikipédia (fr)", url: "https://fr.wikipedia.org/wiki/Blason_de_Bordeaux" },
+    ],
+  },
+
+  "FR-34": {
+    description:
+      "Montpellier’s arms: on blue, Our Lady enthroned holding the Christ Child, with the silver letters “A” and " +
+      "“M” (Ave Maria) above and, below, a silver shield charged with a red roundel. The Virgin and the blue " +
+      "field proclaim the city’s Marian patronage (from 1204); the red roundel is the emblem of the Guilhem " +
+      "lords who ruled Montpellier until then.",
+    sources: [
+      { title: "Montpellier — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=12019" },
+    ],
+  },
+
+  "FR-35": {
+    description:
+      "Rennes’ arms: a field paly of silver and black, beneath a silver chief strewn with five black ermine " +
+      "spots. The ermine is the emblem of Brittany, marking the city as its historic capital; the black-and-white " +
+      "pales are said to recall the wooden palisades that defended Rennes through its many sieges. The design " +
+      "dates from 1580, when Rennes became the seat of the Breton parliament.",
+    sources: [
+      { title: "Rennes — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=13838" },
+    ],
+  },
+
+  "FR-37": {
+    description:
+      "Tours’ canting arms: three silver towers (for the name Tours) with red roofs and weathervanes, beneath a " +
+      "blue chief of three golden fleurs-de-lis. The fleurs-de-lis mark Tours as a loyal “good town” of the " +
+      "French crown; the motto “Sustentant lilia turres” (“the towers uphold the lilies”) expresses that " +
+      "fidelity. The towers echo those of the basilica of Saint-Martin.",
+    sources: [
+      { title: "Tours — Armorial de France", url: "https://armorialdefrance.fr/page_blason.php?ville=14324" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
