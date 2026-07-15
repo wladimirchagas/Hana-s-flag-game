@@ -3983,6 +3983,122 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ET-HA": {
+    description:
+      "The flag of the Harari Region — of which Harar is the capital and only city — a white field crossed by red " +
+      "and green bands bearing the regional seal. White stands for peace, equality and justice; red for the " +
+      "Harari people’s struggle and sacrifice for their rights and freedom; green for agricultural development. " +
+      "In the seal a pigeon marks peace and democracy, a scale justice and equality, the Jugol (the walled " +
+      "city’s traditional architecture) Harari history and culture, and a plough, wheat and coffee branch the " +
+      "region’s farming, food self-sufficiency and coffee economy.",
+    sources: [
+      { title: "Description of the Harari Regional Flag (Hareri National League) — Wikimedia file page", url: "https://en.wikipedia.org/wiki/File:Harari_Flag.svg" },
+    ],
+  },
+
+  "FI-07": {
+    description:
+      "A gold field bearing Kokkola’s emblem: a black tar barrel with red flames rising from both ends and the " +
+      "bung. Granted when King Gustavus II Adolphus chartered the town in 1620, it records the tar-burning and " +
+      "tar trade that made Kokkola one of Finland’s wealthiest export ports into the 19th century.",
+    sources: [
+      { title: "Kokkola — coat of arms (Wikipedia)", url: "https://en.wikipedia.org/wiki/Kokkola" },
+    ],
+  },
+
+  "FI-10": {
+    description:
+      "A green field bearing Rovaniemi’s arms: a silver pall (a Y-shaped fork) with a golden flame in the upper " +
+      "corner. The pall stands for the meeting of the two rivers — the Kemijoki and the Ounasjoki — at " +
+      "Rovaniemi; the flame is a torch of enlightenment and of the city’s rebuilding after its wartime " +
+      "destruction. Adopted 1956.",
+    sources: [
+      { title: "Rovaniemi — coat of arms (Wikipedia)", url: "https://en.wikipedia.org/wiki/Rovaniemi" },
+    ],
+  },
+
+  "FI-11": {
+    description:
+      "A red field bearing Tampere’s arms, all in gold: a wavy bar for the Tammerkoski rapids that run through " +
+      "the city and once powered its mills, above it a hammer (in the form of a T) for its industry, and below " +
+      "a caduceus for commerce. Designed by Olof Eriksson, 1960.",
+    sources: [
+      { title: "Tampere — coat of arms (Wikipedia)", url: "https://en.wikipedia.org/wiki/Tampere" },
+    ],
+  },
+
+  "FI-12": {
+    description:
+      "A red field bearing the golden Vasa emblem — a sheaf or bundle (Swedish “vase”), the badge of the royal " +
+      "House of Vasa — which the town took when it was renamed Vaasa by royal charter in 1611. Below it hangs " +
+      "the Cross of Liberty with swords and laurel, an augmentation granted for Vaasa’s role as the “white” " +
+      "capital during the 1918 civil war.",
+    sources: [
+      { title: "Vaasan vaakuna — Wikipedia (fi)", url: "https://fi.wikipedia.org/wiki/Vaasan_vaakuna" },
+    ],
+  },
+
+  "FI-13": {
+    description:
+      "Joensuu’s banner of arms, divided into red, white and black by two lines: an embattled (castle-wall) line " +
+      "above, for the city’s position near Finland’s eastern border, and a wavy line below, for the Pielisjoki " +
+      "river on which it stands. The red-and-black colouring is that of Karelian heraldry. Adopted 1957.",
+    sources: [
+      { title: "Joensuun vaakuna — Wikipedia (fi)", url: "https://fi.wikipedia.org/wiki/Joensuun_vaakuna" },
+    ],
+  },
+
+  "FI-14": {
+    description:
+      "A red field bearing Oulu’s arms: a golden four-towered castle with blue gates above a salmon on the water. " +
+      "The castle recalls Oulu Castle, built in 1590 at the town’s founding site on the Oulujoki, and the salmon " +
+      "the river’s great salmon fishery, long the city’s economic mainstay. Adopted 1954.",
+    sources: [
+      { title: "Oulun vaakuna — Wikipedia (fi)", url: "https://fi.wikipedia.org/wiki/Oulun_vaakuna" },
+    ],
+  },
+
+  "FI-17": {
+    description:
+      "A gold field bearing a crowned black bear’s head — Pori’s emblem since a 17th-century seal, a canting " +
+      "reference to the city’s Swedish name Björneborg (“Bear Fortress”). The city is still nicknamed “Bear " +
+      "City”; the arms of its founder, Duke John, carried the motto “Deus protector noster”.",
+    sources: [
+      { title: "Pori — coat of arms (Wikipedia)", url: "https://en.wikipedia.org/wiki/Pori" },
+    ],
+  },
+
+  "FI-18": {
+    description:
+      "A blue field bearing Helsinki’s arms: a golden boat riding silver waves, with a golden crown above it. " +
+      "The vessel recalls the arrival of Swedish settlers to found the town by sea in 1550 and its long life as " +
+      "a Baltic port; the crown is a mark of honour. Present design by A. W. Rancken, 1951.",
+    sources: [
+      { title: "Helsingin vaakuna — Wikipedia (fi)", url: "https://fi.wikipedia.org/wiki/Helsingin_vaakuna" },
+    ],
+  },
+
+  "FI-19": {
+    description:
+      "A blue banner of arms bearing a golden letter “A” — a monogram of the Virgin Mary, the city’s patroness — " +
+      "flanked and surmounted by four silver fleurs-de-lis. Turku, the oldest city in Finland and its medieval " +
+      "capital, has borne this Marian device (from its Swedish name Åbo) since the Middle Ages.",
+    sources: [
+      { title: "Turku (Finland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/fi-ls853.html" },
+    ],
+  },
+
+  "FI-AX": {
+    description:
+      "Mariehamn’s arms: a blue field with a golden anchor, beneath a gold chief bearing three green linden " +
+      "leaves. The anchor stands for the town’s seafaring and its great age of sail (Mariehamn was long home to " +
+      "one of the world’s last commercial sailing fleets); the linden leaves for the lime-tree-lined esplanades " +
+      "that distinguish the town. Confirmed 1951.",
+    sources: [
+      { title: "Mariehamn — coat of arms (Wikipedia)", url: "https://en.wikipedia.org/wiki/Mariehamn" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
