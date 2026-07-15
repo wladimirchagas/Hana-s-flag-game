@@ -5053,6 +5053,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "HU-ZA": {
+    description:
+      "Zalaegerszeg’s flag is light blue with the city arms and the town’s name in gold below. The arms show " +
+      "Saint Mary Magdalene, a whip beneath her feet, reaching out with a laurel wreath toward a stylised castle. " +
+      "The present design was adopted in 1992.",
+    sources: [
+      { title: "Zalaegerszeg (Hungary) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hu-za-zg.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
