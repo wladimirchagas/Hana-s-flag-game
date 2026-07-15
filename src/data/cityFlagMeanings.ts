@@ -4574,6 +4574,38 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "GQ-BN": {
+    description:
+      "Malabo’s flag bears the colonial-era arms of the city (then Santa Isabel): the Pico de Santa Isabel — the " +
+      "great volcanic peak of Bioko above the sea — with the crowned cipher of Queen Isabella II and the city’s " +
+      "port, within a border of the castles of Castile and lions of León. The arms were drawn up by the Spanish " +
+      "Real Academia de la Historia.",
+    sources: [
+      { title: "Las armas de la ciudad de Santa Isabel — Doce Linajes de Soria (Ceballos-Escalera)", url: "https://docelinajes.es/2016/05/de-la-heraldica-colonial-las-armas-de-la-ciudad-de-santa-isabel-en-la-guinea-espanola-por-el-dr-d-alfonso-de-ceballos-escalera-y-gila-vizconde-de-ayala/" },
+    ],
+  },
+
+  "GW-GA": {
+    description:
+      "Gabú’s arms (under its colonial name Nova Lamego): on red, a silver antique sword with a gold hilt " +
+      "flanked by two Fula swords, within a silver border of four Portuguese shields alternating with four red " +
+      "crescents. The swords mark the region’s martial tradition and the crescents its Fula, largely Muslim, " +
+      "population; the shields the Portuguese administration. Granted 1968.",
+    sources: [
+      { title: "Concelho de Gabú — Heráldica Cívica", url: "https://www.heraldicacivica.pt/gui-gabu.html" },
+    ],
+  },
+
+  "GW-OI": {
+    description:
+      "Farim’s arms: on gold, three black heads each with a red ribbon about the hair, beneath a silver mural " +
+      "crown of four towers. The gold field stands for wealth and the three heads for the town’s people; the " +
+      "arms were granted in 1968 under Portuguese municipal heraldry.",
+    sources: [
+      { title: "Concelho de Farim — Heráldica Cívica", url: "https://www.heraldicacivica.pt/gui-farim.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
