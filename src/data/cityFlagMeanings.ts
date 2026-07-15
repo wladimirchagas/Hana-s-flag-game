@@ -4099,6 +4099,29 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "GB-GI": {
+    description:
+      "The flag of Gibraltar — a banner of the city’s arms: a white field above a red band, charged with a " +
+      "three-towered red castle from whose gate hangs a golden key. Granted by a royal warrant of Queen " +
+      "Isabella I of Castile in 1502, the castle stands for the fortress of Gibraltar and the key for its command " +
+      "of the strait — “the key to the Mediterranean”. It is the only British Overseas Territory flag that bears " +
+      "no Union Jack.",
+    sources: [
+      { title: "Flag of Gibraltar — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
+    ],
+  },
+
+  "GR-B": {
+    description:
+      "The flag of Thessaloniki: divided vertically white and blue, with a golden disc at the centre bearing the " +
+      "likeness of Alexander the Great taken from an ancient coin, and the top edge of the white part drawn as " +
+      "battlements for the city’s walls. Alexander’s image ties the city to the Macedonian world into which it " +
+      "was founded (c. 315 BC); the present design was adopted in 2006.",
+    sources: [
+      { title: "Salonica (Municipality, Greece) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gr-mh-tl.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
