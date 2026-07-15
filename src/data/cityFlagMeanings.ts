@@ -3884,6 +3884,105 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ES-CE": {
+    description:
+      "A gyronny of black and white — the ancient flag of Saint Vincent, better known as the flag of Lisbon, in " +
+      "the colours of the Dominican Order — charged with the city arms: the five blue Portuguese escutcheons " +
+      "(the quinas) within a red border of golden castles. The design records that Ceuta was Portuguese from " +
+      "1415 until it passed to the Spanish crown in 1640, keeping Lisbon’s banner as its own.",
+    sources: [
+      { title: "Bandera de Ceuta — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Ceuta" },
+    ],
+  },
+
+  "ES-GC": {
+    description:
+      "A field bearing the city arms granted by Queen Joanna in 1506: a castle and lion for the direct rule of " +
+      "the Crown of Castile, a tower recalling the town’s fortifications, waves for the surrounding ocean, and " +
+      "palm trees flanked by dogs — the palms alluding to the victories over Drake (1595) and van der Does " +
+      "(1599) and, with the dogs, to the name of the Canary (“Dog”) Islands.",
+    sources: [
+      { title: "Las Palmas de Gran Canaria — Símbolos de Canarias", url: "https://simbolosdecanarias.proel.net/index.php/esp/islas/gran-canaria/las-palmas-de-gran-canaria" },
+      { title: "Las Palmas de Gran Canaria — Flags of the World", url: "https://www.crwflags.com/fotw/flags/es-gc-lp.html" },
+    ],
+  },
+
+  "ES-GU": {
+    description:
+      "A purple (morado) field — the colour of Castile’s medieval banners — bearing the city arms: a walled " +
+      "medieval town with church towers and a castle beneath a night sky of moon and stars, and before it, on a " +
+      "green meadow, an armed knight leading a host of foot soldiers. The rider is the town’s “juez” (judge), " +
+      "the people’s magistrate who carried the city standard at the head of civic processions.",
+    sources: [
+      { title: "Escudo de Guadalajara (España) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Guadalajara_(Espa%C3%B1a)" },
+      { title: "El escudo de Guadalajara — Herrera Casado", url: "https://www.herreracasado.com/1980/09/20/el-escudo-de-guadalajara/" },
+    ],
+  },
+
+  "ES-H": {
+    description:
+      "A light-blue field bearing the city arms on silver: a green olive tree flanked by a golden castle and a " +
+      "black anchor, encircled by the motto “Portus maris et terrae custodia” (“Port of the sea and sentinel of " +
+      "the land”). The castle stands for the city’s fortifications and the anchor for its maritime life as an " +
+      "Atlantic port.",
+    sources: [
+      { title: "Escudo de Huelva — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Huelva" },
+    ],
+  },
+
+  "ES-OR": {
+    description:
+      "A blue field bearing the city arms on silver: a five-arched golden bridge over blue-and-silver waves — " +
+      "the great bridge over the river Miño — flanked by a golden castle and a golden lion holding a sword, the " +
+      "emblems of Castile and León, ensigned with the royal crown.",
+    sources: [
+      { title: "Escudo de Orense — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Orense" },
+    ],
+  },
+
+  "ES-P": {
+    description:
+      "A crimson field bearing the quartered city arms: on blue, a golden fleur-de-lis “Cross of Victory” — " +
+      "granted by King Alfonso VIII to Bishop Tello Téllez de Meneses for Palencia’s part in the 1212 victory " +
+      "at Las Navas de Tolosa — quartered with a golden three-towered castle on red for the Kingdom of Castile, " +
+      "ensigned with the royal crown.",
+    sources: [
+      { title: "Escudo de Palencia — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Palencia" },
+    ],
+  },
+
+  "ES-SO": {
+    description:
+      "A white field bearing the city arms: on red, a silver castle from whose keep rises the crowned bust of a " +
+      "king — Alfonso VIII of Castile, sheltered by Soria’s nobles in his childhood — with the silver border " +
+      "carrying the motto “Soria pura, cabeza de Extremadura”. The red field stands for the blood shed by the " +
+      "city’s knights, and “cabeza de Extremadura” marks Soria as the chief frontier town of the Reconquista.",
+    sources: [
+      { title: "Escudo de Soria — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Soria" },
+    ],
+  },
+
+  "ES-SS": {
+    description:
+      "A white field with a France-blue square at the upper hoist — the maritime ensign a royal order gave the " +
+      "port of San Sebastián in the early 19th century, which the city later adopted as its flag (officialised " +
+      "1999). The blue stands for the sea and the white for the peace and unity of the city’s people.",
+    sources: [
+      { title: "Bandera de Donostia/San Sebastián — Ayto. (via Comprarbanderas)", url: "https://www.comprarbanderas.es/bandera-san-sebastian-id328.html" },
+      { title: "Escudo de San Sebastián — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_San_Sebasti%C3%A1n" },
+    ],
+  },
+
+  "ES-ZA": {
+    description:
+      "The Seña Bermeja: nine horizontal bands ending in points — eight red and one green. The eight red bands " +
+      "are said to stand for the eight victories of the Lusitanian leader Viriato over Rome; the green band was " +
+      "added by King Ferdinand the Catholic to reward Zamora’s loyalty at the Battle of Toro (1476).",
+    sources: [
+      { title: "Bandera de Zamora — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Zamora" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
