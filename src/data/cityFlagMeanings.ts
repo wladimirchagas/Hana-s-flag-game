@@ -3777,6 +3777,113 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ES-SE": {
+    description:
+      "A crimson field bearing the city’s golden “NO·DO” device — the letters NO and DO flanking a skein of " +
+      "wool (a madeja). Read as “No madeja do”, it puns on “No me ha dejado” (“It has not forsaken me”), the " +
+      "motto tradition credits King Alfonso X the Wise, who kept Seville loyal during his son’s revolt. The " +
+      "crimson recalls the Pendón de San Fernando, the banner of Ferdinand III who took the city in 1248.",
+    sources: [
+      { title: "Bandera de Sevilla — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Sevilla" },
+      { title: "NO8DO — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/NO8DO" },
+    ],
+  },
+
+  "ES-V": {
+    description:
+      "The Reial Senyera: four red bars on gold — the arms of the Crown of Aragon — with, at the hoist, a blue " +
+      "strip topped by a crown. Valencia’s flag adds this crowned blue band to the bare Aragonese bars as a " +
+      "royal distinction granted to the city, said to date from its conquest by King Jaume I in 1238.",
+    sources: [
+      { title: "Señera de Valencia — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Se%C3%B1era_valenciana" },
+    ],
+  },
+
+  "ES-Z": {
+    description:
+      "A crimson field bearing the city arms — a golden lion rampant, crowned. The lion is that of the kings of " +
+      "León and Castile: Alfonso VII, who held Zaragoza in the 1130s, is traditionally cited as the source of " +
+      "the charge, which stands for strength and nobility.",
+    sources: [
+      { title: "Escudo de Zaragoza — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Zaragoza" },
+    ],
+  },
+
+  "ES-TO": {
+    description:
+      "A crimson (carmesí) field bearing the black double-headed Imperial eagle behind the quartered city arms " +
+      "of castles and lions, ensigned with a crown and encircled by the collar of the Order of the Golden " +
+      "Fleece. The double-headed eagle marks Toledo as the imperial capital of Charles V, granted for the " +
+      "city’s loyalty to the Habsburg crown.",
+    sources: [
+      { title: "Escudo de Toledo — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Toledo" },
+    ],
+  },
+
+  "ES-VA": {
+    description:
+      "A crimson field bearing the city arms: five golden flames encircled by eight castles, ensigned with a " +
+      "crown and ringed by the cross of the Order of San Fernando. The eight castles mark Valladolid’s bond to " +
+      "the Crown of Castile; the five flames are read by some authors as recalling the great fire that ravaged " +
+      "the city in 1561.",
+    sources: [
+      { title: "Bandera de Valladolid — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Valladolid" },
+    ],
+  },
+
+  "ES-SA": {
+    description:
+      "A red field bearing the quartered city arms: a stone bridge over the river Tormes crossed by a black " +
+      "bull, with a fig tree — the emblems of Salamanca’s Roman bridge and its territory — quartered with the " +
+      "red-and-gold bars of the Crown, ensigned with the royal crown.",
+    sources: [
+      { title: "Salamanca (Símbolos) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Salamanca" },
+    ],
+  },
+
+  "ES-S": {
+    description:
+      "A white-over-blue horizontal bicolour bearing the city arms: the Torre del Oro of Seville and the ship " +
+      "of Admiral Ramón de Bonifaz breaking the chains that barred the Guadalquivir at the conquest of Seville " +
+      "in 1248, with the two crowned heads of Santander’s patron saints, Emeterio and Celedonio.",
+    sources: [
+      { title: "Escudo de Santander — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Santander" },
+    ],
+  },
+
+  "ES-SG": {
+    description:
+      "A sky-blue field bearing the city arms — the silver two-tier Roman aqueduct, Segovia’s defining monument, " +
+      "surmounted by a human head set on rocks (marking the frontier land the city led in repopulating during " +
+      "the Reconquista), ensigned with the royal crown. The flag’s field was changed from purple to sky blue in " +
+      "the 1980s and fixed by the 2011 protocol regulation.",
+    sources: [
+      { title: "Bandera de Segovia — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Segovia" },
+      { title: "Escudo de Segovia — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Segovia" },
+    ],
+  },
+
+  "ES-T": {
+    description:
+      "A golden field charged with four wavy red bars — a variant of the Senyal Reial of the Crown of Aragon, " +
+      "attested in the city’s council records since the 14th century. The bars are rendered wavy at Tarragona " +
+      "as an allusion to the sea on which the port city stands.",
+    sources: [
+      { title: "Escudo de Tarragona — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Tarragona" },
+    ],
+  },
+
+  "ES-VI": {
+    description:
+      "A white field crossed by a red saltire (St Andrew’s cross), bearing the city arms — a castle topped by " +
+      "watchful ravens above a green mount, the fortress that names Gasteiz. The saltire design was adopted in " +
+      "1922; the arms carry the motto “Haec est victoria quae vincit” (“This is the victory that conquers”), a " +
+      "play on the name Vitoria given the town by King Sancho VI in 1181.",
+    sources: [
+      { title: "Vitoria (Símbolos) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Vitoria" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
