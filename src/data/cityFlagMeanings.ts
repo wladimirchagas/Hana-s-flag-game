@@ -4854,6 +4854,99 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "HR-02": {
+    description:
+      "Krapina’s flag: red with the town arms — a blue shield of three stone towers, the centre one tallest, " +
+      "behind a white defensive wall. The towers stand for Krapina’s medieval fortifications; the design derives " +
+      "from a 12th-century town seal.",
+    sources: [
+      { title: "Krapina (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-kr-kr.html" },
+    ],
+  },
+
+  "HR-12": {
+    description:
+      "Slavonski Brod’s arms: a golden heron holding a fish in its beak and a scroll in its claw, standing over a " +
+      "wavy bar — the river Sava, on which the town is a major port — with a crescent and five golden six-pointed " +
+      "stars above. The arms have been used since before 1820.",
+    sources: [
+      { title: "Slavonski Brod (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-sb-sb.html" },
+    ],
+  },
+
+  "HR-13": {
+    description:
+      "Zadar’s arms: on red, Saint Chrysogonus (Sveti Krševan) — the city’s patron — as a golden armoured knight " +
+      "with a golden halo, riding a black horse, holding a shield and a lance with a banner, above white " +
+      "embattled walls and blue waves. The charging saint-horseman became the emblem of the pride of the commune " +
+      "of Zadar.",
+    sources: [
+      { title: "Zadar (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-za-za.html" },
+    ],
+  },
+
+  "HR-14": {
+    description:
+      "Osijek’s arms bear the Tvrđa — the great Baroque star fortress the Habsburgs raised on the Drava after " +
+      "taking Osijek from the Ottomans in 1687 (built 1712–15). The largest fortress ensemble in Croatia, the " +
+      "Tvrđa is the city’s defining emblem.",
+    sources: [
+      { title: "Tvrđa — Wikipedia", url: "https://en.wikipedia.org/wiki/Tvr%C4%91a" },
+    ],
+  },
+
+  "HR-15": {
+    description:
+      "Šibenik’s arms show its patron, the Archangel Saint Michael, in a white tunic and red cloak with wings " +
+      "displayed, holding a golden orb and a golden spear with which he slays a black devil beneath him. Saint " +
+      "Michael became the dominant symbol of the Šibenik commune in the Middle Ages, and the city’s fortress and " +
+      "oldest church bear his name.",
+    sources: [
+      { title: "Šibenik — Heraldry of the World", url: "https://www.heraldry-wiki.com/heraldrywiki/index.php?title=%C5%A0ibenik" },
+    ],
+  },
+
+  "HR-16": {
+    description:
+      "Vukovar’s arms: two silver towers on a wall joined by an arch over an open gate, with a maiden in a green " +
+      "gown holding a blue shield charged with a golden lion. The towers stand for strength and protection and " +
+      "the lion for bravery; the arms took this form in 1871, when Old and New Vukovar were united.",
+    sources: [
+      { title: "Vukovar (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-vu-vu.html" },
+    ],
+  },
+
+  "HR-17": {
+    description:
+      "Split’s flag: navy blue, with the city’s name repeated and stylised into the bell tower of the Cathedral " +
+      "of Saint Domnius rising above the old town. The historic arms showed the walls of Diocletian’s Palace " +
+      "with that campanile behind them; the traditional colours are white for the city and blue for the sea.",
+    sources: [
+      { title: "Flag of Split — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Split" },
+    ],
+  },
+
+  "HR-19": {
+    description:
+      "Dubrovnik’s flag: a white field with a golden border bearing the figure and initials (S·B) of Saint " +
+      "Blaise (Sveti Vlaho), the city’s patron since the 10th century, who holds a model of the walled city. The " +
+      "old Republic of Ragusa also flew a flag inscribed “Libertas” (freedom), adopted when it abolished the " +
+      "slave trade in 1418.",
+    sources: [
+      { title: "Flag of Dubrovnik — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dubrovnik" },
+    ],
+  },
+
+  "HR-20": {
+    description:
+      "Čakovec’s arms: on blue, a silver embattled wall and tower between two golden six-pointed stars. They are " +
+      "the arms of the Ernusth de Csáktornya family, lords of Čakovec from the 15th century and later inherited " +
+      "by the Zrinski — canting arms, since “Csáktornya” means “Csáky’s tower”.",
+    sources: [
+      { title: "Čakovec (Croatia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/hr-ck-ck.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
