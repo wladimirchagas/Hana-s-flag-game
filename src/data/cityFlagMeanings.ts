@@ -5063,6 +5063,27 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ID-JB": {
+    description:
+      "Bandung’s flag: three horizontal bands of green, yellow and blue (2:1:2). Green stands for coolness and " +
+      "prosperity, yellow (gold) for the welfare and nobility of the people, and blue for loyalty. The colours " +
+      "were fixed in 1953.",
+    sources: [
+      { title: "Bendera Kota Bandung — Wikipedia (id)", url: "https://id.wikipedia.org/wiki/Bendera_Kota_Bandung" },
+    ],
+  },
+
+  "ID-JI": {
+    description:
+      "Surabaya’s emblem centres on a shark (sura) and a crocodile (baya) — the two beasts whose legendary " +
+      "battle names the city, standing for courage in the face of danger from sea and land (the motto is “Berani " +
+      "menghadapi bahaya yang datang mengancam”). Above them rises the Tugu Pahlawan, the Heroes’ Monument to " +
+      "the battle of 10 November 1945 that made Surabaya the “City of Heroes”.",
+    sources: [
+      { title: "Kota Surabaya — Wikipedia (id)", url: "https://id.wikipedia.org/wiki/Kota_Surabaya" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
