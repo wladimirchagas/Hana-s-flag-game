@@ -5523,6 +5523,98 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-CE": {
+    description:
+      "Caserta’s flag carries the city colours; its arms show a golden Ghibelline-battlemented tower on green " +
+      "mountains, lit by a golden rising sun, and two golden cornucopias — the horn of plenty of the “Campania " +
+      "felix”, for the abundance and fertility of the land.",
+    sources: [
+      { title: "Stemma del Comune di Caserta — Comuni-Italiani", url: "https://www.comuni-italiani.it/061/022/stemma.html" },
+    ],
+  },
+
+  "IT-CH": {
+    description:
+      "Chieti’s red flag bears the city arms: on blue, the hero Achilles armed on a rearing horse, within a " +
+      "border quartered by a white cross with a golden key in each part for the city’s four gates. Achilles was " +
+      "adopted as Chieti’s patron from the legend deriving its ancient name Teate from Theti (Thetis, his mother).",
+    sources: [
+      { title: "Stemma del Comune di Chieti — Comuni-Italiani", url: "https://www.comuni-italiani.it/069/022/stemma.html" },
+    ],
+  },
+
+  "IT-CI": {
+    description:
+      "Carbonia’s arms: on blue, a miner’s lamp atop a bank of coal. The city — its name means “coal town” — was " +
+      "founded in the late 1930s to house the workers of the Sulcis coal mines, and the arms, granted in 1939, " +
+      "record that mining vocation.",
+    sources: [
+      { title: "Carbonia — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Carbonia" },
+    ],
+  },
+
+  "IT-CL": {
+    description:
+      "Caltanissetta’s arms: on red, a golden three-towered castle under an antique crown, with a helmeted " +
+      "warrior’s head emerging from the right tower and a hand grasping a sword from the left — an emblem of the " +
+      "fortified city’s martial defence.",
+    sources: [
+      { title: "Stemma del Comune di Caltanissetta — Comuni-Italiani", url: "https://www.comuni-italiani.it/085/004/stemma.html" },
+    ],
+  },
+
+  "IT-CO": {
+    description:
+      "Como’s flag is red with a white cross — the Ghibelline cross of a city loyal to the Empire (Guelph cities " +
+      "like Milan bear the reverse, a red cross on white). The gonfalone also carries the motto “Libertas”, from " +
+      "the banner the women of Como wove for the city after Garibaldi freed it in 1859.",
+    sources: [
+      { title: "Como e il suo Stemma — Incuriosire.it", url: "https://www.incuriosire.it/como-e-il-suo-stemma/" },
+    ],
+  },
+
+  "IT-CR": {
+    description:
+      "Cremona’s flag is barry of red and silver; its arms add an arm holding a golden ball. The ball recalls " +
+      "the annual tribute of a solid gold ball that Cremona owed the Empire, and the champion Giovanni Baldesio " +
+      "(“Zanen de la Bala”), who won a duel that freed the city of it — “fortitudo mea in brachio”, my strength " +
+      "is in my arm.",
+    sources: [
+      { title: "Stemma di Cremona — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Cremona" },
+    ],
+  },
+
+  "IT-CS": {
+    description:
+      "Cosenza’s arms: on blue, a golden mountain of seven peaks — the seven hills that surround the ancient " +
+      "city. Adopted by tradition in 1222, when Emperor Frederick II came to Cosenza, the seven hills stand for " +
+      "the citizens’ strength and their resolve to defend their freedoms.",
+    sources: [
+      { title: "Cosa rappresenta la bandiera di Cosenza — Tele Cosenza", url: "https://www.telecosenza.it/cosa-rappresenta-la-bandiera-di-cosenza-il-significato-dello-stemma-628/" },
+    ],
+  },
+
+  "IT-CT": {
+    description:
+      "Catania’s flag carries the city colours; its emblem is the Liotru, a black elephant carved from lava. " +
+      "Catania took the elephant as its symbol in 1239, when Frederick II raised it to a royal city; legend held " +
+      "the statue to be magical, protecting the city from the eruptions of Mount Etna.",
+    sources: [
+      { title: "Fontana dell’Elefante — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Fontana_dell%27Elefante" },
+    ],
+  },
+
+  "IT-CZ": {
+    description:
+      "Catanzaro’s arms: on silver, a crowned imperial eagle holding a blue scroll with the motto “Sanguinis " +
+      "effusione” (“with the shedding of blood”), a red shield on its breast bearing the three green hills the " +
+      "city stands on. The eagle was granted by Charles V for the citizens’ fierce defence against the French " +
+      "siege of 1528; the city’s colours are yellow and red.",
+    sources: [
+      { title: "Stemma di Catanzaro — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Catanzaro" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
