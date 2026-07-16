@@ -6357,6 +6357,105 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Japan — prefectural-capital city emblems (市章) ─────────────────────────
+  "JP-01": {
+    description:
+      "Sapporo’s emblem, adopted in 1911, layers several meanings. The outer hexagon is a six-petalled snow " +
+      "crystal, symbol of Hokkaidō; the inner circular figure stylises the character 「札」 (satsu) of Sapporo and " +
+      "doubles as the katakana 「ロ」 (ro); and the central star recalls the Big Dipper — the ‘north’ — while forming " +
+      "the katakana 「ホ」 (ho). Read together the parts spell ‘Ho-ro’, for Hokkaidō and Sapporo.",
+    sources: [
+      { title: "札幌市徽章 — City of Sapporo (official)", url: "https://www.city.sapporo.jp/ncms/reiki/d1w_reiki_nonframe/H144909140800A/H144909140800A_j.html" },
+    ],
+  },
+
+  "JP-02": {
+    description:
+      "Aomori’s emblem, adopted in 2005, stylises the character 「青」 (ao) of the city’s name: the circle is the " +
+      "‘moon’ (月) element of 青, and the seven points of the star are the remainder of the character, likened to " +
+      "the Big Dipper (北斗七星) — marking Aomori as the northern tip of Honshū.",
+    sources: [
+      { title: "市のシンボル — City of Aomori (official)", url: "https://www.city.aomori.aomori.jp/shiseijouhou/aomorishi-konnamati/symbol/index.html" },
+    ],
+  },
+
+  "JP-03": {
+    description:
+      "Morioka’s emblem is two lozenges crossed at right angles, a mark borne on the jingasa helmets of the domain " +
+      "era. The lozenge refers to the Nanbu clan’s descent from the Kai Genji; it is also read as a stylised " +
+      "folded crane, echoing the Nanbu ‘crane’ crest. Morioka grew as the castle town of the Nanbu.",
+    sources: [
+      { title: "市章と市のシンボル — City of Morioka (official)", url: "https://www.city.morioka.iwate.jp/shisei/morioka_profile/1009294.html" },
+    ],
+  },
+
+  "JP-04": {
+    description:
+      "Sendai’s emblem, fixed in 1933, is based on the ‘three-line’ crest (三ツ引両, mitsu-hikiryō) of the Date clan, " +
+      "the city’s founding lords, worked so as to form the character 「仙」 (sen) of Sendai. Having no prescribed " +
+      "colour, it is popularly shown in green for the ‘City of Trees’ (杜の都).",
+    sources: [
+      { title: "紋章 — City of Sendai (official)", url: "https://www.city.sendai.jp/chosatoke/shise/toke/gaikyo/monsho.html" },
+    ],
+  },
+
+  "JP-05": {
+    description:
+      "Akita’s emblem, adopted in 1928, combines a target bearing the ‘arrow-stop’ form (矢留, yadome) — a device of " +
+      "the Satake clan, former lords of the Akita domain — with the character 「田」 (ta) of the city’s name.",
+    sources: [
+      { title: "市章と市のシンボル — City of Akita (official)", url: "https://www.city.akita.lg.jp/shisei/shokai/1027566.html" },
+    ],
+  },
+
+  "JP-06": {
+    description:
+      "Yamagata’s emblem, adopted in 1954, forms the character 「山」 (yama) of the city’s name. Its three inner " +
+      "strokes stand for liberty, equality and fraternity, the outer circle for unity, and the sharp lower angle " +
+      "for firm resolve.",
+    sources: [
+      { title: "市の概要 — City of Yamagata (official)", url: "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/yamagatajoho/1008447.html" },
+    ],
+  },
+
+  "JP-07": {
+    description:
+      "Fukushima’s emblem arranges nine 「フ」 (fu) and four 「マ」 (ma) — the katakana of フクシマ (Fukushima) — within a " +
+      "frame, expressing great development contained within the city’s four bounds.",
+    sources: [
+      { title: "市章 — City of Fukushima (official)", url: "https://www.city.fukushima.fukushima.jp/soshiki/3/1006/1/828.html" },
+    ],
+  },
+
+  "JP-08": {
+    description:
+      "Mito’s emblem, adopted in 1933, stylises the character 「水」 (mi) of the city’s name, spreading vigorously in " +
+      "all directions, with three 「ト」 (to) forming its core — together reading ミト (Mito). (The plum, for which " +
+      "Mito’s Kairaku-en garden is famous, is the city’s tree, not part of the emblem.)",
+    sources: [
+      { title: "水戸市の紋章 — City of Mito (official)", url: "https://www.city.mito.lg.jp/page/4007.html" },
+    ],
+  },
+
+  "JP-09": {
+    description:
+      "Utsunomiya’s emblem, adopted in 1911, combines a tortoise-shell hexagon (亀甲) with the character 「宮」 " +
+      "(miya): Utsunomiya Castle was known as Kamegaoka — ‘tortoise-hill’ — Castle. It signifies the homeland’s " +
+      "long glory and endless development.",
+    sources: [
+      { title: "市章・市の花・市の木 — City of Utsunomiya (official)", url: "https://www.city.utsunomiya.lg.jp/shisei/gaiyo/symbol/1007488.html" },
+    ],
+  },
+
+  "JP-10": {
+    description:
+      "Maebashi’s emblem, adopted in 1909, is the ‘ring’ (輪貫, wanuki) taken from the horse-insignia (umajirushi) " +
+      "of the Matsudaira clan, the former lords of the Maebashi domain — rendered as a simple open circle.",
+    sources: [
+      { title: "市の木・市の花・市章 — City of Maebashi (official)", url: "https://www.city.maebashi.gunma.jp/soshiki/seisaku/kohobrand/gyomu/3/2/3775.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
