@@ -6664,6 +6664,104 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "JP-31": {
+    description:
+      "Tottori’s emblem, adopted in 1915, overlays the circle (○) and lozenge (◇) marks used as seals in the old " +
+      "Inaba-Hōki (因伯) domain and sets the character 「鳥」 (tori) in small-seal script within them. The circle was " +
+      "taken to stand for the literary arts and the lozenge for the martial — their union expressing the balanced " +
+      "development of the city.",
+    sources: [
+      { title: "鳥取市の記章 — City of Tottori (official)", url: "https://www.city.tottori.lg.jp/www/contents/1191225738718/index.html" },
+    ],
+  },
+
+  "JP-32": {
+    description:
+      "Matsue’s emblem stylises the character 「松」 (matsu, pine) of the city’s name: the outer ring stands for " +
+      "Kameda, the hill of the castle site, and the inner figure for pine needles.",
+    sources: [
+      { title: "徽章（市章） — City of Matsue (official)", url: "https://www.city.matsue.lg.jp/soshikikarasagasu/somubu_somuka/shinogaiyo/3076.html" },
+    ],
+  },
+
+  "JP-33": {
+    description:
+      "Okayama’s emblem, adopted in 1900, stylises the character 「岡」 (oka) at its centre, ringed by the hills — " +
+      "Ishiyama, Tenjinyama — that gave the city its name; it expresses boundless development in every direction, " +
+      "the white cross standing for purity and limitless expansion.",
+    sources: [
+      { title: "市章・市民憲章 — City of Okayama (official)", url: "https://www.city.okayama.jp/shisei/0000020691.html" },
+    ],
+  },
+
+  "JP-34": {
+    description:
+      "Hiroshima’s emblem, adopted in 1896, is drawn from the ‘three-pull’ (三つ引, mitsu-hiki) banner of the former " +
+      "Geishū (Hiroshima) domain, its three bars given flowing curves to represent the city’s rivers — symbolising " +
+      "Hiroshima as a ‘water capital’ (水都) on its delta.",
+    sources: [
+      { title: "市章 — City of Hiroshima (official)", url: "https://www.city.hiroshima.lg.jp/shisei/gaiyo/1021752/1020296.html" },
+    ],
+  },
+
+  "JP-35": {
+    description:
+      "Yamaguchi’s emblem, adopted in 1944, forms the city’s name 「山口」: the round 口 becomes a circle read as the " +
+      "sun, and 山 a bird flying toward it, while the bold ring expresses an all-embracing spirit and the citizens’ " +
+      "cooperation in the city’s growth.",
+    sources: [
+      { title: "山口市の「市章」 — City of Yamaguchi (official)", url: "https://www.city.yamaguchi.lg.jp/soshiki/3/5633.html" },
+    ],
+  },
+
+  "JP-36": {
+    description:
+      "Tokushima’s emblem, adopted in 1909, sets the character 「市」 (shi, city) beneath the ‘komochi-suji’ striped " +
+      "device that was the badge of the Tokushima domain, all made into a circle — signifying that Tokushima city " +
+      "is the hub of Tokushima prefecture.",
+    sources: [
+      { title: "市章・市の花・市の木 — City of Tokushima (official)", url: "https://www.city.tokushima.tokushima.jp/shisei/tokushima_shi/shisho.html" },
+    ],
+  },
+
+  "JP-37": {
+    description:
+      "Takamatsu’s emblem, adopted in 1894, places the character 「高」 (taka) — in the style once flown on the " +
+      "domain’s official-ship banners — within a lozenge of four pine needles that pun on the ‘matsu’ (松, pine) of " +
+      "Takamatsu. Its pine-green prays for the city’s enduring prosperity.",
+    sources: [
+      { title: "ミニ知識（市章） — City of Takamatsu (official)", url: "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/shokai/mini.html" },
+    ],
+  },
+
+  "JP-38": {
+    description:
+      "Matsuyama’s emblem combines pine (松) and mountain (山) to write the city’s name 「松山」 — the work of the " +
+      "Matsuyama-born painter Shimomura Izan. The name itself recalls the pine-clad castle hill on which Katō " +
+      "Yoshiaki built Matsuyama Castle in 1603.",
+    sources: [
+      { title: "市章 — City of Matsuyama (official)", url: "https://www.city.matsuyama.ehime.jp/shisei/matsuyama/sisyohanauta/sisyou.html" },
+    ],
+  },
+
+  "JP-39": {
+    description:
+      "Kōchi’s emblem, adopted in 1920, is a stylisation of the character 「高」 (kō), the first character of Kōchi.",
+    sources: [
+      { title: "高知県の市町村章一覧（高知市） — Wikipedia (ja)", url: "https://ja.wikipedia.org/wiki/高知県の市町村章一覧" },
+    ],
+  },
+
+  "JP-40": {
+    description:
+      "Fukuoka’s emblem, adopted in 1909, is built from nine katakana フ (fu): six arranged into a triple-lozenge " +
+      "with three smaller フ between them. Nine フ read as ‘fu-ku’ — 福, good fortune (fu also carrying the sense of " +
+      "luck) — a wish that much good fortune come to the city’s people.",
+    sources: [
+      { title: "市章 — City of Fukuoka (official)", url: "https://www.city.fukuoka.lg.jp/shisei/profile/02.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
