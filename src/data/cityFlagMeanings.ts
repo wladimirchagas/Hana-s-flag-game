@@ -5330,6 +5330,110 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-AL": {
+    description:
+      "Alessandria’s flag: a silver field with a red cross, borne since 1175 to mark the lifting of Frederick " +
+      "Barbarossa’s siege of the young city. The arms show two angels holding a scroll — “Deprimit elatos levat " +
+      "Alexandria stratos” (“Alessandria humbles the proud and raises the humble”) — the motto given by Pope " +
+      "Alexander III, after whom the city is named.",
+    sources: [
+      { title: "Stemma del Comune di Alessandria — Comuni-Italiani", url: "https://www.comuni-italiani.it/006/003/stemma.html" },
+    ],
+  },
+
+  "IT-AN": {
+    description:
+      "Ancona’s flag: a red field with a couped golden (Greek) cross. The city arms add the “cavaliere dorico”, " +
+      "an armed knight for the warrior spirit of the Anconetani — by tradition the emperor Trajan, who enlarged " +
+      "Ancona’s harbour and made it Italy’s “gate to the East”.",
+    sources: [
+      { title: "Il cavaliere dorico nello stemma di Ancona — AnconaToday", url: "https://www.anconatoday.it/social/cavalaiere-dorico-simbolo-citta-ancona-stemma.html" },
+    ],
+  },
+
+  "IT-AP": {
+    description:
+      "Ascoli Piceno’s flag is a yellow-and-red vertical bicolour in the city’s colours. Its arms show a " +
+      "travertine castle with Ghibelline battlements — two open arches beneath a five-arched gallery, flanked by " +
+      "two towers of unequal height — on red.",
+    sources: [
+      { title: "Stemma di Ascoli Piceno — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Ascoli_Piceno" },
+    ],
+  },
+
+  "IT-AQ": {
+    description:
+      "L’Aquila’s flag is party green and black, bearing the city arms: a crowned black Swabian eagle (aquila) " +
+      "on silver, ringed by the motto “Immota manet” (“it remains unmoved” — from Virgil, of the deep-rooted " +
+      "oak) and the mysterious trigram PHS. The green gonfalone carries the arms of the city’s four Quarters. " +
+      "Recognised in 1937.",
+    sources: [
+      { title: "Stemma dell’Aquila — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_dell%27Aquila" },
+    ],
+  },
+
+  "IT-AR": {
+    description:
+      "Arezzo’s crimson flag bears the city emblem: a black rearing horse (“cavallo inalberato”), turned to the " +
+      "fly, on silver. The horse stands for valour and an intrepid spirit; it was taken as the arms of the " +
+      "Aretine state in the 14th century and has been the city’s symbol ever since.",
+    sources: [
+      { title: "Stemma del Comune di Arezzo — Comuni-Italiani", url: "https://www.comuni-italiani.it/051/002/stemma.html" },
+    ],
+  },
+
+  "IT-AT": {
+    description:
+      "Asti’s flag: a red field with a white cross. The cross dates from the age of the Crusades — Asti sent " +
+      "citizens to the Holy Land in 1202 and 1209 — and echoes the white-on-red of the Knights Hospitaller of " +
+      "Saint John, established at Asti’s San Pietro in Consavia from 1260.",
+    sources: [
+      { title: "Bandiera di Asti — Bandiere.it", url: "https://www.bandiere.it/bandiera-asti" },
+    ],
+  },
+
+  "IT-AV": {
+    description:
+      "Avellino’s arms, on a sky-blue field, show the Paschal Lamb (Agnus Dei) with its banner resting on a " +
+      "red-bound book. Taken from the arms of the church of Avellino, the lamb was also the emblem of the wool " +
+      "guild whose renowned dark-blue Avellino cloth flourished in the 16th century.",
+    sources: [
+      { title: "Stemma del Comune di Avellino — Comuni-Italiani", url: "https://www.comuni-italiani.it/064/008/stemma.html" },
+    ],
+  },
+
+  "IT-BA": {
+    description:
+      "Bari’s flag is a white-and-red vertical bicolour. The colours are read as white for pure religious zeal " +
+      "and red for the blood the citizens would shed to defend their faith; tradition traces them to the 9th " +
+      "century, when Bari adopted white and red to profess its Christian devotion under Saracen rule. Fixed " +
+      "officially in 1935.",
+    sources: [
+      { title: "Stemma di Bari — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Bari" },
+    ],
+  },
+
+  "IT-BG": {
+    description:
+      "Bergamo’s flag is a yellow-and-red vertical bicolour, the city’s colours since the 15th century. Yellow " +
+      "stands for the wealth of the Bergamo country (and the Guelphs), red for the courage and sacrifice of its " +
+      "people (and the Ghibellines); the arms are party yellow, red and purple, the Comune’s traditional colours.",
+    sources: [
+      { title: "Bandiera di Bergamo — Bandiere.it", url: "https://www.bandiere.it/bandiera-bergamo" },
+    ],
+  },
+
+  "IT-BI": {
+    description:
+      "Biella’s flag and arms: a gold field with a bear walking at the foot of a tree on a green meadow, beneath " +
+      "a comital crown. The bear — the fierce beast of the Biellese valleys, against which the people defended " +
+      "themselves and their herds — was chosen because the eagle was already Aosta’s and Novara’s and the lion " +
+      "unknown to these mountain folk; it is attested from the mid-14th century.",
+    sources: [
+      { title: "Stemma del Comune di Biella — Comuni-Italiani", url: "https://www.comuni-italiani.it/096/004/stemma.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
