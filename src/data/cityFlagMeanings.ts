@@ -6456,6 +6456,113 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "JP-11": {
+    description:
+      "Saitama’s emblem is a modern mark built on the initial ‘S’ of the city’s name, drawn as arcs that curve to " +
+      "embrace the citizens — a widening circle of harmony (和) advancing together into the future. Its green " +
+      "stands for harmony with the rich nature of the Minuma paddy fields. The mark dates from the city’s founding " +
+      "in 2001.",
+    sources: [
+      { title: "さいたま市章 — City of Saitama (official)", url: "https://www.city.saitama.lg.jp/006/012/001/007/p034488.html" },
+    ],
+  },
+
+  "JP-12": {
+    description:
+      "Chiba’s emblem, adopted in 1921, is drawn from the ‘moon-and-star’ (月星) crest of the medieval Chiba clan, " +
+      "the city’s founders, with the character 「千」 (sen) of Chiba set into it. The Chiba clan venerated Myōken — " +
+      "the deified Pole Star and Big Dipper — and shared the moon-star crest as a mark of their unity.",
+    sources: [
+      { title: "千葉市のプロフィール — City of Chiba (official)", url: "https://www.city.chiba.jp/sogoseisaku/shichokoshitsu/kohokocho/prfindex.html" },
+    ],
+  },
+
+  "JP-13": {
+    description:
+      "The seat of the Tokyo Metropolitan Government is Shinjuku, whose ward emblem (adopted 1967) takes the " +
+      "lozenge — a shape traditionally denoting soundness and solidity — and writes the character 「新」 (shin) of " +
+      "Shinjuku across it in a single vigorous stroke, expressing the ward’s steady development into the future.",
+    sources: [
+      { title: "新宿区紋章 — Shinjuku City (official)", url: "https://www.city.shinjuku.lg.jp/kusei/soumu01_002070.html" },
+    ],
+  },
+
+  "JP-14": {
+    description:
+      "Yokohama’s emblem, the ‘Hama mark’, was created for the 50th anniversary of the port’s opening in 1909. It " +
+      "stacks the two katakana ハ (ha) and マ (ma) of ‘Hama’ into a single near-diamond figure — shown red on white " +
+      "— a device long cherished as the symbol of the port city.",
+    sources: [
+      { title: "き章・市の花 — City of Yokohama (official)", url: "https://www.city.yokohama.lg.jp/city-info/yokohamashi/gaiyo/kisyo.html" },
+    ],
+  },
+
+  "JP-15": {
+    description:
+      "Niigata’s emblem, adopted in 1908, centres the numeral 「五」 (five) on an anchor and tops it with a " +
+      "‘snow-ring’. The anchor marks Niigata as a port, and the five stands for the five treaty ports opened under " +
+      "the 1858 (Ansei 5) commercial treaty — Hakodate, Niigata, Kanagawa, Hyōgo and Nagasaki — of which Niigata " +
+      "is one.",
+    sources: [
+      { title: "新潟市民のシンボルマーク — City of Niigata (official)", url: "https://www.city.niigata.lg.jp/shisei/gaiyo/profile/koho_simbol/index.html" },
+    ],
+  },
+
+  "JP-16": {
+    description:
+      "Toyama’s emblem places the character 「富」 (the ‘tomi’ of Toyama) within a chrysanthemum crest carried down " +
+      "from the Toyama-domain era, when it served as the badge of the domain founded by Maeda Toshitsugu; it is " +
+      "read as the city’s fortunes extending in every direction. On the city flag the emblem stands above a white " +
+      "band evoking the snows of the Tateyama range.",
+    sources: [
+      { title: "富山県の市町村章一覧（富山市） — Wikipedia (ja)", url: "https://ja.wikipedia.org/wiki/富山県の市町村章一覧" },
+    ],
+  },
+
+  "JP-17": {
+    description:
+      "Kanazawa’s emblem, adopted in 1891, sets the character 「金」 (kin) of Kanazawa inside the ‘plum-bloom’ " +
+      "(梅鉢, umebachi) crest of the Maeda family, lords of the Kaga domain. The plum honours the Maeda and " +
+      "Sugawara no Michizane — the ‘Tenjin’ deity famed for his love of plum blossom — and the plum is also the " +
+      "city’s tree.",
+    sources: [
+      { title: "市章・市の木 — City of Kanazawa (official)", url: "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kohokochoka/gyomuannai/5/5/8/2074.html" },
+    ],
+  },
+
+  "JP-18": {
+    description:
+      "Fukui’s emblem, adopted in 1926, combines the ‘well-frame’ (井桁, igeta) — for the ‘Fuku well’ within Fukui " +
+      "Castle that gave the city its name — with 「北」 (kita) from Fukui’s older name Kita-no-shō (North Estate), " +
+      "keeping the old while pointing to new development.",
+    sources: [
+      { title: "市章・市の花と木 — City of Fukui (official)", url: "https://www.city.fukui.lg.jp/fukuisi/prezen/symbol/city_flower.html" },
+    ],
+  },
+
+  "JP-19": {
+    description:
+      "Kōfu’s emblem, adopted in 1906, is the ‘split diamond’ (割菱, waribishi) crest of the Takeda clan who ruled " +
+      "from here, enclosing a tortoise-shell (亀甲). The tortoise-shell is a pictograph of 「甲」 and a token of " +
+      "longevity; its joined limbs form 「本」, and since an old dictionary glosses ‘府 means 本 (foundation)’, it " +
+      "stands for the 「府」 of Kōfu. The diamond’s grape-purple recalls the city’s famed grapes, the white ground " +
+      "peace.",
+    sources: [
+      { title: "甲府市のシンボル — City of Kōfu (official)", url: "https://www.city.kofu.yamanashi.jp/koho/shise/gaiyo/profile/symbol.html" },
+    ],
+  },
+
+  "JP-20": {
+    description:
+      "Nagano’s emblem simplifies the initial character 「長」 (naga) of the city’s name into a circular, modern " +
+      "form. It is shown in ‘bamboo-blue’ (青竹色), a blend of blue — sky and clear water — and green — trees and " +
+      "plants — symbolising a city that develops in harmony with its rich nature, through the concord and unity of " +
+      "its people.",
+    sources: [
+      { title: "シンボル — City of Nagano (official)", url: "https://www.city.nagano.nagano.jp/n042000/contents/p004108.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
