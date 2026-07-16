@@ -6563,6 +6563,107 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "JP-21": {
+    description:
+      "Gifu’s emblem, adopted in 1909, is the character 「井」 from the district’s old name Ino-kuchi (井の口). When " +
+      "Oda Nobunaga took the area he renamed it ‘Gifu’, spreading the name nationwide; the city keeps the older " +
+      "「井」 as its symbol in memory of that history.",
+    sources: [
+      { title: "市のシンボル（市章） — City of Gifu (official)", url: "https://www.city.gifu.lg.jp/info/syoukai/1006141/1006143.html" },
+    ],
+  },
+
+  "JP-22": {
+    description:
+      "Shizuoka’s emblem, adopted in 2003 when the city was re-founded, is built on the initial ‘S’ shared by " +
+      "Shizuoka, Shimizu and the new city, drawn to express a rich cityscape where nature and urban life are in " +
+      "harmony.",
+    sources: [
+      { title: "市章 — City of Shizuoka (official)", url: "https://www.city.shizuoka.lg.jp/s2547/s005366.html" },
+    ],
+  },
+
+  "JP-23": {
+    description:
+      "Nagoya’s emblem is the ‘maruhachi’ — a figure 「八」 (hachi) within a circle — the combined mark used by the " +
+      "Owari Tokugawa house, chosen as the city emblem in 1907. The circle is read as infinite, harmonious " +
+      "expansion and the 八 as a supporting, ever-widening form: the city growing without limit.",
+    sources: [
+      { title: "八マーク — City of Nagoya (official)", url: "https://www.city.nagoya.jp/kankou/category/33-3-0-0-0-0-0-0-0-0.html" },
+    ],
+  },
+
+  "JP-24": {
+    description:
+      "Tsu’s emblem, adopted in 2006 after ten municipalities merged, is a modern mark based on the kana つ (tsu). " +
+      "Its green stands for the land’s greenery and its blue for the waves of Ise Bay, expressing a bright, lively " +
+      "future built on the region’s nature, human ties and history.",
+    sources: [
+      { title: "新「津市」市章デザイン決定 — City of Tsu (official)", url: "https://www.info.city.tsu.mie.jp/gappei/jokyo/dai43kai/sisyou.html" },
+    ],
+  },
+
+  "JP-25": {
+    description:
+      "Ōtsu’s emblem, in its present form from 1958, stylises 「大ツ」 (Ōtsu): the 「大」 forms a bird taking flight " +
+      "and the 「ツ」 the sweep of Lake Biwa, together symbolising the advance of the international " +
+      "culture-and-tourism city.",
+    sources: [
+      { title: "市章・市民憲章・市民の歌 — City of Ōtsu (official)", url: "https://www.city.otsu.lg.jp/soshiki/005/1202/g/otsucity/1390611704637.html" },
+    ],
+  },
+
+  "JP-26": {
+    description:
+      "Kyoto’s emblem, adopted in 1960, sets a stylised character 「京」 (kyō) within a gosho-guruma — the ox-drawn " +
+      "carriage of the Heian court — ringed with karakusa arabesque. It is rendered in gold and in the purple that " +
+      "stands for the ancient capital.",
+    sources: [
+      { title: "京都市のあらまし（紋章） — City of Kyoto (official)", url: "https://www.city.kyoto.lg.jp/sogo/page/0000015587.html" },
+    ],
+  },
+
+  "JP-27": {
+    description:
+      "Osaka’s emblem is the miotsukushi (澪標), a wooden channel-marker once set in the shallows of Naniwa Bay to " +
+      "show ships the safe fairway. Long celebrated as the ‘city of water’, Osaka — whose prosperity rested on its " +
+      "waterways and shipping — took the marker as its emblem in the Meiji era.",
+    sources: [
+      { title: "市名・市章・市歌 — City of Osaka (official)", url: "https://www.city.osaka.lg.jp/seisakukikakushitsu/page/0000010271.html" },
+    ],
+  },
+
+  "JP-28": {
+    description:
+      "Kobe’s emblem, adopted in 1907, stylises the katakana カ (ka) of ‘Kaube’ (カウベ), the old spelling of Kōbe. " +
+      "It also evokes the fan — Kobe’s harbour was called the ‘fan port’, its old Hyōgo and Kōbe harbours " +
+      "resembling two fans — and carries the suggestion of an anchor. It is shown white on the green city flag.",
+    sources: [
+      { title: "神戸のシンボル（市章・花） — City of Kobe (official)", url: "https://www.city.kobe.lg.jp/a57337/shise/about/energy/symbol.html" },
+    ],
+  },
+
+  "JP-29": {
+    description:
+      "Nara’s emblem, adopted in 1903, is shaped as the Nara yae-zakura (八重桜, double cherry blossom) long " +
+      "associated with the city, with the character 「奈」 at its centre. The 「示」 part of 奈 is figured as the " +
+      "‘three lights’ (三光) — sun, moon and star — recalling the legend that a bush warbler was taught the " +
+      "‘three-light’ call at Mount Mikasa.",
+    sources: [
+      { title: "市章・市旗 — City of Nara (official)", url: "https://www.city.nara.lg.jp/soshiki/3/2223.html" },
+    ],
+  },
+
+  "JP-30": {
+    description:
+      "Wakayama’s emblem, adopted in 1908, combines the three mountains that ring the city with a white arrow " +
+      "driving through them — the momentum of Wakayama’s growth and its citizens’ energy — around a double circle " +
+      "that stylises the katakana カ (ka), its outer ring standing for ワ (wa), of ‘Waka-yama’.",
+    sources: [
+      { title: "和歌山市き章 — City of Wakayama (official)", url: "https://www.city.wakayama.wakayama.jp/shisei/wakayama/1001005/1001036.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
