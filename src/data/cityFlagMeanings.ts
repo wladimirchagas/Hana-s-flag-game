@@ -5615,6 +5615,109 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-EN": {
+    description:
+      "Enna’s arms: on blue, a golden three-towered castle bearing three golden ears of wheat, set on the breast " +
+      "of a crowned double-headed eagle. The three towers stand for the old Castrogiovanni as city of light and " +
+      "wisdom, of peace and plenty, and mother of Sicily; the wheat recalls Enna as the sacred land of Ceres at " +
+      "the island’s heart.",
+    sources: [
+      { title: "Lo Stemma — Libero Consorzio Comunale di Enna", url: "https://www.provincia.enna.it/pagina133801_lo-stemma.html" },
+    ],
+  },
+
+  "IT-FC": {
+    description:
+      "Cesena’s arms: per fess black and silver within an indented border, beneath the Angevin chief (blue with " +
+      "golden fleurs-de-lis and a red lambel). The black and white mark the peace between Ghibellines and " +
+      "Guelphs and have been Cesena’s colours since the 14th-century Malatesta age; the Angevin chief marks its " +
+      "Guelph loyalty.",
+    sources: [
+      { title: "Stemma del Comune di Cesena — Comuni-Italiani", url: "https://www.comuni-italiani.it/040/007/stemma.html" },
+    ],
+  },
+
+  "IT-FE": {
+    description:
+      "Ferrara’s arms: a shield party black over silver, ensigned with a ducal crown recalling the city’s time " +
+      "as a duchy. Ferrara was the seat of the House of Este, whose own emblem was a white eagle on blue.",
+    sources: [
+      { title: "Stemma di Ferrara — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Ferrara" },
+    ],
+  },
+
+  "IT-FG": {
+    description:
+      "Foggia’s flag is red over blue — fire over water — and its arms show three flames rising from and " +
+      "reflected in the sea. Some read them for the land itself (water just below ground, fierce heat above); by " +
+      "tradition they recall the three flames that revealed the buried holy image of the Madonna dei Sette Veli, " +
+      "the city’s Icona Vetere.",
+    sources: [
+      { title: "Lo stemma della città — Mangano Foggia", url: "https://manganofoggia.it/lo-stemma-della-citta/" },
+    ],
+  },
+
+  "IT-FI": {
+    description:
+      "Florence’s flag is white with a red lily (the “giglio”, in fact a stylised iris). The lily has been the " +
+      "city’s emblem since the Middle Ages; under the Ghibellines it was a white lily on red, but in 1251 the " +
+      "victorious Guelphs reversed the colours to a red lily on white, and so it has remained.",
+    sources: [
+      { title: "Stemma di Firenze — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Firenze" },
+    ],
+  },
+
+  "IT-FM": {
+    description:
+      "Fermo’s arms are quartered: a silver cross on red (for the Crusades and the city’s fidelity to the pope) " +
+      "and a black imperial eagle on gold (taken when Fermo turned Ghibelline), crested by an arm holding a ball " +
+      "— the “mero e misto impero” (full jurisdiction) granted the city by Gregory IX in 1229. Its motto: “Firmum " +
+      "firmae fidei” (Fermo, of firm faith).",
+    sources: [
+      { title: "Stemma di Fermo — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Fermo" },
+    ],
+  },
+
+  "IT-GE": {
+    description:
+      "Genoa’s flag is the cross of Saint George — a red cross on white. Genoa took Saint George as its patron " +
+      "and standard-bearer at the First Crusade (1099) and flew his cross on its ships as a maritime republic; " +
+      "the red cross signifies the Passion of Christ and victory.",
+    sources: [
+      { title: "Croce di San Giorgio — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Croce_di_San_Giorgio" },
+    ],
+  },
+
+  "IT-GO": {
+    description:
+      "Gorizia’s arms are those of the medieval County of Gorizia: party per bend, a golden lion passant over " +
+      "the line on blue, and three red bends on silver. The lion was the emblem of the counts who ruled Gorizia " +
+      "until it passed to the Habsburgs.",
+    sources: [
+      { title: "Stemma del Comune di Gorizia — Comuni-Italiani", url: "https://www.comuni-italiani.it/031/007/stemma.html" },
+    ],
+  },
+
+  "IT-GR": {
+    description:
+      "Grosseto’s arms: on red, a silver griffin holding a silver sword. The griffin — a winged mythical beast — " +
+      "evokes the city’s Etruscan origins and, as a Christ-symbol, its faith; the red field marks the Ghibelline " +
+      "party Grosseto long followed.",
+    sources: [
+      { title: "Stemma di Grosseto — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Grosseto" },
+    ],
+  },
+
+  "IT-IM": {
+    description:
+      "Imperia’s arms join its two founding towns, united in 1923: on red, four silver towers with the chief of " +
+      "Genoa for Porto Maurizio, and on silver an olive tree with the chief of Savoy for Oneglia. The olive " +
+      "stands for the oil-growing Riviera on which the city lives.",
+    sources: [
+      { title: "Stemma del Comune di Imperia — Comuni-Italiani", url: "https://www.comuni-italiani.it/008/031/stemma.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
