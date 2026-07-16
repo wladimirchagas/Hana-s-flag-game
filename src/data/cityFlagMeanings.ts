@@ -6829,6 +6829,19 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "KG-C": {
+    description:
+      "Bishkek’s flag is blue, bearing the city arms in a white disc: a fortress silhouette — for Pishpek, which " +
+      "began as a fortress, standing for the strength of governing power — with the name «Бишкек» beneath a jagged " +
+      "mountain line, and on the fortress wall a white snow leopard (irbis) set in a square within a circle. The " +
+      "irbis, an ancient Kyrgyz totem, stands for courage, will and endurance; the square and circle for the unity " +
+      "of space and time. Adopted in 1994.",
+    sources: [
+      { title: "Флаг города Бишкек — Геральдика.ру", url: "https://geraldika.ru/s/4636" },
+      { title: "Герб Бишкека — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/Герб_Бишкека" },
+    ],
+  },
+
   "KG-O": {
     description:
       "Osh flies a flag divided by a zigzag line between blue above and white below, charged with a red tündük — " +
