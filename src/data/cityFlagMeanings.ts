@@ -6965,6 +6965,38 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LB-BA": {
+    description:
+      "Beirut’s arms carry two emblems of the city’s past: a Phoenician galley with a horse-head prow riding " +
+      "gold-edged blue waves, for the great Phoenician port Beirut once was; and a large open book inscribed " +
+      "‘BERYTUS NUTRIX LEGUM’ (Beirut, mother of laws) in Latin and Arabic, for the famed Law School of Beirut, " +
+      "the first of the Roman Empire. A mural crown tops the shield.",
+    sources: [
+      { title: "Municipality of Beirut — Flags of the World (FOTW)", url: "https://www.crwflags.com/fotw/flags/lb-be-be.html" },
+    ],
+  },
+
+  "LI-08": {
+    description:
+      "Vaduz’s flag carries the municipality’s colours, red and white, drawn from its coat of arms. Those arms are " +
+      "quartered: a red princely hat on silver, for the princely residence Vaduz became, and a silver " +
+      "church-banner on red, recalling the Counts of Werdenberg-Sargans, who laid the foundation of " +
+      "Liechtenstein’s statehood in 1342.",
+    sources: [
+      { title: "Coat of arms and flag — Gemeinde Vaduz (official)", url: "https://www.vaduz.li/en/vaduz/portrait/coat-of-arms-and-flag" },
+    ],
+  },
+
+  "LK-11": {
+    description:
+      "The seal of the Colombo Municipal Council shows a coconut palm before the Kelani river and Adam’s Peak. The " +
+      "coconut palm — long the region’s main crop and a Sri Lankan emblem of prosperity and usefulness — stands " +
+      "for the coastal city, and above it runs the Latin motto NON NOBIS, ‘not for ourselves’.",
+    sources: [
+      { title: "Seal of Colombo — Wikipedia (en)", url: "https://en.wikipedia.org/wiki/Seal_of_Colombo" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
