@@ -6997,6 +6997,104 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LT-AL": {
+    description:
+      "Alytus bears a white heraldic rose on red — the arms granted with Magdeburg rights by King Stephen Báthory " +
+      "in 1581. In heraldry the rose is an emblem of hope and joy.",
+    sources: [
+      { title: "Coat of arms — Alytus city municipality (official)", url: "https://alytus.lt/en/about-alytus/coat-of-arms" },
+    ],
+  },
+
+  "LT-KL": {
+    description:
+      "Klaipėda’s arms, on red, show a stone castle beneath which sits a boat, with four stars about the towers. " +
+      "The castle is the city’s main fortress — Memel Castle — with its two guard towers; the boat stands for the " +
+      "shipping and shipbuilding of the port. The design was restored from the old Memel town seals of 1446, 1605 " +
+      "and 1618.",
+    sources: [
+      { title: "Coat of arms of Klaipėda — Wikipedia (en)", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Klaip%C4%97da" },
+    ],
+  },
+
+  "LT-KU": {
+    description:
+      "Kaunas bears a white aurochs with a golden cross between its horns on a deep-red field. The aurochs has been " +
+      "the city’s symbol since about 1400; its heraldic seal, from the reign of Grand Duke Vytautas, is the oldest " +
+      "known city seal in the Grand Duchy of Lithuania.",
+    sources: [
+      { title: "Kaunas city municipality Coat of Arms (official)", url: "https://en.kaunas.lt/city/coat-of-arms" },
+    ],
+  },
+
+  "LT-MR": {
+    description:
+      "Marijampolė’s arms depict Saint George on horseback slaying the dragon. Saint George is a leading patron " +
+      "saint in Lithuania, his cult spreading in the fifteenth century; the mounted saint stands for the triumph " +
+      "of good over evil.",
+    sources: [
+      { title: "Marijampolė — Heraldry of the World", url: "https://www.heraldry-wiki.com/heraldrywiki/wiki/Marijampol%C4%97" },
+    ],
+  },
+
+  "LT-PN": {
+    description:
+      "Panevėžys shows a red brick city gate on a silver field. The mural gate is the classic sign of town rights; " +
+      "the present arms were approved in 1993.",
+    sources: [
+      { title: "Panevėžys — Wikipedia (en)", url: "https://en.wikipedia.org/wiki/Panev%C4%97%C5%BEys" },
+    ],
+  },
+
+  "LT-SA": {
+    description:
+      "Šiauliai’s arms, granted by King Stanisław August Poniatowski in 1791, combine three charges: a black bear — " +
+      "the emblem of Samogitia, the region — the golden Eye of Providence, and a red bull, the emblem of the " +
+      "Poniatowski family who granted them.",
+    sources: [
+      { title: "The coat of arms of Šiauliai city (official)", url: "https://www.visitsiauliai.lt/en/sightseeing-places/the-coat-of-arms-of-siauliai-city/" },
+    ],
+  },
+
+  "LT-TA": {
+    description:
+      "Tauragė’s arms show hunting horns — the horns of the aurochs. They are canting arms: the name Tauragė joins " +
+      "tauras (aurochs) and ragas (horn); the horns also recall the region’s old hunting tradition and its " +
+      "struggles.",
+    sources: [
+      { title: "Coat of arms — Tauragė district municipality (official)", url: "https://taurage.lt/en/about-taurage/coat-of-arms/" },
+    ],
+  },
+
+  "LT-TE": {
+    description:
+      "Telšiai’s arms, on blue, show Saint Stanislaus — the bishop of Kraków — raising Piotrowin from the grave, a " +
+      "miracle attributed to the saint. The arms were granted to Telšiai together with its town rights in 1791.",
+    sources: [
+      { title: "Coat of arms — Telšiai District Municipality (official)", url: "https://telsiai.lt/apie-rajona/herbas?lang=en" },
+    ],
+  },
+
+  "LT-UT": {
+    description:
+      "Utena bears a golden horseshoe and a silver eight-pointed star on blue. The horseshoe is an old emblem of " +
+      "luck and protection; the star — a ‘spark’ — stands for light and hope and a fast-growing city; and the " +
+      "blue field for loyalty, justice and truth. Utena’s arms are first recorded in 1599, when it received " +
+      "Magdeburg rights.",
+    sources: [
+      { title: "Utenos herbas — Wikipedia (lt)", url: "https://lt.wikipedia.org/wiki/Utenos_herbas" },
+    ],
+  },
+
+  "LT-VL": {
+    description:
+      "Vilnius bears Saint Christopher — the ‘Christ-bearer’ — wading through water with the infant Jesus on his " +
+      "shoulder. The image was chosen to mark Vilnius’s role in the Christianisation of Lithuania.",
+    sources: [
+      { title: "Coat of arms of Vilnius — Wikipedia (en)", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vilnius" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
