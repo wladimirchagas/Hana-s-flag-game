@@ -195,6 +195,25 @@ const CAPITAL_POPULATION_OVERRIDES = {
   // coterminous with its federal territory, so the 2020 census FT total is the
   // exact city figure.
   "MY-16": { population: 109202, year: 2020, basis: "census", source: "DOSM 2020 Census (Federal Territory of Putrajaya)" },
+
+  // Remaining Malaysian state capitals — DOSM 2020 Census, each the city's own
+  // LOCAL-AUTHORITY (city/municipal council) area total, the same unit as George
+  // Town/MBPP (794,313), Shah Alam/MBSA (812,327) and Kota Kinabalu/DBKK (500,425)
+  // already carried, NOT the surrounding district or urban agglomeration. Figures
+  // from the DOSM-2020-census local-authority table (per-council area); the unit
+  // was confirmed by George Town/Shah Alam/KK matching our existing entries
+  // exactly. These replace stale 2000–2017 estimates.
+  "MY-01": { population: 858118, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Johor Bahru local-authority total)" }, // Johor Bahru
+  "MY-02": { population: 423868, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Alor Setar local-authority total)" }, // Alor Setar
+  "MY-03": { population: 396193, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Perbandaran Kota Bharu local-authority total)" }, // Kota Bharu
+  "MY-04": { population: 453904, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Melaka Bersejarah local-authority total)" }, // Malacca City
+  "MY-05": { population: 681541, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Seremban local-authority total)" }, // Seremban
+  "MY-06": { population: 548014, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Kuantan local-authority total)" }, // Kuantan
+  "MY-07": { population: 794313, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Pulau Pinang / George Town local-authority total)" }, // George Town — pin basis to census (Wikidata carried it undated/as estimate)
+  "MY-08": { population: 759952, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Ipoh local-authority total)" }, // Ipoh
+  "MY-09": { population: 284853, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Perbandaran Kangar local-authority total)" }, // Kangar
+  "MY-11": { population: 375424, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Kuala Terengganu local-authority total)" }, // Kuala Terengganu
+  "MY-13": { population: 349147, year: 2020, basis: "census", source: "DOSM 2020 Census (Kuching city — DBKU + MBKS local-authority areas)" }, // Kuching
 };
 
 const yearOf = (iso) => {
