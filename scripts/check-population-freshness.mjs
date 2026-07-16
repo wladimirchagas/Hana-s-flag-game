@@ -53,6 +53,11 @@ const LATEST_ENUMERATION_YEAR = {
   // DOSM Population & Housing Census of Malaysia 2020 (MyCensus 2020) — the
   // latest census; supersedes the 2010 census. Next census is 2030.
   MY: { year: 2020, source: "DOSM Population and Housing Census of Malaysia 2020 (MyCensus 2020)" },
+  // INEGI Censo de Población y Vivienda 2020 — supersedes the 2015 Encuesta
+  // Intercensal. Next census is 2030.
+  MX: { year: 2020, source: "INEGI Censo de Población y Vivienda 2020" },
+  // NSO Mongolia 2020 Population and Housing Census — supersedes 2015.
+  MN: { year: 2020, source: "Mongolia NSO 2020 Population and Housing Census" },
 };
 
 /**
@@ -62,7 +67,10 @@ const LATEST_ENUMERATION_YEAR = {
  * false-positives; add a country here only when its subdivision set is a clean
  * partition of the nation.
  */
-const SUM_CHECK = new Set(["MY"]);
+// MX is deliberately excluded: it carries the legacy MX-DIF code (pre-2016 name
+// for Mexico City) as a duplicate of MX-CMX, which double-counts ~9.2M in a naive
+// subdivision sum. Its freshness floor still applies.
+const SUM_CHECK = new Set(["MY", "MN"]);
 const SUM_TOLERANCE = 1.1; // allow 10% for mixed reference years / rounding
 
 function parseSubdivisions(text) {
