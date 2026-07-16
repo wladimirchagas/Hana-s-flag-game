@@ -1009,6 +1009,72 @@ const MANUAL_VERIFIED_POPULATION = {
   "MY-14": { population: 1982112, year: 2020, basis: "census" }, // Kuala Lumpur (Federal Territory)
   "MY-15": { population: 95120, year: 2020, basis: "census" }, // Labuan (Federal Territory)
   "MY-16": { population: 109202, year: 2020, basis: "census" }, // Putrajaya (Federal Territory)
+
+  // Mexico, INEGI Censo de Población y Vivienda 2020 — the latest census
+  // (supersedes the 2015 Encuesta Intercensal our data carried for most states,
+  // and older 2010 figures for Coahuila/BCS). All 32 federal entities; the 32
+  // sum exactly to the published national total 126,014,024 (checksum-verified).
+  // The legacy MX-DIF code (pre-2016 name for Mexico City) keeps its own 2020
+  // census figure = MX-CMX.
+  "MX-AGU": { population: 1425607, year: 2020, basis: "census" },
+  "MX-BCN": { population: 3769020, year: 2020, basis: "census" },
+  "MX-BCS": { population: 798447, year: 2020, basis: "census" },
+  "MX-CAM": { population: 928363, year: 2020, basis: "census" },
+  "MX-CHP": { population: 5543828, year: 2020, basis: "census" },
+  "MX-CHH": { population: 3741869, year: 2020, basis: "census" },
+  "MX-CMX": { population: 9209944, year: 2020, basis: "census" },
+  "MX-COA": { population: 3146771, year: 2020, basis: "census" },
+  "MX-COL": { population: 731391, year: 2020, basis: "census" },
+  "MX-DUR": { population: 1832650, year: 2020, basis: "census" },
+  "MX-GUA": { population: 6166934, year: 2020, basis: "census" },
+  "MX-GRO": { population: 3540685, year: 2020, basis: "census" },
+  "MX-HID": { population: 3082841, year: 2020, basis: "census" },
+  "MX-JAL": { population: 8348151, year: 2020, basis: "census" },
+  "MX-MEX": { population: 16992418, year: 2020, basis: "census" },
+  "MX-MIC": { population: 4748846, year: 2020, basis: "census" },
+  "MX-MOR": { population: 1971520, year: 2020, basis: "census" },
+  "MX-NAY": { population: 1235456, year: 2020, basis: "census" },
+  "MX-NLE": { population: 5784442, year: 2020, basis: "census" },
+  "MX-OAX": { population: 4132148, year: 2020, basis: "census" },
+  "MX-PUE": { population: 6583278, year: 2020, basis: "census" },
+  "MX-QUE": { population: 2368467, year: 2020, basis: "census" },
+  "MX-ROO": { population: 1857985, year: 2020, basis: "census" },
+  "MX-SLP": { population: 2822255, year: 2020, basis: "census" },
+  "MX-SIN": { population: 3026943, year: 2020, basis: "census" },
+  "MX-SON": { population: 2944840, year: 2020, basis: "census" },
+  "MX-TAB": { population: 2402598, year: 2020, basis: "census" },
+  "MX-TAM": { population: 3527735, year: 2020, basis: "census" },
+  "MX-TLA": { population: 1342977, year: 2020, basis: "census" },
+  "MX-VER": { population: 8062579, year: 2020, basis: "census" },
+  "MX-YUC": { population: 2320898, year: 2020, basis: "census" },
+  "MX-ZAC": { population: 1622138, year: 2020, basis: "census" },
+
+  // Mongolia, NSO 2020 Population and Housing Census — supersedes the 2015
+  // intercensal/registration figures our data carried. All 21 aimags + the
+  // capital Ulaanbaatar (MN-1); the 22 sum exactly to the published national
+  // total 3,253,283 (checksum-verified).
+  "MN-035": { population: 105361, year: 2020, basis: "census" }, // Orkhon
+  "MN-037": { population: 103580, year: 2020, basis: "census" }, // Darkhan-Uul
+  "MN-039": { population: 78507, year: 2020, basis: "census" }, // Khentii
+  "MN-041": { population: 136058, year: 2020, basis: "census" }, // Khövsgöl
+  "MN-043": { population: 88974, year: 2020, basis: "census" }, // Khovd
+  "MN-046": { population: 84294, year: 2020, basis: "census" }, // Uvs
+  "MN-047": { population: 93332, year: 2020, basis: "census" }, // Töv
+  "MN-049": { population: 108370, year: 2020, basis: "census" }, // Selenge
+  "MN-051": { population: 64307, year: 2020, basis: "census" }, // Sükhbaatar
+  "MN-053": { population: 71248, year: 2020, basis: "census" }, // Ömnögovi
+  "MN-055": { population: 116785, year: 2020, basis: "census" }, // Övörkhangai
+  "MN-057": { population: 73231, year: 2020, basis: "census" }, // Zavkhan
+  "MN-059": { population: 47274, year: 2020, basis: "census" }, // Dundgovi
+  "MN-061": { population: 83473, year: 2020, basis: "census" }, // Dornod
+  "MN-063": { population: 71233, year: 2020, basis: "census" }, // Dornogovi
+  "MN-064": { population: 18008, year: 2020, basis: "census" }, // Govisümber
+  "MN-065": { population: 58343, year: 2020, basis: "census" }, // Govi-Altai
+  "MN-067": { population: 61516, year: 2020, basis: "census" }, // Bulgan
+  "MN-069": { population: 89329, year: 2020, basis: "census" }, // Bayankhongor
+  "MN-071": { population: 105853, year: 2020, basis: "census" }, // Bayan-Ölgii
+  "MN-073": { population: 95067, year: 2020, basis: "census" }, // Arkhangai
+  "MN-1": { population: 1499140, year: 2020, basis: "census" }, // Ulaanbaatar
 };
 
 async function fetchByQid(code, qid) {
