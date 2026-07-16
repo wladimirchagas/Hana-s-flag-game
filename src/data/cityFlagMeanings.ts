@@ -6001,6 +6001,107 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-PU": {
+    description:
+      "Urbino’s arms are those of Duke Federico da Montefeltro: quartered, alternating Urbino’s own crowned eagle " +
+      "with wings spread and the Montefeltro bends of gold and blue with a small black eagle in the place of " +
+      "honour, the mark of their Ghibelline allegiance. The eagle also plays on Federico’s famous aquiline " +
+      "profile.",
+    sources: [
+      { title: "Stemma di Urbino — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Urbino" },
+    ],
+  },
+
+  "IT-PV": {
+    description:
+      "Pavia’s arms: on red, a white Latin cross flanked by the letters “C O · P P” — for Commune Papiae, the " +
+      "Comune of Pavia (Papia was the city’s Latin name). The arms go back before 1300.",
+    sources: [
+      { title: "Stemma del Comune di Pavia — Comuni-Italiani", url: "https://www.comuni-italiani.it/018/110/stemma.html" },
+    ],
+  },
+
+  "IT-PZ": {
+    description:
+      "Potenza’s arms: on blue, a crowned golden lion on a red bend with three silver stars above. The lion is " +
+      "the city’s ancient emblem — “the lions do not retreat” — laurel for glory and oak for strength framing " +
+      "the shield.",
+    sources: [
+      { title: "Lo Stemma della Città di Potenza — Comune di Potenza", url: "https://www.comune.potenza.it/?p=26" },
+    ],
+  },
+
+  "IT-RA": {
+    description:
+      "Ravenna’s arms: fields of gold and red with two counter-rampant lions facing a green pine tree at the " +
+      "centre. The gold-and-red descend from the Da Polenta lords (their red eagle and the golden Lion of Saint " +
+      "Mark); the pine recalls Ravenna’s famous pineta, the pine forest along its shore.",
+    sources: [
+      { title: "Stemma del Comune di Ravenna — Comuni-Italiani", url: "https://www.comuni-italiani.it/039/014/stemma.html" },
+    ],
+  },
+
+  "IT-RC": {
+    description:
+      "Reggio Calabria’s arms show Saint George spearing the dragon above a kneeling, crowned maiden. The city " +
+      "took Saint George as patron after a legend that he aided Count Roger in battle; the motto styles it “Urbs " +
+      "Rhegina… fidelissima, provinciae prima mater et caput” — the noble, most faithful city, first mother and " +
+      "head of the province.",
+    sources: [
+      { title: "Stemma di Reggio Calabria — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Reggio_Calabria" },
+    ],
+  },
+
+  "IT-RE": {
+    description:
+      "Reggio Emilia’s arms: on silver, a red cross cantoned by the letters S·P·Q·R, under a mural crown. Reggio " +
+      "is also the birthplace of the Italian tricolour, first proclaimed here on 7 January 1797 by the Cispadane " +
+      "Republic.",
+    sources: [
+      { title: "Stemma del Comune di Reggio Emilia — Comuni-Italiani", url: "https://www.comuni-italiani.it/035/033/stemma.html" },
+    ],
+  },
+
+  "IT-RI": {
+    description:
+      "Rieti’s arms: red above with a knight and a woman handing him a standard, and blue below with a net and " +
+      "three fish for the waters and fishing of the Velino. Rieti is traditionally the “Umbilicus Italiae”, the " +
+      "geographic navel of Italy named by its ancient son Varro.",
+    sources: [
+      { title: "Stemma di Rieti — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Rieti" },
+    ],
+  },
+
+  "IT-RN": {
+    description:
+      "Rimini’s arms are party: the Arch of Augustus over the Bridge of Tiberius on a blue sea — the Roman " +
+      "monuments that still stand and its pride in its origin as Ariminum — beside a red cross bordered silver, " +
+      "for its part in the Lombard League of 1167 and a grant by Pope Julius II in 1509.",
+    sources: [
+      { title: "Lo stemma municipale di Rimini — Rimini.com", url: "https://www.rimini.com/storia/lo-stemma-municipale-di-rimini" },
+    ],
+  },
+
+  "IT-RO": {
+    description:
+      "Rovigo’s arms bear the winged Lion of Saint Mark with an open book above a golden tower — the mark of the " +
+      "city’s long belonging to the Republic of Venice.",
+    sources: [
+      { title: "Bandiera di Rovigo — Bandiere.it", url: "https://www.bandiere.it/bandiera-rovigo" },
+    ],
+  },
+
+  "IT-SA": {
+    description:
+      "Salerno’s arms: party per fess, blue above with Saint Matthew, the city’s patron, and barry of gold and " +
+      "red below — the arms of Hungary, given by Charles II of Anjou, king of Naples. Saint Matthew was set on " +
+      "the shield after a storm was believed to have destroyed Barbarossa’s pirate fleet threatening the city in " +
+      "1544.",
+    sources: [
+      { title: "Stemma di Salerno — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Salerno" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
