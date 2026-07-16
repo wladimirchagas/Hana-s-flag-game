@@ -6102,6 +6102,120 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-SI": {
+    description:
+      "Siena’s civic banner is the balzana: a shield parted per fess, silver (white) above and black below. " +
+      "Tradition ties the two colours to the black and white smoke that rose from the horses of Senio and Aschio " +
+      "(Senius and Aschius), the legendary founders and sons of Remus, as they fled and founded the city. Alongside " +
+      "the balzana the city uses the lupa — the she-wolf suckling the twins — echoing Siena’s claimed Roman origin.",
+    sources: [
+      { title: "Stemma di Siena — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Siena" },
+    ],
+  },
+
+  "IT-SO": {
+    description:
+      "Sondrio’s arms, on an azure field, show two silver swords with gold hilts crossed point-upward with two " +
+      "green palm branches, and a gold fleur-de-lis in chief. The crossed swords and palms recall the martyrdom of " +
+      "the city’s patrons, Saints Gervasius and Protasius, while the fleur-de-lis marks Sondrio’s historic Guelph " +
+      "allegiance under the Vitani, who opposed Como’s Rusconi from the twelfth century.",
+    sources: [
+      { title: "Sondrio — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Sondrio" },
+    ],
+  },
+
+  "IT-SP": {
+    description:
+      "La Spezia’s arms, on blue, show a crenellated tower standing on a green three-peaked mount and surmounted by " +
+      "a crowned black eagle with spread wings. The tower derives from the insignia of the medieval Podesteria of " +
+      "Carpena, from which La Spezia won its independence, and stands for the fortifications guarding the gulf; the " +
+      "three-peaked mount evokes the city’s hills, and the crowned eagle signifies power and sovereignty.",
+    sources: [
+      { title: "Stemma di La Spezia — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/La_Spezia" },
+    ],
+  },
+
+  "IT-SR": {
+    description:
+      "Syracuse flies a green gonfalone bearing its arms: an eagle with a turreted tower on its breast. The eagle " +
+      "stands for command, power and victory and Syracuse’s tie to imperial authority — the city is said to have " +
+      "asked Henry VI of Swabia to add the eagle to the Swabian arms — while the tower is the surviving charge of " +
+      "the older city arms. The present arms and green banner were granted by royal decree of 8 December 1942.",
+    sources: [
+      { title: "Stemma di Siracusa — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Siracusa" },
+    ],
+  },
+
+  "IT-SS": {
+    description:
+      "Sassari’s arms, granted by King Carlo Emanuele III in 1767, are quartered: the first and fourth quarters " +
+      "bear Savoy (a silver cross on red), the second and third a red crenellated castle on gold. The castles " +
+      "recall the Giudicato di Torres and the ancient Turris Libisonis (Porto Torres); the Savoy cross marks the " +
+      "city’s passage to the House of Savoy. Two horses support the shield, honouring the medieval podestà " +
+      "Cavallino de Honestis, and the gonfalone is a richly gold-embroidered red cloth.",
+    sources: [
+      { title: "Stemma di Sassari — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Sassari" },
+    ],
+  },
+
+  "IT-SV": {
+    description:
+      "Savona’s municipal flag is a horizontal triband of red, white and red — the civic colours drawn from its " +
+      "arms, which show a silver pale on red beneath a gold chief charged with a rising black eagle with spread " +
+      "wings. The arms were entered in the Heraldic Register in 1938.",
+    sources: [
+      { title: "Stemma di Savona — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Savona" },
+    ],
+  },
+
+  "IT-TA": {
+    description:
+      "Taranto’s arms, on blue, show the young sea-god Taras riding a dolphin, nude, a billowing cloth on one arm " +
+      "and a trident in the other, beneath a red chief bearing a gold scallop shell flanked by the Greek letters " +
+      "spelling ΤΑΡΑΣ (Taras). The image is taken from the coins of Magna Graecia struck at the city’s height: the " +
+      "dolphin recalls the two seas that embrace Taranto and its maritime life, the trident divine power over the " +
+      "waters, and Taras is the mythical founder and eponym of the city.",
+    sources: [
+      { title: "Stemma di Taranto — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Taranto" },
+    ],
+  },
+
+  "IT-TE": {
+    description:
+      "Teramo’s municipal flag is a vertical bicolour of white and red — the city’s heraldic colours. Its arms are " +
+      "a red shield crossed by a silver band lettered TERAMUM in black, with a small silver trefoil cross above and " +
+      "below. The Latin name TERAMUM (from Interamnia, ‘between the rivers’) marks the city’s Roman origin between " +
+      "the Tordino and Vezzola.",
+    sources: [
+      { title: "Stemma di Teramo — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Teramo" },
+    ],
+  },
+
+  "IT-TN": {
+    description:
+      "Trento flies a flag of three horizontal stripes — yellow, light blue, yellow — charged with the Aquila di " +
+      "San Venceslao (Eagle of Saint Wenceslaus): a black spread eagle, beaked and armed, its wings set with gold " +
+      "trefoil stems and its body strewn with red flames. King John of Luxembourg granted the eagle to the " +
+      "prince-bishopric at Breslau in 1339; it has been the city’s emblem since 1407 and signals Trento’s tie to " +
+      "the Holy Roman Empire and its prince-bishops.",
+    sources: [
+      { title: "Aquila di San Venceslao — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Aquila_di_San_Venceslao" },
+      { title: "Trento — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Trento" },
+    ],
+  },
+
+  "IT-TO": {
+    description:
+      "Turin’s flag is azure divided by a white cross into four quarters, a gold bull rampant in each, and the year " +
+      "1706 — the banner carried by the civic militia during the Siege of Turin in the War of the Spanish " +
+      "Succession, when the city held out. The bull is canting arms (arma parlante): toro for Torino, echoing the " +
+      "city’s name and, by legend, the ancient Taurini. The city arms proper are a single gold furious bull with " +
+      "silver horns on blue.",
+    sources: [
+      { title: "Stemma di Torino — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Torino" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
