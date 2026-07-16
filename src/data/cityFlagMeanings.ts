@@ -5222,6 +5222,114 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ID-BB": {
+    description:
+      "Pangkal Pinang’s emblem: a five-sided blue shield (Pancasila) bearing a globe outlined in tin — for the " +
+      "tin-mining that built the city — a betel-nut (pinang) tree that gives the city its name, and a “tudung " +
+      "saji” food-cover for its cultured, cooperative society. The numbers 17-9-1757 mark its founding on 17 " +
+      "September 1757.",
+    sources: [
+      { title: "Arti Lambang Daerah — Pemerintah Kota Pangkalpinang", url: "https://website.pangkalpinangkota.go.id/arti-lambang-daerah/" },
+    ],
+  },
+
+  "ID-BE": {
+    description:
+      "Bengkulu’s emblem is a heart-shaped shield of five corners — the city as the heart of Bengkulu province, " +
+      "on the foundation of Pancasila. Within it a star stands for belief in God, a cerana for high culture, a " +
+      "rudus (a Malay sword) for heroism, the Rafflesia arnoldii for Bengkulu’s natural wonder, and rice and " +
+      "coffee for its prosperity.",
+    sources: [
+      { title: "Lambang Daerah dan Artinya — Pemerintah Kota Bengkulu", url: "https://profil.bengkulukota.go.id/lambang-daerah-dan-artinya/" },
+    ],
+  },
+
+  "ID-BT": {
+    description:
+      "Serang’s emblem is a hexagonal shield for the six districts that formed the city, bearing a five-pointed " +
+      "star for belief in God and the Kaibon gate — a landmark of the Banten Sultanate — marking Serang as the " +
+      "capital of Banten and a gateway to prosperity. Yellow is nobility, green the land’s riches, red courage.",
+    sources: [
+      { title: "Arti Lambang Kota Serang — Pemerintah Kota Serang", url: "https://serangkota.go.id/pages/arti-lambang-kota-serang" },
+    ],
+  },
+
+  "ID-KR": {
+    description:
+      "Tanjungpinang’s emblem carries the gonggong — the spiral sea-snail of the surrounding Riau Islands " +
+      "waters, a source of Malay pride and the city’s icon — expressing Tanjungpinang’s deep bond with the sea " +
+      "and its marine riches.",
+    sources: [
+      { title: "Serba-serbi Gonggong, Simbol Kota Tanjungpinang — Good News From Indonesia", url: "https://www.goodnewsfromindonesia.id/infographic/serba-serbi-gonggong-simbol-kota-tanjungpinang" },
+    ],
+  },
+
+  "ID-NB": {
+    description:
+      "Mataram’s emblem: a five-sided shield (Pancasila) with a five-pointed star for faith in God, a seven-link " +
+      "chain for the people’s unity, rice and cotton counted 31 and 8 for the city’s founding on 31 August, and " +
+      "the koak-kaok bird — a local heron — for discipline and dynamism. Its blue, gold and white read as " +
+      "aspiration, glory and purity.",
+    sources: [
+      { title: "Merah Putih… — Pemerintah Kota Mataram", url: "https://web.mataramkota.go.id/merah-putih-simbol-keberanian-kesucian-dan-pemersatu-bangsa/" },
+    ],
+  },
+
+  "ID-NT": {
+    description:
+      "Kupang’s emblem: rice and cotton for social justice, a chain for the representation of all its people, a " +
+      "golden five-pointed star for noble aspirations, and a Sasando — the Rotenese stringed instrument — for the " +
+      "region’s culture, with the year 1996 for the city’s founding and a Helong-language motto, “Lil Au Nol " +
+      "Dael Banan” (“Build me with a sincere heart”).",
+    sources: [
+      { title: "Arti Lambang — K2S Kota Kupang", url: "https://k2skupang.org/detailpost/arti-lambang" },
+    ],
+  },
+
+  "ID-PA": {
+    description:
+      "Jayapura’s emblem is a five-cornered shield uniting the city’s roles as a centre of government, trade, " +
+      "industry, education, tourism and sport. Bands of dark green, navy and red stand for its hills, the open " +
+      "sea and its position on the border with Papua New Guinea; green is the wealth of the land, blue that of " +
+      "the sea, and yellow its high ideals.",
+    sources: [
+      { title: "Arti Logo Kota Jayapura — Zona Hobi Saya", url: "https://www.zonahobisaya.web.id/2024/06/arti-logo-kota-jayapura-di-timur-nkri.html" },
+    ],
+  },
+
+  "ID-RI": {
+    description:
+      "Pekanbaru’s emblem is a shield formed as a city gate — five gateways for Pancasila — ringed by a chain " +
+      "for the people’s unity. A winged wheel marks the city’s dynamic growth, a rubber tree and an oil derrick " +
+      "its life as a trading and port city exporting forest produce and oil, a bamboo spear its heroism, and " +
+      "rice and cotton its prosperity.",
+    sources: [
+      { title: "Lambang Kota Pekanbaru — Pemerintah Kota Pekanbaru", url: "https://www.pekanbaru.go.id/p/menu/profil-kota/lambang-kota-pekanbaru" },
+    ],
+  },
+
+  "ID-SS": {
+    description:
+      "Palembang’s emblem centres on a Rumah Limas, the tiered Palembang noble house, with an unopened jasmine " +
+      "(melati) flower above for harmony and welfare and the Ampera Bridge over the Musi river — the city’s icon, " +
+      "its very design drawn from the Rumah Limas. A triangle for Bukit Siguntang and counts of 17 and 8 recall " +
+      "the 17 August proclamation of independence.",
+    sources: [
+      { title: "Lambang — Situs Resmi Pemerintah Kota Palembang", url: "https://tapem.palembang.go.id/?gos=lambang&id=lambang" },
+    ],
+  },
+
+  "ID-ST": {
+    description:
+      "Palu’s emblem: a golden five-pointed star for Pancasila, a brown Sou Raja — the traditional “Great House” " +
+      "of the Palu chiefs and their council — its 12 pillars and 10 steps marking the city’s founding, and a " +
+      "white winding line for the rivers of Palu set in its valley between two mountains, with rice and cotton " +
+      "for prosperity. The motto is “Maliu Ntinuvu” (sincere dedication in unity).",
+    sources: [
+      { title: "Arti Lambang — Pemerintah Kota Palu", url: "https://palukota.go.id/arti-lambang/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
