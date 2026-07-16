@@ -5899,6 +5899,108 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-PA": {
+    description:
+      "Palermo’s flag is red (porpora) with a golden eagle, its wings spread, lettered “S.P.Q.P.” — Senatus " +
+      "PopulusQue Panormitanus, “the Senate and People of Palermo”. The eagle, an emblem of nobility and of the " +
+      "power of Rome, has been the city’s device since the Middle Ages.",
+    sources: [
+      { title: "Stemma di Palermo — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Palermo" },
+    ],
+  },
+
+  "IT-PC": {
+    description:
+      "Piacenza’s arms: quartered, a silver square on red and a she-wolf on silver. The she-wolf is the " +
+      "Capitoline wolf of Rome, for Piacenza’s standing as the first Roman colony (founded in 218 BC with " +
+      "Cremona); the square is read as the Roman camp (castrum). Its banner styles the city “Primogenita " +
+      "d’Italia”, Italy’s firstborn.",
+    sources: [
+      { title: "Stemma del Comune di Piacenza — Comuni-Italiani", url: "https://www.comuni-italiani.it/033/032/stemma.html" },
+    ],
+  },
+
+  "IT-PD": {
+    description:
+      "Padua’s flag is silver with a red cross — the “biancoscudata”, the city’s emblem since the 12th century " +
+      "and the Lombard League. The red is read for the blood shed in defence of liberty, the white for faith and " +
+      "justice.",
+    sources: [
+      { title: "Bandiera Biancoscudata di Padova — PadovaClick", url: "https://www.padovaclick.com/notizie/visitare/bandiera-biancoscudata-di-padova-storia-e-origini.php" },
+    ],
+  },
+
+  "IT-PE": {
+    description:
+      "Pescara’s arms record the 1927 union of two towns across the river: a golden pale down the middle is the " +
+      "river Pescara, a tower with a church stands for the old borgo of Pescara, and a battlemented castle for " +
+      "Castellammare Adriatico on the far bank. Its motto calls the city the “gate of the Abruzzi”.",
+    sources: [
+      { title: "Stemma di Pescara — La Cultura Italica", url: "https://www.culturaitalica.it/blogs/stemmi-delle-citta-ditalia/stemma-di-pescara-storia-e-significato" },
+    ],
+  },
+
+  "IT-PG": {
+    description:
+      "Perugia’s flag is red with a crowned silver griffin. The griffin — half lion, half eagle — joins the " +
+      "strength of the king of beasts to the vigilance of the king of birds, standing for nobility, courage and " +
+      "wisdom; of Etruscan descent, it has been the city’s emblem since the Middle Ages.",
+    sources: [
+      { title: "Stemma del Comune di Perugia — Comuni-Italiani", url: "https://www.comuni-italiani.it/054/039/stemma.html" },
+    ],
+  },
+
+  "IT-PI": {
+    description:
+      "Pisa’s flag is red with a white “croce pisana” — a cross with arms that widen and end in little discs. " +
+      "The red banner was granted the maritime republic by Barbarossa; the white cross, added later, marks the " +
+      "Pisan people, their Christian faith (Pisa was a keen Crusader) and their communal liberty.",
+    sources: [
+      { title: "Stemma e bandiera di Pisa — Progetto Regioni", url: "https://progettoregioni.wordpress.com/2009/01/19/stemma-e-la-bandiera-di-pisa/" },
+    ],
+  },
+
+  "IT-PN": {
+    description:
+      "Pordenone’s arms show an open gate over waves — for Portus Naonis, the “port of the Noncello”, which gives " +
+      "the city its name. The open river-gate marks its life as a port trading down to Venice and the Adriatic; " +
+      "two golden crowns record the full judicial authority it enjoyed.",
+    sources: [
+      { title: "Stemma della città — Comune di Pordenone", url: "https://www.comune.pordenone.it/it/citta/scopri/stemma" },
+    ],
+  },
+
+  "IT-PO": {
+    description:
+      "Prato’s arms: red strewn with golden lilies (fiordalisi) beneath the Angevin chief — blue with three " +
+      "golden fleurs-de-lis and a red rake. The Angevin chief is a Guelph badge granted by the House of Anjou to " +
+      "cities loyal to it.",
+    sources: [
+      { title: "Stemma e gonfalone del Comune di Prato — Comune di Prato", url: "https://www.comune.prato.it/it/per-i-cittadini/cittadinanza/immagine-coordinata-prato/stemma-e-gonfalone/pagina1147.html" },
+    ],
+  },
+
+  "IT-PR": {
+    description:
+      "Parma’s arms: a blue cross on gold beneath a ducal crown, with the motto “Hostis turbetur quia Parmam " +
+      "Virgo tuetur” (“let the enemy tremble, for the Virgin guards Parma”), from the vow made when the city broke " +
+      "Frederick II’s siege in 1248. The cross dates to the commune (once silver on red); the Farnese dukes gave " +
+      "it their gold and blue.",
+    sources: [
+      { title: "Stemma del Comune di Parma — Comuni-Italiani", url: "https://www.comuni-italiani.it/034/027/stemma.html" },
+    ],
+  },
+
+  "IT-PT": {
+    description:
+      "Pistoia’s arms are chequy of silver and red, supported by two bears in chequy cloaks. The chessboard is " +
+      "linked to the game of chess as a mock-battle — a claim of the city’s martial standing against rival " +
+      "Florence — and the fierce bear was set up in answer to Florence’s lion, the Marzocco.",
+    sources: [
+      { title: "Stemma di Pistoia — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Pistoia" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
