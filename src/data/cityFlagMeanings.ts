@@ -6896,6 +6896,64 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "KR-41": {
+    description:
+      "Suwon’s civic mark combines the Seobuk Gongsimdon — the northwest watchtower of Suwon Hwaseong fortress — " +
+      "with a square, the square read as a ‘window’ opening onto a new future and the ‘land’ where citizens’ " +
+      "happiness unfolds; the fortress wall and the watchtower’s banner are simplified into a modern form. Its " +
+      "Royal Blue recalls the traditional Korean blue of kings and progressive spirit — and King Jeongjo, who " +
+      "built Hwaseong in a spirit of reform and pragmatism — while its Smart Blue marks Suwon leading the future " +
+      "as a high-tech, carbon-neutral city.",
+    sources: [
+      { title: "문장(CI)·시기 — City of Suwon (official)", url: "https://www.suwon.go.kr/sw-www/www05/www05-03/www05-03-07.jsp" },
+    ],
+  },
+
+  "KR-42": {
+    description:
+      "Chuncheon’s civic mark joins the English initial ‘C’ with a heart, for a city full of communal love, in " +
+      "blue tones that stand for Chuncheon’s clean sky and its blue river water. It expresses the vision of a " +
+      "happy city building trust, happiness and love among its people.",
+    sources: [
+      { title: "시의 상징 — City of Chuncheon (official)", url: "https://www.chuncheon.go.kr/cityhall/about-chuncheon/introduction/symbol/" },
+    ],
+  },
+
+  "KR-45": {
+    description:
+      "Jeonju’s civic mark shows a hapjukseon — the traditional Jeonju folding fan — opening dynamically. Its " +
+      "elements stand for Jeonju as a city of tradition and history, a green natural-environment city, and a " +
+      "future media and high-tech city; the fan’s sweeping motion expresses a creative cultural city where " +
+      "tradition and future advance together on a foundation of history. The hapjukseon is a signature of " +
+      "Jeonju’s traditional culture.",
+    sources: [
+      { title: "전주의 상징 CI — City of Jeonju (official)", url: "https://www.jeonju.go.kr/index.9is?contentUid=ff8080818990c349018b041a9e5a3a6a" },
+    ],
+  },
+
+  "KR-47": {
+    description:
+      "Andong’s civic mark renders the city as the heart of the Confucian-scholar (seonbi) spirit and Korean " +
+      "traditional culture through a taegeuk image, while reflecting its setting on the clean upper reaches of the " +
+      "Nakdong river. Drawn in the traditional five cardinal colours (obangsaek) and forming a dynamic infinity " +
+      "(∞) shape, its central red and blue form Andong’s ‘ㅇ’ and the taegeuk of a cultural centre, while the left " +
+      "green (Andong’s ‘ㄷ’) and blue evoke the ‘mountain-taegeuk and water-taegeuk’ of the upper Nakdong.",
+    sources: [
+      { title: "안동마크 — City of Andong (official)", url: "https://www.andong.go.kr/portal/contents.do?mId=0301030200" },
+    ],
+  },
+
+  "KR-48": {
+    description:
+      "Changwon’s civic mark forms the ‘C’ of Changwon as three winged figures spinning together — the city as " +
+      "‘a core city bringing new hope to Korea’. Blue stands for the sea (growth and hope), orange for the city " +
+      "(passion and creativity) and green for nature (life and balance); at the centre, people join hands and " +
+      "turn together, for citizens of one heart advancing through harmony, balance and collaboration.",
+    sources: [
+      { title: "심벌마크 — Changwon City (official)", url: "https://www.changwon.go.kr/cwportal/10671/10708/10710.web" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
