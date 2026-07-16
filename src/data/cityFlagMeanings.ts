@@ -6216,6 +6216,147 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-CN": {
+    description:
+      "Cuneo’s municipal flag is a cloth divided white and red — the city’s civic colours. Its arms, granted in " +
+      "1936, are a Savoy quartering (including Savoy modern, a silver cross on red) recalling the House of Savoy " +
+      "that ruled the city; the crown is accompanied by the motto Ferendo (‘by enduring’). The motto marks Cuneo’s " +
+      "reputation as the ‘city of the seven sieges’, its arms tied to the heroic defence of 1557.",
+    sources: [
+      { title: "Cuneo — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Cuneo" },
+    ],
+  },
+
+  "IT-NO": {
+    description:
+      "Novara’s arms, recognised in 1928, are simply a silver cross on a red shield — the badge shared by many " +
+      "medieval Italian cities of the Ghibelline (pro-imperial) party during the struggle between Empire and " +
+      "Papacy. The city gonfalone is a white cloth richly worked in gold.",
+    sources: [
+      { title: "Novara — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Novara" },
+    ],
+  },
+
+  "IT-TP": {
+    description:
+      "Trapani’s arms, on red, show a gold three-arched bridge bearing five towers over a wavy blue-and-silver sea, " +
+      "surmounted by a gold sickle laid fesswise. The sickle is canting: the city’s Greek name Drepanon means " +
+      "‘sickle’, for the curved, sickle-shaped promontory on which Trapani sits. The five towers stand for the " +
+      "city’s old defensive fortifications and the sea for its maritime life.",
+    sources: [
+      { title: "Stemma di Trapani — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Trapani" },
+    ],
+  },
+
+  "IT-TR": {
+    description:
+      "Terni flies a vertical bicolour of green and red — the civic colours taken from its arms, which show the " +
+      "Thyrus (Tiro), a green winged, scaled dragon crowned in gold, rampant on red. The dragon recalls the " +
+      "legendary local hero who slew a monster terrorising the valley; the arms carry the motto " +
+      "‘Thyrus et amnis dederunt signa Teramnis’ — the dragon and the river (the Nera) gave Terni its emblems.",
+    sources: [
+      { title: "Terni — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Terni" },
+    ],
+  },
+
+  "IT-TS": {
+    description:
+      "Trieste bears on a red gothic shield a silver halberd — the alabarda di San Sergio. By legend the weapon " +
+      "fell from the sky onto the city’s main square on the day in 336 that Saint Sergius was martyred in Persia, " +
+      "the heavenly sign he had promised his fellow Christians in Trieste. The halberd, long kept in the treasury " +
+      "of San Giusto cathedral, has served as the city’s emblem since the thirteenth century (it appears on coins " +
+      "struck 1237–1253).",
+    sources: [
+      { title: "Stemma di Trieste — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Trieste" },
+    ],
+  },
+
+  "IT-TV": {
+    description:
+      "Treviso’s white-and-blue flag carries its arms: a red shield with a silver cross, two eight-pointed silver " +
+      "stars in the upper corners. In Italian heraldry the silver cross signals the city’s medieval Guelph " +
+      "(pro-papal) allegiance; the branches of oak and laurel tied with a tricolour ribbon are later honours.",
+    sources: [
+      { title: "Treviso — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Treviso" },
+    ],
+  },
+
+  "IT-UD": {
+    description:
+      "Udine’s black-and-white flag carries its arms: a silver shield with a black chevron, crested by a rising " +
+      "silver horse. These are the arms of the Savorgnan, the leading medieval family of Udine, adopted as the " +
+      "city’s own; the arms were formally granted in 1939.",
+    sources: [
+      { title: "Udine — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Udine" },
+    ],
+  },
+
+  "IT-VA": {
+    description:
+      "Varese flies a white flag charged with a red cross — the Cross of Saint George, and the city’s red-and-white " +
+      "colours. Its fuller arms are red with a silver pale above and plain silver below, ensigned with the figure " +
+      "of Saint Victor (San Vittore), the city’s patron, bearing a red-cross banner and a martyr’s palm.",
+    sources: [
+      { title: "Bandiera di Varese — Bandiere.it", url: "https://www.bandiere.it/bandiera-varese" },
+      { title: "Varese — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Varese" },
+    ],
+  },
+
+  "IT-VE": {
+    description:
+      "Venice’s red gonfalone bears the winged Lion of Saint Mark: a gold lion, haloed, one paw resting on an open " +
+      "book reading ‘PAX TIBI MARCE EVANGELISTA MEUS’ (Peace be with you, Mark, my Evangelist). The lion is Saint " +
+      "Mark, the city’s patron; the halo marks his sanctity, the book his gospel and the peace of the Republic. In " +
+      "honour of Venice’s republican past the shield is crowned not with a mural crown but with the doge’s horned " +
+      "cap (corno ducale).",
+    sources: [
+      { title: "Stemma di Venezia — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Venezia" },
+    ],
+  },
+
+  "IT-VI": {
+    description:
+      "Vicenza is the only Italian municipality that uses the national tricolour as its civic banner, with the city " +
+      "arms — a silver cross on red — on the white central band. The city adopted the tricolour by council vote in " +
+      "1866 after being awarded its first gold medal for military valour; a second medal followed, and the banner " +
+      "receives the ceremonial honours of a war flag.",
+    sources: [
+      { title: "Vicenza — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Vicenza" },
+    ],
+  },
+
+  "IT-VR": {
+    description:
+      "Verona’s arms are a gold cross on a blue field. The device was adopted around the mid-thirteenth century, " +
+      "when Verona was a free commune, replacing an earlier white cross on red; the gold and blue are drawn from " +
+      "the banner of the Veronese guilds (the ‘arti’) and became the city’s heraldic colours.",
+    sources: [
+      { title: "Verona — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Verona" },
+    ],
+  },
+
+  "IT-VT": {
+    description:
+      "Viterbo’s flag shows the city colours, blue and gold (yellow), taken from its arms: on azure, a crowned gold " +
+      "lion standing on a green field before a red-fruited palm. The lion recalls Viterbo’s Roman origin as " +
+      "Castrum Herculis (Fort of Hercules); the palm was taken as a trophy from the rival town of Ferento, which " +
+      "Viterbo destroyed in 1172, so the lion is shown ‘collared’ to the palm.",
+    sources: [
+      { title: "Stemma di Viterbo — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Viterbo" },
+    ],
+  },
+
+  "IT-VV": {
+    description:
+      "Vibo Valentia’s arms, on a quartered gold-and-red shield with a blue chief, combine three green mounts " +
+      "charged with a rampant lion and two cornucopias (horns of plenty) with an owl-topped staff — symbols of " +
+      "abundance and of wisdom. The shield is crowned with a ducal coronet and bears the motto S.P.Q.V. " +
+      "(Senatus Populusque Vibonensis); the city flag is a cloth split azure and red from the shield’s colours.",
+    sources: [
+      { title: "Vibo Valentia — Simboli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Vibo_Valentia" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
