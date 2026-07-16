@@ -6762,6 +6762,73 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "JP-41": {
+    description:
+      "Saga’s emblem, adopted in 2006 when the enlarged city was formed, is a modern stylisation of the initial " +
+      "‘S’ of Saga, in blue and green — the fourth city emblem in Saga’s history.",
+    sources: [
+      { title: "佐賀県の市町村章一覧（佐賀市） — Wikipedia (ja)", url: "https://ja.wikipedia.org/wiki/佐賀県の市町村章一覧" },
+    ],
+  },
+
+  "JP-42": {
+    description:
+      "Nagasaki’s emblem, adopted in 1900, shapes the cursive character 「長」 (naga) as folded cranes set in a star " +
+      "— evoking Nagasaki’s nickname the ‘Port of the Crane’ (鶴の港). The five 「市」 characters within record that " +
+      "Nagasaki was one of the five ports opened in the Ansei era (with Hakodate, Niigata, Yokohama and Kōbe).",
+    sources: [
+      { title: "長崎市のシンボル — City of Nagasaki (official)", url: "https://www.city.nagasaki.lg.jp/page/2364.html" },
+    ],
+  },
+
+  "JP-43": {
+    description:
+      "Kumamoto’s emblem, adopted in 1969, stylises the hiragana 「く」 (ku), the first syllable of the city’s name, " +
+      "closed into a bold circle — expressing a city that prizes harmony and drives vigorously toward future " +
+      "development.",
+    sources: [
+      { title: "熊本市のプロフィール（市章） — City of Kumamoto (official)", url: "https://www.city.kumamoto.jp/hpkiji/pub/detail.aspx?c_id=5&id=1928" },
+    ],
+  },
+
+  "JP-44": {
+    description:
+      "Ōita’s emblem, adopted in 1965, is a stylisation of the name 「大分」 (Ōita); its rounded form signifies the " +
+      "city’s harmonious, well-rounded development.",
+    sources: [
+      { title: "市章 — City of Ōita (official)", url: "https://www.city.oita.oita.jp/o001/shisejoho/annai/1118204545748.html" },
+    ],
+  },
+
+  "JP-45": {
+    description:
+      "Miyazaki’s emblem stylises the character 「宮」 (miya) of the city’s name: the outer circle stands for peace " +
+      "and the knot at its centre for unity.",
+    sources: [
+      { title: "市の市章・花など（シンボル） — City of Miyazaki (official)", url: "https://www.city.miyazaki.miyazaki.jp/city/public_relations/relations/366.html" },
+    ],
+  },
+
+  "JP-46": {
+    description:
+      "Kagoshima’s emblem combines the Shimazu family crest — the ‘cross within a circle’ (丸に十の字) of the lords " +
+      "of Satsuma — with the character 「市」, four arrows radiating out to symbolise the city developing in every " +
+      "direction. On the city flag the black emblem stands above a red silhouette of Sakurajima, the volcano that " +
+      "overlooks the city.",
+    sources: [
+      { title: "市の花・木、市の紋章 — City of Kagoshima (official)", url: "https://www.city.kagoshima.lg.jp/soumu/shichoshitu/kouhou/shokai/monsho.html" },
+    ],
+  },
+
+  "JP-47": {
+    description:
+      "Naha’s emblem, adopted in 1921, arranges the katakana 「ナハ」 (Naha) into a circular form, expressing the " +
+      "city’s endless development.",
+    sources: [
+      { title: "市のシンボル・市歌・憲章 — City of Naha (official)", url: "https://www.city.naha.okinawa.jp/admin/cityhall/profile/symbol.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
