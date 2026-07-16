@@ -5084,6 +5084,87 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ID-GO": {
+    description:
+      "Gorontalo’s emblem is a winged shield with the city’s name on a ribbon — its people’s aspirations soaring " +
+      "like an eagle. A lotus of five petals and a coconut palm with five leaves and five fruits stand for the " +
+      "five principles of Pancasila; the coconut also marks copra as Gorontalo’s main product, the lotus peace " +
+      "and purity, the rice and cotton a just and prosperous society, and the chain the city’s unity with all of " +
+      "Indonesia.",
+    sources: [
+      { title: "Arti Lambang — Pemerintah Kota Gorontalo", url: "https://kominfo.gorontalokota.go.id/page/arti-lambang" },
+    ],
+  },
+
+  "ID-JA": {
+    description:
+      "Jambi’s emblem, on a sky-blue shield, carries the Keris Siginjai — the heirloom dagger whose holder was " +
+      "recognised as ruler of the old Kingdom of Jambi — and a pair of white geese with the Perahu Kajang Lako " +
+      "boat, from the founding legend of Orang Kayo Hitam. Two white stars flanking the city’s name stand for its " +
+      "many peoples and faiths.",
+    sources: [
+      { title: "Arti Lambang — Pemerintahan Kota Jambi", url: "https://jambikota.go.id/tentang/profil/arti_lambang" },
+    ],
+  },
+
+  "ID-JT": {
+    description:
+      "Semarang’s emblem gathers symbols of the city’s identity, its revolutionary tradition and its national " +
+      "spirit: the Tugu Muda for the citizens’ heroism in the “Five-Day Battle” against Japanese troops in 1945, " +
+      "a hill and temple for its upland “kota atas”, water and a fortress wall for its port, a shield for the " +
+      "people’s strength, rice and cotton for prosperity, and a fish for the fisheries Semarang has long been " +
+      "known for.",
+    sources: [
+      { title: "Arti Lambang — Pemerintah Kota Semarang", url: "https://semarangkota.go.id/p/31/arti_lambang" },
+    ],
+  },
+
+  "ID-SB": {
+    description:
+      "Padang’s emblem (motto “Padang Kota Tercinta”, Padang Beloved City) is a shield-like trapezium recalling a " +
+      "buffalo, bearing a rangkiang (the Minangkabau rice barn, for cultural integrity), Mount Padang and the " +
+      "sea with five rows of waves for this Pancasila-guided coastal city, and a Minang club and keris for the " +
+      "defence of the homeland and ancestral honour.",
+    sources: [
+      { title: "Arti Lambang Kota Padang — Zona Hobi Saya", url: "https://www.zonahobisaya.web.id/2022/12/arti-lambang-pemerintah-kota-padang.html" },
+    ],
+  },
+
+  "ID-SN": {
+    description:
+      "Makassar’s emblem: a white shield (purity) bearing a five-sailed Pinisi ship — Makassar an ancient " +
+      "maritime centre — with rice and coconut for prosperity and a fortress (Fort Rotterdam) behind for the " +
+      "city’s glory; the red, white and orange border stands for the unity and greatness of Indonesia. Its motto " +
+      "is “Sekali Layar Terkembang, Pantang Biduk Surut Ke Pantai” — once the sail is spread, the boat never " +
+      "turns back.",
+    sources: [
+      { title: "Logo Kota Makassar — Portal Resmi Pemkot Makassar", url: "https://makassarkota.go.id/logo-kota-makassar-2/" },
+    ],
+  },
+
+  "ID-SU": {
+    description:
+      "Medan’s emblem: a five-pointed national star over a five-part shield (Pancasila), with a wreath of 17 " +
+      "rice grains and 8 cotton flowers and a sharpened bamboo behind — 17 August 1945 and the fight for " +
+      "independence — and the city’s five great export crops (sisal, tea, rubber, palm oil and Deli tobacco) for " +
+      "its prosperity as a trading centre.",
+    sources: [
+      { title: "Lambang Kota Medan — Portal Resmi Pemko Medan", url: "https://portal.medan.go.id/menu/selayang-pandang/lambang-kota-medan" },
+    ],
+  },
+
+  "ID-YO": {
+    description:
+      "Yogyakarta’s emblem (adopted 1953) has an 18:25 ratio recalling the start of Prince Diponegoro’s war in " +
+      "1825. Around the shield stand the Tugu — the city’s landmark — a gunungan for its culture, a caged banyan " +
+      "for democracy, a bull for courage and a keris for struggle, with a golden star, rice and cotton for " +
+      "prosperity; the colours read black for eternity, gold for nobility, white for purity, red for courage and " +
+      "green for prosperity.",
+    sources: [
+      { title: "Lambang dan Identitas — Pemerintah Kota Yogyakarta", url: "https://jogjakota.go.id/page/lambang-dan-identitas" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
