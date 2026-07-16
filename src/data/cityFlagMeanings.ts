@@ -6829,6 +6829,27 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "KG-O": {
+    description:
+      "Osh flies a flag divided by a zigzag line between blue above and white below, charged with a red tündük — " +
+      "the crown of a yurt’s roof. The broken dividing line stands for the sacred mountain Sulayman-Too that rises " +
+      "over the city; blue signifies aspiration and freedom, white perfection and justice. Adopted in 2012.",
+    sources: [
+      { title: "Флаг города Ош — Геральдика.ру", url: "https://geraldika.ru/symbols/31884" },
+    ],
+  },
+
+  "KG-Y": {
+    description:
+      "Karakol’s flag is sky-blue — for purity, the open sky and Lake Issyk-Kul, on whose shore the city stands — " +
+      "bearing the central charge of the city arms: a rising sun with a horned deer’s head above wave silhouettes. " +
+      "The waves stand for Lake Issyk-Kul and the Karakol river, the sun for warmth and light and water for life, " +
+      "and the deer’s head for beauty and nobility.",
+    sources: [
+      { title: "Атрибуты — мэрия города Каракол (official)", url: "https://msukarakol.ucoz.org/index/atributy/0-10" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
