@@ -6954,6 +6954,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "KR-46": {
+    description:
+      "Muan County’s mark rests on a yellow-ochre square for the red-clay (hwangto) land that is the root of Muan " +
+      "life; a circle at the right — a blue disc lined to read as a rising sun — stands for community and the " +
+      "dynamism of Muan’s development; the blue waves below are the West Sea and the Yeongsan river, giving the " +
+      "design its direction and energy; and the green leaf stands for Muan’s clean environment.",
+    sources: [
+      { title: "무안의 상징 상징마크 — Muan County (official)", url: "https://www.muan.go.kr/www/abountmuan/symbol" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
