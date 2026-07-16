@@ -5718,6 +5718,106 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-IS": {
+    description:
+      "Isernia’s arms: on blue, the monogram “IS” formed by a serpent coiled about a staff. The staff — read as a " +
+      "sceptre — marks the city’s standing as a free royal city (granted by Charles V in 1519); the serpent " +
+      "stands for the vigilance and prudence of its people.",
+    sources: [
+      { title: "Stemma del Comune di Isernia — Comuni-Italiani", url: "https://www.comuni-italiani.it/094/023/stemma.html" },
+    ],
+  },
+
+  "IT-LC": {
+    description:
+      "Lecco’s arms: on blue — the colour of the sky and of the lake — a golden lion rampant, for the city’s " +
+      "strength, courage and pride.",
+    sources: [
+      { title: "Stemma del Comune di Lecco — Comuni-Italiani", url: "https://www.comuni-italiani.it/097/042/stemma.html" },
+    ],
+  },
+
+  "IT-LE": {
+    description:
+      "Lecce’s arms show a tree and a she-wolf. The tree is the holm-oak (leccio) of the dense woods from which " +
+      "Roman Lupiae took its modern name, an emblem of resilience; the she-wolf recalls the city’s Roman kinship " +
+      "and stands for strength and watchful protection.",
+    sources: [
+      { title: "La Lupa di Lecce — storia e significato", url: "https://www.lavecchiaosteriatotu.it/la-lupa-di-lecce-storia-e-significato-del-simbolo-della-citta/" },
+    ],
+  },
+
+  "IT-LI": {
+    description:
+      "Livorno’s arms: on red, a two-towered fortress rising from the sea, the right tower flying a silver banner " +
+      "lettered “FIDES” — for the loyalty (fides) the Livornesi showed the Medici, who built the port city. The " +
+      "tower also recalls the medieval Mastio di Matilde and the initial of Livorno.",
+    sources: [
+      { title: "Stemma del Comune di Livorno — Comuni-Italiani", url: "https://www.comuni-italiani.it/049/009/stemma.html" },
+    ],
+  },
+
+  "IT-LO": {
+    description:
+      "Lodi’s flag is a red cross on gold. The arms are usually derived from those attributed to the Emperor " +
+      "Constantine (a gold cross on red) with the colours reversed; some instead link them to the age of the " +
+      "First Crusade.",
+    sources: [
+      { title: "Stemma di Lodi — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Lodi" },
+    ],
+  },
+
+  "IT-LT": {
+    description:
+      "Latina was founded in 1932 as “Littoria”, the chief new town of the great reclamation of the Pontine " +
+      "Marshes, and renamed Latina in 1946. Its arms recall that origin: golden ears of wheat rising from the " +
+      "drained black-and-silver marsh, for the fields won from the swamp.",
+    sources: [
+      { title: "Stemma della Città di Latina — Agraldica", url: "http://www.agraldica.it/" },
+    ],
+  },
+
+  "IT-LU": {
+    description:
+      "Lucca’s flag is party per pale white and red; its arms are blue with the word “LIBERTAS” in gold across " +
+      "the centre. The motto records Lucca’s long life as an independent republic — one of the few Italian " +
+      "city-states to keep its freedom, between powerful Florence and Pisa, down to the Napoleonic age.",
+    sources: [
+      { title: "Stemma del Comune di Lucca — Comuni-Italiani", url: "https://www.comuni-italiani.it/046/017/stemma.html" },
+    ],
+  },
+
+  "IT-MB": {
+    description:
+      "Monza’s arms: on blue, the Iron Crown (Corona Ferrea) and the cross of King Berengar, ringed by the motto " +
+      "“Est sedes Italiae Regni Modoetia magni” (“Monza is the seat of the great Kingdom of Italy”). The Iron " +
+      "Crown, kept in Monza’s cathedral, holds an iron band said to be from a nail of the Crucifixion, and " +
+      "crowned the kings of Italy.",
+    sources: [
+      { title: "Stemma di Monza — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Monza" },
+    ],
+  },
+
+  "IT-MC": {
+    description:
+      "Macerata’s arms: red quartered by two black fillets, with a silver cross in the first and fourth quarters " +
+      "and a silver millstone (mola) in the second and third — the millstone a canting reference to the city’s " +
+      "name.",
+    sources: [
+      { title: "Macerata diventa città — Notiziario Araldico", url: "https://www.notiziarioaraldico.info/2022041918187/macerata-diventa-citta/" },
+    ],
+  },
+
+  "IT-ME": {
+    description:
+      "Messina’s flag is red with a golden cross reaching the edges (adopted 1988); the arms add two vine " +
+      "branches with golden grapes. The red and gold are the colours of the Crown of Aragon that long ruled " +
+      "Sicily; tradition, without historical proof, traces the gold cross on red to late antiquity.",
+    sources: [
+      { title: "Stemma di Messina — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Messina" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
