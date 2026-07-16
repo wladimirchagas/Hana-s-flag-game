@@ -7095,6 +7095,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LU-D": {
+    description:
+      "Diekirch flies a flag divided yellow over blue, the colours of its municipal arms — a burely (barred) field " +
+      "of gold and azure bearing a crowned gold lion above a red tower rising from the base, beneath a mural crown " +
+      "of three towers. The arms were adopted in 1986.",
+    sources: [
+      { title: "Diekirch — Flags of the World (FOTW)", url: "https://crwflags.com/fotw/flags/lu-die.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
