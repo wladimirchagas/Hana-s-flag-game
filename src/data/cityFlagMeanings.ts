@@ -5818,6 +5818,87 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-MI": {
+    description:
+      "Milan’s flag is white with a red cross. Adopted in the 12th century as a sign of the commune’s autonomy " +
+      "from the Empire, it is the red cross of the Crusaders on their white robes; the city’s patron Saint " +
+      "Ambrose is shown bearing it, and it was the banner of the Duchy of Milan from 1395 to 1797.",
+    sources: [
+      { title: "Simboli di Milano — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Simboli_di_Milano" },
+    ],
+  },
+
+  "IT-MN": {
+    description:
+      "Mantua’s arms: on silver, a red cross with, in the first quarter, the bust of Virgil — the poet born at " +
+      "Mantua. The red cross has been the city’s emblem since the 12th century, when the Empire recognised the " +
+      "commune.",
+    sources: [
+      { title: "Stemma di Mantova — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Mantova" },
+    ],
+  },
+
+  "IT-MO": {
+    description:
+      "Modena’s arms: on gold, a blue cross behind two crossed augers (trivelle), with the motto “Avia pervia” " +
+      "(“the impassable made passable”). The augers stand for the boring of wells, an emblem of the city’s tenacity " +
+      "in making the hardest way easy — reaching the water and riches of the Modenese underground.",
+    sources: [
+      { title: "Stemma di Modena — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Modena" },
+    ],
+  },
+
+  "IT-MS": {
+    description:
+      "Massa’s flag bears the arms of the Cybo-Malaspina, the princes who made it their capital (“Massa Cybea”): " +
+      "the flowering thorn of the Malaspina and the cross and chequed band of the Cybo, with the Medici balls at " +
+      "the heart — the marriage of the three houses in Alberico I, a prince of the Holy Roman Empire.",
+    sources: [
+      { title: "Massa (Italia) — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Massa_(Italia)" },
+    ],
+  },
+
+  "IT-MT": {
+    description:
+      "Matera’s arms: an ox with three ears of wheat in its mouth, an “M” above, and the motto “Bos lassus " +
+      "firmius figit pedem” (“the tired ox plants its foot the firmer”). The gentle, hard-working ox and the " +
+      "wheat stand for the city’s farming and herding; the motto warns that a patient people, worn by abuses, " +
+      "will in the end resist.",
+    sources: [
+      { title: "Lo stemma di Matera ed il suo significato — WikiMatera", url: "https://www.wikimatera.it/guida-di-matera/la-storia-millenaria-di-matera/lo-stemma-di-matera-ed-il-suo-significato/" },
+    ],
+  },
+
+  "IT-NA": {
+    description:
+      "Naples’ flag is party per fess gold over red. The gold stands for the sun that lights and quickens " +
+      "nature, the red for the purple robe of kings and great men; the two colours have marked the city since at " +
+      "least a parchment of 1325.",
+    sources: [
+      { title: "Stemma di Napoli — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Napoli" },
+    ],
+  },
+
+  "IT-NU": {
+    description:
+      "Nuoro’s arms bring together an ox, a mountain and a sun — the mountain being Monte Ortobene, the granite " +
+      "peak the Nuoresi hold sacred and simply call “su Monte” (“the Mountain”), the soul of the city that rises " +
+      "above it.",
+    sources: [
+      { title: "Stemma del Comune di Nuoro — Comuni-Italiani", url: "https://www.comuni-italiani.it/091/051/stemma.html" },
+    ],
+  },
+
+  "IT-OR": {
+    description:
+      "Oristano’s arms bear an uprooted oak tree held by two lions — the “albero deradicato”, emblem of the " +
+      "medieval Giudicato of Arborea, of which Oristano was the capital. The oak is a canting sign for Arborea " +
+      "(from the Latin arbor, “tree”).",
+    sources: [
+      { title: "Bandiera arborense — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Bandiera_arborense" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
