@@ -18,5 +18,5 @@ async function run(code,needle){
   }
   console.log(`${code}: FAILED`);
 }
-for(const [cd,nd] of [["ID-SU","deli tobacco"],["ID-SN","pinisi"],["ID-YO","diponegoro"],["ID-JT","five-day battle"]]) await run(cd,nd);
+for(const [cd,nd] of [["ID-AC","serambi mekkah"],["ID-KB","equator"],["ID-LA","siger"],["ID-MA","manggurebe"]]) await run(cd,nd);
 await b.close();

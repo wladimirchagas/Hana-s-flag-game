@@ -5165,6 +5165,63 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ID-AC": {
+    description:
+      "Banda Aceh’s emblem (1962): a mosque dome and the Gunongan for the city’s Islamic faith and heritage — " +
+      "Aceh is the “Serambi Mekkah”, the Verandah of Mecca — with rice and pepper for prosperity, a rencong (the " +
+      "Acehnese dagger) for heroism in the fight for independence, and the Student-City monument for learning and " +
+      "the spirit of 1945. Yellow stands for majesty.",
+    sources: [
+      { title: "Arti Lambang Kota Banda Aceh — Zona Hobi Saya", url: "https://www.zonahobisaya.web.id/2023/06/arti-lambang-kota-banda-aceh-yang-dapat.html" },
+    ],
+  },
+
+  "ID-KB": {
+    description:
+      "Pontianak’s emblem centres on a mosque dome — the city was founded in 1771 with the building of a mosque — " +
+      "crossed by the line of the Equator, for Pontianak is the one big city the Equator runs through (the “Kota " +
+      "Khatulistiwa”). Rubber and coconut leaves (23 and 10, for the 23 October founding) flank five rising rays " +
+      "for Pancasila, with the Kapuas river below.",
+    sources: [
+      { title: "Arti dan Gambar dari Lambang Kota Pontianak — Diskominfo Kota Pontianak", url: "https://diskominfo.pontianak.go.id/berita/arti-dan-gambar-dari-lambang-kota-pontianak" },
+    ],
+  },
+
+  "ID-KI": {
+    description:
+      "Samarinda’s emblem: a green shield (fertility) with three currents of the Mahakam river and its bridge " +
+      "(tranquility and unity), two pesut — the rare Mahakam river dolphins — 21 rice grains for the city’s " +
+      "founding on 21 January 1968, cotton flowers, and a golden boat; the “tepian” (riverbank) marks Samarinda " +
+      "as a timber-industry city, under the motto “Teduh, Rapi, Aman, Nyaman”.",
+    sources: [
+      { title: "Makna Lambang — Portal Resmi Kota Samarinda", url: "https://samarindakota.go.id/laman/makna-lambang" },
+    ],
+  },
+
+  "ID-LA": {
+    description:
+      "Bandar Lampung’s emblem is crowned by the golden Siger, the Lampung ceremonial headdress that stands for " +
+      "greatness and refined culture. A shield of white over blue shows the city of land and sea; a royal " +
+      "umbrella of 45 segments and rice and pepper counted 17 and 6 mark the dates 17-8-1945 and the city’s " +
+      "founding on 17 June 1682, and a jukung boat with a figure marks it a city of trade and services. The " +
+      "motto is “Ragom Gawi” (working together).",
+    sources: [
+      { title: "Arti Lambang Kota Bandar Lampung", url: "https://smpn6bandarlampung.blogspot.com/2015/05/arti-lambang-kota-bandar-lampung-kita.html" },
+    ],
+  },
+
+  "ID-MA": {
+    description:
+      "Ambon’s emblem shows a belang manggurebe — a traditional Maluku racing boat — paddled by five people, for " +
+      "dynamic forward motion through gotong-royong (mutual help) and the five principles of Pancasila. A grey " +
+      "fort names the city, three mountains recall the Trikora campaign, the parang and salawaku (sword and " +
+      "shield) are the people’s weapons of independence, and sago and coconut are Maluku’s age-old livelihood. " +
+      "The motto is “Bersatu Manggurebe Maju”.",
+    sources: [
+      { title: "Lambang Pemerintah — Kota Ambon", url: "https://ambon.go.id/lambang-pemerintah/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
