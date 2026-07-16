@@ -6863,6 +6863,39 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "KZ-ATY": {
+    description:
+      "Atyrau’s flag carries the city arms on a white field between blue borders. The disc is quartered green and " +
+      "gold — the two colours standing for Asia and Europe, which meet at Atyrau where the Ural river divides the " +
+      "continents — over a compass-star; below, two sturgeon flank an oil derrick, for the Caspian fisheries and " +
+      "the oil industry on which the city lives, all ringed with Kazakh ornament. Adopted in 1999.",
+    sources: [
+      { title: "Герб города Атырау — Геральдика.ру", url: "https://geraldika.ru/s/19605" },
+    ],
+  },
+
+  "KZ-KUS": {
+    description:
+      "Kostanay’s flag bears the city arms on blue: on a shield parted azure and gold, a green inescutcheon with a " +
+      "four-sailed mill for the city’s processing industry; a rising sun above; two golden eagles supporting a " +
+      "scroll with the founding year 1879; and below, spools of thread for the light and chemical industries. " +
+      "Approved in 1990.",
+    sources: [
+      { title: "Герб Костаная — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/Герб_Костаная" },
+    ],
+  },
+
+  "KZ-PAV": {
+    description:
+      "Pavlodar’s emblem, adopted in 2015, is round, in the national colours. At its centre the name «Павлодар» is " +
+      "washed by the waves of the Irtysh river; above sits a shańyraq — the crown of a yurt — from which the sun’s " +
+      "rays spread over an industrial skyline, for energy and development; a cog-wheel at the base marks the " +
+      "city’s industry; and a border of Kazakh ornament stands for continuity, tradition and culture.",
+    sources: [
+      { title: "Герб города Павлодара — Геральдика.ру", url: "https://geraldika.ru/s/10763" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
