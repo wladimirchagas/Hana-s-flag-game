@@ -5434,6 +5434,95 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "IT-BL": {
+    description:
+      "Belluno’s flag and arms: on blue, a golden cross with two red dragons facing each other in the upper " +
+      "quarters. The red dragon is an emblem of military valour inherited from around the year 1000, when " +
+      "Belluno was a stronghold of the Saxon (Ottonian) dynasty, whose war-standard bore the red dragon.",
+    sources: [
+      { title: "Lo stemma della città di Belluno — Comune di Belluno", url: "https://archivio.comune.belluno.it/wp-content/uploads/2012/09/facciamo-il-punto-sullo-stemma-di-Belluno-aggiornato-2007.pdf" },
+    ],
+  },
+
+  "IT-BN": {
+    description:
+      "Benevento’s flag carries the city colours; its arms, party red and silver, bear a rearing boar. It is the " +
+      "Calydonian boar of Greek myth, whose tusks legend says were carried to Benevento by its founder Diomedes " +
+      "on his way home from the Trojan War — the city’s emblem since the Middle Ages.",
+    sources: [
+      { title: "Stemma del Comune di Benevento — Comuni-Italiani", url: "https://www.comuni-italiani.it/062/008/stemma.html" },
+    ],
+  },
+
+  "IT-BO": {
+    description:
+      "Bologna’s arms bear a red cross on silver — the Comune — beside the popolo’s shield of blue lettered " +
+      "“Libertas” in gold. The freedom banner was given to Bologna by Florence in 1376 when the city drove out " +
+      "the papal legate, and “Libertas” has been its watchword ever since.",
+    sources: [
+      { title: "Stemma di Bologna — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Bologna" },
+    ],
+  },
+
+  "IT-BR": {
+    description:
+      "Brindisi’s arms: originally a stag’s head — the Messapian name of the city (BRVNDA, “stag’s head”, which " +
+      "the shape of its harbour resembles) — to which two columns were added in 1845 for the Roman columns that " +
+      "marked the end of the Appian Way at Brindisi; the column signifies constancy and steadfast resistance.",
+    sources: [
+      { title: "Descrizione dello stemma e del gonfalone — Provincia di Brindisi", url: "https://www.provincia.brindisi.it/index.php/storia-e-tradizioni/la-storia-della-provincia-in-generale/descrizione-dello-stemma-e-del-gonfalone" },
+    ],
+  },
+
+  "IT-BS": {
+    description:
+      "Brescia’s flag is a white-and-blue bicolour in the city colours; its arms bear a blue lion rampant on " +
+      "silver, the ancient civic lion. Brescia is called the “Leonessa d’Italia” (Lioness of Italy), a name given " +
+      "by the poet Carducci for its lion-hearted ten-day resistance to the Austrians in 1849.",
+    sources: [
+      { title: "Stemma del Comune di Brescia — Comuni-Italiani", url: "https://www.comuni-italiani.it/017/029/stemma.html" },
+    ],
+  },
+
+  "IT-BT": {
+    description:
+      "Andria’s arms: on blue, a crowned lion climbing a cut oak branch. The lion stands for strength, courage " +
+      "and sovereignty — the traditional emblem of the loyal city that styled itself Andria “fidelis”.",
+    sources: [
+      { title: "Stemma del Comune di Andria — Comuni-Italiani", url: "https://www.comuni-italiani.it/110/001/stemma.html" },
+    ],
+  },
+
+  "IT-BZ": {
+    description:
+      "Bolzano’s flag is party red and white, from the city arms — silver with a red band charged with a golden " +
+      "six-pointed star, granted in 1381 by Duke Leopold III of Austria. The white and red echo the Austrian " +
+      "colours; the golden star is read as the Stella Maris, for the Madonna, patron of the city’s cathedral.",
+    sources: [
+      { title: "Stemma di Bolzano — Wikipedia (it)", url: "https://it.wikipedia.org/wiki/Stemma_di_Bolzano" },
+    ],
+  },
+
+  "IT-CA": {
+    description:
+      "Cagliari’s flag is a blue-and-red bicolour in the city colours. Its arms quarter the cross of Savoy with " +
+      "a silver three-towered castle on a sea-washed rock — the medieval fortified quarter of Castello, whose " +
+      "great towers (San Pancrazio, dell’Elefante and dell’Aquila) still crown the city.",
+    sources: [
+      { title: "Stemma del Comune di Cagliari — Comuni-Italiani", url: "https://www.comuni-italiani.it/092/009/stemma.html" },
+    ],
+  },
+
+  "IT-CB": {
+    description:
+      "Campobasso’s flag is divided per bend red and blue, for the two medieval confraternities that ruled the " +
+      "city — red for the Crociati (Crusaders) and blue for the Trinitari. Its arms show six Guelph-battlemented " +
+      "towers beneath a marquis’s crown, for the six towers that once guarded the city’s gates.",
+    sources: [
+      { title: "Bandiera di Campobasso — Bandiere.it", url: "https://www.bandiere.it/bandiera-campobasso" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
