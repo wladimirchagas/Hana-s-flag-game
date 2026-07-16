@@ -1075,6 +1075,29 @@ const MANUAL_VERIFIED_POPULATION = {
   "MN-071": { population: 105853, year: 2020, basis: "census" }, // Bayan-Ölgii
   "MN-073": { population: 95067, year: 2020, basis: "census" }, // Arkhangai
   "MN-1": { population: 1499140, year: 2020, basis: "census" }, // Ulaanbaatar
+
+  // Poland, GUS Narodowy Spis Powszechny 2021 (NSP 2021 census) — supersedes
+  // the 2011–2020 estimates our data carried for most voivodeships. Keyed by the
+  // ISO letter codes the app's subdivisionMeta uses (PL-MZ…); the stale legacy
+  // numeric-code duplicates (PL-14…, aliased to the letter codes via
+  // CODE_ALIASES) and a stray PL-KI were dropped from the generated file. The 16
+  // sum exactly to the published national total 38,036,118 (checksum-verified).
+  "PL-MZ": { population: 5514699, year: 2021, basis: "census" }, // Masovian
+  "PL-SL": { population: 4402950, year: 2021, basis: "census" }, // Silesian
+  "PL-WP": { population: 3504579, year: 2021, basis: "census" }, // Greater Poland
+  "PL-MA": { population: 3432295, year: 2021, basis: "census" }, // Lesser Poland
+  "PL-DS": { population: 2904894, year: 2021, basis: "census" }, // Lower Silesian
+  "PL-LD": { population: 2410286, year: 2021, basis: "census" }, // Łódź
+  "PL-PM": { population: 2357320, year: 2021, basis: "census" }, // Pomeranian
+  "PL-PK": { population: 2093360, year: 2021, basis: "census" }, // Podkarpackie
+  "PL-LU": { population: 2052340, year: 2021, basis: "census" }, // Lublin
+  "PL-KP": { population: 2027261, year: 2021, basis: "census" }, // Kuyavian-Pomeranian
+  "PL-ZP": { population: 1657716, year: 2021, basis: "census" }, // West Pomeranian
+  "PL-WN": { population: 1382232, year: 2021, basis: "census" }, // Warmian-Masurian
+  "PL-SK": { population: 1196557, year: 2021, basis: "census" }, // Świętokrzyskie
+  "PL-PD": { population: 1154283, year: 2021, basis: "census" }, // Podlaskie
+  "PL-LB": { population: 991213, year: 2021, basis: "census" }, // Lubusz
+  "PL-OP": { population: 954133, year: 2021, basis: "census" }, // Opole
 };
 
 async function fetchByQid(code, qid) {
