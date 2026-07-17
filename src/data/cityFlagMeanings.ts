@@ -7607,6 +7607,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-UN": {
+    description:
+      "Ungheni’s flag has nine stripes alternating red and black with a white triangle at the hoist. Red is for " +
+      "blood and the hard fate of the villages along the Prut, black for the earth, and the nine stripes for the " +
+      "nine settlements that formed the town — Ungheni and eight villages. The white triangle stands for the river " +
+      "Prut and the town’s name, ‘the angle on the Prut’ (unghi, ‘angle’).",
+    sources: [
+      { title: "Simbolurile orașului — Ungheni (official)", url: "https://ungheni.md/simbolurile-orasului/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
