@@ -7528,6 +7528,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-CL": {
+    description:
+      "Călărași bears a silver horseman (călăraș) galloping, a staff in his hand, with four golden crosses — " +
+      "canting arms, for a călăraș was a mounted frontier soldier, echoing the district’s name. The arms were " +
+      "approved in 2014.",
+    sources: [
+      { title: "Raionul Călărași — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Raionul_C%C4%83l%C4%83ra%C8%99i" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
