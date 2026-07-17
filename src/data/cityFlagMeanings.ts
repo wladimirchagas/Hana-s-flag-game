@@ -7349,6 +7349,43 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-068": {
+    description:
+      "Olaine’s shield is divided diagonally silver and green. On the silver stand three red blood-drops, for " +
+      "health and life — the town is home to the Olainfarm pharmaceutical works — and on the green a black " +
+      "cranberry sprig with silver leaves and red berries, for the peat bogs of the Olaine district.",
+    sources: [
+      { title: "Olaines ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Olaines_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-084": {
+    description:
+      "Rūjiena’s shield carries, below on red, a golden sheaf of grain for prosperity, and above on gold, three " +
+      "blue flax-flowers — for the town’s well-developed growing and working of flax.",
+    sources: [
+      { title: "Rūjienas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/R%C5%ABjienas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-086": {
+    description:
+      "Salacgrīva’s arms show silver bands for the sea and the Salaca river that flows into it, and across them a " +
+      "black anchor that both joins the river’s two banks and marks the port at its mouth.",
+    sources: [
+      { title: "Salacgrīvas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Salacgr%C4%ABvas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-088": {
+    description:
+      "Saldus bears, on blue, a silver timber castle of three towers standing on a silver base — its design likely " +
+      "drawn from the 12-metre Curonian hillfort at the southern end of Lake Saldus.",
+    sources: [
+      { title: "Saldus ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Saldus_%C4%A3erbonis" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
