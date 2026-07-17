@@ -13,6 +13,7 @@ import { subdivisionFlagUrl } from "../api/subdivisions";
 import { capitalFlagSrc } from "../lib/capitalInfo";
 import { subdivisionCityMarkers } from "../lib/cityRoles";
 import { gameAudio } from "../lib/gameAudio";
+import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameClock } from "../components/GameClock";
 import { ScoreBoard } from "../components/ScoreBoard";
@@ -266,18 +267,37 @@ export function SubnationalGamePage({
     label: `Sub-national — ${countryName} · ${game.totalQuestions} flags · ${deckLabel}`,
   }), [gameMode, game.totalQuestions, countryName, deckLabel]);
 
-  // Capital ★ markers shown as a location hint during capital questions —
-  // decorative only (the marker layer is pointer-events: none per the hard
-  // rule), so taps always land on the division polygons.
-  const capitalMarkers = useMemo(
-    () =>
-      includeCapitals
-        ? subdivisionCityMarkers(
-            countryCode.toUpperCase(),
-            game.capitalDivisions.map((d) => d.code),
-          )
-        : null,
-    [includeCapitals, countryCode, game.capitalDivisions],
+  // Capital ★ overlay — a USER choice via the same ⭐ layer toggle as the Learn
+  // map, OFF by default, and never switched automatically by the game (an
+  // auto-toggle would leak whether the current flag is a division's or a
+  // capital's). Markers cover the whole country (like Learn) and are decorative
+  // only (pointer-events: none per the hard rule), so taps always land on the
+  // division polygons.
+  const [showCities, setShowCities] = useState(false);
+  const toggleCities = useCallback(() => setShowCities((v) => !v), []);
+  const capitalMarkers = useMemo(() => {
+    if (!showCities) return null;
+    const meta = SUBDIVISION_META[countryCode.toUpperCase()];
+    const codes = meta?.divisions.map((d) => d.code) ?? [];
+    return subdivisionCityMarkers(countryCode.toUpperCase(), codes);
+  }, [showCities, countryCode]);
+  const mapExtraControls = useMemo(
+    () => (
+      <>
+        <hr className="world-map__zoom-divider" />
+        <button
+          type="button"
+          className={`world-map__zoom-btn world-map__zoom-btn--layer${showCities ? " world-map__zoom-btn--active" : ""}`}
+          onClick={toggleCities}
+          aria-pressed={showCities}
+          aria-label={showCities ? "Hide capitals on map" : "Show capitals on map"}
+          title={showCities ? "Hide capitals" : "Show capitals"}
+        >
+          <span className="world-map__zoom-icon" aria-hidden="true">⭐</span>
+        </button>
+      </>
+    ),
+    [showCities, toggleCities],
   );
 
   if (game.phase === "error") {
@@ -407,7 +427,8 @@ export function SubnationalGamePage({
             loading={false}
             selectedCode={game.selected?.code ?? null}
             countryCode={countryCode}
-            cityOverlay={isCapitalQuestion && isGuessing ? capitalMarkers : null}
+            cityOverlay={capitalMarkers}
+            extraControls={mapExtraControls}
             onSelect={
               isGuessing
                 ? (code) => {
