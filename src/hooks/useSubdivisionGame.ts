@@ -247,19 +247,16 @@ export function useSubdivisionGame(
     if (phase !== "guessing" || !current || !selected) return;
     // In a mixed deck the dropdown offers division AND capital rows together
     // (owner rule: a combined pool makes random guessing harder), so a row can
-    // share its code with the other kind. Correct means the picked ENTITY
-    // matches (code + kind) — or the picked NAME is exactly the expected
-    // answer, which keeps rare same-name pairs (a capital named after its
-    // division) fair whichever of the identical rows was chosen.
+    // share its code with the other kind — same-name pairs are disambiguated
+    // in the dropdown with a "(Type)" suffix. Correct means the picked ENTITY
+    // matches (code + kind) — except when the division and its capital share
+    // the exact same flag (owner rule): the flag on screen belongs to both, so
+    // either row is accepted.
     const selectedKind: SubdivQuestionKind =
       selected.answerKind === "capital" ? "capital" : "division";
-    const expectedName =
-      current.kind === "capital"
-        ? playableCapitalName(current.division.code)
-        : current.division.name;
     const correct =
-      (selected.code === current.division.code && selectedKind === current.kind) ||
-      (expectedName != null && selected.name === expectedName);
+      selected.code === current.division.code &&
+      (selectedKind === current.kind || sharedRef.current.has(current.division.code));
     setWasCorrect(correct);
     setAttemptNonce((n) => n + 1);
     setScore((s) => (correct ? s + 1 : s - 1));
