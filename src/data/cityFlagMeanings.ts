@@ -7386,6 +7386,34 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-071": {
+    description:
+      "Pāvilosta’s shield bears, above on red, three golden lilies from the arms of the Lilienfeld family, long " +
+      "tied to the town’s history, and below on silver, a red bent pine tree rising from red stones — the pine " +
+      "and the stones being old symbols of Pāvilosta.",
+    sources: [
+      { title: "Pāvilostas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/P%C4%81vilostas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-074": {
+    description:
+      "Priekule bears, on blue, a golden winged figure — the ‘Priekule Icarus’, the town’s own emblem — with " +
+      "silver wings, and six silver five-pointed stars above.",
+    sources: [
+      { title: "Priekules ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Priekules_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-089": {
+    description:
+      "Saulkrasti — the ‘sun coast’ — bears in its upper field a half golden sun on blue, its rays alternating " +
+      "straight beams with an oak-leaf crown, for light, life and eternal movement; below lies the green shore.",
+    sources: [
+      { title: "Saulkrastu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Saulkrastu_%C4%A3erbonis" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
