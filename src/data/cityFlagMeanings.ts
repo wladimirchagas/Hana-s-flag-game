@@ -7618,6 +7618,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-SO": {
+    description:
+      "Soroca’s arms are a red shield halved: on one side a silver crenellated fortress — the citadel Stephen the " +
+      "Great raised at the Dniester ford — and on the other a black Tatar’s head impaled on a silver lance, for " +
+      "the town’s long struggles against the Tatars. On the flag the arms stand above a wavy band for the river " +
+      "Dniester.",
+    sources: [
+      { title: "Stema municipiului Soroca — Observatorul de Nord", url: "https://observatorul.md/stema-actuala-a-municipiului-soroca-a-fi-sau-a-nu-fi" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
