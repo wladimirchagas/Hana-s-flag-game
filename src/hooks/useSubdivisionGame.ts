@@ -16,6 +16,16 @@ export type SubdivGamePhase = "loading" | "error" | "guessing" | "revealed" | "f
 /** What a question asks for: the division's own flag, or its capital city's flag. */
 export type SubdivQuestionKind = "division" | "capital";
 
+/**
+ * A selectable answer row. Capital rows carry `answerKind: "capital"` so that
+ * in a mixed deck — where the dropdown offers divisions AND capitals together,
+ * and a division row can share its ISO code with its capital's row — the game
+ * knows WHICH entity the player picked.
+ */
+export type SubdivAnswerOption = SubdivisionMeta & {
+  answerKind?: SubdivQuestionKind;
+};
+
 type SubdivQuestion = {
   division: SubdivisionMeta;
   kind: SubdivQuestionKind;
@@ -38,8 +48,8 @@ export type UseSubdivisionGameResult = {
   currentAnswerName: string | null;
   /** Extra teaching line for the reveal ("capital of Johor", shared-flag note). */
   revealNote: string | null;
-  selected: SubdivisionMeta | null;
-  setSelected: (d: SubdivisionMeta | null) => void;
+  selected: SubdivAnswerOption | null;
+  setSelected: (d: SubdivAnswerOption | null) => void;
   confirm: () => void;
   wasCorrect: boolean | null;
   score: number;
@@ -61,7 +71,7 @@ export type UseSubdivisionGameResult = {
   capitalDivisions: SubdivisionMeta[];
   /** Answer space for capital questions: every capital of the country with a
    *  sourced name (flagged or not), as division-shaped rows named by capital. */
-  capitalAnswerOptions: SubdivisionMeta[];
+  capitalAnswerOptions: SubdivAnswerOption[];
   geoData: SubdivisionFeatureCollection | null;
   countryCode: string;
   countryName: string;
@@ -90,7 +100,7 @@ export function useSubdivisionGame(
   const [divisions, setDivisions] = useState<SubdivisionMeta[]>([]);
   const [capitalDivisions, setCapitalDivisions] = useState<SubdivisionMeta[]>([]);
   const [current, setCurrent] = useState<SubdivQuestion | null>(null);
-  const [selected, setSelected] = useState<SubdivisionMeta | null>(null);
+  const [selected, setSelected] = useState<SubdivAnswerOption | null>(null);
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
@@ -117,17 +127,17 @@ export function useSubdivisionGame(
   // capital with a sourced name, flagged or not) so even a small deck is a
   // genuine search, not a giveaway. Rows are division-shaped but named by the
   // capital, so selection still resolves to the division's code.
-  const capitalAnswerOptions = useMemo<SubdivisionMeta[]>(() => {
+  const capitalAnswerOptions = useMemo<SubdivAnswerOption[]>(() => {
     const m = SUBDIVISION_META[countryCode.toUpperCase()];
     if (!m) return [];
     const seen = new Set<string>();
-    const out: SubdivisionMeta[] = [];
+    const out: SubdivAnswerOption[] = [];
     for (const d of m.divisions) {
       if (d.code in DISPUTED_TERRITORY_HIERARCHY) continue;
       const name = playableCapitalName(d.code);
       if (!name || seen.has(d.code)) continue;
       seen.add(d.code);
-      out.push({ ...d, name });
+      out.push({ ...d, name, answerKind: "capital" });
     }
     return out;
   }, [countryCode]);
@@ -235,7 +245,21 @@ export function useSubdivisionGame(
 
   const confirm = useCallback(() => {
     if (phase !== "guessing" || !current || !selected) return;
-    const correct = selected.code === current.division.code;
+    // In a mixed deck the dropdown offers division AND capital rows together
+    // (owner rule: a combined pool makes random guessing harder), so a row can
+    // share its code with the other kind. Correct means the picked ENTITY
+    // matches (code + kind) — or the picked NAME is exactly the expected
+    // answer, which keeps rare same-name pairs (a capital named after its
+    // division) fair whichever of the identical rows was chosen.
+    const selectedKind: SubdivQuestionKind =
+      selected.answerKind === "capital" ? "capital" : "division";
+    const expectedName =
+      current.kind === "capital"
+        ? playableCapitalName(current.division.code)
+        : current.division.name;
+    const correct =
+      (selected.code === current.division.code && selectedKind === current.kind) ||
+      (expectedName != null && selected.name === expectedName);
     setWasCorrect(correct);
     setAttemptNonce((n) => n + 1);
     setScore((s) => (correct ? s + 1 : s - 1));
