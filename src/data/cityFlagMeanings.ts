@@ -7506,6 +7506,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MA-01": {
+    description:
+      "Tangier’s arms are parted per fess, blue over black, with a golden head in profile and two golden ears of " +
+      "wheat. The head recalls the city’s ancient name Tingis and its earliest settlers — read as a Phoenician, " +
+      "or as Hercules, who by legend fathered Sophax, the first king of Tingis — while the wheat speaks to the " +
+      "fertile country around the city.",
+    sources: [
+      { title: "Tanger province — Flags of the World (FOTW)", url: "https://www.crwflags.com/fotw/flags/ma-tng.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
