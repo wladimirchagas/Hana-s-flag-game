@@ -7215,6 +7215,74 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-003": {
+    description:
+      "Aizpute bears, on silver, a red brick wall with a raised gate and three golden stars above the tower. The " +
+      "brick wall — carried over from the town’s Russian-Empire-era arms — stands for Aizpute’s ancient history. " +
+      "The arms were confirmed in 1925.",
+    sources: [
+      { title: "Aizputes ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Aizputes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-032": {
+    description:
+      "Grobiņa bears, on black, a silver crane standing on one leg and holding a golden stone in its raised foot. " +
+      "It comes from the town seal granted by Duke Friedrich Casimir of Courland in 1697: should the crane fall " +
+      "asleep, the stone drops and wakes it — a classic emblem of vigilance.",
+    sources: [
+      { title: "Grobiņas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Grobi%C5%86as_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-033": {
+    description:
+      "Gulbene bears a silver swan swimming on black — canting arms, for gulbis (‘swan’) is the root of the town’s " +
+      "name. The swan was taken from a relief on the façade of the old Vecgulbene manor tavern.",
+    sources: [
+      { title: "Gulbenes ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Gulbenes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-034": {
+    description:
+      "Iecava’s arms combine a saltire cross — for the town’s place at a meeting of important roads — with a " +
+      "golden bell, tied to the Dzelzāmurs copper forges and to the history of Iecava’s church and its schools; " +
+      "the bell calls people to work and wishes that Iecava’s good name resound far.",
+    sources: [
+      { title: "Iecavas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Iecavas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-035": {
+    description:
+      "Ikšķile bears, on red, a silver cross quartering the shield, with a golden brick wall in the upper corner. " +
+      "The wall stands for the first stone building in the Baltic lands — the stone church built at Ikšķile by " +
+      "Bishop Meinhard.",
+    sources: [
+      { title: "Ikšķiles ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Ik%C5%A1%C4%B7iles_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-043": {
+    description:
+      "Kandava bears, on silver, a green oak branch of three leaves and three golden acorns — emblems of strength " +
+      "— celebrating the town’s setting in the ancient Abava valley beneath Oakhill.",
+    sources: [
+      { title: "Kandavas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Kandavas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-046": {
+    description:
+      "Koknese bears, on purple within a gold border, a silver crescent and, above to the right, a golden key " +
+      "crossed by a silver bishop’s crozier. These charges — signs of the bishop’s authority over the town — " +
+      "already appear on Koknese’s seal of 1496.",
+    sources: [
+      { title: "Kokneses ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Kokneses_novada_%C4%A3erbonis" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
