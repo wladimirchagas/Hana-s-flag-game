@@ -7701,6 +7701,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-BR": {
+    description:
+      "Briceni flies a cloth quartered in alternating yellow and red — the colours of its arms, whose panels carry " +
+      "red roses and silver razors. The razor is canting: the name Briceni comes from ‘brici’, the Romanian word " +
+      "for a razor, while the roses stand for the region’s natural beauty.",
+    sources: [
+      { title: "Briceni — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Briceni" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
