@@ -31,6 +31,7 @@ import {
   FLAG_ASPECT_RATIO_ORDER,
   type FlagAspectRatio,
 } from "../lib/flagAspectRatio";
+import { normalizeForSearch } from "../lib/searchNormalize";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -167,13 +168,14 @@ export function FlagGrid({
     }
   }, [isModernEra, groupMode]);
 
-  // Apply the free-text name filter before grouping. A trimmed, case-insensitive
-  // substring match against the entry name — non-matches are hidden, so the
-  // grid shrinks to what you're looking for.
+  // Apply the free-text name filter before grouping. A trimmed, case- and
+  // accent-insensitive substring match against the entry name ("sao" matches
+  // "São Paulo") — non-matches are hidden, so the grid shrinks to what you're
+  // looking for.
   const filteredEntries = useMemo(() => {
-    const q = filter.trim().toLowerCase();
+    const q = normalizeForSearch(filter.trim());
     if (!q) return entries;
-    return entries.filter((e) => e.name.toLowerCase().includes(q));
+    return entries.filter((e) => normalizeForSearch(e.name).includes(q));
   }, [entries, filter]);
 
   // Build the (heading → entries) groups for the current mode. We always

@@ -1,6 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import { blurActiveElementThenRun } from "../lib/dismissKeyboard";
+import { normalizeForSearch } from "../lib/searchNormalize";
 
 type Props = {
   countries: Country[];
@@ -97,19 +98,19 @@ export function CountryDropdown({
   );
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = normalizeForSearch(query.trim());
     if (!q) return sortedCountries.slice(0, MAX_OPTIONS);
     return sortedCountries
-      .filter((c) => c.name.toLowerCase().includes(q))
+      .filter((c) => normalizeForSearch(c.name).includes(q))
       .slice(0, MAX_OPTIONS);
   }, [sortedCountries, query]);
 
   // The mobile modal lists ALL countries (or filtered by its own search). On
   // mobile the list is the only browsing UI, so we don't cap aggressively.
   const filteredAll = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = normalizeForSearch(query.trim());
     if (!q) return sortedCountries;
-    return sortedCountries.filter((c) => c.name.toLowerCase().includes(q));
+    return sortedCountries.filter((c) => normalizeForSearch(c.name).includes(q));
   }, [sortedCountries, query]);
 
   // Desktop: close the popover when the user clicks outside.

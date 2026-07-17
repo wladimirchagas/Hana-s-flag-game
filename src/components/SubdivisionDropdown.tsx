@@ -2,6 +2,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
 import { blurActiveElementThenRun } from "../lib/dismissKeyboard";
+import { normalizeForSearch } from "../lib/searchNormalize";
 
 type Props = {
   divisions: SubdivisionMeta[];
@@ -74,17 +75,17 @@ export function SubdivisionDropdown({
   );
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = normalizeForSearch(query.trim());
     if (!q) return sortedDivisions.slice(0, MAX_OPTIONS);
     return sortedDivisions
-      .filter((d) => d.name.toLowerCase().includes(q))
+      .filter((d) => normalizeForSearch(d.name).includes(q))
       .slice(0, MAX_OPTIONS);
   }, [sortedDivisions, query]);
 
   const filteredAll = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = normalizeForSearch(query.trim());
     if (!q) return sortedDivisions;
-    return sortedDivisions.filter((d) => d.name.toLowerCase().includes(q));
+    return sortedDivisions.filter((d) => normalizeForSearch(d.name).includes(q));
   }, [sortedDivisions, query]);
 
   useEffect(() => {

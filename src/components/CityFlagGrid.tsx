@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { countryCityFlags } from "../lib/cityFlags";
+import { normalizeForSearch } from "../lib/searchNormalize";
 
 /**
  * "City flags" tab of the sub-national drill-down grid.
@@ -33,12 +34,12 @@ export function CityFlagGrid({
   const [filter, setFilter] = useState("");
 
   const filtered = useMemo(() => {
-    const q = filter.trim().toLowerCase();
+    const q = normalizeForSearch(filter.trim());
     if (!q) return entries;
     return entries.filter(
       (e) =>
-        e.capitalName.toLowerCase().includes(q) ||
-        e.subdivisionName.toLowerCase().includes(q),
+        normalizeForSearch(e.capitalName).includes(q) ||
+        normalizeForSearch(e.subdivisionName).includes(q),
     );
   }, [entries, filter]);
 
