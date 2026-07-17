@@ -7517,6 +7517,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-BA": {
+    description:
+      "Bălți’s arms are a shield striped in twelve silver and blue — canting arms, for the name Bălți is the " +
+      "plural of baltă, a shallow pond, and the town lies among such ponds. Across it stands an archer, kept from " +
+      "the town’s first arms of 1930, and a silver mural crown of seven towers marks its status as an old " +
+      "municipality.",
+    sources: [
+      { title: "Stema Bălțiului — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_B%C4%83l%C8%9Biului" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
