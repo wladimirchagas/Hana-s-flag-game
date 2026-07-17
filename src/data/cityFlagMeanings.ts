@@ -7578,6 +7578,25 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-GL": {
+    description:
+      "Glodeni bears, on blue, the golden flaming sword of Saint Michael the Archangel point down, flanked by two " +
+      "silver angel’s wings. The emblem was adopted in 2018.",
+    sources: [
+      { title: "Glodeni (stemă) — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Glodeni,_Moldova" },
+    ],
+  },
+
+  "MD-NI": {
+    description:
+      "Nisporeni’s arms and flag centre on a windmill against a blue frame — blue for the sky, air and wind. " +
+      "Nisporeni lies in one of the windiest parts of Bessarabia, and its old windmills, known here since the " +
+      "nineteenth century, inspired the arms adopted in 2005.",
+    sources: [
+      { title: "Raionul Nisporeni — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Raionul_Nisporeni" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
