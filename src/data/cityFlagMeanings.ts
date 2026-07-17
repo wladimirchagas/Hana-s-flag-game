@@ -7671,6 +7671,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-IA": {
+    description:
+      "Ialoveni flies a deep-red cloth crossed by seven white waves. The burgundy is for the town’s wine — Ialoveni " +
+      "is old vineyard country — and the white waves for the Ișnovăț river that runs through it. Its arms set a " +
+      "golden wine cup on the same wavy red-and-silver field.",
+    sources: [
+      { title: "Ialoveni — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Ialoveni" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
