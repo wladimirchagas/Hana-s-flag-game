@@ -7691,6 +7691,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-BS": {
+    description:
+      "Basarabeasca flies green-yellow-red-yellow-green stripes with a winged golden wheel on the central red " +
+      "band. The winged wheel is the emblem of the railway, for Basarabeasca grew up as a great rail junction; the " +
+      "gold is for prosperity and the green for the farmland of southern Moldova.",
+    sources: [
+      { title: "Basarabeasca — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Basarabeasca" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
