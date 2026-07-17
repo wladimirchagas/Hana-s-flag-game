@@ -7414,6 +7414,36 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-072": {
+    description:
+      "Pļaviņas bears a green shield crossed by a silver diagonal band with a second, narrower silver band beside " +
+      "it — the two standing for the Daugava and its tributary the Aiviekste, which meet near the town. The arms " +
+      "were confirmed in 1936.",
+    sources: [
+      { title: "Pļaviņu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/P%C4%BCavi%C5%86u_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-091": {
+    description:
+      "Sigulda’s shield is divided diagonally, silver above and green below; along the division lie three green " +
+      "leaves on the silver and three silver bird-cherry (ieva) blossoms on the green. The arms were confirmed in " +
+      "1938.",
+    sources: [
+      { title: "Siguldas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Siguldas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-093": {
+    description:
+      "Skrunda bears a green shield with a silver T-shaped chief carrying the black silhouette of the bridge over " +
+      "the Venta river, and across the green a silver, gold-hilted sword set diagonally. The arms were adopted in " +
+      "1998.",
+    sources: [
+      { title: "Skrundas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Skrundas_%C4%A3erbonis" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
