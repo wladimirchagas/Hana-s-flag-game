@@ -7155,6 +7155,66 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-016": {
+    description:
+      "Bauska bears a golden lion rampant on red — the lion of the Duchy of Courland, to which the town belonged — " +
+      "with a small shield on its breast divided in the Latvian national colours to mark the town’s place in " +
+      "Latvia. The arms were confirmed in 1925.",
+    sources: [
+      { title: "Bauskas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Bauskas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-018": {
+    description:
+      "Brocēni’s shield is divided by a stepped diagonal: the dark-blue upper half is Lake Ciecere, bearing a " +
+      "white water lily on a green leaf, and the silver lower half stands for the town’s valuable raw materials, " +
+      "its limestone and clay. The arms were adopted in 2000.",
+    sources: [
+      { title: "Brocēnu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Broc%C4%93nu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-021": {
+    description:
+      "Cesvaine bears, on green, a golden horseshoe-brooch (pakavsakta) — the traditional Latgalian clasp — for " +
+      "the town’s past and its ancient inhabitants, the Latgalians. The arms were adopted in 1999.",
+    sources: [
+      { title: "Cesvaines ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Cesvaines_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-022": {
+    description:
+      "Cēsis bears, on blue, a red brick wall of five towers with a raised black portcullis — for Cēsis Castle — " +
+      "and above it a warrior in white holding a raised gold-hilted sword and a round grey shield. The warrior " +
+      "recalls Cēsis’s past as a town of knights and the residence of the Master of the Livonian Order. The arms " +
+      "were confirmed in 1925.",
+    sources: [
+      { title: "Cēsu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/C%C4%93su_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-024": {
+    description:
+      "Dagda bears, on gold, a red phoenix rising from red flames, with a black trefoil cross in the upper corner " +
+      "for religion. The phoenix and flames recall the several fires that destroyed the town, from which it each " +
+      "time rose again. The arms were adopted in 1997.",
+    sources: [
+      { title: "Dagdas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Dagdas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-026": {
+    description:
+      "Dobele’s shield follows the Latvian flag’s division — red parted by a silver bar — with a white, " +
+      "gold-hilted sword laid across all three bands toward the upper corner, for the Semigallians’ struggle " +
+      "against the German crusaders. The arms were confirmed in 1925.",
+    sources: [
+      { title: "Dobeles ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Dobeles_%C4%A3erbonis" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
