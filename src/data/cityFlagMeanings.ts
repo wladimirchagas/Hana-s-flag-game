@@ -7283,6 +7283,72 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-050": {
+    description:
+      "Kuldīga bears, on red, the wheel of Saint Catherine — the spiked breaking-wheel of her martyrdom. Saint " +
+      "Catherine is the town’s patron; the fuller arms show her crowned, holding the wheel and prayer beads in " +
+      "one hand and a sword in the other.",
+    sources: [
+      { title: "Kuldīgas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Kuld%C4%ABgas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-052": {
+    description:
+      "Ķekava’s shield is parted by a cloud-line into blue and silver — the colours of Vidzeme and Zemgale, the " +
+      "two regions the town straddles — with a gold eight-pointed star carried over from the parish arms, " +
+      "standing for excellence, independence, care, vigilance and striving upward.",
+    sources: [
+      { title: "Ķekavas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/%C4%B6ekavas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-054": {
+    description:
+      "Limbaži bears, on silver, a red town wall of two towers with an open gate showing a lion’s head, and " +
+      "between the towers a bishop’s crozier and a cross set saltirewise — recalling the medieval Livonian town " +
+      "and its bishopric.",
+    sources: [
+      { title: "Limbažu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Limba%C5%BEu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-056": {
+    description:
+      "Līvāni bears, on blue, a silver pale with a small silver hawk above it.",
+    sources: [
+      { title: "Līvānu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/L%C4%ABv%C4%81nu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-057": {
+    description:
+      "Lubāna bears, above, a golden duck swimming on blue — for the duck-hunting on Lake Lubāns, the great lake " +
+      "beside the town — and below, three wavy silver bars on blue for the lake’s waters. The arms were adopted " +
+      "in 2000.",
+    sources: [
+      { title: "Lubānas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Lub%C4%81nas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-059": {
+    description:
+      "Madona bears a golden rooster’s head on red. The rooster is read as a bringer of light, its crowing the " +
+      "herald of sunrise and the end of night.",
+    sources: [
+      { title: "Madonas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Madonas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-067": {
+    description:
+      "Ogre bears, on silver, three black pine trees standing on a blue wavy line — the pinewoods for which Ogre " +
+      "is known, above the river that gives the town its name.",
+    sources: [
+      { title: "Ogres ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Ogres_%C4%A3erbonis" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
