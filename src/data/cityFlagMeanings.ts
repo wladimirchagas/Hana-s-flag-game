@@ -7629,6 +7629,27 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-HI": {
+    description:
+      "Hîncești flies a blue flag with a golden rampant lion — crowned, tongued and clawed red — holding a golden " +
+      "axe. The lion comes from the arms of the Manuc-Bei family and the axe from the Hâncu family, the two houses " +
+      "that built up the town; together they show the lion set to work, clearing the forest and raising the city " +
+      "with its timber.",
+    sources: [
+      { title: "Simbolurile orașului — Primăria Hîncești (official)", url: "https://primariahincesti.md/simbolurile-orasului/" },
+    ],
+  },
+
+  "MD-ED": {
+    description:
+      "Edineț’s flag bears the golden trident of the Cupcici family. In 1431 Prince Alexander the Good of Moldavia " +
+      "granted Ivan Cupcici the land here — fourteen villages and empty ground to settle — and the family’s " +
+      "trident became the town’s emblem.",
+    sources: [
+      { title: "Edineț — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Edine%C8%9B" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
