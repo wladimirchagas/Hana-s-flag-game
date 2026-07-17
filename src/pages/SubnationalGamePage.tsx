@@ -300,6 +300,33 @@ export function SubnationalGamePage({
     [showCities, toggleCities],
   );
 
+  const isCapitalQuestion = game.currentKind === "capital";
+
+  // Map answer pool: a tap resolves to the entity the current question asks
+  // for (division, or that division's capital).
+  const answerOptions = isCapitalQuestion ? game.capitalAnswerOptions : game.divisions;
+
+  // Dropdown answer pool: when BOTH sets are in the deck the dropdown offers
+  // divisions and capitals TOGETHER (owner rule, 2026-07) — the combined pool
+  // makes randomly guessing the answer harder. Single-set decks keep their
+  // single-category list. When a capital shares its EXACT name with a division
+  // (São Paulo, Rio de Janeiro, …) both rows carry their type in parentheses —
+  // "São Paulo (State)" / "São Paulo (Capital City)" — so the player always
+  // knows which entity they are picking.
+  const dropdownOptions = useMemo(() => {
+    if (!(includeDivisions && includeCapitals)) return answerOptions;
+    const divNames = new Set(game.divisions.map((d) => d.name.toLowerCase()));
+    const capNames = new Set(game.capitalAnswerOptions.map((d) => d.name.toLowerCase()));
+    return [
+      ...game.divisions.map((d) =>
+        capNames.has(d.name.toLowerCase()) ? { ...d, name: `${d.name} (${d.typeLabel})` } : d,
+      ),
+      ...game.capitalAnswerOptions.map((d) =>
+        divNames.has(d.name.toLowerCase()) ? { ...d, name: `${d.name} (Capital City)` } : d,
+      ),
+    ];
+  }, [includeDivisions, includeCapitals, answerOptions, game.divisions, game.capitalAnswerOptions]);
+
   if (game.phase === "error") {
     return (
       <div className="app app--center">
@@ -319,25 +346,11 @@ export function SubnationalGamePage({
   const isGuessing = game.phase === "guessing";
   const isRevealed = game.phase === "revealed";
 
-  const isCapitalQuestion = game.currentKind === "capital";
   const currentFlagUrl = game.current
     ? isCapitalQuestion
       ? capitalFlagSrc(game.current.code)
       : subdivisionFlagUrl(game.current.code)
     : null;
-
-  // Map answer pool: a tap resolves to the entity the current question asks
-  // for (division, or that division's capital).
-  const answerOptions = isCapitalQuestion ? game.capitalAnswerOptions : game.divisions;
-
-  // Dropdown answer pool: when BOTH sets are in the deck the dropdown offers
-  // divisions and capitals TOGETHER (owner rule, 2026-07) — the combined pool
-  // makes randomly guessing the answer harder. Single-set decks keep their
-  // single-category list.
-  const dropdownOptions =
-    includeDivisions && includeCapitals
-      ? [...game.divisions, ...game.capitalAnswerOptions]
-      : answerOptions;
 
   const deckDescription = includeCapitals
     ? includeDivisions
