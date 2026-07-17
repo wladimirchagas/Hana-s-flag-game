@@ -7105,6 +7105,56 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-002": {
+    description:
+      "Aizkraukle’s arms show three golden oak leaves over the silver Daugava on blue, with three silver stars. " +
+      "The oak leaves stand for the turbines of the Pļaviņi hydroelectric station, turned by the Daugava; the " +
+      "three stars for Latvia’s three historic lands — Latgale, Kurzeme and Vidzeme; and the silver band for the " +
+      "river itself.",
+    sources: [
+      { title: "Aizkraukles ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Aizkraukles_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-005": {
+    description:
+      "Aloja’s arms are of linden (lime) leaves — two green leaves on silver above, one silver leaf on green below " +
+      "— a play on the town, long associated with the linden tree. The arms were approved in 1998.",
+    sources: [
+      { title: "Alojas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Alojas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-007": {
+    description:
+      "Alūksne’s arms show two crossed swords beneath an open book lettered ‘A.D. 1689’. The book is the first " +
+      "Bible translated into Latvian, the work of the pastor Ernst Glück, who made it in Alūksne; the swords " +
+      "recall the battles the town saw through its history.",
+    sources: [
+      { title: "Alūksnes ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Al%C5%ABksnes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-013": {
+    description:
+      "Baldone’s arms show a red squirrel holding pine cones on silver, with three golden drops on blue above. " +
+      "Baldone grew as a spa around its medicinal springs, and the squirrel — the figure of the sanatorium’s " +
+      "spring fountain — with the golden drops stands for those healing waters.",
+    sources: [
+      { title: "Baldones ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Baldones_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-015": {
+    description:
+      "Balvi’s arms bear a black wolf’s head on red, beneath a rising white sun of ten rays. The wolf — the town’s " +
+      "emblem since 1938 — stands for strength and perseverance, for the way it follows its quarry long and " +
+      "patiently.",
+    sources: [
+      { title: "Balvu ģerbonis — neogeo.lv (Latvian civic heraldry)", url: "https://neogeo.lv/dzivnieki-latvijas-gerbonos/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
