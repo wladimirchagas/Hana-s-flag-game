@@ -7681,6 +7681,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-FA": {
+    description:
+      "Fălești flies a green flag with a white band across the middle bearing three black ducks swimming toward " +
+      "the hoist. The ducks — and the reeds of its arms — recall the marshes that once made this wetland country " +
+      "rich in waterfowl and game; green and white stand for that landscape of water and reeds.",
+    sources: [
+      { title: "Fălești — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/F%C4%83le%C8%99ti" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
