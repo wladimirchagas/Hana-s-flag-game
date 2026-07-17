@@ -7650,6 +7650,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-TA": {
+    description:
+      "Taraclia’s flag carries the white, green and red of the Bulgarians — the town was settled by Bessarabian " +
+      "Bulgarians — and a golden rampant lion, the emblem of Bulgarian autonomy in southern Bessarabia, taken from " +
+      "the seals of the community’s old institutions.",
+    sources: [
+      { title: "Raionul Taraclia — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Raionul_Taraclia" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
