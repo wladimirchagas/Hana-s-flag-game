@@ -7660,6 +7660,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-CM": {
+    description:
+      "Cimișlia flies a blue-yellow-blue triband. The blue is the colour of the sky, of infinity and of a peaceful, " +
+      "free life; the yellow stands for the wealth of grain, for Cimișlia’s prosperity once rested on its cereal " +
+      "trade. Its arms — a balance weighing an ear of grain, with the ‘danga’ brand of the Tatar Ciumeci tribe " +
+      "whose name the town bears — were left off the flag to keep the design simple.",
+    sources: [
+      { title: "Flag of Cimișlia — Wikipedia (en)", url: "https://en.wikipedia.org/wiki/Flag_of_Cimi%C8%99lia" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
