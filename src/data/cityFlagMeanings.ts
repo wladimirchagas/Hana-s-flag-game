@@ -7597,6 +7597,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-OR": {
+    description:
+      "Orhei’s flag carries two eight-pointed stars — one gold, one silver — taken from one of the town’s " +
+      "medieval seals. They stand for the unbroken continuity of the settlement from Old Orhei (Orheiul Vechi) to " +
+      "the present town.",
+    sources: [
+      { title: "Simbolurile orașului — Primăria Orhei (official)", url: "https://orhei.md/index.php?id=666&l=ro&pag=page" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
