@@ -7568,6 +7568,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-FL": {
+    description:
+      "Florești bears, on red, two crossed silver swords points-down with two Greek crosses, and four golden " +
+      "lilies. The swords and crosses come from the arms of the Costin family — home of the great chronicler " +
+      "Miron Costin — while the lilies play on the city’s name (from flori, ‘flowers’).",
+    sources: [
+      { title: "Simbolurile orașului Florești — Primăria Florești (official)", url: "https://primariafloresti.md/simbolurile-orasului-stema-drapelul-or-floresti/" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
