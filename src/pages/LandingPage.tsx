@@ -89,6 +89,8 @@ export default function LandingPage() {
         subnational: {
           countryCode: start.countryCode,
           countryName: start.countryName,
+          includeDivisions: start.includeDivisions,
+          includeCapitals: start.includeCapitals,
         },
       })
     } else if (start.type === 'disputed') {

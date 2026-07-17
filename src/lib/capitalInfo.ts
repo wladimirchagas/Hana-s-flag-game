@@ -60,3 +60,14 @@ export function capitalFlagPath(code: string, displayedName: string): string | n
   if (!d || !sameCity(d.name, displayedName)) return null;
   return f;
 }
+
+/**
+ * Full src for the bundled capital-city flag, for the Flag Master game. No
+ * displayed-name cross-check is needed there: the game's capital NAME comes
+ * from the same CAPITAL_DETAILS entry the flag was sourced with, so the two
+ * can never disagree.
+ */
+export function capitalFlagSrc(code: string): string | null {
+  const f = CAPITAL_FLAGS[code];
+  return f ? `${import.meta.env.BASE_URL}${f}` : null;
+}

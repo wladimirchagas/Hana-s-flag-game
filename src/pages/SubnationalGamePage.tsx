@@ -10,6 +10,8 @@ import { SubdivisionMap } from "../components/SubdivisionMap";
 import { SubdivisionDropdown } from "../components/SubdivisionDropdown";
 import { SubdivisionResultsFlags } from "../components/SubdivisionResultsFlags";
 import { subdivisionFlagUrl } from "../api/subdivisions";
+import { capitalFlagSrc } from "../lib/capitalInfo";
+import { subdivisionCityMarkers } from "../lib/cityRoles";
 import { gameAudio } from "../lib/gameAudio";
 import { AnswerBurst } from "../components/AnswerBurst";
 import { GameClock } from "../components/GameClock";
@@ -20,6 +22,10 @@ import "../App.css";
 type Props = {
   countryCode: string;
   countryName: string;
+  /** Quiz the divisions' own flags. Default true (the original game). */
+  includeDivisions?: boolean;
+  /** Quiz the divisions' capital-city flags. Default false. */
+  includeCapitals?: boolean;
 };
 
 /** Inline flag card for subdivision flags — click to enlarge, same UX as FlagCard. */
@@ -109,8 +115,16 @@ function SubdivisionFlagCard({
   );
 }
 
-export function SubnationalGamePage({ countryCode, countryName }: Props) {
-  const game = useSubdivisionGame(countryCode, countryName);
+export function SubnationalGamePage({
+  countryCode,
+  countryName,
+  includeDivisions = true,
+  includeCapitals = false,
+}: Props) {
+  const game = useSubdivisionGame(countryCode, countryName, {
+    includeDivisions,
+    includeCapitals,
+  });
   const { saveGameToLeaderboard, openLeaderboard } = useLeaderboard();
   const { activeProfile } = useProfile();
   const [playerName, setPlayerName] = useState("");
@@ -182,6 +196,18 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
     }
   }, [currentCode]);
 
+  // The include-configuration is part of the game mode so a divisions-only run
+  // is never ranked against a capitals or mixed run as if they were the same
+  // game. Divisions-only keeps the historical mode string.
+  const gameMode = `sub-${countryCode.toUpperCase()}${
+    includeCapitals ? (includeDivisions ? "-mixed" : "-caps") : ""
+  }`;
+  const deckLabel = includeCapitals
+    ? includeDivisions
+      ? "divisions + capitals"
+      : "capital cities"
+    : "divisions";
+
   const saveRun = useCallback(
     (name: string) => {
       const elapsedMs =
@@ -194,13 +220,13 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
         correctCount: game.correctCount,
         wrongCount: game.wrongCount,
         totalAnswered: game.totalAnswered,
-        totalFlags: game.totalDivisions,
+        totalFlags: game.totalQuestions,
         elapsedMs,
         meanAnswerMs: game.meanAnswerMs,
-        countryResults: { ...game.divisionResults },
+        countryResults: { ...game.divisionResults, ...game.capitalResults },
         countriesPlayed: [],
         continentBreakdown: [],
-        gameMode: `sub-${countryCode.toUpperCase()}`,
+        gameMode,
         ...profileEntryFields(activeProfile),
       };
       saveGameToLeaderboard(entry);
@@ -210,7 +236,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
       setPlayerName(name.trim().slice(0, 48));
       setSaveHint("saved");
     },
-    [game, countryCode, activeProfile, saveGameToLeaderboard],
+    [game, gameMode, activeProfile, saveGameToLeaderboard],
   );
 
   function handleSave() {
@@ -234,12 +260,25 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
     saveRun(activeProfile.displayName);
   }, [game.phase, activeProfile, saveRun]);
 
-  const gameMode = `sub-${countryCode.toUpperCase()}`;
   const leaderboardFilter = useMemo(() => ({
     gameMode,
-    totalFlags: game.totalDivisions,
-    label: `Sub-national — ${countryName} · ${game.totalDivisions} divisions`,
-  }), [gameMode, game.totalDivisions, countryName]);
+    totalFlags: game.totalQuestions,
+    label: `Sub-national — ${countryName} · ${game.totalQuestions} flags · ${deckLabel}`,
+  }), [gameMode, game.totalQuestions, countryName, deckLabel]);
+
+  // Capital ★ markers shown as a location hint during capital questions —
+  // decorative only (the marker layer is pointer-events: none per the hard
+  // rule), so taps always land on the division polygons.
+  const capitalMarkers = useMemo(
+    () =>
+      includeCapitals
+        ? subdivisionCityMarkers(
+            countryCode.toUpperCase(),
+            game.capitalDivisions.map((d) => d.code),
+          )
+        : null,
+    [includeCapitals, countryCode, game.capitalDivisions],
+  );
 
   if (game.phase === "error") {
     return (
@@ -260,7 +299,22 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
   const isGuessing = game.phase === "guessing";
   const isRevealed = game.phase === "revealed";
 
-  const currentFlagUrl = game.current ? subdivisionFlagUrl(game.current.code) : null;
+  const isCapitalQuestion = game.currentKind === "capital";
+  const currentFlagUrl = game.current
+    ? isCapitalQuestion
+      ? capitalFlagSrc(game.current.code)
+      : subdivisionFlagUrl(game.current.code)
+    : null;
+
+  // Answer space never mixes categories: a capital question searches only the
+  // country's capital names; a division question only division names.
+  const answerOptions = isCapitalQuestion ? game.capitalAnswerOptions : game.divisions;
+
+  const deckDescription = includeCapitals
+    ? includeDivisions
+      ? "flags"
+      : "capital-city flags"
+    : game.pluralLabel.toLowerCase();
 
   return (
     <div className="app">
@@ -280,7 +334,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
         endedAt={game.gameEndedAtMs}
         meanAnswerMs={game.meanAnswerMs}
         totalAnswered={game.totalAnswered}
-        totalFlags={game.totalDivisions}
+        totalFlags={game.totalQuestions}
       />
 
       <main className="card">
@@ -291,17 +345,30 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           </h1>
           <p className="tagline">
             {isFinished
-              ? `Game complete — ${game.totalAnswered} of ${game.totalDivisions} ${game.pluralLabel.toLowerCase()}.`
-              : `Identify all ${game.totalDivisions} ${game.pluralLabel.toLowerCase()} · one guess each.`}
+              ? `Game complete — ${game.totalAnswered} of ${game.totalQuestions} ${deckDescription}.`
+              : `Identify all ${game.totalQuestions} ${deckDescription} · one guess each.`}
           </p>
         </header>
 
-        {/* Flag display — shown during active game */}
+        {/* Flag display — shown during active game. In a deck that includes
+            capital-city flags, every card carries a category badge so a city
+            question is never mistaken for a division question. */}
         {!isFinished && game.phase !== "loading" && game.current && currentFlagUrl && (
-          <SubdivisionFlagCard
-            flagUrl={currentFlagUrl}
-            typeLabel={game.current.typeLabel}
-          />
+          <>
+            {includeCapitals && (
+              <div className="subdiv-game__kind-row">
+                <span
+                  className={`subdiv-game__kind-badge subdiv-game__kind-badge--${game.currentKind}`}
+                >
+                  {isCapitalQuestion ? "🏙️ Capital city" : `🗺️ ${game.current.typeLabel}`}
+                </span>
+              </div>
+            )}
+            <SubdivisionFlagCard
+              flagUrl={currentFlagUrl}
+              typeLabel={isCapitalQuestion ? "capital city" : game.current.typeLabel}
+            />
+          </>
         )}
         {game.phase === "loading" && (
           <div className="flag-card flag-card--placeholder" aria-busy="true">
@@ -313,7 +380,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
         {!isFinished && (
           <div className="answer-row">
             <SubdivisionDropdown
-              divisions={game.divisions}
+              divisions={answerOptions}
               value={game.selected}
               onChange={game.setSelected}
               disabled={isRevealed || game.phase === "loading"}
@@ -340,17 +407,26 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
             loading={false}
             selectedCode={game.selected?.code ?? null}
             countryCode={countryCode}
+            cityOverlay={isCapitalQuestion && isGuessing ? capitalMarkers : null}
             onSelect={
               isGuessing
                 ? (code) => {
-                    const div = game.divisions.find((d) => d.code === code);
+                    // Tapping a division answers with it — or, on a capital
+                    // question, with that division's capital (each division has
+                    // exactly one quizzed capital, so the tap is unambiguous).
+                    const div = answerOptions.find((d) => d.code === code);
                     if (div) game.setSelected(div);
                   }
                 : undefined
             }
             onConfirm={isGuessing ? game.confirm : undefined}
+            displayNameForCode={
+              isCapitalQuestion
+                ? (code) => answerOptions.find((d) => d.code === code)?.name ?? null
+                : undefined
+            }
             disabled={!isGuessing}
-            countryResults={game.divisionResults}
+            countryResults={game.mapResults}
           />
         )}
 
@@ -358,8 +434,11 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
         {(isRevealed || isFinished) && game.current && game.wasCorrect !== null && (
           <div className={`subdiv-game__feedback subdiv-game__feedback--${game.wasCorrect ? "correct" : "wrong"}`}>
             {game.wasCorrect
-              ? `Correct! ${game.current.name}`
-              : `Wrong — it was ${game.current.name}`}
+              ? `Correct! ${game.currentAnswerName ?? game.current.name}`
+              : `Wrong — it was ${game.currentAnswerName ?? game.current.name}`}
+            {game.revealNote && (
+              <span className="subdiv-game__feedback-note"> — {game.revealNote}</span>
+            )}
           </div>
         )}
 
@@ -368,7 +447,7 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           correctCount={game.correctCount}
           wrongCount={game.wrongCount}
           totalAnswered={game.totalAnswered}
-          totalFlags={game.totalDivisions}
+          totalFlags={game.totalQuestions}
           continentBreakdown={[]}
         />
 
@@ -376,8 +455,8 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           <div className="game-complete">
             <p className="game-complete__title">Game over!</p>
             <p className="game-complete__text">
-              You identified {game.correctCount} of {game.totalDivisions}{" "}
-              {game.pluralLabel.toLowerCase()} of {countryName}.
+              You identified {game.correctCount} of {game.totalQuestions}{" "}
+              {deckDescription} of {countryName}.
             </p>
             <button
               type="button"
@@ -472,6 +551,8 @@ export function SubnationalGamePage({ countryCode, countryName }: Props) {
           <SubdivisionResultsFlags
             divisions={game.divisions}
             divisionResults={game.divisionResults}
+            capitalDivisions={game.capitalDivisions}
+            capitalResults={game.capitalResults}
             countryCode={countryCode}
           />
         )}

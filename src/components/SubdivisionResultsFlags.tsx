@@ -1,12 +1,26 @@
 import { useMemo } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
+import { capitalFlagSrc } from "../lib/capitalInfo";
+import { playableCapitalName } from "../lib/playableSubdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
 
 type Props = {
   divisions: SubdivisionMeta[];
   divisionResults: Record<string, "correct" | "wrong">;
+  /** Divisions whose CAPITAL's flag was quizzed (mixed / capitals-only decks). */
+  capitalDivisions?: SubdivisionMeta[];
+  capitalResults?: Record<string, "correct" | "wrong">;
   countryCode?: string;
+};
+
+type ResultItem = {
+  key: string;
+  name: string;
+  detail?: string;
+  flagUrl: string | null;
+  disputeCode: string;
+  typeLabel: string;
 };
 
 function FlagColumn({
@@ -17,7 +31,7 @@ function FlagColumn({
 }: {
   title: string;
   variant: "correct" | "wrong";
-  items: SubdivisionMeta[];
+  items: ResultItem[];
   countryCode?: string;
 }) {
   return (
@@ -30,58 +44,85 @@ function FlagColumn({
         <p className="results-flags__empty">None</p>
       ) : (
         <ul className="results-flags__list">
-          {items.map((d) => {
-            const flagUrl = subdivisionFlagUrl(d.code);
-            return (
-              <li key={d.code} className="results-flags__item">
-                {flagUrl && (
-                  <div className="results-flags__flag-wrap">
-                    <img
-                      src={flagUrl}
-                      alt=""
-                      className="results-flags__flag"
-                      draggable={false}
-                    />
-                  </div>
+          {items.map((item) => (
+            <li key={item.key} className="results-flags__item">
+              {item.flagUrl && (
+                <div className="results-flags__flag-wrap">
+                  <img
+                    src={item.flagUrl}
+                    alt=""
+                    className="results-flags__flag"
+                    draggable={false}
+                  />
+                </div>
+              )}
+              <span className="results-flags__name">
+                {item.name}
+                {item.detail && (
+                  <span className="results-flags__detail"> — {item.detail}</span>
                 )}
-                <span className="results-flags__name">
-                  {d.name}
-                  {(() => {
-                    const dispute = getSubdivisionDisputeLabel(d.code, d.typeLabel, countryCode);
-                    if (!dispute) return null;
-                    return (
-                      <span
-                        className={dispute.isUnofficial ? "flag-grid__unofficial-tag" : "flag-grid__disputed-tag"}
-                        style={{ display: "inline-block", marginLeft: "5px" }}
-                      >
-                        ({dispute.text})
-                      </span>
-                    );
-                  })()}
-                </span>
-              </li>
-            );
-          })}
+                {(() => {
+                  const dispute = getSubdivisionDisputeLabel(
+                    item.disputeCode,
+                    item.typeLabel,
+                    countryCode,
+                  );
+                  if (!dispute) return null;
+                  return (
+                    <span
+                      className={dispute.isUnofficial ? "flag-grid__unofficial-tag" : "flag-grid__disputed-tag"}
+                      style={{ display: "inline-block", marginLeft: "5px" }}
+                    >
+                      ({dispute.text})
+                    </span>
+                  );
+                })()}
+              </span>
+            </li>
+          ))}
         </ul>
       )}
     </div>
   );
 }
 
-export function SubdivisionResultsFlags({ divisions, divisionResults, countryCode }: Props) {
+export function SubdivisionResultsFlags({
+  divisions,
+  divisionResults,
+  capitalDivisions = [],
+  capitalResults = {},
+  countryCode,
+}: Props) {
+  const items = useMemo<ResultItem[]>(() => {
+    const divisionItems = divisions.map((d): ResultItem & { result?: string } => ({
+      key: `division:${d.code}`,
+      name: d.name,
+      flagUrl: subdivisionFlagUrl(d.code),
+      disputeCode: d.code,
+      typeLabel: d.typeLabel,
+      result: divisionResults[d.code],
+    }));
+    const capitalItems = capitalDivisions.map((d): ResultItem & { result?: string } => ({
+      key: `capital:${d.code}`,
+      name: playableCapitalName(d.code) ?? d.name,
+      detail: `capital of ${d.name}`,
+      flagUrl: capitalFlagSrc(d.code),
+      disputeCode: d.code,
+      typeLabel: d.typeLabel,
+      result: capitalResults[d.code],
+    }));
+    return [...divisionItems, ...capitalItems].sort((a, b) =>
+      a.name.localeCompare(b.name, "en"),
+    );
+  }, [divisions, divisionResults, capitalDivisions, capitalResults]);
+
   const correct = useMemo(
-    () =>
-      [...divisions]
-        .filter((d) => divisionResults[d.code] === "correct")
-        .sort((a, b) => a.name.localeCompare(b.name, "en")),
-    [divisions, divisionResults],
+    () => items.filter((i) => (i as ResultItem & { result?: string }).result === "correct"),
+    [items],
   );
   const wrong = useMemo(
-    () =>
-      [...divisions]
-        .filter((d) => divisionResults[d.code] === "wrong")
-        .sort((a, b) => a.name.localeCompare(b.name, "en")),
-    [divisions, divisionResults],
+    () => items.filter((i) => (i as ResultItem & { result?: string }).result === "wrong"),
+    [items],
   );
 
   return (

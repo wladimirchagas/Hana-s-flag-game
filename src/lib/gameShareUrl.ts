@@ -33,7 +33,14 @@ export type GameConfig = {
   codes?: string[];
   quiz?: { flagCount: number };
   groupGame?: GroupGameConfig;
-  subnational?: { countryCode: string; countryName: string };
+  subnational?: {
+    countryCode: string;
+    countryName: string;
+    /** Include the divisions' own flags. Absent = true (the pre-capitals game). */
+    includeDivisions?: boolean;
+    /** Include the divisions' capital-city flags. Absent = false. */
+    includeCapitals?: boolean;
+  };
   disputedTerritories?: boolean;
 };
 
@@ -75,6 +82,13 @@ export function gameConfigToParams(c: GameConfig): URLSearchParams {
   } else if (c.subnational) {
     p.set("mode", "subnational");
     p.set("country", c.subnational.countryCode);
+    // Which flag sets the deck contains. Omitted for the divisions-only default
+    // so pre-existing shared links keep their exact meaning.
+    const sets = [
+      ...(c.subnational.includeDivisions !== false ? ["divisions"] : []),
+      ...(c.subnational.includeCapitals ? ["capitals"] : []),
+    ];
+    if (sets.join(",") !== "divisions") p.set("sets", sets.join(","));
   } else if (c.quiz) {
     p.set("mode", "quiz");
     p.set("count", String(c.quiz.flagCount));
@@ -129,7 +143,22 @@ export function paramsToGameConfig(p: URLSearchParams): GameConfig | null {
       const code = (p.get("country") ?? "").toUpperCase();
       if (!code) return null;
       const match = ALL_COUNTRY_OPTIONS.find((o) => o.code === code);
-      return { subnational: { countryCode: code, countryName: match?.name ?? code } };
+      const sets = (p.get("sets") ?? "divisions")
+        .split(",")
+        .map((s) => s.trim().toLowerCase())
+        .filter(Boolean);
+      const includeDivisions = sets.includes("divisions");
+      const includeCapitals = sets.includes("capitals");
+      return {
+        subnational: {
+          countryCode: code,
+          countryName: match?.name ?? code,
+          // A link with an unrecognisable sets value falls back to the default
+          // divisions-only game rather than an empty one.
+          includeDivisions: includeDivisions || !includeCapitals,
+          includeCapitals,
+        },
+      };
     }
     case "continent": {
       const label = p.get("group") ?? "";
