@@ -7711,6 +7711,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-DO": {
+    description:
+      "Dondușeni flies a green-white-green flag with a red brick water tower on the white band. The tower stands " +
+      "for the town’s infrastructure and growth, while its arms add a winged railway wheel for the 1893 railway " +
+      "that gave rise to Dondușeni; green is for the surrounding country, white for peace.",
+    sources: [
+      { title: "Dondușeni — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Dondu%C8%99eni" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
