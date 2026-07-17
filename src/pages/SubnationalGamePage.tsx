@@ -326,9 +326,18 @@ export function SubnationalGamePage({
       : subdivisionFlagUrl(game.current.code)
     : null;
 
-  // Answer space never mixes categories: a capital question searches only the
-  // country's capital names; a division question only division names.
+  // Map answer pool: a tap resolves to the entity the current question asks
+  // for (division, or that division's capital).
   const answerOptions = isCapitalQuestion ? game.capitalAnswerOptions : game.divisions;
+
+  // Dropdown answer pool: when BOTH sets are in the deck the dropdown offers
+  // divisions and capitals TOGETHER (owner rule, 2026-07) — the combined pool
+  // makes randomly guessing the answer harder. Single-set decks keep their
+  // single-category list.
+  const dropdownOptions =
+    includeDivisions && includeCapitals
+      ? [...game.divisions, ...game.capitalAnswerOptions]
+      : answerOptions;
 
   const deckDescription = includeCapitals
     ? includeDivisions
@@ -400,7 +409,7 @@ export function SubnationalGamePage({
         {!isFinished && (
           <div className="answer-row">
             <SubdivisionDropdown
-              divisions={answerOptions}
+              divisions={dropdownOptions}
               value={game.selected}
               onChange={game.setSelected}
               disabled={isRevealed || game.phase === "loading"}

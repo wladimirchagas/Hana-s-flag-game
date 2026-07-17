@@ -175,11 +175,14 @@ export function SubdivisionDropdown({
             <li className="dropdown-empty">No matches</li>
           ) : (
             filtered.map((d) => (
-              <li key={d.code}>
+              // A mixed-deck list can contain a division row AND its capital's
+              // row with the same ISO code, so the key and the selected check
+              // must distinguish rows, not just codes.
+              <li key={`${d.code}:${d.name}`}>
                 <button
                   type="button"
                   role="option"
-                  aria-selected={value?.code === d.code}
+                  aria-selected={value === d}
                   className="dropdown-option"
                   onMouseDown={(e) => e.preventDefault()}
                   onClick={() => selectDivision(d)}
@@ -252,13 +255,13 @@ export function SubdivisionDropdown({
                 <li className="dropdown-empty">No matches</li>
               ) : (
                 filteredAll.map((d) => (
-                  <li key={d.code}>
+                  <li key={`${d.code}:${d.name}`}>
                     <button
                       type="button"
                       role="option"
-                      aria-selected={value?.code === d.code}
+                      aria-selected={value === d}
                       className={`dropdown-modal__option ${
-                        value?.code === d.code
+                        value === d
                           ? "dropdown-modal__option--selected"
                           : ""
                       }`}
