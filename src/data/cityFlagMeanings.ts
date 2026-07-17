@@ -7721,6 +7721,16 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-GA": {
+    description:
+      "Comrat — the seat of Gagauzia — bears a black horse on its arms, from which the town takes its name: Comrat " +
+      "is the Gagauz ‘Kömür at’, ‘black horse’, a Nogai-Tatar emblem of wealth. It is set among ears of wheat for " +
+      "the region’s farming, with the town’s cathedral.",
+    sources: [
+      { title: "Comrat — Wikipedia (en)", url: "https://en.wikipedia.org/wiki/Comrat" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
