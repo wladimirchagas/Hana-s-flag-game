@@ -107,6 +107,11 @@ function FlagGameInner({
   const isCustomGame = filterCodes !== null && quiz === null && groupGame === null;
   const isQuickQuiz = quiz !== null;
   const isGroupGame = groupGame !== null;
+  // Everything this page hosts that isn't Quick Quiz or a Custom Game is a
+  // Flag Master mode: the group games (continent / sub-continent / similarity)
+  // and the empty-config default (All 195 World Flags). Flag Master answers
+  // are always chosen from the dropdown, never a button grid.
+  const isFlagMaster = !isQuickQuiz && !isCustomGame;
   const game = useGame({
     filterCodes,
     allowRetry: isCustomGame || isQuickQuiz,
@@ -502,13 +507,13 @@ function FlagGameInner({
 
         <FlagCard country={game.current} phase={game.phase} />
 
-        {/* When the per-question pool is small enough that ALL choices
-            fit on screen, render them as clickable buttons instead of a
-            search dropdown — easier UX for kids and faster on touch.
-            For larger pools (e.g. All-Flags, big Custom Games) we keep
-            the dropdown. The Confirm button stays in both layouts so
-            the wrong-guess / retry flow is unchanged. */}
-        {shouldUseButtons(alternatives.length) ? (
+        {/* Flag Master games (All-195 and the group modes) always answer
+            via the search dropdown — never the multiple-choice button
+            grid (owner rule, 2026-07). Quick Quiz and Custom Games keep
+            the buttons when the per-question pool is small enough that
+            ALL choices fit on screen. The Confirm button stays in both
+            layouts so the wrong-guess / retry flow is unchanged. */}
+        {!isFlagMaster && shouldUseButtons(alternatives.length) ? (
           <div className="answer-row answer-row--buttons">
             <AnswerOptions
               countries={alternatives}
