@@ -187,6 +187,11 @@ type Props = {
   onSelect?: (code: string) => void;
   onConfirm?: () => void;
   onHover?: (code: string | null) => void;
+  /** Optional override for the name shown in the tap-to-confirm popover —
+   *  e.g. the game's capital-city questions show the division's CAPITAL name
+   *  ("Johor Bahru") instead of the division's own name. Return null to keep
+   *  the default name. */
+  displayNameForCode?: (code: string) => string | null;
   disabled?: boolean;
   countryResults?: Record<string, "correct" | "wrong">;
   countryCode?: string;
@@ -204,6 +209,7 @@ export function SubdivisionMap({
   onSelect,
   onConfirm,
   onHover,
+  displayNameForCode,
   disabled = false,
   extraControls,
   countryResults = {},
@@ -418,6 +424,10 @@ export function SubdivisionMap({
       );
       if (parentDiv) resolvedName = parentDiv.name;
     }
+    // Caller-supplied display name (e.g. the capital's name during a
+    // capital-flag question) wins over the division's own name.
+    const mappedName = displayNameForCode?.(resolvedCode);
+    if (mappedName) resolvedName = mappedName;
 
     const clickX = e.clientX - frameRect.left;
     const clickY = e.clientY - frameRect.top;

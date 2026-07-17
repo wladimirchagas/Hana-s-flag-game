@@ -12,7 +12,13 @@ import {
 } from "../lib/continentGroups";
 import { ALL_COUNTRY_OPTIONS } from "../lib/countrySelection";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
-import { playableSubdivisionFlagCount } from "../lib/playableSubdivisions";
+import {
+  getPlayableCapitalSubdivisions,
+  playableCapitalFlagCount,
+  playableCapitalName,
+  playableSubdivisionFlagCount,
+  sharedFlagCodes,
+} from "../lib/playableSubdivisions";
 
 function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
   const map: Partial<Record<FlagSimilarity, string[]>> = {};
@@ -27,20 +33,64 @@ function buildGroupCodesMap(): Partial<Record<FlagSimilarity, string[]>> {
 
 const SIM_GROUP_CODES = buildGroupCodesMap();
 
-// Countries that actually have playable sub-national flags, sorted by name.
-// We filter on the playable flag count (not just the presence of SUBDIVISION_META)
-// so countries whose divisions have no distinct flags — e.g. Afghanistan — never
-// appear as a selectable option that would lead to an empty game.
+// Countries that actually have playable flags in EITHER set — sub-national
+// division flags or capital-city flags — sorted by name. We filter on the
+// playable counts (not just the presence of SUBDIVISION_META) so a country with
+// nothing to quiz never appears as an option that would lead to an empty game.
+// A country whose divisions have no flags but whose capitals do (e.g. India)
+// IS listed: its capital-city toggle carries the whole game.
 const SUBNATIONAL_COUNTRIES = ALL_COUNTRY_OPTIONS
-  .filter((c) => SUBDIVISION_META[c.code] != null && playableSubdivisionFlagCount(c.code) > 0)
+  .filter(
+    (c) =>
+      SUBDIVISION_META[c.code] != null &&
+      (playableSubdivisionFlagCount(c.code) > 0 || playableCapitalFlagCount(c.code) > 0),
+  )
   .sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
+
+// Per-device memory of the last-used Include toggles (proposal: "the player's
+// last choice is remembered per device"). Defaults preserve the pre-feature
+// game exactly: divisions ON, capitals OFF.
+const INCLUDE_PREF_KEY = "flagGame.flagMaster.include";
+
+function loadIncludePref(): { divisions: boolean; capitals: boolean } {
+  try {
+    const raw = localStorage.getItem(INCLUDE_PREF_KEY);
+    if (raw) {
+      const p: unknown = JSON.parse(raw);
+      if (
+        typeof p === "object" && p !== null &&
+        typeof (p as Record<string, unknown>).divisions === "boolean" &&
+        typeof (p as Record<string, unknown>).capitals === "boolean"
+      ) {
+        return p as { divisions: boolean; capitals: boolean };
+      }
+    }
+  } catch {
+    // Unreadable storage — fall through to the defaults.
+  }
+  return { divisions: true, capitals: false };
+}
+
+function saveIncludePref(pref: { divisions: boolean; capitals: boolean }) {
+  try {
+    localStorage.setItem(INCLUDE_PREF_KEY, JSON.stringify(pref));
+  } catch {
+    // Storage unavailable (private mode) — the preference just isn't remembered.
+  }
+}
 
 export type AllFlagsStart =
   | { type: "all195" }
   | { type: "similarity"; groupCodes: string[]; groupLabel: string; hardcore: boolean }
   | { type: "continent"; groupCodes: string[]; groupLabel: string }
   | { type: "subregion"; groupCodes: string[]; groupLabel: string }
-  | { type: "subnational"; countryCode: string; countryName: string }
+  | {
+      type: "subnational";
+      countryCode: string;
+      countryName: string;
+      includeDivisions: boolean;
+      includeCapitals: boolean;
+    }
   | { type: "disputed" };
 
 export type AllFlagsSetupModalProps = {
@@ -71,6 +121,25 @@ export function AllFlagsSetupModal({
   const [subnationalCountry, setSubnationalCountry] = useState(
     SUBNATIONAL_COUNTRIES[0]?.code ?? ""
   );
+  const [includePref] = useState(loadIncludePref);
+  const [includeDivisions, setIncludeDivisions] = useState(includePref.divisions);
+  const [includeCapitals, setIncludeCapitals] = useState(includePref.capitals);
+
+  // When the chosen country has flags in only one set, that set must carry the
+  // game — auto-enable it (and disable the empty one) so a listed country can
+  // never open onto an empty deck (proposal Frame F: India defaults capitals ON).
+  useEffect(() => {
+    if (!subnationalCountry) return;
+    const divCount = playableSubdivisionFlagCount(subnationalCountry);
+    const capCount = playableCapitalFlagCount(subnationalCountry);
+    if (divCount === 0 && capCount > 0) {
+      setIncludeDivisions(false);
+      setIncludeCapitals(true);
+    } else if (capCount === 0 && divCount > 0) {
+      setIncludeCapitals(false);
+      setIncludeDivisions(true);
+    }
+  }, [subnationalCountry]);
 
   const closeRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
@@ -100,6 +169,9 @@ export function AllFlagsSetupModal({
     if (!open) {
       setMode("all195");
       setSubnationalCountry(SUBNATIONAL_COUNTRIES[0]?.code ?? "");
+      const pref = loadIncludePref();
+      setIncludeDivisions(pref.divisions);
+      setIncludeCapitals(pref.capitals);
     }
   }, [open]);
 
@@ -113,7 +185,7 @@ export function AllFlagsSetupModal({
       : mode === "subregion"
       ? "Pick a sub-continent — you'll guess every flag from it."
       : mode === "subnational"
-      ? "Pick a country — you'll guess all its sub-national division flags."
+      ? "Pick a country — choose which of its flags to play."
       : mode === "disputed"
       ? "Every disputed & claimed territory flag across all nations. One guess each — no retries."
       : "Pick a group of visually similar flags to test yourself on.";
@@ -306,12 +378,40 @@ export function AllFlagsSetupModal({
           </footer>
         )}
 
-        {/* ── Sub-national flags — pick a country via dropdown ── */}
+        {/* ── Sub-national flags — pick a country, then choose which flag sets
+            to include (division flags and/or capital-city flags) ── */}
         {mode === "subnational" && (() => {
           const selected = SUBNATIONAL_COUNTRIES.find((c) => c.code === subnationalCountry);
           // Count the flags the game will actually quiz, not the raw division
           // total — they differ whenever some divisions have no distinct flag.
-          const count = selected ? playableSubdivisionFlagCount(selected.code) : 0;
+          const divCount = selected ? playableSubdivisionFlagCount(selected.code) : 0;
+          const capCount = selected ? playableCapitalFlagCount(selected.code) : 0;
+          const effDivisions = includeDivisions && divCount > 0;
+          const effCapitals = includeCapitals && capCount > 0;
+          // A flag shared by a division and its capital (e.g. Kuala Lumpur) is
+          // asked once in a mixed deck, so it counts once here too.
+          const sharedCount =
+            selected && effDivisions && effCapitals ? sharedFlagCodes(selected.code).size : 0;
+          const total =
+            (effDivisions ? divCount : 0) + (effCapitals ? capCount : 0) - sharedCount;
+          const capitalPreview = selected
+            ? getPlayableCapitalSubdivisions(selected.code)
+                .slice(0, 3)
+                .map((d) => playableCapitalName(d.code))
+                .filter(Boolean)
+                .join(", ")
+            : "";
+          const totalLine = !selected || total === 0
+            ? null
+            : effDivisions && effCapitals
+            ? `${total} flags — ${divCount} sub-national + ${capCount} capital cities` +
+              (sharedCount > 0
+                ? ` − ${sharedCount} shared flag${sharedCount === 1 ? "" : "s"}`
+                : "") +
+              ", shuffled together"
+            : effDivisions
+            ? `${divCount} flag${divCount === 1 ? "" : "s"} — sub-national divisions`
+            : `${capCount} flag${capCount === 1 ? "" : "s"} — capital cities`;
           return (
             <>
               <div className="all195__body all195__body--subnational">
@@ -330,9 +430,61 @@ export function AllFlagsSetupModal({
                     ))}
                   </select>
                 </div>
-                {selected && (
-                  <p className="all195__subnational-count">
-                    {count} flag{count === 1 ? "" : "s"}
+
+                <span className="all195__subnational-label">Include</span>
+                <div className="all195__include">
+                  <div
+                    className={`all195__include-row${divCount === 0 ? " all195__include-row--disabled" : ""}`}
+                  >
+                    <span className="all195__include-ico" aria-hidden="true">🗺️</span>
+                    <span className="all195__include-txt">
+                      <b>Sub-national flags</b>
+                      {selected && divCount === 0 && (
+                        <small>No sub-national flags for {selected.name}</small>
+                      )}
+                    </span>
+                    <span className="all195__include-count">{divCount}</span>
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={effDivisions}
+                      aria-label="Include sub-national flags"
+                      className={`all195__switch${effDivisions ? " all195__switch--on" : ""}`}
+                      disabled={divCount === 0}
+                      onClick={() => setIncludeDivisions((v) => !v)}
+                    />
+                  </div>
+                  <div
+                    className={`all195__include-row${capCount === 0 ? " all195__include-row--disabled" : ""}`}
+                  >
+                    <span className="all195__include-ico" aria-hidden="true">🏙️</span>
+                    <span className="all195__include-txt">
+                      <b>Capital-city flags</b>
+                      {selected && capCount === 0 ? (
+                        <small>No capital-city flags for {selected.name} yet</small>
+                      ) : (
+                        capitalPreview && <small>{capitalPreview}…</small>
+                      )}
+                    </span>
+                    <span className="all195__include-count">{capCount}</span>
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={effCapitals}
+                      aria-label="Include capital-city flags"
+                      className={`all195__switch${effCapitals ? " all195__switch--on" : ""}`}
+                      disabled={capCount === 0}
+                      onClick={() => setIncludeCapitals((v) => !v)}
+                    />
+                  </div>
+                </div>
+
+                {totalLine && (
+                  <p className="all195__subnational-count">{totalLine}</p>
+                )}
+                {selected && total === 0 && (
+                  <p className="all195__include-warn" role="status">
+                    ⚠️ Turn on at least one flag set to play.
                   </p>
                 )}
               </div>
@@ -344,9 +496,17 @@ export function AllFlagsSetupModal({
                   <button
                     type="button"
                     className="qquiz__play"
-                    onClick={() =>
-                      onStart({ type: "subnational", countryCode: selected.code, countryName: selected.name })
-                    }
+                    disabled={total === 0}
+                    onClick={() => {
+                      saveIncludePref({ divisions: effDivisions, capitals: effCapitals });
+                      onStart({
+                        type: "subnational",
+                        countryCode: selected.code,
+                        countryName: selected.name,
+                        includeDivisions: effDivisions,
+                        includeCapitals: effCapitals,
+                      });
+                    }}
                   >
                     Play
                   </button>

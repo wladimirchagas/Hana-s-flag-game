@@ -1,16 +1,43 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
-import { getPlayableSubdivisions } from "../lib/playableSubdivisions";
+import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
+import {
+  getPlayableCapitalSubdivisions,
+  getPlayableSubdivisions,
+  playableCapitalName,
+  sharedFlagCodes,
+} from "../lib/playableSubdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 import type { SubdivisionFeatureCollection } from "../types/subdivision";
 
 export type SubdivGamePhase = "loading" | "error" | "guessing" | "revealed" | "finished";
 
+/** What a question asks for: the division's own flag, or its capital city's flag. */
+export type SubdivQuestionKind = "division" | "capital";
+
+type SubdivQuestion = {
+  division: SubdivisionMeta;
+  kind: SubdivQuestionKind;
+};
+
+export type SubdivisionGameOptions = {
+  /** Quiz the divisions' own flags. Default true (the original game). */
+  includeDivisions?: boolean;
+  /** Quiz the divisions' capital-city flags. Default false. */
+  includeCapitals?: boolean;
+};
+
 export type UseSubdivisionGameResult = {
   phase: SubdivGamePhase;
   error: string | null;
   current: SubdivisionMeta | null;
+  /** Whether the current flag is the division's or its capital city's. */
+  currentKind: SubdivQuestionKind;
+  /** The name the current question asks for (division name, or capital name). */
+  currentAnswerName: string | null;
+  /** Extra teaching line for the reveal ("capital of Johor", shared-flag note). */
+  revealNote: string | null;
   selected: SubdivisionMeta | null;
   setSelected: (d: SubdivisionMeta | null) => void;
   confirm: () => void;
@@ -19,36 +46,57 @@ export type UseSubdivisionGameResult = {
   correctCount: number;
   wrongCount: number;
   totalAnswered: number;
-  totalDivisions: number;
+  totalQuestions: number;
   attemptNonce: number;
+  /** Division-flag question results, keyed by code (feeds the results grid). */
   divisionResults: Record<string, "correct" | "wrong">;
+  /** Capital-flag question results, keyed by code (feeds the results grid). */
+  capitalResults: Record<string, "correct" | "wrong">;
+  /** Per-division colouring for the map: division results, plus capital results
+   *  for codes that have no division question in this deck. */
+  mapResults: Record<string, "correct" | "wrong">;
+  /** Divisions quizzed on their own flag in this deck. */
   divisions: SubdivisionMeta[];
+  /** Divisions quizzed on their capital's flag in this deck. */
+  capitalDivisions: SubdivisionMeta[];
+  /** Answer space for capital questions: every capital of the country with a
+   *  sourced name (flagged or not), as division-shaped rows named by capital. */
+  capitalAnswerOptions: SubdivisionMeta[];
   geoData: SubdivisionFeatureCollection | null;
   countryCode: string;
   countryName: string;
   pluralLabel: string;
+  includeDivisions: boolean;
+  includeCapitals: boolean;
   endGameEarly: () => void;
   gameStartedAtMs: number | null;
   gameEndedAtMs: number | null;
   meanAnswerMs: number | null;
 };
 
+const questionKey = (q: SubdivQuestion) => `${q.kind}:${q.division.code}`;
 
 export function useSubdivisionGame(
   countryCode: string,
   countryName: string,
+  options?: SubdivisionGameOptions,
 ): UseSubdivisionGameResult {
+  const includeDivisions = options?.includeDivisions !== false;
+  const includeCapitals = options?.includeCapitals === true;
+
   const [phase, setPhase] = useState<SubdivGamePhase>("loading");
   const [error, setError] = useState<string | null>(null);
   const [geoData, setGeoData] = useState<SubdivisionFeatureCollection | null>(null);
   const [divisions, setDivisions] = useState<SubdivisionMeta[]>([]);
-  const [current, setCurrent] = useState<SubdivisionMeta | null>(null);
+  const [capitalDivisions, setCapitalDivisions] = useState<SubdivisionMeta[]>([]);
+  const [current, setCurrent] = useState<SubdivQuestion | null>(null);
   const [selected, setSelected] = useState<SubdivisionMeta | null>(null);
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null);
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
   const [divisionResults, setDivisionResults] = useState<Record<string, "correct" | "wrong">>({});
+  const [capitalResults, setCapitalResults] = useState<Record<string, "correct" | "wrong">>({});
   const [attemptNonce, setAttemptNonce] = useState(0);
   const [gameStartedAtMs, setGameStartedAtMs] = useState<number | null>(null);
   const [gameEndedAtMs, setGameEndedAtMs] = useState<number | null>(null);
@@ -58,13 +106,33 @@ export function useSubdivisionGame(
   const askedRef = useRef<Set<string>>(new Set());
   const gameStartedAtRef = useRef<number | null>(null);
   const roundStartedAtRef = useRef<number>(0);
-  const divisionsRef = useRef<SubdivisionMeta[]>([]);
-  const startRoundRef = useRef<(list: SubdivisionMeta[]) => void>(() => {});
+  const deckRef = useRef<SubdivQuestion[]>([]);
+  const sharedRef = useRef<Set<string>>(new Set());
+  const startRoundRef = useRef<(list: SubdivQuestion[]) => void>(() => {});
 
   const meta = SUBDIVISION_META[countryCode.toUpperCase()];
   const pluralLabel = meta?.pluralLabel ?? "Divisions";
 
-  const startRound = useCallback((list: SubdivisionMeta[]) => {
+  // Capital questions are answered from the country's FULL capital list (every
+  // capital with a sourced name, flagged or not) so even a small deck is a
+  // genuine search, not a giveaway. Rows are division-shaped but named by the
+  // capital, so selection still resolves to the division's code.
+  const capitalAnswerOptions = useMemo<SubdivisionMeta[]>(() => {
+    const m = SUBDIVISION_META[countryCode.toUpperCase()];
+    if (!m) return [];
+    const seen = new Set<string>();
+    const out: SubdivisionMeta[] = [];
+    for (const d of m.divisions) {
+      if (d.code in DISPUTED_TERRITORY_HIERARCHY) continue;
+      const name = playableCapitalName(d.code);
+      if (!name || seen.has(d.code)) continue;
+      seen.add(d.code);
+      out.push({ ...d, name });
+    }
+    return out;
+  }, [countryCode]);
+
+  const startRound = useCallback((list: SubdivQuestion[]) => {
     if (list.length === 0) return;
     if (gameStartedAtRef.current === null) {
       const t = Date.now();
@@ -76,15 +144,15 @@ export function useSubdivisionGame(
       setPhase("finished");
       return;
     }
-    const pool = list.filter((d) => !askedRef.current.has(d.code));
+    const pool = list.filter((q) => !askedRef.current.has(questionKey(q)));
     if (pool.length === 0) {
-      // Safety net: all unique codes already asked, end the game.
+      // Safety net: all unique questions already asked, end the game.
       setGameEndedAtMs(Date.now());
       setPhase("finished");
       return;
     }
     const pick = pool[Math.floor(Math.random() * pool.length)]!;
-    askedRef.current.add(pick.code);
+    askedRef.current.add(questionKey(pick));
     roundStartedAtRef.current = Date.now();
     setCurrent(pick);
     setSelected(null);
@@ -113,17 +181,32 @@ export function useSubdivisionGame(
         }
 
         setGeoData(geo);
-        // Only quiz divisions that have a flag, aren't hierarchy children, and are
-        // deduplicated by ISO code. This is shared with the Flag Master menu (via
-        // getPlayableSubdivisions) so the count shown there matches what's played.
-        const divs = getPlayableSubdivisions(countryCode);
-        if (divs.length === 0) {
-          setError(`No sub-national flags available for ${countryName}.`);
+        // Both sets come from the shared playable helpers (the same ones the
+        // Flag Master menu counts with) so the menu numbers always equal the
+        // number of questions actually asked.
+        const divs = includeDivisions ? getPlayableSubdivisions(countryCode) : [];
+        const shared =
+          includeDivisions && includeCapitals ? sharedFlagCodes(countryCode) : new Set<string>();
+        // A flag shared by a division and its capital (e.g. Kuala Lumpur) is
+        // asked ONCE in a mixed deck — as the division question — so the same
+        // image never carries two different expected answers.
+        const caps = includeCapitals
+          ? getPlayableCapitalSubdivisions(countryCode).filter((d) => !shared.has(d.code))
+          : [];
+
+        const deck: SubdivQuestion[] = [
+          ...divs.map((d): SubdivQuestion => ({ division: d, kind: "division" })),
+          ...caps.map((d): SubdivQuestion => ({ division: d, kind: "capital" })),
+        ];
+        if (deck.length === 0) {
+          setError(`No flags available for ${countryName} with the chosen sets.`);
           setPhase("error");
           return;
         }
         setDivisions(divs);
-        divisionsRef.current = divs;
+        setCapitalDivisions(caps);
+        deckRef.current = deck;
+        sharedRef.current = shared;
 
         // Reset game state
         askedRef.current = new Set();
@@ -131,12 +214,13 @@ export function useSubdivisionGame(
         setCorrectCount(0);
         setWrongCount(0);
         setDivisionResults({});
+        setCapitalResults({});
         setAnswerDurationsMs([]);
         gameStartedAtRef.current = null;
         setGameStartedAtMs(null);
         setGameEndedAtMs(null);
 
-        startRoundRef.current(divs);
+        startRoundRef.current(deck);
       } catch (e) {
         if (cancelled) return;
         setError(e instanceof Error ? e.message : "Failed to load subdivision data.");
@@ -145,28 +229,29 @@ export function useSubdivisionGame(
     })();
 
     return () => { cancelled = true; };
-  // Only run on mount
+  // Only run on mount / when the game definition changes
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [countryCode]);
+  }, [countryCode, includeDivisions, includeCapitals]);
 
   const confirm = useCallback(() => {
     if (phase !== "guessing" || !current || !selected) return;
-    const correct = selected.code === current.code;
+    const correct = selected.code === current.division.code;
     setWasCorrect(correct);
     setAttemptNonce((n) => n + 1);
     setScore((s) => (correct ? s + 1 : s - 1));
     if (correct) setCorrectCount((c) => c + 1);
     else setWrongCount((c) => c + 1);
 
-    setDivisionResults((prev) => ({
+    const setResult = current.kind === "division" ? setDivisionResults : setCapitalResults;
+    setResult((prev) => ({
       ...prev,
-      [current.code]: correct ? "correct" : "wrong",
+      [current.division.code]: correct ? "correct" : "wrong",
     }));
 
     const answerMs = Date.now() - roundStartedAtRef.current;
     setAnswerDurationsMs((prev) => [...prev, answerMs]);
 
-    const list = divisionsRef.current;
+    const list = deckRef.current;
     const allAsked = askedRef.current.size >= list.length;
     if (allAsked) {
       setGameEndedAtMs(Date.now());
@@ -178,9 +263,9 @@ export function useSubdivisionGame(
 
   // Auto-advance after 1500ms in "revealed" phase
   useEffect(() => {
-    if (phase !== "revealed" || divisionsRef.current.length === 0) return;
+    if (phase !== "revealed" || deckRef.current.length === 0) return;
     const timer = window.setTimeout(() => {
-      startRound(divisionsRef.current);
+      startRound(deckRef.current);
     }, 1500);
     return () => window.clearTimeout(timer);
   }, [phase, startRound]);
@@ -197,10 +282,40 @@ export function useSubdivisionGame(
     return sum / answerDurationsMs.length;
   }, [answerDurationsMs]);
 
+  // Map colouring: division results own the polygon; a capital result colours
+  // it only when that code has no division question in this deck (capitals-only
+  // games still paint progress).
+  const mapResults = useMemo(() => {
+    if (!includeCapitals) return divisionResults;
+    const divisionCodes = new Set(divisions.map((d) => d.code));
+    const merged: Record<string, "correct" | "wrong"> = { ...divisionResults };
+    for (const [code, r] of Object.entries(capitalResults)) {
+      if (!divisionCodes.has(code) && merged[code] === undefined) merged[code] = r;
+    }
+    return merged;
+  }, [divisionResults, capitalResults, divisions, includeCapitals]);
+
+  const currentKind: SubdivQuestionKind = current?.kind ?? "division";
+  const currentAnswerName = current
+    ? current.kind === "capital"
+      ? playableCapitalName(current.division.code)
+      : current.division.name
+    : null;
+  const revealNote = current
+    ? current.kind === "capital"
+      ? `capital of ${current.division.name}`
+      : sharedRef.current.has(current.division.code)
+      ? `also the flag of its capital, ${playableCapitalName(current.division.code) ?? ""}`
+      : null
+    : null;
+
   return useMemo(() => ({
     phase,
     error,
-    current,
+    current: current?.division ?? null,
+    currentKind,
+    currentAnswerName,
+    revealNote,
     selected,
     setSelected,
     confirm,
@@ -209,22 +324,29 @@ export function useSubdivisionGame(
     correctCount,
     wrongCount,
     totalAnswered: correctCount + wrongCount,
-    totalDivisions: divisions.length,
+    totalQuestions: divisions.length + capitalDivisions.length,
     attemptNonce,
     divisionResults,
+    capitalResults,
+    mapResults,
     divisions,
+    capitalDivisions,
+    capitalAnswerOptions,
     geoData,
     countryCode,
     countryName,
     pluralLabel,
+    includeDivisions,
+    includeCapitals,
     endGameEarly,
     gameStartedAtMs,
     gameEndedAtMs,
     meanAnswerMs,
   }), [
-    phase, error, current, selected, confirm,
-    wasCorrect, score, correctCount, wrongCount, divisions, attemptNonce,
-    divisionResults, geoData, countryCode, countryName,
-    pluralLabel, endGameEarly, gameStartedAtMs, gameEndedAtMs, meanAnswerMs,
+    phase, error, current, currentKind, currentAnswerName, revealNote, selected, confirm,
+    wasCorrect, score, correctCount, wrongCount, divisions, capitalDivisions,
+    capitalAnswerOptions, attemptNonce, divisionResults, capitalResults, mapResults,
+    geoData, countryCode, countryName, pluralLabel, includeDivisions, includeCapitals,
+    endGameEarly, gameStartedAtMs, gameEndedAtMs, meanAnswerMs,
   ]);
 }
