@@ -7538,6 +7538,36 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "MD-CT": {
+    description:
+      "Cantemir bears a white mute swan with a red beak on green, floating on a silver base, and above it a golden " +
+      "shield with a blackbird singing on a branch. The swan stands for the Prut meadow and the district’s waters " +
+      "— the silver base being the heraldic colour of water — and was a local emblem before the arms were " +
+      "formalised.",
+    sources: [
+      { title: "Stema raionului — Consiliul Raional Cantemir (official)", url: "https://www.cantemir.md/stema-raionului/" },
+    ],
+  },
+
+  "MD-CS": {
+    description:
+      "Căușeni’s arms show a red portal framing the Church of the Assumption on gold, flanked by two golden lions, " +
+      "over a crenellated silver-and-black base bearing a golden eight-rayed star. The church is the district’s " +
+      "famous medieval monument.",
+    sources: [
+      { title: "Stema și Drapelul Raionului — Consiliul Raional Căușeni (official)", url: "https://causeni.md/raionul-causeni/stema-raionului/" },
+    ],
+  },
+
+  "MD-CU": {
+    description:
+      "Chișinău bears a golden eagle with lowered wings on blue, carrying the arms of Moldavia on its breast, " +
+      "beneath a mural crown of seven towers for the seven hills on which the city stands.",
+    sources: [
+      { title: "Stema Chișinăului — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_Chi%C8%99in%C4%83ului" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
