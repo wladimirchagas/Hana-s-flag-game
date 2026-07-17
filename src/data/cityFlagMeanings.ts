@@ -7444,6 +7444,68 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "LV-094": {
+    description:
+      "Smiltene bears, on blue, three golden mountain peaks with three silver birds flying above them.",
+    sources: [
+      { title: "Smiltenes ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Smiltenes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-097": {
+    description:
+      "Talsi bears, on gold, a green hill for the town — which spreads across nine hills — from which a bare arm " +
+      "reaches out holding a green wreath, emblems of strength and power.",
+    sources: [
+      { title: "Talsu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Talsu_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-099": {
+    description:
+      "Tukums bears, on silver, a green hill crowned with three green firs.",
+    sources: [
+      { title: "Tukuma ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Tukuma_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-101": {
+    description:
+      "Valka’s arms show a warrior — his garments marked with fire-crosses (ugunskrusti) — standing at the gates " +
+      "of an ancient Latvian hillfort.",
+    sources: [
+      { title: "Valkas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Valkas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-107": {
+    description:
+      "Viesīte bears five acorns, red on the gold field and gold on the red — acorns standing for strength and " +
+      "fertility, and recalling the great oak grove the town once had. The arms were confirmed in 1938.",
+    sources: [
+      { title: "Viesītes ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Vies%C4%ABtes_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-108": {
+    description:
+      "Viļaka bears, below, a hedgehog in natural colours — for the many hedgehogs around the town — beneath a " +
+      "golden chief with three blue flax-flowers, for the townspeople’s old craft of growing and working flax. " +
+      "The arms were confirmed in 1996.",
+    sources: [
+      { title: "Viļakas ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Vi%C4%BCakas_%C4%A3erbonis" },
+    ],
+  },
+
+  "LV-109": {
+    description:
+      "Viļāni bears a golden honeycomb above a golden bee — the bee and honey standing for diligence and " +
+      "industrious work. The arms were confirmed in 1938.",
+    sources: [
+      { title: "Viļānu ģerbonis — Wikipedia (lv)", url: "https://lv.wikipedia.org/wiki/Vi%C4%BC%C4%81nu_%C4%A3erbonis" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
