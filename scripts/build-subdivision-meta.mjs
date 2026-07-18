@@ -89,6 +89,14 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
     // Natural Earth's name_en for BR-DF is the truncated "Federal" (from
     // "Distrito Federal"). Correct it to the official Portuguese name.
     "BR-DF": "Distrito Federal"
+  },
+  "MY": {
+    // Natural Earth gives the Malay "Melaka" for MY-04 but anglicises its
+    // sibling MY-07 to "Penang" — an inconsistency. The app's convention is the
+    // common English name (Penang, not Pulau Pinang), and the capital city is
+    // already "Malacca" (capitalDetails/cities), so standardise the state on
+    // "Malacca" too: one romanisation for the state and its capital.
+    "MY-04": "Malacca"
   }
 };
 
