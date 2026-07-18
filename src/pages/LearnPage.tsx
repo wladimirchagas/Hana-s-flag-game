@@ -49,6 +49,7 @@ import {
 import { subdivisionFlagUrl, fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { getPlayableSubdivisions } from "../lib/playableSubdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
+import { SUBDIVISION_ENDONYMS } from "../data/subdivisionEndonyms";
 import { UNOFFICIAL_SUBDIV_NOTES } from "../lib/unofficialSubdivFlags";
 import { DISPUTED_SUBDIV_NOTES } from "../lib/disputedSubdivisions";
 import { NSGT_CODES } from "../lib/nsgtTerritories";
@@ -1501,6 +1502,16 @@ export default function LearnPage() {
                           <dt className="entity-summary__label">Type</dt>
                           <dd className="entity-summary__value">
                             {selectedSubdivision.typeLabel}
+                          </dd>
+                        </div>
+                      )}
+                      {/* Local (native-language) name above the population,
+                          where it differs from the English exonym. */}
+                      {SUBDIVISION_ENDONYMS[selectedSubdivision.code] && (
+                        <div className="entity-summary__row">
+                          <dt className="entity-summary__label">Local name</dt>
+                          <dd className="entity-summary__value">
+                            {SUBDIVISION_ENDONYMS[selectedSubdivision.code]}
                           </dd>
                         </div>
                       )}

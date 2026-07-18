@@ -1,6 +1,7 @@
 import { GOVERNMENT_TYPES } from "../lib/governmentTypes";
 import { formatPopulation } from "../lib/formatPopulation";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
+import { COUNTRY_ENDONYMS } from "../data/countryEndonyms";
 import type { Country } from "../api/countries";
 
 /**
@@ -50,6 +51,10 @@ export function EntitySummary(props: EntitySummaryProps) {
     const rows: { label: string; value: React.ReactNode }[] = [];
     if (c.nameOfficial && c.nameOfficial !== c.name)
       rows.push({ label: "Name", value: c.nameOfficial });
+    // Local (native-language) name, shown above the population where it differs
+    // from the English exonym the app uses (e.g. Germany → Deutschland).
+    const endonym = COUNTRY_ENDONYMS[c.code];
+    if (endonym) rows.push({ label: "Local name", value: endonym });
     // Population sits ABOVE Capital and is ALWAYS shown: the live World Bank /
     // REST figure wins, but a bundled reference (NATIONAL_REFERENCE_POPULATION,
     // latest dated country-level P1082) fills in when the live source is blocked
