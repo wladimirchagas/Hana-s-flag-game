@@ -9,8 +9,8 @@ import { profileEntryFields } from "../lib/profileLeaderboard";
 import { SubdivisionMap } from "../components/SubdivisionMap";
 import { SubdivisionDropdown } from "../components/SubdivisionDropdown";
 import { SubdivisionResultsFlags } from "../components/SubdivisionResultsFlags";
-import { subdivisionFlagUrl } from "../api/subdivisions";
 import { capitalFlagSrc } from "../lib/capitalInfo";
+import { subnationalDivisionFlag } from "../lib/subnationalDivisionFlag";
 import { subdivisionCityMarkers } from "../lib/cityRoles";
 import { gameAudio } from "../lib/gameAudio";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
@@ -349,7 +349,7 @@ export function SubnationalGamePage({
   const currentFlagUrl = game.current
     ? isCapitalQuestion
       ? capitalFlagSrc(game.current.code)
-      : subdivisionFlagUrl(game.current.code)
+      : subnationalDivisionFlag(game.current.code)
     : null;
 
   const deckDescription = includeCapitals

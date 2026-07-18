@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
+import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
 import {
   getPlayableCapitalSubdivisions,
   getPlayableSubdivisions,
@@ -134,6 +135,9 @@ export function useSubdivisionGame(
     const out: SubdivAnswerOption[] = [];
     for (const d of m.divisions) {
       if (d.code in DISPUTED_TERRITORY_HIERARCHY) continue;
+      // A city-territory is a division, not a subdivision's capital, so it is
+      // never a capital-question answer.
+      if (CITY_TERRITORY_CODES.has(d.code)) continue;
       const name = playableCapitalName(d.code);
       if (!name || seen.has(d.code)) continue;
       seen.add(d.code);
@@ -326,7 +330,7 @@ export function useSubdivisionGame(
     ? current.kind === "capital"
       ? `capital of ${current.division.name}`
       : sharedRef.current.has(current.division.code)
-      ? `also the flag of its capital, ${playableCapitalName(current.division.code) ?? ""}`
+      ? `also flown by its capital, ${playableCapitalName(current.division.code) ?? ""} — either answer counts`
       : null
     : null;
 

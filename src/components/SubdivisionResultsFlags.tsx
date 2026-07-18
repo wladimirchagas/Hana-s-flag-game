@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { subdivisionFlagUrl } from "../api/subdivisions";
 import { capitalFlagSrc } from "../lib/capitalInfo";
+import { subnationalDivisionFlag } from "../lib/subnationalDivisionFlag";
 import { playableCapitalName } from "../lib/playableSubdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { getSubdivisionDisputeLabel } from "../lib/disputedSubdivisions";
@@ -97,7 +97,7 @@ export function SubdivisionResultsFlags({
     const divisionItems = divisions.map((d): ResultItem & { result?: string } => ({
       key: `division:${d.code}`,
       name: d.name,
-      flagUrl: subdivisionFlagUrl(d.code),
+      flagUrl: subnationalDivisionFlag(d.code),
       disputeCode: d.code,
       typeLabel: d.typeLabel,
       result: divisionResults[d.code],
