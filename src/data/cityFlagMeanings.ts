@@ -7731,6 +7731,23 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Nuuk — capital of Sermersooq and of Greenland ──────────────────────────
+  "GL-SM": {
+    description:
+      "Nuuk's arms — used identically on the town flag — are set on a blue-and-white field. The red " +
+      "building at the centre is the ‘red siminar’, Nuuk's teachers' training college (Ilinniarfissuaq), " +
+      "with gold windows and a weathercock; it stands for education and culture. In the water before it " +
+      "floats a yellow kayak paddle, for the hunting way of life of Greenland's indigenous people — and, " +
+      "the arms' authors noted, for Nuuk being ‘the true power of Greenland’, its capital. Three sets of " +
+      "waves, growing as they reach the building, run beneath it: the blue waves are the fjord by Nuuk, " +
+      "the white waves the sea ice. Rising behind is Mt Sermitsiaq (‘a piece of ice’), the distinctive " +
+      "peak that is the civic symbol of the town. The arms were created by Ejner Heilmann and Sven Tito " +
+      "Achmen and copyrighted in 1986.",
+    sources: [
+      { title: "Coat of arms of Nuuk — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nuuk" },
+    ],
+  },
+
   // ── Nicosia — capital of the Nicosia District and of Cyprus ─────────────────
   "CY-01": {
     description:
