@@ -7748,6 +7748,19 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Amman — capital of the Amman Governorate and of Jordan ─────────────────
+  "JO-AM": {
+    description:
+      "Amman's flag carries the Greater Amman Municipality logo, launched in 2009 for the city's centennial: " +
+      "the name عمّان (‘Amman’) in bold, open-ended Arabic lettering set among seven multi-coloured hills. " +
+      "The seven hills recall the tradition that Amman — like Rome — first grew up on seven jabals (hills), " +
+      "and the bright colours stand for the modern city's diversity and vibrancy. (The older municipal " +
+      "emblem it replaced was a green field with a golden triple archway under three crescents.)",
+    sources: [
+      { title: "Municipality of Greater Amman — Flags of the World", url: "https://www.crwflags.com/fotw/flags/jo-amman.html" },
+    ],
+  },
+
   // ── Reykjavík — capital region and capital of Iceland ──────────────────────
   "IS-1": {
     description:
