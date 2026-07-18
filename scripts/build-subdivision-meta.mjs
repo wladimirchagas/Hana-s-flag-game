@@ -97,6 +97,19 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
     // already "Malacca" (capitalDetails/cities), so standardise the state on
     // "Malacca" too: one romanisation for the state and its capital.
     "MY-04": "Malacca"
+  },
+  "GR": {
+    // Natural Earth's name_en is the transliterated Greek, not the established
+    // English exonym: GR-E "Thessalia" → "Thessaly"; GR-B "Centre Macedonia" is
+    // a mistranslation of "Κεντρική Μακεδονία" → "Central Macedonia".
+    "GR-E": "Thessaly",
+    "GR-B": "Central Macedonia"
+  },
+  "CZ": {
+    // Natural Earth's name_en for CZ-PL is the truncated "Plzeň-" (from
+    // "Plzeňský kraj"). Use the established English exonym for the city the
+    // region is named after: Pilsen.
+    "CZ-PL": "Pilsen"
   }
 };
 
