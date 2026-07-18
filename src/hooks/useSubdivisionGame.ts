@@ -286,14 +286,16 @@ export function useSubdivisionGame(
     }
   }, [phase, current, selected]);
 
-  // Auto-advance after 1500ms in "revealed" phase
+  // Auto-advance in "revealed" phase. Correct answers advance quickly (1.5s);
+  // wrong answers hold for 6s so the fixed answer-reveal burst (5.6s) can be
+  // read before the next question replaces it.
   useEffect(() => {
     if (phase !== "revealed" || deckRef.current.length === 0) return;
     const timer = window.setTimeout(() => {
       startRound(deckRef.current);
-    }, 1500);
+    }, wasCorrect ? 1500 : 6000);
     return () => window.clearTimeout(timer);
-  }, [phase, startRound]);
+  }, [phase, startRound, wasCorrect]);
 
   const endGameEarly = useCallback(() => {
     if (phase === "loading" || phase === "error" || phase === "finished") return;

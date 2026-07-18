@@ -21,21 +21,28 @@ type Props = {
    * When provided and wasCorrect is false, show the correct flag + name
    * instead of a generic "Try again!" message (Quick Quiz / Flag Master).
    * Omit or pass null to keep the encouragement message (Hana's Game).
+   * flagSvg may be absent (e.g. a capital with no bundled flag) — the
+   * reveal then shows the name alone.
    */
-  correctCountry?: { name: string; flagSvg: string } | null;
+  correctCountry?: { name: string; flagSvg?: string | null } | null;
 };
 
 export function AnswerBurst({ nonce, wasCorrect, active, correctCountry }: Props) {
   const [visible, setVisible] = useState(false);
+  const isReveal = !wasCorrect && correctCountry != null;
 
   useEffect(() => {
     if (!active || nonce === 0 || wasCorrect === null) return;
     setVisible(true);
-    // Long enough for a 7-year-old to read the message comfortably.
-    const lifetime = wasCorrect ? 3200 : 2800;
+    // Long enough for a 7-year-old to read the message comfortably. The
+    // answer reveal (wrong guess in a one-try mode) holds twice as long so
+    // the correct answer can actually be read; must stay shorter than the
+    // wrong-answer auto-advance delay in the game hooks (6s) so the reveal
+    // never lingers into the next question.
+    const lifetime = wasCorrect ? 3200 : isReveal ? 5600 : 2800;
     const t = window.setTimeout(() => setVisible(false), lifetime);
     return () => window.clearTimeout(t);
-  }, [nonce, wasCorrect, active]);
+  }, [nonce, wasCorrect, active, isReveal]);
 
   if (!active || !visible || wasCorrect === null) return null;
 
@@ -49,13 +56,15 @@ export function AnswerBurst({ nonce, wasCorrect, active, correctCountry }: Props
         aria-live="polite"
       >
         <div className="burst__panel">
-          <div className="burst__reveal-badge">✗ Wrong</div>
-          <p className="burst__reveal-label">The answer was…</p>
-          <img
-            className="burst__reveal-flag"
-            src={correctCountry.flagSvg}
-            alt={`Flag of ${correctCountry.name}`}
-          />
+          <div className="burst__reveal-badge">✗ Not quite</div>
+          <p className="burst__reveal-label">The correct answer was…</p>
+          {correctCountry.flagSvg && (
+            <img
+              className="burst__reveal-flag"
+              src={correctCountry.flagSvg}
+              alt={`Flag of ${correctCountry.name}`}
+            />
+          )}
           <p className="burst__reveal-name">{correctCountry.name}</p>
         </div>
         <HeroCutIn variant="boy" side="right" />

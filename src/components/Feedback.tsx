@@ -19,7 +19,7 @@ export function Feedback({ phase, current, wasCorrect }: Props) {
 
   return (
     <p className="feedback feedback--wrong" role="status">
-      Wrong — it was <strong>{current.name}</strong>. −1 point
+      Not quite — the correct answer was <strong>{current.name}</strong>. −1 point
     </p>
   );
 }

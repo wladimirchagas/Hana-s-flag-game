@@ -248,10 +248,18 @@ export function DisputedTerritoriesGamePage() {
           onCancel={() => setPendingNavigate(null)}
         />
       )}
+      {/* The burst is position:fixed/centered, so on a wrong guess the
+          correct answer always appears in the viewport — the inline strip
+          below the answer row can sit below the fold on small screens. */}
       <AnswerBurst
         nonce={game.attemptNonce}
         wasCorrect={game.wasCorrect}
         active={!isFinished}
+        correctCountry={
+          game.current
+            ? { name: game.current.name, flagSvg: currentFlagUrl }
+            : undefined
+        }
       />
       <GameClock
         startedAt={game.gameStartedAtMs}
@@ -312,7 +320,7 @@ export function DisputedTerritoriesGamePage() {
           <div className={`subdiv-game__feedback subdiv-game__feedback--${game.wasCorrect ? "correct" : "wrong"}`}>
             {game.wasCorrect
               ? `Correct! ${game.current.name}`
-              : `Wrong — it was ${game.current.name}`}
+              : `Not quite — the correct answer was ${game.current.name}`}
           </div>
         )}
 
