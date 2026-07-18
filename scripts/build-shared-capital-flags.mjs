@@ -66,6 +66,18 @@ const EFFECTIVELY_SHARED = new Map([
   ["NI-CO", "Nicaragua dept ≡ capital (green field + emblem)"],
   ["NI-NS", "Nicaragua dept ≡ capital (white field + round seal)"],
   ["SV-UN", "La Unión dept ≡ capital (yellow/red + emblem)"],
+  // Second audit pass (2026-07, band 100–175) — the first pass cut off at
+  // distance < 100 and missed same-flag pairs sitting just above it, e.g. the
+  // Australian Capital Territory whose flag also serves Canberra (distance 100).
+  ["AU-ACT", "Australian Capital Territory ≡ Canberra (the ACT flag serves both)"],
+  ["IT-LC", "Lecco province ≡ city (blue field + arms)"],
+  ["IT-FG", "Foggia province ≡ city (red/blue + arms + wreath)"],
+  ["VE-T", "Táchira ≡ capital (white triangle + star)"],
+  ["EG-PTS", "Port Said governorate ≡ city (red field + anchor & wreath)"],
+  ["NI-MS", "Masaya dept ≡ capital (green/white/green + seal)"],
+  ["HN-FM", "Francisco Morazán ≡ Tegucigalpa (navy/gold + arms)"],
+  ["EC-E", "Esmeraldas province ≡ capital (green/white bicolour)"],
+  ["EC-T", "Tungurahua ≡ Ambato (red/green field)"],
 ]);
 
 /** code -> bundled subdivision-flag path (bulk sub/** files + curated overrides). */

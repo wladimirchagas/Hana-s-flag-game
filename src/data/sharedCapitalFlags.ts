@@ -15,6 +15,7 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "AE-DU", // byte-identical
   "AE-SH", // byte-identical
   "AE-UQ", // byte-identical
+  "AU-ACT", // curated (audit): Australian Capital Territory ≡ Canberra (the ACT flag serves both)
   "AU-NF", // perceptual distance 0
   "BO-C", // byte-identical
   "BO-H", // perceptual distance 0
@@ -36,7 +37,9 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "CV-PR", // byte-identical
   "DE-HB", // byte-identical
   "EC-A", // perceptual distance 0
+  "EC-E", // curated (audit): Esmeraldas province ≡ capital (green/white bicolour)
   "EC-G", // curated (audit): Guayas ≡ Guayaquil (pale blue/white bands, three stars)
+  "EC-T", // curated (audit): Tungurahua ≡ Ambato (red/green field)
   "EG-ALX", // byte-identical
   "EG-ASN", // byte-identical
   "EG-BH", // byte-identical
@@ -45,6 +48,7 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "EG-KB", // perceptual distance 0
   "EG-KFS", // byte-identical
   "EG-LX", // perceptual distance 0
+  "EG-PTS", // curated (audit): Port Said governorate ≡ city (red field + anchor & wreath)
   "EG-SHG", // perceptual distance 0
   "EG-SUZ", // byte-identical
   "ES-CE", // perceptual distance 0
@@ -52,12 +56,15 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "ES-ZA", // byte-identical
   "ET-HA", // byte-identical
   "GB-GI", // perceptual distance 0
+  "HN-FM", // curated (audit): Francisco Morazán ≡ Tegucigalpa (navy/gold + arms)
   "HN-OC", // curated (audit): Ocotepeque dept ≡ capital (red/white/green triband)
   "HN-SB", // byte-identical
   "IT-AN", // byte-identical
   "IT-BG", // perceptual distance 0
   "IT-CO", // byte-identical
   "IT-CT", // byte-identical
+  "IT-FG", // curated (audit): Foggia province ≡ city (red/blue + arms + wreath)
+  "IT-LC", // curated (audit): Lecco province ≡ city (blue field + arms)
   "IT-ME", // curated (audit): Messina province ≡ city (red field, yellow Scandinavian cross)
   "IT-PT", // byte-identical
   "KG-O", // byte-identical
@@ -89,6 +96,7 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "NI-GR", // curated (audit): Granada dept ≡ city (yellow/red + seal)
   "NI-LE", // perceptual distance 1
   "NI-MD", // byte-identical
+  "NI-MS", // curated (audit): Masaya dept ≡ capital (green/white/green + seal)
   "NI-MT", // curated (audit): Nicaragua dept ≡ capital (blue/white/green + seal)
   "NI-NS", // curated (audit): Nicaragua dept ≡ capital (white field + round seal)
   "NI-SJ", // curated (audit): Nicaragua dept ≡ capital (white field + small seal)
@@ -113,5 +121,6 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "SV-SV", // byte-identical
   "SV-UN", // curated (audit): La Unión dept ≡ capital (yellow/red + emblem)
   "UY-RV", // perceptual distance 9
+  "VE-T", // curated (audit): Táchira ≡ capital (white triangle + star)
   "VE-X", // byte-identical
 ]);
