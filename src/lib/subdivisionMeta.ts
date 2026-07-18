@@ -3274,7 +3274,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "MY-07", name: "Penang", typeLabel: "State" },
     { code: "MY-10", name: "Selangor", typeLabel: "State" },
     { code: "MY-05", name: "Negeri Sembilan", typeLabel: "State" },
-    { code: "MY-04", name: "Melaka", typeLabel: "State" },
+    { code: "MY-04", name: "Malacca", typeLabel: "State" },
     { code: "MY-01", name: "Johor", typeLabel: "State" },
     { code: "MY-06", name: "Pahang", typeLabel: "State" },
     { code: "MY-11", name: "Terengganu", typeLabel: "State" },
