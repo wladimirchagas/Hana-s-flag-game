@@ -7748,6 +7748,21 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Reykjavík — capital region and capital of Iceland ──────────────────────
+  "IS-1": {
+    description:
+      "Reykjavík's arms show, on a blue shield, two white high-seat pillars (öndvegissúlur) rising above " +
+      "white waves. They recall the city's founding legend: Ingólfur Arnarson, reckoned Iceland's first " +
+      "permanent settler, cast the carved wooden pillars from his high seat into the sea as he approached " +
+      "the coast, vowing to make his home wherever they drifted ashore — which turned out to be the bay of " +
+      "Reykjavík. The blue field and the waves are that sea, which carried the pillars to the site. The " +
+      "arms were designed by the artist Halldór Pétursson in 1951 and adopted in 1957.",
+    sources: [
+      { title: "Icelandic heraldry — Wikipedia", url: "https://en.wikipedia.org/wiki/Icelandic_heraldry" },
+      { title: "History of Reykjavík — Visit Reykjavík", url: "https://visitreykjavik.is/history-reykjavik" },
+    ],
+  },
+
   // ── Jerusalem — capital of the Jerusalem District and of Israel ────────────
   "IL-JM": {
     description:
