@@ -1,4 +1,5 @@
 import { capitalDetail, capitalFlagPath } from "../lib/capitalInfo";
+import { CAPITAL_ENDONYMS } from "../data/capitalEndonyms";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { formatPopulation } from "../lib/formatPopulation";
 import { FlagMeaning } from "./FlagMeaning";
@@ -81,6 +82,12 @@ export function CapitalDetails({
           <dt className="entity-summary__label">Capital</dt>
           <dd className="entity-summary__value">{capitalName}</dd>
         </div>
+        {CAPITAL_ENDONYMS[code] && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Local name</dt>
+            <dd className="entity-summary__value">{CAPITAL_ENDONYMS[code]}</dd>
+          </div>
+        )}
         {detail?.population != null && (
           <div className="entity-summary__row">
             <dt className="entity-summary__label">Population</dt>
