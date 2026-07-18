@@ -7731,6 +7731,23 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Nicosia — capital of the Nicosia District and of Cyprus ─────────────────
+  "CY-01": {
+    description:
+      "Nicosia's flag is white bearing the municipal emblem, a stylised rendering of the star-shaped " +
+      "Venetian walls that have girdled the old city since the 1560s, when the Venetians rebuilt the " +
+      "fortifications as a ring of heart-shaped bastions. The emblem draws the walls as a curvilinear " +
+      "octagon with a blue outer edge and an orange (yellow) interior — blue and yellow being the " +
+      "municipality's colours — its points and arrow-shaped elements evoking the bastions. At the centre, " +
+      "in a ringed disc, is an abstract white dove: a peace dove standing for the hope of reunification of " +
+      "Nicosia, the last divided capital in Europe, split between the Republic of Cyprus and the Turkish-" +
+      "controlled north since 1974. The emblem and flag were adopted in the early 1970s.",
+    sources: [
+      { title: "Symbols of Nicosia — Wikipedia", url: "https://en.wikipedia.org/wiki/Symbols_of_Nicosia" },
+      { title: "Nicosia (Municipality, Cyprus) — Flags of the World", url: "https://www.fotw.info/flags/cy-nico.html" },
+    ],
+  },
+
   // ── Johor Bahru — capital of the state of Johor, Malaysia ───────────────────
   "MY-01": {
     description:
