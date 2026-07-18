@@ -7748,6 +7748,56 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Kotor — capital of Kotor Municipality, Montenegro ──────────────────────
+  "ME-10": {
+    description:
+      "Kotor's arms are a triangular shield of three fields. In the upper (dexter) silver field stands " +
+      "Saint Tryphon, the patron of Kotor, in a silver robe and red cloak with a golden halo; in the upper " +
+      "(sinister) red field is a silver stone tower, for the city's defence; and in the lower silver field " +
+      "a red lion in a fighting leap (salient) — the medieval lion held to be the oldest heraldic emblem of " +
+      "the Bay of Kotor (Boka Kotorska).",
+    sources: [
+      { title: "Грб Котора — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Котора" },
+    ],
+  },
+
+  // ── Cetinje — the Old Royal Capital of Montenegro ──────────────────────────
+  "ME-06": {
+    description:
+      "Cetinje — Montenegro's Old Royal Capital (Prijestonica) — flies the krstaš barjak, the historic " +
+      "Montenegrin cross banner: a red field bordered in white bearing a white cross whose arms broaden " +
+      "toward the ends, centred where the field's diagonals meet. (The city's separate coat of arms bears " +
+      "an open book for the Oktoih — the oldest book printed in the South Slavic lands — the peak of Mount " +
+      "Lovćen, and the bell tower of Cetinje Monastery.)",
+    sources: [
+      { title: "Zvanični simboli Prijestonice Cetinje — cetinje.me (official)", url: "http://www.cetinje.me/cetinje/site_mne/public/index.php/index/artikli?id=7" },
+    ],
+  },
+
+  // ── Nikšić — capital of Nikšić Municipality, Montenegro ────────────────────
+  "ME-12": {
+    description:
+      "Nikšić's arms are a dark-blue medieval shield with a double gold border. Across the top rise the " +
+      "towers of Bedem, the city's old fortress; at the centre is an architectural view of Trg slobode " +
+      "(Freedom Square) bearing the banner of Vučji Do — the 1876 battle the Montenegrins won nearby — and " +
+      "beneath it stands the Montenegrin lion.",
+    sources: [
+      { title: "Грб Никшића — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Никшића" },
+    ],
+  },
+
+  // ── Ulcinj — capital of Ulcinj Municipality, Montenegro ────────────────────
+  "ME-20": {
+    description:
+      "Ulcinj's arms gather, in gold, the symbols characteristic of the town: its old town — the ancient " +
+      "stone fortress on the seashore — with a sun above it; an olive branch in fruit for the area's " +
+      "agriculture; and, on the sea below, an old Illyrian (Liburnian) boat with a wolf's head turned " +
+      "toward it, recalling Ulcinj's ancient Illyrian maritime past. A gold border frames the whole.",
+    sources: [
+      { title: "Grb Ulcinja — Wikipedija (sh)", url: "https://sh.wikipedia.org/wiki/Grb_Ulcinja" },
+    ],
+  },
+
   // ── Amman — capital of the Amman Governorate and of Jordan ─────────────────
   "JO-AM": {
     description:
