@@ -334,11 +334,12 @@ export function useGame(options: UseGameOptions = {}): UseGameResult {
 
   useEffect(() => {
     if (phase !== "revealed" || countries.length === 0) return;
-    // Custom Game (allowRetry) shows a kid-readable celebration burst on the
-    // correct answer — hold the current flag long enough for that to finish.
-    // Non-retry modes: correct answers advance quickly (1.5s); wrong answers
-    // hold for 3s so the "answer reveal" burst has time to complete (2.8s).
-    const advanceDelayMs = allowRetry ? 3200 : wasCorrect ? 1500 : 3000;
+    // Correct answers: retry modes (Hana's Game / Quick Quiz) hold for the
+    // kid-readable celebration burst (3.2s); other modes advance quickly
+    // (1.5s). Wrong answers only reach "revealed" outside unlimited-retry
+    // play (a wrong guess in Hana's Game stays in "guessing"), and always
+    // hold for 6s so the fixed answer-reveal burst (5.6s) can be read.
+    const advanceDelayMs = wasCorrect ? (allowRetry ? 3200 : 1500) : 6000;
     const timer = window.setTimeout(() => {
       startRound(countries);
     }, advanceDelayMs);

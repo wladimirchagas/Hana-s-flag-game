@@ -166,13 +166,16 @@ export function useDisputedTerritoriesGame(): UseDisputedTerritoriesGameResult {
     }
   }, [phase, current, selected]);
 
+  // Auto-advance in "revealed" phase. Correct answers advance quickly (1.5s);
+  // wrong answers hold for 6s so the fixed answer-reveal burst (5.6s) can be
+  // read before the next question replaces it.
   useEffect(() => {
     if (phase !== "revealed" || divisionsRef.current.length === 0) return;
     const timer = window.setTimeout(() => {
       startRound(divisionsRef.current);
-    }, 1500);
+    }, wasCorrect ? 1500 : 6000);
     return () => window.clearTimeout(timer);
-  }, [phase, startRound]);
+  }, [phase, startRound, wasCorrect]);
 
   const endGameEarly = useCallback(() => {
     if (phase === "loading" || phase === "error" || phase === "finished") return;

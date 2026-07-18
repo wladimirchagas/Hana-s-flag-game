@@ -1787,11 +1787,14 @@
   animation: burst-wiggle 2.8s ease-out forwards;
 }
 
-/* Answer-reveal variant (Quick Quiz / Flag Master wrong guess) */
+/* Answer-reveal variant (wrong guess in the one-try modes). Total duration
+   matches the doubled AnswerBurst reveal lifetime (5600ms) so the correct
+   answer stays readable; uses its own keyframes so the entrance wiggle stays
+   quick despite the longer total. */
 .burst--reveal .burst__panel {
   background: linear-gradient(135deg, var(--coral), var(--pink));
   color: var(--ink-fixed);
-  animation: burst-wiggle 2.8s ease-out forwards;
+  animation: burst-wiggle-long 5.6s ease-out forwards;
 }
 
 .burst__reveal-badge {
@@ -1891,6 +1894,19 @@
   12%  { transform: scale(1) translateY(0) rotate(-2deg);    opacity: 1; }
   14%  { transform: scale(1) translateY(0) rotate(0deg);     opacity: 1; }
   90%  { transform: scale(1) translateY(0) rotate(0deg);     opacity: 1; }
+  100% { transform: scale(0.95) translateY(-8px);            opacity: 0; }
+}
+
+@keyframes burst-wiggle-long {
+  /* Same shape as burst-wiggle but tuned for the 5.6s answer reveal:
+     quick wiggle in (0-7%, ~0.4s), HOLD VISIBLE (7-95%, ~4.9s of reading
+     time), gentle exit (95-100%). */
+  0%   { transform: scale(0.6) translateY(20px); opacity: 0; }
+  3.5% { transform: scale(1.05) translateY(0) rotate(-3deg); opacity: 1; }
+  5%   { transform: scale(1) translateY(0) rotate(3deg);     opacity: 1; }
+  6%   { transform: scale(1) translateY(0) rotate(-2deg);    opacity: 1; }
+  7%   { transform: scale(1) translateY(0) rotate(0deg);     opacity: 1; }
+  95%  { transform: scale(1) translateY(0) rotate(0deg);     opacity: 1; }
   100% { transform: scale(0.95) translateY(-8px);            opacity: 0; }
 }
 

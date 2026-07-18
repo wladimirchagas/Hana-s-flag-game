@@ -366,10 +366,21 @@ export function SubnationalGamePage({
           onCancel={() => setPendingNavigate(null)}
         />
       )}
+      {/* The burst is position:fixed/centered, so on a wrong guess the
+          correct answer always appears in the viewport — the inline strip
+          below the map can sit below the fold on small screens. */}
       <AnswerBurst
         nonce={game.attemptNonce}
         wasCorrect={game.wasCorrect}
         active={!isFinished}
+        correctCountry={
+          game.current
+            ? {
+                name: game.currentAnswerName ?? game.current.name,
+                flagSvg: currentFlagUrl,
+              }
+            : undefined
+        }
       />
       <GameClock
         startedAt={game.gameStartedAtMs}
@@ -478,7 +489,7 @@ export function SubnationalGamePage({
           <div className={`subdiv-game__feedback subdiv-game__feedback--${game.wasCorrect ? "correct" : "wrong"}`}>
             {game.wasCorrect
               ? `Correct! ${game.currentAnswerName ?? game.current.name}`
-              : `Wrong — it was ${game.currentAnswerName ?? game.current.name}`}
+              : `Not quite — the correct answer was ${game.currentAnswerName ?? game.current.name}`}
             {game.revealNote && (
               <span className="subdiv-game__feedback-note"> — {game.revealNote}</span>
             )}
