@@ -2,8 +2,11 @@
 // Subdivision codes whose bundled capital-city flag is visually the SAME image
 // as the subdivision's own flag (byte-identical, or perceptual difference-hash
 // distance < 12 — the near-identical-duplicate threshold calibrated in
-// scripts/check-parent-flag-collision.mjs). A mixed division+capital game deck
-// asks such a flag only once. Re-run: node scripts/build-shared-capital-flags.mjs
+// scripts/check-parent-flag-collision.mjs), PLUS a curated set of pairs that are
+// the same flag from two sources but render too far apart for the perceptual
+// pass to catch (confirmed by a side-by-side montage audit — see
+// EFFECTIVELY_SHARED in the generator). A mixed division+capital game deck asks
+// such a flag only once. Re-run: node scripts/build-shared-capital-flags.mjs
 
 /** Codes whose capital flag duplicates the subdivision flag. */
 export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
@@ -18,16 +21,22 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "BO-O", // perceptual distance 0
   "BO-S", // byte-identical
   "BO-T", // byte-identical
+  "BR-DF", // curated (audit): Distrito Federal ≡ Brasília (golden-arrow cross); shade/crop differ
   "CH-BS", // byte-identical
   "CH-LU", // perceptual distance 0
   "CH-SO", // perceptual distance 0
+  "CH-SZ", // curated (audit): Schwyz canton ≡ town (red field, white canton cross)
   "CH-ZG", // perceptual distance 0
   "CH-ZH", // perceptual distance 0
+  "CR-A", // curated (audit): Alajuela province ≡ city (arms + wreath on white)
+  "CR-C", // curated (audit): Cartago province ≡ city (red-over-blue bicolour)
   "CR-P", // byte-identical
+  "CU-06", // curated (audit): Villa Clara ≡ capital (blue/white/red swallowtail + arms)
   "CU-11", // byte-identical
   "CV-PR", // byte-identical
   "DE-HB", // byte-identical
   "EC-A", // perceptual distance 0
+  "EC-G", // curated (audit): Guayas ≡ Guayaquil (pale blue/white bands, three stars)
   "EG-ALX", // byte-identical
   "EG-ASN", // byte-identical
   "EG-BH", // byte-identical
@@ -39,40 +48,58 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "EG-SHG", // perceptual distance 0
   "EG-SUZ", // byte-identical
   "ES-CE", // perceptual distance 0
+  "ES-OR", // curated (audit): Ourense province ≡ city (blue field, arms + star border)
   "ES-ZA", // byte-identical
   "ET-HA", // byte-identical
   "GB-GI", // perceptual distance 0
+  "HN-OC", // curated (audit): Ocotepeque dept ≡ capital (red/white/green triband)
   "HN-SB", // byte-identical
   "IT-AN", // byte-identical
   "IT-BG", // perceptual distance 0
   "IT-CO", // byte-identical
   "IT-CT", // byte-identical
+  "IT-ME", // curated (audit): Messina province ≡ city (red field, yellow Scandinavian cross)
   "IT-PT", // byte-identical
   "KG-O", // byte-identical
   "LV-050", // byte-identical
+  "LV-056", // curated (audit): Līvāni municipality ≡ town (light-blue field + emblem)
   "ME-06", // byte-identical
+  "ME-08", // curated (audit): Herceg Novi ≡ town (ornate blue cross emblem)
   "ME-11", // perceptual distance 0
   "ME-13", // perceptual distance 0
+  "ME-14", // curated (audit): Pljevlja ≡ town (blue field + shield)
   "ME-15", // byte-identical
   "ME-16", // byte-identical
   "ME-17", // byte-identical
   "ME-18", // byte-identical
   "ME-19", // byte-identical
   "ME-20", // perceptual distance 0
+  "MM-04", // curated (audit): Mandalay Region ≡ capital (blue field + regional seal)
+  "MM-06", // curated (audit): Bago Region ≡ capital (green/yellow/red + gear seal)
   "MU-PL", // byte-identical
+  "MX-ZAC", // curated (audit): Zacatecas state ≡ city (coat of arms on white)
   "MY-14", // byte-identical
   "NG-FC", // byte-identical
+  "NI-AN", // curated (audit): Nicaragua dept ≡ capital (shared departmental banner)
   "NI-BO", // byte-identical
   "NI-CA", // byte-identical
   "NI-CI", // byte-identical
+  "NI-CO", // curated (audit): Nicaragua dept ≡ capital (green field + emblem)
   "NI-ES", // byte-identical
+  "NI-GR", // curated (audit): Granada dept ≡ city (yellow/red + seal)
   "NI-LE", // perceptual distance 1
   "NI-MD", // byte-identical
+  "NI-MT", // curated (audit): Nicaragua dept ≡ capital (blue/white/green + seal)
+  "NI-NS", // curated (audit): Nicaragua dept ≡ capital (white field + round seal)
+  "NI-SJ", // curated (audit): Nicaragua dept ≡ capital (white field + small seal)
   "PE-AYA", // perceptual distance 0
   "PE-CUS", // byte-identical
+  "PE-HUC", // curated (audit): Huánuco dept ≡ city (white/green diagonal)
+  "PE-HUV", // curated (audit): Huancavelica dept ≡ city (light-blue field + arms)
   "PE-MDD", // byte-identical
   "PE-MOQ", // byte-identical
   "PE-TUM", // byte-identical
+  "PW-212", // curated (audit): Koror state ≡ capital (red/blue starburst + emblem)
   "SI-030", // byte-identical
   "SI-032", // byte-identical
   "SI-034", // byte-identical
@@ -84,6 +111,7 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "SV-CH", // byte-identical
   "SV-SM", // perceptual distance 0
   "SV-SV", // byte-identical
+  "SV-UN", // curated (audit): La Unión dept ≡ capital (yellow/red + emblem)
   "UY-RV", // perceptual distance 9
   "VE-X", // byte-identical
 ]);
