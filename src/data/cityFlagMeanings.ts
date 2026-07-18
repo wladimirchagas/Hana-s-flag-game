@@ -7748,6 +7748,70 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Jerusalem — capital of the Jerusalem District and of Israel ────────────
+  "IL-JM": {
+    description:
+      "Jerusalem's flag carries the city emblem (adopted 1950) between two blue bands: a shield bearing " +
+      "the Lion of Judah — the emblem of the biblical Tribe of Judah, whose kingdom had Jerusalem as its " +
+      "capital, standing for strength and leadership — set against a stylised pattern of large stones that " +
+      "represents the Western Wall (the Kotel). Flanking the shield are two olive branches, which, as on " +
+      "Israel's national emblem, stand for peace and goodwill.",
+    sources: [
+      { title: "Emblem of Jerusalem — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Jerusalem" },
+      { title: "Jerusalem (Israel) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/il-jerus.html" },
+    ],
+  },
+
+  // ── Tel Aviv — capital of the Tel Aviv District, Israel ────────────────────
+  "IL-TA": {
+    description:
+      "Tel Aviv-Yafo's emblem, created for the city's 25th anniversary in 1934 through a competition won by " +
+      "the artist Nachum Gutman, sits on a white flag between two blue bands. A lighthouse recalls the old " +
+      "port of Tel Aviv, for years the gateway through which immigrants entered the country. Seven stars " +
+      "above it echo Theodor Herzl's vision of a seven-hour working day for the future Jewish state. The " +
+      "Hebrew inscription is from the Book of Jeremiah (31:4): ‘Again I will build you, and you shall be " +
+      "built, O virgin of Israel.’",
+    sources: [
+      { title: "Emblem of Tel Aviv-Yafo — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tel_Aviv-Yafo" },
+      { title: "Tel Aviv-Yafo (Israel) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/il-tlviv.html" },
+    ],
+  },
+
+  // ── Haifa — capital of the Haifa District, Israel ──────────────────────────
+  "IL-HA": {
+    description:
+      "Haifa's arms — designed by Esther Berlin-Yo'el and adopted in 1936 — are the only Israeli municipal " +
+      "arms formally registered at the College of Arms in London (in the 1930s, under the British Mandate). " +
+      "On an azure shield they show Haifa as a port: two lighthouses marking the harbour entrance and a " +
+      "passenger ship for maritime commerce, with an olive branch of peace cutting across. The trilingual " +
+      "name (Hebrew, Arabic, English) runs beneath.",
+    sources: [
+      { title: "Haifa (Israel) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/il-haifa.html" },
+    ],
+    myths: [
+      {
+        claim: "The red shape at the top of Haifa's arms is a crown.",
+        reality:
+          "It is the silhouette of El-Burj, the old fortress that once stood on the site of the city hall and " +
+          "was demolished long ago — not a heraldic crown, though it is often taken for one.",
+      },
+    ],
+  },
+
+  // ── Beersheba — capital of the Southern District, Israel ───────────────────
+  "IL-D": {
+    description:
+      "Beersheba's emblem (adopted 1973, designed by Hezi Mor) is shown in blue on a light-blue field, the " +
+      "national colours. Its centre is an eshel — a tamarisk tree — recalling Abraham, who ‘planted a " +
+      "tamarisk tree at Beersheba’ (Genesis 21:33) and welcomed travellers in its shade; here the tamarisk " +
+      "is drawn raising bricks, for the building and development of the modern city. The emblem's twelve " +
+      "pillars and tower stand for the twelve tribes of Israel and the ingathering of the exiles who came " +
+      "to the city from across the world.",
+    sources: [
+      { title: "Be'er Sheva (Israel) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/il-bshva.html" },
+    ],
+  },
+
   // ── Nicosia — capital of the Nicosia District and of Cyprus ─────────────────
   "CY-01": {
     description:
