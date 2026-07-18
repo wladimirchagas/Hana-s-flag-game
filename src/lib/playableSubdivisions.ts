@@ -4,6 +4,7 @@ import { hasSubdivisionFlag } from "../api/subdivisions";
 import { CAPITAL_FLAGS } from "../data/capitalFlags";
 import { CAPITAL_DETAILS } from "../data/capitalDetails";
 import { SHARED_CAPITAL_FLAGS } from "../data/sharedCapitalFlags";
+import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -27,7 +28,16 @@ export function getPlayableSubdivisions(countryCode: string): SubdivisionMeta[] 
   const seen = new Set<string>();
   return meta.divisions.filter((d) => {
     if (d.code in DISPUTED_TERRITORY_HIERARCHY) return false;
-    if (!hasSubdivisionFlag(d.code) || seen.has(d.code)) return false;
+    if (seen.has(d.code)) return false;
+    // A city-territory (Kuala Lumpur, Putrajaya, Belgrade…) is a single city, so
+    // it belongs ONLY in the division set — never as a "capital of itself"
+    // question. Several have their flag only in the capital-flag table (no
+    // subdivision-flag file), so accept a capital flag as the entity's flag for
+    // them; their flag is resolved by subnationalDivisionFlag().
+    const playable = CITY_TERRITORY_CODES.has(d.code)
+      ? hasSubdivisionFlag(d.code) || CAPITAL_FLAGS[d.code] != null
+      : hasSubdivisionFlag(d.code);
+    if (!playable) return false;
     seen.add(d.code);
     return true;
   });
@@ -59,6 +69,9 @@ export function getPlayableCapitalSubdivisions(countryCode: string): Subdivision
   const seen = new Set<string>();
   return meta.divisions.filter((d) => {
     if (d.code in DISPUTED_TERRITORY_HIERARCHY) return false;
+    // A city-territory is a single city, not the "capital of" a larger unit —
+    // it is quizzed only as a division, never as a capital-city question.
+    if (CITY_TERRITORY_CODES.has(d.code)) return false;
     if (!CAPITAL_FLAGS[d.code] || !CAPITAL_DETAILS[d.code]?.name || seen.has(d.code)) {
       return false;
     }
