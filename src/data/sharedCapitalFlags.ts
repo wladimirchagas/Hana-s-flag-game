@@ -15,7 +15,6 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "AE-DU", // byte-identical
   "AE-SH", // byte-identical
   "AE-UQ", // byte-identical
-  "AU-ACT", // curated (audit): Australian Capital Territory ≡ Canberra (the ACT flag serves both)
   "AU-NF", // perceptual distance 0
   "BO-C", // byte-identical
   "BO-H", // perceptual distance 0
