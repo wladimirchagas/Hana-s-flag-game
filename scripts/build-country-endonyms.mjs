@@ -16,7 +16,48 @@ const res = await fetch(URL);
 if (!res.ok) throw new Error(`mledoze fetch failed: ${res.status}`);
 const countries = await res.json();
 
-const norm = (s) => (s || "").normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+// English-comparison key: ASCII-folded, so a name differing from the English
+// exonym only by diacritics/spacing (Việt Nam, Panamá, Türkmenistan) counts as
+// "same as English" and is omitted. A non-Latin name folds to "" and never
+// matches, so it is always kept by this test.
+const normEng = (s) => (s || "").normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+
+// Dedup key BETWEEN native names: must preserve non-Latin letters. The old key
+// (normEng) folded every non-Latin-script name to "", so any country with two
+// names in different non-Latin scripts kept only the first (alphabetically by
+// ISO 639-3 code) — dropping Hebrew ישראל for Israel, Tamil இலங்கை for
+// Sri Lanka, Chinese 新加坡 for Singapore, Tajik Тоҷикистон for Tajikistan, …
+const normDedup = (s) => (s || "").normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+
+// Curated corrections to mledoze `name.native` commons, keyed "cca2:lang3".
+// `null` omits the language's name; a string replaces it. Each entry cites its
+// authoritative basis — never invented (same discipline as every data rule).
+const NATIVE_COMMON_OVERRIDES = {
+  // Malaysia: mledoze's msa name is the JAWI-script rendering of "Malaysia".
+  // The official script of Malay is Rumi (Latin) — National Language Act
+  // 1963/67 s.9: "The script of the national language shall be the Rumi
+  // script…" — in which the country's name is "Malaysia", identical to the
+  // English exonym (ms.wikipedia.org/wiki/Malaysia). مليسيا is the same name
+  // in an alternate script, not a distinct endonym → nothing to show.
+  "MY:msa": null,
+  // Cambodia: mledoze's khm common is the romanization "Kâmpŭchéa", not the
+  // Khmer-script endonym. The Khmer name is កម្ពុជា (Kâmpŭchéa) — consistent
+  // with mledoze's own khm official ព្រះរាជាណាចក្រកម្ពុជា; en.wikipedia Cambodia.
+  "KH:khm": "កម្ពុជា",
+  // Maldives: mledoze's div common ދިވެހިރާއްޖޭގެ is a genitive fragment ("of
+  // the Maldives", truncated from the official "Republic of the Maldives"
+  // ދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ). The Dhivehi name of the country is
+  // ދިވެހިރާއްޖެ (Dhivehi Raajje) — en.wikipedia Maldives.
+  "MV:div": "ދިވެހިރާއްޖެ",
+  // Iraq: mledoze's ckb common کۆماری is a truncation meaning just "Republic
+  // [of]". The Sorani Kurdish name of Iraq is عێراق (Êraq) — the last word of
+  // mledoze's own ckb official کۆماری عێراق; en.wikipedia Iraq.
+  "IQ:ckb": "عێراق",
+  // Iraq: mledoze's arc common ܩܘܼܛܢܵܐ is a truncation meaning just "state"
+  // (from the official ܩܘܼܛܢܵܐ ܐܝܼܪܲܩ "State of Iraq") → omit rather than
+  // show a fragment as the country's name.
+  "IQ:arc": null,
+};
 
 const out = {};
 for (const c of countries) {
@@ -27,10 +68,12 @@ for (const c of countries) {
   // Collect distinct native common names that differ from the English name.
   const names = [];
   for (const lang of Object.keys(native)) {
-    const n = native[lang]?.common?.trim();
+    const key = `${cca2}:${lang}`;
+    const raw = key in NATIVE_COMMON_OVERRIDES ? NATIVE_COMMON_OVERRIDES[key] : native[lang]?.common;
+    const n = raw?.trim();
     if (!n) continue;
-    if (norm(n) === norm(english)) continue; // same as English → nothing to show
-    if (!names.some((x) => norm(x) === norm(n))) names.push(n);
+    if (normEng(n) === normEng(english)) continue; // same as English → nothing to show
+    if (!names.some((x) => normDedup(x) === normDedup(n))) names.push(n);
   }
   if (names.length) out[cca2] = names.join(" / ");
 }
