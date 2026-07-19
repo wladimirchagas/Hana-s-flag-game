@@ -67,9 +67,10 @@ const EFFECTIVELY_SHARED = new Map([
   ["NI-NS", "Nicaragua dept ≡ capital (white field + round seal)"],
   ["SV-UN", "La Unión dept ≡ capital (yellow/red + emblem)"],
   // Second audit pass (2026-07, band 100–175) — the first pass cut off at
-  // distance < 100 and missed same-flag pairs sitting just above it, e.g. the
-  // Australian Capital Territory whose flag also serves Canberra (distance 100).
-  ["AU-ACT", "Australian Capital Territory ≡ Canberra (the ACT flag serves both)"],
+  // distance < 100 and missed same-flag pairs sitting just above it.
+  // (The ACT/Canberra pair surfaced here too, but Canberra has no distinct flag
+  //  of its own — the ACT flag serves both — so the ACT is treated as a single
+  //  city-territory in cityTerritories.ts rather than a shared division+capital.)
   ["IT-LC", "Lecco province ≡ city (blue field + arms)"],
   ["IT-FG", "Foggia province ≡ city (red/blue + arms + wreath)"],
   ["VE-T", "Táchira ≡ capital (white triangle + star)"],

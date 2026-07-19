@@ -34,4 +34,7 @@ export const CITY_TERRITORY_CODES: ReadonlySet<string> = new Set([
   "MU-PL", // Port Louis — Mauritian city/district coterminous with the capital city
   "KR-11", // Seoul — South Korean Special City (single city)
   "KR-26", // Busan — South Korean Metropolitan City (single city)
+  "AU-ACT", // Australian Capital Territory — federal capital territory essentially
+            // the city of Canberra (no separate city government); Canberra has no
+            // distinct civic flag — the ACT flag serves both, like Washington DC.
 ]);
