@@ -122,6 +122,7 @@ export function SubdivisionFlagTabs({
           <SubdivisionHierarchyChart
             divisions={divisions}
             countryName={countryName}
+            countryCode={countryCode}
             countryFlagUrl={countryFlagUrl}
             selectedCode={selectedCode}
             capitalActive={capitalActive}

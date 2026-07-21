@@ -1957,6 +1957,26 @@
   background: var(--cream);
 }
 
+/* National-capital leaf under the root — a coral accent ties it to the map's
+   salmon national-capital ★. */
+.hierarchy__node--capital {
+  border-color: var(--coral);
+}
+.hierarchy__node--capital .hierarchy__tier {
+  color: var(--coral-deep);
+}
+
+/* Non-interactive leaf (a national capital that is no subdivision's capital, so
+   there is no "View capital" panel to open) — no pointer affordance/hover. */
+.hierarchy__node--static {
+  cursor: default;
+}
+.hierarchy__node--static:hover,
+.hierarchy__node--static:focus-visible {
+  transform: none;
+  box-shadow: 0 2px 0 var(--ink);
+}
+
 .hierarchy__node--active {
   background: var(--sky);
   color: var(--ink-fixed);
