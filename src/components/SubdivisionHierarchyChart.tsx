@@ -4,6 +4,7 @@ import { subdivisionCapital } from "../lib/cityRoles";
 import { capitalFlagPath } from "../lib/capitalInfo";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
+import { SHARED_CAPITAL_FLAGS } from "../data/sharedCapitalFlags";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -95,12 +96,15 @@ export function SubdivisionHierarchyChart({
     return divisions
       .filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY))
       .map((d) => {
-        // A city-territory (Canberra/ACT, Kuala Lumpur, Washington DC …) IS its
-        // own capital — the capital flag is just the subdivision's flag — so it
-        // gets no separate city leaf.
-        const capital = CITY_TERRITORY_CODES.has(d.code)
-          ? undefined
-          : subdivisionCapital(d.code);
+        // No city leaf where the capital has no DISTINCT flag: a city-territory
+        // (Canberra/ACT, Kuala Lumpur, Washington DC …) IS its own capital, and
+        // a shared-flag capital (Brasília ≡ Distrito Federal, Zürich city ≡
+        // canton) flies the same image as its subdivision. Both would just repeat
+        // the subdivision's flag. (Still accept-both in the game.)
+        const capital =
+          CITY_TERRITORY_CODES.has(d.code) || SHARED_CAPITAL_FLAGS.has(d.code)
+            ? undefined
+            : subdivisionCapital(d.code);
         return {
           div: d,
           subFlag: subdivisionFlagUrl(d.code),
