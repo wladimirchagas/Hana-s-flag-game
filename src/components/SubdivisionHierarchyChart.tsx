@@ -5,6 +5,7 @@ import { capitalFlagPath } from "../lib/capitalInfo";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
 import { SHARED_CAPITAL_FLAGS } from "../data/sharedCapitalFlags";
+import { normalizeForSearch } from "../lib/searchNormalize";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -96,23 +97,33 @@ export function SubdivisionHierarchyChart({
     return divisions
       .filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY))
       .map((d) => {
-        // No city leaf where the capital has no DISTINCT flag: a city-territory
-        // (Canberra/ACT, Kuala Lumpur, Washington DC …) IS its own capital, and
-        // a shared-flag capital (Brasília ≡ Distrito Federal, Zürich city ≡
-        // canton) flies the same image as its subdivision. Both would just repeat
-        // the subdivision's flag. (Still accept-both in the game.)
-        const capital =
-          CITY_TERRITORY_CODES.has(d.code) || SHARED_CAPITAL_FLAGS.has(d.code)
-            ? undefined
-            : subdivisionCapital(d.code);
+        const capital = subdivisionCapital(d.code);
+        // The capital's flag is the same image as the subdivision's own flag (a
+        // city-territory whose flag also serves its capital, or a shared
+        // coat-of-arms: Canberra ≡ ACT, Brasília ≡ Distrito Federal, Zürich city
+        // ≡ canton). In that case the capital has NO distinct flag of its own.
+        const flagDuplicatesDivision =
+          CITY_TERRITORY_CODES.has(d.code) || SHARED_CAPITAL_FLAGS.has(d.code);
+        const distinctFlag =
+          capital && !flagDuplicatesDivision
+            ? capitalFlagPath(d.code, capital.name)
+            : null;
+        // Same name as its subdivision (São Paulo state → São Paulo city; Kuala
+        // Lumpur → Kuala Lumpur).
+        const sameName =
+          capital != null &&
+          normalizeForSearch(capital.name) === normalizeForSearch(d.name);
+        // Show the capital as a leaf when it has a DISTINCT flag (São Paulo city's
+        // red-cross flag), OR it is a distinctly-named place (Canberra, Brasília,
+        // Victoria) — even without a flag, shown with a "—" placeholder rather
+        // than repeating the subdivision's flag. Suppress it only when it is
+        // tautological AND has no distinct flag: the subdivision IS that one city
+        // (Kuala Lumpur, Putrajaya, Foggia, Zürich).
+        const showCity = capital != null && (distinctFlag != null || !sameName);
         return {
           div: d,
           subFlag: subdivisionFlagUrl(d.code),
-          // Every (non-city-territory) subdivision with a known capital gets a
-          // city leaf; the flag is shown when one is bundled, else a placeholder.
-          city: capital
-            ? { name: capital.name, flagPath: capitalFlagPath(d.code, capital.name) }
-            : null,
+          city: showCity ? { name: capital!.name, flagPath: distinctFlag } : null,
         };
       })
       .sort((a, b) => a.div.name.localeCompare(b.div.name, "en"));
