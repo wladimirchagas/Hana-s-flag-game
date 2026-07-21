@@ -7748,6 +7748,112 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Podgorica — the capital city of Montenegro ─────────────────────────────
+  "ME-16": {
+    description:
+      "Podgorica's flag bears, in blue on white, the stylised ‘broken line’ from the city arms — a single " +
+      "continuous emblem that fuses the capital's landmarks: Nemanja's town (the Ribnica fortress), the " +
+      "clock tower, the Gorica-hill monument, and the city's gates and bridges. In the full arms a silver " +
+      "shield stands for the city's wealth of water (six rivers and Lake Skadar, the largest lake in " +
+      "Southern Europe), two blue stripes for the ancient settlements of Doclea and Meteon, and two silver " +
+      "lions — from the old arms of Božidar Vuković-Podgoričanin — support the shield.",
+    sources: [
+      { title: "Coat of arms of Podgorica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Podgorica" },
+    ],
+  },
+
+  // ── Bar — capital of Bar Municipality, Montenegro ──────────────────────────
+  "ME-02": {
+    description:
+      "Bar's flag carries the colours of its arms: a blue ground for the Adriatic Sea and Lake Skadar, " +
+      "between which the municipality lies; two gold stripes for the settlements of the two basins — " +
+      "Crmnica in the Skadar basin and the settlements of the Adriatic coast; and a central green stripe " +
+      "for the mountain massif that separates the two basins.",
+    sources: [
+      { title: "Грб Бара — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Бара" },
+    ],
+  },
+
+  // ── Berane — capital of Berane Municipality, Montenegro ────────────────────
+  "ME-03": {
+    description:
+      "Berane's arms show, on white, the silhouette of the Đurđevi Stupovi monastery — the endowment of " +
+      "Stefan Prvoslav and the spiritual and cultural centre of this part of Montenegro — with the " +
+      "mountains Bjelasica and Cmiljevica behind it; below, on blue, two wavy lines stand for the river " +
+      "Lim, in whose basin the whole municipality lies.",
+    sources: [
+      { title: "Грб Берана — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Берана" },
+    ],
+  },
+
+  // ── Danilovgrad — capital of Danilovgrad Municipality, Montenegro ──────────
+  "ME-07": {
+    description:
+      "Danilovgrad's arms gather the town's landmarks: the silhouette of Mount Maganik above the blue arch " +
+      "of the Bridge of Vojvoda Mirko, over wavy lines for the river Zeta that runs through the town.",
+    sources: [
+      { title: "Грб Даниловграда — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Даниловграда" },
+    ],
+  },
+
+  // ── Mojkovac — capital of Mojkovac Municipality, Montenegro ────────────────
+  "ME-11": {
+    description:
+      "Mojkovac's arms recall its history: a coin bearing mining symbols for the medieval mining and mint " +
+      "town of Brskovo nearby; the river Tara between the mountains Sinjajevina and Bjelasica; and, above " +
+      "the town's name, the monument to the fallen of the Battle of Mojkovac (1916).",
+    sources: [
+      { title: "Грб Мојковца — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Мојковца" },
+    ],
+  },
+
+  // ── Plav — capital of Plav Municipality, Montenegro ────────────────────────
+  "ME-13": {
+    description:
+      "Plav's arms bring together the town's emblems: the historic Redžepagić Tower and an evergreen tree " +
+      "beneath three mountain peaks, the meadows of the Plav basin, and, below, wavy lines for Plav Lake; " +
+      "the Roman numeral XIII marks the 13th century, when the settlement arose.",
+    sources: [
+      { title: "Грб Плава — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Плава" },
+    ],
+  },
+
+  // ── Pljevlja — capital of Pljevlja Municipality, Montenegro ────────────────
+  "ME-14": {
+    description:
+      "Pljevlja's arms, in white on blue, show the town's clock tower (sahat-kula) with the town hall " +
+      "behind it and an arched bridge over the Tara — the crossing that links Pljevlja to the rest of " +
+      "Montenegro; three lines at the base stand for the three rivers that run through the town (Breznica, " +
+      "Ćehotina and Vezišnica), and the blue with the white-and-red border alludes to the pan-Slavic " +
+      "makeup of the population.",
+    sources: [
+      { title: "Грб Пљеваља — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Пљеваља" },
+    ],
+  },
+
+  // ── Plužine — capital of Plužine Municipality, Montenegro ──────────────────
+  "ME-15": {
+    description:
+      "Plužine's arms show, on the dividing line, the white silhouette of Piva Monastery — one of the most " +
+      "renowned monasteries of the Serbian Orthodox Church — above a lower field that stylises the rivers " +
+      "Piva and Tara with their canyons, Piva Lake, and the hydro-electric dam that formed the lake.",
+    sources: [
+      { title: "Грб Плужина — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Плужина" },
+    ],
+  },
+
+  // ── Rožaje — capital of Rožaje Municipality, Montenegro ────────────────────
+  "ME-17": {
+    description:
+      "Rožaje's arms, adopted in 2011, carry meanings set out in the town statute: the Ganića Tower for the " +
+      "town's cultural heritage; two deer antlers for the region's wildlife; green for the natural riches " +
+      "of Rožaje; the river Ibar; a sun for light and enlightenment; and a pair of hands for the youth and " +
+      "future of the town.",
+    sources: [
+      { title: "Грб Рожаја — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Рожаја" },
+    ],
+  },
+
   // ── Herceg Novi — capital of Herceg Novi Municipality, Montenegro ──────────
   "ME-08": {
     description:
