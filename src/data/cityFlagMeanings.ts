@@ -7748,6 +7748,32 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Herceg Novi — capital of Herceg Novi Municipality, Montenegro ──────────
+  "ME-08": {
+    description:
+      "Herceg Novi's arms centre on a blue shield bearing a silver stone tower — battlemented, with a " +
+      "window and a doorway — set between two silver lilies (fleurs-de-lis); above sits a golden mural " +
+      "crown of three merlons, and gold griffins support the shield. The tower carries forward the town's " +
+      "seal of 1883; the two lilies are a heraldic stand-in for Herceg Novi's cypress trees and, in " +
+      "heraldry, signify richness of vegetation; and the griffins stand for strength, leadership and " +
+      "courage, their gold marking the town's cultural heritage.",
+    sources: [
+      { title: "Грб Херцег Новог — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Херцег_Новог" },
+      { title: "Symbols — hercegnovi.me (official)", url: "https://hercegnovi.me/en/o-gradu/symengmeni" },
+    ],
+  },
+
+  // ── Bijelo Polje — capital of Bijelo Polje Municipality, Montenegro ────────
+  "ME-04": {
+    description:
+      "Bijelo Polje's arms are a red shield within a blue frame. At the centre a white open book carries a " +
+      "white rising sun; below the book, three white wavy lines stand for the river Lim and its " +
+      "tributaries, which flow through the town.",
+    sources: [
+      { title: "Грб Бијелог Поља — Википедија (sr)", url: "https://sr.wikipedia.org/wiki/Грб_Бијелог_Поља" },
+    ],
+  },
+
   // ── Kotor — capital of Kotor Municipality, Montenegro ──────────────────────
   "ME-10": {
     description:
