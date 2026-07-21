@@ -1957,13 +1957,16 @@
   background: var(--cream);
 }
 
-/* National-capital leaf under the root — a coral accent ties it to the map's
-   salmon national-capital ★. */
+/* An entity that is (or heads) the national capital — a coral accent + role
+   badge ties it to the map's salmon national-capital ★. Applied in place on the
+   subdivision node / city leaf that already represents the capital (never a
+   duplicate), and on a standalone node for a capital that heads no subdivision. */
 .hierarchy__node--capital {
   border-color: var(--coral);
 }
-.hierarchy__node--capital .hierarchy__tier {
+.hierarchy__tier--capital {
   color: var(--coral-deep);
+  white-space: nowrap;
 }
 
 /* Non-interactive leaf (a national capital that is no subdivision's capital, so

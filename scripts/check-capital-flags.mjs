@@ -22,7 +22,7 @@
 // `--report` before changing the threshold.
 
 import sharp from "sharp";
-import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -73,13 +73,21 @@ function nationalFlagPath(cc) {
 }
 
 function bundledCapitalFlags() {
-  // code from filename; keep in sync with capitalFlags.ts (which lists the same set)
+  // code from filename; keep in sync with capitalFlags.ts (which lists the same
+  // set). Recurses so subdivision-keyed flags in the top dir AND the national-
+  // capital flags under national/ (e.g. national/nl-amsterdam.svg → cc "NL") are
+  // BOTH collision-checked against their country's national flag.
   if (!existsSync(CAP_DIR)) return [];
   const out = [];
-  for (const f of readdirSync(CAP_DIR)) {
-    if (!/\.(svg|png|jpe?g|gif)$/i.test(f)) continue;
-    out.push({ code: f.replace(/\.[^.]+$/, "").toUpperCase(), file: join(CAP_DIR, f) });
-  }
+  const scan = (dir) => {
+    for (const f of readdirSync(dir)) {
+      const p = join(dir, f);
+      if (statSync(p).isDirectory()) { scan(p); continue; }
+      if (!/\.(svg|png|jpe?g|gif)$/i.test(f)) continue;
+      out.push({ code: f.replace(/\.[^.]+$/, "").toUpperCase(), file: p });
+    }
+  };
+  scan(CAP_DIR);
   return out;
 }
 
