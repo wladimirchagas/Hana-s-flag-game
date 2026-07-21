@@ -1,10 +1,8 @@
 import { useMemo } from "react";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import { subdivisionCapital } from "../lib/cityRoles";
-import { capitalFlagPath } from "../lib/capitalInfo";
+import { distinctCapitalFlagPath } from "../lib/capitalInfo";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
-import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
-import { SHARED_CAPITAL_FLAGS } from "../data/sharedCapitalFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
 import type { SubdivisionMeta } from "../types/subdivision";
 
@@ -98,16 +96,13 @@ export function SubdivisionHierarchyChart({
       .filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY))
       .map((d) => {
         const capital = subdivisionCapital(d.code);
-        // The capital's flag is the same image as the subdivision's own flag (a
-        // city-territory whose flag also serves its capital, or a shared
-        // coat-of-arms: Canberra ≡ ACT, Brasília ≡ Distrito Federal, Zürich city
-        // ≡ canton). In that case the capital has NO distinct flag of its own.
-        const flagDuplicatesDivision =
-          CITY_TERRITORY_CODES.has(d.code) || SHARED_CAPITAL_FLAGS.has(d.code);
-        const distinctFlag =
-          capital && !flagDuplicatesDivision
-            ? capitalFlagPath(d.code, capital.name)
-            : null;
+        // The capital's DISTINCT flag (null when it merely duplicates the
+        // subdivision's own flag — a city-territory like Canberra ≡ ACT, or a
+        // shared coat-of-arms like Brasília ≡ Distrito Federal). Single source of
+        // truth shared with the capital panel and the City-flags grid.
+        const distinctFlag = capital
+          ? distinctCapitalFlagPath(d.code, capital.name)
+          : null;
         // Same name as its subdivision (São Paulo state → São Paulo city; Kuala
         // Lumpur → Kuala Lumpur).
         const sameName =

@@ -1,9 +1,7 @@
 import { subdivisionCapital } from "./cityRoles";
-import { capitalFlagPath } from "./capitalInfo";
+import { distinctCapitalFlagPath } from "./capitalInfo";
 import { SUBDIVISION_META } from "./subdivisionMeta";
 import { DISPUTED_TERRITORY_HIERARCHY } from "./disputedSubdivisions";
-import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
-import { SHARED_CAPITAL_FLAGS } from "../data/sharedCapitalFlags";
 
 /**
  * City-flag entries for a country's Learn-mode drill-down.
@@ -38,17 +36,14 @@ export function countryCityFlags(countryCode: string): CityFlagEntry[] {
   const out: CityFlagEntry[] = [];
   for (const d of meta.divisions) {
     if (d.code in DISPUTED_TERRITORY_HIERARCHY) continue;
-    // Skip capitals with no DISTINCT city flag — the "City flags" set is only
-    // for flags that differ from the subdivision's own flag:
-    //  - a city-territory (Canberra/ACT, Kuala Lumpur, Washington DC …) IS its
-    //    own capital, so the capital flag is just the subdivision flag; and
-    //  - a shared-flag capital (Brasília, whose flag is the Distrito Federal's;
-    //    Zürich city ≡ canton) flies the same image as its subdivision.
-    // (These stay accept-both in the GAME; they just aren't distinct city flags.)
-    if (CITY_TERRITORY_CODES.has(d.code) || SHARED_CAPITAL_FLAGS.has(d.code)) continue;
     const capital = subdivisionCapital(d.code);
     if (!capital) continue;
-    const flagPath = capitalFlagPath(d.code, capital.name);
+    // The "City flags" set is only DISTINCT capital flags — those that differ from
+    // the subdivision's own flag. `distinctCapitalFlagPath` returns null for a
+    // city-territory (Canberra/ACT, Kuala Lumpur) or a shared-flag capital
+    // (Brasília ≡ Distrito Federal), so they are skipped here exactly as the
+    // capital panel and hierarchy chart omit their flags. Single source of truth.
+    const flagPath = distinctCapitalFlagPath(d.code, capital.name);
     if (!flagPath) continue;
     out.push({
       code: d.code,

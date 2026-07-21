@@ -1,5 +1,7 @@
 import { CAPITAL_DETAILS, type CapitalDetail } from "../data/capitalDetails";
 import { CAPITAL_FLAGS } from "../data/capitalFlags";
+import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
+import { SHARED_CAPITAL_FLAGS } from "../data/sharedCapitalFlags";
 
 /**
  * Capital-city detail lookups for the Learn-mode "View capital" drill-down.
@@ -59,6 +61,35 @@ export function capitalFlagPath(code: string, displayedName: string): string | n
   // can't confirm that capital matches the displayed one, don't show it.
   if (!d || !sameCity(d.name, displayedName)) return null;
   return f;
+}
+
+/**
+ * True when a capital's flag is the SAME image as its subdivision's OWN flag, so
+ * the capital has NO distinct flag of its own — either a city-territory whose one
+ * flag serves both (Canberra ≡ ACT, Kuala Lumpur, Washington DC), or a region and
+ * its capital that share a coat-of-arms flag (Brasília ≡ Distrito Federal, Zürich
+ * city ≡ canton). This is the SINGLE definition every surface consults so they
+ * can never disagree about whether a capital flag is worth showing.
+ */
+export function capitalFlagDuplicatesSubdivision(code: string): boolean {
+  return CITY_TERRITORY_CODES.has(code) || SHARED_CAPITAL_FLAGS.has(code);
+}
+
+/**
+ * BASE-relative path to a capital's DISTINCT flag — its own municipal flag — or
+ * null when the capital has none (no bundled flag, a name mismatch, OR the flag
+ * merely duplicates the subdivision's flag per `capitalFlagDuplicatesSubdivision`).
+ *
+ * This is the ONE helper every capital-flag surface must use so the treatment is
+ * holistic, never punctual: the Learn "View capital" panel (`CapitalDetails`), the
+ * hierarchy chart, and the "City flags" grid all show a capital flag ONLY when
+ * this returns a path, exactly as the Flag Master game quizzes distinct-flag
+ * capitals only. A capital whose flag duplicates its subdivision is shown WITHOUT
+ * a flag (its subdivision already carries that image), matching the chart's "—".
+ */
+export function distinctCapitalFlagPath(code: string, displayedName: string): string | null {
+  if (capitalFlagDuplicatesSubdivision(code)) return null;
+  return capitalFlagPath(code, displayedName);
 }
 
 /**

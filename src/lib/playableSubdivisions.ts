@@ -5,6 +5,7 @@ import { CAPITAL_FLAGS } from "../data/capitalFlags";
 import { CAPITAL_DETAILS } from "../data/capitalDetails";
 import { SHARED_CAPITAL_FLAGS } from "../data/sharedCapitalFlags";
 import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
+import { capitalFlagDuplicatesSubdivision } from "./capitalInfo";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -81,7 +82,8 @@ export function getPlayableCapitalSubdivisions(countryCode: string): Subdivision
     // No distinct capital flag → never a capital-city question. A city-territory
     // is a single city (quizzed only as a division), and a shared-flag capital
     // flies the same image as its subdivision (also quizzed only as a division).
-    if (CITY_TERRITORY_CODES.has(d.code) || SHARED_CAPITAL_FLAGS.has(d.code)) return false;
+    // Same predicate the capital panel / chart / grid use, so all four agree.
+    if (capitalFlagDuplicatesSubdivision(d.code)) return false;
     if (!CAPITAL_FLAGS[d.code] || !CAPITAL_DETAILS[d.code]?.name || seen.has(d.code)) {
       return false;
     }

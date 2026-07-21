@@ -1,4 +1,4 @@
-import { capitalDetail, capitalFlagPath } from "../lib/capitalInfo";
+import { capitalDetail, distinctCapitalFlagPath } from "../lib/capitalInfo";
 import { CAPITAL_ENDONYMS } from "../data/capitalEndonyms";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { formatPopulation } from "../lib/formatPopulation";
@@ -52,7 +52,12 @@ export function CapitalDetails({
   onEnlarge: (url: string) => void;
 }) {
   const detail = capitalDetail(code, capitalName);
-  const flagRel = capitalFlagPath(code, capitalName);
+  // Show the capital's flag ONLY when it is DISTINCT from the subdivision's own
+  // flag. A city-territory (Kuala Lumpur, Canberra ≡ ACT) or a shared coat-of-arms
+  // capital (Brasília ≡ Distrito Federal) flies the same image as its subdivision,
+  // which the panel above already shows — repeating it here is the duplication the
+  // hierarchy chart avoids with a "—". So those render with no flag box.
+  const flagRel = distinctCapitalFlagPath(code, capitalName);
   const flagUrl = flagRel ? `${baseUrl}${flagRel}` : null;
 
   // Prefer the live national figure (kept current by the country widget); fall
