@@ -7930,6 +7930,21 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Radoviš — capital of Radoviš Municipality, North Macedonia ─────────────
+  "MK-64": {
+    description:
+      "Radoviš's arms are silver bearing the ‘Radoviš cross’ — a rare cross form found on the town's Church " +
+      "of St Elias and taken as its distinctive emblem — within a red municipal border and beneath a golden " +
+      "mural crown that marks the town's city status (the greater arms add a wreath of green mulberry " +
+      "leaves). The red and white are the commonest colours of Macedonian folk costume, read as blood shed " +
+      "for freedom and hope for a brighter future, and also acknowledge the Turkish community, the " +
+      "municipality's largest minority.",
+    sources: [
+      { title: "Општински симболи — radovis.gov.mk (official)", url: "https://radovis.gov.mk/општински-симболи" },
+      { title: "Macedonian Heraldic Society — heraldika.org.mk", url: "https://heraldika.org.mk/en/registar/" },
+    ],
+  },
+
   // ── Ohrid — capital of Ohrid Municipality, North Macedonia ─────────────────
   "MK-58": {
     description:
