@@ -4,15 +4,28 @@ import { subdivisionCapital } from "../lib/cityRoles";
 import { distinctCapitalFlagPath } from "../lib/capitalInfo";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 import { normalizeForSearch } from "../lib/searchNormalize";
+import { NATIONAL_CITIES } from "../data/cities";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
  * "Hierarchy chart" tab — an interactive org chart of a country's structure:
  *
  *   nation (root)
+ *     ├─ National capital(s) — the nation's own capital city/cities
  *     └─ each subdivision TYPE (States, Federal Territory, Autonomous Region, …)
  *          └─ every subdivision of that type
  *               └─ that subdivision's capital city, when one is known
+ *
+ * The national capital(s) hang off the root as a dedicated "National capital"
+ * group, sourced from NATIONAL_CITIES exactly like the map overlay's national
+ * ★ (`subdivisionCityMarkers` always adds them) — so the nation's capital is
+ * ALWAYS represented, even the cases the per-subdivision leaves miss: a
+ * city-territory whose leaf is suppressed as tautological (Kuala Lumpur,
+ * Putrajaya), a capital that is no subdivision's capital (Belize → Belmopan),
+ * and the secondary seat of a multi-capital nation. A national capital that IS
+ * also a subdivision's capital is HOISTED here (shown once, under the nation —
+ * its primary role) and not repeated as that subdivision's own city leaf,
+ * mirroring the map's single dual-role marker.
  *
  * The subdivisions are grouped by their `typeLabel`, and each type appears as its
  * own label node laddering up to the national flag, with its subdivision flags
@@ -69,6 +82,8 @@ function pluralizeType(label: string): string {
 type Props = {
   divisions: SubdivisionMeta[];
   countryName: string;
+  /** ISO 3166-1 alpha-2 of the country — used to source its national capital(s). */
+  countryCode: string;
   countryFlagUrl: string | null;
   /** Selected subdivision code (if any). */
   selectedCode: string | null;
@@ -83,6 +98,7 @@ type Props = {
 export function SubdivisionHierarchyChart({
   divisions,
   countryName,
+  countryCode,
   countryFlagUrl,
   selectedCode,
   capitalActive,
@@ -91,9 +107,29 @@ export function SubdivisionHierarchyChart({
   onSelectSubdivision,
   onSelectCapital,
 }: Props) {
-  const nodes = useMemo(() => {
-    return divisions
-      .filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY))
+  const { nodes, nationalCapitalLeaves } = useMemo(() => {
+    const visibleDivs = divisions.filter(
+      (d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY),
+    );
+
+    // National capital(s) for this country, from the SAME source as the map ★
+    // (NATIONAL_CITIES). Map each (by normalised name) to the subdivision it is
+    // the capital of, so its leaf can drive the SAME "View capital" panel + flag
+    // as that subdivision. A national capital that is no subdivision's capital
+    // (e.g. Belize's Belmopan) has no owning code and renders as a name-only leaf.
+    const nationalCaps = NATIONAL_CITIES[countryCode]?.capitals ?? [];
+    const owningCodeByCapName = new Map<string, string>();
+    for (const d of visibleDivs) {
+      const cap = subdivisionCapital(d.code);
+      if (!cap) continue;
+      const k = normalizeForSearch(cap.name);
+      if (!owningCodeByCapName.has(k)) owningCodeByCapName.set(k, d.code);
+    }
+    const nationalCapNames = new Set(
+      nationalCaps.map((c) => normalizeForSearch(c.name)),
+    );
+
+    const nodes = visibleDivs
       .map((d) => {
         const capital = subdivisionCapital(d.code);
         // The capital's DISTINCT flag (null when it merely duplicates the
@@ -108,13 +144,23 @@ export function SubdivisionHierarchyChart({
         const sameName =
           capital != null &&
           normalizeForSearch(capital.name) === normalizeForSearch(d.name);
+        // Hoist a capital that is ALSO the national capital up to the dedicated
+        // "National capital" node under the root, so it shows once (its primary
+        // role) and is never duplicated under its own subdivision.
+        const isNationalCapital =
+          capital != null &&
+          nationalCapNames.has(normalizeForSearch(capital.name));
         // Show the capital as a leaf when it has a DISTINCT flag (São Paulo city's
         // red-cross flag), OR it is a distinctly-named place (Canberra, Brasília,
         // Victoria) — even without a flag, shown with a "—" placeholder rather
         // than repeating the subdivision's flag. Suppress it only when it is
         // tautological AND has no distinct flag: the subdivision IS that one city
-        // (Kuala Lumpur, Putrajaya, Foggia, Zürich).
-        const showCity = capital != null && (distinctFlag != null || !sameName);
+        // (Kuala Lumpur, Putrajaya, Foggia, Zürich); or when it has been hoisted
+        // to the national-capital group above.
+        const showCity =
+          capital != null &&
+          !isNationalCapital &&
+          (distinctFlag != null || !sameName);
         return {
           div: d,
           subFlag: subdivisionFlagUrl(d.code),
@@ -122,7 +168,21 @@ export function SubdivisionHierarchyChart({
         };
       })
       .sort((a, b) => a.div.name.localeCompare(b.div.name, "en"));
-  }, [divisions]);
+
+    const nationalCapitalLeaves = nationalCaps.map((cap) => {
+      const code = owningCodeByCapName.get(normalizeForSearch(cap.name)) ?? null;
+      return {
+        name: cap.name,
+        // Sourced role note for a multi-capital nation (e.g. "Constitutional
+        // capital" / "Administrative capital"), shown as the node's tier label.
+        note: cap.note ?? null,
+        code,
+        flagPath: code ? distinctCapitalFlagPath(code, cap.name) : null,
+      };
+    });
+
+    return { nodes, nationalCapitalLeaves };
+  }, [divisions, countryCode]);
 
   // Group the subdivisions by type, ordered by the same tier rule as the grid.
   const groups = useMemo(() => {
@@ -187,6 +247,72 @@ export function SubdivisionHierarchyChart({
         </div>
 
         <div className="hierarchy__branches">
+          {nationalCapitalLeaves.length > 0 && (
+            <div className="hierarchy__group" role="group" aria-label="National capital">
+              <div className="hierarchy__group-label">
+                <span className="hierarchy__group-type">National capital</span>
+                {nationalCapitalLeaves.length > 1 && (
+                  <span className="hierarchy__group-count">{nationalCapitalLeaves.length}</span>
+                )}
+              </div>
+
+              <div className="hierarchy__subrow">
+                {nationalCapitalLeaves.map((cap) => {
+                  const active = capitalActive && cap.code != null && cap.code === selectedCode;
+                  const thumb = (
+                    <span className="hierarchy__thumb">
+                      {cap.flagPath ? (
+                        <img
+                          src={`${baseUrl}${cap.flagPath}`}
+                          alt=""
+                          loading="lazy"
+                          draggable={false}
+                          className="hierarchy__thumb-img"
+                          onError={(e) => { e.currentTarget.style.display = "none"; }}
+                        />
+                      ) : (
+                        <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
+                      )}
+                    </span>
+                  );
+                  const body = (
+                    <>
+                      {thumb}
+                      <span className="hierarchy__name" title={cap.name}>{cap.name}</span>
+                      {cap.note && <span className="hierarchy__tier">{cap.note}</span>}
+                    </>
+                  );
+                  return (
+                    <div key={cap.name} className="hierarchy__col">
+                      {cap.code != null ? (
+                        // Selectable: its "View capital" panel is that of the
+                        // subdivision the national capital heads.
+                        <button
+                          type="button"
+                          className={`hierarchy__node hierarchy__node--capital${active ? " hierarchy__node--active" : ""}`}
+                          onClick={() => onSelectCapital(cap.code!)}
+                          aria-pressed={active}
+                          aria-label={`Select ${cap.name}, national capital of ${countryName}`}
+                        >
+                          {body}
+                        </button>
+                      ) : (
+                        // Not any subdivision's capital (e.g. Belmopan): shown as a
+                        // non-interactive informational leaf — its name is all that
+                        // is sourced without a subdivision-keyed capital record.
+                        <div
+                          className="hierarchy__node hierarchy__node--capital hierarchy__node--static"
+                          aria-label={`${cap.name}, national capital of ${countryName}`}
+                        >
+                          {body}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
           {groups.map((g) => (
             <div key={g.typeLabel} className="hierarchy__group" role="group" aria-label={pluralizeType(g.typeLabel)}>
               <div className="hierarchy__group-label">
