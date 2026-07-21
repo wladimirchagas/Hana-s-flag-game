@@ -2,6 +2,7 @@ import { subdivisionCapital } from "./cityRoles";
 import { capitalFlagPath } from "./capitalInfo";
 import { SUBDIVISION_META } from "./subdivisionMeta";
 import { DISPUTED_TERRITORY_HIERARCHY } from "./disputedSubdivisions";
+import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
 
 /**
  * City-flag entries for a country's Learn-mode drill-down.
@@ -36,6 +37,10 @@ export function countryCityFlags(countryCode: string): CityFlagEntry[] {
   const out: CityFlagEntry[] = [];
   for (const d of meta.divisions) {
     if (d.code in DISPUTED_TERRITORY_HIERARCHY) continue;
+    // A city-territory (Canberra/ACT, Kuala Lumpur, Washington DC …) IS its own
+    // capital: the "capital flag" is just the subdivision's flag, so it has no
+    // distinct city flag and never gets a separate city entry.
+    if (CITY_TERRITORY_CODES.has(d.code)) continue;
     const capital = subdivisionCapital(d.code);
     if (!capital) continue;
     const flagPath = capitalFlagPath(d.code, capital.name);

@@ -3,6 +3,7 @@ import { subdivisionFlagUrl } from "../api/subdivisions";
 import { subdivisionCapital } from "../lib/cityRoles";
 import { capitalFlagPath } from "../lib/capitalInfo";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
+import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -94,12 +95,17 @@ export function SubdivisionHierarchyChart({
     return divisions
       .filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY))
       .map((d) => {
-        const capital = subdivisionCapital(d.code);
+        // A city-territory (Canberra/ACT, Kuala Lumpur, Washington DC …) IS its
+        // own capital — the capital flag is just the subdivision's flag — so it
+        // gets no separate city leaf.
+        const capital = CITY_TERRITORY_CODES.has(d.code)
+          ? undefined
+          : subdivisionCapital(d.code);
         return {
           div: d,
           subFlag: subdivisionFlagUrl(d.code),
-          // Every subdivision with a known capital gets a city leaf; the flag is
-          // shown when one is bundled, otherwise a placeholder.
+          // Every (non-city-territory) subdivision with a known capital gets a
+          // city leaf; the flag is shown when one is bundled, else a placeholder.
           city: capital
             ? { name: capital.name, flagPath: capitalFlagPath(d.code, capital.name) }
             : null,
