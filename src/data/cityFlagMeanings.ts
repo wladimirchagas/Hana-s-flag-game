@@ -7930,6 +7930,54 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Ohrid — capital of Ohrid Municipality, North Macedonia ─────────────────
+  "MK-58": {
+    description:
+      "Ohrid's arms are dominated by the walls of Samuel's Fortress (Samoilova tvrdina), the medieval " +
+      "stronghold above the town that is a defining part of Ohrid's — and Macedonia's — cultural heritage, " +
+      "set over the waters of Lake Ohrid. The arms date from the 1950s and were registered as an official " +
+      "municipal symbol in 1967, a rarity for a Macedonian municipality.",
+    sources: [
+      { title: "Грб на Општина Охрид — Википедија (mk)", url: "https://mk.wikipedia.org/wiki/Грб_на_Општина_Охрид" },
+      { title: "Грб и знаме — ohrid.gov.mk (official)", url: "https://ohrid.gov.mk/грб-и-знаме/" },
+    ],
+  },
+
+  // ── Bitola — capital of Bitola Municipality, North Macedonia ───────────────
+  "MK-04": {
+    description:
+      "Bitola's arms (adopted 2006) draw on the city's ancient and natural setting: the classical city of " +
+      "Heraclea Lyncestis nearby — evoked by the meander (Greek-key) pattern and by the rounded lower part " +
+      "of the shield, which recalls Heraclea's white amphitheatre — and a red-and-gold field standing for " +
+      "the sunlit peaks of the Pelister molika pines and the golden grain of the Pelagonia plain. Its " +
+      "colours are read as blue for civil society and democracy, red for life and tradition, gold for " +
+      "spiritual wealth, and white for moral purity.",
+    sources: [
+      { title: "Грб на Општина Битола — Википедија (mk)", url: "https://mk.wikipedia.org/wiki/Грб_на_Општина_Битола" },
+    ],
+  },
+
+  // ── Štip — capital of Štip Municipality, North Macedonia ───────────────────
+  "MK-83": {
+    description:
+      "Štip's arms are a shield showing the Isar Fortress, the old citadel on the hill above the town; the " +
+      "modern name ‘Штип’ (Štip) runs along the top and the town's ancient name ‘Astibo’ along the bottom.",
+    sources: [
+      { title: "Грб на Општина Штип — Википедија (mk)", url: "https://mk.wikipedia.org/wiki/Грб_на_Општина_Штип" },
+    ],
+  },
+
+  // ── Strumica — capital of Strumica Municipality, North Macedonia ───────────
+  "MK-73": {
+    description:
+      "Strumica's arms are a gold-and-blue shield of four fields: a golden cross for the 6th-century " +
+      "monastery of St Leontius at nearby Vodoča; a sun; the Tsar's Towers (Carevi Kuli) — the fortress on " +
+      "the hill above Strumica — beneath three stars; and a carnival mask for the famous Strumica Carnival.",
+    sources: [
+      { title: "Грб на Општина Струмица — Википедија (mk)", url: "https://mk.wikipedia.org/wiki/Грб_на_Општина_Струмица" },
+    ],
+  },
+
   // ── Amman — capital of the Amman Governorate and of Jordan ─────────────────
   "JO-AM": {
     description:
