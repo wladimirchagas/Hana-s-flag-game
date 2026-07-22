@@ -30,6 +30,10 @@ import { EntitySummary } from "../components/EntitySummary";
 import { FlagMeaning } from "../components/FlagMeaning";
 import { worldCityMarkers, subdivisionCityMarkers, subdivisionCapital } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
+import { NATIONAL_CAPITAL_DETAILS } from "../data/nationalCapitalDetails";
+import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
+import { formatPopulation } from "../lib/formatPopulation";
+import { normalizeForSearch } from "../lib/searchNormalize";
 import { CapitalDetails } from "../components/CapitalDetails";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
@@ -1629,6 +1633,26 @@ export default function LearnPage() {
           {selectedCapital && (() => {
             const cap = selectedCapital;
             const flagUrl = cap.flagPath ? `${baseUrl}${cap.flagPath}` : null;
+            // Sourced, dated city-proper population (same discipline as the
+            // subdivision "View capital" panel), where one is bundled.
+            const detail = NATIONAL_CAPITAL_DETAILS[`${subdivisionCountry.code}|${normalizeForSearch(cap.name)}`];
+            const countryObj = codeToCountry.get(subdivisionCountry.code);
+            const denominator =
+              countryObj?.population && countryObj.population > 0
+                ? countryObj.population
+                : NATIONAL_REFERENCE_POPULATION[subdivisionCountry.code];
+            const share =
+              detail && denominator && denominator > 0
+                ? (() => {
+                    const pct = (detail.population / denominator) * 100;
+                    const r = pct >= 10 ? Math.round(pct) : Math.round(pct * 10) / 10;
+                    const name = subdivisionCountry.name;
+                    return `~${r}% of ${/s$/i.test(name) ? `${name}'` : `${name}'s`} population`;
+                  })()
+                : null;
+            const popDetail = detail
+              ? [share, `${detail.year} ${detail.basis}`].filter(Boolean).join(", ")
+              : null;
             return (
               <aside className="learn-fs__panel" aria-live="polite">
                 <div className="learn-fs__detail">
@@ -1640,10 +1664,25 @@ export default function LearnPage() {
                       <dt className="entity-summary__label">Capital</dt>
                       <dd className="entity-summary__value">{cap.name}</dd>
                     </div>
+                    {detail?.endonym && (
+                      <div className="entity-summary__row">
+                        <dt className="entity-summary__label">Local name</dt>
+                        <dd className="entity-summary__value">{detail.endonym}</dd>
+                      </div>
+                    )}
                     {cap.note && (
                       <div className="entity-summary__row">
                         <dt className="entity-summary__label">Role</dt>
                         <dd className="entity-summary__value">{cap.note}</dd>
+                      </div>
+                    )}
+                    {detail && (
+                      <div className="entity-summary__row">
+                        <dt className="entity-summary__label">Population</dt>
+                        <dd className="entity-summary__value">
+                          {formatPopulation(detail.population)}
+                          {popDetail ? ` (${popDetail})` : ""}
+                        </dd>
                       </div>
                     )}
                   </dl>
