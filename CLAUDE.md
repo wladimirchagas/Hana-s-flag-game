@@ -1112,27 +1112,39 @@ Learn-mode hierarchy chart.
 two characters when it is wider than the fixed-width card (96px on phones). The right behaviour is
 to keep the word whole and shrink it to fit, not to split it.
 
+### This applies to EVERY card label, not just the hierarchy — not a one-off
+
+This is a **general** rule for **every** fixed-width card that shows a place/country/subdivision/city
+name, present and future — the flag grid, the sub-national flag grid, the city-flags grid, the
+hierarchy chart, and any new one. It is **not** a per-screen patch: fixing only the screen where a
+wrap was reported is a violation. When you touch or add any such label, apply the shared solution.
+
 ### Rules
 
 1. **Never** use `overflow-wrap: anywhere` / `overflow-wrap: break-word` / `word-break: break-all`
-   (or `hyphens: auto`) on a card label. `.hierarchy__name` MUST keep
+   (or `hyphens: auto`) on a card name label. Every such label MUST keep
    `overflow-wrap: normal; word-break: normal; hyphens: none;` so a word is never split mid-letter.
+   (`.hierarchy__name`, `.flag-grid__name`, `.flag-grid__name-text` all follow this.)
 2. **A single word too wide for its card is kept whole and SHRUNK to fit**, never truncated or
-   wrapped. This is done by the `AutoFitName` component in `src/components/SubdivisionHierarchyChart.tsx`:
-   it caps the label at the card width (`max-width: 100%`) and steps the font size down (to a ~0.56×
-   floor) only while a single word overflows horizontally (`scrollWidth > clientWidth`). Multi-word
-   names still wrap at spaces onto two lines and keep the base size. Any new fixed-width card label
-   that can receive a long single word (a city/subdivision name) must use the same approach.
+   wrapped. This is the SHARED **`AutoFitName`** component (`src/components/AutoFitName.tsx`): it caps
+   the label at the card width (`max-width: 100%`) and steps the font size down (to a ~0.56× floor)
+   only while a single word overflows horizontally (`scrollWidth > clientWidth`); multi-word names
+   still wrap at spaces and keep the base size. **Every** card grid that can receive a long
+   single-word name renders its name through `AutoFitName` — the flag grids (`FlagGrid`,
+   `SubdivisionFlagGrid`, `CityFlagGrid`) and the hierarchy chart do. Any NEW card label that can
+   receive a long single word MUST use `AutoFitName` too (wrap only the name text; keep any
+   sub-label/tag as a sibling so it is measured separately).
 3. **Verify in the running app at phone width** (the mandatory visual-verification rule applies):
-   the longest single-word capitals — Johannesburg, Pietermaritzburg, Antananarivo, Yamoussoukro —
-   render whole on one line, neither wrapped mid-word nor clipped.
+   the longest single-word names — Johannesburg, Pietermaritzburg, Antananarivo, Liechtenstein —
+   render whole on one line in the flag grid AND the hierarchy chart, neither wrapped mid-word nor
+   clipped.
 
 ### Enforcement
 
 There is no automated check (it needs layout measurement in a real browser). The guard is this rule
-plus rule 3's visual check: when reviewing any change to `.hierarchy__name` (or a similar card-label
-style), confirm it does not reintroduce `overflow-wrap: anywhere`/`break-word` and that long single
-words still fit whole.
+plus rule 3's visual check: when reviewing any change to a card name label, confirm it does not
+reintroduce `overflow-wrap: anywhere`/`break-word`, that the name renders through `AutoFitName`, and
+that long single words still fit whole in every affected grid.
 
 ## Modals with a text input must blur it before closing — hard rule, do not override without approval
 

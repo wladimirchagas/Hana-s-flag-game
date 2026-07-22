@@ -3,6 +3,7 @@ import {
   continentOrder,
   type FlagListEntry,
 } from "../lib/flagList";
+import { AutoFitName } from "./AutoFitName";
 import { loadLearnedCodes } from "../lib/learnedFlags";
 import { FLAG_DATA_EVENT } from "../lib/profileSync";
 import {
@@ -511,7 +512,7 @@ export function FlagGrid({
                         </span>
                       )}
                     </span>
-                    <span className="flag-grid__name">{item.name}</span>
+                    <AutoFitName className="flag-grid__name" text={item.name} />
                   </button>
                 </li>
               );

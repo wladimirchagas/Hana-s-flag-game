@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { AutoFitName } from "./AutoFitName";
 import { countryCityFlags } from "../lib/cityFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
 
@@ -112,7 +113,7 @@ export function CityFlagGrid({
                     />
                   </span>
                   <span className="flag-grid__name">
-                    {entry.capitalName}
+                    <AutoFitName className="flag-grid__name-text" text={entry.capitalName} />
                     <span className="flag-grid__city-sub">{entry.subdivisionName}</span>
                   </span>
                 </button>

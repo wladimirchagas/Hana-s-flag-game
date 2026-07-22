@@ -1,4 +1,5 @@
-import { useLayoutEffect, useMemo, useRef } from "react";
+import { useMemo } from "react";
+import { AutoFitName } from "./AutoFitName";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import { subdivisionCapital } from "../lib/cityRoles";
 import { distinctCapitalFlagPath } from "../lib/capitalInfo";
@@ -86,43 +87,6 @@ function pluralizeType(label: string): string {
   if (/s$/i.test(label)) return label;
   if (/[^aeiou]y$/i.test(label)) return label.replace(/y$/i, "ies");
   return `${label}s`;
-}
-
-/**
- * A node/leaf name that NEVER breaks a word across lines (see CLAUDE.md hard
- * rule "Card labels must never break a word mid-letter"). The CSS keeps
- * `overflow-wrap: normal` so a word is never split between characters; a
- * multi-word name still wraps at spaces onto two lines. When a SINGLE word is
- * wider than the fixed-width card (e.g. "Johannesburg" on a narrow phone card),
- * we shrink just that label's font a little until the whole word fits on one
- * line — so it is always shown intact, never truncated mid-word and never
- * wrapped mid-word.
- */
-function AutoFitName({ text }: { text: string }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  useLayoutEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    el.style.fontSize = ""; // reset to the CSS base before measuring
-    const base = parseFloat(getComputedStyle(el).fontSize);
-    // Floor low enough that even the longest capital names ("Pietermaritzburg")
-    // fit whole on the narrowest (phone) card, still legible.
-    const min = base * 0.56;
-    let size = base;
-    let guard = 0;
-    // scrollWidth > clientWidth means a single word overflows horizontally
-    // (multi-word names wrap at spaces and never trigger this).
-    while (el.scrollWidth > el.clientWidth + 0.5 && size > min && guard < 20) {
-      size -= 0.5;
-      el.style.fontSize = `${size}px`;
-      guard++;
-    }
-  }, [text]);
-  return (
-    <span ref={ref} className="hierarchy__name" title={text}>
-      {text}
-    </span>
-  );
 }
 
 type Props = {
@@ -333,7 +297,7 @@ export function SubdivisionHierarchyChart({
                 <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
               )}
             </span>
-            <AutoFitName text={countryName} />
+            <AutoFitName className="hierarchy__name" text={countryName} />
             <span className="hierarchy__tier">Nation</span>
           </button>
         </div>
@@ -378,7 +342,7 @@ export function SubdivisionHierarchyChart({
                             <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
                           )}
                         </span>
-                        <AutoFitName text={cap.name} />
+                        <AutoFitName className="hierarchy__name" text={cap.name} />
                         <span className="hierarchy__tier hierarchy__tier--capital">
                           ★ {cap.note ?? "National capital"}
                         </span>
@@ -426,7 +390,7 @@ export function SubdivisionHierarchyChart({
                             <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
                           )}
                         </span>
-                        <AutoFitName text={div.name} />
+                        <AutoFitName className="hierarchy__name" text={div.name} />
                         {subCapitalRole && (
                           <span className="hierarchy__tier hierarchy__tier--capital">
                             ★ {subCapitalRole}
@@ -479,7 +443,7 @@ export function SubdivisionHierarchyChart({
                                       <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
                                     )}
                                   </span>
-                                  <AutoFitName text={leaf.name} />
+                                  <AutoFitName className="hierarchy__name" text={leaf.name} />
                                   {leaf.role && (
                                     <span className="hierarchy__tier hierarchy__tier--capital">
                                       ★ {leaf.role}

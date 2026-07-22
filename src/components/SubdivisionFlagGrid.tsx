@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { AutoFitName } from "./AutoFitName";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { getSubdivisionDisputeLabel, DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
@@ -180,7 +181,7 @@ export function SubdivisionFlagGrid({
                       )}
                     </span>
                     <span className="flag-grid__name">
-                      {div.name}
+                      <AutoFitName className="flag-grid__name-text" text={div.name} />
                       {(() => {
                         const dispute = getSubdivisionDisputeLabel(div.code, div.typeLabel, countryCode);
                         if (!dispute) return null;
