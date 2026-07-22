@@ -41,6 +41,7 @@ const SHARED_THRESHOLD = 12;
 // flag apart. NOT included: genuinely different province-seal-vs-city-seal pairs
 // (all Philippine provinces, Baja California, La Union…), which stay distinct.
 const EFFECTIVELY_SHARED = new Map([
+  ["BO-L", "La Paz department ≡ city (red-over-green bicolour); shades differ (dHash 27)"],
   ["BR-DF", "Distrito Federal ≡ Brasília (golden-arrow cross); shade/crop differ"],
   ["IT-ME", "Messina province ≡ city (red field, yellow Scandinavian cross)"],
   ["CH-SZ", "Schwyz canton ≡ town (red field, white canton cross)"],

@@ -18,6 +18,7 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "AU-NF", // perceptual distance 0
   "BO-C", // byte-identical
   "BO-H", // perceptual distance 0
+  "BO-L", // curated (audit): La Paz department ≡ city (red-over-green bicolour); shades differ (dHash 27)
   "BO-O", // perceptual distance 0
   "BO-S", // byte-identical
   "BO-T", // byte-identical

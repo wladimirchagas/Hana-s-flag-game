@@ -24,7 +24,10 @@ on:
       - "scripts/check-subdivision-meta-coverage.mjs"
       - "public/capital-flags/**"
       - "src/data/capitalFlags.ts"
+      - "src/data/sharedCapitalFlags.ts"
+      - "src/data/cityTerritories.ts"
       - "scripts/check-capital-flags.mjs"
+      - "scripts/check-capital-subdivision-collision.mjs"
       - "scripts/build-capital-details.mjs"
 
 jobs:
@@ -68,6 +71,9 @@ jobs:
 
       - name: Verify no capital-city flag duplicates its country's national flag
         run: node scripts/check-capital-flags.mjs
+
+      - name: Verify no capital-city flag duplicates its own subdivision's flag
+        run: node scripts/check-capital-subdivision-collision.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest
