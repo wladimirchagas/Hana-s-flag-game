@@ -31,6 +31,7 @@ import { FlagMeaning } from "../components/FlagMeaning";
 import { worldCityMarkers, subdivisionCityMarkers, subdivisionCapital } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NATIONAL_CAPITAL_DETAILS } from "../data/nationalCapitalDetails";
+import { NATIONAL_CAPITAL_FLAG_MEANINGS } from "../data/nationalCapitalFlagMeanings";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { formatPopulation } from "../lib/formatPopulation";
 import { normalizeForSearch } from "../lib/searchNormalize";
@@ -1705,6 +1706,12 @@ export default function LearnPage() {
                           <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
                         </button>,
                       )}
+                      {/* "What this flag means" explainer — same component/look as
+                          the national/subnational and subdivision-capital flags. */}
+                      <FlagMeaning
+                        code={`${subdivisionCountry.code}|${normalizeForSearch(cap.name)}`}
+                        meanings={NATIONAL_CAPITAL_FLAG_MEANINGS}
+                      />
                     </div>
                   ) : (
                     <p className="learn-fs__subdiv-prompt">

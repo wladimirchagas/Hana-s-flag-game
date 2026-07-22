@@ -19,19 +19,24 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_PATH = resolve(__dirname, "..", "src", "data", "cityFlagMeanings.ts");
+// Both city-flag-meaning datasets are validated identically: the subdivision-
+// keyed CITY_FLAG_MEANINGS and the national-capital NATIONAL_CAPITAL_FLAG_MEANINGS
+// (capitals that head no subdivision — Amsterdam, Ottawa, …).
+const DATASETS = [
+  { path: resolve(__dirname, "..", "src", "data", "cityFlagMeanings.ts"), marker: "export const CITY_FLAG_MEANINGS" },
+  { path: resolve(__dirname, "..", "src", "data", "nationalCapitalFlagMeanings.ts"), marker: "export const NATIONAL_CAPITAL_FLAG_MEANINGS" },
+];
 
-// ── Load CITY_FLAG_MEANINGS without invoking tsc ────────────────────────────
+// ── Load a meanings literal without invoking tsc ────────────────────────────
 // The object literal after `= {` is pure data (strings/arrays/objects/comments)
 // — no TS-specific syntax inside — so brace-matching the literal and evaluating
 // it yields the real runtime value (same approach as check-flag-meanings.mjs).
-function loadMeanings() {
+function loadMeanings(DATA_PATH, marker) {
   const src = readFileSync(DATA_PATH, "utf8");
-  const marker = "export const CITY_FLAG_MEANINGS";
   const start = src.indexOf(marker);
-  if (start < 0) throw new Error("Could not locate CITY_FLAG_MEANINGS export");
+  if (start < 0) throw new Error(`Could not locate ${marker} export`);
   const eq = src.indexOf("= {", start);
-  if (eq < 0) throw new Error("Could not locate CITY_FLAG_MEANINGS literal");
+  if (eq < 0) throw new Error(`Could not locate ${marker} literal`);
   const open = src.indexOf("{", eq);
   let depth = 0, i = open, inStr = null;
   for (; i < src.length; i++) {
@@ -62,7 +67,10 @@ const isHttpUrl = (u) => {
 };
 const nonEmpty = (s) => typeof s === "string" && s.trim().length > 0;
 
-const meanings = loadMeanings();
+const meanings = {};
+for (const { path, marker } of DATASETS) {
+  Object.assign(meanings, loadMeanings(path, marker));
+}
 const problems = [];
 const record = (code, check, detail) => problems.push({ code, check, detail });
 
