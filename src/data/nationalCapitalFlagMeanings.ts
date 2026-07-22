@@ -12,8 +12,10 @@ import type { FlagMeaning } from "./flagMeanings";
  * fetched-then-written from an authoritative source with a real `http(s)` URL,
  * folk-etymology/disputed claims go in `myths` (claim + sourced reality), and
  * nothing is fabricated. A capital whose symbolism cannot be sourced is simply
- * absent here (Astana, Antananarivo, Pretoria, Belmopan, Monrovia had no
- * reachable documented symbolism at the time of writing — omitted, not invented).
+ * absent here — Belmopan (BZ) is omitted: FOTW carries no Belmopan city page,
+ * and en.wikipedia documents only the city's motto ("City of Promise") and
+ * nickname ("Garden City"), with no per-element symbolism for the green/yellow
+ * civic flag or its seal — a missing explainer beats an invented one.
  */
 export const NATIONAL_CAPITAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
   "NL|amsterdam": {
@@ -91,6 +93,51 @@ export const NATIONAL_CAPITAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "now part of the Tshwane Metropolitan Municipality, whose symbols superseded the city's.",
     sources: [
       { title: "Pretoria (South Africa) — Flags of the World", url: "https://www.crwflags.com/fotw/Flags/za-preto.html" },
+    ],
+  },
+  "KZ|astana": {
+    description:
+      "Astana's flag, adopted on 18 November 2022 alongside a new city coat of arms, is a blue field " +
+      "(1:2) bearing the city's arms at the centre with golden sun-rays radiating outward. The arms are " +
+      "in the blue and gold of Kazakhstan's national flag and are crowned by a shanyrak — the wooden " +
+      "roof-ring at the top of a yurt — which in Kazakh tradition (and on the national emblem) stands " +
+      "for family, home and the common homeland shared by all who live in the country. Beneath the " +
+      "shanyrak is a stylised Baiterek, the Tree-of-Life monument that is Astana's signature landmark, " +
+      "and a kuskanaty (a stylised bird / wing motif); a red border carries the city's name. The flag " +
+      "was designed by Kazakhstan's first president, Nursultan Nazarbayev.",
+    sources: [
+      { title: "Flag of Astana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Astana" },
+      { title: "Coat of arms of Astana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Astana" },
+    ],
+  },
+  "MG|antananarivo": {
+    description:
+      "Antananarivo's flag bears the city's arms (created in 1950): a shield quartered gold and blue, " +
+      "with a black zebu head in the two gold quarters and a gold fleur-de-lis in the two blue quarters, " +
+      "beneath a mural crown of seven towers. The seven towers stand for the seven main cities of " +
+      "Madagascar. The city's motto — “Tsy maty manota ny arivo” / “A thousand shall not die in one " +
+      "day” — plays on the name Antananarivo (“City of the Thousand”), which commemorates the roughly " +
+      "one thousand soldiers a Merina king garrisoned on the hill of Analamanga to hold it.",
+    sources: [
+      {
+        title: "Antananarivo city (Madagascar) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/mg-antan.html",
+      },
+    ],
+  },
+  "LR|monrovia": {
+    description:
+      "Monrovia's flag is a white field bearing the arms of the Monrovia City Corporation. The shield is " +
+      "quartered black and white: a silver key, a palm tree rising from an earthy mound, a second tree, " +
+      "and a trumpeting elephant; across the top (a blue chief) a red sun haloed in silver sets over the " +
+      "sea beside a faceted star. A scroll below names “The City Government of Monrovia / The Monrovia " +
+      "City Corporation.” The city, founded in 1822 by the American Colonization Society as a settlement " +
+      "for freed and free-born African Americans, is named after U.S. president James Monroe.",
+    sources: [
+      {
+        title: "Liberian sub-national flags (Monrovia city) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/lr-.html",
+      },
     ],
   },
 };
