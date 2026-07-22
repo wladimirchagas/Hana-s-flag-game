@@ -727,6 +727,7 @@ export default function LearnPage() {
         similarities: FLAG_SIMILARITIES[c.code],
         driveSide: getDriveSide(c.code),
         aspectRatio: FLAG_ASPECT_RATIOS[c.code],
+        capital: c.capital,
       }));
     }
     const out: FlagListEntry[] = [];

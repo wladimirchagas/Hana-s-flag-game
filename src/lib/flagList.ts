@@ -40,6 +40,11 @@ export type FlagListEntry = {
   /** Aspect-ratio bucket (e.g. "ratio-2-3", "ratio-1-2").
    *  Undefined for historical polities; treated as "ratio-2-3" by the grid. */
   aspectRatio?: string;
+  /** National capital city name (from the same bundled/live-backfilled
+   *  `COUNTRY_FACTS`/REST-Countries source the country widget trusts —
+   *  see CLAUDE.md "Country widget information must never be reduced").
+   *  Undefined for historical polities, where a modern capital doesn't apply. */
+  capital?: string;
 };
 
 /**

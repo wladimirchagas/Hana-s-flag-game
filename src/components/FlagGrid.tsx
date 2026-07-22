@@ -512,7 +512,14 @@ export function FlagGrid({
                         </span>
                       )}
                     </span>
-                    <AutoFitName className="flag-grid__name" text={item.name} />
+                    <span className="flag-grid__name">
+                      <AutoFitName className="flag-grid__name-text" text={item.name} />
+                      {item.capital && (
+                        <span className="flag-grid__city-sub">
+                          Capital: {item.capital}
+                        </span>
+                      )}
+                    </span>
                   </button>
                 </li>
               );
