@@ -2061,10 +2061,22 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  /* Cap the label at the card width so a long word overflows INSIDE it (which
+     <AutoFitName> detects and shrinks) instead of growing the element past the
+     card edges. */
+  max-width: 100%;
+  min-width: 0;
   font-size: 0.78rem;
   font-weight: 700;
   text-align: center;
-  overflow-wrap: anywhere;
+  /* HARD RULE — a word must NEVER break across lines mid-letter (see CLAUDE.md
+     "Card labels must never break a word mid-letter"). `normal` wraps only at
+     spaces; a single word too wide for the fixed-width card is kept whole and
+     shrunk to fit by <AutoFitName> instead of being split. Never use
+     `overflow-wrap: anywhere`/`break-word` or `word-break: break-all` here. */
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .hierarchy__tier {
