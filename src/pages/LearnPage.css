@@ -2013,7 +2013,14 @@
 }
 .hierarchy__tier--capital {
   color: var(--coral-deep);
-  white-space: nowrap;
+  /* The role can be long ("Constitutional capital") while the card is only
+     ~96–120px wide, so the badge MUST wrap inside the card and never overflow
+     it — tighter letter-spacing + word wrapping keep it contained. */
+  max-width: 100%;
+  text-align: center;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
 }
 
 .hierarchy__node--active {
