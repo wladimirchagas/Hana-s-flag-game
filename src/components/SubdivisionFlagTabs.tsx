@@ -120,8 +120,10 @@ export function SubdivisionFlagTabs({
             countryName={countryName}
             selectedCode={selectedCode}
             capitalActive={capitalActive}
+            activeNationalCapital={activeNationalCapital}
             baseUrl={baseUrl}
             onSelect={onSelectCapital}
+            onSelectNational={onSelectNationalCapital}
           />
         )}
         {tab === "tree" && (
