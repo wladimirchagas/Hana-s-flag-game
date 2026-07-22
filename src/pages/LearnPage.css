@@ -1911,12 +1911,24 @@
   justify-content: center;
 }
 
-/* Leaf city node: vertical connector up to its parent branch node. */
 .hierarchy__node--city {
   position: relative;
 }
 
-.hierarchy__node--city::before {
+/* Row of capital leaves under a subdivision — its own capital plus any national
+   capital located inside it (Ontario → Toronto + Ottawa). All leaves sit side by
+   side at the SAME level as every other capital city, laddering up to their
+   subdivision node with the same drop → bus → stub connector the tree uses one
+   tier up (so a single leaf and multiple leaves align to the same Y). */
+.hierarchy__leafrow {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Drop from the subdivision node down to the leaf bus (bridges the col gap). */
+.hierarchy__leafrow::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -1926,6 +1938,41 @@
   background: var(--ink);
   transform: translateX(-50%);
 }
+
+.hierarchy__leaf {
+  position: relative;
+  display: flex;
+  padding: 22px 0.35rem 0; /* room for the stub above each leaf */
+  flex: 0 0 auto;
+}
+
+/* Short vertical stub from the bus down to each leaf. */
+.hierarchy__leaf::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 22px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+/* Horizontal bus across the leaves. */
+.hierarchy__leaf::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--ink);
+}
+
+.hierarchy__leaf:first-child::after { left: 50%; }
+.hierarchy__leaf:last-child::after { right: 50%; }
+/* A single leaf needs no bus, just the straight drop → stub down to it. */
+.hierarchy__leaf:only-child::after { display: none; }
 
 .hierarchy__node {
   display: flex;
