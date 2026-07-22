@@ -267,12 +267,13 @@ export function SubdivisionMap({
   // showing only metropolitan France). DO NOT re-introduce a `_isTerritory`
   // filter here. Features too small to see at the fitted scale are still made
   // discoverable via the constant-size dot indicators (smallSubdivCodes) below.
-  const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes, cityBase } = useMemo(() => {
+  const { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes, tinySubdivCodes, cityBase } = useMemo(() => {
     const empty = {
       pathByIdx: new Map<number, string>(),
       flagPolygonsById: new Map<string, FlagPoly[]>(),
       centroidByCode: new Map<string, [number, number]>(),
       smallSubdivCodes: new Set<string>(),
+      tinySubdivCodes: new Set<string>(),
       cityBase: [] as { city: PlacedCity; bx: number; by: number }[],
     };
     if (!geoData || geoData.features.length === 0) return empty;
@@ -308,6 +309,15 @@ export function SubdivisionMap({
     // all of France's worldwide territories at once.
     const centroidByCode = new Map<string, [number, number]>();
     const smallSubdivCodes = new Set<string>();
+    // Subdivisions that DO produce a renderable path, but one so small on
+    // screen (at the default fit-all-features zoom) that it's hard to spot
+    // or tap — e.g. a city-province like Hong Kong/Macau sitting alongside a
+    // huge mainland. These get the pulsing ring on selection (parity with the
+    // world map's small-nation pulse) but never a permanent dot — a dot on
+    // top of an already-rendered shape is what causes the stippling effect
+    // documented above for smallSubdivCodes.
+    const tinySubdivCodes = new Set<string>();
+    const TINY_BBOX_PX = 18; // roughly the pulse ring's own footprint
     for (let i = 0; i < geoData.features.length; i++) {
       const feat = geoData.features[i];
       const code = getSubdivCode(feat);
@@ -320,6 +330,15 @@ export function SubdivisionMap({
       if (!pathByIdx.has(i)) {
         // Feature produced no renderable path — show a dot so it is locatable.
         smallSubdivCodes.add(code);
+      } else {
+        const b = mapPath.bounds(feat as never);
+        if (b && isFinite(b[0][0]) && isFinite(b[0][1]) && isFinite(b[1][0]) && isFinite(b[1][1])) {
+          const bw = b[1][0] - b[0][0];
+          const bh = b[1][1] - b[0][1];
+          if (Math.max(bw, bh) < TINY_BBOX_PX) {
+            tinySubdivCodes.add(code);
+          }
+        }
       }
     }
 
@@ -385,7 +404,7 @@ export function SubdivisionMap({
       }
     }
 
-    return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes, cityBase };
+    return { pathByIdx, flagPolygonsById, centroidByCode, smallSubdivCodes, tinySubdivCodes, cityBase };
   // paths and projection bounds only change if the country dataset, flag list, or cities change
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [geoData, flagOverlay, cityOverlay]);
@@ -455,11 +474,19 @@ export function SubdivisionMap({
   }
 
   // Pulsing ring indicator — shown for subdivisions that are too small to
-  // spot at the default zoom level. Rendered outside the zoom <g> so the
-  // ring's visual size stays constant regardless of zoom level, but
-  // positioned via the live zoom transform so it tracks the territory.
+  // spot at the default zoom level (parity with the world map's small-nation
+  // pulse). Covers both features with NO renderable path at all
+  // (smallSubdivCodes) and features that DO render but whose on-screen
+  // footprint is tiny (tinySubdivCodes, e.g. a city-province dwarfed by its
+  // own country's mainland). Rendered outside the zoom <g> so the ring's
+  // visual size stays constant regardless of zoom level, but positioned via
+  // the live zoom transform so it tracks the territory.
   const selCentroid = selectedCode ? centroidByCode.get(selectedCode) : null;
-  const showPulse = !!(selCentroid && selectedCode && smallSubdivCodes.has(selectedCode));
+  const showPulse = !!(
+    selCentroid &&
+    selectedCode &&
+    (smallSubdivCodes.has(selectedCode) || tinySubdivCodes.has(selectedCode))
+  );
   const { k: zk, tx: ztx, ty: zty } = zoom.view;
   const pulseX = selCentroid ? selCentroid[0] * zk + ztx : 0;
   const pulseY = selCentroid ? selCentroid[1] * zk + zty : 0;
