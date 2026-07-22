@@ -29,9 +29,13 @@ type Props = {
   selectedCode: string | null;
   /** True when the "View capital" drill-down is open for the selected code. */
   capitalActive: boolean;
+  /** Name of the selected standalone national capital (if any), for the chart's
+   *  active highlight. */
+  activeNationalCapital?: string | null;
   baseUrl: string;
   onSelectSubdivision: (code: string) => void;
   onSelectCapital: (code: string) => void;
+  onSelectNationalCapital: (cap: { name: string; note: string | null; flagPath: string | null }) => void;
   onSelectCountry: () => void;
 };
 
@@ -43,9 +47,11 @@ export function SubdivisionFlagTabs({
   countryFlagUrl,
   selectedCode,
   capitalActive,
+  activeNationalCapital,
   baseUrl,
   onSelectSubdivision,
   onSelectCapital,
+  onSelectNationalCapital,
   onSelectCountry,
 }: Props) {
   const [tab, setTab] = useState<TabId>("sub");
@@ -126,10 +132,12 @@ export function SubdivisionFlagTabs({
             countryFlagUrl={countryFlagUrl}
             selectedCode={selectedCode}
             capitalActive={capitalActive}
+            activeNationalCapital={activeNationalCapital}
             baseUrl={baseUrl}
             onSelectCountry={onSelectCountry}
             onSelectSubdivision={onSelectSubdivision}
             onSelectCapital={onSelectCapital}
+            onSelectNationalCapital={onSelectNationalCapital}
           />
         )}
       </div>
