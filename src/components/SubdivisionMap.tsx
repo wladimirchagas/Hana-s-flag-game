@@ -309,15 +309,32 @@ export function SubdivisionMap({
     // all of France's worldwide territories at once.
     const centroidByCode = new Map<string, [number, number]>();
     const smallSubdivCodes = new Set<string>();
-    // Subdivisions that DO produce a renderable path, but one so small on
-    // screen (at the default fit-all-features zoom) that it's hard to spot
-    // or tap — e.g. a city-province like Hong Kong/Macau sitting alongside a
-    // huge mainland. These get the pulsing ring on selection (parity with the
-    // world map's small-nation pulse) but never a permanent dot — a dot on
-    // top of an already-rendered shape is what causes the stippling effect
-    // documented above for smallSubdivCodes.
+    // Subdivisions that DO produce a renderable path, but are a distant
+    // appended territory that's still hard to spot at the default
+    // fit-all-features zoom (French Polynesia, New Caledonia, Saint Helena,
+    // South Georgia, France's five overseas departments, Hong Kong, Macau, …).
+    // `_isTerritory` is set by fetchMergedSubdivisionGeo (src/api/subdivisions.ts)
+    // on exactly these features — every one merged in from
+    // TERRITORY_GEO_FOR_PARENT, plus France's hardcoded overseas five — so
+    // it's a direct, reliable signal with no threshold to tune.
+    //
+    // A per-feature pixel-area/bbox threshold was tried and rejected: fitting
+    // a country's far-flung territories into one viewBox compresses the WHOLE
+    // projection, so ordinary same-country subdivisions (e.g. France's other
+    // 95 departments) end up just as small in absolute or bbox terms as the
+    // actual outlier — French Polynesia's islands (~2.9px²) measured SMALLER
+    // than the median French department (~5.1px²) despite comparable real
+    // land area, and a small-bbox check flagged ordinary departments (Ain)
+    // exactly as it flagged the territories. `_isTerritory` sidesteps that
+    // entirely: it's set at merge time from a country-relative judgement
+    // (this feature came from a DIFFERENT territory's geo file), not from
+    // any on-screen measurement.
+    //
+    // This gets the pulsing ring on selection (parity with the world map's
+    // small-nation pulse) but never a permanent dot — a dot on top of an
+    // already-rendered shape is what causes the stippling effect documented
+    // above for smallSubdivCodes.
     const tinySubdivCodes = new Set<string>();
-    const TINY_BBOX_PX = 18; // roughly the pulse ring's own footprint
     for (let i = 0; i < geoData.features.length; i++) {
       const feat = geoData.features[i];
       const code = getSubdivCode(feat);
@@ -330,15 +347,8 @@ export function SubdivisionMap({
       if (!pathByIdx.has(i)) {
         // Feature produced no renderable path — show a dot so it is locatable.
         smallSubdivCodes.add(code);
-      } else {
-        const b = mapPath.bounds(feat as never);
-        if (b && isFinite(b[0][0]) && isFinite(b[0][1]) && isFinite(b[1][0]) && isFinite(b[1][1])) {
-          const bw = b[1][0] - b[0][0];
-          const bh = b[1][1] - b[0][1];
-          if (Math.max(bw, bh) < TINY_BBOX_PX) {
-            tinySubdivCodes.add(code);
-          }
-        }
+      } else if (feat.properties._isTerritory) {
+        tinySubdivCodes.add(code);
       }
     }
 
