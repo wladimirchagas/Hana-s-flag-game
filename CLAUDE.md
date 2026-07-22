@@ -1098,6 +1098,42 @@ division set from `getPlayableSubdivisions()`. Verify in the running app that a 
 country (Afghanistan) is absent from the picker and that a listed country's "N flags" count
 matches the number of questions the game then asks.
 
+## Card labels must never break a word mid-letter — hard rule, do not override without approval
+
+**No text label on a fixed-width card may wrap a single word across lines mid-letter** (e.g.
+"Johannes" / "burg"). A word must always stay intact on one line; only spaces (and an existing
+hyphen in a compound name like "KwaZulu-Natal") are break opportunities. This shipped and was
+reported (2026-07): "Johannesburg" wrapped to "Johannesbur" / "g" on a narrow phone card in the
+Learn-mode hierarchy chart.
+
+### Why it happened
+
+`.hierarchy__name` used `overflow-wrap: anywhere`, which lets the browser break a word between any
+two characters when it is wider than the fixed-width card (96px on phones). The right behaviour is
+to keep the word whole and shrink it to fit, not to split it.
+
+### Rules
+
+1. **Never** use `overflow-wrap: anywhere` / `overflow-wrap: break-word` / `word-break: break-all`
+   (or `hyphens: auto`) on a card label. `.hierarchy__name` MUST keep
+   `overflow-wrap: normal; word-break: normal; hyphens: none;` so a word is never split mid-letter.
+2. **A single word too wide for its card is kept whole and SHRUNK to fit**, never truncated or
+   wrapped. This is done by the `AutoFitName` component in `src/components/SubdivisionHierarchyChart.tsx`:
+   it caps the label at the card width (`max-width: 100%`) and steps the font size down (to a ~0.56×
+   floor) only while a single word overflows horizontally (`scrollWidth > clientWidth`). Multi-word
+   names still wrap at spaces onto two lines and keep the base size. Any new fixed-width card label
+   that can receive a long single word (a city/subdivision name) must use the same approach.
+3. **Verify in the running app at phone width** (the mandatory visual-verification rule applies):
+   the longest single-word capitals — Johannesburg, Pietermaritzburg, Antananarivo, Yamoussoukro —
+   render whole on one line, neither wrapped mid-word nor clipped.
+
+### Enforcement
+
+There is no automated check (it needs layout measurement in a real browser). The guard is this rule
+plus rule 3's visual check: when reviewing any change to `.hierarchy__name` (or a similar card-label
+style), confirm it does not reintroduce `overflow-wrap: anywhere`/`break-word` and that long single
+words still fit whole.
+
 ## Modals with a text input must blur it before closing — hard rule, do not override without approval
 
 **On mobile WebKit/Chrome, a stuck "keyboard accessory toolbar" (autofill field-navigation
