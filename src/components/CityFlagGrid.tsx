@@ -8,9 +8,15 @@ import { normalizeForSearch } from "../lib/searchNormalize";
  *
  * Shows every available capital-city flag for the country (see
  * `countryCityFlags` — authoritative, name-confirmed capital-flag data only).
- * Selecting a card drills into that capital's subdivision AND reveals the
- * capital, so the map highlight + the country/subdivision widget update to
- * match, exactly like picking the subdivision then tapping "View capital".
+ * Two kinds of entry, routed to two different selection callbacks:
+ *  - "subdivision": this capital IS a subdivision's own capital. Selecting it
+ *    drills into that subdivision AND reveals the capital, exactly like
+ *    picking the subdivision then tapping "View capital".
+ *  - "national": a NATIONAL capital that heads no subdivision (Ottawa,
+ *    Pretoria, Amsterdam …) and isn't already any subdivision's own capital.
+ *    Selecting it opens the same standalone national-capital panel the
+ *    hierarchy chart's "National capital" leaf opens — there is no
+ *    subdivision to drill into.
  */
 type Props = {
   countryCode: string;
@@ -19,8 +25,11 @@ type Props = {
   selectedCode: string | null;
   /** True when the "View capital" drill-down is open for the selected code. */
   capitalActive: boolean;
+  /** Name of the selected standalone national capital (if any). */
+  activeNationalCapital?: string | null;
   baseUrl: string;
   onSelect: (code: string) => void;
+  onSelectNational: (cap: { name: string; note: string | null; flagPath: string | null }) => void;
 };
 
 export function CityFlagGrid({
@@ -28,8 +37,10 @@ export function CityFlagGrid({
   countryName,
   selectedCode,
   capitalActive,
+  activeNationalCapital,
   baseUrl,
   onSelect,
+  onSelectNational,
 }: Props) {
   const entries = useMemo(() => countryCityFlags(countryCode), [countryCode]);
   const [filter, setFilter] = useState("");
@@ -92,15 +103,31 @@ export function CityFlagGrid({
       ) : (
         <ul className="flag-grid__list">
           {filtered.map((entry) => {
-            const active = capitalActive && entry.code === selectedCode;
+            const active =
+              entry.kind === "national"
+                ? activeNationalCapital === entry.capitalName
+                : capitalActive && entry.code === selectedCode;
+            const handleClick =
+              entry.kind === "national"
+                ? () =>
+                    onSelectNational({
+                      name: entry.capitalName,
+                      note: entry.note ?? null,
+                      flagPath: entry.flagPath,
+                    })
+                : () => onSelect(entry.code);
+            const label =
+              entry.kind === "national"
+                ? `Select ${entry.capitalName}, national capital of ${countryName}`
+                : `Select ${entry.capitalName}, capital of ${entry.subdivisionName}`;
             return (
               <li key={entry.code} className="flag-grid__item">
                 <button
                   type="button"
                   className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
-                  onClick={() => onSelect(entry.code)}
+                  onClick={handleClick}
                   aria-pressed={active}
-                  aria-label={`Select ${entry.capitalName}, capital of ${entry.subdivisionName}`}
+                  aria-label={label}
                 >
                   <span className="flag-grid__thumb">
                     <img
