@@ -94,10 +94,16 @@ type Props = {
   selectedCode: string | null;
   /** True when the "View capital" drill-down is open for the selected code. */
   capitalActive: boolean;
+  /** Name of the selected standalone national capital (if any) — for its active
+   *  highlight; these capitals head no subdivision so `selectedCode` can't mark them. */
+  activeNationalCapital?: string | null;
   baseUrl: string;
   onSelectCountry: () => void;
   onSelectSubdivision: (code: string) => void;
   onSelectCapital: (code: string) => void;
+  /** A national capital that heads no subdivision (Ottawa, Pretoria …) — selecting
+   *  it populates its own panel in the widget above. */
+  onSelectNationalCapital: (cap: { name: string; note: string | null; flagPath: string | null }) => void;
 };
 
 export function SubdivisionHierarchyChart({
@@ -107,10 +113,12 @@ export function SubdivisionHierarchyChart({
   countryFlagUrl,
   selectedCode,
   capitalActive,
+  activeNationalCapital,
   baseUrl,
   onSelectCountry,
   onSelectSubdivision,
   onSelectCapital,
+  onSelectNationalCapital,
 }: Props) {
   const { nodes, standaloneCaps } = useMemo(() => {
     const visibleDivs = divisions.filter(
@@ -264,11 +272,15 @@ export function SubdivisionHierarchyChart({
                   // — its own sourced municipal flag if one is bundled, else "—".
                   const flagPath =
                     NATIONAL_CAPITAL_FLAGS[`${countryCode}|${normalizeForSearch(cap.name)}`] ?? null;
+                  const active = activeNationalCapital === cap.name;
                   return (
                     <div key={cap.name} className="hierarchy__col">
-                      <div
-                        className="hierarchy__node hierarchy__node--capital hierarchy__node--static"
-                        aria-label={`${cap.name}, national capital of ${countryName}`}
+                      <button
+                        type="button"
+                        className={`hierarchy__node hierarchy__node--capital${active ? " hierarchy__node--active" : ""}`}
+                        onClick={() => onSelectNationalCapital({ name: cap.name, note: cap.note, flagPath })}
+                        aria-pressed={active}
+                        aria-label={`Select ${cap.name}, national capital of ${countryName}`}
                       >
                         <span className="hierarchy__thumb">
                           {flagPath ? (
@@ -288,7 +300,7 @@ export function SubdivisionHierarchyChart({
                         <span className="hierarchy__tier hierarchy__tier--capital">
                           ★ {cap.note ?? "National capital"}
                         </span>
-                      </div>
+                      </button>
                     </div>
                   );
                 })}

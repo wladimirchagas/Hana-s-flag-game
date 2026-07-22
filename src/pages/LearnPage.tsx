@@ -196,6 +196,13 @@ export default function LearnPage() {
   const [subdivisionGeo, setSubdivisionGeo] = useState<SubdivisionFeatureCollection | null>(null);
   const [subdivisionLoading, setSubdivisionLoading] = useState(false);
   const [selectedSubdivision, setSelectedSubdivision] = useState<SubdivisionMeta | null>(null);
+  // A NATIONAL capital that heads no subdivision (Ottawa, Pretoria, Amsterdam …),
+  // selected from the hierarchy chart's "National capital" node. It has no
+  // subdivision entity to select, so it drives its own small panel below. Mutually
+  // exclusive with a subdivision selection (see the effects after subdivisionCountry).
+  const [selectedCapital, setSelectedCapital] = useState<
+    { name: string; note: string | null; flagPath: string | null } | null
+  >(null);
   // The capital-city widget now opens AUTOMATICALLY whenever a subdivision with a
   // known capital is selected (owner request 2026-07) — there is no manual "View
   // capital" toggle. Derived, not stored: it is simply "a subdivision with a
@@ -207,6 +214,14 @@ export default function LearnPage() {
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
+  // Keep the national-capital selection mutually exclusive with a subdivision
+  // selection, and clear it whenever the drilled-into country or the mode changes.
+  useEffect(() => {
+    if (selectedSubdivision != null) setSelectedCapital(null);
+  }, [selectedSubdivision]);
+  useEffect(() => {
+    setSelectedCapital(null);
+  }, [subdivisionCountry, subdivisionMode]);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
   // cross-era selection-validation effect below to keep a selection alive
@@ -1606,6 +1621,61 @@ export default function LearnPage() {
               </aside>
             );
           })()}
+
+          {/* ===== NATIONAL-CAPITAL box — for a national capital that heads no
+              subdivision (Ottawa, Pretoria, Amsterdam …), selected from the
+              hierarchy chart. It has no subdivision fact-sheet, so this small card
+              shows its name, sourced role and own municipal flag. ===== */}
+          {selectedCapital && (() => {
+            const cap = selectedCapital;
+            const flagUrl = cap.flagPath ? `${baseUrl}${cap.flagPath}` : null;
+            return (
+              <aside className="learn-fs__panel" aria-live="polite">
+                <div className="learn-fs__detail">
+                  <span className="learn-fs__search-label" aria-hidden="true">
+                    National capital of {subdivisionCountry.name}
+                  </span>
+                  <dl className="entity-summary">
+                    <div className="entity-summary__row">
+                      <dt className="entity-summary__label">Capital</dt>
+                      <dd className="entity-summary__value">{cap.name}</dd>
+                    </div>
+                    {cap.note && (
+                      <div className="entity-summary__row">
+                        <dt className="entity-summary__label">Role</dt>
+                        <dd className="entity-summary__value">{cap.note}</dd>
+                      </div>
+                    )}
+                  </dl>
+                  {flagUrl ? (
+                    <div className="learn-fs__flag-box">
+                      {flagRow(
+                        <button
+                          type="button"
+                          className="learn-fs__flag"
+                          onClick={() => setZoomedFlagUrl(flagUrl)}
+                          aria-label={`Enlarge ${cap.name} flag`}
+                        >
+                          <img
+                            src={flagUrl}
+                            alt=""
+                            className="learn-fs__flag-img"
+                            draggable={false}
+                            onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+                          />
+                          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+                        </button>,
+                      )}
+                    </div>
+                  ) : (
+                    <p className="learn-fs__subdiv-prompt">
+                      No municipal flag is bundled for this capital yet.
+                    </p>
+                  )}
+                </div>
+              </aside>
+            );
+          })()}
           </>
         )}
       </div>
@@ -1673,6 +1743,7 @@ export default function LearnPage() {
             countryFlagUrl={subdivisionCountry.flagSvg || null}
             selectedCode={selectedSubdivision?.code ?? null}
             capitalActive={showCapital}
+            activeNationalCapital={selectedCapital?.name ?? null}
             baseUrl={baseUrl}
             onSelectSubdivision={selectSubdivision}
             onSelectCapital={(code: string) => {
@@ -1683,8 +1754,16 @@ export default function LearnPage() {
               setSelectedSubdivision(div);
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
+            onSelectNationalCapital={(cap) => {
+              // A national capital that heads no subdivision — populate its own
+              // panel; clearing the subdivision selection is handled by the effect.
+              setSelectedCapital(cap);
+              setSelectedSubdivision(null);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             onSelectCountry={() => {
               setSelectedSubdivision(null);
+              setSelectedCapital(null);
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />
