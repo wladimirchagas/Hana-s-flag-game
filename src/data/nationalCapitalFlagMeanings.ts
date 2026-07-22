@@ -80,4 +80,17 @@ export const NATIONAL_CAPITAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       },
     ],
   },
+  "ZA|pretoria": {
+    description:
+      "Pretoria's flag is a horizontal bicolour in the city's colours, red and yellow (gold), taken " +
+      "from the municipal coat of arms adopted in 1989. Those arms are a pun on the city's name: a " +
+      "golden inescutcheon bears a seated Roman praetor (a play on “Pretoria”), on a red field with " +
+      "a mimosa tree ringed by an orle of eight golden bees, supported by an eland and a kudu " +
+      "beneath a triple-towered castle crest, under the motto “Praestantia praevaleat Pretoria” " +
+      "(“May Pretoria be pre-eminent in excellence”). The flag is no longer official — Pretoria is " +
+      "now part of the Tshwane Metropolitan Municipality, whose symbols superseded the city's.",
+    sources: [
+      { title: "Pretoria (South Africa) — Flags of the World", url: "https://www.crwflags.com/fotw/Flags/za-preto.html" },
+    ],
+  },
 };
