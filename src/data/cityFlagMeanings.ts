@@ -7930,6 +7930,83 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Assen — capital of Drenthe, Netherlands ────────────────────────────────
+  "NL-DR": {
+    description:
+      "Assen's flag is a white-and-blue horizontal bicolour, its colours taken from the city's coat of " +
+      "arms: blue is the shield's field, and white the mantle of the crowned image of the Virgin Mary that " +
+      "the arms bear.",
+    sources: [
+      { title: "Vlag van Assen — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Assen" },
+    ],
+  },
+
+  // ── Lelystad — capital of Flevoland, Netherlands ───────────────────────────
+  "NL-FL": {
+    description:
+      "Lelystad's flag is prince-yellow with a cobalt-blue hexagon at the centre bearing a white lily from " +
+      "the city's arms. The lily is a canting emblem for Cornelis Lely, the engineer of the Zuiderzee Works " +
+      "after whom the city is named; the blue hexagon around it stands for the basalt blocks that armour " +
+      "Flevoland's dykes.",
+    sources: [
+      { title: "Vlag van Lelystad — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Lelystad" },
+    ],
+  },
+
+  // ── Leeuwarden — capital of Friesland, Netherlands ─────────────────────────
+  "NL-FR": {
+    description:
+      "Leeuwarden's city flag is four horizontal bands of blue and yellow, adopted in 1947, the colours " +
+      "drawn from the city's coat of arms. (A newer municipal flag, adopted in 2019, instead bears the " +
+      "city's golden lion.)",
+    sources: [
+      { title: "Vlag van Leeuwarden — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Leeuwarden" },
+    ],
+  },
+
+  // ── Groningen — capital of Groningen province, Netherlands ─────────────────
+  "NL-GR": {
+    description:
+      "Groningen's city flag is three horizontal bands of white, green and white — the city's colours, " +
+      "taken (like its coat of arms) from the arms of the mediaeval Groningen prefects.",
+    sources: [
+      { title: "Vlag van Groningen (stad) — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Groningen_(stad)" },
+    ],
+  },
+
+  // ── Maastricht — capital of Limburg, Netherlands ───────────────────────────
+  "NL-LI": {
+    description:
+      "Maastricht's flag is a red field bearing a white five-pointed star — the ‘Star of Maastricht’, " +
+      "standing for the city's independence, its tradition, and the important role it has played through " +
+      "the centuries.",
+    sources: [
+      { title: "Vlag van Maastricht — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Maastricht" },
+    ],
+  },
+
+  // ── Zwolle — capital of Overijssel, Netherlands ────────────────────────────
+  "NL-OV": {
+    description:
+      "Zwolle's flag is blue with a white cross. The colours are those of Saint Michael, the city's patron: " +
+      "blue was taken as Michael's colour because, in the Book of Revelation, the archangel leads the " +
+      "heavenly host against the devil.",
+    sources: [
+      { title: "Vlag van Zwolle — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Zwolle" },
+    ],
+  },
+
+  // ── Middelburg — capital of Zeeland, Netherlands ───────────────────────────
+  "NL-ZE": {
+    description:
+      "Middelburg's flag is red bearing the same golden tower as its coat of arms — a double tower (a tower " +
+      "topped by a smaller one). It stands for the historic castle (burcht) set between two others, which " +
+      "gave Middelburg — the ‘middle burgh’ — its name.",
+    sources: [
+      { title: "Vlag van Middelburg — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Middelburg" },
+    ],
+  },
+
   // ── Haarlem — capital of North Holland, Netherlands ────────────────────────
   "NL-NH": {
     description:
