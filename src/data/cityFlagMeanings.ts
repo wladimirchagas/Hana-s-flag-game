@@ -7930,6 +7930,18 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Calabar — capital of Cross River State, Nigeria ────────────────────────
+  "NG-CR": {
+    description:
+      "Calabar's flag is a red-over-green field crossed by a yellow cross (in the St George's manner), with " +
+      "a yellow star in the upper hoist. The red, green and yellow are the Pan-African colours; the cross " +
+      "stands for Christianity, long established in Calabar; and the star for the unity of the region's " +
+      "peoples.",
+    sources: [
+      { title: "Calabar (Nigeria) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ng%7Dcal.html" },
+    ],
+  },
+
   // ── Windhoek — capital of the Khomas Region and of Namibia ─────────────────
   "NA-KH": {
     description:
