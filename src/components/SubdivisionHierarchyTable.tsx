@@ -30,6 +30,14 @@ import type { SubdivisionMeta } from "../types/subdivision";
  * Every row is clickable exactly like the chart's nodes, driving the same
  * selection callbacks (map highlight + widget), and no flag is ever wrapped
  * in a bordered "card" — this view is deliberately flatter than the grid/tree.
+ *
+ * Built with CSS Grid (a `role="table"` container of `display: contents` row
+ * wrappers, each contributing 3 cells straight into the shared grid tracks)
+ * rather than a real `<table>`. A real `<table>` with `table-layout: fixed`
+ * and flex/aspect-ratio content inside it hit a Safari/iOS layout bug
+ * (reported 2026-07): rows collapsed to a single huge blank row instead of
+ * ~40px each. CSS Grid sidesteps the browser's table layout algorithm
+ * entirely while keeping the exact same 3-column visual result.
  */
 
 type Row =
@@ -176,110 +184,99 @@ export function SubdivisionHierarchyTable({
         {countryName} — whole country
       </button>
 
-      <div className="hierarchy-table__scroll">
-        <table className="hierarchy-table">
-          <colgroup>
-            <col className="hierarchy-table__col-type" />
-            <col />
-            <col />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">Type</th>
-              <th scope="col">Sub-national flag</th>
-              <th scope="col">Capital city flag</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((row) => {
-              if (row.kind === "sub") {
-                const { div, subFlag, subCapitalRole, capitalLeaf, typeLabel } = row;
-                const subActive = !capitalActive && div.code === selectedCode;
-                return (
-                  <tr key={row.key}>
-                    <td className="hierarchy-table__type">{typeLabel}</td>
-                    <td>
-                      <FlagCell
-                        flagPath={subFlag}
-                        name={div.name}
-                        badge={subCapitalRole}
-                        active={subActive}
-                        onClick={() => onSelectSubdivision(div.code)}
-                        ariaLabel={
-                          subCapitalRole
-                            ? `Select ${div.name} — national capital of ${countryName}`
-                            : `Select ${div.name}`
-                        }
-                      />
-                    </td>
-                    <td>
-                      {capitalLeaf ? (
-                        <FlagCell
-                          flagPath={capitalLeaf.flagPath ? `${baseUrl}${capitalLeaf.flagPath}` : null}
-                          name={capitalLeaf.name}
-                          badge={capitalLeaf.role}
-                          active={capitalActive && div.code === selectedCode}
-                          onClick={() => onSelectCapital(div.code)}
-                          ariaLabel={
-                            capitalLeaf.role
-                              ? `Select ${capitalLeaf.name}, capital of ${div.name} and national capital of ${countryName}`
-                              : `Select ${capitalLeaf.name}, capital of ${div.name}`
-                          }
-                        />
-                      ) : (
-                        <span className="hierarchy-table__empty" aria-hidden="true">—</span>
-                      )}
-                    </td>
-                  </tr>
-                );
-              }
-              if (row.kind === "national-extra") {
-                const { leaf } = row;
-                return (
-                  <tr key={row.key}>
-                    <td className="hierarchy-table__type">National capital</td>
-                    <td>
-                      <span className="hierarchy-table__empty" aria-hidden="true">—</span>
-                    </td>
-                    <td>
-                      <FlagCell
-                        flagPath={leaf.flagPath ? `${baseUrl}${leaf.flagPath}` : null}
-                        name={leaf.name}
-                        badge={leaf.role}
-                        active={activeNationalCapital === leaf.name}
-                        onClick={() =>
-                          onSelectNationalCapital({ name: leaf.name, note: leaf.note, flagPath: leaf.flagPath })
-                        }
-                        ariaLabel={`Select ${leaf.name}, national capital of ${countryName}`}
-                      />
-                    </td>
-                  </tr>
-                );
-              }
-              // national-standalone
-              const flagPath =
-                NATIONAL_CAPITAL_FLAGS[`${countryCode}|${normalizeForSearch(row.name)}`] ?? null;
-              return (
-                <tr key={row.key}>
-                  <td className="hierarchy-table__type">National capital</td>
-                  <td>
-                    <span className="hierarchy-table__empty" aria-hidden="true">—</span>
-                  </td>
-                  <td>
+      <div className="hierarchy-table" role="table" aria-label={`${countryName} hierarchy table`}>
+        <div className="hierarchy-table__row" role="row">
+          <div className="hierarchy-table__th" role="columnheader">Type</div>
+          <div className="hierarchy-table__th" role="columnheader">Sub-national flag</div>
+          <div className="hierarchy-table__th" role="columnheader">Capital city flag</div>
+        </div>
+        {rows.map((row) => {
+          if (row.kind === "sub") {
+            const { div, subFlag, subCapitalRole, capitalLeaf, typeLabel } = row;
+            const subActive = !capitalActive && div.code === selectedCode;
+            return (
+              <div className="hierarchy-table__row" role="row" key={row.key}>
+                <div className="hierarchy-table__type" role="cell">{typeLabel}</div>
+                <div className="hierarchy-table__cellwrap" role="cell">
+                  <FlagCell
+                    flagPath={subFlag}
+                    name={div.name}
+                    badge={subCapitalRole}
+                    active={subActive}
+                    onClick={() => onSelectSubdivision(div.code)}
+                    ariaLabel={
+                      subCapitalRole
+                        ? `Select ${div.name} — national capital of ${countryName}`
+                        : `Select ${div.name}`
+                    }
+                  />
+                </div>
+                <div className="hierarchy-table__cellwrap" role="cell">
+                  {capitalLeaf ? (
                     <FlagCell
-                      flagPath={flagPath ? `${baseUrl}${flagPath}` : null}
-                      name={row.name}
-                      badge={row.note ?? "National capital"}
-                      active={activeNationalCapital === row.name}
-                      onClick={() => onSelectNationalCapital({ name: row.name, note: row.note, flagPath })}
-                      ariaLabel={`Select ${row.name}, national capital of ${countryName}`}
+                      flagPath={capitalLeaf.flagPath ? `${baseUrl}${capitalLeaf.flagPath}` : null}
+                      name={capitalLeaf.name}
+                      badge={capitalLeaf.role}
+                      active={capitalActive && div.code === selectedCode}
+                      onClick={() => onSelectCapital(div.code)}
+                      ariaLabel={
+                        capitalLeaf.role
+                          ? `Select ${capitalLeaf.name}, capital of ${div.name} and national capital of ${countryName}`
+                          : `Select ${capitalLeaf.name}, capital of ${div.name}`
+                      }
                     />
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+                  ) : (
+                    <span className="hierarchy-table__empty" aria-hidden="true">—</span>
+                  )}
+                </div>
+              </div>
+            );
+          }
+          if (row.kind === "national-extra") {
+            const { leaf } = row;
+            return (
+              <div className="hierarchy-table__row" role="row" key={row.key}>
+                <div className="hierarchy-table__type" role="cell">National capital</div>
+                <div className="hierarchy-table__cellwrap" role="cell">
+                  <span className="hierarchy-table__empty" aria-hidden="true">—</span>
+                </div>
+                <div className="hierarchy-table__cellwrap" role="cell">
+                  <FlagCell
+                    flagPath={leaf.flagPath ? `${baseUrl}${leaf.flagPath}` : null}
+                    name={leaf.name}
+                    badge={leaf.role}
+                    active={activeNationalCapital === leaf.name}
+                    onClick={() =>
+                      onSelectNationalCapital({ name: leaf.name, note: leaf.note, flagPath: leaf.flagPath })
+                    }
+                    ariaLabel={`Select ${leaf.name}, national capital of ${countryName}`}
+                  />
+                </div>
+              </div>
+            );
+          }
+          // national-standalone
+          const flagPath =
+            NATIONAL_CAPITAL_FLAGS[`${countryCode}|${normalizeForSearch(row.name)}`] ?? null;
+          return (
+            <div className="hierarchy-table__row" role="row" key={row.key}>
+              <div className="hierarchy-table__type" role="cell">National capital</div>
+              <div className="hierarchy-table__cellwrap" role="cell">
+                <span className="hierarchy-table__empty" aria-hidden="true">—</span>
+              </div>
+              <div className="hierarchy-table__cellwrap" role="cell">
+                <FlagCell
+                  flagPath={flagPath ? `${baseUrl}${flagPath}` : null}
+                  name={row.name}
+                  badge={row.note ?? "National capital"}
+                  active={activeNationalCapital === row.name}
+                  onClick={() => onSelectNationalCapital({ name: row.name, note: row.note, flagPath })}
+                  ariaLabel={`Select ${row.name}, national capital of ${countryName}`}
+                />
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
