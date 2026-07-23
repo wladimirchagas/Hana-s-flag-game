@@ -2203,22 +2203,30 @@
 
 .hierarchy-table__thumb--country {
   width: 1.9em;
+  height: 1.27em;
 }
 
-/* No overflow-x on any ancestor — the table must always fit the viewport
+/* Built with CSS Grid, NOT a real <table> — table-layout:fixed combined with
+   flex/aspect-ratio content inside <td>/<button> hit a Safari/iOS bug
+   (reported 2026-07) where rows collapsed into one huge blank row instead of
+   ~40px each. Grid sidesteps the browser table-layout algorithm entirely.
+   Each ".hierarchy-table__row" is `display: contents` so its 3 direct
+   children (type/flag/flag) flow straight into these 3 grid tracks, exactly
+   like <tr><td> would — but without the table layout engine.
+   No overflow-x on any ancestor — the table must always fit the viewport
    (hard rule: all 3 columns visible at once, no horizontal scroll, incl. on
    phones). Column widths + shrinking thumbs/text do the fitting instead. */
 .hierarchy-table {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1.5fr);
   width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
 }
 
-.hierarchy-table__col-type {
-  width: 26%;
+.hierarchy-table__row {
+  display: contents;
 }
 
-.hierarchy-table th {
+.hierarchy-table__th {
   text-align: left;
   font-size: 0.68rem;
   font-weight: 700;
@@ -2229,14 +2237,21 @@
   border-bottom: 2px solid var(--ink);
 }
 
-.hierarchy-table td {
+.hierarchy-table__type,
+.hierarchy-table__cellwrap {
+  display: flex;
+  align-items: center;
   padding: 0.3rem;
   border-bottom: 1px solid var(--ink-soft);
-  vertical-align: middle;
   min-width: 0;
+  min-height: 0;
 }
 
-.hierarchy-table tr:last-child td {
+/* :last-child evaluates against the row wrapper's own siblings (all real DOM
+   nodes, unaffected by display:contents), so this correctly targets only the
+   very last logical row's 3 cells. */
+.hierarchy-table__row:last-child > .hierarchy-table__type,
+.hierarchy-table__row:last-child > .hierarchy-table__cellwrap {
   border-bottom: none;
 }
 
@@ -2260,6 +2275,7 @@
   gap: 0.4rem;
   width: 100%;
   min-width: 0;
+  min-height: 0;
   font-family: inherit;
   color: var(--ink);
   background: transparent;
@@ -2282,12 +2298,16 @@
   color: var(--ink-fixed);
 }
 
+/* Explicit width AND height (not `aspect-ratio`) — deliberately avoids the
+   Safari flex-item + aspect-ratio interaction implicated in the row-collapse
+   bug above; `object-fit: contain` on the image still letterboxes any real
+   flag ratio correctly inside this fixed box. */
 .hierarchy-table__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2.3em;
-  aspect-ratio: 3 / 2;
+  height: 1.53em;
   flex: 0 0 auto;
 }
 
@@ -2365,13 +2385,14 @@
 
   /* Hierarchy table — narrower type column and smaller thumb/text so all 3
      columns keep fitting without any horizontal scroll down to ~320px wide. */
-  .hierarchy-table__col-type {
-    width: 22%;
+  .hierarchy-table {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.5fr) minmax(0, 1.5fr);
   }
   .hierarchy-table__type {
     font-size: 0.68rem;
   }
-  .hierarchy-table td {
+  .hierarchy-table__type,
+  .hierarchy-table__cellwrap {
     padding: 0.22rem;
   }
   .hierarchy-table__cell {
@@ -2380,6 +2401,7 @@
   }
   .hierarchy-table__thumb {
     width: 1.9em;
+    height: 1.27em;
   }
   .hierarchy-table__name {
     font-size: 0.7rem;
