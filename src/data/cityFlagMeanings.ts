@@ -7930,6 +7930,72 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Arequipa — capital of Arequipa, Peru ───────────────────────────────────
+  "PE-ARE": {
+    description:
+      "Arequipa's arms centre on the Misti, the volcano over the city, with the river Chili and trees " +
+      "beside it for the region's countryside. Golden lions stand for bravery and a warrior spirit, and " +
+      "eight fleurs-de-lis for nobility and purity.",
+    sources: [
+      { title: "Escudo de Arequipa — arequipaperu.org", url: "https://www.arequipaperu.org/escudo" },
+    ],
+  },
+
+  // ── Trujillo — capital of La Libertad, Peru ────────────────────────────────
+  "PE-LAL": {
+    description:
+      "Trujillo's arms were granted by King Carlos I of Spain in 1537. On the blue shield stand two columns " +
+      "over waves of water, a crown between them, and the letter K — for ‘Karolus’, the king's name — while " +
+      "above sits a griffin, the mythical half-eagle, half-lion.",
+    sources: [
+      { title: "Escudo de Trujillo (Perú) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Trujillo_(Per%C3%BA)" },
+    ],
+  },
+
+  // ── Cajamarca — capital of Cajamarca, Peru ─────────────────────────────────
+  "PE-CAJ": {
+    description:
+      "Cajamarca — titled ‘Ciudad de Cajamarca la Grande’ — bears in its arms half of a black eagle, for " +
+      "the swiftness of the Spanish conquest here (where Atahualpa was seized), and a palm branch for " +
+      "victory and the city's fidelity to the crown.",
+    sources: [
+      { title: "El escudo de Cajamarca — cajamarca-sucesos.com", url: "https://www.cajamarca-sucesos.com/cajamarca/Sintesis%20historica%20de%20Cajamarca/el_escudo_de_cajamarca.htm" },
+    ],
+  },
+
+  // ── Piura — capital of Piura, Peru ─────────────────────────────────────────
+  "PE-PIU": {
+    description:
+      "Piura's arms, granted by Emperor Carlos V in 1537, show a winged fist reaching from the clouds and " +
+      "holding a golden balance before a three-towered castle — the Archangel Saint Michael, patron of San " +
+      "Miguel de Piura, weighing souls.",
+    sources: [
+      { title: "Escudo de Piura — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Piura" },
+    ],
+  },
+
+  // ── Tacna — capital of Tacna, Peru ─────────────────────────────────────────
+  "PE-TAC": {
+    description:
+      "Tacna's arms bear a golden rampant lion for the warrior, watchful and sovereign spirit of its " +
+      "people, charged with a pomegranate — a local fruit — for abundance and unity, all framed by the " +
+      "title ‘Heroica Ciudad de San Pedro de Tacna’.",
+    sources: [
+      { title: "Oficializan el escudo de Tacna — Diario Correo", url: "https://diariocorreo.pe/peru/oficializan-el-escudo-de-tacna-287341/" },
+    ],
+  },
+
+  // ── Callao — capital of the Callao Region, Peru ────────────────────────────
+  "PE-CAL": {
+    description:
+      "Callao's arms centre on the Real Felipe, the great 18th-century fortress guarding the port. The " +
+      "‘chalaco’ emblem descends from the Callao medal struck in 1821, and the castle stands as guardian of " +
+      "the nation and of the port-city's heroic spirit.",
+    sources: [
+      { title: "Escudo del Callao — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_del_Callao" },
+    ],
+  },
+
   // ── Panama City — capital of Panamá Province and of Panama ─────────────────
   "PA-8": {
     description:
