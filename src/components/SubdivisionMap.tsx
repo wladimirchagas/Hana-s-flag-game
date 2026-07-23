@@ -747,22 +747,22 @@ export function SubdivisionMap({
           <button
             type="button"
             className="world-map__zoom-btn"
-            onClick={zoom.zoomIn}
-            disabled={!zoom.canZoomIn}
-            aria-label="Zoom in"
-            title="Zoom in"
-          >
-            +
-          </button>
-          <button
-            type="button"
-            className="world-map__zoom-btn"
             onClick={zoom.zoomOut}
             disabled={!zoom.canZoomOut}
             aria-label="Zoom out"
             title="Zoom out"
           >
             −
+          </button>
+          <button
+            type="button"
+            className="world-map__zoom-btn"
+            onClick={zoom.zoomIn}
+            disabled={!zoom.canZoomIn}
+            aria-label="Zoom in"
+            title="Zoom in"
+          >
+            +
           </button>
           <button
             type="button"
