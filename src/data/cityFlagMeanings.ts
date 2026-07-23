@@ -7930,6 +7930,73 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Wellington — capital of the Wellington Region and of New Zealand ───────
+  "NZ-WGN": {
+    description:
+      "Wellington's flag is gold with a black cross and, at its centre in a blue disc, a sailing ship (a " +
+      "lymphad) bearing a dolphin on its sail — both taken from the city's coat of arms.",
+    sources: [
+      { title: "Flag of Wellington — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wellington" },
+    ],
+  },
+
+  // ── Christchurch — capital of Canterbury, New Zealand ──────────────────────
+  "NZ-CAN": {
+    description:
+      "Christchurch's arms (granted 1949) carry four ships (lymphads) for the ‘First Four Ships’ — the " +
+      "Charlotte Jane, Randolph, Sir George Seymour and Cressy — that brought the Canterbury settlers to " +
+      "Lyttelton in 1850; a bishop's mitre, for the city founded as a Church of England settlement and made " +
+      "a bishop's see; and, at the base, a fleece and a wheatsheaf for wool and grain, over wavy blue bars " +
+      "for water.",
+    sources: [
+      { title: "Coat of arms of the City of Christchurch — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_City_of_Christchurch" },
+    ],
+  },
+
+  // ── Nelson — capital of the Nelson Region, New Zealand ─────────────────────
+  "NZ-NSN": {
+    description:
+      "Nelson's flag joins a bishop's mitre — Nelson is a cathedral city, seat of its bishop since 1858 — " +
+      "wavy blue and white bands for the city beside the sea, and a black cross taken from the arms of " +
+      "Admiral Lord Nelson, after whom the city is named.",
+    sources: [
+      { title: "Flag of the City of Nelson — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_City_of_Nelson" },
+    ],
+  },
+
+  // ── Napier — capital of Hawke's Bay, New Zealand ───────────────────────────
+  "NZ-HKB": {
+    description:
+      "Napier's flag bears three red roses from the arms of Lord Napier and Ettrick — a descendant of Sir " +
+      "Charles Napier, for whom the city is named — a golden fleece for the wool industry of which Napier " +
+      "is a great centre, and blue waves for the sea.",
+    sources: [
+      { title: "Napier (New Zealand) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/nz-nap.html" },
+    ],
+  },
+
+  // ── Dunedin — capital of Otago, New Zealand ────────────────────────────────
+  "NZ-OTA": {
+    description:
+      "Dunedin's arms take their castle from the arms of Edinburgh, whose Gaelic name (Dùn Èideann) the " +
+      "city bears. A green band across the shield is the farming country of Otago — a golden ram's head for " +
+      "its wool and mutton and golden sheaves for its grain — and a ship recalls the settlers' arrival.",
+    sources: [
+      { title: "Coat of Arms, Dunedin City — Te Ara Encyclopedia of New Zealand", url: "https://teara.govt.nz/en/1966/27241/coat-of-arms-dunedin-city" },
+    ],
+  },
+
+  // ── Hamilton — capital of Waikato, New Zealand ─────────────────────────────
+  "NZ-WKO": {
+    description:
+      "Hamilton's arms picture the ebb and flow of the Waikato River that runs through the city, with oxen " +
+      "for the green pastures and the city's place as a farming centre; the shield is supported by two " +
+      "pūkeko, the native swamp-hens of the Waikato wetlands.",
+    sources: [
+      { title: "Coat of arms of Hamilton, New Zealand — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hamilton,_New_Zealand" },
+    ],
+  },
+
   // ── Kathmandu — capital of Bagmati Province and of Nepal ───────────────────
   "NP-BA": {
     description:
