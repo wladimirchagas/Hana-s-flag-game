@@ -23,12 +23,20 @@
   --sky: #4ecdc4;
   --lime: #7ed957;
   --pink: #ff8fbf;
-  /* Two more accent hues, added for the hierarchy table's per-type badges
+  /* Four more accent hues, added for the hierarchy table's per-type badges
      (src/components/SubdivisionHierarchyTable.tsx) — --coral is reserved for
      "National capital" and --sky doubles as the row active-state background,
-     so subdivision-type badges draw from lime/mustard/pink plus these two. */
+     so subdivision-type badges draw from lime/mustard/pink plus these four.
+     The palette must have AT LEAST as many colours as the largest number of
+     distinct subdivision types any single country shows at once (Russia: 6,
+     as of 2026-07) — see check-hierarchy-type-colors.mjs, which fails the
+     build if that ever stops holding. --amber and --slate were added
+     specifically to fix a colour collision (Argentina's "Autonomous City"
+     and "National Territory" both landing on the same hashed colour). */
   --azure: #6fa8ff;
   --violet: #b78bfa;
+  --amber: #ffab4a;
+  --slate: #8fa3c7;
   --shadow: 0 8px 0 var(--ink), 0 14px 24px rgba(26, 34, 56, 0.18);
   --shadow-soft: 0 6px 18px rgba(26, 34, 56, 0.12);
   --radius-lg: 22px;
@@ -60,6 +68,8 @@
   --pink: #ff9fc8;
   --azure: #8fc1ff;
   --violet: #cba6ff;
+  --amber: #ffbf70;
+  --slate: #a8bce0;
   --shadow: 0 8px 0 #0a0e1d, 0 14px 24px rgba(0, 0, 0, 0.55);
   --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.45);
 }

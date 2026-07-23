@@ -29,6 +29,9 @@ on:
       - "scripts/check-capital-flags.mjs"
       - "scripts/check-capital-subdivision-collision.mjs"
       - "scripts/build-capital-details.mjs"
+      - "scripts/check-hierarchy-type-colors.mjs"
+      - "src/components/SubdivisionHierarchyTable.tsx"
+      - "src/index.css"
 
 jobs:
   check-proportions:
@@ -45,6 +48,9 @@ jobs:
 
       - name: Verify every renderable subdivision has a SUBDIVISION_META entry
         run: node scripts/check-subdivision-meta-coverage.mjs
+
+      - name: Verify the hierarchy table's type-colour palette has enough colours for every country
+        run: node scripts/check-hierarchy-type-colors.mjs
 
   check-parent-collision:
     runs-on: ubuntu-latest

@@ -2327,7 +2327,7 @@
 
 /* Colour-coded pill — background set inline by the component
    (style.background, per subdivision type or capital-of-type; see
-   typeBadgeColor()/NATIONAL_CAPITAL_COLOR). Same fixed-contrast
+   assignTypeColors()/NATIONAL_CAPITAL_COLOR). Same fixed-contrast
    text-on-bright-accent pairing used everywhere else in the app (the org
    chart's ★ National-capital pill, etc.) so contrast stays correct in both
    themes without a dark-mode-specific override. The AutoFitName text lives
