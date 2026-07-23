@@ -2166,46 +2166,6 @@
   color: var(--ink-fixed);
 }
 
-/* The "whole country" button sits above the table — the table's 3 columns are
-   reserved for subdivisions/capitals only, so selecting the country (which
-   clears the drill-down, same as clicking the chart's root node) lives here
-   instead of as a fourth column. */
-.hierarchy-table__country {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  max-width: 100%;
-  font-family: inherit;
-  font-size: 0.86rem;
-  font-weight: 700;
-  color: var(--ink);
-  background: var(--paper);
-  border: 3px solid var(--ink);
-  border-radius: 10px;
-  box-shadow: 0 2px 0 var(--ink);
-  padding: 0.3rem 0.9rem 0.3rem 0.3rem;
-  cursor: pointer;
-  margin: 0 0 1rem;
-  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
-}
-
-.hierarchy-table__country:hover,
-.hierarchy-table__country:focus-visible {
-  outline: none;
-  transform: translateY(-1px);
-  box-shadow: 0 3px 0 var(--ink);
-}
-
-.hierarchy-table__country--active {
-  background: var(--sky);
-  color: var(--ink-fixed);
-}
-
-.hierarchy-table__thumb--country {
-  width: 1.9em;
-  height: 1.27em;
-}
-
 /* Built with CSS Grid, NOT a real <table> — table-layout:fixed combined with
    flex/aspect-ratio content inside <td>/<button> hit a Safari/iOS bug
    (reported 2026-07) where rows collapsed into one huge blank row instead of
@@ -2390,6 +2350,18 @@
   display: inline-block;
 }
 
+/* The nation row's capital-city cell for a multi-capital nation (South
+   Africa, Bolivia, …) — stacks every seat's flag/name/badge in the one cell
+   instead of cramming them side by side. This is the one place a row's
+   height can legitimately exceed the uniform subdivision-row height (it's a
+   one-off summary row, not a peer of the subdivision list below it). */
+.hierarchy-table__capital-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 /* Phones — slightly tighter tiles and a more compact toolbar. */
 @media (max-width: 540px) {
   .flag-grid {
@@ -2442,10 +2414,6 @@
   .hierarchy-table__badge {
     font-size: 0.5rem;
     padding: 0.08rem 0.32rem;
-  }
-  .hierarchy-table__country {
-    font-size: 0.78rem;
-    padding: 0.28rem 0.7rem 0.28rem 0.28rem;
   }
 }
 

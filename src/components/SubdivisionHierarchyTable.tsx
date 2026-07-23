@@ -1,4 +1,5 @@
 import { AutoFitName } from "./AutoFitName";
+import { NATIONAL_CITIES } from "../data/cities";
 import { NATIONAL_CAPITAL_FLAGS } from "../data/nationalCapitalFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
 import { useHierarchyData, type HierarchyLeaf } from "../lib/hierarchyData";
@@ -11,21 +12,31 @@ import type { SubdivisionMeta } from "../types/subdivision";
  * which flag/capital each one has), rendered as a flat 3-column table instead
  * of an org chart:
  *
- *   Type | Sub-national flag | Capital city flag
+ *   Type | Flag | Capital city flag
  *
- * One row per subdivision. A subdivision that ALSO hosts a national capital
- * that heads no subdivision of its own (Ottawa sits inside Ontario, which
- * keeps its own capital Toronto) gets an EXTRA row directly below it, typed
- * "National capital", so both capitals are visible without cramming two
- * cities into one cell. A capital that heads no subdivision AND could not be
- * geographically placed inside one at all falls back to its own
+ * The FIRST row is always the nation itself: its own flag in column 2 and
+ * its national capital(s) in column 3 (a multi-capital nation like South
+ * Africa stacks all of them in that one cell) — a quick-glance summary row
+ * before the per-subdivision rows below it. The "Flag" header (rather than
+ * "Sub-national flag") is deliberately generic: this column holds the
+ * NATION's flag on this first row and each SUBDIVISION's flag on every row
+ * after it, so no single narrower label fits every row.
+ *
+ * One row per subdivision follows. A subdivision that ALSO hosts a national
+ * capital that heads no subdivision of its own (Ottawa sits inside Ontario,
+ * which keeps its own capital Toronto) gets an EXTRA row directly below it,
+ * typed "National capital", so both capitals are visible without cramming
+ * two cities into one cell. A capital that heads no subdivision AND could
+ * not be geographically placed inside one at all falls back to its own
  * "National capital" row at the end, mirroring the chart's standalone group.
+ * (These capitals are shown a second time, deliberately — the nation row is
+ * a summary, these rows show which subdivision actually hosts each one.)
  *
  * A subdivision that IS the national capital itself (a city-territory whose
  * own leaf would be tautological — Kuala Lumpur, Tokyo) shows the ★ badge on
- * its own row's sub-national flag cell and leaves the capital-city cell
- * empty, exactly as the chart marks the node in place instead of duplicating
- * it — never invent a second entity to fill the cell.
+ * its own row's flag cell and leaves the capital-city cell empty, exactly as
+ * the chart marks the node in place instead of duplicating it — never invent
+ * a second entity to fill the cell.
  *
  * Every row is clickable exactly like the chart's nodes, driving the same
  * selection callbacks (map highlight + widget), and no flag is ever wrapped
@@ -170,30 +181,57 @@ export function SubdivisionHierarchyTable({
   }
 
   const rootActive = !selectedCode;
+  // The nation's own capital(s) — the full authoritative list (NOT the
+  // hook's `standaloneCaps`, which only holds the ones left over after
+  // subdivision/leaf placement). A multi-capital nation (South Africa,
+  // Bolivia, …) shows every seat stacked in this one summary cell.
+  const nationalCaps = NATIONAL_CITIES[countryCode]?.capitals ?? [];
 
   return (
     <div className="hierarchy-table-wrap">
-      <button
-        type="button"
-        className={`hierarchy-table__country${rootActive ? " hierarchy-table__country--active" : ""}`}
-        onClick={onSelectCountry}
-        aria-pressed={rootActive}
-      >
-        <span className="hierarchy-table__thumb hierarchy-table__thumb--country">
-          {countryFlagUrl ? (
-            <img src={countryFlagUrl} alt="" loading="lazy" draggable={false} className="hierarchy-table__thumb-img" />
-          ) : (
-            <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
-          )}
-        </span>
-        {countryName} — whole country
-      </button>
-
       <div className="hierarchy-table" role="table" aria-label={`${countryName} hierarchy table`}>
         <div className="hierarchy-table__row" role="row">
           <div className="hierarchy-table__th" role="columnheader">Type</div>
-          <div className="hierarchy-table__th" role="columnheader">Sub-national flag</div>
+          <div className="hierarchy-table__th" role="columnheader">Flag</div>
           <div className="hierarchy-table__th" role="columnheader">Capital city flag</div>
+        </div>
+        <div className="hierarchy-table__row" role="row">
+          <div className="hierarchy-table__type" role="cell">Nation</div>
+          <div className="hierarchy-table__cellwrap" role="cell">
+            <FlagCell
+              flagPath={countryFlagUrl}
+              name={countryName}
+              badge={null}
+              active={rootActive}
+              onClick={onSelectCountry}
+              ariaLabel={`Select ${countryName}`}
+            />
+          </div>
+          <div className="hierarchy-table__cellwrap" role="cell">
+            {nationalCaps.length > 0 ? (
+              <div className="hierarchy-table__capital-stack">
+                {nationalCaps.map((cap) => {
+                  const capFlagPath =
+                    NATIONAL_CAPITAL_FLAGS[`${countryCode}|${normalizeForSearch(cap.name)}`] ?? null;
+                  return (
+                    <FlagCell
+                      key={cap.name}
+                      flagPath={capFlagPath ? `${baseUrl}${capFlagPath}` : null}
+                      name={cap.name}
+                      badge={cap.note ?? "National capital"}
+                      active={activeNationalCapital === cap.name}
+                      onClick={() =>
+                        onSelectNationalCapital({ name: cap.name, note: cap.note ?? null, flagPath: capFlagPath })
+                      }
+                      ariaLabel={`Select ${cap.name}, national capital of ${countryName}`}
+                    />
+                  );
+                })}
+              </div>
+            ) : (
+              <span className="hierarchy-table__empty" aria-hidden="true">—</span>
+            )}
+          </div>
         </div>
         {rows.map((row) => {
           if (row.kind === "sub") {
