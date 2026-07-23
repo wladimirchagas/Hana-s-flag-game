@@ -7930,6 +7930,29 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Guadalajara — capital of Jalisco, Mexico ───────────────────────────────
+  "MX-JAL": {
+    description:
+      "Guadalajara's arms — granted by Emperor Charles V in 1539 — are a blue shield with two golden lions " +
+      "rampant leaning on a golden pine tree. The lions stand for the city's warrior, watchful and generous " +
+      "spirit — vigilance, sovereignty, majesty and bravery — and the pine for perseverance; the city flag " +
+      "sets the arms on a blue-gold-blue field.",
+    sources: [
+      { title: "Escudo de Guadalajara (Jalisco) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Guadalajara_(Jalisco)" },
+    ],
+  },
+
+  // ── Mérida — capital of Yucatán, Mexico ────────────────────────────────────
+  "MX-YUC": {
+    description:
+      "Mérida's arms were granted by King Philip III in 1618. The shield is parted in two: a golden castle " +
+      "on blue, and a golden lion rampant on green — the castle and lion of the arms of Mérida in Spain, " +
+      "after which the Yucatán city was named. It is titled the ‘Very Noble and Very Loyal City of Mérida’.",
+    sources: [
+      { title: "Escudo de armas de Mérida (México) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_armas_de_Mérida_(México)" },
+    ],
+  },
+
   // ── Erdenet — capital of Orkhon Province, Mongolia ─────────────────────────
   "MN-035": {
     description:
