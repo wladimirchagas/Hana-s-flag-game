@@ -45,10 +45,20 @@ function starPath(R: number): string {
   return `M${pts.join("L")}Z`;
 }
 
+// Colour of the "this is the specific capital you selected" ring — the same
+// teal/"--sky" accent the app already uses everywhere else for a selected
+// item (the selected subdivision's map fill, the active flag-grid card, …),
+// so a selected capital reads as "selected" the same way a selected
+// subdivision does. Deliberately distinct from the coral national-capital
+// fill and the dark map stroke used by the dual-level ring, so it never
+// blends into either.
+const SELECTED_RING_STROKE = "#4ecdc4";
+
 function Marker({
   city,
   stroke,
   showLabel,
+  selected,
   labelHalo,
   labelFill,
   unitPx,
@@ -56,6 +66,13 @@ function Marker({
   city: PlacedCity;
   stroke: string;
   showLabel: boolean;
+  /** True when this marker is the EXACT capital the user just selected (via
+   *  the city-flags grid, the hierarchy chart, or picking a subdivision) —
+   *  distinct from `showLabel`, which several markers can carry at once
+   *  (e.g. every national capital on a subdivision map is always labelled).
+   *  Draws a highlighted ring so the specific selected capital is visually
+   *  identifiable among other already-labelled markers. */
+  selected: boolean;
   labelHalo: string;
   labelFill: string;
   /** Screen pixels per SVG user unit (rendered map width / viewBox width). Used
@@ -76,10 +93,14 @@ function Marker({
   const LABEL_PX = big ? 15 : 13; // constant on-screen font size
   const fontSize = LABEL_PX / scale;
   const haloPx = 3.2 / scale;
-  // The label sits centred ABOVE the star (clear of the dual-level ring), not
-  // beside it, so it stays readable and never overlaps the glyph or a neighbour's
-  // star (owner request 2026-07).
-  const labelY = -((dualLevel ? R * 1.7 : R) + 4 / scale);
+  // Selection ring sits OUTSIDE the dual-level ring (R*1.7) so both can be
+  // told apart when a city is national+subnational AND the one selected.
+  const selectedRingR = R * (dualLevel ? 2.2 : 1.9);
+  // The label sits centred ABOVE the star (clear of the dual-level/selection
+  // ring), not beside it, so it stays readable and never overlaps the glyph or
+  // a neighbour's star (owner request 2026-07).
+  const ringR = selected ? selectedRingR : dualLevel ? R * 1.7 : R;
+  const labelY = -(ringR + 4 / scale);
 
   const label = city.note ? `${city.name} · ${city.note}` : city.name;
 
@@ -89,6 +110,17 @@ function Marker({
     <g style={{ pointerEvents: "none" }}>
       {/* Accessible name (no tooltip needed — the marker is non-interactive). */}
       <title>{label}</title>
+      {/* Selected ring: the EXACT capital the user just picked — drawn first
+          (outermost/behind) so the dual-level ring and star sit on top. */}
+      {selected && (
+        <circle
+          r={selectedRingR}
+          fill="none"
+          stroke={SELECTED_RING_STROKE}
+          strokeWidth={1.6}
+          vectorEffect="non-scaling-stroke"
+        />
+      )}
       {/* Dual-level ring: the city is both a national and a subdivision capital. */}
       {dualLevel && (
         <circle
@@ -132,6 +164,7 @@ function Marker({
 export const CityMarkers = memo(function CityMarkers({
   markers,
   activeCode,
+  activeCityName,
   alwaysLabelNational = false,
   stroke,
   labelHalo,
@@ -141,6 +174,12 @@ export const CityMarkers = memo(function CityMarkers({
   markers: ScreenCity[];
   /** ISO code of the hovered/selected territory; that marker's name is revealed. */
   activeCode?: string | null;
+  /** Name of the EXACT capital the user selected (via the city-flags grid, the
+   *  hierarchy chart, or picking a subdivision) — distinct from `activeCode`,
+   *  which can match several markers at once (e.g. a country with several
+   *  national capitals). The one matching marker gets a highlighted ring so
+   *  the SPECIFIC selected capital is identifiable, not just "a" capital. */
+  activeCityName?: string | null;
   /** When true, every NATIONAL capital's name is labelled unconditionally (used on
    *  a country's own subdivision view so its capital is always named — its marker's
    *  ownerCode is often the subdivision code once it merges with a state capital, so
@@ -157,7 +196,9 @@ export const CityMarkers = memo(function CityMarkers({
     // Non-interactive container — the whole overlay is decorative (see HARD RULE).
     <g style={{ pointerEvents: "none" }} aria-hidden="true">
       {markers.map(({ city, x, y }) => {
+        const selected = !!activeCityName && city.name === activeCityName;
         const show =
+          selected ||
           (!!activeCode && city.ownerCode === activeCode) ||
           (alwaysLabelNational && isNational(city.roles));
         return (
@@ -166,6 +207,7 @@ export const CityMarkers = memo(function CityMarkers({
               city={city}
               stroke={stroke}
               showLabel={show}
+              selected={selected}
               labelHalo={labelHalo}
               labelFill={labelFill}
               unitPx={unitPx}

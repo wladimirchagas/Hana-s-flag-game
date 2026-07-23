@@ -183,6 +183,11 @@ type Props = {
   flagOverlay?: ReadonlyMap<string, string> | null;
   /** City markers: national capital(s)/largest + each subdivision's capital/largest. */
   cityOverlay?: PlacedCity[] | null;
+  /** Name of the EXACT capital currently selected (via the city-flags grid, the
+   *  hierarchy chart, or a subdivision pick) — highlights that one marker with a
+   *  ring so it's identifiable among other already-labelled capitals (see
+   *  CLAUDE.md "City overlay" rule: selecting a capital must show it on the map). */
+  activeCityName?: string | null;
   selectedCode?: string | null;
   onSelect?: (code: string) => void;
   onConfirm?: () => void;
@@ -205,6 +210,7 @@ export function SubdivisionMap({
   loading = false,
   flagOverlay = null,
   cityOverlay = null,
+  activeCityName = null,
   selectedCode = null,
   onSelect,
   onConfirm,
@@ -692,6 +698,7 @@ export function SubdivisionMap({
               <CityMarkers
                 markers={cityScreen}
                 activeCode={hoveredCode ?? selectedCode}
+                activeCityName={activeCityName}
                 // Always label the national capital on a country's own subdivision
                 // view (subdivision capitals still reveal only on hover/select) so a
                 // city-state with nothing to hover (Monaco, Vatican City) still shows
