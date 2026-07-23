@@ -7930,6 +7930,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Windhoek — capital of the Khomas Region and of Namibia ─────────────────
+  "NA-KH": {
+    description:
+      "The City of Windhoek's flag carries its logo — a stylised blue rendering of the Windhoek aloe " +
+      "(Aloe littoralis), the plant that stands at the centre of the city's coat of arms and is emblematic " +
+      "of the Namibian capital. The city's motto is ‘Suum Cuique’, Latin for ‘to each their own’.",
+    sources: [
+      { title: "Windhoek — Wikipedia", url: "https://en.wikipedia.org/wiki/Windhoek" },
+    ],
+  },
+
   // ── Mexicali — capital of Baja California, Mexico ──────────────────────────
   "MX-BCN": {
     description:
