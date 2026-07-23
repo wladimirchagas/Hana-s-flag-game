@@ -8104,6 +8104,56 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Bangued — capital of Abra, Philippines ────────────────────────────────
+  "PH-ABR": {
+    description:
+      "Bangued flies its municipal seal on a white field. The circular shape stands for the resiliency, " +
+      "versatility and cohesiveness of the townspeople; the inner ring in the red, white and blue of the " +
+      "national flag marks Bangued as part of the Republic of the Philippines; and a sunburst of 31 rays — " +
+      "one for each of the town's 31 barangays — expresses the people's optimism and hope, with the map of " +
+      "Bangued at its core.",
+    sources: [
+      { title: "Municipality of Bangued — Province of Abra (official)", url: "https://abra.gov.ph/municipalities/bangued/" },
+    ],
+  },
+
+  // ── Cabadbaran — capital of Agusan del Norte, Philippines ──────────────────
+  "PH-AGN": {
+    description:
+      "Cabadbaran City's seal reads its symbolism outward: a golden rope for the Cabadbaranons' shared " +
+      "aspiration for progress and prosperity; two white stars for their hospitable and peace-loving nature; " +
+      "thirty-one red stars for the city's 31 barangays; a blue strip for its abundant potable water; and a " +
+      "green map of the city for its agriculture, mineral resources and protected watershed. The date 2007 " +
+      "marks Cabadbaran's conversion into a city.",
+    sources: [
+      { title: "Cabadbaran City Seal — City Government of Cabadbaran (official)", url: "http://cabadbaranadn.gov.ph/cbr/index.php/cabadbaran-city-seal/" },
+    ],
+  },
+
+  // ── Baler — capital of Aurora, Philippines ────────────────────────────────
+  "PH-AUR": {
+    description:
+      "Baler's municipal seal marks the town and its province as coastal, set on the Pacific; the sun and its " +
+      "rays at the centre stand for the barangays at the heart of the town. Baler is the capital of Aurora, " +
+      "the province named for Aurora Aragón Quezon, who was born there.",
+    sources: [
+      { title: "Official Seal — Municipality of Baler (official)", url: "https://baler.gov.ph/official-seal/" },
+    ],
+  },
+
+  // ── Tagbilaran — capital of Bohol, Philippines ────────────────────────────
+  "PH-BOH": {
+    description:
+      "Tagbilaran City's seal depicts the Sandugo — the blood compact of 16 March 1565 between the Boholano " +
+      "chieftain Datu Sikatuna and the Spanish Miguel López de Legazpi, one of the first treaties of " +
+      "friendship in the islands. The ship marks where Legazpi landed and the pact was sealed, and the whole " +
+      "device proclaims Tagbilaran the “City of Peace and Friendship”.",
+    sources: [
+      { title: "Tagbilaran — Wikipedia", url: "https://en.wikipedia.org/wiki/Tagbilaran" },
+      { title: "Provincial Symbols of Bohol — bohol.ph", url: "https://www.bohol.ph/article35.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
