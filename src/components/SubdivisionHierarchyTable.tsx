@@ -273,11 +273,21 @@ export function SubdivisionHierarchyTable({
             const subActive = !capitalActive && div.code === selectedCode;
             const typeColor = typeBadgeColor(typeLabel);
             // The subdivision IS the national capital (tautological — Kuala
-            // Lumpur, Tokyo): no distinct capital-city entity exists, but the
-            // national-capital designation must still show SOMEWHERE, so
-            // column 3 self-references this same subdivision's flag/name.
+            // Lumpur, Tokyo, Buenos Aires): no distinct capital-city entity
+            // exists, but the national-capital designation must still show
+            // SOMEWHERE, so column 3 self-references this same subdivision's
+            // name. It must NOT also re-render the subdivision's flag image —
+            // that flag is already shown once in column 2, and repeating it
+            // in column 3 is exactly the flag-duplication the "a capital-city
+            // flag must never duplicate its own subdivision's flag" rule
+            // forbids (this shipped for Buenos Aires: the Autonomous City's
+            // eagle-crest flag was rendered a second time in the capital-city
+            // column). Brasília's row already gets this right — its shown
+            // capital-city leaf has its flag suppressed to null via
+            // SHARED_CAPITAL_FLAGS — so the self-capital fallback here must
+            // render the same way: name and badge only, no flag.
             const selfCapital = !capitalLeaf && subCapitalRole
-              ? { flagPath: subFlag, name: div.name, badge: `★ ${subCapitalRole}` }
+              ? { flagPath: null as string | null, name: div.name, badge: `★ ${subCapitalRole}` }
               : null;
             const capitalBadge = capitalLeaf?.role
               ? `★ ${capitalLeaf.role}`
