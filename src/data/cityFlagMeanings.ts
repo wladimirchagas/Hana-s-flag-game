@@ -7930,6 +7930,20 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Muscat — capital of the Muscat Governorate and of Oman ─────────────────
+  "OM-MA": {
+    description:
+      "Muscat flies a plain red banner — the historic flag of the Sultanate of Muscat, flown as early as " +
+      "the 8th century and kept until Sultan Qaboos introduced Oman's modern flag in 1970. Red was the " +
+      "traditional colour of the ruling Al Bu Said dynasty on the coast, set apart from the white flag of " +
+      "the Ibadi Imamate of the interior; in today's national flag that red is read as the battles fought " +
+      "against foreign invaders.",
+    sources: [
+      { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+      { title: "Sultanate of Muscat and Oman until 1970 — Flags of the World", url: "https://www.crwflags.com/fotw/flags/om_musca.html" },
+    ],
+  },
+
   // ── Invercargill — capital of Southland, New Zealand ───────────────────────
   "NZ-STL": {
     description:
