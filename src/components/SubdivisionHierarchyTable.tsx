@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, type CSSProperties } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_CAPITAL_FLAGS } from "../data/nationalCapitalFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
@@ -143,6 +143,40 @@ function assignTypeColors(typeLabels: string[]): Map<string, string> {
     next++;
   }
   return colorForLabel;
+}
+
+/**
+ * Background-image hairlines replicating the normal per-row border-bottom
+ * INSIDE a multi-row spanning wrapper (`.hierarchy-table__sticky-bounds`).
+ * The spanning subdivision card renders once, so without this, the row
+ * boundary it covers shows a divider in column 3 (each capital-city row
+ * draws its own border-bottom) but NOT column 2 — e.g. between Ontario's own
+ * row and Ottawa's extra row beneath it (reported 2026-07). One thin line
+ * per INTERNAL boundary (`rowCount - 1` of them; the wrapper spans exactly
+ * `rowCount` equal-height grid rows — every row has a fixed height by
+ * design, see the comment on `.hierarchy-table__cell` — so `k / rowCount`
+ * always lands exactly on a row boundary). The final boundary (100%, the
+ * wrapper's own bottom edge) needs no line here — that one is either the
+ * true end of the table, or the next (different) subdivision's own row
+ * drawing its own border-top-adjacent divider as normal.
+ */
+function innerRowDividerStyle(rowCount: number): CSSProperties | undefined {
+  if (rowCount <= 1) return undefined;
+  const images: string[] = [];
+  const sizes: string[] = [];
+  const positions: string[] = [];
+  for (let k = 1; k < rowCount; k++) {
+    const pct = (k / rowCount) * 100;
+    images.push("linear-gradient(var(--ink-soft), var(--ink-soft))");
+    sizes.push("100% 1px");
+    positions.push(`0 ${pct}%`);
+  }
+  return {
+    backgroundImage: images.join(", "),
+    backgroundSize: sizes.join(", "),
+    backgroundPosition: positions.join(", "),
+    backgroundRepeat: "no-repeat",
+  };
 }
 
 type Row =
@@ -422,7 +456,11 @@ export function SubdivisionHierarchyTable({
                   // `sticky` in FlagCell).
                   <div
                     className="hierarchy-table__sticky-bounds"
-                    style={{ gridColumn: 2, gridRow: `${gridRow} / ${gridRow + 1 + extraSpan}` }}
+                    style={{
+                      gridColumn: 2,
+                      gridRow: `${gridRow} / ${gridRow + 1 + extraSpan}`,
+                      ...innerRowDividerStyle(extraSpan + 1),
+                    }}
                   >
                     {subCell}
                   </div>
