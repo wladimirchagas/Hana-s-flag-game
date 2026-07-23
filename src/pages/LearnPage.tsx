@@ -216,6 +216,15 @@ export default function LearnPage() {
   const showCapital =
     selectedSubdivision != null &&
     subdivisionCapital(selectedSubdivision.code) != null;
+  // The EXACT capital city currently on display — a selected subdivision's own
+  // capital, or a standalone national capital (Ottawa, Pretoria, Amsterdam …) —
+  // passed to the map so it can ring/highlight that ONE marker. Distinct from
+  // just "a capital is shown": several capitals can already be labelled at once
+  // (every national capital is always named on a country's subdivision map), so
+  // without this the map gives no visual feedback for WHICH one was selected.
+  const activeCapitalCityName = showCapital && selectedSubdivision
+    ? (subdivisionCapital(selectedSubdivision.code)?.name ?? null)
+    : (selectedCapital?.name ?? null);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
@@ -1138,6 +1147,7 @@ export default function LearnPage() {
             countryResults={{}}
             flagOverlay={subdivisionFlagOverlay}
             cityOverlay={subdivisionCityOverlay}
+            activeCityName={activeCapitalCityName}
             extraControls={subdivisionMapExtraControls}
           />
         ) : isModernEra ? (
