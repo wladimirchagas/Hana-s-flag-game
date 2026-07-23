@@ -7930,6 +7930,18 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Erdenet — capital of Orkhon Province, Mongolia ─────────────────────────
+  "MN-035": {
+    description:
+      "Erdenet's emblem shows a white snow lion — a symbol of happiness — reaching for three droplets " +
+      "coloured green, blue and red for the natural world, ringed by protective flames, with the city's " +
+      "name (ЭРДЭНЭТ) above. Erdenet, built around one of the world's largest copper mines, takes its name " +
+      "from the Mongolian for ‘with treasure’.",
+    sources: [
+      { title: "Mongol district flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mn-distr.html" },
+    ],
+  },
+
   // ── Radoviš — capital of Radoviš Municipality, North Macedonia ─────────────
   "MK-64": {
     description:
