@@ -212,9 +212,9 @@ different — never to silence a real duplicate.
 
 **The Learn-mode "Hierarchy chart" tab (`SubdivisionHierarchyChart.tsx` and its Table twin
 `SubdivisionHierarchyTable.tsx`, both built from the single shared `useHierarchyData()` hook in
-`src/lib/hierarchyData.ts`) has THREE correctness properties that have each shipped broken and been
+`src/lib/hierarchyData.ts`) has FOUR correctness properties that have each shipped broken and been
 reported separately (all 2026-07, all on the same feature within days of each other). Fixing one is
-not licence to leave the others — audit and fix all three together whenever any is touched.**
+not licence to leave the others — audit and fix all four together whenever any is touched.**
 
 ### 1. National-capital badge attribution must use the authoritative geographic host — never a name-only scan
 
@@ -286,6 +286,39 @@ reported by the owner as looking like the same type.
 3. Never revert to a per-label hash as the primary mechanism — it can never see which OTHER labels
    share the same view, so it can never guarantee distinctness, no matter how large the palette gets.
 
+### 4. A subdivision hosting more than one capital-city row must visually GROUP them — sticky span, never an orphaned row
+
+**Why this rule exists.** A subdivision can host TWO capital-city rows at once: its own provincial/state
+capital, PLUS a national capital that geographically sits inside it but heads no subdivision of its own
+(case (c) in `useHierarchyData` — Ottawa sits inside Ontario, which keeps its own capital Toronto; the
+same pattern recurs for the Netherlands' North Holland → Haarlem + Amsterdam, and South Africa's Gauteng
+→ Johannesburg + Pretoria). The table renders the extra national capital as a SEPARATE row directly below
+the subdivision's own row. This shipped confusing: that extra row's "Sub-national flag" column rendered a
+bare blank dash with no visual link back to Ontario, so Ottawa looked like an orphaned, disconnected
+entry instead of clearly belonging to Ontario (reported 2026-07, with Ottawa/Ontario/Toronto as the
+example).
+
+**The fix, and the rule going forward:** a subdivision's own column-2 card (flag + name + type badge)
+MUST span and visually group EVERY capital-city row it owns — its own row plus any directly-following
+"extra" national-capital row(s) — using the SAME sticky treatment as the national-flag column
+(`.hierarchy-table__cell--sticky`): it stays visible while the user scrolls through all of its own
+capital-city rows, and only scrolls away once they scroll past the LAST one. Implementation
+requirements, both required together (a bare sticky grid item spanning multiple rows does not reliably
+bound its own release point):
+1. The spanning cell's `gridRow` MUST cover its own row through the last contiguous "national-extra" row
+   that belongs to it (rows are constructed so these are always directly adjacent — see the `rows`
+   loop in `SubdivisionHierarchyTable.tsx`).
+2. The spanning cell MUST be nested inside a `.hierarchy-table__sticky-bounds` wrapper — a real
+   block-level box (never `display:contents`) carrying that same multi-row `gridRow` span — so
+   `position: sticky` has a correctly-bounded containing block to release against. Never apply `sticky`
+   to a cell placed directly as a grid item without this wrapper; verify by scrolling past the span in
+   the running app and confirming the card's box releases (stops floating) at exactly the point its own
+   last row ends, not later.
+3. A "national-extra" row's own column-2 cell is never rendered (no placeholder, no dash) — it is always
+   covered by the owning subdivision's spanning card from the row above.
+4. This applies to EVERY country with this pattern, not just Canada — never hardcode the grouping/span
+   logic per-country; it must fall out of the generic row-adjacency rule above.
+
 ### Verification
 
 **Verify in the running app** (the mandatory visual-verification rule applies) whenever any of
@@ -293,20 +326,23 @@ reported by the owner as looking like the same type.
 country with a duplicate-name capital/region pair (Argentina, Bulgaria, Croatia, Russia, Ukraine,
 Uzbekistan, or Yemen) in BOTH the Chart and Table views and confirm (a) the "★ National capital" badge
 is on the capital-city subdivision, never the same-named region; (b) a self-capital row/node shows its
-flag exactly once, never twice; and (c) open a country with several distinct subdivision types (Russia,
+flag exactly once, never twice; (c) open a country with several distinct subdivision types (Russia,
 China, New Zealand, Argentina) and confirm every type badge shown together has a visibly different
-colour.
+colour; and (d) open Canada's Table view, confirm Ontario's card visually spans and stays pinned across
+BOTH its Toronto row and the Ottawa row beneath it while scrolling, then releases immediately after
+Ottawa's row ends (repeat for the Netherlands' North Holland → Haarlem/Amsterdam and South Africa's
+Gauteng → Johannesburg/Pretoria).
 
 ### Enforcement
 
 `scripts/check-hierarchy-type-colors.mjs` (run by `npm run flags:check` and the `flag-integrity` CI
 workflow) parses `SUBDIVISION_META` and **fails the build** if any single country's distinct type-label
 count exceeds `TYPE_COLOR_PALETTE`'s length — the capacity precondition `assignTypeColors()` relies on to
-guarantee no collision. There is no automated check for rules 1 and 2 (they require rendering the actual
-capital-attribution/flag data, which the existing checks don't model) — the guard is this rule plus the
-visual verification above; when reviewing any change to `hierarchyData.ts` or the two hierarchy
-components, confirm neither the name-only-scan pattern nor a duplicated self-capital flag has crept back
-in.
+guarantee no collision. There is no automated check for rules 1, 2, and 4 (they require rendering the
+actual capital-attribution/flag/scroll data, which the existing checks don't model) — the guard is this
+rule plus the visual verification above; when reviewing any change to `hierarchyData.ts` or the two
+hierarchy components, confirm neither the name-only-scan pattern, a duplicated self-capital flag, nor an
+orphaned/ungrouped extra capital-city row has crept back in.
 
 ## A newly added or newly surfaced entity must be COMPLETE — hard rule, do not override without approval
 

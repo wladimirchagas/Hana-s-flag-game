@@ -2380,6 +2380,22 @@
   z-index: 5;
 }
 
+/* Bounds a spanning subdivision card's sticky release to EXACTLY its own
+   multi-row span (Ontario spanning its own row + Ottawa's extra row below,
+   e.g.) — see FlagCell's `sticky` prop and its caller. A real block box
+   (unlike ".hierarchy-table__row", which is display:contents so it
+   contributes no box), so it fills its whole grid-row span via default grid
+   stretching, giving the nested sticky child a correctly-bounded containing
+   block: position:sticky needs a real block-level ancestor to know where its
+   own span ends, so the card releases and scrolls away exactly when the
+   span it belongs to (Ottawa's row) ends, confirmed by scrolling past it and
+   measuring that the card's box stays flush with the wrapper's bottom edge
+   instead of continuing to float past unrelated rows below. */
+.hierarchy-table__sticky-bounds {
+  min-width: 0;
+  min-height: 0;
+}
+
 .hierarchy-table__thumb--sticky {
   width: clamp(72px, 18vw, 220px);
   height: clamp(48px, 12vw, 147px);
