@@ -7930,6 +7930,40 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Managua — capital of the Managua Department and of Nicaragua ───────────
+  "NI-MN": {
+    description:
+      "Managua's flag is white — for peace — with a gold fringe, bearing the city's arms (adopted 1944) " +
+      "between the legends ‘Ciudad de Managua’ and ‘Julio 24, 1846’, the day the Leal Villa de Santiago de " +
+      "Managua was raised to a city. The shield shows a crowned rampant lion resting a paw on a globe, " +
+      "ringed by the old title ‘Leal Villa de Santiago de Managua’; the motto reads ‘Aquí nos ilumina un " +
+      "sol que no declina’ (‘Here a sun that never sets shines on us’).",
+    sources: [
+      { title: "Escudo de Managua — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Managua" },
+      { title: "Bandera de Managua — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Managua" },
+    ],
+    myths: [
+      {
+        claim: "The lion on Managua's arms is a symbol of Spanish nobility.",
+        reality:
+          "The historian Clemente Guido Martínez read the lion's cut paw as a deliberate mark that Managua " +
+          "was criollo — home-born — rather than of noble Spanish rank.",
+      },
+    ],
+  },
+
+  // ── Jinotega — capital of Jinotega Department, Nicaragua ───────────────────
+  "NI-JI": {
+    description:
+      "Jinotega's flag has three vertical stripes. The vermilion red at the hoist is the region's ripe " +
+      "coffee — its chief crop and the engine of its economy — and the vigour and valour of its people; " +
+      "the zinc-white centre is their yearning for peace; and the emerald green at the fly is the " +
+      "production and abundance of its natural resources.",
+    sources: [
+      { title: "Símbolos — Alcaldía de Jinotega (official)", url: "https://web.alcaldiajinotega.gob.ni/simbolos/" },
+    ],
+  },
+
   // ── Calabar — capital of Cross River State, Nigeria ────────────────────────
   "NG-CR": {
     description:
