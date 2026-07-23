@@ -7996,6 +7996,88 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Chachapoyas — capital of Amazonas, Peru ───────────────────────────────
+  "PE-AMA": {
+    description:
+      "Chachapoyas' city flag, adopted in 1988, has three horizontal bands. The red stands for the blood " +
+      "shed by the Chachapoyans; the green for the Pampa de Higos Urco and the hills that ring the city; " +
+      "and the light blue for peace and tranquillity. The golden sun on the blue band is the rising sun.",
+    sources: [
+      { title: "Bandera de Chachapoyas — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Chachapoyas" },
+    ],
+  },
+
+  // ── Huaraz — capital of Áncash, Peru ──────────────────────────────────────
+  "PE-ANC": {
+    description:
+      "Huaraz flies its coat of arms on the clear blue of its sky. The shield is split diagonally: one half " +
+      "shows the nevado Vallunaraju of the Cordillera Blanca for the region's natural wealth and beauty, the " +
+      "other the pre-Inca Wilcahuaín temple for its cultural and historical heritage. A condor rising from " +
+      "flames represents the Andean fauna and the city's renewal after its earthquakes; a helmet honours " +
+      "Sebastián de Torres, the first encomendero, and quenual branches stand for the local flora.",
+    sources: [
+      { title: "Huaraz (Símbolos) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Huaraz" },
+    ],
+  },
+
+  // ── Chiclayo — capital of Lambayeque, Peru ────────────────────────────────
+  "PE-LAM": {
+    description:
+      "Chiclayo's light-blue flag — the blue for the purity and tranquillity of its people and its waters — " +
+      "carries the city arms. The golden tumi (ceremonial knife) recalls the glorious pre-Hispanic past; the " +
+      "cross the Catholic identity taken on at the Conquest; sugar cane and rice the fertile valleys and their " +
+      "agriculture; and an alcatraz (pelican) flying over stylised waves the region's historic guano wealth " +
+      "from its offshore islands.",
+    sources: [
+      { title: "Chiclayo (Símbolos) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Chiclayo" },
+    ],
+  },
+
+  // ── Huancayo — capital of Junín, Peru ─────────────────────────────────────
+  "PE-JUN": {
+    description:
+      "Huancayo's flag is two vertical stripes — dark green at the hoist, white at the fly. The green stands " +
+      "for hope and the vegetation of the Mantaro Valley that surrounds the city; the white for peace.",
+    sources: [
+      { title: "Bandera de Huancayo — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Bandera_de_Huancayo" },
+    ],
+  },
+
+  // ── Puno — capital of Puno, Peru ──────────────────────────────────────────
+  "PE-PUN": {
+    description:
+      "Puno's flag is celeste over white. The celeste is for the region's natural sky and for Lake Titicaca, " +
+      "which dominates Puno's landscape and was sacred to its pre-Inca cultures; the white is a sign of " +
+      "loyalty and peace, and of the dignity and generous character of the punenos.",
+    sources: [
+      { title: "Bandera de Puno — Gobierno Regional de Puno (punoperu.org)", url: "https://www.punoperu.org/bandera" },
+    ],
+  },
+
+  // ── Cerro de Pasco — capital of Pasco, Peru ───────────────────────────────
+  "PE-PAS": {
+    description:
+      "Cerro de Pasco's flag bears the arms of the “Ciudad Real de Minas” (Royal City of Mines), the " +
+      "title the Spanish Crown granted the settlement in 1639 in recognition of its extraordinary mineral " +
+      "wealth. The city is still known as the mining capital of Peru, and its arms stand for that long " +
+      "silver-, copper- and zinc-mining heritage.",
+    sources: [
+      { title: "Cerro de Pasco (Símbolos) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Cerro_de_Pasco" },
+    ],
+  },
+
+  // ── Pucallpa — capital of Ucayali, Peru ───────────────────────────────────
+  "PE-UCA": {
+    description:
+      "Pucallpa flies a white flag charged with the provincial arms of Coronel Portillo. The shield presents " +
+      "the city as an “ecological port” — its motto “Puerto de la Selva” (Port of the Jungle) — " +
+      "through three natural elements of the Amazon: water, sun and plants. The flag also joins the banners of " +
+      "the conurbated districts of Yarinacocha and Manantay to mark their shared urban identity.",
+    sources: [
+      { title: "Pucallpa (Símbolos) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Pucallpa" },
+    ],
+  },
+
   // ── Panama City — capital of Panamá Province and of Panama ─────────────────
   "PA-8": {
     description:
