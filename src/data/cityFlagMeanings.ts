@@ -7930,6 +7930,18 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Kathmandu — capital of Bagmati Province and of Nepal ───────────────────
+  "NP-BA": {
+    description:
+      "Kathmandu's flag (adopted 2006) is red with a large white sword. The sword is that of Manjushri, " +
+      "who — in the Swayambhu Purana — clove the gorge at Chobhar to drain the lake that filled the valley, " +
+      "making Kathmandu habitable; the old city is itself said to have been laid out in the shape of a " +
+      "khadga (an ancient sword). Red is held an auspicious colour across Nepal's cultures and religions.",
+    sources: [
+      { title: "Kathmandu (Nepal) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/np-kathm.html" },
+    ],
+  },
+
   // ── Bergen — capital of Vestland, Norway ───────────────────────────────────
   "NO-12": {
     description:
