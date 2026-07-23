@@ -471,13 +471,63 @@ export function SubdivisionMap({
     const POP_H = 64;
     const MARGIN = 8;
 
-    const x = Math.max(
-      HALF_W + MARGIN,
-      Math.min(frameRect.width - HALF_W - MARGIN, clickX),
-    );
-    const placeAbove = clickY >= POP_H + MARGIN * 2;
-    const y = placeAbove ? clickY - MARGIN : clickY + MARGIN;
-    const placement: "above" | "below" = placeAbove ? "above" : "below";
+    // The subdivision-name confirm popover must never render on top of this
+    // subdivision's own capital-city name (CLAUDE.md: a subnational name must
+    // never sit on top of the capital city name). Selecting a subdivision
+    // reveals its capital marker's label ABOVE the marker (see CityMarkers'
+    // `activeCode` matching), and the popover previously anchored to the raw
+    // click point — which usually sits right where the marker (and therefore
+    // its label) is, since users tap near a subdivision's visual center. Find
+    // that marker's on-screen position and anchor the popover clear of both
+    // the marker glyph and the space its label occupies above it.
+    let markerScreenX: number | null = null;
+    let markerScreenY: number | null = null;
+    if (unitPx > 0) {
+      const { k: zk, tx: ztx, ty: zty } = zoom.view;
+      for (const { city, bx, by } of cityBase) {
+        if (city.ownerCode !== resolvedCode) continue;
+        const sy = (by * zk + zty) * unitPx;
+        if (markerScreenY === null || sy < markerScreenY) {
+          markerScreenY = sy;
+          markerScreenX = (bx * zk + ztx) * unitPx;
+        }
+      }
+    }
+
+    let x: number;
+    let y: number;
+    let placement: "above" | "below";
+
+    if (markerScreenX !== null && markerScreenY !== null) {
+      const MARKER_LABEL_CLEARANCE = 50; // space reserved above the marker for its revealed name
+      const MARKER_GLYPH_CLEARANCE = 24; // space reserved below the marker for its glyph/ring
+      x = Math.max(
+        HALF_W + MARGIN,
+        Math.min(frameRect.width - HALF_W - MARGIN, markerScreenX),
+      );
+      const markerBottom = markerScreenY + MARKER_GLYPH_CLEARANCE;
+      if (frameRect.height - markerBottom >= POP_H + MARGIN) {
+        // Room below the marker+ring — place the popover there, well clear
+        // of the label that renders above the marker.
+        y = markerBottom;
+        placement = "below";
+      } else {
+        // Not enough room below (marker near the bottom of the frame) —
+        // place above, but clear of the label zone, not just the marker.
+        y = markerScreenY - MARKER_LABEL_CLEARANCE - MARGIN;
+        placement = "above";
+      }
+    } else {
+      // No capital marker for this subdivision — nothing to avoid overlapping,
+      // fall back to the original click-anchored placement.
+      x = Math.max(
+        HALF_W + MARGIN,
+        Math.min(frameRect.width - HALF_W - MARGIN, clickX),
+      );
+      const placeAbove = clickY >= POP_H + MARGIN * 2;
+      y = placeAbove ? clickY - MARGIN : clickY + MARGIN;
+      placement = placeAbove ? "above" : "below";
+    }
 
     onSelect?.(resolvedCode);
     setPopover({ code: resolvedCode, name: resolvedName, x, y, placement });
