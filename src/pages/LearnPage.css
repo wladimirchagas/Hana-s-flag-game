@@ -2129,6 +2129,213 @@
   color: var(--ink-fixed);
 }
 
+/* === Hierarchy table (Chart/Table toggle) ============================ */
+
+/* Small pill toggle switching the "Hierarchy chart" tab between the org-chart
+   layout and the flat table layout — same visual language as .flag-tabs__tab,
+   just smaller since it's a secondary control nested inside one tab. */
+.hierarchy-layout-toggle {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin: 0 0 1.1rem;
+}
+
+.hierarchy-layout-toggle__btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 0 2px 0 var(--ink);
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.hierarchy-layout-toggle__btn:hover,
+.hierarchy-layout-toggle__btn:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.hierarchy-layout-toggle__btn--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+/* The "whole country" button sits above the table — the table's 3 columns are
+   reserved for subdivisions/capitals only, so selecting the country (which
+   clears the drill-down, same as clicking the chart's root node) lives here
+   instead of as a fourth column. */
+.hierarchy-table__country {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 0 2px 0 var(--ink);
+  padding: 0.3rem 0.9rem 0.3rem 0.3rem;
+  cursor: pointer;
+  margin: 0 0 1rem;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.hierarchy-table__country:hover,
+.hierarchy-table__country:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.hierarchy-table__country--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+.hierarchy-table__thumb--country {
+  width: 1.9em;
+}
+
+/* No overflow-x on any ancestor — the table must always fit the viewport
+   (hard rule: all 3 columns visible at once, no horizontal scroll, incl. on
+   phones). Column widths + shrinking thumbs/text do the fitting instead. */
+.hierarchy-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.hierarchy-table__col-type {
+  width: 26%;
+}
+
+.hierarchy-table th {
+  text-align: left;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding: 0 0.3rem 0.5rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.hierarchy-table td {
+  padding: 0.3rem;
+  border-bottom: 1px solid var(--ink-soft);
+  vertical-align: middle;
+  min-width: 0;
+}
+
+.hierarchy-table tr:last-child td {
+  border-bottom: none;
+}
+
+.hierarchy-table__type {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  /* HARD RULE — never break a word mid-letter (see CLAUDE.md). Type labels
+     are multi-word at most ("Federal Territory") so normal wrap at spaces is
+     always sufficient; no AutoFitName shrink needed here. */
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* No card chrome in this view (per spec) — just a flat, clickable row of
+   [thumbnail, name(+badge)] that highlights on hover/active like a link. */
+.hierarchy-table__cell {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  min-width: 0;
+  font-family: inherit;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 120ms ease;
+}
+
+.hierarchy-table__cell:hover,
+.hierarchy-table__cell:focus-visible {
+  outline: none;
+  background: var(--cream);
+}
+
+.hierarchy-table__cell--active {
+  background: var(--sky);
+  color: var(--ink-fixed);
+}
+
+.hierarchy-table__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3em;
+  aspect-ratio: 3 / 2;
+  flex: 0 0 auto;
+}
+
+.hierarchy-table__thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 0.5px var(--ink))
+    drop-shadow(0 1px 1px rgba(26, 34, 56, 0.18));
+  pointer-events: none;
+}
+
+.hierarchy-table__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.hierarchy-table__name {
+  min-width: 0;
+  max-width: 100%;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.15;
+  /* Same hard rule as every other card label: wrap at spaces only; a single
+     long word is shrunk to fit by AutoFitName, never split mid-letter. */
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.hierarchy-table__badge {
+  align-self: flex-start;
+  font-size: 0.56rem;
+  padding: 0.1rem 0.4rem;
+}
+
+.hierarchy-table__empty {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.25rem 0.4rem;
+  display: inline-block;
+}
+
 /* Phones — slightly tighter tiles and a more compact toolbar. */
 @media (max-width: 540px) {
   .flag-grid {
@@ -2154,6 +2361,36 @@
   }
   .flag-grid__group-select {
     flex: 0 0 auto;
+  }
+
+  /* Hierarchy table — narrower type column and smaller thumb/text so all 3
+     columns keep fitting without any horizontal scroll down to ~320px wide. */
+  .hierarchy-table__col-type {
+    width: 22%;
+  }
+  .hierarchy-table__type {
+    font-size: 0.68rem;
+  }
+  .hierarchy-table td {
+    padding: 0.22rem;
+  }
+  .hierarchy-table__cell {
+    gap: 0.3rem;
+    padding: 0.15rem;
+  }
+  .hierarchy-table__thumb {
+    width: 1.9em;
+  }
+  .hierarchy-table__name {
+    font-size: 0.7rem;
+  }
+  .hierarchy-table__badge {
+    font-size: 0.5rem;
+    padding: 0.08rem 0.32rem;
+  }
+  .hierarchy-table__country {
+    font-size: 0.78rem;
+    padding: 0.28rem 0.7rem 0.28rem 0.28rem;
   }
 }
 
