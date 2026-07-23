@@ -172,8 +172,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AR-R", name: "Río Negro", typeLabel: "Province" },
     { code: "AR-Z", name: "Santa Cruz", typeLabel: "Province" },
     { code: "AR-V", name: "Tierra del Fuego", typeLabel: "National Territory" },
-    { code: "AR-B", name: "Buenos Aires", typeLabel: "Federal District" },
-    { code: "AR-C", name: "Buenos Aires", typeLabel: "Federal District" },
+    { code: "AR-B", name: "Buenos Aires Province", typeLabel: "Province" },
+    { code: "AR-C", name: "Buenos Aires", typeLabel: "Autonomous City" },
     { code: "AR-S", name: "Santa Fe", typeLabel: "Province" },
     { code: "AR-T", name: "Tucumán", typeLabel: "Province" },
     { code: "AR-G", name: "Santiago del Estero", typeLabel: "Province" },
@@ -441,7 +441,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "BG-07", name: "Gabrovo", typeLabel: "Province" },
     { code: "BG-13", name: "Pazardzhik", typeLabel: "Province" },
     { code: "BG-11", name: "Lovech", typeLabel: "Province" },
-    { code: "BG-22", name: "Sofia", typeLabel: "Province" }
+    { code: "BG-22", name: "Sofia (Capital)", typeLabel: "Province" }
     ],
   },
   "BH": {
@@ -1796,12 +1796,12 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "HR-17", name: "Split-Dalmatia", typeLabel: "County" },
     { code: "HR-05", name: "Varaždin", typeLabel: "County" },
     { code: "HR-02", name: "Krapina-Zagorje", typeLabel: "County" },
-    { code: "HR-01", name: "Zagreb", typeLabel: "County" },
+    { code: "HR-01", name: "Zagreb County", typeLabel: "County" },
     { code: "HR-08", name: "Primorje-Gorski", typeLabel: "County" },
     { code: "HR-15", name: "Šibenik-Knin", typeLabel: "County" },
     { code: "HR-09", name: "Lika-Senj", typeLabel: "County" },
     { code: "HR-07", name: "Bjelovar-Bilogora", typeLabel: "County" },
-    { code: "HR-21", name: "Zagreb", typeLabel: "City" },
+    { code: "HR-21", name: "Zagreb City", typeLabel: "City" },
     { code: "HR-11", name: "Požega-Slavonia", typeLabel: "County" }
     ],
   },
@@ -3991,7 +3991,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "RU-VLG", name: "Vologda", typeLabel: "Region" },
     { code: "RU-NGR", name: "Novgorod", typeLabel: "Region" },
     { code: "RU-TVE", name: "Tver", typeLabel: "Region" },
-    { code: "RU-MOW", name: "Moscow", typeLabel: "Region" },
+    { code: "RU-MOW", name: "Moscow Oblast", typeLabel: "Region" },
     { code: "RU-MOS", name: "Moscow", typeLabel: "Federal City" },
     { code: "RU-ME", name: "Mari El Republic", typeLabel: "Republic" },
     { code: "RU-KIR", name: "Kirov", typeLabel: "Region" },
@@ -4907,7 +4907,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "UA-07", name: "Volyn", typeLabel: "Region" },
     { code: "UA-56", name: "Rivne", typeLabel: "Region" },
     { code: "UA-18", name: "Zhytomyr", typeLabel: "Region" },
-    { code: "UA-32", name: "Kyiv", typeLabel: "Region" },
+    { code: "UA-32", name: "Kyiv Oblast", typeLabel: "Region" },
     { code: "UA-21", name: "Zakarpattia", typeLabel: "Region" },
     { code: "UA-77", name: "Chernivtsi", typeLabel: "Region" },
     { code: "UA-26", name: "Ivano-Frankivsk", typeLabel: "Region" },
@@ -5155,7 +5155,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     pluralLabel: "Regions",
     divisions: [
     { code: "UZ-FA", name: "Fergana", typeLabel: "Region" },
-    { code: "UZ-TO", name: "Tashkent", typeLabel: "Region" },
+    { code: "UZ-TO", name: "Tashkent Region", typeLabel: "Region" },
     { code: "UZ-NG", name: "Namangan", typeLabel: "Region" },
     { code: "UZ-AN", name: "Andijan", typeLabel: "Region" },
     { code: "UZ-SI", name: "Sirdaryo", typeLabel: "Region" },
@@ -5167,7 +5167,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "UZ-NW", name: "Navoiy", typeLabel: "Region" },
     { code: "UZ-XO", name: "Xorazm", typeLabel: "Region" },
     { code: "UZ-BU", name: "Bukhara", typeLabel: "Region" },
-    { code: "UZ-TK", name: "Tashkent", typeLabel: "Region" }
+    { code: "UZ-TK", name: "Tashkent City", typeLabel: "City" }
     ],
   },
   "VC": {
@@ -5358,7 +5358,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "YE-IB", name: "Ibb", typeLabel: "Governorate" },
     { code: "YE-MW", name: "Al Mahwit", typeLabel: "Governorate" },
     { code: "YE-DH", name: "Dhamar", typeLabel: "Governorate" },
-    { code: "YE-SA", name: "Sanaa", typeLabel: "Governorate" }
+    { code: "YE-SA", name: "Sanaa City", typeLabel: "Municipality" }
     ],
   },
   "ZA": {

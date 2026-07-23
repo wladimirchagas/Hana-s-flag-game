@@ -142,21 +142,63 @@ export function useHierarchyData(
       // Sourced role note for a multi-capital nation (e.g. "Constitutional
       // capital"); a single capital just reads "National capital".
       const role = cap.note ?? "National capital";
-      // (a) A shown subdivision-capital leaf IS this capital (Canberra ≡ ACT,
-      //     Cape Town ≡ Western Cape) — mark that leaf in place.
+      // The subdivision that geographically CONTAINS this capital, per
+      // point-in-polygon (same source as case (c) below) — authoritative
+      // whenever more than one subdivision shares the capital's display name
+      // (Argentina's Buenos Aires Province vs. the Autonomous City; Bulgaria's
+      // Sofia Province vs. Sofia city-district; Croatia's Zagreb County vs.
+      // Zagreb City; Russia's Moscow Oblast vs. Moscow the federal city;
+      // Ukraine's Kyiv Oblast vs. Kyiv City; Uzbekistan's Tashkent Region vs.
+      // Tashkent City; Yemen's Sanaa Governorate vs. Sanaa City). Computed
+      // once here so cases (b) and (c) never have to guess by array order.
+      const hostCode = NATIONAL_CAPITAL_SUBDIVISION[`${countryCode}|${cap.name}`];
+      const hostNode = hostCode ? byCode.get(hostCode) : undefined;
+      // (a)/(b) The point-in-polygon host is authoritative whenever it names
+      //     a node — checked FIRST and EXCLUSIVELY against that one node, so
+      //     an unrelated same-named sibling can never steal the badge by
+      //     sorting first. Two shapes, tried in order:
+      //       - the host's OWN shown capital-city leaf IS this capital
+      //         (Canberra ≡ ACT's leaf; Bulgaria's Sofia (Capital) BG-22's own
+      //         "Sofia" leaf, never Sofia Province BG-23's identically-named
+      //         seat leaf);
+      //       - the host subdivision itself IS this capital, tautologically
+      //         (Kuala Lumpur, Zagreb City, Kyiv City, Argentina's Buenos
+      //         Aires Autonomous City — never a same-named sibling like
+      //         Buenos Aires Province).
+      //     Only when there's NO host record at all (rare — a capital not
+      //     yet covered by NATIONAL_CAPITAL_SUBDIVISION) do we fall back to
+      //     scanning every node by name, which is inherently order-dependent
+      //     and the source of this whole bug class.
       let marked = false;
-      for (const n of nodes) {
-        const leaf = n.leaves.find((l) => l.kind === "sub" && normalizeForSearch(l.name) === k);
-        if (leaf) {
-          leaf.role = role;
-          leaf.note = cap.note ?? null;
+      if (hostNode) {
+        const hostLeaf = hostNode.leaves.find(
+          (l) => l.kind === "sub" && normalizeForSearch(l.name) === k,
+        );
+        if (hostLeaf) {
+          hostLeaf.role = role;
+          hostLeaf.note = cap.note ?? null;
           marked = true;
-          break;
+        } else if (normalizeForSearch(hostNode.div.name) === k) {
+          hostNode.subCapitalRole = role;
+          marked = true;
+        }
+      }
+      if (!marked) {
+        // (a) legacy fallback — a shown subdivision-capital leaf IS this
+        //     capital (Cape Town ≡ Western Cape).
+        for (const n of nodes) {
+          const leaf = n.leaves.find((l) => l.kind === "sub" && normalizeForSearch(l.name) === k);
+          if (leaf) {
+            leaf.role = role;
+            leaf.note = cap.note ?? null;
+            marked = true;
+            break;
+          }
         }
       }
       if (marked) continue;
-      // (b) A subdivision IS this capital — a city-territory whose own leaf is
-      //     tautological and suppressed (Kuala Lumpur, Putrajaya, Tokyo).
+      // (b) legacy fallback — a subdivision IS this capital (a
+      //     city-territory whose own leaf is tautological and suppressed).
       const cityTerritory = nodes.find((n) => normalizeForSearch(n.div.name) === k);
       if (cityTerritory) {
         cityTerritory.subCapitalRole = role;
@@ -165,9 +207,8 @@ export function useHierarchyData(
       // (c) A capital that heads no subdivision but sits inside one (Ottawa →
       //     Ontario, Pretoria → Gauteng) — add it as an extra capital leaf under
       //     the containing subdivision, level with that subdivision's own capital.
-      const host = byCode.get(NATIONAL_CAPITAL_SUBDIVISION[`${countryCode}|${cap.name}`] ?? "");
-      if (host) {
-        host.leaves.push({
+      if (hostNode) {
+        hostNode.leaves.push({
           key: `nat:${cap.name}`,
           kind: "national",
           name: cap.name,
