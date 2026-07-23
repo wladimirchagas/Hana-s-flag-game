@@ -64,9 +64,46 @@ const SUBDIVISION_TYPE_OVERRIDES = {
 };
 
 const SUBDIVISION_NAME_OVERRIDES_NEW = {
+  // Countries below share ONE display name across two sibling subdivisions —
+  // the national capital's own city-level unit and the surrounding
+  // region/province of the same name (Natural Earth's name_en collapses both
+  // to the plain place name). Besides being confusing in the flag grid, this
+  // fed a real bug: the hierarchy chart/table used a name-only lookup to find
+  // "the subdivision that IS the capital", and with two identically-named
+  // siblings it could pick either one depending on array order — Argentina's
+  // Buenos Aires Province (AR-B) wrongly got the "★ National capital" badge
+  // instead of the Autonomous City (AR-C), which is Argentina's actual federal
+  // capital (Const. art. 129) (reported 2026-07). `hierarchyData.ts` now
+  // disambiguates via the authoritative NATIONAL_CAPITAL_SUBDIVISION
+  // point-in-polygon host, but the two cards still need distinct names so a
+  // user isn't looking at "Buenos Aires" / "Buenos Aires" side by side.
+  // Names below are the official/ISO-3166-2 English designation for each.
+  "AR": {
+    "AR-B": "Buenos Aires Province" // ISO 3166-2:AR — surrounding province, not the capital
+    // AR-C keeps the plain name "Buenos Aires"; its typeLabel override below
+    // ("Autonomous City") is what disambiguates it — see SUBDIVISION_TYPE_OVERRIDES_NEW.
+  },
+  "BG": {
+    "BG-22": "Sofia (Capital)" // ISO 3166-2:BG official EN name "Sofia (stolitsa)" — the capital city-district
+  },
+  "HR": {
+    "HR-01": "Zagreb County", // ISO 3166-2:HR official EN name
+    "HR-21": "Zagreb City" // ISO 3166-2:HR official EN name
+  },
   "RU": {
     "UA-43": "Republic of Crimea",
-    "UA-40": "Sevastopol"
+    "UA-40": "Sevastopol",
+    "RU-MOW": "Moscow Oblast" // the surrounding region; RU-MOS is Moscow the federal city
+  },
+  "UA": {
+    "UA-32": "Kyiv Oblast" // the surrounding region; UA-30 is Kyiv City itself
+  },
+  "UZ": {
+    "UZ-TO": "Tashkent Region", // the surrounding region
+    "UZ-TK": "Tashkent City" // ISO 3166-2:UZ official EN name — the capital city
+  },
+  "YE": {
+    "YE-SA": "Sanaa City" // Amanat Al-Asimah, the capital municipality; YE-SN is the surrounding governorate
   },
   "FR": {
     // Natural Earth's name_en for FR-64 is the anglicised, mis-spelled
@@ -120,6 +157,31 @@ const SUBDIVISION_TYPE_OVERRIDES_NEW = {
   },
   "UA": {
     "UA-40": "Special Status City"
+  },
+  "AR": {
+    // AR-C is the Autonomous City of Buenos Aires (Ciudad Autónoma de Buenos
+    // Aires) — Argentina's federal capital under Const. art. 129, a city-level
+    // entity with province-equivalent status, distinct from AR-B (Buenos
+    // Aires Province, an ordinary province). Natural Earth's type_en wrongly
+    // tags BOTH "Federal District" (only AR-C is any kind of federal seat;
+    // AR-B is a plain province). ISO 3166-2:AR category for AR-C is "city";
+    // "Autonomous City" is the same typeLabel already used for Spain's Ceuta
+    // and Melilla (ES-CE/ES-ML).
+    "AR-B": "Province",
+    "AR-C": "Autonomous City"
+  },
+  "UZ": {
+    // Natural Earth tags UZ-TK (Tashkent City, ISO 3166-2:UZ category "city")
+    // as "Region" — same as its sibling UZ-TO (Tashkent Region, the
+    // surrounding oblast). Tashkent City is administered separately as an
+    // independent city, not a wiloyat.
+    "UZ-TK": "City"
+  },
+  "YE": {
+    // YE-SA is Amanat Al-Asimah ("Capital Municipality"), ISO 3166-2:YE
+    // category "municipality" — a distinct capital-city unit, not one of
+    // Yemen's ordinary governorates (YE-SN, the surrounding Sanaa Governorate).
+    "YE-SA": "Municipality"
   }
 };
 
