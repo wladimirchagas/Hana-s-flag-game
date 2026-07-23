@@ -8091,6 +8091,19 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Port Moresby — seat of Central Province and capital of Papua New Guinea ─
+  "PG-CPM": {
+    description:
+      "Port Moresby flies the emblem of the National Capital District Commission (NCDC) on a yellow field: a " +
+      "black silhouette of a lakatoi — the traditional double-masted sailing canoe of the local Motu people — " +
+      "ringed by the words “National Capital District Commission” and “NCDC”. The lakatoi carried the Hiri " +
+      "trade voyages along the Papuan coast and is still celebrated each year at the Hiri Moale Festival; on " +
+      "the flag it stands for the city's maritime heritage and its Motu-Koita traditional landowners.",
+    sources: [
+      { title: "Port Moresby (Papua New Guinea) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pg-nc.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
