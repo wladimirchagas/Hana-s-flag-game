@@ -7930,6 +7930,52 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Haarlem — capital of North Holland, Netherlands ────────────────────────
+  "NL-NH": {
+    description:
+      "Haarlem's flag is red bearing a white sword with a gold hilt, a short broad-armed white cross above " +
+      "it, and two white six-pointed stars to either side. The red field recalls the city's part in the " +
+      "capture of Damietta (Damiate) during the Fifth Crusade; the sword stands for the valour and the " +
+      "honour that Emperor Frederick II gave Haarlem after that campaign; the silver cross, granted by the " +
+      "Patriarch of Jerusalem, is protection; and the four stars are the city's bond with the sea and " +
+      "shipping.",
+    sources: [
+      { title: "Vlag van Haarlem — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Haarlem" },
+    ],
+  },
+
+  // ── Arnhem — capital of Gelderland, Netherlands ────────────────────────────
+  "NL-GE": {
+    description:
+      "Arnhem's flag is white over blue with a double-headed eagle in counter-changed colours at the hoist. " +
+      "Both the two colours and the eagle are taken from the city's coat of arms.",
+    sources: [
+      { title: "Vlag van Arnhem — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Arnhem" },
+    ],
+  },
+
+  // ── Utrecht — capital of Utrecht province, Netherlands ─────────────────────
+  "NL-UT": {
+    description:
+      "Utrecht's flag is white over red with a red canton bearing a white cross. It joins two older " +
+      "banners: the white-and-red bicolour of the Archbishopric of Utrecht and the white cross on red of " +
+      "the Sticht, the prince-bishop's temporal domain.",
+    sources: [
+      { title: "Vlag van Utrecht (stad) — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Utrecht_(stad)" },
+    ],
+  },
+
+  // ── The Hague — capital of South Holland, Netherlands ──────────────────────
+  "NL-ZH": {
+    description:
+      "The Hague's flag is a bicolour of yellow over green — the city's colours, drawn from its coat of " +
+      "arms, which bears a stork (‘ooievaar’). The stork has been woven into the city's symbolism since the " +
+      "Middle Ages and is taken as a sign of good fortune.",
+    sources: [
+      { title: "Vlag van Den Haag — Wikipedia (nl)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Den_Haag" },
+    ],
+  },
+
   // ── Managua — capital of the Managua Department and of Nicaragua ───────────
   "NI-MN": {
     description:
