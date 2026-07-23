@@ -225,15 +225,6 @@ export default function LearnPage() {
   const activeCapitalCityName = showCapital && selectedSubdivision
     ? (subdivisionCapital(selectedSubdivision.code)?.name ?? null)
     : (selectedCapital?.name ?? null);
-  // Selecting a capital (flag grid, hierarchy chart, or a subdivision pick)
-  // must actually show it on the map — the capitals/★ overlay used to be gated
-  // entirely behind the manual toggle, so picking Pretoria with the toggle off
-  // rendered no marker at all even though the capital's own panel opened right
-  // above it. Turn the overlay on whenever a capital becomes the active one;
-  // the user can still switch it off again afterwards via the toggle button.
-  useEffect(() => {
-    if (activeCapitalCityName) setShowCities(true);
-  }, [activeCapitalCityName]);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
@@ -841,13 +832,22 @@ export default function LearnPage() {
   );
 
   // City overlay for the subdivision map: the country's national capital(s)
-  // plus each subdivision's capital.
+  // plus each subdivision's capital — shown when the ★ toggle is on. With the
+  // toggle OFF (the default), selecting a capital via the flag grid/hierarchy
+  // chart/a subdivision pick must still show THAT ONE capital — but only that
+  // one, never the full always-on overlay the toggle would reveal (owner
+  // request 2026-07: "show only the selected capital in this case, not all
+  // capitals").
   const subdivisionCityOverlay = useMemo(() => {
-    if (!showCities || !subdivisionCountry) return null;
+    if (!subdivisionCountry) return null;
     const meta = SUBDIVISION_META[subdivisionCountry.code];
     const codes = meta?.divisions.map((d) => d.code) ?? [];
-    return subdivisionCityMarkers(subdivisionCountry.code, codes);
-  }, [showCities, subdivisionCountry]);
+    const all = subdivisionCityMarkers(subdivisionCountry.code, codes);
+    if (showCities) return all;
+    if (!activeCapitalCityName) return null;
+    const selected = all.filter((c) => c.name === activeCapitalCityName);
+    return selected.length > 0 ? selected : null;
+  }, [showCities, subdivisionCountry, activeCapitalCityName]);
 
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
   // component is not bypassed when unrelated state (selected, hovered, …)
