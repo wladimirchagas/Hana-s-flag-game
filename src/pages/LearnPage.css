@@ -2243,7 +2243,14 @@
   background: transparent;
   border: none;
   padding: 0.6rem 0.3rem;
-  border-radius: 8px;
+  /* Square BOTTOM corners (rounded top only) so this cell's own
+     border-bottom (below) is a full straight edge-to-edge line, not
+     shortened/curved by the radius at its ends. Two side-by-side cells
+     (column 2 + column 3) then form ONE continuous divider across the full
+     row width instead of two separate lines with a gap between them at the
+     column boundary (reported 2026-07). Sticky cells override this back to
+     fully rounded, below, since they never draw a border-bottom. */
+  border-radius: 8px 8px 0 0;
   cursor: pointer;
   text-align: center;
   transition: background 120ms ease;
@@ -2378,6 +2385,10 @@
   align-self: start;
   background: var(--paper);
   z-index: 5;
+  /* Sticky cells never draw a border-bottom (excluded below), so there is no
+     divider line to keep straight — restore full rounding for a normal
+     floating-card look. */
+  border-radius: 8px;
 }
 
 /* Bounds a spanning subdivision card's sticky release to EXACTLY its own
