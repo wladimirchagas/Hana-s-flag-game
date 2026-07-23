@@ -2227,7 +2227,7 @@
 }
 
 .hierarchy-table__th {
-  text-align: left;
+  text-align: center;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -2241,6 +2241,7 @@
 .hierarchy-table__cellwrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0.3rem;
   border-bottom: 1px solid var(--ink-soft);
   min-width: 0;
@@ -2259,6 +2260,7 @@
   font-size: 0.76rem;
   font-weight: 700;
   color: var(--ink-soft);
+  text-align: center;
   /* HARD RULE — never break a word mid-letter (see CLAUDE.md). Type labels
      are multi-word at most ("Federal Territory") so normal wrap at spaces is
      always sufficient; no AutoFitName shrink needed here. */
