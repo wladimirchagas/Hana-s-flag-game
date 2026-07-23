@@ -7930,6 +7930,27 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Bergen — capital of Vestland, Norway ───────────────────────────────────
+  "NO-12": {
+    description:
+      "Bergen's arms come from the city's old seal: a walled castle with a gate standing on golden hills — " +
+      "the hills read as Bergen's seven hills.",
+    sources: [
+      { title: "Coat of arms of Bergen — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bergen" },
+    ],
+  },
+
+  // ── Trondheim — capital of Trøndelag, Norway ───────────────────────────────
+  "NO-16": {
+    description:
+      "Trondheim has no formal coat of arms; its flag instead bears the golden ‘Trondheim rose’ on red. The " +
+      "rose — a dog-rose found in mediaeval sources as a symbol of Saint Olav — has stood for the city " +
+      "since at least the 16th century.",
+    sources: [
+      { title: "Flag of Trondheim — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Trondheim" },
+    ],
+  },
+
   // ── Assen — capital of Drenthe, Netherlands ────────────────────────────────
   "NL-DR": {
     description:
