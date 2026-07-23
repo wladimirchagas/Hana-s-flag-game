@@ -7930,6 +7930,76 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Mexicali — capital of Baja California, Mexico ──────────────────────────
+  "MX-BCN": {
+    description:
+      "Mexicali's arms (adopted 1968) picture the desert border city and its valley: the field is split " +
+      "diagonally between ochre desert and the blue Gulf of California, divided by a red line for the " +
+      "Colorado River. A red half-sun stands for the region's heritage, the Cerro del Centinela rises in " +
+      "the desert, cotton above it marks the valley's farming, and a cog and an atom stand for industry and " +
+      "science. The border motto ‘Tierra Cálida’ (‘warm land’) speaks both of the fierce heat and of the " +
+      "warmth of the people.",
+    sources: [
+      { title: "Mexicali (Baja California) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/mx-bc-ml.html" },
+    ],
+  },
+
+  // ── Chihuahua City — capital of Chihuahua, Mexico ──────────────────────────
+  "MX-CHH": {
+    description:
+      "Chihuahua's arms show, against a blue sky, the three hills that ring the state capital — El Coronel, " +
+      "Santa Rosa and Grande — and, before them, a mine winch (malacate) for the region's mining, a stretch " +
+      "of the city's colonial Aqueduct, and a mezquite tree of the northern desert.",
+    sources: [
+      { title: "Escudo de Chihuahua — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Chihuahua" },
+    ],
+  },
+
+  // ── Tuxtla Gutiérrez — capital of Chiapas, Mexico ──────────────────────────
+  "MX-CHP": {
+    description:
+      "Tuxtla Gutiérrez took as its arms, in 1941, the pre-Columbian glyph of its Nahuatl name: a standing " +
+      "rabbit over a three-toothed jaw, drawn as in the Codex Mendoza. Together the two signs read " +
+      "‘Tochtlan’ — ‘place of abundant rabbits’ — the name the Mexica gave this land of Zoque settlements.",
+    sources: [
+      { title: "Escudo de Tuxtla Gutiérrez — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Tuxtla_Gutiérrez" },
+    ],
+  },
+
+  // ── Toluca de Lerdo — capital of the State of México ───────────────────────
+  "MX-MEX": {
+    description:
+      "Toluca's arms set, on a red field, the outline of the State of México and the toponymic glyph " +
+      "Tolutepetl — the hill that gives the city its name — beside the snow-capped Nevado de Toluca " +
+      "(Xinantécatl) volcano.",
+    sources: [
+      { title: "Escudo de Toluca — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_Toluca" },
+    ],
+  },
+
+  // ── Morelia — capital of Michoacán, Mexico ─────────────────────────────────
+  "MX-MIC": {
+    description:
+      "Morelia's arms are three gold quarters, each bearing a crowned king robed in purple with a sceptre. " +
+      "The three crowns stand for the city's three founders — Juan de Alvarado, Juan de Villaseñor and Luis " +
+      "de León Romano — who laid out the city (then Valladolid) in 1541.",
+    sources: [
+      { title: "Símbolos de Morelia — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Símbolos_de_Morelia" },
+    ],
+  },
+
+  // ── Cuernavaca — capital of Morelos, Mexico ────────────────────────────────
+  "MX-MOR": {
+    description:
+      "Cuernavaca's arms are the pre-Columbian glyph of ‘Cuauhnáhuac’ (‘next to the trees’), from which the " +
+      "Spanish name Cuernavaca comes: a brown tree trunk with three branches in dark-green foliage and four " +
+      "red roots, cut on one side in the shape of a mouth from which issues a grey speech-scroll — the " +
+      "Nahuatl sign that spells the town's name.",
+    sources: [
+      { title: "Cuernavaca — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Cuernavaca" },
+    ],
+  },
+
   // ── Guadalajara — capital of Jalisco, Mexico ───────────────────────────────
   "MX-JAL": {
     description:
