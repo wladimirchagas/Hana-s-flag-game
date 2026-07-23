@@ -2267,11 +2267,18 @@
   hyphens: none;
 }
 
-/* No card chrome in this view (per spec) — just a flat, clickable row of
-   [thumbnail, name(+badge)] that highlights on hover/active like a link. */
+/* No card chrome in this view (per spec) — just a flat, clickable stack of
+   [flag, name, badge] that highlights on hover/active like a link. Flag on
+   top, name below, badge below the name (2026-07 request). Every dimension
+   here (thumb size, name height, badge-slot height) is a FIXED constant, not
+   content-dependent, so every cell — and therefore every row, since CSS Grid
+   stretches every cell in a row to the row's tallest cell — ends up the
+   exact same height regardless of whether a flag/name/badge is present. */
 .hierarchy-table__cell {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.4rem;
   width: 100%;
   min-width: 0;
@@ -2280,10 +2287,10 @@
   color: var(--ink);
   background: transparent;
   border: none;
-  padding: 0.25rem;
+  padding: 0.6rem 0.3rem;
   border-radius: 8px;
   cursor: pointer;
-  text-align: left;
+  text-align: center;
   transition: background 120ms ease;
 }
 
@@ -2298,17 +2305,23 @@
   color: var(--ink-fixed);
 }
 
-/* Explicit width AND height (not `aspect-ratio`) — deliberately avoids the
-   Safari flex-item + aspect-ratio interaction implicated in the row-collapse
-   bug above; `object-fit: contain` on the image still letterboxes any real
-   flag ratio correctly inside this fixed box. */
+/* Materially bigger than the original compact row (~5x the linear size on
+   desktop/tablet), but scales down on narrow phones so two flag columns
+   always keep fitting side-by-side with NO horizontal scroll (hard rule).
+   Width and height use the same viewport-width coefficient + matching
+   min/max ratio (3:2 at every bound), so the aspect ratio stays exact at
+   every viewport width without relying on the `aspect-ratio` property (still
+   deliberately avoided — see the Safari row-collapse fix above).
+   `max-width: 100%` + allowing shrink is a safety net in case a column ever
+   ends up narrower than expected. */
 .hierarchy-table__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.3em;
-  height: 1.53em;
-  flex: 0 0 auto;
+  width: clamp(60px, 16vw, 180px);
+  height: clamp(40px, 10.667vw, 120px);
+  max-width: 100%;
+  flex: 0 1 auto;
 }
 
 .hierarchy-table__thumb-img {
@@ -2324,17 +2337,27 @@
 .hierarchy-table__text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.15rem;
   min-width: 0;
-  flex: 1 1 auto;
+  width: 100%;
+  flex: 0 0 auto;
 }
 
+/* FIXED two-line height (like the hierarchy chart's card name) so a one-word
+   and a two-line name never make one row taller than another. */
 .hierarchy-table__name {
   min-width: 0;
   max-width: 100%;
-  font-size: 0.78rem;
-  font-weight: 700;
+  height: 2.3em;
   line-height: 1.15;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
   /* Same hard rule as every other card label: wrap at spaces only; a single
      long word is shrunk to fit by AutoFitName, never split mid-letter. */
   overflow-wrap: normal;
@@ -2342,9 +2365,18 @@
   hyphens: none;
 }
 
+/* Always rendered (see the component), so this reserves the same vertical
+   space whether or not a badge is present this row. */
+.hierarchy-table__badge-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5em;
+  max-width: 100%;
+}
+
 .hierarchy-table__badge {
-  align-self: flex-start;
-  font-size: 0.56rem;
+  font-size: 0.6rem;
   padding: 0.1rem 0.4rem;
 }
 
@@ -2397,14 +2429,13 @@
   }
   .hierarchy-table__cell {
     gap: 0.3rem;
-    padding: 0.15rem;
+    padding: 0.4rem 0.15rem;
   }
-  .hierarchy-table__thumb {
-    width: 1.9em;
-    height: 1.27em;
-  }
+  /* Thumb size itself is NOT overridden here — the base `clamp()` already
+     scales it down smoothly on narrow screens (down to a 60x40px floor) so
+     two flag columns always keep fitting with no horizontal scroll. */
   .hierarchy-table__name {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
   }
   .hierarchy-table__badge {
     font-size: 0.5rem;

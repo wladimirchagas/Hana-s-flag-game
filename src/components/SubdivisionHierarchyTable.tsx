@@ -109,9 +109,14 @@ function FlagCell({
       </span>
       <span className="hierarchy-table__text">
         <AutoFitName className="hierarchy-table__name" text={name} />
-        {badge && (
-          <AutoFitName className="hierarchy__tier hierarchy__tier--capital hierarchy-table__badge" text={`★ ${badge}`} />
-        )}
+        {/* Always-rendered, fixed-height slot — reserved whether or not a
+            badge is present, so every cell (and therefore every row) ends up
+            the exact same height regardless of content. */}
+        <span className="hierarchy-table__badge-slot">
+          {badge && (
+            <AutoFitName className="hierarchy__tier hierarchy__tier--capital hierarchy-table__badge" text={`★ ${badge}`} />
+          )}
+        </span>
       </span>
     </button>
   );
