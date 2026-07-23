@@ -183,6 +183,7 @@ function FlagCell({
   ariaLabel,
   gridColumn,
   gridRow,
+  sticky = false,
 }: {
   /** Fully-resolved image src (baseUrl already prefixed where needed), or null
    *  when no flag is bundled. */
@@ -195,14 +196,31 @@ function FlagCell({
   active: boolean;
   onClick: () => void;
   ariaLabel: string;
-  gridColumn: number;
-  gridRow: number;
+  /** Omit both grid props when this cell is nested inside a
+   *  `.hierarchy-table__sticky-bounds` wrapper (see `sticky`) — the WRAPPER
+   *  carries the grid placement in that case, not the cell itself. */
+  gridColumn?: number;
+  gridRow?: number | string;
+  /**
+   * When true, this cell gets the SAME sticky treatment as the national-flag
+   * column (`.hierarchy-table__cell--sticky`) — used for a subdivision that
+   * hosts more than one capital-city row (its own provincial capital PLUS a
+   * national capital that sits inside it but heads no subdivision of its
+   * own, e.g. Ontario → Toronto + Ottawa). The CALLER is responsible for
+   * wrapping this cell in a `.hierarchy-table__sticky-bounds` div carrying
+   * the multi-row `gridColumn`/`gridRow` span: position:sticky needs a real
+   * (non-`display:contents`) block-level ancestor to bound its release point
+   * to, so the card releases exactly when its own span ends — confirmed by
+   * scrolling past Ontario's span and measuring that the card's box stays
+   * flush with the wrapper's bottom edge instead of continuing to float.
+   */
+  sticky?: boolean;
 }) {
   return (
     <button
       type="button"
-      className="hierarchy-table__cell"
-      style={{ gridColumn, gridRow }}
+      className={`hierarchy-table__cell${sticky ? " hierarchy-table__cell--sticky" : ""}`}
+      style={gridColumn !== undefined ? { gridColumn, gridRow } : undefined}
       onClick={onClick}
       aria-pressed={active}
       aria-label={ariaLabel}
@@ -360,23 +378,57 @@ export function SubdivisionHierarchyTable({
               : capitalLeaf
                 ? `${typeLabel} capital`
                 : null;
+            // A subdivision can host an EXTRA national-capital row directly
+            // below its own (Ontario → its own capital Toronto, PLUS Ottawa,
+            // the national capital that sits inside Ontario but heads no
+            // subdivision of its own — same pattern for the Netherlands'
+            // North Holland → Haarlem + Amsterdam, South Africa's Gauteng →
+            // Johannesburg + Pretoria). Those "national-extra" rows are
+            // always pushed IMMEDIATELY after this row (see the `rows`
+            // construction above), so count how many directly follow: this
+            // subdivision's own column-2 card then SPANS and STICKS across
+            // its own row AND all of them — the SAME treatment as the
+            // sticky national-flag column — rather than rendering once and
+            // leaving the extra row(s) looking orphaned with a blank cell.
+            let extraSpan = 0;
+            while (rows[i + 1 + extraSpan]?.kind === "national-extra") extraSpan++;
+            const subCell = (
+              <FlagCell
+                flagPath={subFlag}
+                name={div.name}
+                badge={typeLabel}
+                badgeColor={typeColor}
+                active={subActive}
+                onClick={() => onSelectSubdivision(div.code)}
+                ariaLabel={
+                  subCapitalRole
+                    ? `Select ${div.name} — national capital of ${countryName}`
+                    : `Select ${div.name}`
+                }
+                gridColumn={extraSpan > 0 ? undefined : 2}
+                gridRow={extraSpan > 0 ? undefined : gridRow}
+                sticky={extraSpan > 0}
+              />
+            );
             return (
               <div className="hierarchy-table__row" role="row" key={row.key}>
-                <FlagCell
-                  flagPath={subFlag}
-                  name={div.name}
-                  badge={typeLabel}
-                  badgeColor={typeColor}
-                  active={subActive}
-                  onClick={() => onSelectSubdivision(div.code)}
-                  ariaLabel={
-                    subCapitalRole
-                      ? `Select ${div.name} — national capital of ${countryName}`
-                      : `Select ${div.name}`
-                  }
-                  gridColumn={2}
-                  gridRow={gridRow}
-                />
+                {extraSpan > 0 ? (
+                  // A real (non-`display:contents`) block box, sized to fill
+                  // this subdivision's FULL row span by default grid
+                  // stretching — this is what makes the nested sticky cell's
+                  // release point land exactly at the end of that span. A
+                  // bare grid item spanning multiple rows does NOT reliably
+                  // bound position:sticky release on its own (see the note on
+                  // `sticky` in FlagCell).
+                  <div
+                    className="hierarchy-table__sticky-bounds"
+                    style={{ gridColumn: 2, gridRow: `${gridRow} / ${gridRow + 1 + extraSpan}` }}
+                  >
+                    {subCell}
+                  </div>
+                ) : (
+                  subCell
+                )}
                 {capitalLeaf ? (
                   <FlagCell
                     flagPath={capitalLeaf.flagPath ? `${baseUrl}${capitalLeaf.flagPath}` : null}
@@ -415,11 +467,11 @@ export function SubdivisionHierarchyTable({
           }
           if (row.kind === "national-extra") {
             const { leaf } = row;
+            // Column 2 is intentionally NOT rendered here — it is always
+            // covered by the owning subdivision's spanning/sticky card from
+            // the "sub" row directly above (see `extraSpan` there).
             return (
               <div className="hierarchy-table__row" role="row" key={row.key}>
-                <div className="hierarchy-table__cellwrap" role="cell" style={{ gridColumn: 2, gridRow }}>
-                  <span className="hierarchy-table__empty" aria-hidden="true">—</span>
-                </div>
                 <FlagCell
                   flagPath={leaf.flagPath ? `${baseUrl}${leaf.flagPath}` : null}
                   name={leaf.name}
