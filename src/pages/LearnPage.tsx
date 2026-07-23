@@ -225,6 +225,15 @@ export default function LearnPage() {
   const activeCapitalCityName = showCapital && selectedSubdivision
     ? (subdivisionCapital(selectedSubdivision.code)?.name ?? null)
     : (selectedCapital?.name ?? null);
+  // Selecting a capital (flag grid, hierarchy chart, or a subdivision pick)
+  // must actually show it on the map — the capitals/★ overlay used to be gated
+  // entirely behind the manual toggle, so picking Pretoria with the toggle off
+  // rendered no marker at all even though the capital's own panel opened right
+  // above it. Turn the overlay on whenever a capital becomes the active one;
+  // the user can still switch it off again afterwards via the toggle button.
+  useEffect(() => {
+    if (activeCapitalCityName) setShowCities(true);
+  }, [activeCapitalCityName]);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
