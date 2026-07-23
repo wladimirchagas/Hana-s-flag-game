@@ -7930,6 +7930,41 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Panama City — capital of Panamá Province and of Panama ─────────────────
+  "PA-8": {
+    description:
+      "Panama City's arms were granted by Charles I of Spain in 1521, when Panamá was raised to a city. On " +
+      "a gold field they show the yoke and bundle of arrows of the Catholic Monarchs, two caravels for the " +
+      "discovery of the trade route across the isthmus, and a star for the southern pole, within a border " +
+      "of the castles and lions of Castile and León. The original was lost when Henry Morgan sacked the " +
+      "city in 1671; the present version was reconstructed in 1992 from the 1521 description.",
+    sources: [
+      { title: "Escudo de la Ciudad de Panamá — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Escudo_de_la_Ciudad_de_Panam%C3%A1" },
+    ],
+  },
+
+  // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
+  "PA-10": {
+    description:
+      "La Chorrera's flag bears the Cascada del Chorro, the waterfall for which the town is named — Spanish " +
+      "settlers called it ‘La Chorrera’ for its chorros (falls). The green of the field stands for the " +
+      "region's natural wealth.",
+    sources: [
+      { title: "Cascada del chorro — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Cascada_del_chorro" },
+    ],
+  },
+
+  // ── Chitré — capital of Herrera Province, Panama ───────────────────────────
+  "PA-6": {
+    description:
+      "Chitré's flag carries five stars for the five corregimientos of the district: three gold stars on " +
+      "the blue band for Monagrillo, Chitré and La Arena, and two blue stars on the gold band for Llano " +
+      "Bonito and San Juan Bautista.",
+    sources: [
+      { title: "En Chitré recuerdan el significado de la bandera — La Prensa (Panamá)", url: "https://www.prensa.com/locales/Chitre-recuerdan-significado-bandera_0_2695980521.html" },
+    ],
+  },
+
   // ── Muscat — capital of the Muscat Governorate and of Oman ─────────────────
   "OM-MA": {
     description:
