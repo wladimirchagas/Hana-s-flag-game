@@ -343,9 +343,10 @@ export function SubdivisionHierarchyChart({
                           )}
                         </span>
                         <AutoFitName className="hierarchy__name" text={cap.name} />
-                        <span className="hierarchy__tier hierarchy__tier--capital">
-                          ★ {cap.note ?? "National capital"}
-                        </span>
+                        <AutoFitName
+                          className="hierarchy__tier hierarchy__tier--capital"
+                          text={`★ ${cap.note ?? "National capital"}`}
+                        />
                       </button>
                     </div>
                   );
@@ -392,9 +393,10 @@ export function SubdivisionHierarchyChart({
                         </span>
                         <AutoFitName className="hierarchy__name" text={div.name} />
                         {subCapitalRole && (
-                          <span className="hierarchy__tier hierarchy__tier--capital">
-                            ★ {subCapitalRole}
-                          </span>
+                          <AutoFitName
+                            className="hierarchy__tier hierarchy__tier--capital"
+                            text={`★ ${subCapitalRole}`}
+                          />
                         )}
                       </button>
 
@@ -445,9 +447,10 @@ export function SubdivisionHierarchyChart({
                                   </span>
                                   <AutoFitName className="hierarchy__name" text={leaf.name} />
                                   {leaf.role && (
-                                    <span className="hierarchy__tier hierarchy__tier--capital">
-                                      ★ {leaf.role}
-                                    </span>
+                                    <AutoFitName
+                                      className="hierarchy__tier hierarchy__tier--capital"
+                                      text={`★ ${leaf.role}`}
+                                    />
                                   )}
                                 </button>
                               </div>

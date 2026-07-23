@@ -2030,15 +2030,34 @@
   border-color: var(--coral);
 }
 .hierarchy__tier--capital {
-  color: var(--coral-deep);
+  /* A filled pill, not plain coloured text — coral background with the
+     theme-fixed ink colour (same pairing used everywhere else in the app for
+     text on a bright accent), so contrast stays correct in both themes
+     without any dark-mode-specific override. */
+  display: inline-block;
+  background: var(--coral);
+  color: var(--ink-fixed);
+  padding: 0.15rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(26, 34, 56, 0.25);
   /* The role can be long ("Constitutional capital") while the card is only
      ~96–120px wide, so the badge MUST wrap inside the card and never overflow
-     it — tighter letter-spacing + word wrapping keep it contained. */
+     it. Per the "Card labels must never break a word mid-letter" hard rule,
+     wrapping only happens at spaces — a single long word (e.g. "EXECUTIVE")
+     is instead shrunk to fit by <AutoFitName>, never split mid-letter. */
   max-width: 100%;
   text-align: center;
-  line-height: 1.15;
+  line-height: 1.25;
   letter-spacing: 0.03em;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.hierarchy__node--active .hierarchy__tier--capital {
+  /* The badge already carries its own fixed-contrast fill; don't let the
+     generic active-state colour override wash it out. */
+  color: var(--ink-fixed);
 }
 
 .hierarchy__node--active {
