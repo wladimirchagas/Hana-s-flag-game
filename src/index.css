@@ -23,6 +23,12 @@
   --sky: #4ecdc4;
   --lime: #7ed957;
   --pink: #ff8fbf;
+  /* Two more accent hues, added for the hierarchy table's per-type badges
+     (src/components/SubdivisionHierarchyTable.tsx) — --coral is reserved for
+     "National capital" and --sky doubles as the row active-state background,
+     so subdivision-type badges draw from lime/mustard/pink plus these two. */
+  --azure: #6fa8ff;
+  --violet: #b78bfa;
   --shadow: 0 8px 0 var(--ink), 0 14px 24px rgba(26, 34, 56, 0.18);
   --shadow-soft: 0 6px 18px rgba(26, 34, 56, 0.12);
   --radius-lg: 22px;
@@ -52,6 +58,8 @@
   --sky: #74e4dc;
   --lime: #a0e676;
   --pink: #ff9fc8;
+  --azure: #8fc1ff;
+  --violet: #cba6ff;
   --shadow: 0 8px 0 #0a0e1d, 0 14px 24px rgba(0, 0, 0, 0.55);
   --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.45);
 }

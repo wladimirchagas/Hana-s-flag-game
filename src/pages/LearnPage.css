@@ -2170,15 +2170,17 @@
    flex/aspect-ratio content inside <td>/<button> hit a Safari/iOS bug
    (reported 2026-07) where rows collapsed into one huge blank row instead of
    ~40px each. Grid sidesteps the browser table-layout algorithm entirely.
-   Each ".hierarchy-table__row" is `display: contents` so its 3 direct
-   children (type/flag/flag) flow straight into these 3 grid tracks, exactly
-   like <tr><td> would — but without the table layout engine.
+   Every cell gets an EXPLICIT gridColumn/gridRow (set inline by the
+   component) rather than relying on auto-placement, so the spanning sticky
+   national-flag cell can never drift out of alignment with the rows it
+   covers. ".hierarchy-table__row" is `display: contents` purely for
+   role="row" ARIA grouping — it contributes no box of its own.
    No overflow-x on any ancestor — the table must always fit the viewport
    (hard rule: all 3 columns visible at once, no horizontal scroll, incl. on
    phones). Column widths + shrinking thumbs/text do the fitting instead. */
 .hierarchy-table {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1.5fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) minmax(0, 1.4fr);
   width: 100%;
 }
 
@@ -2197,36 +2199,27 @@
   border-bottom: 2px solid var(--ink);
 }
 
-.hierarchy-table__type,
 .hierarchy-table__cellwrap {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.3rem;
-  border-bottom: 1px solid var(--ink-soft);
   min-width: 0;
   min-height: 0;
 }
 
-/* :last-child evaluates against the row wrapper's own siblings (all real DOM
-   nodes, unaffected by display:contents), so this correctly targets only the
-   very last logical row's 3 cells. */
-.hierarchy-table__row:last-child > .hierarchy-table__type,
-.hierarchy-table__row:last-child > .hierarchy-table__cellwrap {
-  border-bottom: none;
+.hierarchy-table__cellwrap,
+.hierarchy-table__cell:not(.hierarchy-table__cell--sticky) {
+  border-bottom: 1px solid var(--ink-soft);
 }
 
-.hierarchy-table__type {
-  font-size: 0.76rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-  text-align: center;
-  /* HARD RULE — never break a word mid-letter (see CLAUDE.md). Type labels
-     are multi-word at most ("Federal Territory") so normal wrap at spaces is
-     always sufficient; no AutoFitName shrink needed here. */
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
+/* :last-child evaluates against the row wrapper's own siblings (all real DOM
+   nodes, unaffected by display:contents), so this correctly targets only the
+   very last logical row's cells. The sticky column-1 cell is never inside a
+   ".hierarchy-table__row" wrapper, so it's naturally excluded. */
+.hierarchy-table__row:last-child > .hierarchy-table__cellwrap,
+.hierarchy-table__row:last-child > .hierarchy-table__cell {
+  border-bottom: none;
 }
 
 /* No card chrome in this view (per spec) — just a flat, clickable stack of
@@ -2337,9 +2330,41 @@
   max-width: 100%;
 }
 
+/* Colour-coded pill — background set inline by the component
+   (style.background, per subdivision type or capital-of-type; see
+   typeBadgeColor()/NATIONAL_CAPITAL_COLOR). Same fixed-contrast
+   text-on-bright-accent pairing used everywhere else in the app (the org
+   chart's ★ National-capital pill, etc.) so contrast stays correct in both
+   themes without a dark-mode-specific override. The AutoFitName text lives
+   INSIDE this pill as a separate element (.hierarchy-table__badge-text)
+   because AutoFitName only accepts a className, not inline styles. */
 .hierarchy-table__badge {
+  display: inline-block;
+  color: var(--ink-fixed);
+  padding: 0.15rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(26, 34, 56, 0.25);
+  max-width: 100%;
+}
+
+.hierarchy-table__badge-text {
+  text-align: center;
+  line-height: 1.25;
   font-size: 0.6rem;
-  padding: 0.1rem 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* HARD RULE — never break a word mid-letter (see CLAUDE.md). Wrapping only
+     happens at spaces; a single long word is shrunk to fit by AutoFitName. */
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.hierarchy-table__cell--active .hierarchy-table__badge {
+  /* The badge already carries its own fixed-contrast fill; don't let the
+     generic active-state colour override wash it out. */
+  color: var(--ink-fixed);
 }
 
 .hierarchy-table__empty {
@@ -2350,16 +2375,29 @@
   display: inline-block;
 }
 
-/* The nation row's capital-city cell for a multi-capital nation (South
-   Africa, Bolivia, …) — stacks every seat's flag/name/badge in the one cell
-   instead of cramming them side by side. This is the one place a row's
-   height can legitimately exceed the uniform subdivision-row height (it's a
-   one-off summary row, not a peer of the subdivision list below it). */
-.hierarchy-table__capital-stack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+/* The national-flag cell — a SINGLE grid item spanning every data row
+   (gridRow set inline by the component), so it renders once instead of once
+   per row. `align-self: start` keeps its own box only as tall as its content
+   (flag + name) rather than stretching to fill that whole tall spanned area
+   — that's what lets `position: sticky` slide it within the area and then
+   lock at `top`, exactly like the site-topbar it tucks in below (lower
+   z-index: 40 is the topbar's, per src/index.css .site-topbar). An opaque
+   background keeps it legible as it stays put while columns 2/3 scroll. */
+.hierarchy-table__cell--sticky {
+  position: sticky;
+  top: 4rem;
+  align-self: start;
+  background: var(--paper);
+  z-index: 5;
+}
+
+.hierarchy-table__cell--sticky.hierarchy-table__cell--active {
+  background: var(--sky);
+}
+
+.hierarchy-table__thumb--sticky {
+  width: clamp(72px, 18vw, 220px);
+  height: clamp(48px, 12vw, 147px);
 }
 
 /* Phones — slightly tighter tiles and a more compact toolbar. */
@@ -2389,15 +2427,12 @@
     flex: 0 0 auto;
   }
 
-  /* Hierarchy table — narrower type column and smaller thumb/text so all 3
-     columns keep fitting without any horizontal scroll down to ~320px wide. */
+  /* Hierarchy table — narrower national-flag column and smaller thumb/text
+     so all 3 columns keep fitting without any horizontal scroll down to
+     ~320px wide. */
   .hierarchy-table {
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.5fr) minmax(0, 1.5fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr) minmax(0, 1.4fr);
   }
-  .hierarchy-table__type {
-    font-size: 0.68rem;
-  }
-  .hierarchy-table__type,
   .hierarchy-table__cellwrap {
     padding: 0.22rem;
   }
@@ -2412,8 +2447,10 @@
     font-size: 0.72rem;
   }
   .hierarchy-table__badge {
-    font-size: 0.5rem;
     padding: 0.08rem 0.32rem;
+  }
+  .hierarchy-table__badge-text {
+    font-size: 0.5rem;
   }
 }
 
