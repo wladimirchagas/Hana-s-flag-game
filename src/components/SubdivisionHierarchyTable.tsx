@@ -144,7 +144,7 @@ function FlagCell({
   return (
     <button
       type="button"
-      className={`hierarchy-table__cell${active ? " hierarchy-table__cell--active" : ""}`}
+      className="hierarchy-table__cell"
       style={{ gridColumn, gridRow }}
       onClick={onClick}
       aria-pressed={active}
@@ -248,7 +248,7 @@ export function SubdivisionHierarchyTable({
             so it stays in view as columns 2/3 scroll underneath it. */}
         <button
           type="button"
-          className={`hierarchy-table__cell hierarchy-table__cell--sticky${rootActive ? " hierarchy-table__cell--active" : ""}`}
+          className="hierarchy-table__cell hierarchy-table__cell--sticky"
           style={{ gridColumn: 1, gridRow: `${firstDataRow} / ${lastDataRow}` }}
           onClick={onSelectCountry}
           aria-pressed={rootActive}

@@ -2255,11 +2255,6 @@
   background: var(--cream);
 }
 
-.hierarchy-table__cell--active {
-  background: var(--sky);
-  color: var(--ink-fixed);
-}
-
 /* Materially bigger than the original compact row (~5x the linear size on
    desktop/tablet), but scales down on narrow phones so two flag columns
    always keep fitting side-by-side with NO horizontal scroll (hard rule).
@@ -2361,12 +2356,6 @@
   hyphens: none;
 }
 
-.hierarchy-table__cell--active .hierarchy-table__badge {
-  /* The badge already carries its own fixed-contrast fill; don't let the
-     generic active-state colour override wash it out. */
-  color: var(--ink-fixed);
-}
-
 .hierarchy-table__empty {
   color: var(--ink-soft);
   font-size: 0.95rem;
@@ -2389,10 +2378,6 @@
   align-self: start;
   background: var(--paper);
   z-index: 5;
-}
-
-.hierarchy-table__cell--sticky.hierarchy-table__cell--active {
-  background: var(--sky);
 }
 
 .hierarchy-table__thumb--sticky {
