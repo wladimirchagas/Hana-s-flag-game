@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_CAPITAL_FLAGS } from "../data/nationalCapitalFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
@@ -22,8 +23,10 @@ import type { SubdivisionMeta } from "../types/subdivision";
  *
  * Column 2 shows each subdivision's flag + name, with a colour-coded badge
  * for its administrative TYPE ("State", "Federal District", …) underneath the
- * name — the same colour every time that exact type label appears, via
- * `typeBadgeColor()`.
+ * name. Colours are assigned per-country by `assignTypeColors()` so that
+ * every distinct type label shown together in ONE country's view gets a
+ * GUARANTEED-distinct colour — see the comment on that function for why a
+ * naive per-label hash (the previous approach) is not good enough.
  *
  * Column 3 shows each capital's flag + name, with a colour-coded badge for
  * WHAT KIND of capital it is: "National capital" (coral, matching the ★
@@ -61,14 +64,29 @@ import type { SubdivisionMeta } from "../types/subdivision";
 // --coral is reserved for "National capital" everywhere in the app; --sky
 // doubles as this table's row active-state background, so it's excluded here
 // to avoid a same-colour badge disappearing against an active row.
-const TYPE_COLOR_PALETTE = ["var(--lime)", "var(--azure)", "var(--mustard)", "var(--violet)", "var(--pink)"];
+//
+// HARD REQUIREMENT: this palette must always have AT LEAST as many colours
+// as the largest number of DISTINCT subdivision types any single country's
+// hierarchy view shows at once (Russia currently needs the most: 6 —
+// Republic, Region, Territory, Autonomous Region, Autonomous Province,
+// Federal City). `scripts/check-hierarchy-type-colors.mjs` (run by
+// `npm run flags:check`) fails the build if a country's own distinct-type
+// count ever exceeds this palette's length — add another accent colour to
+// BOTH here and src/index.css (light + dark theme) before that can happen,
+// never shrink the palette to "make do".
+const TYPE_COLOR_PALETTE = [
+  "var(--lime)", "var(--azure)", "var(--mustard)", "var(--violet)", "var(--pink)",
+  "var(--amber)", "var(--slate)",
+];
 
-// Hand-picked colours for the most common primary-subdivision type labels
-// (matches the owner's own examples — green for states, blue for federal
-// districts); anything not listed falls back to a deterministic hash so the
-// SAME type label always gets the SAME colour without needing to enumerate
-// every possible label used across ~195 countries.
-const TYPE_COLOR_OVERRIDES: Record<string, string> = {
+// A curated PREFERENCE (not a guarantee) for the most common primary-
+// subdivision type labels, so the SAME label reads as the SAME colour across
+// DIFFERENT countries (green for states, blue for federal districts, …) —
+// purely a recognisability nicety. `assignTypeColors()` below only honours a
+// preference when it doesn't collide with another type already claimed in
+// the SAME country's view; distinctness within one view always wins over
+// cross-country consistency.
+const TYPE_COLOR_PREFERENCE: Record<string, string> = {
   "State": "var(--lime)",
   "Federal District": "var(--azure)",
   "Province": "var(--violet)",
@@ -78,14 +96,53 @@ const TYPE_COLOR_OVERRIDES: Record<string, string> = {
 
 const NATIONAL_CAPITAL_COLOR = "var(--coral)";
 
-function hashString(s: string): number {
-  let h = 0;
-  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
-  return Math.abs(h);
-}
+/**
+ * Assign every distinct type label shown in ONE country's hierarchy view
+ * (`typeLabels`, one entry per group) a colour from TYPE_COLOR_PALETTE such
+ * that NO TWO LABELS IN THE SAME CALL EVER COLLIDE.
+ *
+ * The previous implementation hashed each label independently into a
+ * 5-colour palette (`hashString(label) % 5`). With ~100 distinct type labels
+ * used across ~195 countries and only 5 buckets, two UNRELATED labels
+ * landing in the same bucket was not a remote edge case — it was inevitable
+ * — and it shipped: Argentina's "Autonomous City" and "National Territory"
+ * both hashed to the same colour (reported 2026-07, alongside the National
+ * capital badge misattribution bug). A per-label hash can NEVER guarantee
+ * distinctness because it has no visibility into which OTHER labels appear
+ * in the same view — this function fixes that by assigning colours for the
+ * whole view at once.
+ *
+ * Deterministic: called with the same `typeLabels` (same order — callers
+ * pass `groups.map(g => g.typeLabel)`, and `groups` is already sorted
+ * deterministically), always returns the same assignment.
+ */
+function assignTypeColors(typeLabels: string[]): Map<string, string> {
+  const colorForLabel = new Map<string, string>();
+  const used = new Set<string>();
 
-function typeBadgeColor(typeLabel: string): string {
-  return TYPE_COLOR_OVERRIDES[typeLabel] ?? TYPE_COLOR_PALETTE[hashString(typeLabel) % TYPE_COLOR_PALETTE.length];
+  // Pass 1: honour the curated preference wherever it doesn't collide with
+  // a label earlier in this same view.
+  for (const label of typeLabels) {
+    const preferred = TYPE_COLOR_PREFERENCE[label];
+    if (preferred && !used.has(preferred)) {
+      colorForLabel.set(label, preferred);
+      used.add(preferred);
+    }
+  }
+
+  // Pass 2: every remaining label gets the next unused palette colour, in
+  // this view's own stable order. Only wraps (reusing a colour) if a single
+  // country ever needs MORE distinct colours than the palette has — which
+  // `check-hierarchy-type-colors.mjs` fails the build on before it can ship.
+  const available = TYPE_COLOR_PALETTE.filter((c) => !used.has(c));
+  let next = 0;
+  for (const label of typeLabels) {
+    if (colorForLabel.has(label)) continue;
+    const pool = available.length > 0 ? available : TYPE_COLOR_PALETTE;
+    colorForLabel.set(label, pool[next % pool.length]);
+    next++;
+  }
+  return colorForLabel;
 }
 
 type Row =
@@ -197,6 +254,15 @@ export function SubdivisionHierarchyTable({
 }: Props) {
   const { nodes, standaloneCaps, groups } = useHierarchyData(divisions, countryCode);
 
+  // Colours for THIS country's own set of distinct type labels — computed
+  // together (not per-label) so two different types shown in this view can
+  // never collide. See assignTypeColors() for why a per-label hash cannot
+  // guarantee this.
+  const typeColorByLabel = useMemo(
+    () => assignTypeColors(groups.map((g) => g.typeLabel)),
+    [groups],
+  );
+
   if (nodes.length === 0) {
     return (
       <p className="flag-grid__no-match">
@@ -271,7 +337,7 @@ export function SubdivisionHierarchyTable({
           if (row.kind === "sub") {
             const { div, subFlag, subCapitalRole, capitalLeaf, typeLabel } = row;
             const subActive = !capitalActive && div.code === selectedCode;
-            const typeColor = typeBadgeColor(typeLabel);
+            const typeColor = typeColorByLabel.get(typeLabel) ?? TYPE_COLOR_PALETTE[0];
             // The subdivision IS the national capital (tautological — Kuala
             // Lumpur, Tokyo, Buenos Aires): no distinct capital-city entity
             // exists, but the national-capital designation must still show

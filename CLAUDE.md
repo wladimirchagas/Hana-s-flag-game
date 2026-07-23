@@ -208,6 +208,106 @@ if a pair is byte-identical or within perceptual distance **< 40** yet is not de
 scores below it goes in the check's `REVIEWED_DISTINCT` allowlist **only** after a montage confirms it is
 different — never to silence a real duplicate.
 
+## Hierarchy chart/table: capital attribution, no duplicate flags, distinct type colours — hard rule, do not override without approval
+
+**The Learn-mode "Hierarchy chart" tab (`SubdivisionHierarchyChart.tsx` and its Table twin
+`SubdivisionHierarchyTable.tsx`, both built from the single shared `useHierarchyData()` hook in
+`src/lib/hierarchyData.ts`) has THREE correctness properties that have each shipped broken and been
+reported separately (all 2026-07, all on the same feature within days of each other). Fixing one is
+not licence to leave the others — audit and fix all three together whenever any is touched.**
+
+### 1. National-capital badge attribution must use the authoritative geographic host — never a name-only scan
+
+**Why this rule exists.** `useHierarchyData` decides which subdivision "is" or "hosts" a national
+capital. The original implementation did this by **scanning subdivisions by NAME** (`nodes.find(n =>
+n.div.name === capitalName)`, and a similar scan over each node's own capital-city leaf). Whenever a
+country has an EXACT DUPLICATE-NAME pair — a capital-city subdivision and a same-named surrounding
+province/oblast/governorate — a name-only scan cannot tell them apart and arbitrarily picks whichever
+sorts first. This shipped: Argentina's **Buenos Aires Province** (AR-B) was badged "★ National capital"
+instead of the **Autonomous City of Buenos Aires** (AR-C, Argentina's real federal capital under Const.
+art. 129); auditing the same class of bug found it ALSO affected Bulgaria (Sofia city-district vs. Sofia
+Province), Croatia (Zagreb City vs. Zagreb County), Russia (Moscow federal city vs. Moscow Oblast),
+Ukraine (Kyiv City vs. Kyiv Oblast), Uzbekistan (Tashkent City vs. Tashkent Region), and Yemen (Sanaa
+City vs. Sanaa Governorate) — every country with an identically-named capital/region pair.
+
+**The fix, and the rule going forward:** `useHierarchyData` MUST resolve a national capital's host by
+looking up `NATIONAL_CAPITAL_SUBDIVISION[country|capitalName]` (the SAME point-in-polygon geography the
+city overlay trusts — see the "City overlay data must be sourced" rule) **first**, and check ONLY that
+one resolved node (its own shown capital-city leaf, or the node itself when it tautologically IS the
+capital). A blind scan across ALL nodes by name is permitted **only** as a last-resort fallback when no
+host record exists at all. Never reintroduce a bare `nodes.find(name-match)` / `leaves.find(name-match)`
+as the FIRST resolution step — that is exactly the bug.
+
+### 2. A capital that IS its own subdivision must never have its flag rendered a second time
+
+**Why this rule exists.** When a subdivision tautologically IS the national capital (a city-territory —
+Kuala Lumpur, Tokyo, Buenos Aires' Autonomous City), there is no distinct capital-city entity, so the
+hierarchy TABLE self-references the same subdivision in the adjacent "Capital city flag" column so the
+national-capital designation isn't lost. This shipped wrong: the self-reference re-rendered the
+subdivision's OWN flag image a second time in that column — the identical eagle-crest flag appeared
+TWICE in Argentina's "Buenos Aires" row, once per column. This is the exact same defect the "a
+capital-city flag must never duplicate its own subdivision's flag" rule (above) forbids for two
+DIFFERENT entities sharing a coincidentally-identical flag — here it is the SAME entity's flag reused a
+second time, which is just as misleading. Brazil's Distrito Federal row was never affected because
+Brasília is a *distinctly-named* leaf whose flag is already suppressed via `SHARED_CAPITAL_FLAGS`
+(rendering blank there), which is what exposed the inconsistency: two logically-identical "this
+subdivision is the capital" cases rendered differently.
+
+**The rule:** a self-capital reference (in the table's `selfCapital` fallback, or ANY future rendering
+of a tautological self-capital) MUST render with **no flag image** in the capital-city cell — name and
+badge only — exactly like a suppressed duplicate-flag leaf renders. Never set a self-capital's
+`flagPath` to the subdivision's own `subFlag`; that is always a duplicate.
+
+### 3. Subdivision-type badge colours shown together must be GUARANTEED distinct — never assigned by hashing into a small fixed palette
+
+**Why this rule exists.** The table's per-type colour badge (`TYPE_COLOR_PALETTE` /
+`assignTypeColors()` in `SubdivisionHierarchyTable.tsx`) used to pick a colour by hashing each type
+label **independently** into a small fixed palette (`hashString(label) % palette.length`). Across ~195
+countries there are around 100 distinct type labels (Province, State, Autonomous City, National
+Territory, Governorate, Oblast, Prefecture, Emirate, …) sharing a palette of only 5 colours — two
+UNRELATED labels landing on the same colour was not a rare edge case, it was inevitable, and it
+shipped: Argentina's "Autonomous City" and "National Territory" badges both rendered the same blue,
+reported by the owner as looking like the same type.
+
+**The fix, and the rule going forward:**
+1. Colours are assigned for a WHOLE country's view at once (`assignTypeColors(typeLabels)`, called with
+   every distinct type label `groups` produces for that one country), not per-label in isolation. A
+   curated `TYPE_COLOR_PREFERENCE` map gives common labels (State, Province, Region, …) a consistent,
+   recognisable colour across different countries, but that preference is honoured **only** when it
+   does not collide with another type already claimed in the SAME view — distinctness within one view
+   always wins over cross-country consistency.
+2. `TYPE_COLOR_PALETTE` MUST always have **at least as many colours as the largest number of distinct
+   type labels any single country's hierarchy view shows at once** (Russia needs the most: 6, as of
+   2026-07). Adding a country/subdivision change that pushes any country's distinct-type count past the
+   palette's length requires adding another accent colour to `TYPE_COLOR_PALETTE` **and** to
+   `src/index.css` (both the light `:root` block and the dark `[data-theme="dark"]` block, matching the
+   existing colours' contrast — check ≥5.7:1 against `--ink-fixed`) in the SAME change, never merely
+   widening the check or hoping the hash "probably" won't collide.
+3. Never revert to a per-label hash as the primary mechanism — it can never see which OTHER labels
+   share the same view, so it can never guarantee distinctness, no matter how large the palette gets.
+
+### Verification
+
+**Verify in the running app** (the mandatory visual-verification rule applies) whenever any of
+`hierarchyData.ts`, `SubdivisionHierarchyChart.tsx`, or `SubdivisionHierarchyTable.tsx` changes: open a
+country with a duplicate-name capital/region pair (Argentina, Bulgaria, Croatia, Russia, Ukraine,
+Uzbekistan, or Yemen) in BOTH the Chart and Table views and confirm (a) the "★ National capital" badge
+is on the capital-city subdivision, never the same-named region; (b) a self-capital row/node shows its
+flag exactly once, never twice; and (c) open a country with several distinct subdivision types (Russia,
+China, New Zealand, Argentina) and confirm every type badge shown together has a visibly different
+colour.
+
+### Enforcement
+
+`scripts/check-hierarchy-type-colors.mjs` (run by `npm run flags:check` and the `flag-integrity` CI
+workflow) parses `SUBDIVISION_META` and **fails the build** if any single country's distinct type-label
+count exceeds `TYPE_COLOR_PALETTE`'s length — the capacity precondition `assignTypeColors()` relies on to
+guarantee no collision. There is no automated check for rules 1 and 2 (they require rendering the actual
+capital-attribution/flag data, which the existing checks don't model) — the guard is this rule plus the
+visual verification above; when reviewing any change to `hierarchyData.ts` or the two hierarchy
+components, confirm neither the name-only-scan pattern nor a duplicated self-capital flag has crept back
+in.
+
 ## A newly added or newly surfaced entity must be COMPLETE — hard rule, do not override without approval
 
 **Whenever you add a new entity — or change data so that a *different* entity becomes the one the app
