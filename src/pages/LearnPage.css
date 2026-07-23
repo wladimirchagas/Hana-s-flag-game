@@ -2270,13 +2270,18 @@
    every viewport width without relying on the `aspect-ratio` property (still
    deliberately avoided — see the Safari row-collapse fix above).
    `max-width: 100%` + allowing shrink is a safety net in case a column ever
-   ends up narrower than expected. */
+   ends up narrower than expected. Raised 1.5x (max 180x120 → 270x180;
+   16vw/10.667vw → 24vw/16vw) — the previous max left the flag filling well
+   under half of a typical desktop cell's width, a lot of bare empty space on
+   either side (reported 2026-07). The floor (60x40, for narrow phones) is
+   untouched — that's the "two columns must always fit with no horizontal
+   scroll" bound, not the one that was too small. */
 .hierarchy-table__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(60px, 16vw, 180px);
-  height: clamp(40px, 10.667vw, 120px);
+  width: clamp(60px, 24vw, 270px);
+  height: clamp(40px, 16vw, 180px);
   max-width: 100%;
   flex: 0 1 auto;
 }
@@ -2407,9 +2412,12 @@
   min-height: 0;
 }
 
+/* Same 1.5x raise as the regular thumb above, keeping the same relative
+   "national flag reads a bit bigger than the rest" proportion (max
+   270x180 * 1.222 ≈ 330x220, matching the original 220/180 = 147/120 ratio). */
 .hierarchy-table__thumb--sticky {
-  width: clamp(72px, 18vw, 220px);
-  height: clamp(48px, 12vw, 147px);
+  width: clamp(72px, 27vw, 330px);
+  height: clamp(48px, 18vw, 220px);
 }
 
 /* Phones — slightly tighter tiles and a more compact toolbar. */
