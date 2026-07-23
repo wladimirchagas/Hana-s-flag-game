@@ -7930,6 +7930,18 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Invercargill — capital of Southland, New Zealand ───────────────────────
+  "NZ-STL": {
+    description:
+      "Invercargill's flag carries the city council's logo, unveiled in 2009: three green strokes that echo " +
+      "the ‘blade of grass’ sculpture outside the council building and together read as a stylised ‘ICC’ — " +
+      "Invercargill City Council.",
+    sources: [
+      { title: "Council logo — Invercargill City Council (official)", url: "https://icc.govt.nz/your-council/council-logo/" },
+      { title: "Invercargill symbols — Te Ara Encyclopedia of New Zealand", url: "https://teara.govt.nz/en/artwork/21716/invercargill-symbols" },
+    ],
+  },
+
   // ── Wellington — capital of the Wellington Region and of New Zealand ───────
   "NZ-WGN": {
     description:
