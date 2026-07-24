@@ -8256,6 +8256,32 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Cagayan de Oro — capital of Misamis Oriental, Philippines ──────────────
+  "PH-MSR": {
+    description:
+      "Cagayan de Oro's seal plays on its name — “Cagayan of Gold”: a golden cornucopia and gold coins recall " +
+      "the gold panned here in Spanish times; two Spanish galleons stand for the maritime trade the port " +
+      "carried on even before the Spaniards arrived; a coconut and a pineapple are its two chief exports; and " +
+      "three stars stand for the three island groups of the Philippines.",
+    sources: [
+      { title: "Cagayan de Oro — Wikipedia", url: "https://en.wikipedia.org/wiki/Cagayan_de_Oro" },
+      { title: "Coat of arms of Cagayan de Oro — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Cagayan_de_Oro" },
+    ],
+  },
+
+  // ── Maasin — capital of Southern Leyte, Philippines ───────────────────────
+  "PH-SLE": {
+    description:
+      "Maasin City's seal (dated August 10, 2000, its cityhood) centres a rising sun for the city's rise amid " +
+      "challenges and its progress, red for passion and courage; a shield for protection from calamity and " +
+      "disorder, blue for loyalty; a Millennium Cross marking Maasin as the “First City of the New Millennium” " +
+      "and its people's faith; green fields for its farming and care for the environment; and an encircling " +
+      "rope for the strength and unity of the people — and for abaca, a major product.",
+    sources: [
+      { title: "Symbols of the City — City Government of Maasin (official profile)", url: "https://maasincity.gov.ph/index.php/about/profile" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
