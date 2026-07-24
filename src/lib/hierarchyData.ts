@@ -96,8 +96,19 @@ export type StandaloneCapital = { name: string; note: string | null };
 // not, since the "city" and the "subdivision" are the exact same polygon.
 // This alias never invents a new fact, it only tells the comparison which of
 // two already-sourced names for the SAME place to use.
+// US-DC is renamed to "Washington, D.C." (single space) in SUBDIVISION_META
+// to disambiguate it from the State of Washington (US-WA) — both otherwise
+// display as the bare "Washington". Its own capital-city record in
+// cities.ts, however, is sourced verbatim from Natural Earth, which carries
+// "Washington,  D.C." with a double space (a recurring NE quirk also seen on
+// "Ft.  Worth", "Mt.  Hagen", "St.  Paul" and "St.  Petersburg" — not a typo
+// to silently "fix" in the authoritative source). The alias must match that
+// exact double-spaced string so the tautology check below still recognises
+// Washington, D.C. as its OWN capital rather than splitting it into a
+// separate "national capital" row, same as the Buenos Aires case above.
 const SUBDIVISION_SELF_NAME_ALIAS: Record<string, string> = {
   "AR-C": "Buenos Aires",
+  "US-DC": "Washington,  D.C.",
 };
 
 export function useHierarchyData(

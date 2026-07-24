@@ -157,6 +157,16 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
     // "Plzeňský kraj"). Use the established English exonym for the city the
     // region is named after: Pilsen.
     "CZ-PL": "Pilsen"
+  },
+  "US": {
+    // Natural Earth's name_en for US-DC is the bare "Washington" — identical
+    // to the display name of the State of Washington (US-WA), a completely
+    // unrelated subdivision, so the two show as two identically-labelled
+    // "Washington" cards in the flag grid/hierarchy/dropdown (reported
+    // 2026-07). US-DC's own capital-city record (cities.ts/capitalDetails.ts)
+    // is already "Washington, D.C." everywhere else in the app — use that
+    // same, disambiguating name for the subdivision itself too.
+    "US-DC": "Washington, D.C."
   }
 };
 
