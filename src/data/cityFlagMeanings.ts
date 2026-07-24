@@ -8459,6 +8459,113 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Aveiro — capital of Aveiro district, Portugal ─────────────────────────
+  "PT-01": {
+    description:
+      "Aveiro's gyronny banner carries the city arms: on a green field a silver eagle charged on its breast " +
+      "with an escutcheon of the national quinas, a golden sun to the right and a silver moon to the left, " +
+      "encircled by the collar of the Order of the Tower and Sword and topped by a five-tower mural crown.",
+    sources: [
+      { title: "Armas da Cidade — Câmara Municipal de Aveiro", url: "https://www.cm-aveiro.pt/municipio/historia/armas-da-cidade" },
+    ],
+  },
+
+  // ── Beja — capital of Beja district, Portugal ─────────────────────────────
+  "PT-02": {
+    description:
+      "Beja's arms set a black bull's head, seen from the front, beside a towered wall. The bull's head — on " +
+      "the city's arms since its earliest days — stands for strength, endurance and the agricultural wealth of " +
+      "the Alentejo plains around Beja.",
+    sources: [
+      { title: "Heráldica do Município de Beja — Heráldica Cívica", url: "https://www.heraldicacivica.pt/bja.html" },
+    ],
+  },
+
+  // ── Évora — capital of Évora district, Portugal ───────────────────────────
+  "PT-07": {
+    description:
+      "Évora's gold shield shows the knight Geraldo Geraldes “Sem Pavor” (the Fearless) galloping on a black " +
+      "horse, a bloodied silver sword raised, above two severed heads — a man's and a woman's. It commemorates " +
+      "Geraldo's night assault that wrested Évora from the Moors, the heads being the Moorish rulers he slew. " +
+      "The motto reads “Mui Nobre e Sempre Leal Cidade de Évora”; the gyronny field of red and gold is read as " +
+      "blood and gold.",
+    sources: [
+      { title: "Heráldica — Câmara Municipal de Évora", url: "https://www.cm-evora.pt/municipe/evora/heraldica/" },
+    ],
+  },
+
+  // ── Faro — capital of Faro district, Portugal ─────────────────────────────
+  "PT-08": {
+    description:
+      "Faro's arms are a homage to the Mother of Christ. A sea-facing walled town rises from wavy water; above " +
+      "it a golden eight-pointed star and the image of Our Lady of the Conception — patron of Portugal since " +
+      "1646 — in a golden resplendor, flanked by escutcheons of the quinas recalling that Faro belonged to the " +
+      "Crown and the Queen's House. The blue field is the sky and celestial love.",
+    sources: [
+      { title: "Heráldica — Câmara Municipal de Faro", url: "https://www.cm-faro.pt/pt/menu/16/heraldica.aspx" },
+    ],
+  },
+
+  // ── Leiria — capital of Leiria district, Portugal ─────────────────────────
+  "PT-10": {
+    description:
+      "Leiria's arms place a red castle on a gold field, flanked by two green pine trees — each topped by a " +
+      "black raven — rising from a green terrace, with two red eight-pointed stars above and three wavy " +
+      "silver-and-blue bands below for the river Lis. The gold signifies loyalty and constancy, the red castle " +
+      "victories, and the pines the great Leiria pinewood.",
+    sources: [
+      { title: "Heráldica do Município de Leiria — Heráldica Cívica", url: "https://www.heraldicacivica.pt/lra.html" },
+    ],
+  },
+
+  // ── Portalegre — capital of Portalegre district, Portugal ─────────────────
+  "PT-12": {
+    description:
+      "Portalegre's silver shield bears a black battlemented wall between two black towers (lit in gold) with a " +
+      "golden gate, the quinas of Portugal in chief. The two towers recall the city's historic defences. Its " +
+      "yellow-and-black banner reads its colours: yellow for nobility, faith and fidelity, black for the earth, " +
+      "firmness and honesty.",
+    sources: [
+      { title: "Heráldica do Município de Portalegre — Heráldica Cívica", url: "https://www.heraldicacivica.pt/ptg.html" },
+    ],
+  },
+
+  // ── Porto — capital of Porto district, Portugal ───────────────────────────
+  "PT-13": {
+    description:
+      "Porto's arms show Our Lady of Vandoma with the Child between two towers on blue — the Virgin's " +
+      "protection over the city, and the towers its fortress strength and municipal autonomy. The arms were " +
+      "once crowned by a green dragon on a ducal crown, an ancient emblem of the “Invicta” (Unvanquished) " +
+      "city; in the 1940s the dragon gave way to a five-castle mural crown.",
+    sources: [
+      { title: "Porto — Wikipédia (pt)", url: "https://pt.wikipedia.org/wiki/Porto" },
+    ],
+  },
+
+  // ── Santarém — capital of Santarém district, Portugal ─────────────────────
+  "PT-14": {
+    description:
+      "Santarém's blue shield carries a silver castle, open and lit in red, its central tower charged with the " +
+      "“old quinas” of Portugal — a reference to King Afonso Henriques, who took Santarém from the Moors in " +
+      "1147. Heraldically the blue is charity, zeal and loyalty, the silver humility and richness, and the red " +
+      "wars and victories.",
+    sources: [
+      { title: "Heráldica — Município de Santarém", url: "https://www.cm-santarem.pt/o-municipio/caraterizacao-santarem/heraldica-santarem" },
+    ],
+  },
+
+  // ── Funchal — capital of Madeira, Portugal ────────────────────────────────
+  "PT-30": {
+    description:
+      "Funchal's arms are built on Madeira's sugar wealth: five golden sugar loaves arranged in a cross, with " +
+      "four golden bunches of grapes, each on a blue escutcheon bearing five silver plates in saltire, beneath " +
+      "a five-tower mural crown. Sugar cane reached Madeira in 1425 and its sugar — once reckoned the best in " +
+      "the world — enriched the island for centuries.",
+    sources: [
+      { title: "Heráldica — Câmara Municipal do Funchal", url: "https://www.funchal.pt/municipio/historia/heraldica/" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
