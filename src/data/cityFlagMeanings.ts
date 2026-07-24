@@ -8282,6 +8282,18 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Islamabad — capital of the Islamabad Capital Territory & of Pakistan ───
+  "PK-IS": {
+    description:
+      "Islamabad's flag is built on Pakistan's national flag: a white crescent and five-pointed star on a " +
+      "green field. The crescent stands for progress, the star for light and knowledge, and the green for " +
+      "Islam and the nation's Muslim majority. Here the design is set on the diagonal with an added black " +
+      "section, so the capital territory's flag reads as its own while still echoing the national colours.",
+    sources: [
+      { title: "Flag of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
