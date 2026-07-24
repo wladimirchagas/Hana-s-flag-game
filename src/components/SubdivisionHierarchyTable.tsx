@@ -176,8 +176,7 @@ type Props = {
 function FlagCell({
   flagPath,
   name,
-  badge,
-  badgeColor,
+  badges,
   active,
   onClick,
   ariaLabel,
@@ -189,10 +188,12 @@ function FlagCell({
    *  when no flag is bundled. */
   flagPath: string | null;
   name: string;
-  /** Final display text (e.g. "State", "State capital", "★ National
-   *  capital") — the caller decides wording/star, this just renders it. */
-  badge: string | null;
-  badgeColor: string;
+  /** Every badge pill to show below the name, top to bottom (e.g. a
+   *  subdivision that IS its own national capital shows both its type badge
+   *  AND "★ National capital" stacked here). Usually one entry; empty when
+   *  there's no badge at all. The caller decides wording/star/colour per
+   *  entry, this just renders them in order. */
+  badges: { text: string; color: string }[];
   active: boolean;
   onClick: () => void;
   ariaLabel: string;
@@ -241,15 +242,18 @@ function FlagCell({
       </span>
       <span className="hierarchy-table__text">
         <AutoFitName className="hierarchy-table__name" text={name} />
-        {/* Always-rendered, fixed-height slot — reserved whether or not a
-            badge is present, so every cell (and therefore every row) ends up
-            the exact same height regardless of content. */}
+        {/* Always-rendered slot — reserved whether or not a badge is present,
+            so every cell (and therefore every row) ends up at least the same
+            minimum height regardless of content; a row with two stacked
+            badges (a subdivision that IS the national capital) is simply
+            taller than a one-badge row, which CSS Grid's per-row auto-sizing
+            handles without disturbing any other row. */}
         <span className="hierarchy-table__badge-slot">
-          {badge && (
-            <span className="hierarchy-table__badge" style={{ background: badgeColor }}>
-              <AutoFitName className="hierarchy-table__badge-text" text={badge} title={badge} minScale={0.7} />
+          {badges.map((b, idx) => (
+            <span key={idx} className="hierarchy-table__badge" style={{ background: b.color }}>
+              <AutoFitName className="hierarchy-table__badge-text" text={b.text} title={b.text} minScale={0.7} />
             </span>
-          )}
+          ))}
         </span>
       </span>
     </button>
@@ -370,21 +374,20 @@ export function SubdivisionHierarchyTable({
             const typeColor = typeColorByLabel.get(typeLabel) ?? TYPE_COLOR_PALETTE[0];
             // The subdivision IS the national capital (tautological — Kuala
             // Lumpur, Tokyo, Buenos Aires): no distinct capital-city entity
-            // exists, but the national-capital designation must still show
-            // SOMEWHERE, so column 3 self-references this same subdivision's
-            // name. It must NOT also re-render the subdivision's flag image —
-            // that flag is already shown once in column 2, and repeating it
-            // in column 3 is exactly the flag-duplication the "a capital-city
-            // flag must never duplicate its own subdivision's flag" rule
-            // forbids (this shipped for Buenos Aires: the Autonomous City's
-            // eagle-crest flag was rendered a second time in the capital-city
-            // column). Brasília's row already gets this right — its shown
-            // capital-city leaf has its flag suppressed to null via
-            // SHARED_CAPITAL_FLAGS — so the self-capital fallback here must
-            // render the same way: name and badge only, no flag.
-            const selfCapital = !capitalLeaf && subCapitalRole
-              ? { flagPath: null as string | null, name: div.name, badge: `★ ${subCapitalRole}` }
-              : null;
+            // exists at all — same name, same flag, same place — so the
+            // national-capital designation is shown as a SECOND badge
+            // stacked under this subdivision's own type badge in column 2,
+            // never as a duplicate name/flag in column 3 (that duplication —
+            // the Autonomous City's eagle-crest flag rendered a second time
+            // in the capital-city column — is exactly what the "a
+            // capital-city flag must never duplicate its own subdivision's
+            // flag" rule forbids). Column 3 for this row is therefore
+            // genuinely empty, exactly like a subdivision with no capital
+            // info at all. This is distinct from a subdivision whose capital
+            // is a DIFFERENT-named city that merely happens to share the
+            // subdivision's flag (e.g. Canberra/ACT) — that case still has a
+            // real `capitalLeaf` below and keeps its own column-3 cell.
+            const selfCapitalBadge = !capitalLeaf && subCapitalRole ? `★ ${subCapitalRole}` : null;
             const capitalBadge = capitalLeaf?.role
               ? `★ ${capitalLeaf.role}`
               : capitalLeaf
@@ -408,8 +411,14 @@ export function SubdivisionHierarchyTable({
               <FlagCell
                 flagPath={subFlag}
                 name={div.name}
-                badge={typeLabel}
-                badgeColor={typeColor}
+                badges={
+                  selfCapitalBadge
+                    ? [
+                        { text: typeLabel, color: typeColor },
+                        { text: selfCapitalBadge, color: NATIONAL_CAPITAL_COLOR },
+                      ]
+                    : [{ text: typeLabel, color: typeColor }]
+                }
                 active={subActive}
                 onClick={() => onSelectSubdivision(div.code)}
                 ariaLabel={
@@ -466,8 +475,7 @@ export function SubdivisionHierarchyTable({
                   <FlagCell
                     flagPath={capitalLeaf.flagPath ? `${baseUrl}${capitalLeaf.flagPath}` : null}
                     name={capitalLeaf.name}
-                    badge={capitalBadge}
-                    badgeColor={capitalLeaf.role ? NATIONAL_CAPITAL_COLOR : typeColor}
+                    badges={capitalBadge ? [{ text: capitalBadge, color: capitalLeaf.role ? NATIONAL_CAPITAL_COLOR : typeColor }] : []}
                     active={capitalActive && div.code === selectedCode}
                     onClick={() => onSelectCapital(div.code)}
                     ariaLabel={
@@ -475,18 +483,6 @@ export function SubdivisionHierarchyTable({
                         ? `Select ${capitalLeaf.name}, capital of ${div.name} and national capital of ${countryName}`
                         : `Select ${capitalLeaf.name}, capital of ${div.name}`
                     }
-                    gridColumn={3}
-                    gridRow={gridRow}
-                  />
-                ) : selfCapital ? (
-                  <FlagCell
-                    flagPath={selfCapital.flagPath}
-                    name={selfCapital.name}
-                    badge={selfCapital.badge}
-                    badgeColor={NATIONAL_CAPITAL_COLOR}
-                    active={capitalActive && div.code === selectedCode}
-                    onClick={() => onSelectSubdivision(div.code)}
-                    ariaLabel={`Select ${div.name} — national capital of ${countryName}`}
                     gridColumn={3}
                     gridRow={gridRow}
                   />
@@ -508,8 +504,7 @@ export function SubdivisionHierarchyTable({
                 <FlagCell
                   flagPath={leaf.flagPath ? `${baseUrl}${leaf.flagPath}` : null}
                   name={leaf.name}
-                  badge={`★ ${leaf.role ?? "National capital"}`}
-                  badgeColor={NATIONAL_CAPITAL_COLOR}
+                  badges={[{ text: `★ ${leaf.role ?? "National capital"}`, color: NATIONAL_CAPITAL_COLOR }]}
                   active={activeNationalCapital === leaf.name}
                   onClick={() =>
                     onSelectNationalCapital({ name: leaf.name, note: leaf.note, flagPath: leaf.flagPath })
@@ -532,8 +527,7 @@ export function SubdivisionHierarchyTable({
               <FlagCell
                 flagPath={flagPath ? `${baseUrl}${flagPath}` : null}
                 name={row.name}
-                badge={`★ ${row.note ?? "National capital"}`}
-                badgeColor={NATIONAL_CAPITAL_COLOR}
+                badges={[{ text: `★ ${row.note ?? "National capital"}`, color: NATIONAL_CAPITAL_COLOR }]}
                 active={activeNationalCapital === row.name}
                 onClick={() => onSelectNationalCapital({ name: row.name, note: row.note, flagPath })}
                 ariaLabel={`Select ${row.name}, national capital of ${countryName}`}
