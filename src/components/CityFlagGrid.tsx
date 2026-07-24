@@ -1,10 +1,9 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { countryCityFlags } from "../lib/cityFlags";
-import { normalizeForSearch } from "../lib/searchNormalize";
 
 /**
- * "City flags" tab of the sub-national drill-down grid.
+ * "Capital cities" tab of the sub-national drill-down grid.
  *
  * Shows every available capital-city flag for the country (see
  * `countryCityFlags` — authoritative, name-confirmed capital-flag data only).
@@ -43,17 +42,6 @@ export function CityFlagGrid({
   onSelectNational,
 }: Props) {
   const entries = useMemo(() => countryCityFlags(countryCode), [countryCode]);
-  const [filter, setFilter] = useState("");
-
-  const filtered = useMemo(() => {
-    const q = normalizeForSearch(filter.trim());
-    if (!q) return entries;
-    return entries.filter(
-      (e) =>
-        normalizeForSearch(e.capitalName).includes(q) ||
-        normalizeForSearch(e.subdivisionName).includes(q),
-    );
-  }, [entries, filter]);
 
   if (entries.length === 0) {
     return (
@@ -64,91 +52,52 @@ export function CityFlagGrid({
   }
 
   return (
-    <>
-      <div className="flag-grid__controls flag-grid__controls--tab">
-        <div className="flag-grid__filter">
-          <span className="flag-grid__filter-icon" aria-hidden="true">🔍</span>
-          <input
-            type="search"
-            className="flag-grid__filter-input"
-            value={filter}
-            onChange={(e) => setFilter(e.target.value)}
-            placeholder="Filter city flags…"
-            aria-label="Filter city flags by name"
-          />
-          {filter && (
+    <ul className="flag-grid__list">
+      {entries.map((entry) => {
+        const active =
+          entry.kind === "national"
+            ? activeNationalCapital === entry.capitalName
+            : capitalActive && entry.code === selectedCode;
+        const handleClick =
+          entry.kind === "national"
+            ? () =>
+                onSelectNational({
+                  name: entry.capitalName,
+                  note: entry.note ?? null,
+                  flagPath: entry.flagPath,
+                })
+            : () => onSelect(entry.code);
+        const label =
+          entry.kind === "national"
+            ? `Select ${entry.capitalName}, national capital of ${countryName}`
+            : `Select ${entry.capitalName}, capital of ${entry.subdivisionName}`;
+        return (
+          <li key={entry.code} className="flag-grid__item">
             <button
               type="button"
-              className="flag-grid__filter-clear"
-              onClick={() => setFilter("")}
-              aria-label="Clear filter"
+              className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+              onClick={handleClick}
+              aria-pressed={active}
+              aria-label={label}
             >
-              ×
+              <span className="flag-grid__thumb">
+                <img
+                  src={`${baseUrl}${entry.flagPath}`}
+                  alt=""
+                  loading="lazy"
+                  draggable={false}
+                  className="flag-grid__thumb-img"
+                  onError={(e) => { e.currentTarget.style.display = "none"; }}
+                />
+              </span>
+              <span className="flag-grid__name">
+                <AutoFitName className="flag-grid__name-text" text={entry.capitalName} />
+                <span className="flag-grid__city-sub">{entry.subdivisionName}</span>
+              </span>
             </button>
-          )}
-        </div>
-      </div>
-
-      {filtered.length === 0 ? (
-        <p className="flag-grid__no-match">
-          No city flags match “{filter.trim()}”.{" "}
-          <button
-            type="button"
-            className="flag-grid__no-match-clear"
-            onClick={() => setFilter("")}
-          >
-            Clear filter
-          </button>
-        </p>
-      ) : (
-        <ul className="flag-grid__list">
-          {filtered.map((entry) => {
-            const active =
-              entry.kind === "national"
-                ? activeNationalCapital === entry.capitalName
-                : capitalActive && entry.code === selectedCode;
-            const handleClick =
-              entry.kind === "national"
-                ? () =>
-                    onSelectNational({
-                      name: entry.capitalName,
-                      note: entry.note ?? null,
-                      flagPath: entry.flagPath,
-                    })
-                : () => onSelect(entry.code);
-            const label =
-              entry.kind === "national"
-                ? `Select ${entry.capitalName}, national capital of ${countryName}`
-                : `Select ${entry.capitalName}, capital of ${entry.subdivisionName}`;
-            return (
-              <li key={entry.code} className="flag-grid__item">
-                <button
-                  type="button"
-                  className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
-                  onClick={handleClick}
-                  aria-pressed={active}
-                  aria-label={label}
-                >
-                  <span className="flag-grid__thumb">
-                    <img
-                      src={`${baseUrl}${entry.flagPath}`}
-                      alt=""
-                      loading="lazy"
-                      draggable={false}
-                      className="flag-grid__thumb-img"
-                      onError={(e) => { e.currentTarget.style.display = "none"; }}
-                    />
-                  </span>
-                  <span className="flag-grid__name">
-                    <AutoFitName className="flag-grid__name-text" text={entry.capitalName} />
-                    <span className="flag-grid__city-sub">{entry.subdivisionName}</span>
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-    </>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
