@@ -173,7 +173,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AR-Z", name: "Santa Cruz", typeLabel: "Province" },
     { code: "AR-V", name: "Tierra del Fuego", typeLabel: "National Territory" },
     { code: "AR-B", name: "Buenos Aires Province", typeLabel: "Province" },
-    { code: "AR-C", name: "Buenos Aires", typeLabel: "Autonomous City" },
+    { code: "AR-C", name: "Autonomous City of Buenos Aires", typeLabel: "Autonomous City" },
     { code: "AR-S", name: "Santa Fe", typeLabel: "Province" },
     { code: "AR-T", name: "Tucumán", typeLabel: "Province" },
     { code: "AR-G", name: "Santiago del Estero", typeLabel: "Province" },
