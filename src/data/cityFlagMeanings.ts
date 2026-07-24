@@ -8690,6 +8690,80 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Miercurea Ciuc — capital of Harghita county, Romania ──────────────────
+  "RO-HR": {
+    description:
+      "Miercurea Ciuc flies three blue forget-me-not flowers (nu-mă-uita) rising from a red heart — a device " +
+      "taken from the town's 18th-century seal. The heart stands for the generosity of the townspeople and " +
+      "the forget-me-nots for their honesty.",
+    sources: [
+      { title: "Stema municipiului Miercurea Ciuc — Ziar Harghita", url: "https://ziarharghita.ro/stema-municipiului-miercurea-ciuc-afost-adoptata-de-guvern" },
+    ],
+  },
+
+  // ── Bucharest — seat of Ilfov county & capital of Romania ─────────────────
+  "RO-IF": {
+    description:
+      "Bucharest's arms (shown for Ilfov, whose seat it is) place St Demetrius — the city's patron, a military " +
+      "saint in Roman dress with spear and cross — on the breast of a golden eagle that holds a cross in its " +
+      "beak and a sword and sceptre in its claws, beneath an open crown, over the motto “Patria și Dreptul " +
+      "Meu” (Fatherland and My Right). The eagle stands for the Latin origin and continuity of the Romanian " +
+      "people, and the open crown is that of Mircea the Old, under whom Bucharest became a residence-capital " +
+      "of Wallachia.",
+    sources: [
+      { title: "Stema municipiului București — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Bucure%C8%99ti" },
+    ],
+  },
+
+  // ── Iași — capital of Iași county, Romania ────────────────────────────────
+  "RO-IS": {
+    description:
+      "Iași's red shield holds a silver citadel, and upon it a red escutcheon with a black horse galloping " +
+      "beneath an open golden crown — the medieval seal-emblem of Iași, attested in 1609, symbol of the old " +
+      "voivodal town. Above, rising from the mural crown, the aurochs head of Moldavia marks the three " +
+      "centuries Iași served as Moldavia's capital.",
+    sources: [
+      { title: "Stema municipiului Iași — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Ia%C8%99i" },
+    ],
+  },
+
+  // ── Ploiești — capital of Prahova county, Romania ─────────────────────────
+  "RO-PH": {
+    description:
+      "Ploiești's blue shield shows two golden lions uprooting a silver oak, set on a red sash reading " +
+      "“M.V.V.”. The device is taken from the seal of Mihai Viteazul (Michael the Brave — Voievod), who " +
+      "founded the city; the lions tearing the oak from the ground commemorate the toil of the first settlers, " +
+      "who cleared the forest year by year to build and enlarge their town.",
+    sources: [
+      { title: "Stema municipiului Ploiești — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Ploie%C8%99ti" },
+    ],
+  },
+
+  // ── Sibiu — capital of Sibiu county, Romania ──────────────────────────────
+  "RO-SB": {
+    description:
+      "Sibiu's red shield bears two crossed silver swords, points downward, supporting an open golden crown " +
+      "and piercing a golden water-lily triangle. The downward swords signify, by medieval custom, the taking " +
+      "of the land and the citizens' will to defend the town and their rights; the foliate “corona regia” " +
+      "marks Sibiu as a free royal town on the King's Land (fundus regius); the red field its local autonomy; " +
+      "and the water-lily triangle its civic solidarity.",
+    sources: [
+      { title: "Stema Sibiului — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_Sibiului" },
+    ],
+  },
+
+  // ── Timișoara — capital of Timiș county, Romania ──────────────────────────
+  "RO-TM": {
+    description:
+      "Timișoara's red flag bears a silver cross — the banner flown from the water-tower in the city's coat of " +
+      "arms, which recalls that Timișoara was the first city in Europe with a centralised drinking-water " +
+      "supply. The fuller arms also carry the golden lion and bridge of Oltenia, tying this Banat city to the " +
+      "Romanian lands, and a tricolour for the anti-communist Revolution that began here in December 1989.",
+    sources: [
+      { title: "Stema municipiului Timișoara — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Timi%C8%99oara" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
