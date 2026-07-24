@@ -8836,6 +8836,75 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Valjevo — capital of Kolubara district, Serbia ────────────────────────
+  "RS-09": {
+    description:
+      "Valjevo's arms are ringed by red, blue and white flags — the colours of the Serbian flag — recalling " +
+      "the people's long struggle for their identity, together with the double-headed white eagle of Serbia. " +
+      "The eagle ties Valjevo to the First Serbian Uprising: it appears on Karađorđe's seal of 1806 and on the " +
+      "1813 plaque of voivode Jakov Nenadović at the Kličevac powder-magazine near the town.",
+    sources: [
+      { title: "Odluka o grbu i zastavi grada Valjeva (official)", url: "http://demo.paragraf.rs/demo/combined/Old/t/t2010_10/t10_0359.htm" },
+    ],
+  },
+
+  // ── Smederevo — capital of Podunavlje district, Serbia ────────────────────
+  "RS-10": {
+    description:
+      "Smederevo's emblem carries six white discs (grapes), the great Smederevo fortress, and blue-and-white " +
+      "bands for the Danube, over a ribbon reading 1430. That is the year Despot Đurađ Branković completed the " +
+      "fortress, when Smederevo became the capital of the Serbian Despotate — which it remained until 1439.",
+    sources: [
+      { title: "Grb Smedereva — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%A1%D0%BC%D0%B5%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B0" },
+    ],
+  },
+
+  // ── Požarevac — capital of Braničevo district, Serbia ─────────────────────
+  "RS-11": {
+    description:
+      "Požarevac flies, on orange, a stylised sword, the Kličevac idol and an olive branch above three lines " +
+      "for the three rivers the city reaches — the Velika Morava, the Mlava and the Danube. The Kličevac idol, " +
+      "a celebrated Bronze-Age statue of a sun-and-beauty god, stands between the sword of war and the olive " +
+      "branch of peace.",
+    sources: [
+      { title: "Odluka o grbu i zastavi grada Požarevca (official)", url: "http://demo.paragraf.rs/demo/combined/Old/t/t2013_05/t05_0181.htm" },
+    ],
+  },
+
+  // ── Kragujevac — capital of Šumadija district, Serbia ─────────────────────
+  "RS-12": {
+    description:
+      "Kragujevac flies a heraldic kraguj — a natural-coloured eagle poised for flight, a pun on the city's " +
+      "name — standing on a cut oak branch, the sacred tree of the Slavs. A silver cross with four firesteels " +
+      "(ocila) recalls Kragujevac's standing as a centre of Serbia and a former Serbian capital.",
+    sources: [
+      { title: "Simboli grada — Grad Kragujevac (official)", url: "https://kragujevac.ls.gov.rs/tekst/sr/195/simboli-grada.php" },
+    ],
+  },
+
+  // ── Zaječar — capital of Zaječar district, Serbia ─────────────────────────
+  "RS-15": {
+    description:
+      "Zaječar's arms carry a Roman imperial helmet for the palace of Felix Romuliana at nearby Gamzigrad, the " +
+      "cultural emblem of the town; a fountain for the health and life of the Gamzigrad spa; and above, the " +
+      "blue Timok flowing through green valleys past a fortress that meets the rising sun — the town as a " +
+      "frontier stronghold. The red margin stands for the blood of its known and unknown heroes.",
+    sources: [
+      { title: "Grb opštine Zaječar — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%BE%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D0%B5_%D0%97%D0%B0%D1%98%D0%B5%D1%87%D0%B0%D1%80" },
+    ],
+  },
+
+  // ── Užice — capital of Zlatibor district, Serbia ──────────────────────────
+  "RS-16": {
+    description:
+      "Užice's shield, divided blue and gold, carries three silver eagles taken from the arms of the medieval " +
+      "lords Vojinović-Altomanović, above a citadel. The base shows the mountain landscape and the river " +
+      "Đetinja, together with the ruj (smoke tree) that is characteristic of the Užice region.",
+    sources: [
+      { title: "Grb Užica — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%A3%D0%B6%D0%B8%D1%86%D0%B0" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
