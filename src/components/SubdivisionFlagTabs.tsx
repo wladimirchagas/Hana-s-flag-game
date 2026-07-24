@@ -11,18 +11,61 @@ import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
  * Tabbed sub-national drill-down grid shown below the Learn map.
  *
  * Three views of the same country's flags:
- *  1. Sub-national flags — the existing subdivision flag grid.
- *  2. City flags        — every available capital-city flag.
- *  3. Hierarchy chart   — an interactive nation → subdivision → city org chart,
- *     with a "Chart" / "Table" layout toggle: the table renders the SAME
+ *  1. Sub-national divisions — the existing subdivision flag grid.
+ *  2. Capital cities         — every available capital-city flag.
+ *  3. Hierarchy              — an interactive nation → subdivision → city org
+ *     chart, with a table/chart layout toggle: the table renders the SAME
  *     entities as a flat 3-column table (type, sub-national flag, capital city
  *     flag) instead of an org chart — see `SubdivisionHierarchyTable`.
  *
  * All three drive the SAME selection callbacks, so picking a flag in any tab
  * updates the world/subdivision map highlight and the country/subdivision widget.
+ *
+ * The selected top-level tab and hierarchy layout are persisted to
+ * localStorage so they survive switching countries or reloading the page,
+ * instead of resetting to the default every time.
  */
 type TabId = "sub" | "city" | "tree";
-type TreeLayout = "chart" | "table";
+type TreeLayout = "table" | "chart";
+
+const TAB_STORAGE_KEY = "hana-flag-game.subdivision-flag-tab";
+const LAYOUT_STORAGE_KEY = "hana-flag-game.hierarchy-layout";
+
+function loadTab(): TabId {
+  try {
+    const raw = localStorage.getItem(TAB_STORAGE_KEY);
+    if (raw === "sub" || raw === "city" || raw === "tree") return raw;
+  } catch {
+    // ignore — quota or no-storage browser
+  }
+  return "sub";
+}
+
+function saveTab(t: TabId): void {
+  try {
+    localStorage.setItem(TAB_STORAGE_KEY, t);
+  } catch {
+    // ignore
+  }
+}
+
+function loadLayout(): TreeLayout {
+  try {
+    const raw = localStorage.getItem(LAYOUT_STORAGE_KEY);
+    if (raw === "table" || raw === "chart") return raw;
+  } catch {
+    // ignore
+  }
+  return "table";
+}
+
+function saveLayout(l: TreeLayout): void {
+  try {
+    localStorage.setItem(LAYOUT_STORAGE_KEY, l);
+  } catch {
+    // ignore
+  }
+}
 
 type Props = {
   divisions: SubdivisionMeta[];
@@ -59,8 +102,17 @@ export function SubdivisionFlagTabs({
   onSelectNationalCapital,
   onSelectCountry,
 }: Props) {
-  const [tab, setTab] = useState<TabId>("sub");
-  const [treeLayout, setTreeLayout] = useState<TreeLayout>("chart");
+  const [tab, setTabState] = useState<TabId>(loadTab);
+  const [treeLayout, setTreeLayoutState] = useState<TreeLayout>(loadLayout);
+
+  const setTab = (t: TabId) => {
+    setTabState(t);
+    saveTab(t);
+  };
+  const setTreeLayout = (l: TreeLayout) => {
+    setTreeLayoutState(l);
+    saveLayout(l);
+  };
 
   const subCount = useMemo(
     () => divisions.filter((d) => !(d.code in DISPUTED_TERRITORY_HIERARCHY)).length,
@@ -72,9 +124,9 @@ export function SubdivisionFlagTabs({
   );
 
   const TABS: { id: TabId; label: string; count?: number }[] = [
-    { id: "sub", label: "Sub-national flags", count: subCount },
-    { id: "city", label: "City flags", count: cityCount },
-    { id: "tree", label: "Hierarchy chart" },
+    { id: "sub", label: "Sub-national divisions", count: subCount },
+    { id: "city", label: "Capital cities", count: cityCount },
+    { id: "tree", label: "Hierarchy" },
   ];
 
   if (divisions.length === 0) return null;
@@ -83,7 +135,7 @@ export function SubdivisionFlagTabs({
     <section className="flag-grid" aria-labelledby="subdiv-grid-heading">
       <header className="flag-grid__header">
         <h2 className="flag-grid__title" id="subdiv-grid-heading">
-          {countryName} — {pluralLabel}
+          Flags of this country
         </h2>
       </header>
 
@@ -135,7 +187,7 @@ export function SubdivisionFlagTabs({
         {tab === "tree" && (
           <>
             <div className="hierarchy-layout-toggle" role="tablist" aria-label="Hierarchy chart layout">
-              {(["chart", "table"] as const).map((layout) => {
+              {(["table", "chart"] as const).map((layout) => {
                 const active = layout === treeLayout;
                 return (
                   <button
@@ -146,7 +198,7 @@ export function SubdivisionFlagTabs({
                     className={`hierarchy-layout-toggle__btn${active ? " hierarchy-layout-toggle__btn--active" : ""}`}
                     onClick={() => setTreeLayout(layout)}
                   >
-                    {layout === "chart" ? "Chart" : "Table"}
+                    {layout === "table" ? "See flag hierarchy in table" : "See flag hierarchy in chart"}
                   </button>
                 );
               })}
