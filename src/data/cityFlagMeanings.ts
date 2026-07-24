@@ -8206,6 +8206,19 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Digos — capital of Davao del Sur, Philippines ─────────────────────────
+  "PH-DAS": {
+    description:
+      "Digos City's seal (dated September 8, 2000, its cityhood) gathers the city's assets in a circle: " +
+      "Mount Apo in light green at the top for its flora and fauna, grey buildings below for its " +
+      "infrastructure, a blue patch for the sea and a green one for agriculture, and an acid-blue highway " +
+      "running to a gold machinery gear for economic stability. An artistic band of indigenous design cuts " +
+      "across the circle for the pioneering tribes who eased the settlement of later Christian migrants.",
+    sources: [
+      { title: "Digos — Wikipedia", url: "https://en.wikipedia.org/wiki/Digos" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
