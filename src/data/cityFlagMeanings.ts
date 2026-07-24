@@ -8764,6 +8764,78 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Subotica — capital of North Bačka district, Serbia ────────────────────
+  "RS-01": {
+    description:
+      "Subotica's arms show, above on blue, the Virgin Mary in scarlet with the Christ child, before whom St " +
+      "Theresa of Ávila reaches out in the habit of a barefoot Carmelite; below, a golden lion rampant holding " +
+      "a sword. They date from Subotica's elevation to a free royal city in 1779; St Theresa is patroness of " +
+      "the city and its cathedral, and the arms reflect its Habsburg (Maria Theresa) and Catholic heritage.",
+    sources: [
+      { title: "Grb i zastava grada — Grad Subotica (official)", url: "https://subotica.ls.gov.rs/grb-i-zastava-grada/?pismo=lat" },
+    ],
+  },
+
+  // ── Zrenjanin — capital of Central Banat district, Serbia ─────────────────
+  "RS-02": {
+    description:
+      "Zrenjanin's arms are a stylised Assumption of the Virgin: Mary in white and light blue, ringed by " +
+      "winged angel heads and radiating heavenly light on an oval silver-bordered shield. They were granted in " +
+      "1769, when Maria Theresa raised Bečkerek to a market town — the settlement's oldest church having been " +
+      "dedicated to the Assumption of the Holy Virgin.",
+    sources: [
+      { title: "Grb Zrenjanina — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%97%D1%80%D0%B5%D1%9A%D0%B0%D0%BD%D0%B8%D0%BD%D0%B0" },
+    ],
+  },
+
+  // ── Kikinda — capital of North Banat district, Serbia ─────────────────────
+  "RS-03": {
+    description:
+      "Kikinda flies a red shield with a golden arm brandishing a sabre on which a severed Ottoman head is " +
+      "impaled, a heart below. The device was adopted with the founding of the Velika Kikinda District in " +
+      "1774, when the region was settled by frontier soldiers who had fought in the wars against Ottoman rule.",
+    sources: [
+      { title: "Grb Kikinde — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%9A%D0%B8%D0%BA%D0%B8%D0%BD%D0%B4%D0%B0" },
+    ],
+  },
+
+  // ── Pančevo — capital of South Banat district, Serbia ─────────────────────
+  "RS-04": {
+    description:
+      "Pančevo's Renaissance shield shows a two-towered fortress with an open gate in which an armoured knight " +
+      "stands with a lance, and below it two wavy stripes for the rivers Danube and Tamiš, beneath a five-tower " +
+      "crown. The fortress stands for the city's strength and defence and the knight for its warrior tradition, " +
+      "while the two rivers were vital to Pančevo's growth.",
+    sources: [
+      { title: "Odluka o upotrebi imena, grba i zastave grada Pančeva (official)", url: "http://demo.paragraf.rs/demo/combined/Old/t/t2009_09/t09_0191.htm" },
+    ],
+  },
+
+  // ── Novi Sad — capital of South Bačka district, Serbia ────────────────────
+  "RS-06": {
+    description:
+      "Novi Sad's arms — its emblem since it became a free royal city in 1748 — carry three towers, the wavy " +
+      "Danube over a green field, and Noah's dove with an olive branch. The three towers recall the city's " +
+      "origin as a border fortress by Petrovaradin; the Danube and the dove its rebirth after the Turkish wars " +
+      "and past floods, and its hope for a better future.",
+    sources: [
+      { title: "Grb Novog Sada — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3_%D0%A1%D0%B0%D0%B4%D0%B0" },
+    ],
+  },
+
+  // ── Sremska Mitrovica — capital of Srem district, Serbia ──────────────────
+  "RS-07": {
+    description:
+      "Sremska Mitrovica's arms show three mounds at the top, one of them aflame for struggle and the fallen; " +
+      "a Roman fortress with a Roman soldier bearing shield and spear, for the city built on the ruins of " +
+      "ancient Sirmium; and a green field with a wavy line for the plains of Srem and the Danube. The " +
+      "inscriptions name it “Civitas Sancti Demetrii”, the City of St Demetrius — its patron, martyred at " +
+      "Sirmium.",
+    sources: [
+      { title: "Sremska Mitrovica — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%A1%D1%80%D0%B5%D0%BC%D1%81%D0%BA%D0%B0_%D0%9C%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%86%D0%B0" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
