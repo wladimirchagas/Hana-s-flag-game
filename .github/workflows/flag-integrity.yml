@@ -31,6 +31,7 @@ on:
       - "scripts/build-capital-details.mjs"
       - "scripts/check-hierarchy-type-colors.mjs"
       - "src/components/SubdivisionHierarchyTable.tsx"
+      - "src/pages/LearnPage.css"
       - "src/index.css"
 
 jobs:
