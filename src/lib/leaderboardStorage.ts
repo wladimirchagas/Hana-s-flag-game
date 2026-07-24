@@ -1,4 +1,5 @@
 import type { Continent } from "../api/countries";
+import type { SubdivisionMeta } from "../types/subdivision";
 
 export type LeaderboardContinentBreakdown = Array<{
   continent: Continent;
@@ -17,6 +18,30 @@ export type LeaderboardCountrySnapshot = {
   continent: Continent;
 };
 
+/**
+ * Present on runs from a subdivision-based game (Sub-national flags,
+ * Disputed & Claimed Territories) — the country-shaped `countriesPlayed` /
+ * `GameResultsFlags` path doesn't apply to these, so the lightbox needs this
+ * to render the correct map (or no map) and a flags list with images.
+ * Flag images are looked up by code at render time (subnationalDivisionFlag /
+ * capitalFlagSrc are pure functions of the code), so only the lightweight
+ * meta + results are stored here — not flag URLs.
+ */
+export type LeaderboardSubdivisionGame = {
+  /** Set only for a single-country deck (Sub-national mode) — drives which
+   *  country's map to fetch and render. Absent for a cross-country deck
+   *  (Disputed & Claimed Territories), which shows no map, same as the live
+   *  game. */
+  countryCode?: string;
+  countryName?: string;
+  /** Divisions quizzed on their own flag. */
+  divisions: SubdivisionMeta[];
+  divisionResults: Record<string, "correct" | "wrong">;
+  /** Divisions quizzed on their capital city's flag (mixed/capitals-only decks). */
+  capitalDivisions?: SubdivisionMeta[];
+  capitalResults?: Record<string, "correct" | "wrong">;
+};
+
 export type LeaderboardEntry = {
   id: string;
   playerName: string;
@@ -33,6 +58,8 @@ export type LeaderboardEntry = {
   continentBreakdown: LeaderboardContinentBreakdown;
   /** Identifies the game mode for leaderboard filtering, e.g. "all-195", "quiz-easy", "custom". */
   gameMode?: string;
+  /** Set for Sub-national / Disputed-Territories runs — see the type's doc comment. */
+  subdivisionGame?: LeaderboardSubdivisionGame;
   /** ID of the profile that scored this run, when played under a profile. */
   profileId?: string;
   /**
