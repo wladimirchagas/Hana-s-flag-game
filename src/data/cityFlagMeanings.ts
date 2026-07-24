@@ -8566,6 +8566,31 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Villarrica — capital of Guairá, Paraguay ──────────────────────────────
+  "PY-4": {
+    description:
+      "Villarrica del Espíritu Santo carries arms flanked by the Pillars of Hercules with the motto “Plus " +
+      "Ultra” and topped by a royal crown. The four quarters bear two rampant lions and two towers — echoing " +
+      "the arms of the Spanish city of Toledo — and at the centre a dove for the Holy Spirit (Espíritu " +
+      "Santo), for whom the city is named.",
+    sources: [
+      { title: "Villarrica (Paraguay) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Villarrica_(Paraguay)" },
+    ],
+  },
+
+  // ── Encarnación — capital of Itapúa, Paraguay ─────────────────────────────
+  "PY-7": {
+    description:
+      "Encarnación's arms are built of stones that spell its department's Guaraní name, Itapúa — itá (stone) " +
+      "and pu'ã (raised), a “sonorous stone”. From a stone wall rises a rustic cross of bare timbers for the " +
+      "Christian faith; the lower point marks south on the compass rose; two pillars flank the arch as stone " +
+      "masts recalling the artistry of the ancestors of the southern Jesuit reductions; and a lapacho, the " +
+      "region's most prized timber, stands at the upper left.",
+    sources: [
+      { title: "Encarnación (Paraguay) — Wikipedia (es)", url: "https://es.wikipedia.org/wiki/Encarnaci%C3%B3n_(Paraguay)" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
