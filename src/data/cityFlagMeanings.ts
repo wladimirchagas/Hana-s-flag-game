@@ -8154,6 +8154,32 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Cebu City — capital of Cebu, Philippines ──────────────────────────────
+  "PH-CEB": {
+    description:
+      "Cebu City's seal (adopted 1972) is built on the pavilion that shelters Magellan's Cross, planted in " +
+      "1521 — a symbol of the city's Catholic faith and its role as the first Christian settlement in the " +
+      "archipelago. Behind it a crossed spear and bolo recall Lapu-Lapu's warriors, who defeated Magellan at " +
+      "the Battle of Mactan, standing for Cebuano defiance of foreign rule; and the 80 black-and-white " +
+      "checkered tiles below count the city's 80 barangays.",
+    sources: [
+      { title: "Seal of Cebu City — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Cebu_City" },
+    ],
+  },
+
+  // ── Virac — capital of Catanduanes, Philippines ───────────────────────────
+  "PH-CAT": {
+    description:
+      "Virac's seal packs the town's identity into a shield derived from the Catanduanes provincial arms: " +
+      "rice, corn, coconut, abaca and banana for its main crops; a sailfish and the sea for its fishing " +
+      "wealth; the Macaco Spring for the first settlement “Vidak” the Spaniards found; a “V” for the name " +
+      "Virac; the Samdong flower (burak) from which that name is said to derive; and an abaca cord binding it " +
+      "all for the unity of the people.",
+    sources: [
+      { title: "Official Seal — Municipality of Virac (official)", url: "https://virac-catanduanes.gov.ph/official-seal/" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
