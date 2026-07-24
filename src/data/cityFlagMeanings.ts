@@ -8591,6 +8591,105 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Arad — capital of Arad county, Romania ────────────────────────────────
+  "RO-AR": {
+    description:
+      "Arad's shield is split by a wavy silver band. Above, on blue, two silver fortifications under an armed " +
+      "arm holding a sword, with the motto “Via Veritas Vita”; below, on red, the episcopal insignia of mitre, " +
+      "cross and crosiers. The fortress evokes the city's role in defensive battles, the wavy band the rivers " +
+      "that cross Arad county — the Mureș and the White Criș — and the cross the region's long religious " +
+      "heritage.",
+    sources: [
+      { title: "Stema municipiului Arad — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Arad" },
+    ],
+  },
+
+  // ── Bacău — capital of Bacău county, Romania ──────────────────────────────
+  "RO-BC": {
+    description:
+      "Bacău's arms show, above on red (the colour of Moldavia), the Virgin — Maica Precista, protector of the " +
+      "city — and below on blue a stag and a fir tree, the city's oldest heraldic symbols. The band dividing " +
+      "the two stands for Bacău's constructive vocation and its aspirations, and the seven-tower mural crown " +
+      "for its rank as county seat.",
+    sources: [
+      { title: "Stema municipiului Bacău — Consiliul Județean Bacău", url: "https://www.csjbacau.ro/dm_cj/portalweb.nsf/AllByUNID/heraldica-00002202" },
+    ],
+  },
+
+  // ── Oradea — capital of Bihor county, Romania ─────────────────────────────
+  "RO-BH": {
+    description:
+      "Oradea's divided shield shows above, on blue, a Latin cross held by a silver winged archangel and a " +
+      "golden crowned lion with a forked tail; below, on red, a gold fortress of five bastions enclosing an " +
+      "open book. The crowned lion stands for the defensive struggle led by the voivodes through the ages, and " +
+      "the seven-tower mural crown for the city's rank as county seat.",
+    sources: [
+      { title: "Stema municipiului Oradea — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Oradea" },
+    ],
+  },
+
+  // ── Bistrița — capital of Bistrița-Năsăud county, Romania ─────────────────
+  "RO-BN": {
+    description:
+      "Bistrița flies a silver ostrich head holding a golden horseshoe in its beak — arms granted to the town " +
+      "in the 14th century by King Louis of Anjou, whose crest bore just such an ostrich. The ostrich, thought " +
+      "the strongest of birds, stands for commerce and civic pride; the horseshoe for the medieval belief that " +
+      "it could digest iron, for the Anjou victory over the Hungarian nobility (whose emblem was a horse), and " +
+      "for good luck.",
+    sources: [
+      { title: "Stema municipiului Bistrița — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Bistri%C8%9Ba" },
+    ],
+  },
+
+  // ── Brașov — capital of Brașov county, Romania ────────────────────────────
+  "RO-BV": {
+    description:
+      "Brașov's blue shield bears a tree trunk with silver roots rising from a golden crown — a “speaking” " +
+      "device, the crown recalling the city's Latin name Corona and its German name Kronstadt. The crown's " +
+      "tradition dates from the 14th century; the thirteen roots stand for the thirteen communes of Țara " +
+      "Bârsei (the Burzenland) and the trunk for the city's bond with them and its enduring strength.",
+    sources: [
+      { title: "Stema municipiului Brașov — Primăria Municipiului Brașov", url: "https://www.brasovcity.ro/file-zone/proiecte/hotarare/Stema2022/4.%20Raport%20de%20specialitate%20stema%20Brasov.pdf" },
+    ],
+  },
+
+  // ── Constanța — capital of Constanța county, Romania ──────────────────────
+  "RO-CT": {
+    description:
+      "Constanța's arms carry two figures drawn from an ancient sculpture unearthed in the city in 1962 — the " +
+      "goddess Fortuna and the god Pontos — emblematic of the unbroken continuity between ancient Tomis and " +
+      "modern Constanța, above three wavy silver bands for the sea. The seven-tower mural crown marks its rank " +
+      "as a county-seat municipality.",
+    sources: [
+      { title: "Municipiul Constanța are o nouă stemă — Primăria Municipiului Constanța", url: "https://primaria-constanta.ro/anunt-pmc/municipiul-constanta-are-o-noua-stema/" },
+    ],
+  },
+
+  // ── Galați — capital of Galați county, Romania ────────────────────────────
+  "RO-GL": {
+    description:
+      "Galați's shield, cut by a wavy silver band, shows above on blue a black two-masted ship with silver " +
+      "sails, and below two silver fish (on red) and a black caduceus (on gold). The ship marks Galați as a " +
+      "great Danube port, documented since the 15th century; the fish its fisheries; and the caduceus — the " +
+      "staff of Mercury, god of commerce — the intense trade that by 1711 made it the foremost commercial " +
+      "centre on the whole Danube.",
+    sources: [
+      { title: "Stema municipiului Galați — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Gala%C8%9Bi" },
+    ],
+  },
+
+  // ── Deva — capital of Hunedoara county, Romania ───────────────────────────
+  "RO-HD": {
+    description:
+      "Deva's arms show above, on red, a golden horseman in antique dress carrying the Dacian standard (the " +
+      "wolf-headed serpent) — King Decebalus, for the high Dacian civilisation — and below, on blue, a silver " +
+      "fortress between a golden sun and a silver crescent. The fortress evokes the medieval citadel under " +
+      "which the town grew, and the sun and crescent its lively life as a chief town of Hunedoara county.",
+    sources: [
+      { title: "Stema municipiului Deva — Wikipedia (ro)", url: "https://ro.wikipedia.org/wiki/Stema_municipiului_Deva" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
