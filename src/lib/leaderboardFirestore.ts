@@ -45,6 +45,13 @@ function fromRemote(remote: RemoteLeaderboardEntry): LeaderboardEntry {
       ...c,
       flagSvg: `https://flagcdn.com/${c.code.toLowerCase()}.svg`,
     })),
+    subdivisionGame: remote.subdivisionGame
+      ? {
+          ...remote.subdivisionGame,
+          divisions: remote.subdivisionGame.divisions ?? [],
+          divisionResults: remote.subdivisionGame.divisionResults ?? {},
+        }
+      : undefined,
   };
 }
 

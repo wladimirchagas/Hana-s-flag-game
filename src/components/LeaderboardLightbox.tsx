@@ -3,9 +3,50 @@ import { useLeaderboard } from "../context/LeaderboardContext";
 import { ScoreBoard } from "./ScoreBoard";
 import { WorldProgressMap } from "./WorldProgressMap";
 import { GameResultsFlags } from "./GameResultsFlags";
+import { SubdivisionMap } from "./SubdivisionMap";
+import { SubdivisionResultsFlags } from "./SubdivisionResultsFlags";
+import { fetchMergedSubdivisionGeo } from "../api/subdivisions";
+import type { SubdivisionFeatureCollection } from "../types/subdivision";
 import type { LeaderboardEntry } from "../lib/leaderboardStorage";
 import { MascotAvatar } from "./MascotAvatar";
 import "../App.css";
+
+/**
+ * Read-only country-specific map for a saved Sub-national run. Fetches the
+ * same merged subdivision geometry the live game uses and colours it from
+ * the entry's stored per-division results — never the generic world map,
+ * which has no notion of subdivision codes.
+ */
+function SubdivisionResultsMap({
+  countryCode,
+  countryResults,
+}: {
+  countryCode: string;
+  countryResults: Record<string, "correct" | "wrong">;
+}) {
+  const [geoData, setGeoData] = useState<SubdivisionFeatureCollection | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setGeoData(null);
+    fetchMergedSubdivisionGeo(countryCode).then((geo) => {
+      if (!cancelled) setGeoData(geo);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [countryCode]);
+
+  return (
+    <SubdivisionMap
+      geoData={geoData}
+      loading={geoData === null}
+      disabled
+      countryCode={countryCode}
+      countryResults={countryResults}
+    />
+  );
+}
 
 function formatLeaderboardDate(ts: number): string {
   return new Date(ts).toLocaleString(undefined, {
@@ -28,6 +69,7 @@ function formatElapsed(ms: number): string {
 function EntryDetail({ entry }: { entry: LeaderboardEntry }) {
   const playedAll = entry.totalAnswered >= entry.totalFlags;
   const countries = entry.countriesPlayed;
+  const subGame = entry.subdivisionGame;
 
   return (
     <div className="leaderboard-lightbox__detail">
@@ -68,12 +110,32 @@ function EntryDetail({ entry }: { entry: LeaderboardEntry }) {
         continentBreakdown={entry.continentBreakdown}
       />
 
-      <WorldProgressMap countryResults={entry.countryResults} />
+      {subGame ? (
+        <>
+          {subGame.countryCode && (
+            <SubdivisionResultsMap
+              countryCode={subGame.countryCode}
+              countryResults={entry.countryResults}
+            />
+          )}
+          <SubdivisionResultsFlags
+            divisions={subGame.divisions}
+            divisionResults={subGame.divisionResults}
+            capitalDivisions={subGame.capitalDivisions}
+            capitalResults={subGame.capitalResults}
+            countryCode={subGame.countryCode}
+          />
+        </>
+      ) : (
+        <>
+          <WorldProgressMap countryResults={entry.countryResults} />
 
-      <GameResultsFlags
-        countries={countries}
-        countryResults={entry.countryResults}
-      />
+          <GameResultsFlags
+            countries={countries}
+            countryResults={entry.countryResults}
+          />
+        </>
+      )}
     </div>
   );
 }

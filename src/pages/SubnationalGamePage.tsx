@@ -224,10 +224,24 @@ export function SubnationalGamePage({
         totalFlags: game.totalQuestions,
         elapsedMs,
         meanAnswerMs: game.meanAnswerMs,
-        countryResults: { ...game.divisionResults, ...game.capitalResults },
+        // mapResults (not a raw divisionResults+capitalResults merge) — a
+        // division and its own capital can both be quizzed in the same deck,
+        // and a flat merge would let one result silently overwrite the other
+        // for that code. mapResults already resolves this the same way the
+        // live map does (division owns the polygon, capital fills only when
+        // the code has no division question).
+        countryResults: { ...game.mapResults },
         countriesPlayed: [],
         continentBreakdown: [],
         gameMode,
+        subdivisionGame: {
+          countryCode: countryCode.toUpperCase(),
+          countryName,
+          divisions: game.divisions,
+          divisionResults: { ...game.divisionResults },
+          capitalDivisions: game.capitalDivisions,
+          capitalResults: { ...game.capitalResults },
+        },
         ...profileEntryFields(activeProfile),
       };
       saveGameToLeaderboard(entry);

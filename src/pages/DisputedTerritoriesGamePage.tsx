@@ -182,6 +182,13 @@ export function DisputedTerritoriesGamePage() {
         countriesPlayed: [],
         continentBreakdown: [],
         gameMode: GAME_MODE,
+        // No countryCode/countryName — this deck spans many countries, so the
+        // lightbox shows no map for it (same as the live game, which has no
+        // map either), just the flags list with images.
+        subdivisionGame: {
+          divisions: game.divisions,
+          divisionResults: { ...game.divisionResults },
+        },
         ...profileEntryFields(activeProfile),
       };
       saveGameToLeaderboard(entry);
