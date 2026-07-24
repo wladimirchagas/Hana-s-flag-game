@@ -2180,7 +2180,17 @@
    phones). Column widths + shrinking thumbs/text do the fitting instead. */
 .hierarchy-table {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) minmax(0, 1.4fr);
+  /* EQUAL fr shares — a narrower column 1 (national flag) used to leave it
+     less available width than columns 2/3, and since `.hierarchy-table__thumb`
+     is sized with `max-width: 100%`, that narrower column silently clipped
+     the national flag's WIDTH (but not its height, which is a separate
+     vw-based clamp unaffected by column width) — breaking its 3:2 box ratio,
+     letterboxing the flag via `object-fit: contain`, and both shrinking it
+     AND knocking it out of top-alignment with the sub-national/capital flags
+     in the same row (reported 2026-07). Equal columns give every thumb the
+     same available width, so the shared clamp() produces an identical box
+     (and therefore an identical rendered flag) in all 3 columns. */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   width: 100%;
 }
 
@@ -2460,11 +2470,13 @@
     flex: 0 0 auto;
   }
 
-  /* Hierarchy table — narrower national-flag column and smaller thumb/text
-     so all 3 columns keep fitting without any horizontal scroll down to
-     ~320px wide. */
+  /* Hierarchy table — smaller thumb/text so all 3 columns keep fitting
+     without any horizontal scroll down to ~320px wide. Columns stay EQUAL
+     fr shares (see the base `.hierarchy-table` rule) — a narrower column 1
+     here used to silently shrink the national flag relative to the
+     sub-national/capital flags at phone widths. */
   .hierarchy-table {
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr) minmax(0, 1.4fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
   .hierarchy-table__cellwrap {
     padding: 0.22rem;
