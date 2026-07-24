@@ -5092,7 +5092,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "US-SC", name: "South Carolina", typeLabel: "State" },
     { code: "US-NC", name: "North Carolina", typeLabel: "State" },
     { code: "US-VA", name: "Virginia", typeLabel: "State" },
-    { code: "US-DC", name: "Washington", typeLabel: "Federal District" },
+    { code: "US-DC", name: "Washington, D.C.", typeLabel: "Federal District" },
     { code: "US-MD", name: "Maryland", typeLabel: "State" },
     { code: "US-DE", name: "Delaware", typeLabel: "State" },
     { code: "US-NJ", name: "New Jersey", typeLabel: "State" },
