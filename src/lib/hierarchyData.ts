@@ -81,6 +81,25 @@ export type HierarchyGroup = {
 
 export type StandaloneCapital = { name: string; note: string | null };
 
+// A handful of subdivisions carry a fuller/official display name (`div.name`)
+// that differs from the plain city name their OWN capital-city record uses in
+// NATIONAL_CITIES/cities.ts — e.g. Argentina's AR-C is officially named
+// "Autonomous City of Buenos Aires" (its ISO 3166-2 name, disambiguating it
+// from AR-B "Buenos Aires Province" in flat lists like the division search
+// dropdown), while its own capital city is still recorded everywhere else as
+// plain "Buenos Aires" — the SAME place, just a shorter name. Every
+// tautological "this subdivision IS its own capital" check below compares
+// those two name sources by exact string match, so without this alias a
+// rename like AR-C's would wrongly stop recognising Buenos Aires as its own
+// self-capital and start treating it like a genuinely distinct, geographically
+// CONTAINED city (the Ottawa/Ontario or Canberra/ACT pattern) — which it is
+// not, since the "city" and the "subdivision" are the exact same polygon.
+// This alias never invents a new fact, it only tells the comparison which of
+// two already-sourced names for the SAME place to use.
+const SUBDIVISION_SELF_NAME_ALIAS: Record<string, string> = {
+  "AR-C": "Buenos Aires",
+};
+
 export function useHierarchyData(
   divisions: SubdivisionMeta[],
   countryCode: string,
@@ -101,10 +120,12 @@ export function useHierarchyData(
           ? distinctCapitalFlagPath(d.code, capital.name)
           : null;
         // Same name as its subdivision (São Paulo state → São Paulo city; Kuala
-        // Lumpur → Kuala Lumpur).
+        // Lumpur → Kuala Lumpur) — via SUBDIVISION_SELF_NAME_ALIAS where the
+        // subdivision's own display name has been disambiguated (Buenos Aires).
         const sameName =
           capital != null &&
-          normalizeForSearch(capital.name) === normalizeForSearch(d.name);
+          normalizeForSearch(capital.name) ===
+            normalizeForSearch(SUBDIVISION_SELF_NAME_ALIAS[d.code] ?? d.name);
         // Show the subdivision's own capital as a leaf when it has a DISTINCT flag
         // (São Paulo city's red-cross flag), OR it is a distinctly-named place
         // (Canberra, Brasília, Victoria). Suppress it only when tautological AND
@@ -178,7 +199,9 @@ export function useHierarchyData(
           hostLeaf.role = role;
           hostLeaf.note = cap.note ?? null;
           marked = true;
-        } else if (normalizeForSearch(hostNode.div.name) === k) {
+        } else if (
+          normalizeForSearch(SUBDIVISION_SELF_NAME_ALIAS[hostNode.div.code] ?? hostNode.div.name) === k
+        ) {
           hostNode.subCapitalRole = role;
           marked = true;
         }

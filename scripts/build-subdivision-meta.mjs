@@ -78,10 +78,20 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
   // point-in-polygon host, but the two cards still need distinct names so a
   // user isn't looking at "Buenos Aires" / "Buenos Aires" side by side.
   // Names below are the official/ISO-3166-2 English designation for each.
+  //
+  // AR-C was ALSO left at the bare name "Buenos Aires" for a time, relying
+  // solely on its typeLabel override ("Autonomous City") to disambiguate it
+  // from AR-B in the flag grid — but the division search dropdown
+  // (SubdivisionDropdown) shows no type badge at all, just the plain name, so
+  // "Buenos Aires" there was still ambiguous with "Buenos Aires Province"
+  // (reported 2026-07). Both siblings now carry a distinct, sourced name.
   "AR": {
-    "AR-B": "Buenos Aires Province" // ISO 3166-2:AR — surrounding province, not the capital
-    // AR-C keeps the plain name "Buenos Aires"; its typeLabel override below
-    // ("Autonomous City") is what disambiguates it — see SUBDIVISION_TYPE_OVERRIDES_NEW.
+    "AR-B": "Buenos Aires Province", // ISO 3166-2:AR — surrounding province, not the capital
+    // Officially "Ciudad Autónoma de Buenos Aires" per ISO 3166-2:AR and
+    // Argentina's 1994 Constitution art. 129; English per the en.wikipedia
+    // title "Autonomous City of Buenos Aires" (the same translation already
+    // cited for its flag's source in flagMeanings.ts).
+    "AR-C": "Autonomous City of Buenos Aires"
   },
   "BG": {
     "BG-22": "Sofia (Capital)" // ISO 3166-2:BG official EN name "Sofia (stolitsa)" — the capital city-district
