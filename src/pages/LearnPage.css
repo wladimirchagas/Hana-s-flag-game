@@ -2416,23 +2416,21 @@
   min-height: 0;
 }
 
-/* A single row-boundary hairline, placed as its OWN grid item on exactly
-   ONE row (gridRow set inline by the component) with `align-self: end` — it
-   sits flush with that row's OWN bottom edge, the same edge a normal cell's
-   border-bottom would use, because it's positioned by actual grid row-track
-   layout rather than a computed percentage. Used for the row boundaries
+/* A row-boundary placeholder, placed as its OWN grid item on exactly ONE
+   row (gridRow set inline by the component). Used for the row boundaries
    INSIDE a multi-row spanning card's own span (e.g. between Ontario's row
    and Ottawa's row) so column 2 shows a boundary line there too, matching
-   column 3's own per-row border-bottom. A percentage-based background
-   gradient on the wrapper was tried here first and replaced — computing "50%
-   of the wrapper's rendered height" is one more step removed from the grid's
-   own row-track boundaries than placing a real item directly on the row,
-   and safer to keep exactly aligned across engines. */
+   column 3's own per-row border-bottom.
+   Deliberately given NO special alignment (`align-self`, explicit height,
+   percentage math, …) — it uses the grid's DEFAULT stretch behaviour, the
+   SAME as every ordinary content cell, and draws its line with the SAME
+   border-bottom rule those cells use. It is, in every layout-relevant
+   respect, an ordinary (content-less) cell — the one thing guaranteed to
+   line up with the row boundary as reliably as column 3's own cell does,
+   with nothing engine-specific (`align-self: end`, a background-gradient
+   percentage) left for a browser to render subtly differently. */
 .hierarchy-table__row-divider {
-  align-self: end;
-  justify-self: stretch;
-  height: 1px;
-  background: var(--ink-soft);
+  border-bottom: 1px solid var(--ink-soft);
 }
 
 /* Phones — slightly tighter tiles and a more compact toolbar. */
