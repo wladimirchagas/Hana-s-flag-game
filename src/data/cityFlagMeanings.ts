@@ -8180,6 +8180,32 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Tagum — capital of Davao del Norte, Philippines ───────────────────────
+  "PH-DAV": {
+    description:
+      "Tagum City's gold seal carries a four-pointed brown star quartered into the city's economy: a fish for " +
+      "aquaculture, purple flowers for the cut-flower sector, durian, bananas and young coconuts for its " +
+      "high-value crops, and purple interlocking gears for the modernisation of its infrastructure. The gold " +
+      "field speaks of the city's “golden image” — its precious-metals and jewellery trade and its rich " +
+      "ethnic and cultural heritage — and the brown compass lines dividing the star mark its dynamism across " +
+      "many industries.",
+    sources: [
+      { title: "Seal of Tagum — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Tagum" },
+    ],
+  },
+
+  // ── Tacloban — capital of Leyte, Philippines ──────────────────────────────
+  "PH-LEY": {
+    description:
+      "Tacloban City's seal maps its setting on the San Juanico Strait. The right half is the Leyte side, " +
+      "where the city stands; the left half is Samar, the city's major supplier of farm and marine goods; and " +
+      "between them lies the scenic strait itself. A galleon recalls Ferdinand Magellan's ship and the first " +
+      "Christian Mass, held in 1521 on nearby Limasawa.",
+    sources: [
+      { title: "Official Seal of Tacloban City — City Government of Tacloban (official)", url: "https://tacloban.gov.ph/tacloban-city-seal/" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
