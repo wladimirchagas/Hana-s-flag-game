@@ -2339,13 +2339,19 @@
   hyphens: none;
 }
 
-/* Always rendered (see the component), so this reserves the same vertical
-   space whether or not a badge is present this row. */
+/* Always rendered (see the component), so this reserves at least the same
+   vertical space whether or not a badge is present this row. A subdivision
+   that IS its own national capital (Buenos Aires, e.g.) stacks a SECOND
+   badge here ("★ National capital" under its own type badge), so the slot
+   grows to fit both — CSS Grid's per-row auto-sizing then simply makes that
+   one row taller without disturbing any other row's height. */
 .hierarchy-table__badge-slot {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 1.5em;
+  gap: 0.25em;
+  min-height: 1.5em;
   max-width: 100%;
 }
 
