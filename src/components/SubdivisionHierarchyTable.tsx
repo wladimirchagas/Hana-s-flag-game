@@ -439,22 +439,25 @@ export function SubdivisionHierarchyTable({
                     >
                       {subCell}
                     </div>
-                    {/* One boundary hairline per row INSIDE the span (every row
-                        except the last — the last boundary is either the true
-                        end of the table or the next subdivision's own row
-                        drawing its own border as normal). Each is placed
-                        directly on its OWN single grid row with
-                        `align-self: end`, so it sits flush with that row's
-                        real bottom edge — the exact same edge column 3's own
-                        border-bottom uses — rather than a computed percentage
-                        within the spanning wrapper. */}
-                    {Array.from({ length: extraSpan }, (_, idx) => (
-                      <div
-                        key={`divider-${row.key}-${idx}`}
-                        className="hierarchy-table__row-divider"
-                        style={{ gridColumn: 2, gridRow: gridRow + idx }}
-                      />
-                    ))}
+                    {/* NO divider is placed at any row INSIDE the span (this
+                        subdivision's own row, or an earlier national-extra row)
+                        — the span renders as ONE continuous card, so a line
+                        bisecting it partway through would wrongly suggest the
+                        subdivision's section ends there while its national-extra
+                        row (Ottawa, e.g.) still belongs to it (reported 2026-07:
+                        a stray line appeared between Ontario/Toronto and Ottawa).
+                        Only the TRUE end of the span — its LAST national-extra
+                        row — gets a column-2 divider here, so it lines up with
+                        that row's own column-3 cell border-bottom (Ottawa's own
+                        FlagCell already draws one) and closes off the spanning
+                        card with a full-width line right before the NEXT
+                        subdivision (Prince Edward Island, e.g.) begins. Without
+                        this, column 2 had NO line at all at that boundary. */}
+                    <div
+                      key={`divider-${row.key}`}
+                      className="hierarchy-table__row-divider"
+                      style={{ gridColumn: 2, gridRow: gridRow + extraSpan }}
+                    />
                   </>
                 ) : (
                   subCell
