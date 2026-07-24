@@ -8294,6 +8294,171 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Wrocław — capital of Lower Silesia (Dolnośląskie), Poland ──────────────
+  "PL-DS": {
+    description:
+      "Wrocław's flag is red over yellow — the city's heraldic colours since 1530. Yellow stood for the " +
+      "authority of the town, red for the authority of the emperor; both are drawn from the city arms, whose " +
+      "central charge is a silver dish bearing the severed head of St John the Baptist, patron of Wrocław " +
+      "cathedral.",
+    sources: [
+      { title: "Flaga Wrocławia — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Flaga_Wroc%C5%82awia" },
+    ],
+  },
+
+  // ── Bydgoszcz — capital of Kuyavia-Pomerania (Kujawsko-Pomorskie), Poland ──
+  "PL-KP": {
+    description:
+      "Bydgoszcz flies its arms on a white-red-blue field: a red battlemented wall with three towers, blue " +
+      "roofs and golden finials, and an open golden gate. The three towers are traditionally read as the " +
+      "town's three former gates — Poznańska, Kujawska and Gdańska — and the councillors decreed the gate be " +
+      "shown always open, a sign that Bydgoszcz gladly welcomes its guests.",
+    sources: [
+      { title: "Herb Bydgoszczy — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Bydgoszczy" },
+    ],
+  },
+
+  // ── Zielona Góra — capital of Lubusz (Lubuskie), Poland ───────────────────
+  "PL-LB": {
+    description:
+      "Zielona Góra's flag sets a yellow stripe at the hoist against horizontal white and green. The yellow " +
+      "recalls the city's medieval ties to the Silesian Piasts, whose arms bore a golden field; the white " +
+      "stands for its long textile-weaving tradition; and the green for the grapevines and wine-making for " +
+      "which Zielona Góra — the northernmost vineyard region in Poland — is famous.",
+    sources: [
+      { title: "Herb Zielonej Góry — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Zielonej_G%C3%B3ry" },
+    ],
+  },
+
+  // ── Łódź — capital of Łódź (Łódzkie), Poland ──────────────────────────────
+  "PL-LD": {
+    description:
+      "Łódź flies gold over red charged with a golden boat and oar — for the name Łódź itself, which means " +
+      "“boat”. Approved in 1936 as “a golden boat with an oar in a red field”, it puns on the city's name and " +
+      "recalls the legend of the settler who, crossing the forest marshes, ended his journey and made his " +
+      "home in his boat.",
+    sources: [
+      { title: "Herb Łodzi — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_%C5%81odzi" },
+    ],
+  },
+
+  // ── Lublin — capital of Lublin (Lubelskie), Poland ────────────────────────
+  "PL-LU": {
+    description:
+      "Lublin flies its arms on red: a silver goat with golden horns and hooves climbing a green grapevine " +
+      "from green turf. The goat upon the vine — both attributes of the goddess Venus, and so of nature's " +
+      "fertility — stands for strength, independence and fertility, while the red field is for strength and " +
+      "power.",
+    sources: [
+      { title: "Herb Lublina — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Lublina" },
+    ],
+  },
+
+  // ── Kraków — capital of Lesser Poland (Małopolskie), Poland ───────────────
+  "PL-MA": {
+    description:
+      "Kraków's flag is white over blue. White is for purity and blue for the waters of the Vistula, and both " +
+      "derive from the White Eagle on a blue field in the city arms — a red brick wall with three towers and " +
+      "an open gate for the town's municipal rights, with the crowned White Eagle in the gateway marking " +
+      "Kraków's royal standing as a capital.",
+    sources: [
+      { title: "Flaga Krakowa — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Flaga_Krakowa" },
+    ],
+  },
+
+  // ── Opole — capital of Opole (Opolskie), Poland ───────────────────────────
+  "PL-OP": {
+    description:
+      "Opole's arms, on blue, join half a golden Upper-Silesian eagle to half a golden cross with trefoiled " +
+      "ends. The eagle (gold on blue) comes from the arms of the Opole-Racibórz dukes; the half-cross recalls " +
+      "the relics of the Holy Cross given to Opole's church in 1024, which became a symbol of the city.",
+    sources: [
+      { title: "Herb Opola — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Opola" },
+    ],
+  },
+
+  // ── Białystok — capital of Podlaskie, Poland ──────────────────────────────
+  "PL-PD": {
+    description:
+      "Białystok's arms are divided in fess: on the red upper half a crowned silver eagle, on the golden lower " +
+      "half the Lithuanian Pogoń — an armoured knight on a silver horse with sword raised. The White Eagle of " +
+      "Poland above the Pogoń of Lithuania reflect the city's place between the two; the arms in this form " +
+      "were granted by Tsar Alexander I in 1809.",
+    sources: [
+      { title: "Herb Białegostoku — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Bia%C5%82egostoku" },
+    ],
+  },
+
+  // ── Rzeszów — capital of Subcarpathia (Podkarpackie), Poland ──────────────
+  "PL-PK": {
+    description:
+      "Rzeszów flies a silver cavalier's cross on blue. The cross — the kind once awarded to knights for " +
+      "courage in battle — stands for bravery and knightly valour, and the blue field for fidelity and " +
+      "loyalty. The cavalier's cross has been Rzeszów's arms since at least the 15th century.",
+    sources: [
+      { title: "Herb Rzeszowa — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Rzeszowa" },
+    ],
+  },
+
+  // ── Gdańsk — capital of Pomerania (Pomorskie), Poland ─────────────────────
+  "PL-PM": {
+    description:
+      "Gdańsk flies a red flag bearing a golden open crown above two silver crosses in pale. The two crosses " +
+      "stand for the city's Christian heritage and its readiness to defend the faith (a legacy of its " +
+      "Hanseatic arms); the crown for the privileges and autonomy granted by the Kings of Poland — confirmed " +
+      "in 1457 by Kazimierz IV Jagiellończyk, who also gave Gdańsk the right to seal in red wax, hence the " +
+      "red field, itself a colour of courage and freedom.",
+    sources: [
+      { title: "Flaga Gdańska — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Flaga_Gda%C5%84ska" },
+    ],
+  },
+
+  // ── Kielce — capital of Holy Cross (Świętokrzyskie), Poland ───────────────
+  "PL-SK": {
+    description:
+      "Kielce flies a red flag with the golden letters “CK” beneath a golden crown. CK stands for " +
+      "“Civitas Kielcensis”, the city and citizens of Kielce, and the crown for power — a reminder of the " +
+      "town's founding under Cardinal Frederick Jagiellon around the year 1500.",
+    sources: [
+      { title: "Herb Kielc — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Kielc" },
+    ],
+  },
+
+  // ── Olsztyn — capital of Warmia-Masuria (Warmińsko-Mazurskie), Poland ─────
+  "PL-WN": {
+    description:
+      "Olsztyn's flag sets a golden scallop shell over a white wavy line on blue. The scallop is the " +
+      "attribute of St James the Greater, patron of the city's oldest parish, who appears in Olsztyn's arms; " +
+      "the wavy line stands for water, for the city's setting on the Łyna river amid its many lakes.",
+    sources: [
+      { title: "Flaga Olsztyna — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Flaga_Olsztyna" },
+    ],
+  },
+
+  // ── Poznań — capital of Greater Poland (Wielkopolskie), Poland ────────────
+  "PL-WP": {
+    description:
+      "Poznań flies one of Poland's richest civic arms on white: a wall with three towers and a gate for the " +
+      "city's municipal rights, with crossed keys in the gateway for its autonomy. On the side towers stand " +
+      "Saints Peter (with a key) and Paul (with a sword), patrons of Poznań's cathedral, the oldest in " +
+      "Poland; above the gate a Polish eagle recalls the royal dignity of Przemysł II, who was crowned king " +
+      "and whose seat was Poznań; and stars and crescents flank the whole.",
+    sources: [
+      { title: "Herb Poznania — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Poznania" },
+    ],
+  },
+
+  // ── Szczecin — capital of West Pomerania (Zachodniopomorskie), Poland ─────
+  "PL-ZP": {
+    description:
+      "Szczecin's arms bear a crowned red griffin's head, with golden crown and beak, on blue. The griffin is " +
+      "the emblem of the Griffin dynasty (Gryfici) that ruled the Duchy of Pomerania — a creature of strength " +
+      "and agility long favoured by knights — and remains the best-known symbol of the city.",
+    sources: [
+      { title: "Herb Szczecina — Wikipedia (pl)", url: "https://pl.wikipedia.org/wiki/Herb_Szczecina" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
