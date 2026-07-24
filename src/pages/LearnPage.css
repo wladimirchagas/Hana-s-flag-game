@@ -2270,18 +2270,20 @@
    every viewport width without relying on the `aspect-ratio` property (still
    deliberately avoided — see the Safari row-collapse fix above).
    `max-width: 100%` + allowing shrink is a safety net in case a column ever
-   ends up narrower than expected. Raised 1.5x (max 180x120 → 270x180;
-   16vw/10.667vw → 24vw/16vw) — the previous max left the flag filling well
-   under half of a typical desktop cell's width, a lot of bare empty space on
-   either side (reported 2026-07). The floor (60x40, for narrow phones) is
-   untouched — that's the "two columns must always fit with no horizontal
-   scroll" bound, not the one that was too small. */
+   ends up narrower than expected. Raised again (max 270x180 → 300x200;
+   24vw/16vw → 27vw/18vw) and — critically — the SAME size is now used for
+   the national flag too (the old `--sticky` modifier that made it bigger is
+   gone): the owner asked for national to match sub-national/capital exactly,
+   which frees up room for all three to read a bit larger with less bare
+   space around them (reported 2026-07). The floor (60x40, for narrow
+   phones) is untouched — that's the "two columns must always fit with no
+   horizontal scroll" bound, not the one that was too small. */
 .hierarchy-table__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(60px, 24vw, 270px);
-  height: clamp(40px, 16vw, 180px);
+  width: clamp(60px, 27vw, 300px);
+  height: clamp(40px, 18vw, 200px);
   max-width: 100%;
   flex: 0 1 auto;
 }
@@ -2376,18 +2378,19 @@
   display: inline-block;
 }
 
-/* The national-flag cell — a SINGLE grid item spanning every data row
-   (gridRow set inline by the component), so it renders once instead of once
-   per row. `align-self: start` keeps its own box only as tall as its content
-   (flag + name) rather than stretching to fill that whole tall spanned area
-   — that's what lets `position: sticky` slide it within the area and then
-   lock at `top`, exactly like the site-topbar it tucks in below (lower
-   z-index: 40 is the topbar's, per src/index.css .site-topbar). An opaque
-   background keeps it legible as it stays put while columns 2/3 scroll. */
+/* A sticky card — the national flag, or a subdivision spanning more than one
+   capital-city row (Ontario, e.g.) — nested inside a `.hierarchy-table__sticky-bounds`
+   wrapper (a real block box that stretches to fill the whole grid-row span;
+   see that class). As a normal block-level child of that wrapper (NOT a
+   grid item itself), this button naturally sizes to just its own content
+   (flag + name) rather than stretching to fill the tall wrapper — that's
+   what lets `position: sticky` slide it within the wrapper and then lock at
+   `top`, exactly like the site-topbar it tucks in below (lower z-index: 40
+   is the topbar's, per src/index.css .site-topbar). An opaque background
+   keeps it legible as it stays put while columns 2/3 scroll. */
 .hierarchy-table__cell--sticky {
   position: sticky;
   top: 4rem;
-  align-self: start;
   background: var(--paper);
   z-index: 5;
   /* Sticky cells never draw a border-bottom (excluded below), so there is no
@@ -2396,28 +2399,40 @@
   border-radius: 8px;
 }
 
-/* Bounds a spanning subdivision card's sticky release to EXACTLY its own
-   multi-row span (Ontario spanning its own row + Ottawa's extra row below,
-   e.g.) — see FlagCell's `sticky` prop and its caller. A real block box
-   (unlike ".hierarchy-table__row", which is display:contents so it
-   contributes no box), so it fills its whole grid-row span via default grid
-   stretching, giving the nested sticky child a correctly-bounded containing
-   block: position:sticky needs a real block-level ancestor to know where its
-   own span ends, so the card releases and scrolls away exactly when the
-   span it belongs to (Ottawa's row) ends, confirmed by scrolling past it and
-   measuring that the card's box stays flush with the wrapper's bottom edge
-   instead of continuing to float past unrelated rows below. */
+/* Bounds a sticky card's release to EXACTLY its own multi-row span — used
+   for BOTH the national-flag column (spans every data row) and a
+   subdivision that hosts more than one capital-city row (Ontario spanning
+   its own row + Ottawa's extra row below, e.g.). A real block box (unlike
+   ".hierarchy-table__row", which is display:contents so it contributes no
+   box), so it fills its whole grid-row span via default grid stretching,
+   giving the nested sticky child a correctly-bounded containing block:
+   position:sticky needs a real block-level ancestor to know where its own
+   span ends, so the card releases and scrolls away exactly when its span
+   ends, confirmed by scrolling past it and measuring that the card's box
+   stays flush with the wrapper's bottom edge instead of continuing to float
+   past unrelated rows below. */
 .hierarchy-table__sticky-bounds {
   min-width: 0;
   min-height: 0;
 }
 
-/* Same 1.5x raise as the regular thumb above, keeping the same relative
-   "national flag reads a bit bigger than the rest" proportion (max
-   270x180 * 1.222 ≈ 330x220, matching the original 220/180 = 147/120 ratio). */
-.hierarchy-table__thumb--sticky {
-  width: clamp(72px, 27vw, 330px);
-  height: clamp(48px, 18vw, 220px);
+/* A single row-boundary hairline, placed as its OWN grid item on exactly
+   ONE row (gridRow set inline by the component) with `align-self: end` — it
+   sits flush with that row's OWN bottom edge, the same edge a normal cell's
+   border-bottom would use, because it's positioned by actual grid row-track
+   layout rather than a computed percentage. Used for the row boundaries
+   INSIDE a multi-row spanning card's own span (e.g. between Ontario's row
+   and Ottawa's row) so column 2 shows a boundary line there too, matching
+   column 3's own per-row border-bottom. A percentage-based background
+   gradient on the wrapper was tried here first and replaced — computing "50%
+   of the wrapper's rendered height" is one more step removed from the grid's
+   own row-track boundaries than placing a real item directly on the row,
+   and safer to keep exactly aligned across engines. */
+.hierarchy-table__row-divider {
+  align-self: end;
+  justify-self: stretch;
+  height: 1px;
+  background: var(--ink-soft);
 }
 
 /* Phones — slightly tighter tiles and a more compact toolbar. */

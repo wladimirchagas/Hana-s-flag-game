@@ -1,4 +1,4 @@
-import { useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_CAPITAL_FLAGS } from "../data/nationalCapitalFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
@@ -143,40 +143,6 @@ function assignTypeColors(typeLabels: string[]): Map<string, string> {
     next++;
   }
   return colorForLabel;
-}
-
-/**
- * Background-image hairlines replicating the normal per-row border-bottom
- * INSIDE a multi-row spanning wrapper (`.hierarchy-table__sticky-bounds`).
- * The spanning subdivision card renders once, so without this, the row
- * boundary it covers shows a divider in column 3 (each capital-city row
- * draws its own border-bottom) but NOT column 2 — e.g. between Ontario's own
- * row and Ottawa's extra row beneath it (reported 2026-07). One thin line
- * per INTERNAL boundary (`rowCount - 1` of them; the wrapper spans exactly
- * `rowCount` equal-height grid rows — every row has a fixed height by
- * design, see the comment on `.hierarchy-table__cell` — so `k / rowCount`
- * always lands exactly on a row boundary). The final boundary (100%, the
- * wrapper's own bottom edge) needs no line here — that one is either the
- * true end of the table, or the next (different) subdivision's own row
- * drawing its own border-top-adjacent divider as normal.
- */
-function innerRowDividerStyle(rowCount: number): CSSProperties | undefined {
-  if (rowCount <= 1) return undefined;
-  const images: string[] = [];
-  const sizes: string[] = [];
-  const positions: string[] = [];
-  for (let k = 1; k < rowCount; k++) {
-    const pct = (k / rowCount) * 100;
-    images.push("linear-gradient(var(--ink-soft), var(--ink-soft))");
-    sizes.push("100% 1px");
-    positions.push(`0 ${pct}%`);
-  }
-  return {
-    backgroundImage: images.join(", "),
-    backgroundSize: sizes.join(", "),
-    backgroundPosition: positions.join(", "),
-    backgroundRepeat: "no-repeat",
-  };
 }
 
 type Row =
@@ -363,26 +329,38 @@ export function SubdivisionHierarchyTable({
         </div>
 
         {/* The nation's own flag — ONE cell, spanning every data row, sticky
-            so it stays in view as columns 2/3 scroll underneath it. */}
-        <button
-          type="button"
-          className="hierarchy-table__cell hierarchy-table__cell--sticky"
+            so it stays in view as columns 2/3 scroll underneath it. Nested in
+            the same `.hierarchy-table__sticky-bounds` wrapper as a spanning
+            subdivision card (see below): a real block box that stretches to
+            fill the full row span, giving the sticky button a correctly-
+            bounded containing block. This also keeps its top edge flush with
+            row 2's own top — a bare sticky grid item with `align-self: start`
+            was found to be an unreliable basis for exact alignment (reported
+            2026-07: the flag rendered a few pixels lower than column 2/3's
+            row-2 content on-device). */}
+        <div
+          className="hierarchy-table__sticky-bounds"
           style={{ gridColumn: 1, gridRow: `${firstDataRow} / ${lastDataRow}` }}
-          onClick={onSelectCountry}
-          aria-pressed={rootActive}
-          aria-label={`Select ${countryName}`}
-          role="cell"
-          aria-rowspan={rows.length}
         >
-          <span className="hierarchy-table__thumb hierarchy-table__thumb--sticky">
-            {countryFlagUrl ? (
-              <img src={countryFlagUrl} alt="" loading="lazy" draggable={false} className="hierarchy-table__thumb-img" />
-            ) : (
-              <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
-            )}
-          </span>
-          <AutoFitName className="hierarchy-table__name" text={countryName} />
-        </button>
+          <button
+            type="button"
+            className="hierarchy-table__cell hierarchy-table__cell--sticky"
+            onClick={onSelectCountry}
+            aria-pressed={rootActive}
+            aria-label={`Select ${countryName}`}
+            role="cell"
+            aria-rowspan={rows.length}
+          >
+            <span className="hierarchy-table__thumb">
+              {countryFlagUrl ? (
+                <img src={countryFlagUrl} alt="" loading="lazy" draggable={false} className="hierarchy-table__thumb-img" />
+              ) : (
+                <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
+              )}
+            </span>
+            <AutoFitName className="hierarchy-table__name" text={countryName} />
+          </button>
+        </div>
 
         {rows.map((row, i) => {
           const gridRow = firstDataRow + i;
@@ -447,23 +425,37 @@ export function SubdivisionHierarchyTable({
             return (
               <div className="hierarchy-table__row" role="row" key={row.key}>
                 {extraSpan > 0 ? (
-                  // A real (non-`display:contents`) block box, sized to fill
-                  // this subdivision's FULL row span by default grid
-                  // stretching — this is what makes the nested sticky cell's
-                  // release point land exactly at the end of that span. A
-                  // bare grid item spanning multiple rows does NOT reliably
-                  // bound position:sticky release on its own (see the note on
-                  // `sticky` in FlagCell).
-                  <div
-                    className="hierarchy-table__sticky-bounds"
-                    style={{
-                      gridColumn: 2,
-                      gridRow: `${gridRow} / ${gridRow + 1 + extraSpan}`,
-                      ...innerRowDividerStyle(extraSpan + 1),
-                    }}
-                  >
-                    {subCell}
-                  </div>
+                  <>
+                    {/* A real (non-`display:contents`) block box, sized to fill
+                        this subdivision's FULL row span by default grid
+                        stretching — this is what makes the nested sticky cell's
+                        release point land exactly at the end of that span. A
+                        bare grid item spanning multiple rows does NOT reliably
+                        bound position:sticky release on its own (see the note
+                        on `sticky` in FlagCell). */}
+                    <div
+                      className="hierarchy-table__sticky-bounds"
+                      style={{ gridColumn: 2, gridRow: `${gridRow} / ${gridRow + 1 + extraSpan}` }}
+                    >
+                      {subCell}
+                    </div>
+                    {/* One boundary hairline per row INSIDE the span (every row
+                        except the last — the last boundary is either the true
+                        end of the table or the next subdivision's own row
+                        drawing its own border as normal). Each is placed
+                        directly on its OWN single grid row with
+                        `align-self: end`, so it sits flush with that row's
+                        real bottom edge — the exact same edge column 3's own
+                        border-bottom uses — rather than a computed percentage
+                        within the spanning wrapper. */}
+                    {Array.from({ length: extraSpan }, (_, idx) => (
+                      <div
+                        key={`divider-${row.key}-${idx}`}
+                        className="hierarchy-table__row-divider"
+                        style={{ gridColumn: 2, gridRow: gridRow + idx }}
+                      />
+                    ))}
+                  </>
                 ) : (
                   subCell
                 )}
