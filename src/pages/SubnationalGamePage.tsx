@@ -11,6 +11,7 @@ import { SubdivisionDropdown } from "../components/SubdivisionDropdown";
 import { SubdivisionResultsFlags } from "../components/SubdivisionResultsFlags";
 import { capitalFlagSrc } from "../lib/capitalInfo";
 import { subnationalDivisionFlag } from "../lib/subnationalDivisionFlag";
+import { sharedFlagCodes } from "../lib/playableSubdivisions";
 import { subdivisionCityMarkers } from "../lib/cityRoles";
 import { gameAudio } from "../lib/gameAudio";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
@@ -327,19 +328,40 @@ export function SubnationalGamePage({
   // (São Paulo, Rio de Janeiro, …) both rows carry their type in parentheses —
   // "São Paulo (State)" / "São Paulo (Capital City)" — so the player always
   // knows which entity they are picking.
+  //
+  // A division and its own capital can also share the EXACT SAME flag image
+  // (e.g. Brazil's Distrito Federal ≡ Brasília — see SHARED_CAPITAL_FLAGS).
+  // Listing both as separate rows would offer two "different" answers for one
+  // flag; instead they're merged into a single combined row ("Distrito
+  // Federal / Brasília") — matching the reveal text, which already treats
+  // either name as correct for a shared-flag code (see useSubdivisionGame's
+  // revealNote and the `sharedRef` check in confirm()).
   const dropdownOptions = useMemo(() => {
     if (!(includeDivisions && includeCapitals)) return answerOptions;
+    const shared = sharedFlagCodes(countryCode);
+    const divCodes = new Set(game.divisions.map((d) => d.code));
+    const capByCode = new Map(game.capitalAnswerOptions.map((d) => [d.code, d]));
     const divNames = new Set(game.divisions.map((d) => d.name.toLowerCase()));
     const capNames = new Set(game.capitalAnswerOptions.map((d) => d.name.toLowerCase()));
-    return [
-      ...game.divisions.map((d) =>
-        capNames.has(d.name.toLowerCase()) ? { ...d, name: `${d.name} (${d.typeLabel})` } : d,
-      ),
-      ...game.capitalAnswerOptions.map((d) =>
+
+    const divisionRows = game.divisions.map((d) => {
+      const cap = capByCode.get(d.code);
+      if (cap && shared.has(d.code)) {
+        const label =
+          cap.name.toLowerCase() === d.name.toLowerCase() ? d.name : `${d.name} / ${cap.name}`;
+        return { ...d, name: label };
+      }
+      return capNames.has(d.name.toLowerCase()) ? { ...d, name: `${d.name} (${d.typeLabel})` } : d;
+    });
+
+    const remainingCapitalRows = game.capitalAnswerOptions
+      .filter((d) => !(shared.has(d.code) && divCodes.has(d.code)))
+      .map((d) =>
         divNames.has(d.name.toLowerCase()) ? { ...d, name: `${d.name} (Capital City)` } : d,
-      ),
-    ];
-  }, [includeDivisions, includeCapitals, answerOptions, game.divisions, game.capitalAnswerOptions]);
+      );
+
+    return [...divisionRows, ...remainingCapitalRows];
+  }, [includeDivisions, includeCapitals, answerOptions, game.divisions, game.capitalAnswerOptions, countryCode]);
 
   if (game.phase === "error") {
     return (
