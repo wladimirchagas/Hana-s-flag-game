@@ -8905,6 +8905,83 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Kraljevo — capital of Raška district, Serbia ──────────────────────────
+  "RS-18": {
+    description:
+      "Kraljevo flies a red shield with seven golden royal crowns — for the seven kings crowned at the nearby " +
+      "Žiča monastery, from which the town takes its name, “Kraljevo”, the King's town. The great arms add a " +
+      "silver falcon and the motto “Nama dobro a nikome zlo” (good to us, evil to none).",
+    sources: [
+      { title: "Odluka o grbu i zastavi grada Kraljeva (official)", url: "http://demo.paragraf.rs/demo/combined/Old/t/t2009_09/t09_0118.htm" },
+    ],
+  },
+
+  // ── Kruševac — capital of Rasina district, Serbia ─────────────────────────
+  "RS-19": {
+    description:
+      "Kruševac's emblem bears the year 1371 — when Prince Lazar built the town, of river-stone (krušac, from " +
+      "which its name derives), as his capital. From here medieval Serbia was governed in the years before the " +
+      "Battle of Kosovo.",
+    sources: [
+      { title: "Grb Kruševca — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%9A%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%86%D0%B0" },
+    ],
+  },
+
+  // ── Niš — capital of Nišava district, Serbia ──────────────────────────────
+  "RS-20": {
+    description:
+      "Niš's arms are built on the Niš Fortress, the great citadel on the Nišava that is the city's chief " +
+      "landmark and its emblem.",
+    sources: [
+      { title: "Grb Niša — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%9D%D0%B8%D1%88%D0%B0" },
+    ],
+  },
+
+  // ── Pirot — capital of Pirot district, Serbia ─────────────────────────────
+  "RS-22": {
+    description:
+      "Pirot's emblem shows the pattern of the Pirot ćilim, the traditional flat-woven wool carpet — a " +
+      "protected craft — for which the town is celebrated.",
+    sources: [
+      { title: "Grb Pirota — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%9F%D0%B8%D1%80%D0%BE%D1%82%D0%B0" },
+    ],
+  },
+
+  // ── Leskovac — capital of Jablanica district, Serbia ──────────────────────
+  "RS-23": {
+    description:
+      "Leskovac's arms carry a red double-headed eagle on silver, recalling Stefan Nemanja's winning of " +
+      "Dubočica from Byzantium — the red eagle being the Byzantine mark of the despots that the Nemanjić " +
+      "rulers bore. The blue field alludes to the Morava, gold to holiness; a cross of plaited cord joins the " +
+      "cross of faith to the gajtan (braid) craft from which Leskovac's textile industry grew; and golden " +
+      "hazelnuts pun on the name Leskovac (leska, the hazel).",
+    sources: [
+      { title: "Grb Leskovca — Wikipedia (sr)", url: "https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B1_%D0%9B%D0%B5%D1%81%D0%BA%D0%BE%D0%B2%D1%86%D0%B0" },
+    ],
+  },
+
+  // ── Vranje — capital of Pčinja district, Serbia ───────────────────────────
+  "RS-24": {
+    description:
+      "Vranje flies a golden ocilo — the firesteel-cross of the Serbian state arms — shaped to suggest the " +
+      "letter V for Vranje, on blue beneath a silver mural crown whose crenellations reflect the city's " +
+      "population; the flag itself is yellow, quartered by a red cross.",
+    sources: [
+      { title: "Novi grb i zastava — RTS", url: "https://www.rts.rs/lat/vesti/srbija-danas/1463810/novi-grb-i-zastava-.html" },
+    ],
+  },
+
+  // ── Pristina — seat of Kosovo and Metohija (claimed by Serbia) ────────────
+  "RS-KM~": {
+    description:
+      "Pristina's flag bears the “Goddess on the Throne” (Hyjnesha në Fron), the Neolithic terracotta " +
+      "figurine of the Vinča culture unearthed near the city. Pristina has adopted this ancient seated figure " +
+      "as its emblem and a symbol of the region's deep prehistoric heritage.",
+    sources: [
+      { title: "Pristina — Wikipedia", url: "https://en.wikipedia.org/wiki/Pristina" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
