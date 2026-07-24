@@ -8219,6 +8219,43 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── San Fernando — capital of Pampanga, Philippines ───────────────────────
+  "PH-PAM": {
+    description:
+      "San Fernando's seal is crowned by a giant lantern (parol), the magnificent Christmas lantern for which " +
+      "the city — the “Christmas Capital of the Philippines” — is world-famous, and which as the parol recalls " +
+      "the Star of Bethlehem. Stars stand for the city's progress and development; the dominant red, white and " +
+      "blue are the national colours, while the yellow and green recall the Fernandinos' part in the 1986 EDSA " +
+      "Revolution that restored democracy.",
+    sources: [
+      { title: "Seal of the City of San Fernando — City Government of San Fernando (Pampanga, official)", url: "https://cityofsanfernando.gov.ph/seal-of-the-city-of-san-fernando/" },
+    ],
+  },
+
+  // ── Puerto Princesa — capital of Palawan, Philippines ─────────────────────
+  "PH-PLW": {
+    description:
+      "Puerto Princesa's seal is dominated by the Palawan peacock-pheasant (tandikan), the rare bird endemic " +
+      "to the island that features in the culture of Palawan's indigenous peoples and now serves as a flagship " +
+      "species for conserving the province's threatened wildlife. Its plumage is spread symmetrically as a " +
+      "royal backdrop to the bird's silhouette, head feathers raised — a fitting nod to the city's “princess” " +
+      "name.",
+    sources: [
+      { title: "Puerto Princesa — Wikipedia", url: "https://en.wikipedia.org/wiki/Puerto_Princesa" },
+    ],
+  },
+
+  // ── Cabarroguis — capital of Quirino, Philippines ─────────────────────────
+  "PH-QUI": {
+    description:
+      "Cabarroguis's municipal seal reads in its colours and charges: the yellow denotes the people's hopes " +
+      "and optimism that the municipality will reach its full economic growth, a sun stands for integrity, and " +
+      "a dove for peace.",
+    sources: [
+      { title: "The Municipal Seal — Municipality of Cabarroguis (official)", url: "https://cabarroguis.gov.ph/municipality/the-lgu-official-seal/" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
