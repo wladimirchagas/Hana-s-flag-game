@@ -132,6 +132,38 @@ const DISPUTED_TERRITORY_QIDS = {
 const CAPITAL_CITY_QIDS = {
   "MA-EH~": "Q47837", // Western Sahara → El Aaiún (Laâyoune)
   "AU-NF": "Q31057", // Norfolk Island → Kingston (external territory, no P300)
+  "GB-MS": "Q31006", // Montserrat → Brades (current de facto capital; Plymouth is de jure but abandoned/uninhabited since 1997)
+  "CN-HK": "Q8646", // Hong Kong (self — city-territory)
+  "CN-MO": "Q14773", // Macau (self — city-territory)
+  "MM-18": "Q37400", // Naypyidaw Union Territory → Naypyidaw (self — city-territory)
+};
+
+/**
+ * UK Crown Dependencies / Overseas Territories and other dependent territories
+ * with their own ISO 3166-1 code (not an ISO 3166-2:{parent} code), so the
+ * normal P300-keyed query never reaches them. Mirrors NO_ISO_CODE_QIDS in
+ * scripts/build-subdivision-capitals.mjs — same QIDs, same reasoning, so the
+ * capital NAME here can never disagree with the one shown on the map overlay.
+ */
+const NO_ISO_CODE_TERRITORY_QIDS = {
+  "GB-JE": "Q785",
+  "GB-GG": "Q25230",
+  "GB-IM": "Q9676",
+  "GB-IO": "Q43448",
+  "GB-GS": "Q35086",
+  "GB-AI": "Q25228",
+  "GB-BM": "Q23635",
+  "GB-VG": "Q25305",
+  "GB-KY": "Q5785",
+  "GB-SH": "Q192184",
+  "GB-TC": "Q18221",
+  "GB-PN": "Q35672",
+  "AU-CC": "Q36004",
+  "AU-CX": "Q31063",
+  "DK-FO": "Q4628",
+  "NZ-CK": "Q26988",
+  "NZ-NU": "Q34020",
+  "US-VI": "Q11703",
 };
 
 /**
@@ -165,7 +197,21 @@ const CAPITAL_FLAG_SOURCE_OVERRIDES = {
   "MY-01": "Flag of Johor Bahru.svg", // Johor Bahru — official Johor Bahru City Council flag (horizontal red/white/blue tricolour with a yellow crescent and star), owner-confirmed against FOTW (crwflags.com/fotw/flags/my-j-jbc.html). Pinned because the earlier correction pointed at "Flag of Johor Bahru, Johor.svg", which is the Johor STATE flag, not the city's.
   "MY-14": "Flag of Kuala Lumpur, Malaysia.svg", // Kuala Lumpur (Federal Territory) — official DBKL city flag adopted 14 May 1990 (blue central band with a yellow crescent + 14-pointed star, red/white stripes on white above and below). NOT the national flag (blue is the dominant field). Ref: en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Kuala_Lumpur.
   "MY-16": "Flag of Putrajaya.svg", // Putrajaya (Federal Territory) — official city flag: three vertical bands blue/yellow(double-width)/blue with the Malaysian coat of arms in the yellow band. Ref: en.wikipedia.org/wiki/Flag_of_the_Federal_Territories.
+  "DK-FO": "Flag of Tórshavn, Faroe Islands.svg", // Tórshavn (Faroe Islands) — the municipality's own flag, per its en.wikipedia infobox (`image_flag`); Tórshavn has no P41 statement on Wikidata.
 };
+
+/**
+ * Capital codes whose Wikidata P41 resolves to the TERRITORY's own flag rather
+ * than a distinct city flag — the "capital-city flag must never duplicate its
+ * own subdivision's flag" rule, but for a code that isn't a plain CITY_TERRITORY
+ * (Diego Garcia is one settlement within British Indian Ocean Territory, not
+ * coextensive with it, so it doesn't belong in cityTerritories.ts). Diego
+ * Garcia's Wikidata P41 is "Flag of the British Indian Ocean Territory
+ * 2025.svg" — the territory's own flag, already the GB-IO subdivision's flag
+ * (public/flags/io.svg) — so it is never a distinct city flag and must be
+ * dropped rather than bundled as if it were Diego Garcia's own.
+ */
+const SUPPRESS_TERRITORY_DUPLICATE_FLAG = new Set(["GB-IO"]);
 
 /**
  * Curated capital-population overrides, keyed by ISO 3166-2 code →
@@ -214,6 +260,15 @@ const CAPITAL_POPULATION_OVERRIDES = {
   "MY-09": { population: 284853, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Perbandaran Kangar local-authority total)" }, // Kangar
   "MY-11": { population: 375424, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Kuala Terengganu local-authority total)" }, // Kuala Terengganu
   "MY-13": { population: 349147, year: 2020, basis: "census", source: "DOSM 2020 Census (Kuching city — DBKU + MBKS local-authority areas)" }, // Kuching
+
+  // Saint Peter Port (Guernsey) — its Wikidata population statement is undated,
+  // so the dated-only pass drops it; the States of Guernsey's own 2021 census
+  // gives an authoritative dated figure (also carried in en.wikipedia's infobox).
+  "GB-GG": { population: 19295, year: 2021, basis: "census", source: "States of Guernsey 2021 Census (Saint Peter Port parish)" },
+  // George Town (Cayman Islands) — no dated Wikidata statement; the Cayman
+  // Islands Economics and Statistics Office's most recent official population
+  // estimate (2025) for the George Town district, cited in en.wikipedia's infobox.
+  "GB-KY": { population: 47009, year: 2025, basis: "estimate", source: "Cayman Islands Economics and Statistics Office, 2025 estimate (George Town district)" },
 };
 
 const yearOf = (iso) => {
@@ -473,6 +528,32 @@ async function main() {
       console.log(`  ${code} (city ${qid}) → FAILED (${e.message})`);
     }
     await sleep(800);
+  }
+
+  console.log("\nFetching capital details with no Wikidata P300 code (by territory QID)...");
+  for (const [code, qid] of Object.entries(NO_ISO_CODE_TERRITORY_QIDS)) {
+    const CODE = code.toUpperCase();
+    if (!metaCodes.has(CODE)) {
+      console.log(`  ${code} (${qid}) → skipped (not in SUBDIVISION_META)`);
+      continue;
+    }
+    try {
+      const rec = await fetchTerritoryQid(code, qid);
+      const ok = record(CODE, rec, metaCodes);
+      console.log(`  ${code} (${qid}) → ${ok ? rec.name : "no data"}`);
+    } catch (e) {
+      console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(800);
+  }
+
+  // Drop any capital flag that is really its territory's OWN flag reused, not a
+  // distinct city flag (see SUPPRESS_TERRITORY_DUPLICATE_FLAG above).
+  for (const code of SUPPRESS_TERRITORY_DUPLICATE_FLAG) {
+    if (flagSources[code]) {
+      console.log(`  ✗ ${code} → ${flagSources[code]} duplicates its own territory's flag; dropped`);
+      delete flagSources[code];
+    }
   }
 
   // Preserve any code the new run didn't return (transient failure) from the

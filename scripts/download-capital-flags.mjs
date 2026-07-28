@@ -29,7 +29,7 @@
  * never invents flag content.
  */
 
-import { writeFileSync, readFileSync, mkdirSync, existsSync, rmSync, readdirSync } from "fs";
+import { writeFileSync, readFileSync, mkdirSync, existsSync, rmSync, readdirSync, statSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -129,9 +129,17 @@ async function main() {
   console.log(`${codes.length} capital flag source(s) in the manifest.`);
 
   // Rebuild the directory from scratch so a removed/renamed source can't leave a
-  // stale file behind (the emitted TS is the single source of truth).
+  // stale file behind (the emitted TS is the single source of truth). Skip
+  // subdirectories: public/capital-flags/national/ belongs to the separate
+  // NATIONAL-capital-flag feature (src/data/nationalCapitalFlags.ts), not this
+  // subdivision-capital manifest — deleting it here would destroy an unrelated,
+  // untracked-by-this-script asset tree.
   if (existsSync(OUT_DIR)) {
-    for (const f of readdirSync(OUT_DIR)) rmSync(join(OUT_DIR, f));
+    for (const f of readdirSync(OUT_DIR)) {
+      const p = join(OUT_DIR, f);
+      if (statSync(p).isDirectory()) continue;
+      rmSync(p);
+    }
   } else {
     mkdirSync(OUT_DIR, { recursive: true });
   }

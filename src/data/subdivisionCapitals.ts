@@ -52,6 +52,8 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "AT-3": {"name":"St. Pölten","lon":15.6167,"lat":48.2},
 
   // ── AU ──
+  "AU-CC": {"name":"West Island","lon":96.8283,"lat":-12.1869},
+  "AU-CX": {"name":"Flying Fish Cove","lon":105.6781,"lat":-10.4217},
   "AU-NF": {"name":"Kingston","lon":167.9667,"lat":-29.05},
 
   // ── AZ ──
@@ -212,6 +214,8 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "CL-NB": {"name":"Chillán","lon":-72.1033,"lat":-36.6067},
 
   // ── CN ──
+  "CN-HK": {"name":"Hong Kong","lon":114.1586,"lat":22.2783},
+  "CN-MO": {"name":"Macau","lon":113.5381,"lat":22.19},
   "CN-TW": {"name":"Taipei","lon":121.5625,"lat":25.0375},
 
   // ── CO ──
@@ -258,6 +262,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "DJ-AR": {"name":"Arta","lon":42.84,"lat":11.5219},
 
   // ── DK ──
+  "DK-FO": {"name":"Tórshavn","lon":-6.7713,"lat":62.0098},
   "DK-GL": {"name":"Nuuk","lon":-51.7333,"lat":64.175},
 
   // ── DM ──
@@ -374,7 +379,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
 
   // ── FM ──
   "FM-KSA": {"name":"Tofol","lon":163.0086,"lat":5.3258},
-  "FM-TRK": {"name":"Weno","lon":151.85,"lat":7.45},
+  "FM-TRK": {"name":"Weno","lon":151.8688,"lat":7.4402},
   "FM-YAP": {"name":"Colonia","lon":138.1333,"lat":9.5167},
 
   // ── FR ──
@@ -464,8 +469,21 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "FR-YT": {"name":"Dzaoudzi","lon":45.2725,"lat":-12.7883},
 
   // ── GB ──
+  "GB-AI": {"name":"The Valley","lon":-63.0517,"lat":18.2208},
+  "GB-BM": {"name":"Hamilton","lon":-64.7831,"lat":32.295},
   "GB-FK": {"name":"Stanley","lon":-57.8496,"lat":-51.6939},
+  "GB-GG": {"name":"Saint Peter Port","lon":-2.5519,"lat":49.46},
   "GB-GI": {"name":"Gibraltar","lon":-5.35,"lat":36.14},
+  "GB-GS": {"name":"King Edward Point","lon":-36.4942,"lat":-54.2833},
+  "GB-IM": {"name":"Douglas","lon":-4.4775,"lat":54.15},
+  "GB-IO": {"name":"Diego Garcia","lon":72.4111,"lat":-7.3133},
+  "GB-JE": {"name":"Saint Helier","lon":-2.11,"lat":49.1858},
+  "GB-KY": {"name":"George Town","lon":-81.3817,"lat":19.2964},
+  "GB-MS": {"name":"Brades","lon":-62.2106,"lat":16.7928},
+  "GB-PN": {"name":"Adamstown","lon":-130.1,"lat":-25.0667},
+  "GB-SH": {"name":"Jamestown","lon":-5.7179,"lat":-15.9251},
+  "GB-TC": {"name":"Cockburn Town","lon":-71.1414,"lat":21.4603},
+  "GB-VG": {"name":"Road Town","lon":-64.6167,"lat":18.4333},
 
   // ── GD ──
   "GD-01": {"name":"Grenville","lon":-61.6264,"lat":12.1192},
@@ -934,7 +952,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "ME-09": {"name":"Kolašin","lon":19.5165,"lat":42.8223},
   "ME-10": {"name":"Kotor","lon":18.7712,"lat":42.4254},
   "ME-11": {"name":"Mojkovac","lon":19.58,"lat":42.96},
-  "ME-12": {"name":"Nikšić","lon":18.94,"lat":42.78},
+  "ME-12": {"name":"Nikšić","lon":18.9445,"lat":42.7731},
   "ME-13": {"name":"Plav","lon":19.945,"lat":42.5956},
   "ME-14": {"name":"Pljevlja","lon":19.3502,"lat":43.3566},
   "ME-15": {"name":"Plužine","lon":18.8394,"lat":43.1528},
@@ -1010,6 +1028,9 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   // ── ML ──
   "ML-8": {"name":"Kidal","lon":1.4078,"lat":18.4411},
 
+  // ── MM ──
+  "MM-18": {"name":"Naypyidaw","lon":96.115,"lat":19.7475},
+
   // ── MN ──
   "MN-037": {"name":"Darkhan","lon":105.9228,"lat":49.4867},
   "MN-064": {"name":"Choir","lon":108.3651,"lat":46.3592},
@@ -1069,7 +1090,9 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "NR-08": {"name":"Arijejen","lon":166.912,"lat":-0.5258},
 
   // ── NZ ──
+  "NZ-CK": {"name":"Avarua","lon":-159.771,"lat":-21.207},
   "NZ-MBH": {"name":"Blenheim","lon":173.95,"lat":-41.5167},
+  "NZ-NU": {"name":"Alofi","lon":-169.921,"lat":-19.056},
   "NZ-TAS": {"name":"Richmond","lon":173.1833,"lat":-41.3333},
 
   // ── OM ──
@@ -1122,6 +1145,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "PH-DAS": {"name":"Digos","lon":125.3559,"lat":6.7454},
   "PH-DAV": {"name":"Tagum","lon":125.8078,"lat":7.4478},
   "PH-EAS": {"name":"Borongan","lon":125.4361,"lat":11.6094},
+  "PH-GUI": {"name":"Jordan","lon":122.5878,"lat":10.596},
   "PH-IFU": {"name":"Lagawe","lon":121.1228,"lat":16.7975},
   "PH-ILI": {"name":"Iloilo City","lon":122.5667,"lat":10.7},
   "PH-ILN": {"name":"Laoag","lon":120.5936,"lat":18.1978},
@@ -1250,6 +1274,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "SI-008": {"name":"Brezovica pri Ljubljani","lon":14.4,"lat":46.0333},
   "SI-009": {"name":"Brežice","lon":15.5925,"lat":45.9044},
   "SI-011": {"name":"Celje","lon":15.2641,"lat":46.2291},
+  "SI-014": {"name":"Cerkno","lon":13.9875,"lat":46.1278},
   "SI-017": {"name":"Črnomelj","lon":15.1889,"lat":45.5711},
   "SI-019": {"name":"Divača","lon":13.9678,"lat":45.6814},
   "SI-023": {"name":"Domžale","lon":14.6,"lat":46.1333},
@@ -1471,6 +1496,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "US-AS": {"name":"Pago Pago","lon":-170.7006,"lat":-14.2794},
   "US-GU": {"name":"Hagåtña","lon":144.75,"lat":13.4833},
   "US-MP": {"name":"Saipan","lon":145.7545,"lat":15.2123},
+  "US-VI": {"name":"Charlotte Amalie","lon":-64.95,"lat":18.35},
 
   // ── UY ──
   "UY-CO": {"name":"Colonia del Sacramento","lon":-57.8071,"lat":-34.4486},
