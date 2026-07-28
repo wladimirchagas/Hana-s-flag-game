@@ -511,11 +511,16 @@ function FlagGameInner({
 
         {/* Flag Master games (All-195 and the group modes) always answer
             via the search dropdown — never the multiple-choice button
-            grid (owner rule, 2026-07). Quick Quiz and Custom Games keep
-            the buttons when the per-question pool is small enough that
-            ALL choices fit on screen. The Confirm button stays in both
-            layouts so the wrong-guess / retry flow is unchanged. */}
-        {!isFlagMaster && shouldUseButtons(alternatives.length) ? (
+            grid (owner rule, 2026-07). Hana's Game (Custom Game) always
+            shows the multiple-choice buttons instead — the options must be
+            visible directly below the flag, never hidden behind a dropdown
+            the player has to open (owner rule, 2026-07). Quick Quiz keeps
+            the buttons only when the per-question pool is small enough that
+            ALL choices fit on screen, falling back to the dropdown for
+            larger pools. The Confirm button stays in every layout so the
+            wrong-guess / retry flow is unchanged. */}
+        {!isFlagMaster &&
+        (isCustomGame || shouldUseButtons(alternatives.length)) ? (
           <div className="answer-row answer-row--buttons">
             <AnswerOptions
               countries={alternatives}
