@@ -113,6 +113,53 @@ function codesWithNeCapital() {
  */
 const NO_ISO_CODE_QIDS = {
   "AU-NF": "Q31057", // Norfolk Island → Kingston (Australian external territory)
+  // UK Crown Dependencies / Overseas Territories — each is its own ISO 3166-1
+  // entity (JE, GG, IM, IO, GS, AI, BM, VG, KY, SH, TC, PN), not an ISO 3166-2:GB
+  // code, so the normal P300-keyed query can never reach it. Each QID confirmed
+  // against its enwiki sitelink before use (2026-07 audit).
+  "GB-JE": "Q785", // Jersey → Saint Helier
+  "GB-GG": "Q25230", // Bailiwick of Guernsey → Saint Peter Port
+  "GB-IM": "Q9676", // Isle of Man → Douglas
+  "GB-IO": "Q43448", // British Indian Ocean Territory → Diego Garcia
+  "GB-GS": "Q35086", // South Georgia and the South Sandwich Islands → King Edward Point (current seat since 2001/2010; Grytviken is the former, normal-rank capital)
+  "GB-AI": "Q25228", // Anguilla → The Valley
+  "GB-BM": "Q23635", // Bermuda → Hamilton
+  "GB-VG": "Q25305", // British Virgin Islands → Road Town
+  "GB-KY": "Q5785", // Cayman Islands → George Town
+  "GB-SH": "Q192184", // Saint Helena, Ascension and Tristan da Cunha → Jamestown
+  "GB-TC": "Q18221", // Turks and Caicos Islands → Cockburn Town
+  "GB-PN": "Q35672", // Pitcairn Islands → Adamstown
+  // Other dependent territories with their own ISO 3166-1 code, same gap.
+  "AU-CC": "Q36004", // Cocos (Keeling) Islands → West Island
+  "AU-CX": "Q31063", // Christmas Island → Flying Fish Cove
+  "DK-FO": "Q4628", // Faroe Islands → Tórshavn
+  "NZ-CK": "Q26988", // Cook Islands → Avarua
+  "NZ-NU": "Q34020", // Niue → Alofi
+  "US-VI": "Q11703", // United States Virgin Islands → Charlotte Amalie
+  // NZ-TK (Tokelau, Q36823) is intentionally NOT here: it has no wdt:P36 and its
+  // own en.wikipedia infobox states "capital = None" (each atoll has its own
+  // administrative centre) — a genuine absence, not a sourcing gap.
+};
+
+/**
+ * Territories whose app code needs a capital but where the QID given IS the
+ * capital city itself — either because the item has more than one current (equal
+ * NormalRank) wdt:P36 candidate so a P36 hop would be ambiguous (Montserrat: both
+ * Plymouth and Brades are NormalRank; Brades is the current de facto seat of
+ * government since Plymouth was evacuated/abandoned after the 1997 volcanic
+ * eruption — Plymouth remains the nominal de jure capital but is uninhabited), or
+ * because the subdivision IS a single city (a "city-territory", see
+ * src/data/cityTerritories.ts): Hong Kong and Macau are each "city and special
+ * administrative region of China" in their own Wikidata description, and
+ * Naypyidaw Union Territory is coterminous with Myanmar's capital city (which is
+ * ALSO the national capital — see NATIONAL_CITIES["MM"] — so it merges into the
+ * dual-ring marker like Beijing/CN-BJ already does).
+ */
+const NO_ISO_CODE_CITY_QIDS = {
+  "GB-MS": "Q31006", // Montserrat → Brades (current de facto capital; Plymouth Q30990 is de jure but abandoned)
+  "CN-HK": "Q8646", // Hong Kong (self — city-territory)
+  "CN-MO": "Q14773", // Macau (self — city-territory)
+  "MM-18": "Q37400", // Naypyidaw Union Territory → Naypyidaw (self — city-territory, also Myanmar's national capital)
   "GB-AKD": "Q37362", // Akrotiri and Dhekelia → Episkopi Cantonment (UK Sovereign Base Areas; no ISO 3166-2 code)
   // Sint Eustatius DOES have an ISO 3166-2 code (NL-BQ3) and a Wikidata P36, but
   // the general per-country P300 pass misses it (its item carries a second,
@@ -341,6 +388,27 @@ async function main() {
       }
     } catch (e) {
       console.log(`  ${code} (${qid}) → FAILED (${e.message})`);
+    }
+    await sleep(1000);
+  }
+
+  console.log("\nFetching capitals with no Wikidata P300 code (QID IS the city)...");
+  for (const [code, qid] of Object.entries(NO_ISO_CODE_CITY_QIDS)) {
+    const CODE = code.toUpperCase();
+    if (!gap(CODE)) {
+      console.log(`  ${code} (city ${qid}) → skipped (not a gap)`);
+      continue;
+    }
+    try {
+      const v = await fetchCityByQid(code, qid);
+      if (v) {
+        capitals.set(CODE, v);
+        console.log(`  ${code} (city ${qid}) → ${v.name} (${v.lon}, ${v.lat})`);
+      } else {
+        console.log(`  ${code} (city ${qid}) → no coordinates found`);
+      }
+    } catch (e) {
+      console.log(`  ${code} (city ${qid}) → FAILED (${e.message})`);
     }
     await sleep(1000);
   }

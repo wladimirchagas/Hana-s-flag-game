@@ -37,4 +37,7 @@ export const CITY_TERRITORY_CODES: ReadonlySet<string> = new Set([
   "AU-ACT", // Australian Capital Territory — federal capital territory essentially
             // the city of Canberra (no separate city government); Canberra has no
             // distinct civic flag — the ACT flag serves both, like Washington DC.
+  "CN-HK", // Hong Kong — Wikidata: "city and special administrative region of China"; the SAR IS the city, no separate municipal government/flag.
+  "CN-MO", // Macau — Wikidata: "city and special administrative region of China"; same city-territory status as Hong Kong.
+  "MM-18", // Nay Pyi Taw Union Territory — coterminous with the planned capital city of Naypyidaw (also Myanmar's national capital; en.wikipedia "Naypyidaw Union Territory").
 ]);

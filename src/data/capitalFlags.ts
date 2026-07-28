@@ -223,6 +223,8 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "CL-VS": "capital-flags/cl-vs.svg",
 
   // ── CN ──
+  "CN-HK": "capital-flags/cn-hk.svg",
+  "CN-MO": "capital-flags/cn-mo.svg",
   "CN-TW": "capital-flags/cn-tw.svg",
 
   // ── CO ──
@@ -309,6 +311,7 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "DE-TH": "capital-flags/de-th.svg",
 
   // ── DK ──
+  "DK-FO": "capital-flags/dk-fo.svg",
   "DK-GL": "capital-flags/dk-gl.svg",
 
   // ── DO ──
@@ -481,7 +484,10 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "FR-PF": "capital-flags/fr-pf.png",
 
   // ── GB ──
+  "GB-BM": "capital-flags/gb-bm.svg",
+  "GB-GG": "capital-flags/gb-gg.svg",
   "GB-GI": "capital-flags/gb-gi.svg",
+  "GB-JE": "capital-flags/gb-je.svg",
   "GB-NIR": "capital-flags/gb-nir.svg",
   "GB-SCT": "capital-flags/gb-sct.svg",
   "GB-WLS": "capital-flags/gb-wls.svg",
