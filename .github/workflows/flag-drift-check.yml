@@ -73,6 +73,30 @@ jobs:
       # -----------------------------------------------------------------------
       # DRIFT-CHECK MODE: open a PR if anything changed
       # -----------------------------------------------------------------------
+      # Subdivision flags default to the amckenna41 CDN unless download-flags.mjs
+      # pins a specific source; a --force re-download can therefore overwrite a
+      # correctly-proportioned, curated flag with a 640x480/512x512 placeholder
+      # (this is exactly how PR #284/286 shipped the Union Jack for Northern
+      # Ireland). Revert any file this run regressed to a forbidden viewBox
+      # BEFORE computing the diff/title, so a drift PR can never propose that
+      # regression — see check-flag-proportions.mjs and CLAUDE.md.
+      - name: "[Drift] Revert any newly-introduced forbidden-viewBox flags"
+        if: ${{ inputs.seed != true }}
+        run: |
+          if ! node scripts/check-flag-proportions.mjs 2> /tmp/proportions.err; then
+            cat /tmp/proportions.err >&2
+            echo "Reverting the offending file(s) above so the drift PR never proposes a wrong-ratio flag:"
+            grep -oE 'public/flags/\S+\.svg' /tmp/proportions.err | sort -u | while read -r f; do
+              if git cat-file -e "HEAD:$f" 2>/dev/null; then
+                echo "  restoring $f from HEAD"
+                git checkout -- "$f"
+              else
+                echo "  removing newly-added $f (no prior good version existed)"
+                rm -f "$f"
+              fi
+            done
+          fi
+
       - name: "[Drift] Check for upstream changes"
         if: ${{ inputs.seed != true }}
         id: diff
@@ -119,8 +143,20 @@ jobs:
           git commit -m "chore(flags): upstream changes detected — ${CODES}"
           git push -u origin "$BRANCH"
 
+          # GitHub PR titles are capped at 256 characters. A large drift batch
+          # (hundreds of codes) can blow past that and fail PR creation entirely
+          # (silently leaving the branch pushed with no PR — as happened on
+          # 2026-07-27). The full code list always stays in the body; only the
+          # title is ever shortened.
+          COUNT=$(echo "$CODES" | tr ',' '\n' | grep -c .)
+          TITLE="flag update: upstream changes for ${CODES}"
+          if [ "${#TITLE}" -gt 250 ]; then
+            PREVIEW=$(echo "$CODES" | cut -d, -f1-8)
+            TITLE="flag update: upstream changes for ${COUNT} flags (${PREVIEW}, …)"
+          fi
+
           gh pr create \
-            --title "flag update: upstream changes for ${CODES}" \
+            --title "$TITLE" \
             --body "$(cat <<EOF
           ## Upstream flag changes detected
 
