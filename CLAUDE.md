@@ -531,41 +531,33 @@ our control — a remote URL that works today may be blocked, moved, or rate-lim
 3. Commit the file to the correct path above
 4. In `LOCAL_FLAG_OVERRIDES`, use `` `${BASE}flags/...` `` — never a raw `https://` URL
 
-### Outstanding files (currently still using Wikimedia URLs — must be fixed)
+### Formerly-outstanding files — now bundled (2026-07-28: Wikimedia egress confirmed working)
 
-The following entries in `LOCAL_FLAG_OVERRIDES` still use remote URLs because Wikimedia is
-blocked by the current server network policy. They must be downloaded and bundled before the
-next release. Use `node scripts/download-unofficial-flags.mjs` once network egress to
-`upload.wikimedia.org` is enabled.
+All of the following were previously blocked on Wikimedia egress (either left as a raw `https://`
+URL in `LOCAL_FLAG_OVERRIDES`, or fully suppressed). Egress to `upload.wikimedia.org` and
+`commons.wikimedia.org` was re-verified working 2026-07-28 and every one was downloaded and
+bundled locally; none of these should ever be reverted to a raw Wikimedia URL or re-suppressed
+without first re-checking egress with `node scripts/download-unofficial-flags.mjs`.
 
-`FR-GP` (`public/flags/gp.svg`) is already bundled from fonttools/region-flags (the Wikimedia
-source file is `commons/e/e7/Unofficial_flag_of_Guadeloupe_(local).svg`; the download script
-will re-download it if the local copy needs refreshing).
+`FR-GP` (`public/flags/gp.svg`) is bundled from fonttools/region-flags (the Wikimedia source file
+is `commons/e/e7/Unofficial_flag_of_Guadeloupe_(local).svg`; the download script will re-download
+it if the local copy needs refreshing).
 
-`FR-RE` (`public/flags/re.png`) is already bundled as a 1280×854 PNG (3:2). The Wikimedia SVG
-URL (`commons/f/f8/Flag_of_Réunion_(Local).svg`) was blank on all tested devices — the file
-appears not to exist or was renamed. The PNG was provided directly and shows the correct
+`FR-RE` (`public/flags/re.png`) is bundled as a 1280×854 PNG (3:2), provided directly by the owner
+— the Wikimedia SVG (`commons/f/f8/Flag_of_Réunion_(Local).svg`) 404s. Shows the correct
 Lö Mahavéli design (blue field, yellow rays, red triangle).
 
 | Code | Local target | Wikimedia source |
 |------|-------------|-----------------|
-| `GB-NIR` | `public/flags/sub/GB/GB-NIR.svg` | `commons/d/d0/Ulster_Banner.svg` |
+| `GB-NIR` | `public/flags/sub/GB/GB-NIR.svg` | `flag-icons`-sourced Ulster Banner (the `commons/d/d0/Ulster_Banner.svg` filename has since moved/been retitled on Commons — the bundled file was unaffected and verified still correct) |
 | `SO-SL~` | `public/flags/so-sl.svg` | `commons/4/4d/Flag_of_Somaliland.svg` |
 | `FR-YT` | `public/flags/yt-local.svg` | `commons/4/4a/Flag_of_Mayotte_(local).svg` |
 | `FR-BL` | `public/flags/bl.svg` | `commons/b/b4/Flag_of_Saint_Barthélemy_(local).svg` |
 | `FR-PM` | `public/flags/pm.svg` | `commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg` |
 | `FR-WF` | `public/flags/wf.svg` | `commons/d/d2/Flag_of_Wallis_and_Futuna.svg` |
+| `GB-SH` | `public/flags/sh.svg` | `commons/0/00/Flag_of_Saint_Helena.svg` (the blue ensign defaced with the Saint Helena coat of arms — rocks, sea, wirebird badge in the fly; hampusborgos/lipis `sh` is the bare Union Jack, wrong. The `commons/4/4c/...` filename previously logged here 404s; the current Commons file lives at `0/00/`.) |
 
-**Currently SUPPRESSED (no flag shown) because every accessible source serves the parent nation's
-flag.** These were caught by `scripts/check-parent-flag-collision.mjs` and added to
-`SUPPRESSED_SUBDIVISION_FLAGS`. Bundle the real subdivision flag from Wikimedia (then remove the
-suppression) once egress is enabled — do **not** restore the parent-flag file.
-
-| Code | Needed flag | Why suppressed | Wikimedia source |
-|------|-------------|----------------|-----------------|
-| `GB-SH` | Saint Helena flag (blue ensign defaced with the St Helena coat of arms) | hampusborgos & lipis `sh` are the bare Union Jack | `commons/4/4c/Flag_of_Saint_Helena.svg` |
-
-`FR-MF` (`public/flags/mf.png`) is now **bundled and shown** — the Saint Martin flag: a white
+`FR-MF` (`public/flags/mf.png`) is **bundled and shown** — the Saint Martin flag: a white
 field bearing the collectivity's emblem (a brown pelican in flight over a hibiscus, with a sunrise
 and a "Saint-Martin" banner), provided directly by the owner as a 1280×854 PNG (3:2). It scores a
 perceptual distance of **334** from the French Tricolour (`fr.svg`) — far above the 30 threshold —
@@ -1011,6 +1003,55 @@ cross-references `TERRITORY_GEO_FOR_PARENT` against `SUBDIVISION_META` and `subd
 build** if any merged disputed territory (a `~`/`CN-TW` code that is not a hierarchy child) is missing from its
 claiming nation's meta or has no capital. Never weaken or bypass it; if it fails, add the meta entry and the capital
 rather than the check.
+
+## No Antarctic territorial claim may ever be represented — hard rule, do not override without approval
+
+**No portion of the Antarctic continent may ever be added to the game as a country, subdivision, dependency, or
+"overseas territory" entity, under ANY claimant nation, regardless of source authority.** This is a full exclusion,
+not a neutral-display case like the disputed-territory rule above.
+
+The exclusion boundary is **60°S latitude — the Antarctic Treaty area** (the zone the 1959 Antarctic Treaty, Article
+IV, covers). Everything south of it is excluded, including but not limited to:
+
+| Claimant | Excluded claim |
+|----------|-----------------|
+| United Kingdom | British Antarctic Territory |
+| Chile | Territorio Chileno Antártico (Chilean Antarctic Territory) |
+| Argentina | Antártida Argentina (Argentine Antarctica) |
+| Australia | Australian Antarctic Territory |
+| New Zealand | Ross Dependency |
+| Norway | Queen Maud Land; Peter I Island (lies at ~68–69°S, inside the Treaty area) |
+| France | Adélie Land / Terre Adélie (the Antarctic district of the French Southern and Antarctic Lands — the
+  territory's other four districts, all north of 60°S, are NOT covered by this exclusion; see the rule on completing
+  a newly surfaced entity for how TAAF's non-Antarctic islands are handled) |
+
+### Why this rule exists
+
+Seven nations maintain territorial claims to parts of Antarctica, three of which (UK, Chile, Argentina) physically
+**overlap the same land**, and none of which is recognised by the other claimants or by most of the rest of the
+world. The Antarctic Treaty does not settle these claims — it freezes them: Article IV explicitly preserves each
+party's position without asserting, denying, or enlarging any claim, and prohibits new claims. Unlike the disputed
+territories this game DOES show neutrally (Kosovo, Taiwan, Western Sahara, the Falklands, Northern Cyprus, …),
+Antarctic claims cannot be shown even neutrally: there is no single "the territory" to display once three
+overlapping claims exist, none of the claims has a permanent civilian population or a capital in the ordinary sense
+(only rotating research-station personnel), and picking any one claimant's boundary to draw would itself take a
+side. Total exclusion, not neutral display, is the only position that takes none.
+
+### Rules
+
+1. **Never add any Antarctic claim** (a code representing territory south of 60°S) as a `TERRITORIES_TO_APPEND`
+   entry, a `TERRITORY_GEO_FOR_PARENT`/`territoryParentMap.ts` entry, a `SUBDIVISION_META` entry, or a standalone
+   country/territory anywhere in the game — present or future, and regardless of how authoritative the source.
+2. **Apply this uniformly to every claimant.** Do not add one nation's Antarctic claim while omitting another's for
+   "consistency" — the correct treatment for ALL seven claims is identical total exclusion.
+3. **This does not extend to non-Antarctic dependencies** that happen to be administered by the same claimant or
+   share an administrative structure with an Antarctic claim (e.g. TAAF's Crozet/Kerguelen/Saint-Paul & Amsterdam/
+   Scattered Islands districts, all north of 60°S; Norway's Bouvet Island at ~54°S). Only the literal claim area
+   south of 60°S is excluded — a nearby but distinct northern-hemisphere-of-the-Southern-Ocean territory is judged
+   on the normal territory-inclusion rules, not swept in by association.
+4. **The continent itself remains visible on the world map** as unclaimed, neutral landmass (it already renders
+   there via the base topology) — this rule is about the game's subdivision/territory data model (flag grids,
+   capitals, playable questions), not about hiding Antarctica's geography entirely.
 
 ## Subdivision research — hard rule, do not override without approval
 
@@ -1549,6 +1590,52 @@ any PR touching `flagMeanings.ts` or the script) **fails the build** if any entr
 sourced fact from a plausible fabrication, so it never replaces verifying each claim against its cited
 source by hand. **Never** weaken the check, and never add an entry whose claims you have not confirmed
 against the cited source.
+
+## Every newly bundled flag MUST get a flag-meaning search in the SAME change — hard rule, do not override without approval
+
+**Whenever a flag file is newly bundled, un-suppressed, or replaced in the game — national, subdivision,
+or capital-city — you MUST search for its sourced symbolism and add a `flagMeanings.ts` /
+`cityFlagMeanings.ts` entry (or record why one is genuinely unsourceable) in that SAME change. Shipping
+the flag image without doing this search is a bug, not a follow-up task.**
+
+### Why this rule exists
+
+This shipped and was reported (2026-07-28): the PR that fixed Saint Helena's missing flag (bundling
+`GB-SH`, plus `FR-YT` Mayotte and `SO-SL~` Somaliland, all previously blocked on Wikimedia egress) made
+all three flags render — but shipped with no "What this flag means" entry for any of them, because
+bundling the image and sourcing its meaning were treated as two separate tasks. The owner had to report
+"Flag explainer is missing" as a second bug before the omission was noticed and fixed in a follow-up PR.
+This is the flag-meaning sibling of the "newly surfaced entity must be COMPLETE" rule — a flag that
+renders with no explainer is an incomplete entity, exactly like a capital with no population row.
+
+### Rules
+
+1. **The flag-meaning search is part of "adding a flag," not a separate task.** Any change that adds a
+   new `LOCAL_FLAG_OVERRIDES` entry, removes a code from `SUPPRESSED_SUBDIVISION_FLAGS`, bundles a new
+   `public/flags/**` file, or adds/refreshes a capital-city flag in `capitalFlags.ts`, MUST in the same
+   change check whether `flagMeanings.ts` (national/subnational) or `cityFlagMeanings.ts` (capital
+   cities) already has an entry for that code — and if not, search for one before ending the task.
+2. **Search authoritative sources before concluding a meaning is unsourceable** — at minimum the flag's
+   own Wikipedia article (`Flag of X`) and, for a coat-of-arms-based flag, the arms' own article
+   (`Coat of arms of X`); for capital-city flags follow the deeper-source discipline (FOTW, local-language
+   Wikipedia, Commons blazon) already mandated by the flag-meaning-coverage and capital-meaning-sweep
+   rules above. Do not stop at "no meaning" after a single English-Wikipedia glance.
+3. **A genuinely unsourceable flag is fine to ship without an entry** — same "missing is honest, invented
+   is not" discipline as every other sourcing rule here. What is never fine is *not looking*.
+4. **This applies retroactively to gaps found in already-bundled flags too**: if you notice an existing
+   bundled flag has no `flagMeanings.ts`/`cityFlagMeanings.ts` entry while touching related code, treat
+   closing that gap as part of the completeness contract, not out of scope.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open the newly
+   bundled flag's card and confirm the "What this flag means" expander is present and renders the sourced
+   description — not just that the flag image itself is correct.
+
+### Enforcement
+
+There is no automated check that a *newly bundled* flag has a matching meaning entry (the existing
+`check-flag-meanings.mjs` only validates entries that exist; it cannot detect one that's silently
+missing). The guard is this rule plus rule 5's visual check: when reviewing any PR that adds, un-suppresses,
+or replaces a flag file, confirm the diff also touches `flagMeanings.ts`/`cityFlagMeanings.ts` for that
+code, or documents why the search came up empty.
 
 ## Capital-city flag-meaning explainer — exhaust every language before omitting — hard rule, do not override without approval
 

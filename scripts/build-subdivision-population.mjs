@@ -130,6 +130,12 @@ const VERIFIED_NAME_MATCH_QIDS = {
   "TO-01": "Q423528", // ʻEua — island of Tonga, coterminous with the ʻEua division
   "TO-04": "Q620452", // Tongatapu — main island of Tonga, coterminous with the Tongatapu division
   "TT-ETO": "Q185111", // Tobago — island of Trinidad and Tobago
+  // Sint Eustatius DOES carry P300 = "NL-BQ3" and a dated P1082, but the general
+  // per-country P300 pass did not return it (its item also carries a second,
+  // non-NL-prefixed P300 value "BQ-SE" — possibly confusing the property-path
+  // query); fetched directly by QID instead so its siblings Bonaire (NL-BQ1) and
+  // Saba (NL-BQ2) aren't left with population data while Sint Eustatius has none.
+  "NL-BQ3": "Q26180",
 };
 
 /**
@@ -143,6 +149,13 @@ const VERIFIED_NAME_MATCH_QIDS = {
  * approximated, per the "never invent or guess" rule.
  */
 const MANUAL_VERIFIED_POPULATION = {
+  // No census is ever held in the Sovereign Base Areas (not part of the Cypriot
+  // census, and the UK conducts none there); 18,195 is the widely-cited 2020
+  // estimate given in the territory's Wikipedia infobox and consistent with the
+  // CIA World Factbook's last published figure before its 2025 sunset. Preferred
+  // over Wikidata's own P1082 statement (18,000), whose only reference is a single
+  // 2026 Italian news article rather than an official statistical estimate.
+  "GB-AKD": { population: 18195, year: 2020, basis: "estimate" }, // Akrotiri and Dhekelia
   // 2011 Population and Housing Census, Antigua and Barbuda Statistics Division
   "AG-04": { population: 51737, year: 2011, basis: "census" }, // Saint John
   // 2002 census, State Statistical Office of the Republic of North Macedonia

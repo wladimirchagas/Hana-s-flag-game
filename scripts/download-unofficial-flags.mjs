@@ -20,10 +20,20 @@ const WIKIMEDIA = 'https://upload.wikimedia.org/wikipedia/commons';
 
 const FLAGS = [
   {
-    url: `${WIKIMEDIA}/d/d0/Ulster_Banner.svg`,
+    // The old commons/d/d0/Ulster_Banner.svg filename now 404s (retitled on Commons).
+    // The bundled public/flags/sub/GB/GB-NIR.svg is already correct (flag-icons-sourced,
+    // verified in the running app) — this entry is kept only so a future refresh doesn't
+    // silently fail; re-verify visually before overwriting the bundled file.
+    url: `${WIKIMEDIA}/4/43/Flag_of_Northern_Ireland_%281953%E2%80%931972%29.svg`,
     dest: 'public/flags/sub/GB/GB-NIR.svg',
     localOverride: '"GB-NIR": `${BASE}flags/sub/GB/GB-NIR.svg`',
     note: 'Ulster Banner — unofficial flag of Northern Ireland',
+  },
+  {
+    url: `${WIKIMEDIA}/0/00/Flag_of_Saint_Helena.svg`,
+    dest: 'public/flags/sh.svg',
+    localOverride: '"GB-SH": `${BASE}flags/sh.svg`',
+    note: 'Saint Helena flag — blue ensign defaced with the Saint Helena coat of arms (NOT the bare Union Jack)',
   },
   {
     url: `${WIKIMEDIA}/4/4d/Flag_of_Somaliland.svg`,

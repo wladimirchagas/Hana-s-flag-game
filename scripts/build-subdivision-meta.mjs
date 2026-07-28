@@ -277,6 +277,13 @@ const TERRITORIES_TO_APPEND = {
     { code: "NL-AW", name: "Aruba", typeLabel: "Constituent Country" },
     { code: "NL-CW", name: "Curaçao", typeLabel: "Constituent Country" },
     { code: "NL-SX", name: "Sint Maarten", typeLabel: "Constituent Country" }
+    // NOTE: Bonaire (NL-BQ1), Saba (NL-BQ2) and Sint Eustatius (NL-BQ3) do NOT
+    // belong here — they are already regular features inside public/subdivisions/
+    // NL.json (real iso_3166_2 codes assigned by the normal per-country scan
+    // below), unlike Aruba/Curaçao/Sint Maarten whose geometry lives in separate
+    // AW.json/CW.json/SX.json files merged in via TERRITORY_GEO_FOR_PARENT. Adding
+    // them here previously produced a DUPLICATE entry per island in
+    // SUBDIVISION_META (two flag-grid cards each) — do not re-add.
   ],
   "GB": [
     { code: "GB-JE", name: "Jersey", typeLabel: "Crown Dependency" },
@@ -293,14 +300,29 @@ const TERRITORIES_TO_APPEND = {
     { code: "GB-MS", name: "Montserrat", typeLabel: "Overseas Territory" },
     { code: "GB-SH", name: "Saint Helena", typeLabel: "Overseas Territory" },
     { code: "GB-TC", name: "Turks and Caicos Islands", typeLabel: "Overseas Territory" },
-    { code: "GB-PN", name: "Pitcairn Islands", typeLabel: "Overseas Territory" }
+    { code: "GB-PN", name: "Pitcairn Islands", typeLabel: "Overseas Territory" },
+    // Akrotiri and Dhekelia (Sovereign Base Areas) — the 14th and final British
+    // Overseas Territory per the UK Government's own list (gov.uk), commonly
+    // overlooked because it has no ISO 3166-1 alpha-2 code of its own (unlike
+    // Bermuda, Gibraltar, etc. above) and no separate landmass polygon in the
+    // Natural Earth 50m topology this app otherwise draws territories from —
+    // its geometry (public/subdivisions/AKD.json) was extracted from Natural
+    // Earth's 10m admin-0 countries layer instead, which does carry it as two
+    // distinct "Akrotiri" and "Dhekelia" enclave polygons within Cyprus.
+    { code: "GB-AKD", name: "Akrotiri and Dhekelia", typeLabel: "Overseas Territory" }
   ],
   "US": [
     { code: "US-PR", name: "Puerto Rico", typeLabel: "Unincorporated Territory" },
     { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Unincorporated Territory" },
     { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Unincorporated Territory" },
     { code: "US-AS", name: "American Samoa", typeLabel: "Unincorporated Territory" },
-    { code: "US-GU", name: "Guam", typeLabel: "Unincorporated Territory" }
+    { code: "US-GU", name: "Guam", typeLabel: "Unincorporated Territory" },
+    // United States Minor Outlying Islands — nine uninhabited atolls/reefs (Baker,
+    // Howland, Jarvis, Johnston, Kingman Reef, Midway, Navassa, Palmyra, Wake)
+    // grouped under one ISO 3166-1 code (UM); shown as a single dissolved territory
+    // like French Polynesia's or Saint Helena's multi-island geometry. No permanent
+    // civilian population (some had rotating military/wildlife-service staff).
+    { code: "US-UM", name: "United States Minor Outlying Islands", typeLabel: "Unincorporated Territory" }
   ],
   "FR": [
     { code: "FR-BL", name: "Saint Barthélemy", typeLabel: "Overseas Collectivity" },
@@ -311,7 +333,20 @@ const TERRITORIES_TO_APPEND = {
     // New Caledonia is a sui generis collectivity, a unique status distinct from
     // the standard Overseas Collectivities. Defined by Title XIII of the French
     // Constitution (Arts. 76–77) following the 1998 Nouméa Accord.
-    { code: "FR-NC", name: "New Caledonia", typeLabel: "Sui generis collectivity" }
+    { code: "FR-NC", name: "New Caledonia", typeLabel: "Sui generis collectivity" },
+    // French Southern and Antarctic Lands (TAAF) — ONLY its four subantarctic
+    // island districts (Crozet, Kerguelen, Saint-Paul & Amsterdam, Scattered
+    // Islands), all north of 60°S. Adélie Land, TAAF's fifth district and an
+    // Antarctic continental claim, is excluded per CLAUDE.md's "No Antarctic
+    // territorial claim may ever be represented" rule and is not part of the
+    // bundled geometry (public/subdivisions/TF.json has 4 features, not 5).
+    // No population is shown: TAAF has NO permanent population — only rotating
+    // scientific/military personnel (INSEE counts 0 permanent residents). No
+    // capital marker is shown either: TAAF's administrative seat (Wikidata P36)
+    // is Saint-Pierre, on Réunion — thousands of km away and outside the
+    // territory's own geometry entirely, so plotting it would misplace a marker
+    // on Réunion's landmass. Both omissions are genuine (not oversights).
+    { code: "FR-TF", name: "French Southern and Antarctic Lands", typeLabel: "Overseas Territory" }
   ],
   "NZ": [
     { code: "NZ-CK", name: "Cook Islands", typeLabel: "Associated State" },
@@ -324,7 +359,36 @@ const TERRITORIES_TO_APPEND = {
   "AU": [
     { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "External Territory" },
     { code: "AU-CX", name: "Christmas Island", typeLabel: "External Territory" },
-    { code: "AU-NF", name: "Norfolk Island", typeLabel: "External Territory" }
+    { code: "AU-NF", name: "Norfolk Island", typeLabel: "External Territory" },
+    // Heard Island and McDonald Islands — uninhabited subantarctic external
+    // territory (no permanent population, ever; visited only by rare scientific
+    // expeditions). Not to be confused with an Antarctic claim: HIMI lies at
+    // ~53°S, north of the 60°S Antarctic Treaty line, so it is unaffected by the
+    // Antarctic-claim exclusion rule.
+    { code: "AU-HM", name: "Heard Island and McDonald Islands", typeLabel: "External Territory" }
+  ],
+  "NO": [
+    // Jan Mayen (NO-22) — a real ISO 3166-2:NO code, distinct from Svalbard
+    // (NO-21, already a native feature of NO.json with its own meta/population/
+    // capital). Jan Mayen has NO feature in this app's NO.json (nor in Natural
+    // Earth's admin-0/admin-1 layers, which fold it into a Svalbard-only entry
+    // via a shared "Svalbard, SJ, Svalbard and Jan Mayen" label) — its geometry
+    // (public/subdivisions/NO-22.json) was extracted from Natural Earth's
+    // separate admin-0 MAP SUBUNITS layer, the only one that carries it as its
+    // own polygon ("Jan Mayen I."). No permanent civilian population (~18-20,
+    // rotating meteorological/military station staff only) and no capital.
+    { code: "NO-22", name: "Jan Mayen", typeLabel: "Territory" },
+    // Bouvet Island — a Norwegian dependency (not a Svalbard/Jan Mayen-style
+    // "Territory" under the same statute, but likewise a real subdivision-like
+    // entity this app's flag grid was missing). Lies at ~54.4°S, north of the
+    // 60°S Antarctic Treaty line, so it is NOT an Antarctic claim and is
+    // unaffected by CLAUDE.md's Antarctic-claim exclusion rule. Permanently
+    // uninhabited nature reserve — no population ever (not even a research
+    // station; only an automated weather station visited rarely), no capital,
+    // no flag (flies the Norwegian flag; no distinct one is documented anywhere).
+    // Geometry (public/subdivisions/BV.json) extracted from Natural Earth's
+    // admin-0 MAP SUBUNITS layer, the only one carrying it as its own polygon.
+    { code: "NO-BV", name: "Bouvet Island", typeLabel: "Dependency" }
   ],
   "AR": [
     { code: "AR-ML~", name: "Malvinas Islands", typeLabel: "Claimed Territory" }

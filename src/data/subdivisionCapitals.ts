@@ -465,11 +465,13 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "FR-PF": {"name":"Papeete","lon":-149.5689,"lat":-17.5397},
   "FR-PM": {"name":"Saint-Pierre","lon":-56.1778,"lat":46.7778},
   "FR-RE": {"name":"Saint-Denis","lon":55.4481,"lat":-20.8789},
+  "FR-TF": {"name":"Port-aux-Français","lon":70.2167,"lat":-49.35},
   "FR-WF": {"name":"Mata-Utu","lon":-176.1737,"lat":-13.2827},
   "FR-YT": {"name":"Dzaoudzi","lon":45.2725,"lat":-12.7883},
 
   // ── GB ──
   "GB-AI": {"name":"The Valley","lon":-63.0517,"lat":18.2208},
+  "GB-AKD": {"name":"Episkopi Cantonment","lon":32.8456,"lat":34.6805},
   "GB-BM": {"name":"Hamilton","lon":-64.7831,"lat":32.295},
   "GB-FK": {"name":"Stanley","lon":-57.8496,"lat":-51.6939},
   "GB-GG": {"name":"Saint Peter Port","lon":-2.5519,"lat":49.46},
@@ -1078,12 +1080,14 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "NL-AW": {"name":"Oranjestad","lon":-70.0358,"lat":12.5186},
   "NL-BQ1": {"name":"Kralendijk","lon":-68.2767,"lat":12.1508},
   "NL-BQ2": {"name":"The Bottom","lon":-63.2492,"lat":17.6261},
+  "NL-BQ3": {"name":"Oranjestad","lon":-62.9833,"lat":17.4833},
   "NL-CW": {"name":"Willemstad","lon":-68.935,"lat":12.108},
   "NL-FL": {"name":"Lelystad","lon":5.4833,"lat":52.5167},
   "NL-SX": {"name":"Philipsburg","lon":-63.0433,"lat":18.0242},
 
   // ── NO ──
   "NO-21": {"name":"Longyearbyen","lon":15.6333,"lat":78.2167},
+  "NO-22": {"name":"Olonkinbyen","lon":-8.715,"lat":70.922},
 
   // ── NR ──
   "NR-02": {"name":"Anabar","lon":166.9533,"lat":-0.5084},

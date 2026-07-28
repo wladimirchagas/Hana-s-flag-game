@@ -31,6 +31,11 @@ export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
   // Commonwealth Games. The United Kingdom Government has not designated an official regional flag.
   "GB-NIR": "The Ulster Banner was the banner of the Government of Northern Ireland from 1953 until the government was abolished in 1973. Northern Ireland has no officially designated devolved flag; the United Kingdom Government has never designated one. The Ulster Banner remains the most widely used symbol representing Northern Ireland internationally, including at the Commonwealth Games.",
 
+  // Akrotiri and Dhekelia — no College of Arms grant of arms exists to base a
+  // Blue Ensign-type territory flag on (unlike most other British Overseas
+  // Territories), so the plain Union Jack is flown by default.
+  "GB-AKD": "The Dhekelia Garrison Flag — a green field with two gold lions passant guardant, derived from the unofficial flag of British colonial Cyprus and ultimately from King Richard I's arms — is the most widely used local symbol of the territory, also appearing on the King Richard School and Dhekelia Sailing Club emblems. Akrotiri and Dhekelia has no official flag of its own; no grant of arms from the College of Arms exists to base one on, so the plain Union Jack is flown by default.",
+
   // Tibet Autonomous Region — the Snow Lion Flag belongs to the government-in-exile,
   // not to the PRC-administered region.
   "CN-XZ": "The Snow Lion Flag (first adopted 1959) is the flag of the Central Tibetan Administration, the Tibetan government-in-exile based in Dharamsala, India. It is not recognised by the PRC, which administers the Tibet Autonomous Region and has designated no distinct official regional flag for it.",
