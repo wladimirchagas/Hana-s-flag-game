@@ -9736,4 +9736,120 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Maykop — capital of the Republic of Adygea, Russia ──────────────────────
+  "RU-AD": {
+    description:
+      "A red field bearing, in gold, the emblem from Maykop's coat of arms: a herald's staff (posokh, an " +
+      "emblem of wisdom and authority) topped by three apple-tree leaves, resting on a rhombus from which " +
+      "two curling vine-stems grow, and at its centre two facing bull's heads with long curved horns. The " +
+      "apple-tree leaves reference the city's Adyghe name, “myekъuape” (“valley of apple trees”), and stand " +
+      "for fertility and a good harvest; the bull's heads reproduce the golden bull figurines unearthed in " +
+      "1897 from the Maykop kurgan (now in the Hermitage), a find that gave its name to the Bronze Age " +
+      "\"Maykop culture\" and here stands for the city's diligence and antiquity. The heraldic design was " +
+      "first adopted in 1972 (authors A. Parshin and A. Vins) and re-confirmed on 28 February 2005.",
+    sources: [
+      { title: "Герб Майкопа — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Майкопа" },
+      { title: "Герб города Майкоп — Геральдика.ру", url: "https://geraldika.ru/s/104" },
+    ],
+  },
+
+  // ── Gorno-Altaysk — capital of the Altai Republic, Russia ───────────────────
+  "RU-AL": {
+    description:
+      "An azure (blue) field bearing, in gold, a bow, a spear and a stone axe — tools of hunting and labour " +
+      "used by prehistoric peoples of the Altai. They reference the Ulalinka site within the city, one of " +
+      "the oldest archaeological monuments of its kind in Russia, whose ancient quartzite tools gave the " +
+      "coat of arms its unique theme among Russian cities. In heraldry, azure represents watercourses and a " +
+      "clear sky, and also exalted aspiration, sincerity and virtue. The design was first adopted on 20 " +
+      "March 1997 and re-registered in the State Heraldic Register of the Russian Federation (arms No. " +
+      "12844, flag No. 12845) on 28 January 2020.",
+    sources: [
+      {
+        title: "Флаг и герб Горно-Алтайска — Циклопедия (Cyclowiki)",
+        url: "https://cyclowiki.org/wiki/Флаг_и_герб_Горно-Алтайска",
+      },
+      { title: "Флаг города Горно-Алтайск — Геральдика.ру", url: "https://geraldika.ru/s/42316" },
+    ],
+  },
+
+  // ── Ufa — capital of the Republic of Bashkortostan, Russia ──────────────────
+  "RU-BA": {
+    description:
+      "A silver (white) field over a green base, with a running marten of natural brown fur crossing the " +
+      "green ground toward the flagpole. The marten is one of Russia's oldest civic emblems, first recorded " +
+      "on a mid-17th-century seal of the Ufa administrative office and formally granted by Empress Catherine " +
+      "II on 8 June 1782. It recalls the marten and sable furs the Bashkirs once paid the Russian tsar as " +
+      "yasak (fur tribute), and its poised, upright stance stands for wealth, pride and dignity. Silver " +
+      "symbolises faith, sincerity and nobility; green stands for abundance, joy, freedom and peace. The " +
+      "modern coat of arms was confirmed in 2006 and the flag in 2007.",
+    sources: [
+      { title: "Герб Уфы — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Уфы" },
+      { title: "Флаг города Уфа — Геральдика.ру", url: "https://geraldika.ru/s/18993" },
+    ],
+  },
+
+  // ── Ulan-Ude — capital of the Republic of Buryatia, Russia ──────────────────
+  "RU-BU": {
+    description:
+      "Two vertical bands — blue at the hoist, yellow at the fly. In the blue band sits a gold Soyombo: a " +
+      "flame of three tongues over a sun-disc over a crescent moon, the traditional Buryat and Mongolic " +
+      "emblem of eternal life, marking the city's status as capital of the Buryat republic. In the yellow " +
+      "band a green cornucopia crossed diagonally with a black caduceus (Mercury's staff) is carried over " +
+      "from the city's historic coat of arms, granted by Empress Catherine II in the 18th century to mark " +
+      "Verkhneudinsk (Ulan-Ude's former name) as Transbaikalia's leading centre of trade and fairs. The flag " +
+      "was adopted by city council decision No. 261-32 of 20 October 2005.",
+    sources: [
+      { title: "Герб Улан-Удэ — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Улан-Удэ" },
+      {
+        title: "Флаг Улан-Удэ — описание, символика, дата утверждения — ruwiki",
+        url: "https://ru.ruwiki.ru/wiki/Флаг_Улан-Удэ",
+      },
+    ],
+  },
+
+  // ── Grozny — capital of the Chechen Republic, Russia ────────────────────────
+  "RU-CE": {
+    description:
+      "A green field with, along the bottom edge, three narrow bands — red, white and red — separated from " +
+      "the green by a white line. At the centre stands a white mosque with green window and door openings, " +
+      "blue domes and a yellow spire bearing a crescent, flanked by a pair of minarets — the city's " +
+      "principal civic emblem, marking Grozny's standing as a major centre of Islamic worship and learning " +
+      "in the North Caucasus. The flag was approved on 22 September 2010 and entered in the State Heraldic " +
+      "Register of the Russian Federation under No. 6267.",
+    sources: [
+      {
+        title: "Городская символика — Мэрия города Грозный (Grozny city administration)",
+        url: "https://grozmer.ru/groznyi/gorodskaja-simvolika.html",
+      },
+    ],
+    myths: [
+      {
+        claim:
+          "Grozny's flag or coat of arms depicts a wolf (Borz), the emblem of Chechen national identity.",
+        reality:
+          "The wolf was the central symbol of Chechnya's earlier, unrecognised Ichkeria-era flag and coat " +
+          "of arms (and lent its name, “Borz”, to a rifle produced in Grozny), but it does not appear on " +
+          "the city of Grozny's own current official flag or arms, whose sole central figure is the mosque " +
+          "described above.",
+      },
+    ],
+  },
+
+  // ── Cheboksary — capital of the Chuvash Republic, Russia ────────────────────
+  "RU-CU": {
+    description:
+      "A white field bearing, at its centre, the city's coat of arms: a shield parted red-over-blue — the " +
+      "colours of the former RSFSR and Chuvash ASSR flags — with three silver oak-tree silhouettes styled in " +
+      "Chuvash ornamental pattern on the red chief, and five silver ducks in flight on the blue base. The oak, " +
+      "a tree favoured in Chuvash tradition, stands for strength, endurance and permanence; the five ducks — " +
+      "a device already recorded in Cheboksary's 1781 heraldic description as a city \"abounding in ducks\" — " +
+      "are a traditional emblem of the city read as a striving toward freedom, initiative and the attainment " +
+      "of one's goals. The Soviet-era version of the arms was adopted on 3 March 1969 and reconfirmed in " +
+      "1998 and 2009.",
+    sources: [
+      { title: "Герб Чебоксар — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Чебоксар" },
+      { title: "Герб Чебоксар — Heraldicum.ru", url: "https://www.heraldicum.ru/russia/subjects/towns/ceboksar.htm" },
+    ],
+  },
 };
