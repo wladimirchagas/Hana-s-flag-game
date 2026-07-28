@@ -9852,4 +9852,127 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       { title: "Герб Чебоксар — Heraldicum.ru", url: "https://www.heraldicum.ru/russia/subjects/towns/ceboksar.htm" },
     ],
   },
+
+  // ── Cherkessk — capital of the Republic of Karachay-Cherkessia, Russia ──────
+  "RU-KC": {
+    description:
+      "A white field bearing, at its centre, the city's coat of arms: a red shield charged with a golden " +
+      "stele — a monument standing for the enduring friendship of the peoples living in Cherkessk. At the " +
+      "top of the shield, four gold battlements carry the digits “1825”, the city's founding year; the " +
+      "shield's base is crossed by three narrow blue bands for the three rivers that run through the city — the Kuban, the " +
+      "Abazinka and the Ovechka. The coat of arms was adopted by city Duma decision No. 245 of 18 July 2001.",
+    sources: [
+      { title: "Герб города Черкесск — Геральдика.ру", url: "https://geraldika.ru/s/1917" },
+      {
+        title: "Герб города Черкесска — Официальный портал мэрии города Черкесска",
+        url: "https://cherkessk09.ru/gerb-goroda-cherkessk.html",
+      },
+    ],
+  },
+
+  // ── Chelyabinsk — capital of Chelyabinsk Oblast, Russia ──────────────────────
+  "RU-CHE": {
+    description:
+      "Three unequal horizontal bands — gold, a silver band patterned as masoned fortress stonework, and " +
+      "green — with a gold laden camel at the centre, reproduced from the city's coat of arms. The masoned " +
+      "silver band recalls that Chelyabinsk began life as a Russian fortress, founded on 13 September 1736; " +
+      "the camel, walking beside the wall and carrying its load, marks the city as \"abounding in goods\" " +
+      "brought from Central Asia, a prediction made by the region's founder, geographer V. N. Tatishchev, " +
+      "that Chelyabinsk would become a great trading centre. The original coat of arms was granted on 8 June " +
+      "1782 (its upper field then bearing Ufa's arms, marking the city's place in Ufa Governorate); gold " +
+      "represents strength, generosity and wealth, silver nobility, purity and sincerity. The modern flag was " +
+      "adopted by the Chelyabinsk city Duma in May 2002.",
+    sources: [
+      { title: "Герб Челябинска — Циклопедия (Cyclowiki)", url: "https://cyclowiki.org/wiki/Герб_Челябинска" },
+      { title: "Герб Челябинска — Heraldicum.ru", url: "https://www.heraldicum.ru/russia/subjects/towns/celabin.htm" },
+    ],
+  },
+
+  // ── Anadyr — capital of Chukotka Autonomous Okrug, Russia ───────────────────
+  "RU-CHU": {
+    description:
+      "A blue field with a narrow white wavy stripe along the bottom edge, standing for the coastal waters " +
+      "of the Anadyr Estuary. Above it stands the city's golden-yellow bear, turned to face the viewer's " +
+      "right and holding a red fish head-upward in its paws — a device drawn from the coat of arms designed " +
+      "by artist Sergei Voronin and adopted by the city council on 19 October 1989, marking Anadyr's " +
+      "importance as a fishing centre on Chukotka's Bering Sea coast.",
+    sources: [
+      {
+        title: "Геральдика — Администрация городского округа Анадырь (Anadyr city administration)",
+        url: "https://anadyr-adm.ru/administration/heraldry",
+      },
+      { title: "Герб Анадыря — Знание.Вики", url: "https://znanierussia.ru/articles/Герб_Анадыря" },
+    ],
+  },
+
+  // ── Makhachkala — capital of the Republic of Dagestan, Russia ───────────────
+  "RU-DA": {
+    description:
+      "A red field with a narrow blue base patterned as waves running toward the viewer's right, standing " +
+      "for the Caspian Sea. Above the waves rises a silver fortress of three battlemented towers linked by " +
+      "walls — recalling the remains of ancient fortifications that once ran from the settlement of Tarki to " +
+      "the Caspian shore; the middle tower's gate arch is green, for the city's openness and hospitality, and " +
+      "bears the cipher of Peter the Great, commemorating the city's historic name, Port-Petrovsk, and Peter " +
+      "I's 1722 Persian Campaign encampment near Tarki. Above the fortress a sixteen-rayed solar sign, its " +
+      "rays curved in the sun's course, stands for warmth, prosperity and a bright future. The flag was " +
+      "adopted on 15 December 2006 and entered in the State Heraldic Register of the Russian Federation " +
+      "under No. 2785.",
+    sources: [
+      { title: "Герб Махачкалы — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Махачкалы" },
+      {
+        title: "Символика — Администрация города Махачкалы (Makhachkala city administration)",
+        url: "https://admkala.gosuslugi.ru/o-munitsipalnom-obrazovanii/simvolika/",
+      },
+    ],
+  },
+
+  // ── Magas — capital of the Republic of Ingushetia, Russia ───────────────────
+  "RU-IN": {
+    description:
+      "A red field bearing the city's coat of arms: against the Caucasus mountains, a Vainakh battle tower " +
+      "stands on a central vertical axis, symbolising both ancient and modern Ingushetia, flanked by Mount " +
+      "Stolovaya (“Mat-Loam”) on one side and Mount Kazbek (“Bashloam”) on the other. Above the mountains and " +
+      "tower, a half-disc of the sun at its zenith sends down seven straight rays — the sun's high position " +
+      "reflecting Ingushetia's name for itself as a \"sunny land\", and echoing Magas's own name, traditionally " +
+      "read as \"city of the sun\". A small solar sign below stands for the eternal motion of sun and earth. " +
+      "The design echoes Magas's centrepiece, the 100-metre Tower of Concord on Alania Square, built in the " +
+      "form of a medieval Ingush battle tower. The coat of arms was approved by decree of the President of " +
+      "the Republic of Ingushetia on 11 October 2008.",
+    sources: [
+      {
+        title: "Символика. Республика Ингушетия — Национальный банковский совет (heraldic register)",
+        url: "https://nbcrs.org/regions/respublika-ingushetiya/simvolika",
+      },
+    ],
+  },
+
+  // ── Irkutsk — capital of Irkutsk Oblast, Russia ──────────────────────────────
+  "RU-IRK": {
+    description:
+      "Two blue vertical bands flanking a white centre band, on which runs the coat of arms' central figure: " +
+      "a babr (the Yakut word for a Siberian tiger) carrying a red sable in its jaws, framed by stylised green " +
+      "cedar branches. The babr, watchful and running, stands for Irkutsk's role at the heart of Siberia's " +
+      "fur trade; the sable it carries represents the most valuable fur that drove the region's commerce and " +
+      "settlement. The coat of arms restores the historic design first granted in 1790 (readopted by city " +
+      "Duma decision No. 165-гД of 27 February 1996); heraldic silver stands for truthfulness and purity, red " +
+      "for courage and fearlessness.",
+    sources: [
+      { title: "Герб Иркутска — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Иркутска" },
+    ],
+    myths: [
+      {
+        claim:
+          "The animal on Irkutsk's coat of arms is a beaver (\"бобр\"/bobr) — as it was even officially " +
+          "described for over a century.",
+        reality:
+          "The animal is a babr — a Yakut/Siberian word for tiger — but 19th-century heraldic officials in " +
+          "St Petersburg, unfamiliar with the regional word, mistook it for a mistranscription of \"бобр\" " +
+          "(bobr, beaver). Baron B. V. Köhne's 1859 heraldic reform, formalised by an 1878 Senate decree, " +
+          "officially redescribed the creature as \"a black running beaver\" and later artists duly gave it a " +
+          "beaver's flat tail and webbed hind feet — producing a mythical tiger-beaver hybrid. Russia's State " +
+          "Heraldic Council restored \"babr\" to the official blazon only in 1997, though the beaver-like tail " +
+          "remains in the design as a historical artifact of the error.",
+      },
+    ],
+  },
 };
