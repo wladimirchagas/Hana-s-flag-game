@@ -531,41 +531,33 @@ our control — a remote URL that works today may be blocked, moved, or rate-lim
 3. Commit the file to the correct path above
 4. In `LOCAL_FLAG_OVERRIDES`, use `` `${BASE}flags/...` `` — never a raw `https://` URL
 
-### Outstanding files (currently still using Wikimedia URLs — must be fixed)
+### Formerly-outstanding files — now bundled (2026-07-28: Wikimedia egress confirmed working)
 
-The following entries in `LOCAL_FLAG_OVERRIDES` still use remote URLs because Wikimedia is
-blocked by the current server network policy. They must be downloaded and bundled before the
-next release. Use `node scripts/download-unofficial-flags.mjs` once network egress to
-`upload.wikimedia.org` is enabled.
+All of the following were previously blocked on Wikimedia egress (either left as a raw `https://`
+URL in `LOCAL_FLAG_OVERRIDES`, or fully suppressed). Egress to `upload.wikimedia.org` and
+`commons.wikimedia.org` was re-verified working 2026-07-28 and every one was downloaded and
+bundled locally; none of these should ever be reverted to a raw Wikimedia URL or re-suppressed
+without first re-checking egress with `node scripts/download-unofficial-flags.mjs`.
 
-`FR-GP` (`public/flags/gp.svg`) is already bundled from fonttools/region-flags (the Wikimedia
-source file is `commons/e/e7/Unofficial_flag_of_Guadeloupe_(local).svg`; the download script
-will re-download it if the local copy needs refreshing).
+`FR-GP` (`public/flags/gp.svg`) is bundled from fonttools/region-flags (the Wikimedia source file
+is `commons/e/e7/Unofficial_flag_of_Guadeloupe_(local).svg`; the download script will re-download
+it if the local copy needs refreshing).
 
-`FR-RE` (`public/flags/re.png`) is already bundled as a 1280×854 PNG (3:2). The Wikimedia SVG
-URL (`commons/f/f8/Flag_of_Réunion_(Local).svg`) was blank on all tested devices — the file
-appears not to exist or was renamed. The PNG was provided directly and shows the correct
+`FR-RE` (`public/flags/re.png`) is bundled as a 1280×854 PNG (3:2), provided directly by the owner
+— the Wikimedia SVG (`commons/f/f8/Flag_of_Réunion_(Local).svg`) 404s. Shows the correct
 Lö Mahavéli design (blue field, yellow rays, red triangle).
 
 | Code | Local target | Wikimedia source |
 |------|-------------|-----------------|
-| `GB-NIR` | `public/flags/sub/GB/GB-NIR.svg` | `commons/d/d0/Ulster_Banner.svg` |
+| `GB-NIR` | `public/flags/sub/GB/GB-NIR.svg` | `flag-icons`-sourced Ulster Banner (the `commons/d/d0/Ulster_Banner.svg` filename has since moved/been retitled on Commons — the bundled file was unaffected and verified still correct) |
 | `SO-SL~` | `public/flags/so-sl.svg` | `commons/4/4d/Flag_of_Somaliland.svg` |
 | `FR-YT` | `public/flags/yt-local.svg` | `commons/4/4a/Flag_of_Mayotte_(local).svg` |
 | `FR-BL` | `public/flags/bl.svg` | `commons/b/b4/Flag_of_Saint_Barthélemy_(local).svg` |
 | `FR-PM` | `public/flags/pm.svg` | `commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg` |
 | `FR-WF` | `public/flags/wf.svg` | `commons/d/d2/Flag_of_Wallis_and_Futuna.svg` |
+| `GB-SH` | `public/flags/sh.svg` | `commons/0/00/Flag_of_Saint_Helena.svg` (the blue ensign defaced with the Saint Helena coat of arms — rocks, sea, wirebird badge in the fly; hampusborgos/lipis `sh` is the bare Union Jack, wrong. The `commons/4/4c/...` filename previously logged here 404s; the current Commons file lives at `0/00/`.) |
 
-**Currently SUPPRESSED (no flag shown) because every accessible source serves the parent nation's
-flag.** These were caught by `scripts/check-parent-flag-collision.mjs` and added to
-`SUPPRESSED_SUBDIVISION_FLAGS`. Bundle the real subdivision flag from Wikimedia (then remove the
-suppression) once egress is enabled — do **not** restore the parent-flag file.
-
-| Code | Needed flag | Why suppressed | Wikimedia source |
-|------|-------------|----------------|-----------------|
-| `GB-SH` | Saint Helena flag (blue ensign defaced with the St Helena coat of arms) | hampusborgos & lipis `sh` are the bare Union Jack | `commons/4/4c/Flag_of_Saint_Helena.svg` |
-
-`FR-MF` (`public/flags/mf.png`) is now **bundled and shown** — the Saint Martin flag: a white
+`FR-MF` (`public/flags/mf.png`) is **bundled and shown** — the Saint Martin flag: a white
 field bearing the collectivity's emblem (a brown pelican in flight over a hibiscus, with a sunrise
 and a "Saint-Martin" banner), provided directly by the owner as a 1280×854 PNG (3:2). It scores a
 perceptual distance of **334** from the French Tricolour (`fr.svg`) — far above the 30 threshold —

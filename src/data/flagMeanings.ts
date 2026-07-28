@@ -12217,6 +12217,26 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  // ── Saint Helena (GB) ────────────────────────────────────────────────────
+
+  "GB-SH": {
+    description:
+      "A Blue Ensign — the Union Jack in the canton on a blue field, marking Saint " +
+      "Helena as a British Overseas Territory — defaced in the fly with the shield " +
+      "from the territory's coat of arms, authorised in 1984. The shield's top third " +
+      "shows the wirebird (the Saint Helena plover, the island's endemic national " +
+      "bird, found nowhere else on Earth), and the bottom two-thirds depict a coastal " +
+      "scene taken from the colony's historic seal: a three-masted sailing ship " +
+      "flying the flag of England, with the island's mountainous coastline behind it. " +
+      "The full arms (not shown on the flag) carry the motto 'Loyal and unshakable' " +
+      "beneath a figure of Helena of Constantinople, the island's namesake, holding " +
+      "the cross she is credited with rediscovering.",
+    sources: [
+      { title: "Flag of Saint Helena — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena" },
+      { title: "Coat of arms of Saint Helena — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena" },
+    ],
+  },
+
   // ── Prince Edward Island (CA) ──────────────────────────────────────────
 
   "CA-PE": {
@@ -12590,6 +12610,34 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
         title: "French Southern and Antarctic Lands (Overseas Territory, France) — Flags of the World",
         url: "https://www.fotw.info/flags/tf.html",
       },
+    ],
+  },
+
+  "FR-YT": {
+    description:
+      "Mayotte has no flag of its own — as a French overseas department the Tricolour is its national " +
+      "flag — but its departmental council flies a banner bearing the department's coat of arms (adopted " +
+      "1982) on a white field, captioned 'DÉPARTEMENT DE MAYOTTE'. The arms' blue and red are drawn from " +
+      "the French flag, with two yellow ylang-ylang flowers (the plant behind Mayotte's perfume industry) " +
+      "on a white crescent moon, and carry the Shimaore motto 'Ra Hachiri' ('We are vigilant').",
+    sources: [
+      { title: "Flag and coat of arms of Mayotte — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Mayotte" },
+    ],
+  },
+
+  // ── Somaliland (unofficial, shown under Somalia) ────────────────────────
+
+  "SO-SL~": {
+    description:
+      "A tricolour of green, white and red with a black five-pointed star centred on the white band, " +
+      "adopted by referendum-approved constitution on 31 May 2001 (first flown 1996). The green band " +
+      "carries the Shahada — the Islamic declaration of faith — in white Arabic script, affirming Islam's " +
+      "role in Somaliland's identity; the white band and its black star stand for peace, purity and unity; " +
+      "the red band represents the struggle and sacrifice of the independence movement. Because the " +
+      "Shahada is inscribed on it, the flag may never be flown at half-mast — doing so is treated as " +
+      "desecration, the same protocol observed for the flags of Afghanistan, Saudi Arabia and Iraq.",
+    sources: [
+      { title: "Flag of Somaliland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somaliland" },
     ],
   },
 
