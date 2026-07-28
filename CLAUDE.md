@@ -1542,6 +1542,52 @@ sourced fact from a plausible fabrication, so it never replaces verifying each c
 source by hand. **Never** weaken the check, and never add an entry whose claims you have not confirmed
 against the cited source.
 
+## Every newly bundled flag MUST get a flag-meaning search in the SAME change — hard rule, do not override without approval
+
+**Whenever a flag file is newly bundled, un-suppressed, or replaced in the game — national, subdivision,
+or capital-city — you MUST search for its sourced symbolism and add a `flagMeanings.ts` /
+`cityFlagMeanings.ts` entry (or record why one is genuinely unsourceable) in that SAME change. Shipping
+the flag image without doing this search is a bug, not a follow-up task.**
+
+### Why this rule exists
+
+This shipped and was reported (2026-07-28): the PR that fixed Saint Helena's missing flag (bundling
+`GB-SH`, plus `FR-YT` Mayotte and `SO-SL~` Somaliland, all previously blocked on Wikimedia egress) made
+all three flags render — but shipped with no "What this flag means" entry for any of them, because
+bundling the image and sourcing its meaning were treated as two separate tasks. The owner had to report
+"Flag explainer is missing" as a second bug before the omission was noticed and fixed in a follow-up PR.
+This is the flag-meaning sibling of the "newly surfaced entity must be COMPLETE" rule — a flag that
+renders with no explainer is an incomplete entity, exactly like a capital with no population row.
+
+### Rules
+
+1. **The flag-meaning search is part of "adding a flag," not a separate task.** Any change that adds a
+   new `LOCAL_FLAG_OVERRIDES` entry, removes a code from `SUPPRESSED_SUBDIVISION_FLAGS`, bundles a new
+   `public/flags/**` file, or adds/refreshes a capital-city flag in `capitalFlags.ts`, MUST in the same
+   change check whether `flagMeanings.ts` (national/subnational) or `cityFlagMeanings.ts` (capital
+   cities) already has an entry for that code — and if not, search for one before ending the task.
+2. **Search authoritative sources before concluding a meaning is unsourceable** — at minimum the flag's
+   own Wikipedia article (`Flag of X`) and, for a coat-of-arms-based flag, the arms' own article
+   (`Coat of arms of X`); for capital-city flags follow the deeper-source discipline (FOTW, local-language
+   Wikipedia, Commons blazon) already mandated by the flag-meaning-coverage and capital-meaning-sweep
+   rules above. Do not stop at "no meaning" after a single English-Wikipedia glance.
+3. **A genuinely unsourceable flag is fine to ship without an entry** — same "missing is honest, invented
+   is not" discipline as every other sourcing rule here. What is never fine is *not looking*.
+4. **This applies retroactively to gaps found in already-bundled flags too**: if you notice an existing
+   bundled flag has no `flagMeanings.ts`/`cityFlagMeanings.ts` entry while touching related code, treat
+   closing that gap as part of the completeness contract, not out of scope.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open the newly
+   bundled flag's card and confirm the "What this flag means" expander is present and renders the sourced
+   description — not just that the flag image itself is correct.
+
+### Enforcement
+
+There is no automated check that a *newly bundled* flag has a matching meaning entry (the existing
+`check-flag-meanings.mjs` only validates entries that exist; it cannot detect one that's silently
+missing). The guard is this rule plus rule 5's visual check: when reviewing any PR that adds, un-suppresses,
+or replaces a flag file, confirm the diff also touches `flagMeanings.ts`/`cityFlagMeanings.ts` for that
+code, or documents why the search came up empty.
+
 ## Capital-city flag-meaning explainer — exhaust every language before omitting — hard rule, do not override without approval
 
 **The Learn-mode capital-city flag also carries a "What this flag means" explainer** — the same
