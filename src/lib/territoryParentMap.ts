@@ -117,6 +117,8 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "AW", subdivCode: "NL-AW" },
     { geoCode: "CW", subdivCode: "NL-CW" },
     { geoCode: "SX", subdivCode: "NL-SX" },
+    // Bonaire/Saba/Sint Eustatius are NOT listed here — their geometry is already
+    // native to NL.json, not a separate merged file (see build-subdivision-meta.mjs).
   ],
   GB: [
     { geoCode: "JE", subdivCode: "GB-JE" },
@@ -134,6 +136,7 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "SH", subdivCode: "GB-SH" },
     { geoCode: "TC", subdivCode: "GB-TC" },
     { geoCode: "PN", subdivCode: "GB-PN" },
+    { geoCode: "AKD", subdivCode: "GB-AKD" },
   ],
   US: [
     { geoCode: "PR", subdivCode: "US-PR" },
@@ -141,6 +144,7 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "VI", subdivCode: "US-VI" },
     { geoCode: "AS", subdivCode: "US-AS" },
     { geoCode: "GU", subdivCode: "US-GU" },
+    { geoCode: "UM", subdivCode: "US-UM" },
   ],
   FR: [
     { geoCode: "BL", subdivCode: "FR-BL" },
@@ -149,6 +153,7 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "WF", subdivCode: "FR-WF" },
     { geoCode: "PF", subdivCode: "FR-PF" },
     { geoCode: "NC", subdivCode: "FR-NC" },
+    { geoCode: "TF", subdivCode: "FR-TF" },
   ],
   NZ: [
     { geoCode: "CK", subdivCode: "NZ-CK" },
@@ -160,6 +165,11 @@ export const TERRITORY_GEO_FOR_PARENT: Record<
     { geoCode: "CC", subdivCode: "AU-CC" },
     { geoCode: "CX", subdivCode: "AU-CX" },
     { geoCode: "NF", subdivCode: "AU-NF" },
+    { geoCode: "HM", subdivCode: "AU-HM" },
+  ],
+  NO: [
+    { geoCode: "NO-22", subdivCode: "NO-22" },
+    { geoCode: "BV", subdivCode: "NO-BV" },
   ],
   // Disputed territory claimants — same GeoJSON, different subdivision codes
   AR: [{ geoCode: "FK", subdivCode: "AR-ML~" }],
