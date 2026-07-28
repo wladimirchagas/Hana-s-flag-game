@@ -1012,6 +1012,55 @@ build** if any merged disputed territory (a `~`/`CN-TW` code that is not a hiera
 claiming nation's meta or has no capital. Never weaken or bypass it; if it fails, add the meta entry and the capital
 rather than the check.
 
+## No Antarctic territorial claim may ever be represented — hard rule, do not override without approval
+
+**No portion of the Antarctic continent may ever be added to the game as a country, subdivision, dependency, or
+"overseas territory" entity, under ANY claimant nation, regardless of source authority.** This is a full exclusion,
+not a neutral-display case like the disputed-territory rule above.
+
+The exclusion boundary is **60°S latitude — the Antarctic Treaty area** (the zone the 1959 Antarctic Treaty, Article
+IV, covers). Everything south of it is excluded, including but not limited to:
+
+| Claimant | Excluded claim |
+|----------|-----------------|
+| United Kingdom | British Antarctic Territory |
+| Chile | Territorio Chileno Antártico (Chilean Antarctic Territory) |
+| Argentina | Antártida Argentina (Argentine Antarctica) |
+| Australia | Australian Antarctic Territory |
+| New Zealand | Ross Dependency |
+| Norway | Queen Maud Land; Peter I Island (lies at ~68–69°S, inside the Treaty area) |
+| France | Adélie Land / Terre Adélie (the Antarctic district of the French Southern and Antarctic Lands — the
+  territory's other four districts, all north of 60°S, are NOT covered by this exclusion; see the rule on completing
+  a newly surfaced entity for how TAAF's non-Antarctic islands are handled) |
+
+### Why this rule exists
+
+Seven nations maintain territorial claims to parts of Antarctica, three of which (UK, Chile, Argentina) physically
+**overlap the same land**, and none of which is recognised by the other claimants or by most of the rest of the
+world. The Antarctic Treaty does not settle these claims — it freezes them: Article IV explicitly preserves each
+party's position without asserting, denying, or enlarging any claim, and prohibits new claims. Unlike the disputed
+territories this game DOES show neutrally (Kosovo, Taiwan, Western Sahara, the Falklands, Northern Cyprus, …),
+Antarctic claims cannot be shown even neutrally: there is no single "the territory" to display once three
+overlapping claims exist, none of the claims has a permanent civilian population or a capital in the ordinary sense
+(only rotating research-station personnel), and picking any one claimant's boundary to draw would itself take a
+side. Total exclusion, not neutral display, is the only position that takes none.
+
+### Rules
+
+1. **Never add any Antarctic claim** (a code representing territory south of 60°S) as a `TERRITORIES_TO_APPEND`
+   entry, a `TERRITORY_GEO_FOR_PARENT`/`territoryParentMap.ts` entry, a `SUBDIVISION_META` entry, or a standalone
+   country/territory anywhere in the game — present or future, and regardless of how authoritative the source.
+2. **Apply this uniformly to every claimant.** Do not add one nation's Antarctic claim while omitting another's for
+   "consistency" — the correct treatment for ALL seven claims is identical total exclusion.
+3. **This does not extend to non-Antarctic dependencies** that happen to be administered by the same claimant or
+   share an administrative structure with an Antarctic claim (e.g. TAAF's Crozet/Kerguelen/Saint-Paul & Amsterdam/
+   Scattered Islands districts, all north of 60°S; Norway's Bouvet Island at ~54°S). Only the literal claim area
+   south of 60°S is excluded — a nearby but distinct northern-hemisphere-of-the-Southern-Ocean territory is judged
+   on the normal territory-inclusion rules, not swept in by association.
+4. **The continent itself remains visible on the world map** as unclaimed, neutral landmass (it already renders
+   there via the base topology) — this rule is about the game's subdivision/territory data model (flag grids,
+   capitals, playable questions), not about hiding Antarctica's geography entirely.
+
 ## Subdivision research — hard rule, do not override without approval
 
 **Before introducing, removing, reclassifying, or changing the tier of any subdivision, you MUST

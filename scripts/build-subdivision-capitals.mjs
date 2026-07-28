@@ -113,6 +113,19 @@ function codesWithNeCapital() {
  */
 const NO_ISO_CODE_QIDS = {
   "AU-NF": "Q31057", // Norfolk Island → Kingston (Australian external territory)
+  "GB-AKD": "Q37362", // Akrotiri and Dhekelia → Episkopi Cantonment (UK Sovereign Base Areas; no ISO 3166-2 code)
+  // Sint Eustatius DOES have an ISO 3166-2 code (NL-BQ3) and a Wikidata P36, but
+  // the general per-country P300 pass misses it (its item carries a second,
+  // non-NL-prefixed P300 value "BQ-SE" alongside "NL-BQ3"); fetched directly by
+  // QID so it isn't left without a capital while its siblings Bonaire (NL-BQ1)
+  // and Saba (NL-BQ2) have one.
+  "NL-BQ3": "Q26180",
+  // Jan Mayen DOES have P300 = "NO-22" and a P36, but the general per-country
+  // pass didn't return it either (same unexplained gap as NL-BQ3 above); fetched
+  // directly by QID. Capital is Olonkinbyen, the Norwegian meteorological/Coast
+  // Guard station — Jan Mayen's only settlement, not a "capital" in the usual
+  // sense, but the same authoritative P36 path as every other row here.
+  "NO-22": "Q14056",
 };
 
 /**

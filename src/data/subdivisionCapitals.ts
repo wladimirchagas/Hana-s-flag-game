@@ -374,7 +374,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
 
   // ── FM ──
   "FM-KSA": {"name":"Tofol","lon":163.0086,"lat":5.3258},
-  "FM-TRK": {"name":"Weno","lon":151.85,"lat":7.45},
+  "FM-TRK": {"name":"Weno","lon":151.8688,"lat":7.4402},
   "FM-YAP": {"name":"Colonia","lon":138.1333,"lat":9.5167},
 
   // ── FR ──
@@ -460,10 +460,12 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "FR-PF": {"name":"Papeete","lon":-149.5689,"lat":-17.5397},
   "FR-PM": {"name":"Saint-Pierre","lon":-56.1778,"lat":46.7778},
   "FR-RE": {"name":"Saint-Denis","lon":55.4481,"lat":-20.8789},
+  "FR-TF": {"name":"Port-aux-Français","lon":70.2167,"lat":-49.35},
   "FR-WF": {"name":"Mata-Utu","lon":-176.1737,"lat":-13.2827},
   "FR-YT": {"name":"Dzaoudzi","lon":45.2725,"lat":-12.7883},
 
   // ── GB ──
+  "GB-AKD": {"name":"Episkopi Cantonment","lon":32.8456,"lat":34.6805},
   "GB-FK": {"name":"Stanley","lon":-57.8496,"lat":-51.6939},
   "GB-GI": {"name":"Gibraltar","lon":-5.35,"lat":36.14},
 
@@ -934,7 +936,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "ME-09": {"name":"Kolašin","lon":19.5165,"lat":42.8223},
   "ME-10": {"name":"Kotor","lon":18.7712,"lat":42.4254},
   "ME-11": {"name":"Mojkovac","lon":19.58,"lat":42.96},
-  "ME-12": {"name":"Nikšić","lon":18.94,"lat":42.78},
+  "ME-12": {"name":"Nikšić","lon":18.9445,"lat":42.7731},
   "ME-13": {"name":"Plav","lon":19.945,"lat":42.5956},
   "ME-14": {"name":"Pljevlja","lon":19.3502,"lat":43.3566},
   "ME-15": {"name":"Plužine","lon":18.8394,"lat":43.1528},
@@ -1057,12 +1059,14 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "NL-AW": {"name":"Oranjestad","lon":-70.0358,"lat":12.5186},
   "NL-BQ1": {"name":"Kralendijk","lon":-68.2767,"lat":12.1508},
   "NL-BQ2": {"name":"The Bottom","lon":-63.2492,"lat":17.6261},
+  "NL-BQ3": {"name":"Oranjestad","lon":-62.9833,"lat":17.4833},
   "NL-CW": {"name":"Willemstad","lon":-68.935,"lat":12.108},
   "NL-FL": {"name":"Lelystad","lon":5.4833,"lat":52.5167},
   "NL-SX": {"name":"Philipsburg","lon":-63.0433,"lat":18.0242},
 
   // ── NO ──
   "NO-21": {"name":"Longyearbyen","lon":15.6333,"lat":78.2167},
+  "NO-22": {"name":"Olonkinbyen","lon":-8.715,"lat":70.922},
 
   // ── NR ──
   "NR-02": {"name":"Anabar","lon":166.9533,"lat":-0.5084},
@@ -1122,6 +1126,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "PH-DAS": {"name":"Digos","lon":125.3559,"lat":6.7454},
   "PH-DAV": {"name":"Tagum","lon":125.8078,"lat":7.4478},
   "PH-EAS": {"name":"Borongan","lon":125.4361,"lat":11.6094},
+  "PH-GUI": {"name":"Jordan","lon":122.5878,"lat":10.596},
   "PH-IFU": {"name":"Lagawe","lon":121.1228,"lat":16.7975},
   "PH-ILI": {"name":"Iloilo City","lon":122.5667,"lat":10.7},
   "PH-ILN": {"name":"Laoag","lon":120.5936,"lat":18.1978},
@@ -1250,6 +1255,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   "SI-008": {"name":"Brezovica pri Ljubljani","lon":14.4,"lat":46.0333},
   "SI-009": {"name":"Brežice","lon":15.5925,"lat":45.9044},
   "SI-011": {"name":"Celje","lon":15.2641,"lat":46.2291},
+  "SI-014": {"name":"Cerkno","lon":13.9875,"lat":46.1278},
   "SI-017": {"name":"Črnomelj","lon":15.1889,"lat":45.5711},
   "SI-019": {"name":"Divača","lon":13.9678,"lat":45.6814},
   "SI-023": {"name":"Domžale","lon":14.6,"lat":46.1333},

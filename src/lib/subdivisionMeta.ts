@@ -212,7 +212,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "AU-ACT", name: "Australian Capital Territory", typeLabel: "Territory" },
     { code: "AU-CC", name: "Cocos (Keeling) Islands", typeLabel: "External Territory" },
     { code: "AU-CX", name: "Christmas Island", typeLabel: "External Territory" },
-    { code: "AU-NF", name: "Norfolk Island", typeLabel: "External Territory" }
+    { code: "AU-NF", name: "Norfolk Island", typeLabel: "External Territory" },
+    { code: "AU-HM", name: "Heard Island and McDonald Islands", typeLabel: "External Territory" }
     ],
   },
   "AZ": {
@@ -630,6 +631,13 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "BT-42", name: "Mongar", typeLabel: "District" },
     { code: "BT-32", name: "Trongsa", typeLabel: "District" },
     { code: "BT-43", name: "Pemagatshel", typeLabel: "District" }
+    ],
+  },
+  "BV": {
+    countryCode: "BV",
+    pluralLabel: "Divisions",
+    divisions: [
+    { code: "BV", name: "Bouvet Island", typeLabel: "Division" }
     ],
   },
   "BW": {
@@ -1508,7 +1516,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "FR-PM", name: "Saint Pierre and Miquelon", typeLabel: "Overseas Collectivity" },
     { code: "FR-WF", name: "Wallis and Futuna", typeLabel: "Overseas Collectivity" },
     { code: "FR-PF", name: "French Polynesia", typeLabel: "Overseas Collectivity" },
-    { code: "FR-NC", name: "New Caledonia", typeLabel: "Sui generis collectivity" }
+    { code: "FR-NC", name: "New Caledonia", typeLabel: "Sui generis collectivity" },
+    { code: "FR-TF", name: "French Southern and Antarctic Lands", typeLabel: "Overseas Territory" }
     ],
   },
   "GA": {
@@ -1548,7 +1557,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "GB-MS", name: "Montserrat", typeLabel: "Overseas Territory" },
     { code: "GB-SH", name: "Saint Helena", typeLabel: "Overseas Territory" },
     { code: "GB-TC", name: "Turks and Caicos Islands", typeLabel: "Overseas Territory" },
-    { code: "GB-PN", name: "Pitcairn Islands", typeLabel: "Overseas Territory" }
+    { code: "GB-PN", name: "Pitcairn Islands", typeLabel: "Overseas Territory" },
+    { code: "GB-AKD", name: "Akrotiri and Dhekelia", typeLabel: "Overseas Territory" }
     ],
   },
   "GD": {
@@ -3446,7 +3456,9 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "NO-14", name: "Sogn og Fjordane", typeLabel: "County" },
     { code: "NO-15", name: "Møre og Romsdal", typeLabel: "County" },
     { code: "NO-21", name: "Svalbard", typeLabel: "Territory" },
-    { code: "NO-05", name: "Oppland", typeLabel: "County" }
+    { code: "NO-05", name: "Oppland", typeLabel: "County" },
+    { code: "NO-22", name: "Jan Mayen", typeLabel: "Territory" },
+    { code: "NO-BV", name: "Bouvet Island", typeLabel: "Dependency" }
     ],
   },
   "NP": {
@@ -5122,7 +5134,8 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "US-MP", name: "Northern Mariana Islands", typeLabel: "Unincorporated Territory" },
     { code: "US-VI", name: "U.S. Virgin Islands", typeLabel: "Unincorporated Territory" },
     { code: "US-AS", name: "American Samoa", typeLabel: "Unincorporated Territory" },
-    { code: "US-GU", name: "Guam", typeLabel: "Unincorporated Territory" }
+    { code: "US-GU", name: "Guam", typeLabel: "Unincorporated Territory" },
+    { code: "US-UM", name: "United States Minor Outlying Islands", typeLabel: "Unincorporated Territory" }
     ],
   },
   "UY": {

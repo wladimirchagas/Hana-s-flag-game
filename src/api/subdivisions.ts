@@ -94,6 +94,12 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // matching the flag shown at https://www.crwflags.com/fotw/images/p/py-08.gif.
   "PY-8": `${BASE}flags/sub/PY/PY-8.png`,
 
+  // French Southern and Antarctic Lands (TAAF) — official flag adopted 23 Feb
+  // 2007 (blue field, French Tricolour canton, white "T.A.A.F" anchor monogram
+  // and five stars). Public domain (Xrmap). Excludes Adélie Land (Antarctic
+  // claim) — see CLAUDE.md's Antarctic-claim exclusion rule.
+  "FR-TF": `${BASE}flags/tf.svg`,
+
   // ── Disputed / claimed territories — unofficial flags ───────────────────────
   // The claiming nation has no official flag for these territories; we show the
   // territory's own flag labelled "(unofficial flag)" — consistent with how
@@ -111,6 +117,18 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // (2:1 ratio — Crown heraldic banner proportions, corrected from the lipis 640×480
   // source by wrapping content in <g transform="scale(1,0.6667)">).
   "GB-NIR": `${BASE}flags/sub/GB/GB-NIR.svg`,
+  // Akrotiri and Dhekelia (the Sovereign Base Areas) has no official flag of its
+  // own — it flies the plain Union Jack by default (no College of Arms grant to
+  // base a Blue Ensign-type territory flag on, per FOTW cy^sba.html and Wikipedia's
+  // "Flag of Akrotiri and Dhekelia"). Showing the Union Jack would violate the
+  // "never show parent nation's flag" rule, so — same treatment as Northern Ireland
+  // above — we show the most widely-used local/unofficial flag: the Dhekelia
+  // Garrison Flag (green field, two gold lions passant guardant, derived from
+  // colonial Cyprus's flag / King Richard I's arms), also used on the King Richard
+  // School and Dhekelia Sailing Club emblems. Source: Wikimedia Commons
+  // "Flag_of_the_Dhekelia_Garrison.svg" (public domain, UK Government work),
+  // 1050×700 (3:2, a real-world proportion).
+  "GB-AKD": `${BASE}flags/sub/GB/GB-AKD.svg`,
 
   // ── ISO 3166-2 code-alias fixes (same territory, different code) ─────────────
   // Like Paris (FR-75 vs FR-75C): the game keys these subdivisions by the code in
@@ -238,6 +256,23 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
   // scripts/check-parent-flag-collision.mjs). No flag is shown — and crucially no
   // "(unofficial flag)" label — until the subdivision's OWN flag can be bundled.
   "GB-SH",  // Saint Helena — bundled file was the bare Union Jack
+  // Uninhabited external territories with NO official flag and no genuine
+  // widely-used local/unofficial one either (unlike GB-NIR's Ulster Banner or
+  // GB-AKD's Dhekelia Garrison Flag, which are real, long-used local symbols).
+  // The only "unofficial" HIMI design found is Wikimedia's own
+  // "Unofficial or FICTITIOUS Flag of Heard Island and McDonald Islands.svg" — a
+  // hobbyist vexillology proposal, not a flag any authority or institution
+  // actually uses. Bundling it would violate the "never invent/approximate flag
+  // content" rule, so no flag is shown rather than an invented one.
+  "AU-HM",  // Heard Island and McDonald Islands
+  // The nine islands/atolls grouped as "US Minor Outlying Islands" have no
+  // collective flag; a couple of individual islands (Wake, Midway) have ad hoc
+  // morale-patch-style designs made by rotating station personnel, but nothing
+  // rises to a genuine widely-recognised local flag for the merged single entity
+  // this app renders (public/subdivisions/UM.json's 8 features are dissolved to
+  // one US-UM unit, matching French Polynesia's/Saint Helena's multi-island
+  // handling). No flag is shown rather than an invented composite.
+  "US-UM",
   // Bulk-downloaded sub/ files that were the parent nation's flag verbatim
   // (caught by check-parent-flag-collision.mjs; the duplicate files were deleted).
   "BA-BRC", // Brčko District — file was the Bosnia & Herzegovina national flag

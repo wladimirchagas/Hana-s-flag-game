@@ -12196,6 +12196,27 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  // ── Akrotiri and Dhekelia (GB) ─────────────────────────────────────────
+
+  "GB-AKD": {
+    description:
+      "The Dhekelia Garrison Flag: a green field charged with two gold lions passant guardant, " +
+      "derived from the unofficial flag flown in British colonial Cyprus, which in turn drew on " +
+      "the arms of King Richard I of England — who conquered Cyprus in 1191 and founded the medieval " +
+      "Kingdom of Cyprus. It has no official status; the Sovereign Base Areas have never been granted " +
+      "arms by the College of Arms, so the territory's legally recognised flag is the plain Union Jack.",
+    sources: [
+      {
+        title: "Flag of Akrotiri and Dhekelia — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_Akrotiri_and_Dhekelia",
+      },
+      {
+        title: "Cyprus: Sovereign Base Areas (United Kingdom) — Flags of the World",
+        url: "https://www.fotw.info/flags/cy%5Esba.html",
+      },
+    ],
+  },
+
   // ── Prince Edward Island (CA) ──────────────────────────────────────────
 
   "CA-PE": {
@@ -12548,6 +12569,27 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "(France recognises no official regional flag.)",
     sources: [
       { title: "Saint Martin (France) — Wikipedia", url: "https://en.wikipedia.org/wiki/Saint_Martin_(France)" },
+    ],
+  },
+
+  "FR-TF": {
+    description:
+      "The official flag of the French Southern and Antarctic Lands (TAAF), adopted 23 February 2007: a " +
+      "blue field with the French Tricolour in the canton, and the letters \"T.A.A.F\" styled as a white " +
+      "anchor monogram in the fly, surrounded by five white five-pointed stars. The five stars are " +
+      "popularly associated with TAAF's five administrative districts — Adélie Land, Crozet, Kerguelen, " +
+      "Saint-Paul and Amsterdam, and the Scattered Islands — though this link is not stated in the " +
+      "official adoption decree. An earlier 1958 version, made for the territory's first senior " +
+      "administrator, carried three stars instead of five.",
+    sources: [
+      {
+        title: "Flag of the French Southern and Antarctic Lands — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_French_Southern_and_Antarctic_Lands",
+      },
+      {
+        title: "French Southern and Antarctic Lands (Overseas Territory, France) — Flags of the World",
+        url: "https://www.fotw.info/flags/tf.html",
+      },
     ],
   },
 
