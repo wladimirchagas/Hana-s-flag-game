@@ -101,7 +101,7 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "CN-TW":  `${BASE}flags/tw.svg`,    // Taiwan ROC flag; PRC does not recognise it
   "MA-EH~": `${BASE}flags/eh.svg`,    // SADR flag; Morocco does not recognise it
   "RS-KM~": `${BASE}flags/xk.svg`,    // Kosovo flag; Serbia does not recognise it
-  "SO-SL~": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Somaliland.svg",
+  "SO-SL~": `${BASE}flags/so-sl.svg`,  // Somaliland flag; Somalia does not recognise it
   "CY-NC~": `${BASE}flags/trnc.svg`,  // TRNC flag; Republic of Cyprus does not recognise it
   // Northern Ireland — the Ulster Banner (1953–1973) is the most widely used
   // unofficial symbol internationally. Northern Ireland has no designated official
@@ -164,13 +164,12 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   "GB-VG":  `${BASE}flags/vg.svg`,
   "GB-KY":  `${BASE}flags/ky.svg`,
   "GB-MS":  `${BASE}flags/ms.svg`,
-  // GB-SH (Saint Helena, Ascension and Tristan da Cunha) — intentionally has NO
-  // override and is SUPPRESSED below. Its real flag is a blue ensign defaced with
-  // the St Helena coat of arms, but the only previously-bundled file (sh.svg) was
-  // the bare Union Jack — i.e. the parent UK flag — which the parent-flag-collision
-  // check now rejects. No correctly-proportioned authoritative source is currently
-  // reachable (Wikimedia is network-blocked; hampusborgos/lipis carry the Union
-  // Jack for `sh`). Re-bundle the real flag when Wikimedia egress is enabled.
+  // GB-SH (Saint Helena, Ascension and Tristan da Cunha): the blue ensign defaced
+  // with the Saint Helena coat of arms (rocks, sea and a wirebird badge in the
+  // fly). hampusborgos/lipis carry the bare Union Jack for `sh` (the parent UK
+  // flag) — wrong. Bundled instead from Wikimedia Commons
+  // (commons/0/00/Flag_of_Saint_Helena.svg, 1200×600, 2:1 ensign proportions).
+  "GB-SH":  `${BASE}flags/sh.svg`,
   "GB-TC":  `${BASE}flags/tc.svg`,
   "GB-PN":  `${BASE}flags/pn.svg`,
   
@@ -216,10 +215,10 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // RE: Lö Mahavéli flag (1280×854 PNG, 3:2 ratio). Wikimedia SVG URL was blank on all
   // tested devices (file may not exist or was renamed). PNG bundled directly from user.
   "FR-RE":  `${BASE}flags/re.png`,
-  "FR-YT":  "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg",
-  "FR-BL":  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Saint_Barth%C3%A9lemy_(local).svg",
-  "FR-PM":  "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg",
-  "FR-WF":  "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg",
+  "FR-YT":  `${BASE}flags/yt-local.svg`,  // Mayotte local/unofficial flag
+  "FR-BL":  `${BASE}flags/bl.svg`,        // Saint Barthélemy local/unofficial flag
+  "FR-PM":  `${BASE}flags/pm.svg`,        // Saint Pierre and Miquelon semi-official flag
+  "FR-WF":  `${BASE}flags/wf.svg`,        // Wallis and Futuna local/unofficial flag
 };
 
 // Subdivision codes whose CDN flag must be actively suppressed.
@@ -233,11 +232,6 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
   // Bahrain governorates — no authoritative flag source with correct aspect
   // ratio found; amckenna41/iso3166-flags served 640×480 placeholders.
   "BH-13", "BH-14", "BH-15", "BH-17",
-  // Suppressed because every accessible source serves the PARENT NATION'S flag,
-  // which must never be shown for a subdivision (see CLAUDE.md, enforced by
-  // scripts/check-parent-flag-collision.mjs). No flag is shown — and crucially no
-  // "(unofficial flag)" label — until the subdivision's OWN flag can be bundled.
-  "GB-SH",  // Saint Helena — bundled file was the bare Union Jack
   // Bulk-downloaded sub/ files that were the parent nation's flag verbatim
   // (caught by check-parent-flag-collision.mjs; the duplicate files were deleted).
   "BA-BRC", // Brčko District — file was the Bosnia & Herzegovina national flag
