@@ -3825,11 +3825,16 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
 
   "BR-AM": {
     description:
-      "White and red bands with a blue canton bearing a large star and twenty-five smaller ones. The " +
-      "twenty-five stars stand for the municipalities existing in 1897 and the large star for the " +
-      "capital, Manaus; white is hope, blue the sky and red the overcoming of hardship.",
+      "White and red bands with a blue canton bearing sixty-two silver stars in seven rows: a large " +
+      "central star for the capital, Manaus, and sixty-one smaller stars, one for each of the state's " +
+      "other municipalities; white is hope, blue the sky and red the overcoming of hardship. The canton " +
+      "originally carried only twenty-five stars (for the municipalities existing in 1897, when the " +
+      "design was adopted); Law 8.469 of 14 July 2026 expanded it to sixty-two stars to represent every " +
+      "municipality Amazonas has today, and set the flag to update automatically whenever the state's " +
+      "municipal count changes.",
     sources: [
       { title: "Flag of Amazonas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Amazonas_(Brazilian_state)" },
+      { title: "Amazonas oficializa nova bandeira com 62 estrelas após sanção de lei — Rios de Notícias", url: "https://www.riosdenoticias.com.br/amazonas-oficializa-nova-bandeira-com-62-estrelas-apos-sancao-de-lei/" },
     ],
   },
 
