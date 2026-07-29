@@ -10468,6 +10468,97 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Maracay — capital of Aragua state, Venezuela ──────────────────────────
+  "VE-D": {
+    description:
+      "Maracay (Girardot municipality) flies green, white and indigo-blue stripes with the city arms at the " +
+      "centre. Green is hope and the mountains ringing the city, white is faith and purity (recalling the " +
+      "beatified María de San José of coastal Choroní), and indigo blue is justice and the sea, lake and rivers " +
+      "that border the municipality. First raised in 2001 for the city's tercentenary.",
+    sources: [
+      { title: "La Bandera — Alcaldía de Girardot (official)", url: "http://www.alcaldiagirardot.gob.ve/index.php?option=com_content&view=article&id=119&Itemid=732" },
+    ],
+  },
+
+  // ── San Carlos — capital of Cojedes state, Venezuela ──────────────────────
+  "VE-H": {
+    description:
+      "San Carlos (San Carlos de Austria) flies green, yellow and orange horizontal stripes with the colonial " +
+      "façade of the Casa La Blanquera on the yellow band and the municipal arms in the green. Green is 'the " +
+      "rebirth of hope', yellow the wealth of the land and rivers, and orange the dusk over the plains. Adopted " +
+      "1994.",
+    sources: [
+      { title: "San Carlos, Cojedes (Venezuela) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ve-h-sc.html" },
+    ],
+  },
+
+  // ── Barquisimeto — capital of Lara state, Venezuela ───────────────────────
+  "VE-K": {
+    description:
+      "Barquisimeto's flag (1990) uses grey, yellow and red for the Río Turbio, the sun, and the city's famous " +
+      "sunsets, and carries the image of the Obelisco de Barquisimeto, the city's best-known monument.",
+    sources: [
+      { title: "Barquisimeto — Wikipedia", url: "https://es.wikipedia.org/wiki/Barquisimeto" },
+    ],
+  },
+
+  // ── Mérida — capital of Mérida state, Venezuela ───────────────────────────
+  "VE-L": {
+    description:
+      "Mérida's flag is divided into eight fields around a central Santiago (St James) cross, honouring the " +
+      "city's full name, Santiago de los Caballeros de Mérida. Each field carries a different colour; the city " +
+      "has not officially revealed the meaning of the individual colours.",
+    sources: [
+      { title: "Bandera de Mérida (Venezuela) — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_M%C3%A9rida_(Venezuela)" },
+    ],
+  },
+
+  // ── Maturín — capital of Monagas state, Venezuela ─────────────────────────
+  "VE-N": {
+    description:
+      "Maturín flies red, yellow and blue vertical stripes: red for the blood and sacrifice of the city's " +
+      "heroes, yellow for local wealth, and blue for the region's waters. Ten stars on the red stripe stand for " +
+      "the municipality's parishes, and a black silhouette of the cacique Maturín — the indigenous leader the " +
+      "city is named for — faces the hoist. Adopted 2006.",
+    sources: [
+      { title: "Maturín, Monagas (Venezuela) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ve-n-ma.html" },
+    ],
+  },
+
+  // ── Guanare — capital of Portuguesa state, Venezuela ──────────────────────
+  "VE-P": {
+    description:
+      "Guanare's flag (1991) is split by a diagonal from lower hoist to upper fly: a sky-blue triangle for the " +
+      "spiritual depth and thought of the guanareño people, and a yellow triangle for the municipality's " +
+      "economic production, with the city arms in the upper hoist canton.",
+    sources: [
+      { title: "Guanare, Portuguesa (Venezuela) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ve-p-gu.html" },
+    ],
+  },
+
+  // ── Valencia — capital of Carabobo state, Venezuela ───────────────────────
+  "VE-G": {
+    description:
+      "Valencia flies yellow, red and green vertical stripes with the city arms on the red. Yellow is the " +
+      "constancy and enterprise of the Valencians who made it an industrial centre, red the blood of the " +
+      "indigenous Tacarigua and of the patriots at the Battle of Carabobo (1821), and green hope and the land's " +
+      "fertility. Adopted 2009.",
+    sources: [
+      { title: "Bandera de Valencia (Venezuela) — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Valencia_(Venezuela)" },
+    ],
+  },
+
+  // ── Maracaibo — capital of Zulia state, Venezuela ─────────────────────────
+  "VE-V": {
+    description:
+      "Maracaibo flies white, red and blue horizontal stripes with the city arms in the upper hoist. Taken from " +
+      "the banner of Saint Sebastian, the city's patron, white is the saint's purity and red the blood of his " +
+      "martyrdom; the blue stripe (added 1997) honours Lake Maracaibo, 500 years after its European sighting.",
+    sources: [
+      { title: "Bandera de Maracaibo — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_Maracaibo" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
