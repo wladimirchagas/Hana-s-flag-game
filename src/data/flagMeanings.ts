@@ -12237,6 +12237,21 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  // ── Bermuda (GB) ─────────────────────────────────────────────────────────
+
+  "GB-BM": {
+    description:
+      "A British Red Ensign — the Union Jack in the canton on a red field — defaced in the fly with " +
+      "the coat of arms of Bermuda, first adopted in 1910 (the arms enlarged in a 1999 redesign). " +
+      "Bermuda is unusual among British Overseas Territories in flying a RED ensign ashore (most use a " +
+      "blue ensign); the arms show a red lion — taken from the Royal Arms of England — holding a shield " +
+      "that depicts the 1609 wreck of the Sea Venture, the ship whose stranding on Bermuda's reefs led " +
+      "to the island's settlement, beneath the Latin motto 'Quo Fata Ferunt' ('Whither the Fates Carry').",
+    sources: [
+      { title: "Flag of Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bermuda" },
+    ],
+  },
+
   // ── Prince Edward Island (CA) ──────────────────────────────────────────
 
   "CA-PE": {
