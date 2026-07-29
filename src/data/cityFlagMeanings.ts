@@ -10180,6 +10180,84 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Rayong — capital of Rayong province, Thailand ─────────────────────────
+  "TH-21": {
+    description:
+      "Rayong's flag carries the provincial seal, which shows Ko Samet — the island off Rayong's coast, famed for " +
+      "its beaches and for the statues of characters from the epic poems of the poet Sunthon Phu, Rayong's most " +
+      "celebrated son.",
+    sources: [
+      { title: "Rayong province — Wikipedia", url: "https://en.wikipedia.org/wiki/Rayong_province" },
+    ],
+  },
+
+  // ── Khon Kaen — capital of Khon Kaen province, Thailand ───────────────────
+  "TH-40": {
+    description:
+      "Khon Kaen's flag carries the provincial seal: the stupa of Phra That Kham Kaen, believed to hold relics of " +
+      "the Buddha, framed by a banyan tree on one side and a golden shower tree (the provincial flower, whose Thai " +
+      "name means 'providing support and preventing decline') on the other.",
+    sources: [
+      { title: "Khon Kaen province — Wikipedia", url: "https://en.wikipedia.org/wiki/Khon_Kaen_province" },
+    ],
+  },
+
+  // ── Chiang Mai — capital of Chiang Mai province, Thailand ─────────────────
+  "TH-50": {
+    description:
+      "Chiang Mai's flag carries the provincial seal: a white elephant in a glass pavilion. The white elephant — a " +
+      "royal symbol in Thailand — recalls the one that ruler Thammalangka of Chiang Mai gave to King Rama II of " +
+      "Bangkok, while the pavilion marks the 1477 council held here to review the Buddhist scriptures (the " +
+      "Tripitaka).",
+    sources: [
+      { title: "Chiang Mai province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chiang_Mai_province" },
+    ],
+  },
+
+  // ── Lampang — capital of Lampang province, Thailand ───────────────────────
+  "TH-52": {
+    description:
+      "Lampang's flag carries the provincial seal: a white rooster at the entrance to the Phra That Lampang Luang " +
+      "temple. By local legend, when the Buddha visited, the god Indra turned himself into a white rooster to wake " +
+      "the townsfolk so they would rise to pay their respects.",
+    sources: [
+      { title: "Lampang province — Wikipedia", url: "https://en.wikipedia.org/wiki/Lampang_province" },
+    ],
+  },
+
+  // ── Chiang Rai — capital of Chiang Rai province, Thailand ─────────────────
+  "TH-57": {
+    description:
+      "Chiang Rai's flag carries the provincial seal, which shows a white elephant — the royal symbol of Thailand. " +
+      "It recalls the founding legend of the city by King Mangrai, who is said to have chosen the site because his " +
+      "elephant favoured the spot.",
+    sources: [
+      { title: "Chiang Rai province — Wikipedia", url: "https://en.wikipedia.org/wiki/Chiang_Rai_province" },
+    ],
+  },
+
+  // ── Tak — capital of Tak province, Thailand ───────────────────────────────
+  "TH-63": {
+    description:
+      "Tak's flag carries the provincial seal: King Naresuan mounted on a royal elephant, pouring consecrated " +
+      "water on the ground — the ceremonial act declaring independence. It commemorates the 1584 war with Burma, " +
+      "when Tak was the first border town to be freed from Burmese control.",
+    sources: [
+      { title: "Tak province — Wikipedia", url: "https://en.wikipedia.org/wiki/Tak_province" },
+    ],
+  },
+
+  // ── Krabi — capital of Krabi province, Thailand ───────────────────────────
+  "TH-81": {
+    description:
+      "Krabi's flag carries the provincial seal: two crossed ancient swords (a krabi is an old Siamese sword, " +
+      "which the province's name puns on) before the Andaman Sea and the Khao Phanom Bencha mountain, the " +
+      "province's highest peak.",
+    sources: [
+      { title: "Krabi province — Wikipedia", url: "https://en.wikipedia.org/wiki/Krabi_province" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
