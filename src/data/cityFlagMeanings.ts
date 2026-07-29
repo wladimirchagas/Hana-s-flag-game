@@ -10258,6 +10258,27 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Arusha — capital of Arusha region, Tanzania ───────────────────────────
+  "TZ-01": {
+    description:
+      "Arusha's flag is white within a narrow blue-and-green border, bearing the city's municipal emblem built " +
+      "around the Arusha clock tower — the town's best-known landmark, popularly said to mark the midpoint " +
+      "between Cairo and Cape Town — with the city name above and the motto below.",
+    sources: [
+      { title: "Arusha (Tanzania) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/tz-arus.html" },
+    ],
+  },
+
+  // ── Mwanza — capital of Mwanza region, Tanzania ───────────────────────────
+  "TZ-18": {
+    description:
+      "Mwanza City Council flies a light-blue flag bearing its municipal emblem, whose central charge is a water " +
+      "(fish) eagle — a fitting symbol for a port city on the shore of Lake Victoria.",
+    sources: [
+      { title: "Mwanza (Tanzania) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/tz-mwan.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
