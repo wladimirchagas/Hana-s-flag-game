@@ -9449,6 +9449,115 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Yuzhno-Sakhalinsk — capital of Sakhalin Oblast, Russia ────────────────
+  "RU-SAK": {
+    description:
+      "Yuzhno-Sakhalinsk's arms carry a symbolic key upheld by two bears on a curving ribbon. The key stands " +
+      "for the city's strategic position and the beginning of its growth; its bow and a flower reproduce the " +
+      "ornament on ceramics found at an ancient island settlement; and the bear is a symbol of strength revered " +
+      "by the island's ancient peoples.",
+    sources: [
+      { title: "Герб Южно-Сахалинска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%AE%D0%B6%D0%BD%D0%BE-%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Samara — capital of Samara Oblast, Russia ─────────────────────────────
+  "RU-SAM": {
+    description:
+      "Samara flies a white goat standing on green grass, on blue — a device suggested by the herds of saiga " +
+      "antelope that once roamed the Samara steppe. The goat stands for prosperity, leadership, courage and " +
+      "independence.",
+    sources: [
+      { title: "Герб Самары — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%8B" },
+    ],
+  },
+
+  // ── Saratov — capital of Saratov Oblast, Russia ───────────────────────────
+  "RU-SAR": {
+    description:
+      "Saratov flies three silver sterlets, their heads to the centre, on blue — a sign of “the great " +
+      "abundance of such fish in this land”. The sterlet is a royal fish; the arms were adopted in 1781.",
+    sources: [
+      { title: "Герб Саратова — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D0%B0" },
+    ],
+  },
+
+  // ── Smolensk — capital of Smolensk Oblast, Russia ─────────────────────────
+  "RU-SMO": {
+    description:
+      "Smolensk flies the bird Gamayun perched on a black cannon with a golden carriage, on silver. The cannon " +
+      "recalls the city's long history of battles, and the Gamayun — a bird of paradise — stands for happiness, " +
+      "peace and renewal.",
+    sources: [
+      { title: "Герб Смоленска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A1%D0%BC%D0%BE%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Stavropol — capital of Stavropol Krai, Russia ─────────────────────────
+  "RU-STA": {
+    description:
+      "Stavropol's arms turn on a golden cross that reflects its name — Stavropol, Greek for “city of the " +
+      "cross”. The cross quarters the shield among a golden fortress on a mountain (the city's founding as a " +
+      "frontier fortress in 1777), a flame rising from a chalice, an Orthodox church, and a Cossack horseman.",
+    sources: [
+      { title: "Герб Ставрополя — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A1%D1%82%D0%B0%D0%B2%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8F" },
+    ],
+  },
+
+  // ── Yekaterinburg — capital of Sverdlovsk Oblast, Russia ──────────────────
+  "RU-SVE": {
+    description:
+      "Yekaterinburg flies a silver mine-shaft — a well-frame with a windlass — and a smelting furnace with " +
+      "red fire within, on a shield split green and gold. The mine and furnace stand for the city's mining and " +
+      "metalworking, and the two colours for the divide between Europe and Asia that runs through the Urals.",
+    sources: [
+      { title: "Герб Екатеринбурга — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D0%B0" },
+    ],
+  },
+
+  // ── Kazan — capital of the Republic of Tatarstan, Russia ──────────────────
+  "RU-TA": {
+    description:
+      "Kazan flies the Zilant — a black crowned dragon with red wings, on white. It comes from the Tatar " +
+      "legend of Zilant, the serpent-king who dwelt where Kazan now stands; the dragon's tied tail signifies " +
+      "its taming. The arms were confirmed in 1781.",
+    sources: [
+      { title: "Герб Казани — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8" },
+    ],
+  },
+
+  // ── Tambov — capital of Tambov Oblast, Russia ─────────────────────────────
+  "RU-TAM": {
+    description:
+      "Tambov flies a golden beehive with three golden bees above it, on blue. The bees stand for " +
+      "industriousness, thrift and order, and the hive for the common home in which each has their place — " +
+      "together for the diligence, harmony and prosperity of Tambov.",
+    sources: [
+      { title: "Герб Тамбова — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2%D0%B0" },
+    ],
+  },
+
+  // ── Tomsk — capital of Tomsk Oblast, Russia ───────────────────────────────
+  "RU-TOM": {
+    description:
+      "Tomsk flies a silver horse rearing on green — for historical continuity and economic might, the silver " +
+      "for devotion to good and purity. The horse has stood on the city's arms since 1785.",
+    sources: [
+      { title: "Герб Томска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A2%D0%BE%D0%BC%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Tula — capital of Tula Oblast, Russia ─────────────────────────────────
+  "RU-TUL": {
+    description:
+      "Tula flies a silver sword-blade over two crossed blades, with two golden hammers above and below, on " +
+      "red. The blades stand for defence and the hammers for the labour of Tula's generations of smiths and " +
+      "gunsmiths, the red for military valour — Tula being Russia's historic arms-making city.",
+    sources: [
+      { title: "Герб Тулы — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A2%D1%83%D0%BB%D1%8B" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
