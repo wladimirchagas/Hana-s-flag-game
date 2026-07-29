@@ -68,7 +68,78 @@ if (problems.length > 0) {
   process.exit(1);
 }
 
+// ── Live-link check ──────────────────────────────────────────────────────────
+// The Saint Helier bug (2026-07-29): an omission cited "je-sh.html — no page" as
+// proof no FOTW page documents the flag, when the real page (linked from the
+// Jersey parish index) is je-xhe.html and DOES document the symbolism. A dead
+// citation can never have actually been read, so any FOTW URL an omission cites
+// MUST resolve. This fetches every cited crwflags/fotw.info URL and fails the
+// audit on a confirmed 404 — a network error (no egress here) is reported as a
+// warning, never a failure, since it is inconclusive rather than proof of a dead
+// link.
+const FOTW_URL_RE = /((?:crwflags\.com\/fotw|fotw\.info)\/flags\/[a-zA-Z0-9_.\-]+\.html)/g;
+// A reason describing a whole FAMILY of pages uses N/X/0 as placeholder digits,
+// not a real filename (e.g. mt-NN, ad-N00, tw-XXX) — skip, never meant to be
+// fetched literally.
+const isPlaceholderUrl = (bare) => /-[nx0]+\.html$/i.test(bare);
+const urlToEntries = new Map(); // bare "domain/path" -> [{code, reason}]
+for (const e of entries) {
+  for (const m of e.reason.matchAll(FOTW_URL_RE)) {
+    const bare = m[1];
+    if (isPlaceholderUrl(bare)) continue;
+    if (!urlToEntries.has(bare)) urlToEntries.set(bare, []);
+    urlToEntries.get(bare).push(e);
+  }
+}
+
+async function checkUrl(bare) {
+  const url = `https://${bare}`;
+  try {
+    const res = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(8000) });
+    if (res.status === 404) return { bare, dead: true, detail: "HTTP 404" };
+    return { bare, dead: false };
+  } catch (err) {
+    return { bare, dead: false, network: true, detail: err.message };
+  }
+}
+
+const urlList = [...urlToEntries.keys()];
+const results = [];
+const CONCURRENCY = 5;
+for (let i = 0; i < urlList.length; i += CONCURRENCY) {
+  const batch = await Promise.all(urlList.slice(i, i + CONCURRENCY).map(checkUrl));
+  results.push(...batch);
+}
+
+const deadLinks = results.filter((r) => r.dead);
+const networkSkipped = results.filter((r) => r.network);
+
+if (networkSkipped.length > 0) {
+  console.log(
+    `  (${networkSkipped.length} cited FOTW URL(s) could not be reached — no egress? — skipped, not failed)`,
+  );
+}
+
+if (deadLinks.length > 0) {
+  console.error(
+    `\n❌ Capital-omission audit failed — ${deadLinks.length} cited FOTW URL(s) return 404 ` +
+      `(a dead citation can't have actually been read):\n`,
+  );
+  for (const d of deadLinks) {
+    for (const e of urlToEntries.get(d.bare)) {
+      console.error(`  [${e.code}] cites https://${d.bare} — ${d.detail}`);
+    }
+  }
+  console.error(
+    "\nCheck that country/territory's FOTW INDEX page (e.g. crwflags.com/fotw/flags/je-.html) for the\n" +
+      "correct link before concluding no page exists — a 404 on a guessed URL is never proof of\n" +
+      "absence. Re-source the flag if the correct page documents symbolism, or fix the citation.\n",
+  );
+  process.exit(1);
+}
+
 console.log(
   `✓ Capital-omission audit passed — ${entries.length} omission(s), each either ` +
-    `structural or backed by a deep (beyond-English) authoritative source check.`,
+    `structural or backed by a deep (beyond-English) authoritative source check ` +
+    `(${urlList.length - networkSkipped.length} cited FOTW link(s) verified live).`,
 );

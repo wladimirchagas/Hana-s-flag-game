@@ -81,4 +81,76 @@ if (unverified.length || noReason.length) {
   process.exit(1);
 }
 
-console.log("\n✓ Every omission cites Flags of the World (re-verified). Sweep may be called complete.");
+// ── Live-link check ──────────────────────────────────────────────────────────
+// The Saint Helier capital-flag bug (2026-07-29) showed a citation mentioning
+// FOTW can still be WRONG: an omission cited a guessed FOTW URL as proof no page
+// exists, when the real page lived at a different URL. A dead citation can never
+// have actually been read, so any FOTW URL an omission cites MUST resolve. This
+// fetches every cited crwflags/fotw.info URL and fails on a confirmed 404 — a
+// network error (no egress here) is a warning, never a failure.
+const FOTW_URL_RE = /((?:crwflags\.com\/fotw|fotw\.info)\/flags\/[a-zA-Z0-9_.\-]+\.html)/g;
+// A reason describing a whole FAMILY of pages (e.g. "checked each of mt-NN.html for
+// every code") uses N/X/0 as placeholder digits, not a real filename — e.g. mt-NN,
+// ad-N00, tw-XXX. Skip these; they were never meant to be fetched literally.
+const isPlaceholderUrl = (bare) => /-[nx0]+\.html$/i.test(bare);
+const urlToBlocks = new Map();
+for (const b of blocks) {
+  if (!b.codes.length) continue;
+  for (const m of b.reason.matchAll(FOTW_URL_RE)) {
+    const bare = m[1];
+    if (isPlaceholderUrl(bare)) continue;
+    if (!urlToBlocks.has(bare)) urlToBlocks.set(bare, []);
+    urlToBlocks.get(bare).push(b);
+  }
+}
+
+async function checkUrl(bare) {
+  const url = `https://${bare}`;
+  try {
+    const res = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(8000) });
+    if (res.status === 404) return { bare, dead: true, detail: "HTTP 404" };
+    return { bare, dead: false };
+  } catch (err) {
+    return { bare, dead: false, network: true, detail: err.message };
+  }
+}
+
+const urlList = [...urlToBlocks.keys()];
+const linkResults = [];
+const CONCURRENCY = 5;
+for (let i = 0; i < urlList.length; i += CONCURRENCY) {
+  const batch = await Promise.all(urlList.slice(i, i + CONCURRENCY).map(checkUrl));
+  linkResults.push(...batch);
+}
+
+const deadLinks = linkResults.filter((r) => r.dead);
+const networkSkipped = linkResults.filter((r) => r.network);
+
+if (networkSkipped.length > 0) {
+  console.log(
+    `  (${networkSkipped.length} cited FOTW URL(s) could not be reached — no egress? — skipped, not failed)`,
+  );
+}
+
+if (deadLinks.length > 0) {
+  console.error(
+    `\n✗ ${deadLinks.length} cited FOTW URL(s) return 404 (a dead citation can't have actually been read):`,
+  );
+  for (const d of deadLinks) {
+    for (const b of urlToBlocks.get(d.bare)) {
+      const cc = [...new Set(b.codes.map((c) => c.split("-")[0]))].join(",");
+      console.error(`  • [${cc}] cites https://${d.bare} — ${d.detail}`);
+    }
+  }
+  console.error(
+    "\nCheck that country/subdivision's FOTW INDEX page for the correct link before concluding no page\n" +
+      "exists — a 404 on a guessed URL is never proof of absence. Re-source the flag if the correct page\n" +
+      "documents symbolism, or fix the citation.\n",
+  );
+  process.exit(1);
+}
+
+console.log(
+  `\n✓ Every omission cites Flags of the World (re-verified; ${urlList.length - networkSkipped.length} ` +
+    `cited link(s) verified live). Sweep may be called complete.`,
+);

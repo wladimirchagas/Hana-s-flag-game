@@ -1625,7 +1625,20 @@ renders with no explainer is an incomplete entity, exactly like a capital with n
 4. **This applies retroactively to gaps found in already-bundled flags too**: if you notice an existing
    bundled flag has no `flagMeanings.ts`/`cityFlagMeanings.ts` entry while touching related code, treat
    closing that gap as part of the completeness contract, not out of scope.
-5. **Verify in the running app** (the mandatory visual-verification rule applies): open the newly
+5. **A 404 on a guessed URL is never proof a source doesn't exist — hard sub-rule.** This shipped wrong
+   (2026-07-29): PR #810 omitted Saint Helier's (`GB-JE`) capital flag citing FOTW page `je-sh.html` as
+   evidence "no page" documents it — but `je-sh.html` was a guessed filename that 404s; the REAL page,
+   linked from the Jersey parish index (`je-.html`), is `je-xhe.html`, and it documents the flag's
+   symbolism in full. Before citing a dead/guessed FOTW URL as proof of absence, you MUST find that
+   country/subdivision's FOTW **index page** (e.g. `je-.html`, `gg-.html`) and follow its actual link —
+   never conclude "no page" from a URL you typed from memory or pattern-guessed.
+6. **Read the FULL source article, not just its lead/summary — hard sub-rule.** The same audit found
+   `GB-BM` (Hamilton, Bermuda) wrongly omitted with the reason "en.wikipedia's Hamilton, Bermuda article
+   does not describe the arms" — but the article's own "Coat of arms and flag" section (below the lead)
+   documents the ship, cinquefoils, supporters and motto in detail. A short API "extract"/summary fetch
+   is not the full article; before concluding a Wikipedia article has no symbolism section, read past the
+   lead for a "Coat of arms" / "Flag" / "Symbols" / "Heraldry" heading.
+7. **Verify in the running app** (the mandatory visual-verification rule applies): open the newly
    bundled flag's card and confirm the "What this flag means" expander is present and renders the sourced
    description — not just that the flag image itself is correct.
 
@@ -1633,9 +1646,17 @@ renders with no explainer is an incomplete entity, exactly like a capital with n
 
 There is no automated check that a *newly bundled* flag has a matching meaning entry (the existing
 `check-flag-meanings.mjs` only validates entries that exist; it cannot detect one that's silently
-missing). The guard is this rule plus rule 5's visual check: when reviewing any PR that adds, un-suppresses,
-or replaces a flag file, confirm the diff also touches `flagMeanings.ts`/`cityFlagMeanings.ts` for that
-code, or documents why the search came up empty.
+missing) — that half of this rule is still guarded by rule 7's visual check plus PR review, not a script.
+**Rules 5 and 6 (a citation must actually resolve/actually have been read) DO have a mechanical guard,
+because a dead-URL citation is objectively checkable:** `scripts/audit-omitted-capital-reasons.mjs`
+(`npm run capitals:audit-omissions`) and `scripts/audit-omitted-flag-reasons.mjs`
+(`npm run subdiv:audit-omissions`) each extract every `crwflags.com/fotw/…` or `fotw.info/…` URL cited in
+an omission reason and fetch it — **fails if any cited URL returns 404** (this is exactly the check that
+would have caught the `je-sh.html` citation). A network error (no egress in the running environment) is
+reported as a skipped warning, never a failure, since it's inconclusive rather than proof of a dead link.
+This cannot verify a citation was read *correctly* (only that the URL resolves), so it is a floor, not a
+substitute for the deeper-source discipline in rules 5–6 — never weaken it, and never omit a flag citing
+a URL you have not actually opened.
 
 ## Capital-city flag-meaning explainer — exhaust every language before omitting — hard rule, do not override without approval
 
@@ -1678,11 +1699,16 @@ and its logged reason MUST name the deeper sources checked (cite the FOTW page),
 
 `scripts/audit-omitted-capital-reasons.mjs` (`npm run capitals:audit-omissions`) **fails** if any
 non-structural omission cites only English Wikipedia / a bare search without showing a deeper
-(FOTW / local-language / official / heraldic / Commons) source was checked. Like the subdivision
-omission audit it is deliberately NOT in build-gating `flags:check` — it is the capital sweep's own
-tripwire, and **any "capitals sweep complete / thorough" claim is gated on a clean run of it.** Never
-weaken the audit or omit a flag to dodge it; if it flags an omission, re-check FOTW + the local-language
-sources and either recover the flag as a sourced entry or fix the reason to cite what was checked.
+(FOTW / local-language / official / heraldic / Commons) source was checked, **and separately fetches
+every `crwflags.com/fotw`/`fotw.info` URL cited in a reason, failing if any returns 404** (a dead
+citation can't have actually been read — see the "404 is never proof of absence" sub-rule above; this is
+the exact class of bug that let Saint Helier's real symbolism go undiscovered). A network error is a
+skipped warning, not a failure. Like the subdivision omission audit it is deliberately NOT in
+build-gating `flags:check` — it is the capital sweep's own tripwire, and **any "capitals sweep complete /
+thorough" claim is gated on a clean run of it.** Never weaken the audit or omit a flag to dodge it; if it
+flags an omission, re-check FOTW (via the country's INDEX page, not a guessed filename) + the
+local-language sources and either recover the flag as a sourced entry or fix the reason to cite what was
+actually checked.
 
 ## Flag-meaning coverage sweep is a standing mandate — finish it without asking — hard rule, do not override without approval
 
@@ -1784,7 +1810,10 @@ context window until the sweep is complete or the user explicitly says stop.
    completion on `remaining:0` alone is exactly the over-claim that hid Liberia and South Africa.
 
 **Enforcement:** `scripts/audit-omitted-flag-reasons.mjs` (`npm run subdiv:audit-omissions`) fails while
-any omission was checked only against Wikipedia (or has no logged reason), listing each. It is the gate
+any omission was checked only against Wikipedia (or has no logged reason), listing each, **and separately
+fetches every `crwflags.com/fotw`/`fotw.info` URL cited in a reason, failing if any returns 404** — a
+dead citation can't have actually been read (see the "404 is never proof of absence" sub-rule in the
+"newly bundled flag" rule above); a network error is a skipped warning, not a failure. It is the gate
 on any "sweep complete" claim; it is deliberately NOT in the build-gating `flags:check` (the pre-existing
 backlog would block unrelated work) — it is the audit's own tripwire. Beyond it this remains a
 behavioural mandate: a turn that ended by asking whether to continue the sweep, or with a progress
