@@ -9558,6 +9558,155 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Tver — capital of Tver Oblast, Russia ─────────────────────────────────
+  "RU-TVE": {
+    description:
+      "Tver flies a golden throne on red, bearing a royal crown on a green cushion. The throne and crown form " +
+      "a coronation emblem standing for power in the old Russian tradition; the crown is identified with the " +
+      "Cap of Monomakh, the ancient Russian coronation regalia.",
+    sources: [
+      { title: "Герб Твери — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A2%D0%B2%D0%B5%D1%80%D0%B8" },
+    ],
+  },
+
+  // ── Kyzyl — capital of the Tuva Republic, Russia ──────────────────────────
+  "RU-TY": {
+    description:
+      "Kyzyl's golden device marks the city as the geographic centre of Asia — a globe and a stele, with wings " +
+      "for soaring and prosperity, together reading as a sun and a flower for the people's bond with nature. At " +
+      "its base a heart marks the birth of the Yenisei, where two rivers meet within the city.",
+    sources: [
+      { title: "Герб Кызыла — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D1%8B%D0%B7%D1%8B%D0%BB%D0%B0" },
+    ],
+  },
+
+  // ── Tyumen — capital of Tyumen Oblast, Russia ─────────────────────────────
+  "RU-TYU": {
+    description:
+      "Tyumen flies a golden-masted river ship (a doshchanik) on a silver river — “in token that from this " +
+      "city begins the navigation of the rivers of all Siberia”. A beaver and a fox as supporters mark " +
+      "Tyumen's role as a centre of the fur trade. The arms were confirmed in 1785.",
+    sources: [
+      { title: "Герб Тюмени — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D0%B8" },
+    ],
+  },
+
+  // ── Izhevsk — capital of the Udmurt Republic, Russia ──────────────────────
+  "RU-UD": {
+    description:
+      "Izhevsk flies a shield split silver and blue, bearing counterchanged pincers and, over them, an arrow. " +
+      "The arrow stands for striving to the heights and the pincers for the city's openness — together the " +
+      "“trinity” of the human being, their labour (Izhevsk being a great arms- and metal-working city) and " +
+      "nature.",
+    sources: [
+      { title: "Герб Ижевска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Ulyanovsk — capital of Ulyanovsk Oblast, Russia ───────────────────────
+  "RU-ULY": {
+    description:
+      "Ulyanovsk flies a silver column on golden earth beneath a golden crown — a device from the old arms of " +
+      "Simbirsk (the city's former name). The column stands for the steadfastness of the people's self-rule " +
+      "and the crown for the city's self-government.",
+    sources: [
+      { title: "Герб Ульяновска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A3%D0%BB%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Volgograd — capital of Volgograd Oblast, Russia ───────────────────────
+  "RU-VGG": {
+    description:
+      "Volgograd's arms are read in two halves. Above, on red — for the blood shed in its defence — golden " +
+      "crenellations descend as a stylised fortress on the Volga, beside the Gold Star medal and ribbon of a " +
+      "Hero City (for the Battle of Stalingrad). Below, on the blue of the Volga, a golden gearwheel and sheaf " +
+      "of wheat for the city's industry and fertile land.",
+    sources: [
+      { title: "Герб Волгограда — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D0%B0" },
+    ],
+  },
+
+  // ── Vladimir — capital of Vladimir Oblast, Russia ─────────────────────────
+  "RU-VLA": {
+    description:
+      "Vladimir flies a golden lion rampant, an iron crown on its head, holding a long silver cross, on red — " +
+      "one of the oldest devices in Russian heraldry, borne since the 12th century by the Vladimir-Suzdal " +
+      "princes. The lion stands for strength and princely power, the silver cross for nobility, wisdom and the " +
+      "Christian faith.",
+    sources: [
+      { title: "Герб Владимира — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%B0" },
+    ],
+  },
+
+  // ── Vologda — capital of Vologda Oblast, Russia ───────────────────────────
+  "RU-VLG": {
+    description:
+      "Vologda flies, on red, a right hand in golden robing reaching from a silver cloud, holding a golden orb " +
+      "and a silver sword. The hand with the sword stands for justice and the defence of the Fatherland, and " +
+      "the orb for statehood — recalling the tradition that Ivan the Terrible wished to make Vologda his " +
+      "capital.",
+    sources: [
+      { title: "Герб Вологды — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%92%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D1%8B" },
+    ],
+  },
+
+  // ── Voronezh — capital of Voronezh Oblast, Russia ─────────────────────────
+  "RU-VOR": {
+    description:
+      "Voronezh's shield is split: a double-headed eagle on gold, granted to the city for its services to the " +
+      "Russian state, and on red a golden mountain from whose silver vessel the river Voronezh pours out — the " +
+      "vessel of water for the river and the fertility of the land.",
+    sources: [
+      { title: "Герб Воронежа — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D0%B0" },
+    ],
+  },
+
+  // ── Salekhard — capital of the Yamalo-Nenets Autonomous Okrug, Russia ─────
+  "RU-YAN": {
+    description:
+      "Salekhard flies a fox, reproducing the historic arms of the Obdorsk principality (first granted in 1731 " +
+      "under Empress Anna, as a fox holding an arrow). The fox stands for intelligence, cunning and " +
+      "resilience; Yamal was long a “storehouse of soft goods”, the furs by which tribute was levied and " +
+      "trade carried on.",
+    sources: [
+      { title: "Герб Салехарда — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A1%D0%B0%D0%BB%D0%B5%D1%85%D0%B0%D1%80%D0%B4%D0%B0" },
+    ],
+  },
+
+  // ── Yaroslavl — capital of Yaroslavl Oblast, Russia ───────────────────────
+  "RU-YAR": {
+    description:
+      "Yaroslavl flies a silver bear standing upright, holding a golden poleaxe, on silver. By legend the bear " +
+      "recalls the she-bear that Yaroslav the Wise slew on this spot; it stands for might and courage, and the " +
+      "poleaxe for princely power and order. The arms were confirmed in 1778.",
+    sources: [
+      { title: "Герб и флаг Ярославля — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%B8_%D1%84%D0%BB%D0%B0%D0%B3_%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8F" },
+    ],
+  },
+
+  // ── Birobidzhan — capital of the Jewish Autonomous Oblast, Russia ─────────
+  "RU-YEV": {
+    description:
+      "Birobidzhan's arms show, on blue, a green hill for the sopki that ring the city, over three wavy blue " +
+      "bands for its two rivers — the Bira and the Bidzhan, whose names the city joins in its own.",
+    sources: [
+      { title: "Герб Биробиджана — Геральдикум", url: "https://www.heraldicum.ru/russia/subjects/towns/birobij.htm" },
+    ],
+  },
+
+  // ── Chita — capital of Zabaykalsky Krai, Russia ───────────────────────────
+  "RU-ZAB": {
+    description:
+      "Chita flies a golden field with an eight-stake palisade of red and green, and above it a red buffalo " +
+      "head with silver eyes and tongue. The buffalo head stands for the cattle-raising of the Transbaikal " +
+      "people, the silver eyes and tongue for the Daurian silver mines and the gold field for its gold mines; " +
+      "the eight stakes recall the eight ostrogs (stockade forts) of the 17th-century Russian settlement of " +
+      "Transbaikalia.",
+    sources: [
+      { title: "Герб Читы — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A7%D0%B8%D1%82%D1%8B" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
