@@ -10117,6 +10117,32 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Dili — capital of Timor-Leste and its Dili municipality ───────────────
+  "TL-DI": {
+    description:
+      "Dili flies a white-and-green gyronny of eight (eight triangles radiating from the centre) charged with the " +
+      "city's coat of arms: a silver sandalwood tree — Timor's historic export — on a red field, flanked by two " +
+      "bundled war-trophies, beneath a golden mural crown of five towers that marks the city's rank as a capital. " +
+      "The arms were formalised under Portuguese rule (1962; an earlier 1952 version showed coffee plants in " +
+      "place of the trophies).",
+    sources: [
+      { title: "Díli District (East Timor) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/tl-dil.html" },
+    ],
+  },
+
+  // ── Istanbul — seat of Istanbul Province, Turkey ──────────────────────────
+  "TR-34": {
+    description:
+      "Istanbul flies the flag of its Metropolitan Municipality — the city emblem (designed by Metin Edremit in " +
+      "1969) in white on a blue field. The emblem packs the city's identity into one badge: the Bosphorus along " +
+      "the base, which splits the city and joins Europe to Asia; historic city walls to either side; mosques and " +
+      "minarets for the famous skyline; and seven triangles in the centre for the seven hills on which Istanbul " +
+      "was built.",
+    sources: [
+      { title: "İstanbul Metropolitan Municipality — Flags of the World", url: "https://www.crwflags.com/fotw/flags/tr-34-is.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
