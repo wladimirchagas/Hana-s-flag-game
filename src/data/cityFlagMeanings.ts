@@ -9821,6 +9821,302 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Bled — seat of the Municipality of Bled, Slovenia ─────────────────────
+  "SI-003": {
+    description:
+      "Bled's arms paint the town's own famous landscape: on the lake sits Bled Island with the pilgrimage " +
+      "church of the Assumption of Mary and its Belfry of Wishes, while a high cliff on the right carries the " +
+      "citadel (Bled Castle) — the three icons that make the resort instantly recognisable. The flag is a " +
+      "blue-white-blue vertical triband with the arms centred.",
+    sources: [
+      { title: "Bled (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-003.html" },
+    ],
+  },
+
+  // ── Bovec — seat of the Municipality of Bovec, Slovenia ───────────────────
+  "SI-006": {
+    description:
+      "Bovec shows a golden chamois leaping over a snow-capped mountain from which an S-shaped river issues — " +
+      "the mountain and the leaping chamois stand for the high peaks around the Bovec basin and the valleys of " +
+      "the Trenta and Koritnica, while the river is the emerald Soča (Isonzo). The flag carries a diagonal of " +
+      "'Soča blue' and white with the arms in the white field.",
+    sources: [
+      { title: "Bovec (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-006.html" },
+    ],
+  },
+
+  // ── Celje — seat of the City Municipality of Celje, Slovenia ──────────────
+  "SI-011": {
+    description:
+      "Celje bears three golden six-pointed stars on blue — the arms of the medieval Counts of Celje, the most " +
+      "powerful Slovene noble house. Those same three stars were later taken into the coat of arms of Slovenia " +
+      "itself, so the town flag carries a national emblem in its original setting. The flag is a yellow-and-blue " +
+      "bicolour with the stars centred.",
+    sources: [
+      { title: "Celje (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-011.html" },
+    ],
+  },
+
+  // ── Črnomelj — seat of the Municipality of Črnomelj, Slovenia ─────────────
+  "SI-017": {
+    description:
+      "Črnomelj shows a red castle tower — with a gateway, three windows in the upper storey and four " +
+      "crenellations — on a black shield edged red. The tower is taken directly from the town's own seal of " +
+      "1587. The flag is white and green with the arms in the centre.",
+    sources: [
+      { title: "Občina Črnomelj — Wikipedija", url: "https://sl.wikipedia.org/wiki/Ob%C4%8Dina_%C4%8Crnomelj" },
+    ],
+  },
+
+  // ── Domžale — seat of the Municipality of Domžale, Slovenia ───────────────
+  "SI-023": {
+    description:
+      "Domžale carries three interwoven golden ears of grain on blue. They commemorate the straw-plaiting and " +
+      "straw-hat industry — including Panama hats — on which the town's 19th-century prosperity was built; the " +
+      "ears evoke that heritage rather than depicting hats literally. The flag repeats the interwoven ears in " +
+      "yellow on blue.",
+    sources: [
+      { title: "Domžale (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-023.html" },
+    ],
+  },
+
+  // ── Jesenice — seat of the Municipality of Jesenice, Slovenia ─────────────
+  "SI-041": {
+    description:
+      "Jesenice shows a silver medieval iron mark on a cobalt-blue field. The blue stands for the river Sava, " +
+      "and the stylised iron sign recalls the town's centuries-old ironworking tradition; the same mark also " +
+      "reads as the letter 'J' for Jesenice. The flag is a silver field bearing the arms.",
+    sources: [
+      { title: "Jesenice (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-041.html" },
+    ],
+  },
+
+  // ── Kamnik — seat of the Municipality of Kamnik, Slovenia ─────────────────
+  "SI-043": {
+    description:
+      "Kamnik's arms echo a town seal of about 1277–1309: the crowned figure of Veronika of Kamnik — half " +
+      "woman, half serpent from local legend — set in a white embattled tower, flanked at its base by two green " +
+      "dragons, with a star and a crescent alongside. The flag is horizontally divided blue over white with the " +
+      "arms in the middle.",
+    sources: [
+      { title: "Kamnik (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-043.html" },
+    ],
+  },
+
+  // ── Kočevje — seat of the Municipality of Kočevje, Slovenia ───────────────
+  "SI-048": {
+    description:
+      "Kočevje's arms — granted by Emperor Frederick III in 1471 — show a fortified town behind a white " +
+      "palisade on blue, with the town's patron saint standing in red vestments and a golden halo, holding a " +
+      "book and the knife of his martyrdom. The design commemorates the town's medieval origins as a walled " +
+      "settlement. The flag is a blue-white-blue vertical triband with the arms on the white stripe.",
+    sources: [
+      { title: "Kočevje (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-048.html" },
+    ],
+  },
+
+  // ── Koper — seat of the City Municipality of Koper, Slovenia ──────────────
+  "SI-050": {
+    description:
+      "Koper shows a golden stylized sun — straight and wavy rays in shades of yellow — on a blue field. The " +
+      "sun is based on an old stone carving preserved in the town and is Koper's long-standing civic emblem; " +
+      "the current faceless design was adopted in 1997. The flag is the same blue field with the yellow sun " +
+      "centred.",
+    sources: [
+      { title: "Koper (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-050.html" },
+    ],
+  },
+
+  // ── Kranj — seat of the City Municipality of Kranj, Slovenia ──────────────
+  "SI-052": {
+    description:
+      "Kranj shows a red eagle with outstretched wings on a white (silver) field, based on the town seal of " +
+      "1530. The eagle recalls Kranj's standing as the historic centre of Carniola (Kranjska), the Slovene " +
+      "heartland province. The flag is white over burgundy-red with the arms across the divide.",
+    sources: [
+      { title: "Kranj (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-052.html" },
+    ],
+  },
+
+  // ── Ljubljana — capital of Slovenia and seat of its City Municipality ─────
+  "SI-061": {
+    description:
+      "Ljubljana shows a white city tower with black gate and windows, rising from three green mounds on red, " +
+      "with a green dragon sitting atop it. The dragon is the city's emblem, tied to the legend of Jason and the " +
+      "Argonauts slaying a marsh monster near the Ljubljana marshes. The flag is white and green — colours " +
+      "associated with Ljubljana since the 19th century — with the arms centred.",
+    sources: [
+      { title: "Ljubljana (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-061.html" },
+    ],
+  },
+
+  // ── Maribor — seat of the City Municipality of Maribor, Slovenia ──────────
+  "SI-070": {
+    description:
+      "Maribor's arms show a white fortified gateway with an open door and raised portcullis flanked by two " +
+      "guard towers on red, with a silver dove descending between them. The dove represents the Holy Spirit " +
+      "descending over the town; the design goes back to Maribor's 14th-century civic seal, and the red-and-" +
+      "silver scheme is read in heraldry as law, strength, courage, dignity and love. The flag is a white-and-" +
+      "red vertical bicolour with the arms centred.",
+    sources: [
+      { title: "Maribor (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-070.html" },
+    ],
+  },
+
+  // ── Novo Mesto — seat of the City Municipality of Novo Mesto, Slovenia ────
+  "SI-085": {
+    description:
+      "Novo Mesto's arms depict its founder, Archduke Rudolf IV of Habsburg — who granted the town its charter " +
+      "in 1365 — robed in red on a golden throne, holding a blue orb and a golden banner, in a silver shield. " +
+      "The figure records the town's foundation by the House of Habsburg. The flag is quartered yellow (with the " +
+      "arms) and red with a white diagonal band.",
+    sources: [
+      { title: "Novo Mesto (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-085.html" },
+    ],
+  },
+
+  // ── Postojna — seat of the Municipality of Postojna, Slovenia ─────────────
+  "SI-094": {
+    description:
+      "Postojna's arms, granted by Emperor Franz Joseph I in 1909, are party per fess blue and red bearing a " +
+      "silver eagle, with an olm (Proteus anguinus) in the base. The eagle stands for civic dignity and the " +
+      "blind cave-dwelling olm — the 'human fish' of the Postojna Cave — for the karst cave system the town is " +
+      "famous for. The flag is bordeaux-red with the emblem at the hoist.",
+    sources: [
+      { title: "Postojna (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-094.html" },
+    ],
+  },
+
+  // ── Puconci — seat of the Municipality of Puconci, Slovenia ───────────────
+  "SI-097": {
+    description:
+      "Puconci's shield stacks the region's two landscapes: a golden wheat ear on yellow for the flat, fertile " +
+      "Ravensko lowland, an orange sun over green hills for the rolling Goričko, and an apple on red for the " +
+      "area's traditional fruit-growing and friendship — 'where the lowlands and the hills shake hands'. The " +
+      "flag is a yellow-and-green vertical bicolour with the arms.",
+    sources: [
+      { title: "Puconci (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-097.html" },
+    ],
+  },
+
+  // ── Sevnica — seat of the Municipality of Sevnica, Slovenia ───────────────
+  "SI-110": {
+    description:
+      "Sevnica shows a linden tree rising from a green base on blue, with two skylarks on its lower branches, " +
+      "beneath a white mural crown. The lime/linden is a Slovene national tree and the larks come from local " +
+      "folk tradition; the mural crown marks the town's municipal status. The flag is white bordered green with " +
+      "the arms.",
+    sources: [
+      { title: "Sevnica (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-110.html" },
+    ],
+  },
+
+  // ── Šmarje pri Jelšah — seat of the Municipality, Slovenia ────────────────
+  "SI-124": {
+    description:
+      "The quartered arms of Šmarje pri Jelšah combine blue-and-white diagonal stripes with a pair of gold-and-" +
+      "blue ox-horns for the Gaisruck family, who held Jelše castle, and a black alder branch with green leaves — a canting pun on " +
+      "jelša ('alder'), the tree the place is named for. The flag repeats the blue-and-white diagonal with the " +
+      "arms centred.",
+    sources: [
+      { title: "Šmarje pri Jelšah (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-124.html" },
+    ],
+  },
+
+  // ── Trbovlje — seat of the Municipality of Trbovlje, Slovenia ─────────────
+  "SI-129": {
+    description:
+      "Trbovlje's emblem is pure mining town: a black miner's ore wagon on green (the valley) below two chimneys " +
+      "and a stylised ore heap against a blue sky, recording the coal-mining and heavy industry that built the " +
+      "town from 1850. The flag is a blue-black-green triband with the ore-heap symbol across the black stripe.",
+    sources: [
+      { title: "Trbovlje (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-129.html" },
+    ],
+  },
+
+  // ── Tržič — seat of the Municipality of Tržič, Slovenia ───────────────────
+  "SI-131": {
+    description:
+      "Tržič shows a silver masoned wall with four battlements and loopholes on blue. The white walls evoke the " +
+      "surrounding snowy mountains and skiing, the gateways stand for the town's hospitality, and the blue for " +
+      "height, depth and wisdom, at the confluence of the Mošenik and Bistrica streams. The flag is a blue-and-" +
+      "white embattled vertical division.",
+    sources: [
+      { title: "Tržič (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-131.html" },
+    ],
+  },
+
+  // ── Velenje — seat of the City Municipality of Velenje, Slovenia ──────────
+  "SI-133": {
+    description:
+      "Velenje's arms show a white skyscraper rising from embattled roofs — deliberately joining the old " +
+      "(medieval fortified walls) and the new (the modern planned town rebuilt around its coal-mining industry). " +
+      "The green-yellow-white palette is read as youth and optimism. The flag is a green-and-yellow vertical " +
+      "bicolour with the arms on the axis.",
+    sources: [
+      { title: "Velenje (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-133.html" },
+    ],
+  },
+
+  // ── Bistrica ob Sotli — seat of the Municipality, Slovenia ────────────────
+  "SI-149": {
+    description:
+      "Bistrica ob Sotli shows a golden crown topped by a blue eagle on a shield. The crown alludes to Kunšperk " +
+      "(historically Königsberg), the market village the municipality grew around, and the eagle to the nearby " +
+      "Orlica hills (Slovene orlica, 'eagle'). The blue flag carries the arms above a row of yellow squares for " +
+      "the municipality's villages, yellow and blue standing for earth and sky.",
+    sources: [
+      { title: "Bistrica ob Sotli (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-149.html" },
+    ],
+  },
+
+  // ── Braslovče — seat of the Municipality of Braslovče, Slovenia ───────────
+  "SI-151": {
+    description:
+      "Braslovče's quartered arms carry the letters H and S — for 'Heiliger Sebastian' (St Sebastian), whose " +
+      "brotherhood has existed in the town since 1545 — together with a sickle and an ox-yoke for the area's " +
+      "farming heritage. The red-and-white colours come from the Counts of Celje (Žovnek/Sanneck). The flag is " +
+      "quartered red and white with the arms centred.",
+    sources: [
+      { title: "Braslovče (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-151.html" },
+    ],
+  },
+
+  // ── Cerkvenjak — seat of the Municipality of Cerkvenjak, Slovenia ─────────
+  "SI-153": {
+    description:
+      "Cerkvenjak's diagonally divided shield shows the church of St Anthony with its surrounding buildings on " +
+      "blue below, and an apple and a bunch of grapes on green above. The church is a canting pun on the name " +
+      "(from cerkovnik, the church verger/sexton), while the fruit and vines mark the wine- and fruit-growing " +
+      "countryside. The flag is light blue with the arms centred.",
+    sources: [
+      { title: "Cerkvenjak (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-153.html" },
+    ],
+  },
+
+  // ── Grad — seat of the Municipality of Grad, Slovenia ─────────────────────
+  "SI-158": {
+    description:
+      "Grad shows a silver two-towered fort with a golden crown above and a golden Latin cross below, on blue " +
+      "over a green base. The fort is a canting pun on the name — grad means 'castle' — and refers to Grad " +
+      "Castle, the largest in Slovenia; the crown recalls the Széchy nobles who built it and the cross stands " +
+      "for faith. The flag is a green-yellow-green horizontal triband with the arms.",
+    sources: [
+      { title: "Grad (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-158.html" },
+    ],
+  },
+
+  // ── Zgornje Jezersko — seat of the Municipality of Jezersko, Slovenia ─────
+  "SI-163": {
+    description:
+      "Jezersko's arms bring together a sheep — the distinctive Jezersko-Solčava breed — the peaks of Kočna and " +
+      "Grintovec as seen from the valley, and the Čedca waterfall, the highest in Slovenia. The flag is a blue-" +
+      "white-green horizontal triband with the arms centred.",
+    sources: [
+      { title: "Jezersko (Slovenia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/si-163.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
