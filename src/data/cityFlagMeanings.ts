@@ -9707,6 +9707,120 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Nyköping — capital of Södermanland County, Sweden ─────────────────────
+  "SE-D": {
+    description:
+      "Nyköping flies a red tower on white, from the city's oldest seal of 1359. It depicts the Nyköping " +
+      "Fortress, begun in the 13th century, which became the strongest castle in Sweden.",
+    sources: [
+      { title: "Nyköping — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Nyk%C3%B6ping" },
+    ],
+  },
+
+  // ── Jönköping — capital of Jönköping County, Sweden ───────────────────────
+  "SE-F": {
+    description:
+      "Jönköping flies a silver castle over blue water on red — a device from the city's medieval seals (the " +
+      "oldest around 1370), for the fortress that was central to the town's history.",
+    sources: [
+      { title: "Jönköping — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/J%C3%B6nk%C3%B6ping" },
+    ],
+  },
+
+  // ── Malmö — capital of Skåne County, Sweden ───────────────────────────────
+  "SE-M": {
+    description:
+      "Malmö flies a red griffin's head crowned in gold — the griffin of Pomerania, granted to the city in " +
+      "1437 by the Danish King Eric of Pomerania. The griffin, with a lion's body and an eagle's head, was a " +
+      "sign of power and majesty.",
+    sources: [
+      { title: "Malmö — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Malm%C3%B6" },
+    ],
+  },
+
+  // ── Östersund — capital of Jämtland County, Sweden ────────────────────────
+  "SE-Z": {
+    description:
+      "Östersund flies a silver elk (moose) head on blue — the elk of the Jämtland forests around the city, a " +
+      "sign of strength.",
+    sources: [
+      { title: "Östersund — Wikipedia", url: "https://en.wikipedia.org/wiki/%C3%96stersund" },
+    ],
+  },
+
+  // ── Banská Bystrica — capital of the Banská Bystrica Region, Slovakia ──────
+  "SK-BC": {
+    description:
+      "Banská Bystrica's flag carries the red and white of the city arms, which date from the late 13th " +
+      "century and are thought to derive from the red-and-silver bars of the Árpád dynasty of Hungary.",
+    sources: [
+      { title: "Banská Bystrica — Heraldry of the World", url: "https://www.heraldry-wiki.com/heraldrywiki/index.php?title=Bansk%C3%A1_Bystrica" },
+    ],
+  },
+
+  // ── Bratislava — capital of the Bratislava Region & of Slovakia ───────────
+  "SK-BL": {
+    description:
+      "Bratislava's flag carries the white and red of the city arms — a silver three-towered fortress with a " +
+      "raised portcullis on red, granted by Sigismund of Luxembourg in 1436. Despite appearances it is a " +
+      "general image of a medieval town, not Bratislava Castle as is often supposed.",
+    sources: [
+      { title: "Coat of arms of Bratislava — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bratislava" },
+    ],
+  },
+
+  // ── Nitra — capital of the Nitra Region, Slovakia ─────────────────────────
+  "SK-NI": {
+    description:
+      "Nitra's flag carries the blue and white of the city arms, known from 15th-century seals: a figure " +
+      "bearing the double cross of Hungary. The arms are linked to St Ladislaus, the holy Hungarian king who " +
+      "by legend died at Nitra.",
+    sources: [
+      { title: "Nitra — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Nitra" },
+    ],
+  },
+
+  // ── Prešov — capital of the Prešov Region, Slovakia ───────────────────────
+  "SK-PV": {
+    description:
+      "Prešov's flag carries the red and white of the city arms. The oldest arms bore a strawberry — a pun on " +
+      "the city's Hungarian name Eperjes (eper, “strawberry”) — later joined by three roses.",
+    sources: [
+      { title: "Prešov — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Pre%C5%A1ov" },
+    ],
+  },
+
+  // ── Trnava — capital of the Trnava Region, Slovakia ───────────────────────
+  "SK-TA": {
+    description:
+      "Trnava flies a wheel, the city's emblem since the early 14th century. Its spokes form the Greek letters " +
+      "I and X for Jesus Christ — the wheel once bore the head of Jesus at its centre.",
+    sources: [
+      { title: "Trnava — Wikipedia", url: "https://en.wikipedia.org/wiki/Trnava" },
+    ],
+  },
+
+  // ── Trenčín — capital of the Trenčín Region, Slovakia ─────────────────────
+  "SK-TC": {
+    description:
+      "Trenčín's flag carries the red and white of the city arms, which since the 14th century show the Lamb " +
+      "of God (Agnus Dei) — the emblem of St John the Baptist, the city's patron saint.",
+    sources: [
+      { title: "Trenčín — Heraldry of the World", url: "https://www.heraldry-wiki.com/heraldrywiki/index.php?title=Tren%C4%8D%C3%ADn" },
+    ],
+  },
+
+  // ── Žilina — capital of the Žilina Region, Slovakia ───────────────────────
+  "SK-ZI": {
+    description:
+      "Žilina flies a golden double cross (cross of Lorraine) with roots below and two golden stars, on green. " +
+      "It is thought to derive from the emblem of Andrew III, the last king of the Árpád dynasty, who bore a " +
+      "double-armed cross with celestial bodies.",
+    sources: [
+      { title: "Žilina — Wikipedia", url: "https://en.wikipedia.org/wiki/%C5%BDilina" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
