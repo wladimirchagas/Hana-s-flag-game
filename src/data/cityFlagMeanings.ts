@@ -10143,6 +10143,43 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Santa Ana — capital of Santa Ana department, El Salvador ──────────────
+  "SV-SA": {
+    description:
+      "Santa Ana's arms (adopted 1964) picture two of the department's natural landmarks — Lake Coatepeque and " +
+      "the Ilamatepec (Santa Ana) volcano — surmounted by the number 44, which honours the '44 valientes " +
+      "santaneños', the local men of the 1894 Revolution of the 44 that overthrew the dictator Carlos Ezeta.",
+    sources: [
+      { title: "Escudo de Santa Ana (El Salvador) — Wikipedia", url: "https://es.wikipedia.org/wiki/Escudo_de_Santa_Ana_(El_Salvador)" },
+    ],
+  },
+
+  // ── Sonsonate — capital of Sonsonate department, El Salvador ──────────────
+  "SV-SO": {
+    description:
+      "Sonsonate's arms (created 1943) are dense with local history on a vermilion field that stands for the " +
+      "blood shed at the battles of Acaxual and Tacuxcalco between the indigenous people and the Spanish. Above, " +
+      "blue-and-white stripes echo the national flag and a torch stands for guidance and liberty; the Izalco " +
+      "volcano, the Pacific sea and coconut palms give the region's geography and crops; an arrow recalls the " +
+      "warrior Atonal who fought the conquistador Pedro de Alvarado, and a bust of Atonal anchors the base, " +
+      "flanked by indigenous warriors and Spanish conquistadors.",
+    sources: [
+      { title: "Escudo de Sonsonate — Wikipedia", url: "https://es.wikipedia.org/wiki/Escudo_de_Sonsonate" },
+    ],
+  },
+
+  // ── San Salvador — capital of El Salvador and its department ───────────────
+  "SV-SS": {
+    description:
+      "San Salvador's arms carry a diagonal white-and-blue banner — the colours of the old Central American " +
+      "federation, standing for loyalty and service to the capital's people — on a silver shield for purity and " +
+      "faith, wreathed by a crown of twenty laurels for triumph and rebirth. A ribbon bears the year 1834, when " +
+      "San Salvador was made capital of the Federal Republic of Central America.",
+    sources: [
+      { title: "Escudo de San Salvador — Wikipedia", url: "https://es.wikipedia.org/wiki/Escudo_de_San_Salvador" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
