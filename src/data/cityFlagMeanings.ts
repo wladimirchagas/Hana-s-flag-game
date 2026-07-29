@@ -10279,6 +10279,183 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Lutsk — capital of Volyn Oblast, Ukraine ──────────────────────────────
+  "UA-07": {
+    description:
+      "Lutsk's arms show Saint Nicholas in silver-and-gold episcopal robes, barefoot with a golden halo, holding a " +
+      "cross and an open book, on a red field. Red is the historical colour of Volhynia (courage and valour), and " +
+      "the design revives the city's own seals of 1565–1616.",
+    sources: [
+      { title: "Coat of arms of Lutsk — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Луцька" },
+    ],
+  },
+
+  // ── Dnipro — capital of Dnipropetrovsk Oblast, Ukraine ────────────────────
+  "UA-12": {
+    description:
+      "Dnipro's arms are built around the seal of the Kodak Palanka, the Cossack administrative district whose " +
+      "fortress once stood near the city. Adopted in 2001, it deliberately roots the modern city in its Cossack " +
+      "past rather than its imperial founding.",
+    sources: [
+      { title: "Dnipro — Wikipedia", url: "https://en.wikipedia.org/wiki/Dnipro" },
+    ],
+  },
+
+  // ── Zhytomyr — capital of Zhytomyr Oblast, Ukraine ────────────────────────
+  "UA-18": {
+    description:
+      "Zhytomyr's arms show a white fortress — an open gate below three crenellated towers — on blue. The " +
+      "fortification recalls the city's medieval role as a defensive stronghold. The current arms were adopted in " +
+      "1991.",
+    sources: [
+      { title: "Coat of arms of Zhytomyr — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Житомира" },
+    ],
+  },
+
+  // ── Ivano-Frankivsk — capital of Ivano-Frankivsk Oblast, Ukraine ──────────
+  "UA-26": {
+    description:
+      "Ivano-Frankivsk shows a silver city gate with golden doors and three towers on blue, with the Archangel " +
+      "Michael standing in the gateway, sword raised and shield in hand, as the city's heavenly protector. The " +
+      "gate goes back to the arms granted in 1663 to the fortress-town; the modern version dates from 1995.",
+    sources: [
+      { title: "Coat of arms of Ivano-Frankivsk — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Івано-Франківська" },
+    ],
+  },
+
+  // ── Kyiv — capital of Ukraine ─────────────────────────────────────────────
+  "UA-32": {
+    description:
+      "Kyiv bears the Archangel Michael — patron and defender of the city — in silver with a flaming sword and " +
+      "shield on a blue field. The image goes back to the seals of the grand princes of Kievan Rus'; it was " +
+      "restored as the city's arms in 1995 after the Soviet emblem was dropped.",
+    sources: [
+      { title: "Coat of arms of Kyiv — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kyiv" },
+    ],
+  },
+
+  // ── Simferopol — capital of the Autonomous Republic of Crimea, Ukraine ────
+  "UA-43": {
+    description:
+      "Simferopol's arms are split by a silver wavy band — the Salgir river — with a golden bee on blue above and " +
+      "a golden two-handled Greek cup on red below. The bee puns on the city's Greek name ('city of usefulness') " +
+      "and Potemkin's original beehive proposal, while the cup recalls the ancient settlement of Scythian Neapolis.",
+    sources: [
+      { title: "Coat of arms of Simferopol — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Сімферополя" },
+    ],
+  },
+
+  // ── Lviv — capital of Lviv Oblast, Ukraine ────────────────────────────────
+  "UA-46": {
+    description:
+      "Lviv shows a golden lion walking through the open gate of a stone wall with three towers, on blue — an " +
+      "emblem based on the city's mid-14th-century seal. The lion also puns on the city's name (from Lev, 'lion'), " +
+      "and the city long bore the Latin motto Semper fidelis ('always faithful').",
+    sources: [
+      { title: "Lviv — Wikipedia", url: "https://en.wikipedia.org/wiki/Lviv" },
+    ],
+  },
+
+  // ── Poltava — capital of Poltava Oblast, Ukraine ──────────────────────────
+  "UA-53": {
+    description:
+      "Poltava carries a golden bow with a downward-pointing arrow, ringed by four six-pointed golden stars, on a " +
+      "crimson field. The lowered arrow signals readiness to defend peaceful labour rather than to attack, and the " +
+      "four stars stand for the four points of the compass. Adopted 1993, it revives the Cossack-era arms.",
+    sources: [
+      { title: "Coat of arms of Poltava — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Полтави" },
+    ],
+  },
+
+  // ── Rivne — capital of Rivne Oblast, Ukraine ──────────────────────────────
+  "UA-56": {
+    description:
+      "Rivne shows a silver tower pierced by three gateways, standing on a green base against blue. The three gates " +
+      "signify the city's historic entrances from three directions; green stands for hope and abundance, blue for " +
+      "beauty. The design revives an arms recorded in 1796 and was readopted in 1990.",
+    sources: [
+      { title: "Coat of arms of Rivne — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Рівного" },
+    ],
+  },
+
+  // ── Sumy — capital of Sumy Oblast, Ukraine ────────────────────────────────
+  "UA-59": {
+    description:
+      "Sumy bears three black pouches (Ukrainian sumy) with golden buttons and red straps on a silver field — a " +
+      "canting emblem on the city's name, and a reference to the sacks carried by the Cossacks of the Sumy " +
+      "Regiment. The arms date from 1781 and were readopted in 1991.",
+    sources: [
+      { title: "Coat of arms of Sumy — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Сум" },
+    ],
+  },
+
+  // ── Ternopil — capital of Ternopil Oblast, Ukraine ────────────────────────
+  "UA-61": {
+    description:
+      "Ternopil shows a silver Old Castle (Staryi Zamok) with, above it, the Leliwa emblem — a golden six-pointed " +
+      "star over an upturned crescent — on blue. The Leliwa is the arms of the town's founder, Jan Tarnowski, and " +
+      "the castle recalls the fortress he raised in 1540. Adopted 1992.",
+    sources: [
+      { title: "Coat of arms of Ternopil — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Тернополя" },
+    ],
+  },
+
+  // ── Kharkiv — capital of Kharkiv Oblast, Ukraine ──────────────────────────
+  "UA-63": {
+    description:
+      "Kharkiv places a crossed caduceus (Mercury's staff) and cornucopia on a green shield — the caduceus for " +
+      "commerce and trade, the horn of plenty for agricultural abundance, together marking the city's historic " +
+      "economy. The design mirrors an 1878 version and was restored in 1995.",
+    sources: [
+      { title: "Coat of arms of Kharkiv — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kharkiv" },
+    ],
+  },
+
+  // ── Kherson — capital of Kherson Oblast, Ukraine ──────────────────────────
+  "UA-65": {
+    description:
+      "Kherson shows the golden gates of the Kherson Fortress above two crossed golden anchors — one commercial, " +
+      "one naval — on blue, marking the Black Sea port's trading and military maritime role; the year 1778 records " +
+      "its founding. Adopted 2005.",
+    sources: [
+      { title: "Coat of arms of Kherson — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Херсона" },
+    ],
+  },
+
+  // ── Cherkasy — capital of Cherkasy Oblast, Ukraine ────────────────────────
+  "UA-71": {
+    description:
+      "Cherkasy's divided shield shows a Cossack in red with a rifle on his shoulder, sabre and powder-horn at his " +
+      "belt, on blue above, and a silver galloping horse on red below. The Cossack marks the city's central place " +
+      "in the birth of Ukrainian Cossackdom; the horse (echoing the 1852 arms) stands for courage and speed. " +
+      "Adopted 1995.",
+    sources: [
+      { title: "Coat of arms of Cherkasy — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Черкас" },
+    ],
+  },
+
+  // ── Chernihiv — capital of Chernihiv Oblast, Ukraine ──────────────────────
+  "UA-74": {
+    description:
+      "Chernihiv bears a black crowned eagle holding a long golden cross on a silver field. The cross stands for " +
+      "the deep influence of Christianity in the city's long history, and the single (not double) eagle set it " +
+      "apart from Moscow's arms after 1672. Readopted 1992.",
+    sources: [
+      { title: "Coat of arms of Chernihiv — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Чернігова" },
+    ],
+  },
+
+  // ── Chernivtsi — capital of Chernivtsi Oblast, Ukraine ────────────────────
+  "UA-77": {
+    description:
+      "Chernivtsi shows an open silver fortified gateway, crenellated and studded with stones, on a red field, " +
+      "with the Ukrainian trident (tryzub) set in the opening and crossed laurel branches tied in blue-and-yellow " +
+      "below. The gate stands for the city, the stones for its enduring character.",
+    sources: [
+      { title: "Coat of arms of Chernivtsi — Wikipedia (uk)", url: "https://uk.wikipedia.org/wiki/Герб_Чернівців" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
