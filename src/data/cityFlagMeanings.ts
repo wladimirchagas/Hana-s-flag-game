@@ -4111,6 +4111,28 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "GB-JE": {
+    description:
+      "The parish flag of Saint Helier: two crossed gold axes on a blue field. The axes commemorate the " +
+      "beheading of Saint Helier — the patron saint of Jersey, from whom the parish and the island's capital " +
+      "take their name — by Saxon pirates in AD 555, and together with the blue field recall his martyrdom and " +
+      "his hermitage by the sea.",
+    sources: [
+      { title: "St Helier, Bailiwick of Jersey — Flags of the World", url: "https://www.crwflags.com/fotw/flags/je-xhe.html" },
+    ],
+  },
+
+  "GB-BM": {
+    description:
+      "The flag of the City of Hamilton, Bermuda: a banner of the city's coat of arms — a golden sailing ship " +
+      "(the Resolution) on a blue field, flanked by three cinquefoils (shown gold on the arms, white on the " +
+      "flag). The full shield is supported by a mermaid and a heraldic seahorse and carries the city's motto, " +
+      "'Hamilton sparsa collegit' ('Hamilton has assembled the scattered').",
+    sources: [
+      { title: "Hamilton, Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Hamilton,_Bermuda" },
+    ],
+  },
+
   "GR-B": {
     description:
       "The flag of Thessaloniki: divided vertically white and blue, with a golden disc at the centre bearing the " +
