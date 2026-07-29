@@ -9004,6 +9004,117 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Barnaul — capital of Altai Krai, Russia ───────────────────────────────
+  "RU-ALT": {
+    description:
+      "Barnaul's arms show a silver smelting furnace amid rocks on green. The city grew up around the " +
+      "Demidov (later imperial) silver-smelting works, and the furnace stands for that silver industry, the " +
+      "rocks for the ore of the Altai mountains.",
+    sources: [
+      { title: "Герб Барнаула — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%91%D0%B0%D1%80%D0%BD%D0%B0%D1%83%D0%BB%D0%B0" },
+    ],
+  },
+
+  // ── Blagoveshchensk — capital of Amur Oblast, Russia ──────────────────────
+  "RU-AMU": {
+    description:
+      "Blagoveshchensk's name means “Good News” — the Annunciation (Благовещение). Its flag, descended from " +
+      "the 1878 arms of the Amur Province, carries a silver band for the Amur river on whose bank the city " +
+      "stands, golden stars for that “Good News”, and green for the region's abundance and freedom.",
+    sources: [
+      { title: "Символика города Благовещенска — Благовещенская городская Дума (official)", url: "https://www.blagduma.ru/symbol" },
+    ],
+  },
+
+  // ── Astrakhan — capital of Astrakhan Oblast, Russia ───────────────────────
+  "RU-AST": {
+    description:
+      "Astrakhan flies a golden royal crown and a silver sword — once an eastern sabre — on blue, beneath the " +
+      "Astrakhan cap. The crown recalls the former statehood of the Astrakhan khanate, annexed to Russia in " +
+      "1556; the sabre guards that crown and the southern frontier, pointing to where the danger to Russia " +
+      "came from.",
+    sources: [
+      { title: "Герб Астрахани — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%90%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%B0%D0%BD%D0%B8" },
+    ],
+  },
+
+  // ── Belgorod — capital of Belgorod Oblast, Russia ─────────────────────────
+  "RU-BEL": {
+    description:
+      "Belgorod flies a golden lion beneath a silver eagle in flight, on blue. The device comes from the " +
+      "banner of the Belgorod Regiment that fought at the Battle of Poltava in 1709: the lion, for strength " +
+      "and courage, is Russia, and the eagle fleeing above it is Sweden — the Russian victory of Poltava.",
+    sources: [
+      { title: "Герб Белгорода — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0" },
+    ],
+  },
+
+  // ── Bryansk — capital of Bryansk Oblast, Russia ───────────────────────────
+  "RU-BRY": {
+    description:
+      "Bryansk's arms show a golden mortar on its carriage with pyramids of cannonballs, on red over green. " +
+      "They stand for the Bryansk Arsenal, which for two centuries cast the artillery of the Russian army.",
+    sources: [
+      { title: "Герб Брянска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Ivanovo — capital of Ivanovo Oblast, Russia ───────────────────────────
+  "RU-IVA": {
+    description:
+      "Ivanovo flies a young woman at a spinning wheel on blue — for the textile industry that made the city " +
+      "the “Russian Manchester” and the textile capital of the country.",
+    sources: [
+      { title: "Герб Иванова — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0" },
+    ],
+  },
+
+  // ── Petropavlovsk-Kamchatsky — capital of Kamchatka Krai, Russia ──────────
+  "RU-KAM": {
+    description:
+      "Petropavlovsk-Kamchatsky flies three fire-breathing volcanoes — the “home volcanoes” Koryaksky, " +
+      "Avachinsky and Kozelsky that overlook the city — above the blue of Avacha Bay, the great harbour on " +
+      "which the port was founded.",
+    sources: [
+      { title: "Герб Петропавловска-Камчатского — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0-%D0%9A%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE" },
+    ],
+  },
+
+  // ── Nalchik — capital of Kabardino-Balkaria, Russia ───────────────────────
+  "RU-KB": {
+    description:
+      "Nalchik flies a green horseshoe, points up, ringed by a blue fir wreath and enclosing a half-risen sun " +
+      "charged with the two-peaked Mount Elbrus. Nalchik means “little horseshoe”: the city sits in a " +
+      "half-ring of surrounding mountains, and the horseshoe also stands for protection and rebirth, the " +
+      "green for one of the greenest, most scenic cities of the North Caucasus.",
+    sources: [
+      { title: "Герб Нальчика — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9D%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Krasnodar — capital of Krasnodar Krai, Russia ─────────────────────────
+  "RU-KDA": {
+    description:
+      "Krasnodar's arms centre on a golden fortress beneath the Russian double-headed eagle, with the " +
+      "monogram of Catherine II and the mace and banners of the Black Sea Cossack Host. The fortress is " +
+      "Yekaterinodar, founded in 1793 on the Kuban land Catherine had granted the Cossacks — the city renamed " +
+      "Krasnodar in 1920.",
+    sources: [
+      { title: "Герб Краснодара — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D0%B0" },
+    ],
+  },
+
+  // ── Kemerovo — capital of Kemerovo Oblast, Russia ─────────────────────────
+  "RU-KEM": {
+    description:
+      "Kemerovo's arms place a chemical retort within a golden gearwheel and ears of wheat, on black and red " +
+      "— for the coal, the chemical industry and the mining of the Kuzbass, and the farming around it. The " +
+      "black stands for the region's coal.",
+    sources: [
+      { title: "Герб Кемерова — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%B2%D0%B0" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
