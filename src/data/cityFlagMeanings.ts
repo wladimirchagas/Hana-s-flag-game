@@ -10456,6 +10456,18 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Salto — capital of Salto department, Uruguay ──────────────────────────
+  "UY-SA": {
+    description:
+      "Salto's arms (approved 1927) are an oval divided in three: a rising golden sun over an anvil, hammer and " +
+      "bundle of rods on white — for industry and labour; the goddess Minerva on blue — for wisdom; and a " +
+      "waterfall on silver below — the great rapids ('salto') on the Uruguay River that give the city its name. " +
+      "Olive and oak branches frame the shield.",
+    sources: [
+      { title: "Escudo de Salto — Wikipedia", url: "https://es.wikipedia.org/wiki/Escudo_de_Salto" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
