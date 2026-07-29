@@ -9339,6 +9339,116 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Novosibirsk — capital of Novosibirsk Oblast, Russia ───────────────────
+  "RU-NVS": {
+    description:
+      "Novosibirsk's arms cross a blue band with silver waves — the river Ob — with a black-and-silver band " +
+      "for the Trans-Siberian Railway; at their meeting a golden bridge marks the structure around which the " +
+      "city grew. Two black sables, from the historic arms of Siberia, support the shield.",
+    sources: [
+      { title: "Герб Новосибирска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Omsk — capital of Omsk Oblast, Russia ─────────────────────────────────
+  "RU-OMS": {
+    description:
+      "Omsk flies part of a fortified brick line on silver, beneath the motto “This is the chief fortress”. It " +
+      "recalls Omsk's role as the principal stronghold of the Siberian defensive Line; the arms were confirmed " +
+      "by Catherine II in 1785.",
+    sources: [
+      { title: "Герб Омска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9E%D0%BC%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Orenburg — capital of Orenburg Oblast, Russia ─────────────────────────
+  "RU-ORE": {
+    description:
+      "Orenburg's golden field is split by a wavy blue band for the river Ural; above it the double-headed " +
+      "imperial eagle stands for state power and the city's service to the Fatherland, and below a blue St " +
+      "Andrew's cross for the city's loyalty. The arms were granted in 1782.",
+    sources: [
+      { title: "Герб Оренбурга — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D0%B0" },
+    ],
+  },
+
+  // ── Perm — capital of Perm Krai, Russia ───────────────────────────────────
+  "RU-PER": {
+    description:
+      "Perm flies a silver walking bear carrying a golden Gospel on its back, with a silver cross above, on " +
+      "red. The device comes from Perm's seal on Ivan the Terrible's Great State Seal of 1577: the bear stands " +
+      "for the old wildness of the land's people, and the cross and Gospel for their enlightenment through the " +
+      "Christian faith.",
+    sources: [
+      { title: "Герб Перми — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9F%D0%B5%D1%80%D0%BC%D0%B8" },
+    ],
+  },
+
+  // ── Penza — capital of Penza Oblast, Russia ───────────────────────────────
+  "RU-PNZ": {
+    description:
+      "Penza flies three golden sheaves — of wheat, barley and millet — on golden earth in a green field, for " +
+      "the rich farming of the Penza land. The device was taken from the emblem of the Penza Regiment.",
+    sources: [
+      { title: "Герб Пензы — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9F%D0%B5%D0%BD%D0%B7%D1%8B" },
+    ],
+  },
+
+  // ── Vladivostok — capital of Primorsky Krai, Russia ───────────────────────
+  "RU-PRI": {
+    description:
+      "Vladivostok flies a golden Ussuri tiger climbing a silver rocky slope on green — the tiger for valour " +
+      "and courage, its upward climb for the city's continuous growth, and the green for the forest wealth of " +
+      "the Primorye.",
+    sources: [
+      { title: "Герб Владивостока — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Pskov — capital of Pskov Oblast, Russia ───────────────────────────────
+  "RU-PSK": {
+    description:
+      "Pskov flies a golden leopard (bars) on blue, blessed by a hand that emerges from a cloud above. The " +
+      "leopard stands for the Pskovians' readiness to meet any foe fully armed, and their courage; the " +
+      "blessing hand for the protection of heaven. The arms were settled in 1781.",
+    sources: [
+      { title: "Герб Пскова — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9F%D1%81%D0%BA%D0%BE%D0%B2%D0%B0" },
+    ],
+  },
+
+  // ── Rostov-on-Don — capital of Rostov Oblast, Russia ──────────────────────
+  "RU-ROS": {
+    description:
+      "Rostov-on-Don's arms carry a fortress tower and a trophy of arms, recalling the city's founding as the " +
+      "fortress of St Dmitry of Rostov in 1749, raised to guard the frontier against the raids of nomad " +
+      "peoples.",
+    sources: [
+      { title: "Герб Ростова-на-Дону — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D0%B0-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83" },
+    ],
+  },
+
+  // ── Ryazan — capital of Ryazan Oblast, Russia ─────────────────────────────
+  "RU-RYA": {
+    description:
+      "Ryazan flies a standing prince in a red cloak, green cap and boots, a silver sword in one hand and its " +
+      "scabbard in the other — the collective image of Ryazan's warriors and their commander (popularly Grand " +
+      "Prince Oleg Ivanovich), guardians of a long-embattled frontier land.",
+    sources: [
+      { title: "Герб Рязани — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D0%B8" },
+    ],
+  },
+
+  // ── Yakutsk — capital of the Sakha Republic (Yakutia), Russia ─────────────
+  "RU-SA": {
+    description:
+      "Yakutsk flies a black eagle in flight, one wing raised and one lowered, holding a red sable in its " +
+      "claws, on silver. The eagle stands for power and foresight, the sable for the fur-wealth of the Yakut " +
+      "land, and the silver field for the purity of the region.",
+    sources: [
+      { title: "Герб Якутска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
