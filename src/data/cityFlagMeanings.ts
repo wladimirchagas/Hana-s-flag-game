@@ -9115,6 +9115,120 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Kaliningrad — capital of Kaliningrad Oblast, Russia ───────────────────
+  "RU-KGD": {
+    description:
+      "Kaliningrad flies a silver single-masted ship — a Petrine-era koch flying a St Andrew's pennant — above " +
+      "a wavy band of twelve golden bezants on blue. The ship stands for the maritime history of old " +
+      "Königsberg, and the twelve golden discs for amber, marking Kaliningrad as the heart of the amber land.",
+    sources: [
+      { title: "Герб Калининграда — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B0" },
+    ],
+  },
+
+  // ── Kurgan — capital of Kurgan Oblast, Russia ─────────────────────────────
+  "RU-KGN": {
+    description:
+      "Kurgan flies a green field with two silver kurgans — the ancient burial mounds that stand by the city " +
+      "and give it its name (kurgan means “burial mound”). The arms were granted in 1785; the green stands for " +
+      "fertility and life.",
+    sources: [
+      { title: "Герб Кургана — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+  // ── Khabarovsk — capital of Khabarovsk Krai, Russia ───────────────────────
+  "RU-KHA": {
+    description:
+      "Khabarovsk's shield is upheld by a white-breasted bear and an Amur tiger — the beasts endemic to the " +
+      "Amur land and the city's guardians (the tiger for valour, the bear for strength and foresight). A " +
+      "forked cross marks the city's site where the Ussuri flows into the Amur, and a fish its people's chief " +
+      "trade of fishing.",
+    sources: [
+      { title: "Герб Хабаровска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Khanty-Mansiysk — capital of Khanty-Mansi Autonomous Okrug, Russia ────
+  "RU-KHM": {
+    description:
+      "Khanty-Mansiysk flies a white Siberian crane (sterkh) with outspread wings for the city's purity and " +
+      "unique setting; three emerald firs shaped like chum-tents against a golden hemisphere for the taiga " +
+      "that surrounds it; and three snowflakes for the long northern winter.",
+    sources: [
+      { title: "Герб Ханты-Мансийска — bankgorodov.ru", url: "https://bankgorodov.ru/place/hanti-mansiisk/gerb" },
+    ],
+  },
+
+  // ── Kirov — capital of Kirov Oblast, Russia ───────────────────────────────
+  "RU-KIR": {
+    description:
+      "Kirov flies a golden field with a hand emerging from a cloud, drawing a bow and arrow, and a red cross " +
+      "above. From the old arms of Vyatka, the bow-armed hand stands for the Vyatchane's tactic of swift, " +
+      "small raiding parties; the red cross added later gives the hand-from-the-cloud the sense of divine " +
+      "providence.",
+    sources: [
+      { title: "Герб Кирова — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%B0_(%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C)" },
+    ],
+  },
+
+  // ── Abakan — capital of Khakassia, Russia ─────────────────────────────────
+  "RU-KK": {
+    description:
+      "Abakan's shield is split blue and green: the blue for the sky and the Yenisei, bearing three golden " +
+      "ancient stone idols that recall Abakan's unrivalled collection of prehistoric stelae; the green for the " +
+      "surrounding steppe; and over them a golden zharok (globe-flower) for the “ever-blooming city”.",
+    sources: [
+      { title: "Герб Абакана — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%90%D0%B1%D0%B0%D0%BA%D0%B0%D0%BD%D0%B0" },
+    ],
+  },
+
+  // ── Elista — capital of Kalmykia, Russia ──────────────────────────────────
+  "RU-KL": {
+    description:
+      "Elista flies a white lotus — in Buddhist Kalmykia the symbol of spiritual purity, rebirth and " +
+      "prosperity. Its five upper petals stand for the five continents and its four lower petals for the four " +
+      "points of the compass, together expressing the Kalmyk people's openness to the world.",
+    sources: [
+      { title: "Герб Элисты — Геральдикум", url: "https://www.heraldicum.ru/russia/subjects/towns/elista.htm" },
+    ],
+  },
+
+  // ── Kaluga — capital of Kaluga Oblast, Russia ─────────────────────────────
+  "RU-KLU": {
+    description:
+      "Kaluga flies a wavy silver band for the Oka river, crowned by the Imperial crown, on blue — arms " +
+      "granted by Catherine II in 1777, the crown marking the city's rank as seat of a governorship. A Sputnik " +
+      "and the motto “Cradle of Cosmonautics” were later added for Konstantin Tsiolkovsky, who lived and " +
+      "worked in Kaluga.",
+    sources: [
+      { title: "Герб Калуги — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D0%B0%D0%BB%D1%83%D0%B3%D0%B8" },
+    ],
+  },
+
+  // ── Syktyvkar — capital of the Komi Republic, Russia ──────────────────────
+  "RU-KO": {
+    description:
+      "Syktyvkar flies a golden bear lying in its den on blue — from the historic arms of Ust-Sysolsk, a " +
+      "“symbol of foresight and strength” chosen for the bears that once filled the surrounding forests. In " +
+      "the modern arms the bear is the city's talisman and the guardian of its traditions, framed by Komi " +
+      "ornament.",
+    sources: [
+      { title: "Герб Сыктывкара — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A1%D1%8B%D0%BA%D1%82%D1%8B%D0%B2%D0%BA%D0%B0%D1%80%D0%B0" },
+    ],
+  },
+
+  // ── Kostroma — capital of Kostroma Oblast, Russia ─────────────────────────
+  "RU-KOS": {
+    description:
+      "Kostroma flies a golden galley with furled sails and ten oarsmen, flying the Imperial standard, on " +
+      "blue. It commemorates Empress Catherine II's voyage down the Volga in 1767 aboard a galley built for " +
+      "the journey, during which she visited Kostroma.",
+    sources: [
+      { title: "Герб Костромы — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%D1%8B" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
