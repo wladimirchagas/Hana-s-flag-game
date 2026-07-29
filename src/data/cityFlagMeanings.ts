@@ -9229,6 +9229,116 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Petrozavodsk — capital of the Republic of Karelia, Russia ─────────────
+  "RU-KR": {
+    description:
+      "Petrozavodsk's arms show three iron hammers on a field striped green and gold, “in token of the " +
+      "abundance of ores and the many ironworks of the region”; above, a hand from a cloud holds a shield " +
+      "with four chained cannonballs, for the frontier town's constant need of defence. Petrozavodsk — " +
+      "“Peter's ironworks” — was founded by Peter the Great.",
+    sources: [
+      { title: "Герб Петрозаводска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Kursk — capital of Kursk Oblast, Russia ───────────────────────────────
+  "RU-KRS": {
+    description:
+      "Kursk flies a silver field with a blue diagonal band bearing three flying partridges — first recorded " +
+      "in the banner-armorial of 1730, for the partridges that once abounded in the Kursk lands.",
+    sources: [
+      { title: "Герб Курска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Krasnoyarsk — capital of Krasnoyarsk Krai, Russia ─────────────────────
+  "RU-KYA": {
+    description:
+      "Krasnoyarsk flies a red shield with a golden lion holding a golden spade in one paw and a golden sickle " +
+      "in the other — the lion for might and courage, the spade for the region's mining wealth and the sickle " +
+      "for its agriculture.",
+    sources: [
+      { title: "Герб Красноярска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%8F%D1%80%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Gatchina — seat of Leningrad Oblast, Russia ───────────────────────────
+  "RU-LEN": {
+    description:
+      "Gatchina's arms carry the imperial monogram of Paul I — placed there as a mark of the emperor's " +
+      "special favour, Gatchina being his residence — on the breast of a double-headed eagle, over a Maltese " +
+      "star (Paul was Grand Master of the Order of Malta). The eagle stands for power and foresight.",
+    sources: [
+      { title: "Герб Гатчины — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%93%D0%B0%D1%82%D1%87%D0%B8%D0%BD%D1%8B" },
+    ],
+  },
+
+  // ── Lipetsk — capital of Lipetsk Oblast, Russia ───────────────────────────
+  "RU-LIP": {
+    description:
+      "Lipetsk flies a great emerald linden tree on gold — a canting device for the city's name, from lipa, " +
+      "the linden. In heraldry the linden stands for cordiality and goodwill, and for life itself.",
+    sources: [
+      { title: "Герб Липецка — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9B%D0%B8%D0%BF%D0%B5%D1%86%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Magadan — capital of Magadan Oblast, Russia ───────────────────────────
+  "RU-MAG": {
+    description:
+      "Magadan flies a golden deer leaping across a red field above two golden stars — the deer for the " +
+      "region's two great industries, gold mining and reindeer herding. The wavy base marks Magadan as the " +
+      "sea gateway to Kolyma.",
+    sources: [
+      { title: "Герб Магадана — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B3%D0%B0%D0%B4%D0%B0%D0%BD" },
+    ],
+  },
+
+  // ── Yoshkar-Ola — capital of the Mari El Republic, Russia ─────────────────
+  "RU-ME": {
+    description:
+      "Yoshkar-Ola flies a silver elk with golden antlers and hooves on blue, crowned with Mari national " +
+      "ornament. The elk — “king of the Mari forests” — stands for nobility and strength and for the rich " +
+      "woods and meadows around the city; the first arms, with a cow elk, were granted by Catherine II in " +
+      "1781.",
+    sources: [
+      { title: "Герб Йошкар-Олы — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%99%D0%BE%D1%88%D0%BA%D0%B0%D1%80-%D0%9E%D0%BB%D1%8B" },
+    ],
+  },
+
+  // ── Saransk — capital of the Republic of Mordovia, Russia ─────────────────
+  "RU-MO": {
+    description:
+      "Saransk flies a red fox running beneath three arrows on silver — recalling the old local trade of " +
+      "hunting fur-bearing game. The fox stands for shrewdness and foresight, the red for courage, the silver " +
+      "for wisdom and peace.",
+    sources: [
+      { title: "Герб Саранска — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D0%B0" },
+    ],
+  },
+
+  // ── Naryan-Mar — capital of the Nenets Autonomous Okrug, Russia ───────────
+  "RU-NEN": {
+    description:
+      "Naryan-Mar flies a silver reindeer head on red, over a blue base with two silver fish — the reindeer " +
+      "head for the Nenets' chief occupation of reindeer herding, the fish and water for their fishing. White " +
+      "stands for purity, blue for the waters, red for courage.",
+    sources: [
+      { title: "Герб Нарьян-Мара — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9D%D0%B0%D1%80%D1%8C%D1%8F%D0%BD-%D0%9C%D0%B0%D1%80%D0%B0" },
+    ],
+  },
+
+  // ── Nizhny Novgorod — capital of Nizhny Novgorod Oblast, Russia ───────────
+  "RU-NIZ": {
+    description:
+      "Nizhny Novgorod flies a red deer walking on silver — for majesty, wisdom and nobility. Its antlers " +
+      "came to be read as the two rivers, the Volga and the Oka, that meet at the city, and their tines as its " +
+      "districts.",
+    sources: [
+      { title: "Герб Нижнего Новгорода — Wikipedia (ru)", url: "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B5%D0%B3%D0%BE_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
