@@ -3337,6 +3337,171 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "CV": {
+    description:
+      "A blue field with a band of white-red-white across the lower third and a ring of ten yellow stars over the " +
+      "hoist. Blue is the sea and sky the islands sit in, the white and red stripes the road of peace and the " +
+      "work of building the nation, and the ten stars the ten main islands of the archipelago — set in a circle " +
+      "for unity. Adopted 1992.",
+    sources: [
+      { title: "Flag of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
+    ],
+  },
+
+  "CY": {
+    description:
+      "A white field with a copper-orange silhouette of the island above two green olive branches. The map is " +
+      "coloured copper for the ore the island is rich in — the name Cyprus comes from copper — and the olive " +
+      "branches stand for peace between its Greek and Turkish communities. Deliberately neutral, avoiding the " +
+      "blue and red of Greece and Türkiye. Adopted 1960.",
+    sources: [
+      { title: "Flag of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+    ],
+  },
+
+  "CZ": {
+    description:
+      "White over red with a blue triangle at the hoist. White and red are the historic colours of Bohemia (white " +
+      "for Bohemia, red for Moravia and the blood shed for the state’s freedom); the blue triangle was added in " +
+      "1920 to tell the flag apart from Poland’s, and now stands for the country’s sovereignty.",
+    sources: [
+      { title: "Flag of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Czech_Republic" },
+    ],
+  },
+
+  "DE": {
+    description:
+      "A horizontal tricolour of black, red and gold — the colours of Germany’s 19th-century movement for liberty " +
+      "and unity. They were linked to the black-red-gold uniforms of the Lützow Free Corps in the Napoleonic wars " +
+      "and to the 1848 revolution, and are read as the path “out of the darkness of servitude, through bloody " +
+      "battles, to the golden light of freedom”.",
+    sources: [
+      { title: "Flag of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Germany" },
+    ],
+  },
+
+  "DJ": {
+    description:
+      "Light-blue and green bands with a white triangle at the hoist bearing a red star. Blue is the sea and sky " +
+      "and stands for the Issa (Somali) people, green the earth and the Afar people, white is peace, and the red " +
+      "star is national unity. Adopted at independence in 1977.",
+    sources: [
+      { title: "Flag of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+    ],
+  },
+
+  "DK": {
+    description:
+      "The Dannebrog: a white Nordic cross on red. The cross is Christian, and the flag is often called the " +
+      "oldest national flag in continuous use, recorded on Danish royal banners since the 14th century.",
+    myths: [
+      {
+        claim: "The Dannebrog fell from the sky during the Battle of Lyndanisse in Estonia in 1219, winning the " +
+          "battle for King Valdemar II.",
+        reality:
+          "That is a cherished legend, first written down centuries later; contemporary accounts of 1219 mention " +
+          "no such flag. The white-cross-on-red is documented on Danish banners only from the 14th century.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
+    ],
+  },
+
+  "DM": {
+    description:
+      "A green field (the island’s lush forests) crossed by a three-colour cross of yellow, black and white — the " +
+      "cross for the Christian faith, its colours for sunshine and the first Kalinago people (yellow), the fertile " +
+      "soil and African heritage (black), and pure water and rivers (white). At the centre a red disc of justice " +
+      "carries the endemic Sisserou parrot, the national bird, ringed by ten green stars for the ten parishes.",
+    sources: [
+      { title: "Flag of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+    ],
+  },
+
+  "DO": {
+    description:
+      "A white cross dividing the flag into blue and red quarters, with the national arms at the centre. Blue " +
+      "stands for liberty and God’s protection, red for the blood of the heroes of independence, and the white " +
+      "cross for faith and the salvation of the people. The arms show a Bible open to John 8:32 above a cross, " +
+      "under the motto Dios, Patria, Libertad (“God, Homeland, Liberty”).",
+    sources: [
+      { title: "Flag of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
+    ],
+  },
+
+  "DZ": {
+    description:
+      "Green and white halves with a red crescent and star at the centre. Green stands for Islam and paradise and " +
+      "white for purity and peace, while the red crescent and star — the emblem of Islam — also carry the blood " +
+      "of those who died for independence. Adopted 1962.",
+    sources: [
+      { title: "Flag of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+    ],
+  },
+
+  "EC": {
+    description:
+      "Yellow over blue over red, the yellow band doubled in width, with the coat of arms at the centre. Yellow is " +
+      "the fertile soil and the crops and riches of the land, blue the sea and the sky, and red the blood of the " +
+      "heroes who died for the homeland. The colours come from Francisco de Miranda’s flag, shared with Colombia " +
+      "and Venezuela from the days of Gran Colombia.",
+    sources: [
+      { title: "Flag of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
+    ],
+  },
+
+  "EE": {
+    description:
+      "A tricolour of blue, black and white (sinimustvalge). Popularly, blue is the sky, the sea and the lakes and " +
+      "the people’s loyalty; black the soil of the homeland and the hardships of the past; and white the snow, the " +
+      "birch, purity and the striving for enlightenment and freedom. The colours were first used by an Estonian " +
+      "student society in 1881.",
+    sources: [
+      { title: "Flag of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
+    ],
+  },
+
+  "EG": {
+    description:
+      "Red, white and black bands — the Arab Liberation colours of the 1952 revolution — with the golden Eagle of " +
+      "Saladin on the white. Red is the struggle against colonial rule, white the purity of Egyptian hearts (and " +
+      "the bloodless 1952 revolution), and black the overcoming of oppression; the eagle is Egypt’s national " +
+      "emblem.",
+    sources: [
+      { title: "Flag of Egypt — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
+    ],
+  },
+
+  "ER": {
+    description:
+      "A red triangle based on the hoist — its shape echoing the country — set between a green triangle above and " +
+      "a blue one below, with a gold olive branch and wreath on the red. Red is the blood shed in the long " +
+      "independence struggle, green the land’s agriculture, and blue the bounty of the sea; the wreath’s thirty " +
+      "leaves mark the thirty years of that struggle. Adopted 1995.",
+    sources: [
+      { title: "Flag of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
+    ],
+  },
+
+  "ES": {
+    description:
+      "Red, yellow, red horizontal bands with the yellow band doubled in width and the coat of arms toward the " +
+      "hoist. King Charles III chose the red and yellow in 1785 for a naval ensign that would stand out at sea " +
+      "and not be confused with other flags; the colours also echo the arms of the old Spanish kingdoms.",
+    myths: [
+      {
+        claim: "The red and yellow stand for the blood of bullfights and the sand of the arena (“blood and sand”).",
+        reality:
+          "A romantic later story. The colours were picked in 1785 purely so the naval flag would be highly " +
+          "visible against the sea and sky and distinct from other nations’ ensigns.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
