@@ -3039,6 +3039,157 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "BE": {
+    description:
+      "A vertical tricolour of black, yellow and red. The colours come from the arms of the medieval Duchy of " +
+      "Brabant — a gold (yellow) lion with red claws and tongue on a black field — and were raised in the 1830 " +
+      "revolution that won Belgium its independence. (The colours run red-yellow-black in the constitution; the " +
+      "flag places black at the hoist.)",
+    sources: [
+      { title: "Flag of Belgium — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
+    ],
+  },
+
+  "BF": {
+    description:
+      "A red band over a green band with a yellow five-pointed star at the centre — the pan-African colours. Red " +
+      "stands for the 1983–84 revolution that brought the flag in, green for the country’s farmland and natural " +
+      "riches, and the gold star for the revolution as a guiding light. Adopted 1984 under Thomas Sankara, when " +
+      "Upper Volta was renamed Burkina Faso.",
+    sources: [
+      { title: "Flag of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
+    ],
+  },
+
+  "BG": {
+    description:
+      "A horizontal tricolour of white, green and red. The flag descends from the pan-Slavic tricolour (white, " +
+      "blue and red) adopted in the 19th-century National Revival, with green put in place of the blue. The " +
+      "colours carry no single official meaning; they are popularly read as peace (white), the country’s fertile " +
+      "land and forests (green), and the valour and blood of those who fought for freedom (red).",
+    sources: [
+      { title: "Flag of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+      { title: "Национално знаме на България — Уикипедия", url: "https://bg.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%BE_%D0%B7%D0%BD%D0%B0%D0%BC%D0%B5_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F" },
+    ],
+  },
+
+  "BH": {
+    description:
+      "A white band at the hoist and a red field, divided by a serrated line of five white points. Red is the " +
+      "traditional colour of the Gulf and the blood of martyrs; white recalls the 19th-century maritime truces " +
+      "with Britain that marked Bahraini ships as peaceful; and the five points stand for the Five Pillars of " +
+      "Islam (reduced from eight in 2002).",
+    sources: [
+      { title: "Flag of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    ],
+  },
+
+  "BI": {
+    description:
+      "A white saltire dividing the field into red (top and bottom) and green (sides), with a white disc bearing " +
+      "three red six-pointed stars. White is peace, green the hope of development, and red the suffering of the " +
+      "struggle for independence; the three stars stand for the national motto — Unité, Travail, Progrès (unity, " +
+      "work, progress) — and for the three peoples of Burundi: the Hutu, Tutsi and Twa.",
+    sources: [
+      { title: "Flag of Burundi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+    ],
+  },
+
+  "BJ": {
+    description:
+      "A green vertical band at the hoist beside horizontal bands of yellow over red — the pan-African colours. " +
+      "Green is the hope of renewal, yellow the treasures and savannah of the nation, and red the courage of the " +
+      "ancestors. Adopted at independence in 1959 and restored in 1990 after the Marxist period.",
+    sources: [
+      { title: "Flag of Benin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    ],
+  },
+
+  "BM": {
+    description:
+      "A British Red Ensign defaced with Bermuda’s coat of arms: a red lion holding a shield that shows the ship " +
+      "Sea Venture wrecking on the island’s reefs in 1609 — the shipwreck that led to Bermuda’s settlement — " +
+      "under the motto Quo Fata Ferunt (“whither the fates carry [us]”).",
+    sources: [
+      { title: "Flag of Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bermuda" },
+    ],
+  },
+
+  "BN": {
+    description:
+      "A yellow field crossed by black and white diagonal stripes, with the red state crest at the centre. Yellow " +
+      "is the colour of the Sultan; the two stripes stand for Brunei’s chief ministers (white for the Pengiran " +
+      "Bendahara, black for the Pengiran Pemancha). The crest gathers a royal parasol, upraised hands for the " +
+      "government’s care of the people, and a crescent for Islam, with the Arabic motto “Always render service " +
+      "with God’s guidance”.",
+    sources: [
+      { title: "Flag of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
+    ],
+  },
+
+  "BO": {
+    description:
+      "A horizontal tricolour of red, yellow and green with the national coat of arms on the centre band (the " +
+      "state flag; the plain tricolour is the civil flag). By an 1888 decree, red is the blood the country’s " +
+      "heroes shed, yellow its mineral and natural wealth, and green the fertility of its land and the value of " +
+      "hope. (The indigenous wiphala is a separate, co-official national flag.)",
+    sources: [
+      { title: "Flag of Bolivia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
+    ],
+  },
+
+  "BR": {
+    description:
+      "A green field with a yellow rhombus framing a blue globe of stars and the banner Ordem e Progresso (“order " +
+      "and progress”). The 27 stars show the sky over Rio de Janeiro at the moment the republic was proclaimed on " +
+      "15 November 1889, one per state; the motto comes from Auguste Comte’s Positivist philosophy.",
+    myths: [
+      {
+        claim: "The green stands for Brazil’s forests and the yellow for its gold.",
+        reality:
+          "This meaning was attached only after 1889. On the original imperial flag the green was the dynastic " +
+          "colour of Emperor Pedro I’s House of Braganza and the yellow that of his wife’s House of Habsburg; the " +
+          "republic kept the colours but re-explained them as forest and gold to obscure the monarchical origin.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
+    ],
+  },
+
+  "BS": {
+    description:
+      "Aquamarine bands top and bottom with a gold band between, and a black triangle at the hoist. The aquamarine " +
+      "is the sea around the islands, the gold the sun and the land, and the black triangle the vigour and " +
+      "strength of the Bahamian people — its point aimed at the resources of land and sea they are determined to " +
+      "develop. Adopted at independence in 1973.",
+    sources: [
+      { title: "Flag of the Bahamas — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Bahamas" },
+    ],
+  },
+
+  "BT": {
+    description:
+      "A field divided diagonally, yellow over orange, with a white dragon along the divide holding jewels in its " +
+      "claws. Yellow is the King’s temporal authority, orange the Buddhist spiritual tradition, and the white " +
+      "dragon (Druk) the purity that unites Bhutan’s peoples — the country’s own name is Druk Yul, “Land of the " +
+      "Thunder Dragon”. The jewels stand for the nation’s wealth and the security of its people.",
+    sources: [
+      { title: "Flag of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+    ],
+  },
+
+  "BW": {
+    description:
+      "A light-blue field crossed by a black stripe edged in white. In this dry country blue is water and rain — " +
+      "so prized that “Pula” (rain) is the national motto and the currency’s name — while the black-and-white " +
+      "stripe stands for harmony between the races and echoes the stripes of the zebra, Botswana’s national " +
+      "animal. Adopted at independence in 1966.",
+    sources: [
+      { title: "Flag of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
