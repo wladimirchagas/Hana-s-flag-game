@@ -10810,6 +10810,85 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Lansing — capital of Michigan, USA ────────────────────────────────────
+  "US-MI": {
+    description:
+      "Lansing flies its seal on white: the Michigan State Capitol dome — half black-on-white, half " +
+      "white-on-black, for the diversity of the community — against a purple sky (the city's emotional warmth) " +
+      "with an orange sun for hope and opportunity, green trees for its neighbourhoods, and the Grand River in " +
+      "white for a commitment to the environment. Adopted 1994.",
+    sources: [
+      { title: "Lansing, Michigan — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-milan.html" },
+    ],
+  },
+
+  // ── Jefferson City — capital of Missouri, USA ─────────────────────────────
+  "US-MO": {
+    description:
+      "Jefferson City flies a red-white-blue flag with the Missouri State Capitol dome and a star for its role " +
+      "as state capital, two undulating white stripes for the city's railroad tracks and bridges, and waves for " +
+      "the Missouri River. The colours echo the Missouri and US flags. Adopted 2025.",
+    sources: [
+      { title: "Jefferson City, Missouri — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-mojef.html" },
+    ],
+  },
+
+  // ── Helena — capital of Montana, USA ──────────────────────────────────────
+  "US-MT": {
+    description:
+      "Helena flies a blue flag with a white disc bearing a black fire-watchtower and the motto 'Guardian of the " +
+      "Gulch' over 1881. The tower — built after the young gold-rush town's devastating fires — is Helena's " +
+      "emblem of survival and pride; 'the Gulch' is Last Chance Gulch, where gold was struck in 1864, and 1881 " +
+      "marks the city's incorporation.",
+    sources: [
+      { title: "Helena, Montana — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-mthel.html" },
+    ],
+  },
+
+  // ── Columbia — capital of South Carolina, USA ─────────────────────────────
+  "US-SC": {
+    description:
+      "Columbia's flag (2020) is a deep-blue field crossed by a diagonal sweep of lighter blue and white for the " +
+      "Saluda and Broad rivers that meet at the city to form the Congaree, with a six-pointed star in the canton " +
+      "for the state capital and for the city's resilience after it was burned in 1865.",
+    sources: [
+      { title: "Columbia, South Carolina — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-sccol.html" },
+    ],
+  },
+
+  // ── Austin — capital of Texas, USA ────────────────────────────────────────
+  "US-TX": {
+    description:
+      "Austin flies a white flag with a shield in red-white-red (echoing the Texas and US flags), a crest taken " +
+      "from the arms of Stephen F. Austin — the 'Father of Texas' the city is named for — and an ancient oil " +
+      "lamp for knowledge, a nod to the University of Texas, with the State Capitol dome behind. Adopted 1919.",
+    sources: [
+      { title: "Austin, Texas — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-txaus.html" },
+    ],
+  },
+
+  // ── Olympia — capital of Washington, USA ──────────────────────────────────
+  "US-WA": {
+    description:
+      "Olympia flies a white flag bearing an oval view of the Washington State Capitol against the snow-capped " +
+      "Olympic Mountains above the waters of Puget Sound — the setting of the state capital at the Sound's " +
+      "southern end — with 'City of Olympia' alongside. Adopted 1988.",
+    sources: [
+      { title: "Olympia, Washington — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-waoly.html" },
+    ],
+  },
+
+  // ── Baton Rouge — capital of Louisiana, USA ───────────────────────────────
+  "US-LA": {
+    description:
+      "Baton Rouge flies a crimson flag — for the 'Rouge' in its name — with the city name in white script and a " +
+      "shield of the three powers whose flags once flew over it: a fleur-de-lis for France and a castle tower " +
+      "for Spain above, and a Union Jack (St George's and St Andrew's crosses) for Britain below. Adopted 1995.",
+    sources: [
+      { title: "Baton Rouge, Louisiana — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-la-br.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
