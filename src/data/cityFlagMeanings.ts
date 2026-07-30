@@ -11005,6 +11005,120 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Little Rock — capital of Arkansas, USA ────────────────────────────────
+  "US-AR": {
+    description:
+      "Little Rock flies a white flag with a blue and a green stripe crossing in a gold-edged Scandinavian cross " +
+      "and the city seal at the crossing. Blue is the Arkansas River that borders the city, green its fields, " +
+      "parks and forests, gold its economic promise, and white optimism; the seal shows a rock mound — 'la petite " +
+      "roche', the little rock the city is named for. Adopted 1988.",
+    sources: [
+      { title: "Little Rock, Arkansas — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ar-lr.html" },
+    ],
+  },
+
+  // ── Concord — capital of New Hampshire, USA ───────────────────────────────
+  "US-NH": {
+    description:
+      "Concord flies a blue-white-blue vertical triband bearing a red Concord Coach — the famous stagecoach first " +
+      "built in the city in 1827 by Downing and Abbott, which carried travellers across the American West. Blue is " +
+      "New Hampshire's state colour. Adopted 1979.",
+    sources: [
+      { title: "Concord, New Hampshire — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-nhccd.html" },
+    ],
+  },
+
+  // ── Bismarck — capital of North Dakota, USA ───────────────────────────────
+  "US-ND": {
+    description:
+      "Bismarck flies white and red stripes with a gold border and, at the hoist, a blue disc holding a white " +
+      "star ringed by gold wheat — the star for Bismarck as capital of an agricultural state, the wheat for its " +
+      "farming. A ribbon across the flag stands for Interstate 94 running through North Dakota. Adopted 1986.",
+    sources: [
+      { title: "Bismarck, North Dakota — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ndbis.html" },
+    ],
+  },
+
+  // ── Pierre — capital of South Dakota, USA ─────────────────────────────────
+  "US-SD": {
+    description:
+      "Pierre flies the city seal on white: a scene of early Pierre with a Missouri River steamboat and a steam " +
+      "locomotive for the 'growing mechanization of the West', wheat sheaves and grasslands for the farming " +
+      "economy, and a sunset over the hills for Pierre as the 'gateway to the West'. Incorporated 1883; the seal " +
+      "was coloured and made into a flag in 1989.",
+    sources: [
+      { title: "Pierre, South Dakota — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-sdpie.html" },
+    ],
+  },
+
+  // ── Juneau — capital of Alaska, USA ───────────────────────────────────────
+  "US-AK": {
+    description:
+      "Juneau flies a light-blue flag with green mountain-and-tree silhouettes for its far-northern, mountainous " +
+      "setting, a gold star for its capital status and its gold-mining past, and a wavy dark-blue bar for the " +
+      "Pacific waters the city sits on, labelled 'Alaska's Capital City'. Adopted 1983.",
+    sources: [
+      { title: "Juneau, Alaska — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ak-ju.html" },
+    ],
+  },
+
+  // ── Boise — capital of Idaho, USA ─────────────────────────────────────────
+  "US-ID": {
+    description:
+      "Boise flies a blue flag with the city logo: the Idaho State Capitol dome for the capital, flanked by trees " +
+      "for the city's motto 'City of Trees' — a nod to its name, from the French 'les bois', 'the woods'. Adopted " +
+      "2001.",
+    sources: [
+      { title: "Boise, Idaho — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-idboi.html" },
+    ],
+  },
+
+  // ── Montpelier — capital of Vermont, USA ──────────────────────────────────
+  "US-VT": {
+    description:
+      "Montpelier's flag (2017) shows a navy sky over rolling green hills with a circle of fourteen golden stars " +
+      "— for Vermont's fourteen counties and its place as the fourteenth state — the ring also echoing the " +
+      "golden dome of the Vermont State House.",
+    sources: [
+      { title: "Montpelier, Vermont — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-vtmpr.html" },
+    ],
+  },
+
+  // ── Dover — capital of Delaware, USA ──────────────────────────────────────
+  "US-DE": {
+    description:
+      "Dover flies a white flag with a gold diamond holding the city seal, whose trefoil (three-lobed leaf) " +
+      "stands for the three places tied to the city: Kent County (William Penn's arms), the state of Delaware " +
+      "(its seal), and Dover in England (St Martin on horseback), which gave the city its name. A ribbon reads " +
+      "'Capital of the First State' — Delaware being first to ratify the Constitution. Adopted 1972.",
+    sources: [
+      { title: "Dover, Delaware — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-de-dv.html" },
+    ],
+  },
+
+  // ── Springfield — capital of Illinois, USA ────────────────────────────────
+  "US-IL": {
+    description:
+      "Springfield flies a dark-blue flag with a large red star (bordered white) ringed by twenty white stars. " +
+      "The twenty stars are the states in the Union before Illinois joined, and the central red star is " +
+      "Springfield, capital of Illinois — the 21st state. Designed for a 1916 contest conceived by the poet " +
+      "Vachel Lindsay.",
+    sources: [
+      { title: "Springfield, Illinois — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-il-sp.html" },
+    ],
+  },
+
+  // ── Augusta — capital of Maine, USA ───────────────────────────────────────
+  "US-ME": {
+    description:
+      "Augusta flies a flag divided diagonally blue over green, with the city seal in the centre: an Abenaki " +
+      "figure in a canoe looking to Fort Western (established 1754) and the State House, which marks Augusta's " +
+      "role as Maine's capital. Adopted 1961.",
+    sources: [
+      { title: "Augusta, Maine — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-me-au.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
