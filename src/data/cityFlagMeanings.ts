@@ -10723,6 +10723,19 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── San Juan — capital of Puerto Rico, USA ────────────────────────────────
+  "US-PR": {
+    description:
+      "San Juan's flag bears the city's coat of arms — granted by the Catholic Monarchs in 1511, among the oldest " +
+      "in the Americas: a silver Lamb of God (Agnus Dei) holding a red banner and resting on a book, standing on a " +
+      "green island for Puerto Rico, with the letters F and I on either side for King Ferdinand and Queen " +
+      "Isabella. The lamb is Saint John the Baptist, the city's patron and the source of its name (San Juan " +
+      "Bautista). Adopted on its orange field in 1948.",
+    sources: [
+      { title: "Bandera de San Juan (Puerto Rico) — Wikipedia", url: "https://es.wikipedia.org/wiki/Bandera_de_San_Juan_(Puerto_Rico)" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
