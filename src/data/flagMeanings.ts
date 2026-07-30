@@ -3799,6 +3799,151 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "IT": {
+    description:
+      "A vertical tricolour of green, white and red, first flown by an Italian republic in 1797 and inspired by " +
+      "the French flag, with green put in place of blue. It became the banner of Italian unity in the 19th " +
+      "century; the colours are popularly read as hope and the land (green), faith and the Alpine snow (white), " +
+      "and the blood shed in the wars of independence (red).",
+    sources: [
+      { title: "Flag of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
+    ],
+  },
+
+  "JM": {
+    description:
+      "A gold saltire dividing the flag into green triangles top and bottom and black triangles at the sides. " +
+      "Gold is the sunshine and the country’s wealth, green the land and its farming and hope, and black the " +
+      "strength and creativity of the people. It is the only national flag that uses none of red, white or blue. " +
+      "Adopted 1962.",
+    sources: [
+      { title: "Flag of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+    ],
+  },
+
+  "JO": {
+    description:
+      "Black, white and green bands with a red chevron at the hoist bearing a white seven-pointed star — the " +
+      "colours of the 1916 Arab Revolt. Black recalls the Abbasid caliphate, white the Umayyad, green the " +
+      "Fatimid; the red chevron is the Hashemite dynasty that led the Revolt, and the star’s seven points the " +
+      "seven verses of the opening chapter (Al-Fatiha) of the Quran.",
+    sources: [
+      { title: "Flag of Jordan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+    ],
+  },
+
+  "JP": {
+    description:
+      "The Hinomaru — a red disc on white. The disc is the sun, tied to the sun goddess Amaterasu and to Japan’s " +
+      "old name, the “Land of the Rising Sun”; the white field stands for honesty and purity.",
+    sources: [
+      { title: "Flag of Japan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Japan" },
+    ],
+  },
+
+  "KE": {
+    description:
+      "Black, red and green bands parted by thin white stripes, with a Maasai shield and two crossed spears at " +
+      "the centre. Black is the people, red the blood shed for independence, green the land, and the white the " +
+      "peace between them; the shield and spears stand for the defence of freedom. Adopted 1963.",
+    sources: [
+      { title: "Flag of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
+    ],
+  },
+
+  "KG": {
+    description:
+      "A red field with a golden sun of forty rays, and at its centre the tündük — the crossed roof-opening of a " +
+      "yurt seen from below. Red is bravery, alluding to the banner of the hero Manas; the forty rays are the " +
+      "forty Kyrgyz tribes Manas united; and the tündük stands for the family hearth, home and the unity of the " +
+      "nation.",
+    sources: [
+      { title: "Flag of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    ],
+  },
+
+  "KH": {
+    description:
+      "Blue bands around a double-width red one, with a white image of Angkor Wat at the centre. Blue is the king " +
+      "and royalty, red the nation, and the great temple of Angkor Wat stands for the country’s heritage, its " +
+      "religion, and justice. One of the few flags to depict a building.",
+    sources: [
+      { title: "Flag of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+    ],
+  },
+
+  "KM": {
+    description:
+      "Four stripes — yellow, white, red, blue — with a green triangle at the hoist bearing a white crescent and " +
+      "four stars. The four stripes and four stars each stand for the archipelago’s four islands (Mohéli, " +
+      "Mayotte, Anjouan and Grande Comore), and the green with its crescent and stars for Islam. Adopted 2001.",
+    sources: [
+      { title: "Flag of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    ],
+  },
+
+  "KN": {
+    description:
+      "A green triangle and a red triangle split by a black diagonal band edged in yellow and bearing two white " +
+      "stars. Green is the fertile land, red the struggle against slavery and colonialism, black the people’s " +
+      "African heritage, and yellow the year-round sunshine; the two stars are the two islands, and hope and " +
+      "liberty. Adopted at independence in 1983.",
+    sources: [
+      { title: "Flag of Saint Kitts and Nevis — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
+    ],
+  },
+
+  "KP": {
+    description:
+      "A broad red band edged with thin white and blue stripes, and a red star in a white disc toward the hoist. " +
+      "Red stands for revolutionary traditions and the blood of patriots, the star for communism and revolution, " +
+      "white for purity and one people, and blue for sovereignty, peace and friendship. Adopted 1948.",
+    sources: [
+      { title: "Flag of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
+    ],
+  },
+
+  "KR": {
+    description:
+      "The Taegukgi — a white field with a red-and-blue taeguk circle and four black trigrams. White is peace and " +
+      "purity; the taeguk is the balance of yin (blue) and yang (red); and the four trigrams are heaven, earth, " +
+      "fire and water, standing together for the seasons, the directions and the harmony of opposites.",
+    sources: [
+      { title: "Flag of South Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
+    ],
+  },
+
+  "KW": {
+    description:
+      "Green, white and red bands with a black trapezoid at the hoist — the pan-Arab colours, read through a " +
+      "classical Arab verse: green the fertile land, white pure deeds, red the blood on the warriors’ swords, and " +
+      "black the defeat of the nation’s enemies. Adopted 1961.",
+    sources: [
+      { title: "Flag of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
+    ],
+  },
+
+  "KZ": {
+    description:
+      "A sky-blue field with a golden sun above a golden steppe eagle, and a national ornament running up the " +
+      "hoist. Blue is the endless sky and the unity and well-being of the Turkic peoples, the sun (its rays " +
+      "shaped like grain) is abundance, and the soaring eagle is freedom, power and the flight to the future. " +
+      "Adopted 1992.",
+    sources: [
+      { title: "Flag of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+    ],
+  },
+
+  "LA": {
+    description:
+      "Red bands around a double-width blue one, with a white disc at the centre. Red is the blood shed for " +
+      "independence on both banks of the Mekong, blue the Mekong river and the nation’s prosperity, and the white " +
+      "disc the full moon over the river and the unity of the Lao people. Adopted 1975.",
+    sources: [
+      { title: "Flag of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
