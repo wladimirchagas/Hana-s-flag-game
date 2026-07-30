@@ -3649,6 +3649,156 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "GT": {
+    description:
+      "Sky-blue and white vertical bands (blue, white, blue) with the national arms on the white. The blue stands " +
+      "for justice, loyalty and the two oceans that border Central America, and the white for purity and peace. " +
+      "The arms centre on the resplendent quetzal — the national bird, an emblem of liberty — with a scroll dated " +
+      "15 September 1821 (Central American independence), crossed rifles and swords for the will to defend the " +
+      "country, and a laurel wreath for victory.",
+    sources: [
+      { title: "Flag of Guatemala — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
+    ],
+  },
+
+  "GW": {
+    description:
+      "A red band at the hoist bearing a black star, with yellow over green in the fly — the pan-African colours. " +
+      "Red is the blood of the independence war, yellow the sun and the fruits of labour, and green the country’s " +
+      "forests and its hope; the black star stands for the people of Africa and the PAIGC that led the country to " +
+      "freedom. Adopted 1973.",
+    sources: [
+      { title: "Flag of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    ],
+  },
+
+  "GY": {
+    description:
+      "“The Golden Arrowhead”: a green field crossed by a long gold arrow, with a red triangle edged black at the " +
+      "hoist. Green is the forests and farmland, gold the mineral wealth the arrow points the way to, red the " +
+      "people’s zeal and drive, black their endurance, and the white borders the country’s many rivers. Adopted " +
+      "at independence in 1966.",
+    sources: [
+      { title: "Flag of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
+    ],
+  },
+
+  "HN": {
+    description:
+      "Two blue bands around a white one, with five blue stars set in an X on the white. The blue bands are the " +
+      "Pacific and the Caribbean (and the sky), the white the land between them and the people’s peace; the five " +
+      "stars are the five nations of the old Federal Republic of Central America, with the hope they might one " +
+      "day reunite.",
+    sources: [
+      { title: "Flag of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
+    ],
+  },
+
+  "HR": {
+    description:
+      "Red, white and blue bands — the pan-Slavic colours, drawn from the flags of the old kingdoms of Croatia, " +
+      "Slavonia and Dalmatia — with the Croatian arms at the centre: the red-and-white checkerboard (šahovnica) " +
+      "beneath a crown of five small shields for the historic lands of Croatia, Dubrovnik, Dalmatia, Istria and " +
+      "Slavonia. Adopted 1990.",
+    sources: [
+      { title: "Flag of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    ],
+  },
+
+  "HT": {
+    description:
+      "Blue over red, with the national arms on a white panel at the centre. When the flag was made in 1803 the " +
+      "white was torn from the French tricolour to reject colonial rule, leaving blue for Haiti’s Black citizens " +
+      "and red for those of mixed descent, united. The arms show a royal palm crowned with a cap of liberty over " +
+      "a trophy of weapons and the motto L’Union Fait la Force (“unity makes strength”).",
+    sources: [
+      { title: "Flag of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+    ],
+  },
+
+  "HU": {
+    description:
+      "A horizontal tricolour of red, white and green, with roots in medieval Hungarian heraldry and the 1848 " +
+      "revolution. The constitution reads the colours as strength (red), fidelity (white) and hope (green); an " +
+      "older reading gives red for the blood shed for the nation, white for freedom, and green for the land.",
+    sources: [
+      { title: "Flag of Hungary — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hungary" },
+    ],
+  },
+
+  "ID": {
+    description:
+      "Red over white — Sang Saka Merah-Putih, “the sacred red-and-white”. Red is courage and white purity, and by " +
+      "an older reading red is the body and white the soul, together a whole human being. The colours go back to " +
+      "the banners of the medieval Majapahit empire. Hoisted at independence in 1945.",
+    sources: [
+      { title: "Flag of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Indonesia" },
+    ],
+  },
+
+  "IE": {
+    description:
+      "A vertical tricolour of green, white and orange. Green stands for the Gaelic and Catholic-nationalist " +
+      "tradition, orange for the Protestant tradition of the followers of William of Orange, and the white " +
+      "between them for a lasting peace between the two — the flag’s hoped-for union of both traditions on the " +
+      "island.",
+    sources: [
+      { title: "Flag of Ireland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
+    ],
+  },
+
+  "IL": {
+    description:
+      "A white field with two blue stripes and a blue Star of David at the centre. The stripes recall the tallit, " +
+      "the Jewish prayer shawl with its blue bands, and the Star of David (Magen David) is a long-standing emblem " +
+      "of the Jewish people, adopted by the Zionist movement. Adopted 1948.",
+    sources: [
+      { title: "Flag of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
+    ],
+  },
+
+  "IN": {
+    description:
+      "The Tiranga: saffron, white and green bands with the navy-blue Ashoka Chakra at the centre. In the " +
+      "official reading saffron is courage and renunciation, white the light and the path of truth, and green the " +
+      "bond with the soil and its growth; the 24-spoke Chakra is the wheel of dharma (law and righteousness), " +
+      "turning to show that “there is death in stagnation and life in movement”. Adopted 1947.",
+    sources: [
+      { title: "Flag of India — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_India" },
+    ],
+  },
+
+  "IQ": {
+    description:
+      "Red, white and black bands — the Arab Liberation colours — with the Takbir, “Allahu Akbar” (“God is " +
+      "greatest”), in green Kufic script on the white. The red, white and black are the shared pan-Arab colours; " +
+      "the green inscription was kept from the earlier flag. Adopted in this form in 2008.",
+    sources: [
+      { title: "Flag of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    ],
+  },
+
+  "IR": {
+    description:
+      "Green, white and red bands with the red national emblem at the centre and the Takbir repeated along the " +
+      "inner edges. Green stands for Islam and growth, white for peace, and red for courage and martyrdom; the " +
+      "emblem is a stylised form of the word Allah, and the phrase “Allahu Akbar” is written 22 times — for the " +
+      "22nd of Bahman, the day the 1979 revolution triumphed.",
+    sources: [
+      { title: "Flag of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+    ],
+  },
+
+  "IS": {
+    description:
+      "A blue field with a white-bordered red Nordic cross. Blue is the island’s mountains and the surrounding " +
+      "ocean, white its snow and ice, and red its volcanic fire; the cross ties Iceland to the other Nordic " +
+      "countries. Adopted 1915 and confirmed at the founding of the republic in 1944.",
+    sources: [
+      { title: "Flag of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
