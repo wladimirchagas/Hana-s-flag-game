@@ -3502,6 +3502,153 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "ET": {
+    description:
+      "Green, yellow and red bands with a blue disc bearing a golden star and rays. Green stands for labour and " +
+      "development, yellow for hope and peace, and red for the strength and blood spent defending the country; " +
+      "the star on the blue disc is national unity and the equal rays the equality of all Ethiopia’s peoples. " +
+      "Never colonised, Ethiopia is the source of the pan-African colours other nations later took up in homage.",
+    sources: [
+      { title: "Flag of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+    ],
+  },
+
+  "FI": {
+    description:
+      "A blue Nordic cross on white. The blue is the country’s thousands of lakes and its skies, the white the " +
+      "snow that covers the land in winter; the cross ties Finland to the other Nordic countries. Adopted 1918.",
+    sources: [
+      { title: "Flag of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
+    ],
+  },
+
+  "FJ": {
+    description:
+      "A light-blue field with the Union Jack in the canton and the shield of Fiji’s arms in the fly. The bright " +
+      "blue is the Pacific Ocean central to island life; the Union Jack recalls British rule; and the shield — a " +
+      "British lion, sugar cane, a coconut palm, bananas and a dove of peace — shows the islands’ produce and " +
+      "hopes. Adopted 1970.",
+    sources: [
+      { title: "Flag of Fiji — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
+    ],
+  },
+
+  "FM": {
+    description:
+      "A light-blue field with four white stars set as a diamond. The blue is the Pacific Ocean, and the four " +
+      "stars — arranged like the points of the compass — are the federation’s four states: Yap, Chuuk, Pohnpei " +
+      "and Kosrae. Adopted 1978.",
+    sources: [
+      { title: "Flag of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
+    ],
+  },
+
+  "FR": {
+    description:
+      "The Tricolore — vertical bands of blue, white and red. Blue and red are the old colours of Paris and white " +
+      "the colour of the monarchy, joined at the 1789 Revolution to stand for the union of the king and the " +
+      "people; the three are also read for the Republic’s motto, liberté, égalité, fraternité.",
+    sources: [
+      { title: "Flag of France — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_France" },
+    ],
+  },
+
+  "GA": {
+    description:
+      "A horizontal tricolour of green, yellow and blue. Green is the country’s vast forests, yellow the equator " +
+      "that crosses it and the sun, and blue the Atlantic and its long coast. Adopted at independence in 1960.",
+    sources: [
+      { title: "Flag of Gabon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
+    ],
+  },
+
+  "GB": {
+    description:
+      "The Union Jack, made by overlaying three crosses: the red cross of St George for England, the white " +
+      "diagonal cross of St Andrew for Scotland (on blue), and the red diagonal cross of St Patrick for Ireland. " +
+      "England and Scotland were joined in 1606 and Ireland added in 1801. Wales has no element of its own, having " +
+      "been treated as part of England when the flag was first made.",
+    sources: [
+      { title: "Union Jack — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_Jack" },
+    ],
+  },
+
+  "GD": {
+    description:
+      "A red border set with six yellow stars, framing green and yellow triangles, with a seventh star on a red " +
+      "disc at the centre and a nutmeg at the hoist. Red is courage and vitality, yellow the sun and wisdom, " +
+      "green the land and farming; the seven stars are Grenada’s seven parishes, and the nutmeg marks the “Isle " +
+      "of Spice”, a leading grower of the spice. Adopted 1974.",
+    sources: [
+      { title: "Flag of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    ],
+  },
+
+  "GE": {
+    description:
+      "The Five Cross Flag: a large red St George’s cross on white with a small red Bolnisi cross in each corner. " +
+      "The crosses are Christian — read as the Five Holy Wounds, or Christ with the four Evangelists — and revive " +
+      "the banner of the medieval Kingdom of Georgia. Restored as the national flag in 2004.",
+    sources: [
+      { title: "Flag of Georgia (country) — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Georgia_(country)" },
+    ],
+  },
+
+  "GH": {
+    description:
+      "Red, gold and green bands with a black star at the centre. Red is the blood of those who died for " +
+      "independence, gold the country’s mineral wealth (it was the “Gold Coast”), and green its forests. The " +
+      "black star — the “Black Star of Africa”, from Marcus Garvey’s Black Star Line — stands for African freedom " +
+      "and unity. The first African flag after Ethiopia’s to use the pan-African colours. Adopted 1957.",
+    sources: [
+      { title: "Flag of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ghana" },
+    ],
+  },
+
+  "GM": {
+    description:
+      "Red, blue and green bands parted by thin white stripes. Blue is the River Gambia that runs the length of " +
+      "the country and gives it its name, red the sun and the savanna, and green the land and its farms and " +
+      "forests; the white stripes stand for unity and peace. Adopted at independence in 1965.",
+    sources: [
+      { title: "Flag of the Gambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Gambia" },
+    ],
+  },
+
+  "GN": {
+    description:
+      "A vertical tricolour of red, yellow and green — the pan-African colours. Red is the blood of the martyrs " +
+      "and the people’s labour, yellow the sun and the country’s gold, and green its vegetation; the three also " +
+      "stand for the motto Travail, Justice, Solidarité (work, justice, solidarity). Adopted at independence in " +
+      "1958.",
+    sources: [
+      { title: "Flag of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
+    ],
+  },
+
+  "GQ": {
+    description:
+      "Green, white and red bands with a blue triangle at the hoist and the national arms on the white. Green is " +
+      "the country’s vegetation, white peace, red the blood shed for independence, and the blue triangle the sea " +
+      "that links the mainland to its islands. The arms show a silk-cotton (God) tree — under which the first " +
+      "treaty with Spain is said to have been signed — and six stars for the mainland and five islands, over the " +
+      "motto Unidad, Paz, Justicia. Independence 1968.",
+    sources: [
+      { title: "Flag of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
+    ],
+  },
+
+  "GR": {
+    description:
+      "Nine blue and white stripes with a white cross on a blue canton. The blue and white are the sky and the " +
+      "sea, and the cross stands for the Greek Orthodox faith. The nine stripes are popularly linked to the nine " +
+      "syllables of the rallying cry Eleftheria i Thanatos (“Freedom or Death”), though that reading is " +
+      "traditional rather than official.",
+    sources: [
+      { title: "Flag of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
