@@ -397,7 +397,6 @@ US-NY  # Albany (New York): en.wikipedia Albany,_New_York gives only the design 
 US-OK  # Oklahoma City (Oklahoma): en.wikipedia Oklahoma_City carries the city-flag image only (the dedicated Flag_of_Oklahoma_City page 404s), with no reachable authoritative per-element symbolism.
 US-OR  # Salem (Oregon): en.wikipedia Salem,_Oregon carries the city-flag image only, with no flag/symbols section and no reachable authoritative per-element symbolism.
 US-PA  # Harrisburg (Pennsylvania): en.wikipedia Harrisburg,_Pennsylvania carries the city-flag image only, with no flag/symbols section and no reachable authoritative per-element symbolism.
-US-PR  # San Juan (Puerto Rico): en.wikipedia San_Juan,_Puerto_Rico carries the flag and coat-of-arms images only, with no flag/symbols section (the dedicated Flag_of and Coat_of_arms_of pages 404), and no other authoritative per-element symbolism is reachable.
 US-RI  # Providence (Rhode Island): en.wikipedia Providence,_Rhode_Island carries the city-flag image only (the dedicated Flag_of_Providence page 404s), with no reachable authoritative per-element symbolism.
 US-SC  # Columbia (South Carolina): en.wikipedia Columbia,_South_Carolina carries the city-flag image only, with no flag/symbols section and no reachable authoritative per-element symbolism.
 US-SD  # Pierre (South Dakota): en.wikipedia Pierre,_South_Dakota carries the city-flag image only, with no flag/symbols section and no reachable authoritative per-element symbolism.
