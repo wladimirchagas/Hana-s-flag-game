@@ -10574,10 +10574,11 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
   // ── Denver — capital of Colorado, USA ─────────────────────────────────────
   "US-CO": {
     description:
-      "Denver's flag is a landscape in the abstract: a yellow sun on a blue sky above a white zigzag of " +
-      "snow-capped peaks, over a red field. Yellow is Colorado's gold, red the 'colored' earth the state is " +
-      "named for, and the central sun marks Denver's place at the heart of the state; the zigzag honours " +
-      "Colorado's Native American heritage. Designed by a schoolgirl, Margaret Overbeck, and adopted 1926.",
+      "Denver's flag is a landscape in the abstract: a yellow disc on a blue field above a white zigzag of " +
+      "snow-capped peaks, over a red field. The yellow disc is the gold in Colorado's hills, red the 'colored' " +
+      "earth the state is named for, and the disc's central position marks Denver's place within the state; the " +
+      "zigzag honours Colorado's Native American heritage. Designed by a schoolgirl, Margaret Overbeck, and " +
+      "adopted 1926.",
     sources: [
       { title: "Flag of Denver — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Denver" },
     ],
@@ -10625,6 +10626,100 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       "at the hoist. Adopted 1974.",
     sources: [
       { title: "Flag of Des Moines, Iowa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Des_Moines,_Iowa" },
+    ],
+  },
+
+  // ── Indianapolis — capital of Indiana, USA ────────────────────────────────
+  "US-IN": {
+    description:
+      "Indianapolis flies a white star in a red circle on dark blue, with a white ring from which four white " +
+      "stripes run out to the edges. The star is the Soldiers' and Sailors' Monument and the city's rank as state " +
+      "capital, the ring is Monument Circle at the city's heart, and the four stripes are the four arms of " +
+      "Meridian and Market Streets running north, south, east and west; red is the drive for progress. Adopted " +
+      "1963.",
+    sources: [
+      { title: "Flag of Indianapolis — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Indianapolis" },
+    ],
+  },
+
+  // ── Boston — capital of Massachusetts, USA ────────────────────────────────
+  "US-MA": {
+    description:
+      "Boston flies its city seal on a 'Continental blue' field. The seal, framed by the Latin motto 'Sicut " +
+      "patribus, sit Deus nobis' — 'As with our fathers, may God be with us' — shows a view of the city; the " +
+      "city's fuller standard adds the trimountain, the three original hills Boston was built on, on its reverse. " +
+      "Adopted 1917.",
+    sources: [
+      { title: "Flag of Boston — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Boston" },
+    ],
+  },
+
+  // ── Annapolis — capital of Maryland, USA ──────────────────────────────────
+  "US-MD": {
+    description:
+      "Annapolis's flag is modelled on the personal badge of Queen Anne, for whom the city is named: a crown " +
+      "above a thistle (Scotland) and a rose (England) growing from a single stem, for the 1707 union of the two " +
+      "kingdoms in her reign. The city's motto translates 'I have lived free and will die so'. Adopted 1965.",
+    sources: [
+      { title: "Annapolis, Maryland — Wikipedia", url: "https://en.wikipedia.org/wiki/Annapolis,_Maryland" },
+    ],
+  },
+
+  // ── Columbus — capital of Ohio, USA ───────────────────────────────────────
+  "US-OH": {
+    description:
+      "Columbus flies a yellow-white-red vertical triband — the colours of Spain, which funded Christopher " +
+      "Columbus's voyages — with the city seal on a blue disc. The seal carries a ship of Columbus's fleet, an " +
+      "eagle, the Ohio Statehouse dome for the capital, seventeen stars (Ohio was the 17th state) and buckeye " +
+      "leaves for the state tree. Adopted 1929.",
+    sources: [
+      { title: "Flag of Columbus, Ohio — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Columbus,_Ohio" },
+    ],
+  },
+
+  // ── Nashville — capital of Tennessee, USA ─────────────────────────────────
+  "US-TN": {
+    description:
+      "Nashville flies a blue field with a gold bar at the fly and the city-county seal at the centre. By the " +
+      "adopting resolution, blue stands for the courage and conviction of the city's leaders through its history, " +
+      "and gold for the richness of its land and resources. Modelled on the Tennessee state flag; adopted 1963.",
+    sources: [
+      { title: "Flag of Nashville, Tennessee — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nashville,_Tennessee" },
+    ],
+  },
+
+  // ── Salt Lake City — capital of Utah, USA ─────────────────────────────────
+  "US-UT": {
+    description:
+      "Salt Lake City's 'Sego Flag' (2020) has two bars of blue and white for the water and the salt of the " +
+      "Great Salt Lake on whose shore the city stands, with a golden sego lily — Utah's state flower, prized for " +
+      "surviving the arid climate — in the canton. Its three petals nod to Salt Lake City being the only " +
+      "three-word state-capital name.",
+    sources: [
+      { title: "Flag of Salt Lake City — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Salt_Lake_City" },
+    ],
+  },
+
+  // ── Richmond — capital of Virginia, USA ───────────────────────────────────
+  "US-VA": {
+    description:
+      "Richmond's flag centres on a figure of a canal boatman, recalling the James River and Kanawha Canal that " +
+      "made the city a 19th-century transport hub — the waterway George Washington championed to link the " +
+      "Chesapeake with the Ohio valley.",
+    sources: [
+      { title: "Richmond, Virginia — Wikipedia", url: "https://en.wikipedia.org/wiki/Richmond,_Virginia" },
+    ],
+  },
+
+  // ── Madison — capital of Wisconsin, USA ───────────────────────────────────
+  "US-WI": {
+    description:
+      "Madison flies a light-blue field with a white diagonal stripe for the isthmus between Lakes Mendota and " +
+      "Monona, crossed by a black cross that stands both for the four lakes around the city and for the " +
+      "cross-shaped Wisconsin State Capitol, with a gold circle for the Capitol dome. Adopted 1962 (the central " +
+      "emblem revised in 2018).",
+    sources: [
+      { title: "Flag of Madison, Wisconsin — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Madison,_Wisconsin" },
     ],
   },
 
