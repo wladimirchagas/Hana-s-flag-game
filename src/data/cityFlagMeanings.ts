@@ -10559,6 +10559,75 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Phoenix — capital of Arizona, USA ─────────────────────────────────────
+  "US-AZ": {
+    description:
+      "Phoenix flies a white phoenix — wings curving up to almost close a circle — on a maroon field. The " +
+      "mythical bird reborn from ashes stands for the city, which took its name for rising on the ruins of an " +
+      "ancient Hohokam settlement; the maroon nods to the Greek word phoinix, which also means purple. Adopted " +
+      "1990.",
+    sources: [
+      { title: "Flag of Phoenix, Arizona — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Phoenix,_Arizona" },
+    ],
+  },
+
+  // ── Denver — capital of Colorado, USA ─────────────────────────────────────
+  "US-CO": {
+    description:
+      "Denver's flag is a landscape in the abstract: a yellow sun on a blue sky above a white zigzag of " +
+      "snow-capped peaks, over a red field. Yellow is Colorado's gold, red the 'colored' earth the state is " +
+      "named for, and the central sun marks Denver's place at the heart of the state; the zigzag honours " +
+      "Colorado's Native American heritage. Designed by a schoolgirl, Margaret Overbeck, and adopted 1926.",
+    sources: [
+      { title: "Flag of Denver — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Denver" },
+    ],
+  },
+
+  // ── Sacramento — capital of California, USA ───────────────────────────────
+  "US-CA": {
+    description:
+      "Sacramento's flag has two shades of blue split by a wavy line, with a green and a gold half-oblong at the " +
+      "corners. The blues are the Sacramento and American rivers that meet at the city, green its farming, and " +
+      "gold the miners of the Gold Rush for which Sacramento was the gateway. Adopted 1989.",
+    sources: [
+      { title: "Flag of Sacramento, California — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sacramento,_California" },
+    ],
+  },
+
+  // ── Atlanta — capital of Georgia, USA ─────────────────────────────────────
+  "US-GA": {
+    description:
+      "Atlanta flies its seal in gold on blue: a phoenix rising from flames with the motto 'Resurgens' ('rising " +
+      "again') and the dates 1847 (incorporation) and 1865. The reborn bird is the city's emblem for its " +
+      "rebuilding after it was burned in the Civil War.",
+    sources: [
+      { title: "Flag of Atlanta — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Atlanta" },
+    ],
+  },
+
+  // ── Honolulu — capital of Hawaii, USA ─────────────────────────────────────
+  "US-HI": {
+    description:
+      "Honolulu flies the city seal on a yellow field — the yellow taken from the golden ʻilima flower, symbol " +
+      "of the island of Oʻahu. The seal carries the red-white-blue stripes of Hawaii's own flag, a rising sun " +
+      "for a new era, a central star for Hawaii, and a pūloʻuloʻu (a tabu ball-and-staff) marking sacred " +
+      "authority from the days of the monarchy. Adopted 1960.",
+    sources: [
+      { title: "Flag of Honolulu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Honolulu" },
+    ],
+  },
+
+  // ── Des Moines — capital of Iowa, USA ─────────────────────────────────────
+  "US-IA": {
+    description:
+      "Des Moines flies a dark-blue field — for the Des Moines River — bearing three white arched bridges (the " +
+      "Grand, Locust and Walnut Street bridges) that link the city's east and west banks, with a red trapezoid " +
+      "at the hoist. Adopted 1974.",
+    sources: [
+      { title: "Flag of Des Moines, Iowa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Des_Moines,_Iowa" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
