@@ -10736,6 +10736,80 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Hagåtña — capital of Guam, USA ────────────────────────────────────────
+  "US-GU": {
+    description:
+      "Hagåtña's flag is a pictorial scene of the capital village on a red field — red because Hagåtña means " +
+      "'their bloodline', for the clans who settled it. It gathers a golden rising sun for Guam, the village's " +
+      "rolling hills and limestone cliffs, the caves where Japanese soldiers hid in World War II, the ancient " +
+      "chief Quipuha, the Dulce Nombre de María (Agana) Basilica for the Catholic Church, the Plaza de España for " +
+      "the Spanish era, and latte stones for pre-war Chamorro building and strength.",
+    sources: [
+      { title: "Hagåtña (Guam) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/gu-hagat.html" },
+    ],
+  },
+
+  // ── Oklahoma City — capital of Oklahoma, USA ──────────────────────────────
+  "US-OK": {
+    description:
+      "Oklahoma City flies its seal — a quartered red-and-white shield behind a counterchanged cross — on a white " +
+      "field with a red border. Its charges tell the city's story: a plow for the pioneer farming of Oklahoma " +
+      "Territory, a hatchet and stake for the '89ers who staked land claims in the 1889 Land Run, an atom for an " +
+      "industrial and scientific future, and a peace pipe with an eagle-feather pendant for Native American " +
+      "councils and high aims, wreathed in oak for the historic Council Grove. Adopted 1994.",
+    sources: [
+      { title: "Oklahoma City, Oklahoma — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-okokc.html" },
+    ],
+  },
+
+  // ── Albany — capital of New York, USA ─────────────────────────────────────
+  "US-NY": {
+    description:
+      "Albany flies orange-white-blue stripes with the city arms at the centre. The stripes are the colours of " +
+      "the flag Henry Hudson's Dutch sponsors flew when he reached the area in 1609, marking Albany's origin as " +
+      "the Dutch trading post of Fort Orange. On the arms, a beaver felling a tree stands for the fur trade, " +
+      "wheat sheaves for farming, and a Dutch sloop for the city's role as a Hudson River port.",
+    sources: [
+      { title: "Albany, New York — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ny-al.html" },
+    ],
+  },
+
+  // ── Trenton — capital of New Jersey, USA ──────────────────────────────────
+  "US-NJ": {
+    description:
+      "Trenton flies a flag divided blue at the hoist and gold at the fly, with the city seal in the centre. The " +
+      "seal's three wheat sheaves and a horse's head stand for the farming country of the area's original " +
+      "English Quaker settlers — fitting for the capital of the 'Garden State' — and blue and gold have been the " +
+      "city's colours since 1909 (buff being a traditional New Jersey colour).",
+    sources: [
+      { title: "Trenton, New Jersey — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-njtrt.html" },
+    ],
+  },
+
+  // ── Harrisburg — capital of Pennsylvania, USA ─────────────────────────────
+  "US-PA": {
+    description:
+      "Harrisburg flies a dark-blue flag bearing a white keystone — Pennsylvania is the 'Keystone State' — with " +
+      "the State Capitol dome rising inside it. A gold roundel stands for William Penn and a fleur-de-lis for " +
+      "Dauphin County, and three gold crescents below come from the arms of John Harris, the city's founder and " +
+      "namesake.",
+    sources: [
+      { title: "Harrisburg, Pennsylvania — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-pahrb.html" },
+    ],
+  },
+
+  // ── Raleigh — capital of North Carolina, USA ──────────────────────────────
+  "US-NC": {
+    description:
+      "Raleigh flies red-white-red vertical stripes — the colours of Sir Walter Raleigh, the Elizabethan " +
+      "courtier the city is named for — with the city seal on the white: a green oak for Raleigh's nickname the " +
+      "'City of Oaks', dated 1792 for its founding. The flag's reverse bears Sir Walter's own arms, whose stag " +
+      "puns on the name Raleigh ('meadow of the deer').",
+    sources: [
+      { title: "Raleigh, North Carolina — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-nc-ra.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
