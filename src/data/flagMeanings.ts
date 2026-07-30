@@ -2870,6 +2870,175 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "AD": {
+    description:
+      "A vertical tricolour of blue, yellow and red with the national coat of arms on the yellow. The colours tie " +
+      "Andorra to its neighbours and historic co-princes — blue and red from France, red and yellow from " +
+      "Catalonia and the old County of Foix. The arms quarter the emblems of the Bishop of Urgell and the Count " +
+      "of Foix (Andorra’s two co-princes), Catalonia and Béarn, under the motto Virtus Unita Fortior (“united " +
+      "virtue is stronger”).",
+    sources: [
+      { title: "Flag of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
+    ],
+  },
+
+  "AE": {
+    description:
+      "A red vertical bar at the hoist beside three horizontal bands of green, white and black — the four " +
+      "pan-Arab colours of Arab unity. In the official reading, red is the sacrifice and strength of the Emirati " +
+      "people, green their land and prosperity, white their peace and good deeds, and black their resolve and the " +
+      "hardships overcome. Designed by 19-year-old Abdullah Al Maainah and adopted at the union in 1971.",
+    sources: [
+      { title: "Flag of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
+    ],
+  },
+
+  "AF": {
+    description:
+      "A white field bearing the Shahada — the Islamic declaration of faith (“There is no god but God, Muhammad " +
+      "is the messenger of God”) — in black. The flag of the Islamic Emirate, flown since 2021: the white stands " +
+      "for the purity of its faith and government, and the creed for the movement’s Islamic basis.",
+    sources: [
+      { title: "Flag of the Taliban — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Taliban" },
+    ],
+  },
+
+  "AG": {
+    description:
+      "A red field with a black-yellow-white inverted triangle bearing a golden rising sun. The sun marks the " +
+      "dawn of a new era; black is the people’s African heritage, blue the sea and hope, white the sand, and red " +
+      "the energy of the people — the black, yellow, blue and white also reading as soil, sun, sea and sand. The " +
+      "V shape is victory. Designed by Reginald Samuel, adopted 1967.",
+    sources: [
+      { title: "Flag of Antigua and Barbuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
+    ],
+  },
+
+  "AL": {
+    description:
+      "A black double-headed eagle on a red field. The eagle is the emblem of the 15th-century hero Skanderbeg " +
+      "and his House of Kastrioti — who took up an Eastern Roman (Byzantine) imperial eagle in his revolt against " +
+      "the Ottomans — and has stood for the Albanians ever since; red is for bravery, strength and the blood shed " +
+      "for the nation.",
+    sources: [
+      { title: "Flag of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    ],
+  },
+
+  "AM": {
+    description:
+      "A horizontal tricolour of red, blue and orange. By Armenia’s 2006 flag law, red is the Armenian highland " +
+      "and the people’s struggle to survive, their Christian faith, independence and freedom; blue is their will " +
+      "to live under peaceful skies; and orange is their creative talent and hard work.",
+    sources: [
+      { title: "Flag of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
+    ],
+  },
+
+  "AO": {
+    description:
+      "A red band over a black band with a yellow emblem of a half cogwheel, a machete and a star. Black is " +
+      "Africa and red the blood shed under colonial rule and in the war of independence; the cogwheel stands for " +
+      "industrial workers, the machete for the peasantry and the independence struggle, and the star for progress " +
+      "and international solidarity. The design comes from the ruling MPLA; adopted at independence in 1975.",
+    sources: [
+      { title: "Flag of Angola — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
+    ],
+  },
+
+  "AR": {
+    description:
+      "Light blue and white horizontal bands with the golden Sun of May at the centre. The colours were carried " +
+      "on the cockade of the 1810 May Revolution that began Argentina’s independence, and the Sun of May — a face " +
+      "in a sun of 32 rays — recalls the Inca sun and the sun said to have broken through the clouds over that " +
+      "revolution. Created by Manuel Belgrano in 1812.",
+    myths: [
+      {
+        claim: "The light blue and white simply depict the sky, the clouds and the sun.",
+        reality:
+          "This is a popular later reading. Historians trace the colours to the House of Bourbon (Spain’s ruling " +
+          "house), whose livery appeared on the Argentine cockade before the flag; the sky-and-clouds explanation " +
+          "was attached afterwards.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
+    ],
+  },
+
+  "AT": {
+    description:
+      "A red-white-red horizontal triband — one of the oldest national colours in the world, taken from the " +
+      "medieval arms of the Babenberg dukes of Austria (documented on a seal of 1230).",
+    myths: [
+      {
+        claim:
+          "The design comes from Duke Leopold V at the Siege of Acre (1191): his tunic was soaked red with blood " +
+          "except for a white stripe under his sword-belt.",
+        reality:
+          "That is a much-repeated legend, first written down decades later. The red-white-red is documented as " +
+          "the Babenberg coat of arms adopted around 1230 under Duke Frederick II, not from a bloodied tunic.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Austria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
+    ],
+  },
+
+  "AU": {
+    description:
+      "A blue ensign with the Union Jack in the canton, a large Commonwealth Star below it, and the Southern " +
+      "Cross in the fly. The Union Jack marks Australia’s British settlement, the seven-pointed Commonwealth Star " +
+      "the federation of the six states plus the territories, and the Southern Cross the constellation seen in the " +
+      "southern sky. Chosen by competition in 1901 and finalised in 1908.",
+    sources: [
+      { title: "Flag of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Australia" },
+    ],
+  },
+
+  "AZ": {
+    description:
+      "Horizontal bands of blue, red and green with a white crescent and eight-pointed star. Blue is Azerbaijan’s " +
+      "Turkic heritage, red its progress and modern development, and green its Islamic faith; the crescent and " +
+      "star are Islamic emblems, the star’s eight points read variously as the eight letters of “Azerbaijan” in " +
+      "Arabic script or eight Turkic peoples.",
+    sources: [
+      { title: "Flag of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
+    ],
+  },
+
+  "BA": {
+    description:
+      "A blue field with a yellow right-triangle and a diagonal line of white stars. The triangle’s three points " +
+      "stand for the country’s three constituent peoples — Bosniaks, Croats and Serbs — and its shape echoes the " +
+      "map of the country; the stars (cut off top and bottom to suggest they continue endlessly) stand for " +
+      "Europe. A deliberately neutral design imposed in 1998 after the parliament could not agree.",
+    sources: [
+      { title: "Flag of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
+    ],
+  },
+
+  "BB": {
+    description:
+      "A vertical triband of ultramarine, gold and ultramarine bearing a black broken trident-head. The blue is " +
+      "the sea and sky and the gold the island’s sand; the trident-head is broken from its shaft to mark " +
+      "Barbados’ break from colonial rule (the trident had been Britannia’s), its three points standing for the " +
+      "principles of democracy. Adopted at independence in 1966.",
+    sources: [
+      { title: "Flag of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
+    ],
+  },
+
+  "BD": {
+    description:
+      "A red disc on a dark-green field, the disc set slightly toward the hoist so it looks centred when the flag " +
+      "flies. Green is the lush landscape of Bangladesh (and its youth and vitality), and the red disc is the sun " +
+      "rising over Bengal and the blood of those who died in the 1971 Liberation War. Adopted 1972.",
+    sources: [
+      { title: "Flag of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
