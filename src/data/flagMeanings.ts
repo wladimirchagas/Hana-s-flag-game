@@ -2842,6 +2842,34 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "GL": {
+    description:
+      "Erfalasorput (“our flag”): a white band over a red band bearing a large disc offset toward " +
+      "the hoist, its top half red and its bottom half white — each half the reverse of the band " +
+      "behind it. Its designer, Thue Christiansen, described it as the Greenlandic landscape and the " +
+      "low sun: white for the ice sheet and glaciers that cover most of the island, red for the " +
+      "ocean, the red half-disc for the sun sinking into the sea, and the white half-disc for the " +
+      "icebergs and pack ice. The red and white are also the colours of the Danish flag, marking " +
+      "Greenland’s place within the Kingdom of Denmark. Adopted 21 June 1985.",
+    sources: [
+      { title: "Flag of Greenland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Greenland" },
+    ],
+  },
+
+  "DK-GL": {
+    description:
+      "Erfalasorput (“our flag”): a white band over a red band bearing a large disc offset toward " +
+      "the hoist, its top half red and its bottom half white — each half the reverse of the band " +
+      "behind it. Its designer, Thue Christiansen, described it as the Greenlandic landscape and the " +
+      "low sun: white for the ice sheet and glaciers that cover most of the island, red for the " +
+      "ocean, the red half-disc for the sun sinking into the sea, and the white half-disc for the " +
+      "icebergs and pack ice. The red and white are also the colours of the Danish flag, marking " +
+      "Greenland’s place within the Kingdom of Denmark. Adopted 21 June 1985.",
+    sources: [
+      { title: "Flag of Greenland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Greenland" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
