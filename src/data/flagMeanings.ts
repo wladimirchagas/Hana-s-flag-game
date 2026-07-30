@@ -3190,6 +3190,153 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "BY": {
+    description:
+      "A red band over a narrower green band, with a red-on-white folk ornament running down the hoist. Red is " +
+      "read as the nation’s glorious past and its sacrifice, green as its forests and future; the ornament is a " +
+      "traditional Belarusian embroidery (rushnyk) pattern from 1917, standing for the country’s folk heritage. " +
+      "Adopted by referendum in 1995.",
+    sources: [
+      { title: "Flag of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Belarus" },
+    ],
+  },
+
+  "BZ": {
+    description:
+      "A royal-blue field with a narrow red stripe top and bottom and the national arms on a white disc. The arms " +
+      "show two woodcutters — one of African, one of mestizo descent — with a mahogany tree and logging tools, " +
+      "recalling the timber trade that founded the colony, under the motto Sub Umbra Floreo (“under the shade I " +
+      "flourish”); a ring of 50 leaves marks 1950. Blue and red are the colours of the country’s two main parties " +
+      "(the PUP and the UDP).",
+    sources: [
+      { title: "Flag of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
+    ],
+  },
+
+  "CA": {
+    description:
+      "A red-white-red design (a “Canadian pale”) with a red eleven-pointed maple leaf on the central white " +
+      "square. Red and white have been Canada’s official colours since 1921, and the maple leaf has stood for the " +
+      "country since the 19th century, chosen as a simple, unifying emblem free of colonial arms. Adopted 1965.",
+    sources: [
+      { title: "Flag of Canada — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Canada" },
+    ],
+  },
+
+  "CD": {
+    description:
+      "A sky-blue field crossed by a red diagonal stripe edged in yellow, with a yellow star in the upper hoist. " +
+      "Blue is peace, red the blood of the country’s martyrs, yellow the nation’s wealth, and the star its bright " +
+      "future. Adopted 2006, reviving a 1960s design.",
+    sources: [
+      { title: "Flag of the Democratic Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" },
+    ],
+  },
+
+  "CF": {
+    description:
+      "Four horizontal bands — blue, white, green, yellow — crossed by a vertical red band, with a yellow star in " +
+      "the canton. Barthélemy Boganda designed it to unite the French colours (blue, white, red) with the " +
+      "pan-African ones (green, yellow, red); the red band, he said, is “the blood of us all”, joining Europe and " +
+      "Africa, and the star stands for independence and unity.",
+    sources: [
+      { title: "Flag of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
+    ],
+  },
+
+  "CG": {
+    description:
+      "A yellow diagonal band separating a green triangle at the hoist from a red one at the fly — the pan-African " +
+      "colours. Green stands for the country’s agriculture and forests and yellow for the friendship and nobility " +
+      "of its people. Adopted at independence in 1959, dropped under the Marxist republic, and restored in 1991.",
+    sources: [
+      { title: "Flag of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo" },
+    ],
+  },
+
+  "CH": {
+    description:
+      "A bold white cross on a square red field. The cross is both a Christian emblem and the old field-sign of " +
+      "the Swiss Confederacy’s soldiers, carried since the medieval wars and derived from the all-red banner of " +
+      "Schwyz (which gave Switzerland its name). Its square shape recalls the war flags of Swiss infantry — only " +
+      "Switzerland and the Vatican use square national flags.",
+    sources: [
+      { title: "Flag of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
+    ],
+  },
+
+  "CI": {
+    description:
+      "A vertical tricolour of orange, white and green. In the official reading orange is the rich land of the " +
+      "northern savannas and the blood of a young people striving for emancipation, white is peace under the law, " +
+      "and green is hope and the forests that were the country’s first source of wealth. Adopted 1959.",
+    sources: [
+      { title: "Flag of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast" },
+    ],
+  },
+
+  "CL": {
+    description:
+      "White over red with a blue canton bearing a single white star — “La Estrella Solitaria”, the lone star. " +
+      "White is the snow of the Andes, red the blood of the fight for independence, and blue the sky; the lone " +
+      "star stands for the state and a guide to progress and honour, drawing on a star the Mapuche linked to " +
+      "Venus. Adopted 1817.",
+    sources: [
+      { title: "Flag of Chile — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
+    ],
+  },
+
+  "CM": {
+    description:
+      "A vertical tricolour of green, red and yellow — the pan-African colours — with a gold star on the red " +
+      "centre. Green is the forests of the south, yellow the sun and the savannas of the north, and the red " +
+      "centre with its “star of unity” binds the country together. Adopted in this form in 1975.",
+    sources: [
+      { title: "Flag of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+    ],
+  },
+
+  "CN": {
+    description:
+      "A red field with one large gold star and four smaller stars in an arc beside it. Red is the communist " +
+      "revolution; the large star is the Communist Party, and the four small stars — each turned toward it — are " +
+      "the social classes united under the Party in the new republic. Adopted 1949.",
+    sources: [
+      { title: "Flag of China — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_China" },
+    ],
+  },
+
+  "CO": {
+    description:
+      "Yellow over blue over red, the yellow band twice as deep as the others. By the official reading yellow is " +
+      "the gold and riches of the land, blue the seas and rivers and the sky, and red the blood shed for " +
+      "independence. The colours come from Francisco de Miranda’s 1806 flag for the region.",
+    sources: [
+      { title: "Flag of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
+    ],
+  },
+
+  "CR": {
+    description:
+      "Blue, white, red, white, blue horizontal bands with the red band doubled in width (the state flag adds the " +
+      "coat of arms). Blue is the sky and ideals, white peace and wisdom; the red band was added in 1848, " +
+      "inspired by the French Revolution, for the warmth of the people and the blood shed for freedom.",
+    sources: [
+      { title: "Flag of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    ],
+  },
+
+  "CU": {
+    description:
+      "Three blue and two white stripes with a red triangle at the hoist bearing a white star — “La Estrella " +
+      "Solitaria”. The three blue stripes are the three parts Cuba was divided into, the white the purity of the " +
+      "patriots’ cause; the red triangle stands for the blood shed and the Masonic ideals of liberty, equality " +
+      "and fraternity, and the lone star for independence. Designed 1849, adopted 1902.",
+    sources: [
+      { title: "Flag of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
