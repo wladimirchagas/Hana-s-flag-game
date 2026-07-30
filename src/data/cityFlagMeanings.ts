@@ -10889,6 +10889,122 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Providence — capital of Rhode Island, USA ─────────────────────────────
+  "US-RI": {
+    description:
+      "Providence flies a dark-blue flag with the city seal in a white disc. The seal pictures the city's 1636 " +
+      "founding: Narragansett people greeting Roger Williams as he arrives by canoe, having left Massachusetts " +
+      "for religious freedom — 'Founded 1636', 'Incorporated 1832'. Blue and white are the traditional colours of " +
+      "the colony. Adopted 1915.",
+    sources: [
+      { title: "Providence, Rhode Island — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ripro.html" },
+    ],
+  },
+
+  // ── Salem — capital of Oregon, USA ────────────────────────────────────────
+  "US-OR": {
+    description:
+      "Salem's flag (2022) is a white field with a pink cherry blossom and a gold star — for the state capital and " +
+      "Salem's old nickname the 'Cherry City' — above a blue band for the Willamette River that runs through the " +
+      "city.",
+    sources: [
+      { title: "Salem, Oregon — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-orslm.html" },
+    ],
+  },
+
+  // ── Hartford — capital of Connecticut, USA ────────────────────────────────
+  "US-CT": {
+    description:
+      "Hartford flies a blue flag with the city arms in a white disc: a hart (a stag) fording a stream — a pun " +
+      "on the city's name, from Hertford in England — with a grapevine taken from Connecticut's state seal and " +
+      "an eagle above, under the Latin motto 'Post Nubila Phoebus' ('after the clouds, the sun'). Adopted 1983.",
+    sources: [
+      { title: "Hartford, Connecticut — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ct-hf.html" },
+    ],
+  },
+
+  // ── Jackson — capital of Mississippi, USA ─────────────────────────────────
+  "US-MS": {
+    description:
+      "Jackson flies a green field crossed by a white cross — the city styles itself the 'Crossroads of the " +
+      "South' — with a golden star at the centre for its role as state capital, over a light-blue disc for the " +
+      "city's place on the Pearl River. Green stands for growth, the land and the magnolia. Adopted 1993.",
+    sources: [
+      { title: "Jackson, Mississippi — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ms-jx.html" },
+    ],
+  },
+
+  // ── Carson City — capital of Nevada, USA ──────────────────────────────────
+  "US-NV": {
+    description:
+      "Carson City flies a white-blue-white triband with the city seal on the blue: the Nevada State Capitol, a " +
+      "golden eagle for the settlers' strength and perseverance, a Pony Express rider (the 1860 mail service that " +
+      "helped open the territory), and a Virginia & Truckee Railroad locomotive, with 'CC' for the U.S. Mint that " +
+      "once struck coins here. Adopted 1992.",
+    sources: [
+      { title: "Carson City, Nevada — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-nv-cc.html" },
+    ],
+  },
+
+  // ── Montgomery — capital of Alabama, USA ──────────────────────────────────
+  "US-AL": {
+    description:
+      "Montgomery's flag (in use since 1952) is divided diagonally, grey at the hoist and red at the fly, with a " +
+      "blue diagonal stripe bearing seven white stars and a gold laurel wreath. The colours recall the Civil War, " +
+      "in which Montgomery was the Confederacy's first capital: grey for Confederate uniforms, red for Alabama, " +
+      "blue for the 'blue and grey', and the seven stars for the seven original Confederate states.",
+    sources: [
+      { title: "Montgomery, Alabama — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-al-mm.html" },
+    ],
+  },
+
+  // ── Santa Fe — capital of New Mexico, USA ─────────────────────────────────
+  "US-NM": {
+    description:
+      "Santa Fe flies the city seal — a shield of the three nations that have governed the city: the Mexican " +
+      "eagle and serpent on a cactus (1821), the castle and lion of Spain (1610), and the stars and stripes of " +
+      "the United States (1846), ringed by the city's full Spanish name, 'La Villa Real de la Santa Fe de San " +
+      "Francisco de Asís' — the Royal Town of the Holy Faith of St Francis of Assisi, its patron. Adopted 1915.",
+    sources: [
+      { title: "Santa Fe, New Mexico — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-nmsfe.html" },
+    ],
+  },
+
+  // ── Lincoln — capital of Nebraska, USA ────────────────────────────────────
+  "US-NE": {
+    description:
+      "Lincoln's 'All Roads Lead to Lincoln' flag (2022) uses intersecting lines to evoke at once a sunrise, the " +
+      "State Capitol and an aerial view of downtown, with a central beacon for the city's hope and its welcome as " +
+      "a safe harbour for newcomers. Teal green stands for parks and trails, deep blue for the groundwater " +
+      "aquifers, and gold for a bright future.",
+    sources: [
+      { title: "Lincoln, Nebraska — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-ne-li.html" },
+    ],
+  },
+
+  // ── Charleston — capital of West Virginia, USA ────────────────────────────
+  "US-WV": {
+    description:
+      "Charleston flies a yellow flag bordered in light blue with the city arms: the State Capitol dome (dated " +
+      "1794) for the capital, a crossed rifle and arrow for the frontier fort the city grew from, a river " +
+      "sternwheeler for its trade at the meeting of two rivers, a pick and shovel on black for coal, and a " +
+      "cogwheel for industry — the old 'Cog City'. Adopted 1970.",
+    sources: [
+      { title: "Charleston, West Virginia — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-wvcha.html" },
+    ],
+  },
+
+  // ── Cheyenne — capital of Wyoming, USA ────────────────────────────────────
+  "US-WY": {
+    description:
+      "Cheyenne flies a white flag with a brown border and a central roundel bearing a brown bison — echoing " +
+      "Wyoming's state flag — with 'The Equality State', Wyoming's nickname for granting women the vote first " +
+      "(1869), and 1867, the year of the city's first charter.",
+    sources: [
+      { title: "Cheyenne, Wyoming — Flags of the World", url: "https://www.crwflags.com/fotw/flags/us-wyche.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
