@@ -11119,6 +11119,30 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  // ── Szekszárd — capital of Tolna County, Hungary ──────────────────────────
+  "HU-TO": {
+    description:
+      "Szekszárd's arms show a red fortified tower on blue — recalling the Benedictine abbey that became the " +
+      "town's church after the Ottoman period — charged with a golden bunch of grapes above a hanging bell, and " +
+      "flanked by golden wheat and a grapevine. The grapes, vine and grape-leaf crown celebrate Szekszárd's noted " +
+      "wine region, the bell its church, and the wheat its farming.",
+    sources: [
+      { title: "Szekszárd — Wikipédia (hu)", url: "https://hu.wikipedia.org/wiki/Szeksz%C3%A1rd" },
+    ],
+  },
+
+  // ── Virovitica — capital of Virovitica-Podravina County, Croatia ──────────
+  "HR-10": {
+    description:
+      "Virovitica flies a white flag bearing the town's arms: a golden lion, sword raised, standing on the green " +
+      "hill of Bilogora on a red field. Red stands for magnanimity, freedom, love and progress, green for " +
+      "strength, hope and the surrounding hills, gold for a fortunate era, and the lion for courage. The arms were " +
+      "adopted in 1994 and the flag in 1995.",
+    sources: [
+      { title: "Virovitica — Heimer, Flags & Arms of the Modern Era (Croatia)", url: "https://zeljko-heimer-fame.from.hr/hrvat/hr-vt1.html" },
+    ],
+  },
+
   // ── La Chorrera — capital of Panamá Oeste Province, Panama ─────────────────
   "PA-10": {
     description:
