@@ -1,8 +1,8 @@
 # Historical eras (Learn mode) — completeness & accuracy audit + improvement plan
 
-**Audited 2026-07-31** against `main` @ `44f4e51`, measured with
-`node scripts/historical-era-remaining.mjs` (added in this change) and verified in the
-running app with Playwright.
+**Audited 2026-07-31** against `main`, measured with `node scripts/historical-era-remaining.mjs`
+(content coverage) and `node scripts/check-historical-maps.mjs` (border geometry and
+provenance), and verified in the running app with Playwright.
 
 The Learn-mode **Period** picker offers 13 historical eras plus "Today". Each historical era
 loads a hand-curated GeoJSON from `aourednik/historical-basemaps`
@@ -203,15 +203,166 @@ first is what makes §4.1 affordable; the same pass can drop the broken 1300 pol
 
 ---
 
-## 5. Suggested sequencing
+## 5. Border fidelity — are the borders themselves trustworthy?
+
+Short answer: **the geometry is structurally clean, but its provenance is not what the era
+labels imply.** Measured with `node scripts/check-historical-maps.mjs` (added with this
+section) plus point-sampling against the bundled modern topology.
+
+### 5.1 `world_1850.geojson` is not an 1850 map — it is `world_1815` relabelled
+
+**All 450 features are byte-identical to `world_1815.geojson`; only 12 NAMEs differ.** It was
+produced in-repo by `scripts/generate-1850.cjs`, whose own header promises "US expanded
+(Louisiana Purchase, Florida, Texas 1845, Oregon 1846, Mexican Cession 1848)" and "Belgium
+independent (1830)" — while changing **zero** geometry. Consequences a user can see:
+
+- the **United States** in 1850 is drawn without Texas, Oregon or the Mexican Cession, and
+  **Mexico** still holds all of them (IoU vs modern Mexico 39%, with 1,050 sample points of
+  territory it had already lost by 1850);
+- **Greece** (independent 1830), **Belgium** (1830) and **Serbia** are absent from the file
+  entirely — the Ottoman and Dutch polygons still cover them.
+
+Upstream has no `world_1850` (confirmed 404), which is why it was fabricated. **This is
+invented geography, and the repo's own "never invent flag content" principle applies with equal
+force to borders.** Recommended fix, in order of preference:
+
+1. **Replace the era with upstream `world_1880`** (real dated map, and the Scramble for Africa
+   is a better teaching moment than 1850), migrating the `ad1850` registry/`ERA_OVERRIDES`
+   entries; delete `generate-1850.cjs`/`generate-1850.js`.
+2. Or keep a mid-19th-century slot but source it from upstream `world_1800`/`world_1880`
+   rather than by relabelling 1815.
+
+Either way the fabricated file should not survive. As an interim measure the era's caption must
+not claim 1850 borders.
+
+### 5.2 The modern-era files are largely a modern basemap with period labels
+
+Point-sampled against `public/countries-50m.json`, counting polities whose outline is
+essentially today's:
+
+| era | polities sharing a modern country name | drawn with essentially the MODERN outline (IoU ≥ 95%) |
+|-----|---------------------------------------:|------------------------------------------------------:|
+| 1914 | 88 | **25** |
+| 1945 | 131 | **47** |
+| 1960 | 140 | **56** |
+
+For countries whose borders genuinely did not move (Switzerland 100%, Brazil 98%, Australia
+97%) that is correct. But the same list contains territories that were **not states at all** at
+that date and are nonetheless drawn — and named — as modern countries: Namibia in 1945 and 1960
+(South West Africa until 1990), Botswana in 1914 (Bechuanaland until 1966), Uganda in 1960
+(1962), Zambia in 1960 (1964), Belize, Jamaica, Bahamas, Rwanda, Benin, Burkina Faso.
+
+Worse, some are **partitioned early**: the 1945 file contains **India, Pakistan *and*
+Bangladesh** as separate polities — partition was August 1947 and Bangladesh 1971 — and its
+"India" matches modern India at IoU 96%. It also contains **Israel** (founded May 1948). The
+1960 file still shows **Tibet** separate from China, a decade after the 1950–51 annexation.
+
+**Recommended fix — relabel, don't redraw.** A per-era `POLITY_NAME_FOR_ERA` correction layer
+that renames a feature to what it actually was at that date (Namibia → South West Africa,
+Zimbabwe → Southern Rhodesia, Bangladesh → East Bengal) and, where the dataset's own `SUBJECTO`
+says it was ruled by another state, presents it as that state's territory. This asserts nothing
+we cannot source and never invents a polygon. Redrawing a border should only ever be done by
+adopting a **different upstream dated file** (e.g. `world_1938` for the pre-partition WWII
+world), never by editing polygons by hand — that is what produced §5.1.
+
+### 5.3 Every pre-1700 border is flagged low-precision by the dataset itself — and we don't say so
+
+`BORDERPRECISION` (1 = roughest, 3 = best) is carried on every feature and never surfaced:
+
+| eras | BORDERPRECISION |
+|------|-----------------|
+| 2000 BC – 1500 | **1** on 100% of features |
+| 1700 | 3 on 782 features, 1 on 8 |
+| 1815 / 1850 | 3 on 449, 1 on 1 |
+| 1914 / 1945 / 1960 | **3** on 100% of features |
+
+So for the seven oldest eras the upstream authors are telling us the borders are at their
+coarsest confidence — and the app renders them as crisp lines, zoomable to 24×, with no caveat.
+Fix: surface the flag (a "borders approximate for this date" note on the era and in the panel),
+and consider fading/dashing borders at high zoom so the rendering stops implying precision the
+data does not have.
+
+### 5.4 Roughly 100 "polities" are drawn with modern administrative borders — ours, not upstream's
+
+`scripts/split-patchwork.py` splits upstream's lumped polygons (Hausa States, Maya city-states,
+Greek city-states, Indian mahajanapadas, Swahili coast, Malay sultanates…) by intersecting them
+with **modern geoBoundaries ADM1 boundaries**. The internal lines are therefore present-day
+state/province borders presented as 500 BC / 100 AD / 1300 borders:
+
+| era file | features whose internal borders are modern admin-1 lines |
+|----------|--------------------------------------------------------:|
+| 500 BC | 15 | 
+| 100 AD | 19 |
+| 600 AD | 18 |
+| 800 AD | 17 |
+| 1300 | 29 |
+| 1500 | 61 |
+| 1700 | 10 |
+| 1815 | 4 |
+
+The split itself is defensible — one clickable feature per real polity beats a single "Maya
+city-states" blob — but the *lines* are schematic and the UI presents them exactly like
+sourced borders. Fix: tag these features with a `DERIVED_BOUNDARY` property at split time,
+render their internal borders **dashed**, and say so in the panel ("approximate extent —
+subdivided along modern administrative boundaries"). Where a scholarly boundary exists, replace
+it. This is the honest-labelling analogue of the "(unofficial flag)" label.
+
+### 5.5 17–34% of pre-1914 land belongs to no polity at all
+
+Sampling 3,746 land points against each era (`.` = share of modern land):
+
+| era | no polity | exactly one | 2+ overlapping |
+|-----|----------:|------------:|---------------:|
+| 2000 BC | 19% | 80% | 1% |
+| 500 BC | 22% | 78% | 0% |
+| 100 AD | 34% | 66% | 0% |
+| 600 AD | 30% | 70% | 0% |
+| 800 AD | 18% | 82% | 1% |
+| 1300 | 23% | 77% | 0% |
+| 1500 | 19% | 81% | 0% |
+| 1700 | 27% | 73% | 0% |
+| 1815 / 1850 | 17% | 83% | 0% |
+| 1914 / 1945 / 1960 | 2% | 98% | 0% |
+
+The good news: **overlaps are negligible (≤1%)** — the maps are topologically tidy, so there is
+no double-claiming problem to fix. The gap is coverage, and it is honest gap (the dataset simply
+records no polity), which means the fix is presentational: render "no data" land as a visibly
+different hatch/colour from a real polity, and tell the user what it means on click, rather than
+painting it a land colour and clearing the selection silently.
+
+### 5.6 Enforcement — `scripts/check-historical-maps.mjs`
+
+New, and currently **failing by design on the two real defects** (`npm run maps:check`):
+
+- `world_1300.geojson` has a feature covering 12.78 sr — larger than the whole sphere (§2.6);
+- `world_1815` ↔ `world_1850` share 100% of their geometry (§5.1).
+
+It also validates ring closure, ring degeneracy and coordinate range (all clean today). The
+duplication threshold is 98%, calibrated to sit above the highest legitimate pair (1945 ↔ 1960
+share 82%, 1914 ↔ 1945 58% — borders that genuinely did not move) and below the fabricated pair
+at 100%. Once §5.1 and §2.6 are fixed, wire it into `npm run flags:check` and the
+`flag-integrity` CI workflow so no future era can be a relabelled copy.
+
+### 5.7 Known limitation worth documenting rather than fixing
+
+Every era uses **modern coastlines**; the 2000 BC map therefore shows today's Persian Gulf,
+Black Sea and North Sea. Correcting palaeo-coastlines is out of proportion to the benefit — it
+should be stated in the era caption, not silently implied away.
+
+---
+
+## 6. Suggested sequencing
 
 | # | Work | Why first | New sourcing? |
 |---|------|-----------|---------------|
-| **P0** | Paint-order fix (§2.5), display-name fixes (§2.3), alternate-spelling keys (§2.4), bundled-first country seed (§2.7) | Pure correctness, no data research, small diffs | No |
-| **P1** | Flag-adoption-year gate + `SUBJECTO` inheritance + anachronism check script (§2.1, §2.2) | Stops the app showing wrong flags, and *raises* colonial-era coverage at the same time | Yes — one dated table |
+| **P0** | Paint-order fix (§2.5), display-name fixes (§2.3), alternate-spelling keys (§2.4), bundled-first country seed (§2.7), repair/remove the 1300 whole-globe polygon (§2.6) | Pure correctness, no data research, small diffs | No |
+| **P0b** | **Retire the fabricated 1850 map** (§5.1) — adopt upstream `world_1880` (or `world_1800`) and delete `generate-1850.*` | The app currently ships invented geography under a date label; same principle as never inventing a flag | No (upstream data) |
+| **P1** | Flag-adoption-year gate + `SUBJECTO` inheritance + anachronism check script (§2.1, §2.2); `POLITY_NAME_FOR_ERA` relabelling for states that did not exist yet (§5.2) | Stops the app asserting wrong flags *and* wrong statehood, and raises colonial-era coverage | Yes — one dated table |
 | **P2** | Note + population sweep in area order (§3.1) | Turns 1,398 bare names into facts; measurable with the tracker | Yes — the bulk of the work |
-| **P3** | Coordinate-precision pass, then add `1994`, `1938`, `1920`, `1900`, `1600`, `1200`, `1000`, `bc323` (§4.1, §4.2) | Payload shrinks before it grows; 1994 adds the most new flags of any single era | No (upstream data) |
-| **P4** | Panel depth: dates, "today this land is", capitals, `BORDERPRECISION` note (§3) | Highest educational value once the basics are right | Partly derivable |
+| **P3** | Coordinate-precision pass, then add `1994`, `1938`, `1920`, `1900`, `1600`, `1200`, `1000`, `bc323` (§4.1, §4.2) | Payload shrinks before it grows; 1994 adds the most new flags of any single era; more real dated files = fewer borders standing in for a neighbouring year | No (upstream data) |
+| **P4** | Border-honesty presentation: `BORDERPRECISION` note (§5.3), dashed derived boundaries (§5.4), "no data" land styling (§5.5), coastline caveat (§5.7); then panel depth — dates, "today this land is", capitals (§3) | Cheap credibility: stops the map implying precision it does not have | No |
 
-Progress is measured by `node scripts/historical-era-remaining.mjs`; the target for P2 is
-"bare name only" under 20% of slots (from 56% today).
+Progress is measured by `node scripts/historical-era-remaining.mjs` (content) and
+`node scripts/check-historical-maps.mjs` (geometry/provenance); the target for P2 is
+"bare name only" under 20% of slots (from 56% today), and for P0b/§2.6 a clean `maps:check`
+that can then be added to the build gate.
