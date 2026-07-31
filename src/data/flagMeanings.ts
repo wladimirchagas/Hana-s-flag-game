@@ -4098,6 +4098,151 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "MG": {
+    description:
+      "A white vertical band at the hoist beside red-over-green horizontal bands. White stands for purity and red " +
+      "for sovereignty — together the old royal colours of the Merina kingdom — while green is hope and the " +
+      "island’s greenery (long linked with its coastal peoples). Adopted 1958.",
+    sources: [
+      { title: "Flag of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
+    ],
+  },
+
+  "MH": {
+    description:
+      "A blue field crossed by two widening rays — orange over white — rising to a large white star in the upper " +
+      "fly. Blue is the Pacific Ocean; the two rays are the country’s island chains, orange the Ratak (“sunrise”) " +
+      "chain and courage, white the Ralik (“sunset”) chain and peace. The star’s 24 points are the electoral " +
+      "districts, its four long points forming a cross for the country’s Christian faith. Adopted 1979.",
+    sources: [
+      { title: "Flag of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands" },
+    ],
+  },
+
+  "MK": {
+    description:
+      "A golden sun with eight broadening rays reaching to the edges, on red — the “new sun of Liberty” of the " +
+      "national anthem. It replaced the Vergina Sun flag in 1995 after Greece objected to that symbol; the red " +
+      "and gold are the country’s traditional colours.",
+    sources: [
+      { title: "Flag of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
+    ],
+  },
+
+  "ML": {
+    description:
+      "A vertical tricolour of green, gold and red — the pan-African colours. Green is the land and its fields, " +
+      "gold the purity and the country’s mineral wealth, and red the blood shed for independence. Adopted 1961.",
+    sources: [
+      { title: "Flag of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+    ],
+  },
+
+  "MM": {
+    description:
+      "Yellow, green and red bands with a large white star at the centre. By the 2010 flag law yellow stands for " +
+      "solidarity and the union of the country’s peoples, green for peace and the green land, and red for courage " +
+      "and decisiveness; the white star is the union itself.",
+    sources: [
+      { title: "Flag of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
+    ],
+  },
+
+  "MN": {
+    description:
+      "Red, blue and red vertical bands with the golden Soyombo emblem on the hoist band. Blue is the eternal sky " +
+      "and red prosperity and endurance. The Soyombo stacks the nation’s symbols: a flame for growth and rebirth, " +
+      "the sun and moon for the Mongol people, two downward triangles as spearheads for the defeat of enemies, " +
+      "bars for honesty and justice, a yin-yang (two fish, ever-watchful), and two upright columns — fortress " +
+      "walls, for the saying that two friends are stronger than stone.",
+    sources: [
+      { title: "Flag of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+    ],
+  },
+
+  "MO": {
+    description:
+      "A green field with a white lotus above the Governor Nobre de Carvalho bridge and stylised water, beneath an " +
+      "arc of five golden stars. Green is the Macao SAR; the lotus is its floral emblem, standing for purity; the " +
+      "bridge and water are its geography and its life as a port; and the five gold stars echo China’s flag, " +
+      "marking Macau as part of China. First flown at the 1999 handover.",
+    sources: [
+      { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    ],
+  },
+
+  "MR": {
+    description:
+      "A green field with a golden crescent and star between two red bands. Green and gold are Islam and the " +
+      "Sahara’s sands, the crescent and star the Islamic faith; the red bands, added in 2017, stand for the blood " +
+      "shed by those who resisted colonial rule.",
+    sources: [
+      { title: "Flag of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+    ],
+  },
+
+  "MS": {
+    description:
+      "A British Blue Ensign with Montserrat’s arms in the fly: a woman in green — Erin, the figure of Ireland — " +
+      "holding a golden harp and embracing a cross. The Irish symbols recall the island’s many settlers of Irish " +
+      "descent, which give it the name “the Emerald Isle of the Caribbean”.",
+    sources: [
+      { title: "Flag of Montserrat — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Montserrat" },
+    ],
+  },
+
+  "MT": {
+    description:
+      "White and red vertical halves with the George Cross, edged red, in the upper hoist. The red and white are " +
+      "Malta’s traditional colours, held to come from the Norman era; the George Cross was awarded to the whole " +
+      "island by King George VI in 1942 for the bravery of the Maltese people under siege in the Second World " +
+      "War, and has been on the flag ever since.",
+    sources: [
+      { title: "Flag of Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
+    ],
+  },
+
+  "MU": {
+    description:
+      "Four horizontal bands of red, blue, yellow and green. Red is the struggle for freedom and independence, " +
+      "blue the Indian Ocean that surrounds the island, yellow the new light of independence, and green the " +
+      "year-round greenery of the land. Adopted at independence in 1968.",
+    sources: [
+      { title: "Flag of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
+    ],
+  },
+
+  "MV": {
+    description:
+      "A red field with a green rectangle bearing a white crescent. Red is the blood of the nation’s heroes and " +
+      "their readiness to defend the country, green the coconut palms and the peace and prosperity of the " +
+      "islands, and the white crescent Islam, the state religion. Adopted 1965.",
+    sources: [
+      { title: "Flag of the Maldives — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Maldives" },
+    ],
+  },
+
+  "MW": {
+    description:
+      "Black, red and green bands with a red rising sun on the black. Black is the peoples of Africa, red the " +
+      "blood shed in the struggle for freedom, and green the land and its nature; the rising sun stands for the " +
+      "dawn of hope and independence across the continent. Adopted 1964.",
+    sources: [
+      { title: "Flag of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+    ],
+  },
+
+  "MX": {
+    description:
+      "Green, white and red vertical bands with the national arms on the white — an eagle on a prickly-pear " +
+      "cactus devouring a serpent, the sign that (in Aztec legend) told the Mexica where to found Tenochtitlan. " +
+      "At independence the colours meant independence (green), the Catholic faith (white) and union (red); after " +
+      "the country secularised they are now popularly read as hope, unity and the blood of the national heroes.",
+    sources: [
+      { title: "Flag of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mexico" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
