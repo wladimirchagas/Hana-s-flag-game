@@ -4923,6 +4923,259 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "TR": {
+    description:
+      "A red field with a white waxing crescent and a white five-pointed star. The star-and-crescent was the emblem " +
+      "of the late Ottoman Empire — adopted as the Ottoman flag in 1844 — and the Republic kept it, fixing its exact " +
+      "proportions and shade by the Turkish Flag Law of 1936. It is affectionately called al bayrak, “the red flag.”",
+    sources: [
+      { title: "Flag of Turkey — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkey" },
+    ],
+  },
+
+  "TT": {
+    description:
+      "A red field crossed by a black diagonal band edged in white, running from the upper hoist to the lower fly. By " +
+      "the official reading red is the warmth and energy of the sun, the courage and friendliness of the people; " +
+      "black the dedication and strength of the land and its people; and white the sea, purity and the equality of " +
+      "all. It was designed by Carlisle Chang and adopted at independence in 1962.",
+    sources: [
+      { title: "Flag of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
+    ],
+  },
+
+  "TW": {
+    description:
+      "A red field with a blue canton bearing a white sun of twelve rays — the “Blue Sky, White Sun.” The twelve " +
+      "rays stand for the twelve two-hour periods of the traditional day and the twelve months, a call to constant " +
+      "progress; the red field was added by Sun Yat-sen for the blood of the revolutionaries who overthrew the Qing " +
+      "dynasty. The three colours are also read for the Three Principles of the People — blue for nationalism and " +
+      "liberty, white for democracy and equality, red for the people's livelihood and fraternity.",
+    sources: [
+      { title: "Flag of the Republic of China — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China" },
+    ],
+  },
+
+  "TZ": {
+    description:
+      "A yellow-edged black diagonal band runs from the lower hoist, dividing a green upper triangle from a light-blue " +
+      "lower one. Green stands for the land's natural vegetation and agriculture, black for the Swahili people, blue " +
+      "for the Indian Ocean and the country's lakes and rivers, and the golden edges for its mineral wealth. The " +
+      "design merges the flags of Tanganyika and Zanzibar, which united in 1964.",
+    sources: [
+      { title: "Flag of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    ],
+  },
+
+  "UA": {
+    description:
+      "Two equal horizontal bands, blue over yellow. The colours descend from the heraldry of the medieval Kingdom of " +
+      "Galicia–Volhynia and the arms of Lviv — a golden charge on an azure field — and were used by Ukrainian " +
+      "national movements from the nineteenth century.",
+    myths: [
+      {
+        claim: "The blue band is the sky above and the yellow band a field of ripening wheat.",
+        reality:
+          "This is a much-loved popular reading, but the colours' documented origin is heraldic — the blue and gold " +
+          "of the medieval Galicia–Volhynia and Lviv arms — rather than a landscape of sky over wheat.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
+    ],
+  },
+
+  "UG": {
+    description:
+      "Six horizontal bands of black, yellow and red, repeated, with a white disc in the centre bearing a grey " +
+      "crowned crane. Black stands for the people of Uganda and of Africa, yellow for the sunshine, and red for " +
+      "brotherhood; the crowned crane is the national bird, a traditional symbol of good fortune, its raised leg " +
+      "sometimes read as the nation moving forward. It was adopted at independence in 1962.",
+    sources: [
+      { title: "Flag of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
+    ],
+  },
+
+  "US": {
+    description:
+      "Thirteen red and white stripes for the thirteen colonies that declared independence, and fifty white stars on " +
+      "a blue canton for the fifty states. The colours were given meaning in 1782 by Charles Thomson, Secretary of " +
+      "Congress, for the Great Seal: white for purity and innocence, red for hardiness and valour, and blue for " +
+      "vigilance, perseverance and justice.",
+    sources: [
+      { title: "Flag of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
+    ],
+  },
+
+  "UY": {
+    description:
+      "Nine horizontal stripes alternating white and blue, with a white canton bearing the golden Sun of May. The " +
+      "nine stripes stand for the nine original departments of Uruguay, and the Sun of May — a radiant human-faced " +
+      "sun also on Argentina's flag — recalls the May Revolution of 1810 that began independence from Spain. It was " +
+      "adopted in 1828 and reduced to nine stripes in 1830.",
+    sources: [
+      { title: "Flag of Uruguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
+    ],
+  },
+
+  "UZ": {
+    description:
+      "Horizontal bands of azure, white and green separated by thin red stripes, with a white crescent and twelve " +
+      "stars in the upper hoist. Azure stands for the sky and water and is the historic colour of the Turkic " +
+      "peoples; white for peace and good fortune; green for nature and new life; and the red stripes for the " +
+      "life-force running through all. The crescent marks the birth of the new republic and the twelve stars its " +
+      "provinces and the months of the year.",
+    sources: [
+      { title: "Flag of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
+    ],
+  },
+
+  "VC": {
+    description:
+      "A vertical triband of blue, gold and green, the gold centre bearing three green diamonds set in a V. Blue is " +
+      "the sky and the sea, gold the warm sand, sunshine and the bright spirit of the people, and green the lush " +
+      "vegetation. The three diamonds — the “Gems of the Antilles” — are arranged as a V for Vincent, and their " +
+      "position echoes the islands' place in the Caribbean. It was adopted in 1985.",
+    sources: [
+      { title: "Flag of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+    ],
+  },
+
+  "VE": {
+    description:
+      "A horizontal tricolour of yellow, blue and red with an arc of eight white stars on the blue band. Yellow " +
+      "stands for the wealth of the land, blue for the Caribbean Sea that separates it from Spain, and red for the " +
+      "blood shed in the struggle for independence. The colours are those of Francisco de Miranda's 1806 flag; the " +
+      "eight stars represent the seven provinces that signed the 1811 declaration of independence plus Guayana, " +
+      "added in 1817.",
+    sources: [
+      { title: "Flag of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
+    ],
+  },
+
+  "VN": {
+    description:
+      "A large golden five-pointed star centred on a red field — the “red flag with a gold star.” The red stands for " +
+      "revolution and the blood of the struggle; the gold star for the nation, its five points commonly said to " +
+      "represent the workers, peasants, soldiers, intellectuals and traders united in building the country. It was " +
+      "first raised in 1940 and standardised in its present form in 1955.",
+    sources: [
+      { title: "Flag of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
+    ],
+  },
+
+  "VU": {
+    description:
+      "Red and green bands separated by a golden Y-shape edged in black, with a black triangle at the hoist bearing a " +
+      "boar's tusk encircling two crossed namele fern fronds. Red stands for the blood that unites all people, green " +
+      "for the richness of the islands, and black for the Melanesian ni-Vanuatu people. The golden Y traces the " +
+      "shape of the archipelago and the light of the gospel; the boar's tusk is a token of prosperity and the namele " +
+      "fronds of peace, their leaflets numbering the members of the first parliament.",
+    sources: [
+      { title: "Flag of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
+    ],
+  },
+
+  "WF": {
+    description:
+      "The locally-used flag of Wallis and Futuna: a red field bearing a white square in which sits a red saltire, " +
+      "set toward the upper fly, with the French Tricolour in the canton to mark the territory's status as a French " +
+      "overseas collectivity. It is unofficial — France recognises no regional flag, so the Tricolour remains the " +
+      "official flag — and is flown at events such as the Pacific Games.",
+    sources: [
+      { title: "Flag of Wallis and Futuna — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Wallis_and_Futuna" },
+    ],
+  },
+
+  "WS": {
+    description:
+      "A red field with a blue canton bearing five white stars in the shape of the Southern Cross. The law assigns no " +
+      "official meaning to the colours, but they are widely read as red for courage, white for purity and blue for " +
+      "freedom; the Southern Cross marks Samoa's place in the South Pacific. The fifth, smaller star was added in " +
+      "1949. It was adopted in 1949 and retained at independence in 1962.",
+    sources: [
+      { title: "Flag of Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+    ],
+  },
+
+  "XN": {
+    description:
+      "A white field with a red crescent and star between two horizontal red stripes — the flag of the Turkish " +
+      "Republic of Northern Cyprus, based on the flag of Turkey with the colours reversed and two red bars added. No " +
+      "official meaning is recorded, though the star and crescent are commonly read as a sign of Turkish identity, " +
+      "the red for the Turkish Cypriots and the white for peace. It was adopted in 1984.",
+    sources: [
+      { title: "Flag of Northern Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Northern_Cyprus" },
+    ],
+  },
+
+  "XS": {
+    description:
+      "Three horizontal bands of green, white and red: the green bears the Shahada, the Islamic declaration of " +
+      "faith, in white, reflecting the central place of Islam in Somaliland; the white band, with a black " +
+      "five-pointed star at its centre, stands for peace, purity and the unity of the people; and the red for the " +
+      "sacrifices made in the struggle for self-determination. It was adopted in 1996.",
+    sources: [
+      { title: "Flag of Somaliland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somaliland" },
+    ],
+  },
+
+  "YE": {
+    description:
+      "A horizontal tricolour of red, white and black — the Pan-Arab Arab Liberation colours shared with Egypt, " +
+      "Syria and Iraq. Red stands for the blood of the martyrs who struggled for independence and unity, white for " +
+      "a bright future, and black for the dark days of the past. It was adopted in 1990 when North and South Yemen " +
+      "united, each having flown a version of the same tricolour.",
+    sources: [
+      { title: "Flag of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    ],
+  },
+
+  "ZA": {
+    description:
+      "Red and blue bands joined by a green horizontal Y-shape, edged in white and gold, springing from a black " +
+      "triangle at the hoist. The Y stands for the convergence of the country's diverse peoples, taking the road " +
+      "ahead in unity; the colours are drawn from the country's history — the red, white and blue of earlier flags " +
+      "and the black, green and gold of the liberation movement. It was adopted in 1994 at the birth of democratic " +
+      "South Africa.",
+    myths: [
+      {
+        claim: "Each colour of the flag has an official meaning (for example green for the land, gold for mineral wealth, black for the people).",
+        reality:
+          "The South African government states that no universal symbolism is attached to the individual colours; " +
+          "only the Y-shape carries an official meaning, the convergence of diverse elements taking the road ahead " +
+          "in unity. People are free to read personal meaning into the colours, but none is official.",
+      },
+    ],
+    sources: [
+      { title: "Flag of South Africa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
+    ],
+  },
+
+  "ZM": {
+    description:
+      "A green field with an orange African fish eagle in flight above a block of three vertical stripes — red, black " +
+      "and orange — at the fly. Green stands for the country's agriculture and natural beauty, red for the struggle " +
+      "for freedom, black for the Zambian people, and orange for the land's copper and mineral wealth. The eagle " +
+      "represents freedom and the people's ability to rise above their problems. It was adopted at independence in " +
+      "1964.",
+    sources: [
+      { title: "Flag of Zambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
+    ],
+  },
+
+  "ZW": {
+    description:
+      "Seven horizontal stripes of green, gold, red and black, with a black-edged white triangle at the hoist " +
+      "bearing a red star and the golden Zimbabwe Bird. Green stands for agriculture, gold for mineral wealth, red " +
+      "for the blood shed in the liberation struggle and black for the black majority; the white triangle for peace, " +
+      "the red star for the nation's aspirations, and the soapstone Zimbabwe Bird — from the ruins of Great Zimbabwe " +
+      "— for the nation's heritage. It was adopted at independence in 1980.",
+    sources: [
+      { title: "Flag of Zimbabwe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
