@@ -16,6 +16,7 @@
     "anthems:check-lyrics": "node scripts/check-anthem-lyrics.mjs",
     "flags:check": "node scripts/check-flag-proportions.mjs && node scripts/check-parent-flag-collision.mjs && node scripts/check-subdivision-name-collisions.mjs && node scripts/check-subdivision-meta-coverage.mjs && node scripts/check-disputed-territory-coverage.mjs && node scripts/check-flag-image-quality.mjs && node scripts/check-flag-meanings.mjs && node scripts/check-city-flag-meanings.mjs && node scripts/check-capital-flags.mjs && node scripts/check-capital-subdivision-collision.mjs && node scripts/check-population-freshness.mjs && node scripts/check-hierarchy-type-colors.mjs && node scripts/trim-flag-transparency.mjs --check && node scripts/build-flag-aspect-ratios.mjs --check",
     "pop:check": "node scripts/check-population-freshness.mjs",
+    "maps:check": "node scripts/check-historical-maps.mjs",
     "flags:check:capital-flags": "node scripts/check-capital-flags.mjs",
     "flags:check:type-colors": "node scripts/check-hierarchy-type-colors.mjs",
     "subdiv:check-meta": "node scripts/check-subdivision-meta-coverage.mjs",
