@@ -4594,6 +4594,335 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "SA": {
+    description:
+      "A green field bearing, in white Thuluth calligraphy, the Islamic declaration of faith (the Shahada) — “There " +
+      "is no god but God; Muhammad is the Messenger of God” — above a horizontal sword. Green is the colour of " +
+      "Islam, the creed itself is the heart of the flag, and the sword stands for justice and the strength that " +
+      "unified the kingdom. Because the Shahada is sacred, the flag is never lowered to half-mast and is woven so " +
+      "the text reads correctly on both sides.",
+    sources: [
+      { title: "Flag of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
+    ],
+  },
+
+  "SB": {
+    description:
+      "A thin yellow diagonal stripe runs from the lower hoist to the upper fly, dividing a blue upper triangle from " +
+      "a green lower one; five white stars sit in the blue. Blue stands for the water — the rivers, the rain and the " +
+      "surrounding Pacific; green for the land and its trees and crops; and the yellow stripe for the sun. The five " +
+      "stars stood for the country's five districts at independence in 1978 and have been kept even as more " +
+      "provinces were later created.",
+    sources: [
+      { title: "Flag of the Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands" },
+    ],
+  },
+
+  "SC": {
+    description:
+      "Five oblique bands — blue, yellow, red, white and green — radiate from the lower hoist corner, symbolising a " +
+      "dynamic young country moving into the future. Blue is the sky and the sea, yellow the sun that gives light " +
+      "and life, red the people and their unity and love, white social justice and harmony, and green the land and " +
+      "the natural environment. The colours also blend those of the country's two main political parties. It was " +
+      "adopted in 1996.",
+    sources: [
+      { title: "Flag of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+    ],
+  },
+
+  "SD": {
+    description:
+      "A horizontal tricolour of red, white and black with a green triangle at the hoist — the Pan-Arab Arab " +
+      "Liberation colours. Red recalls the struggle for independence and the martyrs who died for it; white stands " +
+      "for peace, light and optimism and recalls the White Flag League of 1924; black is for Sudan itself (whose " +
+      "name means “the land of the blacks”) and the black banner of the Mahdist revolt; and green is for Islam, " +
+      "agriculture and prosperity.",
+    sources: [
+      { title: "Flag of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+    ],
+  },
+
+  "SE": {
+    description:
+      "A yellow Nordic cross set on a light-blue field. The colours come from Sweden's coat of arms — three golden " +
+      "crowns on blue, in use since the fourteenth century — and the cross follows the shared Nordic form that " +
+      "traditionally represents Christianity.",
+    sources: [
+      { title: "Flag of Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
+    ],
+  },
+
+  "SG": {
+    description:
+      "A field of red over white, with a white crescent moon and five stars in a circle in the upper hoist. Red " +
+      "stands for universal brotherhood and the equality of all people, white for pervading and everlasting purity " +
+      "and virtue. The crescent represents a young nation on the rise, and the five stars stand for the nation's " +
+      "ideals of democracy, peace, progress, justice and equality. It was adopted in 1959.",
+    sources: [
+      { title: "Flag of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
+    ],
+  },
+
+  "SH": {
+    description:
+      "A British Blue Ensign with the Union Flag in the canton and Saint Helena's coat of arms in the fly. The arms " +
+      "show a three-masted sailing ship approaching the island's rocky, cliff-lined coast — recalling the colony's " +
+      "seal and its role as a mid-Atlantic port of call — beneath the wirebird (the Saint Helena plover), the " +
+      "island's endemic national bird. The arms carry the motto “Loyal and Unshakeable.”",
+    sources: [
+      { title: "Coat of arms of Saint Helena — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena" },
+    ],
+  },
+
+  "SI": {
+    description:
+      "A white-blue-red horizontal tricolour with the national arms in the upper hoist. The arms show Mount Triglav, " +
+      "the country's highest peak, in white on blue; two wavy lines beneath it for the Adriatic and Slovenia's " +
+      "rivers; and three golden six-pointed stars taken from the arms of the medieval Counts of Celje. The colours " +
+      "themselves derive from the medieval heraldry of the Duchy of Carniola rather than being purely Pan-Slavic.",
+    sources: [
+      { title: "Flag of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
+    ],
+  },
+
+  "SK": {
+    description:
+      "A white-blue-red Pan-Slavic tricolour with the national arms toward the hoist. The arms show a white " +
+      "double-cross rising from three blue hills on a red shield: the double cross is an ancient Christian symbol " +
+      "long associated with the region, and the three hills are traditionally taken to be the mountain ranges " +
+      "Tatra, Fatra and Mátra. It was adopted in 1992 as Slovakia became independent.",
+    sources: [
+      { title: "Flag of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
+    ],
+  },
+
+  "SL": {
+    description:
+      "Three horizontal bands of green, white and blue. Green stands for the country's agriculture, natural " +
+      "resources and mountains; white for unity and justice; and blue for the natural harbour of Freetown and the " +
+      "hope of contributing to world peace. The flag was adopted at independence in 1961, its colours drawn from " +
+      "the national coat of arms.",
+    sources: [
+      { title: "Flag of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+    ],
+  },
+
+  "SM": {
+    description:
+      "Two horizontal bands, white over light blue, with the national arms in the centre. White stands for peace and " +
+      "light blue for liberty. The arms show three towers — the fortresses Guaita, Cesta and Montale that crown the " +
+      "three peaks of Monte Titano — under a crown, framed by laurel and oak, above a scroll reading “LIBERTAS,” " +
+      "freedom, the watchword of one of the world's oldest republics.",
+    sources: [
+      { title: "Flag of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+    ],
+  },
+
+  "SN": {
+    description:
+      "Three vertical bands of green, yellow and red — the Pan-African colours of unity — with a green five-pointed " +
+      "star in the centre. Green carries a meaning for each of Senegal's faiths (the colour of the Prophet in " +
+      "Islam, hope for Christians, fertility in traditional belief); yellow stands for wealth and the fruits of " +
+      "labour, arts and learning; and red for the blood and sacrifice of the struggle for progress. The star stands " +
+      "for unity and openness. It was adopted in 1960.",
+    sources: [
+      { title: "Flag of Senegal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
+    ],
+  },
+
+  "SO": {
+    description:
+      "A single white five-pointed star on a light-blue field. The blue was chosen in tribute to the United Nations, " +
+      "which oversaw Somalia's path to independence, and is now also read as the sky and the surrounding seas. The " +
+      "star is the Star of Unity, its five points standing for the five regions where Somalis form the majority — " +
+      "the former British and Italian Somalilands, Djibouti, the Ogaden and Kenya's North Eastern region. It was " +
+      "adopted in 1954.",
+    sources: [
+      { title: "Flag of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    ],
+  },
+
+  "SR": {
+    description:
+      "Five horizontal bands — green, white, red, white, green, the central red band the widest — with a yellow " +
+      "five-pointed star in the middle. Red stands for progress, green for the fertility of the land and white for " +
+      "freedom and justice; the golden star represents the unity of the nation's peoples and a bright future, and " +
+      "the sacrifices made for independence. It was adopted in 1975.",
+    sources: [
+      { title: "Flag of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
+    ],
+  },
+
+  "SS": {
+    description:
+      "Three horizontal bands of black, red and green separated by thin white stripes, with a blue triangle at the " +
+      "hoist bearing a golden star. Black stands for the people of South Sudan, red for the blood shed for " +
+      "independence, green for the land and its agricultural wealth, and the white stripes for peace. The blue " +
+      "triangle is the waters of the Nile, and the golden Star of Bethlehem stands for the unity of the states. It " +
+      "was adopted in 2005.",
+    sources: [
+      { title: "Flag of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
+    ],
+  },
+
+  "ST": {
+    description:
+      "A green-yellow-green horizontal triband with a red triangle at the hoist and two black stars on the yellow " +
+      "band — the Pan-African colours. Green stands for the country's lush vegetation, yellow for the tropical sun " +
+      "(and its cocoa), and the red triangle for the struggle for independence and equality. The two black stars " +
+      "represent the two islands, São Tomé and Príncipe, and their people. It was adopted at independence in 1975.",
+    sources: [
+      { title: "Flag of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+    ],
+  },
+
+  "SV": {
+    description:
+      "Two blue horizontal bands framing a white band that bears the national coat of arms. The blue bands stand for " +
+      "the two oceans of Central America (and the sky) and the white for peace. The flag descends from that of the " +
+      "United Provinces of Central America — itself modelled on Argentina's — which El Salvador readopted in 1912 to " +
+      "distance itself from an earlier stars-and-stripes design resembling the flag of the United States.",
+    sources: [
+      { title: "Flag of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
+    ],
+  },
+
+  "SX": {
+    description:
+      "A white triangle at the hoist bearing the territory's coat of arms, with horizontal bands of red over blue. " +
+      "The red, white and blue evoke both the Dutch and the French flags, reflecting the island shared by the two " +
+      "nations. The arms show the courthouse of Philipsburg, the border monument marking the Dutch–French frontier " +
+      "and the orange-tinted yellow sage flower, crested by a pelican and the motto “Semper progrediens” — always " +
+      "progressing.",
+    sources: [
+      { title: "Flag of Sint Maarten — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten" },
+    ],
+  },
+
+  "SY": {
+    description:
+      "A horizontal tricolour of green, white and black bearing three red five-pointed stars on the white band — the " +
+      "independence flag of 1930, restored after the fall of the Assad government and made the national flag by the " +
+      "constitutional declaration of March 2025. The three colours are traditionally read for eras of Arab and " +
+      "Islamic history — green for the Rashidun, white for the Umayyad and black for the Abbasid caliphates — and " +
+      "the three stars originally stood for the historic states of Aleppo, Damascus and Deir ez-Zor.",
+    sources: [
+      { title: "Flag of Syria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+    ],
+  },
+
+  "SZ": {
+    description:
+      "Blue bands top and bottom frame a broad crimson centre edged with yellow, on which lie a black-and-white " +
+      "Nguni war shield, two spears and a fighting staff hung with royal tassels. Crimson recalls past battles, blue " +
+      "peace and stability, and yellow the country's mineral resources. The shield and spears stand for protection " +
+      "from enemies; its black and white halves for the peaceful coexistence of black and white peoples; and the " +
+      "injobo tassels of widowbird and lourie feathers are ornaments used only by the king.",
+    sources: [
+      { title: "Flag of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+    ],
+  },
+
+  "TD": {
+    description:
+      "A vertical tricolour of indigo blue, yellow and red — designed to combine the blue, white and red of the " +
+      "French flag with the Pan-African green, yellow and red. Blue stands for the sky, hope and the waters of Lake " +
+      "Chad, yellow for the sun and the sands of the Sahara, and red for progress, unity and the blood shed for " +
+      "independence. The green of the Pan-African scheme was changed to indigo to distinguish the flag from Mali's.",
+    myths: [
+      {
+        claim: "Chad copied its flag from Romania (or vice versa).",
+        reality:
+          "The near-identical designs arose independently: Romania's tricolour dates from 1866 and Chad's from " +
+          "1959, and for decades they differed because Romania's carried a communist emblem. The resemblance became " +
+          "exact only when Romania removed that emblem in 1989.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+    ],
+  },
+
+  "TG": {
+    description:
+      "Five alternating green and yellow stripes with a white five-pointed star on a red square in the canton — the " +
+      "Pan-African colours. Green stands for forests, agriculture and hope, yellow for the country's natural wealth " +
+      "and faith, and red for the blood shed for independence; the white star stands for peace and enlightenment. " +
+      "The five stripes represent Togo's five regions. It was adopted at independence in 1960.",
+    sources: [
+      { title: "Flag of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    ],
+  },
+
+  "TH": {
+    description:
+      "Five horizontal bands — red, white, blue, white, red — the central blue band twice the width of the others; " +
+      "the Trairong, or tricolour. The colours are read as the unofficial motto nation-religion-king: red for the " +
+      "land and its people, white for the religions, and blue for the monarchy (also King Vajiravudh's personal " +
+      "auspicious colour). It was adopted in 1917.",
+    sources: [
+      { title: "Flag of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Thailand" },
+    ],
+  },
+
+  "TJ": {
+    description:
+      "Horizontal bands of red, white and green (the white the widest) with a golden crown surmounted by an arc of " +
+      "seven stars in the centre. Red stands for unity and victory, white for the snow of the mountains and for " +
+      "cotton, and green for the fertile valleys and Islam. The crown (tâj, the root of the country's name) and the " +
+      "seven stars — seven signifying perfection in Persian tradition — represent the Tajik people. It was adopted " +
+      "in 1992.",
+    sources: [
+      { title: "Flag of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
+    ],
+  },
+
+  "TL": {
+    description:
+      "A red field with a yellow triangle at the hoist overlaid by a narrower black triangle bearing a white star. " +
+      "By the 2002 constitution, red is the struggle for national liberation, yellow the traces of colonialism (the " +
+      "country's wealth) and black the obscurantism that must be overcome, while the white star is the light that " +
+      "guides. It was first raised at the 1975 declaration of independence and readopted when Timor-Leste became " +
+      "fully independent in 2002.",
+    sources: [
+      { title: "Flag of East Timor — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_East_Timor" },
+    ],
+  },
+
+  "TM": {
+    description:
+      "A green field with a white waxing crescent and five white stars, and a vertical red-maroon band near the hoist " +
+      "carrying five carpet guls above two crossed olive branches. Green and the crescent stand for Islam and a " +
+      "bright future; the five stars and five guls both represent the country's five provinces and its five " +
+      "principal tribes, whose traditional carpet designs they reproduce; and the olive branches, added in 1997, " +
+      "mark Turkmenistan's declared neutrality.",
+    sources: [
+      { title: "Flag of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+    ],
+  },
+
+  "TN": {
+    description:
+      "A red field with a central white disc bearing a red crescent and five-pointed star. The design derives from " +
+      "the late-Ottoman flag of the region; the red recalls the blood of martyrs, the white disc the radiance of " +
+      "the nation as the sun, and the crescent and star are traditional emblems of Islam. It was in use from the " +
+      "1830s and confirmed as the flag of the Republic in 1959.",
+    sources: [
+      { title: "Flag of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    ],
+  },
+
+  "TO": {
+    description:
+      "A red field with a white canton bearing a red couped cross. The cross and the colours reflect Tonga's deep " +
+      "Christian faith: white for purity and red for the blood of Christ shed at the crucifixion. An earlier design " +
+      "was a white flag with a red cross, changed because it too closely resembled the emblem of the Red Cross; the " +
+      "constitution now declares that the flag may never be altered. It was adopted in 1875.",
+    sources: [
+      { title: "Flag of Tonga — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
