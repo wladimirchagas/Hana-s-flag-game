@@ -257,6 +257,10 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Meroe", { continent: "Northeast Africa", note: "Kingdom of Kush, successor to Nubia, in modern Sudan.", population: 250_000 }],
   ["Maya chiefdoms and states", { continent: "Mesoamerica", note: "Network of Maya city-states across modern Guatemala / Belize / S. Mexico.", population: 3_000_000 }],
   ["Teotihuacán", { continent: "Mesoamerica", note: "Massive city-state in the Valley of Mexico.", population: 200_000 }],
+  // The 600 AD file spells the same city with a grave accent ("Teotihuacàn").
+  // Registry keys must match the dataset NAME verbatim, so both spellings are
+  // listed — otherwise the era that uses the variant renders a bare name.
+  ["Teotihuacàn", { continent: "Mesoamerica", note: "Massive city-state in the Valley of Mexico.", population: 200_000 }],
   ["Moche", { continent: "South America", note: "Andean civilisation of coastal Peru.", population: 500_000 }],
   ["Nazca", { continent: "South America", note: "Andean civilisation famous for the desert geoglyphs.", population: 50_000 }],
   ["Himyarite Kingdom", { continent: "Arabia", note: "Incense kingdom of southern Arabia.", population: 1_000_000 }],
@@ -381,6 +385,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Gauda Kingdom", { continent: "South Asia", note: "Shashanka's kingdom of Bengal.", population: 4_000_000 }],
   ["Gurjara dynasty", { continent: "South Asia", note: "Predecessors of the Pratiharas.", population: 3_000_000 }],
   ["Gurjara-Pratihara", { continent: "South Asia", note: "Northern Indian dynasty; held off Arab incursions across the Sindh.", population: 50_000_000 }],
+  // The 800 AD file carries BOTH the hyphenated and the space-separated
+  // spelling as separate features; keep both keys so neither renders bare.
+  ["Gurjara Pratihara", { continent: "South Asia", note: "Northern Indian dynasty; held off Arab incursions across the Sindh.", population: 50_000_000 }],
   ["Kuru Mahajanapada", { continent: "South Asia", note: "One of the great Vedic-age realms, north-west of the Ganges.", population: 1_500_000 }],
   ["Late Gupta successors", { continent: "South Asia", note: "Petty kingdoms of the late-Gupta collapse.", population: 5_000_000 }],
   ["Late Pallava / early Chola", { continent: "South Asia", note: "End of Pallava power; the Cholas would soon rise to imperial heights.", population: 8_000_000 }],
