@@ -3944,6 +3944,160 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "LB": {
+    description:
+      "Red bands top and bottom around a white middle band bearing a green cedar of Lebanon. Red is the blood " +
+      "shed in defence of the country, white the peace and the snow of the mountains, and the cedar — the tree of " +
+      "the Bible — stands for holiness, endurance and eternity. Adopted 1943.",
+    sources: [
+      { title: "Flag of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    ],
+  },
+
+  "LC": {
+    description:
+      "A blue field with a golden triangle over a black one, both edged white, rising from the base. Blue is the " +
+      "sea and sky around the island; the triangles are the Pitons, its twin volcanic peaks, and their black and " +
+      "white the two peoples living together in unity, with the gold for sunshine and prosperity. Adopted 1967.",
+    sources: [
+      { title: "Flag of Saint Lucia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
+    ],
+  },
+
+  "LI": {
+    description:
+      "Blue over red with a gold crown in the upper hoist. Blue is the sky and red the evening fires lit in the " +
+      "country’s houses; the crown marks the principality and the unity of the people with their ruling house. " +
+      "The crown was added in 1937 after Liechtenstein discovered at the 1936 Olympics that its flag was " +
+      "identical to Haiti’s.",
+    sources: [
+      { title: "Flag of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    ],
+  },
+
+  "LK": {
+    description:
+      "A golden lion holding a sword on a maroon field, with a bo (fig) leaf in each corner, beside orange and " +
+      "green stripes, all in a golden border. The lion and maroon are the Sinhalese people and the strength of " +
+      "the nation, the sword its sovereignty, and the four bo leaves the Buddhist virtues of loving-kindness, " +
+      "compassion, sympathetic joy and equanimity; the orange stripe stands for the Tamils, the green for the " +
+      "Muslims (Moors), and the border for the other communities.",
+    sources: [
+      { title: "Flag of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
+    ],
+  },
+
+  "LR": {
+    description:
+      "Eleven red and white stripes with a white star on a blue canton — closely modelled on the flag of the " +
+      "United States, for Liberia was founded by freed African Americans. The eleven stripes are the signers of " +
+      "the 1847 Declaration of Independence, the blue canton is Africa, and the lone white star marks Liberia as " +
+      "the continent’s first independent republic.",
+    sources: [
+      { title: "Flag of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
+    ],
+  },
+
+  "LS": {
+    description:
+      "Blue, white and green bands with a black Basotho hat (mokorotlo) at the centre. Blue is the sky and the " +
+      "rain, white peace, and green prosperity; the mokorotlo stands for the Basotho people and their culture. " +
+      "Adopted in 2006 for the 40th anniversary of independence, replacing the earlier flag’s military emblems.",
+    sources: [
+      { title: "Flag of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    ],
+  },
+
+  "LT": {
+    description:
+      "A horizontal tricolour of yellow, green and red. Yellow is the sun, the light and the country’s fields of " +
+      "grain; green its forests, countryside and hope; and red the blood and courage shed for the nation. First " +
+      "adopted in 1918 and restored in 1988.",
+    sources: [
+      { title: "Flag of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
+    ],
+  },
+
+  "LU": {
+    description:
+      "Red, white and light-blue horizontal bands, taken from the arms of the medieval House of Luxembourg (a red " +
+      "lion on a white-and-blue striped field). It looks much like the Dutch flag but is longer and uses a " +
+      "lighter blue — a difference written into law in 1993.",
+    sources: [
+      { title: "Flag of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
+    ],
+  },
+
+  "LV": {
+    description:
+      "A deep carmine-red field with a narrow white stripe across the middle — one of the oldest flags known, " +
+      "recorded in a 13th-century chronicle.",
+    myths: [
+      {
+        claim: "The colours come from a Latvian chief who was wrapped, mortally wounded, in a white sheet: his " +
+          "blood stained it red except for the strip his body lay on, leaving a white stripe.",
+        reality:
+          "This is the traditional origin story told in the medieval Rhymed Chronicle; it is a legend rather than " +
+          "documented fact, but it is the account from which the flag’s design is drawn.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
+    ],
+  },
+
+  "LY": {
+    description:
+      "Red, black (double-width) and green bands with a white crescent and star on the black. Red is the blood " +
+      "sacrificed for freedom, black the dark years under Italian colonial rule (and the region of Cyrenaica), " +
+      "and green the land and its farming (Tripolitania); the crescent and star stand for Islam. The Kingdom-era " +
+      "flag, restored in 2011.",
+    sources: [
+      { title: "Flag of Libya — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    ],
+  },
+
+  "MA": {
+    description:
+      "A red field with a green five-pointed star — the Seal of Solomon — outlined in its centre. Red is the long " +
+      "history and the bravery of the Moroccan people (and the ruling Alaouite dynasty), and the green " +
+      "interlaced star stands for Islam, life and peace, its five points for the five pillars of the faith. The " +
+      "star was added to the plain red flag in 1915.",
+    sources: [
+      { title: "Flag of Morocco — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
+    ],
+  },
+
+  "MC": {
+    description:
+      "Red over white — the heraldic colours of the House of Grimaldi, which has ruled Monaco since the end of " +
+      "the 13th century. (The design matches Indonesia’s flag but is older and slightly squarer.)",
+    sources: [
+      { title: "Flag of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
+    ],
+  },
+
+  "MD": {
+    description:
+      "A blue, yellow and red vertical tricolour with the national arms on the yellow — the same colours as " +
+      "Romania’s flag, marking the two countries’ shared heritage. The arms show an eagle holding a cross and an " +
+      "olive branch, with a shield bearing the aurochs head of medieval Moldavia between a star, a rose and a " +
+      "crescent. Adopted 1990.",
+    sources: [
+      { title: "Flag of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+    ],
+  },
+
+  "ME": {
+    description:
+      "A red field within a gold border, charged with the state coat of arms: a golden crowned double-headed " +
+      "eagle — a Byzantine and Orthodox emblem carried by Montenegro’s old royal house — holding a sceptre and " +
+      "orb, with a shield on its breast showing a lion. Adopted 2004.",
+    sources: [
+      { title: "Flag of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
