@@ -4243,6 +4243,357 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "MY": {
+    description:
+      "Fourteen alternating red and white stripes with a dark-blue canton bearing a yellow crescent and a " +
+      "fourteen-pointed star. The fourteen stripes and the fourteen points of the star (the Bintang Persekutuan, " +
+      "the Federal Star) stand for the equal union of the thirteen states and the federal government. Yellow is the " +
+      "royal colour of the Malay rulers; the crescent represents Islam, the state religion; and the blue canton " +
+      "symbolises the unity of the Malaysian people.",
+    sources: [
+      { title: "Flag of Malaysia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
+    ],
+  },
+
+  "MZ": {
+    description:
+      "Green, black (edged in white) and yellow horizontal bands with a red triangle at the hoist bearing a yellow " +
+      "star, on which sit an open book, a hoe and an AK-47 rifle. Green stands for the riches of the land, white for " +
+      "peace, black for the African continent, yellow for the country's minerals and red for the struggle for " +
+      "independence. The star represents internationalism, the book education, the hoe agriculture and the rifle " +
+      "defence and vigilance — Mozambique's is the only national flag to depict a modern firearm.",
+    sources: [
+      { title: "Flag of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
+    ],
+  },
+
+  "NA": {
+    description:
+      "A red diagonal band edged in white runs from lower hoist to upper fly, dividing a blue triangle (upper hoist) " +
+      "from a green triangle (lower fly); the blue triangle carries a golden twelve-rayed sun. Red represents the " +
+      "Namibian people and their determination and heroism; white stands for peace and unity; blue for the sky, the " +
+      "Atlantic Ocean and the country's water and rain; green for vegetation and agriculture; and the golden sun for " +
+      "life and energy. The design was adopted at independence in 1990.",
+    sources: [
+      { title: "Flag of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    ],
+  },
+
+  "NE": {
+    description:
+      "Three horizontal bands of orange, white and green with an orange disc in the centre. Orange represents the " +
+      "Sahara Desert of the north, white stands for purity and the River Niger, and green for the fertile grasslands " +
+      "of the south and for hope. The central orange disc represents the sun and the sacrifices of the people.",
+    sources: [
+      { title: "Flag of Niger — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
+    ],
+  },
+
+  "NG": {
+    description:
+      "Three vertical bands, green-white-green. The green bands stand for Nigeria's forests and natural wealth and " +
+      "its agriculture, and the white band for peace and unity. The flag was designed by student Michael Taiwo " +
+      "Akinkunmi in a 1959 competition; his winning entry originally carried a red sun on the white band, which the " +
+      "selectors removed.",
+    sources: [
+      { title: "Flag of Nigeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
+    ],
+  },
+
+  "NI": {
+    description:
+      "Two blue horizontal bands framing a white band that carries the national coat of arms — a triangle enclosing " +
+      "five volcanoes (the five members of the former United Provinces of Central America), a rising sun, a rainbow " +
+      "and a cap of liberty. The blue bands are usually taken to represent the Pacific and Caribbean seas that flank " +
+      "the country, and the white the land between them; the blue-white-blue pattern preserves the flag of the old " +
+      "Central American federation.",
+    sources: [
+      { title: "Flag of Nicaragua — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
+    ],
+  },
+
+  "NL": {
+    description:
+      "Three equal horizontal bands of red, white and blue — the oldest tricolour still in use. It descends from the " +
+      "Prince's Flag of orange, white and blue carried by the followers of William of Orange in the Dutch Revolt; " +
+      "over the seventeenth century the orange band came to be shown as red and the change was made official in 1937. " +
+      "The colours themselves carry no official symbolic meaning.",
+    sources: [
+      { title: "Flag of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands" },
+    ],
+  },
+
+  "NO": {
+    description:
+      "A red field bearing a blue Nordic cross edged in white, the cross shifted toward the hoist. The design is " +
+      "based on the Danish Dannebrog (Norway was in union with Denmark), with a blue cross added over the white; the " +
+      "red, white and blue were deliberately chosen as the colours of liberty shared with France, the United States " +
+      "and Britain. It was adopted in 1821.",
+    sources: [
+      { title: "Flag of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
+    ],
+  },
+
+  "NP": {
+    description:
+      "The only national flag that is not a rectangle: two stacked crimson pennants with a blue border, the upper " +
+      "bearing a white crescent moon and the lower a white sun. The crimson is the colour of the rhododendron, " +
+      "Nepal's national flower, and stands for bravery; the blue border stands for peace. The two triangles are said " +
+      "to represent the Himalayas and, in a later reading, Hinduism and Buddhism. The moon and sun express the hope " +
+      "that Nepal will endure as long as those bodies.",
+    sources: [
+      { title: "Flag of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
+    ],
+  },
+
+  "NR": {
+    description:
+      "A blue field crossed by a narrow horizontal gold stripe, with a white twelve-pointed star just below the " +
+      "stripe near the hoist. The blue represents the Pacific Ocean, the gold stripe the Equator, and the star's " +
+      "position just below it shows that Nauru lies just south of the Equator; the twelve points stand for the " +
+      "island's twelve original tribes.",
+    sources: [
+      { title: "Flag of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Nauru" },
+    ],
+  },
+
+  "NZ": {
+    description:
+      "A blue ensign bearing the Union Jack in the canton and four red, white-edged five-pointed stars forming the " +
+      "Southern Cross. The Union Jack reflects New Zealand's origins as a British colony and its Commonwealth ties, " +
+      "and the Southern Cross constellation marks the country's location in the South Pacific.",
+    sources: [
+      { title: "Flag of New Zealand — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
+    ],
+  },
+
+  "OM": {
+    description:
+      "Horizontal bands of white, red and green with a broad red band down the hoist bearing the national emblem — a " +
+      "khanjar dagger in its sheath crossed over two swords. Red recalls the battles the Omani people fought against " +
+      "foreign invaders, white stands for peace and prosperity and for the Imamate, and green for the fertile Jebel " +
+      "Akhdar (Green Mountains). The emblem is the badge of the ruling Al Bu Said dynasty.",
+    sources: [
+      { title: "Flag of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+    ],
+  },
+
+  "PA": {
+    description:
+      "The flag is quartered: a white quarter with a blue star at the upper hoist, a plain red quarter at the upper " +
+      "fly, a plain blue quarter at the lower hoist and a white quarter with a red star at the lower fly. Blue was " +
+      "the colour of the Conservative Party and red that of the Liberals; the white stands for the peace between the " +
+      "two after independence. The blue star represents the purity and honesty of the nation's life and the red star " +
+      "the authority and law that enforce them.",
+    sources: [
+      { title: "Flag of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
+    ],
+  },
+
+  "PE": {
+    description:
+      "Three vertical bands, red-white-red, the white centre bearing the national coat of arms — a vicuña, a " +
+      "cinchona tree and a cornucopia spilling gold coins, representing Peru's animal, plant and mineral wealth. " +
+      "Red and white are the national colours adopted at independence; by a popular tradition the liberator José de " +
+      "San Martín chose them after seeing flocks of red-and-white parihuana flamingos take flight.",
+    sources: [
+      { title: "Flag of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
+    ],
+  },
+
+  "PG": {
+    description:
+      "A flag divided diagonally from the upper hoist to the lower fly: the upper triangle is red bearing a golden " +
+      "Raggiana bird-of-paradise, the lower triangle black bearing the five white stars of the Southern Cross. Red " +
+      "and black are long-standing traditional colours of many Papua New Guinean tribes; the bird-of-paradise, a " +
+      "national emblem, is shown soaring to represent the country's emergence to nationhood; and the Southern Cross " +
+      "marks its place in the South Pacific and its ties to other nations of the region. The design was drawn by a " +
+      "schoolgirl, Susan Karike, in 1971.",
+    sources: [
+      { title: "Flag of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    ],
+  },
+
+  "PH": {
+    description:
+      "Two horizontal bands, royal blue over red, with a white equilateral triangle at the hoist bearing a golden " +
+      "eight-rayed sun and three golden stars. The white triangle stands for liberty, equality and fraternity; the " +
+      "eight rays of the sun for the first eight provinces that rose in the 1896 revolution; and the three stars for " +
+      "the country's three main island groups, Luzon, the Visayas and Mindanao. Uniquely, the flag is flown with " +
+      "the red band uppermost in time of war and the blue uppermost in peace.",
+    sources: [
+      { title: "Flag of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Philippines" },
+    ],
+  },
+
+  "PK": {
+    description:
+      "A dark-green field with a white crescent and five-pointed star at its centre and a broad white vertical stripe " +
+      "at the hoist. The green represents Pakistan's Muslim majority and the white stripe its religious minorities; " +
+      "together they express the country's commitment to both. The crescent stands for progress and the star for " +
+      "light and knowledge, and the pair is a traditional symbol of Islam. It was adopted days before independence " +
+      "in August 1947.",
+    sources: [
+      { title: "Flag of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    ],
+  },
+
+  "PL": {
+    description:
+      "Two equal horizontal bands, white over red. The colours are the heraldic tinctures of the nation's arms — the " +
+      "White Eagle of Poland set on a red shield — formally adopted as the national colours in 1831.",
+    myths: [
+      {
+        claim: "The white stands for purity and the red for the blood shed by Poles for their country.",
+        reality:
+          "These are later patriotic readings. The colours were taken from the tinctures of the coat of arms — a " +
+          "white (silver) eagle on a red field — the standard way national colours were derived from heraldry, not " +
+          "from an allegory of purity and blood.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
+    ],
+  },
+
+  "PR": {
+    description:
+      "Five horizontal stripes alternating red and white with a blue equilateral triangle at the hoist bearing a " +
+      "single white five-pointed star. The lone star stands for the island itself; the three sides of the triangle " +
+      "for the executive, legislative and judicial branches of government; the blue for the sky and coastal waters; " +
+      "the red stripes for the blood of the patriots; and the white stripes for liberty, victory and peace. The " +
+      "design dates from 1895 and was adopted as the official flag of the Commonwealth in 1952.",
+    sources: [
+      { title: "Flag of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
+    ],
+  },
+
+  "PS": {
+    description:
+      "A horizontal tricolour of black, white and green with a red triangle at the hoist — the four Pan-Arab colours, " +
+      "first combined in this arrangement during the 1916 Arab Revolt. Each colour recalls an era of Arab history: " +
+      "black the Abbasid caliphate, white the Umayyad, green the Fatimid, and red the Hashemites and the blood of " +
+      "those who fought. The flag was adopted by the Palestine Liberation Organization in 1964 as the flag of the " +
+      "Palestinian people.",
+    sources: [
+      { title: "Flag of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
+    ],
+  },
+
+  "PT": {
+    description:
+      "A field of green at the hoist and red at the fly, with the national arms — a white shield of five blue " +
+      "escutcheons and a red border of golden castles — set over a yellow armillary sphere on the colour boundary. " +
+      "The armillary sphere recalls Portugal's age of maritime discovery; the shield's castles and blue escutcheons " +
+      "are the historic arms of the kingdom, the five wounds of Christ a traditional reading of the escutcheons.",
+    myths: [
+      {
+        claim: "The green stands for hope and the red for the blood of the nation.",
+        reality:
+          "The green and red were adopted only in 1910, taken from the flag of the Portuguese Republican Party when " +
+          "the monarchy fell; the commission that chose them called red the warm, virile colour of battle and green " +
+          "the colour of hope, but there is no documented traditional meaning behind them.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Portugal" },
+    ],
+  },
+
+  "PW": {
+    description:
+      "A sky-blue field bearing a single golden-yellow disc set slightly toward the hoist. The disc is a full moon, " +
+      "long important in Palauan life as the time for fishing, planting, harvesting and canoe-carving and a symbol " +
+      "of peace and tranquillity; the blue represents the Pacific Ocean and the passage from foreign rule to " +
+      "self-government. It was adopted in 1981.",
+    myths: [
+      {
+        claim: "The flag is modelled on the flag of Japan.",
+        reality:
+          "The designer, Blau J. Skebong, denied any connection. Unlike Japan's centred red sun on white, Palau's " +
+          "disc is a golden full moon, deliberately set off-centre toward the hoist, on a sky-blue field.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Palau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
+    ],
+  },
+
+  "PY": {
+    description:
+      "Three horizontal bands of red, white and blue, inspired by the French Tricolour as a sign of independence and " +
+      "liberty. It is the only national flag whose two sides differ: the obverse carries the national seal (a golden " +
+      "star in a wreath of palm and olive, ringed by “República del Paraguay”), while the reverse carries the seal " +
+      "of the treasury (a lion guarding a red cap of liberty on a staff, with the motto “Paz y Justicia,” Peace and " +
+      "Justice).",
+    sources: [
+      { title: "Flag of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    ],
+  },
+
+  "QA": {
+    description:
+      "A maroon field with a white band at the hoist, the two separated by a serrated line of nine white points. The " +
+      "nine points mark Qatar as the ninth emirate to join the reconciled emirates of the Gulf under the 1916 treaty " +
+      "with Britain; the white stands for the peace of that settlement. The distinctive maroon began as red that " +
+      "faded to a dark brownish shade under the desert sun, which was then adopted as the national colour.",
+    sources: [
+      { title: "Flag of Qatar — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
+    ],
+  },
+
+  "RO": {
+    description:
+      "A vertical tricolour of blue, yellow and red. During the 1848 revolution the bands were given the meanings " +
+      "liberty (blue), justice (yellow) and fraternity (red); the three colours had long appeared together on the " +
+      "arms and banners of the Romanian principalities before those meanings were attached.",
+    sources: [
+      { title: "Flag of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Romania" },
+    ],
+  },
+
+  "RS": {
+    description:
+      "A horizontal tricolour of red, blue and white — the Pan-Slavic colours, arranged as the reverse of the " +
+      "Russian flag after a design of the 1830s. Toward the hoist sits the lesser coat of arms: a white " +
+      "double-headed eagle on a red shield and, on its breast, the Serbian cross with a firesteel in each of its " +
+      "four quarters, emblems inherited from Byzantine and medieval Serbian tradition.",
+    sources: [
+      { title: "Flag of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
+    ],
+  },
+
+  "RU": {
+    description:
+      "Three equal horizontal bands, white over blue over red. Peter the Great introduced the tricolour for Russian " +
+      "shipping in the 1690s after the Dutch model; a later official reading under Alexander III gave white for " +
+      "nobility and frankness, blue for faithfulness and honesty, and red for courage and love.",
+    myths: [
+      {
+        claim: "The white-blue-red tricolour was created as a Pan-Slavic flag.",
+        reality:
+          "Russia's flag predates Pan-Slavism by well over a century — Peter the Great adopted it in the 1690s from " +
+          "the Dutch tricolour. It was Russia's colours that later influenced other Slavic nations at the 1848 " +
+          "Pan-Slav Congress, not the other way round.",
+      },
+    ],
+    sources: [
+      { title: "Flag of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
+    ],
+  },
+
+  "RW": {
+    description:
+      "Three horizontal bands — a broad sky-blue over narrower yellow and green — with a golden 24-rayed sun in the " +
+      "upper fly. Blue stands for happiness and peace, yellow for economic development and green for the hope of " +
+      "prosperity, while the sun represents unity, transparency and the enlightenment of the people. Rwanda adopted " +
+      "this flag in 2001 to replace the earlier red-yellow-green tricolour, which had become associated with the " +
+      "1994 genocide.",
+    sources: [
+      { title: "Flag of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    ],
+  },
+
   "US-TX": {
     description:
       "The Lone Star Flag: a blue vertical band at the hoist bearing a single white five-pointed " +
