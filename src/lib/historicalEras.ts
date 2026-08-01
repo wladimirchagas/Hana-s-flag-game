@@ -429,6 +429,79 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Chinese warlords", { continent: "East Asia", note: "Warlord-era China — regional militarists still held much of the country as the Nationalists fought both them and the Communists.", population: 500_000_000 }],
   ["Islamic and Hindu states", { continent: "South Asia", note: "The patchwork of Deccan sultanates, Rajput kingdoms and southern Hindu states between the Mughal north and Vijayanagara's collapse." }],
 
+  // === Peoples and lifeways, not states =====================================
+  // The historical-basemaps files fill the land no state claimed with broad
+  // anthropological labels — hunter-gatherer ranges, herding zones, farming
+  // traditions. They are the largest features on every ancient map (a single entry
+  // here covers 8–13 era slots), and they rendered as bare words. Each note below
+  // describes the way of life the label stands for; none carries a population,
+  // because population estimates at this granularity are not sourceable — the
+  // "omit rather than invent" rule applies to numbers as much as to flags.
+  ["Australian aboriginal hunter-gatherers", { continent: "Australia", note: "Aboriginal Australian peoples — hundreds of language groups, each with its own Country, laws and songlines, sustaining the world's oldest continuous cultures for over 50,000 years." }],
+  ["Khoiasan", { continent: "Southern Africa", note: "Khoisan peoples — San hunter-gatherers and Khoikhoi herders of southern Africa, speakers of the click languages, whose ancestry is among the deepest branches of humanity." }],
+  ["Khoisan", { continent: "Southern Africa", note: "Khoisan peoples — San hunter-gatherers and Khoikhoi herders of southern Africa, speakers of the click languages." }],
+  ["Bantou", { continent: "Sub-Saharan Africa", note: "Bantu-speaking farming peoples, whose expansion from West-Central Africa carried iron-working, cattle and cereal agriculture across the continent's south and east." }],
+  ["Bantu", { continent: "Sub-Saharan Africa", note: "Bantu-speaking farming peoples, whose expansion from West-Central Africa carried iron-working, cattle and cereal agriculture across the continent's south and east." }],
+  ["West African cereal farmers", { continent: "West Africa", note: "Farming societies of the Sahel and savanna growing millet, sorghum and African rice — the agricultural base the empires of Ghana, Mali and Songhai would rise from." }],
+  ["Paleo-Siberian hunter-gatherers", { continent: "North Asia", note: "Peoples of the Siberian taiga and tundra — reindeer herders, river fishers and forest hunters, ancestral to today's Chukchi, Koryak, Yukaghir and Evenk." }],
+  ["Siberians", { continent: "North Asia", note: "The many peoples of Siberia — Evenk, Yakut, Nenets, Chukchi and others — herding reindeer, hunting and fishing across taiga and tundra." }],
+  ["Arctic marine mammal hunters", { continent: "Arctic", note: "Arctic coastal peoples who lived by hunting seal, walrus and whale from the ice edge — the Thule tradition and its descendants, the Inuit and Yupik." }],
+  ["Thule", { continent: "Arctic", note: "Thule culture — the whale-hunting Arctic tradition that spread from Alaska across northern Canada to Greenland from about 1000 AD; ancestors of today's Inuit." }],
+  ["Subarctic forest hunter-gatherers", { continent: "North America", note: "Peoples of the boreal forest between tundra and prairie, following moose, caribou and fish through the seasons across what is now Canada and interior Alaska." }],
+  ["Athabaskan", { continent: "North America", note: "Athabaskan-speaking peoples of the northwestern forests — a language family stretching from interior Alaska to the Southwest, where it includes the Navajo and Apache." }],
+  ["Eastern North Amercian hunter-gatherers", { continent: "North America", note: "Peoples of the eastern woodlands, combining hunting and fishing with maize, beans and squash — the tradition from which the Mississippian mound cities and the Haudenosaunee confederacy grew." }],
+  ["Plain bison hunters", { continent: "North America", note: "Peoples of the Great Plains, whose lives turned on the bison herds — on foot for millennia, and transformed by the horse after its arrival with the Spanish." }],
+  ["Plateau fichers and hunter gatherers", { continent: "North America", note: "Peoples of the Columbia and Fraser plateaus, whose year centred on the salmon runs, traded along rivers from the Pacific to the Rockies." }],
+  ["Desert hunter-gatherers", { continent: "North America", note: "Peoples of the Great Basin and the arid Southwest, living on piñon nuts, small game and seasonal water in one of the continent's harshest environments." }],
+  ["Archaic Amerindian hunter-gatherers", { continent: "Americas", note: "Archaic-period peoples of the Americas — mobile hunting, fishing and gathering societies in the millennia between the first settlement of the continents and the rise of farming villages." }],
+  ["Amazon hunter-gatherers", { continent: "South America", note: "Peoples of the Amazon basin, combining hunting and fishing with manioc gardens and managed forest — far more numerous and settled than the rainforest's 'empty' reputation suggests." }],
+  ["Manioc farmers", { continent: "South America", note: "Lowland South American societies built on manioc (cassava) — a root crop that stores in the ground and feeds dense riverside settlements." }],
+  ["Pampas cultures", { continent: "South America", note: "Peoples of the southern grasslands and Patagonia — guanaco hunters on foot until the horse reached the pampas, after which they became formidable riders." }],
+  ["Savanna hunter-gatherers", { continent: "Africa", note: "Hunting and gathering peoples of the African savanna belt, living alongside — and trading with — the farming and herding societies that surrounded them." }],
+  ["Saharan Pastoral Nomads", { continent: "Sahara", note: "Saharan herding peoples, moving cattle, sheep and later camels between seasonal pasture and oasis — and carrying the trans-Saharan trade between them." }],
+  ["Saharan pastoral nomads", { continent: "Sahara", note: "Saharan herding peoples, moving cattle, sheep and later camels between seasonal pasture and oasis — and carrying the trans-Saharan trade between them." }],
+  ["Finno-Ugric taiga hunter-gatherers", { continent: "Northern Europe / North Asia", note: "Finno-Ugric peoples of the northern forests — Sámi, Komi, Mari, Khanty and their neighbours — hunting, fishing and herding reindeer from Scandinavia to the Ob." }],
+  ["Austroasian rice cultures", { continent: "Southeast Asia", note: "Rice-farming societies of mainland Southeast Asia, whose wet-field cultivation supported the villages from which the Khmer, Mon and Vietnamese states would grow." }],
+  ["Proto-Altaic pastoralists", { continent: "Eurasian Steppe", note: "Herding peoples of the eastern steppe, ancestral to the Turkic and Mongolic confederations that would later dominate inner Asia." }],
+  ["Tupis", { continent: "South America", note: "Tupi-speaking peoples of the Brazilian coast and interior — village farmers of manioc and maize, and the first peoples the Portuguese encountered in 1500." }],
+  ["Papou", { continent: "Oceania", note: "Papuan peoples of New Guinea — one of the most linguistically diverse regions on earth, and home to some of the world's earliest agriculture in the Highlands." }],
+  ["Antarctica", { continent: "Antarctica", note: "Antarctica — the one continent with no indigenous population and no state. Since 1959 the Antarctic Treaty has set its territorial claims aside and reserved it for peaceful science.", noFlag: true }],
+
+  ["Andean hunter-gatherers", { continent: "South America", note: "Peoples of the high Andes and its dry coast before the great states — herding llama and alpaca, fishing the Humboldt current, and terracing the first mountain fields." }],
+  ["Caribbean hunter-gatherers", { continent: "Caribbean", note: "The islands' first peoples — Ortoiroid and Saladoid seafarers who island-hopped from South America, ancestors of the Taíno and Kalinago." }],
+  ["North American Pacifi foraging, hunting and fishing peoples", { continent: "North America", note: "Peoples of the Pacific Northwest coast — salmon, cedar and the potlatch supported dense permanent towns without farming, a rarity among foraging societies." }],
+  ["Mesoamerican hunter-gatherers and maïze farmers", { continent: "Mesoamerica", note: "The societies that domesticated maize in the Mexican highlands — the crop that would underwrite every later Mesoamerican civilisation." }],
+  ["Dorset", { continent: "Arctic", note: "Dorset culture — Arctic hunters of seal and walrus who preceded the Thule across northern Canada and Greenland, and vanished as the Thule expanded." }],
+  ["Andronovo", { continent: "Eurasian Steppe", note: "Andronovo culture — Bronze-Age herders of the Kazakh steppe, associated with the chariot, the horse and the early Indo-Iranian languages." }],
+  ["Tibetan Empire", { continent: "Central Asia", note: "Tibetan Empire — at its height it took the Tang capital, ruled the Silk Road oases and rivalled China and the Abbasids across inner Asia.", population: 3_000_000 }],
+  ["Sui Empire", { continent: "East Asia", note: "Sui dynasty — reunified China after three centuries of division and dug the Grand Canal, then collapsed within a generation and gave way to the Tang.", population: 46_000_000 }],
+  ["Ouighurs", { continent: "Central Asia", note: "Uyghur Khaganate — a Turkic steppe empire that propped up Tang China after the An Lushan rebellion and adopted Manichaeism as its state religion." }],
+  ["Buwayhid Emirates", { continent: "Western Asia", note: "Buyid emirates — Shia Iranian dynasties that took Baghdad in 945 and ruled while the Abbasid caliph reigned in name only." }],
+  ["Fatimid Caliphate", { continent: "North Africa / Middle East", note: "Fatimid Caliphate — Ismaili Shia rulers of Egypt and North Africa who founded Cairo and its al-Azhar mosque-university.", population: 6_000_000 }],
+  ["Union of South Africa", { continent: "Southern Africa", note: "Union of South Africa (1910–1961) — a self-governing British dominion flying British flags; the modern South African flag came only in 1994.", modernName: "United Kingdom", population: 6_000_000 }],
+  ["Arabia", { continent: "Arabia", note: "The Arabian interior — Bedouin tribal confederations and the emirates of Nejd and Hejaz, before the Saudi state unified the peninsula in 1932.", noFlag: true }],
+  ["French West Africa", { continent: "West Africa", note: "French West Africa (1895–1958) — a federation of eight colonies from Senegal to Niger, governed from Dakar.", modernName: "France", population: 15_000_000 }],
+  ["French Equatorial Africa", { continent: "Central Africa", note: "French Equatorial Africa (1910–1958) — Gabon, Middle Congo, Ubangi-Shari and Chad, governed from Brazzaville.", modernName: "France", population: 4_000_000 }],
+  ["Greenland", { continent: "Arctic", note: "Greenland — Inuit homeland (Kalaallit Nunaat), colonised by Denmark from 1721 and granted home rule in 1979.", modernName: "Denmark" }],
+  ["Xinjiang", { continent: "Central Asia", note: "Xinjiang — the Tarim and Dzungarian basins, ruled from Beijing as a province from 1884, with brief East Turkestan republics in the 1930s and 1940s.", noFlag: true }],
+
+  ["Patagonian shellfish and marine mammal hunters", { continent: "South America", note: "Peoples of the Patagonian channels and Tierra del Fuego — Yaghan and Kawésqar canoe nomads who lived on shellfish, seal and sea lion in one of the coldest inhabited coasts on earth." }],
+  ["Madagascar", { continent: "East Africa", note: "Madagascar — settled from Borneo across the Indian Ocean and from East Africa, giving it an Austronesian language on an African coast; unified under the Merina kingdom in the 19th century.", noFlag: true }],
+  ["Saami", { continent: "Northern Europe", note: "Sámi people — reindeer herders, fishers and hunters of Sápmi, spanning northern Norway, Sweden, Finland and the Kola peninsula." }],
+  ["Austronesians", { continent: "Maritime SE Asia / Pacific", note: "Austronesian seafarers — from Taiwan they settled island Southeast Asia, Madagascar and the whole Pacific, the widest maritime expansion of the pre-modern world." }],
+  ["Semites", { continent: "Middle East", note: "Semitic-speaking peoples of the Levant, Mesopotamia and Arabia — Akkadians, Amorites, Canaanites, Arameans and their neighbours." }],
+  ["Berber Tribes", { continent: "North Africa", note: "Amazigh (Berber) peoples of the Maghreb and Sahara — farmers of the Atlas valleys and camel nomads of the desert, from whom the Almoravid and Almohad empires arose." }],
+  ["T'atsaot'ine", { continent: "North America", note: "Tatsanottine (Yellowknives) — a Dene people of the Great Slave Lake, named for the native copper they worked and traded across the subarctic." }],
+  ["Thai", { continent: "Southeast Asia", note: "Tai-speaking peoples migrating south from what is now southern China into the valleys of mainland Southeast Asia — the ancestors of the Thai, Lao and Shan." }],
+  ["Göktürks", { continent: "Eurasian Steppe", note: "Göktürk Khaganate — the first empire to call itself Türk, ruling from Manchuria to the Black Sea and leaving the oldest known Turkic inscriptions." }],
+  ["Cuman Khanates", { continent: "Eurasian Steppe", note: "Cuman-Kipchak confederation — Turkic horsemen of the Pontic steppe, scattered by the Mongol invasion of the 1240s." }],
+  ["Quazaq Khanate", { continent: "Central Asia", note: "Kazakh Khanate — founded in the 1460s, it gathered the steppe tribes into the three jüz that still structure Kazakh society." }],
+  ["Tang Empire", { continent: "East Asia", note: "Tang dynasty — China's cosmopolitan golden age, its capital Chang'an the largest city on earth and the eastern terminus of the Silk Road.", population: 80_000_000 }],
+  ["Srivijaya Empire", { continent: "Maritime SE Asia", note: "Srivijaya — a Buddhist maritime power based at Palembang that controlled the Malacca and Sunda straits, and with them the China–India sea trade.", population: 2_500_000 }],
+  ["Ghaznavid Emirate", { continent: "Central / South Asia", note: "Ghaznavid Empire — Turkic slave-soldiers turned rulers of Khorasan and the Punjab, whose raids opened northern India to Muslim rule." }],
+  ["Makkura", { continent: "Northeast Africa", note: "Makuria — a Christian Nubian kingdom on the middle Nile that held off Arab conquest for six centuries under the Baqt treaty." }],
+  ["Denmark-Norway", { continent: "Northern Europe", note: "Denmark–Norway — a single realm from 1537 to 1814, ruling Norway, Iceland, Greenland and the Faroes from Copenhagen.", modernName: "Denmark" }],
+
   // Medieval (600 AD – 1300 AD) --------------------------------------------
   // 600 AD uses "Eastern Roman Empire" and "Sasanian Empire"; from 800 onwards
   // the dataset says "Byzantine Empire" and there's no Sassanid Persia.
@@ -1591,6 +1664,9 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
   // Mis-encoded characters (the source file lost the diacritic)
   ["M?ori", "Māori"],
   ["Byelarus", "Belarus"],
+  ["North American Pacifi foraging, hunting and fishing peoples", "North American Pacific foraging, hunting and fishing peoples"],
+  ["Mesoamerican hunter-gatherers and maïze farmers", "Mesoamerican hunter-gatherers and maize farmers"],
+  ["Plateau fichers and hunter gatherers", "Plateau fishers and hunter-gatherers"],
   ["Turkish Cypriot-administered area", "Northern Cyprus"],
   ["Monte Alb?n", "Monte Albán"],
   // The 323 BC file lost the same two diacritics to U+FFFD rather than "?".

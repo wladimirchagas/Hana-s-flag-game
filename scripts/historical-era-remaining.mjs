@@ -18,6 +18,11 @@
 //   node scripts/historical-era-remaining.mjs            → per-era coverage table
 //   node scripts/historical-era-remaining.mjs ad1500     → gaps for one era
 //   node scripts/historical-era-remaining.mjs --gaps 25  → top-N gaps per era
+//   node scripts/historical-era-remaining.mjs --bare 40  → the N bare polities worth
+//                                                          doing next, ranked by the
+//                                                          map area they occupy summed
+//                                                          ACROSS eras (one registry
+//                                                          entry can cover 13 slots)
 //
 // Area figures are geodesic (d3-geo geoArea, steradians) so the ranking is by
 // how much of the map a gap actually occupies — a missing Abbasid Caliphate
@@ -93,12 +98,18 @@ function resolveFlag(name, eraId, rulers) {
 }
 
 const args = process.argv.slice(2);
+const bareIdx = args.indexOf("--bare");
+const bareLimit = bareIdx >= 0 ? Number(args[bareIdx + 1] ?? 40) : 0;
 const gapsIdx = args.indexOf("--gaps");
 const gapLimit = gapsIdx >= 0 ? Number(args[gapsIdx + 1] ?? 15) : 0;
-const onlyEra = args.find((a) => !a.startsWith("--") && a !== String(gapLimit));
+// Positional era filter — skip flags and the numbers that belong to --gaps / --bare.
+const flagValueIndexes = new Set([gapsIdx + 1, bareIdx + 1].filter((i) => i > 0));
+const onlyEra = args.find((a, i) => !a.startsWith("--") && !flagValueIndexes.has(i));
 
 const rows = [];
 const gapsByEra = new Map();
+/** name → { area summed across eras, eras it appears in } for polities with nothing. */
+const bareAcrossEras = new Map();
 
 for (const era of ERAS) {
   if (!era.dataUrl) continue; // "Today" uses the modern world-atlas path
@@ -145,7 +156,14 @@ for (const era of ERAS) {
     if (note) { noteCount++; noteArea += v.area; }
     if (pop) popCount++;
     const bare = !flag && !note && !pop;
-    if (bare) { bareCount++; bareArea += v.area; }
+    if (bare) {
+      bareCount++;
+      bareArea += v.area;
+      const acc = bareAcrossEras.get(name) ?? { area: 0, eras: [] };
+      acc.area += v.area;
+      acc.eras.push(era.label);
+      bareAcrossEras.set(name, acc);
+    }
     if (!flag || !note || !pop) {
       gaps.push({ name, area: v.area, flag: Boolean(flag), note, pop, noFlag: Boolean(info.noFlag) });
     }
@@ -183,6 +201,17 @@ console.log(
   `registry entries: ${POLITY_REGISTRY.size} + ${MODERN_NAME_ALIASES.size} aliases | ` +
     `polity slots across eras: ${totals.polities} | bare (no flag/note/pop): ${totals.bare}`,
 );
+
+if (bareLimit > 0) {
+  const ranked = [...bareAcrossEras].sort((a, b) => b[1].area - a[1].area).slice(0, bareLimit);
+  console.log(
+    `\nTop ${ranked.length} bare polities by mapped area summed across eras — ` +
+      `the highest-leverage entries to write next:`,
+  );
+  for (const [name, v] of ranked) {
+    console.log(`  ${v.area.toFixed(2).padStart(6)}  ${String(v.eras.length).padStart(2)} era(s)  ${name}`);
+  }
+}
 
 if (gapLimit > 0) {
   for (const [eraId, gaps] of gapsByEra) {
