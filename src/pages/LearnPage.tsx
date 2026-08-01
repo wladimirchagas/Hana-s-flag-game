@@ -114,6 +114,9 @@ type HistoricalSelection = {
   /** True when the flag shown is the RULER's, not the polity's own — the panel
    *  says so, so a colony's card never implies it had its own national flag. */
   flagIsRulers?: true;
+  /** True when this polity's extent came from modern administrative boundaries
+   *  rather than a sourced period border. */
+  approximateExtent?: true;
   /** Set when no flag is shown BECAUSE the modern one postdates the era. Lets the
    *  panel explain precisely instead of claiming the polity predates flags. */
   flagTooNew?: { name: string; year: number };
@@ -186,6 +189,10 @@ export default function LearnPage() {
   // NAME → SUBJECTO for the current era's GeoJSON (only where they differ). Supplies
   // the "Ruled by" row and lets a colony inherit its ruler's period-correct flag.
   const [polityRulers, setPolityRulers] = useState<ReadonlyMap<string, string>>(new Map());
+  // Polities whose extent was derived by intersecting an upstream lumped polygon with
+  // MODERN admin-1 boundaries (scripts/tag-derived-boundaries.mjs). Their borders are a
+  // schematic stand-in, and the panel says so rather than presenting them as sourced.
+  const [derivedBoundaryNames, setDerivedBoundaryNames] = useState<ReadonlySet<string>>(new Set());
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const [showFlagMap, setShowFlagMap] = useState(false);
@@ -653,6 +660,7 @@ export default function LearnPage() {
       ruledBy: ruledBy && ruledBy !== name ? ruledBy : undefined,
       flagIsRulers: flagIsRulers || undefined,
       flagTooNew: flag ? undefined : flagTooNew,
+      approximateExtent: derivedBoundaryNames.has(name) || undefined,
     };
   }
 
@@ -1298,9 +1306,10 @@ export default function LearnPage() {
             centerLongitude={mapView.centerLongitude}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
-            onDataLoaded={(names, rulers) => {
+            onDataLoaded={(names, rulers, derived) => {
               setAvailableHistoricalNames(names);
               setPolityRulers(rulers);
+              setDerivedBoundaryNames(derived);
             }}
             flagOverlay={historicalFlagOverlay}
           />
@@ -1405,6 +1414,9 @@ export default function LearnPage() {
                       display.kind === "historical"
                         ? display.ruledBy && polityDisplayName(display.ruledBy)
                         : undefined
+                    }
+                    approximateExtent={
+                      display.kind === "historical" ? display.approximateExtent : undefined
                     }
                   />
                 )}

@@ -35,6 +35,10 @@ type HistoricalFeature = {
     SUBJECTO?: string | null;
     PARTOF?: string | null;
     BORDERPRECISION?: number | null;
+    /** 1 when this feature's internal boundary was DERIVED by intersecting the
+     *  upstream lumped polygon with modern admin-1 lines (see
+     *  scripts/tag-derived-boundaries.mjs) rather than sourced for the period. */
+    DERIVED?: number | null;
   };
   geometry: unknown;
 };
@@ -64,7 +68,11 @@ export type HistoricalMapProps = {
    *  two differ). The names let the parent decide whether a currently-selected
    *  entity still exists in this era; the rulers drive the panel's "Ruled by" row
    *  and let a colony inherit its ruler's period-correct flag. */
-  onDataLoaded?: (names: ReadonlySet<string>, rulers: ReadonlyMap<string, string>) => void;
+  onDataLoaded?: (
+    names: ReadonlySet<string>,
+    rulers: ReadonlyMap<string, string>,
+    derived: ReadonlySet<string>,
+  ) => void;
   /** User-chosen central meridian (longitude). 0 = Atlantic / Greenwich
    *  default; 180 = Pacific; -95 = Americas; etc.
    *  NOTE: this should be the BASE meridian only (not including any
@@ -174,14 +182,16 @@ export const HistoricalMap = memo(function HistoricalMap({
     if (!data || !onDataLoaded) return;
     const names = new Set<string>();
     const rulers = new Map<string, string>();
+    const derived = new Set<string>();
     for (const ft of data.features) {
       const n = ft.properties?.NAME;
       if (!n) continue;
       names.add(n);
       const ruler = ft.properties?.SUBJECTO;
       if (ruler && ruler !== n) rulers.set(n, ruler);
+      if (ft.properties?.DERIVED === 1) derived.add(n);
     }
-    onDataLoaded(names, rulers);
+    onDataLoaded(names, rulers, derived);
   }, [data, onDataLoaded]);
 
   // Compute per-feature path strings via d3-geo's equal-earth projection
@@ -229,7 +239,14 @@ export const HistoricalMap = memo(function HistoricalMap({
           }
         }
       }
-      return { idx, d, name, flagPolys, area: pathFn.area(f as never) };
+      return {
+        idx,
+        d,
+        name,
+        flagPolys,
+        area: pathFn.area(f as never),
+        derived: f.properties?.DERIVED === 1,
+      };
     });
     // Paint LARGEST FIRST so a small polity that sits inside a bigger one is
     // never buried underneath it. SVG has no z-index — later siblings paint on
@@ -241,6 +258,23 @@ export const HistoricalMap = memo(function HistoricalMap({
     const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
     return { renderedFeatures: features, spherePath };
   }, [data, centerLongitude]);
+
+  // Upstream rates every feature's border accuracy 1 (roughest) to 3. For the older
+  // eras it is 1 across the board — the authors telling us these lines are schematic.
+  // Rendering them as crisp borders at up to 24× zoom implies a precision the data does
+  // not have, so the map says so out loud.
+  const bordersApproximate = useMemo(() => {
+    if (!data) return false;
+    let low = 0;
+    let known = 0;
+    for (const f of data.features) {
+      const p = f.properties?.BORDERPRECISION;
+      if (typeof p !== "number") continue;
+      known++;
+      if (p <= 1) low++;
+    }
+    return known > 0 && low / known > 0.5;
+  }, [data]);
 
   // Compute the "highlight" set: every feature whose NAME matches the
   // hovered or selected name gets the highlight colour. A single empire
@@ -254,6 +288,14 @@ export const HistoricalMap = memo(function HistoricalMap({
         World map
         <span className="map-heading__hint">
           {" "}— hover or click a polity to see its name and flag
+          {bordersApproximate && (
+            <>
+              {" · "}
+              <span className="map-heading__caveat">
+                borders are approximate for this date
+              </span>
+            </>
+          )}
         </span>
       </h2>
       <div className="map-with-zoom">
@@ -295,6 +337,22 @@ export const HistoricalMap = memo(function HistoricalMap({
                 their own preserveAspectRatio — leaving country edges uncovered.
                 patternUnits="userSpaceOnUse" keeps x/y in the referencing
                 element's coordinate system (Safari transform/zoom/flip bug). */}
+            <defs>
+              {/* Land the dataset records no polity for. Hatching keeps it visibly
+                  distinct from a real polity, which a flat fill did not — 17–34% of
+                  the land in the older eras is unmapped, and painting it like a
+                  country implied data we do not have. */}
+              <pattern
+                id="hm-nodata"
+                width={6}
+                height={6}
+                patternUnits="userSpaceOnUse"
+                patternTransform="rotate(45)"
+              >
+                <rect width={6} height={6} fill={palette.unknown} />
+                <line x1={0} y1={0} x2={0} y2={6} stroke={palette.stroke} strokeWidth={0.6} strokeOpacity={0.25} />
+              </pattern>
+            </defs>
             {flagOverlay && (
               <defs>
                 {renderedFeatures.map((f) => {
@@ -354,7 +412,7 @@ export const HistoricalMap = memo(function HistoricalMap({
                 ? palette.selected
                 : f.name
                 ? palette.land
-                : palette.unknown;
+                : "url(#hm-nodata)";
               const stroke = isHighlighted
                 ? palette.selectedStroke
                 : palette.stroke;
@@ -366,6 +424,10 @@ export const HistoricalMap = memo(function HistoricalMap({
                   stroke={stroke}
                   strokeWidth={isHighlighted ? 1.4 : 0.4}
                   strokeOpacity={isHighlighted ? 1 : 0.5}
+                  // A derived boundary is drawn dashed so the user can see which lines
+                  // are sourced for the period and which are a modern administrative
+                  // stand-in (see scripts/tag-derived-boundaries.mjs).
+                  strokeDasharray={f.derived ? "3 2" : undefined}
                   // Keep borders the same visual width regardless of zoom —
                   // without this they thicken as the user zooms in.
                   vectorEffect="non-scaling-stroke"
@@ -375,8 +437,13 @@ export const HistoricalMap = memo(function HistoricalMap({
                   onMouseLeave={() => onHover?.(null)}
                 >
                   {/* Tooltip shows the corrected spelling; f.name (the raw
-                      dataset NAME) remains the selection key. */}
-                  {f.name ? <title>{polityDisplayName(f.name)}</title> : null}
+                      dataset NAME) remains the selection key. Unnamed land says so
+                      rather than looking like a polity that failed to load. */}
+                  <title>
+                    {f.name
+                      ? polityDisplayName(f.name)
+                      : "No polity recorded here for this date"}
+                  </title>
                 </path>
               );
             })}
