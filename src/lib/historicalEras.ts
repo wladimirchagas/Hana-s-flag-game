@@ -515,6 +515,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Arabs", { continent: "Arabia", note: "Arab tribal societies of the peninsula — camel nomads and caravan-city traders, on the eve of the Islamic conquests that would carry their language from Iberia to the Indus." }],
   ["Rajput Kingdoms", { continent: "South Asia", note: "Rajput kingdoms of northern India — warrior clans holding hill forts across Rajasthan and Malwa, long the fiercest resistance to Delhi's sultans." }],
   ["Rajput kingdoms", { continent: "South Asia", note: "Rajput kingdoms of northern India — warrior clans holding hill forts across Rajasthan and Malwa, long the fiercest resistance to Delhi's sultans." }],
+  ["Zhou states", { continent: "East Asia", note: "The Zhou states — the ritual overlordship of the Zhou kings dissolving into the rival kingdoms of the Spring and Autumn period." }],
   ["Zhow states", { continent: "East Asia", note: "The Zhou states — the ritual overlordship of the Zhou kings dissolving into the rival kingdoms of the Spring and Autumn period." }],
   ["Hadramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia, whose merchant families settled across the Indian Ocean from East Africa to Indonesia." }],
   ["Emirate of Bin Shal'an", { continent: "Arabia", note: "The Ruwallah emirate of the Al Sha'lan — a Bedouin power of the Syrian desert, controlling the caravan routes between Damascus and Nejd." }],
@@ -1523,6 +1524,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1900 (high imperialism) overrides ====================================
   ["ad1900", new Map<string, PolityInfo>([
+    ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at its imperial height, Victoria's Raj covering today's India, Pakistan, Bangladesh and Burma.", population: 285_000_000 }],
     ["United States of America", { flag: "historical-flags/us-45star.svg", continent: "North America", note: "The United States flew the 45-star flag (1896–1908, after Utah's admission); the 50-star flag dates from 1960.", }],
     // By 1900 the Qing HAD a standardised national flag: the rectangular Yellow
     // Dragon banner, promulgated 1889 (the 1880 era shows none, because until then
@@ -1542,6 +1544,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a British dominion since 1910, flying the Union Jack and Red Ensign; today's flag dates from 1994.", population: 6_000_000 }],
+    ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate — British-ruled since 1894; the crested-crane flag came at independence in 1962.", population: 2_900_000 }],
+    ["Nigeria", { modernName: "United Kingdom", continent: "West Africa", note: "Britain had just amalgamated its northern and southern Nigerian protectorates (1914); the green-white-green flag dates from 1960.", population: 17_000_000 }],
+    ["Mozambique", { flag: "historical-flags/portugal-1500.png", continent: "East Africa", note: "Portuguese Mozambique — the Nyassa and Mozambique chartered companies still ran much of it for Lisbon.", population: 3_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959, after Arizona and New Mexico); the 50-star flag dates from 1960.", }],
     // Manchu Empire in 1914 = Republic of China (ROC). The Qing dynasty was
     // overthrown in January 1912 and the ROC was proclaimed. In 1914 the ROC
@@ -1582,6 +1588,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — German East Africa until the war, now a British League of Nations mandate; the Tanzanian flag dates from 1964.", population: 4_100_000 }],
+    ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony, proclaimed in 1920 out of the East Africa Protectorate; the Kenyan flag came with independence in 1963.", population: 2_900_000 }],
+    ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule.", population: 3_100_000 }],
+    ["Nigeria", { modernName: "United Kingdom", continent: "West Africa", note: "Colony and Protectorate of Nigeria under British rule.", population: 18_000_000 }],
+    ["Ghana", { modernName: "United Kingdom", continent: "West Africa", note: "Gold Coast — a British colony until 1957, when Ghana became the first sub-Saharan African state to win independence.", population: 2_300_000 }],
+    ["Zambia", { modernName: "United Kingdom", continent: "Southern Africa", note: "Northern Rhodesia, administered by the British South Africa Company until 1924; Zambia's flag dates from 1964.", population: 1_000_000 }],
+    ["Mozambique", { flag: "historical-flags/portugal-1500.png", continent: "East Africa", note: "Portuguese Mozambique.", population: 3_300_000 }],
     // Weimar Germany flew black-red-gold from 1919 — the same design the Federal
     // Republic readopted in 1949, so this era legitimately shows today's flag.
     ["Germany", { modernName: "Germany", continent: "Central Europe", note: "Weimar Republic — the black-red-gold tricolour it adopted in 1919 is the flag Germany flies today, though the Nazi state replaced it from 1933 to 1945.", population: 62_000_000 }],
@@ -1595,6 +1608,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika Territory — a British mandate between the wars.", population: 5_300_000 }],
+    ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony under British rule.", population: 3_600_000 }],
+    ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule.", population: 3_800_000 }],
+    ["Nigeria", { modernName: "United Kingdom", continent: "West Africa", note: "Colony and Protectorate of Nigeria under British rule.", population: 20_000_000 }],
     // Nazi Germany. Black-red-gold was abolished in 1933 and only readopted in 1949,
     // so the Weimar/Federal flag is wrong here — and the flag that did fly is one this
     // project will not bundle. The panel says so instead.
@@ -1611,6 +1628,14 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at the war's end — partition and independence came two years later, in 1947.", population: 389_000_000 }],
+    ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a dominion that fought with the Allies, flying British flags and the 1928 orange-white-blue; today's flag dates from 1994.", population: 11_400_000 }],
+    ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — a British mandate, soon a UN trust territory; independent in 1961.", population: 6_000_000 }],
+    ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony under British rule; independence came in 1963.", population: 5_200_000 }],
+    ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule; independence came in 1962.", population: 4_900_000 }],
+    ["Nigeria", { modernName: "United Kingdom", continent: "West Africa", note: "Colony and Protectorate of Nigeria; independence came in 1960.", population: 23_000_000 }],
+    ["Mauritania", { modernName: "France", continent: "West Africa", note: "French Mauritania, part of French West Africa; independence came in 1960.", population: 500_000 }],
+    ["Namibia", { modernName: "United Kingdom", continent: "Southern Africa", note: "South West Africa — German until 1915, then governed by South Africa under a League mandate. It became Namibia only in 1990.", population: 350_000 }],
     ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — independence, and a Sudanese flag, came in 1956.", population: 7_500_000 }],
     ["Iran", { noFlag: true, continent: "Western Asia", note: "Iran under Mohammad Reza Shah, occupied by Britain and the USSR during the war — the Lion and Sun flag flew until 1979.", population: 15_500_000 }],
     ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia — the shahada-and-sword flag reached its present form in 1973.", population: 3_500_000 }],
@@ -1667,6 +1692,16 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["Namibia", { noFlag: true, continent: "Southern Africa", note: "South West Africa — still ruled by South Africa against UN objection; it became independent Namibia, with its own flag, in 1990.", population: 600_000 }],
+    ["Mozambique", { flag: "historical-flags/portugal-1500.png", continent: "East Africa", note: "Portuguese Mozambique — the independence war began in 1964 and ended in 1975.", population: 7_000_000 }],
+    ["Zambia", { modernName: "United Kingdom", continent: "Southern Africa", note: "Northern Rhodesia, part of the Central African Federation; Zambia and its flag came in 1964.", population: 3_100_000 }],
+    ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony in its last years of British rule, after the Mau Mau uprising; independence came in 1963.", population: 8_100_000 }],
+    ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate — independence, and the crested-crane flag, came in 1962.", population: 6_800_000 }],
+    ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — a UN trust territory under Britain; independent in 1961 and united with Zanzibar as Tanzania in 1964.", population: 10_000_000 }],
+    ["Mauritania", { continent: "West Africa", note: "Islamic Republic of Mauritania, independent from France in November 1960 — its green flag with star and crescent was adopted 1959.", modernName: "Mauritania", population: 900_000 }],
+    ["India", { modernName: "India", continent: "South Asia", note: "Republic of India — independent since 1947; the Ashoka-chakra tricolour was adopted that year.", population: 450_000_000 }],
+    ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa in its last year before becoming a republic — flying the 1928 orange-white-blue; today's flag dates from 1994.", population: 17_400_000 }],
+    ["Sudan", { modernName: "Sudan", continent: "Northeast Africa", note: "Republic of the Sudan, independent from the Anglo-Egyptian condominium in 1956.", population: 11_200_000 }],
     ["Iran", { noFlag: true, continent: "Western Asia", note: "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980.", population: 21_000_000 }],
     ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia — its flag took its present form in 1973.", population: 4_000_000 }],
     // Burma in 1960 was the Union of Burma — still on the 1948 flag.

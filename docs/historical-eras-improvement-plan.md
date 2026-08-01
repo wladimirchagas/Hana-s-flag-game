@@ -21,7 +21,7 @@ population**.
 | era | polities | with flag | with note | with pop | bare name only | unnamed features |
 |-----|---------:|----------:|----------:|---------:|---------------:|-----------------:|
 | 2000 BC | 45 | 0 (0%) | 25 (75%) | 9 | 20 (4%) | 100 (22%) |
-| 500 BC | 87 | 1 (0%) | 46 (70%) | 21 | 41 (5%) | 111 (25%) |
+| 500 BC | 87 | 1 (0%) | 47 (71%) | 21 | 40 (4%) | 111 (25%) |
 | 323 BC | 68 | 1 (0%) | 33 (66%) | 8 | 35 (3%) | 73 (30%) |
 | 100 AD | 97 | 3 (4%) | 55 (56%) | 35 | 41 (5%) | 149 (39%) |
 | 600 AD | 98 | 0 (0%) | 60 (60%) | 34 | 38 (4%) | 108 (36%) |
@@ -34,20 +34,20 @@ population**.
 | 1700 | 592 | 35 (25%) | 86 (49%) | 67 | 494 (15%) | 189 (35%) |
 | 1815 | 327 | 64 (54%) | 140 (68%) | 127 | 184 (3%) | 107 (28%) |
 | 1880 | 169 | 76 (60%) | 106 (74%) | 98 | 56 (3%) | 63 (23%) |
-| 1900 | 165 | 64 (65%) | 62 (58%) | 53 | 75 (6%) | 48 (23%) |
-| 1914 | 142 | 96 (81%) | 64 (61%) | 56 | 30 (3%) | 33 (8%) |
-| 1920 | 163 | 92 (69%) | 70 (59%) | 60 | 45 (8%) | 40 (9%) |
-| 1938 | 171 | 115 (74%) | 67 (58%) | 58 | 32 (4%) | 79 (9%) |
-| 1945 | 183 | 119 (74%) | 75 (62%) | 65 | 34 (7%) | 42 (0%) |
-| 1960 | 157 | 84 (72%) | 56 (49%) | 46 | 44 (9%) | 37 (0%) |
+| 1900 | 165 | 65 (65%) | 63 (58%) | 54 | 74 (5%) | 48 (23%) |
+| 1914 | 142 | 97 (81%) | 68 (63%) | 60 | 29 (3%) | 33 (8%) |
+| 1920 | 163 | 99 (72%) | 76 (62%) | 66 | 39 (5%) | 40 (9%) |
+| 1938 | 171 | 115 (74%) | 71 (60%) | 62 | 32 (4%) | 79 (9%) |
+| 1945 | 183 | 122 (78%) | 83 (68%) | 73 | 31 (3%) | 42 (0%) |
+| 1960 | 157 | 90 (75%) | 66 (57%) | 56 | 35 (3%) | 37 (0%) |
 | 1994 | 193 | 144 (82%) | 62 (20%) | 53 | 24 (3%) | 43 (8%) |
 
 **Headline numbers**
 
 - **1,437 distinct polity names** appear across the bundled eras; the registry + aliases +
   era overrides cover **464** of them. **973 (68%) have no entry at all.**
-- Across all eras there are **4,013 polity slots**, of which **2,036 (51%) render as a bare
-  name**. Three sweep batches have closed 374 of them; `--bare N` on the tracker ranks what
+- Across all eras there are **4,013 polity slots**, of which **2,015 (50%) render as a bare
+  name**. Four sweep batches have closed 395 of them; `--bare N` on the tracker ranks what
   is left by the map area it occupies summed across eras, so the next batch is picked by
   leverage rather than guesswork.
 - Even in the best-covered modern eras, the **largest** polities have no facts: in 1914/1945/1960
@@ -413,7 +413,7 @@ should be stated in the era caption, not silently implied away.
 | ~~**P0b**~~ | ~~Retire the fabricated 1850 map (§5.1)~~ — **done**: era replaced with upstream `world_1880`, generator and file deleted, overrides rewritten for 1880 | The app was shipping invented geography under a date label | No (upstream data) |
 | ~~**P1a**~~ | ~~Flag-adoption-year gate + `SUBJECTO` inheritance + anachronism check (§2.1, §2.2)~~ — **done** | Stopped the app asserting flags decades out of period | Yes — one dated table |
 | **P1b** | `POLITY_NAME_FOR_ERA` relabelling for states that did not exist yet (§5.2) | Stops the map asserting wrong *statehood* (Namibia in 1945, Zimbabwe in 1960) | Yes |
-| **P2** | Note + population sweep in area order (§3.1) — **in progress**: 2,410 → 2,036 bare slots over three batches; run `node scripts/historical-era-remaining.mjs --bare 40` to pick the next one by leverage | Turns bare names into facts; measurable with the tracker | Yes — the bulk of the work |
+| **P2** | Note + population sweep in area order (§3.1) — **in progress**: 2,410 → 2,015 bare slots over four batches; run `node scripts/historical-era-remaining.mjs --bare 40` to pick the next one by leverage | Turns bare names into facts; measurable with the tracker | Yes — the bulk of the work |
 | ~~**P3**~~ | ~~Coordinate-precision pass, then add `1994`, `1938`, `1920`, `1900`, `1600`, `1200`, `1000`, `bc323`~~ — **done**: 73 MB → 34 MB, 21 eras | Payload shrank before it grew; 1994 has the best flag coverage of any era | No (upstream data) |
 | ~~**P4a**~~ | ~~Border-honesty presentation: `BORDERPRECISION` note (§5.3), dashed derived boundaries (§5.4), "no data" land styling (§5.5)~~ — **done** | Cheap credibility: the map no longer implies precision it does not have | No |
 | **P4b** | Panel depth — existed-from/to dates, "today this land is…", capitals, the coastline caveat (§3, §5.7) | Highest educational value once the basics are right | Partly derivable |
