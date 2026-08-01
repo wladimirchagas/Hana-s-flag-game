@@ -20,36 +20,36 @@ population**.
 
 | era | polities | with flag | with note | with pop | bare name only | unnamed features |
 |-----|---------:|----------:|----------:|---------:|---------------:|-----------------:|
-| 2000 BC | 45 | 0 (0%) | 9 (2%) | 9 | 36 (77%) | 100 (22%) |
-| 500 BC | 87 | 1 (0%) | 21 (6%) | 21 | 66 (69%) | 111 (25%) |
-| 323 BC | 68 | 1 (0%) | 8 (6%) | 8 | 60 (64%) | 73 (30%) |
-| 100 AD | 97 | 3 (4%) | 35 (10%) | 35 | 61 (51%) | 149 (39%) |
-| 600 AD | 98 | 0 (0%) | 33 (7%) | 33 | 65 (58%) | 108 (36%) |
-| 800 AD | 132 | 0 (0%) | 28 (9%) | 28 | 104 (65%) | 101 (26%) |
-| 1000 | 129 | 5 (1%) | 25 (8%) | 23 | 103 (60%) | 89 (32%) |
-| 1200 | 129 | 3 (1%) | 33 (19%) | 29 | 96 (62%) | 99 (19%) |
-| 1300 | 138 | 3 (0%) | 78 (28%) | 77 | 59 (44%) | 80 (28%) |
-| 1500 | 191 | 7 (2%) | 109 (31%) | 112 | 79 (44%) | 91 (25%) |
-| 1600 | 637 | 11 (7%) | 45 (31%) | 42 | 590 (34%) | 199 (35%) |
-| 1700 | 592 | 35 (25%) | 69 (38%) | 67 | 510 (27%) | 189 (35%) |
-| 1815 | 327 | 64 (54%) | 135 (66%) | 127 | 189 (6%) | 107 (28%) |
-| 1880 | 169 | 76 (60%) | 102 (71%) | 98 | 59 (5%) | 63 (23%) |
-| 1900 | 165 | 62 (58%) | 57 (48%) | 53 | 80 (15%) | 48 (23%) |
-| 1914 | 142 | 95 (74%) | 58 (47%) | 53 | 34 (12%) | 33 (8%) |
-| 1920 | 163 | 87 (57%) | 56 (37%) | 51 | 57 (26%) | 40 (9%) |
-| 1938 | 171 | 110 (65%) | 54 (38%) | 48 | 44 (19%) | 79 (9%) |
-| 1945 | 183 | 117 (68%) | 66 (40%) | 60 | 43 (27%) | 42 (0%) |
-| 1960 | 157 | 84 (71%) | 49 (35%) | 43 | 50 (23%) | 37 (0%) |
-| 1994 | 193 | 146 (82%) | 58 (17%) | 52 | 25 (4%) | 43 (8%) |
+| 2000 BC | 45 | 0 (0%) | 25 (75%) | 9 | 20 (4%) | 100 (22%) |
+| 500 BC | 87 | 1 (0%) | 46 (70%) | 21 | 41 (5%) | 111 (25%) |
+| 323 BC | 68 | 1 (0%) | 33 (66%) | 8 | 35 (3%) | 73 (30%) |
+| 100 AD | 97 | 3 (4%) | 55 (56%) | 35 | 41 (5%) | 149 (39%) |
+| 600 AD | 98 | 0 (0%) | 60 (60%) | 34 | 38 (4%) | 108 (36%) |
+| 800 AD | 132 | 0 (0%) | 67 (65%) | 31 | 65 (9%) | 101 (26%) |
+| 1000 | 129 | 5 (1%) | 66 (61%) | 27 | 62 (8%) | 89 (32%) |
+| 1200 | 129 | 3 (1%) | 73 (72%) | 33 | 56 (9%) | 99 (19%) |
+| 1300 | 138 | 3 (0%) | 103 (67%) | 78 | 34 (5%) | 80 (28%) |
+| 1500 | 191 | 7 (2%) | 134 (67%) | 112 | 54 (8%) | 91 (25%) |
+| 1600 | 637 | 11 (7%) | 63 (44%) | 42 | 572 (20%) | 199 (35%) |
+| 1700 | 592 | 35 (25%) | 86 (49%) | 67 | 494 (15%) | 189 (35%) |
+| 1815 | 327 | 64 (54%) | 140 (68%) | 127 | 184 (3%) | 107 (28%) |
+| 1880 | 169 | 76 (60%) | 106 (74%) | 98 | 56 (3%) | 63 (23%) |
+| 1900 | 165 | 64 (65%) | 62 (58%) | 53 | 75 (6%) | 48 (23%) |
+| 1914 | 142 | 96 (81%) | 64 (61%) | 56 | 30 (3%) | 33 (8%) |
+| 1920 | 163 | 92 (69%) | 70 (59%) | 60 | 45 (8%) | 40 (9%) |
+| 1938 | 171 | 115 (74%) | 67 (58%) | 58 | 32 (4%) | 79 (9%) |
+| 1945 | 183 | 119 (74%) | 75 (62%) | 65 | 34 (7%) | 42 (0%) |
+| 1960 | 157 | 84 (72%) | 56 (49%) | 46 | 44 (9%) | 37 (0%) |
+| 1994 | 193 | 144 (82%) | 62 (20%) | 53 | 24 (3%) | 43 (8%) |
 
 **Headline numbers**
 
 - **1,437 distinct polity names** appear across the bundled eras; the registry + aliases +
   era overrides cover **464** of them. **973 (68%) have no entry at all.**
-- Across all eras there are **4,013 polity slots**, of which **2,410 (60%) render as a bare
-  name** — the map's dominant interaction outcome is "here is a word". (It rose from 1,272
-  when the anachronism gate in §2.1 withdrew flags that were decades out of period; those
-  slots now need a *period-correct* flag or a note, which is the P2 sweep.)
+- Across all eras there are **4,013 polity slots**, of which **2,036 (51%) render as a bare
+  name**. Three sweep batches have closed 374 of them; `--bare N` on the tracker ranks what
+  is left by the map area it occupies summed across eras, so the next batch is picked by
+  leverage rather than guesswork.
 - Even in the best-covered modern eras, the **largest** polities have no facts: in 1914/1945/1960
   the United States, Brazil, Australia, India, Argentina, Sudan, Mexico, Saudi Arabia and
   (1960) China all show a flag and nothing else — no note, no population.
@@ -413,8 +413,8 @@ should be stated in the era caption, not silently implied away.
 | ~~**P0b**~~ | ~~Retire the fabricated 1850 map (§5.1)~~ — **done**: era replaced with upstream `world_1880`, generator and file deleted, overrides rewritten for 1880 | The app was shipping invented geography under a date label | No (upstream data) |
 | ~~**P1a**~~ | ~~Flag-adoption-year gate + `SUBJECTO` inheritance + anachronism check (§2.1, §2.2)~~ — **done** | Stopped the app asserting flags decades out of period | Yes — one dated table |
 | **P1b** | `POLITY_NAME_FOR_ERA` relabelling for states that did not exist yet (§5.2) | Stops the map asserting wrong *statehood* (Namibia in 1945, Zimbabwe in 1960) | Yes |
-| **P2** | Note + population sweep in area order (§3.1) | Turns 1,398 bare names into facts; measurable with the tracker | Yes — the bulk of the work |
-| **P3** | Coordinate-precision pass, then add `1994`, `1938`, `1920`, `1900`, `1600`, `1200`, `1000`, `bc323` (§4.1, §4.2) | Payload shrinks before it grows; 1994 adds the most new flags of any single era; more real dated files = fewer borders standing in for a neighbouring year | No (upstream data) |
+| **P2** | Note + population sweep in area order (§3.1) — **in progress**: 2,410 → 2,036 bare slots over three batches; run `node scripts/historical-era-remaining.mjs --bare 40` to pick the next one by leverage | Turns bare names into facts; measurable with the tracker | Yes — the bulk of the work |
+| ~~**P3**~~ | ~~Coordinate-precision pass, then add `1994`, `1938`, `1920`, `1900`, `1600`, `1200`, `1000`, `bc323`~~ — **done**: 73 MB → 34 MB, 21 eras | Payload shrank before it grew; 1994 has the best flag coverage of any era | No (upstream data) |
 | ~~**P4a**~~ | ~~Border-honesty presentation: `BORDERPRECISION` note (§5.3), dashed derived boundaries (§5.4), "no data" land styling (§5.5)~~ — **done** | Cheap credibility: the map no longer implies precision it does not have | No |
 | **P4b** | Panel depth — existed-from/to dates, "today this land is…", capitals, the coastline caveat (§3, §5.7) | Highest educational value once the basics are right | Partly derivable |
 
