@@ -1515,7 +1515,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt - nominally Ottoman, deep in the debt crisis that brought British occupation in 1882. Red with a white crescent and three stars.", population: 6_800_000 }],
     ["Ethiopia", { noFlag: true, continent: "East Africa", note: "Ethiopian Empire under Yohannes IV. The green-yellow-red tricolour with the Lion of Judah was not adopted until 1897.", population: 9_000_000 }],
     ["Morocco", { noFlag: true, continent: "North Africa", note: "Alawi Sultanate of Morocco - still independent, flying a plain red flag; the green pentagram was added in 1915.", population: 5_000_000 }],
-    ["Persia", { noFlag: true, continent: "Western Asia", note: "Qajar Persia under Naser al-Din Shah - the Lion and Sun banner, quite unlike the flag of modern Iran.", population: 7_500_000 }],
+    ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia under Naser al-Din Shah - the Lion and Sun banner was Persia's flag until 1933, when Reza Shah changed the name to Iran.", population: 7_500_000 }],
     ["Korea", { noFlag: true, continent: "East Asia", note: "Joseon Korea, forced open by Japan's 1876 Treaty of Ganghwa. The Taegukgi was not adopted until 1882.", population: 10_000_000 }],
     ["Greece", { noFlag: true, continent: "SE Europe", note: "Kingdom of Greece - its 1880 flag was the blue-and-white cross beneath a royal crown; the plain nine-stripe flag became the sole national flag in 1978.", population: 1_700_000 }],
     ["Kingdom of Hawaii", { noFlag: true, continent: "Pacific", note: "Kingdom of Hawaii under Kalakaua - independent until the US-backed overthrow of 1893. Its flag combined the Union Jack with eight stripes.", population: 58_000 }],
@@ -1550,6 +1550,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Kingdom of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag adopted that year is the one Brazil flies today, despite the dataset's older label.", population: 17_400_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt under British occupation since 1882, still nominally Ottoman.", population: 10_000_000 }],
     ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent.", noFlag: true, population: 11_000_000 }],
+    ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
     ["Korea", { noFlag: true, continent: "East Asia", note: "Korean Empire (1897–1910) — independent in name, under mounting Japanese and Russian pressure. The Taegukgi dates from 1882.", population: 12_000_000 }],
   ])],
 
@@ -1600,6 +1601,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Ethiopia (1914 dataset spells it Abyssinia — handled above; if it
     // appears as 'Ethiopia' separately, mirror the Menelik flag).
     ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Empire of Ethiopia — same Menelik II flag (1897–1936).", population: 11_000_000 }],
+    // Persia in 1914 — the constitutional period, flying the Lion and Sun.
+    ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Persia during WWI — the Lion and Sun banner was its national flag until 1933. The modern Islamic Republic flag came in 1980.", population: 8_900_000 }],
     // Burma in 1914 = British Burma (part of British India since 1886). Union Jack.
     ["Burma", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Burma — under British colonial rule as part of British India from 1886. The Union Jack flew over the territory.", population: 10_000_000 }],
     // Siam in 1914 = Rattanakosin Kingdom, still using the red elephant flag.
@@ -1613,6 +1616,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland.", population: 600_000 }],
     ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea.", population: 350_000 }],
     ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Ethiopian Empire under Empress Zewditu — still independent, flying Menelik II's green-yellow-red with the Lion of Judah.", population: 9_500_000 }],
+    ["Mongolia", { flag: "historical-flags/mongolia-1921.svg", continent: "East Asia", note: "Mongolian People's Republic (1921–1992) — established after the withdrawal of Chinese warlord forces, with the red field and golden Soyombo emblem.", population: 850_000 }],
+    ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet under the Lhasa government (1913–1951), after the withdrawal of Chinese forces following the 1911 revolution. The snow lions and sun-with-rays flag represented the Tibetan administration.", population: 1_200_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — German East Africa until the war, now a British League of Nations mandate; the Tanzanian flag dates from 1964.", population: 4_100_000 }],
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony, proclaimed in 1920 out of the East Africa Protectorate; the Kenyan flag came with independence in 1963.", population: 2_900_000 }],
     ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule.", population: 3_100_000 }],
@@ -1651,7 +1656,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria, administered as departments of France.", population: 7_200_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a dominion flying British flags alongside the 1928 orange-white-blue; today's flag dates from 1994.", population: 9_600_000 }],
     ["Iran", { noFlag: true, continent: "Western Asia", note: "Iran under Reza Shah Pahlavi, newly renamed from Persia — the Lion and Sun flag, replaced after the 1979 revolution.", population: 15_000_000 }],
-    ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia, unified in 1932 — its green shahada-and-sword flag took its present proportions and design only in 1973.", population: 3_000_000 }],
+    ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia (unified 1932) — the green flag with the white shahada text and curved sabre represents Islamic sovereignty. The design was standardised in 1938, though it was later revised in 1973.", population: 3_000_000 }],
+    ["Egypt", { flag: "historical-flags/egypt-kingdom.svg", continent: "North Africa", note: "Kingdom of Egypt (1922–1952) — the green field with white crescent and three stars flew until the 1952 revolution that led to the modern red-white-black flag.", population: 16_000_000 }],
+    ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red field with golden Soyombo (the flame/sun emblem with the three prongs) represented the Mongolian state from the 1920s through 1992.", population: 900_000 }],
+    ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet in 1938 — the Tibetan snow lions and sun-with-rays flag on the blue field represented the Tibetan administration; Chinese occupation would not solidify until after 1951.", population: 1_400_000 }],
     ["Italy", { noFlag: true, continent: "Italy", note: "Fascist Italy — the tricolour still carried the Savoy arms, which were removed when the republic replaced the monarchy in 1946.", population: 43_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
   ])],
@@ -1669,7 +1677,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Namibia", { modernName: "United Kingdom", continent: "Southern Africa", note: "South West Africa — German until 1915, then governed by South Africa under a League mandate. It became Namibia only in 1990.", population: 350_000 }],
     ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — independence, and a Sudanese flag, came in 1956.", population: 7_500_000 }],
     ["Iran", { noFlag: true, continent: "Western Asia", note: "Iran under Mohammad Reza Shah, occupied by Britain and the USSR during the war — the Lion and Sun flag flew until 1979.", population: 15_500_000 }],
-    ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia — the shahada-and-sword flag reached its present form in 1973.", population: 3_500_000 }],
+    ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia — the green flag with white shahada and sabre, standardised in 1938 and used through 1973.", population: 3_500_000 }],
+    ["Egypt", { flag: "historical-flags/egypt-kingdom.svg", continent: "North Africa", note: "Kingdom of Egypt under King Farouk — the green field with white crescent and three stars; replaced after the 1952 revolution by the modern red-white-black flag.", population: 19_000_000 }],
+    ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red flag with the golden Soyombo emblem represented Mongolia through 1992.", population: 1_000_000 }],
+    ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet in 1945 — the snow lions and sun-with-rays flag on the blue field; Chinese occupation would follow 1951.", population: 1_500_000 }],
     ["Italy", { noFlag: true, continent: "Italy", note: "Italy at the war's end, between the monarchy's fall and the 1946 republic that removed the Savoy arms from the tricolour.", population: 45_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     // China in 1945 — Republic of China (KMT) flag, blue-sky/white-sun
@@ -1734,7 +1745,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa in its last year before becoming a republic — flying the 1928 orange-white-blue; today's flag dates from 1994.", population: 17_400_000 }],
     ["Sudan", { modernName: "Sudan", continent: "Northeast Africa", note: "Republic of the Sudan, independent from the Anglo-Egyptian condominium in 1956.", population: 11_200_000 }],
     ["Iran", { noFlag: true, continent: "Western Asia", note: "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980.", population: 21_000_000 }],
-    ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia — its flag took its present form in 1973.", population: 4_000_000 }],
+    ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia — the green flag with white shahada and sabre, standardised in 1938; it was revised in 1973 to the current design.", population: 4_000_000 }],
+    ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red flag with golden Soyombo emblem, used until the flag change in 1992.", population: 1_200_000 }],
+    ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet in 1960 — the snow lions and sun-with-rays flag represented the Tibetan cultural identity, though Chinese control was consolidating after 1951.", population: 1_800_000 }],
     // Burma in 1960 was the Union of Burma — still on the 1948 flag.
     ["Burma", { flag: "historical-flags/burma-1948.png", continent: "Southeast Asia", note: "Union of Burma — the 1948 flag (red with blue canton + 1 large + 5 small stars) flew from 1948 until 1974.", population: 22_000_000 }],
     // China in 1960 = People's Republic of China. The modern PRC flag
