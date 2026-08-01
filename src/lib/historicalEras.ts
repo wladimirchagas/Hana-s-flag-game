@@ -425,8 +425,8 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Kimek-Kipchak khaganate", { continent: "Eurasian Steppe", note: "Turkic confederation of the Irtysh and the Kazakh steppe; its Kipchak successors would dominate the Pontic steppe until the Mongols." }],
   ["Kara Khitai Khaganate", { continent: "Central Asia", note: "Qara Khitai (Western Liao) — founded by Khitan refugees from northern China, and conquered by the Mongols in 1218." }],
   ["Tuareg Nomadic Tribes", { continent: "West Africa", note: "Tuareg confederations of the central Sahara, whose caravans carried the salt and gold of the trans-Saharan trade." }],
-  ["Chinese Warlords", { continent: "East Asia", note: "Warlord-era China — the Republic's authority was nominal while regional militarists ruled the provinces (1916–1928).", population: 470_000_000 }],
-  ["Chinese warlords", { continent: "East Asia", note: "Warlord-era China — regional militarists still held much of the country as the Nationalists fought both them and the Communists.", population: 500_000_000 }],
+  ["Chinese Warlords", { flag: "historical-flags/roc-1912.png", continent: "East Asia", note: "Warlord-era China — the Republic's authority was nominal while regional militarists ruled the provinces (1916–1928).", population: 470_000_000 }],
+  ["Chinese warlords", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Warlord-era China — regional militarists still held much of the country as the Nationalists fought both them and the Communists.", population: 500_000_000 }],
   ["Islamic and Hindu states", { continent: "South Asia", note: "The patchwork of Deccan sultanates, Rajput kingdoms and southern Hindu states between the Mughal north and Vijayanagara's collapse." }],
 
   // === Peoples and lifeways, not states =====================================
@@ -536,6 +536,16 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Mesoamerican city-states and chiefdoms", { continent: "Mesoamerica", note: "The city-states and chiefdoms of Mesoamerica between its great powers — Zapotec, Mixtec, Totonac, Tlaxcalan and their neighbours." }],
   ["Far Eastern SSR", { continent: "North Asia", note: "Far Eastern Republic (1920–1922) — a nominally independent buffer state between Soviet Russia and Japanese-occupied Siberia, absorbed once Japan withdrew.", noFlag: true }],
   ["Peshemegs", { continent: "North America", note: "Peoples of the eastern subarctic woodlands, hunting and fishing the forests between the St Lawrence and Hudson Bay." }],
+
+  // Kingdom of Italy 1861–1946: the tricolour with the Savoy arms. Modern Italy's
+  // plain tricolour is a 1946 flag, so the gate refuses it for every earlier era —
+  // which left Italy AND its colonies blank across five eras.
+  ["Austria Hungary", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austria-Hungary — the Habsburg dual monarchy created by the 1867 Compromise.", population: 45_000_000 }],
+  ["Imperial Japan", { modernName: "Japan", continent: "East Asia", note: "Empire of Japan — industrialising fast after the 1868 Meiji Restoration; the Hinomaru has been the national flag since 1870." }],
+  ["Malaya", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Malaya — the Straits Settlements and the protected Malay states; the Federation's own flag came in 1950." }],
+  ["Tibet", { noFlag: true, continent: "Central Asia", note: "Tibet — de facto independent from 1912 until the People's Republic annexed it in 1950–51. Its snow-lion flag was never recognised abroad and is banned in China today.", population: 1_200_000 }],
+  ["Xinjiang", { flag: "historical-flags/roc-1912.png", continent: "Central Asia", note: "Xinjiang — a Chinese province run as a personal fiefdom by successive governors, flying the Republic's five-coloured flag.", population: 2_500_000 }],
+  ["Manchuria", { flag: "historical-flags/roc-1912.png", continent: "East Asia", note: "Manchuria under the warlord Zhang Zuolin — nominally part of the Republic of China, and flying its five-coloured flag.", population: 20_000_000 }],
 
   // Medieval (600 AD – 1300 AD) --------------------------------------------
   // 600 AD uses "Eastern Roman Empire" and "Sasanian Empire"; from 800 onwards
@@ -983,7 +993,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Belgian Congo", { continent: "Central Africa", note: "Colonial Belgian rule of modern DRC.", population: 13_000_000 }],
   ["French Indochina", { continent: "Southeast Asia", note: "French colonial rule of Vietnam / Laos / Cambodia.", population: 22_000_000 }],
   ["Dutch East Indies", { continent: "Southeast Asia", note: "Dutch colonial rule of modern Indonesia.", population: 60_000_000 }],
-  ["Netherlands Indies", { continent: "Southeast Asia", note: "Dutch colonial rule of modern Indonesia.", population: 60_000_000 }],
+  ["Netherlands Indies", { modernName: "Netherlands", continent: "Southeast Asia", note: "Netherlands East Indies — Dutch colonial rule over what is now Indonesia.", population: 60_000_000 }],
   ["Abyssinia", { continent: "East Africa", note: "Historical name for Ethiopia, never colonised by Europe.", modernName: "Ethiopia", population: 11_000_000 }],
   ["Empire of Japan", { continent: "East Asia", note: "Imperial Japan, 1868–1947.", modernName: "Japan", population: 105_000_000 }],
   ["Burma", { continent: "Southeast Asia", note: "Pre-1989 name for Myanmar.", modernName: "Myanmar", population: 17_000_000 }],
@@ -1441,6 +1451,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // Pre-1900 eras never auto-borrow a modern flag, so `modernName` is used ONLY
   // where the flag flown in 1880 is the same design the country flies today.
   ["ad1880", new Map<string, PolityInfo>([
+    ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 28_400_000 }],
     // --- Great powers -------------------------------------------------------
     // 38-star flag, in use 4 Jul 1877 - 3 Jul 1890 (Colorado's admission).
     ["United States of America", { flag: "historical-flags/us-38star.svg", continent: "North America", note: "The United States in 1880 flew the 38-star flag (1877-1890) - Colorado had just been admitted. Twelve more stars were added before the 50-star flag of 1960.", population: 50_200_000 }],
@@ -1524,6 +1535,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1900 (high imperialism) overrides ====================================
   ["ad1900", new Map<string, PolityInfo>([
+    ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 32_500_000 }],
+    ["Germany", { flag: "historical-flags/german-empire.png", continent: "Central Europe", note: "German Empire under Wilhelm II — the black-white-red tricolour flew until 1918.", population: 56_400_000 }],
+    ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea — Italy's first African colony, taken in 1890.", population: 250_000 }],
+    ["Austria Hungary", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austria-Hungary — the Habsburg dual monarchy.", population: 47_000_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at its imperial height, Victoria's Raj covering today's India, Pakistan, Bangladesh and Burma.", population: 285_000_000 }],
     ["United States of America", { flag: "historical-flags/us-45star.svg", continent: "North America", note: "The United States flew the 45-star flag (1896–1908, after Utah's admission); the 50-star flag dates from 1960.", }],
     // By 1900 the Qing HAD a standardised national flag: the rectangular Yellow
@@ -1544,6 +1559,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    ["Kingfom of Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 36_000_000 }],
+    ["Libya", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya — taken from the Ottomans in 1911–12 and still being fought over when the war began.", population: 1_000_000 }],
+    ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland, on the Indian Ocean coast.", population: 500_000 }],
+    ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea.", population: 300_000 }],
+    ["Netherlands Indies", { modernName: "Netherlands", continent: "Southeast Asia", note: "Netherlands East Indies — Dutch rule over today's Indonesia.", population: 48_000_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a British dominion since 1910, flying the Union Jack and Red Ensign; today's flag dates from 1994.", population: 6_000_000 }],
     ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate — British-ruled since 1894; the crested-crane flag came at independence in 1962.", population: 2_900_000 }],
     ["Nigeria", { modernName: "United Kingdom", continent: "West Africa", note: "Britain had just amalgamated its northern and southern Nigerian protectorates (1914); the green-white-green flag dates from 1960.", population: 17_000_000 }],
@@ -1588,6 +1608,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 37_000_000 }],
+    ["Libya (IT)", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya — Rome's reconquest of the interior would run through the 1920s.", population: 1_000_000 }],
+    ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland.", population: 600_000 }],
+    ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea.", population: 350_000 }],
+    ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Ethiopian Empire under Empress Zewditu — still independent, flying Menelik II's green-yellow-red with the Lion of Judah.", population: 9_500_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — German East Africa until the war, now a British League of Nations mandate; the Tanzanian flag dates from 1964.", population: 4_100_000 }],
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony, proclaimed in 1920 out of the East Africa Protectorate; the Kenyan flag came with independence in 1963.", population: 2_900_000 }],
     ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule.", population: 3_100_000 }],
@@ -1608,6 +1633,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 43_000_000 }],
+    ["Libya", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya, declared an integral part of Italy in 1939.", population: 850_000 }],
+    ["Ethiopia (Italy)", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian East Africa — Ethiopia had been invaded in 1935–36 and would be liberated in 1941.", population: 10_000_000 }],
+    ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland, part of Italian East Africa from 1936.", population: 1_000_000 }],
+    ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea, part of Italian East Africa from 1936.", population: 600_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika Territory — a British mandate between the wars.", population: 5_300_000 }],
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony under British rule.", population: 3_600_000 }],
     ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule.", population: 3_800_000 }],
@@ -1628,6 +1658,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 45_000_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at the war's end — partition and independence came two years later, in 1947.", population: 389_000_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a dominion that fought with the Allies, flying British flags and the 1928 orange-white-blue; today's flag dates from 1994.", population: 11_400_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — a British mandate, soon a UN trust territory; independent in 1961.", population: 6_000_000 }],
@@ -1817,6 +1848,24 @@ export function polityInfo(name: string, eraId?: Era["id"]): PolityInfo {
     if (eraEntry) return eraEntry;
   }
   return POLITY_REGISTRY.get(name) ?? {};
+}
+
+/**
+ * Is this polity's `noFlag` a deliberate statement about THIS era?
+ *
+ * `noFlag` in the global registry is written for the entity's OLDEST appearance —
+ * "France" is the medieval Capetian kingdom, "Norway" the Viking-age one — and the
+ * registry is era-agnostic, so that flag suppression silently followed those names
+ * into 1900 and 1914, where the tricolour and the Norwegian cross plainly did fly.
+ * Only an entry in ERA_OVERRIDES for the era being asked about is a claim about that
+ * era; a global one must not outrank the adoption-year gate, which already refuses
+ * anything genuinely out of period.
+ *
+ * Pre-1880 eras keep trusting the global entry: they have no name-match fallback, so
+ * there is nothing for it to wrongly suppress.
+ */
+export function noFlagIsEraSpecific(name: string, eraId: Era["id"]): boolean {
+  return ERA_OVERRIDES.get(eraId)?.get(name)?.noFlag === true;
 }
 
 /**
