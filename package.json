@@ -18,6 +18,7 @@
     "pop:check": "node scripts/check-population-freshness.mjs",
     "maps:check": "node scripts/check-historical-maps.mjs",
     "maps:optimize": "node scripts/optimize-historical-maps.mjs",
+    "maps:tag-derived": "node scripts/tag-derived-boundaries.mjs",
     "eras:check-flags": "node scripts/check-historical-flag-anachronism.mjs",
     "eras:build-adoption-years": "node scripts/build-flag-adoption-years.mjs",
     "flags:check:capital-flags": "node scripts/check-capital-flags.mjs",

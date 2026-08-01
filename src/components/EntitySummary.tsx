@@ -34,6 +34,9 @@ export type HistoricalSummaryProps = {
   population?: number;
   /** Ruling power, from the era GeoJSON's own SUBJECTO field. */
   ruledBy?: string;
+  /** True when the polity's borders are a modern administrative stand-in rather
+   *  than a boundary sourced for the period. */
+  approximateExtent?: boolean;
 };
 
 export type EntitySummaryProps = ModernSummaryProps | HistoricalSummaryProps;
@@ -93,6 +96,13 @@ export function EntitySummary(props: EntitySummaryProps) {
   // Who governed this territory at the era's date — real information the dataset
   // carries on every feature and the app used to discard.
   if (h.ruledBy) rows.push({ label: "Ruled by", value: h.ruledBy });
+  // Never present a schematic boundary as if it were sourced — the map draws these
+  // dashed, and the fact sheet says why.
+  if (h.approximateExtent)
+    rows.push({
+      label: "Borders",
+      value: "Approximate — drawn along modern administrative boundaries",
+    });
   if (typeof h.population === "number")
     rows.push({ label: "Population", value: formatHistoricalPop(h.population) });
 

@@ -1257,6 +1257,11 @@
 }
 
 /* Historical map loading + error states. */
+.map-heading__caveat {
+  font-style: italic;
+  opacity: 0.85;
+}
+
 .hist-map__loading,
 .hist-map__error {
   padding: 4rem 1rem;

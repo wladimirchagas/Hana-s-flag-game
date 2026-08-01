@@ -4,7 +4,7 @@
 (content coverage) and `node scripts/check-historical-maps.mjs` (border geometry and
 provenance), and verified in the running app with Playwright.
 
-The Learn-mode **Period** picker offers 13 historical eras plus "Today". Each historical era
+The Learn-mode **Period** picker offers 21 historical eras plus "Today". Each historical era
 loads a hand-curated GeoJSON from `aourednik/historical-basemaps`
 (`public/historical-maps/world_*.geojson`); the user clicks a polity, and the panel + the
 "Flags of this era" grid are filled from `POLITY_REGISTRY` / `MODERN_NAME_ALIASES` /
@@ -21,32 +21,40 @@ population**.
 | era | polities | with flag | with note | with pop | bare name only | unnamed features |
 |-----|---------:|----------:|----------:|---------:|---------------:|-----------------:|
 | 2000 BC | 45 | 0 (0%) | 9 (2%) | 9 | 36 (77%) | 100 (22%) |
-| 500 BC | 87 | 1 (0%) | 21 (6%) | 21 | 66 (69%) | 112 (26%) |
-| 100 AD | 97 | 3 (4%) | 35 (10%) | 35 | 61 (51%) | 355 (39%) |
-| 600 AD | 98 | 0 (0%) | 33 (7%) | 33 | 65 (58%) | 116 (36%) |
-| 800 AD | 132 | 0 (0%) | 28 (9%) | 28 | 104 (66%) | 103 (26%) |
-| 1300 | 138 | 3 (1%) | 78 (28%) | 77 | 59 (44%) | 97 (28%) |
-| 1500 | 191 | 7 (2%) | 109 (31%) | 112 | 79 (44%) | 148 (25%) |
-| 1700 | 592 | 35 (26%) | 69 (38%) | 67 | 510 (27%) | 191 (34%) |
-| 1815 | 327 | 64 (55%) | 135 (67%) | 127 | 189 (6%) | 108 (27%) |
-| 1880 | 169 | 70 (61%) | 102 (72%) | 98 | 65 (5%) | 63 (21%) |
+| 500 BC | 87 | 1 (0%) | 21 (6%) | 21 | 66 (69%) | 111 (25%) |
+| 323 BC | 68 | 1 (0%) | 8 (6%) | 8 | 60 (64%) | 73 (30%) |
+| 100 AD | 97 | 3 (4%) | 35 (10%) | 35 | 61 (51%) | 149 (39%) |
+| 600 AD | 98 | 0 (0%) | 33 (7%) | 33 | 65 (58%) | 108 (36%) |
+| 800 AD | 132 | 0 (0%) | 28 (9%) | 28 | 104 (65%) | 101 (26%) |
+| 1000 | 129 | 5 (1%) | 25 (8%) | 23 | 103 (60%) | 89 (32%) |
+| 1200 | 129 | 3 (1%) | 33 (19%) | 29 | 96 (62%) | 99 (19%) |
+| 1300 | 138 | 3 (0%) | 78 (28%) | 77 | 59 (44%) | 80 (28%) |
+| 1500 | 191 | 7 (2%) | 109 (31%) | 112 | 79 (44%) | 91 (25%) |
+| 1600 | 637 | 11 (7%) | 45 (31%) | 42 | 590 (34%) | 199 (35%) |
+| 1700 | 592 | 35 (25%) | 69 (38%) | 67 | 510 (27%) | 189 (35%) |
+| 1815 | 327 | 64 (54%) | 135 (66%) | 127 | 189 (6%) | 107 (28%) |
+| 1880 | 169 | 76 (60%) | 102 (71%) | 98 | 59 (5%) | 63 (23%) |
+| 1900 | 165 | 62 (58%) | 57 (48%) | 53 | 80 (15%) | 48 (23%) |
 | 1914 | 142 | 95 (74%) | 58 (47%) | 53 | 34 (12%) | 33 (8%) |
+| 1920 | 163 | 87 (57%) | 56 (37%) | 51 | 57 (26%) | 40 (9%) |
+| 1938 | 171 | 110 (65%) | 54 (38%) | 48 | 44 (19%) | 79 (9%) |
 | 1945 | 183 | 117 (68%) | 66 (40%) | 60 | 43 (27%) | 42 (0%) |
 | 1960 | 157 | 84 (71%) | 49 (35%) | 43 | 50 (23%) | 37 (0%) |
+| 1994 | 193 | 146 (82%) | 58 (17%) | 52 | 25 (4%) | 43 (8%) |
 
 **Headline numbers**
 
 - **1,437 distinct polity names** appear across the bundled eras; the registry + aliases +
   era overrides cover **464** of them. **973 (68%) have no entry at all.**
-- Across all eras there are **2,358 polity slots**, of which **1,361 (58%) render as a bare
+- Across all eras there are **4,013 polity slots**, of which **2,410 (60%) render as a bare
   name** — the map's dominant interaction outcome is "here is a word". (It rose from 1,272
   when the anachronism gate in §2.1 withdrew flags that were decades out of period; those
   slots now need a *period-correct* flag or a note, which is the P2 sweep.)
 - Even in the best-covered modern eras, the **largest** polities have no facts: in 1914/1945/1960
   the United States, Brazil, Australia, India, Argentina, Sudan, Mexico, Saudi Arabia and
   (1960) China all show a flag and nothing else — no note, no population.
-- **8–39% of each era's mapped area is unnamed features**: they paint in the "unknown"
-  colour, and clicking them silently clears the selection.
+- **8–39% of each era's mapped area is unnamed features** — land the dataset records no
+  polity for. They are now hatched rather than filled, so they read as "no data" (§5.5).
 
 ---
 
@@ -304,7 +312,7 @@ we cannot source and never invents a polygon. Redrawing a border should only eve
 adopting a **different upstream dated file** (e.g. `world_1938` for the pre-partition WWII
 world), never by editing polygons by hand — that is what produced §5.1.
 
-### 5.3 Every pre-1700 border is flagged low-precision by the dataset itself — and we don't say so
+### 5.3 Every pre-1700 border is flagged low-precision by the dataset itself — RESOLVED
 
 `BORDERPRECISION` (1 = roughest, 3 = best) is carried on every feature and never surfaced:
 
@@ -316,13 +324,14 @@ world), never by editing polygons by hand — that is what produced §5.1.
 | 1880 | 3 on 234 features, 2 on 2 |
 | 1914 / 1945 / 1960 | **3** on 100% of features |
 
-So for the seven oldest eras the upstream authors are telling us the borders are at their
-coarsest confidence — and the app renders them as crisp lines, zoomable to 24×, with no caveat.
-Fix: surface the flag (a "borders approximate for this date" note on the era and in the panel),
-and consider fading/dashing borders at high zoom so the rendering stops implying precision the
-data does not have.
+So for the older eras the upstream authors are telling us the borders are at their coarsest
+confidence — and the app rendered them as crisp lines, zoomable to 24×, with no caveat.
 
-### 5.4 Roughly 100 "polities" are drawn with modern administrative borders — ours, not upstream's
+**Fixed:** when most of an era's features are precision 1, the map heading now reads
+"borders are approximate for this date". Eras the dataset rates 3 (1914 onward, and the new
+1994) show no caveat, so the signal stays meaningful.
+
+### 5.4 Roughly 170 "polities" are drawn with modern administrative borders — RESOLVED
 
 `scripts/split-patchwork.py` splits upstream's lumped polygons (Hausa States, Maya city-states,
 Greek city-states, Indian mahajanapadas, Swahili coast, Malay sultanates…) by intersecting them
@@ -341,11 +350,14 @@ state/province borders presented as 500 BC / 100 AD / 1300 borders:
 | 1815 | 4 |
 
 The split itself is defensible — one clickable feature per real polity beats a single "Maya
-city-states" blob — but the *lines* are schematic and the UI presents them exactly like
-sourced borders. Fix: tag these features with a `DERIVED_BOUNDARY` property at split time,
-render their internal borders **dashed**, and say so in the panel ("approximate extent —
-subdivided along modern administrative boundaries"). Where a scholarly boundary exists, replace
-it. This is the honest-labelling analogue of the "(unofficial flag)" label.
+city-states" blob — but the *lines* are schematic and the UI presented them exactly like
+sourced borders.
+
+**Fixed:** `scripts/tag-derived-boundaries.mjs` marks all 173 such features with
+`"DERIVED": 1` (parsed from `split-patchwork.py`, so the two can never drift). The map draws
+them **dashed**, and the panel adds a **Borders — "Approximate — drawn along modern
+administrative boundaries"** row. Replacing a derived line with a scholarly boundary is still
+worthwhile where one exists, but the map no longer overstates what it knows.
 
 ### 5.5 17–34% of pre-1914 land belongs to no polity at all
 
@@ -366,10 +378,12 @@ Sampling 3,746 land points against each era (`.` = share of modern land):
 | 1914 / 1945 / 1960 | 2% | 98% | 0% |
 
 The good news: **overlaps are negligible (≤1%)** — the maps are topologically tidy, so there is
-no double-claiming problem to fix. The gap is coverage, and it is honest gap (the dataset simply
-records no polity), which means the fix is presentational: render "no data" land as a visibly
-different hatch/colour from a real polity, and tell the user what it means on click, rather than
-painting it a land colour and clearing the selection silently.
+no double-claiming problem to fix. The gap is coverage, and it is an honest gap (the dataset
+simply records no polity).
+
+**Fixed presentationally:** unmapped land is now drawn with a diagonal **hatch** instead of a
+flat fill, so it reads as "no data" rather than as a country whose colour failed to load, and
+its tooltip says "No polity recorded here for this date".
 
 ### 5.6 Enforcement — `scripts/check-historical-maps.mjs`
 
@@ -401,7 +415,8 @@ should be stated in the era caption, not silently implied away.
 | **P1b** | `POLITY_NAME_FOR_ERA` relabelling for states that did not exist yet (§5.2) | Stops the map asserting wrong *statehood* (Namibia in 1945, Zimbabwe in 1960) | Yes |
 | **P2** | Note + population sweep in area order (§3.1) | Turns 1,398 bare names into facts; measurable with the tracker | Yes — the bulk of the work |
 | **P3** | Coordinate-precision pass, then add `1994`, `1938`, `1920`, `1900`, `1600`, `1200`, `1000`, `bc323` (§4.1, §4.2) | Payload shrinks before it grows; 1994 adds the most new flags of any single era; more real dated files = fewer borders standing in for a neighbouring year | No (upstream data) |
-| **P4** | Border-honesty presentation: `BORDERPRECISION` note (§5.3), dashed derived boundaries (§5.4), "no data" land styling (§5.5), coastline caveat (§5.7); then panel depth — dates, "today this land is", capitals (§3) | Cheap credibility: stops the map implying precision it does not have | No |
+| ~~**P4a**~~ | ~~Border-honesty presentation: `BORDERPRECISION` note (§5.3), dashed derived boundaries (§5.4), "no data" land styling (§5.5)~~ — **done** | Cheap credibility: the map no longer implies precision it does not have | No |
+| **P4b** | Panel depth — existed-from/to dates, "today this land is…", capitals, the coastline caveat (§3, §5.7) | Highest educational value once the basics are right | Partly derivable |
 
 Progress is measured by `node scripts/historical-era-remaining.mjs` (content) and
 `node scripts/check-historical-maps.mjs` (geometry/provenance); the target for P2 is
