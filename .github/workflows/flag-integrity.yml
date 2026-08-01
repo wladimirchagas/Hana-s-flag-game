@@ -39,6 +39,8 @@ on:
       - "public/historical-flags/**"
       - "src/lib/historicalEras.ts"
       - "scripts/check-historical-maps.mjs"
+      - "scripts/check-historical-flag-anachronism.mjs"
+      - "src/data/flagAdoptionYears.ts"
       - "scripts/repair-historical-maps.mjs"
 
 jobs:

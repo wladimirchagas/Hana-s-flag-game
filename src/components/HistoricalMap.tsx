@@ -59,10 +59,12 @@ export type HistoricalMapProps = {
    *  parent persist zoom across era switches (the parent owns the hook).
    *  When omitted, the component manages its own zoom state. */
   zoom?: ZoomPanState;
-  /** Fires once after the era's GeoJSON has loaded, with the set of
-   *  feature NAMEs the file contains. Used by the parent to decide
-   *  whether a currently-selected entity still exists in this era. */
-  onDataLoaded?: (names: ReadonlySet<string>) => void;
+  /** Fires once after the era's GeoJSON has loaded, with the set of feature NAMEs
+   *  the file contains and a NAME → SUBJECTO map of ruling powers (only where the
+   *  two differ). The names let the parent decide whether a currently-selected
+   *  entity still exists in this era; the rulers drive the panel's "Ruled by" row
+   *  and let a colony inherit its ruler's period-correct flag. */
+  onDataLoaded?: (names: ReadonlySet<string>, rulers: ReadonlyMap<string, string>) => void;
   /** User-chosen central meridian (longitude). 0 = Atlantic / Greenwich
    *  default; 180 = Pacific; -95 = Americas; etc.
    *  NOTE: this should be the BASE meridian only (not including any
@@ -171,11 +173,15 @@ export const HistoricalMap = memo(function HistoricalMap({
   useEffect(() => {
     if (!data || !onDataLoaded) return;
     const names = new Set<string>();
+    const rulers = new Map<string, string>();
     for (const ft of data.features) {
       const n = ft.properties?.NAME;
-      if (n) names.add(n);
+      if (!n) continue;
+      names.add(n);
+      const ruler = ft.properties?.SUBJECTO;
+      if (ruler && ruler !== n) rulers.set(n, ruler);
     }
-    onDataLoaded(names);
+    onDataLoaded(names, rulers);
   }, [data, onDataLoaded]);
 
   // Compute per-feature path strings via d3-geo's equal-earth projection

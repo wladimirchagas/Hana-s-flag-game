@@ -32,6 +32,8 @@ export type HistoricalSummaryProps = {
   region?: string;
   note?: string;
   population?: number;
+  /** Ruling power, from the era GeoJSON's own SUBJECTO field. */
+  ruledBy?: string;
 };
 
 export type EntitySummaryProps = ModernSummaryProps | HistoricalSummaryProps;
@@ -88,6 +90,9 @@ export function EntitySummary(props: EntitySummaryProps) {
   const h = props;
   const rows: { label: string; value: React.ReactNode }[] = [];
   if (h.region) rows.push({ label: "Region", value: h.region });
+  // Who governed this territory at the era's date — real information the dataset
+  // carries on every feature and the app used to discard.
+  if (h.ruledBy) rows.push({ label: "Ruled by", value: h.ruledBy });
   if (typeof h.population === "number")
     rows.push({ label: "Population", value: formatHistoricalPop(h.population) });
 

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useSearchParams } from "react-router-dom";
 import { bundledCountries, fetchCountries, type Country } from "../api/countries";
+import { FLAG_ADOPTION_YEAR } from "../data/flagAdoptionYears";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { EraPicker } from "../components/EraPicker";
@@ -47,6 +48,7 @@ import {
   ERAS,
   eraAllowsModernFlagFallback,
   getEra,
+  flagExistedInEra,
   polityDisplayName,
   polityInfo,
   polityModernName,
@@ -106,6 +108,15 @@ type HistoricalSelection = {
   note?: string;
   /** Scholarly population estimate at the polity's peak. Optional. */
   population?: number;
+  /** Ruling power from the dataset's own SUBJECTO field, when it differs from
+   *  the polity itself (Belgian Congo → Belgium). Shown as a "Ruled by" row. */
+  ruledBy?: string;
+  /** True when the flag shown is the RULER's, not the polity's own — the panel
+   *  says so, so a colony's card never implies it had its own national flag. */
+  flagIsRulers?: true;
+  /** Set when no flag is shown BECAUSE the modern one postdates the era. Lets the
+   *  panel explain precisely instead of claiming the polity predates flags. */
+  flagTooNew?: { name: string; year: number };
 };
 type Selection = ModernSelection | HistoricalSelection;
 
@@ -172,6 +183,9 @@ export default function LearnPage() {
   // for ~27 s whenever restcountries.com hangs. See bundledCountries().
   const [countries, setCountries] = useState<Country[]>(() => bundledCountries());
   const [loadError, setLoadError] = useState<string | null>(null);
+  // NAME → SUBJECTO for the current era's GeoJSON (only where they differ). Supplies
+  // the "Ruled by" row and lets a colony inherit its ruler's period-correct flag.
+  const [polityRulers, setPolityRulers] = useState<ReadonlyMap<string, string>>(new Map());
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const [showFlagMap, setShowFlagMap] = useState(false);
@@ -549,15 +563,35 @@ export default function LearnPage() {
     const info = polityInfo(name, eraId);
     const allowFallback = eraAllowsModernFlagFallback(eraId);
 
-    // Resolve a flag URL with up to four layers of fallback:
-    //   1. Curated historical-flag image from the registry          (always)
-    //   2. Registry-declared `modernName` → flagcdn                 (always)
-    //   3. Alias table (MODERN_NAME_ALIASES) → flagcdn              (always)
+    // Resolve a flag URL with these layers, in order:
+    //   1. Curated historical-flag image from the registry              (always)
+    //   2. Registry-declared `modernName` → the modern country's flag   (era-gated)
+    //   3. Alias table (MODERN_NAME_ALIASES) → modern flag              (era-gated)
     //   4. Direct case-insensitive match of NAME against a modern
-    //      country — ONLY enabled for 1914+ eras, because for pre-1900
-    //      eras most countries had wildly different flags than today.
+    //      country — only for 1914+ eras                               (era-gated)
+    //   5. The dataset's own SUBJECTO ruler, resolved the same way      (era-gated)
+    //
+    // Layers 2-5 all pass through flagExistedInEra(): a modern flag may only stand in
+    // for a historical one if it already existed at the era's date. Without that gate
+    // the map showed South Africa's 1994 flag in 1914 and Uganda's 1962 flag in 1960.
     let flag: string | undefined = info.flag;
     let continent: string | undefined = info.continent;
+    let flagIsRulers = false;
+    // Set when a modern flag was REFUSED because it postdates the era, so the panel
+    // can say which flag and which year instead of the generic "predates modern flag
+    // design" line — that line is plainly wrong for, say, Uganda in 1960.
+    let flagTooNew: { name: string; year: number } | undefined;
+
+    /** Modern country flag for `modernName`, but only if period-legal. */
+    const eraLegalModernFlag = (modernName: string): Country | null => {
+      const country = countryByName.get(modernName.toLowerCase());
+      if (!country) return null;
+      if (flagExistedInEra(country.code, eraId)) return country;
+      const year = FLAG_ADOPTION_YEAR[country.code];
+      if (year != null) flagTooNew = { name: country.name, year };
+      return null;
+    };
+
     // Explicit "show no flag" override — used for ancient entities whose
     // NAME happens to match a modern country (Egypt 2000 BC, Armenia 100
     // AD) and for occupied / between-states polities where no national
@@ -575,15 +609,40 @@ export default function LearnPage() {
           flag = aliasInfo.flag;
           if (!continent) continent = aliasInfo.continent;
         } else {
-          const country = countryByName.get(modernName.toLowerCase());
+          const country = eraLegalModernFlag(modernName);
           if (country) {
             flag = country.flagSvg;
             if (!continent) continent = country.continent;
           }
         }
       }
+
+      // Layer 5 — the ruling power. Every feature in the historical-basemaps files
+      // carries SUBJECTO; where it differs from NAME it names the state that actually
+      // governed the territory (Belgian Congo → Belgium, Gold Coast → United
+      // Kingdom…). A colony flew its ruler's flag, so when the polity's own flag is
+      // unavailable or not yet period-legal, inherit the ruler's — resolved through
+      // the SAME gate, so it can never be more anachronistic than the ruler.
+      if (!flag) {
+        const ruler = polityRulers.get(name);
+        if (ruler && ruler !== name) {
+          const rulerInfo = polityInfo(ruler, eraId);
+          if (rulerInfo.flag) {
+            flag = rulerInfo.flag;
+            flagIsRulers = true;
+          } else {
+            const rulerModern = polityModernName(ruler, eraId) ?? ruler;
+            const country = eraLegalModernFlag(rulerModern);
+            if (country) {
+              flag = country.flagSvg;
+              flagIsRulers = true;
+            }
+          }
+        }
+      }
     }
 
+    const ruledBy = polityRulers.get(name);
     return {
       kind: "historical",
       name,
@@ -591,6 +650,9 @@ export default function LearnPage() {
       continent,
       note: info.note,
       population: info.population,
+      ruledBy: ruledBy && ruledBy !== name ? ruledBy : undefined,
+      flagIsRulers: flagIsRulers || undefined,
+      flagTooNew: flag ? undefined : flagTooNew,
     };
   }
 
@@ -1236,7 +1298,10 @@ export default function LearnPage() {
             centerLongitude={mapView.centerLongitude}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
-            onDataLoaded={setAvailableHistoricalNames}
+            onDataLoaded={(names, rulers) => {
+              setAvailableHistoricalNames(names);
+              setPolityRulers(rulers);
+            }}
             flagOverlay={historicalFlagOverlay}
           />
         )}
@@ -1336,7 +1401,20 @@ export default function LearnPage() {
                     region={display.continent}
                     note={display.note}
                     population={display.population}
+                    ruledBy={
+                      display.kind === "historical"
+                        ? display.ruledBy && polityDisplayName(display.ruledBy)
+                        : undefined
+                    }
                   />
+                )}
+                {flagUrl && !flagLoadFailed && display.kind === "historical" && display.flagIsRulers && (
+                  // A colony flew its ruler's flag. Say so, so the card never implies
+                  // the territory had a national flag of its own.
+                  <p className="entity-summary__note">
+                    Flew the flag of {polityDisplayName(display.ruledBy ?? "")} — it had no
+                    national flag of its own at this date.
+                  </p>
                 )}
                 {flagUrl && !flagLoadFailed ? (
                   <div className="learn-fs__flag-box">
@@ -1370,6 +1448,12 @@ export default function LearnPage() {
                       <FlagMeaning code={display.country.code} />
                     )}
                   </div>
+                ) : display.kind === "historical" && display.flagTooNew ? (
+                  <p className="learn-fs__no-flag">
+                    No flag for {era.label} — {display.flagTooNew.name}'s modern flag
+                    was only adopted in {display.flagTooNew.year}, and no earlier flag
+                    for this territory is bundled.
+                  </p>
                 ) : (
                   <p className="learn-fs__no-flag">
                     No flag image — this polity predates modern flag design
