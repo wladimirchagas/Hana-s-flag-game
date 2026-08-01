@@ -99,6 +99,14 @@ export const ERAS: readonly Era[] = [
     dataUrl: MAP("world_bc500"),
   },
   {
+    id: "bc323",
+    label: "323 BC",
+    caption: "Alexander's empire",
+    year: "323 BC",
+    summary: "The Macedonian empire at Alexander's death — Greece to the Indus — about to be divided among his generals.",
+    dataUrl: MAP("world_bc323"),
+  },
+  {
     id: "ad100",
     label: "100 AD",
     caption: "Roman peak",
@@ -123,6 +131,22 @@ export const ERAS: readonly Era[] = [
     dataUrl: MAP("world_800"),
   },
   {
+    id: "ad1000",
+    label: "1000",
+    caption: "Turn of the millennium",
+    year: "1000 AD",
+    summary: "Song China's boom, the Fatimids in Egypt, a resurgent Byzantium, Norse voyages to the Atlantic — and Europe's feudal kingdoms taking shape.",
+    dataUrl: MAP("world_1000"),
+  },
+  {
+    id: "ad1200",
+    label: "1200",
+    caption: "Before the Mongols",
+    year: "1200 AD",
+    summary: "Angkor at its height, the Almohads across the Maghreb, Kamakura Japan — and on the steppe, Genghis Khan is about to unite the Mongol tribes.",
+    dataUrl: MAP("world_1200"),
+  },
+  {
     id: "ad1300",
     label: "1300",
     caption: "Mongol Empire",
@@ -137,6 +161,14 @@ export const ERAS: readonly Era[] = [
     year: "1500 AD",
     summary: "Ottoman expansion, Ming China, Aztec and Inca empires, the Mughal era begins, European explorers reach the Americas.",
     dataUrl: MAP("world_1500"),
+  },
+  {
+    id: "ad1600",
+    label: "1600",
+    caption: "Gunpowder empires",
+    year: "1600 AD",
+    summary: "Ming China, the Ottomans, Safavid Persia and Mughal India at their heights, while Dutch and English chartered companies push into the Indian Ocean.",
+    dataUrl: MAP("world_1600"),
   },
   {
     id: "ad1700",
@@ -169,12 +201,36 @@ export const ERAS: readonly Era[] = [
     dataUrl: MAP("world_1880"),
   },
   {
+    id: "ad1900",
+    label: "1900",
+    caption: "High imperialism",
+    year: "1900",
+    summary: "Africa partitioned between European powers, the Boxer Rebellion in Qing China, and the Ottoman Empire in its final decades.",
+    dataUrl: MAP("world_1900"),
+  },
+  {
     id: "ad1914",
     label: "1914",
     caption: "WWI eve",
     year: "1914",
     summary: "Europe on the brink of WWI — Austria-Hungary, Ottoman, German and Russian empires still intact.",
     dataUrl: MAP("world_1914"),
+  },
+  {
+    id: "ad1920",
+    label: "1920",
+    caption: "After WWI",
+    year: "1920",
+    summary: "Four empires gone — Habsburg, Ottoman, Russian and German. New states across Central Europe, and League of Nations mandates in the Middle East and Africa.",
+    dataUrl: MAP("world_1920"),
+  },
+  {
+    id: "ad1938",
+    label: "1938",
+    caption: "Eve of WWII",
+    year: "1938",
+    summary: "Nazi Germany annexes Austria and the Sudetenland, Italy holds Ethiopia, Japan is at war in China — and the European empires are still intact.",
+    dataUrl: MAP("world_1938"),
   },
   {
     id: "ad1945",
@@ -191,6 +247,14 @@ export const ERAS: readonly Era[] = [
     year: "1960",
     summary: "Cold War — USSR, Yugoslavia, Czechoslovakia still intact; African decolonisation begins.",
     dataUrl: MAP("world_1960"),
+  },
+  {
+    id: "ad1994",
+    label: "1994",
+    caption: "After the Cold War",
+    year: "1994",
+    summary: "The USSR has broken into 15 states, Yugoslavia into five, Czechoslovakia into two — and South Africa has just held its first democratic election.",
+    dataUrl: MAP("world_1994"),
   },
   {
     id: "today",
@@ -221,7 +285,25 @@ export const DEFAULT_ERA_ID: Era["id"] = "today";
  * is more honest than rendering a 21st-century flag in the 1500s.
  */
 export function eraAllowsModernFlagFallback(eraId: Era["id"]): boolean {
-  return eraId === "ad1914" || eraId === "ad1945" || eraId === "ad1960" || eraId === "today";
+  // Every era from 1880 on. This used to be the ONLY protection against
+  // anachronism, so it was kept to 1914+; now flagExistedInEra() checks each
+  // country's actual adoption year, which is both stricter (it refuses South
+  // Africa in 1914) and more generous (it allows Denmark in 1700 — the Dannebrog
+  // really did fly). Pre-1880 eras still require an explicit registry entry,
+  // because a bare NAME match that far back is as likely to be a different polity
+  // that merely shares a modern country's name (the Mali Empire, the Kingdom of
+  // Kongo, the Kingdom of Georgia) as it is to be the same state.
+  return (
+    eraId === "ad1880" ||
+    eraId === "ad1900" ||
+    eraId === "ad1914" ||
+    eraId === "ad1920" ||
+    eraId === "ad1938" ||
+    eraId === "ad1945" ||
+    eraId === "ad1960" ||
+    eraId === "ad1994" ||
+    eraId === "today"
+  );
 }
 
 /** Numeric year of an era, for comparisons against flag-adoption dates. */
@@ -229,17 +311,25 @@ export function eraYear(eraId: Era["id"]): number {
   switch (eraId) {
     case "bc2000": return -2000;
     case "bc500": return -500;
+    case "bc323": return -323;
     case "ad100": return 100;
     case "ad600": return 600;
     case "ad800": return 800;
+    case "ad1000": return 1000;
+    case "ad1200": return 1200;
     case "ad1300": return 1300;
     case "ad1500": return 1500;
+    case "ad1600": return 1600;
     case "ad1700": return 1700;
     case "ad1815": return 1815;
     case "ad1880": return 1880;
+    case "ad1900": return 1900;
     case "ad1914": return 1914;
+    case "ad1920": return 1920;
+    case "ad1938": return 1938;
     case "ad1945": return 1945;
     case "ad1960": return 1960;
+    case "ad1994": return 1994;
     default: return new Date().getFullYear();
   }
 }
@@ -328,6 +418,16 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Scythians", { continent: "Eurasian Steppe", note: "Nomadic peoples of the Pontic-Caspian steppe.", population: 1_000_000 }],
   ["Sarmatians", { continent: "Eurasian Steppe", note: "Nomadic Iranian peoples; later allies + rivals of Rome.", population: 500_000 }],
   ["Dacia", { continent: "Eastern Europe", note: "Iron-Age kingdom in modern Romania; conquered by Rome in 106 AD.", population: 1_000_000 }],
+
+  // === Polities introduced by the 323 BC / 1000 / 1200 / 1600 eras ============
+  ["Empire of Alexander", { continent: "Eurasia", note: "Alexander the Great's empire at his death in 323 BC — Macedonia and Greece to Egypt, Persia and the Indus. His generals divided it within a generation.", population: 30_000_000 }],
+  ["Song Empire", { continent: "East Asia", note: "Song dynasty China — a boom in cities, printing, paper money and iron production; the world's largest economy of its day.", population: 100_000_000 }],
+  ["Kimek-Kipchak khaganate", { continent: "Eurasian Steppe", note: "Turkic confederation of the Irtysh and the Kazakh steppe; its Kipchak successors would dominate the Pontic steppe until the Mongols." }],
+  ["Kara Khitai Khaganate", { continent: "Central Asia", note: "Qara Khitai (Western Liao) — founded by Khitan refugees from northern China, and conquered by the Mongols in 1218." }],
+  ["Tuareg Nomadic Tribes", { continent: "West Africa", note: "Tuareg confederations of the central Sahara, whose caravans carried the salt and gold of the trans-Saharan trade." }],
+  ["Chinese Warlords", { continent: "East Asia", note: "Warlord-era China — the Republic's authority was nominal while regional militarists ruled the provinces (1916–1928).", population: 470_000_000 }],
+  ["Chinese warlords", { continent: "East Asia", note: "Warlord-era China — regional militarists still held much of the country as the Nationalists fought both them and the Communists.", population: 500_000_000 }],
+  ["Islamic and Hindu states", { continent: "South Asia", note: "The patchwork of Deccan sultanates, Rajput kingdoms and southern Hindu states between the Mughal north and Vijayanagara's collapse." }],
 
   // Medieval (600 AD – 1300 AD) --------------------------------------------
   // 600 AD uses "Eastern Roman Empire" and "Sasanian Empire"; from 800 onwards
@@ -1314,6 +1414,20 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Sultinate of Zanzibar", { noFlag: true, continent: "East Africa", note: "Sultanate of Zanzibar - the Busaidi dynasty's clove and ivory empire, flying a plain red flag.", population: 200_000 }],
   ])],
 
+  // === 1900 (high imperialism) overrides ====================================
+  ["ad1900", new Map<string, PolityInfo>([
+    // By 1900 the Qing HAD a standardised national flag: the rectangular Yellow
+    // Dragon banner, promulgated 1889 (the 1880 era shows none, because until then
+    // it was the triangular naval version).
+    ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing China during the Boxer Rebellion. The rectangular Yellow Dragon banner had been the national flag since 1889.", population: 400_000_000 }],
+    // The dataset keeps the label "Kingdom of Brazil" for 1900, but Brazil had been
+    // a republic since 1889 — and the republican flag it adopted then is today's.
+    ["Kingdom of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag adopted that year is the one Brazil flies today, despite the dataset's older label.", population: 17_400_000 }],
+    ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt under British occupation since 1882, still nominally Ottoman.", population: 10_000_000 }],
+    ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent.", noFlag: true, population: 11_000_000 }],
+    ["Korea", { noFlag: true, continent: "East Asia", note: "Korean Empire (1897–1910) — independent in name, under mounting Japanese and Russian pressure. The Taegukgi dates from 1882.", population: 12_000_000 }],
+  ])],
+
   // === 1914 (eve of WWI) overrides ==========================================
   // Modern country names in 1914 that were under colonial rule, plus a
   // few cases that need their period-correct national flag (Egypt under
@@ -1476,7 +1590,12 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
   ["Silia", "Silla"],
   // Mis-encoded characters (the source file lost the diacritic)
   ["M?ori", "Māori"],
+  ["Byelarus", "Belarus"],
+  ["Turkish Cypriot-administered area", "Northern Cyprus"],
   ["Monte Alb?n", "Monte Albán"],
+  // The 323 BC file lost the same two diacritics to U+FFFD rather than "?".
+  ["Teotihuac\uFFFDn", "Teotihuacán"],
+  ["Monte Alb\uFFFDn", "Monte Albán"],
   ["Teotihuacàn", "Teotihuacán"],
   // Dutch Guiana is modern Suriname; "Guinea" is a different place entirely.
   ["Dutch Guinea", "Dutch Guiana"],
