@@ -1430,6 +1430,7 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
   ["Silia", "Silla"],
   // Mis-encoded characters (the source file lost the diacritic)
   ["M?ori", "Māori"],
+  ["Monte Alb?n", "Monte Albán"],
   ["Teotihuacàn", "Teotihuacán"],
   // Dutch Guiana is modern Suriname; "Guinea" is a different place entirely.
   ["Dutch Guinea", "Dutch Guiana"],

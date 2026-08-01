@@ -2,17 +2,21 @@
 // (public/historical-maps/world_*.geojson).
 //
 // The era maps are the app's only source of historical borders, and unlike the
-// flag pipeline they have never had a guard. Two real defects motivated this
-// script (both found in the 2026-07-31 audit, see
-// docs/historical-eras-improvement-plan.md):
+// flag pipeline they had no guard at all. Three real defects motivated this script
+// (see docs/historical-eras-improvement-plan.md):
 //
-//   1. world_1850.geojson is NOT a 1850 map — all 450 features are byte-identical
-//      to world_1815.geojson, with 12 labels rewritten by scripts/generate-1850.cjs.
-//      So the "1850" era draws 1815 borders: no Texas (1845), no Oregon (1846),
-//      no Mexican Cession (1848), no independent Greece or Belgium. A hand-relabelled
-//      map is invented geography — the same class of error as an invented flag.
-//   2. world_1300.geojson carries an unnamed feature whose geodesic area is 12.78 sr,
-//      larger than the whole sphere (4π ≈ 12.566) — a broken/self-overlapping polygon.
+//   1. world_1850.geojson was NOT an 1850 map — all 450 features were byte-identical
+//      to world_1815.geojson, with 12 labels rewritten by a local script. So the
+//      "1850" era drew 1815 borders: no Texas (1845), no Oregon (1846), no Mexican
+//      Cession (1848), no independent Greece or Belgium. A hand-relabelled map is
+//      invented geography — the same class of error as an invented flag. (Fixed: the
+//      era is now upstream's real world_1880.)
+//   2. world_1300.geojson carried an unnamed feature whose geodesic area was 12.78 sr,
+//      larger than the whole sphere (4π ≈ 12.566) — a degenerate ring wound the wrong
+//      way. (Fixed by scripts/repair-historical-maps.mjs.)
+//   3. Mis-encoded NAMEs reached users verbatim — "M?ori" (1880) and "Monte Alb?n"
+//      (600 AD), reported 2026-08-01. NAMEs are the display strings, so a lost
+//      diacritic is a user-visible bug. (Fixed by DISPLAY_NAME_FIXES.)
 //
 // Checks (all mechanical — none of them judge historical accuracy):
 //   A. no feature may cover more than half the sphere
@@ -22,9 +26,9 @@
 //
 // Usage: node scripts/check-historical-maps.mjs   (npm run maps:check)
 //
-// NOT part of npm run flags:check yet — it fails on the two known defects above
-// by design, so wiring it into the build gate is the last step of fixing them
-// (same pattern as the subdiv/capital omission audits).
+// Runs first in npm run flags:check and in the flag-integrity CI workflow. All three
+// defects above are fixed, so this check passes — keep it that way: if it fails, fix
+// the map or add the missing display-name entry, never weaken the check.
 
 import { readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
@@ -49,6 +53,8 @@ const MAX_FEATURE_AREA = 2 * Math.PI;
  */
 const DUPLICATE_LIMIT = 0.98;
 
+const { DISPLAY_NAME_FIXES } = await import(resolve(__dirname, "../src/lib/historicalEras.ts"));
+
 const files = readdirSync(MAPS_DIR).filter((f) => f.endsWith(".geojson")).sort();
 const failures = [];
 const geometryHashes = new Map(); // file → Set(md5 of geometry)
@@ -60,6 +66,16 @@ for (const file of files) {
 
   for (const feature of geo.features) {
     hashes.add(createHash("md5").update(JSON.stringify(feature.geometry)).digest("hex"));
+
+    // D. mis-encoded name that would render as-is in the panel, the flag grid and
+    // the map tooltip.
+    const name = feature.properties?.NAME;
+    if (name && /[?\uFFFD]/.test(name) && !DISPLAY_NAME_FIXES.has(name)) {
+      failures.push(
+        `${file}: polity NAME "${name}" is mis-encoded and has no DISPLAY_NAME_FIXES entry ` +
+          `— it would render to users exactly like that`,
+      );
+    }
 
     let area = 0;
     try {
