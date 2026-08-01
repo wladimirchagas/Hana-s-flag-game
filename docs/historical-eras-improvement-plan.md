@@ -25,7 +25,7 @@ population**.
 | 100 AD | 97 | 2 (4%) | 35 (10%) | 35 | 62 (51%) | 355 (39%) |
 | 600 AD | 98 | 0 (0%) | 33 (7%) | 33 | 65 (58%) | 116 (36%) |
 | 800 AD | 132 | 1 (0%) | 28 (9%) | 28 | 103 (65%) | 103 (26%) |
-| 1300 | 138 | 6 (0%) | 78 (6%) | 77 | 59 (10%) | 122 (84%) |
+| 1300 | 138 | 6 (1%) | 78 (28%) | 77 | 59 (44%) | 97 (28%) |
 | 1500 | 191 | 9 (2%) | 109 (31%) | 112 | 78 (44%) | 148 (25%) |
 | 1700 | 592 | 40 (26%) | 69 (38%) | 67 | 509 (27%) | 191 (34%) |
 | 1815 | 327 | 68 (56%) | 135 (67%) | 127 | 190 (6%) | 108 (27%) |
@@ -91,16 +91,20 @@ sourcing**:
    resolves to *in that era*, so it can never be more anachronistic than the ruler;
 3. an **"Group by empire"** mode for the "Flags of this era" grid.
 
-### 2.3 Dataset typos are shown to users verbatim
+### 2.3 Dataset typos were shown to users verbatim — RESOLVED
 
 The upstream NAMEs are the display strings, so users read: *Kingfom of Italy*, *Anglo-Egyption
 Sudan*, *Khoiasan*, *Bantou*, *Eastern North Amercian hunter-gatherers*, *Scottland*,
 *Kongldom of Hawaii*, *Cyraneica (UK Lybia)*, *Tripolitana (UK Lybia)*, *Fezzan (Frech
-Lybia)*, *Quazaq Khanate*, *Dutch Guinea* (it is Dutch **Guiana**). Fix with a
-`DISPLAY_NAME_FIXES` layer (dataset key → corrected label); registry keys stay verbatim so
-lookups keep working.
+Lybia)*, *Quazaq Khanate*, *Dutch Guinea* (it is Dutch **Guiana**), *M?ori*.
 
-### 2.4 Alternate spellings silently lose coverage
+**Fixed** by `DISPLAY_NAME_FIXES` + `polityDisplayName()` in `historicalEras.ts`, applied at the
+three render points (panel heading, "Flags of this era" label, map tooltip). The dataset NAME
+stays the key for every lookup, selection match and era name-set comparison, so a correction can
+never break resolution. The table corrects only misspellings and mis-encodings — a name that is
+merely an older form (Persia, Siam, Abyssinia, Ceylon) is period-correct and left alone.
+
+### 2.4 Alternate spellings silently lose coverage — PARTLY RESOLVED
 
 The same entity appears under two spellings in different files, and only one has a registry
 entry, so the other renders bare. Found and **fixed in this change**: `Teotihuacàn` (600 AD)
@@ -108,31 +112,48 @@ vs `Teotihuacán` (100 AD), and `Gurjara Pratihara` vs `Gurjara-Pratihara` (both
 Still open, needing sourced entries rather than aliases: `Bantu`/`Bantou`,
 `Khoisan`/`Khoiasan`, `Saharan pastoral nomads`/`Saharan Pastoral Nomads`.
 
-### 2.5 Painter-order occlusion makes some polities unclickable
+### 2.5 Painter-order occlusion made some polities unclickable — RESOLVED
 
-`HistoricalMap` renders features in file order, so a small polity fully inside a
-later-drawn one is unreachable. Verified in the running app by hit-testing each polity's
-centroid: **Bahmani Kingdom** is covered by Golkonda (1500); **Hohenzollern** by Württemberg
-and **Brunswick** by Hanover (1815). Fix: sort features by descending geodesic area
-before painting (largest first), so no polity can be buried. ~10 features per era are affected.
+`HistoricalMap` rendered features in file order, so a small polity fully inside a
+later-drawn one was unreachable. Verified in the running app by hit-testing each polity's
+centroid: **Bahmani Kingdom** was covered by Golkonda (1500); **Hohenzollern** by Württemberg
+and **Brunswick** by Hanover (1815).
 
-### 2.6 `world_1300.geojson` contains a whole-globe polygon
+**Fixed** — `HistoricalMap` now sorts features by descending projected area before painting, so
+containment order and paint order agree and no polity can be buried. Re-tested by hit-testing
+each of those four centroids in the running app: all are now the topmost element.
 
-Feature index 64 is an unnamed MultiPolygon with a geodesic area of **12.78 sr** — the whole
-sphere is 4π ≈ 12.57 sr. It does not currently occlude (it is holed), but it makes 84% of that
-era's "mapped area" meaningless and is a rendering hazard the moment paint order changes. It
-should be dropped or repaired when the files are reprocessed (§4.2).
+### 2.6 `world_1300.geojson` contained a whole-globe polygon — RESOLVED
 
-### 2.7 All flags in 1914/1945/1960 wait on a live network call
+Feature index 64 was an unnamed MultiPolygon with a geodesic area of **12.78 sr** — the whole
+sphere is 4π ≈ 12.57 sr. The cause was a 4-point *zero-width sliver* near Zimbabwe (two of its
+corners identical to 15 decimal places): d3-geo measures rings on the sphere, so a degenerate
+ring wound "the wrong way" reads as covering everything outside it.
+
+**Fixed** by `scripts/repair-historical-maps.mjs`, which deletes rings that enclose nothing (the
+largest was 9e-13 deg², about a hundredth of a square metre) and then drops features left with no
+geometry at all. In `world_1300` that removed 59 rings and 25 features — **all of them unnamed
+artifacts; the era still has exactly 138 named polities**, so nothing clickable was lost. It also
+un-skews the era's statistics: with the phantom globe gone, 1300's "no polity" land falls from
+84% to 28% and its note coverage rises from 6% to 28% of mapped area.
+
+The other ~180 degenerate rings across the remaining files enclose nothing and render nothing, so
+they are deliberately left for the coordinate-precision pass (§4.2) which rewrites those files
+anyway — re-serialising 73 MB of GeoJSON twice would bloat the repository for no gain.
+
+### 2.7 All flags in 1914/1945/1960 waited on a live network call — RESOLVED
 
 The modern-flag fallback reads the country list from `fetchCountries()`. With
 `restcountries.com` unreachable (a documented, recurring case for this project), the Learn page took
 a **measured 27 s** to render any flags at all; before that, 1914 showed **20 of 142** flags
-instead of 119. The bundled data to render immediately already exists (`ALL_COUNTRY_OPTIONS` +
-`COUNTRY_FACTS` + `public/flags/*.svg`). Seed `countries` synchronously from the bundle and
-upgrade in place when the network answers — the same principle as the "country widget
-information must never be reduced" hard rule, applied to the historical eras that depend on
-the same list.
+instead of 119.
+
+**Fixed** — `bundledCountries()` (exported from `src/api/countries.ts`) returns the bundled list
+synchronously, and `LearnPage` seeds its `countries` state with it, letting the network fetch
+upgrade the list in place when it lands. Re-measured in the running app: **first flag at 6.1 s**
+(the era GeoJSON load, no longer the API), with the full 119 of 142 flags present. Never
+initialise that state to `[]` again — the same principle as the "country widget information must
+never be reduced" hard rule, applied to the historical eras that depend on the same list.
 
 ---
 
@@ -335,12 +356,11 @@ painting it a land colour and clearing the selection silently.
 
 ### 5.6 Enforcement — `scripts/check-historical-maps.mjs`
 
-New, and currently **failing by design on the two real defects** (`npm run maps:check`):
+Both defects it was written to catch are now fixed (§5.1, §2.6), so it **passes and is wired into
+`npm run flags:check` and the `flag-integrity` CI workflow** — which now also triggers on
+`public/historical-maps/**`, `public/historical-flags/**` and `src/lib/historicalEras.ts`.
 
-- `world_1300.geojson` has a feature covering 12.78 sr — larger than the whole sphere (§2.6);
-- `world_1815` ↔ `world_1850` share 100% of their geometry (§5.1).
-
-It also validates ring closure, ring degeneracy and coordinate range (all clean today). The
+It validates ring closure, ring degeneracy and coordinate range (all clean today). The
 duplication threshold is 98%, calibrated to sit above the highest legitimate pair (1945 ↔ 1960
 share 82%, 1914 ↔ 1945 58% — borders that genuinely did not move) and below the fabricated pair
 at 100%. Once §5.1 and §2.6 are fixed, wire it into `npm run flags:check` and the
@@ -358,7 +378,7 @@ should be stated in the era caption, not silently implied away.
 
 | # | Work | Why first | New sourcing? |
 |---|------|-----------|---------------|
-| **P0** | Paint-order fix (§2.5), display-name fixes (§2.3), alternate-spelling keys (§2.4), bundled-first country seed (§2.7), repair/remove the 1300 whole-globe polygon (§2.6) | Pure correctness, no data research, small diffs | No |
+| ~~**P0**~~ | ~~Paint-order fix (§2.5), display-name fixes (§2.3), alternate-spelling keys (§2.4), bundled-first country seed (§2.7), repair the 1300 whole-globe polygon (§2.6)~~ — **done**; `maps:check` now passes and gates the build | Pure correctness, no data research, small diffs | No |
 | ~~**P0b**~~ | ~~Retire the fabricated 1850 map (§5.1)~~ — **done**: era replaced with upstream `world_1880`, generator and file deleted, overrides rewritten for 1880 | The app was shipping invented geography under a date label | No (upstream data) |
 | **P1** | Flag-adoption-year gate + `SUBJECTO` inheritance + anachronism check script (§2.1, §2.2); `POLITY_NAME_FOR_ERA` relabelling for states that did not exist yet (§5.2) | Stops the app asserting wrong flags *and* wrong statehood, and raises colonial-era coverage | Yes — one dated table |
 | **P2** | Note + population sweep in area order (§3.1) | Turns 1,398 bare names into facts; measurable with the tracker | Yes — the bulk of the work |

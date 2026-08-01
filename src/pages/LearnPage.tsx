@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useSearchParams } from "react-router-dom";
-import { fetchCountries, type Country } from "../api/countries";
+import { bundledCountries, fetchCountries, type Country } from "../api/countries";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { EraPicker } from "../components/EraPicker";
@@ -47,6 +47,7 @@ import {
   ERAS,
   eraAllowsModernFlagFallback,
   getEra,
+  polityDisplayName,
   polityInfo,
   polityModernName,
   type Era,
@@ -109,7 +110,10 @@ type HistoricalSelection = {
 type Selection = ModernSelection | HistoricalSelection;
 
 function selectionName(s: Selection): string {
-  return s.kind === "modern" ? s.country.name : s.name;
+  // Historical polities render through polityDisplayName so upstream's typos
+  // ("Kingfom of Italy", "Scottland") don't reach the user. `s.name` stays the
+  // verbatim dataset NAME — it is the key every lookup and match still uses.
+  return s.kind === "modern" ? s.country.name : polityDisplayName(s.name);
 }
 function selectionContinent(s: Selection): string {
   return s.kind === "modern" ? s.country.continent : s.continent ?? "Historical";
@@ -162,7 +166,11 @@ export default function LearnPage() {
     const e = initialParamsRef.current!.era;
     return e && ERAS.some((x) => x.id === e) ? e : DEFAULT_ERA_ID;
   });
-  const [countries, setCountries] = useState<Country[]>([]);
+  // Seeded from the bundle so flags render on the first paint; the network
+  // fetch below upgrades this in place (adding live populations) when it lands.
+  // Never initialise this to [] — that is what left the historical eras flagless
+  // for ~27 s whenever restcountries.com hangs. See bundledCountries().
+  const [countries, setCountries] = useState<Country[]>(() => bundledCountries());
   const [loadError, setLoadError] = useState<string | null>(null);
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
@@ -745,7 +753,9 @@ export default function LearnPage() {
       if (!sel || sel.kind !== "historical") continue;
       out.push({
         id: name,
-        name,
+        // Grid label uses the corrected spelling; `id` stays the dataset NAME so
+        // selection round-trips through the map unchanged.
+        name: polityDisplayName(name),
         flag: sel.flag ?? null,
         continent: topLevelContinent(sel.continent),
         subcontinent: sel.continent ?? "Other",

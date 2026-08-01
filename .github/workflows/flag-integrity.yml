@@ -33,6 +33,13 @@ on:
       - "src/components/SubdivisionHierarchyTable.tsx"
       - "src/pages/LearnPage.css"
       - "src/index.css"
+      # Historical-era maps: check-historical-maps.mjs guards their geometry and
+      # provenance (no era may be a relabelled copy of another).
+      - "public/historical-maps/**"
+      - "public/historical-flags/**"
+      - "src/lib/historicalEras.ts"
+      - "scripts/check-historical-maps.mjs"
+      - "scripts/repair-historical-maps.mjs"
 
 jobs:
   check-proportions:
