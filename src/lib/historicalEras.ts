@@ -17,6 +17,13 @@
  * right now?" without any historical-data caveats.
  */
 
+// NOTE: the ".ts" extension is deliberate (allowImportingTsExtensions is on). The
+// node-side scripts — historical-era-remaining.mjs, check-historical-maps.mjs — import
+// this module directly via Node's type stripping, and Node will not resolve an
+// extensionless TypeScript path. Keep the extension so the tracker and the app agree
+// on flag resolution.
+import { FLAG_ADOPTION_YEAR } from "../data/flagAdoptionYears.ts";
+
 export type Era = {
   /** Stable id (used as React key + URL slug). */
   id: string;
@@ -215,6 +222,45 @@ export const DEFAULT_ERA_ID: Era["id"] = "today";
  */
 export function eraAllowsModernFlagFallback(eraId: Era["id"]): boolean {
   return eraId === "ad1914" || eraId === "ad1945" || eraId === "ad1960" || eraId === "today";
+}
+
+/** Numeric year of an era, for comparisons against flag-adoption dates. */
+export function eraYear(eraId: Era["id"]): number {
+  switch (eraId) {
+    case "bc2000": return -2000;
+    case "bc500": return -500;
+    case "ad100": return 100;
+    case "ad600": return 600;
+    case "ad800": return 800;
+    case "ad1300": return 1300;
+    case "ad1500": return 1500;
+    case "ad1700": return 1700;
+    case "ad1815": return 1815;
+    case "ad1880": return 1880;
+    case "ad1914": return 1914;
+    case "ad1945": return 1945;
+    case "ad1960": return 1960;
+    default: return new Date().getFullYear();
+  }
+}
+
+/**
+ * May a polity in this era be shown the MODERN flag of `countryCode`?
+ *
+ * Only if that flag already existed at the era's date. Before this gate the app
+ * handed today's flag to any polity whose NAME matched a modern country — 99 in
+ * 1914, 140 in 1945, 115 in 1960 — so South Africa's 1994 flag flew over the 1914
+ * map, Uganda's 1962 flag over 1960, and the 1945 map showed Bangladesh (1971).
+ *
+ * A code with no known adoption year is BLOCKED, not allowed: a missing flag is
+ * honest, a flag decades out of period is not. That is the same asymmetry as every
+ * other flag rule in this repo.
+ */
+export function flagExistedInEra(countryCode: string, eraId: Era["id"]): boolean {
+  if (eraId === "today") return true;
+  const adopted = FLAG_ADOPTION_YEAR[countryCode];
+  if (adopted == null) return false;
+  return adopted <= eraYear(eraId);
 }
 
 export function getEra(id: string): Era {

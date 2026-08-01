@@ -458,6 +458,65 @@ that hard-codes "2020, not 2010" — add a country to `LATEST_ENUMERATION_YEAR` 
 all its subdivisions to that enumeration. Never weaken a floor or remove a country to make the build
 pass; fix the figure instead.
 
+## Historical eras must never show an anachronistic flag — hard rule, do not override without approval
+
+**A polity on a Learn-mode historical era map may only be shown a flag that already
+existed at that era's date.** The eras let a polity whose NAME matches a modern country
+borrow that country's flag (`eraAllowsModernFlagFallback`, 1914 onwards, plus curated
+`modernName` entries in any era). Every one of those borrows MUST pass
+`flagExistedInEra(code, eraId)` in `src/lib/historicalEras.ts`, which compares the era's
+year against `FLAG_ADOPTION_YEAR` (`src/data/flagAdoptionYears.ts`).
+
+### Why this rule exists
+
+This shipped and was measured (2026-08-01): **99 polities in 1914, 140 in 1945 and 115 in
+1960** were handed today's flag regardless of when it was adopted. South Africa's flag —
+first flown **27 April 1994** — appeared on the 1914, 1945 AND 1960 maps; Uganda's 1962
+flag appeared in 1960; the 1945 map flew the 1949 black-red-gold over occupied Germany and
+gave Bangladesh (1971) a flag two decades before the country existed. A *plausible* flag
+that is decades out of period is worse than no flag — exactly the reasoning behind "never
+show the parent nation's flag for a subdivision".
+
+### Rules
+
+1. **Never bypass the gate.** Any new path that resolves a flag for a historical polity
+   must go through `flagExistedInEra()`. A code with NO adoption year is BLOCKED, never
+   allowed — a missing flag is honest, an out-of-period flag is not.
+2. **`FLAG_ADOPTION_YEAR` is generated, never hand-edited.** Re-run
+   `node scripts/build-flag-adoption-years.mjs` (Wikidata: flag `P163` → inception `P571`,
+   keyed by ISO `P297`). A year Wikidata gets wrong is corrected in the generator's
+   `ADOPTION_OVERRIDES`, **with a cited reason**, so the fix survives every regen — the
+   same discipline as `CAPITAL_FLAG_SOURCE_OVERRIDES` and `MANUAL_VERIFIED_POPULATION`.
+3. **Know which direction each override errs in.** P571 is sometimes a later
+   standardisation of an unchanged design (Denmark 1748, Sweden 1906, the Netherlands
+   1937) — correcting those to the design's own documented year restores a flag that
+   really did fly. It is sometimes an ANCESTOR design (Ethiopia 1778, Russia 1696) —
+   those MUST be corrected upward to the current design's adoption, because leaving them
+   lets a modern flag fly in an era that never saw it. When unsure, prefer the later year:
+   over-blocking loses a flag, under-blocking ships a wrong one.
+4. **A refused flag must be explained, not left blank.** The panel says which flag was
+   refused and when it was adopted ("No flag for 1960 — Uganda's modern flag was only
+   adopted in 1962"). Never revert to the generic "this polity predates modern flag
+   design" line for a 20th-century colony.
+5. **Prefer the ruler's flag to no flag, and label it.** Where the era GeoJSON's own
+   `SUBJECTO` names a ruling power, a colony inherits that ruler's era-legal flag and the
+   panel says so ("Flew the flag of Belgium — it had no national flag of its own at this
+   date") plus a "Ruled by" row. Never show an inherited flag without that caption; a
+   colony's card must never imply it had a national flag of its own.
+6. **Verify in the running app** (the mandatory visual-verification rule applies): open
+   1914 and confirm South Africa shows the Union Jack with the "Ruled by" caption, 1960
+   Uganda shows the dated explanation and no flag, and a country whose flag DID predate
+   the era (Brazil 1889 in 1914) still shows it.
+
+### Enforcement
+
+`scripts/check-historical-flag-anachronism.mjs` (`npm run eras:check-flags`, in
+`npm run flags:check` and the `flag-integrity` workflow) **fails the build** if the gate is
+no longer called from `LearnPage`/`historicalEras.ts`, if `FLAG_ADOPTION_YEAR` loses a
+country or gains an implausible year, or if a curated `modernName` points at a country with
+no adoption year (which would silently refuse the flag the author intended). It also prints
+every borrow the gate refused, so the curation stays visible. Never weaken it; fix the data.
+
 ## Country widget information must never be reduced — hard rule, do not override without approval
 
 **The Learn-mode country widget (`EntitySummary`, rendered in `src/pages/LearnPage.tsx`) is a

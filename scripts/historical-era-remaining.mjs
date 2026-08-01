@@ -41,6 +41,7 @@ const {
   polityInfo,
   polityModernName,
   eraAllowsModernFlagFallback,
+  flagExistedInEra,
 } = await import(R("../src/lib/historicalEras.ts"));
 
 // Modern country names, for the 1914+ "NAME matches a modern country" fallback
@@ -49,9 +50,25 @@ const selectionSrc = readFileSync(R("../src/lib/countrySelection.ts"), "utf8");
 const MODERN_NAMES = new Set(
   [...selectionSrc.matchAll(/name:\s*"([^"]+)"/g)].map((m) => m[1].toLowerCase()),
 );
+/** lowercase country name → ISO alpha-2, for the era flag-adoption gate. */
+const CODE_BY_NAME = new Map(
+  [...selectionSrc.matchAll(/code:\s*"([A-Z]{2})",\s*name:\s*"([^"]+)"/g)].map((m) => [
+    m[2].toLowerCase(),
+    m[1],
+  ]),
+);
 
-/** Mirrors LearnPage's flag resolution: curated → alias/modern → era-gated. */
-function resolveFlag(name, eraId) {
+/** A modern flag may stand in only if it already existed at the era's date. */
+function eraLegalModern(modernName, eraId) {
+  const code = CODE_BY_NAME.get(modernName.toLowerCase());
+  return code != null && flagExistedInEra(code, eraId) ? "modern" : null;
+}
+
+/**
+ * Mirrors LearnPage's flag resolution: curated → alias/modern (era-gated) →
+ * the dataset's SUBJECTO ruler (era-gated).
+ */
+function resolveFlag(name, eraId, rulers) {
   const info = polityInfo(name, eraId);
   if (info.flag) return "curated";
   if (info.noFlag) return null; // deliberate, sourced "this polity had no flag"
@@ -59,10 +76,20 @@ function resolveFlag(name, eraId) {
   const modernName =
     polityModernName(name, eraId) ??
     (allowFallback && MODERN_NAMES.has(name.toLowerCase()) ? name : null);
-  if (!modernName) return null;
-  const aliasInfo = polityInfo(modernName, eraId);
-  if (aliasInfo.flag) return "curated";
-  return MODERN_NAMES.has(modernName.toLowerCase()) ? "modern" : null;
+  if (modernName) {
+    const aliasInfo = polityInfo(modernName, eraId);
+    if (aliasInfo.flag) return "curated";
+    const legal = eraLegalModern(modernName, eraId);
+    if (legal) return legal;
+  }
+  const ruler = rulers?.get(name);
+  if (ruler && ruler !== name) {
+    const rulerInfo = polityInfo(ruler, eraId);
+    if (rulerInfo.flag) return "ruler";
+    const legal = eraLegalModern(polityModernName(ruler, eraId) ?? ruler, eraId);
+    if (legal) return "ruler";
+  }
+  return null;
 }
 
 const args = process.argv.slice(2);
@@ -79,10 +106,13 @@ for (const era of ERAS) {
   const geo = JSON.parse(readFileSync(R(`../public/${era.dataUrl}`), "utf8"));
 
   const byName = new Map();
+  const rulers = new Map();
   let unnamedArea = 0;
   let unnamedFeatures = 0;
   for (const feature of geo.features) {
     const name = feature.properties?.NAME ?? null;
+    const ruler = feature.properties?.SUBJECTO ?? null;
+    if (name && ruler && ruler !== name) rulers.set(name, ruler);
     let area = 0;
     try {
       area = geoArea(feature);
@@ -108,7 +138,7 @@ for (const era of ERAS) {
   const gaps = [];
   for (const [name, v] of byName) {
     const info = polityInfo(name, era.id);
-    const flag = resolveFlag(name, era.id);
+    const flag = resolveFlag(name, era.id, rulers);
     const note = Boolean(info.note);
     const pop = typeof info.population === "number";
     if (flag) { flagCount++; flagArea += v.area; }
