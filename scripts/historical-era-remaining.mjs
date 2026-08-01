@@ -47,6 +47,7 @@ const {
   polityModernName,
   eraAllowsModernFlagFallback,
   flagExistedInEra,
+  noFlagIsEraSpecific,
 } = await import(R("../src/lib/historicalEras.ts"));
 
 // Modern country names, for the 1914+ "NAME matches a modern country" fallback
@@ -76,8 +77,10 @@ function eraLegalModern(modernName, eraId) {
 function resolveFlag(name, eraId, rulers) {
   const info = polityInfo(name, eraId);
   if (info.flag) return "curated";
-  if (info.noFlag) return null; // deliberate, sourced "this polity had no flag"
   const allowFallback = eraAllowsModernFlagFallback(eraId);
+  // A global (era-agnostic) noFlag no longer suppresses an era-legal modern flag —
+  // see noFlagIsEraSpecific().
+  if (info.noFlag && (!allowFallback || noFlagIsEraSpecific(name, eraId))) return null;
   const modernName =
     polityModernName(name, eraId) ??
     (allowFallback && MODERN_NAMES.has(name.toLowerCase()) ? name : null);

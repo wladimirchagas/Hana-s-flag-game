@@ -49,6 +49,7 @@ import {
   eraAllowsModernFlagFallback,
   getEra,
   flagExistedInEra,
+  noFlagIsEraSpecific,
   polityDisplayName,
   polityInfo,
   polityModernName,
@@ -599,11 +600,20 @@ export default function LearnPage() {
       return null;
     };
 
-    // Explicit "show no flag" override — used for ancient entities whose
-    // NAME happens to match a modern country (Egypt 2000 BC, Armenia 100
-    // AD) and for occupied / between-states polities where no national
-    // flag applies. Skips the modern-flag fallback entirely.
-    if (!flag && !info.noFlag) {
+    // Explicit "show no flag" — used for ancient entities whose NAME happens to match
+    // a modern country (Egypt 2000 BC, Armenia 100 AD) and for occupied /
+    // between-states polities where no national flag applies.
+    //
+    // It only blocks the fallback when it is a claim about THIS era, though. The
+    // registry is era-agnostic, so a `noFlag` written for medieval France or Viking
+    // Norway was silently suppressing the tricolour in 1900 and the Norwegian cross in
+    // 1914 — flags that unquestionably flew. In an era that allows the name-match
+    // fallback, only an ERA_OVERRIDES entry counts; the adoption-year gate below is
+    // what keeps the result period-correct.
+    const suppressed =
+      info.noFlag === true &&
+      (!allowFallback || noFlagIsEraSpecific(name, eraId));
+    if (!flag && !suppressed) {
       const modernName =
         polityModernName(name, eraId) ?? // covers era-overrides + registry.modernName + aliases
         (allowFallback && countryByName.has(name.toLowerCase()) ? name : null);
@@ -649,7 +659,17 @@ export default function LearnPage() {
       }
     }
 
-    const ruledBy = polityRulers.get(name);
+    // The dataset's SUBJECTO names the sovereign, which for a polity recorded under a
+    // longer title IS itself — "Kingfom of Italy" is subject to "Italy". Showing
+    // "Ruled by: Italy" there is noise, so strip the title and compare. A ruler merely
+    // mentioned in the name ("Zaire (Belgium)", "Libya (IT)") is a real dependency and
+    // still shows the row.
+    const rawRuler = polityRulers.get(name);
+    const bareName = polityDisplayName(name)
+      .replace(/^(kingdom|kingfom|empire|republic|state|union|dominion|sultanate|emirate|principality|grand duchy)\s+of\s+/i, "")
+      .trim()
+      .toLowerCase();
+    const ruledBy = rawRuler && rawRuler.trim().toLowerCase() === bareName ? undefined : rawRuler;
     return {
       kind: "historical",
       name,
