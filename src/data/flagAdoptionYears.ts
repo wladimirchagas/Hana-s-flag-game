@@ -53,7 +53,7 @@ export const FLAG_ADOPTION_YEAR: Readonly<Record<string, number>> = {
   CV: 1992,
   CY: 1960,
   CZ: 1993,
-  DE: 1949, // curated
+  DE: 1919, // curated
   DJ: 1977,
   DK: 1625, // curated
   DM: 1978,

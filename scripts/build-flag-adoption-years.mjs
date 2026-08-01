@@ -49,9 +49,14 @@ const ADOPTION_OVERRIDES = {
   // Tricolour restored 1830 (July Revolution) and unbroken since.
   // https://en.wikipedia.org/wiki/Flag_of_France
   FR: 1830,
-  // Black-red-gold readopted by the Federal Republic on 23 May 1949.
+  // Black-red-gold was the Weimar Republic's national flag from 1919, and the Federal
+  // Republic readopted the same design on 23 May 1949 (Wikidata's date). 1919 is the
+  // year the design became a national flag, so the era gate uses that — the Nazi
+  // interruption of 1933–1945 is handled where it belongs, by explicit noFlag entries
+  // for those eras in historicalEras.ts, since a single adoption year cannot express
+  // "flew, then didn't, then flew again".
   // https://en.wikipedia.org/wiki/Flag_of_Germany
-  DE: 1949,
+  DE: 1919,
   // Maple Leaf proclaimed 15 February 1965, replacing the Canadian Red Ensign.
   // https://en.wikipedia.org/wiki/Flag_of_Canada
   CA: 1965,
