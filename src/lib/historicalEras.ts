@@ -502,6 +502,40 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Makkura", { continent: "Northeast Africa", note: "Makuria — a Christian Nubian kingdom on the middle Nile that held off Arab conquest for six centuries under the Baqt treaty." }],
   ["Denmark-Norway", { continent: "Northern Europe", note: "Denmark–Norway — a single realm from 1537 to 1814, ruling Norway, Iceland, Greenland and the Faroes from Copenhagen.", modernName: "Denmark" }],
 
+  ["Khazars", { continent: "Eurasian Steppe", note: "Khazar Khaganate — a Turkic steppe empire between the Black and Caspian seas whose elite adopted Judaism, and which shielded Europe from Arab expansion through the Caucasus." }],
+  ["Khiva Khanate", { continent: "Central Asia", note: "Khanate of Khiva — an oasis state on the Amu Darya in Khwarezm, a Russian protectorate from 1873 until the Soviets abolished it in 1920." }],
+  ["Tiahuanaco Empire", { continent: "South America", note: "Tiwanaku — a highland state on Lake Titicaca whose monumental stonework and llama caravans shaped the Andes for five centuries before the Inca." }],
+  ["Huari Empire", { continent: "South America", note: "Wari Empire — the first Andean empire of roads and provincial capitals, whose administrative model the Inca would later inherit." }],
+  ["Anasazi", { continent: "North America", note: "Ancestral Puebloan peoples of the Colorado Plateau — builders of the Chaco great houses and the Mesa Verde cliff dwellings." }],
+  ["Cree", { continent: "North America", note: "Cree (Nēhiyawak) — the most widespread Indigenous nation of the Canadian subarctic, whose territory stretched from the Rockies to Labrador." }],
+  ["Chukchi", { continent: "North Asia", note: "Chukchi people of the far northeast — reindeer herders inland, sea-mammal hunters on the coast, and the one Siberian people the Russian Empire never subdued by force." }],
+  ["Athabascan", { continent: "North America", note: "Athabaskan-speaking peoples of the northwestern forests — a family reaching from interior Alaska to the Southwest, where it includes the Navajo and Apache." }],
+  ["Tungus", { continent: "North Asia", note: "Tungusic peoples of the Siberian and Manchurian forests — Evenk reindeer herders and the Jurchen, whose descendants founded the Qing dynasty." }],
+  ["Slavonic tribes", { continent: "Eastern Europe", note: "Early Slavic tribal groups spreading across eastern and central Europe, from whom the Rus', Polish, Czech, Serb and Bulgarian states would form." }],
+  ["Arabs", { continent: "Arabia", note: "Arab tribal societies of the peninsula — camel nomads and caravan-city traders, on the eve of the Islamic conquests that would carry their language from Iberia to the Indus." }],
+  ["Rajput Kingdoms", { continent: "South Asia", note: "Rajput kingdoms of northern India — warrior clans holding hill forts across Rajasthan and Malwa, long the fiercest resistance to Delhi's sultans." }],
+  ["Rajput kingdoms", { continent: "South Asia", note: "Rajput kingdoms of northern India — warrior clans holding hill forts across Rajasthan and Malwa, long the fiercest resistance to Delhi's sultans." }],
+  ["Zhow states", { continent: "East Asia", note: "The Zhou states — the ritual overlordship of the Zhou kings dissolving into the rival kingdoms of the Spring and Autumn period." }],
+  ["Hadramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia, whose merchant families settled across the Indian Ocean from East Africa to Indonesia." }],
+  ["Emirate of Bin Shal'an", { continent: "Arabia", note: "The Ruwallah emirate of the Al Sha'lan — a Bedouin power of the Syrian desert, controlling the caravan routes between Damascus and Nejd." }],
+  ["Emirate of the White Sheep Turks", { continent: "Western Asia", note: "Aq Qoyunlu (\"White Sheep\") — a Turkoman confederation that ruled eastern Anatolia and Persia until the Safavids displaced it in 1501." }],
+  ["Turan", { continent: "Central Asia", note: "Turan — the old Persian name for the steppe lands beyond the Oxus, home to the Turkic and Iranian nomads who bordered the settled Persian world." }],
+  ["Mongolia", { continent: "East Asia", note: "Mongolia — under Qing rule until 1911 and a Soviet-aligned People's Republic from 1924; the modern soyombo flag dates from 1992.", noFlag: true, population: 800_000 }],
+  ["Papua New Guinea", { continent: "Oceania", note: "New Guinea — Papuan and Austronesian societies of extraordinary linguistic diversity, divided between German, British and later Australian administration before independence in 1975.", noFlag: true }],
+  ["Hadhramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia and their far-flung merchant diaspora." }],
+
+  ["Liao", { continent: "East Asia", note: "Liao dynasty — the Khitan empire of Manchuria and northern China, whose name reached Europe as \"Cathay\".", population: 9_000_000 }],
+  ["Xixia", { continent: "East Asia", note: "Western Xia — the Tangut kingdom of the Ordos and Gansu corridor, which held the Silk Road until Genghis Khan destroyed it in 1227.", population: 3_000_000 }],
+  ["Alwa", { continent: "Northeast Africa", note: "Alodia — the southernmost of the Christian Nubian kingdoms, with its capital at Soba on the Blue Nile." }],
+  ["Volga Bulgars", { continent: "Eastern Europe", note: "Volga Bulgaria — a Muslim trading state at the Volga–Kama confluence, the northern terminus of the fur and silver routes, destroyed by the Mongols in 1236." }],
+  ["Ainu", { continent: "East Asia", note: "Ainu people of Hokkaido, Sakhalin and the Kurils — hunters, fishers and traders whose language is unrelated to Japanese." }],
+  ["Tibeto-Burmanese", { continent: "East / South Asia", note: "Tibeto-Burman speaking peoples of the eastern Himalaya and the upper Irrawaddy, from whom the Burmese, Tibetan and Yi societies descend." }],
+  ["Maize farmers", { continent: "Americas", note: "Maize-farming societies of the Americas — the crop domesticated in Mexico that spread from the Andes to the Great Lakes and underwrote every farming civilisation of the hemisphere." }],
+  ["Hindu kingdoms and republics", { continent: "South Asia", note: "The mahajanapadas — the kingdoms and gana-sangha republics of the Ganges plain, the political world in which Buddhism and Jainism arose." }],
+  ["Mesoamerican city-states and chiefdoms", { continent: "Mesoamerica", note: "The city-states and chiefdoms of Mesoamerica between its great powers — Zapotec, Mixtec, Totonac, Tlaxcalan and their neighbours." }],
+  ["Far Eastern SSR", { continent: "North Asia", note: "Far Eastern Republic (1920–1922) — a nominally independent buffer state between Soviet Russia and Japanese-occupied Siberia, absorbed once Japan withdrew.", noFlag: true }],
+  ["Peshemegs", { continent: "North America", note: "Peoples of the eastern subarctic woodlands, hunting and fishing the forests between the St Lawrence and Hudson Bay." }],
+
   // Medieval (600 AD – 1300 AD) --------------------------------------------
   // 600 AD uses "Eastern Roman Empire" and "Sasanian Empire"; from 800 onwards
   // the dataset says "Byzantine Empire" and there's no Sassanid Persia.
@@ -1489,6 +1523,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1900 (high imperialism) overrides ====================================
   ["ad1900", new Map<string, PolityInfo>([
+    ["United States of America", { flag: "historical-flags/us-45star.svg", continent: "North America", note: "The United States flew the 45-star flag (1896–1908, after Utah's admission); the 50-star flag dates from 1960.", }],
     // By 1900 the Qing HAD a standardised national flag: the rectangular Yellow
     // Dragon banner, promulgated 1889 (the 1880 era shows none, because until then
     // it was the triangular naval version).
@@ -1507,6 +1542,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959, after Arizona and New Mexico); the 50-star flag dates from 1960.", }],
     // Manchu Empire in 1914 = Republic of China (ROC). The Qing dynasty was
     // overthrown in January 1912 and the ROC was proclaimed. In 1914 the ROC
     // was using the Five-Colored Flag (五色旗) — five horizontal stripes of
@@ -1545,8 +1581,41 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam — the red-field white elephant flag was in use in 1914; the modern Thai tricolour was adopted in 1917.", population: 8_000_000 }],
   ])],
 
+  ["ad1920", new Map<string, PolityInfo>([
+    // Weimar Germany flew black-red-gold from 1919 — the same design the Federal
+    // Republic readopted in 1949, so this era legitimately shows today's flag.
+    ["Germany", { modernName: "Germany", continent: "Central Europe", note: "Weimar Republic — the black-red-gold tricolour it adopted in 1919 is the flag Germany flies today, though the Nazi state replaced it from 1933 to 1945.", population: 62_000_000 }],
+    ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — a condominium ruled from Khartoum by Britain in Egypt's name; the Sudanese flag came at independence in 1956.", population: 6_000_000 }],
+    ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India — the Raj still covered today's India, Pakistan, Bangladesh and Burma; the tricolour was adopted at independence in 1947.", population: 306_000_000 }],
+    ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria, administered as departments of France; the independence flag dates from 1962.", population: 5_800_000 }],
+    ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a British dominion flying the Union Jack and Red Ensign; the orange-white-blue came in 1928 and today's flag only in 1994.", population: 6_900_000 }],
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Persia under the last Qajar shahs — the Lion and Sun banner, quite unlike the flag of the Islamic Republic (1980).", population: 11_000_000 }],
+    ["Italy", { noFlag: true, continent: "Italy", note: "Kingdom of Italy — its green-white-red tricolour carried the Savoy arms until the monarchy fell in 1946.", population: 37_000_000 }],
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
+  ])],
+
+  ["ad1938", new Map<string, PolityInfo>([
+    // Nazi Germany. Black-red-gold was abolished in 1933 and only readopted in 1949,
+    // so the Weimar/Federal flag is wrong here — and the flag that did fly is one this
+    // project will not bundle. The panel says so instead.
+    ["Germany", { noFlag: true, continent: "Central Europe", note: "Nazi Germany, which had just annexed Austria and the Sudetenland. The black-red-gold tricolour was abolished in 1933 and restored only in 1949.", population: 69_000_000 }],
+    ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — the condominium ruled from Khartoum until independence in 1956.", population: 6_500_000 }],
+    ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India on the eve of the war — still one Raj, ten years from partition.", population: 377_000_000 }],
+    ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria, administered as departments of France.", population: 7_200_000 }],
+    ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a dominion flying British flags alongside the 1928 orange-white-blue; today's flag dates from 1994.", population: 9_600_000 }],
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Iran under Reza Shah Pahlavi, newly renamed from Persia — the Lion and Sun flag, replaced after the 1979 revolution.", population: 15_000_000 }],
+    ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia, unified in 1932 — its green shahada-and-sword flag took its present proportions and design only in 1973.", population: 3_000_000 }],
+    ["Italy", { noFlag: true, continent: "Italy", note: "Fascist Italy — the tricolour still carried the Savoy arms, which were removed when the republic replaced the monarchy in 1946.", population: 43_000_000 }],
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
+  ])],
+
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — independence, and a Sudanese flag, came in 1956.", population: 7_500_000 }],
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Iran under Mohammad Reza Shah, occupied by Britain and the USSR during the war — the Lion and Sun flag flew until 1979.", population: 15_500_000 }],
+    ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia — the shahada-and-sword flag reached its present form in 1973.", population: 3_500_000 }],
+    ["Italy", { noFlag: true, continent: "Italy", note: "Italy at the war's end, between the monarchy's fall and the 1946 republic that removed the Savoy arms from the tricolour.", population: 45_000_000 }],
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     // China in 1945 — Republic of China (KMT) flag, blue-sky/white-sun
     // on red. The PRC (modern flag) wouldn't be founded until Oct 1949.
     ["China", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Republic of China under the Nationalists (Chiang Kai-shek). Blue-sky / white-sun on red — adopted 1928. The PRC and its 5-star red flag came in October 1949.", population: 540_000_000 }],
@@ -1598,6 +1667,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980.", population: 21_000_000 }],
+    ["Saudi Arabia", { noFlag: true, continent: "Arabia", note: "Kingdom of Saudi Arabia — its flag took its present form in 1973.", population: 4_000_000 }],
     // Burma in 1960 was the Union of Burma — still on the 1948 flag.
     ["Burma", { flag: "historical-flags/burma-1948.png", continent: "Southeast Asia", note: "Union of Burma — the 1948 flag (red with blue canton + 1 large + 5 small stars) flew from 1948 until 1974.", population: 22_000_000 }],
     // China in 1960 = People's Republic of China. The modern PRC flag
