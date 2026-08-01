@@ -502,6 +502,28 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Makkura", { continent: "Northeast Africa", note: "Makuria — a Christian Nubian kingdom on the middle Nile that held off Arab conquest for six centuries under the Baqt treaty." }],
   ["Denmark-Norway", { continent: "Northern Europe", note: "Denmark–Norway — a single realm from 1537 to 1814, ruling Norway, Iceland, Greenland and the Faroes from Copenhagen.", modernName: "Denmark" }],
 
+  ["Khazars", { continent: "Eurasian Steppe", note: "Khazar Khaganate — a Turkic steppe empire between the Black and Caspian seas whose elite adopted Judaism, and which shielded Europe from Arab expansion through the Caucasus." }],
+  ["Khiva Khanate", { continent: "Central Asia", note: "Khanate of Khiva — an oasis state on the Amu Darya in Khwarezm, a Russian protectorate from 1873 until the Soviets abolished it in 1920." }],
+  ["Tiahuanaco Empire", { continent: "South America", note: "Tiwanaku — a highland state on Lake Titicaca whose monumental stonework and llama caravans shaped the Andes for five centuries before the Inca." }],
+  ["Huari Empire", { continent: "South America", note: "Wari Empire — the first Andean empire of roads and provincial capitals, whose administrative model the Inca would later inherit." }],
+  ["Anasazi", { continent: "North America", note: "Ancestral Puebloan peoples of the Colorado Plateau — builders of the Chaco great houses and the Mesa Verde cliff dwellings." }],
+  ["Cree", { continent: "North America", note: "Cree (Nēhiyawak) — the most widespread Indigenous nation of the Canadian subarctic, whose territory stretched from the Rockies to Labrador." }],
+  ["Chukchi", { continent: "North Asia", note: "Chukchi people of the far northeast — reindeer herders inland, sea-mammal hunters on the coast, and the one Siberian people the Russian Empire never subdued by force." }],
+  ["Athabascan", { continent: "North America", note: "Athabaskan-speaking peoples of the northwestern forests — a family reaching from interior Alaska to the Southwest, where it includes the Navajo and Apache." }],
+  ["Tungus", { continent: "North Asia", note: "Tungusic peoples of the Siberian and Manchurian forests — Evenk reindeer herders and the Jurchen, whose descendants founded the Qing dynasty." }],
+  ["Slavonic tribes", { continent: "Eastern Europe", note: "Early Slavic tribal groups spreading across eastern and central Europe, from whom the Rus', Polish, Czech, Serb and Bulgarian states would form." }],
+  ["Arabs", { continent: "Arabia", note: "Arab tribal societies of the peninsula — camel nomads and caravan-city traders, on the eve of the Islamic conquests that would carry their language from Iberia to the Indus." }],
+  ["Rajput Kingdoms", { continent: "South Asia", note: "Rajput kingdoms of northern India — warrior clans holding hill forts across Rajasthan and Malwa, long the fiercest resistance to Delhi's sultans." }],
+  ["Rajput kingdoms", { continent: "South Asia", note: "Rajput kingdoms of northern India — warrior clans holding hill forts across Rajasthan and Malwa, long the fiercest resistance to Delhi's sultans." }],
+  ["Zhow states", { continent: "East Asia", note: "The Zhou states — the ritual overlordship of the Zhou kings dissolving into the rival kingdoms of the Spring and Autumn period." }],
+  ["Hadramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia, whose merchant families settled across the Indian Ocean from East Africa to Indonesia." }],
+  ["Emirate of Bin Shal'an", { continent: "Arabia", note: "The Ruwallah emirate of the Al Sha'lan — a Bedouin power of the Syrian desert, controlling the caravan routes between Damascus and Nejd." }],
+  ["Emirate of the White Sheep Turks", { continent: "Western Asia", note: "Aq Qoyunlu (\"White Sheep\") — a Turkoman confederation that ruled eastern Anatolia and Persia until the Safavids displaced it in 1501." }],
+  ["Turan", { continent: "Central Asia", note: "Turan — the old Persian name for the steppe lands beyond the Oxus, home to the Turkic and Iranian nomads who bordered the settled Persian world." }],
+  ["Mongolia", { continent: "East Asia", note: "Mongolia — under Qing rule until 1911 and a Soviet-aligned People's Republic from 1924; the modern soyombo flag dates from 1992.", noFlag: true, population: 800_000 }],
+  ["Papua New Guinea", { continent: "Oceania", note: "New Guinea — Papuan and Austronesian societies of extraordinary linguistic diversity, divided between German, British and later Australian administration before independence in 1975.", noFlag: true }],
+  ["Hadhramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia and their far-flung merchant diaspora." }],
+
   // Medieval (600 AD – 1300 AD) --------------------------------------------
   // 600 AD uses "Eastern Roman Empire" and "Sasanian Empire"; from 800 onwards
   // the dataset says "Byzantine Empire" and there's no Sassanid Persia.
@@ -1489,6 +1511,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1900 (high imperialism) overrides ====================================
   ["ad1900", new Map<string, PolityInfo>([
+    ["United States of America", { flag: "historical-flags/us-45star.svg", continent: "North America", note: "The United States flew the 45-star flag (1896–1908, after Utah's admission); the 50-star flag dates from 1960.", }],
     // By 1900 the Qing HAD a standardised national flag: the rectangular Yellow
     // Dragon banner, promulgated 1889 (the 1880 era shows none, because until then
     // it was the triangular naval version).
@@ -1507,6 +1530,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959, after Arizona and New Mexico); the 50-star flag dates from 1960.", }],
     // Manchu Empire in 1914 = Republic of China (ROC). The Qing dynasty was
     // overthrown in January 1912 and the ROC was proclaimed. In 1914 the ROC
     // was using the Five-Colored Flag (五色旗) — five horizontal stripes of
@@ -1545,8 +1569,17 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam — the red-field white elephant flag was in use in 1914; the modern Thai tricolour was adopted in 1917.", population: 8_000_000 }],
   ])],
 
+  ["ad1920", new Map<string, PolityInfo>([
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
+  ])],
+
+  ["ad1938", new Map<string, PolityInfo>([
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
+  ])],
+
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     // China in 1945 — Republic of China (KMT) flag, blue-sky/white-sun
     // on red. The PRC (modern flag) wouldn't be founded until Oct 1949.
     ["China", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Republic of China under the Nationalists (Chiang Kai-shek). Blue-sky / white-sun on red — adopted 1928. The PRC and its 5-star red flag came in October 1949.", population: 540_000_000 }],

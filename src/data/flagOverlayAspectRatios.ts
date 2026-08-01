@@ -93,6 +93,8 @@ export const FLAG_OVERLAY_ASPECT_RATIOS: Readonly<Record<string, number>> = {
   "historical-flags/ukpba.png": 1.3438,
   "historical-flags/us-15star.png": 1.8824,
   "historical-flags/us-38star.svg": 1.9,
+  "historical-flags/us-45star.svg": 1.9,
+  "historical-flags/us-48star.svg": 1.9,
   "historical-flags/ussr.png": 2,
   "historical-flags/venice.png": 2,
   "historical-flags/yugoslavia.png": 2,
