@@ -157,6 +157,25 @@ function buildFallbackCountries(wbPop: Map<string, number>): Country[] {
   return countries;
 }
 
+/**
+ * The bundled country list, available SYNCHRONOUSLY — no network at all.
+ *
+ * `fetchCountries()` can take tens of seconds when restcountries.com is blocked
+ * rather than merely down (a connection that hangs instead of refusing). Until it
+ * resolves, anything keyed off the country list renders empty — including the
+ * Learn-mode HISTORICAL eras, whose 1914/1945/1960 flags resolve through the same
+ * list: measured at 27 s of a flagless map, with 1914 showing 20 of 142 flags
+ * instead of 119. Seeding state with this and upgrading in place when the fetch
+ * lands keeps the app complete from the first paint, exactly as the "country
+ * widget information must never be reduced" hard rule requires.
+ *
+ * Population is absent here (it is the one field that genuinely needs the network);
+ * EntitySummary falls back to NATIONAL_REFERENCE_POPULATION so the row still shows.
+ */
+export function bundledCountries(): Country[] {
+  return buildFallbackCountries(new Map());
+}
+
 export async function fetchCountries(): Promise<Country[]> {
   // Run the two fetches in parallel — REST Countries gives us names,
   // flags, capital, languages; the World Bank gives us the most-current

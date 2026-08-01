@@ -1402,6 +1402,62 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 ]);
 
 /**
+ * Display-name corrections for misspelled / mis-encoded dataset NAMEs.
+ *
+ * The historical-basemaps GeoJSONs are the app's only source of polity names, and
+ * they are shown to the user verbatim — so upstream's typos ship as UI text:
+ * "Kingfom of Italy", "Anglo-Egyption Sudan", "Scottland", "Fezzan (Frech Lybia)".
+ * This table maps the dataset key to what should be RENDERED. It never changes the
+ * key: every lookup (registry, aliases, era overrides, selection matching, the
+ * per-era name set from the GeoJSON) still uses the verbatim NAME, so a correction
+ * here can never break resolution — see `polityDisplayName`.
+ *
+ * Only obvious misspellings, mis-encodings and expansions of an abbreviation the
+ * dataset itself uses are corrected. A name that is merely an older or foreign
+ * form of a modern name (Persia, Siam, Abyssinia, Ceylon) is period-correct and
+ * must be left alone — this is a spell-check, not a renaming layer.
+ */
+export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
+  // Straight misspellings
+  ["Kingfom of Italy", "Kingdom of Italy"],
+  ["Anglo-Egyption Sudan", "Anglo-Egyptian Sudan"],
+  ["Kongldom of Hawaii", "Kingdom of Hawaii"],
+  ["Scottland", "Scotland"],
+  ["Castille", "Castile"],
+  ["Khoiasan", "Khoisan"],
+  ["Eastern North Amercian hunter-gatherers", "Eastern North American hunter-gatherers"],
+  ["Sultinate of Zanzibar", "Sultanate of Zanzibar"],
+  ["Silia", "Silla"],
+  // Mis-encoded characters (the source file lost the diacritic)
+  ["M?ori", "Māori"],
+  ["Monte Alb?n", "Monte Albán"],
+  ["Teotihuacàn", "Teotihuacán"],
+  // Dutch Guiana is modern Suriname; "Guinea" is a different place entirely.
+  ["Dutch Guinea", "Dutch Guiana"],
+  // Libya's three provinces under British / French military administration.
+  ["Cyraneica (UK Lybia)", "Cyrenaica (British Libya)"],
+  ["Tripolitana (UK Lybia)", "Tripolitania (British Libya)"],
+  ["Fezzan (Frech Lybia)", "Fezzan (French Libya)"],
+  // Transliteration variants of the same names used elsewhere in the dataset.
+  ["Quazaq Khanate", "Kazakh Khanate"],
+  ["Bantou", "Bantu"],
+  ["Papou", "Papuan peoples"],
+  ["Gurjara Pratihara", "Gurjara-Pratihara"],
+  ["Austria Hungary", "Austria-Hungary"],
+]);
+
+/**
+ * The name to SHOW for a dataset polity — corrected where upstream misspelled it.
+ *
+ * Always render through this; never use it as a lookup key. Callers that match a
+ * selection, read the registry or compare against the era's GeoJSON name set must
+ * keep using the raw dataset NAME.
+ */
+export function polityDisplayName(name: string): string {
+  return DISPLAY_NAME_FIXES.get(name) ?? name;
+}
+
+/**
  * Look up a polity by NAME, optionally biased by era.
  *
  * Era-specific overrides win over global registry entries; falls back to

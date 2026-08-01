@@ -3,6 +3,7 @@ import { geoEqualEarth, geoPath } from "d3-geo";
 import { useTheme } from "../context/ThemeContext";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
+import { polityDisplayName } from "../lib/historicalEras";
 
 /**
  * Renders an era-specific historical world map.
@@ -222,8 +223,15 @@ export const HistoricalMap = memo(function HistoricalMap({
           }
         }
       }
-      return { idx, d, name, flagPolys };
+      return { idx, d, name, flagPolys, area: pathFn.area(f as never) };
     });
+    // Paint LARGEST FIRST so a small polity that sits inside a bigger one is
+    // never buried underneath it. SVG has no z-index — later siblings paint on
+    // top — so file order used to decide clickability, and a handful of
+    // polities were unreachable: the Bahmani Kingdom sat under Golkonda (1500),
+    // Hohenzollern under Württemberg and Brunswick under Hanover (1815).
+    // Sorting by projected area makes containment order and paint order agree.
+    features.sort((a, b) => b.area - a.area);
     const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
     return { renderedFeatures: features, spherePath };
   }, [data, centerLongitude]);
@@ -360,7 +368,9 @@ export const HistoricalMap = memo(function HistoricalMap({
                   onMouseEnter={() => onHover?.(f.name)}
                   onMouseLeave={() => onHover?.(null)}
                 >
-                  {f.name ? <title>{f.name}</title> : null}
+                  {/* Tooltip shows the corrected spelling; f.name (the raw
+                      dataset NAME) remains the selection key. */}
+                  {f.name ? <title>{polityDisplayName(f.name)}</title> : null}
                 </path>
               );
             })}
