@@ -2032,6 +2032,80 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
  * the override; the registry fallback still runs for every other era.
  */
 const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = new Map([
+  // === 2000 BC (Bronze Age) overrides ========================================
+  ["bc2000", new Map<string, PolityInfo>([
+    ["Egyptian Middle Kingdom", { continent: "North Africa / Eastern Mediterranean", noFlag: true, note: "Egyptian Middle Kingdom — established dynasty controlling the Nile valley; Mentuhotep II reunified Egypt.", population: 3_000_000 }],
+    ["Hittite Empire", { continent: "Western Asia / Anatolia", noFlag: true, note: "Old Hittite Kingdom in Anatolia — early Indo-European empire; precursor to the later New Kingdom.", population: 1_500_000 }],
+    ["Indus Valley Civilization", { continent: "South Asia", noFlag: true, note: "Indus Valley Civilization — sophisticated urban culture in the Indian subcontinent (Harappa, Mohenjo-daro).", population: 4_000_000 }],
+    ["Shang Dynasty", { continent: "East Asia", noFlag: true, note: "Shang Dynasty China — early Chinese civilization; developed writing system and bronze working.", population: 10_000_000 }],
+    ["Akkadian Empire", { continent: "Western Asia", noFlag: true, note: "Post-Akkadian period in Mesopotamia — fragmented into city-states after Akkadian collapse; Ur-III city-states.", population: 2_000_000 }],
+    ["Amorite Kingdoms", { continent: "Western Asia", noFlag: true, note: "Amorite Kingdoms in Mesopotamia and the Levant — Indo-European nomadic peoples establishing kingdoms.", population: 1_000_000 }],
+    ["Minoan Civilization", { continent: "Eastern Mediterranean", noFlag: true, note: "Minoan Civilization on Crete — Bronze Age maritime culture; palace centers at Knossos.", population: 500_000 }],
+  ])],
+
+  // === 500 BC (Classical Antiquity) overrides ================================
+  ["bc500", new Map<string, PolityInfo>([
+    ["Classical Greece", { continent: "Southern Europe / Eastern Mediterranean", noFlag: true, note: "Classical Greek city-states — height of the Classical period; Persian Wars; Athens at peak of power.", population: 2_000_000 }],
+    ["Persian Empire", { continent: "Western Asia / North Africa / Eastern Mediterranean", noFlag: true, note: "Achaemenid Persian Empire — greatest empire of the ancient world under Darius I; from Egypt to India.", population: 50_000_000 }],
+    ["Kingdom of Magadha", { continent: "South Asia", noFlag: true, note: "Kingdom of Magadha in India — rising power in eastern India; Maurya dynasty would emerge from this region.", population: 5_000_000 }],
+    ["Warring States China", { continent: "East Asia", noFlag: true, note: "Warring States period China — Zhou Dynasty fractured; various states competing for dominance.", population: 20_000_000 }],
+    ["Roman Republic", { continent: "Southern Europe", noFlag: true, note: "Roman Republic in its early period — expanding from the Italian peninsula.", population: 1_000_000 }],
+    ["Carthaginian Republic", { continent: "North Africa / Western Mediterranean", noFlag: true, note: "Carthaginian Republic — major Phoenician trading power centered in North Africa.", population: 1_500_000 }],
+    ["Etruscan Confederation", { continent: "Southern Europe", noFlag: true, note: "Etruscan city-states in Italy — pre-Roman Italian culture; gradually absorbed by Rome.", population: 500_000 }],
+    ["Nubian Kingdoms", { continent: "Northeast Africa", noFlag: true, note: "Nubian Kingdoms in the upper Nile valley — trade partners and rivals with Egypt.", population: 2_000_000 }],
+  ])],
+
+  // === 323 BC (Hellenistic Age) overrides ===================================
+  ["bc323", new Map<string, PolityInfo>([
+    ["Macedonian Empire", { continent: "Southern Europe / Western Asia / North Africa", noFlag: true, note: "Macedonian Empire under Alexander the Great's successors — fragmented after his death; Seleucid, Ptolemaic, Antigonid kingdoms.", population: 30_000_000 }],
+    ["Seleucid Empire", { continent: "Western Asia / Central Asia", noFlag: true, note: "Seleucid Empire — Hellenistic state controlling much of Alexander's Asian conquests; capital Antioch.", population: 20_000_000 }],
+    ["Ptolemaic Egypt", { continent: "North Africa / Eastern Mediterranean", noFlag: true, note: "Ptolemaic Kingdom of Egypt — Hellenized Greek dynasty ruling Egypt; one of the most powerful Hellenistic states.", population: 8_000_000 }],
+    ["Antigonid Macedonia", { continent: "Southern Europe", noFlag: true, note: "Antigonid Kingdom of Macedonia — Hellenistic Macedonian state; power base in Greece.", population: 2_000_000 }],
+    ["Maurya Empire", { continent: "South Asia", noFlag: true, note: "Maurya Empire under Ashoka — dominant Indian empire established shortly after Alexander's invasion; Ashoka's reign (268-232 BC) was the peak.", population: 50_000_000 }],
+    ["Greek city-states", { continent: "Southern Europe / Eastern Mediterranean", noFlag: true, note: "Independent Greek city-states and leagues — Athens, Sparta, Corinth, and others; still politically autonomous but weakened.", population: 3_000_000 }],
+    ["Roman Republic", { continent: "Southern Europe", noFlag: true, note: "Roman Republic — expanding influence; beginning to dominate the Mediterranean.", population: 4_000_000 }],
+    ["Carthaginian Republic", { continent: "North Africa / Western Mediterranean", noFlag: true, note: "Carthaginian Republic — at height of power; major naval force; rivalry with Rome beginning.", population: 2_000_000 }],
+    ["Parthian Kingdom", { continent: "Western Asia / Central Asia", noFlag: true, note: "Parthian Kingdom — emerging power in Persia; would grow to rival Rome.", population: 5_000_000 }],
+  ])],
+
+  // === 100 AD (Roman Classical Period) overrides ============================
+  ["ad100", new Map<string, PolityInfo>([
+    ["Roman Empire", { continent: "Europe / Western Asia / North Africa", noFlag: true, note: "Roman Empire under Trajan — at its greatest territorial extent after the conquest of Dacia (106 AD). Capital Rome.", population: 70_000_000 }],
+    ["Parthian Empire", { continent: "Western Asia", noFlag: true, note: "Parthian Empire — dominant power in Persia and Central Asia, rival to Rome. Capital Ctesiphon.", population: 15_000_000 }],
+    ["Han Dynasty", { continent: "East Asia", noFlag: true, note: "Han Dynasty China during the Eastern Han period — politically fragmented but culturally unified under the Han.", population: 55_000_000 }],
+    ["Kushan Empire", { continent: "Central Asia / South Asia", noFlag: true, note: "Kushan Empire — controlled the Silk Road from Central Asia through northern India; Kanishka (127-150 AD) was a great patron of Buddhism.", population: 20_000_000 }],
+    ["Satavahana Empire", { continent: "South Asia", noFlag: true, note: "Satavahana Empire of southern India — contemporaneous with the Kushans in northern India; controlled major sea trade routes.", population: 15_000_000 }],
+    ["Axum Kingdom", { continent: "East Africa", noFlag: true, note: "Axumite Kingdom in the Horn of Africa — rising power controlling Red Sea trade; later became a Christian empire (4th century).", population: 3_000_000 }],
+    ["Meroe Kingdom", { continent: "Northeast Africa", noFlag: true, note: "Kingdom of Meroe in Nubia — Kushite civilization in the Upper Nile valley; predecessor to later Nubian kingdoms.", population: 1_000_000 }],
+    ["Koguryo", { continent: "East Asia", noFlag: true, note: "Koguryo Kingdom (Goguryeo) on the Korean peninsula — one of the Three Kingdoms of Korea, controlling northern territories.", population: 3_000_000 }],
+    ["Paekche", { continent: "East Asia", noFlag: true, note: "Paekche Kingdom (Baekje) on the Korean peninsula — one of the Three Kingdoms, controlling southwestern territories.", population: 1_500_000 }],
+    ["Silla", { continent: "East Asia", noFlag: true, note: "Silla Kingdom on the Korean peninsula — one of the Three Kingdoms, controlling southeastern territories.", population: 1_000_000 }],
+    ["Bengal Kingdoms", { continent: "South Asia", noFlag: true, note: "Bengal Kingdoms in eastern India — including Vakataka and other regional powers; politically fragmented region.", population: 8_000_000 }],
+    ["Chola / Pandya kingdoms", { continent: "South Asia", noFlag: true, note: "Chola and Pandya kingdoms in South India — Cholas rising to prominence, rivals to the Satavahanas.", population: 5_000_000 }],
+    ["Arakan Kingdom", { continent: "Southeast Asia", noFlag: true, note: "Arakan Kingdom in Burma — Indian-influenced kingdom with Brahmanical culture; precursor to later Burmese states.", population: 1_000_000 }],
+    ["Teotihuacán", { continent: "Mesoamerica", noFlag: true, note: "Teotihuacán city-state in Mesoamerica — greatest city in the Americas at this period (peak ~200-600 AD).", population: 200_000 }],
+    ["Moche Civilization", { continent: "South America", noFlag: true, note: "Moche civilization on the Peruvian coast — sophisticated ceramic artisans; pre-Inca Andean power.", population: 500_000 }],
+    ["Nabatean Kingdom", { continent: "Western Asia", noFlag: true, note: "Nabatean Kingdom in Arabia — controlled trade routes from Arabia to the Mediterranean; centered at Petra.", population: 400_000 }],
+    ["Himyarite Kingdom", { continent: "Western Asia", noFlag: true, note: "Himyarite Kingdom in South Arabia (Yemen) — major Arabian power controlling spice trade.", population: 1_000_000 }],
+    ["Hadramaut Kingdom", { continent: "Western Asia", noFlag: true, note: "Hadramaut Kingdom in South Arabia — wealthy trading kingdom in the Arabian peninsula.", population: 500_000 }],
+    ["Bosporian Kingdom", { continent: "Northern Europe / Western Asia", noFlag: true, note: "Bosporian Kingdom on the Black Sea Strait — client state of Rome; wealthy trading center.", population: 200_000 }],
+    ["Dacia", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Dacia north of the Danube — independent kingdom until the Roman conquest under Trajan (106 AD).", population: 1_500_000 }],
+  ])],
+
+  // === 400 AD (Late Antiquity) overrides ====================================
+  ["ad400", new Map<string, PolityInfo>([
+    ["Western Roman Empire", { continent: "Europe / North Africa", noFlag: true, note: "Western Roman Empire in 400 AD — severely weakened by invasions and internal strife; ruled from Rome.", population: 25_000_000 }],
+    ["Eastern Roman Empire", { continent: "Eastern Mediterranean / Western Asia", noFlag: true, note: "Eastern Roman (Byzantine) Empire in 400 AD — more stable than the West; ruled from Constantinople.", population: 30_000_000 }],
+    ["Visigothic Kingdom", { continent: "Iberia / Southern France", noFlag: true, note: "Visigothic Kingdom established in Hispania — Germanic tribe that settled within Roman borders; capital Toledo.", population: 2_000_000 }],
+    ["Frankish Kingdoms", { continent: "Western Europe", noFlag: true, note: "Frankish Kingdoms in Gaul — not yet united; still evolving toward the future Merovingian empire.", population: 3_000_000 }],
+    ["Ostrogothic Kingdom", { continent: "Italy", noFlag: true, note: "Ostrogothic Kingdom in Italy — Germanic kingdom emerging in the Italian peninsula.", population: 2_000_000 }],
+    ["Sasanian Empire", { continent: "Western Asia / Central Asia", noFlag: true, note: "Sasanian (Persian) Empire — at its height; rival to Rome for control of the Near East and trade routes.", population: 30_000_000 }],
+    ["Gupta Empire", { continent: "South Asia", noFlag: true, note: "Gupta Empire in India — in decline by 400 AD but still the dominant Indian power; known for art and science.", population: 40_000_000 }],
+    ["Northern Wei", { continent: "East Asia", noFlag: true, note: "Northern Wei Dynasty in China — Xiongnu (Xianbei) origin; controlled northern China amid the period of disunion.", population: 20_000_000 }],
+    ["Liu Song", { continent: "East Asia", noFlag: true, note: "Liu Song Dynasty in southern China — one of the Southern Dynasties during the Six Dynasties period.", population: 8_000_000 }],
+    ["Koguryo Empire", { continent: "East Asia", noFlag: true, note: "Koguryo (Goguryeo) Empire in Korea — dominant Korean power; frequently in conflict with China.", population: 4_000_000 }],
+  ])],
+
   // === 600 AD overrides =====================================================
   // The Palaiologos dynasty flag (1261–1453) is the global Byzantine entry,
   // but in 600 AD the Byzantine Empire was the Justinian/Heraclian dynasty —
