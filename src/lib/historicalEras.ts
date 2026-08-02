@@ -2063,6 +2063,21 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ["ad800", new Map<string, PolityInfo>([
     ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 800 AD — Macedonian dynasty era. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 461 years too late.", population: 20_000_000 }],
     ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire — Carolingian/Ottonian era, 800–962 AD. The post-1400 imperial banner (our only HRE PNG) is 400+ years too late for this dynasty.", population: 20_000_000 }],
+    // Western Europe 800 AD — age of Charlemagne
+    ["Frankish Empire", { continent: "Western Europe", noFlag: true, note: "Carolingian Empire of Charlemagne — crowned Holy Roman Emperor in 800 AD. No standardised flag.", population: 8_000_000 }],
+    ["Abbasid Caliphate", { continent: "Western Asia", noFlag: true, note: "Abbasid Caliphate — height of Islamic empire; capital Baghdad, founded 762 AD. No national flag in modern sense.", population: 50_000_000 }],
+    ["Umayyad Caliphate", { continent: "Western Asia", noFlag: true, note: "Umayyad Caliphate — ruling the western Islamic world; rival to the Abbasids after the Abbasid Revolution (750 AD).", population: 15_000_000 }],
+    // India 800 AD
+    ["Gurjara-Pratihara", { continent: "South Asia", noFlag: true, note: "Gurjara-Pratihara Empire of northern India — one of the three great powers battling for supremacy in the Tripartite Struggle.", population: 40_000_000 }],
+    ["Rashtrakuta Empire", { continent: "South Asia", noFlag: true, note: "Rashtrakuta Empire of the Deccan — at its 8th-9th century height, rivals to the Pratiharas.", population: 35_000_000 }],
+    ["Pallava Kingdom", { continent: "South Asia", noFlag: true, note: "Late Pallava Kingdom of South India — weakening by 800 AD before the rise of the Cholas.", population: 12_000_000 }],
+    // Southeast Asia 800 AD
+    ["Sailendra Empire", { continent: "Southeast Asia", noFlag: true, note: "Sailendra maritime empire — built Borobudur temple in Java. Dominated Southeast Asian trade.", population: 5_000_000 }],
+    ["Khmer Empire", { continent: "Southeast Asia", noFlag: true, note: "Angkor period Khmer Empire — capital Angkor; builders of the great temples (Angkor Wat built later, 12th century).", population: 2_000_000 }],
+    // China 800 AD
+    ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — height of the golden age under various emperors; thriving international trade along the Silk Road.", population: 50_000_000 }],
+    // Americas 800 AD
+    ["Maya civilization", { continent: "Mesoamerica", noFlag: true, note: "Maya civilization at height of the Classic period (ended c. 900 AD) — great city-states like Tikal and Copan.", population: 3_000_000 }],
   ])],
 
   // === 1300 (High/Late Medieval) overrides ==================================
