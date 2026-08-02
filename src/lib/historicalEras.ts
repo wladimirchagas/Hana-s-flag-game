@@ -2080,6 +2080,56 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Maya civilization", { continent: "Mesoamerica", noFlag: true, note: "Maya civilization at height of the Classic period (ended c. 900 AD) — great city-states like Tikal and Copan.", population: 3_000_000 }],
   ])],
 
+  // === 1000 AD (Early Medieval) overrides ===================================
+  ["ad1000", new Map<string, PolityInfo>([
+    ["Fatimid Caliphate", { continent: "North Africa / Western Asia", noFlag: true, note: "Fatimid Caliphate at height — controlled Egypt, North Africa, and the Levant; rival to the Abbasid Caliphate.", population: 25_000_000 }],
+    ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire under the Ottonian dynasty — Otto III (983-1002) ruled during this era.", population: 15_000_000 }],
+    ["Kingdom of France", { continent: "Western Europe", noFlag: true, note: "Capetian Kingdom of France — newly founded by Hugh Capet (987); still weak compared to feudal lords.", population: 7_000_000 }],
+    ["Anglo-Saxon England", { continent: "Northern Europe", noFlag: true, note: "Anglo-Saxon England — under various kings including Aethelred the Unready and Canute the Great (who also ruled Denmark/Norway).", population: 2_000_000 }],
+    ["Kingdom of Denmark", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Denmark — Canute the Great (1016-1035) ruled England, Denmark, and Norway in personal union.", population: 1_000_000 }],
+    ["Christian Spanish kingdoms", { continent: "Iberia", noFlag: true, note: "Christian Spanish kingdoms (Castile, Aragon, Portugal, Navarre, León) — gradually reconquering from Islamic Al-Andalus.", population: 3_000_000 }],
+    ["Al-Andalus", { continent: "Iberia", noFlag: true, note: "Al-Andalus (Islamic Spain) — fragmenting into taifas (petty kingdoms) after the Caliphate of Córdoba's collapse in 1031.", population: 4_000_000 }],
+    ["Kingdom of Norway", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Norway — under Danish/Norwegian kings; part of Canute's North Sea Empire.", population: 400_000 }],
+    ["Kingdom of Poland", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Poland under the Piast dynasty — newly emerged as a Catholic state under Bolesław I the Brave.", population: 2_000_000 }],
+    ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary under the Arpád dynasty — newly established Catholic kingdom; bulwark against steppe invasions.", population: 2_000_000 }],
+    ["Kievan Rus", { continent: "Eastern Europe", noFlag: true, note: "Kievan Rus — medieval federation of East Slavic city-states; capital Kiev (Kyiv). Christianized in 988 AD.", population: 5_000_000 }],
+    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — under the Macedonian dynasty; at territorial height after reconquests in Balkans and Anatolia.", population: 14_000_000 }],
+    ["Venice", { continent: "Southern Europe", noFlag: true, note: "Republic of Venice — emerging as a major Mediterranean maritime power and trading republic.", population: 100_000 }],
+    ["Papal States", { continent: "Southern Europe", noFlag: true, note: "Papal States (Kingdom of the Pope) — temporal domain of the Papacy in central Italy.", population: 500_000 }],
+    ["Chola Empire", { continent: "South Asia", noFlag: true, note: "Chola Empire at imperial height under Rajendra Chola I — greatest maritime power in the Indian Ocean.", population: 20_000_000 }],
+    ["Pala Empire", { continent: "South Asia", noFlag: true, note: "Pala Empire of Bengal — declining but still a major power; important Buddhist university at Nalanda.", population: 15_000_000 }],
+    ["Ghaznavid Empire", { continent: "Central Asia / South Asia", noFlag: true, note: "Ghaznavid Empire — Turkic empire in Afghanistan/Central Asia/northern India; raiders who challenged Hindu kingdoms.", population: 8_000_000 }],
+    ["Song Dynasty", { continent: "East Asia", noFlag: true, note: "Northern Song dynasty China — classic Chinese civilization; thriving commerce and technology.", population: 50_000_000 }],
+    ["Khmer Empire", { continent: "Southeast Asia", noFlag: true, note: "Khmer Empire (Angkor) — height of classical Cambodian civilization; capital city of Angkor built later (12th c.).", population: 1_500_000 }],
+    ["Srivijaya", { continent: "Southeast Asia", noFlag: true, note: "Srivijaya maritime empire — dominated maritime trade in Southeast Asia from Sumatra base.", population: 3_000_000 }],
+    ["Vietnam (Ly dynasty)", { continent: "Southeast Asia", noFlag: true, note: "Early Ly dynasty Vietnam — newly independent from Chinese rule (938-1009); capital Thang Long (Hanoi).", population: 3_000_000 }],
+    ["Heian Japan", { continent: "East Asia", noFlag: true, note: "Heian period Japan — height of classical Japanese court culture; Fujiwara regency. The samurai class beginning to rise.", population: 5_000_000 }],
+  ])],
+
+  // === 1200 AD (High Medieval) overrides ====================================
+  ["ad1200", new Map<string, PolityInfo>([
+    ["Hohenstaufen Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire under the Hohenstaufen dynasty — Frederick Barbarossa (1152-1190) and his successors.", population: 18_000_000 }],
+    ["Kingdom of France", { continent: "Western Europe", noFlag: true, note: "Capetian Kingdom of France under Philip II Augustus — expanding royal power at expense of feudal lords.", population: 10_000_000 }],
+    ["Plantagenet England", { continent: "Northern Europe", noFlag: true, note: "Kingdom of England under the Plantagenet dynasty — Richard the Lionheart and King John ruled around this era.", population: 3_500_000 }],
+    ["Kingdom of Denmark", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Denmark — expanding under the Valdemar dynasty; major Baltic power.", population: 1_200_000 }],
+    ["Kingdom of Norway", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Norway — independent union with Iceland and Greenland.", population: 500_000 }],
+    ["Christian Iberia", { continent: "Iberia", noFlag: true, note: "Christian Spanish kingdoms — Castile, Aragon, Portugal, and others advancing the Reconquista against Al-Andalus.", population: 5_000_000 }],
+    ["Al-Andalus", { continent: "Iberia", noFlag: true, note: "Almohad Al-Andalus — Islamic Spain under the Almohad dynasty. Granada would be the last Islamic stronghold (until 1492).", population: 3_000_000 }],
+    ["Kingdom of Poland", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Poland — fragmented into competing principalities after the Piast dynasty's decline.", population: 2_500_000 }],
+    ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary — under the Arpád dynasty; expanding territorial power in Central Europe.", population: 3_000_000 }],
+    ["Kievan Rus", { continent: "Eastern Europe", noFlag: true, note: "Kievan Rus — fragmenting into competing principalities; Mongol invasions would begin in 1237.", population: 7_000_000 }],
+    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — weakened by the Fourth Crusade (1204); Constantinople would fall to Crusaders.", population: 8_000_000 }],
+    ["Latin Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Latin Empire — Crusader state established in Constantinople after the Fourth Crusade (1204-1261).", population: 1_500_000 }],
+    ["Sultanate of Delhi", { continent: "South Asia", noFlag: true, note: "Delhi Sultanate — Islamic state in northern India; replacing Hindu kingdoms. Iltutmish was ruling around 1211-1236.", population: 20_000_000 }],
+    ["Chola Empire", { continent: "South Asia", noFlag: true, note: "Late Chola Empire — declining but still influential in South India; Chola power would end by mid-13th century.", population: 10_000_000 }],
+    ["Song Dynasty", { continent: "East Asia", noFlag: true, note: "Southern Song dynasty China — after losing the north to the Jin dynasty (1127). Height of Chinese civilization.", population: 60_000_000 }],
+    ["Jin Dynasty", { continent: "East Asia", noFlag: true, note: "Jin dynasty China — Jurchen conquest of northern China; ruled 1115-1234 until Mongol conquest.", population: 35_000_000 }],
+    ["Khmer Empire", { continent: "Southeast Asia", noFlag: true, note: "Khmer Empire at peak — Angkor Wat completed in 12th century represents the height of Khmer civilization.", population: 2_000_000 }],
+    ["Pagan Empire", { continent: "Southeast Asia", noFlag: true, note: "Pagan Empire of Burma — height of classical Burmese civilization; built thousands of temples.", population: 2_500_000 }],
+    ["Sukhothai", { continent: "Southeast Asia", noFlag: true, note: "Sukhothai Kingdom of Thailand — height of early Thai state; culturally innovative period.", population: 800_000 }],
+    ["Kamakura Shogunate", { continent: "East Asia", noFlag: true, note: "Kamakura Shogunate Japan — samurai military government; Minamoto clan dominated.", population: 6_000_000 }],
+  ])],
+
   // === 1300 (High/Late Medieval) overrides ==================================
   // The 1300 era uses the same polity NAMEs as the global POLITY_REGISTRY but
   // some need era-specific notes (the registry's generic entry may describe the
