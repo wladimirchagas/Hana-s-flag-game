@@ -2038,6 +2038,20 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // 661 years before Palaiologos. No surviving standardised flag for this era.
   ["ad600", new Map<string, PolityInfo>([
     ["Eastern Roman Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 600 AD — Heraclian dynasty, capital Constantinople. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 661 years too late.", population: 26_000_000 }],
+    // Western Europe 600 AD
+    ["Frankish kingdoms", { continent: "Western Europe", noFlag: true, note: "Merovingian Frankish kingdoms — divided among the Merovingian kings; Charlemagne's Carolingians were still centuries away.", population: 5_000_000 }],
+    ["Visigothic Spain", { continent: "Iberia", noFlag: true, note: "Visigothic Kingdom of Spain — 6th century, the realm of the Liuvigild dynasty. Conquered by Islamic forces in 711.", population: 4_000_000 }],
+    ["Ostrogothic Kingdom", { continent: "Southern Europe", noFlag: true, note: "Ostrogothic Kingdom of Italy — under Theodoric and successors; would be conquered by the Eastern Roman Empire in the Gothic War (535–554).", population: 3_000_000 }],
+    // Middle East 600 AD
+    ["Sasanian Empire", { continent: "Western Asia", noFlag: true, note: "Sasanian (Sassanid) Empire — last Persian empire before Arab conquest; at its 600 AD height under Khosrau II.", population: 50_000_000 }],
+    ["Arabian Peninsula", { continent: "Arabia", noFlag: true, note: "Pre-Islamic Arabian Peninsula — a century before Prophet Muhammad. Divided among various Arab tribes and kingdoms.", population: 8_000_000 }],
+    // India 600 AD
+    ["Chalukya Empire", { continent: "South Asia", noFlag: true, note: "Chalukya Empire of the Deccan — major power in 6th century India under Pulakeshin II.", population: 15_000_000 }],
+    ["Harsha Empire", { continent: "South Asia", noFlag: true, note: "Empire of Harsha — the last great pre-Islamic Indian empire; capital Kanauj. Dominated 606–647 AD.", population: 25_000_000 }],
+    ["Pallava Kingdom", { continent: "South Asia", noFlag: true, note: "Pallava Empire of southern India — rivals to the Chalukyas; built the temples of Mahabalipuram.", population: 10_000_000 }],
+    // China 600 AD
+    ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — founded 618 AD, but by 600 AD the Sui dynasty ruled. The Tang would become one of history's greatest empires.", population: 50_000_000 }],
+    ["Sui Dynasty", { continent: "East Asia", noFlag: true, note: "Sui dynasty China (589–618) — brief period between the Southern and Northern Dynasties and the Tang.", population: 45_000_000 }],
   ])],
 
   // === 800 AD overrides =====================================================
