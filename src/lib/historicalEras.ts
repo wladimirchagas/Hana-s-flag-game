@@ -1875,13 +1875,56 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
 ]);
 
 /**
- * The name to SHOW for a dataset polity — corrected where upstream misspelled it.
+ * Era-specific polity name remappings for historical accuracy.
+ *
+ * When a GeoJSON feature's NAME appears as an independent nation in a map, but was
+ * not yet independent at that historical date, this table remaps the display name to
+ * what the polity was actually called. The feature's NAME and geometry stay unchanged
+ * (they are still used for lookups, registry matching, etc.); only the rendered label
+ * to the user is remapped. Examples:
+ *   - Namibia was "South West Africa" (German then SA mandate) until 1990
+ *   - Zimbabwe was "Southern Rhodesia" until 1980
+ *   - Uganda was not independent until 1962 (appears in 1960 map as though it were)
+ *
+ * The mapping is ERA → POLITY_NAME → DISPLAY_NAME. A polity without an era entry
+ * falls through to DISPLAY_NAME_FIXES, then to the raw NAME.
+ */
+const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> = new Map([
+  ["ad1945", new Map<string, string>([
+    // After WWII, the 1945 file shows several African territories as independent
+    // when they were not yet. These were mandates, protectorates, or colonial territories.
+    ["Namibia", "South West Africa"],        // German mandate → SA mandate; independence 1990
+    ["Zimbabwe", "Southern Rhodesia"],       // British territory; independence 1980
+    ["Botswana", "Bechuanaland"],            // British protectorate; independence 1966
+  ])],
+  ["ad1960", new Map<string, string>([
+    // The 1960 decolonisation wave. Many territories shown on the map as independent
+    // were not yet independent at that exact date; they became independent during 1960+.
+    ["Uganda", "Uganda (British protectorate)"],  // Independent 26 Oct 1962
+    ["Zambia", "Northern Rhodesia"],              // Independent 24 Oct 1964
+    ["Botswana", "Bechuanaland"],                 // Independent 30 Sept 1966
+    ["Zimbabwe", "Southern Rhodesia"],            // Independent 1980
+    ["Namibia", "South West Africa"],             // Independence 1990
+  ])],
+]);
+
+/**
+ * The name to SHOW for a dataset polity — corrected where upstream misspelled it,
+ * and remapped for historical accuracy if it was not a state at the given era.
  *
  * Always render through this; never use it as a lookup key. Callers that match a
  * selection, read the registry or compare against the era's GeoJSON name set must
  * keep using the raw dataset NAME.
  */
-export function polityDisplayName(name: string): string {
+export function polityDisplayName(name: string, eraId?: Era["id"]): string {
+  // First check for era-specific name remapping (statehood corrections)
+  if (eraId) {
+    const eraNames = POLITY_NAME_FOR_ERA.get(eraId);
+    if (eraNames?.has(name)) {
+      return eraNames.get(name) ?? name;
+    }
+  }
+  // Then check for typo/encoding corrections
   return DISPLAY_NAME_FIXES.get(name) ?? name;
 }
 
