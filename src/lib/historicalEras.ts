@@ -1467,7 +1467,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Germany", { flag: "historical-flags/german-empire.png", continent: "Central Europe", note: "German Empire - unified in 1871 under Wilhelm I and Bismarck. The black-white-red tricolour flew until 1918; today's black-red-gold dates from 1949.", population: 45_200_000 }],
     ["Austria Hungary", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austria-Hungary - the Habsburg dual monarchy created by the 1867 Compromise.", population: 37_800_000 }],
     ["France", { modernName: "France", continent: "Western Europe", note: "French Third Republic (1870-1940), founded after defeat in the Franco-Prussian War. The tricolour of 1880 is the flag France flies today.", population: 37_700_000 }],
-    ["Italy", { modernName: "Italy", continent: "Italy", note: "Kingdom of Italy - unified in 1861, with Rome its capital since 1871. The green-white-red tricolour carried the Savoy arms until 1946.", population: 28_400_000 }],
     ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / North Asia", note: "Russian Empire under Alexander II, in the last year of his reign.", population: 97_700_000 }],
     ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Ottoman Empire after the 1877-78 Russo-Turkish War, which cost it most of its Balkan territory. The crescent-and-star flag was standardised in 1844.", population: 20_000_000 }],
     ["Imperial Japan", { modernName: "Japan", continent: "East Asia", note: "Meiji Japan - rapidly industrialising after the 1868 Restoration. The Hinomaru became the national flag in 1870 and is unchanged today.", population: 36_600_000 }],
@@ -1565,7 +1564,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
-    ["Kingfom of Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 36_000_000 }],
+    ["Kingdom of Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 36_000_000 }],
     ["Libya", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya — taken from the Ottomans in 1911–12 and still being fought over when the war began.", population: 1_000_000 }],
     ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland, on the Indian Ocean coast.", population: 500_000 }],
     ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea.", population: 300_000 }],
@@ -1594,7 +1593,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Algeria", { continent: "North Africa", note: "French Algeria — integrated as French départements since 1848. The French tricolour flew.", modernName: "France", population: 5_500_000 }],
     ["Tunisia", { continent: "North Africa", note: "French protectorate of Tunisia (1881–1956). The French tricolour was used alongside the bey's flag.", modernName: "France", population: 2_000_000 }],
     ["Morocco", { continent: "North Africa", note: "Just established as a French (and partly Spanish) protectorate in 1912. The Alawi red flag added the green pentagram in 1915.", modernName: "France", population: 5_000_000 }],
-    ["Libya", { continent: "North Africa", note: "Newly Italian (annexed from the Ottomans in 1911–12). Flew the Italian tricolour with the Savoy arms.", modernName: "Italy", population: 1_000_000 }],
     // Armenia in 1914 — split between the Russian Empire and the Ottoman
     // Empire. No independent Armenian state. The modern Armenian flag
     // (1990) is wildly anachronistic.
@@ -1643,7 +1641,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria, administered as departments of France; the independence flag dates from 1962.", population: 5_800_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a British dominion flying the Union Jack and Red Ensign; the orange-white-blue came in 1928 and today's flag only in 1994.", population: 6_900_000 }],
     ["Iran", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Persia under the last Qajar shahs — the Lion and Sun banner, used from 1907 until the Islamic Republic's flag in 1980.", population: 11_000_000 }],
-    ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour with the Savoy arms. The monarchy would fall in 1946, and the republic removed the arms from the flag.", population: 37_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Philippines Commonwealth (1935–1946) — a U.S. territory with increasing self-governance under the Commonwealth Constitution of 1935. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 10_000_000 }],
