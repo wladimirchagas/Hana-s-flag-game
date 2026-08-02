@@ -2041,6 +2041,33 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Akkadian Empire", { continent: "Western Asia", noFlag: true, note: "Post-Akkadian period in Mesopotamia — fragmented into city-states after Akkadian collapse; Ur-III city-states.", population: 2_000_000 }],
     ["Amorite Kingdoms", { continent: "Western Asia", noFlag: true, note: "Amorite Kingdoms in Mesopotamia and the Levant — Indo-European nomadic peoples establishing kingdoms.", population: 1_000_000 }],
     ["Minoan Civilization", { continent: "Eastern Mediterranean", noFlag: true, note: "Minoan Civilization on Crete — Bronze Age maritime culture; palace centers at Knossos.", population: 500_000 }],
+    // Additional Egyptian Kingdoms
+    ["New Kingdom Egypt", { continent: "North Africa", noFlag: true, note: "New Kingdom Egypt (18th Dynasty) — rising imperial power; Ahmose and Thutmose I establishing Egyptian empire.", population: 4_000_000 }],
+    ["Nubian Kingdom", { continent: "Northeast Africa", noFlag: true, note: "Nubian Kingdom (Kush) in 2000 BC — trading power; interactions with Egypt.", population: 1_000_000 }],
+    // Mesopotamian Powers
+    ["Babylonian Empire", { continent: "Western Asia", noFlag: true, note: "Old Babylonian Empire under Hammurabi — major Mesopotamian power; codified law system.", population: 2_500_000 }],
+    ["Assyrian Kingdom", { continent: "Western Asia", noFlag: true, note: "Old Assyrian Kingdom — rising power in northern Mesopotamia.", population: 1_000_000 }],
+    ["Mitanni Kingdom", { continent: "Western Asia", noFlag: true, note: "Mitanni Kingdom — Indo-Aryan state controlling upper Mesopotamia and Syria.", population: 1_500_000 }],
+    ["Kingdom of Ebla", { continent: "Western Asia", noFlag: true, note: "Kingdom of Ebla in Syria — city-state and trading power; early urban center.", population: 200_000 }],
+    ["Mari", { continent: "Western Asia", noFlag: true, note: "Kingdom of Mari on the Euphrates — important city-state and trading center.", population: 300_000 }],
+    // Anatolia/Hittites
+    ["Hattusas", { continent: "Western Asia", noFlag: true, note: "Hattusas region in Anatolia — Hittite capital and power center.", population: 500_000 }],
+    ["Arzawa Kingdom", { continent: "Western Asia", noFlag: true, note: "Kingdom of Arzawa in western Anatolia — regional power competing with Hittites.", population: 400_000 }],
+    // Levantine States
+    ["Phoenician cities", { continent: "Western Asia / Eastern Mediterranean", noFlag: true, note: "Phoenician city-states in the Levant — maritime trading power; early alphabetic writing.", population: 500_000 }],
+    ["Syria/Damascus", { continent: "Western Asia", noFlag: true, note: "Syria/Damascus region — various city-states competing for control.", population: 400_000 }],
+    ["Kingdom of Ugarit", { continent: "Western Asia", noFlag: true, note: "Kingdom of Ugarit — major Levantine trading city-state.", population: 300_000 }],
+    // Arabian Peninsula
+    ["Sabean Kingdom", { continent: "Western Asia", noFlag: true, note: "Sabean Kingdom in Arabia (Yemen) — rising trading power.", population: 500_000 }],
+    // Indian Subcontinent
+    ["Vedic Kingdoms", { continent: "South Asia", noFlag: true, note: "Vedic period kingdoms in India — Aryan tribal confederations; pre-imperial India.", population: 3_000_000 }],
+    ["Gangetic Valley Powers", { continent: "South Asia", noFlag: true, note: "Gangetic Valley kingdoms — early northern Indian powers emerging.", population: 2_000_000 }],
+    // Chinese Dynasties/Regions
+    ["Early Zhou Dynasty", { continent: "East Asia", noFlag: true, note: "Early Zhou Dynasty in China — transitional period; established hierarchical feudal system.", population: 10_000_000 }],
+    ["Xia Dynasty (traditional)", { continent: "East Asia", noFlag: true, note: "Xia Dynasty (traditional/legendary) in China — earliest Chinese dynasty in traditional history.", population: 5_000_000 }],
+    // Mediterranean
+    ["Mycenaean Greece", { continent: "Southern Europe", noFlag: true, note: "Mycenaean Greece — Bronze Age Greek civilization; palace centers at Mycenae and Tiryns.", population: 1_000_000 }],
+    ["Troy", { continent: "Western Asia", noFlag: true, note: "Kingdom of Troy in Anatolia — city-state; later immortalized in Homer's epics.", population: 100_000 }],
   ])],
 
   // === 500 BC (Classical Antiquity) overrides ================================
