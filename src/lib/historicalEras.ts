@@ -2032,6 +2032,80 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
  * the override; the registry fallback still runs for every other era.
  */
 const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = new Map([
+  // === 2000 BC (Bronze Age) overrides ========================================
+  ["bc2000", new Map<string, PolityInfo>([
+    ["Egyptian Middle Kingdom", { continent: "North Africa / Eastern Mediterranean", noFlag: true, note: "Egyptian Middle Kingdom — established dynasty controlling the Nile valley; Mentuhotep II reunified Egypt.", population: 3_000_000 }],
+    ["Hittite Empire", { continent: "Western Asia / Anatolia", noFlag: true, note: "Old Hittite Kingdom in Anatolia — early Indo-European empire; precursor to the later New Kingdom.", population: 1_500_000 }],
+    ["Indus Valley Civilization", { continent: "South Asia", noFlag: true, note: "Indus Valley Civilization — sophisticated urban culture in the Indian subcontinent (Harappa, Mohenjo-daro).", population: 4_000_000 }],
+    ["Shang Dynasty", { continent: "East Asia", noFlag: true, note: "Shang Dynasty China — early Chinese civilization; developed writing system and bronze working.", population: 10_000_000 }],
+    ["Akkadian Empire", { continent: "Western Asia", noFlag: true, note: "Post-Akkadian period in Mesopotamia — fragmented into city-states after Akkadian collapse; Ur-III city-states.", population: 2_000_000 }],
+    ["Amorite Kingdoms", { continent: "Western Asia", noFlag: true, note: "Amorite Kingdoms in Mesopotamia and the Levant — Indo-European nomadic peoples establishing kingdoms.", population: 1_000_000 }],
+    ["Minoan Civilization", { continent: "Eastern Mediterranean", noFlag: true, note: "Minoan Civilization on Crete — Bronze Age maritime culture; palace centers at Knossos.", population: 500_000 }],
+  ])],
+
+  // === 500 BC (Classical Antiquity) overrides ================================
+  ["bc500", new Map<string, PolityInfo>([
+    ["Classical Greece", { continent: "Southern Europe / Eastern Mediterranean", noFlag: true, note: "Classical Greek city-states — height of the Classical period; Persian Wars; Athens at peak of power.", population: 2_000_000 }],
+    ["Persian Empire", { continent: "Western Asia / North Africa / Eastern Mediterranean", noFlag: true, note: "Achaemenid Persian Empire — greatest empire of the ancient world under Darius I; from Egypt to India.", population: 50_000_000 }],
+    ["Kingdom of Magadha", { continent: "South Asia", noFlag: true, note: "Kingdom of Magadha in India — rising power in eastern India; Maurya dynasty would emerge from this region.", population: 5_000_000 }],
+    ["Warring States China", { continent: "East Asia", noFlag: true, note: "Warring States period China — Zhou Dynasty fractured; various states competing for dominance.", population: 20_000_000 }],
+    ["Roman Republic", { continent: "Southern Europe", noFlag: true, note: "Roman Republic in its early period — expanding from the Italian peninsula.", population: 1_000_000 }],
+    ["Carthaginian Republic", { continent: "North Africa / Western Mediterranean", noFlag: true, note: "Carthaginian Republic — major Phoenician trading power centered in North Africa.", population: 1_500_000 }],
+    ["Etruscan Confederation", { continent: "Southern Europe", noFlag: true, note: "Etruscan city-states in Italy — pre-Roman Italian culture; gradually absorbed by Rome.", population: 500_000 }],
+    ["Nubian Kingdoms", { continent: "Northeast Africa", noFlag: true, note: "Nubian Kingdoms in the upper Nile valley — trade partners and rivals with Egypt.", population: 2_000_000 }],
+  ])],
+
+  // === 323 BC (Hellenistic Age) overrides ===================================
+  ["bc323", new Map<string, PolityInfo>([
+    ["Macedonian Empire", { continent: "Southern Europe / Western Asia / North Africa", noFlag: true, note: "Macedonian Empire under Alexander the Great's successors — fragmented after his death; Seleucid, Ptolemaic, Antigonid kingdoms.", population: 30_000_000 }],
+    ["Seleucid Empire", { continent: "Western Asia / Central Asia", noFlag: true, note: "Seleucid Empire — Hellenistic state controlling much of Alexander's Asian conquests; capital Antioch.", population: 20_000_000 }],
+    ["Ptolemaic Egypt", { continent: "North Africa / Eastern Mediterranean", noFlag: true, note: "Ptolemaic Kingdom of Egypt — Hellenized Greek dynasty ruling Egypt; one of the most powerful Hellenistic states.", population: 8_000_000 }],
+    ["Antigonid Macedonia", { continent: "Southern Europe", noFlag: true, note: "Antigonid Kingdom of Macedonia — Hellenistic Macedonian state; power base in Greece.", population: 2_000_000 }],
+    ["Maurya Empire", { continent: "South Asia", noFlag: true, note: "Maurya Empire under Ashoka — dominant Indian empire established shortly after Alexander's invasion; Ashoka's reign (268-232 BC) was the peak.", population: 50_000_000 }],
+    ["Greek city-states", { continent: "Southern Europe / Eastern Mediterranean", noFlag: true, note: "Independent Greek city-states and leagues — Athens, Sparta, Corinth, and others; still politically autonomous but weakened.", population: 3_000_000 }],
+    ["Roman Republic", { continent: "Southern Europe", noFlag: true, note: "Roman Republic — expanding influence; beginning to dominate the Mediterranean.", population: 4_000_000 }],
+    ["Carthaginian Republic", { continent: "North Africa / Western Mediterranean", noFlag: true, note: "Carthaginian Republic — at height of power; major naval force; rivalry with Rome beginning.", population: 2_000_000 }],
+    ["Parthian Kingdom", { continent: "Western Asia / Central Asia", noFlag: true, note: "Parthian Kingdom — emerging power in Persia; would grow to rival Rome.", population: 5_000_000 }],
+  ])],
+
+  // === 100 AD (Roman Classical Period) overrides ============================
+  ["ad100", new Map<string, PolityInfo>([
+    ["Roman Empire", { continent: "Europe / Western Asia / North Africa", noFlag: true, note: "Roman Empire under Trajan — at its greatest territorial extent after the conquest of Dacia (106 AD). Capital Rome.", population: 70_000_000 }],
+    ["Parthian Empire", { continent: "Western Asia", noFlag: true, note: "Parthian Empire — dominant power in Persia and Central Asia, rival to Rome. Capital Ctesiphon.", population: 15_000_000 }],
+    ["Han Dynasty", { continent: "East Asia", noFlag: true, note: "Han Dynasty China during the Eastern Han period — politically fragmented but culturally unified under the Han.", population: 55_000_000 }],
+    ["Kushan Empire", { continent: "Central Asia / South Asia", noFlag: true, note: "Kushan Empire — controlled the Silk Road from Central Asia through northern India; Kanishka (127-150 AD) was a great patron of Buddhism.", population: 20_000_000 }],
+    ["Satavahana Empire", { continent: "South Asia", noFlag: true, note: "Satavahana Empire of southern India — contemporaneous with the Kushans in northern India; controlled major sea trade routes.", population: 15_000_000 }],
+    ["Axum Kingdom", { continent: "East Africa", noFlag: true, note: "Axumite Kingdom in the Horn of Africa — rising power controlling Red Sea trade; later became a Christian empire (4th century).", population: 3_000_000 }],
+    ["Meroe Kingdom", { continent: "Northeast Africa", noFlag: true, note: "Kingdom of Meroe in Nubia — Kushite civilization in the Upper Nile valley; predecessor to later Nubian kingdoms.", population: 1_000_000 }],
+    ["Koguryo", { continent: "East Asia", noFlag: true, note: "Koguryo Kingdom (Goguryeo) on the Korean peninsula — one of the Three Kingdoms of Korea, controlling northern territories.", population: 3_000_000 }],
+    ["Paekche", { continent: "East Asia", noFlag: true, note: "Paekche Kingdom (Baekje) on the Korean peninsula — one of the Three Kingdoms, controlling southwestern territories.", population: 1_500_000 }],
+    ["Silla", { continent: "East Asia", noFlag: true, note: "Silla Kingdom on the Korean peninsula — one of the Three Kingdoms, controlling southeastern territories.", population: 1_000_000 }],
+    ["Bengal Kingdoms", { continent: "South Asia", noFlag: true, note: "Bengal Kingdoms in eastern India — including Vakataka and other regional powers; politically fragmented region.", population: 8_000_000 }],
+    ["Chola / Pandya kingdoms", { continent: "South Asia", noFlag: true, note: "Chola and Pandya kingdoms in South India — Cholas rising to prominence, rivals to the Satavahanas.", population: 5_000_000 }],
+    ["Arakan Kingdom", { continent: "Southeast Asia", noFlag: true, note: "Arakan Kingdom in Burma — Indian-influenced kingdom with Brahmanical culture; precursor to later Burmese states.", population: 1_000_000 }],
+    ["Teotihuacán", { continent: "Mesoamerica", noFlag: true, note: "Teotihuacán city-state in Mesoamerica — greatest city in the Americas at this period (peak ~200-600 AD).", population: 200_000 }],
+    ["Moche Civilization", { continent: "South America", noFlag: true, note: "Moche civilization on the Peruvian coast — sophisticated ceramic artisans; pre-Inca Andean power.", population: 500_000 }],
+    ["Nabatean Kingdom", { continent: "Western Asia", noFlag: true, note: "Nabatean Kingdom in Arabia — controlled trade routes from Arabia to the Mediterranean; centered at Petra.", population: 400_000 }],
+    ["Himyarite Kingdom", { continent: "Western Asia", noFlag: true, note: "Himyarite Kingdom in South Arabia (Yemen) — major Arabian power controlling spice trade.", population: 1_000_000 }],
+    ["Hadramaut Kingdom", { continent: "Western Asia", noFlag: true, note: "Hadramaut Kingdom in South Arabia — wealthy trading kingdom in the Arabian peninsula.", population: 500_000 }],
+    ["Bosporian Kingdom", { continent: "Northern Europe / Western Asia", noFlag: true, note: "Bosporian Kingdom on the Black Sea Strait — client state of Rome; wealthy trading center.", population: 200_000 }],
+    ["Dacia", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Dacia north of the Danube — independent kingdom until the Roman conquest under Trajan (106 AD).", population: 1_500_000 }],
+  ])],
+
+  // === 400 AD (Late Antiquity) overrides ====================================
+  ["ad400", new Map<string, PolityInfo>([
+    ["Western Roman Empire", { continent: "Europe / North Africa", noFlag: true, note: "Western Roman Empire in 400 AD — severely weakened by invasions and internal strife; ruled from Rome.", population: 25_000_000 }],
+    ["Eastern Roman Empire", { continent: "Eastern Mediterranean / Western Asia", noFlag: true, note: "Eastern Roman (Byzantine) Empire in 400 AD — more stable than the West; ruled from Constantinople.", population: 30_000_000 }],
+    ["Visigothic Kingdom", { continent: "Iberia / Southern France", noFlag: true, note: "Visigothic Kingdom established in Hispania — Germanic tribe that settled within Roman borders; capital Toledo.", population: 2_000_000 }],
+    ["Frankish Kingdoms", { continent: "Western Europe", noFlag: true, note: "Frankish Kingdoms in Gaul — not yet united; still evolving toward the future Merovingian empire.", population: 3_000_000 }],
+    ["Ostrogothic Kingdom", { continent: "Italy", noFlag: true, note: "Ostrogothic Kingdom in Italy — Germanic kingdom emerging in the Italian peninsula.", population: 2_000_000 }],
+    ["Sasanian Empire", { continent: "Western Asia / Central Asia", noFlag: true, note: "Sasanian (Persian) Empire — at its height; rival to Rome for control of the Near East and trade routes.", population: 30_000_000 }],
+    ["Gupta Empire", { continent: "South Asia", noFlag: true, note: "Gupta Empire in India — in decline by 400 AD but still the dominant Indian power; known for art and science.", population: 40_000_000 }],
+    ["Northern Wei", { continent: "East Asia", noFlag: true, note: "Northern Wei Dynasty in China — Xiongnu (Xianbei) origin; controlled northern China amid the period of disunion.", population: 20_000_000 }],
+    ["Liu Song", { continent: "East Asia", noFlag: true, note: "Liu Song Dynasty in southern China — one of the Southern Dynasties during the Six Dynasties period.", population: 8_000_000 }],
+    ["Koguryo Empire", { continent: "East Asia", noFlag: true, note: "Koguryo (Goguryeo) Empire in Korea — dominant Korean power; frequently in conflict with China.", population: 4_000_000 }],
+  ])],
+
   // === 600 AD overrides =====================================================
   // The Palaiologos dynasty flag (1261–1453) is the global Byzantine entry,
   // but in 600 AD the Byzantine Empire was the Justinian/Heraclian dynasty —
@@ -2078,6 +2152,56 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — height of the golden age under various emperors; thriving international trade along the Silk Road.", population: 50_000_000 }],
     // Americas 800 AD
     ["Maya civilization", { continent: "Mesoamerica", noFlag: true, note: "Maya civilization at height of the Classic period (ended c. 900 AD) — great city-states like Tikal and Copan.", population: 3_000_000 }],
+  ])],
+
+  // === 1000 AD (Early Medieval) overrides ===================================
+  ["ad1000", new Map<string, PolityInfo>([
+    ["Fatimid Caliphate", { continent: "North Africa / Western Asia", noFlag: true, note: "Fatimid Caliphate at height — controlled Egypt, North Africa, and the Levant; rival to the Abbasid Caliphate.", population: 25_000_000 }],
+    ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire under the Ottonian dynasty — Otto III (983-1002) ruled during this era.", population: 15_000_000 }],
+    ["Kingdom of France", { continent: "Western Europe", noFlag: true, note: "Capetian Kingdom of France — newly founded by Hugh Capet (987); still weak compared to feudal lords.", population: 7_000_000 }],
+    ["Anglo-Saxon England", { continent: "Northern Europe", noFlag: true, note: "Anglo-Saxon England — under various kings including Aethelred the Unready and Canute the Great (who also ruled Denmark/Norway).", population: 2_000_000 }],
+    ["Kingdom of Denmark", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Denmark — Canute the Great (1016-1035) ruled England, Denmark, and Norway in personal union.", population: 1_000_000 }],
+    ["Christian Spanish kingdoms", { continent: "Iberia", noFlag: true, note: "Christian Spanish kingdoms (Castile, Aragon, Portugal, Navarre, León) — gradually reconquering from Islamic Al-Andalus.", population: 3_000_000 }],
+    ["Al-Andalus", { continent: "Iberia", noFlag: true, note: "Al-Andalus (Islamic Spain) — fragmenting into taifas (petty kingdoms) after the Caliphate of Córdoba's collapse in 1031.", population: 4_000_000 }],
+    ["Kingdom of Norway", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Norway — under Danish/Norwegian kings; part of Canute's North Sea Empire.", population: 400_000 }],
+    ["Kingdom of Poland", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Poland under the Piast dynasty — newly emerged as a Catholic state under Bolesław I the Brave.", population: 2_000_000 }],
+    ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary under the Arpád dynasty — newly established Catholic kingdom; bulwark against steppe invasions.", population: 2_000_000 }],
+    ["Kievan Rus", { continent: "Eastern Europe", noFlag: true, note: "Kievan Rus — medieval federation of East Slavic city-states; capital Kiev (Kyiv). Christianized in 988 AD.", population: 5_000_000 }],
+    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — under the Macedonian dynasty; at territorial height after reconquests in Balkans and Anatolia.", population: 14_000_000 }],
+    ["Venice", { continent: "Southern Europe", noFlag: true, note: "Republic of Venice — emerging as a major Mediterranean maritime power and trading republic.", population: 100_000 }],
+    ["Papal States", { continent: "Southern Europe", noFlag: true, note: "Papal States (Kingdom of the Pope) — temporal domain of the Papacy in central Italy.", population: 500_000 }],
+    ["Chola Empire", { continent: "South Asia", noFlag: true, note: "Chola Empire at imperial height under Rajendra Chola I — greatest maritime power in the Indian Ocean.", population: 20_000_000 }],
+    ["Pala Empire", { continent: "South Asia", noFlag: true, note: "Pala Empire of Bengal — declining but still a major power; important Buddhist university at Nalanda.", population: 15_000_000 }],
+    ["Ghaznavid Empire", { continent: "Central Asia / South Asia", noFlag: true, note: "Ghaznavid Empire — Turkic empire in Afghanistan/Central Asia/northern India; raiders who challenged Hindu kingdoms.", population: 8_000_000 }],
+    ["Song Dynasty", { continent: "East Asia", noFlag: true, note: "Northern Song dynasty China — classic Chinese civilization; thriving commerce and technology.", population: 50_000_000 }],
+    ["Khmer Empire", { continent: "Southeast Asia", noFlag: true, note: "Khmer Empire (Angkor) — height of classical Cambodian civilization; capital city of Angkor built later (12th c.).", population: 1_500_000 }],
+    ["Srivijaya", { continent: "Southeast Asia", noFlag: true, note: "Srivijaya maritime empire — dominated maritime trade in Southeast Asia from Sumatra base.", population: 3_000_000 }],
+    ["Vietnam (Ly dynasty)", { continent: "Southeast Asia", noFlag: true, note: "Early Ly dynasty Vietnam — newly independent from Chinese rule (938-1009); capital Thang Long (Hanoi).", population: 3_000_000 }],
+    ["Heian Japan", { continent: "East Asia", noFlag: true, note: "Heian period Japan — height of classical Japanese court culture; Fujiwara regency. The samurai class beginning to rise.", population: 5_000_000 }],
+  ])],
+
+  // === 1200 AD (High Medieval) overrides ====================================
+  ["ad1200", new Map<string, PolityInfo>([
+    ["Hohenstaufen Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire under the Hohenstaufen dynasty — Frederick Barbarossa (1152-1190) and his successors.", population: 18_000_000 }],
+    ["Kingdom of France", { continent: "Western Europe", noFlag: true, note: "Capetian Kingdom of France under Philip II Augustus — expanding royal power at expense of feudal lords.", population: 10_000_000 }],
+    ["Plantagenet England", { continent: "Northern Europe", noFlag: true, note: "Kingdom of England under the Plantagenet dynasty — Richard the Lionheart and King John ruled around this era.", population: 3_500_000 }],
+    ["Kingdom of Denmark", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Denmark — expanding under the Valdemar dynasty; major Baltic power.", population: 1_200_000 }],
+    ["Kingdom of Norway", { continent: "Northern Europe", noFlag: true, note: "Kingdom of Norway — independent union with Iceland and Greenland.", population: 500_000 }],
+    ["Christian Iberia", { continent: "Iberia", noFlag: true, note: "Christian Spanish kingdoms — Castile, Aragon, Portugal, and others advancing the Reconquista against Al-Andalus.", population: 5_000_000 }],
+    ["Al-Andalus", { continent: "Iberia", noFlag: true, note: "Almohad Al-Andalus — Islamic Spain under the Almohad dynasty. Granada would be the last Islamic stronghold (until 1492).", population: 3_000_000 }],
+    ["Kingdom of Poland", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Poland — fragmented into competing principalities after the Piast dynasty's decline.", population: 2_500_000 }],
+    ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary — under the Arpád dynasty; expanding territorial power in Central Europe.", population: 3_000_000 }],
+    ["Kievan Rus", { continent: "Eastern Europe", noFlag: true, note: "Kievan Rus — fragmenting into competing principalities; Mongol invasions would begin in 1237.", population: 7_000_000 }],
+    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — weakened by the Fourth Crusade (1204); Constantinople would fall to Crusaders.", population: 8_000_000 }],
+    ["Latin Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Latin Empire — Crusader state established in Constantinople after the Fourth Crusade (1204-1261).", population: 1_500_000 }],
+    ["Sultanate of Delhi", { continent: "South Asia", noFlag: true, note: "Delhi Sultanate — Islamic state in northern India; replacing Hindu kingdoms. Iltutmish was ruling around 1211-1236.", population: 20_000_000 }],
+    ["Chola Empire", { continent: "South Asia", noFlag: true, note: "Late Chola Empire — declining but still influential in South India; Chola power would end by mid-13th century.", population: 10_000_000 }],
+    ["Song Dynasty", { continent: "East Asia", noFlag: true, note: "Southern Song dynasty China — after losing the north to the Jin dynasty (1127). Height of Chinese civilization.", population: 60_000_000 }],
+    ["Jin Dynasty", { continent: "East Asia", noFlag: true, note: "Jin dynasty China — Jurchen conquest of northern China; ruled 1115-1234 until Mongol conquest.", population: 35_000_000 }],
+    ["Khmer Empire", { continent: "Southeast Asia", noFlag: true, note: "Khmer Empire at peak — Angkor Wat completed in 12th century represents the height of Khmer civilization.", population: 2_000_000 }],
+    ["Pagan Empire", { continent: "Southeast Asia", noFlag: true, note: "Pagan Empire of Burma — height of classical Burmese civilization; built thousands of temples.", population: 2_500_000 }],
+    ["Sukhothai", { continent: "Southeast Asia", noFlag: true, note: "Sukhothai Kingdom of Thailand — height of early Thai state; culturally innovative period.", population: 800_000 }],
+    ["Kamakura Shogunate", { continent: "East Asia", noFlag: true, note: "Kamakura Shogunate Japan — samurai military government; Minamoto clan dominated.", population: 6_000_000 }],
   ])],
 
   // === 1300 (High/Late Medieval) overrides ==================================
@@ -2176,6 +2300,52 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Novgorod — annexed by Moscow in 1478, no longer independent
     ["Novgorod-Seversky", { continent: "Eastern Europe", note: "Principality of Novgorod-Seversky — a small Russian principality that resisted Muscovite unification.", noFlag: true, population: 100_000 }],
   ])],
+
+  // === 1600 AD (Early Modern) overrides =====================================
+  ["ad1600", new Map<string, PolityInfo>([
+    // Major Empires
+    ["Ottoman Empire", { continent: "Western Asia / Southeastern Europe / North Africa", noFlag: true, note: "Ottoman Empire at its height under the Sultanate — the longest-lived Islamic empire; controlled vast territories across three continents.", population: 30_000_000 }],
+    ["Safavid Empire", { continent: "Western Asia", noFlag: true, note: "Safavid Persia — established Shi'a Islam; rivals to the Ottomans for control of the Near East. Capital Isfahan.", population: 8_000_000 }],
+    ["Mughal Empire", { continent: "South Asia", noFlag: true, note: "Mughal Empire in India at its height — one of the richest empires of the world under Akbar and his successors. Architecture and art flourished.", population: 110_000_000 }],
+    ["Ming Dynasty", { continent: "East Asia", noFlag: true, note: "Ming Dynasty China — the last Han-led Chinese dynasty; famous for the Forbidden City and the Great Wall. Peak of Chinese power.", population: 120_000_000 }],
+    ["Qing Dynasty (Manchu)", { continent: "East Asia", noFlag: true, note: "Qing Dynasty — Jurchen (Manchu) conquest of China beginning (1644 final conquest); not yet dominant in 1600.", population: 5_000_000 }],
+    // European Powers
+    ["Spanish Empire", { continent: "Europe / Americas / Asia", noFlag: true, note: "Spanish Empire — world's leading superpower; controlled vast colonial territories including the Americas, Philippines, parts of Italy, Netherlands, and Africa.", population: 10_000_000 }],
+    ["Portuguese Empire", { continent: "Europe / Americas / Asia / Africa", noFlag: true, note: "Portuguese Empire — global trading power controlling routes from Brazil to India to Japan; world's first truly global empire.", population: 2_000_000 }],
+    ["France", { continent: "Western Europe", noFlag: true, note: "Kingdom of France under the Bourbons — major European power; became dominant after Louis XIV's reign.", population: 18_000_000 }],
+    ["England and Ireland", { continent: "Northern Europe / Western Europe", noFlag: true, note: "Kingdom of England and Ireland under the Tudors — rising naval power; colonizing North America; defeating the Spanish Armada (1588).", population: 7_000_000 }],
+    ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire — fragmented confederation of Germanic states; increasingly dominated by Austria. Peak decentralization during 30 Years War.", population: 20_000_000 }],
+    ["Tsardom of Muscovy", { continent: "Eastern Europe / Western Asia", noFlag: true, note: "Russian Tsardom under the early Romanovs — expanding across Siberia; establishing itself as a major power.", population: 12_000_000 }],
+    ["Polish-Lithuanian Commonwealth", { continent: "Eastern Europe", noFlag: true, note: "Polish-Lithuanian Commonwealth (Polish-Lithuanian Union) — major Eastern European power; elective monarchy.", population: 9_000_000 }],
+    ["Swedish Empire", { continent: "Northern Europe", noFlag: true, note: "Swedish Empire under Gustav Vasa and successors — rising power; dominating the Baltic; beginning its imperial expansion.", population: 1_500_000 }],
+    ["Dutch Republic", { continent: "Western Europe", noFlag: true, note: "Dutch Republic (United Provinces) — newly independent from Spain; becoming a major trading and naval power; Golden Age.", population: 2_000_000 }],
+    // Asian Powers
+    ["Japan (Edo period)", { continent: "East Asia", noFlag: true, note: "Japan in the Edo period — unified under the Tokugawa Shogunate (from 1603); peaceful, isolated society.", population: 30_000_000 }],
+    ["Korea (Joseon)", { continent: "East Asia", noFlag: true, note: "Joseon Dynasty Korea — Chinese-influenced Confucian society; later suffering Ming-Qing transition wars.", population: 8_000_000 }],
+    ["Vijayanagara Empire", { continent: "South Asia", noFlag: true, note: "Vijayanagara Empire of southern India — major Hindu power; resisting Islamic sultanates; already declining by 1600.", population: 15_000_000 }],
+    ["Bengal Sultanate", { continent: "South Asia", noFlag: true, note: "Bengal Sultanate — Islamic sultanate in eastern India; major trading center; conflicts with Mughal expansion.", population: 8_000_000 }],
+    ["Shan States", { continent: "Southeast Asia", noFlag: true, note: "Shan States in Burma (Myanmar) — multiple independent princely states competing with Burma proper.", population: 2_000_000 }],
+    ["Ayutthaya Kingdom", { continent: "Southeast Asia", noFlag: true, note: "Ayutthaya Kingdom in Siam (Thailand) — major Southeast Asian power; cosmopolitan trading center.", population: 4_000_000 }],
+    ["Aceh Sultanate", { continent: "Southeast Asia", noFlag: true, note: "Aceh Sultanate in Sumatra — Islamic state and trading power; rivals to the Portuguese and Dutch for control of spice trade.", population: 1_500_000 }],
+    // African Powers
+    ["Ethiopia", { continent: "East Africa", noFlag: true, note: "Ethiopian Empire — Christian kingdom; resisting Islamic expansion; maintains independence against Ottoman and Adal threats.", population: 4_000_000 }],
+    ["Mali Empire", { continent: "West Africa", noFlag: true, note: "Mali Empire (declining) — once dominant West African power; fragmented and declining by 1600; local sultanates replace it.", population: 3_000_000 }],
+    ["Songhai Empire", { continent: "West Africa", noFlag: true, note: "Songhai Empire — dominant West African power; controls the Niger valley; world's largest empire by territory in 1600.", population: 5_000_000 }],
+    ["Hausa States", { continent: "West Africa", noFlag: true, note: "Hausa States in Nigeria — confederation of city-states; major trading centers (Kano, Katsina, Zaria); Islamic sultanates.", population: 2_000_000 }],
+    ["Oyo Empire", { continent: "West Africa", noFlag: true, note: "Oyo Empire in Yorubaland — powerful West African state; cavalry-based military; peak period.", population: 5_000_000 }],
+    ["Benin Kingdom", { continent: "West Africa", noFlag: true, note: "Kingdom of Benin — West African maritime power; sophisticated court; trade with Portuguese.", population: 800_000 }],
+    ["Kongo Kingdom", { continent: "Central Africa", noFlag: true, note: "Kingdom of Kongo in Central Africa — major African state; early European contact; Portuguese colonial influence growing.", population: 3_000_000 }],
+    ["Mwenemutapa Empire", { continent: "Southeast Africa", noFlag: true, note: "Mwenemutapa Empire in Zimbabwe — major East African power; gold trade; Portuguese encroachment beginning.", population: 2_000_000 }],
+    // Americas
+    ["Inca Empire", { continent: "South America", noFlag: true, note: "Inca Empire — largest pre-Columbian state; already conquered by Spanish (conquest complete 1572) but still organizationally intact.", population: 12_000_000 }],
+    ["Aztec Empire", { continent: "Mesoamerica", noFlag: true, note: "Aztec Empire (already conquered 1521) — still surviving as organizations and cultural remnants; Spanish colonial rule.", population: 3_000_000 }],
+    ["Maya states", { continent: "Mesoamerica", noFlag: true, note: "Maya city-states in Yucatán — independent kingdoms still resisting Spanish conquest; organized societies.", population: 2_000_000 }],
+    // Minor European States
+    ["Venice", { continent: "Italy", noFlag: true, note: "Republic of Venice — declining maritime power; still wealthy from Eastern trade but Portuguese competition undermining.", population: 600_000 }],
+    ["Papal States", { continent: "Italy", noFlag: true, note: "Papal States (Vatican territories) — small Italian states ruled by the Pope; threatened by larger powers.", population: 800_000 }],
+    ["Tuscany (Florence)", { continent: "Italy", noFlag: true, note: "Grand Duchy of Tuscany (Florence) — Italian state; independent but increasingly overshadowed by larger powers.", population: 600_000 }],
+  ])],
+
   ["ad1700", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon France under Louis XIV. White royal banner with fleur-de-lis — the tricolour wasn't adopted until 1790.", population: 21_500_000 }],
     ["Spain", { flag: "historical-flags/spain-burgundy.png", continent: "Iberia", note: "Spain at the start of the War of Spanish Succession — still flying the Cross of Burgundy as it had since 1506. The Bourbon white royal flag would come in 1701, the modern red-yellow-red in 1785.", population: 8_000_000 }],
