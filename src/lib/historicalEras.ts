@@ -2896,6 +2896,41 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Ottoman Empire in 1815: the 1844 crescent-and-star was 29 years away.
     // Red crescent banners were used informally but not standardised yet.
     ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1815 — under Mahmud II. The crescent-and-star flag wasn't standardised until 1844, 29 years after this era.", population: 25_000_000 }],
+    // --- German Confederation states (post-Congress of Vienna, 1815) -----------
+    ["Austrian Empire", { noFlag: true, continent: "Central Europe", note: "Austrian Empire — dominant German state; President of the German Confederation.", population: 14_000_000 }],
+    ["Bavaria", { noFlag: true, continent: "Central Europe", note: "Kingdom of Bavaria — major German state post-Vienna Congress; retained independence.", population: 3_500_000 }],
+    ["Württemberg", { noFlag: true, continent: "Central Europe", note: "Kingdom of Württemberg — German state; promoted to kingdom status at the Congress of Vienna.", population: 1_500_000 }],
+    ["Saxony", { noFlag: true, continent: "Central Europe", note: "Kingdom of Saxony — major German power; one of the original members of the German Confederation.", population: 2_000_000 }],
+    ["Prussia", { noFlag: true, continent: "Central Europe / Eastern Europe", note: "Kingdom of Prussia — major German power; rising military dominance. The black-white-red flag wasn't standardised until later.", population: 10_000_000 }],
+    ["Hanover", { noFlag: true, continent: "Northern Europe", note: "Kingdom of Hanover — German state; personal union with Britain under George III.", population: 1_800_000 }],
+    ["Hesse-Darmstadt", { noFlag: true, continent: "Central Europe", note: "Grand Duchy of Hesse — German state, member of the Confederation.", population: 500_000 }],
+    ["Baden", { noFlag: true, continent: "Central Europe", note: "Grand Duchy of Baden — southwestern German state; liberal-leaning.", population: 1_100_000 }],
+    ["Mecklenburg-Schwerin", { noFlag: true, continent: "Northern Europe", note: "Grand Duchy of Mecklenburg-Schwerin — Baltic German state.", population: 600_000 }],
+    ["Holstein", { noFlag: true, continent: "Northern Europe", note: "Duchy of Holstein — under Danish rule as a German Confederation member.", population: 400_000 }],
+    // --- Italian states (post-Napoleonic) -----------------------------------------
+    ["Two Sicilies", { noFlag: true, continent: "Italy", note: "Kingdom of the Two Sicilies (Naples and Sicily) — Italian kingdom on the southern peninsula.", population: 7_500_000 }],
+    ["Papal States", { noFlag: true, continent: "Italy", note: "Papal States — territories ruled directly by the Pope; independent Italian state until 1870.", population: 1_200_000 }],
+    ["Tuscany", { noFlag: true, continent: "Italy", note: "Grand Duchy of Tuscany (Florence) — Italian state restored by Vienna Congress.", population: 1_100_000 }],
+    ["Parma", { noFlag: true, continent: "Italy", note: "Duchy of Parma — small Italian state restored to legitimist rule after Napoleonic Wars.", population: 450_000 }],
+    ["Modena", { noFlag: true, continent: "Italy", note: "Duchy of Modena and Reggio — Italian state; Este dynasty restored.", population: 350_000 }],
+    ["Sardinia", { noFlag: true, continent: "Italy", note: "Kingdom of Sardinia — Italian state including Piedmont, capital Turin. Later became Kingdom of Italy.", population: 2_400_000 }],
+    // --- Swiss and Lowland states ------------------------------------------------
+    ["Switzerland", { noFlag: true, continent: "Central Europe", note: "Swiss Confederation (post-Vienna) — federal system of cantons; restored independence.", population: 1_700_000 }],
+    ["Belgium", { noFlag: true, continent: "Western Europe", note: "United Kingdom of the Netherlands — Belgium remained under Dutch rule; independence in 1830.", population: 3_600_000 }],
+    // --- Iberian & smaller European states ---------------------------------------
+    ["Norway", { noFlag: true, continent: "Northern Europe", note: "Kingdom of Norway — personal union with Sweden (1814-1905); nominally independent.", population: 900_000 }],
+    ["Denmark", { noFlag: true, continent: "Northern Europe", note: "Kingdom of Denmark — European power; ruled Norway and various European and Atlantic territories.", population: 900_000 }],
+    ["Greece", { noFlag: true, continent: "SE Europe", note: "Ottoman Greece — enslaved Ottoman province; War of Independence 1821-1829 lay just ahead.", population: 800_000 }],
+    ["Serbia", { noFlag: true, continent: "SE Europe", note: "Principality of Serbia — Ottoman subject; autonomy growing after 1815 revolts against Ottoman rule.", population: 400_000 }],
+    ["Wallachia", { noFlag: true, continent: "SE Europe", note: "Principality of Wallachia — Ottoman vassal in the Balkans; Romanian-speaking principality.", population: 1_500_000 }],
+    ["Moldavia", { noFlag: true, continent: "SE Europe", note: "Principality of Moldavia — Ottoman vassal; Romanian principality.", population: 800_000 }],
+    ["Polish-Lithuanian Commonwealth", { noFlag: true, continent: "Eastern Europe", note: "Congress Poland (part of Russian Empire) — puppet state; remainder partitioned among Russia, Prussia, Austria.", population: 3_200_000 }],
+    // --- South American republics (early) ----------------------------------------
+    ["Gran Colombia", { noFlag: true, continent: "South America", note: "Gran Colombia — newly independent state formed 1819-1821 combining modern Colombia, Venezuela, Ecuador, Panama.", population: 1_500_000 }],
+    ["Peru", { noFlag: true, continent: "South America", note: "Viceroyalty of Peru — Spanish colonial territory; independent republic from 1821.", population: 1_200_000 }],
+    ["Chile", { noFlag: true, continent: "South America", note: "Chile — Spanish colonial territory on the Pacific; independence 1810, secured by 1818.", population: 1_000_000 }],
+    ["Rio de la Plata", { noFlag: true, continent: "South America", note: "United Provinces of the Río de la Plata — early name for Argentina; independence from Spain 1810.", population: 600_000 }],
+    ["Empire of Brazil", { flag: "historical-flags/empire-of-brazil.png", continent: "South America", note: "Empire of Brazil under Dom João VI — Portuguese royal family fled to Brazil in 1808; ruled from Rio de Janeiro.", population: 4_000_000 }],
   ])],
 
   // === 1880 (Scramble for Africa) overrides =================================
@@ -2984,6 +3019,37 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Dahomey", { noFlag: true, continent: "West Africa", note: "Kingdom of Dahomey - famed for its women's regiments; annexed by France in 1894.", population: 500_000 }],
     ["Imerina", { noFlag: true, continent: "East Africa", note: "Kingdom of Imerina (Madagascar) under Ranavalona II - independent until the French protectorate of 1895.", population: 2_500_000 }],
     ["Sultinate of Zanzibar", { noFlag: true, continent: "East Africa", note: "Sultanate of Zanzibar - the Busaidi dynasty's clove and ivory empire, flying a plain red flag.", population: 200_000 }],
+    // --- Additional African states independent or semi-independent in 1880 -----
+    ["Buganda", { noFlag: true, continent: "East Africa", note: "Kingdom of Buganda — powerful East African kingdom (modern Uganda); independent until British protectorate 1894.", population: 1_000_000 }],
+    ["Borno Sultanate", { noFlag: true, continent: "West Africa", note: "Sultanate of Borno — large Islamic state in Central Sahel; surviving but declining by 1880.", population: 2_000_000 }],
+    ["Kano Emirate", { noFlag: true, continent: "West Africa", note: "Emirate of Kano — major Hausa city-state in Nigeria; center of Islamic learning and trade.", population: 500_000 }],
+    ["Katsina Emirate", { noFlag: true, continent: "West Africa", note: "Emirate of Katsina — historic Hausa city-state; rival to Kano.", population: 400_000 }],
+    ["Ife Kingdom", { noFlag: true, continent: "West Africa", note: "Kingdom of Ife — Yoruba city-state in Nigeria; center of art and culture; semi-independent.", population: 200_000 }],
+    ["Tivland", { noFlag: true, continent: "West Africa", note: "Tiv people confederation — decentralized people in modern Nigeria/Cameroon; resisting external control.", population: 500_000 }],
+    ["Mutapa Empire", { noFlag: true, continent: "East Africa", note: "Mutapa Empire — Zimbabwe-based empire; declining but still controlling interior trade routes.", population: 3_000_000 }],
+    ["Yao Kingdom", { noFlag: true, continent: "East Africa", note: "Yao Kingdom — Bantu people in Mozambique/Tanzania region; slave trade participants.", population: 300_000 }],
+    ["Shona Confederacy", { noFlag: true, continent: "East Africa", note: "Shona Confederacy — southern African people; resisting European colonization.", population: 1_500_000 }],
+    // --- Asian sultanates and kingdoms in 1880 ----------------------------------
+    ["Johore Sultanate", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Johore — Malay state; British protectorate by 1895.", population: 300_000 }],
+    ["Selangor", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Selangor — Malay state; tin-rich, soon under British protection.", population: 150_000 }],
+    ["Perak", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Perak — Malay state; tin mining important; British resident installed 1875.", population: 200_000 }],
+    ["Kedah", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Kedah — Malay state; British protectorate from 1909.", population: 250_000 }],
+    ["Terengganu", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Terengganu — East Coast Malay state.", population: 100_000 }],
+    ["Brunei", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Brunei — Borneo state; British protectorate from 1888.", population: 80_000 }],
+    ["Sulu Sultanate", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Sulu — southern Philippines; independent Islamic sultanate until American colonization.", population: 300_000 }],
+    ["Maguindanao", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Maguindanao — Mindanao sultanate; resisting Spanish and later American colonization.", population: 400_000 }],
+    ["Tonkin", { noFlag: true, continent: "Southeast Asia", note: "Kingdom of Tonkin — Vietnamese kingdom; French protectorate established 1883.", population: 5_000_000 }],
+    ["Luang Prabang", { noFlag: true, continent: "Southeast Asia", note: "Kingdom of Luang Prabang — Laotian kingdom; French protectorate from 1893.", population: 300_000 }],
+    ["Johor", { noFlag: true, continent: "Southeast Asia", note: "Kingdom of Johor — Malay state; British protectorate by 1895.", population: 250_000 }],
+    ["Burma", { noFlag: true, continent: "Southeast Asia", note: "Kingdom of Burma — Konbaung dynasty; third Anglo-Burmese War brought British rule in 1886.", population: 5_000_000 }],
+    // --- Pacific and Asian island states ----------------------------------------
+    ["Samoa", { noFlag: true, continent: "Pacific", note: "Independent Samoa — Pacific kingdom; partition agreed 1899 between US and Germany.", population: 30_000 }],
+    ["Fiji", { noFlag: true, continent: "Pacific", note: "Kingdom of Fiji — island state; British colony from 1874.", population: 150_000 }],
+    ["Tahiti", { noFlag: true, continent: "Pacific", note: "Kingdom of Tahiti — French Polynesia; French protectorate (colony from 1880).", population: 20_000 }],
+    // --- Indian subcontinent kingdoms -------------------------------------------
+    ["Kashmir", { noFlag: true, continent: "South Asia", note: "Kingdom of Kashmir — princely state; ruled by Hindu maharaja under British suzerainty.", population: 2_000_000 }],
+    ["Hyderabad", { noFlag: true, continent: "South Asia", note: "State of Hyderabad — largest Indian princely state; Nizam's territories.", population: 4_000_000 }],
+    ["Rajputana States", { noFlag: true, continent: "South Asia", note: "Rajputana States — confederation of Rajput kingdoms under British paramountcy.", population: 2_500_000 }],
   ])],
 
   // === 1900 (high imperialism) overrides ====================================
