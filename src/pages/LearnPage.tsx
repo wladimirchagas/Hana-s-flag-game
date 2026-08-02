@@ -124,11 +124,12 @@ type HistoricalSelection = {
 };
 type Selection = ModernSelection | HistoricalSelection;
 
-function selectionName(s: Selection): string {
+function selectionName(s: Selection, eraId?: Era["id"]): string {
   // Historical polities render through polityDisplayName so upstream's typos
-  // ("Kingfom of Italy", "Scottland") don't reach the user. `s.name` stays the
-  // verbatim dataset NAME — it is the key every lookup and match still uses.
-  return s.kind === "modern" ? s.country.name : polityDisplayName(s.name);
+  // ("Kingfom of Italy", "Scottland") don't reach the user, and era-specific
+  // statehood corrections (Namibia → South West Africa) are applied. `s.name`
+  // stays the verbatim dataset NAME — it is the key every lookup and match still uses.
+  return s.kind === "modern" ? s.country.name : polityDisplayName(s.name, eraId);
 }
 function selectionContinent(s: Selection): string {
   return s.kind === "modern" ? s.country.continent : s.continent ?? "Historical";
@@ -665,7 +666,7 @@ export default function LearnPage() {
     // mentioned in the name ("Zaire (Belgium)", "Libya (IT)") is a real dependency and
     // still shows the row.
     const rawRuler = polityRulers.get(name);
-    const bareName = polityDisplayName(name)
+    const bareName = polityDisplayName(name, eraId)
       .replace(/^(kingdom|kingfom|empire|republic|state|union|dominion|sultanate|emirate|principality|grand duchy)\s+of\s+/i, "")
       .trim()
       .toLowerCase();
@@ -845,7 +846,7 @@ export default function LearnPage() {
         id: name,
         // Grid label uses the corrected spelling; `id` stays the dataset NAME so
         // selection round-trips through the map unchanged.
-        name: polityDisplayName(name),
+        name: polityDisplayName(name, eraId),
         flag: sel.flag ?? null,
         continent: topLevelContinent(sel.continent),
         subcontinent: sel.continent ?? "Other",
@@ -1392,7 +1393,7 @@ export default function LearnPage() {
                     <p className="learn-fs__continent">
                       {selectionContinent(display)}
                     </p>
-                    <h2 className="learn-fs__name">{selectionName(display)}</h2>
+                    <h2 className="learn-fs__name">{selectionName(display, eraId)}</h2>
                   </>
                 )}
                 {display.kind === "modern" ? (
@@ -1432,7 +1433,7 @@ export default function LearnPage() {
                     population={display.population}
                     ruledBy={
                       display.kind === "historical"
-                        ? display.ruledBy && polityDisplayName(display.ruledBy)
+                        ? display.ruledBy && polityDisplayName(display.ruledBy, eraId)
                         : undefined
                     }
                     approximateExtent={
@@ -1444,7 +1445,7 @@ export default function LearnPage() {
                   // A colony flew its ruler's flag. Say so, so the card never implies
                   // the territory had a national flag of its own.
                   <p className="entity-summary__note">
-                    Flew the flag of {polityDisplayName(display.ruledBy ?? "")} — it had no
+                    Flew the flag of {polityDisplayName(display.ruledBy ?? "", eraId)} — it had no
                     national flag of its own at this date.
                   </p>
                 )}
@@ -1455,7 +1456,7 @@ export default function LearnPage() {
                         type="button"
                         className="learn-fs__flag"
                         onClick={() => setZoomedFlagUrl(flagUrl)}
-                        aria-label={`Enlarge ${selectionName(display)} flag`}
+                        aria-label={`Enlarge ${selectionName(display, eraId)} flag`}
                       >
                         <img
                           src={flagUrl}
