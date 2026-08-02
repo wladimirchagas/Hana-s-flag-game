@@ -2413,6 +2413,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    ["Ottoman Sultanate", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Ottoman Empire after the 1877-78 Russo-Turkish War; in terminal decline as the Turkish War of Independence began in 1919. The crescent-and-star flag was standardised in 1844.", population: 18_000_000 }],
+    ["Ceylon", { modernName: "United Kingdom", continent: "South Asia", note: "British Crown Colony of Ceylon under direct British rule since 1815; flew the Union Jack. Independence and the distinctive lion flag came in 1948.", population: 3_500_000 }],
+    ["Malaysia", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Malaya — the Straits Settlements and protected Malay sultanates; not yet federated as Malaysia, which formed in 1963.", population: 2_000_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 37_000_000 }],
     ["Libya (IT)", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya — Rome's reconquest of the interior would run through the 1920s.", population: 1_000_000 }],
     ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland.", population: 600_000 }],
@@ -2445,6 +2448,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    ["Turkey", { flag: "historical-flags/ottoman-empire.png", continent: "Western Asia", note: "Turkish Republic (1923–present) — established under Mustafa Kemal Atatürk after the collapse of the Ottoman Empire. The red flag with white crescent and star was adopted in 1923 and remains Turkey's flag today.", population: 16_000_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Fascist Italy under Mussolini — the green-white-red tricolour carried the Savoy arms of the Kingdom. The monarchy remained until 1946, when the republic removed the arms from the flag.", population: 43_000_000 }],
     ["Libya", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya, declared an integral part of Italy in 1939.", population: 850_000 }],
     ["Ethiopia (Italy)", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian East Africa — Ethiopia had been invaded in 1935–36 and would be liberated in 1941.", population: 10_000_000 }],
@@ -2483,6 +2487,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was still under British rule as the Dominion of Ceylon in 1945 (Ceylon became independent in 1948, renamed Sri Lanka in 1972). The Dominion's distinctive lion flag was adopted in 1951; this era predates it, but the flag represents the post-1948 identity.", modernName: "United Kingdom", population: 6_500_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at the war's end — partition and independence came two years later, in 1947.", population: 389_000_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a dominion that fought with the Allies, flying British flags and the 1928 orange-white-blue; today's flag dates from 1994.", population: 11_400_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — a British mandate, soon a UN trust territory; independent in 1961.", population: 6_000_000 }],
@@ -2511,6 +2516,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Japanese withdrawal. Independence and the 1948 flag both came in 1948.
     // Showing the 1948 flag for 1945 is a 3-year anachronism; use UK flag.
     ["Burma", { modernName: "United Kingdom", continent: "Southeast Asia", note: "Burma in 1945 — just liberated from Japanese occupation, under British South East Asia Command (SEAC) military administration. Independence and the Union of Burma flag came in 1948.", population: 17_500_000 }],
+    ["Malaysia", { modernName: "United Kingdom", continent: "Southeast Asia", note: "Malaya and British Borneo territories in 1945 — still under Japanese occupation or just liberated; the Malayan Union formed in 1946, and the Federation of Malaya in 1948, but Malaysia as such was not established until 1963.", population: 3_500_000 }],
     // Yemen 1945 — Mutawakkilite Kingdom (1918–1962). Flag was red with white sword + 5 stars.
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars was the national flag from 1918 to 1962.", population: 4_700_000 }],
     // Korea 1945 — Allied occupation zones. No national flag yet (the
@@ -2566,6 +2572,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet in 1960 — the snow lions and sun-with-rays flag represented the Tibetan cultural identity, though Chinese control was consolidating after 1951.", population: 1_800_000 }],
     // Burma in 1960 was the Union of Burma — still on the 1948 flag.
     ["Burma", { flag: "historical-flags/burma-1948.png", continent: "Southeast Asia", note: "Union of Burma — the 1948 flag (red with blue canton + 1 large + 5 small stars) flew from 1948 until 1974.", population: 22_000_000 }],
+    ["Malaysia", { modernName: "Malaysia", continent: "Southeast Asia", note: "Malaya and British territories in Borneo (Sarawak, North Borneo, Brunei) — the Malayan Federation existed from 1948, but the modern federation of Malaysia was not formally established until 1963; shown here as its historical configuration.", population: 4_500_000 }],
     // China in 1960 = People's Republic of China. The modern PRC flag
     // adopted in 1949 is the correct one — auto-fallback gives this.
     // No override needed.
