@@ -1710,10 +1710,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Japanese withdrawal. Independence and the 1948 flag both came in 1948.
     // Showing the 1948 flag for 1945 is a 3-year anachronism; use UK flag.
     ["Burma", { modernName: "United Kingdom", continent: "Southeast Asia", note: "Burma in 1945 — just liberated from Japanese occupation, under British South East Asia Command (SEAC) military administration. Independence and the Union of Burma flag came in 1948.", population: 17_500_000 }],
-    // Egypt 1945 — Kingdom of Egypt (1922–1953). Green field with white
-    // crescent + 3 stars (a colour-swap of the Khedive flag). We don't
-    // have a curated PNG; show no flag rather than the wrong modern one.
-    ["Egypt", { continent: "North Africa", note: "Kingdom of Egypt under King Farouk. Green field with white crescent and 3 stars — the modern red-white-black flag came after the 1952 revolution.", population: 19_000_000, noFlag: true }],
     // Yemen 1945 — Mutawakkilite Kingdom (1918–1962). Flag was red with white sword + 5 stars.
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars was the national flag from 1918 to 1962.", population: 4_700_000 }],
     // Korea 1945 — Allied occupation zones. No national flag yet (the
