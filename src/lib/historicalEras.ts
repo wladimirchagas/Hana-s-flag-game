@@ -2444,6 +2444,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Philippines Commonwealth (1935–1946) — a U.S. territory with increasing self-governance under the Commonwealth Constitution of 1935. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 10_000_000 }],
+    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Kingdom of Hungary — independent nation after the Austro-Hungarian Empire collapsed in 1918. The Apostolic Double Cross banner was traditional; no single standardised national flag during this period.", population: 7_600_000 }],
+    ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Kingdom of Egypt (1922–1952) after nominal independence from Ottoman rule in 1922. The khedive's crescent and star flag (red with white crescent and three stars) represented Egypt during the interwar period.", population: 12_000_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", note: "Kingdom of Albania (1928–1939) under King Zog I, independent nation after Ottoman rule ended. No standardised national flag during this early interwar period.", population: 1_000_000 }],
     ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 30_600_000 }],
   ])],
 
@@ -2462,6 +2465,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // so the Weimar/Federal flag is wrong here — and the flag that did fly is one this
     // project will not bundle. The panel says so instead.
     ["Germany", { noFlag: true, continent: "Central Europe", note: "Nazi Germany, which had just annexed Austria and the Sudetenland. The black-red-gold tricolour was abolished in 1933 and restored only in 1949.", population: 69_000_000 }],
+    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Kingdom of Hungary — independent nation under Regent Miklós Horthy. The Apostolic Double Cross was the traditional symbol; no single standardised flag was adopted.", population: 9_000_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", note: "Kingdom of Albania under King Zog I (1928–1939), during Italian occupation in 1939. Limited standardised national flag during this period.", population: 1_050_000 }],
     ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — the condominium ruled from Khartoum until independence in 1956.", population: 6_500_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India on the eve of the war — still one Raj, ten years from partition.", population: 377_000_000 }],
     ["British Raj", { modernName: "United Kingdom", continent: "South Asia", note: "British India on the eve of the war — still one Raj, ten years from partition.", population: 377_000_000 }],
@@ -2549,6 +2554,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // French Indochina in 1945: Annam, Tonkin still referenced as French;
     // Cochin China alias already routes to France. No extra overrides needed.
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, just out of the Japanese occupation and American reconstruction. The white sun and three stars flag has been in use since 1898.", population: 19_000_000 }],
+    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Kingdom of Hungary (1920–1946) — the Apostolic Double Cross was traditional heraldry but no single standardised flag. Under Soviet occupation by 1945.", population: 9_300_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", note: "Kingdom of Albania ended in 1944; the People's Republic of Albania was proclaimed in January 1946. No single standardised national flag during this transition period.", population: 1_100_000 }],
     ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 45_000_000 }],
   ])],
 
@@ -2604,6 +2611,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Sri Lanka in 1960 = Dominion of Ceylon. Use the Ceylon flag.
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was the Dominion of Ceylon in 1960 (it became the Republic of Sri Lanka only in 1972). The Dominion's lion flag flew from 1948 to 1972.", population: 9_500_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, with 14 years of post-independence nation-building underway. The white sun and three stars flag has been in use since 1898.", population: 27_000_000 }],
+    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Hungarian People's Republic — communist satellite state under Soviet control since 1948. No distinct national flag from the Soviet-dominated regime.", population: 10_000_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", note: "People's Republic of Albania — communist state under Enver Hoxha's rule, aligned with Yugoslavia until 1961. Standardised communist flag not widely recognised internationally.", population: 1_600_000 }],
     ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 70_000_000 }],
   ])],
 
