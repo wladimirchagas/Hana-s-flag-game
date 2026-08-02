@@ -1184,6 +1184,11 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   ["Denmark-Norway", "Denmark"], // Dannebrog has been Denmark's flag since the 14th c.
   ["Mongolia", "Mongolia"],
   ["Japan", "Japan"], // 1700 Tokugawa used various banners but the Hinomaru is older than most
+  // Persia — pre-1933 name for Iran. Qajar dynasty used the Lion and Sun banner
+  // from at least the 18th century; the modern Islamic Republic flag came only in 1980.
+  // For eras where "Persia" appears but no era-specific override exists, route to
+  // Iran's flag (Lion and Sun is closer than the modern green-white-red).
+  ["Persia", "Iran"],
   // Misc — only modern names or near-equivalents that genuinely match today.
   // Hainan in pre-modern eras was Qing/Ming Chinese — no flag in modern
   // sense. For 1914+ era it appears subsumed into China. Drop alias.
