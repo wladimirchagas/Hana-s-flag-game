@@ -2392,6 +2392,36 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Benin", { continent: "West Africa", note: "Benin Kingdom (Edo) in 1700 — still a sophisticated and powerful state despite increasing contact with European slavers.", noFlag: true, population: 1_200_000 }],
     // Ottoman Empire 1700: 1844 flag is 144 years too late.
     ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1700 — still a major power under the Köprülü viziers. The crescent-and-star flag wasn't standardised until 1844.", population: 30_000_000 }],
+    // Major Asian Powers
+    ["Mughal Empire", { noFlag: true, continent: "South Asia", note: "Mughal Empire in 1700 — under Aurangzeb; the last great emperor. Already showing signs of decline that would accelerate after his death (1707).", population: 120_000_000 }],
+    ["Qing Dynasty", { noFlag: true, continent: "East Asia", note: "Qing Dynasty China in 1700 — height of Kangxi Emperor's reign; the empire was expansionist and at its peak territorial extent.", population: 150_000_000 }],
+    ["Safavid Persia", { noFlag: true, continent: "Western Asia", note: "Safavid Empire of Persia in 1700 — in decline; the dynasty would fall by 1736. Capital Isfahan; once the world's largest city by some accounts.", population: 8_000_000 }],
+    // Central Asian Khanates
+    ["Khiva Khanate", { noFlag: true, continent: "Central Asia", note: "Khanate of Khiva in 1700 — Central Asian power controlling Khorezm; still independent, not yet subsumed by Russia.", population: 500_000 }],
+    ["Quazaq Khanate", { noFlag: true, continent: "Central Asia", note: "Kazakh Khanate in 1700 — nomadic confederation of steppe peoples; loosely organized into three hordes (Great, Middle, Little).", population: 2_000_000 }],
+    ["Crimean Khanate", { noFlag: true, continent: "Eastern Europe", note: "Crimean Khanate in 1700 — Tatar state under Ottoman suzerainty; vassal to the Sublime Porte.", population: 400_000 }],
+    // European Powers
+    ["Sweden", { noFlag: true, continent: "Northern Europe", note: "Swedish Empire in 1700 — the Great Northern War with Russia was just beginning (1700-1721). Still the dominant Baltic power.", population: 1_500_000 }],
+    ["Denmark-Norway", { noFlag: true, continent: "Northern Europe", note: "Kalmar Union (Denmark-Norway) in 1700 — personal union of the two kingdoms under the Danish crown.", population: 1_200_000 }],
+    ["Prussia", { noFlag: true, continent: "Central Europe", note: "Kingdom of Prussia in 1700 — under Frederick William I; a rising power that would dominate Central Europe under Frederick the Great (1740-1786).", population: 2_500_000 }],
+    ["Venice", { noFlag: true, continent: "Italy", note: "Republic of Venice in 1700 — a declining maritime power; holding its Adriatic and Mediterranean colonies but losing trade dominance to Atlantic powers.", population: 1_500_000 }],
+    ["Papal States", { noFlag: true, continent: "Italy", note: "Papal States in 1700 — ecclesiastical territories ruled by the Pope; stretched across central Italy.", population: 2_000_000 }],
+    ["Sardinia", { noFlag: true, continent: "Italy", note: "Kingdom of Sardinia (Piedmont and Sardinia) in 1700 — Italian state that would become a leader in Italian unification in the 19th century.", population: 1_000_000 }],
+    ["Naples", { noFlag: true, continent: "Italy", note: "Kingdom of Naples in 1700 — Spanish possession under Philip V following the War of Spanish Succession.", population: 4_000_000 }],
+    // Indian Sultanates
+    ["Deccan Sultanates", { noFlag: true, continent: "South Asia", note: "Deccan Sultanates in 1700 — including Bijapur, Golkonda, and Ahmadnagar; already declining and falling to Mughal expansion.", population: 8_000_000 }],
+    ["Bengal Sultanate", { noFlag: true, continent: "South Asia", note: "Bengal Sultanate in 1700 — eastern India; semi-autonomous from the Mughal Empire; major trade center.", population: 15_000_000 }],
+    ["Kingdom of Malabar", { noFlag: true, continent: "South Asia", note: "Hindu kingdoms of Malabar (Kerala) in 1700 — southern India; resisting both Mughal and European colonial expansion.", population: 2_000_000 }],
+    // African Powers
+    ["Songhai Empire (remnants)", { noFlag: true, continent: "West Africa", note: "Songhai Empire remnants in 1700 — the once-great empire had collapsed in 1591, fragmenting into smaller states.", population: 2_000_000 }],
+    ["Mali Empire (remnants)", { noFlag: true, continent: "West Africa", note: "Mali Empire remnants in 1700 — the ancient empire was now small and declining; Songhai had replaced it as West Africa's dominant power.", population: 1_000_000 }],
+    ["Mwenemutapa Empire", { noFlag: true, continent: "Southeast Africa", note: "Mwenemutapa Empire in 1700 — East/Southeast African gold-trading power; already under Portuguese pressure.", population: 2_000_000 }],
+    ["Kongo Kingdom", { noFlag: true, continent: "Central Africa", note: "Kingdom of Kongo in 1700 — Central African state; torn by internal conflicts and Portuguese colonial interference.", population: 2_500_000 }],
+    // Americas — European Colonial Powers
+    ["British North America", { noFlag: true, continent: "North America", note: "British North America in 1700 — colonial settlements along the Atlantic coast; would grow into the Thirteen Colonies.", population: 250_000 }],
+    ["Spanish Americas", { noFlag: true, continent: "South America / Central America / North America", note: "Spanish America in 1700 — vast colonial territories in Mexico, Central America, and South America under Spanish crown.", population: 8_000_000 }],
+    ["Portuguese Brazil", { noFlag: true, continent: "South America", note: "Colonial Brazil in 1700 — Portuguese Crown colony; rapidly growing sugar economy fueling slave trade.", population: 1_500_000 }],
+    ["Dutch Caribbean", { noFlag: true, continent: "Caribbean", note: "Dutch Caribbean colonies in 1700 — trading posts and sugar-producing islands under Dutch colonial control.", population: 100_000 }],
   ])],
   ["ad1815", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon Restoration (1814–1830) — France flew the white royal banner with fleur-de-lis. The tricolour wasn't readopted until 1830.", population: 30_500_000 }],
