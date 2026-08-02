@@ -1,8 +1,84 @@
 # Historical Eras Completeness — Phase 4 Implementation Roadmap
 
-**Status:** Phase 4a Complete | Phase 4b–4e In Progress  
-**Date:** 2026-08-02  
+**Status:** Phase 4a Complete | Phase 4b Tier 1 Complete | Phase 4b Infrastructure Blocked | Phase 4c–4e Pending  
+**Last Updated:** 2026-08-02 (Session 3: Iran flag display fixes + Egypt duplicate removal)  
 **Branch:** `claude/historical-eras-completeness-yhtfl7`
+
+---
+
+## Session 3 Summary (2026-08-02, continued)
+
+### Completed ✓
+
+**Phase 4b Tier 1+: Iran Flag Display Fixes (ad1920, ad1938, ad1945, ad1960)**
+- Identified inconsistency: Iran entries (post-1933 name) in ad1920–ad1960 were marked noFlag: true despite notes correctly describing the Lion and Sun flag as the national symbol
+- Root cause: Persia → Iran naming transition confused the data entry logic
+- Fix applied: Changed all four eras from noFlag: true to `flag: "historical-flags/persia-1907.svg"`
+- Wired to historical eras:
+  - **ad1920:** "Persia (Iran after 1933) — the Lion and Sun banner, official national flag from Qajar through Pahlavi eras..."
+  - **ad1938:** "Iran (Persia renamed 1933) under Reza Shah Pahlavi — the Lion and Sun flag, official national flag from 1933 to 1979..."
+  - **ad1945:** "Iran under Mohammad Reza Shah Pahlavi — occupied by Britain and the USSR during the war. The Lion and Sun flag (1933–1979) was the national symbol."
+  - **ad1960:** "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980."
+- All flag checks passed; no anachronisms or parent-flag collisions
+- Commits: `a53981c` (Iran flags) + `0472985` (Egypt fix)
+
+**Phase 4b Data Integrity: ad1945 Egypt Duplicate Removal**
+- Identified bug: ad1945 had two Egypt entries; the second (noFlag: true) overwrote the first (with egypt-kingdom.svg flag)
+- Root cause: Prior session added egypt-kingdom.svg but did not remove the redundant noFlag override comment
+- Fix applied: Removed the duplicate noFlag entry to restore Kingdom flag display for 1945–1952 period
+- Verified: egypt-kingdom.svg exists and contains the correct green-crescent-and-stars design
+
+**Phase 4b Tier 2 Verification: Ottoman + Arabia + Persia Coverage Audit**
+- Ottoman Empire (ad1815, ad1920): Correctly marked noFlag (crescent-and-star not until 1844) ✓
+- Persia/Iran (ad1500, ad1600, ad1815, ad1880, ad1920, ad1938, ad1945, ad1960): All now display Lion and Sun flag ✓
+- Arabia/Nejd entries: No era-specific overrides needed; rely on global registry or modernName fallback ✓
+- Subdivision flag sweep: Confirmed 0 remaining (1712 universe complete) ✓
+
+### Blocked (No Change from Session 2) ❌
+
+Same blockers as Session 2 remain:
+- Phase 4b Infrastructure: Overpass API 403 Forbidden (Yemen/Vietnam splits)
+- Phase 4c: aourednik missing Yugoslavia, Poland, Germany occupation zones
+
+---
+
+## Session 2 Summary (2026-08-02)
+
+### Completed ✓
+
+**Phase 4b Tier 1: Yemen Flag Sourcing**
+- Downloaded Mutawakkilite Kingdom of Yemen flag (red field, white sword + 5 stars, 1918–1962)
+- Source: Wikimedia Commons (`Flag_of_the_Mutawakkilite_Kingdom_of_Yemen.svg`)
+- Bundled with correct viewBox aspect ratio (2:1 = `viewBox="0 0 600 300"`)
+- Wired to historical eras:
+  - **ad1920:** "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal."
+  - **ad1938:** "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution."
+  - **ad1945:** "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars was the national flag from 1918 to 1962."
+  - **ad1960:** "The Mutawakkilite Kingdom in the north (1918–1962) flew the red flag with white sword and stars; the south was under British rule as the Aden Protectorate."
+- Pre-1918 eras (ad1815) remain noFlag: true with explanatory notes
+- **PR #864 merged** at commit `a3a1a77` — all CI checks passed
+
+### Blocked ❌
+
+**Phase 4b Infrastructure: Yemen/Vietnam Territory Splits**
+- Blocker: Overpass API returns 403 Forbidden (network proxy policy blocks OpenHistoricalMap)
+- Scripts prepared but cannot execute:
+  - `scripts/query-ohm-splits.mjs` — Overpass query template for North/South Vietnam (1954–1975) and North/South Yemen (1962–1990)
+- Workaround required: Manual download via unrestricted network or network policy change
+- Impact: Unified Yemen/Vietnam cannot be split on 1960 map
+
+**Phase 4c: Historical Context Notes (ad1945)**
+- Blocker: Key post-WWII polities (Yugoslavia, Poland, Germany occupation zones) not present in aourednik GeoJSON
+- Status: Existing notes for Korea, India, Egypt, etc. are adequate; expansion blocked on dataset availability
+- Recommendation: Await GeoJSON expansion or source alternative historical dataset
+
+### Observations
+
+1. **Ottoman flags correctly configured:** Pre-1844 eras (ad1300, ad1500, ad1700, ad1815) correctly marked noFlag because crescent-and-star wasn't standardized until 1844. Post-1844 eras (ad1880+) show the flag. No action needed.
+
+2. **Persia/Iran naming inconsistency identified:** Entries for ad1920, ad1938, ad1945, ad1960 are labeled "Iran" (post-1933 name) but dated to pre-1933 period. Notes correctly reference "Lion and Sun flag" but entries are marked noFlag: true. Potential fix: rename to "Persia" and use flag directly or via modernName fallback (added in Session 1).
+
+3. **Subdivision flags sweep complete:** `node scripts/subdiv-remaining.mjs` reports 0 remaining (1712 universe: 1136 sourced, 576 omitted). Modern subdivision flag coverage is comprehensive.
 
 ---
 
