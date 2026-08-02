@@ -2242,6 +2242,29 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Holy Roman Empire in 1300: the post-1400 imperial banner is the global
     // entry, but in 1300 the double-headed eagle was only beginning to emerge.
     ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire in 1300 — late Hohenstaufen / early Habsburg era. The post-1400 imperial banner (our only HRE PNG) had not yet been formalised.", population: 12_000_000 }],
+    // Additional Major Powers of 1300
+    ["Mongol Yuan Dynasty", { continent: "East Asia", noFlag: true, note: "Yuan Dynasty China — Kublai Khan's Mongol-led empire; still dominant in East Asia; would fall to Ming in 1368.", population: 120_000_000 }],
+    ["Ming Dynasty (pre-founding)", { continent: "East Asia", noFlag: true, note: "Southern Song remnants and regional powers pre-Ming — would be consolidated into Ming Dynasty in 1368.", population: 30_000_000 }],
+    ["Vijayanagara Empire", { continent: "South Asia", noFlag: true, note: "Vijayanagara Empire in South India (founded 1336) — rising Hindu power resisting Islamic sultanates.", population: 10_000_000 }],
+    ["Bengal Sultanate", { continent: "South Asia", noFlag: true, note: "Bengal Sultanate — Islamic sultanate in eastern India; independent of Delhi; major trading center.", population: 12_000_000 }],
+    ["Jaunpur Sultanate", { continent: "South Asia", noFlag: true, note: "Jaunpur Sultanate in northern India — smaller sultanate co-existing with Delhi and Bengal sultanates.", population: 3_000_000 }],
+    ["Gujarat Sultanate", { continent: "South Asia", noFlag: true, note: "Gujarat Sultanate in western India — emerging power in the prosperous Gujarat region.", population: 5_000_000 }],
+    ["Mamluk Sultanate", { continent: "North Africa / Western Asia", noFlag: true, note: "Mamluk Sultanate of Egypt — still the dominant Islamic power in the eastern Mediterranean; held Jerusalem and Mecca.", population: 6_000_000 }],
+    ["Byzantine Empire (remnants)", { continent: "Eastern Mediterranean", noFlag: true, note: "Late Byzantine Empire — shrunk to Constantinople and a few remaining territories; declining power.", population: 1_000_000 }],
+    ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary under the Angevin and early Sigismund dynasties — major Central European power.", population: 3_000_000 }],
+    ["Poland-Lithuania", { continent: "Eastern Europe", noFlag: true, note: "Polish-Lithuanian union forming in 1300s — Eastern European power; would grow stronger after 1569.", population: 5_000_000 }],
+    ["Grand Duchy of Moscow", { continent: "Eastern Europe", noFlag: true, note: "Grand Duchy of Moscow in 1300 — tiny principality; would eventually unite Russia and emerge as major power.", population: 500_000 }],
+    ["Venetian Republic", { continent: "Italy", noFlag: true, note: "Republic of Venice in 1300 — at its peak as a Mediterranean maritime and trading power.", population: 1_500_000 }],
+    ["Genoa", { continent: "Italy", noFlag: true, note: "Republic of Genoa in 1300 — rival to Venice for Mediterranean trade dominance.", population: 500_000 }],
+    ["Kingdom of Sicily", { continent: "Italy", noFlag: true, note: "Kingdom of Sicily in 1300 — ruled by the House of Aragon; major Mediterranean state.", population: 1_000_000 }],
+    ["Papal States", { continent: "Italy", noFlag: true, note: "Papal States in 1300 — territories ruled by the Pope across central Italy; period of Avignon Papacy begins.", population: 2_000_000 }],
+    ["Kingdom of Aragon", { continent: "Iberia", noFlag: true, note: "Kingdom of Aragon in 1300 — expanding Mediterranean power; would eventually unify with Castile.", population: 1_500_000 }],
+    ["Kingdom of Castile", { continent: "Iberia", noFlag: true, note: "Kingdom of Castile in 1300 — dominant Iberian Christian power; slowly reconquering from Islamic Granada.", population: 2_000_000 }],
+    ["Nasrid Granada", { continent: "Iberia", noFlag: true, note: "Emirate of Granada (Nasrid dynasty) in 1300 — last Islamic state in Iberia; would fall to Castile in 1492.", population: 500_000 }],
+    ["Ilkhanate (Persia)", { continent: "Western Asia", noFlag: true, note: "Ilkhanate in Persia — Mongol khanate founded by Hulagu Khan; would fall in early 1300s.", population: 8_000_000 }],
+    ["Chagatai Khanate", { continent: "Central Asia", noFlag: true, note: "Chagatai Khanate in Central Asia — Mongol khanate controlling the Silk Road; gradually fragmenting.", population: 5_000_000 }],
+    ["Golden Horde", { continent: "Eastern Europe / Western Asia", noFlag: true, note: "Golden Horde in southern Russia — Mongol khanate that dominated the steppes and Eastern Europe.", population: 10_000_000 }],
+    ["Timurid Empire (emerging)", { continent: "Central Asia", noFlag: true, note: "Timurid Empire (Timur's empire, founded 1369) — emerging Central Asian power challenging the established khanates.", population: 15_000_000 }],
   ])],
 
   ["ad1500", new Map<string, PolityInfo>([
