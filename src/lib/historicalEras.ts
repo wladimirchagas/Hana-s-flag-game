@@ -2300,6 +2300,52 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Novgorod — annexed by Moscow in 1478, no longer independent
     ["Novgorod-Seversky", { continent: "Eastern Europe", note: "Principality of Novgorod-Seversky — a small Russian principality that resisted Muscovite unification.", noFlag: true, population: 100_000 }],
   ])],
+
+  // === 1600 AD (Early Modern) overrides =====================================
+  ["ad1600", new Map<string, PolityInfo>([
+    // Major Empires
+    ["Ottoman Empire", { continent: "Western Asia / Southeastern Europe / North Africa", noFlag: true, note: "Ottoman Empire at its height under the Sultanate — the longest-lived Islamic empire; controlled vast territories across three continents.", population: 30_000_000 }],
+    ["Safavid Empire", { continent: "Western Asia", noFlag: true, note: "Safavid Persia — established Shi'a Islam; rivals to the Ottomans for control of the Near East. Capital Isfahan.", population: 8_000_000 }],
+    ["Mughal Empire", { continent: "South Asia", noFlag: true, note: "Mughal Empire in India at its height — one of the richest empires of the world under Akbar and his successors. Architecture and art flourished.", population: 110_000_000 }],
+    ["Ming Dynasty", { continent: "East Asia", noFlag: true, note: "Ming Dynasty China — the last Han-led Chinese dynasty; famous for the Forbidden City and the Great Wall. Peak of Chinese power.", population: 120_000_000 }],
+    ["Qing Dynasty (Manchu)", { continent: "East Asia", noFlag: true, note: "Qing Dynasty — Jurchen (Manchu) conquest of China beginning (1644 final conquest); not yet dominant in 1600.", population: 5_000_000 }],
+    // European Powers
+    ["Spanish Empire", { continent: "Europe / Americas / Asia", noFlag: true, note: "Spanish Empire — world's leading superpower; controlled vast colonial territories including the Americas, Philippines, parts of Italy, Netherlands, and Africa.", population: 10_000_000 }],
+    ["Portuguese Empire", { continent: "Europe / Americas / Asia / Africa", noFlag: true, note: "Portuguese Empire — global trading power controlling routes from Brazil to India to Japan; world's first truly global empire.", population: 2_000_000 }],
+    ["France", { continent: "Western Europe", noFlag: true, note: "Kingdom of France under the Bourbons — major European power; became dominant after Louis XIV's reign.", population: 18_000_000 }],
+    ["England and Ireland", { continent: "Northern Europe / Western Europe", noFlag: true, note: "Kingdom of England and Ireland under the Tudors — rising naval power; colonizing North America; defeating the Spanish Armada (1588).", population: 7_000_000 }],
+    ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire — fragmented confederation of Germanic states; increasingly dominated by Austria. Peak decentralization during 30 Years War.", population: 20_000_000 }],
+    ["Tsardom of Muscovy", { continent: "Eastern Europe / Western Asia", noFlag: true, note: "Russian Tsardom under the early Romanovs — expanding across Siberia; establishing itself as a major power.", population: 12_000_000 }],
+    ["Polish-Lithuanian Commonwealth", { continent: "Eastern Europe", noFlag: true, note: "Polish-Lithuanian Commonwealth (Polish-Lithuanian Union) — major Eastern European power; elective monarchy.", population: 9_000_000 }],
+    ["Swedish Empire", { continent: "Northern Europe", noFlag: true, note: "Swedish Empire under Gustav Vasa and successors — rising power; dominating the Baltic; beginning its imperial expansion.", population: 1_500_000 }],
+    ["Dutch Republic", { continent: "Western Europe", noFlag: true, note: "Dutch Republic (United Provinces) — newly independent from Spain; becoming a major trading and naval power; Golden Age.", population: 2_000_000 }],
+    // Asian Powers
+    ["Japan (Edo period)", { continent: "East Asia", noFlag: true, note: "Japan in the Edo period — unified under the Tokugawa Shogunate (from 1603); peaceful, isolated society.", population: 30_000_000 }],
+    ["Korea (Joseon)", { continent: "East Asia", noFlag: true, note: "Joseon Dynasty Korea — Chinese-influenced Confucian society; later suffering Ming-Qing transition wars.", population: 8_000_000 }],
+    ["Vijayanagara Empire", { continent: "South Asia", noFlag: true, note: "Vijayanagara Empire of southern India — major Hindu power; resisting Islamic sultanates; already declining by 1600.", population: 15_000_000 }],
+    ["Bengal Sultanate", { continent: "South Asia", noFlag: true, note: "Bengal Sultanate — Islamic sultanate in eastern India; major trading center; conflicts with Mughal expansion.", population: 8_000_000 }],
+    ["Shan States", { continent: "Southeast Asia", noFlag: true, note: "Shan States in Burma (Myanmar) — multiple independent princely states competing with Burma proper.", population: 2_000_000 }],
+    ["Ayutthaya Kingdom", { continent: "Southeast Asia", noFlag: true, note: "Ayutthaya Kingdom in Siam (Thailand) — major Southeast Asian power; cosmopolitan trading center.", population: 4_000_000 }],
+    ["Aceh Sultanate", { continent: "Southeast Asia", noFlag: true, note: "Aceh Sultanate in Sumatra — Islamic state and trading power; rivals to the Portuguese and Dutch for control of spice trade.", population: 1_500_000 }],
+    // African Powers
+    ["Ethiopia", { continent: "East Africa", noFlag: true, note: "Ethiopian Empire — Christian kingdom; resisting Islamic expansion; maintains independence against Ottoman and Adal threats.", population: 4_000_000 }],
+    ["Mali Empire", { continent: "West Africa", noFlag: true, note: "Mali Empire (declining) — once dominant West African power; fragmented and declining by 1600; local sultanates replace it.", population: 3_000_000 }],
+    ["Songhai Empire", { continent: "West Africa", noFlag: true, note: "Songhai Empire — dominant West African power; controls the Niger valley; world's largest empire by territory in 1600.", population: 5_000_000 }],
+    ["Hausa States", { continent: "West Africa", noFlag: true, note: "Hausa States in Nigeria — confederation of city-states; major trading centers (Kano, Katsina, Zaria); Islamic sultanates.", population: 2_000_000 }],
+    ["Oyo Empire", { continent: "West Africa", noFlag: true, note: "Oyo Empire in Yorubaland — powerful West African state; cavalry-based military; peak period.", population: 5_000_000 }],
+    ["Benin Kingdom", { continent: "West Africa", noFlag: true, note: "Kingdom of Benin — West African maritime power; sophisticated court; trade with Portuguese.", population: 800_000 }],
+    ["Kongo Kingdom", { continent: "Central Africa", noFlag: true, note: "Kingdom of Kongo in Central Africa — major African state; early European contact; Portuguese colonial influence growing.", population: 3_000_000 }],
+    ["Mwenemutapa Empire", { continent: "Southeast Africa", noFlag: true, note: "Mwenemutapa Empire in Zimbabwe — major East African power; gold trade; Portuguese encroachment beginning.", population: 2_000_000 }],
+    // Americas
+    ["Inca Empire", { continent: "South America", noFlag: true, note: "Inca Empire — largest pre-Columbian state; already conquered by Spanish (conquest complete 1572) but still organizationally intact.", population: 12_000_000 }],
+    ["Aztec Empire", { continent: "Mesoamerica", noFlag: true, note: "Aztec Empire (already conquered 1521) — still surviving as organizations and cultural remnants; Spanish colonial rule.", population: 3_000_000 }],
+    ["Maya states", { continent: "Mesoamerica", noFlag: true, note: "Maya city-states in Yucatán — independent kingdoms still resisting Spanish conquest; organized societies.", population: 2_000_000 }],
+    // Minor European States
+    ["Venice", { continent: "Italy", noFlag: true, note: "Republic of Venice — declining maritime power; still wealthy from Eastern trade but Portuguese competition undermining.", population: 600_000 }],
+    ["Papal States", { continent: "Italy", noFlag: true, note: "Papal States (Vatican territories) — small Italian states ruled by the Pope; threatened by larger powers.", population: 800_000 }],
+    ["Tuscany (Florence)", { continent: "Italy", noFlag: true, note: "Grand Duchy of Tuscany (Florence) — Italian state; independent but increasingly overshadowed by larger powers.", population: 600_000 }],
+  ])],
+
   ["ad1700", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon France under Louis XIV. White royal banner with fleur-de-lis — the tricolour wasn't adopted until 1790.", population: 21_500_000 }],
     ["Spain", { flag: "historical-flags/spain-burgundy.png", continent: "Iberia", note: "Spain at the start of the War of Spanish Succession — still flying the Cross of Burgundy as it had since 1506. The Bourbon white royal flag would come in 1701, the modern red-yellow-red in 1785.", population: 8_000_000 }],
