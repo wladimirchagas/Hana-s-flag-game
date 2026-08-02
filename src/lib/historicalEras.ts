@@ -1780,7 +1780,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Egypt in 1960 = United Arab Republic (Egypt + Syria, 1958–1971).
     // Red-white-black with 2 green stars. Visually similar to today's
     // flag but with different central emblem. Without curated PNG, no flag.
-    ["Egypt", { continent: "North Africa", note: "United Arab Republic — Nasser's union of Egypt + Syria (1958–1971). Red-white-black with 2 green stars, not today's eagle.", population: 27_000_000, noFlag: true }],
+    ["Egypt", { flag: "historical-flags/uae-1960.svg", continent: "North Africa", note: "United Arab Republic — Nasser's union of Egypt + Syria (1958–1971). The red-white-black tricolour with two green stars (representing the two member states) flew from 1958 until the union dissolved in 1971.", population: 27_000_000 }],
     // Algeria in 1960 still French (independence 1962).
     ["Algeria", { continent: "North Africa", note: "Still legally part of France — bitter independence war (1954–1962) was raging. The French tricolour was the official flag.", modernName: "France", population: 11_000_000 }],
     // Yemen in 1960 — Mutawakkilite Kingdom (North) until the 1962 revolution + Aden Protectorate (South).
