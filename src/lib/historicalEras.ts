@@ -2263,6 +2263,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Pagan Empire", { continent: "Southeast Asia", noFlag: true, note: "Pagan Empire of Burma — height of classical Burmese civilization; built thousands of temples.", population: 2_500_000 }],
     ["Sukhothai", { continent: "Southeast Asia", noFlag: true, note: "Sukhothai Kingdom of Thailand — height of early Thai state; culturally innovative period.", population: 800_000 }],
     ["Kamakura Shogunate", { continent: "East Asia", noFlag: true, note: "Kamakura Shogunate Japan — samurai military government; Minamoto clan dominated.", population: 6_000_000 }],
+    ["Mali Empire", { continent: "West Africa", noFlag: true, note: "Mali Empire — powerful Mandinka state consolidating control over West African gold trade; height of Mali civilization.", population: 2_000_000 }],
   ])],
 
   // === 1300 (High/Late Medieval) overrides ==================================
@@ -3163,6 +3164,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // The revolutionary Philippine flag adopted in 1898 was superseded by U.S. governance; independence and the modern flag came in 1946.
     ["Philippines", { flag: "historical-flags/us-48star.svg", continent: "Southeast Asia", note: "Philippine Islands, U.S. territory — administered by the United States following the 1898 revolution and Spanish-American War. The U.S. 48-star flag flew over the territory until independence in 1946.", population: 9_000_000 }],
     ["Brazil", { modernName: "Brazil", continent: "South America", note: "United States of Brazil — the republican flag adopted in 1889 with stars representing states. The design evolved as states joined the federation.", population: 23_000_000 }],
+    ["Serbia", { modernName: "Serbia", continent: "Europe", note: "Kingdom of Serbia — Balkan state emerging as major regional power; joined Balkan Wars in 1912–1913 against Ottoman Empire. The white-blue-red tricolour is Serbia's historical flag.", population: 2_900_000 }],
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
@@ -3378,6 +3380,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Hungary", { noFlag: true, continent: "Central Europe", note: "Hungarian People's Republic — communist satellite state under Soviet control since 1948. No distinct national flag from the Soviet-dominated regime.", population: 10_000_000 }],
     ["Albania", { noFlag: true, continent: "Europe", note: "People's Republic of Albania — communist state under Enver Hoxha's rule, aligned with Yugoslavia until 1961. Standardised communist flag not widely recognised internationally.", population: 1_600_000 }],
     ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 70_000_000 }],
+    ["Greece", { modernName: "Greece", continent: "Europe", note: "Kingdom of Greece — independent Balkan state, member of NATO since 1952. The blue-and-white cross flag with nine stripes has been the national flag since 1828.", population: 8_500_000 }],
   ])],
 
   ["ad1994", new Map<string, PolityInfo>([
