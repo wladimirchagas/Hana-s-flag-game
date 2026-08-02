@@ -1184,6 +1184,11 @@ export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
   ["Denmark-Norway", "Denmark"], // Dannebrog has been Denmark's flag since the 14th c.
   ["Mongolia", "Mongolia"],
   ["Japan", "Japan"], // 1700 Tokugawa used various banners but the Hinomaru is older than most
+  // Persia — pre-1933 name for Iran. Qajar dynasty used the Lion and Sun banner
+  // from at least the 18th century; the modern Islamic Republic flag came only in 1980.
+  // For eras where "Persia" appears but no era-specific override exists, route to
+  // Iran's flag (Lion and Sun is closer than the modern green-white-red).
+  ["Persia", "Iran"],
   // Misc — only modern names or near-equivalents that genuinely match today.
   // Hainan in pre-modern eras was Qing/Ming Chinese — no flag in modern
   // sense. For 1914+ era it appears subsumed into China. Drop alias.
@@ -1608,6 +1613,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Siam in 1914 = Rattanakosin Kingdom, still using the red elephant flag.
     // The modern Thai tricolour wasn't adopted until 1917.
     ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam — the red-field white elephant flag was in use in 1914; the modern Thai tricolour was adopted in 1917.", population: 8_000_000 }],
+    // Afghanistan in 1914 — independent under Habibullah Khan (1901–1919).
+    ["Afghanistan", { flag: "historical-flags/afghanistan-1901.svg", continent: "Central Asia", note: "Emirate of Afghanistan under Habibullah Khan. The black-red-green tricolour was standardised as the national flag in 1901 and remained until 1919.", population: 5_000_000 }],
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
@@ -1618,6 +1625,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Ethiopian Empire under Empress Zewditu — still independent, flying Menelik II's green-yellow-red with the Lion of Judah.", population: 9_500_000 }],
     ["Mongolia", { flag: "historical-flags/mongolia-1921.svg", continent: "East Asia", note: "Mongolian People's Republic (1921–1992) — established after the withdrawal of Chinese warlord forces, with the red field and golden Soyombo emblem.", population: 850_000 }],
     ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet under the Lhasa government (1913–1951), after the withdrawal of Chinese forces following the 1911 revolution. The snow lions and sun-with-rays flag represented the Tibetan administration.", population: 1_200_000 }],
+    ["Afghanistan", { flag: "historical-flags/afghanistan-1919.svg", continent: "Central Asia", note: "Kingdom of Afghanistan under King Amanullah Khan (1919–1929), who declared independence from British influence on 8 August 1919. The black-red-green tricolour was the national flag from 1919 onwards.", population: 6_000_000 }],
+    ["Hejaz", { flag: "historical-flags/hejaz-1920.svg", continent: "Western Asia", note: "Kingdom of Hejaz (1916–1925) — Islamic kingdom containing the holy cities Mecca and Medina. Flew the green flag with a gold star and crescent. Absorbed into Saudi Arabia in 1925.", population: 400_000 }],
+    ["Iraq", { flag: "historical-flags/iraq-1921.svg", continent: "Western Asia", note: "Iraq under British League of Nations Mandate (1920–1932). The flag shows the red-white-black tricolour which Iraq would retain as its kingdom flag through 1959.", population: 2_800_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — German East Africa until the war, now a British League of Nations mandate; the Tanzanian flag dates from 1964.", population: 4_100_000 }],
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony, proclaimed in 1920 out of the East Africa Protectorate; the Kenyan flag came with independence in 1963.", population: 2_900_000 }],
     ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule.", population: 3_100_000 }],
@@ -1660,6 +1670,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Egypt", { flag: "historical-flags/egypt-kingdom.svg", continent: "North Africa", note: "Kingdom of Egypt (1922–1952) — the green field with white crescent and three stars flew until the 1952 revolution that led to the modern red-white-black flag.", population: 16_000_000 }],
     ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red field with golden Soyombo (the flame/sun emblem with the three prongs) represented the Mongolian state from the 1920s through 1992.", population: 900_000 }],
     ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet in 1938 — the Tibetan snow lions and sun-with-rays flag on the blue field represented the Tibetan administration; Chinese occupation would not solidify until after 1951.", population: 1_400_000 }],
+    ["Afghanistan", { flag: "historical-flags/afghanistan-1929.svg", continent: "Central Asia", note: "Kingdom of Afghanistan under King Mohammad Zahir Shah (1933–1973), the last Afghan king. The black-red-green tricolour was the national flag throughout his reign until the 1973 coup.", population: 8_500_000 }],
+    ["Hejaz", { flag: "historical-flags/hejaz-1920.svg", continent: "Western Asia", note: "Kingdom of Hejaz — the historical green flag with golden star and crescent represents Hejaz as it existed until its absorption into Saudi Arabia in 1925. The GeoJSON includes it for comparative historical reference.", population: 350_000 }],
+    ["Iraq", { flag: "historical-flags/iraq-1924.svg", continent: "Western Asia", note: "Kingdom of Iraq (1932–1958) — independent nation after the British mandate ended. The red-white-black tricolour with stars was the national flag from 1924 through the 1958 revolution.", population: 3_200_000 }],
     ["Italy", { noFlag: true, continent: "Italy", note: "Fascist Italy — the tricolour still carried the Savoy arms, which were removed when the republic replaced the monarchy in 1946.", population: 43_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
   ])],
@@ -1681,6 +1694,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Egypt", { flag: "historical-flags/egypt-kingdom.svg", continent: "North Africa", note: "Kingdom of Egypt under King Farouk — the green field with white crescent and three stars; replaced after the 1952 revolution by the modern red-white-black flag.", population: 19_000_000 }],
     ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red flag with the golden Soyombo emblem represented Mongolia through 1992.", population: 1_000_000 }],
     ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet in 1945 — the snow lions and sun-with-rays flag on the blue field; Chinese occupation would follow 1951.", population: 1_500_000 }],
+    ["Afghanistan", { flag: "historical-flags/afghanistan-1929.svg", continent: "Central Asia", note: "Kingdom of Afghanistan under King Mohammad Zahir Shah during WWII — neutral and independent. The black-red-green flag flew throughout his reign (1933–1973).", population: 9_000_000 }],
+    ["Iraq", { flag: "historical-flags/iraq-1924.svg", continent: "Western Asia", note: "Kingdom of Iraq at the end of WWII — still independent under the Hashemite dynasty. The red-white-black tricolour was the national flag until the 1958 revolution.", population: 4_000_000 }],
     ["Italy", { noFlag: true, continent: "Italy", note: "Italy at the war's end, between the monarchy's fall and the 1946 republic that removed the Savoy arms from the tricolour.", population: 45_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     // China in 1945 — Republic of China (KMT) flag, blue-sky/white-sun
@@ -1746,6 +1761,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Sudan", { modernName: "Sudan", continent: "Northeast Africa", note: "Republic of the Sudan, independent from the Anglo-Egyptian condominium in 1956.", population: 11_200_000 }],
     ["Iran", { noFlag: true, continent: "Western Asia", note: "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980.", population: 21_000_000 }],
     ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia — the green flag with white shahada and sabre, standardised in 1938; it was revised in 1973 to the current design.", population: 4_000_000 }],
+    ["Afghanistan", { flag: "historical-flags/afghanistan-1929.svg", continent: "Central Asia", note: "Kingdom of Afghanistan under King Mohammad Zahir Shah — independent, non-aligned, and modernizing. The black-red-green flag was the national flag throughout his reign until 1973.", population: 11_000_000 }],
+    ["Iraq", { flag: "historical-flags/iraq-1924.svg", continent: "Western Asia", note: "Iraq in 1960 — two years after the 1958 revolution that overthrew the Hashemite kingdom and proclaimed the Iraqi Republic. The old royal flag represents the kingdom that had just ended.", population: 6_200_000 }],
     ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red flag with golden Soyombo emblem, used until the flag change in 1992.", population: 1_200_000 }],
     ["Tibet", { flag: "historical-flags/tibet.svg", continent: "East Asia", note: "Tibet in 1960 — the snow lions and sun-with-rays flag represented the Tibetan cultural identity, though Chinese control was consolidating after 1951.", population: 1_800_000 }],
     // Burma in 1960 was the Union of Burma — still on the 1948 flag.
