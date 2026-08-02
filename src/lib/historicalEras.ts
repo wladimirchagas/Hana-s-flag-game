@@ -2038,6 +2038,20 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // 661 years before Palaiologos. No surviving standardised flag for this era.
   ["ad600", new Map<string, PolityInfo>([
     ["Eastern Roman Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 600 AD — Heraclian dynasty, capital Constantinople. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 661 years too late.", population: 26_000_000 }],
+    // Western Europe 600 AD
+    ["Frankish kingdoms", { continent: "Western Europe", noFlag: true, note: "Merovingian Frankish kingdoms — divided among the Merovingian kings; Charlemagne's Carolingians were still centuries away.", population: 5_000_000 }],
+    ["Visigothic Spain", { continent: "Iberia", noFlag: true, note: "Visigothic Kingdom of Spain — 6th century, the realm of the Liuvigild dynasty. Conquered by Islamic forces in 711.", population: 4_000_000 }],
+    ["Ostrogothic Kingdom", { continent: "Southern Europe", noFlag: true, note: "Ostrogothic Kingdom of Italy — under Theodoric and successors; would be conquered by the Eastern Roman Empire in the Gothic War (535–554).", population: 3_000_000 }],
+    // Middle East 600 AD
+    ["Sasanian Empire", { continent: "Western Asia", noFlag: true, note: "Sasanian (Sassanid) Empire — last Persian empire before Arab conquest; at its 600 AD height under Khosrau II.", population: 50_000_000 }],
+    ["Arabian Peninsula", { continent: "Arabia", noFlag: true, note: "Pre-Islamic Arabian Peninsula — a century before Prophet Muhammad. Divided among various Arab tribes and kingdoms.", population: 8_000_000 }],
+    // India 600 AD
+    ["Chalukya Empire", { continent: "South Asia", noFlag: true, note: "Chalukya Empire of the Deccan — major power in 6th century India under Pulakeshin II.", population: 15_000_000 }],
+    ["Harsha Empire", { continent: "South Asia", noFlag: true, note: "Empire of Harsha — the last great pre-Islamic Indian empire; capital Kanauj. Dominated 606–647 AD.", population: 25_000_000 }],
+    ["Pallava Kingdom", { continent: "South Asia", noFlag: true, note: "Pallava Empire of southern India — rivals to the Chalukyas; built the temples of Mahabalipuram.", population: 10_000_000 }],
+    // China 600 AD
+    ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — founded 618 AD, but by 600 AD the Sui dynasty ruled. The Tang would become one of history's greatest empires.", population: 50_000_000 }],
+    ["Sui Dynasty", { continent: "East Asia", noFlag: true, note: "Sui dynasty China (589–618) — brief period between the Southern and Northern Dynasties and the Tang.", population: 45_000_000 }],
   ])],
 
   // === 800 AD overrides =====================================================
@@ -2049,6 +2063,21 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ["ad800", new Map<string, PolityInfo>([
     ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 800 AD — Macedonian dynasty era. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 461 years too late.", population: 20_000_000 }],
     ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire — Carolingian/Ottonian era, 800–962 AD. The post-1400 imperial banner (our only HRE PNG) is 400+ years too late for this dynasty.", population: 20_000_000 }],
+    // Western Europe 800 AD — age of Charlemagne
+    ["Frankish Empire", { continent: "Western Europe", noFlag: true, note: "Carolingian Empire of Charlemagne — crowned Holy Roman Emperor in 800 AD. No standardised flag.", population: 8_000_000 }],
+    ["Abbasid Caliphate", { continent: "Western Asia", noFlag: true, note: "Abbasid Caliphate — height of Islamic empire; capital Baghdad, founded 762 AD. No national flag in modern sense.", population: 50_000_000 }],
+    ["Umayyad Caliphate", { continent: "Western Asia", noFlag: true, note: "Umayyad Caliphate — ruling the western Islamic world; rival to the Abbasids after the Abbasid Revolution (750 AD).", population: 15_000_000 }],
+    // India 800 AD
+    ["Gurjara-Pratihara", { continent: "South Asia", noFlag: true, note: "Gurjara-Pratihara Empire of northern India — one of the three great powers battling for supremacy in the Tripartite Struggle.", population: 40_000_000 }],
+    ["Rashtrakuta Empire", { continent: "South Asia", noFlag: true, note: "Rashtrakuta Empire of the Deccan — at its 8th-9th century height, rivals to the Pratiharas.", population: 35_000_000 }],
+    ["Pallava Kingdom", { continent: "South Asia", noFlag: true, note: "Late Pallava Kingdom of South India — weakening by 800 AD before the rise of the Cholas.", population: 12_000_000 }],
+    // Southeast Asia 800 AD
+    ["Sailendra Empire", { continent: "Southeast Asia", noFlag: true, note: "Sailendra maritime empire — built Borobudur temple in Java. Dominated Southeast Asian trade.", population: 5_000_000 }],
+    ["Khmer Empire", { continent: "Southeast Asia", noFlag: true, note: "Angkor period Khmer Empire — capital Angkor; builders of the great temples (Angkor Wat built later, 12th century).", population: 2_000_000 }],
+    // China 800 AD
+    ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — height of the golden age under various emperors; thriving international trade along the Silk Road.", population: 50_000_000 }],
+    // Americas 800 AD
+    ["Maya civilization", { continent: "Mesoamerica", noFlag: true, note: "Maya civilization at height of the Classic period (ended c. 900 AD) — great city-states like Tikal and Copan.", population: 3_000_000 }],
   ])],
 
   // === 1300 (High/Late Medieval) overrides ==================================
@@ -2347,7 +2376,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing China during the Boxer Rebellion. The rectangular Yellow Dragon banner had been the national flag since 1889.", population: 400_000_000 }],
     // The dataset keeps the label "Kingdom of Brazil" for 1900, but Brazil had been
     // a republic since 1889 — the 21-star flag was adopted then and used until 1960.
-    ["Kingdom of Brazil", { noFlag: true, continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag was adopted. The multi-star republican flag design varied as states were added; accurate period-correct flag source not available.", population: 17_400_000 }],
+    ["Kingdom of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag with stars representing states was adopted. The design varied as states joined the federation.", population: 17_400_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt under British occupation since 1882, still nominally Ottoman.", population: 10_000_000 }],
     ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent.", noFlag: true, population: 11_000_000 }],
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
@@ -2409,7 +2438,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam — the red-field white elephant flag was in use in 1914; the modern Thai tricolour was adopted in 1917.", population: 8_000_000 }],
     // Afghanistan in 1914 — independent under Habibullah Khan (1901–1919).
     ["Afghanistan", { flag: "historical-flags/afghanistan-1901.svg", continent: "Central Asia", note: "Emirate of Afghanistan under Habibullah Khan. The black-red-green tricolour was standardised as the national flag in 1901 and remained until 1919.", population: 5_000_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 23_000_000 }],
+    // Philippines in 1914 — U.S. territory (American-Philippine War ended 1902).
+    // The revolutionary Philippine flag adopted in 1898 was superseded by U.S. governance; independence and the modern flag came in 1946.
+    ["Philippines", { flag: "historical-flags/us-48star.svg", continent: "Southeast Asia", note: "Philippine Islands, U.S. territory — administered by the United States following the 1898 revolution and Spanish-American War. The U.S. 48-star flag flew over the territory until independence in 1946.", population: 9_000_000 }],
+    ["Brazil", { modernName: "Brazil", continent: "South America", note: "United States of Brazil — the republican flag adopted in 1889 with stars representing states. The design evolved as states joined the federation.", population: 23_000_000 }],
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
