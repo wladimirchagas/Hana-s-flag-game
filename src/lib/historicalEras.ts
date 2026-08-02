@@ -1550,8 +1550,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // it was the triangular naval version).
     ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing China during the Boxer Rebellion. The rectangular Yellow Dragon banner had been the national flag since 1889.", population: 400_000_000 }],
     // The dataset keeps the label "Kingdom of Brazil" for 1900, but Brazil had been
-    // a republic since 1889 — and the republican flag it adopted then is today's.
-    ["Kingdom of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag adopted that year is the one Brazil flies today, despite the dataset's older label.", population: 17_400_000 }],
+    // a republic since 1889 — the 21-star flag was adopted then and used until 1960.
+    ["Kingdom of Brazil", { flag: "historical-flags/brazil-1889.svg", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican 21-star flag was adopted that year.", population: 17_400_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt under British occupation since 1882, still nominally Ottoman.", population: 10_000_000 }],
     ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent.", noFlag: true, population: 11_000_000 }],
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
@@ -1613,6 +1613,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam — the red-field white elephant flag was in use in 1914; the modern Thai tricolour was adopted in 1917.", population: 8_000_000 }],
     // Afghanistan in 1914 — independent under Habibullah Khan (1901–1919).
     ["Afghanistan", { flag: "historical-flags/afghanistan-1901.svg", continent: "Central Asia", note: "Emirate of Afghanistan under Habibullah Khan. The black-red-green tricolour was standardised as the national flag in 1901 and remained until 1919.", population: 5_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", continent: "South America", note: "United States of Brazil — the 21-star republican flag was adopted in 1889 and used until 1960 when Brasília was added as a state (22 stars).", population: 23_000_000 }],
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
@@ -1644,6 +1645,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Philippines Commonwealth (1935–1946) — a U.S. territory with increasing self-governance under the Commonwealth Constitution of 1935. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 10_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", continent: "South America", note: "United States of Brazil — the 21-star republican flag adopted in 1889 was still in use in 1920.", population: 30_600_000 }],
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
@@ -1680,6 +1682,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution.", population: 4_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Commonwealth of the Philippines, a U.S. territory with internal self-governance under the 1935 Commonwealth Constitution. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 16_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", continent: "South America", note: "United States of Brazil — the 21-star republican flag was in use in 1938.", population: 39_000_000 }],
   ])],
 
   // === 1945 (end of WWII) overrides =========================================
@@ -1744,6 +1747,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // French Indochina in 1945: Annam, Tonkin still referenced as French;
     // Cochin China alias already routes to France. No extra overrides needed.
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, just out of the Japanese occupation and American reconstruction. The white sun and three stars flag has been in use since 1898.", population: 19_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", continent: "South America", note: "United States of Brazil — the 21-star republican flag was still in use in 1945.", population: 45_000_000 }],
   ])],
 
   // === 1960 (Cold War snapshot) overrides ==================================
@@ -1797,6 +1801,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Sri Lanka in 1960 = Dominion of Ceylon. Use the Ceylon flag.
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was the Dominion of Ceylon in 1960 (it became the Republic of Sri Lanka only in 1972). The Dominion's lion flag flew from 1948 to 1972.", population: 9_500_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, with 14 years of post-independence nation-building underway. The white sun and three stars flag has been in use since 1898.", population: 27_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1960.svg", continent: "South America", note: "United States of Brazil — Brasília became the capital in 1960, and was added as a federal territory/state, bringing the star count to 22.", population: 70_000_000 }],
   ])],
 
   ["ad1994", new Map<string, PolityInfo>([
