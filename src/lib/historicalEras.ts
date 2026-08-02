@@ -1642,7 +1642,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India — the Raj still covered today's India, Pakistan, Bangladesh and Burma; the tricolour was adopted at independence in 1947.", population: 306_000_000 }],
     ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria, administered as departments of France; the independence flag dates from 1962.", population: 5_800_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a British dominion flying the Union Jack and Red Ensign; the orange-white-blue came in 1928 and today's flag only in 1994.", population: 6_900_000 }],
-    ["Iran", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Persia (Iran after 1933) — the Lion and Sun banner, official national flag from Qajar through Pahlavi eras, replaced after the 1979 revolution.", population: 11_000_000 }],
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Persia under the last Qajar shahs — the Lion and Sun banner, quite unlike the flag of the Islamic Republic (1980).", population: 11_000_000 }],
     ["Italy", { noFlag: true, continent: "Italy", note: "Kingdom of Italy — its green-white-red tricolour carried the Savoy arms until the monarchy fell in 1946.", population: 37_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
@@ -1667,7 +1667,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India on the eve of the war — still one Raj, ten years from partition.", population: 377_000_000 }],
     ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria, administered as departments of France.", population: 7_200_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a dominion flying British flags alongside the 1928 orange-white-blue; today's flag dates from 1994.", population: 9_600_000 }],
-    ["Iran", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Iran (Persia renamed 1933) under Reza Shah Pahlavi — the Lion and Sun flag, official national flag from 1933 to 1979, replaced after the Islamic Revolution.", population: 15_000_000 }],
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Iran under Reza Shah Pahlavi, newly renamed from Persia — the Lion and Sun flag, replaced after the 1979 revolution.", population: 15_000_000 }],
     ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia (unified 1932) — the green flag with the white shahada text and curved sabre represents Islamic sovereignty. The design was standardised in 1938, though it was later revised in 1973.", population: 3_000_000 }],
     ["Egypt", { flag: "historical-flags/egypt-kingdom.svg", continent: "North Africa", note: "Kingdom of Egypt (1922–1952) — the green field with white crescent and three stars flew until the 1952 revolution that led to the modern red-white-black flag.", population: 16_000_000 }],
     ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red field with golden Soyombo (the flame/sun emblem with the three prongs) represented the Mongolian state from the 1920s through 1992.", population: 900_000 }],
@@ -1693,7 +1693,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Mauritania", { modernName: "France", continent: "West Africa", note: "French Mauritania, part of French West Africa; independence came in 1960.", population: 500_000 }],
     ["Namibia", { modernName: "United Kingdom", continent: "Southern Africa", note: "South West Africa — German until 1915, then governed by South Africa under a League mandate. It became Namibia only in 1990.", population: 350_000 }],
     ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — independence, and a Sudanese flag, came in 1956.", population: 7_500_000 }],
-    ["Iran", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Iran under Mohammad Reza Shah Pahlavi — occupied by Britain and the USSR during the war. The Lion and Sun flag (1933–1979) was the national symbol.", population: 15_500_000 }],
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Iran under Mohammad Reza Shah, occupied by Britain and the USSR during the war — the Lion and Sun flag flew until 1979.", population: 15_500_000 }],
     ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia — the green flag with white shahada and sabre, standardised in 1938 and used through 1973.", population: 3_500_000 }],
     ["Egypt", { flag: "historical-flags/egypt-kingdom.svg", continent: "North Africa", note: "Kingdom of Egypt under King Farouk — the green field with white crescent and three stars; replaced after the 1952 revolution by the modern red-white-black flag.", population: 19_000_000 }],
     ["Mongolia", { flag: "historical-flags/mongolia-1945.svg", continent: "East Asia", note: "Mongolian People's Republic — the red flag with the golden Soyombo emblem represented Mongolia through 1992.", population: 1_000_000 }],
@@ -1712,6 +1712,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Japanese withdrawal. Independence and the 1948 flag both came in 1948.
     // Showing the 1948 flag for 1945 is a 3-year anachronism; use UK flag.
     ["Burma", { modernName: "United Kingdom", continent: "Southeast Asia", note: "Burma in 1945 — just liberated from Japanese occupation, under British South East Asia Command (SEAC) military administration. Independence and the Union of Burma flag came in 1948.", population: 17_500_000 }],
+    // Egypt 1945 — Kingdom of Egypt (1922–1953). Green field with white
+    // crescent + 3 stars (a colour-swap of the Khedive flag). We don't
+    // have a curated PNG; show no flag rather than the wrong modern one.
+    ["Egypt", { continent: "North Africa", note: "Kingdom of Egypt under King Farouk. Green field with white crescent and 3 stars — the modern red-white-black flag came after the 1952 revolution.", population: 19_000_000, noFlag: true }],
     // Yemen 1945 — Mutawakkilite Kingdom (1918–1962). Flag was red with white sword + 5 stars.
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars was the national flag from 1918 to 1962.", population: 4_700_000 }],
     // Korea 1945 — Allied occupation zones. No national flag yet (the
@@ -1743,8 +1747,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan (Formosa) reverted to Republic of China (ROC) control in October 1945 after Japan's surrender — the ROC's blue-sky/white-sun flag flew.", population: 6_000_000 }],
     // French Indochina in 1945: Annam, Tonkin still referenced as French;
     // Cochin China alias already routes to France. No extra overrides needed.
-    // Philippines — registry has Spanish colonial flag; use modern
-    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946 (declared 1945, recognized 1946). The white sun and three stars flag has been in use since 1898.", population: 19_000_000 }],
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, just out of the Japanese occupation and American reconstruction. The white sun and three stars flag has been in use since 1898.", population: 19_000_000 }],
   ])],
 
   // === 1960 (Cold War snapshot) overrides ==================================
@@ -1759,7 +1762,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["India", { modernName: "India", continent: "South Asia", note: "Republic of India — independent since 1947; the Ashoka-chakra tricolour was adopted that year.", population: 450_000_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa in its last year before becoming a republic — flying the 1928 orange-white-blue; today's flag dates from 1994.", population: 17_400_000 }],
     ["Sudan", { modernName: "Sudan", continent: "Northeast Africa", note: "Republic of the Sudan, independent from the Anglo-Egyptian condominium in 1956.", population: 11_200_000 }],
-    ["Iran", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980.", population: 21_000_000 }],
+    ["Iran", { noFlag: true, continent: "Western Asia", note: "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980.", population: 21_000_000 }],
     ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia — the green flag with white shahada and sabre, standardised in 1938; it was revised in 1973 to the current design.", population: 4_000_000 }],
     ["Afghanistan", { flag: "historical-flags/afghanistan-1929.svg", continent: "Central Asia", note: "Kingdom of Afghanistan under King Mohammad Zahir Shah — independent, non-aligned, and modernizing. The black-red-green flag was the national flag throughout his reign until 1973.", population: 11_000_000 }],
     ["Iraq", { flag: "historical-flags/iraq-1924.svg", continent: "Western Asia", note: "Iraq in 1960 — two years after the 1958 revolution that overthrew the Hashemite kingdom and proclaimed the Iraqi Republic. The old royal flag represents the kingdom that had just ended.", population: 6_200_000 }],
@@ -1797,33 +1800,23 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Vietnam", { modernName: "Vietnam", continent: "Southeast Asia", note: "Vietnam in 1960 was divided: the Democratic Republic of Vietnam (North, communist) and the Republic of Vietnam (South, US-backed). The modern red-star flag represents the North/reunified Vietnam.", population: 30_000_000 }],
     // Sri Lanka in 1960 = Dominion of Ceylon. Use the Ceylon flag.
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was the Dominion of Ceylon in 1960 (it became the Republic of Sri Lanka only in 1972). The Dominion's lion flag flew from 1948 to 1972.", population: 9_500_000 }],
-    // Philippines — registry has Spanish colonial flag; use modern
-    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946. The white sun and three stars flag has been in use since 1898.", population: 27_000_000 }],
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, with 14 years of post-independence nation-building underway. The white sun and three stars flag has been in use since 1898.", population: 27_000_000 }],
   ])],
 
-  // === 1994 (After the Cold War) — post-USSR, post-Yugoslavia, post-Czechoslovakia ===
-  // This is essentially the modern world. Most entries fall back to modernName or auto-fallback.
-  // Add overrides ONLY for:
-  // 1. Naming differences (Myanmar/Burma, Côte d'Ivoire/Ivory Coast, etc.)
-  // 2. Countries not in global registry
-  // 3. Entities that need explicit continent/population for 1994
   ["ad1994", new Map<string, PolityInfo>([
-    ["Byelarus", "Belarus"], // Pre-1991 registry name; use modern Belarus
-    ["Myanmar", { modernName: "Myanmar", continent: "Southeast Asia", note: "Myanmar (formerly Burma) — renamed officially in 1989. The modern flag has been in use since 1974.", population: 47_000_000 }],
-    ["Ivory Coast", { modernName: "Ivory Coast", continent: "West Africa", note: "Côte d'Ivoire — the modern flag has been in use since independence in 1960.", population: 15_000_000 }],
-    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — the white sun and three stars flag has been in use since 1898.", population: 68_000_000 }],
-    ["Czech Republic", { modernName: "Czech Republic", continent: "Central Europe", note: "Czech Republic (Czechia) — independent since the dissolution of Czechoslovakia in 1993. The white-red bicolour has been in use since 1920.", population: 10_300_000 }],
-    ["Slovakia", { modernName: "Slovakia", continent: "Central Europe", note: "Slovakia — independent since the dissolution of Czechoslovakia in 1993. The white-blue-red tricolour was adopted in 1990.", population: 5_300_000 }],
-    ["Bosnia and Herzegovina", { modernName: "Bosnia and Herzegovina", continent: "Southern Europe", note: "Bosnia and Herzegovina — declared independence in 1992, recognized in 1994. The modern flag with white stars was adopted in 1998.", population: 3_500_000, noFlag: true }],
-    ["Croatia", { modernName: "Croatia", continent: "Southern Europe", note: "Croatia — declared independence in 1991, internationally recognized in 1992. The flag with the coat of arms has been in use since 1990.", population: 4_700_000 }],
-    ["Slovenia", { modernName: "Slovenia", continent: "Central Europe", note: "Slovenia — declared independence in 1991, recognized in 1992. The white-blue-red tricolour with coat of arms was adopted in 1991.", population: 2_000_000 }],
-    ["Montenegro", { noFlag: true, continent: "Southern Europe", note: "Montenegro — still a constituent part of the Federal Republic of Yugoslavia in 1994. Flag adopted later in 2006.", population: 600_000 }],
-    ["Serbia", { noFlag: true, continent: "Southern Europe", note: "Serbia — core state of the rump Federal Republic of Yugoslavia (Serbia and Montenegro, 1992–2006). The modern flag adopted in 2010.", population: 10_000_000 }],
-    ["Macedonia", { modernName: "North Macedonia", continent: "Southern Europe", note: "Macedonia (now North Macedonia) — declared independence in 1991, recognized in 1993. The modern flag with the Star of Vergina was adopted in 1995.", population: 2_000_000 }],
-    ["Rapa Nui", { noFlag: true, continent: "Oceania", note: "Rapa Nui (Easter Island) — territory of Chile, no separate flag.", population: 3_000 }],
-    ["Montserrat", { noFlag: true, continent: "Caribbean", note: "Montserrat — British Overseas Territory; no separate flag.", population: 11_000 }],
-    ["Wallis and Futuna Islands", { noFlag: true, continent: "Oceania", note: "Wallis and Futuna — French overseas collectivity; no separate flag.", population: 15_000 }],
-    ["Turkish Cypriot-administered area", { noFlag: true, continent: "Western Asia", note: "Turkish-administered area of Cyprus — the 'Turkish Republic of Northern Cyprus' (recognized only by Turkey) is disputed; no widely-recognized flag.", population: 200_000 }],
+    ["Belarus", { modernName: "Belarus", continent: "Eastern Europe", note: "Republic of Belarus — renamed from Byelarus at independence in 1991. The white-red-white flag was restored; the 1995–present red-green flag came later.", population: 10_000_000 }],
+    ["Myanmar", { modernName: "Myanmar", continent: "Southeast Asia", note: "Myanmar (Burma renamed 1989) — the yellow sun on red flag was adopted in 1974 and flew until 2021.", population: 42_000_000 }],
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — the white sun and three stars flag on blue and red has been the national flag since 1898.", population: 68_000_000 }],
+    ["Croatia", { modernName: "Croatia", continent: "Southern Europe", note: "Republic of Croatia — independent since 1991 following the breakup of Yugoslavia. The red-white-blue checkerboard with crown shield has been the national flag since independence.", population: 4_600_000 }],
+    ["Bosnia and Herzegovina", { modernName: "Bosnia and Herzegovina", continent: "Southern Europe", note: "Bosnia and Herzegovina — independent since 1992 after the Yugoslav Wars. The blue flag with yellow stars and interlocking triangles was adopted in 1998.", population: 3_600_000 }],
+    ["Serbia", { modernName: "Serbia", continent: "Southern Europe", note: "Republic of Serbia — independent since 2006 (previously part of Serbia and Montenegro). The red-white-blue tricolour with coat of arms has been the national flag.", population: 7_500_000 }],
+    ["Montenegro", { modernName: "Montenegro", continent: "Southern Europe", note: "Republic of Montenegro — independent since 2006. The red flag with gold double-headed eagle and shield has been used.", population: 600_000 }],
+    ["Slovenia", { modernName: "Slovenia", continent: "Central Europe", note: "Republic of Slovenia — independent since 1991. The white-blue-red tricolour with the national coat of arms (Mount Triglav) has been the flag since independence.", population: 2_000_000 }],
+    ["Czech Republic", { modernName: "Czech Republic", continent: "Central Europe", note: "Czech Republic — officially independent nation since 1993 after the peaceful split of Czechoslovakia. The white-red-blue flag with the silver lion and dual tails is the national emblem.", population: 10_300_000 }],
+    ["Slovakia", { modernName: "Slovakia", continent: "Central Europe", note: "Slovak Republic — independent since 1993 after the split from Czechoslovakia. The white-blue-red tricolour with the national shield (double cross with crowns) is the flag.", population: 5_400_000 }],
+    ["North Macedonia", { modernName: "North Macedonia", continent: "Southern Europe", note: "Republic of North Macedonia — independent since 1991, formerly known as the \"Republic of Macedonia\" within Yugoslavia. The red flag with the golden sun of Vergina has been the national flag.", population: 2_100_000 }],
+    ["Rapa Nui", { continent: "Oceania", note: "Easter Island (Rapa Nui) — part of Chile. The flag of Rapa Nui reflects its indigenous Polynesian heritage with the tangata manu birdman motif.", population: 4_000 }],
+    ["Montserrat", { continent: "North America", note: "Montserrat — a British Overseas Territory in the Caribbean. The flag features the heraldic harp and cross.", population: 4_000 }],
   ])],
 ]);
 
