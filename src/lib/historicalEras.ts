@@ -1645,6 +1645,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Iran", { noFlag: true, continent: "Western Asia", note: "Persia under the last Qajar shahs — the Lion and Sun banner, quite unlike the flag of the Islamic Republic (1980).", population: 11_000_000 }],
     ["Italy", { noFlag: true, continent: "Italy", note: "Kingdom of Italy — its green-white-red tricolour carried the Savoy arms until the monarchy fell in 1946.", population: 37_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
+    ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
@@ -1675,6 +1676,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Iraq", { flag: "historical-flags/iraq-1924.svg", continent: "Western Asia", note: "Kingdom of Iraq (1932–1958) — independent nation after the British mandate ended. The red-white-black tricolour with stars was the national flag from 1924 through the 1958 revolution.", population: 3_200_000 }],
     ["Italy", { noFlag: true, continent: "Italy", note: "Fascist Italy — the tricolour still carried the Savoy arms, which were removed when the republic replaced the monarchy in 1946.", population: 43_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
+    ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution.", population: 4_200_000 }],
   ])],
 
   // === 1945 (end of WWII) overrides =========================================
@@ -1712,10 +1714,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // crescent + 3 stars (a colour-swap of the Khedive flag). We don't
     // have a curated PNG; show no flag rather than the wrong modern one.
     ["Egypt", { continent: "North Africa", note: "Kingdom of Egypt under King Farouk. Green field with white crescent and 3 stars — the modern red-white-black flag came after the 1952 revolution.", population: 19_000_000, noFlag: true }],
-    // Yemen 1945 — Mutawakkilite Kingdom (1918–1962). Flag was red with
-    // white sword + 5 stars (similar to Saudi but distinct). No curated
-    // PNG — show no flag.
-    ["Yemen", { continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — red with white sword and 5 stars; not the modern Yemeni flag.", population: 4_700_000, noFlag: true }],
+    // Yemen 1945 — Mutawakkilite Kingdom (1918–1962). Flag was red with white sword + 5 stars.
+    ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars was the national flag from 1918 to 1962.", population: 4_700_000 }],
     // Korea 1945 — Allied occupation zones. No national flag yet (the
     // Taegukgi for the South was formalised in 1948; the DPRK flag also
     // in 1948).
@@ -1776,9 +1776,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Egypt", { continent: "North Africa", note: "United Arab Republic — Nasser's union of Egypt + Syria (1958–1971). Red-white-black with 2 green stars, not today's eagle.", population: 27_000_000, noFlag: true }],
     // Algeria in 1960 still French (independence 1962).
     ["Algeria", { continent: "North Africa", note: "Still legally part of France — bitter independence war (1954–1962) was raging. The French tricolour was the official flag.", modernName: "France", population: 11_000_000 }],
-    // Yemen in 1960 — Mutawakkilite Kingdom (North) + Aden Protectorate
-    // (South). Modern unified Yemen flag (1990) is anachronistic.
-    ["Yemen", { continent: "Arabia", note: "Mutawakkilite Kingdom in the north (until 1962 revolution); the south was under British rule as the Aden Protectorate. No unified Yemeni flag.", population: 5_300_000, noFlag: true }],
+    // Yemen in 1960 — Mutawakkilite Kingdom (North) until the 1962 revolution + Aden Protectorate (South).
+    ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "The Mutawakkilite Kingdom in the north (1918–1962) flew the red flag with white sword and stars; the south was under British rule as the Aden Protectorate.", population: 5_300_000 }],
     // Zaire is again the dataset's anachronistic label — in 1960 was
     // the Belgian Congo (independent in June 1960 as the Republic of
     // the Congo, then Congo-Léopoldville). Used a blue+yellow flag
