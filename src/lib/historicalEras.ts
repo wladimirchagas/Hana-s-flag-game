@@ -2780,7 +2780,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Katsina Emirate (1700s)", { noFlag: true, continent: "West Africa", note: "Katsina Emirate in 1700 — Hausa state; rival trading center on Saharan routes.", population: 400_000 }],
     ["Bornu Empire (1700s)", { noFlag: true, continent: "West / Central Africa", note: "Bornu Empire in 1700 — Still powerful; controlling Lake Chad region; continuing Islamic state.", population: 2_000_000 }],
     ["Songhai successor states", { noFlag: true, continent: "West Africa", note: "Songhai successor kingdoms in 1700 — Fragmented remnants of once-great empire; regional powers.", population: 1_500_000 }],
-    ["Mali Empire remnants", { noFlag: true, continent: "West Africa", noFlag: true, note: "Mali Kingdom in 1700 — Weakened remnant of once-great empire; regional power.", population: 500_000 }],
+    ["Mali Empire remnants", { noFlag: true, continent: "West Africa", note: "Mali Kingdom in 1700 — Weakened remnant of once-great empire; regional power.", population: 500_000 }],
     // === Central African kingdoms (1700s) ===
     ["Kingdom of Kongo (1700s)", { noFlag: true, continent: "Central Africa", note: "Kingdom of Kongo in 1700 — Still major power; Christian state; declining Portuguese influence.", population: 3_000_000 }],
     ["Kingdom of Ndongo (1700s)", { noFlag: true, continent: "Central Africa", note: "Kingdom of Ndongo in 1700 — Weakened by Portuguese wars; still independent.", population: 1_000_000 }],
