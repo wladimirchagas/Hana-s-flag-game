@@ -533,6 +533,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Xixia", { continent: "East Asia", note: "Western Xia — the Tangut kingdom of the Ordos and Gansu corridor, which held the Silk Road until Genghis Khan destroyed it in 1227.", population: 3_000_000 }],
   ["Alwa", { continent: "Northeast Africa", note: "Alodia — the southernmost of the Christian Nubian kingdoms, with its capital at Soba on the Blue Nile." }],
   ["Volga Bulgars", { continent: "Eastern Europe", note: "Volga Bulgaria — a Muslim trading state at the Volga–Kama confluence, the northern terminus of the fur and silver routes, destroyed by the Mongols in 1236." }],
+  ["Bulgar Khanate", { continent: "Eastern Europe", note: "Balkan Bulgar Khanate — the first Bulgarian state in the Balkans (679–1018), founded by Turkic-speaking Bulgars who mixed with Slavic peoples. Powerful under Simeon the Great but ultimately conquered by the Byzantine Empire." }],
   ["Ainu", { continent: "East Asia", note: "Ainu people of Hokkaido, Sakhalin and the Kurils — hunters, fishers and traders whose language is unrelated to Japanese." }],
   ["Tibeto-Burmanese", { continent: "East / South Asia", note: "Tibeto-Burman speaking peoples of the eastern Himalaya and the upper Irrawaddy, from whom the Burmese, Tibetan and Yi societies descend." }],
   ["Maize farmers", { continent: "Americas", note: "Maize-farming societies of the Americas — the crop domesticated in Mexico that spread from the Andes to the Great Lakes and underwrote every farming civilisation of the hemisphere." }],
