@@ -2347,7 +2347,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing China during the Boxer Rebellion. The rectangular Yellow Dragon banner had been the national flag since 1889.", population: 400_000_000 }],
     // The dataset keeps the label "Kingdom of Brazil" for 1900, but Brazil had been
     // a republic since 1889 — the 21-star flag was adopted then and used until 1960.
-    ["Kingdom of Brazil", { noFlag: true, continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag was adopted. The multi-star republican flag design varied as states were added; accurate period-correct flag source not available.", population: 17_400_000 }],
+    ["Kingdom of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag with stars representing states was adopted. The design varied as states joined the federation.", population: 17_400_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt under British occupation since 1882, still nominally Ottoman.", population: 10_000_000 }],
     ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent.", noFlag: true, population: 11_000_000 }],
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
@@ -2409,7 +2409,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Siam", { flag: "historical-flags/siam.png", continent: "Southeast Asia", note: "Kingdom of Siam — the red-field white elephant flag was in use in 1914; the modern Thai tricolour was adopted in 1917.", population: 8_000_000 }],
     // Afghanistan in 1914 — independent under Habibullah Khan (1901–1919).
     ["Afghanistan", { flag: "historical-flags/afghanistan-1901.svg", continent: "Central Asia", note: "Emirate of Afghanistan under Habibullah Khan. The black-red-green tricolour was standardised as the national flag in 1901 and remained until 1919.", population: 5_000_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 23_000_000 }],
+    // Philippines in 1914 — U.S. territory (American-Philippine War ended 1902).
+    // The revolutionary Philippine flag adopted in 1898 was superseded by U.S. governance; independence and the modern flag came in 1946.
+    ["Philippines", { flag: "historical-flags/us-48star.svg", continent: "Southeast Asia", note: "Philippine Islands, U.S. territory — administered by the United States following the 1898 revolution and Spanish-American War. The U.S. 48-star flag flew over the territory until independence in 1946.", population: 9_000_000 }],
+    ["Brazil", { modernName: "Brazil", continent: "South America", note: "United States of Brazil — the republican flag adopted in 1889 with stars representing states. The design evolved as states joined the federation.", population: 23_000_000 }],
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
