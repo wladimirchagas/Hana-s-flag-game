@@ -2053,6 +2053,40 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Carthaginian Republic", { continent: "North Africa / Western Mediterranean", noFlag: true, note: "Carthaginian Republic — major Phoenician trading power centered in North Africa.", population: 1_500_000 }],
     ["Etruscan Confederation", { continent: "Southern Europe", noFlag: true, note: "Etruscan city-states in Italy — pre-Roman Italian culture; gradually absorbed by Rome.", population: 500_000 }],
     ["Nubian Kingdoms", { continent: "Northeast Africa", noFlag: true, note: "Nubian Kingdoms in the upper Nile valley — trade partners and rivals with Egypt.", population: 2_000_000 }],
+    // Greek City-States
+    ["Athens", { continent: "Southern Europe", noFlag: true, note: "City-state of Athens in Classical period — height of Athenian power under Pericles; birthplace of democracy.", population: 300_000 }],
+    ["Sparta", { continent: "Southern Europe", noFlag: true, note: "City-state of Sparta in Classical period — military superpower of Greece; oligarchic warrior society.", population: 250_000 }],
+    ["Corinth", { continent: "Southern Europe", noFlag: true, note: "City-state of Corinth in Classical period — major trading center; wealthy commercial city.", population: 100_000 }],
+    ["Thebes", { continent: "Southern Europe", noFlag: true, note: "City-state of Thebes — Central Greek power; competing with Athens and Sparta.", population: 80_000 }],
+    ["Syracuse", { continent: "Southern Europe", noFlag: true, note: "City-state of Syracuse on Sicily — Greek colony; major Mediterranean power.", population: 150_000 }],
+    ["Rhodes", { continent: "Southern Europe / Eastern Mediterranean", noFlag: true, note: "Island city-state of Rhodes — Greek trading power in the Eastern Mediterranean.", population: 60_000 }],
+    ["Delphi", { continent: "Southern Europe", noFlag: true, note: "Religious city-state of Delphi — sanctuary and trading center; seat of the Oracle.", population: 30_000 }],
+    // Persian Satrapies/Regions
+    ["Lydia", { continent: "Western Asia", noFlag: true, note: "Satrapy of Lydia in Persian Empire — wealthy region in Anatolia; kingdom before Persian conquest.", population: 1_000_000 }],
+    ["Phrygia", { continent: "Western Asia", noFlag: true, note: "Satrapy of Phrygia in Persian Empire — region in Anatolia.", population: 500_000 }],
+    ["Cilicia", { continent: "Western Asia", noFlag: true, note: "Satrapy of Cilicia in Persian Empire — Mediterranean coastal region in Anatolia.", population: 400_000 }],
+    ["Egypt (Satrapy)", { continent: "North Africa", noFlag: true, note: "Egypt under Persian rule in 500 BC — satrapy of the Achaemenid Empire; recently reconquered by Cambyses II.", population: 5_000_000 }],
+    ["Babylon", { continent: "Western Asia", noFlag: true, note: "Babylon in Persian Empire — major city; administrative center; under Achaemenid rule.", population: 1_500_000 }],
+    // Indian Kingdoms Beyond Magadha
+    ["Nanda Empire", { continent: "South Asia", noFlag: true, note: "Nanda Empire in ancient India — rising power; precedes the Mauryan Empire.", population: 10_000_000 }],
+    ["Chola Empire", { continent: "South Asia", noFlag: true, note: "Chola Empire in southern India — Tamil kingdom; major regional power in the south.", population: 3_000_000 }],
+    ["Pandya Kingdom", { continent: "South Asia", noFlag: true, note: "Pandya Kingdom in southern India — Tamil kingdom; trading power.", population: 2_000_000 }],
+    ["Mauryan Empire (earlier)", { continent: "South Asia", noFlag: true, note: "Pre-Mauryan kingdoms in India — various powers before Ashoka's great empire.", population: 5_000_000 }],
+    // Chinese Warring States (specific states)
+    ["State of Chu", { continent: "East Asia", noFlag: true, note: "Chu state in Warring States China — major southern power; competing for dominance.", population: 5_000_000 }],
+    ["State of Qi", { continent: "East Asia", noFlag: true, note: "Qi state in Warring States China — major eastern power.", population: 4_000_000 }],
+    ["State of Yan", { continent: "East Asia", noFlag: true, note: "Yan state in Warring States China — northern frontier state.", population: 2_000_000 }],
+    ["State of Zhao", { continent: "East Asia", noFlag: true, note: "Zhao state in Warring States China — northern power.", population: 3_000_000 }],
+    // Mediterranean and Atlantic
+    ["Iberian tribes", { continent: "Western Europe", noFlag: true, note: "Iberian peoples on the Iberian Peninsula — various tribal confederations; not yet unified.", population: 2_000_000 }],
+    ["Celtic tribes (Gaul)", { continent: "Western Europe", noFlag: true, note: "Celtic peoples in Gaul (modern France) — diverse tribal societies; not yet unified.", population: 5_000_000 }],
+    ["Celtic tribes (Britain)", { continent: "Northern Europe", noFlag: true, note: "Celtic peoples in Britain — tribal societies; Iron Age culture.", population: 500_000 }],
+    ["Germanic tribes", { continent: "Northern Europe", noFlag: true, note: "Germanic peoples in Central/Northern Europe — tribal societies; not yet unified.", population: 3_000_000 }],
+    // African Kingdoms
+    ["Axumite Kingdom", { continent: "East Africa", noFlag: true, note: "Axumite Kingdom in Ethiopia/Eritrea region — rising power; eventual rival to Rome and Persia.", population: 2_000_000 }],
+    ["Meroe Kingdom", { continent: "Northeast Africa", noFlag: true, note: "Meroe Kingdom in Sudan — Nubian kingdom; trading power on the Nile.", population: 1_000_000 }],
+    ["Saba Kingdom", { continent: "Western Asia", noFlag: true, note: "Saba Kingdom in Arabia — trading power in southwestern Arabia (Yemen region).", population: 500_000 }],
+    ["Nabataean Kingdom", { continent: "Western Asia", noFlag: true, note: "Nabataean Kingdom in Arabia — rising trade power; controls desert trade routes.", population: 400_000 }],
   ])],
 
   // === 323 BC (Hellenistic Age) overrides ===================================
