@@ -1646,6 +1646,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Italy", { noFlag: true, continent: "Italy", note: "Kingdom of Italy — its green-white-red tricolour carried the Savoy arms until the monarchy fell in 1946.", population: 37_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Philippines Commonwealth (1935–1946) — a U.S. territory with increasing self-governance under the Commonwealth Constitution of 1935. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 10_000_000 }],
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
@@ -1677,6 +1678,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Italy", { noFlag: true, continent: "Italy", note: "Fascist Italy — the tricolour still carried the Savoy arms, which were removed when the republic replaced the monarchy in 1946.", population: 43_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution.", population: 4_200_000 }],
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Commonwealth of the Philippines, a U.S. territory with internal self-governance under the 1935 Commonwealth Constitution. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 16_000_000 }],
   ])],
 
   // === 1945 (end of WWII) overrides =========================================
@@ -1741,6 +1743,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan (Formosa) reverted to Republic of China (ROC) control in October 1945 after Japan's surrender — the ROC's blue-sky/white-sun flag flew.", population: 6_000_000 }],
     // French Indochina in 1945: Annam, Tonkin still referenced as French;
     // Cochin China alias already routes to France. No extra overrides needed.
+    // Philippines — registry has Spanish colonial flag; use modern
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946 (declared 1945, recognized 1946). The white sun and three stars flag has been in use since 1898.", population: 19_000_000 }],
   ])],
 
   // === 1960 (Cold War snapshot) overrides ==================================
@@ -1793,6 +1797,33 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Vietnam", { modernName: "Vietnam", continent: "Southeast Asia", note: "Vietnam in 1960 was divided: the Democratic Republic of Vietnam (North, communist) and the Republic of Vietnam (South, US-backed). The modern red-star flag represents the North/reunified Vietnam.", population: 30_000_000 }],
     // Sri Lanka in 1960 = Dominion of Ceylon. Use the Ceylon flag.
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was the Dominion of Ceylon in 1960 (it became the Republic of Sri Lanka only in 1972). The Dominion's lion flag flew from 1948 to 1972.", population: 9_500_000 }],
+    // Philippines — registry has Spanish colonial flag; use modern
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946. The white sun and three stars flag has been in use since 1898.", population: 27_000_000 }],
+  ])],
+
+  // === 1994 (After the Cold War) — post-USSR, post-Yugoslavia, post-Czechoslovakia ===
+  // This is essentially the modern world. Most entries fall back to modernName or auto-fallback.
+  // Add overrides ONLY for:
+  // 1. Naming differences (Myanmar/Burma, Côte d'Ivoire/Ivory Coast, etc.)
+  // 2. Countries not in global registry
+  // 3. Entities that need explicit continent/population for 1994
+  ["ad1994", new Map<string, PolityInfo>([
+    ["Byelarus", "Belarus"], // Pre-1991 registry name; use modern Belarus
+    ["Myanmar", { modernName: "Myanmar", continent: "Southeast Asia", note: "Myanmar (formerly Burma) — renamed officially in 1989. The modern flag has been in use since 1974.", population: 47_000_000 }],
+    ["Ivory Coast", { modernName: "Ivory Coast", continent: "West Africa", note: "Côte d'Ivoire — the modern flag has been in use since independence in 1960.", population: 15_000_000 }],
+    ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — the white sun and three stars flag has been in use since 1898.", population: 68_000_000 }],
+    ["Czech Republic", { modernName: "Czech Republic", continent: "Central Europe", note: "Czech Republic (Czechia) — independent since the dissolution of Czechoslovakia in 1993. The white-red bicolour has been in use since 1920.", population: 10_300_000 }],
+    ["Slovakia", { modernName: "Slovakia", continent: "Central Europe", note: "Slovakia — independent since the dissolution of Czechoslovakia in 1993. The white-blue-red tricolour was adopted in 1990.", population: 5_300_000 }],
+    ["Bosnia and Herzegovina", { modernName: "Bosnia and Herzegovina", continent: "Southern Europe", note: "Bosnia and Herzegovina — declared independence in 1992, recognized in 1994. The modern flag with white stars was adopted in 1998.", population: 3_500_000, noFlag: true }],
+    ["Croatia", { modernName: "Croatia", continent: "Southern Europe", note: "Croatia — declared independence in 1991, internationally recognized in 1992. The flag with the coat of arms has been in use since 1990.", population: 4_700_000 }],
+    ["Slovenia", { modernName: "Slovenia", continent: "Central Europe", note: "Slovenia — declared independence in 1991, recognized in 1992. The white-blue-red tricolour with coat of arms was adopted in 1991.", population: 2_000_000 }],
+    ["Montenegro", { noFlag: true, continent: "Southern Europe", note: "Montenegro — still a constituent part of the Federal Republic of Yugoslavia in 1994. Flag adopted later in 2006.", population: 600_000 }],
+    ["Serbia", { noFlag: true, continent: "Southern Europe", note: "Serbia — core state of the rump Federal Republic of Yugoslavia (Serbia and Montenegro, 1992–2006). The modern flag adopted in 2010.", population: 10_000_000 }],
+    ["Macedonia", { modernName: "North Macedonia", continent: "Southern Europe", note: "Macedonia (now North Macedonia) — declared independence in 1991, recognized in 1993. The modern flag with the Star of Vergina was adopted in 1995.", population: 2_000_000 }],
+    ["Rapa Nui", { noFlag: true, continent: "Oceania", note: "Rapa Nui (Easter Island) — territory of Chile, no separate flag.", population: 3_000 }],
+    ["Montserrat", { noFlag: true, continent: "Caribbean", note: "Montserrat — British Overseas Territory; no separate flag.", population: 11_000 }],
+    ["Wallis and Futuna Islands", { noFlag: true, continent: "Oceania", note: "Wallis and Futuna — French overseas collectivity; no separate flag.", population: 15_000 }],
+    ["Turkish Cypriot-administered area", { noFlag: true, continent: "Western Asia", note: "Turkish-administered area of Cyprus — the 'Turkish Republic of Northern Cyprus' (recognized only by Turkey) is disputed; no widely-recognized flag.", population: 200_000 }],
   ])],
 ]);
 
