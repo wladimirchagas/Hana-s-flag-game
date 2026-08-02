@@ -2242,6 +2242,29 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Holy Roman Empire in 1300: the post-1400 imperial banner is the global
     // entry, but in 1300 the double-headed eagle was only beginning to emerge.
     ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire in 1300 — late Hohenstaufen / early Habsburg era. The post-1400 imperial banner (our only HRE PNG) had not yet been formalised.", population: 12_000_000 }],
+    // Additional Major Powers of 1300
+    ["Mongol Yuan Dynasty", { continent: "East Asia", noFlag: true, note: "Yuan Dynasty China — Kublai Khan's Mongol-led empire; still dominant in East Asia; would fall to Ming in 1368.", population: 120_000_000 }],
+    ["Ming Dynasty (pre-founding)", { continent: "East Asia", noFlag: true, note: "Southern Song remnants and regional powers pre-Ming — would be consolidated into Ming Dynasty in 1368.", population: 30_000_000 }],
+    ["Vijayanagara Empire", { continent: "South Asia", noFlag: true, note: "Vijayanagara Empire in South India (founded 1336) — rising Hindu power resisting Islamic sultanates.", population: 10_000_000 }],
+    ["Bengal Sultanate", { continent: "South Asia", noFlag: true, note: "Bengal Sultanate — Islamic sultanate in eastern India; independent of Delhi; major trading center.", population: 12_000_000 }],
+    ["Jaunpur Sultanate", { continent: "South Asia", noFlag: true, note: "Jaunpur Sultanate in northern India — smaller sultanate co-existing with Delhi and Bengal sultanates.", population: 3_000_000 }],
+    ["Gujarat Sultanate", { continent: "South Asia", noFlag: true, note: "Gujarat Sultanate in western India — emerging power in the prosperous Gujarat region.", population: 5_000_000 }],
+    ["Mamluk Sultanate", { continent: "North Africa / Western Asia", noFlag: true, note: "Mamluk Sultanate of Egypt — still the dominant Islamic power in the eastern Mediterranean; held Jerusalem and Mecca.", population: 6_000_000 }],
+    ["Byzantine Empire (remnants)", { continent: "Eastern Mediterranean", noFlag: true, note: "Late Byzantine Empire — shrunk to Constantinople and a few remaining territories; declining power.", population: 1_000_000 }],
+    ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary under the Angevin and early Sigismund dynasties — major Central European power.", population: 3_000_000 }],
+    ["Poland-Lithuania", { continent: "Eastern Europe", noFlag: true, note: "Polish-Lithuanian union forming in 1300s — Eastern European power; would grow stronger after 1569.", population: 5_000_000 }],
+    ["Grand Duchy of Moscow", { continent: "Eastern Europe", noFlag: true, note: "Grand Duchy of Moscow in 1300 — tiny principality; would eventually unite Russia and emerge as major power.", population: 500_000 }],
+    ["Venetian Republic", { continent: "Italy", noFlag: true, note: "Republic of Venice in 1300 — at its peak as a Mediterranean maritime and trading power.", population: 1_500_000 }],
+    ["Genoa", { continent: "Italy", noFlag: true, note: "Republic of Genoa in 1300 — rival to Venice for Mediterranean trade dominance.", population: 500_000 }],
+    ["Kingdom of Sicily", { continent: "Italy", noFlag: true, note: "Kingdom of Sicily in 1300 — ruled by the House of Aragon; major Mediterranean state.", population: 1_000_000 }],
+    ["Papal States", { continent: "Italy", noFlag: true, note: "Papal States in 1300 — territories ruled by the Pope across central Italy; period of Avignon Papacy begins.", population: 2_000_000 }],
+    ["Kingdom of Aragon", { continent: "Iberia", noFlag: true, note: "Kingdom of Aragon in 1300 — expanding Mediterranean power; would eventually unify with Castile.", population: 1_500_000 }],
+    ["Kingdom of Castile", { continent: "Iberia", noFlag: true, note: "Kingdom of Castile in 1300 — dominant Iberian Christian power; slowly reconquering from Islamic Granada.", population: 2_000_000 }],
+    ["Nasrid Granada", { continent: "Iberia", noFlag: true, note: "Emirate of Granada (Nasrid dynasty) in 1300 — last Islamic state in Iberia; would fall to Castile in 1492.", population: 500_000 }],
+    ["Ilkhanate (Persia)", { continent: "Western Asia", noFlag: true, note: "Ilkhanate in Persia — Mongol khanate founded by Hulagu Khan; would fall in early 1300s.", population: 8_000_000 }],
+    ["Chagatai Khanate", { continent: "Central Asia", noFlag: true, note: "Chagatai Khanate in Central Asia — Mongol khanate controlling the Silk Road; gradually fragmenting.", population: 5_000_000 }],
+    ["Golden Horde", { continent: "Eastern Europe / Western Asia", noFlag: true, note: "Golden Horde in southern Russia — Mongol khanate that dominated the steppes and Eastern Europe.", population: 10_000_000 }],
+    ["Timurid Empire (emerging)", { continent: "Central Asia", noFlag: true, note: "Timurid Empire (Timur's empire, founded 1369) — emerging Central Asian power challenging the established khanates.", population: 15_000_000 }],
   ])],
 
   ["ad1500", new Map<string, PolityInfo>([
@@ -2299,6 +2322,32 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Cambodia", { continent: "Southeast Asia", note: "Post-Angkor Khmer Kingdom — the empire had declined and abandoned Angkor in 1431; Phnom Penh became the new capital.", noFlag: true, population: 800_000 }],
     // Novgorod — annexed by Moscow in 1478, no longer independent
     ["Novgorod-Seversky", { continent: "Eastern Europe", note: "Principality of Novgorod-Seversky — a small Russian principality that resisted Muscovite unification.", noFlag: true, population: 100_000 }],
+    // Additional 1500 AD Powers
+    ["Ming Dynasty", { noFlag: true, continent: "East Asia", note: "Ming Dynasty China in 1500 — at the peak of its power; major naval expeditions under Zheng He had ended; great wall construction ongoing.", population: 130_000_000 }],
+    ["Joseon Dynasty Korea", { noFlag: true, continent: "East Asia", note: "Joseon Dynasty Korea in 1500 — Confucian kingdom; period of cultural flourishing and hangul development under King Sejong's legacy.", population: 8_000_000 }],
+    ["Sengoku Japan", { noFlag: true, continent: "East Asia", note: "Sengoku period Japan in 1500 — the Ashikaga Shogunate was fragmenting; feudal daimyos ruled their own domains.", population: 15_000_000 }],
+    ["Annam (Vietnam)", { noFlag: true, continent: "Southeast Asia", note: "Annam and Champa in Vietnam in 1500 — Vietnamese expansion continuing southward; Champa Kingdom in decline.", population: 6_000_000 }],
+    ["Ayutthaya", { noFlag: true, continent: "Southeast Asia", note: "Ayutthaya Kingdom in 1500 — major Southeast Asian trading power; cosmopolitan city-state at its height.", population: 3_000_000 }],
+    ["Burma (Toungoo)", { noFlag: true, continent: "Southeast Asia", note: "Toungoo Dynasty Burma in 1500 — rising power that would expand and unify Burma.", population: 2_000_000 }],
+    ["Aceh", { noFlag: true, continent: "Southeast Asia", note: "Aceh Sultanate in 1500 — Islamic sultanate rising to prominence as a spice-trade power.", population: 1_000_000 }],
+    ["Malacca", { noFlag: true, continent: "Southeast Asia", note: "Malacca Sultanate in 1500 — the premier spice-trading city-state; soon to fall to Portuguese conquest (1511).", population: 200_000 }],
+    ["Mughal Empire", { noFlag: true, continent: "South Asia", note: "Early Mughal Empire in 1500 — Babur had just recently established the empire (1526 founding); still consolidating power.", population: 40_000_000 }],
+    ["Delhi Sultanate", { noFlag: true, continent: "South Asia", note: "Lodi Dynasty Delhi Sultanate in 1500 — last Islamic sultanate before Mughal conquest in 1526.", population: 15_000_000 }],
+    ["Gujarat Sultanate", { noFlag: true, continent: "South Asia", note: "Gujarat Sultanate in 1500 — major trading power; major port sultanates controlling Arabian Sea trade.", population: 8_000_000 }],
+    ["Bengal Sultanate", { noFlag: true, continent: "South Asia", note: "Bengal Sultanate in 1500 — eastern India; prosperous trading kingdom.", population: 15_000_000 }],
+    ["Vijayanagara Empire", { noFlag: true, continent: "South Asia", note: "Vijayanagara Empire in 1500 — at its peak as the major Hindu power in South India; resisting Islamic expansion.", population: 25_000_000 }],
+    ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1500 — expanding power; had conquered Constantinople (1453); at its military peak under Suleiman (1520-1566).", population: 15_000_000 }],
+    ["Safavid Empire", { noFlag: true, continent: "Western Asia", note: "Safavid Empire in 1500 — just founded by Shah Ismail (1501); establishing Shi'a Islam across Persia.", population: 5_000_000 }],
+    ["Mamluk Sultanate", { noFlag: true, continent: "North Africa / Western Asia", note: "Mamluk Sultanate in 1500 — still dominant in Egypt and the eastern Mediterranean; would fall to Ottomans in 1517.", population: 6_000_000 }],
+    ["Kingdom of Hungary", { noFlag: true, continent: "Eastern Europe", note: "Kingdom of Hungary under Mátyás Corvinus (1440-1490) and successors — a major Central European power.", population: 4_000_000 }],
+    ["Polish-Lithuanian Commonwealth", { noFlag: true, continent: "Eastern Europe", note: "Polish-Lithuanian Commonwealth forming — Eastern European power; would become much stronger after 1569.", population: 8_000_000 }],
+    ["Grand Duchy of Moscow", { noFlag: true, continent: "Eastern Europe", note: "Grand Duchy of Moscow in 1500 — Ivan III (Ivan the Great) had recently consolidated power; emerging as major Eastern European power.", population: 6_000_000 }],
+    ["Safavid Persia", { noFlag: true, continent: "Western Asia", note: "Safavid Persia in 1500 (early Safavid period) — Shah Ismail (1501-1524) establishing Shi'a Islam; rival to Ottoman Empire.", population: 6_000_000 }],
+    ["Khanate of Kazan", { noFlag: true, continent: "Eastern Europe / Western Asia", note: "Khanate of Kazan in 1500 — Mongol successor state on the Volga; would be conquered by Moscow in 1552.", population: 500_000 }],
+    ["Crimean Khanate", { noFlag: true, continent: "Eastern Europe", note: "Crimean Khanate in 1500 — Tatar khanate under Ottoman suzerainty.", population: 300_000 }],
+    ["Papal States", { noFlag: true, continent: "Italy", note: "Papal States in 1500 — at the height of papal temporal power under the Borgia Pope Alexander VI; controlled extensive Italian territories.", population: 2_000_000 }],
+    ["Kingdom of Naples", { noFlag: true, continent: "Italy", note: "Kingdom of Naples in 1500 — Spanish/Aragonese possession; major Mediterranean power.", population: 2_000_000 }],
+    ["Duchy of Milan", { flag: "historical-flags/milan.png", continent: "Italy", note: "Duchy of Milan in 1500 — ruled by the Sforza dynasty; a major Italian power-state during the Italian Renaissance.", population: 1_000_000 }],
   ])],
 
   // === 1600 AD (Early Modern) overrides =====================================
@@ -2392,6 +2441,36 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Benin", { continent: "West Africa", note: "Benin Kingdom (Edo) in 1700 — still a sophisticated and powerful state despite increasing contact with European slavers.", noFlag: true, population: 1_200_000 }],
     // Ottoman Empire 1700: 1844 flag is 144 years too late.
     ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1700 — still a major power under the Köprülü viziers. The crescent-and-star flag wasn't standardised until 1844.", population: 30_000_000 }],
+    // Major Asian Powers
+    ["Mughal Empire", { noFlag: true, continent: "South Asia", note: "Mughal Empire in 1700 — under Aurangzeb; the last great emperor. Already showing signs of decline that would accelerate after his death (1707).", population: 120_000_000 }],
+    ["Qing Dynasty", { noFlag: true, continent: "East Asia", note: "Qing Dynasty China in 1700 — height of Kangxi Emperor's reign; the empire was expansionist and at its peak territorial extent.", population: 150_000_000 }],
+    ["Safavid Persia", { noFlag: true, continent: "Western Asia", note: "Safavid Empire of Persia in 1700 — in decline; the dynasty would fall by 1736. Capital Isfahan; once the world's largest city by some accounts.", population: 8_000_000 }],
+    // Central Asian Khanates
+    ["Khiva Khanate", { noFlag: true, continent: "Central Asia", note: "Khanate of Khiva in 1700 — Central Asian power controlling Khorezm; still independent, not yet subsumed by Russia.", population: 500_000 }],
+    ["Quazaq Khanate", { noFlag: true, continent: "Central Asia", note: "Kazakh Khanate in 1700 — nomadic confederation of steppe peoples; loosely organized into three hordes (Great, Middle, Little).", population: 2_000_000 }],
+    ["Crimean Khanate", { noFlag: true, continent: "Eastern Europe", note: "Crimean Khanate in 1700 — Tatar state under Ottoman suzerainty; vassal to the Sublime Porte.", population: 400_000 }],
+    // European Powers
+    ["Sweden", { noFlag: true, continent: "Northern Europe", note: "Swedish Empire in 1700 — the Great Northern War with Russia was just beginning (1700-1721). Still the dominant Baltic power.", population: 1_500_000 }],
+    ["Denmark-Norway", { noFlag: true, continent: "Northern Europe", note: "Kalmar Union (Denmark-Norway) in 1700 — personal union of the two kingdoms under the Danish crown.", population: 1_200_000 }],
+    ["Prussia", { noFlag: true, continent: "Central Europe", note: "Kingdom of Prussia in 1700 — under Frederick William I; a rising power that would dominate Central Europe under Frederick the Great (1740-1786).", population: 2_500_000 }],
+    ["Venice", { noFlag: true, continent: "Italy", note: "Republic of Venice in 1700 — a declining maritime power; holding its Adriatic and Mediterranean colonies but losing trade dominance to Atlantic powers.", population: 1_500_000 }],
+    ["Papal States", { noFlag: true, continent: "Italy", note: "Papal States in 1700 — ecclesiastical territories ruled by the Pope; stretched across central Italy.", population: 2_000_000 }],
+    ["Sardinia", { noFlag: true, continent: "Italy", note: "Kingdom of Sardinia (Piedmont and Sardinia) in 1700 — Italian state that would become a leader in Italian unification in the 19th century.", population: 1_000_000 }],
+    ["Naples", { noFlag: true, continent: "Italy", note: "Kingdom of Naples in 1700 — Spanish possession under Philip V following the War of Spanish Succession.", population: 4_000_000 }],
+    // Indian Sultanates
+    ["Deccan Sultanates", { noFlag: true, continent: "South Asia", note: "Deccan Sultanates in 1700 — including Bijapur, Golkonda, and Ahmadnagar; already declining and falling to Mughal expansion.", population: 8_000_000 }],
+    ["Bengal Sultanate", { noFlag: true, continent: "South Asia", note: "Bengal Sultanate in 1700 — eastern India; semi-autonomous from the Mughal Empire; major trade center.", population: 15_000_000 }],
+    ["Kingdom of Malabar", { noFlag: true, continent: "South Asia", note: "Hindu kingdoms of Malabar (Kerala) in 1700 — southern India; resisting both Mughal and European colonial expansion.", population: 2_000_000 }],
+    // African Powers
+    ["Songhai Empire (remnants)", { noFlag: true, continent: "West Africa", note: "Songhai Empire remnants in 1700 — the once-great empire had collapsed in 1591, fragmenting into smaller states.", population: 2_000_000 }],
+    ["Mali Empire (remnants)", { noFlag: true, continent: "West Africa", note: "Mali Empire remnants in 1700 — the ancient empire was now small and declining; Songhai had replaced it as West Africa's dominant power.", population: 1_000_000 }],
+    ["Mwenemutapa Empire", { noFlag: true, continent: "Southeast Africa", note: "Mwenemutapa Empire in 1700 — East/Southeast African gold-trading power; already under Portuguese pressure.", population: 2_000_000 }],
+    ["Kongo Kingdom", { noFlag: true, continent: "Central Africa", note: "Kingdom of Kongo in 1700 — Central African state; torn by internal conflicts and Portuguese colonial interference.", population: 2_500_000 }],
+    // Americas — European Colonial Powers
+    ["British North America", { noFlag: true, continent: "North America", note: "British North America in 1700 — colonial settlements along the Atlantic coast; would grow into the Thirteen Colonies.", population: 250_000 }],
+    ["Spanish Americas", { noFlag: true, continent: "South America / Central America / North America", note: "Spanish America in 1700 — vast colonial territories in Mexico, Central America, and South America under Spanish crown.", population: 8_000_000 }],
+    ["Portuguese Brazil", { noFlag: true, continent: "South America", note: "Colonial Brazil in 1700 — Portuguese Crown colony; rapidly growing sugar economy fueling slave trade.", population: 1_500_000 }],
+    ["Dutch Caribbean", { noFlag: true, continent: "Caribbean", note: "Dutch Caribbean colonies in 1700 — trading posts and sugar-producing islands under Dutch colonial control.", population: 100_000 }],
   ])],
   ["ad1815", new Map<string, PolityInfo>([
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Bourbon Restoration (1814–1830) — France flew the white royal banner with fleur-de-lis. The tricolour wasn't readopted until 1830.", population: 30_500_000 }],
