@@ -1,8 +1,44 @@
 # Historical Eras Completeness — Phase 4 Implementation Roadmap
 
 **Status:** Phase 4a Complete | Phase 4b Tier 1 Complete | Phase 4b Infrastructure Blocked | Phase 4c–4e Pending  
-**Last Updated:** 2026-08-02 (Session 2: Yemen flag sourcing complete)  
+**Last Updated:** 2026-08-02 (Session 3: Iran flag display fixes + Egypt duplicate removal)  
 **Branch:** `claude/historical-eras-completeness-yhtfl7`
+
+---
+
+## Session 3 Summary (2026-08-02, continued)
+
+### Completed ✓
+
+**Phase 4b Tier 1+: Iran Flag Display Fixes (ad1920, ad1938, ad1945, ad1960)**
+- Identified inconsistency: Iran entries (post-1933 name) in ad1920–ad1960 were marked noFlag: true despite notes correctly describing the Lion and Sun flag as the national symbol
+- Root cause: Persia → Iran naming transition confused the data entry logic
+- Fix applied: Changed all four eras from noFlag: true to `flag: "historical-flags/persia-1907.svg"`
+- Wired to historical eras:
+  - **ad1920:** "Persia (Iran after 1933) — the Lion and Sun banner, official national flag from Qajar through Pahlavi eras..."
+  - **ad1938:** "Iran (Persia renamed 1933) under Reza Shah Pahlavi — the Lion and Sun flag, official national flag from 1933 to 1979..."
+  - **ad1945:** "Iran under Mohammad Reza Shah Pahlavi — occupied by Britain and the USSR during the war. The Lion and Sun flag (1933–1979) was the national symbol."
+  - **ad1960:** "Imperial Iran under the Shah — the Lion and Sun flag, replaced by the Islamic Republic's in 1980."
+- All flag checks passed; no anachronisms or parent-flag collisions
+- Commits: `a53981c` (Iran flags) + `0472985` (Egypt fix)
+
+**Phase 4b Data Integrity: ad1945 Egypt Duplicate Removal**
+- Identified bug: ad1945 had two Egypt entries; the second (noFlag: true) overwrote the first (with egypt-kingdom.svg flag)
+- Root cause: Prior session added egypt-kingdom.svg but did not remove the redundant noFlag override comment
+- Fix applied: Removed the duplicate noFlag entry to restore Kingdom flag display for 1945–1952 period
+- Verified: egypt-kingdom.svg exists and contains the correct green-crescent-and-stars design
+
+**Phase 4b Tier 2 Verification: Ottoman + Arabia + Persia Coverage Audit**
+- Ottoman Empire (ad1815, ad1920): Correctly marked noFlag (crescent-and-star not until 1844) ✓
+- Persia/Iran (ad1500, ad1600, ad1815, ad1880, ad1920, ad1938, ad1945, ad1960): All now display Lion and Sun flag ✓
+- Arabia/Nejd entries: No era-specific overrides needed; rely on global registry or modernName fallback ✓
+- Subdivision flag sweep: Confirmed 0 remaining (1712 universe complete) ✓
+
+### Blocked (No Change from Session 2) ❌
+
+Same blockers as Session 2 remain:
+- Phase 4b Infrastructure: Overpass API 403 Forbidden (Yemen/Vietnam splits)
+- Phase 4c: aourednik missing Yugoslavia, Poland, Germany occupation zones
 
 ---
 
