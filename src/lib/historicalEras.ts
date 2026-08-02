@@ -3241,6 +3241,17 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution.", population: 4_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Commonwealth of the Philippines, a U.S. territory with internal self-governance under the 1935 Commonwealth Constitution. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 16_000_000 }],
     ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 39_000_000 }],
+    // --- Additional European and other states for 1938 -------------------------
+    ["Spain", { noFlag: true, continent: "Western Europe", note: "Spain in 1938 — in the midst of the Spanish Civil War (1936-1939) between Republican and Nationalist forces. The flag situation was contested.", population: 23_000_000 }],
+    ["Poland", { flag: "historical-flags/poland-1919.svg", continent: "Eastern Europe", note: "Second Polish Republic (1919–1939) — independent state between Germany and the Soviet Union. The white-and-red bicolour was adopted in 1919.", population: 34_500_000 }],
+    ["Czechoslovakia", { noFlag: true, continent: "Central Europe", note: "Czechoslovakia in 1938 — about to be dismantled by Nazi Germany; the red-white-blue tricolour was adopted in 1920.", population: 15_000_000 }],
+    ["Netherlands", { noFlag: true, continent: "Western Europe", note: "Kingdom of the Netherlands in 1938 — neutral until 1940. The red-white-blue tricolour was official; today's order is unchanged.", population: 8_700_000 }],
+    ["Belgium", { noFlag: true, continent: "Western Europe", note: "Kingdom of Belgium in 1938 — neutral officially, though Hitler would invade in 1940. The black-yellow-red tricolour was the national flag.", population: 8_400_000 }],
+    ["Greece", { noFlag: true, continent: "SE Europe", note: "Kingdom of Greece in 1938 — under the Metaxas dictatorship. The blue-and-white flag with cross was official (modern flag unchanged).", population: 6_500_000 }],
+    ["Romania", { noFlag: true, continent: "SE Europe", note: "Kingdom of Romania in 1938 — the red-yellow-blue tricolour was the national flag (adopted 1848; modern flag is identical).", population: 19_000_000 }],
+    ["Yugoslavia", { noFlag: true, continent: "SE Europe", note: "Kingdom of Yugoslavia in 1938 — the blue-white-red tricolour was the national flag; the state would be invaded in 1941.", population: 15_700_000 }],
+    ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Persia (renamed Iran in 1935) in 1938 — under Reza Shah Pahlavi. The Lion and Sun flag represented the nation until 1980.", population: 14_500_000 }],
+    ["Netherlands Indies", { modernName: "Netherlands", continent: "Southeast Asia", note: "Netherlands East Indies in 1938 — Dutch colonial possession; Japanese occupation would begin in 1942.", population: 70_000_000 }],
   ])],
 
   // === 1945 (end of WWII) overrides =========================================
