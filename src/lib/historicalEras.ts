@@ -480,6 +480,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Fatimid Caliphate", { continent: "North Africa / Middle East", note: "Fatimid Caliphate — Ismaili Shia rulers of Egypt and North Africa who founded Cairo and its al-Azhar mosque-university.", population: 6_000_000 }],
   ["Union of South Africa", { continent: "Southern Africa", note: "Union of South Africa (1910–1961) — a self-governing British dominion flying British flags; the modern South African flag came only in 1994.", modernName: "United Kingdom", population: 6_000_000 }],
   ["Arabia", { continent: "Arabia", note: "The Arabian interior — Bedouin tribal confederations and the emirates of Nejd and Hejaz, before the Saudi state unified the peninsula in 1932.", noFlag: true }],
+  ["Arabia (Nejd)", { continent: "Arabia", note: "Nejd — the central Arabian plateau, ruled by the House of Saud since 1744; one of the few Arabian powers independent of Ottoman or European control in 1914, strengthening through the 1920s–30s before fully unifying Arabia in 1932." }],
   ["French West Africa", { continent: "West Africa", note: "French West Africa (1895–1958) — a federation of eight colonies from Senegal to Niger, governed from Dakar.", modernName: "France", population: 15_000_000 }],
   ["French Equatorial Africa", { continent: "Central Africa", note: "French Equatorial Africa (1910–1958) — Gabon, Middle Congo, Ubangi-Shari and Chad, governed from Brazzaville.", modernName: "France", population: 4_000_000 }],
   ["Greenland", { continent: "Arctic", note: "Greenland — Inuit homeland (Kalaallit Nunaat), colonised by Denmark from 1721 and granted home rule in 1979.", modernName: "Denmark" }],
@@ -488,6 +489,8 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Patagonian shellfish and marine mammal hunters", { continent: "South America", note: "Peoples of the Patagonian channels and Tierra del Fuego — Yaghan and Kawésqar canoe nomads who lived on shellfish, seal and sea lion in one of the coldest inhabited coasts on earth." }],
   ["Madagascar", { continent: "East Africa", note: "Madagascar — settled from Borneo across the Indian Ocean and from East Africa, giving it an Austronesian language on an African coast; unified under the Merina kingdom in the 19th century.", noFlag: true }],
   ["Saami", { continent: "Northern Europe", note: "Sámi people — reindeer herders, fishers and hunters of Sápmi, spanning northern Norway, Sweden, Finland and the Kola peninsula." }],
+  ["Sámi", { continent: "Northern Europe", note: "Sámi people — reindeer herders, fishers and hunters of Sápmi, spanning northern Norway, Sweden, Finland and the Kola peninsula." }],
+  ["Samis", { continent: "Northern Europe", note: "Sámi people — reindeer herders, fishers and hunters of Sápmi, spanning northern Norway, Sweden, Finland and the Kola peninsula." }],
   ["Austronesians", { continent: "Maritime SE Asia / Pacific", note: "Austronesian seafarers — from Taiwan they settled island Southeast Asia, Madagascar and the whole Pacific, the widest maritime expansion of the pre-modern world." }],
   ["Semites", { continent: "Middle East", note: "Semitic-speaking peoples of the Levant, Mesopotamia and Arabia — Akkadians, Amorites, Canaanites, Arameans and their neighbours." }],
   ["Berber Tribes", { continent: "North Africa", note: "Amazigh (Berber) peoples of the Maghreb and Sahara — farmers of the Atlas valleys and camel nomads of the desert, from whom the Almoravid and Almohad empires arose." }],
@@ -776,6 +779,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // still-Hindu Bali. The dataset shows them all under one "Malaysian
   // Islamic states" polygon — we split by modern Indonesian /
   // Malaysian / Bruneian / Philippine admin-1 boundaries.
+  ["Malaysian Islamic states", { continent: "Maritime SE Asia", note: "Collective description for the many independent Muslim sultanates and chiefdoms of Maritime Southeast Asia (the Indonesian and Malaysian archipelagos), united by Islamic faith and maritime trade rather than political control." }],
   ["Bangka tin sultanates", { continent: "Maritime SE Asia", population: 20_000 }],
   ["Banjar Sultanate", { continent: "Maritime SE Asia", note: "Major Kalimantan Muslim sultanate centred on Banjarmasin.", population: 300_000 }],
   ["Banten / Cirebon", { continent: "Maritime SE Asia", note: "West-Java Muslim sultanates — Banten and Cirebon.", population: 600_000 }],
@@ -1025,6 +1029,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Poland-Lithuania", { flag: "historical-flags/poland-lithuania.png", continent: "Eastern Europe", note: "Polish-Lithuanian Commonwealth — a major European power from 1569 to 1795.", population: 11_000_000 }],
   ["Polish–Lithuanian Commonwealth", { flag: "historical-flags/poland-lithuania.png", continent: "Eastern Europe", note: "Polish-Lithuanian Commonwealth (Rzeczpospolita) — a vast noble republic stretching from the Baltic to the Black Sea.", population: 11_000_000 }],
   ["Novgorod", { continent: "Eastern Europe", note: "Novgorod Republic — a wealthy trading republic of north-western Russia; member of the Hanseatic League.", noFlag: true, population: 400_000 }],
+  ["Ryazan", { continent: "Eastern Europe", note: "Principality of Ryazan — a medieval Russian state of the Volga region; one of the early victims of the Mongol invasions (1237–1240).", noFlag: true, population: 200_000 }],
   ["Georgia", { continent: "Western Asia", note: "Kingdom of Georgia — a medieval Christian kingdom at its peak in the 12th–13th centuries before the Mongol invasion.", noFlag: true, population: 2_000_000 }],
   ["Venice", { flag: "historical-flags/venice.png", continent: "Italy", note: "Most Serene Republic of Venice — a maritime trading empire; the golden Lion of St Mark on red was its emblem.", population: 800_000 }],
   ["Scotland", { continent: "Northern Europe", note: "Kingdom of Scotland — the Cross of St Andrew (Saltire), white diagonal cross on blue, is one of Europe's oldest national symbols.", noFlag: true, population: 1_000_000 }],
