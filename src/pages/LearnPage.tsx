@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { Link, useSearchParams } from "react-router-dom";
 import { bundledCountries, fetchCountries, type Country } from "../api/countries";
 import { FLAG_ADOPTION_YEAR } from "../data/flagAdoptionYears";
+import { ERA_EXTENT_CAVEATS } from "../data/polityExistence";
 import { WorldProgressMap } from "../components/WorldProgressMap";
 import { HistoricalMap } from "../components/HistoricalMap";
 import { EraPicker } from "../components/EraPicker";
@@ -121,6 +122,11 @@ type HistoricalSelection = {
   /** Set when no flag is shown BECAUSE the modern one postdates the era. Lets the
    *  panel explain precisely instead of claiming the polity predates flags. */
   flagTooNew?: { name: string; year: number };
+  /** Set when the upstream dataset draws this polity for the WRONG DATE and the error
+   *  cannot be fixed by relabelling — the borders themselves are anachronistic. Sourced
+   *  in src/data/polityExistence.ts; the panel discloses it rather than us inventing the
+   *  period-correct boundary. */
+  datingCaveat?: { issue: string; actual: string };
 };
 type Selection = ModernSelection | HistoricalSelection;
 
@@ -682,6 +688,9 @@ export default function LearnPage() {
       flagIsRulers: flagIsRulers || undefined,
       flagTooNew: flag ? undefined : flagTooNew,
       approximateExtent: derivedBoundaryNames.has(name) || undefined,
+      // A sourced, known anachronism in the upstream data — the polity is drawn for the
+      // wrong date. We disclose rather than redraw (see src/data/polityExistence.ts).
+      datingCaveat: ERA_EXTENT_CAVEATS.get(`${eraId}|${name}`),
     };
   }
 
@@ -1438,6 +1447,9 @@ export default function LearnPage() {
                     }
                     approximateExtent={
                       display.kind === "historical" ? display.approximateExtent : undefined
+                    }
+                    datingCaveat={
+                      display.kind === "historical" ? display.datingCaveat : undefined
                     }
                   />
                 )}
