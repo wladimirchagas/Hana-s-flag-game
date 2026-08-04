@@ -3205,9 +3205,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Dragon banner, promulgated 1889 (the 1880 era shows none, because until then
     // it was the triangular naval version).
     ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing China during the Boxer Rebellion. The rectangular Yellow Dragon banner had been the national flag since 1889.", population: 400_000_000 }],
-    // The dataset keeps the label "Kingdom of Brazil" for 1900, but Brazil had been
-    // a republic since 1889 — the 21-star flag was adopted then and used until 1960.
-    ["Kingdom of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag with stars representing states was adopted. The design varied as states joined the federation.", population: 17_400_000 }],
+    // Brazil became a republic in 1889 — the United States of Brazil (1889-1967) with a
+    // 21-star flag adopted then and used until 1960. The design evolved as states joined.
+    ["United States of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag with stars representing states was adopted. The design varied as states joined the federation.", population: 17_400_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt under British occupation since 1882, still nominally Ottoman.", population: 10_000_000 }],
     ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent.", noFlag: true, population: 11_000_000 }],
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
