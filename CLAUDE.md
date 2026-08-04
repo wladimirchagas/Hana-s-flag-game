@@ -537,6 +537,45 @@ applied — `node scripts/optimize-historical-maps.mjs --check` is a no-op and m
 it must never change a file. If it wants to, something has gone wrong upstream; investigate, do not
 commit the result.
 
+### The coastline must be RENDERED, not merely stored — unmapped land is land, never ocean
+
+**Restoring the data is only half of this rule. The era files carry POLITIES, not land — so a
+region that was genuinely unclaimed at a given date has no feature at all, and a renderer that
+draws only the era's features paints it with nothing. Against an ocean-coloured sphere, that
+reads to the user as SEA. The coastline must therefore be DRAWN from a basemap underneath every
+era, so that land no polity covers is still visibly land.**
+
+This shipped and was reported (2026-08), immediately after the data restore above: on the 500 BC
+map the Balkans north of the Greek city-states carried no polity, so the sea appeared to run from
+the Adriatic to the Aegean and **Greece looked like an island**. Italy was severed below the Po
+and Jutland was open water. Nothing was wrong with the data — `world_bc500.geojson` matched the
+import exactly, and both era checks passed. The map was lying anyway. The same hole put the Indus
+basin (600), interior India (bc500), Chukotka (1938) and Novaya Zemlya (1815) out to sea.
+
+**The rule:** `HistoricalMap.tsx` renders `public/countries-50m.json` — merged to a single land
+geometry, so no modern internal border shows through — as a base layer beneath the era's
+polities, hatched with the existing "no data" pattern that already marks unmapped polities. Every
+era draws on that same one object, which makes the invariant **structural rather than merely
+checked**: the coastline cannot vary by period however the era files change, and it is the same
+topology `WorldProgressMap` draws, so the two maps can never disagree about where the coast is.
+
+1. **Never remove the base land layer**, and never make it conditional on the era, the theme, the
+   zoom level, or a feature flag. If it fails to load the polities must still render — but land
+   must never be silently reduced to the ocean fill.
+2. **Unmapped land must stay visually DISTINCT from both ocean and from a real polity.** Painting
+   it like a country implies data we do not have (17–34% of the land in the older eras is
+   unmapped); painting it like sea is the bug above. The hatch does both jobs — keep it.
+3. **The layer is decorative and MUST carry `pointerEvents="none"`**, exactly like the city-marker
+   overlay: it sits under the interactive polity paths and must never swallow a click meant for
+   one.
+4. **This is why `check-era-landmass.mjs` only flags land-claiming-sea and not sea-claiming-land.**
+   Unclaimed land is a legitimate DATA state; it is the RENDERER's job to keep it looking like
+   land. Do not "fix" a gap by inventing a polity to fill it — that would fabricate history to
+   patch a display bug.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open **500 BC**
+   and confirm Greece is a peninsula continuous with the Balkans, not an island; open **600** and
+   confirm the Indus basin and interior Asia read as land.
+
 ### The one escape hatch — re-importing, and its hard gates
 
 Genuinely better-sourced border data is a legitimate change. It is the ONLY way era geometry may
