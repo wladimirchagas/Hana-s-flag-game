@@ -1,5 +1,6 @@
 import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
+import { merge as topoMerge } from "topojson-client";
 import { useTheme } from "../context/ThemeContext";
 import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 import { flagOverlayAspectRatio } from "../lib/flagOverlayAspectRatio";
@@ -94,6 +95,31 @@ export type HistoricalMapProps = {
 const WIDTH = 960;
 const HEIGHT = 500;
 
+/**
+ * The coastline, drawn UNDER every era's polities.
+ *
+ * Borders between polities change between eras; a landmass's outline does not. The
+ * era files only carry POLITIES, and large regions were genuinely unclaimed at many
+ * dates — so without a base layer, land no polity covers is painted with nothing and
+ * reads as open ocean. That shipped and was reported (2026-08): in 500 BC the Balkans
+ * north of the Greek city-states carried no polity, so GREECE APPEARED TO BE AN
+ * ISLAND. The same hole put the Indus basin, interior India, Chukotka and Novaya
+ * Zemlya out to sea in other eras.
+ *
+ * Drawing the land from ONE basemap for ALL eras makes the invariant structural
+ * rather than merely checked: the coastline is the same object every era renders on
+ * top of, so it cannot vary by period however the era files change. This is the same
+ * Natural Earth 50m topology WorldProgressMap draws, so the two maps can never
+ * disagree about where the coast is.
+ *
+ * It is decorative and non-interactive — it must never intercept a click meant for a
+ * polity above it (the same rule the city-marker overlay follows).
+ */
+const LAND_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
+
+/** The merged coastline: one MultiPolygon covering every landmass. */
+type LandGeometry = { type: "MultiPolygon"; coordinates: number[][][][] };
+
 type Palette = {
   ocean: string;
   land: string;
@@ -137,6 +163,9 @@ export const HistoricalMap = memo(function HistoricalMap({
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
   const [data, setData] = useState<FeatureCollection | null>(null);
+  // Every country merged into one land geometry — merging drops the modern internal
+  // borders, which must never show through beneath a historical map.
+  const [land, setLand] = useState<LandGeometry | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
@@ -146,6 +175,25 @@ export const HistoricalMap = memo(function HistoricalMap({
   // a sibling map component and survive a swap between the two.
   const localZoom = useZoomPan(WIDTH, HEIGHT);
   const zoom = externalZoom ?? localZoom;
+
+  // Load the coastline once. It is era-independent by definition, so it is fetched
+  // outside the era effect and never refetched when the era changes. A failure here
+  // is not fatal: the era's polities still render, exactly as before this layer.
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(LAND_URL);
+        if (!res.ok) throw new Error(`Failed to load ${LAND_URL}`);
+        const topo = await res.json();
+        const merged = topoMerge(topo, topo.objects.countries.geometries) as LandGeometry;
+        if (!cancelled) setLand(merged);
+      } catch {
+        if (!cancelled) setLand(null);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, []);
 
   // Load the era's GeoJSON whenever the URL changes.
   useEffect(() => {
@@ -196,8 +244,9 @@ export const HistoricalMap = memo(function HistoricalMap({
 
   // Compute per-feature path strings via d3-geo's equal-earth projection
   // (same as WorldProgressMap so the two maps look like the same world).
-  const { renderedFeatures, spherePath } = useMemo(() => {
-    if (!data || data.features.length === 0) return { renderedFeatures: [], spherePath: null };
+  const { renderedFeatures, spherePath, landPath } = useMemo(() => {
+    if (!data || data.features.length === 0)
+      return { renderedFeatures: [], spherePath: null, landPath: null };
     // Centre the projection on the user-chosen meridian. d3-geo's rotate
     // is [lambda, phi, gamma]; we only touch lambda. South-up is handled
     // separately as an SVG transform so the projection's geometry stays
@@ -256,8 +305,9 @@ export const HistoricalMap = memo(function HistoricalMap({
     // Sorting by projected area makes containment order and paint order agree.
     features.sort((a, b) => b.area - a.area);
     const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
-    return { renderedFeatures: features, spherePath };
-  }, [data, centerLongitude]);
+    const landPath = land ? (pathFn(land as never) ?? null) : null;
+    return { renderedFeatures: features, spherePath, landPath };
+  }, [data, centerLongitude, land]);
 
   // Upstream rates every feature's border accuracy 1 (roughest) to 3. For the older
   // eras it is 1 across the board — the authors telling us these lines are schematic.
@@ -402,6 +452,22 @@ export const HistoricalMap = memo(function HistoricalMap({
                 strokeWidth={0.4}
                 strokeOpacity={0.5}
                 vectorEffect="non-scaling-stroke"
+              />
+            )}
+            {/* The coastline, under every polity. Land no polity of this era covers
+                stays visibly LAND (hatched "no data") instead of reading as ocean —
+                without this, an unclaimed Balkans made Greece look like an island in
+                500 BC. pointerEvents="none" so it can never swallow a click meant for
+                a polity painted on top of it. */}
+            {landPath && (
+              <path
+                d={landPath}
+                fill="url(#hm-nodata)"
+                stroke={palette.stroke}
+                strokeWidth={0.4}
+                strokeOpacity={0.35}
+                vectorEffect="non-scaling-stroke"
+                pointerEvents="none"
               />
             )}
             {renderedFeatures.map((f) => {
