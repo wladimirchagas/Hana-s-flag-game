@@ -3037,6 +3037,12 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Ottoman Empire in 1815: the 1844 crescent-and-star was 29 years away.
     // Red crescent banners were used informally but not standardised yet.
     ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1815 — under Mahmud II. The crescent-and-star flag wasn't standardised until 1844, 29 years after this era.", population: 25_000_000 }],
+    // Russian Empire — consolidated feature in world_1815.geojson
+    ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / Asia", note: "Russian Empire in 1815 — under Tsar Alexander I, spanning from Eastern Europe across Asia. The white-blue-red flag was the imperial standard (modern tricolour dating from 1696).", population: 41_000_000 }],
+    // United Kingdom of Great Britain and Ireland — consolidated feature in world_1815.geojson
+    ["United Kingdom of Great Britain and Ireland", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom of Great Britain and Ireland — the union of England, Scotland, Ireland and Wales under the Union Jack (adopted 1801 after the Act of Union).", population: 18_500_000 }],
+    // Manchu Empire (Qing China) in 1815 — no standardised national flag yet
+    ["Manchu Empire", { noFlag: true, continent: "East Asia", note: "Qing China under the Jiaqing and Daoguang emperors — no standardised national flag. The Yellow Dragon banner wouldn't be adopted until 1889.", population: 360_000_000 }],
     // --- German Confederation states (post-Congress of Vienna, 1815) -----------
     ["Austrian Empire", { noFlag: true, continent: "Central Europe", note: "Austrian Empire — dominant German state; President of the German Confederation.", population: 14_000_000 }],
     ["Bavaria", { noFlag: true, continent: "Central Europe", note: "Kingdom of Bavaria — major German state post-Vienna Congress; retained independence.", population: 3_500_000 }],
@@ -3213,6 +3219,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
     ["Korea", { noFlag: true, continent: "East Asia", note: "Korean Empire (1897–1910) — independent in name, under mounting Japanese and Russian pressure. The Taegukgi dates from 1882.", population: 12_000_000 }],
     // --- European powers and their colonies in 1900 ----------------------------
+    // Consolidated features from world_1900.geojson
+    ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / Asia", note: "Russian Empire under Nicholas II — vast transcontinental empire stretching from Eastern Europe to the Pacific.", population: 128_200_000 }],
+    ["United Kingdom of Great Britain and Ireland", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom of Great Britain and Ireland at the height of the British Empire, ruling India, Canada, Australia, and numerous colonies worldwide.", population: 41_500_000 }],
+    ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia / North Africa", note: "Ottoman Empire in 1900 — in its final decades of decline, losing territory to European powers in the Balkans and North Africa. The crescent-and-star flag was standardised in 1844.", population: 21_000_000 }],
+    // Individual entries for Britain and Russia (fallback for alternate names)
     ["France", { modernName: "France", continent: "Western Europe", note: "French Third Republic — extending its global empire with Indochina, North Africa, and sub-Saharan colonies.", population: 38_900_000 }],
     ["Britain", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom at the height of the British Empire, ruling India, Canada, Australia, and numerous colonies worldwide.", population: 41_500_000 }],
     ["Spain", { flag: "historical-flags/spain-1785.png", continent: "Western Europe", note: "Kingdom of Spain — still holding Cuba, Puerto Rico, Guam, and the Philippines before the 1898 Spanish-American War.", population: 18_400_000 }],
