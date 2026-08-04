@@ -40,6 +40,11 @@ type HistoricalFeature = {
      *  upstream lumped polygon with modern admin-1 lines (see
      *  scripts/tag-derived-boundaries.mjs) rather than sourced for the period. */
     DERIVED?: number | null;
+    /** 1 when this polygon was adopted VERBATIM from the authoritative upstream release
+     *  to attribute land our import leaves unclaimed (see scripts/build-era-gap-fill.mjs
+     *  and scripts/data/era-gap-fill.json). These paint UNDERNEATH the era's own
+     *  polities, so a broad adoption can never cover a finer one we already name. */
+    GAPFILL?: number | null;
   };
   geometry: unknown;
 };
@@ -267,6 +272,8 @@ export const HistoricalMap = memo(function HistoricalMap({
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
       const name = f.properties?.NAME ?? null;
+      // Sourced gap-fill adopted verbatim from upstream (scripts/build-era-gap-fill.mjs).
+      const gapFill = f.properties?.GAPFILL === 1;
       // Decompose geometry into individual polygons so each non-contiguous
       // piece gets a flag image sized to its own bounding box.
       const flagPolys: FlagPoly[] = [];
@@ -295,6 +302,7 @@ export const HistoricalMap = memo(function HistoricalMap({
         flagPolys,
         area: pathFn.area(f as never),
         derived: f.properties?.DERIVED === 1,
+        gapFill,
       };
     });
     // Paint LARGEST FIRST so a small polity that sits inside a bigger one is
@@ -303,7 +311,12 @@ export const HistoricalMap = memo(function HistoricalMap({
     // polities were unreachable: the Bahmani Kingdom sat under Golkonda (1500),
     // Hohenzollern under Württemberg and Brunswick under Hanover (1815).
     // Sorting by projected area makes containment order and paint order agree.
-    features.sort((a, b) => b.area - a.area);
+    // GAPFILL features always sink to the BOTTOM, whatever their area. They are broad
+    // upstream polities adopted to attribute land our finer import leaves unclaimed
+    // (upstream's one "Greek city-states" vs our Athens / Thebes / Sparta + Corinth), so
+    // they must never paint over — or steal a click from — the specific polity we name.
+    // Below them, the existing largest-first order still applies.
+    features.sort((a, b) => (a.gapFill === b.gapFill ? b.area - a.area : a.gapFill ? -1 : 1));
     const spherePath = pathFn({ type: "Sphere" } as never) ?? null;
     const landPath = land ? (pathFn(land as never) ?? null) : null;
     return { renderedFeatures: features, spherePath, landPath };

@@ -77,6 +77,24 @@ const checkOnly = process.argv.includes("--check");
 
 const nameOf = (f) => (f.properties?.NAME ?? f.properties?.name ?? "").trim();
 
+/**
+ * A feature adopted VERBATIM from the authoritative upstream release to attribute land our
+ * import leaves unclaimed (scripts/build-era-gap-fill.mjs). These are sourced polity-border
+ * changes — permitted by the "Sourced polity-border changes" rule in CLAUDE.md — so they are
+ * excluded from the baseline comparison rather than treated as drift.
+ *
+ * They are NOT unchecked: every one must be declared in scripts/data/era-gap-fill.json with
+ * its source URL and the upstream file's content hash. An adoption that is not declared there
+ * fails the build, so geometry can never be smuggled in by tagging it GAPFILL.
+ */
+const isGapFill = (f) => f.properties?.GAPFILL === 1;
+
+let declared = { eras: {} };
+try {
+  declared = JSON.parse(readFileSync(resolve(REPO, "scripts/data/era-gap-fill.json"), "utf8"));
+} catch { /* no adoptions declared yet */ }
+const declaredFor = (era) => new Set((declared.eras?.[era]?.adopted ?? []).map((a) => a.name));
+
 /** Planar shoelace area — enough to spot a ring that encloses nothing. */
 function planarArea(ring) {
   let sum = 0;
@@ -115,6 +133,7 @@ function polygonsFor(geo, name) {
   const polys = [];
   for (const f of geo.features) {
     if (nameOf(f) !== name) continue;
+    if (isGapFill(f)) continue; // sourced adoption — compared separately, not against the baseline
     const g = f.geometry;
     if (!g) continue;
     const list = g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : [];
@@ -171,7 +190,7 @@ for (const file of files) {
   // identical multiset on both sides and are almost all null, so the whole group can
   // be restored wholesale — per feature, never merged, since they are unrelated
   // landmasses that must stay individually selectable.
-  const isUnnamed = (f) => { const n = nameOf(f); return !n || n === "?"; };
+  const isUnnamed = (f) => { const n = nameOf(f); return (!n || n === "?") && !isGapFill(f); };
   const baseUnnamed = base.features.filter(isUnnamed);
   const curUnnamed = cur.features.filter(isUnnamed);
   const unnamedRings = (feats) => {
@@ -228,6 +247,7 @@ for (const file of files) {
   const out = [];
   for (const f of cur.features) {
     const name = nameOf(f);
+    if (isGapFill(f)) { out.push(f); continue; } // sourced adoption — preserved as-is
     if (restoreUnnamed && isUnnamed(f)) continue; // replaced wholesale below
     if (!restore.has(name)) { out.push(f); continue; }
     if (emitted.has(name)) continue;
@@ -280,8 +300,35 @@ for (const file of files) {
   writeFileSync(curPath, JSON.stringify(cur));
 }
 
+// Every adopted polygon must be declared with its provenance. An undeclared GAPFILL
+// feature is unsourced geometry wearing a permitted tag — always a failure.
+const undeclared = [];
+for (const file of files) {
+  const era = file.replace("world_", "").replace(".geojson", "");
+  const geo = JSON.parse(readFileSync(resolve(MAPS_DIR, file), "utf8"));
+  const ok = declaredFor(era);
+  for (const f of geo.features) {
+    if (!isGapFill(f)) continue;
+    const n = nameOf(f);
+    if (!ok.has(n)) undeclared.push(`world_${era}: "${n}"`);
+  }
+}
+if (undeclared.length) {
+  console.error(
+    `\n✗ ${undeclared.length} adopted polygon(s) carry GAPFILL but are NOT declared in ` +
+    `scripts/data/era-gap-fill.json:\n` + [...new Set(undeclared)].map((u) => `  • ${u}`).join("\n") +
+    `\n\nAn adoption without recorded provenance is unsourced geometry. Re-run ` +
+    `node scripts/build-era-gap-fill.mjs, or remove the feature.`,
+  );
+  process.exit(1);
+}
+
 if (!findings.length) {
   console.log("Era geometry matches the authoritative baseline — nothing to restore.");
+  if (Object.keys(declared.eras ?? {}).length) {
+    const n = Object.values(declared.eras).reduce((a, e) => a + e.adopted.length, 0);
+    console.log(`(${n} sourced upstream adoption(s) declared in scripts/data/era-gap-fill.json.)`);
+  }
   process.exit(0);
 }
 

@@ -19,6 +19,7 @@
     "maps:check": "node scripts/check-historical-maps.mjs",
     "maps:check-geometry": "node scripts/restore-era-geometry.mjs --check",
     "maps:check-landmass": "node scripts/check-era-landmass.mjs",
+    "maps:gap-fill": "node scripts/build-era-gap-fill.mjs",
     "maps:optimize": "node scripts/optimize-historical-maps.mjs",
     "maps:tag-derived": "node scripts/tag-derived-boundaries.mjs",
     "eras:check-flags": "node scripts/check-historical-flag-anachronism.mjs",

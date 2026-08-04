@@ -1,0 +1,142 @@
+{
+  "generated": "2026-08-04",
+  "upstream": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson",
+  "eras": {
+    "100": {
+      "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_100.geojson",
+      "sha256_16": "20265dc221c92f07",
+      "gapCells": 1687,
+      "closed": 158,
+      "adopted": [
+        {
+          "name": "Hindu kingdoms",
+          "cells": 138
+        },
+        {
+          "name": "Maya chiefdoms and states",
+          "cells": 20
+        }
+      ]
+    },
+    "600": {
+      "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_600.geojson",
+      "sha256_16": "4995058c02023bfa",
+      "gapCells": 1717,
+      "closed": 419,
+      "adopted": [
+        {
+          "name": "Hindu kingdoms",
+          "cells": 398
+        },
+        {
+          "name": "Maya states",
+          "cells": 21
+        }
+      ]
+    },
+    "800": {
+      "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_800.geojson",
+      "sha256_16": "60dd804d688240b7",
+      "gapCells": 1563,
+      "closed": 134,
+      "adopted": [
+        {
+          "name": "Hindu states",
+          "cells": 77
+        },
+        {
+          "name": "Maya city-states",
+          "cells": 31
+        },
+        {
+          "name": "Hindu states",
+          "cells": 26
+        }
+      ]
+    },
+    "1300": {
+      "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1300.geojson",
+      "sha256_16": "ba66ea1ab75b5b31",
+      "gapCells": 1669,
+      "closed": 160,
+      "adopted": [
+        {
+          "name": "Andean states and chiefdoms",
+          "cells": 37
+        },
+        {
+          "name": "Islamic city-states",
+          "cells": 37
+        },
+        {
+          "name": "Aymara kingdoms",
+          "cells": 86
+        }
+      ]
+    },
+    "1500": {
+      "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1500.geojson",
+      "sha256_16": "e59ac978dc158440",
+      "gapCells": 1840,
+      "closed": 271,
+      "adopted": [
+        {
+          "name": "Malaysian Islamic states",
+          "cells": 22
+        },
+        {
+          "name": "Islamic states",
+          "cells": 9
+        },
+        {
+          "name": "Burmese kingdoms",
+          "cells": 98
+        },
+        {
+          "name": "Islamic states",
+          "cells": 95
+        },
+        {
+          "name": "Hausa States",
+          "cells": 29
+        },
+        {
+          "name": "Islamic city-states",
+          "cells": 18
+        }
+      ]
+    },
+    "1815": {
+      "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1815.geojson",
+      "sha256_16": "62afcd6e3f1f598a",
+      "gapCells": 1619,
+      "closed": 50,
+      "adopted": [
+        {
+          "name": "Mossi States",
+          "cells": 50
+        }
+      ]
+    },
+    "bc500": {
+      "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc500.geojson",
+      "sha256_16": "ebf257ef748c3790",
+      "gapCells": 1680,
+      "closed": 236,
+      "adopted": [
+        {
+          "name": "Hindu kingdoms",
+          "cells": 201
+        },
+        {
+          "name": "Greek city-states",
+          "cells": 19
+        },
+        {
+          "name": "Greek city-states",
+          "cells": 16
+        }
+      ]
+    }
+  }
+}
