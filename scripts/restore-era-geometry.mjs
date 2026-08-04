@@ -57,7 +57,20 @@ const REPO = resolve(__dirname, "..");
 const MAPS_DIR = resolve(REPO, "public/historical-maps");
 const REL = "public/historical-maps";
 
-/** Last commit to touch the era maps before the coastline damage (#894–#902). */
+/**
+ * The commit the era maps were imported at — the last to touch them before the
+ * coastline damage (#894–#902).
+ *
+ * DO NOT MOVE THIS TO MAKE A FAILING CHECK PASS. This is the single loophole most
+ * likely to be reached for, and doing so is a violation of the "a landmass's outline
+ * does not change" hard rule in CLAUDE.md. The baseline records what was IMPORTED; it
+ * is not a checkpoint to advance when the data drifts. A failing check means the
+ * geometry is wrong — run this script without --check and the drift is undone.
+ *
+ * It moves for exactly one reason: an owner-approved re-import from a named,
+ * authoritative, dated source, whose every affected era has been visually verified in
+ * the running app first. See CLAUDE.md for the full gate.
+ */
 const BASELINE_REF = "5eed8d5";
 
 const checkOnly = process.argv.includes("--check");
