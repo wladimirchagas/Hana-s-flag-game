@@ -104,7 +104,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          # 24, not 20: check-historical-maps.mjs imports src/lib/historicalEras.ts
+          # directly for DISPLAY_NAME_FIXES, which needs Node's native TypeScript
+          # type-stripping (22.18+). On Node 20 it dies with ERR_UNKNOWN_FILE_EXTENSION.
+          node-version: "24"
           cache: "npm"
 
       - name: Install dependencies
