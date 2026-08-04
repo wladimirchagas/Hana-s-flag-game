@@ -458,6 +458,81 @@ that hard-codes "2020, not 2010" — add a country to `LATEST_ENUMERATION_YEAR` 
 all its subdivisions to that enumeration. Never weaken a floor or remove a country to make the build
 pass; fix the figure instead.
 
+## Era-map borders may change; COASTLINES MAY NOT — never hand-draw a polygon — hard rule, do not override without approval
+
+**The Learn-mode historical era maps (`public/historical-maps/world_*.geojson`) are an imported
+dataset. Their geometry MUST come from that import. Borders between polities legitimately differ
+from one era to the next — a landmass's outline does not. Never hand-write, redraw, resample, or
+"approximate" a polygon, and never run era geometry through a boolean-union / simplification library
+and commit the result.**
+
+This is the geographic form of the "never generate flag SVG content" and "never fabricate a
+population" rules: a plausible-looking invented coastline is worse than a missing one, because
+nobody can tell it is wrong by looking at it.
+
+### Why this rule exists
+
+This shipped and was reported by the owner (2026-08, PRs #894–#902). A task to make era borders
+period-accurate — a legitimate goal, prompted by the Iberian Union being drawn as nothing more than
+modern Spain plus modern Portugal — was carried out by editing the geometry directly:
+
+* **`world_1600` "Spain" and "Portugal" were replaced by hand-drawn boxes** — an 8-vertex octagon and
+  a 6-vertex hexagon, in place of the imported 175- and 72-vertex outlines. They were **66% and 81%
+  too large** (815,863 km² vs 490,444; 169,000 vs 93,135), spilling across the Pyrenees into France
+  and out into the Bay of Biscay. This is the rectangular block the owner photographed.
+* **`world_1600` "Sicily", "Sardinia" and "Đại Việt" were deleted outright** — both islands and the
+  whole of Vietnam rendered as open ocean. The Vietnam deletion (276,091 km²) had not even been
+  noticed.
+* **A "merge fragmented territories" pass rewrote coordinates wholesale.** Merging a polity's parts
+  into one MultiPolygon is fine; doing it with a boolean-union library is not — it resampled **104
+  rings across 12 era files**, including Korea's main peninsula (765 → 296 points, a 61% loss of
+  coastline detail) and rings of Tsardom of Muscovy, Denmark-Norway, Sweden, the Russian Empire and
+  the United States.
+
+None of it was caught: `check-historical-maps.mjs` only asks whether rings are closed, in range and
+smaller than half the sphere, and all of the above was.
+
+### Rules
+
+1. **Never hand-write coordinates.** If a polity's borders are wrong for its era, the fix is a
+   correctly-dated source polygon, not a polygon you draw. A missing or roughly-dated polity is
+   honest; an invented outline is not.
+2. **Never simplify, resample, or boolean-union era geometry and commit the output.** Merging a
+   polity's fragments into one feature is legitimate ONLY as a re-grouping that preserves every ring
+   byte-for-byte. Dropping a ring that is an exact duplicate of another, or one that encloses nothing
+   (< 4 positions, or zero area — see `repair-historical-maps.mjs`), is the only permitted deletion.
+3. **Never delete a landmass to express a historical claim.** If a territory was not a polity at that
+   date, that is a labelling question — leave the land unclaimed rather than removing the polygon, so
+   the coast stays where it is.
+4. **Represent a union at the LABEL level, not by redrawing land.** The Iberian Union (1580–1640) was
+   a personal union: two crowns, two administrations, two colonial empires, one monarch. The import
+   models it correctly as separate `Spain` and `Portugal` polygons; the union belongs in their
+   `POLITY_REGISTRY` notes, which is where it now lives. The same applies to any future union.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open the era you
+   touched and confirm the coastline is intact — for 1600 that means Iberia is peninsula-shaped with
+   no straight edges, Sicily and Sardinia are present, and Vietnam is land.
+
+### Enforcement
+
+Two checks, both in `npm run flags:check`/the `flag-integrity` workflow (`check-era-maps` job):
+
+* **`scripts/restore-era-geometry.mjs --check` (`npm run maps:check-geometry`) is the primary guard.**
+  It pins every era map to the commit it was imported at (`BASELINE_REF`) and **fails the build** if
+  any polity's ring set has drifted — catching deletion, fabrication and resampling alike, exactly.
+  Rings are compared canonically, so a pure re-serialisation is correctly seen as no change. Running
+  it without `--check` restores the upstream geometry. It needs git history, so its CI job checks out
+  with `fetch-depth: 0`.
+* **`scripts/check-era-landmass.mjs` (`npm run maps:check-landmass`) is the backstop** for geometry
+  with no upstream to compare against (a newly added era file, or a re-baselined import). It
+  rasterises every era at 0.5° against the app's own Natural Earth basemap and **fails the build** if
+  a polygon claims a cluster of cells that are open sea. It is deliberately asymmetric — it never
+  flags unclaimed land, because large regions genuinely had no polity at many dates. Thresholds were
+  measured, not guessed: the fabricated Iberian boxes produce a 27-cell cluster, and the authoritative
+  geometry never exceeds 1. **Never raise `MIN_CLUSTER`, coarsen `GRID_DEG`, or move `BASELINE_REF`
+  forward to make a failure go away** — fix the geometry instead. If an import is genuinely
+  re-baselined, that is an owner-approved change, and the new baseline must be visually verified
+  era by era first.
+
 ## Historical eras must never show an anachronistic flag — hard rule, do not override without approval
 
 **A polity on a Learn-mode historical era map may only be shown a flag that already
