@@ -42,6 +42,8 @@ on:
       - "scripts/check-historical-flag-anachronism.mjs"
       - "src/data/flagAdoptionYears.ts"
       - "scripts/repair-historical-maps.mjs"
+      - "scripts/restore-era-geometry.mjs"
+      - "scripts/check-era-landmass.mjs"
 
 jobs:
   check-proportions:
@@ -90,6 +92,35 @@ jobs:
 
       - name: Verify no capital-city flag duplicates its own subdivision's flag
         run: node scripts/check-capital-subdivision-collision.mjs
+
+  check-era-maps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        # restore-era-geometry.mjs --check compares each era map against the commit it
+        # was imported at, so the job needs history, not just the tip.
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          # 24, not 20: check-historical-maps.mjs imports src/lib/historicalEras.ts
+          # directly for DISPLAY_NAME_FIXES, which needs Node's native TypeScript
+          # type-stripping (22.18+). On Node 20 it dies with ERR_UNKNOWN_FILE_EXTENSION.
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify era-map geometry, provenance and encoding
+        run: node scripts/check-historical-maps.mjs
+
+      - name: Verify no era map's geometry has drifted from the authoritative import
+        run: node scripts/restore-era-geometry.mjs --check
+
+      - name: Verify no era polygon has been drawn past the coastline
+        run: node scripts/check-era-landmass.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

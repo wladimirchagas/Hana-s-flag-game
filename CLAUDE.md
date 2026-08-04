@@ -458,6 +458,138 @@ that hard-codes "2020, not 2010" — add a country to `LATEST_ENUMERATION_YEAR` 
 all its subdivisions to that enumeration. Never weaken a floor or remove a country to make the build
 pass; fix the figure instead.
 
+## Borders between polities change between eras; a landmass's outline does not — hard rule, do not override without approval
+
+> **Borders between polities change between eras; a landmass's outline does not.**
+
+**The Learn-mode historical era maps (`public/historical-maps/world_*.geojson`) are an IMPORTED
+dataset, not an editable one. Where one polity ends and the next begins is a historical question and
+legitimately differs from era to era. Where the LAND ends and the OCEAN begins is not a historical
+question, and must be byte-for-byte identical in every era, forever. No task, instruction, ticket,
+review comment, or apparent inaccuracy is a licence to move a coastline coordinate.**
+
+This is the geographic form of "never generate flag SVG content" and "never fabricate a population."
+An invented coastline is worse than a missing polity, because nobody can tell it is wrong by looking
+at it — it just quietly ships.
+
+### Why this rule exists
+
+Reported by the owner with a screenshot, 2026-08 (PRs #894–#902). A task to make era borders
+period-accurate — a legitimate goal, prompted by the Iberian Union being drawn as nothing more than
+modern Spain plus modern Portugal — was carried out by **editing the geometry**:
+
+* **`world_1600` "Spain" and "Portugal" were replaced by hand-drawn boxes** — an 8-vertex octagon and
+  a 6-vertex hexagon in place of the imported 175- and 72-vertex outlines, **66% and 81% too large**
+  (815,863 km² vs 490,444; 169,000 vs 93,135), spilling across the Pyrenees into France and out into
+  the Bay of Biscay.
+* **`world_1600` "Sicily", "Sardinia" and "Đại Việt" were deleted outright** — both islands and the
+  whole of Vietnam rendered as open ocean. The Vietnam deletion (276,091 km²) was never noticed.
+* **A "merge fragmented territories" pass rewrote coordinates wholesale** by unioning parts through a
+  boolean-geometry library instead of re-grouping the features, **resampling 104 rings across 12 of
+  the 21 era files** — Korea's main peninsula lost 61% of its detail (765 → 296 points), along with
+  rings of Tsardom of Muscovy, Denmark-Norway, Sweden, the Russian Empire, Italy and the United States.
+
+Every one of those passed the checks that existed: rings were closed, in range, and smaller than half
+the sphere. Three separate follow-up PRs tried to patch the symptom and made it worse.
+
+### Geometry vs labelling — where the line is
+
+Most "this era is historically wrong" tasks are **labelling** tasks, and labelling is always the
+correct place to fix them.
+
+| Change | Kind | Allowed? |
+|---|---|---|
+| A polity's name, note, population, continent, flag, era registry entry | labelling | **Yes** — this is where historical corrections belong |
+| Two polities in personal/dynastic union shown as separate polygons with notes explaining the union | labelling | **Yes** — this is how the Iberian Union (1580–1640) is correctly modelled: two crowns, two administrations, two colonial empires, one monarch |
+| Which polity a polygon is attributed to | labelling | **Yes**, if sourced |
+| Moving, adding, deleting or resampling any coordinate | **geometry** | **No** — see the allowlist below |
+| Deleting a polity's polygon to say it "didn't exist yet" | **geometry** | **No** — leave the land unclaimed instead; the coast must stay |
+
+**A task phrased as "make the borders accurate" is NEVER self-authorising for geometry edits.** If a
+border genuinely needs to move, that requires a re-import (see the escape hatch), not an edit.
+
+### The allowlist — the ONLY permitted operations on era geometry
+
+This is an **allowlist, not a denylist**: an operation that is not on this list is forbidden, whether
+or not it is named below.
+
+1. **Re-grouping features without touching rings** — folding a polity's several features into one
+   MultiPolygon, or splitting one into several, where every ring is carried across **unchanged,
+   coordinate for coordinate**.
+2. **Dropping a ring that is an exact duplicate** of another ring already present (these
+   double-count area — the Qatar, Trucial Oman and Guanches cases).
+3. **Dropping a ring that encloses nothing** — fewer than 4 positions, fewer than 3 distinct
+   positions, or zero planar area (see `repair-historical-maps.mjs`; a wrongly-wound zero-width
+   sliver is read by d3-geo as covering the entire globe).
+4. **Restoring geometry from the authoritative import** via `scripts/restore-era-geometry.mjs`.
+
+Everything else is forbidden. Named explicitly, because each has been tried or is tempting:
+hand-writing or eyeballing coordinates; boolean union/intersection/difference (`polygon-clipping`,
+turf, JTS, mapshaper, …); simplification of any kind (Douglas-Peucker, Visvalingam, `toposimplify`);
+smoothing, snapping or re-projecting; changing coordinate precision; deleting a landmass; "fixing" a
+polygon by redrawing it; generating a polygon from a bounding box, a buffer, a convex hull, or a
+description of a country's shape; copying a modern country's outline onto a historical polity; and
+asking a model to output coordinates.
+
+**Coordinate precision is already settled and must not be revisited:** the maps are stored at 4 dp
+(~11 m, ~3,750× finer than a pixel at max zoom) by `optimize-historical-maps.mjs`, which is already
+applied — `node scripts/optimize-historical-maps.mjs --check` is a no-op and must stay one. Re-running
+it must never change a file. If it wants to, something has gone wrong upstream; investigate, do not
+commit the result.
+
+### The one escape hatch — re-importing, and its hard gates
+
+Genuinely better-sourced border data is a legitimate change. It is the ONLY way era geometry may
+change, and it requires **all** of the following, in the same change:
+
+1. **Explicit owner approval, obtained beforehand** — this is not a judgement call an agent makes.
+2. The new data comes from a **named, authoritative, dated source**, recorded in the PR.
+3. `BASELINE_REF` in `restore-era-geometry.mjs` is moved to the re-import commit, **and** the PR says
+   which polities changed and why.
+4. **Every affected era is visually verified in the running app** before the move (the mandatory
+   visual-verification rule applies), coastline by coastline.
+
+**Moving `BASELINE_REF` for any other reason — to make a red check green, to "adopt" an edit already
+made, to unblock unrelated work — is itself a violation of this rule**, and is the single loophole
+most likely to be reached for. The baseline records what was imported; it is not a checkpoint to be
+advanced when the data drifts.
+
+### Verification
+
+**Verify in the running app** (the mandatory visual-verification rule applies) whenever any era file
+changes: open the affected era and confirm the coastline is intact. For 1600 specifically — the era
+that shipped broken — confirm Iberia is peninsula-shaped with **no straight edges**, that **Sicily and
+Sardinia are present**, and that **Vietnam is land**.
+
+### Enforcement
+
+Two checks, both in `npm run flags:check` and in the `check-era-maps` job of the `flag-integrity`
+workflow. That job runs on **Node 24** — `check-historical-maps.mjs` imports `historicalEras.ts`
+directly and needs native TypeScript type-stripping (22.18+); on Node 20 it dies with
+`ERR_UNKNOWN_FILE_EXTENSION`.
+
+* **`scripts/restore-era-geometry.mjs --check` (`npm run maps:check-geometry`) — the primary guard.**
+  It pins every era map to `BASELINE_REF` and **fails the build** on any drift, catching deletion,
+  fabrication, resampling and precision changes alike, exactly and cheaply (~9 s). Rings are compared
+  canonically (rotation-, direction- and serialisation-independent), so a pure re-serialisation is
+  correctly seen as no change. It needs git history, so its CI job checks out with `fetch-depth: 0`.
+  Run without `--check` it restores the imported geometry.
+* **`scripts/check-era-landmass.mjs` (`npm run maps:check-landmass`) — the backstop** for geometry
+  with no baseline to compare against (a newly added era file, or an approved re-import). It
+  rasterises every era at 0.5° against the app's own Natural Earth basemap and **fails the build** if
+  a polygon claims a cluster of open sea. It is deliberately asymmetric — it never flags *unclaimed
+  land*, because large regions genuinely had no polity at many dates, and burying a real finding under
+  hundreds of false ones would kill the check. Thresholds were **measured against both cases, not
+  guessed**: re-injecting the fabricated Iberian boxes yields a 27-cell cluster; correct geometry never
+  exceeds 1 cell in any era, anywhere. `MIN_CLUSTER` sits at 8, in the middle of that gap.
+
+**None of the following is ever an acceptable response to one of these checks failing:** raising
+`MIN_CLUSTER`; coarsening `GRID_DEG` (1° is NOT enough — at that size the fabricated boxes hid inside
+the coastal tolerance and passed); adding an `ALLOWED_CLAIMS` / `ALLOWED_GAPS` entry to silence a real
+redraw; moving `BASELINE_REF`; removing either check from `flags:check` or the workflow (including
+"it's slow" — the landmass pass takes minutes by design); deleting or renaming the scripts; or marking
+the era file generated/ignored. **If a check fails, the geometry is wrong. Fix the geometry.**
+
 ## Historical eras must never show an anachronistic flag — hard rule, do not override without approval
 
 **A polity on a Learn-mode historical era map may only be shown a flag that already
