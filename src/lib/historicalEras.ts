@@ -2165,6 +2165,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Northern Wei", { continent: "East Asia", noFlag: true, note: "Northern Wei Dynasty in China — Xiongnu (Xianbei) origin; controlled northern China amid the period of disunion.", population: 20_000_000 }],
     ["Liu Song", { continent: "East Asia", noFlag: true, note: "Liu Song Dynasty in southern China — one of the Southern Dynasties during the Six Dynasties period.", population: 8_000_000 }],
     ["Koguryo Empire", { continent: "East Asia", noFlag: true, note: "Koguryo (Goguryeo) Empire in Korea — dominant Korean power; frequently in conflict with China.", population: 4_000_000 }],
+    ["Baekje Kingdom", { continent: "East Asia", noFlag: true, note: "Baekje Kingdom of Korea — one of the Three Kingdoms; major cultural intermediary between China and Japan.", population: 2_500_000 }],
+    ["Silla Kingdom", { continent: "East Asia", noFlag: true, note: "Silla Kingdom of Korea — rising power among the Three Kingdoms; would eventually unify Korea.", population: 2_000_000 }],
+    ["Japanese Kofun period", { continent: "East Asia", noFlag: true, note: "Kofun period Japan — characterized by large burial mounds; the Yamato state consolidating authority.", population: 3_000_000 }],
+    ["Nubian kingdoms", { continent: "Northeast Africa", noFlag: true, note: "Nubian kingdoms south of Egypt — Kushite and Meroitic period ending; transitioning to Axumite expansion.", population: 2_000_000 }],
+    ["Sub-Saharan African kingdoms", { continent: "Sub-Saharan Africa", noFlag: true, note: "Various sub-Saharan African kingdoms and chiefdoms circa 400 AD — Bantu expansion ongoing.", population: 5_000_000 }],
+    ["Mayan civilization", { continent: "Mesoamerica", noFlag: true, note: "Maya Classic period city-states circa 400 AD — height of Maya civilization before the 9th-century collapse.", population: 3_000_000 }],
+    ["Andean cultures", { continent: "South America", noFlag: true, note: "Pre-Incan Andean cultures and kingdoms — various highland and coastal polities in flux.", population: 2_000_000 }],
   ])],
 
   // === 600 AD overrides =====================================================
@@ -2187,6 +2194,15 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // China 600 AD
     ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — founded 618 AD, but by 600 AD the Sui dynasty ruled. The Tang would become one of history's greatest empires.", population: 50_000_000 }],
     ["Sui Dynasty", { continent: "East Asia", noFlag: true, note: "Sui dynasty China (589–618) — brief period between the Southern and Northern Dynasties and the Tang.", population: 45_000_000 }],
+    ["Southeast Asian kingdoms", { continent: "Southeast Asia", noFlag: true, note: "Khmer Empire, Sailendra maritime empire, and other Southeast Asian states at 600 AD.", population: 8_000_000 }],
+    ["Aksumite Empire", { continent: "East Africa", noFlag: true, note: "Aksumite Kingdom of the Horn of Africa — at its height in 600 AD; major Red Sea power.", population: 5_000_000 }],
+    ["Korean kingdoms", { continent: "East Asia", noFlag: true, note: "Three Kingdoms of Korea (Goguryeo, Baekje, Silla) circa 600 AD — engaged in constant rivalry for dominance.", population: 8_000_000 }],
+    ["Japanese Asuka period", { continent: "East Asia", noFlag: true, note: "Asuka period Japan circa 600 AD — the introduction of Buddhism and Chinese culture to the Japanese islands.", population: 4_000_000 }],
+    ["Berber kingdoms", { continent: "North Africa", noFlag: true, note: "North African Berber kingdoms and dynasties — resisting Byzantine and Arab expansion. No standardised flags.", population: 3_000_000 }],
+    ["Celtic kingdoms", { continent: "Western Europe", noFlag: true, note: "Celtic kingdoms of Ireland, Wales, and northern Britain circa 600 AD — fragmented and often in conflict.", population: 2_000_000 }],
+    ["Visigothic Iberia", { continent: "Iberia", noFlag: true, note: "Visigothic Kingdom fragmented — various regional powers vying for control; would fall to Islamic conquest in 711.", population: 3_000_000 }],
+    ["Maya city-states", { continent: "Mesoamerica", noFlag: true, note: "Maya city-states at the height of the Classic period around 600 AD — Tikal, Palenque, and other ceremonial centers.", population: 2_000_000 }],
+    ["North Andean kingdoms", { continent: "South America", noFlag: true, note: "Pre-Incan Andean kingdoms and cultures circa 600 AD — various highland and lowland polities.", population: 2_000_000 }],
   ])],
 
   // === 800 AD overrides =====================================================
