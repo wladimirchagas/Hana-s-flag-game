@@ -160,7 +160,7 @@ export default defineConfig({
         // install. National + territory flags (public/flags/*.svg) stay
         // precached — they're small and on the main flag grid.
         globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**', '**/flags/sub/**'],
-        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
       devOptions: {
         // Keep the install button working in `npm run dev` so we can test
