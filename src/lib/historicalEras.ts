@@ -3475,6 +3475,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union in 1960 at the height of the Cold War, spanning from Eastern Europe to the Pacific under Nikita Khrushchev. The red flag with hammer and sickle was its national symbol.", population: 214_000_000 }],
+    ["Yugoslavia", { flag: "historical-flags/yugoslavia.png", continent: "SE Europe", note: "Socialist Federal Republic of Yugoslavia (1945–1992) — the unified Yugoslav state under Josip Broz Tito, spanning South Slavic territories. The blue-white-red tricolour represented the socialist federation.", population: 18_500_000 }],
+    ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Czechoslovak Socialist Republic (1948–1968) — formally communist from 1948, though relative liberalization occurred by 1960. The red-white-blue tricolour represented the unified Czechoslovak state until the 1989 Velvet Revolution.", population: 14_000_000 }],
     ["Namibia", { noFlag: true, continent: "Southern Africa", note: "South West Africa — still ruled by South Africa against UN objection; it became independent Namibia, with its own flag, in 1990.", population: 600_000 }],
     ["Mozambique", { flag: "historical-flags/portugal-1500.png", continent: "East Africa", note: "Portuguese Mozambique — the independence war began in 1964 and ended in 1975.", population: 7_000_000 }],
     ["Zambia", { modernName: "United Kingdom", continent: "Southern Africa", note: "Northern Rhodesia, part of the Central African Federation; Zambia and its flag came in 1964.", population: 3_100_000 }],
