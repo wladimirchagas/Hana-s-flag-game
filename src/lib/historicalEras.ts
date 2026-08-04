@@ -3037,6 +3037,12 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Ottoman Empire in 1815: the 1844 crescent-and-star was 29 years away.
     // Red crescent banners were used informally but not standardised yet.
     ["Ottoman Empire", { noFlag: true, continent: "SE Europe / Western Asia", note: "Ottoman Empire in 1815 — under Mahmud II. The crescent-and-star flag wasn't standardised until 1844, 29 years after this era.", population: 25_000_000 }],
+    // Russian Empire — consolidated feature in world_1815.geojson
+    ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / Asia", note: "Russian Empire in 1815 — under Tsar Alexander I, spanning from Eastern Europe across Asia. The white-blue-red flag was the imperial standard (modern tricolour dating from 1696).", population: 41_000_000 }],
+    // United Kingdom of Great Britain and Ireland — consolidated feature in world_1815.geojson
+    ["United Kingdom of Great Britain and Ireland", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom of Great Britain and Ireland — the union of England, Scotland, Ireland and Wales under the Union Jack (adopted 1801 after the Act of Union).", population: 18_500_000 }],
+    // Manchu Empire (Qing China) in 1815 — no standardised national flag yet
+    ["Manchu Empire", { noFlag: true, continent: "East Asia", note: "Qing China under the Jiaqing and Daoguang emperors — no standardised national flag. The Yellow Dragon banner wouldn't be adopted until 1889.", population: 360_000_000 }],
     // --- German Confederation states (post-Congress of Vienna, 1815) -----------
     ["Austrian Empire", { noFlag: true, continent: "Central Europe", note: "Austrian Empire — dominant German state; President of the German Confederation.", population: 14_000_000 }],
     ["Bavaria", { noFlag: true, continent: "Central Europe", note: "Kingdom of Bavaria — major German state post-Vienna Congress; retained independence.", population: 3_500_000 }],
@@ -3094,6 +3100,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["France", { modernName: "France", continent: "Western Europe", note: "French Third Republic (1870-1940), founded after defeat in the Franco-Prussian War. The tricolour of 1880 is the flag France flies today.", population: 37_700_000 }],
     ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / North Asia", note: "Russian Empire under Alexander II, in the last year of his reign.", population: 97_700_000 }],
     ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Ottoman Empire after the 1877-78 Russo-Turkish War, which cost it most of its Balkan territory. The crescent-and-star flag was standardised in 1844.", population: 20_000_000 }],
+    // Consolidated features from world_1880.geojson
+    ["United Kingdom of Great Britain and Ireland", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom of Great Britain and Ireland at the height of the British Empire, ruling India, Canada, Australia, and numerous colonies worldwide.", population: 35_000_000 }],
+    ["Kingdom of Brazil", { flag: "historical-flags/empire-of-brazil.png", continent: "South America", note: "Empire of Brazil under Dom Pedro II — the monarchy flew the green flag with the golden lozenge and imperial arms. The empire would fall in 1889, giving way to a republic.", population: 10_000_000 }],
     ["Imperial Japan", { modernName: "Japan", continent: "East Asia", note: "Meiji Japan - rapidly industrialising after the 1868 Restoration. The Hinomaru became the national flag in 1870 and is unchanged today.", population: 36_600_000 }],
     ["Portugal", { flag: "historical-flags/portugal-1500.png", continent: "Iberia", note: "Kingdom of Portugal - the blue-and-white constitutional monarchy flag flew from 1830 to 1910; the modern green-and-red was adopted in 1911.", population: 4_600_000 }],
     // --- Colonies and dependencies (they flew the ruling power's flag) ------
@@ -3213,6 +3222,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
     ["Korea", { noFlag: true, continent: "East Asia", note: "Korean Empire (1897–1910) — independent in name, under mounting Japanese and Russian pressure. The Taegukgi dates from 1882.", population: 12_000_000 }],
     // --- European powers and their colonies in 1900 ----------------------------
+    // Consolidated features from world_1900.geojson
+    ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / Asia", note: "Russian Empire under Nicholas II — vast transcontinental empire stretching from Eastern Europe to the Pacific.", population: 128_200_000 }],
+    ["United Kingdom of Great Britain and Ireland", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom of Great Britain and Ireland at the height of the British Empire, ruling India, Canada, Australia, and numerous colonies worldwide.", population: 41_500_000 }],
+    ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia / North Africa", note: "Ottoman Empire in 1900 — in its final decades of decline, losing territory to European powers in the Balkans and North Africa. The crescent-and-star flag was standardised in 1844.", population: 21_000_000 }],
+    // Individual entries for Britain and Russia (fallback for alternate names)
     ["France", { modernName: "France", continent: "Western Europe", note: "French Third Republic — extending its global empire with Indochina, North Africa, and sub-Saharan colonies.", population: 38_900_000 }],
     ["Britain", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom at the height of the British Empire, ruling India, Canada, Australia, and numerous colonies worldwide.", population: 41_500_000 }],
     ["Spain", { flag: "historical-flags/spain-1785.png", continent: "Western Europe", note: "Kingdom of Spain — still holding Cuba, Puerto Rico, Guam, and the Philippines before the 1898 Spanish-American War.", population: 18_400_000 }],
@@ -3251,6 +3265,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia / North Africa", note: "Ottoman Empire in terminal decline — on the eve of World War I, the Ottomans had already lost most of their European and North African territories in the Balkans Wars (1912–1913). Still controlling Anatolia, parts of the Levant, Mesopotamia, and Arabian Peninsula. The crescent-and-star flag was standardised in 1844.", population: 12_000_000 }],
+    ["Austro-Hungarian Empire", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austro-Hungarian Empire on the eve of World War I — the dual monarchy of the Habsburgs, spanning Central Europe. The monarchy would collapse in November 1918 after Austria-Hungary's military defeat, leading to the emergence of Austria, Hungary, Yugoslavia, Czechoslovakia and the addition of territory to Romania and Poland.", population: 51_000_000 }],
     ["Kingdom of Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 36_000_000 }],
     ["Libya", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya — taken from the Ottomans in 1911–12 and still being fought over when the war began.", population: 1_000_000 }],
     ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland, on the Indian Ocean coast.", population: 500_000 }],
@@ -3309,6 +3325,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   ["ad1920", new Map<string, PolityInfo>([
     ["Ottoman Sultanate", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Ottoman Empire after the 1877-78 Russo-Turkish War; in terminal decline as the Turkish War of Independence began in 1919. The crescent-and-star flag was standardised in 1844.", population: 18_000_000 }],
+    ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union was formed on 30 December 1922 from the remnants of the Russian Empire following the Russian Civil War (1918–1922). The red flag with the hammer and sickle became the national symbol of the communist state.", population: 110_000_000 }],
+    ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Czechoslovak Republic (1918–1938) — newly formed from the dissolution of Austria-Hungary, uniting Czech and Slovak lands. The red-white-blue tricolour was adopted as the national flag in 1920.", population: 14_000_000 }],
+    ["Yugoslavia", { flag: "historical-flags/yugoslavia.png", continent: "SE Europe", note: "Kingdom of Serbs, Croats and Slovenes (1918–1929, renamed Kingdom of Yugoslavia in 1929) — formed from South Slavic territories of the dissolved Austria-Hungary. The blue-white-red tricolour represented the new South Slavic state.", population: 12_000_000 }],
+    ["British Raj", { modernName: "United Kingdom", continent: "South Asia", note: "British India — the Raj at its height, covering today's India, Pakistan, Bangladesh and Burma. The Union Jack was the official flag; the Indian tricolour was adopted at independence in 1947.", population: 306_000_000 }],
     ["Ceylon", { modernName: "United Kingdom", continent: "South Asia", note: "British Crown Colony of Ceylon under direct British rule since 1815; flew the Union Jack. Independence and the distinctive lion flag came in 1948.", population: 3_500_000 }],
     ["Malaysia", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Malaya — the Straits Settlements and protected Malay sultanates; not yet federated as Malaysia, which formed in 1963.", population: 2_000_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 37_000_000 }],
@@ -3346,6 +3366,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union established on 30 December 1922. In 1938, under Stalin's leadership, the USSR was a fully consolidated totalitarian state spanning from Eastern Europe across Asia to the Pacific. The red flag with the hammer and sickle was its national symbol.", population: 168_000_000 }],
     ["Turkey", { flag: "historical-flags/ottoman-empire.png", continent: "Western Asia", note: "Turkish Republic (1923–present) — established under Mustafa Kemal Atatürk after the collapse of the Ottoman Empire. The red flag with white crescent and star was adopted in 1923 and remains Turkey's flag today.", population: 16_000_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Fascist Italy under Mussolini — the green-white-red tricolour carried the Savoy arms of the Kingdom. The monarchy remained until 1946, when the republic removed the arms from the flag.", population: 43_000_000 }],
     ["Libya", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya, declared an integral part of Italy in 1939.", population: 850_000 }],
@@ -3398,6 +3419,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union at the end of World War II, after defeating Nazi Germany. The USSR emerged as one of two superpowers, with control over Eastern Europe and major influence in Asia. The red flag with the hammer and sickle was its national symbol until 1991.", population: 194_000_000 }],
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was still under British rule as the Dominion of Ceylon in 1945 (Ceylon became independent in 1948, renamed Sri Lanka in 1972). The Dominion's distinctive lion flag was adopted in 1951; this era predates it, but the flag represents the post-1948 identity.", modernName: "United Kingdom", population: 6_500_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at the war's end — partition and independence came two years later, in 1947.", population: 389_000_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a dominion that fought with the Allies, flying British flags and the 1928 orange-white-blue; today's flag dates from 1994.", population: 11_400_000 }],
@@ -3467,6 +3489,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union in 1960 at the height of the Cold War, spanning from Eastern Europe to the Pacific under Nikita Khrushchev. The red flag with hammer and sickle was its national symbol.", population: 214_000_000 }],
+    ["Yugoslavia", { flag: "historical-flags/yugoslavia.png", continent: "SE Europe", note: "Socialist Federal Republic of Yugoslavia (1945–1992) — the unified Yugoslav state under Josip Broz Tito, spanning South Slavic territories. The blue-white-red tricolour represented the socialist federation.", population: 18_500_000 }],
+    ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Czechoslovak Socialist Republic (1948–1968) — formally communist from 1948, though relative liberalization occurred by 1960. The red-white-blue tricolour represented the unified Czechoslovak state until the 1989 Velvet Revolution.", population: 14_000_000 }],
     ["Namibia", { noFlag: true, continent: "Southern Africa", note: "South West Africa — still ruled by South Africa against UN objection; it became independent Namibia, with its own flag, in 1990.", population: 600_000 }],
     ["Mozambique", { flag: "historical-flags/portugal-1500.png", continent: "East Africa", note: "Portuguese Mozambique — the independence war began in 1964 and ended in 1975.", population: 7_000_000 }],
     ["Zambia", { modernName: "United Kingdom", continent: "Southern Africa", note: "Northern Rhodesia, part of the Central African Federation; Zambia and its flag came in 1964.", population: 3_100_000 }],
