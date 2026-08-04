@@ -34,3 +34,8 @@ scripts/data/*-adm1.geojson
 .claude/worktrees/
 flag-audit.html
 scripts/__pycache__/
+
+# Cached upstream era files fetched by scripts/build-era-gap-fill.mjs. Not committed:
+# 28 MB of source data whose exact content is pinned by the sha256 recorded for each era
+# in scripts/data/era-gap-fill.json, so provenance survives without the bulk.
+scripts/data/upstream-eras/

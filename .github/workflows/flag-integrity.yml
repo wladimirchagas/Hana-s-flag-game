@@ -44,6 +44,8 @@ on:
       - "scripts/repair-historical-maps.mjs"
       - "scripts/restore-era-geometry.mjs"
       - "scripts/check-era-landmass.mjs"
+      - "scripts/build-era-gap-fill.mjs"
+      - "scripts/data/era-gap-fill.json"
       # The era renderer draws the coastline basemap under every era, so land no
       # polity covers still reads as land rather than ocean (the "Greece looked like
       # an island" bug). A change here can break the coastline without touching data.

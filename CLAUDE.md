@@ -522,6 +522,9 @@ or not it is named below.
    positions, or zero planar area (see `repair-historical-maps.mjs`; a wrongly-wound zero-width
    sliver is read by d3-geo as covering the entire globe).
 4. **Restoring geometry from the authoritative import** via `scripts/restore-era-geometry.mjs`.
+5. **Adopting a SOURCED polity polygon VERBATIM** — see "Sourced polity-border changes" below.
+   Every coordinate must come from the source unmodified; the moment you adjust one, this
+   stops being an adoption and becomes a redraw.
 
 Everything else is forbidden. Named explicitly, because each has been tried or is tempting:
 hand-writing or eyeballing coordinates; boolean union/intersection/difference (`polygon-clipping`,
@@ -576,10 +579,55 @@ topology `WorldProgressMap` draws, so the two maps can never disagree about wher
    and confirm Greece is a peninsula continuous with the Balkans, not an island; open **600** and
    confirm the Indus basin and interior Asia read as land.
 
-### The one escape hatch — re-importing, and its hard gates
+### Sourced polity-border changes ARE allowed — redrawing them by hand is not
 
-Genuinely better-sourced border data is a legitimate change. It is the ONLY way era geometry may
-change, and it requires **all** of the following, in the same change:
+**Where a polity's border sits, and which polity holds a piece of land, are HISTORICAL
+questions with real answers. Changing them is legitimate when the change comes from an
+authoritative source. What is forbidden is not "changing a border" — it is producing a
+border from nothing.** A change qualifies only if every one of these holds:
+
+1. **The geometry is adopted VERBATIM from a named source.** Copy the source's coordinates
+   unmodified. No clipping, no unioning, no simplification, no smoothing, no interpolation,
+   no "adjusting to fit" — the instant you edit a coordinate, the result is your drawing,
+   not the source's, and Rule 1 of this section is broken. If a source's polygon does not
+   fit the shape of the gap you wanted to fill, adopt it anyway and let paint order sort it
+   out, or leave the gap.
+2. **The source is authoritative and citable** — the upstream historical-basemaps release,
+   a published historical atlas with georeferenced boundaries, or an equivalent scholarly
+   dataset. A model's output is NEVER a source. Neither is "it looks about right", another
+   era's file, or a modern country's outline.
+3. **Provenance is recorded in the repository**, not just in a PR description: the source
+   URL, a content hash of the exact file adopted from, and the fetch date, so any adopted
+   polygon can be traced back and re-verified later. `scripts/data/era-gap-fill.json` is
+   that record for the upstream-adoption pass.
+4. **It is generated, never hand-edited.** The adoption runs through a script
+   (`scripts/build-era-gap-fill.mjs`) so it is reproducible and reviewable as a diff of
+   inputs rather than of 4,000 coordinates. Never hand-edit an era GeoJSON.
+5. **A sourced estimate is acceptable where it is honestly labelled as one.** Ancient
+   borders are frontiers and spheres of influence, not surveyed lines; an authoritative
+   dataset's best estimate is the right thing to show. What is never acceptable is OUR
+   estimate.
+6. **It must not change the coastline.** This is the absolute constraint and it outranks
+   everything in this section: a sourced polity change may reattribute land between
+   polities, but the outline where land meets sea is fixed. `check-era-landmass.mjs` still
+   gates it, and an adopted polygon that reaches past the coast is rejected — adopt a
+   different source or leave the gap. **No amount of sourcing licenses moving a coastline.**
+7. **Adopted polygons must never steal attribution from a finer existing polity.** Our
+   import names more polities than the current upstream release does in some eras (bc500
+   has Athens, Thebes, Sparta + Corinth where upstream has one "Greek city-states"). An
+   adopted polygon is tagged `GAPFILL: 1` and always painted UNDERNEATH the era's own
+   features, so it can only ever fill space nothing else claims. Never let a coarse
+   adoption overwrite a specific one.
+
+**Filling a coverage gap by inventing a polity remains forbidden.** If no source attributes
+a piece of land, it stays unattributed and renders as hatched unmapped land — which is what
+it honestly is. An unattributed region is not a bug; a fabricated one is.
+
+### Wholesale re-import — the heavier escape hatch, and its hard gates
+
+Replacing an era file wholesale — as opposed to adopting individual sourced polygons per the
+section above — resets the baseline every other guard is measured against, so it carries heavier
+gates. It requires **all** of the following, in the same change:
 
 1. **Explicit owner approval, obtained beforehand** — this is not a judgement call an agent makes.
 2. The new data comes from a **named, authoritative, dated source**, recorded in the PR.
