@@ -46,6 +46,8 @@ on:
       - "scripts/check-era-landmass.mjs"
       - "scripts/build-era-gap-fill.mjs"
       - "scripts/data/era-gap-fill.json"
+      - "scripts/check-era-anachronism.mjs"
+      - "src/data/polityExistence.ts"
       # The era renderer draws the coastline basemap under every era, so land no
       # polity covers still reads as land rather than ocean (the "Greece looked like
       # an island" bug). A change here can break the coastline without touching data.
@@ -127,6 +129,9 @@ jobs:
 
       - name: Verify no era polygon has been drawn past the coastline
         run: node scripts/check-era-landmass.mjs
+
+      - name: Verify no polity appears on a map that predates or postdates it
+        run: node scripts/check-era-anachronism.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

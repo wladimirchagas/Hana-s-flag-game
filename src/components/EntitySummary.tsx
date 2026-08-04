@@ -37,6 +37,11 @@ export type HistoricalSummaryProps = {
   /** True when the polity's borders are a modern administrative stand-in rather
    *  than a boundary sourced for the period. */
   approximateExtent?: boolean;
+  /** Set when the upstream dataset draws this polity for the WRONG DATE — the borders
+   *  or the very existence of the entity are anachronistic for this era. We do not
+   *  redraw them (that would mean inventing a boundary), so the panel says so instead.
+   *  Sourced in src/data/polityExistence.ts; enforced by check-era-anachronism.mjs. */
+  datingCaveat?: { issue: string; actual: string };
 };
 
 export type EntitySummaryProps = ModernSummaryProps | HistoricalSummaryProps;
@@ -102,6 +107,13 @@ export function EntitySummary(props: EntitySummaryProps) {
     rows.push({
       label: "Borders",
       value: "Approximate — drawn along modern administrative boundaries",
+    });
+  // A known anachronism in the source data. Disclosing it is the honest alternative to
+  // inventing the correct borders — the same discipline as "a missing flag beats a wrong one".
+  if (h.datingCaveat)
+    rows.push({
+      label: "Dating",
+      value: `${h.datingCaveat.issue} ${h.datingCaveat.actual}`,
     });
   if (typeof h.population === "number")
     rows.push({ label: "Population", value: formatHistoricalPop(h.population) });

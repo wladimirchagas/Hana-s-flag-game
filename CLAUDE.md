@@ -677,6 +677,61 @@ redraw; moving `BASELINE_REF`; removing either check from `flags:check` or the w
 "it's slow" — the landmass pass takes minutes by design); deleting or renaming the scripts; or marking
 the era file generated/ignored. **If a check fails, the geometry is wrong. Fix the geometry.**
 
+### Temporal accuracy — a polity must belong to the date it is shown on
+
+**Fidelity to the import is not accuracy. The import can be wrong for its own date, and it is:
+the upstream dataset labels the 1945 subcontinent "India", "Pakistan" and "Bangladesh" though
+partition was 1947 and Bangladesh 1971, draws one undivided "Vietnam" in 1960 though the country
+was split at the 17th parallel from 1954, and puts "USSR" on the 1920 map two years before the
+union was founded. A polity on the wrong map is the temporal twin of an anachronistic flag.**
+
+`src/data/polityExistence.ts` is the authority: sourced existence windows (`POLITY_EXISTENCE`),
+each with an authoritative citation, plus `ERA_EXTENT_CAVEATS` for anachronisms we cannot fix.
+
+### The two remedies, in order of preference
+
+1. **Relabel — the free fix.** When the territory is roughly right and only the NAME is wrong for
+   the date, add an era-specific display remap to `POLITY_NAME_FOR_ERA` in `historicalEras.ts`.
+   This changes what the panel SHOWS, never the dataset NAME (which stays the selection and
+   registry key) and never the geometry. 1920's "Iran" shows as **Persia** (renamed 1935), 1945's
+   "Zaire" as **Belgian Congo** (Zaire only 1971–97), 800's "Ghana" as the **Ghana Empire** (an
+   entirely different polity from the modern state that took the name in 1957). Prefer this
+   always: it costs nothing and removes the falsehood outright.
+2. **Disclose — when the borders are wrong too.** When the EXTENT is also anachronistic,
+   relabelling is not enough and the correct boundary cannot be sourced. Add an
+   `ERA_EXTENT_CAVEATS` entry; the panel then shows a **Dating** row saying exactly what is wrong
+   and what was actually there. **This is the honest outcome, not a failure** — the same
+   discipline as "a missing flag beats a wrong one".
+
+### Rules
+
+1. **Never redraw a border to fix a date.** Inventing the 1945 British India boundary to remove
+   the partition line would be fabricated geography — worse than the disclosed inaccuracy. This is
+   the landmass rule's sibling and is equally absolute.
+2. **Never add or edit a `POLITY_EXISTENCE` window without an authoritative source**, and never
+   delete or widen one to silence a failure. If the check fires, the map is wrong, not the table.
+3. **A polity absent from the table is UNCHECKED, never assumed correct.** Coverage is a curated,
+   growing set focused on modern-era states, whose names are unambiguous and whose errors are
+   glaring. Ancient polities have contested dates and obscure names a name-keyed table cannot
+   resolve safely — guessing at them would produce false failures and get the check weakened.
+   Growing the table is how coverage grows; padding it with guesses is not.
+4. **A place name that outlived a state is not automatically an error.** "Ghana" in 800 is the
+   Ghana Empire; "Congo" in 1600 is the Kingdom of Kongo; "Yemen" long predates the 1990
+   unification. Resolve these by remapping the display name for that era, never by assuming the
+   modern state's dates apply.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open 1945 and
+   confirm India/Pakistan/Bangladesh each show a **Dating** row explaining the partition, and open
+   1920 and confirm Iran shows as **Persia**.
+
+### Enforcement
+
+`scripts/check-era-anachronism.mjs` (`npm run maps:check-anachronism`, in `npm run flags:check`
+and the `check-era-maps` CI job) applies the era display remap to every polity NAME in every era
+file and **fails the build** on any polity outside its sourced window that is not disclosed in
+`ERA_EXTENT_CAVEATS`. It prints the disclosed ones on every run, so known inaccuracies stay
+visible rather than fading into the background. Never weaken it; fix the label or add the
+disclosure.
+
 ## Historical eras must never show an anachronistic flag — hard rule, do not override without approval
 
 **A polity on a Learn-mode historical era map may only be shown a flag that already

@@ -3639,12 +3639,42 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
  * falls through to DISPLAY_NAME_FIXES, then to the raw NAME.
  */
 const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> = new Map([
+  // Medieval West Africa: the dataset's "Ghana" in these eras is the Wagadou/Ghana
+  // Empire (c. 300–1200), an entirely different polity from the modern state that took
+  // its name at independence in 1957.
+  ["ad800", new Map<string, string>([["Ghana", "Ghana Empire"]])],
+  ["ad1000", new Map<string, string>([["Ghana", "Ghana Empire"]])],
+  ["ad1200", new Map<string, string>([["Ghana", "Ghana Empire"]])],
+  ["ad1900", new Map<string, string>([
+    ["India", "British India"],              // Republic of India dates from the 1947 partition
+  ])],
+  ["ad1914", new Map<string, string>([
+    ["Eritrea", "Italian Eritrea"],          // Italian colony 1890–1947; independence 1993
+    ["Rhodesia", "Southern Rhodesia"],       // "Rhodesia" is the 1965–79 UDI state
+  ])],
+  ["ad1920", new Map<string, string>([
+    ["Iran", "Persia"],                      // Persia asked to be called Iran only in 1935
+    ["Ghana", "Gold Coast"],                 // Gold Coast until independence in 1957
+    ["Malaysia", "British Malaya"],          // Malaysia was formed in 1963
+    ["Eritrea", "Italian Eritrea"],          // Italian colony 1890–1947
+    ["Zimbabwe", "Southern Rhodesia"],       // independence, and the name, came in 1980
+  ])],
+  ["ad1938", new Map<string, string>([
+    ["India", "British India"],              // partition 1947
+    ["Malaysia", "British Malaya"],          // Malaysia formed 1963
+  ])],
   ["ad1945", new Map<string, string>([
     // After WWII, the 1945 file shows several African territories as independent
     // when they were not yet. These were mandates, protectorates, or colonial territories.
     ["Namibia", "South West Africa"],        // German mandate → SA mandate; independence 1990
     ["Zimbabwe", "Southern Rhodesia"],       // British territory; independence 1980
     ["Botswana", "Bechuanaland"],            // British protectorate; independence 1966
+    ["Rhodesia", "Southern Rhodesia"],       // "Rhodesia" is the 1965–79 UDI state
+    ["Sri Lanka", "Ceylon"],                 // renamed Sri Lanka on becoming a republic in 1972
+    ["Zaire", "Belgian Congo"],              // Zaire was the name only from 1971 to 1997
+    ["Malaysia", "British Malaya"],          // Malaysia formed 1963
+    ["Israel", "Mandatory Palestine"],       // Israel declared 14 May 1948
+    ["Eritrea", "Eritrea (British administration)"], // British military administration 1941–52
   ])],
   ["ad1960", new Map<string, string>([
     // The 1960 decolonisation wave. Many territories shown on the map as independent
@@ -3654,6 +3684,10 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Botswana", "Bechuanaland"],                 // Independent 30 Sept 1966
     ["Zimbabwe", "Southern Rhodesia"],            // Independent 1980
     ["Namibia", "South West Africa"],             // Independence 1990
+    ["Sri Lanka", "Ceylon"],                      // Renamed Sri Lanka in 1972
+    ["Zaire", "Congo-Léopoldville"],              // Named Zaire only 1971–1997
+    ["Malaysia", "Federation of Malaya"],         // Malaysia formed 1963
+    ["Eritrea", "Eritrea (federated with Ethiopia)"], // Federated 1952; annexed 1962; independent 1993
   ])],
 ]);
 
