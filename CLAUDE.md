@@ -1423,6 +1423,55 @@ legal/administrative framework of the country concerned.
 3. **Document your source** in a code comment whenever you add or change a type label or tier —
    e.g. `// Governed under Lord Howe Island Act 1953 (NSW), not Commonwealth law`.
 
+## A map's "data loaded" callback must never be able to close a render loop — hard rule, do not override without approval
+
+**A callback prop that hands the parent freshly-built objects, and whose identity is also a
+dependency of the effect that calls it, is an infinite render loop.** The parent stores the new
+objects in state → re-renders → creates a new callback identity → the effect re-runs → hands the
+parent new objects again, forever. React caps it and throws "Maximum update depth exceeded"; before
+that it holds the main thread at 100%.
+
+### Why this rule exists
+
+This shipped and was reported (2026-08) as **"selecting a polity in the Learn-mode world map makes
+the screen go blank."** `HistoricalMap`'s `onDataLoaded` effect depended on `[data, onDataLoaded]`,
+and `LearnPage` passed an **inline arrow** — a new function every render — that called three
+setters (`setAvailableHistoricalNames`, `setPolityRulers`, `setDerivedBoundaryNames`) with a Set,
+a Map and a Set built fresh on every call. The loop ran on **every historical era, from page load,
+with no interaction at all**: measured in the production build, an idle 1945 map burned **5.97 s of
+CPU in a 6 s window** (the modern map: 0.10 s). Selecting a polity made it heavier still, because
+the cross-era selection-validation effect (which depends on `availableHistoricalNames`) then also
+re-ran each iteration and rebuilt `selected` — re-rendering the panel, the ~200 polity paths and
+the flag overlay on every pass. `LearnPage` had memoised `onSelect` and `onHover` for exactly this
+reason and `onDataLoaded` was left inline.
+
+### Rules
+
+1. **A notify-the-parent effect must depend on the DATA, never on the callback's identity.** Hold
+   the callback in a ref (`onDataLoadedRef`, updated in its own effect) and call
+   `ref.current(...)` from an effect keyed only on the data. This makes "fires once per data load"
+   **structural** — no future caller can reopen the loop by forgetting to memoise. Never move a
+   callback prop back into such an effect's dependency array.
+2. **Memoise every callback prop passed to a `memo()`'d map component** (`useCallback`, stable
+   deps) — `HistoricalMap` and `WorldProgressMap` are both `memo()`'d precisely so unrelated
+   `LearnPage` state changes don't re-render a 200-path SVG. An inline arrow silently defeats that.
+3. **Never "fix" a loop like this by weakening what the callback sends** (e.g. caching the Set
+   identity in the child, or comparing contents in the parent's setters). Those are band-aids over
+   a dependency bug; fix the dependency.
+4. **Verify with a CPU measurement, not by eye — an idle page that looks fine can still be
+   looping.** Open a historical era in the built app, leave it untouched, and confirm the main
+   thread is idle (CDP `Performance.getMetrics` → `TaskDuration` growth over a quiet window should
+   be a fraction of a second, matching the `today` era; anything approaching wall-clock time is a
+   loop). In dev, the console must show **no** "Maximum update depth exceeded".
+
+### Enforcement
+
+There is no automated check — the loop needs a running browser and a CPU measurement to see, and it
+produces no build, type or lint error (an inline arrow prop is perfectly valid TypeScript). The
+guard is this rule plus rule 4's measurement: when reviewing any change to `HistoricalMap`,
+`WorldProgressMap` or the props `LearnPage` passes them, confirm no callback prop is inline and no
+notify effect lists a callback in its dependency array.
+
 ## Every rendered subdivision must be selectable — geo and meta must not drift — hard rule, do not override without approval
 
 **If a subdivision is drawn on the subdivision map (it has a polygon in
