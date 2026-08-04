@@ -3257,6 +3257,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Puerto Rico (US)", { modernName: "United States", continent: "Caribbean", note: "Puerto Rico — ceded to the United States from Spain in 1898.", population: 900_000 }],
     ["Guam (US)", { modernName: "United States", continent: "Pacific", note: "Guam — ceded to the United States from Spain in 1898.", population: 8_000 }],
     ["Philippines (US)", { modernName: "United States", continent: "Southeast Asia", note: "Philippines — ceded to the United States from Spain in 1898; American colonial rule began.", population: 7_600_000 }],
+    // Pacific island territories — added after consolidating fragmented polities
+    ["Fiji", { noFlag: true, continent: "Pacific", note: "Kingdom of Fiji — British colony from 1874; island nation in the South Pacific.", population: 150_000 }],
+    ["Tonga", { modernName: "Tonga", continent: "Pacific", note: "Kingdom of Tonga — the red flag with its canton cross was fixed in the 1875 constitution and is unchanged today; the only Pacific kingdom never colonised.", population: 25_000 }],
+    ["American Samoa", { modernName: "United States", continent: "Pacific", note: "American Samoa — U.S. territory in the South Pacific since 1899; Polynesian islands.", population: 8_000 }],
   ])],
 
   // === 1914 (eve of WWI) overrides ==========================================
