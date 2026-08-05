@@ -70,6 +70,19 @@ export type PolityInfo = {
    *  Armenia) and for occupied / between-states polities (Korea 1945,
    *  Saar Protectorate, Yemen pre-1990) where no national flag applies. */
   noFlag?: true;
+  /** WHY no flag is shown for this polity at this date — one sourced sentence,
+   *  rendered verbatim in the panel in place of the generic fallback line.
+   *
+   *  `noFlag` records only THAT a flag is withheld; before this field existed the
+   *  panel had to guess the reason and always guessed the same one ("this polity
+   *  predates modern flag design or none survives"), which is false for every
+   *  19th/20th-century polity — Nazi Germany (whose flag we deliberately do not
+   *  show), the 1938 Netherlands (whose present-day flag flew), the Kingdom of
+   *  Hawaii (whose own note describes its flag). Any deliberate suppression in an
+   *  era from 1880 on MUST carry this; scripts/check-era-flag-explanations.mjs
+   *  fails the build otherwise. Same sourcing discipline as every other fact here:
+   *  state what was actually flown, never invent. */
+  noFlagReason?: string;
 };
 
 /* --------------------------------------------------------------------------
@@ -482,7 +495,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Proto-Altaic pastoralists", { continent: "Eurasian Steppe", note: "Herding peoples of the eastern steppe, ancestral to the Turkic and Mongolic confederations that would later dominate inner Asia." }],
   ["Tupis", { continent: "South America", note: "Tupi-speaking peoples of the Brazilian coast and interior — village farmers of manioc and maize, and the first peoples the Portuguese encountered in 1500." }],
   ["Papou", { continent: "Oceania", note: "Papuan peoples of New Guinea — one of the most linguistically diverse regions on earth, and home to some of the world's earliest agriculture in the Highlands." }],
-  ["Antarctica", { continent: "Antarctica", note: "Antarctica — the one continent with no indigenous population and no state. Since 1959 the Antarctic Treaty has set its territorial claims aside and reserved it for peaceful science.", noFlag: true }],
+  ["Antarctica", { continent: "Antarctica", note: "Antarctica — the one continent with no indigenous population and no state. Since 1959 the Antarctic Treaty has set its territorial claims aside and reserved it for peaceful science.", noFlag: true, noFlagReason: "No flag shown — Antarctica is not a state and has no national flag; the Antarctic Treaty sets every territorial claim aside." }],
 
   ["Andean hunter-gatherers", { continent: "South America", note: "Peoples of the high Andes and its dry coast before the great states — herding llama and alpaca, fishing the Humboldt current, and terracing the first mountain fields." }],
   ["Caribbean hunter-gatherers", { continent: "Caribbean", note: "The islands' first peoples — Ortoiroid and Saladoid seafarers who island-hopped from South America, ancestors of the Taíno and Kalinago." }],
@@ -496,12 +509,11 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Buwayhid Emirates", { continent: "Western Asia", note: "Buyid emirates — Shia Iranian dynasties that took Baghdad in 945 and ruled while the Abbasid caliph reigned in name only." }],
   ["Fatimid Caliphate", { continent: "North Africa / Middle East", note: "Fatimid Caliphate — Ismaili Shia rulers of Egypt and North Africa who founded Cairo and its al-Azhar mosque-university.", population: 6_000_000 }],
   ["Union of South Africa", { continent: "Southern Africa", note: "Union of South Africa (1910–1961) — a self-governing British dominion flying British flags; the modern South African flag came only in 1994.", modernName: "United Kingdom", population: 6_000_000 }],
-  ["Arabia", { continent: "Arabia", note: "The Arabian interior — Bedouin tribal confederations and the emirates of Nejd and Hejaz, before the Saudi state unified the peninsula in 1932.", noFlag: true }],
+  ["Arabia", { continent: "Arabia", note: "The Arabian interior — Bedouin tribal confederations and the emirates of Nejd and Hejaz, before the Saudi state unified the peninsula in 1932.", noFlag: true, noFlagReason: "No flag shown — the Bedouin confederations and the emirates of the interior carried tribal and dynastic banners, not one national flag." }],
   ["Arabia (Nejd)", { continent: "Arabia", note: "Nejd — the central Arabian plateau, ruled by the House of Saud since 1744; one of the few Arabian powers independent of Ottoman or European control in 1914, strengthening through the 1920s–30s before fully unifying Arabia in 1932." }],
   ["French West Africa", { continent: "West Africa", note: "French West Africa (1895–1958) — a federation of eight colonies from Senegal to Niger, governed from Dakar.", modernName: "France", population: 15_000_000 }],
   ["French Equatorial Africa", { continent: "Central Africa", note: "French Equatorial Africa (1910–1958) — Gabon, Middle Congo, Ubangi-Shari and Chad, governed from Brazzaville.", modernName: "France", population: 4_000_000 }],
   ["Greenland", { continent: "Arctic", note: "Greenland — Inuit homeland (Kalaallit Nunaat), colonised by Denmark from 1721 and granted home rule in 1979.", modernName: "Denmark" }],
-  ["Xinjiang", { continent: "Central Asia", note: "Xinjiang — the Tarim and Dzungarian basins, ruled from Beijing as a province from 1884, with brief East Turkestan republics in the 1930s and 1940s.", noFlag: true }],
 
   ["Patagonian shellfish and marine mammal hunters", { continent: "South America", note: "Peoples of the Patagonian channels and Tierra del Fuego — Yaghan and Kawésqar canoe nomads who lived on shellfish, seal and sea lion in one of the coldest inhabited coasts on earth." }],
   ["Madagascar", { continent: "East Africa", note: "Madagascar — settled from Borneo across the Indian Ocean and from East Africa, giving it an Austronesian language on an African coast; unified under the Merina kingdom in the 19th century.", noFlag: true }],
@@ -577,7 +589,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Maize farmers", { continent: "Americas", note: "Maize-farming societies of the Americas — the crop domesticated in Mexico that spread from the Andes to the Great Lakes and underwrote every farming civilisation of the hemisphere." }],
   ["Hindu kingdoms and republics", { continent: "South Asia", note: "The mahajanapadas — the kingdoms and gana-sangha republics of the Ganges plain, the political world in which Buddhism and Jainism arose." }],
   ["Mesoamerican city-states and chiefdoms", { continent: "Mesoamerica", note: "The city-states and chiefdoms of Mesoamerica between its great powers — Zapotec, Mixtec, Totonac, Tlaxcalan and their neighbours." }],
-  ["Far Eastern SSR", { continent: "North Asia", note: "Far Eastern Republic (1920–1922) — a nominally independent buffer state between Soviet Russia and Japanese-occupied Siberia, absorbed once Japan withdrew.", noFlag: true }],
+  ["Far Eastern SSR", { continent: "North Asia", note: "Far Eastern Republic (1920–1922) — a nominally independent buffer state between Soviet Russia and Japanese-occupied Siberia, absorbed once Japan withdrew.", noFlag: true, noFlagReason: "No flag shown — the buffer republic lasted barely two years and no period-accurate image of its flag is bundled." }],
   ["Peshemegs", { continent: "North America", note: "Peoples of the eastern subarctic woodlands, hunting and fishing the forests between the St Lawrence and Hudson Bay." }],
 
   // Kingdom of Italy 1861–1946: the tricolour with the Savoy arms. Modern Italy's
@@ -589,7 +601,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Malays", { continent: "Southeast Asia", note: "Malay-speaking peoples of the Malay Peninsula and archipelago — diverse polities united by language, Islam and commerce." }],
   ["Malaysia", { continent: "Southeast Asia", note: "Malay states and Malaysia — from the sultanates of the peninsula to the modern Federation of Malaysia, established after British decolonization." }],
   ["Malaya", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Malaya — the Straits Settlements and the protected Malay states; the Federation's own flag came in 1950." }],
-  ["Tibet", { noFlag: true, continent: "Central Asia", note: "Tibet — de facto independent from 1912 until the People's Republic annexed it in 1950–51. Its snow-lion flag was never recognised abroad and is banned in China today.", population: 1_200_000 }],
   ["Xinjiang", { flag: "historical-flags/roc-1912.png", continent: "Central Asia", note: "Xinjiang — a Chinese province run as a personal fiefdom by successive governors, flying the Republic's five-coloured flag.", population: 2_500_000 }],
   ["Manchuria", { flag: "historical-flags/roc-1912.png", continent: "East Asia", note: "Manchuria under the warlord Zhang Zuolin — nominally part of the Republic of China, and flying its five-coloured flag.", population: 20_000_000 }],
 
@@ -641,7 +652,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Aztec Empire", { continent: "Mesoamerica", note: "Triple-alliance empire centred on Tenochtitlan.", population: 5_000_000 }],
   ["Inca Empire", { continent: "South America", note: "Andean empire stretching from Ecuador to Chile.", population: 12_000_000 }],
   ["Ming", { continent: "East Asia", note: "Ming dynasty — Great Wall, Forbidden City, voyages of Zheng He.", population: 160_000_000 }],
-  ["Poland-Lithuania", { continent: "Eastern Europe", note: "Polish-Lithuanian Commonwealth — a dual monarchy and the largest state in 16th–17th-century Europe, formed by the 1569 Union of Lublin. Its elected kings and powerful nobility made it culturally and religiously tolerant until its 18th-century partitions.", population: 11_000_000 }],
   ["Qin", { continent: "East Asia", note: "Qin dynasty — the first unified Chinese empire (221–206 BC), famous for the Great Wall, the Terracotta Army and the Legalist philosophy that bound the empire together.", noFlag: true, population: 20_000_000 }],
   ["Qing", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Last imperial Chinese dynasty. The yellow dragon banner was China's national flag from 1889 until the 1912 revolution.", population: 432_000_000 }],
   ["Manchu Empire", { flag: "historical-flags/qing-dynasty.png", continent: "East Asia", note: "Qing dynasty — China's last imperial dynasty. The yellow dragon banner was the national flag from 1889 until the 1912 revolution.", population: 432_000_000 }],
@@ -667,10 +677,10 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Ivory Coast", { continent: "West Africa", note: "French Ivory Coast (Côte d'Ivoire) — a French colonial possession in West Africa, gained independence in 1960, and became a center of cocoa production." }],
   ["Mauritania", { continent: "West Africa", note: "French West Africa and the Mauritania territory — a French colonial possession in the Sahel that became independent in 1960. Spans desert and river valley, historically home to Arab, Berber and Black African peoples.", noFlag: true }],
   ["Zimbabwe", { continent: "Southern Africa", note: "Southern Rhodesia — a British settler colony in south-central Africa, named after the Great Zimbabwe ruins. After a long anti-colonial war, it became independent Zimbabwe in 1980.", noFlag: true }],
-  ["Western Sahara", { continent: "North Africa", note: "Western Sahara — a disputed territory in the Sahara, claimed by Morocco and the Sahrawi Arab Democratic Republic; historically governed as a Spanish colony until 1975." }],
+  ["Western Sahara", { continent: "North Africa", noFlagReason: "No flag shown — the territory flew Spain's flag until 1975 and its status has been disputed ever since; the Sahrawi flag dates from 1976 and the game takes no side.", note: "Western Sahara — a disputed territory in the Sahara, claimed by Morocco and the Sahrawi Arab Democratic Republic; historically governed as a Spanish colony until 1975." }],
   ["Guyana", { continent: "South America", note: "British Guiana — a British colony on the Caribbean coast of South America. It gained independence in 1966 as Guyana, the only English-speaking nation on the continent.", noFlag: true }],
   ["Suriname", { continent: "South America", note: "Dutch Guiana — a Dutch colony in northeastern South America, home to diverse populations including Creoles, Hindus, and Javanese. It became independent in 1975 as Suriname.", noFlag: true }],
-  ["French Guiana", { continent: "South America", note: "French Guiana — a French overseas territory and penal colony in South America, historically a place of exile and later a rocket launch site; it remains an overseas department of France." }],
+  ["French Guiana", { continent: "South America", noFlagReason: "No flag shown — French Guiana flies the French tricolour; France recognises no official flag for its regions or overseas departments.", note: "French Guiana — a French overseas territory and penal colony in South America, historically a place of exile and later a rocket launch site; it remains an overseas department of France." }],
 
   // === Hausa Bakwai (Hausa-State city-states, 1500/1700) ====================
   // The 7 "true" Hausa city-states plus a couple of "Banza Bakwai". Each
@@ -987,19 +997,19 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // === African kingdoms (1815 / 1850) =======================================
   // These were powerful pre-colonial African polities with their own
   // royal symbols, but no standardised modern-style national flags.
-  ["Asante", { continent: "West Africa", note: "Asante Empire (Ashanti) — one of West Africa's most powerful kingdoms, in modern Ghana. Famous for Kente cloth and the Golden Stool.", noFlag: true, population: 3_000_000 }],
-  ["Sokoto Caliphate", { continent: "West Africa", note: "Sokoto Caliphate (Fulani Empire) — founded 1804 by Usman dan Fodio; the largest state in 19th-century sub-Saharan Africa, covering most of northern Nigeria.", noFlag: true, population: 10_000_000 }],
+  ["Asante", { continent: "West Africa", note: "Asante Empire (Ashanti) — one of West Africa's most powerful kingdoms, in modern Ghana. Famous for Kente cloth and the Golden Stool.", noFlag: true, noFlagReason: "No flag shown — Asante statehood was embodied in the Golden Stool, and its armies fought under many appliqué war banners rather than one national flag; no period image is bundled.", population: 3_000_000 }],
+  ["Sokoto Caliphate", { continent: "West Africa", note: "Sokoto Caliphate (Fulani Empire) — founded 1804 by Usman dan Fodio; the largest state in 19th-century sub-Saharan Africa, covering most of northern Nigeria.", noFlag: true, noFlagReason: "No flag shown — the caliphate's emirates rode under Islamic war banners rather than a single national flag, and no period image of them is bundled.", population: 10_000_000 }],
   ["Fulani Empire", { continent: "West Africa", note: "The Fulani Empire is another name for the Sokoto Caliphate — see Sokoto Caliphate.", noFlag: true, population: 10_000_000 }],
   ["Bornu-Kanem", { continent: "West Africa", note: "Kanem-Bornu Empire — one of the longest-lasting states in African history (around Lake Chad, in modern Nigeria and Chad).", noFlag: true, population: 5_000_000 }],
   ["Fante", { continent: "West Africa", note: "Fante Confederation — a loose alliance of Akan peoples of coastal Ghana, rivals of the Asante.", noFlag: true, population: 800_000 }],
   ["Kaarta", { continent: "West Africa", note: "Kingdom of Kaarta — a Bambara state in modern western Mali, sibling rival of the Ségou empire.", noFlag: true, population: 300_000 }],
-  ["Buganda", { continent: "East Africa", note: "Kingdom of Buganda — the largest of the Great Lakes kingdoms, in modern Uganda.", noFlag: true, population: 1_500_000 }],
-  ["Bunyoro", { continent: "East Africa", note: "Kingdom of Bunyoro-Kitara — ancient rival of Buganda, in modern Uganda.", noFlag: true, population: 800_000 }],
+  ["Buganda", { continent: "East Africa", note: "Kingdom of Buganda — the largest of the Great Lakes kingdoms, in modern Uganda.", noFlag: true, noFlagReason: "No flag shown — the kabaka's court used royal drums and standards, not a national flag; Buganda's own flag dates from the 20th century and no period image is bundled.", population: 1_500_000 }],
+  ["Bunyoro", { continent: "East Africa", note: "Kingdom of Bunyoro-Kitara — ancient rival of Buganda, in modern Uganda.", noFlag: true, noFlagReason: "No flag shown — the Bunyoro-Kitara kingship was embodied in royal regalia and drums rather than a flag, and no period flag is bundled.", population: 800_000 }],
   ["Nkore", { continent: "East Africa", note: "Kingdom of Nkore (Ankole) — one of the inter-lacustrine Great Lakes kingdoms, in modern Uganda.", noFlag: true, population: 600_000 }],
   ["Rwanda", { continent: "East Africa", note: "Kingdom of Rwanda — pre-colonial Great Lakes monarchy; the modern nation's flag dates from 2001.", noFlag: true, population: 1_000_000 }],
   ["Burundi", { continent: "East Africa", note: "Kingdom of Burundi (Urundi) — pre-colonial Great Lakes monarchy; the modern flag dates from 1966.", noFlag: true, population: 1_200_000 }],
-  ["Lozi", { continent: "Southern Africa", note: "Lozi Kingdom (Barotseland) — in modern western Zambia.", noFlag: true, population: 500_000 }],
-  ["Lunda", { continent: "Central Africa", note: "Lunda Empire — a major Central African trading state straddling modern Angola/DRC/Zambia.", noFlag: true, population: 1_000_000 }],
+  ["Lozi", { continent: "Southern Africa", note: "Lozi Kingdom (Barotseland) — in modern western Zambia.", noFlag: true, noFlagReason: "No flag shown — the Lozi kingdom's authority rested on royal regalia and the litunga's barge, not on a national flag; no period flag is bundled.", population: 500_000 }],
+  ["Lunda", { continent: "Central Africa", note: "Lunda Empire — a major Central African trading state straddling modern Angola/DRC/Zambia.", noFlag: true, noFlagReason: "No flag shown — the Lunda empire was held together by the mwant yav's court and tribute, not by a national flag; no period flag is bundled.", population: 1_000_000 }],
   ["Kazembe", { continent: "Central Africa", note: "Kingdom of Kazembe — eastern branch of the Lunda Empire, in modern Zambia.", noFlag: true, population: 500_000 }],
   ["Imbangala", { continent: "Central Africa", note: "Imbangala (Jaga) polities of modern Angola — warrior states in the Angolan interior.", noFlag: true, population: 300_000 }],
   ["Zanzibar", { continent: "East Africa", note: "Sultanate of Zanzibar — governed by the Omani Busaidi dynasty from the 1690s. Flew a plain red flag (same as Omani Muscat); the modern Oman flag was only adopted in 1970.", noFlag: true, population: 200_000 }],
@@ -1016,11 +1026,8 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Sikkim (Indian princely state)", { continent: "South Asia", note: "Kingdom of Sikkim — small Himalayan Buddhist monarchy, became a British protectorate in 1890.", noFlag: true, population: 100_000 }],
   ["Assam", { continent: "South Asia", note: "Ahom Kingdom of Assam — Southeast Asian dynasty that ruled Assam for 600 years; annexed by Britain in 1826.", noFlag: true, population: 3_000_000 }],
   ["Arakan", { continent: "Southeast Asia", note: "Kingdom of Arakan (Mrauk-U) — coastal kingdom in modern Rakhine State, Myanmar; annexed by the Konbaung Burmese in 1785.", noFlag: true, population: 1_000_000 }],
-  ["Cambodia", { continent: "Southeast Asia", note: "Khmer kingdom under Vietnamese and Siamese pressure. No standardised national flag before the French colonial period (1863).", noFlag: true, population: 1_000_000 }],
   ["Afghanistan", { continent: "Central Asia", note: "Durrani/Barakzai emirate. The Black-Red-Green tricolour wasn't formalised until 1928; no standardised national flag in this era.", noFlag: true, population: 4_000_000 }],
-  ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines — the Crown of Castile's red-yellow-red flag flew over the islands from 1785 onwards. The modern Philippine flag wasn't adopted until the 1898 revolution.", population: 4_000_000 }],
   ["Arakan (Indian princely state)", { continent: "Southeast Asia", note: "Arakan under British-Indian administration.", noFlag: true, population: 800_000 }],
-  ["Laos", { continent: "Southeast Asia", note: "Various Lao kingdoms (Lane Xang, Vientiane, Luang Prabang, Champasak) — no unified Laotian state or standardised flag.", noFlag: true, population: 1_000_000 }],
 
   // === British Crown Colonies / territories =================================
   ["Canada", { modernName: "United Kingdom", continent: "North America", note: "British North America — the Union Jack flew over the colonial territories that would unite as Canada in 1867.", population: 400_000 }],
@@ -1052,7 +1059,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Cyrenaica", { continent: "North Africa", note: "Ottoman Vilayet of Cyrenaica (eastern Libya) — the Ottoman flag flew over it until Italian conquest in 1912.", noFlag: true, population: 200_000 }],
   ["Tunis", { continent: "North Africa", note: "Beylik of Tunis — autonomous Ottoman regency; had its own red flag with crescent and star (forerunner of modern Tunisia's flag).", noFlag: true, population: 1_000_000 }],
   ["Algiers", { continent: "North Africa", note: "Regency of Algiers — autonomous Ottoman state until France invaded in 1830. No standardised national flag.", noFlag: true, population: 3_000_000 }],
-  ["central Asian khanates", { continent: "Central Asia", note: "Khanates of the Central Asian steppe (Khiva, Bukhara, Kokand) — independent Islamic successor states of the Mongol era.", noFlag: true, population: 5_000_000 }],
+  ["central Asian khanates", { continent: "Central Asia", note: "Khanates of the Central Asian steppe (Khiva, Bukhara, Kokand) — independent Islamic successor states of the Mongol era.", noFlag: true, noFlagReason: "No flag shown — Khiva, Bukhara and Kokand were separate states with their own dynastic banners; there was never one shared flag, and no period image of them is bundled.", population: 5_000_000 }],
   ["Kuril Islands", { continent: "East Asia", note: "Kuril Islands — disputed between Russia and Japan; the 1825 Simoda Treaty began clarifying boundaries.", noFlag: true, population: 5_000 }],
 
   // Modern (1914 – today) --------------------------------------------------
@@ -1116,13 +1123,12 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Milan", { continent: "Italy", note: "Duchy of Milan — wealthy northern Italian state; Visconti and later Sforza rulers.", noFlag: true, population: 800_000 }],
   ["Naples", { continent: "Italy", note: "Kingdom of Naples — southern Italy under Angevin and later Aragonese rule.", noFlag: true, population: 2_000_000 }],
   ["Sardinia", { continent: "Italy", note: "Kingdom of Sardinia (medieval) — contested between Aragon and Genoa.", noFlag: true, population: 200_000 }],
-  ["Cyprus", { continent: "Mediterranean", note: "Kingdom of Cyprus — Lusignan dynasty crusader kingdom; later Venetian.", noFlag: true, population: 150_000 }],
   ["Corsica", { continent: "Mediterranean", note: "Medieval Corsica — nominally Genoese after 1346.", noFlag: true, population: 50_000 }],
   ["Granada", { continent: "Iberia", note: "Emirate of Granada — last Muslim kingdom of Iberia; fell to Castile and Aragón in 1492.", noFlag: true, population: 500_000 }],
   ["Morocco", { continent: "North Africa", note: "Medieval Morocco — Marinid/Wattasid sultantes. No standardised national flag in this era.", noFlag: true, population: 3_000_000 }],
   ["Ethiopia", { continent: "East Africa", note: "Ethiopian highlands in this era — Solomon dynasty rule of the Zagwe successors. No national flag.", noFlag: true, population: 3_000_000 }],
   ["Benin", { continent: "West Africa", note: "Kingdom of Benin — the Benin Empire of modern southern Nigeria, famous for its bronze plaques.", noFlag: true, population: 1_000_000 }],
-  ["Oyo", { continent: "West Africa", note: "Oyo Empire — Yoruba empire of modern south-western Nigeria; one of the largest West African states in the 17th–18th centuries.", noFlag: true, population: 2_000_000 }],
+  ["Oyo", { continent: "West Africa", note: "Oyo Empire — Yoruba empire of modern south-western Nigeria; one of the largest West African states in the 17th–18th centuries.", noFlag: true, noFlagReason: "No flag shown — the alaafin's authority was carried by court regalia and Yoruba war banners rather than a single national flag; no period flag is bundled.", population: 2_000_000 }],
   // === Medieval/early-modern Asian kingdoms (1300–1700) ======================
   ["Shogun Japan (Kamakura)", { continent: "East Asia", note: "Kamakura Shogunate Japan (1185–1333) — samurai government that coexisted with the emperor.", modernName: "Japan", population: 8_000_000 }],
   ["Sukhothai", { continent: "Southeast Asia", note: "Sukhothai Kingdom — the first Thai kingdom; developed the Thai script; preceded the Ayutthaya Kingdom.", noFlag: true, population: 500_000 }],
@@ -1130,7 +1136,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Sultanate of Delhi", { continent: "South Asia", note: "Delhi Sultanate — the first major Islamic sultanate of northern India; five successive dynasties.", noFlag: true, population: 20_000_000 }],
   ["Vijayanagara", { continent: "South Asia", note: "Vijayanagara Empire — the last great Hindu empire of South India; centre of art, architecture and learning.", noFlag: true, population: 25_000_000 }],
   ["Songhai", { continent: "West Africa", note: "Songhai Empire — the largest empire in West African history at its peak (15th–16th c.); controlled Timbuktu and the trans-Saharan gold trade.", noFlag: true, population: 4_000_000 }],
-  ["Tibet", { continent: "Central Asia", note: "Phagmodrupa dynasty's Tibet — nominally subject to the Yuan and Ming Chinese empires but practically independent.", noFlag: true, population: 2_000_000 }],
+  ["Tibet", { continent: "Central Asia", note: "Phagmodrupa dynasty's Tibet — nominally subject to the Yuan and Ming Chinese empires but practically independent.", noFlag: true, noFlagReason: "No flag shown — Tibet's monasteries and armies used their own banners rather than a national flag; the snow-lion flag was designed only in 1916.", population: 2_000_000 }],
   ["Malacca", { continent: "Southeast Asia", note: "Sultanate of Malacca — dominant maritime trading state of the Malay world; fell to the Portuguese in 1511.", noFlag: true, population: 300_000 }],
   ["Grand Duchy of Moscow", { continent: "Eastern Europe", note: "Grand Duchy of Moscow — the rising principality that would unify Russia and become the Tsardom of Muscovy.", noFlag: true, population: 3_000_000 }],
   ["Tsardom of Muscovy", { continent: "Eastern Europe", note: "Tsardom of Muscovy — Ivan the Terrible's centralised Russian state (1547–1721); precursor to the Russian Empire.", noFlag: true, population: 6_000_000 }],
@@ -1160,7 +1166,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Nejd", { continent: "Arabia", note: "Nejd — the central Arabian plateau region, heartland of the Al Saud dynasty and birthplace of Wahhabi Islam in the 18th century, politically fragmented until unified under Ibn Saud." }],
   ["Obiwa", { continent: "North America", note: "Ojibwe (Anishinaabe) people — Algonquian-speaking Great Lakes peoples with a sophisticated birch-bark canoe technology and wild-rice harvesting tradition." }],
   ["Satavahana", { continent: "South Asia", note: "Satavahana Empire — major south Indian dynasty (2nd c. BC – 2nd c. AD), powerful under leaders like Gautamiputra Satakarni, known for coin-making and trade on the Deccan plateau.", population: 10_000_000 }],
-  ["Sultanate of Utetera", { continent: "East Africa", note: "Utetera Sultanate — one of the Swahili coast sultanates, a maritime trading power in the East African network of city-states.", noFlag: true, population: 50_000 }],
+  ["Sultanate of Utetera", { continent: "East Africa", note: "Utetera Sultanate — one of the Swahili coast sultanates, a maritime trading power in the East African network of city-states.", noFlag: true, noFlagReason: "No flag shown — this Swahili trading state flew the plain red flag of its Zanzibari overlords rather than one of its own, and no period image is bundled.", population: 50_000 }],
   ["Syria", { continent: "Western Asia", note: "Syria — Levantine state with ancient Mesopotamian and Mediterranean heritage; a French mandate after WWI, it became independent in 1946 but faced political volatility and conflicts.", noFlag: true, population: 3_000_000 }],
   ["Ahmadnagar", { continent: "South Asia", note: "Ahmadnagar Sultanate — Deccan Muslim dynasty (1490–1636) that resisted Mughal expansion through military innovation and diplomacy.", noFlag: true, population: 2_000_000 }],
   ["Bell-shaped burials culture", { continent: "Eurasian Steppe", note: "Bronze-Age pastoral societies of the steppes, named for their distinctive burial mounds — ancestors of Indo-European peoples." }],
@@ -1195,7 +1201,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Champa", { continent: "Southeast Asia", note: "Champa Kingdom — Hindu-Buddhist maritime kingdom of central Vietnam (2nd–15th c.), a seafaring power in the South China Sea with a distinctive culture.", population: 2_000_000 }],
   ["Chen-La", { continent: "Southeast Asia", note: "Chenla (Chen-La) — medieval kingdom of Cambodia, successor to Funan in the Mekong Delta region, known for irrigation and temple construction." }],
   ["Cherokee", { continent: "North America", note: "Cherokee people — Southeastern Iroquoian nation known for agricultural settlement patterns, syllabary invention and sovereignty struggles with the U.S." }],
-  ["French Indo-China", { continent: "Southeast Asia", note: "French Indo-China — French colonial federation in Southeast Asia (Annam, Tonkin, Cochinchina, Cambodia, Laos); independent movements grew from WWII onward.", noFlag: true, population: 25_000_000 }],
+  ["French Indo-China", { continent: "Southeast Asia", note: "French Indo-China — French colonial federation in Southeast Asia (Annam, Tonkin, Cochinchina, Cambodia, Laos); independent movements grew from WWII onward.", noFlag: true, noFlagReason: "No flag shown — the federation was governed under the French tricolour and had no national flag of its own.", population: 25_000_000 }],
   ["Huron", { continent: "North America", note: "Huron (Wendat) people — Iroquoian-speaking confederacy of the Great Lakes region; major traders and agriculturalists before European contact." }],
   ["Illinnois", { continent: "North America", note: "Illinois Confederacy — Algonquian peoples of the Mississippi Valley, powerful traders who fell to Iroquois raids in the 17th century." }],
   ["Iraq", { continent: "Western Asia", note: "Iraq — Mesopotamian state, British mandate after WWI; contains the ancient cities of Ur and Babylon; strategically important for oil and the Tigris-Euphrates rivers.", noFlag: true, population: 3_000_000 }],
@@ -1218,7 +1224,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Buyid Emirate", { continent: "Western Asia", note: "Buyid dynasty — Persian Shiite dynasty that ruled Iraq and Iran (10th–11th c.), wielding power while Abbasid caliphs were figureheads.", noFlag: true, population: 5_000_000 }],
   ["Chauhans", { continent: "South Asia", note: "Chauhan (Cahamana) dynasty — Rajput kingdom of north-central India (7th–12th c.); powerful rivals of the Ghaznavids and Ghurids." }],
   ["Delaware", { continent: "North America", note: "Delaware (Lenape) people — Algonquian-speaking nation of the northeastern woodland; suffered displacement westward through treaties and forced removal." }],
-  ["Dominion of Newfoundland", { continent: "North America", note: "Dominion of Newfoundland and Labrador — British dominion with distinct status until confederation with Canada in 1949; isolated, maritime culture.", noFlag: true, population: 300_000 }],
+  ["Dominion of Newfoundland", { continent: "North America", note: "Dominion of Newfoundland and Labrador — British dominion with distinct status until confederation with Canada in 1949; isolated, maritime culture.", noFlag: true, noFlagReason: "No flag shown — the dominion used the Union Flag as its national flag (formally so from 1931); Newfoundland's own flag dates from 1980, long after it joined Canada.", population: 300_000 }],
   ["East Java", { continent: "Southeast Asia", note: "East Java (Majapahit region) — Javanese kingdom and later province; center of Hindu-Buddhist culture and part of the Majapahit Empire." }],
   ["Harapunchai", { continent: "Southeast Asia", note: "Hariphunchai (Harapunchai) — northern Thai kingdom of the Chao Phraya valley; known for Buddhist temples and eventually absorbed into Sukhothai." }],
   ["Iroquois", { continent: "North America", note: "Haudenosaunee (Iroquois Confederacy) — powerful alliance of six Iroquoian nations (Mohawk, Oneida, Onondaga, Cayuga, Seneca, Tuscarora) with democratic confederation structure." }],
@@ -1234,7 +1240,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Sahtu", { continent: "North America", note: "Sahtu Dene (Mountain Dene) — subarctic Athapaskan peoples of the Mackenzie Mountains, hunters and trappers in the northern Canadian interior." }],
   ["Shawnee", { continent: "North America", note: "Shawnee people — Algonquian nation originally of the Ohio Valley, known as skilled warriors and hunters; displaced westward by European expansion." }],
   ["Tlinoit", { continent: "North America", note: "Tlingit (Tlinoit) people — Pacific Northwest coastal peoples of Alaska and British Columbia, known for cedar carving, potlatch ceremonies and totem poles." }],
-  ["Tukular Caliphate", { continent: "West Africa", note: "Tukulor Caliphate (Fouta Toro) — Fulani-led Islamic state of the Senegal River region; used Islamic law and military power to resist French colonization.", noFlag: true, population: 1_000_000 }],
+  ["Tukular Caliphate", { continent: "West Africa", note: "Tukulor Caliphate (Fouta Toro) — Fulani-led Islamic state of the Senegal River region; used Islamic law and military power to resist French colonization.", noFlag: true, noFlagReason: "No flag shown — El Hadj Umar Tall's jihad state fought under Islamic war banners rather than a national flag, and no period image of them is bundled.", population: 1_000_000 }],
   ["Watassid Morocco", { continent: "North Africa", note: "Wattasid dynasty — Berber dynasty ruling northern Morocco (1415–1554); competitors with the Saadians and Portuguese in North African geopolitics." }],
   ["Wiradjuri", { continent: "Oceania", note: "Wiradjuri people — Aboriginal Australians of inland New South Wales, known for sophisticated water management and exchange networks." }],
   ["Yeke", { continent: "Central Africa", note: "Yeke kingdom — Luba-based kingdom of southeastern Congo (Katanga region), known for Yeke rulers and mining of copper and ivory." }],
@@ -1264,7 +1270,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Sasanian dependencies", { continent: "Western Asia", note: "Sasanian Persian Empire's tributary states and client kingdoms — vassal polities across Mesopotamia and Central Asia under Sassanid overlordship." }],
   ["Shaskanka", { continent: "North America", note: "Shaskana (Shoshone variant) — Great Basin peoples known for adaptation to desert environments and sophisticated gathering technology." }],
   ["Shona", { continent: "Southern Africa", note: "Shona people — Bantu peoples of Zimbabwe and southern Africa; builders of Great Zimbabwe and sophisticated farming societies." }],
-  ["Sultinate of Zanzibar", { continent: "East Africa", note: "Zanzibar Sultanate — Omani-Arab ruled trading empire of the East African coast; center of clove trade and Indian Ocean commerce.", noFlag: true, population: 200_000 }],
+  ["Sultinate of Zanzibar", { continent: "East Africa", note: "Zanzibar Sultanate — Omani-Arab ruled trading empire of the East African coast; center of clove trade and Indian Ocean commerce.", noFlag: true, noFlagReason: "No flag shown — the Busaidi sultans flew a plain red flag, and no period-accurate image of it is bundled.", population: 200_000 }],
   ["Thai Kingdoms", { continent: "Southeast Asia", note: "Thai kingdoms — Tai-speaking states of mainland Southeast Asia, including Sukhothai, Ayutthaya and others, distinct from Khmer and Lao polities." }],
   ["Norte Chico", { continent: "South America", note: "Norte Chico — pre-ceramic Andean civilization of coastal Peru (3000–1800 BC); early monumental architecture before agriculture." }],
   ["Angevin Empire", { continent: "Western Europe", note: "Angevin Empire — vast 12th-century realm of Henry II across England, Normandy and Aquitaine; rivals to the Capetian French.", noFlag: true, population: 2_000_000 }],
@@ -1293,7 +1299,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Santee", { continent: "North America", note: "Santee Sioux — Dakota people of the Great Lakes region; skilled hunters and traders; later displaced by Lakota expansion." }],
   ["Simhala", { continent: "South Asia", note: "Sinhalese (Simhala) — Indo-Aryan peoples of Sri Lanka; Buddhist culture, kingdoms and empires on the island throughout history." }],
   ["Teton", { continent: "North America", note: "Teton Sioux (Lakota) — Great Plains peoples; powerful warriors and buffalo hunters with sophisticated tipi culture and equestrian traditions." }],
-  ["Transvaal", { continent: "Southern Africa", note: "Transvaal — Boer republic in southern Africa; British colony after Anglo-Boer Wars; incorporated into the Union of South Africa.", noFlag: true, population: 500_000 }],
+  ["Transvaal", { continent: "Southern Africa", note: "Transvaal — Boer republic in southern Africa; British colony after Anglo-Boer Wars; incorporated into the Union of South Africa.", noFlag: true, noFlagReason: "No flag shown — the South African Republic flew the Vierkleur, the Dutch tricolour with a green band at the hoist; no period-accurate image of it is bundled.", population: 500_000 }],
   ["Wadai Empire", { continent: "Central Africa", note: "Wadai Empire — Saharan sultanate (16th–19th c.) of present-day Chad; rival to Bornu and a major player in the trans-Saharan trade." }],
   ["Wawula", { continent: "Oceania", note: "Wawula people — Aboriginal Australians; indigenous group with traditional knowledge of Australian ecosystems and songlines." }],
   ["Ainus", { continent: "East Asia", note: "Ainu people — indigenous Hokkaido peoples predating Yamato Japanese; hunter-gatherers and fishers with distinct Austronesian-derived language." }],
@@ -1346,8 +1352,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Caddo Confederacy", { continent: "North America", note: "Caddo Confederacy — southeastern North American peoples; agricultural societies; complex chiefdoms in present-day Texas, Louisiana, Arkansas, Oklahoma." }],
   ["Powhatan Confederacy", { continent: "North America", note: "Powhatan Confederacy — Algonquian-speaking peoples of Virginia; paramount chiefdom under Powhatan; first English colonists of Jamestown encountered them." }],
   ["Calusa", { continent: "North America", note: "Calusa peoples — southeastern North American peoples of Florida; maritime societies with complex chiefdoms; dominant in southern peninsula." }],
-  ["Srivijaya", { continent: "Southeast Asia", note: "Srivijaya — maritime empire of Southeast Asia (7th–13th centuries); Buddhist center; controlled strait trade between India and China." }],
-  ["Khmer Empire", { modernName: "Cambodia", continent: "Southeast Asia", note: "Khmer Empire — Southeast Asian civilization centered at Angkor; Hindu-Buddhist culture; built monumental temples and irrigation systems.", population: 750_000 }],
   ["Lampung", { continent: "Southeast Asia", note: "Lampung peoples — inhabitants of southern Sumatra; maritime traders; distinct language and culture within Indonesian archipelago." }],
   ["Minangkabau", { continent: "Southeast Asia", note: "Minangkabau peoples — West Sumatran ethnic group; matrilineal society; traders and scholars of Islam in the archipelago." }],
   ["Bugis", { continent: "Southeast Asia", note: "Bugis peoples — South Sulawesi maritime traders and warriors; renowned shipbuilders and sailors of the Indonesian archipelago." }],
@@ -1413,11 +1417,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Nez Perce", { continent: "North America", note: "Nez Perce people — Pacific Northwest nation; Plateau region dwellers; salmon fishers; mounted warriors; known for Appaloosa horses." }],
   ["Nobatia", { continent: "Africa", note: "Nobatia — Nubian kingdom of upper Egypt and Sudan (4th–6th centuries); Christian Nubian state; rival to Axum." }],
   ["Sicily", { continent: "Europe", note: "Sicily — Mediterranean island; complex political history under Greek, Roman, Norman, Arab, Spanish and Italian rule; strategic trade crossroads." }],
-  ["Fiji", { continent: "Oceania", note: "Fiji — South Pacific island nation; Austronesian settlement; complex chiefdoms and trading networks; strategic location for Pacific trade." }],
   ["Ngarti", { continent: "Oceania", note: "Ngarti people — Aboriginal Australians of the western desert; central Australia inhabitants; desert and spinifex country specialists." }],
   ["Nyaki-nyaki", { continent: "Oceania", note: "Nyaki-nyaki people — Aboriginal Australians; inland Australia inhabitants; semi-nomadic desert dwellers with complex kinship traditions." }],
   ["Caohuiltecs", { continent: "North America", note: "Caohuiltecs — Indigenous peoples of south Texas; semi-nomadic hunter-gatherers; adapted to arid and semi-arid environments." }],
-  ["Pomeranian culture", { continent: "Europe", note: "Pomeranian culture — Baltic Bronze Age culture; maritime trade; Nordic connections; early European civilization development." }],
   ["Bangladesh", { continent: "Asia", note: "Bangladesh — South Asian nation of the Ganges Delta; gained independence in 1971; densely populated river delta civilization." }],
   ["Ngalea", { continent: "Oceania", note: "Ngalea people — Aboriginal Australians of inland Australia; desert nation with complex astronomical and songline traditions." }],
   ["Catawba", { continent: "North America", note: "Catawba people — Southeastern Woodlands nation of the Carolinas; agricultural peoples; traders and political powers; river dwellers." }],
@@ -1460,7 +1462,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Wongaibon", { continent: "Oceania", note: "Wongaibon people — Aboriginal Australians of New South Wales; inland peoples with complex trade and language networks." }],
   ["Barundji", { continent: "Oceania", note: "Barundji people — Aboriginal Australians of inland Australia; semi-nomadic with specialized hunting and gathering traditions." }],
   ["Muskogee", { continent: "North America", note: "Muskogee people — Southeastern North America; Creek Confederacy peoples; agricultural societies; traders and political powers." }],
-  ["Trucial Oman", { continent: "Asia", note: "Trucial Oman — Gulf emirates under British protection; precursor to UAE formation; pearling and trading economies." }],
+  ["Trucial Oman", { continent: "Asia", noFlagReason: "No flag shown — each Trucial emirate flew its own red-and-white flag under British protection; the shared UAE flag dates only from 1971.", note: "Trucial Oman — Gulf emirates under British protection; precursor to UAE formation; pearling and trading economies." }],
   ["Griqualand West", { continent: "Southern Africa", note: "Griqualand West — South African territory; Griqua peoples (mixed descent); diamond-rich region; contested colonial territory." }],
   ["Guanches", { continent: "Africa", note: "Guanches — Indigenous peoples of the Canary Islands; Berber-descended population; endemic to Atlantic islands; unique culture and language." }],
   ["Walmatjarri", { continent: "Oceania", note: "Walmatjarri people — Aboriginal Australians of the Kimberley region; remote desert and sandhill dwellers with ancestral traditions." }],
@@ -1480,9 +1482,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Tonga", { continent: "Oceania", note: "Kingdom of Tonga — Polynesian island monarchy; never colonised; retained independence through diplomacy and trade partnerships; constitutional monarchy established 1875." }],
   ["United States", { continent: "North America", note: "United States of America — federal republic formed 1776; expanded across North America; major power by 19th century; became global superpower by 20th century." }],
   ["Italy", { continent: "Europe", note: "Kingdom of Italy — Italian peninsula united as modern nation-state 1861; Mediterranean and Alpine power; major European nation; reformed after 1900s." }],
-  ["American Samoa", { continent: "Oceania", note: "American Samoa — US territory in South Pacific; Polynesian islands; strategic Pacific presence; unincorporated territory administered from Washington." }],
+  ["American Samoa", { continent: "Oceania", noFlagReason: "No flag shown — a United States territory, flying the Stars and Stripes; American Samoa's own flag was adopted only in 1960.", note: "American Samoa — US territory in South Pacific; Polynesian islands; strategic Pacific presence; unincorporated territory administered from Washington." }],
   ["Qatar", { continent: "Asia", note: "Qatar — Arabian Peninsula nation; emerged as independent state from Ottoman and then British rule; modern absolute monarchy; energy-rich nation." }],
-  ["Wallis and Futuna Islands", { continent: "Oceania", note: "Wallis and Futuna — French overseas collectivity in South Pacific; Polynesian islands; dual monarchy preserved under French protection." }],
+  ["Wallis and Futuna Islands", { continent: "Oceania", noFlagReason: "No flag shown — a French protectorate and then an overseas collectivity, flying the French tricolour; France recognises no official flag of its own for the islands.", note: "Wallis and Futuna — French overseas collectivity in South Pacific; Polynesian islands; dual monarchy preserved under French protection." }],
   ["Samoa", { continent: "Oceania", note: "Samoa (formerly Western Samoa) — Independent Polynesian nation in South Pacific; self-governing from 1962; parliamentary democracy; cultural heart of Polynesia." }],
   ["Dominican Republic", { continent: "North America", note: "Dominican Republic — Caribbean nation on Hispaniola; gained independence 1844; distinct Spanish-speaking Caribbean culture; sugar and agricultural economy." }],
   ["Costa Rica", { continent: "Central America", note: "Costa Rica — Central American nation; early democratic stability; abolished military 1949; coffee and banana republic; peaceful neutrality in regional conflicts." }],
@@ -1503,14 +1505,14 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Bulgaria", { continent: "Europe", note: "Bulgaria — Southeastern European nation; Balkan Peninsula; Black Sea coast; Bulgarian Orthodox tradition; emerged from Ottoman rule; Cyrillic script birthplace." }],
   ["Greece", { continent: "Europe", note: "Greece — Mediterranean nation; Balkan Peninsula; Aegean and Ionian islands; Hellenic cultural heritage; Orthodox Christianity; classical antiquity origins." }],
   ["Colombia", { continent: "South America", note: "Colombia — South American nation; Andes, Amazon and Caribbean; Pacific and Atlantic coasts; coffee production; diverse ecosystems; colonial Spanish legacy." }],
-  ["Niue", { continent: "Oceania", note: "Niue — Small island nation in South Pacific; self-governing in free association with New Zealand; Polynesian culture; tropical island economy." }],
-  ["United States Virgin Islands", { continent: "North America", note: "US Virgin Islands — Caribbean territory of United States; St Croix, St John and St Thomas islands; tropical location; tourism and port economy; formerly Danish colonial." }],
+  ["Niue", { continent: "Oceania", noFlagReason: "No flag shown — a British protectorate and then a New Zealand dependency, flying their flags; Niue's own flag was adopted only in 1975.", note: "Niue — Small island nation in South Pacific; self-governing in free association with New Zealand; Polynesian culture; tropical island economy." }],
+  ["United States Virgin Islands", { continent: "North America", noFlagReason: "No flag shown — Danish until 1917 and a United States territory since, flying first the Dannebrog and then the Stars and Stripes; the islands' own flag dates from 1921.", note: "US Virgin Islands — Caribbean territory of United States; St Croix, St John and St Thomas islands; tropical location; tourism and port economy; formerly Danish colonial." }],
   ["Tunisia", { continent: "North Africa", note: "Tunisia — North African nation on Mediterranean coast; Carthage heritage; Arab-Berber culture; emerged from French protectorate; Saharan and coastal regions." }],
   ["Rapa Nui", { continent: "Oceania", note: "Rapa Nui (Easter Island) — Polynesian island; remote Pacific location; famous for moai statues; Chilean territory; Rapa Nui people and language." }],
   ["Minang", { continent: "Southeast Asia", note: "Minang people — Ethnic group of West Sumatra, Indonesia; matrilineal society; Islamic culture; historical trading port of Aceh; distinct language and customs." }],
   ["Germany", { continent: "Europe", note: "Germany — Central European nation; emerged as unified state 1871; industrial powerhouse; cultural and philosophical center; major European power through 20th century." }],
   ["Cuba", { continent: "Caribbean", note: "Cuba — Caribbean island nation; largest Caribbean island; Spanish colonial heritage; sugar economy; close to United States; tropical biodiversity." }],
-  ["Puerto Rico", { continent: "Caribbean", note: "Puerto Rico — Caribbean island; US territory; Spanish colonial legacy; distinct culture; linguistic and cultural blend of Spanish and English influences." }],
+  ["Puerto Rico", { continent: "Caribbean", noFlagReason: "No flag shown — a United States territory, flying the Stars and Stripes; Puerto Rico's own flag, designed in 1895, became official only in 1952.", note: "Puerto Rico — Caribbean island; US territory; Spanish colonial legacy; distinct culture; linguistic and cultural blend of Spanish and English influences." }],
   ["New Zealand", { continent: "Oceania", note: "New Zealand — Island nation in South Pacific; Aotearoa to Māori people; British settler colony; dual European-Polynesian heritage; isolated ecosystems." }],
   ["Brazil", { continent: "South America", note: "Brazil — Largest South American nation; Amazon basin; Portuguese colonial heritage; vast biodiversity; Portuguese-speaking; diverse indigenous populations and Afro-Brazilian culture." }],
   ["Australia", { continent: "Oceania", note: "Australia — Island continent; Aboriginal peoples; British settler colony; vast interior (Outback); distinct fauna and flora; isolated from other continents." }],
@@ -1528,11 +1530,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Tuvalu", { continent: "Oceania", note: "Tuvalu — Island nation in South Pacific; Polynesian; low-lying coral atolls; extremely vulnerable to climate change and rising seas; sparse population; limited resources." }],
   ["Solomon Islands", { continent: "Oceania", note: "Solomon Islands — Melanesian island nation in South Pacific; archipelago; former British protectorate; tropical rainforests; WWII strategic importance; diverse indigenous groups." }],
   ["Vanuatu", { continent: "Oceania", note: "Vanuatu — Island nation in South Pacific; Melanesian; volcanic islands; highly biodiverse; former British-French condominium; Bislama and other indigenous languages." }],
-  ["Papua New Guinea", { continent: "Oceania", note: "Papua New Guinea — Melanesian nation on eastern half of New Guinea island; highlands and coastal regions; extremely diverse (800+ languages); former Australian trust territory." }],
   ["Micronesia", { continent: "Oceania", note: "Federated States of Micronesia — Micronesian island nation; self-governing in free association with US; scattered atolls; Pacific strategic location; Palauan, Chuukese, Kosraean peoples." }],
   ["Timor-Leste", { continent: "Asia", note: "Timor-Leste (East Timor) — Island nation in Southeast Asia; eastern part of Timor island; Portuguese colonial heritage; gained independence 2002; mountainous and agricultural." }],
   ["Philippines", { continent: "Asia", note: "Philippines — Island nation in Southeast Asia; Spanish colonial heritage; Christian majority; tropical archipelago; rice and coconut agriculture; significant trade gateway." }],
-  ["Malaysia", { continent: "Asia", note: "Malaysia — Southeast Asian nation; peninsula and Borneo island portions; former British colonies; Malay-dominated; rubber and tin; Islamic culture; diverse ethnic composition." }],
   ["Singapore", { continent: "Asia", note: "Singapore — City-state at tip of Malay Peninsula; strategic port; British colonial legacy; became independent trading power; Chinese, Malay and Indian communities; financial hub." }],
   ["Thailand", { continent: "Asia", note: "Thailand — Southeast Asian nation; never colonised; Buddhist kingdom; Siamese cultural heritage; Mekong River region; rice-growing heartland; monarchy-centered society." }],
   ["Vietnam", { continent: "Asia", note: "Vietnam — Southeast Asian nation; Mekong River delta; rice-growing region; French colonial past; split 1954–1975; Tonkinese, Annamite and Cochinese regions historically." }],
@@ -1562,7 +1562,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Ireland", { continent: "Europe", note: "Ireland — Island nation; Celtic heritage; Catholic-majority population; independence from Britain 1922; English language; literary and cultural tradition; independent republic 1949." }],
   ["Jordan", { continent: "Asia", note: "Jordan — Middle Eastern nation; Levantine region; Arab-majority; emerged from Ottoman and British mandate; Trans-Jordan kingdom; Palestinian refugee populations; Desert Arab heritage." }],
   ["Saudi Arabia", { continent: "Asia", note: "Saudi Arabia — Arabian Peninsula nation; birthplace of Islam; Wahhabi Islamic tradition; oil-wealthy monarchy; Mecca and Medina religious centers; Bedouin heritage; absolute monarchy." }],
-  ["Turks and Caicos Islands", { continent: "Caribbean", note: "Turks and Caicos Islands — Caribbean territory; British overseas territory; salt and cotton trade history; tropical islands; tourism economy; southeastern Caribbean location." }],
+  ["Turks and Caicos Islands", { continent: "Caribbean", noFlagReason: "No flag shown — a British colony flying the colonial ensign; the islands' own badged flag was granted in 1968.", note: "Turks and Caicos Islands — Caribbean territory; British overseas territory; salt and cotton trade history; tropical islands; tourism economy; southeastern Caribbean location." }],
   ["Bahamas", { continent: "Caribbean", note: "Bahamas — Caribbean island nation; archipelago; British colonial heritage; tourism and financial services; African-descended majority; hurricane zone; tropical island culture." }],
   ["Andorra", { continent: "Europe", note: "Andorra — Pyrenees mountain microstate; between France and Spain; co-princes as joint rulers; ski tourism; Catalan language and culture; independent until 1993; mountain communities." }],
   ["Indonesia", { continent: "Asia", note: "Indonesia — Southeast Asian archipelago nation; world's largest island nation; Dutch colonial; Javanese, Sundanese and many ethnic groups; Islamic-majority; diverse languages; Equatorial geography." }],
@@ -1571,7 +1571,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Sambian-Nothangian culture", { continent: "Europe", note: "Sambian-Nothangian — Pre-historic Baltic culture; Baltic Sea region; Bronze Age to Iron Age transition; amber trading; ancestor to later Baltic peoples (Prussians, Lithuanians, Latvians)." }],
   ["Curonians", { continent: "Europe", note: "Curonians — Baltic people; Latvia coast; maritime traders and pirates; resistance to German crusaders and Teutonic Knights; Baltic cultural heritage; eventually Christianised." }],
   ["Croatia", { continent: "Europe", note: "Croatia — Balkan nation; Adriatic coast; Yugoslav successor state; Dalmatian maritime heritage; Catholic-majority; Central European and Mediterranean cultural blend; independent 1991." }],
-  ["Pomeranian culture", { continent: "Europe", note: "Pomeranian culture — Bronze Age Baltic coast culture; pottery and amber trade; maritime settlements; ancestor to later Slavic and Baltic groups; iron-working innovations." }],
   ["Guanahatabeyes", { continent: "Caribbean", note: "Guanahatabeyes — Caribbean indigenous peoples of Cuba and Hispaniola; hunter-gatherer tradition; cave dwellers; resisted Spanish colonization; linguistic and cultural distinction from Taíno." }],
   ["Kalaako/Malpa", { continent: "Oceania", note: "Kalaako/Malpa — Aboriginal Australian peoples of northern Australia; language groups; maritime and inland dwelling traditions; deep historical presence in the continent." }],
   ["Kadjerong", { continent: "Oceania", note: "Kadjerong — Aboriginal Australian people; Northern Territory dwellers; distinctive language and cultural practices; traditional land management and hunting traditions." }],
@@ -1611,7 +1610,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Wunambul", { continent: "Oceania", note: "Wunambul — Aboriginal Australian people of Kimberley region; Northwestern Australia; distinctive language; songline and trading traditions; pastoral and hunting practices." }],
   ["Ngalkbun", { continent: "Oceania", note: "Ngalkbun — Aboriginal Australian people of Northern Territory; language speakers; traditional country dwellers; distinctive cultural practices and songlines." }],
   ["Ngalawangka", { continent: "Oceania", note: "Ngalawangka — Aboriginal Australian people of Northern Territory; coastal dwellers; distinctive language; maritime traditions; songline and country connections." }],
-  ["Pomeranian culture", { continent: "Europe", note: "Pomeranian culture — Bronze Age Baltic maritime culture; amber trade; coastal settlements; pottery traditions; precursor to Slavic and Baltic peoples." }],
   ["Bukurnidja", { continent: "Oceania", note: "Bukurnidja — Aboriginal Australian people of Northern Territory; traditional language; land custodians; hunting and gathering knowledge; songline traditions." }],
   ["Tharrgari", { continent: "Oceania", note: "Tharrgari — Aboriginal Australian people of Western Australia; inland and coastal regions; traditional language speakers; country custodians." }],
   ["Worora", { continent: "Oceania", note: "Worora — Aboriginal Australian people of Kimberley region; Western Australia; distinctive language; maritime and inland hunting traditions; songlines." }],
@@ -1688,7 +1686,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Wuningangk", { continent: "Oceania", note: "Wuningangk — Aboriginal Australian people; Northern Territory inhabitants; distinctive language; land custodians; hunting practices." }],
   ["Ngan'giwumirri", { continent: "Oceania", note: "Ngan'giwumirri — Aboriginal Australian people of Northern Territory; language speakers; Ngan'giwumirri country dwellers; distinctive cultural traditions." }],
   ["Pinjarup", { continent: "Oceania", note: "Pinjarup — Aboriginal Australian people of Western Australia; southwestern regions; distinctive language; hunting traditions; country custodians." }],
-  ["Beothuk", { continent: "North America", note: "Beothuk people — Indigenous peoples of Newfoundland; maritime hunter-gatherers; distinctive culture; hunted seals and fish; declined due to European contact and disease; final Beothuk died 1829." }],
   ["Bidar", { continent: "Asia", note: "Bidar Sultanate — Medieval kingdom of the Deccan, India; independent Islamic state; competing with other Deccan sultanates; located in north-central Deccan region." }],
   ["Golkonda", { continent: "Asia", note: "Golkonda Sultanate — Medieval kingdom of southern India; powerful Deccan sultanate; diamond-producing region; Persian-influenced culture; competing with Bijapur and other powers." }],
   ["Cuba (Spain)", { continent: "Caribbean", note: "Cuba — Spanish colonial territory; Caribbean island; Spanish settlement and administration; sugar and plantation economy; strategic location in Caribbean; eventually independent." }],
@@ -1696,7 +1693,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Wadai", { continent: "Africa", note: "Wadai Kingdom — Central African sultanate; Chad region; Islamic state; competing with other Sahel powers; trade-based economy; camel caravan routes." }],
   ["Chtimacha", { continent: "North America", note: "Chtimacha people — Indigenous peoples of Louisiana; bayou and waterway dwellers; distinctive culture; fishing and hunting; resistance to European colonization." }],
   ["Alabama", { continent: "North America", note: "Alabama people — Southeastern North American nation; Creek Confederacy member; warriors and farmers; Mississippi region; traded with European colonists." }],
-  ["Hopi", { continent: "North America", note: "Hopi people — Southwestern North American nation; ancestral Puebloans; pueblo dwellers; agricultural tradition; distinctive language; Arizona region; spiritual and artistic culture." }],
   ["Serano", { continent: "North America", note: "Serano people — Southeastern North American indigenous peoples; Carolina region; hunter-gatherers; distinctive culture; colonial-era societies." }],
   ["Arikara", { continent: "North America", note: "Arikara people — Great Plains Native American nation; Missouri River valley; agricultural and hunting tradition; earth lodge dwellers; trading partners with other tribes." }],
   ["Miwok", { continent: "North America", note: "Miwok people — California Native Americans; diverse language groups; California valley and sierra dwellers; acorn-based diet; distinct from other California nations." }],
@@ -1783,17 +1779,12 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Mpalitjanh", { continent: "Oceania", note: "Mpalitjanh people — Aboriginal Australians; distinctive group; traditional country dwellers; hunting practices." }],
   ["Yiman", { continent: "Oceania", note: "Yiman people — Aboriginal Australians of New South Wales; southwestern inland region; distinctive language; hunting knowledge." }],
   ["Yitha Yitha", { continent: "Oceania", note: "Yitha Yitha people — Aboriginal Australians of South Australia; lower Murray region; distinctive language; riverine traditions." }],
-  ["Pomeranian culture", { continent: "Europe", note: "Pomeranian culture — Bronze Age Baltic maritime civilization; amber trading network; coastal settlements; pottery traditions; proto-Slavic development." }],
-  ["Ngan'gikurunggurr", { continent: "Oceania", note: "Ngan'gikurunggurr — Variant/alternate listing of Ngan'gikurunggurr Aboriginal people; Northern Territory." }],
-  ["Kundjey'mi", { continent: "Oceania", note: "Kundjey'mi — Variant/alternate listing of Kundjey'mi Aboriginal people; Northern Territory." }],
-  ["Ngan'giwumirri", { continent: "Oceania", note: "Ngan'giwumirri — Variant/alternate listing of Ngan'giwumirri Aboriginal people; Northern Territory." }],
   ["Boethuk", { continent: "North America", note: "Boethuk — Variant/alternate spelling of Beothuk people; Newfoundland indigenous nation; maritime hunters." }],
   ["Winebago", { continent: "North America", note: "Winebago — Variant/alternate spelling of Winnebago (Ho-Chunk) people; Great Lakes and Wisconsin region." }],
   ["Menomini", { continent: "North America", note: "Menomini — Variant/alternate spelling of Menominee people; Great Lakes Native American nation; Wisconsin region." }],
   ["Tenimo", { continent: "North America", note: "Tenimo — Variant/alternate spelling of Tenino people; Pacific Northwest Native American nation; Columbia River region." }],
   ["Maiou", { continent: "North America", note: "Maiou — Variant or related group to North American indigenous peoples; uncertain classification; possible alternate spelling." }],
   ["Republic of the Seven Zenden", { continent: "Europe", note: "Zenden — Medieval Low Countries political entities; regional councils; federation structure; predecessor to Dutch administrative traditions." }],
-  ["Dyungungoo", { continent: "Oceania", note: "Dyungungoo — Variant/alternate listing of Dyungungoo (Gubbi Gubbi) Aboriginal people; Queensland coast." }],
   ["Yirandali", { continent: "Oceania", note: "Yirandali people — Aboriginal Australians of Queensland; inland dwellers with hunting and gathering traditions." }],
   ["Western Masurian culture", { continent: "Europe", note: "Western Masurian culture — Baltic Bronze Age culture; archaeological tradition of northeastern European peoples." }],
   ["Palyku", { continent: "Oceania", note: "Palyku people — Aboriginal Australians of the Kimberley region; inland and river region dwellers; complex land traditions." }],
@@ -1818,7 +1809,6 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Pitta-Pitta", { continent: "Oceania", note: "Pitta-Pitta people — Aboriginal Australians of inland Australia; desert nation with connection to songline traditions." }],
   ["Icelandic Commonwealth", { continent: "Europe", note: "Icelandic Commonwealth — medieval Nordic state; island settlement; self-governing republic with ancient assembly (Althing)." }],
   ["Takrur", { continent: "West Africa", note: "Takrur — West African state of the Senegal River; Islamic kingdom; early conversion to Islam; trade connections across Sahara." }],
-  ["Navajo", { continent: "North America", note: "Navajo (Diné) people — Southwest United States; largest North American indigenous nation; sheep herders and weavers; adaptable survivors." }],
   ["Polynesians", { continent: "Oceania", note: "Polynesian peoples — vast Pacific island network spanning from Hawaii to New Zealand; maritime navigators; complex chiefdoms and societies." }],
   ["Wergaia", { continent: "Oceania", note: "Wergaia people — Aboriginal Australians of Victoria; inland dwellers; complex kinship and seasonal movement patterns." }],
   ["Wunumara", { continent: "Oceania", note: "Wunumara people — Aboriginal Australians; inland Australia inhabitants with specialized desert knowledge." }],
@@ -1837,10 +1827,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Castilla", { continent: "Europe", note: "Castile — medieval Iberian kingdom; driving force of the Reconquista; unified with Aragon to form Spanish monarchy." }],
   ["Keresan", { continent: "North America", note: "Keresan peoples — Pueblo peoples of New Mexico; settled agricultural societies; kachina ceremonies; distinctive architecture and pottery." }],
   ["Oto", { continent: "North America", note: "Oto people — Great Plains Siouan nation; Missouri River valley dwellers; agricultural and hunting peoples; traders." }],
-  ["Osage", { continent: "North America", note: "Osage people — Great Plains nation; wealthy from oil discoveries; cavalry warriors; controlled territory from current Oklahoma." }],
-  ["Pawnee", { continent: "North America", note: "Pawnee people — Great Plains nation; agricultural societies building earth-lodge villages; star knowledge and ceremony." }],
   ["Kaw", { continent: "North America", note: "Kaw people — Great Plains Siouan nation; Missouri River valley dwellers; hunters and traders; European contact brought disease and displacement." }],
-  ["Wichita", { continent: "North America", note: "Wichita people — southern Great Plains nation; grass-house villages; agricultural and trading peoples; confederated towns." }],
   ["Tunica", { continent: "North America", note: "Tunica peoples — Lower Mississippi Valley dwellers; agricultural societies; organized chiefdoms; linguistic group with Yoruban connections." }],
   ["Biloxi", { continent: "North America", note: "Biloxi people — Gulf Coast and Mississippi Delta nation; maritime and river dwellers; traders and hunters." }],
   ["Opata", { continent: "North America", note: "Opata people — Sonora (Mexico) indigenous peoples; agricultural societies; semi-nomadic in river valleys." }],
@@ -1886,6 +1873,18 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
  * Keys must match dataset NAME values verbatim, including any typos.
  */
 export const MODERN_NAME_ALIASES: ReadonlyMap<string, string> = new Map([
+  // Dataset names that ARE a modern country under an older or anglicised name.
+  // Without these the bare NAME match fails (the country list holds "Türkiye",
+  // "Côte d’Ivoire", "Eswatini", "North Macedonia") and the polity fell through to
+  // the no-flag branch — the 1994 map showed no flag at all for Türkiye, whose
+  // flag has flown since 1844. Each still passes flagExistedInEra(), so an era
+  // BEFORE the country's flag existed gets the dated explanation rather than an
+  // anachronistic flag (Côte d'Ivoire 1880 → "adopted in 1959"; Macedonia 1994 →
+  // "adopted in 1995", which is right: the Vergina Sun flag flew until 1995).
+  ["Turkey", "Türkiye"],
+  ["Ivory Coast", "Côte d’Ivoire"],
+  ["Swaziland", "Eswatini"],
+  ["Macedonia", "North Macedonia"],
   // 1914 colonial labels — route to the COLONIAL POWER (whose flag
   // actually flew over the territory at the time), not to the
   // post-independence successor state whose flag is anachronistic.
@@ -2414,6 +2413,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // whose modern-sounding names exist in MODERN_NAME_ALIASES but whose 1300
   // situation was very different (e.g. Morocco was Marinid, not modern).
   ["ad1300", new Map<string, PolityInfo>([
+    ["Cyprus", { continent: "Mediterranean", noFlag: true, noFlagReason: "No flag shown — the Lusignan kings used their dynastic arms and the banner of Jerusalem rather than a national flag.", note: "Kingdom of Cyprus under the Lusignan dynasty — a crusader kingdom, later sold to Venice.", population: 150_000 }],
     // France (Capetian/Valois): the fleur-de-lis banner ≠ Bourbon white flag
     ["France", { continent: "Western Europe", note: "Kingdom of France — Capetian dynasty in 1300; the Valois would follow in 1328. The fleur-de-lis azure banner predates the Bourbon white standard.", noFlag: true, population: 14_000_000 }],
     // Portugal: medieval Quinas banner — no modern-style flag
@@ -2555,6 +2555,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1600 AD (Early Modern) overrides =====================================
   ["ad1600", new Map<string, PolityInfo>([
+    ["Cambodia", { continent: "Southeast Asia", noFlag: true, noFlagReason: "No flag shown — the post-Angkor Khmer kingdom used royal and Buddhist banners, not a national flag; Cambodia's first national flag came under the French protectorate of 1863.", note: "Post-Angkor Khmer kingdom, squeezed between Siam and the Vietnamese lords.", population: 1_000_000 }],
     // Major Empires
     ["Ottoman Empire", { continent: "Western Asia / Southeastern Europe / North Africa", noFlag: true, note: "Ottoman Empire at its height under the Sultanate — the longest-lived Islamic empire; controlled vast territories across three continents.", population: 30_000_000 }],
     ["Safavid Empire", { continent: "Western Asia", noFlag: true, note: "Safavid Persia — established Shi'a Islam; rivals to the Ottomans for control of the Near East. Capital Isfahan.", population: 8_000_000 }],
@@ -3095,7 +3096,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Qing in 1880 used the TRIANGULAR yellow dragon banner (1862-1889); the
     // rectangular version we have bundled was only promulgated in 1888/89, so
     // showing it here would be the wrong flag rather than no flag.
-    ["Manchu Empire", { noFlag: true, continent: "East Asia", note: "Qing China under the Guangxu Emperor. The Yellow Dragon banner of 1880 was TRIANGULAR (1862-1889, naval and government use); the familiar rectangular dragon flag was not adopted until 1889.", population: 380_000_000 }],
+    ["Manchu Empire", { noFlag: true, continent: "East Asia", noFlagReason: "No flag shown — the Qing dragon banner of 1880 was the TRIANGULAR version used from 1862; the familiar rectangular Yellow Dragon flag came only in 1889, and no image of the triangular one is bundled.", note: "Qing China under the Guangxu Emperor. The Yellow Dragon banner of 1880 was TRIANGULAR (1862-1889, naval and government use); the familiar rectangular dragon flag was not adopted until 1889.", population: 380_000_000 }],
     ["Germany", { flag: "historical-flags/german-empire.png", continent: "Central Europe", note: "German Empire - unified in 1871 under Wilhelm I and Bismarck. The black-white-red tricolour flew until 1918; today's black-red-gold dates from 1949.", population: 45_200_000 }],
     ["Austria Hungary", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austria-Hungary - the Habsburg dual monarchy created by the 1867 Compromise.", population: 37_800_000 }],
     ["France", { modernName: "France", continent: "Western Europe", note: "French Third Republic (1870-1940), founded after defeat in the Franco-Prussian War. The tricolour of 1880 is the flag France flies today.", population: 37_700_000 }],
@@ -3110,7 +3111,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Algeria (FR)", { modernName: "France", continent: "North Africa", note: "French Algeria - administered as departments of France since 1848.", population: 3_300_000 }],
     ["Senegal (FR)", { modernName: "France", continent: "West Africa", note: "French Senegal - Saint-Louis and Goree, the base for France's West African expansion.", population: 800_000 }],
     ["French Indochina", { modernName: "France", continent: "Southeast Asia", note: "French Cochinchina and the Cambodian protectorate; Annam and Tonkin followed in 1883-85.", population: 10_000_000 }],
-    ["Annam", { noFlag: true, continent: "Southeast Asia", note: "Nguyen-dynasty Vietnam under mounting French pressure - the French protectorate came in 1883. Royal yellow banners were used; there was no modern-style national flag.", population: 8_000_000 }],
+    ["Annam", { noFlag: true, continent: "Southeast Asia", noFlagReason: "No flag shown — Nguyễn-dynasty Vietnam used imperial yellow court banners, not a national flag in the modern sense; Vietnam's first national flags date from the 20th century.", note: "Nguyen-dynasty Vietnam under mounting French pressure - the French protectorate came in 1883. Royal yellow banners were used; there was no modern-style national flag.", population: 8_000_000 }],
     ["Angola (Portugal)", { flag: "historical-flags/portugal-1500.png", continent: "Central Africa", note: "Portuguese Angola - coastal control only; the interior was conquered after the 1884-85 Berlin Conference.", population: 2_000_000 }],
     ["Mozambique", { flag: "historical-flags/portugal-1500.png", continent: "East Africa", note: "Portuguese Mozambique - a chain of coastal stations rather than the later colony.", population: 2_500_000 }],
     ["Portuguese Guinea", { flag: "historical-flags/portugal-1500.png", continent: "West Africa", note: "Portuguese Guinea, in modern Guinea-Bissau.", population: 300_000 }],
@@ -3152,26 +3153,26 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Sweden\u2013Norway", { modernName: "Sweden", continent: "Northern Europe", note: "The union of Sweden and Norway (1814\u20131905); Sweden's blue-and-gold cross is essentially today's flag.", population: 6_400_000 }],
     // --- Independent states whose 1880 flag is NOT today's flag -------------
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt - nominally Ottoman, deep in the debt crisis that brought British occupation in 1882. Red with a white crescent and three stars.", population: 6_800_000 }],
-    ["Ethiopia", { noFlag: true, continent: "East Africa", note: "Ethiopian Empire under Yohannes IV. The green-yellow-red tricolour with the Lion of Judah was not adopted until 1897.", population: 9_000_000 }],
-    ["Morocco", { noFlag: true, continent: "North Africa", note: "Alawi Sultanate of Morocco - still independent, flying a plain red flag; the green pentagram was added in 1915.", population: 5_000_000 }],
+    ["Ethiopia", { noFlag: true, continent: "East Africa", noFlagReason: "No flag shown — in 1880 Ethiopia's green, yellow and red flew as three separate pennants; they were combined into the single tricolour with the Lion of Judah only in 1897.", note: "Ethiopian Empire under Yohannes IV. The green-yellow-red tricolour with the Lion of Judah was not adopted until 1897.", population: 9_000_000 }],
+    ["Morocco", { noFlag: true, continent: "North Africa", noFlagReason: "No flag shown — the Alawi sultanate flew a plain red flag at this date; the green pentagram that makes today's Moroccan flag was added only in 1915.", note: "Alawi Sultanate of Morocco - still independent, flying a plain red flag; the green pentagram was added in 1915.", population: 5_000_000 }],
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia under Naser al-Din Shah - the Lion and Sun banner was Persia's flag until 1933, when Reza Shah changed the name to Iran.", population: 7_500_000 }],
-    ["Korea", { noFlag: true, continent: "East Asia", note: "Joseon Korea, forced open by Japan's 1876 Treaty of Ganghwa. The Taegukgi was not adopted until 1882.", population: 10_000_000 }],
-    ["Greece", { noFlag: true, continent: "SE Europe", note: "Kingdom of Greece - its 1880 flag was the blue-and-white cross beneath a royal crown; the plain nine-stripe flag became the sole national flag in 1978.", population: 1_700_000 }],
-    ["Kingdom of Hawaii", { noFlag: true, continent: "Pacific", note: "Kingdom of Hawaii under Kalakaua - independent until the US-backed overthrow of 1893. Its flag combined the Union Jack with eight stripes.", population: 58_000 }],
-    ["Taiwan", { noFlag: true, continent: "East Asia", note: "Taiwan was a prefecture of Qing Fujian in 1880; Japan annexed it in 1895.", population: 2_500_000 }],
+    ["Korea", { noFlag: true, continent: "East Asia", noFlagReason: "No flag shown — Joseon Korea had no national flag in 1880; the Taegukgi was created in 1882, two years after this map's date.", note: "Joseon Korea, forced open by Japan's 1876 Treaty of Ganghwa. The Taegukgi was not adopted until 1882.", population: 10_000_000 }],
+    ["Greece", { noFlag: true, continent: "SE Europe", noFlagReason: "No flag shown — the Kingdom's land flag was a white cross on blue beneath a royal crown; the nine-striped flag was then only the sea flag and became the sole national flag in 1978.", note: "Kingdom of Greece - its 1880 flag was the blue-and-white cross beneath a royal crown; the plain nine-stripe flag became the sole national flag in 1978.", population: 1_700_000 }],
+    ["Kingdom of Hawaii", { flag: "flags/sub/US/US-HI.svg", continent: "Pacific", note: "Kingdom of Hawaii under Kalākaua - independent until the US-backed overthrow of 1893. Its flag, the Union Jack over eight stripes for the eight islands, has flown unchanged since 1845 and is still Hawaii's today.", population: 58_000 }],
+    ["Taiwan", { noFlag: true, continent: "East Asia", noFlagReason: "No flag shown — Taiwan was a prefecture of Qing Fujian in 1880 with no flag of its own; the Qing dragon banner was the empire's.", note: "Taiwan was a prefecture of Qing Fujian in 1880; Japan annexed it in 1895.", population: 2_500_000 }],
     // --- African states independent on the eve of partition ----------------
-    ["Sokoto Caliphate", { noFlag: true, continent: "West Africa", note: "Sokoto Caliphate - still the largest state in sub-Saharan Africa, and independent until the British conquest of 1903.", population: 10_000_000 }],
-    ["Asante", { noFlag: true, continent: "West Africa", note: "Asante Empire - defeated by Britain in 1874 but still independent inland; annexed in 1902.", population: 3_000_000 }],
-    ["Zululand", { noFlag: true, continent: "Southern Africa", note: "Zululand, broken up by Britain after the 1879 Anglo-Zulu War and the defeat of Cetshwayo.", population: 300_000 }],
-    ["Transvaal", { noFlag: true, continent: "Southern Africa", note: "South African Republic (Transvaal) - Boer republic that rose against British annexation in December 1880. It flew the Vierkleur, not a modern national flag.", population: 120_000 }],
-    ["Orange Free State", { noFlag: true, continent: "Southern Africa", note: "Orange Free State - independent Boer republic (1854-1902) with its own orange-and-white flag.", population: 130_000 }],
-    ["Wassoulou Empire", { noFlag: true, continent: "West Africa", note: "Wassoulou Empire - Samori Toure's state, which resisted French conquest until 1898.", population: 1_000_000 }],
-    ["Tukular Caliphate", { noFlag: true, continent: "West Africa", note: "Toucouleur Empire - El Hadj Umar Tall's jihad state on the upper Niger, conquered by France in 1890-93.", population: 2_000_000 }],
-    ["Dahomey", { noFlag: true, continent: "West Africa", note: "Kingdom of Dahomey - famed for its women's regiments; annexed by France in 1894.", population: 500_000 }],
-    ["Imerina", { noFlag: true, continent: "East Africa", note: "Kingdom of Imerina (Madagascar) under Ranavalona II - independent until the French protectorate of 1895.", population: 2_500_000 }],
-    ["Sultinate of Zanzibar", { noFlag: true, continent: "East Africa", note: "Sultanate of Zanzibar - the Busaidi dynasty's clove and ivory empire, flying a plain red flag.", population: 200_000 }],
+    ["Sokoto Caliphate", { noFlag: true, continent: "West Africa", noFlagReason: "No flag shown — the caliphate's emirates rode under Islamic war banners rather than a single national flag, and no period image of them is bundled.", note: "Sokoto Caliphate - still the largest state in sub-Saharan Africa, and independent until the British conquest of 1903.", population: 10_000_000 }],
+    ["Asante", { noFlag: true, continent: "West Africa", noFlagReason: "No flag shown — Asante statehood was embodied in the Golden Stool, and its armies fought under many appliqué war banners rather than one national flag; no period image is bundled.", note: "Asante Empire - defeated by Britain in 1874 but still independent inland; annexed in 1902.", population: 3_000_000 }],
+    ["Zululand", { noFlag: true, continent: "Southern Africa", noFlagReason: "No flag shown — the Zulu kingdom identified its regiments by shield markings rather than flags, and by 1880 Britain had broken it into thirteen chiefdoms.", note: "Zululand, broken up by Britain after the 1879 Anglo-Zulu War and the defeat of Cetshwayo.", population: 300_000 }],
+    ["Transvaal", { noFlag: true, continent: "Southern Africa", noFlagReason: "No flag shown — the South African Republic flew the Vierkleur, the Dutch tricolour with a green band at the hoist; no period-accurate image of it is bundled.", note: "South African Republic (Transvaal) - Boer republic that rose against British annexation in December 1880. It flew the Vierkleur, not a modern national flag.", population: 120_000 }],
+    ["Orange Free State", { noFlag: true, continent: "Southern Africa", noFlagReason: "No flag shown — the republic flew its own orange-and-white striped flag with the Dutch tricolour in the canton, but no period-accurate image of it is bundled.", note: "Orange Free State - independent Boer republic (1854-1902) with its own orange-and-white flag.", population: 130_000 }],
+    ["Wassoulou Empire", { noFlag: true, continent: "West Africa", noFlagReason: "No flag shown — Samori Touré's empire fought under Islamic war banners rather than a national flag, and no period image of them is bundled.", note: "Wassoulou Empire - Samori Toure's state, which resisted French conquest until 1898.", population: 1_000_000 }],
+    ["Tukular Caliphate", { noFlag: true, continent: "West Africa", noFlagReason: "No flag shown — the Toucouleur jihad state fought under Islamic war banners rather than a national flag, and no period image of them is bundled.", note: "Toucouleur Empire - El Hadj Umar Tall's jihad state on the upper Niger, conquered by France in 1890-93.", population: 2_000_000 }],
+    ["Dahomey", { noFlag: true, continent: "West Africa", noFlagReason: "No flag shown — Dahomey's regiments carried appliqué war banners rather than one national flag, and no period-accurate image of them is bundled.", note: "Kingdom of Dahomey - famed for its women's regiments; annexed by France in 1894.", population: 500_000 }],
+    ["Imerina", { noFlag: true, continent: "East Africa", noFlagReason: "No flag shown — the Merina monarchy used red-and-white royal standards rather than a national flag, and no period-accurate image of them is bundled; Madagascar's flag dates from 1958.", note: "Kingdom of Imerina (Madagascar) under Ranavalona II - independent until the French protectorate of 1895.", population: 2_500_000 }],
+    ["Sultinate of Zanzibar", { noFlag: true, continent: "East Africa", noFlagReason: "No flag shown — the Busaidi sultans flew a plain red flag, and no period-accurate image of it is bundled.", note: "Sultanate of Zanzibar - the Busaidi dynasty's clove and ivory empire, flying a plain red flag.", population: 200_000 }],
     // --- Additional African states independent or semi-independent in 1880 -----
-    ["Buganda", { noFlag: true, continent: "East Africa", note: "Kingdom of Buganda — powerful East African kingdom (modern Uganda); independent until British protectorate 1894.", population: 1_000_000 }],
+    ["Buganda", { noFlag: true, continent: "East Africa", noFlagReason: "No flag shown — the kabaka's court used royal drums and standards, not a national flag; Buganda's own flag dates from the 20th century and no period image is bundled.", note: "Kingdom of Buganda — powerful East African kingdom (modern Uganda); independent until British protectorate 1894.", population: 1_000_000 }],
     ["Borno Sultanate", { noFlag: true, continent: "West Africa", note: "Sultanate of Borno — large Islamic state in Central Sahel; surviving but declining by 1880.", population: 2_000_000 }],
     ["Kano Emirate", { noFlag: true, continent: "West Africa", note: "Emirate of Kano — major Hausa city-state in Nigeria; center of Islamic learning and trade.", population: 500_000 }],
     ["Katsina Emirate", { noFlag: true, continent: "West Africa", note: "Emirate of Katsina — historic Hausa city-state; rival to Kano.", population: 400_000 }],
@@ -3186,7 +3187,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Perak", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Perak — Malay state; tin mining important; British resident installed 1875.", population: 200_000 }],
     ["Kedah", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Kedah — Malay state; British protectorate from 1909.", population: 250_000 }],
     ["Terengganu", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Terengganu — East Coast Malay state.", population: 100_000 }],
-    ["Brunei", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Brunei — Borneo state; British protectorate from 1888.", population: 80_000 }],
+    ["Brunei", { flag: "historical-flags/brunei-1815.png", continent: "Southeast Asia", note: "Sultanate of Brunei — the sultan's plain yellow flag still flew in 1880; the white and black stripes were added in 1906 and the crest in 1959. A British protectorate from 1888.", population: 80_000 }],
     ["Sulu Sultanate", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Sulu — southern Philippines; independent Islamic sultanate until American colonization.", population: 300_000 }],
     ["Maguindanao", { noFlag: true, continent: "Southeast Asia", note: "Sultanate of Maguindanao — Mindanao sultanate; resisting Spanish and later American colonization.", population: 400_000 }],
     ["Tonkin", { noFlag: true, continent: "Southeast Asia", note: "Kingdom of Tonkin — Vietnamese kingdom; French protectorate established 1883.", population: 5_000_000 }],
@@ -3194,8 +3195,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Johor", { noFlag: true, continent: "Southeast Asia", note: "Kingdom of Johor — Malay state; British protectorate by 1895.", population: 250_000 }],
     ["Burma", { noFlag: true, continent: "Southeast Asia", note: "Kingdom of Burma — Konbaung dynasty; third Anglo-Burmese War brought British rule in 1886.", population: 5_000_000 }],
     // --- Pacific and Asian island states ----------------------------------------
-    ["Samoa", { noFlag: true, continent: "Pacific", note: "Independent Samoa — Pacific kingdom; partition agreed 1899 between US and Germany.", population: 30_000 }],
-    ["Fiji", { noFlag: true, continent: "Pacific", note: "Kingdom of Fiji — island state; British colony from 1874.", population: 150_000 }],
+    ["Samoa", { noFlag: true, continent: "Pacific", noFlagReason: "No flag shown — the rival Samoan royal factions flew several banners before the 1899 partition, and no period-accurate image of them is bundled; today's Samoan flag dates from 1949.", note: "Independent Samoa — Pacific kingdom; partition agreed 1899 between US and Germany.", population: 30_000 }],
+    ["Fiji", { noFlag: true, continent: "Pacific", noFlagReason: "No flag shown — Fiji was a British colony from 1874 and flew the colonial ensign; the modern Fijian flag came with independence in 1970.", note: "Fiji — a British colony since the 1874 cession; the Kingdom of Fiji's own flag was hauled down that year.", population: 150_000 }],
     ["Tahiti", { noFlag: true, continent: "Pacific", note: "Kingdom of Tahiti — French Polynesia; French protectorate (colony from 1880).", population: 20_000 }],
     // --- Indian subcontinent kingdoms -------------------------------------------
     ["Kashmir", { noFlag: true, continent: "South Asia", note: "Kingdom of Kashmir — princely state; ruled by Hindu maharaja under British suzerainty.", population: 2_000_000 }],
@@ -3205,6 +3206,15 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1900 (high imperialism) overrides ====================================
   ["ad1900", new Map<string, PolityInfo>([
+    // The upstream file still calls Brazil a kingdom in 1900 and records Portugal as
+    // its sovereign; the empire actually fell in 1889 (and independence came in 1822).
+    // The name is remapped for display below and the false ruler refused in FALSE_SUBJECTO.
+    ["Kingdom of Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — the republic has flown its green-and-yellow flag since 1889, but the star field was redrawn each time states were added, so today's 27-star version is not the one that flew in 1900, and no period-accurate image is bundled.", note: "Republic of the United States of Brazil — the monarchy of Pedro II was overthrown in 1889, eleven years before this map's date, and the republic adopted the starred flag it still flies.", population: 17_400_000 }],
+    // Hawaii was annexed by the United States in 1898, so the upstream map's
+    // "Kingdom of Hawaii" label is already two years out of date here — but the flag
+    // itself carried on: the same Union-Jack-and-eight-stripes design served as the
+    // territorial flag, as it still serves as the state flag today.
+    ["Kingdom of Hawaii", { flag: "flags/sub/US/US-HI.svg", continent: "Pacific", note: "Hawaii — annexed by the United States in 1898, five years after the overthrow of Queen Lili\u02bbuokalani. The kingdom's flag was kept on as the territorial flag and is Hawaii's state flag today.", population: 154_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 32_500_000 }],
     ["Germany", { flag: "historical-flags/german-empire.png", continent: "Central Europe", note: "German Empire under Wilhelm II — the black-white-red tricolour flew until 1918.", population: 56_400_000 }],
     ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea — Italy's first African colony, taken in 1890.", population: 250_000 }],
@@ -3219,9 +3229,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // 21-star flag adopted then and used until 1960. The design evolved as states joined.
     ["United States of Brazil", { modernName: "Brazil", continent: "South America", note: "Republic of Brazil — the monarchy fell in 1889 and the republican flag with stars representing states was adopted. The design varied as states joined the federation.", population: 17_400_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Khedivate of Egypt under British occupation since 1882, still nominally Ottoman.", population: 10_000_000 }],
-    ["Ethiopia", { continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent.", noFlag: true, population: 11_000_000 }],
+    ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Ethiopian Empire under Menelik II, which had crushed the Italian invasion at Adwa in 1896 — the one African state to defeat a European power and stay independent. Menelik combined the green, yellow and red into a single flag with the Lion of Judah in 1897.", population: 11_000_000 }],
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Qajar Persia during the Constitutional Revolution (1905-1911) — the Lion and Sun banner was Persia's national flag.", population: 8_500_000 }],
-    ["Korea", { noFlag: true, continent: "East Asia", note: "Korean Empire (1897–1910) — independent in name, under mounting Japanese and Russian pressure. The Taegukgi dates from 1882.", population: 12_000_000 }],
+    ["Korea", { noFlag: true, continent: "East Asia", noFlagReason: "No flag shown — the Korean Empire flew the Taegukgi from 1882, but its taeguk and trigrams were drawn differently from today's South Korean flag (standardised in 1949), and no period image is bundled.", note: "Korean Empire (1897–1910) — independent in name, under mounting Japanese and Russian pressure. The Taegukgi dates from 1882.", population: 12_000_000 }],
     // --- European powers and their colonies in 1900 ----------------------------
     // Consolidated features from world_1900.geojson
     ["Russian Empire", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / Asia", note: "Russian Empire under Nicholas II — vast transcontinental empire stretching from Eastern Europe to the Pacific.", population: 128_200_000 }],
@@ -3237,13 +3247,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Russia", { flag: "historical-flags/russian-empire.png", continent: "Eastern Europe / Asia", note: "Russian Empire under Nicholas II — vast transcontinental empire stretching from Eastern Europe to the Pacific.", population: 128_200_000 }],
     ["Austria-Hungary", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austria-Hungary — the dual monarchy of the Austro-Hungarian Empire at its height.", population: 51_400_000 }],
     ["Greece", { modernName: "Greece", continent: "SE Europe", note: "Kingdom of Greece — expanded after the Greco-Turkish Wars; controlling Crete and various Aegean islands.", population: 2_400_000 }],
-    ["Romania", { noFlag: true, continent: "SE Europe", note: "Kingdom of Romania — independent kingdom; modern red-yellow-blue flag adopted 1948.", population: 1_900_000 }],
-    ["Serbia", { noFlag: true, continent: "SE Europe", note: "Kingdom of Serbia — Balkan power; the tricolour was adopted 1835.", population: 2_100_000 }],
-    ["Bulgaria", { noFlag: true, continent: "SE Europe", note: "Kingdom of Bulgaria — independent from Ottoman rule (1878); the white-green-red tricolour adopted 1878.", population: 3_700_000 }],
+    ["Romania", { continent: "SE Europe", note: "Kingdom of Romania — independent since 1877. The blue-yellow-red civil tricolour it flew dates from 1848 and is Romania's flag today; only the state flag carried the royal arms in the centre.", population: 1_900_000 }],
+    ["Serbia", { noFlag: true, continent: "SE Europe", noFlagReason: "No flag shown — the Kingdom flew the red-blue-white tricolour with the royal arms; today's Serbian flag was adopted in 2010 and no period image of the royal one is bundled.", note: "Kingdom of Serbia — Balkan power; the tricolour was adopted 1835.", population: 2_100_000 }],
+    ["Bulgaria", { continent: "SE Europe", note: "Principality of Bulgaria — autonomous from Ottoman rule since 1878, fully independent in 1908. The white-green-red tricolour it adopted in 1879 is the flag Bulgaria flies today.", population: 3_700_000 }],
     // --- Colonies and holdings ------------------------------------------------
     ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria — administered as French departments; colonial territory.", population: 4_500_000 }],
-    ["Tunisia", { noFlag: true, continent: "North Africa", note: "Tunisia — French protectorate since 1881; still flying Ottoman flags nominally.", population: 1_900_000 }],
-    ["Morocco", { noFlag: true, continent: "North Africa", note: "Morocco — independent sultanate; French protectorate after 1912 Treaty of Fez.", population: 5_200_000 }],
+    ["Tunisia", { continent: "North Africa", note: "Tunisia — a French protectorate since 1881, but the Beylik kept its own flag: the red field with a white disc bearing a crescent and star, created in 1831 and essentially unchanged today.", population: 1_900_000 }],
+    ["Morocco", { noFlag: true, continent: "North Africa", noFlagReason: "No flag shown — the sultanate flew a plain red flag at this date; the green pentagram that makes today's Moroccan flag was added only in 1915.", note: "Morocco — independent sultanate; French protectorate after 1912 Treaty of Fez.", population: 5_200_000 }],
     ["Sudan (Egypt-Sudan Condominium)", { modernName: "United Kingdom", continent: "North Africa", note: "Sudan — Anglo-Egyptian Condominium (1899–1956); joint British-Egyptian administration.", population: 1_900_000 }],
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya — British East Africa Protectorate; part of the British colonial empire.", population: 3_000_000 }],
     ["Tanzania", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — German East Africa until WWI; German colony in 1900.", population: 4_500_000 }],
@@ -3259,7 +3269,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Guam (US)", { modernName: "United States", continent: "Pacific", note: "Guam — ceded to the United States from Spain in 1898.", population: 8_000 }],
     ["Philippines (US)", { modernName: "United States", continent: "Southeast Asia", note: "Philippines — ceded to the United States from Spain in 1898; American colonial rule began.", population: 7_600_000 }],
     // Pacific island territories — added after consolidating fragmented polities
-    ["Fiji", { noFlag: true, continent: "Pacific", note: "Kingdom of Fiji — British colony from 1874; island nation in the South Pacific.", population: 150_000 }],
+    ["Fiji", { noFlag: true, continent: "Pacific", noFlagReason: "No flag shown — Fiji was a British colony and flew the colonial ensign; the modern Fijian flag came with independence in 1970.", note: "Fiji — a British colony since the 1874 cession; the modern Fijian flag came with independence in 1970.", population: 150_000 }],
     ["Tonga", { modernName: "Tonga", continent: "Pacific", note: "Kingdom of Tonga — the red flag with its canton cross was fixed in the 1875 constitution and is unchanged today; the only Pacific kingdom never colonised.", population: 25_000 }],
     ["American Samoa", { modernName: "United States", continent: "Pacific", note: "American Samoa — U.S. territory in the South Pacific since 1899; Polynesian islands.", population: 8_000 }],
   ])],
@@ -3270,6 +3280,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    // Tibet was de facto independent from 1912. (This text used to sit in the
+    // registry, where a duplicate "Tibet" key for the medieval period shadowed it.)
+    ["Tibet", { noFlag: true, continent: "Central Asia", noFlagReason: "No flag shown — the 13th Dalai Lama's snow-lion flag was designed only in 1916, two years after this map's date.", note: "Tibet — de facto independent since 1912, when the last Qing garrison was expelled; the People's Republic annexed it in 1950–51.", population: 1_200_000 }],
     ["Ottoman Empire", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia / North Africa", note: "Ottoman Empire in terminal decline — on the eve of World War I, the Ottomans had already lost most of their European and North African territories in the Balkans Wars (1912–1913). Still controlling Anatolia, parts of the Levant, Mesopotamia, and Arabian Peninsula. The crescent-and-star flag was standardised in 1844.", population: 12_000_000 }],
     ["Austro-Hungarian Empire", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austro-Hungarian Empire on the eve of World War I — the dual monarchy of the Habsburgs, spanning Central Europe. The monarchy would collapse in November 1918 after Austria-Hungary's military defeat, leading to the emergence of Austria, Hungary, Yugoslavia, Czechoslovakia and the addition of territory to Romania and Poland.", population: 51_000_000 }],
     ["Kingdom of Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 36_000_000 }],
@@ -3304,7 +3317,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Armenia in 1914 — split between the Russian Empire and the Ottoman
     // Empire. No independent Armenian state. The modern Armenian flag
     // (1990) is wildly anachronistic.
-    ["Armenia", { continent: "Western Asia", note: "Armenian-populated lands of Transcaucasia were divided between the Russian and Ottoman empires; no independent Armenian state existed in 1914.", population: 1_700_000, noFlag: true }],
+    ["Armenia", { continent: "Western Asia", noFlagReason: "No flag shown — there was no Armenian state in 1914 to have one: these lands were divided between the Russian and Ottoman empires, whose flags flew over them. Armenia's own tricolour came with the 1918 republic.", note: "Armenian-populated lands of Transcaucasia were divided between the Russian and Ottoman empires; no independent Armenian state existed in 1914.", population: 1_700_000, noFlag: true }],
     // Ceylon in 1914 — Crown Colony, Union Jack.
     ["Ceylon", { continent: "South Asia", note: "British Ceylon — Crown Colony from 1815 to 1948. Flew the Union Jack.", modernName: "United Kingdom", population: 4_200_000 }],
     // Yemen in 1914 — Ottoman, no national flag.
@@ -3329,10 +3342,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    // The three Transcaucasian republics were independent in 1920 (the dataset records
+    // them as Soviet, two years before the USSR existed — see FALSE_SUBJECTO).
+    ["Armenia", { noFlag: true, continent: "Western Asia", noFlagReason: "No flag shown — the First Republic (1918–20) flew the red-blue-orange tricolour that Armenia readopted in 1990; no period image of it is bundled.", note: "First Republic of Armenia — independent from 1918 until the Red Army took Yerevan in December 1920.", population: 1_300_000 }],
     ["Ottoman Sultanate", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Ottoman Empire after the 1877-78 Russo-Turkish War; in terminal decline as the Turkish War of Independence began in 1919. The crescent-and-star flag was standardised in 1844.", population: 18_000_000 }],
     ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union was formed on 30 December 1922 from the remnants of the Russian Empire following the Russian Civil War (1918–1922). The red flag with the hammer and sickle became the national symbol of the communist state.", population: 110_000_000 }],
     ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Czechoslovak Republic (1918–1938) — newly formed from the dissolution of Austria-Hungary, uniting Czech and Slovak lands. The red-white-blue tricolour was adopted as the national flag in 1920.", population: 14_000_000 }],
-    ["Yugoslavia", { flag: "historical-flags/yugoslavia.png", continent: "SE Europe", note: "Kingdom of Serbs, Croats and Slovenes (1918–1929, renamed Kingdom of Yugoslavia in 1929) — formed from South Slavic territories of the dissolved Austria-Hungary. The blue-white-red tricolour represented the new South Slavic state.", population: 12_000_000 }],
+    ["Yugoslavia", { noFlag: true, continent: "SE Europe", noFlagReason: "No flag shown — the Kingdom of Serbs, Croats and Slovenes flew a PLAIN blue-white-red tricolour; the red star was added only by the socialist federation in 1945, so the bundled Yugoslav flag would be a quarter-century out of period.", note: "Kingdom of Serbs, Croats and Slovenes (1918–1929, renamed Kingdom of Yugoslavia in 1929) — formed from South Slavic territories of the dissolved Austria-Hungary.", population: 12_000_000 }],
     ["British Raj", { modernName: "United Kingdom", continent: "South Asia", note: "British India — the Raj at its height, covering today's India, Pakistan, Bangladesh and Burma. The Union Jack was the official flag; the Indian tricolour was adopted at independence in 1947.", population: 306_000_000 }],
     ["Ceylon", { modernName: "United Kingdom", continent: "South Asia", note: "British Crown Colony of Ceylon under direct British rule since 1815; flew the Union Jack. Independence and the distinctive lion flag came in 1948.", population: 3_500_000 }],
     ["Malaysia", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Malaya — the Straits Settlements and protected Malay sultanates; not yet federated as Malaysia, which formed in 1963.", population: 2_000_000 }],
@@ -3364,13 +3380,16 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Philippines Commonwealth (1935–1946) — a U.S. territory with increasing self-governance under the Commonwealth Constitution of 1935. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 10_000_000 }],
-    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Kingdom of Hungary — independent nation after the Austro-Hungarian Empire collapsed in 1918. The Apostolic Double Cross banner was traditional; no single standardised national flag during this period.", population: 7_600_000 }],
+    ["Hungary", { noFlag: true, continent: "Central Europe", noFlagReason: "No flag shown — the Kingdom flew the red-white-green tricolour charged with the crowned royal arms; today's plain tricolour dates from 1957, and no period image of the crowned version is bundled.", note: "Kingdom of Hungary — a kingdom without a king, under Regent Miklós Horthy after the Austro-Hungarian collapse of 1918. Its red-white-green tricolour dates from 1848.", population: 7_600_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Kingdom of Egypt (1922–1952) after nominal independence from Ottoman rule in 1922. The khedive's crescent and star flag (red with white crescent and three stars) represented Egypt during the interwar period.", population: 12_000_000 }],
-    ["Albania", { noFlag: true, continent: "Europe", note: "Kingdom of Albania (1928–1939) under King Zog I, independent nation after Ottoman rule ended. No standardised national flag during this early interwar period.", population: 1_000_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 30_600_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", noFlagReason: "No flag shown — Albania flew the red flag with Skanderbeg's black double-headed eagle from 1912, but the eagle was crowned or crested differently under each regime; today's plain eagle flag dates from 1992 and no period image is bundled.", note: "Albania after independence from Ottoman rule — the red flag with the black double-headed eagle flew from 1912, its crest changing with each regime.", population: 1_000_000 }],
+    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil — the republican flag was adopted in 1889 with a star for each state.", population: 30_600_000 }],
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    // French Indochina in 1938 — the dataset records these as Japanese, but the
+    // occupation began only in September 1940 (see FALSE_SUBJECTO).
+    ["Cambodia", { noFlag: true, continent: "Southeast Asia", noFlagReason: "No flag shown — the French tricolour flew over the protectorate; Cambodia's own blue-and-red flag with Angkor Wat dates from 1948.", note: "The Kingdom of Cambodia as a French protectorate within French Indo-China; Japan's occupation was still two years away.", population: 3_000_000 }],
     ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union established on 30 December 1922. In 1938, under Stalin's leadership, the USSR was a fully consolidated totalitarian state spanning from Eastern Europe across Asia to the Pacific. The red flag with the hammer and sickle was its national symbol.", population: 168_000_000 }],
     ["Turkey", { flag: "historical-flags/ottoman-empire.png", continent: "Western Asia", note: "Turkish Republic (1923–present) — established under Mustafa Kemal Atatürk after the collapse of the Ottoman Empire. The red flag with white crescent and star was adopted in 1923 and remains Turkey's flag today.", population: 16_000_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Fascist Italy under Mussolini — the green-white-red tricolour carried the Savoy arms of the Kingdom. The monarchy remained until 1946, when the republic removed the arms from the flag.", population: 43_000_000 }],
@@ -3385,9 +3404,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Nazi Germany. Black-red-gold was abolished in 1933 and only readopted in 1949,
     // so the Weimar/Federal flag is wrong here — and the flag that did fly is one this
     // project will not bundle. The panel says so instead.
-    ["Germany", { noFlag: true, continent: "Central Europe", note: "Nazi Germany, which had just annexed Austria and the Sudetenland. The black-red-gold tricolour was abolished in 1933 and restored only in 1949.", population: 69_000_000 }],
-    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Kingdom of Hungary — independent nation under Regent Miklós Horthy. The Apostolic Double Cross was the traditional symbol; no single standardised flag was adopted.", population: 9_000_000 }],
-    ["Albania", { noFlag: true, continent: "Europe", note: "Kingdom of Albania under King Zog I (1928–1939), during Italian occupation in 1939. Limited standardised national flag during this period.", population: 1_050_000 }],
+    ["Germany", { noFlag: true, continent: "Central Europe", noFlagReason: "No flag shown — Nazi Germany's national flag from 1935 to 1945 was the swastika banner, which this game does not display. The black-red-gold tricolour it replaced was abolished in 1933 and restored only in 1949.", note: "Nazi Germany, which had just annexed Austria and the Sudetenland. The black-red-gold tricolour was abolished in 1933 and restored only in 1949.", population: 69_000_000 }],
+    ["Hungary", { noFlag: true, continent: "Central Europe", noFlagReason: "No flag shown — the Kingdom flew the red-white-green tricolour charged with the crowned royal arms; today's plain tricolour dates from 1957, and no period image of the crowned version is bundled.", note: "Kingdom of Hungary under Regent Miklós Horthy — a kingdom without a king. Its red-white-green tricolour dates from 1848.", population: 9_000_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", noFlagReason: "No flag shown — Zog's kingdom flew the red flag with the black double-headed eagle beneath a helmet of Skanderbeg; today's plain eagle flag dates from 1992 and no period image of the helmeted version is bundled.", note: "Kingdom of Albania under King Zog I (1928–1939), a year from the Italian invasion of April 1939.", population: 1_050_000 }],
     ["Sudan", { modernName: "United Kingdom", continent: "Northeast Africa", note: "Anglo-Egyptian Sudan — the condominium ruled from Khartoum until independence in 1956.", population: 6_500_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India on the eve of the war — still one Raj, ten years from partition.", population: 377_000_000 }],
     ["British Raj", { modernName: "United Kingdom", continent: "South Asia", note: "British India on the eve of the war — still one Raj, ten years from partition.", population: 377_000_000 }],
@@ -3408,22 +3427,25 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution.", population: 4_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Commonwealth of the Philippines, a U.S. territory with internal self-governance under the 1935 Commonwealth Constitution. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 16_000_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 39_000_000 }],
+    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil under Getúlio Vargas's Estado Novo — the republican flag was adopted in 1889 with a star for each state.", population: 39_000_000 }],
     // --- Additional European and other states for 1938 -------------------------
-    ["Spain", { noFlag: true, continent: "Western Europe", note: "Spain in 1938 — in the midst of the Spanish Civil War (1936-1939) between Republican and Nationalist forces. The flag situation was contested.", population: 23_000_000 }],
+    ["Spain", { noFlag: true, continent: "Western Europe", noFlagReason: "No flag shown — in 1938 two flags flew over Spain: the Republic's red-yellow-purple tricolour and the Nationalists' red-yellow-red. No single national flag applies to this date, and neither period image is bundled.", note: "Spain in the middle of the Civil War (1936–1939), the country split between Republican and Nationalist control.", population: 23_000_000 }],
     ["Poland", { flag: "historical-flags/poland-1919.svg", continent: "Eastern Europe", note: "Second Polish Republic (1919–1939) — independent state between Germany and the Soviet Union. The white-and-red bicolour was adopted in 1919.", population: 34_500_000 }],
-    ["Czechoslovakia", { noFlag: true, continent: "Central Europe", note: "Czechoslovakia in 1938 — about to be dismantled by Nazi Germany; the red-white-blue tricolour was adopted in 1920.", population: 15_000_000 }],
-    ["Netherlands", { noFlag: true, continent: "Western Europe", note: "Kingdom of the Netherlands in 1938 — neutral until 1940. The red-white-blue tricolour was official; today's order is unchanged.", population: 8_700_000 }],
-    ["Belgium", { noFlag: true, continent: "Western Europe", note: "Kingdom of Belgium in 1938 — neutral officially, though Hitler would invade in 1940. The black-yellow-red tricolour was the national flag.", population: 8_400_000 }],
-    ["Greece", { noFlag: true, continent: "SE Europe", note: "Kingdom of Greece in 1938 — under the Metaxas dictatorship. The blue-and-white flag with cross was official (modern flag unchanged).", population: 6_500_000 }],
-    ["Romania", { noFlag: true, continent: "SE Europe", note: "Kingdom of Romania in 1938 — the red-yellow-blue tricolour was the national flag (adopted 1848; modern flag is identical).", population: 19_000_000 }],
-    ["Yugoslavia", { noFlag: true, continent: "SE Europe", note: "Kingdom of Yugoslavia in 1938 — the blue-white-red tricolour was the national flag; the state would be invaded in 1941.", population: 15_700_000 }],
+    ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Czechoslovakia in 1938 — months from being dismantled by Nazi Germany. Its white-red flag with the blue hoist triangle, adopted in 1920, is the flag Czechia flies today.", population: 15_000_000 }],
+    ["Netherlands", { continent: "Western Europe", note: "Kingdom of the Netherlands in 1938 — neutral until the German invasion of 1940. Its red-white-blue tricolour is unchanged today.", population: 8_700_000 }],
+    ["Belgium", { continent: "Western Europe", note: "Kingdom of Belgium in 1938 — officially neutral, though Germany would invade in 1940. Its black-yellow-red tricolour has flown since 1831.", population: 8_400_000 }],
+    ["Greece", { noFlag: true, continent: "SE Europe", noFlagReason: "No flag shown — Greece's national land flag in 1938 was a plain white cross on blue; the nine-striped flag was then the sea flag, and became the sole national flag only in 1978.", note: "Kingdom of Greece in 1938 — under the Metaxas dictatorship.", population: 6_500_000 }],
+    ["Romania", { continent: "SE Europe", note: "Kingdom of Romania in 1938, under Carol II's royal dictatorship. Its blue-yellow-red civil tricolour dates from 1848 and is Romania's flag today; only the state flag carried the royal arms.", population: 19_000_000 }],
+    ["Yugoslavia", { noFlag: true, continent: "SE Europe", noFlagReason: "No flag shown — the Kingdom flew a plain blue-white-red tricolour; the red star of the bundled Yugoslav flag was added only in 1945, and no period image of the royal flag is bundled.", note: "Kingdom of Yugoslavia in 1938 — three years from the Axis invasion of 1941.", population: 15_700_000 }],
     ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Persia (renamed Iran in 1935) in 1938 — under Reza Shah Pahlavi. The Lion and Sun flag represented the nation until 1980.", population: 14_500_000 }],
     ["Netherlands Indies", { modernName: "Netherlands", continent: "Southeast Asia", note: "Netherlands East Indies in 1938 — Dutch colonial possession; Japanese occupation would begin in 1942.", population: 70_000_000 }],
   ])],
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    // The dataset spells Turkey "Türkiye" from 1945 on; without an entry the panel fell
+    // back to the era-agnostic registry note, which describes the Ottoman empire.
+    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Türkiye — neutral for almost all of the war, declaring on Germany only in February 1945. Its red flag with the white crescent and star dates from 1844.", population: 19_000_000 }],
     ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union at the end of World War II, after defeating Nazi Germany. The USSR emerged as one of two superpowers, with control over Eastern Europe and major influence in Asia. The red flag with the hammer and sickle was its national symbol until 1991.", population: 194_000_000 }],
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was still under British rule as the Dominion of Ceylon in 1945 (Ceylon became independent in 1948, renamed Sri Lanka in 1972). The Dominion's distinctive lion flag was adopted in 1951; this era predates it, but the flag represents the post-1948 identity.", modernName: "United Kingdom", population: 6_500_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at the war's end — partition and independence came two years later, in 1947.", population: 389_000_000 }],
@@ -3460,11 +3482,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Korea 1945 — Allied occupation zones. No national flag yet (the
     // Taegukgi for the South was formalised in 1948; the DPRK flag also
     // in 1948).
-    ["Korea (USA)", { continent: "East Asia", note: "United States Army Military Government in Korea (1945–1948). No Korean national flag flew officially — the Taegukgi was formalised by the new ROK in 1948.", population: 16_000_000, noFlag: true }],
-    ["Korea (USSR)", { continent: "East Asia", note: "Soviet Civil Administration in northern Korea (1945–1948). No national flag — the DPRK flag was adopted in 1948.", population: 9_000_000, noFlag: true }],
+    ["Korea (USA)", { continent: "East Asia", noFlagReason: "No flag shown — under the United States Army Military Government (1945–48) no Korean national flag flew officially; the Taegukgi was formalised by the new Republic of Korea in 1948.", note: "United States Army Military Government in Korea (1945–1948). No Korean national flag flew officially — the Taegukgi was formalised by the new ROK in 1948.", population: 16_000_000, noFlag: true }],
+    ["Korea (USSR)", { continent: "East Asia", noFlagReason: "No flag shown — under the Soviet Civil Administration (1945–48) northern Korea had no national flag; the DPRK's was adopted in 1948.", note: "Soviet Civil Administration in northern Korea (1945–1948). No national flag — the DPRK flag was adopted in 1948.", population: 9_000_000, noFlag: true }],
     // Saar Protectorate — French zone, then French protectorate
     // 1947–1956 with its own blue-and-red cross flag. No curated PNG.
-    ["Saar Protectorate", { continent: "Western Europe", note: "Initial French occupation zone then French protectorate 1947–1956. Used its own flag with a Scandinavian-style cross — joined West Germany in 1957.", population: 850_000, noFlag: true }],
+    ["Saar Protectorate", { continent: "Western Europe", noFlagReason: "No flag shown — in 1945 the Saar was still a French occupation zone with no flag of its own; the protectorate's Nordic-cross flag followed in 1948, and it joined West Germany in 1957.", note: "Initial French occupation zone then French protectorate 1947–1956. Used its own flag with a Scandinavian-style cross — joined West Germany in 1957.", population: 850_000, noFlag: true }],
     // Zaire is the dataset's anachronistic 1945 label for the Belgian
     // Congo (the name 'Zaire' only existed from 1971 under Mobutu).
     ["Zaire", { continent: "Central Africa", note: "Belgian Congo — the name \"Zaire\" wouldn't be coined until 1971 under Mobutu. In 1945 the Belgian tricolour flew over the colony.", modernName: "Belgium", population: 12_000_000 }],
@@ -3487,17 +3509,21 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // French Indochina in 1945: Annam, Tonkin still referenced as French;
     // Cochin China alias already routes to France. No extra overrides needed.
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, just out of the Japanese occupation and American reconstruction. The white sun and three stars flag has been in use since 1898.", population: 19_000_000 }],
-    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Kingdom of Hungary (1920–1946) — the Apostolic Double Cross was traditional heraldry but no single standardised flag. Under Soviet occupation by 1945.", population: 9_300_000 }],
-    ["Albania", { noFlag: true, continent: "Europe", note: "Kingdom of Albania ended in 1944; the People's Republic of Albania was proclaimed in January 1946. No single standardised national flag during this transition period.", population: 1_100_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 45_000_000 }],
+    ["Hungary", { noFlag: true, continent: "Central Europe", noFlagReason: "No flag shown — the red-white-green tricolour flew here with the crowned royal arms, and after 1949 with communist ones; today's plain tricolour dates from 1957 and no period image of either charged version is bundled.", note: "Hungary under Soviet occupation at the war's end — the kingdom formally lasted until the republic of 1946.", population: 9_300_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", noFlagReason: "No flag shown — the 1945 provisional government flew the red flag with the black double-headed eagle beneath a gold star; today's plain eagle flag dates from 1992 and no period image of the star version is bundled.", note: "Albania between states — the kingdom ended in 1944 and the People's Republic was proclaimed in January 1946.", population: 1_100_000 }],
+    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil — the only South American country to send troops to fight in Europe. Its republican flag dates from 1889.", population: 45_000_000 }],
   ])],
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Türkiye — a NATO member since 1952, in the year its army took power in the coup of May 1960. Its red flag with the white crescent and star dates from 1844.", population: 28_000_000 }],
+    // As for 1994 — the ROC flag flew over Taiwan in 1960; "Taiwan" is not a name
+    // the modern-country fallback can match, so it needs an explicit entry.
+    ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan under the Republic of China, whose government had withdrawn to the island in 1949 and still held China's UN seat. The blue-sky/white-sun flag has flown since 1928.", population: 10_800_000 }],
     ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union in 1960 at the height of the Cold War, spanning from Eastern Europe to the Pacific under Nikita Khrushchev. The red flag with hammer and sickle was its national symbol.", population: 214_000_000 }],
     ["Yugoslavia", { flag: "historical-flags/yugoslavia.png", continent: "SE Europe", note: "Socialist Federal Republic of Yugoslavia (1945–1992) — the unified Yugoslav state under Josip Broz Tito, spanning South Slavic territories. The blue-white-red tricolour represented the socialist federation.", population: 18_500_000 }],
     ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Czechoslovak Socialist Republic (1948–1968) — formally communist from 1948, though relative liberalization occurred by 1960. The red-white-blue tricolour represented the unified Czechoslovak state until the 1989 Velvet Revolution.", population: 14_000_000 }],
-    ["Namibia", { noFlag: true, continent: "Southern Africa", note: "South West Africa — still ruled by South Africa against UN objection; it became independent Namibia, with its own flag, in 1990.", population: 600_000 }],
+    ["Namibia", { noFlag: true, continent: "Southern Africa", noFlagReason: "No flag shown — South West Africa was governed by South Africa and flew South Africa's orange-white-blue flag of 1928; Namibia's own flag came with independence in 1990.", note: "South West Africa — still ruled by South Africa against UN objection; it became independent Namibia, with its own flag, in 1990.", population: 600_000 }],
     ["Mozambique", { flag: "historical-flags/portugal-1500.png", continent: "East Africa", note: "Portuguese Mozambique — the independence war began in 1964 and ended in 1975.", population: 7_000_000 }],
     ["Zambia", { modernName: "United Kingdom", continent: "Southern Africa", note: "Northern Rhodesia, part of the Central African Federation; Zambia and its flag came in 1964.", population: 3_100_000 }],
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony in its last years of British rule, after the Mau Mau uprising; independence came in 1963.", population: 8_100_000 }],
@@ -3522,7 +3548,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Egypt in 1960 = United Arab Republic (Egypt + Syria, 1958–1971).
     // Red-white-black with 2 green stars. Visually similar to today's
     // flag but with different central emblem. Without curated PNG, no flag.
-    ["Egypt", { noFlag: true, continent: "North Africa", note: "United Arab Republic — Nasser's union of Egypt + Syria (1958–1971). The red-white-black tricolour with two green stars (representing the two member states) flew from 1958 until the union dissolved in 1971. Authoritative period-correct flag source not available.", population: 27_000_000 }],
+    ["Egypt", { noFlag: true, continent: "North Africa", noFlagReason: "No flag shown — in 1960 this was the United Arab Republic, flying the red-white-black tricolour with two green stars for its two member states; no period-accurate image of that flag is bundled.", note: "United Arab Republic — Nasser's union of Egypt and Syria (1958–1971).", population: 27_000_000 }],
     // Algeria in 1960 still French (independence 1962).
     ["Algeria", { continent: "North Africa", note: "Still legally part of France — bitter independence war (1954–1962) was raging. The French tricolour was the official flag.", modernName: "France", population: 11_000_000 }],
     // Yemen in 1960 — Mutawakkilite Kingdom (North) until the 1962 revolution + Aden Protectorate (South).
@@ -3547,13 +3573,21 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Sri Lanka in 1960 = Dominion of Ceylon. Use the Ceylon flag.
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was the Dominion of Ceylon in 1960 (it became the Republic of Sri Lanka only in 1972). The Dominion's lion flag flew from 1948 to 1972.", population: 9_500_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, with 14 years of post-independence nation-building underway. The white sun and three stars flag has been in use since 1898.", population: 27_000_000 }],
-    ["Hungary", { noFlag: true, continent: "Central Europe", note: "Hungarian People's Republic — communist satellite state under Soviet control since 1948. No distinct national flag from the Soviet-dominated regime.", population: 10_000_000 }],
-    ["Albania", { noFlag: true, continent: "Europe", note: "People's Republic of Albania — communist state under Enver Hoxha's rule, aligned with Yugoslavia until 1961. Standardised communist flag not widely recognised internationally.", population: 1_600_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", note: "United States of Brazil — the republican flag was adopted in 1889 with stars representing states; it changed as states were added. Accurate period-correct flag source not available.", population: 70_000_000 }],
+    ["Hungary", { continent: "Central Europe", note: "Hungarian People's Republic — a Soviet satellite since 1948, and four years on from the crushed uprising of 1956. The plain red-white-green tricolour it flies today was restored in 1957, after the uprising tore the communist arms out of the flag.", population: 10_000_000 }],
+    ["Albania", { noFlag: true, continent: "Europe", noFlagReason: "No flag shown — the People's Republic flew the red flag with the black double-headed eagle beneath a gold star; today's plain eagle flag dates from 1992 and no period image of the star version is bundled.", note: "People's Republic of Albania under Enver Hoxha — aligned with the Soviet bloc until the split of 1961.", population: 1_600_000 }],
+    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil in the year Brasília became its capital. The republican flag dates from 1889.", population: 70_000_000 }],
     ["Greece", { modernName: "Greece", continent: "Europe", note: "Kingdom of Greece — independent Balkan state, member of NATO since 1952. The blue-and-white cross flag with nine stripes has been the national flag since 1828.", population: 8_500_000 }],
   ])],
 
   ["ad1994", new Map<string, PolityInfo>([
+    // Taiwan flew (and flies) the Republic of China's blue-sky/white-sun flag —
+    // the same file already bundled for the 1945 map. Without an entry the polity
+    // fell through to the no-flag branch, because "Taiwan" is not in the modern
+    // UN-member country list the name-match fallback searches.
+    ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan — governed by the Republic of China, which held its first direct presidential election two years later, in 1996. The blue-sky/white-sun flag has flown since 1928.", population: 21_000_000 }],
+    // Without this the era fell back to the era-agnostic registry entry, which
+    // describes the OTTOMAN empire and carries its population — for a 1994 map.
+    ["Turkey", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Türkiye — still called Turkey internationally in 1994; it asked the UN to use the Turkish name in 2022. Its red flag with the white crescent and star dates from 1844.", population: 60_000_000 }],
     ["Belarus", { modernName: "Belarus", continent: "Eastern Europe", note: "Republic of Belarus — renamed from Byelarus at independence in 1991. The white-red-white flag was restored; the 1995–present red-green flag came later.", population: 10_000_000 }],
     ["Myanmar", { modernName: "Myanmar", continent: "Southeast Asia", note: "Myanmar (Burma renamed 1989) — the yellow sun on red flag was adopted in 1974 and flew until 2021.", population: 42_000_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — the white sun and three stars flag on blue and red has been the national flag since 1898.", population: 68_000_000 }],
@@ -3647,6 +3681,7 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
   ["ad1200", new Map<string, string>([["Ghana", "Ghana Empire"]])],
   ["ad1900", new Map<string, string>([
     ["India", "British India"],              // Republic of India dates from the 1947 partition
+    ["Kingdom of Brazil", "Brazil"],         // the empire fell in 1889; 1900 is the Old Republic
   ])],
   ["ad1914", new Map<string, string>([
     ["Eritrea", "Italian Eritrea"],          // Italian colony 1890–1947; independence 1993
@@ -3742,6 +3777,49 @@ export function polityInfo(name: string, eraId?: Era["id"]): PolityInfo {
  */
 export function noFlagIsEraSpecific(name: string, eraId: Era["id"]): boolean {
   return ERA_OVERRIDES.get(eraId)?.get(name)?.noFlag === true;
+}
+
+/**
+ * Dataset SUBJECTO values that are WRONG for the era they appear in.
+ *
+ * Every feature carries SUBJECTO, the state that governed it, and the panel trusts it
+ * for two things: the "Ruled by" row, and letting a colony inherit its ruler's flag.
+ * Upstream gets some of them badly wrong, and a wrong ruler is worse than a missing
+ * one — it puts a foreign flag on an independent country's card. Keyed `eraId|NAME`,
+ * each with the sourced reason it is refused. Same discipline as POLITY_EXISTENCE:
+ * we disclose/withhold rather than invent a replacement ruler.
+ */
+const FALSE_SUBJECTO: ReadonlyMap<string, string> = new Map([
+  // Brazil was independent from Portugal in 1822 and a republic from 1889 — the 1900
+  // file still records Portugal as its sovereign (and the 1880 file does not).
+  ["ad1900|Kingdom of Brazil", "Portugal — Brazil had been independent since 1822"],
+  // The USSR was founded in December 1922. In 1920 these three were independent
+  // republics (the Red Army took them in 1920–21), so they could not be Soviet subjects.
+  ["ad1920|Armenia", "USSR — the union was not founded until December 1922"],
+  ["ad1920|Azerbaijan", "USSR — the union was not founded until December 1922"],
+  ["ad1920|Georgia", "USSR — the union was not founded until December 1922"],
+  // Japan occupied French Indochina from September 1940, two years after this map.
+  ["ad1938|Cambodia", "Empire of Japan — Japan occupied French Indochina only from 1940"],
+  ["ad1938|Cochin China", "Empire of Japan — Japan occupied French Indochina only from 1940"],
+  // Iraq's mandate ended in 1932, when it joined the League of Nations as a sovereign
+  // state; Britain kept bases and influence, but not sovereignty.
+  ["ad1938|Iraq", "United Kingdom — the mandate ended and Iraq became sovereign in 1932"],
+]);
+
+/**
+ * The dataset's ruling power for a polity, or null when the dataset's SUBJECTO is
+ * refuted for this era (see FALSE_SUBJECTO). Callers must use this rather than
+ * reading SUBJECTO directly, so a refuted ruler can neither lend its flag nor appear
+ * in the "Ruled by" row.
+ */
+export function eraRuler(
+  name: string,
+  eraId: Era["id"],
+  datasetRuler: string | undefined,
+): string | null {
+  if (!datasetRuler || datasetRuler === name) return null;
+  if (FALSE_SUBJECTO.has(`${eraId}|${name}`)) return null;
+  return datasetRuler;
 }
 
 /**

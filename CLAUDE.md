@@ -732,6 +732,79 @@ file and **fails the build** on any polity outside its sourced window that is no
 visible rather than fading into the background. Never weaken it; fix the label or add the
 disclosure.
 
+## A flagless polity must never be given a reason we invented — hard rule, do not override without approval
+
+**When a Learn-mode historical polity shows no flag, the panel must say WHY only when the reason is
+CURATED and SOURCED. Its fallback line may state only what is certainly true — that no period flag is
+bundled — and must never assert a historical cause.** An invented explanation is the prose form of an
+invented flag: it looks authoritative, it is wrong, and nobody can tell by looking.
+
+### Why this rule exists
+
+Reported by the owner with screenshots (2026-08). Selecting **Germany on the 1938 map** showed
+
+> *No flag image — this polity predates modern flag design or none survives.*
+
+directly beneath a note describing the flag Germany flew. Nazi Germany plainly HAD a national flag —
+the app declines to display it, which is a fact about US, not about 1938. Selecting **Brazil on the
+1900 map** showed the same line under a bare name with no note at all. The cause was structural, not a
+typo: `PolityInfo.noFlag` is a boolean recording only THAT a flag is withheld, so `LearnPage` had one
+hard-coded sentence for every flagless polity and asserted the antiquity reason for all of them —
+1938's Netherlands and Belgium (whose present-day flags flew), the Kingdom of Hawaii (whose own note
+described its flag), the Orange Free State, Nazi Germany. Auditing every era found the same line on
+**over 2,700 polity slots**, 94 of them in 20th-century eras where it is plainly false.
+
+### Rules
+
+1. **`PolityInfo.noFlagReason` is the ONLY place a reason may come from.** It is one sourced sentence,
+   rendered verbatim. Say what actually flew and why it is not shown ("the swastika banner, which this
+   game does not display"; "a plain red flag — the green pentagram was added only in 1915"). Same
+   sourcing discipline as every flag, anthem and population rule here: never invent, never guess.
+2. **The fallback line must stay causeless.** It reads "No flag shown — no period-accurate flag for
+   {polity} in {era} is bundled." Never reintroduce "predates modern flag design", "none survives", or
+   any other phrasing that explains a blank the app cannot actually explain. A polity with no registry
+   entry is missing DATA, not a claim about history — the causeless line is the honest output for it.
+3. **Every deliberate suppression (`noFlag: true`) in an era from 1880 on MUST carry a
+   `noFlagReason`.** From 1880 on essentially every polity on these maps is a state with a documented
+   flag history, so "no flag" always has a specific, checkable reason. `noFlag` without a reason in
+   those eras fails the build.
+4. **Do not reach for `noFlag` when the flag is genuinely period-correct.** `noFlag` predates the
+   `flagExistedInEra()` adoption-year gate and was used as a blunt instrument, withholding flags that
+   unquestionably flew: the 1938 Netherlands, Belgium and Romania (their present-day tricolours),
+   1900 Bulgaria (1879) and Tunisia (1831), 1938 Czechoslovakia and 1900 Ethiopia (whose period flags
+   were already bundled for neighbouring eras). Check whether a bundled or era-legal flag exists
+   BEFORE suppressing, and let the adoption-year gate do the refusing — its dated message
+   ("adopted in 1959") is a real explanation and needs no `noFlagReason`.
+5. **`POLITY_REGISTRY` must never have a duplicate key.** It is built from an array of pairs, so a
+   repeated key silently keeps only the LAST one. This had happened 23 times: a second "Tibet" written
+   for the medieval period shadowed the 20th-century entry, so the 1914 map described de-facto-
+   independent Tibet as the Phagmodrupa dynasty, and bulk "Variant/alternate listing of …" stubs
+   shadowed better-written notes. Era-specific text belongs in `ERA_OVERRIDES`, never in a second
+   registry entry.
+6. **A dataset SUBJECTO the upstream file gets wrong for the era must be refused, not displayed.**
+   The panel trusts SUBJECTO for the "Ruled by" row and for letting a colony inherit its ruler's flag,
+   and a wrong ruler puts a foreign flag on an independent country's card: the 1900 file records
+   **Portugal** as Brazil's sovereign (independent since 1822), the 1920 file makes Armenia, Azerbaijan
+   and Georgia subjects of a **USSR** that would not exist until 1922, and the 1938 file makes Cambodia
+   and Cochin China subjects of **Japan**, whose occupation began in 1940. Each is listed with its
+   sourced reason in `FALSE_SUBJECTO` and resolved through `eraRuler()`; never read `SUBJECTO`
+   directly, and never "fix" one by inventing a replacement ruler.
+7. **Verify in the running app** (the mandatory visual-verification rule applies): open **1938** and
+   confirm Germany explains the swastika banner rather than claiming it predates flags, that the
+   Netherlands, Belgium, Romania and Czechoslovakia now show flags, and open **1900** and confirm
+   Brazil is labelled Brazil (not "Kingdom of Brazil"), carries a note and population, and explains
+   its own blank.
+
+### Enforcement
+
+`scripts/check-era-flag-explanations.mjs` (`npm run eras:check-explanations`, in `npm run flags:check`
+and the `check-era-maps` CI job) **fails the build** when: `LearnPage` stops rendering `noFlagReason`
+or reintroduces a cause-asserting fallback line; a `noFlag: true` polity in an era from 1880 on renders
+blank with no `noFlagReason`; a reason is too short to explain anything; or `POLITY_REGISTRY` contains
+a duplicate key. It prints every curated suppression on each run, so the set stays visible. Never
+weaken it, and never silence it by deleting a `noFlag` while leaving the flag genuinely unexplained —
+write the reason, or show the flag.
+
 ## Historical eras must never show an anachronistic flag — hard rule, do not override without approval
 
 **A polity on a Learn-mode historical era map may only be shown a flag that already
