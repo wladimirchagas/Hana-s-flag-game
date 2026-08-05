@@ -978,6 +978,24 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [eraId, countryByName],
   );
+  // Memoised for the same reason — and here it also matters for CORRECTNESS, not
+  // just for memo(): this callback stores three freshly-built collections in state,
+  // so an inline arrow (a new identity every render) fed HistoricalMap's notify
+  // effect its own output and looped forever. HistoricalMap now holds the callback
+  // in a ref so it can't happen again from either side; keep this memoised anyway
+  // so the map isn't re-rendered on every unrelated LearnPage state change.
+  const handleHistoricalDataLoaded = useCallback(
+    (
+      names: ReadonlySet<string>,
+      rulers: ReadonlyMap<string, string>,
+      derived: ReadonlySet<string>,
+    ) => {
+      setAvailableHistoricalNames(names);
+      setPolityRulers(rulers);
+      setDerivedBoundaryNames(derived);
+    },
+    [],
+  );
 
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.
@@ -1336,11 +1354,7 @@ export default function LearnPage() {
             centerLongitude={mapView.centerLongitude}
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
-            onDataLoaded={(names, rulers, derived) => {
-              setAvailableHistoricalNames(names);
-              setPolityRulers(rulers);
-              setDerivedBoundaryNames(derived);
-            }}
+            onDataLoaded={handleHistoricalDataLoaded}
             flagOverlay={historicalFlagOverlay}
           />
         )}

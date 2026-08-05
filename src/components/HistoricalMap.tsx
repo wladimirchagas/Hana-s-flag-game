@@ -227,12 +227,30 @@ export const HistoricalMap = memo(function HistoricalMap({
     };
   }, [geoJsonUrl]);
 
+  // The callback is held in a ref, NOT read from the notify effect's dependency
+  // list. It hands the parent three FRESHLY BUILT collections, so the parent
+  // necessarily stores new object identities — and if the effect also depended on
+  // the callback's identity, a caller passing an inline arrow (a new function every
+  // render, which is the natural way to write this prop) would close an endless
+  // loop: notify → parent setState → parent re-render → new callback identity →
+  // notify again. That shipped and pegged the main thread at 100% on EVERY
+  // historical era (LearnPage passed an inline arrow), and React eventually threw
+  // "Maximum update depth exceeded". Keeping the callback in a ref makes the
+  // once-per-era guarantee structural, so no future caller can reopen the loop by
+  // forgetting to memoise.
+  const onDataLoadedRef = useRef(onDataLoaded);
+  useEffect(() => {
+    onDataLoadedRef.current = onDataLoaded;
+  }, [onDataLoaded]);
+
   // Notify the parent whenever new data lands, with the set of feature
   // NAMEs in this era. Lets the parent decide if a currently-selected
   // entity still exists in the new era (used by LearnPage to keep the
   // selection alive across era switches).
   useEffect(() => {
-    if (!data || !onDataLoaded) return;
+    if (!data) return;
+    const notify = onDataLoadedRef.current;
+    if (!notify) return;
     const names = new Set<string>();
     const rulers = new Map<string, string>();
     const derived = new Set<string>();
@@ -244,8 +262,8 @@ export const HistoricalMap = memo(function HistoricalMap({
       if (ruler && ruler !== n) rulers.set(n, ruler);
       if (ft.properties?.DERIVED === 1) derived.add(n);
     }
-    onDataLoaded(names, rulers, derived);
-  }, [data, onDataLoaded]);
+    notify(names, rulers, derived);
+  }, [data]);
 
   // Compute per-feature path strings via d3-geo's equal-earth projection
   // (same as WorldProgressMap so the two maps look like the same world).
