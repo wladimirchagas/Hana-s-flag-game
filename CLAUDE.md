@@ -1463,6 +1463,14 @@ reason and `onDataLoaded` was left inline.
    thread is idle (CDP `Performance.getMetrics` → `TaskDuration` growth over a quiet window should
    be a fraction of a second, matching the `today` era; anything approaching wall-clock time is a
    loop). In dev, the console must show **no** "Maximum update depth exceeded".
+5. **A blank page must never be the failure mode — keep the top-level `ErrorBoundary`.** The app
+   had no error boundary, so React unmounted the WHOLE tree on any uncaught render error and the
+   user got the page background, with no message to read and nothing to report. `ErrorBoundary`
+   (wrapping everything in `src/main.tsx`, outside the providers so a crash in one is caught too)
+   turns that into a card showing the error's own message plus a Reload button — which is also the
+   only evidence available when a crash reproduces on a user's device and not ours. Never remove
+   it, never move it below the providers, and never replace the message with a generic string: the
+   text IS the bug report.
 
 ### Enforcement
 
