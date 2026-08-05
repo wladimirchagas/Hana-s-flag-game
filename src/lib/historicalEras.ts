@@ -2562,6 +2562,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Ming Dynasty", { continent: "East Asia", noFlag: true, note: "Ming Dynasty China — the last Han-led Chinese dynasty; famous for the Forbidden City and the Great Wall. Peak of Chinese power.", population: 120_000_000 }],
     ["Qing Dynasty (Manchu)", { continent: "East Asia", noFlag: true, note: "Qing Dynasty — Jurchen (Manchu) conquest of China beginning (1644 final conquest); not yet dominant in 1600.", population: 5_000_000 }],
     // European Powers
+    ["Iberian Union", { continent: "Iberia / Americas / Africa / Asia", noFlag: true, note: "Iberian Union (1580–1640) — Philip II of Spain succeeded to the Portuguese throne in 1580, uniting the two crowns in one monarch. It was a personal union, not a merged state: under the Statute of Tomar (1581) Portugal kept its own laws, Cortes, currency, and a colonial empire administered separately from Spain's. The two crowns separated again in 1640.", population: 8_500_000 }],
     ["Spain", { continent: "Europe / Americas / Asia / Africa", noFlag: true, note: "Kingdom of Spain under the Habsburgs — world's leading superpower with global empire spanning Americas (New Spain, Peru, Caribbean), Mediterranean (Naples, Sicily, Sardinia), North Africa, and Asian trade monopolies.", population: 7_000_000 }],
     ["Portugal", { continent: "Europe / Africa / Americas / Asia", noFlag: true, note: "Kingdom of Portugal under Spanish rule (Iberian Union 1580-1640) — maintains independent identity; major maritime trading power with colonial holdings in Africa, Brazil, and Asia.", population: 1_500_000 }],
     ["France", { continent: "Western Europe", noFlag: true, note: "Kingdom of France under the Bourbons — major European power; became dominant after Louis XIV's reign.", population: 18_000_000 }],
@@ -3593,6 +3594,7 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
   ["Kongldom of Hawaii", "Kingdom of Hawaii"],
   ["Scottland", "Scotland"],
   ["Castille", "Castile"],
+  ["Poland-Llituania", "Poland-Lithuania"],
   ["Khoiasan", "Khoisan"],
   ["Eastern North Amercian hunter-gatherers", "Eastern North American hunter-gatherers"],
   ["Sultinate of Zanzibar", "Sultanate of Zanzibar"],
@@ -3645,6 +3647,16 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
   ["ad800", new Map<string, string>([["Ghana", "Ghana Empire"]])],
   ["ad1000", new Map<string, string>([["Ghana", "Ghana Empire"]])],
   ["ad1200", new Map<string, string>([["Ghana", "Ghana Empire"]])],
+  // The Iberian Union (1580–1640): Philip II of Spain became Philip I of Portugal in
+  // 1580, so in 1600 both crowns were held by one monarch. The dataset keeps them as two
+  // features — which is right, because the Statute of Tomar (1581) left Portugal its own
+  // laws, Cortes, currency and colonial administration — but at this date the polity a
+  // user is looking at IS the union, so both display under that name and highlight
+  // together. Neither polygon is touched.
+  ["ad1600", new Map<string, string>([
+    ["Spain", "Iberian Union"],
+    ["Portugal", "Iberian Union"],
+  ])],
   ["ad1900", new Map<string, string>([
     ["India", "British India"],              // Republic of India dates from the 1947 partition
   ])],
@@ -3720,6 +3732,14 @@ export function polityDisplayName(name: string, eraId?: Era["id"]): string {
  */
 export function polityInfo(name: string, eraId?: Era["id"]): PolityInfo {
   if (eraId) {
+    // A polity REMAPPED for this era carries its facts under the name actually shown, and
+    // that must win over an entry filed under the raw name — otherwise 1600's Iberian
+    // Union would show the note and population of the Spain entry it supersedes.
+    const shown = polityDisplayName(name, eraId);
+    if (shown !== name) {
+      const remapped = ERA_OVERRIDES.get(eraId)?.get(shown) ?? POLITY_REGISTRY.get(shown);
+      if (remapped) return remapped;
+    }
     const eraEntry = ERA_OVERRIDES.get(eraId)?.get(name);
     if (eraEntry) return eraEntry;
   }

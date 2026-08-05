@@ -677,6 +677,42 @@ redraw; moving `BASELINE_REF`; removing either check from `flags:check` or the w
 "it's slow" — the landmass pass takes minutes by design); deleting or renaming the scripts; or marking
 the era file generated/ignored. **If a check fails, the geometry is wrong. Fix the geometry.**
 
+### Composite states and personal unions — one polity may span several polygons
+
+**A polity that held several territories under one crown must be shown as ONE polity covering
+all of them.** The dataset's own convention is a single feature per union — Kalmar Union,
+Poland-Lithuania, Denmark-Norway, Sweden–Norway, Austro-Hungarian Empire are each one feature.
+Where the import instead splits a union across features, group them at DISPLAY time; never merge
+the polygons.
+
+The Iberian Union (1580–1640) is the case that shipped wrong: 1600's Spain and Portugal are two
+features, so the union appeared nowhere and selecting Iberia highlighted only half of it. The fix
+maps both NAMEs to "Iberian Union" in `POLITY_NAME_FOR_ERA` and highlights by that shared key
+(`groupKeyOf` in `HistoricalMap`), so the whole peninsula lights up as one polity while the two
+polygons — and the internal border, which is historically right, since the Statute of Tomar left
+Portugal its own laws, Cortes and colonial administration — stay exactly as imported.
+
+1. **Group by display name, never by editing geometry or the dataset NAME.** The raw NAME stays
+   the selection key; only what the user SEES is grouped.
+2. **The flag grid must key on the shown name**, or a grouped union occupies one card per member.
+3. **`polityInfo` resolves the REMAPPED name first**, so a union's own note and population win
+   over an entry filed under a member's name.
+4. **Only group a genuine composite state**, sourced. Two neighbours sharing a ruler's *name* are
+   not a union; a personal union with separate administrations is (and the note must say so).
+
+### A blank NAME is not an absent polity
+
+Some upstream features carry a NAME of pure whitespace while their own `ABBREVN` / `SUBJECTO` /
+`PARTOF` hold the real name — 1815's Netherlands is `NAME: "       "` with `ABBREVN: "Netherlands"`
+and `SUBJECTO: "United Kingdom of Netherlands"`. Read literally, that polity renders as anonymous
+"no data" hatch and cannot be selected at all, though the dataset plainly knows what it is.
+`polityFeatureName()` in `HistoricalMap.tsx` falls back to those fields, recovering 13 such
+polities across the eras without inventing anything.
+
+Never extend that fallback to a name from outside the feature, and keep `NOT_A_POLITY` excluding
+"Antarctica" — the Antarctic hard rule forbids the continent becoming a territory in the data
+model, however it is labelled upstream.
+
 ### Temporal accuracy — a polity must belong to the date it is shown on
 
 **Fidelity to the import is not accuracy. The import can be wrong for its own date, and it is:
