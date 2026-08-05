@@ -33,6 +33,7 @@ type HistoricalFeature = {
   type: "Feature";
   properties: {
     NAME?: string | null;
+    ABBREVN?: string | null;
     SUBJECTO?: string | null;
     PARTOF?: string | null;
     BORDERPRECISION?: number | null;
@@ -95,6 +96,14 @@ export type HistoricalMapProps = {
    * territory. Polities absent from the map are shown without a flag overlay.
    */
   flagOverlay?: ReadonlyMap<string, string> | null;
+  /**
+   * Maps a polity's raw dataset NAME to the key it should be GROUPED and highlighted by.
+   * Two features that return the same key are one polity for selection purposes and
+   * highlight together — which is how a personal union spanning several polygons (1600's
+   * Iberian Union over Spain and Portugal) lights up its whole territory without any
+   * change to the geometry. Defaults to identity.
+   */
+  groupKeyOf?: (name: string) => string;
 };
 
 const WIDTH = 960;
@@ -124,6 +133,36 @@ const LAND_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 
 /** The merged coastline: one MultiPolygon covering every landmass. */
 type LandGeometry = { type: "MultiPolygon"; coordinates: number[][][][] };
+
+/**
+ * Names that must never become a selectable polity even when a feature carries them.
+ * "Antarctica" is excluded by the repo's Antarctic hard rule — the continent stays
+ * visible as neutral unclaimed landmass and never becomes a territory in the data model.
+ * "1" is upstream junk in the 100 AD file.
+ */
+const NOT_A_POLITY = new Set(["Antarctica", "1"]);
+
+/**
+ * The polity name for a feature.
+ *
+ * Some upstream features have a NAME of pure whitespace while carrying the real name in
+ * their own ABBREVN / SUBJECTO / PARTOF — the 1815 Netherlands is `NAME: "       "` with
+ * `ABBREVN: "Netherlands"` and `SUBJECTO: "United Kingdom of Netherlands"`. Read literally
+ * that polity renders as anonymous "no data" hatch and cannot be selected, even though the
+ * dataset knows perfectly well what it is. Falling back to the feature's OWN fields
+ * recovers it without inventing anything.
+ *
+ * A feature with no name anywhere is the genuine unmapped-land blob and stays unnamed.
+ */
+function polityFeatureName(f: HistoricalFeature): string | null {
+  const direct = (f.properties?.NAME ?? "").trim();
+  if (direct) return direct;
+  for (const alt of [f.properties?.SUBJECTO, f.properties?.PARTOF, f.properties?.ABBREVN]) {
+    const v = (alt ?? "").trim();
+    if (v && !NOT_A_POLITY.has(v)) return v;
+  }
+  return null;
+}
 
 type Palette = {
   ocean: string;
@@ -164,6 +203,7 @@ export const HistoricalMap = memo(function HistoricalMap({
   southUp = false,
   extraControls,
   flagOverlay = null,
+  groupKeyOf,
 }: HistoricalMapProps) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -255,7 +295,7 @@ export const HistoricalMap = memo(function HistoricalMap({
     const rulers = new Map<string, string>();
     const derived = new Set<string>();
     for (const ft of data.features) {
-      const n = ft.properties?.NAME;
+      const n = polityFeatureName(ft);
       if (!n) continue;
       names.add(n);
       const ruler = ft.properties?.SUBJECTO;
@@ -289,7 +329,7 @@ export const HistoricalMap = memo(function HistoricalMap({
     type FlagPoly = { path: string; x: number; y: number; h: number };
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
-      const name = f.properties?.NAME ?? null;
+      const name = polityFeatureName(f);
       // Sourced gap-fill adopted verbatim from upstream (scripts/build-era-gap-fill.mjs).
       const gapFill = f.properties?.GAPFILL === 1;
       // Decompose geometry into individual polygons so each non-contiguous
@@ -503,8 +543,12 @@ export const HistoricalMap = memo(function HistoricalMap({
             )}
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
+              // Compare GROUP keys, not raw names: a personal union spanning several
+              // features (1600's Iberian Union) must highlight all of them at once.
               const isHighlighted =
-                f.name != null && f.name === highlightName;
+                f.name != null &&
+                highlightName != null &&
+                (groupKeyOf ? groupKeyOf(f.name) === groupKeyOf(highlightName) : f.name === highlightName);
               const fill = isHighlighted
                 ? palette.selected
                 : f.name

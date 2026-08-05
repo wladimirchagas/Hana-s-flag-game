@@ -848,14 +848,21 @@ export default function LearnPage() {
       }));
     }
     const out: FlagListEntry[] = [];
+    // Several dataset NAMEs can be ONE polity for a given era — 1600's Spain and Portugal
+    // are both the Iberian Union — so the grid is keyed by the name actually SHOWN. Without
+    // this the union would occupy two identical cards.
+    const shownAlready = new Set<string>();
     for (const name of availableHistoricalNames) {
       const sel = selectionFromPolityName(name);
       if (!sel || sel.kind !== "historical") continue;
+      const shown = polityDisplayName(name, eraId);
+      if (shownAlready.has(shown)) continue;
+      shownAlready.add(shown);
       out.push({
         id: name,
         // Grid label uses the corrected spelling; `id` stays the dataset NAME so
         // selection round-trips through the map unchanged.
-        name: polityDisplayName(name, eraId),
+        name: shown,
         flag: sel.flag ?? null,
         continent: topLevelContinent(sel.continent),
         subcontinent: sel.continent ?? "Other",
@@ -984,6 +991,15 @@ export default function LearnPage() {
   // effect its own output and looped forever. HistoricalMap now holds the callback
   // in a ref so it can't happen again from either side; keep this memoised anyway
   // so the map isn't re-rendered on every unrelated LearnPage state change.
+  // Groups the era's features into one polity where several NAMEs are the same entity at
+  // this date (1600's Spain + Portugal = the Iberian Union), so selecting it highlights the
+  // whole territory. MUST stay memoised: HistoricalMap is memo()'d, and an inline arrow here
+  // re-renders ~200 polity paths on every LearnPage state change (see the render-loop rule).
+  const historicalGroupKeyOf = useCallback(
+    (n: string) => polityDisplayName(n, eraId),
+    [eraId],
+  );
+
   const handleHistoricalDataLoaded = useCallback(
     (
       names: ReadonlySet<string>,
@@ -1356,6 +1372,10 @@ export default function LearnPage() {
             extraControls={mapExtraControls}
             onDataLoaded={handleHistoricalDataLoaded}
             flagOverlay={historicalFlagOverlay}
+            // Group by the name actually SHOWN for this era, so a personal union spanning
+            // several features (1600's Iberian Union over Spain and Portugal) highlights
+            // its whole territory as one polity. No geometry is involved.
+            groupKeyOf={historicalGroupKeyOf}
           />
         )}
       </div>
