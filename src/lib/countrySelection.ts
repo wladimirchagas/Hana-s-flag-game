@@ -128,7 +128,10 @@ const UN_MEMBERS: readonly CountryOption[] = [
   { code: "MZ", name: "Mozambique" },
   { code: "MM", name: "Myanmar" },
   { code: "NA", name: "Namibia" },
-  { code: "NR", name: "Nauru" },
+  // Renamed 2026: the UN member-states list now reads "Naoero" (Republic of Naoero)
+  // after Nauru's 13 May 2026 constitutional amendment and its 26 June 2026
+  // notification to the UN. https://www.un.org/en/about-us/member-states/naoero
+  { code: "NR", name: "Naoero" },
   { code: "NP", name: "Nepal" },
   { code: "NL", name: "Netherlands" },
   { code: "NZ", name: "New Zealand" },
@@ -207,6 +210,57 @@ const UN_MEMBERS: readonly CountryOption[] = [
 export const ALL_COUNTRY_OPTIONS: readonly CountryOption[] = [...UN_MEMBERS].sort(
   (a, b) => a.name.localeCompare(b.name, "en"),
 );
+
+/**
+ * Names a country used to be known by, so search still finds it after a rename.
+ *
+ * The list above carries each country's CURRENT name, which is what a fact sheet
+ * must show — but a player typing "Turkey", "Swaziland" or "Nauru" would otherwise
+ * get no results at all, because the search matches on the displayed name only.
+ * Every entry is a name the state itself, or the UN, used before the change; this
+ * is a search index, never something rendered as the country's name.
+ */
+export const FORMER_COUNTRY_NAMES: Readonly<Record<string, readonly string[]>> = {
+  NR: ["Nauru"],                    // renamed Naoero, 2026
+  TR: ["Turkey"],                   // English name changed to Türkiye, 2022
+  MK: ["Macedonia"],                // North Macedonia, 2019 (Prespa agreement)
+  SZ: ["Swaziland"],                // Eswatini, 2018
+  CZ: ["Czech Republic"],           // Czechia registered as the short name, 2016
+  CI: ["Ivory Coast"],              // Côte d'Ivoire in all languages, from 1986
+  CV: ["Cape Verde"],               // Cabo Verde in all languages, from 2013
+  MM: ["Burma"],                    // Myanmar, 1989
+  BF: ["Upper Volta"],              // Burkina Faso, 1984
+  CD: ["Zaire"],                    // Zaire 1971–1997
+  BJ: ["Dahomey"],                  // Benin, 1975
+  SR: ["Dutch Guiana"],             // the English name of the Dutch colony
+  ZW: ["Rhodesia", "Southern Rhodesia"], // Zimbabwe, 1980
+  LK: ["Ceylon"],                   // Sri Lanka, 1972
+  TH: ["Siam"],                     // Thailand, 1939
+  IR: ["Persia"],                   // Iran, 1935
+  KH: ["Kampuchea"],                // Cambodia
+  BZ: ["British Honduras"],         // Belize, 1973
+  BW: ["Bechuanaland"],             // Botswana, 1966
+  LS: ["Basutoland"],               // Lesotho, 1966
+  MW: ["Nyasaland"],                // Malawi, 1964
+  ZM: ["Northern Rhodesia"],        // Zambia, 1964
+  GY: ["British Guiana"],           // Guyana, 1966
+  GQ: ["Spanish Guinea"],           // Equatorial Guinea, 1968
+  GW: ["Portuguese Guinea"],        // Guinea-Bissau, 1973
+  TZ: ["Tanganyika"],               // Tanzania, 1964
+  DJ: ["French Somaliland"],        // Djibouti, 1977
+  GH: ["Gold Coast"],               // Ghana, 1957
+  ML: ["French Sudan"],             // Mali, 1960
+  CF: ["Ubangi-Shari"],             // Central African Republic, 1958
+  NA: ["South West Africa"],        // Namibia, 1990
+  WS: ["Western Samoa"],            // Samoa, 1997
+  AE: ["Trucial States"],           // United Arab Emirates, 1971
+};
+
+/** Search haystack for a country: its current name plus any former names. */
+export function countrySearchNames(code: string, name: string): string[] {
+  const former = FORMER_COUNTRY_NAMES[code];
+  return former ? [name, ...former] : [name];
+}
 
 const VALID_CODES: ReadonlySet<string> = new Set(UN_MEMBERS.map((c) => c.code));
 

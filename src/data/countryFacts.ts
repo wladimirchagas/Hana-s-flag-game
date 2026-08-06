@@ -150,7 +150,7 @@ export const COUNTRY_FACTS: Readonly<Record<string, CountryFacts>> = {
   NL: {"nameOfficial":"Kingdom of the Netherlands","capital":"Amsterdam","languages":["Dutch"],"currencies":[{"code":"EUR","name":"Euro","symbol":"€"}]},
   NO: {"nameOfficial":"Kingdom of Norway","capital":"Oslo","languages":["Norwegian Nynorsk","Norwegian Bokmål","Sami"],"currencies":[{"code":"NOK","name":"Norwegian krone","symbol":"kr"}]},
   NP: {"nameOfficial":"Federal Democratic Republic of Nepal","capital":"Kathmandu","languages":["Nepali"],"currencies":[{"code":"NPR","name":"Nepalese rupee","symbol":"₨"}]},
-  NR: {"nameOfficial":"Republic of Nauru","capital":"Yaren","languages":["English","Nauru"],"currencies":[{"code":"AUD","name":"Australian dollar","symbol":"$"}]},
+  NR: {"nameOfficial":"Republic of Naoero","capital":"Yaren","languages":["English","Nauru"],"currencies":[{"code":"AUD","name":"Australian dollar","symbol":"$"}]},
   NZ: {"nameOfficial":"New Zealand","capital":"Wellington","languages":["English","Māori","New Zealand Sign Language"],"currencies":[{"code":"NZD","name":"New Zealand dollar","symbol":"$"}]},
   OM: {"nameOfficial":"Sultanate of Oman","capital":"Muscat","languages":["Arabic"],"currencies":[{"code":"OMR","name":"Omani rial","symbol":"ر.ع."}]},
   PA: {"nameOfficial":"Republic of Panama","capital":"Panama City","languages":["Spanish"],"currencies":[{"code":"PAB","name":"Panamanian balboa","symbol":"B/."},{"code":"USD","name":"United States dollar","symbol":"$"}]},

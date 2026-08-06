@@ -801,9 +801,36 @@ each with an authoritative citation, plus `ERA_EXTENT_CAVEATS` for anachronisms 
    Ghana Empire; "Congo" in 1600 is the Kingdom of Kongo; "Yemen" long predates the 1990
    unification. Resolve these by remapping the display name for that era, never by assuming the
    modern state's dates apply.
-5. **Verify in the running app** (the mandatory visual-verification rule applies): open 1945 and
-   confirm India/Pakistan/Bangladesh each show a **Dating** row explaining the partition, and open
-   1920 and confirm Iran shows as **Persia**.
+5. **A RENAME is an anachronism too — not just a state that did not exist yet.** The table was
+   seeded with statehood cases (Bangladesh 1971, the USSR 1922), so every country that merely
+   changed its NAME sailed straight through: the 1945 and 1960 maps read "Burkina Faso" (Upper
+   Volta until 1984), "Benin" (Dahomey until 1975), "Türkiye" (the English name dates from the
+   2022 UN request), "Mali" (French Sudan), "Central African Republic" (Ubangi-Shari); "Tanzania,
+   United Republic of" ran from 1920, and Botswana/Lesotho/Malawi/Zambia/Guyana/Belize/Equatorial
+   Guinea/Guinea-Bissau/Djibouti/UAE/Western Sahara/Papua New Guinea across up to six eras each.
+   Every one is fixed by a `POLITY_NAME_FOR_ERA` remap plus a sourced `POLITY_EXISTENCE` window;
+   when you touch an era file or add a country, ask "did this name exist at this date?", not only
+   "did this state exist?".
+6. **Only key `POLITY_EXISTENCE` on a name ONE polity has ever borne.** The table is keyed by raw
+   dataset NAME, so a name two polities shared cannot be windowed safely: "Mali" is the medieval
+   empire and the 1960 republic, "Belize" the 1700 logwood settlement and the modern state, "Samoa"
+   the 19th-century kingdom and the post-1997 name. Either remap the older era's display name so
+   the two are distinguishable (as `Benin` → **Kingdom of Benin** and `Somalia` → **Somali
+   sultanates** now do), or leave the name out of the table — never add a window that would flag
+   the older, legitimate polity.
+7. **A remapped display name needs its own entry, or the panel describes the wrong thing.**
+   `polityInfo` resolves the SHOWN name before the raw NAME, so a relabelled polity inherits
+   whatever the shown name means elsewhere. Remapping 1945 `Benin` → "Dahomey" without an entry
+   showed the **Kingdom of Benin**'s note under the French colony; `Türkiye` → "Turkey" hit the
+   registry's Ottoman `Turkey` entry, which is `noFlag` and would have **removed the Turkish flag
+   from the 1945 and 1960 maps**. Period names shared across every era that uses them live in
+   `POLITY_REGISTRY` (British Honduras, Basutoland, Spanish Guinea, …); ones that differ by era
+   (Upper Volta 1945 vs 1960) go in `ERA_OVERRIDES`. After adding any remap, check what the panel
+   actually resolves — name, note AND flag.
+8. **Verify in the running app** (the mandatory visual-verification rule applies): open 1945 and
+   confirm India/Pakistan/Bangladesh each show a **Dating** row explaining the partition, that
+   Turkey still shows its flag, and that Upper Volta / Dahomey / Netherlands New Guinea carry
+   period notes; open 1920 and confirm Iran shows as **Persia**.
 
 ### Enforcement
 

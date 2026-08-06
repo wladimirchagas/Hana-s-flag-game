@@ -49,6 +49,24 @@ const UN_MEMBER_CODES = new Set([
   "UG","UA","AE","GB","US","UY","UZ","VU","VE","VN","YE","ZM","ZW","PS","VA",
 ]);
 
+/**
+ * Curated corrections applied on top of the source data, each with a cited
+ * reason — the same discipline as CAPITAL_FLAG_SOURCE_OVERRIDES and
+ * MANUAL_VERIFIED_POPULATION. These exist because mledoze/countries lags
+ * official renamings by months; an override keeps the correction alive across
+ * every regen instead of being silently reverted by the next run.
+ *
+ * This NEVER invents a fact — every entry restates an authoritative source.
+ * Delete an entry once upstream carries the same value.
+ */
+const FACT_OVERRIDES = {
+  // Nauru's parliament passed the constitutional amendment on 13 May 2026 and the
+  // country notified the UN on 26 June 2026; the UN member-states list now reads
+  // "Naoero", formally "Republic of Naoero". ISO 3166-1 alpha-2 remains NR.
+  // https://www.un.org/en/about-us/member-states/naoero
+  NR: { nameOfficial: "Republic of Naoero" },
+};
+
 const res = await fetch(SOURCE);
 if (!res.ok) {
   console.error(`Failed to fetch ${SOURCE}: HTTP ${res.status}`);
@@ -88,6 +106,9 @@ for (const c of data) {
       .filter((x) => x.name);
     if (currencies.length > 0) entry.currencies = currencies;
   }
+
+  const override = FACT_OVERRIDES[code];
+  if (override) Object.assign(entry, override);
 
   if (Object.keys(entry).length > 0) {
     facts[code] = entry;

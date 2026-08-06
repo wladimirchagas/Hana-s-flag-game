@@ -80,6 +80,41 @@ export const POLITY_EXISTENCE: ReadonlyMap<string, PolityExistence> = new Map([
   ["Eritrea", { from: 1993, to: 9999, note: "Independent from Ethiopia in 1993. Italian Eritrea (1890–1947) is a different polity.", source: "https://en.wikipedia.org/wiki/Eritrea" }],
   ["Vietnam", { from: 1976, to: 9999, note: "A single Vietnamese state dates from reunification on 2 July 1976; from 1954 the country was divided at the 17th parallel.", source: "https://en.wikipedia.org/wiki/Reunification_Day" }],
   ["Rhodesia", { from: 1965, to: 1979, note: "The name of the unilaterally-independent state, 1965–1979. Southern Rhodesia is the earlier colony.", source: "https://en.wikipedia.org/wiki/Rhodesia" }],
+
+  /* --------------------------------------------------------------------------
+   * States that changed NAME rather than form.
+   *
+   * Nothing checked these, so the era maps were labelling colonies and
+   * protectorates with names coined decades later: "Burkina Faso" and "Benin"
+   * on the 1945 and 1960 maps (Upper Volta until 1984, Dahomey until 1975),
+   * "Türkiye" on 1945 and 1960 (the English name dates from 2022), "Tanzania"
+   * from 1920, "Botswana"/"Lesotho"/"Malawi"/"Guyana"/"Belize" through six
+   * eras apiece. Each is fixed by a POLITY_NAME_FOR_ERA display remap; these
+   * windows are what stops the next one shipping unnoticed.
+   *
+   * A name is listed here only when it belongs to ONE polity across the whole
+   * era set. Names two different polities have borne (Mali the medieval empire
+   * and the modern republic; Belize the 1700 logwood settlement and the modern
+   * state; Samoa the 19th-century kingdom and the 1997 rename) are deliberately
+   * absent — a name-keyed window cannot tell them apart, and rule 4 above says
+   * a place name that outlived a state is not automatically an error.
+   * ----------------------------------------------------------------------- */
+  ["Türkiye", { from: 2022, to: 9999, note: "Turkey asked the UN to use the Turkish spelling \"Türkiye\" in English in June 2022; before that the English name was Turkey.", source: "https://en.wikipedia.org/wiki/Name_of_Turkey" }],
+  ["Burkina Faso", { from: 1984, to: 9999, note: "Upper Volta was renamed Burkina Faso by Thomas Sankara on 4 August 1984.", source: "https://en.wikipedia.org/wiki/Burkina_Faso" }],
+  ["Benin", { from: 1975, to: 9999, note: "The Republic of Dahomey was renamed Benin on 30 November 1975. (The medieval Kingdom of Benin, in modern southern Nigeria, is a different polity and is shown under that name.)", source: "https://en.wikipedia.org/wiki/Benin" }],
+  ["Botswana", { from: 1966, to: 9999, note: "The Bechuanaland Protectorate became Botswana at independence on 30 September 1966.", source: "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate" }],
+  ["Lesotho", { from: 1966, to: 9999, note: "Basutoland became Lesotho at independence on 4 October 1966.", source: "https://en.wikipedia.org/wiki/Basutoland" }],
+  ["Malawi", { from: 1964, to: 9999, note: "Nyasaland became Malawi at independence on 6 July 1964.", source: "https://en.wikipedia.org/wiki/Nyasaland" }],
+  ["Zambia", { from: 1964, to: 9999, note: "Northern Rhodesia became Zambia at independence on 24 October 1964.", source: "https://en.wikipedia.org/wiki/Northern_Rhodesia" }],
+  ["Tanzania, United Republic of", { from: 1964, to: 9999, note: "Tanganyika and Zanzibar united in April 1964 and took the name Tanzania that October; before that the mainland was Tanganyika.", source: "https://en.wikipedia.org/wiki/Tanganyika_(territory)" }],
+  ["Guyana", { from: 1966, to: 9999, note: "British Guiana became Guyana at independence on 26 May 1966.", source: "https://en.wikipedia.org/wiki/British_Guiana" }],
+  ["Equatorial Guinea", { from: 1968, to: 9999, note: "Spanish Guinea became Equatorial Guinea at independence on 12 October 1968.", source: "https://en.wikipedia.org/wiki/Spanish_Guinea" }],
+  ["Guinea-Bissau", { from: 1973, to: 9999, note: "Portuguese Guinea declared independence as Guinea-Bissau on 24 September 1973; Portugal recognised it in 1974.", source: "https://en.wikipedia.org/wiki/Portuguese_Guinea" }],
+  ["Djibouti", { from: 1977, to: 9999, note: "French Somaliland became the French Territory of the Afars and the Issas in 1967 and independent Djibouti on 27 June 1977.", source: "https://en.wikipedia.org/wiki/French_Somaliland" }],
+  ["Central African Republic", { from: 1958, to: 9999, note: "Ubangi-Shari was renamed the Central African Republic on 1 December 1958.", source: "https://en.wikipedia.org/wiki/Ubangi-Shari" }],
+  ["United Arab Emirates", { from: 1971, to: 9999, note: "Six of the Trucial States federated as the United Arab Emirates on 2 December 1971; Ras al-Khaimah joined in 1972.", source: "https://en.wikipedia.org/wiki/Trucial_States" }],
+  ["Western Sahara", { from: 1975, to: 9999, note: "The territory was the Spanish colony of Spanish Sahara until Spain withdrew in 1975; its status has been disputed since.", source: "https://en.wikipedia.org/wiki/Spanish_Sahara" }],
+  ["Papua New Guinea", { from: 1975, to: 9999, note: "Independent on 16 September 1975. The eastern half of the island was British and German New Guinea before 1914, and the Australian Territory of Papua and New Guinea from 1949.", source: "https://en.wikipedia.org/wiki/Territory_of_Papua_and_New_Guinea" }],
 ]);
 
 /**

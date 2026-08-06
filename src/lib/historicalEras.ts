@@ -1860,6 +1860,48 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Britany", { continent: "Europe", note: "Brittany — French regional duchy; Celtic culture distinct from France; Breton language and traditions; historically independent." }],
   ["Champa City States", { continent: "Southeast Asia", note: "Champa kingdoms — Hindu-Buddhist Southeast Asian polities of central Vietnam; maritime traders; rivals to Vietnamese expansion." }],
   ["Principality of Kyiv", { continent: "Europe", note: "Principality of Kyiv — early Eastern Slavic state; center of Kievan Rus'; Orthodox Christian culture foundational to Eastern Europe." }],
+
+  /* ---------------------------------------------------------------------------
+   * Period names a POLITY_NAME_FOR_ERA remap SHOWS.
+   *
+   * `polityInfo` resolves the SHOWN name before the raw dataset NAME, so a
+   * territory relabelled for its date (Belize → British Honduras, Djibouti →
+   * French Somaliland) would otherwise keep the raw name's entry — an
+   * era-agnostic blurb about the modern independent state, under a colonial
+   * heading. These entries give the shown name its own description.
+   *
+   * Only names whose entity is the SAME across every era that remaps to them
+   * live here; where the period differs materially (Upper Volta in 1945 vs 1960,
+   * Dahomey the kingdom vs the French colony) the entry belongs in ERA_OVERRIDES
+   * instead, which wins over this map for the era it names.
+   * ------------------------------------------------------------------------ */
+  // https://en.wikipedia.org/wiki/British_Honduras — renamed Belize 1 June 1973.
+  ["British Honduras", { continent: "Central America", note: "British Honduras — the British colony on the Caribbean coast of Central America, long claimed by Guatemala. It was renamed Belize in 1973 and became independent in 1981." }],
+  // https://en.wikipedia.org/wiki/Basutoland — renamed Lesotho at independence, 4 Oct 1966.
+  ["Basutoland", { continent: "Southern Africa", note: "Basutoland — the Sotho kingdom of Moshoeshoe I under British protection from 1868, ruled separately from South Africa. It became independent as Lesotho in 1966." }],
+  // https://en.wikipedia.org/wiki/Nyasaland — renamed Malawi at independence, 6 July 1964.
+  ["Nyasaland", { continent: "East Africa", note: "Nyasaland — the British protectorate along Lake Nyasa, joined to the Rhodesias in the Central African Federation from 1953. It became independent as Malawi in 1964." }],
+  // https://en.wikipedia.org/wiki/Spanish_Guinea — renamed Equatorial Guinea at independence, 12 Oct 1968.
+  ["Spanish Guinea", { continent: "Central Africa", note: "Spanish Guinea — Spain's only colony in sub-Saharan Africa, combining the mainland of Río Muni with the island of Fernando Pó. It became independent as Equatorial Guinea in 1968." }],
+  // https://en.wikipedia.org/wiki/French_Somaliland — became the French Territory of the
+  // Afars and the Issas in 1967 and independent Djibouti in 1977.
+  ["French Somaliland", { continent: "Horn of Africa", note: "French Somaliland — the French port colony on the Gulf of Aden, built around Djibouti city and the railway to Addis Ababa. It was renamed the French Territory of the Afars and the Issas in 1967 and became independent Djibouti in 1977." }],
+  // https://en.wikipedia.org/wiki/Trucial_States — federated as the UAE on 2 Dec 1971.
+  ["Trucial States", { continent: "Western Asia", note: "The Trucial States — the sheikhdoms of the lower Gulf bound to Britain by the maritime truces of the 19th century. Six federated as the United Arab Emirates in December 1971, joined by Ras al-Khaimah in 1972." }],
+  // https://en.wikipedia.org/wiki/French_Congo — Middle Congo (Moyen-Congo) became the
+  // Republic of the Congo in 1958.
+  ["Middle Congo", { continent: "Central Africa", note: "Middle Congo (Moyen-Congo) — the French territory on the north bank of the Congo, governed from Brazzaville, which was also the capital of French Equatorial Africa. It became the Republic of the Congo in 1958." }],
+  // https://en.wikipedia.org/wiki/Aden_Protectorate
+  ["Aden Protectorate", { continent: "Western Asia", note: "The Aden Protectorate — the sultanates and sheikhdoms of southern Arabia under British protection, separate from the Zaydi imamate of Yemen to the north. Its territory became South Yemen in 1967 and united with the north in 1990." }],
+  // https://en.wikipedia.org/wiki/Western_Samoa — renamed Samoa on 4 July 1997.
+  ["Western Samoa", { continent: "Oceania", note: "Western Samoa — the western Samoan islands, a New Zealand mandate from 1920 and independent in 1962, the first Pacific colony to regain independence. It dropped \"Western\" from its name in 1997." }],
+  // https://en.wikipedia.org/wiki/German_Samoa — German colony 1900–1914.
+  ["German Samoa", { continent: "Oceania", note: "German Samoa — the western Samoan islands, taken by Germany in the 1899 partition that gave the east to the United States. New Zealand forces occupied it in August 1914." }],
+  // https://en.wikipedia.org/wiki/Mandatory_Palestine
+  ["Mandatory Palestine", { continent: "Western Asia", note: "Mandatory Palestine — the territory Britain governed under a League of Nations mandate from 1920. The mandate ended on 14 May 1948, the day Israel declared independence." }],
+  // https://en.wikipedia.org/wiki/North_Macedonia — renamed North Macedonia in Feb 2019
+  // under the Prespa agreement with Greece.
+  ["Republic of Macedonia", { modernName: "North Macedonia", continent: "Europe", note: "The Republic of Macedonia — independent from Yugoslavia in 1991, and admitted to the UN in 1993 under the provisional name \"the former Yugoslav Republic of Macedonia\" because of Greece's objection. The Prespa agreement settled the dispute in 2019, renaming it North Macedonia." }],
 ]);
 
 /**
@@ -3446,7 +3488,20 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ["ad1945", new Map<string, PolityInfo>([
     // The dataset spells Turkey "Türkiye" from 1945 on; without an entry the panel fell
     // back to the era-agnostic registry note, which describes the Ottoman empire.
-    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Türkiye — neutral for almost all of the war, declaring on Germany only in February 1945. Its red flag with the white crescent and star dates from 1844.", population: 19_000_000 }],
+    // The English name "Türkiye" dates from Turkey's 2022 request to the UN, so the era
+    // remap shows "Turkey" — and the shown name needs its own entry, or the panel falls
+    // through to the registry's Ottoman "Turkey" entry (which is noFlag, losing the flag).
+    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — neutral for almost all of the war, declaring on Germany only in February 1945. Its red flag with the white crescent and star dates from 1844.", population: 19_000_000 }],
+    ["Turkey", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — neutral for almost all of the war, declaring on Germany only in February 1945. Its red flag with the white crescent and star dates from 1844. It asked the world to use the Turkish spelling, Türkiye, only in 2022.", population: 19_000_000 }],
+    // French West/Equatorial Africa in 1945 — shown under the names they actually bore.
+    // https://en.wikipedia.org/wiki/Upper_Volta
+    ["Upper Volta", { modernName: "France", continent: "West Africa", note: "Upper Volta — a French colony from 1919, dissolved in 1932 and shared out between Côte d'Ivoire, French Sudan and Niger; it was re-established in 1947, became independent in 1960 and was renamed Burkina Faso in 1984. In 1945 the French tricolour flew over it." }],
+    // https://en.wikipedia.org/wiki/French_Dahomey
+    ["Dahomey", { modernName: "France", continent: "West Africa", note: "French Dahomey — the colony built on the conquered Kingdom of Dahomey, part of French West Africa. It became independent in 1960 and was renamed Benin in 1975." }],
+    // https://en.wikipedia.org/wiki/French_Sudan
+    ["French Sudan", { modernName: "France", continent: "West Africa", note: "French Sudan (Soudan français) — the vast interior colony of French West Africa, governed from Bamako. It became the Sudanese Republic in 1958 and the Republic of Mali in 1960." }],
+    // https://en.wikipedia.org/wiki/Ubangi-Shari
+    ["Ubangi-Shari", { modernName: "France", continent: "Central Africa", note: "Ubangi-Shari (Oubangui-Chari) — the French Equatorial African colony between the Ubangi and Chari rivers, renamed the Central African Republic when it became self-governing in 1958." }],
     ["USSR", { flag: "historical-flags/ussr.png", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union at the end of World War II, after defeating Nazi Germany. The USSR emerged as one of two superpowers, with control over Eastern Europe and major influence in Asia. The red flag with the hammer and sickle was its national symbol until 1991.", population: 194_000_000 }],
     ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was still under British rule as the Dominion of Ceylon in 1945 (Ceylon became independent in 1948, renamed Sri Lanka in 1972). The Dominion's distinctive lion flag was adopted in 1951; this era predates it, but the flag represents the post-1948 identity.", modernName: "United Kingdom", population: 6_500_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at the war's end — partition and independence came two years later, in 1947.", population: 389_000_000 }],
@@ -3491,9 +3546,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Zaire is the dataset's anachronistic 1945 label for the Belgian
     // Congo (the name 'Zaire' only existed from 1971 under Mobutu).
     ["Zaire", { continent: "Central Africa", note: "Belgian Congo — the name \"Zaire\" wouldn't be coined until 1971 under Mobutu. In 1945 the Belgian tricolour flew over the colony.", modernName: "Belgium", population: 12_000_000 }],
-    // Dutch Guinea — actually Dutch label for Suriname / NL West Indies;
-    // dataset uses this for Suriname under Dutch rule.
-    ["Dutch Guinea", { continent: "South America", note: "Dutch Guiana (Suriname) — Dutch colony until 1975 independence. The Dutch tricolour flew over it.", modernName: "Netherlands", population: 200_000 }],
+    // "Dutch Guinea" is upstream's misspelling of Dutch NEW Guinea — the western half
+    // of New Guinea (135.5°E), not Dutch Guiana in South America (which the 1945 file
+    // carries separately as "Suriname"). https://en.wikipedia.org/wiki/Netherlands_New_Guinea
+    ["Dutch Guinea", { continent: "Oceania / New Guinea", note: "Netherlands New Guinea — the western half of the island of New Guinea, governed as part of the Dutch East Indies and kept by the Netherlands when Indonesia became independent; transferred to Indonesia in 1963. The Dutch tricolour flew over it.", modernName: "Netherlands" }],
     // Cyrenaica, Tripolitania, Fezzan 1945 — UK and French military
     // administrations over former Italian Libya. Already aliased.
     // Modern country names that were still under colonial rule in 1945:
@@ -3517,7 +3573,16 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
-    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Türkiye — a NATO member since 1952, in the year its army took power in the coup of May 1960. Its red flag with the white crescent and star dates from 1844.", population: 28_000_000 }],
+    // "Türkiye" is the raw dataset spelling; the era remap shows "Turkey", the English
+    // name until the 2022 UN request, and the shown name needs its own entry so the
+    // panel does not fall through to the registry's Ottoman "Turkey" (which is noFlag).
+    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — a NATO member since 1952, in the year its army took power in the coup of May 1960. Its red flag with the white crescent and star dates from 1844.", population: 28_000_000 }],
+    ["Turkey", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — a NATO member since 1952, in the year its army took power in the coup of May 1960. Its red flag with the white crescent and star dates from 1844. It asked the world to use the Turkish spelling, Türkiye, only in 2022.", population: 28_000_000 }],
+    // Independent in 1960, but under the names they carried then: Upper Volta was renamed
+    // Burkina Faso in 1984 (https://en.wikipedia.org/wiki/Upper_Volta) and Dahomey became
+    // Benin in 1975 (https://en.wikipedia.org/wiki/Republic_of_Dahomey).
+    ["Upper Volta", { modernName: "Burkina Faso", continent: "West Africa", note: "The Republic of Upper Volta — independent from France on 5 August 1960. Thomas Sankara renamed it Burkina Faso, \"land of upright people\", in 1984, and the country adopted a new flag with the name.", population: 4_400_000 }],
+    ["Dahomey", { modernName: "Benin", continent: "West Africa", note: "The Republic of Dahomey — independent from France on 1 August 1960, named after the pre-colonial kingdom. It was renamed Benin, after the Bight of Benin, in 1975.", population: 2_100_000 }],
     // As for 1994 — the ROC flag flew over Taiwan in 1960; "Taiwan" is not a name
     // the modern-country fallback can match, so it needs an explicit entry.
     ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan under the Republic of China, whose government had withdrawn to the island in 1949 and still held China's UN seat. The blue-sky/white-sun flag has flown since 1928.", population: 10_800_000 }],
@@ -3645,8 +3710,13 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
   ["Teotihuac\uFFFDn", "Teotihuacán"],
   ["Monte Alb\uFFFDn", "Monte Albán"],
   ["Teotihuacàn", "Teotihuacán"],
-  // Dutch Guiana is modern Suriname; "Guinea" is a different place entirely.
-  ["Dutch Guinea", "Dutch Guiana"],
+  // "Dutch Guinea" is upstream's misspelling of Dutch NEW Guinea — the western half
+  // of the island of New Guinea, Dutch until 1962. It is NOT Dutch Guiana: the
+  // feature's centroid is 135.5°E / 4.1°S (Papua), and the 1945 file already carries
+  // Suriname separately at 55.9°W. An earlier fix here read it as Dutch Guiana and
+  // relabelled a Pacific colony as a South American one.
+  // https://en.wikipedia.org/wiki/Netherlands_New_Guinea
+  ["Dutch Guinea", "Netherlands New Guinea"],
   // Libya's three provinces under British / French military administration.
   ["Cyraneica (UK Lybia)", "Cyrenaica (British Libya)"],
   ["Tripolitana (UK Lybia)", "Tripolitania (British Libya)"],
@@ -3687,17 +3757,51 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
   // laws, Cortes, currency and colonial administration — but at this date the polity a
   // user is looking at IS the union, so both display under that name and highlight
   // together. Neither polygon is touched.
+  // The Kingdom of Benin (Edo, in modern southern Nigeria) is a wholly different
+  // polity from the modern West African state that took the name in 1975 — exactly
+  // the Ghana Empire situation above. Saying so on the label keeps the two apart,
+  // and lets POLITY_EXISTENCE hold a window for the modern state.
+  // https://en.wikipedia.org/wiki/Kingdom_of_Benin
+  ["ad1300", new Map<string, string>([["Benin", "Kingdom of Benin"]])],
+  ["ad1500", new Map<string, string>([
+    ["Benin", "Kingdom of Benin"],
+    ["Papua New Guinea", "New Guinea"],      // the name dates from 1971; before that, the island
+  ])],
   ["ad1600", new Map<string, string>([
     ["Spain", "Iberian Union"],
     ["Portugal", "Iberian Union"],
+    ["Benin", "Kingdom of Benin"],
+  ])],
+  ["ad1700", new Map<string, string>([["Benin", "Kingdom of Benin"]])],
+  ["ad1815", new Map<string, string>([
+    // No Somali state existed in 1815 — the registry's own note calls this a patchwork
+    // of sultanates. "Somalia" is the 1960 union of the British and Italian territories.
+    ["Somalia", "Somali sultanates"],
+  ])],
+  ["ad1880", new Map<string, string>([
+    ["Benin", "Kingdom of Benin"],
+    ["Belize", "British Honduras"],          // the colony was renamed Belize only in 1973
+    ["Papua New Guinea", "New Guinea"],      // no colonial claim yet; PNG is a 1971 name
   ])],
   ["ad1900", new Map<string, string>([
     ["India", "British India"],              // Republic of India dates from the 1947 partition
     ["Kingdom of Brazil", "Brazil"],         // the empire fell in 1889; 1900 is the Old Republic
+    ["Benin", "Kingdom of Benin"],
+    ["Belize", "British Honduras"],          // renamed Belize 1 June 1973
+    ["Papua New Guinea", "New Guinea"],      // British New Guinea + German New Guinea in 1900
   ])],
   ["ad1914", new Map<string, string>([
     ["Eritrea", "Italian Eritrea"],          // Italian colony 1890–1947; independence 1993
     ["Rhodesia", "Southern Rhodesia"],       // "Rhodesia" is the 1965–79 UDI state
+    ["Belize", "British Honduras"],          // renamed Belize 1973
+    ["Botswana", "Bechuanaland"],            // Bechuanaland Protectorate; Botswana 1966
+    ["Lesotho", "Basutoland"],               // Basutoland; renamed Lesotho at independence 1966
+    ["Malawi", "Nyasaland"],                 // Nyasaland; renamed Malawi at independence 1964
+    ["Guyana", "British Guiana"],            // renamed Guyana at independence 1966
+    ["Equatorial Guinea", "Spanish Guinea"], // Spanish Guinea; renamed at independence 1968
+    ["Djibouti", "French Somaliland"],       // French Somaliland → Afars and Issas 1967 → Djibouti 1977
+    ["Samoa", "German Samoa"],               // German Samoa 1900–1914; NZ mandate from 1920
+    ["Papua New Guinea", "New Guinea"],      // Territory of Papua + German New Guinea
   ])],
   ["ad1920", new Map<string, string>([
     ["Iran", "Persia"],                      // Persia asked to be called Iran only in 1935
@@ -3705,10 +3809,33 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Malaysia", "British Malaya"],          // Malaysia was formed in 1963
     ["Eritrea", "Italian Eritrea"],          // Italian colony 1890–1947
     ["Zimbabwe", "Southern Rhodesia"],       // independence, and the name, came in 1980
+    ["Zaire (Belgium)", "Belgian Congo"],    // "Zaire" was the name only from 1971 to 1997
+    ["Belize", "British Honduras"],          // renamed Belize 1973
+    ["Botswana", "Bechuanaland"],            // Botswana 1966
+    ["Lesotho", "Basutoland"],               // Lesotho 1966
+    ["Malawi", "Nyasaland"],                 // Malawi 1964
+    ["Zambia", "Northern Rhodesia"],         // Zambia 1964
+    ["Guyana", "British Guiana"],            // Guyana 1966
+    ["Equatorial Guinea", "Spanish Guinea"], // Equatorial Guinea 1968
+    ["Guinea-Bissau", "Portuguese Guinea"],  // Guinea-Bissau 1973
+    ["Tanzania, United Republic of", "Tanganyika"], // Tanganyika + Zanzibar = Tanzania, 1964
+    ["Samoa", "Western Samoa"],              // Western Samoa until 1997
+    ["Papua New Guinea", "New Guinea"],      // Territory of Papua + New Guinea mandate
   ])],
   ["ad1938", new Map<string, string>([
     ["India", "British India"],              // partition 1947
     ["Malaysia", "British Malaya"],          // Malaysia formed 1963
+    ["Belize", "British Honduras"],          // renamed Belize 1973
+    ["Botswana", "Bechuanaland"],            // Botswana 1966
+    ["Lesotho", "Basutoland"],               // Lesotho 1966
+    ["Malawi", "Nyasaland"],                 // Malawi 1964
+    ["Guyana", "British Guiana"],            // Guyana 1966
+    ["Equatorial Guinea", "Spanish Guinea"], // Equatorial Guinea 1968
+    ["Guinea-Bissau", "Portuguese Guinea"],  // Guinea-Bissau 1973
+    ["Tanzania, United Republic of", "Tanganyika"], // Tanzania 1964
+    ["Congo (France)", "Middle Congo"],      // Moyen-Congo; Republic of the Congo from 1958
+    ["Yemen (UK)", "Aden Protectorate"],     // the British-protected south, not the Yemeni imamate
+    ["Samoa", "Western Samoa"],              // Western Samoa until 1997
   ])],
   ["ad1945", new Map<string, string>([
     // After WWII, the 1945 file shows several African territories as independent
@@ -3722,6 +3849,25 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Malaysia", "British Malaya"],          // Malaysia formed 1963
     ["Israel", "Mandatory Palestine"],       // Israel declared 14 May 1948
     ["Eritrea", "Eritrea (British administration)"], // British military administration 1941–52
+    // The English name "Türkiye" dates from the 2022 UN request; in 1945 it was Turkey.
+    ["Türkiye", "Turkey"],
+    ["Burkina Faso", "Upper Volta"],         // Upper Volta; renamed Burkina Faso 4 Aug 1984
+    ["Benin", "Dahomey"],                    // French Dahomey; renamed Benin 30 Nov 1975
+    ["Mali", "French Sudan"],                // Soudan français; Republic of Mali from Sept 1960
+    ["Central African Republic", "Ubangi-Shari"], // Oubangui-Chari; renamed CAR 1 Dec 1958
+    ["Djibouti", "French Somaliland"],       // Djibouti is the 1977 name
+    ["Somalia", "Italian Somaliland"],       // under British military administration in 1945; Somalia 1960
+    ["Western Sahara", "Spanish Sahara"],    // Spanish colony until 1975
+    ["United Arab Emirates", "Trucial States"], // the UAE federation dates from 2 Dec 1971
+    ["Belize", "British Honduras"],          // renamed Belize 1973
+    ["Lesotho", "Basutoland"],               // Lesotho 1966
+    ["Guyana", "British Guiana"],            // Guyana 1966
+    ["Equatorial Guinea", "Spanish Guinea"], // Equatorial Guinea 1968
+    ["Guinea-Bissau (Portugal)", "Portuguese Guinea"], // Guinea-Bissau 1973
+    ["Tanzania, United Republic of", "Tanganyika"],    // Tanzania 1964
+    ["Congo", "Middle Congo"],               // Moyen-Congo; Republic of the Congo from 1958
+    ["Samoa", "Western Samoa"],              // Western Samoa until 1997
+    ["Papua New Guinea", "Papua and New Guinea"], // the 1949–1971 territory's own name
   ])],
   ["ad1960", new Map<string, string>([
     // The 1960 decolonisation wave. Many territories shown on the map as independent
@@ -3735,6 +3881,25 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Zaire", "Congo-Léopoldville"],              // Named Zaire only 1971–1997
     ["Malaysia", "Federation of Malaya"],         // Malaysia formed 1963
     ["Eritrea", "Eritrea (federated with Ethiopia)"], // Federated 1952; annexed 1962; independent 1993
+    ["Türkiye", "Turkey"],                        // the English name changed only in 2022
+    ["Burkina Faso", "Upper Volta"],              // Republic of Upper Volta; renamed 1984
+    ["Benin", "Dahomey"],                         // Republic of Dahomey; renamed 1975
+    ["Western Sahara", "Spanish Sahara"],         // Spanish colony until 1975
+    ["United Arab Emirates", "Trucial States"],   // UAE formed 1971
+    ["Belize", "British Honduras"],               // renamed Belize 1973
+    ["Lesotho", "Basutoland"],                    // Lesotho 1966
+    ["Malawi", "Nyasaland"],                      // Malawi 1964
+    ["Guyana", "British Guiana"],                 // Guyana 1966
+    ["Equatorial Guinea", "Spanish Guinea"],      // Equatorial Guinea 1968
+    ["Guinea-Bissau", "Portuguese Guinea"],       // Guinea-Bissau 1973
+    ["Tanzania, United Republic of", "Tanganyika"], // Tanzania 1964
+    ["Djibouti", "French Somaliland"],            // Djibouti 1977
+    ["Samoa", "Western Samoa"],                   // Western Samoa until 1997
+    ["Papua New Guinea", "Papua and New Guinea"], // the territory's own 1949–1971 name
+  ])],
+  ["ad1994", new Map<string, string>([
+    ["Samoa", "Western Samoa"],                   // renamed Samoa on 4 July 1997
+    ["Macedonia", "Republic of Macedonia"],       // constitutional name until the 2019 Prespa change
   ])],
 ]);
 
