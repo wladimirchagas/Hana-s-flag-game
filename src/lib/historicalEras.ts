@@ -596,7 +596,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // plain tricolour is a 1946 flag, so the gate refuses it for every earlier era —
   // which left Italy AND its colonies blank across five eras.
   ["Austria Hungary", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austria-Hungary — the Habsburg dual monarchy created by the 1867 Compromise.", population: 45_000_000 }],
-  ["Imperial Japan", { modernName: "Japan", continent: "East Asia", note: "Empire of Japan — industrialising fast after the 1868 Meiji Restoration; the Hinomaru has been the national flag since 1870." }],
+  ["Imperial Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Empire of Japan — industrialising fast after the 1868 Meiji Restoration. The Hinomaru it flew was the 1870 Meiji specification: seven by ten, with the disc set slightly toward the hoist. (The 16-ray Rising Sun flag of the period was the army's war flag and the navy's ensign, not the national flag.)" }],
   ["Malay", { continent: "Southeast Asia", note: "Malay peoples and sultanates of the Malay Archipelago — a maritime trading civilization with distinct city-states and sultanates from Malacca to Brunei." }],
   ["Malays", { continent: "Southeast Asia", note: "Malay-speaking peoples of the Malay Peninsula and archipelago — diverse polities united by language, Islam and commerce." }],
   ["Malaysia", { continent: "Southeast Asia", note: "Malay states and Malaysia — from the sultanates of the peninsula to the modern Federation of Malaysia, established after British decolonization." }],
@@ -1077,7 +1077,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Dutch East Indies", { continent: "Southeast Asia", note: "Dutch colonial rule of modern Indonesia.", population: 60_000_000 }],
   ["Netherlands Indies", { modernName: "Netherlands", continent: "Southeast Asia", note: "Netherlands East Indies — Dutch colonial rule over what is now Indonesia.", population: 60_000_000 }],
   ["Abyssinia", { continent: "East Africa", note: "Historical name for Ethiopia, never colonised by Europe.", modernName: "Ethiopia", population: 11_000_000 }],
-  ["Empire of Japan", { continent: "East Asia", note: "Imperial Japan, 1868–1947.", modernName: "Japan", population: 105_000_000 }],
+  ["Empire of Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Imperial Japan, 1868–1947 — flying the 1870 Meiji Hinomaru: seven by ten, with the disc set slightly toward the hoist. Today's flag, squarer and a brighter crimson, dates from the 1999 flag law.", population: 105_000_000 }],
   ["Burma", { continent: "Southeast Asia", note: "Pre-1989 name for Myanmar.", modernName: "Myanmar", population: 17_000_000 }],
   ["Ceylon", { continent: "South Asia", note: "Pre-1972 name for Sri Lanka.", modernName: "Sri Lanka", population: 10_000_000 }],
   ["Siam", { continent: "Southeast Asia", note: "Pre-1939 name for Thailand.", modernName: "Thailand", population: 15_000_000 }],
@@ -3148,7 +3148,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Consolidated features from world_1880.geojson
     ["United Kingdom of Great Britain and Ireland", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom of Great Britain and Ireland at the height of the British Empire, ruling India, Canada, Australia, and numerous colonies worldwide.", population: 35_000_000 }],
     ["Kingdom of Brazil", { flag: "historical-flags/empire-of-brazil.png", continent: "South America", note: "Empire of Brazil under Dom Pedro II — the monarchy flew the green flag with the golden lozenge and imperial arms. The empire would fall in 1889, giving way to a republic.", population: 10_000_000 }],
-    ["Imperial Japan", { modernName: "Japan", continent: "East Asia", note: "Meiji Japan - rapidly industrialising after the 1868 Restoration. The Hinomaru became the national flag in 1870 and is unchanged today.", population: 36_600_000 }],
+    ["Imperial Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Meiji Japan - rapidly industrialising after the 1868 Restoration. The Hinomaru became the national flag in 1870, in the seven-by-ten form shown here; today's proportions and brighter crimson date from the 1999 flag law.", population: 36_600_000 }],
     ["Portugal", { flag: "historical-flags/portugal-1500.png", continent: "Iberia", note: "Kingdom of Portugal - the blue-and-white constitutional monarchy flag flew from 1830 to 1910; the modern green-and-red was adopted in 1911.", population: 4_600_000 }],
     // --- Colonies and dependencies (they flew the ruling power's flag) ------
     ["Algeria (FR)", { modernName: "France", continent: "North Africa", note: "French Algeria - administered as departments of France since 1848.", population: 3_300_000 }],
@@ -3465,7 +3465,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Iraq", { flag: "historical-flags/iraq-1924.svg", continent: "Western Asia", note: "Kingdom of Iraq (1932–1958) — independent nation after the British mandate ended. The red-white-black tricolour with stars was the national flag from 1924 through the 1958 revolution.", population: 3_200_000 }],
     ["Malaysia", { modernName: "United Kingdom", continent: "Southeast Asia", note: "Malaya and the British territories of Sarawak, Brunei and North Borneo — not yet federated as Malaysia, which formed in 1963.", population: 3_500_000 }],
     ["Siam", { modernName: "Thailand", continent: "Southeast Asia", note: "Kingdom of Siam, renamed Thailand in 1939 — the striped red-white-blue flag (chakri flag) has been the national flag since 1917.", population: 15_000_000 }],
-    ["Empire of Japan", { modernName: "Japan", continent: "East Asia", note: "Empire of Japan at the height of territorial expansion before the Pacific War.", population: 73_000_000 }],
+    ["Empire of Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Empire of Japan at the height of territorial expansion before the Pacific War. Its national flag was the 1870 Meiji Hinomaru shown here; the 16-ray Rising Sun so often pictured for this period was the army's war flag and the navy's ensign, never the national flag.", population: 73_000_000 }],
     ["Chinese warlords", { modernName: "China", continent: "East Asia", note: "China, fragmented between competing warlord factions — national unification would not occur until the 1928 completion of the Northern Expedition.", population: 500_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution.", population: 4_200_000 }],
@@ -3486,6 +3486,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["Japan (USA)", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Japan under Allied occupation from September 1945. The Hinomaru still flew — at first only with the occupation authorities' permission — in the 1870 Meiji form; today's proportions and brighter crimson date from the 1999 flag law.", population: 72_000_000 }],
     // The dataset spells Turkey "Türkiye" from 1945 on; without an entry the panel fell
     // back to the era-agnostic registry note, which describes the Ottoman empire.
     // The English name "Türkiye" dates from Turkey's 2022 request to the UN, so the era
@@ -3573,6 +3574,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Japan in its post-war economic miracle, hosting the Olympics four years later. The Hinomaru still flew in its 1870 Meiji form; today's proportions and brighter crimson date from the 1999 flag law.", population: 94_000_000 }],
     // "Türkiye" is the raw dataset spelling; the era remap shows "Turkey", the English
     // name until the 2022 UN request, and the shown name needs its own entry so the
     // panel does not fall through to the registry's Ottoman "Turkey" (which is noFlag).
@@ -3646,6 +3648,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1994", new Map<string, PolityInfo>([
+    ["Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Japan five years before the 1999 flag law, which set today's two-by-three proportions and brighter crimson. Until then the Hinomaru kept the 1870 Meiji form shown here.", population: 125_000_000 }],
     // Taiwan flew (and flies) the Republic of China's blue-sky/white-sun flag —
     // the same file already bundled for the 1945 map. Without an entry the polity
     // fell through to the no-flag branch, because "Taiwan" is not in the modern
