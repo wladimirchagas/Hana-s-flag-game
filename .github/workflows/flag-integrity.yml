@@ -48,6 +48,11 @@ on:
       - "scripts/data/era-gap-fill.json"
       - "scripts/check-era-anachronism.mjs"
       - "src/data/polityExistence.ts"
+      # Why a polity shows no flag is a claim the panel makes about history; this
+      # check keeps it curated rather than guessed (and keeps the registry free of
+      # duplicate keys, which silently shadow curated entries).
+      - "scripts/check-era-flag-explanations.mjs"
+      - "src/pages/LearnPage.tsx"
       # The era renderer draws the coastline basemap under every era, so land no
       # polity covers still reads as land rather than ocean (the "Greece looked like
       # an island" bug). A change here can break the coastline without touching data.
@@ -132,6 +137,9 @@ jobs:
 
       - name: Verify no polity appears on a map that predates or postdates it
         run: node scripts/check-era-anachronism.mjs
+
+      - name: Verify every withheld era flag explains itself
+        run: node scripts/check-era-flag-explanations.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

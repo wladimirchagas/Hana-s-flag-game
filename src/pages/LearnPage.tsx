@@ -50,6 +50,7 @@ import {
   eraAllowsModernFlagFallback,
   getEra,
   flagExistedInEra,
+  eraRuler,
   noFlagIsEraSpecific,
   polityDisplayName,
   polityInfo,
@@ -122,6 +123,10 @@ type HistoricalSelection = {
   /** Set when no flag is shown BECAUSE the modern one postdates the era. Lets the
    *  panel explain precisely instead of claiming the polity predates flags. */
   flagTooNew?: { name: string; year: number };
+  /** Curated, sourced explanation of WHY this polity shows no flag at this date —
+   *  from `PolityInfo.noFlagReason`. Rendered verbatim in place of the neutral
+   *  fallback line, which never asserts a reason we do not actually know. */
+  noFlagReason?: string;
   /** Set when the upstream dataset draws this polity for the WRONG DATE and the error
    *  cannot be fixed by relabelling — the borders themselves are anachronistic. Sourced
    *  in src/data/polityExistence.ts; the panel discloses it rather than us inventing the
@@ -648,8 +653,11 @@ export default function LearnPage() {
       // unavailable or not yet period-legal, inherit the ruler's — resolved through
       // the SAME gate, so it can never be more anachronistic than the ruler.
       if (!flag) {
-        const ruler = polityRulers.get(name);
-        if (ruler && ruler !== name) {
+        // eraRuler() drops a SUBJECTO the dataset gets wrong for this date (Brazil
+        // recorded as Portuguese in 1900, Cambodia as Japanese in 1938) — a wrong
+        // ruler would put a foreign flag on an independent country's card.
+        const ruler = eraRuler(name, eraId, polityRulers.get(name));
+        if (ruler) {
           const rulerInfo = polityInfo(ruler, eraId);
           if (rulerInfo.flag) {
             flag = rulerInfo.flag;
@@ -671,7 +679,7 @@ export default function LearnPage() {
     // "Ruled by: Italy" there is noise, so strip the title and compare. A ruler merely
     // mentioned in the name ("Zaire (Belgium)", "Libya (IT)") is a real dependency and
     // still shows the row.
-    const rawRuler = polityRulers.get(name);
+    const rawRuler = eraRuler(name, eraId, polityRulers.get(name)) ?? undefined;
     const bareName = polityDisplayName(name, eraId)
       .replace(/^(kingdom|kingfom|empire|republic|state|union|dominion|sultanate|emirate|principality|grand duchy)\s+of\s+/i, "")
       .trim()
@@ -687,6 +695,10 @@ export default function LearnPage() {
       ruledBy: ruledBy && ruledBy !== name ? ruledBy : undefined,
       flagIsRulers: flagIsRulers || undefined,
       flagTooNew: flag ? undefined : flagTooNew,
+      // Why this polity shows no flag, when we know. Curated per era in
+      // historicalEras.ts; without it the panel falls back to a line that states
+      // only what is certainly true (no period flag is bundled).
+      noFlagReason: flag ? undefined : info.noFlagReason,
       approximateExtent: derivedBoundaryNames.has(name) || undefined,
       // A sourced, known anachronism in the upstream data — the polity is drawn for the
       // wrong date. We disclose rather than redraw (see src/data/polityExistence.ts).
@@ -1527,17 +1539,29 @@ export default function LearnPage() {
                       <FlagMeaning code={display.country.code} />
                     )}
                   </div>
+                ) : display.kind === "historical" && display.noFlagReason ? (
+                  // Curated, sourced explanation for THIS polity at THIS date — always
+                  // preferred over the two generic lines below. See PolityInfo.noFlagReason.
+                  <p className="learn-fs__no-flag">{display.noFlagReason}</p>
                 ) : display.kind === "historical" && display.flagTooNew ? (
                   <p className="learn-fs__no-flag">
                     No flag for {era.label} — {display.flagTooNew.name}'s modern flag
                     was only adopted in {display.flagTooNew.year}, and no earlier flag
                     for this territory is bundled.
                   </p>
-                ) : (
+                ) : display.kind === "historical" ? (
+                  // Last resort. It must state ONLY what is certainly true — that no
+                  // period flag is bundled — and never assert a historical reason we do
+                  // not actually know. The old line ("this polity predates modern flag
+                  // design or none survives") asserted one for every flagless polity and
+                  // was plainly false for the 20th-century ones: Nazi Germany, the 1938
+                  // Netherlands, the Kingdom of Hawaii. Add a noFlagReason instead.
                   <p className="learn-fs__no-flag">
-                    No flag image — this polity predates modern flag design
-                    or none survives.
+                    No flag shown — no period-accurate flag for{" "}
+                    {selectionName(display, eraId)} in {era.label} is bundled.
                   </p>
+                ) : (
+                  <p className="learn-fs__no-flag">No flag image available.</p>
                 )}
                 {display.kind === "modern" && isModernEra && !subdivisionMode && (
                   <button
