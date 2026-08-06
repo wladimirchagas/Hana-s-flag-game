@@ -2,6 +2,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import { blurActiveElementThenRun } from "../lib/dismissKeyboard";
 import { normalizeForSearch } from "../lib/searchNormalize";
+import { countrySearchNames } from "../lib/countrySelection";
 
 type Props = {
   countries: Country[];
@@ -97,12 +98,16 @@ export function CountryDropdown({
     [countries],
   );
 
+  // Matches the country's current name OR any name it used to be known by, so a
+  // player typing "Turkey", "Swaziland" or "Nauru" still finds Türkiye, Eswatini
+  // and Naoero — the search is the only place a former name is ever used.
+  const matchesQuery = (c: Country, q: string) =>
+    countrySearchNames(c.code, c.name).some((n) => normalizeForSearch(n).includes(q));
+
   const filtered = useMemo(() => {
     const q = normalizeForSearch(query.trim());
     if (!q) return sortedCountries.slice(0, MAX_OPTIONS);
-    return sortedCountries
-      .filter((c) => normalizeForSearch(c.name).includes(q))
-      .slice(0, MAX_OPTIONS);
+    return sortedCountries.filter((c) => matchesQuery(c, q)).slice(0, MAX_OPTIONS);
   }, [sortedCountries, query]);
 
   // The mobile modal lists ALL countries (or filtered by its own search). On
@@ -110,7 +115,7 @@ export function CountryDropdown({
   const filteredAll = useMemo(() => {
     const q = normalizeForSearch(query.trim());
     if (!q) return sortedCountries;
-    return sortedCountries.filter((c) => normalizeForSearch(c.name).includes(q));
+    return sortedCountries.filter((c) => matchesQuery(c, q));
   }, [sortedCountries, query]);
 
   // Desktop: close the popover when the user clicks outside.

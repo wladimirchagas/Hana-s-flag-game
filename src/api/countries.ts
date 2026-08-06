@@ -258,6 +258,13 @@ export async function fetchCountries(): Promise<Country[]> {
       finalName = "Congo (DRC)";
     } else if (code === "CG") {
       finalName = "Congo";
+    } else if (code === "NR") {
+      // Nauru's parliament passed the constitutional amendment on 13 May 2026; the
+      // country notified the UN on 26 June 2026, and the UN member-states list now
+      // reads "Naoero" (formal: "Republic of Naoero"). ISO 3166-1 alpha-2 stays NR.
+      // https://www.un.org/en/about-us/member-states/naoero
+      finalName = "Naoero";
+      finalNameOfficial = "Republic of Naoero";
     }
 
     countries.push({
