@@ -884,8 +884,10 @@ export default function LearnPage() {
     // selectionFromPolityName closes over countryByName + eraId, both of
     // which we track explicitly. Disable lint exhaustive-deps just for
     // the helper itself — it’s intentionally re-created each render.
+    // polityRulers/derivedBoundaryNames are read by the helper too — listed so a
+    // grid entry can never be built from the previous era's ruler data.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName]);
+  }, [isModernEra, countries, availableHistoricalNames, eraId, countryByName, polityRulers, derivedBoundaryNames]);
 
   // Convert a flag URL to a form suitable for SVG <image> map overlay.
   // flagcdn.com serves /{code}.svg files whose embedded preserveAspectRatio
@@ -981,21 +983,29 @@ export default function LearnPage() {
   // Stable callbacks for HistoricalMap — memoised so React.memo() on that
   // component is not bypassed when unrelated state (selected, hovered, …)
   // changes. The deps match what selectionFromPolityName reads from closure.
+  //
+  // `polityRulers` and `derivedBoundaryNames` MUST stay in these dep lists.
+  // selectionFromPolityName reads both, and they are filled in only once the new
+  // era's GeoJSON has loaded — after the render in which `eraId` changed. With
+  // deps of `[eraId, countryByName]` alone the callback kept the closure built
+  // during that earlier render, so every click after an era switch resolved the
+  // ruler against the PREVIOUS era's map: the panel lost its "Ruled by" row (1945
+  // Annam showed no ruler at all) and a colony could inherit the flag of whoever
+  // ruled it in the era before — an anachronistic flag, which the era rules forbid.
   const handleHistoricalSelect = useCallback(
     (name: string | null) => {
       setSelected(selectionFromPolityName(name));
       setHovered(null);
     },
-    // selectionFromPolityName closes over eraId + countryByName only.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [eraId, countryByName],
+    [eraId, countryByName, polityRulers, derivedBoundaryNames],
   );
   const handleHistoricalHover = useCallback(
     (name: string | null) => {
       setHovered(selectionFromPolityName(name));
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [eraId, countryByName],
+    [eraId, countryByName, polityRulers, derivedBoundaryNames],
   );
   // Memoised for the same reason — and here it also matters for CORRECTNESS, not
   // just for memo(): this callback stores three freshly-built collections in state,
@@ -1372,10 +1382,14 @@ export default function LearnPage() {
         ) : (
           <HistoricalMap
             geoJsonUrl={`${baseUrl}${era.dataUrl}`}
+            // `display` (selected ?? hovered) is what the panel and the flag grid
+            // describe, so it is also what the map highlights — one source of
+            // truth. The map takes no separate hovered name: when it did, hover
+            // outranked the selection there while the panel resolved the other
+            // way, so the two named different polities at once.
             selectedName={
               display?.kind === "historical" ? display.name : null
             }
-            hoveredName={hovered?.kind === "historical" ? hovered.name : null}
             onSelect={handleHistoricalSelect}
             onHover={handleHistoricalHover}
             zoom={sharedZoom}

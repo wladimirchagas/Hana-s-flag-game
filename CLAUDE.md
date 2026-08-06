@@ -579,6 +579,52 @@ topology `WorldProgressMap` draws, so the two maps can never disagree about wher
    and confirm Greece is a peninsula continuous with the Balkans, not an island; open **600** and
    confirm the Indus basin and interior Asia read as land.
 
+### …but the coastline layer must never paint a SHADOW along a polity's own coast
+
+**The base land layer and the era polygons draw the same coast at different resolutions, so the
+land layer shows through as a hatched sliver wherever the era's outline cuts a corner. That sliver
+is the "no polity here" fill, so a polity ends up wearing a ragged shadow of unclaimed land along
+its own coastline — and because the base layer is `pointerEvents="none"`, that shadow cannot be
+clicked either. It must be reconciled away, without moving one coordinate of either dataset.**
+
+This shipped and was reported (2026-08), with the 1945 Philippines: every island had a dark fringe
+hugging one side of it, which the owner read as "wrong, unselectable territories that look like a
+shadow". It is a rendering artifact, not missing data: the era file draws the archipelago in 279
+points where Natural Earth 50m uses 1,238. Measured at the projection's own scale, ~1.7% of land
+pixels are covered by no feature in any era, ~75% of that within ONE map unit of a polity and 84%
+within two, while land the era file genuinely does not carry sits far outside that.
+
+**The rule:** `HistoricalMap.tsx` grows each era polygon by `COASTLINE_MATCH_TOLERANCE` map units
+(`growProjectedPath`) and paints that band in the polity's own fill, UNDER the polities and
+**clipped to the basemap's land**. Land within the tolerance of a polity therefore reads as that
+polity; land beyond it keeps the hatch.
+
+1. **The band is a RENDERING reconciliation and must never become a data one.** It runs on the
+   projected path string, is never stored, hit-tested, exported or drawn as a border, and the
+   polity paths that are rendered, selected and measured still come from untouched coordinates.
+   Growing, simplifying or snapping anything in `public/historical-maps/**` to make coasts line up
+   is the fabrication the rule above forbids — `restore-era-geometry.mjs --check` will fail, and
+   it is right to.
+2. **The band MUST stay clipped to the land layer.** Unclipped, growing a polity paints sea, which
+   is the one thing `check-era-landmass.mjs` exists to prevent. The clip makes that structural.
+3. **The tolerance is in USER space, never screen pixels.** The mismatch it hides is a fixed
+   distance on the ground; a screen-space fix (a `vectorEffect="non-scaling-stroke"`) unravels the
+   moment the user zooms in, which is exactly how the bug was reported. Keep it small — it is a
+   coastline tolerance, not a licence to swallow a neighbouring island the era leaves unclaimed.
+4. **Never implement the band as a stroke, and never as stamped `<use>` copies.** Both were
+   measured on the heaviest era (500 BC): a fat stroke cost 1.88 s of main-thread time over five
+   zoom steps against 0.37 s without the band, and nine `<use>` stamps cost 4.9 s to drag-pan a
+   route that costs 0.67 s without it (`shape-rendering` made no difference). Pre-growing once per
+   era leaves a single ordinary fill, which is what the current code does.
+5. **Unmapped land must still be unmapped.** Confirm the reconciliation only ate slivers: the
+   hatched area of every era must be essentially unchanged (measured across all 21 eras it moves
+   by ≤0.6%, except 1945/1960 where the entire residue WAS mismatch), and 500 BC must still show
+   its large hatched regions.
+6. **Verify in the running app** (the mandatory visual-verification rule applies): open **1945**,
+   select the **Philippines** and zoom in — the islands fill their true coastlines with no dark
+   fringe, while the islets the era file omits stay hatched — then open **500 BC** and confirm
+   Greece is still a peninsula and the unmapped regions are still hatched.
+
 ### Sourced polity-border changes ARE allowed — redrawing them by hand is not
 
 **Where a polity's border sits, and which polity holds a piece of land, are HISTORICAL
@@ -1588,6 +1634,79 @@ produces no build, type or lint error (an inline arrow prop is perfectly valid T
 guard is this rule plus rule 4's measurement: when reviewing any change to `HistoricalMap`,
 `WorldProgressMap` or the props `LearnPage` passes them, confirm no callback prop is inline and no
 notify effect lists a callback in its dependency array.
+
+### …and a memoised map handler must list the era data it reads — a stale dep is a wrong answer, not a slow one
+
+**The same dependency lists that keep these callbacks stable will happily serve them the PREVIOUS
+era's data. A handler that resolves a click against era-loaded state MUST list that state in its
+deps.**
+
+`selectionFromPolityName` reads `polityRulers` and `derivedBoundaryNames`, which are filled in by
+`onDataLoaded` — i.e. AFTER the render in which `eraId` changed. With deps of `[eraId,
+countryByName]`, `handleHistoricalSelect` kept the closure built during that earlier render, so
+every click after an era switch resolved the ruler against the era the user had just left. This
+shipped (2026-08, found while fixing the highlight bug below): switching 1938 → 1945 and clicking
+**Cambodia** showed "Ruled by **Empire of Japan**" and flew the **Japanese flag** on the 1945 map,
+and Annam/Tonkin lost their "Ruled by France" row entirely. Across the era sequence, **253**
+polity/transition pairs resolved against the wrong era's ruler.
+
+1. **List every piece of era-loaded state the handler reads** (`polityRulers`,
+   `derivedBoundaryNames`, …) in the `useCallback`/`useMemo` deps — or read it through a ref that
+   is always current. Cheap: those values change once per era load, when the map re-renders anyway.
+2. **Never trade correctness for a stable identity.** `memo()` exists to skip renders, not to serve
+   last era's answer. If a dep genuinely must stay out of the list, the value it feeds has to come
+   from a ref instead — silently reading a stale closure is not an option.
+3. **An inherited flag is the dangerous failure here, not a missing row.** A ruler resolved from
+   the wrong era hands a polity a flag from the wrong era — the exact anachronism the historical-era
+   flag rule forbids, arriving through a path `flagExistedInEra()` cannot see.
+4. **Verify in the running app**: switch era **through the picker** (not by loading the URL
+   directly — a fresh load hides this bug), then click a colony and confirm the "Ruled by" row and
+   the flag match the NEW era. 1938 → 1945 → Cambodia must say France.
+
+## The map's highlight and the detail panel must always be the same entity — hard rule, do not override without approval
+
+**Whatever the Learn-mode panel and flag grid describe is what the map highlights. A map component
+must take ONE highlight input, so the two can never name different polities.**
+
+### Why this rule exists
+
+This shipped and was reported (2026-08) with a screenshot: the panel and the selected flag card both
+said **Annam** (with the French tricolour) while the map painted the **Philippines** in the selection
+colour. Two resolutions of the same pair of states disagreed —
+
+| Consumer | Resolution |
+|---|---|
+| `LearnPage` panel + flag grid | `const display = selected ?? hovered` — **selection wins** |
+| `HistoricalMap` (old) | `hoveredName ?? selectedName` — **hover wins** |
+
+— so hovering one polity while another was selected recoloured the map without touching the panel.
+On touch it was permanent: a tap fires `mouseenter`, nothing ever fires the matching `mouseleave`,
+so the stale hover simply stayed. `WorldProgressMap` never had the bug: it highlights `selectedCode`
+alone and leaves hover to the CSS `:hover` brightness on
+`.world-map__country--selectable`.
+
+### Rules
+
+1. **A map component takes exactly one highlight input.** `HistoricalMap` has `selectedName` and no
+   `hoveredName`; the parent passes `display.name`, the same value the panel renders from. Never
+   add a second highlight prop that can outrank it — that is the bug, and a comment saying "hover is
+   transient" is not a defence, because on touch it isn't.
+2. **Hover feedback must not use the selection's own treatment.** The shared CSS brightness is the
+   hover affordance on both maps. Anything stronger has to be visibly a different thing.
+3. **Hover-to-preview still works, and stays consistent, for free**: with nothing selected,
+   `display` IS the hovered entity, so the map highlights exactly what the panel is previewing.
+4. **This applies to every map** — world, historical, subdivision — and to any future one: derive
+   the highlight from the single value the panel shows, never from a second source of truth.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): select a polity
+   from the flag grid, then hover a different one on the map, and confirm the map still highlights
+   the selected one and the panel still describes it.
+
+### Enforcement
+
+No automated check — it needs a rendered map and a synthesised hover. The guard is the structure
+(one prop) plus rule 5. When reviewing any change to `HistoricalMap`, `WorldProgressMap`,
+`SubdivisionMap` or the props `LearnPage` passes them, confirm no second highlight input has been
+reintroduced and no consumer resolves `hovered`/`selected` in the opposite order to the panel.
 
 ## Every rendered subdivision must be selectable — geo and meta must not drift — hard rule, do not override without approval
 

@@ -58,10 +58,23 @@ type FeatureCollection = {
 export type HistoricalMapProps = {
   /** URL of the era's GeoJSON file (relative to BASE_URL). */
   geoJsonUrl: string;
-  /** Currently selected polity name (null = nothing selected). */
+  /**
+   * The polity the map highlights — and the ONLY highlight input this component
+   * takes. The parent must pass exactly what its detail panel is showing, so the
+   * map and the panel can never name two different polities (see the hard rule
+   * "the map's highlight and the panel must always be the same entity").
+   *
+   * There is deliberately no `hoveredName` prop: it used to exist and took
+   * PRECEDENCE over the selection (`hoveredName ?? selectedName`), while the
+   * panel resolved the opposite way (`selected ?? hovered`). Hovering one polity
+   * while another was selected therefore painted the map teal on the hovered one
+   * while the panel and the flag grid described the selected one — and on touch,
+   * where `mouseleave` never fires, that mismatch stuck on screen (reported
+   * 2026-08 with the Philippines highlighted under an "Annam" panel). Hover
+   * feedback is the CSS brightness on `.world-map__country--selectable:hover`,
+   * exactly as on the modern WorldProgressMap.
+   */
   selectedName: string | null;
-  /** Optional hovered polity name for transient highlight. */
-  hoveredName?: string | null;
   /** Click handler — fires with the polity's NAME (or null if unnamed). */
   onSelect?: (name: string | null) => void;
   /** Hover handler — fires with name on enter, null on leave. */
@@ -135,6 +148,148 @@ const LAND_URL = `${import.meta.env.BASE_URL}countries-50m.json`;
 type LandGeometry = { type: "MultiPolygon"; coordinates: number[][][][] };
 
 /**
+ * How far the era polygons and the basemap coastline may disagree before the
+ * uncovered strip counts as genuinely unmapped land — in projected map units
+ * (the map is 960 units wide for 360°, so 1 unit ≈ 0.4° ≈ 40 km at the equator).
+ *
+ * The two datasets draw the same coast at different resolutions: the era files
+ * carry a polity's outline in tens of points where Natural Earth 50m uses
+ * hundreds (1945's Philippines: 279 points against 1,238). Wherever the era
+ * polygon cuts a corner, the coastline layer underneath shows through as a
+ * hatched sliver — and because that hatch is the "no polity here" fill, a
+ * polity ends up wearing a ragged shadow of unclaimed land along its own coast.
+ * That shipped and was reported (2026-08) as "wrong, unselectable territories
+ * that look like a shadow" on the 1945 Philippines. Measured across every era at
+ * this projection's own scale, the land no feature covers is ~1.7% of all land
+ * pixels and about 75% of it sits within ONE unit of a polity, 84% within two —
+ * mismatch, not missing data — while the genuinely unmapped land (islands the era
+ * file simply does not carry) sits far outside this tolerance: in 1945, ~170
+ * pixels lie more than 8 units from anything, and those keep their hatch.
+ *
+ * So land within this radius of a polity is painted in that polity's colour
+ * instead of hatched. The value is in USER space, not screen pixels, so the
+ * reconciliation holds at every zoom level — the mismatch it hides is a fixed
+ * distance on the ground, and a screen-space fix would unravel the moment the
+ * user zoomed in (which is exactly how the bug was reported).
+ *
+ * This is a RENDERING reconciliation and touches no data: the band is clipped to
+ * the basemap's own land, so it can never paint sea, and no era coordinate moves.
+ */
+const COASTLINE_MATCH_TOLERANCE = 1.5;
+
+/**
+ * Grows an already-PROJECTED d3-geo path outwards by `r` map units, by pushing
+ * every vertex along the outward normal of its two adjacent edges. Winding does
+ * the right thing on its own: an exterior ring grows, and a hole — wound the
+ * other way — shrinks, which is what dilating a shape means.
+ *
+ * This runs once per era, on the projected path string, purely to draw the
+ * coastline-reconciliation band. It is NOT a geometry edit: nothing it produces
+ * is ever stored, hit-tested, exported, or drawn as a border — the era's own
+ * polygons are still rendered, selected and measured from their untouched
+ * coordinates, and the result here is clipped to the basemap's land.
+ *
+ * The two obvious alternatives were measured on the heaviest era (500 BC) and
+ * both rejected, so don't reach for them again:
+ *   - a fat `stroke` on the coverage path: 1.88 s of main-thread time over five
+ *     zoom steps against 0.37 s without the band (5×);
+ *   - nine offset copies stamped with `<use>`: 4.9 s to drag-pan a route that
+ *     costs 0.67 s without the band (7×), `shape-rendering` made no difference.
+ * Pre-offsetting once leaves a SINGLE ordinary fill per frame, which measured
+ * free — filling this path costs the same as not filling it.
+ *
+ * d3-geo emits polygons as `M x,y L x,y … Z` and nothing else; if any other
+ * command shows up the input is returned unchanged, so a future d3 that emits
+ * curves degrades to "no band" rather than to a mangled shape.
+ */
+export function growProjectedPath(d: string, r: number): string {
+  if (/[^MLZ\s\-.,0-9e]/i.test(d)) return d;
+  // One feature's rings. The largest of them is its outline; whichever way that
+  // one happens to be wound decides the sign for ALL of them, which is what makes
+  // holes shrink while the outline grows — without assuming the source files
+  // follow any particular winding convention.
+  const rings: Array<Array<[number, number]>> = [];
+  for (const sub of d.split("Z")) {
+    if (!sub.trim()) continue;
+    const pts: Array<[number, number]> = [];
+    for (const m of sub.matchAll(/[ML]\s*(-?[\d.e+-]+),(-?[\d.e+-]+)/gi)) {
+      pts.push([Number(m[1]), Number(m[2])]);
+    }
+    // d3 repeats the first point as the last one on a closed ring; drop it so the
+    // wrap-around neighbour maths stays right.
+    if (
+      pts.length > 1 &&
+      pts[0][0] === pts[pts.length - 1][0] &&
+      pts[0][1] === pts[pts.length - 1][1]
+    ) {
+      pts.pop();
+    }
+    rings.push(pts);
+  }
+  const area = (pts: Array<[number, number]>) => {
+    let a = 0;
+    for (let i = 0, n = pts.length; i < n; i++) {
+      const [x1, y1] = pts[i];
+      const [x2, y2] = pts[(i + 1) % n];
+      a += x1 * y2 - x2 * y1;
+    }
+    return a / 2;
+  };
+  let biggest = 0;
+  for (const pts of rings) {
+    if (pts.length >= 3) {
+      const a = area(pts);
+      if (Math.abs(a) > Math.abs(biggest)) biggest = a;
+    }
+  }
+  if (biggest === 0) return d;
+  // For a ring of positive signed area, (dy, -dx) points out of it; the sign here
+  // carries that through to every ring of this feature.
+  const sign = biggest > 0 ? r : -r;
+  // Detail finer than half the tolerance cannot change what this band covers, so
+  // it is dropped as the band is built — the band is a filler drawn UNDER the
+  // polities and clipped to the coast, and on the densest era this keeps its path
+  // (as complex as every polity combined) from doubling the cost of a pan. It
+  // applies to this decorative layer alone: the polity paths that are drawn,
+  // hit-tested and highlighted still come from the untouched projected geometry.
+  const minStep = Math.abs(r) / 2;
+  let out = "";
+  for (const pts of rings) {
+    const n = pts.length;
+    if (n < 3) continue;
+    let lastX = NaN;
+    let lastY = NaN;
+    let emitted = 0;
+    for (let i = 0; i < n; i++) {
+      const [px, py] = pts[(i - 1 + n) % n];
+      const [x, y] = pts[i];
+      const [nx, ny] = pts[(i + 1) % n];
+      // Normals of the two adjacent edges, summed and normalised. Deliberately no
+      // miter compensation: a sharp corner ends up a touch under-grown instead of
+      // throwing out a long spike.
+      let ax = y - py, ay = px - x;
+      let bx = ny - y, by = x - nx;
+      const al = Math.hypot(ax, ay) || 1;
+      const bl = Math.hypot(bx, by) || 1;
+      ax /= al; ay /= al; bx /= bl; by /= bl;
+      let vx = ax + bx, vy = ay + by;
+      const vl = Math.hypot(vx, vy);
+      if (vl < 1e-9) { vx = ax; vy = ay; } else { vx /= vl; vy /= vl; }
+      const gx = x + vx * sign;
+      const gy = y + vy * sign;
+      const isLast = i === n - 1;
+      if (emitted > 0 && !isLast && Math.hypot(gx - lastX, gy - lastY) < minStep) continue;
+      out += `${emitted === 0 ? "M" : "L"}${gx.toFixed(2)},${gy.toFixed(2)}`;
+      lastX = gx;
+      lastY = gy;
+      emitted++;
+    }
+    out += "Z";
+  }
+  return out;
+}
+
+/**
  * Names that must never become a selectable polity even when a feature carries them.
  * "Antarctica" is excluded by the repo's Antarctic hard rule — the continent stays
  * visible as neutral unclaimed landmass and never becomes a territory in the data model.
@@ -194,7 +349,6 @@ const DARK_PALETTE: Palette = {
 export const HistoricalMap = memo(function HistoricalMap({
   geoJsonUrl,
   selectedName,
-  hoveredName = null,
   onSelect,
   onHover,
   zoom: externalZoom,
@@ -326,6 +480,12 @@ export const HistoricalMap = memo(function HistoricalMap({
     // (flagOverlayAspectRatio) so the tile matches the flag's proportions and
     // `preserveAspectRatio="…meet"` fills it with no letterbox gap — letting the
     // tiling cover the whole landmass, exactly like WorldProgressMap.
+    // `path` is grown by the coastline tolerance for the same reason the
+    // reconciliation band is (see COASTLINE_MATCH_TOLERANCE): with flags on, the
+    // flag has to reach the coast too, or every island wears a rim of bare land
+    // colour where the era outline falls short. The pattern stays anchored to the
+    // ring's own bbox and tiles, so the extra width is filled seamlessly, and the
+    // flag layer is clipped to the basemap's land so it cannot spill into the sea.
     type FlagPoly = { path: string; x: number; y: number; h: number };
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
@@ -349,13 +509,27 @@ export const HistoricalMap = memo(function HistoricalMap({
           if (!pd) continue;
           const b = pathFn.bounds(pf as never);
           if (b && isFinite(b[0][0]) && isFinite(b[1][0]) && b[1][0] > b[0][0] && b[1][1] > b[0][1]) {
-            flagPolys.push({ path: pd, x: b[0][0], y: b[0][1], h: b[1][1] - b[0][1] });
+            flagPolys.push({
+              path: growProjectedPath(pd, COASTLINE_MATCH_TOLERANCE),
+              x: b[0][0],
+              y: b[0][1],
+              h: b[1][1] - b[0][1],
+            });
           }
         }
       }
       return {
         idx,
         d,
+        // The same outline grown by COASTLINE_MATCH_TOLERANCE, for the
+        // coastline-reconciliation band — the per-polygon grown rings above,
+        // reused. Growing each polygon separately matters: the direction to grow
+        // in is read from the biggest ring, and these files do not guarantee that
+        // every polygon of one feature is wound the same way, so growing a whole
+        // MultiPolygon in one go would quietly SHRINK the odd island out of step
+        // with the flag layer. Computed here with the rest of the per-era
+        // projection work, so there is no per-frame cost.
+        grown: flagPolys.map((p) => p.path).join("") || null,
         name,
         flagPolys,
         area: pathFn.area(f as never),
@@ -397,11 +571,37 @@ export const HistoricalMap = memo(function HistoricalMap({
     return known > 0 && low / known > 0.5;
   }, [data]);
 
-  // Compute the "highlight" set: every feature whose NAME matches the
-  // hovered or selected name gets the highlight colour. A single empire
-  // often spans many separate polygons (overseas territories, archipelagos)
-  // and they all light up together.
-  const highlightName = hoveredName ?? selectedName;
+  // Compute the "highlight" set: every feature whose NAME matches the selected
+  // name gets the highlight colour. A single empire often spans many separate
+  // polygons (overseas territories, archipelagos) and they all light up
+  // together. This is the ONE highlight input (see the prop's doc comment) —
+  // never re-introduce a hover name that can outrank it.
+  const highlightName = selectedName;
+
+  // Is this feature part of the highlighted polity? Grouped through `groupKeyOf`,
+  // so a polity spread across several features (a personal union) lights up as
+  // one — and so every layer that reacts to the selection (fill, reconciliation
+  // band, flag opacity) agrees about what is selected.
+  const isHighlighted = (name: string | null): boolean =>
+    name != null &&
+    highlightName != null &&
+    (groupKeyOf ? groupKeyOf(name) === groupKeyOf(highlightName) : name === highlightName);
+
+  // The band that reconciles the era's coastline with the basemap's (see
+  // COASTLINE_MATCH_TOLERANCE). Kept separate for the highlighted polity so a
+  // selected island is padded in its own colour rather than ringed in the
+  // ordinary land colour.
+  const { coveragePath, highlightCoveragePath } = useMemo(() => {
+    let cover = "";
+    let hi = "";
+    for (const f of renderedFeatures) {
+      if (!f.grown || !f.name) continue;
+      if (isHighlighted(f.name)) hi += f.grown;
+      else cover += f.grown;
+    }
+    return { coveragePath: cover || null, highlightCoveragePath: hi || null };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [renderedFeatures, highlightName, groupKeyOf]);
 
   return (
     <section className="map-section" aria-labelledby="map-heading">
@@ -473,6 +673,13 @@ export const HistoricalMap = memo(function HistoricalMap({
                 <rect width={6} height={6} fill={palette.unknown} />
                 <line x1={0} y1={0} x2={0} y2={6} stroke={palette.stroke} strokeWidth={0.6} strokeOpacity={0.25} />
               </pattern>
+              {/* Confines the coastline-reconciliation band to real land, so
+                  padding a polity out to the coast can never paint the sea. */}
+              {landPath && (
+                <clipPath id="hm-land-clip">
+                  <path d={landPath} />
+                </clipPath>
+              )}
             </defs>
             {flagOverlay && (
               <defs>
@@ -541,20 +748,41 @@ export const HistoricalMap = memo(function HistoricalMap({
                 pointerEvents="none"
               />
             )}
+            {/* Coastline reconciliation (see COASTLINE_MATCH_TOLERANCE): the era's
+                own polygons, fattened by the tolerance and clipped to the basemap's
+                land, painted in the polity fill UNDER the polities themselves. It
+                shows only where nothing else covers it — i.e. exactly on the
+                hatched slivers the two datasets' coastlines disagree about — so a
+                polity no longer wears a shadow of "unmapped land" along its coast,
+                while land that is genuinely unclaimed stays hatched. Decorative and
+                non-interactive, like the coastline it sits on. */}
+            {landPath && coveragePath && (
+              <path
+                d={coveragePath}
+                fill={palette.land}
+                clipPath="url(#hm-land-clip)"
+                pointerEvents="none"
+              />
+            )}
+            {landPath && highlightCoveragePath && (
+              <path
+                d={highlightCoveragePath}
+                fill={palette.selected}
+                clipPath="url(#hm-land-clip)"
+                pointerEvents="none"
+              />
+            )}
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
-              // Compare GROUP keys, not raw names: a personal union spanning several
+              // Grouped, not a raw name match: a personal union spanning several
               // features (1600's Iberian Union) must highlight all of them at once.
-              const isHighlighted =
-                f.name != null &&
-                highlightName != null &&
-                (groupKeyOf ? groupKeyOf(f.name) === groupKeyOf(highlightName) : f.name === highlightName);
-              const fill = isHighlighted
+              const highlighted = isHighlighted(f.name);
+              const fill = highlighted
                 ? palette.selected
                 : f.name
                 ? palette.land
                 : "url(#hm-nodata)";
-              const stroke = isHighlighted
+              const stroke = highlighted
                 ? palette.selectedStroke
                 : palette.stroke;
               return (
@@ -563,8 +791,8 @@ export const HistoricalMap = memo(function HistoricalMap({
                   d={f.d}
                   fill={fill}
                   stroke={stroke}
-                  strokeWidth={isHighlighted ? 1.4 : 0.4}
-                  strokeOpacity={isHighlighted ? 1 : 0.5}
+                  strokeWidth={highlighted ? 1.4 : 0.4}
+                  strokeOpacity={highlighted ? 1 : 0.5}
                   // A derived boundary is drawn dashed so the user can see which lines
                   // are sourced for the period and which are a modern administrative
                   // stand-in (see scripts/tag-derived-boundaries.mjs).
@@ -588,23 +816,30 @@ export const HistoricalMap = memo(function HistoricalMap({
                 </path>
               );
             })}
-            {flagOverlay && renderedFeatures.map((f) => {
-              if (!f.name || !flagOverlay.has(f.name)) return null;
-              const isHighlighted = f.name === highlightName;
-              // Paint each ring with its flag <pattern>; the ring path itself is
-              // the clip, so the tiled flag covers the landmass exactly. When the
-              // polity is highlighted we drop to 0.35 so the selection colour
-              // underneath shows through (same as WorldProgressMap).
-              return f.flagPolys.map((poly, i) => (
-                <path
-                  key={`hm-fimg-${f.idx}-${i}`}
-                  d={poly.path}
-                  fill={`url(#hm-fp-${f.idx}-${i})`}
-                  opacity={isHighlighted ? 0.35 : 1}
-                  style={{ pointerEvents: "none" }}
-                />
-              ));
-            })}
+            {flagOverlay && (
+              // Clipped to the basemap's land: each ring is grown by the coastline
+              // tolerance so a flag reaches the real coast instead of stopping at
+              // the era outline, and the clip is what keeps that growth off the sea.
+              <g clipPath={landPath ? "url(#hm-land-clip)" : undefined}>
+                {renderedFeatures.map((f) => {
+                  if (!f.name || !flagOverlay.has(f.name)) return null;
+                  const highlighted = isHighlighted(f.name);
+                  // Paint each ring with its flag <pattern>; the ring path itself is
+                  // the clip, so the tiled flag covers the landmass exactly. When the
+                  // polity is highlighted we drop to 0.35 so the selection colour
+                  // underneath shows through (same as WorldProgressMap).
+                  return f.flagPolys.map((poly, i) => (
+                    <path
+                      key={`hm-fimg-${f.idx}-${i}`}
+                      d={poly.path}
+                      fill={`url(#hm-fp-${f.idx}-${i})`}
+                      opacity={highlighted ? 0.35 : 1}
+                      style={{ pointerEvents: "none" }}
+                    />
+                  ));
+                })}
+              </g>
+            )}
             </g>
             </g>
           </svg>
