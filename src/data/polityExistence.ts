@@ -118,6 +118,11 @@ export const ERA_EXTENT_CAVEATS: ReadonlyMap<string, ExtentCaveat> = new Map([
     actual: "From 1954 to 1976 Vietnam was divided into North Vietnam and South Vietnam at the 17th parallel.",
     source: "https://en.wikipedia.org/wiki/1954_Geneva_Conference",
   }],
+  ["ad1815|Austrian Empire", {
+    issue: "This map draws the Austrian Empire still holding the Austrian Netherlands (modern Belgium), which it had lost twenty years earlier.",
+    actual: "Austria ceded the Austrian Netherlands to France in 1795; the Congress of Vienna assigned the territory to the United Kingdom of the Netherlands in 1815.",
+    source: "https://en.wikipedia.org/wiki/Austrian_Netherlands",
+  }],
   ["ad1920|USSR", {
     issue: "The Soviet Union had not been founded in 1920, and the borders shown are later ones.",
     actual: "In 1920 the territory was the Russian SFSR and allied Soviet republics; the USSR was founded on 30 December 1922.",

@@ -33,6 +33,7 @@ type HistoricalFeature = {
   type: "Feature";
   properties: {
     NAME?: string | null;
+    ABBREVN?: string | null;
     SUBJECTO?: string | null;
     PARTOF?: string | null;
     BORDERPRECISION?: number | null;
@@ -108,6 +109,14 @@ export type HistoricalMapProps = {
    * territory. Polities absent from the map are shown without a flag overlay.
    */
   flagOverlay?: ReadonlyMap<string, string> | null;
+  /**
+   * Maps a polity's raw dataset NAME to the key it should be GROUPED and highlighted by.
+   * Two features that return the same key are one polity for selection purposes and
+   * highlight together — which is how a personal union spanning several polygons (1600's
+   * Iberian Union over Spain and Portugal) lights up its whole territory without any
+   * change to the geometry. Defaults to identity.
+   */
+  groupKeyOf?: (name: string) => string;
 };
 
 const WIDTH = 960;
@@ -280,6 +289,36 @@ export function growProjectedPath(d: string, r: number): string {
   return out;
 }
 
+/**
+ * Names that must never become a selectable polity even when a feature carries them.
+ * "Antarctica" is excluded by the repo's Antarctic hard rule — the continent stays
+ * visible as neutral unclaimed landmass and never becomes a territory in the data model.
+ * "1" is upstream junk in the 100 AD file.
+ */
+const NOT_A_POLITY = new Set(["Antarctica", "1"]);
+
+/**
+ * The polity name for a feature.
+ *
+ * Some upstream features have a NAME of pure whitespace while carrying the real name in
+ * their own ABBREVN / SUBJECTO / PARTOF — the 1815 Netherlands is `NAME: "       "` with
+ * `ABBREVN: "Netherlands"` and `SUBJECTO: "United Kingdom of Netherlands"`. Read literally
+ * that polity renders as anonymous "no data" hatch and cannot be selected, even though the
+ * dataset knows perfectly well what it is. Falling back to the feature's OWN fields
+ * recovers it without inventing anything.
+ *
+ * A feature with no name anywhere is the genuine unmapped-land blob and stays unnamed.
+ */
+function polityFeatureName(f: HistoricalFeature): string | null {
+  const direct = (f.properties?.NAME ?? "").trim();
+  if (direct) return direct;
+  for (const alt of [f.properties?.SUBJECTO, f.properties?.PARTOF, f.properties?.ABBREVN]) {
+    const v = (alt ?? "").trim();
+    if (v && !NOT_A_POLITY.has(v)) return v;
+  }
+  return null;
+}
+
 type Palette = {
   ocean: string;
   land: string;
@@ -318,6 +357,7 @@ export const HistoricalMap = memo(function HistoricalMap({
   southUp = false,
   extraControls,
   flagOverlay = null,
+  groupKeyOf,
 }: HistoricalMapProps) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
@@ -409,7 +449,7 @@ export const HistoricalMap = memo(function HistoricalMap({
     const rulers = new Map<string, string>();
     const derived = new Set<string>();
     for (const ft of data.features) {
-      const n = ft.properties?.NAME;
+      const n = polityFeatureName(ft);
       if (!n) continue;
       names.add(n);
       const ruler = ft.properties?.SUBJECTO;
@@ -449,7 +489,7 @@ export const HistoricalMap = memo(function HistoricalMap({
     type FlagPoly = { path: string; x: number; y: number; h: number };
     const features = data.features.map((f, idx) => {
       const d = pathFn(f as never);
-      const name = f.properties?.NAME ?? null;
+      const name = polityFeatureName(f);
       // Sourced gap-fill adopted verbatim from upstream (scripts/build-era-gap-fill.mjs).
       const gapFill = f.properties?.GAPFILL === 1;
       // Decompose geometry into individual polygons so each non-contiguous
@@ -538,6 +578,15 @@ export const HistoricalMap = memo(function HistoricalMap({
   // never re-introduce a hover name that can outrank it.
   const highlightName = selectedName;
 
+  // Is this feature part of the highlighted polity? Grouped through `groupKeyOf`,
+  // so a polity spread across several features (a personal union) lights up as
+  // one — and so every layer that reacts to the selection (fill, reconciliation
+  // band, flag opacity) agrees about what is selected.
+  const isHighlighted = (name: string | null): boolean =>
+    name != null &&
+    highlightName != null &&
+    (groupKeyOf ? groupKeyOf(name) === groupKeyOf(highlightName) : name === highlightName);
+
   // The band that reconciles the era's coastline with the basemap's (see
   // COASTLINE_MATCH_TOLERANCE). Kept separate for the highlighted polity so a
   // selected island is padded in its own colour rather than ringed in the
@@ -547,11 +596,12 @@ export const HistoricalMap = memo(function HistoricalMap({
     let hi = "";
     for (const f of renderedFeatures) {
       if (!f.grown || !f.name) continue;
-      if (f.name === highlightName) hi += f.grown;
+      if (isHighlighted(f.name)) hi += f.grown;
       else cover += f.grown;
     }
     return { coveragePath: cover || null, highlightCoveragePath: hi || null };
-  }, [renderedFeatures, highlightName]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [renderedFeatures, highlightName, groupKeyOf]);
 
   return (
     <section className="map-section" aria-labelledby="map-heading">
@@ -724,14 +774,15 @@ export const HistoricalMap = memo(function HistoricalMap({
             )}
             {renderedFeatures.map((f) => {
               if (!f.d) return null;
-              const isHighlighted =
-                f.name != null && f.name === highlightName;
-              const fill = isHighlighted
+              // Grouped, not a raw name match: a personal union spanning several
+              // features (1600's Iberian Union) must highlight all of them at once.
+              const highlighted = isHighlighted(f.name);
+              const fill = highlighted
                 ? palette.selected
                 : f.name
                 ? palette.land
                 : "url(#hm-nodata)";
-              const stroke = isHighlighted
+              const stroke = highlighted
                 ? palette.selectedStroke
                 : palette.stroke;
               return (
@@ -740,8 +791,8 @@ export const HistoricalMap = memo(function HistoricalMap({
                   d={f.d}
                   fill={fill}
                   stroke={stroke}
-                  strokeWidth={isHighlighted ? 1.4 : 0.4}
-                  strokeOpacity={isHighlighted ? 1 : 0.5}
+                  strokeWidth={highlighted ? 1.4 : 0.4}
+                  strokeOpacity={highlighted ? 1 : 0.5}
                   // A derived boundary is drawn dashed so the user can see which lines
                   // are sourced for the period and which are a modern administrative
                   // stand-in (see scripts/tag-derived-boundaries.mjs).
@@ -772,7 +823,7 @@ export const HistoricalMap = memo(function HistoricalMap({
               <g clipPath={landPath ? "url(#hm-land-clip)" : undefined}>
                 {renderedFeatures.map((f) => {
                   if (!f.name || !flagOverlay.has(f.name)) return null;
-                  const isHighlighted = f.name === highlightName;
+                  const highlighted = isHighlighted(f.name);
                   // Paint each ring with its flag <pattern>; the ring path itself is
                   // the clip, so the tiled flag covers the landmass exactly. When the
                   // polity is highlighted we drop to 0.35 so the selection colour
@@ -782,7 +833,7 @@ export const HistoricalMap = memo(function HistoricalMap({
                       key={`hm-fimg-${f.idx}-${i}`}
                       d={poly.path}
                       fill={`url(#hm-fp-${f.idx}-${i})`}
-                      opacity={isHighlighted ? 0.35 : 1}
+                      opacity={highlighted ? 0.35 : 1}
                       style={{ pointerEvents: "none" }}
                     />
                   ));
