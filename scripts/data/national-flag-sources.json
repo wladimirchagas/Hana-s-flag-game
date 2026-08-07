@@ -1,0 +1,1823 @@
+{
+  "_comment": [
+    "Provenance + curation for the Learn-mode \"National flags\" tab (public/national-flags/).",
+    "",
+    "Every flag a country's tab shows is listed here, with the exact Wikimedia Commons file it",
+    "was fetched from, a sha256 of the bundled bytes, the fetch date, and a SOURCED description.",
+    "Nothing here is written from memory: dates, names and symbolism all come from the cited",
+    "source, exactly like scripts/data/era-flag-sources.json and capital-flag-sources.json.",
+    "",
+    "  node scripts/download-national-flags.mjs [--force|--check]   fetch / re-verify the images",
+    "  node scripts/build-national-flags.mjs                        regenerate src/data/nationalFlags.ts",
+    "",
+    "ENTRY FIELDS",
+    "  id        stable slug, unique across the whole file (used as the React key and the",
+    "            meaning-lookup key).",
+    "  category  historical | official | military | maritime | standard | civilstate | indigenous",
+    "  name      the flag's own name, as the cited source gives it.",
+    "  from/to   years the design was in official use (to: 9999 = still current). Historical",
+    "            entries are ordered newest-first by the generator.",
+    "  reuse     path (relative to BASE_URL) of a file ALREADY bundled for another feature —",
+    "            the current national flag (flags/xx.svg) or an era-map flag",
+    "            (historical-flags/*). This is the link to the historical eras: the same image",
+    "            and the same window feed both views, and check-national-flags.mjs fails the",
+    "            build if a reused era flag's window here disagrees with the window in",
+    "            src/data/historicalFlagValidity.ts.",
+    "  commons   Commons filename to fetch (entries WITHOUT `reuse`), bundled at",
+    "            public/national-flags/<file>.",
+    "  design    what the image is — shown as the card's sub-label.",
+    "  meaning   sourced \"What this flag means\" explainer { description, myths?, sources[] }.",
+    "  source    authoritative URL for the name/dates.",
+    "",
+    "CURATION RULES",
+    "  1. `historical` covers the flags of THIS state (and the predecessor states centred on",
+    "     the same territory, e.g. the Empire of Brazil, the Ottoman Empire). A colonial",
+    "     ruler's own flag is NOT a national flag of the colony — the era maps already show",
+    "     that, captioned as the ruler's flag, and it must never be listed here as if the",
+    "     territory's own.",
+    "  2. `military` is service-level flags (army, navy, air force, marine corps) only —",
+    "     never rank, command or appointment flags, of which there are hundreds.",
+    "  3. Never invent a flag, a date, or a meaning. A flag with no sourced symbolism ships",
+    "     with no `meaning` rather than a guessed one."
+  ],
+  "countries": {
+    "BR": {
+      "flags": [
+        {
+          "id": "br-1992",
+          "category": "historical",
+          "name": "Flag of Brazil",
+          "from": 1992,
+          "to": 9999,
+          "reuse": "flags/br.svg",
+          "design": "27 stars — Tocantins, Amapá and Roraima were added when the states they represent were created.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+        },
+        {
+          "id": "br-1968",
+          "category": "historical",
+          "name": "Flag of Brazil (1968–1992)",
+          "from": 1968,
+          "to": 1992,
+          "commons": "Flag of Brazil (1968–1992).svg",
+          "file": "br/brazil-1968.svg",
+          "design": "23 stars — the celestial sphere as redrawn when Acre's star and Guanabara's were both carried.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "7af6098bc795d5ec5d0cd9e509be38cc39c7be210eefdb60bd71d1ed56ede5e1",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-1960",
+          "category": "historical",
+          "name": "Flag of Brazil (1960–1968)",
+          "from": 1960,
+          "to": 1968,
+          "reuse": "historical-flags/brazil-1960.svg",
+          "design": "22 stars — Guanabara's admission as a state added the 22nd.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+        },
+        {
+          "id": "br-1889-republic",
+          "category": "historical",
+          "name": "Flag of Brazil (1889–1960)",
+          "from": 1889,
+          "to": 1960,
+          "reuse": "historical-flags/brazil-1889.svg",
+          "design": "The first republican flag, with 21 stars, adopted 19 November 1889.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+        },
+        {
+          "id": "br-1889-provisional",
+          "category": "historical",
+          "name": "Provisional flag of the Republic (15–19 November 1889)",
+          "from": 1889,
+          "to": 1889,
+          "commons": "Flag of Brazil (November 1889).svg",
+          "file": "br/brazil-1889-provisional.svg",
+          "design": "Thirteen green and yellow stripes with 21 white stars in a blue canton — flown for four days after the proclamation of the republic.",
+          "meaning": {
+            "description": "Raised on 15 November 1889, the day the republic was proclaimed, this flag closely copied the flag of the United States — thirteen stripes and a starred canton — as a deliberate statement that Brazil was now a federal republic on the American model. Deodoro da Fonseca rejected it four days later precisely because it imitated another nation's flag, and the green-and-yellow field of the imperial flag was kept instead, so that the change of regime did not read as a change of country.",
+            "sources": [
+              {
+                "title": "Flag of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "8e7e6c8a667cf5648044711d916925a42c6f0ee156d4a7da9054991cc7aebadc",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-empire",
+          "category": "historical",
+          "name": "Flag of the Empire of Brazil",
+          "from": 1822,
+          "to": 1889,
+          "reuse": "historical-flags/empire-of-brazil.png",
+          "design": "The imperial arms on a yellow rhombus on a green field; the arms were redrawn in 1853 as provinces were added.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+        },
+        {
+          "id": "br-1822-kingdom",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Brazil (1822)",
+          "from": 1822,
+          "to": 1822,
+          "commons": "Flag of the Kingdom of Brazil (1822).svg",
+          "file": "br/brazil-1822-kingdom.svg",
+          "design": "The Prince Royal's personal standard with a royal, rather than imperial, crown — flown in the months between independence and the empire.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "954525424407c42e0f5996dc57f0cadd0f2c572748c9f50f08f003c4b090ccb9",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-army",
+          "category": "military",
+          "name": "Flag of the Brazilian Army",
+          "from": 1987,
+          "to": 9999,
+          "commons": "Flag of the Brazilian Army.svg",
+          "file": "br/brazil-army.svg",
+          "design": "The coat of arms of the Brazilian Army on a white field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "81f9ac5154999f250978d9751b2ff51c52b62b206a1373ead35b563a3e609239",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-navy",
+          "category": "military",
+          "name": "Flag of the Brazilian Navy",
+          "from": 1982,
+          "to": 9999,
+          "commons": "Flag of the Brazilian Navy.svg",
+          "file": "br/brazil-navy.svg",
+          "design": "The coat of arms of the Brazilian Navy on a white field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "e2f228416963d5ef5cb988136dd07896025a47987f62f0719f6f79595540a238",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-air-force",
+          "category": "military",
+          "name": "Flag of the Aeronautics Command (Brazilian Air Force)",
+          "from": 1999,
+          "to": 9999,
+          "commons": "Flag of the Brazilian Air Force Command.svg",
+          "file": "br/brazil-air-force.svg",
+          "design": "The arms of the Aeronautics Command on a sky-blue field crossed by a diagonal band.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "25fc4e3f143d80bba1afbcf3eea24430cd97a5d8ec6a8568c15b12c54caa1306",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-marines",
+          "category": "military",
+          "name": "Flag of the Brazilian Marine Corps",
+          "from": 1931,
+          "to": 9999,
+          "commons": "Flag of the Brazilian Marine Corps.svg",
+          "file": "br/brazil-marines.svg",
+          "design": "The arms of the Corpo de Fuzileiros Navais — the navy's marine corps.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "a3ef4970441ad57ab2ffcfa3fcbaf56da5d976c1ef064919ec2867ff779754ee",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-jack",
+          "category": "maritime",
+          "name": "Naval jack (Bandeira do Cruzeiro)",
+          "from": 1847,
+          "to": 9999,
+          "commons": "Bandeira do Cruzeiro.svg",
+          "file": "br/brazil-naval-jack.svg",
+          "design": "Dark blue with 21 white stars in a cross — 13 across and 9 down.",
+          "meaning": {
+            "description": "The jack flown at the bow of Brazilian warships shows the Southern Cross constellation, from which the flag takes its name, and 21 stars for the provinces of the empire at the time it was adopted in 1847. It is the oldest Brazilian flag still in use, having survived both the fall of the empire and every redrawing of the national flag's star field.",
+            "sources": [
+              {
+                "title": "List of Brazilian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "3077f8a181ad4ead1a1f7dd0c205411a92536340b6bdcc113236e2c764598551",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-president",
+          "category": "standard",
+          "name": "Presidential Standard of Brazil",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Flag of the President of Brazil.svg",
+          "file": "br/brazil-president.svg",
+          "design": "A dark green field with the national coat of arms in the centre.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "ddfa7920165a59c22a2c80a2cfe5a8de6e173b9b183007e3cac51c090e02df20",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-vice-president",
+          "category": "standard",
+          "name": "Vice-Presidential Standard of Brazil",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Flag of the Vice President of Brazil.svg",
+          "file": "br/brazil-vice-president.svg",
+          "design": "A yellow field with 21 blue stars in a cross and the coat of arms at the centre.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "c4274984c7d4510ec010fc6d46f5fe99469436cb6e2dc721099ae810902e020c",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "AU": {
+      "flags": [
+        {
+          "id": "au-1908",
+          "category": "historical",
+          "name": "Australian National Flag",
+          "from": 1908,
+          "to": 9999,
+          "reuse": "flags/au.svg",
+          "design": "A Blue Ensign with the Union Jack in the canton, the seven-pointed Commonwealth Star beneath it and the Southern Cross in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
+        },
+        {
+          "id": "au-1903",
+          "category": "historical",
+          "name": "Flag of Australia (1903–1908)",
+          "from": 1903,
+          "to": 1908,
+          "commons": "Flag of Australia (1903–1908).svg",
+          "file": "au/australia-1903.svg",
+          "design": "The design as approved by Edward VII, with every star of the Southern Cross given seven points.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "9c0331bb58b398a14eeeaf7d53db6fac87b54c80cbd80027756b1a44e7464f4b",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-1901",
+          "category": "historical",
+          "name": "Flag of Australia (1901–1903)",
+          "from": 1901,
+          "to": 1903,
+          "commons": "Flag of Australia (1901–1903).svg",
+          "file": "au/australia-1901.svg",
+          "design": "The winning entry in the 1901 Federal Flag design competition: a six-pointed Commonwealth Star, and Southern Cross stars of differing point counts.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "b999573ceced52d6fc3c1f4dfb3f7295e83fb85ba9b9f7ef183590d455e9e242",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-official-national",
+          "category": "official",
+          "name": "Australian National Flag",
+          "from": 1908,
+          "to": 9999,
+          "reuse": "flags/au.svg",
+          "design": "Proclaimed under the Flags Act 1953 as the flag of the Commonwealth of Australia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
+        },
+        {
+          "id": "au-aboriginal",
+          "category": "official",
+          "name": "Australian Aboriginal Flag",
+          "from": 1971,
+          "to": 9999,
+          "commons": "Australian Aboriginal Flag.svg",
+          "file": "au/australia-aboriginal.svg",
+          "design": "Black over red with a yellow disc at the centre; proclaimed a Flag of Australia in 1995.",
+          "meaning": {
+            "description": "Harold Thomas designed the flag in 1971 for the land-rights movement and gave each element a meaning: the black upper half represents the Aboriginal people of Australia, the red lower half the red earth and the ochre used in ceremony, and the yellow disc the sun, the giver of life. It was proclaimed a Flag of Australia in July 1995, and in January 2022 the Commonwealth acquired the copyright so that it can be reproduced freely.",
+            "sources": [
+              {
+                "title": "Australian Aboriginal Flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Australian_Aboriginal_Flag"
+              },
+              {
+                "title": "Australian flags — Department of the Prime Minister and Cabinet",
+                "url": "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "9b02931384ae0d0b7de9263713a443c18dee07a80350c4128a3b205f9d2cf272",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-adf",
+          "category": "military",
+          "name": "Australian Defence Force Ensign",
+          "from": 2000,
+          "to": 9999,
+          "commons": "Ensign of the Australian Defence Force.svg",
+          "file": "au/australia-adf.svg",
+          "design": "A tricolour of navy, army red and air-force blue bearing the Defence Force badge.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "f02f79fd51f441c014081a71c142e5579638f16e32018e151cc0b39aad22f81d",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-navy",
+          "category": "military",
+          "name": "Australian White Ensign",
+          "from": 1967,
+          "to": 9999,
+          "commons": "Naval Ensign of Australia.svg",
+          "file": "au/australia-navy.svg",
+          "design": "The national flag on a white field, with the Commonwealth Star and Southern Cross in blue.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "e67ad0464e04a6b2a2e28ecf319eab400816b6bc3104536ba4b0e9b39b0aa037",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-raaf",
+          "category": "military",
+          "name": "Royal Australian Air Force Ensign",
+          "from": 1982,
+          "to": 9999,
+          "commons": "Air Force Ensign of Australia.svg",
+          "file": "au/australia-raaf.svg",
+          "design": "An Air-Force-blue field with the Union Jack, the RAAF roundel and the Southern Cross.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "2c55dcce19182023e4fa3dbb20ef315b7c0b939f834d7ca98d99b31f19742969",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-red-ensign",
+          "category": "maritime",
+          "name": "Australian Red Ensign",
+          "from": 1908,
+          "to": 9999,
+          "commons": "Civil Ensign of Australia.svg",
+          "file": "au/australia-red-ensign.svg",
+          "design": "A Red Ensign with the Commonwealth Star and the Southern Cross — the flag of Australian-registered merchant ships.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "8ccefde00623cc7b8ad57a0598ed58460b655bc12a2cf98e903a7cfb941e6181",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-royal",
+          "category": "standard",
+          "name": "King's Flag for Australia",
+          "from": 2024,
+          "to": 9999,
+          "commons": "Royal Standard of Australia.svg",
+          "file": "au/australia-royal-standard.svg",
+          "design": "A banner of the Australian coat of arms, used by the sovereign in Australia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "939a7065c72465b462a9b6db74ec5cd19e489e1f0ba52f333995566bc84b7a17",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-gg",
+          "category": "standard",
+          "name": "Flag of the Governor-General of Australia",
+          "from": 1936,
+          "to": 9999,
+          "commons": "Flag of the Governor-General of Australia.svg",
+          "file": "au/australia-governor-general.svg",
+          "design": "A crowned lion standing on a crown, on a blue field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
+          "sha256": "b671f7eceebc9ee3d8d24fff793f3fe7e1a7040cc2c58e474d475afdba70c2f7",
+          "fetched": "2026-08-07"
+        }
+      ],
+      "omitted": [
+        {
+          "name": "Torres Strait Islander Flag",
+          "reason": "The third flag proclaimed under the Flags Act is still under copyright (held for the Torres Strait Island Regional Council), so no freely-licensed file exists on Wikimedia Commons — en.wikipedia itself shows a placeholder in its place. Bundling a non-free image is not an option, and this repo never approximates a flag, so it is honestly absent until a free file exists."
+        }
+      ]
+    },
+    "MY": {
+      "flags": [
+        {
+          "id": "my-1963",
+          "category": "historical",
+          "name": "Flag of Malaysia (Jalur Gemilang)",
+          "from": 1963,
+          "to": 9999,
+          "reuse": "flags/my.svg",
+          "design": "Fourteen red and white stripes with a blue canton bearing a crescent and a fourteen-point star.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags"
+        },
+        {
+          "id": "my-malaya",
+          "category": "historical",
+          "name": "Flag of the Federation of Malaya",
+          "from": 1950,
+          "to": 1963,
+          "commons": "Flag of Malaya (1950–1963).svg",
+          "file": "my/malaya-1950.svg",
+          "design": "Eleven red and white stripes with a crescent and an eleven-point star — one for each state of the Federation.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "9666f425f72dde775d816cf8318c072f82ef85f70b2e4fb92cf02e8309f69bee",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-navy",
+          "category": "maritime",
+          "name": "Naval ensign of the Royal Malaysian Navy",
+          "from": 1968,
+          "to": 9999,
+          "commons": "Naval Ensign of Malaysia.svg",
+          "file": "my/malaysia-navy-ensign.svg",
+          "design": "A white field with blue crosses and the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "179049b0747eba6d744d6742b60ba26071f05c331320b7e307def233c8d30247",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-navy-1963",
+          "category": "maritime",
+          "name": "Naval ensign of the Royal Malaysian Navy (1963–1968)",
+          "from": 1963,
+          "to": 1968,
+          "commons": "Naval Ensign of Malaysia (1963–1968).svg",
+          "file": "my/malaysia-navy-ensign-1963.svg",
+          "design": "St George's Cross on a white field with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "be2f2df7d01d9ee46c7bc6d89250086ccfa8460d6150e369762bff0185f85170",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-coast-guard",
+          "category": "maritime",
+          "name": "Ensign of the Malaysian Maritime Enforcement Agency",
+          "from": 2005,
+          "to": 9999,
+          "commons": "Flag of the Malaysian Maritime Enforcement Agency.svg",
+          "file": "my/malaysia-coast-guard.svg",
+          "design": "A blue field bearing the agency's crest, with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "ec7054022a56bb5d972fc4c664bec034feff8c3ab65d2d0678b58fd5accd3626",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-agong",
+          "category": "standard",
+          "name": "Standard of the Yang di-Pertuan Agong",
+          "from": 1988,
+          "to": 9999,
+          "commons": "Flag of the Supreme Head of Malaysia.svg",
+          "file": "my/malaysia-agong.svg",
+          "design": "The royal standard of Malaysia's elected king.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "1d8fd0b1cc10c682f8b211638dec3d1252a299606b2d5d273882ba921fa4df24",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "US": {
+      "flags": [
+        {
+          "id": "us-1960",
+          "category": "historical",
+          "name": "Flag of the United States",
+          "from": 1960,
+          "to": 9999,
+          "reuse": "flags/us.svg",
+          "design": "Fifty stars — Hawaii's admission completed the present design.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States"
+        },
+        {
+          "id": "us-1775",
+          "category": "historical",
+          "name": "Continental Union Flag",
+          "from": 1775,
+          "to": 1777,
+          "commons": "Flag of the United States (1776–1777).svg",
+          "file": "us/us-1775.svg",
+          "design": "Thirteen stripes with the British Union Flag in the canton — flown before the Stars and Stripes.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "a6266325837516f3bc51af3e62b36408cc9f05f5dcc1abd2113516d789bc7dca",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1777",
+          "category": "historical",
+          "name": "Flag of the United States (1777–1795)",
+          "from": 1777,
+          "to": 1795,
+          "commons": "Flag of the United States (1777–1795).svg",
+          "file": "us/us-1777.svg",
+          "design": "Thirteen stars and thirteen stripes, as fixed by the Flag Resolution of 1777. The star arrangement was not specified, so several patterns were used.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "04849f8addddc90d05a36243cb304d7ba887b0eabdcc78c094bca6c2bad1311f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1795",
+          "category": "historical",
+          "name": "Flag of the United States (1795–1818)",
+          "from": 1795,
+          "to": 1818,
+          "commons": "Flag of the United States (1795–1818).svg",
+          "file": "us/us-1795.svg",
+          "design": "Fifteen stars AND fifteen stripes, for Vermont and Kentucky — the only US flag ever to carry more than thirteen stripes, and the one that flew over Fort McHenry.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "995bf9aabddd3c1eb67fe924d206c3d776ef7bf654a8b33788f6340818f3ebd0",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1818",
+          "category": "historical",
+          "name": "Flag of the United States (1818–1819)",
+          "from": 1818,
+          "to": 1819,
+          "commons": "Flag of the United States (1818–1819).svg",
+          "file": "us/us-1818.svg",
+          "design": "20 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "b2775f70ee0b9f9ba32caa8267a3bc152819d80c7ce4cffb0c1488997f7c57a2",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1819",
+          "category": "historical",
+          "name": "Flag of the United States (1819–1820)",
+          "from": 1819,
+          "to": 1820,
+          "commons": "Flag of the United States (1819–1820).svg",
+          "file": "us/us-1819.svg",
+          "design": "21 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "8f51a281181bbdfad3e8c4c184f118fa13f6d0608c2e2f0ffcb593beeffc4ea4",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1820",
+          "category": "historical",
+          "name": "Flag of the United States (1820–1822)",
+          "from": 1820,
+          "to": 1822,
+          "commons": "Flag of the United States (1820–1822).svg",
+          "file": "us/us-1820.svg",
+          "design": "23 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "79c90324b74ad75f5785c037c74484e6820a016b1a460976dc0f61362176e299",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1822",
+          "category": "historical",
+          "name": "Flag of the United States (1822–1836)",
+          "from": 1822,
+          "to": 1836,
+          "commons": "Flag of the United States (1822–1836).svg",
+          "file": "us/us-1822.svg",
+          "design": "24 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "a79d69257281d9a5203fb2199cea9978c322a18ed99ac46c505d44493537edd1",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1836",
+          "category": "historical",
+          "name": "Flag of the United States (1836–1837)",
+          "from": 1836,
+          "to": 1837,
+          "commons": "Flag of the United States (1836–1837).svg",
+          "file": "us/us-1836.svg",
+          "design": "25 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "8e34fd9bf5397c81b7197a32d03647fcc44aae500653f6321ea2cef5f306088f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1837",
+          "category": "historical",
+          "name": "Flag of the United States (1837–1845)",
+          "from": 1837,
+          "to": 1845,
+          "commons": "Flag of the United States (1837–1845).svg",
+          "file": "us/us-1837.svg",
+          "design": "26 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "3e21acfdd4161ea47e7418e851c636a1398664f34909ed1745b3202eed34d261",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1845",
+          "category": "historical",
+          "name": "Flag of the United States (1845–1846)",
+          "from": 1845,
+          "to": 1846,
+          "commons": "Flag of the United States (1845–1846).svg",
+          "file": "us/us-1845.svg",
+          "design": "27 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "81875cbed25c32d9c6abf72e7ce2cf62c806ca8bd653ea3d5500567e37b43262",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1846",
+          "category": "historical",
+          "name": "Flag of the United States (1846–1847)",
+          "from": 1846,
+          "to": 1847,
+          "commons": "Flag of the United States (1846–1847).svg",
+          "file": "us/us-1846.svg",
+          "design": "28 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "0c95445095130f1806b011bf99bf2100e067276c7640d0e75b94d330fe5073df",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1847",
+          "category": "historical",
+          "name": "Flag of the United States (1847–1848)",
+          "from": 1847,
+          "to": 1848,
+          "commons": "Flag of the United States (1847–1848).svg",
+          "file": "us/us-1847.svg",
+          "design": "29 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "50965bf1fc872367b8950e93b2764dd02de231a6fbfb1e1201c1acdd06858483",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1848",
+          "category": "historical",
+          "name": "Flag of the United States (1848–1851)",
+          "from": 1848,
+          "to": 1851,
+          "commons": "Flag of the United States (1848–1851).svg",
+          "file": "us/us-1848.svg",
+          "design": "30 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "bb1b9d6c8fb720a51e7984eb720301d0159119a5cf724970f43836c39ebe2058",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1851",
+          "category": "historical",
+          "name": "Flag of the United States (1851–1858)",
+          "from": 1851,
+          "to": 1858,
+          "commons": "Flag of the United States (1851–1858).svg",
+          "file": "us/us-1851.svg",
+          "design": "31 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "a23b8ac0b80b962d8142930c685aeb3476ca9a8831d9c6bca60ad8a7ccbb6a18",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1858",
+          "category": "historical",
+          "name": "Flag of the United States (1858–1859)",
+          "from": 1858,
+          "to": 1859,
+          "commons": "Flag of the United States (1858–1859).svg",
+          "file": "us/us-1858.svg",
+          "design": "32 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "1996c38831e09e766934e27ca9e5c7bba432a5e1c41870b54946ce8307a7ce83",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1859",
+          "category": "historical",
+          "name": "Flag of the United States (1859–1861)",
+          "from": 1859,
+          "to": 1861,
+          "commons": "Flag of the United States (1859–1861).svg",
+          "file": "us/us-1859.svg",
+          "design": "33 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "92102c4b3c11b57e1d0612753309b4c40b427c55ee99bbf14a96bbde3f365aee",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1861",
+          "category": "historical",
+          "name": "Flag of the United States (1861–1863)",
+          "from": 1861,
+          "to": 1863,
+          "commons": "Flag of the United States (1861–1863).svg",
+          "file": "us/us-1861.svg",
+          "design": "34 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "128f222da764b590e1507654c15877949d48b01440744bd07ca64934536224dc",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1863",
+          "category": "historical",
+          "name": "Flag of the United States (1863–1865)",
+          "from": 1863,
+          "to": 1865,
+          "commons": "Flag of the United States (1863–1865).svg",
+          "file": "us/us-1863.svg",
+          "design": "35 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "112723621c59acbcca0aac5b53c4d09b8eda5c9b33d7212cbcddae54a8ac4006",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1865",
+          "category": "historical",
+          "name": "Flag of the United States (1865–1867)",
+          "from": 1865,
+          "to": 1867,
+          "commons": "Flag of the United States (1865–1867).svg",
+          "file": "us/us-1865.svg",
+          "design": "36 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "f9ddb6da302178a4cb99a6cd1b975908da5273b145825722339bc99fc7d5bf3b",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1867",
+          "category": "historical",
+          "name": "Flag of the United States (1867–1877)",
+          "from": 1867,
+          "to": 1877,
+          "commons": "Flag of the United States (1867–1877).svg",
+          "file": "us/us-1867.svg",
+          "design": "37 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "6a31c8f446e7478e0cc6ccce19ddce94803e49060ed9175e28749ea8ed7189db",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1877",
+          "category": "historical",
+          "name": "Flag of the United States (1877–1890)",
+          "from": 1877,
+          "to": 1890,
+          "commons": "Flag of the United States (1877–1890).svg",
+          "file": "us/us-1877.svg",
+          "design": "38 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "8314da3afd73ccbb9157e03060636ba561c956db406197180741cfa7cf50d0a2",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1890",
+          "category": "historical",
+          "name": "Flag of the United States (1890–1891)",
+          "from": 1890,
+          "to": 1891,
+          "commons": "Flag of the United States (1890–1891).svg",
+          "file": "us/us-1890.svg",
+          "design": "43 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "313119327c14bc12f52339669eb166db91860beb1db4264f8def98fdcc28add9",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1891",
+          "category": "historical",
+          "name": "Flag of the United States (1891–1896)",
+          "from": 1891,
+          "to": 1896,
+          "commons": "Flag of the United States (1891–1896).svg",
+          "file": "us/us-1891.svg",
+          "design": "44 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "cecde515707354fb410c60e796d08b8a179de6f9903bf0366fd6f8149ad1a278",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1896",
+          "category": "historical",
+          "name": "Flag of the United States (1896–1908)",
+          "from": 1896,
+          "to": 1908,
+          "commons": "Flag of the United States (1896–1908).svg",
+          "file": "us/us-1896.svg",
+          "design": "45 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "0dfc9f7d5b8e1ef1f596356e21af10b486c40a83da01f361d90459b29e0f44e7",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1908",
+          "category": "historical",
+          "name": "Flag of the United States (1908–1912)",
+          "from": 1908,
+          "to": 1912,
+          "commons": "Flag of the United States (1908–1912).svg",
+          "file": "us/us-1908.svg",
+          "design": "46 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "170d29df363d61f7951305a2845ba6777181ef926aed708b93f8572479eaf2ce",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1912",
+          "category": "historical",
+          "name": "Flag of the United States (1912–1959)",
+          "from": 1912,
+          "to": 1959,
+          "commons": "Flag of the United States (1912-1959).svg",
+          "file": "us/us-1912.svg",
+          "design": "48 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "cf732800d9ec88fad4a09230b4fdec2f1d9a9b3049cb919d4f9445f317fc6eb5",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-1959",
+          "category": "historical",
+          "name": "Flag of the United States (1959–1960)",
+          "from": 1959,
+          "to": 1960,
+          "commons": "US flag 49 stars.svg",
+          "file": "us/us-1959.svg",
+          "design": "49 stars — the stripes returned to thirteen in 1818, and from then a star was added on the 4th of July following each new state's admission.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "56f355d15f79b9099d56e946242bf563a8acdf7b445804a22ca3333ee0f3ba6c",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-army",
+          "category": "military",
+          "name": "Flag of the United States Army",
+          "commons": "Flag of the United States Army.svg",
+          "file": "us/us-army.svg",
+          "design": "The Army's war office seal in blue on white, with a scarlet scroll bearing the Army's name and the year 1775.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "1566c81fc9552c8ddb9244fbf9e37d29a322b460d7c9179ead29190e6631e22d",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-navy",
+          "category": "military",
+          "name": "Flag of the United States Navy",
+          "commons": "Flag of the United States Navy.svg",
+          "file": "us/us-navy.svg",
+          "design": "The Navy's seal on a dark blue field, with a yellow scroll reading UNITED STATES NAVY.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "4f79bae5a2518a0599366dc8e83bc347a0eda724071a79752c534d92542d013e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-marines",
+          "category": "military",
+          "name": "Flag of the United States Marine Corps",
+          "commons": "Flag of the United States Marine Corps.svg",
+          "file": "us/us-marines.svg",
+          "design": "The Marine Corps emblem — eagle, globe and anchor — on a scarlet field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "0adb938f2a15c6aef24dd5337a2170bb4aba3bed64c1faa5d6ee4ee645e7a3b3",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-air-force",
+          "category": "military",
+          "name": "Flag of the United States Air Force",
+          "commons": "Flag of the United States Air Force.svg",
+          "file": "us/us-air-force.svg",
+          "design": "The Air Force coat of arms and thirteen white stars on an ultramarine field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "0267be20166d681294355b7f04303e8875456917867c65e96cff8441d13ac209",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-space-force",
+          "category": "military",
+          "name": "Flag of the United States Space Force",
+          "commons": "Flag of the United States Space Force.svg",
+          "file": "us/us-space-force.svg",
+          "design": "The Space Force delta emblem on a dark blue field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "f0086122115ed59bb0252139209b9eaaff8aa38e8122cb8391b54fb5b0080bae",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-coast-guard",
+          "category": "military",
+          "name": "Flag of the United States Coast Guard",
+          "commons": "Flag of the United States Coast Guard.svg",
+          "file": "us/us-coast-guard.svg",
+          "design": "The Coast Guard's seal on white, with the service's name and its founding year.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "ff9515ad8b4a41458d33b52f9c11bf27099adb09c4d54ceab0c7a4d580114d5d",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-coast-guard-ensign",
+          "category": "maritime",
+          "name": "Ensign of the United States Coast Guard",
+          "commons": "Ensign of the United States Coast Guard.svg",
+          "file": "us/us-coast-guard-ensign.svg",
+          "design": "Sixteen vertical red and white stripes with the Coast Guard emblem — flown to signal a vessel's authority to enforce federal law.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "466dbb958a8ae4bee60f130e83bcd06cd3985a031f3d389a11364f4e54c07c01",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-jack",
+          "category": "maritime",
+          "name": "Union Jack of the United States",
+          "commons": "Jack of the United States.svg",
+          "file": "us/us-jack.svg",
+          "design": "The canton of the national flag flown alone at the bow: fifty white stars on blue.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "18542e597d885acbbc233a20632cdc91a343d5c173b2f3b3dee75d851ed06865",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-yacht-ensign",
+          "category": "maritime",
+          "name": "Yacht ensign of the United States",
+          "commons": "United States yacht flag.svg",
+          "file": "us/us-yacht-ensign.svg",
+          "design": "Thirteen stripes with a fouled anchor in a ring of thirteen stars, flown by recreational vessels.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "0d62dee5d7948ec027cd2d34103a3685d49bc07dc04291cc639e6e784af91288",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-president",
+          "category": "standard",
+          "name": "Flag of the President of the United States",
+          "commons": "Flag of the President of the United States.svg",
+          "file": "us/us-president.svg",
+          "design": "The presidential coat of arms encircled by fifty stars on a dark blue field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "896bd74356a5bd2bcf1be6b22d6ee4cc819904877e88743411ce88a1feede9a2",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-vice-president",
+          "category": "standard",
+          "name": "Flag of the Vice President of the United States",
+          "commons": "Flag of the Vice President of the United States.svg",
+          "file": "us/us-vice-president.svg",
+          "design": "The vice-presidential coat of arms with four blue stars on white.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
+          "sha256": "20ea11e4e4a60a10e7c606d99bd30a236dd484a99568bed015e70ad83e3eb411",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "GB": {
+      "flags": [
+        {
+          "id": "gb-1801",
+          "category": "historical",
+          "name": "Union Flag",
+          "from": 1801,
+          "to": 9999,
+          "reuse": "flags/gb.svg",
+          "design": "The crosses of St George, St Andrew and St Patrick combined — the design adopted when Ireland joined the union on 1 January 1801.",
+          "meaning": {
+            "description": "The Union Flag layers three patron saints' crosses in the order the kingdoms joined: England's red cross of St George on white, Scotland's white saltire of St Andrew on blue (joined at the union of the crowns in 1606) and the red saltire of St Patrick for Ireland, added when the Kingdom of Ireland joined the union in 1801. St Patrick's saltire is set counterchanged — offset from the centre of the white Scottish saltire — so that neither saltire appears to take precedence over the other, which is why the flag is not symmetrical and can be flown upside down.",
+            "sources": [
+              {
+                "title": "Union Jack — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Union_Jack"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags"
+        },
+        {
+          "id": "gb-1707",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Great Britain",
+          "from": 1707,
+          "to": 1801,
+          "commons": "Flag of Great Britain (1707–1800).svg",
+          "file": "gb/great-britain-1707.svg",
+          "design": "The first Union Flag: St George's cross over St Andrew's saltire, without the Irish saltire.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "499f1f86ed388b08e98ec3982e7c5ec7527bbaeaf9632f8092adbac4937e0fd0",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-protectorate",
+          "category": "historical",
+          "name": "Flag of the Protectorate",
+          "from": 1658,
+          "to": 1660,
+          "commons": "Flag of the Commonwealth (1658–1660).svg",
+          "file": "gb/protectorate-1658.svg",
+          "design": "The 1606 Union Flag defaced with an Irish harp, flown under Oliver Cromwell.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "9933367ca48d2d64c09104a4611775f9b3220480b5eb44f52f44e59bbf312359",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-commonwealth-1651",
+          "category": "historical",
+          "name": "Flag of the Commonwealth of England",
+          "from": 1651,
+          "to": 1658,
+          "commons": "Flag of The Commonwealth.svg",
+          "file": "gb/commonwealth-1651.svg",
+          "design": "St George's cross quartered with St Andrew's cross and an Irish harp.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "ef3a62b3a31f3c390bf68e7f8461d5dd5ba8c6c1040904ee7423afc6b0cd072f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-commonwealth-1649",
+          "category": "historical",
+          "name": "Flag of the Commonwealth of England",
+          "from": 1649,
+          "to": 1651,
+          "commons": "Flag of the Commonwealth (1649-1651).svg",
+          "file": "gb/commonwealth-1649.svg",
+          "design": "St George's cross joined with an Irish harp, adopted after the execution of Charles I.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "92f3d9291b82e38bcc600f22b77758260f1e5f755e6a11e7b4e1a57737ad1ebb",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-army",
+          "category": "military",
+          "name": "Non-ceremonial flag of the British Army",
+          "commons": "Flag of the British Army.svg",
+          "file": "gb/uk-army.svg",
+          "design": "A red field bearing the badge of the British Army.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "d1738d544ef72462c9daf7b0871a8b789d6c71f35dd3344c3785325f2708106e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-raf",
+          "category": "military",
+          "name": "Royal Air Force Ensign",
+          "from": 1921,
+          "to": 9999,
+          "commons": "Air Force Ensign of the United Kingdom.svg",
+          "file": "gb/uk-raf.svg",
+          "design": "An Air-Force-blue field with the Union Flag in the canton and the RAF roundel in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "eef43f288ec900483e97f26ea5f4870d8c7969800a0a4bf874cca30da61d6d6f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-white-ensign",
+          "category": "military",
+          "name": "White Ensign",
+          "from": 1801,
+          "to": 9999,
+          "commons": "Naval ensign of the United Kingdom.svg",
+          "file": "gb/uk-white-ensign.svg",
+          "design": "A white field with St George's cross and the Union Flag in the canton — flown by ships of the Royal Navy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "7f117e0df4366a46e5b328a2dabc4ac6676b7c9477fd8ca227b5cf67a80df716",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-red-ensign",
+          "category": "maritime",
+          "name": "Red Ensign",
+          "from": 1801,
+          "to": 9999,
+          "commons": "Civil ensign of the United Kingdom.svg",
+          "file": "gb/uk-red-ensign.svg",
+          "design": "A red field with the Union Flag in the canton — the flag of the British merchant fleet.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "9f4699a55f5ad0dce03e623b27c9d10950ec48956b8a6cdfd2cfbee150bb7949",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-blue-ensign",
+          "category": "maritime",
+          "name": "Blue Ensign",
+          "from": 1801,
+          "to": 9999,
+          "commons": "Government Ensign of the United Kingdom.svg",
+          "file": "gb/uk-blue-ensign.svg",
+          "design": "A blue field with the Union Flag in the canton, flown by government vessels and by organisations warranted to use it.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "a3aa47e3d99abe6e537e89687156de3a2b32715ae8e066aa16eec4524e629e68",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-civil-jack",
+          "category": "maritime",
+          "name": "Civil Jack",
+          "from": 1801,
+          "to": 9999,
+          "commons": "Civil jack of the United Kingdom.svg",
+          "file": "gb/uk-civil-jack.svg",
+          "design": "The Union Flag within a white border, flown as a jack by British merchant ships.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "fe6217a944b0baa3fb0339ed8dbd3ace157b7bb4e0f847c3234c3b3c151b833f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-royal-standard",
+          "category": "standard",
+          "name": "Royal Standard of the United Kingdom",
+          "from": 1837,
+          "to": 9999,
+          "commons": "Royal standard of the United Kingdom.svg",
+          "file": "gb/uk-royal-standard.svg",
+          "design": "A banner of the royal arms: the three lions of England quartered with the lion of Scotland and the harp of Ireland.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "1d45031d25e52ec2b7a378bdf218d060d3d28f1943942c1c1174b25beff46be9",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-royal-standard-scotland",
+          "category": "standard",
+          "name": "Royal Standard of the United Kingdom in Scotland",
+          "from": 1837,
+          "to": 9999,
+          "commons": "Royal Standard of the United Kingdom (in Scotland).svg",
+          "file": "gb/uk-royal-standard-scotland.svg",
+          "design": "The royal arms in their Scottish form, with the lion rampant taking precedence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
+          "sha256": "b50c27cd631df070417a47239192dcb76c68d7119dfe56154e3014cc37c3e8fd",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "FR": {
+      "flags": [
+        {
+          "id": "fr-tricolore",
+          "category": "historical",
+          "name": "Flag of France (the Tricolore)",
+          "from": 1830,
+          "to": 9999,
+          "reuse": "flags/fr.svg",
+          "design": "Three vertical bands of blue, white and red. The darker navy of the original was restored in 2020, after a lighter version had been used since 1976.",
+          "source": "https://en.wikipedia.org/wiki/List_of_French_flags"
+        },
+        {
+          "id": "fr-bourbon",
+          "category": "historical",
+          "name": "Royal flag of the House of Bourbon",
+          "from": 1590,
+          "to": 1830,
+          "reuse": "historical-flags/france-bourbon.png",
+          "design": "A plain white field strewn with gold fleurs-de-lis. Not flown between 1790 and 1814, when the Revolution and the First Empire intervened.",
+          "source": "https://en.wikipedia.org/wiki/List_of_French_flags"
+        },
+        {
+          "id": "fr-royal-banner",
+          "category": "historical",
+          "name": "Royal banner of France",
+          "from": 1376,
+          "to": 1792,
+          "reuse": "historical-flags/france-royal-banner.svg",
+          "design": "Azure with three gold fleurs-de-lis — \"France moderne\", after Charles V reduced the strewn field to three flowers in 1376.",
+          "source": "https://en.wikipedia.org/wiki/List_of_French_flags"
+        },
+        {
+          "id": "fr-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of France",
+          "from": 1853,
+          "to": 9999,
+          "commons": "Ensign of France.svg",
+          "file": "fr/france-naval-ensign.svg",
+          "design": "The Tricolore in the navy's own proportions, with the three bands of unequal width so they appear equal when flying.",
+          "source": "https://en.wikipedia.org/wiki/List_of_French_flags",
+          "sha256": "90e7bfcd21a982fec24883d1f3965098a62d328735126ca7c98390f16342118c",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "ES": {
+      "flags": [
+        {
+          "id": "es-1981",
+          "category": "historical",
+          "name": "Flag of Spain",
+          "from": 1981,
+          "to": 9999,
+          "reuse": "flags/es.svg",
+          "design": "Red-yellow-red with the coat of arms toward the hoist, in the form fixed by the 1981 royal decree.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
+        },
+        {
+          "id": "es-1977",
+          "category": "historical",
+          "name": "Flag of Spain (1977–1981)",
+          "from": 1977,
+          "to": 1981,
+          "commons": "Flag of Spain (1977–1981).svg",
+          "file": "es/spain-1977.svg",
+          "design": "The transition-era flag: the eagle of Saint John retained, with the wings raised.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "sha256": "850799139926ec9617a31464f6ef0cb9408dd2f4b4991f3e97ec42e9a88d0a1b",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-1945",
+          "category": "historical",
+          "name": "Flag of Spain (1945–1977)",
+          "from": 1945,
+          "to": 1977,
+          "reuse": "historical-flags/spain-1945.svg",
+          "design": "Francoist Spain — red-yellow-red charged with the Eagle of Saint John in its 1945 arrangement.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
+        },
+        {
+          "id": "es-1938",
+          "category": "historical",
+          "name": "Flag of Spain (1938–1945)",
+          "from": 1938,
+          "to": 1945,
+          "commons": "Flag of Spain (1938–1945).svg",
+          "file": "es/spain-1938.svg",
+          "design": "The first Francoist arms, with the eagle's wings spread wide.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "sha256": "e5656a5287146dfcf768e1f211fc2825f91c9e78f134d614d8bbeeab72cc4744",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-1931",
+          "category": "historical",
+          "name": "Flag of the Second Spanish Republic",
+          "from": 1931,
+          "to": 1939,
+          "commons": "Flag of Spain (1931–1939).svg",
+          "file": "es/spain-1931.svg",
+          "design": "A horizontal tricolour of red, yellow and murrey with the republican arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "sha256": "45a5dfbddf8404b0e9c63da30edb2de71cd945d9e35e011c3f8b3673ac9e2435",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-1785",
+          "category": "historical",
+          "name": "Flag of Spain (1785–1931)",
+          "from": 1785,
+          "to": 1931,
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The red-yellow-red ensign chosen by Charles III in 1785 so Spanish ships could be told apart at sea, with the royal arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
+        },
+        {
+          "id": "es-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1506,
+          "to": 1785,
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "A red ragged saltire on white — the ensign of Habsburg and early Bourbon Spain.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
+        },
+        {
+          "id": "es-civil",
+          "category": "civilstate",
+          "name": "Civil flag of Spain",
+          "from": 1981,
+          "to": 9999,
+          "commons": "Flag of Spain (civil).svg",
+          "file": "es/spain-civil.svg",
+          "design": "The red-yellow-red bands without the coat of arms — the flag private citizens fly, alongside the state flag which bears the arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "sha256": "ed8d3e30b9f463f1f524cbc0f813bd159e7c8a07d1a6966b74fdf1a2a6d721dd",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Spain",
+          "from": 1939,
+          "to": 9999,
+          "commons": "Naval jack of Spain.svg",
+          "file": "es/spain-naval-jack.svg",
+          "design": "A square quartered with the arms of Castile, León, Aragón and Navarre.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "sha256": "3fbc55ac26c0f307a7a4a1c13ba6bcca40d3668c17b050979e0ece8ff957681a",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-yacht",
+          "category": "maritime",
+          "name": "Yacht ensign of Spain",
+          "from": 1977,
+          "to": 9999,
+          "commons": "Bandera de yate.svg",
+          "file": "es/spain-yacht-ensign.svg",
+          "design": "The national flag charged with a plain blue royal crown.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "sha256": "2645332dd438f7cf8d5fcad1d63c5636d2d563ab5c26efd7c60ddaa5cf3ba9f0",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-royal",
+          "category": "standard",
+          "name": "Standard of the King of Spain",
+          "from": 2014,
+          "to": 9999,
+          "commons": "Estandarte Real de España.svg",
+          "file": "es/spain-royal-standard.svg",
+          "design": "A crimson square bearing the arms of the sovereign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
+          "sha256": "1a038d09d3521a3c74d8f79d631e3fbc473231f36c320db04f10f13c12c6faf1",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "BO": {
+      "flags": [
+        {
+          "id": "bo-1851",
+          "category": "historical",
+          "name": "Flag of Bolivia",
+          "from": 1851,
+          "to": 9999,
+          "reuse": "flags/bo.svg",
+          "design": "A horizontal tricolour of red, yellow and green.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
+        },
+        {
+          "id": "bo-1826",
+          "category": "historical",
+          "name": "Flag of Bolivia (1826–1851)",
+          "from": 1826,
+          "to": 1851,
+          "commons": "Lesser Flag of Bolivia (1826-1831).svg",
+          "file": "bo/bolivia-1826.svg",
+          "design": "The second design: yellow over red over green, before the red and yellow were reversed in 1851.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "sha256": "cceaa4816203e7a0755cf480b1c95a4a81d31e56a6262d5fb305c0984a4fdd5f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-1825",
+          "category": "historical",
+          "name": "Flag of Bolivia (1825–1826)",
+          "from": 1825,
+          "to": 1826,
+          "commons": "Civil flag of Bolivia (1825-1826).svg",
+          "file": "bo/bolivia-1825.svg",
+          "design": "The first flag of the new republic: a vertical triband of green, red and green with five stars.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "sha256": "07851d5c6f863050cfcbed08997e0c42170325425d5b751c61eb94d3095ec492",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-wiphala",
+          "category": "official",
+          "name": "Wiphala",
+          "from": 2009,
+          "to": 9999,
+          "commons": "Banner of the Qulla Suyu (1979).svg",
+          "file": "bo/bolivia-wiphala.svg",
+          "design": "A seven-by-seven patchwork of squares in the seven colours of the rainbow, set on the diagonal.",
+          "meaning": {
+            "description": "The Wiphala of the Qullasuyu is recognised by Article 6 of Bolivia's 2009 constitution as a dual national symbol alongside the tricolour — the state's acknowledgement that it is plurinational. Its 49 squares are arranged so that the seven colours run diagonally, and it stands for the Andean indigenous peoples of the region the Inca called Qullasuyu.",
+            "sources": [
+              {
+                "title": "Wiphala — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Wiphala"
+              },
+              {
+                "title": "List of Bolivian flags — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "sha256": "f8a1ee406aea8dcbecfd6b07b9b51d84d898f8558289f0f9f9b53fc653962b37",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-state",
+          "category": "civilstate",
+          "name": "State flag of Bolivia",
+          "from": 1851,
+          "to": 9999,
+          "commons": "Bandera de Bolivia (Guerra).svg",
+          "file": "bo/bolivia-state.svg",
+          "design": "The tricolour charged with the coat of arms — flown by the state, while citizens fly the plain tricolour.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "sha256": "f3f83d423d20a64c069ddb1ce3a1d2f63363c7ffb76fe756d9fdeefd4143a57e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of the Bolivian Navy",
+          "from": 2013,
+          "to": 9999,
+          "commons": "Naval ensign of Bolivia.svg",
+          "file": "bo/bolivia-naval-ensign.svg",
+          "design": "A blue field bearing the tricolour and nine stars — one for each department, flown by a navy that patrols rivers and lakes since Bolivia lost its coastline in 1884.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "sha256": "0f66910b34e968c26fb583fe18ebdd1cb8fe91148efc84c83ee0efbab97b4582",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Bolivia",
+          "from": 1851,
+          "to": 9999,
+          "commons": "Naval jack of Bolivia.svg",
+          "file": "bo/bolivia-naval-jack.svg",
+          "design": "A green field with a yellow and red double border.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
+          "sha256": "778eb5f5e12b57dd87f9a4acc94be40edca7e52a66a1bfdb81693df30e51c622",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "ZA": {
+      "flags": [
+        {
+          "id": "za-1994",
+          "category": "historical",
+          "name": "Flag of South Africa",
+          "from": 1994,
+          "to": 9999,
+          "reuse": "flags/za.svg",
+          "design": "A horizontal Y in green, fimbriated white and gold, separating red and blue from a black triangle at the hoist.",
+          "meaning": {
+            "description": "Designed by State Herald Frederick Brownell and first flown on 27 April 1994, the day of the first democratic election, the flag was drawn to carry no per-colour symbolism at all — the only South African national flag whose design has no official meaning attached to its colours. What the design does say is said by its shape: the horizontal Y, or pall, shows two paths converging into one, which the government describes as the convergence of diverse elements within South African society taking the road ahead in unity.",
+            "sources": [
+              {
+                "title": "Flag of South Africa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
+              },
+              {
+                "title": "National flag — South African Government",
+                "url": "https://www.gov.za/about-sa/national-symbols/national-flag"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags"
+        },
+        {
+          "id": "za-1982",
+          "category": "historical",
+          "name": "Flag of South Africa (1982–1994)",
+          "from": 1982,
+          "to": 1994,
+          "commons": "Flag of South Africa (1928–1994, bright colors).svg",
+          "file": "za/south-africa-1982.svg",
+          "design": "The orange-white-blue \"Oranje-Blanje-Blou\" with the three small flags at its centre, in the lighter shades specified in 1982.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
+          "sha256": "54edacfc75a66e4708a3ab5eae49694cdf98ed66a96219347c0a27708b1cd4dc",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "za-1928",
+          "category": "historical",
+          "name": "Flag of the Union of South Africa",
+          "from": 1928,
+          "to": 1982,
+          "commons": "Flag of South Africa (1928–1994, dark colors).svg",
+          "file": "za/south-africa-1928.svg",
+          "design": "Orange, white and blue, with the Union Flag, the Orange Free State flag and the Transvaal flag together in the centre.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
+          "sha256": "6f717ad6e125a61dd5c2e88a8e7e1fa2e8856b5f3b4240d735dc95f3e5491e97",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "za-sandf",
+          "category": "military",
+          "name": "Flag of the South African National Defence Force",
+          "from": 2003,
+          "to": 9999,
+          "commons": "Flag of the South African National Defence Force.svg",
+          "file": "za/south-africa-sandf.svg",
+          "design": "The Defence Force's emblem on a field bearing the colours of the national flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
+          "sha256": "c0547e4948cb688548da610d75d36153ebefa8867d395ccc7ac4dc8b28cec857",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "za-sandf-1994",
+          "category": "military",
+          "name": "Ensign of the South African National Defence Force (1994–2003)",
+          "from": 1994,
+          "to": 2003,
+          "commons": "Ensign of the South African National Defence Force (1994–2003).svg",
+          "file": "za/south-africa-sandf-1994.svg",
+          "design": "The first post-apartheid defence-force ensign, replaced in 2003.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
+          "sha256": "eecd27c6d6356d5e72164148c58dc0d04dae1dba3a13927c9a38bf8c8582cd20",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "JP": {
+      "flags": [
+        {
+          "id": "jp-1999",
+          "category": "historical",
+          "name": "Flag of Japan (Hinomaru)",
+          "from": 1999,
+          "to": 9999,
+          "reuse": "flags/jp.svg",
+          "design": "A crimson disc centred on white, at 2:3 — the proportions and placement fixed by the Act on National Flag and Anthem of 13 August 1999.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags"
+        },
+        {
+          "id": "jp-1870",
+          "category": "historical",
+          "name": "Flag of Japan (1870–1999)",
+          "from": 1870,
+          "to": 1999,
+          "reuse": "historical-flags/japan-1870.svg",
+          "design": "The Meiji Hinomaru of Proclamation 57 of 1870: 7:10, with the disc set slightly toward the hoist.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags"
+        },
+        {
+          "id": "jp-shogunate",
+          "category": "historical",
+          "name": "Naval ensign of the Tokugawa shogunate",
+          "from": 1603,
+          "to": 1868,
+          "reuse": "historical-flags/japan-shogunate.png",
+          "design": "The naka-guro — a white field with a broad black horizontal band.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags"
+        },
+        {
+          "id": "jp-jsdf",
+          "category": "military",
+          "name": "Flag of the Japan Self-Defense Forces",
+          "from": 1954,
+          "to": 9999,
+          "commons": "Flag of the Japan Self-Defense Forces.svg",
+          "file": "jp/japan-jsdf.svg",
+          "design": "A sun disc with eight red rays, used by the Self-Defense Forces and the Ground Self-Defense Force.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
+          "sha256": "fe4436d3ac4055dc027588e5de859e0ec05daede2d8aaedee3201b6547942712",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "jp-jmsdf",
+          "category": "military",
+          "name": "Ensign of the Japan Maritime Self-Defense Force",
+          "commons": "Naval Ensign of Japan.svg",
+          "file": "jp/japan-jmsdf.svg",
+          "design": "The rising-sun ensign: a sun disc offset toward the hoist with sixteen rays.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
+          "sha256": "5385dee0a656bd1e468aefd229a76786392c19254af669b8ac58aa4008f0f6f7",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "jp-ijn",
+          "category": "military",
+          "name": "Ensign of the Imperial Japanese Navy",
+          "from": 1889,
+          "to": 1945,
+          "commons": "Naval ensign of Japan (1889–1945).svg",
+          "file": "jp/japan-ijn.svg",
+          "design": "The same sixteen-ray rising sun, flown by the navy of the Empire of Japan.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
+          "sha256": "aede015730efd1f0bf4c1e05c20f0f700ca51a342235c8e8f812b6bdac783a2e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "jp-emperor",
+          "category": "standard",
+          "name": "Imperial Standard of the Emperor of Japan",
+          "from": 1869,
+          "to": 9999,
+          "commons": "Flag of the Japanese Emperor.svg",
+          "file": "jp/japan-emperor.svg",
+          "design": "A gold sixteen-petal chrysanthemum centred on red.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
+          "sha256": "c8c4a10a4acf2c03c94c1d14f6912f55e54446de6c15be833ae40dda979ecb8a",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "TR": {
+      "flags": [
+        {
+          "id": "tr-1936",
+          "category": "historical",
+          "name": "Flag of Turkey",
+          "from": 1936,
+          "to": 9999,
+          "reuse": "flags/tr.svg",
+          "design": "A white star and crescent on red, in the proportions fixed by the Turkish Flag Law of 1936.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags"
+        },
+        {
+          "id": "tr-ottoman",
+          "category": "historical",
+          "name": "Flag of the Ottoman Empire",
+          "from": 1844,
+          "to": 1922,
+          "reuse": "historical-flags/ottoman-empire.png",
+          "design": "Red with a white crescent and five-pointed star, as fixed by the Tanzimat regulation of 1844.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags"
+        },
+        {
+          "id": "tr-president",
+          "category": "standard",
+          "name": "Presidential Standard of Turkey",
+          "from": 1923,
+          "to": 9999,
+          "commons": "Flag of the President of Turkey.svg",
+          "file": "tr/turkey-president.svg",
+          "design": "The national flag with a golden sun of sixteen rays in the canton, one ray for each of the historic Turkic states.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags",
+          "sha256": "27baeec71969c4911bcf1b505fae2cc539efacebc39782ed1da4084b616b83cd",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-gnat",
+          "category": "standard",
+          "name": "Flag of the Grand National Assembly of Turkey",
+          "commons": "Flag of Grand National Assembly of Turkey.svg",
+          "file": "tr/turkey-gnat.svg",
+          "design": "A white field bearing the assembly's seal.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags",
+          "sha256": "4c0552fa415b61e70ccdac70d0454c43b26fee7bc163b3f5c2daebbda6bce825",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "IN": {
+      "flags": [
+        {
+          "id": "in-1947",
+          "category": "historical",
+          "name": "Flag of India (Tiranga)",
+          "from": 1947,
+          "to": 9999,
+          "reuse": "flags/in.svg",
+          "design": "A horizontal tricolour of saffron, white and green with the navy-blue Ashoka Chakra of 24 spokes at the centre; adopted 22 July 1947.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags"
+        },
+        {
+          "id": "in-armed-forces",
+          "category": "military",
+          "name": "Flag of the Indian Armed Forces",
+          "commons": "Flag of the Indian Armed Forces.svg",
+          "file": "in/india-armed-forces.svg",
+          "design": "A horizontal tricolour of red, navy blue and sky blue — one colour for each service — with the tri-service crest.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "sha256": "923a26c3345767dbdd3e7f7c82438ecbb4d8714a99cc101e5426d2ccee59df99",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-naval-ensign",
+          "category": "maritime",
+          "name": "Indian Naval Ensign",
+          "from": 2022,
+          "to": 9999,
+          "commons": "Naval Ensign of India.svg",
+          "file": "in/india-naval-ensign.svg",
+          "design": "A white field with the national flag in the canton and the navy's octagonal crest in the fly, adopted in 2022.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "sha256": "a64f3573c76d9c8096927dd040fa0f8399e2b22a0d91326c0f95a9161752ff1c",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-civil-ensign",
+          "category": "maritime",
+          "name": "Civil ensign of India",
+          "commons": "Civil Ensign of India.svg",
+          "file": "in/india-civil-ensign.svg",
+          "design": "A Red Ensign with the national flag in the canton, flown by Indian merchant ships.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "sha256": "bc7ef76fa60d4e018866170786c16f184c5cfc9837716924857b2300afd3f1e2",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-state-ensign",
+          "category": "maritime",
+          "name": "State ensign of India",
+          "commons": "Government Ensign of India.svg",
+          "file": "in/india-state-ensign.svg",
+          "design": "A Blue Ensign with the national flag in the canton and a yellow anchor.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "sha256": "658e603d399e5835adca8f585e345fbb818f2ebba5ce1d0a2bfdb69a33fbd8ca",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-president-1950",
+          "category": "standard",
+          "name": "Presidential Standard of India (1950–1971)",
+          "from": 1950,
+          "to": 1971,
+          "commons": "Flag of the President of India (1950–1971).svg",
+          "file": "in/india-president-1950.svg",
+          "design": "Quartered dark blue: the Lions of Sarnath, an elephant, a pair of scales and a lotus vase — discontinued in 1971 in favour of the national flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "sha256": "ccd58f3d0d1a782711d978958ce2efdf4ec196d38df6f03b461249ce05522e96",
+          "fetched": "2026-08-07"
+        }
+      ]
+    },
+    "CN": {
+      "flags": [
+        {
+          "id": "cn-1949",
+          "category": "historical",
+          "name": "Flag of the People's Republic of China",
+          "from": 1949,
+          "to": 9999,
+          "reuse": "flags/cn.svg",
+          "design": "A red field with one large gold star and four smaller stars in an arc, hoisted on 1 October 1949.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags"
+        },
+        {
+          "id": "cn-roc-1928",
+          "category": "historical",
+          "name": "Flag of the Republic of China (1928–1949)",
+          "from": 1928,
+          "to": 1949,
+          "commons": "Flag of the Republic of China.svg",
+          "file": "cn/china-roc-1928.svg",
+          "design": "The Blue Sky with a White Sun in the canton of a red field — the national flag of China from the Northern Expedition until 1949.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "sha256": "11a8acaecfcc6258cfeedc15555fbc4dbe2b1df640497be2d5dcb4f60a5c4167",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-roc-1912",
+          "category": "historical",
+          "name": "Flag of the Republic of China (1912–1928)",
+          "from": 1912,
+          "to": 1928,
+          "commons": "Flag of China (1912–1928).svg",
+          "file": "cn/china-roc-1912.svg",
+          "design": "The Five-Races-Under-One-Union flag: red, yellow, blue, white and black stripes for the Han, Manchu, Mongol, Hui and Tibetan peoples.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "sha256": "910e67712859a32a742b2edeb3b95647f0b2c985424c9fc1f0bb660013d5cbad",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-qing",
+          "category": "historical",
+          "name": "Yellow Dragon Flag of the Qing dynasty",
+          "from": 1889,
+          "to": 1912,
+          "reuse": "historical-flags/qing-dynasty.png",
+          "design": "A rectangular yellow field with a blue dragon chasing a red pearl. The triangular version dates from 1862; before that China had no national flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags"
+        },
+        {
+          "id": "cn-pla",
+          "category": "military",
+          "name": "Flag of the People's Liberation Army",
+          "from": 1948,
+          "to": 9999,
+          "commons": "Flag of the People's Liberation Army.svg",
+          "file": "cn/china-pla.svg",
+          "design": "A red field with a gold star and the characters 八一 for 1 August, the date of the 1927 Nanchang uprising.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "sha256": "44f234155466c0c662898fbc0c44c1de62a144ca2ba6c438f991db228ac87394",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-pla-ground",
+          "category": "military",
+          "name": "Ensign of the PLA Ground Force",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Ground Force Flag of the People's Republic of China.svg",
+          "file": "cn/china-pla-ground.svg",
+          "design": "The PLA flag with a green stripe along the bottom.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "sha256": "a7bb3ba68ebf3befcafadc82556aa60e420a6431e81709017c5ca9bdcc0836e1",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-pla-navy",
+          "category": "military",
+          "name": "Ensign of the PLA Navy",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Naval Ensign of China.svg",
+          "file": "cn/china-pla-navy.svg",
+          "design": "The PLA flag with blue and white stripes along the bottom.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "sha256": "c45aa430ec71ef0f8efec3ffc5538541628e715a954a72029455b789a10706ec",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-pla-air",
+          "category": "military",
+          "name": "Ensign of the PLA Air Force",
+          "commons": "Air Force Flag of the People's Republic of China.svg",
+          "file": "cn/china-pla-air.svg",
+          "design": "The PLA flag with a sky-blue stripe along the bottom.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "sha256": "e7162b6f695698d59c6af1123182120e083a8e62644a3e7de1889dadf6935814",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-pla-rocket",
+          "category": "military",
+          "name": "Ensign of the PLA Rocket Force",
+          "from": 2016,
+          "to": 9999,
+          "commons": "Rocket Force Flag of the People's Republic of China.svg",
+          "file": "cn/china-pla-rocket.svg",
+          "design": "The PLA flag with a gold-and-blue stripe along the bottom.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
+          "sha256": "5f985a81843aebcf6de7f4ca230f601d5d5780a3b1eaaf7cc01bfdab496e3e69",
+          "fetched": "2026-08-07"
+        }
+      ]
+    }
+  }
+}

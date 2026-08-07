@@ -1747,8 +1747,18 @@
   margin: 0 0 1.5rem;
 }
 
-/* Capital-name subtitle under a city-flag tile. */
-.flag-grid__city-sub {
+/* What the image is, under a national-flag widget's flag. */
+.learn-fs__flag-design {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+/* Capital-name subtitle under a city-flag tile; the year label under a
+   national-flag tile shares it. */
+.flag-grid__city-sub,
+.flag-grid__flag-sub {
   display: block;
   font-size: 0.72rem;
   font-weight: 500;
@@ -1756,7 +1766,8 @@
   margin-top: 0.12em;
 }
 
-.flag-grid__card--active .flag-grid__city-sub {
+.flag-grid__card--active .flag-grid__city-sub,
+.flag-grid__card--active .flag-grid__flag-sub {
   color: var(--ink-fixed);
 }
 

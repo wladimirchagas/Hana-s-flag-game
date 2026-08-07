@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 900 600"
+   width="1200"
+   height="800"
+   version="1.1"
+   id="svg44"
+   sodipodi:docname="Government_Ensign_of_India.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata50">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs48" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     id="namedview46"
+     showgrid="false"
+     inkscape:zoom="0.66939442"
+     inkscape:cx="842.67751"
+     inkscape:cy="360.47248"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg44" />
+  <rect
+     width="900"
+     height="600"
+     fill="#00247d"
+     id="rect2" />
+  <rect
+     width="450"
+     height="300"
+     fill="#128807"
+     id="rect4"
+     style="fill:#00643c;fill-opacity:1" />
+  <rect
+     width="450"
+     height="200"
+     fill="#fff"
+     id="rect6" />
+  <rect
+     width="450"
+     height="100"
+     fill="#FF9932"
+     id="rect8"
+     style="fill:#ff6400;fill-opacity:1" />
+  <g
+     transform="translate(225, 150)"
+     id="g34">
+    <circle
+       r="46.5"
+       fill="#000080"
+       id="circle10" />
+    <circle
+       r="41"
+       fill="#fff"
+       id="circle12" />
+    <g
+       id="8">
+      <g
+         id="4">
+        <g
+           id="2">
+          <g
+             id="1">
+            <circle
+               r="2.5"
+               fill="#000080"
+               transform="rotate(7.5) translate(41)"
+               id="circle14" />
+            <path
+               fill="#000080"
+               d="M 0,41 L 1.5,17  Q .5,14 0,0 q -.5,14 -1.5,17 z"
+               id="path16" />
+          </g>
+          <use
+             xlink:href="#1"
+             transform="rotate(15)"
+             id="use19" />
+        </g>
+        <use
+           xlink:href="#2"
+           transform="rotate(30)"
+           id="use22" />
+      </g>
+      <use
+         xlink:href="#4"
+         transform="rotate(60)"
+         id="use25" />
+    </g>
+    <use
+       xlink:href="#8"
+       transform="rotate(120)"
+       id="use28" />
+    <use
+       xlink:href="#8"
+       transform="rotate(-120)"
+       id="use30" />
+    <circle
+       r="8"
+       fill="#000080"
+       id="circle32" />
+  </g>
+  <polygon
+     fill="#ffd700"
+     points="582,365 582,235 613,300"
+     id="polygon36" />
+  <path
+     fill="#ffd700"
+     d="M555.399 294.626l0 10.748 47.2854 2.62913 188.174 5.13307c4.88858,0.119291 6.87992,10.7894 6.87992,16.7776 0,22.6228 -24.7701,51.9059 -24.7701,51.9059l-1.05709 -10.2283c-1.18583,12.4063 -5.19803,20.8571 -10.102,28.0594 10.7563,1.09606 18.9874,-3.80787 27.7795,-10.3819 -3.8752,0.522047 -4.80236,0.479528 -7.01457,-0.561024 0,0 26.6563,-32.1827 26.6563,-50.961 0,-16.024 22.9016,-37.7469 22.9016,-37.7469 0,0 -22.9016,-21.7228 -22.9016,-37.7469 0,-18.7783 -26.6563,-50.961 -26.6563,-50.961 2.2122,-1.04055 3.13937,-1.08307 7.01457,-0.561024 -8.79213,-6.57402 -17.0232,-11.478 -27.7795,-10.3819 4.90394,7.20236 8.91614,15.6531 10.102,28.0594l1.05709 -10.2283c0,0 24.7701,29.2831 24.7701,51.9059 0,5.98819 -1.99134,16.6583 -6.87992,16.7776l-188.174 5.13307 -47.2854 2.62913z"
+     id="path38" />
+  <circle
+     fill="#ffd700"
+     cx="540.25"
+     cy="300"
+     r="22.5"
+     id="circle40" />
+  <circle
+     fill="#00247d"
+     cx="540.25"
+     cy="300"
+     r="13.5"
+     id="circle42" />
+</svg>

@@ -38,6 +38,8 @@ import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { formatPopulation } from "../lib/formatPopulation";
 import { normalizeForSearch } from "../lib/searchNormalize";
 import { CapitalDetails } from "../components/CapitalDetails";
+import { NationalFlagDetails } from "../components/NationalFlagDetails";
+import type { NationalFlag } from "../data/nationalFlags";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
   loadStoredSelection,
@@ -287,6 +289,12 @@ export default function LearnPage() {
   const activeCapitalCityName = showCapital && selectedSubdivision
     ? (subdivisionCapital(selectedSubdivision.code)?.name ?? null)
     : (selectedCapital?.name ?? null);
+  // A flag picked in the "National flags" tab — a historical national flag, an
+  // additional official flag, a service flag, an ensign or a standard. It belongs
+  // to the WHOLE country, so unlike every other selection here it deliberately
+  // drives NOTHING on the map (owner request); it only opens its own widget below
+  // the country fact-sheet, alongside whatever else is selected.
+  const [selectedNationalFlag, setSelectedNationalFlag] = useState<NationalFlag | null>(null);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
@@ -297,6 +305,9 @@ export default function LearnPage() {
   }, [selectedSubdivision]);
   useEffect(() => {
     setSelectedCapital(null);
+    // The picked flag belongs to the country being drilled into, so it cannot
+    // survive a change of country or a return to the world map.
+    setSelectedNationalFlag(null);
   }, [subdivisionCountry, subdivisionMode]);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
@@ -1930,6 +1941,23 @@ export default function LearnPage() {
             );
           })()}
 
+          {/* ===== NATIONAL-FLAG box — a flag picked in the "National flags" tab.
+              The country's CURRENT flag stays in the fact-sheet at the top and the
+              picked flag is shown here in its own widget below, with its name, the
+              years it flew and its sourced explainer. It highlights nothing on the
+              map: the flag belongs to the whole country. ===== */}
+          {selectedNationalFlag && (
+            <aside className="learn-fs__panel" aria-live="polite">
+              <div className="learn-fs__detail">
+                <NationalFlagDetails
+                  flag={selectedNationalFlag}
+                  baseUrl={baseUrl}
+                  onEnlarge={setZoomedFlagUrl}
+                />
+              </div>
+            </aside>
+          )}
+
           {/* ===== NATIONAL-CAPITAL box — for a national capital that heads no
               subdivision (Ottawa, Pretoria, Amsterdam …), selected from the
               hierarchy chart. It has no subdivision fact-sheet, so this small card
@@ -2113,6 +2141,14 @@ export default function LearnPage() {
             onSelectCountry={() => {
               setSelectedSubdivision(null);
               setSelectedCapital(null);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            selectedNationalFlagId={selectedNationalFlag?.id ?? null}
+            onSelectNationalFlag={(flag) => {
+              // Toggle: tapping the open flag's card closes its widget. Nothing on
+              // the map changes either way — a national flag belongs to the whole
+              // country, so there is no territory to highlight.
+              setSelectedNationalFlag((cur) => (cur?.id === flag.id ? null : flag));
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />

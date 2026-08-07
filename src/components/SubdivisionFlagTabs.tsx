@@ -2,9 +2,12 @@ import { useMemo, useState } from "react";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { SubdivisionFlagGrid } from "./SubdivisionFlagGrid";
 import { CityFlagGrid } from "./CityFlagGrid";
+import { NationalFlagGrid } from "./NationalFlagGrid";
 import { SubdivisionHierarchyChart } from "./SubdivisionHierarchyChart";
 import { SubdivisionHierarchyTable } from "./SubdivisionHierarchyTable";
 import { countryCityFlagCount } from "../lib/cityFlags";
+import { nationalFlagCount } from "../lib/nationalFlags";
+import type { NationalFlag } from "../data/nationalFlags";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 
 /**
@@ -13,6 +16,11 @@ import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
  * Three views of the same country's flags:
  *  1. Sub-national divisions — the existing subdivision flag grid.
  *  2. Capital cities         — every available capital-city flag.
+ *  2b. National flags        — the country's OWN flags: historical national flags
+ *      (newest first, current one included), any additional officially recognised
+ *      flags, military service flags, maritime ensigns/jacks, head-of-state
+ *      standards, civil/state variants and indigenous flags. Categories a country
+ *      has none of are hidden entirely.
  *  3. Hierarchy              — an interactive nation → subdivision → city org
  *     chart, with a table/chart layout toggle: the table renders the SAME
  *     entities as a flat 3-column table (type, sub-national flag, capital city
@@ -25,7 +33,7 @@ import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
  * localStorage so they survive switching countries or reloading the page,
  * instead of resetting to the default every time.
  */
-type TabId = "sub" | "city" | "tree";
+type TabId = "sub" | "city" | "nat" | "tree";
 type TreeLayout = "table" | "chart";
 
 const TAB_STORAGE_KEY = "hana-flag-game.subdivision-flag-tab";
@@ -34,7 +42,7 @@ const LAYOUT_STORAGE_KEY = "hana-flag-game.hierarchy-layout";
 function loadTab(): TabId {
   try {
     const raw = localStorage.getItem(TAB_STORAGE_KEY);
-    if (raw === "sub" || raw === "city" || raw === "tree") return raw;
+    if (raw === "sub" || raw === "city" || raw === "nat" || raw === "tree") return raw;
   } catch {
     // ignore — quota or no-storage browser
   }
@@ -85,6 +93,9 @@ type Props = {
   onSelectCapital: (code: string) => void;
   onSelectNationalCapital: (cap: { name: string; note: string | null; flagPath: string | null }) => void;
   onSelectCountry: () => void;
+  /** id of the national flag whose widget is open (if any). */
+  selectedNationalFlagId: string | null;
+  onSelectNationalFlag: (flag: NationalFlag) => void;
 };
 
 export function SubdivisionFlagTabs({
@@ -101,6 +112,8 @@ export function SubdivisionFlagTabs({
   onSelectCapital,
   onSelectNationalCapital,
   onSelectCountry,
+  selectedNationalFlagId,
+  onSelectNationalFlag,
 }: Props) {
   const [tab, setTabState] = useState<TabId>(loadTab);
   const [treeLayout, setTreeLayoutState] = useState<TreeLayout>(loadLayout);
@@ -122,12 +135,20 @@ export function SubdivisionFlagTabs({
     () => countryCityFlagCount(countryCode),
     [countryCode],
   );
+  const natCount = useMemo(() => nationalFlagCount(countryCode), [countryCode]);
 
   const TABS: { id: TabId; label: string; count?: number }[] = [
     { id: "sub", label: "Sub-national divisions", count: subCount },
     { id: "city", label: "Capital cities", count: cityCount },
+    ...(natCount > 0
+      ? [{ id: "nat" as const, label: "National flags", count: natCount }]
+      : []),
     { id: "tree", label: "Hierarchy" },
   ];
+
+  // A country with no curated national flags has no such tab, so a persisted
+  // "nat" selection must fall back rather than render an empty panel.
+  const activeTab: TabId = tab === "nat" && natCount === 0 ? "sub" : tab;
 
   if (divisions.length === 0) return null;
 
@@ -141,7 +162,7 @@ export function SubdivisionFlagTabs({
 
       <div className="flag-tabs" role="tablist" aria-label="Flag views">
         {TABS.map((t) => {
-          const active = t.id === tab;
+          const active = t.id === activeTab;
           return (
             <button
               key={t.id}
@@ -161,7 +182,7 @@ export function SubdivisionFlagTabs({
       </div>
 
       <div className="flag-tabs__panel" role="tabpanel">
-        {tab === "sub" && (
+        {activeTab === "sub" && (
           <SubdivisionFlagGrid
             embedded
             divisions={divisions}
@@ -172,7 +193,7 @@ export function SubdivisionFlagTabs({
             onSelect={onSelectSubdivision}
           />
         )}
-        {tab === "city" && (
+        {activeTab === "city" && (
           <CityFlagGrid
             countryCode={countryCode}
             countryName={countryName}
@@ -184,7 +205,16 @@ export function SubdivisionFlagTabs({
             onSelectNational={onSelectNationalCapital}
           />
         )}
-        {tab === "tree" && (
+        {activeTab === "nat" && (
+          <NationalFlagGrid
+            countryCode={countryCode}
+            countryName={countryName}
+            selectedFlagId={selectedNationalFlagId}
+            baseUrl={baseUrl}
+            onSelect={onSelectNationalFlag}
+          />
+        )}
+        {activeTab === "tree" && (
           <>
             <div className="hierarchy-layout-toggle" role="tablist" aria-label="Hierarchy chart layout">
               {(["table", "chart"] as const).map((layout) => {
