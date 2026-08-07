@@ -242,6 +242,55 @@ for (const [key, lines] of keyLines) {
   flush();
 }
 
+// ── E. an era entry keyed by the RAW name must not be shadowed by the remap ──
+// polityInfo() resolves the SHOWN name first (that is deliberate — a relabelled polity
+// must carry the facts of the polity actually shown). So when an era ALSO remaps that
+// polity's name, an ERA_OVERRIDES entry keyed by the RAW dataset NAME is dead code: the
+// shown name resolves to its own entry, or to the era-agnostic registry, and the era entry
+// is never read. Two shipped this way and were found in the 2026-08 audit — the 1900
+// "Kingdom of Brazil" entry (remapped to "Brazil", so the registry's flagless Brazil won,
+// leaving the biggest polity on the map with no flag) and the 1920 "Iran" entry (remapped
+// to "Persia", losing the Lion and Sun flag).
+{
+  const { ERAS, polityDisplayName } = await import(R("../src/lib/historicalEras.ts"));
+  const { POLITY_REGISTRY } = await import(R("../src/lib/historicalEras.ts"));
+  const eraStart = registrySrc.findIndex((l) => l.includes("const ERA_OVERRIDES"));
+  const eraEnd = registrySrc.findIndex((l, i) => i > eraStart && l.startsWith("]);"));
+  const eraKeys = new Map();
+  let currentEra = null;
+  for (let i = eraStart; i < eraEnd; i++) {
+    const eraLine = registrySrc[i].match(/^\s*\["(\w+)",\s*new Map<string, PolityInfo>\(\[/);
+    if (eraLine) { currentEra = eraLine[1]; eraKeys.set(currentEra, new Set()); continue; }
+    const m = registrySrc[i].match(/^\s*\["([^"]+)",\s*\{/);
+    if (m && currentEra) eraKeys.get(currentEra).add(m[1]);
+  }
+  for (const era of ERAS) {
+    if (!era.dataUrl) continue;
+    const geo = JSON.parse(readFileSync(R(`../public/${era.dataUrl}`), "utf8"));
+    const seen = new Set();
+    for (const f of geo.features) {
+      const raw = f.properties?.NAME;
+      if (!raw || !raw.trim() || seen.has(raw)) continue;
+      seen.add(raw);
+      const shown = polityDisplayName(raw, era.id);
+      if (shown === raw) continue;
+      if (!eraKeys.get(era.id)?.has(raw)) continue;
+      const shadowedBy = eraKeys.get(era.id)?.has(shown)
+        ? `ERA_OVERRIDES["${era.id}"]["${shown}"]`
+        : POLITY_REGISTRY.has(shown)
+          ? `POLITY_REGISTRY["${shown}"]`
+          : null;
+      if (shadowedBy) {
+        failures.push(
+          `ERA_OVERRIDES["${era.id}"]["${raw}"] is dead code: the era shows this polity as ` +
+            `"${shown}", and polityInfo resolves the shown name to ${shadowedBy} instead. ` +
+            `Key the entry on "${shown}", or drop it.`,
+        );
+      }
+    }
+  }
+}
+
 console.log(
   `Era flag explanations — ${explained.length} deliberate suppressions from ` +
     `${EXPLANATION_FLOOR_YEAR} on, each with a curated reason:`,

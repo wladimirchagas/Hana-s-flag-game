@@ -139,6 +139,20 @@ export const HISTORICAL_FLAG_VALIDITY: ReadonlyMap<string, FlagValidity> = new M
   ["historical-flags/us-45star.svg", { from: 1896, to: 1908, design: "Forty-five stars — Utah's admission.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" }],
   ["historical-flags/abyssinia.png", { from: 1897, to: 1974, design: "Ethiopian Empire — green-yellow-red with the Lion of Judah.", source: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" }],
 
+  ["historical-flags/montenegro-1860.svg", { from: 1860, to: 1905, design: "Principality of Montenegro — red with the crowned double-headed eagle.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" }],
+  ["historical-flags/serbia-1882.svg", { from: 1882, to: 1918, design: "Kingdom of Serbia — red-blue-white with the royal arms.", source: "https://en.wikipedia.org/wiki/Flag_of_Serbia" }],
+  ["historical-flags/brazil-1889.svg", { from: 1889, to: 1960, design: "Republican Brazil with 21 stars — the field was redrawn as states joined, reaching today's 27 in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Brazil" }],
+  ["historical-flags/panama-1903.svg", { from: 1903, to: 1925, design: "Panama's first flag, 1903; the design was standardised in 1925.", source: "https://en.wikipedia.org/wiki/Flag_of_Panama" }],
+  ["historical-flags/montenegro-1905.png", { from: 1905, to: 1918, design: "Kingdom of Montenegro — the royal flag, 1905–1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" }],
+  ["historical-flags/mongolia-1911.svg", { from: 1911, to: 1921, design: "Bogd Khanate of Mongolia — yellow with the soyombo, from the 1911 declaration of independence.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" }],
+  ["historical-flags/albania-1914.svg", { from: 1914, to: 1920, design: "Principality of Albania — red with the black double-headed eagle under a star.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" }],
+  ["historical-flags/iceland-1915.png", { from: 1915, to: 1944, design: "Iceland's blue-white-red cross, adopted 1915 while a sovereign kingdom in personal union with Denmark.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" }],
+  ["historical-flags/eritrea-1952.svg", { from: 1952, to: 1961, design: "Eritrea federated with Ethiopia — light blue with a green olive wreath.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" }],
+  ["historical-flags/sudan-1956.svg", { from: 1956, to: 1970, design: "Republic of the Sudan — blue-yellow-green, flown from independence in 1956.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" }],
+  ["historical-flags/mali-1959.svg", { from: 1959, to: 1961, design: "Mali — green-yellow-red with the black kanaga figure, removed in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" }],
+  ["historical-flags/upper-volta-1959.svg", { from: 1959, to: 1984, design: "Republic of Upper Volta — black-white-red, flown until the country became Burkina Faso in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" }],
+  ["historical-flags/brazil-1960.svg", { from: 1960, to: 1968, design: "Republican Brazil with 22 stars — Guanabara's admission.", source: "https://en.wikipedia.org/wiki/Flag_of_Brazil" }],
+  ["historical-flags/congo-leopoldville-1960.svg", { from: 1960, to: 1963, design: "Republic of the Congo (Léopoldville) — blue with a large star and six small ones, from independence on 30 June 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" }],
   /* ---------------------------------------------------- 20th century */
   ["historical-flags/afghanistan-1901.svg", { from: 1901, to: 1919, design: "Black flag of the Emirate of Afghanistan under Habibullah Khan.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" }],
   ["historical-flags/persia-1907.svg", { from: 1907, to: 1933, design: "Green-white-red with the Lion and Sun, fixed by the constitutional regulation of 1907.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" }],
@@ -164,6 +178,12 @@ export const HISTORICAL_FLAG_VALIDITY: ReadonlyMap<string, FlagValidity> = new M
   ["historical-flags/ceylon.png", { from: 1951, to: 1972, design: "Dominion of Ceylon — the lion flag with saffron and green bands, 1951 revision.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" }],
   ["historical-flags/zaire.png", { from: 1971, to: 1997, design: "Green with a yellow disc bearing an arm and torch — Mobutu's Zaire.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" }],
 
+  ["historical-flags/nepal-1743.svg", { from: 1743, to: 1962, design: "Nepal's double-pennon, in the form flown before the 1962 constitutional standardisation.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" }],
+  ["historical-flags/muscat-oman.svg", { from: 1820, to: 1970, design: "Sultanate of Muscat and Oman — a plain red flag, until Sultan Qaboos added the national emblem in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" }],
+  ["historical-flags/qatar-1936.svg", { from: 1936, to: 1949, design: "Qatar — maroon and white with the serrated edge and Arabic inscription.", source: "https://en.wikipedia.org/wiki/Flag_of_Qatar" }],
+  ["historical-flags/bhutan-1956.svg", { from: 1956, to: 1969, design: "Bhutan — the white dragon on a diagonally divided orange and red field, 1956 version.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" }],
+  ["historical-flags/cameroon-1957.svg", { from: 1957, to: 1961, design: "Cameroun — green-red-yellow vertical bands, before the stars were added.", source: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" }],
+  ["historical-flags/mauritania-1959.svg", { from: 1959, to: 2017, design: "Mauritania — green with a gold crescent and star; the red bands were added in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" }],
   /* -------------------------------------- Malay states and Brunei -------
    * Every one of these is a LATE design that the download script bundled for the
    * 1815 map on the reasoning that a modern state flag "descends from" the historical

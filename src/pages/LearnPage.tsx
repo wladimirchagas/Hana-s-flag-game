@@ -140,6 +140,13 @@ type HistoricalSelection = {
 };
 type Selection = ModernSelection | HistoricalSelection;
 
+/** Ruling-power names that read wrong without a definite article in prose. The panel
+ *  says "Flew the flag of the United Kingdom", never "of United Kingdom". */
+const NEEDS_THE = /^(United Kingdom|United States|Netherlands|Philippines|Gambia|USSR|Soviet Union|Ottoman Empire|German Empire|Russian Empire|Austrian Empire|Holy Roman Empire|Habsburg Monarchy|Republic of China|Iberian Union|Trucial States)\b/;
+function withArticle(name: string): string {
+  return NEEDS_THE.test(name) ? `the ${name}` : name;
+}
+
 /** Year label for a flag-validity window: negative years are BC, not "-509". */
 function formatFlagYear(year: number): string {
   return year < 0 ? `${-year} BC` : String(year);
@@ -1555,8 +1562,8 @@ export default function LearnPage() {
                   // A colony flew its ruler's flag. Say so, so the card never implies
                   // the territory had a national flag of its own.
                   <p className="entity-summary__note">
-                    Flew the flag of {polityDisplayName(display.ruledBy ?? "", eraId)} — it had no
-                    national flag of its own at this date.
+                    Flew the flag of {withArticle(polityDisplayName(display.ruledBy ?? "", eraId))} —
+                    it had no national flag of its own at this date.
                   </p>
                 )}
                 {flagUrl && !flagLoadFailed ? (

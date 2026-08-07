@@ -2576,7 +2576,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Portugal 1500 = Age of Discoveries. Quinas banner.
     ["Portugal", { continent: "Iberia", note: "Age-of-Discoveries Portugal — Vasco da Gama reached India (1498), Cabral claimed Brazil (1500). Flew the Quinas banner (white with blue shields).", noFlag: true, population: 1_400_000 }],
     // Scottland (dataset typo for Scotland)
-    ["Scottland", { continent: "Northern Europe", note: "Kingdom of Scotland — the Saltire (white diagonal cross on blue) is one of the world's oldest national symbols. The Union with England wasn't until 1707.", noFlag: true, population: 700_000 }],
     // Ming Chinese Empire (different dataset name from "Ming")
     ["Ming Chinese Empire", { continent: "East Asia", note: "Ming dynasty China at the height of the Yongle era — the Great Wall expanded, Zheng He's treasure fleets, the Forbidden City built.", noFlag: true, population: 100_000_000 }],
     // Vijayanagara — the last great Hindu empire of South India
@@ -2658,8 +2657,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Qing Dynasty (Manchu)", { continent: "East Asia", noFlag: true, note: "Qing Dynasty — Jurchen (Manchu) conquest of China beginning (1644 final conquest); not yet dominant in 1600.", population: 5_000_000 }],
     // European Powers
     ["Iberian Union", { continent: "Iberia / Americas / Africa / Asia", noFlag: true, note: "Iberian Union (1580–1640) — Philip II of Spain succeeded to the Portuguese throne in 1580, uniting the two crowns in one monarch. It was a personal union, not a merged state: under the Statute of Tomar (1581) Portugal kept its own laws, Cortes, currency, and a colonial empire administered separately from Spain's. The two crowns separated again in 1640.", population: 8_500_000 }],
-    ["Spain", { continent: "Europe / Americas / Asia / Africa", noFlag: true, note: "Kingdom of Spain under the Habsburgs — world's leading superpower with global empire spanning Americas (New Spain, Peru, Caribbean), Mediterranean (Naples, Sicily, Sardinia), North Africa, and Asian trade monopolies.", population: 7_000_000 }],
-    ["Portugal", { continent: "Europe / Africa / Americas / Asia", noFlag: true, note: "Kingdom of Portugal under Spanish rule (Iberian Union 1580-1640) — maintains independent identity; major maritime trading power with colonial holdings in Africa, Brazil, and Asia.", population: 1_500_000 }],
     ["France", { flag: "historical-flags/france-bourbon.png", continent: "Western Europe", note: "Kingdom of France under Henri IV, the first Bourbon — the white royal flag semé of fleurs-de-lis dates from his accession in 1590.", population: 18_000_000 }],
     ["England and Ireland", { continent: "Northern Europe / Western Europe", noFlag: true, note: "Kingdom of England and Ireland under the Tudors — rising naval power; colonizing North America; defeating the Spanish Armada (1588).", population: 7_000_000 }],
     ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire — fragmented confederation of Germanic states; increasingly dominated by Austria. Peak decentralization during 30 Years War.", population: 20_000_000 }],
@@ -3175,6 +3172,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // Pre-1900 eras never auto-borrow a modern flag, so `modernName` is used ONLY
   // where the flag flown in 1880 is the same design the country flies today.
   ["ad1880", new Map<string, PolityInfo>([
+    ["Oman", { flag: "historical-flags/muscat-oman.svg", continent: "Western Asia", note: "Sultanate of Muscat and Oman — its East African empire lost with Zanzibar's separation in 1856; a plain red flag flew until 1970.", population: 800_000 }],
+    // Nepal's double-pennon predates every era on this map; the version bundled here is the
+    // one flown before the 1962 constitution standardised its geometry.
+    ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal under the Rana prime ministers — the Shah kings reigned but did not rule. Its double-pennon is the world's only non-quadrilateral national flag.", population: 5_000_000 }],
+    // AUDIT 2026-08 (goal 3): the modern Montenegrin flag dates from 2004, so the card was
+    // blank; the principality flew this one from 1860.
+    ["Montenegro", { flag: "historical-flags/montenegro-1860.svg", continent: "Southeast Europe", note: "Principality of Montenegro — recognised as independent by the Congress of Berlin in 1878 after centuries of resisting Ottoman rule.", population: 200_000 }],
     // AUDIT 2026-08 (goal 3): Mongkut's white elephant on red, 1855–1917 — the chakra flag the
     // registry carried had been replaced 25 years earlier.
     ["Rattanakosin Kingdom", { flag: "historical-flags/siam-1855.svg", continent: "Southeast Asia", note: "Siam under Chulalongkorn (Rama V) — modernising fast and the only Southeast Asian state to stay independent; its flag was the white elephant on red.", population: 6_000_000 }],
@@ -3295,13 +3299,21 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1900 (high imperialism) overrides ====================================
   ["ad1900", new Map<string, PolityInfo>([
+    // AUDIT 2026-08 (goal 3): keyed on the SHOWN name, because the era remaps the dataset's
+    // "Kingdom of Brazil" to "Brazil" and polityInfo resolves the shown name first — an entry
+    // under the raw name is silently shadowed by the registry's era-agnostic "Brazil".
+    // The republican flag has flown since 1889; only its star count has changed.
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", continent: "South America", note: "United States of Brazil — the Old Republic, a decade after the 1889 coup that ended the empire. Its flag carried 21 stars at this date.", population: 17_400_000 }],
+    ["Oman", { flag: "historical-flags/muscat-oman.svg", continent: "Western Asia", note: "Sultanate of Muscat and Oman — bound to Britain by treaty; the plain red flag flew until Sultan Qaboos added the state emblem in 1970.", population: 800_000 }],
+    // Nepal's double-pennon predates every era on this map; the version bundled here is the
+    // one flown before the 1962 constitution standardised its geometry.
+    ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal under the Rana prime ministers — the Shah kings reigned but did not rule. Its double-pennon is the world's only non-quadrilateral national flag.", population: 5_000_000 }],
     ["Rattanakosin Kingdom", { flag: "historical-flags/siam-1855.svg", continent: "Southeast Asia", note: "Siam under Chulalongkorn — ceding territory to France and Britain to preserve its independence. The white elephant flew until 1917.", population: 7_000_000 }],
     // Brunei's plain yellow flag, 1888–1906 — the one era where this image is period-correct.
     ["Brunei", { flag: "historical-flags/brunei-1888.png", continent: "Southeast Asia", note: "Sultanate of Brunei — a British protectorate since 1888, reduced to two enclaves by Sarawak's expansion. Its flag was plain yellow until 1906.", population: 30_000 }],
     // The upstream file still calls Brazil a kingdom in 1900 and records Portugal as
     // its sovereign; the empire actually fell in 1889 (and independence came in 1822).
     // The name is remapped for display below and the false ruler refused in FALSE_SUBJECTO.
-    ["Kingdom of Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — the republic has flown its green-and-yellow flag since 1889, but the star field was redrawn each time states were added, so today's 27-star version is not the one that flew in 1900, and no period-accurate image is bundled.", note: "Republic of the United States of Brazil — the monarchy of Pedro II was overthrown in 1889, eleven years before this map's date, and the republic adopted the starred flag it still flies.", population: 17_400_000 }],
     // Hawaii was annexed by the United States in 1898, so the upstream map's
     // "Kingdom of Hawaii" label is already two years out of date here — but the flag
     // itself carried on: the same Union-Jack-and-eight-stripes design served as the
@@ -3310,7 +3322,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 32_500_000 }],
     ["Germany", { flag: "historical-flags/german-empire.png", continent: "Central Europe", note: "German Empire under Wilhelm II — the black-white-red tricolour flew until 1918.", population: 56_400_000 }],
     ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea — Italy's first African colony, taken in 1890.", population: 250_000 }],
-    ["Austria Hungary", { flag: "historical-flags/austria-hungary.png", continent: "Central Europe", note: "Austria-Hungary — the Habsburg dual monarchy.", population: 47_000_000 }],
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India at its imperial height, Victoria's Raj covering today's India, Pakistan, Bangladesh and Burma.", population: 285_000_000 }],
     ["United States of America", { flag: "historical-flags/us-45star.svg", continent: "North America", note: "The United States flew the 45-star flag (1896–1908, after Utah's admission); the 50-star flag dates from 1960.", }],
     // By 1900 the Qing HAD a standardised national flag: the rectangular Yellow
@@ -3372,6 +3383,16 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    ["Panama", { flag: "historical-flags/panama-1903.svg", continent: "Central America", note: "Republic of Panama — independent of Colombia since 1903, the year the canal treaty was signed; the canal opened in August 1914.", population: 400_000 }],
+    // Nepal's double-pennon predates every era on this map; the version bundled here is the
+    // one flown before the 1962 constitution standardised its geometry.
+    ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal under the Rana prime ministers — the Shah kings reigned but did not rule. Its double-pennon is the world's only non-quadrilateral national flag.", population: 5_000_000 }],
+    ["Montenegro", { flag: "historical-flags/montenegro-1905.png", continent: "Southeast Europe", note: "Kingdom of Montenegro under Nicholas I — a kingdom since 1910, and about to enter the war alongside Serbia.", population: 500_000 }],
+    ["Albania", { flag: "historical-flags/albania-1914.svg", continent: "Southeast Europe", note: "Principality of Albania — independent of the Ottomans since 1912, and in 1914 under the six-month reign of Prince Wilhelm of Wied.", population: 800_000 }],
+    // AUDIT 2026-08 (goal 3): the Bogd Khanate declared independence from Qing China in
+    // 1911 and flew its own soyombo flag; the modern Mongolian flag dates from 1992, so the
+    // adoption gate refused it and the card showed nothing.
+    ["Mongolia", { flag: "historical-flags/mongolia-1911.svg", continent: "East Asia", note: "The Bogd Khanate of Mongolia — independent of Qing China since 1911 under the Jebtsundamba Khutughtu, with Russian backing.", population: 600_000 }],
     ["Rattanakosin Kingdom", { flag: "historical-flags/siam-1855.svg", continent: "Southeast Asia", note: "Siam under Vajiravudh (Rama VI) — the white elephant flag flew until he replaced it with the trirong tricolour in 1917.", population: 8_300_000 }],
     // Brunei's white-and-black striped flag was added in 1906; the crest came in 1959.
     ["Brunei", { flag: "historical-flags/brunei-1906.svg", continent: "Southeast Asia", note: "Brunei under a British Resident since 1906 — the year the white and black stripes were added to the sultan's yellow flag.", population: 30_000 }],
@@ -3432,11 +3453,23 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Philippines in 1914 — U.S. territory (American-Philippine War ended 1902).
     // The revolutionary Philippine flag adopted in 1898 was superseded by U.S. governance; independence and the modern flag came in 1946.
     ["Philippines", { flag: "historical-flags/us-48star.svg", continent: "Southeast Asia", note: "Philippine Islands, U.S. territory — administered by the United States following the 1898 revolution and Spanish-American War. The U.S. 48-star flag flew over the territory until independence in 1946.", population: 9_000_000 }],
-    ["Brazil", { modernName: "Brazil", continent: "South America", note: "United States of Brazil — the republican flag adopted in 1889 with stars representing states. The design evolved as states joined the federation.", population: 23_000_000 }],
-    ["Serbia", { modernName: "Serbia", continent: "Europe", note: "Kingdom of Serbia — Balkan state emerging as major regional power; joined Balkan Wars in 1912–1913 against Ottoman Empire. The white-blue-red tricolour is Serbia's historical flag.", population: 2_900_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", modernName: "Brazil", continent: "South America", note: "United States of Brazil — the republican flag adopted in 1889 with stars representing states. The design evolved as states joined the federation.", population: 23_000_000 }],
+    ["Serbia", { flag: "historical-flags/serbia-1882.svg", modernName: "Serbia", continent: "Europe", note: "Kingdom of Serbia — Balkan state emerging as major regional power; joined Balkan Wars in 1912–1913 against Ottoman Empire. The white-blue-red tricolour is Serbia's historical flag.", population: 2_900_000 }],
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    ["Panama", { flag: "historical-flags/panama-1903.svg", continent: "Central America", note: "Republic of Panama — the canal in American hands under the 1903 treaty. The flag's proportions were standardised in 1925.", population: 450_000 }],
+    // Nepal's double-pennon predates every era on this map; the version bundled here is the
+    // one flown before the 1962 constitution standardised its geometry.
+    ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal under the Rana prime ministers — the Shah kings reigned but did not rule. Its double-pennon is the world's only non-quadrilateral national flag.", population: 5_000_000 }],
+    // Iceland became a sovereign kingdom in personal union with Denmark in 1918 and had
+    // flown its own flag since 1915; the modern adoption year (1944) refused it.
+    ["Iceland", { flag: "historical-flags/iceland-1915.png", continent: "Northern Europe", note: "Kingdom of Iceland — sovereign since 1 December 1918, sharing only its monarch and foreign policy with Denmark. The republic came in 1944.", population: 95_000 }],
+    // AUDIT 2026-08 (goal 3): the display remap "Iran" → "Persia" made polityInfo resolve
+    // the era-agnostic registry entry for "Persia", which carries no flag, so the 1920 card
+    // lost the Lion and Sun flag that the ad1920 "Iran" entry had. Keyed on the SHOWN name,
+    // it resolves first. (This is the trap the era-name rule warns about.)
+    ["Persia", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Persia under the last Qajar shahs — Reza Khan's 1921 coup was months away. The Lion and Sun flag of 1907 flew until 1933.", population: 11_000_000 }],
     // AUDIT 2026-08 (goal 3): the trirong replaced the white elephant on 28 September 1917, so
     // by 1920 Siam flew the flag Thailand flies today.
     ["Rattanakosin Kingdom", { modernName: "Thailand", continent: "Southeast Asia", note: "Siam after the First World War — a victor power and founder member of the League of Nations. Its trirong tricolour, adopted in 1917, is the flag Thailand still flies.", population: 9_200_000 }],
@@ -3465,7 +3498,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony, proclaimed in 1920 out of the East Africa Protectorate; the Kenyan flag came with independence in 1963.", population: 2_900_000 }],
     ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate under British rule.", population: 3_100_000 }],
     ["Nigeria", { modernName: "United Kingdom", continent: "West Africa", note: "Colony and Protectorate of Nigeria under British rule.", population: 18_000_000 }],
-    ["Ghana", { modernName: "United Kingdom", continent: "West Africa", note: "Gold Coast — a British colony until 1957, when Ghana became the first sub-Saharan African state to win independence.", population: 2_300_000 }],
     ["Zambia", { modernName: "United Kingdom", continent: "Southern Africa", note: "Northern Rhodesia, administered by the British South Africa Company until 1924; Zambia's flag dates from 1964.", population: 1_000_000 }],
     ["Mozambique", { ruler: "Portugal", continent: "East Africa", note: "Portuguese Mozambique.", population: 3_300_000 }],
     // Weimar Germany flew black-red-gold from 1919 — the same design the Federal
@@ -3475,17 +3507,19 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["India", { modernName: "United Kingdom", continent: "South Asia", note: "British India — the Raj still covered today's India, Pakistan, Bangladesh and Burma; the tricolour was adopted at independence in 1947.", population: 306_000_000 }],
     ["Algeria", { modernName: "France", continent: "North Africa", note: "French Algeria, administered as departments of France; the independence flag dates from 1962.", population: 5_800_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa — a British dominion flying the Union Jack and Red Ensign; the orange-white-blue came in 1928 and today's flag only in 1994.", population: 6_900_000 }],
-    ["Iran", { flag: "historical-flags/persia-1907.svg", continent: "Western Asia", note: "Persia under the last Qajar shahs — the Lion and Sun banner, used from 1907 until the Islamic Republic's flag in 1980.", population: 11_000_000 }],
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/yemen-1918.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen, established 1918. The red flag with white sword and five stars became the national flag of the independent kingdom after the Ottoman withdrawal.", population: 3_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Philippines Commonwealth (1935–1946) — a U.S. territory with increasing self-governance under the Commonwealth Constitution of 1935. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 10_000_000 }],
     ["Hungary", { noFlag: true, continent: "Central Europe", noFlagReason: "No flag shown — the Kingdom flew the red-white-green tricolour charged with the crowned royal arms; today's plain tricolour dates from 1957, and no period image of the crowned version is bundled.", note: "Kingdom of Hungary — a kingdom without a king, under Regent Miklós Horthy after the Austro-Hungarian collapse of 1918. Its red-white-green tricolour dates from 1848.", population: 7_600_000 }],
     ["Egypt", { flag: "historical-flags/egypt-khedive.png", continent: "North Africa", note: "Kingdom of Egypt (1922–1952) after nominal independence from Ottoman rule in 1922. The khedive's crescent and star flag (red with white crescent and three stars) represented Egypt during the interwar period.", population: 12_000_000 }],
     ["Albania", { noFlag: true, continent: "Europe", noFlagReason: "No flag shown — Albania flew the red flag with Skanderbeg's black double-headed eagle from 1912, but the eagle was crowned or crested differently under each regime; today's plain eagle flag dates from 1992 and no period image is bundled.", note: "Albania after independence from Ottoman rule — the red flag with the black double-headed eagle flew from 1912, its crest changing with each regime.", population: 1_000_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil — the republican flag was adopted in 1889 with a star for each state.", population: 30_600_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil — the republican flag was adopted in 1889 with a star for each state.", population: 30_600_000 }],
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    // Nepal's double-pennon predates every era on this map; the version bundled here is the
+    // one flown before the 1962 constitution standardised its geometry.
+    ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal under the Rana prime ministers — the Shah kings reigned but did not rule. Its double-pennon is the world's only non-quadrilateral national flag.", population: 5_000_000 }],
     ["Brunei", { flag: "historical-flags/brunei-1906.svg", continent: "Southeast Asia", note: "Brunei in 1938 — a British protectorate living off the Seria oilfield; the crest was added to its flag only in 1959.", population: 40_000 }],
     // AUDIT 2026-08 (goal 3): Xinjiang was flying the ROC five-coloured flag here, which the
     // Nationalists replaced nationally in 1928. https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China
@@ -3530,7 +3564,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["United States", { flag: "historical-flags/us-48star.svg", continent: "North America", note: "The United States flew the 48-star flag (1912–1959); the 50-star flag dates from 1960.", }],
     ["Yemen", { flag: "historical-flags/mutawakkilite-yemen.svg", continent: "Arabia", note: "Mutawakkilite Kingdom of Yemen — the red flag with white sword and five stars represented the kingdom from its establishment in 1918 until the 1962 revolution.", population: 4_200_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Commonwealth of the Philippines, a U.S. territory with internal self-governance under the 1935 Commonwealth Constitution. Independence and the modern flag both came in 1946. The white sun and three stars flag has been in use since 1898.", population: 16_000_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil under Getúlio Vargas's Estado Novo — the republican flag was adopted in 1889 with a star for each state.", population: 39_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil under Getúlio Vargas's Estado Novo — the republican flag was adopted in 1889 with a star for each state.", population: 39_000_000 }],
     // --- Additional European and other states for 1938 -------------------------
     ["Spain", { noFlag: true, continent: "Western Europe", noFlagReason: "No flag shown — in 1938 two flags flew over Spain: the Republic's red-yellow-purple tricolour and the Nationalists' red-yellow-red. No single national flag applies to this date, and neither period image is bundled.", note: "Spain in the middle of the Civil War (1936–1939), the country split between Republican and Nationalist control.", population: 23_000_000 }],
     ["Poland", { continent: "Eastern Europe", note: "Second Polish Republic (1919–1939) — independent state between Germany and the Soviet Union. The white-and-red bicolour was adopted in 1919.", population: 34_500_000 }],
@@ -3546,6 +3580,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Empire of Ethiopia — Haile Selassie restored in 1941 after five years of Italian occupation, and a founder member of the United Nations.", population: 16_000_000 }],
+    // Nepal's double-pennon predates every era on this map; the version bundled here is the
+    // one flown before the 1962 constitution standardised its geometry.
+    ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal under the Rana prime ministers — the Shah kings reigned but did not rule. Its double-pennon is the world's only non-quadrilateral national flag.", population: 5_000_000 }],
     ["Brunei", { flag: "historical-flags/brunei-1906.svg", continent: "Southeast Asia", note: "Brunei in 1945 — just liberated from Japanese occupation, under British military administration.", population: 40_000 }],
     // AUDIT 2026-08 (goal 3): see ad1938 — the five-coloured flag ended in 1928.
     ["Xinjiang", { flag: "historical-flags/roc.png", continent: "Central Asia", note: "Xinjiang in 1945 — back under Nationalist control after Sheng Shicai's break with Moscow, and flying the Republic of China's flag.", population: 4_000_000 }],
@@ -3559,7 +3597,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // The English name "Türkiye" dates from Turkey's 2022 request to the UN, so the era
     // remap shows "Turkey" — and the shown name needs its own entry, or the panel falls
     // through to the registry's Ottoman "Turkey" entry (which is noFlag, losing the flag).
-    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — neutral for almost all of the war, declaring on Germany only in February 1945. Its red flag with the white crescent and star dates from 1844.", population: 19_000_000 }],
     ["Turkey", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — neutral for almost all of the war, declaring on Germany only in February 1945. Its red flag with the white crescent and star dates from 1844. It asked the world to use the Turkish spelling, Türkiye, only in 2022.", population: 19_000_000 }],
     // French West/Equatorial Africa in 1945 — shown under the names they actually bore.
     // https://en.wikipedia.org/wiki/Upper_Volta
@@ -3612,7 +3649,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Saar Protectorate", { continent: "Western Europe", noFlagReason: "No flag shown — in 1945 the Saar was still a French occupation zone with no flag of its own; the protectorate's Nordic-cross flag followed in 1948, and it joined West Germany in 1957.", note: "Initial French occupation zone then French protectorate 1947–1956. Used its own flag with a Scandinavian-style cross — joined West Germany in 1957.", population: 850_000, noFlag: true }],
     // Zaire is the dataset's anachronistic 1945 label for the Belgian
     // Congo (the name 'Zaire' only existed from 1971 under Mobutu).
-    ["Zaire", { continent: "Central Africa", note: "Belgian Congo — the name \"Zaire\" wouldn't be coined until 1971 under Mobutu. In 1945 the Belgian tricolour flew over the colony.", modernName: "Belgium", population: 12_000_000 }],
     // "Dutch Guinea" is upstream's misspelling of Dutch NEW Guinea — the western half
     // of New Guinea (135.5°E), not Dutch Guiana in South America (which the 1945 file
     // carries separately as "Suriname"). https://en.wikipedia.org/wiki/Netherlands_New_Guinea
@@ -3626,7 +3662,6 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Sri Lanka in 1945 = British Crown Colony of Ceylon (until 1948).
     // The Ceylon dominion flag was adopted in 1948; the 1951 version (our PNG)
     // came even later. Show Union Jack — the correct flag for 1945.
-    ["Sri Lanka", { modernName: "United Kingdom", continent: "South Asia", note: "British Crown Colony of Ceylon in 1945 — independence came in 1948. The Dominion's lion flag (and our ceylon.png) weren't adopted until 1948/1951.", population: 6_500_000 }],
     // Taiwan in 1945 = surrendered to the Republic of China (KMT) after
     // Japan's defeat. Use the ROC flag.
     ["Taiwan", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Taiwan (Formosa) reverted to Republic of China (ROC) control in October 1945 after Japan's surrender — the ROC's blue-sky/white-sun flag flew.", population: 6_000_000 }],
@@ -3635,23 +3670,28 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, just out of the Japanese occupation and American reconstruction. The white sun and three stars flag has been in use since 1898.", population: 19_000_000 }],
     ["Hungary", { noFlag: true, continent: "Central Europe", noFlagReason: "No flag shown — the red-white-green tricolour flew here with the crowned royal arms, and after 1949 with communist ones; today's plain tricolour dates from 1957 and no period image of either charged version is bundled.", note: "Hungary under Soviet occupation at the war's end — the kingdom formally lasted until the republic of 1946.", population: 9_300_000 }],
     ["Albania", { noFlag: true, continent: "Europe", noFlagReason: "No flag shown — the 1945 provisional government flew the red flag with the black double-headed eagle beneath a gold star; today's plain eagle flag dates from 1992 and no period image of the star version is bundled.", note: "Albania between states — the kingdom ended in 1944 and the People's Republic was proclaimed in January 1946.", population: 1_100_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil — the only South American country to send troops to fight in Europe. Its republican flag dates from 1889.", population: 45_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1889.svg", noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil — the only South American country to send troops to fight in Europe. Its republican flag dates from 1889.", population: 45_000_000 }],
   ])],
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Empire of Ethiopia under Haile Selassie — the Lion of Judah flag flew until the 1974 revolution.", population: 22_000_000 }],
+    // Syria and Egypt were one state, the United Arab Republic, from 1958 to 1961.
+    ["Syria", { flag: "historical-flags/uar-1958.svg", continent: "Western Asia", note: "The Syrian Region of the United Arab Republic — Syria's union with Egypt, which it left in 1961.", population: 4_500_000 }],
+    ["Mali", { flag: "historical-flags/mali-1959.svg", continent: "West Africa", note: "Republic of Mali — independent in September 1960 after the Mali Federation with Senegal broke up. The kanaga figure was dropped from the flag in 1961.", population: 4_500_000 }],
+    ["Cameroon", { flag: "historical-flags/cameroon-1957.svg", continent: "Central Africa", note: "Republic of Cameroon — independent from France on 1 January 1960; the British Southern Cameroons joined in 1961, when stars were added to the flag.", population: 5_200_000 }],
+    ["Eritrea (federated with Ethiopia)", { flag: "historical-flags/eritrea-1952.svg", continent: "East Africa", note: "Eritrea — federated with Ethiopia by UN resolution in 1952 and flying its own flag until Haile Selassie annexed it outright in 1962.", population: 1_200_000 }],
     // AUDIT 2026-08 (goal 3): see the ad1945 entry — the 1785 ensign had not flown since 1931.
     ["Spain", { flag: "historical-flags/spain-1945.svg", continent: "Western Europe", note: "Francoist Spain — the Eagle of Saint John flag flew until 1977; the present arms date from 1981.", population: 30_500_000 }],
     ["Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Japan in its post-war economic miracle, hosting the Olympics four years later. The Hinomaru still flew in its 1870 Meiji form; today's proportions and brighter crimson date from the 1999 flag law.", population: 94_000_000 }],
     // "Türkiye" is the raw dataset spelling; the era remap shows "Turkey", the English
     // name until the 2022 UN request, and the shown name needs its own entry so the
     // panel does not fall through to the registry's Ottoman "Turkey" (which is noFlag).
-    ["Türkiye", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — a NATO member since 1952, in the year its army took power in the coup of May 1960. Its red flag with the white crescent and star dates from 1844.", population: 28_000_000 }],
     ["Turkey", { modernName: "Türkiye", continent: "Western Asia", note: "Republic of Turkey — a NATO member since 1952, in the year its army took power in the coup of May 1960. Its red flag with the white crescent and star dates from 1844. It asked the world to use the Turkish spelling, Türkiye, only in 2022.", population: 28_000_000 }],
     // Independent in 1960, but under the names they carried then: Upper Volta was renamed
     // Burkina Faso in 1984 (https://en.wikipedia.org/wiki/Upper_Volta) and Dahomey became
     // Benin in 1975 (https://en.wikipedia.org/wiki/Republic_of_Dahomey).
-    ["Upper Volta", { modernName: "Burkina Faso", continent: "West Africa", note: "The Republic of Upper Volta — independent from France on 5 August 1960. Thomas Sankara renamed it Burkina Faso, \"land of upright people\", in 1984, and the country adopted a new flag with the name.", population: 4_400_000 }],
+    ["Upper Volta", { flag: "historical-flags/upper-volta-1959.svg", modernName: "Burkina Faso", continent: "West Africa", note: "The Republic of Upper Volta — independent from France on 5 August 1960. Thomas Sankara renamed it Burkina Faso, \"land of upright people\", in 1984, and the country adopted a new flag with the name.", population: 4_400_000 }],
     ["Dahomey", { modernName: "Benin", continent: "West Africa", note: "The Republic of Dahomey — independent from France on 1 August 1960, named after the pre-colonial kingdom. It was renamed Benin, after the Bight of Benin, in 1975.", population: 2_100_000 }],
     // As for 1994 — the ROC flag flew over Taiwan in 1960; "Taiwan" is not a name
     // the modern-country fallback can match, so it needs an explicit entry.
@@ -3665,10 +3705,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony in its last years of British rule, after the Mau Mau uprising; independence came in 1963.", population: 8_100_000 }],
     ["Uganda", { modernName: "United Kingdom", continent: "East Africa", note: "Uganda Protectorate — independence, and the crested-crane flag, came in 1962.", population: 6_800_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika — a UN trust territory under Britain; independent in 1961 and united with Zanzibar as Tanzania in 1964.", population: 10_000_000 }],
-    ["Mauritania", { continent: "West Africa", note: "Islamic Republic of Mauritania, independent from France in November 1960 — its green flag with star and crescent was adopted 1959.", modernName: "Mauritania", population: 900_000 }],
+    ["Mauritania", { flag: "historical-flags/mauritania-1959.svg", continent: "West Africa", note: "Islamic Republic of Mauritania, independent from France in November 1960 — its green flag with star and crescent was adopted 1959.", modernName: "Mauritania", population: 900_000 }],
     ["India", { modernName: "India", continent: "South Asia", note: "Republic of India — independent since 1947; the Ashoka-chakra tricolour was adopted that year.", population: 450_000_000 }],
     ["South Africa", { modernName: "United Kingdom", continent: "Southern Africa", note: "Union of South Africa in its last year before becoming a republic — flying the 1928 orange-white-blue; today's flag dates from 1994.", population: 17_400_000 }],
-    ["Sudan", { modernName: "Sudan", continent: "Northeast Africa", note: "Republic of the Sudan, independent from the Anglo-Egyptian condominium in 1956.", population: 11_200_000 }],
+    ["Sudan", { flag: "historical-flags/sudan-1956.svg", modernName: "Sudan", continent: "Northeast Africa", note: "Republic of the Sudan, independent from the Anglo-Egyptian condominium in 1956.", population: 11_200_000 }],
     ["Iran", { flag: "historical-flags/persia-1933.svg", continent: "Western Asia", note: "Imperial Iran under the Shah — the Lion and Sun flag, used from 1907 until replaced by the Islamic Republic's in 1980.", population: 21_000_000 }],
     ["Saudi Arabia", { flag: "historical-flags/saudi-arabia-1938.svg", continent: "Arabia", note: "Kingdom of Saudi Arabia — the green flag with white shahada and sabre, standardised in 1938; it was revised in 1973 to the current design.", population: 4_000_000 }],
     ["Afghanistan", { flag: "historical-flags/afghanistan-1929.svg", continent: "Central Asia", note: "Kingdom of Afghanistan under King Mohammad Zahir Shah — independent, non-aligned, and modernizing. The black-red-green flag was the national flag throughout his reign until 1973.", population: 11_000_000 }],
@@ -3707,11 +3747,10 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // North Vietnam since the flag is essentially the same from 1955.
     ["Vietnam", { modernName: "Vietnam", continent: "Southeast Asia", note: "Vietnam in 1960 was divided: the Democratic Republic of Vietnam (North, communist) and the Republic of Vietnam (South, US-backed). The modern red-star flag represents the North/reunified Vietnam.", population: 30_000_000 }],
     // Sri Lanka in 1960 = Dominion of Ceylon. Use the Ceylon flag.
-    ["Sri Lanka", { flag: "historical-flags/ceylon.png", continent: "South Asia", note: "The island was the Dominion of Ceylon in 1960 (it became the Republic of Sri Lanka only in 1972). The Dominion's lion flag flew from 1948 to 1972.", population: 9_500_000 }],
     ["Philippines", { modernName: "Philippines", continent: "Southeast Asia", note: "Republic of the Philippines — independent since 1946, with 14 years of post-independence nation-building underway. The white sun and three stars flag has been in use since 1898.", population: 27_000_000 }],
     ["Hungary", { continent: "Central Europe", note: "Hungarian People's Republic — a Soviet satellite since 1948, and four years on from the crushed uprising of 1956. The plain red-white-green tricolour it flies today was restored in 1957, after the uprising tore the communist arms out of the flag.", population: 10_000_000 }],
     ["Albania", { noFlag: true, continent: "Europe", noFlagReason: "No flag shown — the People's Republic flew the red flag with the black double-headed eagle beneath a gold star; today's plain eagle flag dates from 1992 and no period image of the star version is bundled.", note: "People's Republic of Albania under Enver Hoxha — aligned with the Soviet bloc until the split of 1961.", population: 1_600_000 }],
-    ["Brazil", { noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil in the year Brasília became its capital. The republican flag dates from 1889.", population: 70_000_000 }],
+    ["Brazil", { flag: "historical-flags/brazil-1960.svg", noFlag: true, continent: "South America", noFlagReason: "No flag shown — Brazil has flown the republican flag since 1889, but its star field was redrawn each time states were added, so today's 27-star version is not the one that flew at this date, and no period-accurate image is bundled.", note: "United States of Brazil in the year Brasília became its capital. The republican flag dates from 1889.", population: 70_000_000 }],
     ["Greece", { modernName: "Greece", continent: "Europe", note: "Kingdom of Greece — independent Balkan state, member of NATO since 1952. The blue-and-white cross flag with nine stripes has been the national flag since 1828.", population: 8_500_000 }],
   ])],
 
@@ -4127,6 +4166,141 @@ const FALSE_SUBJECTO: ReadonlyMap<string, string> = new Map([
 ]);
 
 /**
+ * The power that GOVERNED a polity at a given era's date, keyed `eraId|NAME` (the raw
+ * dataset NAME, which is what the map hands us).
+ *
+ * WHY: the upstream files record most colonies as their own sovereign — 1960 Bechuanaland
+ * is `SUBJECTO: "Botswana"`, 1938 Ceylon is `SUBJECTO: "Ceylon"` — so the ruler layer of
+ * the flag resolution never fired for them, and the adoption-year gate then refused the
+ * successor state's modern flag (Botswana's dates from 1966). The result was a colony's
+ * card with no flag at all, in an era when the Union Jack was flying over it. Measured
+ * 2026-08: 23–31 such polities per era from 1914 on.
+ *
+ * A polity listed here inherits its ruler's ERA-LEGAL flag and the panel captions it
+ * ("Flew the flag of the United Kingdom — it had no national flag of its own at this
+ * date") plus a "Ruled by" row, which is what the historical-era flag rule requires of an
+ * inherited flag. The gate still applies: the ruler's own flag must exist at that date.
+ *
+ * Keyed per ERA on purpose. Most of these names belong to an independent state in a later
+ * era — Fiji, Jamaica, Suriname, Swaziland, Qatar — so an era-agnostic entry would fly the
+ * Union Jack over the 1994 map. Only names that were NEVER independent (Nyasaland,
+ * Basutoland, Ruanda-Urundi …) may instead carry `PolityInfo.ruler` on their registry entry.
+ *
+ * Sourced, like every other fact here: each line names the power that actually governed
+ * the territory at that date. Never a guess, and never a later successor.
+ */
+const ERA_RULER: ReadonlyMap<string, string> = new Map([
+  /* --- 1880: the eve of the Scramble for Africa ------------------------------- */
+  ["ad1880|Belize", "United Kingdom"],            // British Honduras, a colony since 1862
+  ["ad1880|Fiji", "United Kingdom"],              // ceded to Britain in 1874
+  /* --- 1900 ------------------------------------------------------------------- */
+  ["ad1900|Belize", "United Kingdom"],
+  ["ad1900|Fiji", "United Kingdom"],
+  ["ad1900|Ceylon", "United Kingdom"],            // British crown colony from 1802
+  ["ad1900|Dutch Guiana", "Netherlands"],
+  ["ad1900|British Guiana", "United Kingdom"],
+  ["ad1900|Congo", "France"],                     // French Congo, organised 1882
+  /* --- 1914: the last year of the old empires --------------------------------- */
+  ["ad1914|Guyana", "United Kingdom"],            // British Guiana
+  ["ad1914|Belize", "United Kingdom"],
+  ["ad1914|Lesotho", "United Kingdom"],           // Basutoland, a British protectorate
+  ["ad1914|Swaziland", "United Kingdom"],         // British protectorate from 1903
+  ["ad1914|Fiji", "United Kingdom"],
+  ["ad1914|Malta", "United Kingdom"],             // British from 1800
+  ["ad1914|Gambia, The", "United Kingdom"],
+  ["ad1914|Suriname", "Netherlands"],
+  ["ad1914|Iceland", "Denmark"],                  // Danish dependency; its own flag came 1915
+  ["ad1914|Finland", "Russian Empire"],           // Grand Duchy of Finland
+  ["ad1914|Georgia", "Russian Empire"],           // annexed 1801; the republic came in 1918
+  ["ad1914|Azerbaijan", "Russian Empire"],        // Baku and Elisabethpol Governorates
+  ["ad1914|Equatorial Guinea", "Spain"],          // Spanish Guinea
+  ["ad1914|Samoa", "German Empire"],              // German Samoa until August 1914
+  /* --- 1920: mandates and protectorates --------------------------------------- */
+  ["ad1920|Guyana", "United Kingdom"],
+  ["ad1920|Belize", "United Kingdom"],
+  ["ad1920|Lesotho", "United Kingdom"],
+  ["ad1920|Botswana", "United Kingdom"],          // Bechuanaland Protectorate
+  ["ad1920|Malawi", "United Kingdom"],            // Nyasaland
+  ["ad1920|Zimbabwe", "United Kingdom"],          // Southern Rhodesia, a British colony
+  ["ad1920|Jamaica", "United Kingdom"],
+  ["ad1920|Fiji", "United Kingdom"],
+  ["ad1920|Gambia, The", "United Kingdom"],
+  ["ad1920|Suriname", "Netherlands"],
+  ["ad1920|Guinea-Bissau", "Portugal"],           // Portuguese Guinea
+  ["ad1920|Equatorial Guinea", "Spain"],
+  ["ad1920|Burundi", "Belgium"],                  // Ruanda-Urundi, Belgian mandate
+  ["ad1920|Rwanda", "Belgium"],
+  ["ad1920|Togo", "France"],                      // French Togoland mandate (the larger part)
+  ["ad1920|Samoa", "New Zealand"],                // Western Samoa, a New Zealand mandate
+  /* --- 1938 ------------------------------------------------------------------- */
+  ["ad1938|Guyana", "United Kingdom"],
+  ["ad1938|Belize", "United Kingdom"],
+  ["ad1938|Malawi", "United Kingdom"],
+  ["ad1938|Jamaica", "United Kingdom"],
+  ["ad1938|Fiji", "United Kingdom"],
+  ["ad1938|Bahamas", "United Kingdom"],
+  ["ad1938|Gambia, The", "United Kingdom"],
+  ["ad1938|Ceylon", "United Kingdom"],
+  ["ad1938|Suriname", "Netherlands"],
+  ["ad1938|Guinea-Bissau", "Portugal"],
+  ["ad1938|Burundi", "Belgium"],
+  ["ad1938|Rwanda", "Belgium"],
+  ["ad1938|Togo", "France"],
+  ["ad1938|Laos", "France"],                      // French protectorate within Indochina
+  ["ad1938|Samoa", "New Zealand"],
+  /* --- 1945 ------------------------------------------------------------------- */
+  ["ad1945|Guyana", "United Kingdom"],
+  ["ad1945|Belize", "United Kingdom"],
+  ["ad1945|Lesotho", "United Kingdom"],
+  ["ad1945|Fiji", "United Kingdom"],
+  ["ad1945|Bahamas", "United Kingdom"],
+  ["ad1945|Gambia, The", "United Kingdom"],
+  ["ad1945|Jamaica", "United Kingdom"],
+  ["ad1945|Suriname", "Netherlands"],
+  ["ad1945|Burundi", "Belgium"],
+  ["ad1945|Rwanda", "Belgium"],
+  ["ad1945|Samoa", "New Zealand"],
+  ["ad1945|Western Sahara", "Spain"],             // Spanish Sahara
+  ["ad1945|United Arab Emirates", "United Kingdom"], // the Trucial States
+  ["ad1945|Central African Republic", "France"],   // Ubangi-Shari
+  ["ad1945|Congo", "France"],                     // Moyen-Congo
+  ["ad1945|Cameroon", "France"],                  // French Cameroun, a UN trust territory
+  ["ad1945|Burkina Faso", "France"],              // Upper Volta, then part of French Sudan
+  ["ad1945|Gabon", "France"],
+  ["ad1945|Benin", "France"],                     // French Dahomey
+  ["ad1945|Togo", "France"],
+  ["ad1945|Djibouti", "France"],                  // French Somaliland
+  ["ad1945|Equatorial Guinea", "Spain"],          // Spanish Guinea
+  ["ad1945|Papua New Guinea", "Australia"],
+  ["ad1945|Israel", "United Kingdom"],            // Mandatory Palestine until 14 May 1948
+  ["ad1920|Ghana", "United Kingdom"],             // the Gold Coast colony
+  ["ad1945|Sri Lanka", "United Kingdom"],         // the crown colony of Ceylon; independence 1948
+  ["ad1945|Zaire", "Belgium"],                    // the Belgian Congo
+  /* --- 1960: the year of African independence, and what was still ruled ------- */
+  ["ad1960|Guyana", "United Kingdom"],
+  ["ad1960|Belize", "United Kingdom"],
+  ["ad1960|Lesotho", "United Kingdom"],
+  ["ad1960|Botswana", "United Kingdom"],
+  ["ad1960|Malawi", "United Kingdom"],
+  ["ad1960|Zimbabwe", "United Kingdom"],
+  ["ad1960|Swaziland", "United Kingdom"],
+  ["ad1960|Jamaica", "United Kingdom"],
+  ["ad1960|Fiji", "United Kingdom"],
+  ["ad1960|Bahamas", "United Kingdom"],
+  ["ad1960|Gambia, The", "United Kingdom"],
+  ["ad1960|Suriname", "Netherlands"],
+  ["ad1960|Guinea-Bissau", "Portugal"],
+  ["ad1960|Equatorial Guinea", "Spain"],
+  ["ad1960|Western Sahara", "Spain"],
+  ["ad1960|Burundi", "Belgium"],
+  ["ad1960|Rwanda", "Belgium"],
+  ["ad1960|United Arab Emirates", "United Kingdom"],
+  ["ad1960|Djibouti", "France"],                  // French Somaliland
+  ["ad1960|Papua New Guinea", "Australia"],       // the Territory of Papua and New Guinea
+  ["ad1960|Uganda", "United Kingdom"],            // Uganda Protectorate; independence 1962
+]);
+
+/**
  * The dataset's ruling power for a polity, or null when the dataset's SUBJECTO is
  * refuted for this era (see FALSE_SUBJECTO). Callers must use this rather than
  * reading SUBJECTO directly, so a refuted ruler can neither lend its flag nor appear
@@ -4139,6 +4313,8 @@ export function eraRuler(
 ): string | null {
   // A curated `ruler` wins: it exists precisely because the dataset's SUBJECTO is silent
   // or self-referential for this polity at this date.
+  const perEra = ERA_RULER.get(`${eraId}|${name}`);
+  if (perEra) return perEra;
   const curated = polityInfo(name, eraId).ruler;
   if (curated) return curated;
   if (!datasetRuler || datasetRuler === name) return null;

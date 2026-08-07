@@ -71,8 +71,11 @@ for (const [local, entry] of Object.entries(manifest.files)) {
     continue;
   }
   const buf = Buffer.from(await res.arrayBuffer());
-  if (!buf.slice(0, 400).toString("utf8").includes("<svg")) {
-    console.error(`✗ ${local}: fetched bytes are not an SVG.`);
+  const isPng = local.endsWith(".png");
+  const looksSvg = buf.slice(0, 400).toString("utf8").includes("<svg");
+  const looksPng = buf.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
+  if (isPng ? !looksPng : !looksSvg) {
+    console.error(`✗ ${local}: fetched bytes are not ${isPng ? "a PNG" : "an SVG"}.`);
     failed++;
     continue;
   }
