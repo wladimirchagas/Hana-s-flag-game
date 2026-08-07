@@ -204,6 +204,44 @@ for (const [key, lines] of keyLines) {
   }
 }
 
+// ── D2. no duplicate keys inside one ERA_OVERRIDES era map ──────────────────
+// Each era's overrides are built from an array of pairs too, so the same shadowing bug
+// applies WITHIN an era: a second ["France", …] in the ad1500 map silently wins and the
+// first becomes dead code. Found during the 2026-08 era audit, when a corrected ad1500
+// France entry had no effect because a later duplicate re-asserted the wrong flag.
+{
+  const eraStart = registrySrc.findIndex((l) => l.includes("const ERA_OVERRIDES"));
+  const eraEnd = registrySrc.findIndex((l, i) => i > eraStart && l.startsWith("]);"));
+  let currentEra = null;
+  let seen = new Map();
+  const flush = () => {
+    if (!currentEra) return;
+    for (const [key, lines] of seen) {
+      if (lines.length > 1) {
+        failures.push(
+          `ERA_OVERRIDES["${currentEra}"] has ${lines.length} entries for "${key}" (lines ${lines.join(", ")}) — ` +
+            "only the last survives, so the others are dead code. Merge them into one entry.",
+        );
+      }
+    }
+  };
+  for (let i = eraStart; i < eraEnd; i++) {
+    const eraLine = registrySrc[i].match(/^\s*\["(\w+)",\s*new Map<string, PolityInfo>\(\[/);
+    if (eraLine) {
+      flush();
+      currentEra = eraLine[1];
+      seen = new Map();
+      continue;
+    }
+    const m = registrySrc[i].match(/^\s*\["([^"]+)",\s*\{/);
+    if (!m || !currentEra) continue;
+    const lines = seen.get(m[1]) ?? [];
+    lines.push(i + 1);
+    seen.set(m[1], lines);
+  }
+  flush();
+}
+
 console.log(
   `Era flag explanations — ${explained.length} deliberate suppressions from ` +
     `${EXPLANATION_FLOOR_YEAR} on, each with a curated reason:`,

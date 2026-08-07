@@ -49,6 +49,7 @@ import {
   ERAS,
   eraAllowsModernFlagFallback,
   getEra,
+  curatedFlagValidInEra,
   flagExistedInEra,
   eraRuler,
   noFlagIsEraSpecific,
@@ -123,6 +124,10 @@ type HistoricalSelection = {
   /** Set when no flag is shown BECAUSE the modern one postdates the era. Lets the
    *  panel explain precisely instead of claiming the polity predates flags. */
   flagTooNew?: { name: string; year: number };
+  /** Set when the polity's CURATED flag image was refused because that design was not
+   *  flown at this era's date — see HISTORICAL_FLAG_VALIDITY. The panel names the design
+   *  and its years, which is a real explanation, not the causeless fallback line. */
+  flagOutOfPeriod?: { design: string; from: number; to: number };
   /** Curated, sourced explanation of WHY this polity shows no flag at this date —
    *  from `PolityInfo.noFlagReason`. Rendered verbatim in place of the neutral
    *  fallback line, which never asserts a reason we do not actually know. */
@@ -134,6 +139,11 @@ type HistoricalSelection = {
   datingCaveat?: { issue: string; actual: string };
 };
 type Selection = ModernSelection | HistoricalSelection;
+
+/** Year label for a flag-validity window: negative years are BC, not "-509". */
+function formatFlagYear(year: number): string {
+  return year < 0 ? `${-year} BC` : String(year);
+}
 
 function selectionName(s: Selection, eraId?: Era["id"]): string {
   // Historical polities render through polityDisplayName so upstream's typos
@@ -594,13 +604,33 @@ export default function LearnPage() {
     // Layers 2-5 all pass through flagExistedInEra(): a modern flag may only stand in
     // for a historical one if it already existed at the era's date. Without that gate
     // the map showed South Africa's 1994 flag in 1914 and Uganda's 1962 flag in 1960.
-    let flag: string | undefined = info.flag;
     let continent: string | undefined = info.continent;
     let flagIsRulers = false;
     // Set when a modern flag was REFUSED because it postdates the era, so the panel
     // can say which flag and which year instead of the generic "predates modern flag
     // design" line — that line is plainly wrong for, say, Uganda in 1960.
     let flagTooNew: { name: string; year: number } | undefined;
+    // Set when a CURATED historical flag was refused because the design was not flown at
+    // this date, so the panel can say which design and which years. Layer 1 used to be
+    // ungated, which is how the 1889 dragon banner reached the 1700 map.
+    let flagOutOfPeriod: { design: string; from: number; to: number } | undefined;
+
+    /** A curated flag image, but only if its design was flown at the era's date. */
+    const eraLegalCuratedFlag = (path: string | undefined): string | undefined => {
+      if (!path) return undefined;
+      const verdict = curatedFlagValidInEra(path, eraId);
+      if (verdict.ok) return path;
+      if (verdict.reason === "out-of-period") {
+        flagOutOfPeriod = {
+          design: verdict.window.design,
+          from: verdict.window.from,
+          to: verdict.window.to,
+        };
+      }
+      return undefined;
+    };
+
+    let flag: string | undefined = eraLegalCuratedFlag(info.flag);
 
     /** Modern country flag for `modernName`, but only if period-legal. */
     const eraLegalModernFlag = (modernName: string): Country | null => {
@@ -626,16 +656,22 @@ export default function LearnPage() {
       info.noFlag === true &&
       (!allowFallback || noFlagIsEraSpecific(name, eraId));
     if (!flag && !suppressed) {
-      const modernName =
-        polityModernName(name, eraId) ?? // covers era-overrides + registry.modernName + aliases
-        (allowFallback && countryByName.has(name.toLowerCase()) ? name : null);
+      // A curated `ruler` is a statement that this polity had NO flag of its own at this
+      // date, so the modern-name layer below must not run for it: that layer would hand a
+      // colony its post-independence successor's flag (or its ruler's, uncaptioned).
+      // Skip straight to the ruler layer, which captions what it shows.
+      const modernName = info.ruler
+        ? null
+        : polityModernName(name, eraId) ?? // era-overrides + registry.modernName + aliases
+          (allowFallback && countryByName.has(name.toLowerCase()) ? name : null);
       if (modernName) {
         // If the resolved modernName ALSO has a registry entry with a
         // curated flag, prefer that — this is how the Spanish viceroyalties
         // pick up the 1785 Spanish flag instead of the modern flagcdn one.
         const aliasInfo = polityInfo(modernName, eraId);
-        if (aliasInfo.flag) {
-          flag = aliasInfo.flag;
+        const aliasFlag = eraLegalCuratedFlag(aliasInfo.flag);
+        if (aliasFlag) {
+          flag = aliasFlag;
           if (!continent) continent = aliasInfo.continent;
         } else {
           const country = eraLegalModernFlag(modernName);
@@ -659,8 +695,9 @@ export default function LearnPage() {
         const ruler = eraRuler(name, eraId, polityRulers.get(name));
         if (ruler) {
           const rulerInfo = polityInfo(ruler, eraId);
-          if (rulerInfo.flag) {
-            flag = rulerInfo.flag;
+          const rulerFlag = eraLegalCuratedFlag(rulerInfo.flag);
+          if (rulerFlag) {
+            flag = rulerFlag;
             flagIsRulers = true;
           } else {
             const rulerModern = polityModernName(ruler, eraId) ?? ruler;
@@ -695,6 +732,7 @@ export default function LearnPage() {
       ruledBy: ruledBy && ruledBy !== name ? ruledBy : undefined,
       flagIsRulers: flagIsRulers || undefined,
       flagTooNew: flag ? undefined : flagTooNew,
+      flagOutOfPeriod: flag ? undefined : flagOutOfPeriod,
       // Why this polity shows no flag, when we know. Curated per era in
       // historicalEras.ts; without it the panel falls back to a line that states
       // only what is certainly true (no period flag is bundled).
@@ -1557,6 +1595,18 @@ export default function LearnPage() {
                   // Curated, sourced explanation for THIS polity at THIS date — always
                   // preferred over the two generic lines below. See PolityInfo.noFlagReason.
                   <p className="learn-fs__no-flag">{display.noFlagReason}</p>
+                ) : display.kind === "historical" && display.flagOutOfPeriod ? (
+                  // A curated image exists but its design was not flown at this date.
+                  // Naming the design and its years is a real explanation — never let
+                  // this fall through to the causeless line below.
+                  <p className="learn-fs__no-flag">
+                    No flag for {era.label} — {display.flagOutOfPeriod.design} That design
+                    was flown from {formatFlagYear(display.flagOutOfPeriod.from)}
+                    {display.flagOutOfPeriod.to >= 9999
+                      ? " onwards"
+                      : ` to ${formatFlagYear(display.flagOutOfPeriod.to)}`}
+                    , and no flag of this polity's own date is bundled.
+                  </p>
                 ) : display.kind === "historical" && display.flagTooNew ? (
                   <p className="learn-fs__no-flag">
                     No flag for {era.label} — {display.flagTooNew.name}'s modern flag

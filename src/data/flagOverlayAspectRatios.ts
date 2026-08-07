@@ -70,7 +70,7 @@ export const FLAG_OVERLAY_ASPECT_RATIOS: Readonly<Record<string, number>> = {
   "gw.svg": 2,
   "gy.svg": 1.6667,
   "historical-flags/afghanistan-1901.svg": 1.6417,
-  "historical-flags/brunei-1815.png": 2,
+  "historical-flags/brunei-1888.png": 2,
   "historical-flags/burma-1948.png": 1.7978,
   "historical-flags/byzantine-empire.png": 1,
   "historical-flags/ceylon.png": 2,

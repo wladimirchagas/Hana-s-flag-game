@@ -48,6 +48,13 @@ on:
       - "scripts/data/era-gap-fill.json"
       - "scripts/check-era-anachronism.mjs"
       - "src/data/polityExistence.ts"
+      # A curated era flag is an image with a DATE. check-historical-flag-validity.mjs
+      # gates layer 1 of the flag resolution against that date, the way
+      # check-historical-flag-anachronism.mjs gates the modern-flag borrows.
+      - "scripts/check-historical-flag-validity.mjs"
+      - "src/data/historicalFlagValidity.ts"
+      - "scripts/download-era-flags.mjs"
+      - "scripts/data/era-flag-sources.json"
       # Why a polity shows no flag is a claim the panel makes about history; this
       # check keeps it curated rather than guessed (and keeps the registry free of
       # duplicate keys, which silently shadow curated entries).
@@ -137,6 +144,12 @@ jobs:
 
       - name: Verify no polity appears on a map that predates or postdates it
         run: node scripts/check-era-anachronism.mjs
+
+      - name: Verify no era shows a curated flag outside its sourced date range
+        run: node scripts/check-historical-flag-validity.mjs
+
+      - name: Verify every bundled era flag still matches its recorded source
+        run: node scripts/download-era-flags.mjs --check
 
       - name: Verify every withheld era flag explains itself
         run: node scripts/check-era-flag-explanations.mjs

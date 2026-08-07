@@ -1,0 +1,102 @@
+{
+  "_comment": [
+    "Provenance for the SVG-format curated flags under public/historical-flags/.",
+    "Each entry: local filename -> the exact Wikimedia Commons file it was fetched from,",
+    "the date fetched, a sha256 of the bytes, and WHY the flag is needed (which era/polity",
+    "was showing an out-of-period flag before it was bundled). Re-fetch or verify with",
+    "node scripts/download-era-flags.mjs [--force|--check].",
+    "The sourced from/to window for each of these lives in src/data/historicalFlagValidity.ts."
+  ],
+  "files": {
+    "portugal-1750.svg": {
+      "commons": "Flag of Portugal (1750).svg",
+      "why": "1815 Portugal and its colonies were showing the 1816 United-Kingdom-of-Portugal-Brazil-Algarves arms, a year before that flag existed.",
+      "sha256": "5293b615f94cd06f34c81d9b0fb11a66f375d6706498dd898e2eda1ef6b094e7",
+      "fetched": "2026-08-06"
+    },
+    "siam-1782.svg": {
+      "commons": "Flag of Thailand (1782).svg",
+      "why": "1815 Rattanakosin was showing the 1817 white-elephant-in-chakra flag; the plain red civil ensign flew until 1855.",
+      "sha256": "27838de8f57cccca53ab60fa2759b567ceacb2004a3ad9ced6ca05bda47d21c0",
+      "fetched": "2026-08-06"
+    },
+    "siam-1855.svg": {
+      "commons": "Flag of Siam (1855).svg",
+      "why": "1880/1900/1914 Siam was showing the 1817-1855 chakra flag; Mongkut's white elephant flew 1855-1917.",
+      "sha256": "b9149602fb94c09f553411791f0eb34613c01e4afdde0233b476ccaa78bd8283",
+      "fetched": "2026-08-06"
+    },
+    "france-royal-banner.svg": {
+      "commons": "Royal flag of France.svg",
+      "why": "1500 France was showing the white Bourbon flag, which dates from 1590; the Valois royal banner was azure semé of fleurs-de-lis.",
+      "fetched": "2026-08-06",
+      "sha256": "221a080b4231b758960de05c16b46cb45a9da23d1136f558cdd1e39d12e7e5dd"
+    },
+    "persia-1886.svg": {
+      "commons": "Tricolour Flag of Iran (1886).svg",
+      "why": "1900 Persia was showing the 1907 constitutional flag.",
+      "sha256": "9b62bc847ea5352f60574d54eee018f3d5b0bbd9fd24f288dbf94d3a86007d30",
+      "fetched": "2026-08-06"
+    },
+    "persia-1933.svg": {
+      "commons": "State flag of Iran (1933–1964).svg",
+      "why": "1938/1945/1960 Iran was showing the 1907-1933 flag.",
+      "sha256": "4ccf4f9daea3f0d952b877b9e52266bbbc4f744f7974b64d030278cef441468a",
+      "fetched": "2026-08-06"
+    },
+    "russia-1858.svg": {
+      "commons": "Flag of Russia (1858–1896).svg",
+      "why": "1880 Russia was shown the white-blue-red tricolour, which was the civil ensign; the STATE flag 1858-1896 was black-yellow-white.",
+      "sha256": "669d0e02184ea5a1fee262b1b3d9e3baca621915d71782c30ea91f4d432ba7d6",
+      "fetched": "2026-08-06"
+    },
+    "rsfsr-1918.svg": {
+      "commons": "Flag of the Russian Soviet Federative Socialist Republic (1918–1925).svg",
+      "why": "The 1920 map labels the Soviet state 'USSR' (founded 1922) and flew the USSR flag; in 1920 the polity was the Russian SFSR.",
+      "sha256": "f80f5334b65312118e3509141cd44a91464093a196404efbe11d1bb791c72903",
+      "fetched": "2026-08-06"
+    },
+    "brunei-1906.svg": {
+      "commons": "Flag of Brunei 1906-1959.svg",
+      "why": "1914-1945 Brunei was showing the pre-1906 plain yellow flag.",
+      "sha256": "a66b6bec080308f3577a75520fcddd58b9c3133a8e4ba18e94055cb36a329f6b",
+      "fetched": "2026-08-06"
+    },
+    "yemen-1918.svg": {
+      "commons": "Flag of the Mutawakkilite Kingdom of Yemen (1918-1927).svg",
+      "why": "1920 Yemen was showing the 1927 sword-and-stars flag.",
+      "sha256": "1fd82836d745473ad624ca75dc8165602dc530ad73c15037ca73357bee8035b2",
+      "fetched": "2026-08-06"
+    },
+    "mongolia-1924.svg": {
+      "commons": "Flag of Mongolia 1924 (golden emblem).svg",
+      "why": "1938 Mongolia was showing the 1945 Soyombo flag.",
+      "fetched": "2026-08-06",
+      "sha256": "c3233a422db711a670aa1360947e8fb7f569cd72693f809d4de7d953f99e95a0"
+    },
+    "iraq-1959.svg": {
+      "commons": "Flag of Iraq (1959–1963).svg",
+      "why": "1960 Iraq was showing the Kingdom's 1924-1959 flag, abolished by the 1958 revolution.",
+      "sha256": "18cd77db577594b118fac259448cd5b4ea15fdad567e5ac2364c1efc62f89009",
+      "fetched": "2026-08-06"
+    },
+    "spain-1945.svg": {
+      "commons": "Flag of Spain (1945–1977).svg",
+      "why": "1945 and 1960 Spain were showing the 1785-1931 royal ensign.",
+      "sha256": "16de7afac54eb150e963299bf0ccbff83b099c110fbdc8416408373231a852ea",
+      "fetched": "2026-08-06"
+    },
+    "malaya-1950.svg": {
+      "commons": "Flag of Malaya (1950–1963).svg",
+      "why": "1960 Federation of Malaya had no flag at all — the modern Malaysian flag is gated to 1963.",
+      "sha256": "9666f425f72dde775d816cf8318c072f82ef85f70b2e4fb92cf02e8309f69bee",
+      "fetched": "2026-08-06"
+    },
+    "uar-1958.svg": {
+      "commons": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024).svg",
+      "why": "1960 Egypt and Syria were the United Arab Republic, whose flag is gated out by Egypt's 1984 adoption year.",
+      "sha256": "331d12374444f1c149149292314b12eccf532b16d06468a6dd9b8f581fd969e5",
+      "fetched": "2026-08-06"
+    }
+  }
+}

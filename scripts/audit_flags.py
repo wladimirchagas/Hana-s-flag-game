@@ -57,7 +57,7 @@ WARNINGS: dict[str, str] = {
         "(800–1300 AD) where different dynasties were ruling. Palaiologos is the most "
         "recognisable Byzantine symbol but is technically anachronistic for earlier periods."
     ),
-    "portugal-1500.png": (
+    "portugal-1830.png": (
         "Filename says '1500' but the Wikimedia source is <code>Flag_of_Portugal_(1830–1910).svg</code> "
         "— the constitutional monarchy flag. Correct for the ad1850 era (1830–1910 overlap) "
         "but the filename is misleading. Portugal in 1500 flew a Quinas banner (no matching "
