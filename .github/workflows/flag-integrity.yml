@@ -53,6 +53,7 @@ on:
       # check-historical-flag-anachronism.mjs gates the modern-flag borrows.
       - "scripts/check-historical-flag-validity.mjs"
       - "src/data/historicalFlagValidity.ts"
+      - "scripts/check-era-coastline-layer.mjs"
       - "scripts/download-era-flags.mjs"
       - "scripts/data/era-flag-sources.json"
       # Why a polity shows no flag is a claim the panel makes about history; this
@@ -147,6 +148,9 @@ jobs:
 
       - name: Verify no era shows a curated flag outside its sourced date range
         run: node scripts/check-historical-flag-validity.mjs
+
+      - name: Verify unmapped land still renders as land in every era
+        run: node scripts/check-era-coastline-layer.mjs
 
       - name: Verify every bundled era flag still matches its recorded source
         run: node scripts/download-era-flags.mjs --check

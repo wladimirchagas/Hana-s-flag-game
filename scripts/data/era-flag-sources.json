@@ -217,6 +217,138 @@
       "why": "1938 and 1945 Qatar showed no flag; the modern maroon-and-white flag dates from 1971.",
       "sha256": "f0dabce004c570ee738f0b1165c01b0016c69b62bc3b40ca5bcb853ded9a4cdf",
       "fetched": "2026-08-07"
+    },
+    "orange-free-state.svg": {
+      "commons": "Flag of the Orange Free State.svg",
+      "why": "1900 Orange Free State showed no flag though the Boer republic flew its own from 1857 until the British annexation in 1902.",
+      "sha256": "978561f157da36f8b74fac500fe13a2238e8b3fe0e0c6a95267b96104506471e",
+      "fetched": "2026-08-07"
+    },
+    "ethiopia-1991.svg": {
+      "commons": "Flag of Ethiopia (1991–1996).svg",
+      "why": "1994 Ethiopia showed no flag; the emblem was added in 1996.",
+      "sha256": "26c2634b8c2db9833074e5f6d4a59133239e8bde4a1dd853563babf9feb74312",
+      "fetched": "2026-08-07"
+    },
+    "myanmar-1974.svg": {
+      "commons": "Flag of Myanmar (1974–2010).svg",
+      "why": "1994 Myanmar showed no flag; the modern flag dates from 2010.",
+      "sha256": "0809cf59d2c4e108ce01e95cd8b3153fff9f311ca6357fc826788d3a3dac0090",
+      "fetched": "2026-08-07"
+    },
+    "afghanistan-1992.svg": {
+      "commons": "Flag of Afghanistan (1992–2001).svg",
+      "why": "1994 Afghanistan showed no flag; the modern flag dates from 2021.",
+      "sha256": "ba633c17e49337aded5db6e979cd277d216e312b44e94606483cd2abfe2b043a",
+      "fetched": "2026-08-07"
+    },
+    "iraq-1991.svg": {
+      "commons": "Flag of Iraq (1991–2004).svg",
+      "why": "1994 Iraq showed no flag; the modern flag dates from 2008.",
+      "sha256": "e93be36710a71395fb1819d7fccc9ebc74953bd735ecb0c4e1e2e2a698c49bcb",
+      "fetched": "2026-08-07"
+    },
+    "belarus-1991.svg": {
+      "commons": "Flag of Belarus (1918, 1991–1995).svg",
+      "why": "1994 Belarus showed no flag; the white-red-white flag flew until 1995.",
+      "sha256": "ab40283d6c504ed74f9b64808135beb70e8fa6097f7ea7a670547e0db7ef7e7a",
+      "fetched": "2026-08-07"
+    },
+    "eritrea-1993.svg": {
+      "commons": "Flag of Eritrea (1993–1995).svg",
+      "why": "1994 Eritrea showed no flag; the modern flag dates from 1995.",
+      "sha256": "8bec9f628356ff013fe6e09a33e023b0d23c6d702ede94c9cebf4fa4a6123dc1",
+      "fetched": "2026-08-07"
+    },
+    "serbia-montenegro.svg": {
+      "commons": "Flag of Serbia and Montenegro (1992–2006).svg",
+      "why": "1994 Serbia showed no flag; it was a republic of the Federal Republic of Yugoslavia.",
+      "sha256": "d766043a5ccac18b7ab3be1def2439d626e7ed2a03a79ae278b0eadd3bdfa5df",
+      "fetched": "2026-08-07"
+    },
+    "georgia-1990.svg": {
+      "commons": "Flag of Georgia (1990–2004).svg",
+      "why": "1994 Georgia showed no flag; the five-cross flag dates from 2004.",
+      "sha256": "8159ff4b28f79d009e3ee042498961e3be8b2874227bf0d4fc19911ef1ba5cbc",
+      "fetched": "2026-08-07"
+    },
+    "bosnia-1992.svg": {
+      "commons": "Flag of Bosnia and Herzegovina (1992–1998).svg",
+      "why": "1994 Bosnia and Herzegovina showed no flag; the modern flag dates from 1998.",
+      "sha256": "bf2da26a5184ffabbe52b0da6f7e75a19969a00cdd2de85a6ab6ce2f58d4c370",
+      "fetched": "2026-08-07"
+    },
+    "lesotho-1987.svg": {
+      "commons": "Flag of Lesotho (1987–2006).svg",
+      "why": "1994 Lesotho showed no flag; the modern flag dates from 2006.",
+      "sha256": "00370bdf4182b9fe026642c8fbf7d261b0bbcbfaea5b80e7e7b7c15f1a511a48",
+      "fetched": "2026-08-07"
+    },
+    "rwanda-1962.svg": {
+      "commons": "Flag of Rwanda (1961–2001).svg",
+      "why": "1994 Rwanda showed no flag; the modern flag dates from 2001.",
+      "sha256": "b3063c3bd7372372d4ee727103610947e9043a8296925a1c7a95a00d41fcfa39",
+      "fetched": "2026-08-07"
+    },
+    "macedonia-1992.svg": {
+      "commons": "Flag of Macedonia (1992–1995).svg",
+      "why": "1994 Macedonia showed no flag; the Vergina Sun flag was replaced in 1995.",
+      "sha256": "3a35e9e9352b6a0ed674a6a1ab80b4e617d2dfc914944d60f5305d7481e065a0",
+      "fetched": "2026-08-07"
+    },
+    "montenegro-1993.svg": {
+      "commons": "Flag of Montenegro (1993–2004).svg",
+      "why": "1994 Montenegro showed no flag; the modern flag dates from 2004.",
+      "sha256": "b838a831b33dea5c5474017561e331c09f9315dda586dd4d6d034dbaea22923d",
+      "fetched": "2026-08-07"
+    },
+    "nejd-1902.svg": {
+      "commons": "Flag of the Emirate of Nejd and Hasa.svg",
+      "why": "1914 Arabia (Nejd) showed no flag though it was the largest unflagged polity on that map; Saudi Arabia's modern flag dates from 1973.",
+      "sha256": "e80c02ed422250de4365a54ff70f19a43b43f0c03a6ccd563e7d718d7598a399",
+      "fetched": "2026-08-07"
+    },
+    "georgia-1918.svg": {
+      "commons": "Flag of Georgia (1918–1921, 1-2).svg",
+      "why": "1920 Georgia showed no flag though the Democratic Republic flew this one.",
+      "sha256": "cc070f4f1971da4a169099fd72d05b54c99090d5a0777ca9b21233a2f3010bb3",
+      "fetched": "2026-08-07"
+    },
+    "oman-1970.svg": {
+      "commons": "Flag of Oman (1970–1995).svg",
+      "why": "1994 Oman showed no flag; the modern flag's proportions were fixed in 1995.",
+      "sha256": "56d4c04937f580fb421aceb415b392658acee893332fd2b853d55c74e7469b38",
+      "fetched": "2026-08-07"
+    },
+    "kuwait-1921.svg": {
+      "commons": "Flag of Kuwait (1921-1940).svg",
+      "why": "1938 and 1945 Kuwait showed no flag; the modern flag dates from 1961.",
+      "sha256": "c65f73b863be80363f3d3bafaa155ccf148876e998aa49f692a245c94c8569db",
+      "fetched": "2026-08-07"
+    },
+    "kuwait-1914.svg": {
+      "commons": "Flag of Kuwait (1914-1921).svg",
+      "why": "1914 and 1920 Kuwait showed no flag.",
+      "sha256": "12095af8ec01342141a670f4dd120b0784de69b5ac4cd14b50090e5534ee9c89",
+      "fetched": "2026-08-07"
+    },
+    "andorra-1866.svg": {
+      "commons": "Flag of Andorra (end of the 19th century-c. 1930s).svg",
+      "why": "1938–1960 Andorra showed no flag; the modern flag with the arms dates from 1971.",
+      "sha256": "d3f05e4ef4fdb9908a1f9bdd6dae819f6a53a2b4dcd787986a0fd666c853c429",
+      "fetched": "2026-08-07"
+    },
+    "syria-1980.svg": {
+      "commons": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024).svg",
+      "why": "1994 Syria showed no flag; the same red-white-black design it readopted in 1980 flew until 2024. Bundled separately from the UAR copy so each carries its own dated window.",
+      "sha256": "331d12374444f1c149149292314b12eccf532b16d06468a6dd9b8f581fd969e5",
+      "fetched": "2026-08-07"
+    },
+    "syria-1930.svg": {
+      "commons": "Flag of Syria (1930–1958, 1961–1963).svg",
+      "why": "1945 Syria showed no flag; the green-white-black flag with three red stars flew 1930–1958 and again 1961–1963.",
+      "sha256": "7e88830b9b10b58141612269ca4a0a3946dee1ce0b3ddc4cbc787272fbda73af",
+      "fetched": "2026-08-07"
     }
   }
 }
