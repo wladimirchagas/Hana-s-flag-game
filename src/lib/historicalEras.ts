@@ -3530,6 +3530,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela under Eleazar Lopez Contreras. Seven stars in an arc — the eighth, for Guayana Province, was not added until 2006." }],
     ["Mexico", { flag: "historical-flags/mexico-1934.svg", continent: "Mesoamerica", note: "Mexico under Lazaro Cardenas. The 1934 pattern, the eagle in profile within a full circular oak-and-laurel wreath." }],
     ["Kuwait", { flag: "historical-flags/kuwait-1921.svg", continent: "Western Asia", note: "Sheikhdom of Kuwait — oil was struck at Burgan in 1938, four years after the concession was signed.", population: 75_000 }],
     ["Qatar", { flag: "historical-flags/qatar-1936.svg", continent: "Western Asia", note: "Sheikhdom of Qatar — a British protectorate since 1916, with the pearl trade collapsed and oil not yet flowing.", population: 25_000 }],
@@ -3597,6 +3598,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela. The seven-star tricolour adopted in 1930; the eighth star followed in 2006." }],
     ["Mexico", { flag: "historical-flags/mexico-1934.svg", continent: "Mesoamerica", note: "Mexico. The 1934 pattern was still the national flag; the arms the modern flag carries were adopted in 1968." }],
     // The four occupation zones. Germany had NO national flag from 1945 to 1949 — the
     // black-red-gold was abolished in 1935 and readopted by the Federal Republic in 1949 —
@@ -3704,6 +3706,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela in the democratic era after 1958. The flag carried seven stars until 2006." }],
     ["Mexico", { flag: "historical-flags/mexico-1934.svg", continent: "Mesoamerica", note: "Mexico. The 1934 pattern; Francisco Eppens Helguera's arms, which the modern flag carries, followed on 16 September 1968." }],
     ["Oman", { flag: "historical-flags/muscat-oman.svg", continent: "Western Asia", note: "Sultanate of Muscat and Oman — the Jebel Akhdar war had just ended; the plain red flag flew until 1970.", population: 550_000 }],
     ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal — King Mahendra dismissed the elected government in December 1960 and ruled directly. The flag's geometry was fixed by the 1962 constitution.", population: 9_800_000 }],
@@ -3787,6 +3790,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1994", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela. Still the seven-star flag — the eighth star was added on 12 March 2006." }],
     ["Oman", { flag: "historical-flags/oman-1970.svg", continent: "Western Asia", note: "Sultanate of Oman under Qaboos bin Said — the flag he introduced in 1970; its proportions were fixed in 1995.", population: 2_000_000 }],
     ["Syria", { flag: "historical-flags/syria-1980.svg", continent: "Western Asia", note: "Syria under Hafez al-Assad — the two-star flag of the former United Arab Republic, readopted in 1980.", population: 14_000_000 }],
     ["Turkish Cypriot-administered area", { flag: "flags/trnc.svg", continent: "Eastern Mediterranean", note: "Northern Cyprus — self-declared in 1983 after the 1974 division of the island, and recognised only by Türkiye.", population: 200_000 }],

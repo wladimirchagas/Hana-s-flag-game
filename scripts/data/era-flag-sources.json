@@ -373,6 +373,12 @@
       "why": "1938, 1945 and 1960 Mexico. The design flown from 1934 until the current arms were adopted 16 September 1968.",
       "sha256": "06f670d043803ee9f3632aa1b404e7ecb8473149d8eb4cb34908ed2056061709",
       "fetched": "2026-08-07"
+    },
+    "venezuela-1930.svg": {
+      "commons": "Flag of Venezuela (1930–2006).svg",
+      "why": "1938, 1945, 1960 and 1994 Venezuela were showing the EIGHT-star flag, whose eighth star was added 12 March 2006. FLAG_ADOPTION_YEAR had VE at 1811 (the starless independence tricolour), so the gate let the 2006 flag onto all eight eras Venezuela appears in. This is the seven-star flag actually flown 1930-2006.",
+      "sha256": "dbc70585dd4adab998f53378410c2b6cbea9955a6f4909e6f10d275fb9c7c495",
+      "fetched": "2026-08-07"
     }
   }
 }
