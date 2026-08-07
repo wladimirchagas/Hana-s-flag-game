@@ -38,7 +38,13 @@
 
 ### Process & Methodology Feedback
 
-- **Ordering/Priority**: "3 first, then 2, then 1" (user preference on task ordering) [Reported: Session 1]
+- **Ordering/Priority**: ~~"3 first, then 2, then 1"~~ — **SUPERSEDED 2026-08-07.** The owner corrected
+  this to **1, then 2, then 3**: "The most logical order is actually 1 then 2 then 3." It is a
+  dependency chain, not a preference — the land is the canvas, the polity sits on it, the flag is what
+  that polity flew. And within goal 2, **confirm the polity's correct/accepted NAME first**, because
+  the name decides whose borders you are checking and which flag is even a candidate. See the
+  "What the historical eras are FOR" rule in CLAUDE.md, which is now the authority. [Reported: Session 1;
+  corrected 2026-08-07]
 - **Root cause analysis mandate**: "Whenever you fix an issue because you found or because i've provided feedback, YOU MUST ALWAYS understand if the same/a similar issue impacted other entries. Then prevent the root cause issue from ever happening again by updating hard coded rules if necessary. Do this going forward, but also retrospectivelly." [Reported: Session 1] ⚠️ **CRITICAL MANDATE**
 - **Permission & autonomy**: "Yes, I told you earlier not to ask for permission; as long as you're operating within the hard coded rules, go ahead so we can fix things asap" [Reported: Session 1]
 - **Workflow**: "merge first, then continue" (instruction for batch workflow) [Reported: Session 1]

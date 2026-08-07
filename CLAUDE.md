@@ -468,41 +468,80 @@ judged against the goal and not only against the letter of a check.**
 | # | Goal | What it means | Guarded by |
 |---|------|---------------|-----------|
 | **1** | **The natural world is the SAME in every era** | Coastlines, islands and landmasses are physical geography, not history. They must be byte-identical across all 21 eras, and land no polity claims must still LOOK like land. | `restore-era-geometry.mjs --check`, `check-era-landmass.mjs`, and the basemap layer in `HistoricalMap.tsx` |
-| **2** | **The political borders are the ones accepted for THAT date** | Which polity held which ground, under the name it actually bore at that date. Modern borders are not the default and a modern name is not a safe label. | `check-era-anachronism.mjs` + `POLITY_EXISTENCE` / `POLITY_NAME_FOR_ERA` / `ERA_EXTENT_CAVEATS`, and sourced upstream adoption for geometry |
+| **2** | **The polity is the one that was there, under the name it actually bore — and its borders are the ones accepted for THAT date** | **Confirm the NAME first**, then the extent. Which polity held which ground, called what it was called at that date. Modern borders are not the default and a modern name is not a safe label. | `check-era-anachronism.mjs` + `POLITY_EXISTENCE` / `POLITY_NAME_FOR_ERA` / `ERA_EXTENT_CAVEATS`, and sourced upstream adoption for geometry |
 | **3** | **The flag is the one that flew at THAT date** | Every flag a polity's card shows must be a design that existed at the era's year — whether it comes from a curated image, a modern country's flag, or a ruler's flag. | `check-historical-flag-anachronism.mjs` (modern borrows) + `check-historical-flag-validity.mjs` (curated images) + `check-era-flag-explanations.mjs` |
 
-### How the three interact — the ordering that keeps them honest
+### Work them in order — 1, then 2, then 3. Each answer is the input to the next.
 
-1. **Goal 1 outranks goals 2 and 3 absolutely.** No amount of historical sourcing licenses moving a
-   coastline. A wrong border is a claim someone can check; an invented coastline is invisible.
-2. **Goal 2 is a LABELLING problem before it is a geometry problem.** Nearly every "this era is
-   wrong" finding is fixed by a display-name remap or a disclosed caveat, never by redrawing.
-3. **Goal 3 fails silently, so it needs the strictest gate.** A plausible flag decades out of period
-   looks completely fine to everyone, including the person who shipped it. Both flag gates are
-   therefore *deny-by-default*: an undated flag is refused, never allowed.
-4. **A missing thing beats a wrong thing, in all three.** An unmapped region rendered as hatched
-   land, a polity with no flag and a dated explanation, and a disclosed "Dating" caveat are all
-   correct outcomes. Fabricating to fill a gap is not.
+**This order is not a preference, it is a dependency chain.** The land is the canvas; the polity is
+what sits on it; the flag is what that polity flew. Answer them out of order and you will investigate
+the wrong question with real diligence and get a confidently wrong result.
+
+1. **Goal 1 first — settle the land.** Until the coastline is the imported one and land no polity
+   claims still reads as land, nothing drawn on top can be judged: a polity that appears to end at
+   the sea may simply be missing its neighbour. Goal 1 also **outranks goals 2 and 3 absolutely** —
+   no amount of historical sourcing licenses moving a coastline. A wrong border is a claim someone
+   can check; an invented coastline is invisible.
+2. **Goal 2 second, and within it THE NAME COMES FIRST.** Before asking where a polity's borders ran
+   or which flag it flew, establish **what polity this actually was at this date, and what it was
+   correctly and commonly called then**. The name is not a caption — it is the identity that decides
+   both remaining questions: *whose* borders you are checking, and *which* flag is even a candidate.
+   Only once the name is confirmed does the extent question make sense (and where the extent is wrong
+   and unsourceable, disclose it — never redraw).
+3. **Goal 3 last — the flag follows from the identity.** Ask "what did *this* polity, at *this* date,
+   fly?" A flag can only be judged once steps 1 and 2 have said which polity it belongs to. Goal 3
+   also fails the most silently: a plausible flag decades out of period looks completely fine to
+   everyone, including whoever shipped it. Both flag gates are therefore *deny-by-default* — an
+   undated flag is refused, never allowed.
+
+**A missing thing beats a wrong thing, at every step.** An unmapped region rendered as hatched land,
+a polity with no flag and a dated explanation, and a disclosed "Dating" caveat are all correct
+outcomes. Fabricating to fill a gap is not.
+
+#### Why the name has to come first — every one of these was a name error before it was anything else
+
+The 2026-08 audit found the pivot was almost always the label, and fixing the name changed what the
+right answer to the flag question even was:
+
+| era | dataset NAME | what it actually was | what the name error did downstream |
+|---|---|---|---|
+| 1700 | Austrian Empire | the **Habsburg Monarchy** (the empire was proclaimed 1804) | invited the Austrian Empire's flag question a century early |
+| 1900 | Kingdom of Brazil | the **Old Republic** (the empire fell 1889) | made the imperial flag look like the right answer; the republican flag was correct |
+| 1914 | Armenia, Azerbaijan, Georgia | **Russian governorates** | implied three states that could have flags; in truth the Russian flag flew |
+| 1920 | Iraq | **Mandatory Mesopotamia** (the kingdom came 1921) | implied an Iraqi flag existed; the Union Jack flew |
+| 1938 | Jordan | **Transjordan** (renamed 1949) | the name was wrong but the 1928 flag survived the correction — proof the two questions are separate |
+| 1920–60 | Rwanda, Burundi | one territory, **Ruanda-Urundi** | two independent states implied where one Belgian territory existed |
+| 1900 | Kingdom of Hawaii | the **Territory of Hawaii** (annexed 1898) | same flag, different polity — only the name was wrong |
+
+So: confirm the name, and the border and flag investigations start from the right polity. Skip it,
+and both inherit the error.
+
+**Goal 2 is a LABELLING problem before it is a geometry problem.** Nearly every "this era is wrong"
+finding is fixed by a display-name remap or a disclosed caveat, never by redrawing.
 
 ### Auditing an era
 
 `node scripts/audit-era-polities.mjs <eraId>` prints every polity in one era with its display name,
 its existence verdict, and which layer resolved its flag — the worksheet for checking all three goals
-on a single era. `--gaps` narrows it to rows that still need work; `--summary` gives one line per era.
+on a single era, in that order: the name column first, then existence, then the flag. `--gaps`
+narrows it to rows that still need work; `--summary` gives one line per era.
 
 ### Rules
 
-1. **Never satisfy one goal by breaking another.** In particular: never fill a goal-2 coverage gap by
+1. **Work 1 → 2 → 3, and confirm the polity's name before its border or its flag.** A flag or border
+   verified against the wrong identity is worse than an unverified one, because it looks checked.
+2. **Never satisfy one goal by breaking another.** In particular: never fill a goal-2 coverage gap by
    inventing a polity, and never fix a goal-3 blank by showing a flag from the wrong date.
-2. **Every fix must be checkable by someone who was not there.** That means a source URL in the data
+3. **Every fix must be checkable by someone who was not there.** That means a source URL in the data
    (`POLITY_EXISTENCE.source`, `HISTORICAL_FLAG_VALIDITY.source`, `era-flag-sources.json`,
    `era-gap-fill.json`), not a note in a PR description.
-3. **When you fix one polity, sweep the class.** Every finding in this feature has turned out to be
+4. **When you fix one polity, sweep the class.** Every finding in this feature has turned out to be
    systematic — one ungated flag image meant 68 wrong renders, one name-only scan meant seven wrong
    capital badges. After any era fix, re-run the audit across ALL eras before calling it done.
-4. **Verify in the running app** (the mandatory visual-verification rule applies): open the era you
-   changed, confirm the coastline is intact (goal 1), the polity's name and note match the date
-   (goal 2), and the flag or its dated explanation is right (goal 3).
+5. **Verify in the running app** (the mandatory visual-verification rule applies), in the same order:
+   open the era you changed and confirm the coastline is intact (goal 1), then that the polity's NAME
+   and note are right for the date (goal 2), then that the flag or its dated explanation follows from
+   that identity (goal 3).
 
 ## A curated historical flag is an image with a DATE — gate it, or it will fly in the wrong century — hard rule, do not override without approval
 
