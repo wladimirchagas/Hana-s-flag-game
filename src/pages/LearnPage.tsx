@@ -57,8 +57,10 @@ import {
   eraRuler,
   noFlagIsEraSpecific,
   polityDisplayName,
+  polityContinent,
   polityInfo,
   polityModernName,
+  rulerDisplayName,
   type Era,
 } from "../lib/historicalEras";
 import { subdivisionFlagUrl, fetchMergedSubdivisionGeo } from "../api/subdivisions";
@@ -623,7 +625,12 @@ export default function LearnPage() {
     // Layers 2-5 all pass through flagExistedInEra(): a modern flag may only stand in
     // for a historical one if it already existed at the era's date. Without that gate
     // the map showed South Africa's 1994 flag in 1914 and Uganda's 1962 flag in 1960.
-    let continent: string | undefined = info.continent;
+    // Where this polity's LAND is — a fact about the polity, never about the country it
+    // borrows a flag from. Resolved once, up front, and deliberately never touched by the
+    // flag layers below: letting the alias/ruler layers supply it filed Togoland, Kamerun
+    // and every other 1914 colony that flew its ruler's flag under EUROPE. See
+    // polityContinent() and CLAUDE.md, "A polity's continent is where its land is".
+    const continent = polityContinent(name, eraId);
     let flagIsRulers = false;
     // Set when a modern flag was REFUSED because it postdates the era, so the panel
     // can say which flag and which year instead of the generic "predates modern flag
@@ -695,13 +702,9 @@ export default function LearnPage() {
         const aliasFlag = eraLegalCuratedFlag(aliasInfo.flag);
         if (aliasFlag) {
           flag = aliasFlag;
-          if (!continent) continent = aliasInfo.continent;
         } else {
           const country = eraLegalModernFlag(modernName);
-          if (country) {
-            flag = country.flagSvg;
-            if (!continent) continent = country.continent;
-          }
+          if (country) flag = country.flagSvg;
         }
       }
 
@@ -744,6 +747,11 @@ export default function LearnPage() {
       .replace(/^(kingdom|kingfom|empire|republic|state|union|dominion|sultanate|emirate|principality|grand duchy)\s+of\s+/i, "")
       .trim()
       .toLowerCase();
+    // Compare against the name the user SEES, never the raw dataset NAME. The two diverge
+    // wherever POLITY_NAME_FOR_ERA remaps a polity, and a raw NAME can legitimately equal
+    // its ruler's: 1815's "United Kingdom" feature is Britain's CARIBBEAN colonies, shown
+    // as the British West Indies and ruled by the United Kingdom. Dropping the ruler there
+    // rendered the caption as "Flew the flag of — it had no national flag of its own".
     const ruledBy = rawRuler && rawRuler.trim().toLowerCase() === bareName ? undefined : rawRuler;
     return {
       kind: "historical",
@@ -752,7 +760,7 @@ export default function LearnPage() {
       continent,
       note: info.note,
       population: info.population,
-      ruledBy: ruledBy && ruledBy !== name ? ruledBy : undefined,
+      ruledBy,
       flagIsRulers: flagIsRulers || undefined,
       flagTooNew: flag ? undefined : flagTooNew,
       flagOutOfPeriod: flag ? undefined : flagOutOfPeriod,
@@ -1563,7 +1571,7 @@ export default function LearnPage() {
                     population={display.population}
                     ruledBy={
                       display.kind === "historical"
-                        ? display.ruledBy && polityDisplayName(display.ruledBy, eraId)
+                        ? display.ruledBy && rulerDisplayName(display.ruledBy, eraId)
                         : undefined
                     }
                     approximateExtent={
@@ -1574,11 +1582,13 @@ export default function LearnPage() {
                     }
                   />
                 )}
-                {flagUrl && !flagLoadFailed && display.kind === "historical" && display.flagIsRulers && (
+                {flagUrl && !flagLoadFailed && display.kind === "historical" && display.flagIsRulers && display.ruledBy && (
                   // A colony flew its ruler's flag. Say so, so the card never implies
-                  // the territory had a national flag of its own.
+                  // the territory had a national flag of its own. The caption NAMES the
+                  // ruler, so it must not render without one — an empty `ruledBy` used to
+                  // print "Flew the flag of — it had no national flag of its own".
                   <p className="entity-summary__note">
-                    Flew the flag of {withArticle(polityDisplayName(display.ruledBy ?? "", eraId))} —
+                    Flew the flag of {withArticle(rulerDisplayName(display.ruledBy, eraId))} —
                     it had no national flag of its own at this date.
                   </p>
                 )}

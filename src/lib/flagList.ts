@@ -56,10 +56,36 @@ export type FlagListEntry = {
  */
 export function topLevelContinent(label: string | undefined): string {
   if (!label) return "Other";
-  const l = label.toLowerCase();
+  // A composite label lists its regions PRIMARY FIRST ("Western Asia / SE Europe /
+  // North Africa"), so the heading must come from the first segment that names a
+  // continent. Matching the whole string instead let a trailing region win — the
+  // Ottoman Empire, Alexander's Macedonian Empire and the Iberian Union were all
+  // filed under AFRICA because "North Africa" appeared somewhere in their label.
+  if (label.includes("/")) {
+    for (const part of label.split("/")) {
+      const segment = classifyRegion(part.trim().toLowerCase());
+      if (segment !== "Other") return segment;
+    }
+  }
+  return classifyRegion(label.toLowerCase());
+}
+
+/**
+ * The continent one region label rolls up to, or "Other" if it names no continent.
+ *
+ * "Other" is a LAST RESORT and must never be what a real place resolves to: every
+ * territory is on a continent, and a grid heading of "Other" is a classification
+ * failure, not a category (reported by the owner, 2026-08 — an "OTHER (27)" group
+ * holding Lagos, Zululand, Queensland, Fiji and Greenland). `check-era-continents.mjs`
+ * fails the build if any polity lands here, so a new region label added to the registry
+ * must be given a home below in the same change.
+ */
+function classifyRegion(l: string): string {
   if (l === "global") return "Global";
   // Africa — straightforward; "East African coast" is the Swahili-coast bucket.
-  if (l.includes("africa") || l.includes("nubia")) return "Africa";
+  if (l.includes("africa") || l.includes("nubia") || l.includes("sahara") || l.includes("maghreb")) {
+    return "Africa";
+  }
   // Americas — North + South + Mesoamerica + Caribbean.
   if (
     l.includes("america") ||
@@ -90,7 +116,17 @@ export function topLevelContinent(label: string | undefined): string {
   ) {
     return "Europe";
   }
-  if (l.includes("oceania") || l.includes("polynesia") || l.includes("micronesia") || l.includes("melanesia")) {
+  // Oceania — including the labels the historical registry uses for the region:
+  // "Australia" for the Aboriginal nations, "Pacific" for the island kingdoms.
+  if (
+    l.includes("oceania") ||
+    l.includes("polynesia") ||
+    l.includes("micronesia") ||
+    l.includes("melanesia") ||
+    l.includes("australia") ||
+    l.includes("pacific") ||
+    l.includes("new zealand")
+  ) {
     return "Oceania";
   }
   return "Other";

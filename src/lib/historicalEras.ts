@@ -27,6 +27,10 @@ import {
   curatedFlagVerdict,
   type CuratedFlagVerdict,
 } from "../data/historicalFlagValidity.ts";
+import {
+  POLITY_CONTINENT,
+  POLITY_CONTINENT_BY_ERA,
+} from "../data/polityContinents.ts";
 
 export type Era = {
   /** Stable id (used as React key + URL slug). */
@@ -491,7 +495,10 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // disagreeing about the flag (the 1912 five-coloured one vs the 1928 blue-sky one). Now
   // one entry with no era-agnostic flag; each era carries the flag of its own date.
   ["Chinese warlords", { continent: "East Asia", note: "Warlord-era China — the Republic's authority was nominal while regional militarists ruled the provinces.", population: 470_000_000 }],
-  ["Islamic city-states", { continent: "South Asia", note: "Islamic sultanates and city-states of the Deccan and southern India — independent powers such as Bijapur, Golconda and others that filled the space between the Mughal north and Hindu southern kingdoms." }],
+  // The dataset draws this on the EAST AFRICAN coast (lon 37.7–47.6, lat -11.2–4.1), not
+  // in the Deccan: it is the Swahili city-states, not the Indian sultanates an earlier
+  // note described. "Islamic and Hindu states" is the Deccan entry.
+  ["Islamic city-states", { continent: "East Africa", note: "Swahili city-states — the Muslim merchant towns of the East African coast, from Mogadishu through Malindi and Mombasa to Kilwa and Zanzibar, grown rich on the Indian Ocean trade in gold, ivory and mangrove poles." }],
   ["Islamic and Hindu states", { continent: "South Asia", note: "The patchwork of Deccan sultanates, Rajput kingdoms and southern Hindu states between the Mughal north and Vijayanagara's collapse." }],
 
   // === Peoples and lifeways, not states =====================================
@@ -509,28 +516,33 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Bantou", { continent: "Sub-Saharan Africa", note: "Bantu-speaking farming peoples, whose expansion from West-Central Africa carried iron-working, cattle and cereal agriculture across the continent's south and east." }],
   ["Bantu", { continent: "Sub-Saharan Africa", note: "Bantu-speaking farming peoples, whose expansion from West-Central Africa carried iron-working, cattle and cereal agriculture across the continent's south and east." }],
   ["Catacomb culture", { continent: "Eurasian Steppe", note: "Catacomb culture — pastoral peoples of the Pontic-Caspian steppe (3rd–2nd millennium BC), known for burial in catacomb chambers and horse-and-livestock economy, ancestral to later Indo-European groups." }],
-  ["Iron Age megalith cultures", { continent: "West Africa", note: "Iron Age societies of West Africa (1st–2nd millennium AD) marked by distinctive megaliths, stone monuments and tumuli, representing early complex societies and trade networks." }],
+  // Drawn across peninsular India (lon 72.8–84.7, lat 8–21.2), not West Africa.
+  ["Iron Age megalith cultures", { continent: "South Asia", note: "South India's Iron Age megalith builders — the dolmens, cists and stone circles of the Deccan and the peninsula, from about 1000 BC, buried with black-and-red ware and the subcontinent's earliest iron." }],
   ["Ethiopian highland farmers", { continent: "Northeast Africa", note: "Highland farming societies of Ethiopia — communities practicing terraced agriculture on the Ethiopian plateau and surrounding highlands, ancestors of Amhara and Tigrayans." }],
   ["West African cereal farmers", { continent: "West Africa", note: "Farming societies of the Sahel and savanna growing millet, sorghum and African rice — the agricultural base the empires of Ghana, Mali and Songhai would rise from." }],
   ["Paleo-Siberian hunter-gatherers", { continent: "North Asia", note: "Peoples of the Siberian taiga and tundra — reindeer herders, river fishers and forest hunters, ancestral to today's Chukchi, Koryak, Yukaghir and Evenk." }],
   ["Siberians", { continent: "North Asia", note: "The many peoples of Siberia — Evenk, Yakut, Nenets, Chukchi and others — herding reindeer, hunting and fishing across taiga and tundra." }],
-  ["Arctic marine mammal hunters", { continent: "Arctic", note: "Arctic coastal peoples who lived by hunting seal, walrus and whale from the ice edge — the Thule tradition and its descendants, the Inuit and Yupik." }],
-  ["Thule", { continent: "Arctic", note: "Thule culture — the whale-hunting Arctic tradition that spread from Alaska across northern Canada to Greenland from about 1000 AD; ancestors of today's Inuit." }],
+  ["Arctic marine mammal hunters", { continent: "Arctic North America", note: "Arctic coastal peoples who lived by hunting seal, walrus and whale from the ice edge — the Thule tradition and its descendants, the Inuit and Yupik." }],
+  ["Thule", { continent: "Arctic North America", note: "Thule culture — the whale-hunting Arctic tradition that spread from Alaska across northern Canada to Greenland from about 1000 AD; ancestors of today's Inuit." }],
   ["Subarctic forest hunter-gatherers", { continent: "North America", note: "Peoples of the boreal forest between tundra and prairie, following moose, caribou and fish through the seasons across what is now Canada and interior Alaska." }],
   ["Athabaskan", { continent: "North America", note: "Athabaskan-speaking peoples of the northwestern forests — a language family stretching from interior Alaska to the Southwest, where it includes the Navajo and Apache." }],
   ["Eastern North Amercian hunter-gatherers", { continent: "North America", note: "Peoples of the eastern woodlands, combining hunting and fishing with maize, beans and squash — the tradition from which the Mississippian mound cities and the Haudenosaunee confederacy grew." }],
   ["Hopewell Culture", { continent: "North America", note: "Hopewell — a Woodland Period culture (200 BC–500 AD) of the Ohio River valley, known for large earthen mounds, intricate artwork, and far-flung trade networks linking the Great Lakes to the Gulf." }],
   ["Plain bison hunters", { continent: "North America", note: "Peoples of the Great Plains, whose lives turned on the bison herds — on foot for millennia, and transformed by the horse after its arrival with the Spanish." }],
-  ["Plain-Pottery culture", { continent: "North America", note: "Plain Pottery cultures of North America (4000–1000 BC) — early ceramic traditions of the Great Plains and Midwest, marking the transition from hunter-gatherers to semi-sedentary peoples." }],
+  // Drawn over the upper Dnieper, Desna and Oka (lon 29–38.5, lat 50.9–56.7), not the
+  // Great Plains.
+  ["Plain-Pottery culture", { continent: "Eastern Europe", note: "Plain Pottery culture — Early Iron Age communities of the upper Dnieper, Desna and Oka basins, living in fortified hilltop villages in the East European forest zone." }],
   ["Plateau fichers and hunter gatherers", { continent: "North America", note: "Peoples of the Columbia and Fraser plateaus, whose year centred on the salmon runs, traded along rivers from the Pacific to the Rockies." }],
   ["Desert hunter-gatherers", { continent: "North America", note: "Peoples of the Great Basin and the arid Southwest, living on piñon nuts, small game and seasonal water in one of the continent's harshest environments." }],
   ["Archaic Amerindian hunter-gatherers", { continent: "Americas", note: "Archaic-period peoples of the Americas — mobile hunting, fishing and gathering societies in the millennia between the first settlement of the continents and the rise of farming villages." }],
   ["Amazon hunter-gatherers", { continent: "South America", note: "Peoples of the Amazon basin, combining hunting and fishing with manioc gardens and managed forest — far more numerous and settled than the rainforest's 'empty' reputation suggests." }],
   ["Manioc farmers", { continent: "South America", note: "Lowland South American societies built on manioc (cassava) — a root crop that stores in the ground and feeds dense riverside settlements." }],
-  ["Shellfish gatherers", { continent: "Southern Hemisphere", note: "Maritime hunter-gatherer societies exploiting shellfish, marine resources and coastal niches from Patagonia to Australia, leaving vast shell middens documenting their settlements." }],
+  // Drawn on the Brazilian Atlantic coast (lon -49.8–-43, lat -28.5–-21.6).
+  ["Shellfish gatherers", { continent: "South America", note: "The sambaqui builders of the Brazilian coast — fisher-hunter-gatherers whose shell mounds, some tens of metres high, run for 3,000 km of Atlantic shoreline and served as dwellings, cemeteries and territorial markers." }],
   ["Papuan neolithic farmers", { continent: "Oceania", note: "Neolithic farming societies of New Guinea — early adopters of agriculture in Oceania, cultivating yams, taro and sago in highland and lowland valleys." }],
   ["Pampas cultures", { continent: "South America", note: "Peoples of the southern grasslands and Patagonia — guanaco hunters on foot until the horse reached the pampas, after which they became formidable riders." }],
-  ["Savanna hunter-gatherers", { continent: "Africa", note: "Hunting and gathering peoples of the African savanna belt, living alongside — and trading with — the farming and herding societies that surrounded them." }],
+  // Drawn across the Bolivian and Brazilian interior (lon -69.3–-34.9, lat -31.8–-4.4).
+  ["Savanna hunter-gatherers", { continent: "South America", note: "Hunting and gathering peoples of the South American savannas — the cerrado, the Llanos de Mojos and the Chaco — living alongside, and trading with, the farming societies around them." }],
   ["Saharan Pastoral Nomads", { continent: "Sahara", note: "Saharan herding peoples, moving cattle, sheep and later camels between seasonal pasture and oasis — and carrying the trans-Saharan trade between them." }],
   ["Saharan pastoral nomads", { continent: "Sahara", note: "Saharan herding peoples, moving cattle, sheep and later camels between seasonal pasture and oasis — and carrying the trans-Saharan trade between them." }],
   ["Finno-Ugric taiga hunter-gatherers", { continent: "Northern Europe / North Asia", note: "Finno-Ugric peoples of the northern forests — Sámi, Komi, Mari, Khanty and their neighbours — hunting, fishing and herding reindeer from Scandinavia to the Ob." }],
@@ -544,7 +556,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Caribbean hunter-gatherers", { continent: "Caribbean", note: "The islands' first peoples — Ortoiroid and Saladoid seafarers who island-hopped from South America, ancestors of the Taíno and Kalinago." }],
   ["North American Pacifi foraging, hunting and fishing peoples", { continent: "North America", note: "Peoples of the Pacific Northwest coast — salmon, cedar and the potlatch supported dense permanent towns without farming, a rarity among foraging societies." }],
   ["Mesoamerican hunter-gatherers and maïze farmers", { continent: "Mesoamerica", note: "The societies that domesticated maize in the Mexican highlands — the crop that would underwrite every later Mesoamerican civilisation." }],
-  ["Dorset", { continent: "Arctic", note: "Dorset culture — Arctic hunters of seal and walrus who preceded the Thule across northern Canada and Greenland, and vanished as the Thule expanded." }],
+  ["Dorset", { continent: "Arctic North America", note: "Dorset culture — Arctic hunters of seal and walrus who preceded the Thule across northern Canada and Greenland, and vanished as the Thule expanded." }],
   ["Andronovo", { continent: "Eurasian Steppe", note: "Andronovo culture — Bronze-Age herders of the Kazakh steppe, associated with the chariot, the horse and the early Indo-Iranian languages." }],
   ["Tibetan Empire", { continent: "Central Asia", note: "Tibetan Empire — at its height it took the Tang capital, ruled the Silk Road oases and rivalled China and the Abbasids across inner Asia.", population: 3_000_000 }],
   ["Sui Empire", { continent: "East Asia", note: "Sui dynasty — reunified China after three centuries of division and dug the Grand Canal, then collapsed within a generation and gave way to the Tang.", population: 46_000_000 }],
@@ -556,7 +568,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Arabia (Nejd)", { continent: "Arabia", note: "Nejd — the central Arabian plateau, ruled by the House of Saud since 1744; one of the few Arabian powers independent of Ottoman or European control in 1914, strengthening through the 1920s–30s before fully unifying Arabia in 1932." }],
   ["French West Africa", { continent: "West Africa", note: "French West Africa (1895–1958) — a federation of eight colonies from Senegal to Niger, governed from Dakar.", modernName: "France", population: 15_000_000 }],
   ["French Equatorial Africa", { continent: "Central Africa", note: "French Equatorial Africa (1910–1958) — Gabon, Middle Congo, Ubangi-Shari and Chad, governed from Brazzaville.", modernName: "France", population: 4_000_000 }],
-  ["Greenland", { continent: "Arctic", note: "Greenland — Inuit homeland (Kalaallit Nunaat), colonised by Denmark from 1721 and granted home rule in 1979.", modernName: "Denmark" }],
+  ["Greenland", { continent: "North America", note: "Greenland — Inuit homeland (Kalaallit Nunaat), colonised by Denmark from 1721 and granted home rule in 1979.", modernName: "Denmark" }],
 
   ["Patagonian shellfish and marine mammal hunters", { continent: "South America", note: "Peoples of the Patagonian channels and Tierra del Fuego — Yaghan and Kawésqar canoe nomads who lived on shellfish, seal and sea lion in one of the coldest inhabited coasts on earth." }],
   ["Madagascar", { continent: "East Africa", note: "Madagascar — settled from Borneo across the Indian Ocean and from East Africa, giving it an Austronesian language on an African coast; unified under the Merina kingdom in the 19th century.", noFlag: true }],
@@ -587,7 +599,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Chukchi", { continent: "North Asia", note: "Chukchi people of the far northeast — reindeer herders inland, sea-mammal hunters on the coast, and the one Siberian people the Russian Empire never subdued by force." }],
   ["Comanche", { continent: "North America", note: "Comanche — Shoshone-descended mounted warriors of the Great Plains and Southwest, dominant from the 17th–19th centuries until the Indian Wars." }],
   ["Innu", { continent: "North America", note: "Innu (Montagnais and Naskapi) — a subarctic Algonquian people of Quebec and Labrador, traditionally nomadic hunters of caribou and maritime hunters." }],
-  ["Inupiaq", { continent: "Arctic", note: "Iñupiat people — an Inuit nation of Alaska, living by marine mammal hunting, whaling and fishing along the Beaufort and Chukchi seas." }],
+  ["Inupiaq", { continent: "Arctic North America", note: "Iñupiat people — an Inuit nation of Alaska, living by marine mammal hunting, whaling and fishing along the Beaufort and Chukchi seas." }],
   ["Naskapi Innu", { continent: "North America", note: "Naskapi and Innu peoples of Labrador — eastern subarctic Algonquian hunters and fishers of the Labrador plateau." }],
   ["Assiniboin", { continent: "North America", note: "Assiniboine — a Sioux-speaking people of the northern Great Plains, known as traders and buffalo hunters with historical presence across Canada and northern US." }],
   ["Ute", { continent: "North America", note: "Ute people — a Native American nation of the Rocky Mountain region (Colorado, Utah), traditional hunters and gatherers adapted to high-altitude and semi-arid environments." }],
@@ -633,7 +645,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Hindu kingdoms and republics", { continent: "South Asia", note: "The mahajanapadas — the kingdoms and gana-sangha republics of the Ganges plain, the political world in which Buddhism and Jainism arose." }],
   ["Mesoamerican city-states and chiefdoms", { continent: "Mesoamerica", note: "The city-states and chiefdoms of Mesoamerica between its great powers — Zapotec, Mixtec, Totonac, Tlaxcalan and their neighbours." }],
   ["Far Eastern SSR", { continent: "North Asia", note: "Far Eastern Republic (1920–1922) — a nominally independent buffer state between Soviet Russia and Japanese-occupied Siberia, absorbed once Japan withdrew.", noFlag: true, noFlagReason: "No flag shown — the buffer republic lasted barely two years and no period-accurate image of its flag is bundled." }],
-  ["Peshemegs", { continent: "North America", note: "Peoples of the eastern subarctic woodlands, hunting and fishing the forests between the St Lawrence and Hudson Bay." }],
+  // Drawn from the Danube to the Volga-Ural (lon 28.9–62, lat 41.1–52.5) — the Pechenegs,
+  // not a North American woodland people.
+  ["Peshemegs", { continent: "Eurasian Steppe", note: "Pechenegs — a Turkic nomad confederation of eight tribes that held the Pontic-Caspian steppe from the late 9th century, raiding and hiring out to Kievan Rus and Byzantium until the Rus broke them in 1036." }],
 
   // Kingdom of Italy 1861–1946: the tricolour with the Savoy arms. Modern Italy's
   // plain tricolour is a 1946 flag, so the gate refuses it for every earlier era —
@@ -922,7 +936,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Minahasa / Gorontalo", { continent: "Maritime SE Asia", note: "Northern Sulawesi chiefdoms.", population: 80_000 }],
   ["Minangkabau realm", { continent: "Maritime SE Asia", note: "Highland matrilineal Muslim society of central Sumatra.", population: 400_000 }],
   ["Palembang Sultanate", { continent: "Maritime SE Asia", note: "Late-Srivijaya successor; gradually Islamising in the 15th–16th c.", population: 150_000 }],
-  ["Papuan coastal chiefdoms", { continent: "Maritime SE Asia", note: "Bird's-head Papua under loose Ternate / Tidore tribute.", population: 100_000 }],
+  ["Papuan coastal chiefdoms", { continent: "Melanesia", note: "Bird's-head Papua under loose Ternate / Tidore tribute.", population: 100_000 }],
   ["Pasai Sultanate", { continent: "Maritime SE Asia", note: "Earliest Indonesian Muslim sultanate (founded c. 1297) — the gateway of Islam to the archipelago.", population: 150_000 }],
   ["Riau-Lingga sultanates", { continent: "Maritime SE Asia", note: "Strait-of-Malacca Muslim trading polities.", population: 80_000 }],
   ["Sambas / Sukadana sultanates", { continent: "Maritime SE Asia", note: "Western Kalimantan Muslim sultanates.", population: 50_000 }],
@@ -1159,7 +1173,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Teutonic Knights", { continent: "Central Europe", note: "Teutonic Order state — crusading military-religious order that colonised Prussia and the Baltic.", noFlag: true, population: 700_000 }],
   ["Kalmar Union", { continent: "Northern Europe", note: "Kalmar Union (1397–1523) — personal union of Denmark, Sweden and Norway under one Scandinavian monarch.", noFlag: true, population: 3_000_000 }],
   ["Raška", { continent: "SE Europe", note: "Raška (medieval Serbia) — the Nemanjić dynasty's kingdom; ancestor of the Serbian state.", noFlag: true, population: 1_000_000 }],
-  ["Trebizond", { continent: "Eastern Mediterranean", note: "Empire of Trebizond — last surviving remnant of the Byzantine Empire, on the Black Sea coast.", noFlag: true, population: 200_000 }],
+  ["Trebizond", { continent: "Anatolia", note: "Empire of Trebizond — last surviving remnant of the Byzantine Empire, on the Black Sea coast.", noFlag: true, population: 200_000 }],
   ["Norway", { continent: "Northern Europe", note: "Kingdom of Norway — the red-field-with-golden-lion banner (before the Dannebrog-influenced modern flag).", noFlag: true, population: 500_000 }],
   ["Genoa", { continent: "Italy", note: "Republic of Genoa — rival of Venice; the red cross on white (St George Cross) was its banner.", noFlag: true, population: 400_000 }],
   ["Florence", { continent: "Italy", note: "Republic of Florence — the great centre of the Italian Renaissance.", noFlag: true, population: 600_000 }],
@@ -1213,7 +1227,8 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Syria", { continent: "Western Asia", note: "Syria — Levantine state with ancient Mesopotamian and Mediterranean heritage; a French mandate after WWI, it became independent in 1946 but faced political volatility and conflicts.", noFlag: true, population: 3_000_000 }],
   ["Ahmadnagar", { continent: "South Asia", note: "Ahmadnagar Sultanate — Deccan Muslim dynasty (1490–1636) that resisted Mughal expansion through military innovation and diplomacy.", noFlag: true, population: 2_000_000 }],
   ["Bell-shaped burials culture", { continent: "Eurasian Steppe", note: "Bronze-Age pastoral societies of the steppes, named for their distinctive burial mounds — ancestors of Indo-European peoples." }],
-  ["Brushed Pottery culture", { continent: "East Asia", note: "Neolithic pottery tradition of East Asia — Chinese culture known for brushed surface decoration, predating painted pottery." }],
+  // Drawn over eastern Lithuania and Belarus (lon 21.9–29.9, lat 52–57.8), not China.
+  ["Brushed Pottery culture", { continent: "Eastern Europe", note: "Brushed Pottery culture — the Bronze and Iron Age culture of eastern Lithuania, Belarus and south-east Latvia, named for pots whose outer surface was brushed with bundled straw; ancestral to the East Baltic tribes." }],
   ["Burkina Faso", { continent: "West Africa", note: "Burkina Faso — landlocked West African state; French colony of Upper Volta until independence in 1960, renamed Burkina Faso in 1984.", noFlag: true, population: 5_000_000 }],
   ["Chalukya Empire", { continent: "South Asia", note: "Chalukya dynasty — powerful medieval South Indian empire (6th–12th c.) that rivaled the Pallavas; known for temple architecture and administrative systems.", population: 8_000_000 }],
   ["Chalukyas", { continent: "South Asia", note: "Chalukyas — South Indian dynasty of the Deccan, rivals of the Pallavas and patrons of Dravidian temple culture." }],
@@ -1240,7 +1255,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Vazimba", { continent: "East Africa", note: "Vazimba — legendary first inhabitants of Madagascar, possibly hunter-gatherers displaced by later Merina and Arab-influenced settlers." }],
   ["Adena Culture", { continent: "North America", note: "Adena culture — early woodland Mississippian culture of eastern North America (1000–100 BC), mound-builders known for sacred geometry and extensive trade networks." }],
   ["Algeria", { continent: "North Africa", note: "Algeria — North African state and former French colony; long war of independence (1954–1962) and strategic position on the Mediterranean.", noFlag: true, population: 9_000_000 }],
-  ["Bashkirs", { continent: "Russia", note: "Bashkir people — Turkic-speaking horsemen and herders of the southern Urals, with strong traditions of horsemanship and martial prowess." }],
+  ["Bashkirs", { continent: "Eurasian Steppe", note: "Bashkir people — Turkic-speaking horsemen and herders of the southern Urals, with strong traditions of horsemanship and martial prowess." }],
   ["Champa", { continent: "Southeast Asia", note: "Champa Kingdom — Hindu-Buddhist maritime kingdom of central Vietnam (2nd–15th c.), a seafaring power in the South China Sea with a distinctive culture.", population: 2_000_000 }],
   ["Chen-La", { continent: "Southeast Asia", note: "Chenla (Chen-La) — medieval kingdom of Cambodia, successor to Funan in the Mekong Delta region, known for irrigation and temple construction." }],
   ["Cherokee", { continent: "North America", note: "Cherokee people — Southeastern Iroquoian nation known for agricultural settlement patterns, syllabary invention and sovereignty struggles with the U.S." }],
@@ -1271,7 +1286,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["East Java", { continent: "Southeast Asia", note: "East Java (Majapahit region) — Javanese kingdom and later province; center of Hindu-Buddhist culture and part of the Majapahit Empire." }],
   ["Harapunchai", { continent: "Southeast Asia", note: "Hariphunchai (Harapunchai) — northern Thai kingdom of the Chao Phraya valley; known for Buddhist temples and eventually absorbed into Sukhothai." }],
   ["Iroquois", { continent: "North America", note: "Haudenosaunee (Iroquois Confederacy) — powerful alliance of six Iroquoian nations (Mohawk, Oneida, Onondaga, Cayuga, Seneca, Tuscarora) with democratic confederation structure." }],
-  ["Koryaks", { continent: "Russia", note: "Koryak people — Siberian reindeer herders and maritime hunters of the Kamchatka Peninsula, with distinctive dog-sledding traditions." }],
+  ["Koryaks", { continent: "North Asia", note: "Koryak people — Siberian reindeer herders and maritime hunters of the Kamchatka Peninsula, with distinctive dog-sledding traditions." }],
   ["Kwarizm-Shah", { continent: "Central Asia", note: "Khwarazmian Empire — dynasty ruling the Aral Sea region (10th–13th c.), center of Islamic learning before Mongol conquest.", noFlag: true, population: 2_000_000 }],
   ["Laurel complex", { continent: "North America", note: "Laurel complex — archaeological culture of the Great Lakes-St. Lawrence region (1500–500 BC), known for copper tools and burial mounds." }],
   ["minor Hindu and Buddhist kingdoms", { continent: "South Asia", note: "Small Hindu and Buddhist kingdoms of southern India — feudal states and regional powers, tributaries to Chola and Chalukyan empires." }],
@@ -1297,7 +1312,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Gabon", { continent: "Central Africa", note: "Gabon — Central African state; French colony until 1960; located on the Congo coast with rainforests and oil resources.", noFlag: true, population: 600_000 }],
   ["Hopi", { continent: "North America", note: "Hopi people — Pueblo peoples of Arizona's high desert; known for kachina ceremonies, dry farming and distinctive cosmology." }],
   ["Iceland", { continent: "Northern Europe", note: "Iceland — Nordic island nation with Norse settlement (870 AD), world's oldest parliament (Althing), and geothermal energy; independent 1944.", modernName: "Iceland", population: 300_000 }],
-  ["Itelmen", { continent: "Russia", note: "Itelmen (Kamchadal) people — Siberian peoples of the Kamchatka Peninsula, maritime hunters and fishers with distinctive dog-sledding technology." }],
+  ["Itelmen", { continent: "North Asia", note: "Itelmen (Kamchadal) people — Siberian peoples of the Kamchatka Peninsula, maritime hunters and fishers with distinctive dog-sledding technology." }],
   ["Kalaamaya", { continent: "Oceania", note: "Kalaamaya people — Aboriginal Australians of the interior desert regions, adapted to arid environments with specialized gathering and hunting knowledge." }],
   ["Kamarupa", { continent: "South Asia", note: "Kamarupa — ancient kingdom of Assam (4th–12th c.); ruled by various dynasties and known for Hindu temples and cultural synthesis." }],
   ["Karelians", { continent: "Northern Europe", note: "Karelian people — Finno-Ugric peoples of Karelia (Russia-Finland border); historically distinct with Orthodox and Catholic cultural influences." }],
@@ -1311,7 +1326,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Principality of Vladimir-Suzdal", { continent: "Eastern Europe", note: "Vladimir-Suzdal — Russian principality of the Upper Volga region; powerful medieval state, predecessor to Moscow-led unification." }],
   ["Rajputana", { continent: "South Asia", note: "Rajputana — region of northwest India; confederation of Hindu Rajput kingdoms, later becoming British protectorates and Indian states." }],
   ["Sasanian dependencies", { continent: "Western Asia", note: "Sasanian Persian Empire's tributary states and client kingdoms — vassal polities across Mesopotamia and Central Asia under Sassanid overlordship." }],
-  ["Shaskanka", { continent: "North America", note: "Shaskana (Shoshone variant) — Great Basin peoples known for adaptation to desert environments and sophisticated gathering technology." }],
+  // Drawn over Bengal and Odisha (lon 84–91.7, lat 19.6–26.5) — King Shashanka of Gauda,
+  // not a Great Basin people.
+  ["Shaskanka", { continent: "South Asia", note: "Shashanka — the first independent king of Gauda, ruling Bengal from Karnasuvarna in the early 7th century and pushing west up the Ganges against the Maukharis." }],
   ["Shona", { continent: "Southern Africa", note: "Shona people — Bantu peoples of Zimbabwe and southern Africa; builders of Great Zimbabwe and sophisticated farming societies." }],
   ["Sultinate of Zanzibar", { continent: "East Africa", note: "Zanzibar Sultanate — Omani-Arab ruled trading empire of the East African coast; center of clove trade and Indian Ocean commerce.", noFlag: true, noFlagReason: "No flag shown — the Busaidi sultans flew a plain red flag, and no period-accurate image of it is bundled.", population: 200_000 }],
   ["Thai Kingdoms", { continent: "Southeast Asia", note: "Thai kingdoms — Tai-speaking states of mainland Southeast Asia, including Sukhothai, Ayutthaya and others, distinct from Khmer and Lao polities." }],
@@ -1321,7 +1338,10 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Borgu States", { continent: "West Africa", note: "Borgu states — confederation of West African kingdoms in the Niger-Volta region; independent powers resisting Songhai expansion." }],
   ["Caddo", { continent: "North America", note: "Caddo people — southeastern U.S. nation with mound-building civilization, sophisticated agriculture and confederacy governance." }],
   ["Celts", { continent: "Western Europe", note: "Celtic peoples — Indo-European speakers of the Iron Age; warriors and farmers spreading across Europe, known for metalwork and oral traditions." }],
-  ["Coqs", { continent: "Southeast Asia", note: "Coqs (Kuq) — small coastal kingdom or trading post of Southeast Asia; part of the Indian-influenced maritime network." }],
+  // Drawn across the Pacific Northwest (lon -124.7–-120.2, lat 40.3–48.5), not maritime
+  // South-East Asia. No sourced account of the polity under this name was found, so the
+  // wrong note is dropped rather than replaced with a guess.
+  ["Coqs", { continent: "North America" }],
   ["Dvaravati", { continent: "Southeast Asia", note: "Dvaravati — Mon-speaking kingdom of central Thailand (6th–11th c.); center of Buddhist culture and predecessor to Thai kingdoms." }],
   ["Eritrea", { continent: "East Africa", note: "Eritrea — horn of Africa state, Italian colony until WWII, then federated with Ethiopia until independence in 1993.", noFlag: true, population: 3_000_000 }],
   ["Harer (Egypt)", { continent: "Northeast Africa", note: "Harar — walled city and sultanate of Ethiopia; center of Islamic learning and trade; contested by various powers in the Horn of Africa." }],
@@ -1377,7 +1397,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Wirangu", { continent: "Oceania", note: "Wirangu people — Aboriginal Australians of the Lower Eyre Peninsula, South Australia; maritime hunter-gatherers with distinct language and sea knowledge." }],
   ["Paleo-Inuit", { continent: "North America", note: "Paleo-Inuit peoples — ancestral Arctic cultures of the far north, precursors to modern Inuit and Yupik groups." }],
   ["Mandjindja", { continent: "Oceania", note: "Mandjindja people — Aboriginal Australians of the Northern Territory, inhabiting the Roper River region with a rich oral tradition." }],
-  ["Saba", { continent: "Caribbean", note: "Saba — small island in the Lesser Antilles, Dutch possession from the 1630s; volcanic terrain with limited agricultural settlement." }],
+  // Drawn in the Yemeni highlands (lon 41.6–45.4, lat 14.6–18.7) — the Sabaean kingdom,
+  // not the Dutch island in the Lesser Antilles.
+  ["Saba", { continent: "Arabia", note: "Saba — the Sabaean kingdom of south-west Arabia, centred on Marib and its great dam, the dominant power of the incense trade." }],
   ["Pyu state", { continent: "Southeast Asia", note: "Pyu civilization — ancient societies of the Irrawaddy Valley (200 BC–900 AD), precursors to Bamar peoples and foundational to Burmese culture." }],
   ["Luritja", { continent: "Oceania", note: "Luritja people — Aboriginal Australians of central Australia near Uluru; desert specialists with intricate songline traditions." }],
   ["Buyiids", { continent: "Asia", note: "Buyid dynasty — Shi'a Persian dynasty ruling Persia and parts of Iraq in the 10th–11th centuries; patrons of learning and literature." }],
@@ -1413,7 +1435,10 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Yankontai", { continent: "North America", note: "Yankton Dakota — Sioux peoples of the Missouri River; Yankton Sioux; semi-sedentary prairie dwellers; traders and warriors." }],
   ["León", { continent: "Europe", note: "Kingdom of León — Iberian Christian kingdom; emerged from Asturias after the Reconquista; unified with Castile in 1479." }],
   ["Kediri", { continent: "Southeast Asia", note: "Kediri kingdom — early Javanese state (11th–12th centuries); Hindu-Buddhist center; rival to East Java kingdoms." }],
-  ["Gharra", { continent: "Africa", note: "Gharra people — pastoral Berber group of North Africa; Saharan herders; distinctive camel-herding traditions." }],
+  // Drawn in Dhofar, southern Arabia (lon 54–58.8, lat 17.8–21.8). The earlier note put it
+  // in the Sahara; no account of the polity as the dataset draws it could be sourced, and a
+  // missing note beats a wrong one.
+  ["Gharra", { continent: "Arabia" }],
   ["Senas", { continent: "Asia", note: "Sena dynasty — Bengal-based Hindu dynasty ruling eastern India (12th–13th centuries); overthrown by Muslim invasions." }],
   ["Southern Xiongnu", { continent: "East Asia", note: "Southern Xiongnu — Xiongnu confederation that submitted to Han China; established in Inner Mongolia; gradually sinicized." }],
   ["First Samori Empire", { continent: "West Africa", note: "Samori Touré's empire — Mandinka state of West Africa (1860s–1890s); powerful resistance to French colonization; military innovations." }],
@@ -1456,7 +1481,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Baltic tribes", { continent: "Europe", note: "Baltic peoples — pre-Christian Balts of the Baltic region; distinct language family; pagan societies later subsumed by Christianization." }],
   ["Kuwarra", { continent: "Oceania", note: "Kuwarra people — Aboriginal Australians of south Australia; coastal and inland regions with rich marine and land food traditions." }],
   ["Kija", { continent: "Oceania", note: "Kija people — Aboriginal Australians of the far northern Kimberley; complex kinship and ceremonial traditions; saltwater and savanna country." }],
-  ["Sintashta", { continent: "Asia", note: "Sintashta culture — Bronze Age steppe civilization (2100–1800 BC) of Central Asia; early chariot warfare; pastoral Indo-Europeans." }],
+  ["Sintashta", { continent: "Eurasian Steppe", note: "Sintashta culture — Bronze Age steppe civilization (2100–1800 BC) of Central Asia; early chariot warfare; pastoral Indo-Europeans." }],
   ["Nez Perce", { continent: "North America", note: "Nez Perce people — Pacific Northwest nation; Plateau region dwellers; salmon fishers; mounted warriors; known for Appaloosa horses." }],
   ["Nobatia", { continent: "Africa", note: "Nobatia — Nubian kingdom of upper Egypt and Sudan (4th–6th centuries); Christian Nubian state; rival to Axum." }],
   ["Sicily", { continent: "Europe", note: "Sicily — Mediterranean island; complex political history under Greek, Roman, Norman, Arab, Spanish and Italian rule; strategic trade crossroads." }],
@@ -1511,7 +1536,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Walmatjarri", { continent: "Oceania", note: "Walmatjarri people — Aboriginal Australians of the Kimberley region; remote desert and sandhill dwellers with ancestral traditions." }],
   ["Swaziland", { continent: "Southern Africa", note: "Swaziland (Eswatini) — Southern African kingdom; Nguni peoples; former British protectorate; independent Bantu-speaking nation." }],
   ["Rabih az-Zubayr", { continent: "Africa", note: "Rabih az-Zubayr Empire — Saharan conqueror (late 1800s); established state in Central Sudan; resistance to European colonization." }],
-  ["Nana", { continent: "West Africa", note: "Nana — West African peoples and cultural groups; various polities of the Guinea region; traders and agricultural societies." }],
+  // Drawn west of Lake Carnegie in the Western Australian desert (lon 120.8–123.2,
+  // lat -28–-26), not in the Guinea region.
+  ["Nana", { continent: "Australia", note: "Nana — a name recorded for the Aboriginal peoples of the Western Australian desert west of Lake Carnegie and Lake Wells, applied to the Pini and the Ngaanyatjarra." }],
   ["Veracruz civilization", { continent: "Mesoamerica", note: "Veracruz culture — ancient Mesoamerican civilization of Gulf coast Mexico; complex societies; influenced by Olmec traditions." }],
   ["Neustria", { continent: "Europe", note: "Neustria — Frankish kingdom of northwestern Europe; early medieval power; foundation for later French kingdoms." }],
   ["Alawa", { continent: "Oceania", note: "Alawa people — Aboriginal Australians of the Northern Territory; inland dwellers with distinct language and cultural traditions." }],
@@ -1552,7 +1579,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["United States Virgin Islands", { continent: "North America", noFlagReason: "No flag shown — Danish until 1917 and a United States territory since, flying first the Dannebrog and then the Stars and Stripes; the islands' own flag dates from 1921.", note: "US Virgin Islands — Caribbean territory of United States; St Croix, St John and St Thomas islands; tropical location; tourism and port economy; formerly Danish colonial." }],
   ["Tunisia", { continent: "North Africa", note: "Tunisia — North African nation on Mediterranean coast; Carthage heritage; Arab-Berber culture; emerged from French protectorate; Saharan and coastal regions." }],
   ["Rapa Nui", { continent: "Oceania", note: "Rapa Nui (Easter Island) — Polynesian island; remote Pacific location; famous for moai statues; Chilean territory; Rapa Nui people and language." }],
-  ["Minang", { continent: "Southeast Asia", note: "Minang people — Ethnic group of West Sumatra, Indonesia; matrilineal society; Islamic culture; historical trading port of Aceh; distinct language and customs." }],
+  // Drawn at King George Sound in south-west Australia (lon 116.4–119.1, lat -35.2–-34.3):
+  // the Noongar Minang, not the Minangkabau of Sumatra an earlier note described.
+  ["Minang", { continent: "Australia", note: "Minang (Mineng) — a Noongar people of south-west Australia, whose country runs from King George Sound north to the Stirling Range; their name comes from minaq, \"south\". They fished the Sound with stone traps built thousands of years ago." }],
   ["Germany", { continent: "Europe", note: "Germany — Central European nation; emerged as unified state 1871; industrial powerhouse; cultural and philosophical center; major European power through 20th century." }],
   ["Cuba", { continent: "Caribbean", note: "Cuba — Caribbean island nation; largest Caribbean island; Spanish colonial heritage; sugar economy; close to United States; tropical biodiversity." }],
   ["Puerto Rico", { continent: "Caribbean", noFlagReason: "No flag shown — a United States territory, flying the Stars and Stripes; Puerto Rico's own flag, designed in 1895, became official only in 1952.", note: "Puerto Rico — Caribbean island; US territory; Spanish colonial legacy; distinct culture; linguistic and cultural blend of Spanish and English influences." }],
@@ -1562,7 +1591,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Nigeria", { continent: "West Africa", note: "Nigeria — West African nation; most populous African nation; Niger River delta; former British colony; petroleum economy; diverse ethnic and religious groups." }],
   ["Uganda", { continent: "East Africa", note: "Uganda — East African nation; Great Lakes region; Nile River source; landlocked; diverse kingdoms; former British protectorate; wildlife-rich savannas." }],
   ["Annam", { continent: "Southeast Asia", note: "Annam — Historical region of Vietnam; central coastal kingdom; French colonial territory; Vietnamese ethnic heartland; rice-growing region; passed to Vietnam in 1887." }],
-  ["Cyprus", { continent: "Mediterranean", note: "Cyprus — Mediterranean island nation; Greek and Turkish communities; ancient kingdom; independent from Britain 1960; strategic location at Eastern Mediterranean crossroads." }],
+  ["Cyprus", { continent: "Western Asia", note: "Cyprus — Mediterranean island nation; Greek and Turkish communities; ancient kingdom; independent from Britain 1960; strategic location at Eastern Mediterranean crossroads." }],
   ["Mauritius", { continent: "Africa", note: "Mauritius — Island nation in Indian Ocean off East Africa; Hindu, Muslim and Christian communities; former British colony; sugar and textile economy; multicultural society." }],
   ["Seychelles", { continent: "Africa", note: "Seychelles — Island nation in Indian Ocean; archipelago east of Africa; Franco-British colonial heritage; tourism and fishing; Creole culture and language." }],
   ["Fiji", { continent: "Oceania", note: "Fiji — Island nation in South Pacific; Melanesian and Indo-Fijian populations; former British colony; tropical islands; sugar and tourism economy." }],
@@ -1624,12 +1653,16 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Yinhawangka", { continent: "Oceania", note: "Yinhawangka — Aboriginal Australian people; Northern Australia; traditional language speakers; land custodians; songline traditions and cultural practices." }],
   ["Jabirrjabirr", { continent: "Oceania", note: "Jabirrjabirr — Aboriginal Australian people; Northern Territory dwellers; maritime and riverine hunter-gatherers; distinctive cultural and linguistic heritage." }],
   ["Payungu", { continent: "Oceania", note: "Payungu — Aboriginal Australian people of Western Australia; Pilbara and inland regions; traditional land connections; hunting and gathering knowledge systems." }],
-  ["Maya", { continent: "Mesoamerica", note: "Maya civilization — Mesoamerican peoples; developed writing, mathematics and astronomy; city-states and kingdoms; classical period (250–950 AD) then post-classical kingdoms; linguistic diversity." }],
+  // Drawn on the Gascoyne coast of Western Australia (lon 113.4–115.3, lat -25.1–-23.8).
+  // The Mesoamerican Maya are "Maya chiefdoms and states", a separate entry.
+  ["Maya", { continent: "Australia", note: "Maia (Maya) — an Aboriginal Australian people of the Gascoyne coast facing the Indian Ocean, from Lake MacLeod down to the Gascoyne floodplain, speakers of a dialect close to Yinggarda." }],
   ["Malkana", { continent: "Oceania", note: "Malkana — Aboriginal Australian people; Northern Australia; traditional languages and practices; deep historical roots; land management and songline traditions." }],
   ["Yawuru", { continent: "Oceania", note: "Yawuru — Aboriginal Australian people of Western Australia; Broome and Kimberley region; maritime culture; traditional language; pearling connection to Broome." }],
   ["Kaniyang", { continent: "Oceania", note: "Kaniyang — Aboriginal Australian people; Northern Australia dwellers; traditional language speakers; land custodians with deep country connections." }],
   ["Ngarinman", { continent: "Oceania", note: "Ngarinman — Aboriginal Australian people of Northern Territory; traditional country dwellers; distinctive language; Dreaming tracks and songlines." }],
-  ["Jukun", { continent: "Africa", note: "Jukun people — West and Central African ethnic group; Nigeria and Cameroon regions; historical kingdoms; Islamic and indigenous tradition blend; farming and trade." }],
+  // The dataset draws this at Broome in the Kimberley (lon 122.2–122.8, lat -18.1–-17.7):
+  // it is the Djugun, not the Jukun of the Nigerian Benue valley an earlier note described.
+  ["Jukun", { continent: "Australia", note: "Djugun (Jukun) — an Aboriginal Australian people of the Kimberley coast, whose country runs along the northern shore of Roebuck Bay at Broome and up the coast to Willie Creek." }],
   ["Maranunggu", { continent: "Oceania", note: "Maranunggu — Aboriginal Australian people of Northern Territory; coastal and riverine dwellers; maritime traditions; traditional languages and practices." }],
   ["Thiin", { continent: "Oceania", note: "Thiin — Aboriginal Australian people; Northern Australia inhabitants; traditional language speakers; land custodians; hunting and gathering traditions." }],
   ["Doolboong/Miriwoong", { continent: "Oceania", note: "Doolboong/Miriwoong — Aboriginal Australian people of Kimberley region (WA/NT border); language speakers; pastoral and hunting knowledge; songline traditions." }],
@@ -1845,7 +1878,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Comté de Toulouse", { continent: "Europe", note: "County of Toulouse — medieval European feudal state; Languedoc region; cultural center; eventually integrated into French kingdom." }],
   ["Suomi", { continent: "Europe", note: "Suomi (Finland) — Nordic nation; Finno-Ugric peoples; emerged from Swedish and Russian overlordship; independent republic." }],
   ["Yavapai", { continent: "North America", note: "Yavapai people — Arizona desert nation; southwestern indigenous peoples; adaptable to arid environments." }],
-  ["Enets", { continent: "Europe", note: "Enets people — Arctic Siberian peoples; northern dwellers; reindeer herders of the tundra; Samoyedic language group." }],
+  ["Enets", { continent: "North Asia", note: "Enets people — Arctic Siberian peoples; northern dwellers; reindeer herders of the tundra; Samoyedic language group." }],
   ["Zacatecs", { continent: "North America", note: "Zacatecs people — North-central Mexico indigenous peoples; semi-nomadic desert dwellers; miners and traders." }],
   ["Barunggam", { continent: "Oceania", note: "Barunggam people — Aboriginal Australians of inland Australia; semi-nomadic with specialized knowledge of interior resources." }],
   ["Azerbaijan", { continent: "Asia", note: "Azerbaijan — Caucasus nation; Turkic peoples; oil-rich region; emerged from Persian and Russian overlordship." }],
@@ -1887,7 +1920,9 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Ballardong", { continent: "Oceania", note: "Ballardong people — Aboriginal Australians of southwestern Western Australia; coastal and inland Noongar nation." }],
   ["Agwarmin", { continent: "Oceania", note: "Agwarmin people — Aboriginal Australians of inland Australia; semi-nomadic with hunting and gathering traditions." }],
   ["Hurrian Kingdoms", { continent: "Asia", note: "Hurrians — Bronze Age peoples of northern Mesopotamia and Syria; established organized kingdoms; influential in ancient Near East." }],
-  ["Meru", { continent: "Africa", note: "Meru people — East African Bantu group of Kenya; agricultural peoples of mountain regions; highland farming traditions." }],
+  // Drawn along the South Australian Murray (lon 139.1–142.1, lat -35.2–-33.3), not on
+  // Mount Kenya.
+  ["Meru", { continent: "Australia", note: "Meru — \"humankind\" in the languages of the River Murray, and the collective name early writers gave the Riverland peoples of the middle Murray: the Ngaiawang, Ngawait and Erawirung." }],
   ["Asturias", { continent: "Europe", note: "Kingdom of Asturias — Christian Iberian kingdom; began the Reconquista against Islamic Al-Andalus; foundation of Portugal and Spain." }],
   ["Dutchy of Benevento", { continent: "Europe", note: "Duchy of Benevento — early medieval Italian state; Lombard principality; rival to papal territories and Byzantine Calabria." }],
   ["Andyamathanha", { continent: "Oceania", note: "Andyamathanha people — Aboriginal Australians of South Australia; mountain and valley dwellers of Flinders Ranges." }],
@@ -2504,7 +2539,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // whose modern-sounding names exist in MODERN_NAME_ALIASES but whose 1300
   // situation was very different (e.g. Morocco was Marinid, not modern).
   ["ad1300", new Map<string, PolityInfo>([
-    ["Cyprus", { continent: "Mediterranean", noFlag: true, noFlagReason: "No flag shown — the Lusignan kings used their dynastic arms and the banner of Jerusalem rather than a national flag.", note: "Kingdom of Cyprus under the Lusignan dynasty — a crusader kingdom, later sold to Venice.", population: 150_000 }],
+    ["Cyprus", { continent: "Western Asia", noFlag: true, noFlagReason: "No flag shown — the Lusignan kings used their dynastic arms and the banner of Jerusalem rather than a national flag.", note: "Kingdom of Cyprus under the Lusignan dynasty — a crusader kingdom, later sold to Venice.", population: 150_000 }],
     // France (Capetian/Valois): the fleur-de-lis banner ≠ Bourbon white flag
     ["France", { continent: "Western Europe", note: "Kingdom of France — Capetian dynasty in 1300; the Valois would follow in 1328. The fleur-de-lis azure banner predates the Bourbon white standard.", noFlag: true, population: 14_000_000 }],
     // Portugal: medieval Quinas banner — no modern-style flag
@@ -2526,7 +2561,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Delhi Sultanate (Khalji dynasty in 1300)
     ["Sultanate of Delhi", { continent: "South Asia", note: "Khalji dynasty Delhi Sultanate — at its 1300 peak it briefly reached southern India. No national flag.", noFlag: true, population: 15_000_000 }],
     // Trebizond in 1300 — Byzantine splinter state
-    ["Trebizond", { continent: "Eastern Mediterranean", note: "Empire of Trebizond — Komnenian dynasty clinging to the Black Sea coast after the Latin sack of Constantinople.", noFlag: true, population: 150_000 }],
+    ["Trebizond", { continent: "Anatolia", note: "Empire of Trebizond — Komnenian dynasty clinging to the Black Sea coast after the Latin sack of Constantinople.", noFlag: true, population: 150_000 }],
     // Georgia (weakened after Mongol invasions)
     ["Georgia", { continent: "Western Asia", note: "Kingdom of Georgia — weakened by repeated Mongol invasions; its golden age (12th–13th c.) was over.", noFlag: true, population: 1_500_000 }],
     // Ottoman Empire in 1300: the 1844–1922 crescent-and-star flag is 544
@@ -3073,6 +3108,11 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Grand Duchy of Moscow (1700s)", { noFlag: true, continent: "Eastern Europe", note: "Russia (Tsardom) in 1700 — Expanding Eastern European power; Peter the Great era begins.", population: 15_000_000 }],
   ])],
   ["ad1815", new Map<string, PolityInfo>([
+    // Filed under the name POLITY_NAME_FOR_ERA shows, so the panel describes the Caribbean
+    // colonies rather than inheriting Britain's own registry entry. `ruler` (not
+    // `modernName`) is what makes the panel caption the Union Jack as the ruler's flag and
+    // fill the "Ruled by" row — a colony's card must never imply the flag was its own.
+    ["British West Indies", { ruler: "United Kingdom", continent: "Caribbean", note: "Britain's Caribbean colonies in 1815 — Jamaica, the Bahamas, Barbados and the Leeward and Windward islands, together with the Belize logwood settlement and the Mosquito Coast. Sugar islands run by planter assemblies under the Union Jack; the slave trade had been abolished in 1807, slavery itself would last until 1833.", population: 900_000 }],
     // AUDIT 2026-08 (goal 3): Siam's flag changed four times between 1782 and 1917, so the one
     // curated image the registry carried could only ever be right for one era. In 1815 the state
     // flag was the red field with a white chakra. https://en.wikipedia.org/wiki/Flag_of_Thailand
@@ -3493,7 +3533,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // The three Transcaucasian republics were independent in 1920 (the dataset records
     // them as Soviet, two years before the USSR existed — see FALSE_SUBJECTO).
     ["Armenia", { noFlag: true, continent: "Western Asia", noFlagReason: "No flag shown — the First Republic (1918–20) flew the red-blue-orange tricolour that Armenia readopted in 1990; no period image of it is bundled.", note: "First Republic of Armenia — independent from 1918 until the Red Army took Yerevan in December 1920.", population: 1_300_000 }],
-    ["Ottoman Sultanate", { flag: "historical-flags/ottoman-empire.png", continent: "SE Europe / Western Asia", note: "Ottoman Empire after the 1877-78 Russo-Turkish War; in terminal decline as the Turkish War of Independence began in 1919. The crescent-and-star flag was standardised in 1844.", population: 18_000_000 }],
+    // By 1920 the Balkan and Arab provinces were gone and the 1920 file draws the
+    // Sultanate as Anatolia alone — so, unlike earlier eras, it is not a European power.
+    ["Ottoman Sultanate", { flag: "historical-flags/ottoman-empire.png", continent: "Western Asia", note: "Ottoman Empire after the 1877-78 Russo-Turkish War; in terminal decline as the Turkish War of Independence began in 1919. The crescent-and-star flag was standardised in 1844.", population: 18_000_000 }],
     ["USSR", { flag: "historical-flags/rsfsr-1918.svg", continent: "Eastern Europe / Northern Asia", note: "Union of Soviet Socialist Republics — the Soviet Union was formed on 30 December 1922 from the remnants of the Russian Empire following the Russian Civil War (1918–1922). The red flag with the hammer and sickle became the national symbol of the communist state.", population: 110_000_000 }],
     ["Czechoslovakia", { flag: "historical-flags/czechoslovakia.png", continent: "Central Europe", note: "Czechoslovak Republic (1918–1938) — newly formed from the dissolution of Austria-Hungary, uniting Czech and Slovak lands. The red-white-blue tricolour was adopted as the national flag in 1920.", population: 14_000_000 }],
     ["Yugoslavia", { noFlag: true, continent: "SE Europe", noFlagReason: "No flag shown — the Kingdom of Serbs, Croats and Slovenes flew a PLAIN blue-white-red tricolour; the red star was added only by the socialist federation in 1945, so the bundled Yugoslav flag would be a quarter-century out of period.", note: "Kingdom of Serbs, Croats and Slovenes (1918–1929, renamed Kingdom of Yugoslavia in 1929) — formed from South Slavic territories of the dissolved Austria-Hungary.", population: 12_000_000 }],
@@ -4077,6 +4119,14 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     // Newfoundland and Rupert's Land — were collectively British North America; "Canada"
     // first named a single polity in 1841. https://en.wikipedia.org/wiki/British_North_America
     ["Canada", "British North America"],
+    // The 1815 file already carries "United Kingdom of Great Britain and Ireland" for the
+    // metropole and "British North America" for Canada; its bare "United Kingdom" feature
+    // is the 40 Caribbean islands and Central American coastal holdings, from Belize and
+    // the Mosquito Coast through Jamaica and the Bahamas to the Virgin Islands. Shown
+    // under its own name it looked like a second, misplaced Britain — filed under Europe
+    // while all of its land is in the Americas.
+    // https://en.wikipedia.org/wiki/British_West_Indies
+    ["United Kingdom", "British West Indies"],
     // The Durrani Empire (1747–1823). "Afghanistan" as the state's name belongs to the
     // Barakzai emirate that followed. https://en.wikipedia.org/wiki/Durrani_Empire
     ["Afghanistan", "Durrani Empire"],
@@ -4314,6 +4364,32 @@ export function polityDisplayName(name: string, eraId?: Era["id"]): string {
 }
 
 /**
+ * Era remaps that change WHICH ENTITY the name refers to, rather than correcting the
+ * entity's own name for the period.
+ *
+ * `POLITY_NAME_FOR_ERA` is keyed by dataset NAME, and the panel renders RULER strings
+ * through it too — which is right for a period-name correction, because the ruler is the
+ * same state under its proper name of the day ("Austrian Empire" → Habsburg Monarchy in
+ * 1700, "Manchu Empire" → Qing Empire, "Austria Hungary" → Austria-Hungary). It is wrong
+ * when the dataset NAME means something different from what it says: 1815's "United
+ * Kingdom" feature is Britain's CARIBBEAN colonies, while "United Kingdom" as a RULER
+ * still means Britain. Remapping both captioned Canada "Ruled by British West Indies".
+ */
+const ENTITY_CHANGING_NAME_REMAP: ReadonlySet<string> = new Set(["ad1815|United Kingdom"]);
+
+/**
+ * Display name for a string used as a RULER (the "Ruled by" row and the "Flew the flag
+ * of …" caption) rather than as a polity's own feature name. Applies the era's period-name
+ * corrections but never a remap that would rename the ruler into a different entity.
+ */
+export function rulerDisplayName(name: string, eraId?: Era["id"]): string {
+  if (eraId && ENTITY_CHANGING_NAME_REMAP.has(`${eraId}|${name}`)) {
+    return DISPLAY_NAME_FIXES.get(name) ?? name;
+  }
+  return polityDisplayName(name, eraId);
+}
+
+/**
  * Look up a polity by NAME, optionally biased by era.
  *
  * Era-specific overrides win over global registry entries; falls back to
@@ -4334,6 +4410,50 @@ export function polityInfo(name: string, eraId?: Era["id"]): PolityInfo {
     if (eraEntry) return eraEntry;
   }
   return POLITY_REGISTRY.get(name) ?? {};
+}
+
+/**
+ * The region label a polity is shown and grouped under — ALWAYS a fact about where the
+ * polity's own land is, never about who ruled it.
+ *
+ * Resolution order:
+ *   1. the curated `continent` on the entry for the name actually SHOWN this era, then
+ *      the entry for the raw dataset NAME (era override before global registry) — these
+ *      are the fine-grained labels the detail panel's Region row renders
+ *      ("Eurasian Steppe", "Mesoamerica", "Levant");
+ *   2. failing that, the continent measured from the polity's OWN polygons, baked into
+ *      `src/data/polityContinents.ts` by scripts/build-polity-continents.mjs.
+ *
+ * What it deliberately does NOT do is fall back to the continent of whichever country the
+ * polity borrows a FLAG from. That fallback shipped, and it filed every 1914 colony that
+ * flew its ruler's flag under the ruler's continent: Togoland, Kamerun, German South-West
+ * Africa, German East Africa, Anglo-Egyptian Sudan, British East Africa, Southern
+ * Rhodesia and Spanish Morocco all appeared under EUROPE. A flag is borrowed; a continent
+ * is not. See CLAUDE.md, "A polity's continent is where its land is".
+ *
+ * Step 1 walking the SHOWN name and then the raw NAME also stops an era remap from losing
+ * the region: "Samoa" → "Western Samoa" and "Kingdom of Hawaii" → "Territory of Hawaii"
+ * have no entry of their own under the remapped name, and used to resolve to nothing.
+ */
+export function polityContinent(name: string, eraId?: Era["id"]): string | undefined {
+  const curated = (key: string): string | undefined =>
+    (eraId ? ERA_OVERRIDES.get(eraId)?.get(key)?.continent : undefined) ??
+    POLITY_REGISTRY.get(key)?.continent;
+
+  if (eraId) {
+    const shown = polityDisplayName(name, eraId);
+    if (shown !== name) {
+      const fromShown = curated(shown);
+      if (fromShown) return fromShown;
+    }
+  }
+  const fromRaw = curated(name);
+  if (fromRaw) return fromRaw;
+
+  return (
+    (eraId ? POLITY_CONTINENT_BY_ERA.get(`${eraId}|${name}`) : undefined) ??
+    POLITY_CONTINENT.get(name)
+  );
 }
 
 /**
