@@ -150,12 +150,63 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
           `${where}: reuses the era flag ${e.reuse}, which has NO window in src/data/historicalFlagValidity.ts. ` +
             `An era flag with no sourced window is blocked in every era — it must not be shown here either.`,
         );
-      } else if (window.from !== e.from || window.to !== e.to) {
+      } else if (e.from < window.from || e.to > window.to) {
+        // CONTAINMENT, not equality: the era table dates the DESIGN, and a colonial
+        // usage is legitimately narrower (Spain's Cross of Burgundy dates from 1506,
+        // but flew over Bolivia only from the conquest). Reaching OUTSIDE the era
+        // window is the anachronism, and that is what fails here — so the tab can
+        // never show a shared flag at a date the era maps say it did not exist.
         fail(
-          `${where}: window ${e.from}–${e.to} disagrees with historicalFlagValidity.ts (${window.from}–${window.to}) ` +
-            `for the SAME file ${e.reuse}. The era maps and this tab must date a shared flag identically.`,
+          `${where}: window ${e.from}–${e.to} reaches outside historicalFlagValidity.ts's ${window.from}–${window.to} ` +
+            `for the SAME file ${e.reuse}. The era maps and this tab must never date a shared flag differently.`,
         );
       }
+    }
+  }
+
+  // ---- pre-independence flags must declare who held sovereignty -------------
+  // The tab lists a country's colonial-era flags (owner request), which is exactly
+  // where a user could mistake another power's flag — or a colony's flag — for a
+  // flag of the independent state. The guard: any historical flag whose window ENDS
+  // at or before independence must name the sovereign power, which the UI badges.
+  const independence = country.independence;
+  const sovereignEntries = flags.filter((f) => f.sovereign);
+  if (sovereignEntries.length > 0 && !independence) {
+    fail(
+      `${cc}: has pre-independence flags (${sovereignEntries.map((f) => f.id).join(", ")}) but no sourced ` +
+        `"independence" record — the UI needs the year to caption them.`,
+    );
+  }
+  if (independence) {
+    if (!Number.isInteger(independence.year)) fail(`${cc}: independence.year must be a year.`);
+    if (!independence.event?.trim()) fail(`${cc}: independence needs the event it refers to.`);
+    if (!/^https?:\/\//.test(independence.source ?? "")) {
+      fail(`${cc}: independence must cite an http(s) source.`);
+    }
+    for (const f of flags) {
+      if (f.category !== "historical" || f.to == null) continue;
+      // Strictly BEFORE, not "at or before": the independence year itself is the
+      // transition, and a flag flown within it can belong to either side of the line
+      // (Brazil's Kingdom-of-Brazil flag flew in 1822, after the September
+      // declaration). Those are a curator's call; everything wholly earlier is not.
+      if (f.to < independence.year && !f.sovereign) {
+        fail(
+          `${cc} ${f.id}: flew entirely before independence (${f.from}–${f.to}, independent ${independence.year}) ` +
+            `but names no sovereign power. A colonial-era flag shown without that attribution reads as a flag of ` +
+            `the independent country — set "sovereign" so the UI badges it.`,
+        );
+      }
+      if (f.sovereign && f.from != null && f.from >= independence.year) {
+        fail(
+          `${cc} ${f.id}: names a sovereign power but flew from ${f.from}, at or after independence in ` +
+            `${independence.year}. Only a pre-independence flag carries "sovereign".`,
+        );
+      }
+    }
+  }
+  for (const f of sovereignEntries) {
+    if (f.category !== "historical") {
+      fail(`${cc} ${f.id}: only a historical flag can carry "sovereign" (it is in "${f.category}").`);
     }
   }
 
@@ -199,6 +250,26 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
         fail(`${where}: a myth needs both a claim and a sourced reality.`);
       }
     }
+  }
+}
+
+// ---- the UI must actually SHOW the attribution ------------------------------
+// Data alone does not prevent the anachronism; the badge does. These are the two
+// components that render a national flag, and both must read `sovereign`.
+for (const [file, what] of [
+  ["../src/components/NationalFlagGrid.tsx", "the grid card's badge"],
+  ["../src/components/NationalFlagDetails.tsx", "the selected flag's widget"],
+]) {
+  const abs = R(file);
+  if (!existsSync(abs)) {
+    fail(`${file} is missing — ${what} is what stops a colonial flag reading as the country's own.`);
+    continue;
+  }
+  if (!readFileSync(abs, "utf8").includes("sovereign")) {
+    fail(
+      `${file} no longer references \`sovereign\`, so ${what} cannot show which power held the territory. ` +
+        `Pre-independence flags would then be indistinguishable from the country's own.`,
+    );
   }
 }
 

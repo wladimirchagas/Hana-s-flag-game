@@ -1951,6 +1951,8 @@ export default function LearnPage() {
               <div className="learn-fs__detail">
                 <NationalFlagDetails
                   flag={selectedNationalFlag}
+                  countryCode={subdivisionCountry.code}
+                  countryName={subdivisionCountry.name}
                   baseUrl={baseUrl}
                   onEnlarge={setZoomedFlagUrl}
                 />

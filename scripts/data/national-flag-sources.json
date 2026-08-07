@@ -230,8 +230,111 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "c4274984c7d4510ec010fc6d46f5fe99469436cb6e2dc721099ae810902e020c",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-ukpba",
+          "category": "historical",
+          "name": "Flag of the United Kingdom of Portugal, Brazil and the Algarves",
+          "from": 1816,
+          "to": 1822,
+          "sovereign": "Portugal",
+          "commons": "Flag of the United Kingdom of Portugal, Brazil, and the Algarves (1815-1825).svg",
+          "file": "br/portugal-ukpba-1816.svg",
+          "design": "The arms of the union, with the armillary sphere of Brazil behind the Portuguese shield — Brazil was a kingdom within the union, not a colony, in these years.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "e1eeabff4b0c1f7530e36249851524033611526093cda152ab7d73a6347e7ac9",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-princes",
+          "category": "historical",
+          "name": "Flag of Portuguese Brazil",
+          "from": 1645,
+          "to": 1816,
+          "sovereign": "Portugal",
+          "commons": "Flag of the Princes of Brazil.svg",
+          "file": "br/portugal-princes-of-brazil.svg",
+          "design": "A white field bearing the armillary sphere, the emblem of Portuguese navigation, used for the State of Brazil.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "90204fcb85aa090da246f87d1c6d81fea81a0964b578b2beb68019fa616b0dea",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-pedro-ii",
+          "category": "historical",
+          "name": "Flag of Portugal under Pedro II",
+          "from": 1683,
+          "to": 1706,
+          "sovereign": "Portugal",
+          "commons": "Flag Peter II of Portugal.svg",
+          "file": "br/portugal-1683.svg",
+          "design": "A green field charged with the royal Portuguese arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "89db801f0de392cc7bfe72e2741228fe69b9204f9d5e8ddd2efe0edb37d4cdf7",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-john-iv",
+          "category": "historical",
+          "name": "Flag of Portugal during the Restoration War",
+          "from": 1640,
+          "to": 1683,
+          "sovereign": "Portugal",
+          "commons": "Flag of John IV of Portugal during the Restoration War.svg",
+          "file": "br/portugal-1640.svg",
+          "design": "A white field with blue borders charged with the royal Portuguese arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "c9dd3d5f087f802e0812a1fbeaa1e5f9b41198add733d0c94f7c9a0cf9a9a8a9",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-1616",
+          "category": "historical",
+          "name": "Flag of Portugal during the Iberian Union",
+          "from": 1616,
+          "to": 1640,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal (1616).svg",
+          "file": "br/portugal-1616.svg",
+          "design": "The royal Portuguese arms above a green base — the period when the Portuguese and Spanish crowns were united.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "9c57c556b9e0a276346111042fb9fcdf104022b707d123a75eb1cefd1e86a5b1",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-1521",
+          "category": "historical",
+          "name": "Flag of Portugal under John III",
+          "from": 1521,
+          "to": 1616,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal (1521).svg",
+          "file": "br/portugal-1521.svg",
+          "design": "A white field charged with the royal Portuguese arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "2c733f0daee7351b0ba41cd558ee9786727381fd72cb83c1939dad20e357acaf",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-1500",
+          "category": "historical",
+          "name": "Royal flag of Portugal at the time of landfall",
+          "from": 1500,
+          "to": 1521,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal sea (1500).svg",
+          "file": "br/portugal-1500.svg",
+          "design": "A white field with the royal Portuguese shield and the red cross of the Order of Christ — the flag flown when Cabral reached Brazil in 1500.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
+          "sha256": "b1fe0d06b8043da0dc36545f2429e5e3b86f3ce33db55be9cf6816d993621887",
+          "fetched": "2026-08-07"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1822,
+        "event": "Independence declared on 7 September 1822 and recognised by Portugal in 1825.",
+        "source": "https://en.wikipedia.org/wiki/Independence_of_Brazil"
+      }
     },
     "AU": {
       "flags": [
@@ -384,6 +487,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags",
           "sha256": "b671f7eceebc9ee3d8d24fff793f3fe7e1a7040cc2c58e474d475afdba70c2f7",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-uk-1801",
+          "category": "historical",
+          "name": "Union Flag",
+          "from": 1801,
+          "to": 1901,
+          "sovereign": "the United Kingdom",
+          "reuse": "flags/gb.svg",
+          "design": "The Union Flag of the United Kingdom, the flag flown over the Australian colonies until federation.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
+        },
+        {
+          "id": "au-gb-1770",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Great Britain",
+          "from": 1770,
+          "to": 1801,
+          "sovereign": "the Kingdom of Great Britain",
+          "reuse": "national-flags/gb/great-britain-1707.svg",
+          "design": "The pre-1801 Union Flag, first raised on the east coast by James Cook in 1770.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
         }
       ],
       "omitted": [
@@ -391,7 +516,13 @@
           "name": "Torres Strait Islander Flag",
           "reason": "The third flag proclaimed under the Flags Act is still under copyright (held for the Torres Strait Island Regional Council), so no freely-licensed file exists on Wikimedia Commons — en.wikipedia itself shows a placeholder in its place. Bundling a non-free image is not an option, and this repo never approximates a flag, so it is honestly absent until a free file exists."
         }
-      ]
+      ],
+      "independence": {
+        "year": 1901,
+        "event": "The six colonies federated as the Commonwealth of Australia on 1 January 1901.",
+        "note": "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.",
+        "source": "https://en.wikipedia.org/wiki/Federation_of_Australia"
+      }
     },
     "MY": {
       "flags": [
@@ -469,8 +600,69 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "1d8fd0b1cc10c682f8b211638dec3d1252a299606b2d5d273882ba921fa4df24",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-straits",
+          "category": "historical",
+          "name": "Flag of the Straits Settlements",
+          "from": 1925,
+          "to": 1946,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the British Straits Settlements (1925–1946).svg",
+          "file": "my/straits-settlements.svg",
+          "design": "A Blue Ensign with the badge of the Straits Settlements — Penang, Malacca and Singapore under direct British rule.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "25865ea6de291845b94c85382fe7b338fb8f161daa79a696e55574423e59092f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-fms",
+          "category": "historical",
+          "name": "Flag of the Federated Malay States",
+          "from": 1895,
+          "to": 1946,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Malaya (1896–1950).svg",
+          "file": "my/federated-malay-states.svg",
+          "design": "Four horizontal stripes of white, red, yellow and black with a tiger in the centre — the four protected states under British residency.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "faa43787a3b96109c02df225dbc5845f505a1826daf3890a1922391aeb1415e5",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-dutch-malacca",
+          "category": "historical",
+          "name": "The Prince's Flag, Dutch Malacca",
+          "from": 1641,
+          "to": 1795,
+          "sovereign": "the Dutch Republic",
+          "commons": "Prinsenvlag.svg",
+          "file": "my/dutch-malacca.svg",
+          "design": "The orange-white-blue flag of the Dutch Republic, flown over Malacca after the Dutch took it from Portugal.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "f0f1b0de25ce97b0b31638835dff15419fbf7700ec2f34f2ca43bc163da51b35",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-portuguese-malacca",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Portugal, Portuguese Malacca",
+          "from": 1511,
+          "to": 1521,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal (1495).svg",
+          "file": "my/portuguese-malacca.svg",
+          "design": "The royal Portuguese arms, flown over Malacca after its capture in 1511.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "bbedf2d8ecde8d5e0a5feda2642ed4eb2d08e2f20aa4ef2ab0b969075ed2c40d",
+          "fetched": "2026-08-07"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1957,
+        "event": "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.",
+        "source": "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)"
+      }
     },
     "US": {
       "flags": [
@@ -955,8 +1147,24 @@
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States",
           "sha256": "20ea11e4e4a60a10e7c606d99bd30a236dd484a99568bed015e70ad83e3eb411",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-gb-1707",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Great Britain",
+          "from": 1707,
+          "to": 1776,
+          "sovereign": "the Kingdom of Great Britain",
+          "reuse": "national-flags/gb/great-britain-1707.svg",
+          "design": "The pre-1801 Union Flag, flown over the Thirteen Colonies until independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1776,
+        "event": "The Declaration of Independence was adopted on 4 July 1776.",
+        "source": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
+      }
     },
     "GB": {
       "flags": [
@@ -1419,8 +1627,35 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags",
           "sha256": "778eb5f5e12b57dd87f9a4acc94be40edca7e52a66a1bfdb81693df30e51c622",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-spain-1785",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Spain",
+          "from": 1785,
+          "to": 1825,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The red-yellow-red ensign of 1785 with the royal arms, flown over Upper Peru in the last decades of Spanish rule.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
+        },
+        {
+          "id": "bo-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1519,
+          "to": 1785,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Upper Peru from the conquest.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1825,
+        "event": "Independence from Spain was declared on 6 August 1825.",
+        "source": "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence"
+      }
     },
     "ZA": {
       "flags": [
@@ -1498,8 +1733,39 @@
           "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
           "sha256": "eecd27c6d6356d5e72164148c58dc0d04dae1dba3a13927c9a38bf8c8582cd20",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "za-uk",
+          "category": "historical",
+          "name": "Union Flag",
+          "from": 1806,
+          "to": 1910,
+          "sovereign": "the United Kingdom",
+          "reuse": "flags/gb.svg",
+          "design": "The Union Flag of the United Kingdom, flown over the Cape and Natal colonies until union.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags"
+        },
+        {
+          "id": "za-voc",
+          "category": "historical",
+          "name": "Flag of the Dutch East India Company",
+          "from": 1652,
+          "to": 1795,
+          "sovereign": "the Dutch East India Company",
+          "commons": "Flag of the Dutch East India Company.svg",
+          "file": "za/dutch-east-india-company.svg",
+          "design": "The Dutch tricolour charged with the company's monogram — flown at the Cape from the founding of the refreshment station in 1652.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
+          "sha256": "a2837de97c9ad4b167e8d7eae91993e6856749756b0015cb42985f300c00eadb",
+          "fetched": "2026-08-07"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1910,
+        "event": "The Union of South Africa was established as a self-governing dominion on 31 May 1910.",
+        "note": "Full legislative independence followed with the Statute of Westminster in 1931; the republic was declared in 1961.",
+        "source": "https://en.wikipedia.org/wiki/Union_of_South_Africa"
+      }
     },
     "JP": {
       "flags": [
@@ -1703,8 +1969,52 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "ccd58f3d0d1a782711d978958ce2efdf4ec196d38df6f03b461249ce05522e96",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-uk-1858",
+          "category": "historical",
+          "name": "Union Flag",
+          "from": 1858,
+          "to": 1947,
+          "sovereign": "the United Kingdom",
+          "reuse": "flags/gb.svg",
+          "design": "The Union Flag, the official flag over British India from the Crown's assumption of rule in 1858 until independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags"
+        },
+        {
+          "id": "in-raj-ensign",
+          "category": "historical",
+          "name": "Star of India Red Ensign",
+          "from": 1880,
+          "to": 1947,
+          "sovereign": "the United Kingdom",
+          "commons": "British Raj Red Ensign.svg",
+          "file": "in/british-raj-ensign.svg",
+          "design": "A Red Ensign defaced with the Star of India — the ensign associated with British India, though the Union Flag was the official flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "sha256": "69a5f3f0327ee56cb005df5b5f7f0c4e0e516dab7bd8e757a58180c00b8595a5",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-eic",
+          "category": "historical",
+          "name": "Flag of the British East India Company",
+          "from": 1801,
+          "to": 1858,
+          "sovereign": "the British East India Company",
+          "commons": "Flag of the British East India Company (1801).svg",
+          "file": "in/british-east-india-company.svg",
+          "design": "Red and white stripes with the Union Flag in the canton, flown by the company that ruled much of India until the Crown took over in 1858.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
+          "sha256": "54b0596d4ea2979b2a45c5c74e0f9e5f35cd3aa2c050b13cb24fcda50d1efdea",
+          "fetched": "2026-08-07"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1947,
+        "event": "Independence and partition under the Indian Independence Act, 15 August 1947.",
+        "source": "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947"
+      }
     },
     "CN": {
       "flags": [

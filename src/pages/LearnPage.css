@@ -1747,6 +1747,44 @@
   margin: 0 0 1.5rem;
 }
 
+/* "Under {power}" badge on a pre-independence national-flag card, and the fuller
+   statement in that flag's widget. Both exist so a colonial-era flag can never be
+   read as a flag of the independent country. */
+.flag-grid__sovereign-badge {
+  display: inline-block;
+  margin-top: 0.3em;
+  padding: 0.1em 0.45em;
+  border-radius: 999px;
+  border: 1px solid var(--ink-faint);
+  background: var(--cream-deep);
+  color: var(--ink-soft);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flag-grid__card--active .flag-grid__sovereign-badge {
+  color: var(--ink-fixed);
+  border-color: var(--ink-fixed);
+  background: transparent;
+}
+
+.learn-fs__pre-independence {
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.65rem;
+  border-left: 3px solid var(--amber);
+  border-radius: 0 6px 6px 0;
+  background: var(--cream-deep);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
 /* What the image is, under a national-flag widget's flag. */
 .learn-fs__flag-design {
   margin: 0.5rem 0 0;

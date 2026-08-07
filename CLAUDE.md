@@ -118,10 +118,21 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
    MUST equal the window in `src/data/historicalFlagValidity.ts`. The tab is NOT limited to the eras' 21
    fixed dates: a flag flown between two era snapshots (Brazil 1968–1992, the 45-star US flag) is listed
    here with its own window, and bundled under `public/national-flags/`.
-4. **`historical` is the flags of THIS state and of predecessor states centred on the same territory**
-   (the Empire of Brazil, the Ottoman Empire, the Qing). **A colonial ruler's own flag is NEVER listed as
-   the colony's** — the era maps already show that, captioned as the ruler's flag, and repeating it here
-   would tell the user the territory had that flag as its own.
+4. **`historical` reaches back BEFORE independence, and every pre-independence flag MUST name the power
+   that held sovereignty.** The section covers this state, the predecessor states centred on the same
+   territory (the Empire of Brazil, the Ottoman Empire, the Qing) **and** the colonial era — the ruling
+   power's own flag (Portugal's royal banners over Brazil, the Union Flag over Australia and British
+   India) as well as a colony's own flag under that rule (the Federated Malay States). Owner request,
+   2026-08: these are part of a country's flag history and users want to see them.
+   **What makes that safe is the attribution, and it is mandatory.** Such an entry carries `sovereign`
+   (the ruling power), the country carries a sourced `independence` record, and the UI renders BOTH an
+   "Under {power}" badge on the card AND a "Before independence … so this is not a flag of the
+   independent country" statement in the widget. A colonial flag shown bare is an anachronism trap: the
+   British East India Company's striped ensign looks like an early US flag, and Portugal's royal banner
+   looks like a flag of Brazil. Never add a pre-independence flag without `sovereign`, and never remove
+   the badge or the caption — `check-national-flags.mjs` fails the build on both.
+   The era maps remain the place a *ruler's* flag is captioned per-era; this tab is the country's own
+   timeline, and the two share their images and windows (rule 3).
 5. **`military` is service-level flags only** — army, navy, air force, marine corps — never the hundreds of
    rank, command and appointment flags these sources also list.
 6. **A flag that cannot be freely licensed is OMITTED with a written reason**, in the country's `omitted`
@@ -145,8 +156,14 @@ build** on: a missing name/design/source; a historical entry with no years; an i
 whose bytes no longer match the recorded sha256; a runtime `https://` path; a standardised 640×480/512×512
 viewBox; a reused era flag whose window disagrees with `historicalFlagValidity.ts`; a country whose
 historical section omits the current flag; an undocumented omission; a malformed meaning; and
-`src/data/nationalFlags.ts` having drifted from the manifest. Never weaken it — fix the flag or its
-sourcing.
+`src/data/nationalFlags.ts` having drifted from the manifest. It ALSO fails on any historical flag whose
+window ends wholly before the country's sourced independence year but names no `sovereign` power (the
+anachronism guard), on a `sovereign` set on a flag from after independence, and on `NationalFlagGrid.tsx`
+or `NationalFlagDetails.tsx` no longer referencing `sovereign` — because the data is only half the
+protection; the badge and the caption are the other half. The era-window comparison is CONTAINMENT, not
+equality: a colonial usage is legitimately narrower than the design's own life (Spain's Cross of Burgundy
+dates from 1506 but flew over Bolivia only from the conquest), while reaching OUTSIDE the era window is
+the anachronism and fails. Never weaken it — fix the flag or its sourcing.
 
 ## Capital-city flags: never blindly trust P41, missing ≠ nonexistent — hard rule, do not override without approval
 
