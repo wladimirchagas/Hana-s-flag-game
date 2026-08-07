@@ -22,6 +22,12 @@ on:
       - "public/subdivisions/**"
       - "scripts/build-subdivision-meta.mjs"
       - "scripts/check-subdivision-meta-coverage.mjs"
+      - "public/national-flags/**"
+      - "scripts/data/national-flag-sources.json"
+      - "scripts/download-national-flags.mjs"
+      - "scripts/build-national-flags.mjs"
+      - "scripts/check-national-flags.mjs"
+      - "src/data/nationalFlags.ts"
       - "public/capital-flags/**"
       - "src/data/capitalFlags.ts"
       - "src/data/sharedCapitalFlags.ts"
@@ -189,6 +195,14 @@ jobs:
 
       - name: Verify every withheld era flag explains itself
         run: node scripts/check-era-flag-explanations.mjs
+
+      # The "National flags" tab shares its historical flag IMAGES and their sourced
+      # from/to windows with the era maps, so this check imports historicalFlagValidity.ts
+      # and belongs in this Node 24 job: it fails the build if the two ever date the same
+      # file differently, if a flag is not bundled, or if the generated data has drifted
+      # from the curated manifest.
+      - name: Verify the national-flags tab is sourced, bundled and agrees with the eras
+        run: node scripts/check-national-flags.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

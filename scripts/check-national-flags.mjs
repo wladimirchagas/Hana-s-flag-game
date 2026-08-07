@@ -1,0 +1,233 @@
+#!/usr/bin/env node
+/**
+ * Build gate for the Learn-mode "National flags" tab.
+ *
+ * The tab shows a country's OWN flags — historical national flags (newest first,
+ * the current one included), additional officially recognised flags, military
+ * service flags, maritime ensigns/jacks, head-of-state standards, civil/state
+ * variants and indigenous flags. Every one of them is an image with a DATE and a
+ * SOURCE, so the same discipline that guards the era flags guards these:
+ *
+ *   1. Every entry carries a name, a from/to window, a design line and an
+ *      authoritative http(s) source. Nothing is written from memory.
+ *   2. Every image is BUNDLED — a reused file (the country's own flag, or an era
+ *      flag under public/historical-flags/) must exist, and a fetched file must
+ *      match the sha256 the manifest recorded. No runtime URLs, ever.
+ *   3. THE LINK TO THE HISTORICAL ERAS. A flag reused from public/historical-flags/
+ *      must carry the SAME window as src/data/historicalFlagValidity.ts gives it.
+ *      That is what makes the two views structurally incapable of disagreeing about
+ *      what a country flew at a given date: one file, one sourced window, two
+ *      consumers. Drift fails the build here.
+ *   4. No standardised viewBox (640×480 / 512×512) — the flag-aspect-ratio hard
+ *      rule applies to these files exactly as it does to public/flags/.
+ *   5. Every country listed shows its CURRENT flag in the historical section (the
+ *      owner's requirement: "all national flags of that country, including the
+ *      current one"), so the section can never be a history that stops short of
+ *      today.
+ *   6. src/data/nationalFlags.ts is in sync with the manifest — the generated file
+ *      is never hand-edited.
+ *   7. Meanings are structurally sound (description + real source URLs + well-formed
+ *      myths), the same floor check-flag-meanings.mjs applies. Like that check it
+ *      cannot tell a sourced fact from a plausible fabrication: it is a safety net,
+ *      not a substitute for verifying each claim against its cited source.
+ *
+ * Usage:
+ *   node scripts/check-national-flags.mjs     # exits 1 on failure
+ *   npm run flags:check:national
+ */
+
+import { readFileSync, existsSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const R = (p) => resolve(__dirname, p);
+
+const MANIFEST = R("data/national-flag-sources.json");
+const GENERATED = R("../src/data/nationalFlags.ts");
+const PUBLIC = R("../public");
+
+const CATEGORIES = new Set([
+  "historical",
+  "official",
+  "military",
+  "maritime",
+  "standard",
+  "civilstate",
+  "indigenous",
+]);
+const FORBIDDEN_VIEWBOXES = new Set(["0 0 640 480", "0 0 512 512"]);
+
+const errors = [];
+const fail = (msg) => errors.push(msg);
+
+const manifest = JSON.parse(readFileSync(MANIFEST, "utf8"));
+const { HISTORICAL_FLAG_VALIDITY } = await import("../src/data/historicalFlagValidity.ts");
+
+const seenIds = new Set();
+let reusedEraFlags = 0;
+let flagTotal = 0;
+
+for (const [cc, country] of Object.entries(manifest.countries)) {
+  if (!/^[A-Z]{2}$/.test(cc)) fail(`${cc}: not an ISO 3166-1 alpha-2 code.`);
+  const flags = country.flags ?? [];
+  if (flags.length === 0) fail(`${cc}: listed with no flags — remove the country instead.`);
+
+  for (const e of flags) {
+    flagTotal++;
+    const where = `${cc} ${e.id ?? "(no id)"}`;
+
+    if (!e.id) fail(`${where}: no id.`);
+    else if (seenIds.has(e.id)) fail(`${where}: duplicate id — ids must be unique across the file.`);
+    else seenIds.add(e.id);
+
+    if (!CATEGORIES.has(e.category)) fail(`${where}: unknown category "${e.category}".`);
+    if (!e.name?.trim()) fail(`${where}: no name.`);
+    if (!e.design?.trim()) fail(`${where}: no design line.`);
+    if (!/^https?:\/\//.test(e.source ?? "")) fail(`${where}: source must be an http(s) URL.`);
+    // Years are REQUIRED on a historical flag (the section exists to date them) and
+    // optional elsewhere: an undated service flag is listed with no years rather
+    // than an invented adoption date.
+    const dated = e.from != null || e.to != null;
+    if (e.category === "historical" && !dated) {
+      fail(`${where}: a historical flag must carry the year(s) it was flown.`);
+    }
+    if (dated) {
+      if (!Number.isInteger(e.from) || !Number.isInteger(e.to)) {
+        fail(`${where}: from/to must both be years (to: 9999 = still current).`);
+      } else if (e.from > e.to) {
+        fail(`${where}: from ${e.from} is after to ${e.to}.`);
+      }
+    }
+
+    // ---- the image must be bundled -------------------------------------------
+    const path = e.reuse ?? (e.file ? `national-flags/${e.file}` : null);
+    if (!path) {
+      fail(`${where}: needs either "reuse" or "file".`);
+      continue;
+    }
+    if (e.reuse && e.commons) fail(`${where}: has both "reuse" and "commons" — pick one.`);
+    if (/^https?:\/\//.test(path)) {
+      fail(`${where}: "${path}" is a runtime URL. Every flag file must be bundled in the repo.`);
+      continue;
+    }
+    const abs = resolve(PUBLIC, path);
+    if (!existsSync(abs)) {
+      fail(`${where}: ${path} is not bundled.`);
+      continue;
+    }
+    const bytes = readFileSync(abs);
+
+    if (!e.reuse) {
+      if (!e.commons) fail(`${where}: fetched files must record the Commons filename they came from.`);
+      if (!e.sha256) {
+        fail(`${where}: no sha256 recorded — re-run node scripts/download-national-flags.mjs.`);
+      } else {
+        const digest = createHash("sha256").update(bytes).digest("hex");
+        if (digest !== e.sha256) {
+          fail(`${where}: ${path} does not match the recorded sha256 (the file was changed after it was fetched).`);
+        }
+      }
+    }
+
+    // ---- aspect ratio ---------------------------------------------------------
+    if (path.endsWith(".svg")) {
+      const head = bytes.slice(0, 512).toString("utf8");
+      const m = head.match(/viewBox=["']([^"']+)["']/);
+      if (m && FORBIDDEN_VIEWBOXES.has(m[1].trim())) {
+        fail(`${where}: ${path} has the standardised viewBox "${m[1].trim()}" — source a flag that keeps its real proportions.`);
+      }
+    }
+
+    // ---- the link to the historical eras --------------------------------------
+    if (e.reuse?.startsWith("historical-flags/")) {
+      reusedEraFlags++;
+      const window = HISTORICAL_FLAG_VALIDITY.get(e.reuse);
+      if (!window) {
+        fail(
+          `${where}: reuses the era flag ${e.reuse}, which has NO window in src/data/historicalFlagValidity.ts. ` +
+            `An era flag with no sourced window is blocked in every era — it must not be shown here either.`,
+        );
+      } else if (window.from !== e.from || window.to !== e.to) {
+        fail(
+          `${where}: window ${e.from}–${e.to} disagrees with historicalFlagValidity.ts (${window.from}–${window.to}) ` +
+            `for the SAME file ${e.reuse}. The era maps and this tab must date a shared flag identically.`,
+        );
+      }
+    }
+  }
+
+  // ---- a documented omission needs a real reason ---------------------------
+  for (const o of country.omitted ?? []) {
+    if (!o.name?.trim()) fail(`${cc}: an omitted flag has no name.`);
+    if ((o.reason ?? "").trim().length < 40) {
+      fail(`${cc}: the omission of "${o.name}" needs a reason saying WHY no flag is shown (missing is honest, unexplained is not).`);
+    }
+  }
+
+  // ---- the current flag must be present -----------------------------------
+  const historical = flags.filter((f) => f.category === "historical");
+  if (historical.length > 0) {
+    const current = historical.filter((f) => f.to >= 9999);
+    if (current.length === 0) {
+      fail(`${cc}: the historical section stops before the present — the CURRENT national flag must be listed too.`);
+    } else if (current.length > 1) {
+      fail(`${cc}: ${current.length} historical flags are marked current (to: 9999): ${current.map((f) => f.id).join(", ")}.`);
+    }
+  }
+}
+
+// ---- meanings ---------------------------------------------------------------
+for (const [cc, country] of Object.entries(manifest.countries)) {
+  for (const e of country.flags ?? []) {
+    if (!e.meaning) continue;
+    const where = `${cc} ${e.id}`;
+    const m = e.meaning;
+    if (!m.description?.trim()) fail(`${where}: meaning has no description.`);
+    if (!Array.isArray(m.sources) || m.sources.length === 0) {
+      fail(`${where}: meaning has no sources — every explainer must cite an authoritative source.`);
+    } else {
+      for (const s of m.sources) {
+        if (!s.title?.trim()) fail(`${where}: a meaning source has no title.`);
+        if (!/^https?:\/\//.test(s.url ?? "")) fail(`${where}: a meaning source has no http(s) URL.`);
+      }
+    }
+    for (const myth of m.myths ?? []) {
+      if (!myth.claim?.trim() || !myth.reality?.trim()) {
+        fail(`${where}: a myth needs both a claim and a sourced reality.`);
+      }
+    }
+  }
+}
+
+// ---- the generated file must match the manifest -----------------------------
+if (!existsSync(GENERATED)) {
+  fail("src/data/nationalFlags.ts is missing — run node scripts/build-national-flags.mjs.");
+} else {
+  const before = readFileSync(GENERATED, "utf8");
+  execFileSync(process.execPath, [R("build-national-flags.mjs")], { stdio: "pipe" });
+  const after = readFileSync(GENERATED, "utf8");
+  if (before !== after) {
+    fail(
+      "src/data/nationalFlags.ts is out of date with scripts/data/national-flag-sources.json " +
+        "(it has been regenerated — commit the change). Never hand-edit the generated file.",
+    );
+  }
+}
+
+const countries = Object.keys(manifest.countries).length;
+if (errors.length > 0) {
+  console.error("✗ national-flag check failed:\n");
+  for (const e of errors) console.error(`  ${e}`);
+  console.error(
+    `\n${errors.length} problem(s). Fix the flag or its sourcing — never weaken this check.`,
+  );
+  process.exit(1);
+}
+
+console.log(
+  `✓ national flags: ${flagTotal} flags across ${countries} countries, ` +
+    `${reusedEraFlags} shared with the historical era maps (windows agree).`,
+);
