@@ -15,8 +15,23 @@ permissions:
 # production deployments must run to completion, otherwise a rapid series
 # of merges can cancel every deploy before it finishes and leave the live
 # site stuck on an old build.
+#
+# The group name carries a suffix so a wedged run can be stepped over without
+# owner intervention. Serialising deploys is right, but it has a failure mode:
+# a run that stalls INDEFINITELY holds the group forever, and every later
+# deploy queues behind it. On 2026-08-06 run #963's deploy job entered
+# `waiting` at 17:06 UTC and never started, so three merges sat unpublished
+# for ~17 hours while the live site served the previous afternoon's build.
+# Clearing that needs `actions: write` (cancel/approve/re-run), which the
+# agent token does not have, leaving no way to ship at all.
+#
+# Bumping the suffix moves future deploys into a fresh group, abandoning the
+# stuck run without weakening serialisation — all later runs still share one
+# group and still never cancel each other mid-publish. Bump it ONLY to step
+# over a run that is genuinely stalled (status `waiting`/`queued` with no
+# progress for hours), never to get two deploys running at once.
 concurrency:
-  group: pages
+  group: pages-v2
   cancel-in-progress: false
 
 jobs:
