@@ -31,6 +31,10 @@ const CATEGORY_ORDER = [
   "standard",
   "civilstate",
   "indigenous",
+  // Not flags, but the country's other national symbols — kept last so the flag
+  // sections always lead.
+  "coatofarms",
+  "passport",
 ];
 
 const manifest = JSON.parse(readFileSync(MANIFEST, "utf8"));
@@ -62,14 +66,20 @@ for (const cc of countries) {
 
   flagLines.push(`  ${q(cc)}: [`);
   for (const e of ordered) {
-    const path = e.reuse ?? `national-flags/${e.file}`;
+    // An entry with NO image is still listed: some symbols have no freely-licensed
+    // file (Australia's Torres Strait Islander Flag is under copyright until 2063),
+    // and silently dropping one leaves the country's set looking complete when it
+    // is not. It renders as a card carrying the reason instead of a picture.
+    const path = e.reuse ?? (e.file ? `national-flags/${e.file}` : null);
+    const pathField = path ? `path: ${q(path)}, ` : "";
+    const noImage = e.noImageReason ? `noImageReason: ${q(e.noImageReason)}, ` : "";
     const years =
       e.from == null ? "" : `from: ${e.from}, ${e.to == null ? "" : `to: ${e.to}, `}`;
     // A pre-independence flag carries the power that held sovereignty at the time,
     // so the UI can badge it instead of presenting it as the country's own flag.
     const sovereign = e.sovereign ? `sovereign: ${q(e.sovereign)}, ` : "";
     flagLines.push(
-      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}path: ${q(path)}, design: ${q(e.design)}, source: ${q(e.source)} },`,
+      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
     );
     flagCount++;
 
@@ -129,7 +139,9 @@ export type NationalFlagCategory =
   | "maritime"
   | "standard"
   | "civilstate"
-  | "indigenous";
+  | "indigenous"
+  | "coatofarms"
+  | "passport";
 
 export type NationalFlag = {
   /** Stable slug — React key, and the key into NATIONAL_FLAG_MEANINGS. */
@@ -147,8 +159,16 @@ export type NationalFlag = {
   readonly from?: number;
   /** Last year it was in use (9999 = still current). */
   readonly to?: number;
-  /** Image path relative to BASE_URL. */
-  readonly path: string;
+  /**
+   * Image path relative to BASE_URL — ABSENT when no freely-licensed file exists.
+   * The entry is still listed (with \`noImageReason\`) rather than dropped: an
+   * omission the user cannot see makes an incomplete set look complete, which is
+   * how Australia's Torres Strait Islander Flag went missing from a tab that
+   * showed its two companion flags.
+   */
+  readonly path?: string;
+  /** Why no image is shown. Present exactly when \`path\` is absent. */
+  readonly noImageReason?: string;
   /** What the image is — the card's sub-label. */
   readonly design: string;
   /**

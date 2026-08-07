@@ -57,6 +57,8 @@ const CATEGORIES = new Set([
   "standard",
   "civilstate",
   "indigenous",
+  "coatofarms",
+  "passport",
 ]);
 const FORBIDDEN_VIEWBOXES = new Set(["0 0 640 480", "0 0 512 512"]);
 
@@ -102,11 +104,22 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       }
     }
 
-    // ---- the image must be bundled -------------------------------------------
+    // ---- the image must be bundled, or its absence explained -----------------
     const path = e.reuse ?? (e.file ? `national-flags/${e.file}` : null);
     if (!path) {
-      fail(`${where}: needs either "reuse" or "file".`);
+      // An entry with no free image is LISTED, not dropped — see the Torres Strait
+      // Islander Flag. What it must never be is unexplained: the reason is what the
+      // card shows in place of the picture.
+      if ((e.noImageReason ?? "").trim().length < 40) {
+        fail(
+          `${where}: has no image and no usable "noImageReason". Either bundle the file, or say why ` +
+            `no freely-licensed one exists — a symbol dropped in silence makes an incomplete set look complete.`,
+        );
+      }
       continue;
+    }
+    if (e.noImageReason) {
+      fail(`${where}: has both an image and a "noImageReason" — one or the other.`);
     }
     if (e.reuse && e.commons) fail(`${where}: has both "reuse" and "commons" — pick one.`);
     if (/^https?:\/\//.test(path)) {
@@ -161,6 +174,19 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
             `for the SAME file ${e.reuse}. The era maps and this tab must never date a shared flag differently.`,
         );
       }
+    }
+  }
+
+  // ---- a coat of arms must EXPLAIN itself ----------------------------------
+  // Arms are a stack of charges that each mean something, and every national one is
+  // documented. A description of what is drawn, with no account of WHY, is exactly
+  // the "descriptive but not explanatory" gap the owner called out.
+  for (const f of flags) {
+    if (f.category === "coatofarms" && !f.meaning) {
+      fail(
+        `${cc} ${f.id}: a coat of arms must carry a sourced "meaning" explaining what its charges stand for, ` +
+          `not just a description of what is drawn.`,
+      );
     }
   }
 
@@ -256,6 +282,18 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
 // ---- the UI must actually SHOW the attribution ------------------------------
 // Data alone does not prevent the anachronism; the badge does. These are the two
 // components that render a national flag, and both must read `sovereign`.
+for (const [file, what] of [
+  ["../src/components/NationalFlagGrid.tsx", "the grid card's badge"],
+  ["../src/components/NationalFlagDetails.tsx", "the selected flag's widget"],
+]) {
+  const abs2 = R(file);
+  if (existsSync(abs2) && !readFileSync(abs2, "utf8").includes("noImageReason")) {
+    fail(
+      `${file} no longer references \`noImageReason\`, so a symbol with no freely-licensed image ` +
+        `would vanish from the UI instead of showing why it cannot be pictured.`,
+    );
+  }
+}
 for (const [file, what] of [
   ["../src/components/NationalFlagGrid.tsx", "the grid card's badge"],
   ["../src/components/NationalFlagDetails.tsx", "the selected flag's widget"],

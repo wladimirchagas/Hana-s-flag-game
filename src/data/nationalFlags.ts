@@ -24,7 +24,9 @@ export type NationalFlagCategory =
   | "maritime"
   | "standard"
   | "civilstate"
-  | "indigenous";
+  | "indigenous"
+  | "coatofarms"
+  | "passport";
 
 export type NationalFlag = {
   /** Stable slug — React key, and the key into NATIONAL_FLAG_MEANINGS. */
@@ -42,8 +44,16 @@ export type NationalFlag = {
   readonly from?: number;
   /** Last year it was in use (9999 = still current). */
   readonly to?: number;
-  /** Image path relative to BASE_URL. */
-  readonly path: string;
+  /**
+   * Image path relative to BASE_URL — ABSENT when no freely-licensed file exists.
+   * The entry is still listed (with `noImageReason`) rather than dropped: an
+   * omission the user cannot see makes an incomplete set look complete, which is
+   * how Australia's Torres Strait Islander Flag went missing from a tab that
+   * showed its two companion flags.
+   */
+  readonly path?: string;
+  /** Why no image is shown. Present exactly when `path` is absent. */
+  readonly noImageReason?: string;
   /** What the image is — the card's sub-label. */
   readonly design: string;
   /**
@@ -69,12 +79,15 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-gb-1770", category: "historical", name: "Flag of the Kingdom of Great Britain", from: 1770, to: 1801, sovereign: "the Kingdom of Great Britain", path: "national-flags/gb/great-britain-1707.svg", design: "The pre-1801 Union Flag, first raised on the east coast by James Cook in 1770.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-official-national", category: "official", name: "Australian National Flag", from: 1908, to: 9999, path: "flags/au.svg", design: "Proclaimed under the Flags Act 1953 as the flag of the Commonwealth of Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-aboriginal", category: "official", name: "Australian Aboriginal Flag", from: 1971, to: 9999, path: "national-flags/au/australia-aboriginal.svg", design: "Black over red with a yellow disc at the centre; proclaimed a Flag of Australia in 1995.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
+    { id: "au-torres-strait", category: "official", name: "Torres Strait Islander Flag", noImageReason: "The design is still in copyright under the Copyright Act 1968 — Bernard Namok died in 1993, so it will not enter the public domain for decades — and no freely-licensed file exists on Wikimedia Commons (en.wikipedia itself shows a placeholder). This game never bundles a non-free image and never approximates a flag, so the flag is listed with its meaning but without a picture.", design: "Green, blue and black horizontal bands with a white dhari (headdress) and a five-pointed star at the centre.", source: "https://en.wikipedia.org/wiki/Torres_Strait_Islander_flag" },
     { id: "au-adf", category: "military", name: "Australian Defence Force Ensign", from: 2000, to: 9999, path: "national-flags/au/australia-adf.svg", design: "A tricolour of navy, army red and air-force blue bearing the Defence Force badge.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-navy", category: "military", name: "Australian White Ensign", from: 1967, to: 9999, path: "national-flags/au/australia-navy.svg", design: "The national flag on a white field, with the Commonwealth Star and Southern Cross in blue.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-raaf", category: "military", name: "Royal Australian Air Force Ensign", from: 1982, to: 9999, path: "national-flags/au/australia-raaf.svg", design: "An Air-Force-blue field with the Union Jack, the RAAF roundel and the Southern Cross.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-red-ensign", category: "maritime", name: "Australian Red Ensign", from: 1908, to: 9999, path: "national-flags/au/australia-red-ensign.svg", design: "A Red Ensign with the Commonwealth Star and the Southern Cross — the flag of Australian-registered merchant ships.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-royal", category: "standard", name: "King's Flag for Australia", from: 2024, to: 9999, path: "national-flags/au/australia-royal-standard.svg", design: "A banner of the Australian coat of arms, used by the sovereign in Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-gg", category: "standard", name: "Flag of the Governor-General of Australia", from: 1936, to: 9999, path: "national-flags/au/australia-governor-general.svg", design: "A crowned lion standing on a crown, on a blue field.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
+    { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
+    { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.jpg", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above and PASSPORT below.", source: "https://en.wikipedia.org/wiki/Australian_passport" },
   ],
   "BO": [
     { id: "bo-1851", category: "historical", name: "Flag of Bolivia", from: 1851, to: 9999, path: "flags/bo.svg", design: "A horizontal tricolour of red, yellow and green.", source: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
@@ -86,6 +99,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bo-naval-ensign", category: "maritime", name: "Naval ensign of the Bolivian Navy", from: 2013, to: 9999, path: "national-flags/bo/bolivia-naval-ensign.svg", design: "A blue field bearing the tricolour and nine stars — one for each department, flown by a navy that patrols rivers and lakes since Bolivia lost its coastline in 1884.", source: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
     { id: "bo-naval-jack", category: "maritime", name: "Naval jack of Bolivia", from: 1851, to: 9999, path: "national-flags/bo/bolivia-naval-jack.svg", design: "A green field with a yellow and red double border.", source: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
     { id: "bo-state", category: "civilstate", name: "State flag of Bolivia", from: 1851, to: 9999, path: "national-flags/bo/bolivia-state.svg", design: "The tricolour charged with the coat of arms — flown by the state, while citizens fly the plain tricolour.", source: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
+    { id: "bo-arms", category: "coatofarms", name: "Coat of arms of Bolivia", path: "national-flags/bo/bolivia-arms.svg", design: "An oval showing the Cerro Rico of Potosí under a rising sun, with a llama, a wheatsheaf and a palm, ringed by flags, cannon and an Andean condor.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia" },
+    { id: "bo-passport", category: "passport", name: "Bolivian passport", path: "national-flags/bo/bolivia-passport.png", design: "A blue cover with the Bolivian coat of arms in gold, reading ESTADO PLURINACIONAL DE BOLIVIA.", source: "https://en.wikipedia.org/wiki/Bolivian_passport" },
   ],
   "BR": [
     { id: "br-1992", category: "historical", name: "Flag of Brazil", from: 1992, to: 9999, path: "flags/br.svg", design: "27 stars — Tocantins, Amapá and Roraima were added when the states they represent were created.", source: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
@@ -109,6 +124,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "br-jack", category: "maritime", name: "Naval jack (Bandeira do Cruzeiro)", from: 1847, to: 9999, path: "national-flags/br/brazil-naval-jack.svg", design: "Dark blue with 21 white stars in a cross — 13 across and 9 down.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-president", category: "standard", name: "Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-president.svg", design: "A dark green field with the national coat of arms in the centre.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-vice-president", category: "standard", name: "Vice-Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-vice-president.svg", design: "A yellow field with 21 blue stars in a cross and the coat of arms at the centre.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
+    { id: "br-arms", category: "coatofarms", name: "Coat of arms of Brazil", path: "national-flags/br/brazil-arms.svg", design: "A blue disc bearing the Southern Cross, ringed by 27 stars, on a star-shaped emblem framed by coffee and tobacco branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
+    { id: "br-passport", category: "passport", name: "Brazilian passport", path: "national-flags/br/brazil-passport.png", design: "The blue Mercosur cover: the national arms in gold above the country's name, with MERCOSUL/MERCOSUR across the top.", source: "https://en.wikipedia.org/wiki/Brazilian_passport" },
   ],
   "CN": [
     { id: "cn-1949", category: "historical", name: "Flag of the People's Republic of China", from: 1949, to: 9999, path: "flags/cn.svg", design: "A red field with one large gold star and four smaller stars in an arc, hoisted on 1 October 1949.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
@@ -120,6 +137,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cn-pla-navy", category: "military", name: "Ensign of the PLA Navy", from: 1992, to: 9999, path: "national-flags/cn/china-pla-navy.svg", design: "The PLA flag with blue and white stripes along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
     { id: "cn-pla-air", category: "military", name: "Ensign of the PLA Air Force", path: "national-flags/cn/china-pla-air.svg", design: "The PLA flag with a sky-blue stripe along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
     { id: "cn-pla-rocket", category: "military", name: "Ensign of the PLA Rocket Force", from: 2016, to: 9999, path: "national-flags/cn/china-pla-rocket.svg", design: "The PLA flag with a gold-and-blue stripe along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
+    { id: "cn-arms", category: "coatofarms", name: "National Emblem of China", path: "national-flags/cn/china-emblem.svg", design: "Tiananmen Gate beneath five gold stars, in a red circle framed by ears of grain and a cogwheel.", source: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
+    { id: "cn-passport", category: "passport", name: "Chinese passport", path: "national-flags/cn/china-passport.svg", design: "A dark red cover with the national emblem in gold, reading 中华人民共和国护照.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
   ],
   "ES": [
     { id: "es-1981", category: "historical", name: "Flag of Spain", from: 1981, to: 9999, path: "flags/es.svg", design: "Red-yellow-red with the coat of arms toward the hoist, in the form fixed by the 1981 royal decree.", source: "https://en.wikipedia.org/wiki/List_of_Spanish_flags" },
@@ -133,12 +152,16 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "es-yacht", category: "maritime", name: "Yacht ensign of Spain", from: 1977, to: 9999, path: "national-flags/es/spain-yacht-ensign.svg", design: "The national flag charged with a plain blue royal crown.", source: "https://en.wikipedia.org/wiki/List_of_Spanish_flags" },
     { id: "es-royal", category: "standard", name: "Standard of the King of Spain", from: 2014, to: 9999, path: "national-flags/es/spain-royal-standard.svg", design: "A crimson square bearing the arms of the sovereign.", source: "https://en.wikipedia.org/wiki/List_of_Spanish_flags" },
     { id: "es-civil", category: "civilstate", name: "Civil flag of Spain", from: 1981, to: 9999, path: "national-flags/es/spain-civil.svg", design: "The red-yellow-red bands without the coat of arms — the flag private citizens fly, alongside the state flag which bears the arms.", source: "https://en.wikipedia.org/wiki/List_of_Spanish_flags" },
+    { id: "es-arms", category: "coatofarms", name: "Coat of arms of Spain", path: "national-flags/es/spain-arms.svg", design: "A quartered shield of Castile, León, Aragón and Navarre with Granada in base, between the Pillars of Hercules.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
+    { id: "es-passport", category: "passport", name: "Spanish passport", path: "national-flags/es/spain-passport.svg", design: "A burgundy cover reading UNIÓN EUROPEA above ESPAÑA, with the Spanish coat of arms in gold.", source: "https://en.wikipedia.org/wiki/Spanish_passport" },
   ],
   "FR": [
     { id: "fr-tricolore", category: "historical", name: "Flag of France (the Tricolore)", from: 1830, to: 9999, path: "flags/fr.svg", design: "Three vertical bands of blue, white and red. The darker navy of the original was restored in 2020, after a lighter version had been used since 1976.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
     { id: "fr-bourbon", category: "historical", name: "Royal flag of the House of Bourbon", from: 1590, to: 1830, path: "historical-flags/france-bourbon.png", design: "A plain white field strewn with gold fleurs-de-lis. Not flown between 1790 and 1814, when the Revolution and the First Empire intervened.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
     { id: "fr-royal-banner", category: "historical", name: "Royal banner of France", from: 1376, to: 1792, path: "historical-flags/france-royal-banner.svg", design: "Azure with three gold fleurs-de-lis — \"France moderne\", after Charles V reduced the strewn field to three flowers in 1376.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
     { id: "fr-naval-ensign", category: "maritime", name: "Naval ensign of France", from: 1853, to: 9999, path: "national-flags/fr/france-naval-ensign.svg", design: "The Tricolore in the navy's own proportions, with the three bands of unequal width so they appear equal when flying.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
+    { id: "fr-arms", category: "coatofarms", name: "Emblem of the French Republic", path: "national-flags/fr/france-emblem.svg", design: "A lictor’s fasces on crossed oak and laurel branches, with a ribbon bearing the republic’s motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_France" },
+    { id: "fr-passport", category: "passport", name: "French passport", path: "national-flags/fr/france-passport.svg", design: "A burgundy cover reading UNION EUROPÉENNE above RÉPUBLIQUE FRANÇAISE, with the republic's emblem in gold.", source: "https://en.wikipedia.org/wiki/French_passport" },
   ],
   "GB": [
     { id: "gb-1801", category: "historical", name: "Union Flag", from: 1801, to: 9999, path: "flags/gb.svg", design: "The crosses of St George, St Andrew and St Patrick combined — the design adopted when Ireland joined the union on 1 January 1801.", source: "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags" },
@@ -154,6 +177,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gb-civil-jack", category: "maritime", name: "Civil Jack", from: 1801, to: 9999, path: "national-flags/gb/uk-civil-jack.svg", design: "The Union Flag within a white border, flown as a jack by British merchant ships.", source: "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags" },
     { id: "gb-royal-standard", category: "standard", name: "Royal Standard of the United Kingdom", from: 1837, to: 9999, path: "national-flags/gb/uk-royal-standard.svg", design: "A banner of the royal arms: the three lions of England quartered with the lion of Scotland and the harp of Ireland.", source: "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags" },
     { id: "gb-royal-standard-scotland", category: "standard", name: "Royal Standard of the United Kingdom in Scotland", from: 1837, to: 9999, path: "national-flags/gb/uk-royal-standard-scotland.svg", design: "The royal arms in their Scottish form, with the lion rampant taking precedence.", source: "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags" },
+    { id: "gb-arms", category: "coatofarms", name: "Royal Coat of Arms of the United Kingdom", path: "national-flags/gb/uk-arms.svg", design: "A quartered shield of the three lions of England, the lion of Scotland and the harp of Ireland, supported by a lion and a unicorn.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_United_Kingdom" },
+    { id: "gb-passport", category: "passport", name: "British passport", path: "national-flags/gb/uk-passport.svg", design: "A dark blue cover with the Royal Coat of Arms in gold, above UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND.", source: "https://en.wikipedia.org/wiki/British_passport" },
+    { id: "gb-passport-diplomatic", category: "passport", name: "British diplomatic passport", path: "national-flags/gb/uk-passport-diplomatic.svg", design: "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
+    { id: "gb-passport-official", category: "passport", name: "British official passport", path: "national-flags/gb/uk-passport-official.svg", design: "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
   ],
   "IN": [
     { id: "in-1947", category: "historical", name: "Flag of India (Tiranga)", from: 1947, to: 9999, path: "flags/in.svg", design: "A horizontal tricolour of saffron, white and green with the navy-blue Ashoka Chakra of 24 spokes at the centre; adopted 22 July 1947.", source: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
@@ -165,6 +192,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "in-civil-ensign", category: "maritime", name: "Civil ensign of India", path: "national-flags/in/india-civil-ensign.svg", design: "A Red Ensign with the national flag in the canton, flown by Indian merchant ships.", source: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
     { id: "in-state-ensign", category: "maritime", name: "State ensign of India", path: "national-flags/in/india-state-ensign.svg", design: "A Blue Ensign with the national flag in the canton and a yellow anchor.", source: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
     { id: "in-president-1950", category: "standard", name: "Presidential Standard of India (1950–1971)", from: 1950, to: 1971, path: "national-flags/in/india-president-1950.svg", design: "Quartered dark blue: the Lions of Sarnath, an elephant, a pair of scales and a lotus vase — discontinued in 1971 in favour of the national flag.", source: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
+    { id: "in-arms", category: "coatofarms", name: "State Emblem of India", path: "national-flags/in/india-emblem.svg", design: "Three of the four Asiatic lions of the Lion Capital of Ashoka, above a frieze bearing a horse and a bull with a wheel between them.", source: "https://en.wikipedia.org/wiki/State_Emblem_of_India" },
+    { id: "in-passport", category: "passport", name: "Indian passport", path: "national-flags/in/india-passport.svg", design: "A navy-blue cover bearing the State Emblem of India in gold, with भारत गणराज्य and REPUBLIC OF INDIA.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
   ],
   "JP": [
     { id: "jp-1999", category: "historical", name: "Flag of Japan (Hinomaru)", from: 1999, to: 9999, path: "flags/jp.svg", design: "A crimson disc centred on white, at 2:3 — the proportions and placement fixed by the Act on National Flag and Anthem of 13 August 1999.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
@@ -174,6 +203,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "jp-jmsdf", category: "military", name: "Ensign of the Japan Maritime Self-Defense Force", path: "national-flags/jp/japan-jmsdf.svg", design: "The rising-sun ensign: a sun disc offset toward the hoist with sixteen rays.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
     { id: "jp-ijn", category: "military", name: "Ensign of the Imperial Japanese Navy", from: 1889, to: 1945, path: "national-flags/jp/japan-ijn.svg", design: "The same sixteen-ray rising sun, flown by the navy of the Empire of Japan.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
     { id: "jp-emperor", category: "standard", name: "Imperial Standard of the Emperor of Japan", from: 1869, to: 9999, path: "national-flags/jp/japan-emperor.svg", design: "A gold sixteen-petal chrysanthemum centred on red.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
+    { id: "jp-arms", category: "coatofarms", name: "Imperial Seal of Japan", path: "national-flags/jp/japan-imperial-seal.svg", design: "A yellow chrysanthemum of sixteen petals, with a second set of sixteen showing behind them.", source: "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan" },
   ],
   "MY": [
     { id: "my-1963", category: "historical", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, path: "flags/my.svg", design: "Fourteen red and white stripes with a blue canton bearing a crescent and a fourteen-point star.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
@@ -186,12 +216,19 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "my-navy-1963", category: "maritime", name: "Naval ensign of the Royal Malaysian Navy (1963–1968)", from: 1963, to: 1968, path: "national-flags/my/malaysia-navy-ensign-1963.svg", design: "St George's Cross on a white field with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-coast-guard", category: "maritime", name: "Ensign of the Malaysian Maritime Enforcement Agency", from: 2005, to: 9999, path: "national-flags/my/malaysia-coast-guard.svg", design: "A blue field bearing the agency's crest, with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-agong", category: "standard", name: "Standard of the Yang di-Pertuan Agong", from: 1988, to: 9999, path: "national-flags/my/malaysia-agong.svg", design: "The royal standard of Malaysia's elected king.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    { id: "my-arms", category: "coatofarms", name: "Coat of arms of Malaysia", path: "national-flags/my/malaysia-arms.svg", design: "A shield held by two tigers, crowned by a yellow crescent and fourteen-pointed federal star, above a motto ribbon.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
+    { id: "my-passport", category: "passport", name: "Malaysian passport", path: "national-flags/my/malaysia-passport.svg", design: "A dark red cover with the Malaysian coat of arms in gold, the country's name above and PASSPORT/PASPORT below.", source: "https://en.wikipedia.org/wiki/Malaysian_passport" },
   ],
   "TR": [
     { id: "tr-1936", category: "historical", name: "Flag of Turkey", from: 1936, to: 9999, path: "flags/tr.svg", design: "A white star and crescent on red, in the proportions fixed by the Turkish Flag Law of 1936.", source: "https://en.wikipedia.org/wiki/List_of_Turkish_flags" },
     { id: "tr-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1844, to: 1922, path: "historical-flags/ottoman-empire.png", design: "Red with a white crescent and five-pointed star, as fixed by the Tanzimat regulation of 1844.", source: "https://en.wikipedia.org/wiki/List_of_Turkish_flags" },
     { id: "tr-president", category: "standard", name: "Presidential Standard of Turkey", from: 1923, to: 9999, path: "national-flags/tr/turkey-president.svg", design: "The national flag with a golden sun of sixteen rays in the canton, one ray for each of the historic Turkic states.", source: "https://en.wikipedia.org/wiki/List_of_Turkish_flags" },
     { id: "tr-gnat", category: "standard", name: "Flag of the Grand National Assembly of Turkey", path: "national-flags/tr/turkey-gnat.svg", design: "A white field bearing the assembly's seal.", source: "https://en.wikipedia.org/wiki/List_of_Turkish_flags" },
+    { id: "tr-arms", category: "coatofarms", name: "Star and crescent emblem of Turkey", path: "national-flags/tr/turkey-emblem.svg", design: "The white star and crescent of the national flag, in an oval bearing the country’s name.", source: "https://en.wikipedia.org/wiki/Emblems_of_Turkey" },
+    { id: "tr-passport", category: "passport", name: "Turkish passport", path: "national-flags/tr/turkey-passport.svg", design: "A burgundy cover with the star and crescent emblem in gold, reading TÜRKİYE CUMHURİYETİ.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
+    { id: "tr-passport-diplomatic", category: "passport", name: "Turkish diplomatic passport", path: "national-flags/tr/turkey-passport-diplomatic.svg", design: "A black cover with the same emblem, headed DİPLOMATİK PASAPORT.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
+    { id: "tr-passport-special", category: "passport", name: "Turkish special passport", path: "national-flags/tr/turkey-passport-special.svg", design: "A green cover — the “yeşil pasaport” issued to senior officials and former members of parliament.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
+    { id: "tr-passport-service", category: "passport", name: "Turkish service passport", path: "national-flags/tr/turkey-passport-service.svg", design: "A grey cover, issued to officials travelling on state business.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
   ],
   "US": [
     { id: "us-1960", category: "historical", name: "Flag of the United States", from: 1960, to: 9999, path: "flags/us.svg", design: "Fifty stars — Hawaii's admission completed the present design.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States" },
@@ -234,6 +271,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "us-yacht-ensign", category: "maritime", name: "Yacht ensign of the United States", path: "national-flags/us/us-yacht-ensign.svg", design: "Thirteen stripes with a fouled anchor in a ring of thirteen stars, flown by recreational vessels.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States" },
     { id: "us-president", category: "standard", name: "Flag of the President of the United States", path: "national-flags/us/us-president.svg", design: "The presidential coat of arms encircled by fifty stars on a dark blue field.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States" },
     { id: "us-vice-president", category: "standard", name: "Flag of the Vice President of the United States", path: "national-flags/us/us-vice-president.svg", design: "The vice-presidential coat of arms with four blue stars on white.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States" },
+    { id: "us-arms", category: "coatofarms", name: "Great Seal of the United States", path: "national-flags/us/us-great-seal.svg", design: "A bald eagle bearing a shield of thirteen stripes, an olive branch in one talon and thirteen arrows in the other.", source: "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" },
+    { id: "us-passport-diplomatic", category: "passport", name: "United States diplomatic passport", path: "national-flags/us/us-passport-diplomatic.svg", design: "A black cover bearing the Great Seal in gold, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
+    { id: "us-passport-official", category: "passport", name: "United States official passport", path: "national-flags/us/us-passport-official.png", design: "A maroon cover bearing the Great Seal in gold, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
   ],
   "ZA": [
     { id: "za-1994", category: "historical", name: "Flag of South Africa", from: 1994, to: 9999, path: "flags/za.svg", design: "A horizontal Y in green, fimbriated white and gold, separating red and blue from a black triangle at the hoist.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
@@ -243,6 +283,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "za-voc", category: "historical", name: "Flag of the Dutch East India Company", from: 1652, to: 1795, sovereign: "the Dutch East India Company", path: "national-flags/za/dutch-east-india-company.svg", design: "The Dutch tricolour charged with the company's monogram — flown at the Cape from the founding of the refreshment station in 1652.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-sandf", category: "military", name: "Flag of the South African National Defence Force", from: 2003, to: 9999, path: "national-flags/za/south-africa-sandf.svg", design: "The Defence Force's emblem on a field bearing the colours of the national flag.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-sandf-1994", category: "military", name: "Ensign of the South African National Defence Force (1994–2003)", from: 1994, to: 2003, path: "national-flags/za/south-africa-sandf-1994.svg", design: "The first post-apartheid defence-force ensign, replaced in 2003.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
+    { id: "za-arms", category: "coatofarms", name: "Coat of arms of South Africa", path: "national-flags/za/south-africa-arms.svg", design: "Two facing figures from Khoisan rock art within a shield, above a spear and knobkierie, crowned by a secretary bird and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
   ],
 };
 
@@ -287,11 +328,42 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Australian flags — Department of the Prime Minister and Cabinet", url: "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags" },
     ],
   },
+  "au-torres-strait": {
+    description: "Bernard Namok, a 15-year-old from Thursday Island, won the 1992 competition to design it, and gave every element a meaning. The two green stripes are the land — Migi Daudai to the north (Papua New Guinea) and Koey Daudai to the south (mainland Australia) — with the blue of Malu, the sea of the Torres Strait, between them, so the flag is a map of a people living between two landmasses. The black stripes stand for the Torres Strait Islander people themselves. At the centre is the white dhari, the dancer’s headdress that is the emblem of Torres Strait Islander culture, and beneath it a five-pointed star: white for peace, a navigator’s symbol for a seafaring people, and one point for each island group — Northern, Eastern, Western, Central and Southern. It was proclaimed a Flag of Australia in July 1995, the same day as the Aboriginal Flag.",
+    sources: [
+      { title: "Torres Strait Islander flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Torres_Strait_Islander_flag" },
+      { title: "Australian flags — Department of the Prime Minister and Cabinet", url: "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags" },
+    ],
+  },
+  "au-arms": {
+    description: "The shield is the federation itself: six quarters, one for each state’s badge, bound together by an ermine border that stands for the encompassing authority of the Crown and makes the six read as one device rather than six separate emblems. Above it the seven-pointed Commonwealth Star repeats the point — six points for the states and a seventh for the territories. The kangaroo and emu were chosen as supporters as native animals commonly said to be unable to walk backwards, and so read as a country that only moves forward; behind the shield is golden wattle, the national floral emblem.",
+    sources: [
+      { title: "Coat of arms of Australia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
+    ],
+  },
+  "au-passport": {
+    description: "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document the traveller carries is stamped with the federation's own emblem rather than the flag. The small chip symbol at the foot marks the biometric series.",
+    sources: [
+      { title: "Australian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_passport" },
+    ],
+  },
   "bo-wiphala": {
     description: "The Wiphala of the Qullasuyu is recognised by Article 6 of Bolivia's 2009 constitution as a dual national symbol alongside the tricolour — the state's acknowledgement that it is plurinational. Its 49 squares are arranged so that the seven colours run diagonally, and it stands for the Andean indigenous peoples of the region the Inca called Qullasuyu.",
     sources: [
       { title: "Wiphala — Wikipedia", url: "https://en.wikipedia.org/wiki/Wiphala" },
       { title: "List of Bolivian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
+    ],
+  },
+  "bo-arms": {
+    description: "The cartouche is a portrait of the country’s wealth and land: the Cerro Rico of Potosí, the silver mountain that financed the Spanish empire, under a rising sun at dawn; a llama for the Andean highlands; a sheaf of wheat and a palm for the temperate valleys and the lowlands, so all three of Bolivia’s geographies appear at once. Around it are the arms of the state that won them — muskets, cannon, an axe carrying the Phrygian cap of liberty, and laurel for victory. The Andean condor above spreads its wings over the whole as the national bird and a guardian of freedom, and the stars beneath stand for the departments, including Litoral, the coastal department Bolivia lost to Chile in 1879 and has never removed.",
+    sources: [
+      { title: "Coat of arms of Bolivia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia" },
+    ],
+  },
+  "bo-passport": {
+    description: "The heading is the country's post-2009 constitutional name — Plurinational State of Bolivia — so the cover carries the same claim the Wiphala makes alongside the tricolour: that the state is made of many peoples. The blue is the shared Andean Community colour.",
+    sources: [
+      { title: "Bolivian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bolivian_passport" },
     ],
   },
   "br-1889-provisional": {
@@ -306,10 +378,112 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "List of Brazilian flags — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     ],
   },
+  "br-arms": {
+    description: "Adopted on 19 November 1889, four days after the republic was proclaimed, and built to say what the new state was. The central emblem is charged with the Southern Cross, the constellation that stands for the southern sky over Brazil, and it is ringed by 27 stars — one for each state and one for the Federal District. Framing it are branches of coffee and tobacco, the crops that carried the country’s economy at the time, which is why the arms show plants rather than the heraldic beasts of a European coat of arms. The blue ribbon carries the state’s own name and, on its second line, the date of the proclamation of the republic.",
+    sources: [
+      { title: "Coat of arms of Brazil — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
+    ],
+  },
+  "br-passport": {
+    description: "The cover is a statement of two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sit the words República Federativa do Brasil and, at the foot, the biometric chip symbol that marks it as an e-passport.",
+    sources: [
+      { title: "Brazilian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazilian_passport" },
+    ],
+  },
+  "cn-arms": {
+    description: "Every element is a claim about who the state belongs to. The ears of wheat and rice around the border stand for the peasantry and the cogwheel at the base for industrial workers — together the worker-peasant alliance the People’s Republic was founded on. Tiananmen Gate is where the republic was proclaimed in 1949 and stands for the fighting spirit of the Chinese people, dating the emblem to the revolution rather than to any dynasty. Above it the five gold stars repeat the national flag: the large star the Communist Party, the four smaller ones the people united behind it.",
+    sources: [
+      { title: "National emblem of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
+    ],
+  },
+  "es-arms": {
+    description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
+    sources: [
+      { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
+    ],
+  },
+  "fr-arms": {
+    description: "France has no official coat of arms; this device, designed in 1913 for French diplomatic missions, is the closest thing and is used on passports and by embassies while remaining unofficial. The fasces at its centre is a Roman magistrate’s bundle of rods and axe — the classical symbol of the authority of the state and of justice, chosen by a republic that took its imagery from Rome rather than from monarchy. The oak branch stands for perpetuity and wisdom and the laurel for glory, and the ribbon carries Liberté, Égalité, Fraternité. The monarchy’s fleurs-de-lis are deliberately absent.",
+    sources: [
+      { title: "Coat of arms of France — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_France" },
+    ],
+  },
+  "fr-passport": {
+    description: "The burgundy colour and the EUROPEAN UNION line above the country's own name are the common format agreed by member states, so a French passport announces the union before the republic. The gold device is the unofficial emblem of the French Republic — the lictor's fasces on oak and laurel — which the state uses in place of a coat of arms it has never formally adopted.",
+    sources: [
+      { title: "French passport — Wikipedia", url: "https://en.wikipedia.org/wiki/French_passport" },
+    ],
+  },
   "gb-1801": {
     description: "The Union Flag layers three patron saints' crosses in the order the kingdoms joined: England's red cross of St George on white, Scotland's white saltire of St Andrew on blue (joined at the union of the crowns in 1606) and the red saltire of St Patrick for Ireland, added when the Kingdom of Ireland joined the union in 1801. St Patrick's saltire is set counterchanged — offset from the centre of the white Scottish saltire — so that neither saltire appears to take precedence over the other, which is why the flag is not symmetrical and can be flown upside down.",
     sources: [
       { title: "Union Jack — Wikipedia", url: "https://en.wikipedia.org/wiki/Union_Jack" },
+    ],
+  },
+  "gb-arms": {
+    description: "The shield is a record of which crowns came together and when: the three lions of England in two quarters, the rampant lion of Scotland, and the harp of Ireland — quartered after James VI of Scotland inherited the English and Irish thrones in 1603, precisely to show the union of the crowns in one device. The lion supporter is England’s and the unicorn Scotland’s, the unicorn chained because a free unicorn was held to be dangerous. Wales appears nowhere on the shield, because it was already annexed to the English crown before the arms were composed, and is represented instead by separate royal badges. On the compartment below grow a thistle, a Tudor rose and a shamrock for Scotland, England and Ireland.",
+    sources: [
+      { title: "Coat of arms of the United Kingdom — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_United_Kingdom" },
+    ],
+  },
+  "gb-passport": {
+    description: "The gold device is the Royal Coat of Arms — a British passport is issued in the sovereign's name, and the arms say so. The colour is the point of this particular design: British passports were dark blue until 1988, burgundy while the UK was in the European Union, and returned to blue in 2020 after leaving it, making the cover itself a piece of constitutional history.",
+    sources: [
+      { title: "British passport — Wikipedia", url: "https://en.wikipedia.org/wiki/British_passport" },
+    ],
+  },
+  "in-arms": {
+    description: "The emblem is an adaptation of the Lion Capital of Ashoka, carved in the third century BC and set up at Sarnath where the Buddha first taught — so independent India took its emblem not from heraldry but from its own antiquity. Four lions stand back to back on the original; the emblem shows three, the fourth hidden behind, which is why it appears to have three. Below them runs the abacus with a horse and a bull separated by the Dharma Chakra, the wheel of law — the same wheel that stands at the centre of the national flag. The motto beneath, Satyameva Jayate, “truth alone triumphs”, is a line from the Mundaka Upanishad.",
+    sources: [
+      { title: "State Emblem of India — Wikipedia", url: "https://en.wikipedia.org/wiki/State_Emblem_of_India" },
+    ],
+  },
+  "in-passport": {
+    description: "The gold device is the State Emblem — the Ashoka lions — and the heading appears in Hindi and English, the two languages the constitution gives the union. India also issues a white passport for government officials and a maroon one for diplomats, so the navy cover itself marks this as an ordinary passport.",
+    sources: [
+      { title: "Indian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Indian_passport" },
+    ],
+  },
+  "jp-arms": {
+    description: "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
+    sources: [
+      { title: "Imperial Seal of Japan — Wikipedia", url: "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan" },
+    ],
+  },
+  "my-arms": {
+    description: "The crest repeats the flag: a yellow crescent and a fourteen-pointed federal star, yellow being the colour of Malay royalty, so the crest stands for the monarchy, while the star and crescent together carry Islam as the religion of the federation. The star’s fourteen points were originally the fourteen states of 1963; when Singapore left in 1965 the point was not removed but re-read as the federal territories. The shield is the federation assembled piece by piece — five krises across the chief for the five formerly Unfederated Malay States, and quarters for the other members — so a viewer can read which states joined how. The two tigers are held over from the arms of the Federated Malay States.",
+    sources: [
+      { title: "Coat of arms of Malaysia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
+    ],
+  },
+  "my-passport": {
+    description: "The arms in the centre are the same crest, tiger supporters and fourteen-point federal star the country's coat of arms carries, so the passport repeats the federation's own claim about itself. The text appears in Malay and English together, as the constitution requires of official documents.",
+    sources: [
+      { title: "Malaysian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysian_passport" },
+    ],
+  },
+  "tr-arms": {
+    description: "Turkey has no official national coat of arms at all — a deliberate republican break. When the sultanate was abolished on 1 November 1922 the Ottoman coat of arms went with it and was never replaced, so what the state uses in an emblem’s place is the star and crescent lifted straight from the flag, set in an oval with the country’s name. It appears on Turkish passports and identity cards and at Turkish diplomatic missions, which makes it an emblem in practice while remaining unofficial in law. The crescent and star themselves come from the Ottoman flag of 1844, which is also the basis of today’s flag.",
+    sources: [
+      { title: "Emblems of Turkey — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblems_of_Turkey" },
+    ],
+  },
+  "tr-passport": {
+    description: "Turkey issues four passports and the colour is the classification: burgundy for ordinary, black for diplomatic, green for special (issued to senior civil servants and former parliamentarians) and grey for service. The gold emblem is the star and crescent Turkey uses in place of a coat of arms it has never adopted.",
+    sources: [
+      { title: "Turkish passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkish_passport" },
+    ],
+  },
+  "us-arms": {
+    description: "Charles Thomson’s explanation to Congress in 1782 is still the official reading. Thirteen recurs everywhere — stripes, arrows, stars — for the thirteen original states, and the constellation of stars breaking through a cloud says a new state is taking its place among other sovereign powers. The eagle holds an olive branch in its right talon and thirteen arrows in its left, and turns its head toward the olive branch: the country has the power of peace and of war, and prefers peace. The stripes are joined by the chief above them, standing for Congress binding the states together, and the shield floats unsupported to say the country relies on its own virtue. The motto E pluribus unum — out of many, one — makes the same argument in words.",
+    sources: [
+      { title: "Great Seal of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" },
+    ],
+  },
+  "us-passport-diplomatic": {
+    description: "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
+    sources: [
+      { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
     ],
   },
   "za-1994": {
@@ -317,6 +491,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Flag of South Africa — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
       { title: "National flag — South African Government", url: "https://www.gov.za/about-sa/national-symbols/national-flag" },
+    ],
+  },
+  "za-arms": {
+    description: "Adopted in 2000 to replace arms designed by the British and Afrikaner minorities, and read from the ground up as one sentence about the country. At the centre two human figures from the Linton Stone, a piece of Khoisan rock art, greet each other — the oldest inhabitants, and unity between people. A spear and knobkierie lie crossed and at rest, signalling defence and authority laid down rather than raised. The motto is in ǀXam, an extinct San language, and means “diverse people unite”. Above stands the secretary bird, a snake-killer, wings spread in protection, with a protea on its breast and the rising sun above it. The lower and upper ovals of the design close into the shape of infinity.",
+    sources: [
+      { title: "Coat of arms of South Africa — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
     ],
   },
 };
