@@ -610,7 +610,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Zhou states", { continent: "East Asia", note: "The Zhou states — the ritual overlordship of the Zhou kings dissolving into the rival kingdoms of the Spring and Autumn period." }],
   ["Zhow states", { continent: "East Asia", note: "The Zhou states — the ritual overlordship of the Zhou kings dissolving into the rival kingdoms of the Spring and Autumn period." }],
   ["Hadramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia, whose merchant families settled across the Indian Ocean from East Africa to Indonesia." }],
-  ["Emirate of Bin Shal'an", { continent: "Arabia", note: "The Ruwallah emirate of the Al Sha'lan — a Bedouin power of the Syrian desert, controlling the caravan routes between Damascus and Nejd." }],
+  ["Emirate of Bin Shal'an", { noFlagReason: "No flag shown — the Ruwallah emirate of the Sha'lan family was a tribal confederation whose banners are not documented as a state flag.", continent: "Arabia", note: "The Ruwallah emirate of the Al Sha'lan — a Bedouin power of the Syrian desert, controlling the caravan routes between Damascus and Nejd." }],
   ["Emirate of the White Sheep Turks", { continent: "Western Asia", note: "Aq Qoyunlu (\"White Sheep\") — a Turkoman confederation that ruled eastern Anatolia and Persia until the Safavids displaced it in 1501." }],
   ["Turan", { noFlagReason: "No flag shown — \"Turan\" is the dataset's label for the Central Asian khanates, which each used their own dynastic banners rather than a shared flag.", continent: "Central Asia", note: "Turan — the old Persian name for the steppe lands beyond the Oxus, home to the Turkic and Iranian nomads who bordered the settled Persian world." }],
   ["Mongolia", { continent: "East Asia", note: "Mongolia — under Qing rule until 1911 and a Soviet-aligned People's Republic from 1924; the modern soyombo flag dates from 1992.", noFlag: true, population: 800_000 }],
@@ -1350,7 +1350,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Eastern Masurian culture", { continent: "Northern Europe", note: "Eastern Masurian culture — Iron-Age archaeological culture of eastern Prussia (3rd–1st c. BC); predecessor to later Baltic peoples." }],
   ["Erie", { continent: "North America", note: "Erie people — Iroquoian nation of the Great Lakes region; powerful until conquered by the Haudenosaunee in the Beaver Wars of the 1650s." }],
   ["Finns", { continent: "Northern Europe", note: "Finns (Finno-Ugric peoples) — northern European peoples with Uralic language roots; settled Scandinavia and developed into modern Finnish nation." }],
-  ["Hail", { continent: "Arabia", note: "Hail — important Arabian oasis city and regional power; controlled trade routes in the central Nejd region." }],
+  ["Hail", { noFlagReason: "No flag shown — the Rashidi emirate of Ha'il flew plain red and white banners bearing the shahada; no period-accurate image of one is bundled.", continent: "Arabia", note: "Hail — important Arabian oasis city and regional power; controlled trade routes in the central Nejd region." }],
   ["Hejaz", { continent: "Arabia", note: "Hejaz — western Arabian region containing Mecca and Medina; holy Islamic heartland; independent kingdom before Saudi consolidation." }],
   ["Imerina", { continent: "East Africa", note: "Imerina — highland kingdom of Madagascar; Merina people and their realm; unified Madagascar before French colonization." }],
   ["Kong Empire", { continent: "West Africa", note: "Kong Empire — Manding-speaking power of the West African Sahel (17th–19th c.); rival to Bambara and Mossi powers." }],
@@ -1464,7 +1464,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Ngalea", { continent: "Oceania", note: "Ngalea people — Aboriginal Australians of inland Australia; desert nation with complex astronomical and songline traditions." }],
   ["Catawba", { continent: "North America", note: "Catawba people — Southeastern Woodlands nation of the Carolinas; agricultural peoples; traders and political powers; river dwellers." }],
   ["Funan", { continent: "Southeast Asia", note: "Funan — early Southeast Asian state of the Mekong Delta (1st–6th centuries); early Hindu-Buddhist influence in the region." }],
-  ["White Russia", { continent: "Europe", note: "White Russia — European land (Belarus); historical region with complex political overlaps between Polish, Lithuanian and Russian claims." }],
+  ["White Russia", { noFlagReason: "No flag shown — the Belarusian People's Republic's white-red-white flag flew in 1918–19, but by 1920 the territory was the Byelorussian SSR, whose red flag with gold cyrillic initials is not bundled.", continent: "Europe", note: "White Russia — European land (Belarus); historical region with complex political overlaps between Polish, Lithuanian and Russian claims." }],
   ["Alyawarre", { continent: "Oceania", note: "Alyawarre people — Aboriginal Australians of central Australia; desert dwellers near Alice Springs region with distinct language." }],
   ["Chimú Empire", { continent: "South America", note: "Chimú Empire — Andean coastal civilization (1000–1470 AD); precursor to Inca conquest; organized irrigation agriculture." }],
   ["Pandya state", { continent: "Asia", note: "Pandya kingdom — South Indian Tamil dynasty; maritime power controlling trade across Indian Ocean; Hindu temple patrons." }],
@@ -1696,7 +1696,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Italian Somaliland", { continent: "Africa", note: "Italian Somaliland — East African Italian colonial territory; Somali peoples; pastoral nomadic society; Italian colonial administration; merged with British Somaliland to form Somalia 1960." }],
   ["Zambia", { continent: "Africa", note: "Zambia — Southern African nation; formerly Northern Rhodesia; British colony; Zambezi River; copper mining economy; emerged independent 1964; diverse ethnic groups." }],
   ["Estonia", { continent: "Europe", note: "Estonia — Baltic nation; Northern Europe; formerly Russian and Soviet; Estonian language (Finno-Ugric); independent 1918; historical ties to Scandinavian region." }],
-  ["Latvia", { continent: "Europe", note: "Latvia — Baltic nation; Eastern Europe; formerly Russian and Soviet; Latvian language; independent 1918; maritime Hanseatic heritage; German landlord tradition." }],
+  ["Latvia", { noFlagReason: "No flag shown for this date — Latvia's carmine-and-white flag was designed in 1917 and used from independence, but its proportions and shade were only fixed by law in 1921–23, which is the date the modern flag record carries.", continent: "Europe", note: "Latvia — Baltic nation; Eastern Europe; formerly Russian and Soviet; Latvian language; independent 1918; maritime Hanseatic heritage; German landlord tradition." }],
   ["Niger", { continent: "Africa", note: "Niger — West African nation; Sahel and Saharan regions; Niger River valley; French colonial past; Hausa, Tuareg and Fulani peoples; uranium and agricultural economy." }],
   ["Chad", { continent: "Africa", note: "Chad — Central African nation; Sahara and Sahel regions; Lake Chad; French colonial past; diverse ethnic and religious groups; oil resources; nomadic and settled traditions." }],
   ["Sri Lanka", { continent: "Asia", note: "Sri Lanka (Ceylon) — South Asian island nation; Indian Ocean; Sinhalese Buddhist majority; Tamil minority; British colonial past; tea and spice economy; Hindu cultural heritage." }],
@@ -4320,6 +4320,8 @@ const ERA_RULER: ReadonlyMap<string, string> = new Map([
   ["ad1938|French Somaliland", "France"],
   ["ad1945|Pakistan", "United Kingdom"],           // British India until the 1947 partition
   ["ad1945|Bangladesh", "United Kingdom"],         // the Bengal Presidency of British India
+  ["ad1920|Swaziland", "United Kingdom"],
+  ["ad1920|East Prussia", "Germany"],             // a German exclave after the Polish Corridor
   /* --- 1960: the year of African independence, and what was still ruled ------- */
   ["ad1960|Guyana", "United Kingdom"],
   ["ad1960|Belize", "United Kingdom"],
