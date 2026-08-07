@@ -115,7 +115,10 @@ function resolveFlag(name, eraId, rulers) {
 function existenceVerdict(rawName, eraId) {
   const year = eraYear(eraId);
   const shown = polityDisplayName(rawName, eraId);
-  const win = POLITY_EXISTENCE.get(shown) ?? POLITY_EXISTENCE.get(rawName);
+  // Keyed on the SHOWN name only, exactly like check-era-anachronism.mjs: a display
+  // remap to the period name ("Jordan" → "Transjordan") is the fix, so falling back to
+  // the raw NAME would report a polity the app has already corrected.
+  const win = POLITY_EXISTENCE.get(shown);
   if (!win) return "unchecked";
   if (year < win.from) return `ANACHRONISM: ${shown} from ${win.from}`;
   if (year > win.to) return `ANACHRONISM: ${shown} ended ${win.to}`;

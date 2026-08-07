@@ -3822,9 +3822,22 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
   // Medieval West Africa: the dataset's "Ghana" in these eras is the Wagadou/Ghana
   // Empire (c. 300–1200), an entirely different polity from the modern state that took
   // its name at independence in 1957.
+  ["bc323", new Map<string, string>([
+    // The Orontid satrapy, not the 1918 republic — see POLITY_EXISTENCE["Armenia"].
+    ["Armenia", "Satrapy of Armenia"],
+  ])],
+  ["ad100", new Map<string, string>([
+    ["Armenia", "Kingdom of Armenia"],     // the Arsacid kingdom, 12–428 AD
+  ])],
   ["ad800", new Map<string, string>([["Ghana", "Ghana Empire"]])],
-  ["ad1000", new Map<string, string>([["Ghana", "Ghana Empire"]])],
-  ["ad1200", new Map<string, string>([["Ghana", "Ghana Empire"]])],
+  ["ad1000", new Map<string, string>([
+    ["Ghana", "Ghana Empire"],
+    ["Armenia", "Bagratid Armenia"],       // the Bagratuni kingdom, 885–1045
+  ])],
+  ["ad1200", new Map<string, string>([
+    ["Ghana", "Ghana Empire"],
+    ["Armenia", "Zakarid Armenia"],        // Greater Armenia under the Zakarids, 1201–1360
+  ])],
   // The Iberian Union (1580–1640): Philip II of Spain became Philip I of Portugal in
   // 1580, so in 1600 both crowns were held by one monarch. The dataset keeps them as two
   // features — which is right, because the Statute of Tomar (1581) left Portugal its own
@@ -3846,18 +3859,37 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Portugal", "Iberian Union"],
     ["Benin", "Kingdom of Benin"],
   ])],
-  ["ad1700", new Map<string, string>([["Benin", "Kingdom of Benin"]])],
+  ["ad1700", new Map<string, string>([
+    ["Benin", "Kingdom of Benin"],
+    // The Austrian Empire was proclaimed in 1804; in 1700 these were the Habsburg
+    // hereditary lands, held by the Holy Roman Emperor.
+    ["Austrian Empire", "Habsburg Monarchy"],
+  ])],
   ["ad1815", new Map<string, string>([
+    ["Rwanda", "Kingdom of Rwanda"],       // the precolonial monarchy; the republic dates from 1962
+    ["Burundi", "Kingdom of Burundi"],     // the precolonial monarchy (Urundi); the modern state 1962
+    ["Antigua and Barbuda", "Antigua"],    // the British colony; the state dates from 1981
+    ["Saint Kitts and Nevis", "Saint Christopher and Nevis"], // separate British colonies until 1882
+    ["Saint Vincent and the Grenadines", "Saint Vincent"],    // the colony; the state dates from 1979
     // No Somali state existed in 1815 — the registry's own note calls this a patchwork
     // of sultanates. "Somalia" is the 1960 union of the British and Italian territories.
     ["Somalia", "Somali sultanates"],
   ])],
   ["ad1880", new Map<string, string>([
+    ["Rwanda", "Kingdom of Rwanda"],
+    ["Burundi", "Kingdom of Burundi"],
+    ["Antigua and Barbuda", "Antigua"],
+    ["Saint Kitts and Nevis", "Saint Christopher and Nevis"],
     ["Benin", "Kingdom of Benin"],
     ["Belize", "British Honduras"],          // the colony was renamed Belize only in 1973
     ["Papua New Guinea", "New Guinea"],      // no colonial claim yet; PNG is a 1971 name
   ])],
   ["ad1900", new Map<string, string>([
+    ["Kingdom of Hawaii", "Territory of Hawaii"], // overthrown 1893, annexed 1898, a US territory from 30 April 1900
+    ["Rwanda", "Kingdom of Rwanda"],
+    ["Burundi", "Kingdom of Burundi"],
+    ["Antigua and Barbuda", "Antigua"],
+    ["Saint Kitts and Nevis", "Saint Christopher-Nevis-Anguilla"], // the colony, 1882–1983
     ["India", "British India"],              // Republic of India dates from the 1947 partition
     ["Kingdom of Brazil", "Brazil"],         // the empire fell in 1889; 1900 is the Old Republic
     ["Benin", "Kingdom of Benin"],
@@ -3865,6 +3897,12 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "New Guinea"],      // British New Guinea + German New Guinea in 1900
   ])],
   ["ad1914", new Map<string, string>([
+    ["Armenia", "Russian Armenia"],        // Russian rule 1828–1918; the First Republic came in 1918
+    ["Azerbaijan", "Russian Transcaucasia"], // the Baku and Elisabethpol Governorates
+    ["Georgia", "Russian Georgia"],        // annexed by Russia in 1801; the republic came in 1918
+    ["Antigua and Barbuda", "Antigua"],
+    ["Saint Kitts and Nevis", "Saint Christopher-Nevis-Anguilla"],
+    ["Saint Vincent and the Grenadines", "Saint Vincent"],
     ["Eritrea", "Italian Eritrea"],          // Italian colony 1890–1947; independence 1993
     ["Rhodesia", "Southern Rhodesia"],       // "Rhodesia" is the 1965–79 UDI state
     ["Belize", "British Honduras"],          // renamed Belize 1973
@@ -3878,6 +3916,12 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "New Guinea"],      // Territory of Papua + German New Guinea
   ])],
   ["ad1920", new Map<string, string>([
+    ["Iraq", "Mandatory Mesopotamia"],     // the Kingdom of Iraq was founded in August 1921
+    ["Rwanda", "Ruanda-Urundi"],           // Belgian mandate from 1922, one territory until 1962
+    ["Burundi", "Ruanda-Urundi"],
+    ["Antigua and Barbuda", "Antigua"],
+    ["Saint Kitts and Nevis", "Saint Christopher-Nevis-Anguilla"],
+    ["Saint Vincent and the Grenadines", "Saint Vincent"],
     ["Iran", "Persia"],                      // Persia asked to be called Iran only in 1935
     ["Ghana", "Gold Coast"],                 // Gold Coast until independence in 1957
     ["Malaysia", "British Malaya"],          // Malaysia was formed in 1963
@@ -3897,6 +3941,12 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "New Guinea"],      // Territory of Papua + New Guinea mandate
   ])],
   ["ad1938", new Map<string, string>([
+    ["Jordan", "Transjordan"],             // the Emirate of Transjordan; renamed Jordan only in 1949
+    ["Rwanda", "Ruanda-Urundi"],
+    ["Burundi", "Ruanda-Urundi"],
+    ["Antigua and Barbuda", "Antigua"],
+    ["Saint Kitts and Nevis", "Saint Christopher-Nevis-Anguilla"],
+    ["Saint Vincent and the Grenadines", "Saint Vincent"],
     ["India", "British India"],              // partition 1947
     ["Malaysia", "British Malaya"],          // Malaysia formed 1963
     ["Belize", "British Honduras"],          // renamed Belize 1973
@@ -3912,6 +3962,12 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Samoa", "Western Samoa"],              // Western Samoa until 1997
   ])],
   ["ad1945", new Map<string, string>([
+    ["Jordan", "Transjordan"],             // renamed the Hashemite Kingdom of Jordan in 1949
+    ["Rwanda", "Ruanda-Urundi"],
+    ["Burundi", "Ruanda-Urundi"],
+    ["Antigua and Barbuda", "Antigua"],
+    ["Saint Kitts and Nevis", "Saint Christopher-Nevis-Anguilla"],
+    ["Saint Vincent and the Grenadines", "Saint Vincent"],
     // After WWII, the 1945 file shows several African territories as independent
     // when they were not yet. These were mandates, protectorates, or colonial territories.
     ["Namibia", "South West Africa"],        // German mandate → SA mandate; independence 1990
@@ -3944,6 +4000,11 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "Papua and New Guinea"], // the 1949–1971 territory's own name
   ])],
   ["ad1960", new Map<string, string>([
+    ["Rwanda", "Ruanda-Urundi"],           // independent as two states on 1 July 1962
+    ["Burundi", "Ruanda-Urundi"],
+    ["Antigua and Barbuda", "Antigua"],
+    ["Saint Kitts and Nevis", "Saint Christopher-Nevis-Anguilla"],
+    ["Saint Vincent and the Grenadines", "Saint Vincent"],
     // The 1960 decolonisation wave. Many territories shown on the map as independent
     // were not yet independent at that exact date; they became independent during 1960+.
     ["Uganda", "Uganda (British protectorate)"],  // Independent 26 Oct 1962
