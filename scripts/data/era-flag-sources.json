@@ -379,6 +379,24 @@
       "why": "1938, 1945, 1960 and 1994 Venezuela were showing the EIGHT-star flag, whose eighth star was added 12 March 2006. FLAG_ADOPTION_YEAR had VE at 1811 (the starless independence tricolour), so the gate let the 2006 flag onto all eight eras Venezuela appears in. This is the seven-star flag actually flown 1930-2006.",
       "sha256": "dbc70585dd4adab998f53378410c2b6cbea9955a6f4909e6f10d275fb9c7c495",
       "fetched": "2026-08-07"
+    },
+    "mexico-1823.svg": {
+      "commons": "Flag of Mexico (1823-1864, 1867-1893).svg",
+      "why": "1880 Mexico. The first federal republic's flag, flown 1823-1864 and again 1867-1893 after the Second Empire fell; the only era map in range is 1880, inside the second span.",
+      "sha256": "b606d378d0d7ae9fb87688b1ade6a585d73987bc8d3de0678e189ee94286c597",
+      "fetched": "2026-08-07"
+    },
+    "venezuela-1863.svg": {
+      "commons": "Flag of Venezuela (1863–1905).svg",
+      "why": "1880 and 1900 Venezuela, which were showing the 2006 eight-star flag. This is the seven-star pattern of 1863-1905.",
+      "sha256": "f1b7f8b3abb60304439cae313169577a187f856b7531e19d4cfa98216aa3298d",
+      "fetched": "2026-08-07"
+    },
+    "venezuela-1905.svg": {
+      "commons": "Flag of Venezuela (1905–1930).svg",
+      "why": "1914 and 1920 Venezuela, which were showing the 2006 eight-star flag. This is the pattern flown 1905-1930.",
+      "sha256": "9ecb5b7e9f4217a10ad306b6461231094d2efeeb56881ca10bfa0b503aec8862",
+      "fetched": "2026-08-07"
     }
   }
 }
