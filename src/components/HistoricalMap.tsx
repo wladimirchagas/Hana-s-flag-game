@@ -293,9 +293,11 @@ export function growProjectedPath(d: string, r: number): string {
  * Names that must never become a selectable polity even when a feature carries them.
  * "Antarctica" is excluded by the repo's Antarctic hard rule — the continent stays
  * visible as neutral unclaimed landmass and never becomes a territory in the data model.
- * "1" is upstream junk in the 100 AD file.
+ * "1" and "true" are upstream junk in the 100 AD file, which carries a feature with
+ * `NAME: null, SUBJECTO: "1", PARTOF: "true"` — the PARTOF slipped past a guard that only
+ * listed "1" and put a polity card literally named "true" in the flag grid.
  */
-const NOT_A_POLITY = new Set(["Antarctica", "1"]);
+const NOT_A_POLITY = new Set(["Antarctica", "1", "true"]);
 
 /**
  * The polity name for a feature.
@@ -311,7 +313,12 @@ const NOT_A_POLITY = new Set(["Antarctica", "1"]);
  */
 function polityFeatureName(f: HistoricalFeature): string | null {
   const direct = (f.properties?.NAME ?? "").trim();
-  if (direct) return direct;
+  // NOT_A_POLITY applies to the direct NAME too, not only to the fallback fields. The
+  // 1945 and 1960 files carry a feature literally named "Antarctica", which sailed past a
+  // fallback-only guard and put an "Antarctica" card in the flag grid — the continent
+  // entering the territory data model, which the Antarctic hard rule forbids. Returning
+  // null leaves it rendered as the unclaimed, neutral landmass it should be.
+  if (direct) return NOT_A_POLITY.has(direct) ? null : direct;
   for (const alt of [f.properties?.SUBJECTO, f.properties?.PARTOF, f.properties?.ABBREVN]) {
     const v = (alt ?? "").trim();
     if (v && !NOT_A_POLITY.has(v)) return v;

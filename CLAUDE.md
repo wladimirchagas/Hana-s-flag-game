@@ -1138,10 +1138,21 @@ city-states` is the Swahili coast, not the Deccan. Each carried a note describin
    check the note describes the same people the polygons do.
 5. **Never move a coordinate to satisfy a continent.** This is the landmass rule's sibling and it is
    equally absolute: the geometry is the evidence, not the thing being fixed.
-6. **Verify in the running app** (the mandatory visual-verification rule applies): open **1914**,
+6. **The generator and the check must resolve a feature's name the way the APP does** — through
+   `polityFeatureName()`'s NAME → SUBJECTO/PARTOF/ABBREVN fallback, not the raw `NAME`. Reading the
+   raw field skipped the blank-NAME polities the app recovers (1815's `NAME: "       "` is the United
+   Kingdom of the Netherlands) and let one of them reach the grid with no continent at all. If the two
+   name resolutions drift, the check stops describing what the user sees.
+7. **`NOT_A_POLITY` applies to a feature's direct NAME, not only to its fallback fields.** The 1945
+   and 1960 files carry a feature literally named "Antarctica"; a fallback-only guard let it through
+   and put an **Antarctica card in the flag grid** — the continent entering the territory data model,
+   which the Antarctic hard rule forbids outright. It must render as unclaimed, neutral landmass.
+8. **Verify in the running app** (the mandatory visual-verification rule applies): open **1914**,
    group the flag grid by continent, and confirm Togoland, Kamerun, German South-West Africa, German
    East Africa, Anglo-Egyptian Sudan, British East Africa, Southern Rhodesia and Spanish Morocco are
-   all under **Africa** and none under Europe; then confirm **no "Other" heading exists in any era**.
+   all under **Africa** and none under Europe; then confirm **no "Other" heading exists in any era**
+   (1945 and 1815 were the last two to have one, and a green check did not catch either — the check
+   was reading raw NAMEs while the grid was showing resolved ones).
 
 ### Enforcement
 

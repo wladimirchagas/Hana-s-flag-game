@@ -20,7 +20,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const R = (p) => resolve(__dirname, p);
 
 /** Not polities — the app's own HistoricalMap excludes these from the grid. */
-export const NOT_A_POLITY = new Set(["Antarctica", "1"]);
+export const NOT_A_POLITY = new Set(["Antarctica", "1", "true"]);
 
 /**
  * Continent for the non-UN territories Natural Earth draws as their own polygons.
@@ -263,12 +263,32 @@ export function continentSplit(rings) {
     .sort((a, b) => b.share - a.share);
 }
 
-/** Outer rings of every named polity in one era's GeoJSON, keyed by raw dataset NAME. */
+/**
+ * The polity name for a feature — mirrors `polityFeatureName()` in HistoricalMap.tsx,
+ * which is what decides the names the flag grid actually shows.
+ *
+ * It must stay in step with that function: measuring the raw NAME instead missed the
+ * upstream features whose NAME is pure whitespace while their own SUBJECTO / PARTOF /
+ * ABBREVN holds the real name (1815's Netherlands is `NAME: "       "`, SUBJECTO
+ * "United Kingdom of Netherlands"). Those polities DO reach the grid, and one of them
+ * reached it with no continent.
+ */
+function polityFeatureName(f) {
+  const direct = (f.properties?.NAME ?? "").trim();
+  if (direct) return NOT_A_POLITY.has(direct) ? null : direct;
+  for (const alt of [f.properties?.SUBJECTO, f.properties?.PARTOF, f.properties?.ABBREVN]) {
+    const v = (alt ?? "").trim();
+    if (v && !NOT_A_POLITY.has(v)) return v;
+  }
+  return null;
+}
+
+/** Outer rings of every named polity in one era's GeoJSON, keyed by the name the app shows. */
 export function polityRings(geo) {
   const byName = new Map();
   for (const f of geo.features) {
-    const name = f.properties?.NAME;
-    if (!name || !name.trim() || NOT_A_POLITY.has(name.trim())) continue;
+    const name = polityFeatureName(f);
+    if (!name) continue;
     // Adopted gap-fill polygons ARE counted. They are painted under the era's own
     // features and never steal attribution from a finer polity (see the sourced-polity-
     // border rule), but they are still where that NAME is drawn — and HistoricalMap emits
