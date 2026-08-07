@@ -14,7 +14,7 @@
     "anthems:sync-captions": "node scripts/sync-youtube-captions.mjs",
     "anthems:apply-calibration": "node scripts/apply-calibration.mjs",
     "anthems:check-lyrics": "node scripts/check-anthem-lyrics.mjs",
-    "flags:check": "node scripts/check-historical-maps.mjs && node scripts/restore-era-geometry.mjs --check && node scripts/check-era-anachronism.mjs && node scripts/check-historical-flag-anachronism.mjs && node scripts/check-historical-flag-validity.mjs && node scripts/check-era-coastline-layer.mjs && node scripts/check-era-flag-explanations.mjs && node scripts/check-flag-proportions.mjs && node scripts/check-parent-flag-collision.mjs && node scripts/check-subdivision-name-collisions.mjs && node scripts/check-subdivision-meta-coverage.mjs && node scripts/check-disputed-territory-coverage.mjs && node scripts/check-flag-image-quality.mjs && node scripts/check-flag-meanings.mjs && node scripts/check-city-flag-meanings.mjs && node scripts/check-capital-flags.mjs && node scripts/check-capital-subdivision-collision.mjs && node scripts/check-population-freshness.mjs && node scripts/check-hierarchy-type-colors.mjs && node scripts/trim-flag-transparency.mjs --check && node scripts/build-flag-aspect-ratios.mjs --check && node scripts/check-ci-coverage.mjs",
+    "flags:check": "node scripts/check-historical-maps.mjs && node scripts/restore-era-geometry.mjs --check && node scripts/check-era-anachronism.mjs && node scripts/check-historical-flag-anachronism.mjs && node scripts/check-historical-flag-validity.mjs && node scripts/check-era-coastline-layer.mjs && node scripts/check-era-flag-explanations.mjs && node scripts/check-era-continents.mjs && node scripts/check-flag-proportions.mjs && node scripts/check-parent-flag-collision.mjs && node scripts/check-subdivision-name-collisions.mjs && node scripts/check-subdivision-meta-coverage.mjs && node scripts/check-disputed-territory-coverage.mjs && node scripts/check-flag-image-quality.mjs && node scripts/check-flag-meanings.mjs && node scripts/check-city-flag-meanings.mjs && node scripts/check-capital-flags.mjs && node scripts/check-capital-subdivision-collision.mjs && node scripts/check-population-freshness.mjs && node scripts/check-hierarchy-type-colors.mjs && node scripts/trim-flag-transparency.mjs --check && node scripts/build-flag-aspect-ratios.mjs --check && node scripts/check-ci-coverage.mjs",
     "pop:check": "node scripts/check-population-freshness.mjs",
     "maps:check": "node scripts/check-historical-maps.mjs",
     "maps:check-geometry": "node scripts/restore-era-geometry.mjs --check",
@@ -47,7 +47,9 @@
     "flags:download-unofficial": "node scripts/download-unofficial-flags.mjs",
     "cities:build": "node scripts/build-cities.mjs",
     "subdiv:audit-omissions": "node scripts/audit-omitted-flag-reasons.mjs",
-    "capitals:audit-omissions": "node scripts/audit-omitted-capital-reasons.mjs"
+    "capitals:audit-omissions": "node scripts/audit-omitted-capital-reasons.mjs",
+    "eras:check-continents": "node scripts/check-era-continents.mjs",
+    "eras:build-continents": "node scripts/build-polity-continents.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

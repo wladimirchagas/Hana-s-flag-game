@@ -65,6 +65,16 @@ on:
       # check keeps it curated rather than guessed (and keeps the registry free of
       # duplicate keys, which silently shadow curated entries).
       - "scripts/check-era-flag-explanations.mjs"
+      # A polity's continent is where its LAND is. The grid used to fall back to the
+      # continent of whichever country the polity borrowed its flag from, filing every
+      # 1914 colony under its ruler's continent, and dropped polities with no region
+      # label into an "Other" heading.
+      - "scripts/check-era-continents.mjs"
+      - "scripts/build-polity-continents.mjs"
+      - "scripts/lib/polity-geography.mjs"
+      - "src/data/polityContinents.ts"
+      - "src/lib/flagList.ts"
+      - "src/lib/continentGroups.ts"
       - "src/pages/LearnPage.tsx"
       # The era renderer draws the coastline basemap under every era, so land no
       # polity covers still reads as land rather than ocean (the "Greece looked like
@@ -189,6 +199,11 @@ jobs:
 
       - name: Verify every withheld era flag explains itself
         run: node scripts/check-era-flag-explanations.mjs
+
+      # Measures each polity's own polygons against the bundled basemap, so it needs the
+      # same Node 24 that can load historicalEras.ts directly.
+      - name: Verify every polity is filed on a continent its own land is on
+        run: node scripts/check-era-continents.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest
