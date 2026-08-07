@@ -1,6 +1,6 @@
 import { FlagMeaning } from "./FlagMeaning";
 import { NATIONAL_FLAG_MEANINGS, NATIONAL_INDEPENDENCE, type NationalFlag } from "../data/nationalFlags";
-import { flagYearLabel } from "../lib/nationalFlags";
+import { flagYearLabel, meaningLabel, symbolNoun } from "../lib/nationalFlags";
 
 /**
  * The widget for a flag picked in the "National flags" tab — the second card
@@ -41,11 +41,14 @@ export function NationalFlagDetails({
   // territory, and the fact that this is NOT a flag of the independent country. The
   // year comes from the sourced NATIONAL_INDEPENDENCE record, never from the prose.
   const independence = NATIONAL_INDEPENDENCE[countryCode];
+  // "Flag" is wrong for a coat of arms or a passport — every label that names the
+  // item takes its noun from the category.
+  const noun = symbolNoun(flag.category);
   return (
     <>
       <dl className="entity-summary">
         <div className="entity-summary__row">
-          <dt className="entity-summary__label">Flag</dt>
+          <dt className="entity-summary__label">{noun}</dt>
           <dd className="entity-summary__value">{flag.name}</dd>
         </div>
         {years && (
@@ -97,7 +100,11 @@ export function NationalFlagDetails({
           </button>
         )}
         <p className="learn-fs__flag-design">{flag.design}</p>
-        <FlagMeaning code={flag.id} meanings={NATIONAL_FLAG_MEANINGS} />
+        <FlagMeaning
+          code={flag.id}
+          meanings={NATIONAL_FLAG_MEANINGS}
+          label={meaningLabel(flag.category)}
+        />
       </div>
     </>
   );

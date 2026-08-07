@@ -16,7 +16,7 @@ import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
  * Three views of the same country's flags:
  *  1. Sub-national divisions — the existing subdivision flag grid.
  *  2. Capital cities         — every available capital-city flag.
- *  2b. National flags        — the country's OWN flags: historical national flags
+ *  2b. National symbols      — the country's OWN symbols: historical national flags
  *      (newest first, current one included), any additional officially recognised
  *      flags, military service flags, maritime ensigns/jacks, head-of-state
  *      standards, civil/state variants and indigenous flags. Categories a country
@@ -46,7 +46,7 @@ function loadTab(): TabId {
   } catch {
     // ignore — quota or no-storage browser
   }
-  // No stored choice yet — open on the first tab, which is "National flags"
+  // No stored choice yet — open on the first tab, which is "National symbols"
   // wherever the country has any (the caller falls back when it has none).
   return "nat";
 }
@@ -139,11 +139,11 @@ export function SubdivisionFlagTabs({
   );
   const natCount = useMemo(() => nationalFlagCount(countryCode), [countryCode]);
 
-  // "National flags" leads: it holds the country's own flags — the ones a visitor
+  // "National symbols" leads: it holds the country's own symbols — the ones a visitor
   // is most likely to have come for — so it reads before the sub-national grid.
   const TABS: { id: TabId; label: string; count?: number }[] = [
     ...(natCount > 0
-      ? [{ id: "nat" as const, label: "National flags", count: natCount }]
+      ? [{ id: "nat" as const, label: "National symbols", count: natCount }]
       : []),
     { id: "sub", label: "Sub-national divisions", count: subCount },
     { id: "city", label: "Capital cities", count: cityCount },
@@ -161,7 +161,7 @@ export function SubdivisionFlagTabs({
     <section className="flag-grid" aria-labelledby="subdiv-grid-heading">
       <header className="flag-grid__header">
         <h2 className="flag-grid__title" id="subdiv-grid-heading">
-          Flags of this country
+          Flags and symbols of this country
         </h2>
       </header>
 

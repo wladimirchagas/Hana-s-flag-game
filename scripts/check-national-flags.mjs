@@ -177,6 +177,22 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
     }
   }
 
+  // ---- a passport cover is a DRAWING, never a photograph -------------------
+  // A photo of a booklet carries its own lighting, perspective and wear, and reads
+  // as someone's document rather than as the country's design (owner report,
+  // 2026-08: Brazil's photographed cover next to Malaysia's drawn one). Vector only;
+  // where no free vector exists the type is listed with a noImageReason instead.
+  for (const f of flags) {
+    if (f.category !== "passport") continue;
+    const p = f.reuse ?? (f.file ? `national-flags/${f.file}` : null);
+    if (p && !p.endsWith(".svg")) {
+      fail(
+        `${cc} ${f.id}: passport covers must be drawn images (.svg), not photographs of the booklet — ` +
+          `"${p}" is not. Use a vector cover, or list the type with a noImageReason.`,
+      );
+    }
+  }
+
   // ---- the official section must carry the flag the country actually flies --
   // The section that answers "what is this country's flag?" must contain it. This
   // shipped wrong: Bolivia's official section listed only the Wiphala, so the

@@ -95,7 +95,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-royal", category: "standard", name: "King's Flag for Australia", from: 2024, to: 9999, path: "national-flags/au/australia-royal-standard.svg", design: "A banner of the Australian coat of arms, used by the sovereign in Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-gg", category: "standard", name: "Flag of the Governor-General of Australia", from: 1936, to: 9999, path: "national-flags/au/australia-governor-general.svg", design: "A crowned lion standing on a crown, on a blue field.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
-    { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.jpg", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above and PASSPORT below.", source: "https://en.wikipedia.org/wiki/Australian_passport" },
+    { id: "au-passport", category: "passport", name: "Australian passport", noImageReason: "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.", source: "https://en.wikipedia.org/wiki/Australian_passport" },
   ],
   "BO": [
     { id: "bo-official-national", category: "official", name: "Flag of Bolivia", from: 1851, to: 9999, primary: true, path: "flags/bo.svg", design: "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.", source: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
@@ -109,7 +109,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bo-naval-jack", category: "maritime", name: "Naval jack of Bolivia", from: 1851, to: 9999, path: "national-flags/bo/bolivia-naval-jack.svg", design: "A green field with a yellow and red double border.", source: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
     { id: "bo-state", category: "civilstate", name: "State flag of Bolivia", from: 1851, to: 9999, path: "national-flags/bo/bolivia-state.svg", design: "The tricolour charged with the coat of arms — flown by the state, while citizens fly the plain tricolour.", source: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
     { id: "bo-arms", category: "coatofarms", name: "Coat of arms of Bolivia", path: "national-flags/bo/bolivia-arms.svg", design: "An oval showing the Cerro Rico of Potosí under a rising sun, with a llama, a wheatsheaf and a palm, ringed by flags, cannon and an Andean condor.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia" },
-    { id: "bo-passport", category: "passport", name: "Bolivian passport", path: "national-flags/bo/bolivia-passport.png", design: "A blue cover with the Bolivian coat of arms in gold, reading ESTADO PLURINACIONAL DE BOLIVIA.", source: "https://en.wikipedia.org/wiki/Bolivian_passport" },
+    { id: "bo-passport", category: "passport", name: "Bolivian passport", noImageReason: "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.", design: "A burgundy cover reading COMUNIDAD ANDINA above ESTADO PLURINACIONAL DE BOLIVIA, with the national arms in gold and PASAPORTE beneath.", source: "https://en.wikipedia.org/wiki/Bolivian_passport" },
   ],
   "BR": [
     { id: "br-official-national", category: "official", name: "Flag of Brazil", from: 1992, to: 9999, primary: true, path: "flags/br.svg", design: "The national flag and ensign, under the Constitution's Article 13.", source: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
@@ -135,7 +135,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "br-president", category: "standard", name: "Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-president.svg", design: "A dark green field with the national coat of arms in the centre.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-vice-president", category: "standard", name: "Vice-Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-vice-president.svg", design: "A yellow field with 21 blue stars in a cross and the coat of arms at the centre.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-arms", category: "coatofarms", name: "Coat of arms of Brazil", path: "national-flags/br/brazil-arms.svg", design: "A blue disc bearing the Southern Cross, ringed by 27 stars, on a star-shaped emblem framed by coffee and tobacco branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
-    { id: "br-passport", category: "passport", name: "Brazilian passport", path: "national-flags/br/brazil-passport.png", design: "The blue Mercosur cover: the national arms in gold above the country's name, with MERCOSUL/MERCOSUR across the top.", source: "https://en.wikipedia.org/wiki/Brazilian_passport" },
+    { id: "br-passport", category: "passport", name: "Brazilian passport", noImageReason: "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.", design: "A blue Mercosur cover: MERCOSUL/MERCOSUR across the top, REPÚBLICA FEDERATIVA DO BRASIL, the national arms in gold, and PASSAPORTE beneath.", source: "https://en.wikipedia.org/wiki/Brazilian_passport" },
   ],
   "CN": [
     { id: "cn-official-national", category: "official", name: "Flag of the People's Republic of China", from: 1949, to: 9999, primary: true, path: "flags/cn.svg", design: "The national flag, hoisted 1 October 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_China" },
@@ -150,6 +150,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cn-pla-rocket", category: "military", name: "Ensign of the PLA Rocket Force", from: 2016, to: 9999, path: "national-flags/cn/china-pla-rocket.svg", design: "The PLA flag with a gold-and-blue stripe along the bottom.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
     { id: "cn-arms", category: "coatofarms", name: "National Emblem of China", path: "national-flags/cn/china-emblem.svg", design: "Tiananmen Gate beneath five gold stars, in a red circle framed by ears of grain and a cogwheel.", source: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
     { id: "cn-passport", category: "passport", name: "Chinese passport", path: "national-flags/cn/china-passport.svg", design: "A dark red cover with the national emblem in gold, reading 中华人民共和国护照.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
+    { id: "cn-passport-seafarer", category: "passport", name: "Chinese seafarer's passport", path: "national-flags/cn/china-passport-seafarer.svg", design: "A cover for merchant seafarers, issued alongside the ordinary passport.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
   ],
   "ES": [
     { id: "es-official-national", category: "official", name: "Flag of Spain", from: 1981, to: 9999, primary: true, path: "flags/es.svg", design: "The national flag and ensign, under Article 4 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
@@ -209,6 +210,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "in-president-1950", category: "standard", name: "Presidential Standard of India (1950–1971)", from: 1950, to: 1971, path: "national-flags/in/india-president-1950.svg", design: "Quartered dark blue: the Lions of Sarnath, an elephant, a pair of scales and a lotus vase — discontinued in 1971 in favour of the national flag.", source: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
     { id: "in-arms", category: "coatofarms", name: "State Emblem of India", path: "national-flags/in/india-emblem.svg", design: "Three of the four Asiatic lions of the Lion Capital of Ashoka, above a frieze bearing a horse and a bull with a wheel between them.", source: "https://en.wikipedia.org/wiki/State_Emblem_of_India" },
     { id: "in-passport", category: "passport", name: "Indian passport", path: "national-flags/in/india-passport.svg", design: "A navy-blue cover bearing the State Emblem of India in gold, with भारत गणराज्य and REPUBLIC OF INDIA.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
+    { id: "in-passport-diplomatic", category: "passport", name: "Indian diplomatic passport", path: "national-flags/in/india-passport-diplomatic.svg", design: "A maroon cover with the State Emblem in gold, issued to diplomats and senior officials.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
+    { id: "in-passport-official", category: "passport", name: "Indian official passport", path: "national-flags/in/india-passport-official.svg", design: "A white cover with the State Emblem, issued to officials travelling on government business.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
+    { id: "in-passport-emergency", category: "passport", name: "Indian Emergency Certificate", path: "national-flags/in/india-emergency-certificate.svg", design: "A one-way travel document issued by Indian missions abroad to nationals without a valid passport.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
   ],
   "JP": [
     { id: "jp-official-national", category: "official", name: "Flag of Japan (Hinomaru)", from: 1999, to: 9999, primary: true, path: "flags/jp.svg", design: "The national flag, under the Act on National Flag and Anthem of 1999.", source: "https://en.wikipedia.org/wiki/Flag_of_Japan" },
@@ -220,6 +224,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "jp-ijn", category: "military", name: "Ensign of the Imperial Japanese Navy", from: 1889, to: 1945, path: "national-flags/jp/japan-ijn.svg", design: "The same sixteen-ray rising sun, flown by the navy of the Empire of Japan.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
     { id: "jp-emperor", category: "standard", name: "Imperial Standard of the Emperor of Japan", from: 1869, to: 9999, path: "national-flags/jp/japan-emperor.svg", design: "A gold sixteen-petal chrysanthemum centred on red.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
     { id: "jp-arms", category: "coatofarms", name: "Imperial Seal of Japan", path: "national-flags/jp/japan-imperial-seal.svg", design: "A yellow chrysanthemum of sixteen petals, with a second set of sixteen showing behind them.", source: "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan" },
+    { id: "jp-passport", category: "passport", name: "Japanese passport", noImageReason: "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.", design: "A dark red cover (ordinary passports) bearing the paulownia Government Seal in gold, with 日本国旅券 / JAPAN PASSPORT.", source: "https://en.wikipedia.org/wiki/Japanese_passport" },
   ],
   "MY": [
     { id: "my-official-national", category: "official", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, primary: true, path: "flags/my.svg", design: "The national flag, adopted at the formation of Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
@@ -229,6 +234,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "my-fms", category: "historical", name: "Flag of the Federated Malay States", from: 1895, to: 1946, sovereign: "the United Kingdom", path: "national-flags/my/federated-malay-states.svg", design: "Four horizontal stripes of white, red, yellow and black with a tiger in the centre — the four protected states under British residency.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-dutch-malacca", category: "historical", name: "The Prince's Flag, Dutch Malacca", from: 1641, to: 1795, sovereign: "the Dutch Republic", path: "national-flags/my/dutch-malacca.svg", design: "The orange-white-blue flag of the Dutch Republic, flown over Malacca after the Dutch took it from Portugal.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-portuguese-malacca", category: "historical", name: "Flag of the Kingdom of Portugal, Portuguese Malacca", from: 1511, to: 1521, sovereign: "Portugal", path: "national-flags/my/portuguese-malacca.svg", design: "The royal Portuguese arms, flown over Malacca after its capture in 1511.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    { id: "my-army", category: "military", name: "Flag of the Malaysian Army", path: "national-flags/my/malaysia-army.svg", design: "A red field defaced with the crest of the Malaysian Army.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    { id: "my-air-force", category: "military", name: "Ensign of the Royal Malaysian Air Force", path: "national-flags/my/malaysia-air-force.svg", design: "A sky-blue field with the national flag in the canton and the air force roundel in the fly.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
+    { id: "my-armed-forces", category: "military", name: "Flag of the Malaysian Armed Forces", path: "national-flags/my/malaysia-armed-forces.svg", design: "Three horizontal bands of sky blue, red and dark blue — one for each service — with the armed forces crest.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-navy", category: "maritime", name: "Naval ensign of the Royal Malaysian Navy", from: 1968, to: 9999, path: "national-flags/my/malaysia-navy-ensign.svg", design: "A white field with blue crosses and the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-navy-1963", category: "maritime", name: "Naval ensign of the Royal Malaysian Navy (1963–1968)", from: 1963, to: 1968, path: "national-flags/my/malaysia-navy-ensign-1963.svg", design: "St George's Cross on a white field with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-coast-guard", category: "maritime", name: "Ensign of the Malaysian Maritime Enforcement Agency", from: 2005, to: 9999, path: "national-flags/my/malaysia-coast-guard.svg", design: "A blue field bearing the agency's crest, with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
@@ -291,8 +299,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "us-president", category: "standard", name: "Flag of the President of the United States", path: "national-flags/us/us-president.svg", design: "The presidential coat of arms encircled by fifty stars on a dark blue field.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States" },
     { id: "us-vice-president", category: "standard", name: "Flag of the Vice President of the United States", path: "national-flags/us/us-vice-president.svg", design: "The vice-presidential coat of arms with four blue stars on white.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States" },
     { id: "us-arms", category: "coatofarms", name: "Great Seal of the United States", path: "national-flags/us/us-great-seal.svg", design: "A bald eagle bearing a shield of thirteen stripes, an olive branch in one talon and thirteen arrows in the other.", source: "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" },
+    { id: "us-passport", category: "passport", name: "United States passport", path: "national-flags/us/us-passport.svg", design: "A blue cover bearing the Great Seal in gold — the ordinary passport.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
     { id: "us-passport-diplomatic", category: "passport", name: "United States diplomatic passport", path: "national-flags/us/us-passport-diplomatic.svg", design: "A black cover bearing the Great Seal in gold, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
-    { id: "us-passport-official", category: "passport", name: "United States official passport", path: "national-flags/us/us-passport-official.png", design: "A maroon cover bearing the Great Seal in gold, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
+    { id: "us-passport-official", category: "passport", name: "United States official passport", path: "national-flags/us/us-passport-official.svg", design: "A maroon cover with the Great Seal, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
+    { id: "us-passport-service", category: "passport", name: "United States service passport", path: "national-flags/us/us-passport-service.svg", design: "A grey cover with the Great Seal, headed SERVICE PASSPORT.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
+    { id: "us-passport-emergency", category: "passport", name: "United States emergency passport", path: "national-flags/us/us-passport-emergency.svg", design: "A limited-validity passport issued abroad when a traveller's own is lost or stolen.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
   ],
   "ZA": [
     { id: "za-official-national", category: "official", name: "Flag of South Africa", from: 1994, to: 9999, primary: true, path: "flags/za.svg", design: "The national flag, first flown on 27 April 1994.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
@@ -304,6 +315,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "za-sandf", category: "military", name: "Flag of the South African National Defence Force", from: 2003, to: 9999, path: "national-flags/za/south-africa-sandf.svg", design: "The Defence Force's emblem on a field bearing the colours of the national flag.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-sandf-1994", category: "military", name: "Ensign of the South African National Defence Force (1994–2003)", from: 1994, to: 2003, path: "national-flags/za/south-africa-sandf-1994.svg", design: "The first post-apartheid defence-force ensign, replaced in 2003.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-arms", category: "coatofarms", name: "Coat of arms of South Africa", path: "national-flags/za/south-africa-arms.svg", design: "Two facing figures from Khoisan rock art within a shield, above a spear and knobkierie, crowned by a secretary bird and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
+    { id: "za-passport", category: "passport", name: "South African passport", noImageReason: "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.", design: "A green cover bearing the South African coat of arms in gold, reading REPUBLIC OF SOUTH AFRICA / REPUBLIEK VAN SUID-AFRIKA and PASSPORT.", source: "https://en.wikipedia.org/wiki/South_African_passport" },
   ],
 };
 
@@ -362,7 +374,7 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "au-passport": {
-    description: "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document the traveller carries is stamped with the federation's own emblem rather than the flag. The small chip symbol at the foot marks the biometric series.",
+    description: "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document a traveller carries is stamped with the federation’s own emblem rather than with the flag.",
     sources: [
       { title: "Australian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_passport" },
     ],
@@ -381,7 +393,7 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "bo-passport": {
-    description: "The heading is the country's post-2009 constitutional name — Plurinational State of Bolivia — so the cover carries the same claim the Wiphala makes alongside the tricolour: that the state is made of many peoples. The blue is the shared Andean Community colour.",
+    description: "The heading above the country’s name is the Andean Community, whose members agreed a common passport format — so, as with Mercosur, a Bolivian traveller’s document announces the bloc before the state. Beneath it stands the country’s post-2009 constitutional name, Estado Plurinacional de Bolivia, the same claim the Wiphala makes alongside the tricolour: that the state is made of many peoples.",
     sources: [
       { title: "Bolivian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Bolivian_passport" },
     ],
@@ -405,7 +417,7 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "br-passport": {
-    description: "The cover is a statement of two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sit the words República Federativa do Brasil and, at the foot, the biometric chip symbol that marks it as an e-passport.",
+    description: "The cover states two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sits the state’s full name, and at the foot the chip symbol that marks it as an e-passport.",
     sources: [
       { title: "Brazilian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazilian_passport" },
     ],
@@ -464,10 +476,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Indian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Indian_passport" },
     ],
   },
+  "in-passport-diplomatic": {
+    description: "India colour-codes by holder: navy blue for an ordinary passport, white for government officials travelling on duty, and maroon for diplomats — so a border officer can tell the bearer’s standing from the cover before opening it.",
+    sources: [
+      { title: "Indian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Indian_passport" },
+    ],
+  },
   "jp-arms": {
     description: "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
     sources: [
       { title: "Imperial Seal of Japan — Wikipedia", url: "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan" },
+    ],
+  },
+  "jp-passport": {
+    description: "The gold crest is the Government Seal — the paulownia mon used by the cabinet — rather than the imperial chrysanthemum, so the passport carries the government’s emblem while the chrysanthemum stays with the Imperial House. Japan colour-codes by validity and type: red for a ten-year ordinary passport, blue for five-year, green for official and dark brown for diplomatic.",
+    sources: [
+      { title: "Japanese passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Japanese_passport" },
     ],
   },
   "my-arms": {
@@ -500,6 +524,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Great Seal of the United States — Wikipedia", url: "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" },
     ],
   },
+  "us-passport": {
+    description: "The United States issues its passports in four colours and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official and grey for service or no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country’s arms carry.",
+    sources: [
+      { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
+    ],
+  },
   "us-passport-diplomatic": {
     description: "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
     sources: [
@@ -517,6 +547,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 2000 to replace arms designed by the British and Afrikaner minorities, and read from the ground up as one sentence about the country. At the centre two human figures from the Linton Stone, a piece of Khoisan rock art, greet each other — the oldest inhabitants, and unity between people. A spear and knobkierie lie crossed and at rest, signalling defence and authority laid down rather than raised. The motto is in ǀXam, an extinct San language, and means “diverse people unite”. Above stands the secretary bird, a snake-killer, wings spread in protection, with a protea on its breast and the rising sun above it. The lower and upper ovals of the design close into the shape of infinity.",
     sources: [
       { title: "Coat of arms of South Africa — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
+    ],
+  },
+  "za-passport": {
+    description: "The gold device is the post-2000 coat of arms — the Khoisan rock-art figures and the secretary bird — so the passport carries the emblem adopted after apartheid rather than the one it replaced. The heading appears in English and Afrikaans, two of the eleven official languages.",
+    sources: [
+      { title: "South African passport — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_passport" },
     ],
   },
 };

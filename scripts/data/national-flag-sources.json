@@ -350,26 +350,6 @@
           "fetched": "2026-08-07"
         },
         {
-          "id": "br-passport",
-          "category": "passport",
-          "name": "Brazilian passport",
-          "commons": "Passport of Brazil (2019).png",
-          "file": "br/brazil-passport.png",
-          "design": "The blue Mercosur cover: the national arms in gold above the country's name, with MERCOSUL/MERCOSUR across the top.",
-          "meaning": {
-            "description": "The cover is a statement of two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sit the words República Federativa do Brasil and, at the foot, the biometric chip symbol that marks it as an e-passport.",
-            "sources": [
-              {
-                "title": "Brazilian passport — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Brazilian_passport"
-              }
-            ]
-          },
-          "source": "https://en.wikipedia.org/wiki/Brazilian_passport",
-          "sha256": "744b4cc5d82a961c3244a92c6d1408161453c9728b734573c1a126f49c6d8783",
-          "fetched": "2026-08-07"
-        },
-        {
           "id": "br-official-national",
           "category": "official",
           "name": "Flag of Brazil",
@@ -378,6 +358,23 @@
           "reuse": "flags/br.svg",
           "design": "The national flag and ensign, under the Constitution's Article 13.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
+        },
+        {
+          "id": "br-passport",
+          "category": "passport",
+          "name": "Brazilian passport",
+          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "design": "A blue Mercosur cover: MERCOSUL/MERCOSUR across the top, REPÚBLICA FEDERATIVA DO BRASIL, the national arms in gold, and PASSAPORTE beneath.",
+          "meaning": {
+            "description": "The cover states two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sits the state’s full name, and at the foot the chip symbol that marks it as an e-passport.",
+            "sources": [
+              {
+                "title": "Brazilian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Brazilian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Brazilian_passport"
         }
       ],
       "independence": {
@@ -605,11 +602,10 @@
           "id": "au-passport",
           "category": "passport",
           "name": "Australian passport",
-          "commons": "Australian Passport Cover of P - Series.jpg",
-          "file": "au/australia-passport.jpg",
-          "design": "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above and PASSPORT below.",
+          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "design": "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.",
           "meaning": {
-            "description": "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document the traveller carries is stamped with the federation's own emblem rather than the flag. The small chip symbol at the foot marks the biometric series.",
+            "description": "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document a traveller carries is stamped with the federation’s own emblem rather than with the flag.",
             "sources": [
               {
                 "title": "Australian passport — Wikipedia",
@@ -617,9 +613,7 @@
               }
             ]
           },
-          "source": "https://en.wikipedia.org/wiki/Australian_passport",
-          "sha256": "edc1585c2fa8313ee6a4bbf181c80a99178424fab316ae4444517bbb8d32db27",
-          "fetched": "2026-08-07"
+          "source": "https://en.wikipedia.org/wiki/Australian_passport"
         }
       ],
       "omitted": [
@@ -817,6 +811,39 @@
           "reuse": "flags/my.svg",
           "design": "The national flag, adopted at the formation of Malaysia in 1963.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
+        },
+        {
+          "id": "my-army",
+          "category": "military",
+          "name": "Flag of the Malaysian Army",
+          "commons": "Flag of the Malaysian Army.svg",
+          "file": "my/malaysia-army.svg",
+          "design": "A red field defaced with the crest of the Malaysian Army.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "26db6bb9555b5e2e68349445e427839d1dad25b515fa9a7e9a6c15754b733516",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-air-force",
+          "category": "military",
+          "name": "Ensign of the Royal Malaysian Air Force",
+          "commons": "Air Force Ensign of Malaysia.svg",
+          "file": "my/malaysia-air-force.svg",
+          "design": "A sky-blue field with the national flag in the canton and the air force roundel in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "10fea80bb8c38c68d5acc1b6ab89f621faf3906d103e90b3f3b25a3f564af539",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-armed-forces",
+          "category": "military",
+          "name": "Flag of the Malaysian Armed Forces",
+          "commons": "Flag of the Malaysian Armed Forces.svg",
+          "file": "my/malaysia-armed-forces.svg",
+          "design": "Three horizontal bands of sky blue, red and dark blue — one for each service — with the armed forces crest.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
+          "sha256": "7ce5157b2082b49bfc2b750aa0837a003b186c47b34fc80c536d336f58a5782f",
+          "fetched": "2026-08-07"
         }
       ],
       "independence": {
@@ -1361,17 +1388,6 @@
           "fetched": "2026-08-07"
         },
         {
-          "id": "us-passport-official",
-          "category": "passport",
-          "name": "United States official passport",
-          "commons": "United States passport - official - biometric.png",
-          "file": "us/us-passport-official.png",
-          "design": "A maroon cover bearing the Great Seal in gold, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.",
-          "source": "https://en.wikipedia.org/wiki/United_States_passport",
-          "sha256": "4b4f68b9f9579593824f2288b4bd7dc5ce3ff01589e4fb241f700315dbdc543d",
-          "fetched": "2026-08-07"
-        },
-        {
           "id": "us-official-national",
           "category": "official",
           "name": "Flag of the United States",
@@ -1380,6 +1396,59 @@
           "reuse": "flags/us.svg",
           "design": "The national flag, fifty stars since 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
+        },
+        {
+          "id": "us-passport",
+          "category": "passport",
+          "name": "United States passport",
+          "commons": "United States Passport.svg",
+          "file": "us/us-passport.svg",
+          "design": "A blue cover bearing the Great Seal in gold — the ordinary passport.",
+          "meaning": {
+            "description": "The United States issues its passports in four colours and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official and grey for service or no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country’s arms carry.",
+            "sources": [
+              {
+                "title": "United States passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/United_States_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/United_States_passport",
+          "sha256": "baa869e7127e8d4e39c8b880076b474e0288e9ac9f50d6b72253a60dd2581d0f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-passport-official",
+          "category": "passport",
+          "name": "United States official passport",
+          "commons": "United States Passport - Official - Biometric.svg",
+          "file": "us/us-passport-official.svg",
+          "design": "A maroon cover with the Great Seal, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.",
+          "source": "https://en.wikipedia.org/wiki/United_States_passport",
+          "sha256": "a0188865dc2afb089b5dc16c92f600288cc10abb48fe88e100aa56501066d40f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-passport-service",
+          "category": "passport",
+          "name": "United States service passport",
+          "commons": "United States Passport - Service - Biometric.svg",
+          "file": "us/us-passport-service.svg",
+          "design": "A grey cover with the Great Seal, headed SERVICE PASSPORT.",
+          "source": "https://en.wikipedia.org/wiki/United_States_passport",
+          "sha256": "7da53e2ea07eb6cf21f681fb54f4cb7a63a9466416c4ebc533a2e6d8a3fd071e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-passport-emergency",
+          "category": "passport",
+          "name": "United States emergency passport",
+          "commons": "United States Passport - Emergency.svg",
+          "file": "us/us-passport-emergency.svg",
+          "design": "A limited-validity passport issued abroad when a traveller's own is lost or stolen.",
+          "source": "https://en.wikipedia.org/wiki/United_States_passport",
+          "sha256": "75cec6ecb43e5eba47d71eb89dfa043f1151a0fa2b22d39a69774b7935ff6b1f",
+          "fetched": "2026-08-07"
         }
       ],
       "independence": {
@@ -2056,26 +2125,6 @@
           "fetched": "2026-08-07"
         },
         {
-          "id": "bo-passport",
-          "category": "passport",
-          "name": "Bolivian passport",
-          "commons": "Bolivia passport.png",
-          "file": "bo/bolivia-passport.png",
-          "design": "A blue cover with the Bolivian coat of arms in gold, reading ESTADO PLURINACIONAL DE BOLIVIA.",
-          "meaning": {
-            "description": "The heading is the country's post-2009 constitutional name — Plurinational State of Bolivia — so the cover carries the same claim the Wiphala makes alongside the tricolour: that the state is made of many peoples. The blue is the shared Andean Community colour.",
-            "sources": [
-              {
-                "title": "Bolivian passport — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Bolivian_passport"
-              }
-            ]
-          },
-          "source": "https://en.wikipedia.org/wiki/Bolivian_passport",
-          "sha256": "097045260240234a7d2adbe9fa6891ca0407cb4e9b0833785cec0603c2721929",
-          "fetched": "2026-08-07"
-        },
-        {
           "id": "bo-official-national",
           "category": "official",
           "name": "Flag of Bolivia",
@@ -2084,6 +2133,23 @@
           "reuse": "flags/bo.svg",
           "design": "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bolivia"
+        },
+        {
+          "id": "bo-passport",
+          "category": "passport",
+          "name": "Bolivian passport",
+          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "design": "A burgundy cover reading COMUNIDAD ANDINA above ESTADO PLURINACIONAL DE BOLIVIA, with the national arms in gold and PASAPORTE beneath.",
+          "meaning": {
+            "description": "The heading above the country’s name is the Andean Community, whose members agreed a common passport format — so, as with Mercosur, a Bolivian traveller’s document announces the bloc before the state. Beneath it stands the country’s post-2009 constitutional name, Estado Plurinacional de Bolivia, the same claim the Wiphala makes alongside the tricolour: that the state is made of many peoples.",
+            "sources": [
+              {
+                "title": "Bolivian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bolivian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Bolivian_passport"
         }
       ],
       "independence": {
@@ -2223,6 +2289,23 @@
           "reuse": "flags/za.svg",
           "design": "The national flag, first flown on 27 April 1994.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
+        },
+        {
+          "id": "za-passport",
+          "category": "passport",
+          "name": "South African passport",
+          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "design": "A green cover bearing the South African coat of arms in gold, reading REPUBLIC OF SOUTH AFRICA / REPUBLIEK VAN SUID-AFRIKA and PASSPORT.",
+          "meaning": {
+            "description": "The gold device is the post-2000 coat of arms — the Khoisan rock-art figures and the secretary bird — so the passport carries the emblem adopted after apartheid rather than the one it replaced. The heading appears in English and Afrikaans, two of the eleven official languages.",
+            "sources": [
+              {
+                "title": "South African passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/South_African_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/South_African_passport"
         }
       ],
       "independence": {
@@ -2343,6 +2426,23 @@
           "reuse": "flags/jp.svg",
           "design": "The national flag, under the Act on National Flag and Anthem of 1999.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Japan"
+        },
+        {
+          "id": "jp-passport",
+          "category": "passport",
+          "name": "Japanese passport",
+          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "design": "A dark red cover (ordinary passports) bearing the paulownia Government Seal in gold, with 日本国旅券 / JAPAN PASSPORT.",
+          "meaning": {
+            "description": "The gold crest is the Government Seal — the paulownia mon used by the cabinet — rather than the imperial chrysanthemum, so the passport carries the government’s emblem while the chrysanthemum stays with the Imperial House. Japan colour-codes by validity and type: red for a ten-year ordinary passport, blue for five-year, green for official and dark brown for diplomatic.",
+            "sources": [
+              {
+                "title": "Japanese passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Japanese_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Japanese_passport"
         }
       ]
     },
@@ -2636,6 +2736,48 @@
           "reuse": "flags/in.svg",
           "design": "The national flag, adopted 22 July 1947.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_India"
+        },
+        {
+          "id": "in-passport-diplomatic",
+          "category": "passport",
+          "name": "Indian diplomatic passport",
+          "commons": "Indian Diplomatic Passport.svg",
+          "file": "in/india-passport-diplomatic.svg",
+          "design": "A maroon cover with the State Emblem in gold, issued to diplomats and senior officials.",
+          "meaning": {
+            "description": "India colour-codes by holder: navy blue for an ordinary passport, white for government officials travelling on duty, and maroon for diplomats — so a border officer can tell the bearer’s standing from the cover before opening it.",
+            "sources": [
+              {
+                "title": "Indian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Indian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Indian_passport",
+          "sha256": "57f9c250842b9599a1fc2d665ff8223d1bf2dd9061f8f8ed04c80f833988f24d",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-passport-official",
+          "category": "passport",
+          "name": "Indian official passport",
+          "commons": "Indian Official Passport.svg",
+          "file": "in/india-passport-official.svg",
+          "design": "A white cover with the State Emblem, issued to officials travelling on government business.",
+          "source": "https://en.wikipedia.org/wiki/Indian_passport",
+          "sha256": "7a3598cdaf1f993dc579f5c67f1226a18c89782e32c3ba20daa5859d048efe09",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-passport-emergency",
+          "category": "passport",
+          "name": "Indian Emergency Certificate",
+          "commons": "Indian Emergency Certificate.svg",
+          "file": "in/india-emergency-certificate.svg",
+          "design": "A one-way travel document issued by Indian missions abroad to nationals without a valid passport.",
+          "source": "https://en.wikipedia.org/wiki/Indian_passport",
+          "sha256": "532d31c6b8b96be07aa5bf129829d29c34d5d188d611fb686e0514167ac57725",
+          "fetched": "2026-08-07"
         }
       ],
       "independence": {
@@ -2795,6 +2937,17 @@
           "reuse": "flags/cn.svg",
           "design": "The national flag, hoisted 1 October 1949.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_China"
+        },
+        {
+          "id": "cn-passport-seafarer",
+          "category": "passport",
+          "name": "Chinese seafarer's passport",
+          "commons": "People's Republic of China Seafearer's Passport 2019.svg",
+          "file": "cn/china-passport-seafarer.svg",
+          "design": "A cover for merchant seafarers, issued alongside the ordinary passport.",
+          "source": "https://en.wikipedia.org/wiki/Chinese_passport",
+          "sha256": "3b36a63e32d9573b41b19a318070a47ecf8c92fa96a4bf390679ef974354812e",
+          "fetched": "2026-08-07"
         }
       ]
     }

@@ -23,9 +23,16 @@ import { FLAG_MEANINGS, type FlagMeaning as FlagMeaningData } from "../data/flag
 export function FlagMeaning({
   code,
   meanings = FLAG_MEANINGS,
+  label = "What this flag means",
 }: {
   code: string | null | undefined;
   meanings?: Record<string, FlagMeaningData>;
+  /**
+   * What the disclosure calls the thing it explains. Defaults to "flag" because
+   * every original caller shows one; the national-symbols tab passes "coat of arms"
+   * or "passport" so a label never calls something a flag that is not one.
+   */
+  label?: string;
 }) {
   const [open, setOpen] = useState(false);
   const panelId = useId();
@@ -42,7 +49,7 @@ export function FlagMeaning({
         onClick={() => setOpen((v) => !v)}
       >
         <span className="flag-meaning__toggle-icon" aria-hidden="true">ⓘ</span>
-        <span className="flag-meaning__toggle-label">What this flag means</span>
+        <span className="flag-meaning__toggle-label">{label}</span>
         <span className="flag-meaning__toggle-chev" aria-hidden="true">
           {open ? "▾" : "▸"}
         </span>

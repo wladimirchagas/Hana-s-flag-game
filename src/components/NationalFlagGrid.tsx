@@ -4,7 +4,7 @@ import { NATIONAL_FLAGS, type NationalFlag, type NationalFlagCategory } from "..
 import { flagYearLabel } from "../lib/nationalFlags";
 
 /**
- * "National flags" tab of the country drill-down grid.
+ * "National symbols" tab of the country drill-down grid.
  *
  * Shows every flag the country itself flies, beyond its sub-national ones —
  * grouped into sourced categories, each hidden when the country has none:

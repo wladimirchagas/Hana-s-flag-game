@@ -289,7 +289,7 @@ export default function LearnPage() {
   const activeCapitalCityName = showCapital && selectedSubdivision
     ? (subdivisionCapital(selectedSubdivision.code)?.name ?? null)
     : (selectedCapital?.name ?? null);
-  // A flag picked in the "National flags" tab — a historical national flag, an
+  // A symbol picked in the "National symbols" tab — a historical national flag, an
   // additional official flag, a service flag, an ensign or a standard. It belongs
   // to the WHOLE country, so unlike every other selection here it deliberately
   // drives NOTHING on the map (owner request); it only opens its own widget below
@@ -1944,7 +1944,7 @@ export default function LearnPage() {
             );
           })()}
 
-          {/* ===== NATIONAL-FLAG box — a flag picked in the "National flags" tab.
+          {/* ===== NATIONAL-SYMBOL box — an item picked in the "National symbols" tab.
               The country's CURRENT flag stays in the fact-sheet at the top and the
               picked flag is shown here in its own widget below, with its name, the
               years it flew and its sourced explainer. It highlights nothing on the
