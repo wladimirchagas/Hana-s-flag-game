@@ -17,7 +17,7 @@ export const FLAG_ADOPTION_YEAR: Readonly<Record<string, number>> = {
   AL: 1992,
   AM: 1990,
   AO: 1975,
-  AR: 1812,
+  AR: 1861, // curated
   AT: 1918,
   AU: 1901,
   AZ: 1918,
@@ -31,7 +31,7 @@ export const FLAG_ADOPTION_YEAR: Readonly<Record<string, number>> = {
   BI: 1967,
   BJ: 1959,
   BN: 1959,
-  BO: 1825,
+  BO: 1851, // curated
   BR: 1889,
   BS: 1973, // curated
   BT: 1969,
@@ -59,7 +59,7 @@ export const FLAG_ADOPTION_YEAR: Readonly<Record<string, number>> = {
   DM: 1978,
   DO: 1862,
   DZ: 1962,
-  EC: 1830,
+  EC: 1900, // curated
   EE: 1918,
   EG: 1984,
   ER: 1995,
@@ -113,7 +113,7 @@ export const FLAG_ADOPTION_YEAR: Readonly<Record<string, number>> = {
   LK: 1972,
   LR: 1847,
   LS: 2006,
-  LT: 1820,
+  LT: 1918, // curated
   LU: 1845, // curated
   LV: 1923,
   LY: 1951,
@@ -132,7 +132,7 @@ export const FLAG_ADOPTION_YEAR: Readonly<Record<string, number>> = {
   MU: 1968,
   MV: 1965,
   MW: 1964,
-  MX: 1810,
+  MX: 1968, // curated
   MY: 1963,
   MZ: 1983,
   NA: 1990,
@@ -197,7 +197,7 @@ export const FLAG_ADOPTION_YEAR: Readonly<Record<string, number>> = {
   UZ: 1991,
   VA: 1929,
   VC: 1985,
-  VE: 1811, // curated
+  VE: 2006, // curated
   VN: 1955,
   VU: 1980,
   WS: 1949,

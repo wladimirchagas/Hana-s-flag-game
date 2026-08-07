@@ -355,6 +355,24 @@
       "why": "1920 Ukraine showed no flag though the Ukrainian People's Republic flew the blue-and-yellow bicolour; the modern adoption year is 1992.",
       "sha256": "ce95c6c7710708ac921e46ebdcc7b101246727bb8c228d2961d3727b1968cd6e",
       "fetched": "2026-08-07"
+    },
+    "mexico-1893.svg": {
+      "commons": "Flag of Mexico (1893–1916).svg",
+      "why": "1900 and 1914 Mexico were showing the MODERN flag, whose arms Francisco Eppens Helguera designed in 1968. FLAG_ADOPTION_YEAR had MX at 1810 (Hidalgo's independence banner), so the gate let the 1968 arms onto seven era maps. This is the flag actually flown 1893–1916.",
+      "sha256": "c9c854bf90667df2a4992bea0ca6da7c4cc7f400177f98f4ad6fe5e3c73deedc",
+      "fetched": "2026-08-07"
+    },
+    "mexico-1916.svg": {
+      "commons": "Flag of Mexico (1916–1934).svg",
+      "why": "1920 Mexico. Carranza's 1916 decree turned the eagle side-on; this design flew 1916–1934.",
+      "sha256": "9c5dfc15064194ed198dfeb98fa05a15ddf713f25c7db227caa3644d6b1ae5fe",
+      "fetched": "2026-08-07"
+    },
+    "mexico-1934.svg": {
+      "commons": "Flag of Mexico (1934-1968).svg",
+      "why": "1938, 1945 and 1960 Mexico. The design flown from 1934 until the current arms were adopted 16 September 1968.",
+      "sha256": "06f670d043803ee9f3632aa1b404e7ecb8473149d8eb4cb34908ed2056061709",
+      "fetched": "2026-08-07"
     }
   }
 }

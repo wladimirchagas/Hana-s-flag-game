@@ -39,6 +39,39 @@ const R = (p) => resolve(__dirname, p);
  * the app needs. "Adopted" means the year the CURRENT design became the national flag.
  */
 const ADOPTION_OVERRIDES = {
+  // --- Ancestor designs Wikidata dates to the FIRST flag of the state, not the
+  // --- current one. Each of these let a modern flag fly in an era that never saw it;
+  // --- found 2026-08-07 auditing Latin-American and Baltic eras (43 modern-flag
+  // --- borrows involved, 16 of them genuinely wrong).
+  //
+  // 1810 is Hidalgo's independence banner. The flag the app ships carries the arms
+  // Francisco Eppens Helguera designed, adopted 16 September 1968; the eagle turned
+  // side-on in 1916. Left at 1810 it put the 1968 arms on seven era maps (1880–1960).
+  // https://en.wikipedia.org/wiki/Flag_of_Mexico
+  MX: 1968,
+  // 1811 is the starless independence tricolour. The app ships the EIGHT-star flag,
+  // which added its eighth star on 12 March 2006; seven stars flew 1930–2006. Left at
+  // 1811 it put the 2006 flag on all eight eras Venezuela appears in, 1994 included.
+  // https://en.wikipedia.org/wiki/Flag_of_Venezuela
+  VE: 2006,
+  // The flag became the national standard in 1860, but the app ships the version
+  // CHARGED WITH THE COAT OF ARMS, added for official use in 1900. Prefer the later
+  // year per the era rule: 1830 (secession from Gran Colombia) is neither.
+  // https://en.wikipedia.org/wiki/Flag_of_Ecuador
+  EC: 1900,
+  // 1825's Bandera Menor is not today's flag; the current red-yellow-green order with
+  // the arms dates from 31 October 1851.
+  // https://en.wikipedia.org/wiki/Flag_of_Bolivia
+  BO: 1851,
+  // 1812 is Belgrano's first raising of the plain blue-white flag; the Sun of May was
+  // added in 1818 and the current version dates from 1861.
+  // https://en.wikipedia.org/wiki/Flag_of_Argentina
+  AR: 1861,
+  // No Lithuanian tricolour existed in 1820 — the yellow-green-red flag was first
+  // adopted 25 April 1918, restored 18 November 1988. (1820 appears to be a stray
+  // Wikidata inception; the medieval Lithuanian flag was the Vytis, a different design.)
+  // https://en.wikipedia.org/wiki/Flag_of_Lithuania
+  LT: 1918,
   // Wikidata dates the design's first use in 1777/1818; the flag the app ships is the
   // 50-star version, official 4 July 1960 after Hawaii's admission.
   // https://en.wikipedia.org/wiki/Flag_of_the_United_States

@@ -41,6 +41,7 @@ on:
       - "scripts/check-historical-maps.mjs"
       - "scripts/check-historical-flag-anachronism.mjs"
       - "scripts/check-ci-coverage.mjs"
+      - "src/data/flagOverlayAspectRatios.ts"
       - "package.json"
       - ".github/workflows/flag-integrity.yml"
       - "src/data/flagAdoptionYears.ts"
