@@ -11,6 +11,11 @@ import { flagYearLabel } from "../lib/nationalFlags";
  *
  *   Historical flags   every national flag it has flown, newest first, the current
  *                      one included; the label carries the year each was introduced.
+ *                      This section reaches back BEFORE independence, so it also holds
+ *                      colonial-era flags — Portugal's royal banners over Brazil, the
+ *                      Union Flag over Australia. Every one of those carries a
+ *                      "Under {power}" badge (`flag.sovereign`), because a colonial
+ *                      flag shown bare would read as a flag of the independent country.
  *   Official flags     additional flags with official national status (Australia's
  *                      Aboriginal and Torres Strait Islander flags).
  *   Military flags     service flags — army, navy, air force, marine corps.
@@ -101,7 +106,11 @@ export function NationalFlagGrid({
                     className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
                     onClick={() => onSelect(flag)}
                     aria-pressed={active}
-                    aria-label={`Show ${flag.name}`}
+                    aria-label={
+                      flag.sovereign
+                        ? `Show ${flag.name} — flown under ${flag.sovereign}, before independence`
+                        : `Show ${flag.name}`
+                    }
                   >
                     <span className="flag-grid__thumb">
                       <img
@@ -116,6 +125,11 @@ export function NationalFlagGrid({
                     <span className="flag-grid__name">
                       <AutoFitName className="flag-grid__name-text" text={flag.name} />
                       {years && <span className="flag-grid__flag-sub">{years}</span>}
+                      {flag.sovereign && (
+                        <span className="flag-grid__sovereign-badge">
+                          Under {flag.sovereign}
+                        </span>
+                      )}
                     </span>
                   </button>
                 </li>
