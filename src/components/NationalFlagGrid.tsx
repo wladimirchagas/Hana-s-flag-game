@@ -9,6 +9,10 @@ import { flagYearLabel } from "../lib/nationalFlags";
  * Shows every flag the country itself flies, beyond its sub-national ones —
  * grouped into sourced categories, each hidden when the country has none:
  *
+ *   Official flags     the flags in force, ALWAYS led by the country's current
+ *                      national flag (badged "Current national flag"), followed by
+ *                      any others with official status — Bolivia's Wiphala,
+ *                      Australia's Aboriginal and Torres Strait Islander flags.
  *   Historical flags   every national flag it has flown, newest first, the current
  *                      one included; the label carries the year each was introduced.
  *                      This section reaches back BEFORE independence, so it also holds
@@ -56,8 +60,9 @@ const CATEGORY_HEADINGS: Record<NationalFlagCategory, string> = {
 
 /** The order the sections appear in — matches the generator's own ordering. */
 const CATEGORY_ORDER: NationalFlagCategory[] = [
-  "historical",
+  // "official" first: the flags in force, headed by the one the country flies.
   "official",
+  "historical",
   "military",
   "maritime",
   "standard",
@@ -121,7 +126,9 @@ export function NationalFlagGrid({
                     onClick={() => onSelect(flag)}
                     aria-pressed={active}
                     aria-label={
-                      flag.noImageReason
+                      flag.primary
+                        ? `${flag.name} — the current national flag, shown in the panel above`
+                        : flag.noImageReason
                         ? `Show ${flag.name} — no freely-licensed image is available`
                         : flag.sovereign
                           ? `Show ${flag.name} — flown under ${flag.sovereign}, before independence`
@@ -147,6 +154,11 @@ export function NationalFlagGrid({
                     <span className="flag-grid__name">
                       <AutoFitName className="flag-grid__name-text" text={flag.name} />
                       {years && <span className="flag-grid__flag-sub">{years}</span>}
+                      {flag.primary && (
+                        <span className="flag-grid__primary-badge">
+                          Current national flag
+                        </span>
+                      )}
                       {flag.sovereign && (
                         <span className="flag-grid__sovereign-badge">
                           Under {flag.sovereign}

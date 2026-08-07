@@ -24,8 +24,12 @@ const MANIFEST = R("data/national-flag-sources.json");
 const OUT = R("../src/data/nationalFlags.ts");
 
 const CATEGORY_ORDER = [
-  "historical",
+  // "official" leads: the country's flags-in-force, headed by the one it actually
+  // flies. Owner request 2026-08 — Bolivia's official section showed only the
+  // Wiphala, so the section that should answer "what is this country's flag?"
+  // omitted the tricolour.
   "official",
+  "historical",
   "military",
   "maritime",
   "standard",
@@ -52,6 +56,12 @@ for (const cc of countries) {
   const ordered = [];
   for (const category of CATEGORY_ORDER) {
     const inCat = entries.filter((e) => e.category === category);
+    if (category === "official") {
+      // The flag the country actually flies leads its own section, whatever order
+      // the manifest happens to list the others in.
+      const own = `flags/${cc.toLowerCase()}.svg`;
+      inCat.sort((a, b) => Number(b.reuse === own) - Number(a.reuse === own));
+    }
     if (category === "historical") {
       // Newest first; a flag flown for a single year sorts by its own year.
       inCat.sort((a, b) => b.from - a.from || b.to - a.to);
@@ -78,8 +88,13 @@ for (const cc of countries) {
     // A pre-independence flag carries the power that held sovereignty at the time,
     // so the UI can badge it instead of presenting it as the country's own flag.
     const sovereign = e.sovereign ? `sovereign: ${q(e.sovereign)}, ` : "";
+    // PRIMARY is derived, never hand-set: it is exactly the entry that reuses the
+    // country's own current flag file, so a country cannot be given two primaries
+    // or forget to mark one. The same flag is listed in BOTH the official and the
+    // historical section, and both cards carry the badge.
+    const primary = path === `flags/${cc.toLowerCase()}.svg` ? "primary: true, " : "";
     flagLines.push(
-      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
+      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${primary}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
     );
     flagCount++;
 
@@ -180,6 +195,14 @@ export type NationalFlag = {
    * the independent state.
    */
   readonly sovereign?: string;
+  /**
+   * True for the country's CURRENT national flag — the one the fact-sheet above the
+   * grid already shows. Derived by the generator from the image path, so it cannot
+   * drift. The grid badges it wherever it is listed, and selecting it opens no
+   * second widget: the panel above is already showing that exact flag, and a
+   * duplicate of it is noise.
+   */
+  readonly primary?: boolean;
   /** Authoritative source for the name and dates. */
   readonly source: string;
 };

@@ -16,6 +16,11 @@ import { flagYearLabel } from "../lib/nationalFlags";
  *
  * Nothing here touches the map: these flags belong to the whole country, so there
  * is no territory to highlight.
+ *
+ * The country's CURRENT flag (`flag.primary`) never reaches this component — the
+ * fact-sheet panel above is already showing that exact image with its own
+ * explainer, and repeating it below would put the same flag on screen twice.
+ * `LearnPage` therefore scrolls to that panel instead of opening this one.
  */
 export function NationalFlagDetails({
   flag,

@@ -46,7 +46,9 @@ function loadTab(): TabId {
   } catch {
     // ignore — quota or no-storage browser
   }
-  return "sub";
+  // No stored choice yet — open on the first tab, which is "National flags"
+  // wherever the country has any (the caller falls back when it has none).
+  return "nat";
 }
 
 function saveTab(t: TabId): void {
@@ -137,18 +139,21 @@ export function SubdivisionFlagTabs({
   );
   const natCount = useMemo(() => nationalFlagCount(countryCode), [countryCode]);
 
+  // "National flags" leads: it holds the country's own flags — the ones a visitor
+  // is most likely to have come for — so it reads before the sub-national grid.
   const TABS: { id: TabId; label: string; count?: number }[] = [
-    { id: "sub", label: "Sub-national divisions", count: subCount },
-    { id: "city", label: "Capital cities", count: cityCount },
     ...(natCount > 0
       ? [{ id: "nat" as const, label: "National flags", count: natCount }]
       : []),
+    { id: "sub", label: "Sub-national divisions", count: subCount },
+    { id: "city", label: "Capital cities", count: cityCount },
     { id: "tree", label: "Hierarchy" },
   ];
 
   // A country with no curated national flags has no such tab, so a persisted
   // "nat" selection must fall back rather than render an empty panel.
   const activeTab: TabId = tab === "nat" && natCount === 0 ? "sub" : tab;
+
 
   if (divisions.length === 0) return null;
 

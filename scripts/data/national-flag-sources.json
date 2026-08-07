@@ -368,6 +368,16 @@
           "source": "https://en.wikipedia.org/wiki/Brazilian_passport",
           "sha256": "744b4cc5d82a961c3244a92c6d1408161453c9728b734573c1a126f49c6d8783",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-official-national",
+          "category": "official",
+          "name": "Flag of Brazil",
+          "from": 1992,
+          "to": 9999,
+          "reuse": "flags/br.svg",
+          "design": "The national flag and ensign, under the Constitution's Article 13.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
         }
       ],
       "independence": {
@@ -797,6 +807,16 @@
           "source": "https://en.wikipedia.org/wiki/Malaysian_passport",
           "sha256": "8ace467c01056cf1e60c8d43508e787cfeb4d9b8c98f3ceb4e0b74daad85afbb",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-official-national",
+          "category": "official",
+          "name": "Flag of Malaysia (Jalur Gemilang)",
+          "from": 1963,
+          "to": 9999,
+          "reuse": "flags/my.svg",
+          "design": "The national flag, adopted at the formation of Malaysia in 1963.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
         }
       ],
       "independence": {
@@ -1350,6 +1370,16 @@
           "source": "https://en.wikipedia.org/wiki/United_States_passport",
           "sha256": "4b4f68b9f9579593824f2288b4bd7dc5ce3ff01589e4fb241f700315dbdc543d",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-official-national",
+          "category": "official",
+          "name": "Flag of the United States",
+          "from": 1960,
+          "to": 9999,
+          "reuse": "flags/us.svg",
+          "design": "The national flag, fifty stars since 1960.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
         }
       ],
       "independence": {
@@ -1594,6 +1624,16 @@
           "source": "https://en.wikipedia.org/wiki/British_passport",
           "sha256": "182118fed9f47460ddd5b6ef2f624e9201ce2ccc6cd344078aca37c3941aabc5",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-official-national",
+          "category": "official",
+          "name": "Union Flag",
+          "from": 1801,
+          "to": 9999,
+          "reuse": "flags/gb.svg",
+          "design": "The national flag of the United Kingdom.",
+          "source": "https://en.wikipedia.org/wiki/Union_Jack"
         }
       ]
     },
@@ -1681,6 +1721,16 @@
           "source": "https://en.wikipedia.org/wiki/French_passport",
           "sha256": "dd27f9ade9404a6017a85b693fc7bf98215fd9c99ca684a8a861aab65b1fa94e",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "fr-official-national",
+          "category": "official",
+          "name": "Flag of France",
+          "from": 1830,
+          "to": 9999,
+          "reuse": "flags/fr.svg",
+          "design": "The national flag, named in Article 2 of the Constitution.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_France"
         }
       ]
     },
@@ -1847,6 +1897,16 @@
           "source": "https://en.wikipedia.org/wiki/Spanish_passport",
           "sha256": "3689dca26890188130be88d4ec8936fffb8271c62c60cbd0732f90300a515ebe",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-official-national",
+          "category": "official",
+          "name": "Flag of Spain",
+          "from": 1981,
+          "to": 9999,
+          "reuse": "flags/es.svg",
+          "design": "The national flag and ensign, under Article 4 of the Constitution.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
         }
       ]
     },
@@ -2014,6 +2074,16 @@
           "source": "https://en.wikipedia.org/wiki/Bolivian_passport",
           "sha256": "097045260240234a7d2adbe9fa6891ca0407cb4e9b0833785cec0603c2721929",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-official-national",
+          "category": "official",
+          "name": "Flag of Bolivia",
+          "from": 1851,
+          "to": 9999,
+          "reuse": "flags/bo.svg",
+          "design": "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bolivia"
         }
       ],
       "independence": {
@@ -2143,6 +2213,16 @@
           "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa",
           "sha256": "227ed9ca432309659f9ea8eb46a61197a66d7d8252a159ffc7aa1d6e6e44abd4",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "za-official-national",
+          "category": "official",
+          "name": "Flag of South Africa",
+          "from": 1994,
+          "to": 9999,
+          "reuse": "flags/za.svg",
+          "design": "The national flag, first flown on 27 April 1994.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
         }
       ],
       "independence": {
@@ -2253,6 +2333,16 @@
           "source": "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan",
           "sha256": "ea846b3133efb6bd3a929fcf8522d959247d1105db028d3b5cd7b82e8cbb9ca3",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "jp-official-national",
+          "category": "official",
+          "name": "Flag of Japan (Hinomaru)",
+          "from": 1999,
+          "to": 9999,
+          "reuse": "flags/jp.svg",
+          "design": "The national flag, under the Act on National Flag and Anthem of 1999.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Japan"
         }
       ]
     },
@@ -2374,6 +2464,16 @@
           "source": "https://en.wikipedia.org/wiki/Turkish_passport",
           "sha256": "7208585ca5837a5822eacb71ae1bc1895d4f41ab85a80d3e8e16790997391d12",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-official-national",
+          "category": "official",
+          "name": "Flag of Turkey",
+          "from": 1936,
+          "to": 9999,
+          "reuse": "flags/tr.svg",
+          "design": "The national flag, under the Turkish Flag Law of 1936.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Turkey"
         }
       ]
     },
@@ -2526,6 +2626,16 @@
           "source": "https://en.wikipedia.org/wiki/Indian_passport",
           "sha256": "30922fca9a87305c043ab47e582e974c2c42e828c96cd8a9aa287757bac6cbd0",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-official-national",
+          "category": "official",
+          "name": "Flag of India (Tiranga)",
+          "from": 1947,
+          "to": 9999,
+          "reuse": "flags/in.svg",
+          "design": "The national flag, adopted 22 July 1947.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_India"
         }
       ],
       "independence": {
@@ -2675,6 +2785,16 @@
           "source": "https://en.wikipedia.org/wiki/Chinese_passport",
           "sha256": "0cf3118d54122b8b2812f100c90b2c1b84250b9a6e447f47584ea5df8e6d1f99",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-official-national",
+          "category": "official",
+          "name": "Flag of the People's Republic of China",
+          "from": 1949,
+          "to": 9999,
+          "reuse": "flags/cn.svg",
+          "design": "The national flag, hoisted 1 October 1949.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_China"
         }
       ]
     }

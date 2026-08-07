@@ -109,6 +109,18 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
 
 ### Rules
 
+0. **The "official" section comes FIRST, and it always contains the flag the country
+   actually flies.** It is the section that answers "what is this country's flag?", so it leads the tab
+   and its first card is the current national flag, marked with a **"Current national flag"** badge
+   wherever it is listed (it appears in the historical section too). This shipped wrong and was reported
+   (2026-08): Bolivia's official section held only the Wiphala, so the tricolour — the country's own flag
+   — appeared nowhere in the first section a reader sees. `primary` is DERIVED by the generator from the
+   image path (the entry reusing `flags/{cc}.svg`), never hand-set, so a country cannot have two primaries
+   or forget to mark one; `check-national-flags.mjs` fails the build if a country's official section is
+   missing it. **Selecting the primary flag opens NO second widget** — the fact-sheet above is already
+   showing that exact image and its explainer, and a duplicate below is noise; the click scrolls there
+   instead. The tab itself is also **first in the tab strip** and the default for a new visitor, ahead of
+   the sub-national grid.
 1. **Every flag is an image with a DATE and a SOURCE.** Each manifest entry carries a name, a design line
    and an authoritative `source` URL; a `historical` entry additionally carries the years it flew. Nothing
    is written from memory — same discipline as `era-flag-sources.json` and `capital-flag-sources.json`.
@@ -169,7 +181,8 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
 build** on: a missing name/design/source; a historical entry with no years; an image that is not bundled or
 whose bytes no longer match the recorded sha256; a runtime `https://` path; a standardised 640×480/512×512
 viewBox; a reused era flag whose window disagrees with `historicalFlagValidity.ts`; a country whose
-historical section omits the current flag; an undocumented omission; a malformed meaning; and
+historical section omits the current flag; a country whose OFFICIAL section omits it, or lists it twice;
+an undocumented omission; a malformed meaning; and
 `src/data/nationalFlags.ts` having drifted from the manifest; an entry with neither an image nor a usable
 `noImageReason`, or with both; a `coatofarms` entry with no sourced `meaning`; and either UI component
 dropping its reference to `noImageReason` (which would make an unpicturable symbol vanish again). It ALSO

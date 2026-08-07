@@ -1666,7 +1666,10 @@ export default function LearnPage() {
                     className="learn-fs__subdiv-btn"
                     onClick={handleEnterSubdivisionMode}
                   >
-                    View sub-national divisions
+                    {/* It opens far more than the sub-national grid now — national,
+                        historical, military, maritime, arms and passports too — so the
+                        label says what the user gets rather than naming one tab. */}
+                    Explore more flags
                   </button>
                 )}
               </>
@@ -2147,10 +2150,13 @@ export default function LearnPage() {
             }}
             selectedNationalFlagId={selectedNationalFlag?.id ?? null}
             onSelectNationalFlag={(flag) => {
-              // Toggle: tapping the open flag's card closes its widget. Nothing on
-              // the map changes either way — a national flag belongs to the whole
-              // country, so there is no territory to highlight.
-              setSelectedNationalFlag((cur) => (cur?.id === flag.id ? null : flag));
+              // The CURRENT national flag opens no widget: the fact-sheet at the top
+              // is already showing that same image and its explainer, so a second
+              // copy below would be a duplicate of what the user is scrolling to.
+              // Clearing the selection also closes whatever else was open.
+              setSelectedNationalFlag((cur) =>
+                flag.primary ? null : cur?.id === flag.id ? null : flag,
+              );
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />
