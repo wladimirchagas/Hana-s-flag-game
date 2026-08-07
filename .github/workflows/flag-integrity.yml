@@ -54,6 +54,7 @@ on:
       - "scripts/check-historical-flag-validity.mjs"
       - "src/data/historicalFlagValidity.ts"
       - "scripts/check-era-coastline-layer.mjs"
+      - "scripts/audit-era-names.mjs"
       - "scripts/download-era-flags.mjs"
       - "scripts/data/era-flag-sources.json"
       # Why a polity shows no flag is a claim the panel makes about history; this

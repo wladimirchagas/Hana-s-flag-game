@@ -27,6 +27,7 @@
     "eras:check-flags": "node scripts/check-historical-flag-anachronism.mjs",
     "eras:check-validity": "node scripts/check-historical-flag-validity.mjs",
     "eras:audit": "node scripts/audit-era-polities.mjs",
+    "eras:audit-names": "node scripts/audit-era-names.mjs",
     "eras:download-flags": "node scripts/download-era-flags.mjs",
     "eras:check-explanations": "node scripts/check-era-flag-explanations.mjs",
     "eras:build-adoption-years": "node scripts/build-flag-adoption-years.mjs",

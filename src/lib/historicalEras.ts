@@ -486,8 +486,11 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Kimek-Kipchak khaganate", { continent: "Eurasian Steppe", note: "Turkic confederation of the Irtysh and the Kazakh steppe; its Kipchak successors would dominate the Pontic steppe until the Mongols." }],
   ["Kara Khitai Khaganate", { continent: "Central Asia", note: "Qara Khitai (Western Liao) — founded by Khitan refugees from northern China, and conquered by the Mongols in 1218." }],
   ["Tuareg Nomadic Tribes", { continent: "West Africa", note: "Tuareg confederations of the central Sahara, whose caravans carried the salt and gold of the trans-Saharan trade." }],
-  ["Chinese Warlords", { flag: "historical-flags/roc-1912.png", continent: "East Asia", note: "Warlord-era China — the Republic's authority was nominal while regional militarists ruled the provinces (1916–1928).", population: 470_000_000 }],
-  ["Chinese warlords", { flag: "historical-flags/roc.png", continent: "East Asia", note: "Warlord-era China — regional militarists still held much of the country as the Nationalists fought both them and the Communists.", population: 500_000_000 }],
+  // AUDIT 2026-08-07: the dataset spells this polity "Chinese Warlords" in 1920 and
+  // "Chinese warlords" in 1938, and the registry had grown a SEPARATE entry for each —
+  // disagreeing about the flag (the 1912 five-coloured one vs the 1928 blue-sky one). Now
+  // one entry with no era-agnostic flag; each era carries the flag of its own date.
+  ["Chinese warlords", { continent: "East Asia", note: "Warlord-era China — the Republic's authority was nominal while regional militarists ruled the provinces.", population: 470_000_000 }],
   ["Islamic city-states", { continent: "South Asia", note: "Islamic sultanates and city-states of the Deccan and southern India — independent powers such as Bijapur, Golconda and others that filled the space between the Mughal north and Hindu southern kingdoms." }],
   ["Islamic and Hindu states", { continent: "South Asia", note: "The patchwork of Deccan sultanates, Rajput kingdoms and southern Hindu states between the Mughal north and Vijayanagara's collapse." }],
 
@@ -954,7 +957,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // is era-safe — Spain in 1815 already flew the 1785 flag.
   ["Vice-Royalty of New Spain", { ruler: "Spain", continent: "Mesoamerica", note: "Viceroyalty of New Spain (modern Mexico + Central America), Spanish colony." }],
   ["Vice-Royalty of New Granada", { ruler: "Spain", continent: "South America", note: "Viceroyalty of New Granada (modern Colombia, Venezuela, Ecuador, Panama), Spanish colony." }],
-  ["Vice-Royalty of Peru", { flag: "historical-flags/spain-1785.png", continent: "South America", note: "Viceroyalty of Peru, Spanish colony in the Andes." }],
+  ["Vice-Royalty of Peru", { ruler: "Spain", continent: "South America", note: "Viceroyalty of Peru, Spanish colony in the Andes." }],
   // Rattanakosin Siam (1782–1932) used the red-with-white-elephant flag
   // until the modern Thai tricolour was adopted in 1917.
   ["Rattanakosin Kingdom", { noFlag: true, noFlagReason: "No flag shown for this date — Siam's flag changed three times in this period: a red field with a white chakra (1782), a white elephant within the chakra (1817), a plain white elephant (1855) and the trirong tricolour (1917).", continent: "Southeast Asia", note: "Rattanakosin Kingdom — modern Thailand's predecessor (founded 1782, capital Bangkok). Red field with white elephant was used until the tricolour came in 1917.", population: 5_000_000 }],
@@ -2877,7 +2880,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Portugal 1700 = Blue-and-white royal standard (not the 1911 red-green flag)
     ["Portugal", { continent: "Iberia", note: "Kingdom of Portugal in 1700 — a major colonial power (Brazil, Africa, India). Flew a blue-and-white royal standard; the modern red-and-green wasn't adopted until 1911.", noFlag: true, population: 2_000_000 }],
     // New France 1700 = major French colonial territory in Canada
-    ["New France", { flag: "historical-flags/france-bourbon.png", continent: "North America", note: "New France — French colonial territory in Canada and the Mississippi valley, under the Bourbon royal banner.", population: 15_000 }],
+    ["New France", { continent: "North America", note: "New France — French colonial territory in Canada and the Mississippi valley, under the Bourbon royal banner.", population: 15_000 }],
     // Vietnamese states in 1700
     ["Đại Việt", { continent: "Southeast Asia", note: "Đại Việt in 1700 — divided between the Trịnh lords in the north and Nguyễn lords in the south; nominally one Lê dynasty kingdom.", noFlag: true, population: 4_000_000 }],
     // Ayutthaya 1700 = still a major trading kingdom
@@ -3201,12 +3204,12 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Imperial Japan", { flag: "historical-flags/japan-1870.svg", continent: "East Asia", note: "Meiji Japan - rapidly industrialising after the 1868 Restoration. The Hinomaru became the national flag in 1870, in the seven-by-ten form shown here; today's proportions and brighter crimson date from the 1999 flag law.", population: 36_600_000 }],
     ["Portugal", { flag: "historical-flags/portugal-1830.png", continent: "Iberia", note: "Kingdom of Portugal - the blue-and-white constitutional monarchy flag flew from 1830 to 1910; the modern green-and-red was adopted in 1911.", population: 4_600_000 }],
     // --- Colonies and dependencies (they flew the ruling power's flag) ------
-    ["Algeria (FR)", { modernName: "France", continent: "North Africa", note: "French Algeria - administered as departments of France since 1848.", population: 3_300_000 }],
-    ["Senegal (FR)", { modernName: "France", continent: "West Africa", note: "French Senegal - Saint-Louis and Goree, the base for France's West African expansion.", population: 800_000 }],
+    ["Algeria", { ruler: "France", continent: "North Africa", note: "French Algeria - administered as departments of France since 1848.", population: 3_300_000 }],
+    ["Senegal", { ruler: "France", continent: "West Africa", note: "French Senegal - Saint-Louis and Goree, the base for France's West African expansion.", population: 800_000 }],
     ["French Indochina", { modernName: "France", continent: "Southeast Asia", note: "French Cochinchina and the Cambodian protectorate; Annam and Tonkin followed in 1883-85.", population: 10_000_000 }],
     ["Annam", { noFlag: true, continent: "Southeast Asia", noFlagReason: "No flag shown — Nguyễn-dynasty Vietnam used imperial yellow court banners, not a national flag in the modern sense; Vietnam's first national flags date from the 20th century.", note: "Nguyen-dynasty Vietnam under mounting French pressure - the French protectorate came in 1883. Royal yellow banners were used; there was no modern-style national flag.", population: 8_000_000 }],
-    ["Angola (Portugal)", { flag: "historical-flags/portugal-1830.png", continent: "Central Africa", note: "Portuguese Angola - coastal control only; the interior was conquered after the 1884-85 Berlin Conference.", population: 2_000_000 }],
-    ["Mozambique", { flag: "historical-flags/portugal-1830.png", continent: "East Africa", note: "Portuguese Mozambique - a chain of coastal stations rather than the later colony.", population: 2_500_000 }],
+    ["Angola", { ruler: "Portugal", continent: "Central Africa", note: "Portuguese Angola - coastal control only; the interior was conquered after the 1884-85 Berlin Conference.", population: 2_000_000 }],
+    ["Mozambique", { continent: "East Africa", note: "Portuguese Mozambique - a chain of coastal stations rather than the later colony.", population: 2_500_000 }],
     ["Portuguese Guinea", { flag: "historical-flags/portugal-1830.png", continent: "West Africa", note: "Portuguese Guinea, in modern Guinea-Bissau.", population: 300_000 }],
     ["Philippines", { flag: "historical-flags/spain-1785.png", continent: "Southeast Asia", note: "Spanish colonial Philippines - the red-yellow-red flag flew until the 1898 revolution.", population: 5_500_000 }],
     ["British Raj", { modernName: "United Kingdom", continent: "South Asia", note: "British India - Victoria had been proclaimed Empress of India in 1876. The Union Jack and the Star of India flew over it.", population: 250_000_000 }],
@@ -3461,6 +3464,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    ["Chinese warlords", { flag: "historical-flags/roc-1912.png", continent: "East Asia", note: "Warlord-era China — Beiyang governments came and went in Beijing while regional militarists held the provinces; the Republic's five-coloured flag flew until 1928.", population: 470_000_000 }],
     ["Ukraine", { flag: "historical-flags/ukraine-1917.svg", continent: "Eastern Europe", note: "The Ukrainian People's Republic — proclaimed in 1917 and fighting Bolshevik, White and Polish armies at once; the Soviets took Kyiv for the last time in 1920.", population: 25_000_000 }],
     ["Kuwait", { flag: "historical-flags/kuwait-1914.svg", continent: "Western Asia", note: "Sheikhdom of Kuwait — a British protectorate; the year of the Battle of Jahra against Ibn Saud's Ikhwan.", population: 50_000 }],
     ["Georgia", { flag: "historical-flags/georgia-1918.svg", continent: "Western Asia", note: "Democratic Republic of Georgia — independent since May 1918, and occupied by the Red Army in February 1921.", population: 2_500_000 }],
@@ -3491,8 +3495,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Ceylon", { modernName: "United Kingdom", continent: "South Asia", note: "British Crown Colony of Ceylon under direct British rule since 1815; flew the Union Jack. Independence and the distinctive lion flag came in 1948.", population: 3_500_000 }],
     ["Malaysia", { modernName: "United Kingdom", continent: "Southeast Asia", note: "British Malaya — the Straits Settlements and protected Malay sultanates; not yet federated as Malaysia, which formed in 1963.", population: 2_000_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Kingdom of Italy — the green-white-red tricolour carried the Savoy arms from unification in 1861 until the republic removed them in 1946.", population: 37_000_000 }],
-    ["Libya (IT)", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya — Rome's reconquest of the interior would run through the 1920s.", population: 1_000_000 }],
-    ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland.", population: 600_000 }],
+    ["Libya (IT)", { continent: "North Africa", note: "Italian Libya — Rome's reconquest of the interior would run through the 1920s.", population: 1_000_000 }],
+    ["Italian Somaliland", { continent: "East Africa", note: "Italian Somaliland.", population: 600_000 }],
     ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea.", population: 350_000 }],
     ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Ethiopian Empire under Empress Zewditu — still independent, flying Menelik II's green-yellow-red with the Lion of Judah.", population: 9_500_000 }],
     ["Mongolia", { noFlag: true, noFlagReason: "No flag shown — Mongolia's autonomy was revoked on 1 January 1920 and the Republic of China's five-coloured flag was raised over Urga; the revolutionary government's own flag came in 1921.", continent: "East Asia", note: "Mongolian People's Republic (1921–1992) — established after the withdrawal of Chinese warlord forces, with the red field and golden Soyombo emblem.", population: 850_000 }],
@@ -3540,8 +3544,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Turkey", { modernName: "Türkiye", continent: "Western Asia", note: "Turkish Republic (1923–present) — established under Mustafa Kemal Atatürk after the collapse of the Ottoman Empire. The red flag with white crescent and star was adopted in 1923 and remains Turkey's flag today.", population: 16_000_000 }],
     ["Italy", { flag: "historical-flags/italy-kingdom.svg", continent: "Italy", note: "Fascist Italy under Mussolini — the green-white-red tricolour carried the Savoy arms of the Kingdom. The monarchy remained until 1946, when the republic removed the arms from the flag.", population: 43_000_000 }],
     ["Libya", { flag: "historical-flags/italy-kingdom.svg", continent: "North Africa", note: "Italian Libya, declared an integral part of Italy in 1939.", population: 850_000 }],
-    ["Ethiopia (Italy)", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian East Africa — Ethiopia had been invaded in 1935–36 and would be liberated in 1941.", population: 10_000_000 }],
-    ["Italian Somaliland", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Somaliland, part of Italian East Africa from 1936.", population: 1_000_000 }],
+    ["Ethiopia (Italy)", { continent: "East Africa", note: "Italian East Africa — Ethiopia had been invaded in 1935–36 and would be liberated in 1941.", population: 10_000_000 }],
+    ["Italian Somaliland", { continent: "East Africa", note: "Italian Somaliland, part of Italian East Africa from 1936.", population: 1_000_000 }],
     ["Eritrea", { flag: "historical-flags/italy-kingdom.svg", continent: "East Africa", note: "Italian Eritrea, part of Italian East Africa from 1936.", population: 600_000 }],
     ["Tanzania, United Republic of", { modernName: "United Kingdom", continent: "East Africa", note: "Tanganyika Territory — a British mandate between the wars.", population: 5_300_000 }],
     ["Kenya", { modernName: "United Kingdom", continent: "East Africa", note: "Kenya Colony under British rule.", population: 3_600_000 }],
@@ -3589,6 +3593,13 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    // The four occupation zones. Germany had NO national flag from 1945 to 1949 — the
+    // black-red-gold was abolished in 1935 and readopted by the Federal Republic in 1949 —
+    // so each zone flies its occupying power's flag, captioned.
+    // https://en.wikipedia.org/wiki/Allied-occupied_Germany
+    ["American occupation zone", { continent: "Central Europe", note: "The American zone of occupied Germany — Bavaria, Hesse and northern Baden-Württemberg, plus the Bremen enclave. It merged into Bizonia with the British zone in 1947.", population: 17_200_000 }],
+    ["British occupation zone", { continent: "Central Europe", note: "The British zone of occupied Germany — the industrial Ruhr, Lower Saxony and Schleswig-Holstein, and the most heavily bombed part of the country.", population: 22_300_000 }],
+    ["French occupation zone", { continent: "Central Europe", note: "The French zone of occupied Germany — the Rhineland-Palatinate, southern Baden and the Saar, which France administered separately from 1947.", population: 5_900_000 }],
     ["Kuwait", { noFlag: true, continent: "Western Asia", note: "Sheikhdom of Kuwait — a British protectorate; independence came in 1961, with the modern flag.", population: 90_000, noFlagReason: "No flag shown — Kuwait flew a red flag bearing its name in Arabic, revised in 1940; only the 1921–1940 version is bundled, and the modern flag dates from 1961." }],
     ["Qatar", { flag: "historical-flags/qatar-1936.svg", continent: "Western Asia", note: "Sheikhdom of Qatar — a British protectorate; oil exports began in 1949.", population: 25_000 }],
     ["Oman", { flag: "historical-flags/muscat-oman.svg", continent: "Western Asia", note: "Sultanate of Muscat and Oman under Said bin Taimur — closed to the outside world; the plain red flag flew until 1970.", population: 500_000 }],
@@ -3870,6 +3881,58 @@ export const DISPLAY_NAME_FIXES: ReadonlyMap<string, string> = new Map([
   ["Papou", "Papuan peoples"],
   ["Gurjara Pratihara", "Gurjara-Pratihara"],
   ["Austria Hungary", "Austria-Hungary"],
+  ["CochimÃ­", "Cochimí"],
+
+  /* --- AUDIT 2026-08-07, goal-2 name pass: CASE drift ---------------------------
+   * The dataset spells the same descriptive polity differently in different eras, and
+   * the label is the selection key the panel, the flag grid and the cross-era selection
+   * persistence all match on — so "Chinese Warlords" in 1920 and "Chinese warlords" in
+   * 1938 read as two different entities. Normalised to the lower-case form the dataset's
+   * other descriptive labels use ("Australian aboriginal hunter-gatherers").
+   */
+  ["Saharan Pastoral Nomads", "Saharan pastoral nomads"],
+  ["Hindu Kingdoms", "Hindu kingdoms"],
+  ["Rajput Kingdoms", "Rajput kingdoms"],
+  ["Baltic Tribes", "Baltic tribes"],
+  ["Chinese Warlords", "Chinese warlords"],
+
+  /* --- AUDIT 2026-08-07, goal-2 name pass: dataset ruler TAGS ------------------
+   * Upstream appends the ruling power to the NAME — "Western Australia (UK)",
+   * "Algeria (France)", "Angola (Portugal)". That tag is not part of the polity's name,
+   * and the panel already has a "Ruled by" row that says the same thing properly, so the
+   * tag was pure duplication in the one place the user reads as the polity's identity.
+   * Stripped here; the ruler still reaches the panel through SUBJECTO / ERA_RULER.
+   * Where the tagged form has an accepted period name of its own (Italian Libya, Italian
+   * Eritrea, Italian Ethiopia) that name is used instead, in POLITY_NAME_FOR_ERA.
+   */
+  ["Western Australia (UK)", "Western Australia"],
+  ["Queensland (UK)", "Queensland"],
+  ["Northern Territory (UK)", "Northern Territory"],
+  ["South Australia (UK)", "South Australia"],
+  ["New South Wales (UK)", "New South Wales"],
+  ["Victoria (UK)", "Victoria"],
+  ["Algeria (FR)", "Algeria"],
+  ["Algeria (France)", "Algeria"],
+  ["Senegal (FR)", "Senegal"],
+  ["Madagascar (France)", "Madagascar"],
+  ["Morocco (France)", "Morocco"],
+  ["Syria (France)", "Syria"],
+  ["Angola (Portugal)", "Angola"],
+  ["Mozambique (Portugal)", "Mozambique"],
+  ["Guinea-Bissau (Portugal)", "Portuguese Guinea"],
+  ["Cuba (Spain)", "Cuba"],
+  ["Hispaniola (Spain)", "Hispaniola"],
+  ["Sakhalin (RU)", "Sakhalin"],
+  // Harar, the walled city and emirate of eastern Ethiopia. Egypt occupied it 1875–85;
+  // Menelik II took it for Ethiopia in 1887, so the "(Egypt)" tag is wrong for 1900 as
+  // well as being a tag. https://en.wikipedia.org/wiki/Harar
+  ["Harer (Egypt)", "Harar"],
+  // The dataset hyphenates the viceroyalties inconsistently ("Vice Royalty", "Vice-Royalty");
+  // the standard English form has neither space nor hyphen.
+  ["Vice Royalty of Peru", "Viceroyalty of Peru"],
+  ["Vice-Royalty of Peru", "Viceroyalty of Peru"],
+  ["Vice-Royalty of New Spain", "Viceroyalty of New Spain"],
+  ["Vice-Royalty of New Granada", "Viceroyalty of New Granada"],
 ]);
 
 /**
@@ -3892,18 +3955,41 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
   // Empire (c. 300–1200), an entirely different polity from the modern state that took
   // its name at independence in 1957.
   ["bc323", new Map<string, string>([
+    // "Empire of Alexander" is a description, not the polity's name; the literature calls
+    // it the Macedonian Empire (Argead dynasty). https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)
+    ["Empire of Alexander", "Macedonian Empire"],
     // The Orontid satrapy, not the 1918 republic — see POLITY_EXISTENCE["Armenia"].
     ["Armenia", "Satrapy of Armenia"],
   ])],
   ["ad100", new Map<string, string>([
     ["Armenia", "Kingdom of Armenia"],     // the Arsacid kingdom, 12–428 AD
   ])],
-  ["ad800", new Map<string, string>([["Ghana", "Ghana Empire"]])],
+  ["ad800", new Map<string, string>([
+    // Cyprus was neither independent nor solely Byzantine in 800: from 688 to 965 the island
+    // was a condominium, its revenues split between Byzantium and the caliphate.
+    // https://en.wikipedia.org/wiki/History_of_Cyprus
+    ["Cyprus", "Cyprus (Byzantine–Arab condominium)"],["Ghana", "Ghana Empire"]])],
   ["ad1000", new Map<string, string>([
+    ["Cyprus", "Byzantine Cyprus"],   // reconquered outright by Nikephoros II in 965
+    // The upper-Niger polygon predates both the Sosso Empire (c. 1140) and the Mali Empire
+    // (c. 1235); at this date Manden was a group of chiefdoms in the Ghana Empire's orbit.
+    // https://en.wikipedia.org/wiki/Mali_Empire
+    ["Mali", "Manden chiefdoms"],
+    // The highland polygon (centroid 46.8°E, 19.4°S) is Imerina, but the Merina kingdom
+    // dates from c. 1540 — before that the highlands held separate chiefdoms.
+    // https://en.wikipedia.org/wiki/Merina_Kingdom
+    ["Madagascar", "Malagasy chiefdoms"],
     ["Ghana", "Ghana Empire"],
     ["Armenia", "Bagratid Armenia"],       // the Bagratuni kingdom, 885–1045
   ])],
   ["ad1200", new Map<string, string>([
+    // The Sosso Empire (Kaniaga) ruled Manden from c. 1140 until Sundiata's victory at
+    // Kirina in c. 1235 founded the Mali Empire. https://en.wikipedia.org/wiki/Mali_Empire
+    ["Mali", "Sosso Empire"],
+    ["Madagascar", "Malagasy chiefdoms"],
+    // Nepal was unified by Prithvi Narayan Shah in 1768–69. In 1200 the Kathmandu valley
+    // was ruled by the Malla dynasty. https://en.wikipedia.org/wiki/Malla_(Nepal)
+    ["Nepal", "Malla kingdoms"],
     ["Ghana", "Ghana Empire"],
     ["Armenia", "Zakarid Armenia"],        // Greater Armenia under the Zakarids, 1201–1360
   ])],
@@ -3918,23 +4004,76 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
   // the Ghana Empire situation above. Saying so on the label keeps the two apart,
   // and lets POLITY_EXISTENCE hold a window for the modern state.
   // https://en.wikipedia.org/wiki/Kingdom_of_Benin
-  ["ad1300", new Map<string, string>([["Benin", "Kingdom of Benin"]])],
+  ["ad1300", new Map<string, string>([
+    ["Madagascar", "Malagasy chiefdoms"],
+    // The Mali Empire, not the modern republic that took the name in 1960 — the same
+    // distinction the Ghana Empire entries above draw.
+    // https://en.wikipedia.org/wiki/Mali_Empire
+    ["Mali", "Mali Empire"],["Benin", "Kingdom of Benin"]])],
   ["ad1500", new Map<string, string>([
+    ["Madagascar", "Malagasy chiefdoms"],
+    ["Mali", "Mali Empire"],
+    // The Kingdom of Kongo (c. 1390–1914), not the modern Congo republics.
+    // https://en.wikipedia.org/wiki/Kingdom_of_Kongo
+    ["Congo", "Kingdom of Kongo"],
+    // Lan Xang, the Lao kingdom of 1353–1707; "Laos" is the French colonial-era name.
+    // https://en.wikipedia.org/wiki/Lan_Xang
+    ["Laos", "Lan Xang"],
     ["Benin", "Kingdom of Benin"],
     ["Papua New Guinea", "New Guinea"],      // the name dates from 1971; before that, the island
   ])],
   ["ad1600", new Map<string, string>([
+    // Imerina, the Merina kingdom of the central highlands from c. 1540 — the same polity the
+    // 1880 and 1900 maps label Imerina. https://en.wikipedia.org/wiki/Merina_Kingdom
+    ["Madagascar", "Imerina"],
+    // The Tsardom of Russia, proclaimed by Ivan IV in 1547. "Muscovy" is the older English
+    // exonym for it, not the state's own name. https://en.wikipedia.org/wiki/Tsardom_of_Russia
+    ["Tsardom of Muscovy", "Tsardom of Russia"],
+    ["Congo", "Kingdom of Kongo"],
+    ["Laos", "Lan Xang"],
     ["Spain", "Iberian Union"],
     ["Portugal", "Iberian Union"],
     ["Benin", "Kingdom of Benin"],
   ])],
   ["ad1700", new Map<string, string>([
+    ["Madagascar", "Imerina"],
+    // The Mali Empire collapsed c. 1610 and the Keita retreated to Kangaba, ruling as
+    // provincial chiefs — which is what this polygon is by 1700.
+    // https://en.wikipedia.org/wiki/Mali_Empire
+    ["Mali", "Kangaba"],
+    // The Baymen's logwood camps in the Bay of Honduras — Britain won cutting rights by
+    // treaty in 1763 and the colony was named British Honduras only in 1862.
+    // https://en.wikipedia.org/wiki/British_Honduras
+    ["Belize", "Bay of Honduras settlements"],
+    ["Tsardom of Muscovy", "Tsardom of Russia"],
+    // "Manchu Empire" is a dated English exonym. The dynasty called itself the Great Qing,
+    // and the literature calls the state the Qing Empire.
+    // https://en.wikipedia.org/wiki/Qing_dynasty
+    ["Manchu Empire", "Qing Empire"],
+    ["Congo", "Kingdom of Kongo"],
     ["Benin", "Kingdom of Benin"],
     // The Austrian Empire was proclaimed in 1804; in 1700 these were the Habsburg
     // hereditary lands, held by the Holy Roman Emperor.
     ["Austrian Empire", "Habsburg Monarchy"],
   ])],
   ["ad1815", new Map<string, string>([
+    ["Manchu Empire", "Qing Empire"],
+    ["Congo", "Kingdom of Kongo"],
+    // There was no polity called Canada in 1815. Britain's remaining North American
+    // colonies — Upper and Lower Canada, Nova Scotia, New Brunswick, Prince Edward Island,
+    // Newfoundland and Rupert's Land — were collectively British North America; "Canada"
+    // first named a single polity in 1841. https://en.wikipedia.org/wiki/British_North_America
+    ["Canada", "British North America"],
+    // The Durrani Empire (1747–1823). "Afghanistan" as the state's name belongs to the
+    // Barakzai emirate that followed. https://en.wikipedia.org/wiki/Durrani_Empire
+    ["Afghanistan", "Durrani Empire"],
+    // Ottoman Egypt under Muhammad Ali — an autonomous eyalet, not an independent Egypt.
+    // https://en.wikipedia.org/wiki/Egypt_Eyalet
+    ["Egypt", "Egypt Eyalet"],
+    // "Turan" is a Persian literary term for the lands beyond the Oxus, not a polity. The
+    // territory held the khanates of Khiva, Bukhara and Kokand.
+    // https://en.wikipedia.org/wiki/Turan
+    ["Turan", "central Asian khanates"],
     ["Rwanda", "Kingdom of Rwanda"],       // the precolonial monarchy; the republic dates from 1962
     ["Burundi", "Kingdom of Burundi"],     // the precolonial monarchy (Urundi); the modern state 1962
     ["Antigua and Barbuda", "Antigua"],    // the British colony; the state dates from 1981
@@ -3945,6 +4084,7 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Somalia", "Somali sultanates"],
   ])],
   ["ad1880", new Map<string, string>([
+    ["Manchu Empire", "Qing Empire"],
     ["Rwanda", "Kingdom of Rwanda"],
     ["Burundi", "Kingdom of Burundi"],
     ["Antigua and Barbuda", "Antigua"],
@@ -3954,6 +4094,7 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "New Guinea"],      // no colonial claim yet; PNG is a 1971 name
   ])],
   ["ad1900", new Map<string, string>([
+    ["Manchu Empire", "Qing Empire"],
     ["Kingdom of Hawaii", "Territory of Hawaii"], // overthrown 1893, annexed 1898, a US territory from 30 April 1900
     ["Rwanda", "Kingdom of Rwanda"],
     ["Burundi", "Kingdom of Burundi"],
@@ -3966,6 +4107,11 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "New Guinea"],      // British New Guinea + German New Guinea in 1900
   ])],
   ["ad1914", new Map<string, string>([
+    // The Qing fell in February 1912, so the 1914 map's "Manchu Empire" is the wrong polity
+    // as well as a dated exonym: this territory was the Republic of China, which is what the
+    // era's own entry already describes and flies the five-coloured flag for.
+    // https://en.wikipedia.org/wiki/Xinhai_Revolution
+    ["Manchu Empire", "Republic of China"],
     ["Armenia", "Russian Armenia"],        // Russian rule 1828–1918; the First Republic came in 1918
     ["Azerbaijan", "Russian Transcaucasia"], // the Baku and Elisabethpol Governorates
     ["Georgia", "Russian Georgia"],        // annexed by Russia in 1801; the republic came in 1918
@@ -3985,6 +4131,10 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "New Guinea"],      // Territory of Papua + German New Guinea
   ])],
   ["ad1920", new Map<string, string>([
+    ["Rwanda (Belgium)", "Ruanda-Urundi"],
+    // Italian Libya, the accepted name for the unified colony from 1912.
+    // https://en.wikipedia.org/wiki/Italian_Libya
+    ["Libya (IT)", "Italian Libya"],
     ["Iraq", "Mandatory Mesopotamia"],     // the Kingdom of Iraq was founded in August 1921
     ["Rwanda", "Ruanda-Urundi"],           // Belgian mandate from 1922, one territory until 1962
     ["Burundi", "Ruanda-Urundi"],
@@ -4010,6 +4160,11 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Papua New Guinea", "New Guinea"],      // Territory of Papua + New Guinea mandate
   ])],
   ["ad1938", new Map<string, string>([
+    ["Rwanda (Belgium)", "Ruanda-Urundi"],
+    // Ethiopia was annexed into Italian East Africa in 1936; the occupied territory is
+    // called Italian Ethiopia. https://en.wikipedia.org/wiki/Italian_East_Africa
+    ["Ethiopia (Italy)", "Italian Ethiopia"],
+    ["Eritrea (Italy)", "Italian Eritrea"],
     ["Jordan", "Transjordan"],             // the Emirate of Transjordan; renamed Jordan only in 1949
     ["Rwanda", "Ruanda-Urundi"],
     ["Burundi", "Ruanda-Urundi"],
@@ -4031,6 +4186,24 @@ const POLITY_NAME_FOR_ERA: ReadonlyMap<Era["id"], ReadonlyMap<string, string>> =
     ["Samoa", "Western Samoa"],              // Western Samoa until 1997
   ])],
   ["ad1945", new Map<string, string>([
+    /* --- AUDIT 2026-08-07, goal-2 name pass: the OCCUPATION ZONES ---------------
+     * These are the one case where the dataset's parenthetical is not a redundant ruler
+     * tag but the polity's actual 1945 identity, so stripping it would leave four
+     * identically-named "Germany" polygons and two "Korea"s. Renamed to the accepted
+     * names instead. https://en.wikipedia.org/wiki/Allied-occupied_Germany
+     */
+    ["Germany (USA)", "American occupation zone"],
+    ["Germany (UK)", "British occupation zone"],
+    ["Germany (France)", "French occupation zone"],
+    // https://en.wikipedia.org/wiki/Division_of_Korea — the peninsula was split at the
+    // 38th parallel in August 1945; both zones ended with the 1948 republics.
+    ["Korea (USSR)", "Soviet occupation zone of Korea"],
+    ["Korea (USA)", "American occupation zone of Korea"],
+    // https://en.wikipedia.org/wiki/Occupation_of_Japan — 1945–1952, under SCAP.
+    ["Japan (USA)", "Allied-occupied Japan"],
+    // Ordinary ruler tags, stripped: the "Ruled by" row already carries the power.
+    ["Jamaica (UK)", "Jamaica"],
+    ["Martinique (France)", "Martinique"],
     ["Jordan", "Transjordan"],             // renamed the Hashemite Kingdom of Jordan in 1949
     ["Rwanda", "Ruanda-Urundi"],
     ["Burundi", "Ruanda-Urundi"],
@@ -4322,6 +4495,38 @@ const ERA_RULER: ReadonlyMap<string, string> = new Map([
   ["ad1945|Bangladesh", "United Kingdom"],         // the Bengal Presidency of British India
   ["ad1920|Swaziland", "United Kingdom"],
   ["ad1920|East Prussia", "Germany"],             // a German exclave after the Polish Corridor
+  ["ad1815|Canada", "United Kingdom"],            // British North America: the Canadas, the Maritimes, Rupert's Land
+  ["ad1945|Germany (USA)", "United States"],      // the American occupation zone
+  ["ad1945|Germany (UK)", "United Kingdom"],
+  ["ad1945|Germany (France)", "France"],
+  ["ad1945|Korea (USA)", "United States"],        // US Army Military Government in Korea
+  ["ad1945|Korea (USSR)", "Soviet Union"],        // Soviet Civil Administration
+  /* --- the ex-tagged colonies. Stripping "(France)" from the NAME must not lose the
+   * fact it carried, so each names its ruler here and the panel captions the flag. --- */
+  ["ad1880|Algeria (FR)", "France"],
+  ["ad1880|Senegal (FR)", "France"],
+  ["ad1880|Angola (Portugal)", "Portugal"],
+  ["ad1900|Madagascar (France)", "France"],
+  ["ad1914|Madagascar (France)", "France"],
+  ["ad1920|Madagascar (France)", "France"],
+  ["ad1920|Syria (France)", "France"],
+  ["ad1920|Libya (IT)", "Italy"],
+  ["ad1938|Algeria (France)", "France"],
+  ["ad1938|Madagascar (France)", "France"],
+  ["ad1938|Morocco (France)", "France"],
+  ["ad1938|Syria (France)", "France"],
+  ["ad1938|Angola (Portugal)", "Portugal"],
+  ["ad1938|Mozambique (Portugal)", "Portugal"],
+  // Ethiopia was annexed into Italian East Africa in 1936 and Eritrea had been Italian
+  // since 1890; both flew Italy's flag. https://en.wikipedia.org/wiki/Italian_East_Africa
+  ["ad1938|Ethiopia (Italy)", "Italy"],
+  ["ad1938|Eritrea (Italy)", "Italy"],
+  ["ad1945|Jamaica (UK)", "United Kingdom"],
+  ["ad1945|Martinique (France)", "France"],
+  ["ad1700|New France", "France"],
+  ["ad1880|Mozambique", "Portugal"],
+  ["ad1920|Italian Somaliland", "Italy"],
+  ["ad1938|Italian Somaliland", "Italy"],
   /* --- 1960: the year of African independence, and what was still ruled ------- */
   ["ad1960|Guyana", "United Kingdom"],
   ["ad1960|Belize", "United Kingdom"],
@@ -4352,6 +4557,20 @@ const ERA_RULER: ReadonlyMap<string, string> = new Map([
  * reading SUBJECTO directly, so a refuted ruler can neither lend its flag nor appear
  * in the "Ruled by" row.
  */
+/**
+ * The curated ruling power for this (era, polity), if one is declared — from ERA_RULER or
+ * from the entry's own `ruler`. Exported because the flag resolution must know a ruler
+ * exists BEFORE it tries the modern-country layer: a polity we know was ruled had no flag
+ * of its own, so the modern layer would hand it a successor state's flag, uncaptioned.
+ *
+ * That is not hypothetical. The 1945 occupation zones resolved through the modern layer to
+ * Germany's black-red-gold flag — which the Allies had not restored (it was abolished in
+ * 1935 and readopted in 1949), so the 1949 West German flag flew over the 1945 map.
+ */
+export function curatedRulerFor(name: string, eraId: Era["id"]): string | null {
+  return ERA_RULER.get(`${eraId}|${name}`) ?? polityInfo(name, eraId).ruler ?? null;
+}
+
 export function eraRuler(
   name: string,
   eraId: Era["id"],
@@ -4364,6 +4583,10 @@ export function eraRuler(
   const curated = polityInfo(name, eraId).ruler;
   if (curated) return curated;
   if (!datasetRuler || datasetRuler === name) return null;
+  // A SUBJECTO that is merely another spelling of the polity is not a ruler: the 1994 file
+  // records Belarus as subject to "Byelarus", which would have put a "Ruled by: Belarus" row
+  // on Belarus and made its own flag look inherited.
+  if (polityDisplayName(datasetRuler, eraId) === polityDisplayName(name, eraId)) return null;
   if (FALSE_SUBJECTO.has(`${eraId}|${name}`)) return null;
   return datasetRuler;
 }

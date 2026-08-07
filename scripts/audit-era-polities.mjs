@@ -45,6 +45,7 @@ const {
   curatedFlagValidInEra,
   flagExistedInEra,
   eraRuler,
+  curatedRulerFor,
 } = await import(R("../src/lib/historicalEras.ts"));
 const { POLITY_EXISTENCE, ERA_EXTENT_CAVEATS } = await import(R("../src/data/polityExistence.ts"));
 const { FLAG_ADOPTION_YEAR } = await import(R("../src/data/flagAdoptionYears.ts"));
@@ -90,7 +91,7 @@ function resolveFlag(name, eraId, rulers) {
   if (!suppressed) {
     // A curated `ruler` means the polity had no flag of its own — skip the modern layer,
     // exactly as LearnPage does, so the ruler's captioned flag is what answers.
-    const mn = info.ruler
+    const mn = curatedRulerFor(name, eraId)
       ? null
       : polityModernName(name, eraId) ?? (allow && CODE_BY_NAME.has(name.toLowerCase()) ? name : null);
     if (mn) {
