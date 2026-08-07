@@ -878,10 +878,12 @@ Sardinia are present**, and that **Vietnam is land**.
 
 ### Enforcement
 
-Two checks, both in `npm run flags:check` and in the `check-era-maps` job of the `flag-integrity`
-workflow. That job runs on **Node 24** — `check-historical-maps.mjs` imports `historicalEras.ts`
-directly and needs native TypeScript type-stripping (22.18+); on Node 20 it dies with
-`ERR_UNKNOWN_FILE_EXTENSION`.
+Two checks, both in the `check-era-maps` job of the `flag-integrity` workflow. That job runs on
+**Node 24** — `check-historical-maps.mjs` imports `historicalEras.ts` directly and needs native
+TypeScript type-stripping (22.18+); on Node 20 it dies with `ERR_UNKNOWN_FILE_EXTENSION` before
+running a single assertion. `restore-era-geometry.mjs --check` is also in `npm run flags:check`;
+the landmass raster is **CI-only**, because it takes minutes and would make the local gate
+unusable — that split is deliberate and is listed by `check-ci-coverage.mjs` on every run.
 
 * **`scripts/restore-era-geometry.mjs --check` (`npm run maps:check-geometry`) — the primary guard.**
   It pins every era map to `BASELINE_REF` and **fails the build** on any drift, catching deletion,
@@ -2646,6 +2648,62 @@ backlog would block unrelated work) — it is the audit's own tripwire. Beyond i
 behavioural mandate: a turn that ended by asking whether to continue the sweep, or with a progress
 recap while `subdiv-remaining` was above 0, **or that declared the sweep "complete" while
 `subdiv:audit-omissions` was still dirty**, is a violation of this rule.
+
+## A check that does not RUN in CI is not a gate — hard rule, do not override without approval
+
+**Every check in `npm run flags:check` MUST be invoked by a `run:` step in the `flag-integrity`
+workflow, in a job on a Node version that can load it. A check named only in the workflow's
+`paths:` filter, or only in a comment, gates nothing — and a check that crashes on the job's Node
+before it asserts anything gates nothing either.**
+
+### Why this rule exists
+
+Reported by the owner (2026-08-07) with a screenshot of a red `check-era-maps` job dying on
+`ERR_UNKNOWN_FILE_EXTENSION`. That particular run was stale, but auditing the workflow found the
+two failure modes this rule now forbids, and one of them had shipped a live bug:
+
+1. **Named but never run.** `check-historical-flag-anachronism.mjs` — the gate this file says
+   "**fails the build**", the one that stops South Africa's 1994 flag flying on the 1914 map —
+   appeared in the `paths:` filter and in a comment, and **no step had ever invoked it**. Four more
+   were in the same state: `check-population-freshness.mjs`,
+   `check-disputed-territory-coverage.mjs`, `trim-flag-transparency.mjs --check` and
+   `build-flag-aspect-ratios.mjs --check`. **A `paths:` entry is a trigger, not a gate** — it
+   decides *when* the workflow runs, never *what* it checks.
+2. **The one that was already red.** `build-flag-aspect-ratios.mjs --check` was failing: 34 era
+   flags bundled during the era audit were missing from `flagOverlayAspectRatios.ts`, so Nepal's
+   and Mongolia's pennants (0.8182), Qatar 1936 (2.6776) and the 3:1 Persia 1933 / Montenegro 1993
+   flags all rendered at the **default** ratio — a direct breach of the flag-aspect-ratio hard
+   rule, live on the site, because nothing in CI ran the check that would have caught it.
+3. **Too old a Node to load the check.** Nine scripts `await import()` a `.ts` module directly and
+   need native type-stripping (**22.18+**). On Node 20 they die with `ERR_UNKNOWN_FILE_EXTENSION`
+   *before the first assertion* — the job goes red for a reason unrelated to the data, which is
+   worse than no check, because it trains everyone to ignore a red mark.
+
+### Rules
+
+1. **Adding a check to `flags:check` means adding a `run:` step for it in the same change.** The
+   two lists are one gate; a check in only one of them is a check nobody enforces.
+2. **A `.ts`-importing script goes in a job pinned to Node 22.18+** (today: `check-era-maps`, Node
+   24). Never place one in a Node 20 job, and never leave `node-version` unset for such a job.
+3. **Never satisfy the guard by REMOVING a check from `flags:check`.** If it reports a check
+   ungated, wire the step up. Deleting the check to make the guard green is the failure this rule
+   exists to prevent.
+4. **CI-only checks are legitimate and must stay deliberate.** The landmass raster
+   (`check-era-landmass.mjs`, minutes) and the era-flag sha256 re-verification
+   (`download-era-flags.mjs --check`) run in CI but not in the local gate. The guard prints that
+   split on every run so it stays a decision rather than an accident.
+5. **Never trust this file's own "in the `flag-integrity` workflow" claims without checking.** They
+   drifted for months. `check-ci-coverage.mjs` is now the authority; the prose is documentation.
+
+### Enforcement
+
+`scripts/check-ci-coverage.mjs` (`npm run ci:check-coverage`, in `npm run flags:check` and the
+`check-proportions` CI job) parses `flags:check` and the workflow and **fails the build** when a
+gate script is never invoked by a `run:` step (distinguishing "absent entirely" from the more
+deceptive "named in `paths:`/a comment"), or when a `.ts`-importing script sits in a job whose
+`node-version` is below 22.18 or unset. It deliberately parses the YAML as text so the gate itself
+needs no installed dependency. Both branches are exercised: re-adding the ungated checks and
+planting an era check in the Node 20 job each make it fail.
 
 ## Token-efficient work — hard rule, do not override without approval
 

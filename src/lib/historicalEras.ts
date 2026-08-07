@@ -3231,14 +3231,14 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Dutch Guiana", { modernName: "Netherlands", continent: "South America", note: "Dutch Guiana (modern Suriname) - Dutch until independence in 1975.", population: 60_000 }],
     ["Netherlands Indies", { modernName: "Netherlands", continent: "Southeast Asia", note: "Netherlands East Indies - the Aceh War was in its eighth year.", population: 28_000_000 }],
     // --- Independent states whose 1880 flag is the flag they fly today -----
-    ["Mexico", { modernName: "Mexico", continent: "Mesoamerica", note: "Mexico under Porfirio Diaz. The green-white-red tricolour dates from independence in 1821.", population: 9_400_000 }],
+    ["Mexico", { flag: "historical-flags/mexico-1823.svg", modernName: "Mexico", continent: "Mesoamerica", note: "Mexico under Porfirio Diaz. The green-white-red tricolour dates from independence in 1821.", population: 9_400_000 }],
     ["Argentina", { modernName: "Argentina", continent: "South America", note: "Argentina - Buenos Aires had just been federalised as the national capital (1880). The Sun of May flag dates from 1818.", population: 2_500_000 }],
     ["Empire of Brazil", { flag: "historical-flags/empire-of-brazil.png", continent: "South America", note: "Empire of Brazil under Pedro II. The green flag with the golden lozenge and imperial arms was replaced when Brazil became a republic in 1889.", population: 11_700_000 }],
     ["Chile", { modernName: "Chile", continent: "South America", note: "Chile, at war with Peru and Bolivia in the War of the Pacific (1879-1884). The lone-star flag dates from 1817.", population: 2_200_000 }],
     ["Peru", { modernName: "Peru", continent: "South America", note: "Peru, fighting the War of the Pacific. The red-white-red tricolour dates from 1825.", population: 2_700_000 }],
     ["Bolivia", { modernName: "Bolivia", continent: "South America", note: "Bolivia, which lost its coastline in the War of the Pacific. The red-yellow-green tricolour dates from 1851.", population: 1_200_000 }],
     ["Colombia", { modernName: "Colombia", continent: "South America", note: "The United States of Colombia - the yellow-blue-red tricolour descends from Gran Colombia (1819).", population: 3_000_000 }],
-    ["Venezuela", { modernName: "Venezuela", continent: "South America", note: "Venezuela under Antonio Guzman Blanco; the tricolour descends from Gran Colombia.", population: 2_100_000 }],
+    ["Venezuela", { flag: "historical-flags/venezuela-1863.svg", modernName: "Venezuela", continent: "South America", note: "Venezuela under Antonio Guzman Blanco; the tricolour descends from Gran Colombia.", population: 2_100_000 }],
     ["Ecuador", { modernName: "Ecuador", continent: "South America", note: "Ecuador - the yellow-blue-red flag with the coat of arms was adopted in 1860.", population: 1_100_000 }],
     ["Uruguay", { modernName: "Uruguay", continent: "South America", note: "Uruguay - the Sun of May flag dates from 1830.", population: 440_000 }],
     ["Paraguay", { modernName: "Paraguay", continent: "South America", note: "Paraguay, recovering from the catastrophic War of the Triple Alliance (1864-70).", population: 340_000 }],
@@ -3302,6 +3302,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1900 (high imperialism) overrides ====================================
   ["ad1900", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1863.svg", continent: "South America", note: "Venezuela. The 1863 seven-star pattern; the stars were rearranged into a circle in 1905." }],
+    ["Mexico", { flag: "historical-flags/mexico-1893.svg", continent: "Mesoamerica", note: "Mexico under Porfirio Diaz. The tricolour carried the front-facing eagle of the 1893 pattern; Carranza turned the eagle side-on in 1916." }],
     ["Orange Free State", { flag: "historical-flags/orange-free-state.svg", continent: "Southern Africa", note: "Orange Free State — the Boer republic in the middle of the South African War; Britain annexed it in 1900 and formally in 1902.", population: 200_000 }],
     // AUDIT 2026-08 (goal 3): keyed on the SHOWN name, because the era remaps the dataset's
     // "Kingdom of Brazil" to "Brazil" and polityInfo resolves the shown name first — an entry
@@ -3387,6 +3389,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // the Khedivate, Ethiopia under Menelik II, China still as the early
   // Republic of China after the 1912 revolution, etc.).
   ["ad1914", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1905.svg", continent: "South America", note: "Venezuela under Juan Vicente Gomez. Seven stars in a circle — the 1905 pattern." }],
+    ["Mexico", { flag: "historical-flags/mexico-1893.svg", continent: "Mesoamerica", note: "Mexico during the Revolution. The 1893 pattern, with the front-facing eagle, was still the national flag; Carranza's decree turning the eagle side-on came in 1916." }],
     ["Kuwait", { flag: "historical-flags/kuwait-1914.svg", continent: "Western Asia", note: "Sheikhdom of Kuwait — under British protection since the 1899 agreement, and still nominally an Ottoman district. Its own red flag carried the state's name in Arabic.", population: 35_000 }],
     ["Arabia (Nejd)", { flag: "historical-flags/nejd-1902.svg", continent: "Western Asia", note: "The Emirate of Nejd and Hasa under Ibn Saud — the third Saudi state, which would take the Hejaz in 1925 and become Saudi Arabia in 1932.", population: 1_000_000 }],
     ["Panama", { flag: "historical-flags/panama-1903.svg", continent: "Central America", note: "Republic of Panama — independent of Colombia since 1903, the year the canal treaty was signed; the canal opened in August 1914.", population: 400_000 }],
@@ -3464,6 +3468,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1905.svg", continent: "South America", note: "Venezuela. The 1905 circular seven-star pattern, flown until the 1930 arc." }],
+    ["Mexico", { flag: "historical-flags/mexico-1916.svg", continent: "Mesoamerica", note: "Mexico after the Revolution. Venustiano Carranza's 1916 decree turned the eagle side-on; this pattern flew until 1934." }],
     ["Chinese warlords", { flag: "historical-flags/roc-1912.png", continent: "East Asia", note: "Warlord-era China — Beiyang governments came and went in Beijing while regional militarists held the provinces; the Republic's five-coloured flag flew until 1928.", population: 470_000_000 }],
     ["Ukraine", { flag: "historical-flags/ukraine-1917.svg", continent: "Eastern Europe", note: "The Ukrainian People's Republic — proclaimed in 1917 and fighting Bolshevik, White and Polish armies at once; the Soviets took Kyiv for the last time in 1920.", population: 25_000_000 }],
     ["Kuwait", { flag: "historical-flags/kuwait-1914.svg", continent: "Western Asia", note: "Sheikhdom of Kuwait — a British protectorate; the year of the Battle of Jahra against Ibn Saud's Ikhwan.", population: 50_000 }],
@@ -3527,6 +3533,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1938", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela under Eleazar Lopez Contreras. Seven stars in an arc — the eighth, for Guayana Province, was not added until 2006." }],
+    ["Mexico", { flag: "historical-flags/mexico-1934.svg", continent: "Mesoamerica", note: "Mexico under Lazaro Cardenas. The 1934 pattern, the eagle in profile within a full circular oak-and-laurel wreath." }],
     ["Kuwait", { flag: "historical-flags/kuwait-1921.svg", continent: "Western Asia", note: "Sheikhdom of Kuwait — oil was struck at Burgan in 1938, four years after the concession was signed.", population: 75_000 }],
     ["Qatar", { flag: "historical-flags/qatar-1936.svg", continent: "Western Asia", note: "Sheikhdom of Qatar — a British protectorate since 1916, with the pearl trade collapsed and oil not yet flowing.", population: 25_000 }],
     ["Andorra", { flag: "historical-flags/andorra-1866.svg", continent: "Southern Europe", note: "Principality of Andorra — a co-principality of the French head of state and the Bishop of Urgell. The arms were added to its flag in 1971.", population: 5_000 }],
@@ -3593,6 +3601,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1945 (end of WWII) overrides =========================================
   ["ad1945", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela. The seven-star tricolour adopted in 1930; the eighth star followed in 2006." }],
+    ["Mexico", { flag: "historical-flags/mexico-1934.svg", continent: "Mesoamerica", note: "Mexico. The 1934 pattern was still the national flag; the arms the modern flag carries were adopted in 1968." }],
     // The four occupation zones. Germany had NO national flag from 1945 to 1949 — the
     // black-red-gold was abolished in 1935 and readopted by the Federal Republic in 1949 —
     // so each zone flies its occupying power's flag, captioned.
@@ -3699,6 +3709,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 1960 (Cold War snapshot) overrides ==================================
   ["ad1960", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela in the democratic era after 1958. The flag carried seven stars until 2006." }],
+    ["Mexico", { flag: "historical-flags/mexico-1934.svg", continent: "Mesoamerica", note: "Mexico. The 1934 pattern; Francisco Eppens Helguera's arms, which the modern flag carries, followed on 16 September 1968." }],
     ["Oman", { flag: "historical-flags/muscat-oman.svg", continent: "Western Asia", note: "Sultanate of Muscat and Oman — the Jebel Akhdar war had just ended; the plain red flag flew until 1970.", population: 550_000 }],
     ["Nepal", { flag: "historical-flags/nepal-1743.svg", continent: "South Asia", note: "Kingdom of Nepal — King Mahendra dismissed the elected government in December 1960 and ruled directly. The flag's geometry was fixed by the 1962 constitution.", population: 9_800_000 }],
     ["Ethiopia", { flag: "historical-flags/abyssinia.png", continent: "East Africa", note: "Empire of Ethiopia under Haile Selassie — the Lion of Judah flag flew until the 1974 revolution.", population: 22_000_000 }],
@@ -3781,6 +3793,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1994", new Map<string, PolityInfo>([
+    ["Venezuela", { flag: "historical-flags/venezuela-1930.svg", continent: "South America", note: "Venezuela. Still the seven-star flag — the eighth star was added on 12 March 2006." }],
     ["Oman", { flag: "historical-flags/oman-1970.svg", continent: "Western Asia", note: "Sultanate of Oman under Qaboos bin Said — the flag he introduced in 1970; its proportions were fixed in 1995.", population: 2_000_000 }],
     ["Syria", { flag: "historical-flags/syria-1980.svg", continent: "Western Asia", note: "Syria under Hafez al-Assad — the two-star flag of the former United Arab Republic, readopted in 1980.", population: 14_000_000 }],
     ["Turkish Cypriot-administered area", { flag: "flags/trnc.svg", continent: "Eastern Mediterranean", note: "Northern Cyprus — self-declared in 1983 after the 1974 division of the island, and recognised only by Türkiye.", population: 200_000 }],

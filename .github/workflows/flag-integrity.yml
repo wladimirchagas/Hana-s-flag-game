@@ -40,6 +40,10 @@ on:
       - "src/lib/historicalEras.ts"
       - "scripts/check-historical-maps.mjs"
       - "scripts/check-historical-flag-anachronism.mjs"
+      - "scripts/check-ci-coverage.mjs"
+      - "src/data/flagOverlayAspectRatios.ts"
+      - "package.json"
+      - ".github/workflows/flag-integrity.yml"
       - "src/data/flagAdoptionYears.ts"
       - "scripts/repair-historical-maps.mjs"
       - "scripts/restore-era-geometry.mjs"
@@ -86,6 +90,22 @@ jobs:
       - name: Verify the hierarchy table's type-colour palette has enough colours for every country
         run: node scripts/check-hierarchy-type-colors.mjs
 
+      - name: Verify every merged disputed territory is a complete subdivision of its claimant
+        run: node scripts/check-disputed-territory-coverage.mjs
+
+      - name: Verify no population figure predates its country's latest enumeration
+        run: node scripts/check-population-freshness.mjs
+
+      # This one had never run in CI, and it was RED: 34 era flags bundled during
+      # the era audit were missing from flagOverlayAspectRatios.ts, so Nepal's and
+      # Mongolia's pennants and the 3:1 Persia/Montenegro flags shipped to the live
+      # site at the default ratio.
+      - name: Verify the flag aspect-ratio table covers every bundled flag
+        run: node scripts/build-flag-aspect-ratios.mjs --check
+
+      - name: Verify every flags:check gate actually runs in CI
+        run: node scripts/check-ci-coverage.mjs
+
   check-parent-collision:
     runs-on: ubuntu-latest
     steps:
@@ -114,6 +134,10 @@ jobs:
 
       - name: Verify no capital-city flag duplicates its own subdivision's flag
         run: node scripts/check-capital-subdivision-collision.mjs
+
+      # Needs sharp, so it lives here rather than in check-proportions.
+      - name: Verify no raster flag has a transparent border
+        run: node scripts/trim-flag-transparency.mjs --check
 
   check-era-maps:
     runs-on: ubuntu-latest
@@ -149,6 +173,13 @@ jobs:
 
       - name: Verify no era shows a curated flag outside its sourced date range
         run: node scripts/check-historical-flag-validity.mjs
+
+      # The modern-flag half of the same gate (South Africa's 1994 flag on the 1914
+      # map). It was named in this workflow's paths: filter and in a comment, but no
+      # step ever ran it — a filter is a trigger, not a gate. It imports a .ts module,
+      # so it must stay in this Node 24 job.
+      - name: Verify no era borrows a modern flag that postdates it
+        run: node scripts/check-historical-flag-anachronism.mjs
 
       - name: Verify unmapped land still renders as land in every era
         run: node scripts/check-era-coastline-layer.mjs
