@@ -38,7 +38,13 @@
 
 ### Process & Methodology Feedback
 
-- **Ordering/Priority**: "3 first, then 2, then 1" (user preference on task ordering) [Reported: Session 1]
+- **Ordering/Priority**: ~~"3 first, then 2, then 1"~~ — **SUPERSEDED 2026-08-07.** The owner corrected
+  this to **1, then 2, then 3**: "The most logical order is actually 1 then 2 then 3." It is a
+  dependency chain, not a preference — the land is the canvas, the polity sits on it, the flag is what
+  that polity flew. And within goal 2, **confirm the polity's correct/accepted NAME first**, because
+  the name decides whose borders you are checking and which flag is even a candidate. See the
+  "What the historical eras are FOR" rule in CLAUDE.md, which is now the authority. [Reported: Session 1;
+  corrected 2026-08-07]
 - **Root cause analysis mandate**: "Whenever you fix an issue because you found or because i've provided feedback, YOU MUST ALWAYS understand if the same/a similar issue impacted other entries. Then prevent the root cause issue from ever happening again by updating hard coded rules if necessary. Do this going forward, but also retrospectivelly." [Reported: Session 1] ⚠️ **CRITICAL MANDATE**
 - **Permission & autonomy**: "Yes, I told you earlier not to ask for permission; as long as you're operating within the hard coded rules, go ahead so we can fix things asap" [Reported: Session 1]
 - **Workflow**: "merge first, then continue" (instruction for batch workflow) [Reported: Session 1]
@@ -150,3 +156,44 @@ Per user directive: "Whenever you fix an issue...YOU MUST ALWAYS understand if t
 **Last updated:** 2026-08-04 (Comprehensive triage complete)
 **Extraction method:** Full JSONL chat history (98 user messages) + systematic era-by-era verification
 **Status:** All 24 feedback items triaged and resolved ✓
+
+---
+
+## 2026-08-07 — full three-goal audit of all 21 eras (PR #913)
+
+Audited every era against the three goals now written into `CLAUDE.md`
+("What the historical eras are FOR"). Worksheet: `node scripts/audit-era-polities.mjs [era]`.
+
+### What was wrong, and is now fixed
+
+| # | Finding | Scale |
+|---|---------|-------|
+| 1 | Curated `PolityInfo.flag` images were never era-gated, so one image showed in every era carrying that polity's NAME | **68** wrong renders, 13 eras |
+| 2 | Four `flag:` paths pointed at files never bundled | 7 polities rendered a broken image |
+| 3 | Colonies whose dataset `SUBJECTO` names themselves never reached the ruler layer, so the card was blank | 23–31 per era from 1914 |
+| 4 | Period flags simply not bundled | 37 flags sourced and added |
+| 5 | Duplicate keys **within** one `ERA_OVERRIDES` era map silently kept only the last | **24** shadowed entries |
+| 6 | An era entry keyed by the RAW name is dead code when that era remaps the name (`polityInfo` resolves the SHOWN name first) | **12** dead entries, incl. 1900 Brazil and 1920 Persia |
+| 7 | States named on maps that predate their founding | 1914 Armenia/Azerbaijan/Georgia, 1920 Iraq, 1938–45 Jordan, 1920–60 Rwanda/Burundi, 1900 Hawaii, 1700 Austrian Empire, three Caribbean states |
+| 8 | A polity drawn 17 years after it was conquered | 1938 Ha'il, now disclosed |
+| 9 | Goal 1's RENDER path had no build gate at all | `check-era-coastline-layer.mjs` |
+
+### What is deliberately still flagless (not a gap)
+
+* **The pre-1500 eras** — national flags are a modern invention. The great empires now carry a
+  sourced explanation of what they DID carry (standards, banners, tugs); the rest keep the
+  causeless line, which is the honest output.
+* **Precolonial African polities and Australian Aboriginal nations** (33 in 1880, 30 in 1900,
+  ~250 in 1815) — no flags existed. Do NOT invent any.
+* **The German and Italian statelets of 1815** (Bavaria, Saxony, Tuscany, Two Sicilies, Papal
+  States, Hanover, …) — these DID have flags. Bundling them is a real, sourceable follow-up job;
+  ~25 files. This is the largest remaining *legitimate* coverage gap in the whole feature.
+* **Kuwait 1945** — the 1940–1961 variant is not on Commons as SVG; the 1921–1940 file is bundled
+  and correctly refused for 1945.
+* **Merina Kingdom (Imerina)** — the Commons SVG renders as loose text glyphs, not a flag, so it
+  was fetched and then dropped. Keeps its sourced explanation.
+
+### Standing rules this audit added to CLAUDE.md
+
+1. "What the historical eras are FOR — the three goals every era must satisfy"
+2. "A curated historical flag is an image with a DATE — gate it, or it will fly in the wrong century"

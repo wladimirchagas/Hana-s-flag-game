@@ -79,6 +79,27 @@ export const POLITY_EXISTENCE: ReadonlyMap<string, PolityExistence> = new Map([
   ["Indonesia", { from: 1945, to: 9999, note: "Independence declared 17 August 1945; recognised 1949.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence" }],
   ["Eritrea", { from: 1993, to: 9999, note: "Independent from Ethiopia in 1993. Italian Eritrea (1890–1947) is a different polity.", source: "https://en.wikipedia.org/wiki/Eritrea" }],
   ["Vietnam", { from: 1976, to: 9999, note: "A single Vietnamese state dates from reunification on 2 July 1976; from 1954 the country was divided at the 17th parallel.", source: "https://en.wikipedia.org/wiki/Reunification_Day" }],
+  /* ------------------------------------------------------------------------
+   * AUDIT 2026-08 — states the era maps showed BEFORE they existed.
+   *
+   * Every one of these was found by cross-checking each era's polity NAMEs
+   * against the modern country list: the map labelled a territory with the name
+   * of a state that had not yet been founded at that date. The three Caucasus
+   * republics are the worst of them — in 1914 all three were Russian provinces,
+   * and the map named them as though the 1918 republics already existed.
+   * --------------------------------------------------------------------- */
+  ["Armenia", { from: 1918, to: 9999, note: "The First Republic of Armenia was declared 28 May 1918; in 1914 the territory was the Russian Empire's Erivan Governorate. (Ancient and medieval Armenian kingdoms are a different polity and are shown under their own names.)", source: "https://en.wikipedia.org/wiki/First_Republic_of_Armenia" }],
+  ["Azerbaijan", { from: 1918, to: 9999, note: "The Azerbaijan Democratic Republic was declared 28 May 1918; in 1914 the territory was the Russian Empire's Baku and Elisabethpol Governorates.", source: "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic" }],
+  ["Iraq", { from: 1921, to: 9999, note: "The Kingdom of Iraq was founded 23 August 1921; in 1920 the territory was British-occupied Mesopotamia, becoming a League of Nations mandate that April.", source: "https://en.wikipedia.org/wiki/Mandatory_Iraq" }],
+  ["Jordan", { from: 1949, to: 9999, note: "The Emirate of Transjordan (1921–1946) became the Hashemite Kingdom of Transjordan in 1946 and was renamed Jordan only in 1949.", source: "https://en.wikipedia.org/wiki/Emirate_of_Transjordan" }],
+  ["Rwanda", { from: 1962, to: 9999, note: "Ruanda-Urundi was a Belgian mandate and then UN trust territory from 1922; Rwanda became a separate independent state on 1 July 1962.", source: "https://en.wikipedia.org/wiki/Ruanda-Urundi" }],
+  ["Burundi", { from: 1962, to: 9999, note: "Ruanda-Urundi was a Belgian mandate and then UN trust territory from 1922; Burundi became a separate independent kingdom on 1 July 1962.", source: "https://en.wikipedia.org/wiki/Ruanda-Urundi" }],
+  ["Antigua and Barbuda", { from: 1981, to: 9999, note: "Independent 1 November 1981; before that the islands were the British colony of Antigua, part of the Leeward Islands.", source: "https://en.wikipedia.org/wiki/Antigua_and_Barbuda" }],
+  ["Saint Kitts and Nevis", { from: 1983, to: 9999, note: "Independent 19 September 1983; the colony of Saint Christopher-Nevis-Anguilla ran from 1882 to 1983.", source: "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla" }],
+  ["Saint Vincent and the Grenadines", { from: 1979, to: 9999, note: "Independent 27 October 1979; before that the British colony of Saint Vincent.", source: "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines" }],
+  ["Austrian Empire", { from: 1804, to: 1867, note: "Proclaimed by Francis II on 11 August 1804 and replaced by Austria-Hungary in 1867; in 1700 the Habsburg lands were the Habsburg Monarchy, within the Holy Roman Empire.", source: "https://en.wikipedia.org/wiki/Austrian_Empire" }],
+  ["Kingdom of Hawaii", { from: 1795, to: 1893, note: "Overthrown in January 1893; the Republic of Hawaii followed in 1894, annexation by the United States in 1898 and the Territory of Hawaii on 30 April 1900.", source: "https://en.wikipedia.org/wiki/Territory_of_Hawaii" }],
+  ["Hail", { from: 1836, to: 1921, note: "The Emirate of Jabal Shammar, ruled from Ha'il by the Rashidi dynasty; it surrendered to Ibn Saud on 2 November 1921 and was absorbed into the Sultanate of Nejd.", source: "https://en.wikipedia.org/wiki/Emirate_of_Jabal_Shammar" }],
   ["Rhodesia", { from: 1965, to: 1979, note: "The name of the unilaterally-independent state, 1965–1979. Southern Rhodesia is the earlier colony.", source: "https://en.wikipedia.org/wiki/Rhodesia" }],
 
   /* --------------------------------------------------------------------------
@@ -133,6 +154,9 @@ export type ExtentCaveat = {
 };
 
 export const ERA_EXTENT_CAVEATS: ReadonlyMap<string, ExtentCaveat> = new Map([
+  // The upstream 1938 file still draws the Rashidi emirate of Ha'il, seventeen years after
+  // Ibn Saud took it. Its territory was Saudi by then; we disclose rather than redraw.
+  ["ad1938|Hail", { issue: "The 1938 map still draws the Rashidi emirate of Ha'il as a separate polity.", actual: "Ha'il had been Saudi for seventeen years by 1938 — the emirate surrendered to Ibn Saud on 2 November 1921, and the Kingdom of Saudi Arabia was proclaimed in 1932.", source: "https://en.wikipedia.org/wiki/Emirate_of_Jabal_Shammar" }],
   ["ad1945|India", {
     issue: "This map draws the post-1947 partition border, which did not exist in 1945.",
     actual: "In 1945 the whole subcontinent was British India; partition came on 14 August 1947.",

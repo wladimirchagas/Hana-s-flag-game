@@ -458,6 +458,166 @@ that hard-codes "2020, not 2010" — add a country to `LATEST_ENUMERATION_YEAR` 
 all its subdivisions to that enumeration. Never weaken a floor or remove a country to make the build
 pass; fix the figure instead.
 
+## What the historical eras are FOR — the three goals every era must satisfy — hard rule, do not override without approval
+
+**The Learn-mode time slider exists to answer one question per era: "what did the world look like
+then?" That breaks into exactly three promises, and every era owes all three. The rules that follow
+this section are the machinery for each; this section is what they are FOR, so a future change can be
+judged against the goal and not only against the letter of a check.**
+
+| # | Goal | What it means | Guarded by |
+|---|------|---------------|-----------|
+| **1** | **The natural world is the SAME in every era** | Coastlines, islands and landmasses are physical geography, not history. They must be byte-identical across all 21 eras, and land no polity claims must still LOOK like land. | `restore-era-geometry.mjs --check`, `check-era-landmass.mjs`, and the basemap layer in `HistoricalMap.tsx` |
+| **2** | **The polity is the one that was there, under the name it actually bore — and its borders are the ones accepted for THAT date** | **Confirm the NAME first**, then the extent. Which polity held which ground, called what it was called at that date. Modern borders are not the default and a modern name is not a safe label. | `check-era-anachronism.mjs` + `POLITY_EXISTENCE` / `POLITY_NAME_FOR_ERA` / `ERA_EXTENT_CAVEATS`, and sourced upstream adoption for geometry |
+| **3** | **The flag is the one that flew at THAT date** | Every flag a polity's card shows must be a design that existed at the era's year — whether it comes from a curated image, a modern country's flag, or a ruler's flag. | `check-historical-flag-anachronism.mjs` (modern borrows) + `check-historical-flag-validity.mjs` (curated images) + `check-era-flag-explanations.mjs` |
+
+### Work them in order — 1, then 2, then 3. Each answer is the input to the next.
+
+**This order is not a preference, it is a dependency chain.** The land is the canvas; the polity is
+what sits on it; the flag is what that polity flew. Answer them out of order and you will investigate
+the wrong question with real diligence and get a confidently wrong result.
+
+1. **Goal 1 first — settle the land.** Until the coastline is the imported one and land no polity
+   claims still reads as land, nothing drawn on top can be judged: a polity that appears to end at
+   the sea may simply be missing its neighbour. Goal 1 also **outranks goals 2 and 3 absolutely** —
+   no amount of historical sourcing licenses moving a coastline. A wrong border is a claim someone
+   can check; an invented coastline is invisible.
+2. **Goal 2 second, and within it THE NAME COMES FIRST.** Before asking where a polity's borders ran
+   or which flag it flew, establish **what polity this actually was at this date, and what it was
+   correctly and commonly called then**. The name is not a caption — it is the identity that decides
+   both remaining questions: *whose* borders you are checking, and *which* flag is even a candidate.
+   Only once the name is confirmed does the extent question make sense (and where the extent is wrong
+   and unsourceable, disclose it — never redraw).
+3. **Goal 3 last — the flag follows from the identity.** Ask "what did *this* polity, at *this* date,
+   fly?" A flag can only be judged once steps 1 and 2 have said which polity it belongs to. Goal 3
+   also fails the most silently: a plausible flag decades out of period looks completely fine to
+   everyone, including whoever shipped it. Both flag gates are therefore *deny-by-default* — an
+   undated flag is refused, never allowed.
+
+**A missing thing beats a wrong thing, at every step.** An unmapped region rendered as hatched land,
+a polity with no flag and a dated explanation, and a disclosed "Dating" caveat are all correct
+outcomes. Fabricating to fill a gap is not.
+
+#### Why the name has to come first — every one of these was a name error before it was anything else
+
+The 2026-08 audit found the pivot was almost always the label, and fixing the name changed what the
+right answer to the flag question even was:
+
+| era | dataset NAME | what it actually was | what the name error did downstream |
+|---|---|---|---|
+| 1700 | Austrian Empire | the **Habsburg Monarchy** (the empire was proclaimed 1804) | invited the Austrian Empire's flag question a century early |
+| 1900 | Kingdom of Brazil | the **Old Republic** (the empire fell 1889) | made the imperial flag look like the right answer; the republican flag was correct |
+| 1914 | Armenia, Azerbaijan, Georgia | **Russian governorates** | implied three states that could have flags; in truth the Russian flag flew |
+| 1920 | Iraq | **Mandatory Mesopotamia** (the kingdom came 1921) | implied an Iraqi flag existed; the Union Jack flew |
+| 1938 | Jordan | **Transjordan** (renamed 1949) | the name was wrong but the 1928 flag survived the correction — proof the two questions are separate |
+| 1920–60 | Rwanda, Burundi | one territory, **Ruanda-Urundi** | two independent states implied where one Belgian territory existed |
+| 1900 | Kingdom of Hawaii | the **Territory of Hawaii** (annexed 1898) | same flag, different polity — only the name was wrong |
+
+So: confirm the name, and the border and flag investigations start from the right polity. Skip it,
+and both inherit the error.
+
+**Goal 2 is a LABELLING problem before it is a geometry problem.** Nearly every "this era is wrong"
+finding is fixed by a display-name remap or a disclosed caveat, never by redrawing.
+
+### Auditing an era
+
+`node scripts/audit-era-polities.mjs <eraId>` prints every polity in one era with its display name,
+its existence verdict, and which layer resolved its flag — the worksheet for checking all three goals
+on a single era, in that order: the name column first, then existence, then the flag. `--gaps`
+narrows it to rows that still need work; `--summary` gives one line per era.
+
+### Rules
+
+1. **Work 1 → 2 → 3, and confirm the polity's name before its border or its flag.** A flag or border
+   verified against the wrong identity is worse than an unverified one, because it looks checked.
+2. **Never satisfy one goal by breaking another.** In particular: never fill a goal-2 coverage gap by
+   inventing a polity, and never fix a goal-3 blank by showing a flag from the wrong date.
+3. **Every fix must be checkable by someone who was not there.** That means a source URL in the data
+   (`POLITY_EXISTENCE.source`, `HISTORICAL_FLAG_VALIDITY.source`, `era-flag-sources.json`,
+   `era-gap-fill.json`), not a note in a PR description.
+4. **When you fix one polity, sweep the class.** Every finding in this feature has turned out to be
+   systematic — one ungated flag image meant 68 wrong renders, one name-only scan meant seven wrong
+   capital badges. After any era fix, re-run the audit across ALL eras before calling it done.
+5. **Verify in the running app** (the mandatory visual-verification rule applies), in the same order:
+   open the era you changed and confirm the coastline is intact (goal 1), then that the polity's NAME
+   and note are right for the date (goal 2), then that the flag or its dated explanation follows from
+   that identity (goal 3).
+
+## A curated historical flag is an image with a DATE — gate it, or it will fly in the wrong century — hard rule, do not override without approval
+
+**Every curated flag image an era map can show — `PolityInfo.flag`, whether reached from the polity's
+own registry entry, an alias, or a ruler — MUST carry a sourced from/to window in
+`src/data/historicalFlagValidity.ts`, and MUST pass `curatedFlagValidInEra()` for the era it is shown
+in. A file under `public/historical-flags/` is not safer than a modern flag; it is an image with a
+date, and without a gate it will be shown in every era whose GeoJSON happens to carry that polity's
+NAME.**
+
+### Why this rule exists
+
+`flagExistedInEra()` had gated the four resolution layers that borrow a MODERN country's flag since
+the 1914-South-Africa bug. Layer 1 — the curated image — was never gated at all, because a
+hand-picked historical file *felt* safe. Measured on 2026-08, that shipped **68 anachronistic flag
+renders across 13 eras**, including:
+
+* the **1889 Qing yellow dragon banner over the 1700 map** — imperial China had no national flag at
+  all until the triangular banner of 1862;
+* the **1816 arms of the United Kingdom of Portugal, Brazil and the Algarves on Angola in 1900,
+  1914, 1920, 1960 AND 1994**;
+* **ten Malay state flags on the 1815 map** (Johor 1871, Kedah 1912, Kelantan 1923, Negeri Sembilan
+  1895, Pahang 1903, Perak 1879, Perlis 1870, Selangor 1965, Terengganu 1953) — bundled on the
+  reasoning, written into the download script, that a modern state flag "directly descends from the
+  historical sultanate standard". That is precisely the reasoning this repo rejects everywhere else;
+* Brunei's pre-1906 plain yellow flag from **1500 through 1994**; the 1855 Siamese white-elephant
+  flag in **1815** and in **1920**; the double-headed imperial eagle in **1200**; St George's Cross
+  over England in **1000**; the 1785 Spanish royal ensign on the **1994** map.
+
+Four more entries pointed at files that **were never bundled at all** (`milan.png`, `belgium.png`,
+`germany-imperial.png`, `poland-1919.svg`), so seven polities rendered a broken image while the
+coverage tracker counted them as covered.
+
+### Rules
+
+1. **A flag path with no window is REFUSED in every era.** Deny-by-default, exactly like a country
+   with no `FLAG_ADOPTION_YEAR`. Never "temporarily" exempt a path.
+2. **Never widen a window to make the check pass.** If a flag trips the gate, the flag is from the
+   wrong century: bundle the polity's own period flag, or withhold it with a sourced
+   `noFlagReason`. Widening is the flag-validity equivalent of moving `BASELINE_REF`.
+3. **Every window carries a `source` and a `design` line.** `design` says what the image actually is,
+   including any gap inside the window (the Bourbon white flag: 1590–1790 and 1814–1830) — the panel
+   renders it verbatim when it refuses a flag, so it must read as an explanation, not a label.
+4. **Prefer the later start and the earlier end** when a date is disputed. Over-blocking loses a flag
+   and says why; under-blocking ships a wrong flag silently.
+5. **A new era flag is bundled through `scripts/download-era-flags.mjs`**, with its Commons filename,
+   fetch date and sha256 recorded in `scripts/data/era-flag-sources.json`. Never hand-drop a file into
+   `public/historical-flags/`, and never generate or approximate one — the "never invent flag content"
+   rule is absolute here too.
+6. **A colony that flew its ruler's flag uses `PolityInfo.ruler`, never a bare alias.** `ruler` makes
+   the panel caption it ("Flew the flag of Portugal — it had no national flag of its own at this
+   date") and fills the "Ruled by" row. Routing a colony through `MODERN_NAME_ALIASES` to its ruling
+   power instead shows the ruler's flag with NO caption, which implies the colony had that flag as its
+   own — the thing the historical-era flag rule forbids. Set `ruler` when the dataset's `SUBJECTO` is
+   silent or self-referential (1920 and 1960 Angola and Mozambique are their own `SUBJECTO` though
+   both were Portuguese provinces).
+7. **`ERA_OVERRIDES` must have no duplicate key within one era's map.** It is built from an array of
+   pairs, so a repeated key silently keeps only the LAST — the same shadowing bug the registry rule
+   already forbids. The 2026-08 audit found **24** shadowed entries this way (ad800, ad1500, ad1600,
+   ad1700, ad1945), including one labelled "duplicate entry for emphasis", and a corrected ad1500
+   France entry that had no effect because a later duplicate re-asserted the wrong flag.
+8. **Verify in the running app** (the mandatory visual-verification rule applies): open 1700 and
+   confirm the Manchu Empire explains that China had no flag yet rather than flying the 1889 banner;
+   open 1900 Angola and confirm Portugal's 1830 monarchy flag with the "Flew the flag of Portugal"
+   caption; open 1994 and confirm Spain shows its present flag.
+
+### Enforcement
+
+`scripts/check-historical-flag-validity.mjs` (`npm run eras:check-validity`, in `npm run flags:check`
+and the `check-era-maps` CI job) **fails the build** on: a referenced flag file that is not bundled; a
+referenced flag with no window; any (era, polity) pair that would render a curated flag outside its
+window; and the gate being removed from `LearnPage`/`historicalEras`. `node scripts/download-era-flags.mjs
+--check` re-verifies every bundled SVG against its recorded sha256, so a silently swapped file fails
+too. The duplicate-key guard for `ERA_OVERRIDES` lives in `check-era-flag-explanations.mjs` alongside
+the registry one.
+
 ## Borders between polities change between eras; a landmass's outline does not — hard rule, do not override without approval
 
 > **Borders between polities change between eras; a landmass's outline does not.**

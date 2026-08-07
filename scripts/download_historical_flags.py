@@ -169,7 +169,7 @@ FLAG_MAPPINGS: dict[str, str] = {
     # Brunei Sultanate (pre-1906): plain yellow flag
     # =========================================================================
 
-    "brunei-1815.png": "Old_Flag_of_Brunei.svg",
+    "brunei-1888.png": "Old_Flag_of_Brunei.svg",
 
     # =========================================================================
     # Malay sultanate flags (used for 1815/1850 eras)
@@ -197,7 +197,7 @@ FLAG_MAPPINGS: dict[str, str] = {
 
     # Portugal (medieval / early-modern era): the Quinas banner
     # The traditional five shields design dates back to the 12th century
-    "portugal-1500.png": "Flag_of_Portugal_(1830–1910).svg",
+    "portugal-1830.png": "Flag_of_Portugal_(1830–1910).svg",
 
     # Dutch Republic (1700 era): Prince's Flag / Dutch tricolour
     "dutch-republic.png": "Flag_of_the_Netherlands.svg",
