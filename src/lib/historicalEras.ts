@@ -438,7 +438,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Canaan", { continent: "Levant", note: "Ancient Levantine peoples, ancestors of the Phoenicians.", population: 500_000 }],
   ["Xia", { continent: "East Asia", note: "Legendary first Chinese dynasty (Bronze Age).", population: 1_000_000 }],
   ["Kerma", { continent: "Northeast Africa", note: "Bronze-Age Nubian kingdom in modern Sudan.", population: 100_000 }],
-  ["Achaemenid Empire", { continent: "Western Asia", note: "Persian Empire founded by Cyrus the Great.", population: 50_000_000 }],
+  ["Achaemenid Empire", { noFlagReason: "No flag shown — no Achaemenid flag survives. Xenophon describes the royal standard as a golden eagle mounted on a spear, carried before the king rather than flown as a national flag.", continent: "Western Asia", note: "Persian Empire founded by Cyrus the Great.", population: 50_000_000 }],
   ["Greek city-states", { continent: "Mediterranean", note: "Independent poleis: Athens, Sparta, and many more.", population: 3_000_000 }],
   ["Carthaginian Empire", { continent: "Mediterranean", note: "Phoenician maritime empire centred on Carthage.", population: 4_000_000 }],
   ["Etrurians", { continent: "Mediterranean", note: "Pre-Roman civilisation of central Italy.", population: 1_000_000 }],
@@ -481,7 +481,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Dacia", { continent: "Eastern Europe", note: "Iron-Age kingdom in modern Romania; conquered by Rome in 106 AD.", population: 1_000_000 }],
 
   // === Polities introduced by the 323 BC / 1000 / 1200 / 1600 eras ============
-  ["Empire of Alexander", { continent: "Eurasia", note: "Alexander the Great's empire at his death in 323 BC — Macedonia and Greece to Egypt, Persia and the Indus. His generals divided it within a generation.", population: 30_000_000 }],
+  ["Empire of Alexander", { noFlagReason: "No flag shown — Macedonian armies marched under the Argead royal standard and unit banners; no flag of Alexander's empire survives, and the Vergina Sun is known from royal tombs and coins, not from a flag.", continent: "Eurasia", note: "Alexander the Great's empire at his death in 323 BC — Macedonia and Greece to Egypt, Persia and the Indus. His generals divided it within a generation.", population: 30_000_000 }],
   ["Song Empire", { continent: "East Asia", note: "Song dynasty China — a boom in cities, printing, paper money and iron production; the world's largest economy of its day.", population: 100_000_000 }],
   ["Kimek-Kipchak khaganate", { continent: "Eurasian Steppe", note: "Turkic confederation of the Irtysh and the Kazakh steppe; its Kipchak successors would dominate the Pontic steppe until the Mongols." }],
   ["Kara Khitai Khaganate", { continent: "Central Asia", note: "Qara Khitai (Western Liao) — founded by Khitan refugees from northern China, and conquered by the Mongols in 1218." }],
@@ -612,7 +612,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Hadramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia, whose merchant families settled across the Indian Ocean from East Africa to Indonesia." }],
   ["Emirate of Bin Shal'an", { continent: "Arabia", note: "The Ruwallah emirate of the Al Sha'lan — a Bedouin power of the Syrian desert, controlling the caravan routes between Damascus and Nejd." }],
   ["Emirate of the White Sheep Turks", { continent: "Western Asia", note: "Aq Qoyunlu (\"White Sheep\") — a Turkoman confederation that ruled eastern Anatolia and Persia until the Safavids displaced it in 1501." }],
-  ["Turan", { continent: "Central Asia", note: "Turan — the old Persian name for the steppe lands beyond the Oxus, home to the Turkic and Iranian nomads who bordered the settled Persian world." }],
+  ["Turan", { noFlagReason: "No flag shown — \"Turan\" is the dataset's label for the Central Asian khanates, which each used their own dynastic banners rather than a shared flag.", continent: "Central Asia", note: "Turan — the old Persian name for the steppe lands beyond the Oxus, home to the Turkic and Iranian nomads who bordered the settled Persian world." }],
   ["Mongolia", { continent: "East Asia", note: "Mongolia — under Qing rule until 1911 and a Soviet-aligned People's Republic from 1924; the modern soyombo flag dates from 1992.", noFlag: true, population: 800_000 }],
   ["Papua New Guinea", { continent: "Oceania", note: "New Guinea — Papuan and Austronesian societies of extraordinary linguistic diversity, divided between German, British and later Australian administration before independence in 1975.", noFlag: true }],
   ["Hadhramaut", { continent: "Arabia", note: "Hadhramaut — the incense valleys of southern Arabia and their far-flung merchant diaspora." }],
@@ -649,17 +649,17 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   // the dataset says "Byzantine Empire" and there's no Sassanid Persia.
   ["Eastern Roman Empire", { flag: "historical-flags/byzantine-empire.png", continent: "Eastern Mediterranean", note: "Byzantine Empire; capital Constantinople.", population: 26_000_000 }],
   ["Byzantine Empire", { flag: "historical-flags/byzantine-empire.png", continent: "Eastern Mediterranean", note: "Eastern Roman Empire; capital Constantinople.", population: 12_000_000 }],
-  ["Sasanian Empire", { continent: "Western Asia", note: "Last pre-Islamic Persian empire.", population: 22_000_000 }],
+  ["Sasanian Empire", { noFlagReason: "No flag shown — the Sasanian royal standard, the Derafsh Kaviani, was cut up and its jewels divided after the Arab conquest of 651, and no depiction of it survives from the period.", continent: "Western Asia", note: "Last pre-Islamic Persian empire.", population: 22_000_000 }],
   ["Tang", { continent: "East Asia", note: "Tang dynasty — China's cosmopolitan golden age.", population: 80_000_000 }],
-  ["Abbasid Caliphate", { continent: "Middle East", note: "Islamic caliphate; capital Baghdad.", population: 50_000_000 }],
-  ["Umayyad Caliphate", { continent: "Middle East", note: "Earlier Islamic caliphate; capital Damascus.", population: 33_000_000 }],
+  ["Abbasid Caliphate", { noFlagReason: "No flag shown — the Abbasids' emblem was the plain black banner, carried as a dynastic standard rather than flown as a state flag.", continent: "Middle East", note: "Islamic caliphate; capital Baghdad.", population: 50_000_000 }],
+  ["Umayyad Caliphate", { noFlagReason: "No flag shown — the Umayyads fought under plain white banners, and the Abbasids who replaced them under black; neither was a national flag in the modern sense.", continent: "Middle East", note: "Earlier Islamic caliphate; capital Damascus.", population: 33_000_000 }],
   ["Almohad Caliphate", { continent: "North Africa / Iberia", note: "Almohad Caliphate — a Berber-based Islamic empire that ruled North Africa and Islamic Iberia (12th–13th c.), known for strict theology and Andalusian architecture." }],
   ["Caliphate of Córdoba", { continent: "Iberia", note: "Córdoba Caliphate — the western Islamic caliphate ruling Andalusia from the 10th–11th centuries, centered on the magnificent city of Córdoba with its great mosque and library." }],
   ["Carolingian Empire", { continent: "Western Europe", note: "Charlemagne's Frankish empire.", population: 15_000_000 }],
   ["Frankish Kingdom", { continent: "Western Europe", note: "Merovingian / early Frankish kingdom; ancestor of France + Germany.", population: 6_000_000 }],
   ["Kingdom of France", { continent: "Western Europe", note: "Medieval Kingdom of France — Capetian and later rulers holding the Île-de-France and gradually expanding through feudal claims and conquest. The Fleur-de-lis symbol predates the modern tricolour by centuries.", noFlag: true, population: 15_000_000 }],
   ["Holy Roman Empire", { flag: "historical-flags/holy-roman-empire.png", continent: "Central Europe", note: "Successor to the Carolingian Empire in Central Europe.", population: 26_000_000 }],
-  ["Mongol Empire", { continent: "Eurasia", note: "The largest contiguous land empire in human history.", population: 110_000_000 }],
+  ["Mongol Empire", { noFlagReason: "No flag shown — the Mongols rallied to the tug, a standard of horse-tails on a staff (white in peace, black in war), rather than to a flag.", continent: "Eurasia", note: "The largest contiguous land empire in human history.", population: 110_000_000 }],
   ["Great Khanate", { continent: "East Asia", note: "Yuan dynasty — Kublai Khan's Mongol-ruled China.", population: 85_000_000 }],
   ["Khanate of the Golden Horde", { continent: "Eurasian Steppe", note: "Western successor of the Mongol Empire over Russia + Kazakhstan.", population: 10_000_000 }],
   ["Golden Horde", { continent: "Eurasian Steppe", note: "Western successor of the Mongol Empire over Russia + Kazakhstan.", population: 10_000_000 }],
@@ -707,7 +707,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Tokugawa Shogunate", { flag: "historical-flags/japan-shogunate.png", continent: "East Asia", note: "Edo-period Japan.", population: 32_000_000 }],
   ["Safavid Empire", { continent: "Western Asia", note: "Iranian Shia empire; rival of the Ottomans.", population: 10_000_000 }],
   ["Prussia", { continent: "Central Europe", note: "Kingdom of Prussia — the dominant German state that unified Germany in 1871. Flew the black eagle on white; the German tricolour didn't exist until 1848.", noFlag: true, population: 11_000_000 }],
-  ["Maratha Confederacy", { continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India.", population: 80_000_000 }],
+  ["Maratha Confederacy", { noFlagReason: "No flag shown — Maratha armies fought under the saffron bhagwa dhwaj, a dynastic and religious banner rather than a state flag, and no period-accurate image of it is bundled.", continent: "South Asia", note: "Hindu confederation that broke Mughal power in 18th-century India.", population: 80_000_000 }],
   ["minor Hindu kingdoms", { continent: "South Asia", note: "Small Hindu kingdoms and principalities of the Indian subcontinent — diverse regional powers ruling valleys, plateaus and coastal strips, often tributary to larger empires." }],
   ["Rajput Clans and Small States", { continent: "South Asia", note: "Rajput warrior clans and their feudal states — smaller principalities and fiefdoms of Rajasthan and central India, often at odds with each other and with Delhi's sultans." }],
   ["Viceroyalty of Brazil", { ruler: "Portugal", continent: "South America", note: "United Kingdom of Portugal, Brazil and the Algarves (1815–1825) — Brazil was part of a joint kingdom with Portugal, not yet independent." }],
@@ -989,7 +989,7 @@ export const POLITY_REGISTRY: ReadonlyMap<string, PolityInfo> = new Map([
   ["Oman", { continent: "Arabia", note: "Sultanate of Oman — the Al Said dynasty has flown a red flag since 1744; the modern design with white stripe and emblem was formalised in 1970.", noFlag: true, population: 700_000 }],
 
   // Joseon Korea — no modern-style national flag until the Taegukgi (1882)
-  ["Korea", { continent: "East Asia", note: "Joseon (Yi) dynasty of Korea. No standardised national flag until the Taegukgi was introduced in 1882.", noFlag: true, population: 7_000_000 }],
+  ["Korea", { noFlagReason: "No flag shown — Joseon Korea had no national flag until the Taegukgi was designed in 1882 and adopted in 1883.", continent: "East Asia", note: "Joseon (Yi) dynasty of Korea. No standardised national flag until the Taegukgi was introduced in 1882.", noFlag: true, population: 7_000_000 }],
 
   // Malay peninsula & Borneo sultanates — the same dynasties whose
   // modern Malaysian state flags descend directly from them. Safe to use
@@ -2203,7 +2203,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Seleucid Empire", { continent: "Western Asia / Central Asia", noFlag: true, note: "Seleucid Empire — Hellenistic state controlling much of Alexander's Asian conquests; capital Antioch.", population: 20_000_000 }],
     ["Ptolemaic Egypt", { continent: "North Africa / Eastern Mediterranean", noFlag: true, note: "Ptolemaic Kingdom of Egypt — Hellenized Greek dynasty ruling Egypt; one of the most powerful Hellenistic states.", population: 8_000_000 }],
     ["Antigonid Macedonia", { continent: "Southern Europe", noFlag: true, note: "Antigonid Kingdom of Macedonia — Hellenistic Macedonian state; power base in Greece.", population: 2_000_000 }],
-    ["Maurya Empire", { continent: "South Asia", noFlag: true, note: "Maurya Empire under Ashoka — dominant Indian empire established shortly after Alexander's invasion; Ashoka's reign (268-232 BC) was the peak.", population: 50_000_000 }],
+    ["Maurya Empire", { noFlagReason: "No flag shown — Mauryan sources describe royal and army standards bearing animal and wheel emblems; no flag of the empire survives.", continent: "South Asia", noFlag: true, note: "Maurya Empire under Ashoka — dominant Indian empire established shortly after Alexander's invasion; Ashoka's reign (268-232 BC) was the peak.", population: 50_000_000 }],
     ["Greek city-states", { continent: "Southern Europe / Eastern Mediterranean", noFlag: true, note: "Independent Greek city-states and leagues — Athens, Sparta, Corinth, and others; still politically autonomous but weakened.", population: 3_000_000 }],
     ["Roman Republic", { continent: "Southern Europe", noFlag: true, note: "Roman Republic — expanding influence; beginning to dominate the Mediterranean.", population: 4_000_000 }],
     ["Carthaginian Republic", { continent: "North Africa / Western Mediterranean", noFlag: true, note: "Carthaginian Republic — at height of power; major naval force; rivalry with Rome beginning.", population: 2_000_000 }],
@@ -2241,9 +2241,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
 
   // === 100 AD (Roman Classical Period) overrides ============================
   ["ad100", new Map<string, PolityInfo>([
-    ["Roman Empire", { continent: "Europe / Western Asia / North Africa", noFlag: true, note: "Roman Empire under Trajan — at its greatest territorial extent after the conquest of Dacia (106 AD). Capital Rome.", population: 70_000_000 }],
+    ["Roman Empire", { flag: "historical-flags/roman-empire.png", continent: "Europe / Western Asia / North Africa", note: "Roman Empire under Trajan — at its greatest territorial extent after the conquest of Dacia (106 AD). Capital Rome.", population: 70_000_000 }],
     ["Parthian Empire", { continent: "Western Asia", noFlag: true, note: "Parthian Empire — dominant power in Persia and Central Asia, rival to Rome. Capital Ctesiphon.", population: 15_000_000 }],
-    ["Han Dynasty", { continent: "East Asia", noFlag: true, note: "Han Dynasty China during the Eastern Han period — politically fragmented but culturally unified under the Han.", population: 55_000_000 }],
+    ["Han Dynasty", { noFlagReason: "No flag shown — Han armies carried silk banners identifying each unit and commander. China had no national flag at all until the Qing adopted the dragon banner in 1862.", continent: "East Asia", noFlag: true, note: "Han Dynasty China during the Eastern Han period — politically fragmented but culturally unified under the Han.", population: 55_000_000 }],
     ["Kushan Empire", { continent: "Central Asia / South Asia", noFlag: true, note: "Kushan Empire — controlled the Silk Road from Central Asia through northern India; Kanishka (127-150 AD) was a great patron of Buddhism.", population: 20_000_000 }],
     ["Satavahana Empire", { continent: "South Asia", noFlag: true, note: "Satavahana Empire of southern India — contemporaneous with the Kushans in northern India; controlled major sea trade routes.", population: 15_000_000 }],
     ["Axum Kingdom", { continent: "East Africa", noFlag: true, note: "Axumite Kingdom in the Horn of Africa — rising power controlling Red Sea trade; later became a Christian empire (4th century).", population: 3_000_000 }],
@@ -2299,8 +2299,8 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Visigothic Kingdom", { continent: "Iberia / Southern France", noFlag: true, note: "Visigothic Kingdom established in Hispania — Germanic tribe that settled within Roman borders; capital Toledo.", population: 2_000_000 }],
     ["Frankish Kingdoms", { continent: "Western Europe", noFlag: true, note: "Frankish Kingdoms in Gaul — not yet united; still evolving toward the future Merovingian empire.", population: 3_000_000 }],
     ["Ostrogothic Kingdom", { continent: "Italy", noFlag: true, note: "Ostrogothic Kingdom in Italy — Germanic kingdom emerging in the Italian peninsula.", population: 2_000_000 }],
-    ["Sasanian Empire", { continent: "Western Asia / Central Asia", noFlag: true, note: "Sasanian (Persian) Empire — at its height; rival to Rome for control of the Near East and trade routes.", population: 30_000_000 }],
-    ["Gupta Empire", { continent: "South Asia", noFlag: true, note: "Gupta Empire in India — in decline by 400 AD but still the dominant Indian power; known for art and science.", population: 40_000_000 }],
+    ["Sasanian Empire", { noFlagReason: "No flag shown — the Sasanian royal standard, the Derafsh Kaviani, was cut up and its jewels divided after the Arab conquest of 651, and no depiction of it survives from the period.", continent: "Western Asia / Central Asia", noFlag: true, note: "Sasanian (Persian) Empire — at its height; rival to Rome for control of the Near East and trade routes.", population: 30_000_000 }],
+    ["Gupta Empire", { noFlagReason: "No flag shown — the Guptas used the Garuda standard as a dynastic emblem; no flag of the empire survives.", continent: "South Asia", noFlag: true, note: "Gupta Empire in India — in decline by 400 AD but still the dominant Indian power; known for art and science.", population: 40_000_000 }],
     ["Northern Wei", { continent: "East Asia", noFlag: true, note: "Northern Wei Dynasty in China — Xiongnu (Xianbei) origin; controlled northern China amid the period of disunion.", population: 20_000_000 }],
     ["Liu Song", { continent: "East Asia", noFlag: true, note: "Liu Song Dynasty in southern China — one of the Southern Dynasties during the Six Dynasties period.", population: 8_000_000 }],
     ["Koguryo Empire", { continent: "East Asia", noFlag: true, note: "Koguryo (Goguryeo) Empire in Korea — dominant Korean power; frequently in conflict with China.", population: 4_000_000 }],
@@ -2346,14 +2346,14 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Visigothic Spain", { continent: "Iberia", noFlag: true, note: "Visigothic Kingdom of Spain — 6th century, the realm of the Liuvigild dynasty. Conquered by Islamic forces in 711.", population: 4_000_000 }],
     ["Ostrogothic Kingdom", { continent: "Southern Europe", noFlag: true, note: "Ostrogothic Kingdom of Italy — under Theodoric and successors; would be conquered by the Eastern Roman Empire in the Gothic War (535–554).", population: 3_000_000 }],
     // Middle East 600 AD
-    ["Sasanian Empire", { continent: "Western Asia", noFlag: true, note: "Sasanian (Sassanid) Empire — last Persian empire before Arab conquest; at its 600 AD height under Khosrau II.", population: 50_000_000 }],
+    ["Sasanian Empire", { noFlagReason: "No flag shown — the Sasanian royal standard, the Derafsh Kaviani, was cut up and its jewels divided after the Arab conquest of 651, and no depiction of it survives from the period.", continent: "Western Asia", noFlag: true, note: "Sasanian (Sassanid) Empire — last Persian empire before Arab conquest; at its 600 AD height under Khosrau II.", population: 50_000_000 }],
     ["Arabian Peninsula", { continent: "Arabia", noFlag: true, note: "Pre-Islamic Arabian Peninsula — a century before Prophet Muhammad. Divided among various Arab tribes and kingdoms.", population: 8_000_000 }],
     // India 600 AD
     ["Chalukya Empire", { continent: "South Asia", noFlag: true, note: "Chalukya Empire of the Deccan — major power in 6th century India under Pulakeshin II.", population: 15_000_000 }],
     ["Harsha Empire", { continent: "South Asia", noFlag: true, note: "Empire of Harsha — the last great pre-Islamic Indian empire; capital Kanauj. Dominated 606–647 AD.", population: 25_000_000 }],
     ["Pallava Kingdom", { continent: "South Asia", noFlag: true, note: "Pallava Empire of southern India — rivals to the Chalukyas; built the temples of Mahabalipuram.", population: 10_000_000 }],
     // China 600 AD
-    ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — founded 618 AD, but by 600 AD the Sui dynasty ruled. The Tang would become one of history's greatest empires.", population: 50_000_000 }],
+    ["Tang Dynasty", { noFlagReason: "No flag shown — Tang armies used unit banners and imperial standards; China had no national flag until 1862.", continent: "East Asia", noFlag: true, note: "Tang dynasty China — founded 618 AD, but by 600 AD the Sui dynasty ruled. The Tang would become one of history's greatest empires.", population: 50_000_000 }],
     ["Sui Dynasty", { continent: "East Asia", noFlag: true, note: "Sui dynasty China (589–618) — brief period between the Southern and Northern Dynasties and the Tang.", population: 45_000_000 }],
     ["Southeast Asian kingdoms", { continent: "Southeast Asia", noFlag: true, note: "Khmer Empire, Sailendra maritime empire, and other Southeast Asian states at 600 AD.", population: 8_000_000 }],
     ["Aksumite Empire", { continent: "East Africa", noFlag: true, note: "Aksumite Kingdom of the Horn of Africa — at its height in 600 AD; major Red Sea power.", population: 5_000_000 }],
@@ -2392,12 +2392,12 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   // Holy Roman Empire: the post-1400 imperial banner is the global entry;
   // in 800 AD the Carolingian Empire was just forming (HRE formally 962 AD).
   ["ad800", new Map<string, PolityInfo>([
-    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 800 AD — Macedonian dynasty era. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 461 years too late.", population: 20_000_000 }],
+    ["Byzantine Empire", { noFlagReason: "No flag shown for this date — Byzantine armies used the labarum and Chi-Rho military standards; the tetragrammatic cross flag bundled for the later empire is the Palaiologan dynasty's, from 1261 onward.", continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire in 800 AD — Macedonian dynasty era. No standardised flag; the Palaiologos double-eagle (our only Byzantine PNG) is 461 years too late.", population: 20_000_000 }],
     ["Holy Roman Empire", { continent: "Central Europe", noFlag: true, note: "Holy Roman Empire — Carolingian/Ottonian era, 800–962 AD. The post-1400 imperial banner (our only HRE PNG) is 400+ years too late for this dynasty.", population: 20_000_000 }],
     // Western Europe 800 AD — age of Charlemagne
     ["Frankish Empire", { continent: "Western Europe", noFlag: true, note: "Carolingian Empire of Charlemagne — crowned Holy Roman Emperor in 800 AD. No standardised flag.", population: 8_000_000 }],
-    ["Abbasid Caliphate", { continent: "Western Asia", noFlag: true, note: "Abbasid Caliphate — height of Islamic empire; capital Baghdad, founded 762 AD. No national flag in modern sense.", population: 50_000_000 }],
-    ["Umayyad Caliphate", { continent: "Western Asia", noFlag: true, note: "Umayyad Caliphate — ruling the western Islamic world; rival to the Abbasids after the Abbasid Revolution (750 AD).", population: 15_000_000 }],
+    ["Abbasid Caliphate", { noFlagReason: "No flag shown — the Abbasids' emblem was the plain black banner, carried as a dynastic standard rather than flown as a state flag.", continent: "Western Asia", noFlag: true, note: "Abbasid Caliphate — height of Islamic empire; capital Baghdad, founded 762 AD. No national flag in modern sense.", population: 50_000_000 }],
+    ["Umayyad Caliphate", { noFlagReason: "No flag shown — the Umayyads fought under plain white banners, and the Abbasids who replaced them under black; neither was a national flag in the modern sense.", continent: "Western Asia", noFlag: true, note: "Umayyad Caliphate — ruling the western Islamic world; rival to the Abbasids after the Abbasid Revolution (750 AD).", population: 15_000_000 }],
     // India 800 AD
     ["Gurjara-Pratihara", { continent: "South Asia", noFlag: true, note: "Gurjara-Pratihara Empire of northern India — one of the three great powers battling for supremacy in the Tripartite Struggle.", population: 40_000_000 }],
     ["Rashtrakuta Empire", { continent: "South Asia", noFlag: true, note: "Rashtrakuta Empire of the Deccan — at its 8th-9th century height, rivals to the Pratiharas.", population: 35_000_000 }],
@@ -2406,7 +2406,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Sailendra Empire", { continent: "Southeast Asia", noFlag: true, note: "Sailendra maritime empire — built Borobudur temple in Java. Dominated Southeast Asian trade.", population: 5_000_000 }],
     ["Khmer Empire", { continent: "Southeast Asia", noFlag: true, note: "Angkor period Khmer Empire — capital Angkor; builders of the great temples (Angkor Wat built later, 12th century).", population: 2_000_000 }],
     // China 800 AD
-    ["Tang Dynasty", { continent: "East Asia", noFlag: true, note: "Tang dynasty China — height of the golden age under various emperors; thriving international trade along the Silk Road.", population: 50_000_000 }],
+    ["Tang Dynasty", { noFlagReason: "No flag shown — Tang armies used unit banners and imperial standards; China had no national flag until 1862.", continent: "East Asia", noFlag: true, note: "Tang dynasty China — height of the golden age under various emperors; thriving international trade along the Silk Road.", population: 50_000_000 }],
     // Americas 800 AD
     ["Maya civilization", { continent: "Mesoamerica", noFlag: true, note: "Maya civilization at height of the Classic period (ended c. 900 AD) — great city-states like Tikal and Copan.", population: 3_000_000 }],
     ["Ummayad Caliphate (Spain)", { continent: "Iberia", noFlag: true, note: "Emirate of Córdoba in Al-Andalus (Islamic Spain) — caliphate proclaimed in 929, but this is the early 9th century predecessor state.", population: 3_000_000 }],
@@ -2452,7 +2452,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Kingdom of Poland", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Poland under the Piast dynasty — newly emerged as a Catholic state under Bolesław I the Brave.", population: 2_000_000 }],
     ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary under the Arpád dynasty — newly established Catholic kingdom; bulwark against steppe invasions.", population: 2_000_000 }],
     ["Kievan Rus", { continent: "Eastern Europe", noFlag: true, note: "Kievan Rus — medieval federation of East Slavic city-states; capital Kiev (Kyiv). Christianized in 988 AD.", population: 5_000_000 }],
-    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — under the Macedonian dynasty; at territorial height after reconquests in Balkans and Anatolia.", population: 14_000_000 }],
+    ["Byzantine Empire", { noFlagReason: "No flag shown for this date — Byzantine armies used the labarum and Chi-Rho military standards; the tetragrammatic cross flag bundled for the later empire is the Palaiologan dynasty's, from 1261 onward.", continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — under the Macedonian dynasty; at territorial height after reconquests in Balkans and Anatolia.", population: 14_000_000 }],
     ["Venice", { continent: "Southern Europe", noFlag: true, note: "Republic of Venice — emerging as a major Mediterranean maritime power and trading republic.", population: 100_000 }],
     ["Papal States", { continent: "Southern Europe", noFlag: true, note: "Papal States (Kingdom of the Pope) — temporal domain of the Papacy in central Italy.", population: 500_000 }],
     ["Chola Empire", { continent: "South Asia", noFlag: true, note: "Chola Empire at imperial height under Rajendra Chola I — greatest maritime power in the Indian Ocean.", population: 20_000_000 }],
@@ -2481,7 +2481,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Kingdom of Poland", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Poland — fragmented into competing principalities after the Piast dynasty's decline.", population: 2_500_000 }],
     ["Kingdom of Hungary", { continent: "Eastern Europe", noFlag: true, note: "Kingdom of Hungary — under the Arpád dynasty; expanding territorial power in Central Europe.", population: 3_000_000 }],
     ["Kievan Rus", { continent: "Eastern Europe", noFlag: true, note: "Kievan Rus — fragmenting into competing principalities; Mongol invasions would begin in 1237.", population: 7_000_000 }],
-    ["Byzantine Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — weakened by the Fourth Crusade (1204); Constantinople would fall to Crusaders.", population: 8_000_000 }],
+    ["Byzantine Empire", { noFlagReason: "No flag shown for this date — Byzantine armies used the labarum and Chi-Rho military standards; the tetragrammatic cross flag bundled for the later empire is the Palaiologan dynasty's, from 1261 onward.", continent: "Eastern Mediterranean", noFlag: true, note: "Byzantine Empire — weakened by the Fourth Crusade (1204); Constantinople would fall to Crusaders.", population: 8_000_000 }],
     ["Latin Empire", { continent: "Eastern Mediterranean", noFlag: true, note: "Latin Empire — Crusader state established in Constantinople after the Fourth Crusade (1204-1261).", population: 1_500_000 }],
     ["Sultanate of Delhi", { continent: "South Asia", noFlag: true, note: "Delhi Sultanate — Islamic state in northern India; replacing Hindu kingdoms. Iltutmish was ruling around 1211-1236.", population: 20_000_000 }],
     ["Chola Empire", { continent: "South Asia", noFlag: true, note: "Late Chola Empire — declining but still influential in South India; Chola power would end by mid-13th century.", population: 10_000_000 }],
@@ -2587,7 +2587,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Japan 1500 = Sengoku (Warring States)
     ["Japan", { modernName: "Japan", continent: "East Asia", note: "Sengoku (Warring States) Japan — a century of civil war between rival warlords (daimyo). The Hinomaru pre-dates this era.", population: 15_000_000 }],
     // Korea 1500 = Joseon dynasty
-    ["Korea", { continent: "East Asia", note: "Joseon dynasty Korea — classical period; Hangul script and the great King Sejong. No national flag until the Taegukgi in 1882.", noFlag: true, population: 8_000_000 }],
+    ["Korea", { noFlagReason: "No flag shown — Joseon Korea had no national flag until the Taegukgi was designed in 1882 and adopted in 1883.", continent: "East Asia", note: "Joseon dynasty Korea — classical period; Hangul script and the great King Sejong. No national flag until the Taegukgi in 1882.", noFlag: true, population: 8_000_000 }],
     // Tibet 1500 = Phagmodrupa/Rinpungpa
     ["Tibet", { continent: "Central Asia", note: "Tibet in 1500 was under the Rinpungpa Tibetan warlords; nominally under the Ming but practically independent.", noFlag: true, population: 2_000_000 }],
     // Malacca 1500 = about to fall to Portugal (fell 1511)
@@ -2868,7 +2868,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Japan 1700 = Tokugawa Shogunate (covered by "Tokugawa Shogunate" entry but dataset says "Japan")
     ["Japan", { flag: "historical-flags/japan-shogunate.png", continent: "East Asia", note: "Tokugawa Shogunate Japan — the Edo period (1603–1868); peace and isolation policy (sakoku). The Tokugawa mon (three hollyhock leaves) was the shogunate's emblem.", population: 28_000_000 }],
     // Korea 1700 = Joseon dynasty
-    ["Korea", { continent: "East Asia", note: "Joseon dynasty Korea in 1700 — a sophisticated Confucian kingdom; no national flag until the Taegukgi in 1882.", noFlag: true, population: 7_000_000 }],
+    ["Korea", { noFlagReason: "No flag shown — Joseon Korea had no national flag until the Taegukgi was designed in 1882 and adopted in 1883.", continent: "East Asia", note: "Joseon dynasty Korea in 1700 — a sophisticated Confucian kingdom; no national flag until the Taegukgi in 1882.", noFlag: true, population: 7_000_000 }],
     // Morocco 1700 = Alaouite dynasty
     ["Morocco", { continent: "North Africa", note: "Alaouite Sultanate of Morocco — the same dynasty that rules today, established in 1631. Flew a plain red flag; the green pentagram was added in 1915.", noFlag: true, population: 2_500_000 }],
     // Portuguese Brazil 1700 = major colony. No accurate historical flag available
@@ -3104,7 +3104,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // Japan in 1815 = Tokugawa Shogunate. Use the Tokugawa shogunate banner.
     ["Japan", { flag: "historical-flags/japan-shogunate.png", continent: "East Asia", note: "Tokugawa Shogunate Japan — late Edo period. The Tokugawa mon (three hollyhock leaves) was the shogunate's emblem; the Hinomaru became the official national flag only in 1870.", population: 30_000_000 }],
     // Korea in 1815 = Joseon (Yi) dynasty, no national flag.
-    ["Korea", { continent: "East Asia", note: "Joseon (Yi) dynasty of Korea — no standardised national flag until the Taegukgi in 1882.", noFlag: true, population: 7_000_000 }],
+    ["Korea", { noFlagReason: "No flag shown — Joseon Korea had no national flag until the Taegukgi was designed in 1882 and adopted in 1883.", continent: "East Asia", note: "Joseon (Yi) dynasty of Korea — no standardised national flag until the Taegukgi in 1882.", noFlag: true, population: 7_000_000 }],
     // Afghanistan — no standardised flag.
     ["Afghanistan", { continent: "Central Asia", note: "Durrani/Barakzai emirate — no standardised national flag in this era.", noFlag: true, population: 4_000_000 }],
     // Cambodia — no flag before French colonisation.
@@ -3127,9 +3127,9 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     // United Kingdom of Great Britain and Ireland — consolidated feature in world_1815.geojson
     ["United Kingdom of Great Britain and Ireland", { modernName: "United Kingdom", continent: "Western Europe", note: "United Kingdom of Great Britain and Ireland — the union of England, Scotland, Ireland and Wales under the Union Jack (adopted 1801 after the Act of Union).", population: 18_500_000 }],
     // Manchu Empire (Qing China) in 1815 — no standardised national flag yet
-    ["Manchu Empire", { noFlag: true, continent: "East Asia", note: "Qing China under the Jiaqing and Daoguang emperors — no standardised national flag. The Yellow Dragon banner wouldn't be adopted until 1889.", population: 360_000_000 }],
+    ["Manchu Empire", { noFlagReason: "No flag shown — imperial China had no national flag at this date. The Qing adopted their first, the triangular yellow dragon banner, only in 1862.", noFlag: true, continent: "East Asia", note: "Qing China under the Jiaqing and Daoguang emperors — no standardised national flag. The Yellow Dragon banner wouldn't be adopted until 1889.", population: 360_000_000 }],
     // --- German Confederation states (post-Congress of Vienna, 1815) -----------
-    ["Austrian Empire", { noFlag: true, continent: "Central Europe", note: "Austrian Empire — dominant German state; President of the German Confederation.", population: 14_000_000 }],
+    ["Austrian Empire", { flag: "historical-flags/austrian-empire.png", noFlag: true, continent: "Central Europe", note: "Austrian Empire — dominant German state; President of the German Confederation.", population: 14_000_000 }],
     ["Bavaria", { noFlag: true, continent: "Central Europe", note: "Kingdom of Bavaria — major German state post-Vienna Congress; retained independence.", population: 3_500_000 }],
     ["Württemberg", { noFlag: true, continent: "Central Europe", note: "Kingdom of Württemberg — German state; promoted to kingdom status at the Congress of Vienna.", population: 1_500_000 }],
     ["Saxony", { noFlag: true, continent: "Central Europe", note: "Kingdom of Saxony — major German power; one of the original members of the German Confederation.", population: 2_000_000 }],
@@ -3151,7 +3151,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
     ["Belgium", { noFlag: true, continent: "Western Europe", note: "United Kingdom of the Netherlands — Belgium remained under Dutch rule; independence in 1830.", population: 3_600_000 }],
     // --- Iberian & smaller European states ---------------------------------------
     ["Norway", { noFlag: true, continent: "Northern Europe", note: "Kingdom of Norway — personal union with Sweden (1814-1905); nominally independent.", population: 900_000 }],
-    ["Denmark", { noFlag: true, continent: "Northern Europe", note: "Kingdom of Denmark — European power; ruled Norway and various European and Atlantic territories.", population: 900_000 }],
+    ["Denmark", { flag: "flags/dk.svg", noFlag: true, continent: "Northern Europe", note: "Kingdom of Denmark — European power; ruled Norway and various European and Atlantic territories.", population: 900_000 }],
     ["Greece", { noFlag: true, continent: "SE Europe", note: "Ottoman Greece — enslaved Ottoman province; War of Independence 1821-1829 lay just ahead.", population: 800_000 }],
     ["Serbia", { noFlag: true, continent: "SE Europe", note: "Principality of Serbia — Ottoman subject; autonomy growing after 1815 revolts against Ottoman rule.", population: 400_000 }],
     ["Wallachia", { noFlag: true, continent: "SE Europe", note: "Principality of Wallachia — Ottoman vassal in the Balkans; Romanian-speaking principality.", population: 1_500_000 }],
@@ -3461,6 +3461,7 @@ const ERA_OVERRIDES: ReadonlyMap<Era["id"], ReadonlyMap<string, PolityInfo>> = n
   ])],
 
   ["ad1920", new Map<string, PolityInfo>([
+    ["Ukraine", { flag: "historical-flags/ukraine-1917.svg", continent: "Eastern Europe", note: "The Ukrainian People's Republic — proclaimed in 1917 and fighting Bolshevik, White and Polish armies at once; the Soviets took Kyiv for the last time in 1920.", population: 25_000_000 }],
     ["Kuwait", { flag: "historical-flags/kuwait-1914.svg", continent: "Western Asia", note: "Sheikhdom of Kuwait — a British protectorate; the year of the Battle of Jahra against Ibn Saud's Ikhwan.", population: 50_000 }],
     ["Georgia", { flag: "historical-flags/georgia-1918.svg", continent: "Western Asia", note: "Democratic Republic of Georgia — independent since May 1918, and occupied by the Red Army in February 1921.", population: 2_500_000 }],
     ["Panama", { flag: "historical-flags/panama-1903.svg", continent: "Central America", note: "Republic of Panama — the canal in American hands under the 1903 treaty. The flag's proportions were standardised in 1925.", population: 450_000 }],

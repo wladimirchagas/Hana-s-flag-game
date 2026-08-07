@@ -349,6 +349,12 @@
       "why": "1945 Syria showed no flag; the green-white-black flag with three red stars flew 1930–1958 and again 1961–1963.",
       "sha256": "7e88830b9b10b58141612269ca4a0a3946dee1ce0b3ddc4cbc787272fbda73af",
       "fetched": "2026-08-07"
+    },
+    "ukraine-1917.svg": {
+      "commons": "Flag of Ukraine (1917–1921).svg",
+      "why": "1920 Ukraine showed no flag though the Ukrainian People's Republic flew the blue-and-yellow bicolour; the modern adoption year is 1992.",
+      "sha256": "ce95c6c7710708ac921e46ebdcc7b101246727bb8c228d2961d3727b1968cd6e",
+      "fetched": "2026-08-07"
     }
   }
 }

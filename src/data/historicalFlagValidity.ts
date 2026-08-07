@@ -104,6 +104,10 @@ export const HISTORICAL_FLAG_VALIDITY: ReadonlyMap<string, FlagValidity> = new M
   // arms then stood until the monarchy fell in 1792.
   ["historical-flags/france-royal-banner.svg", { from: 1376, to: 1792, design: "Royal banner of France — azure with three gold fleurs-de-lis (\"France moderne\"), from Charles V's reduction of the semé in 1376.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_France" }],
 
+  // Unchanged national flags, referenced from public/flags/ so the pre-1880 eras (which
+  // allow no modern-flag fallback at all) can still show a flag that demonstrably flew.
+  // Dated to the design, not to a modern standardisation.
+  ["flags/dk.svg", { from: 1625, to: 9999, design: "The Dannebrog — the red flag with a white Nordic cross, in continuous use as Denmark's flag since the 17th century and the oldest national flag still flown.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" }],
   /* ------------------------------------------------- 18th–19th century */
   ["historical-flags/portugal-1750.svg", { from: 1750, to: 1816, design: "Kingdom of Portugal — white with the crowned arms, flown until the United Kingdom of Portugal, Brazil and the Algarves adopted its own arms in 1816.", source: "https://en.wikipedia.org/wiki/Flag_of_Portugal" }],
   ["historical-flags/siam-1782.svg", { from: 1782, to: 1817, design: "Early Rattanakosin state flag — red with a white chakra.", source: "https://en.wikipedia.org/wiki/Flag_of_Thailand" }],
@@ -112,6 +116,7 @@ export const HISTORICAL_FLAG_VALIDITY: ReadonlyMap<string, FlagValidity> = new M
   ["historical-flags/persia-1886.svg", { from: 1886, to: 1907, design: "Qajar Persia — green-white-red with the Lion and Sun, 1886 pattern.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" }],
   ["historical-flags/brunei-1906.svg", { from: 1906, to: 1959, design: "Brunei — yellow with white and black diagonal stripes, added on becoming a British protectorate in 1906; the crest followed in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" }],
   ["historical-flags/yemen-1918.svg", { from: 1918, to: 1927, design: "Kingdom of Yemen — red with the white inscription, flown from the imamate's independence in 1918 until the 1927 sword-and-stars flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" }],
+  ["historical-flags/ukraine-1917.svg", { from: 1917, to: 1921, design: "Ukrainian People's Republic — the blue-and-yellow bicolour, first flown in 1917.", source: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" }],
   ["historical-flags/rsfsr-1918.svg", { from: 1918, to: 1925, design: "Russian SFSR — red with the gold РСФСР cypher.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Russian_Soviet_Federative_Socialist_Republic" }],
   ["historical-flags/mongolia-1924.svg", { from: 1924, to: 1940, design: "Mongolian People's Republic — red with the golden soyombo, from the 1924 constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" }],
   ["historical-flags/persia-1933.svg", { from: 1933, to: 1964, design: "Iran — the 1933 standardisation of the Lion and Sun tricolour.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" }],
