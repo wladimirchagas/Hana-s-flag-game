@@ -2703,14 +2703,18 @@ After pushing a branch and creating a pull request, an agent **MUST**:
 
 1. **Immediately merge** the PR (squash merge) — do not leave it open waiting for manual action unless the user has explicitly asked to review first.
 2. **Confirm the merge succeeded** by checking the merge response.
-3. **Verify the work is live** — after merging, confirm the GitHub Pages **Deploy** workflow run for the merge commit completes with `success`. (Fetching the live `github.io` page itself may be blocked by the environment's network egress policy; if so, the workflow conclusion is the source of truth.)
+3. **Confirm the work is LIVE — that users can actually see it.** Merged is not shipped. Run
+   **`node scripts/check-live-build.mjs`** (`npm run live:check`) and report what it says. This is a
+   mandatory step, not a courtesy check, and it is not satisfied by a green Deploy run — see the
+   subsection below for what to do when it says the site is behind.
 4. **Report back** with:
    - Merge status (success/failure)
+   - **Whether users can see it** — the live build's commit and timestamp from step 3
    - Current time in **AEST** (Australian Eastern Standard Time, UTC+10; or AEDT UTC+11 during daylight saving, which runs October–April)
    - The merge commit SHA (this is the build code/number)
 
 Example confirmation message format:
-> Merged ✓ — commit `b05323a` — 9:56 PM AEST
+> Merged ✓ — commit `b05323a` — live ✓ — 9:56 PM AEST
 
 Do not report the time in UTC or any other timezone unless asked.
 
@@ -2718,3 +2722,43 @@ Do not report the time in UTC or any other timezone unless asked.
 browser is available is **not** a reason to pause, hold the PR open, or ask the user whether to merge
 — see "When no browser is available — precedence over the merge rule" above. Document the caveat in
 the PR body and merge.
+
+### "Merged ✓" is not "users can see it" — the live check is mandatory and a stalled deploy is YOUR problem
+
+**Why this rule exists.** Reported by the owner (2026-08-07): "confirm merge worked and users can
+see the latest version". Two PRs had been merged with every CI check green and reported as
+"Merged ✓", while the live site was still serving a build from the previous afternoon. Both merges
+were invisible to every user for over 15 hours. The cause was a stalled deploy — and the reason it
+went unreported is that the old wording of item 3 let a green *build* stand in for a live *site*,
+and offered "egress may be blocked" as a pre-authorised excuse for not looking. Egress to
+`github.io` was never blocked; nobody tried. **A user cannot see a workflow conclusion. They see
+the page.**
+
+1. **Fetch the live site and compare its build commit — never infer liveness from a workflow
+   status.** `scripts/check-live-build.mjs` does exactly this: it reads the entry bundle and the
+   `__BUILD_COMMIT__` / `__BUILD_ISO__` constants `vite.config.ts` injects, then checks that the
+   merge commit is that build or an ancestor of it. Run it after every merge.
+2. **A network failure is INCONCLUSIVE (exit 2), never a pass.** Say the check could not run. "I
+   could not check" must never be reported as, or allowed to read like, "it is live".
+3. **If the site is behind, DRIVE THE DEPLOY — it is part of the task, not a footnote.** The Deploy
+   workflow runs in a `concurrency: pages` group with `cancel-in-progress: false` (correctly — see
+   `deploy.yml`), so **one stuck run blocks every later deploy indefinitely**. Find the Deploy run
+   for the merge commit; if it is `pending` or `queued`, list the recent runs and find the older one
+   holding the group. A run whose `build` job succeeded but whose `deploy` job sits in `waiting` is
+   parked on the `github-pages` environment's protection rule and will never clear on its own.
+   Cancel it, approve it, or re-run the queued deploy.
+4. **When the agent's token cannot clear it, that is the HEADLINE of the report.** Cancelling a run
+   or approving a deployment needs `actions: write` / deployment-review rights the integration token
+   does not have (`403 Resource not accessible by integration`). When that happens the report leads
+   with **"users cannot see this yet"**, plus the blocking run's URL and the exact click-path for
+   the owner (Actions → the run → Approve or Cancel). Never bury it under a green merge line, and
+   never report "Merged ✓" alone when you know the live site does not have it.
+5. **Never weaken the check to make a report look clean** — not by skipping it, not by treating a
+   green Deploy run as equivalent, not by reinstating an "egress may be blocked, so the workflow
+   conclusion is the source of truth" escape hatch. That escape hatch is what caused this bug.
+
+**Enforcement.** `scripts/check-live-build.mjs` (`npm run live:check`) is the mechanical step; it
+exits 0 only when the live bundle contains the commit. It is deliberately NOT in `flags:check` — it
+describes the deployed site, not the working tree, so it would fail on every branch by design. The
+guard is this rule: a turn that reported a merge without running it, or that reported "live" on an
+exit-2 inconclusive result, is a violation.

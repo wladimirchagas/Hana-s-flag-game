@@ -31,6 +31,7 @@
     "eras:download-flags": "node scripts/download-era-flags.mjs",
     "eras:check-explanations": "node scripts/check-era-flag-explanations.mjs",
     "eras:build-adoption-years": "node scripts/build-flag-adoption-years.mjs",
+    "live:check": "node scripts/check-live-build.mjs",
     "flags:check:capital-flags": "node scripts/check-capital-flags.mjs",
     "flags:check:type-colors": "node scripts/check-hierarchy-type-colors.mjs",
     "subdiv:check-meta": "node scripts/check-subdivision-meta-coverage.mjs",
