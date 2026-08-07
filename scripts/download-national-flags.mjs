@@ -88,6 +88,10 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
   if (only.size > 0 && !only.has(cc)) continue;
 
   for (const entry of country.flags) {
+    if (!entry.file && !entry.reuse && entry.noImageReason) {
+      // Deliberately imageless (no free file exists) — nothing to fetch.
+      continue;
+    }
     if (entry.reuse) {
       // Bundled elsewhere (flags/xx.svg or historical-flags/*) — presence is
       // verified by check-national-flags.mjs, which knows both roots.
@@ -147,11 +151,17 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       continue;
     }
     const buf = Buffer.from(await res.arrayBuffer());
-    const isPng = entry.file.endsWith(".png");
-    const looksSvg = buf.slice(0, 400).toString("utf8").includes("<svg");
-    const looksPng = buf.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
-    if (isPng ? !looksPng : !looksSvg) {
-      console.error(`✗ ${entry.file}: fetched bytes are not ${isPng ? "a PNG" : "an SVG"}.`);
+    // Passport covers are often photographs, so JPEG joins SVG and PNG here.
+    const kind = entry.file.endsWith(".png") ? "PNG"
+      : /\.jpe?g$/.test(entry.file) ? "JPEG"
+      : "SVG";
+    const looks = {
+      SVG: () => buf.slice(0, 400).toString("utf8").includes("<svg"),
+      PNG: () => buf.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])),
+      JPEG: () => buf.slice(0, 3).equals(Buffer.from([0xff, 0xd8, 0xff])),
+    }[kind];
+    if (!looks()) {
+      console.error(`✗ ${entry.file}: fetched bytes are not ${kind}.`);
       failed++;
       continue;
     }

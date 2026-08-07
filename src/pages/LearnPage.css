@@ -1774,6 +1774,57 @@
   background: transparent;
 }
 
+/* Marks the country's current national flag wherever it is listed — it appears in
+   both the official and the historical section, and this is what says "this is the
+   one in force". Deliberately louder than the muted "Under {power}" badge. */
+.flag-grid__primary-badge {
+  display: inline-block;
+  margin-top: 0.3em;
+  padding: 0.1em 0.45em;
+  border-radius: 999px;
+  border: 1px solid var(--azure);
+  background: var(--azure);
+  color: var(--ink-fixed);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* A symbol with no freely-licensed image is still listed — these two carry the
+   reason, on the card and in the widget, so the gap is visible rather than silent. */
+.flag-grid__no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 2.5rem;
+  padding: 0.35rem;
+  border: 1px dashed var(--ink-faint);
+  border-radius: 4px;
+  color: var(--ink-soft);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.learn-fs__no-image {
+  margin: 0 0 0.6rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px dashed var(--ink-faint);
+  border-radius: 6px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
 .learn-fs__pre-independence {
   margin: 0 0 0.75rem;
   padding: 0.5rem 0.65rem;

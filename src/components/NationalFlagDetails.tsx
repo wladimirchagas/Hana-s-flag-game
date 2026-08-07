@@ -16,6 +16,11 @@ import { flagYearLabel } from "../lib/nationalFlags";
  *
  * Nothing here touches the map: these flags belong to the whole country, so there
  * is no territory to highlight.
+ *
+ * The country's CURRENT flag (`flag.primary`) never reaches this component — the
+ * fact-sheet panel above is already showing that exact image with its own
+ * explainer, and repeating it below would put the same flag on screen twice.
+ * `LearnPage` therefore scrolls to that panel instead of opening this one.
  */
 export function NationalFlagDetails({
   flag,
@@ -30,7 +35,7 @@ export function NationalFlagDetails({
   baseUrl: string;
   onEnlarge: (url: string) => void;
 }) {
-  const url = `${baseUrl}${flag.path}`;
+  const url = flag.path ? `${baseUrl}${flag.path}` : null;
   const years = flagYearLabel(flag);
   // A pre-independence flag is spelled out, not merely badged: which power held the
   // territory, and the fact that this is NOT a flag of the independent country. The
@@ -68,21 +73,29 @@ export function NationalFlagDetails({
         </p>
       )}
       <div className="learn-fs__flag-box">
-        <button
-          type="button"
-          className="learn-fs__flag"
-          onClick={() => onEnlarge(url)}
-          aria-label={`Enlarge ${flag.name}`}
-        >
-          <img
-            src={url}
-            alt=""
-            className="learn-fs__flag-img"
-            draggable={false}
-            onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-          />
-          <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-        </button>
+        {flag.noImageReason ? (
+          // Listed without a picture rather than dropped — the reason IS the content
+          // here, so the user learns the symbol exists and why it cannot be shown.
+          <p className="learn-fs__no-image">
+            <strong>No image shown.</strong> {flag.noImageReason}
+          </p>
+        ) : (
+          <button
+            type="button"
+            className="learn-fs__flag"
+            onClick={() => url && onEnlarge(url)}
+            aria-label={`Enlarge ${flag.name}`}
+          >
+            <img
+              src={url ?? undefined}
+              alt=""
+              className="learn-fs__flag-img"
+              draggable={false}
+              onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+            />
+            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+          </button>
+        )}
         <p className="learn-fs__flag-design">{flag.design}</p>
         <FlagMeaning code={flag.id} meanings={NATIONAL_FLAG_MEANINGS} />
       </div>

@@ -328,6 +328,56 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Brazilian_flags",
           "sha256": "b1fe0d06b8043da0dc36545f2429e5e3b86f3ce33db55be9cf6816d993621887",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Brazil",
+          "commons": "Coat of arms of Brazil.svg",
+          "file": "br/brazil-arms.svg",
+          "design": "A blue disc bearing the Southern Cross, ringed by 27 stars, on a star-shaped emblem framed by coffee and tobacco branches.",
+          "meaning": {
+            "description": "Adopted on 19 November 1889, four days after the republic was proclaimed, and built to say what the new state was. The central emblem is charged with the Southern Cross, the constellation that stands for the southern sky over Brazil, and it is ringed by 27 stars — one for each state and one for the Federal District. Framing it are branches of coffee and tobacco, the crops that carried the country’s economy at the time, which is why the arms show plants rather than the heraldic beasts of a European coat of arms. The blue ribbon carries the state’s own name and, on its second line, the date of the proclamation of the republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Brazil — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil",
+          "sha256": "4c77ca1c7e857046cb5c66c429e10bc9dec74e4dd328cd470a76d5c20676e2cf",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-passport",
+          "category": "passport",
+          "name": "Brazilian passport",
+          "commons": "Passport of Brazil (2019).png",
+          "file": "br/brazil-passport.png",
+          "design": "The blue Mercosur cover: the national arms in gold above the country's name, with MERCOSUL/MERCOSUR across the top.",
+          "meaning": {
+            "description": "The cover is a statement of two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sit the words República Federativa do Brasil and, at the foot, the biometric chip symbol that marks it as an e-passport.",
+            "sources": [
+              {
+                "title": "Brazilian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Brazilian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Brazilian_passport",
+          "sha256": "744b4cc5d82a961c3244a92c6d1408161453c9728b734573c1a126f49c6d8783",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "br-official-national",
+          "category": "official",
+          "name": "Flag of Brazil",
+          "from": 1992,
+          "to": 9999,
+          "reuse": "flags/br.svg",
+          "design": "The national flag and ensign, under the Constitution's Article 13.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
         }
       ],
       "independence": {
@@ -509,6 +559,67 @@
           "reuse": "national-flags/gb/great-britain-1707.svg",
           "design": "The pre-1801 Union Flag, first raised on the east coast by James Cook in 1770.",
           "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
+        },
+        {
+          "id": "au-torres-strait",
+          "category": "official",
+          "name": "Torres Strait Islander Flag",
+          "noImageReason": "The design is still in copyright under the Copyright Act 1968 — Bernard Namok died in 1993, so it will not enter the public domain for decades — and no freely-licensed file exists on Wikimedia Commons (en.wikipedia itself shows a placeholder). This game never bundles a non-free image and never approximates a flag, so the flag is listed with its meaning but without a picture.",
+          "design": "Green, blue and black horizontal bands with a white dhari (headdress) and a five-pointed star at the centre.",
+          "meaning": {
+            "description": "Bernard Namok, a 15-year-old from Thursday Island, won the 1992 competition to design it, and gave every element a meaning. The two green stripes are the land — Migi Daudai to the north (Papua New Guinea) and Koey Daudai to the south (mainland Australia) — with the blue of Malu, the sea of the Torres Strait, between them, so the flag is a map of a people living between two landmasses. The black stripes stand for the Torres Strait Islander people themselves. At the centre is the white dhari, the dancer’s headdress that is the emblem of Torres Strait Islander culture, and beneath it a five-pointed star: white for peace, a navigator’s symbol for a seafaring people, and one point for each island group — Northern, Eastern, Western, Central and Southern. It was proclaimed a Flag of Australia in July 1995, the same day as the Aboriginal Flag.",
+            "sources": [
+              {
+                "title": "Torres Strait Islander flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Torres_Strait_Islander_flag"
+              },
+              {
+                "title": "Australian flags — Department of the Prime Minister and Cabinet",
+                "url": "https://www.pmc.gov.au/government/australian-national-symbols/australian-flags"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Torres_Strait_Islander_flag"
+        },
+        {
+          "id": "au-arms",
+          "category": "coatofarms",
+          "name": "Commonwealth Coat of Arms",
+          "commons": "Coat of arms of Australia.svg",
+          "file": "au/australia-arms.svg",
+          "design": "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.",
+          "meaning": {
+            "description": "The shield is the federation itself: six quarters, one for each state’s badge, bound together by an ermine border that stands for the encompassing authority of the Crown and makes the six read as one device rather than six separate emblems. Above it the seven-pointed Commonwealth Star repeats the point — six points for the states and a seventh for the territories. The kangaroo and emu were chosen as supporters as native animals commonly said to be unable to walk backwards, and so read as a country that only moves forward; behind the shield is golden wattle, the national floral emblem.",
+            "sources": [
+              {
+                "title": "Coat of arms of Australia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia",
+          "sha256": "0d3e18edc7efb73f0b6a2b842c859dce1eb403376ab8ffd68efffbae17efee48",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "au-passport",
+          "category": "passport",
+          "name": "Australian passport",
+          "commons": "Australian Passport Cover of P - Series.jpg",
+          "file": "au/australia-passport.jpg",
+          "design": "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above and PASSPORT below.",
+          "meaning": {
+            "description": "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document the traveller carries is stamped with the federation's own emblem rather than the flag. The small chip symbol at the foot marks the biometric series.",
+            "sources": [
+              {
+                "title": "Australian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Australian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Australian_passport",
+          "sha256": "edc1585c2fa8313ee6a4bbf181c80a99178424fab316ae4444517bbb8d32db27",
+          "fetched": "2026-08-07"
         }
       ],
       "omitted": [
@@ -656,6 +767,56 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "bbedf2d8ecde8d5e0a5feda2642ed4eb2d08e2f20aa4ef2ab0b969075ed2c40d",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Malaysia",
+          "commons": "Coat of arms of Malaysia.svg",
+          "file": "my/malaysia-arms.svg",
+          "design": "A shield held by two tigers, crowned by a yellow crescent and fourteen-pointed federal star, above a motto ribbon.",
+          "meaning": {
+            "description": "The crest repeats the flag: a yellow crescent and a fourteen-pointed federal star, yellow being the colour of Malay royalty, so the crest stands for the monarchy, while the star and crescent together carry Islam as the religion of the federation. The star’s fourteen points were originally the fourteen states of 1963; when Singapore left in 1965 the point was not removed but re-read as the federal territories. The shield is the federation assembled piece by piece — five krises across the chief for the five formerly Unfederated Malay States, and quarters for the other members — so a viewer can read which states joined how. The two tigers are held over from the arms of the Federated Malay States.",
+            "sources": [
+              {
+                "title": "Coat of arms of Malaysia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia",
+          "sha256": "71741ec4a4a66154486d94ec985622b58f0e87ea4caa18458af9f9ce9566ceb5",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-passport",
+          "category": "passport",
+          "name": "Malaysian passport",
+          "commons": "Malaysia Passport.svg",
+          "file": "my/malaysia-passport.svg",
+          "design": "A dark red cover with the Malaysian coat of arms in gold, the country's name above and PASSPORT/PASPORT below.",
+          "meaning": {
+            "description": "The arms in the centre are the same crest, tiger supporters and fourteen-point federal star the country's coat of arms carries, so the passport repeats the federation's own claim about itself. The text appears in Malay and English together, as the constitution requires of official documents.",
+            "sources": [
+              {
+                "title": "Malaysian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Malaysian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Malaysian_passport",
+          "sha256": "8ace467c01056cf1e60c8d43508e787cfeb4d9b8c98f3ceb4e0b74daad85afbb",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-official-national",
+          "category": "official",
+          "name": "Flag of Malaysia (Jalur Gemilang)",
+          "from": 1963,
+          "to": 9999,
+          "reuse": "flags/my.svg",
+          "design": "The national flag, adopted at the formation of Malaysia in 1963.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
         }
       ],
       "independence": {
@@ -1158,6 +1319,67 @@
           "reuse": "national-flags/gb/great-britain-1707.svg",
           "design": "The pre-1801 Union Flag, flown over the Thirteen Colonies until independence.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States"
+        },
+        {
+          "id": "us-arms",
+          "category": "coatofarms",
+          "name": "Great Seal of the United States",
+          "commons": "Great Seal of the United States (obverse).svg",
+          "file": "us/us-great-seal.svg",
+          "design": "A bald eagle bearing a shield of thirteen stripes, an olive branch in one talon and thirteen arrows in the other.",
+          "meaning": {
+            "description": "Charles Thomson’s explanation to Congress in 1782 is still the official reading. Thirteen recurs everywhere — stripes, arrows, stars — for the thirteen original states, and the constellation of stars breaking through a cloud says a new state is taking its place among other sovereign powers. The eagle holds an olive branch in its right talon and thirteen arrows in its left, and turns its head toward the olive branch: the country has the power of peace and of war, and prefers peace. The stripes are joined by the chief above them, standing for Congress binding the states together, and the shield floats unsupported to say the country relies on its own virtue. The motto E pluribus unum — out of many, one — makes the same argument in words.",
+            "sources": [
+              {
+                "title": "Great Seal of the United States — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States",
+          "sha256": "7170780fdbbf856e0dcb65299603e4e6ff20e0bb74a5f0c3a50438685ee8226e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-passport-diplomatic",
+          "category": "passport",
+          "name": "United States diplomatic passport",
+          "commons": "United States Passport - Diplomatic - Biometric.svg",
+          "file": "us/us-passport-diplomatic.svg",
+          "design": "A black cover bearing the Great Seal in gold, headed DIPLOMATIC PASSPORT.",
+          "meaning": {
+            "description": "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
+            "sources": [
+              {
+                "title": "United States passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/United_States_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/United_States_passport",
+          "sha256": "9cab6b204f8552b68fadaad4e54b6843093284a499ee1f26521d0b3c4a9f228a",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-passport-official",
+          "category": "passport",
+          "name": "United States official passport",
+          "commons": "United States passport - official - biometric.png",
+          "file": "us/us-passport-official.png",
+          "design": "A maroon cover bearing the Great Seal in gold, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.",
+          "source": "https://en.wikipedia.org/wiki/United_States_passport",
+          "sha256": "4b4f68b9f9579593824f2288b4bd7dc5ce3ff01589e4fb241f700315dbdc543d",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-official-national",
+          "category": "official",
+          "name": "Flag of the United States",
+          "from": 1960,
+          "to": 9999,
+          "reuse": "flags/us.svg",
+          "design": "The national flag, fifty stars since 1960.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
         }
       ],
       "independence": {
@@ -1340,6 +1562,78 @@
           "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags",
           "sha256": "b50c27cd631df070417a47239192dcb76c68d7119dfe56154e3014cc37c3e8fd",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-arms",
+          "category": "coatofarms",
+          "name": "Royal Coat of Arms of the United Kingdom",
+          "commons": "Royal coat of arms of the United Kingdom (St. Edward's Crown).svg",
+          "file": "gb/uk-arms.svg",
+          "design": "A quartered shield of the three lions of England, the lion of Scotland and the harp of Ireland, supported by a lion and a unicorn.",
+          "meaning": {
+            "description": "The shield is a record of which crowns came together and when: the three lions of England in two quarters, the rampant lion of Scotland, and the harp of Ireland — quartered after James VI of Scotland inherited the English and Irish thrones in 1603, precisely to show the union of the crowns in one device. The lion supporter is England’s and the unicorn Scotland’s, the unicorn chained because a free unicorn was held to be dangerous. Wales appears nowhere on the shield, because it was already annexed to the English crown before the arms were composed, and is represented instead by separate royal badges. On the compartment below grow a thistle, a Tudor rose and a shamrock for Scotland, England and Ireland.",
+            "sources": [
+              {
+                "title": "Coat of arms of the United Kingdom — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_United_Kingdom"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_United_Kingdom",
+          "sha256": "460dd63ea309aa3955576b7940f62c51248b08bbeab18a791b94f92acea8b5c1",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-passport",
+          "category": "passport",
+          "name": "British passport",
+          "commons": "British Passport 2020.svg",
+          "file": "gb/uk-passport.svg",
+          "design": "A dark blue cover with the Royal Coat of Arms in gold, above UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND.",
+          "meaning": {
+            "description": "The gold device is the Royal Coat of Arms — a British passport is issued in the sovereign's name, and the arms say so. The colour is the point of this particular design: British passports were dark blue until 1988, burgundy while the UK was in the European Union, and returned to blue in 2020 after leaving it, making the cover itself a piece of constitutional history.",
+            "sources": [
+              {
+                "title": "British passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/British_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "sha256": "92f404b387016d9f71e0d45326928cda624ddfb0640fe18925ff09455ca4ab1f",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-passport-diplomatic",
+          "category": "passport",
+          "name": "British diplomatic passport",
+          "commons": "British Passport 2020 (Diplomatic).svg",
+          "file": "gb/uk-passport-diplomatic.svg",
+          "design": "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.",
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "sha256": "302904a674d0d3c8fc20ba0c5f8b71069ba39c4d48993cdccba5b32a6140f3cd",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-passport-official",
+          "category": "passport",
+          "name": "British official passport",
+          "commons": "British Passport 2020 (Official).svg",
+          "file": "gb/uk-passport-official.svg",
+          "design": "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.",
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "sha256": "182118fed9f47460ddd5b6ef2f624e9201ce2ccc6cd344078aca37c3941aabc5",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "gb-official-national",
+          "category": "official",
+          "name": "Union Flag",
+          "from": 1801,
+          "to": 9999,
+          "reuse": "flags/gb.svg",
+          "design": "The national flag of the United Kingdom.",
+          "source": "https://en.wikipedia.org/wiki/Union_Jack"
         }
       ]
     },
@@ -1387,6 +1681,56 @@
           "source": "https://en.wikipedia.org/wiki/List_of_French_flags",
           "sha256": "90e7bfcd21a982fec24883d1f3965098a62d328735126ca7c98390f16342118c",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "fr-arms",
+          "category": "coatofarms",
+          "name": "Emblem of the French Republic",
+          "commons": "Coat of arms of the French Republic.svg",
+          "file": "fr/france-emblem.svg",
+          "design": "A lictor’s fasces on crossed oak and laurel branches, with a ribbon bearing the republic’s motto.",
+          "meaning": {
+            "description": "France has no official coat of arms; this device, designed in 1913 for French diplomatic missions, is the closest thing and is used on passports and by embassies while remaining unofficial. The fasces at its centre is a Roman magistrate’s bundle of rods and axe — the classical symbol of the authority of the state and of justice, chosen by a republic that took its imagery from Rome rather than from monarchy. The oak branch stands for perpetuity and wisdom and the laurel for glory, and the ribbon carries Liberté, Égalité, Fraternité. The monarchy’s fleurs-de-lis are deliberately absent.",
+            "sources": [
+              {
+                "title": "Coat of arms of France — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_France"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_France",
+          "sha256": "d3af7216f4c5be3f787de57227791b5fe6e5cb4ac5977104fd0413f363c83962",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "fr-passport",
+          "category": "passport",
+          "name": "French passport",
+          "commons": "French Passport Cover.svg",
+          "file": "fr/france-passport.svg",
+          "design": "A burgundy cover reading UNION EUROPÉENNE above RÉPUBLIQUE FRANÇAISE, with the republic's emblem in gold.",
+          "meaning": {
+            "description": "The burgundy colour and the EUROPEAN UNION line above the country's own name are the common format agreed by member states, so a French passport announces the union before the republic. The gold device is the unofficial emblem of the French Republic — the lictor's fasces on oak and laurel — which the state uses in place of a coat of arms it has never formally adopted.",
+            "sources": [
+              {
+                "title": "French passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/French_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/French_passport",
+          "sha256": "dd27f9ade9404a6017a85b693fc7bf98215fd9c99ca684a8a861aab65b1fa94e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "fr-official-national",
+          "category": "official",
+          "name": "Flag of France",
+          "from": 1830,
+          "to": 9999,
+          "reuse": "flags/fr.svg",
+          "design": "The national flag, named in Article 2 of the Constitution.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_France"
         }
       ]
     },
@@ -1522,6 +1866,47 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags",
           "sha256": "1a038d09d3521a3c74d8f79d631e3fbc473231f36c320db04f10f13c12c6faf1",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Spain",
+          "commons": "Escudo de España.svg",
+          "file": "es/spain-arms.svg",
+          "design": "A quartered shield of Castile, León, Aragón and Navarre with Granada in base, between the Pillars of Hercules.",
+          "meaning": {
+            "description": "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Spain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain",
+          "sha256": "b1f6c7dd559265cc9845de22bbd196decfe81392e4c49cb9e51fa369ad91fec9",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-passport",
+          "category": "passport",
+          "name": "Spanish passport",
+          "commons": "Pasaporte ES.svg",
+          "file": "es/spain-passport.svg",
+          "design": "A burgundy cover reading UNIÓN EUROPEA above ESPAÑA, with the Spanish coat of arms in gold.",
+          "source": "https://en.wikipedia.org/wiki/Spanish_passport",
+          "sha256": "3689dca26890188130be88d4ec8936fffb8271c62c60cbd0732f90300a515ebe",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "es-official-national",
+          "category": "official",
+          "name": "Flag of Spain",
+          "from": 1981,
+          "to": 9999,
+          "reuse": "flags/es.svg",
+          "design": "The national flag and ensign, under Article 4 of the Constitution.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
         }
       ]
     },
@@ -1649,6 +2034,56 @@
           "reuse": "historical-flags/spain-burgundy.png",
           "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Upper Peru from the conquest.",
           "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
+        },
+        {
+          "id": "bo-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Bolivia",
+          "commons": "Coat of arms of Bolivia.svg",
+          "file": "bo/bolivia-arms.svg",
+          "design": "An oval showing the Cerro Rico of Potosí under a rising sun, with a llama, a wheatsheaf and a palm, ringed by flags, cannon and an Andean condor.",
+          "meaning": {
+            "description": "The cartouche is a portrait of the country’s wealth and land: the Cerro Rico of Potosí, the silver mountain that financed the Spanish empire, under a rising sun at dawn; a llama for the Andean highlands; a sheaf of wheat and a palm for the temperate valleys and the lowlands, so all three of Bolivia’s geographies appear at once. Around it are the arms of the state that won them — muskets, cannon, an axe carrying the Phrygian cap of liberty, and laurel for victory. The Andean condor above spreads its wings over the whole as the national bird and a guardian of freedom, and the stars beneath stand for the departments, including Litoral, the coastal department Bolivia lost to Chile in 1879 and has never removed.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bolivia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia",
+          "sha256": "9c09a642beb39d489bc58a913ba495d1034788d995e92ada256e775ddb89c0b3",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-passport",
+          "category": "passport",
+          "name": "Bolivian passport",
+          "commons": "Bolivia passport.png",
+          "file": "bo/bolivia-passport.png",
+          "design": "A blue cover with the Bolivian coat of arms in gold, reading ESTADO PLURINACIONAL DE BOLIVIA.",
+          "meaning": {
+            "description": "The heading is the country's post-2009 constitutional name — Plurinational State of Bolivia — so the cover carries the same claim the Wiphala makes alongside the tricolour: that the state is made of many peoples. The blue is the shared Andean Community colour.",
+            "sources": [
+              {
+                "title": "Bolivian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bolivian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Bolivian_passport",
+          "sha256": "097045260240234a7d2adbe9fa6891ca0407cb4e9b0833785cec0603c2721929",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "bo-official-national",
+          "category": "official",
+          "name": "Flag of Bolivia",
+          "from": 1851,
+          "to": 9999,
+          "reuse": "flags/bo.svg",
+          "design": "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bolivia"
         }
       ],
       "independence": {
@@ -1758,6 +2193,36 @@
           "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags",
           "sha256": "a2837de97c9ad4b167e8d7eae91993e6856749756b0015cb42985f300c00eadb",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "za-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of South Africa",
+          "commons": "Coat of arms of South Africa (heraldic).svg",
+          "file": "za/south-africa-arms.svg",
+          "design": "Two facing figures from Khoisan rock art within a shield, above a spear and knobkierie, crowned by a secretary bird and a rising sun.",
+          "meaning": {
+            "description": "Adopted in 2000 to replace arms designed by the British and Afrikaner minorities, and read from the ground up as one sentence about the country. At the centre two human figures from the Linton Stone, a piece of Khoisan rock art, greet each other — the oldest inhabitants, and unity between people. A spear and knobkierie lie crossed and at rest, signalling defence and authority laid down rather than raised. The motto is in ǀXam, an extinct San language, and means “diverse people unite”. Above stands the secretary bird, a snake-killer, wings spread in protection, with a protea on its breast and the rising sun above it. The lower and upper ovals of the design close into the shape of infinity.",
+            "sources": [
+              {
+                "title": "Coat of arms of South Africa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa",
+          "sha256": "227ed9ca432309659f9ea8eb46a61197a66d7d8252a159ffc7aa1d6e6e44abd4",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "za-official-national",
+          "category": "official",
+          "name": "Flag of South Africa",
+          "from": 1994,
+          "to": 9999,
+          "reuse": "flags/za.svg",
+          "design": "The national flag, first flown on 27 April 1994.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
         }
       ],
       "independence": {
@@ -1848,6 +2313,36 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags",
           "sha256": "c8c4a10a4acf2c03c94c1d14f6912f55e54446de6c15be833ae40dda979ecb8a",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "jp-arms",
+          "category": "coatofarms",
+          "name": "Imperial Seal of Japan",
+          "commons": "Imperial Seal of Japan.svg",
+          "file": "jp/japan-imperial-seal.svg",
+          "design": "A yellow chrysanthemum of sixteen petals, with a second set of sixteen showing behind them.",
+          "meaning": {
+            "description": "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
+            "sources": [
+              {
+                "title": "Imperial Seal of Japan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan",
+          "sha256": "ea846b3133efb6bd3a929fcf8522d959247d1105db028d3b5cd7b82e8cbb9ca3",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "jp-official-national",
+          "category": "official",
+          "name": "Flag of Japan (Hinomaru)",
+          "from": 1999,
+          "to": 9999,
+          "reuse": "flags/jp.svg",
+          "design": "The national flag, under the Act on National Flag and Anthem of 1999.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Japan"
         }
       ]
     },
@@ -1896,6 +2391,89 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags",
           "sha256": "4c0552fa415b61e70ccdac70d0454c43b26fee7bc163b3f5c2daebbda6bce825",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-arms",
+          "category": "coatofarms",
+          "name": "Star and crescent emblem of Turkey",
+          "commons": "Emblem of Turkey.svg",
+          "file": "tr/turkey-emblem.svg",
+          "design": "The white star and crescent of the national flag, in an oval bearing the country’s name.",
+          "meaning": {
+            "description": "Turkey has no official national coat of arms at all — a deliberate republican break. When the sultanate was abolished on 1 November 1922 the Ottoman coat of arms went with it and was never replaced, so what the state uses in an emblem’s place is the star and crescent lifted straight from the flag, set in an oval with the country’s name. It appears on Turkish passports and identity cards and at Turkish diplomatic missions, which makes it an emblem in practice while remaining unofficial in law. The crescent and star themselves come from the Ottoman flag of 1844, which is also the basis of today’s flag.",
+            "sources": [
+              {
+                "title": "Emblems of Turkey — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblems_of_Turkey"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Emblems_of_Turkey",
+          "sha256": "83c499d98d95edb09c16c03c84af57f314ed95fe36b120fb99bfeed66e1ed674",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-passport",
+          "category": "passport",
+          "name": "Turkish passport",
+          "commons": "Turkish Passport.svg",
+          "file": "tr/turkey-passport.svg",
+          "design": "A burgundy cover with the star and crescent emblem in gold, reading TÜRKİYE CUMHURİYETİ.",
+          "meaning": {
+            "description": "Turkey issues four passports and the colour is the classification: burgundy for ordinary, black for diplomatic, green for special (issued to senior civil servants and former parliamentarians) and grey for service. The gold emblem is the star and crescent Turkey uses in place of a coat of arms it has never adopted.",
+            "sources": [
+              {
+                "title": "Turkish passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Turkish_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Turkish_passport",
+          "sha256": "fd84ea6f36c5c949b9456516c9aebfc0eebabfbe9b04dc152b0ae31350127364",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-passport-diplomatic",
+          "category": "passport",
+          "name": "Turkish diplomatic passport",
+          "commons": "Turkish Passport (diplomatic).svg",
+          "file": "tr/turkey-passport-diplomatic.svg",
+          "design": "A black cover with the same emblem, headed DİPLOMATİK PASAPORT.",
+          "source": "https://en.wikipedia.org/wiki/Turkish_passport",
+          "sha256": "86849197399d454b9dab72b9486e4b2221bd01eb6d4f5ac7470c3b01f86239b8",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-passport-special",
+          "category": "passport",
+          "name": "Turkish special passport",
+          "commons": "Turkish Passport (special).svg",
+          "file": "tr/turkey-passport-special.svg",
+          "design": "A green cover — the “yeşil pasaport” issued to senior officials and former members of parliament.",
+          "source": "https://en.wikipedia.org/wiki/Turkish_passport",
+          "sha256": "1381ea7a0605745d0a6b34119bc1bbbde52b0171b91d933e9c3a93e67690aa1e",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-passport-service",
+          "category": "passport",
+          "name": "Turkish service passport",
+          "commons": "Turkish Passport (service).svg",
+          "file": "tr/turkey-passport-service.svg",
+          "design": "A grey cover, issued to officials travelling on state business.",
+          "source": "https://en.wikipedia.org/wiki/Turkish_passport",
+          "sha256": "7208585ca5837a5822eacb71ae1bc1895d4f41ab85a80d3e8e16790997391d12",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "tr-official-national",
+          "category": "official",
+          "name": "Flag of Turkey",
+          "from": 1936,
+          "to": 9999,
+          "reuse": "flags/tr.svg",
+          "design": "The national flag, under the Turkish Flag Law of 1936.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Turkey"
         }
       ]
     },
@@ -2008,6 +2586,56 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags",
           "sha256": "54b0596d4ea2979b2a45c5c74e0f9e5f35cd3aa2c050b13cb24fcda50d1efdea",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-arms",
+          "category": "coatofarms",
+          "name": "State Emblem of India",
+          "commons": "Emblem of India.svg",
+          "file": "in/india-emblem.svg",
+          "design": "Three of the four Asiatic lions of the Lion Capital of Ashoka, above a frieze bearing a horse and a bull with a wheel between them.",
+          "meaning": {
+            "description": "The emblem is an adaptation of the Lion Capital of Ashoka, carved in the third century BC and set up at Sarnath where the Buddha first taught — so independent India took its emblem not from heraldry but from its own antiquity. Four lions stand back to back on the original; the emblem shows three, the fourth hidden behind, which is why it appears to have three. Below them runs the abacus with a horse and a bull separated by the Dharma Chakra, the wheel of law — the same wheel that stands at the centre of the national flag. The motto beneath, Satyameva Jayate, “truth alone triumphs”, is a line from the Mundaka Upanishad.",
+            "sources": [
+              {
+                "title": "State Emblem of India — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_Emblem_of_India"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/State_Emblem_of_India",
+          "sha256": "f6b7475f96250c408c515bc56d5a6f34a60676770ca6b02f5d317245f267f1af",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-passport",
+          "category": "passport",
+          "name": "Indian passport",
+          "commons": "Indian Passport (e-Passport, 2024).svg",
+          "file": "in/india-passport.svg",
+          "design": "A navy-blue cover bearing the State Emblem of India in gold, with भारत गणराज्य and REPUBLIC OF INDIA.",
+          "meaning": {
+            "description": "The gold device is the State Emblem — the Ashoka lions — and the heading appears in Hindi and English, the two languages the constitution gives the union. India also issues a white passport for government officials and a maroon one for diplomats, so the navy cover itself marks this as an ordinary passport.",
+            "sources": [
+              {
+                "title": "Indian passport — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Indian_passport"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/Indian_passport",
+          "sha256": "30922fca9a87305c043ab47e582e974c2c42e828c96cd8a9aa287757bac6cbd0",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-official-national",
+          "category": "official",
+          "name": "Flag of India (Tiranga)",
+          "from": 1947,
+          "to": 9999,
+          "reuse": "flags/in.svg",
+          "design": "The national flag, adopted 22 July 1947.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_India"
         }
       ],
       "independence": {
@@ -2126,6 +2754,47 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags",
           "sha256": "5f985a81843aebcf6de7f4ca230f601d5d5780a3b1eaaf7cc01bfdab496e3e69",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-arms",
+          "category": "coatofarms",
+          "name": "National Emblem of China",
+          "commons": "National Emblem of the People's Republic of China.svg",
+          "file": "cn/china-emblem.svg",
+          "design": "Tiananmen Gate beneath five gold stars, in a red circle framed by ears of grain and a cogwheel.",
+          "meaning": {
+            "description": "Every element is a claim about who the state belongs to. The ears of wheat and rice around the border stand for the peasantry and the cogwheel at the base for industrial workers — together the worker-peasant alliance the People’s Republic was founded on. Tiananmen Gate is where the republic was proclaimed in 1949 and stands for the fighting spirit of the Chinese people, dating the emblem to the revolution rather than to any dynasty. Above it the five gold stars repeat the national flag: the large star the Communist Party, the four smaller ones the people united behind it.",
+            "sources": [
+              {
+                "title": "National emblem of China — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_China"
+              }
+            ]
+          },
+          "source": "https://en.wikipedia.org/wiki/National_emblem_of_China",
+          "sha256": "a1ef48ec5da5808a58a47bb0d906f11ee4ef97a5632e369b6ad5a191b39ee505",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-passport",
+          "category": "passport",
+          "name": "Chinese passport",
+          "commons": "People's Republic of China Passport 2012.svg",
+          "file": "cn/china-passport.svg",
+          "design": "A dark red cover with the national emblem in gold, reading 中华人民共和国护照.",
+          "source": "https://en.wikipedia.org/wiki/Chinese_passport",
+          "sha256": "0cf3118d54122b8b2812f100c90b2c1b84250b9a6e447f47584ea5df8e6d1f99",
+          "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-official-national",
+          "category": "official",
+          "name": "Flag of the People's Republic of China",
+          "from": 1949,
+          "to": 9999,
+          "reuse": "flags/cn.svg",
+          "design": "The national flag, hoisted 1 October 1949.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_China"
         }
       ]
     }

@@ -9,6 +9,10 @@ import { flagYearLabel } from "../lib/nationalFlags";
  * Shows every flag the country itself flies, beyond its sub-national ones —
  * grouped into sourced categories, each hidden when the country has none:
  *
+ *   Official flags     the flags in force, ALWAYS led by the country's current
+ *                      national flag (badged "Current national flag"), followed by
+ *                      any others with official status — Bolivia's Wiphala,
+ *                      Australia's Aboriginal and Torres Strait Islander flags.
  *   Historical flags   every national flag it has flown, newest first, the current
  *                      one included; the label carries the year each was introduced.
  *                      This section reaches back BEFORE independence, so it also holds
@@ -24,6 +28,15 @@ import { flagYearLabel } from "../lib/nationalFlags";
  *   Civil & state      where the flag the public flies differs from the state flag.
  *   Indigenous flags   officially recognised indigenous flags that are not national
  *                      flags in their own right.
+ *   Coat of arms       the national arms or state emblem, each with a sourced
+ *                      explanation of what its charges STAND FOR.
+ *   Passports          the covers of the country's passports, ordinary and special
+ *                      (diplomatic, official, service).
+ *
+ * A symbol with no freely-licensed image is LISTED ANYWAY, as a card carrying the
+ * reason in place of the picture (`flag.noImageReason`). Dropping it silently is
+ * what made Australia's tab show two of its three official flags and look complete
+ * (owner report, 2026-08) — an invisible gap reads as no gap at all.
  *
  * Sub-national flags are deliberately NOT here — that is the "Sub-national
  * divisions" tab.
@@ -41,17 +54,23 @@ const CATEGORY_HEADINGS: Record<NationalFlagCategory, string> = {
   standard: "Standards",
   civilstate: "Civil & state flags",
   indigenous: "Indigenous flags",
+  coatofarms: "Coat of arms",
+  passport: "Passports",
 };
 
 /** The order the sections appear in — matches the generator's own ordering. */
 const CATEGORY_ORDER: NationalFlagCategory[] = [
-  "historical",
+  // "official" first: the flags in force, headed by the one the country flies.
   "official",
+  "historical",
   "military",
   "maritime",
   "standard",
   "civilstate",
   "indigenous",
+  // Not flags — the country's other national symbols, after every flag section.
+  "coatofarms",
+  "passport",
 ];
 
 type Props = {
@@ -107,24 +126,39 @@ export function NationalFlagGrid({
                     onClick={() => onSelect(flag)}
                     aria-pressed={active}
                     aria-label={
-                      flag.sovereign
-                        ? `Show ${flag.name} — flown under ${flag.sovereign}, before independence`
-                        : `Show ${flag.name}`
+                      flag.primary
+                        ? `${flag.name} — the current national flag, shown in the panel above`
+                        : flag.noImageReason
+                        ? `Show ${flag.name} — no freely-licensed image is available`
+                        : flag.sovereign
+                          ? `Show ${flag.name} — flown under ${flag.sovereign}, before independence`
+                          : `Show ${flag.name}`
                     }
                   >
                     <span className="flag-grid__thumb">
-                      <img
-                        src={`${baseUrl}${flag.path}`}
-                        alt=""
-                        loading="lazy"
-                        draggable={false}
-                        className="flag-grid__thumb-img"
-                        onError={(e) => { e.currentTarget.style.display = "none"; }}
-                      />
+                      {flag.path ? (
+                        <img
+                          src={`${baseUrl}${flag.path}`}
+                          alt=""
+                          loading="lazy"
+                          draggable={false}
+                          className="flag-grid__thumb-img"
+                          onError={(e) => { e.currentTarget.style.display = "none"; }}
+                        />
+                      ) : (
+                        <span className="flag-grid__no-image" aria-hidden="true">
+                          No free image
+                        </span>
+                      )}
                     </span>
                     <span className="flag-grid__name">
                       <AutoFitName className="flag-grid__name-text" text={flag.name} />
                       {years && <span className="flag-grid__flag-sub">{years}</span>}
+                      {flag.primary && (
+                        <span className="flag-grid__primary-badge">
+                          Current national flag
+                        </span>
+                      )}
                       {flag.sovereign && (
                         <span className="flag-grid__sovereign-badge">
                           Under {flag.sovereign}
