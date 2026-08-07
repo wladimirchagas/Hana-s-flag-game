@@ -50,6 +50,7 @@ import {
   eraAllowsModernFlagFallback,
   getEra,
   curatedFlagValidInEra,
+  curatedRulerFor,
   flagExistedInEra,
   eraRuler,
   noFlagIsEraSpecific,
@@ -667,7 +668,11 @@ export default function LearnPage() {
       // date, so the modern-name layer below must not run for it: that layer would hand a
       // colony its post-independence successor's flag (or its ruler's, uncaptioned).
       // Skip straight to the ruler layer, which captions what it shows.
-      const modernName = info.ruler
+      // A curated ruler — from the entry or from ERA_RULER — is a statement that this polity
+      // had NO flag of its own at this date, so the modern-name layer must not run for it:
+      // that layer would hand a colony its successor's flag, or an occupation zone the flag
+      // its country readopted years later, and in both cases with no caption.
+      const modernName = curatedRulerFor(name, eraId)
         ? null
         : polityModernName(name, eraId) ?? // era-overrides + registry.modernName + aliases
           (allowFallback && countryByName.has(name.toLowerCase()) ? name : null);

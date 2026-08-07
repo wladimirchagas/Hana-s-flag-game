@@ -100,6 +100,9 @@ export const POLITY_EXISTENCE: ReadonlyMap<string, PolityExistence> = new Map([
   ["Austrian Empire", { from: 1804, to: 1867, note: "Proclaimed by Francis II on 11 August 1804 and replaced by Austria-Hungary in 1867; in 1700 the Habsburg lands were the Habsburg Monarchy, within the Holy Roman Empire.", source: "https://en.wikipedia.org/wiki/Austrian_Empire" }],
   ["Kingdom of Hawaii", { from: 1795, to: 1893, note: "Overthrown in January 1893; the Republic of Hawaii followed in 1894, annexation by the United States in 1898 and the Territory of Hawaii on 30 April 1900.", source: "https://en.wikipedia.org/wiki/Territory_of_Hawaii" }],
   ["Hail", { from: 1836, to: 1921, note: "The Emirate of Jabal Shammar, ruled from Ha'il by the Rashidi dynasty; it surrendered to Ibn Saud on 2 November 1921 and was absorbed into the Sultanate of Nejd.", source: "https://en.wikipedia.org/wiki/Emirate_of_Jabal_Shammar" }],
+  ["Mali Empire", { from: 1235, to: 1610, note: "Founded after Sundiata's victory at Kirina, c. 1235; the empire fragmented after Mahmud Keita IV's death, c. 1610. The Sosso Empire preceded it and the Keita chiefdom of Kangaba followed it. (The modern Republic of Mali, 1960, is a different polity.)", source: "https://en.wikipedia.org/wiki/Mali_Empire" }],
+  ["Bhutan", { from: 1616, to: 9999, note: "Unified by Ngawang Namgyal from 1616 and consolidated as a state by 1634; before that the territory held separate Tibetan Buddhist principalities.", source: "https://en.wikipedia.org/wiki/History_of_Bhutan" }],
+  ["Philippines", { from: 1543, to: 9999, note: "Villalobos named the islands for Philip II in 1543 and Spain established the captaincy-general in 1565; before that the archipelago held separate polities (Sulu, Maynila, Cebu, Butuan).", source: "https://en.wikipedia.org/wiki/Philippines" }],
   ["Rhodesia", { from: 1965, to: 1979, note: "The name of the unilaterally-independent state, 1965–1979. Southern Rhodesia is the earlier colony.", source: "https://en.wikipedia.org/wiki/Rhodesia" }],
 
   /* --------------------------------------------------------------------------
@@ -154,6 +157,10 @@ export type ExtentCaveat = {
 };
 
 export const ERA_EXTENT_CAVEATS: ReadonlyMap<string, ExtentCaveat> = new Map([
+  // Two upstream labels that name a state centuries before it existed, on territory we
+  // cannot reattribute without inventing a polity — so they are disclosed instead.
+  ["ad1200|Bhutan", { issue: "The 1200 map labels this territory Bhutan.", actual: "Bhutan was unified only from 1616 under Ngawang Namgyal; in 1200 the valleys held separate Tibetan Buddhist principalities.", source: "https://en.wikipedia.org/wiki/History_of_Bhutan" }],
+  ["ad1500|Philippines", { issue: "The 1500 map labels the archipelago the Philippines.", actual: "The name dates from 1543, when Villalobos named the islands for Philip II, and Spanish rule from 1565. In 1500 the archipelago held separate polities — the Sultanate of Sulu, Maynila, Cebu and Butuan among them.", source: "https://en.wikipedia.org/wiki/Philippines" }],
   // The upstream 1938 file still draws the Rashidi emirate of Ha'il, seventeen years after
   // Ibn Saud took it. Its territory was Saudi by then; we disclose rather than redraw.
   ["ad1938|Hail", { issue: "The 1938 map still draws the Rashidi emirate of Ha'il as a separate polity.", actual: "Ha'il had been Saudi for seventeen years by 1938 — the emirate surrendered to Ibn Saud on 2 November 1921, and the Kingdom of Saudi Arabia was proclaimed in 1932.", source: "https://en.wikipedia.org/wiki/Emirate_of_Jabal_Shammar" }],

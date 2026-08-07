@@ -13,7 +13,8 @@
 //   2. a referenced flag path with no window in HISTORICAL_FLAG_VALIDITY (unwindowed is
 //      unchecked, and unchecked is how the anachronisms shipped);
 //   3. any (era, polity) pair whose curated flag would render outside its window;
-//   4. the gate no longer being called from LearnPage / historicalEras.
+//   4. a colony carrying its RULER's flag on its own entry, which loses the caption;
+//   5. the gate no longer being called from LearnPage / historicalEras.
 //
 // Run: node scripts/check-historical-flag-validity.mjs   (npm run eras:check-validity)
 
@@ -34,6 +35,7 @@ const {
   noFlagIsEraSpecific,
   curatedFlagValidInEra,
   eraRuler,
+  curatedRulerFor,
 } = await import(R("../src/lib/historicalEras.ts"));
 const { HISTORICAL_FLAG_VALIDITY } = await import(R("../src/data/historicalFlagValidity.ts"));
 
@@ -92,7 +94,7 @@ for (const era of ERAS) {
     const candidates = [];
     if (info.flag) candidates.push([info.flag, "own entry"]);
     if (!info.flag && !suppressed) {
-      const modern = info.ruler ? null : polityModernName(name, era.id);
+      const modern = curatedRulerFor(name, era.id) ? null : polityModernName(name, era.id);
       if (modern) {
         const aliasFlag = polityInfo(modern, era.id).flag;
         if (aliasFlag) candidates.push([aliasFlag, `alias → ${modern}`]);
@@ -125,6 +127,38 @@ for (const era of ERAS) {
       }
       // A "no-window" candidate is already reported by check 2 above.
     }
+  }
+}
+
+/* ------------------------------------------------------------------- 3b */
+// A colony must never carry its RULER's flag on its own entry. The flag is then resolved by
+// layer 1, so `flagIsRulers` is never set and the panel shows it with NO caption — which
+// says the flag was the colony's own. That is what PolityInfo.ruler / ERA_RULER exist to
+// prevent, and the 2026-08-07 name pass found eight entries still doing it (New France,
+// the Viceroyalty of Peru, 1880 Mozambique, Italian Libya, Somaliland and Ethiopia).
+for (const era of ERAS) {
+  if (!era.dataUrl) continue;
+  const geo = JSON.parse(readFileSync(R(`../public/${era.dataUrl}`), "utf8"));
+  const rulers = new Map();
+  const names = new Set();
+  for (const f of geo.features) {
+    const name = f.properties?.NAME;
+    if (!name || !name.trim()) continue;
+    names.add(name);
+    const ruler = f.properties?.SUBJECTO;
+    if (ruler && ruler !== name) rulers.set(name, ruler);
+  }
+  for (const name of names) {
+    const info = polityInfo(name, era.id);
+    if (!info.flag || !curatedFlagValidInEra(info.flag, era.id).ok) continue;
+    const ruler = eraRuler(name, era.id, rulers.get(name));
+    if (!ruler || ruler === name) continue;
+    if (polityInfo(ruler, era.id).flag !== info.flag) continue;
+    failures.push(
+      `UNCAPTIONED INHERITED FLAG: ${era.id} "${polityDisplayName(name, era.id)}" carries ` +
+        `${info.flag} on its OWN entry, which is ${ruler}'s flag. Drop the flag from the entry and ` +
+        `let the ruler layer supply it, so the panel captions it "Flew the flag of ${ruler}".`,
+    );
   }
 }
 

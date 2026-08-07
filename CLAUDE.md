@@ -521,7 +521,16 @@ finding is fixed by a display-name remap or a disclosed caveat, never by redrawi
 
 ### Auditing an era
 
-`node scripts/audit-era-polities.mjs <eraId>` prints every polity in one era with its display name,
+**Start with the names.** `node scripts/audit-era-names.mjs [eraId]` is the goal-2 step-one
+worksheet: it prints what the panel SHOWS for every polity and flags the ones that need a
+decision — mojibake, dataset typos, a leaked ruler tag ("Algeria (France)"), a dated exonym
+("Manchu Empire" for the Qing), inconsistent capitalisation of one polity across eras, and any
+present-day country name in a pre-1880 era. `NAME_CONFIRMED` inside it is a LEDGER, not an
+exemption list: each row records a name checked against a source and found period-correct, with
+the polity it refers to, so the next pass inherits the verification instead of repeating it.
+Adding a row means "I checked this"; anything uncertain stays flagged.
+
+Then `node scripts/audit-era-polities.mjs <eraId>` prints every polity in one era with its display name,
 its existence verdict, and which layer resolved its flag — the worksheet for checking all three goals
 on a single era, in that order: the name column first, then existence, then the flag. `--gaps`
 narrows it to rows that still need work; `--summary` gives one line per era.
@@ -598,13 +607,26 @@ coverage tracker counted them as covered.
    own — the thing the historical-era flag rule forbids. Set `ruler` when the dataset's `SUBJECTO` is
    silent or self-referential (1920 and 1960 Angola and Mozambique are their own `SUBJECTO` though
    both were Portuguese provinces).
-7. **`ERA_OVERRIDES` must have no duplicate key within one era's map.** It is built from an array of
+7. **A colony must never carry its RULER's flag on its own entry.** Put the flag there and
+   layer 1 resolves it, so `flagIsRulers` is never set and the panel shows it with NO caption —
+   which tells the user the flag was the colony's own. Use `PolityInfo.ruler` or `ERA_RULER`
+   instead and the panel captions it. `check-historical-flag-validity.mjs` fails the build on
+   any entry whose own flag is identical to its era ruler's; the 2026-08-07 name pass found
+   eight (New France, the Viceroyalty of Peru, 1880 Mozambique, Italian Libya, Italian
+   Somaliland in two eras, Italian Ethiopia).
+8. **A curated ruler outranks the modern-name layer.** `curatedRulerFor()` is checked BEFORE
+   the modern-country fallback, because a declared ruler is a statement that the polity had no
+   flag of its own — otherwise the modern layer answers first and hands it a successor's flag,
+   uncaptioned. That is not hypothetical: the 1945 occupation zones resolved to Germany's
+   black-red-gold, which the Allies had **not** restored (abolished 1935, readopted 1949), so
+   the 1949 West German flag flew over the 1945 map.
+9. **`ERA_OVERRIDES` must have no duplicate key within one era's map.** It is built from an array of
    pairs, so a repeated key silently keeps only the LAST — the same shadowing bug the registry rule
    already forbids. The 2026-08 audit found **24** shadowed entries this way (ad800, ad1500, ad1600,
    ad1700, ad1945), including one labelled "duplicate entry for emphasis", and a corrected ad1500
    France entry that had no effect because a later duplicate re-asserted the wrong flag.
-8. **Verify in the running app** (the mandatory visual-verification rule applies): open 1700 and
-   confirm the Manchu Empire explains that China had no flag yet rather than flying the 1889 banner;
+10. **Verify in the running app** (the mandatory visual-verification rule applies): open 1700 and
+   confirm the Qing Empire explains that China had no flag yet rather than flying the 1889 banner;
    open 1900 Angola and confirm Portugal's 1830 monarchy flag with the "Flew the flag of Portugal"
    caption; open 1994 and confirm Spain shows its present flag.
 
