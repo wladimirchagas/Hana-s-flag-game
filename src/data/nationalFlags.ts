@@ -532,6 +532,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "IT": [
     { id: "it-official-national", category: "official", name: "Flag of Italy", from: 1946, to: 9999, primary: true, path: "flags/it.svg", design: "The national flag of Italy, in the form adopted in 1946.", source: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
     { id: "it-current", category: "historical", name: "Flag of Italy", from: 1946, to: 9999, primary: true, path: "flags/it.svg", design: "The national flag of Italy, in the form adopted in 1946.", source: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
+    { id: "it-civil-ensign", category: "maritime", name: "Civil ensign of Italy", from: 1947, to: 9999, path: "national-flags/it/italy-civil-ensign.svg", design: "The tricolour charged with a shield quartering the arms of the four maritime republics — Venice, Genoa, Amalfi and Pisa — without a crown.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
+    { id: "it-state-ensign", category: "maritime", name: "State ensign of Italy", from: 2003, to: 9999, path: "national-flags/it/italy-state-ensign.svg", design: "The same quartered shield beneath a mural crown, worn by state vessels.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
+    { id: "it-president", category: "standard", name: "Standard of the President of Italy", from: 2006, to: 9999, path: "national-flags/it/italy-president.svg", design: "A square blue flag bearing the emblem of the Republic within a gold border.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
+    { id: "it-pm", category: "standard", name: "Standard of the Prime Minister of Italy", from: 2008, to: 9999, path: "national-flags/it/italy-prime-minister.svg", design: "A rectangular blue flag with the emblem of the Republic.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
   ],
   "JM": [
     { id: "jm-official-national", category: "official", name: "Flag of Jamaica", from: 1962, to: 9999, primary: true, path: "flags/jm.svg", design: "The national flag of Jamaica, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
@@ -746,6 +750,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "NL": [
     { id: "nl-official-national", category: "official", name: "Flag of Netherlands", from: 1660, to: 9999, primary: true, path: "flags/nl.svg", design: "The national flag of Netherlands, in the form adopted in 1660.", source: "https://en.wikipedia.org/wiki/Flag_of_Netherlands" },
     { id: "nl-current", category: "historical", name: "Flag of Netherlands", from: 1660, to: 9999, primary: true, path: "flags/nl.svg", design: "The national flag of Netherlands, in the form adopted in 1660.", source: "https://en.wikipedia.org/wiki/Flag_of_Netherlands" },
+    { id: "nl-navy", category: "military", name: "Governmental flag of the Royal Netherlands Navy", from: 2011, to: 9999, path: "national-flags/nl/netherlands-navy.svg", design: "A blue field bearing the navy’s emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
+    { id: "nl-army", category: "military", name: "Flag of the Royal Netherlands Army", path: "national-flags/nl/netherlands-army.svg", design: "A blue field charged with the army’s emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
+    { id: "nl-royal", category: "standard", name: "Royal Standard of the Netherlands", from: 2013, to: 9999, path: "national-flags/nl/netherlands-royal-standard.svg", design: "An orange field quartered by a blue cross, bearing the royal arms with a lion in each quarter.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
   ],
   "NO": [
     { id: "no-official-national", category: "official", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
@@ -790,6 +797,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "PL": [
     { id: "pl-official-national", category: "official", name: "Flag of Poland", from: 1919, to: 9999, primary: true, path: "flags/pl.svg", design: "The national flag of Poland, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
     { id: "pl-current", category: "historical", name: "Flag of Poland", from: 1919, to: 9999, primary: true, path: "flags/pl.svg", design: "The national flag of Poland, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
+    { id: "pl-naval-ensign", category: "maritime", name: "Naval ensign of Poland", path: "national-flags/pl/poland-naval-ensign.svg", design: "A swallow-tailed white-and-red bicolour charged with the national arms.", source: "https://en.wikipedia.org/wiki/List_of_Polish_flags" },
+    { id: "pl-state", category: "civilstate", name: "State flag of Poland", path: "national-flags/pl/poland-state.svg", design: "The white-and-red bicolour charged with the arms of the Republic — flown by state authorities and abroad, while citizens fly the plain bicolour.", source: "https://en.wikipedia.org/wiki/List_of_Polish_flags" },
   ],
   "PS": [
     { id: "ps-official-national", category: "official", name: "Flag of Palestine", from: 1988, to: 9999, primary: true, path: "flags/ps.svg", design: "The national flag of Palestine, in the form adopted in 1988.", source: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
@@ -855,6 +864,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "SE": [
     { id: "se-official-national", category: "official", name: "Flag of Sweden", from: 1562, to: 9999, primary: true, path: "flags/se.svg", design: "The national flag of Sweden, in the form adopted in 1562.", source: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
     { id: "se-current", category: "historical", name: "Flag of Sweden", from: 1562, to: 9999, primary: true, path: "flags/se.svg", design: "The national flag of Sweden, in the form adopted in 1562.", source: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
+    { id: "se-naval-ensign", category: "military", name: "War flag and naval ensign of Sweden", from: 1905, to: 9999, path: "national-flags/se/sweden-naval-ensign.svg", design: "A triple-tailed version of the national flag, flown by the armed forces.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
+    { id: "se-royal", category: "standard", name: "Royal standard of Sweden", from: 1905, to: 9999, path: "national-flags/se/sweden-royal-standard.svg", design: "The triple-tailed war flag charged with the greater coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
+    { id: "se-royal-1844", category: "standard", name: "Royal standard of Sweden (1844–1905)", from: 1844, to: 1905, path: "national-flags/se/sweden-royal-standard-1844.svg", design: "The royal standard as borne during the union with Norway’s later period.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
   ],
   "SG": [
     { id: "sg-official-national", category: "official", name: "Flag of Singapore", from: 1959, to: 9999, primary: true, path: "flags/sg.svg", design: "The national flag of Singapore, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
