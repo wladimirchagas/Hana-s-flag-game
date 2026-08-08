@@ -230,6 +230,30 @@
           "reuse": "flags/ar.svg",
           "design": "The national flag of Argentina, in the form adopted in 1861.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Argentina"
+        },
+        {
+          "id": "ar-civil",
+          "category": "civilstate",
+          "name": "Civil flag of Argentina",
+          "from": 1861,
+          "to": 9999,
+          "commons": "Flag of Argentina (civil).svg",
+          "file": "ar/argentina-civil.svg",
+          "design": "The light-blue and white triband without the Sun of May — the optional civil flag, beside the state flag that carries the sun.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
+          "sha256": "af25758f3de6cdf916d2e3dfccfaeac1d6ca71187b8780624be46255bd79ecba",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ar-president",
+          "category": "standard",
+          "name": "Presidential Standard of Argentina",
+          "commons": "Flag of the President of Argentina.svg",
+          "file": "ar/argentina-president.svg",
+          "design": "The national flag charged with the presidential arms, flown where the president is present.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
+          "sha256": "d1d2933a9f45fe576aff3d94836823a65677b2fb8c7a9b4e37c5b031f14c9e59",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -1450,8 +1474,165 @@
           "reuse": "flags/ca.svg",
           "design": "The national flag of Canada, in the form adopted in 1965.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Canada"
+        },
+        {
+          "id": "ca-royal-union",
+          "category": "official",
+          "name": "Royal Union Flag",
+          "from": 1964,
+          "to": 9999,
+          "reuse": "flags/gb.svg",
+          "design": "The Union Flag, which Parliament resolved in 1964 that Canada would continue to fly on specified days as a symbol of its membership of the Commonwealth.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags"
+        },
+        {
+          "id": "ca-red-ensign-1957",
+          "category": "historical",
+          "name": "Canadian Red Ensign (1957–1965)",
+          "from": 1957,
+          "to": 1965,
+          "commons": "Flag of Canada (1957–1965).svg",
+          "file": "ca/canada-red-ensign-1957.svg",
+          "design": "The 1957 version of the Canadian Red Ensign, which had evolved into the de facto national flag before the Maple Leaf replaced it.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "c61ea4f5437fdfaefd739404b490a5c72e1eb9be0397106fe67bbc7d5bf9ac91",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-red-ensign-1922",
+          "category": "historical",
+          "name": "Canadian Red Ensign (1922–1957)",
+          "from": 1922,
+          "to": 1957,
+          "commons": "Flag of Canada (1921–1957).svg",
+          "file": "ca/canada-red-ensign-1922.svg",
+          "design": "The 1922 version of the Canadian Red Ensign, flown after the grant of the arms of Canada.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "12e8dc87be137bcf7fc5c5c811f6319635375fa25d8762538c34099983ffa311",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-red-ensign-1892",
+          "category": "historical",
+          "name": "Canadian Red Ensign (1892–1922)",
+          "from": 1892,
+          "to": 1922,
+          "commons": "Flag of Canada (1868–1921).svg",
+          "file": "ca/canada-red-ensign-1892.svg",
+          "design": "The Canadian Red Ensign as authorised for use as a civil ensign by Admiralty warrant.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "e14e351904dc7166506f58bc6a501c521ba8a30bdb360fc9cf8b4b75e70816eb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-union-flag",
+          "category": "historical",
+          "name": "Union Flag",
+          "from": 1801,
+          "to": 1964,
+          "reuse": "flags/gb.svg",
+          "design": "The Union Flag, flown over Canada from the union with Ireland in 1801 until the Maple Leaf was adopted.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags"
+        },
+        {
+          "id": "ca-france-royal",
+          "category": "historical",
+          "name": "Royal Banner of France",
+          "from": 1534,
+          "to": 1763,
+          "sovereign": "France",
+          "commons": "Royal flag of France.svg",
+          "file": "ca/new-france-royal-banner.svg",
+          "design": "The Bourbon banner, the flag most commonly flown over New France.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "221a080b4231b758960de05c16b46cb45a9da23d1136f558cdd1e39d12e7e5dd",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-forces",
+          "category": "military",
+          "name": "Flag of the Canadian Armed Forces",
+          "from": 1968,
+          "to": 9999,
+          "commons": "Flag of the Canadian Forces.svg",
+          "file": "ca/canada-forces.svg",
+          "design": "A white field with the national flag in the canton and the Canadian Forces badge in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "1a492c626a65d36cceef48643a21859af91f2728fc13bf7e8d8f6c0fa5726858",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-army",
+          "category": "military",
+          "name": "Flag of the Canadian Army",
+          "from": 2016,
+          "to": 9999,
+          "commons": "Flag of the Canadian Army.svg",
+          "file": "ca/canada-army.svg",
+          "design": "A scarlet field bearing the badge of the Canadian Army.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "a1d7e41b13098590301b1b0c1a9815cb194d0bfe4e85509a7670efab7f78e11a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-navy",
+          "category": "military",
+          "name": "Canadian Naval Ensign",
+          "from": 2013,
+          "to": 9999,
+          "commons": "Naval ensign of Canada.svg",
+          "file": "ca/canada-navy.svg",
+          "design": "A white field with the national flag in the canton and the naval badge in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "cbc0a2bc80bc1569df567a095838e78dce69ef2b43c95134c42cda8e9eb0e4b1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-air-force",
+          "category": "military",
+          "name": "Royal Canadian Air Force Ensign",
+          "from": 1982,
+          "to": 9999,
+          "commons": "Air Force Ensign of Canada.svg",
+          "file": "ca/canada-air-force.svg",
+          "design": "An air-force-blue field with the national flag in the canton and the RCAF roundel in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "fec0685f70db35371e53b09daa01fab35656b74cf107218f74cca4d70b1313b6",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-sovereign",
+          "category": "standard",
+          "name": "Sovereign's Flag for Canada",
+          "from": 2023,
+          "to": 9999,
+          "commons": "Royal Standard of Canada.svg",
+          "file": "ca/canada-sovereign.svg",
+          "design": "A banner of the arms of Canada, used by the sovereign in Canada.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "3ab2601b5838a90742f379793f82f7083706c76053a769959a822ba7af57f1d4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-gg",
+          "category": "standard",
+          "name": "Flag of the Governor General of Canada",
+          "from": 1981,
+          "to": 9999,
+          "commons": "Flag of the Governor-General of Canada.svg",
+          "file": "ca/canada-governor-general.svg",
+          "design": "A blue field bearing the crest of the arms of Canada — a crowned lion holding a maple leaf.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
+          "sha256": "6aee12f877b2ae951443dcd543f54d66a693cebbda323d5710a5cc72b5d5a895",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1867,
+        "event": "Confederation on 1 July 1867 created the Dominion of Canada.",
+        "note": "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.",
+        "source": "https://en.wikipedia.org/wiki/Canadian_Confederation"
+      }
     },
     "CD": {
       "flags": [
@@ -1951,6 +2132,45 @@
           "reuse": "flags/de.svg",
           "design": "The national flag of Germany, in the form adopted in 1919.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Germany"
+        },
+        {
+          "id": "de-state",
+          "category": "civilstate",
+          "name": "State flag of Germany",
+          "from": 1950,
+          "to": 9999,
+          "commons": "Flag of Germany (state).svg",
+          "file": "de/germany-state.svg",
+          "design": "The black-red-gold tricolour charged with the federal shield and its eagle — flown by federal authorities, while the plain tricolour is the civil flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_German_flags",
+          "sha256": "61e2ab80ddd1d76110011dbdf2d8281b6a330ca7d4c43066102c2b9fba35870c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "de-navy",
+          "category": "military",
+          "name": "Naval ensign of Germany",
+          "from": 1956,
+          "to": 9999,
+          "commons": "Naval Ensign of Germany.svg",
+          "file": "de/germany-navy.svg",
+          "design": "A swallowtailed version of the federal state flag, worn as ensign and jack by the German Navy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_German_flags",
+          "sha256": "eb91428ac5d2b48bbcbdcd875db9cddf6ef1b5e5c8c16669ffa6c1b15228def2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "de-president",
+          "category": "standard",
+          "name": "Standard of the President of Germany",
+          "from": 1921,
+          "to": 9999,
+          "commons": "Standard of the President of Germany.svg",
+          "file": "de/germany-president.svg",
+          "design": "A square gold field bearing the black federal eagle within a red border; first used in 1921 and reinstated in 1950.",
+          "source": "https://en.wikipedia.org/wiki/List_of_German_flags",
+          "sha256": "ebb935441db37abbfd1f6cef0da0c2c0fc91054e98bdd0aa6c2f3c0c7e8052fd",
+          "fetched": "2026-08-08"
         }
       ]
     },
