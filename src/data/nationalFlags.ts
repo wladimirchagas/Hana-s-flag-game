@@ -79,6 +79,42 @@ export type NationalFlag = {
 
 /** Keyed by ISO 3166-1 alpha-2. Countries with no curated flags are absent. */
 export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> = {
+  "AD": [
+    { id: "ad-official-national", category: "official", name: "Flag of Andorra", from: 1971, to: 9999, primary: true, path: "flags/ad.svg", design: "The national flag of Andorra, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
+    { id: "ad-current", category: "historical", name: "Flag of Andorra", from: 1971, to: 9999, primary: true, path: "flags/ad.svg", design: "The national flag of Andorra, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
+  ],
+  "AE": [
+    { id: "ae-official-national", category: "official", name: "Flag of United Arab Emirates", from: 1971, to: 9999, primary: true, path: "flags/ae.svg", design: "The national flag of United Arab Emirates, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates" },
+    { id: "ae-current", category: "historical", name: "Flag of United Arab Emirates", from: 1971, to: 9999, primary: true, path: "flags/ae.svg", design: "The national flag of United Arab Emirates, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates" },
+  ],
+  "AF": [
+    { id: "af-official-national", category: "official", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
+    { id: "af-current", category: "historical", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
+  ],
+  "AG": [
+    { id: "ag-official-national", category: "official", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag of Antigua and Barbuda, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
+    { id: "ag-current", category: "historical", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag of Antigua and Barbuda, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
+  ],
+  "AL": [
+    { id: "al-official-national", category: "official", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    { id: "al-current", category: "historical", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+  ],
+  "AM": [
+    { id: "am-official-national", category: "official", name: "Flag of Armenia", from: 1990, to: 9999, primary: true, path: "flags/am.svg", design: "The national flag of Armenia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
+    { id: "am-current", category: "historical", name: "Flag of Armenia", from: 1990, to: 9999, primary: true, path: "flags/am.svg", design: "The national flag of Armenia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
+  ],
+  "AO": [
+    { id: "ao-official-national", category: "official", name: "Flag of Angola", from: 1975, to: 9999, primary: true, path: "flags/ao.svg", design: "The national flag of Angola, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
+    { id: "ao-current", category: "historical", name: "Flag of Angola", from: 1975, to: 9999, primary: true, path: "flags/ao.svg", design: "The national flag of Angola, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
+  ],
+  "AR": [
+    { id: "ar-official-national", category: "official", name: "Flag of Argentina", from: 1861, to: 9999, primary: true, path: "flags/ar.svg", design: "The national flag of Argentina, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
+    { id: "ar-current", category: "historical", name: "Flag of Argentina", from: 1861, to: 9999, primary: true, path: "flags/ar.svg", design: "The national flag of Argentina, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
+  ],
+  "AT": [
+    { id: "at-official-national", category: "official", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
+    { id: "at-current", category: "historical", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
+  ],
   "AU": [
     { id: "au-official-national", category: "official", name: "Australian National Flag", from: 1908, to: 9999, primary: true, path: "flags/au.svg", design: "Proclaimed under the Flags Act 1953 as the flag of the Commonwealth of Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-aboriginal", category: "official", name: "Australian Aboriginal Flag", from: 1971, to: 9999, path: "national-flags/au/australia-aboriginal.svg", design: "Black over red with a yellow disc at the centre; proclaimed a Flag of Australia in 1995.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
@@ -96,6 +132,50 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-gg", category: "standard", name: "Flag of the Governor-General of Australia", from: 1936, to: 9999, path: "national-flags/au/australia-governor-general.svg", design: "A crowned lion standing on a crown, on a blue field.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
     { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.webp", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.", source: "https://gicg.net/passport/au/" },
+  ],
+  "AZ": [
+    { id: "az-official-national", category: "official", name: "Flag of Azerbaijan", from: 1918, to: 9999, primary: true, path: "flags/az.svg", design: "The national flag of Azerbaijan, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
+    { id: "az-current", category: "historical", name: "Flag of Azerbaijan", from: 1918, to: 9999, primary: true, path: "flags/az.svg", design: "The national flag of Azerbaijan, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
+  ],
+  "BA": [
+    { id: "ba-official-national", category: "official", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
+    { id: "ba-current", category: "historical", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
+  ],
+  "BB": [
+    { id: "bb-official-national", category: "official", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
+    { id: "bb-current", category: "historical", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
+  ],
+  "BD": [
+    { id: "bd-official-national", category: "official", name: "Flag of Bangladesh", from: 1972, to: 9999, primary: true, path: "flags/bd.svg", design: "The national flag of Bangladesh, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+    { id: "bd-current", category: "historical", name: "Flag of Bangladesh", from: 1972, to: 9999, primary: true, path: "flags/bd.svg", design: "The national flag of Bangladesh, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+  ],
+  "BE": [
+    { id: "be-official-national", category: "official", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
+    { id: "be-current", category: "historical", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
+  ],
+  "BF": [
+    { id: "bf-official-national", category: "official", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag of Burkina Faso, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
+    { id: "bf-current", category: "historical", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag of Burkina Faso, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
+  ],
+  "BG": [
+    { id: "bg-official-national", category: "official", name: "Flag of Bulgaria", from: 1879, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in the form adopted in 1879.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-current", category: "historical", name: "Flag of Bulgaria", from: 1879, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in the form adopted in 1879.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+  ],
+  "BH": [
+    { id: "bh-official-national", category: "official", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag of Bahrain, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    { id: "bh-current", category: "historical", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag of Bahrain, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+  ],
+  "BI": [
+    { id: "bi-official-national", category: "official", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag of Burundi, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+    { id: "bi-current", category: "historical", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag of Burundi, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+  ],
+  "BJ": [
+    { id: "bj-official-national", category: "official", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "The national flag of Benin, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    { id: "bj-current", category: "historical", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "The national flag of Benin, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+  ],
+  "BN": [
+    { id: "bn-official-national", category: "official", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
+    { id: "bn-current", category: "historical", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
   ],
   "BO": [
     { id: "bo-official-national", category: "official", name: "Flag of Bolivia", from: 1851, to: 9999, primary: true, path: "flags/bo.svg", design: "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.", source: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
@@ -137,6 +217,58 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "br-arms", category: "coatofarms", name: "Coat of arms of Brazil", path: "national-flags/br/brazil-arms.svg", design: "A blue disc bearing the Southern Cross, ringed by 27 stars, on a star-shaped emblem framed by coffee and tobacco branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
     { id: "br-passport", category: "passport", name: "Brazilian passport", path: "national-flags/br/brazil-passport.webp", design: "A blue Mercosur cover: MERCOSUL/MERCOSUR across the top, REPÚBLICA FEDERATIVA DO BRASIL, the national arms in gold, and PASSAPORTE beneath.", source: "https://gicg.net/passport/br/" },
   ],
+  "BS": [
+    { id: "bs-official-national", category: "official", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
+    { id: "bs-current", category: "historical", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
+  ],
+  "BT": [
+    { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag of Bhutan, in the form adopted in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+    { id: "bt-current", category: "historical", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag of Bhutan, in the form adopted in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+  ],
+  "BW": [
+    { id: "bw-official-national", category: "official", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "The national flag of Botswana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+    { id: "bw-current", category: "historical", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "The national flag of Botswana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+  ],
+  "BY": [
+    { id: "by-official-national", category: "official", name: "Flag of Belarus", from: 1995, to: 9999, primary: true, path: "flags/by.svg", design: "The national flag of Belarus, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Belarus" },
+    { id: "by-current", category: "historical", name: "Flag of Belarus", from: 1995, to: 9999, primary: true, path: "flags/by.svg", design: "The national flag of Belarus, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Belarus" },
+  ],
+  "BZ": [
+    { id: "bz-official-national", category: "official", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "The national flag of Belize, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
+    { id: "bz-current", category: "historical", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "The national flag of Belize, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
+  ],
+  "CA": [
+    { id: "ca-official-national", category: "official", name: "Flag of Canada", from: 1965, to: 9999, primary: true, path: "flags/ca.svg", design: "The national flag of Canada, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Canada" },
+    { id: "ca-current", category: "historical", name: "Flag of Canada", from: 1965, to: 9999, primary: true, path: "flags/ca.svg", design: "The national flag of Canada, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Canada" },
+  ],
+  "CD": [
+    { id: "cd-official-national", category: "official", name: "Flag of Congo (DRC)", from: 2006, to: 9999, primary: true, path: "flags/cd.svg", design: "The national flag of Congo (DRC), in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Congo_(DRC)" },
+    { id: "cd-current", category: "historical", name: "Flag of Congo (DRC)", from: 2006, to: 9999, primary: true, path: "flags/cd.svg", design: "The national flag of Congo (DRC), in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Congo_(DRC)" },
+  ],
+  "CF": [
+    { id: "cf-official-national", category: "official", name: "Flag of Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "The national flag of Central African Republic, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Central_African_Republic" },
+    { id: "cf-current", category: "historical", name: "Flag of Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "The national flag of Central African Republic, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Central_African_Republic" },
+  ],
+  "CG": [
+    { id: "cg-official-national", category: "official", name: "Flag of Congo", from: 1959, to: 9999, primary: true, path: "flags/cg.svg", design: "The national flag of Congo, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Congo" },
+    { id: "cg-current", category: "historical", name: "Flag of Congo", from: 1959, to: 9999, primary: true, path: "flags/cg.svg", design: "The national flag of Congo, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Congo" },
+  ],
+  "CH": [
+    { id: "ch-official-national", category: "official", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
+    { id: "ch-current", category: "historical", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
+  ],
+  "CI": [
+    { id: "ci-official-national", category: "official", name: "Flag of Côte d’Ivoire", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Côte d’Ivoire, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire" },
+    { id: "ci-current", category: "historical", name: "Flag of Côte d’Ivoire", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Côte d’Ivoire, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire" },
+  ],
+  "CL": [
+    { id: "cl-official-national", category: "official", name: "Flag of Chile", from: 1817, to: 9999, primary: true, path: "flags/cl.svg", design: "The national flag of Chile, in the form adopted in 1817.", source: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
+    { id: "cl-current", category: "historical", name: "Flag of Chile", from: 1817, to: 9999, primary: true, path: "flags/cl.svg", design: "The national flag of Chile, in the form adopted in 1817.", source: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
+  ],
+  "CM": [
+    { id: "cm-official-national", category: "official", name: "Flag of Cameroon", from: 1975, to: 9999, primary: true, path: "flags/cm.svg", design: "The national flag of Cameroon, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+    { id: "cm-current", category: "historical", name: "Flag of Cameroon", from: 1975, to: 9999, primary: true, path: "flags/cm.svg", design: "The national flag of Cameroon, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+  ],
   "CN": [
     { id: "cn-official-national", category: "official", name: "Flag of the People's Republic of China", from: 1949, to: 9999, primary: true, path: "flags/cn.svg", design: "The national flag, hoisted 1 October 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_China" },
     { id: "cn-1949", category: "historical", name: "Flag of the People's Republic of China", from: 1949, to: 9999, primary: true, path: "flags/cn.svg", design: "A red field with one large gold star and four smaller stars in an arc, hoisted on 1 October 1949.", source: "https://en.wikipedia.org/wiki/List_of_Chinese_flags" },
@@ -151,6 +283,70 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cn-arms", category: "coatofarms", name: "National Emblem of China", path: "national-flags/cn/china-emblem.svg", design: "Tiananmen Gate beneath five gold stars, in a red circle framed by ears of grain and a cogwheel.", source: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
     { id: "cn-passport", category: "passport", name: "Chinese passport", path: "national-flags/cn/china-passport.svg", design: "A dark red cover with the national emblem in gold, reading 中华人民共和国护照.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
     { id: "cn-passport-seafarer", category: "passport", name: "Chinese seafarer's passport", path: "national-flags/cn/china-passport-seafarer.svg", design: "A cover for merchant seafarers, issued alongside the ordinary passport.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
+  ],
+  "CO": [
+    { id: "co-official-national", category: "official", name: "Flag of Colombia", from: 1861, to: 9999, primary: true, path: "flags/co.svg", design: "The national flag of Colombia, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
+    { id: "co-current", category: "historical", name: "Flag of Colombia", from: 1861, to: 9999, primary: true, path: "flags/co.svg", design: "The national flag of Colombia, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
+  ],
+  "CR": [
+    { id: "cr-official-national", category: "official", name: "Flag of Costa Rica", from: 1848, to: 9999, primary: true, path: "flags/cr.svg", design: "The national flag of Costa Rica, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    { id: "cr-current", category: "historical", name: "Flag of Costa Rica", from: 1848, to: 9999, primary: true, path: "flags/cr.svg", design: "The national flag of Costa Rica, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+  ],
+  "CU": [
+    { id: "cu-official-national", category: "official", name: "Flag of Cuba", from: 1849, to: 9999, primary: true, path: "flags/cu.svg", design: "The national flag of Cuba, in the form adopted in 1849.", source: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    { id: "cu-current", category: "historical", name: "Flag of Cuba", from: 1849, to: 9999, primary: true, path: "flags/cu.svg", design: "The national flag of Cuba, in the form adopted in 1849.", source: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+  ],
+  "CV": [
+    { id: "cv-official-national", category: "official", name: "Flag of Cabo Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag of Cabo Verde, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cabo_Verde" },
+    { id: "cv-current", category: "historical", name: "Flag of Cabo Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag of Cabo Verde, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cabo_Verde" },
+  ],
+  "CY": [
+    { id: "cy-official-national", category: "official", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+    { id: "cy-current", category: "historical", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+  ],
+  "CZ": [
+    { id: "cz-official-national", category: "official", name: "Flag of Czechia", from: 1993, to: 9999, primary: true, path: "flags/cz.svg", design: "The national flag of Czechia, in the form adopted in 1993.", source: "https://en.wikipedia.org/wiki/Flag_of_Czechia" },
+    { id: "cz-current", category: "historical", name: "Flag of Czechia", from: 1993, to: 9999, primary: true, path: "flags/cz.svg", design: "The national flag of Czechia, in the form adopted in 1993.", source: "https://en.wikipedia.org/wiki/Flag_of_Czechia" },
+  ],
+  "DE": [
+    { id: "de-official-national", category: "official", name: "Flag of Germany", from: 1919, to: 9999, primary: true, path: "flags/de.svg", design: "The national flag of Germany, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Germany" },
+    { id: "de-current", category: "historical", name: "Flag of Germany", from: 1919, to: 9999, primary: true, path: "flags/de.svg", design: "The national flag of Germany, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Germany" },
+  ],
+  "DJ": [
+    { id: "dj-official-national", category: "official", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag of Djibouti, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+    { id: "dj-current", category: "historical", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag of Djibouti, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+  ],
+  "DK": [
+    { id: "dk-official-national", category: "official", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
+    { id: "dk-current", category: "historical", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
+  ],
+  "DM": [
+    { id: "dm-official-national", category: "official", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag of Dominica, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+    { id: "dm-current", category: "historical", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag of Dominica, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+  ],
+  "DO": [
+    { id: "do-official-national", category: "official", name: "Flag of Dominican Republic", from: 1862, to: 9999, primary: true, path: "flags/do.svg", design: "The national flag of Dominican Republic, in the form adopted in 1862.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominican_Republic" },
+    { id: "do-current", category: "historical", name: "Flag of Dominican Republic", from: 1862, to: 9999, primary: true, path: "flags/do.svg", design: "The national flag of Dominican Republic, in the form adopted in 1862.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominican_Republic" },
+  ],
+  "DZ": [
+    { id: "dz-official-national", category: "official", name: "Flag of Algeria", from: 1962, to: 9999, primary: true, path: "flags/dz.svg", design: "The national flag of Algeria, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+    { id: "dz-current", category: "historical", name: "Flag of Algeria", from: 1962, to: 9999, primary: true, path: "flags/dz.svg", design: "The national flag of Algeria, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+  ],
+  "EC": [
+    { id: "ec-official-national", category: "official", name: "Flag of Ecuador", from: 1900, to: 9999, primary: true, path: "flags/ec.svg", design: "The national flag of Ecuador, in the form adopted in 1900.", source: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
+    { id: "ec-current", category: "historical", name: "Flag of Ecuador", from: 1900, to: 9999, primary: true, path: "flags/ec.svg", design: "The national flag of Ecuador, in the form adopted in 1900.", source: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
+  ],
+  "EE": [
+    { id: "ee-official-national", category: "official", name: "Flag of Estonia", from: 1918, to: 9999, primary: true, path: "flags/ee.svg", design: "The national flag of Estonia, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
+    { id: "ee-current", category: "historical", name: "Flag of Estonia", from: 1918, to: 9999, primary: true, path: "flags/ee.svg", design: "The national flag of Estonia, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
+  ],
+  "EG": [
+    { id: "eg-official-national", category: "official", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
+    { id: "eg-current", category: "historical", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
+  ],
+  "ER": [
+    { id: "er-official-national", category: "official", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag of Eritrea, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
+    { id: "er-current", category: "historical", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag of Eritrea, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
   ],
   "ES": [
     { id: "es-official-national", category: "official", name: "Flag of Spain", from: 1981, to: 9999, primary: true, path: "flags/es.svg", design: "The national flag and ensign, under Article 4 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
@@ -168,6 +364,22 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "es-arms", category: "coatofarms", name: "Coat of arms of Spain", path: "national-flags/es/spain-arms.svg", design: "A quartered shield of Castile, León, Aragón and Navarre with Granada in base, between the Pillars of Hercules.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
     { id: "es-passport", category: "passport", name: "Spanish passport", path: "national-flags/es/spain-passport.svg", design: "A burgundy cover reading UNIÓN EUROPEA above ESPAÑA, with the Spanish coat of arms in gold.", source: "https://en.wikipedia.org/wiki/Spanish_passport" },
   ],
+  "ET": [
+    { id: "et-official-national", category: "official", name: "Flag of Ethiopia", from: 1996, to: 9999, primary: true, path: "flags/et.svg", design: "The national flag of Ethiopia, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+    { id: "et-current", category: "historical", name: "Flag of Ethiopia", from: 1996, to: 9999, primary: true, path: "flags/et.svg", design: "The national flag of Ethiopia, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+  ],
+  "FI": [
+    { id: "fi-official-national", category: "official", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
+    { id: "fi-current", category: "historical", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
+  ],
+  "FJ": [
+    { id: "fj-official-national", category: "official", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag of Fiji, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
+    { id: "fj-current", category: "historical", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag of Fiji, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
+  ],
+  "FM": [
+    { id: "fm-official-national", category: "official", name: "Flag of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "The national flag of Micronesia, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Micronesia" },
+    { id: "fm-current", category: "historical", name: "Flag of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "The national flag of Micronesia, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Micronesia" },
+  ],
   "FR": [
     { id: "fr-official-national", category: "official", name: "Flag of France", from: 1830, to: 9999, primary: true, path: "flags/fr.svg", design: "The national flag, named in Article 2 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_France" },
     { id: "fr-tricolore", category: "historical", name: "Flag of France (the Tricolore)", from: 1830, to: 9999, primary: true, path: "flags/fr.svg", design: "Three vertical bands of blue, white and red. The darker navy of the original was restored in 2020, after a lighter version had been used since 1976.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
@@ -176,6 +388,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fr-naval-ensign", category: "maritime", name: "Naval ensign of France", from: 1853, to: 9999, path: "national-flags/fr/france-naval-ensign.svg", design: "The Tricolore in the navy's own proportions, with the three bands of unequal width so they appear equal when flying.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
     { id: "fr-arms", category: "coatofarms", name: "Emblem of the French Republic", path: "national-flags/fr/france-emblem.svg", design: "A lictor’s fasces on crossed oak and laurel branches, with a ribbon bearing the republic’s motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_France" },
     { id: "fr-passport", category: "passport", name: "French passport", path: "national-flags/fr/france-passport.svg", design: "A burgundy cover reading UNION EUROPÉENNE above RÉPUBLIQUE FRANÇAISE, with the republic's emblem in gold.", source: "https://en.wikipedia.org/wiki/French_passport" },
+  ],
+  "GA": [
+    { id: "ga-official-national", category: "official", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "The national flag of Gabon, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
+    { id: "ga-current", category: "historical", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "The national flag of Gabon, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
   ],
   "GB": [
     { id: "gb-official-national", category: "official", name: "Union Flag", from: 1801, to: 9999, primary: true, path: "flags/gb.svg", design: "The national flag of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Union_Jack" },
@@ -197,6 +413,74 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gb-passport-diplomatic", category: "passport", name: "British diplomatic passport", path: "national-flags/gb/uk-passport-diplomatic.svg", design: "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-official", category: "passport", name: "British official passport", path: "national-flags/gb/uk-passport-official.svg", design: "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
   ],
+  "GD": [
+    { id: "gd-official-national", category: "official", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "The national flag of Grenada, in the form adopted in 1974.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    { id: "gd-current", category: "historical", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "The national flag of Grenada, in the form adopted in 1974.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+  ],
+  "GE": [
+    { id: "ge-official-national", category: "official", name: "Flag of Georgia", from: 2004, to: 9999, primary: true, path: "flags/ge.svg", design: "The national flag of Georgia, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Georgia" },
+    { id: "ge-current", category: "historical", name: "Flag of Georgia", from: 2004, to: 9999, primary: true, path: "flags/ge.svg", design: "The national flag of Georgia, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Georgia" },
+  ],
+  "GH": [
+    { id: "gh-official-national", category: "official", name: "Flag of Ghana", from: 1957, to: 9999, primary: true, path: "flags/gh.svg", design: "The national flag of Ghana, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Ghana" },
+    { id: "gh-current", category: "historical", name: "Flag of Ghana", from: 1957, to: 9999, primary: true, path: "flags/gh.svg", design: "The national flag of Ghana, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Ghana" },
+  ],
+  "GM": [
+    { id: "gm-official-national", category: "official", name: "Flag of Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag of Gambia, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Gambia" },
+    { id: "gm-current", category: "historical", name: "Flag of Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag of Gambia, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Gambia" },
+  ],
+  "GN": [
+    { id: "gn-official-national", category: "official", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "The national flag of Guinea, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
+    { id: "gn-current", category: "historical", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "The national flag of Guinea, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
+  ],
+  "GQ": [
+    { id: "gq-official-national", category: "official", name: "Flag of Equatorial Guinea", from: 1979, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag of Equatorial Guinea, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
+    { id: "gq-current", category: "historical", name: "Flag of Equatorial Guinea", from: 1979, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag of Equatorial Guinea, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
+  ],
+  "GR": [
+    { id: "gr-official-national", category: "official", name: "Flag of Greece", from: 1822, to: 9999, primary: true, path: "flags/gr.svg", design: "The national flag of Greece, in the form adopted in 1822.", source: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
+    { id: "gr-current", category: "historical", name: "Flag of Greece", from: 1822, to: 9999, primary: true, path: "flags/gr.svg", design: "The national flag of Greece, in the form adopted in 1822.", source: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
+  ],
+  "GT": [
+    { id: "gt-official-national", category: "official", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag of Guatemala, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
+    { id: "gt-current", category: "historical", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag of Guatemala, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
+  ],
+  "GW": [
+    { id: "gw-official-national", category: "official", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag of Guinea-Bissau, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    { id: "gw-current", category: "historical", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag of Guinea-Bissau, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+  ],
+  "GY": [
+    { id: "gy-official-national", category: "official", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
+    { id: "gy-current", category: "historical", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
+  ],
+  "HN": [
+    { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag of Honduras, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
+    { id: "hn-current", category: "historical", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag of Honduras, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
+  ],
+  "HR": [
+    { id: "hr-official-national", category: "official", name: "Flag of Croatia", from: 1990, to: 9999, primary: true, path: "flags/hr.svg", design: "The national flag of Croatia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    { id: "hr-current", category: "historical", name: "Flag of Croatia", from: 1990, to: 9999, primary: true, path: "flags/hr.svg", design: "The national flag of Croatia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+  ],
+  "HT": [
+    { id: "ht-official-national", category: "official", name: "Flag of Haiti", from: 1806, to: 9999, primary: true, path: "flags/ht.svg", design: "The national flag of Haiti, in the form adopted in 1806.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+    { id: "ht-current", category: "historical", name: "Flag of Haiti", from: 1806, to: 9999, primary: true, path: "flags/ht.svg", design: "The national flag of Haiti, in the form adopted in 1806.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+  ],
+  "HU": [
+    { id: "hu-official-national", category: "official", name: "Flag of Hungary", from: 1957, to: 9999, primary: true, path: "flags/hu.svg", design: "The national flag of Hungary, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Hungary" },
+    { id: "hu-current", category: "historical", name: "Flag of Hungary", from: 1957, to: 9999, primary: true, path: "flags/hu.svg", design: "The national flag of Hungary, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Hungary" },
+  ],
+  "ID": [
+    { id: "id-official-national", category: "official", name: "Flag of Indonesia", from: 1945, to: 9999, primary: true, path: "flags/id.svg", design: "The national flag of Indonesia, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Indonesia" },
+    { id: "id-current", category: "historical", name: "Flag of Indonesia", from: 1945, to: 9999, primary: true, path: "flags/id.svg", design: "The national flag of Indonesia, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Indonesia" },
+  ],
+  "IE": [
+    { id: "ie-official-national", category: "official", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
+    { id: "ie-current", category: "historical", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
+  ],
+  "IL": [
+    { id: "il-official-national", category: "official", name: "Flag of Israel", from: 1948, to: 9999, primary: true, path: "flags/il.svg", design: "The national flag of Israel, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
+    { id: "il-current", category: "historical", name: "Flag of Israel", from: 1948, to: 9999, primary: true, path: "flags/il.svg", design: "The national flag of Israel, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
+  ],
   "IN": [
     { id: "in-official-national", category: "official", name: "Flag of India (Tiranga)", from: 1947, to: 9999, primary: true, path: "flags/in.svg", design: "The national flag, adopted 22 July 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_India" },
     { id: "in-1947", category: "historical", name: "Flag of India (Tiranga)", from: 1947, to: 9999, primary: true, path: "flags/in.svg", design: "A horizontal tricolour of saffron, white and green with the navy-blue Ashoka Chakra of 24 spokes at the centre; adopted 22 July 1947.", source: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
@@ -214,6 +498,30 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "in-passport-official", category: "passport", name: "Indian official passport", path: "national-flags/in/india-passport-official.svg", design: "A white cover with the State Emblem, issued to officials travelling on government business.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
     { id: "in-passport-emergency", category: "passport", name: "Indian Emergency Certificate", path: "national-flags/in/india-emergency-certificate.svg", design: "A one-way travel document issued by Indian missions abroad to nationals without a valid passport.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
   ],
+  "IQ": [
+    { id: "iq-official-national", category: "official", name: "Flag of Iraq", from: 2008, to: 9999, primary: true, path: "flags/iq.svg", design: "The national flag of Iraq, in the form adopted in 2008.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-current", category: "historical", name: "Flag of Iraq", from: 2008, to: 9999, primary: true, path: "flags/iq.svg", design: "The national flag of Iraq, in the form adopted in 2008.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+  ],
+  "IR": [
+    { id: "ir-official-national", category: "official", name: "Flag of Iran", from: 1980, to: 9999, primary: true, path: "flags/ir.svg", design: "The national flag of Iran, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+    { id: "ir-current", category: "historical", name: "Flag of Iran", from: 1980, to: 9999, primary: true, path: "flags/ir.svg", design: "The national flag of Iran, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+  ],
+  "IS": [
+    { id: "is-official-national", category: "official", name: "Flag of Iceland", from: 1944, to: 9999, primary: true, path: "flags/is.svg", design: "The national flag of Iceland, in the form adopted in 1944.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
+    { id: "is-current", category: "historical", name: "Flag of Iceland", from: 1944, to: 9999, primary: true, path: "flags/is.svg", design: "The national flag of Iceland, in the form adopted in 1944.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
+  ],
+  "IT": [
+    { id: "it-official-national", category: "official", name: "Flag of Italy", from: 1946, to: 9999, primary: true, path: "flags/it.svg", design: "The national flag of Italy, in the form adopted in 1946.", source: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
+    { id: "it-current", category: "historical", name: "Flag of Italy", from: 1946, to: 9999, primary: true, path: "flags/it.svg", design: "The national flag of Italy, in the form adopted in 1946.", source: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
+  ],
+  "JM": [
+    { id: "jm-official-national", category: "official", name: "Flag of Jamaica", from: 1962, to: 9999, primary: true, path: "flags/jm.svg", design: "The national flag of Jamaica, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+    { id: "jm-current", category: "historical", name: "Flag of Jamaica", from: 1962, to: 9999, primary: true, path: "flags/jm.svg", design: "The national flag of Jamaica, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+  ],
+  "JO": [
+    { id: "jo-official-national", category: "official", name: "Flag of Jordan", from: 1928, to: 9999, primary: true, path: "flags/jo.svg", design: "The national flag of Jordan, in the form adopted in 1928.", source: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+    { id: "jo-current", category: "historical", name: "Flag of Jordan", from: 1928, to: 9999, primary: true, path: "flags/jo.svg", design: "The national flag of Jordan, in the form adopted in 1928.", source: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
+  ],
   "JP": [
     { id: "jp-official-national", category: "official", name: "Flag of Japan (Hinomaru)", from: 1999, to: 9999, primary: true, path: "flags/jp.svg", design: "The national flag, under the Act on National Flag and Anthem of 1999.", source: "https://en.wikipedia.org/wiki/Flag_of_Japan" },
     { id: "jp-1999", category: "historical", name: "Flag of Japan (Hinomaru)", from: 1999, to: 9999, primary: true, path: "flags/jp.svg", design: "A crimson disc centred on white, at 2:3 — the proportions and placement fixed by the Act on National Flag and Anthem of 13 August 1999.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
@@ -225,6 +533,154 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "jp-emperor", category: "standard", name: "Imperial Standard of the Emperor of Japan", from: 1869, to: 9999, path: "national-flags/jp/japan-emperor.svg", design: "A gold sixteen-petal chrysanthemum centred on red.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
     { id: "jp-arms", category: "coatofarms", name: "Imperial Seal of Japan", path: "national-flags/jp/japan-imperial-seal.svg", design: "A yellow chrysanthemum of sixteen petals, with a second set of sixteen showing behind them.", source: "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan" },
     { id: "jp-passport", category: "passport", name: "Japanese passport", path: "national-flags/jp/japan-passport.webp", design: "A dark red cover (ordinary passports) bearing the paulownia Government Seal in gold, with 日本国旅券 / JAPAN PASSPORT.", source: "https://gicg.net/passport/jp/" },
+  ],
+  "KE": [
+    { id: "ke-official-national", category: "official", name: "Flag of Kenya", from: 1963, to: 9999, primary: true, path: "flags/ke.svg", design: "The national flag of Kenya, in the form adopted in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
+    { id: "ke-current", category: "historical", name: "Flag of Kenya", from: 1963, to: 9999, primary: true, path: "flags/ke.svg", design: "The national flag of Kenya, in the form adopted in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
+  ],
+  "KG": [
+    { id: "kg-official-national", category: "official", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "The national flag of Kyrgyzstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    { id: "kg-current", category: "historical", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "The national flag of Kyrgyzstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+  ],
+  "KH": [
+    { id: "kh-official-national", category: "official", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+    { id: "kh-current", category: "historical", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+  ],
+  "KI": [
+    { id: "ki-official-national", category: "official", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag of Kiribati, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
+    { id: "ki-current", category: "historical", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag of Kiribati, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
+  ],
+  "KM": [
+    { id: "km-official-national", category: "official", name: "Flag of Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag of Comoros, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Comoros" },
+    { id: "km-current", category: "historical", name: "Flag of Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag of Comoros, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Comoros" },
+  ],
+  "KN": [
+    { id: "kn-official-national", category: "official", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "The national flag of Saint Kitts and Nevis, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
+    { id: "kn-current", category: "historical", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "The national flag of Saint Kitts and Nevis, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
+  ],
+  "KP": [
+    { id: "kp-official-national", category: "official", name: "Flag of North Korea", from: 1948, to: 9999, primary: true, path: "flags/kp.svg", design: "The national flag of North Korea, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
+    { id: "kp-current", category: "historical", name: "Flag of North Korea", from: 1948, to: 9999, primary: true, path: "flags/kp.svg", design: "The national flag of North Korea, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
+  ],
+  "KR": [
+    { id: "kr-official-national", category: "official", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
+    { id: "kr-current", category: "historical", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
+  ],
+  "KW": [
+    { id: "kw-official-national", category: "official", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
+    { id: "kw-current", category: "historical", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
+  ],
+  "KZ": [
+    { id: "kz-official-national", category: "official", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+    { id: "kz-current", category: "historical", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+  ],
+  "LA": [
+    { id: "la-official-national", category: "official", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+    { id: "la-current", category: "historical", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+  ],
+  "LB": [
+    { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, in the form adopted in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-current", category: "historical", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, in the form adopted in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+  ],
+  "LC": [
+    { id: "lc-official-national", category: "official", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag of Saint Lucia, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
+    { id: "lc-current", category: "historical", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag of Saint Lucia, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
+  ],
+  "LI": [
+    { id: "li-official-national", category: "official", name: "Flag of Liechtenstein", from: 1921, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag of Liechtenstein, in the form adopted in 1921.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    { id: "li-current", category: "historical", name: "Flag of Liechtenstein", from: 1921, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag of Liechtenstein, in the form adopted in 1921.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+  ],
+  "LK": [
+    { id: "lk-official-national", category: "official", name: "Flag of Sri Lanka", from: 1972, to: 9999, primary: true, path: "flags/lk.svg", design: "The national flag of Sri Lanka, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
+    { id: "lk-current", category: "historical", name: "Flag of Sri Lanka", from: 1972, to: 9999, primary: true, path: "flags/lk.svg", design: "The national flag of Sri Lanka, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
+  ],
+  "LR": [
+    { id: "lr-official-national", category: "official", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag of Liberia, in the form adopted in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
+    { id: "lr-current", category: "historical", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag of Liberia, in the form adopted in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
+  ],
+  "LS": [
+    { id: "ls-official-national", category: "official", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "The national flag of Lesotho, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    { id: "ls-current", category: "historical", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "The national flag of Lesotho, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+  ],
+  "LT": [
+    { id: "lt-official-national", category: "official", name: "Flag of Lithuania", from: 1918, to: 9999, primary: true, path: "flags/lt.svg", design: "The national flag of Lithuania, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
+    { id: "lt-current", category: "historical", name: "Flag of Lithuania", from: 1918, to: 9999, primary: true, path: "flags/lt.svg", design: "The national flag of Lithuania, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
+  ],
+  "LU": [
+    { id: "lu-official-national", category: "official", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
+    { id: "lu-current", category: "historical", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
+  ],
+  "LV": [
+    { id: "lv-official-national", category: "official", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
+    { id: "lv-current", category: "historical", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
+  ],
+  "LY": [
+    { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 1951, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, in the form adopted in 1951.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-current", category: "historical", name: "Flag of Libya", from: 1951, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, in the form adopted in 1951.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+  ],
+  "MA": [
+    { id: "ma-official-national", category: "official", name: "Flag of Morocco", from: 1915, to: 9999, primary: true, path: "flags/ma.svg", design: "The national flag of Morocco, in the form adopted in 1915.", source: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
+    { id: "ma-current", category: "historical", name: "Flag of Morocco", from: 1915, to: 9999, primary: true, path: "flags/ma.svg", design: "The national flag of Morocco, in the form adopted in 1915.", source: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
+  ],
+  "MC": [
+    { id: "mc-official-national", category: "official", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag of Monaco, in the form adopted in 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
+    { id: "mc-current", category: "historical", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag of Monaco, in the form adopted in 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
+  ],
+  "MD": [
+    { id: "md-official-national", category: "official", name: "Flag of Moldova", from: 1990, to: 9999, primary: true, path: "flags/md.svg", design: "The national flag of Moldova, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+    { id: "md-current", category: "historical", name: "Flag of Moldova", from: 1990, to: 9999, primary: true, path: "flags/md.svg", design: "The national flag of Moldova, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+  ],
+  "ME": [
+    { id: "me-official-national", category: "official", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
+    { id: "me-current", category: "historical", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
+  ],
+  "MG": [
+    { id: "mg-official-national", category: "official", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "The national flag of Madagascar, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
+    { id: "mg-current", category: "historical", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "The national flag of Madagascar, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
+  ],
+  "MH": [
+    { id: "mh-official-national", category: "official", name: "Flag of Marshall Islands", from: 1979, to: 9999, primary: true, path: "flags/mh.svg", design: "The national flag of Marshall Islands, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Marshall_Islands" },
+    { id: "mh-current", category: "historical", name: "Flag of Marshall Islands", from: 1979, to: 9999, primary: true, path: "flags/mh.svg", design: "The national flag of Marshall Islands, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Marshall_Islands" },
+  ],
+  "MK": [
+    { id: "mk-official-national", category: "official", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
+    { id: "mk-current", category: "historical", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
+  ],
+  "ML": [
+    { id: "ml-official-national", category: "official", name: "Flag of Mali", from: 1961, to: 9999, primary: true, path: "flags/ml.svg", design: "The national flag of Mali, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+    { id: "ml-current", category: "historical", name: "Flag of Mali", from: 1961, to: 9999, primary: true, path: "flags/ml.svg", design: "The national flag of Mali, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+  ],
+  "MM": [
+    { id: "mm-official-national", category: "official", name: "Flag of Myanmar", from: 2010, to: 9999, primary: true, path: "flags/mm.svg", design: "The national flag of Myanmar, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
+    { id: "mm-current", category: "historical", name: "Flag of Myanmar", from: 2010, to: 9999, primary: true, path: "flags/mm.svg", design: "The national flag of Myanmar, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
+  ],
+  "MN": [
+    { id: "mn-official-national", category: "official", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+    { id: "mn-current", category: "historical", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+  ],
+  "MR": [
+    { id: "mr-official-national", category: "official", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag of Mauritania, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+    { id: "mr-current", category: "historical", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag of Mauritania, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+  ],
+  "MT": [
+    { id: "mt-official-national", category: "official", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
+    { id: "mt-current", category: "historical", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
+  ],
+  "MU": [
+    { id: "mu-official-national", category: "official", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "The national flag of Mauritius, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
+    { id: "mu-current", category: "historical", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "The national flag of Mauritius, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
+  ],
+  "MV": [
+    { id: "mv-official-national", category: "official", name: "Flag of Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "The national flag of Maldives, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Maldives" },
+    { id: "mv-current", category: "historical", name: "Flag of Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "The national flag of Maldives, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Maldives" },
+  ],
+  "MW": [
+    { id: "mw-official-national", category: "official", name: "Flag of Malawi", from: 1964, to: 9999, primary: true, path: "flags/mw.svg", design: "The national flag of Malawi, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+    { id: "mw-current", category: "historical", name: "Flag of Malawi", from: 1964, to: 9999, primary: true, path: "flags/mw.svg", design: "The national flag of Malawi, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
+  ],
+  "MX": [
+    { id: "mx-official-national", category: "official", name: "Flag of Mexico", from: 1968, to: 9999, primary: true, path: "flags/mx.svg", design: "The national flag of Mexico, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mexico" },
+    { id: "mx-current", category: "historical", name: "Flag of Mexico", from: 1968, to: 9999, primary: true, path: "flags/mx.svg", design: "The national flag of Mexico, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mexico" },
   ],
   "MY": [
     { id: "my-official-national", category: "official", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, primary: true, path: "flags/my.svg", design: "The national flag, adopted at the formation of Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
@@ -244,6 +700,214 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "my-arms", category: "coatofarms", name: "Coat of arms of Malaysia", path: "national-flags/my/malaysia-arms.svg", design: "A shield held by two tigers, crowned by a yellow crescent and fourteen-pointed federal star, above a motto ribbon.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
     { id: "my-passport", category: "passport", name: "Malaysian passport", path: "national-flags/my/malaysia-passport.svg", design: "A dark red cover with the Malaysian coat of arms in gold, the country's name above and PASSPORT/PASPORT below.", source: "https://en.wikipedia.org/wiki/Malaysian_passport" },
   ],
+  "MZ": [
+    { id: "mz-official-national", category: "official", name: "Flag of Mozambique", from: 1983, to: 9999, primary: true, path: "flags/mz.svg", design: "The national flag of Mozambique, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
+    { id: "mz-current", category: "historical", name: "Flag of Mozambique", from: 1983, to: 9999, primary: true, path: "flags/mz.svg", design: "The national flag of Mozambique, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
+  ],
+  "NA": [
+    { id: "na-official-national", category: "official", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "The national flag of Namibia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    { id: "na-current", category: "historical", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "The national flag of Namibia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+  ],
+  "NE": [
+    { id: "ne-official-national", category: "official", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
+    { id: "ne-current", category: "historical", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
+  ],
+  "NG": [
+    { id: "ng-official-national", category: "official", name: "Flag of Nigeria", from: 1960, to: 9999, primary: true, path: "flags/ng.svg", design: "The national flag of Nigeria, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
+    { id: "ng-current", category: "historical", name: "Flag of Nigeria", from: 1960, to: 9999, primary: true, path: "flags/ng.svg", design: "The national flag of Nigeria, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
+  ],
+  "NI": [
+    { id: "ni-official-national", category: "official", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
+    { id: "ni-current", category: "historical", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
+  ],
+  "NL": [
+    { id: "nl-official-national", category: "official", name: "Flag of Netherlands", from: 1660, to: 9999, primary: true, path: "flags/nl.svg", design: "The national flag of Netherlands, in the form adopted in 1660.", source: "https://en.wikipedia.org/wiki/Flag_of_Netherlands" },
+    { id: "nl-current", category: "historical", name: "Flag of Netherlands", from: 1660, to: 9999, primary: true, path: "flags/nl.svg", design: "The national flag of Netherlands, in the form adopted in 1660.", source: "https://en.wikipedia.org/wiki/Flag_of_Netherlands" },
+  ],
+  "NO": [
+    { id: "no-official-national", category: "official", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
+    { id: "no-current", category: "historical", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
+  ],
+  "NP": [
+    { id: "np-official-national", category: "official", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
+    { id: "np-current", category: "historical", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
+  ],
+  "NR": [
+    { id: "nr-official-national", category: "official", name: "Flag of Naoero", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag of Naoero, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Naoero" },
+    { id: "nr-current", category: "historical", name: "Flag of Naoero", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag of Naoero, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Naoero" },
+  ],
+  "NZ": [
+    { id: "nz-official-national", category: "official", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
+    { id: "nz-current", category: "historical", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
+  ],
+  "OM": [
+    { id: "om-official-national", category: "official", name: "Flag of Oman", from: 1995, to: 9999, primary: true, path: "flags/om.svg", design: "The national flag of Oman, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+    { id: "om-current", category: "historical", name: "Flag of Oman", from: 1995, to: 9999, primary: true, path: "flags/om.svg", design: "The national flag of Oman, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+  ],
+  "PA": [
+    { id: "pa-official-national", category: "official", name: "Flag of Panama", from: 1925, to: 9999, primary: true, path: "flags/pa.svg", design: "The national flag of Panama, in the form adopted in 1925.", source: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
+    { id: "pa-current", category: "historical", name: "Flag of Panama", from: 1925, to: 9999, primary: true, path: "flags/pa.svg", design: "The national flag of Panama, in the form adopted in 1925.", source: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
+  ],
+  "PE": [
+    { id: "pe-official-national", category: "official", name: "Flag of Peru", from: 1825, to: 9999, primary: true, path: "flags/pe.svg", design: "The national flag of Peru, in the form adopted in 1825.", source: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
+    { id: "pe-current", category: "historical", name: "Flag of Peru", from: 1825, to: 9999, primary: true, path: "flags/pe.svg", design: "The national flag of Peru, in the form adopted in 1825.", source: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
+  ],
+  "PG": [
+    { id: "pg-official-national", category: "official", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag of Papua New Guinea, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    { id: "pg-current", category: "historical", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag of Papua New Guinea, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+  ],
+  "PH": [
+    { id: "ph-official-national", category: "official", name: "Flag of Philippines", from: 1898, to: 9999, primary: true, path: "flags/ph.svg", design: "The national flag of Philippines, in the form adopted in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Philippines" },
+    { id: "ph-current", category: "historical", name: "Flag of Philippines", from: 1898, to: 9999, primary: true, path: "flags/ph.svg", design: "The national flag of Philippines, in the form adopted in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Philippines" },
+  ],
+  "PK": [
+    { id: "pk-official-national", category: "official", name: "Flag of Pakistan", from: 1947, to: 9999, primary: true, path: "flags/pk.svg", design: "The national flag of Pakistan, in the form adopted in 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    { id: "pk-current", category: "historical", name: "Flag of Pakistan", from: 1947, to: 9999, primary: true, path: "flags/pk.svg", design: "The national flag of Pakistan, in the form adopted in 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+  ],
+  "PL": [
+    { id: "pl-official-national", category: "official", name: "Flag of Poland", from: 1919, to: 9999, primary: true, path: "flags/pl.svg", design: "The national flag of Poland, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
+    { id: "pl-current", category: "historical", name: "Flag of Poland", from: 1919, to: 9999, primary: true, path: "flags/pl.svg", design: "The national flag of Poland, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
+  ],
+  "PS": [
+    { id: "ps-official-national", category: "official", name: "Flag of Palestine", from: 1988, to: 9999, primary: true, path: "flags/ps.svg", design: "The national flag of Palestine, in the form adopted in 1988.", source: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
+    { id: "ps-current", category: "historical", name: "Flag of Palestine", from: 1988, to: 9999, primary: true, path: "flags/ps.svg", design: "The national flag of Palestine, in the form adopted in 1988.", source: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
+  ],
+  "PT": [
+    { id: "pt-official-national", category: "official", name: "Flag of Portugal", from: 1912, to: 9999, primary: true, path: "flags/pt.svg", design: "The national flag of Portugal, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_Portugal" },
+    { id: "pt-current", category: "historical", name: "Flag of Portugal", from: 1912, to: 9999, primary: true, path: "flags/pt.svg", design: "The national flag of Portugal, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_Portugal" },
+  ],
+  "PW": [
+    { id: "pw-official-national", category: "official", name: "Flag of Palau", from: 1981, to: 9999, primary: true, path: "flags/pw.svg", design: "The national flag of Palau, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
+    { id: "pw-current", category: "historical", name: "Flag of Palau", from: 1981, to: 9999, primary: true, path: "flags/pw.svg", design: "The national flag of Palau, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
+  ],
+  "PY": [
+    { id: "py-official-national", category: "official", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The national flag of Paraguay, in the form adopted in 1842.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    { id: "py-current", category: "historical", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The national flag of Paraguay, in the form adopted in 1842.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+  ],
+  "QA": [
+    { id: "qa-official-national", category: "official", name: "Flag of Qatar", from: 1971, to: 9999, primary: true, path: "flags/qa.svg", design: "The national flag of Qatar, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
+    { id: "qa-current", category: "historical", name: "Flag of Qatar", from: 1971, to: 9999, primary: true, path: "flags/qa.svg", design: "The national flag of Qatar, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
+  ],
+  "RO": [
+    { id: "ro-official-national", category: "official", name: "Flag of Romania", from: 1848, to: 9999, primary: true, path: "flags/ro.svg", design: "The national flag of Romania, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Romania" },
+    { id: "ro-current", category: "historical", name: "Flag of Romania", from: 1848, to: 9999, primary: true, path: "flags/ro.svg", design: "The national flag of Romania, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Romania" },
+  ],
+  "RS": [
+    { id: "rs-official-national", category: "official", name: "Flag of Serbia", from: 2010, to: 9999, primary: true, path: "flags/rs.svg", design: "The national flag of Serbia, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
+    { id: "rs-current", category: "historical", name: "Flag of Serbia", from: 2010, to: 9999, primary: true, path: "flags/rs.svg", design: "The national flag of Serbia, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
+  ],
+  "RU": [
+    { id: "ru-official-national", category: "official", name: "Flag of Russia", from: 1991, to: 9999, primary: true, path: "flags/ru.svg", design: "The national flag of Russia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
+    { id: "ru-current", category: "historical", name: "Flag of Russia", from: 1991, to: 9999, primary: true, path: "flags/ru.svg", design: "The national flag of Russia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
+  ],
+  "RW": [
+    { id: "rw-official-national", category: "official", name: "Flag of Rwanda", from: 2001, to: 9999, primary: true, path: "flags/rw.svg", design: "The national flag of Rwanda, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    { id: "rw-current", category: "historical", name: "Flag of Rwanda", from: 2001, to: 9999, primary: true, path: "flags/rw.svg", design: "The national flag of Rwanda, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+  ],
+  "SA": [
+    { id: "sa-official-national", category: "official", name: "Flag of Saudi Arabia", from: 1973, to: 9999, primary: true, path: "flags/sa.svg", design: "The national flag of Saudi Arabia, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
+    { id: "sa-current", category: "historical", name: "Flag of Saudi Arabia", from: 1973, to: 9999, primary: true, path: "flags/sa.svg", design: "The national flag of Saudi Arabia, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
+  ],
+  "SB": [
+    { id: "sb-official-national", category: "official", name: "Flag of Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag of Solomon Islands, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands" },
+    { id: "sb-current", category: "historical", name: "Flag of Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag of Solomon Islands, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands" },
+  ],
+  "SC": [
+    { id: "sc-official-national", category: "official", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "The national flag of Seychelles, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+    { id: "sc-current", category: "historical", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "The national flag of Seychelles, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+  ],
+  "SD": [
+    { id: "sd-official-national", category: "official", name: "Flag of Sudan", from: 1970, to: 9999, primary: true, path: "flags/sd.svg", design: "The national flag of Sudan, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+    { id: "sd-current", category: "historical", name: "Flag of Sudan", from: 1970, to: 9999, primary: true, path: "flags/sd.svg", design: "The national flag of Sudan, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+  ],
+  "SE": [
+    { id: "se-official-national", category: "official", name: "Flag of Sweden", from: 1562, to: 9999, primary: true, path: "flags/se.svg", design: "The national flag of Sweden, in the form adopted in 1562.", source: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
+    { id: "se-current", category: "historical", name: "Flag of Sweden", from: 1562, to: 9999, primary: true, path: "flags/se.svg", design: "The national flag of Sweden, in the form adopted in 1562.", source: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
+  ],
+  "SG": [
+    { id: "sg-official-national", category: "official", name: "Flag of Singapore", from: 1959, to: 9999, primary: true, path: "flags/sg.svg", design: "The national flag of Singapore, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
+    { id: "sg-current", category: "historical", name: "Flag of Singapore", from: 1959, to: 9999, primary: true, path: "flags/sg.svg", design: "The national flag of Singapore, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
+  ],
+  "SI": [
+    { id: "si-official-national", category: "official", name: "Flag of Slovenia", from: 1991, to: 9999, primary: true, path: "flags/si.svg", design: "The national flag of Slovenia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
+    { id: "si-current", category: "historical", name: "Flag of Slovenia", from: 1991, to: 9999, primary: true, path: "flags/si.svg", design: "The national flag of Slovenia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
+  ],
+  "SK": [
+    { id: "sk-official-national", category: "official", name: "Flag of Slovakia", from: 1992, to: 9999, primary: true, path: "flags/sk.svg", design: "The national flag of Slovakia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
+    { id: "sk-current", category: "historical", name: "Flag of Slovakia", from: 1992, to: 9999, primary: true, path: "flags/sk.svg", design: "The national flag of Slovakia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
+  ],
+  "SL": [
+    { id: "sl-official-national", category: "official", name: "Flag of Sierra Leone", from: 1961, to: 9999, primary: true, path: "flags/sl.svg", design: "The national flag of Sierra Leone, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+    { id: "sl-current", category: "historical", name: "Flag of Sierra Leone", from: 1961, to: 9999, primary: true, path: "flags/sl.svg", design: "The national flag of Sierra Leone, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+  ],
+  "SM": [
+    { id: "sm-official-national", category: "official", name: "Flag of San Marino", from: 2011, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag of San Marino, in the form adopted in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+    { id: "sm-current", category: "historical", name: "Flag of San Marino", from: 2011, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag of San Marino, in the form adopted in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+  ],
+  "SN": [
+    { id: "sn-official-national", category: "official", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "The national flag of Senegal, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
+    { id: "sn-current", category: "historical", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "The national flag of Senegal, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
+  ],
+  "SO": [
+    { id: "so-official-national", category: "official", name: "Flag of Somalia", from: 1960, to: 9999, primary: true, path: "flags/so.svg", design: "The national flag of Somalia, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    { id: "so-current", category: "historical", name: "Flag of Somalia", from: 1960, to: 9999, primary: true, path: "flags/so.svg", design: "The national flag of Somalia, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+  ],
+  "SR": [
+    { id: "sr-official-national", category: "official", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
+    { id: "sr-current", category: "historical", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
+  ],
+  "SS": [
+    { id: "ss-official-national", category: "official", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag of South Sudan, in the form adopted in 2005.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
+    { id: "ss-current", category: "historical", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag of South Sudan, in the form adopted in 2005.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
+  ],
+  "ST": [
+    { id: "st-official-national", category: "official", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "The national flag of São Tomé and Príncipe, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+    { id: "st-current", category: "historical", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "The national flag of São Tomé and Príncipe, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+  ],
+  "SV": [
+    { id: "sv-official-national", category: "official", name: "Flag of El Salvador", from: 1912, to: 9999, primary: true, path: "flags/sv.svg", design: "The national flag of El Salvador, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
+    { id: "sv-current", category: "historical", name: "Flag of El Salvador", from: 1912, to: 9999, primary: true, path: "flags/sv.svg", design: "The national flag of El Salvador, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
+  ],
+  "SY": [
+    { id: "sy-official-national", category: "official", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria, in the form adopted in 2024.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+    { id: "sy-current", category: "historical", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria, in the form adopted in 2024.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+  ],
+  "SZ": [
+    { id: "sz-official-national", category: "official", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag of Eswatini, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+    { id: "sz-current", category: "historical", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag of Eswatini, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+  ],
+  "TD": [
+    { id: "td-official-national", category: "official", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+    { id: "td-current", category: "historical", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+  ],
+  "TG": [
+    { id: "tg-official-national", category: "official", name: "Flag of Togo", from: 1960, to: 9999, primary: true, path: "flags/tg.svg", design: "The national flag of Togo, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    { id: "tg-current", category: "historical", name: "Flag of Togo", from: 1960, to: 9999, primary: true, path: "flags/tg.svg", design: "The national flag of Togo, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+  ],
+  "TH": [
+    { id: "th-official-national", category: "official", name: "Flag of Thailand", from: 1917, to: 9999, primary: true, path: "flags/th.svg", design: "The national flag of Thailand, in the form adopted in 1917.", source: "https://en.wikipedia.org/wiki/Flag_of_Thailand" },
+    { id: "th-current", category: "historical", name: "Flag of Thailand", from: 1917, to: 9999, primary: true, path: "flags/th.svg", design: "The national flag of Thailand, in the form adopted in 1917.", source: "https://en.wikipedia.org/wiki/Flag_of_Thailand" },
+  ],
+  "TJ": [
+    { id: "tj-official-national", category: "official", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "The national flag of Tajikistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
+    { id: "tj-current", category: "historical", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "The national flag of Tajikistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
+  ],
+  "TL": [
+    { id: "tl-official-national", category: "official", name: "Flag of Timor-Leste", from: 1975, to: 9999, primary: true, path: "flags/tl.svg", design: "The national flag of Timor-Leste, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
+    { id: "tl-current", category: "historical", name: "Flag of Timor-Leste", from: 1975, to: 9999, primary: true, path: "flags/tl.svg", design: "The national flag of Timor-Leste, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
+  ],
+  "TM": [
+    { id: "tm-official-national", category: "official", name: "Flag of Turkmenistan", from: 1992, to: 9999, primary: true, path: "flags/tm.svg", design: "The national flag of Turkmenistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+    { id: "tm-current", category: "historical", name: "Flag of Turkmenistan", from: 1992, to: 9999, primary: true, path: "flags/tm.svg", design: "The national flag of Turkmenistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+  ],
+  "TN": [
+    { id: "tn-official-national", category: "official", name: "Flag of Tunisia", from: 1831, to: 9999, primary: true, path: "flags/tn.svg", design: "The national flag of Tunisia, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    { id: "tn-current", category: "historical", name: "Flag of Tunisia", from: 1831, to: 9999, primary: true, path: "flags/tn.svg", design: "The national flag of Tunisia, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+  ],
+  "TO": [
+    { id: "to-official-national", category: "official", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag of Tonga, in the form adopted in 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
+    { id: "to-current", category: "historical", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag of Tonga, in the form adopted in 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
+  ],
   "TR": [
     { id: "tr-official-national", category: "official", name: "Flag of Turkey", from: 1936, to: 9999, primary: true, path: "flags/tr.svg", design: "The national flag, under the Turkish Flag Law of 1936.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkey" },
     { id: "tr-1936", category: "historical", name: "Flag of Turkey", from: 1936, to: 9999, primary: true, path: "flags/tr.svg", design: "A white star and crescent on red, in the proportions fixed by the Turkish Flag Law of 1936.", source: "https://en.wikipedia.org/wiki/List_of_Turkish_flags" },
@@ -255,6 +919,26 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tr-passport-diplomatic", category: "passport", name: "Turkish diplomatic passport", path: "national-flags/tr/turkey-passport-diplomatic.svg", design: "A black cover with the same emblem, headed DİPLOMATİK PASAPORT.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
     { id: "tr-passport-special", category: "passport", name: "Turkish special passport", path: "national-flags/tr/turkey-passport-special.svg", design: "A green cover — the “yeşil pasaport” issued to senior officials and former members of parliament.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
     { id: "tr-passport-service", category: "passport", name: "Turkish service passport", path: "national-flags/tr/turkey-passport-service.svg", design: "A grey cover, issued to officials travelling on state business.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
+  ],
+  "TT": [
+    { id: "tt-official-national", category: "official", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
+    { id: "tt-current", category: "historical", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
+  ],
+  "TV": [
+    { id: "tv-official-national", category: "official", name: "Flag of Tuvalu", from: 1997, to: 9999, primary: true, path: "flags/tv.svg", design: "The national flag of Tuvalu, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+    { id: "tv-current", category: "historical", name: "Flag of Tuvalu", from: 1997, to: 9999, primary: true, path: "flags/tv.svg", design: "The national flag of Tuvalu, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+  ],
+  "TZ": [
+    { id: "tz-official-national", category: "official", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    { id: "tz-current", category: "historical", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+  ],
+  "UA": [
+    { id: "ua-official-national", category: "official", name: "Flag of Ukraine", from: 1992, to: 9999, primary: true, path: "flags/ua.svg", design: "The national flag of Ukraine, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
+    { id: "ua-current", category: "historical", name: "Flag of Ukraine", from: 1992, to: 9999, primary: true, path: "flags/ua.svg", design: "The national flag of Ukraine, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
+  ],
+  "UG": [
+    { id: "ug-official-national", category: "official", name: "Flag of Uganda", from: 1962, to: 9999, primary: true, path: "flags/ug.svg", design: "The national flag of Uganda, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
+    { id: "ug-current", category: "historical", name: "Flag of Uganda", from: 1962, to: 9999, primary: true, path: "flags/ug.svg", design: "The national flag of Uganda, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
   ],
   "US": [
     { id: "us-official-national", category: "official", name: "Flag of the United States", from: 1960, to: 9999, primary: true, path: "flags/us.svg", design: "The national flag, fifty stars since 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
@@ -305,6 +989,42 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "us-passport-service", category: "passport", name: "United States service passport", path: "national-flags/us/us-passport-service.svg", design: "A grey cover with the Great Seal, headed SERVICE PASSPORT.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
     { id: "us-passport-emergency", category: "passport", name: "United States emergency passport", path: "national-flags/us/us-passport-emergency.svg", design: "A limited-validity passport issued abroad when a traveller's own is lost or stolen.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
   ],
+  "UY": [
+    { id: "uy-official-national", category: "official", name: "Flag of Uruguay", from: 1830, to: 9999, primary: true, path: "flags/uy.svg", design: "The national flag of Uruguay, in the form adopted in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
+    { id: "uy-current", category: "historical", name: "Flag of Uruguay", from: 1830, to: 9999, primary: true, path: "flags/uy.svg", design: "The national flag of Uruguay, in the form adopted in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
+  ],
+  "UZ": [
+    { id: "uz-official-national", category: "official", name: "Flag of Uzbekistan", from: 1991, to: 9999, primary: true, path: "flags/uz.svg", design: "The national flag of Uzbekistan, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
+    { id: "uz-current", category: "historical", name: "Flag of Uzbekistan", from: 1991, to: 9999, primary: true, path: "flags/uz.svg", design: "The national flag of Uzbekistan, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
+  ],
+  "VA": [
+    { id: "va-official-national", category: "official", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
+    { id: "va-current", category: "historical", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
+  ],
+  "VC": [
+    { id: "vc-official-national", category: "official", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "The national flag of Saint Vincent and the Grenadines, in the form adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+    { id: "vc-current", category: "historical", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "The national flag of Saint Vincent and the Grenadines, in the form adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+  ],
+  "VE": [
+    { id: "ve-official-national", category: "official", name: "Flag of Venezuela", from: 2006, to: 9999, primary: true, path: "flags/ve.svg", design: "The national flag of Venezuela, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
+    { id: "ve-current", category: "historical", name: "Flag of Venezuela", from: 2006, to: 9999, primary: true, path: "flags/ve.svg", design: "The national flag of Venezuela, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
+  ],
+  "VN": [
+    { id: "vn-official-national", category: "official", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
+    { id: "vn-current", category: "historical", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
+  ],
+  "VU": [
+    { id: "vu-official-national", category: "official", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "The national flag of Vanuatu, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
+    { id: "vu-current", category: "historical", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "The national flag of Vanuatu, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
+  ],
+  "WS": [
+    { id: "ws-official-national", category: "official", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag of Samoa, in the form adopted in 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+    { id: "ws-current", category: "historical", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag of Samoa, in the form adopted in 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+  ],
+  "YE": [
+    { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-current", category: "historical", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+  ],
   "ZA": [
     { id: "za-official-national", category: "official", name: "Flag of South Africa", from: 1994, to: 9999, primary: true, path: "flags/za.svg", design: "The national flag, first flown on 27 April 1994.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
     { id: "za-1994", category: "historical", name: "Flag of South Africa", from: 1994, to: 9999, primary: true, path: "flags/za.svg", design: "A horizontal Y in green, fimbriated white and gold, separating red and blue from a black triangle at the hoist.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
@@ -316,6 +1036,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "za-sandf-1994", category: "military", name: "Ensign of the South African National Defence Force (1994–2003)", from: 1994, to: 2003, path: "national-flags/za/south-africa-sandf-1994.svg", design: "The first post-apartheid defence-force ensign, replaced in 2003.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-arms", category: "coatofarms", name: "Coat of arms of South Africa", path: "national-flags/za/south-africa-arms.svg", design: "Two facing figures from Khoisan rock art within a shield, above a spear and knobkierie, crowned by a secretary bird and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
     { id: "za-passport", category: "passport", name: "South African passport", path: "national-flags/za/south-africa-passport.webp", design: "A green cover bearing the South African coat of arms in gold, reading REPUBLIC OF SOUTH AFRICA / REPUBLIEK VAN SUID-AFRIKA and PASSPORT.", source: "https://gicg.net/passport/za/" },
+  ],
+  "ZM": [
+    { id: "zm-official-national", category: "official", name: "Flag of Zambia", from: 1964, to: 9999, primary: true, path: "flags/zm.svg", design: "The national flag of Zambia, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
+    { id: "zm-current", category: "historical", name: "Flag of Zambia", from: 1964, to: 9999, primary: true, path: "flags/zm.svg", design: "The national flag of Zambia, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
+  ],
+  "ZW": [
+    { id: "zw-official-national", category: "official", name: "Flag of Zimbabwe", from: 1980, to: 9999, primary: true, path: "flags/zw.svg", design: "The national flag of Zimbabwe, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe" },
+    { id: "zw-current", category: "historical", name: "Flag of Zimbabwe", from: 1980, to: 9999, primary: true, path: "flags/zw.svg", design: "The national flag of Zimbabwe, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe" },
   ],
 };
 
