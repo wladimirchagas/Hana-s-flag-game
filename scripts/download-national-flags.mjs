@@ -161,7 +161,13 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       : entry.file.endsWith(".webp") ? "WEBP"
       : "SVG";
     const looks = {
-      SVG: () => buf.slice(0, 400).toString("utf8").includes("<svg"),
+      // An SVG's root element is not always near the top: an Illustrator export
+      // puts a generator comment and a DOCTYPE with a dozen ENTITY declarations
+      // ahead of it (Indonesia's Garuda Pancasila opens `<svg` at byte 734), and
+      // a 400-byte window rejected a perfectly good file as "not SVG". 4 KiB is
+      // still far short of any real content, so this only widens where the tag
+      // may sit — it does not weaken what is required, which is the tag itself.
+      SVG: () => buf.slice(0, 4096).toString("utf8").includes("<svg"),
       PNG: () => buf.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])),
       JPEG: () => buf.slice(0, 3).equals(Buffer.from([0xff, 0xd8, 0xff])),
       WEBP: () =>

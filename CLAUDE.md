@@ -154,6 +154,19 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
    window ends before independence, and fails if either UI component stops rendering `priorPolity`.
    Expect this wherever a pre-colonial state stood on the same ground — never reach for `sovereign` to
    satisfy the check when there was no sovereign.
+   **And a FOURTH state, on the other side of independence: a flag an occupying power IMPOSED on a
+   country that was already independent.** The Estonian and Latvian SSR flags are the case (found
+   2026-08, when the check refused them): `sovereign` is not merely inaccurate for these, it asserts
+   the very thing the occupied country denies — that the occupier held sovereignty — and the check
+   already forbids `sovereign` on any flag flown from independence onward. Showing them with no
+   attribution would be worse still, since they would then read as flags the country chose. Such a
+   flag carries **`occupier`**; the card badges "**Imposed by {power}**" (never "Under {power}") and
+   the widget says the country was ALREADY independent when the flag was imposed and that its own flag
+   was banned while this one flew. All three attribution fields are mutually exclusive, `occupier`
+   requires the country's `independence` record, the check refuses an `occupier` flag whose window ends
+   at or before independence (that is a `sovereign` case), and it fails if either UI component stops
+   rendering `occupier`. Expect this wherever an independent state was annexed or occupied — never
+   reach for `sovereign` to satisfy the check when the power never lawfully held the country.
    The era maps remain the place a *ruler's* flag is captioned per-era; this tab is the country's own
    timeline, and the two share their images and windows (rule 3).
 4a. **A passport cover is a DRAWN image, never a photograph, and a country's types are listed in full.**
@@ -261,9 +274,12 @@ an undocumented omission; a malformed meaning; and
 dropping its reference to `noImageReason` (which would make an unpicturable symbol vanish again). It ALSO
 fails on any historical flag whose
 window ends wholly before the country's sourced independence year but names no `sovereign` power (the
-anachronism guard), on a `sovereign` set on a flag from after independence, and on `NationalFlagGrid.tsx`
-or `NationalFlagDetails.tsx` no longer referencing `sovereign` — because the data is only half the
-protection; the badge and the caption are the other half. The era-window comparison is CONTAINMENT, not
+anachronism guard), on a `sovereign` set on a flag from after independence, on an `occupier` set on a
+flag from at or before independence (its mirror), on an `occupier` flag in a country with no
+`independence` record, on any flag carrying more than one of `sovereign`/`priorPolity`/`occupier`, and
+on `NationalFlagGrid.tsx` or `NationalFlagDetails.tsx` no longer referencing `sovereign`, `priorPolity`
+or `occupier` — because the data is only half the protection; the badge and the caption are the other
+half. The era-window comparison is CONTAINMENT, not
 equality: a colonial usage is legitimately narrower than the design's own life (Spain's Cross of Burgundy
 dates from 1506 but flew over Bolivia only from the conquest), while reaching OUTSIDE the era window is
 the anachronism and fails. Never weaken it — fix the flag or its sourcing.

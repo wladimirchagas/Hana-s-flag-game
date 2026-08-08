@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+
+<g transform="scale(6, -6), translate(75 -100)">
+  <line y2="100" stroke-width="150" stroke="#0099B5" />
+  <polygon points="75,100, -75,0, -25,0, 25,100"  fill="#F0FF00" />
+  <polygon points="-75,100, 75,0, 25,0, -25,100"  fill="#F0FF00" />
+  <polygon points="-75,66.6667, 75,33.3333, 75,66.6667, -75,33.3333"  fill="#F0FF00" />
+  <circle cy="50" r="17.5" fill="#0099B5"/>
+  <circle cy="50" r="12.25" fill="#CE1126"/>
+  <circle cy="50" r="11.375" fill="#FFF"/>
+  <circle cy="50" r="6.125" fill="#CE1126"/>
+  <circle cy="50" r="5.25" fill="#1EB53A"/>
+ </g>
+</svg>
