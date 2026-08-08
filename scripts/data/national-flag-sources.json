@@ -278,6 +278,19 @@
           "reuse": "flags/at.svg",
           "design": "The national flag of Austria, in the form adopted in 1918.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Austria"
+        },
+        {
+          "id": "at-state",
+          "category": "civilstate",
+          "name": "State flag of Austria",
+          "from": 1955,
+          "to": 9999,
+          "commons": "Flag of Austria (state).svg",
+          "file": "at/austria-state.svg",
+          "design": "The red-white-red triband charged with the federal eagle — the state flag, war flag and naval ensign, beside the plain civil flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Austrian_flags",
+          "sha256": "d2049ba5974aee08e77fc65a90ac1b191b0d49f21cca99be803aaef6f6f558f2",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -655,6 +668,45 @@
           "reuse": "flags/be.svg",
           "design": "The national flag of Belgium, in the form adopted in 1831.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belgium"
+        },
+        {
+          "id": "be-civil-ensign",
+          "category": "maritime",
+          "name": "Civil ensign of Belgium",
+          "from": 1831,
+          "to": 9999,
+          "commons": "Flag of Belgium (civil).svg",
+          "file": "be/belgium-civil-ensign.svg",
+          "design": "The black-yellow-red tricolour in the proportions used at sea.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
+          "sha256": "b3642c9ad66f6f5ddbfe6e9eb32a06b4aeb0e9801e45ad90d5ef70a86eafa05e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "be-state-ensign",
+          "category": "maritime",
+          "name": "State ensign of Belgium",
+          "from": 1950,
+          "to": 9999,
+          "commons": "Government Ensign of Belgium.svg",
+          "file": "be/belgium-state-ensign.svg",
+          "design": "The tricolour defaced with the state emblem, worn by government vessels.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
+          "sha256": "8bf0ec1fa1355d88916355e1c951ca38090470fa5245140add6542cc302497e7",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "be-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Belgium",
+          "from": 1831,
+          "to": 9999,
+          "commons": "Naval Jack of Belgium.svg",
+          "file": "be/belgium-naval-jack.svg",
+          "design": "The jack of the Belgian Navy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
+          "sha256": "ad45d054bbeac73c05c03475a98f268d37086b80c1aa9782c43b538902214573",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -1727,6 +1779,19 @@
           "reuse": "flags/ch.svg",
           "design": "The national flag of Switzerland, in the form adopted in 1841.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
+        },
+        {
+          "id": "ch-civil-ensign",
+          "category": "maritime",
+          "name": "Civil and state ensign of Switzerland",
+          "from": 1882,
+          "to": 9999,
+          "commons": "Civil Ensign of Switzerland (Pantone).svg",
+          "file": "ch/switzerland-civil-ensign.svg",
+          "design": "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Swiss_flags",
+          "sha256": "a02a3802ada3a96aa399ffd43b38faacd7b2a17076b44d30985d93562c609d21",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -3260,6 +3325,45 @@
           "reuse": "flags/gr.svg",
           "design": "The national flag of Greece, in the form adopted in 1822.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Greece"
+        },
+        {
+          "id": "gr-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Greece",
+          "from": 1822,
+          "to": 9999,
+          "commons": "Naval jack of Greece.svg",
+          "file": "gr/greece-naval-jack.svg",
+          "design": "A blue field with a white cross throughout — the jack the Hellenic Navy has flown since the war of independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
+          "sha256": "9d0cf7a097c5b679013d33a6d876311814cffffbc8bd74a5bb8958eaf1c20f37",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gr-president",
+          "category": "standard",
+          "name": "Flag of the President of Greece",
+          "from": 1979,
+          "to": 9999,
+          "commons": "Flag of the President of Greece.svg",
+          "file": "gr/greece-president.svg",
+          "design": "The national flag charged with the presidential arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
+          "sha256": "104b0efcabf7aa573c934a4ed92e6b4829f63fe0fca46257d2223286a5767b5b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gr-president-1924",
+          "category": "standard",
+          "name": "Flag of the President of Greece (1924–1935)",
+          "from": 1924,
+          "to": 1935,
+          "commons": "Flag of the President of Greece (1924–1935).svg",
+          "file": "gr/greece-president-1924.svg",
+          "design": "The presidential flag of the Second Hellenic Republic.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
+          "sha256": "603d971566e79767a1c2eee1f3b47843d8fb3b74fc35bf1ff176fd5da971a4ed",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -4283,6 +4387,71 @@
           "reuse": "flags/kr.svg",
           "design": "The national flag of South Korea, in the form adopted in 1883.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_South_Korea"
+        },
+        {
+          "id": "kr-1997",
+          "category": "historical",
+          "name": "Flag of South Korea (1997–2011)",
+          "from": 1997,
+          "to": 2011,
+          "commons": "Flag of South Korea (1997–2011).svg",
+          "file": "kr/south-korea-1997.svg",
+          "design": "The Taegukgi as standardised in 1997, before the 2011 specification adjusted its colours.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "d4015bb54bd00e7a125aa660f0df82b79887b7b91f9980903317a97c51b50219",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-1984",
+          "category": "historical",
+          "name": "Flag of South Korea (1984–1997)",
+          "from": 1984,
+          "to": 1997,
+          "commons": "Flag of South Korea (1984–1997).svg",
+          "file": "kr/south-korea-1984.svg",
+          "design": "The Taegukgi of the Fifth and Sixth Republics.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "dfd866de016fb21641d668bee4083e33fa6b22836936c6c14b38eaa5051c7b36",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-1949",
+          "category": "historical",
+          "name": "Flag of South Korea (1949–1984)",
+          "from": 1949,
+          "to": 1984,
+          "commons": "Flag of South Korea (1949–1984).svg",
+          "file": "kr/south-korea-1949.svg",
+          "design": "The Taegukgi as fixed by the 1949 presidential proclamation, flown through the First to Fifth Republics.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "2bc462bee0226c669c78bd3da381f8c11f98a9e6b419b7ee82a9f737936e6255",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-1948",
+          "category": "historical",
+          "name": "Flag of South Korea (1948–1949)",
+          "from": 1948,
+          "to": 1949,
+          "commons": "Flag of South Korea (1948–1949).svg",
+          "file": "kr/south-korea-1948.svg",
+          "design": "The flag of the First Republic, before the 1949 standardisation.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "9525c62c101b932e167b5d268a6585edf170bbd6eae06047546c1157e6d3b9a5",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-president",
+          "category": "standard",
+          "name": "Flag of the President of South Korea",
+          "from": 1967,
+          "to": 9999,
+          "commons": "Flag of the President of South Korea.svg",
+          "file": "kr/south-korea-president.svg",
+          "design": "A blue field bearing the presidential phoenix emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "3956e742b30b63a7149591fc11b20d4ab67b890ba1b6e852166616459416c36f",
+          "fetched": "2026-08-08"
         }
       ]
     },
