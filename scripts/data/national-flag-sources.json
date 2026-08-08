@@ -732,8 +732,192 @@
           "reuse": "flags/bd.svg",
           "design": "The national flag of Bangladesh, in the form adopted in 1972.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bangladesh"
+        },
+        {
+          "id": "bd-1971",
+          "category": "historical",
+          "name": "Flag of the Provisional Government (1971–1972)",
+          "from": 1971,
+          "to": 1972,
+          "commons": "Flag of Bangladesh (1971).svg",
+          "file": "bd/bangladesh-1971.svg",
+          "design": "The green field with a red disc bearing a golden map of the country, flown by the provisional government during the liberation war.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "fe14e955212ac1716111f25ede34978b55f8f39597b11de2707b84a3d779ece4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-pakistan",
+          "category": "historical",
+          "name": "Flag of Pakistan",
+          "from": 1947,
+          "to": 1971,
+          "sovereign": "Pakistan",
+          "reuse": "flags/pk.svg",
+          "design": "The flag of Pakistan, flown over East Pakistan until the liberation war of 1971.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags"
+        },
+        {
+          "id": "bd-raj",
+          "category": "historical",
+          "name": "Red Ensign of the British Raj",
+          "from": 1880,
+          "to": 1947,
+          "sovereign": "the United Kingdom",
+          "commons": "British Raj Red Ensign.svg",
+          "file": "bd/bangladesh-raj.svg",
+          "design": "A Red Ensign defaced with the Star of India — the civil flag used in British India.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "69a5f3f0327ee56cb005df5b5f7f0c4e0e516dab7bd8e757a58180c00b8595a5",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-bengal",
+          "category": "historical",
+          "name": "Flag of the Presidency of Fort William in Bengal",
+          "from": 1803,
+          "to": 1947,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of British Bengal.svg",
+          "file": "bd/bangladesh-bengal.svg",
+          "design": "The flag of the Bengal Presidency under British rule.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "9b573864358216cd419ccf406350f4a927a537d698fefcf71b37e618d40b052e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-mughal",
+          "category": "historical",
+          "name": "Alam of the Mughal Empire",
+          "from": 1576,
+          "to": 1757,
+          "sovereign": "the Mughal Empire",
+          "commons": "Alam of the Mughal Empire.svg",
+          "file": "bd/bangladesh-mughal.svg",
+          "design": "The Mughal alam, flown over Bengal from Akbar's conquest until Plassey.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "d26991da464a0fcefd8e41331def4400eda17de9b7ec695d2d074ece65158626",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-president",
+          "category": "standard",
+          "name": "Presidential standard of Bangladesh",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Flag of the President of Bangladesh.svg",
+          "file": "bd/bangladesh-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "73dfa28b87e177826771f81358399e6ebb3f32282fd263f4c482456399fb5302",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-pm",
+          "category": "standard",
+          "name": "Standard of the Prime Minister of Bangladesh",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Flag of the Prime Minister of Bangladesh.svg",
+          "file": "bd/bangladesh-pm.svg",
+          "design": "The prime minister's standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "ba2c96aac15e3b187bc07c57d2a2c534a91cd649e5ee8d254aa1b0c79955cece",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-armed-forces",
+          "category": "military",
+          "name": "Flag of the Bangladesh Armed Forces",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Bangladesh Armed Forces Flag.svg",
+          "file": "bd/bangladesh-armed-forces.svg",
+          "design": "The joint flag of the three services.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "adf2bdcb80d29bd151df012e4c81b999cd8ff78be2958b100a6bc3b8906d6714",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-army",
+          "category": "military",
+          "name": "Flag of the Bangladesh Army",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Flag of the Bangladesh Army.svg",
+          "file": "bd/bangladesh-army.svg",
+          "design": "The army's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "60e60977115a28355928049d49bcb4c3bde392339e440eeab8843ae14fd3c69f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Bangladesh",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Air Force Ensign of Bangladesh.svg",
+          "file": "bd/bangladesh-air-force.svg",
+          "design": "A blue ensign with the national flag in the canton and the air force roundel in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "600082dceeb243f4ba56434a0165480c30b5f78e399a2b66113bd6e8d1849309",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-naval-ensign",
+          "category": "maritime",
+          "name": "Ensign of the Bangladesh Navy",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Naval Ensign of Bangladesh.svg",
+          "file": "bd/bangladesh-naval-ensign.svg",
+          "design": "A white ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "353ce0a5098df0dca5454d746e299d9c642351e9a608d69e2c0cd70ce3695dd3",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Bangladesh",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Civil Ensign of Bangladesh.svg",
+          "file": "bd/bangladesh-civil-ensign.svg",
+          "design": "A red ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags",
+          "sha256": "a9cbc8825bfc520a5f30dd56b604baf8b209a75cad254e101cebc516923f6616",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "bd-emblem",
+          "category": "coatofarms",
+          "name": "National emblem of Bangladesh",
+          "from": 1972,
+          "to": 9999,
+          "commons": "National emblem of Bangladesh.svg",
+          "file": "bd/bangladesh-emblem.svg",
+          "design": "A water lily on water, bordered by rice sheaves, beneath four stars and three jute leaves.",
+          "source": "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh",
+          "meaning": {
+            "description": "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
+            "sources": [
+              {
+                "title": "National Emblem of Bangladesh — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh"
+              }
+            ]
+          },
+          "sha256": "eac2c1ad53f3dbfaf5d3a85258d4a0de6a3ad957917e01fc89f9434eab4c24d6",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1971,
+        "event": "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971",
+        "source": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+      }
     },
     "BE": {
       "flags": [
@@ -6038,6 +6222,67 @@
           "reuse": "flags/lk.svg",
           "design": "The national flag of Sri Lanka, in the form adopted in 1972.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka"
+        },
+        {
+          "id": "lk-govt-ensign",
+          "category": "maritime",
+          "name": "Government Ensign of Sri Lanka",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Government Ensign of Sri Lanka.svg",
+          "file": "lk/srilanka-govt-ensign.svg",
+          "design": "A blue ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags",
+          "sha256": "827d91446c5aa31f4c760234e9e48adfd056d54e769c4cc494f2f2a901eb4303",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lk-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Sri Lanka",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Naval Ensign of Sri Lanka.svg",
+          "file": "lk/srilanka-naval-ensign.svg",
+          "design": "A defaced white ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags",
+          "sha256": "2f7cf63ec0811aa0b05cc7781e549186e51ad4988433a0ab23903890bbd25810",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lk-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Sri Lanka",
+          "from": 2010,
+          "to": 9999,
+          "commons": "Air Force Ensign of Sri Lanka.svg",
+          "file": "lk/srilanka-air-force.svg",
+          "design": "A defaced sky blue ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags",
+          "sha256": "9e0c5d449742936750dac26dc49832ca52edd4b775a2fafa810e4f7888d91493",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lk-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Sri Lanka",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Emblem of Sri Lanka.svg",
+          "file": "lk/srilanka-emblem.svg",
+          "design": "A gold lion passant holding a sword, within blue lotus petals on a grain vase, beneath the Dharmacakra and between the sun and the moon.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka",
+          "meaning": {
+            "description": "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
+            "sources": [
+              {
+                "title": "Emblem of Sri Lanka — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka"
+              }
+            ]
+          },
+          "sha256": "66f88330a95093ee453837672d0ed736b4e417bec9188b56bb3adf929bc6f438",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -6436,6 +6681,61 @@
           "reuse": "flags/mm.svg",
           "design": "The national flag of Myanmar, in the form adopted in 2010.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Myanmar"
+        },
+        {
+          "id": "mm-tatmadaw",
+          "category": "military",
+          "name": "Flag of the Myanmar Armed Forces (Tatmadaw)",
+          "commons": "Flag of the Armed Forces (Tatmadaw) of Myanmar.svg",
+          "file": "mm/myanmar-tatmadaw.svg",
+          "design": "A horizontal triband with the armed forces' emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Burmese_flags",
+          "sha256": "4cfc2b967a20341c3390c9accb030494bb423b65f3ae3a804b1c03d3b2db3bca",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "mm-army",
+          "category": "military",
+          "name": "Flag of the Myanmar Army",
+          "commons": "Army Flag of Myanmar.svg",
+          "file": "mm/myanmar-army.svg",
+          "design": "The army's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Burmese_flags",
+          "sha256": "85b58339279f9e58c77fe7921fb82153347e0ffccffb1ec25b594e71a348277e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "mm-mod",
+          "category": "military",
+          "name": "Flag of the Ministry of Defence",
+          "commons": "Flag of the Ministry of Defense (Myanmar).svg",
+          "file": "mm/myanmar-mod.svg",
+          "design": "The defence ministry's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Burmese_flags",
+          "sha256": "8008701ed2077b582da913ee30a413270f88976287a4ae851ee90bfbafa81e88",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "mm-seal",
+          "category": "coatofarms",
+          "name": "State Seal of Myanmar",
+          "from": 2010,
+          "to": 9999,
+          "commons": "State Seal of the Republic of the Union of Myanmar.svg",
+          "file": "mm/myanmar-seal.svg",
+          "design": "The map of the country between two Burmese royal lions, flanked by sprigs of Eugenia, over a ribbon bearing the name of the state.",
+          "source": "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar",
+          "meaning": {
+            "description": "The law describing the seal explains each part. At the centre is the map of the country, standing for its territorial shape; on either side of it a sprig of Eugenia with fourteen leaves, a sign of victory — one leaf for each state and region. Flanking those are two Burmese royal lions, chinthe, one facing left and one facing right; the lions signify sovereignty, courage, diligence and the suppression of all dangers great and small with equal effort, and their placement guarding either side of the map is itself the meaning. The ribbon below carries the name of the state, split so that \"Union\" sits under the left lion, \"Republic\" under the map and \"Myanmar\" under the right.",
+            "sources": [
+              {
+                "title": "State Seal of Myanmar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar"
+              }
+            ]
+          },
+          "sha256": "eb791f5212938f7d1e610421cdc8573659f3c50c8e730a95512e344faf050d0c",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -7193,6 +7493,80 @@
           "reuse": "flags/np.svg",
           "design": "The national flag of Nepal, in the form adopted in 1962.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Nepal"
+        },
+        {
+          "id": "np-1930",
+          "category": "historical",
+          "name": "Flag of Nepal (c. 1930–1962)",
+          "from": 1930,
+          "to": 1962,
+          "commons": "Flag of Nepal (1743–1962).svg",
+          "file": "np/nepal-1930.svg",
+          "design": "The double pennon with the sun and moon still bearing human faces, before the 1962 constitution fixed the present design.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
+          "sha256": "13ed2c898f4b94c47fb52df92e7ff0fda90c6bcf365eb9845dc8a6bfce13ea21",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "np-1856",
+          "category": "historical",
+          "name": "Flag of Nepal (1856–c. 1930)",
+          "from": 1856,
+          "to": 1930,
+          "commons": "Flag of Nepal (1856-c.1930).svg",
+          "file": "np/nepal-1856.svg",
+          "design": "An earlier form of the double pennon.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
+          "sha256": "d0b220a570497d961b81fb9abd2f85d1f7a130f6c37c3a6036ce8b01d2c20557",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "np-royal",
+          "category": "standard",
+          "name": "Royal Standard of Nepal",
+          "from": 2001,
+          "to": 2008,
+          "commons": "Royal standard of Nepal.svg",
+          "file": "np/nepal-royal.svg",
+          "design": "The rectangular standard of the king, flown until the monarchy was abolished in 2008.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
+          "sha256": "72d4794779c787eab0e5da07850240a870be6383137f332a0daff78e40e9fbe0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "np-royal-1928",
+          "category": "standard",
+          "name": "Royal Standard of Nepal (1928–1969)",
+          "from": 1928,
+          "to": 1969,
+          "commons": "Royal standard of Nepal (circa 1928).svg",
+          "file": "np/nepal-royal-1928.svg",
+          "design": "The earlier royal standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nepalese_flags",
+          "sha256": "cd516ef3b63b1e2688ceffcd00e21d288188ea432cab4e09b4bc8a6e4135fd09",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "np-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Nepal",
+          "from": 2008,
+          "to": 9999,
+          "commons": "Emblem of Nepal.svg",
+          "file": "np/nepal-emblem.svg",
+          "design": "The flag, Mount Everest, green hills and a yellow plain above two joined hands, within a rhododendron wreath.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Nepal",
+          "meaning": {
+            "description": "The emblem is built from the country's own geography and one social claim. Mount Everest and the green hills below it are the mountain and hill regions; the yellow beneath them is the fertile Terai plain. The map of Nepal sits at the centre with the national flag above it. The joined hands of a man and a woman below stand for gender equality — an explicit statement, adopted with the emblem of the federal republic. Around the whole runs a wreath of rhododendron, the national flower, called lali gurans.",
+            "sources": [
+              {
+                "title": "Emblem of Nepal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Nepal"
+              }
+            ]
+          },
+          "sha256": "f67bcc604764a8c20c8e2054bb7d9bf10547e735fad63c95b169721b305661e9",
+          "fetched": "2026-08-08"
         }
       ]
     },

@@ -165,6 +165,19 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BD": [
     { id: "bd-official-national", category: "official", name: "Flag of Bangladesh", from: 1972, to: 9999, primary: true, path: "flags/bd.svg", design: "The national flag of Bangladesh, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
     { id: "bd-current", category: "historical", name: "Flag of Bangladesh", from: 1972, to: 9999, primary: true, path: "flags/bd.svg", design: "The national flag of Bangladesh, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
+    { id: "bd-1971", category: "historical", name: "Flag of the Provisional Government (1971–1972)", from: 1971, to: 1972, path: "national-flags/bd/bangladesh-1971.svg", design: "The green field with a red disc bearing a golden map of the country, flown by the provisional government during the liberation war.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-pakistan", category: "historical", name: "Flag of Pakistan", from: 1947, to: 1971, sovereign: "Pakistan", path: "flags/pk.svg", design: "The flag of Pakistan, flown over East Pakistan until the liberation war of 1971.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-raj", category: "historical", name: "Red Ensign of the British Raj", from: 1880, to: 1947, sovereign: "the United Kingdom", path: "national-flags/bd/bangladesh-raj.svg", design: "A Red Ensign defaced with the Star of India — the civil flag used in British India.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-bengal", category: "historical", name: "Flag of the Presidency of Fort William in Bengal", from: 1803, to: 1947, sovereign: "the United Kingdom", path: "national-flags/bd/bangladesh-bengal.svg", design: "The flag of the Bengal Presidency under British rule.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-mughal", category: "historical", name: "Alam of the Mughal Empire", from: 1576, to: 1757, sovereign: "the Mughal Empire", path: "national-flags/bd/bangladesh-mughal.svg", design: "The Mughal alam, flown over Bengal from Akbar's conquest until Plassey.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-armed-forces", category: "military", name: "Flag of the Bangladesh Armed Forces", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-armed-forces.svg", design: "The joint flag of the three services.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-army", category: "military", name: "Flag of the Bangladesh Army", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-air-force", category: "military", name: "Air Force Ensign of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-air-force.svg", design: "A blue ensign with the national flag in the canton and the air force roundel in the fly.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-naval-ensign", category: "maritime", name: "Ensign of the Bangladesh Navy", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-civil-ensign", category: "maritime", name: "Civil Ensign of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-civil-ensign.svg", design: "A red ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-president", category: "standard", name: "Presidential standard of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-pm", category: "standard", name: "Standard of the Prime Minister of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_Bangladeshi_flags" },
+    { id: "bd-emblem", category: "coatofarms", name: "National emblem of Bangladesh", from: 1972, to: 9999, path: "national-flags/bd/bangladesh-emblem.svg", design: "A water lily on water, bordered by rice sheaves, beneath four stars and three jute leaves.", source: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
   ],
   "BE": [
     { id: "be-official-national", category: "official", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
@@ -744,6 +757,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "LK": [
     { id: "lk-official-national", category: "official", name: "Flag of Sri Lanka", from: 1972, to: 9999, primary: true, path: "flags/lk.svg", design: "The national flag of Sri Lanka, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
     { id: "lk-current", category: "historical", name: "Flag of Sri Lanka", from: 1972, to: 9999, primary: true, path: "flags/lk.svg", design: "The national flag of Sri Lanka, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
+    { id: "lk-air-force", category: "military", name: "Air Force Ensign of Sri Lanka", from: 2010, to: 9999, path: "national-flags/lk/srilanka-air-force.svg", design: "A defaced sky blue ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags" },
+    { id: "lk-govt-ensign", category: "maritime", name: "Government Ensign of Sri Lanka", from: 1972, to: 9999, path: "national-flags/lk/srilanka-govt-ensign.svg", design: "A blue ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags" },
+    { id: "lk-naval-ensign", category: "maritime", name: "Naval Ensign of Sri Lanka", from: 1972, to: 9999, path: "national-flags/lk/srilanka-naval-ensign.svg", design: "A defaced white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Sri_Lankan_flags" },
+    { id: "lk-emblem", category: "coatofarms", name: "Emblem of Sri Lanka", from: 1972, to: 9999, path: "national-flags/lk/srilanka-emblem.svg", design: "A gold lion passant holding a sword, within blue lotus petals on a grain vase, beneath the Dharmacakra and between the sun and the moon.", source: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
   ],
   "LR": [
     { id: "lr-official-national", category: "official", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag of Liberia, in the form adopted in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
@@ -807,6 +824,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MM": [
     { id: "mm-official-national", category: "official", name: "Flag of Myanmar", from: 2010, to: 9999, primary: true, path: "flags/mm.svg", design: "The national flag of Myanmar, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
     { id: "mm-current", category: "historical", name: "Flag of Myanmar", from: 2010, to: 9999, primary: true, path: "flags/mm.svg", design: "The national flag of Myanmar, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
+    { id: "mm-tatmadaw", category: "military", name: "Flag of the Myanmar Armed Forces (Tatmadaw)", path: "national-flags/mm/myanmar-tatmadaw.svg", design: "A horizontal triband with the armed forces' emblem.", source: "https://en.wikipedia.org/wiki/List_of_Burmese_flags" },
+    { id: "mm-army", category: "military", name: "Flag of the Myanmar Army", path: "national-flags/mm/myanmar-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Burmese_flags" },
+    { id: "mm-mod", category: "military", name: "Flag of the Ministry of Defence", path: "national-flags/mm/myanmar-mod.svg", design: "The defence ministry's flag.", source: "https://en.wikipedia.org/wiki/List_of_Burmese_flags" },
+    { id: "mm-seal", category: "coatofarms", name: "State Seal of Myanmar", from: 2010, to: 9999, path: "national-flags/mm/myanmar-seal.svg", design: "The map of the country between two Burmese royal lions, flanked by sprigs of Eugenia, over a ribbon bearing the name of the state.", source: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
   ],
   "MN": [
     { id: "mn-official-national", category: "official", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
@@ -899,6 +920,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "NP": [
     { id: "np-official-national", category: "official", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
     { id: "np-current", category: "historical", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
+    { id: "np-1930", category: "historical", name: "Flag of Nepal (c. 1930–1962)", from: 1930, to: 1962, path: "national-flags/np/nepal-1930.svg", design: "The double pennon with the sun and moon still bearing human faces, before the 1962 constitution fixed the present design.", source: "https://en.wikipedia.org/wiki/List_of_Nepalese_flags" },
+    { id: "np-1856", category: "historical", name: "Flag of Nepal (1856–c. 1930)", from: 1856, to: 1930, path: "national-flags/np/nepal-1856.svg", design: "An earlier form of the double pennon.", source: "https://en.wikipedia.org/wiki/List_of_Nepalese_flags" },
+    { id: "np-royal", category: "standard", name: "Royal Standard of Nepal", from: 2001, to: 2008, path: "national-flags/np/nepal-royal.svg", design: "The rectangular standard of the king, flown until the monarchy was abolished in 2008.", source: "https://en.wikipedia.org/wiki/List_of_Nepalese_flags" },
+    { id: "np-royal-1928", category: "standard", name: "Royal Standard of Nepal (1928–1969)", from: 1928, to: 1969, path: "national-flags/np/nepal-royal-1928.svg", design: "The earlier royal standard.", source: "https://en.wikipedia.org/wiki/List_of_Nepalese_flags" },
+    { id: "np-emblem", category: "coatofarms", name: "Emblem of Nepal", from: 2008, to: 9999, path: "national-flags/np/nepal-emblem.svg", design: "The flag, Mount Everest, green hills and a yellow plain above two joined hands, within a rhododendron wreath.", source: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
   ],
   "NR": [
     { id: "nr-official-national", category: "official", name: "Flag of Naoero", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag of Naoero, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Naoero" },
@@ -1373,6 +1399,7 @@ export type NationalIndependence = {
 export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence>> = {
   "AR": { year: 1816, event: "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816", source: "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence" },
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
+  "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
@@ -1430,6 +1457,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document a traveller carries is stamped with the federation’s own emblem rather than with the flag.",
     sources: [
       { title: "Australian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_passport" },
+    ],
+  },
+  "bd-emblem": {
+    description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
+    sources: [
+      { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
     ],
   },
   "bo-wiphala": {
@@ -1613,6 +1646,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "lk-emblem": {
+    description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
+    sources: [
+      { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
+    ],
+  },
+  "mm-seal": {
+    description: "The law describing the seal explains each part. At the centre is the map of the country, standing for its territorial shape; on either side of it a sprig of Eugenia with fourteen leaves, a sign of victory — one leaf for each state and region. Flanking those are two Burmese royal lions, chinthe, one facing left and one facing right; the lions signify sovereignty, courage, diligence and the suppression of all dangers great and small with equal effort, and their placement guarding either side of the map is itself the meaning. The ribbon below carries the name of the state, split so that \"Union\" sits under the left lion, \"Republic\" under the map and \"Myanmar\" under the right.",
+    sources: [
+      { title: "State Seal of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
+    ],
+  },
   "my-arms": {
     description: "The crest repeats the flag: a yellow crescent and a fourteen-pointed federal star, yellow being the colour of Malay royalty, so the crest stands for the monarchy, while the star and crescent together carry Islam as the religion of the federation. The star’s fourteen points were originally the fourteen states of 1963; when Singapore left in 1965 the point was not removed but re-read as the federal territories. The shield is the federation assembled piece by piece — five krises across the chief for the five formerly Unfederated Malay States, and quarters for the other members — so a viewer can read which states joined how. The two tigers are held over from the arms of the Federated Malay States.",
     sources: [
@@ -1623,6 +1668,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms in the centre are the same crest, tiger supporters and fourteen-point federal star the country's coat of arms carries, so the passport repeats the federation's own claim about itself. The text appears in Malay and English together, as the constitution requires of official documents.",
     sources: [
       { title: "Malaysian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysian_passport" },
+    ],
+  },
+  "np-emblem": {
+    description: "The emblem is built from the country's own geography and one social claim. Mount Everest and the green hills below it are the mountain and hill regions; the yellow beneath them is the fertile Terai plain. The map of Nepal sits at the centre with the national flag above it. The joined hands of a man and a woman below stand for gender equality — an explicit statement, adopted with the emblem of the federal republic. Around the whole runs a wreath of rhododendron, the national flower, called lali gurans.",
+    sources: [
+      { title: "Emblem of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
     ],
   },
   "pe-arms": {
