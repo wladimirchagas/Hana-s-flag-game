@@ -27,6 +27,7 @@ on:
       - "scripts/download-national-flags.mjs"
       - "scripts/build-national-flags.mjs"
       - "scripts/check-national-flags.mjs"
+      - "scripts/seed-national-symbols.mjs"
       - "src/data/nationalFlags.ts"
       - "public/capital-flags/**"
       - "src/data/capitalFlags.ts"
