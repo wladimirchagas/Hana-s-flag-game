@@ -202,6 +202,42 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
    the historical section, that picking a card opens its widget below the fact-sheet with the name, years
    and explainer — and that the MAP highlight does not change.
 
+### Coverage — every UN member has the tab; depth grows per country
+
+`scripts/seed-national-symbols.mjs` gives EVERY UN member the baseline it owes: its current
+national flag, in the official section (badged as the flag in force) and heading the historical
+section. It is the one generated part of this manifest, and it is safe to generate because every
+field is copied from data the repo already sources — the bundled `public/flags/{cc}.svg`, the
+sourced `FLAG_ADOPTION_YEAR`, the `UN_MEMBERS` name, and a Wikipedia URL it verifies exists before
+writing. It writes **no visual description and no symbolism**: `design` states only that this is the
+flag the country flies and the year it was adopted, and `meaning` is left for a human to source. It
+never touches a country already in the manifest.
+
+Everything beyond that baseline — historical flags, pre-independence flags, military and maritime
+flags, standards, civil/state variants, indigenous flags, the coat of arms and the passports — is
+added per country BY HAND, sourced entry by entry, as the first thirteen were (Brazil, Australia,
+Malaysia, the United States, the United Kingdom, France, Spain, Bolivia, South Africa, Japan,
+Türkiye, India, China). **Deepening the remaining countries is a STANDING SWEEP**, in the same
+spirit as the flag-meaning sweep: pick the next country, source it properly, never pad it, and keep
+going without asking whether to continue.
+
+**The two-step workflow, and why step 1 is never step 2.**
+`scripts/harvest-national-symbols.mjs "List of X flags" XX` writes a worksheet (`h-XX.json`) of every
+row those tables show — the Commons filename, the years the row states, and the row's own text,
+all verbatim from the cited article, so it can neither invent a date nor invent a description. It is
+NOT data. A human then reads the worksheet and decides what the machine cannot:
+
+  • which rows are NATIONAL symbols at all — a "List of X flags" page is mostly sub-national flags,
+    rank and command flags, party, sporting and scouting flags, none of which belong here;
+  • which category each one is (rule 5: service flags only, never the rank flags beside them);
+  • whether a flag predates independence, which needs `sovereign` and the country's `independence`
+    record (rule 4) — the anachronism guard the harvester cannot reason about;
+  • the `meaning`, which the harvester never emits at all, because explainers are read from a source
+    and written by hand (rule 7) and machine-assembled prose is exactly what that rule forbids.
+
+Only after that pass does an entry reach `scripts/data/national-flag-sources.json`, and the images
+are then fetched by `download-national-flags.mjs` with their sha256 recorded like every other flag.
+
 ### Enforcement
 
 `scripts/check-national-flags.mjs` (`npm run flags:check:national`, in `npm run flags:check` and the
