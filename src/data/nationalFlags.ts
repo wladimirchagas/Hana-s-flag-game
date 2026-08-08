@@ -775,6 +775,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "JM": [
     { id: "jm-official-national", category: "official", name: "Flag of Jamaica", from: 1962, to: 9999, primary: true, path: "flags/jm.svg", design: "The national flag of Jamaica, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
     { id: "jm-current", category: "historical", name: "Flag of Jamaica", from: 1962, to: 9999, primary: true, path: "flags/jm.svg", design: "The national flag of Jamaica, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
+    { id: "jm-1957", category: "historical", name: "Flag of the Colony of Jamaica (1957–1962)", from: 1957, to: 1962, sovereign: "the United Kingdom", path: "national-flags/jm/jamaica-1957.svg", design: "The colony's blue ensign in its final form, flown until independence.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
+    { id: "jm-1875", category: "historical", name: "Flag of the Colony of Jamaica (1875–1906)", from: 1875, to: 1906, sovereign: "the United Kingdom", path: "national-flags/jm/jamaica-1875.svg", design: "The colony's first badged blue ensign.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
+    { id: "jm-spain", category: "historical", name: "Flag of New Spain", from: 1516, to: 1655, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, flown over the island from the Spanish settlement until the English conquest of 1655.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
+    { id: "jm-defence-force", category: "military", name: "Flag of the Jamaica Defence Force", from: 1962, to: 9999, path: "national-flags/jm/jamaica-defence-force.svg", design: "The defence force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
+    { id: "jm-naval-ensign", category: "maritime", name: "Naval Ensign of Jamaica", from: 1962, to: 9999, path: "national-flags/jm/jamaica-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
+    { id: "jm-governor-general", category: "standard", name: "Flag of the Governor-General of Jamaica", from: 1962, to: 9999, path: "national-flags/jm/jamaica-governor-general.svg", design: "A blue field with the royal crest and the country's name.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
+    { id: "jm-pm", category: "standard", name: "Standard of the Prime Minister of Jamaica", from: 1962, to: 9999, path: "national-flags/jm/jamaica-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_Jamaican_flags" },
+    { id: "jm-arms", category: "coatofarms", name: "Coat of arms of Jamaica", from: 1962, to: 9999, path: "national-flags/jm/jamaica-arms.svg", design: "A white shield with a red cross bearing five pineapples, crested with a crocodile on a log, supported by a Taíno man and woman.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
   ],
   "JO": [
     { id: "jo-official-national", category: "official", name: "Flag of Jordan", from: 1928, to: 9999, primary: true, path: "flags/jo.svg", design: "The national flag of Jordan, in the form adopted in 1928.", source: "https://en.wikipedia.org/wiki/Flag_of_Jordan" },
@@ -1046,6 +1054,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "NI": [
     { id: "ni-official-national", category: "official", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
     { id: "ni-current", category: "historical", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
+    { id: "ni-1908", category: "historical", name: "Flag of Nicaragua (1908–1971)", from: 1908, to: 1971, path: "national-flags/ni/nicaragua-1908.svg", design: "The blue-white-blue flag with the arms, before the 1971 revision of the shade and emblem.", source: "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags" },
+    { id: "ni-federal", category: "historical", name: "Flag of the Federal Republic of Central America", from: 1824, to: 1838, priorPolity: "the Federal Republic of Central America", path: "national-flags/ni/nicaragua-federal.svg", design: "The blue-white-blue flag of the federation from which Nicaragua's own flag directly descends.", source: "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags" },
+    { id: "ni-mexican-empire", category: "historical", name: "Flag of the First Mexican Empire", from: 1821, to: 1823, sovereign: "the First Mexican Empire", path: "national-flags/ni/nicaragua-mexican-empire.svg", design: "Iturbide's imperial flag, flown over Central America in the two years after separation from Spain.", source: "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags" },
+    { id: "ni-spain", category: "historical", name: "War ensign of Spain", from: 1785, to: 1821, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The last Spanish flag flown over the province.", source: "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags" },
+    { id: "ni-burgundy", category: "historical", name: "Cross of Burgundy", from: 1524, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, flag of New Spain.", source: "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags" },
+    { id: "ni-arms", category: "coatofarms", name: "Coat of arms of Nicaragua", from: 1971, to: 9999, path: "national-flags/ni/nicaragua-arms.svg", design: "A triangle containing five volcanoes between two seas, beneath a rainbow and a Phrygian cap.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua" },
   ],
   "NL": [
     { id: "nl-official-national", category: "official", name: "Flag of Netherlands", from: 1660, to: 9999, primary: true, path: "flags/nl.svg", design: "The national flag of Netherlands, in the form adopted in 1660.", source: "https://en.wikipedia.org/wiki/Flag_of_Netherlands" },
@@ -1100,6 +1114,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "PA": [
     { id: "pa-official-national", category: "official", name: "Flag of Panama", from: 1925, to: 9999, primary: true, path: "flags/pa.svg", design: "The national flag of Panama, in the form adopted in 1925.", source: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
     { id: "pa-current", category: "historical", name: "Flag of Panama", from: 1925, to: 9999, primary: true, path: "flags/pa.svg", design: "The national flag of Panama, in the form adopted in 1925.", source: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
+    { id: "pa-1903", category: "historical", name: "First flag of Panama", from: 1903, to: 1903, path: "national-flags/pa/panama-1903.svg", design: "The flag flown at the separation from Colombia, before the present design was adopted.", source: "https://en.wikipedia.org/wiki/List_of_Panamanian_flags" },
+    { id: "pa-colombia", category: "historical", name: "Flag of the Sovereign State of Panama", from: 1863, to: 1886, sovereign: "Colombia", path: "national-flags/pa/panama-sovereign-state.svg", design: "The flag of Panama as a sovereign state within the United States of Colombia.", source: "https://en.wikipedia.org/wiki/List_of_Panamanian_flags" },
+    { id: "pa-gran-colombia", category: "historical", name: "Flag of Gran Colombia", from: 1821, to: 1831, sovereign: "Gran Colombia", path: "national-flags/pa/panama-gran-colombia.svg", design: "The flag of the union the isthmus joined on separating from Spain in 1821.", source: "https://en.wikipedia.org/wiki/List_of_Panamanian_flags" },
+    { id: "pa-spain", category: "historical", name: "Flag of Spain", from: 1785, to: 1821, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish ensign of 1785, flown over the isthmus until 1821.", source: "https://en.wikipedia.org/wiki/List_of_Panamanian_flags" },
+    { id: "pa-president", category: "standard", name: "Presidential standard of Panama", path: "national-flags/pa/panama-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Panamanian_flags" },
+    { id: "pa-arms", category: "coatofarms", name: "Coat of arms of Panama", from: 1904, to: 9999, path: "national-flags/pa/panama-arms.svg", design: "A pointed shield of the isthmus at sunset with crossed sword and rifle, spade and hoe, a cornucopia and a winged wheel, beneath an eagle and nine stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
   ],
   "PE": [
     { id: "pe-official-national", category: "official", name: "Flag of Peru", from: 1825, to: 9999, primary: true, path: "flags/pe.svg", design: "The national flag of Peru, in the form adopted in 1825.", source: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
@@ -1335,6 +1355,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "SV": [
     { id: "sv-official-national", category: "official", name: "Flag of El Salvador", from: 1912, to: 9999, primary: true, path: "flags/sv.svg", design: "The national flag of El Salvador, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
     { id: "sv-current", category: "historical", name: "Flag of El Salvador", from: 1912, to: 9999, primary: true, path: "flags/sv.svg", design: "The national flag of El Salvador, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
+    { id: "sv-spain", category: "historical", name: "War ensign of Spain", from: 1785, to: 1821, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The last Spanish flag flown over the province, to 15 September 1821.", source: "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags" },
+    { id: "sv-burgundy", category: "historical", name: "Cross of Burgundy", from: 1525, to: 1701, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, flown from the Spanish conquest.", source: "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags" },
+    { id: "sv-civil-ensign", category: "maritime", name: "Civil Ensign of El Salvador", from: 1912, to: 9999, path: "national-flags/sv/elsalvador-civil-ensign.svg", design: "The plain triband flown by merchant shipping.", source: "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags" },
+    { id: "sv-civil", category: "civilstate", name: "Civil flag of El Salvador", from: 1912, to: 9999, path: "national-flags/sv/elsalvador-civil.svg", design: "The blue-white-blue triband with DIOS UNIÓN LIBERTAD in gold in place of the arms.", source: "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags" },
+    { id: "sv-arms", category: "coatofarms", name: "Coat of arms of El Salvador", from: 1912, to: 9999, path: "national-flags/sv/elsalvador-arms.svg", design: "A golden triangle containing five volcanoes between two oceans, beneath a Phrygian cap, a rainbow and the date 15 September 1821, within a laurel wreath and five flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
   ],
   "SY": [
     { id: "sy-official-national", category: "official", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria, in the form adopted in 2024.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
@@ -1646,18 +1671,22 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "IE": { year: 1922, event: "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty", note: "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Irish_Free_State" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "IS": { year: 1944, event: "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown", note: "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.", source: "https://en.wikipedia.org/wiki/History_of_Iceland" },
+  "JM": { year: 1962, event: "Independence from the United Kingdom, 6 August 1962", source: "https://en.wikipedia.org/wiki/History_of_Jamaica" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "MZ": { year: 1975, event: "Independence from Portugal, 25 June 1975", source: "https://en.wikipedia.org/wiki/Mozambican_War_of_Independence" },
+  "NI": { year: 1838, event: "Nicaragua declared independence from the Federal Republic of Central America on 30 April 1838", note: "Central America had separated from Spain in 1821, belonged to the First Mexican Empire until 1823, and then formed the federation.", source: "https://en.wikipedia.org/wiki/History_of_Nicaragua" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "OM": { year: 1650, event: "Portuguese rule over the Omani coast ended when Sultan bin Saif expelled them from Muscat in 1650", note: "Oman was never a European colony in the later sense: the Portuguese held only the coastal forts from 1507, and the country has been independent since, ruled by the Al Said dynasty from 1744.", source: "https://en.wikipedia.org/wiki/History_of_Oman" },
+  "PA": { year: 1903, event: "Panama separated from Colombia on 3 November 1903", note: "The isthmus had separated from Spain in 1821 and joined Gran Colombia, remaining part of Colombia until 1903.", source: "https://en.wikipedia.org/wiki/Separation_of_Panama_from_Colombia" },
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
   "SG": { year: 1965, event: "Separation from Malaysia and full independence, 9 August 1965", note: "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Singapore_in_Malaysia" },
+  "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
   "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
@@ -1972,6 +2001,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
     ],
   },
+  "jm-arms": {
+    description: "These are among the oldest arms in the Americas, granted to the colony of Jamaica by royal warrant in 1661 and designed by William Sancroft, later Archbishop of Canterbury — Jamaica kept them at independence rather than devising new ones. The shield is a red cross on white bearing five gold pineapples, the fruit the island exported; the crest is a crocodile standing on a log, native to the island's swamps; the supporters are a Taíno man and woman, the island's indigenous people, one holding a basket of fruit and the other a bow. What DID change was the motto: the original Latin, INDUS UTERQUE SERVIET UNI — \"the Indians twain shall serve one Lord\" — was replaced at independence in 1962 with \"Out of Many, One People\".",
+    sources: [
+      { title: "Coat of arms of Jamaica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica" },
+    ],
+  },
   "jp-arms": {
     description: "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
     sources: [
@@ -2050,6 +2085,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
     ],
   },
+  "ni-arms": {
+    description: "Nicaragua's arms are the federation's arms, kept: the triangle is equality, the rainbow across the top is peace, the Phrygian cap beneath it is liberty, and the five volcanoes standing between two seas are the union and brotherhood of the five Central American countries — not five Nicaraguan mountains. Four of those five states went their own way in 1838; the emblem still counts them all.",
+    sources: [
+      { title: "Coat of arms of Nicaragua — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua" },
+    ],
+  },
   "nl-arms": {
     description: "Adopted in 1815 and modified in 1907, the arms fuse two inheritances: the blue field strewn with gold billets comes from the arms of the House of Nassau, and the lion from the arms of the former Dutch Republic. What the lion holds is the history — a sword in its right paw, and in its left SEVEN arrows bound together, one for each of the seven provinces of the Republic. The bundle is the old fable made heraldic: arrows that break singly and hold together bound. The monarch places the shield on a red mantle lined with ermine, beneath the royal crown.",
     sources: [
@@ -2072,6 +2113,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Nicknamed Khanjar Bo Sayfain — \"khanjar and two swords\" — the emblem is a curved Omani dagger in its sheath laid over two crossed swords. The Omani Ministry of Foreign Affairs explains it simply: these are the historic weapons of the people of Oman. It was adopted in the 18th century as the badge of the Al Said royal family and became the emblem of the state, so it is one of the very few national emblems that began as a dynasty's private device and stayed a weapon rather than becoming a shield.",
     sources: [
       { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
+    ],
+  },
+  "pa-arms": {
+    description: "The centre panel is a specific moment, not a landscape: the isthmus with its two seas, the moon rising over the waves as the sun sets behind the mountain — the solemn hour of the declaration of independence, 3 November 1903. The upper quarters carry a sword and rifle, laid down in the 1904 design to mean the end of civil wars but redefined by Law 28 of 1941 as an attitude of alert in defence of sovereignty, and a spade and hoe for work. The lower quarters carry a cornucopia for wealth and a winged wheel for progress. The eagle covering the shield with open wings is sovereignty, and the gold stars arched above it count the provinces of the republic — so their number changes as the country does.",
+    sources: [
+      { title: "Coat of arms of Panama — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama" },
     ],
   },
   "pe-arms": {
@@ -2144,6 +2191,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem runs through three periods that follow on from each other — Byzantine (6th–12th centuries), Hungarian (12th–20th) and Slovak (19th–20th). The double cross came into the region's heraldry from Byzantium and is read in modern interpretation as Slovakia standing heir and guardian to the Christian tradition. The three peaks it stands on are the mountain ranges Tatra, Mátra and Fátra, which stood for the northern mountainous part of the Kingdom of Hungary — the Tatra and the Fátra lie in present-day Slovakia. The current drawing was made in 1990 by the painter Ladislav Čisárik and the heraldist Ladislav Vrtel, commissioned after the Velvet Revolution.",
     sources: [
       { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
+    ],
+  },
+  "sv-arms": {
+    description: "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
+    sources: [
+      { title: "Coat of arms of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
     ],
   },
   "th-emblem": {

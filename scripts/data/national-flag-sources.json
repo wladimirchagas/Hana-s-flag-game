@@ -6963,8 +6963,126 @@
           "reuse": "flags/jm.svg",
           "design": "The national flag of Jamaica, in the form adopted in 1962.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
+        },
+        {
+          "id": "jm-1957",
+          "category": "historical",
+          "name": "Flag of the Colony of Jamaica (1957–1962)",
+          "from": 1957,
+          "to": 1962,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Jamaica (1957–1962).svg",
+          "file": "jm/jamaica-1957.svg",
+          "design": "The colony's blue ensign in its final form, flown until independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
+          "sha256": "5ba06d6681ed3f6f66c611ed72a1adb928e2efe76f51d8b4ba77a5c0a845e742",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "jm-1875",
+          "category": "historical",
+          "name": "Flag of the Colony of Jamaica (1875–1906)",
+          "from": 1875,
+          "to": 1906,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Jamaica (1875–1906).svg",
+          "file": "jm/jamaica-1875.svg",
+          "design": "The colony's first badged blue ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
+          "sha256": "c641046c0df7397ca6f1a7d454423128a3b9441c5e2e5ac9f09b7f26daf40601",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "jm-spain",
+          "category": "historical",
+          "name": "Flag of New Spain",
+          "from": 1516,
+          "to": 1655,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The Cross of Burgundy, flown over the island from the Spanish settlement until the English conquest of 1655.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags"
+        },
+        {
+          "id": "jm-governor-general",
+          "category": "standard",
+          "name": "Flag of the Governor-General of Jamaica",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Flag of the Governor-General of Jamaica.svg",
+          "file": "jm/jamaica-governor-general.svg",
+          "design": "A blue field with the royal crest and the country's name.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
+          "sha256": "66e548c3aa4a59890ea5834c5fa9665d57f8c20b112fa2f108758e6a2a232d00",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "jm-pm",
+          "category": "standard",
+          "name": "Standard of the Prime Minister of Jamaica",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Flag of the Prime Minister of Jamaica.svg",
+          "file": "jm/jamaica-pm.svg",
+          "design": "The prime minister's standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
+          "sha256": "213d1108e4e5bdd40c4c372f1a3e40ba54a6c16018fb9315158dcf81e46af37b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "jm-defence-force",
+          "category": "military",
+          "name": "Flag of the Jamaica Defence Force",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Flag of the Jamaica Defence Force.svg",
+          "file": "jm/jamaica-defence-force.svg",
+          "design": "The defence force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
+          "sha256": "9f03ab5cd9e8b9cc7b37cb2190b42fc2f33fae3ef96fc5523e44cb34befba847",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "jm-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Jamaica",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Naval Ensign of Jamaica.svg",
+          "file": "jm/jamaica-naval-ensign.svg",
+          "design": "A white ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Jamaican_flags",
+          "sha256": "ef584414ec3a27e320189660b3a40710fdbbc874ddce01753635016dd2b05389",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "jm-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Jamaica",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Coat of arms of Jamaica.svg",
+          "file": "jm/jamaica-arms.svg",
+          "design": "A white shield with a red cross bearing five pineapples, crested with a crocodile on a log, supported by a Taíno man and woman.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica",
+          "meaning": {
+            "description": "These are among the oldest arms in the Americas, granted to the colony of Jamaica by royal warrant in 1661 and designed by William Sancroft, later Archbishop of Canterbury — Jamaica kept them at independence rather than devising new ones. The shield is a red cross on white bearing five gold pineapples, the fruit the island exported; the crest is a crocodile standing on a log, native to the island's swamps; the supporters are a Taíno man and woman, the island's indigenous people, one holding a basket of fruit and the other a bow. What DID change was the motto: the original Latin, INDUS UTERQUE SERVIET UNI — \"the Indians twain shall serve one Lord\" — was replaced at independence in 1962 with \"Out of Many, One People\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Jamaica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jamaica"
+              }
+            ]
+          },
+          "sha256": "0d0b8fccc57df249b1ce53125ac9e051fd42f34491c694e7885f4f9665a98ad4",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1962,
+        "event": "Independence from the United Kingdom, 6 August 1962",
+        "source": "https://en.wikipedia.org/wiki/History_of_Jamaica"
+      }
     },
     "JO": {
       "flags": [
@@ -9352,8 +9470,99 @@
           "reuse": "flags/ni.svg",
           "design": "The national flag of Nicaragua, in the form adopted in 1908.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Nicaragua"
+        },
+        {
+          "id": "ni-1908",
+          "category": "historical",
+          "name": "Flag of Nicaragua (1908–1971)",
+          "from": 1908,
+          "to": 1971,
+          "commons": "Flag of Nicaragua (1908–1971).svg",
+          "file": "ni/nicaragua-1908.svg",
+          "design": "The blue-white-blue flag with the arms, before the 1971 revision of the shade and emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
+          "sha256": "9b5827807daf39f4708ba9d362fc53fe7ee0ca3e13e7cc69ef7ce1647baa87bc",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ni-federal",
+          "category": "historical",
+          "name": "Flag of the Federal Republic of Central America",
+          "from": 1824,
+          "to": 1838,
+          "priorPolity": "the Federal Republic of Central America",
+          "commons": "Flag of the Federal Republic of Central America.svg",
+          "file": "ni/nicaragua-federal.svg",
+          "design": "The blue-white-blue flag of the federation from which Nicaragua's own flag directly descends.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
+          "sha256": "91b1f03c3d5c6b209ac868e2f378c4b03be679d5f421863affa0fd703acaa8d9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ni-mexican-empire",
+          "category": "historical",
+          "name": "Flag of the First Mexican Empire",
+          "from": 1821,
+          "to": 1823,
+          "sovereign": "the First Mexican Empire",
+          "commons": "Bandera del Primer Imperio Mexicano.svg",
+          "file": "ni/nicaragua-mexican-empire.svg",
+          "design": "Iturbide's imperial flag, flown over Central America in the two years after separation from Spain.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags",
+          "sha256": "73a1548d87c678e560c683cb1924b60a4f899a56a197144f44d59b69a1d24b59",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ni-spain",
+          "category": "historical",
+          "name": "War ensign of Spain",
+          "from": 1785,
+          "to": 1821,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The last Spanish flag flown over the province.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags"
+        },
+        {
+          "id": "ni-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1524,
+          "to": 1785,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The Cross of Burgundy, flag of New Spain.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nicaraguan_flags"
+        },
+        {
+          "id": "ni-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Nicaragua",
+          "from": 1971,
+          "to": 9999,
+          "commons": "Coat of arms of Nicaragua.svg",
+          "file": "ni/nicaragua-arms.svg",
+          "design": "A triangle containing five volcanoes between two seas, beneath a rainbow and a Phrygian cap.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua",
+          "meaning": {
+            "description": "Nicaragua's arms are the federation's arms, kept: the triangle is equality, the rainbow across the top is peace, the Phrygian cap beneath it is liberty, and the five volcanoes standing between two seas are the union and brotherhood of the five Central American countries — not five Nicaraguan mountains. Four of those five states went their own way in 1838; the emblem still counts them all.",
+            "sources": [
+              {
+                "title": "Coat of arms of Nicaragua — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nicaragua"
+              }
+            ]
+          },
+          "sha256": "9ef0e7ba8c721d0188b9bf25ff749f1ec3fb2462c319743336b5a6f2f2a06e21",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1838,
+        "event": "Nicaragua declared independence from the Federal Republic of Central America on 30 April 1838",
+        "note": "Central America had separated from Spain in 1821, belonged to the First Mexican Empire until 1823, and then formed the federation.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Nicaragua"
+      }
     },
     "NL": {
       "flags": [
@@ -9904,8 +10113,99 @@
           "reuse": "flags/pa.svg",
           "design": "The national flag of Panama, in the form adopted in 1925.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Panama"
+        },
+        {
+          "id": "pa-1903",
+          "category": "historical",
+          "name": "First flag of Panama",
+          "from": 1903,
+          "to": 1903,
+          "commons": "Flag of Panama (1903).svg",
+          "file": "pa/panama-1903.svg",
+          "design": "The flag flown at the separation from Colombia, before the present design was adopted.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
+          "sha256": "439a11f0020a3079a3353665c812947447fc12cde51968d79807ae31542b4acf",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pa-colombia",
+          "category": "historical",
+          "name": "Flag of the Sovereign State of Panama",
+          "from": 1863,
+          "to": 1886,
+          "sovereign": "Colombia",
+          "commons": "Flag of Sovereign State of Panama.svg",
+          "file": "pa/panama-sovereign-state.svg",
+          "design": "The flag of Panama as a sovereign state within the United States of Colombia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
+          "sha256": "c51aeebb55cc4aa83c6248ade886e2518f1d1b6e37d92d0e417418c77bef69a3",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pa-gran-colombia",
+          "category": "historical",
+          "name": "Flag of Gran Colombia",
+          "from": 1821,
+          "to": 1831,
+          "sovereign": "Gran Colombia",
+          "commons": "Flag of Gran Colombia.svg",
+          "file": "pa/panama-gran-colombia.svg",
+          "design": "The flag of the union the isthmus joined on separating from Spain in 1821.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
+          "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pa-spain",
+          "category": "historical",
+          "name": "Flag of Spain",
+          "from": 1785,
+          "to": 1821,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The Spanish ensign of 1785, flown over the isthmus until 1821.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags"
+        },
+        {
+          "id": "pa-president",
+          "category": "standard",
+          "name": "Presidential standard of Panama",
+          "commons": "Presidential Flag of Panama.svg",
+          "file": "pa/panama-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Panamanian_flags",
+          "sha256": "614de18f19e7158e4cc2c7318dc7d52a94b7f9cc13328ce6e92410443af2c4d4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pa-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Panama",
+          "from": 1904,
+          "to": 9999,
+          "commons": "Coat of arms of Panama.svg",
+          "file": "pa/panama-arms.svg",
+          "design": "A pointed shield of the isthmus at sunset with crossed sword and rifle, spade and hoe, a cornucopia and a winged wheel, beneath an eagle and nine stars.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama",
+          "meaning": {
+            "description": "The centre panel is a specific moment, not a landscape: the isthmus with its two seas, the moon rising over the waves as the sun sets behind the mountain — the solemn hour of the declaration of independence, 3 November 1903. The upper quarters carry a sword and rifle, laid down in the 1904 design to mean the end of civil wars but redefined by Law 28 of 1941 as an attitude of alert in defence of sovereignty, and a spade and hoe for work. The lower quarters carry a cornucopia for wealth and a winged wheel for progress. The eagle covering the shield with open wings is sovereignty, and the gold stars arched above it count the provinces of the republic — so their number changes as the country does.",
+            "sources": [
+              {
+                "title": "Coat of arms of Panama — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Panama"
+              }
+            ]
+          },
+          "sha256": "21626a19182e3f90b507069122f0a6cc541ce99508811ea22c60856abdba2d16",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1903,
+        "event": "Panama separated from Colombia on 3 November 1903",
+        "note": "The isthmus had separated from Spain in 1821 and joined Gran Colombia, remaining part of Colombia until 1903.",
+        "source": "https://en.wikipedia.org/wiki/Separation_of_Panama_from_Colombia"
+      }
     },
     "PE": {
       "flags": [
@@ -12186,8 +12486,84 @@
           "reuse": "flags/sv.svg",
           "design": "The national flag of El Salvador, in the form adopted in 1912.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_El_Salvador"
+        },
+        {
+          "id": "sv-civil",
+          "category": "civilstate",
+          "name": "Civil flag of El Salvador",
+          "from": 1912,
+          "to": 9999,
+          "commons": "Civil Flag of El Salvador.svg",
+          "file": "sv/elsalvador-civil.svg",
+          "design": "The blue-white-blue triband with DIOS UNIÓN LIBERTAD in gold in place of the arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags",
+          "sha256": "294f810fbdf2e4d6350d1bd11d27e90db87d5b525de5f2fd64bf3a07242d4dd9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sv-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of El Salvador",
+          "from": 1912,
+          "to": 9999,
+          "commons": "Civil Ensign of El Salvador.svg",
+          "file": "sv/elsalvador-civil-ensign.svg",
+          "design": "The plain triband flown by merchant shipping.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags",
+          "sha256": "aeae0575d4903e3ef620f24b4503605c06dc01a57dc38b4f0312a2a0c486aa7b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sv-spain",
+          "category": "historical",
+          "name": "War ensign of Spain",
+          "from": 1785,
+          "to": 1821,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The last Spanish flag flown over the province, to 15 September 1821.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags"
+        },
+        {
+          "id": "sv-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1525,
+          "to": 1701,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The Cross of Burgundy, flown from the Spanish conquest.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Salvadoran_flags"
+        },
+        {
+          "id": "sv-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of El Salvador",
+          "from": 1912,
+          "to": 9999,
+          "commons": "Coat of arms of El Salvador.svg",
+          "file": "sv/elsalvador-arms.svg",
+          "design": "A golden triangle containing five volcanoes between two oceans, beneath a Phrygian cap, a rainbow and the date 15 September 1821, within a laurel wreath and five flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador",
+          "meaning": {
+            "description": "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
+            "sources": [
+              {
+                "title": "Coat of arms of El Salvador — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador"
+              }
+            ]
+          },
+          "sha256": "096b79600d2296de4d7075c88570874c81f290fbf682aa5d5f3dfa7fd9b2e5f2",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1841,
+        "event": "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved",
+        "note": "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.",
+        "source": "https://en.wikipedia.org/wiki/History_of_El_Salvador"
+      }
     },
     "SY": {
       "flags": [
