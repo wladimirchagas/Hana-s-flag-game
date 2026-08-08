@@ -414,6 +414,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "DZ": [
     { id: "dz-official-national", category: "official", name: "Flag of Algeria", from: 1962, to: 9999, primary: true, path: "flags/dz.svg", design: "The national flag of Algeria, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
     { id: "dz-current", category: "historical", name: "Flag of Algeria", from: 1962, to: 9999, primary: true, path: "flags/dz.svg", design: "The national flag of Algeria, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
+    { id: "dz-french", category: "historical", name: "Merchant flag of French Algeria", from: 1848, to: 1910, sovereign: "France", path: "national-flags/dz/algeria-french.svg", design: "The merchant flag flown by shipping of French Algeria.", source: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
+    { id: "dz-regency", category: "historical", name: "Flag of the Regency of Algiers", from: 1516, to: 1830, priorPolity: "the Regency of Algiers", path: "national-flags/dz/algeria-regency.svg", design: "The flag of the Dey of Algiers, the Ottoman-era regency that governed the territory before the French conquest.", source: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
+    { id: "dz-naval-ensign", category: "maritime", name: "Naval ensign of Algeria", from: 2004, to: 9999, path: "national-flags/dz/algeria-naval-ensign.svg", design: "The naval ensign of the Algerian National Navy.", source: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
+    { id: "dz-naval-jack", category: "maritime", name: "Naval jack of Algeria", path: "national-flags/dz/algeria-naval-jack.svg", design: "The national flag in the jack's proportions.", source: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
+    { id: "dz-president", category: "standard", name: "Presidential standard of Algeria", from: 1962, to: 9999, path: "national-flags/dz/algeria-president.svg", design: "The national flag charged with the presidential emblem.", source: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
+    { id: "dz-emblem", category: "coatofarms", name: "National emblem of Algeria", from: 1976, to: 9999, path: "national-flags/dz/algeria-emblem.svg", design: "A hand of Fatima before the Atlas Mountains under a rising sun, with buildings and plants below, within a crescent.", source: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
   ],
   "EC": [
     { id: "ec-official-national", category: "official", name: "Flag of Ecuador", from: 1900, to: 9999, primary: true, path: "flags/ec.svg", design: "The national flag of Ecuador, in the form adopted in 1900.", source: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
@@ -635,6 +641,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "IQ": [
     { id: "iq-official-national", category: "official", name: "Flag of Iraq", from: 2008, to: 9999, primary: true, path: "flags/iq.svg", design: "The national flag of Iraq, in the form adopted in 2008.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
     { id: "iq-current", category: "historical", name: "Flag of Iraq", from: 2008, to: 9999, primary: true, path: "flags/iq.svg", design: "The national flag of Iraq, in the form adopted in 2008.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-1924", category: "historical", name: "Flag of the Kingdom of Iraq", from: 1924, to: 1959, path: "national-flags/iq/iraq-1924.svg", design: "A black-white-green horizontal triband with a red trapezoid at the hoist bearing two white stars — the first flag of the Iraqi state, adopted 10 July 1924.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-arab-federation", category: "historical", name: "Flag of the Arab Federation", from: 1921, to: 1924, path: "national-flags/iq/iraq-arab-federation.svg", design: "The Hashemite flag flown from 1921, and used again in 1958 for the short-lived federation with Jordan.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-ground-forces", category: "military", name: "Flag of the Iraqi Ground Forces", path: "national-flags/iq/iraq-ground-forces.svg", design: "The ground forces' flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-air-force", category: "military", name: "Flag of the Iraqi Air Force", path: "national-flags/iq/iraq-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-navy", category: "military", name: "Flag of the Iraqi Navy", from: 2003, to: 9999, path: "national-flags/iq/iraq-navy.svg", design: "The navy's flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
+    { id: "iq-arms", category: "coatofarms", name: "Coat of arms of Iraq", from: 1965, to: 9999, path: "national-flags/iq/iraq-arms.svg", design: "The golden Eagle of Saladin bearing a shield in the colours of the national flag, above a scroll reading الجمهورية العراقية.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
   ],
   "IR": [
     { id: "ir-official-national", category: "official", name: "Flag of Iran", from: 1980, to: 9999, primary: true, path: "flags/ir.svg", design: "The national flag of Iran, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
@@ -1200,7 +1212,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "TN": [
     { id: "tn-official-national", category: "official", name: "Flag of Tunisia", from: 1831, to: 9999, primary: true, path: "flags/tn.svg", design: "The national flag of Tunisia, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    { id: "tn-1959", category: "historical", name: "Flag of Tunisia (1959–1999)", from: 1959, to: 1999, path: "national-flags/tn/tunisia-1959.svg", design: "The red flag with the white disc, crescent and star, before the 1999 law fixed the present proportions.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
     { id: "tn-current", category: "historical", name: "Flag of Tunisia", from: 1831, to: 9999, primary: true, path: "flags/tn.svg", design: "The national flag of Tunisia, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
+    { id: "tn-beylik", category: "historical", name: "Flag of the Beylik of Tunis", from: 1827, to: 1881, priorPolity: "the Beylik of Tunis", path: "national-flags/tn/tunisia-beylik.svg", design: "The red field with a centred white disc bearing a crescent and star, adopted by Al-Husayn II ibn Mahmud and carried on through the French protectorate.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
+    { id: "tn-ottoman", category: "historical", name: "Flag of the Eyalet of Tunis", from: 1574, to: 1705, sovereign: "the Ottoman Empire", path: "national-flags/tn/tunisia-ottoman.svg", design: "The flag of the Ottoman eyalet of Tunis.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
+    { id: "tn-hafsid", category: "historical", name: "Flag of the Hafsid Sultanate", from: 1424, to: 1550, priorPolity: "the Hafsid Sultanate", path: "national-flags/tn/tunisia-hafsid.svg", design: "A yellow field with a white crescent — the flag of the dynasty that ruled Ifriqiya from Tunis.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
+    { id: "tn-military", category: "military", name: "Military flag of Tunisia", from: 1956, to: 9999, path: "national-flags/tn/tunisia-military.svg", design: "The flag of the Tunisian armed forces.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
+    { id: "tn-president", category: "standard", name: "Presidential Standard of Tunisia", from: 1999, to: 9999, path: "national-flags/tn/tunisia-president.svg", design: "The national flag charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
+    { id: "tn-arms", category: "coatofarms", name: "Coat of arms of Tunisia", from: 1963, to: 9999, path: "national-flags/tn/tunisia-arms.svg", design: "A shield in three parts — a Carthaginian galley above, a scale and a lion holding a scimitar below — beneath a crescent and star, over the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
   ],
   "TO": [
     { id: "to-official-national", category: "official", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag of Tonga, in the form adopted in 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
@@ -1406,6 +1425,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
+  "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
@@ -1414,6 +1434,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
+  "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
   "VE": { year: 1811, event: "Declaration of independence from Spain, 5 July 1811", note: "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.", source: "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence" },
   "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
@@ -1538,6 +1559,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
   },
+  "dz-emblem": {
+    description: "The emblem is a landscape read as a programme. The crescent that encircles it is the same crescent as on the national flag, and is the symbol of Islam. The hand of Fatima at the centre is a traditional protective symbol of the region; behind it stand the Atlas Mountains, the country's own geography, and above them a rising sun for a new era. The buildings at the foot stand for industry and the plants for agriculture — the two things the independent state set out to build. The present form, with the motto in Arabic rather than French, was adopted on 1 November 1976.",
+    sources: [
+      { title: "Emblem of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
+    ],
+  },
   "eg-arms": {
     description: "Eagles have stood for power in Egypt for millennia, appearing from the pharaonic era onward and used as heraldic banners by pagan, Christian and Muslim rulers into the medieval period; this one is the Eagle of Saladin, named for the 12th-century sultan. On its breast it carries a shield in the colours of the national flag, turned to a vertical arrangement, and in its talons a scroll reading Gumhūriyyat Miṣr al-ʿArabiyyah — Arab Republic of Egypt. The bird on the arms has changed with the state it serves: the union with Syria in 1958 replaced the monarchical field on its breast with the flag of the United Arab Republic and its two stars, and Sadat's accession to the Federation of Arab Republics in 1972 replaced the eagle entirely with the Hawk of Quraish before it was restored.",
     sources: [
@@ -1620,6 +1647,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "India colour-codes by holder: navy blue for an ordinary passport, white for government officials travelling on duty, and maroon for diplomats — so a border officer can tell the bearer’s standing from the cover before opening it.",
     sources: [
       { title: "Indian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Indian_passport" },
+    ],
+  },
+  "iq-arms": {
+    description: "The republic's arms are the Eagle of Saladin — named for the 12th-century sultan, who was born in Tikrit — holding a shield bearing the national flag turned to a vertical arrangement, above a scroll with the name of the state in Arabic. The eagle is a pan-Arab device shared with Egypt and Palestine, adopted after the 1958 revolution replaced the Hashemite monarchy; the monarchy's own arms had been a very different thing, a golden crown of five arches on a royal mantle standing for sacrifice and purity, with two stars for Ishtar and Shamash recalling Iraq's pre-Islamic past.",
+    sources: [
+      { title: "Coat of arms of Iraq — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq" },
     ],
   },
   "ir-emblem": {
@@ -1722,6 +1755,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is the Phra Khrut Pha — \"Garuda as the vehicle\" — the mount of the god Vishnu (Narayana) in Hindu and Buddhist tradition. Thai kingship drew on Indian doctrine in which the king is an incarnation of Narayana, so the god's mount became the king's own device: the Garuda stands for the sovereign himself rather than for the land or the people. In Buddhist tradition the emphasis falls on the Garuda's deeds, which portray him as righteous and merciful. Earlier kings used four great royal seals and, from 1873, a European-style coat of arms; Vajiravudh (Rama VI) abandoned that in 1910 in favour of the Garuda alone, and the Act on the Seals of State of 1911 established it as the emblem of the kingdom. It appears on the letterhead of almost every Thai government document and marks state property.",
     sources: [
       { title: "Emblem of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Thailand" },
+    ],
+  },
+  "tn-arms": {
+    description: "Each of the three parts carries one word of the national motto. The Carthaginian galley sailing in the upper field is freedom — and reaches back past the modern state to Carthage itself. Below, the black scale is justice, and the black lion grasping a silver scimitar is order. The banner spells the three out: Freedom, Order, Justice. The law of 30 May 1963 rewrote the arms of the beylik that preceded them, removing the beylical spears and banners, swapping the positions of the scales and the lion, making the field uniformly gold, and changing the order of the motto.",
+    sources: [
+      { title: "Coat of arms of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
     ],
   },
   "tr-arms": {

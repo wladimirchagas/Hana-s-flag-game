@@ -3097,8 +3097,100 @@
           "reuse": "flags/dz.svg",
           "design": "The national flag of Algeria, in the form adopted in 1962.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Algeria"
+        },
+        {
+          "id": "dz-french",
+          "category": "historical",
+          "name": "Merchant flag of French Algeria",
+          "from": 1848,
+          "to": 1910,
+          "sovereign": "France",
+          "commons": "Naval ensign of French Algeria (1848–1910).svg",
+          "file": "dz/algeria-french.svg",
+          "design": "The merchant flag flown by shipping of French Algeria.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
+          "sha256": "d93dfedfe01589771be19c8a6d8b8668c4f6e735ca4780f093a7ad4f7e1c2e37",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dz-regency",
+          "category": "historical",
+          "name": "Flag of the Regency of Algiers",
+          "from": 1516,
+          "to": 1830,
+          "priorPolity": "the Regency of Algiers",
+          "commons": "Flag of the Regent of Algiers.svg",
+          "file": "dz/algeria-regency.svg",
+          "design": "The flag of the Dey of Algiers, the Ottoman-era regency that governed the territory before the French conquest.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
+          "sha256": "67c8df24a369af5c3d5a434fbf83ad15138991450360d31bf8490dbf0a40049e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dz-president",
+          "category": "standard",
+          "name": "Presidential standard of Algeria",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Flag of the President of Algeria.svg",
+          "file": "dz/algeria-president.svg",
+          "design": "The national flag charged with the presidential emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
+          "sha256": "334912e6e28d9334eb8db3a7c066a02f36925f7cd3fda2bee9689a8ea8c62e57",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dz-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Algeria",
+          "from": 2004,
+          "to": 9999,
+          "commons": "Naval Ensign of Algeria.svg",
+          "file": "dz/algeria-naval-ensign.svg",
+          "design": "The naval ensign of the Algerian National Navy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
+          "sha256": "d14f2051b13b4acb48e55360251e158075183499e09a732341aaad7009863c0e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dz-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Algeria",
+          "commons": "Naval Jack of Algeria.svg",
+          "file": "dz/algeria-naval-jack.svg",
+          "design": "The national flag in the jack's proportions.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Algerian_flags",
+          "sha256": "62d32aca75cc3b006673ad644e093c2c7a4a85dcce25779290405cc5786eb1aa",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dz-emblem",
+          "category": "coatofarms",
+          "name": "National emblem of Algeria",
+          "from": 1976,
+          "to": 9999,
+          "commons": "Emblem of Algeria.svg",
+          "file": "dz/algeria-emblem.svg",
+          "design": "A hand of Fatima before the Atlas Mountains under a rising sun, with buildings and plants below, within a crescent.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Algeria",
+          "meaning": {
+            "description": "The emblem is a landscape read as a programme. The crescent that encircles it is the same crescent as on the national flag, and is the symbol of Islam. The hand of Fatima at the centre is a traditional protective symbol of the region; behind it stand the Atlas Mountains, the country's own geography, and above them a rising sun for a new era. The buildings at the foot stand for industry and the plants for agriculture — the two things the independent state set out to build. The present form, with the motto in Arabic rather than French, was adopted on 1 November 1976.",
+            "sources": [
+              {
+                "title": "Emblem of Algeria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Algeria"
+              }
+            ]
+          },
+          "sha256": "eae780410eeee09d1cc3e72d0b7d873f36bca38f419be7796f7dae0e6fcf1541",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1962,
+        "event": "Independence from France, 5 July 1962, after the eight-year war of independence",
+        "source": "https://en.wikipedia.org/wiki/Algerian_War"
+      }
     },
     "EC": {
       "flags": [
@@ -5194,6 +5286,89 @@
           "reuse": "flags/iq.svg",
           "design": "The national flag of Iraq, in the form adopted in 2008.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq"
+        },
+        {
+          "id": "iq-1924",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Iraq",
+          "from": 1924,
+          "to": 1959,
+          "commons": "Flag of Iraq (1924–1959).svg",
+          "file": "iq/iraq-1924.svg",
+          "design": "A black-white-green horizontal triband with a red trapezoid at the hoist bearing two white stars — the first flag of the Iraqi state, adopted 10 July 1924.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
+          "sha256": "521fb9f92f7cb038fb80a32c239be0e04bd55d3bf4ca4826052424770c0d6363",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "iq-arab-federation",
+          "category": "historical",
+          "name": "Flag of the Arab Federation",
+          "from": 1921,
+          "to": 1924,
+          "commons": "Flag of the Arab Federation.svg",
+          "file": "iq/iraq-arab-federation.svg",
+          "design": "The Hashemite flag flown from 1921, and used again in 1958 for the short-lived federation with Jordan.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
+          "sha256": "cee61ae266f43970a09217c0cbf9b325bed169e2d8bc48ee7d7ae9632a29ab33",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "iq-ground-forces",
+          "category": "military",
+          "name": "Flag of the Iraqi Ground Forces",
+          "commons": "Flag of the Iraqi Ground Forces.svg",
+          "file": "iq/iraq-ground-forces.svg",
+          "design": "The ground forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
+          "sha256": "3fcdb0bf5723c177d18e596589b6974c66e5d835c034a5e1668768f244802f91",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "iq-air-force",
+          "category": "military",
+          "name": "Flag of the Iraqi Air Force",
+          "commons": "Flag of the Iraqi Air Force.svg",
+          "file": "iq/iraq-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
+          "sha256": "25d8321d481f18a4cfdd2b33d4fe96d5e15e56bb30b861a2cb9d6a6c84a5d466",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "iq-navy",
+          "category": "military",
+          "name": "Flag of the Iraqi Navy",
+          "from": 2003,
+          "to": 9999,
+          "commons": "Flag of the Iraqi Navy.svg",
+          "file": "iq/iraq-navy.svg",
+          "design": "The navy's flag.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
+          "sha256": "7317fe9cc5fe05a5c582fbd00fb005c74553f540356c0f59ac549151071e4724",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "iq-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Iraq",
+          "from": 1965,
+          "to": 9999,
+          "commons": "Coat of arms of Iraq.svg",
+          "file": "iq/iraq-arms.svg",
+          "design": "The golden Eagle of Saladin bearing a shield in the colours of the national flag, above a scroll reading الجمهورية العراقية.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq",
+          "meaning": {
+            "description": "The republic's arms are the Eagle of Saladin — named for the 12th-century sultan, who was born in Tikrit — holding a shield bearing the national flag turned to a vertical arrangement, above a scroll with the name of the state in Arabic. The eagle is a pan-Arab device shared with Egypt and Palestine, adopted after the 1958 revolution replaced the Hashemite monarchy; the monarchy's own arms had been a very different thing, a golden crown of five arches on a royal mantle standing for sacrifice and purity, with two stars for Ishtar and Shamash recalling Iraq's pre-Islamic past.",
+            "sources": [
+              {
+                "title": "Coat of arms of Iraq — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iraq"
+              }
+            ]
+          },
+          "sha256": "b320e9e35c89b60cb87a5fb1025a2ec7fc65d4bdc356a6ae9ffaa3afc394f5db",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -9963,8 +10138,116 @@
           "reuse": "flags/tn.svg",
           "design": "The national flag of Tunisia, in the form adopted in 1831.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Tunisia"
+        },
+        {
+          "id": "tn-1959",
+          "category": "historical",
+          "name": "Flag of Tunisia (1959–1999)",
+          "from": 1959,
+          "to": 1999,
+          "commons": "Flag of Tunisia (1959–1999).svg",
+          "file": "tn/tunisia-1959.svg",
+          "design": "The red flag with the white disc, crescent and star, before the 1999 law fixed the present proportions.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
+          "sha256": "c78b3e96679f7a46bffe2312333b47759accd3b391787b378cc37f6567910868",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tn-beylik",
+          "category": "historical",
+          "name": "Flag of the Beylik of Tunis",
+          "from": 1827,
+          "to": 1881,
+          "priorPolity": "the Beylik of Tunis",
+          "commons": "Flag of the Beylik of Tunis (1831–1881) and Tunisia (1881–1959).svg",
+          "file": "tn/tunisia-beylik.svg",
+          "design": "The red field with a centred white disc bearing a crescent and star, adopted by Al-Husayn II ibn Mahmud and carried on through the French protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
+          "sha256": "bb30551d4be368506d08552c22625701debaf375e05179b0a7f3415ff7561562",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tn-ottoman",
+          "category": "historical",
+          "name": "Flag of the Eyalet of Tunis",
+          "from": 1574,
+          "to": 1705,
+          "sovereign": "the Ottoman Empire",
+          "commons": "Flag of Ottoman Tunisia (1685).svg",
+          "file": "tn/tunisia-ottoman.svg",
+          "design": "The flag of the Ottoman eyalet of Tunis.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
+          "sha256": "6c3c5bf8851207fd02df6d624fec247914b39b954dbb750de4846462d9e877ce",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tn-hafsid",
+          "category": "historical",
+          "name": "Flag of the Hafsid Sultanate",
+          "from": 1424,
+          "to": 1550,
+          "priorPolity": "the Hafsid Sultanate",
+          "commons": "Flag of Hafsid Dynasty (1229 - 1574).svg",
+          "file": "tn/tunisia-hafsid.svg",
+          "design": "A yellow field with a white crescent — the flag of the dynasty that ruled Ifriqiya from Tunis.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
+          "sha256": "936792051129e27b70e1a52dcc9e90f22486758a4e5709de26a2717a7c57d597",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tn-president",
+          "category": "standard",
+          "name": "Presidential Standard of Tunisia",
+          "from": 1999,
+          "to": 9999,
+          "commons": "Presidential Standard of Tunisia.svg",
+          "file": "tn/tunisia-president.svg",
+          "design": "The national flag charged with the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
+          "sha256": "00293b16e8dc7f5b78f1e1261587cae5dc2e1d3f304e6cbb5e7405d9f0b8dff2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tn-military",
+          "category": "military",
+          "name": "Military flag of Tunisia",
+          "from": 1956,
+          "to": 9999,
+          "commons": "Bannière forces armées tunisiennes.svg",
+          "file": "tn/tunisia-military.svg",
+          "design": "The flag of the Tunisian armed forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tunisian_flags",
+          "sha256": "8d19cb4d75b1bdfa2728ca8cf65f1f26a407b0059615789d26280825b6f61635",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tn-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Tunisia",
+          "from": 1963,
+          "to": 9999,
+          "commons": "Coat of arms of Tunisia.svg",
+          "file": "tn/tunisia-arms.svg",
+          "design": "A shield in three parts — a Carthaginian galley above, a scale and a lion holding a scimitar below — beneath a crescent and star, over the national motto.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia",
+          "meaning": {
+            "description": "Each of the three parts carries one word of the national motto. The Carthaginian galley sailing in the upper field is freedom — and reaches back past the modern state to Carthage itself. Below, the black scale is justice, and the black lion grasping a silver scimitar is order. The banner spells the three out: Freedom, Order, Justice. The law of 30 May 1963 rewrote the arms of the beylik that preceded them, removing the beylical spears and banners, swapping the positions of the scales and the lion, making the field uniformly gold, and changing the order of the motto.",
+            "sources": [
+              {
+                "title": "Coat of arms of Tunisia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia"
+              }
+            ]
+          },
+          "sha256": "f185a61a133e3bf86db4485fe10f60695c5d9524556f165ef814b54be0d8978c",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1956,
+        "event": "Independence from France, 20 March 1956",
+        "source": "https://en.wikipedia.org/wiki/History_of_Tunisia"
+      }
     },
     "TO": {
       "flags": [
