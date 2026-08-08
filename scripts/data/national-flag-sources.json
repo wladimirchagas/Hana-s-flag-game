@@ -2190,8 +2190,156 @@
           "reuse": "flags/co.svg",
           "design": "The national flag of Colombia, in the form adopted in 1861.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Colombia"
+        },
+        {
+          "id": "co-new-granada-1834",
+          "category": "historical",
+          "name": "Flag of the Republic of New Granada",
+          "from": 1834,
+          "to": 1861,
+          "priorPolity": "the Republic of New Granada",
+          "commons": "Flag of New Granada.svg",
+          "file": "co/colombia-new-granada-1834.svg",
+          "design": "The yellow-blue-red horizontal tricolour as flown by New Granada and the Granadine Confederation.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "62aaa8a1c0c02dc530620d2363030e09b7a7b4843a13212e1b8b76d938757afb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-gran-colombia",
+          "category": "historical",
+          "name": "Flag of Gran Colombia",
+          "from": 1821,
+          "to": 1831,
+          "priorPolity": "Gran Colombia",
+          "commons": "Flag of Gran Colombia.svg",
+          "file": "co/colombia-gran-colombia.svg",
+          "design": "The third flag of the union of Colombia, Venezuela, Ecuador and Panama.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-spain",
+          "category": "historical",
+          "name": "Flag of Spain",
+          "from": 1785,
+          "to": 1819,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The war ensign adopted by Spain in 1785, flown over the Viceroyalty of New Granada.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags"
+        },
+        {
+          "id": "co-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1550,
+          "to": 1717,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The ragged saltire of Burgundy, flown over the New Kingdom of Granada.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags"
+        },
+        {
+          "id": "co-president",
+          "category": "standard",
+          "name": "Presidential standard of Colombia",
+          "commons": "New-Flag-of-the-President-of-Colombia.svg",
+          "file": "co/colombia-president.svg",
+          "design": "The national flag charged with the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "2517638fc5792ebaa10f97540eec8eda628d229dcd486009fb95f6eadf2d7166",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Colombia",
+          "from": 1932,
+          "to": 9999,
+          "commons": "Naval Ensign of Colombia.svg",
+          "file": "co/colombia-naval-ensign.svg",
+          "design": "The national flag charged with the naval arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "71256458080934b22d0efb088623263c38341c3337969c755f55b821bf3e2d9e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-civil-ensign",
+          "category": "maritime",
+          "name": "Civil ensign of Colombia",
+          "from": 1934,
+          "to": 9999,
+          "commons": "Civil Ensign of Colombia.svg",
+          "file": "co/colombia-civil-ensign.svg",
+          "design": "The national flag charged with a blue oval bearing a white star.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "480f852dd81693898ba70611b0c1d10f4d71a319e81a6f99c8aebe14da5c65ff",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-army",
+          "category": "military",
+          "name": "Flag of the Colombian Army",
+          "commons": "Flag of the Colombian Army.svg",
+          "file": "co/colombia-army.svg",
+          "design": "The national flag charged with the army's arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "e2783ced110ffdc5d82c6b34daedb2e0e6a8b6c86bf6d666497aafb22784ad64",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-navy",
+          "category": "military",
+          "name": "Flag of the Colombian Navy",
+          "commons": "Flag of the Colombian Navy.svg",
+          "file": "co/colombia-navy.svg",
+          "design": "The national flag charged with the navy's arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "0365e89b7e68b900fbd995dcd658089d0179c6bf1a5ab99bc6665c0a8b36508d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-air-force",
+          "category": "military",
+          "name": "Flag of the Colombian Air Force",
+          "commons": "Flag of the Colombian Air Force.svg",
+          "file": "co/colombia-air-force.svg",
+          "design": "The national flag charged with the air force's arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Colombian_flags",
+          "sha256": "89753ba3cf1cd25982b74980b45e3c808c975f932fdc626030a8322c3bec2496",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "co-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Colombia",
+          "from": 1834,
+          "to": 9999,
+          "commons": "Coat of arms of Colombia.svg",
+          "file": "co/colombia-arms.svg",
+          "design": "A shield in three parts beneath an Andean condor holding an olive crown, flanked by four national flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia",
+          "meaning": {
+            "description": "The Andean condor above the shield stands for freedom, and holds an olive crown; the scroll between it and the shield carries the national motto, \"Libertad y Orden\" — Liberty and Order. The shield is read from the bottom up: the lowest field shows two ships for the country's maritime history and, since the loss of Panama in 1903, for the two oceans that border it, their sails standing for Colombian trade with the world. The middle field carries a Phrygian cap on a spear, the classical emblem of liberty, and the top field a gold pomegranate between two cornucopias — the pomegranate (granada in Spanish) for New Granada, the name the country bore before 1861, and the horns of plenty for its mineral and agricultural wealth.",
+            "sources": [
+              {
+                "title": "Coat of arms of Colombia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia"
+              }
+            ]
+          },
+          "sha256": "06e80e5367d284f5ed6a98b6d25da372257d497d33a99303a247fa354f92fd56",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1810,
+        "event": "Declaration of independence from Spain at Bogotá, 20 July 1810",
+        "note": "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.",
+        "source": "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence"
+      }
     },
     "CR": {
       "flags": [
@@ -3883,6 +4031,126 @@
           "reuse": "flags/il.svg",
           "design": "The national flag of Israel, in the form adopted in 1948.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Israel"
+        },
+        {
+          "id": "il-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Israel",
+          "commons": "Civil Ensign of Israel.svg",
+          "file": "il/israel-civil-ensign.svg",
+          "design": "A blue field with a white elongated oval near the hoist bearing a blue Star of David.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "d338635f27acc6b490efb30b3e8ac0544dc3a920904a563f522e13ee70236246",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Israel",
+          "from": 1948,
+          "to": 9999,
+          "commons": "Naval Ensign of Israel.svg",
+          "file": "il/israel-naval-ensign.svg",
+          "design": "A blue field with a white triangle at the hoist bearing a blue Star of David.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "805c6556705dc4181806bc1f90fd6fac558b535902a1740b59cdf8622ce155c9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-president",
+          "category": "standard",
+          "name": "Presidential standard of Israel",
+          "commons": "Flag of Israel President.svg",
+          "file": "il/israel-president.svg",
+          "design": "A square silver-bordered flag bearing the emblem of the state.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "251d480fa2de6e784e5fdec794f2d207f3f0248f2b05bbb92b852c382f93c920",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-pm",
+          "category": "standard",
+          "name": "Flag of the Prime Minister of Israel",
+          "commons": "Flag of the Prime Minister of Israel.svg",
+          "file": "il/israel-pm.svg",
+          "design": "A blue field with the national flag in the canton and the state emblem in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "cb5fd481879a873aa8bfb685487831d19dae3aabbbd03b81dc3f0b4c2e0bfe53",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-idf",
+          "category": "military",
+          "name": "Flag of the Israel Defense Forces",
+          "from": 1949,
+          "to": 9999,
+          "commons": "Flag of the Israel Defense Forces.svg",
+          "file": "il/israel-idf.svg",
+          "design": "A light blue field with the national flag in the canton and the IDF emblem — a sword and olive branch — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "874d1f0b97c1a6c61847aad9be0dd121252ca5034754247d8d55340fcacae0a1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-army",
+          "category": "military",
+          "name": "Flag of the Israeli Army",
+          "from": 2022,
+          "to": 9999,
+          "commons": "Flag of the Israeli Army (Land Arm) Gray.svg",
+          "file": "il/israel-army.svg",
+          "design": "Five diagonal stripes with the ground arm's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "bfa1f5b4df544728111ce59479379db771334fe2e8c47c4408dad1b537ebb09c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-army-1983",
+          "category": "military",
+          "name": "Flag of the Israeli Army (1983–2016)",
+          "from": 1983,
+          "to": 2016,
+          "commons": "Flag of the Israeli Army (Land Arm).svg",
+          "file": "il/israel-army-1983.svg",
+          "design": "The earlier five-striped ground arm flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "80285f7b51767a43dc2c4e814936538d9a3749426bf24bc16636a3b67ef91bb2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-air-force",
+          "category": "military",
+          "name": "Flag of the Israeli Air Force",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Air Force Ensign of Israel.svg",
+          "file": "il/israel-air-force.svg",
+          "design": "A light blue field with the air force's winged emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Israel",
+          "sha256": "3151b6527d90988a03c03505e4f14c7a40440711b239d13c8cb0771eb3328a19",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "il-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Israel",
+          "from": 1949,
+          "to": 9999,
+          "commons": "Emblem of Israel.svg",
+          "file": "il/israel-emblem.svg",
+          "design": "A seven-branched menorah between two olive branches, above the word ישראל.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Israel",
+          "meaning": {
+            "description": "The menorah is drawn from the depiction on the Arch of Titus in Rome — the seven-branched candelabrum carried off from the Temple in Jerusalem after the First Jewish–Roman War — so the emblem opens with the object taken in the destruction that began the exile, now standing for the restored state. The menorah is described in the Bible as a feature of both the Tabernacle in the wilderness and the Temple, had served for centuries as a Jewish symbol in synagogues, and had already been used as an emblem by Zionist organisations. It stands for universal enlightenment, after Isaiah 60: \"Nations will come to your light, and kings to the brightness of your dawn\". The two olive branches flanking it are for peace. The design came out of a public competition held in 1948 and is based on the winning entry by Gabriel and Maxim Shamir, with elements taken from other submissions.",
+            "sources": [
+              {
+                "title": "Emblem of Israel — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Israel"
+              }
+            ]
+          },
+          "sha256": "f4a3316d21d8bc4de5dd987a1213bd27172e24117e93cc4050027108e59acdf4",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -6468,6 +6736,146 @@
           "reuse": "flags/pk.svg",
           "design": "The national flag of Pakistan, in the form adopted in 1947.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
+        },
+        {
+          "id": "pk-president",
+          "category": "standard",
+          "name": "Standard of the President of Pakistan",
+          "from": 1947,
+          "to": 9999,
+          "commons": "Flag of the President of Pakistan.svg",
+          "file": "pk/pakistan-president.svg",
+          "design": "The state emblem on a green field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "4fce54dc8ed9366eec82cacdd6edb1a577422564a14d6a14e3e611d849ad0e9d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-president-1974",
+          "category": "standard",
+          "name": "Standard of the President of Pakistan (1974–1998)",
+          "from": 1974,
+          "to": 1998,
+          "commons": "Presidential standard of Pakistan (1974–1998).svg",
+          "file": "pk/pakistan-president-1974.svg",
+          "design": "The crescent and star within wheat branches on green.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "2c00b6d9d71b61ce7d60ebb565304b9ef8da35a3d67d560a075680ee54f9054d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-pm",
+          "category": "standard",
+          "name": "Standard of the Prime Minister of Pakistan",
+          "from": 1954,
+          "to": 9999,
+          "commons": "Flag of the Prime Minister of Pakistan.svg",
+          "file": "pk/pakistan-pm.svg",
+          "design": "The state emblem on a green field, distinguished from the president's.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "b9e371742b8a9964f01dc13da732a5c1f53ba9a2913ab6fc28634e674890931b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Pakistan",
+          "from": 1947,
+          "to": 9999,
+          "commons": "Civil Ensign of Pakistan.svg",
+          "file": "pk/pakistan-civil-ensign.svg",
+          "design": "A red ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "adb635970d86148bfa14a326ba1e21b382ce873b6d1e286f06afb8418c74815b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-naval-ensign",
+          "category": "maritime",
+          "name": "Ensign of the Pakistan Navy",
+          "commons": "Naval Ensign of Pakistan.svg",
+          "file": "pk/pakistan-naval-ensign.svg",
+          "design": "The national flag in 1:2 proportions.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "5618b28f1119e229790d3093552753c6adc470bb007ad552ca4bfe1fa36682cf",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of the Pakistan Navy",
+          "commons": "Naval Jack of Pakistan.svg",
+          "file": "pk/pakistan-naval-jack.svg",
+          "design": "The navy's badge on a blue field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "0d7392798c2afa38f788bbe08f1b7bd6011d51a79888e8c5a1bee13faf0907ff",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-air-ensign",
+          "category": "maritime",
+          "name": "Civil Air Ensign of Pakistan",
+          "commons": "Civil Air Ensign of Pakistan.svg",
+          "file": "pk/pakistan-civil-air-ensign.svg",
+          "design": "A light blue ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "2653ced480193ea93277c4042bfb761352a08ae6b5edfa79bce8d9c80a760898",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-armed-forces",
+          "category": "military",
+          "name": "Flag of the Pakistan Armed Forces",
+          "commons": "Armed Forces of Pakistan Flag.svg",
+          "file": "pk/pakistan-armed-forces.svg",
+          "design": "The three services' colours with the joint emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "7abda0f4bb14fbdcfc45335928f96d2340f8d4ac8bd411176b57f3323ac483c9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-army",
+          "category": "military",
+          "name": "Flag of the Pakistan Army",
+          "commons": "Flag of the Pakistani Army.svg",
+          "file": "pk/pakistan-army.svg",
+          "design": "The national flag defaced with the army's crossed-swords emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "07df05ac039027fcad6eff02fc01a8a798fd42fca886e66544460e7671df985b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-air-force",
+          "category": "military",
+          "name": "Ensign of the Pakistan Air Force",
+          "commons": "Air Force Ensign of Pakistan.svg",
+          "file": "pk/pakistan-air-force.svg",
+          "design": "A light blue ensign with the national flag in the canton and the air force roundel in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Pakistani_flags",
+          "sha256": "8e17ba5a7bc089f02867c1ca290ba490c01dc7c745e69bb46689938ff73cd7f9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pk-emblem",
+          "category": "coatofarms",
+          "name": "State Emblem of Pakistan",
+          "from": 1954,
+          "to": 9999,
+          "commons": "State emblem of Pakistan.svg",
+          "file": "pk/pakistan-emblem.svg",
+          "design": "A crescent and star above a quartered shield, within a floral wreath, over a scroll bearing the national motto.",
+          "source": "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan",
+          "meaning": {
+            "description": "Adopted in 1954, the emblem sets out the ideological foundation of the state, the basis of its economy, its cultural heritage and its guiding principles. The crescent-and-star crest and the green of the emblem are the traditional symbols of Islam, on which the country was founded. The quartered shield below shows cotton, wheat, tea and jute — the four major crops of Pakistan at independence, and so its economic base. The wreath around the shield is of the floral design used in Mughal art, standing for the cultural heritage the country inherits, and the scroll beneath carries Muhammad Ali Jinnah's motto: Unity, Faith, Discipline.",
+            "sources": [
+              {
+                "title": "State emblem of Pakistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan"
+              }
+            ]
+          },
+          "sha256": "c828330e0632263f69d0cde8fb433db788a8265c3957e1054ed9c407c75400fe",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -8035,6 +8443,166 @@
           "reuse": "flags/ua.svg",
           "design": "The national flag of Ukraine, in the form adopted in 1992.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Ukraine"
+        },
+        {
+          "id": "ua-1991",
+          "category": "historical",
+          "name": "Flag of Ukraine (1991–1992)",
+          "from": 1991,
+          "to": 1992,
+          "commons": "Flag of Ukraine (1991–1992).svg",
+          "file": "ua/ukraine-1991.svg",
+          "design": "The blue-and-yellow bicolour as first restored in 1991, in a lighter blue than the 1992 standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "502b76f87aa795b0ef758617fc203434c7054fdb2c30a9f86c1bca38ec5db1ae",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-ssr",
+          "category": "historical",
+          "name": "Flag of the Ukrainian SSR",
+          "from": 1949,
+          "to": 1991,
+          "priorPolity": "the Ukrainian Soviet Socialist Republic",
+          "commons": "Flag of the Ukrainian Soviet Socialist Republic (1949–1991).svg",
+          "file": "ua/ukraine-ssr.svg",
+          "design": "Red over azure with the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "8611d36301f6b0d65f5d91ea77bdda2c81b194c9d5d731a2c22f59ea82f8c8ea",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-president",
+          "category": "standard",
+          "name": "Standard of the President of Ukraine",
+          "from": 1999,
+          "to": 9999,
+          "commons": "Flag of the President of Ukraine.svg",
+          "file": "ua/ukraine-president.svg",
+          "design": "A blue square bearing the gold tryzub within an ornamental border.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "762ded01bfaba253656b947e9c47e4d3d054b4bd801efee76f78818de3c3644a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-mod",
+          "category": "military",
+          "name": "Flag of the Ministry of Defence",
+          "from": 2006,
+          "to": 9999,
+          "commons": "Flag of the Ministry of Defence of Ukraine.svg",
+          "file": "ua/ukraine-mod.svg",
+          "design": "A raspberry field with the ministry's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "d1eddb483ce8d50d77f65f9b9b014a4fc14a49b0fbdb4cffece5d9e575fc51e6",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-armed-forces",
+          "category": "military",
+          "name": "Flag of the Armed Forces of Ukraine",
+          "commons": "Ensign of the Ukrainian Armed Forces.svg",
+          "file": "ua/ukraine-armed-forces.svg",
+          "design": "A raspberry field with the armed forces' emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "094e280647ed833c9e895ef2f428ddc6e68a801a863e8c34286494f1bf8c81b6",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-ground",
+          "category": "military",
+          "name": "Flag of the Ground Forces",
+          "commons": "Ensign of the Ukrainian Ground Forces.svg",
+          "file": "ua/ukraine-ground-forces.svg",
+          "design": "A raspberry field with the Ground Forces' emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "cd315671e7a0d84984fe29402ea6d0bfaaf8cd47004b2410dd25f02994dbe164",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-air-force",
+          "category": "military",
+          "name": "Flag of the Air Force",
+          "commons": "Ensign of the Ukrainian Air Force.svg",
+          "file": "ua/ukraine-air-force.svg",
+          "design": "A blue field with the Air Force's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "7329ba978892ae20bcc542f925168263d67f70ccae3494ad03162219f5859878",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-air-assault",
+          "category": "military",
+          "name": "Flag of the Air Assault Forces",
+          "from": 2017,
+          "to": 9999,
+          "commons": "Flag of the Ukrainian Air Assault Forces.svg",
+          "file": "ua/ukraine-air-assault.svg",
+          "design": "A maroon field with the service's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "609f1f51270262a510de875854715fec6629ec6c41262f2175c51702b227a244",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-marines",
+          "category": "military",
+          "name": "Flag of the Marine Corps",
+          "from": 2023,
+          "to": 9999,
+          "commons": "Flag of the Ukrainian Naval Infantry.svg",
+          "file": "ua/ukraine-marines.svg",
+          "design": "A teal field with the corps' emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "673da03e5dcbc875b28012ccf7a5854948000798c188eae85d860f86cb48a250",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Ukraine",
+          "from": 2006,
+          "to": 9999,
+          "commons": "Naval Ensign of Ukraine.svg",
+          "file": "ua/ukraine-naval-ensign.svg",
+          "design": "A white field with a blue cross and the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "98bcf70b1d29290b45ad85c0751a8603eca8a1a9abdc6bf8461766f69355168a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-sea-guard",
+          "category": "maritime",
+          "name": "Sea Guard ensign of Ukraine",
+          "from": 2001,
+          "to": 9999,
+          "commons": "Sea Guard Ensign of Ukraine (dress).svg",
+          "file": "ua/ukraine-sea-guard.svg",
+          "design": "A white field with a green cross and the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags",
+          "sha256": "877307f4687bc695b29288322e7f861f3dc351dbf35a99856ad1bf31e232a110",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ua-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Ukraine",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Lesser Coat of Arms of Ukraine.svg",
+          "file": "ua/ukraine-arms.svg",
+          "design": "A gold tryzub (trident) on a blue shield.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine",
+          "meaning": {
+            "description": "The tryzub is the oldest continuously used symbol on Ukrainian territory: it appears on the seals of the Rurik dynasty and was stamped on the gold and silver coins of Volodymyr the Great (980–1015), who passed it to his sons as a dynastic device, and on the bricks of the Church of the Tithes in Kyiv. Its original meaning is not settled — historians have read it as a falcon in flight, an arched bow, an anchor, or the Holy Trinity — and it was not treated as a NATIONAL symbol until 1917, when the historian Mykhailo Hrushevsky proposed it over rival candidates such as a crossbow or a Cossack with a musket. Vasyl Krychevsky's drawing was adopted by the Ukrainian People's Republic in February 1918, and the small coat of arms was readopted on 19 February 1992; the constitution provides for a great coat of arms that has still not been adopted.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ukraine — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine"
+              }
+            ]
+          },
+          "sha256": "ceec56552bcc9c0dd2233fecb3ca7600de53119f2f9dc35f6f20666e9206d056",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -8808,8 +9376,154 @@
           "reuse": "flags/vn.svg",
           "design": "The national flag of Vietnam, in the form adopted in 1955.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Vietnam"
+        },
+        {
+          "id": "vn-north",
+          "category": "historical",
+          "name": "Flag of North Vietnam (1945–1955)",
+          "from": 1945,
+          "to": 1955,
+          "commons": "Flag of North Vietnam (1945–1955).svg",
+          "file": "vn/vietnam-north-1945.svg",
+          "design": "The red flag with a yellow star as first raised by the Democratic Republic of Vietnam, its star with fatter, curved points.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "bc02c88674396b1d63488a6c887e4504990c7b120349e0f55ecd1522f28a04b0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-south",
+          "category": "historical",
+          "name": "Flag of South Vietnam",
+          "from": 1948,
+          "to": 1975,
+          "commons": "Flag of South Vietnam.svg",
+          "file": "vn/vietnam-south.svg",
+          "design": "Yellow with three horizontal red stripes — flown by the State of Vietnam and then the Republic of Vietnam until 1975.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "20aff916fd3b09925c74e1de95a6312103bf5db72bb6aaf21902588df6a7b743",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-nguyen-1920",
+          "category": "historical",
+          "name": "Standard of the Nguyễn dynasty (1920–1945)",
+          "from": 1920,
+          "to": 1945,
+          "sovereign": "France",
+          "commons": "Long tinh flag.svg",
+          "file": "vn/vietnam-nguyen-1920.svg",
+          "design": "A yellow field with a single red stripe, the cờ Long tinh or \"dragon star flag\" — the flag of emperors Khải Định and Bảo Đại, under the French protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "25780dfb0de85079ef7b4536a845a05ca70bd7379c4fc9c45ac45f6937f78fd2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-nguyen-1890",
+          "category": "historical",
+          "name": "Standard of the Nguyễn dynasty (1890–1920)",
+          "from": 1890,
+          "to": 1920,
+          "sovereign": "France",
+          "commons": "Standard of the Nguyen Dynasty (1890 - 1920).svg",
+          "file": "vn/vietnam-nguyen-1890.svg",
+          "design": "A red field with a single yellow stripe — the flag of emperors Thành Thái, Duy Tân and Khải Định, under the French protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "dc8de58d315cdd1b343e52104452dd345779ff8fb82f900c14c923ddcb8c4c0e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-dai-nam",
+          "category": "historical",
+          "name": "Flag of the Empire of Đại Nam",
+          "from": 1858,
+          "to": 1885,
+          "priorPolity": "the Empire of Đại Nam under the Nguyễn dynasty",
+          "commons": "Personal Flag of Emperor Minh Mang.svg",
+          "file": "vn/vietnam-dai-nam.svg",
+          "design": "A plain yellow field — the diplomatic flag of the Empire of Đại Nam, before the French protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "47b886dcc13d3a61563f38ca360bc0a4949c36a88f4923e4ceac8b61dafbe2dd",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-pavn",
+          "category": "military",
+          "name": "Flag of the People's Army of Vietnam",
+          "from": 1955,
+          "to": 9999,
+          "commons": "Flag of the People's Army of Vietnam.svg",
+          "file": "vn/vietnam-pavn.svg",
+          "design": "The national flag with the words Quyết thắng (\"Determined to win\") in the canton — also the country's war flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "698af537e87dac4de1b23d59f0cbacf84812abb9614ae6d4fc4cdba77111f49c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-navy",
+          "category": "military",
+          "name": "Flag of the Vietnam People's Navy",
+          "commons": "Vietnam People's Navy flag.svg",
+          "file": "vn/vietnam-navy.svg",
+          "design": "The People's Army flag with the navy's branch colours below.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "defdb4a777c2ad878c462601f1237bfb71deeaa462d76606296451c820ad53a8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-air-force",
+          "category": "military",
+          "name": "Flag of the Vietnam People's Air Force",
+          "from": 1959,
+          "to": 9999,
+          "commons": "Flag of the Vietnam People's Air Force.svg",
+          "file": "vn/vietnam-air-force.svg",
+          "design": "The People's Army flag with the air force's branch colours below.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "07a625bccffcc6c73379638da96a7cad39c4cdab35599ff0cbd8974f5b654939",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-coast-guard",
+          "category": "maritime",
+          "name": "Ensign of the Vietnam Coast Guard",
+          "from": 1998,
+          "to": 9999,
+          "commons": "Ensign of the Vietnam Coast Guard.svg",
+          "file": "vn/vietnam-coast-guard-ensign.svg",
+          "design": "A dark blue pennant bearing the national flag at the hoist.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam",
+          "sha256": "f95d46434da30a49a391e2144bd3a99c29c4e1b6d0d5c3fab202c21c624a62f9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "vn-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Vietnam",
+          "from": 1976,
+          "to": 9999,
+          "commons": "Emblem of Vietnam.svg",
+          "file": "vn/vietnam-emblem.svg",
+          "design": "A circular red field with a gold five-pointed star, framed by ears of rice above a half cogwheel and a scroll bearing the country's name.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Vietnam",
+          "meaning": {
+            "description": "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
+            "sources": [
+              {
+                "title": "Emblem of Vietnam — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Vietnam"
+              }
+            ]
+          },
+          "sha256": "40e6ec0a611438a3b879bd1bb905b81d08ddd0c73cb32251b75f9d8e629ec61d",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1945,
+        "event": "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945",
+        "note": "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.",
+        "source": "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam"
+      }
     },
     "VU": {
       "flags": [

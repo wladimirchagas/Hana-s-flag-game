@@ -324,6 +324,17 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CO": [
     { id: "co-official-national", category: "official", name: "Flag of Colombia", from: 1861, to: 9999, primary: true, path: "flags/co.svg", design: "The national flag of Colombia, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
     { id: "co-current", category: "historical", name: "Flag of Colombia", from: 1861, to: 9999, primary: true, path: "flags/co.svg", design: "The national flag of Colombia, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
+    { id: "co-new-granada-1834", category: "historical", name: "Flag of the Republic of New Granada", from: 1834, to: 1861, priorPolity: "the Republic of New Granada", path: "national-flags/co/colombia-new-granada-1834.svg", design: "The yellow-blue-red horizontal tricolour as flown by New Granada and the Granadine Confederation.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-gran-colombia", category: "historical", name: "Flag of Gran Colombia", from: 1821, to: 1831, priorPolity: "Gran Colombia", path: "national-flags/co/colombia-gran-colombia.svg", design: "The third flag of the union of Colombia, Venezuela, Ecuador and Panama.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-spain", category: "historical", name: "Flag of Spain", from: 1785, to: 1819, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The war ensign adopted by Spain in 1785, flown over the Viceroyalty of New Granada.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-burgundy", category: "historical", name: "Cross of Burgundy", from: 1550, to: 1717, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ragged saltire of Burgundy, flown over the New Kingdom of Granada.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-army", category: "military", name: "Flag of the Colombian Army", path: "national-flags/co/colombia-army.svg", design: "The national flag charged with the army's arms.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-navy", category: "military", name: "Flag of the Colombian Navy", path: "national-flags/co/colombia-navy.svg", design: "The national flag charged with the navy's arms.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-air-force", category: "military", name: "Flag of the Colombian Air Force", path: "national-flags/co/colombia-air-force.svg", design: "The national flag charged with the air force's arms.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-naval-ensign", category: "maritime", name: "Naval ensign of Colombia", from: 1932, to: 9999, path: "national-flags/co/colombia-naval-ensign.svg", design: "The national flag charged with the naval arms.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-civil-ensign", category: "maritime", name: "Civil ensign of Colombia", from: 1934, to: 9999, path: "national-flags/co/colombia-civil-ensign.svg", design: "The national flag charged with a blue oval bearing a white star.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-president", category: "standard", name: "Presidential standard of Colombia", path: "national-flags/co/colombia-president.svg", design: "The national flag charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Colombian_flags" },
+    { id: "co-arms", category: "coatofarms", name: "Coat of arms of Colombia", from: 1834, to: 9999, path: "national-flags/co/colombia-arms.svg", design: "A shield in three parts beneath an Andean condor holding an olive crown, flanked by four national flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
   ],
   "CR": [
     { id: "cr-official-national", category: "official", name: "Flag of Costa Rica", from: 1848, to: 9999, primary: true, path: "flags/cr.svg", design: "The national flag of Costa Rica, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
@@ -539,6 +550,15 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "IL": [
     { id: "il-official-national", category: "official", name: "Flag of Israel", from: 1948, to: 9999, primary: true, path: "flags/il.svg", design: "The national flag of Israel, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
     { id: "il-current", category: "historical", name: "Flag of Israel", from: 1948, to: 9999, primary: true, path: "flags/il.svg", design: "The national flag of Israel, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
+    { id: "il-idf", category: "military", name: "Flag of the Israel Defense Forces", from: 1949, to: 9999, path: "national-flags/il/israel-idf.svg", design: "A light blue field with the national flag in the canton and the IDF emblem — a sword and olive branch — in the fly.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-army", category: "military", name: "Flag of the Israeli Army", from: 2022, to: 9999, path: "national-flags/il/israel-army.svg", design: "Five diagonal stripes with the ground arm's emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-army-1983", category: "military", name: "Flag of the Israeli Army (1983–2016)", from: 1983, to: 2016, path: "national-flags/il/israel-army-1983.svg", design: "The earlier five-striped ground arm flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-air-force", category: "military", name: "Flag of the Israeli Air Force", from: 1991, to: 9999, path: "national-flags/il/israel-air-force.svg", design: "A light blue field with the air force's winged emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-civil-ensign", category: "maritime", name: "Civil Ensign of Israel", path: "national-flags/il/israel-civil-ensign.svg", design: "A blue field with a white elongated oval near the hoist bearing a blue Star of David.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-naval-ensign", category: "maritime", name: "Naval Ensign of Israel", from: 1948, to: 9999, path: "national-flags/il/israel-naval-ensign.svg", design: "A blue field with a white triangle at the hoist bearing a blue Star of David.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-president", category: "standard", name: "Presidential standard of Israel", path: "national-flags/il/israel-president.svg", design: "A square silver-bordered flag bearing the emblem of the state.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-pm", category: "standard", name: "Flag of the Prime Minister of Israel", path: "national-flags/il/israel-pm.svg", design: "A blue field with the national flag in the canton and the state emblem in the fly.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Israel" },
+    { id: "il-emblem", category: "coatofarms", name: "Emblem of Israel", from: 1949, to: 9999, path: "national-flags/il/israel-emblem.svg", design: "A seven-branched menorah between two olive branches, above the word ישראל.", source: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
   ],
   "IN": [
     { id: "in-official-national", category: "official", name: "Flag of India (Tiranga)", from: 1947, to: 9999, primary: true, path: "flags/in.svg", design: "The national flag, adopted 22 July 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_India" },
@@ -868,6 +888,17 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "PK": [
     { id: "pk-official-national", category: "official", name: "Flag of Pakistan", from: 1947, to: 9999, primary: true, path: "flags/pk.svg", design: "The national flag of Pakistan, in the form adopted in 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
     { id: "pk-current", category: "historical", name: "Flag of Pakistan", from: 1947, to: 9999, primary: true, path: "flags/pk.svg", design: "The national flag of Pakistan, in the form adopted in 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
+    { id: "pk-armed-forces", category: "military", name: "Flag of the Pakistan Armed Forces", path: "national-flags/pk/pakistan-armed-forces.svg", design: "The three services' colours with the joint emblem.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-army", category: "military", name: "Flag of the Pakistan Army", path: "national-flags/pk/pakistan-army.svg", design: "The national flag defaced with the army's crossed-swords emblem.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-air-force", category: "military", name: "Ensign of the Pakistan Air Force", path: "national-flags/pk/pakistan-air-force.svg", design: "A light blue ensign with the national flag in the canton and the air force roundel in the fly.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-civil-ensign", category: "maritime", name: "Civil Ensign of Pakistan", from: 1947, to: 9999, path: "national-flags/pk/pakistan-civil-ensign.svg", design: "A red ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-naval-ensign", category: "maritime", name: "Ensign of the Pakistan Navy", path: "national-flags/pk/pakistan-naval-ensign.svg", design: "The national flag in 1:2 proportions.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-naval-jack", category: "maritime", name: "Naval jack of the Pakistan Navy", path: "national-flags/pk/pakistan-naval-jack.svg", design: "The navy's badge on a blue field.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-air-ensign", category: "maritime", name: "Civil Air Ensign of Pakistan", path: "national-flags/pk/pakistan-civil-air-ensign.svg", design: "A light blue ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-president", category: "standard", name: "Standard of the President of Pakistan", from: 1947, to: 9999, path: "national-flags/pk/pakistan-president.svg", design: "The state emblem on a green field.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-president-1974", category: "standard", name: "Standard of the President of Pakistan (1974–1998)", from: 1974, to: 1998, path: "national-flags/pk/pakistan-president-1974.svg", design: "The crescent and star within wheat branches on green.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-pm", category: "standard", name: "Standard of the Prime Minister of Pakistan", from: 1954, to: 9999, path: "national-flags/pk/pakistan-pm.svg", design: "The state emblem on a green field, distinguished from the president's.", source: "https://en.wikipedia.org/wiki/List_of_Pakistani_flags" },
+    { id: "pk-emblem", category: "coatofarms", name: "State Emblem of Pakistan", from: 1954, to: 9999, path: "national-flags/pk/pakistan-emblem.svg", design: "A crescent and star above a quartered shield, within a floral wreath, over a scroll bearing the national motto.", source: "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan" },
   ],
   "PL": [
     { id: "pl-official-national", category: "official", name: "Flag of Poland", from: 1919, to: 9999, primary: true, path: "flags/pl.svg", design: "The national flag of Poland, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Poland" },
@@ -1077,6 +1108,18 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "UA": [
     { id: "ua-official-national", category: "official", name: "Flag of Ukraine", from: 1992, to: 9999, primary: true, path: "flags/ua.svg", design: "The national flag of Ukraine, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
     { id: "ua-current", category: "historical", name: "Flag of Ukraine", from: 1992, to: 9999, primary: true, path: "flags/ua.svg", design: "The national flag of Ukraine, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
+    { id: "ua-1991", category: "historical", name: "Flag of Ukraine (1991–1992)", from: 1991, to: 1992, path: "national-flags/ua/ukraine-1991.svg", design: "The blue-and-yellow bicolour as first restored in 1991, in a lighter blue than the 1992 standard.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-ssr", category: "historical", name: "Flag of the Ukrainian SSR", from: 1949, to: 1991, priorPolity: "the Ukrainian Soviet Socialist Republic", path: "national-flags/ua/ukraine-ssr.svg", design: "Red over azure with the gold hammer, sickle and star — the republic's flag within the Soviet Union.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-mod", category: "military", name: "Flag of the Ministry of Defence", from: 2006, to: 9999, path: "national-flags/ua/ukraine-mod.svg", design: "A raspberry field with the ministry's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-armed-forces", category: "military", name: "Flag of the Armed Forces of Ukraine", path: "national-flags/ua/ukraine-armed-forces.svg", design: "A raspberry field with the armed forces' emblem.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-ground", category: "military", name: "Flag of the Ground Forces", path: "national-flags/ua/ukraine-ground-forces.svg", design: "A raspberry field with the Ground Forces' emblem.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-air-force", category: "military", name: "Flag of the Air Force", path: "national-flags/ua/ukraine-air-force.svg", design: "A blue field with the Air Force's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-air-assault", category: "military", name: "Flag of the Air Assault Forces", from: 2017, to: 9999, path: "national-flags/ua/ukraine-air-assault.svg", design: "A maroon field with the service's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-marines", category: "military", name: "Flag of the Marine Corps", from: 2023, to: 9999, path: "national-flags/ua/ukraine-marines.svg", design: "A teal field with the corps' emblem.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-naval-ensign", category: "maritime", name: "Naval ensign of Ukraine", from: 2006, to: 9999, path: "national-flags/ua/ukraine-naval-ensign.svg", design: "A white field with a blue cross and the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-sea-guard", category: "maritime", name: "Sea Guard ensign of Ukraine", from: 2001, to: 9999, path: "national-flags/ua/ukraine-sea-guard.svg", design: "A white field with a green cross and the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-president", category: "standard", name: "Standard of the President of Ukraine", from: 1999, to: 9999, path: "national-flags/ua/ukraine-president.svg", design: "A blue square bearing the gold tryzub within an ornamental border.", source: "https://en.wikipedia.org/wiki/List_of_Ukrainian_flags" },
+    { id: "ua-arms", category: "coatofarms", name: "Coat of arms of Ukraine", from: 1992, to: 9999, path: "national-flags/ua/ukraine-arms.svg", design: "A gold tryzub (trident) on a blue shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
   ],
   "UG": [
     { id: "ug-official-national", category: "official", name: "Flag of Uganda", from: 1962, to: 9999, primary: true, path: "flags/ug.svg", design: "The national flag of Uganda, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
@@ -1154,6 +1197,16 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "VN": [
     { id: "vn-official-national", category: "official", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
     { id: "vn-current", category: "historical", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
+    { id: "vn-south", category: "historical", name: "Flag of South Vietnam", from: 1948, to: 1975, path: "national-flags/vn/vietnam-south.svg", design: "Yellow with three horizontal red stripes — flown by the State of Vietnam and then the Republic of Vietnam until 1975.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-north", category: "historical", name: "Flag of North Vietnam (1945–1955)", from: 1945, to: 1955, path: "national-flags/vn/vietnam-north-1945.svg", design: "The red flag with a yellow star as first raised by the Democratic Republic of Vietnam, its star with fatter, curved points.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-nguyen-1920", category: "historical", name: "Standard of the Nguyễn dynasty (1920–1945)", from: 1920, to: 1945, sovereign: "France", path: "national-flags/vn/vietnam-nguyen-1920.svg", design: "A yellow field with a single red stripe, the cờ Long tinh or \"dragon star flag\" — the flag of emperors Khải Định and Bảo Đại, under the French protectorate.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-nguyen-1890", category: "historical", name: "Standard of the Nguyễn dynasty (1890–1920)", from: 1890, to: 1920, sovereign: "France", path: "national-flags/vn/vietnam-nguyen-1890.svg", design: "A red field with a single yellow stripe — the flag of emperors Thành Thái, Duy Tân and Khải Định, under the French protectorate.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-dai-nam", category: "historical", name: "Flag of the Empire of Đại Nam", from: 1858, to: 1885, priorPolity: "the Empire of Đại Nam under the Nguyễn dynasty", path: "national-flags/vn/vietnam-dai-nam.svg", design: "A plain yellow field — the diplomatic flag of the Empire of Đại Nam, before the French protectorate.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-pavn", category: "military", name: "Flag of the People's Army of Vietnam", from: 1955, to: 9999, path: "national-flags/vn/vietnam-pavn.svg", design: "The national flag with the words Quyết thắng (\"Determined to win\") in the canton — also the country's war flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-navy", category: "military", name: "Flag of the Vietnam People's Navy", path: "national-flags/vn/vietnam-navy.svg", design: "The People's Army flag with the navy's branch colours below.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-air-force", category: "military", name: "Flag of the Vietnam People's Air Force", from: 1959, to: 9999, path: "national-flags/vn/vietnam-air-force.svg", design: "The People's Army flag with the air force's branch colours below.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-coast-guard", category: "maritime", name: "Ensign of the Vietnam Coast Guard", from: 1998, to: 9999, path: "national-flags/vn/vietnam-coast-guard-ensign.svg", design: "A dark blue pennant bearing the national flag at the hoist.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Vietnam" },
+    { id: "vn-emblem", category: "coatofarms", name: "Emblem of Vietnam", from: 1976, to: 9999, path: "national-flags/vn/vietnam-emblem.svg", design: "A circular red field with a gold five-pointed star, framed by ears of rice above a half cogwheel and a scroll bearing the country's name.", source: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
   ],
   "VU": [
     { id: "vu-official-national", category: "official", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "The national flag of Vanuatu, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
@@ -1212,11 +1265,13 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
+  "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
+  "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
   "ZA": { year: 1910, event: "The Union of South Africa was established as a self-governing dominion on 31 May 1910.", note: "Full legislative independence followed with the Statute of Westminster in 1931; the republic was declared in 1961.", source: "https://en.wikipedia.org/wiki/Union_of_South_Africa" },
 };
 
@@ -1308,6 +1363,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
     ],
   },
+  "co-arms": {
+    description: "The Andean condor above the shield stands for freedom, and holds an olive crown; the scroll between it and the shield carries the national motto, \"Libertad y Orden\" — Liberty and Order. The shield is read from the bottom up: the lowest field shows two ships for the country's maritime history and, since the loss of Panama in 1903, for the two oceans that border it, their sails standing for Colombian trade with the world. The middle field carries a Phrygian cap on a spear, the classical emblem of liberty, and the top field a gold pomegranate between two cornucopias — the pomegranate (granada in Spanish) for New Granada, the name the country bore before 1861, and the horns of plenty for its mineral and agricultural wealth.",
+    sources: [
+      { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
+    ],
+  },
   "es-arms": {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
@@ -1342,6 +1403,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device is the Royal Coat of Arms — a British passport is issued in the sovereign's name, and the arms say so. The colour is the point of this particular design: British passports were dark blue until 1988, burgundy while the UK was in the European Union, and returned to blue in 2020 after leaving it, making the cover itself a piece of constitutional history.",
     sources: [
       { title: "British passport — Wikipedia", url: "https://en.wikipedia.org/wiki/British_passport" },
+    ],
+  },
+  "il-emblem": {
+    description: "The menorah is drawn from the depiction on the Arch of Titus in Rome — the seven-branched candelabrum carried off from the Temple in Jerusalem after the First Jewish–Roman War — so the emblem opens with the object taken in the destruction that began the exile, now standing for the restored state. The menorah is described in the Bible as a feature of both the Tabernacle in the wilderness and the Temple, had served for centuries as a Jewish symbol in synagogues, and had already been used as an emblem by Zionist organisations. It stands for universal enlightenment, after Isaiah 60: \"Nations will come to your light, and kings to the brightness of your dawn\". The two olive branches flanking it are for peace. The design came out of a public competition held in 1948 and is based on the winning entry by Gabriel and Maxim Shamir, with elements taken from other submissions.",
+    sources: [
+      { title: "Emblem of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
     ],
   },
   "in-arms": {
@@ -1392,6 +1459,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Philippines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Philippines" },
     ],
   },
+  "pk-emblem": {
+    description: "Adopted in 1954, the emblem sets out the ideological foundation of the state, the basis of its economy, its cultural heritage and its guiding principles. The crescent-and-star crest and the green of the emblem are the traditional symbols of Islam, on which the country was founded. The quartered shield below shows cotton, wheat, tea and jute — the four major crops of Pakistan at independence, and so its economic base. The wreath around the shield is of the floral design used in Mughal art, standing for the cultural heritage the country inherits, and the scroll beneath carries Muhammad Ali Jinnah's motto: Unity, Faith, Discipline.",
+    sources: [
+      { title: "State emblem of Pakistan — Wikipedia", url: "https://en.wikipedia.org/wiki/State_emblem_of_Pakistan" },
+    ],
+  },
   "ru-arms": {
     description: "The double-headed eagle came to Moscow from Byzantium after the fall of Constantinople in 1453 and has stood for the Russian state since Ivan III. The three crowns stand for the sovereignty of the Russian Federation as a whole and of its constituent republics and regions; the sceptre and orb in the eagle's talons are the traditional heraldic emblems of sovereign power and authority. On the eagle's breast the silver horseman spearing a dragon is Saint George, a device found on Muscovite seals from 1390 and formally identified as Saint George by imperial decree in 1730. The present drawing was made by Yevgeny Ukhnalyov and adopted by decree on 30 November 1993.",
     sources: [
@@ -1416,6 +1489,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Turkish passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkish_passport" },
     ],
   },
+  "ua-arms": {
+    description: "The tryzub is the oldest continuously used symbol on Ukrainian territory: it appears on the seals of the Rurik dynasty and was stamped on the gold and silver coins of Volodymyr the Great (980–1015), who passed it to his sons as a dynastic device, and on the bricks of the Church of the Tithes in Kyiv. Its original meaning is not settled — historians have read it as a falcon in flight, an arched bow, an anchor, or the Holy Trinity — and it was not treated as a NATIONAL symbol until 1917, when the historian Mykhailo Hrushevsky proposed it over rival candidates such as a crossbow or a Cossack with a musket. Vasyl Krychevsky's drawing was adopted by the Ukrainian People's Republic in February 1918, and the small coat of arms was readopted on 19 February 1992; the constitution provides for a great coat of arms that has still not been adopted.",
+    sources: [
+      { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
+    ],
+  },
   "us-arms": {
     description: "Charles Thomson’s explanation to Congress in 1782 is still the official reading. Thirteen recurs everywhere — stripes, arrows, stars — for the thirteen original states, and the constellation of stars breaking through a cloud says a new state is taking its place among other sovereign powers. The eagle holds an olive branch in its right talon and thirteen arrows in its left, and turns its head toward the olive branch: the country has the power of peace and of war, and prefers peace. The stripes are joined by the chief above them, standing for Congress binding the states together, and the shield floats unsupported to say the country relies on its own virtue. The motto E pluribus unum — out of many, one — makes the same argument in words.",
     sources: [
@@ -1432,6 +1511,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
     sources: [
       { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
+    ],
+  },
+  "vn-emblem": {
+    description: "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
+    sources: [
+      { title: "Emblem of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
     ],
   },
   "za-1994": {
