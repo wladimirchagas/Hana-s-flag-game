@@ -3563,6 +3563,41 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
           "sha256": "4563e07927742806a6477aa0e21185a1e1c4c79de2c7cb155b1318ff4e89f850",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "dk-royal-1972",
+          "category": "standard",
+          "name": "Royal Standard of Denmark (1972–2024)",
+          "from": 1972,
+          "to": 2024,
+          "commons": "Royal Standard of Denmark (1972-2024).svg",
+          "file": "dk/denmark-royal-1972.svg",
+          "design": "The royal standard borne by Margrethe II.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
+          "sha256": "6d8a75adb055e2f210b196502cbb2bc5320e28a62db6a936e9420df4f66c25ce",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dk-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Denmark",
+          "from": 1819,
+          "to": 9999,
+          "commons": "National coat of arms of Denmark.svg",
+          "file": "dk/denmark-arms.svg",
+          "design": "Three crowned blue lions passant among nine red water-lily leaves, on a golden shield beneath the crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark",
+          "meaning": {
+            "description": "These are among the oldest arms in continuous national use anywhere: the earliest known depiction is on a seal of King Canute VI around 1194, and the earliest documentation of the colours is around 1270. The red figures scattered around the lions are commonly drawn as hearts, but they are not hearts — a royal decree of 1972 still specifies them as søblade, water-lily leaves, and that is what they originally were. Their number was historically unregulated and could be far higher; Frederick VI fixed it at nine in 1819, in the same act that declared the beasts to be lions and turned them to face forward.",
+            "sources": [
+              {
+                "title": "Coat of arms of Denmark — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark"
+              }
+            ]
+          },
+          "sha256": "ec9b1f4aabc527a62d00408bd99e147d3cd9c225bea01b152e30212e0796f3dc",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -4404,6 +4439,80 @@
           "design": "The war flag charged with the Cross of Liberty in the canton.",
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
           "sha256": "cb8a552a1db7575f968bf3a60e3b6bf29987a5e4fcc669671465ea43c8f20f90",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "fi-1918-war",
+          "category": "historical",
+          "name": "War flag of Finland (1918–1920)",
+          "from": 1918,
+          "to": 1920,
+          "commons": "Flag of Finland 1918-1920 (Military).svg",
+          "file": "fi/finland-1918-war.svg",
+          "design": "The first war flag and ensign of the independent republic, before the 1920 flag act.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
+          "sha256": "60bcdbbb252291913b33143b68f7e9b18be37cc0b0dcafafafa0dad40d93bc5c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "fi-regent",
+          "category": "standard",
+          "name": "Standard of the Regent of Finland",
+          "from": 1918,
+          "to": 1919,
+          "commons": "Standard of the Regent of Finland 1918–1919.svg",
+          "file": "fi/finland-regent.svg",
+          "design": "The standard of the regent, in the months when Finland was briefly to be a kingdom.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
+          "sha256": "638d15bb3c152068440395cd672b84494ebb40c7ccd9b2fd1264acfcdd18d22b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "fi-war-flag",
+          "category": "military",
+          "name": "War flag and ensign of Finland",
+          "from": 1978,
+          "to": 9999,
+          "commons": "Military flag of Finland.svg",
+          "file": "fi/finland-war-flag.svg",
+          "design": "The swallow-tailed flag with the coat of arms, flown by the defence forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
+          "sha256": "daabab5e5671362cee6e1b01a3322c1f68c4966a45c4bbf52366489e96318eb0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "fi-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Finland",
+          "from": 1919,
+          "to": 9999,
+          "commons": "Naval jack of Finland.svg",
+          "file": "fi/finland-naval-jack.svg",
+          "design": "The naval jack.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
+          "sha256": "b0ea638b35022942e9cea9d182e5ef689b3f22ae62c0fab72be10405683222be",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "fi-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Finland",
+          "from": 1580,
+          "to": 9999,
+          "commons": "Coat of arms of Finland.svg",
+          "file": "fi/finland-arms.svg",
+          "design": "A crowned lion on red, its right foreleg an armoured arm brandishing a sword, trampling a sabre.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland",
+          "meaning": {
+            "description": "Created around 1580, the arms are read as a political statement in heraldry: the lion is the Nordic heraldic lion — first found in Denmark's arms in the later 12th century and taken up in Sweden, into whose kingdom Finland was incorporated from the 13th century — and it holds a straight Western sword in an armoured arm while trampling a curved Eastern sabre underfoot. The two blades are the point of the design: Finland's position between West and East, drawn at a time when the Swedish crown was contesting the territory with Russia.",
+            "sources": [
+              {
+                "title": "Coat of arms of Finland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland"
+              }
+            ]
+          },
+          "sha256": "a9ed126479e824c074a9cac084ef7833df55606a5e6e429df3549748aa2bffb5",
           "fetched": "2026-08-08"
         }
       ]
@@ -5699,8 +5808,112 @@
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
           "sha256": "d9d562eb40a76fff9e51f8e321771a53ab4a10c315ebef48f9af492a3bb582e0",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-royal-standard",
+          "category": "historical",
+          "name": "Royal Standard of Ireland",
+          "from": 1542,
+          "to": 1801,
+          "sovereign": "the English and then British crown",
+          "commons": "Royal Standard of Ireland (1542–1801).svg",
+          "file": "ie/ireland-royal-standard.svg",
+          "design": "The gold harp on blue, the standard of the Kingdom of Ireland under the English and then British crown.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "67a88132600f2a63b662590ae1b2b03afc4d44394a8700a797a08f3bdcd8be94",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-lordship",
+          "category": "historical",
+          "name": "Banner of the Lordship of Ireland",
+          "from": 1386,
+          "to": 1542,
+          "sovereign": "the English crown",
+          "commons": "Banner of the Lordship of Ireland.svg",
+          "file": "ie/ireland-lordship.svg",
+          "design": "The heraldic banner of the medieval lordship — three crowns in pale, not the harp.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "26fb561cf1f3667e1643671e2a74b406476fd6e70f157566955d2757162a86cd",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-st-patrick",
+          "category": "civilstate",
+          "name": "Saint Patrick's Saltire",
+          "from": 1783,
+          "to": 9999,
+          "commons": "Saint Patrick's Saltire.svg",
+          "file": "ie/ireland-st-patrick.svg",
+          "design": "A red saltire on white, used for Ireland in the Union Flag and still flown in some official contexts.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "75071cc0792d8f4f5e5e4038f7ceab81b634b494262175bd692138fd9c0a8e2e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-president",
+          "category": "standard",
+          "name": "Standard of the President of Ireland",
+          "from": 1945,
+          "to": 9999,
+          "commons": "Flag of the President of Ireland.svg",
+          "file": "ie/ireland-president.svg",
+          "design": "A blue field bearing the gold harp.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "a071a96804da736d7eee21693fc7e559fee0923568fd6d7b2eaf8386fee9b9f9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-defence-forces",
+          "category": "military",
+          "name": "Flag of the Irish Defence Forces",
+          "commons": "Flag of the Irish Defence Forces.svg",
+          "file": "ie/ireland-defence-forces.svg",
+          "design": "The Defence Forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "0fc5168a0c87e2348e629378836267b849348b3ac4bbdf1a10658001577478de",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-air-corps",
+          "category": "military",
+          "name": "Flag of the Irish Air Corps",
+          "commons": "Flag of the Irish Air Corps.svg",
+          "file": "ie/ireland-air-corps.svg",
+          "design": "The Air Corps' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "359fc65ed0edb4c6fb05c68fc88b55cdb57e48846f745053e381595a8a72a1d1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Ireland",
+          "from": 1922,
+          "to": 9999,
+          "commons": "Coat of arms of Ireland.svg",
+          "file": "ie/ireland-arms.svg",
+          "design": "A gold harp with silver strings on a blue field.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland",
+          "meaning": {
+            "description": "Blazoned simply \"Azure a harp Or, stringed Argent\", these are among the plainest national arms in Europe and the harp is the point of them: it is the instrument of Gaelic Ireland, and the state's drawing of it is based on a specific object — the late-medieval Brian Boru harp, now in Trinity College Dublin, taken as the model when the arms were restored for the independent Irish state in 1922. The medieval Lordship of Ireland, which existed under the English crown from 1171 to 1541, bore something else entirely: three crowns in pale. The harp is also the only national coat of arms in the world whose principal charge is a musical instrument.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ireland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland"
+              }
+            ]
+          },
+          "sha256": "af333123808d289917c604beaed5d6c6d2225c25b5ab3069d7d768d86838c78f",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1922,
+        "event": "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty",
+        "note": "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.",
+        "source": "https://en.wikipedia.org/wiki/Irish_Free_State"
+      }
     },
     "IL": {
       "flags": [
@@ -8997,6 +9210,41 @@
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
           "sha256": "7ab9d402c15ae5ed7a3d1716ed292385ecd4eaac56e5a6c44581b5ccd36fcfab",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "nl-government",
+          "category": "civilstate",
+          "name": "Flag of the Government of the Netherlands",
+          "from": 2011,
+          "to": 9999,
+          "commons": "Rijksoverheid vlag.svg",
+          "file": "nl/netherlands-government.svg",
+          "design": "The government's own flag, flown at ministries.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
+          "sha256": "2ca6997d138801ab345001412a8a39fa5962f4181ac3c4bfbe5c9a756bcbb6f8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "nl-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of the Netherlands",
+          "from": 1815,
+          "to": 9999,
+          "commons": "Royal coat of arms of the Netherlands.svg",
+          "file": "nl/netherlands-arms.svg",
+          "design": "A crowned gold lion on a blue field strewn with billets, holding a sword and seven arrows, beneath a royal mantle.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands",
+          "meaning": {
+            "description": "Adopted in 1815 and modified in 1907, the arms fuse two inheritances: the blue field strewn with gold billets comes from the arms of the House of Nassau, and the lion from the arms of the former Dutch Republic. What the lion holds is the history — a sword in its right paw, and in its left SEVEN arrows bound together, one for each of the seven provinces of the Republic. The bundle is the old fable made heraldic: arrows that break singly and hold together bound. The monarch places the shield on a red mantle lined with ermine, beneath the royal crown.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Netherlands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands"
+              }
+            ]
+          },
+          "sha256": "75384722029814ec4d4af6832461ab9d31dbf4abcb816e22f3902c00b3f064fa",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -9070,6 +9318,28 @@
           "design": "The royal standard differenced for the heir.",
           "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
           "sha256": "8a2925dd7ac748f34e55df9a76db643f358990ca987819eccd862212075cf66c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "no-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Norway",
+          "from": 1937,
+          "to": 9999,
+          "commons": "Coat of arms of Norway.svg",
+          "file": "no/norway-arms.svg",
+          "design": "A standing golden lion on red, crowned, bearing a silver-bladed axe.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway",
+          "meaning": {
+            "description": "These are arms of dominion — they stand for the monarch and the kingdom at once. They began in the 13th century as the arms of the Sverre dynasty, a plain golden lion on red; the silver axe was added late in that century, and it is not a weapon but a relic: it is the axe of Olav II, Saint Olav, the Rex Perpetuus Norvegiae, the eternal king of Norway. The lion carried Norway on coins and seals through the union with Denmark (1523–1814) and the personal union with Sweden. After the 1905 dissolution Eilif Peterssen drew a medieval-style escutcheon, and the state archivist Hallvard Trætteberg redrew it far more simply in 1937 — the form still in use.",
+            "sources": [
+              {
+                "title": "Coat of arms of Norway — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway"
+              }
+            ]
+          },
+          "sha256": "84260ace276ea626a1887ca206b40142b159eb3cc80ce65ad82b3c5eede0c58d",
           "fetched": "2026-08-08"
         }
       ]

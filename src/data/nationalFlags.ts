@@ -447,7 +447,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dk-current", category: "historical", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
     { id: "dk-royal", category: "standard", name: "Royal Standard of Denmark", from: 2024, to: 9999, path: "national-flags/dk/denmark-royal-standard.svg", design: "The state flag charged with the royal coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
     { id: "dk-regent", category: "standard", name: "Standard of the Regent of Denmark", from: 1914, to: 9999, path: "national-flags/dk/denmark-regent.svg", design: "The flag of a temporary regent, flown in the sovereign’s absence.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
+    { id: "dk-royal-1972", category: "standard", name: "Royal Standard of Denmark (1972–2024)", from: 1972, to: 2024, path: "national-flags/dk/denmark-royal-1972.svg", design: "The royal standard borne by Margrethe II.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
     { id: "dk-state", category: "civilstate", name: "State flag of Denmark", path: "national-flags/dk/denmark-state.svg", design: "The Dannebrog in swallow-tailed form, flown by the state, beside the rectangular civil flag.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
+    { id: "dk-arms", category: "coatofarms", name: "Coat of arms of Denmark", from: 1819, to: 9999, path: "national-flags/dk/denmark-arms.svg", design: "Three crowned blue lions passant among nine red water-lily leaves, on a golden shield beneath the crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
   ],
   "DM": [
     { id: "dm-official-national", category: "official", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag of Dominica, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
@@ -529,8 +531,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "FI": [
     { id: "fi-official-national", category: "official", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
     { id: "fi-current", category: "historical", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
+    { id: "fi-1918-war", category: "historical", name: "War flag of Finland (1918–1920)", from: 1918, to: 1920, path: "national-flags/fi/finland-1918-war.svg", design: "The first war flag and ensign of the independent republic, before the 1920 flag act.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    { id: "fi-war-flag", category: "military", name: "War flag and ensign of Finland", from: 1978, to: 9999, path: "national-flags/fi/finland-war-flag.svg", design: "The swallow-tailed flag with the coat of arms, flown by the defence forces.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    { id: "fi-naval-jack", category: "maritime", name: "Naval jack of Finland", from: 1919, to: 9999, path: "national-flags/fi/finland-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
     { id: "fi-president", category: "standard", name: "Flag of the President of Finland", from: 1978, to: 9999, path: "national-flags/fi/finland-president.svg", design: "The war flag charged with the Cross of Liberty in the canton.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    { id: "fi-regent", category: "standard", name: "Standard of the Regent of Finland", from: 1918, to: 1919, path: "national-flags/fi/finland-regent.svg", design: "The standard of the regent, in the months when Finland was briefly to be a kingdom.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
     { id: "fi-state", category: "civilstate", name: "State flag of Finland", from: 1978, to: 9999, path: "national-flags/fi/finland-state.svg", design: "The blue Nordic cross charged with the national coat of arms — flown by the state, beside the plain civil flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    { id: "fi-arms", category: "coatofarms", name: "Coat of arms of Finland", from: 1580, to: 9999, path: "national-flags/fi/finland-arms.svg", design: "A crowned lion on red, its right foreleg an armoured arm brandishing a sword, trampling a sabre.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
   ],
   "FJ": [
     { id: "fj-official-national", category: "official", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag of Fiji, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
@@ -668,8 +675,15 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "IE": [
     { id: "ie-official-national", category: "official", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
     { id: "ie-current", category: "historical", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
+    { id: "ie-royal-standard", category: "historical", name: "Royal Standard of Ireland", from: 1542, to: 1801, sovereign: "the English and then British crown", path: "national-flags/ie/ireland-royal-standard.svg", design: "The gold harp on blue, the standard of the Kingdom of Ireland under the English and then British crown.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    { id: "ie-lordship", category: "historical", name: "Banner of the Lordship of Ireland", from: 1386, to: 1542, sovereign: "the English crown", path: "national-flags/ie/ireland-lordship.svg", design: "The heraldic banner of the medieval lordship — three crowns in pale, not the harp.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
     { id: "ie-naval-colour", category: "military", name: "Naval Service colour", from: 1996, to: 9999, path: "national-flags/ie/ireland-naval-colour.svg", design: "A navy-blue colour bearing the Naval Service badge.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    { id: "ie-defence-forces", category: "military", name: "Flag of the Irish Defence Forces", path: "national-flags/ie/ireland-defence-forces.svg", design: "The Defence Forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    { id: "ie-air-corps", category: "military", name: "Flag of the Irish Air Corps", path: "national-flags/ie/ireland-air-corps.svg", design: "The Air Corps' flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
     { id: "ie-naval-jack", category: "maritime", name: "Naval jack of Ireland", from: 1947, to: 9999, path: "national-flags/ie/ireland-naval-jack.svg", design: "Adopted in 1947 for ships of the Naval Service.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    { id: "ie-president", category: "standard", name: "Standard of the President of Ireland", from: 1945, to: 9999, path: "national-flags/ie/ireland-president.svg", design: "A blue field bearing the gold harp.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    { id: "ie-st-patrick", category: "civilstate", name: "Saint Patrick's Saltire", from: 1783, to: 9999, path: "national-flags/ie/ireland-st-patrick.svg", design: "A red saltire on white, used for Ireland in the Union Flag and still flown in some official contexts.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    { id: "ie-arms", category: "coatofarms", name: "Coat of arms of Ireland", from: 1922, to: 9999, path: "national-flags/ie/ireland-arms.svg", design: "A gold harp with silver strings on a blue field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland" },
   ],
   "IL": [
     { id: "il-official-national", category: "official", name: "Flag of Israel", from: 1948, to: 9999, primary: true, path: "flags/il.svg", design: "The national flag of Israel, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
@@ -1025,6 +1039,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nl-navy", category: "military", name: "Governmental flag of the Royal Netherlands Navy", from: 2011, to: 9999, path: "national-flags/nl/netherlands-navy.svg", design: "A blue field bearing the navy’s emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
     { id: "nl-army", category: "military", name: "Flag of the Royal Netherlands Army", path: "national-flags/nl/netherlands-army.svg", design: "A blue field charged with the army’s emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
     { id: "nl-royal", category: "standard", name: "Royal Standard of the Netherlands", from: 2013, to: 9999, path: "national-flags/nl/netherlands-royal-standard.svg", design: "An orange field quartered by a blue cross, bearing the royal arms with a lion in each quarter.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
+    { id: "nl-government", category: "civilstate", name: "Flag of the Government of the Netherlands", from: 2011, to: 9999, path: "national-flags/nl/netherlands-government.svg", design: "The government's own flag, flown at ministries.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
+    { id: "nl-arms", category: "coatofarms", name: "Coat of arms of the Netherlands", from: 1815, to: 9999, path: "national-flags/nl/netherlands-arms.svg", design: "A crowned gold lion on a blue field strewn with billets, holding a sword and seven arrows, beneath a royal mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
   ],
   "NO": [
     { id: "no-official-national", category: "official", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
@@ -1033,6 +1049,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "no-naval-jack", category: "maritime", name: "Naval jack of Norway", path: "national-flags/no/norway-naval-jack.svg", design: "The national flag in square proportions.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
     { id: "no-royal", category: "standard", name: "Royal Standard of Norway", from: 1905, to: 9999, path: "national-flags/no/norway-royal-standard.svg", design: "The coat of arms of Norway on a red field.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
     { id: "no-crown-prince", category: "standard", name: "Standard of the Crown Prince of Norway", from: 1924, to: 9999, path: "national-flags/no/norway-crown-prince.svg", design: "The royal standard differenced for the heir.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
+    { id: "no-arms", category: "coatofarms", name: "Coat of arms of Norway", from: 1937, to: 9999, path: "national-flags/no/norway-arms.svg", design: "A standing golden lion on red, crowned, bearing a silver-bladed axe.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
   ],
   "NP": [
     { id: "np-official-national", category: "official", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
@@ -1600,6 +1617,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
+  "IE": { year: 1922, event: "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty", note: "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Irish_Free_State" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "IS": { year: 1944, event: "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown", note: "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.", source: "https://en.wikipedia.org/wiki/History_of_Iceland" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
@@ -1778,6 +1796,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
   },
+  "dk-arms": {
+    description: "These are among the oldest arms in continuous national use anywhere: the earliest known depiction is on a seal of King Canute VI around 1194, and the earliest documentation of the colours is around 1270. The red figures scattered around the lions are commonly drawn as hearts, but they are not hearts — a royal decree of 1972 still specifies them as søblade, water-lily leaves, and that is what they originally were. Their number was historically unregulated and could be far higher; Frederick VI fixed it at nine in 1819, in the same act that declared the beasts to be lions and turned them to face forward.",
+    sources: [
+      { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
+    ],
+  },
   "dz-emblem": {
     description: "The emblem is a landscape read as a programme. The crescent that encircles it is the same crescent as on the national flag, and is the symbol of Islam. The hand of Fatima at the centre is a traditional protective symbol of the region; behind it stand the Atlas Mountains, the country's own geography, and above them a rising sun for a new era. The buildings at the foot stand for industry and the plants for agriculture — the two things the independent state set out to build. The present form, with the motto in Arabic rather than French, was adopted on 1 November 1976.",
     sources: [
@@ -1800,6 +1824,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
       { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
+    ],
+  },
+  "fi-arms": {
+    description: "Created around 1580, the arms are read as a political statement in heraldry: the lion is the Nordic heraldic lion — first found in Denmark's arms in the later 12th century and taken up in Sweden, into whose kingdom Finland was incorporated from the 13th century — and it holds a straight Western sword in an armoured arm while trampling a curved Eastern sabre underfoot. The two blades are the point of the design: Finland's position between West and East, drawn at a time when the Swedish crown was contesting the territory with Russia.",
+    sources: [
+      { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
     ],
   },
   "fr-arms": {
@@ -1854,6 +1884,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The Garuda is the mount of Vishnu, and in Javanese and Balinese tradition stands for knowledge, power, bravery, loyalty and discipline — Bali venerates it as the lord of all flying creatures. Its feathers are counted, not merely drawn: they are arranged to spell the date of the proclamation of independence, 17 August 1945. The shield on its breast carries the five principles of Pancasila, the state philosophy, and the scroll in its talons reads \"Bhinneka Tunggal Ika\", a line of Old Javanese from the 14th-century poem Sutasoma by Empu Tantular of Majapahit. That line was written to reconcile the Hindu and Buddhist faiths — \"although diverse, both are truthful to Dharma; there is no duality in Truth\" — and is now read as unity in diversity.",
     sources: [
       { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
+    ],
+  },
+  "ie-arms": {
+    description: "Blazoned simply \"Azure a harp Or, stringed Argent\", these are among the plainest national arms in Europe and the harp is the point of them: it is the instrument of Gaelic Ireland, and the state's drawing of it is based on a specific object — the late-medieval Brian Boru harp, now in Trinity College Dublin, taken as the model when the arms were restored for the independent Irish state in 1922. The medieval Lordship of Ireland, which existed under the English crown from 1171 to 1541, bore something else entirely: three crowns in pale. The harp is also the only national coat of arms in the world whose principal charge is a musical instrument.",
+    sources: [
+      { title: "Coat of arms of Ireland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ireland" },
     ],
   },
   "il-emblem": {
@@ -1974,6 +2010,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Article 194 of the constitution spells the emblem out charge by charge: the corn stalk and the sugar cane framing it are the country's agricultural wealth; the cogwheel is labour and industry; the book is education; the rifle stands for defence and vigilance, the hoe for the peasantry; the map is the country itself, with the rising sun for the building of a new nation and the waves for the sea and the rivers; and the red star at the top is the spirit of international solidarity of the Mozambican people.",
     sources: [
       { title: "Emblem of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
+    ],
+  },
+  "nl-arms": {
+    description: "Adopted in 1815 and modified in 1907, the arms fuse two inheritances: the blue field strewn with gold billets comes from the arms of the House of Nassau, and the lion from the arms of the former Dutch Republic. What the lion holds is the history — a sword in its right paw, and in its left SEVEN arrows bound together, one for each of the seven provinces of the Republic. The bundle is the old fable made heraldic: arrows that break singly and hold together bound. The monarch places the shield on a red mantle lined with ermine, beneath the royal crown.",
+    sources: [
+      { title: "Coat of arms of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
+    ],
+  },
+  "no-arms": {
+    description: "These are arms of dominion — they stand for the monarch and the kingdom at once. They began in the 13th century as the arms of the Sverre dynasty, a plain golden lion on red; the silver axe was added late in that century, and it is not a weapon but a relic: it is the axe of Olav II, Saint Olav, the Rex Perpetuus Norvegiae, the eternal king of Norway. The lion carried Norway on coins and seals through the union with Denmark (1523–1814) and the personal union with Sweden. After the 1905 dissolution Eilif Peterssen drew a medieval-style escutcheon, and the state archivist Hallvard Trætteberg redrew it far more simply in 1937 — the form still in use.",
+    sources: [
+      { title: "Coat of arms of Norway — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
     ],
   },
   "np-emblem": {
