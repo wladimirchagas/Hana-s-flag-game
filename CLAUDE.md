@@ -145,6 +145,15 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
    British East India Company's striped ensign looks like an early US flag, and Portugal's royal banner
    looks like a flag of Brazil. Never add a pre-independence flag without `sovereign`, and never remove
    the badge or the caption — `check-national-flags.mjs` fails the build on both.
+   **A pre-modern flag has a THIRD possible state, and it needs its own field.** New Zealand's 1834
+   flag of the United Tribes predates British rule entirely: it is neither the modern country's flag
+   nor a ruling power's, and naming a sovereign for it would state something false. Such a flag carries
+   `priorPolity` (the earlier polity that flew it) instead of `sovereign` — the card badges the polity's
+   name and the widget says it is "not a flag of the modern country, and not the flag of any ruling
+   power". The two are mutually exclusive; the check requires ONE of them on any historical flag whose
+   window ends before independence, and fails if either UI component stops rendering `priorPolity`.
+   Expect this wherever a pre-colonial state stood on the same ground — never reach for `sovereign` to
+   satisfy the check when there was no sovereign.
    The era maps remain the place a *ruler's* flag is captioned per-era; this tab is the country's own
    timeline, and the two share their images and windows (rule 3).
 4a. **A passport cover is a DRAWN image, never a photograph, and a country's types are listed in full.**

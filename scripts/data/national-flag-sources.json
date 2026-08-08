@@ -5619,6 +5619,20 @@
           "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
           "sha256": "62bcdeeb6bbcc0ca485096a330005e3386cde074f93e579b63a9322829d41ad9",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "nz-united-tribes",
+          "category": "historical",
+          "name": "Flag of the United Tribes of New Zealand",
+          "from": 1834,
+          "to": 1840,
+          "priorPolity": "the Confederation of the United Tribes of New Zealand",
+          "commons": "Flag of the United Tribes of New Zealand.svg",
+          "file": "nz/new-zealand-united-tribes.svg",
+          "design": "A St George’s cross on white, with a second cross and four stars in the canton — chosen by 25 northern chiefs in 1834 so New Zealand-built ships could be registered.",
+          "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
+          "sha256": "f6d00197df06601326fbfee57fd4415c1cffd35eea99df6686b9111ded458559",
+          "fetched": "2026-08-08"
         }
       ],
       "independence": {

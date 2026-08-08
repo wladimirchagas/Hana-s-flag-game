@@ -66,6 +66,14 @@ export type NationalFlag = {
    */
   readonly sovereign?: string;
   /**
+   * The EARLIER POLITY that flew this flag on the same territory, when that polity
+   * was not ruled by anyone — New Zealand's Confederation of United Tribes, whose
+   * 1834 flag predates British rule entirely. Without this, such a flag could only
+   * be described by naming a sovereign power it never had, which would be false, so
+   * it would have to be dropped instead. Mutually exclusive with "sovereign".
+   */
+  readonly priorPolity?: string;
+  /**
    * True for the country's CURRENT national flag — the one the fact-sheet above the
    * grid already shows. Derived by the generator from the image path, so it cannot
    * drift. The grid badges it wherever it is listed, and selecting it opens no
@@ -782,6 +790,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nz-current", category: "historical", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
     { id: "nz-1867", category: "historical", name: "Flag of New Zealand government ships (1867–1869)", from: 1867, to: 1869, sovereign: "the United Kingdom", path: "national-flags/nz/new-zealand-1867.svg", design: "The first New Zealand flag based on the Blue Ensign, defaced with the letters NZ.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
     { id: "nz-union-flag", category: "historical", name: "Union Flag", from: 1840, to: 1867, sovereign: "the United Kingdom", path: "flags/gb.svg", design: "The Union Flag, which served as New Zealand’s flag from the Treaty of Waitangi until a distinct colonial ensign was granted.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
+    { id: "nz-united-tribes", category: "historical", name: "Flag of the United Tribes of New Zealand", from: 1834, to: 1840, priorPolity: "the Confederation of the United Tribes of New Zealand", path: "national-flags/nz/new-zealand-united-tribes.svg", design: "A St George’s cross on white, with a second cross and four stars in the canton — chosen by 25 northern chiefs in 1834 so New Zealand-built ships could be registered.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
     { id: "nz-royal-1962", category: "standard", name: "Personal Flag of Queen Elizabeth II in New Zealand", from: 1962, to: 2022, path: "national-flags/nz/new-zealand-royal-1962.svg", design: "A banner of the New Zealand shield with the Queen’s personal cypher.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
   ],
   "OM": [

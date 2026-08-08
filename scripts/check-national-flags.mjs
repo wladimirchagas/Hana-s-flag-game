@@ -274,11 +274,12 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       // transition, and a flag flown within it can belong to either side of the line
       // (Brazil's Kingdom-of-Brazil flag flew in 1822, after the September
       // declaration). Those are a curator's call; everything wholly earlier is not.
-      if (f.to < independence.year && !f.sovereign) {
+      if (f.to < independence.year && !f.sovereign && !f.priorPolity) {
         fail(
           `${cc} ${f.id}: flew entirely before independence (${f.from}–${f.to}, independent ${independence.year}) ` +
-            `but names no sovereign power. A colonial-era flag shown without that attribution reads as a flag of ` +
-            `the independent country — set "sovereign" so the UI badges it.`,
+            `but names neither a sovereign power nor an earlier polity. A pre-modern flag shown without that ` +
+            `attribution reads as a flag of the country as it is today — set "sovereign" when a foreign power ` +
+            `ruled the territory, or "priorPolity" when an earlier polity flew it under nobody.`,
         );
       }
       if (f.sovereign && f.from != null && f.from >= independence.year) {
@@ -287,6 +288,14 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
             `${independence.year}. Only a pre-independence flag carries "sovereign".`,
         );
       }
+    }
+  }
+  for (const f of flags) {
+    if (f.sovereign && f.priorPolity) {
+      fail(`${cc} ${f.id}: has both "sovereign" and "priorPolity" — a flag was flown under a ruling power OR by an earlier polity, not both.`);
+    }
+    if (f.priorPolity && f.category !== "historical") {
+      fail(`${cc} ${f.id}: only a historical flag can carry "priorPolity" (it is in "${f.category}").`);
     }
   }
   for (const f of sovereignEntries) {
@@ -347,6 +356,12 @@ for (const [file, what] of [
 ]) {
   const abs2 = R(file);
   const src2 = existsSync(abs2) ? readFileSync(abs2, "utf8") : "";
+  if (existsSync(abs2) && !src2.includes("priorPolity")) {
+    fail(
+      `${file} no longer references \`priorPolity\`, so a flag flown by an earlier polity would be shown ` +
+        `with nothing distinguishing it from the modern country's own.`,
+    );
+  }
   if (existsSync(abs2) && !src2.includes("primary")) {
     fail(
       `${file} no longer references \`primary\`, so the country's current flag would be listed in the ` +

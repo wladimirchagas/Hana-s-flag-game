@@ -93,13 +93,17 @@ for (const cc of countries) {
     // A pre-independence flag carries the power that held sovereignty at the time,
     // so the UI can badge it instead of presenting it as the country's own flag.
     const sovereign = e.sovereign ? `sovereign: ${q(e.sovereign)}, ` : "";
+    // The third state a pre-modern flag can be in: neither the modern country's own
+    // flag nor a ruling power's, but an EARLIER POLITY on the same territory that
+    // answered to nobody.
+    const prior = e.priorPolity ? `priorPolity: ${q(e.priorPolity)}, ` : "";
     // PRIMARY is derived, never hand-set: it is exactly the entry that reuses the
     // country's own current flag file, so a country cannot be given two primaries
     // or forget to mark one. The same flag is listed in BOTH the official and the
     // historical section, and both cards carry the badge.
     const primary = path === `flags/${cc.toLowerCase()}.svg` ? "primary: true, " : "";
     flagLines.push(
-      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${primary}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
+      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${prior}${primary}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
     );
     flagCount++;
 
@@ -200,6 +204,14 @@ export type NationalFlag = {
    * the independent state.
    */
   readonly sovereign?: string;
+  /**
+   * The EARLIER POLITY that flew this flag on the same territory, when that polity
+   * was not ruled by anyone — New Zealand's Confederation of United Tribes, whose
+   * 1834 flag predates British rule entirely. Without this, such a flag could only
+   * be described by naming a sovereign power it never had, which would be false, so
+   * it would have to be dropped instead. Mutually exclusive with "sovereign".
+   */
+  readonly priorPolity?: string;
   /**
    * True for the country's CURRENT national flag — the one the fact-sheet above the
    * grid already shows. Derived by the generator from the image path, so it cannot
