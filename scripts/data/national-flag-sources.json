@@ -3766,6 +3766,58 @@
           "reuse": "flags/it.svg",
           "design": "The national flag of Italy, in the form adopted in 1946.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Italy"
+        },
+        {
+          "id": "it-civil-ensign",
+          "category": "maritime",
+          "name": "Civil ensign of Italy",
+          "from": 1947,
+          "to": 9999,
+          "commons": "Civil Ensign of Italy.svg",
+          "file": "it/italy-civil-ensign.svg",
+          "design": "The tricolour charged with a shield quartering the arms of the four maritime republics — Venice, Genoa, Amalfi and Pisa — without a crown.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
+          "sha256": "2ea26b4e96afd4bc8cef1cf1c0524877ea5b073322ab0e56545bea121ea89f1b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "it-state-ensign",
+          "category": "maritime",
+          "name": "State ensign of Italy",
+          "from": 2003,
+          "to": 9999,
+          "commons": "State ensign of Italy.svg",
+          "file": "it/italy-state-ensign.svg",
+          "design": "The same quartered shield beneath a mural crown, worn by state vessels.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
+          "sha256": "e8d21a908555763c92fe87b716d03beba74a634aae3adbb29b309c24d37bd9e8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "it-president",
+          "category": "standard",
+          "name": "Standard of the President of Italy",
+          "from": 2006,
+          "to": 9999,
+          "commons": "Flag of the President of Italy.svg",
+          "file": "it/italy-president.svg",
+          "design": "A square blue flag bearing the emblem of the Republic within a gold border.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
+          "sha256": "53cec8ae95770363767dfefd9c725ee82e7d4a3b4131e891f578f0ead238a52e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "it-pm",
+          "category": "standard",
+          "name": "Standard of the Prime Minister of Italy",
+          "from": 2008,
+          "to": 9999,
+          "commons": "Flag of the Prime Minister of Italy.svg",
+          "file": "it/italy-prime-minister.svg",
+          "design": "A rectangular blue flag with the emblem of the Republic.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
+          "sha256": "6fe435707b2f0ea29aec12f5d8cdafb6843b9651d5fc22e7b3662febc51609df",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -5257,6 +5309,43 @@
           "reuse": "flags/nl.svg",
           "design": "The national flag of Netherlands, in the form adopted in 1660.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Netherlands"
+        },
+        {
+          "id": "nl-royal",
+          "category": "standard",
+          "name": "Royal Standard of the Netherlands",
+          "from": 2013,
+          "to": 9999,
+          "commons": "Royal Standard of the Netherlands.svg",
+          "file": "nl/netherlands-royal-standard.svg",
+          "design": "An orange field quartered by a blue cross, bearing the royal arms with a lion in each quarter.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
+          "sha256": "34901f316a7672c4cc899eeb949ea71e37c83f0c883d2e5b39fd5e0713a6b59e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "nl-navy",
+          "category": "military",
+          "name": "Governmental flag of the Royal Netherlands Navy",
+          "from": 2011,
+          "to": 9999,
+          "commons": "Marine vlag.svg",
+          "file": "nl/netherlands-navy.svg",
+          "design": "A blue field bearing the navy’s emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
+          "sha256": "cd1cd0639bdb6f2b6a3b551c10b5baa1882ab8a751c2895ca64ec1396624a04f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "nl-army",
+          "category": "military",
+          "name": "Flag of the Royal Netherlands Army",
+          "commons": "Flag of the Royal Netherlands Army.svg",
+          "file": "nl/netherlands-army.svg",
+          "design": "A blue field charged with the army’s emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands",
+          "sha256": "7ab9d402c15ae5ed7a3d1716ed292385ecd4eaac56e5a6c44581b5ccd36fcfab",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -5521,6 +5610,28 @@
           "reuse": "flags/pl.svg",
           "design": "The national flag of Poland, in the form adopted in 1919.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Poland"
+        },
+        {
+          "id": "pl-state",
+          "category": "civilstate",
+          "name": "State flag of Poland",
+          "commons": "Flag of Poland (with coat of arms).svg",
+          "file": "pl/poland-state.svg",
+          "design": "The white-and-red bicolour charged with the arms of the Republic — flown by state authorities and abroad, while citizens fly the plain bicolour.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
+          "sha256": "d039d7120dcff65809aba50d6e5352eedbb10b2b85a8d76f3cf5cd8e4aafcb31",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pl-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Poland",
+          "commons": "Naval Ensign of Poland.svg",
+          "file": "pl/poland-naval-ensign.svg",
+          "design": "A swallow-tailed white-and-red bicolour charged with the national arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
+          "sha256": "26de4bd1f7be5ff18147c011c364ea53005b9ecb0f02063ca6b174decc980184",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -5972,6 +6083,45 @@
           "reuse": "flags/se.svg",
           "design": "The national flag of Sweden, in the form adopted in 1562.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sweden"
+        },
+        {
+          "id": "se-naval-ensign",
+          "category": "military",
+          "name": "War flag and naval ensign of Sweden",
+          "from": 1905,
+          "to": 9999,
+          "commons": "Naval ensign of Sweden.svg",
+          "file": "se/sweden-naval-ensign.svg",
+          "design": "A triple-tailed version of the national flag, flown by the armed forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden",
+          "sha256": "ddc7da1923d0bbf6ebb858a56c544c955c6c72732ff49851f84e876a8410c642",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "se-royal",
+          "category": "standard",
+          "name": "Royal standard of Sweden",
+          "from": 1905,
+          "to": 9999,
+          "commons": "Royal standard of Sweden.svg",
+          "file": "se/sweden-royal-standard.svg",
+          "design": "The triple-tailed war flag charged with the greater coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden",
+          "sha256": "b4221ff8ddb92826427fafbf734663717eaa1455deb7aa034d67b6eeb073a8ae",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "se-royal-1844",
+          "category": "standard",
+          "name": "Royal standard of Sweden (1844–1905)",
+          "from": 1844,
+          "to": 1905,
+          "commons": "Royal Standard of Sweden (1844–1905).svg",
+          "file": "se/sweden-royal-standard-1844.svg",
+          "design": "The royal standard as borne during the union with Norway’s later period.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden",
+          "sha256": "77f3e68138115dd716f495500d58c624c5b3ffd133e4a4919213163626962634",
+          "fetched": "2026-08-08"
         }
       ]
     },
