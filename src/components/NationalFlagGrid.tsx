@@ -134,7 +134,9 @@ export function NationalFlagGrid({
                           ? `Show ${flag.name} — flown under ${flag.sovereign}, before independence`
                           : flag.priorPolity
                             ? `Show ${flag.name} — flown by ${flag.priorPolity}, an earlier polity`
-                            : `Show ${flag.name}`
+                            : flag.occupier
+                              ? `Show ${flag.name} — imposed by ${flag.occupier} during the occupation`
+                              : `Show ${flag.name}`
                     }
                   >
                     <span className="flag-grid__thumb">
@@ -169,6 +171,14 @@ export function NationalFlagGrid({
                       {flag.priorPolity && (
                         <span className="flag-grid__sovereign-badge">
                           {flag.priorPolity}
+                        </span>
+                      )}
+                      {flag.occupier && (
+                        // Deliberately NOT "Under X": the occupied country's own
+                        // position is that the occupying power never held
+                        // sovereignty, and the badge must not assert otherwise.
+                        <span className="flag-grid__sovereign-badge">
+                          Imposed by {flag.occupier}
                         </span>
                       )}
                     </span>

@@ -97,13 +97,18 @@ for (const cc of countries) {
     // flag nor a ruling power's, but an EARLIER POLITY on the same territory that
     // answered to nobody.
     const prior = e.priorPolity ? `priorPolity: ${q(e.priorPolity)}, ` : "";
+    // The third state, and the mirror of `sovereign`: a flag an occupying power
+    // imposed on a country that was ALREADY independent. "Under X" would be wrong
+    // (it implies X held sovereignty, which the occupied country denies) and no
+    // attribution at all would be worse.
+    const occupier = e.occupier ? `occupier: ${q(e.occupier)}, ` : "";
     // PRIMARY is derived, never hand-set: it is exactly the entry that reuses the
     // country's own current flag file, so a country cannot be given two primaries
     // or forget to mark one. The same flag is listed in BOTH the official and the
     // historical section, and both cards carry the badge.
     const primary = path === `flags/${cc.toLowerCase()}.svg` ? "primary: true, " : "";
     flagLines.push(
-      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${prior}${primary}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
+      `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${prior}${occupier}${primary}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
     );
     flagCount++;
 
@@ -212,6 +217,17 @@ export type NationalFlag = {
    * it would have to be dropped instead. Mutually exclusive with "sovereign".
    */
   readonly priorPolity?: string;
+  /**
+   * The power that IMPOSED this flag on the country AFTER it was already
+   * independent — the Estonian and Latvian SSR flags, flown under a Soviet
+   * annexation that both countries (and most other states) hold was never lawful.
+   * "sovereign" would be wrong for these: it says the power HELD sovereignty,
+   * which is the very claim the occupied country denies, and the check forbids it
+   * on any flag flown from independence onward. Showing such a flag with no
+   * attribution at all would be worse still — it would read as one of the
+   * country's own. Mutually exclusive with "sovereign" and "priorPolity".
+   */
+  readonly occupier?: string;
   /**
    * True for the country's CURRENT national flag — the one the fact-sheet above the
    * grid already shows. Derived by the generator from the image path, so it cannot

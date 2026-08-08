@@ -74,6 +74,17 @@ export type NationalFlag = {
    */
   readonly priorPolity?: string;
   /**
+   * The power that IMPOSED this flag on the country AFTER it was already
+   * independent — the Estonian and Latvian SSR flags, flown under a Soviet
+   * annexation that both countries (and most other states) hold was never lawful.
+   * "sovereign" would be wrong for these: it says the power HELD sovereignty,
+   * which is the very claim the occupied country denies, and the check forbids it
+   * on any flag flown from independence onward. Showing such a flag with no
+   * attribution at all would be worse still — it would read as one of the
+   * country's own. Mutually exclusive with "sovereign" and "priorPolity".
+   */
+  readonly occupier?: string;
+  /**
    * True for the country's CURRENT national flag — the one the fact-sheet above the
    * grid already shows. Derived by the generator from the image path, so it cannot
    * drift. The grid badges it wherever it is listed, and selecting it opens no
@@ -444,7 +455,16 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "EE": [
     { id: "ee-official-national", category: "official", name: "Flag of Estonia", from: 1918, to: 9999, primary: true, path: "flags/ee.svg", design: "The national flag of Estonia, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
+    { id: "ee-ssr", category: "historical", name: "Flag of the Estonian SSR", from: 1944, to: 1953, occupier: "the Soviet Union", path: "national-flags/ee/estonia-ssr.svg", design: "The flag imposed after the Soviet occupation of 1940, while the display of Estonia's own tricolour and every other national symbol was banned.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
     { id: "ee-current", category: "historical", name: "Flag of Estonia", from: 1918, to: 9999, primary: true, path: "flags/ee.svg", design: "The national flag of Estonia, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
+    { id: "ee-russia", category: "historical", name: "Flag of the Russian Empire", from: 1896, to: 1917, sovereign: "the Russian Empire", path: "historical-flags/russian-empire.png", design: "The white-blue-red tricolour of the empire, which had held the Estonian governorates since 1721.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
+    { id: "ee-teutonic", category: "historical", name: "Flag of the State of the Teutonic Order", from: 1237, to: 1561, sovereign: "the State of the Teutonic Order", path: "national-flags/ee/estonia-teutonic.svg", design: "The black cross on white of the order that bought the Danish duchy of Estonia in 1346.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
+    { id: "ee-defence", category: "military", name: "Flag of the Estonian Defence Forces", from: 2003, to: 9999, path: "national-flags/ee/estonia-defence.svg", design: "The defence forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
+    { id: "ee-land-forces", category: "military", name: "Flag of the Estonian Land Forces", from: 2005, to: 9999, path: "national-flags/ee/estonia-land-forces.svg", design: "The land forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
+    { id: "ee-air-force", category: "military", name: "Flag of the Estonian Air Force", from: 1996, to: 9999, path: "national-flags/ee/estonia-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
+    { id: "ee-naval-ensign", category: "maritime", name: "Naval ensign of Estonia", from: 1994, to: 9999, path: "national-flags/ee/estonia-naval-ensign.svg", design: "The naval ensign, restored in 1994 in the form used from 1927 to 1940.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
+    { id: "ee-president", category: "standard", name: "Flag of the President of Estonia", from: 1993, to: 9999, path: "national-flags/ee/estonia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Estonian_flags" },
+    { id: "ee-arms", category: "coatofarms", name: "Coat of arms of Estonia", from: 1990, to: 9999, path: "national-flags/ee/estonia-arms.svg", design: "Three blue lions passant guardant on a golden shield, between golden oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
   ],
   "EG": [
     { id: "eg-official-national", category: "official", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
@@ -690,6 +710,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "IS": [
     { id: "is-official-national", category: "official", name: "Flag of Iceland", from: 1944, to: 9999, primary: true, path: "flags/is.svg", design: "The national flag of Iceland, in the form adopted in 1944.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
     { id: "is-current", category: "historical", name: "Flag of Iceland", from: 1944, to: 9999, primary: true, path: "flags/is.svg", design: "The national flag of Iceland, in the form adopted in 1944.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
+    { id: "is-1918", category: "historical", name: "Flag of the Kingdom of Iceland", from: 1918, to: 1944, sovereign: "Denmark", path: "national-flags/is/iceland-1918.svg", design: "The lighter-blue form of the flag, flown while Iceland was a kingdom in personal union with Denmark.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
+    { id: "is-denmark", category: "historical", name: "Flag of Denmark", from: 1523, to: 1918, sovereign: "Denmark", path: "flags/dk.svg", design: "The Dannebrog, flown over Iceland from the collapse of the Kalmar Union until home rule.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
+    { id: "is-kalmar", category: "historical", name: "Flag of the Kalmar Union", from: 1397, to: 1523, sovereign: "the Kalmar Union", path: "national-flags/is/iceland-kalmar.svg", design: "The banner of the realms of the union of Denmark, Norway and Sweden.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
+    { id: "is-norway", category: "historical", name: "Royal Banner of Norway", from: 1262, to: 1397, sovereign: "Norway", path: "national-flags/is/iceland-norway.svg", design: "The banner of the Norwegian crown, to which the Icelandic Commonwealth submitted in 1262.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
+    { id: "is-president", category: "standard", name: "Flag of the President of Iceland", from: 1944, to: 9999, path: "national-flags/is/iceland-president.svg", design: "The swallow-tailed state flag with a square panel bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
+    { id: "is-state", category: "civilstate", name: "State flag and ensign of Iceland", from: 1944, to: 9999, path: "national-flags/is/iceland-state.svg", design: "The swallow-tailed form of the flag, flown by the state and used as the military flag.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
+    { id: "is-arms", category: "coatofarms", name: "Coat of arms of Iceland", from: 1944, to: 9999, path: "national-flags/is/iceland-arms.svg", design: "The flag's cross on a shield, supported by a bull, a giant, a vulture and a dragon, standing on columnar basalt.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
   ],
   "IT": [
     { id: "it-official-national", category: "official", name: "Flag of Italy", from: 1946, to: 9999, primary: true, path: "flags/it.svg", design: "The national flag of Italy, in the form adopted in 1946.", source: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
@@ -825,7 +852,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "LV": [
     { id: "lv-official-national", category: "official", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
+    { id: "lv-ssr", category: "historical", name: "Flag of the Latvian SSR", from: 1940, to: 1953, occupier: "the Soviet Union", path: "national-flags/lv/latvia-ssr.svg", design: "The flag imposed after the Soviet occupation and annexation of 1940, while Latvia's own flag was banned.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
     { id: "lv-current", category: "historical", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
+    { id: "lv-courland", category: "historical", name: "Flag of the Duchy of Courland", from: 1562, to: 1795, priorPolity: "the Duchy of Courland and Semigallia", path: "national-flags/lv/latvia-courland.svg", design: "The state flag of the duchy that held western Latvia — a small Baltic state that briefly held colonies in Tobago and the Gambia.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
+    { id: "lv-naval-ensign", category: "maritime", name: "Naval ensign of Latvia", from: 1991, to: 9999, path: "national-flags/lv/latvia-naval-ensign.svg", design: "The naval ensign, restored in 1991 in the form used from 1919 to 1940.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
+    { id: "lv-naval-jack", category: "maritime", name: "Naval jack of Latvia", from: 1991, to: 9999, path: "national-flags/lv/latvia-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
+    { id: "lv-president", category: "standard", name: "Flag of the President of Latvia", from: 1995, to: 9999, path: "national-flags/lv/latvia-president.svg", design: "The presidential flag, restored in 1995 in its 1923 form.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
+    { id: "lv-pm", category: "standard", name: "Standard of the Prime Minister of Latvia", from: 1995, to: 9999, path: "national-flags/lv/latvia-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
+    { id: "lv-arms", category: "coatofarms", name: "Coat of arms of Latvia", from: 1921, to: 9999, path: "national-flags/lv/latvia-arms.svg", design: "A shield with a rising sun above a red lion and a silver griffin, beneath three golden stars, between oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
   ],
   "LY": [
     { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 1951, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, in the form adopted in 1951.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
@@ -1186,6 +1220,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "SK": [
     { id: "sk-official-national", category: "official", name: "Flag of Slovakia", from: 1992, to: 9999, primary: true, path: "flags/sk.svg", design: "The national flag of Slovakia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
     { id: "sk-current", category: "historical", name: "Flag of Slovakia", from: 1992, to: 9999, primary: true, path: "flags/sk.svg", design: "The national flag of Slovakia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
+    { id: "sk-president", category: "standard", name: "Flag of the President of Slovakia", from: 1993, to: 9999, path: "national-flags/sk/slovakia-president.svg", design: "The presidential flag — the coat of arms on a white field within a red-and-blue border.", source: "https://en.wikipedia.org/wiki/List_of_Slovak_flags" },
+    { id: "sk-arms", category: "coatofarms", name: "Coat of arms of Slovakia", from: 1993, to: 9999, path: "national-flags/sk/slovakia-arms.svg", design: "A silver double cross standing on the middle peak of a blue mountain of three peaks, on a red shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
   ],
   "SL": [
     { id: "sl-official-national", category: "official", name: "Flag of Sierra Leone", from: 1961, to: 9999, primary: true, path: "flags/sl.svg", design: "The national flag of Sierra Leone, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
@@ -1504,11 +1540,14 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
+  "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
+  "IS": { year: 1944, event: "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown", note: "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.", source: "https://en.wikipedia.org/wiki/History_of_Iceland" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
+  "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "MZ": { year: 1975, event: "Independence from Portugal, 25 June 1975", source: "https://en.wikipedia.org/wiki/Mozambican_War_of_Independence" },
@@ -1667,6 +1706,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
     ],
   },
+  "ee-arms": {
+    description: "The three lions are borrowed, and the borrowing is the history: they come from the 13th-century royal arms of Denmark, because the Duchy of Estonia was Danish — Valdemar II's conquest — and they stayed as the central charge of the greater arms of Tallinn even after the Danish king sold his Estonian dominion to the Teutonic Order in 1346. From there the motif passed to the Duchy of Estonia under Sweden, to the Estonian Knighthood and to the Russian governorate, and so to the modern republic. The golden oak branches on either side are the national tree; the lesser arms are the shield alone. Stalin's regime banned the display of these arms with every other Estonian national symbol after the 1940 occupation.",
+    sources: [
+      { title: "Coat of arms of Estonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia" },
+    ],
+  },
   "eg-arms": {
     description: "Eagles have stood for power in Egypt for millennia, appearing from the pharaonic era onward and used as heraldic banners by pagan, Christian and Muslim rulers into the medieval period; this one is the Eagle of Saladin, named for the 12th-century sultan. On its breast it carries a shield in the colours of the national flag, turned to a vertical arrangement, and in its talons a scroll reading Gumhūriyyat Miṣr al-ʿArabiyyah — Arab Republic of Egypt. The bird on the arms has changed with the state it serves: the union with Syria in 1958 replaced the monarchical field on its breast with the flag of the United Arab Republic and its two stars, and Sadat's accession to the Federation of Arab Republics in 1972 replaced the eagle entirely with the Hawk of Quraish before it was restored.",
     sources: [
@@ -1769,6 +1814,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
     ],
   },
+  "is-arms": {
+    description: "These are the only national arms in the world with FOUR supporters, and each is a specific creature from a specific text: the landvættir, the four guardian spirits of Iceland as Snorri Sturluson describes them in Heimskringla — a bull on the shield's right, a giant on its left, a vulture above the bull and a dragon above the giant, each guarding one quarter of the island. They stand on a block of columnar basalt, the island's own rock. The shield itself repeats the flag. Iceland's arms have changed with its status: a crowned stockfish around 1500, a white falcon from 1903, and the landvættir from 12 February 1919, first for the kingdom under the Danish crown and then for the republic.",
+    sources: [
+      { title: "Coat of arms of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
+    ],
+  },
   "jp-arms": {
     description: "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
     sources: [
@@ -1797,6 +1848,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
       { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
+    ],
+  },
+  "lv-arms": {
+    description: "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
+    sources: [
+      { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
     ],
   },
   "ml-emblem": {
@@ -1881,6 +1938,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The two crossed swords are the Kingdom of Hejaz and the Sultanate of Nejd and its dependencies, the two states Ibn Saud united in 1926 — so the emblem records the union the country is made of; they are also read as strength, stamina and sacrifice, and as justice. The date palm above them stands for growth, vitality and prosperity, and for the kingdom's own assets. The arrangement carries the reading that prosperity can be had only through justice: the palm rests on the swords, not the other way round.",
     sources: [
       { title: "Emblem of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
+    ],
+  },
+  "sk-arms": {
+    description: "The emblem runs through three periods that follow on from each other — Byzantine (6th–12th centuries), Hungarian (12th–20th) and Slovak (19th–20th). The double cross came into the region's heraldry from Byzantium and is read in modern interpretation as Slovakia standing heir and guardian to the Christian tradition. The three peaks it stands on are the mountain ranges Tatra, Mátra and Fátra, which stood for the northern mountainous part of the Kingdom of Hungary — the Tatra and the Fátra lie in present-day Slovakia. The current drawing was made in 1990 by the painter Ladislav Čisárik and the heraldist Ladislav Vrtel, commissioned after the Velvet Revolution.",
+    sources: [
+      { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
     ],
   },
   "th-emblem": {

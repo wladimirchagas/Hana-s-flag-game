@@ -69,6 +69,12 @@ export function NationalFlagDetails({
             <dd className="entity-summary__value">{flag.priorPolity}</dd>
           </div>
         )}
+        {flag.occupier && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Imposed by</dt>
+            <dd className="entity-summary__value">{flag.occupier}</dd>
+          </div>
+        )}
       </dl>
       {flag.sovereign && (
         <p className="learn-fs__pre-independence">
@@ -79,6 +85,18 @@ export function NationalFlagDetails({
           this flag flew
           {independence ? `, and became independent in ${independence.year}` : ""} — so this is
           not a flag of the independent country.
+        </p>
+      )}
+      {flag.occupier && (
+        // The mirror of the pre-independence caption. The wording never says the
+        // occupier "ruled" the country: {countryName} was ALREADY independent when
+        // this flag was imposed, which is precisely why "sovereign" is refused here
+        // and why saying so is the whole point of showing the flag at all.
+        <p className="learn-fs__pre-independence">
+          <strong>Imposed during an occupation.</strong> {countryName} was already independent
+          {independence ? ` (since ${independence.year})` : ""} when {flag.occupier} imposed this
+          flag — so it is not a flag {countryName} chose, and the country's own flag was banned
+          while this one flew.
         </p>
       )}
       {flag.priorPolity && (

@@ -285,17 +285,45 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       if (f.sovereign && f.from != null && f.from >= independence.year) {
         fail(
           `${cc} ${f.id}: names a sovereign power but flew from ${f.from}, at or after independence in ` +
-            `${independence.year}. Only a pre-independence flag carries "sovereign".`,
+            `${independence.year}. Only a pre-independence flag carries "sovereign" — a flag imposed by a ` +
+            `power that took the country AFTER independence carries "occupier" instead.`,
+        );
+      }
+      // The mirror of the rule above: an occupation happens to an independent
+      // country, so its flag cannot predate independence.
+      if (f.occupier && f.to != null && f.to <= independence.year) {
+        fail(
+          `${cc} ${f.id}: names an occupying power but flew until ${f.to}, at or before independence in ` +
+            `${independence.year}. A flag from before independence carries "sovereign", not "occupier".`,
         );
       }
     }
   }
+  // An occupation is a fact about an INDEPENDENT country, so the year is what the
+  // caption turns on ("…was already independent when this flag was imposed").
+  const occupierEntries = flags.filter((f) => f.occupier);
+  if (occupierEntries.length > 0 && !independence) {
+    fail(
+      `${cc}: has occupation flags (${occupierEntries.map((f) => f.id).join(", ")}) but no sourced ` +
+        `"independence" record — the UI needs the year to say the country was already independent.`,
+    );
+  }
   for (const f of flags) {
-    if (f.sovereign && f.priorPolity) {
-      fail(`${cc} ${f.id}: has both "sovereign" and "priorPolity" — a flag was flown under a ruling power OR by an earlier polity, not both.`);
+    // All three are mutually exclusive: a flag was flown under a ruling power
+    // BEFORE independence, or by an earlier polity under nobody, or imposed by an
+    // occupier AFTER independence — never two of those at once.
+    const attribution = ["sovereign", "priorPolity", "occupier"].filter((k) => f[k]);
+    if (attribution.length > 1) {
+      fail(
+        `${cc} ${f.id}: carries ${attribution.join(" and ")} — a flag was flown under a ruling power, ` +
+          `by an earlier polity, or under an occupier, but never more than one of those.`,
+      );
     }
     if (f.priorPolity && f.category !== "historical") {
       fail(`${cc} ${f.id}: only a historical flag can carry "priorPolity" (it is in "${f.category}").`);
+    }
+    if (f.occupier && f.category !== "historical") {
+      fail(`${cc} ${f.id}: only a historical flag can carry "occupier" (it is in "${f.category}").`);
     }
   }
   for (const f of sovereignEntries) {
@@ -360,6 +388,13 @@ for (const [file, what] of [
     fail(
       `${file} no longer references \`priorPolity\`, so a flag flown by an earlier polity would be shown ` +
         `with nothing distinguishing it from the modern country's own.`,
+    );
+  }
+  if (existsSync(abs2) && !src2.includes("occupier")) {
+    fail(
+      `${file} no longer references \`occupier\`, so a flag an occupying power imposed on an already- ` +
+        `independent country would be shown as one of that country's own flags — the Estonian and Latvian ` +
+        `SSR flags are exactly that case.`,
     );
   }
   if (existsSync(abs2) && !src2.includes("primary")) {

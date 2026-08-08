@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg version="1.0" width="900" height="900" id="svg2" sodipodi:docname="Flag_of_the_President_of_Slovakia.svg" inkscape:version="1.4 (86a8ad7, 2024-10-11)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="0.98" inkscape:cx="450" inkscape:cy="266.32653" inkscape:window-width="1366" inkscape:window-height="705" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg2" />
+  <defs id="defs4" />
+  <rect width="900" height="900" x="0" y="0" style="fill:#ffffff;fill-opacity:1" id="rect4138" />
+  <g id="g4">
+    <path d="M 0,100 50,50 V 200 L 0,250 Z" style="fill:#0b4ea2;fill-opacity:1" id="path3261" sodipodi:nodetypes="ccccc" />
+    <path d="M 0,200 V 300 L 50,250 V 150 Z" style="fill:#ee1c25;fill-opacity:1" id="path7856" sodipodi:nodetypes="ccccc" />
+  </g>
+  <use x="0" y="0" xlink:href="#g4" id="use4" transform="translate(0,300)" />
+  <use x="0" y="0" xlink:href="#g4" id="use5" transform="translate(0,600)" />
+  <use x="0" y="0" xlink:href="#g4" id="use6" transform="matrix(0,1,1,0,0,0)" />
+  <use x="0" y="0" xlink:href="#g4" id="use7" transform="matrix(0,1,1,0,300,0)" />
+  <use x="0" y="0" xlink:href="#g4" id="use8" transform="matrix(0,1,1,0,600,0)" />
+  <use x="0" y="0" xlink:href="#g4" id="use9" transform="translate(850,50)" />
+  <use x="0" y="0" xlink:href="#g4" id="use10" transform="translate(850,350)" />
+  <use x="0" y="0" xlink:href="#g4" id="use11" transform="matrix(0,1,1,0,50,850)" />
+  <use x="0" y="0" xlink:href="#g4" id="use12" transform="matrix(0,1,1,0,350,850)" />
+  <path d="m 850,900 50,-50 V 700 L 700,900 Z" style="fill:#0b4ea2;fill-opacity:1" id="use7862" sodipodi:nodetypes="ccccc" />
+  <path d="M 800,900 H 900 V 800 Z" style="fill:#ee1c25;fill-opacity:1" id="path5910" />
+  <rect width="800" height="800" x="50" y="50" style="fill:#ee1c25;fill-opacity:1" id="rect7737" />
+  <g transform="matrix(1.249236,0,0,1.249236,-88.9568,54.553505)" id="g7739">
+    <path d="m 471.61853,212.00737 c 36.22045,0 73.13696,6.59729 108.66145,13.63076 -10.51423,-34.50001 -10.51423,-55.58156 0,-90.08158 -35.52449,7.03348 -72.441,13.63077 -108.66145,13.63077 h -80.37967 c -36.22045,0 -73.13696,-6.59729 -108.66145,-13.63077 10.51423,34.50002 10.51423,55.58157 0,90.08158 35.52449,-7.03347 72.441,-13.63076 108.66145,-13.63076 z" style="fill:#ffffff;fill-opacity:1" id="path7741" />
+    <path d="m 502.8774,347.54459 c 36.22045,0 73.13696,6.59729 108.66145,13.63077 -10.51428,-34.50001 -10.51428,-55.58157 0,-90.08158 -35.52449,7.03347 -72.441,13.63076 -108.66145,13.63076 H 359.98011 c -36.22045,0 -73.13693,-6.59729 -108.66142,-13.63076 10.51423,34.50001 10.51423,55.58157 0,90.08158 35.52449,-7.03348 72.44097,-13.63077 108.66142,-13.63077 z" style="fill:#ffffff;fill-opacity:1" id="path7743" />
+    <path id="path7745" style="fill:#ffffff;fill-opacity:1" d="m 476.66782,556.69745 h -90.50159 c 7.06627,-68.09634 13.69431,-138.86072 13.69431,-208.29111 l 0,-203.86975 c 0,-36.0524 -6.62804,-72.797475 -13.69431,-108.157159 34.66087,10.465454 55.84072,10.465479 90.50159,0 -7.06628,35.359634 -13.69432,72.104809 -13.69432,108.157159 l 0,203.008 c 0,69.71754 6.62804,140.77488 13.69432,209.15286 z" />
+  </g>
+  <path d="m 450,646.5545 c -62.7368,0 -113.9619,55.5142 -129.2449,107.2789 -15.5959,52.8241 66.5082,90.9593 129.2449,90.9595 62.7366,0 144.7521,-38.1354 129.1562,-90.9595 C 564.0244,702.5811 512.7366,646.5543 450,646.5545 Z M 369.50103,850 C 355.72945,780.98872 309.05202,705.54856 251.95494,705.54883 194.85767,705.54883 148.2373,780.29877 134.32812,850 M 765.67188,850 C 751.9003,780.98872 705.22287,705.54856 648.12579,705.54883 591.02852,705.54883 544.40815,780.29877 530.49897,850" style="fill:#0b4ea2;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-opacity:1;paint-order:stroke fill markers" id="path7749" />
+  <path d="M 279.2844,758.07616 H 620.716 V 850 H 279.2844 Z" style="fill:#0b4ea2;fill-opacity:1" id="path7755" />
+  <rect width="800" height="800" x="50" y="50" style="fill:none;stroke:#ffffff;stroke-width:5;stroke-opacity:1" id="rect1" />
+</svg>

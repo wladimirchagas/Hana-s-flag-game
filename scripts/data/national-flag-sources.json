@@ -3503,8 +3503,140 @@
           "reuse": "flags/ee.svg",
           "design": "The national flag of Estonia, in the form adopted in 1918.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Estonia"
+        },
+        {
+          "id": "ee-ssr",
+          "category": "historical",
+          "name": "Flag of the Estonian SSR",
+          "from": 1944,
+          "to": 1953,
+          "commons": "Flag of the Estonian Soviet Socialist Republic (1940–1953).svg",
+          "file": "ee/estonia-ssr.svg",
+          "design": "The flag imposed after the Soviet occupation of 1940, while the display of Estonia's own tricolour and every other national symbol was banned.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "sha256": "c62944dd7a2068c1dbc5445aa0ca0abf53a2e36ebaaa3c3d0e73e90a276c8a41",
+          "fetched": "2026-08-08",
+          "occupier": "the Soviet Union"
+        },
+        {
+          "id": "ee-russia",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1896,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "reuse": "historical-flags/russian-empire.png",
+          "design": "The white-blue-red tricolour of the empire, which had held the Estonian governorates since 1721.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags"
+        },
+        {
+          "id": "ee-teutonic",
+          "category": "historical",
+          "name": "Flag of the State of the Teutonic Order",
+          "from": 1237,
+          "to": 1561,
+          "sovereign": "the State of the Teutonic Order",
+          "commons": "Flag of the State of the Teutonic Order.svg",
+          "file": "ee/estonia-teutonic.svg",
+          "design": "The black cross on white of the order that bought the Danish duchy of Estonia in 1346.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "sha256": "4315280824bba4e82bfc4a66d141aa1574441179ab560687c0e2d7452eb262ff",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ee-president",
+          "category": "standard",
+          "name": "Flag of the President of Estonia",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Flag of the President of Estonia.svg",
+          "file": "ee/estonia-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "sha256": "862c8ed420b0480c0c44d4e4d7a70cb1403116e3334a6a72d9af2c2e931347bb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ee-defence",
+          "category": "military",
+          "name": "Flag of the Estonian Defence Forces",
+          "from": 2003,
+          "to": 9999,
+          "commons": "Kvyldlipp.svg",
+          "file": "ee/estonia-defence.svg",
+          "design": "The defence forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "sha256": "93f524069b8eca85cbfc9bff2316d959239cdadb7676793565baecc326e61e9a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ee-land-forces",
+          "category": "military",
+          "name": "Flag of the Estonian Land Forces",
+          "from": 2005,
+          "to": 9999,
+          "commons": "Flag of the Estonian Land Forces.svg",
+          "file": "ee/estonia-land-forces.svg",
+          "design": "The land forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "sha256": "cab6b5e9867eb409ef72e2fdc234c8de12383a70435d5ebf4f32b496e613cd64",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ee-air-force",
+          "category": "military",
+          "name": "Flag of the Estonian Air Force",
+          "from": 1996,
+          "to": 9999,
+          "commons": "Flag of the Estonian Air Force.svg",
+          "file": "ee/estonia-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "sha256": "d1923dbc9e50ffb0af2e15916eba3f2174dd2e9a1819b1b74f16832bf1b73468",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ee-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Estonia",
+          "from": 1994,
+          "to": 9999,
+          "commons": "Naval ensign of Estonia.svg",
+          "file": "ee/estonia-naval-ensign.svg",
+          "design": "The naval ensign, restored in 1994 in the form used from 1927 to 1940.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Estonian_flags",
+          "sha256": "c0a5f7f328a9722de1e7ca4ab41f7f138ce3a407d567dc7edb80ec52c63a850d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ee-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Estonia",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Coat of arms of Estonia.svg",
+          "file": "ee/estonia-arms.svg",
+          "design": "Three blue lions passant guardant on a golden shield, between golden oak branches.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia",
+          "meaning": {
+            "description": "The three lions are borrowed, and the borrowing is the history: they come from the 13th-century royal arms of Denmark, because the Duchy of Estonia was Danish — Valdemar II's conquest — and they stayed as the central charge of the greater arms of Tallinn even after the Danish king sold his Estonian dominion to the Teutonic Order in 1346. From there the motif passed to the Duchy of Estonia under Sweden, to the Estonian Knighthood and to the Russian governorate, and so to the modern republic. The golden oak branches on either side are the national tree; the lesser arms are the shield alone. Stalin's regime banned the display of these arms with every other Estonian national symbol after the 1940 occupation.",
+            "sources": [
+              {
+                "title": "Coat of arms of Estonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Estonia"
+              }
+            ]
+          },
+          "sha256": "c27374c746fd889bc377aae94437c7e3a956975592119cb74414a21cedcb80d1",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1918,
+        "event": "Independence from the Russian Empire declared 24 February 1918",
+        "note": "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.",
+        "source": "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence"
+      }
     },
     "EG": {
       "flags": [
@@ -5936,8 +6068,115 @@
           "reuse": "flags/is.svg",
           "design": "The national flag of Iceland, in the form adopted in 1944.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iceland"
+        },
+        {
+          "id": "is-1918",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Iceland",
+          "from": 1918,
+          "to": 1944,
+          "sovereign": "Denmark",
+          "commons": "Flag of Iceland (1918–1944).svg",
+          "file": "is/iceland-1918.svg",
+          "design": "The lighter-blue form of the flag, flown while Iceland was a kingdom in personal union with Denmark.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
+          "sha256": "f5dfce68312351af14a7f61fc1d15b13d02d6ba6bef79961ed8ccc5c60c4f2fe",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "is-denmark",
+          "category": "historical",
+          "name": "Flag of Denmark",
+          "from": 1523,
+          "to": 1918,
+          "sovereign": "Denmark",
+          "reuse": "flags/dk.svg",
+          "design": "The Dannebrog, flown over Iceland from the collapse of the Kalmar Union until home rule.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags"
+        },
+        {
+          "id": "is-kalmar",
+          "category": "historical",
+          "name": "Flag of the Kalmar Union",
+          "from": 1397,
+          "to": 1523,
+          "sovereign": "the Kalmar Union",
+          "commons": "Flag of the Kalmar Union.svg",
+          "file": "is/iceland-kalmar.svg",
+          "design": "The banner of the realms of the union of Denmark, Norway and Sweden.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
+          "sha256": "f8dbe76e669888c7d302018f84024e41fe4a88c24c1541d5a67f320ba85dc8bc",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "is-norway",
+          "category": "historical",
+          "name": "Royal Banner of Norway",
+          "from": 1262,
+          "to": 1397,
+          "sovereign": "Norway",
+          "commons": "Royal Banner of Norway (14th Century).svg",
+          "file": "is/iceland-norway.svg",
+          "design": "The banner of the Norwegian crown, to which the Icelandic Commonwealth submitted in 1262.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
+          "sha256": "6443b8440d4b9fc058df9aa2ce4b223a003ce940858179d1a38ed51efe9ca4de",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "is-state",
+          "category": "civilstate",
+          "name": "State flag and ensign of Iceland",
+          "from": 1944,
+          "to": 9999,
+          "commons": "Flag of Iceland (state).svg",
+          "file": "is/iceland-state.svg",
+          "design": "The swallow-tailed form of the flag, flown by the state and used as the military flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
+          "sha256": "36c401ca955bdab2bcf8e01d4d42df3191282bc69230b6f01ef8c979a80e2ddb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "is-president",
+          "category": "standard",
+          "name": "Flag of the President of Iceland",
+          "from": 1944,
+          "to": 9999,
+          "commons": "Flag of the President of Iceland.svg",
+          "file": "is/iceland-president.svg",
+          "design": "The swallow-tailed state flag with a square panel bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Icelandic_flags",
+          "sha256": "7d99cef41ff8a966f39ae2b2161b670a5e966e6643b8f36351283ae6b7bcd111",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "is-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Iceland",
+          "from": 1944,
+          "to": 9999,
+          "commons": "Coat of arms of Iceland.svg",
+          "file": "is/iceland-arms.svg",
+          "design": "The flag's cross on a shield, supported by a bull, a giant, a vulture and a dragon, standing on columnar basalt.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland",
+          "meaning": {
+            "description": "These are the only national arms in the world with FOUR supporters, and each is a specific creature from a specific text: the landvættir, the four guardian spirits of Iceland as Snorri Sturluson describes them in Heimskringla — a bull on the shield's right, a giant on its left, a vulture above the bull and a dragon above the giant, each guarding one quarter of the island. They stand on a block of columnar basalt, the island's own rock. The shield itself repeats the flag. Iceland's arms have changed with its status: a crowned stockfish around 1500, a white falcon from 1903, and the landvættir from 12 February 1919, first for the kingdom under the Danish crown and then for the republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Iceland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland"
+              }
+            ]
+          },
+          "sha256": "cec2ac3fb12d299194e7a1eea07e475b07ebc4d92f18c25fa2100e718f35ebd8",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1944,
+        "event": "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown",
+        "note": "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Iceland"
+      }
     },
     "IT": {
       "flags": [
@@ -7071,8 +7310,116 @@
           "reuse": "flags/lv.svg",
           "design": "The national flag of Latvia, in the form adopted in 1923.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Latvia"
+        },
+        {
+          "id": "lv-ssr",
+          "category": "historical",
+          "name": "Flag of the Latvian SSR",
+          "from": 1940,
+          "to": 1953,
+          "commons": "Flag of the Latvian Soviet Socialist Republic (1940–1953).svg",
+          "file": "lv/latvia-ssr.svg",
+          "design": "The flag imposed after the Soviet occupation and annexation of 1940, while Latvia's own flag was banned.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
+          "sha256": "b5376a3cb71822434634b3a9eaef7703b42b00c877eb5815384a3cc82a2926d9",
+          "fetched": "2026-08-08",
+          "occupier": "the Soviet Union"
+        },
+        {
+          "id": "lv-courland",
+          "category": "historical",
+          "name": "Flag of the Duchy of Courland",
+          "from": 1562,
+          "to": 1795,
+          "priorPolity": "the Duchy of Courland and Semigallia",
+          "commons": "Flag of Courland (state).svg",
+          "file": "lv/latvia-courland.svg",
+          "design": "The state flag of the duchy that held western Latvia — a small Baltic state that briefly held colonies in Tobago and the Gambia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
+          "sha256": "148090c74e0209af5b846ed2e081a5fc68e0cf9fd8785871b1d841b9a2ce9ede",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lv-president",
+          "category": "standard",
+          "name": "Flag of the President of Latvia",
+          "from": 1995,
+          "to": 9999,
+          "commons": "Flag of the President of Latvia.svg",
+          "file": "lv/latvia-president.svg",
+          "design": "The presidential flag, restored in 1995 in its 1923 form.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
+          "sha256": "8d16b63d0225a3facccbbc8e0e1b017c90bf427cf4e4a865f4499e5511cf4bcd",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lv-pm",
+          "category": "standard",
+          "name": "Standard of the Prime Minister of Latvia",
+          "from": 1995,
+          "to": 9999,
+          "commons": "Flag of the Prime Minister of Latvia.svg",
+          "file": "lv/latvia-pm.svg",
+          "design": "The prime minister's standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
+          "sha256": "139121bd839c9fcd774fcdb5fc60d966c05dafe1f1ecd62572b234cdaad8b3ef",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lv-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Latvia",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Naval Ensign of Latvia.svg",
+          "file": "lv/latvia-naval-ensign.svg",
+          "design": "The naval ensign, restored in 1991 in the form used from 1919 to 1940.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
+          "sha256": "4a4b8d28dc08f70878e5025f5261601b4db96992b9ec355f3e882b36225ae718",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lv-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Latvia",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Naval jack of Latvia.svg",
+          "file": "lv/latvia-naval-jack.svg",
+          "design": "The naval jack.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia",
+          "sha256": "a141c5903ffe8ec73d3a622beead3d7e32b2ea1edb25ca5aefdb65067a4c926b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "lv-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Latvia",
+          "from": 1921,
+          "to": 9999,
+          "commons": "Coat of arms of Latvia.svg",
+          "file": "lv/latvia-arms.svg",
+          "design": "A shield with a rising sun above a red lion and a silver griffin, beneath three golden stars, between oak branches.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia",
+          "meaning": {
+            "description": "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
+            "sources": [
+              {
+                "title": "Coat of arms of Latvia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia"
+              }
+            ]
+          },
+          "sha256": "ae7dc98afe75659d82c7fdd2cdc023643413f30bf8950a634e59ae0e228c9db2",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1918,
+        "event": "Independence proclaimed 18 November 1918",
+        "note": "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Latvia"
+      }
     },
     "LY": {
       "flags": [
@@ -10372,6 +10719,41 @@
           "reuse": "flags/sk.svg",
           "design": "The national flag of Slovakia, in the form adopted in 1992.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Slovakia"
+        },
+        {
+          "id": "sk-president",
+          "category": "standard",
+          "name": "Flag of the President of Slovakia",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Flag of the President of Slovakia.svg",
+          "file": "sk/slovakia-president.svg",
+          "design": "The presidential flag — the coat of arms on a white field within a red-and-blue border.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Slovak_flags",
+          "sha256": "96ffc7f54a5146ddd11a0d4da631ed97f53a90b81d832d7d38c7f99b42cd59c8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sk-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Slovakia",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Coat of arms of Slovakia.svg",
+          "file": "sk/slovakia-arms.svg",
+          "design": "A silver double cross standing on the middle peak of a blue mountain of three peaks, on a red shield.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia",
+          "meaning": {
+            "description": "The emblem runs through three periods that follow on from each other — Byzantine (6th–12th centuries), Hungarian (12th–20th) and Slovak (19th–20th). The double cross came into the region's heraldry from Byzantium and is read in modern interpretation as Slovakia standing heir and guardian to the Christian tradition. The three peaks it stands on are the mountain ranges Tatra, Mátra and Fátra, which stood for the northern mountainous part of the Kingdom of Hungary — the Tatra and the Fátra lie in present-day Slovakia. The current drawing was made in 1990 by the painter Ladislav Čisárik and the heraldist Ladislav Vrtel, commissioned after the Velvet Revolution.",
+            "sources": [
+              {
+                "title": "Coat of arms of Slovakia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia"
+              }
+            ]
+          },
+          "sha256": "4844084b1d5439511b8dd387251fc660401c3192ef811bd5de6c77e802d435c3",
+          "fetched": "2026-08-08"
         }
       ]
     },
