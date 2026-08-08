@@ -116,6 +116,19 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
             `no freely-licensed one exists — a symbol dropped in silence makes an incomplete set look complete.`,
         );
       }
+      // A flag with OFFICIAL national status must be SHOWN, not described. This is
+      // the Torres Strait Islander Flag rule: it went missing because no free file
+      // existed, then reappeared as a "no image" card, and neither is acceptable for
+      // one of a country's proclaimed national flags. If no free image exists, source
+      // a drawn one and record its licence position (see `licenceNote`) — this check
+      // fires until the flag can actually be seen.
+      if (e.category === "official") {
+        fail(
+          `${where}: an OFFICIAL national flag must be shown, not merely described. ` +
+            `Source a drawn image and record its copyright position in "licenceNote" — a country's ` +
+            `proclaimed flags are exactly the ones a reader comes to see.`,
+        );
+      }
       continue;
     }
     if (e.noImageReason) {

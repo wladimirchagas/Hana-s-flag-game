@@ -152,15 +152,15 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
    its own lighting, perspective and wear, so it reads as *someone's document* rather than as the country's
    design. Only `.svg` covers are bundled (`check-national-flags.mjs` fails on anything else in the
    `passport` category), the ordinary passport leads its section, and every special type the country
-   issues — diplomatic, official, service, emergency — is listed beside it. Where no freely-licensed
-   vector exists for a type (Commons holds only photographs for Australia, Bolivia, Japan and South
-   Africa), the type is listed with a `noImageReason` under rule 6, never with a photo and never dropped.
-   **A DRAWN RASTER from outside Commons is the narrow exception, and it must declare itself.** Brazil's
-   cover is a `.webp` drawing fetched from a site with no reuse licence, bundled at the owner's explicit
-   direction after the copyright position was put to them: the entry carries `drawnRaster` (why this
-   raster is a drawing, not a photo) and `licenceNote` (the copyright position, verbatim), and the check
-   fails on any non-Commons `url` source that lacks the latter or any non-vector cover that lacks the
-   former. Never add one silently, and replace it the moment a freely-licensed cover exists.
+   issues — diplomatic, official, service, emergency — is listed beside it. Where Commons holds only
+   photographs (Brazil, Australia, Bolivia, Japan, South Africa), the cover is a **drawn raster from
+   outside Commons** — the narrow exception, and it must declare itself. Those five are `.webp` drawings
+   fetched from a site with no reuse licence, bundled at the owner's explicit direction after the
+   copyright position was put to them: each entry carries `drawnRaster` (why this raster is a drawing,
+   not a photo) and `licenceNote` (the copyright position, verbatim), and the check fails on any
+   non-Commons `url` source that lacks the latter or any non-vector cover that lacks the former. Never
+   add one silently, and replace it the moment a freely-licensed cover exists. A type with no image at
+   all is still listed under rule 6 — never with a photo, and never dropped.
 5. **`military` is service-level flags only** — army, navy, air force, marine corps — never the hundreds of
    rank, command and appointment flags these sources also list.
 6. **A symbol that cannot be freely licensed is STILL LISTED — with `noImageReason` instead of an image,
@@ -169,10 +169,18 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
    because its design is under copyright until the 2060s and no free file exists — a correct decision about
    the IMAGE, applied wrongly to the ENTRY. **An omission the user cannot see makes an incomplete set look
    complete**, which is worse than an acknowledged gap: nobody can report what they cannot see. The entry
-   now renders as a card reading "No free image", and its widget states the reason and the full sourced
-   meaning. Never bundle a non-free image, never approximate one — and never delete the entry.
-   **Apply this to every country, not just Australia**: when a country has an official symbol you cannot
-   picture, add it with a `noImageReason`.
+   renders as a card reading "No free image", and its widget states the reason and the full sourced meaning.
+   Never approximate a symbol, and never delete the entry.
+   **Apply this to every country, not just Australia**: when a country has a symbol you cannot picture, add
+   it with a `noImageReason`.
+   **But an `official` flag may NEVER be a no-image card — `check-national-flags.mjs` fails the build on
+   one.** That is the second half of the Torres Strait lesson: a country's proclaimed national flags are
+   exactly what a reader opens the tab to see, and "described but not shown" is still a hole in the set.
+   When no freely-licensed file exists, source a DRAWN image (the Torres Strait Islander Flag is the SVG
+   en.wikipedia carries under fair use, vectorised from the Australian Government's own symbols artwork)
+   and record its copyright position in `licenceNote`, which the check also requires for any non-Commons
+   `url` source. A non-free image is a decision for the repository owner, taken explicitly and written
+   down — never taken silently, and never taken to save the work of looking for a free one first.
 7. **Every meaning is sourced, and EXPLANATORY — not merely descriptive.** `NATIONAL_FLAG_MEANINGS` feeds
    the SAME `FlagMeaning` component the national/subnational/city flags use, under the same rule
    ("Flag-meaning explanations must be sourced and must separate myth from fact"). Owner requirement,

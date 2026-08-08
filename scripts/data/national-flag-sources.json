@@ -566,7 +566,11 @@
           "id": "au-torres-strait",
           "category": "official",
           "name": "Torres Strait Islander Flag",
-          "noImageReason": "The design is still in copyright under the Copyright Act 1968 — Bernard Namok died in 1993, so it will not enter the public domain for decades — and no freely-licensed file exists on Wikimedia Commons (en.wikipedia itself shows a placeholder). This game never bundles a non-free image and never approximates a flag, so the flag is listed with its meaning but without a picture.",
+          "from": 1992,
+          "to": 9999,
+          "url": "https://upload.wikimedia.org/wikipedia/en/1/1d/Flag_of_the_Torres_Strait_Islanders.svg",
+          "file": "au/australia-torres-strait.svg",
+          "licenceNote": "The design is in copyright until the 2060s (Bernard Namok died in 1993) and Wikimedia Commons will not host it, so this is the drawn SVG en.wikipedia carries under fair use, vectorised from the Australian Government's own symbols artwork. It is NOT freely licensed; it is bundled at the repository owner's explicit direction, because one of Australia's three flags proclaimed under the Flags Act was otherwise the only one the tab could not show. Replace it if the copyright holder releases a free version.",
           "design": "Green, blue and black horizontal bands with a white dhari (headdress) and a five-pointed star at the centre.",
           "meaning": {
             "description": "Bernard Namok, a 15-year-old from Thursday Island, won the 1992 competition to design it, and gave every element a meaning. The two green stripes are the land — Migi Daudai to the north (Papua New Guinea) and Koey Daudai to the south (mainland Australia) — with the blue of Malu, the sea of the Torres Strait, between them, so the flag is a map of a people living between two landmasses. The black stripes stand for the Torres Strait Islander people themselves. At the centre is the white dhari, the dancer’s headdress that is the emblem of Torres Strait Islander culture, and beneath it a five-pointed star: white for peace, a navigator’s symbol for a seafaring people, and one point for each island group — Northern, Eastern, Western, Central and Southern. It was proclaimed a Flag of Australia in July 1995, the same day as the Aboriginal Flag.",
@@ -581,7 +585,9 @@
               }
             ]
           },
-          "source": "https://en.wikipedia.org/wiki/Torres_Strait_Islander_flag"
+          "source": "https://en.wikipedia.org/wiki/Torres_Strait_Islander_flag",
+          "sha256": "6aa26e301bc3c338d760d7d8ded25343468a61015ad4dbb23994be4a5b034379",
+          "fetched": "2026-08-08"
         },
         {
           "id": "au-arms",
@@ -607,7 +613,10 @@
           "id": "au-passport",
           "category": "passport",
           "name": "Australian passport",
-          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "url": "https://gicg.net/wp-content/plugins/GICG-Passport-Index/assets/images/passports/AU.webp",
+          "file": "au/australia-passport.webp",
+          "drawnRaster": "A drawn cover rendering, not a photograph of a booklet — no lighting, perspective or wear, which is the distinction this category cares about. No vector equivalent exists on Wikimedia Commons.",
+          "licenceNote": "Taken from gicg.net, whose footer reads \"Copyright © 2026 Global. All rights reserved.\" and which states no reuse licence; included at the repository owner's explicit direction after the copyright position was raised. Replace it with a freely-licensed cover if one appears on Wikimedia Commons.",
           "design": "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.",
           "meaning": {
             "description": "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document a traveller carries is stamped with the federation’s own emblem rather than with the flag.",
@@ -618,7 +627,9 @@
               }
             ]
           },
-          "source": "https://en.wikipedia.org/wiki/Australian_passport"
+          "source": "https://gicg.net/passport/au/",
+          "sha256": "9c9b53fac83860e1a1b5019cfcb288dec7e159310bdf6870ad226b1a5ad1cc84",
+          "fetched": "2026-08-08"
         }
       ],
       "omitted": [
@@ -2143,7 +2154,10 @@
           "id": "bo-passport",
           "category": "passport",
           "name": "Bolivian passport",
-          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "url": "https://gicg.net/wp-content/plugins/GICG-Passport-Index/assets/images/passports/BO.webp",
+          "file": "bo/bolivia-passport.webp",
+          "drawnRaster": "A drawn cover rendering, not a photograph of a booklet — no lighting, perspective or wear, which is the distinction this category cares about. No vector equivalent exists on Wikimedia Commons.",
+          "licenceNote": "Taken from gicg.net, whose footer reads \"Copyright © 2026 Global. All rights reserved.\" and which states no reuse licence; included at the repository owner's explicit direction after the copyright position was raised. Replace it with a freely-licensed cover if one appears on Wikimedia Commons.",
           "design": "A burgundy cover reading COMUNIDAD ANDINA above ESTADO PLURINACIONAL DE BOLIVIA, with the national arms in gold and PASAPORTE beneath.",
           "meaning": {
             "description": "The heading above the country’s name is the Andean Community, whose members agreed a common passport format — so, as with Mercosur, a Bolivian traveller’s document announces the bloc before the state. Beneath it stands the country’s post-2009 constitutional name, Estado Plurinacional de Bolivia, the same claim the Wiphala makes alongside the tricolour: that the state is made of many peoples.",
@@ -2154,7 +2168,9 @@
               }
             ]
           },
-          "source": "https://en.wikipedia.org/wiki/Bolivian_passport"
+          "source": "https://gicg.net/passport/bo/",
+          "sha256": "b8cf805903dec78c3497f76f873e522e93c57215d91f38a50e09647ff411f2e9",
+          "fetched": "2026-08-08"
         }
       ],
       "independence": {
@@ -2299,7 +2315,10 @@
           "id": "za-passport",
           "category": "passport",
           "name": "South African passport",
-          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "url": "https://gicg.net/wp-content/plugins/GICG-Passport-Index/assets/images/passports/ZA.webp",
+          "file": "za/south-africa-passport.webp",
+          "drawnRaster": "A drawn cover rendering, not a photograph of a booklet — no lighting, perspective or wear, which is the distinction this category cares about. No vector equivalent exists on Wikimedia Commons.",
+          "licenceNote": "Taken from gicg.net, whose footer reads \"Copyright © 2026 Global. All rights reserved.\" and which states no reuse licence; included at the repository owner's explicit direction after the copyright position was raised. Replace it with a freely-licensed cover if one appears on Wikimedia Commons.",
           "design": "A green cover bearing the South African coat of arms in gold, reading REPUBLIC OF SOUTH AFRICA / REPUBLIEK VAN SUID-AFRIKA and PASSPORT.",
           "meaning": {
             "description": "The gold device is the post-2000 coat of arms — the Khoisan rock-art figures and the secretary bird — so the passport carries the emblem adopted after apartheid rather than the one it replaced. The heading appears in English and Afrikaans, two of the eleven official languages.",
@@ -2310,7 +2329,9 @@
               }
             ]
           },
-          "source": "https://en.wikipedia.org/wiki/South_African_passport"
+          "source": "https://gicg.net/passport/za/",
+          "sha256": "35c754b73a573145f253593cd4d1bc5055fecbc18144ebbc4b59ab7edd7595d3",
+          "fetched": "2026-08-08"
         }
       ],
       "independence": {
@@ -2436,7 +2457,10 @@
           "id": "jp-passport",
           "category": "passport",
           "name": "Japanese passport",
-          "noImageReason": "Wikimedia Commons holds only photographs of the physical booklet for this passport, and this tab shows drawn cover images rather than photographs of an object — a photo carries its own lighting, perspective and wear, and reads as someone's document rather than as the country's design. The cover is described here until a freely-licensed vector rendering exists.",
+          "url": "https://gicg.net/wp-content/plugins/GICG-Passport-Index/assets/images/passports/JP.webp",
+          "file": "jp/japan-passport.webp",
+          "drawnRaster": "A drawn cover rendering, not a photograph of a booklet — no lighting, perspective or wear, which is the distinction this category cares about. No vector equivalent exists on Wikimedia Commons.",
+          "licenceNote": "Taken from gicg.net, whose footer reads \"Copyright © 2026 Global. All rights reserved.\" and which states no reuse licence; included at the repository owner's explicit direction after the copyright position was raised. Replace it with a freely-licensed cover if one appears on Wikimedia Commons.",
           "design": "A dark red cover (ordinary passports) bearing the paulownia Government Seal in gold, with 日本国旅券 / JAPAN PASSPORT.",
           "meaning": {
             "description": "The gold crest is the Government Seal — the paulownia mon used by the cabinet — rather than the imperial chrysanthemum, so the passport carries the government’s emblem while the chrysanthemum stays with the Imperial House. Japan colour-codes by validity and type: red for a ten-year ordinary passport, blue for five-year, green for official and dark brown for diplomatic.",
@@ -2447,7 +2471,9 @@
               }
             ]
           },
-          "source": "https://en.wikipedia.org/wiki/Japanese_passport"
+          "source": "https://gicg.net/passport/jp/",
+          "sha256": "6a59902bcd347b5516a1cfd9c4de194220a5af8324d3a2d704b62cc01937d1bf",
+          "fetched": "2026-08-08"
         }
       ]
     },
