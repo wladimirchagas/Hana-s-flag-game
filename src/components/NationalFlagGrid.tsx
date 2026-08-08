@@ -132,7 +132,9 @@ export function NationalFlagGrid({
                         ? `Show ${flag.name} — no freely-licensed image is available`
                         : flag.sovereign
                           ? `Show ${flag.name} — flown under ${flag.sovereign}, before independence`
-                          : `Show ${flag.name}`
+                          : flag.priorPolity
+                            ? `Show ${flag.name} — flown by ${flag.priorPolity}, an earlier polity`
+                            : `Show ${flag.name}`
                     }
                   >
                     <span className="flag-grid__thumb">
@@ -162,6 +164,11 @@ export function NationalFlagGrid({
                       {flag.sovereign && (
                         <span className="flag-grid__sovereign-badge">
                           Under {flag.sovereign}
+                        </span>
+                      )}
+                      {flag.priorPolity && (
+                        <span className="flag-grid__sovereign-badge">
+                          {flag.priorPolity}
                         </span>
                       )}
                     </span>

@@ -66,6 +66,14 @@ export type NationalFlag = {
    */
   readonly sovereign?: string;
   /**
+   * The EARLIER POLITY that flew this flag on the same territory, when that polity
+   * was not ruled by anyone — New Zealand's Confederation of United Tribes, whose
+   * 1834 flag predates British rule entirely. Without this, such a flag could only
+   * be described by naming a sovereign power it never had, which would be false, so
+   * it would have to be dropped instead. Mutually exclusive with "sovereign".
+   */
+  readonly priorPolity?: string;
+  /**
    * True for the country's CURRENT national flag — the one the fact-sheet above the
    * grid already shows. Derived by the generator from the image path, so it cannot
    * drift. The grid badges it wherever it is listed, and selecting it opens no
@@ -336,6 +344,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "DK": [
     { id: "dk-official-national", category: "official", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
     { id: "dk-current", category: "historical", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
+    { id: "dk-royal", category: "standard", name: "Royal Standard of Denmark", from: 2024, to: 9999, path: "national-flags/dk/denmark-royal-standard.svg", design: "The state flag charged with the royal coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
+    { id: "dk-regent", category: "standard", name: "Standard of the Regent of Denmark", from: 1914, to: 9999, path: "national-flags/dk/denmark-regent.svg", design: "The flag of a temporary regent, flown in the sovereign’s absence.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
+    { id: "dk-state", category: "civilstate", name: "State flag of Denmark", path: "national-flags/dk/denmark-state.svg", design: "The Dannebrog in swallow-tailed form, flown by the state, beside the rectangular civil flag.", source: "https://en.wikipedia.org/wiki/List_of_Danish_flags" },
   ],
   "DM": [
     { id: "dm-official-national", category: "official", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag of Dominica, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
@@ -388,6 +399,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "FI": [
     { id: "fi-official-national", category: "official", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
     { id: "fi-current", category: "historical", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
+    { id: "fi-president", category: "standard", name: "Flag of the President of Finland", from: 1978, to: 9999, path: "national-flags/fi/finland-president.svg", design: "The war flag charged with the Cross of Liberty in the canton.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    { id: "fi-state", category: "civilstate", name: "State flag of Finland", from: 1978, to: 9999, path: "national-flags/fi/finland-state.svg", design: "The blue Nordic cross charged with the national coat of arms — flown by the state, beside the plain civil flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
   ],
   "FJ": [
     { id: "fj-official-national", category: "official", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag of Fiji, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
@@ -495,6 +508,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "IE": [
     { id: "ie-official-national", category: "official", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
     { id: "ie-current", category: "historical", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
+    { id: "ie-naval-colour", category: "military", name: "Naval Service colour", from: 1996, to: 9999, path: "national-flags/ie/ireland-naval-colour.svg", design: "A navy-blue colour bearing the Naval Service badge.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
+    { id: "ie-naval-jack", category: "maritime", name: "Naval jack of Ireland", from: 1947, to: 9999, path: "national-flags/ie/ireland-naval-jack.svg", design: "Adopted in 1947 for ships of the Naval Service.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland" },
   ],
   "IL": [
     { id: "il-official-national", category: "official", name: "Flag of Israel", from: 1948, to: 9999, primary: true, path: "flags/il.svg", design: "The national flag of Israel, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Israel" },
@@ -757,6 +772,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "NO": [
     { id: "no-official-national", category: "official", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
     { id: "no-current", category: "historical", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
+    { id: "no-war-flag", category: "military", name: "Naval ensign and war flag of Norway", from: 1905, to: 9999, path: "national-flags/no/norway-war-flag.svg", design: "The national flag in swallow-tailed form, flown by the armed forces.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
+    { id: "no-naval-jack", category: "maritime", name: "Naval jack of Norway", path: "national-flags/no/norway-naval-jack.svg", design: "The national flag in square proportions.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
+    { id: "no-royal", category: "standard", name: "Royal Standard of Norway", from: 1905, to: 9999, path: "national-flags/no/norway-royal-standard.svg", design: "The coat of arms of Norway on a red field.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
+    { id: "no-crown-prince", category: "standard", name: "Standard of the Crown Prince of Norway", from: 1924, to: 9999, path: "national-flags/no/norway-crown-prince.svg", design: "The royal standard differenced for the heir.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
   ],
   "NP": [
     { id: "np-official-national", category: "official", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
@@ -769,6 +788,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "NZ": [
     { id: "nz-official-national", category: "official", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
     { id: "nz-current", category: "historical", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
+    { id: "nz-1867", category: "historical", name: "Flag of New Zealand government ships (1867–1869)", from: 1867, to: 1869, sovereign: "the United Kingdom", path: "national-flags/nz/new-zealand-1867.svg", design: "The first New Zealand flag based on the Blue Ensign, defaced with the letters NZ.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
+    { id: "nz-union-flag", category: "historical", name: "Union Flag", from: 1840, to: 1867, sovereign: "the United Kingdom", path: "flags/gb.svg", design: "The Union Flag, which served as New Zealand’s flag from the Treaty of Waitangi until a distinct colonial ensign was granted.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
+    { id: "nz-united-tribes", category: "historical", name: "Flag of the United Tribes of New Zealand", from: 1834, to: 1840, priorPolity: "the Confederation of the United Tribes of New Zealand", path: "national-flags/nz/new-zealand-united-tribes.svg", design: "A St George’s cross on white, with a second cross and four stars in the canton — chosen by 25 northern chiefs in 1834 so New Zealand-built ships could be registered.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
+    { id: "nz-royal-1962", category: "standard", name: "Personal Flag of Queen Elizabeth II in New Zealand", from: 1962, to: 2022, path: "national-flags/nz/new-zealand-royal-1962.svg", design: "A banner of the New Zealand shield with the Queen’s personal cypher.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
   ],
   "OM": [
     { id: "om-official-national", category: "official", name: "Flag of Oman", from: 1995, to: 9999, primary: true, path: "flags/om.svg", design: "The national flag of Oman, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
@@ -1115,6 +1138,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
+  "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
   "ZA": { year: 1910, event: "The Union of South Africa was established as a self-governing dominion on 31 May 1910.", note: "Full legislative independence followed with the Statute of Westminster in 1931; the republic was declared in 1961.", source: "https://en.wikipedia.org/wiki/Union_of_South_Africa" },
 };

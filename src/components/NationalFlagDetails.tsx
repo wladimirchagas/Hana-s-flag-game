@@ -63,6 +63,12 @@ export function NationalFlagDetails({
             <dd className="entity-summary__value">{flag.sovereign}</dd>
           </div>
         )}
+        {flag.priorPolity && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Flown by</dt>
+            <dd className="entity-summary__value">{flag.priorPolity}</dd>
+          </div>
+        )}
       </dl>
       {flag.sovereign && (
         <p className="learn-fs__pre-independence">
@@ -73,6 +79,17 @@ export function NationalFlagDetails({
           this flag flew
           {independence ? `, and became independent in ${independence.year}` : ""} — so this is
           not a flag of the independent country.
+        </p>
+      )}
+      {flag.priorPolity && (
+        // Neither the modern country's flag nor a ruling power's: an earlier polity
+        // on the same ground, answering to nobody. Saying so is what keeps it from
+        // reading as a flag of the country as it is today.
+        <p className="learn-fs__pre-independence">
+          <strong>An earlier polity.</strong> This was the flag of {flag.priorPolity}, on the
+          territory that is now {countryName}
+          {independence ? `, before ${countryName} existed in its present form in ${independence.year}` : ""} —
+          not a flag of the modern country, and not the flag of any ruling power.
         </p>
       )}
       <div className="learn-fs__flag-box">
