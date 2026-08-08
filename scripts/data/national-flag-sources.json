@@ -3389,6 +3389,30 @@
           "reuse": "flags/id.svg",
           "design": "The national flag of Indonesia, in the form adopted in 1945.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Indonesia"
+        },
+        {
+          "id": "id-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of the Indonesian Navy",
+          "from": 1945,
+          "to": 9999,
+          "commons": "Naval Jack of Indonesia.svg",
+          "file": "id/indonesia-naval-jack.svg",
+          "design": "Nine equal horizontal red and white stripes — the \"Ular-ular Perang\".",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indonesian_flags",
+          "sha256": "f4f77eaa07b7e5b760724706ea96cca5cef16e8f5d4da8d3c0e5cdc3b7eef22f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "id-president",
+          "category": "standard",
+          "name": "Presidential Standard of Indonesia",
+          "commons": "Presidential Standard of Indonesia.svg",
+          "file": "id/indonesia-president.svg",
+          "design": "A yellow field bearing the national emblem and the presidential arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Indonesian_flags",
+          "sha256": "00dd9c19f09d896c9505035761ef3a5080ffd129f91b768a74c19a7d00c32b11",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -4814,6 +4838,58 @@
           "reuse": "flags/mx.svg",
           "design": "The national flag of Mexico, in the form adopted in 1968.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mexico"
+        },
+        {
+          "id": "mx-1893",
+          "category": "historical",
+          "name": "Flag of Mexico (1893–1916)",
+          "from": 1893,
+          "to": 1916,
+          "commons": "Flag of Mexico (1893–1916).svg",
+          "file": "mx/mexico-1893.svg",
+          "design": "The eagle redrawn facing forward with wings spread, under Porfirio Díaz.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
+          "sha256": "c9c854bf90667df2a4992bea0ca6da7c4cc7f400177f98f4ad6fe5e3c73deedc",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "mx-1823",
+          "category": "historical",
+          "name": "Flag of Mexico (1823–1893)",
+          "from": 1823,
+          "to": 1893,
+          "commons": "Flag of Mexico (1823-1864, 1867-1893).svg",
+          "file": "mx/mexico-1823.svg",
+          "design": "The republican tricolour with the eagle on a nopal, interrupted by the Second Mexican Empire between 1864 and 1867.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
+          "sha256": "b606d378d0d7ae9fb87688b1ade6a585d73987bc8d3de0678e189ee94286c597",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "mx-1821-empire",
+          "category": "historical",
+          "name": "Flag of the First Mexican Empire",
+          "from": 1821,
+          "to": 1823,
+          "commons": "Flag of Mexico (1821-1823).svg",
+          "file": "mx/mexico-1821-empire.svg",
+          "design": "The tricolour with the crowned eagle of Agustín de Iturbide’s empire.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
+          "sha256": "0f046fd0026d60a484edaf4510dec3e4d747ee262a34bf2934735328d037793d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "mx-three-guarantees",
+          "category": "historical",
+          "name": "Flag of the Three Guarantees",
+          "from": 1821,
+          "to": 1821,
+          "commons": "Flag of the Three Guarantees.svg",
+          "file": "mx/mexico-three-guarantees.svg",
+          "design": "The flag of the Army of the Three Guarantees, decreed by Agustín de Iturbide in November 1821 — the first flag of independent Mexico.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
+          "sha256": "dd6bd401fb1eeb500fd220e3e35c939b9ad9c7116b1041548571ef9abc784a6f",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -5493,6 +5569,121 @@
           "reuse": "flags/pt.svg",
           "design": "The national flag of Portugal, in the form adopted in 1912.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Portugal"
+        },
+        {
+          "id": "pt-1485",
+          "category": "historical",
+          "name": "Royal banner of Portugal (1485–1521)",
+          "from": 1485,
+          "to": 1521,
+          "commons": "PortugueseFlag1485 (8 castles).svg",
+          "file": "pt/portugal-1485.svg",
+          "design": "A heraldic banner of five blue escutcheons within a border of eight castles.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "0f98fe67b0cc227f81064adffd1574ee7bc6fbf7892cd8471a4b63c308786c0c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-1385",
+          "category": "historical",
+          "name": "Royal banner of Portugal (1385–1485)",
+          "from": 1385,
+          "to": 1485,
+          "commons": "PortugueseFlag1385.svg",
+          "file": "pt/portugal-1385.svg",
+          "design": "A heraldic banner of five blue escutcheons on white within a red bordure of castles.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "a426a0782ceb9575f992067c4f08259be36fe47cf39bbbe57a3a89cb500a6a83",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-1248",
+          "category": "historical",
+          "name": "Royal banner of Portugal (1248–1385)",
+          "from": 1248,
+          "to": 1385,
+          "commons": "PortugueseFlag1248.svg",
+          "file": "pt/portugal-1248.svg",
+          "design": "A heraldic banner of five blue escutcheons within a bordure of castles.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "613e8a7f912d646a479dace099d523191d3884dda6d2c7843c8f2d955c6a1a01",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-1185",
+          "category": "historical",
+          "name": "Royal banner of Portugal (1185–1248)",
+          "from": 1185,
+          "to": 1248,
+          "commons": "PortugueseFlag1185.svg",
+          "file": "pt/portugal-1185.svg",
+          "design": "A heraldic banner of five blue escutcheons, each charged with silver bezants.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "458d2f16f6ff59d34f3187c71a9d2a845e12f94fcb313bed1654d41b1ce6f6b9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-1143",
+          "category": "historical",
+          "name": "Royal banner of Portugal (1143–1185)",
+          "from": 1143,
+          "to": 1185,
+          "commons": "PortugueseFlag1143.svg",
+          "file": "pt/portugal-1143.svg",
+          "design": "A blue cross on white — the banner of Afonso Henriques, the first king.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "a69c693fec4ba5fe2c253425c7c72da22d14bb4dd31f57d638fe636393dcc814",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-military",
+          "category": "military",
+          "name": "Military flag of Portugal",
+          "from": 1911,
+          "to": 9999,
+          "commons": "Military flag of Portugal.svg",
+          "file": "pt/portugal-military.svg",
+          "design": "The national flag in the square proportions used for regimental colours.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "edaff23e03a588a1f9cf0e689c8c8d095a62f4a9e0c92ceb117d87754b679c63",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Portugal",
+          "commons": "Naval Jack of Portugal.svg",
+          "file": "pt/portugal-naval-jack.svg",
+          "design": "A square green-bordered red field charged with the national arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "af22e3ebe087bc634bf95ab39103e620d002167b6430e5e87c08bfe7f69ef4f4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-president",
+          "category": "standard",
+          "name": "Flag of the President of Portugal",
+          "from": 1911,
+          "to": 9999,
+          "commons": "Flag of the President of Portugal.svg",
+          "file": "pt/portugal-president.svg",
+          "design": "A green field bearing the national arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "658e105637b6c706e8c31657a3c54e65bacec982425bace3368b36578c16a309",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-pm",
+          "category": "standard",
+          "name": "Flag of the Prime Minister of Portugal",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Flag of the Prime Minister of Portugal.svg",
+          "file": "pt/portugal-prime-minister.svg",
+          "design": "As the president’s flag, but on white.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
+          "sha256": "197897507c5624b9d9e3f6d62854841b39799aa3f2d0857a870c7fdeccb1a3f0",
+          "fetched": "2026-08-08"
         }
       ]
     },
