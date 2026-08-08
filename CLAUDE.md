@@ -153,9 +153,14 @@ highlights NOTHING on the map — the flag belongs to the whole country, so ther
    design. Only `.svg` covers are bundled (`check-national-flags.mjs` fails on anything else in the
    `passport` category), the ordinary passport leads its section, and every special type the country
    issues — diplomatic, official, service, emergency — is listed beside it. Where no freely-licensed
-   vector exists for a type (Commons holds only photographs for Brazil, Australia, Bolivia, Japan and
-   South Africa), the type is listed with a `noImageReason` under rule 6, never with a photo and never
-   dropped.
+   vector exists for a type (Commons holds only photographs for Australia, Bolivia, Japan and South
+   Africa), the type is listed with a `noImageReason` under rule 6, never with a photo and never dropped.
+   **A DRAWN RASTER from outside Commons is the narrow exception, and it must declare itself.** Brazil's
+   cover is a `.webp` drawing fetched from a site with no reuse licence, bundled at the owner's explicit
+   direction after the copyright position was put to them: the entry carries `drawnRaster` (why this
+   raster is a drawing, not a photo) and `licenceNote` (the copyright position, verbatim), and the check
+   fails on any non-Commons `url` source that lacks the latter or any non-vector cover that lacks the
+   former. Never add one silently, and replace it the moment a freely-licensed cover exists.
 5. **`military` is service-level flags only** — army, navy, air force, marine corps — never the hundreds of
    rank, command and appointment flags these sources also list.
 6. **A symbol that cannot be freely licensed is STILL LISTED — with `noImageReason` instead of an image,

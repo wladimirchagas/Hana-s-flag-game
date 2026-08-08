@@ -134,7 +134,21 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
     const bytes = readFileSync(abs);
 
     if (!e.reuse) {
-      if (!e.commons) fail(`${where}: fetched files must record the Commons filename they came from.`);
+      if (!e.commons && !e.url) {
+        fail(`${where}: fetched files must record the Commons filename or the URL they came from.`);
+      }
+      // An image taken from outside Wikimedia has no licence template to lean on, so
+      // the manifest must state the position explicitly rather than leave a reader
+      // to assume it is free. Owner-directed inclusions are recorded, not hidden.
+      if (e.url && (e.licenceNote ?? "").trim().length < 40) {
+        fail(
+          `${where}: images fetched from outside Wikimedia Commons must carry a "licenceNote" stating ` +
+            `the copyright position — there is no licence template on the source to rely on.`,
+        );
+      }
+      if (e.drawnRaster && (e.drawnRaster ?? "").trim().length < 30) {
+        fail(`${where}: "drawnRaster" must say why the raster is a drawing rather than a photograph.`);
+      }
       if (!e.sha256) {
         fail(`${where}: no sha256 recorded — re-run node scripts/download-national-flags.mjs.`);
       } else {
@@ -185,10 +199,11 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
   for (const f of flags) {
     if (f.category !== "passport") continue;
     const p = f.reuse ?? (f.file ? `national-flags/${f.file}` : null);
-    if (p && !p.endsWith(".svg")) {
+    if (p && !p.endsWith(".svg") && !f.drawnRaster) {
       fail(
-        `${cc} ${f.id}: passport covers must be drawn images (.svg), not photographs of the booklet — ` +
-          `"${p}" is not. Use a vector cover, or list the type with a noImageReason.`,
+        `${cc} ${f.id}: passport covers must be drawn images, not photographs of the booklet — ` +
+          `"${p}" is a raster with no "drawnRaster" statement. Use a vector cover, list the type with a ` +
+          `noImageReason, or record in "drawnRaster" why this raster is a DRAWING rather than a photo.`,
       );
     }
   }

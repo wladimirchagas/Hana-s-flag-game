@@ -98,8 +98,8 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       reused++;
       continue;
     }
-    if (!entry.commons || !entry.file) {
-      console.error(`✗ ${cc} ${entry.id}: needs either "reuse" or both "commons" and "file".`);
+    if (!entry.file || (!entry.commons && !entry.url)) {
+      console.error(`✗ ${cc} ${entry.id}: needs "reuse", or "file" plus either "commons" or "url".`);
       failed++;
       continue;
     }
@@ -126,15 +126,19 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       continue;
     }
 
+    // `url` is the escape hatch for an image no free repository carries — it is
+    // fetched verbatim from the site the manifest cites, and the entry must record
+    // the licence position (see check-national-flags.mjs).
+    const src = entry.url ?? commonsUrl(entry.commons);
     // upload.wikimedia.org rate-limits bulk fetches; a 429 says nothing about
     // whether the file exists, so back off and retry rather than record a miss.
     let res = null;
     for (let attempt = 0; attempt < 5; attempt++) {
-      res = await fetch(commonsUrl(entry.commons), { headers: { "User-Agent": UA } });
+      res = await fetch(src, { headers: { "User-Agent": UA } });
       if (res.status !== 429 && res.status !== 503) break;
       await new Promise((r) => setTimeout(r, 3000 * (attempt + 1)));
     }
-    if (!res.ok) {
+    if (!res.ok && entry.commons) {
       // The title may have been renamed on Commons since the manifest was written.
       const canonical = await resolveCommonsTitle(entry.commons);
       if (canonical && canonical !== entry.commons) {
@@ -146,7 +150,7 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
       }
     }
     if (!res.ok) {
-      console.error(`✗ ${entry.file}: HTTP ${res.status} for "${entry.commons}"`);
+      console.error(`✗ ${entry.file}: HTTP ${res.status} for "${entry.commons ?? entry.url}"`);
       failed++;
       continue;
     }
@@ -154,11 +158,14 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
     // Passport covers are often photographs, so JPEG joins SVG and PNG here.
     const kind = entry.file.endsWith(".png") ? "PNG"
       : /\.jpe?g$/.test(entry.file) ? "JPEG"
+      : entry.file.endsWith(".webp") ? "WEBP"
       : "SVG";
     const looks = {
       SVG: () => buf.slice(0, 400).toString("utf8").includes("<svg"),
       PNG: () => buf.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])),
       JPEG: () => buf.slice(0, 3).equals(Buffer.from([0xff, 0xd8, 0xff])),
+      WEBP: () =>
+        buf.slice(0, 4).toString("ascii") === "RIFF" && buf.slice(8, 12).toString("ascii") === "WEBP",
     }[kind];
     if (!looks()) {
       console.error(`✗ ${entry.file}: fetched bytes are not ${kind}.`);
@@ -170,7 +177,7 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
     entry.sha256 = sha(buf);
     entry.fetched = new Date().toISOString().slice(0, 10);
     fetched++;
-    console.log(`✓ ${entry.file}  ←  ${entry.commons}`);
+    console.log(`✓ ${entry.file}  ←  ${entry.commons ?? entry.url}`);
     await new Promise((r) => setTimeout(r, 900));
   }
 }
