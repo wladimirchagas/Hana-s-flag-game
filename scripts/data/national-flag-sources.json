@@ -2645,6 +2645,54 @@
           "reuse": "flags/cz.svg",
           "design": "The national flag of Czechia, in the form adopted in 1993.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Czechia"
+        },
+        {
+          "id": "cz-president",
+          "category": "standard",
+          "name": "Flag of the President of the Czech Republic",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Flag of the President of the Czech Republic.svg",
+          "file": "cz/czechia-president.svg",
+          "design": "A white-bordered square bearing the greater coat of arms and the motto Pravda vítězí.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Czech_flags",
+          "sha256": "230555ddf84b71783b2454ee929b8f28c3a2c4bf7ee4aab0d2560c6922874326",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cz-armed-forces",
+          "category": "military",
+          "name": "War flag of the Czech Republic",
+          "commons": "War Flag of the Czech Republic.svg",
+          "file": "cz/czechia-armed-forces.svg",
+          "design": "The war flag carried by units of the Czech Armed Forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Czech_flags",
+          "from": 2004,
+          "to": 9999,
+          "sha256": "6ba31ee0c28923ee7a7eb7e998a5446f2a0758f9bda85d94e96db72377194454",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cz-arms",
+          "category": "coatofarms",
+          "name": "Greater coat of arms of the Czech Republic",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Coat of arms of the Czech Republic.svg",
+          "file": "cz/czechia-arms.svg",
+          "design": "A quartered shield: the Bohemian double-tailed lion twice, the Moravian eagle, and the Silesian eagle.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic",
+          "meaning": {
+            "description": "The greater arms quarter the three historical Czech lands the country is made of: Bohemia's silver double-tailed lion on red (twice, in the first and fourth quarters), Moravia's chequered eagle, and Silesia's black eagle with a crescent across its breast. The Bohemian lion has a history: the rulers of Bohemia originally used a flaming eagle of Saint Wenceslas, and Emperor Frederick granted King Vladislaus II a silver lion on red to mark his valour. It was drawn with a single tail at first; the second tail was added later, for further help given to the emperor. The lesser arms show that lion alone.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Czech Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic"
+              }
+            ]
+          },
+          "sha256": "d5ead89c609e6f378a49a15a562b439073bab0860877ec8ce90b5ee4770dbd26",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -3901,8 +3949,167 @@
           "reuse": "flags/gh.svg",
           "design": "The national flag of Ghana, in the form adopted in 1957.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Ghana"
+        },
+        {
+          "id": "gh-1964",
+          "category": "historical",
+          "name": "Second flag of Ghana (1964–1966)",
+          "from": 1964,
+          "to": 1966,
+          "commons": "Flag of Ghana (1964–1966).svg",
+          "file": "gh/ghana-1964.svg",
+          "design": "The tricolour with a white middle band, flown under the one-party state before the 1957 design was restored.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "b908bdbc30bd92466b756d26aa8d7f23dafd25ab076cb14383dfca2085234d21",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-uas",
+          "category": "historical",
+          "name": "Flag of the Union of African States",
+          "from": 1961,
+          "to": 1962,
+          "priorPolity": "the Union of African States",
+          "commons": "Flag of the Union of African States (1961–1962).svg",
+          "file": "gh/ghana-uas.svg",
+          "design": "The red-gold-green tricolour with three black stars, for the union of Ghana, Guinea and Mali.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "e57f5f016c42abca3b585f0bc11ba87d1f16c1a3ccce187be5491375578ba4cb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-gold-coast",
+          "category": "historical",
+          "name": "Flag of the British Gold Coast",
+          "from": 1877,
+          "to": 1957,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the Gold Coast (1877–1957).svg",
+          "file": "gh/ghana-gold-coast.svg",
+          "design": "A British Blue Ensign defaced with the colony's badge.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "171c7a0e26975bd6d8f8547f5c0b0f7ef8031f7681357cb20cbafaf3f61c3733",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-togoland",
+          "category": "historical",
+          "name": "Flag of British Togoland",
+          "from": 1916,
+          "to": 1956,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of British Togoland.svg",
+          "file": "gh/ghana-togoland.svg",
+          "design": "A Blue Ensign for the trust territory that voted to join Ghana in 1956.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "d16bda9e8ca503ee5dfff817876f3f6948e9714bae412bb7467850bcc7362656",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-denmark",
+          "category": "historical",
+          "name": "Flag of Denmark–Norway",
+          "from": 1658,
+          "to": 1850,
+          "sovereign": "Denmark–Norway",
+          "reuse": "flags/dk.svg",
+          "design": "The Dannebrog, flown over the Danish Gold Coast forts until they were sold to Britain in 1850.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags"
+        },
+        {
+          "id": "gh-portugal",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Portugal (1495–1521)",
+          "from": 1495,
+          "to": 1521,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal (1495).svg",
+          "file": "gh/ghana-portugal.svg",
+          "design": "The white field with the Portuguese royal arms, flown from Elmina — the first European fort on the coast.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "bbedf2d8ecde8d5e0a5feda2642ed4eb2d08e2f20aa4ef2ab0b969075ed2c40d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-president",
+          "category": "standard",
+          "name": "Standard of the President of Ghana",
+          "from": 1966,
+          "to": 9999,
+          "commons": "Presidential Standard of Ghana.svg",
+          "file": "gh/ghana-president.svg",
+          "design": "The national tricolour charged with the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "c8d5da7fbfabb46cc5e2301c8c975e42a444d8648732895bbfa21aa40c515f8a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Ghana",
+          "from": 1966,
+          "to": 9999,
+          "commons": "Naval Ensign of Ghana.svg",
+          "file": "gh/ghana-naval-ensign.svg",
+          "design": "A red St George's Cross on white with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "aa0683f0fb00bd70c9f2fdc99da4a4f8c7a111ae22bfff2886421d30841db36a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Ghana",
+          "from": 1966,
+          "to": 9999,
+          "commons": "Civil Ensign of Ghana.svg",
+          "file": "gh/ghana-civil-ensign.svg",
+          "design": "A red field with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "caee8f0a5ab30610b1489ebf889b97361b1130459f8113485b667e173b2b62f9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Ghana",
+          "from": 1966,
+          "to": 9999,
+          "commons": "Air Force Ensign of Ghana.svg",
+          "file": "gh/ghana-air-force.svg",
+          "design": "A light blue field with the national flag in the canton and the air force roundel in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags",
+          "sha256": "fce1d1029c6636e4e92e463ff4c84a9cd26304ecac19b4b9792bc369e51ebbdf",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gh-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Ghana",
+          "from": 1957,
+          "to": 9999,
+          "commons": "Coat of arms of Ghana.svg",
+          "file": "gh/ghana-arms.svg",
+          "design": "A quartered shield on a green St George's Cross, supported by two golden eagles, crested with the black star, over the motto Freedom and Justice.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana",
+          "meaning": {
+            "description": "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ghana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana"
+              }
+            ]
+          },
+          "sha256": "b0026491e67fe9bf9fd3cfceeb7278ae6b98dda7d49d877233b66930db387aa8",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1957,
+        "event": "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it",
+        "source": "https://en.wikipedia.org/wiki/History_of_Ghana"
+      }
     },
     "GM": {
       "flags": [
@@ -4204,6 +4411,108 @@
           "reuse": "flags/hu.svg",
           "design": "The national flag of Hungary, in the form adopted in 1957.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Hungary"
+        },
+        {
+          "id": "hu-state",
+          "category": "civilstate",
+          "name": "State flag of Hungary",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Flag of Hungary with arms (state).svg",
+          "file": "hu/hungary-state.svg",
+          "design": "The red-white-green tricolour charged with the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
+          "sha256": "e0c38fabaa83f0b0bd85f6d8e12a8adeaeb0421c75b3a0b2a39a62cbec43b315",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hu-arpad",
+          "category": "historical",
+          "name": "Flag of the Árpád dynasty",
+          "from": 1272,
+          "to": 1301,
+          "priorPolity": "the Kingdom of Hungary under the Árpád dynasty",
+          "commons": "Flag of Hungary (11th c. - 1301).svg",
+          "file": "hu/hungary-arpad.svg",
+          "design": "Eight horizontal red and silver stripes — the Árpád stripes, still the dexter half of the country's arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
+          "sha256": "21c10274267c1bb4a604acbf70a7c24f77d40af0aaa2b17ff73aa077943dd65b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hu-bela",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Hungary (1196–1272)",
+          "from": 1196,
+          "to": 1272,
+          "priorPolity": "the medieval Kingdom of Hungary",
+          "commons": "Flag of Hungary (13th century).svg",
+          "file": "hu/hungary-bela.svg",
+          "design": "A red flag with a white patriarchal cross, the double cross introduced under Béla III as a symbol of royal power.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
+          "sha256": "9b236bd44f7cabbf1dbfeb77362dc57330601e3961d21c3d765252f7c671783a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hu-1848",
+          "category": "historical",
+          "name": "Flag of the Hungarian Revolution (1848–1849)",
+          "from": 1848,
+          "to": 1849,
+          "commons": "Flag of Hungary (1848).svg",
+          "file": "hu/hungary-1848.svg",
+          "design": "The tricolour flown by the revolutionaries of March 1848, from which the modern flag descends.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
+          "sha256": "78dfbc1c5f30da30fc745d7284df0bdca1d49805fc19a1125996a5a88114c6b4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hu-president",
+          "category": "standard",
+          "name": "Flag of the President of Hungary",
+          "from": 2012,
+          "to": 9999,
+          "commons": "Flag of the President of Hungary.svg",
+          "file": "hu/hungary-president.svg",
+          "design": "A square flag bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
+          "sha256": "96a2f2d4e67298f2e36fd538bf64b38a77773873dc7e3f05b72586b45da68887",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hu-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Hungary",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Naval Ensign of Hungary.svg",
+          "file": "hu/hungary-naval-ensign.svg",
+          "design": "The tricolour charged with the arms, flown on the Danube.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Hungarian_flags",
+          "sha256": "bb222f74f93ade041b6a82812920b05fdbb29fd3fd5ebbd25f2b9b48f97360bb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hu-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Hungary",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Coat of arms of Hungary.svg",
+          "file": "hu/hungary-arms.svg",
+          "design": "A shield party per pale — the Árpád stripes on the dexter, a silver double cross on a crown over three green hills on the sinister — beneath the Holy Crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary",
+          "meaning": {
+            "description": "The dexter half carries the Árpád stripes, four red and four silver, the silver traditionally read as four rivers — the Danube, the Tisza, the Drava and the Sava. The sinister half sets a silver double cross on a golden crown standing on the middle of three green hills, the trimount for the Tátra, Mátra and Fátra ranges; the double cross itself is a symbol of royal power, which appeared under Béla III (1172–1196). Above the shield sits the Holy Crown of Hungary, the crown of Saint Stephen, whose tilted cross is reproduced exactly as it stands on the real object.",
+            "sources": [
+              {
+                "title": "Coat of arms of Hungary — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary"
+              }
+            ]
+          },
+          "sha256": "3ad221bd4454571293ae4c89be561c217d6559dbaee428e1517e36fe44dd03f4",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -7704,6 +8013,50 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
           "sha256": "26de4bd1f7be5ff18147c011c364ea53005b9ecb0f02063ca6b174decc980184",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "pl-arms-flag",
+          "category": "civilstate",
+          "name": "Flag of Poland with the coat of arms",
+          "commons": "Flag of Poland (with coat of arms).svg",
+          "file": "pl/poland-arms-flag.svg",
+          "design": "The white-and-red bicolour charged with the crowned eagle — flown by Polish missions abroad, at airports and on ships.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
+          "sha256": "d039d7120dcff65809aba50d6e5352eedbb10b2b85a8d76f3cf5cd8e4aafcb31",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pl-navy",
+          "category": "military",
+          "name": "Flag of the Polish Navy",
+          "commons": "PL navy flag IIIRP.svg",
+          "file": "pl/poland-navy.svg",
+          "design": "The navy's own flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Polish_flags",
+          "sha256": "398b18f718e1a925110f53e154c05d4ef87ec2d05b6b4ed52149a5fa8ed01df4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pl-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Poland",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Herb Polski.svg",
+          "file": "pl/poland-arms.svg",
+          "design": "A white eagle with a golden beak, talons and crown, on a red shield.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland",
+          "meaning": {
+            "description": "The white crowned eagle on red is the oldest continuously used state emblem in Europe, borne by the Piast dynasty from the 13th century, and the crown is the point of it: the People's Republic used the same eagle with the crown removed from 1944, legalised in 1952, and restoring the crown in the Act of 22 February 1990 was how the reborn republic marked the end of communist rule. The current drawing is by Andrzej Heidrich and differs noticeably from Zygmunt Kamiński's pre-war eagle, which the communist version had also deformed about the head and eye.",
+            "sources": [
+              {
+                "title": "Coat of arms of Poland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland"
+              }
+            ]
+          },
+          "sha256": "1a914454039b089475084a2eef8a3ab919a809aa944c146e6173bdd086ae5bea",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -7963,6 +8316,109 @@
           "reuse": "flags/ro.svg",
           "design": "The national flag of Romania, in the form adopted in 1848.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Romania"
+        },
+        {
+          "id": "ro-president",
+          "category": "standard",
+          "name": "Flag of the President of Romania",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Flag of the President of Romania.svg",
+          "file": "ro/romania-president.svg",
+          "design": "A square flag bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
+          "sha256": "16eb9bf35ff8c0b37f18b04e8ec063b419f5ab4ce0d8350b1dd241ba2993ebdd",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ro-pm",
+          "category": "standard",
+          "name": "Flag of the Prime Minister of Romania",
+          "commons": "Flag of the Prime Minister of Romania.svg",
+          "file": "ro/romania-pm.svg",
+          "design": "A square flag distinguished for the head of government.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
+          "sha256": "2ce6f5599a22385320bbbee15cf63cf830f231eef3b364c6d6327ac034aae595",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ro-armed-forces",
+          "category": "military",
+          "name": "Battle flag of the Romanian Defence Staff",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Battle flag of the Romanian Defense Staff.svg",
+          "file": "ro/romania-armed-forces.svg",
+          "design": "The state coat of arms on the national tricolour.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
+          "sha256": "e8450a7f762bae9169a063504e73a64d83e6439df6d2b1a3159dd19d8359ccca",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ro-land-forces",
+          "category": "military",
+          "name": "Flag of the Romanian Land Forces",
+          "commons": "Flag of the Romanian Land Forces (Obverse).svg",
+          "file": "ro/romania-land-forces.svg",
+          "design": "A red field with the land forces' emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
+          "sha256": "46eeb528e5e252152da7cc5ed1d993bb3f3bc84d727c0e2a120e859180f5bebf",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ro-naval-forces",
+          "category": "military",
+          "name": "Flag of the Romanian Naval Forces",
+          "commons": "Flag of the Romanian Naval Forces (Obverse).svg",
+          "file": "ro/romania-naval-forces.svg",
+          "design": "A dark blue field with the naval forces' emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
+          "sha256": "6cd7f5bd9d5b5cf95e4a0502b748cf4fb9675495d66b948b3c43896c02d67495",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ro-air-force",
+          "category": "military",
+          "name": "Flag of the Romanian Air Force",
+          "commons": "Flag of the Romanian Air Force (obverse).svg",
+          "file": "ro/romania-air-force.svg",
+          "design": "A light blue field with the air force's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
+          "sha256": "6cc794c8fcb3c0ac9080ae7d8c501f0e807625a34a5b745fd310e1cc614894b9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ro-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Romania",
+          "commons": "Naval Jack of Romania (2019-).svg",
+          "file": "ro/romania-naval-jack.svg",
+          "design": "A light blue flag with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Romanian_flags",
+          "sha256": "0db59015b48102c1dfb5f963e3001f9af583bb2f15804f3cea6bb02b944c4a10",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ro-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Romania",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Coat of arms of Romania.svg",
+          "file": "ro/romania-arms.svg",
+          "design": "A golden aquila holding a cross, sword and sceptre, on a blue shield quartered with the arms of the historic Romanian lands.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania",
+          "meaning": {
+            "description": "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
+            "sources": [
+              {
+                "title": "Coat of arms of Romania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania"
+              }
+            ]
+          },
+          "sha256": "232bed9e5166fbc5dfc6b1c38e9550ffca2ab5dc29d5359008a2189d0533eea5",
+          "fetched": "2026-08-08"
         }
       ]
     },
