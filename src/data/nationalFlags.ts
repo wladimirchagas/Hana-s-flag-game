@@ -105,6 +105,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AE": [
     { id: "ae-official-national", category: "official", name: "Flag of United Arab Emirates", from: 1971, to: 9999, primary: true, path: "flags/ae.svg", design: "The national flag of United Arab Emirates, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates" },
     { id: "ae-current", category: "historical", name: "Flag of United Arab Emirates", from: 1971, to: 9999, primary: true, path: "flags/ae.svg", design: "The national flag of United Arab Emirates, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates" },
+    { id: "ae-armed-forces", category: "military", name: "Flag of the UAE Armed Forces", path: "national-flags/ae/uae-armed-forces.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Emirati_flags" },
+    { id: "ae-air-force", category: "military", name: "Flag of the UAE Air Force", path: "national-flags/ae/uae-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Emirati_flags" },
+    { id: "ae-civil-ensign", category: "maritime", name: "Civil Ensign of the United Arab Emirates", from: 1971, to: 9999, path: "national-flags/ae/uae-civil-ensign.svg", design: "A red field with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Emirati_flags" },
+    { id: "ae-president", category: "standard", name: "Flag of the President of the United Arab Emirates", from: 2008, to: 9999, path: "national-flags/ae/uae-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Emirati_flags" },
+    { id: "ae-emblem", category: "coatofarms", name: "Emblem of the United Arab Emirates", from: 2008, to: 9999, path: "national-flags/ae/uae-emblem.svg", design: "A golden falcon bearing a disc of the national flag with seven stars, holding a red parchment with the name of the federation.", source: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
   ],
   "AF": [
     { id: "af-official-national", category: "official", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
@@ -810,6 +815,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "KW": [
     { id: "kw-official-national", category: "official", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
     { id: "kw-current", category: "historical", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
+    { id: "kw-1940", category: "historical", name: "Flag of Kuwait (1940–1961)", from: 1940, to: 1961, sovereign: "the United Kingdom", path: "national-flags/kw/kuwait-1940.svg", design: "The red flag with the country's name in white, flown under the British protectorate until independence.", source: "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags" },
+    { id: "kw-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1844, to: 1914, sovereign: "the Ottoman Empire", path: "national-flags/kw/kuwait-ottoman.svg", design: "The red flag with a white crescent and star, under Ottoman suzerainty before the British protectorate.", source: "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags" },
+    { id: "kw-national-guard", category: "military", name: "Flag of the Kuwait National Guard", from: 1967, to: 9999, path: "national-flags/kw/kuwait-national-guard.svg", design: "The national guard's flag.", source: "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags" },
+    { id: "kw-emir", category: "standard", name: "Standard of the Emir of Kuwait", from: 1961, to: 9999, path: "national-flags/kw/kuwait-emir.svg", design: "The emir's standard.", source: "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags" },
+    { id: "kw-emblem", category: "coatofarms", name: "Emblem of Kuwait", from: 1962, to: 9999, path: "national-flags/kw/kuwait-emblem.svg", design: "A golden falcon with wings spread, bearing a shield in the colours of the flag and holding a dhow sailing before a rising sun.", source: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
   ],
   "KZ": [
     { id: "kz-official-national", category: "official", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
@@ -1048,6 +1058,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "OM": [
     { id: "om-official-national", category: "official", name: "Flag of Oman", from: 1995, to: 9999, primary: true, path: "flags/om.svg", design: "The national flag of Oman, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
     { id: "om-current", category: "historical", name: "Flag of Oman", from: 1995, to: 9999, primary: true, path: "flags/om.svg", design: "The national flag of Oman, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
+    { id: "om-muscat", category: "historical", name: "Flag of the Sultanate of Muscat and Oman", from: 1696, to: 1856, priorPolity: "the Sultanate of Muscat and Oman", path: "national-flags/om/oman-muscat.svg", design: "The plain red flag of the sultanate, before the white and green were added in the 20th century.", source: "https://en.wikipedia.org/wiki/List_of_Omani_flags" },
+    { id: "om-portugal", category: "historical", name: "Flag of the Kingdom of Portugal (1578–1640)", from: 1578, to: 1640, sovereign: "Portugal", path: "national-flags/om/oman-portugal.svg", design: "The Portuguese royal arms, flown over Muscat during the occupation of the Omani coast.", source: "https://en.wikipedia.org/wiki/List_of_Omani_flags" },
+    { id: "om-army", category: "military", name: "Flag of the Royal Army of Oman", from: 1907, to: 9999, path: "national-flags/om/oman-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Omani_flags" },
+    { id: "om-air-force", category: "military", name: "Air Force Ensign of Oman", from: 1959, to: 9999, path: "national-flags/om/oman-air-force.svg", design: "The air force's ensign.", source: "https://en.wikipedia.org/wiki/List_of_Omani_flags" },
+    { id: "om-navy", category: "maritime", name: "Naval Ensign of Oman", from: 1970, to: 9999, path: "national-flags/om/oman-naval-ensign.svg", design: "The ensign of the Royal Navy of Oman.", source: "https://en.wikipedia.org/wiki/List_of_Omani_flags" },
+    { id: "om-royal", category: "standard", name: "Royal Standard of Oman", from: 1749, to: 9999, path: "national-flags/om/oman-royal.svg", design: "A red field bearing the national emblem — the standard of the House of Al Said.", source: "https://en.wikipedia.org/wiki/List_of_Omani_flags" },
+    { id: "om-emblem", category: "coatofarms", name: "National emblem of Oman", from: 1750, to: 9999, path: "national-flags/om/oman-emblem.svg", design: "A khanjar in its sheath superimposed on two crossed swords.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
   ],
   "PA": [
     { id: "pa-official-national", category: "official", name: "Flag of Panama", from: 1925, to: 9999, primary: true, path: "flags/pa.svg", design: "The national flag of Panama, in the form adopted in 1925.", source: "https://en.wikipedia.org/wiki/Flag_of_Panama" },
@@ -1146,6 +1163,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "QA": [
     { id: "qa-official-national", category: "official", name: "Flag of Qatar", from: 1971, to: 9999, primary: true, path: "flags/qa.svg", design: "The national flag of Qatar, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
     { id: "qa-current", category: "historical", name: "Flag of Qatar", from: 1971, to: 9999, primary: true, path: "flags/qa.svg", design: "The national flag of Qatar, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
+    { id: "qa-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1871, to: 1913, sovereign: "the Ottoman Empire", path: "national-flags/qa/qatar-ottoman.svg", design: "The Ottoman flag, flown over Qatar until the empire renounced its claim.", source: "https://en.wikipedia.org/wiki/List_of_Qatari_flags" },
+    { id: "qa-air-force", category: "military", name: "Air Force Ensign of Qatar", from: 1974, to: 9999, path: "national-flags/qa/qatar-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Qatari_flags" },
+    { id: "qa-emblem", category: "coatofarms", name: "Emblem of Qatar", from: 2022, to: 9999, path: "national-flags/qa/qatar-emblem.svg", design: "Two crossed scimitars around a dhow sailing on waves beside an island with two palm trees.", source: "https://en.wikipedia.org/wiki/Emblem_of_Qatar" },
   ],
   "RO": [
     { id: "ro-official-national", category: "official", name: "Flag of Romania", from: 1848, to: 9999, primary: true, path: "flags/ro.svg", design: "The national flag of Romania, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Romania" },
@@ -1226,7 +1246,18 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "SG": [
     { id: "sg-official-national", category: "official", name: "Flag of Singapore", from: 1959, to: 9999, primary: true, path: "flags/sg.svg", design: "The national flag of Singapore, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
+    { id: "sg-malaysia", category: "historical", name: "Flag of Malaysia", from: 1963, to: 1965, sovereign: "Malaysia", path: "flags/my.svg", design: "The flag of Malaysia, flown over Singapore during the two years it was a Malaysian state before separation in 1965.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
     { id: "sg-current", category: "historical", name: "Flag of Singapore", from: 1959, to: 9999, primary: true, path: "flags/sg.svg", design: "The national flag of Singapore, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
+    { id: "sg-1952", category: "historical", name: "Flag of the Crown Colony of Singapore", from: 1952, to: 1959, sovereign: "the United Kingdom", path: "national-flags/sg/singapore-1952.svg", design: "The crown colony's blue ensign, flown until self-government in 1959.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-straits", category: "historical", name: "Flag of the Straits Settlements", from: 1925, to: 1942, sovereign: "the United Kingdom", path: "national-flags/sg/singapore-straits.svg", design: "The blue ensign of the Straits Settlements, of which Singapore was the seat of government.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-eic", category: "historical", name: "Flag of the British East India Company", from: 1819, to: 1868, sovereign: "the British East India Company", path: "national-flags/sg/singapore-eic.svg", design: "The company's striped ensign, flown from Raffles's founding of the settlement in 1819 until the Crown took it over.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-johor", category: "historical", name: "White flag of the Johor Sultanate", from: 1636, to: 1819, priorPolity: "the Johor Sultanate", path: "national-flags/sg/singapore-johor.svg", design: "The plain white banner of the Malay sultanate that held the island before the British settlement.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-army", category: "military", name: "Colour of the Singapore Army", from: 1965, to: 9999, path: "national-flags/sg/singapore-army.svg", design: "The army's colour.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-air-force", category: "military", name: "Colour of the Republic of Singapore Air Force", from: 1990, to: 9999, path: "national-flags/sg/singapore-air-force.svg", design: "The air force's colour.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-state-ensign", category: "maritime", name: "State marine ensign of Singapore", from: 1960, to: 9999, path: "national-flags/sg/singapore-state-ensign.svg", design: "The ensign flown by non-military government vessels.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-civil-ensign", category: "maritime", name: "Civil ensign of Singapore", from: 1966, to: 9999, path: "national-flags/sg/singapore-civil-ensign.svg", design: "The red ensign of the Singapore merchant fleet.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-president", category: "standard", name: "Presidential standard of Singapore", from: 1960, to: 9999, path: "national-flags/sg/singapore-president.svg", design: "A red field with a white crescent and five stars.", source: "https://en.wikipedia.org/wiki/List_of_Singaporean_flags" },
+    { id: "sg-arms", category: "coatofarms", name: "Coat of arms of Singapore", from: 1959, to: 9999, path: "national-flags/sg/singapore-arms.svg", design: "A red shield with a white crescent and five stars, supported by a lion and a tiger, over a banner reading Majulah Singapura.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
   ],
   "SI": [
     { id: "si-official-national", category: "official", name: "Flag of Slovenia", from: 1991, to: 9999, primary: true, path: "flags/si.svg", design: "The national flag of Slovenia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
@@ -1572,13 +1603,17 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "IS": { year: 1944, event: "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown", note: "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.", source: "https://en.wikipedia.org/wiki/History_of_Iceland" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
+  "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "MZ": { year: 1975, event: "Independence from Portugal, 25 June 1975", source: "https://en.wikipedia.org/wiki/Mozambican_War_of_Independence" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
+  "OM": { year: 1650, event: "Portuguese rule over the Omani coast ended when Sultan bin Saif expelled them from Muscat in 1650", note: "Oman was never a European colony in the later sense: the Portuguese held only the coastal forts from 1507, and the country has been independent since, ruled by the Al Said dynasty from 1744.", source: "https://en.wikipedia.org/wiki/History_of_Oman" },
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
+  "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
+  "SG": { year: 1965, event: "Separation from Malaysia and full independence, 9 August 1965", note: "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Singapore_in_Malaysia" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
   "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
@@ -1596,6 +1631,12 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
  * flag with no entry simply renders no disclosure rather than a guessed one.
  */
 export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
+  "ae-emblem": {
+    description: "The bird is the Hawk of Quraish, the pan-Arab device named for the tribe the Prophet Muhammad belonged to, which recurs across the emblems of the Arabian peninsula. What makes this one the UAE's is the counting: the disc on the falcon's breast shows the national flag with SEVEN stars, one for each emirate of the federation, and the falcon's tail carries seven feathers for the same seven. In its talons it holds a red parchment bearing the name of the federation. The earlier emblem, used until 2008, had a dhow on the falcon's breast instead — the maritime device Kuwait and Qatar still carry.",
+    sources: [
+      { title: "Emblem of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
+    ],
+  },
   "am-arms": {
     description: "At the centre of the shield stands Mount Ararat with Noah's Ark on its summit — by tradition the ark came to rest there after the flood, and Ararat is the national symbol, though it has lain outside Armenia's borders since 1921. Around it are the emblems of four historic Armenian dynasties: the Bagratuni, the Arsacid, the Artaxiad and the Rubenid of Cilicia. The two supporters carry those dynasties too: the eagle was the emblem of the Artaxiads and later the Arsacids, the lion of the Bagratunis and later the Rubenids, and both animals were chosen for power, courage, patience, wisdom and nobility. The arms date in this form from the First Republic of 1918, whose version drew the eagle and lion with their tongues out.",
     sources: [
@@ -1875,6 +1916,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "kw-emblem": {
+    description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
+    sources: [
+      { title: "Emblem of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
+    ],
+  },
   "kz-emblem": {
     description: "At the centre is the shanyrak, the dome-piece at the top of a yurt through which the smoke leaves and the light enters — in Kazakh usage the emblem of the family home, and here of the common home of all the country's peoples. Its uyks, the supports radiating from it, are drawn as sun rays. Flanking it are two tulpars, the winged horses of Turkic myth. The two colours carry their own meaning: the gold is the bright, clear future of the Kazakh people, and the sky blue is the aspiration to peace, accord, friendship and unity with all peoples. The emblem was adopted on 4 June 1992, chosen from 245 submitted designs; its authors were Jandarbek Melibekov and Shot-Aman Ualikhan.",
     sources: [
@@ -1935,6 +1982,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
     ],
   },
+  "om-emblem": {
+    description: "Nicknamed Khanjar Bo Sayfain — \"khanjar and two swords\" — the emblem is a curved Omani dagger in its sheath laid over two crossed swords. The Omani Ministry of Foreign Affairs explains it simply: these are the historic weapons of the people of Oman. It was adopted in the 18th century as the badge of the Al Said royal family and became the emblem of the state, so it is one of the very few national emblems that began as a dynasty's private device and stayed a weapon rather than becoming a shield.",
+    sources: [
+      { title: "National emblem of Oman — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Oman" },
+    ],
+  },
   "pe-arms": {
     description: "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
     sources: [
@@ -1959,6 +2012,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
     ],
   },
+  "qa-emblem": {
+    description: "The Amiri Diwan's own interpretation reads the emblem as the trinity of sand, sea and sky — the three elements Qatar's history is bound to. The dhow is the pearling fleet, the industry that drove the country's economic and social growth and largely made the state; the two palm trees and the island are the land; and the two crossed scimitars are Qatar's \"might as an Arab country\" and its standing as a safe haven for its people, a device it shares with Saudi Arabia, as it shares the palm. The present version, all in the maroon of the flag on white, was unveiled at the National Museum of Qatar on 15 September 2022, keeping every charge of the emblem it replaced.",
+    sources: [
+      { title: "Emblem of Qatar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Qatar" },
+    ],
+  },
   "ro-arms": {
     description: "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
     sources: [
@@ -1981,6 +2040,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The two crossed swords are the Kingdom of Hejaz and the Sultanate of Nejd and its dependencies, the two states Ibn Saud united in 1926 — so the emblem records the union the country is made of; they are also read as strength, stamina and sacrifice, and as justice. The date palm above them stands for growth, vitality and prosperity, and for the kingdom's own assets. The arrangement carries the reading that prosperity can be had only through justice: the palm rests on the swords, not the other way round.",
     sources: [
       { title: "Emblem of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
+    ],
+  },
+  "sg-arms": {
+    description: "The shield repeats the flag: red for the universal brotherhood and equality of man, white for pervading and everlasting purity and virtue, the crescent for a young nation on the ascendant and the five stars for the country's five ideals — democracy, peace, progress, justice and equality. The two supporters each carry a different history. The lion is Singapore's own name, Singapura, the lion city. The tiger is the Malayan tiger, which really did abound on the island in the 19th century when it was still dense jungle, and stands for the country's close historical ties to the Federation of Malaya, of which Singapore was briefly part. The banner reads Majulah Singapura — Onward Singapore — which is also the title of the national anthem. The arms were adopted in 1959, the year Singapore attained self-government.",
+    sources: [
+      { title: "Coat of arms of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
     ],
   },
   "sk-arms": {

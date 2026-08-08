@@ -86,6 +86,76 @@
           "reuse": "flags/ae.svg",
           "design": "The national flag of United Arab Emirates, in the form adopted in 1971.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates"
+        },
+        {
+          "id": "ae-president",
+          "category": "standard",
+          "name": "Flag of the President of the United Arab Emirates",
+          "from": 2008,
+          "to": 9999,
+          "commons": "Flag of the President of the United Arab Emirates.svg",
+          "file": "ae/uae-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Emirati_flags",
+          "sha256": "d4205219df72e6fc4bd2633ad902a038f54f0082835266fe256b8e9dbb4a3f83",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ae-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of the United Arab Emirates",
+          "from": 1971,
+          "to": 9999,
+          "commons": "Civil Ensign of the United Arab Emirates.svg",
+          "file": "ae/uae-civil-ensign.svg",
+          "design": "A red field with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Emirati_flags",
+          "sha256": "0148bb8b8cc4efd43f44cccb01dadd754bf319b1eb3bba3eedb5846d211eb1c8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ae-armed-forces",
+          "category": "military",
+          "name": "Flag of the UAE Armed Forces",
+          "commons": "Flag of the UAE Armed Forces.svg",
+          "file": "ae/uae-armed-forces.svg",
+          "design": "The armed forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Emirati_flags",
+          "sha256": "07d65b561ee7490e046e4664b59f40a09af8e8fbe615137861332e0f091f5f5f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ae-air-force",
+          "category": "military",
+          "name": "Flag of the UAE Air Force",
+          "commons": "Flag of the United Arab Emirates Air Force.svg",
+          "file": "ae/uae-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Emirati_flags",
+          "sha256": "a0ab4177020255a8243939cc136bbdd073144d1f4edb17a246252a53e5354c8e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ae-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of the United Arab Emirates",
+          "from": 2008,
+          "to": 9999,
+          "commons": "Emblem of the United Arab Emirates.svg",
+          "file": "ae/uae-emblem.svg",
+          "design": "A golden falcon bearing a disc of the national flag with seven stars, holding a red parchment with the name of the federation.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates",
+          "meaning": {
+            "description": "The bird is the Hawk of Quraish, the pan-Arab device named for the tribe the Prophet Muhammad belonged to, which recurs across the emblems of the Arabian peninsula. What makes this one the UAE's is the counting: the disc on the falcon's breast shows the national flag with SEVEN stars, one for each emirate of the federation, and the falcon's tail carries seven feathers for the same seven. In its talons it holds a red parchment bearing the name of the federation. The earlier emblem, used until 2008, had a dhow on the falcon's breast instead — the maritime device Kuwait and Qatar still carry.",
+            "sources": [
+              {
+                "title": "Emblem of the United Arab Emirates — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates"
+              }
+            ]
+          },
+          "sha256": "143c91eca0d79c9c7363e908ec2b35f68a56437850a9335734db1f9624279bd9",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -7080,8 +7150,89 @@
           "reuse": "flags/kw.svg",
           "design": "The national flag of Kuwait, in the form adopted in 1961.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kuwait"
+        },
+        {
+          "id": "kw-1940",
+          "category": "historical",
+          "name": "Flag of Kuwait (1940–1961)",
+          "from": 1940,
+          "to": 1961,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Kuwait (1940-1961).svg",
+          "file": "kw/kuwait-1940.svg",
+          "design": "The red flag with the country's name in white, flown under the British protectorate until independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags",
+          "sha256": "d569b29d3e4524b91487344cf104c5dfd6bd641a180f40ebdc34f1e9f056793b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kw-ottoman",
+          "category": "historical",
+          "name": "Flag of the Ottoman Empire",
+          "from": 1844,
+          "to": 1914,
+          "sovereign": "the Ottoman Empire",
+          "commons": "Flag of the Ottoman Empire (1844–1922).svg",
+          "file": "kw/kuwait-ottoman.svg",
+          "design": "The red flag with a white crescent and star, under Ottoman suzerainty before the British protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags",
+          "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kw-emir",
+          "category": "standard",
+          "name": "Standard of the Emir of Kuwait",
+          "from": 1961,
+          "to": 9999,
+          "commons": "Standard of the Emir of Kuwait.svg",
+          "file": "kw/kuwait-emir.svg",
+          "design": "The emir's standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags",
+          "sha256": "8a82ef5f698f649b6fb915f32a85775dab471ba67f1fee0c2d49c75b42bbb391",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kw-national-guard",
+          "category": "military",
+          "name": "Flag of the Kuwait National Guard",
+          "from": 1967,
+          "to": 9999,
+          "commons": "Flag of Kuwait National Guard.svg",
+          "file": "kw/kuwait-national-guard.svg",
+          "design": "The national guard's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags",
+          "sha256": "88f66f17765da2fa680247d372ebe84e015af6c51354b254a0bdcb3947418857",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kw-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Kuwait",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Emblem of Kuwait.svg",
+          "file": "kw/kuwait-emblem.svg",
+          "design": "A golden falcon with wings spread, bearing a shield in the colours of the flag and holding a dhow sailing before a rising sun.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Kuwait",
+          "meaning": {
+            "description": "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
+            "sources": [
+              {
+                "title": "Emblem of Kuwait — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Kuwait"
+              }
+            ]
+          },
+          "sha256": "c63abbd4a1867e9bcb5dbde593eed8e2c53fb69250a2c94e83735b17299f0cbe",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1961,
+        "event": "Independence from the United Kingdom, 19 June 1961",
+        "source": "https://en.wikipedia.org/wiki/History_of_Kuwait"
+      }
     },
     "KZ": {
       "flags": [
@@ -9148,8 +9299,116 @@
           "reuse": "flags/om.svg",
           "design": "The national flag of Oman, in the form adopted in 1995.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Oman"
+        },
+        {
+          "id": "om-muscat",
+          "category": "historical",
+          "name": "Flag of the Sultanate of Muscat and Oman",
+          "from": 1696,
+          "to": 1856,
+          "priorPolity": "the Sultanate of Muscat and Oman",
+          "commons": "Flag of Muscat.svg",
+          "file": "om/oman-muscat.svg",
+          "design": "The plain red flag of the sultanate, before the white and green were added in the 20th century.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
+          "sha256": "f3f058d638d5867d8de528452d99a68f8e8b6fdc7900966758c3633880b4cd3c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "om-portugal",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Portugal (1578–1640)",
+          "from": 1578,
+          "to": 1640,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal (1578).svg",
+          "file": "om/oman-portugal.svg",
+          "design": "The Portuguese royal arms, flown over Muscat during the occupation of the Omani coast.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
+          "sha256": "31f969be4e37ebf075f0dd2922358e63e8b3057769bd1d45fabe49e4cb4df949",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "om-royal",
+          "category": "standard",
+          "name": "Royal Standard of Oman",
+          "from": 1749,
+          "to": 9999,
+          "commons": "Royal Standard of Oman.svg",
+          "file": "om/oman-royal.svg",
+          "design": "A red field bearing the national emblem — the standard of the House of Al Said.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
+          "sha256": "9e6e3e18eac6ba89ceabb4d92292c89d59b07149a5080879406d825031ab7872",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "om-navy",
+          "category": "maritime",
+          "name": "Naval Ensign of Oman",
+          "from": 1970,
+          "to": 9999,
+          "commons": "Naval Ensign of Oman.svg",
+          "file": "om/oman-naval-ensign.svg",
+          "design": "The ensign of the Royal Navy of Oman.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
+          "sha256": "d6d3f70ce66057088dcf0fecbf7856e8f6012f3f38edf433060f3f5e0258f521",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "om-army",
+          "category": "military",
+          "name": "Flag of the Royal Army of Oman",
+          "from": 1907,
+          "to": 9999,
+          "commons": "Royal Army of Oman Flag.svg",
+          "file": "om/oman-army.svg",
+          "design": "The army's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
+          "sha256": "6384779410c36b857bfad13235e1aa3001d4d4f172cd47cc8f1fa1ed013ac725",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "om-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Oman",
+          "from": 1959,
+          "to": 9999,
+          "commons": "Air Force Ensign of Oman.svg",
+          "file": "om/oman-air-force.svg",
+          "design": "The air force's ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Omani_flags",
+          "sha256": "eb528dbf8c77c8df0d814118e5deebcd5d64a0660dec2b49436746a4c311fb48",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "om-emblem",
+          "category": "coatofarms",
+          "name": "National emblem of Oman",
+          "from": 1750,
+          "to": 9999,
+          "commons": "National emblem of Oman.svg",
+          "file": "om/oman-emblem.svg",
+          "design": "A khanjar in its sheath superimposed on two crossed swords.",
+          "source": "https://en.wikipedia.org/wiki/National_emblem_of_Oman",
+          "meaning": {
+            "description": "Nicknamed Khanjar Bo Sayfain — \"khanjar and two swords\" — the emblem is a curved Omani dagger in its sheath laid over two crossed swords. The Omani Ministry of Foreign Affairs explains it simply: these are the historic weapons of the people of Oman. It was adopted in the 18th century as the badge of the Al Said royal family and became the emblem of the state, so it is one of the very few national emblems that began as a dynasty's private device and stayed a weapon rather than becoming a shield.",
+            "sources": [
+              {
+                "title": "National emblem of Oman — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Oman"
+              }
+            ]
+          },
+          "sha256": "14e1cd082bbfd8c5de329d0489a338775dd64d5cb1da9ff893b528c82aa740bf",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1650,
+        "event": "Portuguese rule over the Omani coast ended when Sultan bin Saif expelled them from Muscat in 1650",
+        "note": "Oman was never a European colony in the later sense: the Portuguese held only the coastal forts from 1507, and the country has been independent since, ruled by the Al Said dynasty from 1744.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Oman"
+      }
     },
     "PA": {
       "flags": [
@@ -10117,8 +10376,62 @@
           "reuse": "flags/qa.svg",
           "design": "The national flag of Qatar, in the form adopted in 1971.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Qatar"
+        },
+        {
+          "id": "qa-ottoman",
+          "category": "historical",
+          "name": "Flag of the Ottoman Empire",
+          "from": 1871,
+          "to": 1913,
+          "sovereign": "the Ottoman Empire",
+          "commons": "Flag of the Ottoman Empire (1844–1922).svg",
+          "file": "qa/qatar-ottoman.svg",
+          "design": "The Ottoman flag, flown over Qatar until the empire renounced its claim.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Qatari_flags",
+          "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "qa-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Qatar",
+          "commons": "Air Force Ensign of Qatar.svg",
+          "file": "qa/qatar-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Qatari_flags",
+          "from": 1974,
+          "to": 9999,
+          "sha256": "940e96d6ac90b67f44570053b1ab3a38395bdb20ff70a3def8d30d7cde4e8b95",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "qa-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Qatar",
+          "from": 2022,
+          "to": 9999,
+          "commons": "Emblem of Qatar-2022.svg",
+          "file": "qa/qatar-emblem.svg",
+          "design": "Two crossed scimitars around a dhow sailing on waves beside an island with two palm trees.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Qatar",
+          "meaning": {
+            "description": "The Amiri Diwan's own interpretation reads the emblem as the trinity of sand, sea and sky — the three elements Qatar's history is bound to. The dhow is the pearling fleet, the industry that drove the country's economic and social growth and largely made the state; the two palm trees and the island are the land; and the two crossed scimitars are Qatar's \"might as an Arab country\" and its standing as a safe haven for its people, a device it shares with Saudi Arabia, as it shares the palm. The present version, all in the maroon of the flag on white, was unveiled at the National Museum of Qatar on 15 September 2022, keeping every charge of the emblem it replaced.",
+            "sources": [
+              {
+                "title": "Emblem of Qatar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Qatar"
+              }
+            ]
+          },
+          "sha256": "8fad4be30ea7c15d8257e5c8a686001b2e78c63ce40a90133aa143be0a60e958",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1971,
+        "event": "Independence from the United Kingdom, 3 September 1971",
+        "source": "https://en.wikipedia.org/wiki/History_of_Qatar"
+      }
     },
     "RO": {
       "flags": [
@@ -10906,8 +11219,168 @@
           "reuse": "flags/sg.svg",
           "design": "The national flag of Singapore, in the form adopted in 1959.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Singapore"
+        },
+        {
+          "id": "sg-malaysia",
+          "category": "historical",
+          "name": "Flag of Malaysia",
+          "from": 1963,
+          "to": 1965,
+          "sovereign": "Malaysia",
+          "reuse": "flags/my.svg",
+          "design": "The flag of Malaysia, flown over Singapore during the two years it was a Malaysian state before separation in 1965.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags"
+        },
+        {
+          "id": "sg-1952",
+          "category": "historical",
+          "name": "Flag of the Crown Colony of Singapore",
+          "from": 1952,
+          "to": 1959,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Singapore (1952–1959).svg",
+          "file": "sg/singapore-1952.svg",
+          "design": "The crown colony's blue ensign, flown until self-government in 1959.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "e90ec8d2e4fcf7a6a4064c34a11a4d96ff3985b4094f577db760a54ca476c9c0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-straits",
+          "category": "historical",
+          "name": "Flag of the Straits Settlements",
+          "from": 1925,
+          "to": 1942,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the British Straits Settlements (1925–1946).svg",
+          "file": "sg/singapore-straits.svg",
+          "design": "The blue ensign of the Straits Settlements, of which Singapore was the seat of government.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "25865ea6de291845b94c85382fe7b338fb8f161daa79a696e55574423e59092f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-eic",
+          "category": "historical",
+          "name": "Flag of the British East India Company",
+          "from": 1819,
+          "to": 1868,
+          "sovereign": "the British East India Company",
+          "commons": "Flag of the British East India Company (1801).svg",
+          "file": "sg/singapore-eic.svg",
+          "design": "The company's striped ensign, flown from Raffles's founding of the settlement in 1819 until the Crown took it over.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "54b0596d4ea2979b2a45c5c74e0f9e5f35cd3aa2c050b13cb24fcda50d1efdea",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-johor",
+          "category": "historical",
+          "name": "White flag of the Johor Sultanate",
+          "from": 1636,
+          "to": 1819,
+          "priorPolity": "the Johor Sultanate",
+          "commons": "White Flag of the Malay Sultanates.svg",
+          "file": "sg/singapore-johor.svg",
+          "design": "The plain white banner of the Malay sultanate that held the island before the British settlement.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "fac5018d866cf01716ad0245ef1e68f575b517514a9ca759f2a91db59f6a0e10",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-president",
+          "category": "standard",
+          "name": "Presidential standard of Singapore",
+          "from": 1960,
+          "to": 9999,
+          "commons": "Flag of the President of Singapore.svg",
+          "file": "sg/singapore-president.svg",
+          "design": "A red field with a white crescent and five stars.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "d4c31fa37cc8a1838edc2b4c7c67a49a083f98717fb9a46a12f0c83dcf6c0719",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-state-ensign",
+          "category": "maritime",
+          "name": "State marine ensign of Singapore",
+          "from": 1960,
+          "to": 9999,
+          "commons": "State Marine Ensign of Singapore.svg",
+          "file": "sg/singapore-state-ensign.svg",
+          "design": "The ensign flown by non-military government vessels.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "bd80ffc04d412103a95ce4c33b0f7ae12d82049d7441a2573bfa8a5fe246f7a8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-civil-ensign",
+          "category": "maritime",
+          "name": "Civil ensign of Singapore",
+          "from": 1966,
+          "to": 9999,
+          "commons": "Civil ensign of Singapore.svg",
+          "file": "sg/singapore-civil-ensign.svg",
+          "design": "The red ensign of the Singapore merchant fleet.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "8bec559c16c93726c07d7abfbfaf0d32f0e4101149c05c7de66ec74d3d3786cc",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-army",
+          "category": "military",
+          "name": "Colour of the Singapore Army",
+          "from": 1965,
+          "to": 9999,
+          "commons": "Singapore Army colour.svg",
+          "file": "sg/singapore-army.svg",
+          "design": "The army's colour.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "d7342be8ebcbd06acacbd66fa273303041c5b658eeb41c5dd98b99a117d69cf6",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-air-force",
+          "category": "military",
+          "name": "Colour of the Republic of Singapore Air Force",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Singapore Air Force colour.svg",
+          "file": "sg/singapore-air-force.svg",
+          "design": "The air force's colour.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Singaporean_flags",
+          "sha256": "77c582516110c23d5115f9b090d55b9b9055cfa11a0f0116a89729e323262d35",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sg-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Singapore",
+          "from": 1959,
+          "to": 9999,
+          "commons": "Coat of arms of Singapore.svg",
+          "file": "sg/singapore-arms.svg",
+          "design": "A red shield with a white crescent and five stars, supported by a lion and a tiger, over a banner reading Majulah Singapura.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore",
+          "meaning": {
+            "description": "The shield repeats the flag: red for the universal brotherhood and equality of man, white for pervading and everlasting purity and virtue, the crescent for a young nation on the ascendant and the five stars for the country's five ideals — democracy, peace, progress, justice and equality. The two supporters each carry a different history. The lion is Singapore's own name, Singapura, the lion city. The tiger is the Malayan tiger, which really did abound on the island in the 19th century when it was still dense jungle, and stands for the country's close historical ties to the Federation of Malaya, of which Singapore was briefly part. The banner reads Majulah Singapura — Onward Singapore — which is also the title of the national anthem. The arms were adopted in 1959, the year Singapore attained self-government.",
+            "sources": [
+              {
+                "title": "Coat of arms of Singapore — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore"
+              }
+            ]
+          },
+          "sha256": "8e59c30d826dc2f8a25daeb211ac3f46686849fc1b8858a1521bf0cb10532682",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1965,
+        "event": "Separation from Malaysia and full independence, 9 August 1965",
+        "note": "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.",
+        "source": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
+      }
     },
     "SI": {
       "flags": [
