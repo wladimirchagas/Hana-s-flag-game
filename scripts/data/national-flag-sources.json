@@ -182,8 +182,91 @@
           "reuse": "flags/am.svg",
           "design": "The national flag of Armenia, in the form adopted in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Armenia"
+        },
+        {
+          "id": "am-ssr",
+          "category": "historical",
+          "name": "Flag of the Armenian SSR",
+          "from": 1952,
+          "to": 1990,
+          "commons": "Flag of the Armenian Soviet Socialist Republic (1952–1990).svg",
+          "file": "am/armenia-ssr.svg",
+          "design": "The red flag with a blue band, hammer and sickle — the republic's flag within the Soviet Union.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
+          "sha256": "c6311c743571bafb8c80254a6b183ad579addc942f0b003409adce5742baded1",
+          "fetched": "2026-08-08",
+          "priorPolity": "the Armenian Soviet Socialist Republic"
+        },
+        {
+          "id": "am-transcaucasian",
+          "category": "historical",
+          "name": "Flag of the Transcaucasian Federation",
+          "from": 1918,
+          "to": 1918,
+          "priorPolity": "the Transcaucasian Democratic Federative Republic",
+          "commons": "Flag of the Transcaucasian Federation.svg",
+          "file": "am/armenia-transcaucasian.svg",
+          "design": "The flag of the five-week federation of Armenia, Azerbaijan and Georgia in April–May 1918.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
+          "sha256": "f9264e518b001613760a983e0097ad28c52fa90b1cb6f7426425453cf7101f75",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "am-cilicia",
+          "category": "historical",
+          "name": "Flag of the Armenian Kingdom of Cilicia",
+          "from": 1226,
+          "to": 1341,
+          "priorPolity": "the Armenian Kingdom of Cilicia",
+          "commons": "FlagKilikia.png",
+          "file": "am/armenia-cilicia.png",
+          "design": "The flag of the Armenian kingdom on the Mediterranean coast, a separate state from the Armenian highland.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
+          "sha256": "bc6ff1f45eb21df5de8a1f235067cccf4721b8dd2eb482cb23ea934f1af502f5",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "am-president",
+          "category": "standard",
+          "name": "Flag of the President of Armenia",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Flag of the President of Armenia.svg",
+          "file": "am/armenia-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Armenian_flags",
+          "sha256": "b02fe16e2ee706cbbcc79e7a1352a8c200c0dfb04f970cc74fbfcab356bb0602",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "am-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Armenia",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Coat of arms of Armenia.svg",
+          "file": "am/armenia-arms.svg",
+          "design": "A shield of Mount Ararat with Noah's Ark quartered with four dynastic emblems, supported by an eagle and a lion, over a sword, branch, sheaf, chain and ribbon.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia",
+          "meaning": {
+            "description": "At the centre of the shield stands Mount Ararat with Noah's Ark on its summit — by tradition the ark came to rest there after the flood, and Ararat is the national symbol, though it has lain outside Armenia's borders since 1921. Around it are the emblems of four historic Armenian dynasties: the Bagratuni, the Arsacid, the Artaxiad and the Rubenid of Cilicia. The two supporters carry those dynasties too: the eagle was the emblem of the Artaxiads and later the Arsacids, the lion of the Bagratunis and later the Rubenids, and both animals were chosen for power, courage, patience, wisdom and nobility. The arms date in this form from the First Republic of 1918, whose version drew the eagle and lion with their tongues out.",
+            "sources": [
+              {
+                "title": "Coat of arms of Armenia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia"
+              }
+            ]
+          },
+          "sha256": "27cd75ec1e4105a87ab39fa7cde839d1d858a77adf6f40b7b1c7e3d1f42bf646",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1918,
+        "event": "The First Republic of Armenia declared independence on 28 May 1918",
+        "note": "It was absorbed into the Soviet Union in 1920–1922; independence was restored on 21 September 1991.",
+        "source": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia"
+      }
     },
     "AO": {
       "flags": [
@@ -1920,8 +2003,127 @@
           "reuse": "flags/by.svg",
           "design": "The national flag of Belarus, in the form adopted in 1995.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belarus"
+        },
+        {
+          "id": "by-1995",
+          "category": "historical",
+          "name": "Flag of Belarus (1995–2012)",
+          "from": 1995,
+          "to": 2012,
+          "commons": "Flag of Belarus (1995–2012).svg",
+          "file": "by/belarus-1995.svg",
+          "design": "The flag readopted by the 1995 referendum, before the 2012 revision of the ornament.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
+          "sha256": "33062a93e2a04de52a496ded44fdec1fa5d2ab06bbdd53b3d934084144f76c2d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "by-1991",
+          "category": "historical",
+          "name": "White-red-white flag of Belarus",
+          "from": 1991,
+          "to": 1995,
+          "commons": "Flag of Belarus (1918, 1991–1995).svg",
+          "file": "by/belarus-1991.svg",
+          "design": "The white-red-white flag of the 1918 Belarusian Democratic Republic, restored at independence in 1991 and replaced by referendum in 1995.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
+          "sha256": "ab40283d6c504ed74f9b64808135beb70e8fa6097f7ea7a670547e0db7ef7e7a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "by-ssr",
+          "category": "historical",
+          "name": "Flag of the Byelorussian SSR",
+          "from": 1951,
+          "to": 1991,
+          "commons": "Flag of the Byelorussian Soviet Socialist Republic (1951–1991).svg",
+          "file": "by/belarus-ssr.svg",
+          "design": "The red-and-green flag with a woven ornament along the hoist — the republic's flag within the Soviet Union, and the direct ancestor of the present design.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
+          "sha256": "14eb7024ce018e148148dee1de38b3a9ff1ac3d450ce7bbbf0b2bd120165bd44",
+          "fetched": "2026-08-08",
+          "priorPolity": "the Byelorussian Soviet Socialist Republic"
+        },
+        {
+          "id": "by-president",
+          "category": "standard",
+          "name": "Flag of the President of Belarus",
+          "from": 2012,
+          "to": 9999,
+          "commons": "Flag of the President of Belarus.svg",
+          "file": "by/belarus-president.svg",
+          "design": "The presidential flag bearing the national emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
+          "sha256": "92be6414910a9fabaf6eac0b21d1dfc24d65d2b88676ad87a1609aee24d82963",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "by-armed-forces",
+          "category": "military",
+          "name": "Flag of the Armed Forces of Belarus",
+          "from": 2012,
+          "to": 9999,
+          "commons": "Flag of the Armed Forces of Belarus.svg",
+          "file": "by/belarus-armed-forces.svg",
+          "design": "The armed forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
+          "sha256": "48a5177490aaa5f15ee0649d12711e89ffd0d14297150b51ab3e0ade39092394",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "by-land-forces",
+          "category": "military",
+          "name": "Flag of the Belarusian Land Forces",
+          "from": 2005,
+          "to": 9999,
+          "commons": "Flag of the Belarusian Land Forces.svg",
+          "file": "by/belarus-land-forces.svg",
+          "design": "The land forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
+          "sha256": "ad6398334b69514c4f9eb54dfc7a68508181ee3ecdc727722bdcf12d861b2e34",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "by-air-force",
+          "category": "military",
+          "name": "Flag of the Belarusian Air Force",
+          "from": 2005,
+          "to": 9999,
+          "commons": "Flag of the Belarusian Air Force.svg",
+          "file": "by/belarus-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belarusian_flags",
+          "sha256": "977b1631bd81d6a9aab0727dbc80cd17f8c76a2f623642752716ef836a5b5a2b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "by-emblem",
+          "category": "coatofarms",
+          "name": "National emblem of Belarus",
+          "from": 1995,
+          "to": 9999,
+          "commons": "Emblem of Belarus.svg",
+          "file": "by/belarus-emblem.svg",
+          "design": "A silhouette of the country over a globe and rising sun, within wheat ears bound by a ribbon in the national colours, beneath a red star.",
+          "source": "https://en.wikipedia.org/wiki/National_emblem_of_Belarus",
+          "meaning": {
+            "description": "This is deliberately an EMBLEM rather than a coat of arms — it does not follow heraldic rules — and it alludes directly to the arms of the Byelorussian SSR, which is the point of it: readopted by referendum in 1995, it restored the Soviet-era design after four years of the Pahonia. It carries a silhouette of Belarus over a globe and a rising sun, framed by ears of wheat bound with a ribbon in the colours of the national flag, and topped by a red star. Between 1991 and 1995 the country instead used the Pahonia — the mounted knight of the Grand Duchy of Lithuania — which remains the emblem of the Belarusian opposition.",
+            "sources": [
+              {
+                "title": "National emblem of Belarus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Belarus"
+              }
+            ]
+          },
+          "sha256": "fbeb62253328ceee7cd5cc6e6a128119038257e25d028cd62f1c80cec5b55a0f",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Independence from the Soviet Union declared 25 August 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Belarus"
+      }
     },
     "BZ": {
       "flags": [
@@ -7552,6 +7754,39 @@
           "reuse": "flags/md.svg",
           "design": "The national flag of Moldova, in the form adopted in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Moldova"
+        },
+        {
+          "id": "md-president",
+          "category": "standard",
+          "name": "Flag of the President of Moldova",
+          "commons": "Flag of the President of Moldova.svg",
+          "file": "md/moldova-president.svg",
+          "design": "The presidential standard bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Moldovan_flags",
+          "sha256": "2adb0e064328ae13f3300c12ce9e01119c024c7232109c7ec571579af6c945ae",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "md-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Moldova",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Coat of arms of Moldova.svg",
+          "file": "md/moldova-arms.svg",
+          "design": "An aurochs head with a star between its horns, a rose and a crescent, on a shield held by an eagle with a cross in its beak.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova",
+          "meaning": {
+            "description": "Designed by Gheorghe Vrabie, the arms are two inheritances joined. The aurochs head with an eight-pointed star between its horns, a heraldic rose to one side and a waning crescent to the other, is taken directly from the arms of the medieval Principality of Moldavia — the aurochs being the beast of that principality's foundation legend. The supporter behind it, an eagle holding a cross in its beak, an olive branch in one talon and a sceptre in the other, comes from the interwar coat of arms of the Kingdom of Romania, most of Moldova's territory having been part of Romania between the wars. The blazon is fixed in law (Law No. 32 of 7 March 2013).",
+            "sources": [
+              {
+                "title": "Coat of arms of Moldova — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova"
+              }
+            ]
+          },
+          "sha256": "b56383ba85a8d8a614c4c424b93d9423af4812dd29136fbcdd15223684560a26",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -12744,6 +12979,123 @@
           "reuse": "flags/uz.svg",
           "design": "The national flag of Uzbekistan, in the form adopted in 1991.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan"
+        },
+        {
+          "id": "uz-bukhara",
+          "category": "historical",
+          "name": "Flag of the Emirate of Bukhara",
+          "from": 1785,
+          "to": 1870,
+          "priorPolity": "the Emirate of Bukhara",
+          "commons": "Flag of Emirate of Bukhara-Buxoro Amirligi Bayrog'i.svg",
+          "file": "uz/uzbekistan-bukhara.svg",
+          "design": "The flag of the emirate that ruled from Bukhara before the Russian protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
+          "sha256": "8e221b947b6b059ad2cb29ff7ba3fa18b76268a8a93b1726a3df2b4f10ef7c53",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uz-khiva",
+          "category": "historical",
+          "name": "Flag of the Khanate of Khiva",
+          "from": 1917,
+          "to": 1920,
+          "priorPolity": "the Khanate of Khiva",
+          "commons": "Flag of the Khanate of Khiva.svg",
+          "file": "uz/uzbekistan-khiva.svg",
+          "design": "The flag of the Qungrat dynasty's khanate, ended by the Soviet advance in 1920.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
+          "sha256": "2e78a8525c0806e2f8cee0b45726d18afc3944e06e6fdec6df755626d20c8802",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uz-timur",
+          "category": "historical",
+          "name": "Banner of Timur",
+          "from": 1370,
+          "to": 1507,
+          "priorPolity": "the Timurid Empire",
+          "commons": "Banner of Timur Khan.svg",
+          "file": "uz/uzbekistan-timur.svg",
+          "design": "The banner attributed to Tamerlane, whose empire was ruled from Samarkand.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
+          "sha256": "76eef232dc90da6549280bfb8c539bd5d487ca6295a76460378f044d46155fe8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uz-turkestan",
+          "category": "historical",
+          "name": "Flag of the Turkestan Autonomy",
+          "from": 1917,
+          "to": 1918,
+          "priorPolity": "the Turkestan (Kokand) Autonomy",
+          "commons": "Flag of the Turkestan (Kokand) Autonomy.svg",
+          "file": "uz/uzbekistan-turkestan.svg",
+          "design": "The flag of the short-lived Muslim autonomous government at Kokand, crushed in 1918.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
+          "sha256": "3b62c38f06eb9dd587c158bb3b877241b9f77f69f43328a8b23eae7e09070cd0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uz-president",
+          "category": "standard",
+          "name": "Presidential Standard of Uzbekistan",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Flag of the President of Uzbekistan.svg",
+          "file": "uz/uzbekistan-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
+          "sha256": "e46d5740602020442d861441b65d71f1cde7ed391a5662ad49a7e3da7e832eae",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uz-army",
+          "category": "military",
+          "name": "Flag of the Uzbek Ground Forces",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Uzbekistan Armed Forces (Latin script).svg",
+          "file": "uz/uzbekistan-army.svg",
+          "design": "The ground forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
+          "sha256": "520065942496da35a3e42ba4ded3754f6e095da8b4af7ac7cda048e4966969fb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uz-air-force",
+          "category": "military",
+          "name": "Flag of the Uzbek Air and Air Defence Forces",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Flag of the Uzbekistan Air and Air Defence Forces.svg",
+          "file": "uz/uzbekistan-air-force.svg",
+          "design": "The air and air defence forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uzbek_flags",
+          "sha256": "c830ea5ee8bd06ae200ea17be825b1e9d5633fb70652f9c2ee2e75d6be8dc600",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uz-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Uzbekistan",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Emblem of Uzbekistan.svg",
+          "file": "uz/uzbekistan-emblem.svg",
+          "design": "A Huma bird with outstretched wings over a sunrise, mountains and two rivers, within cotton and wheat.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan",
+          "meaning": {
+            "description": "The emblem is the country's natural wealth arranged around one legendary bird. On the left is a cotton plant — the crop that has dominated Uzbek industry and agriculture since the Soviet era, when the Uzbek SSR was one of the USSR's main suppliers — and on the right ears of wheat. At the centre the Huma, a legendary bird of Persian and Turkic myth, spreads its wings for peace, happiness and the striving for freedom. Enclosed by those wings are a rising sun over mountains and green pastures, and the two rivers that make the country's agriculture possible: the Amu Darya and the Syr Darya. Before the Soviet period the khanates and emirates here — Bukhara, Khiva — had no coat of arms in the Western sense at all.",
+            "sources": [
+              {
+                "title": "Emblem of Uzbekistan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan"
+              }
+            ]
+          },
+          "sha256": "e0998260687fd356752d28793a91495ad107de1cf3cbad4bf99c60f79f4071a9",
+          "fetched": "2026-08-08"
         }
       ]
     },

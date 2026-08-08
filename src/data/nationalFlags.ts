@@ -121,6 +121,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AM": [
     { id: "am-official-national", category: "official", name: "Flag of Armenia", from: 1990, to: 9999, primary: true, path: "flags/am.svg", design: "The national flag of Armenia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
     { id: "am-current", category: "historical", name: "Flag of Armenia", from: 1990, to: 9999, primary: true, path: "flags/am.svg", design: "The national flag of Armenia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
+    { id: "am-ssr", category: "historical", name: "Flag of the Armenian SSR", from: 1952, to: 1990, priorPolity: "the Armenian Soviet Socialist Republic", path: "national-flags/am/armenia-ssr.svg", design: "The red flag with a blue band, hammer and sickle — the republic's flag within the Soviet Union.", source: "https://en.wikipedia.org/wiki/List_of_Armenian_flags" },
+    { id: "am-transcaucasian", category: "historical", name: "Flag of the Transcaucasian Federation", from: 1918, to: 1918, priorPolity: "the Transcaucasian Democratic Federative Republic", path: "national-flags/am/armenia-transcaucasian.svg", design: "The flag of the five-week federation of Armenia, Azerbaijan and Georgia in April–May 1918.", source: "https://en.wikipedia.org/wiki/List_of_Armenian_flags" },
+    { id: "am-cilicia", category: "historical", name: "Flag of the Armenian Kingdom of Cilicia", from: 1226, to: 1341, priorPolity: "the Armenian Kingdom of Cilicia", path: "national-flags/am/armenia-cilicia.png", design: "The flag of the Armenian kingdom on the Mediterranean coast, a separate state from the Armenian highland.", source: "https://en.wikipedia.org/wiki/List_of_Armenian_flags" },
+    { id: "am-president", category: "standard", name: "Flag of the President of Armenia", from: 1990, to: 9999, path: "national-flags/am/armenia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Armenian_flags" },
+    { id: "am-arms", category: "coatofarms", name: "Coat of arms of Armenia", from: 1992, to: 9999, path: "national-flags/am/armenia-arms.svg", design: "A shield of Mount Ararat with Noah's Ark quartered with four dynastic emblems, supported by an eagle and a lion, over a sword, branch, sheaf, chain and ribbon.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
   ],
   "AO": [
     { id: "ao-official-national", category: "official", name: "Flag of Angola", from: 1975, to: 9999, primary: true, path: "flags/ao.svg", design: "The national flag of Angola, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
@@ -287,6 +292,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BY": [
     { id: "by-official-national", category: "official", name: "Flag of Belarus", from: 1995, to: 9999, primary: true, path: "flags/by.svg", design: "The national flag of Belarus, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Belarus" },
     { id: "by-current", category: "historical", name: "Flag of Belarus", from: 1995, to: 9999, primary: true, path: "flags/by.svg", design: "The national flag of Belarus, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Belarus" },
+    { id: "by-1995", category: "historical", name: "Flag of Belarus (1995–2012)", from: 1995, to: 2012, path: "national-flags/by/belarus-1995.svg", design: "The flag readopted by the 1995 referendum, before the 2012 revision of the ornament.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    { id: "by-1991", category: "historical", name: "White-red-white flag of Belarus", from: 1991, to: 1995, path: "national-flags/by/belarus-1991.svg", design: "The white-red-white flag of the 1918 Belarusian Democratic Republic, restored at independence in 1991 and replaced by referendum in 1995.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    { id: "by-ssr", category: "historical", name: "Flag of the Byelorussian SSR", from: 1951, to: 1991, priorPolity: "the Byelorussian Soviet Socialist Republic", path: "national-flags/by/belarus-ssr.svg", design: "The red-and-green flag with a woven ornament along the hoist — the republic's flag within the Soviet Union, and the direct ancestor of the present design.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    { id: "by-armed-forces", category: "military", name: "Flag of the Armed Forces of Belarus", from: 2012, to: 9999, path: "national-flags/by/belarus-armed-forces.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    { id: "by-land-forces", category: "military", name: "Flag of the Belarusian Land Forces", from: 2005, to: 9999, path: "national-flags/by/belarus-land-forces.svg", design: "The land forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    { id: "by-air-force", category: "military", name: "Flag of the Belarusian Air Force", from: 2005, to: 9999, path: "national-flags/by/belarus-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    { id: "by-president", category: "standard", name: "Flag of the President of Belarus", from: 2012, to: 9999, path: "national-flags/by/belarus-president.svg", design: "The presidential flag bearing the national emblem.", source: "https://en.wikipedia.org/wiki/List_of_Belarusian_flags" },
+    { id: "by-emblem", category: "coatofarms", name: "National emblem of Belarus", from: 1995, to: 9999, path: "national-flags/by/belarus-emblem.svg", design: "A silhouette of the country over a globe and rising sun, within wheat ears bound by a ribbon in the national colours, beneath a red star.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
   ],
   "BZ": [
     { id: "bz-official-national", category: "official", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "The national flag of Belize, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
@@ -879,6 +892,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MD": [
     { id: "md-official-national", category: "official", name: "Flag of Moldova", from: 1990, to: 9999, primary: true, path: "flags/md.svg", design: "The national flag of Moldova, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
     { id: "md-current", category: "historical", name: "Flag of Moldova", from: 1990, to: 9999, primary: true, path: "flags/md.svg", design: "The national flag of Moldova, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+    { id: "md-president", category: "standard", name: "Flag of the President of Moldova", path: "national-flags/md/moldova-president.svg", design: "The presidential standard bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Moldovan_flags" },
+    { id: "md-arms", category: "coatofarms", name: "Coat of arms of Moldova", from: 1990, to: 9999, path: "national-flags/md/moldova-arms.svg", design: "An aurochs head with a star between its horns, a rose and a crescent, on a shield held by an eagle with a cross in its beak.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
   ],
   "ME": [
     { id: "me-official-national", category: "official", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
@@ -1429,6 +1444,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "UZ": [
     { id: "uz-official-national", category: "official", name: "Flag of Uzbekistan", from: 1991, to: 9999, primary: true, path: "flags/uz.svg", design: "The national flag of Uzbekistan, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
     { id: "uz-current", category: "historical", name: "Flag of Uzbekistan", from: 1991, to: 9999, primary: true, path: "flags/uz.svg", design: "The national flag of Uzbekistan, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
+    { id: "uz-khiva", category: "historical", name: "Flag of the Khanate of Khiva", from: 1917, to: 1920, priorPolity: "the Khanate of Khiva", path: "national-flags/uz/uzbekistan-khiva.svg", design: "The flag of the Qungrat dynasty's khanate, ended by the Soviet advance in 1920.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-turkestan", category: "historical", name: "Flag of the Turkestan Autonomy", from: 1917, to: 1918, priorPolity: "the Turkestan (Kokand) Autonomy", path: "national-flags/uz/uzbekistan-turkestan.svg", design: "The flag of the short-lived Muslim autonomous government at Kokand, crushed in 1918.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-bukhara", category: "historical", name: "Flag of the Emirate of Bukhara", from: 1785, to: 1870, priorPolity: "the Emirate of Bukhara", path: "national-flags/uz/uzbekistan-bukhara.svg", design: "The flag of the emirate that ruled from Bukhara before the Russian protectorate.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-timur", category: "historical", name: "Banner of Timur", from: 1370, to: 1507, priorPolity: "the Timurid Empire", path: "national-flags/uz/uzbekistan-timur.svg", design: "The banner attributed to Tamerlane, whose empire was ruled from Samarkand.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-army", category: "military", name: "Flag of the Uzbek Ground Forces", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-army.svg", design: "The ground forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-air-force", category: "military", name: "Flag of the Uzbek Air and Air Defence Forces", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-air-force.svg", design: "The air and air defence forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-president", category: "standard", name: "Presidential Standard of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
+    { id: "uz-emblem", category: "coatofarms", name: "Emblem of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-emblem.svg", design: "A Huma bird with outstretched wings over a sunrise, mountains and two rivers, within cotton and wheat.", source: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
   ],
   "VA": [
     { id: "va-official-national", category: "official", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
@@ -1528,12 +1551,14 @@ export type NationalIndependence = {
 };
 
 export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence>> = {
+  "AM": { year: 1918, event: "The First Republic of Armenia declared independence on 28 May 1918", note: "It was absorbed into the Soviet Union in 1920–1922; independence was restored on 21 September 1991.", source: "https://en.wikipedia.org/wiki/First_Republic_of_Armenia" },
   "AO": { year: 1975, event: "Independence from Portugal, 11 November 1975", source: "https://en.wikipedia.org/wiki/Angolan_War_of_Independence" },
   "AR": { year: 1816, event: "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816", source: "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence" },
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
+  "BY": { year: 1991, event: "Independence from the Soviet Union declared 25 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Belarus" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
   "CM": { year: 1960, event: "French Cameroun became independent on 1 January 1960", note: "The southern part of British Cameroons joined it in October 1961 to form a federal republic; the northern part joined Nigeria.", source: "https://en.wikipedia.org/wiki/History_of_Cameroon" },
@@ -1571,6 +1596,12 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
  * flag with no entry simply renders no disclosure rather than a guessed one.
  */
 export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
+  "am-arms": {
+    description: "At the centre of the shield stands Mount Ararat with Noah's Ark on its summit — by tradition the ark came to rest there after the flood, and Ararat is the national symbol, though it has lain outside Armenia's borders since 1921. Around it are the emblems of four historic Armenian dynasties: the Bagratuni, the Arsacid, the Artaxiad and the Rubenid of Cilicia. The two supporters carry those dynasties too: the eagle was the emblem of the Artaxiads and later the Arsacids, the lion of the Bagratunis and later the Rubenids, and both animals were chosen for power, courage, patience, wisdom and nobility. The arms date in this form from the First Republic of 1918, whose version drew the eagle and lion with their tongues out.",
+    sources: [
+      { title: "Coat of arms of Armenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Armenia" },
+    ],
+  },
   "ao-emblem": {
     description: "The emblem expands the flag's own imagery and belongs to the same socialist tradition. The crossed machete and hoe at the centre are the revolution through which independence was won and the importance of agricultural workers; the star above them is a common socialist device, read here as progress; the rising sun is the traditional symbol of a new beginning. The circle enclosing them is made of a cogwheel on one side, for industrial workers, and a cotton branch on the other, for agriculture; the open book at the foot is education. The banner beneath reads República de Angola — changed in 1990 from República Popular de Angola, when the People's Republic became simply the Republic.",
     sources: [
@@ -1662,6 +1693,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The cover states two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sits the state’s full name, and at the foot the chip symbol that marks it as an e-passport.",
     sources: [
       { title: "Brazilian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazilian_passport" },
+    ],
+  },
+  "by-emblem": {
+    description: "This is deliberately an EMBLEM rather than a coat of arms — it does not follow heraldic rules — and it alludes directly to the arms of the Byelorussian SSR, which is the point of it: readopted by referendum in 1995, it restored the Soviet-era design after four years of the Pahonia. It carries a silhouette of Belarus over a globe and a rising sun, framed by ears of wheat bound with a ribbon in the colours of the national flag, and topped by a red star. Between 1991 and 1995 the country instead used the Pahonia — the mounted knight of the Grand Duchy of Lithuania — which remains the emblem of the Belarusian opposition.",
+    sources: [
+      { title: "National emblem of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
     ],
   },
   "cl-arms": {
@@ -1856,6 +1893,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
     ],
   },
+  "md-arms": {
+    description: "Designed by Gheorghe Vrabie, the arms are two inheritances joined. The aurochs head with an eight-pointed star between its horns, a heraldic rose to one side and a waning crescent to the other, is taken directly from the arms of the medieval Principality of Moldavia — the aurochs being the beast of that principality's foundation legend. The supporter behind it, an eagle holding a cross in its beak, an olive branch in one talon and a sceptre in the other, comes from the interwar coat of arms of the Kingdom of Romania, most of Moldova's territory having been part of Romania between the wars. The blazon is fixed in law (Law No. 32 of 7 March 2013).",
+    sources: [
+      { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
+    ],
+  },
   "ml-emblem": {
     description: "Adopted in 1973, thirteen years after independence, the seal is read from its centre outward. The mosque at the middle is a specific building — the Great Mosque of Djenné, the largest mud-brick structure in the world and the country's best-known monument. Above it flies a bird, and below it the sun rises; the two bows and arrows flanking the mosque stand for the country's defence. The legend around the circle carries the name of the republic and the motto \"Un Peuple, Un But, Une Foi\" — One People, One Goal, One Faith — which is word for word the motto of Senegal, the country Mali was federated with for the two months before independence.",
     sources: [
@@ -2004,6 +2047,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
     sources: [
       { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
+    ],
+  },
+  "uz-emblem": {
+    description: "The emblem is the country's natural wealth arranged around one legendary bird. On the left is a cotton plant — the crop that has dominated Uzbek industry and agriculture since the Soviet era, when the Uzbek SSR was one of the USSR's main suppliers — and on the right ears of wheat. At the centre the Huma, a legendary bird of Persian and Turkic myth, spreads its wings for peace, happiness and the striving for freedom. Enclosed by those wings are a rising sun over mountains and green pastures, and the two rivers that make the country's agriculture possible: the Amu Darya and the Syr Darya. Before the Soviet period the khanates and emirates here — Bukhara, Khiva — had no coat of arms in the Western sense at all.",
+    sources: [
+      { title: "Emblem of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
     ],
   },
   "ve-arms": {
