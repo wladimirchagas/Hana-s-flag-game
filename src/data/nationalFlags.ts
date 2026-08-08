@@ -153,6 +153,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AZ": [
     { id: "az-official-national", category: "official", name: "Flag of Azerbaijan", from: 1918, to: 9999, primary: true, path: "flags/az.svg", design: "The national flag of Azerbaijan, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
     { id: "az-current", category: "historical", name: "Flag of Azerbaijan", from: 1918, to: 9999, primary: true, path: "flags/az.svg", design: "The national flag of Azerbaijan, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
+    { id: "az-adr", category: "historical", name: "Flag of the Azerbaijan Democratic Republic", from: 1918, to: 1920, priorPolity: "the Azerbaijan Democratic Republic", path: "national-flags/az/azerbaijan-adr.svg", design: "The blue-red-green tricolour with the crescent and star, adopted by the first republic and restored in 1991.", source: "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags" },
+    { id: "az-nakhichevan", category: "historical", name: "Banner of the Nakhichevan Khanate", from: 1747, to: 1828, priorPolity: "the Nakhichevan Khanate", path: "national-flags/az/azerbaijan-nakhichevan.svg", design: "The banner of one of the khanates that governed the territory before the Russian conquest.", source: "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags" },
+    { id: "az-land-forces", category: "military", name: "Flag of the Azerbaijani Land Forces", path: "national-flags/az/azerbaijan-land-forces.svg", design: "The land forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags" },
+    { id: "az-president", category: "standard", name: "Standard of the President of Azerbaijan", from: 1992, to: 9999, path: "national-flags/az/azerbaijan-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags" },
+    { id: "az-emblem", category: "coatofarms", name: "Emblem of Azerbaijan", from: 1993, to: 9999, path: "national-flags/az/azerbaijan-emblem.svg", design: "A stylised flame on a shield in the colours of the flag, over crossed wheat and an oak bough.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
   ],
   "BA": [
     { id: "ba-official-national", category: "official", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
@@ -579,6 +584,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "HR": [
     { id: "hr-official-national", category: "official", name: "Flag of Croatia", from: 1990, to: 9999, primary: true, path: "flags/hr.svg", design: "The national flag of Croatia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
     { id: "hr-current", category: "historical", name: "Flag of Croatia", from: 1990, to: 9999, primary: true, path: "flags/hr.svg", design: "The national flag of Croatia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
+    { id: "hr-1945", category: "historical", name: "Flag of the Socialist Republic of Croatia", from: 1947, to: 1990, priorPolity: "the Socialist Republic of Croatia within Yugoslavia", path: "national-flags/hr/croatia-1945.svg", design: "The red-white-blue tricolour with a red star, as a constituent republic of Yugoslavia.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    { id: "hr-banovina", category: "historical", name: "Flag of the Banovina of Croatia", from: 1939, to: 1941, sovereign: "the Kingdom of Yugoslavia", path: "national-flags/hr/croatia-banovina.svg", design: "The tricolour of the autonomous banovina created within the Kingdom of Yugoslavia in 1939.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    { id: "hr-triune", category: "historical", name: "Flag of the Triune Kingdom of Croatia", from: 1860, to: 1918, sovereign: "Austria-Hungary", path: "national-flags/hr/croatia-triune.svg", design: "The unofficial but widely flown tricolour of Croatia, Slavonia and Dalmatia under the Habsburg crown.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    { id: "hr-army", category: "military", name: "Flag of the Croatian Army", from: 1991, to: 9999, path: "national-flags/hr/croatia-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    { id: "hr-air-force", category: "military", name: "Flag of the Croatian Air Force", path: "national-flags/hr/croatia-air-force.svg", design: "A blue field with the air force's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    { id: "hr-naval-ensign", category: "maritime", name: "Naval ensign of Croatia", from: 1999, to: 9999, path: "national-flags/hr/croatia-naval-ensign.svg", design: "The naval ensign of the Croatian Navy.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    { id: "hr-president", category: "standard", name: "Standard of the President of Croatia", from: 1990, to: 9999, path: "national-flags/hr/croatia-president.svg", design: "A blue square bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
+    { id: "hr-arms", category: "coatofarms", name: "Coat of arms of Croatia", from: 1990, to: 9999, path: "national-flags/hr/croatia-arms.svg", design: "A red-and-white chequy shield of 25 fields beneath a crown of five smaller shields.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
   ],
   "HT": [
     { id: "ht-official-national", category: "official", name: "Flag of Haiti", from: 1806, to: 9999, primary: true, path: "flags/ht.svg", design: "The national flag of Haiti, in the form adopted in 1806.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
@@ -749,6 +762,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "KZ": [
     { id: "kz-official-national", category: "official", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
     { id: "kz-current", category: "historical", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
+    { id: "kz-ssr", category: "historical", name: "Flag of the Kazakh SSR", from: 1953, to: 1991, priorPolity: "the Kazakh Soviet Socialist Republic", path: "national-flags/kz/kazakhstan-ssr.svg", design: "Red over blue with the gold hammer, sickle and star — the republic's flag within the Soviet Union.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    { id: "kz-alash", category: "historical", name: "Flag of the Alash Autonomy", from: 1917, to: 1920, priorPolity: "the Alash Autonomy", path: "national-flags/kz/kazakhstan-alash.svg", design: "The flag of the short-lived Kazakh autonomous government of 1917–1920.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    { id: "kz-armed-forces", category: "military", name: "War flag of the Kazakh Armed Forces", path: "national-flags/kz/kazakhstan-armed-forces.svg", design: "The armed forces' war flag.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    { id: "kz-army", category: "military", name: "Flag of the Kazakh Ground Forces", path: "national-flags/kz/kazakhstan-army.svg", design: "The ground forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    { id: "kz-air-force", category: "military", name: "Flag of the Kazakhstan Air Force", path: "national-flags/kz/kazakhstan-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    { id: "kz-naval-ensign", category: "maritime", name: "Naval ensign of Kazakhstan", path: "national-flags/kz/kazakhstan-naval-ensign.svg", design: "The ensign of the Kazakh Naval Forces on the Caspian.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    { id: "kz-president", category: "standard", name: "Standard of the President of Kazakhstan", from: 2012, to: 9999, path: "national-flags/kz/kazakhstan-president.svg", design: "A sky blue square bearing the state emblem.", source: "https://en.wikipedia.org/wiki/List_of_Kazakh_flags" },
+    { id: "kz-emblem", category: "coatofarms", name: "Emblem of Kazakhstan", from: 1992, to: 9999, path: "national-flags/kz/kazakhstan-emblem.svg", design: "A shanyrak on a sky blue field, its supports radiating like sun rays, flanked by two winged mythical horses.", source: "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan" },
   ],
   "LA": [
     { id: "la-official-national", category: "official", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
@@ -1067,6 +1088,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "RS": [
     { id: "rs-official-national", category: "official", name: "Flag of Serbia", from: 2010, to: 9999, primary: true, path: "flags/rs.svg", design: "The national flag of Serbia, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
     { id: "rs-current", category: "historical", name: "Flag of Serbia", from: 2010, to: 9999, primary: true, path: "flags/rs.svg", design: "The national flag of Serbia, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
+    { id: "rs-1992", category: "historical", name: "Flag of Serbia (1991–2004)", from: 1991, to: 2004, path: "national-flags/rs/serbia-1992.svg", design: "The plain red-blue-white tricolour of the republic, before the arms were restored to it in 2004.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
+    { id: "rs-ssr", category: "historical", name: "Flag of the Socialist Republic of Serbia", from: 1947, to: 1991, priorPolity: "the Socialist Republic of Serbia within Yugoslavia", path: "national-flags/rs/serbia-sr.svg", design: "The tricolour with a red star, as a constituent republic of Yugoslavia.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
+    { id: "rs-principality", category: "historical", name: "Flag of the Principality of Serbia", from: 1839, to: 1878, priorPolity: "the Principality of Serbia", path: "national-flags/rs/serbia-principality.svg", design: "The tricolour of the autonomous principality, before full independence in 1878.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
+    { id: "rs-president", category: "standard", name: "Standard of the President of Serbia", from: 2010, to: 9999, path: "national-flags/rs/serbia-president.svg", design: "A crimson square bearing the greater coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
+    { id: "rs-king", category: "standard", name: "Standard of the King of Serbia", from: 1882, to: 1918, path: "national-flags/rs/serbia-king.svg", design: "The royal standard of the Kingdom of Serbia.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
+    { id: "rs-civil", category: "civilstate", name: "Civil flag of Serbia", from: 2010, to: 9999, path: "national-flags/rs/serbia-civil.svg", design: "The plain red-blue-white tricolour, without the arms the state flag carries.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
+    { id: "rs-arms", category: "coatofarms", name: "Coat of arms of Serbia", from: 2010, to: 9999, path: "national-flags/rs/serbia-arms.svg", design: "A silver double-headed eagle on red bearing an escutcheon with the Serbian cross between four firesteels, beneath a crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
   ],
   "RU": [
     { id: "ru-official-national", category: "official", name: "Flag of Russia", from: 1991, to: 9999, primary: true, path: "flags/ru.svg", design: "The national flag of Russia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
@@ -1428,6 +1456,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
+  "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
@@ -1478,6 +1507,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device at the centre is the Commonwealth Coat of Arms — the six-quartered shield with kangaroo and emu — so the document a traveller carries is stamped with the federation’s own emblem rather than with the flag.",
     sources: [
       { title: "Australian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_passport" },
+    ],
+  },
+  "az-emblem": {
+    description: "The focal point is a stylised flame, a reference to the country's eternal oil and gas fires — the reason Azerbaijan is called the land of eternal fire. The shield behind it carries the colours of the national flag with its crescent and eight-pointed star. Supporting it are a crossed stalk of wheat and an oak bough: wheat is abundance, and wheat bread the country's staple food, while the oak stands for strength and endurance. The design is not new — the Azerbaijan Democratic Republic opened a competition for a national emblem on 30 January 1920 but fell in April before one could be approved; a design developed in 1919–1920 was taken up again after independence and confirmed, with alterations, by constitutional law on 19 January 1993.",
+    sources: [
+      { title: "National emblem of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
     ],
   },
   "bd-emblem": {
@@ -1613,6 +1648,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
     ],
   },
+  "hr-arms": {
+    description: "The main shield is the šahovnica, a chequerboard of 13 red and 12 white fields, in use since the late 15th century and the country's principal emblem. The crown above it is made of five smaller shields, the historic arms of the lands that make up Croatia — the oldest Croatian arms, Dubrovnik, Dalmatia, Istria and Slavonia. The first arms of Croatia were in fact the three leopard's or lion's heads that now stand for Dalmatia; from the late 15th century those came to be read as Dalmatian, and after the 19th-century national revival — during which the Italian-Dalmatianist Autonomist Party appropriated the three heads — the chequerboard became the preferred national symbol.",
+    sources: [
+      { title: "Coat of arms of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
+    ],
+  },
   "hu-arms": {
     description: "The dexter half carries the Árpád stripes, four red and four silver, the silver traditionally read as four rivers — the Danube, the Tisza, the Drava and the Sava. The sinister half sets a silver double cross on a golden crown standing on the middle of three green hills, the trimount for the Tátra, Mátra and Fátra ranges; the double cross itself is a symbol of royal power, which appeared under Béla III (1172–1196). Above the shield sits the Holy Crown of Hungary, the crown of Saint Stephen, whose tilted cross is reproduced exactly as it stands on the real object.",
     sources: [
@@ -1679,6 +1720,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "kz-emblem": {
+    description: "At the centre is the shanyrak, the dome-piece at the top of a yurt through which the smoke leaves and the light enters — in Kazakh usage the emblem of the family home, and here of the common home of all the country's peoples. Its uyks, the supports radiating from it, are drawn as sun rays. Flanking it are two tulpars, the winged horses of Turkic myth. The two colours carry their own meaning: the gold is the bright, clear future of the Kazakh people, and the sky blue is the aspiration to peace, accord, friendship and unity with all peoples. The emblem was adopted on 4 June 1992, chosen from 245 submitted designs; its authors were Jandarbek Melibekov and Shot-Aman Ualikhan.",
+    sources: [
+      { title: "Emblem of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan" },
+    ],
+  },
   "lk-emblem": {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
@@ -1737,6 +1784,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms adopted by parliament on 10 September 1992 are based on the lesser arms of the interwar Kingdom of Romania, used from 1922 to 1947 and designed in 1921 by the Transylvanian Hungarian heraldist József Sebestyén of Cluj-Napoca. The golden aquila with a cross in its beak, a sword and a sceptre in its talons, is the historic emblem of Wallachia; the escutcheon quarters the arms of the lands the modern state is made of — Wallachia, Moldavia, Transylvania, Oltenia with the Banat, and Dobruja with its dolphins for the Black Sea coast. Since 11 July 2016 the aquila has been crowned with a heraldic Steel Crown, a token of the monarchy that ruled between 1881 and 1947. The arms carry a particular weight in Romania because the symbol of the 1989 revolution was the flag with the communist arms cut out of its middle.",
     sources: [
       { title: "Coat of arms of Romania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
+    ],
+  },
+  "rs-arms": {
+    description: "The arms are two symbols laid over each other, each with its own long history. The silver double-headed eagle is the eagle of the Nemanjić dynasty, taken from Byzantium; the device appears on Serbian and Byzantine inscriptions, frescoes and royal embroidery from the 11th century onward. On its breast sits the Serbian cross with four firesteels in the quarters, which also resembles the imperial emblem of the late Palaiologan Byzantine flags and may descend from it. The two together are the state and the people — the dynasty's bird carrying the nation's cross.",
+    sources: [
+      { title: "Coat of arms of Serbia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
     ],
   },
   "ru-arms": {

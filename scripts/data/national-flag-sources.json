@@ -660,6 +660,80 @@
           "reuse": "flags/az.svg",
           "design": "The national flag of Azerbaijan, in the form adopted in 1918.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan"
+        },
+        {
+          "id": "az-adr",
+          "category": "historical",
+          "name": "Flag of the Azerbaijan Democratic Republic",
+          "from": 1918,
+          "to": 1920,
+          "priorPolity": "the Azerbaijan Democratic Republic",
+          "commons": "Flag of Azerbaijan 1918.svg",
+          "file": "az/azerbaijan-adr.svg",
+          "design": "The blue-red-green tricolour with the crescent and star, adopted by the first republic and restored in 1991.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
+          "sha256": "71df3bac612378eea6ee60a92d1c54d73110c386b983f63ceb87e94102d65100",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "az-nakhichevan",
+          "category": "historical",
+          "name": "Banner of the Nakhichevan Khanate",
+          "from": 1747,
+          "to": 1828,
+          "priorPolity": "the Nakhichevan Khanate",
+          "commons": "Flag of the Nakhichevan Khanate.svg",
+          "file": "az/azerbaijan-nakhichevan.svg",
+          "design": "The banner of one of the khanates that governed the territory before the Russian conquest.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
+          "sha256": "0f3652656faf15f2c407938dcc9eda54595d2fcea8685e05c4e3d6d50b2f2dd1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "az-president",
+          "category": "standard",
+          "name": "Standard of the President of Azerbaijan",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Flag of the President of Azerbaijan.svg",
+          "file": "az/azerbaijan-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
+          "sha256": "eda93383dc942abb4cde5b21368e2c6c70d7bcac218c5d088e47b1797f01abde",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "az-land-forces",
+          "category": "military",
+          "name": "Flag of the Azerbaijani Land Forces",
+          "commons": "Flag of Azerbaijani Land Forces.svg",
+          "file": "az/azerbaijan-land-forces.svg",
+          "design": "The land forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags",
+          "sha256": "adff7d544b826a2373275747f8dce48720735c571358859937635639aae617d2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "az-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Azerbaijan",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Emblem of Azerbaijan.svg",
+          "file": "az/azerbaijan-emblem.svg",
+          "design": "A stylised flame on a shield in the colours of the flag, over crossed wheat and an oak bough.",
+          "source": "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan",
+          "meaning": {
+            "description": "The focal point is a stylised flame, a reference to the country's eternal oil and gas fires — the reason Azerbaijan is called the land of eternal fire. The shield behind it carries the colours of the national flag with its crescent and eight-pointed star. Supporting it are a crossed stalk of wheat and an oak bough: wheat is abundance, and wheat bread the country's staple food, while the oak stands for strength and endurance. The design is not new — the Azerbaijan Democratic Republic opened a competition for a national emblem on 30 January 1920 but fell in April before one could be approved; a design developed in 1919–1920 was taken up again after independence and confirmed, with alterations, by constitutional law on 19 January 1993.",
+            "sources": [
+              {
+                "title": "National emblem of Azerbaijan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan"
+              }
+            ]
+          },
+          "sha256": "223c263be8b56551a7b06c0c64c6cd6b0f1d5108baf779c3f4abd1687fee3b90",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -4639,8 +4713,128 @@
           "reuse": "flags/hr.svg",
           "design": "The national flag of Croatia, in the form adopted in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Croatia"
+        },
+        {
+          "id": "hr-1945",
+          "category": "historical",
+          "name": "Flag of the Socialist Republic of Croatia",
+          "from": 1947,
+          "to": 1990,
+          "priorPolity": "the Socialist Republic of Croatia within Yugoslavia",
+          "commons": "Flag of Croatia (1947–1990).svg",
+          "file": "hr/croatia-1945.svg",
+          "design": "The red-white-blue tricolour with a red star, as a constituent republic of Yugoslavia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
+          "sha256": "9d9c2c559a4b655d1659350c0e7cc3c79c32502597a4595eb9380de382f0ee54",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hr-banovina",
+          "category": "historical",
+          "name": "Flag of the Banovina of Croatia",
+          "from": 1939,
+          "to": 1941,
+          "sovereign": "the Kingdom of Yugoslavia",
+          "commons": "Civil Flag of Banovina of Croatia.svg",
+          "file": "hr/croatia-banovina.svg",
+          "design": "The tricolour of the autonomous banovina created within the Kingdom of Yugoslavia in 1939.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
+          "sha256": "fab4c6e3bfbc70a316dfc5419ad13b09d60a3940f5858651e18e0281fd738dc5",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hr-triune",
+          "category": "historical",
+          "name": "Flag of the Triune Kingdom of Croatia",
+          "from": 1860,
+          "to": 1918,
+          "sovereign": "Austria-Hungary",
+          "commons": "Flag of the Triune Kingdom of Croatia, Slavonia and Dalmatia.svg",
+          "file": "hr/croatia-triune.svg",
+          "design": "The unofficial but widely flown tricolour of Croatia, Slavonia and Dalmatia under the Habsburg crown.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
+          "sha256": "bf78ac34d1797de53a6358790a89b234e3f4244a5c1cbc7ec1a71e9b5aa4e7b8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hr-president",
+          "category": "standard",
+          "name": "Standard of the President of Croatia",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Flag of the President of Croatia.svg",
+          "file": "hr/croatia-president.svg",
+          "design": "A blue square bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
+          "sha256": "ae9086e602de20790cc57323ebbd875f4e7adc181d13c3744d10a842ee5421ee",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hr-army",
+          "category": "military",
+          "name": "Flag of the Croatian Army",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Flag of Croatian Army.svg",
+          "file": "hr/croatia-army.svg",
+          "design": "The army's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
+          "sha256": "dca04a615fe3a0de87691e97283f1a0343641f29b4c6d2acec01f2e1c7ff3cdf",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hr-air-force",
+          "category": "military",
+          "name": "Flag of the Croatian Air Force",
+          "commons": "Flag of the Croatian Air Force.svg",
+          "file": "hr/croatia-air-force.svg",
+          "design": "A blue field with the air force's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
+          "sha256": "4f81781c57779604c5849561ef789582bb304b33f9954b08e305941f45d3d504",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hr-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Croatia",
+          "from": 1999,
+          "to": 9999,
+          "commons": "Naval Ensign of Croatia.svg",
+          "file": "hr/croatia-naval-ensign.svg",
+          "design": "The naval ensign of the Croatian Navy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Croatian_flags",
+          "sha256": "4c18d47c12cc8cc2e05feb4985a20eb00d5759ab30345bda8df7f6a12335c045",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "hr-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Croatia",
+          "from": 1990,
+          "to": 9999,
+          "commons": "Coat of arms of Croatia.svg",
+          "file": "hr/croatia-arms.svg",
+          "design": "A red-and-white chequy shield of 25 fields beneath a crown of five smaller shields.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia",
+          "meaning": {
+            "description": "The main shield is the šahovnica, a chequerboard of 13 red and 12 white fields, in use since the late 15th century and the country's principal emblem. The crown above it is made of five smaller shields, the historic arms of the lands that make up Croatia — the oldest Croatian arms, Dubrovnik, Dalmatia, Istria and Slavonia. The first arms of Croatia were in fact the three leopard's or lion's heads that now stand for Dalmatia; from the late 15th century those came to be read as Dalmatian, and after the 19th-century national revival — during which the Italian-Dalmatianist Autonomist Party appropriated the three heads — the chequerboard became the preferred national symbol.",
+            "sources": [
+              {
+                "title": "Coat of arms of Croatia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia"
+              }
+            ]
+          },
+          "sha256": "b5bafeb967f354a58e83dffb88a2206b5c759103c0c7864749f614386ed8a724",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Declaration of independence from Yugoslavia, 25 June 1991",
+        "note": "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.",
+        "source": "https://en.wikipedia.org/wiki/Croatian_War_of_Independence"
+      }
     },
     "HT": {
       "flags": [
@@ -6277,6 +6471,113 @@
           "reuse": "flags/kz.svg",
           "design": "The national flag of Kazakhstan, in the form adopted in 1992.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan"
+        },
+        {
+          "id": "kz-ssr",
+          "category": "historical",
+          "name": "Flag of the Kazakh SSR",
+          "from": 1953,
+          "to": 1991,
+          "priorPolity": "the Kazakh Soviet Socialist Republic",
+          "commons": "Flag of the Kazakh Soviet Socialist Republic (1953–1991); Flag of Kazakhstan (1991–1992).svg",
+          "file": "kz/kazakhstan-ssr.svg",
+          "design": "Red over blue with the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
+          "sha256": "4f640999a1d4837346f67a7ab9f027e68852aa81e8f25e342af9c9b2f5e0af0a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kz-alash",
+          "category": "historical",
+          "name": "Flag of the Alash Autonomy",
+          "from": 1917,
+          "to": 1920,
+          "priorPolity": "the Alash Autonomy",
+          "commons": "Proposed Flag of the Alash Autonomy (horizontal).svg",
+          "file": "kz/kazakhstan-alash.svg",
+          "design": "The flag of the short-lived Kazakh autonomous government of 1917–1920.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
+          "sha256": "6be577d896d104bd1497e499010a8b9f7650fdb7090c1157b7eb0f777b18c78d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kz-president",
+          "category": "standard",
+          "name": "Standard of the President of Kazakhstan",
+          "from": 2012,
+          "to": 9999,
+          "commons": "Flag of the President of Kazakhstan.svg",
+          "file": "kz/kazakhstan-president.svg",
+          "design": "A sky blue square bearing the state emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
+          "sha256": "417adbe7cff41151128b07f84ad2176994fd627ae4dd9b4795397d42b330282a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kz-armed-forces",
+          "category": "military",
+          "name": "War flag of the Kazakh Armed Forces",
+          "commons": "Kazakhstan Armed Forces Flag.svg",
+          "file": "kz/kazakhstan-armed-forces.svg",
+          "design": "The armed forces' war flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
+          "sha256": "a9699e45b3f79fe58f4c7bd11b0ad812ef71c7614e10148baf38218a523d98f8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kz-army",
+          "category": "military",
+          "name": "Flag of the Kazakh Ground Forces",
+          "commons": "Flag of Kazakhstan Army.svg",
+          "file": "kz/kazakhstan-army.svg",
+          "design": "The ground forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
+          "sha256": "84f217ad4fea5d8694b09bae5ad270dd4fd058b187a1d0c00c0c4fed1aae0d10",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kz-air-force",
+          "category": "military",
+          "name": "Flag of the Kazakhstan Air Force",
+          "commons": "Ensign of Kazakhstan Air Force.svg",
+          "file": "kz/kazakhstan-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
+          "sha256": "3740870d388330754133a68ab957a45a93bae102ce852cc429caf032b9ea5e05",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kz-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Kazakhstan",
+          "commons": "Naval Ensign of Kazakhstan.svg",
+          "file": "kz/kazakhstan-naval-ensign.svg",
+          "design": "The ensign of the Kazakh Naval Forces on the Caspian.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Kazakh_flags",
+          "sha256": "05881fcbbd2f8e7988c6cbec6fd48571b052a2c4ac0aad7e1290e43720c789d9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kz-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Kazakhstan",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Emblem of Kazakhstan (1992-2014).svg",
+          "file": "kz/kazakhstan-emblem.svg",
+          "design": "A shanyrak on a sky blue field, its supports radiating like sun rays, flanked by two winged mythical horses.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan",
+          "meaning": {
+            "description": "At the centre is the shanyrak, the dome-piece at the top of a yurt through which the smoke leaves and the light enters — in Kazakh usage the emblem of the family home, and here of the common home of all the country's peoples. Its uyks, the supports radiating from it, are drawn as sun rays. Flanking it are two tulpars, the winged horses of Turkic myth. The two colours carry their own meaning: the gold is the bright, clear future of the Kazakh people, and the sky blue is the aspiration to peace, accord, friendship and unity with all peoples. The emblem was adopted on 4 June 1992, chosen from 245 submitted designs; its authors were Jandarbek Melibekov and Shot-Aman Ualikhan.",
+            "sources": [
+              {
+                "title": "Emblem of Kazakhstan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan"
+              }
+            ]
+          },
+          "sha256": "adefe97d632bb827c6d884cd15bb033a34b9d183ca1851a8097054aaac200a08",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -8992,6 +9293,108 @@
           "reuse": "flags/rs.svg",
           "design": "The national flag of Serbia, in the form adopted in 2010.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Serbia"
+        },
+        {
+          "id": "rs-1992",
+          "category": "historical",
+          "name": "Flag of Serbia (1991–2004)",
+          "from": 1991,
+          "to": 2004,
+          "commons": "Flag of Serbia (1992–2004).svg",
+          "file": "rs/serbia-1992.svg",
+          "design": "The plain red-blue-white tricolour of the republic, before the arms were restored to it in 2004.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
+          "sha256": "37d36af5bd98563c9a3637367b874c770171aa9172a4b115711143c52e5dd4af",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "rs-ssr",
+          "category": "historical",
+          "name": "Flag of the Socialist Republic of Serbia",
+          "from": 1947,
+          "to": 1991,
+          "priorPolity": "the Socialist Republic of Serbia within Yugoslavia",
+          "commons": "Flag of Montenegro (1946–1993), Flag of Serbia (1947–1992).svg",
+          "file": "rs/serbia-sr.svg",
+          "design": "The tricolour with a red star, as a constituent republic of Yugoslavia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
+          "sha256": "6792e88a902ae0801b477a22274734703e90e858750bdfa9956682f35eef18df",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "rs-principality",
+          "category": "historical",
+          "name": "Flag of the Principality of Serbia",
+          "from": 1839,
+          "to": 1878,
+          "priorPolity": "the Principality of Serbia",
+          "commons": "Flag of Principality of Serbia (1835–1878).svg",
+          "file": "rs/serbia-principality.svg",
+          "design": "The tricolour of the autonomous principality, before full independence in 1878.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
+          "sha256": "fa20173a7afb89e69c10b91d7c04220ee457736eacb06e823e7f55b1f8e50055",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "rs-president",
+          "category": "standard",
+          "name": "Standard of the President of Serbia",
+          "from": 2010,
+          "to": 9999,
+          "commons": "Flag of the President of Serbia.svg",
+          "file": "rs/serbia-president.svg",
+          "design": "A crimson square bearing the greater coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
+          "sha256": "2e020f9bc024ba6efcd6f0c5ac1ef9044e335b69e9103bfa8699d924c704c51b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "rs-king",
+          "category": "standard",
+          "name": "Standard of the King of Serbia",
+          "from": 1882,
+          "to": 1918,
+          "commons": "Standard of the King of Serbia (1882-1918).svg",
+          "file": "rs/serbia-king.svg",
+          "design": "The royal standard of the Kingdom of Serbia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
+          "sha256": "dc6912b79db16d4d45d916c432becad5d7c7e654cf33d0b3dbd8e3da07006067",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "rs-civil",
+          "category": "civilstate",
+          "name": "Civil flag of Serbia",
+          "from": 2010,
+          "to": 9999,
+          "commons": "Civil flag of Serbia.svg",
+          "file": "rs/serbia-civil.svg",
+          "design": "The plain red-blue-white tricolour, without the arms the state flag carries.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Serbian_flags",
+          "sha256": "8a0742ab89a9985e4e0e0badbb4d73309c2db5d133765694d9bb032c9e7bb2ff",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "rs-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Serbia",
+          "from": 2010,
+          "to": 9999,
+          "commons": "Coat of arms of Serbia.svg",
+          "file": "rs/serbia-arms.svg",
+          "design": "A silver double-headed eagle on red bearing an escutcheon with the Serbian cross between four firesteels, beneath a crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia",
+          "meaning": {
+            "description": "The arms are two symbols laid over each other, each with its own long history. The silver double-headed eagle is the eagle of the Nemanjić dynasty, taken from Byzantium; the device appears on Serbian and Byzantine inscriptions, frescoes and royal embroidery from the 11th century onward. On its breast sits the Serbian cross with four firesteels in the quarters, which also resembles the imperial emblem of the late Palaiologan Byzantine flags and may descend from it. The two together are the state and the people — the dynasty's bird carrying the nation's cross.",
+            "sources": [
+              {
+                "title": "Coat of arms of Serbia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia"
+              }
+            ]
+          },
+          "sha256": "6197f63ec950cdfd4a838cc32e52c7aa0ff4fd50ca2b5258c0e753ebe6a69912",
+          "fetched": "2026-08-08"
         }
       ]
     },
