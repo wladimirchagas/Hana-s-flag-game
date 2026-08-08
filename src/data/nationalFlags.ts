@@ -403,7 +403,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "CR": [
     { id: "cr-official-national", category: "official", name: "Flag of Costa Rica", from: 1848, to: 9999, primary: true, path: "flags/cr.svg", design: "The national flag of Costa Rica, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    { id: "cr-state", category: "official", name: "State flag and ensign of Costa Rica", from: 1998, to: 9999, path: "national-flags/cr/costarica-state.svg", design: "The national flag charged with the full coat of arms — flown by the state, where the civil flag carries none.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
     { id: "cr-current", category: "historical", name: "Flag of Costa Rica", from: 1848, to: 9999, primary: true, path: "flags/cr.svg", design: "The national flag of Costa Rica, in the form adopted in 1848.", source: "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica" },
+    { id: "cr-1823", category: "historical", name: "First flag of Costa Rica", from: 1823, to: 1823, priorPolity: "the Free State of Costa Rica within the Federal Republic of Central America", path: "national-flags/cr/costarica-1823.svg", design: "The first flag flown by Costa Rica itself, as a free state inside the Central American federation.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
+    { id: "cr-mexican-empire", category: "historical", name: "Flag of the First Mexican Empire", from: 1821, to: 1823, sovereign: "the First Mexican Empire", path: "national-flags/cr/costarica-mexican-empire.svg", design: "The flag of Iturbide's empire, which Central America joined for two years after separating from Spain.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
+    { id: "cr-spain", category: "historical", name: "War ensign of Spain", from: 1785, to: 1821, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish ensign of 1785, the last flown over the province.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
+    { id: "cr-burgundy", category: "historical", name: "Cross of Burgundy", from: 1541, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, the flag of New Spain.", source: "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags" },
+    { id: "cr-arms", category: "coatofarms", name: "Coat of arms of Costa Rica", from: 1848, to: 9999, path: "national-flags/cr/costarica-arms.svg", design: "Three volcanoes in a valley between two oceans with a merchant ship in each, beneath a rising sun and seven stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
   ],
   "CU": [
     { id: "cu-official-national", category: "official", name: "Flag of Cuba", from: 1849, to: 9999, primary: true, path: "flags/cu.svg", design: "The national flag of Cuba, in the form adopted in 1849.", source: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
@@ -472,6 +478,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "EC": [
     { id: "ec-official-national", category: "official", name: "Flag of Ecuador", from: 1900, to: 9999, primary: true, path: "flags/ec.svg", design: "The national flag of Ecuador, in the form adopted in 1900.", source: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
     { id: "ec-current", category: "historical", name: "Flag of Ecuador", from: 1900, to: 9999, primary: true, path: "flags/ec.svg", design: "The national flag of Ecuador, in the form adopted in 1900.", source: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
+    { id: "ec-1845", category: "historical", name: "Flag of Ecuador (1845–1860)", from: 1845, to: 1860, path: "national-flags/ec/ecuador-1845.svg", design: "The white-and-blue flag fixed by the Cuenca Convention, before the yellow-blue-red was readopted in 1860.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    { id: "ec-1830", category: "historical", name: "Provisional flag of Ecuador (1830–1835)", from: 1830, to: 1835, path: "national-flags/ec/ecuador-1830.svg", design: "The provisional flag of the new republic after leaving Gran Colombia.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    { id: "ec-gran-colombia", category: "historical", name: "Flag of Gran Colombia", from: 1822, to: 1830, priorPolity: "Gran Colombia", path: "national-flags/ec/ecuador-gran-colombia.svg", design: "The flag of the union Ecuador belonged to until it seceded in 1830.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    { id: "ec-burgundy", category: "historical", name: "Cross of Burgundy", from: 1534, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Spanish military flag, flown from the founding of Quito in 1534.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    { id: "ec-army", category: "military", name: "Flag of the Ecuadorian Army", path: "national-flags/ec/ecuador-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    { id: "ec-naval-jack", category: "maritime", name: "Naval jack of Ecuador", path: "national-flags/ec/ecuador-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    { id: "ec-president", category: "standard", name: "Presidential standard of Ecuador", path: "national-flags/ec/ecuador-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags" },
+    { id: "ec-arms", category: "coatofarms", name: "Coat of arms of Ecuador", from: 1900, to: 9999, path: "national-flags/ec/ecuador-arms.svg", design: "An oval shield with Chimborazo, the Guayas river and a steamship beneath a sun crossing the zodiac, crested with a condor, flanked by four flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
   ],
   "EE": [
     { id: "ee-official-national", category: "official", name: "Flag of Estonia", from: 1918, to: 9999, primary: true, path: "flags/ee.svg", design: "The national flag of Estonia, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Estonia" },
@@ -1176,6 +1190,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "PY": [
     { id: "py-official-national", category: "official", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The national flag of Paraguay, in the form adopted in 1842.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
     { id: "py-current", category: "historical", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The national flag of Paraguay, in the form adopted in 1842.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    { id: "py-air-force", category: "military", name: "Flag of the Paraguayan Air Force", path: "national-flags/py/paraguay-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags" },
+    { id: "py-naval-jack", category: "maritime", name: "Naval jack of Paraguay", from: 1811, to: 9999, path: "national-flags/py/paraguay-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags" },
+    { id: "py-president", category: "standard", name: "Flag of the President of Paraguay", from: 2013, to: 9999, path: "national-flags/py/paraguay-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags" },
+    { id: "py-seal", category: "coatofarms", name: "National seal of Paraguay", from: 1842, to: 9999, path: "national-flags/py/paraguay-seal.svg", design: "A yellow five-pointed star within palm and olive branches, ringed by the name of the republic.", source: "https://en.wikipedia.org/wiki/Seal_of_Paraguay" },
   ],
   "QA": [
     { id: "qa-official-national", category: "official", name: "Flag of Qatar", from: 1971, to: 9999, primary: true, path: "flags/qa.svg", design: "The national flag of Qatar, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Qatar" },
@@ -1487,7 +1505,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "UY": [
     { id: "uy-official-national", category: "official", name: "Flag of Uruguay", from: 1830, to: 9999, primary: true, path: "flags/uy.svg", design: "The national flag of Uruguay, in the form adopted in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
+    { id: "uy-artigas", category: "official", name: "Flag of Artigas", from: 1952, to: 9999, path: "national-flags/uy/uruguay-artigas.svg", design: "The blue-white-blue flag with a red diagonal, of José Gervasio Artigas — one of the country's three official flags.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
+    { id: "uy-treinta-y-tres", category: "official", name: "Flag of the Treinta y Tres", from: 1952, to: 9999, path: "national-flags/uy/uruguay-treinta-y-tres.svg", design: "The blue-white-red triband bearing the motto Libertad o Muerte, carried by the Thirty-Three Orientals in 1825 — the third official flag.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
     { id: "uy-current", category: "historical", name: "Flag of Uruguay", from: 1830, to: 9999, primary: true, path: "flags/uy.svg", design: "The national flag of Uruguay, in the form adopted in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
+    { id: "uy-army", category: "military", name: "Flag of the Uruguayan Army", path: "national-flags/uy/uruguay-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
+    { id: "uy-air-force", category: "military", name: "Flag of the Uruguayan Air Force", from: 1953, to: 9999, path: "national-flags/uy/uruguay-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
+    { id: "uy-naval-jack", category: "maritime", name: "Naval jack of Uruguay", path: "national-flags/uy/uruguay-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
+    { id: "uy-arms", category: "coatofarms", name: "Coat of arms of Uruguay", from: 1829, to: 9999, path: "national-flags/uy/uruguay-arms.svg", design: "An oval shield quartered with scales, Montevideo hill, a horse and an ox, crowned by the Sun of May between laurel and olive.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay" },
   ],
   "UZ": [
     { id: "uz-official-national", category: "official", name: "Flag of Uzbekistan", from: 1991, to: 9999, primary: true, path: "flags/uz.svg", design: "The national flag of Uzbekistan, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
@@ -1611,8 +1635,10 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
   "CM": { year: 1960, event: "French Cameroun became independent on 1 January 1960", note: "The southern part of British Cameroons joined it in October 1961 to form a federal republic; the northern part joined Nigeria.", source: "https://en.wikipedia.org/wiki/History_of_Cameroon" },
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
+  "CR": { year: 1838, event: "Costa Rica withdrew from the Federal Republic of Central America on 14 November 1838 and became a sovereign state", note: "Central America had declared independence from Spain on 15 September 1821, but Costa Rica then belonged to the First Mexican Empire until 1823 and to the Central American federation until 1838; a republic was proclaimed in 1848.", source: "https://en.wikipedia.org/wiki/History_of_Costa_Rica" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
+  "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
@@ -1784,6 +1810,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
     ],
   },
+  "cr-arms": {
+    description: "The official description reads the arms as the country's geography: three volcanoes, one for each of its mountain ranges, and a broad valley between two oceans — the Pacific and the Caribbean — with a merchant ship on each, for the country's maritime history, under a rising sun. The stars above are a count that CHANGED: the 1848 design had five, one per province, and two more were added in 1964 to make seven when Puntarenas and Limón had reached provincial status. The arms are attributed to Pacífica Fernández, wife of President José María Castro Madriz, who designed the flag at the same time; the military trophies the original carried were removed by law in 1906.",
+    sources: [
+      { title: "Coat of arms of Costa Rica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica" },
+    ],
+  },
   "cu-arms": {
     description: "Designed by Miguel Teurbe Tolón in 1849, the shield is read in three fields. The upper field is a sea between two capes — the Yucatán peninsula and Florida — with a golden key hanging between them beneath a rising sun: Cuba is the key to the Gulf of Mexico, the island commanding the strait, and the sun is the dawn of the new state. The lower left field carries the blue and white stripes of the flag, for the island's division into departments under Spanish rule; the lower right shows a royal palm, the national tree, standing for the country itself. Behind the shield the fasces topped with a red Phrygian cap is the classical emblem of authority and of liberty, and the oak branch and laurel wreath at the sides are strength and glory.",
     sources: [
@@ -1806,6 +1838,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is a landscape read as a programme. The crescent that encircles it is the same crescent as on the national flag, and is the symbol of Islam. The hand of Fatima at the centre is a traditional protective symbol of the region; behind it stand the Atlas Mountains, the country's own geography, and above them a rising sun for a new era. The buildings at the foot stand for industry and the plants for agriculture — the two things the independent state set out to build. The present form, with the motto in Arabic rather than French, was adopted on 1 November 1976.",
     sources: [
       { title: "Emblem of Algeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
+    ],
+  },
+  "ec-arms": {
+    description: "The law describing the arms is unusually specific. The sun at the top crosses the part of the zodiac holding the signs for March, April, May and June — the four months of the 1845 Marcist revolution. Below it stands Chimborazo, the highest mountain in Ecuador and the point on the earth's surface furthest from its centre, with the river rising at its foot standing for the Guayas; on the river is a steamship whose mast is a caduceus, for commerce and industry. The condor above spreads its wings for the power, greatness and strength of Ecuador, and is read as always ready to strike at an enemy. The laurel at one side is the republic's victories and the palm at the other its martyrs; four national flags flank the whole.",
+    sources: [
+      { title: "Coat of arms of Ecuador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador" },
     ],
   },
   "ee-arms": {
@@ -2060,6 +2098,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
     ],
   },
+  "py-seal": {
+    description: "Paraguay's seal is the reason its flag is unique among national flags — it is the only one whose two sides differ, because the OBVERSE and the REVERSE of the seal are different devices and the flag carries one on each. The obverse, on the front of the flag, is the yellow star of May between a palm branch and an olive branch, ringed by the words República del Paraguay. The reverse, on the back, is a golden lion guarding a staff topped with a red Phrygian cap, above the motto Paz y Justicia — Peace and Justice. The first design dates from 1820, under the dictatorship of José Gaspar Rodríguez de Francia.",
+    sources: [
+      { title: "Seal of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Paraguay" },
+    ],
+  },
   "qa-emblem": {
     description: "The Amiri Diwan's own interpretation reads the emblem as the trinity of sand, sea and sky — the three elements Qatar's history is bound to. The dhow is the pearling fleet, the industry that drove the country's economic and social growth and largely made the state; the two palm trees and the island are the land; and the two crossed scimitars are Qatar's \"might as an Arab country\" and its standing as a safe haven for its people, a device it shares with Saudi Arabia, as it shares the palm. The present version, all in the maroon of the flag on white, was unveiled at the National Museum of Qatar on 15 September 2022, keeping every charge of the emblem it replaced.",
     sources: [
@@ -2160,6 +2204,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
     sources: [
       { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
+    ],
+  },
+  "uy-arms": {
+    description: "Each of the four quarters carries one idea, and two of them are animals rather than emblems. The upper left holds golden scales for equality and justice; the upper right the Cerro de Montevideo with its fortress on the summit, for strength. Below, a galloping black horse stands for liberty and a golden ox for abundance and plenty. The rising Sun of May crowning the oval is the birth of the nation and the May Revolution, and the laurel branch on one side with the olive on the other are triumph and peace.",
+    sources: [
+      { title: "Coat of arms of Uruguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay" },
     ],
   },
   "uz-emblem": {

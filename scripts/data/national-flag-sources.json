@@ -3172,8 +3172,99 @@
           "reuse": "flags/cr.svg",
           "design": "The national flag of Costa Rica, in the form adopted in 1848.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica"
+        },
+        {
+          "id": "cr-state",
+          "category": "official",
+          "name": "State flag and ensign of Costa Rica",
+          "from": 1998,
+          "to": 9999,
+          "commons": "Flag of Costa Rica (state).svg",
+          "file": "cr/costarica-state.svg",
+          "design": "The national flag charged with the full coat of arms — flown by the state, where the civil flag carries none.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags",
+          "sha256": "f622494dd5bf7c156ee4702a0cb16b8111024155f28cc1e2a1abe6e0c85e2e82",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cr-1823",
+          "category": "historical",
+          "name": "First flag of Costa Rica",
+          "from": 1823,
+          "to": 1823,
+          "commons": "Flag of Costa Rica (1821–1823).svg",
+          "file": "cr/costarica-1823.svg",
+          "design": "The first flag flown by Costa Rica itself, as a free state inside the Central American federation.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags",
+          "sha256": "dfcea8eed38f0e69f1a730068fd3add67bb3f5444786717c9a1541560cdc7b33",
+          "fetched": "2026-08-08",
+          "priorPolity": "the Free State of Costa Rica within the Federal Republic of Central America"
+        },
+        {
+          "id": "cr-mexican-empire",
+          "category": "historical",
+          "name": "Flag of the First Mexican Empire",
+          "from": 1821,
+          "to": 1823,
+          "sovereign": "the First Mexican Empire",
+          "commons": "Bandera del Primer Imperio Mexicano.svg",
+          "file": "cr/costarica-mexican-empire.svg",
+          "design": "The flag of Iturbide's empire, which Central America joined for two years after separating from Spain.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags",
+          "sha256": "73a1548d87c678e560c683cb1924b60a4f899a56a197144f44d59b69a1d24b59",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cr-spain",
+          "category": "historical",
+          "name": "War ensign of Spain",
+          "from": 1785,
+          "to": 1821,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The Spanish ensign of 1785, the last flown over the province.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags"
+        },
+        {
+          "id": "cr-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1541,
+          "to": 1785,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The Cross of Burgundy, the flag of New Spain.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Costa_Rican_flags"
+        },
+        {
+          "id": "cr-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Costa Rica",
+          "from": 1848,
+          "to": 9999,
+          "commons": "Coat of arms of Costa Rica.svg",
+          "file": "cr/costarica-arms.svg",
+          "design": "Three volcanoes in a valley between two oceans with a merchant ship in each, beneath a rising sun and seven stars.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica",
+          "meaning": {
+            "description": "The official description reads the arms as the country's geography: three volcanoes, one for each of its mountain ranges, and a broad valley between two oceans — the Pacific and the Caribbean — with a merchant ship on each, for the country's maritime history, under a rising sun. The stars above are a count that CHANGED: the 1848 design had five, one per province, and two more were added in 1964 to make seven when Puntarenas and Limón had reached provincial status. The arms are attributed to Pacífica Fernández, wife of President José María Castro Madriz, who designed the flag at the same time; the military trophies the original carried were removed by law in 1906.",
+            "sources": [
+              {
+                "title": "Coat of arms of Costa Rica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Costa_Rica"
+              }
+            ]
+          },
+          "sha256": "7e248a4c85adea82d0096c7efce3d94ec1479272b50ecc798e6a4f6fe055dafd",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1838,
+        "event": "Costa Rica withdrew from the Federal Republic of Central America on 14 November 1838 and became a sovereign state",
+        "note": "Central America had declared independence from Spain on 15 September 1821, but Costa Rica then belonged to the First Mexican Empire until 1823 and to the Central American federation until 1838; a republic was proclaimed in 1848.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Costa_Rica"
+      }
     },
     "CU": {
       "flags": [
@@ -3786,8 +3877,120 @@
           "reuse": "flags/ec.svg",
           "design": "The national flag of Ecuador, in the form adopted in 1900.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Ecuador"
+        },
+        {
+          "id": "ec-1845",
+          "category": "historical",
+          "name": "Flag of Ecuador (1845–1860)",
+          "from": 1845,
+          "to": 1860,
+          "commons": "Flag of Ecuador (1845–1860).svg",
+          "file": "ec/ecuador-1845.svg",
+          "design": "The white-and-blue flag fixed by the Cuenca Convention, before the yellow-blue-red was readopted in 1860.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
+          "sha256": "643e1c3a8709635c6b084af792add4774f1cbbd2f8dc4e329fa4a16ac772eeda",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ec-1830",
+          "category": "historical",
+          "name": "Provisional flag of Ecuador (1830–1835)",
+          "from": 1830,
+          "to": 1835,
+          "commons": "Flag of Ecuador (1830–1835).svg",
+          "file": "ec/ecuador-1830.svg",
+          "design": "The provisional flag of the new republic after leaving Gran Colombia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
+          "sha256": "47f1db2e7116dea12b3d933c42c4b24999304b25f85790e02634887d4b20c9c1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ec-gran-colombia",
+          "category": "historical",
+          "name": "Flag of Gran Colombia",
+          "from": 1822,
+          "to": 1830,
+          "priorPolity": "Gran Colombia",
+          "commons": "Flag of Gran Colombia.svg",
+          "file": "ec/ecuador-gran-colombia.svg",
+          "design": "The flag of the union Ecuador belonged to until it seceded in 1830.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
+          "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ec-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1534,
+          "to": 1785,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The Spanish military flag, flown from the founding of Quito in 1534.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags"
+        },
+        {
+          "id": "ec-president",
+          "category": "standard",
+          "name": "Presidential standard of Ecuador",
+          "commons": "National Standard of Ecuador.svg",
+          "file": "ec/ecuador-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
+          "sha256": "2af36d2cf4bdd6b4b7584029c58d713dd18840b242eb76e613ddcabaa8497669",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ec-army",
+          "category": "military",
+          "name": "Flag of the Ecuadorian Army",
+          "commons": "Flag of Ecuador Army.svg",
+          "file": "ec/ecuador-army.svg",
+          "design": "The army's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
+          "sha256": "3a82423fc7adbe49ee080a63371329a7067b7a68f3561c85c70c3ab743cd6e5e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ec-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Ecuador",
+          "commons": "Naval Jack of Ecuador.svg",
+          "file": "ec/ecuador-naval-jack.svg",
+          "design": "The naval jack.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ecuadorian_flags",
+          "sha256": "a1f318a091d5cb6615eda87bdd4cb74e8d8a00888c5760fd1282607c5eed9a2c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ec-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Ecuador",
+          "from": 1900,
+          "to": 9999,
+          "commons": "Coat of arms of Ecuador.svg",
+          "file": "ec/ecuador-arms.svg",
+          "design": "An oval shield with Chimborazo, the Guayas river and a steamship beneath a sun crossing the zodiac, crested with a condor, flanked by four flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador",
+          "meaning": {
+            "description": "The law describing the arms is unusually specific. The sun at the top crosses the part of the zodiac holding the signs for March, April, May and June — the four months of the 1845 Marcist revolution. Below it stands Chimborazo, the highest mountain in Ecuador and the point on the earth's surface furthest from its centre, with the river rising at its foot standing for the Guayas; on the river is a steamship whose mast is a caduceus, for commerce and industry. The condor above spreads its wings for the power, greatness and strength of Ecuador, and is read as always ready to strike at an enemy. The laurel at one side is the republic's victories and the palm at the other its martyrs; four national flags flank the whole.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ecuador — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ecuador"
+              }
+            ]
+          },
+          "sha256": "31c93be91a59e508eb06d5ae187d39a6197bde98b78354872aeca8e58691d151",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1830,
+        "event": "Ecuador seceded from Gran Colombia on 13 May 1830",
+        "note": "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Ecuador"
+      }
     },
     "EE": {
       "flags": [
@@ -10622,6 +10825,65 @@
           "reuse": "flags/py.svg",
           "design": "The national flag of Paraguay, in the form adopted in 1842.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Paraguay"
+        },
+        {
+          "id": "py-president",
+          "category": "standard",
+          "name": "Flag of the President of Paraguay",
+          "from": 2013,
+          "to": 9999,
+          "commons": "Flag of the President of Paraguay.svg",
+          "file": "py/paraguay-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags",
+          "sha256": "dcae88ba59072b981487987e53074643a66665d0f23529465b8da242cfc445aa",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "py-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Paraguay",
+          "from": 1811,
+          "to": 9999,
+          "commons": "Naval Jack of Paraguay.svg",
+          "file": "py/paraguay-naval-jack.svg",
+          "design": "The naval jack.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags",
+          "sha256": "db7319d431abeaa578a4b603b63a24549e3affb268582402a798abfec9cf71f7",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "py-air-force",
+          "category": "military",
+          "name": "Flag of the Paraguayan Air Force",
+          "commons": "Flag of Paraguayan Air Force.svg",
+          "file": "py/paraguay-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags",
+          "sha256": "2da1a2d258eea4e69fb08ed33957c466e588207117dd4734783b365059ea5944",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "py-seal",
+          "category": "coatofarms",
+          "name": "National seal of Paraguay",
+          "from": 1842,
+          "to": 9999,
+          "commons": "Coat of arms of Paraguay.svg",
+          "file": "py/paraguay-seal.svg",
+          "design": "A yellow five-pointed star within palm and olive branches, ringed by the name of the republic.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_Paraguay",
+          "meaning": {
+            "description": "Paraguay's seal is the reason its flag is unique among national flags — it is the only one whose two sides differ, because the OBVERSE and the REVERSE of the seal are different devices and the flag carries one on each. The obverse, on the front of the flag, is the yellow star of May between a palm branch and an olive branch, ringed by the words República del Paraguay. The reverse, on the back, is a golden lion guarding a staff topped with a red Phrygian cap, above the motto Paz y Justicia — Peace and Justice. The first design dates from 1820, under the dictatorship of José Gaspar Rodríguez de Francia.",
+            "sources": [
+              {
+                "title": "Seal of Paraguay — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Paraguay"
+              }
+            ]
+          },
+          "sha256": "01e231d0e641bc888adc6472fabde4d175e7b411b4d5f4dc2eeb44c26c5039ee",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -13698,6 +13960,89 @@
           "reuse": "flags/uy.svg",
           "design": "The national flag of Uruguay, in the form adopted in 1830.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uruguay"
+        },
+        {
+          "id": "uy-artigas",
+          "category": "official",
+          "name": "Flag of Artigas",
+          "from": 1952,
+          "to": 9999,
+          "commons": "Flag of Artigas.svg",
+          "file": "uy/uruguay-artigas.svg",
+          "design": "The blue-white-blue flag with a red diagonal, of José Gervasio Artigas — one of the country's three official flags.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
+          "sha256": "9841f000bc871c232d5228e1d5e4f0bb738e387be4256e85ec509fdecf1bda64",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uy-treinta-y-tres",
+          "category": "official",
+          "name": "Flag of the Treinta y Tres",
+          "from": 1952,
+          "to": 9999,
+          "commons": "Flag of the Treinta y Tres.svg",
+          "file": "uy/uruguay-treinta-y-tres.svg",
+          "design": "The blue-white-red triband bearing the motto Libertad o Muerte, carried by the Thirty-Three Orientals in 1825 — the third official flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
+          "sha256": "918dcdf9be0f4fb7bf592dcb08c6b87b9802b5b24b0bcfc46b45e266b2f11a4e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uy-army",
+          "category": "military",
+          "name": "Flag of the Uruguayan Army",
+          "commons": "Flag of Uruguayan Army.svg",
+          "file": "uy/uruguay-army.svg",
+          "design": "The army's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
+          "sha256": "40f8bdb62f862815b0bf214e5da55524ce5fa4d9f0a96b36029cd993a2205231",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uy-air-force",
+          "category": "military",
+          "name": "Flag of the Uruguayan Air Force",
+          "from": 1953,
+          "to": 9999,
+          "commons": "Flag of the Uruguayan Air Force.svg",
+          "file": "uy/uruguay-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
+          "sha256": "382165b31a695ffb72c0ff6e301b124fa82cfd2a62080307a5458dabd6e54e96",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uy-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Uruguay",
+          "commons": "Naval Jack of Uruguay.svg",
+          "file": "uy/uruguay-naval-jack.svg",
+          "design": "The naval jack.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags",
+          "sha256": "4ecc3c3d78ea8337e7f8e96d4375a2b2fd59a11f6cd318928da776f4794ed2a2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "uy-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Uruguay",
+          "from": 1829,
+          "to": 9999,
+          "commons": "Coat of arms of Uruguay.svg",
+          "file": "uy/uruguay-arms.svg",
+          "design": "An oval shield quartered with scales, Montevideo hill, a horse and an ox, crowned by the Sun of May between laurel and olive.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay",
+          "meaning": {
+            "description": "Each of the four quarters carries one idea, and two of them are animals rather than emblems. The upper left holds golden scales for equality and justice; the upper right the Cerro de Montevideo with its fortress on the summit, for strength. Below, a galloping black horse stands for liberty and a golden ox for abundance and plenty. The rising Sun of May crowning the oval is the birth of the nation and the May Revolution, and the laurel branch on one side with the olive on the other are triumph and peace.",
+            "sources": [
+              {
+                "title": "Coat of arms of Uruguay — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay"
+              }
+            ]
+          },
+          "sha256": "eac800fc113f1d9c7d084d47eb8722de2f56b7761afa7b1acdc7464af8cdf20a",
+          "fetched": "2026-08-08"
         }
       ]
     },
