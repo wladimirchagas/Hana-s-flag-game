@@ -1276,6 +1276,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "TZ": [
     { id: "tz-official-national", category: "official", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
     { id: "tz-current", category: "historical", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
+    { id: "tz-tanganyika", category: "historical", name: "Flag of Tanganyika", from: 1961, to: 1964, priorPolity: "the Republic of Tanganyika", path: "national-flags/tz/tanzania-tanganyika.svg", design: "The green-black-green flag of independent Tanganyika, which united with Zanzibar in 1964 to form Tanzania.", source: "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags" },
+    { id: "tz-tanganyika-territory", category: "historical", name: "Flag of Tanganyika Territory", from: 1919, to: 1961, sovereign: "the United Kingdom", path: "national-flags/tz/tanzania-tanganyika-territory.svg", design: "A British Blue Ensign defaced with the territory's giraffe badge, flown over the League of Nations mandate and then the UN trust territory.", source: "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags" },
+    { id: "tz-zanzibar", category: "historical", name: "Flag of the Sultanate of Zanzibar", from: 1896, to: 1963, sovereign: "the United Kingdom", path: "national-flags/tz/tanzania-zanzibar.svg", design: "The red flag of the sultanate as flown under the British protectorate.", source: "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags" },
+    { id: "tz-german", category: "historical", name: "Colonial flag of the German Empire", from: 1891, to: 1918, sovereign: "the German Empire", path: "national-flags/tz/tanzania-german.svg", design: "The imperial colonial flag flown over German East Africa.", source: "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags" },
+    { id: "tz-portugal", category: "historical", name: "Flag of the Kingdom of Portugal (1667–1698)", from: 1667, to: 1698, sovereign: "Portugal", path: "national-flags/tz/tanzania-portugal.svg", design: "The Portuguese royal arms in their 1667 pattern, flown over Zanzibar until the Omani takeover.", source: "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags" },
+    { id: "tz-president", category: "standard", name: "Presidential flag of Tanzania", from: 1964, to: 9999, path: "national-flags/tz/tanzania-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags" },
+    { id: "tz-arms", category: "coatofarms", name: "Coat of arms of Tanzania", from: 1964, to: 9999, path: "national-flags/tz/tanzania-arms.svg", design: "A warrior's shield bearing a torch, the flag, a spear and crossed axe and hoe, on Kilimanjaro, supported by a man and a woman holding elephant tusks.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania" },
   ],
   "UA": [
     { id: "ua-official-national", category: "official", name: "Flag of Ukraine", from: 1992, to: 9999, primary: true, path: "flags/ua.svg", design: "The national flag of Ukraine, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Ukraine" },
@@ -1296,6 +1303,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "UG": [
     { id: "ug-official-national", category: "official", name: "Flag of Uganda", from: 1962, to: 9999, primary: true, path: "flags/ug.svg", design: "The national flag of Uganda, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
     { id: "ug-current", category: "historical", name: "Flag of Uganda", from: 1962, to: 9999, primary: true, path: "flags/ug.svg", design: "The national flag of Uganda, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Uganda" },
+    { id: "ug-1962-dominion", category: "historical", name: "Flag of the Dominion of Uganda", from: 1962, to: 1962, path: "national-flags/ug/uganda-1962.svg", design: "The blue flag with the crested crane proposed before independence, replaced within the year by the present design.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
+    { id: "ug-protectorate", category: "historical", name: "Flag of the Uganda Protectorate", from: 1914, to: 1962, sovereign: "the United Kingdom", path: "national-flags/ug/uganda-protectorate.svg", design: "A British Blue Ensign defaced with the protectorate's badge, the crested crane.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
+    { id: "ug-ibeac", category: "historical", name: "Flag of the Imperial British East Africa Company", from: 1890, to: 1894, sovereign: "the Imperial British East Africa Company", path: "national-flags/ug/uganda-ibeac.svg", design: "The company's blue ensign, flown while a chartered company administered the territory.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
+    { id: "ug-buganda", category: "historical", name: "Flag of the Kingdom of Buganda", from: 1861, to: 1876, priorPolity: "the Kingdom of Buganda", path: "national-flags/ug/uganda-buganda.svg", design: "The flag of the kingdom at the heart of what became Uganda, before British rule.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
+    { id: "ug-updf", category: "military", name: "Flag of the Uganda People's Defence Force", from: 2019, to: 9999, path: "national-flags/ug/uganda-updf.svg", design: "The defence force's flag in its 2019 form.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
+    { id: "ug-air-force", category: "military", name: "Flag of the Uganda Air Force", from: 1964, to: 9999, path: "national-flags/ug/uganda-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
+    { id: "ug-president", category: "standard", name: "Presidential flag of Uganda", from: 1962, to: 9999, path: "national-flags/ug/uganda-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
+    { id: "ug-arms", category: "coatofarms", name: "Coat of arms of Uganda", from: 1962, to: 9999, path: "national-flags/ug/uganda-arms.svg", design: "A shield with waves, a sun and a drum, crossed with two spears, supported by a crested crane and a kob, on a mound above the Nile between coffee and cotton.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda" },
   ],
   "US": [
     { id: "us-official-national", category: "official", name: "Flag of the United States", from: 1960, to: 9999, primary: true, path: "flags/us.svg", design: "The national flag, fifty stars since 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
@@ -1423,6 +1438,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "ZW": [
     { id: "zw-official-national", category: "official", name: "Flag of Zimbabwe", from: 1980, to: 9999, primary: true, path: "flags/zw.svg", design: "The national flag of Zimbabwe, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe" },
     { id: "zw-current", category: "historical", name: "Flag of Zimbabwe", from: 1980, to: 9999, primary: true, path: "flags/zw.svg", design: "The national flag of Zimbabwe, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe" },
+    { id: "zw-zimbabwe-rhodesia", category: "historical", name: "Flag of Zimbabwe Rhodesia", from: 1979, to: 1979, priorPolity: "Zimbabwe Rhodesia, the internal settlement of 1979", path: "national-flags/zw/zimbabwe-rhodesia-1979.svg", design: "The flag of the short-lived Zimbabwe Rhodesia, bearing the Zimbabwe Bird — the biracial government of the 1979 internal settlement, which no state recognised and which lasted six months before British rule was resumed for the Lancaster House transition.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
+    { id: "zw-rhodesia-1968", category: "historical", name: "Flag of Rhodesia (1968–1979)", from: 1968, to: 1979, priorPolity: "Rhodesia, the state declared by the unrecognised 1965 declaration of independence", path: "national-flags/zw/zimbabwe-rhodesia-1968.svg", design: "The green-white-green flag with the Rhodesian arms, flown by a state no country recognised.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
+    { id: "zw-southern-rhodesia", category: "historical", name: "Flag of Southern Rhodesia", from: 1923, to: 1953, sovereign: "the United Kingdom", path: "national-flags/zw/zimbabwe-southern-rhodesia.svg", design: "A British Blue Ensign defaced with the colony's arms.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
+    { id: "zw-bsac", category: "historical", name: "Flag of the British South Africa Company", from: 1890, to: 1923, sovereign: "the British South Africa Company", path: "national-flags/zw/zimbabwe-bsac.svg", design: "The chartered company's flag, flown while Cecil Rhodes's company administered the territory.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
+    { id: "zw-army", category: "military", name: "Flag of the Zimbabwe National Army", from: 1980, to: 9999, path: "national-flags/zw/zimbabwe-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
+    { id: "zw-air-force", category: "military", name: "Air Force Ensign of Zimbabwe", from: 1980, to: 9999, path: "national-flags/zw/zimbabwe-air-force.svg", design: "The air force's ensign.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
+    { id: "zw-president", category: "standard", name: "Flag of the President of Zimbabwe", from: 1987, to: 9999, path: "national-flags/zw/zimbabwe-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags" },
+    { id: "zw-arms", category: "coatofarms", name: "Coat of arms of Zimbabwe", from: 1981, to: 9999, path: "national-flags/zw/zimbabwe-arms.svg", design: "A green shield bearing Great Zimbabwe beneath wavy blue and white lines, crossed with a hoe and a rifle, supported by two kudus, crested with the Zimbabwe Bird on a red star.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zimbabwe" },
   ],
 };
 
@@ -1464,10 +1487,13 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
+  "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
+  "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
   "VE": { year: 1811, event: "Declaration of independence from Spain, 5 July 1811", note: "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.", source: "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence" },
   "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
   "ZA": { year: 1910, event: "The Union of South Africa was established as a self-governing dominion on 31 May 1910.", note: "Full legislative independence followed with the Statute of Westminster in 1931; the republic was declared in 1961.", source: "https://en.wikipedia.org/wiki/Union_of_South_Africa" },
+  "ZW": { year: 1980, event: "Independence from the United Kingdom, 18 April 1980", note: "A white-minority government had unilaterally declared independence as Rhodesia in 1965; no state recognised it.", source: "https://en.wikipedia.org/wiki/History_of_Zimbabwe" },
 };
 
 /**
@@ -1828,10 +1854,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Turkish passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkish_passport" },
     ],
   },
+  "tz-arms": {
+    description: "The shield is read in bands from the top: the golden portion is the country's minerals; the national flag follows; the red band beneath it is the rich fertile soil of Africa; and the wavy bands at the foot are the land, sea, lakes and coastline of the united republic. On the golden part burns the Uhuru torch, signifying freedom, enlightenment and knowledge, with a spear for the defence of that freedom and a crossed axe and hoe, the tools the people use to develop the country. The shield stands on Mount Kilimanjaro. A man and a woman support it holding elephant tusks, with a clove bush at the man's feet and a cotton bush at the woman's — the crops of Zanzibar and of the mainland, placed there to show the co-operation of the two parts of the union.",
+    sources: [
+      { title: "Coat of arms of Tanzania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania" },
+    ],
+  },
   "ua-arms": {
     description: "The tryzub is the oldest continuously used symbol on Ukrainian territory: it appears on the seals of the Rurik dynasty and was stamped on the gold and silver coins of Volodymyr the Great (980–1015), who passed it to his sons as a dynastic device, and on the bricks of the Church of the Tithes in Kyiv. Its original meaning is not settled — historians have read it as a falcon in flight, an arched bow, an anchor, or the Holy Trinity — and it was not treated as a NATIONAL symbol until 1917, when the historian Mykhailo Hrushevsky proposed it over rival candidates such as a crossbow or a Cossack with a musket. Vasyl Krychevsky's drawing was adopted by the Ukrainian People's Republic in February 1918, and the small coat of arms was readopted on 19 February 1992; the constitution provides for a great coat of arms that has still not been adopted.",
     sources: [
       { title: "Coat of arms of Ukraine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ukraine" },
+    ],
+  },
+  "ug-arms": {
+    description: "The shield and the two spears behind it are the willingness of Ugandans to defend their country. The three charges on the shield are the waves of Lake Victoria and Lake Albert at the top, the sun in the centre for the country's many days of brilliant sunshine, and a traditional Ugandan drum below. The supporters are the crested crane, the national bird, and the Ugandan kob for the country's wildlife. The shield stands on a green mound of fertile land above a representation of the Nile, with the two main cash crops, coffee and cotton, on either side; the motto reads \"For God and My Country\". The drum's reading is contested: before Milton Obote's rule it stood for royalty and the authority of Uganda's kings, and the now-common explanation dates from after the 1966 crisis in which Obote attacked the Kabaka of Buganda.",
+    sources: [
+      { title: "Coat of arms of Uganda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda" },
     ],
   },
   "us-arms": {
@@ -1881,6 +1919,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device is the post-2000 coat of arms — the Khoisan rock-art figures and the secretary bird — so the passport carries the emblem adopted after apartheid rather than the one it replaced. The heading appears in English and Afrikaans, two of the eleven official languages.",
     sources: [
       { title: "South African passport — Wikipedia", url: "https://en.wikipedia.org/wiki/South_African_passport" },
+    ],
+  },
+  "zw-arms": {
+    description: "The government's own reading runs charge by charge. The green shield is the fertility of the country's soil and water, and the blue and white wavy lines above it are prosperity-bringing water; the stonework on it is Great Zimbabwe, the country's historical heritage and the source of its name. The hoe and the AK rifle crossed behind the shield are the transition from war to peace. The two kudu supporters are the unity of purpose of the country's ethnic groups — described as a harmonious blend of black, white and brown — and the earth mound they stand on carries the plants that give food and clothing. The wreath of gold and green is mining and agriculture, the national economy. The crest is the Great Zimbabwe Bird on a red star: the star is an ancient symbol of hope for the future, tinctured red to recall the suffering of the people and the need to avoid its recurrence.",
+    sources: [
+      { title: "Coat of arms of Zimbabwe — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zimbabwe" },
     ],
   },
 };

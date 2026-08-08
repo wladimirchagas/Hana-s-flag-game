@@ -10876,8 +10876,119 @@
           "reuse": "flags/tz.svg",
           "design": "The national flag of Tanzania, in the form adopted in 1964.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Tanzania"
+        },
+        {
+          "id": "tz-tanganyika",
+          "category": "historical",
+          "name": "Flag of Tanganyika",
+          "from": 1961,
+          "to": 1964,
+          "priorPolity": "the Republic of Tanganyika",
+          "commons": "Flag of Tanganyika (1961–1964).svg",
+          "file": "tz/tanzania-tanganyika.svg",
+          "design": "The green-black-green flag of independent Tanganyika, which united with Zanzibar in 1964 to form Tanzania.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
+          "sha256": "d450f2fdf3abf4bcb60a84bb3b420dc5ef48d7ad5cd7b7522d82305ef3c23615",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tz-zanzibar",
+          "category": "historical",
+          "name": "Flag of the Sultanate of Zanzibar",
+          "from": 1896,
+          "to": 1963,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Zanzibar Under British Rule.svg",
+          "file": "tz/tanzania-zanzibar.svg",
+          "design": "The red flag of the sultanate as flown under the British protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
+          "sha256": "8e573bc3fc3836039fe0252ca79e31f5c45a720ac2f39c56da67eb9530dcfd77",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tz-tanganyika-territory",
+          "category": "historical",
+          "name": "Flag of Tanganyika Territory",
+          "from": 1919,
+          "to": 1961,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Tanganyika (1923–1961).svg",
+          "file": "tz/tanzania-tanganyika-territory.svg",
+          "design": "A British Blue Ensign defaced with the territory's giraffe badge, flown over the League of Nations mandate and then the UN trust territory.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
+          "sha256": "33b859c07db427fbba63ad2709a63a9682993d2853a236db105c8a38a686700c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tz-german",
+          "category": "historical",
+          "name": "Colonial flag of the German Empire",
+          "from": 1891,
+          "to": 1918,
+          "sovereign": "the German Empire",
+          "commons": "Reichskolonialflagge.svg",
+          "file": "tz/tanzania-german.svg",
+          "design": "The imperial colonial flag flown over German East Africa.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
+          "sha256": "b49d33d061227edd65beffea373c0ff438f48a3b4083a161dca5ff1f16ee6716",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tz-portugal",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Portugal (1667–1698)",
+          "from": 1667,
+          "to": 1698,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal (1667).svg",
+          "file": "tz/tanzania-portugal.svg",
+          "design": "The Portuguese royal arms in their 1667 pattern, flown over Zanzibar until the Omani takeover.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
+          "sha256": "f8867c2f08581286fc2d36f698257875f47488eb108af58e2ea209981c6c80b4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tz-president",
+          "category": "standard",
+          "name": "Presidential flag of Tanzania",
+          "from": 1964,
+          "to": 9999,
+          "commons": "Flag of the President of Tanzania.svg",
+          "file": "tz/tanzania-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Tanzanian_flags",
+          "sha256": "99c7ad00024cac833ff5d814bb1c3730e7030bdb5b3d9510e831c88f1c8cbae0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "tz-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Tanzania",
+          "from": 1964,
+          "to": 9999,
+          "commons": "Coat of arms of Tanzania.svg",
+          "file": "tz/tanzania-arms.svg",
+          "design": "A warrior's shield bearing a torch, the flag, a spear and crossed axe and hoe, on Kilimanjaro, supported by a man and a woman holding elephant tusks.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania",
+          "meaning": {
+            "description": "The shield is read in bands from the top: the golden portion is the country's minerals; the national flag follows; the red band beneath it is the rich fertile soil of Africa; and the wavy bands at the foot are the land, sea, lakes and coastline of the united republic. On the golden part burns the Uhuru torch, signifying freedom, enlightenment and knowledge, with a spear for the defence of that freedom and a crossed axe and hoe, the tools the people use to develop the country. The shield stands on Mount Kilimanjaro. A man and a woman support it holding elephant tusks, with a clove bush at the man's feet and a cotton bush at the woman's — the crops of Zanzibar and of the mainland, placed there to show the co-operation of the two parts of the union.",
+            "sources": [
+              {
+                "title": "Coat of arms of Tanzania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tanzania"
+              }
+            ]
+          },
+          "sha256": "d2b19691ef37e8000bba507b99834cddb4c3a2a85ce3d0583903b2d6f0ac5f57",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1961,
+        "event": "Tanganyika became independent of the United Kingdom on 9 December 1961",
+        "note": "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Tanzania"
+      }
     },
     "UA": {
       "flags": [
@@ -11084,8 +11195,129 @@
           "reuse": "flags/ug.svg",
           "design": "The national flag of Uganda, in the form adopted in 1962.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uganda"
+        },
+        {
+          "id": "ug-1962-dominion",
+          "category": "historical",
+          "name": "Flag of the Dominion of Uganda",
+          "from": 1962,
+          "to": 1962,
+          "commons": "Flag of Uganda 1962.svg",
+          "file": "ug/uganda-1962.svg",
+          "design": "The blue flag with the crested crane proposed before independence, replaced within the year by the present design.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
+          "sha256": "69640ccaf39ecc091dcb5d54a707dd1aa76b219762e206ee84d59522f0ad2d01",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ug-protectorate",
+          "category": "historical",
+          "name": "Flag of the Uganda Protectorate",
+          "from": 1914,
+          "to": 1962,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the Uganda Protectorate.svg",
+          "file": "ug/uganda-protectorate.svg",
+          "design": "A British Blue Ensign defaced with the protectorate's badge, the crested crane.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
+          "sha256": "f6a073e02dd3cd691199bf0283d0e49f83b4e25a86fb1a7ff22ba73ac33fb2b2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ug-ibeac",
+          "category": "historical",
+          "name": "Flag of the Imperial British East Africa Company",
+          "from": 1890,
+          "to": 1894,
+          "sovereign": "the Imperial British East Africa Company",
+          "commons": "Blue Ensign of the Imperial British East Africa Company.svg",
+          "file": "ug/uganda-ibeac.svg",
+          "design": "The company's blue ensign, flown while a chartered company administered the territory.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
+          "sha256": "8a6aab4c1f3a58c00fd4c86dd6c35237a89167b854b758d2c522ffeccd024bc9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ug-buganda",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Buganda",
+          "from": 1861,
+          "to": 1876,
+          "priorPolity": "the Kingdom of Buganda",
+          "commons": "Flag of Buganda (1861-1876, 1881-1890).svg",
+          "file": "ug/uganda-buganda.svg",
+          "design": "The flag of the kingdom at the heart of what became Uganda, before British rule.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
+          "sha256": "2d91f57bca76ff0ccd29c1fa6cb95f43348cdf858a4155e9bfe39f0ae58b7b17",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ug-president",
+          "category": "standard",
+          "name": "Presidential flag of Uganda",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Flag of the President of Uganda.svg",
+          "file": "ug/uganda-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
+          "sha256": "add80126dec1fbca7982d19e3c5de400e6860350ae628d80aa0eb04017344ef1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ug-updf",
+          "category": "military",
+          "name": "Flag of the Uganda People's Defence Force",
+          "from": 2019,
+          "to": 9999,
+          "commons": "Flag of the Uganda People's Defence Force (2019).svg",
+          "file": "ug/uganda-updf.svg",
+          "design": "The defence force's flag in its 2019 form.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
+          "sha256": "288745620beac81d02fe52527ccc861381075a98fee8508855edd2561c12ef6a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ug-air-force",
+          "category": "military",
+          "name": "Flag of the Uganda Air Force",
+          "from": 1964,
+          "to": 9999,
+          "commons": "Flag of the Uganda People's Defence Air Force.svg",
+          "file": "ug/uganda-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ugandan_flags",
+          "sha256": "cd8da562629ee0470e2c7dace29328d853e2bbbdf8d628b510ef5f924c1317ce",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ug-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Uganda",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Coat of arms of Uganda.svg",
+          "file": "ug/uganda-arms.svg",
+          "design": "A shield with waves, a sun and a drum, crossed with two spears, supported by a crested crane and a kob, on a mound above the Nile between coffee and cotton.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda",
+          "meaning": {
+            "description": "The shield and the two spears behind it are the willingness of Ugandans to defend their country. The three charges on the shield are the waves of Lake Victoria and Lake Albert at the top, the sun in the centre for the country's many days of brilliant sunshine, and a traditional Ugandan drum below. The supporters are the crested crane, the national bird, and the Ugandan kob for the country's wildlife. The shield stands on a green mound of fertile land above a representation of the Nile, with the two main cash crops, coffee and cotton, on either side; the motto reads \"For God and My Country\". The drum's reading is contested: before Milton Obote's rule it stood for royalty and the authority of Uganda's kings, and the now-common explanation dates from after the 1966 crisis in which Obote attacked the Kabaka of Buganda.",
+            "sources": [
+              {
+                "title": "Coat of arms of Uganda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda"
+              }
+            ]
+          },
+          "sha256": "ba55141722475a9f364297672e924e01ed9a8fe43b1c24494c9029539102d4a8",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1962,
+        "event": "Independence from the United Kingdom, 9 October 1962",
+        "source": "https://en.wikipedia.org/wiki/History_of_Uganda"
+      }
     },
     "US": {
       "flags": [
@@ -12431,8 +12663,131 @@
           "reuse": "flags/zw.svg",
           "design": "The national flag of Zimbabwe, in the form adopted in 1980.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe"
+        },
+        {
+          "id": "zw-zimbabwe-rhodesia",
+          "category": "historical",
+          "name": "Flag of Zimbabwe Rhodesia",
+          "from": 1979,
+          "to": 1979,
+          "commons": "Flag of Zimbabwe Rhodesia (1979).svg",
+          "file": "zw/zimbabwe-rhodesia-1979.svg",
+          "design": "The flag of the short-lived Zimbabwe Rhodesia, bearing the Zimbabwe Bird — the biracial government of the 1979 internal settlement, which no state recognised and which lasted six months before British rule was resumed for the Lancaster House transition.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
+          "sha256": "ffbc9d1a34eff7b8847d82078d4cb2c089d6331e417a65b6451915f7ae0961dd",
+          "fetched": "2026-08-08",
+          "priorPolity": "Zimbabwe Rhodesia, the internal settlement of 1979"
+        },
+        {
+          "id": "zw-rhodesia-1968",
+          "category": "historical",
+          "name": "Flag of Rhodesia (1968–1979)",
+          "from": 1968,
+          "to": 1979,
+          "priorPolity": "Rhodesia, the state declared by the unrecognised 1965 declaration of independence",
+          "commons": "Flag of Rhodesia (1968–1979).svg",
+          "file": "zw/zimbabwe-rhodesia-1968.svg",
+          "design": "The green-white-green flag with the Rhodesian arms, flown by a state no country recognised.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
+          "sha256": "fb60d7c3721a98cd357b71dfc7deb318f273521ff0337722b43b3788f7673ff3",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "zw-southern-rhodesia",
+          "category": "historical",
+          "name": "Flag of Southern Rhodesia",
+          "from": 1923,
+          "to": 1953,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Southern Rhodesia (1924–1964).svg",
+          "file": "zw/zimbabwe-southern-rhodesia.svg",
+          "design": "A British Blue Ensign defaced with the colony's arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
+          "sha256": "340a83877f53d02664cd9c6148b281cb5cf1fe27409280a9f4c1a261e319a7e9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "zw-bsac",
+          "category": "historical",
+          "name": "Flag of the British South Africa Company",
+          "from": 1890,
+          "to": 1923,
+          "sovereign": "the British South Africa Company",
+          "commons": "Flag of the British South Africa Company.svg",
+          "file": "zw/zimbabwe-bsac.svg",
+          "design": "The chartered company's flag, flown while Cecil Rhodes's company administered the territory.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
+          "sha256": "4ecfd8762851da11fe54b42bcc2e4d7baca0a64f928a881395bf61e66e97e017",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "zw-president",
+          "category": "standard",
+          "name": "Flag of the President of Zimbabwe",
+          "from": 1987,
+          "to": 9999,
+          "commons": "Flag of the President of Zimbabwe.svg",
+          "file": "zw/zimbabwe-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
+          "sha256": "09b1dba445353a41b537816ab9f5830c28699844c6c02344ece9d5841af82d15",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "zw-army",
+          "category": "military",
+          "name": "Flag of the Zimbabwe National Army",
+          "from": 1980,
+          "to": 9999,
+          "commons": "Flag of the Zimbabwe National Army.svg",
+          "file": "zw/zimbabwe-army.svg",
+          "design": "The army's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
+          "sha256": "e2f1d57b6ddc0b1cc914643aae3b9c521540ab7ce6f9e4f1312e19db8ba4bc43",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "zw-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Zimbabwe",
+          "from": 1980,
+          "to": 9999,
+          "commons": "Air Force Ensign of Zimbabwe.svg",
+          "file": "zw/zimbabwe-air-force.svg",
+          "design": "The air force's ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Zimbabwean_flags",
+          "sha256": "a237602dea8786e32070fd31c2aee2b9298afe35cc6563cf9d7ec8336c416850",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "zw-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Zimbabwe",
+          "from": 1981,
+          "to": 9999,
+          "commons": "Coat of arms of Zimbabwe.svg",
+          "file": "zw/zimbabwe-arms.svg",
+          "design": "A green shield bearing Great Zimbabwe beneath wavy blue and white lines, crossed with a hoe and a rifle, supported by two kudus, crested with the Zimbabwe Bird on a red star.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zimbabwe",
+          "meaning": {
+            "description": "The government's own reading runs charge by charge. The green shield is the fertility of the country's soil and water, and the blue and white wavy lines above it are prosperity-bringing water; the stonework on it is Great Zimbabwe, the country's historical heritage and the source of its name. The hoe and the AK rifle crossed behind the shield are the transition from war to peace. The two kudu supporters are the unity of purpose of the country's ethnic groups — described as a harmonious blend of black, white and brown — and the earth mound they stand on carries the plants that give food and clothing. The wreath of gold and green is mining and agriculture, the national economy. The crest is the Great Zimbabwe Bird on a red star: the star is an ancient symbol of hope for the future, tinctured red to recall the suffering of the people and the need to avoid its recurrence.",
+            "sources": [
+              {
+                "title": "Coat of arms of Zimbabwe — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zimbabwe"
+              }
+            ]
+          },
+          "sha256": "7d93b5df2edde2a23a6954e3a23078b676360268696cde2b1f4c6fedb068b862",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1980,
+        "event": "Independence from the United Kingdom, 18 April 1980",
+        "note": "A white-minority government had unilaterally declared independence as Rhodesia in 1965; no state recognised it.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Zimbabwe"
+      }
     }
   }
 }
