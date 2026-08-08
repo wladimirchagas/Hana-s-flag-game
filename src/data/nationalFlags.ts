@@ -118,8 +118,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AR": [
     { id: "ar-official-national", category: "official", name: "Flag of Argentina", from: 1861, to: 9999, primary: true, path: "flags/ar.svg", design: "The national flag of Argentina, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
     { id: "ar-current", category: "historical", name: "Flag of Argentina", from: 1861, to: 9999, primary: true, path: "flags/ar.svg", design: "The national flag of Argentina, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
+    { id: "ar-confederation", category: "historical", name: "Flag of the Argentine Confederation", from: 1850, to: 1861, path: "national-flags/ar/argentina-confederation.svg", design: "The light blue and white triband of the Confederation, before the present flag was fixed in 1861.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
+    { id: "ar-1835", category: "historical", name: "Flag of Argentina (1835–1852)", from: 1835, to: 1852, path: "national-flags/ar/argentina-1835.svg", design: "The triband under the Rosas government, with red devices at the corners of the Sun of May.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
+    { id: "ar-1818", category: "historical", name: "Flag of the United Provinces of the Río de la Plata", from: 1818, to: 1835, path: "national-flags/ar/argentina-1818.svg", design: "The triband as it stood when the Sun of May was added in 1818.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
+    { id: "ar-spain", category: "historical", name: "Flag of Spain", from: 1785, to: 1816, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish ensign of 1785, the last to fly over the Viceroyalty of the Río de la Plata.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
+    { id: "ar-naval-jack", category: "maritime", name: "Jack of the Argentine Navy", path: "national-flags/ar/argentina-naval-jack.svg", design: "A white square bearing the Sun of May.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
     { id: "ar-president", category: "standard", name: "Presidential Standard of Argentina", path: "national-flags/ar/argentina-president.svg", design: "The national flag charged with the presidential arms, flown where the president is present.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
     { id: "ar-civil", category: "civilstate", name: "Civil flag of Argentina", from: 1861, to: 9999, path: "national-flags/ar/argentina-civil.svg", design: "The light-blue and white triband without the Sun of May — the optional civil flag, beside the state flag that carries the sun.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
+    { id: "ar-arms", category: "coatofarms", name: "Coat of arms of Argentina", from: 1813, to: 9999, path: "national-flags/ar/argentina-arms.svg", design: "An oval party per fess azure and argent, two clasped hands holding a pike topped by a Phrygian cap, beneath the Sun of May and between laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
   ],
   "AT": [
     { id: "at-official-national", category: "official", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
@@ -584,6 +590,16 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "IR": [
     { id: "ir-official-national", category: "official", name: "Flag of Iran", from: 1980, to: 9999, primary: true, path: "flags/ir.svg", design: "The national flag of Iran, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
     { id: "ir-current", category: "historical", name: "Flag of Iran", from: 1980, to: 9999, primary: true, path: "flags/ir.svg", design: "The national flag of Iran, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Iran" },
+    { id: "ir-1964", category: "historical", name: "State flag of Iran (1964–1980)", from: 1964, to: 1980, path: "national-flags/ir/iran-1964.svg", design: "The green-white-red tricolour with the crowned Lion and Sun, the state flag under the Pahlavi monarchy.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-1933", category: "historical", name: "State flag of Iran (1933–1964)", from: 1933, to: 1964, path: "national-flags/ir/iran-1933.svg", design: "The tricolour with the Lion and Sun, in the proportions fixed in 1933.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-1907", category: "historical", name: "State flag of Persia (1907–1933)", from: 1907, to: 1933, path: "national-flags/ir/iran-1907.svg", design: "The longer tricolour of the late Qajar and early Pahlavi state.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-qajar", category: "historical", name: "Flag of the Qajar dynasty (1852–1907)", from: 1852, to: 1907, path: "national-flags/ir/iran-qajar.svg", design: "The Qajar tricolour bearing the Lion and Sun, without red borders.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-safavid", category: "historical", name: "Flag of the Safavid dynasty (1576–1732)", from: 1576, to: 1732, path: "national-flags/ir/iran-safavid.svg", design: "The Lion and Sun on a green field, under the later Safavid shahs.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-army", category: "military", name: "Flag of the Islamic Republic of Iran Army", path: "national-flags/ir/iran-army.svg", design: "The national flag charged with the army's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-navy", category: "military", name: "Flag of the Islamic Republic of Iran Navy", path: "national-flags/ir/iran-navy.svg", design: "The national flag charged with the navy's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-air-force", category: "military", name: "Flag of the Islamic Republic of Iran Air Force", path: "national-flags/ir/iran-air-force.svg", design: "The national flag charged with the air force's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-naval-jack", category: "maritime", name: "Naval jack of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-naval-jack.svg", design: "A dark blue field bearing a yellow national emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
+    { id: "ir-emblem", category: "coatofarms", name: "Emblem of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-emblem.svg", design: "Four crescents and a sword beneath a shadda, in the shape of a tulip.", source: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
   ],
   "IS": [
     { id: "is-official-national", category: "official", name: "Flag of Iceland", from: 1944, to: 9999, primary: true, path: "flags/is.svg", design: "The national flag of Iceland, in the form adopted in 1944.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
@@ -859,7 +875,20 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "PE": [
     { id: "pe-official-national", category: "official", name: "Flag of Peru", from: 1825, to: 9999, primary: true, path: "flags/pe.svg", design: "The national flag of Peru, in the form adopted in 1825.", source: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
+    { id: "pe-1884", category: "historical", name: "Flag of Peru (1884–1950)", from: 1884, to: 1950, path: "national-flags/pe/peru-1884.svg", design: "The vertical triband as standardised in 1884, before the 1950 division into national, state and war flags.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
     { id: "pe-current", category: "historical", name: "Flag of Peru", from: 1825, to: 9999, primary: true, path: "flags/pe.svg", design: "The national flag of Peru, in the form adopted in 1825.", source: "https://en.wikipedia.org/wiki/Flag_of_Peru" },
+    { id: "pe-1825", category: "historical", name: "Flag of Peru (1825–1884)", from: 1825, to: 1884, path: "national-flags/pe/peru-1825.svg", design: "The fourth flag of Peru, which fixed the vertical triband and the present arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-1822", category: "historical", name: "Flag of Peru (1822–1825)", from: 1822, to: 1825, path: "national-flags/pe/peru-1822.svg", design: "The third flag, designed by José Bernardo de Tagle.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-1821", category: "historical", name: "First flag of Peru", from: 1821, to: 1822, path: "national-flags/pe/peru-1821.svg", design: "The diagonally quartered flag created by José de San Martín at the declaration of independence.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-spain", category: "historical", name: "Flag of Spain", from: 1785, to: 1821, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish ensign of 1785, the last to fly over the Viceroyalty of Peru.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-burgundy", category: "historical", name: "Cross of Burgundy", from: 1542, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ragged saltire of Burgundy, flown over the Viceroyalty of Peru from its foundation in 1542.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-war", category: "military", name: "War flag of Peru", from: 1901, to: 9999, path: "national-flags/pe/peru-war.svg", design: "The vertical triband charged with the national shield beneath the motto of the unit that carries it.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-army", category: "military", name: "Flag of the Peruvian Army", path: "national-flags/pe/peru-army.svg", design: "A green field with the army's emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-navy", category: "military", name: "Flag of the Peruvian Navy", path: "national-flags/pe/peru-navy.svg", design: "A dark blue field with the navy's emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-air-force", category: "military", name: "Flag of the Peruvian Air Force", path: "national-flags/pe/peru-air-force.svg", design: "A blue field with the air force's emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-naval-jack", category: "maritime", name: "Naval jack of Peru", path: "national-flags/pe/peru-naval-jack.svg", design: "A square red flag with a white square bearing the arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-president", category: "standard", name: "Presidential standard of Peru", path: "national-flags/pe/peru-president.svg", design: "A white field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
+    { id: "pe-arms", category: "coatofarms", name: "National coat of arms of Peru", from: 1825, to: 9999, path: "national-flags/pe/peru-arms.svg", design: "A shield of three fields — a vicuña, a cinchona tree and a cornucopia spilling coins — between a palm and a laurel branch beneath a civic crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
   ],
   "PG": [
     { id: "pg-official-national", category: "official", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag of Papua New Guinea, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
@@ -965,6 +994,18 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "SA": [
     { id: "sa-official-national", category: "official", name: "Flag of Saudi Arabia", from: 1973, to: 9999, primary: true, path: "flags/sa.svg", design: "The national flag of Saudi Arabia, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
     { id: "sa-current", category: "historical", name: "Flag of Saudi Arabia", from: 1973, to: 9999, primary: true, path: "flags/sa.svg", design: "The national flag of Saudi Arabia, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
+    { id: "sa-1938", category: "historical", name: "Flag of Saudi Arabia (1938–1973)", from: 1938, to: 1973, path: "national-flags/sa/saudi-1938.svg", design: "A green field with the shahada and a sword, before the 1973 specification.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-1934", category: "historical", name: "Flag of Saudi Arabia (1934–1938)", from: 1934, to: 1938, path: "national-flags/sa/saudi-1934.svg", design: "A green field with the shahada and a sword with a white band at the hoist.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-1932", category: "historical", name: "Flag of Saudi Arabia (1932–1934)", from: 1932, to: 1934, path: "national-flags/sa/saudi-1932.svg", design: "The first flag of the unified kingdom.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-nejd", category: "historical", name: "Flag of the Sultanate of Nejd", from: 1921, to: 1926, priorPolity: "the Sultanate of Nejd", path: "national-flags/sa/saudi-nejd.svg", design: "A green field with the shahada and a white band at the hoist — the flag of the state that became Saudi Arabia in 1932.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-diriyah", category: "historical", name: "Flag of the Emirate of Diriyah", from: 1744, to: 1818, priorPolity: "the Emirate of Diriyah, the first Saudi state", path: "national-flags/sa/saudi-diriyah.svg", design: "A green field with the shahada — the flag of the first Saudi state.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-army", category: "military", name: "Flag of the Royal Saudi Land Forces", path: "national-flags/sa/saudi-army.svg", design: "The national flag with the land forces' emblem.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-air-force", category: "military", name: "Air Force Ensign of Saudi Arabia", path: "national-flags/sa/saudi-air-force.svg", design: "The air force's ensign.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-civil-ensign", category: "maritime", name: "Civil Ensign of Saudi Arabia", from: 1973, to: 9999, path: "national-flags/sa/saudi-civil-ensign.svg", design: "The national flag with a green-bordered white panel.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-naval-ensign", category: "maritime", name: "Naval Ensign of the Royal Saudi Navy", path: "national-flags/sa/saudi-naval-ensign.svg", design: "The national flag with the navy's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-king", category: "standard", name: "Royal Standard of the King of Saudi Arabia", from: 1973, to: 9999, path: "national-flags/sa/saudi-king.svg", design: "The national flag with the state emblem in the lower fly.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-crown-prince", category: "standard", name: "Royal Standard of the Crown Prince", path: "national-flags/sa/saudi-crown-prince.svg", design: "The national flag distinguished for the crown prince.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
+    { id: "sa-emblem", category: "coatofarms", name: "Emblem of Saudi Arabia", from: 1950, to: 9999, path: "national-flags/sa/saudi-emblem.svg", design: "Two crossed swords beneath a date palm.", source: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
   ],
   "SB": [
     { id: "sb-official-national", category: "official", name: "Flag of Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag of Solomon Islands, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands" },
@@ -1192,7 +1233,19 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "VE": [
     { id: "ve-official-national", category: "official", name: "Flag of Venezuela", from: 2006, to: 9999, primary: true, path: "flags/ve.svg", design: "The national flag of Venezuela, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
+    { id: "ve-state", category: "official", name: "State and war flag of Venezuela", from: 2006, to: 9999, path: "national-flags/ve/venezuela-state.svg", design: "The national tricolour charged with the coat of arms in the upper hoist.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
     { id: "ve-current", category: "historical", name: "Flag of Venezuela", from: 2006, to: 9999, primary: true, path: "flags/ve.svg", design: "The national flag of Venezuela, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
+    { id: "ve-1954", category: "historical", name: "Flag of Venezuela (1954–2006)", from: 1954, to: 2006, path: "national-flags/ve/venezuela-1954.svg", design: "The tricolour with seven stars, before the eighth was added in 2006.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-1930", category: "historical", name: "Flag of Venezuela (1930–1954)", from: 1930, to: 1954, path: "national-flags/ve/venezuela-1930.svg", design: "The tricolour of the Republic of Venezuela.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-1863", category: "historical", name: "Flag of the United States of Venezuela", from: 1863, to: 1905, path: "national-flags/ve/venezuela-1863.svg", design: "The federal tricolour with seven stars in an arc.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-gran-colombia", category: "historical", name: "Flag of Gran Colombia", from: 1821, to: 1830, priorPolity: "Gran Colombia", path: "national-flags/ve/venezuela-gran-colombia.svg", design: "The third flag of the union Venezuela belonged to until 1830.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-1811", category: "historical", name: "Flag of the First Venezuelan Republic", from: 1811, to: 1812, priorPolity: "the First Republic of Venezuela", path: "national-flags/ve/venezuela-1811.svg", design: "The yellow-blue-red tricolour of the first republic, with an allegorical figure of an indigenous woman seated on a rock in the upper hoist.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-miranda", category: "historical", name: "Flag of Miranda", from: 1806, to: 1807, sovereign: "Spain", path: "national-flags/ve/venezuela-miranda.svg", design: "The tricolour Francisco de Miranda first hoisted on Venezuelan soil in 1806, while the country was still a Spanish captaincy general.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-spain", category: "historical", name: "Flag of Spain", from: 1785, to: 1811, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish war ensign of 1785, used by the Captaincy General of Venezuela.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-burgundy", category: "historical", name: "Cross of Burgundy", from: 1528, to: 1717, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ragged saltire of Burgundy, the Spanish military flag flown in the Americas.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-mod", category: "military", name: "Flag of the Ministry of Defense", from: 2007, to: 9999, path: "national-flags/ve/venezuela-mod.svg", design: "The ministry's flag.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-president", category: "standard", name: "Presidential standard of Venezuela", from: 2006, to: 9999, path: "national-flags/ve/venezuela-president.svg", design: "A square yellow field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags" },
+    { id: "ve-arms", category: "coatofarms", name: "Coat of arms of Venezuela", from: 1954, to: 9999, path: "national-flags/ve/venezuela-arms.svg", design: "A shield in the colours of the flag bearing a wheatsheaf, weapons and a running white horse, beneath two cornucopias and between olive and palm branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
   ],
   "VN": [
     { id: "vn-official-national", category: "official", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
@@ -1260,6 +1313,7 @@ export type NationalIndependence = {
 };
 
 export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence>> = {
+  "AR": { year: 1816, event: "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816", source: "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence" },
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
@@ -1269,8 +1323,10 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
+  "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
+  "VE": { year: 1811, event: "Declaration of independence from Spain, 5 July 1811", note: "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.", source: "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence" },
   "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
   "ZA": { year: 1910, event: "The Union of South Africa was established as a self-governing dominion on 31 May 1910.", note: "Full legislative independence followed with the Statute of Westminster in 1931; the republic was declared in 1961.", source: "https://en.wikipedia.org/wiki/Union_of_South_Africa" },
 };
@@ -1282,6 +1338,12 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
  * flag with no entry simply renders no disclosure rather than a guessed one.
  */
 export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
+  "ar-arms": {
+    description: "The rising Sun of May at the top is the sun of the national anthem's line \"a new and glorious nation rises to the surface of the Earth\" — the birth of the country, not merely a decorative sun. In the oval, two clasped hands are the union of the provinces and stand for friendship, peace and brotherhood; they hold up a pike, which is power and the willingness to defend freedom, and the red Phrygian cap on its point is the liberty cap of the French Revolution. Read together, the hands and the cap are the national motto, \"en unión y libertad\" — in unity and freedom — the idea being that freedom is reached through unity. The laurel branches framing the whole are the classical crown of the victor, for triumph and glory.",
+    sources: [
+      { title: "Coat of arms of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
+    ],
+  },
   "au-aboriginal": {
     description: "Harold Thomas designed the flag in 1971 for the land-rights movement and gave each element a meaning: the black upper half represents the Aboriginal people of Australia, the red lower half the red earth and the ochre used in ceremony, and the yellow disc the sun, the giver of life. It was proclaimed a Flag of Australia in July 1995, and in January 2022 the Commonwealth acquired the copyright so that it can be reproduced freely.",
     sources: [
@@ -1429,6 +1491,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Indian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Indian_passport" },
     ],
   },
+  "ir-emblem": {
+    description: "The four curves surmounted by the shadda are a stylised rendering of the Arabic word Allah, and the five parts of the emblem together stand for the five Principles of the Religion in Shia Islam. The whole is drawn to the shape of a tulip, and that shape is the point: it is an ancient Iranian belief that a red tulip springs from the ground where a young soldier falls, so the emblem reads simultaneously as the name of God and as a memorial to those killed for the country.",
+    sources: [
+      { title: "Emblem of Iran — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
+    ],
+  },
   "jp-arms": {
     description: "Japan has no coat of arms in the European sense; what stands in its place is a mon, a family crest. The sixteen-petal chrysanthemum is the crest of the Imperial House, used by the emperor since the thirteenth century and reserved by law to the imperial family — which is why other members of the family use a fourteen-petal or single-petal version rather than this one. It appears on Japanese passports and on the Order of the Chrysanthemum, so the state’s outward emblem is the dynasty’s crest rather than an emblem of its republican-style institutions. The government separately uses a paulownia crest, the Government Seal, for the cabinet and prime minister.",
     sources: [
@@ -1453,6 +1521,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Malaysian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysian_passport" },
     ],
   },
+  "pe-arms": {
+    description: "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
+    sources: [
+      { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
   "ph-arms": {
     description: "The eight rays of the sun stand for the eight provinces — Batangas, Bulacan, Cavite, Manila, Laguna, Nueva Ecija, Pampanga and Tarlac — placed under martial law by the Spanish governor-general at the outbreak of the 1896 revolution; the three stars stand for Luzon, the Visayas and Mindanao. The American bald eagle on the blue field and the lion rampant of the Kingdom of León on the red field represent the country's two colonial rulers, the United States and Spain. The present arms were designed by Galo B. Ocampo and approved under Commonwealth Act No. 731 on 3 July 1946, the day of full independence.",
     sources: [
@@ -1469,6 +1543,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The double-headed eagle came to Moscow from Byzantium after the fall of Constantinople in 1453 and has stood for the Russian state since Ivan III. The three crowns stand for the sovereignty of the Russian Federation as a whole and of its constituent republics and regions; the sceptre and orb in the eagle's talons are the traditional heraldic emblems of sovereign power and authority. On the eagle's breast the silver horseman spearing a dragon is Saint George, a device found on Muscovite seals from 1390 and formally identified as Saint George by imperial decree in 1730. The present drawing was made by Yevgeny Ukhnalyov and adopted by decree on 30 November 1993.",
     sources: [
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
+    ],
+  },
+  "sa-emblem": {
+    description: "The two crossed swords are the Kingdom of Hejaz and the Sultanate of Nejd and its dependencies, the two states Ibn Saud united in 1926 — so the emblem records the union the country is made of; they are also read as strength, stamina and sacrifice, and as justice. The date palm above them stands for growth, vitality and prosperity, and for the kingdom's own assets. The arrangement carries the reading that prosperity can be had only through justice: the palm rests on the swords, not the other way round.",
+    sources: [
+      { title: "Emblem of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
     ],
   },
   "th-emblem": {
@@ -1511,6 +1591,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The United States issues its passports in four colours by type, and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official, and grey for no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country's arms carry.",
     sources: [
       { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
+    ],
+  },
+  "ve-arms": {
+    description: "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
+    sources: [
+      { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
     ],
   },
   "vn-emblem": {

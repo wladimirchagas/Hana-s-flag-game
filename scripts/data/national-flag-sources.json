@@ -254,8 +254,96 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
           "sha256": "d1d2933a9f45fe576aff3d94836823a65677b2fb8c7a9b4e37c5b031f14c9e59",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "ar-confederation",
+          "category": "historical",
+          "name": "Flag of the Argentine Confederation",
+          "from": 1850,
+          "to": 1861,
+          "commons": "Flag of the Argentine Confederation.svg",
+          "file": "ar/argentina-confederation.svg",
+          "design": "The light blue and white triband of the Confederation, before the present flag was fixed in 1861.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
+          "sha256": "04fa3b8a127f5aa08eaae715abde525fc5348a64641373bdc9741967617cef5a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ar-1835",
+          "category": "historical",
+          "name": "Flag of Argentina (1835–1852)",
+          "from": 1835,
+          "to": 1852,
+          "commons": "Flag of Argentina (1840).svg",
+          "file": "ar/argentina-1835.svg",
+          "design": "The triband under the Rosas government, with red devices at the corners of the Sun of May.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
+          "sha256": "6fc547e843d5e664ec6b49e8176ef0c2064ad4b9457b569e32dad77c23abf0c1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ar-1818",
+          "category": "historical",
+          "name": "Flag of the United Provinces of the Río de la Plata",
+          "from": 1818,
+          "to": 1835,
+          "commons": "Flag of Argentina (1818).svg",
+          "file": "ar/argentina-1818.svg",
+          "design": "The triband as it stood when the Sun of May was added in 1818.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
+          "sha256": "7f53cc9a9c600260c7b904662485096b47d15bb3c3af4651b0166d8b82e495bb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ar-spain",
+          "category": "historical",
+          "name": "Flag of Spain",
+          "from": 1785,
+          "to": 1816,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The Spanish ensign of 1785, the last to fly over the Viceroyalty of the Río de la Plata.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags"
+        },
+        {
+          "id": "ar-naval-jack",
+          "category": "maritime",
+          "name": "Jack of the Argentine Navy",
+          "commons": "Naval jack of Argentina.svg",
+          "file": "ar/argentina-naval-jack.svg",
+          "design": "A white square bearing the Sun of May.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Argentine_flags",
+          "sha256": "a9e8203f3d1552e79c7538c2a582fa0f74f2e40602ff1a723f41f136132f4c2c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ar-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Argentina",
+          "from": 1813,
+          "to": 9999,
+          "commons": "Coat of arms of Argentina.svg",
+          "file": "ar/argentina-arms.svg",
+          "design": "An oval party per fess azure and argent, two clasped hands holding a pike topped by a Phrygian cap, beneath the Sun of May and between laurel branches.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina",
+          "meaning": {
+            "description": "The rising Sun of May at the top is the sun of the national anthem's line \"a new and glorious nation rises to the surface of the Earth\" — the birth of the country, not merely a decorative sun. In the oval, two clasped hands are the union of the provinces and stand for friendship, peace and brotherhood; they hold up a pike, which is power and the willingness to defend freedom, and the red Phrygian cap on its point is the liberty cap of the French Revolution. Read together, the hands and the cap are the national motto, \"en unión y libertad\" — in unity and freedom — the idea being that freedom is reached through unity. The laurel branches framing the whole are the classical crown of the victor, for triumph and glory.",
+            "sources": [
+              {
+                "title": "Coat of arms of Argentina — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina"
+              }
+            ]
+          },
+          "sha256": "eedd075f73b4e4b56c6b61999df06d4e3e73a1ef3c9030d96bfbaa74a377ac9a",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1816,
+        "event": "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816",
+        "source": "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence"
+      }
     },
     "AT": {
       "flags": [
@@ -4408,6 +4496,139 @@
           "reuse": "flags/ir.svg",
           "design": "The national flag of Iran, in the form adopted in 1980.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+        },
+        {
+          "id": "ir-1964",
+          "category": "historical",
+          "name": "State flag of Iran (1964–1980)",
+          "from": 1964,
+          "to": 1980,
+          "commons": "State flag of Iran (1964–1980).svg",
+          "file": "ir/iran-1964.svg",
+          "design": "The green-white-red tricolour with the crowned Lion and Sun, the state flag under the Pahlavi monarchy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "535c1911fae12ab7f966499a7a4da04f9812c5e5608fc11f2cc1b04917ad9ece",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-1933",
+          "category": "historical",
+          "name": "State flag of Iran (1933–1964)",
+          "from": 1933,
+          "to": 1964,
+          "commons": "State flag of Iran (1933–1964).svg",
+          "file": "ir/iran-1933.svg",
+          "design": "The tricolour with the Lion and Sun, in the proportions fixed in 1933.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "4ccf4f9daea3f0d952b877b9e52266bbbc4f744f7974b64d030278cef441468a",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-1907",
+          "category": "historical",
+          "name": "State flag of Persia (1907–1933)",
+          "from": 1907,
+          "to": 1933,
+          "commons": "State flag of Persia (1907–1933).svg",
+          "file": "ir/iran-1907.svg",
+          "design": "The longer tricolour of the late Qajar and early Pahlavi state.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "5779b984ad181794754a790d78ab2946c6cfc26aa0a40ed6fef6f0abcf04334c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-qajar",
+          "category": "historical",
+          "name": "Flag of the Qajar dynasty (1852–1907)",
+          "from": 1852,
+          "to": 1907,
+          "commons": "Early 20th Century Qajar Flag.svg",
+          "file": "ir/iran-qajar.svg",
+          "design": "The Qajar tricolour bearing the Lion and Sun, without red borders.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "b3026a3f4d96df49db8a7896196e1818355974a89a1cd800b42118de5a54a9aa",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-safavid",
+          "category": "historical",
+          "name": "Flag of the Safavid dynasty (1576–1732)",
+          "from": 1576,
+          "to": 1732,
+          "commons": "Safavid Flag.svg",
+          "file": "ir/iran-safavid.svg",
+          "design": "The Lion and Sun on a green field, under the later Safavid shahs.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "98ca4ef8b36316683a5266d8b995384436264d10b19c5ca657a44a37e2a213ba",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-army",
+          "category": "military",
+          "name": "Flag of the Islamic Republic of Iran Army",
+          "commons": "Flag of the Islamic Republic of Iran Army.svg",
+          "file": "ir/iran-army.svg",
+          "design": "The national flag charged with the army's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "8ba8ff21c343ba7ceb20cf2c6470d53b5cb63e8017c110d3b7474e86556a28b0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-navy",
+          "category": "military",
+          "name": "Flag of the Islamic Republic of Iran Navy",
+          "commons": "Flag of the Islamic Republic of Iran Navy.svg",
+          "file": "ir/iran-navy.svg",
+          "design": "The national flag charged with the navy's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "1eb394a844b8fb2bf498985a3d5cd0349b4dfa9a790a028a2afb8bc48c78db80",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-air-force",
+          "category": "military",
+          "name": "Flag of the Islamic Republic of Iran Air Force",
+          "commons": "Flag of the Islamic Republic of Iran Air Force.svg",
+          "file": "ir/iran-air-force.svg",
+          "design": "The national flag charged with the air force's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "d94cd9e7200b6f96fba540d59b662b7439ce855be3e9fb253e910faa062e4ac9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Iran",
+          "from": 1980,
+          "to": 9999,
+          "commons": "Naval Jack of Iran.svg",
+          "file": "ir/iran-naval-jack.svg",
+          "design": "A dark blue field bearing a yellow national emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Iranian_flags",
+          "sha256": "025243d8aa5f5e877f5a19e8a2b79a9600690c9cd73271180cf3d77b964a2826",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ir-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Iran",
+          "from": 1980,
+          "to": 9999,
+          "commons": "Emblem of Iran.svg",
+          "file": "ir/iran-emblem.svg",
+          "design": "Four crescents and a sword beneath a shadda, in the shape of a tulip.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Iran",
+          "meaning": {
+            "description": "The four curves surmounted by the shadda are a stylised rendering of the Arabic word Allah, and the five parts of the emblem together stand for the five Principles of the Religion in Shia Islam. The whole is drawn to the shape of a tulip, and that shape is the point: it is an ancient Iranian belief that a red tulip springs from the ground where a young soldier falls, so the emblem reads simultaneously as the name of God and as a memorial to those killed for the country.",
+            "sources": [
+              {
+                "title": "Emblem of Iran — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Iran"
+              }
+            ]
+          },
+          "sha256": "dabf1d4bdecc964866c0552588be4a0c1e32af538ce32b8db8cfaf6bb43d900f",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -6450,8 +6671,178 @@
           "reuse": "flags/pe.svg",
           "design": "The national flag of Peru, in the form adopted in 1825.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Peru"
+        },
+        {
+          "id": "pe-war",
+          "category": "military",
+          "name": "War flag of Peru",
+          "from": 1901,
+          "to": 9999,
+          "commons": "State flag of Peru.svg",
+          "file": "pe/peru-war.svg",
+          "design": "The vertical triband charged with the national shield beneath the motto of the unit that carries it.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "afe0ddece5e6c5d375343d014add5b7644d527e6e2dafa84577a795f8826f35e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-1884",
+          "category": "historical",
+          "name": "Flag of Peru (1884–1950)",
+          "from": 1884,
+          "to": 1950,
+          "commons": "Flag of Peru (1884–1950).svg",
+          "file": "pe/peru-1884.svg",
+          "design": "The vertical triband as standardised in 1884, before the 1950 division into national, state and war flags.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "f8ce2f8ec5b5de7570cb1108f792fb72569c6a512312ca592d76521df3ca80da",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-1825",
+          "category": "historical",
+          "name": "Flag of Peru (1825–1884)",
+          "from": 1825,
+          "to": 1884,
+          "commons": "Flag of Peru (1825–1884).svg",
+          "file": "pe/peru-1825.svg",
+          "design": "The fourth flag of Peru, which fixed the vertical triband and the present arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "57021e637fd4240e26bc70075b02ad0036e2d4c9ab0ce9c8d28210473f387ca8",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-1822",
+          "category": "historical",
+          "name": "Flag of Peru (1822–1825)",
+          "from": 1822,
+          "to": 1825,
+          "commons": "Flag of Peru (1822–1835).svg",
+          "file": "pe/peru-1822.svg",
+          "design": "The third flag, designed by José Bernardo de Tagle.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "5e5735c2f1bf73c2132fae034dff249c1384eb18b9859272d5b036906a3ebf8f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-1821",
+          "category": "historical",
+          "name": "First flag of Peru",
+          "from": 1821,
+          "to": 1822,
+          "commons": "Flag of Peru (1821–1822).svg",
+          "file": "pe/peru-1821.svg",
+          "design": "The diagonally quartered flag created by José de San Martín at the declaration of independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "a35ce659ac10fdfc4ecf7ffde68fa6d98409ef389b33929fca2b3026121b6a6f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-spain",
+          "category": "historical",
+          "name": "Flag of Spain",
+          "from": 1785,
+          "to": 1821,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The Spanish ensign of 1785, the last to fly over the Viceroyalty of Peru.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru"
+        },
+        {
+          "id": "pe-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1542,
+          "to": 1785,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The ragged saltire of Burgundy, flown over the Viceroyalty of Peru from its foundation in 1542.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru"
+        },
+        {
+          "id": "pe-president",
+          "category": "standard",
+          "name": "Presidential standard of Peru",
+          "commons": "Insignia of the President of Peru.svg",
+          "file": "pe/peru-president.svg",
+          "design": "A white field bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "f906b2b303d76d48457dc59ab5e8f01f87489b923d26cbf102234a4961d22735",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Peru",
+          "commons": "Naval Jack of Peru.svg",
+          "file": "pe/peru-naval-jack.svg",
+          "design": "A square red flag with a white square bearing the arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "f3bc0966840f57d302313e3188718608b40123ddd64c6632b07ed644e3bc7dc6",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-army",
+          "category": "military",
+          "name": "Flag of the Peruvian Army",
+          "commons": "Flag of the Peruvian Army.svg",
+          "file": "pe/peru-army.svg",
+          "design": "A green field with the army's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "2f3d25ed8a164ff7cecb71c49acd1e053811d4dee70a4fb66ebc46abc9cf7fcd",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-navy",
+          "category": "military",
+          "name": "Flag of the Peruvian Navy",
+          "commons": "Flag of the Peruvian Navy.svg",
+          "file": "pe/peru-navy.svg",
+          "design": "A dark blue field with the navy's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "0c24926cd7e6aa3dc33eb0c2b30933a24c025dbb75f994110c0abc5e56bdf2b7",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-air-force",
+          "category": "military",
+          "name": "Flag of the Peruvian Air Force",
+          "commons": "Flag of the Peruvian Air Force.svg",
+          "file": "pe/peru-air-force.svg",
+          "design": "A blue field with the air force's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Peru",
+          "sha256": "ae2bdcf0da80c44e167957065d7d604100ae9ae493504e1a5423a007b24d7f50",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "pe-arms",
+          "category": "coatofarms",
+          "name": "National coat of arms of Peru",
+          "from": 1825,
+          "to": 9999,
+          "commons": "Escudo nacional del Perú.svg",
+          "file": "pe/peru-arms.svg",
+          "design": "A shield of three fields — a vicuña, a cinchona tree and a cornucopia spilling coins — between a palm and a laurel branch beneath a civic crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru",
+          "meaning": {
+            "description": "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
+            "sources": [
+              {
+                "title": "Coat of arms of Peru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru"
+              }
+            ]
+          },
+          "sha256": "65175f9fb56e8cc9aadd6041863cf8d37f9b14ad1730cd2ee105dc5782fbf194",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1821,
+        "event": "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821",
+        "note": "Spanish forces were not finally defeated until Ayacucho in 1824.",
+        "source": "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence"
+      }
     },
     "PG": {
       "flags": [
@@ -7423,6 +7814,165 @@
           "reuse": "flags/sa.svg",
           "design": "The national flag of Saudi Arabia, in the form adopted in 1973.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
+        },
+        {
+          "id": "sa-1938",
+          "category": "historical",
+          "name": "Flag of Saudi Arabia (1938–1973)",
+          "from": 1938,
+          "to": 1973,
+          "commons": "Flag of Saudi Arabia (1938–1973).svg",
+          "file": "sa/saudi-1938.svg",
+          "design": "A green field with the shahada and a sword, before the 1973 specification.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "6248c6f8df0a2a6f6f4fdb7a8a194a718cc6588eb24eb1a28d2cd34d1868812f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-1934",
+          "category": "historical",
+          "name": "Flag of Saudi Arabia (1934–1938)",
+          "from": 1934,
+          "to": 1938,
+          "commons": "Flag of Saudi Arabia (1934–1938).svg",
+          "file": "sa/saudi-1934.svg",
+          "design": "A green field with the shahada and a sword with a white band at the hoist.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "e15bb735ef03d20ad3ad334e88f88542b6658388b00657ae69119184abb3866b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-1932",
+          "category": "historical",
+          "name": "Flag of Saudi Arabia (1932–1934)",
+          "from": 1932,
+          "to": 1934,
+          "commons": "Flag of Saudi Arabia (1932–1934).svg",
+          "file": "sa/saudi-1932.svg",
+          "design": "The first flag of the unified kingdom.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "3a0b1cfd364fb897b5e97a8a5cb923eb18dc53a68a15bc2ec2556c687e5139ae",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-nejd",
+          "category": "historical",
+          "name": "Flag of the Sultanate of Nejd",
+          "from": 1921,
+          "to": 1926,
+          "priorPolity": "the Sultanate of Nejd",
+          "commons": "Flag of the Sultanate of Nejd.svg",
+          "file": "sa/saudi-nejd.svg",
+          "design": "A green field with the shahada and a white band at the hoist — the flag of the state that became Saudi Arabia in 1932.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "eed94bf4f9f17a8e3baa5ab204877f3106094cb060e14d3f4b2c7f741d601030",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-diriyah",
+          "category": "historical",
+          "name": "Flag of the Emirate of Diriyah",
+          "from": 1744,
+          "to": 1818,
+          "priorPolity": "the Emirate of Diriyah, the first Saudi state",
+          "commons": "Flag of the Emirate of Riyadh (1902-1913).svg",
+          "file": "sa/saudi-diriyah.svg",
+          "design": "A green field with the shahada — the flag of the first Saudi state.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "592abcb3255fdf702ac17a71dd76c6de1b4435bc52e9e7fdfadb1cb1d4dd32eb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-king",
+          "category": "standard",
+          "name": "Royal Standard of the King of Saudi Arabia",
+          "from": 1973,
+          "to": 9999,
+          "commons": "Royal Standard of Saudi Arabia.svg",
+          "file": "sa/saudi-king.svg",
+          "design": "The national flag with the state emblem in the lower fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "aae07e1ea0ecbe1301763a94305dc857ace851a87385418552d72fa883f8e9f4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-crown-prince",
+          "category": "standard",
+          "name": "Royal Standard of the Crown Prince",
+          "commons": "Royal Standard of the Crown Prince of Saudi Arabia.svg",
+          "file": "sa/saudi-crown-prince.svg",
+          "design": "The national flag distinguished for the crown prince.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "3591b68dde9dd1ab8fddd677d8a02b0dd013198e4381e08d08b8b82240475545",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Saudi Arabia",
+          "from": 1973,
+          "to": 9999,
+          "commons": "Civil Ensign of Saudi Arabia.svg",
+          "file": "sa/saudi-civil-ensign.svg",
+          "design": "The national flag with a green-bordered white panel.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "b0af2f4a2a3783973a3be755bfd62a28b2ef2f8a29dcb04e21cb76d52b71c830",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of the Royal Saudi Navy",
+          "commons": "Naval Ensign of Saudi Arabia.svg",
+          "file": "sa/saudi-naval-ensign.svg",
+          "design": "The national flag with the navy's emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "d7f646d450e99e156fb5e60110b5ef5978348edac1da3021133fe99980b3fdbf",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-army",
+          "category": "military",
+          "name": "Flag of the Royal Saudi Land Forces",
+          "commons": "Flag of the Royal Saudi Land Forces.svg",
+          "file": "sa/saudi-army.svg",
+          "design": "The national flag with the land forces' emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "6278980bc174b1bed3107419288325ea87f3450649ccc0eaf56ab75736fb59aa",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Saudi Arabia",
+          "commons": "Air Force Ensign of Saudi Arabia.svg",
+          "file": "sa/saudi-air-force.svg",
+          "design": "The air force's ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags",
+          "sha256": "443655b611bef7d9acfb874559abe35d7ed7d50fef7f173c383f1c9d7684fc36",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "sa-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Saudi Arabia",
+          "from": 1950,
+          "to": 9999,
+          "commons": "Emblem of Saudi Arabia.svg",
+          "file": "sa/saudi-emblem.svg",
+          "design": "Two crossed swords beneath a date palm.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia",
+          "meaning": {
+            "description": "The two crossed swords are the Kingdom of Hejaz and the Sultanate of Nejd and its dependencies, the two states Ibn Saud united in 1926 — so the emblem records the union the country is made of; they are also read as strength, stamina and sacrifice, and as justice. The date palm above them stands for growth, vitality and prosperity, and for the kingdom's own assets. The arrangement carries the reading that prosperity can be had only through justice: the palm rests on the swords, not the other way round.",
+            "sources": [
+              {
+                "title": "Emblem of Saudi Arabia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia"
+              }
+            ]
+          },
+          "sha256": "7afb1c647afe66cf037a3920dda7ed1cd498877b9786374246ed1c52cb962643",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -9352,8 +9902,178 @@
           "reuse": "flags/ve.svg",
           "design": "The national flag of Venezuela, in the form adopted in 2006.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Venezuela"
+        },
+        {
+          "id": "ve-state",
+          "category": "official",
+          "name": "State and war flag of Venezuela",
+          "from": 2006,
+          "to": 9999,
+          "commons": "Flag of Venezuela (state).svg",
+          "file": "ve/venezuela-state.svg",
+          "design": "The national tricolour charged with the coat of arms in the upper hoist.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "d945d0d7f90d35c2c8cebaf6e69713012d82526a3613b20c25c24f3ba5c85d71",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-1954",
+          "category": "historical",
+          "name": "Flag of Venezuela (1954–2006)",
+          "from": 1954,
+          "to": 2006,
+          "commons": "State flag of Venezuela (1954–2006).svg",
+          "file": "ve/venezuela-1954.svg",
+          "design": "The tricolour with seven stars, before the eighth was added in 2006.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "7703479287d9ee02f9a9b719f1b88ba14ef9ded1010fb81e62ebda032ccf7821",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-1930",
+          "category": "historical",
+          "name": "Flag of Venezuela (1930–1954)",
+          "from": 1930,
+          "to": 1954,
+          "commons": "Flag of Venezuela (1930–2006).svg",
+          "file": "ve/venezuela-1930.svg",
+          "design": "The tricolour of the Republic of Venezuela.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "dbc70585dd4adab998f53378410c2b6cbea9955a6f4909e6f10d275fb9c7c495",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-1863",
+          "category": "historical",
+          "name": "Flag of the United States of Venezuela",
+          "from": 1863,
+          "to": 1905,
+          "commons": "Flag of Venezuela (1863–1905).svg",
+          "file": "ve/venezuela-1863.svg",
+          "design": "The federal tricolour with seven stars in an arc.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "f1b7f8b3abb60304439cae313169577a187f856b7531e19d4cfa98216aa3298d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-gran-colombia",
+          "category": "historical",
+          "name": "Flag of Gran Colombia",
+          "from": 1821,
+          "to": 1830,
+          "priorPolity": "Gran Colombia",
+          "commons": "Flag of Gran Colombia.svg",
+          "file": "ve/venezuela-gran-colombia.svg",
+          "design": "The third flag of the union Venezuela belonged to until 1830.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "ef2218dd8bca23df5aed79366b05b7897ead1e55107abf59dc89dc2f929747d1",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-1811",
+          "category": "historical",
+          "name": "Flag of the First Venezuelan Republic",
+          "from": 1811,
+          "to": 1812,
+          "priorPolity": "the First Republic of Venezuela",
+          "commons": "Flag of Venezuela (1811).svg",
+          "file": "ve/venezuela-1811.svg",
+          "design": "The yellow-blue-red tricolour of the first republic, with an allegorical figure of an indigenous woman seated on a rock in the upper hoist.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "8ebcd02b4b990f034a8c6e04dfd77d4b06539d64b1872f7fa8455eb8b8896bae",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-miranda",
+          "category": "historical",
+          "name": "Flag of Miranda",
+          "from": 1806,
+          "to": 1807,
+          "sovereign": "Spain",
+          "commons": "Flag of Miranda.svg",
+          "file": "ve/venezuela-miranda.svg",
+          "design": "The tricolour Francisco de Miranda first hoisted on Venezuelan soil in 1806, while the country was still a Spanish captaincy general.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "daf7640c150c4091ca97445cc93090f0a28954b79c968521c0c087d5bfa13cbc",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-spain",
+          "category": "historical",
+          "name": "Flag of Spain",
+          "from": 1785,
+          "to": 1811,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The Spanish war ensign of 1785, used by the Captaincy General of Venezuela.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags"
+        },
+        {
+          "id": "ve-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1528,
+          "to": 1717,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The ragged saltire of Burgundy, the Spanish military flag flown in the Americas.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags"
+        },
+        {
+          "id": "ve-president",
+          "category": "standard",
+          "name": "Presidential standard of Venezuela",
+          "from": 2006,
+          "to": 9999,
+          "commons": "Presidential Standard of Venezuela.svg",
+          "file": "ve/venezuela-president.svg",
+          "design": "A square yellow field bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "4b74cc1398d2a260b17d9935eeebc8315c7da21e0b01f4251b5a6520541da10e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-mod",
+          "category": "military",
+          "name": "Flag of the Ministry of Defense",
+          "from": 2007,
+          "to": 9999,
+          "commons": "Flag of the Ministry of Defense (Venezuela).svg",
+          "file": "ve/venezuela-mod.svg",
+          "design": "The ministry's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Venezuelan_flags",
+          "sha256": "608ea0d64140e578b267c9bd515eebf3fc14bf1cf44ec5db78758e215befdecb",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ve-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Venezuela",
+          "from": 1954,
+          "to": 9999,
+          "commons": "Coat of arms of Venezuela.svg",
+          "file": "ve/venezuela-arms.svg",
+          "design": "A shield in the colours of the flag bearing a wheatsheaf, weapons and a running white horse, beneath two cornucopias and between olive and palm branches.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela",
+          "meaning": {
+            "description": "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
+            "sources": [
+              {
+                "title": "Coat of arms of Venezuela — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela"
+              }
+            ]
+          },
+          "sha256": "6af0d8b95d98196cf85cda3d8ba8531f5e4149fc28a8bc325fae5e581e868ed0",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1811,
+        "event": "Declaration of independence from Spain, 5 July 1811",
+        "note": "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.",
+        "source": "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence"
+      }
     },
     "VN": {
       "flags": [
