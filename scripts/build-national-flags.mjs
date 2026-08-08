@@ -62,6 +62,11 @@ for (const cc of countries) {
       const own = `flags/${cc.toLowerCase()}.svg`;
       inCat.sort((a, b) => Number(b.reuse === own) - Number(a.reuse === own));
     }
+    if (category === "passport") {
+      // The ordinary passport leads its section — it is the one almost every reader
+      // holds; the special types (diplomatic, official, service, emergency) follow.
+      inCat.sort((a, b) => Number(b.id.endsWith("-passport")) - Number(a.id.endsWith("-passport")));
+    }
     if (category === "historical") {
       // Newest first; a flag flown for a single year sorts by its own year.
       inCat.sort((a, b) => b.from - a.from || b.to - a.to);

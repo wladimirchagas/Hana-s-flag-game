@@ -1,4 +1,4 @@
-import { NATIONAL_FLAGS, type NationalFlag } from "../data/nationalFlags";
+import { NATIONAL_FLAGS, type NationalFlag, type NationalFlagCategory } from "../data/nationalFlags";
 
 /**
  * Helpers for the Learn-mode "National flags" tab.
@@ -37,4 +37,32 @@ export function flagYearLabel(flag: NationalFlag): string | null {
   if (flag.to == null || flag.to >= 9999) return `${flag.from} – present`;
   if (flag.from === flag.to) return `${flag.from}`;
   return `${flag.from}–${flag.to}`;
+}
+
+/**
+ * What to CALL the thing on a card or in its widget. The tab holds more than flags
+ * now — a coat of arms is not a flag and a passport is not a flag — so every label
+ * that names the item asks here instead of saying "flag" (owner request 2026-08).
+ */
+export function symbolNoun(category: NationalFlagCategory): string {
+  switch (category) {
+    case "coatofarms":
+      return "Coat of arms";
+    case "passport":
+      return "Passport";
+    default:
+      return "Flag";
+  }
+}
+
+/** The "What this … means" disclosure label, in the same voice as the noun. */
+export function meaningLabel(category: NationalFlagCategory): string {
+  switch (category) {
+    case "coatofarms":
+      return "What this coat of arms means";
+    case "passport":
+      return "What this passport shows";
+    default:
+      return "What this flag means";
+  }
 }
