@@ -278,6 +278,19 @@
           "reuse": "flags/at.svg",
           "design": "The national flag of Austria, in the form adopted in 1918.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Austria"
+        },
+        {
+          "id": "at-state",
+          "category": "civilstate",
+          "name": "State flag of Austria",
+          "from": 1955,
+          "to": 9999,
+          "commons": "Flag of Austria (state).svg",
+          "file": "at/austria-state.svg",
+          "design": "The red-white-red triband charged with the federal eagle — the state flag, war flag and naval ensign, beside the plain civil flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Austrian_flags",
+          "sha256": "d2049ba5974aee08e77fc65a90ac1b191b0d49f21cca99be803aaef6f6f558f2",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -655,6 +668,45 @@
           "reuse": "flags/be.svg",
           "design": "The national flag of Belgium, in the form adopted in 1831.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belgium"
+        },
+        {
+          "id": "be-civil-ensign",
+          "category": "maritime",
+          "name": "Civil ensign of Belgium",
+          "from": 1831,
+          "to": 9999,
+          "commons": "Flag of Belgium (civil).svg",
+          "file": "be/belgium-civil-ensign.svg",
+          "design": "The black-yellow-red tricolour in the proportions used at sea.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
+          "sha256": "b3642c9ad66f6f5ddbfe6e9eb32a06b4aeb0e9801e45ad90d5ef70a86eafa05e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "be-state-ensign",
+          "category": "maritime",
+          "name": "State ensign of Belgium",
+          "from": 1950,
+          "to": 9999,
+          "commons": "Government Ensign of Belgium.svg",
+          "file": "be/belgium-state-ensign.svg",
+          "design": "The tricolour defaced with the state emblem, worn by government vessels.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
+          "sha256": "8bf0ec1fa1355d88916355e1c951ca38090470fa5245140add6542cc302497e7",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "be-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Belgium",
+          "from": 1831,
+          "to": 9999,
+          "commons": "Naval Jack of Belgium.svg",
+          "file": "be/belgium-naval-jack.svg",
+          "design": "The jack of the Belgian Navy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
+          "sha256": "ad45d054bbeac73c05c03475a98f268d37086b80c1aa9782c43b538902214573",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -1727,6 +1779,19 @@
           "reuse": "flags/ch.svg",
           "design": "The national flag of Switzerland, in the form adopted in 1841.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
+        },
+        {
+          "id": "ch-civil-ensign",
+          "category": "maritime",
+          "name": "Civil and state ensign of Switzerland",
+          "from": 1882,
+          "to": 9999,
+          "commons": "Civil Ensign of Switzerland (Pantone).svg",
+          "file": "ch/switzerland-civil-ensign.svg",
+          "design": "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Swiss_flags",
+          "sha256": "a02a3802ada3a96aa399ffd43b38faacd7b2a17076b44d30985d93562c609d21",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -2400,6 +2465,58 @@
           "reuse": "flags/eg.svg",
           "design": "The national flag of Egypt, in the form adopted in 1984.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Egypt"
+        },
+        {
+          "id": "eg-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign and jack of Egypt",
+          "from": 1984,
+          "to": 9999,
+          "commons": "Naval Ensign of Egypt.svg",
+          "file": "eg/egypt-naval-ensign.svg",
+          "design": "The national flag with the naval emblem in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "39ba868f0add59e56d7fcddc06e20e226501c678cad55f4a7e680bb7e4b81b4b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-navy",
+          "category": "military",
+          "name": "Flag of the Egyptian Navy",
+          "from": 1984,
+          "to": 9999,
+          "commons": "Flag of the Egyptian Navy.svg",
+          "file": "eg/egypt-navy.svg",
+          "design": "The national flag defaced with the navy’s emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "b5de62a6f51e02b80f259e0d07fbd2ed4f5a1276f151a6c5e28f417ab2c5b969",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-president",
+          "category": "standard",
+          "name": "Presidential Standard of Egypt",
+          "from": 1984,
+          "to": 9999,
+          "commons": "Flag of the President of Egypt.svg",
+          "file": "eg/egypt-president.svg",
+          "design": "The national flag charged with the presidential arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "4f879f028d1e0441147a2980d87cb33b532713a5f7927a720b50c444cc2c9cf0",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-president-1972",
+          "category": "standard",
+          "name": "Standard of the President of Egypt (1972–1984)",
+          "from": 1972,
+          "to": 1984,
+          "commons": "Presidential Standard of Egypt 1972-1984.svg",
+          "file": "eg/egypt-president-1972.svg",
+          "design": "The presidential standard of the Arab Republic before the 1984 redesign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "217a941f4b2e9b0ded1476ab616d9b5486f3e844f0ee8163b06e4d6d6da28b7c",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -2624,6 +2741,46 @@
           "reuse": "flags/et.svg",
           "design": "The national flag of Ethiopia, in the form adopted in 1996.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
+        },
+        {
+          "id": "et-1897",
+          "category": "historical",
+          "name": "Flag of Ethiopia (1897–1914)",
+          "from": 1897,
+          "to": 1914,
+          "commons": "Flag of Ethiopia (1897–1914).svg",
+          "file": "et/ethiopia-1897.svg",
+          "design": "A horizontal tricolour of green, yellow and red — the first rectangular Ethiopian flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags",
+          "sha256": "df437917ec7d927645e3f23780db85a25034972e594ab8a802ad0ca85ce636ac",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "et-1875",
+          "category": "historical",
+          "name": "Flag of Ethiopia (1875–1881)",
+          "from": 1875,
+          "to": 1881,
+          "commons": "Flag of Ethiopia (1875–1881).svg",
+          "file": "et/ethiopia-1875.svg",
+          "design": "An early horizontal tricolour, from before the arrangement settled.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags",
+          "sha256": "e89bbcfce9498cccdee46acea1c0fdf2b14fb75f71baa169ea7123d16878633b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "et-abyssinia",
+          "category": "historical",
+          "name": "Flag of the Ethiopian Empire (1270–1853)",
+          "from": 1270,
+          "to": 1853,
+          "priorPolity": "the Ethiopian Empire under the Solomonic dynasty",
+          "commons": "Flag of Abyssinia (pre 1853).svg",
+          "file": "et/ethiopia-abyssinia.svg",
+          "design": "The banner of the Solomonic dynasty, before the tricolour.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags",
+          "sha256": "779fabb0acad46accfa4b4f950bb4c1ce41f507b170366bac1efb1f11a8bc6fb",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -3260,6 +3417,45 @@
           "reuse": "flags/gr.svg",
           "design": "The national flag of Greece, in the form adopted in 1822.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Greece"
+        },
+        {
+          "id": "gr-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Greece",
+          "from": 1822,
+          "to": 9999,
+          "commons": "Naval jack of Greece.svg",
+          "file": "gr/greece-naval-jack.svg",
+          "design": "A blue field with a white cross throughout — the jack the Hellenic Navy has flown since the war of independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
+          "sha256": "9d0cf7a097c5b679013d33a6d876311814cffffbc8bd74a5bb8958eaf1c20f37",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gr-president",
+          "category": "standard",
+          "name": "Flag of the President of Greece",
+          "from": 1979,
+          "to": 9999,
+          "commons": "Flag of the President of Greece.svg",
+          "file": "gr/greece-president.svg",
+          "design": "The national flag charged with the presidential arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
+          "sha256": "104b0efcabf7aa573c934a4ed92e6b4829f63fe0fca46257d2223286a5767b5b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "gr-president-1924",
+          "category": "standard",
+          "name": "Flag of the President of Greece (1924–1935)",
+          "from": 1924,
+          "to": 1935,
+          "commons": "Flag of the President of Greece (1924–1935).svg",
+          "file": "gr/greece-president-1924.svg",
+          "design": "The presidential flag of the Second Hellenic Republic.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
+          "sha256": "603d971566e79767a1c2eee1f3b47843d8fb3b74fc35bf1ff176fd5da971a4ed",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -4283,6 +4479,71 @@
           "reuse": "flags/kr.svg",
           "design": "The national flag of South Korea, in the form adopted in 1883.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_South_Korea"
+        },
+        {
+          "id": "kr-1997",
+          "category": "historical",
+          "name": "Flag of South Korea (1997–2011)",
+          "from": 1997,
+          "to": 2011,
+          "commons": "Flag of South Korea (1997–2011).svg",
+          "file": "kr/south-korea-1997.svg",
+          "design": "The Taegukgi as standardised in 1997, before the 2011 specification adjusted its colours.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "d4015bb54bd00e7a125aa660f0df82b79887b7b91f9980903317a97c51b50219",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-1984",
+          "category": "historical",
+          "name": "Flag of South Korea (1984–1997)",
+          "from": 1984,
+          "to": 1997,
+          "commons": "Flag of South Korea (1984–1997).svg",
+          "file": "kr/south-korea-1984.svg",
+          "design": "The Taegukgi of the Fifth and Sixth Republics.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "dfd866de016fb21641d668bee4083e33fa6b22836936c6c14b38eaa5051c7b36",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-1949",
+          "category": "historical",
+          "name": "Flag of South Korea (1949–1984)",
+          "from": 1949,
+          "to": 1984,
+          "commons": "Flag of South Korea (1949–1984).svg",
+          "file": "kr/south-korea-1949.svg",
+          "design": "The Taegukgi as fixed by the 1949 presidential proclamation, flown through the First to Fifth Republics.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "2bc462bee0226c669c78bd3da381f8c11f98a9e6b419b7ee82a9f737936e6255",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-1948",
+          "category": "historical",
+          "name": "Flag of South Korea (1948–1949)",
+          "from": 1948,
+          "to": 1949,
+          "commons": "Flag of South Korea (1948–1949).svg",
+          "file": "kr/south-korea-1948.svg",
+          "design": "The flag of the First Republic, before the 1949 standardisation.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "9525c62c101b932e167b5d268a6585edf170bbd6eae06047546c1157e6d3b9a5",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-president",
+          "category": "standard",
+          "name": "Flag of the President of South Korea",
+          "from": 1967,
+          "to": 9999,
+          "commons": "Flag of the President of South Korea.svg",
+          "file": "kr/south-korea-president.svg",
+          "design": "A blue field bearing the presidential phoenix emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
+          "sha256": "3956e742b30b63a7149591fc11b20d4ab67b890ba1b6e852166616459416c36f",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -4619,6 +4880,44 @@
           "reuse": "flags/ma.svg",
           "design": "The national flag of Morocco, in the form adopted in 1915.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Morocco"
+        },
+        {
+          "id": "ma-alawi",
+          "category": "historical",
+          "name": "Flag of the Alawi Sultanate",
+          "from": 1666,
+          "to": 1915,
+          "priorPolity": "the Alawi Sultanate",
+          "commons": "Flag of Morocco (1666–1915).svg",
+          "file": "ma/morocco-alawi.svg",
+          "design": "A plain red field — the flag of the sultanate before the pentagram was added in 1915.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags",
+          "sha256": "4ec08813328483de084aade1fffa1fa18d56127bca50fd17fa44b1ad40333267",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ma-royal",
+          "category": "standard",
+          "name": "Royal standard of Morocco",
+          "from": 1915,
+          "to": 9999,
+          "commons": "Royal standard of Morocco.svg",
+          "file": "ma/morocco-royal-standard.svg",
+          "design": "A green field bearing the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags",
+          "sha256": "225306e952da1db0ab02224f1d4ea4720fdb2ab73349d1ea7bcc6317643432ac",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ma-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Morocco",
+          "commons": "Naval Jack of Morocco.svg",
+          "file": "ma/morocco-naval-jack.svg",
+          "design": "A red swallow-tailed field with yellow and green charges.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags",
+          "sha256": "c0a6a4bb88b98b1add7f17c3a6e9d1c177a13b84fe762ff984acaa20a742e51d",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -5350,6 +5649,41 @@
           "reuse": "flags/ng.svg",
           "design": "The national flag of Nigeria, in the form adopted in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Nigeria"
+        },
+        {
+          "id": "ng-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Nigeria",
+          "from": 1998,
+          "to": 9999,
+          "commons": "Naval Ensign of Nigeria.svg",
+          "file": "ng/nigeria-naval-ensign.svg",
+          "design": "A white field with the national flag in the canton and the naval badge in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nigerian_flags",
+          "sha256": "84d1d8b7af3e0f62a82337e5034be51ac21bcf99de16e3c5727c451841d3eb59",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ng-air-force",
+          "category": "military",
+          "name": "Air force ensign of Nigeria",
+          "commons": "Air Force Ensign of Nigeria.svg",
+          "file": "ng/nigeria-air-force.svg",
+          "design": "A sky-blue field with the national flag in the canton and the air force roundel.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nigerian_flags",
+          "sha256": "8d07364646b990de0c5c53a82fa8fba8cfbdf56ef0be2a1a429427ca0f1631f2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ng-president",
+          "category": "standard",
+          "name": "Flag of the President of Nigeria",
+          "commons": "Flag of the President of Nigeria.svg",
+          "file": "ng/nigeria-president.svg",
+          "design": "The presidential flag of the Federal Republic.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Nigerian_flags",
+          "sha256": "0d80e4daa88e513981909973fb11031e0960ecde43f0286cc587ac00ffda8063",
+          "fetched": "2026-08-08"
         }
       ]
     },

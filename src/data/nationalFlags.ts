@@ -124,6 +124,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AT": [
     { id: "at-official-national", category: "official", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
     { id: "at-current", category: "historical", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
+    { id: "at-state", category: "civilstate", name: "State flag of Austria", from: 1955, to: 9999, path: "national-flags/at/austria-state.svg", design: "The red-white-red triband charged with the federal eagle — the state flag, war flag and naval ensign, beside the plain civil flag.", source: "https://en.wikipedia.org/wiki/List_of_Austrian_flags" },
   ],
   "AU": [
     { id: "au-official-national", category: "official", name: "Australian National Flag", from: 1908, to: 9999, primary: true, path: "flags/au.svg", design: "Proclaimed under the Flags Act 1953 as the flag of the Commonwealth of Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
@@ -162,6 +163,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BE": [
     { id: "be-official-national", category: "official", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
     { id: "be-current", category: "historical", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
+    { id: "be-civil-ensign", category: "maritime", name: "Civil ensign of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-civil-ensign.svg", design: "The black-yellow-red tricolour in the proportions used at sea.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
+    { id: "be-state-ensign", category: "maritime", name: "State ensign of Belgium", from: 1950, to: 9999, path: "national-flags/be/belgium-state-ensign.svg", design: "The tricolour defaced with the state emblem, worn by government vessels.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
+    { id: "be-naval-jack", category: "maritime", name: "Naval jack of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-naval-jack.svg", design: "The jack of the Belgian Navy.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
   ],
   "BF": [
     { id: "bf-official-national", category: "official", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag of Burkina Faso, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
@@ -278,6 +282,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CH": [
     { id: "ch-official-national", category: "official", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
     { id: "ch-current", category: "historical", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
+    { id: "ch-civil-ensign", category: "maritime", name: "Civil and state ensign of Switzerland", from: 1882, to: 9999, path: "national-flags/ch/switzerland-civil-ensign.svg", design: "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.", source: "https://en.wikipedia.org/wiki/List_of_Swiss_flags" },
   ],
   "CI": [
     { id: "ci-official-national", category: "official", name: "Flag of Côte d’Ivoire", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Côte d’Ivoire, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire" },
@@ -371,6 +376,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "EG": [
     { id: "eg-official-national", category: "official", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
     { id: "eg-current", category: "historical", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
+    { id: "eg-navy", category: "military", name: "Flag of the Egyptian Navy", from: 1984, to: 9999, path: "national-flags/eg/egypt-navy.svg", design: "The national flag defaced with the navy’s emblem.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-naval-ensign", category: "maritime", name: "Naval ensign and jack of Egypt", from: 1984, to: 9999, path: "national-flags/eg/egypt-naval-ensign.svg", design: "The national flag with the naval emblem in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-president", category: "standard", name: "Presidential Standard of Egypt", from: 1984, to: 9999, path: "national-flags/eg/egypt-president.svg", design: "The national flag charged with the presidential arms.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-president-1972", category: "standard", name: "Standard of the President of Egypt (1972–1984)", from: 1972, to: 1984, path: "national-flags/eg/egypt-president-1972.svg", design: "The presidential standard of the Arab Republic before the 1984 redesign.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
   ],
   "ER": [
     { id: "er-official-national", category: "official", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag of Eritrea, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
@@ -395,6 +404,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "ET": [
     { id: "et-official-national", category: "official", name: "Flag of Ethiopia", from: 1996, to: 9999, primary: true, path: "flags/et.svg", design: "The national flag of Ethiopia, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
     { id: "et-current", category: "historical", name: "Flag of Ethiopia", from: 1996, to: 9999, primary: true, path: "flags/et.svg", design: "The national flag of Ethiopia, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
+    { id: "et-1897", category: "historical", name: "Flag of Ethiopia (1897–1914)", from: 1897, to: 1914, path: "national-flags/et/ethiopia-1897.svg", design: "A horizontal tricolour of green, yellow and red — the first rectangular Ethiopian flag.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
+    { id: "et-1875", category: "historical", name: "Flag of Ethiopia (1875–1881)", from: 1875, to: 1881, path: "national-flags/et/ethiopia-1875.svg", design: "An early horizontal tricolour, from before the arrangement settled.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
+    { id: "et-abyssinia", category: "historical", name: "Flag of the Ethiopian Empire (1270–1853)", from: 1270, to: 1853, priorPolity: "the Ethiopian Empire under the Solomonic dynasty", path: "national-flags/et/ethiopia-abyssinia.svg", design: "The banner of the Solomonic dynasty, before the tricolour.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
   ],
   "FI": [
     { id: "fi-official-national", category: "official", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
@@ -470,6 +482,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "GR": [
     { id: "gr-official-national", category: "official", name: "Flag of Greece", from: 1822, to: 9999, primary: true, path: "flags/gr.svg", design: "The national flag of Greece, in the form adopted in 1822.", source: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
     { id: "gr-current", category: "historical", name: "Flag of Greece", from: 1822, to: 9999, primary: true, path: "flags/gr.svg", design: "The national flag of Greece, in the form adopted in 1822.", source: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
+    { id: "gr-naval-jack", category: "maritime", name: "Naval jack of Greece", from: 1822, to: 9999, path: "national-flags/gr/greece-naval-jack.svg", design: "A blue field with a white cross throughout — the jack the Hellenic Navy has flown since the war of independence.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
+    { id: "gr-president", category: "standard", name: "Flag of the President of Greece", from: 1979, to: 9999, path: "national-flags/gr/greece-president.svg", design: "The national flag charged with the presidential arms.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
+    { id: "gr-president-1924", category: "standard", name: "Flag of the President of Greece (1924–1935)", from: 1924, to: 1935, path: "national-flags/gr/greece-president-1924.svg", design: "The presidential flag of the Second Hellenic Republic.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
   ],
   "GT": [
     { id: "gt-official-national", category: "official", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag of Guatemala, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
@@ -602,7 +617,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "KR": [
     { id: "kr-official-national", category: "official", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
+    { id: "kr-1997", category: "historical", name: "Flag of South Korea (1997–2011)", from: 1997, to: 2011, path: "national-flags/kr/south-korea-1997.svg", design: "The Taegukgi as standardised in 1997, before the 2011 specification adjusted its colours.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
+    { id: "kr-1984", category: "historical", name: "Flag of South Korea (1984–1997)", from: 1984, to: 1997, path: "national-flags/kr/south-korea-1984.svg", design: "The Taegukgi of the Fifth and Sixth Republics.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
+    { id: "kr-1949", category: "historical", name: "Flag of South Korea (1949–1984)", from: 1949, to: 1984, path: "national-flags/kr/south-korea-1949.svg", design: "The Taegukgi as fixed by the 1949 presidential proclamation, flown through the First to Fifth Republics.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
+    { id: "kr-1948", category: "historical", name: "Flag of South Korea (1948–1949)", from: 1948, to: 1949, path: "national-flags/kr/south-korea-1948.svg", design: "The flag of the First Republic, before the 1949 standardisation.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
     { id: "kr-current", category: "historical", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
+    { id: "kr-president", category: "standard", name: "Flag of the President of South Korea", from: 1967, to: 9999, path: "national-flags/kr/south-korea-president.svg", design: "A blue field bearing the presidential phoenix emblem.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
   ],
   "KW": [
     { id: "kw-official-national", category: "official", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
@@ -659,6 +679,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MA": [
     { id: "ma-official-national", category: "official", name: "Flag of Morocco", from: 1915, to: 9999, primary: true, path: "flags/ma.svg", design: "The national flag of Morocco, in the form adopted in 1915.", source: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
     { id: "ma-current", category: "historical", name: "Flag of Morocco", from: 1915, to: 9999, primary: true, path: "flags/ma.svg", design: "The national flag of Morocco, in the form adopted in 1915.", source: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
+    { id: "ma-alawi", category: "historical", name: "Flag of the Alawi Sultanate", from: 1666, to: 1915, priorPolity: "the Alawi Sultanate", path: "national-flags/ma/morocco-alawi.svg", design: "A plain red field — the flag of the sultanate before the pentagram was added in 1915.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
+    { id: "ma-naval-jack", category: "maritime", name: "Naval jack of Morocco", path: "national-flags/ma/morocco-naval-jack.svg", design: "A red swallow-tailed field with yellow and green charges.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
+    { id: "ma-royal", category: "standard", name: "Royal standard of Morocco", from: 1915, to: 9999, path: "national-flags/ma/morocco-royal-standard.svg", design: "A green field bearing the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
   ],
   "MC": [
     { id: "mc-official-national", category: "official", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag of Monaco, in the form adopted in 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
@@ -757,6 +780,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "NG": [
     { id: "ng-official-national", category: "official", name: "Flag of Nigeria", from: 1960, to: 9999, primary: true, path: "flags/ng.svg", design: "The national flag of Nigeria, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
     { id: "ng-current", category: "historical", name: "Flag of Nigeria", from: 1960, to: 9999, primary: true, path: "flags/ng.svg", design: "The national flag of Nigeria, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
+    { id: "ng-air-force", category: "military", name: "Air force ensign of Nigeria", path: "national-flags/ng/nigeria-air-force.svg", design: "A sky-blue field with the national flag in the canton and the air force roundel.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
+    { id: "ng-naval-ensign", category: "maritime", name: "Naval ensign of Nigeria", from: 1998, to: 9999, path: "national-flags/ng/nigeria-naval-ensign.svg", design: "A white field with the national flag in the canton and the naval badge in the fly.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
+    { id: "ng-president", category: "standard", name: "Flag of the President of Nigeria", path: "national-flags/ng/nigeria-president.svg", design: "The presidential flag of the Federal Republic.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
   ],
   "NI": [
     { id: "ni-official-national", category: "official", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
