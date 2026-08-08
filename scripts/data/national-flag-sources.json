@@ -2219,6 +2219,43 @@
           "reuse": "flags/dk.svg",
           "design": "The national flag of Denmark, in the form adopted in 1625.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Denmark"
+        },
+        {
+          "id": "dk-state",
+          "category": "civilstate",
+          "name": "State flag of Denmark",
+          "commons": "Flag of Denmark (state).svg",
+          "file": "dk/denmark-state.svg",
+          "design": "The Dannebrog in swallow-tailed form, flown by the state, beside the rectangular civil flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
+          "sha256": "df3ca73ea2845de7910df52d01c4b314221104e84f5dcef624a2c41f90fc5909",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dk-royal",
+          "category": "standard",
+          "name": "Royal Standard of Denmark",
+          "from": 2024,
+          "to": 9999,
+          "commons": "Royal Standard of Denmark.svg",
+          "file": "dk/denmark-royal-standard.svg",
+          "design": "The state flag charged with the royal coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
+          "sha256": "6ea2167c9160fe69dc6e12933701c871ead93d619d756a6e7a56dfce0f2f3ff4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "dk-regent",
+          "category": "standard",
+          "name": "Standard of the Regent of Denmark",
+          "from": 1914,
+          "to": 9999,
+          "commons": "Standard of the Regent of Denmark.svg",
+          "file": "dk/denmark-regent.svg",
+          "design": "The flag of a temporary regent, flown in the sovereign’s absence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Danish_flags",
+          "sha256": "4563e07927742806a6477aa0e21185a1e1c4c79de2c7cb155b1318ff4e89f850",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -2611,6 +2648,32 @@
           "reuse": "flags/fi.svg",
           "design": "The national flag of Finland, in the form adopted in 1918.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Finland"
+        },
+        {
+          "id": "fi-state",
+          "category": "civilstate",
+          "name": "State flag of Finland",
+          "from": 1978,
+          "to": 9999,
+          "commons": "Flag of Finland (state).svg",
+          "file": "fi/finland-state.svg",
+          "design": "The blue Nordic cross charged with the national coat of arms — flown by the state, beside the plain civil flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
+          "sha256": "e796012fdb01faa1e1c925467d9ec4db64a1e115ebc305ae8d3b64a61ca69a6c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "fi-president",
+          "category": "standard",
+          "name": "Flag of the President of Finland",
+          "from": 1978,
+          "to": 9999,
+          "commons": "Flag of the President of Finland.svg",
+          "file": "fi/finland-president.svg",
+          "design": "The war flag charged with the Cross of Liberty in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Finland",
+          "sha256": "cb8a552a1db7575f968bf3a60e3b6bf29987a5e4fcc669671465ea43c8f20f90",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -3437,6 +3500,32 @@
           "reuse": "flags/ie.svg",
           "design": "The national flag of Ireland, in the form adopted in 1922.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Ireland"
+        },
+        {
+          "id": "ie-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Ireland",
+          "from": 1947,
+          "to": 9999,
+          "commons": "Naval jack of Ireland.svg",
+          "file": "ie/ireland-naval-jack.svg",
+          "design": "Adopted in 1947 for ships of the Naval Service.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "f33e56753fe13bcafbe24304ae26ee5c9765629e7bf9dd645fa68e0d01d7255d",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ie-naval-colour",
+          "category": "military",
+          "name": "Naval Service colour",
+          "from": 1996,
+          "to": 9999,
+          "commons": "Irish Naval Service Colour.svg",
+          "file": "ie/ireland-naval-colour.svg",
+          "design": "A navy-blue colour bearing the Naval Service badge.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Ireland",
+          "sha256": "d9d562eb40a76fff9e51f8e321771a53ab4a10c315ebef48f9af492a3bb582e0",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -5370,6 +5459,56 @@
           "reuse": "flags/no.svg",
           "design": "The national flag of Norway, in the form adopted in 1821.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Norway"
+        },
+        {
+          "id": "no-war-flag",
+          "category": "military",
+          "name": "Naval ensign and war flag of Norway",
+          "from": 1905,
+          "to": 9999,
+          "commons": "Flag of Norway, state.svg",
+          "file": "no/norway-war-flag.svg",
+          "design": "The national flag in swallow-tailed form, flown by the armed forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
+          "sha256": "050452d31e1ee2ded0838263c297d326e65a034570524eb1e10657aae437c09f",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "no-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Norway",
+          "commons": "Naval Jack of Norway.svg",
+          "file": "no/norway-naval-jack.svg",
+          "design": "The national flag in square proportions.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
+          "sha256": "c51090f5c0b8ffb1e1e2d124e6b7efeb66ac56e78039f5195591fc9fd83f660b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "no-royal",
+          "category": "standard",
+          "name": "Royal Standard of Norway",
+          "from": 1905,
+          "to": 9999,
+          "commons": "Kongeflagget.svg",
+          "file": "no/norway-royal-standard.svg",
+          "design": "The coat of arms of Norway on a red field.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
+          "sha256": "21b8d55c6cffdc8cddd1b00901b83edaf21788c39a7fccdd82f90ad697704942",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "no-crown-prince",
+          "category": "standard",
+          "name": "Standard of the Crown Prince of Norway",
+          "from": 1924,
+          "to": 9999,
+          "commons": "Kronprinsflagg.svg",
+          "file": "no/norway-crown-prince.svg",
+          "design": "The royal standard differenced for the heir.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Norwegian_flags",
+          "sha256": "8a2925dd7ac748f34e55df9a76db643f358990ca987819eccd862212075cf66c",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -5442,8 +5581,52 @@
           "reuse": "flags/nz.svg",
           "design": "The national flag of New Zealand, in the form adopted in 1903.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_New_Zealand"
+        },
+        {
+          "id": "nz-1867",
+          "category": "historical",
+          "name": "Flag of New Zealand government ships (1867–1869)",
+          "from": 1867,
+          "to": 1869,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of New Zealand Government Ships 1867.svg",
+          "file": "nz/new-zealand-1867.svg",
+          "design": "The first New Zealand flag based on the Blue Ensign, defaced with the letters NZ.",
+          "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
+          "sha256": "b40e771167caf8c3c01d6f9badb894632a9417e4b41b0fbbec49691c5b52a204",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "nz-union-flag",
+          "category": "historical",
+          "name": "Union Flag",
+          "from": 1840,
+          "to": 1867,
+          "sovereign": "the United Kingdom",
+          "reuse": "flags/gb.svg",
+          "design": "The Union Flag, which served as New Zealand’s flag from the Treaty of Waitangi until a distinct colonial ensign was granted.",
+          "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags"
+        },
+        {
+          "id": "nz-royal-1962",
+          "category": "standard",
+          "name": "Personal Flag of Queen Elizabeth II in New Zealand",
+          "from": 1962,
+          "to": 2022,
+          "commons": "Royal Standard of New Zealand (1962–2022).svg",
+          "file": "nz/new-zealand-royal-1962.svg",
+          "design": "A banner of the New Zealand shield with the Queen’s personal cypher.",
+          "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
+          "sha256": "62bcdeeb6bbcc0ca485096a330005e3386cde074f93e579b63a9322829d41ad9",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1907,
+        "event": "New Zealand became a Dominion on 26 September 1907.",
+        "note": "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.",
+        "source": "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand"
+      }
     },
     "OM": {
       "flags": [
