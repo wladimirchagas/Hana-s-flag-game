@@ -2474,8 +2474,107 @@
           "reuse": "flags/cu.svg",
           "design": "The national flag of Cuba, in the form adopted in 1849.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Cuba"
+        },
+        {
+          "id": "cu-1902",
+          "category": "historical",
+          "name": "Flag of Cuba (1902–1906)",
+          "from": 1902,
+          "to": 1906,
+          "commons": "Flag of Cuba (1902–1906).svg",
+          "file": "cu/cuba-1902.svg",
+          "design": "The sky-blue variant flown in the republic's first years.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
+          "sha256": "493aa1a064e335a0f5550eb635bf4d4bf327bbcc872c8a0786e14eeb804f0fd9",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cu-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1521,
+          "to": 1785,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The ragged saltire of Burgundy, the Spanish military flag flown over the island.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags"
+        },
+        {
+          "id": "cu-spain",
+          "category": "historical",
+          "name": "Flag of Spain",
+          "from": 1785,
+          "to": 1898,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "design": "The Spanish ensign of 1785, flown until the Spanish–American War ended Spanish rule in 1898.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags"
+        },
+        {
+          "id": "cu-president",
+          "category": "standard",
+          "name": "Flag of the President of Cuba",
+          "from": 1959,
+          "to": 9999,
+          "commons": "Flag of the President of Cuba.svg",
+          "file": "cu/cuba-president.svg",
+          "design": "The presidential flag adopted after the revolution.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
+          "sha256": "506b04f3d2d7bcba9e32aa5d9f1485309f94caa388b7b38ee4516febfa89579c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cu-president-1929",
+          "category": "standard",
+          "name": "Standard of the President of Cuba (1929–1959)",
+          "from": 1929,
+          "to": 1959,
+          "commons": "Standard of the President of Cuba (1929-1959).svg",
+          "file": "cu/cuba-president-1929.svg",
+          "design": "The presidential standard of the pre-revolutionary republic.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
+          "sha256": "5fee909cabe89c6ccdd7630774cd8f76b00d8a132939c56a24fa94451aad930c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cu-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Cuba",
+          "commons": "Naval jack of Cuba.svg",
+          "file": "cu/cuba-naval-jack.svg",
+          "design": "The navy's jack.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cuban_flags",
+          "sha256": "605ad49b0edc4f407d2084dba1a0761d53c34b11d6a99b8648467038b9eced86",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "cu-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Cuba",
+          "from": 1906,
+          "to": 9999,
+          "commons": "Coat of arms of Cuba.svg",
+          "file": "cu/cuba-arms.svg",
+          "design": "A shield of three fields before a fasces crowned with a Phrygian cap, supported by an oak branch and a laurel wreath.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba",
+          "meaning": {
+            "description": "Designed by Miguel Teurbe Tolón in 1849, the shield is read in three fields. The upper field is a sea between two capes — the Yucatán peninsula and Florida — with a golden key hanging between them beneath a rising sun: Cuba is the key to the Gulf of Mexico, the island commanding the strait, and the sun is the dawn of the new state. The lower left field carries the blue and white stripes of the flag, for the island's division into departments under Spanish rule; the lower right shows a royal palm, the national tree, standing for the country itself. Behind the shield the fasces topped with a red Phrygian cap is the classical emblem of authority and of liberty, and the oak branch and laurel wreath at the sides are strength and glory.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cuba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba"
+              }
+            ]
+          },
+          "sha256": "9f6e22b507897e79ff65dabd4ace9a0ccfb1f110be2975030dfc1b6ecc4b89cc",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1902,
+        "event": "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war",
+        "source": "https://en.wikipedia.org/wiki/History_of_Cuba"
+      }
     },
     "CV": {
       "flags": [
@@ -2890,8 +2989,116 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
           "sha256": "217a941f4b2e9b0ded1476ab616d9b5486f3e844f0ee8163b06e4d6d6da28b7c",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-1972",
+          "category": "historical",
+          "name": "Flag of Egypt (1972–1984)",
+          "from": 1972,
+          "to": 1984,
+          "commons": "Flag of Egypt (1972–1984).svg",
+          "file": "eg/egypt-1972.svg",
+          "design": "The tricolour bearing the golden Hawk of Quraish, as a member of the Federation of Arab Republics.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "fc85f906ed39f477abc7e94c66835d17844d8978495af23d7d8a72528ff88f39",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-uar",
+          "category": "historical",
+          "name": "Flag of the United Arab Republic",
+          "from": 1958,
+          "to": 1972,
+          "commons": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024).svg",
+          "file": "eg/egypt-uar.svg",
+          "design": "The tricolour with two green stars for the two members of the union with Syria.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "331d12374444f1c149149292314b12eccf532b16d06468a6dd9b8f581fd969e5",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-1923",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Egypt",
+          "from": 1923,
+          "to": 1958,
+          "commons": "Flag of Egypt (1922-1958).svg",
+          "file": "eg/egypt-1923.svg",
+          "design": "A green field with a white crescent and three stars.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "488d86f4b93ba4a2657c07b1c5dd6e1ff5786e96c032be39989d76af7201832e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-1914",
+          "category": "historical",
+          "name": "Flag of the Sultanate of Egypt",
+          "from": 1914,
+          "to": 1923,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Egypt (1882–1922).svg",
+          "file": "eg/egypt-1914.svg",
+          "design": "A red field with a white crescent and three stars, flown under the British protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "de720a5b76faed34b5b23b63690434f9206f6b6f55f19ed4ab53302b9f121834",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-1881",
+          "category": "historical",
+          "name": "Flag of the Khedivate of Egypt",
+          "from": 1881,
+          "to": 1914,
+          "sovereign": "the Ottoman Empire",
+          "commons": "Flag of Egypt 19th century 6point.svg",
+          "file": "eg/egypt-1881.svg",
+          "design": "A red field with a white crescent and star, flown by the khedivate under Ottoman suzerainty and then British occupation.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "f0a9b83ed93d6fd71265530fbf5aaf7d6e24c6989c1b58839be77a4537f4a532",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-royal",
+          "category": "standard",
+          "name": "Standard of the King of Egypt",
+          "from": 1923,
+          "to": 1953,
+          "commons": "Royal Standard of Egypt (on land).svg",
+          "file": "eg/egypt-royal.svg",
+          "design": "The royal standard of the Kingdom of Egypt.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Egyptian_flags",
+          "sha256": "c724ff052570757a1a106d63eb7055d2b09f7557d18ae5e3f0e119a622c1bf0b",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "eg-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Egypt",
+          "from": 1984,
+          "to": 9999,
+          "commons": "Coat of arms of Egypt (Official).svg",
+          "file": "eg/egypt-arms.svg",
+          "design": "The Eagle of Saladin, bearing a shield in the flag's colours and standing on a scroll with the name of the state.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt",
+          "meaning": {
+            "description": "Eagles have stood for power in Egypt for millennia, appearing from the pharaonic era onward and used as heraldic banners by pagan, Christian and Muslim rulers into the medieval period; this one is the Eagle of Saladin, named for the 12th-century sultan. On its breast it carries a shield in the colours of the national flag, turned to a vertical arrangement, and in its talons a scroll reading Gumhūriyyat Miṣr al-ʿArabiyyah — Arab Republic of Egypt. The bird on the arms has changed with the state it serves: the union with Syria in 1958 replaced the monarchical field on its breast with the flag of the United Arab Republic and its two stars, and Sadat's accession to the Federation of Arab Republics in 1972 replaced the eagle entirely with the Hawk of Quraish before it was restored.",
+            "sources": [
+              {
+                "title": "Coat of arms of Egypt — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt"
+              }
+            ]
+          },
+          "sha256": "33cb30481a5276bc89e2ed20cb4741539e2e295c7abd4a5435a809e2e415d996",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1922,
+        "event": "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922",
+        "note": "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.",
+        "source": "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence"
+      }
     },
     "ER": {
       "flags": [
@@ -4045,6 +4252,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Indonesian_flags",
           "sha256": "00dd9c19f09d896c9505035761ef3a5080ffd129f91b768a74c19a7d00c32b11",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "id-emblem",
+          "category": "coatofarms",
+          "name": "Garuda Pancasila",
+          "from": 1950,
+          "to": 9999,
+          "commons": "National emblem of Indonesia Garuda Pancasila.svg",
+          "file": "id/indonesia-emblem.svg",
+          "design": "A golden Garuda bearing a shield of five charges, clutching a scroll with the national motto.",
+          "source": "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia",
+          "meaning": {
+            "description": "The Garuda is the mount of Vishnu, and in Javanese and Balinese tradition stands for knowledge, power, bravery, loyalty and discipline — Bali venerates it as the lord of all flying creatures. Its feathers are counted, not merely drawn: they are arranged to spell the date of the proclamation of independence, 17 August 1945. The shield on its breast carries the five principles of Pancasila, the state philosophy, and the scroll in its talons reads \"Bhinneka Tunggal Ika\", a line of Old Javanese from the 14th-century poem Sutasoma by Empu Tantular of Majapahit. That line was written to reconcile the Hindu and Buddhist faiths — \"although diverse, both are truthful to Dharma; there is no duality in Truth\" — and is now read as unity in diversity.",
+            "sources": [
+              {
+                "title": "National emblem of Indonesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia"
+              }
+            ]
+          },
+          "sha256": "8153704649b7bab5ce2103d9c60c0f547c4d66aa2e9f736837a8a3c104a02082",
+          "fetched": "2026-08-08"
         }
       ]
     },
@@ -4937,8 +5166,170 @@
           "reuse": "flags/ke.svg",
           "design": "The national flag of Kenya, in the form adopted in 1963.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kenya"
+        },
+        {
+          "id": "ke-1921",
+          "category": "historical",
+          "name": "Flag of the Colony and Protectorate of Kenya",
+          "from": 1921,
+          "to": 1963,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Kenya (1921–1963).svg",
+          "file": "ke/kenya-1921.svg",
+          "design": "A British Blue Ensign defaced with the colony's badge, a red lion on a white disc.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "69fbf53786253cd252b83a21a92ce961b8a72fd87ef9c97de189b80a7b232666",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-1895",
+          "category": "historical",
+          "name": "Flag of the East Africa Protectorate",
+          "from": 1895,
+          "to": 1921,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Kenya (1895–1921).svg",
+          "file": "ke/kenya-1895.svg",
+          "design": "A British Blue Ensign defaced with the protectorate's badge.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "f443c5c234dbdd0b924bce813eb593e57827e95e1a6b184ffaf4b581719f4a5c",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-ibeac",
+          "category": "historical",
+          "name": "Flag of the Imperial British East Africa Company",
+          "from": 1888,
+          "to": 1895,
+          "sovereign": "the Imperial British East Africa Company",
+          "commons": "Flag of the Imperial British East Africa Company.svg",
+          "file": "ke/kenya-ibeac.svg",
+          "design": "A Union Flag defaced with the company's sun badge and motto — the chartered company that administered the territory before the Crown took it over.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "fda20299a8428f8ee1610ac05400a25c9ee54ad452a3e99c8618c396fb8c15c2",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-oman",
+          "category": "historical",
+          "name": "Flag of the Omani Empire",
+          "from": 1698,
+          "to": 1888,
+          "sovereign": "the Omani Empire",
+          "commons": "Flag of the Omani Empire.svg",
+          "file": "ke/kenya-oman.svg",
+          "design": "A white field bearing a red sword and inscription — the flag flown along the Swahili coast while it was ruled from Muscat and then Zanzibar.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "149c47c07b00e2fb9b767d08b8ecb8cee6df700b0f2ed2d905ca782d570c1531",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-portugal",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Portugal (1667–1698)",
+          "from": 1667,
+          "to": 1698,
+          "sovereign": "Portugal",
+          "commons": "Flag of Portugal (1667).svg",
+          "file": "ke/kenya-portugal.svg",
+          "design": "The white field with the Portuguese royal arms in its 1667 pattern, flown over the coast until the Omani capture of Fort Jesus in 1698.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "f8867c2f08581286fc2d36f698257875f47488eb108af58e2ea209981c6c80b4",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-president",
+          "category": "standard",
+          "name": "Presidential standard of Kenya",
+          "from": 2022,
+          "to": 9999,
+          "commons": "Kenya presidential standard William Ruto.svg",
+          "file": "ke/kenya-president.svg",
+          "design": "A green field with the coat of arms and the incumbent's own device.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "35fd089f7199828cff82a1384c7150b798fca7faa681eb3b15931066e227a18e",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-president-1964",
+          "category": "standard",
+          "name": "First presidential standard of Kenya",
+          "from": 1964,
+          "to": 1970,
+          "commons": "First presidential standard of Kenya.svg",
+          "file": "ke/kenya-president-1964.svg",
+          "design": "The first standard adopted after independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "5dd8529a17e5804db0ca5459a9d7dfadea685ac1381f72bf0fafdc043e084727",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-defence",
+          "category": "military",
+          "name": "Flag of the Kenya Defence Forces",
+          "from": 1964,
+          "to": 9999,
+          "commons": "Flag of the Kenya Defence Forces.svg",
+          "file": "ke/kenya-defence.svg",
+          "design": "The defence forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "d36cc6c1cfd34328f2bef139771633abe8779b1e882007a5f3ea22dc984ce028",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Kenya",
+          "from": 1964,
+          "to": 9999,
+          "commons": "Air Force Ensign of Kenya.svg",
+          "file": "ke/kenya-air-force.svg",
+          "design": "A light blue ensign with the national flag in the canton and the air force roundel in the fly.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "771888631a6d0b2f895817e2b3245b49604c8860e02e68682e50401024f2bb36",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Kenya",
+          "from": 1964,
+          "to": 9999,
+          "commons": "Naval Ensign of Kenya.svg",
+          "file": "ke/kenya-naval-ensign.svg",
+          "design": "A white ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya",
+          "sha256": "23545a35c8add6e88c069fdca2c62f83cca476694f306640009f1d0048462444",
+          "fetched": "2026-08-08"
+        },
+        {
+          "id": "ke-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Kenya",
+          "from": 1963,
+          "to": 9999,
+          "commons": "Coat of arms of Kenya (Official).svg",
+          "file": "ke/kenya-arms.svg",
+          "design": "Two lions holding spears and a traditional East African shield in the national colours, on a compartment representing Mount Kenya, over a scroll reading Harambee.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya",
+          "meaning": {
+            "description": "The two lions are protection; the shield and the spears they hold are unity and the defence of freedom, and the shield carries the national colours — black for the people of Kenya, red for the blood shed in the struggle for independence, green for the land and its natural wealth, and the white fimbriations for peace and unity. The compartment beneath represents Mount Kenya itself, with the country's produce growing on it. The scroll carries the motto Harambee, Swahili for \"pulling together\" — all for one.",
+            "sources": [
+              {
+                "title": "Coat of arms of Kenya — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya"
+              }
+            ]
+          },
+          "sha256": "0498fd219e8c6448b454209ad4dae858e9c2ff790639b605c3a20b13cf8d50fe",
+          "fetched": "2026-08-08"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1963,
+        "event": "Independence from the United Kingdom, 12 December 1963",
+        "source": "https://en.wikipedia.org/wiki/History_of_Kenya"
+      }
     },
     "KG": {
       "flags": [

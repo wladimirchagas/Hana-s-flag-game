@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="1200"
+   height="600"
+   viewBox="-160 -80 640 320"
+   id="svg2">
+  <defs
+     id="defs4">
+    <path
+       d="M -1,55.4256 H 1 V -38 c 2,-2 2,-5 2,-8 C 3,-48 3,-56 0,-64.66323 -3,-56 -3,-48 -3,-46 c 0,3 0,6 2,8 z"
+       transform="matrix(0.8660254,0.5,-0.5,0.8660254,0,0)"
+       id="spearshape"
+       style="stroke-miterlimit:10" />
+  </defs>
+  <rect
+     width="640"
+     height="320"
+     x="-160"
+     y="-80"
+     id="rect7"
+     style="fill:#ffffff" />
+  <rect
+     width="320"
+     height="48"
+     x="-160"
+     y="-80"
+     id="rect9"
+     style="fill:#000000" />
+  <rect
+     width="320"
+     height="48"
+     x="-160"
+     y="32"
+     id="rect11"
+     style="fill:#006600" />
+  <use
+     id="use14"
+     style="stroke:#000000"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#spearshape" />
+  <use
+     id="use16"
+     style="fill:#ffffff;stroke:none"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#spearshape" />
+  <use
+     transform="scale(-1,1)"
+     id="use2875"
+     style="stroke:#000000"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#spearshape" />
+  <use
+     transform="scale(-1,1)"
+     id="use2877"
+     style="fill:#ffffff;stroke:none"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#spearshape" />
+  <path
+     d="m -160,-24 v 48 h 141 c 3,8 13,24 19,24 6,0 16,-16 19,-24 H 160 V -24 H 19 C 16,-32 6,-48 0,-48 c -6,0 -16,16 -19,24 z"
+     id="path20"
+     style="fill:#bb0000" />
+  <path
+     d="m 19,24 c 3,-8 5,-16 5,-24 0,-8 -2,-16 -5,-24 -3,8 -5,16 -5,24 0,8 2,16 5,24"
+     id="deco_r"
+     style="fill:#000000" />
+  <use
+     transform="scale(-1,1)"
+     id="use23"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#deco_r" />
+  <ellipse
+     cx="0"
+     cy="0"
+     rx="4"
+     ry="6"
+     id="ellipse27"
+     style="fill:#ffffff" />
+  <path
+     d="m 1,5.85 c 0,0 4,8 4,21 0,13 -4,21 -4,21 z"
+     id="deco_br"
+     style="fill:#ffffff" />
+  <use
+     transform="scale(-1,-1)"
+     id="use30"
+     style="fill:#ffffff"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#deco_br" />
+  <use
+     transform="scale(-1,1)"
+     id="use32"
+     style="fill:#ffffff"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#deco_br" />
+  <use
+     transform="scale(1,-1)"
+     id="use34"
+     style="fill:#ffffff"
+     x="0"
+     y="0"
+     width="640"
+     height="320"
+     xlink:href="#deco_br" />
+  <path
+     d="m 387.36667,191.89417 c -5.5,-3.50914 -8,-6.01567 -11.5,-9.0235 l 0,10.02611 c -6,-8.02089 -8.5,-16.54308 -10,-25.06528 7.5,4.01045 15.5,7.51959 23.5,9.0235 l -9.5,2.00523 c 8,8.02088 15,9.5248 22,11.53002 l 0,-44.11488 -22.5,-4.51175 0,-6.01567 23,0 0,-11.02872 7,0 0,11.02872 23,0 0,6.01567 -22.5,4.51175 0,44.11488 c 7,-2.00522 14,-3.50914 22,-11.53002 l -9.5,-2.00523 c 8,-1.50391 16,-5.01305 23.5,-9.0235 -1.5,8.5222 -4,17.04439 -10,25.06528 l 0,-10.02611 c -3.5,3.00783 -6,5.51436 -11.5,9.0235 -6.5,3.50914 -13.5,9.0235 -18.5,15.03916 -5,-6.01566 -12,-11.02872 -18.5,-15.03916 z"
+     id="path36"
+     style="fill:#bb0000" />
+  <circle
+     cx="320"
+     cy="2"
+     r="17.5"
+     transform="matrix(0.5,0,0,0.5013055,245.86667,118.70357)"
+     id="circle38"
+     style="fill:#bb0000" />
+  <circle
+     cx="320"
+     cy="2"
+     r="12.5"
+     transform="matrix(0.5,0,0,0.5013055,245.86667,118.70357)"
+     id="circle40"
+     style="fill:#ffffff" />
+</svg>

@@ -348,7 +348,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "CU": [
     { id: "cu-official-national", category: "official", name: "Flag of Cuba", from: 1849, to: 9999, primary: true, path: "flags/cu.svg", design: "The national flag of Cuba, in the form adopted in 1849.", source: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    { id: "cu-1902", category: "historical", name: "Flag of Cuba (1902–1906)", from: 1902, to: 1906, path: "national-flags/cu/cuba-1902.svg", design: "The sky-blue variant flown in the republic's first years.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
     { id: "cu-current", category: "historical", name: "Flag of Cuba", from: 1849, to: 9999, primary: true, path: "flags/cu.svg", design: "The national flag of Cuba, in the form adopted in 1849.", source: "https://en.wikipedia.org/wiki/Flag_of_Cuba" },
+    { id: "cu-spain", category: "historical", name: "Flag of Spain", from: 1785, to: 1898, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The Spanish ensign of 1785, flown until the Spanish–American War ended Spanish rule in 1898.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
+    { id: "cu-burgundy", category: "historical", name: "Cross of Burgundy", from: 1521, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ragged saltire of Burgundy, the Spanish military flag flown over the island.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
+    { id: "cu-naval-jack", category: "maritime", name: "Naval jack of Cuba", path: "national-flags/cu/cuba-naval-jack.svg", design: "The navy's jack.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
+    { id: "cu-president", category: "standard", name: "Flag of the President of Cuba", from: 1959, to: 9999, path: "national-flags/cu/cuba-president.svg", design: "The presidential flag adopted after the revolution.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
+    { id: "cu-president-1929", category: "standard", name: "Standard of the President of Cuba (1929–1959)", from: 1929, to: 1959, path: "national-flags/cu/cuba-president-1929.svg", design: "The presidential standard of the pre-revolutionary republic.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
+    { id: "cu-arms", category: "coatofarms", name: "Coat of arms of Cuba", from: 1906, to: 9999, path: "national-flags/cu/cuba-arms.svg", design: "A shield of three fields before a fasces crowned with a Phrygian cap, supported by an oak branch and a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
   ],
   "CV": [
     { id: "cv-official-national", category: "official", name: "Flag of Cabo Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag of Cabo Verde, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cabo_Verde" },
@@ -403,10 +410,17 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "EG": [
     { id: "eg-official-national", category: "official", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
     { id: "eg-current", category: "historical", name: "Flag of Egypt", from: 1984, to: 9999, primary: true, path: "flags/eg.svg", design: "The national flag of Egypt, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Egypt" },
+    { id: "eg-1972", category: "historical", name: "Flag of Egypt (1972–1984)", from: 1972, to: 1984, path: "national-flags/eg/egypt-1972.svg", design: "The tricolour bearing the golden Hawk of Quraish, as a member of the Federation of Arab Republics.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-uar", category: "historical", name: "Flag of the United Arab Republic", from: 1958, to: 1972, path: "national-flags/eg/egypt-uar.svg", design: "The tricolour with two green stars for the two members of the union with Syria.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-1923", category: "historical", name: "Flag of the Kingdom of Egypt", from: 1923, to: 1958, path: "national-flags/eg/egypt-1923.svg", design: "A green field with a white crescent and three stars.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-1914", category: "historical", name: "Flag of the Sultanate of Egypt", from: 1914, to: 1923, sovereign: "the United Kingdom", path: "national-flags/eg/egypt-1914.svg", design: "A red field with a white crescent and three stars, flown under the British protectorate.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-1881", category: "historical", name: "Flag of the Khedivate of Egypt", from: 1881, to: 1914, sovereign: "the Ottoman Empire", path: "national-flags/eg/egypt-1881.svg", design: "A red field with a white crescent and star, flown by the khedivate under Ottoman suzerainty and then British occupation.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
     { id: "eg-navy", category: "military", name: "Flag of the Egyptian Navy", from: 1984, to: 9999, path: "national-flags/eg/egypt-navy.svg", design: "The national flag defaced with the navy’s emblem.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
     { id: "eg-naval-ensign", category: "maritime", name: "Naval ensign and jack of Egypt", from: 1984, to: 9999, path: "national-flags/eg/egypt-naval-ensign.svg", design: "The national flag with the naval emblem in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
     { id: "eg-president", category: "standard", name: "Presidential Standard of Egypt", from: 1984, to: 9999, path: "national-flags/eg/egypt-president.svg", design: "The national flag charged with the presidential arms.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
     { id: "eg-president-1972", category: "standard", name: "Standard of the President of Egypt (1972–1984)", from: 1972, to: 1984, path: "national-flags/eg/egypt-president-1972.svg", design: "The presidential standard of the Arab Republic before the 1984 redesign.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-royal", category: "standard", name: "Standard of the King of Egypt", from: 1923, to: 1953, path: "national-flags/eg/egypt-royal.svg", design: "The royal standard of the Kingdom of Egypt.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
+    { id: "eg-arms", category: "coatofarms", name: "Coat of arms of Egypt", from: 1984, to: 9999, path: "national-flags/eg/egypt-arms.svg", design: "The Eagle of Saladin, bearing a shield in the flag's colours and standing on a scroll with the name of the state.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
   ],
   "ER": [
     { id: "er-official-national", category: "official", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag of Eritrea, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
@@ -546,6 +560,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "id-current", category: "historical", name: "Flag of Indonesia", from: 1945, to: 9999, primary: true, path: "flags/id.svg", design: "The national flag of Indonesia, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Indonesia" },
     { id: "id-naval-jack", category: "maritime", name: "Naval jack of the Indonesian Navy", from: 1945, to: 9999, path: "national-flags/id/indonesia-naval-jack.svg", design: "Nine equal horizontal red and white stripes — the \"Ular-ular Perang\".", source: "https://en.wikipedia.org/wiki/List_of_Indonesian_flags" },
     { id: "id-president", category: "standard", name: "Presidential Standard of Indonesia", path: "national-flags/id/indonesia-president.svg", design: "A yellow field bearing the national emblem and the presidential arms.", source: "https://en.wikipedia.org/wiki/List_of_Indonesian_flags" },
+    { id: "id-emblem", category: "coatofarms", name: "Garuda Pancasila", from: 1950, to: 9999, path: "national-flags/id/indonesia-emblem.svg", design: "A golden Garuda bearing a shield of five charges, clutching a scroll with the national motto.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
   ],
   "IE": [
     { id: "ie-official-national", category: "official", name: "Flag of Ireland", from: 1922, to: 9999, primary: true, path: "flags/ie.svg", design: "The national flag of Ireland, in the form adopted in 1922.", source: "https://en.wikipedia.org/wiki/Flag_of_Ireland" },
@@ -636,6 +651,17 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "KE": [
     { id: "ke-official-national", category: "official", name: "Flag of Kenya", from: 1963, to: 9999, primary: true, path: "flags/ke.svg", design: "The national flag of Kenya, in the form adopted in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
     { id: "ke-current", category: "historical", name: "Flag of Kenya", from: 1963, to: 9999, primary: true, path: "flags/ke.svg", design: "The national flag of Kenya, in the form adopted in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
+    { id: "ke-1921", category: "historical", name: "Flag of the Colony and Protectorate of Kenya", from: 1921, to: 1963, sovereign: "the United Kingdom", path: "national-flags/ke/kenya-1921.svg", design: "A British Blue Ensign defaced with the colony's badge, a red lion on a white disc.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-1895", category: "historical", name: "Flag of the East Africa Protectorate", from: 1895, to: 1921, sovereign: "the United Kingdom", path: "national-flags/ke/kenya-1895.svg", design: "A British Blue Ensign defaced with the protectorate's badge.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-ibeac", category: "historical", name: "Flag of the Imperial British East Africa Company", from: 1888, to: 1895, sovereign: "the Imperial British East Africa Company", path: "national-flags/ke/kenya-ibeac.svg", design: "A Union Flag defaced with the company's sun badge and motto — the chartered company that administered the territory before the Crown took it over.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-oman", category: "historical", name: "Flag of the Omani Empire", from: 1698, to: 1888, sovereign: "the Omani Empire", path: "national-flags/ke/kenya-oman.svg", design: "A white field bearing a red sword and inscription — the flag flown along the Swahili coast while it was ruled from Muscat and then Zanzibar.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-portugal", category: "historical", name: "Flag of the Kingdom of Portugal (1667–1698)", from: 1667, to: 1698, sovereign: "Portugal", path: "national-flags/ke/kenya-portugal.svg", design: "The white field with the Portuguese royal arms in its 1667 pattern, flown over the coast until the Omani capture of Fort Jesus in 1698.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-defence", category: "military", name: "Flag of the Kenya Defence Forces", from: 1964, to: 9999, path: "national-flags/ke/kenya-defence.svg", design: "The defence forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-air-force", category: "military", name: "Air Force Ensign of Kenya", from: 1964, to: 9999, path: "national-flags/ke/kenya-air-force.svg", design: "A light blue ensign with the national flag in the canton and the air force roundel in the fly.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-naval-ensign", category: "maritime", name: "Naval Ensign of Kenya", from: 1964, to: 9999, path: "national-flags/ke/kenya-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-president", category: "standard", name: "Presidential standard of Kenya", from: 2022, to: 9999, path: "national-flags/ke/kenya-president.svg", design: "A green field with the coat of arms and the incumbent's own device.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-president-1964", category: "standard", name: "First presidential standard of Kenya", from: 1964, to: 1970, path: "national-flags/ke/kenya-president-1964.svg", design: "The first standard adopted after independence.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Kenya" },
+    { id: "ke-arms", category: "coatofarms", name: "Coat of arms of Kenya", from: 1963, to: 9999, path: "national-flags/ke/kenya-arms.svg", design: "Two lions holding spears and a traditional East African shield in the national colours, on a compartment representing Mount Kenya, over a scroll reading Harambee.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
   ],
   "KG": [
     { id: "kg-official-national", category: "official", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "The national flag of Kyrgyzstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
@@ -1320,7 +1346,10 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
+  "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
+  "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
+  "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
@@ -1431,6 +1460,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Colombia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" },
     ],
   },
+  "cu-arms": {
+    description: "Designed by Miguel Teurbe Tolón in 1849, the shield is read in three fields. The upper field is a sea between two capes — the Yucatán peninsula and Florida — with a golden key hanging between them beneath a rising sun: Cuba is the key to the Gulf of Mexico, the island commanding the strait, and the sun is the dawn of the new state. The lower left field carries the blue and white stripes of the flag, for the island's division into departments under Spanish rule; the lower right shows a royal palm, the national tree, standing for the country itself. Behind the shield the fasces topped with a red Phrygian cap is the classical emblem of authority and of liberty, and the oak branch and laurel wreath at the sides are strength and glory.",
+    sources: [
+      { title: "Coat of arms of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
+    ],
+  },
+  "eg-arms": {
+    description: "Eagles have stood for power in Egypt for millennia, appearing from the pharaonic era onward and used as heraldic banners by pagan, Christian and Muslim rulers into the medieval period; this one is the Eagle of Saladin, named for the 12th-century sultan. On its breast it carries a shield in the colours of the national flag, turned to a vertical arrangement, and in its talons a scroll reading Gumhūriyyat Miṣr al-ʿArabiyyah — Arab Republic of Egypt. The bird on the arms has changed with the state it serves: the union with Syria in 1958 replaced the monarchical field on its breast with the flag of the United Arab Republic and its two stars, and Sadat's accession to the Federation of Arab Republics in 1972 replaced the eagle entirely with the Hawk of Quraish before it was restored.",
+    sources: [
+      { title: "Coat of arms of Egypt — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
+    ],
+  },
   "es-arms": {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
@@ -1465,6 +1506,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device is the Royal Coat of Arms — a British passport is issued in the sovereign's name, and the arms say so. The colour is the point of this particular design: British passports were dark blue until 1988, burgundy while the UK was in the European Union, and returned to blue in 2020 after leaving it, making the cover itself a piece of constitutional history.",
     sources: [
       { title: "British passport — Wikipedia", url: "https://en.wikipedia.org/wiki/British_passport" },
+    ],
+  },
+  "id-emblem": {
+    description: "The Garuda is the mount of Vishnu, and in Javanese and Balinese tradition stands for knowledge, power, bravery, loyalty and discipline — Bali venerates it as the lord of all flying creatures. Its feathers are counted, not merely drawn: they are arranged to spell the date of the proclamation of independence, 17 August 1945. The shield on its breast carries the five principles of Pancasila, the state philosophy, and the scroll in its talons reads \"Bhinneka Tunggal Ika\", a line of Old Javanese from the 14th-century poem Sutasoma by Empu Tantular of Majapahit. That line was written to reconcile the Hindu and Buddhist faiths — \"although diverse, both are truthful to Dharma; there is no duality in Truth\" — and is now read as unity in diversity.",
+    sources: [
+      { title: "National emblem of Indonesia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Indonesia" },
     ],
   },
   "il-emblem": {
@@ -1507,6 +1554,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold crest is the Government Seal — the paulownia mon used by the cabinet — rather than the imperial chrysanthemum, so the passport carries the government’s emblem while the chrysanthemum stays with the Imperial House. Japan colour-codes by validity and type: red for a ten-year ordinary passport, blue for five-year, green for official and dark brown for diplomatic.",
     sources: [
       { title: "Japanese passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Japanese_passport" },
+    ],
+  },
+  "ke-arms": {
+    description: "The two lions are protection; the shield and the spears they hold are unity and the defence of freedom, and the shield carries the national colours — black for the people of Kenya, red for the blood shed in the struggle for independence, green for the land and its natural wealth, and the white fimbriations for peace and unity. The compartment beneath represents Mount Kenya itself, with the country's produce growing on it. The scroll carries the motto Harambee, Swahili for \"pulling together\" — all for one.",
+    sources: [
+      { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
   "my-arms": {
