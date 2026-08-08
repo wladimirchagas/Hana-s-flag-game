@@ -114,6 +114,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AO": [
     { id: "ao-official-national", category: "official", name: "Flag of Angola", from: 1975, to: 9999, primary: true, path: "flags/ao.svg", design: "The national flag of Angola, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
     { id: "ao-current", category: "historical", name: "Flag of Angola", from: 1975, to: 9999, primary: true, path: "flags/ao.svg", design: "The national flag of Angola, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Angola" },
+    { id: "ao-portugal-1911", category: "historical", name: "Flag of Portugal (1911–1975)", from: 1911, to: 1975, sovereign: "Portugal", path: "national-flags/ao/angola-portugal-1911.svg", design: "The republican flag of Portugal, flown over Angola until independence in 1975.", source: "https://en.wikipedia.org/wiki/List_of_Angolan_flags" },
+    { id: "ao-portugal-1834", category: "historical", name: "Flag of the Kingdom of Portugal (1834–1910)", from: 1834, to: 1910, sovereign: "Portugal", path: "national-flags/ao/angola-portugal-1834.svg", design: "The blue-and-white monarchy flag of Portugal.", source: "https://en.wikipedia.org/wiki/List_of_Angolan_flags" },
+    { id: "ao-ndongo", category: "historical", name: "Flag of the Kingdom of Ndongo", from: 1600, to: 1700, priorPolity: "the Kingdom of Ndongo", path: "national-flags/ao/angola-ndongo.svg", design: "A 17th-century flag of Ndongo as recorded by the missionary Giovanni Cavazzi da Montecuccolo.", source: "https://en.wikipedia.org/wiki/List_of_Angolan_flags" },
+    { id: "ao-kongo", category: "historical", name: "Banner of the Kingdom of Kongo", from: 1510, to: 1543, priorPolity: "the Kingdom of Kongo", path: "national-flags/ao/angola-kongo.svg", design: "The banner of Manikongo Afonso I, of the kingdom that stood on this ground before Portuguese rule.", source: "https://en.wikipedia.org/wiki/List_of_Angolan_flags" },
+    { id: "ao-president", category: "standard", name: "Standard of the President of Angola", from: 1975, to: 9999, path: "national-flags/ao/angola-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Angolan_flags" },
+    { id: "ao-emblem", category: "coatofarms", name: "Emblem of Angola", from: 1990, to: 9999, path: "national-flags/ao/angola-emblem.svg", design: "A machete and hoe beneath a star and a rising sun, within a circle of a cogwheel and a cotton branch, above an open book and a banner.", source: "https://en.wikipedia.org/wiki/Emblem_of_Angola" },
   ],
   "AR": [
     { id: "ar-official-national", category: "official", name: "Flag of Argentina", from: 1861, to: 9999, primary: true, path: "flags/ar.svg", design: "The national flag of Argentina, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Argentina" },
@@ -329,6 +335,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CM": [
     { id: "cm-official-national", category: "official", name: "Flag of Cameroon", from: 1975, to: 9999, primary: true, path: "flags/cm.svg", design: "The national flag of Cameroon, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
     { id: "cm-current", category: "historical", name: "Flag of Cameroon", from: 1975, to: 9999, primary: true, path: "flags/cm.svg", design: "The national flag of Cameroon, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Cameroon" },
+    { id: "cm-1961", category: "historical", name: "Flag of Cameroon (1961–1975)", from: 1961, to: 1975, path: "national-flags/cm/cameroon-1961.svg", design: "The tricolour with two stars in the green band, for the two states of the federal republic.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
+    { id: "cm-1960", category: "historical", name: "First flag of Cameroon", from: 1960, to: 1961, path: "national-flags/cm/cameroon-1960.svg", design: "The plain green-red-yellow tricolour adopted at independence.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
+    { id: "cm-british", category: "historical", name: "Flag of British Cameroons", from: 1916, to: 1961, sovereign: "the United Kingdom", path: "national-flags/cm/cameroon-british.svg", design: "The flag of the British-administered part of the territory, which voted in 1961 on which country to join.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
+    { id: "cm-german", category: "historical", name: "Colonial flag of the German Empire", from: 1884, to: 1916, sovereign: "the German Empire", path: "national-flags/cm/cameroon-german.svg", design: "The imperial colonial flag flown over Kamerun until the First World War partitioned it.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
+    { id: "cm-bornu", category: "historical", name: "Flag of the Bornu Empire", from: 1380, to: 1884, priorPolity: "the Bornu Empire", path: "national-flags/cm/cameroon-bornu.svg", design: "The flag of the empire that held the country's far north for five centuries before European rule.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
+    { id: "cm-arms", category: "coatofarms", name: "Coat of arms of Cameroon", from: 1986, to: 9999, path: "national-flags/cm/cameroon-arms.svg", design: "A shield in the flag's colours bearing a map of the country and the scales of justice, over crossed fasces, between two banners.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cameroon" },
   ],
   "CN": [
     { id: "cn-official-national", category: "official", name: "Flag of the People's Republic of China", from: 1949, to: 9999, primary: true, path: "flags/cn.svg", design: "The national flag, hoisted 1 October 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_China" },
@@ -853,6 +865,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "ML": [
     { id: "ml-official-national", category: "official", name: "Flag of Mali", from: 1961, to: 9999, primary: true, path: "flags/ml.svg", design: "The national flag of Mali, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
     { id: "ml-current", category: "historical", name: "Flag of Mali", from: 1961, to: 9999, primary: true, path: "flags/ml.svg", design: "The national flag of Mali, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
+    { id: "ml-1959", category: "historical", name: "Flag of the Mali Federation", from: 1959, to: 1960, priorPolity: "the Mali Federation with Senegal", path: "national-flags/ml/mali-federation.svg", design: "The green-yellow-red tricolour with a black kanaga figure, flown by the short-lived federation and kept by Mali until 1961.", source: "https://en.wikipedia.org/wiki/List_of_Malian_flags" },
+    { id: "ml-french-sudan", category: "historical", name: "Flag of the French Sudan", from: 1958, to: 1959, sovereign: "France", path: "national-flags/ml/mali-french-sudan.svg", design: "The flag of the autonomous French Sudan, the colony that became Mali.", source: "https://en.wikipedia.org/wiki/List_of_Malian_flags" },
+    { id: "ml-wassoulou", category: "historical", name: "Flag of the Wassoulou Empire", from: 1878, to: 1898, priorPolity: "the Wassoulou Empire of Samori Ture", path: "national-flags/ml/mali-wassoulou.svg", design: "A flag attributed to the state Samori Ture built in resistance to the French conquest.", source: "https://en.wikipedia.org/wiki/List_of_Malian_flags" },
+    { id: "ml-empire", category: "historical", name: "Imperial flag of the Mali Empire", from: 1324, to: 1325, priorPolity: "the Mali Empire", path: "national-flags/ml/mali-empire.svg", design: "A flag attributed to Mansa Musa I on 14th-century European maps — the medieval empire whose name the modern republic took, not the modern state.", source: "https://en.wikipedia.org/wiki/List_of_Malian_flags" },
+    { id: "ml-emblem", category: "coatofarms", name: "Emblem of Mali", from: 1973, to: 9999, path: "national-flags/ml/mali-emblem.svg", design: "A circle bearing a bird above a mosque flanked by two bows and arrows, over a rising sun, with the name of the republic and its motto.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mali" },
   ],
   "MM": [
     { id: "mm-official-national", category: "official", name: "Flag of Myanmar", from: 2010, to: 9999, primary: true, path: "flags/mm.svg", design: "The national flag of Myanmar, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Myanmar" },
@@ -915,6 +932,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MZ": [
     { id: "mz-official-national", category: "official", name: "Flag of Mozambique", from: 1983, to: 9999, primary: true, path: "flags/mz.svg", design: "The national flag of Mozambique, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
     { id: "mz-current", category: "historical", name: "Flag of Mozambique", from: 1983, to: 9999, primary: true, path: "flags/mz.svg", design: "The national flag of Mozambique, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
+    { id: "mz-1975", category: "historical", name: "Flag of Mozambique (1975–1983)", from: 1975, to: 1983, path: "national-flags/mz/mozambique-1975.svg", design: "The second flag of independent Mozambique, before the 1983 redesign.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-1974", category: "historical", name: "First flag of Mozambique", from: 1974, to: 1975, path: "national-flags/mz/mozambique-1974.svg", design: "The FRELIMO-derived flag of the transitional government.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-portugal", category: "historical", name: "Flag of Portugal (1911–1975)", from: 1911, to: 1975, sovereign: "Portugal", path: "national-flags/mz/mozambique-portugal.svg", design: "The republican flag of Portugal, flown over Mozambique until independence.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-portugal-1667", category: "historical", name: "Flag of the Kingdom of Portugal (1667–1707)", from: 1667, to: 1707, sovereign: "Portugal", path: "national-flags/mz/mozambique-portugal-1667.svg", design: "The Portuguese royal arms in their 1667 pattern, from the era of the coastal captaincies.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-armed-forces", category: "military", name: "Flag of the Mozambique Defence Armed Forces", from: 1990, to: 9999, path: "national-flags/mz/mozambique-armed-forces.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-air-force", category: "military", name: "Flag of the Mozambique Air Force", path: "national-flags/mz/mozambique-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-president", category: "standard", name: "Presidential Standard of Mozambique", from: 1990, to: 9999, path: "national-flags/mz/mozambique-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Mozambican_flags" },
+    { id: "mz-emblem", category: "coatofarms", name: "Emblem of Mozambique", from: 1990, to: 9999, path: "national-flags/mz/mozambique-emblem.svg", design: "A rifle and hoe crossed over an open book, on a map of the country with a rising sun and waves, within maize and sugar cane beneath a red star.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
   ],
   "NA": [
     { id: "na-official-national", category: "official", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "The national flag of Namibia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
@@ -1467,6 +1492,7 @@ export type NationalIndependence = {
 };
 
 export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence>> = {
+  "AO": { year: 1975, event: "Independence from Portugal, 11 November 1975", source: "https://en.wikipedia.org/wiki/Angolan_War_of_Independence" },
   "AR": { year: 1816, event: "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816", source: "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence" },
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
@@ -1474,6 +1500,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
+  "CM": { year: 1960, event: "French Cameroun became independent on 1 January 1960", note: "The southern part of British Cameroons joined it in October 1961 to form a federal republic; the northern part joined Nigeria.", source: "https://en.wikipedia.org/wiki/History_of_Cameroon" },
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
@@ -1482,7 +1509,9 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
+  "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
+  "MZ": { year: 1975, event: "Independence from Portugal, 25 June 1975", source: "https://en.wikipedia.org/wiki/Mozambican_War_of_Independence" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
@@ -1503,6 +1532,12 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
  * flag with no entry simply renders no disclosure rather than a guessed one.
  */
 export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
+  "ao-emblem": {
+    description: "The emblem expands the flag's own imagery and belongs to the same socialist tradition. The crossed machete and hoe at the centre are the revolution through which independence was won and the importance of agricultural workers; the star above them is a common socialist device, read here as progress; the rising sun is the traditional symbol of a new beginning. The circle enclosing them is made of a cogwheel on one side, for industrial workers, and a cotton branch on the other, for agriculture; the open book at the foot is education. The banner beneath reads República de Angola — changed in 1990 from República Popular de Angola, when the People's Republic became simply the Republic.",
+    sources: [
+      { title: "Emblem of Angola — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Angola" },
+    ],
+  },
   "ar-arms": {
     description: "The rising Sun of May at the top is the sun of the national anthem's line \"a new and glorious nation rises to the surface of the Earth\" — the birth of the country, not merely a decorative sun. In the oval, two clasped hands are the union of the provinces and stand for friendship, peace and brotherhood; they hold up a pike, which is power and the willingness to defend freedom, and the red Phrygian cap on its point is the liberty cap of the French Revolution. Read together, the hands and the cap are the national motto, \"en unión y libertad\" — in unity and freedom — the idea being that freedom is reached through unity. The laurel branches framing the whole are the classical crown of the victor, for triumph and glory.",
     sources: [
@@ -1594,6 +1629,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Designed by the English artist Charles Wood Taylor and adopted in 1834, the shield repeats the flag: blue above, red below, with the single five-pointed white star. The supporters are the two animals of the country itself — the Andean condor and the huemul, the southern deer — each wearing a naval crown for Chile's victories at sea. The three-feathered crest in blue, white and red reproduces the plume that heads of state wore on their hats, and the motto on the scroll, added in 1920, reads \"Por la Razón o la Fuerza\" — \"By reason or force\".",
     sources: [
       { title: "Coat of arms of Chile — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile" },
+    ],
+  },
+  "cm-arms": {
+    description: "The shield repeats the colour pattern of the national flag and carries a map of the country at its centre, with the scales of justice superimposed on the map — added in 1984 and standing for the rule of law over the whole territory. Two fasces cross behind the shield, the classical emblem of state authority; the banners above and below carry the name of the republic and its motto, \"Peace, Work, Fatherland\". A separate set of arms had been designed for the German colony in 1914, but the war broke out before the project was finished and they were never used.",
+    sources: [
+      { title: "Coat of arms of Cameroon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cameroon" },
     ],
   },
   "cn-arms": {
@@ -1758,6 +1799,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
     ],
   },
+  "ml-emblem": {
+    description: "Adopted in 1973, thirteen years after independence, the seal is read from its centre outward. The mosque at the middle is a specific building — the Great Mosque of Djenné, the largest mud-brick structure in the world and the country's best-known monument. Above it flies a bird, and below it the sun rises; the two bows and arrows flanking the mosque stand for the country's defence. The legend around the circle carries the name of the republic and the motto \"Un Peuple, Un But, Une Foi\" — One People, One Goal, One Faith — which is word for word the motto of Senegal, the country Mali was federated with for the two months before independence.",
+    sources: [
+      { title: "Emblem of Mali — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mali" },
+    ],
+  },
   "mm-seal": {
     description: "The law describing the seal explains each part. At the centre is the map of the country, standing for its territorial shape; on either side of it a sprig of Eugenia with fourteen leaves, a sign of victory — one leaf for each state and region. Flanking those are two Burmese royal lions, chinthe, one facing left and one facing right; the lions signify sovereignty, courage, diligence and the suppression of all dangers great and small with equal effort, and their placement guarding either side of the map is itself the meaning. The ribbon below carries the name of the state, split so that \"Union\" sits under the left lion, \"Republic\" under the map and \"Myanmar\" under the right.",
     sources: [
@@ -1774,6 +1821,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms in the centre are the same crest, tiger supporters and fourteen-point federal star the country's coat of arms carries, so the passport repeats the federation's own claim about itself. The text appears in Malay and English together, as the constitution requires of official documents.",
     sources: [
       { title: "Malaysian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Malaysian_passport" },
+    ],
+  },
+  "mz-emblem": {
+    description: "Article 194 of the constitution spells the emblem out charge by charge: the corn stalk and the sugar cane framing it are the country's agricultural wealth; the cogwheel is labour and industry; the book is education; the rifle stands for defence and vigilance, the hoe for the peasantry; the map is the country itself, with the rising sun for the building of a new nation and the waves for the sea and the rivers; and the red star at the top is the spirit of international solidarity of the Mozambican people.",
+    sources: [
+      { title: "Emblem of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
     ],
   },
   "np-emblem": {
