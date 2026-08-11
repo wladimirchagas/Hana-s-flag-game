@@ -346,8 +346,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "by-emblem", category: "coatofarms", name: "National emblem of Belarus", from: 1995, to: 9999, path: "national-flags/by/belarus-emblem.svg", design: "A silhouette of the country over a globe and rising sun, within wheat ears bound by a ribbon in the national colours, beneath a red star.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
   ],
   "BZ": [
-    { id: "bz-official-national", category: "official", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "The national flag of Belize, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
-    { id: "bz-current", category: "historical", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "The national flag of Belize, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
+    { id: "bz-official-national", category: "official", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "The national flag, adopted at independence in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
+    { id: "bz-current", category: "historical", name: "Flag of Belize", from: 1981, to: 9999, primary: true, path: "flags/bz.svg", design: "A blue field with red bands and the national arms in a white disc — blue and red for the two main parties, the arms recording the mahogany trade at the country's origin.", source: "https://en.wikipedia.org/wiki/Flag_of_Belize" },
+    { id: "bz-uk", category: "historical", name: "Flag of the United Kingdom", from: 1862, to: 1981, sovereign: "the United Kingdom", path: "national-flags/bz/bz-uk.svg", design: "The Union Flag, flown while the territory was the British colony of British Honduras.", source: "https://en.wikipedia.org/wiki/British_Honduras" },
+    { id: "bz-arms", category: "coatofarms", name: "Coat of arms of Belize", from: 1981, to: 9999, path: "national-flags/bz/bz-arms.svg", design: "A mahogany tree above a shield of woodcutter's tools and a ship, held by two woodcutters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
   ],
   "CA": [
     { id: "ca-official-national", category: "official", name: "Flag of Canada", from: 1965, to: 9999, primary: true, path: "flags/ca.svg", design: "The national flag of Canada, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Canada" },
@@ -622,8 +624,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fi-arms", category: "coatofarms", name: "Coat of arms of Finland", from: 1580, to: 9999, path: "national-flags/fi/finland-arms.svg", design: "A crowned lion on red, its right foreleg an armoured arm brandishing a sword, trampling a sabre.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
   ],
   "FJ": [
-    { id: "fj-official-national", category: "official", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag of Fiji, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
-    { id: "fj-current", category: "historical", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag of Fiji, in the form adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
+    { id: "fj-official-national", category: "official", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "The national flag, adopted at independence in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
+    { id: "fj-current", category: "historical", name: "Flag of Fiji", from: 1970, to: 9999, primary: true, path: "flags/fj.svg", design: "A light-blue field with the Union Jack in the canton and the national shield in the fly — the blue for the Pacific Ocean, the shield keeping the arms granted under British rule.", source: "https://en.wikipedia.org/wiki/Flag_of_Fiji" },
+    { id: "fj-uk", category: "historical", name: "Flag of the United Kingdom", from: 1874, to: 1970, sovereign: "the United Kingdom", path: "national-flags/fj/fj-uk.svg", design: "The Union Flag, flown while Fiji was a British Crown colony.", source: "https://en.wikipedia.org/wiki/Colony_of_Fiji" },
+    { id: "fj-arms", category: "coatofarms", name: "Coat of arms of Fiji", from: 1908, to: 9999, path: "national-flags/fj/fj-arms.svg", design: "A shield of the St George's cross with a lion and island crops, held by two Fijian warriors.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
   ],
   "FM": [
     { id: "fm-official-national", category: "official", name: "Flag of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "The national flag of Micronesia, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Micronesia" },
@@ -720,8 +724,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gr-president-1924", category: "standard", name: "Flag of the President of Greece (1924–1935)", from: 1924, to: 1935, path: "national-flags/gr/greece-president-1924.svg", design: "The presidential flag of the Second Hellenic Republic.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
   ],
   "GT": [
-    { id: "gt-official-national", category: "official", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag of Guatemala, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
-    { id: "gt-current", category: "historical", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag of Guatemala, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
+    { id: "gt-official-national", category: "official", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
+    { id: "gt-current", category: "historical", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "Sky-blue and white vertical bands with the national arms at the centre — the blue and white of the old Central American union, blue for the two oceans, white for peace.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
+    { id: "gt-federation", category: "historical", name: "Flag of the Federal Republic of Central America", from: 1823, to: 1841, path: "national-flags/gt/gt-federation.svg", design: "The blue-white-blue flag of the Federal Republic of Central America, of which Guatemala was a part after independence from Spain.", source: "https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America" },
+    { id: "gt-spanish", category: "historical", name: "Cross of Burgundy flag", from: 1524, to: 1821, sovereign: "Spain", path: "national-flags/gt/gt-spain.svg", design: "The Cross of Burgundy, the flag Spain flew across its American empire, over the Captaincy General of Guatemala until independence.", source: "https://en.wikipedia.org/wiki/Captaincy_General_of_Guatemala" },
+    { id: "gt-arms", category: "coatofarms", name: "Coat of arms of Guatemala", from: 1871, to: 9999, path: "national-flags/gt/gt-arms.svg", design: "A resplendent quetzal on a scroll with the date of independence, over crossed rifles and swords in a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
   ],
   "GW": [
     { id: "gw-official-national", category: "official", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag, adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
@@ -1148,8 +1155,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mt-arms", category: "coatofarms", name: "Coat of arms of Malta", from: 1988, to: 9999, path: "national-flags/mt/malta-arms.svg", design: "A shield of the national flag beneath a mural crown, framed by an olive branch and a palm branch over a scroll reading Repubblika ta' Malta.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
   ],
   "MU": [
-    { id: "mu-official-national", category: "official", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "The national flag of Mauritius, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
-    { id: "mu-current", category: "historical", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "The national flag of Mauritius, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
+    { id: "mu-official-national", category: "official", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
+    { id: "mu-current", category: "historical", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "Four horizontal bands of red, blue, yellow and green — red for the struggle for freedom, blue for the Indian Ocean, yellow for the light of independence, green for the island's agriculture.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
+    { id: "mu-uk", category: "historical", name: "Flag of the United Kingdom", from: 1810, to: 1968, sovereign: "the United Kingdom", path: "national-flags/mu/mu-uk.svg", design: "The Union Flag, flown while Mauritius was a British colony, from the 1810 capture of the island until independence.", source: "https://en.wikipedia.org/wiki/British_Mauritius" },
+    { id: "mu-arms", category: "coatofarms", name: "Coat of arms of Mauritius", from: 1906, to: 9999, path: "national-flags/mu/mu-arms.svg", design: "A quartered shield with a ship, palm trees, a key and a star, held by a dodo and a deer.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
   ],
   "MV": [
     { id: "mv-official-national", category: "official", name: "Flag of Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "The national flag of Maldives, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Maldives" },
@@ -1480,8 +1489,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sb-current", category: "historical", name: "Flag of Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag of Solomon Islands, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands" },
   ],
   "SC": [
-    { id: "sc-official-national", category: "official", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "The national flag of Seychelles, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
-    { id: "sc-current", category: "historical", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "The national flag of Seychelles, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+    { id: "sc-official-national", category: "official", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "The national flag, adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+    { id: "sc-current", category: "historical", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "Five oblique bands of blue, yellow, red, white and green radiating from the hoist — blue for the sea and sky, yellow for the sun, red for the people, white for justice, green for the land.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+    { id: "sc-1977", category: "historical", name: "Flag of Seychelles (1977–1996)", from: 1977, to: 1996, path: "national-flags/sc/sc-1977.svg", design: "The flag of the one-party era — red over green divided by a white wavy band — flown after the 1977 coup.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
+    { id: "sc-uk", category: "historical", name: "Flag of the United Kingdom", from: 1814, to: 1976, sovereign: "the United Kingdom", path: "national-flags/sc/sc-uk.svg", design: "The Union Flag, flown while Seychelles was a British colony, from 1814 until independence.", source: "https://en.wikipedia.org/wiki/British_Seychelles" },
+    { id: "sc-arms", category: "coatofarms", name: "Coat of arms of Seychelles", from: 1976, to: 9999, path: "national-flags/sc/sc-arms.svg", design: "A giant tortoise before a coco-de-mer palm and a ship, with a tropicbird crest and two sailfish supporters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
   ],
   "SD": [
     { id: "sd-official-national", category: "official", name: "Flag of Sudan", from: 1970, to: 9999, primary: true, path: "flags/sd.svg", design: "The national flag of Sudan, adopted in 1970.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
@@ -1903,6 +1915,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BS": { year: 1973, event: "Independence from the United Kingdom, 10 July 1973", source: "https://en.wikipedia.org/wiki/History_of_the_Bahamas" },
   "BW": { year: 1966, event: "Botswana became independent from the United Kingdom on 30 September 1966, ending the Bechuanaland Protectorate", source: "https://en.wikipedia.org/wiki/History_of_Botswana" },
   "BY": { year: 1991, event: "Independence from the Soviet Union declared 25 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Belarus" },
+  "BZ": { year: 1981, event: "Belize became independent from the United Kingdom on 21 September 1981, having been the colony of British Honduras", source: "https://en.wikipedia.org/wiki/History_of_Belize" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CD": { year: 1960, event: "The Democratic Republic of the Congo became independent from Belgium on 30 June 1960", source: "https://en.wikipedia.org/wiki/History_of_the_Democratic_Republic_of_the_Congo" },
   "CF": { year: 1960, event: "The Central African Republic became independent from France on 13 August 1960", source: "https://en.wikipedia.org/wiki/History_of_the_Central_African_Republic" },
@@ -1921,12 +1934,14 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "ER": { year: 1993, event: "Eritrea became independent from Ethiopia on 24 May 1993, after a 1993 referendum confirmed the de facto independence won in 1991", source: "https://en.wikipedia.org/wiki/History_of_Eritrea" },
+  "FJ": { year: 1970, event: "Fiji became independent from the United Kingdom on 10 October 1970", source: "https://en.wikipedia.org/wiki/History_of_Fiji" },
   "GA": { year: 1960, event: "Gabon became independent from France on 17 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Gabon" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "GM": { year: 1965, event: "The Gambia became independent from the United Kingdom on 18 February 1965", source: "https://en.wikipedia.org/wiki/History_of_the_Gambia" },
   "GN": { year: 1958, event: "Guinea became independent from France on 2 October 1958, the only French African territory to vote No in the 1958 constitutional referendum", source: "https://en.wikipedia.org/wiki/History_of_Guinea" },
   "GQ": { year: 1968, event: "Equatorial Guinea became independent from Spain on 12 October 1968", source: "https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea" },
+  "GT": { year: 1821, event: "Guatemala became independent from Spain on 15 September 1821", source: "https://en.wikipedia.org/wiki/History_of_Guatemala" },
   "GW": { year: 1974, event: "Guinea-Bissau's 1973 declaration of independence from Portugal was recognised by Portugal in 1974", source: "https://en.wikipedia.org/wiki/History_of_Guinea-Bissau" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
@@ -1953,6 +1968,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MR": { year: 1960, event: "Mauritania became independent from France on 28 November 1960", source: "https://en.wikipedia.org/wiki/History_of_Mauritania" },
   "MT": { year: 1964, event: "Independence from the United Kingdom, 21 September 1964", note: "Malta became a republic in 1974.", source: "https://en.wikipedia.org/wiki/History_of_Malta" },
+  "MU": { year: 1968, event: "Mauritius became independent from the United Kingdom on 12 March 1968", source: "https://en.wikipedia.org/wiki/History_of_Mauritius" },
   "MW": { year: 1964, event: "Malawi became independent from the United Kingdom on 6 July 1964, ending the Nyasaland protectorate", source: "https://en.wikipedia.org/wiki/History_of_Malawi" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "MZ": { year: 1975, event: "Independence from Portugal, 25 June 1975", source: "https://en.wikipedia.org/wiki/Mozambican_War_of_Independence" },
@@ -1967,6 +1983,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
   "RW": { year: 1962, event: "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Rwanda" },
+  "SC": { year: 1976, event: "Seychelles became independent from the United Kingdom on 29 June 1976", source: "https://en.wikipedia.org/wiki/History_of_Seychelles" },
   "SG": { year: 1965, event: "Separation from Malaysia and full independence, 9 August 1965", note: "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Singapore_in_Malaysia" },
   "SI": { year: 1991, event: "Slovenia declared independence from Yugoslavia on 25 June 1991", source: "https://en.wikipedia.org/wiki/Independence_of_Slovenia" },
   "SL": { year: 1961, event: "Sierra Leone became independent from the United Kingdom on 27 April 1961", source: "https://en.wikipedia.org/wiki/History_of_Sierra_Leone" },
@@ -2162,6 +2179,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
     ],
   },
+  "bz-arms": {
+    description: "Behind the shield rises a mahogany tree, the timber on which the colonial economy was built. The shield shows a woodcutter's tools — an axe and a paddle, a saw and a squaring axe — above a ship under sail. Two woodcutters, one of African and one of mixed descent, support it, and the motto reads Sub Umbra Floreo — “Under the shade I flourish,” the shade of the mahogany.",
+    sources: [
+      { title: "Coat of arms of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
+    ],
+  },
   "cf-arms": {
     description: "The shield gathers the country's emblems: an elephant and a baobab tree for its nature and its backbone; an open hand, the symbol of the party that led it to independence; and a gold star on a map of Africa, marking the Central African Republic at the continent's heart. A rising sun crowns it for the dawn of independence, and the Order of Operational Merit hangs below. Two ribbons carry the mottoes — in Sango, Zo Kwe Zo, “All people are people,” and in French, Unité, Dignité, Travail, “Unity, Dignity, Work.”",
     sources: [
@@ -2288,6 +2311,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Finland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
     ],
   },
+  "fj-arms": {
+    description: "The shield bears the cross of St George on white, with a golden lion holding a cocoa pod at the top and, in the quarters, sugarcane, a coconut palm, a dove of peace and a bunch of bananas — the crops of the islands and the hope of peace. Two Fijian warriors support the shield, and a canoe (drua) forms the crest.",
+    sources: [
+      { title: "Coat of arms of Fiji — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
+    ],
+  },
   "fr-arms": {
     description: "France has no official coat of arms; this device, designed in 1913 for French diplomatic missions, is the closest thing and is used on passports and by embassies while remaining unofficial. The fasces at its centre is a Roman magistrate’s bundle of rods and axe — the classical symbol of the authority of the state and of justice, chosen by a republic that took its imagery from Rome rather than from monarchy. The oak branch stands for perpetuity and wisdom and the laurel for glory, and the ribbon carries Liberté, Égalité, Fraternité. The monarchy’s fleurs-de-lis are deliberately absent.",
     sources: [
@@ -2352,6 +2381,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The silver silk-cotton tree at the centre is the “God tree” (árbol de Dios), under which the first treaty between a local ruler and Spain is said to have been signed. Six six-pointed gold stars above stand for the mainland (Río Muni) and the five inhabited islands. The scroll reads Unidad, Paz, Justicia — “Unity, Peace, Justice.”",
     sources: [
       { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
+    ],
+  },
+  "gt-arms": {
+    description: "A resplendent quetzal — the free-flying national bird, long believed to die in captivity, and so an emblem of liberty and sovereignty — perches on a scroll reading Libertad 15 de Septiembre de 1821, the date of independence. Crossed Remington rifles stand for the readiness to defend the country and crossed swords for justice and honour, all within a wreath of laurel for victory.",
+    sources: [
+      { title: "Coat of arms of Guatemala — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
     ],
   },
   "gw-arms": {
@@ -2588,6 +2623,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
     ],
   },
+  "mu-arms": {
+    description: "The quartered shield shows a ship for the island's discovery and trade, three palm trees, a golden key, and a five-pointed star. The key and star give the motto, Stella Clavisque Maris Indici — “the Star and Key of the Indian Ocean,” Mauritius's place on the ocean routes. A dodo, the flightless bird found only here, and a sambar deer support the shield, each holding a stalk of sugarcane, the island's great crop.",
+    sources: [
+      { title: "Coat of arms of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
+    ],
+  },
   "mw-arms": {
     description: "The shield is divided into three: the wavy blue and white bars are the waters of Lake Malawi, which fills much of the country; a red lion on a gold field stands for the country's ties within the Commonwealth; and a rising sun on black — the same rising sun as on the flag — for the dawn of freedom for Africa. Above, a fish eagle sits before another rising sun as the crest. A lion and a leopard support the shield, standing for courage and for the country's wildlife, and the ribbon below reads “Unity and Freedom.”",
     sources: [
@@ -2737,6 +2778,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The two crossed swords are the Kingdom of Hejaz and the Sultanate of Nejd and its dependencies, the two states Ibn Saud united in 1926 — so the emblem records the union the country is made of; they are also read as strength, stamina and sacrifice, and as justice. The date palm above them stands for growth, vitality and prosperity, and for the kingdom's own assets. The arrangement carries the reading that prosperity can be had only through justice: the palm rests on the swords, not the other way round.",
     sources: [
       { title: "Emblem of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
+    ],
+  },
+  "sc-arms": {
+    description: "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
+    sources: [
+      { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
     ],
   },
   "sg-arms": {

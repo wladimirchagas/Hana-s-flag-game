@@ -2842,7 +2842,7 @@
           "to": 9999,
           "name": "Flag of Belize",
           "reuse": "flags/bz.svg",
-          "design": "The national flag of Belize, in the form adopted in 1981.",
+          "design": "The national flag, adopted at independence in 1981.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belize"
         },
         {
@@ -2852,10 +2852,51 @@
           "to": 9999,
           "name": "Flag of Belize",
           "reuse": "flags/bz.svg",
-          "design": "The national flag of Belize, in the form adopted in 1981.",
+          "design": "A blue field with red bands and the national arms in a white disc — blue and red for the two main parties, the arms recording the mahogany trade at the country's origin.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belize"
+        },
+        {
+          "id": "bz-uk",
+          "category": "historical",
+          "from": 1862,
+          "to": 1981,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "bz/bz-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while the territory was the British colony of British Honduras.",
+          "source": "https://en.wikipedia.org/wiki/British_Honduras",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bz-arms",
+          "category": "coatofarms",
+          "from": 1981,
+          "to": 9999,
+          "name": "Coat of arms of Belize",
+          "commons": "Coat of arms of Belize.svg",
+          "file": "bz/bz-arms.svg",
+          "design": "A mahogany tree above a shield of woodcutter's tools and a ship, held by two woodcutters.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize",
+          "meaning": {
+            "description": "Behind the shield rises a mahogany tree, the timber on which the colonial economy was built. The shield shows a woodcutter's tools — an axe and a paddle, a saw and a squaring axe — above a ship under sail. Two woodcutters, one of African and one of mixed descent, support it, and the motto reads Sub Umbra Floreo — “Under the shade I flourish,” the shade of the mahogany.",
+            "sources": [
+              {
+                "title": "Coat of arms of Belize — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize"
+              }
+            ]
+          },
+          "sha256": "4e5d55072f7a2c767be497a160b66bb093a0775a23338bc48484b054a89ece65",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1981,
+        "event": "Belize became independent from the United Kingdom on 21 September 1981, having been the colony of British Honduras",
+        "source": "https://en.wikipedia.org/wiki/History_of_Belize"
+      }
     },
     "CA": {
       "flags": [
@@ -5855,7 +5896,7 @@
           "to": 9999,
           "name": "Flag of Fiji",
           "reuse": "flags/fj.svg",
-          "design": "The national flag of Fiji, in the form adopted in 1970.",
+          "design": "The national flag, adopted at independence in 1970.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Fiji"
         },
         {
@@ -5865,10 +5906,51 @@
           "to": 9999,
           "name": "Flag of Fiji",
           "reuse": "flags/fj.svg",
-          "design": "The national flag of Fiji, in the form adopted in 1970.",
+          "design": "A light-blue field with the Union Jack in the canton and the national shield in the fly — the blue for the Pacific Ocean, the shield keeping the arms granted under British rule.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Fiji"
+        },
+        {
+          "id": "fj-uk",
+          "category": "historical",
+          "from": 1874,
+          "to": 1970,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "fj/fj-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Fiji was a British Crown colony.",
+          "source": "https://en.wikipedia.org/wiki/Colony_of_Fiji",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "fj-arms",
+          "category": "coatofarms",
+          "from": 1908,
+          "to": 9999,
+          "name": "Coat of arms of Fiji",
+          "commons": "Coat of arms of Fiji.svg",
+          "file": "fj/fj-arms.svg",
+          "design": "A shield of the St George's cross with a lion and island crops, held by two Fijian warriors.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji",
+          "meaning": {
+            "description": "The shield bears the cross of St George on white, with a golden lion holding a cocoa pod at the top and, in the quarters, sugarcane, a coconut palm, a dove of peace and a bunch of bananas — the crops of the islands and the hope of peace. Two Fijian warriors support the shield, and a canoe (drua) forms the crest.",
+            "sources": [
+              {
+                "title": "Coat of arms of Fiji — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji"
+              }
+            ]
+          },
+          "sha256": "4e38d83494385692d1905f4a9c0a0517c9363d06656d6d7327704d374bfac0c7",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1970,
+        "event": "Fiji became independent from the United Kingdom on 10 October 1970",
+        "source": "https://en.wikipedia.org/wiki/History_of_Fiji"
+      }
     },
     "FM": {
       "flags": [
@@ -6911,7 +6993,7 @@
           "to": 9999,
           "name": "Flag of Guatemala",
           "reuse": "flags/gt.svg",
-          "design": "The national flag of Guatemala, in the form adopted in 1871.",
+          "design": "The national flag, in the form adopted in 1871.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guatemala"
         },
         {
@@ -6921,10 +7003,64 @@
           "to": 9999,
           "name": "Flag of Guatemala",
           "reuse": "flags/gt.svg",
-          "design": "The national flag of Guatemala, in the form adopted in 1871.",
+          "design": "Sky-blue and white vertical bands with the national arms at the centre — the blue and white of the old Central American union, blue for the two oceans, white for peace.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guatemala"
+        },
+        {
+          "id": "gt-federation",
+          "category": "historical",
+          "from": 1823,
+          "to": 1841,
+          "name": "Flag of the Federal Republic of Central America",
+          "commons": "Flag of the Federal Republic of Central America.svg",
+          "file": "gt/gt-federation.svg",
+          "design": "The blue-white-blue flag of the Federal Republic of Central America, of which Guatemala was a part after independence from Spain.",
+          "source": "https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America",
+          "sha256": "91b1f03c3d5c6b209ac868e2f378c4b03be679d5f421863affa0fd703acaa8d9",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gt-spanish",
+          "category": "historical",
+          "from": 1524,
+          "to": 1821,
+          "name": "Cross of Burgundy flag",
+          "commons": "Flag of Cross of Burgundy.svg",
+          "file": "gt/gt-spain.svg",
+          "sovereign": "Spain",
+          "design": "The Cross of Burgundy, the flag Spain flew across its American empire, over the Captaincy General of Guatemala until independence.",
+          "source": "https://en.wikipedia.org/wiki/Captaincy_General_of_Guatemala",
+          "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gt-arms",
+          "category": "coatofarms",
+          "from": 1871,
+          "to": 9999,
+          "name": "Coat of arms of Guatemala",
+          "commons": "Coat of arms of Guatemala.svg",
+          "file": "gt/gt-arms.svg",
+          "design": "A resplendent quetzal on a scroll with the date of independence, over crossed rifles and swords in a laurel wreath.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala",
+          "meaning": {
+            "description": "A resplendent quetzal — the free-flying national bird, long believed to die in captivity, and so an emblem of liberty and sovereignty — perches on a scroll reading Libertad 15 de Septiembre de 1821, the date of independence. Crossed Remington rifles stand for the readiness to defend the country and crossed swords for justice and honour, all within a wreath of laurel for victory.",
+            "sources": [
+              {
+                "title": "Coat of arms of Guatemala — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala"
+              }
+            ]
+          },
+          "sha256": "a4a509fd572040e22596e7d37e32bdcf38e86fdb1fa0e875f628faa2abd258e5",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1821,
+        "event": "Guatemala became independent from Spain on 15 September 1821",
+        "source": "https://en.wikipedia.org/wiki/History_of_Guatemala"
+      }
     },
     "GW": {
       "flags": [
@@ -11501,7 +11637,7 @@
           "to": 9999,
           "name": "Flag of Mauritius",
           "reuse": "flags/mu.svg",
-          "design": "The national flag of Mauritius, in the form adopted in 1968.",
+          "design": "The national flag, adopted at independence in 1968.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritius"
         },
         {
@@ -11511,10 +11647,51 @@
           "to": 9999,
           "name": "Flag of Mauritius",
           "reuse": "flags/mu.svg",
-          "design": "The national flag of Mauritius, in the form adopted in 1968.",
+          "design": "Four horizontal bands of red, blue, yellow and green — red for the struggle for freedom, blue for the Indian Ocean, yellow for the light of independence, green for the island's agriculture.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritius"
+        },
+        {
+          "id": "mu-uk",
+          "category": "historical",
+          "from": 1810,
+          "to": 1968,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "mu/mu-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Mauritius was a British colony, from the 1810 capture of the island until independence.",
+          "source": "https://en.wikipedia.org/wiki/British_Mauritius",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mu-arms",
+          "category": "coatofarms",
+          "from": 1906,
+          "to": 9999,
+          "name": "Coat of arms of Mauritius",
+          "commons": "Coat of arms of Mauritius.svg",
+          "file": "mu/mu-arms.svg",
+          "design": "A quartered shield with a ship, palm trees, a key and a star, held by a dodo and a deer.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius",
+          "meaning": {
+            "description": "The quartered shield shows a ship for the island's discovery and trade, three palm trees, a golden key, and a five-pointed star. The key and star give the motto, Stella Clavisque Maris Indici — “the Star and Key of the Indian Ocean,” Mauritius's place on the ocean routes. A dodo, the flightless bird found only here, and a sambar deer support the shield, each holding a stalk of sugarcane, the island's great crop.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mauritius — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius"
+              }
+            ]
+          },
+          "sha256": "e3214cb7677c75c0366d7b31e9e6adfebde3d792effb2bb95c4f05c23389eca1",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1968,
+        "event": "Mauritius became independent from the United Kingdom on 12 March 1968",
+        "source": "https://en.wikipedia.org/wiki/History_of_Mauritius"
+      }
     },
     "MV": {
       "flags": [
@@ -15122,7 +15299,7 @@
           "to": 9999,
           "name": "Flag of Seychelles",
           "reuse": "flags/sc.svg",
-          "design": "The national flag of Seychelles, in the form adopted in 1996.",
+          "design": "The national flag, adopted in 1996.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Seychelles"
         },
         {
@@ -15132,10 +15309,64 @@
           "to": 9999,
           "name": "Flag of Seychelles",
           "reuse": "flags/sc.svg",
-          "design": "The national flag of Seychelles, in the form adopted in 1996.",
+          "design": "Five oblique bands of blue, yellow, red, white and green radiating from the hoist — blue for the sea and sky, yellow for the sun, red for the people, white for justice, green for the land.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Seychelles"
+        },
+        {
+          "id": "sc-1977",
+          "category": "historical",
+          "from": 1977,
+          "to": 1996,
+          "name": "Flag of Seychelles (1977–1996)",
+          "commons": "Flag of Seychelles (1977–1996).svg",
+          "file": "sc/sc-1977.svg",
+          "design": "The flag of the one-party era — red over green divided by a white wavy band — flown after the 1977 coup.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Seychelles",
+          "sha256": "e0a73c03a3849e32b87eec9233fee76ddb47e5c79ed3c8da11f90e0d8cc120bd",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sc-uk",
+          "category": "historical",
+          "from": 1814,
+          "to": 1976,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "sc/sc-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Seychelles was a British colony, from 1814 until independence.",
+          "source": "https://en.wikipedia.org/wiki/British_Seychelles",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sc-arms",
+          "category": "coatofarms",
+          "from": 1976,
+          "to": 9999,
+          "name": "Coat of arms of Seychelles",
+          "commons": "Coat of arms of Seychelles.svg",
+          "file": "sc/sc-arms.svg",
+          "design": "A giant tortoise before a coco-de-mer palm and a ship, with a tropicbird crest and two sailfish supporters.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles",
+          "meaning": {
+            "description": "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Seychelles — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles"
+              }
+            ]
+          },
+          "sha256": "c333a9522003cf38c08092f864e31941a6775de71b58a988cff5c652d995e1df",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1976,
+        "event": "Seychelles became independent from the United Kingdom on 29 June 1976",
+        "source": "https://en.wikipedia.org/wiki/History_of_Seychelles"
+      }
     },
     "SD": {
       "flags": [
