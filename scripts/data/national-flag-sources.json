@@ -228,8 +228,114 @@
           "reuse": "flags/al.svg",
           "design": "The national flag of Albania, in the form adopted in 1992.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Albania"
+        },
+        {
+          "id": "al-people",
+          "category": "historical",
+          "name": "Flag of the People's Socialist Republic of Albania",
+          "from": 1946,
+          "to": 1992,
+          "priorPolity": "the People's Socialist Republic of Albania",
+          "commons": "Flag of Albania (1946–1992).svg",
+          "file": "al/albania-people.svg",
+          "design": "The red flag with the double-headed eagle beneath a gold-bordered red star, under the communist state.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
+          "sha256": "279543b43c703fc975c7558f5100d74452008e4211b786964deddfdb0652c713",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "al-kingdom",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Albania",
+          "from": 1928,
+          "to": 1939,
+          "priorPolity": "the Kingdom of Albania under Zog I",
+          "commons": "Flag of Albania (1934–1939).svg",
+          "file": "al/albania-kingdom.svg",
+          "design": "The double-headed eagle beneath a helmet, under King Zog I.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
+          "sha256": "dd02ea334d57d50457cc82d1aaabfca96fe03129460fce061918920c349f7b2c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "al-ottoman",
+          "category": "historical",
+          "name": "Flag of the Ottoman Empire",
+          "from": 1844,
+          "to": 1912,
+          "sovereign": "the Ottoman Empire",
+          "commons": "Flag of the Ottoman Empire (1844–1922).svg",
+          "file": "al/albania-ottoman.svg",
+          "design": "The red flag with a white crescent and star, flown over Albania until independence in 1912.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
+          "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "al-president",
+          "category": "standard",
+          "name": "Flag of the President of Albania",
+          "from": 2014,
+          "to": 9999,
+          "commons": "Flag of the President of Albania.svg",
+          "file": "al/albania-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
+          "sha256": "27866329f7a9f738259e54f113367829298f2e39e569452a3f772cc7314b1ef5",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "al-armed-forces",
+          "category": "military",
+          "name": "Flag of the Albanian Armed Forces",
+          "from": 2011,
+          "to": 9999,
+          "commons": "Flag of the Albanian Armed Forces.svg",
+          "file": "al/albania-armed-forces.svg",
+          "design": "The armed forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
+          "sha256": "3b5b932bcb6be6715240864280932e419ad0a290c5d4d2d25ef41060bfc92a88",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "al-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Albania",
+          "commons": "Naval Ensign of Albania.svg",
+          "file": "al/albania-naval-ensign.svg",
+          "design": "A white ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Albanian_flags",
+          "sha256": "f503eb76106a975b4553a9b29ec2ae8af63f25757f792bb69371da7b9ec80c03",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "al-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Albania",
+          "from": 1998,
+          "to": 9999,
+          "commons": "Coat of arms of Albania.svg",
+          "file": "al/albania-arms.svg",
+          "design": "A black double-headed eagle on a red shield, beneath the golden helmet of Skanderbeg.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Albania",
+          "meaning": {
+            "description": "The arms are the flag turned into a shield, and both descend from Skanderbeg — Gjergj Kastrioti, the 15th-century lord who led Albanian resistance to the Ottomans. The black double-headed eagle has been in documented use since 1458 and gives Albania its native name, Shqipëria, often glossed as the land of the eagles. Above the shield sits the gold helmet of Skanderbeg himself: the crown-like horned helm now held in the Kunsthistorisches Museum in Vienna, first recorded in the Ambras armoury inventory of 1593. So the emblem is not allegory but two relics of one man — his standard and his helmet.",
+            "sources": [
+              {
+                "title": "Coat of arms of Albania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Albania"
+              }
+            ]
+          },
+          "sha256": "43847cd817c004bd25b5412329c1edb1a20f7a749a9e290ba922f7ef1de66866",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1912,
+        "event": "Albania declared independence from the Ottoman Empire on 28 November 1912",
+        "source": "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence"
+      }
     },
     "AM": {
       "flags": [
@@ -5183,8 +5289,116 @@
           "reuse": "flags/ge.svg",
           "design": "The national flag of Georgia, in the form adopted in 2004.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Georgia"
+        },
+        {
+          "id": "ge-1990",
+          "category": "historical",
+          "name": "Flag of Georgia (1990–2004)",
+          "from": 1990,
+          "to": 2004,
+          "commons": "Flag of Georgia (1990–2004).svg",
+          "file": "ge/georgia-1990.svg",
+          "design": "The wine-red flag with a black-and-white canton, flown from the restoration of independence until the Rose Revolution brought back the five-cross flag in 2004.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
+          "sha256": "8159ff4b28f79d009e3ee042498961e3be8b2874227bf0d4fc19911ef1ba5cbc",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ge-1918",
+          "category": "historical",
+          "name": "Flag of the Democratic Republic of Georgia",
+          "from": 1918,
+          "to": 1921,
+          "priorPolity": "the Democratic Republic of Georgia",
+          "commons": "Flag_of_Georgia_(1918–1921,_4-5).svg",
+          "file": "ge/georgia-1918.svg",
+          "design": "The dark-red flag with a black-and-white stripe of the first Georgian republic, ended by the Soviet invasion of 1921.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
+          "sha256": "aec9c6ecbd24ae53400b39f7c7f432f1ae72782ab762d272f99dca43480a2a40",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ge-ssr",
+          "category": "historical",
+          "name": "Flag of the Georgian SSR",
+          "from": 1951,
+          "to": 1990,
+          "priorPolity": "the Georgian Soviet Socialist Republic",
+          "commons": "Flag of the Georgian Soviet Socialist Republic (1951–1990).svg",
+          "file": "ge/georgia-ssr.svg",
+          "design": "The red flag with a blue-bordered hammer, sickle and sun in the canton — the republic's flag within the Soviet Union.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
+          "sha256": "9f56dd85ffac80efaed70b943d90a01f8117c1977bbef236cbdb83dcb43b7c61",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ge-president",
+          "category": "standard",
+          "name": "Flag of the President of Georgia",
+          "from": 2020,
+          "to": 9999,
+          "commons": "Flag of the President of Georgia.svg",
+          "file": "ge/georgia-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
+          "sha256": "5be9b0db53a24231937f76bd3d69357b479fe2b28b3cf172d1f52a96648ee5c1",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ge-war-flag",
+          "category": "military",
+          "name": "War flag of Georgia",
+          "from": 2004,
+          "to": 9999,
+          "commons": "Flag of the Georgian Armed Forces.svg",
+          "file": "ge/georgia-war-flag.svg",
+          "design": "The military flag of the Defence Forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
+          "sha256": "7575f1081c4f7f7bb98cd23904d4203e532036b1fa711d2d8789cd2fed9b5ca1",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ge-army",
+          "category": "military",
+          "name": "Flag of the Georgian Land Force",
+          "from": 2004,
+          "to": 9999,
+          "commons": "Army Flag of Georgia.svg",
+          "file": "ge/georgia-army.svg",
+          "design": "The land force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Georgian_flags",
+          "sha256": "dcf5d404f178b177544aee9dc203b5228308eda982290fde62c8b07d05bfad26",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ge-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Georgia",
+          "from": 2004,
+          "to": 9999,
+          "commons": "Greater coat of arms of Georgia.svg",
+          "file": "ge/georgia-arms.svg",
+          "design": "Saint George on horseback slaying a dragon, on a red shield beneath the Iberian crown, held by two golden lions over the motto Strength is in Unity.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia",
+          "meaning": {
+            "description": "The arms are partly based on the medieval device of the Bagrationi royal house and centre on Saint George, the country's traditional patron saint and the source of its English name — a silver rider on a silver horse spearing a dragon, his lance tipped with a golden cross, on a purple field (usually drawn red). The shield is crowned with the Iberian crown of the old Georgian kingdom and supported by two golden lions; the scroll beneath carries the national motto, \"Strength is in Unity\". The same Saint George arms served the Democratic Republic of 1918–1921, though at that time there was some discussion of using Amirani, the Georgian Prometheus, instead. The current version was adopted after the 2004 Rose Revolution.",
+            "sources": [
+              {
+                "title": "Coat of arms of Georgia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia"
+              }
+            ]
+          },
+          "sha256": "2841fdf29baa1b161e2057190f073b43f17af22f1c1a37c302617d2225431589",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1918,
+        "event": "The Democratic Republic of Georgia declared independence on 26 May 1918",
+        "note": "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.",
+        "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia"
+      }
     },
     "GH": {
       "flags": [
@@ -8149,8 +8363,103 @@
           "reuse": "flags/lt.svg",
           "design": "The national flag of Lithuania, in the form adopted in 1918.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lithuania"
+        },
+        {
+          "id": "lt-1918",
+          "category": "historical",
+          "name": "Flag of Lithuania (1918–1940)",
+          "from": 1918,
+          "to": 1940,
+          "priorPolity": "the first Republic of Lithuania",
+          "commons": "Flag of Lithuania (1918–1940).svg",
+          "file": "lt/lithuania-1918.svg",
+          "design": "The yellow-green-red tricolour of the interwar republic, in a darker green than the 2004 standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
+          "sha256": "038567c31b0802fead66900d3b2d106631ab5665257d0bbb3383403c89e8a2d2",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lt-ssr",
+          "category": "historical",
+          "name": "Flag of the Lithuanian SSR",
+          "from": 1940,
+          "to": 1953,
+          "occupier": "the Soviet Union",
+          "commons": "Flag of the Lithuanian Soviet Socialist Republic (1940–1953).svg",
+          "file": "lt/lithuania-ssr.svg",
+          "design": "The flag imposed after the Soviet occupation of 1940, while Lithuania's own tricolour was banned.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
+          "sha256": "00210a0f19400b545fab8b403dce6f0fea4fa06551813456c3ea42cd42bd0053",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lt-president",
+          "category": "standard",
+          "name": "Flag of the President of Lithuania",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Flag of the President of Lithuania.svg",
+          "file": "lt/lithuania-president.svg",
+          "design": "A red field bearing the Vytis, the mounted knight of the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
+          "sha256": "8a04223a9e8c27b8c2e32de3dbd695cbc6dfbf16916309eac8d9b2ce268b53fc",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lt-air-force",
+          "category": "military",
+          "name": "Air Force Ensign of Lithuania",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Air Force Ensign of Lithuania.svg",
+          "file": "lt/lithuania-air-force.svg",
+          "design": "The air force's ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
+          "sha256": "4ec1b63c9ce06c23d8af2deedef088f935830be9e271ea5abbcd18cdf32ef7a9",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lt-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Lithuania",
+          "from": 1992,
+          "to": 9999,
+          "commons": "Naval Ensign of Lithuania.svg",
+          "file": "lt/lithuania-naval-ensign.svg",
+          "design": "The naval ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania",
+          "sha256": "5d34e26dfae802b17f8bd8eaa38d6fbffb1398179aa1d825e5e36bbd3065765c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lt-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Lithuania",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Coat of arms of Lithuania.svg",
+          "file": "lt/lithuania-arms.svg",
+          "design": "An armoured knight on a white horse wielding a sword, carrying a shield with a double cross, on a red field — the Vytis.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania",
+          "meaning": {
+            "description": "The Vytis — the pursuer — is a mounted knight charging with a raised sword, and it is one of the oldest coats of arms in Europe still in use. It began as the dynastic device of the Gediminid family and was formalised by Grand Duke Vytautas the Great in the early 15th century as the arms of the Grand Duchy of Lithuania, the last pagan state in Europe, which had formed in response to the Teutonic Order's forced Christianisation of Estonia and Latvia. The cross on the knight's shield is the Jagiellonian double cross, added after Lithuania's rulers accepted Christianity. The horseman was flown continuously as the state's emblem until the Soviet occupation and restored with independence in 1991.",
+            "sources": [
+              {
+                "title": "Coat of arms of Lithuania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania"
+              }
+            ]
+          },
+          "sha256": "ff8870326a233c51440fcd0e0981eb8967dee5c8b6a5b0e27fdd91a52d57149f",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1918,
+        "event": "Lithuania restored its statehood on 16 February 1918",
+        "note": "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.",
+        "source": "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania"
+      }
     },
     "LU": {
       "flags": [
@@ -8826,8 +9135,85 @@
           "reuse": "flags/mt.svg",
           "design": "The national flag of Malta, in the form adopted in 1964.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malta"
+        },
+        {
+          "id": "mt-colonial",
+          "category": "historical",
+          "name": "Flag of the Colony of Malta (1943–1964)",
+          "from": 1943,
+          "to": 1964,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Malta (1943–1964).svg",
+          "file": "mt/malta-colonial.svg",
+          "design": "The colony's blue ensign in its final form, defaced with the shield bearing the George Cross awarded in 1942.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
+          "sha256": "ecde3ca0c1d0c044cb2e9f4f218e3e56bc40919b013209d64b7f2ecf383e6dea",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mt-president",
+          "category": "standard",
+          "name": "Flag of the President of Malta",
+          "from": 1988,
+          "to": 9999,
+          "commons": "Flag of the President of Malta.svg",
+          "file": "mt/malta-president.svg",
+          "design": "A blue field bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
+          "sha256": "7ecea7d115dc57a7928a04ebac864b0f952c47e4049894c4ed9faccab00e173c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mt-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Malta",
+          "commons": "Civil Ensign of Malta.svg",
+          "file": "mt/malta-civil-ensign.svg",
+          "design": "A red field bordered white with a white Maltese cross.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
+          "sha256": "fe44aa93249a34d4e69f2f76affb580823845d17eb4e851ea5260d3e5b879281",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mt-naval-jack",
+          "category": "maritime",
+          "name": "Naval Jack of Malta",
+          "commons": "Naval Jack of Malta.svg",
+          "file": "mt/malta-naval-jack.svg",
+          "design": "A George Cross on a blue field within a red border.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Malta",
+          "sha256": "77714d13f420201534546bdf81bf272104847f140634d2bbec94ac3a0e293d0c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mt-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Malta",
+          "from": 1988,
+          "to": 9999,
+          "commons": "Coat of arms of Malta.svg",
+          "file": "mt/malta-arms.svg",
+          "design": "A shield of the national flag beneath a mural crown, framed by an olive branch and a palm branch over a scroll reading Repubblika ta' Malta.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta",
+          "meaning": {
+            "description": "The shield is simply the national flag — white and red with the George Cross that the United Kingdom awarded to the whole island in 1942 for its endurance under siege. Above it a golden mural crown with a sally port and five turrets stands for the fortifications of Malta and the city walls, the crown of a fortress rather than a monarch. The olive branch and palm branch framing the shield are peace and, by the palm, the endurance of the islanders; the scroll beneath reads Repubblika ta' Malta. The arms were adopted in 1988, replacing a 1975 emblem — Prime Minister Dom Mintoff had earlier objected to the 1964 arms because he took the mural crown for a royal one, which it is not.",
+            "sources": [
+              {
+                "title": "Coat of arms of Malta — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta"
+              }
+            ]
+          },
+          "sha256": "289f2e2dc81ae7fffcb3d8563ca7d53db5b2580c5d86f4db0f97dc8785a21e74",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1964,
+        "event": "Independence from the United Kingdom, 21 September 1964",
+        "note": "Malta became a republic in 1974.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Malta"
+      }
     },
     "MU": {
       "flags": [
@@ -12235,8 +12621,89 @@
           "reuse": "flags/si.svg",
           "design": "The national flag of Slovenia, in the form adopted in 1991.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Slovenia"
+        },
+        {
+          "id": "si-sr",
+          "category": "historical",
+          "name": "Flag of the Socialist Republic of Slovenia",
+          "from": 1945,
+          "to": 1991,
+          "priorPolity": "the Socialist Republic of Slovenia within Yugoslavia",
+          "commons": "Flag of Slovenia (1945–1991).svg",
+          "file": "si/slovenia-sr.svg",
+          "design": "The white-blue-red tricolour with a red star, as a constituent republic of Yugoslavia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
+          "sha256": "1ef929b58a8dfa8885f90ac4d9f1a0b95d16c661b1cd30752746f48f81110c42",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "si-yugoslavia",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Yugoslavia",
+          "from": 1918,
+          "to": 1941,
+          "sovereign": "the Kingdom of Yugoslavia",
+          "commons": "Flag of Yugoslavia (1918–1941).svg",
+          "file": "si/slovenia-yugoslavia.svg",
+          "design": "The blue-white-red tricolour of the Kingdom of Serbs, Croats and Slovenes, to which the Slovene Lands belonged.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
+          "sha256": "6aae7baeb583cd90543fecf3433e1811b6e0f1667df8414a380619355ff4d8d7",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "si-president",
+          "category": "standard",
+          "name": "Flag of the President of Slovenia",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Naval flag of the President of Slovenia.svg",
+          "file": "si/slovenia-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
+          "sha256": "b315b236b8118887a7a850ad65563eae38fce6a9697098d071084444fd07adb0",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "si-armed-forces",
+          "category": "military",
+          "name": "Flag of the Slovenian Armed Forces",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Flag of the Slovenian Armed Forces.svg",
+          "file": "si/slovenia-armed-forces.svg",
+          "design": "The armed forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Slovenian_flags",
+          "sha256": "5480788f61ca3fdbd59de5d42e387a76b3fe8de249cbb8edb5b8445f1eb024d4",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "si-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Slovenia",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Coat of arms of Slovenia.svg",
+          "file": "si/slovenia-arms.svg",
+          "design": "Mount Triglav in white on blue above two wavy lines, beneath three golden six-pointed stars, on a red-bordered shield.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia",
+          "meaning": {
+            "description": "The white three-peaked mountain is Triglav, Slovenia's highest and its national symbol; the two wavy lines beneath it are the country's rivers and its Adriatic coast. The three gold six-pointed stars arranged above are borrowed from the arms of the Counts of Celje, the most powerful medieval dynasty of the Slovene lands. Until Austria-Hungary dissolved, the Slovene lands had no single coat of arms — each historic province carried its own — so this emblem, designed at independence in 1991, is the first that represents the whole nation; the Triglav-and-sea motif had already appeared on the socialist-era emblem.",
+            "sources": [
+              {
+                "title": "Coat of arms of Slovenia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia"
+              }
+            ]
+          },
+          "sha256": "1ac23284d2f8474d44eb23aadf1a19a39697adf5920ed29a554c60c11232d72f",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Slovenia declared independence from Yugoslavia on 25 June 1991",
+        "source": "https://en.wikipedia.org/wiki/Independence_of_Slovenia"
+      }
     },
     "SK": {
       "flags": [
