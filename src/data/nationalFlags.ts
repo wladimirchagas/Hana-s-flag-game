@@ -234,8 +234,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "be-naval-jack", category: "maritime", name: "Naval jack of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-naval-jack.svg", design: "The jack of the Belgian Navy.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
   ],
   "BF": [
-    { id: "bf-official-national", category: "official", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag of Burkina Faso, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
-    { id: "bf-current", category: "historical", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag of Burkina Faso, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
+    { id: "bf-official-national", category: "official", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag, adopted in 1984 when Upper Volta was renamed Burkina Faso.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
+    { id: "bf-current", category: "historical", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "Red over green with a gold star at the centre — red for the revolution, green for hope and the land, the star for the guiding light — adopted in 1984 with the country's new name.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
+    { id: "bf-upper-volta", category: "historical", name: "Flag of Upper Volta", from: 1959, to: 1984, path: "national-flags/bf/bf-uv.svg", design: "Black, white and red horizontal bands — for the three Volta rivers (the Black, White and Red Volta) — flown by the Republic of Upper Volta until it was renamed in 1984.", source: "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta" },
+    { id: "bf-french", category: "historical", name: "Flag of France", from: 1919, to: 1959, sovereign: "France", path: "national-flags/bf/bf-french.svg", design: "The French Tricolour, flown over the territory of Upper Volta as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_Upper_Volta" },
+    { id: "bf-arms", category: "coatofarms", name: "Coat of arms of Burkina Faso", from: 1997, to: 9999, path: "national-flags/bf/bf-arms.svg", design: "A shield in the national colours, held by two white stallions, above ears of millet.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
   ],
   "BG": [
     { id: "bg-official-national", category: "official", name: "Flag of Bulgaria", from: 1878, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in use since 1878.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
@@ -254,8 +257,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bi-current", category: "historical", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag of Burundi, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
   ],
   "BJ": [
-    { id: "bj-official-national", category: "official", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "The national flag of Benin, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
-    { id: "bj-current", category: "historical", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "The national flag of Benin, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    { id: "bj-official-national", category: "official", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "The national flag, adopted in 1959 and restored in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    { id: "bj-marxist", category: "historical", name: "Flag of the People's Republic of Benin", from: 1975, to: 1990, path: "national-flags/bj/bj-marxist.svg", design: "A green field with a red star in the canton, flown by the Marxist-Leninist People's Republic of Benin.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    { id: "bj-current", category: "historical", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "A green vertical band with horizontal yellow-over-red bands — the pan-African colours, adopted in 1959, replaced under the Marxist People's Republic in 1975 and restored in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
+    { id: "bj-french", category: "historical", name: "Flag of France", from: 1900, to: 1959, sovereign: "France", path: "national-flags/bj/bj-french.svg", design: "The French Tricolour, flown over the colony of Dahomey as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_Dahomey" },
+    { id: "bj-arms", category: "coatofarms", name: "Coat of arms of Benin", from: 1964, to: 9999, path: "national-flags/bj/bj-arms.svg", design: "A quartered shield with a Somba castle, the Star of Benin, a ship and a palm tree, held by two leopards.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin" },
   ],
   "BN": [
     { id: "bn-official-national", category: "official", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
@@ -371,12 +377,17 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cd-president", category: "standard", name: "Presidential standard of the Democratic Republic of the Congo", from: 2006, to: 9999, path: "national-flags/cd/cd-president.svg", design: "The standard of the President of the Democratic Republic of the Congo.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" },
   ],
   "CF": [
-    { id: "cf-official-national", category: "official", name: "Flag of Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "The national flag of Central African Republic, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Central_African_Republic" },
-    { id: "cf-current", category: "historical", name: "Flag of Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "The national flag of Central African Republic, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Central_African_Republic" },
+    { id: "cf-official-national", category: "official", name: "Flag of the Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "The national flag, adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
+    { id: "cf-current", category: "historical", name: "Flag of the Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "Four horizontal bands — blue, white, green, yellow — crossed by a vertical red stripe, with a gold star in the canton; it joins the French and pan-African colours, red binding them as the blood common to all.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
+    { id: "cf-french", category: "historical", name: "Flag of France", from: 1910, to: 1958, sovereign: "France", path: "national-flags/cf/cf-french.svg", design: "The French Tricolour, flown over the territory of Ubangi-Shari as part of French Equatorial Africa.", source: "https://en.wikipedia.org/wiki/Ubangi-Shari" },
+    { id: "cf-arms", category: "coatofarms", name: "Coat of arms of the Central African Republic", from: 1963, to: 9999, path: "national-flags/cf/cf-arms.svg", design: "A quartered shield with an elephant, a baobab, a hand and a gold star on a map of Africa, beneath a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic" },
   ],
   "CG": [
-    { id: "cg-official-national", category: "official", name: "Flag of Congo", from: 1959, to: 9999, primary: true, path: "flags/cg.svg", design: "The national flag of Congo, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Congo" },
-    { id: "cg-current", category: "historical", name: "Flag of Congo", from: 1959, to: 9999, primary: true, path: "flags/cg.svg", design: "The national flag of Congo, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Congo" },
+    { id: "cg-official-national", category: "official", name: "Flag of the Republic of the Congo", from: 1959, to: 9999, primary: true, path: "flags/cg.svg", design: "The national flag, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo" },
+    { id: "cg-communist", category: "historical", name: "Flag of the People's Republic of the Congo", from: 1970, to: 1991, path: "national-flags/cg/cg-communist.svg", design: "A red field with the Marxist state emblem — crossed hoe and hammer beneath a star, in a wreath — flown by the People's Republic of the Congo.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo" },
+    { id: "cg-current", category: "historical", name: "Flag of the Republic of the Congo", from: 1959, to: 9999, primary: true, path: "flags/cg.svg", design: "A yellow diagonal band dividing a green and a red triangle — the pan-African colours, adopted in 1959, dropped under the Marxist People's Republic in 1970 and restored in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo" },
+    { id: "cg-french", category: "historical", name: "Flag of France", from: 1910, to: 1959, sovereign: "France", path: "national-flags/cg/cg-french.svg", design: "The French Tricolour, flown over the territory as part of French Equatorial Africa.", source: "https://en.wikipedia.org/wiki/French_Equatorial_Africa" },
+    { id: "cg-arms", category: "coatofarms", name: "Coat of arms of the Republic of the Congo", from: 1960, to: 9999, path: "national-flags/cg/cg-arms.svg", design: "A gold shield with a green wavy stripe and a red lion holding a torch, held by two elephants.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
   ],
   "CH": [
     { id: "ch-official-national", category: "official", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
@@ -680,8 +691,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gm-current", category: "historical", name: "Flag of Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag of Gambia, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Gambia" },
   ],
   "GN": [
-    { id: "gn-official-national", category: "official", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "The national flag of Guinea, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
-    { id: "gn-current", category: "historical", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "The national flag of Guinea, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
+    { id: "gn-official-national", category: "official", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "The national flag, adopted at independence in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
+    { id: "gn-current", category: "historical", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "Vertical red, yellow and green bands — the pan-African colours, in the arrangement of the French Tricolour — adopted at independence in 1958: red for sacrifice and labour, yellow for the sun and gold, green for the land.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
+    { id: "gn-french", category: "historical", name: "Flag of France", from: 1891, to: 1958, sovereign: "France", path: "national-flags/gn/gn-french.svg", design: "The French Tricolour, flown over French Guinea as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_Guinea" },
+    { id: "gn-arms", category: "coatofarms", name: "Coat of arms of Guinea", from: 1958, to: 9999, path: "national-flags/gn/gn-arms.svg", design: "A dove holding an olive branch, above a shield in the national colours and a ribbon with the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
   ],
   "GQ": [
     { id: "gq-official-national", category: "official", name: "Flag of Equatorial Guinea", from: 1979, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag of Equatorial Guinea, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
@@ -1844,7 +1857,9 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BA": { year: 1992, event: "Bosnia and Herzegovina declared independence from Yugoslavia on 3 March 1992", source: "https://en.wikipedia.org/wiki/Independence_of_Bosnia_and_Herzegovina" },
   "BB": { year: 1966, event: "Independence from the United Kingdom, 30 November 1966", note: "Barbados became a republic on 30 November 2021.", source: "https://en.wikipedia.org/wiki/History_of_Barbados" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
+  "BF": { year: 1960, event: "Burkina Faso (then Upper Volta) became independent from France on 5 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Burkina_Faso" },
   "BG": { year: 1878, event: "The Principality of Bulgaria was established after liberation from Ottoman rule in 1878; full independence was declared in 1908", source: "https://en.wikipedia.org/wiki/History_of_Bulgaria" },
+  "BJ": { year: 1960, event: "Benin (then Dahomey) became independent from France on 1 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Benin" },
   "BN": { year: 1984, event: "Full independence from the United Kingdom, 1 January 1984", note: "Brunei had been a British protectorate since 1888.", source: "https://en.wikipedia.org/wiki/History_of_Brunei" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
@@ -1853,6 +1868,8 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BY": { year: 1991, event: "Independence from the Soviet Union declared 25 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Belarus" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CD": { year: 1960, event: "The Democratic Republic of the Congo became independent from Belgium on 30 June 1960", source: "https://en.wikipedia.org/wiki/History_of_the_Democratic_Republic_of_the_Congo" },
+  "CF": { year: 1960, event: "The Central African Republic became independent from France on 13 August 1960", source: "https://en.wikipedia.org/wiki/History_of_the_Central_African_Republic" },
+  "CG": { year: 1960, event: "The Republic of the Congo became independent from France on 15 August 1960", source: "https://en.wikipedia.org/wiki/History_of_the_Republic_of_the_Congo" },
   "CI": { year: 1960, event: "Ivory Coast became independent from France on 7 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Ivory_Coast" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
   "CM": { year: 1960, event: "French Cameroun became independent on 1 January 1960", note: "The southern part of British Cameroons joined it in October 1961 to form a federal republic; the northern part joined Nigeria.", source: "https://en.wikipedia.org/wiki/History_of_Cameroon" },
@@ -1867,6 +1884,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "GA": { year: 1960, event: "Gabon became independent from France on 17 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Gabon" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
+  "GN": { year: 1958, event: "Guinea became independent from France on 2 October 1958, the only French African territory to vote No in the 1958 constitutional referendum", source: "https://en.wikipedia.org/wiki/History_of_Guinea" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "IE": { year: 1922, event: "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty", note: "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Irish_Free_State" },
@@ -2007,10 +2025,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
     ],
   },
+  "bf-arms": {
+    description: "The shield carries the red, green and gold star of the national flag. Two white stallions — the horse being an old emblem of the Mossi kingdoms — support it, standing over ears of millet, the staple grain. The upper ribbon gives the country's name, Burkina Faso (“land of upright people”), and the lower one the motto Unité, Progrès, Justice — “Unity, Progress, Justice.”",
+    sources: [
+      { title: "Coat of arms of Burkina Faso — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso" },
+    ],
+  },
   "bg-arms": {
     description: "A crowned golden lion rampant on a dark-red shield, beneath the historical crown of the medieval Bulgarian tsars. The rampant lion has stood for Bulgaria since the Second Bulgarian Empire, and here it appears three times — once on the shield and again as the two crowned lions that support it, standing on a compartment of oak branches for strength and endurance. The white ribbon carries the national motto, Съединението прави силата — “Unity makes strength.”",
     sources: [
       { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
+    ],
+  },
+  "bj-arms": {
+    description: "The shield is quartered: a Somba tower-house for the country's own history; the Star of Benin, its highest decoration; a sailing ship for the arrival of the Europeans; and a palm tree. Two leopards — the national animal — support it, and beneath, two cornucopias pour out ears of corn. The ribbon reads Fraternité, Justice, Travail — “Fraternity, Justice, Work.”",
+    sources: [
+      { title: "Coat of arms of Benin — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin" },
     ],
   },
   "bn-emblem": {
@@ -2078,6 +2108,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "This is deliberately an EMBLEM rather than a coat of arms — it does not follow heraldic rules — and it alludes directly to the arms of the Byelorussian SSR, which is the point of it: readopted by referendum in 1995, it restored the Soviet-era design after four years of the Pahonia. It carries a silhouette of Belarus over a globe and a rising sun, framed by ears of wheat bound with a ribbon in the colours of the national flag, and topped by a red star. Between 1991 and 1995 the country instead used the Pahonia — the mounted knight of the Grand Duchy of Lithuania — which remains the emblem of the Belarusian opposition.",
     sources: [
       { title: "National emblem of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
+    ],
+  },
+  "cf-arms": {
+    description: "The shield gathers the country's emblems: an elephant and a baobab tree for its nature and its backbone; an open hand, the symbol of the party that led it to independence; and a gold star on a map of Africa, marking the Central African Republic at the continent's heart. A rising sun crowns it for the dawn of independence, and the Order of Operational Merit hangs below. Two ribbons carry the mottoes — in Sango, Zo Kwe Zo, “All people are people,” and in French, Unité, Dignité, Travail, “Unity, Dignity, Work.”",
+    sources: [
+      { title: "Coat of arms of the Central African Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic" },
+    ],
+  },
+  "cg-arms": {
+    description: "On a gold shield a red lion holds a burning torch, above a green wavy band for the Congo River that names the country. A golden crown sits above, and two African elephants — the great animals of the Congo forests — support the shield. The ribbon carries the motto Unité, Travail, Progrès — “Unity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
     ],
   },
   "ci-arms": {
@@ -2222,6 +2264,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
     sources: [
       { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
+    ],
+  },
+  "gn-arms": {
+    description: "A white dove carrying an olive branch spreads its wings above a shield in the national red, yellow and green — the dove and branch for peace. The ribbon below carries the national motto, Travail, Justice, Solidarité — “Work, Justice, Solidarity.”",
+    sources: [
+      { title: "Coat of arms of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
     ],
   },
   "gy-arms": {

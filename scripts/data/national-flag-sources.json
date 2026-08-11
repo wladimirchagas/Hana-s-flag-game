@@ -1557,7 +1557,7 @@
           "to": 9999,
           "name": "Flag of Burkina Faso",
           "reuse": "flags/bf.svg",
-          "design": "The national flag of Burkina Faso, in the form adopted in 1984.",
+          "design": "The national flag, adopted in 1984 when Upper Volta was renamed Burkina Faso.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso"
         },
         {
@@ -1567,10 +1567,64 @@
           "to": 9999,
           "name": "Flag of Burkina Faso",
           "reuse": "flags/bf.svg",
-          "design": "The national flag of Burkina Faso, in the form adopted in 1984.",
+          "design": "Red over green with a gold star at the centre — red for the revolution, green for hope and the land, the star for the guiding light — adopted in 1984 with the country's new name.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso"
+        },
+        {
+          "id": "bf-upper-volta",
+          "category": "historical",
+          "from": 1959,
+          "to": 1984,
+          "name": "Flag of Upper Volta",
+          "commons": "Flag of Upper Volta.svg",
+          "file": "bf/bf-uv.svg",
+          "design": "Black, white and red horizontal bands — for the three Volta rivers (the Black, White and Red Volta) — flown by the Republic of Upper Volta until it was renamed in 1984.",
+          "source": "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta",
+          "sha256": "5f4545154b54982935b11ff323556da55ce58366668b63c4537c6e353054dd30",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bf-french",
+          "category": "historical",
+          "from": 1919,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "bf/bf-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over the territory of Upper Volta as part of French West Africa.",
+          "source": "https://en.wikipedia.org/wiki/French_Upper_Volta",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bf-arms",
+          "category": "coatofarms",
+          "from": 1997,
+          "to": 9999,
+          "name": "Coat of arms of Burkina Faso",
+          "commons": "Coat of arms of Burkina Faso.svg",
+          "file": "bf/bf-arms.svg",
+          "design": "A shield in the national colours, held by two white stallions, above ears of millet.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso",
+          "meaning": {
+            "description": "The shield carries the red, green and gold star of the national flag. Two white stallions — the horse being an old emblem of the Mossi kingdoms — support it, standing over ears of millet, the staple grain. The upper ribbon gives the country's name, Burkina Faso (“land of upright people”), and the lower one the motto Unité, Progrès, Justice — “Unity, Progress, Justice.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Burkina Faso — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burkina_Faso"
+              }
+            ]
+          },
+          "sha256": "9b8fbf55b7316833d12d85862d89892f9e61a3200acb2c47fa368ed282627eeb",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Burkina Faso (then Upper Volta) became independent from France on 5 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Burkina_Faso"
+      }
     },
     "BG": {
       "flags": [
@@ -1718,7 +1772,7 @@
           "to": 9999,
           "name": "Flag of Benin",
           "reuse": "flags/bj.svg",
-          "design": "The national flag of Benin, in the form adopted in 1959.",
+          "design": "The national flag, adopted in 1959 and restored in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Benin"
         },
         {
@@ -1728,10 +1782,64 @@
           "to": 9999,
           "name": "Flag of Benin",
           "reuse": "flags/bj.svg",
-          "design": "The national flag of Benin, in the form adopted in 1959.",
+          "design": "A green vertical band with horizontal yellow-over-red bands — the pan-African colours, adopted in 1959, replaced under the Marxist People's Republic in 1975 and restored in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Benin"
+        },
+        {
+          "id": "bj-marxist",
+          "category": "historical",
+          "from": 1975,
+          "to": 1990,
+          "name": "Flag of the People's Republic of Benin",
+          "commons": "Flag of Benin (1975–1990).svg",
+          "file": "bj/bj-marxist.svg",
+          "design": "A green field with a red star in the canton, flown by the Marxist-Leninist People's Republic of Benin.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Benin",
+          "sha256": "6023dff4058a876872207c9c35ac732a0c2fa1b2f04303e3fc69e477c49854b3",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bj-french",
+          "category": "historical",
+          "from": 1900,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "bj/bj-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over the colony of Dahomey as part of French West Africa.",
+          "source": "https://en.wikipedia.org/wiki/French_Dahomey",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bj-arms",
+          "category": "coatofarms",
+          "from": 1964,
+          "to": 9999,
+          "name": "Coat of arms of Benin",
+          "commons": "Coat of arms of Benin.svg",
+          "file": "bj/bj-arms.svg",
+          "design": "A quartered shield with a Somba castle, the Star of Benin, a ship and a palm tree, held by two leopards.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin",
+          "meaning": {
+            "description": "The shield is quartered: a Somba tower-house for the country's own history; the Star of Benin, its highest decoration; a sailing ship for the arrival of the Europeans; and a palm tree. Two leopards — the national animal — support it, and beneath, two cornucopias pour out ears of corn. The ribbon reads Fraternité, Justice, Travail — “Fraternity, Justice, Work.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Benin — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin"
+              }
+            ]
+          },
+          "sha256": "2e84acfcb4456309ee22dc9d1639c70f1673ebdc62edce63ef4e21c0efb9c778",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Benin (then Dahomey) became independent from France on 1 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Benin"
+      }
     },
     "BN": {
       "flags": [
@@ -3058,22 +3166,63 @@
           "category": "official",
           "from": 1958,
           "to": 9999,
-          "name": "Flag of Central African Republic",
+          "name": "Flag of the Central African Republic",
           "reuse": "flags/cf.svg",
-          "design": "The national flag of Central African Republic, in the form adopted in 1958.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Central_African_Republic"
+          "design": "The national flag, adopted in 1958.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic"
         },
         {
           "id": "cf-current",
           "category": "historical",
           "from": 1958,
           "to": 9999,
-          "name": "Flag of Central African Republic",
+          "name": "Flag of the Central African Republic",
           "reuse": "flags/cf.svg",
-          "design": "The national flag of Central African Republic, in the form adopted in 1958.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Central_African_Republic"
+          "design": "Four horizontal bands — blue, white, green, yellow — crossed by a vertical red stripe, with a gold star in the canton; it joins the French and pan-African colours, red binding them as the blood common to all.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic"
+        },
+        {
+          "id": "cf-french",
+          "category": "historical",
+          "from": 1910,
+          "to": 1958,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "cf/cf-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over the territory of Ubangi-Shari as part of French Equatorial Africa.",
+          "source": "https://en.wikipedia.org/wiki/Ubangi-Shari",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cf-arms",
+          "category": "coatofarms",
+          "from": 1963,
+          "to": 9999,
+          "name": "Coat of arms of the Central African Republic",
+          "commons": "Coat of arms of the Central African Republic.svg",
+          "file": "cf/cf-arms.svg",
+          "design": "A quartered shield with an elephant, a baobab, a hand and a gold star on a map of Africa, beneath a rising sun.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic",
+          "meaning": {
+            "description": "The shield gathers the country's emblems: an elephant and a baobab tree for its nature and its backbone; an open hand, the symbol of the party that led it to independence; and a gold star on a map of Africa, marking the Central African Republic at the continent's heart. A rising sun crowns it for the dawn of independence, and the Order of Operational Merit hangs below. Two ribbons carry the mottoes — in Sango, Zo Kwe Zo, “All people are people,” and in French, Unité, Dignité, Travail, “Unity, Dignity, Work.”",
+            "sources": [
+              {
+                "title": "Coat of arms of the Central African Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Central_African_Republic"
+              }
+            ]
+          },
+          "sha256": "c37a9b314f059f106c23f201315c34c46986b7888151372297560db5c5dc20e9",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "The Central African Republic became independent from France on 13 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Central_African_Republic"
+      }
     },
     "CG": {
       "flags": [
@@ -3082,22 +3231,76 @@
           "category": "official",
           "from": 1959,
           "to": 9999,
-          "name": "Flag of Congo",
+          "name": "Flag of the Republic of the Congo",
           "reuse": "flags/cg.svg",
-          "design": "The national flag of Congo, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Congo"
+          "design": "The national flag, adopted in 1959.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo"
         },
         {
           "id": "cg-current",
           "category": "historical",
           "from": 1959,
           "to": 9999,
-          "name": "Flag of Congo",
+          "name": "Flag of the Republic of the Congo",
           "reuse": "flags/cg.svg",
-          "design": "The national flag of Congo, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Congo"
+          "design": "A yellow diagonal band dividing a green and a red triangle — the pan-African colours, adopted in 1959, dropped under the Marxist People's Republic in 1970 and restored in 1991.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo"
+        },
+        {
+          "id": "cg-communist",
+          "category": "historical",
+          "from": 1970,
+          "to": 1991,
+          "name": "Flag of the People's Republic of the Congo",
+          "commons": "Flag of the People's Republic of the Congo.svg",
+          "file": "cg/cg-communist.svg",
+          "design": "A red field with the Marxist state emblem — crossed hoe and hammer beneath a star, in a wreath — flown by the People's Republic of the Congo.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo",
+          "sha256": "b30519adac8b3342dd8b91e3e1db5a6c22119dbfa5bcddf9f6fa10903b2cf5f0",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cg-french",
+          "category": "historical",
+          "from": 1910,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "cg/cg-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over the territory as part of French Equatorial Africa.",
+          "source": "https://en.wikipedia.org/wiki/French_Equatorial_Africa",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cg-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of the Republic of the Congo",
+          "commons": "Coat of arms of the Republic of the Congo.svg",
+          "file": "cg/cg-arms.svg",
+          "design": "A gold shield with a green wavy stripe and a red lion holding a torch, held by two elephants.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo",
+          "meaning": {
+            "description": "On a gold shield a red lion holds a burning torch, above a green wavy band for the Congo River that names the country. A golden crown sits above, and two African elephants — the great animals of the Congo forests — support the shield. The ribbon carries the motto Unité, Travail, Progrès — “Unity, Work, Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of the Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo"
+              }
+            ]
+          },
+          "sha256": "f1c745d783f841c14ab87210ef7afc77e55ee5c8f8ce807dedfe77b4f5ff22a2",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "The Republic of the Congo became independent from France on 15 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Republic_of_the_Congo"
+      }
     },
     "CH": {
       "flags": [
@@ -6324,7 +6527,7 @@
           "to": 9999,
           "name": "Flag of Guinea",
           "reuse": "flags/gn.svg",
-          "design": "The national flag of Guinea, in the form adopted in 1958.",
+          "design": "The national flag, adopted at independence in 1958.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea"
         },
         {
@@ -6334,10 +6537,51 @@
           "to": 9999,
           "name": "Flag of Guinea",
           "reuse": "flags/gn.svg",
-          "design": "The national flag of Guinea, in the form adopted in 1958.",
+          "design": "Vertical red, yellow and green bands — the pan-African colours, in the arrangement of the French Tricolour — adopted at independence in 1958: red for sacrifice and labour, yellow for the sun and gold, green for the land.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea"
+        },
+        {
+          "id": "gn-french",
+          "category": "historical",
+          "from": 1891,
+          "to": 1958,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "gn/gn-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over French Guinea as part of French West Africa.",
+          "source": "https://en.wikipedia.org/wiki/French_Guinea",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gn-arms",
+          "category": "coatofarms",
+          "from": 1958,
+          "to": 9999,
+          "name": "Coat of arms of Guinea",
+          "commons": "Coat of arms of Guinea.svg",
+          "file": "gn/gn-arms.svg",
+          "design": "A dove holding an olive branch, above a shield in the national colours and a ribbon with the national motto.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea",
+          "meaning": {
+            "description": "A white dove carrying an olive branch spreads its wings above a shield in the national red, yellow and green — the dove and branch for peace. The ribbon below carries the national motto, Travail, Justice, Solidarité — “Work, Justice, Solidarity.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea"
+              }
+            ]
+          },
+          "sha256": "18d0b93080c5944dc8f90e6c6e0dd5e6666b608fbe20e9f1c8a004ac7488cba8",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1958,
+        "event": "Guinea became independent from France on 2 October 1958, the only French African territory to vote No in the 1958 constitutional referendum",
+        "source": "https://en.wikipedia.org/wiki/History_of_Guinea"
+      }
     },
     "GQ": {
       "flags": [
