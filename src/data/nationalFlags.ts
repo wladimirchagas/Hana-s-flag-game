@@ -384,8 +384,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ch-civil-ensign", category: "maritime", name: "Civil and state ensign of Switzerland", from: 1882, to: 9999, path: "national-flags/ch/switzerland-civil-ensign.svg", design: "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.", source: "https://en.wikipedia.org/wiki/List_of_Swiss_flags" },
   ],
   "CI": [
-    { id: "ci-official-national", category: "official", name: "Flag of Côte d’Ivoire", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Côte d’Ivoire, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire" },
-    { id: "ci-current", category: "historical", name: "Flag of Côte d’Ivoire", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Côte d’Ivoire, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire" },
+    { id: "ci-official-national", category: "official", name: "Flag of Ivory Coast", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Ivory Coast, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast" },
+    { id: "ci-current", category: "historical", name: "Flag of Ivory Coast", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "Vertical bands of orange, white and green — orange for the northern savanna and the country's future, white for peace, green for the southern forests and hope.", source: "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast" },
+    { id: "ci-french", category: "historical", name: "Flag of France", from: 1893, to: 1959, sovereign: "France", path: "national-flags/ci/ci-french.svg", design: "The French Tricolour, flown over Ivory Coast under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
+    { id: "ci-arms", category: "coatofarms", name: "Coat of arms of Ivory Coast", from: 1960, to: 9999, path: "national-flags/ci/ci-arms.svg", design: "A rising sun over an elephant's head, above a banner with the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
   ],
   "CL": [
     { id: "cl-official-national", category: "official", name: "Flag of Chile", from: 1817, to: 9999, primary: true, path: "flags/cl.svg", design: "The national flag of Chile, in the form adopted in 1817.", source: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
@@ -618,8 +620,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fr-passport", category: "passport", name: "French passport", path: "national-flags/fr/france-passport.svg", design: "A burgundy cover reading UNION EUROPÉENNE above RÉPUBLIQUE FRANÇAISE, with the republic's emblem in gold.", source: "https://en.wikipedia.org/wiki/French_passport" },
   ],
   "GA": [
-    { id: "ga-official-national", category: "official", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "The national flag of Gabon, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
-    { id: "ga-current", category: "historical", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "The national flag of Gabon, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
+    { id: "ga-official-national", category: "official", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "The national flag of Gabon, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
+    { id: "ga-current", category: "historical", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "Horizontal bands of green, yellow and blue — green for the country's forests, yellow for the equator and the sun, blue for the sea.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
+    { id: "ga-french", category: "historical", name: "Flag of France", from: 1910, to: 1960, sovereign: "France", path: "national-flags/ga/ga-french.svg", design: "The French Tricolour, flown over Gabon under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
+    { id: "ga-arms", category: "coatofarms", name: "Coat of arms of Gabon", from: 1960, to: 9999, path: "national-flags/ga/ga-arms.svg", design: "A black shield with golden discs and a ship, supported by two panthers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon" },
   ],
   "GB": [
     { id: "gb-official-national", category: "official", name: "Union Flag", from: 1801, to: 9999, primary: true, path: "flags/gb.svg", design: "The national flag of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Union_Jack" },
@@ -1180,8 +1184,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "na-arms", category: "coatofarms", name: "Coat of arms of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-arms.svg", design: "The national arms, adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
   ],
   "NE": [
-    { id: "ne-official-national", category: "official", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
-    { id: "ne-current", category: "historical", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
+    { id: "ne-official-national", category: "official", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
+    { id: "ne-current", category: "historical", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "Orange, white and green horizontal bands with an orange disc at the centre — orange for the Sahara, white for purity, green for the fertile south, the disc for the sun.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
+    { id: "ne-french", category: "historical", name: "Flag of France", from: 1922, to: 1959, sovereign: "France", path: "national-flags/ne/ne-french.svg", design: "The French Tricolour, flown over Niger under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
+    { id: "ne-arms", category: "coatofarms", name: "Coat of arms of Niger", from: 1960, to: 9999, path: "national-flags/ne/ne-arms.svg", design: "A green shield bearing a sun, a spear and swords, millet and a zebu head, flanked by four flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger" },
   ],
   "NG": [
     { id: "ng-official-national", category: "official", name: "Flag of Nigeria", from: 1960, to: 9999, primary: true, path: "flags/ng.svg", design: "The national flag of Nigeria, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Nigeria" },
@@ -1534,12 +1540,17 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sz-current", category: "historical", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag of Eswatini, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
   ],
   "TD": [
-    { id: "td-official-national", category: "official", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
-    { id: "td-current", category: "historical", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+    { id: "td-official-national", category: "official", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+    { id: "td-current", category: "historical", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "Vertical bands of blue, yellow and red — blue for the sky and hope, yellow for the sun and the desert, red for progress and sacrifice.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
+    { id: "td-french", category: "historical", name: "Flag of France", from: 1920, to: 1959, sovereign: "France", path: "national-flags/td/td-french.svg", design: "The French Tricolour, flown over Chad under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
+    { id: "td-arms", category: "coatofarms", name: "Coat of arms of Chad", from: 1960, to: 9999, path: "national-flags/td/td-arms.svg", design: "A shield of blue and gold waves beneath a rising sun, supported by a goat and a lion.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad" },
   ],
   "TG": [
-    { id: "tg-official-national", category: "official", name: "Flag of Togo", from: 1960, to: 9999, primary: true, path: "flags/tg.svg", design: "The national flag of Togo, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
-    { id: "tg-current", category: "historical", name: "Flag of Togo", from: 1960, to: 9999, primary: true, path: "flags/tg.svg", design: "The national flag of Togo, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    { id: "tg-official-national", category: "official", name: "Flag of Togo", from: 1960, to: 9999, primary: true, path: "flags/tg.svg", design: "The national flag of Togo, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    { id: "tg-current", category: "historical", name: "Flag of Togo", from: 1960, to: 9999, primary: true, path: "flags/tg.svg", design: "Five green and yellow stripes with a white star on a red canton — green for hope and agriculture, yellow for mineral wealth and labour, red for the blood of independence, the star for life and purity.", source: "https://en.wikipedia.org/wiki/Flag_of_Togo" },
+    { id: "tg-french", category: "historical", name: "Flag of France", from: 1916, to: 1960, sovereign: "France", path: "national-flags/tg/tg-french.svg", design: "The French Tricolour, flown over Togo under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
+    { id: "tg-german", category: "historical", name: "Flag of the German Empire", from: 1884, to: 1914, sovereign: "the German Empire", path: "national-flags/tg/tg-german.svg", design: "The flag of the German Empire, which held the territory as the colony of Togoland until 1914.", source: "https://en.wikipedia.org/wiki/Togoland" },
+    { id: "tg-arms", category: "coatofarms", name: "Coat of arms of Togo", from: 1960, to: 9999, path: "national-flags/tg/tg-arms.svg", design: "Two red lions flanking a golden shield lettered RT, beneath two national flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo" },
   ],
   "TH": [
     { id: "th-official-national", category: "official", name: "Flag of Thailand", from: 1917, to: 9999, primary: true, path: "flags/th.svg", design: "The national flag of Thailand, in the form adopted in 1917.", source: "https://en.wikipedia.org/wiki/Flag_of_Thailand" },
@@ -1842,6 +1853,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BY": { year: 1991, event: "Independence from the Soviet Union declared 25 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Belarus" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CD": { year: 1960, event: "The Democratic Republic of the Congo became independent from Belgium on 30 June 1960", source: "https://en.wikipedia.org/wiki/History_of_the_Democratic_Republic_of_the_Congo" },
+  "CI": { year: 1960, event: "Ivory Coast became independent from France on 7 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Ivory_Coast" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
   "CM": { year: 1960, event: "French Cameroun became independent on 1 January 1960", note: "The southern part of British Cameroons joined it in October 1961 to form a federal republic; the northern part joined Nigeria.", source: "https://en.wikipedia.org/wiki/History_of_Cameroon" },
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
@@ -1852,6 +1864,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
+  "GA": { year: 1960, event: "Gabon became independent from France on 17 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Gabon" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
@@ -1879,6 +1892,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "MZ": { year: 1975, event: "Independence from Portugal, 25 June 1975", source: "https://en.wikipedia.org/wiki/Mozambican_War_of_Independence" },
   "NA": { year: 1990, event: "Namibia became independent on 21 March 1990, ending South African administration of the territory", note: "South Africa administered the territory under a League of Nations mandate from 1920; its continued rule after the UN terminated the mandate in 1966 was ruled illegal by the International Court of Justice in 1971", source: "https://en.wikipedia.org/wiki/History_of_Namibia" },
+  "NE": { year: 1960, event: "Niger became independent from France on 3 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Niger" },
   "NI": { year: 1838, event: "Nicaragua declared independence from the Federal Republic of Central America on 30 April 1838", note: "Central America had separated from Spain in 1821, belonged to the First Mexican Empire until 1823, and then formed the federation.", source: "https://en.wikipedia.org/wiki/History_of_Nicaragua" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "OM": { year: 1650, event: "Portuguese rule over the Omani coast ended when Sultan bin Saif expelled them from Muscat in 1650", note: "Oman was never a European colony in the later sense: the Portuguese held only the coastal forts from 1507, and the country has been independent since, ruled by the Al Said dynasty from 1744.", source: "https://en.wikipedia.org/wiki/History_of_Oman" },
@@ -1892,6 +1906,8 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "SN": { year: 1960, event: "Senegal became independent in 1960, first within the Mali Federation (20 June) and then as a separate republic on 20 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Senegal" },
   "SR": { year: 1975, event: "Independence from the Netherlands, 25 November 1975", source: "https://en.wikipedia.org/wiki/History_of_Suriname" },
   "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
+  "TD": { year: 1960, event: "Chad became independent from France on 11 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Chad" },
+  "TG": { year: 1960, event: "Togo became independent from France on 27 April 1960", source: "https://en.wikipedia.org/wiki/History_of_Togo" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
   "TT": { year: 1962, event: "Independence from the United Kingdom, 31 August 1962", note: "Trinidad and Tobago became a republic in 1976.", source: "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
@@ -2064,6 +2080,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Belarus — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Belarus" },
     ],
   },
+  "ci-arms": {
+    description: "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
+    sources: [
+      { title: "Coat of arms of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
+    ],
+  },
   "cl-arms": {
     description: "Designed by the English artist Charles Wood Taylor and adopted in 1834, the shield repeats the flag: blue above, red below, with the single five-pointed white star. The supporters are the two animals of the country itself — the Andean condor and the huemul, the southern deer — each wearing a naval crown for Chile's victories at sea. The three-feathered crest in blue, white and red reproduces the plume that heads of state wore on their hats, and the motto on the scroll, added in 1920, reads \"Por la Razón o la Fuerza\" — \"By reason or force\".",
     sources: [
@@ -2164,6 +2186,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The burgundy colour and the EUROPEAN UNION line above the country's own name are the common format agreed by member states, so a French passport announces the union before the republic. The gold device is the unofficial emblem of the French Republic — the lictor's fasces on oak and laurel — which the state uses in place of a coat of arms it has never formally adopted.",
     sources: [
       { title: "French passport — Wikipedia", url: "https://en.wikipedia.org/wiki/French_passport" },
+    ],
+  },
+  "ga-arms": {
+    description: "The black shield bears three golden discs for the country's mineral wealth and, below, a ship under sail for the timber trade that built its economy; a green okoumé tree rises behind. Two panthers guard it. Two mottoes appear: the Latin Uniti Progrediemur — “united we shall go forward” — on the scroll above, and the French Union, Travail, Justice — “Union, Work, Justice” — below.",
+    sources: [
+      { title: "Coat of arms of Gabon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon" },
     ],
   },
   "gb-1801": {
@@ -2437,6 +2465,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     ],
   },
+  "ne-arms": {
+    description: "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of Niger — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger" },
+    ],
+  },
   "ni-arms": {
     description: "Nicaragua's arms are the federation's arms, kept: the triangle is equality, the rainbow across the top is peace, the Phrygian cap beneath it is liberty, and the five volcanoes standing between two seas are the union and brotherhood of the five Central American countries — not five Nicaraguan mountains. Four of those five states went their own way in 1838; the emblem still counts them all.",
     sources: [
@@ -2573,6 +2607,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
     sources: [
       { title: "Coat of arms of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
+    ],
+  },
+  "td-arms": {
+    description: "The shield's jagged blue and gold bars are the waters of Lake Chad; above rises a sun, for the new beginning of independence. A goat of the desert north and a lion of the savanna south support the shield — the two halves of the country — each standing over a red arrow. The ribbon reads Unité, Travail, Progrès — “Unity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of Chad — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad" },
+    ],
+  },
+  "tg-arms": {
+    description: "Two red lions rear up on either side, for the courage of the Togolese people, each holding a bow and arrow. Between them a golden shield carries the letters RT, for République Togolaise, and two national flags fly above. The motto reads Travail, Liberté, Patrie — “Work, Liberty, Homeland.”",
+    sources: [
+      { title: "Coat of arms of Togo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo" },
     ],
   },
   "th-emblem": {

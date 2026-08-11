@@ -3143,22 +3143,63 @@
           "category": "official",
           "from": 1959,
           "to": 9999,
-          "name": "Flag of Côte d’Ivoire",
+          "name": "Flag of Ivory Coast",
           "reuse": "flags/ci.svg",
-          "design": "The national flag of Côte d’Ivoire, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire"
+          "design": "The national flag of Ivory Coast, adopted in 1959.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast"
         },
         {
           "id": "ci-current",
           "category": "historical",
           "from": 1959,
           "to": 9999,
-          "name": "Flag of Côte d’Ivoire",
+          "name": "Flag of Ivory Coast",
           "reuse": "flags/ci.svg",
-          "design": "The national flag of Côte d’Ivoire, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire"
+          "design": "Vertical bands of orange, white and green — orange for the northern savanna and the country's future, white for peace, green for the southern forests and hope.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast"
+        },
+        {
+          "id": "ci-french",
+          "category": "historical",
+          "from": 1893,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "ci/ci-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Ivory Coast under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ci-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Ivory Coast",
+          "commons": "Coat of arms of Ivory Coast.svg",
+          "file": "ci/ci-arms.svg",
+          "design": "A rising sun over an elephant's head, above a banner with the country's name.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast",
+          "meaning": {
+            "description": "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ivory Coast — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast"
+              }
+            ]
+          },
+          "sha256": "476416ceec310070767ab649918bb3fb2a09c389c4bf55de029bc042fe59cf47",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Ivory Coast became independent from France on 7 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Ivory_Coast"
+      }
     },
     "CL": {
       "flags": [
@@ -5606,7 +5647,7 @@
           "to": 9999,
           "name": "Flag of Gabon",
           "reuse": "flags/ga.svg",
-          "design": "The national flag of Gabon, in the form adopted in 1960.",
+          "design": "The national flag of Gabon, adopted in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Gabon"
         },
         {
@@ -5616,10 +5657,51 @@
           "to": 9999,
           "name": "Flag of Gabon",
           "reuse": "flags/ga.svg",
-          "design": "The national flag of Gabon, in the form adopted in 1960.",
+          "design": "Horizontal bands of green, yellow and blue — green for the country's forests, yellow for the equator and the sun, blue for the sea.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Gabon"
+        },
+        {
+          "id": "ga-french",
+          "category": "historical",
+          "from": 1910,
+          "to": 1960,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "ga/ga-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Gabon under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ga-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Gabon",
+          "commons": "Coat of arms of Gabon.svg",
+          "file": "ga/ga-arms.svg",
+          "design": "A black shield with golden discs and a ship, supported by two panthers.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon",
+          "meaning": {
+            "description": "The black shield bears three golden discs for the country's mineral wealth and, below, a ship under sail for the timber trade that built its economy; a green okoumé tree rises behind. Two panthers guard it. Two mottoes appear: the Latin Uniti Progrediemur — “united we shall go forward” — on the scroll above, and the French Union, Travail, Justice — “Union, Work, Justice” — below.",
+            "sources": [
+              {
+                "title": "Coat of arms of Gabon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon"
+              }
+            ]
+          },
+          "sha256": "3f699d042834461f6cc57cfde29c4b709cdb04969ee725cacf598b491fd19318",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Gabon became independent from France on 17 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Gabon"
+      }
     },
     "GB": {
       "flags": [
@@ -11542,7 +11624,7 @@
           "to": 9999,
           "name": "Flag of Niger",
           "reuse": "flags/ne.svg",
-          "design": "The national flag of Niger, in the form adopted in 1959.",
+          "design": "The national flag of Niger, adopted in 1959.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Niger"
         },
         {
@@ -11552,10 +11634,51 @@
           "to": 9999,
           "name": "Flag of Niger",
           "reuse": "flags/ne.svg",
-          "design": "The national flag of Niger, in the form adopted in 1959.",
+          "design": "Orange, white and green horizontal bands with an orange disc at the centre — orange for the Sahara, white for purity, green for the fertile south, the disc for the sun.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Niger"
+        },
+        {
+          "id": "ne-french",
+          "category": "historical",
+          "from": 1922,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "ne/ne-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Niger under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ne-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Niger",
+          "commons": "Coat of arms of Niger.svg",
+          "file": "ne/ne-arms.svg",
+          "design": "A green shield bearing a sun, a spear and swords, millet and a zebu head, flanked by four flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger",
+          "meaning": {
+            "description": "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Niger — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger"
+              }
+            ]
+          },
+          "sha256": "eaa0d764e7b203e9bb78568222ae83b05dc8e81efd71258713aa9c0e5782044b",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Niger became independent from France on 3 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Niger"
+      }
     },
     "NG": {
       "flags": [
@@ -15170,7 +15293,7 @@
           "to": 9999,
           "name": "Flag of Chad",
           "reuse": "flags/td.svg",
-          "design": "The national flag of Chad, in the form adopted in 1959.",
+          "design": "The national flag of Chad, adopted in 1959.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Chad"
         },
         {
@@ -15180,10 +15303,51 @@
           "to": 9999,
           "name": "Flag of Chad",
           "reuse": "flags/td.svg",
-          "design": "The national flag of Chad, in the form adopted in 1959.",
+          "design": "Vertical bands of blue, yellow and red — blue for the sky and hope, yellow for the sun and the desert, red for progress and sacrifice.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Chad"
+        },
+        {
+          "id": "td-french",
+          "category": "historical",
+          "from": 1920,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "td/td-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Chad under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "td-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Chad",
+          "commons": "Coat of arms of Chad.svg",
+          "file": "td/td-arms.svg",
+          "design": "A shield of blue and gold waves beneath a rising sun, supported by a goat and a lion.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad",
+          "meaning": {
+            "description": "The shield's jagged blue and gold bars are the waters of Lake Chad; above rises a sun, for the new beginning of independence. A goat of the desert north and a lion of the savanna south support the shield — the two halves of the country — each standing over a red arrow. The ribbon reads Unité, Travail, Progrès — “Unity, Work, Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Chad — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad"
+              }
+            ]
+          },
+          "sha256": "dfc04bf318c6cbf083e5edac91c3fb6f3eb3038172065d9f558c159b3480f7be",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Chad became independent from France on 11 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Chad"
+      }
     },
     "TG": {
       "flags": [
@@ -15194,7 +15358,7 @@
           "to": 9999,
           "name": "Flag of Togo",
           "reuse": "flags/tg.svg",
-          "design": "The national flag of Togo, in the form adopted in 1960.",
+          "design": "The national flag of Togo, adopted in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Togo"
         },
         {
@@ -15204,10 +15368,65 @@
           "to": 9999,
           "name": "Flag of Togo",
           "reuse": "flags/tg.svg",
-          "design": "The national flag of Togo, in the form adopted in 1960.",
+          "design": "Five green and yellow stripes with a white star on a red canton — green for hope and agriculture, yellow for mineral wealth and labour, red for the blood of independence, the star for life and purity.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Togo"
+        },
+        {
+          "id": "tg-french",
+          "category": "historical",
+          "from": 1916,
+          "to": 1960,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "tg/tg-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Togo under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tg-german",
+          "category": "historical",
+          "from": 1884,
+          "to": 1914,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "tg/tg-german.svg",
+          "sovereign": "the German Empire",
+          "design": "The flag of the German Empire, which held the territory as the colony of Togoland until 1914.",
+          "source": "https://en.wikipedia.org/wiki/Togoland",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tg-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Togo",
+          "commons": "Armoiries du Togo.svg",
+          "file": "tg/tg-arms.svg",
+          "design": "Two red lions flanking a golden shield lettered RT, beneath two national flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo",
+          "meaning": {
+            "description": "Two red lions rear up on either side, for the courage of the Togolese people, each holding a bow and arrow. Between them a golden shield carries the letters RT, for République Togolaise, and two national flags fly above. The motto reads Travail, Liberté, Patrie — “Work, Liberty, Homeland.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Togo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo"
+              }
+            ]
+          },
+          "sha256": "c531fcbd21f17e406c0fbcf8a02796dab205bc6535fb2e24169948a1e8723089",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Togo became independent from France on 27 April 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Togo"
+      }
     },
     "TH": {
       "flags": [
