@@ -2435,7 +2435,7 @@
           "to": 9999,
           "name": "Flag of Botswana",
           "reuse": "flags/bw.svg",
-          "design": "The national flag of Botswana, in the form adopted in 1966.",
+          "design": "The national flag of Botswana, adopted in 1966.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Botswana"
         },
         {
@@ -2445,10 +2445,77 @@
           "to": 9999,
           "name": "Flag of Botswana",
           "reuse": "flags/bw.svg",
-          "design": "The national flag of Botswana, in the form adopted in 1966.",
+          "design": "A light-blue field crossed by a black band edged in white — the blue for water and the sky, the black and white for the country's people and for racial harmony.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Botswana"
+        },
+        {
+          "id": "bw-uk",
+          "category": "historical",
+          "from": 1885,
+          "to": 1966,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "bw/bw-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Britain governed the territory as the Bechuanaland Protectorate.",
+          "source": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bw-bdf",
+          "category": "military",
+          "from": 1977,
+          "to": 9999,
+          "name": "Flag of the Botswana Defence Force",
+          "commons": "Flag of the Botswana Defence Force.svg",
+          "file": "bw/bw-bdf.svg",
+          "design": "The flag of the Botswana Defence Force, formed in 1977.",
+          "source": "https://en.wikipedia.org/wiki/Botswana_Defence_Force",
+          "sha256": "6b223e916891cd6f08d068d689f19de837b1f3eded1421ff2dedbb30de2bce5a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bw-president",
+          "category": "standard",
+          "from": 1966,
+          "to": 9999,
+          "name": "Presidential standard of Botswana",
+          "commons": "Flag of the President of Botswana.svg",
+          "file": "bw/bw-president.svg",
+          "design": "A light-blue field bearing the national arms — the standard of the President of Botswana.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Botswana",
+          "sha256": "3e1e538a86d35f5bce45cfae62b704ce89bab45e9fab1b9ef09fa2e406758cea",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bw-arms",
+          "category": "coatofarms",
+          "from": 1966,
+          "to": 9999,
+          "name": "Coat of arms of Botswana",
+          "commons": "Coat of arms of Botswana.svg",
+          "file": "bw/bw-arms.svg",
+          "design": "The national arms, granted in 1966.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana",
+          "meaning": {
+            "description": "The shield is a Batswana ox-hide shield. Across its centre three cogwheels stand for industry; below them three wavy blue bands stand for water — the country's scarcest and most prized resource, the same idea the motto names. The bull's head at the foot is for the cattle on which Botswana's economy was built. Two zebras support the shield — their black-and-white a quiet emblem of racial harmony — one holding a head of sorghum for agriculture, the other an elephant's tusk for the country's wildlife and ivory. The single word on the ribbon, Pula, means “rain” (and “blessings,” and is the name of the currency): in a country three-quarters desert, rain is the highest blessing.",
+            "sources": [
+              {
+                "title": "Coat of arms of Botswana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana"
+              }
+            ]
+          },
+          "sha256": "ba86a63cfd2dc4f73fed598b8bdff64febd372a639acbaaf4cb1f95fb526e6d1",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1966,
+        "event": "Botswana became independent from the United Kingdom on 30 September 1966, ending the Bechuanaland Protectorate",
+        "source": "https://en.wikipedia.org/wiki/History_of_Botswana"
+      }
     },
     "BY": {
       "flags": [
@@ -9627,7 +9694,7 @@
           "to": 9999,
           "name": "Flag of Madagascar",
           "reuse": "flags/mg.svg",
-          "design": "The national flag of Madagascar, in the form adopted in 1958.",
+          "design": "The national flag of Madagascar, adopted in 1958.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Madagascar"
         },
         {
@@ -9637,10 +9704,49 @@
           "to": 9999,
           "name": "Flag of Madagascar",
           "reuse": "flags/mg.svg",
-          "design": "The national flag of Madagascar, in the form adopted in 1958.",
+          "design": "A white and red vertical band beside horizontal red-over-green stripes, adopted in 1958 during the transition to independence. The red and white recall the Merina monarchy; green is often taken for the coastal peoples.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Madagascar"
+        },
+        {
+          "id": "mg-french",
+          "category": "historical",
+          "from": 1896,
+          "to": 1958,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "mg/mg-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Madagascar as a French colony from the 1896 annexation until the 1958 flag.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Madagascar",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mg-arms",
+          "category": "coatofarms",
+          "name": "Emblem of Madagascar",
+          "commons": "Seal of Madagascar.svg",
+          "file": "mg/mg-arms.svg",
+          "design": "The national emblem of Madagascar.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Madagascar",
+          "meaning": {
+            "description": "At the centre of the disc is the outline of the island itself, and below it the head of a zebu, the humped ox that is the mainstay of Malagasy life and wealth. From the map rays spread outward, so the device reads at once as a rising sun and as the fronds of the ravinala, the “traveller's tree” that is the island's signature plant. Sprigs of rice frame the foot, for the staple crop, and the ribbon carries the country's name, Repoblikan'i Madagasikara.",
+            "sources": [
+              {
+                "title": "Emblem of Madagascar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Madagascar"
+              }
+            ]
+          },
+          "sha256": "79c1a4093cffda7d748710b84bef80adec7c3c773d46f1d5d4eb1e1fd6771371",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Madagascar became fully independent from France on 26 June 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Madagascar"
+      }
     },
     "MH": {
       "flags": [
@@ -10834,7 +10940,7 @@
           "to": 9999,
           "name": "Flag of Namibia",
           "reuse": "flags/na.svg",
-          "design": "The national flag of Namibia, in the form adopted in 1990.",
+          "design": "The national flag of Namibia, adopted at independence in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Namibia"
         },
         {
@@ -10844,10 +10950,105 @@
           "to": 9999,
           "name": "Flag of Namibia",
           "reuse": "flags/na.svg",
-          "design": "The national flag of Namibia, in the form adopted in 1990.",
+          "design": "A red diagonal band edged in white dividing a blue and a green triangle, with a golden sun in the blue — adopted at independence in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Namibia"
+        },
+        {
+          "id": "na-sa",
+          "category": "historical",
+          "from": 1928,
+          "to": 1990,
+          "name": "Flag of South Africa (1928–1994)",
+          "commons": "Flag of South Africa (1928–1994, bright colors).svg",
+          "file": "na/na-sa.svg",
+          "sovereign": "South Africa",
+          "design": "The orange-white-blue flag of the Union, later Republic, of South Africa, which administered the territory as South West Africa.",
+          "source": "https://en.wikipedia.org/wiki/South_West_Africa",
+          "sha256": "54edacfc75a66e4708a3ab5eae49694cdf98ed66a96219347c0a27708b1cd4dc",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "na-german",
+          "category": "historical",
+          "from": 1884,
+          "to": 1915,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "na/na-german.svg",
+          "sovereign": "the German Empire",
+          "design": "The flag of the German Empire, which held the territory as German South-West Africa until 1915.",
+          "source": "https://en.wikipedia.org/wiki/German_South-West_Africa",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "na-ndf",
+          "category": "military",
+          "from": 1990,
+          "to": 9999,
+          "name": "Flag of the Namibian Defence Force",
+          "commons": "Flag of the Namibian Defence Force.svg",
+          "file": "na/na-ndf.svg",
+          "design": "The flag of the Namibian Defence Force.",
+          "source": "https://en.wikipedia.org/wiki/Namibian_Defence_Force",
+          "sha256": "038909dd7beeaf5eb90192fa0ac63c0831959c04904a8149058731fcfe2fcaba",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "na-jack",
+          "category": "maritime",
+          "from": 1990,
+          "to": 9999,
+          "name": "Naval jack of Namibia",
+          "commons": "Naval Jack of Namibia.svg",
+          "file": "na/na-jack.svg",
+          "design": "A white field bearing the national arms — the naval jack of Namibia.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Namibia",
+          "sha256": "85cd2b28443452b76678ba3085de9f87665049e8d081006b7cb08598e6a58d6c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "na-president",
+          "category": "standard",
+          "from": 1990,
+          "to": 9999,
+          "name": "Presidential standard of Namibia",
+          "commons": "Flag of the President of Namibia.svg",
+          "file": "na/na-president.svg",
+          "design": "The standard of the President of Namibia.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Namibia",
+          "sha256": "eeedc768e2a6472ec50b6a83e44f774e7cb5432d68dcd8730f21090f8bfe0aaa",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "na-arms",
+          "category": "coatofarms",
+          "from": 1990,
+          "to": 9999,
+          "name": "Coat of arms of Namibia",
+          "commons": "Coat of arms of Namibia.svg",
+          "file": "na/na-arms.svg",
+          "design": "The national arms, adopted at independence in 1990.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia",
+          "meaning": {
+            "description": "The shield carries the design of the national flag, its gold diamond pattern reading as the country's diamonds and mineral wealth. An African fish eagle rises above it as the crest. Two oryx (gemsbok) support the shield, animals prized for their courage, elegance and pride. On the golden sand of the compartment — the Namib desert that gives the country its name — grows a Welwitschia mirabilis, the desert plant that lives for centuries and stands for fortitude and survival, carried over from the former arms of South-West Africa. The motto reads “Unity, Liberty, Justice.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Namibia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia"
+              }
+            ]
+          },
+          "sha256": "c7141dc1f7d3a6ceb8da73daca4aec971b8df4504229e4a27a178690006dadce",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1990,
+        "event": "Namibia became independent on 21 March 1990, ending South African administration of the territory",
+        "note": "South Africa administered the territory under a League of Nations mandate from 1920; its continued rule after the UN terminated the mandate in 1966 was ruled illegal by the International Court of Justice in 1971",
+        "source": "https://en.wikipedia.org/wiki/History_of_Namibia"
+      }
     },
     "NE": {
       "flags": [
@@ -13228,7 +13429,7 @@
           "to": 9999,
           "name": "Flag of Rwanda",
           "reuse": "flags/rw.svg",
-          "design": "The national flag of Rwanda, in the form adopted in 2001.",
+          "design": "The national flag of Rwanda, adopted in 2001.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda"
         },
         {
@@ -13238,10 +13439,91 @@
           "to": 9999,
           "name": "Flag of Rwanda",
           "reuse": "flags/rw.svg",
-          "design": "The national flag of Rwanda, in the form adopted in 2001.",
+          "design": "Blue over yellow over green with a golden sun in the fly canton — adopted in 2001 to replace the red-yellow-green flag associated with the 1994 genocide.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda"
+        },
+        {
+          "id": "rw-1962",
+          "category": "historical",
+          "from": 1962,
+          "to": 2001,
+          "name": "Flag of Rwanda (1962–2001)",
+          "commons": "Flag of Rwanda (1961–2001).svg",
+          "file": "rw/rw-1962.svg",
+          "design": "A vertical red-yellow-green tricolour charged with a black letter R, flown from independence until 2001.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda",
+          "sha256": "b3063c3bd7372372d4ee727103610947e9043a8296925a1c7a95a00d41fcfa39",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "rw-belgium",
+          "category": "historical",
+          "from": 1916,
+          "to": 1962,
+          "name": "Flag of Belgium",
+          "commons": "Flag of Belgium (civil).svg",
+          "file": "rw/rw-belgium.svg",
+          "sovereign": "Belgium",
+          "design": "The flag of Belgium, which administered the territory as the League of Nations mandate, then UN trust territory, of Ruanda-Urundi.",
+          "source": "https://en.wikipedia.org/wiki/Ruanda-Urundi",
+          "sha256": "b3642c9ad66f6f5ddbfe6e9eb32a06b4aeb0e9801e45ad90d5ef70a86eafa05e",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "rw-german",
+          "category": "historical",
+          "from": 1890,
+          "to": 1916,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "rw/rw-german.svg",
+          "sovereign": "the German Empire",
+          "design": "The flag of the German Empire, which held the territory as part of German East Africa until 1916.",
+          "source": "https://en.wikipedia.org/wiki/German_East_Africa",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "rw-president",
+          "category": "standard",
+          "from": 2001,
+          "to": 9999,
+          "name": "Presidential standard of Rwanda",
+          "commons": "Flag of the President of Rwanda.svg",
+          "file": "rw/rw-president.svg",
+          "design": "A white field bearing the national emblem — the standard of the President of Rwanda.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda",
+          "sha256": "f2989de794d799378bcc2f60a93277f3cf5d9f0144f20cf95dd0ba77684d78b2",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "rw-arms",
+          "category": "coatofarms",
+          "from": 2001,
+          "to": 9999,
+          "name": "Emblem of Rwanda",
+          "commons": "Coat of arms of Rwanda.svg",
+          "file": "rw/rw-arms.svg",
+          "design": "The national emblem, adopted in 2001 in the green, yellow and blue of the flag.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Rwanda",
+          "meaning": {
+            "description": "Rwanda's emblem replaced the older crossed-tools arms in 2001, in the colours of the new flag. Inside a ring closed by a traditional square knot — the knot standing for unity — sit the country's own devices: a stem of sorghum and a branch of coffee, the two staple crops, above a woven Rwandan basket (agaseke), itself an emblem of generosity. They rest on a cogwheel for industrial development, with the sun rising above; a Rwandan war-shield stands on each side to guard them. The ribbon below carries the motto Ubumwe, Umurimo, Gukunda Igihugu — “Unity, Work, Patriotism.”",
+            "sources": [
+              {
+                "title": "Emblem of Rwanda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Rwanda"
+              }
+            ]
+          },
+          "sha256": "d617ac2729159a05eaf54ba75f8748182600643147de178b9d784f7b7ecc28d3",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1962,
+        "event": "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory",
+        "source": "https://en.wikipedia.org/wiki/History_of_Rwanda"
+      }
     },
     "SA": {
       "flags": [
@@ -13966,7 +14248,7 @@
           "to": 9999,
           "name": "Flag of Senegal",
           "reuse": "flags/sn.svg",
-          "design": "The national flag of Senegal, in the form adopted in 1960.",
+          "design": "The national flag of Senegal, adopted in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Senegal"
         },
         {
@@ -13976,10 +14258,64 @@
           "to": 9999,
           "name": "Flag of Senegal",
           "reuse": "flags/sn.svg",
-          "design": "The national flag of Senegal, in the form adopted in 1960.",
+          "design": "A vertical green-yellow-red tricolour with a green five-pointed star at the centre — the pan-African colours, adopted when Senegal left the Mali Federation in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Senegal"
+        },
+        {
+          "id": "sn-mali",
+          "category": "historical",
+          "from": 1959,
+          "to": 1960,
+          "name": "Flag of the Mali Federation",
+          "commons": "Flag of Mali (1959–1961).svg",
+          "file": "sn/sn-mali.svg",
+          "design": "The flag of the Mali Federation, the short-lived union of Senegal and the Sudanese Republic that Senegal belonged to at independence — the same tricolour bearing a black kanaga figure in place of the star.",
+          "source": "https://en.wikipedia.org/wiki/Mali_Federation",
+          "sha256": "a00ae7677a6094750ac26b9bacc3fc93abb199a96febbe46431f05a19e260902",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sn-french",
+          "category": "historical",
+          "from": 1895,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "sn/sn-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Senegal as part of French West Africa.",
+          "source": "https://en.wikipedia.org/wiki/French_West_Africa",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sn-arms",
+          "category": "coatofarms",
+          "from": 1965,
+          "to": 9999,
+          "name": "Coat of arms of Senegal",
+          "commons": "Coat of arms of Senegal.svg",
+          "file": "sn/sn-arms.svg",
+          "design": "The national arms, adopted in 1965.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Senegal",
+          "meaning": {
+            "description": "The arms gather devices already used on earlier Senegalese emblems. On the left a golden lion — the lion of the Sudan, the country's totem and the name of its highest honour, the National Order of the Lion — walks above a green wavy band standing for the River Senegal. On the right stands a baobab, the tree native to the country. At the crest is the same five-pointed green star that appears on the national flag: a star of hope, and for the great majority of Senegalese the star of Islam.",
+            "sources": [
+              {
+                "title": "Coat of arms of Senegal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Senegal"
+              }
+            ]
+          },
+          "sha256": "a4035552231767efd5139f0d8a4aee92767a4dac932c0283c4d7e245d8c799a0",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Senegal became independent in 1960, first within the Mali Federation (20 June) and then as a separate republic on 20 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Senegal"
+      }
     },
     "SO": {
       "flags": [
