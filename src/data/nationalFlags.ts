@@ -476,8 +476,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cu-arms", category: "coatofarms", name: "Coat of arms of Cuba", from: 1906, to: 9999, path: "national-flags/cu/cuba-arms.svg", design: "A shield of three fields before a fasces crowned with a Phrygian cap, supported by an oak branch and a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
   ],
   "CV": [
-    { id: "cv-official-national", category: "official", name: "Flag of Cabo Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag of Cabo Verde, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cabo_Verde" },
-    { id: "cv-current", category: "historical", name: "Flag of Cabo Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag of Cabo Verde, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cabo_Verde" },
+    { id: "cv-official-national", category: "official", name: "Flag of Cape Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag, adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
+    { id: "cv-current", category: "historical", name: "Flag of Cape Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "A blue field with a white-and-red stripe and a ring of ten yellow stars for the ten islands — adopted in 1992, replacing the PAIGC-style flag when Cape Verde set its own course apart from Guinea-Bissau.", source: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
+    { id: "cv-1975", category: "historical", name: "Flag of Cape Verde (1975–1992)", from: 1975, to: 1992, path: "national-flags/cv/cv-1975.svg", design: "The first national flag — red, yellow and green with a black star in a wreath of maize — the shared emblem of the PAIGC, close to Guinea-Bissau's flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
+    { id: "cv-portuguese", category: "historical", name: "Flag of Portugal", from: 1879, to: 1975, sovereign: "Portugal", path: "national-flags/cv/cv-pt.svg", design: "The flag of Portugal, flown over the colony of Cape Verde.", source: "https://en.wikipedia.org/wiki/Cape_Verde" },
+    { id: "cv-arms", category: "coatofarms", name: "National emblem of Cape Verde", from: 1992, to: 9999, path: "national-flags/cv/cv-arms.svg", design: "A blue ring of ten stars around a plumb-bob, torch and triangle, above three chain links.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
   ],
   "CY": [
     { id: "cy-official-national", category: "official", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
@@ -716,8 +719,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gt-current", category: "historical", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag of Guatemala, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
   ],
   "GW": [
-    { id: "gw-official-national", category: "official", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag of Guinea-Bissau, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
-    { id: "gw-current", category: "historical", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag of Guinea-Bissau, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    { id: "gw-official-national", category: "official", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag, adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    { id: "gw-current", category: "historical", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "A red hoist band with a black star over yellow-and-green fields — the flag of the PAIGC that won independence, in the pan-African colours.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
+    { id: "gw-portuguese", category: "historical", name: "Flag of Portugal", from: 1879, to: 1974, sovereign: "Portugal", path: "national-flags/gw/gw-pt.svg", design: "The flag of Portugal, flown over the colony of Portuguese Guinea.", source: "https://en.wikipedia.org/wiki/Portuguese_Guinea" },
+    { id: "gw-arms", category: "coatofarms", name: "Emblem of Guinea-Bissau", from: 1973, to: 9999, path: "national-flags/gw/gw-arms.svg", design: "A black star above a scallop shell, between two olive branches, over the national motto.", source: "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau" },
   ],
   "GY": [
     { id: "gy-official-national", category: "official", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
@@ -1118,8 +1123,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mn-emblem", category: "coatofarms", name: "Emblem of Mongolia", from: 1992, to: 9999, path: "national-flags/mn/mongolia-emblem.svg", design: "The Soyombo above a wind horse on a blue disc, within a wheel of eternity, beneath a wish-granting jewel and above a lotus and mountains.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
   ],
   "MR": [
-    { id: "mr-official-national", category: "official", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag of Mauritania, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
-    { id: "mr-current", category: "historical", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag of Mauritania, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+    { id: "mr-official-national", category: "official", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+    { id: "mr-current", category: "historical", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "A green field with a gold crescent and star, framed by red stripes at top and bottom — the crescent and star for Islam, green and gold for the Sahara and its people, the red bands added in 2017 for the blood of those who defended the country.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+    { id: "mr-1959", category: "historical", name: "Flag of Mauritania (1959–2017)", from: 1959, to: 2017, path: "national-flags/mr/mr-1959.svg", design: "The original flag — a gold crescent and star on a plain green field, without the red stripes.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
+    { id: "mr-french", category: "historical", name: "Flag of France", from: 1904, to: 1959, sovereign: "France", path: "national-flags/mr/mr-french.svg", design: "The French Tricolour, flown over Mauritania as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_West_Africa" },
+    { id: "mr-arms", category: "coatofarms", name: "Seal of Mauritania", from: 2018, to: 9999, path: "national-flags/mr/mr-arms.svg", design: "A gold star and crescent between a date palm and an ear of millet, within a ring naming the republic.", source: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
   ],
   "MT": [
     { id: "mt-official-national", category: "official", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
@@ -1526,8 +1534,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sn-arms", category: "coatofarms", name: "Coat of arms of Senegal", from: 1965, to: 9999, path: "national-flags/sn/sn-arms.svg", design: "The national arms, adopted in 1965.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Senegal" },
   ],
   "SO": [
-    { id: "so-official-national", category: "official", name: "Flag of Somalia", from: 1960, to: 9999, primary: true, path: "flags/so.svg", design: "The national flag of Somalia, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
-    { id: "so-current", category: "historical", name: "Flag of Somalia", from: 1960, to: 9999, primary: true, path: "flags/so.svg", design: "The national flag of Somalia, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    { id: "so-official-national", category: "official", name: "Flag of Somalia", from: 1954, to: 9999, primary: true, path: "flags/so.svg", design: "The national flag, adopted in 1954.", source: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    { id: "so-current", category: "historical", name: "Flag of Somalia", from: 1954, to: 9999, primary: true, path: "flags/so.svg", design: "A white five-pointed star on a light-blue field — the Star of Unity, its points for the lands the Somali people inhabit; the blue was originally that of the United Nations, under whose trusteeship the flag was designed in 1954.", source: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
+    { id: "so-italian", category: "historical", name: "Flag of Italy", from: 1950, to: 1960, sovereign: "Italy", path: "national-flags/so/so-italy.svg", design: "The flag of Italy, which administered the south as the UN Trust Territory of Somalia until 1960.", source: "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland" },
+    { id: "so-british", category: "historical", name: "Flag of the United Kingdom", from: 1884, to: 1960, sovereign: "the United Kingdom", path: "national-flags/so/so-uk.svg", design: "The Union Flag, flown over British Somaliland in the north until 1960.", source: "https://en.wikipedia.org/wiki/British_Somaliland" },
+    { id: "so-arms", category: "coatofarms", name: "Coat of arms of Somalia", from: 1956, to: 9999, path: "national-flags/so/so-arms.svg", design: "A blue shield with the white star, held by two leopards on crossed spears.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia" },
   ],
   "SR": [
     { id: "sr-official-national", category: "official", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
@@ -1542,8 +1553,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ss-current", category: "historical", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag of South Sudan, in the form adopted in 2005.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
   ],
   "ST": [
-    { id: "st-official-national", category: "official", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "The national flag of São Tomé and Príncipe, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
-    { id: "st-current", category: "historical", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "The national flag of São Tomé and Príncipe, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" },
+    { id: "st-official-national", category: "official", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "The national flag, adopted at independence in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe" },
+    { id: "st-current", category: "historical", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "Green-yellow-green bands with a red hoist triangle and two black stars — the pan-African colours, the two stars for the two islands.", source: "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe" },
+    { id: "st-portuguese", category: "historical", name: "Flag of Portugal", from: 1879, to: 1975, sovereign: "Portugal", path: "national-flags/st/st-pt.svg", design: "The flag of Portugal, flown over the colony of São Tomé and Príncipe.", source: "https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe" },
+    { id: "st-arms", category: "coatofarms", name: "Coat of arms of São Tomé and Príncipe", from: 1975, to: 9999, path: "national-flags/st/st-arms.svg", design: "A cocoa-pod-shaped shield with a palm, held by a falcon and a parrot, beneath a blue star.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_São_Tomé_and_Príncipe" },
   ],
   "SV": [
     { id: "sv-official-national", category: "official", name: "Flag of El Salvador", from: 1912, to: 9999, primary: true, path: "flags/sv.svg", design: "The national flag of El Salvador, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_El_Salvador" },
@@ -1888,6 +1901,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
   "CR": { year: 1838, event: "Costa Rica withdrew from the Federal Republic of Central America on 14 November 1838 and became a sovereign state", note: "Central America had declared independence from Spain on 15 September 1821, but Costa Rica then belonged to the First Mexican Empire until 1823 and to the Central American federation until 1838; a republic was proclaimed in 1848.", source: "https://en.wikipedia.org/wiki/History_of_Costa_Rica" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
+  "CV": { year: 1975, event: "Cape Verde became independent from Portugal on 5 July 1975", source: "https://en.wikipedia.org/wiki/History_of_Cape_Verde" },
   "CY": { year: 1960, event: "Independence from the United Kingdom, 16 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Cyprus" },
   "DJ": { year: 1977, event: "Djibouti became independent from France on 27 June 1977, ending French rule over the Territory of the Afars and the Issas", source: "https://en.wikipedia.org/wiki/History_of_Djibouti" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
@@ -1899,6 +1913,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "GM": { year: 1965, event: "The Gambia became independent from the United Kingdom on 18 February 1965", source: "https://en.wikipedia.org/wiki/History_of_the_Gambia" },
   "GN": { year: 1958, event: "Guinea became independent from France on 2 October 1958, the only French African territory to vote No in the 1958 constitutional referendum", source: "https://en.wikipedia.org/wiki/History_of_Guinea" },
+  "GW": { year: 1974, event: "Guinea-Bissau's 1973 declaration of independence from Portugal was recognised by Portugal in 1974", source: "https://en.wikipedia.org/wiki/History_of_Guinea-Bissau" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "IE": { year: 1922, event: "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty", note: "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Irish_Free_State" },
@@ -1920,6 +1935,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "MG": { year: 1960, event: "Madagascar became fully independent from France on 26 June 1960", source: "https://en.wikipedia.org/wiki/History_of_Madagascar" },
   "MK": { year: 1991, event: "Macedonia declared independence from Yugoslavia on 8 September 1991", note: "It was admitted to the UN in 1993 as \"the former Yugoslav Republic of Macedonia\" and renamed North Macedonia in 2019 under the Prespa agreement with Greece.", source: "https://en.wikipedia.org/wiki/Independence_of_North_Macedonia" },
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
+  "MR": { year: 1960, event: "Mauritania became independent from France on 28 November 1960", source: "https://en.wikipedia.org/wiki/History_of_Mauritania" },
   "MT": { year: 1964, event: "Independence from the United Kingdom, 21 September 1964", note: "Malta became a republic in 1974.", source: "https://en.wikipedia.org/wiki/History_of_Malta" },
   "MW": { year: 1964, event: "Malawi became independent from the United Kingdom on 6 July 1964, ending the Nyasaland protectorate", source: "https://en.wikipedia.org/wiki/History_of_Malawi" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
@@ -1938,7 +1954,9 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "SI": { year: 1991, event: "Slovenia declared independence from Yugoslavia on 25 June 1991", source: "https://en.wikipedia.org/wiki/Independence_of_Slovenia" },
   "SL": { year: 1961, event: "Sierra Leone became independent from the United Kingdom on 27 April 1961", source: "https://en.wikipedia.org/wiki/History_of_Sierra_Leone" },
   "SN": { year: 1960, event: "Senegal became independent in 1960, first within the Mali Federation (20 June) and then as a separate republic on 20 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Senegal" },
+  "SO": { year: 1960, event: "Somalia became independent on 1 July 1960, uniting the former British Somaliland and the Italian Trust Territory of Somalia", source: "https://en.wikipedia.org/wiki/History_of_Somalia" },
   "SR": { year: 1975, event: "Independence from the Netherlands, 25 November 1975", source: "https://en.wikipedia.org/wiki/History_of_Suriname" },
+  "ST": { year: 1975, event: "São Tomé and Príncipe became independent from Portugal on 12 July 1975", source: "https://en.wikipedia.org/wiki/History_of_São_Tomé_and_Príncipe" },
   "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
   "SZ": { year: 1968, event: "Eswatini (then Swaziland) became independent from the United Kingdom on 6 September 1968", source: "https://en.wikipedia.org/wiki/History_of_Eswatini" },
   "TD": { year: 1960, event: "Chad became independent from France on 11 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Chad" },
@@ -2181,6 +2199,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
     ],
   },
+  "cv-arms": {
+    description: "Within a blue ring bearing the country's name, a torch and a triangle stand for freedom and national unity, and a golden plumb-bob for righteousness. Three chain links at the foot stand for the unity, equality and civil rights of a democratic society. The ten gold stars around the ring are the ten islands of the archipelago — the same ten stars as on the flag.",
+    sources: [
+      { title: "National emblem of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
+    ],
+  },
   "cy-arms": {
     description: "Every element is chosen, and two of them are the same idea twice: the white dove carrying an olive branch is peace, and the olive wreath framing the shield is peace again — a wish that carried real weight for an island independent in 1960 with a mixed Greek and Turkish population. The year 1960 records that independence from British rule. The shield's colour is the point most people miss: it is not gold but copper, specified as Pantone 1385 C, for the copper ore that Cyprus was famous for in antiquity — the island's name and the Latin word for copper, cuprum, are bound together.",
     sources: [
@@ -2299,6 +2323,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A white dove carrying an olive branch spreads its wings above a shield in the national red, yellow and green — the dove and branch for peace. The ribbon below carries the national motto, Travail, Justice, Solidarité — “Work, Justice, Solidarity.”",
     sources: [
       { title: "Coat of arms of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
+    ],
+  },
+  "gw-arms": {
+    description: "The black star is the Black Star of Africa, the emblem of the PAIGC that led the country to independence. Below it a scallop shell marks Guinea-Bissau's place on the West African coast, and two olive branches curve up on either side. The scroll reads Unidade, Luta, Progresso — “Unity, Struggle, Progress.”",
+    sources: [
+      { title: "Emblem of Guinea-Bissau — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau" },
     ],
   },
   "gy-arms": {
@@ -2505,6 +2535,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
     ],
   },
+  "mr-arms": {
+    description: "A gold star and crescent — the emblems of Islam — stand between a date palm and an ear of millet, the tree and the grain of the country, on the green of the flag. The ring around them names the Islamic Republic of Mauritania in Arabic and French.",
+    sources: [
+      { title: "Seal of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
+    ],
+  },
   "mt-arms": {
     description: "The shield is simply the national flag — white and red with the George Cross that the United Kingdom awarded to the whole island in 1942 for its endurance under siege. Above it a golden mural crown with a sally port and five turrets stands for the fortifications of Malta and the city walls, the crown of a fortress rather than a monarch. The olive branch and palm branch framing the shield are peace and, by the palm, the endurance of the islanders; the scroll beneath reads Repubblika ta' Malta. The arms were adopted in 1988, replacing a 1975 emblem — Prime Minister Dom Mintoff had earlier objected to the 1964 arms because he took the mural crown for a royal one, which it is not.",
     sources: [
@@ -2686,10 +2722,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Senegal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Senegal" },
     ],
   },
+  "so-arms": {
+    description: "A gold-framed blue shield carries the white five-pointed Star of Unity of the flag, and two leopards — a common animal and a recurring motif in Somali culture — support it, standing on two crossed spears, with palm fronds and a white ribbon below.",
+    sources: [
+      { title: "Coat of arms of Somalia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia" },
+    ],
+  },
   "sr-arms": {
     description: "Adopted at independence in 1975, the shield is halved. The sailing ship on the left is the country's colonial past as a source of cash crops and its present part in international trade; the royal palm on the right is the rainforest that covers two-thirds of Suriname and its agribusiness. The diamond between them is the mining industry, and the green five-pointed star at the centre stands for the unity of the country's many ethnic groups and for hope. The two supporters are indigenous figures — the arms were redrawn in 1975 specifically to acknowledge the indigenous population — and the scroll beneath reads Justitia, Pietas, Fides: Justice, Piety, Fidelity.",
     sources: [
       { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
+    ],
+  },
+  "st-arms": {
+    description: "A falcon and a grey parrot — birds of the islands — support a shield shaped like a cocoa pod, the crop on which the islands' economy was built, with a palm tree at its centre. A blue star crowns the arms. The ribbon reads Unidade, Disciplina, Trabalho — “Unity, Discipline, Work.”",
+    sources: [
+      { title: "Coat of arms of São Tomé and Príncipe — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_São_Tomé_and_Príncipe" },
     ],
   },
   "sv-arms": {
