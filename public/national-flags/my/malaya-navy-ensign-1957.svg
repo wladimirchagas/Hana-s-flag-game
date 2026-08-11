@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2128" height="1130.3502" viewBox="0 0 59.584 31.649805">
+  <path d="M0-5.8e-7V31.649805l59.584.000002V-5.8e-7z" style="fill:#fff;fill-opacity:1;stroke:none"/>
+  <path d="M27.9244 1.7e-7V13.847562L0 13.847573v3.956065l28.056-.0028v13.84897h3.528v-13.84617h28v-3.65277l-28 .000004V.00000417z" style="fill:#d0202a;fill-opacity:1;stroke:none"/>
+  <path d="M27.779332.00001342V13.725067L0 13.725078v.425792h28.056V1.7e-7z" style="fill:#000;fill-opacity:1;stroke:none"/>
+  <path style="fill:#ce1126;fill-opacity:1" d="M-.00000381 448.93289h993.21484v45.14613h-993.21484z"/>
+  <path style="fill:#ce1126;fill-opacity:1" d="M-.00000381 446.40469h993.21484v45.14613h-993.21484z"/>
+  <path style="fill:#ce1126;fill-opacity:1" d="M-.00000381 443.8765h993.21484v45.14613h-993.21484z"/>
+  <path style="fill:#ce1126;fill-opacity:1" d="M-.00000381 441.34833h993.21484v45.14613h-993.21484z"/>
+  <path style="fill:#ce1126;fill-opacity:1" d="M-.00000381 438.82013h993.21484v45.14613h-993.21484z"/>
+  <path style="fill:#fff" d="M-.00000381-.00000477h27.810015v13.905007h-27.810015z"/>
+  <path style="fill:#cc0001;fill-opacity:1" id="a" d="M.00012834-.00000477h27.810015v1.2640916H.00012834z"/>
+  <use xlink:href="#a" transform="matrix(35.71429 0 0 35.71429 -.00458727 436.29215)" width="744.09448" height="1052.3622"/>
+  <use xlink:href="#a" transform="matrix(35.71429 0 0 35.71429 -.00458727 433.76398)" width="744.09448" height="1052.3622"/>
+  <use xlink:href="#a" transform="matrix(35.71429 0 0 35.71429 -.00458727 431.23577)" width="744.09448" height="1052.3622"/>
+  <use xlink:href="#a" transform="matrix(35.71429 0 0 35.71429 -.00458727 428.7076)" width="744.09448" height="1052.3622"/>
+  <use xlink:href="#a" transform="matrix(35.71429 0 0 35.71429 -.00458727 426.17942)" width="744.09448" height="1052.3622"/>
+  <use style="fill:#cc0001" xlink:href="#a" transform="translate(-.00013199 2.5281843)" width="744.09448" height="1052.3622"/>
+  <use style="fill:#cc0001" xlink:href="#a" transform="translate(-.00013199 5.0563673)" width="744.09448" height="1052.3622"/>
+  <use style="fill:#cc0001" xlink:href="#a" transform="translate(-.00013199 7.5845506)" width="744.09448" height="1052.3622"/>
+  <use style="fill:#cc0001" xlink:href="#a" transform="translate(-.00013199 10.112734)" width="744.09448" height="1052.3622"/>
+  <path style="fill:#cc0001;fill-opacity:1" d="M-.00000381 12.640912h27.810015v1.2640916h-27.810015z"/>
+  <path style="fill:#010066;fill-opacity:1" d="M-.00000381-.00000477h13.905007v8.8486414h-13.905007z"/>
+  <path style="fill:#fc0;fill-rule:evenodd" d="M7.0699531 7.2199772C4.7987343 8.396442 2.2694896 6.6213285 2.4538953 4.1907079 2.6122859 2.1030605 4.8822907.54028947 7.0122599 1.5941877c-1.9946101-.2716279-3.5486084.9049887-3.5486084 2.8273432 0 1.624105 1.0762474 2.6594467 2.6253916 2.8850111.087575.047937.8109147-.054611.98091-.086565z"/>
+  <path style="fill:#fc0" transform="translate(.5944923 .41714021) scale(.02528)" d="m356.533 113.605 49.43-23.851-30.643 45.532 54.48 6.659-50.397 21.738 42.232 35.055-54.15-8.959L384.06 242.1l-40.709-36.811-14.344 52.979-14.345-52.979-40.708 36.811 16.574-52.321-54.15 8.959 42.232-35.055-50.396-21.738 54.479-6.659-30.644-45.534 49.43 23.853-1.161-54.872 28.689 46.79 28.689-46.79z"/>
+</svg>
