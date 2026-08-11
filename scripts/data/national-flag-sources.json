@@ -2937,22 +2937,119 @@
           "category": "official",
           "from": 2006,
           "to": 9999,
-          "name": "Flag of Congo (DRC)",
+          "name": "Flag of the Democratic Republic of the Congo",
           "reuse": "flags/cd.svg",
-          "design": "The national flag of Congo (DRC), in the form adopted in 2006.",
-          "source": "https://en.wikipedia.org/wiki/Congo_(DRC)"
+          "design": "The national flag, adopted in 2006.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
         },
         {
           "id": "cd-current",
           "category": "historical",
           "from": 2006,
           "to": 9999,
-          "name": "Flag of Congo (DRC)",
+          "name": "Flag of the Democratic Republic of the Congo",
           "reuse": "flags/cd.svg",
-          "design": "The national flag of Congo (DRC), in the form adopted in 2006.",
-          "source": "https://en.wikipedia.org/wiki/Congo_(DRC)"
+          "design": "A sky-blue field with a yellow star and a red diagonal stripe fimbriated in yellow — adopted in 2006, reviving the blue-and-star design of the independence era.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
+        },
+        {
+          "id": "cd-1997",
+          "category": "historical",
+          "from": 1997,
+          "to": 2006,
+          "name": "Flag of the Democratic Republic of the Congo (1997–2006)",
+          "commons": "Flag of the Democratic Republic of the Congo (1997–2006).svg",
+          "file": "cd/cd-1997.svg",
+          "design": "The flag flown after the fall of Mobutu, when the country resumed the name Democratic Republic of the Congo.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
+          "sha256": "ae3fd041d024988eecdd5b445edd3650e761ee992702a6441a37110f3f76238a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cd-zaire",
+          "category": "historical",
+          "from": 1971,
+          "to": 1997,
+          "name": "Flag of Zaire",
+          "commons": "Flag of Zaire (1971–1997).svg",
+          "file": "cd/cd-zaire.svg",
+          "design": "The green flag of Mobutu's Zaire — a yellow disc bearing an arm holding a flaming torch.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
+          "sha256": "4d9d167735254b34ee9d84e588a90767c5017f796a23315c33b5f7521218e7bd",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cd-1966",
+          "category": "historical",
+          "from": 1966,
+          "to": 1971,
+          "name": "Flag of the Democratic Republic of the Congo (1966–1971)",
+          "commons": "Flag of the Democratic Republic of the Congo (1966–1971).svg",
+          "file": "cd/cd-1966.svg",
+          "design": "The flag of the Second Congolese Republic.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
+          "sha256": "1cd045cf85e960ac60cad3138597feb0467b65c5e12b144255d22f4f9da39819",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cd-1963",
+          "category": "historical",
+          "from": 1963,
+          "to": 1966,
+          "name": "Flag of Congo-Léopoldville (1963–1966)",
+          "commons": "Flag of the Republic of the Congo (Léopoldville) (1963–1966).svg",
+          "file": "cd/cd-1963.svg",
+          "design": "The flag of the Republic of the Congo (Léopoldville) from 1963.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
+          "sha256": "0be6da23c446a60058e0f7b714f77d9e517434f4498ef2f7a5fdb1ad1fbd56d8",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cd-1960",
+          "category": "historical",
+          "from": 1960,
+          "to": 1963,
+          "name": "Flag of Congo-Léopoldville (1960–1963)",
+          "commons": "Flag of the Republic of the Congo (Léopoldville) (1960–1963).svg",
+          "file": "cd/cd-1960.svg",
+          "design": "The flag flown at independence in 1960 — blue with a large yellow star and six small stars for the provinces.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
+          "sha256": "71969af7c8fc191e4048852c5bbaafae72649bc241c38861cd068f8f4ef68f65",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cd-colonial",
+          "category": "historical",
+          "from": 1885,
+          "to": 1960,
+          "name": "Flag of the Congo Free State",
+          "commons": "Flag of the Congo Free State.svg",
+          "file": "cd/cd-colonial.svg",
+          "sovereign": "Belgium",
+          "design": "A blue field with a single gold star — the flag of the Congo Free State and, from 1908, of the Belgian Congo.",
+          "source": "https://en.wikipedia.org/wiki/Congo_Free_State",
+          "sha256": "c2982fda4448981a610609461c8c8149232dbc8c3455b76ce555e7d395a021c9",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cd-president",
+          "category": "standard",
+          "from": 2006,
+          "to": 9999,
+          "name": "Presidential standard of the Democratic Republic of the Congo",
+          "commons": "Flag of the President of the Democratic Republic of the Congo.svg",
+          "file": "cd/cd-president.svg",
+          "design": "The standard of the President of the Democratic Republic of the Congo.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
+          "sha256": "8144ab6937ca36a6056830441b90de01ce5d91df901bd28672205164e0ac784f",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "The Democratic Republic of the Congo became independent from Belgium on 30 June 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Democratic_Republic_of_the_Congo"
+      }
     },
     "CF": {
       "flags": [
@@ -3046,22 +3143,63 @@
           "category": "official",
           "from": 1959,
           "to": 9999,
-          "name": "Flag of Côte d’Ivoire",
+          "name": "Flag of Ivory Coast",
           "reuse": "flags/ci.svg",
-          "design": "The national flag of Côte d’Ivoire, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire"
+          "design": "The national flag of Ivory Coast, adopted in 1959.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast"
         },
         {
           "id": "ci-current",
           "category": "historical",
           "from": 1959,
           "to": 9999,
-          "name": "Flag of Côte d’Ivoire",
+          "name": "Flag of Ivory Coast",
           "reuse": "flags/ci.svg",
-          "design": "The national flag of Côte d’Ivoire, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/C%C3%B4te_d%E2%80%99Ivoire"
+          "design": "Vertical bands of orange, white and green — orange for the northern savanna and the country's future, white for peace, green for the southern forests and hope.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast"
+        },
+        {
+          "id": "ci-french",
+          "category": "historical",
+          "from": 1893,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "ci/ci-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Ivory Coast under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ci-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Ivory Coast",
+          "commons": "Coat of arms of Ivory Coast.svg",
+          "file": "ci/ci-arms.svg",
+          "design": "A rising sun over an elephant's head, above a banner with the country's name.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast",
+          "meaning": {
+            "description": "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
+            "sources": [
+              {
+                "title": "Coat of arms of Ivory Coast — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast"
+              }
+            ]
+          },
+          "sha256": "476416ceec310070767ab649918bb3fb2a09c389c4bf55de029bc042fe59cf47",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Ivory Coast became independent from France on 7 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Ivory_Coast"
+      }
     },
     "CL": {
       "flags": [
@@ -5509,7 +5647,7 @@
           "to": 9999,
           "name": "Flag of Gabon",
           "reuse": "flags/ga.svg",
-          "design": "The national flag of Gabon, in the form adopted in 1960.",
+          "design": "The national flag of Gabon, adopted in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Gabon"
         },
         {
@@ -5519,10 +5657,51 @@
           "to": 9999,
           "name": "Flag of Gabon",
           "reuse": "flags/ga.svg",
-          "design": "The national flag of Gabon, in the form adopted in 1960.",
+          "design": "Horizontal bands of green, yellow and blue — green for the country's forests, yellow for the equator and the sun, blue for the sea.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Gabon"
+        },
+        {
+          "id": "ga-french",
+          "category": "historical",
+          "from": 1910,
+          "to": 1960,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "ga/ga-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Gabon under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ga-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Gabon",
+          "commons": "Coat of arms of Gabon.svg",
+          "file": "ga/ga-arms.svg",
+          "design": "A black shield with golden discs and a ship, supported by two panthers.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon",
+          "meaning": {
+            "description": "The black shield bears three golden discs for the country's mineral wealth and, below, a ship under sail for the timber trade that built its economy; a green okoumé tree rises behind. Two panthers guard it. Two mottoes appear: the Latin Uniti Progrediemur — “united we shall go forward” — on the scroll above, and the French Union, Travail, Justice — “Union, Work, Justice” — below.",
+            "sources": [
+              {
+                "title": "Coat of arms of Gabon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon"
+              }
+            ]
+          },
+          "sha256": "3f699d042834461f6cc57cfde29c4b709cdb04969ee725cacf598b491fd19318",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Gabon became independent from France on 17 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Gabon"
+      }
     },
     "GB": {
       "flags": [
@@ -7951,7 +8130,7 @@
           "to": 9999,
           "name": "Flag of Jordan",
           "reuse": "flags/jo.svg",
-          "design": "The national flag of Jordan, in the form adopted in 1928.",
+          "design": "The national flag of Jordan, in use since 1928.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Jordan"
         },
         {
@@ -7961,10 +8140,90 @@
           "to": 9999,
           "name": "Flag of Jordan",
           "reuse": "flags/jo.svg",
-          "design": "The national flag of Jordan, in the form adopted in 1928.",
+          "design": "Black, white and green bands with a red hoist triangle bearing a white seven-pointed star — the colours of the Arab Revolt, in use since 1928.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Jordan"
+        },
+        {
+          "id": "jo-transjordan",
+          "category": "historical",
+          "from": 1922,
+          "to": 1928,
+          "name": "Flag of the Emirate of Transjordan",
+          "commons": "Flag of the Emirate of Transjordan.svg",
+          "file": "jo/jo-transjordan.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The early flag of the Emirate of Transjordan, under the British mandate — the Arab Revolt bands with a red triangle but no star.",
+          "source": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan",
+          "sha256": "df1ab822ca22f24ba4512ff3d6b320fef5a65724d2946adfb15404cfebcf079b",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "jo-army",
+          "category": "military",
+          "from": 1949,
+          "to": 9999,
+          "name": "Flag of the Royal Jordanian Army",
+          "commons": "Royal Jordanian Army Flag.svg",
+          "file": "jo/jo-army.svg",
+          "design": "The flag of the Royal Jordanian Army.",
+          "source": "https://en.wikipedia.org/wiki/Royal_Jordanian_Army",
+          "sha256": "c8e1b91c05090075ad698c9be87e96abd0bd5d9e37557a24239693a67a35ac60",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "jo-airforce",
+          "category": "military",
+          "from": 1955,
+          "to": 9999,
+          "name": "Ensign of the Royal Jordanian Air Force",
+          "commons": "Air Force Ensign of Jordan.svg",
+          "file": "jo/jo-af.svg",
+          "design": "The ensign of the Royal Jordanian Air Force.",
+          "source": "https://en.wikipedia.org/wiki/Royal_Jordanian_Air_Force",
+          "sha256": "f7f66e2193776f54674e41b2fb8d3cd326f25cef4a3b2ec2296e9393138cc45b",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "jo-navy",
+          "category": "maritime",
+          "from": 1970,
+          "to": 9999,
+          "name": "Naval ensign of Jordan",
+          "commons": "Naval Ensign of Jordan.svg",
+          "file": "jo/jo-navy.svg",
+          "design": "The naval ensign of Jordan.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Jordan",
+          "sha256": "6d50f104a86bad0086602753eaf1c3b8dc0f35f1dc7504278116763b528eef91",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "jo-arms",
+          "category": "coatofarms",
+          "from": 1934,
+          "to": 9999,
+          "name": "Coat of arms of Jordan",
+          "commons": "Coat of arms of Jordan.svg",
+          "file": "jo/jo-arms.svg",
+          "design": "The royal arms — a golden eagle on a globe before the Hashemite crown and mantle.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jordan",
+          "meaning": {
+            "description": "These are the royal arms of the Hashemite king. At the top the Hashemite crown rests on a red mantle standing for the royal throne, tipped by the point of a spear — the Hashemite banner. Below, a golden eagle — a symbol of power, fortitude and loftiness, and the eagle of Saladin — stands on a globe with its wings touching two Jordanian flags, for the spread of Islam and Arab civilisation. Around the shield are weapons (swords, spears, bows and arrows) and, at the foot, ears of wheat and a palm frond flanking the sash and star of the Order of Al-Hussein bin Ali.",
+            "sources": [
+              {
+                "title": "Coat of arms of Jordan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jordan"
+              }
+            ]
+          },
+          "sha256": "9d76e01b5d83a9dc315afcbb2d9efe28d68a47fd6e381b52d6c56fd01c5e38ba",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1946,
+        "event": "Jordan became independent from the United Kingdom on 25 May 1946, ending the British mandate over Transjordan",
+        "source": "https://en.wikipedia.org/wiki/History_of_Jordan"
+      }
     },
     "JP": {
       "flags": [
@@ -10570,7 +10829,7 @@
           "to": 9999,
           "name": "Flag of Malawi",
           "reuse": "flags/mw.svg",
-          "design": "The national flag of Malawi, in the form adopted in 1964.",
+          "design": "The national flag of Malawi, adopted at independence in 1964 (briefly changed 2010–2012, then restored).",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi"
         },
         {
@@ -10580,10 +10839,77 @@
           "to": 9999,
           "name": "Flag of Malawi",
           "reuse": "flags/mw.svg",
-          "design": "The national flag of Malawi, in the form adopted in 1964.",
+          "design": "Black, red and green bands with a rising red sun on the black — black for the African people, red for the blood of the freedom struggle, green for the land, the rising sun for the dawn of hope and freedom across Africa.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi"
+        },
+        {
+          "id": "mw-2010",
+          "category": "historical",
+          "from": 2010,
+          "to": 2012,
+          "name": "Flag of Malawi (2010–2012)",
+          "commons": "Flag of Malawi (2010–2012).svg",
+          "file": "mw/mw-2010.svg",
+          "design": "A short-lived redesign with a full white sun centred on a red band, adopted in 2010 and repealed in 2012 when the 1964 flag was restored.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi",
+          "sha256": "6ed1c3e3b9f3a5b11f8c90e7fc89ce6804f16daedd192fa601e8c8696ff96448",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mw-nyasaland",
+          "category": "historical",
+          "from": 1925,
+          "to": 1964,
+          "name": "Flag of Nyasaland",
+          "commons": "Flag of Nyasaland (1925–1964).svg",
+          "file": "mw/mw-nyasaland.svg",
+          "sovereign": "the United Kingdom",
+          "design": "A British Blue Ensign defaced with the leopard-on-a-rock badge of the Nyasaland protectorate.",
+          "source": "https://en.wikipedia.org/wiki/Nyasaland",
+          "sha256": "6e40bd1e5830f80d3ab25618fa7793a482044172ed9acbb50a85756ffd17ebe6",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mw-president",
+          "category": "standard",
+          "from": 1964,
+          "to": 9999,
+          "name": "Presidential standard of Malawi",
+          "commons": "Flag of the President of Malawi.svg",
+          "file": "mw/mw-president.svg",
+          "design": "The standard of the President of Malawi.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi",
+          "sha256": "db52574829d4fa7acb73264cb48277d053ca2380fb5fe45cb8fbbd665a1fc621",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mw-arms",
+          "category": "coatofarms",
+          "from": 1964,
+          "to": 9999,
+          "name": "Coat of arms of Malawi",
+          "commons": "Coat of arms of Malawi.svg",
+          "file": "mw/mw-arms.svg",
+          "design": "A shield of lake waves, a lion and a rising sun, with a fish eagle crest and a lion and leopard as supporters.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi",
+          "meaning": {
+            "description": "The shield is divided into three: the wavy blue and white bars are the waters of Lake Malawi, which fills much of the country; a red lion on a gold field stands for the country's ties within the Commonwealth; and a rising sun on black — the same rising sun as on the flag — for the dawn of freedom for Africa. Above, a fish eagle sits before another rising sun as the crest. A lion and a leopard support the shield, standing for courage and for the country's wildlife, and the ribbon below reads “Unity and Freedom.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Malawi — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi"
+              }
+            ]
+          },
+          "sha256": "53e42af6917880d587fe714830a6534a54359434777bd7d2677e6a0193ccdae1",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1964,
+        "event": "Malawi became independent from the United Kingdom on 6 July 1964, ending the Nyasaland protectorate",
+        "source": "https://en.wikipedia.org/wiki/History_of_Malawi"
+      }
     },
     "MX": {
       "flags": [
@@ -11298,7 +11624,7 @@
           "to": 9999,
           "name": "Flag of Niger",
           "reuse": "flags/ne.svg",
-          "design": "The national flag of Niger, in the form adopted in 1959.",
+          "design": "The national flag of Niger, adopted in 1959.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Niger"
         },
         {
@@ -11308,10 +11634,51 @@
           "to": 9999,
           "name": "Flag of Niger",
           "reuse": "flags/ne.svg",
-          "design": "The national flag of Niger, in the form adopted in 1959.",
+          "design": "Orange, white and green horizontal bands with an orange disc at the centre — orange for the Sahara, white for purity, green for the fertile south, the disc for the sun.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Niger"
+        },
+        {
+          "id": "ne-french",
+          "category": "historical",
+          "from": 1922,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "ne/ne-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Niger under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ne-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Niger",
+          "commons": "Coat of arms of Niger.svg",
+          "file": "ne/ne-arms.svg",
+          "design": "A green shield bearing a sun, a spear and swords, millet and a zebu head, flanked by four flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger",
+          "meaning": {
+            "description": "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Niger — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger"
+              }
+            ]
+          },
+          "sha256": "eaa0d764e7b203e9bb78568222ae83b05dc8e81efd71258713aa9c0e5782044b",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Niger became independent from France on 3 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Niger"
+      }
     },
     "NG": {
       "flags": [
@@ -14004,7 +14371,7 @@
           "to": 9999,
           "name": "Flag of Sudan",
           "reuse": "flags/sd.svg",
-          "design": "The national flag of Sudan, in the form adopted in 1970.",
+          "design": "The national flag of Sudan, adopted in 1970.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan"
         },
         {
@@ -14014,8 +14381,60 @@
           "to": 9999,
           "name": "Flag of Sudan",
           "reuse": "flags/sd.svg",
-          "design": "The national flag of Sudan, in the form adopted in 1970.",
+          "design": "A red-white-black horizontal triband with a green hoist triangle — the Arab Liberation colours, adopted in 1970 after the 1969 revolution.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan"
+        },
+        {
+          "id": "sd-1956",
+          "category": "historical",
+          "from": 1956,
+          "to": 1970,
+          "name": "Flag of Sudan (1956–1970)",
+          "commons": "Flag of Sudan (1956–1970).svg",
+          "file": "sd/sd-1956.svg",
+          "design": "A blue-yellow-green horizontal tricolour — the first national flag, flown from independence in 1956 until 1970.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
+          "sha256": "06519843d7abf9f7e53c18d719544621e0f6ca5160fd9a94ea86ced7ea9e97a3",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sd-airforce",
+          "category": "military",
+          "from": 1956,
+          "to": 9999,
+          "name": "Ensign of the Sudanese Air Force",
+          "commons": "Air Force Ensign of Sudan.svg",
+          "file": "sd/sd-af.svg",
+          "design": "The ensign of the Sudanese Air Force.",
+          "source": "https://en.wikipedia.org/wiki/Sudanese_Air_Force",
+          "sha256": "8a371c9455dc423362465df3f88a315360559936bbceb47f954b3aa79420f154",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sd-navy",
+          "category": "maritime",
+          "from": 1970,
+          "to": 9999,
+          "name": "Naval ensign of Sudan",
+          "commons": "Naval Ensign of Sudan.svg",
+          "file": "sd/sd-navy.svg",
+          "design": "The naval ensign of Sudan.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
+          "sha256": "a91ba6b4f0bc8096f2a1c78d2db18e54f0e0b02179b893387e5fd6061113ecd1",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sd-president",
+          "category": "standard",
+          "from": 1970,
+          "to": 9999,
+          "name": "Presidential standard of Sudan",
+          "commons": "Presidential Standard of Sudan.svg",
+          "file": "sd/sd-president.svg",
+          "design": "The standard of the President of Sudan.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
+          "sha256": "6af7a26fae29b067edd853fabcfd7d384b06691b173840dab3be53e65fe7adf2",
+          "fetched": "2026-08-11"
         }
       ]
     },
@@ -14874,7 +15293,7 @@
           "to": 9999,
           "name": "Flag of Chad",
           "reuse": "flags/td.svg",
-          "design": "The national flag of Chad, in the form adopted in 1959.",
+          "design": "The national flag of Chad, adopted in 1959.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Chad"
         },
         {
@@ -14884,10 +15303,51 @@
           "to": 9999,
           "name": "Flag of Chad",
           "reuse": "flags/td.svg",
-          "design": "The national flag of Chad, in the form adopted in 1959.",
+          "design": "Vertical bands of blue, yellow and red — blue for the sky and hope, yellow for the sun and the desert, red for progress and sacrifice.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Chad"
+        },
+        {
+          "id": "td-french",
+          "category": "historical",
+          "from": 1920,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "td/td-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Chad under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "td-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Chad",
+          "commons": "Coat of arms of Chad.svg",
+          "file": "td/td-arms.svg",
+          "design": "A shield of blue and gold waves beneath a rising sun, supported by a goat and a lion.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad",
+          "meaning": {
+            "description": "The shield's jagged blue and gold bars are the waters of Lake Chad; above rises a sun, for the new beginning of independence. A goat of the desert north and a lion of the savanna south support the shield — the two halves of the country — each standing over a red arrow. The ribbon reads Unité, Travail, Progrès — “Unity, Work, Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Chad — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chad"
+              }
+            ]
+          },
+          "sha256": "dfc04bf318c6cbf083e5edac91c3fb6f3eb3038172065d9f558c159b3480f7be",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Chad became independent from France on 11 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Chad"
+      }
     },
     "TG": {
       "flags": [
@@ -14898,7 +15358,7 @@
           "to": 9999,
           "name": "Flag of Togo",
           "reuse": "flags/tg.svg",
-          "design": "The national flag of Togo, in the form adopted in 1960.",
+          "design": "The national flag of Togo, adopted in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Togo"
         },
         {
@@ -14908,10 +15368,65 @@
           "to": 9999,
           "name": "Flag of Togo",
           "reuse": "flags/tg.svg",
-          "design": "The national flag of Togo, in the form adopted in 1960.",
+          "design": "Five green and yellow stripes with a white star on a red canton — green for hope and agriculture, yellow for mineral wealth and labour, red for the blood of independence, the star for life and purity.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Togo"
+        },
+        {
+          "id": "tg-french",
+          "category": "historical",
+          "from": 1916,
+          "to": 1960,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "tg/tg-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Togo under French colonial rule.",
+          "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tg-german",
+          "category": "historical",
+          "from": 1884,
+          "to": 1914,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "tg/tg-german.svg",
+          "sovereign": "the German Empire",
+          "design": "The flag of the German Empire, which held the territory as the colony of Togoland until 1914.",
+          "source": "https://en.wikipedia.org/wiki/Togoland",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tg-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Togo",
+          "commons": "Armoiries du Togo.svg",
+          "file": "tg/tg-arms.svg",
+          "design": "Two red lions flanking a golden shield lettered RT, beneath two national flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo",
+          "meaning": {
+            "description": "Two red lions rear up on either side, for the courage of the Togolese people, each holding a bow and arrow. Between them a golden shield carries the letters RT, for République Togolaise, and two national flags fly above. The motto reads Travail, Liberté, Patrie — “Work, Liberty, Homeland.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Togo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Togo"
+              }
+            ]
+          },
+          "sha256": "c531fcbd21f17e406c0fbcf8a02796dab205bc6535fb2e24169948a1e8723089",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Togo became independent from France on 27 April 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Togo"
+      }
     },
     "TH": {
       "flags": [
@@ -17622,7 +18137,7 @@
           "to": 9999,
           "name": "Flag of Zambia",
           "reuse": "flags/zm.svg",
-          "design": "The national flag of Zambia, in the form adopted in 1964.",
+          "design": "The national flag of Zambia, adopted at independence in 1964 (the green shade was standardised in 1996).",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Zambia"
         },
         {
@@ -17632,10 +18147,64 @@
           "to": 9999,
           "name": "Flag of Zambia",
           "reuse": "flags/zm.svg",
-          "design": "The national flag of Zambia, in the form adopted in 1964.",
+          "design": "A green field with an orange fish eagle over a block of red, black and orange stripes in the fly — green for the land, red for the freedom struggle, black for the people, orange for the country's mineral wealth.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Zambia"
+        },
+        {
+          "id": "zm-northern-rhodesia",
+          "category": "historical",
+          "from": 1939,
+          "to": 1964,
+          "name": "Flag of Northern Rhodesia",
+          "commons": "Flag of Northern Rhodesia (1939–1964).svg",
+          "file": "zm/zm-nr.svg",
+          "sovereign": "the United Kingdom",
+          "design": "A British Blue Ensign defaced with the colony's badge, flown over the Northern Rhodesia protectorate.",
+          "source": "https://en.wikipedia.org/wiki/Northern_Rhodesia",
+          "sha256": "0c04a19a335fa490a9b7914b8297bc2c993e006d6f3336006889d96ee0b43d29",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "zm-president",
+          "category": "standard",
+          "from": 1964,
+          "to": 9999,
+          "name": "Presidential standard of Zambia",
+          "commons": "Flag of the President of Zambia.svg",
+          "file": "zm/zm-president.svg",
+          "design": "The standard of the President of Zambia.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Zambia",
+          "sha256": "0c557e0beb2206ac29a44084c5c8dba6cf3997813989c80a67087ec941b4ec6e",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "zm-arms",
+          "category": "coatofarms",
+          "from": 1964,
+          "to": 9999,
+          "name": "Coat of arms of Zambia",
+          "commons": "Coat of arms of Zambia.svg",
+          "file": "zm/zm-arms.svg",
+          "design": "A fish eagle above a shield of black and white waves, held by a man and a woman.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia",
+          "meaning": {
+            "description": "The fish eagle at the top, wings spread, stands for the conquest of freedom and the nation's hope for the future — the same bird as on the flag. The shield beneath is Victoria Falls, white water cascading over black rock, standing for the Zambezi river, from which the country takes its name. Around it are emblems of the sources of Zambia's wealth — a pick and hoe for mining and agriculture, an ear of maize, a mine headframe and a zebra. The shield is held by a man and a woman, the common people of the nation, and the ribbon reads “One Zambia, One Nation,” a call to unity across the country's many peoples.",
+            "sources": [
+              {
+                "title": "Coat of arms of Zambia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Zambia"
+              }
+            ]
+          },
+          "sha256": "75bbb7afdf4ee0f3e4efc5ba666906d6d8e55afecdc322db87b454dafbc398a0",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1964,
+        "event": "Zambia became independent from the United Kingdom on 24 October 1964, ending the Northern Rhodesia protectorate",
+        "source": "https://en.wikipedia.org/wiki/History_of_Zambia"
+      }
     },
     "ZW": {
       "flags": [
