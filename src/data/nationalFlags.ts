@@ -238,8 +238,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bf-current", category: "historical", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag of Burkina Faso, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
   ],
   "BG": [
-    { id: "bg-official-national", category: "official", name: "Flag of Bulgaria", from: 1879, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in the form adopted in 1879.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
-    { id: "bg-current", category: "historical", name: "Flag of Bulgaria", from: 1879, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in the form adopted in 1879.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-official-national", category: "official", name: "Flag of Bulgaria", from: 1878, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in use since 1878.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-communist", category: "historical", name: "Flag of the People's Republic of Bulgaria", from: 1971, to: 1990, path: "national-flags/bg/bg-1971.svg", design: "The national tricolour defaced in the canton with the socialist state emblem — the lion, gearwheel and wheat of the People's Republic.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-current", category: "historical", name: "Flag of Bulgaria", from: 1878, to: 9999, primary: true, path: "flags/bg.svg", design: "A white-green-red horizontal tricolour, adopted in 1878 after liberation — white for peace, green for the country's farmland and forests, red for the courage of its people.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1844, to: 1878, sovereign: "the Ottoman Empire", path: "national-flags/bg/bg-ottoman.svg", design: "The flag of the Ottoman Empire, which ruled the Bulgarian lands until liberation in 1878.", source: "https://en.wikipedia.org/wiki/Ottoman_Bulgaria" },
+    { id: "bg-naval", category: "maritime", name: "Naval ensign of Bulgaria", from: 2005, to: 9999, path: "national-flags/bg/bg-naval.svg", design: "The naval ensign of the Bulgarian Navy.", source: "https://en.wikipedia.org/wiki/Naval_ensign_of_Bulgaria" },
+    { id: "bg-arms", category: "coatofarms", name: "Coat of arms of Bulgaria", path: "national-flags/bg/bg-arms.svg", design: "A crowned golden lion rampant on a dark-red shield, held by two crowned lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
   ],
   "BH": [
     { id: "bh-official-national", category: "official", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag of Bahrain, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
@@ -934,8 +938,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "la-emblem", category: "coatofarms", name: "Emblem of Laos", from: 1991, to: 9999, path: "national-flags/la/laos-emblem.svg", design: "The Pha That Luang stupa above a dam, road and paddy field, framed by rice ears and a red ribbon with the name of the state.", source: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
   ],
   "LB": [
-    { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, in the form adopted in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
-    { id: "lb-current", category: "historical", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, in the form adopted in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, adopted at independence in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-current", category: "historical", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "Red over white (double height) over red, charged with a green cedar of Lebanon touching both red bands — adopted at independence in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-greater-lebanon", category: "historical", name: "Flag of Greater Lebanon", from: 1920, to: 1943, sovereign: "France", path: "national-flags/lb/lb-1920.svg", design: "The French Tricolour charged with a cedar, flown over the State of Greater Lebanon during the French mandate.", source: "https://en.wikipedia.org/wiki/Greater_Lebanon" },
+    { id: "lb-army", category: "military", name: "Flag of the Lebanese Armed Forces", from: 1991, to: 9999, path: "national-flags/lb/lb-army.svg", design: "The flag of the Lebanese Armed Forces.", source: "https://en.wikipedia.org/wiki/Lebanese_Armed_Forces" },
+    { id: "lb-airforce", category: "military", name: "Flag of the Lebanese Air Force", from: 1949, to: 9999, path: "national-flags/lb/lb-af.svg", design: "The flag of the Lebanese Air Force.", source: "https://en.wikipedia.org/wiki/Lebanese_Air_Force" },
+    { id: "lb-jack", category: "maritime", name: "Naval jack of Lebanon", from: 1950, to: 9999, path: "national-flags/lb/lb-jack.svg", design: "The naval jack of Lebanon, the national flag in a square field.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-arms", category: "coatofarms", name: "Coat of arms of Lebanon", path: "national-flags/lb/lb-arms.svg", design: "A red shield crossed by a white diagonal bearing a cedar.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
   ],
   "LC": [
     { id: "lc-official-national", category: "official", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag of Saint Lucia, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
@@ -991,8 +1000,15 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lv-arms", category: "coatofarms", name: "Coat of arms of Latvia", from: 1921, to: 9999, path: "national-flags/lv/latvia-arms.svg", design: "A shield with a rising sun above a red lion and a silver griffin, beneath three golden stars, between oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
   ],
   "LY": [
-    { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 1951, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, in the form adopted in 1951.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
-    { id: "ly-current", category: "historical", name: "Flag of Libya", from: 1951, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, in the form adopted in 1951.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 2011, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, restored in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-current", category: "historical", name: "Flag of Libya", from: 2011, to: 9999, primary: true, path: "flags/ly.svg", design: "A red-black-green triband with a white star and crescent — the flag of the 1951 Kingdom of Libya, restored in 2011 after the fall of Gaddafi.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-green", category: "historical", name: "Flag of the Libyan Jamahiriya", from: 1977, to: 2011, path: "national-flags/ly/ly-green.svg", design: "A plain green field — the only single-colour national flag in the world — flown under Gaddafi's Jamahiriya from 1977 to 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-1972", category: "historical", name: "Flag of Libya (1972–1977)", from: 1972, to: 1977, path: "national-flags/ly/ly-1972.svg", design: "The flag of the Federation of Arab Republics — the Arab Liberation colours with a golden hawk of Quraish.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-1969", category: "historical", name: "Flag of the Libyan Arab Republic", from: 1969, to: 1972, path: "national-flags/ly/ly-1969.svg", design: "The red-white-black Arab Liberation flag, adopted after the 1969 coup that ended the monarchy.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-kingdom", category: "historical", name: "Flag of the Kingdom of Libya", from: 1951, to: 1969, path: "national-flags/ly/ly-1951.svg", design: "The flag of the Kingdom of Libya, first flown at independence in 1951 — the same design restored as the national flag in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-army", category: "military", name: "Flag of the Libyan Army", from: 2011, to: 9999, path: "national-flags/ly/ly-army.svg", design: "The flag of the Libyan Army.", source: "https://en.wikipedia.org/wiki/Libyan_Army" },
+    { id: "ly-airforce", category: "military", name: "Flag of the Libyan Air Force", from: 2011, to: 9999, path: "national-flags/ly/ly-af.svg", design: "The flag of the Libyan Air Force.", source: "https://en.wikipedia.org/wiki/Libyan_Air_Force" },
+    { id: "ly-jack", category: "maritime", name: "Naval ensign of Libya", from: 2011, to: 9999, path: "national-flags/ly/ly-jack.svg", design: "The naval ensign of Libya.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
   ],
   "MA": [
     { id: "ma-official-national", category: "official", name: "Flag of Morocco", from: 1915, to: 9999, primary: true, path: "flags/ma.svg", design: "The national flag of Morocco, in the form adopted in 1915.", source: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
@@ -1731,8 +1747,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ws-current", category: "historical", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag of Samoa, in the form adopted in 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
   ],
   "YE": [
-    { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
-    { id: "ye-current", category: "historical", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, adopted at unification in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-current", category: "historical", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "A red-white-black Arab Liberation triband, adopted on 22 May 1990 when North and South Yemen united.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-south", category: "historical", name: "Flag of the People's Democratic Republic of Yemen", from: 1967, to: 1990, path: "national-flags/ye/ye-south.svg", design: "The flag of South Yemen — the Arab Liberation triband with a light-blue triangle bearing a red star — flown from independence from Britain in 1967 until unification.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-north", category: "historical", name: "Flag of the Yemen Arab Republic", from: 1962, to: 1990, path: "national-flags/ye/ye-north.svg", design: "The red-white-black flag of North Yemen (the Yemen Arab Republic), with a single green star, flown until unification.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-kingdom", category: "historical", name: "Flag of the Mutawakkilite Kingdom of Yemen", from: 1927, to: 1962, path: "national-flags/ye/ye-kingdom.svg", design: "A red field bearing a white sword and stars — the flag of the imamate that ruled North Yemen until the 1962 revolution.", source: "https://en.wikipedia.org/wiki/Mutawakkilite_Kingdom_of_Yemen" },
+    { id: "ye-emblem", category: "coatofarms", name: "Emblem of Yemen", from: 1990, to: 9999, path: "national-flags/ye/ye-emblem.svg", design: "A golden eagle bearing a shield of the coffee plant and the Marib Dam.", source: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
   ],
   "ZA": [
     { id: "za-official-national", category: "official", name: "Flag of South Africa", from: 1994, to: 9999, primary: true, path: "flags/za.svg", design: "The national flag, first flown on 27 April 1994.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
@@ -1790,6 +1810,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BA": { year: 1992, event: "Bosnia and Herzegovina declared independence from Yugoslavia on 3 March 1992", source: "https://en.wikipedia.org/wiki/Independence_of_Bosnia_and_Herzegovina" },
   "BB": { year: 1966, event: "Independence from the United Kingdom, 30 November 1966", note: "Barbados became a republic on 30 November 2021.", source: "https://en.wikipedia.org/wiki/History_of_Barbados" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
+  "BG": { year: 1878, event: "The Principality of Bulgaria was established after liberation from Ottoman rule in 1878; full independence was declared in 1908", source: "https://en.wikipedia.org/wiki/History_of_Bulgaria" },
   "BN": { year: 1984, event: "Full independence from the United Kingdom, 1 January 1984", note: "Brunei had been a British protectorate since 1888.", source: "https://en.wikipedia.org/wiki/History_of_Brunei" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
@@ -1819,9 +1840,11 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "KH": { year: 1953, event: "Independence from France, 9 November 1953", note: "Cambodia had been a French protectorate since 1863.", source: "https://en.wikipedia.org/wiki/History_of_Cambodia" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
+  "LB": { year: 1943, event: "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon", source: "https://en.wikipedia.org/wiki/History_of_Lebanon" },
   "LT": { year: 1918, event: "Lithuania restored its statehood on 16 February 1918", note: "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.", source: "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania" },
   "LU": { year: 1839, event: "The Treaty of London of 1839 established Luxembourg as an independent grand duchy", note: "Full sovereignty and neutrality were confirmed by the second Treaty of London in 1867.", source: "https://en.wikipedia.org/wiki/History_of_Luxembourg" },
   "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
+  "LY": { year: 1951, event: "Libya became independent as the United Kingdom of Libya on 24 December 1951", source: "https://en.wikipedia.org/wiki/History_of_Libya" },
   "ME": { year: 1878, event: "Montenegro's independence was recognised by the Great Powers at the Congress of Berlin in 1878", note: "Montenegro had been a de-facto sovereign principality for centuries; it was absorbed into Yugoslavia in 1918 and regained independence from the state union with Serbia on 3 June 2006.", source: "https://en.wikipedia.org/wiki/History_of_Montenegro" },
   "MG": { year: 1960, event: "Madagascar became fully independent from France on 26 June 1960", source: "https://en.wikipedia.org/wiki/History_of_Madagascar" },
   "MK": { year: 1991, event: "Macedonia declared independence from Yugoslavia on 8 September 1991", note: "It was admitted to the UN in 1993 as \"the former Yugoslav Republic of Macedonia\" and renamed North Macedonia in 2019 under the Prespa agreement with Greece.", source: "https://en.wikipedia.org/wiki/Independence_of_North_Macedonia" },
@@ -1939,6 +1962,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
       { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
+    ],
+  },
+  "bg-arms": {
+    description: "A crowned golden lion rampant on a dark-red shield, beneath the historical crown of the medieval Bulgarian tsars. The rampant lion has stood for Bulgaria since the Second Bulgarian Empire, and here it appears three times — once on the shield and again as the two crowned lions that support it, standing on a compartment of oak branches for strength and endurance. The white ribbon carries the national motto, Съединението прави силата — “Unity makes strength.”",
+    sources: [
+      { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
     ],
   },
   "bn-emblem": {
@@ -2258,6 +2287,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A socialist-style emblem, and one that quietly recorded a political change. At its centre is the Pha That Luang, the golden stupa in Vientiane that is the national shrine — a Buddhist monument at the heart of a communist state's emblem. Around it are the country's development: the Nam Ngum dam for hydro-electric power, an asphalt road, a stylised irrigated paddy field, and a cogwheel for industry, framed by crescent-shaped stalks of ripe rice. When it was first adopted in 1975 the top carried a red star with a hammer and sickle; in August 1991, reacting to the fall of the Soviet Union, Laos replaced those with the Pha That Luang — putting the national shrine where the communist star had been.",
     sources: [
       { title: "Emblem of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
+    ],
+  },
+  "lb-arms": {
+    description: "The arms carry the same device as the flag, arranged across a red shield: a white bend bearing a green cedar of Lebanon (Cedrus libani). The cedar is the country's oldest and most persistent emblem — the biblical “cedars of God,” a symbol of holiness, endurance and peace — and it became the prominent national symbol during the French mandate. The white recalls peace and the snow of the mountains; the red, the sacrifice of those who defended the country.",
+    sources: [
+      { title: "Coat of arms of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
     ],
   },
   "lk-emblem": {
@@ -2589,6 +2624,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
     sources: [
       { title: "Emblem of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
+    ],
+  },
+  "ye-emblem": {
+    description: "The golden eagle of Saladin holds the national flag in its talons and a scroll reading “The Yemeni Republic.” On its breast a shield shows a coffee plant — the crop that made the port of Mocha famous — above the Marib Dam, the great irrigation work of the ancient Sabaean kingdom, and seven blue wavy bands. The eagle bearing two flags, and the seven bands, speak to the union of the formerly separate North and South.",
+    sources: [
+      { title: "Emblem of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
     ],
   },
   "za-1994": {

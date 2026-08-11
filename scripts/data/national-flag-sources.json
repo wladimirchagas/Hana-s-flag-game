@@ -1577,24 +1577,89 @@
         {
           "id": "bg-official-national",
           "category": "official",
-          "from": 1879,
+          "from": 1878,
           "to": 9999,
           "name": "Flag of Bulgaria",
           "reuse": "flags/bg.svg",
-          "design": "The national flag of Bulgaria, in the form adopted in 1879.",
+          "design": "The national flag of Bulgaria, in use since 1878.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bulgaria"
         },
         {
           "id": "bg-current",
           "category": "historical",
-          "from": 1879,
+          "from": 1878,
           "to": 9999,
           "name": "Flag of Bulgaria",
           "reuse": "flags/bg.svg",
-          "design": "The national flag of Bulgaria, in the form adopted in 1879.",
+          "design": "A white-green-red horizontal tricolour, adopted in 1878 after liberation — white for peace, green for the country's farmland and forests, red for the courage of its people.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bulgaria"
+        },
+        {
+          "id": "bg-communist",
+          "category": "historical",
+          "from": 1971,
+          "to": 1990,
+          "name": "Flag of the People's Republic of Bulgaria",
+          "commons": "Flag of Bulgaria (1971–1990).svg",
+          "file": "bg/bg-1971.svg",
+          "design": "The national tricolour defaced in the canton with the socialist state emblem — the lion, gearwheel and wheat of the People's Republic.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bulgaria",
+          "sha256": "ddcbce86adfa4a2c5f6f097fe6ed22d14ea0953fb39cb55602dfc63f729f6f8a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bg-ottoman",
+          "category": "historical",
+          "from": 1844,
+          "to": 1878,
+          "name": "Flag of the Ottoman Empire",
+          "commons": "Flag of the Ottoman Empire (1844–1922).svg",
+          "file": "bg/bg-ottoman.svg",
+          "sovereign": "the Ottoman Empire",
+          "design": "The flag of the Ottoman Empire, which ruled the Bulgarian lands until liberation in 1878.",
+          "source": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria",
+          "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bg-naval",
+          "category": "maritime",
+          "from": 2005,
+          "to": 9999,
+          "name": "Naval ensign of Bulgaria",
+          "commons": "Naval Ensign of Bulgaria.svg",
+          "file": "bg/bg-naval.svg",
+          "design": "The naval ensign of the Bulgarian Navy.",
+          "source": "https://en.wikipedia.org/wiki/Naval_ensign_of_Bulgaria",
+          "sha256": "9ac519c73655ad0a144897a9d6a528e020d4478c9f8929786bdfaeb820bdf393",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bg-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Bulgaria",
+          "commons": "Coat of arms of Bulgaria.svg",
+          "file": "bg/bg-arms.svg",
+          "design": "A crowned golden lion rampant on a dark-red shield, held by two crowned lions.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria",
+          "meaning": {
+            "description": "A crowned golden lion rampant on a dark-red shield, beneath the historical crown of the medieval Bulgarian tsars. The rampant lion has stood for Bulgaria since the Second Bulgarian Empire, and here it appears three times — once on the shield and again as the two crowned lions that support it, standing on a compartment of oak branches for strength and endurance. The white ribbon carries the national motto, Съединението прави силата — “Unity makes strength.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Bulgaria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria"
+              }
+            ]
+          },
+          "sha256": "4566b9ad33ac3d9bf32b3b8b57dde4a698d91186904358d6086a316f64340a1b",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1878,
+        "event": "The Principality of Bulgaria was established after liberation from Ottoman rule in 1878; full independence was declared in 1908",
+        "source": "https://en.wikipedia.org/wiki/History_of_Bulgaria"
+      }
     },
     "BH": {
       "flags": [
@@ -8875,7 +8940,7 @@
           "to": 9999,
           "name": "Flag of Lebanon",
           "reuse": "flags/lb.svg",
-          "design": "The national flag of Lebanon, in the form adopted in 1943.",
+          "design": "The national flag of Lebanon, adopted at independence in 1943.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
         },
         {
@@ -8885,10 +8950,88 @@
           "to": 9999,
           "name": "Flag of Lebanon",
           "reuse": "flags/lb.svg",
-          "design": "The national flag of Lebanon, in the form adopted in 1943.",
+          "design": "Red over white (double height) over red, charged with a green cedar of Lebanon touching both red bands — adopted at independence in 1943.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
+        },
+        {
+          "id": "lb-greater-lebanon",
+          "category": "historical",
+          "from": 1920,
+          "to": 1943,
+          "name": "Flag of Greater Lebanon",
+          "commons": "Flag of Lebanon (1920-1943).svg",
+          "file": "lb/lb-1920.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour charged with a cedar, flown over the State of Greater Lebanon during the French mandate.",
+          "source": "https://en.wikipedia.org/wiki/Greater_Lebanon",
+          "sha256": "6958927f63cf4debe6b495594d778d839faa19c2d16a7d48e5517cc2aad52f18",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lb-army",
+          "category": "military",
+          "from": 1991,
+          "to": 9999,
+          "name": "Flag of the Lebanese Armed Forces",
+          "commons": "Flag of the Lebanese Armed Forces (Front).svg",
+          "file": "lb/lb-army.svg",
+          "design": "The flag of the Lebanese Armed Forces.",
+          "source": "https://en.wikipedia.org/wiki/Lebanese_Armed_Forces",
+          "sha256": "1a8a90ef4c8362c3cb676d09f6d7175dc88a718aafa32e37ac34748a87d5da0f",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lb-airforce",
+          "category": "military",
+          "from": 1949,
+          "to": 9999,
+          "name": "Flag of the Lebanese Air Force",
+          "commons": "Flag of the Lebanese Air Force.svg",
+          "file": "lb/lb-af.svg",
+          "design": "The flag of the Lebanese Air Force.",
+          "source": "https://en.wikipedia.org/wiki/Lebanese_Air_Force",
+          "sha256": "8d8e91157e0bf8defacc9e5606b3f9834ad31ae7842ee3cf6e67f670dfc842cd",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lb-jack",
+          "category": "maritime",
+          "from": 1950,
+          "to": 9999,
+          "name": "Naval jack of Lebanon",
+          "commons": "Naval Jack of Lebanon.svg",
+          "file": "lb/lb-jack.svg",
+          "design": "The naval jack of Lebanon, the national flag in a square field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Lebanon",
+          "sha256": "b5855d1f64bf926d82f671a5479801b17665f5c04bbad19fb11f3778a1b86e0a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lb-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Lebanon",
+          "commons": "Coat of arms of Lebanon.svg",
+          "file": "lb/lb-arms.svg",
+          "design": "A red shield crossed by a white diagonal bearing a cedar.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon",
+          "meaning": {
+            "description": "The arms carry the same device as the flag, arranged across a red shield: a white bend bearing a green cedar of Lebanon (Cedrus libani). The cedar is the country's oldest and most persistent emblem — the biblical “cedars of God,” a symbol of holiness, endurance and peace — and it became the prominent national symbol during the French mandate. The white recalls peace and the snow of the mountains; the red, the sacrifice of those who defended the country.",
+            "sources": [
+              {
+                "title": "Coat of arms of Lebanon — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon"
+              }
+            ]
+          },
+          "sha256": "36f636f5fa82e26158be25eb84c94fa5c8211b0212e55446156f303f60db614c",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1943,
+        "event": "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon",
+        "source": "https://en.wikipedia.org/wiki/History_of_Lebanon"
+      }
     },
     "LC": {
       "flags": [
@@ -9419,24 +9562,120 @@
         {
           "id": "ly-official-national",
           "category": "official",
-          "from": 1951,
+          "from": 2011,
           "to": 9999,
           "name": "Flag of Libya",
           "reuse": "flags/ly.svg",
-          "design": "The national flag of Libya, in the form adopted in 1951.",
+          "design": "The national flag of Libya, restored in 2011.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Libya"
         },
         {
           "id": "ly-current",
           "category": "historical",
-          "from": 1951,
+          "from": 2011,
           "to": 9999,
           "name": "Flag of Libya",
           "reuse": "flags/ly.svg",
-          "design": "The national flag of Libya, in the form adopted in 1951.",
+          "design": "A red-black-green triband with a white star and crescent — the flag of the 1951 Kingdom of Libya, restored in 2011 after the fall of Gaddafi.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Libya"
+        },
+        {
+          "id": "ly-kingdom",
+          "category": "historical",
+          "from": 1951,
+          "to": 1969,
+          "name": "Flag of the Kingdom of Libya",
+          "commons": "Flag of Libya.svg",
+          "file": "ly/ly-1951.svg",
+          "design": "The flag of the Kingdom of Libya, first flown at independence in 1951 — the same design restored as the national flag in 2011.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Libya",
+          "sha256": "f2a61cb08640dbdf133f21e02c69b89fe601ec415bb9785e6cdad492ff47987a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ly-1969",
+          "category": "historical",
+          "from": 1969,
+          "to": 1972,
+          "name": "Flag of the Libyan Arab Republic",
+          "commons": "Flag of Libya (1969–1972).svg",
+          "file": "ly/ly-1969.svg",
+          "design": "The red-white-black Arab Liberation flag, adopted after the 1969 coup that ended the monarchy.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Libya",
+          "sha256": "7244449f3ca013fe750df69fb87142a85090648c978a89226f706a89b0b75d0c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ly-1972",
+          "category": "historical",
+          "from": 1972,
+          "to": 1977,
+          "name": "Flag of Libya (1972–1977)",
+          "commons": "Flag of Libya (1972–1977).svg",
+          "file": "ly/ly-1972.svg",
+          "design": "The flag of the Federation of Arab Republics — the Arab Liberation colours with a golden hawk of Quraish.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Libya",
+          "sha256": "b455ba5cf10621131ae70762ce5e5581484e2288c13fe7160e19cdaeb29b1ee5",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ly-green",
+          "category": "historical",
+          "from": 1977,
+          "to": 2011,
+          "name": "Flag of the Libyan Jamahiriya",
+          "commons": "Flag of Libya (1977–2011).svg",
+          "file": "ly/ly-green.svg",
+          "design": "A plain green field — the only single-colour national flag in the world — flown under Gaddafi's Jamahiriya from 1977 to 2011.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Libya",
+          "sha256": "72235529a9ac0f4d4983ef60c25f9844db05b415ea48069369ded820256938ff",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ly-army",
+          "category": "military",
+          "from": 2011,
+          "to": 9999,
+          "name": "Flag of the Libyan Army",
+          "commons": "Flag of the Libyan Ground Forces.svg",
+          "file": "ly/ly-army.svg",
+          "design": "The flag of the Libyan Army.",
+          "source": "https://en.wikipedia.org/wiki/Libyan_Army",
+          "sha256": "949eb4203396d02b53e6ea19f022b446156d59ac76cda7bb65e373fca1e3adea",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ly-airforce",
+          "category": "military",
+          "from": 2011,
+          "to": 9999,
+          "name": "Flag of the Libyan Air Force",
+          "commons": "Flag of the Libyan Air Force.svg",
+          "file": "ly/ly-af.svg",
+          "design": "The flag of the Libyan Air Force.",
+          "source": "https://en.wikipedia.org/wiki/Libyan_Air_Force",
+          "sha256": "8cd57b380f901ba028a9fb6370cb3a0f9c1ff16a9ff6d105f52a61c942b753f6",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ly-jack",
+          "category": "maritime",
+          "from": 2011,
+          "to": 9999,
+          "name": "Naval ensign of Libya",
+          "commons": "Naval Ensign of Libya.svg",
+          "file": "ly/ly-jack.svg",
+          "design": "The naval ensign of Libya.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Libya",
+          "sha256": "49e7d8140fc9a46a90c2736cdd5bf3a22f34940e368aca63318ae0ab861ba5a6",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1951,
+        "event": "Libya became independent as the United Kingdom of Libya on 24 December 1951",
+        "source": "https://en.wikipedia.org/wiki/History_of_Libya"
+      }
     },
     "MA": {
       "flags": [
@@ -17136,7 +17375,7 @@
           "to": 9999,
           "name": "Flag of Yemen",
           "reuse": "flags/ye.svg",
-          "design": "The national flag of Yemen, in the form adopted in 1990.",
+          "design": "The national flag of Yemen, adopted at unification in 1990.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Yemen"
         },
         {
@@ -17146,8 +17385,69 @@
           "to": 9999,
           "name": "Flag of Yemen",
           "reuse": "flags/ye.svg",
-          "design": "The national flag of Yemen, in the form adopted in 1990.",
+          "design": "A red-white-black Arab Liberation triband, adopted on 22 May 1990 when North and South Yemen united.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Yemen"
+        },
+        {
+          "id": "ye-north",
+          "category": "historical",
+          "from": 1962,
+          "to": 1990,
+          "name": "Flag of the Yemen Arab Republic",
+          "commons": "Flag of the Yemen Arab Republic.svg",
+          "file": "ye/ye-north.svg",
+          "design": "The red-white-black flag of North Yemen (the Yemen Arab Republic), with a single green star, flown until unification.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Yemen",
+          "sha256": "190cfcd95b649e5d4b2819b49ab3e8df5245e2e1a5ae3e07d0c3dfd5c588a0dc",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ye-south",
+          "category": "historical",
+          "from": 1967,
+          "to": 1990,
+          "name": "Flag of the People's Democratic Republic of Yemen",
+          "commons": "Flag of South Yemen.svg",
+          "file": "ye/ye-south.svg",
+          "design": "The flag of South Yemen — the Arab Liberation triband with a light-blue triangle bearing a red star — flown from independence from Britain in 1967 until unification.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Yemen",
+          "sha256": "ca3283b0dbdf284a71c9a4d89a1efdc130069208a19e1501aa3bd5b72e478db4",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ye-kingdom",
+          "category": "historical",
+          "from": 1927,
+          "to": 1962,
+          "name": "Flag of the Mutawakkilite Kingdom of Yemen",
+          "commons": "Flag of the Mutawakkilite Kingdom of Yemen.svg",
+          "file": "ye/ye-kingdom.svg",
+          "design": "A red field bearing a white sword and stars — the flag of the imamate that ruled North Yemen until the 1962 revolution.",
+          "source": "https://en.wikipedia.org/wiki/Mutawakkilite_Kingdom_of_Yemen",
+          "sha256": "4505bdcaddd1fc07c1abb9436f01672655d5194fae9a16d9be854c9aa40a9e6a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ye-emblem",
+          "category": "coatofarms",
+          "from": 1990,
+          "to": 9999,
+          "name": "Emblem of Yemen",
+          "commons": "Emblem of Yemen.svg",
+          "file": "ye/ye-emblem.svg",
+          "design": "A golden eagle bearing a shield of the coffee plant and the Marib Dam.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Yemen",
+          "meaning": {
+            "description": "The golden eagle of Saladin holds the national flag in its talons and a scroll reading “The Yemeni Republic.” On its breast a shield shows a coffee plant — the crop that made the port of Mocha famous — above the Marib Dam, the great irrigation work of the ancient Sabaean kingdom, and seven blue wavy bands. The eagle bearing two flags, and the seven bands, speak to the union of the formerly separate North and South.",
+            "sources": [
+              {
+                "title": "Emblem of Yemen — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Yemen"
+              }
+            ]
+          },
+          "sha256": "e485af7d8da6cb57aee716947bd50fb3e9a6edcb11c5ac693d3b2ea88e200ee1",
+          "fetched": "2026-08-11"
         }
       ]
     },
