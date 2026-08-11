@@ -5412,7 +5412,7 @@
           "to": 9999,
           "name": "Flag of Eritrea",
           "reuse": "flags/er.svg",
-          "design": "The national flag of Eritrea, in the form adopted in 1995.",
+          "design": "The national flag, adopted in 1995.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Eritrea"
         },
         {
@@ -5422,10 +5422,65 @@
           "to": 9999,
           "name": "Flag of Eritrea",
           "reuse": "flags/er.svg",
-          "design": "The national flag of Eritrea, in the form adopted in 1995.",
+          "design": "A red triangle bearing a gold olive wreath and branch, between green and blue triangles — based on the flag of the EPLF that won independence: red for the struggle, green for agriculture, blue for the sea, the wreath for peace.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Eritrea"
+        },
+        {
+          "id": "er-italian",
+          "category": "historical",
+          "from": 1890,
+          "to": 1941,
+          "name": "Flag of Italy",
+          "commons": "Flag of Italy (1861–1946).svg",
+          "file": "er/er-italy.svg",
+          "sovereign": "Italy",
+          "design": "The flag of the Kingdom of Italy, which ruled Eritrea as its first colony from 1890 until 1941.",
+          "source": "https://en.wikipedia.org/wiki/Italian_Eritrea",
+          "sha256": "ca49da45ef1110dff1148e2c21cc0c6b9667a3e07367a9b3940d71228dfae391",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "er-ethiopian",
+          "category": "historical",
+          "from": 1952,
+          "to": 1974,
+          "name": "Flag of Ethiopia",
+          "commons": "Flag of Ethiopia (1897–1974).svg",
+          "file": "er/er-ethiopia.svg",
+          "sovereign": "Ethiopia",
+          "design": "The imperial flag of Ethiopia, which federated with and then annexed Eritrea from 1952.",
+          "source": "https://en.wikipedia.org/wiki/Federation_of_Ethiopia_and_Eritrea",
+          "sha256": "10a05888cc206f816c5cfda5f7cf0fd48d09ea9dfd4219eee0d6f5e0977ebed6",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "er-arms",
+          "category": "coatofarms",
+          "from": 1993,
+          "to": 9999,
+          "name": "Emblem of Eritrea",
+          "commons": "Emblem of Eritrea (or azur gueules).svg",
+          "file": "er/er-arms.svg",
+          "design": "A camel in the desert within a wreath of olive branches.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Eritrea",
+          "meaning": {
+            "description": "A camel stands in the desert within a wreath of olive branches. The camel — the patient beast that carried the Eritrean people and their liberation fighters across the lowlands through the long war of independence — is the country's chosen emblem, and the olive wreath, echoing the olive branch on the flag, stands for the peace that followed.",
+            "sources": [
+              {
+                "title": "Emblem of Eritrea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Eritrea"
+              }
+            ]
+          },
+          "sha256": "34ffdb97620b70b977b221706e9c59bd92625ea58f94a150ca323b8602bee01a",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1993,
+        "event": "Eritrea became independent from Ethiopia on 24 May 1993, after a 1993 referendum confirmed the de facto independence won in 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Eritrea"
+      }
     },
     "ES": {
       "flags": [
@@ -6724,24 +6779,65 @@
         {
           "id": "gq-official-national",
           "category": "official",
-          "from": 1979,
+          "from": 1968,
           "to": 9999,
           "name": "Flag of Equatorial Guinea",
           "reuse": "flags/gq.svg",
-          "design": "The national flag of Equatorial Guinea, in the form adopted in 1979.",
+          "design": "The national flag, adopted at independence in 1968.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea"
         },
         {
           "id": "gq-current",
           "category": "historical",
-          "from": 1979,
+          "from": 1968,
           "to": 9999,
           "name": "Flag of Equatorial Guinea",
           "reuse": "flags/gq.svg",
-          "design": "The national flag of Equatorial Guinea, in the form adopted in 1979.",
+          "design": "Green, white and red bands with a blue hoist triangle and the national arms — green for natural resources, blue for the sea between the mainland and the islands, white for peace, red for the fight for independence.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea"
+        },
+        {
+          "id": "gq-spanish",
+          "category": "historical",
+          "from": 1900,
+          "to": 1968,
+          "name": "Flag of Spain",
+          "commons": "Flag of Spain (1945–1977).svg",
+          "file": "gq/gq-spain.svg",
+          "sovereign": "Spain",
+          "design": "The flag of Spain, flown over the colony of Spanish Guinea.",
+          "source": "https://en.wikipedia.org/wiki/Spanish_Guinea",
+          "sha256": "16de7afac54eb150e963299bf0ccbff83b099c110fbdc8416408373231a852ea",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gq-arms",
+          "category": "coatofarms",
+          "from": 1968,
+          "to": 9999,
+          "name": "Coat of arms of Equatorial Guinea",
+          "commons": "Coat of arms of Equatorial Guinea.svg",
+          "file": "gq/gq-arms.svg",
+          "design": "A silk-cotton tree beneath six gold stars, above the national motto.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea",
+          "meaning": {
+            "description": "The silver silk-cotton tree at the centre is the “God tree” (árbol de Dios), under which the first treaty between a local ruler and Spain is said to have been signed. Six six-pointed gold stars above stand for the mainland (Río Muni) and the five inhabited islands. The scroll reads Unidad, Paz, Justicia — “Unity, Peace, Justice.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Equatorial Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea"
+              }
+            ]
+          },
+          "sha256": "529c1e638443e4727bdd7e49ecbf8dfe3d8e45e2a4df629066a643054d034e7f",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1968,
+        "event": "Equatorial Guinea became independent from Spain on 12 October 1968",
+        "source": "https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea"
+      }
     },
     "GR": {
       "flags": [
@@ -9155,22 +9251,63 @@
           "category": "official",
           "from": 2001,
           "to": 9999,
-          "name": "Flag of Comoros",
+          "name": "Flag of the Comoros",
           "reuse": "flags/km.svg",
-          "design": "The national flag of Comoros, in the form adopted in 2001.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Comoros"
+          "design": "The national flag, adopted in 2001.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Comoros"
         },
         {
           "id": "km-current",
           "category": "historical",
           "from": 2001,
           "to": 9999,
-          "name": "Flag of Comoros",
+          "name": "Flag of the Comoros",
           "reuse": "flags/km.svg",
-          "design": "The national flag of Comoros, in the form adopted in 2001.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Comoros"
+          "design": "Four stripes and a green triangle with a crescent and four stars — the four stripes and four stars for the four islands of the archipelago (Grande Comore, Anjouan, Mohéli and Mayotte), the crescent for Islam.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Comoros"
+        },
+        {
+          "id": "km-french",
+          "category": "historical",
+          "from": 1886,
+          "to": 1975,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "km/km-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over the Comoro Islands as a French colony.",
+          "source": "https://en.wikipedia.org/wiki/History_of_the_Comoros",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "km-arms",
+          "category": "coatofarms",
+          "from": 1978,
+          "to": 9999,
+          "name": "Seal of the Comoros",
+          "commons": "Seal of the Comoros.svg",
+          "file": "km/km-arms.svg",
+          "design": "A crescent holding four stars beneath a rising sun, within olive branches and the country's name.",
+          "source": "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros",
+          "meaning": {
+            "description": "A crescent holds four stars — the four islands of the archipelago, the same crescent and stars as on the flag — with a sun rising above and two olive branches curving around. The ring carries the country's name and motto in Arabic and French.",
+            "sources": [
+              {
+                "title": "National seal of the Comoros — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros"
+              }
+            ]
+          },
+          "sha256": "58c992304d9174df4b70f3807a014359d0b7840f21e8cfa4b39d43a275df0ed2",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1975,
+        "event": "The Comoros declared independence from France on 6 July 1975",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Comoros"
+      }
     },
     "KN": {
       "flags": [
@@ -9855,7 +9992,7 @@
           "to": 9999,
           "name": "Flag of Liberia",
           "reuse": "flags/lr.svg",
-          "design": "The national flag of Liberia, in the form adopted in 1847.",
+          "design": "The national flag, adopted at independence in 1847.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liberia"
         },
         {
@@ -9865,10 +10002,51 @@
           "to": 9999,
           "name": "Flag of Liberia",
           "reuse": "flags/lr.svg",
-          "design": "The national flag of Liberia, in the form adopted in 1847.",
+          "design": "Eleven red and white stripes with a single white star on a blue canton — modelled on the flag of the United States, from which the country's freed founders came: the eleven stripes for the signers of the declaration of independence, the star for Liberia as the first independent republic in Africa.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liberia"
+        },
+        {
+          "id": "lr-commonwealth",
+          "category": "historical",
+          "from": 1839,
+          "to": 1847,
+          "name": "Flag of the Commonwealth of Liberia",
+          "commons": "Flag of Liberia 1827-1847.png",
+          "file": "lr/lr-acs.png",
+          "priorPolity": "the Commonwealth of Liberia",
+          "design": "The flag of the settler commonwealth before independence, bearing a white cross in the canton in place of the star.",
+          "source": "https://en.wikipedia.org/wiki/American_Colonization_Society",
+          "sha256": "e4744ad471ea93dd7d2d0866daac466a69de1acf147a0fb4b7f1d7ec4ef3c533",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lr-arms",
+          "category": "coatofarms",
+          "from": 1847,
+          "to": 9999,
+          "name": "Coat of arms of Liberia",
+          "commons": "Coat of arms of Liberia.svg",
+          "file": "lr/lr-arms.svg",
+          "design": "A ship arriving beneath a rising sun, with a palm tree, a plough and a dove.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia",
+          "meaning": {
+            "description": "The shield shows a ship arriving under sail — the vessel that brought the freed people from America who founded the country — on a sea beneath a rising sun, the birth of the nation. A palm tree, the most versatile source of food, stands for prosperity; a plough and a spade for the dignity of labour; and a white dove bearing a scroll for the message of peace. The ribbon reads “The Love of Liberty Brought Us Here.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Liberia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia"
+              }
+            ]
+          },
+          "sha256": "2f6ed68a1f3fc1613e361d5ccc8a1ac850651da86e7d33cd2a5366f1a2dbab50",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1847,
+        "event": "Liberia declared independence on 26 July 1847, the first republic founded by freed people from the United States",
+        "source": "https://en.wikipedia.org/wiki/History_of_Liberia"
+      }
     },
     "LS": {
       "flags": [
@@ -13290,7 +13468,7 @@
           "to": 9999,
           "name": "Flag of Papua New Guinea",
           "reuse": "flags/pg.svg",
-          "design": "The national flag of Papua New Guinea, in the form adopted in 1971.",
+          "design": "The national flag, adopted in 1971.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
         },
         {
@@ -13300,10 +13478,65 @@
           "to": 9999,
           "name": "Flag of Papua New Guinea",
           "reuse": "flags/pg.svg",
-          "design": "The national flag of Papua New Guinea, in the form adopted in 1971.",
+          "design": "A diagonal division with the Southern Cross in white on the black lower half and a golden Raggiana bird of paradise on the red upper half — designed by a schoolgirl, Susan Karike, and adopted in 1971.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
+        },
+        {
+          "id": "pg-australian",
+          "category": "historical",
+          "from": 1949,
+          "to": 1975,
+          "name": "Flag of Australia",
+          "commons": "Flag of Australia.svg",
+          "file": "pg/pg-australia.svg",
+          "sovereign": "Australia",
+          "design": "The flag of Australia, which administered the Territory of Papua and New Guinea until independence.",
+          "source": "https://en.wikipedia.org/wiki/Territory_of_Papua_and_New_Guinea",
+          "sha256": "8ccf95cf3507e88d10aa57a1e3b3853d72933c6784e6f67fe3cd3bf12ea68a4d",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "pg-german",
+          "category": "historical",
+          "from": 1884,
+          "to": 1914,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "pg/pg-german.svg",
+          "sovereign": "the German Empire",
+          "design": "The flag of the German Empire, which held the north-east as German New Guinea until 1914.",
+          "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "pg-arms",
+          "category": "coatofarms",
+          "from": 1971,
+          "to": 9999,
+          "name": "Emblem of Papua New Guinea",
+          "commons": "Emblem of Papua New Guinea.svg",
+          "file": "pg/pg-arms.svg",
+          "design": "A bird of paradise atop a spear and a kundu drum.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea",
+          "meaning": {
+            "description": "A Raggiana bird of paradise — the national bird, also on the flag — perches above a spear and a kundu drum set crosswise, the traditional weapon and the traditional hand-drum of the country's peoples. The bird stands for the emerging nation, the drum and spear for its cultures.",
+            "sources": [
+              {
+                "title": "Emblem of Papua New Guinea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea"
+              }
+            ]
+          },
+          "sha256": "f3f87b1f5a1be223db1477ea601c7905e983367df28df37990167676461f85eb",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1975,
+        "event": "Papua New Guinea became independent from Australia on 16 September 1975",
+        "source": "https://en.wikipedia.org/wiki/History_of_Papua_New_Guinea"
+      }
     },
     "PH": {
       "flags": [

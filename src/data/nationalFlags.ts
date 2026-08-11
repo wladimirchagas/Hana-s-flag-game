@@ -581,8 +581,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "eg-arms", category: "coatofarms", name: "Coat of arms of Egypt", from: 1984, to: 9999, path: "national-flags/eg/egypt-arms.svg", design: "The Eagle of Saladin, bearing a shield in the flag's colours and standing on a scroll with the name of the state.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
   ],
   "ER": [
-    { id: "er-official-national", category: "official", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag of Eritrea, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
-    { id: "er-current", category: "historical", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag of Eritrea, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
+    { id: "er-official-national", category: "official", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag, adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
+    { id: "er-current", category: "historical", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "A red triangle bearing a gold olive wreath and branch, between green and blue triangles — based on the flag of the EPLF that won independence: red for the struggle, green for agriculture, blue for the sea, the wreath for peace.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
+    { id: "er-ethiopian", category: "historical", name: "Flag of Ethiopia", from: 1952, to: 1974, sovereign: "Ethiopia", path: "national-flags/er/er-ethiopia.svg", design: "The imperial flag of Ethiopia, which federated with and then annexed Eritrea from 1952.", source: "https://en.wikipedia.org/wiki/Federation_of_Ethiopia_and_Eritrea" },
+    { id: "er-italian", category: "historical", name: "Flag of Italy", from: 1890, to: 1941, sovereign: "Italy", path: "national-flags/er/er-italy.svg", design: "The flag of the Kingdom of Italy, which ruled Eritrea as its first colony from 1890 until 1941.", source: "https://en.wikipedia.org/wiki/Italian_Eritrea" },
+    { id: "er-arms", category: "coatofarms", name: "Emblem of Eritrea", from: 1993, to: 9999, path: "national-flags/er/er-arms.svg", design: "A camel in the desert within a wreath of olive branches.", source: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
   ],
   "ES": [
     { id: "es-official-national", category: "official", name: "Flag of Spain", from: 1981, to: 9999, primary: true, path: "flags/es.svg", design: "The national flag and ensign, under Article 4 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
@@ -704,8 +707,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gn-arms", category: "coatofarms", name: "Coat of arms of Guinea", from: 1958, to: 9999, path: "national-flags/gn/gn-arms.svg", design: "A dove holding an olive branch, above a shield in the national colours and a ribbon with the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
   ],
   "GQ": [
-    { id: "gq-official-national", category: "official", name: "Flag of Equatorial Guinea", from: 1979, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag of Equatorial Guinea, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
-    { id: "gq-current", category: "historical", name: "Flag of Equatorial Guinea", from: 1979, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag of Equatorial Guinea, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
+    { id: "gq-official-national", category: "official", name: "Flag of Equatorial Guinea", from: 1968, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
+    { id: "gq-current", category: "historical", name: "Flag of Equatorial Guinea", from: 1968, to: 9999, primary: true, path: "flags/gq.svg", design: "Green, white and red bands with a blue hoist triangle and the national arms — green for natural resources, blue for the sea between the mainland and the islands, white for peace, red for the fight for independence.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
+    { id: "gq-spanish", category: "historical", name: "Flag of Spain", from: 1900, to: 1968, sovereign: "Spain", path: "national-flags/gq/gq-spain.svg", design: "The flag of Spain, flown over the colony of Spanish Guinea.", source: "https://en.wikipedia.org/wiki/Spanish_Guinea" },
+    { id: "gq-arms", category: "coatofarms", name: "Coat of arms of Equatorial Guinea", from: 1968, to: 9999, path: "national-flags/gq/gq-arms.svg", design: "A silk-cotton tree beneath six gold stars, above the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
   ],
   "GR": [
     { id: "gr-official-national", category: "official", name: "Flag of Greece", from: 1822, to: 9999, primary: true, path: "flags/gr.svg", design: "The national flag of Greece, in the form adopted in 1822.", source: "https://en.wikipedia.org/wiki/Flag_of_Greece" },
@@ -928,8 +933,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ki-current", category: "historical", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag of Kiribati, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
   ],
   "KM": [
-    { id: "km-official-national", category: "official", name: "Flag of Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag of Comoros, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Comoros" },
-    { id: "km-current", category: "historical", name: "Flag of Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag of Comoros, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Comoros" },
+    { id: "km-official-national", category: "official", name: "Flag of the Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag, adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    { id: "km-current", category: "historical", name: "Flag of the Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "Four stripes and a green triangle with a crescent and four stars — the four stripes and four stars for the four islands of the archipelago (Grande Comore, Anjouan, Mohéli and Mayotte), the crescent for Islam.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    { id: "km-french", category: "historical", name: "Flag of France", from: 1886, to: 1975, sovereign: "France", path: "national-flags/km/km-french.svg", design: "The French Tricolour, flown over the Comoro Islands as a French colony.", source: "https://en.wikipedia.org/wiki/History_of_the_Comoros" },
+    { id: "km-arms", category: "coatofarms", name: "Seal of the Comoros", from: 1978, to: 9999, path: "national-flags/km/km-arms.svg", design: "A crescent holding four stars beneath a rising sun, within olive branches and the country's name.", source: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
   ],
   "KN": [
     { id: "kn-official-national", category: "official", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "The national flag of Saint Kitts and Nevis, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
@@ -1001,8 +1008,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lk-emblem", category: "coatofarms", name: "Emblem of Sri Lanka", from: 1972, to: 9999, path: "national-flags/lk/srilanka-emblem.svg", design: "A gold lion passant holding a sword, within blue lotus petals on a grain vase, beneath the Dharmacakra and between the sun and the moon.", source: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
   ],
   "LR": [
-    { id: "lr-official-national", category: "official", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag of Liberia, in the form adopted in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
-    { id: "lr-current", category: "historical", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag of Liberia, in the form adopted in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
+    { id: "lr-official-national", category: "official", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag, adopted at independence in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
+    { id: "lr-current", category: "historical", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "Eleven red and white stripes with a single white star on a blue canton — modelled on the flag of the United States, from which the country's freed founders came: the eleven stripes for the signers of the declaration of independence, the star for Liberia as the first independent republic in Africa.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
+    { id: "lr-commonwealth", category: "historical", name: "Flag of the Commonwealth of Liberia", from: 1839, to: 1847, priorPolity: "the Commonwealth of Liberia", path: "national-flags/lr/lr-acs.png", design: "The flag of the settler commonwealth before independence, bearing a white cross in the canton in place of the star.", source: "https://en.wikipedia.org/wiki/American_Colonization_Society" },
+    { id: "lr-arms", category: "coatofarms", name: "Coat of arms of Liberia", from: 1847, to: 9999, path: "national-flags/lr/lr-arms.svg", design: "A ship arriving beneath a rising sun, with a palm tree, a plough and a dove.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia" },
   ],
   "LS": [
     { id: "ls-official-national", category: "official", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "The national flag, adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
@@ -1317,8 +1326,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pe-arms", category: "coatofarms", name: "National coat of arms of Peru", from: 1825, to: 9999, path: "national-flags/pe/peru-arms.svg", design: "A shield of three fields — a vicuña, a cinchona tree and a cornucopia spilling coins — between a palm and a laurel branch beneath a civic crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
   ],
   "PG": [
-    { id: "pg-official-national", category: "official", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag of Papua New Guinea, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
-    { id: "pg-current", category: "historical", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag of Papua New Guinea, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    { id: "pg-official-national", category: "official", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag, adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    { id: "pg-current", category: "historical", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "A diagonal division with the Southern Cross in white on the black lower half and a golden Raggiana bird of paradise on the red upper half — designed by a schoolgirl, Susan Karike, and adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
+    { id: "pg-australian", category: "historical", name: "Flag of Australia", from: 1949, to: 1975, sovereign: "Australia", path: "national-flags/pg/pg-australia.svg", design: "The flag of Australia, which administered the Territory of Papua and New Guinea until independence.", source: "https://en.wikipedia.org/wiki/Territory_of_Papua_and_New_Guinea" },
+    { id: "pg-german", category: "historical", name: "Flag of the German Empire", from: 1884, to: 1914, sovereign: "the German Empire", path: "national-flags/pg/pg-german.svg", design: "The flag of the German Empire, which held the north-east as German New Guinea until 1914.", source: "https://en.wikipedia.org/wiki/German_New_Guinea" },
+    { id: "pg-arms", category: "coatofarms", name: "Emblem of Papua New Guinea", from: 1971, to: 9999, path: "national-flags/pg/pg-arms.svg", design: "A bird of paradise atop a spear and a kundu drum.", source: "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea" },
   ],
   "PH": [
     { id: "ph-official-national", category: "official", name: "Flag of Philippines", from: 1898, to: 9999, primary: true, path: "flags/ph.svg", design: "The national flag of Philippines, in the form adopted in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Philippines" },
@@ -1908,11 +1920,13 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
+  "ER": { year: 1993, event: "Eritrea became independent from Ethiopia on 24 May 1993, after a 1993 referendum confirmed the de facto independence won in 1991", source: "https://en.wikipedia.org/wiki/History_of_Eritrea" },
   "GA": { year: 1960, event: "Gabon became independent from France on 17 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Gabon" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "GM": { year: 1965, event: "The Gambia became independent from the United Kingdom on 18 February 1965", source: "https://en.wikipedia.org/wiki/History_of_the_Gambia" },
   "GN": { year: 1958, event: "Guinea became independent from France on 2 October 1958, the only French African territory to vote No in the 1958 constitutional referendum", source: "https://en.wikipedia.org/wiki/History_of_Guinea" },
+  "GQ": { year: 1968, event: "Equatorial Guinea became independent from Spain on 12 October 1968", source: "https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea" },
   "GW": { year: 1974, event: "Guinea-Bissau's 1973 declaration of independence from Portugal was recognised by Portugal in 1974", source: "https://en.wikipedia.org/wiki/History_of_Guinea-Bissau" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
@@ -1923,9 +1937,11 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "JO": { year: 1946, event: "Jordan became independent from the United Kingdom on 25 May 1946, ending the British mandate over Transjordan", source: "https://en.wikipedia.org/wiki/History_of_Jordan" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
   "KH": { year: 1953, event: "Independence from France, 9 November 1953", note: "Cambodia had been a French protectorate since 1863.", source: "https://en.wikipedia.org/wiki/History_of_Cambodia" },
+  "KM": { year: 1975, event: "The Comoros declared independence from France on 6 July 1975", source: "https://en.wikipedia.org/wiki/History_of_the_Comoros" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
   "LB": { year: 1943, event: "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon", source: "https://en.wikipedia.org/wiki/History_of_Lebanon" },
+  "LR": { year: 1847, event: "Liberia declared independence on 26 July 1847, the first republic founded by freed people from the United States", source: "https://en.wikipedia.org/wiki/History_of_Liberia" },
   "LS": { year: 1966, event: "Lesotho became independent from the United Kingdom on 4 October 1966, ending the Basutoland protectorate", source: "https://en.wikipedia.org/wiki/History_of_Lesotho" },
   "LT": { year: 1918, event: "Lithuania restored its statehood on 16 February 1918", note: "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.", source: "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania" },
   "LU": { year: 1839, event: "The Treaty of London of 1839 established Luxembourg as an independent grand duchy", note: "Full sovereignty and neutrality were confirmed by the second Treaty of London in 1867.", source: "https://en.wikipedia.org/wiki/History_of_Luxembourg" },
@@ -1947,6 +1963,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "OM": { year: 1650, event: "Portuguese rule over the Omani coast ended when Sultan bin Saif expelled them from Muscat in 1650", note: "Oman was never a European colony in the later sense: the Portuguese held only the coastal forts from 1507, and the country has been independent since, ruled by the Al Said dynasty from 1744.", source: "https://en.wikipedia.org/wiki/History_of_Oman" },
   "PA": { year: 1903, event: "Panama separated from Colombia on 3 November 1903", note: "The isthmus had separated from Spain in 1821 and joined Gran Colombia, remaining part of Colombia until 1903.", source: "https://en.wikipedia.org/wiki/Separation_of_Panama_from_Colombia" },
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
+  "PG": { year: 1975, event: "Papua New Guinea became independent from Australia on 16 September 1975", source: "https://en.wikipedia.org/wiki/History_of_Papua_New_Guinea" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
   "RW": { year: 1962, event: "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Rwanda" },
@@ -2253,6 +2270,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Egypt — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
     ],
   },
+  "er-arms": {
+    description: "A camel stands in the desert within a wreath of olive branches. The camel — the patient beast that carried the Eritrean people and their liberation fighters across the lowlands through the long war of independence — is the country's chosen emblem, and the olive wreath, echoing the olive branch on the flag, stands for the peace that followed.",
+    sources: [
+      { title: "Emblem of Eritrea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Eritrea" },
+    ],
+  },
   "es-arms": {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
@@ -2323,6 +2346,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A white dove carrying an olive branch spreads its wings above a shield in the national red, yellow and green — the dove and branch for peace. The ribbon below carries the national motto, Travail, Justice, Solidarité — “Work, Justice, Solidarity.”",
     sources: [
       { title: "Coat of arms of Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
+    ],
+  },
+  "gq-arms": {
+    description: "The silver silk-cotton tree at the centre is the “God tree” (árbol de Dios), under which the first treaty between a local ruler and Spain is said to have been signed. Six six-pointed gold stars above stand for the mainland (Río Muni) and the five inhabited islands. The scroll reads Unidad, Paz, Justicia — “Unity, Peace, Justice.”",
+    sources: [
+      { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
     ],
   },
   "gw-arms": {
@@ -2439,6 +2468,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Royal arms of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
     ],
   },
+  "km-arms": {
+    description: "A crescent holds four stars — the four islands of the archipelago, the same crescent and stars as on the flag — with a sun rising above and two olive branches curving around. The ring carries the country's name and motto in Arabic and French.",
+    sources: [
+      { title: "National seal of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
+    ],
+  },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
@@ -2467,6 +2502,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
       { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
+    ],
+  },
+  "lr-arms": {
+    description: "The shield shows a ship arriving under sail — the vessel that brought the freed people from America who founded the country — on a sea beneath a rising sun, the birth of the nation. A palm tree, the most versatile source of food, stands for prosperity; a plough and a spade for the dignity of labour; and a white dove bearing a scroll for the message of peace. The ribbon reads “The Love of Liberty Brought Us Here.”",
+    sources: [
+      { title: "Coat of arms of Liberia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liberia" },
     ],
   },
   "ls-arms": {
@@ -2630,6 +2671,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
     sources: [
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
+  "pg-arms": {
+    description: "A Raggiana bird of paradise — the national bird, also on the flag — perches above a spear and a kundu drum set crosswise, the traditional weapon and the traditional hand-drum of the country's peoples. The bird stands for the emerging nation, the drum and spear for its cultures.",
+    sources: [
+      { title: "Emblem of Papua New Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea" },
     ],
   },
   "ph-arms": {
