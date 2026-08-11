@@ -149,6 +149,24 @@ export default defineConfig({
               },
             },
           },
+          {
+            // National-symbol images: kept out of the precache (globIgnores) so
+            // the install stays small, but cached on first view so a country's
+            // tab keeps working offline once it has been opened. CacheFirst,
+            // because these are immutable — an entry's bytes are pinned by a
+            // recorded sha256, so a changed image always arrives under a new
+            // filename rather than by mutating an existing one.
+            urlPattern: ({ sameOrigin, url }) =>
+              sameOrigin && url.pathname.includes('/national-flags/'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'national-symbols',
+              expiration: {
+                maxEntries: 300,
+                maxAgeSeconds: 60 * 60 * 24 * 30,
+              },
+            },
+          },
         ],
         // Purge precaches from earlier builds when a new service worker activates.
         cleanupOutdatedCaches: true,
@@ -159,7 +177,14 @@ export default defineConfig({
         // sub-national mode; load them on demand rather than bloating the
         // install. National + territory flags (public/flags/*.svg) stay
         // precached — they're small and on the main flag grid.
-        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**', '**/flags/sub/**'],
+        // National SYMBOLS (public/national-flags/**) are the same case and then
+        // some: ~700 files totalling ~176 MB, shown only inside one country's
+        // "National symbols" tab. Precaching them would have put the whole
+        // corpus into every visitor's install; three of them (a 11.8 MB Serbian
+        // presidential standard, two 6 MB German colonial flags) also exceed
+        // maximumFileSizeToCacheInBytes, which vite-plugin-pwa treats as a BUILD
+        // FAILURE — that is how this was found, after the deploy went red.
+        globIgnores: ['**/countries-50m.json', '**/historical-flags/**', '**/historical-maps/**', '**/ogv/**', '**/subdivisions/**', '**/flags/sub/**', '**/national-flags/**'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
       devOptions: {
