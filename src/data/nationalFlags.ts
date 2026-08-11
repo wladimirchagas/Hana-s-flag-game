@@ -249,8 +249,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bg-arms", category: "coatofarms", name: "Coat of arms of Bulgaria", path: "national-flags/bg/bg-arms.svg", design: "A crowned golden lion rampant on a dark-red shield, held by two crowned lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
   ],
   "BH": [
-    { id: "bh-official-national", category: "official", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag of Bahrain, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
-    { id: "bh-current", category: "historical", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag of Bahrain, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    { id: "bh-official-national", category: "official", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    { id: "bh-current", category: "historical", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "White and red divided by a serrated line of five white points — one for each of the five pillars of Islam — the red the traditional colour of the Gulf states, the white for peace.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    { id: "bh-1972", category: "historical", name: "Flag of Bahrain (1972–2002)", from: 1972, to: 2002, path: "national-flags/bh/bh-1972.svg", design: "The earlier flag, with eight white points along the serration, before the number was reduced to five in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    { id: "bh-1932", category: "historical", name: "Flag of Bahrain (1932–1972)", from: 1932, to: 1972, path: "national-flags/bh/bh-1932.svg", design: "The first serrated flag, adopted in 1932 to distinguish Bahrain's red banner from those of its neighbours.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
+    { id: "bh-arms", category: "coatofarms", name: "Coat of arms of Bahrain", from: 1932, to: 9999, path: "national-flags/bh/bh-arms.svg", design: "The serrated red-and-white shield of the flag, on red and white mantling.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
   ],
   "BI": [
     { id: "bi-official-national", category: "official", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag of Burundi, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
@@ -322,8 +325,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bs-arms", category: "coatofarms", name: "Coat of arms of the Bahamas", from: 1971, to: 9999, path: "national-flags/bs/bahamas-arms.svg", design: "Columbus's ship the Santa María beneath a sun, on a shield held by a marlin and a flamingo, crested with a conch shell and palm fronds, over the motto Pirates Expelled, Commerce Restored.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
   ],
   "BT": [
-    { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag of Bhutan, in the form adopted in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
-    { id: "bt-current", category: "historical", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag of Bhutan, in the form adopted in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+    { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag, standardised in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+    { id: "bt-current", category: "historical", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "A white dragon across a field divided yellow over orange — the dragon (Druk, the thunder dragon) for the country itself, yellow for the secular authority of the king, orange for the Buddhist religion, the dragon's jewels for the nation's wealth.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+    { id: "bt-arms", category: "coatofarms", name: "Emblem of Bhutan", from: 1980, to: 9999, path: "national-flags/bt/bt-arms.svg", design: "Two crossed vajras over a lotus, a jewel and two dragons, in a circle.", source: "https://en.wikipedia.org/wiki/Emblem_of_Bhutan" },
   ],
   "BW": [
     { id: "bw-official-national", category: "official", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "The national flag of Botswana, adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
@@ -528,8 +532,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dm-current", category: "historical", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag of Dominica, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
   ],
   "DO": [
-    { id: "do-official-national", category: "official", name: "Flag of Dominican Republic", from: 1862, to: 9999, primary: true, path: "flags/do.svg", design: "The national flag of Dominican Republic, in the form adopted in 1862.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominican_Republic" },
-    { id: "do-current", category: "historical", name: "Flag of Dominican Republic", from: 1862, to: 9999, primary: true, path: "flags/do.svg", design: "The national flag of Dominican Republic, in the form adopted in 1862.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominican_Republic" },
+    { id: "do-official-national", category: "official", name: "Flag of the Dominican Republic", from: 1844, to: 9999, primary: true, path: "flags/do.svg", design: "The national flag, adopted at independence in 1844.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
+    { id: "do-current", category: "historical", name: "Flag of the Dominican Republic", from: 1844, to: 9999, primary: true, path: "flags/do.svg", design: "A white cross dividing blue and red quarters, with the national arms at the centre — the cross for faith, blue for liberty, red for the blood of the fight for independence.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
+    { id: "do-spanish", category: "historical", name: "Cross of Burgundy flag", from: 1526, to: 1821, sovereign: "Spain", path: "national-flags/do/do-spain.svg", design: "The Cross of Burgundy, the flag Spain flew across its American empire, over Santo Domingo — the oldest European colony in the Americas.", source: "https://en.wikipedia.org/wiki/Captaincy_General_of_Santo_Domingo" },
+    { id: "do-arms", category: "coatofarms", name: "Coat of arms of the Dominican Republic", from: 1844, to: 9999, path: "national-flags/do/do-arms.svg", design: "An open Bible and cross with the national flag, framed by laurel and palm.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic" },
   ],
   "DZ": [
     { id: "dz-official-national", category: "official", name: "Flag of Algeria", from: 1962, to: 9999, primary: true, path: "flags/dz.svg", design: "The national flag of Algeria, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Algeria" },
@@ -746,8 +752,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gy-arms", category: "coatofarms", name: "Coat of arms of Guyana", from: 1966, to: 9999, path: "national-flags/gy/guyana-arms.svg", design: "A shield of three wavy blue lines between the Victoria lily and the hoatzin, held by two jaguars with a pickaxe and sugar cane, crested with a Cacique's headdress, over a scroll bearing the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
   ],
   "HN": [
-    { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag of Honduras, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
-    { id: "hn-current", category: "historical", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag of Honduras, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
+    { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
+    { id: "hn-current", category: "historical", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "Two blue bands around a white band bearing five blue stars — the blue and white of the old Central American union, the five stars for its five member states and the hope they might unite again.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
+    { id: "hn-federation", category: "historical", name: "Flag of the Federal Republic of Central America", from: 1823, to: 1841, path: "national-flags/hn/hn-federation.svg", design: "The blue-white-blue flag of the Federal Republic of Central America, of which Honduras was a part after independence from Spain.", source: "https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America" },
+    { id: "hn-spanish", category: "historical", name: "Cross of Burgundy flag", from: 1524, to: 1821, sovereign: "Spain", path: "national-flags/hn/hn-spain.svg", design: "The Cross of Burgundy, the flag Spain flew across its American empire, over Honduras until independence.", source: "https://en.wikipedia.org/wiki/New_Spain" },
+    { id: "hn-arms", category: "coatofarms", name: "Coat of arms of Honduras", from: 1825, to: 9999, path: "national-flags/hn/hn-arms.svg", design: "A volcano between two towers rising from the sea, under a rainbow and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Honduras" },
   ],
   "HR": [
     { id: "hr-official-national", category: "official", name: "Flag of Croatia", from: 1990, to: 9999, primary: true, path: "flags/hr.svg", design: "The national flag of Croatia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Croatia" },
@@ -764,8 +773,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "hr-arms", category: "coatofarms", name: "Coat of arms of Croatia", from: 1990, to: 9999, path: "national-flags/hr/croatia-arms.svg", design: "A red-and-white chequy shield of 25 fields beneath a crown of five smaller shields.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
   ],
   "HT": [
-    { id: "ht-official-national", category: "official", name: "Flag of Haiti", from: 1806, to: 9999, primary: true, path: "flags/ht.svg", design: "The national flag of Haiti, in the form adopted in 1806.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
-    { id: "ht-current", category: "historical", name: "Flag of Haiti", from: 1806, to: 9999, primary: true, path: "flags/ht.svg", design: "The national flag of Haiti, in the form adopted in 1806.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+    { id: "ht-official-national", category: "official", name: "Flag of Haiti", from: 1986, to: 9999, primary: true, path: "flags/ht.svg", design: "The national flag, in the form restored in 1986.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+    { id: "ht-current", category: "historical", name: "Flag of Haiti", from: 1986, to: 9999, primary: true, path: "flags/ht.svg", design: "Blue over red with the national arms on a white panel — the blue and red said to be the French Tricolour with the white torn out, for the break with France; restored in 1986 after the fall of the Duvaliers.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+    { id: "ht-duvalier", category: "historical", name: "Flag of Haiti (1964–1986)", from: 1964, to: 1986, path: "national-flags/ht/ht-1964.svg", design: "The black-and-red flag of the Duvalier dictatorship, which replaced the blue and red from 1964 until 1986.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
+    { id: "ht-french", category: "historical", name: "Flag of France", from: 1794, to: 1804, sovereign: "France", path: "national-flags/ht/ht-french.svg", design: "The French Tricolour, flown over the colony of Saint-Domingue in its last decade, before the enslaved population overthrew French rule.", source: "https://en.wikipedia.org/wiki/Saint-Domingue" },
+    { id: "ht-arms", category: "coatofarms", name: "Coat of arms of Haiti", from: 1807, to: 9999, path: "national-flags/ht/ht-arms.svg", design: "A palm topped with a liberty cap among war trophies and six flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
   ],
   "HU": [
     { id: "hu-official-national", category: "official", name: "Flag of Hungary", from: 1957, to: 9999, primary: true, path: "flags/hu.svg", design: "The national flag of Hungary, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Hungary" },
@@ -1929,6 +1941,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CV": { year: 1975, event: "Cape Verde became independent from Portugal on 5 July 1975", source: "https://en.wikipedia.org/wiki/History_of_Cape_Verde" },
   "CY": { year: 1960, event: "Independence from the United Kingdom, 16 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Cyprus" },
   "DJ": { year: 1977, event: "Djibouti became independent from France on 27 June 1977, ending French rule over the Territory of the Afars and the Issas", source: "https://en.wikipedia.org/wiki/History_of_Djibouti" },
+  "DO": { year: 1844, event: "The Dominican Republic declared independence on 27 February 1844, separating from Haiti, which had occupied it since 1822", source: "https://en.wikipedia.org/wiki/History_of_the_Dominican_Republic" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
   "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
@@ -1944,7 +1957,9 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "GT": { year: 1821, event: "Guatemala became independent from Spain on 15 September 1821", source: "https://en.wikipedia.org/wiki/History_of_Guatemala" },
   "GW": { year: 1974, event: "Guinea-Bissau's 1973 declaration of independence from Portugal was recognised by Portugal in 1974", source: "https://en.wikipedia.org/wiki/History_of_Guinea-Bissau" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
+  "HN": { year: 1821, event: "Honduras became independent from Spain on 15 September 1821", source: "https://en.wikipedia.org/wiki/History_of_Honduras" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
+  "HT": { year: 1804, event: "Haiti declared independence from France on 1 January 1804, becoming the first independent Black republic and the first nation founded by former slaves", source: "https://en.wikipedia.org/wiki/Haitian_Revolution" },
   "IE": { year: 1922, event: "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty", note: "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Irish_Free_State" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "IS": { year: 1944, event: "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown", note: "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.", source: "https://en.wikipedia.org/wiki/History_of_Iceland" },
@@ -2106,6 +2121,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
     ],
   },
+  "bh-arms": {
+    description: "The arms are simply the shield of the flag — white and red divided by the serrated line whose white points stand for the five pillars of Islam — set on red and white mantling, and unusually for heraldry, without a helm. The same serrated shield forms the hoist of the national flag.",
+    sources: [
+      { title: "Coat of arms of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
+    ],
+  },
   "bj-arms": {
     description: "The shield is quartered: a Somba tower-house for the country's own history; the Star of Benin, its highest decoration; a sailing ship for the arrival of the Europeans; and a palm tree. Two leopards — the national animal — support it, and beneath, two cornucopias pour out ears of corn. The ribbon reads Fraternité, Justice, Travail — “Fraternity, Justice, Work.”",
     sources: [
@@ -2165,6 +2186,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield shows Columbus's flagship the Santa María sailing under a rising golden sun — the islands were his first American landfall in 1492, and the sun is their light and future. The supporters are the country's own creatures: a blue marlin and a flamingo, the national bird. The crest above is a conch shell before a spray of palm fronds — the conch a staple food of the islands. The motto beneath, EXPULSIS PIRATIS – RESTITUTA COMMERCIA, means \"Pirates Expelled, Commerce Restored\", recalling the early 18th century when the Bahamas were a pirate haven — the Flying Gang of Nassau — until the Crown drove them out.",
     sources: [
       { title: "Coat of arms of the Bahamas — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
+    ],
+  },
+  "bt-arms": {
+    description: "The emblem keeps the symbols of the flag in a circle. Two crossed vajras (dorji, thunderbolts) rest on a lotus for purity, beneath a jewel for the sovereign, and two dragons — male and female — encircle the whole: the Druk, the thunder dragon that gives Bhutan its name, Druk Yul, “Land of the Thunder Dragon.” The crossed vajras stand for the harmony of secular and religious power.",
+    sources: [
+      { title: "Emblem of Bhutan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Bhutan" },
     ],
   },
   "bw-arms": {
@@ -2267,6 +2294,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "These are among the oldest arms in continuous national use anywhere: the earliest known depiction is on a seal of King Canute VI around 1194, and the earliest documentation of the colours is around 1270. The red figures scattered around the lions are commonly drawn as hearts, but they are not hearts — a royal decree of 1972 still specifies them as søblade, water-lily leaves, and that is what they originally were. Their number was historically unregulated and could be far higher; Frederick VI fixed it at nine in 1819, in the same act that declared the beasts to be lions and turned them to face forward.",
     sources: [
       { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
+    ],
+  },
+  "do-arms": {
+    description: "At the centre, on an open Bible showing the Gospel of John (8:31–32, “the truth shall make you free”) beneath a small golden cross, stands the flag of the republic — the Dominican Republic is the only country to carry a Bible on its arms. Six flags on lances fan out behind, framed by a branch of laurel for glory and a branch of palm for peace. The ribbon above reads Dios, Patria, Libertad — “God, Homeland, Liberty.”",
+    sources: [
+      { title: "Coat of arms of the Dominican Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic" },
     ],
   },
   "dz-emblem": {
@@ -2401,10 +2434,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     ],
   },
+  "hn-arms": {
+    description: "An oval seal shows a volcano between two castle towers rising from the sea, under a rainbow and a rising sun — the promise of a new nation. The words around it name the free, sovereign and independent Republic of Honduras and the date of independence, 15 September 1821. Oak and pine trees, quivers of arrows, cornucopias and mining tools around the seal stand for the country's forests, its peoples and its mineral wealth.",
+    sources: [
+      { title: "Coat of arms of Honduras — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Honduras" },
+    ],
+  },
   "hr-arms": {
     description: "The main shield is the šahovnica, a chequerboard of 13 red and 12 white fields, in use since the late 15th century and the country's principal emblem. The crown above it is made of five smaller shields, the historic arms of the lands that make up Croatia — the oldest Croatian arms, Dubrovnik, Dalmatia, Istria and Slavonia. The first arms of Croatia were in fact the three leopard's or lion's heads that now stand for Dalmatia; from the late 15th century those came to be read as Dalmatian, and after the 19th-century national revival — during which the Italian-Dalmatianist Autonomist Party appropriated the three heads — the chequerboard became the preferred national symbol.",
     sources: [
       { title: "Coat of arms of Croatia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
+    ],
+  },
+  "ht-arms": {
+    description: "On a green lawn a royal palm topped with the red liberty cap of freedom rises among the trophies of the war of independence — cannons, drums, bugles, cannonballs and anchors — and six national flags on their staffs. The scroll reads L'Union Fait La Force — “Unity Makes Strength.” The arms record the victory of 1804, when Haiti became the first independent Black republic.",
+    sources: [
+      { title: "Coat of arms of Haiti — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti" },
     ],
   },
   "hu-arms": {

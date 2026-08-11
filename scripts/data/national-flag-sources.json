@@ -1724,7 +1724,7 @@
           "to": 9999,
           "name": "Flag of Bahrain",
           "reuse": "flags/bh.svg",
-          "design": "The national flag of Bahrain, in the form adopted in 2002.",
+          "design": "The national flag, in the form adopted in 2002.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
         },
         {
@@ -1734,8 +1734,56 @@
           "to": 9999,
           "name": "Flag of Bahrain",
           "reuse": "flags/bh.svg",
-          "design": "The national flag of Bahrain, in the form adopted in 2002.",
+          "design": "White and red divided by a serrated line of five white points — one for each of the five pillars of Islam — the red the traditional colour of the Gulf states, the white for peace.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
+        },
+        {
+          "id": "bh-1972",
+          "category": "historical",
+          "from": 1972,
+          "to": 2002,
+          "name": "Flag of Bahrain (1972–2002)",
+          "commons": "Flag of Bahrain (1972–2002).svg",
+          "file": "bh/bh-1972.svg",
+          "design": "The earlier flag, with eight white points along the serration, before the number was reduced to five in 2002.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain",
+          "sha256": "eadfc68c4ef3f3e666c94fccf800404a895cad77909cc28ddf3be2add4ba6082",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bh-1932",
+          "category": "historical",
+          "from": 1932,
+          "to": 1972,
+          "name": "Flag of Bahrain (1932–1972)",
+          "commons": "Flag of Bahrain (1932–1972).svg",
+          "file": "bh/bh-1932.svg",
+          "design": "The first serrated flag, adopted in 1932 to distinguish Bahrain's red banner from those of its neighbours.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain",
+          "sha256": "0a72e9838577e9022826f075821230931b9be5bfefdeb41bbb826907fea94324",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bh-arms",
+          "category": "coatofarms",
+          "from": 1932,
+          "to": 9999,
+          "name": "Coat of arms of Bahrain",
+          "commons": "Emblem of Bahrain.svg",
+          "file": "bh/bh-arms.svg",
+          "design": "The serrated red-and-white shield of the flag, on red and white mantling.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain",
+          "meaning": {
+            "description": "The arms are simply the shield of the flag — white and red divided by the serrated line whose white points stand for the five pillars of Islam — set on red and white mantling, and unusually for heraldry, without a helm. The same serrated shield forms the hoist of the national flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bahrain — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain"
+              }
+            ]
+          },
+          "sha256": "b7bc325f10807e7c29ee1ceddb6ec1031c72cb4b8e219fe9ff16718a2bbb1d5d",
+          "fetched": "2026-08-11"
         }
       ]
     },
@@ -2584,7 +2632,7 @@
           "to": 9999,
           "name": "Flag of Bhutan",
           "reuse": "flags/bt.svg",
-          "design": "The national flag of Bhutan, in the form adopted in 1969.",
+          "design": "The national flag, standardised in 1969.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
         },
         {
@@ -2594,8 +2642,30 @@
           "to": 9999,
           "name": "Flag of Bhutan",
           "reuse": "flags/bt.svg",
-          "design": "The national flag of Bhutan, in the form adopted in 1969.",
+          "design": "A white dragon across a field divided yellow over orange — the dragon (Druk, the thunder dragon) for the country itself, yellow for the secular authority of the king, orange for the Buddhist religion, the dragon's jewels for the nation's wealth.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
+        },
+        {
+          "id": "bt-arms",
+          "category": "coatofarms",
+          "from": 1980,
+          "to": 9999,
+          "name": "Emblem of Bhutan",
+          "commons": "Emblem of Bhutan.svg",
+          "file": "bt/bt-arms.svg",
+          "design": "Two crossed vajras over a lotus, a jewel and two dragons, in a circle.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Bhutan",
+          "meaning": {
+            "description": "The emblem keeps the symbols of the flag in a circle. Two crossed vajras (dorji, thunderbolts) rest on a lotus for purity, beneath a jewel for the sovereign, and two dragons — male and female — encircle the whole: the Druk, the thunder dragon that gives Bhutan its name, Druk Yul, “Land of the Thunder Dragon.” The crossed vajras stand for the harmony of secular and religious power.",
+            "sources": [
+              {
+                "title": "Emblem of Bhutan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Bhutan"
+              }
+            ]
+          },
+          "sha256": "a571b4502f00c135e85983967ef1e0e987ff8f4150c4f90b689e76e93f464e8e",
+          "fetched": "2026-08-11"
         }
       ]
     },
@@ -4822,24 +4892,65 @@
         {
           "id": "do-official-national",
           "category": "official",
-          "from": 1862,
+          "from": 1844,
           "to": 9999,
-          "name": "Flag of Dominican Republic",
+          "name": "Flag of the Dominican Republic",
           "reuse": "flags/do.svg",
-          "design": "The national flag of Dominican Republic, in the form adopted in 1862.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Dominican_Republic"
+          "design": "The national flag, adopted at independence in 1844.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic"
         },
         {
           "id": "do-current",
           "category": "historical",
-          "from": 1862,
+          "from": 1844,
           "to": 9999,
-          "name": "Flag of Dominican Republic",
+          "name": "Flag of the Dominican Republic",
           "reuse": "flags/do.svg",
-          "design": "The national flag of Dominican Republic, in the form adopted in 1862.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Dominican_Republic"
+          "design": "A white cross dividing blue and red quarters, with the national arms at the centre — the cross for faith, blue for liberty, red for the blood of the fight for independence.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic"
+        },
+        {
+          "id": "do-spanish",
+          "category": "historical",
+          "from": 1526,
+          "to": 1821,
+          "name": "Cross of Burgundy flag",
+          "commons": "Flag of Cross of Burgundy.svg",
+          "file": "do/do-spain.svg",
+          "sovereign": "Spain",
+          "design": "The Cross of Burgundy, the flag Spain flew across its American empire, over Santo Domingo — the oldest European colony in the Americas.",
+          "source": "https://en.wikipedia.org/wiki/Captaincy_General_of_Santo_Domingo",
+          "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "do-arms",
+          "category": "coatofarms",
+          "from": 1844,
+          "to": 9999,
+          "name": "Coat of arms of the Dominican Republic",
+          "commons": "Coat of arms of the Dominican Republic.svg",
+          "file": "do/do-arms.svg",
+          "design": "An open Bible and cross with the national flag, framed by laurel and palm.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic",
+          "meaning": {
+            "description": "At the centre, on an open Bible showing the Gospel of John (8:31–32, “the truth shall make you free”) beneath a small golden cross, stands the flag of the republic — the Dominican Republic is the only country to carry a Bible on its arms. Six flags on lances fan out behind, framed by a branch of laurel for glory and a branch of palm for peace. The ribbon above reads Dios, Patria, Libertad — “God, Homeland, Liberty.”",
+            "sources": [
+              {
+                "title": "Coat of arms of the Dominican Republic — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Dominican_Republic"
+              }
+            ]
+          },
+          "sha256": "6e9f74f218b620abeddf9808d95aac1cc7ea6fe99ded8c2dce69d08918154ec8",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1844,
+        "event": "The Dominican Republic declared independence on 27 February 1844, separating from Haiti, which had occupied it since 1822",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Dominican_Republic"
+      }
     },
     "DZ": {
       "flags": [
@@ -7242,7 +7353,7 @@
           "to": 9999,
           "name": "Flag of Honduras",
           "reuse": "flags/hn.svg",
-          "design": "The national flag of Honduras, in the form adopted in 1866.",
+          "design": "The national flag, in the form adopted in 1866.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Honduras"
         },
         {
@@ -7252,10 +7363,64 @@
           "to": 9999,
           "name": "Flag of Honduras",
           "reuse": "flags/hn.svg",
-          "design": "The national flag of Honduras, in the form adopted in 1866.",
+          "design": "Two blue bands around a white band bearing five blue stars — the blue and white of the old Central American union, the five stars for its five member states and the hope they might unite again.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Honduras"
+        },
+        {
+          "id": "hn-federation",
+          "category": "historical",
+          "from": 1823,
+          "to": 1841,
+          "name": "Flag of the Federal Republic of Central America",
+          "commons": "Flag of the Federal Republic of Central America.svg",
+          "file": "hn/hn-federation.svg",
+          "design": "The blue-white-blue flag of the Federal Republic of Central America, of which Honduras was a part after independence from Spain.",
+          "source": "https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America",
+          "sha256": "91b1f03c3d5c6b209ac868e2f378c4b03be679d5f421863affa0fd703acaa8d9",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "hn-spanish",
+          "category": "historical",
+          "from": 1524,
+          "to": 1821,
+          "name": "Cross of Burgundy flag",
+          "commons": "Flag of Cross of Burgundy.svg",
+          "file": "hn/hn-spain.svg",
+          "sovereign": "Spain",
+          "design": "The Cross of Burgundy, the flag Spain flew across its American empire, over Honduras until independence.",
+          "source": "https://en.wikipedia.org/wiki/New_Spain",
+          "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "hn-arms",
+          "category": "coatofarms",
+          "from": 1825,
+          "to": 9999,
+          "name": "Coat of arms of Honduras",
+          "commons": "Coat of arms of Honduras.svg",
+          "file": "hn/hn-arms.svg",
+          "design": "A volcano between two towers rising from the sea, under a rainbow and a rising sun.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Honduras",
+          "meaning": {
+            "description": "An oval seal shows a volcano between two castle towers rising from the sea, under a rainbow and a rising sun — the promise of a new nation. The words around it name the free, sovereign and independent Republic of Honduras and the date of independence, 15 September 1821. Oak and pine trees, quivers of arrows, cornucopias and mining tools around the seal stand for the country's forests, its peoples and its mineral wealth.",
+            "sources": [
+              {
+                "title": "Coat of arms of Honduras — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Honduras"
+              }
+            ]
+          },
+          "sha256": "dc88693032f79f35cbbd7df0105019f00cfd25a217a7b8d8ffb271509f941cf4",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1821,
+        "event": "Honduras became independent from Spain on 15 September 1821",
+        "source": "https://en.wikipedia.org/wiki/History_of_Honduras"
+      }
     },
     "HR": {
       "flags": [
@@ -7428,24 +7593,78 @@
         {
           "id": "ht-official-national",
           "category": "official",
-          "from": 1806,
+          "from": 1986,
           "to": 9999,
           "name": "Flag of Haiti",
           "reuse": "flags/ht.svg",
-          "design": "The national flag of Haiti, in the form adopted in 1806.",
+          "design": "The national flag, in the form restored in 1986.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Haiti"
         },
         {
           "id": "ht-current",
           "category": "historical",
-          "from": 1806,
+          "from": 1986,
           "to": 9999,
           "name": "Flag of Haiti",
           "reuse": "flags/ht.svg",
-          "design": "The national flag of Haiti, in the form adopted in 1806.",
+          "design": "Blue over red with the national arms on a white panel — the blue and red said to be the French Tricolour with the white torn out, for the break with France; restored in 1986 after the fall of the Duvaliers.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Haiti"
+        },
+        {
+          "id": "ht-duvalier",
+          "category": "historical",
+          "from": 1964,
+          "to": 1986,
+          "name": "Flag of Haiti (1964–1986)",
+          "commons": "Flag of Haiti (1964–1986).svg",
+          "file": "ht/ht-1964.svg",
+          "design": "The black-and-red flag of the Duvalier dictatorship, which replaced the blue and red from 1964 until 1986.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Haiti",
+          "sha256": "a47cf5a1bac646da53759cad52aa6bf8357e22196cd3e1f18548148bbcc72ff7",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ht-french",
+          "category": "historical",
+          "from": 1794,
+          "to": 1804,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "ht/ht-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over the colony of Saint-Domingue in its last decade, before the enslaved population overthrew French rule.",
+          "source": "https://en.wikipedia.org/wiki/Saint-Domingue",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ht-arms",
+          "category": "coatofarms",
+          "from": 1807,
+          "to": 9999,
+          "name": "Coat of arms of Haiti",
+          "commons": "Coat of arms of Haiti.svg",
+          "file": "ht/ht-arms.svg",
+          "design": "A palm topped with a liberty cap among war trophies and six flags.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti",
+          "meaning": {
+            "description": "On a green lawn a royal palm topped with the red liberty cap of freedom rises among the trophies of the war of independence — cannons, drums, bugles, cannonballs and anchors — and six national flags on their staffs. The scroll reads L'Union Fait La Force — “Unity Makes Strength.” The arms record the victory of 1804, when Haiti became the first independent Black republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Haiti — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Haiti"
+              }
+            ]
+          },
+          "sha256": "fed7adab425e0f152dd91faa325a3a7963fb49aa73030bee4e7ce090cf6c168a",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1804,
+        "event": "Haiti declared independence from France on 1 January 1804, becoming the first independent Black republic and the first nation founded by former slaves",
+        "source": "https://en.wikipedia.org/wiki/Haitian_Revolution"
+      }
     },
     "HU": {
       "flags": [
