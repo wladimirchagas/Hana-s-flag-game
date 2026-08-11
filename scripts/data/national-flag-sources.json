@@ -4267,22 +4267,76 @@
           "category": "official",
           "from": 1992,
           "to": 9999,
-          "name": "Flag of Cabo Verde",
+          "name": "Flag of Cape Verde",
           "reuse": "flags/cv.svg",
-          "design": "The national flag of Cabo Verde, in the form adopted in 1992.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cabo_Verde"
+          "design": "The national flag, adopted in 1992.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde"
         },
         {
           "id": "cv-current",
           "category": "historical",
           "from": 1992,
           "to": 9999,
-          "name": "Flag of Cabo Verde",
+          "name": "Flag of Cape Verde",
           "reuse": "flags/cv.svg",
-          "design": "The national flag of Cabo Verde, in the form adopted in 1992.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cabo_Verde"
+          "design": "A blue field with a white-and-red stripe and a ring of ten yellow stars for the ten islands — adopted in 1992, replacing the PAIGC-style flag when Cape Verde set its own course apart from Guinea-Bissau.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde"
+        },
+        {
+          "id": "cv-1975",
+          "category": "historical",
+          "from": 1975,
+          "to": 1992,
+          "name": "Flag of Cape Verde (1975–1992)",
+          "commons": "Flag of Cape Verde (1975–1992).svg",
+          "file": "cv/cv-1975.svg",
+          "design": "The first national flag — red, yellow and green with a black star in a wreath of maize — the shared emblem of the PAIGC, close to Guinea-Bissau's flag.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde",
+          "sha256": "7a11da3578f0d98a742048634d48c7349eb4ab108a7fccb7edd5b383eb752669",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cv-portuguese",
+          "category": "historical",
+          "from": 1879,
+          "to": 1975,
+          "name": "Flag of Portugal",
+          "commons": "Flag of Portugal.svg",
+          "file": "cv/cv-pt.svg",
+          "sovereign": "Portugal",
+          "design": "The flag of Portugal, flown over the colony of Cape Verde.",
+          "source": "https://en.wikipedia.org/wiki/Cape_Verde",
+          "sha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cv-arms",
+          "category": "coatofarms",
+          "from": 1992,
+          "to": 9999,
+          "name": "National emblem of Cape Verde",
+          "commons": "Coat of arms of Cape Verde.svg",
+          "file": "cv/cv-arms.svg",
+          "design": "A blue ring of ten stars around a plumb-bob, torch and triangle, above three chain links.",
+          "source": "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde",
+          "meaning": {
+            "description": "Within a blue ring bearing the country's name, a torch and a triangle stand for freedom and national unity, and a golden plumb-bob for righteousness. Three chain links at the foot stand for the unity, equality and civil rights of a democratic society. The ten gold stars around the ring are the ten islands of the archipelago — the same ten stars as on the flag.",
+            "sources": [
+              {
+                "title": "National emblem of Cape Verde — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde"
+              }
+            ]
+          },
+          "sha256": "b6f97b84d1263f34a97d9d9e09ef885b8e8329652874eac236c73ddeab8a1e35",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1975,
+        "event": "Cape Verde became independent from Portugal on 5 July 1975",
+        "source": "https://en.wikipedia.org/wiki/History_of_Cape_Verde"
+      }
     },
     "CY": {
       "flags": [
@@ -6785,7 +6839,7 @@
           "to": 9999,
           "name": "Flag of Guinea-Bissau",
           "reuse": "flags/gw.svg",
-          "design": "The national flag of Guinea-Bissau, in the form adopted in 1973.",
+          "design": "The national flag, adopted in 1973.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau"
         },
         {
@@ -6795,10 +6849,51 @@
           "to": 9999,
           "name": "Flag of Guinea-Bissau",
           "reuse": "flags/gw.svg",
-          "design": "The national flag of Guinea-Bissau, in the form adopted in 1973.",
+          "design": "A red hoist band with a black star over yellow-and-green fields — the flag of the PAIGC that won independence, in the pan-African colours.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau"
+        },
+        {
+          "id": "gw-portuguese",
+          "category": "historical",
+          "from": 1879,
+          "to": 1974,
+          "name": "Flag of Portugal",
+          "commons": "Flag of Portugal.svg",
+          "file": "gw/gw-pt.svg",
+          "sovereign": "Portugal",
+          "design": "The flag of Portugal, flown over the colony of Portuguese Guinea.",
+          "source": "https://en.wikipedia.org/wiki/Portuguese_Guinea",
+          "sha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gw-arms",
+          "category": "coatofarms",
+          "from": 1973,
+          "to": 9999,
+          "name": "Emblem of Guinea-Bissau",
+          "commons": "Emblem of Guinea-Bissau.svg",
+          "file": "gw/gw-arms.svg",
+          "design": "A black star above a scallop shell, between two olive branches, over the national motto.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau",
+          "meaning": {
+            "description": "The black star is the Black Star of Africa, the emblem of the PAIGC that led the country to independence. Below it a scallop shell marks Guinea-Bissau's place on the West African coast, and two olive branches curve up on either side. The scroll reads Unidade, Luta, Progresso — “Unity, Struggle, Progress.”",
+            "sources": [
+              {
+                "title": "Emblem of Guinea-Bissau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Guinea-Bissau"
+              }
+            ]
+          },
+          "sha256": "f6a2036122cd0f87c969b19cb45c76124e32a4a32fc170495ca0144b694bc7b4",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1974,
+        "event": "Guinea-Bissau's 1973 declaration of independence from Portugal was recognised by Portugal in 1974",
+        "source": "https://en.wikipedia.org/wiki/History_of_Guinea-Bissau"
+      }
     },
     "GY": {
       "flags": [
@@ -11049,7 +11144,7 @@
           "to": 9999,
           "name": "Flag of Mauritania",
           "reuse": "flags/mr.svg",
-          "design": "The national flag of Mauritania, in the form adopted in 2017.",
+          "design": "The national flag, in the form adopted in 2017.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritania"
         },
         {
@@ -11059,10 +11154,64 @@
           "to": 9999,
           "name": "Flag of Mauritania",
           "reuse": "flags/mr.svg",
-          "design": "The national flag of Mauritania, in the form adopted in 2017.",
+          "design": "A green field with a gold crescent and star, framed by red stripes at top and bottom — the crescent and star for Islam, green and gold for the Sahara and its people, the red bands added in 2017 for the blood of those who defended the country.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritania"
+        },
+        {
+          "id": "mr-1959",
+          "category": "historical",
+          "from": 1959,
+          "to": 2017,
+          "name": "Flag of Mauritania (1959–2017)",
+          "commons": "Flag of Mauritania (1959–2017).svg",
+          "file": "mr/mr-1959.svg",
+          "design": "The original flag — a gold crescent and star on a plain green field, without the red stripes.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritania",
+          "sha256": "57e515d6872566eee64639ac109e47d45dfdce4da4a38a605c7447f269a82c9e",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mr-french",
+          "category": "historical",
+          "from": 1904,
+          "to": 1959,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "mr/mr-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over Mauritania as part of French West Africa.",
+          "source": "https://en.wikipedia.org/wiki/French_West_Africa",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mr-arms",
+          "category": "coatofarms",
+          "from": 2018,
+          "to": 9999,
+          "name": "Seal of Mauritania",
+          "commons": "National Seal of Mauritania.svg",
+          "file": "mr/mr-arms.svg",
+          "design": "A gold star and crescent between a date palm and an ear of millet, within a ring naming the republic.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_Mauritania",
+          "meaning": {
+            "description": "A gold star and crescent — the emblems of Islam — stand between a date palm and an ear of millet, the tree and the grain of the country, on the green of the flag. The ring around them names the Islamic Republic of Mauritania in Arabic and French.",
+            "sources": [
+              {
+                "title": "Seal of Mauritania — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Mauritania"
+              }
+            ]
+          },
+          "sha256": "867749a088d0b5fcc04e95d8daec6866e65a2631569f989e2087ac4422e303db",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Mauritania became independent from France on 28 November 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Mauritania"
+      }
     },
     "MT": {
       "flags": [
@@ -15414,24 +15563,79 @@
         {
           "id": "so-official-national",
           "category": "official",
-          "from": 1960,
+          "from": 1954,
           "to": 9999,
           "name": "Flag of Somalia",
           "reuse": "flags/so.svg",
-          "design": "The national flag of Somalia, in the form adopted in 1960.",
+          "design": "The national flag, adopted in 1954.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Somalia"
         },
         {
           "id": "so-current",
           "category": "historical",
-          "from": 1960,
+          "from": 1954,
           "to": 9999,
           "name": "Flag of Somalia",
           "reuse": "flags/so.svg",
-          "design": "The national flag of Somalia, in the form adopted in 1960.",
+          "design": "A white five-pointed star on a light-blue field — the Star of Unity, its points for the lands the Somali people inhabit; the blue was originally that of the United Nations, under whose trusteeship the flag was designed in 1954.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Somalia"
+        },
+        {
+          "id": "so-italian",
+          "category": "historical",
+          "from": 1950,
+          "to": 1960,
+          "name": "Flag of Italy",
+          "commons": "Flag of Italy.svg",
+          "file": "so/so-italy.svg",
+          "sovereign": "Italy",
+          "design": "The flag of Italy, which administered the south as the UN Trust Territory of Somalia until 1960.",
+          "source": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland",
+          "sha256": "c939e50605c5a08df1aaf19818f74d2919a9d3c3b7aa7cd90520b8bfc9c5dddc",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "so-british",
+          "category": "historical",
+          "from": 1884,
+          "to": 1960,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "so/so-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown over British Somaliland in the north until 1960.",
+          "source": "https://en.wikipedia.org/wiki/British_Somaliland",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "so-arms",
+          "category": "coatofarms",
+          "from": 1956,
+          "to": 9999,
+          "name": "Coat of arms of Somalia",
+          "commons": "Coat of arms of Somalia.svg",
+          "file": "so/so-arms.svg",
+          "design": "A blue shield with the white star, held by two leopards on crossed spears.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia",
+          "meaning": {
+            "description": "A gold-framed blue shield carries the white five-pointed Star of Unity of the flag, and two leopards — a common animal and a recurring motif in Somali culture — support it, standing on two crossed spears, with palm fronds and a white ribbon below.",
+            "sources": [
+              {
+                "title": "Coat of arms of Somalia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Somalia"
+              }
+            ]
+          },
+          "sha256": "a74d54fa2e6821ed76ec035dfdf583cf8747b3908dc4bea169ee2481058457d0",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Somalia became independent on 1 July 1960, uniting the former British Somaliland and the Italian Trust Territory of Somalia",
+        "source": "https://en.wikipedia.org/wiki/History_of_Somalia"
+      }
     },
     "SR": {
       "flags": [
@@ -15555,8 +15759,8 @@
           "to": 9999,
           "name": "Flag of São Tomé and Príncipe",
           "reuse": "flags/st.svg",
-          "design": "The national flag of São Tomé and Príncipe, in the form adopted in 1975.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
+          "design": "The national flag, adopted at independence in 1975.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe"
         },
         {
           "id": "st-current",
@@ -15565,10 +15769,51 @@
           "to": 9999,
           "name": "Flag of São Tomé and Príncipe",
           "reuse": "flags/st.svg",
-          "design": "The national flag of São Tomé and Príncipe, in the form adopted in 1975.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
+          "design": "Green-yellow-green bands with a red hoist triangle and two black stars — the pan-African colours, the two stars for the two islands.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe"
+        },
+        {
+          "id": "st-portuguese",
+          "category": "historical",
+          "from": 1879,
+          "to": 1975,
+          "name": "Flag of Portugal",
+          "commons": "Flag of Portugal.svg",
+          "file": "st/st-pt.svg",
+          "sovereign": "Portugal",
+          "design": "The flag of Portugal, flown over the colony of São Tomé and Príncipe.",
+          "source": "https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe",
+          "sha256": "20ddeda8a3c2960f6d8d7cf88cec827aad537143431a0828e789f55d0cd923ce",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "st-arms",
+          "category": "coatofarms",
+          "from": 1975,
+          "to": 9999,
+          "name": "Coat of arms of São Tomé and Príncipe",
+          "commons": "Coat of arms of São Tomé and Príncipe.svg",
+          "file": "st/st-arms.svg",
+          "design": "A cocoa-pod-shaped shield with a palm, held by a falcon and a parrot, beneath a blue star.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_São_Tomé_and_Príncipe",
+          "meaning": {
+            "description": "A falcon and a grey parrot — birds of the islands — support a shield shaped like a cocoa pod, the crop on which the islands' economy was built, with a palm tree at its centre. A blue star crowns the arms. The ribbon reads Unidade, Disciplina, Trabalho — “Unity, Discipline, Work.”",
+            "sources": [
+              {
+                "title": "Coat of arms of São Tomé and Príncipe — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_São_Tomé_and_Príncipe"
+              }
+            ]
+          },
+          "sha256": "27f873cb3e598552a5715967c2a430d6574fd1cf112b1eddc26005412fa189c4",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1975,
+        "event": "São Tomé and Príncipe became independent from Portugal on 12 July 1975",
+        "source": "https://en.wikipedia.org/wiki/History_of_São_Tomé_and_Príncipe"
+      }
     },
     "SV": {
       "flags": [
