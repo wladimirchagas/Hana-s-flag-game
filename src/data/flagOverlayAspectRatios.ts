@@ -1077,7 +1077,6 @@ export const FLAG_OVERLAY_ASPECT_RATIOS: Readonly<Record<string, number>> = {
   "sub/NO/NO-38.svg": 1.4814,
   "sub/NO/NO-50.svg": 0.8122,
   "sub/NO/NO-54.svg": 1.6,
-  "sub/PA/PA-3.svg": 1.4795,
   "sub/PA/PA-7.svg": 1.5938,
   "sub/PE/PE-AMA.svg": 1.6385,
   "sub/PE/PE-CUS.svg": 1.75,
