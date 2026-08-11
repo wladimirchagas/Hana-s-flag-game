@@ -1205,8 +1205,77 @@
           "reuse": "flags/bb.svg",
           "design": "The national flag of Barbados, in the form adopted in 1966.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Barbados"
+        },
+        {
+          "id": "bb-west-indies",
+          "category": "historical",
+          "name": "Flag of the West Indies Federation",
+          "from": 1958,
+          "to": 1962,
+          "priorPolity": "the West Indies Federation",
+          "commons": "Flag of the West Indies Federation (1958–1962).svg",
+          "file": "bb/barbados-west-indies.svg",
+          "design": "The blue flag with wavy white lines and a gold sun, of the short-lived federation of British Caribbean colonies Barbados belonged to.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Barbadian_flags",
+          "sha256": "30be5b49804366875b68cc52e75be1868c74489379b22d4855a1b9c59c10144e",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bb-colonial",
+          "category": "historical",
+          "name": "Flag of the Colony of Barbados",
+          "from": 1870,
+          "to": 1966,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the Governor of Barbados (1870–1966).svg",
+          "file": "bb/barbados-colonial.svg",
+          "design": "A British Blue Ensign defaced with the colony's badge, Britannia in a chariot.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Barbadian_flags",
+          "sha256": "19d7d057465e62ab46d83759bd95ece48a0c7b9c9a3de442c49b2d6da9166710",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bb-president",
+          "category": "standard",
+          "name": "Standard of the President of Barbados",
+          "from": 2021,
+          "to": 9999,
+          "commons": "Flag of the President of Barbados.svg",
+          "file": "bb/barbados-president.svg",
+          "design": "The presidential standard, adopted when Barbados became a republic in 2021.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Barbadian_flags",
+          "sha256": "8d96fb3ab52bf5d5b2cd4a5bf4fe4407d729196c863859948e984138670ca698",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bb-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Barbados",
+          "from": 1966,
+          "to": 9999,
+          "commons": "Coat of arms of Barbados.svg",
+          "file": "bb/barbados-arms.svg",
+          "design": "A bearded fig tree between two Pride of Barbados flowers on gold, held by a dolphinfish and a pelican, crested with an arm holding two sugar canes, over the motto Pride and Industry.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados",
+          "meaning": {
+            "description": "The shield names the island literally: the bearded fig tree is the Ficus citrifolia after which the Portuguese called the island Os Barbados, \"the bearded ones\", for the aerial roots that hang from it like beards; the two red flowers flanking it are the Pride of Barbados, the national flower. The supporters are a dolphinfish, for the fishing industry, and a pelican, for the small Pelican Island off Bridgetown. The crest is an arm holding two crossed sugar canes — the crop the colonial economy was built on — and the motto beneath reads \"Pride and Industry\". Granted by royal warrant in 1966, the year of independence.",
+            "sources": [
+              {
+                "title": "Coat of arms of Barbados — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados"
+              }
+            ]
+          },
+          "sha256": "a309f0e090f9a2e126fe987218b3c4c12d56f15b727a72f0e0cff738b50432a8",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1966,
+        "event": "Independence from the United Kingdom, 30 November 1966",
+        "note": "Barbados became a republic on 30 November 2021.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Barbados"
+      }
     },
     "BD": {
       "flags": [
@@ -2250,8 +2319,88 @@
           "reuse": "flags/bs.svg",
           "design": "The national flag of Bahamas, in the form adopted in 1973.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bahamas"
+        },
+        {
+          "id": "bs-colonial",
+          "category": "historical",
+          "name": "Flag of the Colony of the Bahamas",
+          "from": 1869,
+          "to": 1904,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the Bahamas (1869–1904).svg",
+          "file": "bs/bahamas-colonial.svg",
+          "design": "A British Blue Ensign defaced with the colony's badge, a ship pursuing pirates.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
+          "sha256": "1b790173bd7f3976bf493907e49abf4eae34473b607b7c8dffd6c49fe65fe716",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bs-governor-general",
+          "category": "standard",
+          "name": "Flag of the Governor-General of the Bahamas",
+          "from": 1973,
+          "to": 9999,
+          "commons": "Flag of the Governor-General of the Bahamas.svg",
+          "file": "bs/bahamas-governor-general.svg",
+          "design": "A blue field with the royal crest and the country's name.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
+          "sha256": "ee797047c3e1e85893ff1ebd5975d9e0d1ef9f9f162924e739edb706c73549fb",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bs-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of the Bahamas",
+          "from": 1973,
+          "to": 9999,
+          "commons": "Civil Ensign of the Bahamas.svg",
+          "file": "bs/bahamas-civil-ensign.svg",
+          "design": "A red ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
+          "sha256": "7e7f1c8616a5d043cd3629d00a5c133e90ba32502531e219e0a284abee52f844",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bs-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of the Bahamas",
+          "from": 1973,
+          "to": 9999,
+          "commons": "Naval Ensign of the Bahamas.svg",
+          "file": "bs/bahamas-naval-ensign.svg",
+          "design": "A white ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bahamian_flags",
+          "sha256": "027b7613abe7ad9784f51d96a72a8d21b53096649b1c601ff0a3e10be7ee9750",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bs-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of the Bahamas",
+          "from": 1971,
+          "to": 9999,
+          "commons": "Coat of arms of the Bahamas.svg",
+          "file": "bs/bahamas-arms.svg",
+          "design": "Columbus's ship the Santa María beneath a sun, on a shield held by a marlin and a flamingo, crested with a conch shell and palm fronds, over the motto Pirates Expelled, Commerce Restored.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas",
+          "meaning": {
+            "description": "The shield shows Columbus's flagship the Santa María sailing under a rising golden sun — the islands were his first American landfall in 1492, and the sun is their light and future. The supporters are the country's own creatures: a blue marlin and a flamingo, the national bird. The crest above is a conch shell before a spray of palm fronds — the conch a staple food of the islands. The motto beneath, EXPULSIS PIRATIS – RESTITUTA COMMERCIA, means \"Pirates Expelled, Commerce Restored\", recalling the early 18th century when the Bahamas were a pirate haven — the Flying Gang of Nassau — until the Crown drove them out.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Bahamas — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas"
+              }
+            ]
+          },
+          "sha256": "116435acb656034ae66c54f0adcd71e0e6ec7f1f355561765ab97663f53736f2",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1973,
+        "event": "Independence from the United Kingdom, 10 July 1973",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Bahamas"
+      }
     },
     "BT": {
       "flags": [
@@ -6024,8 +6173,90 @@
           "reuse": "flags/gy.svg",
           "design": "The national flag of Guyana, in the form adopted in 1966.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guyana"
+        },
+        {
+          "id": "gy-british",
+          "category": "historical",
+          "name": "Flag of British Guiana",
+          "from": 1875,
+          "to": 1966,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of British Guiana (1919–1955).svg",
+          "file": "gy/guyana-british.svg",
+          "design": "A British Blue Ensign defaced with the colony's badge, a sailing ship.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
+          "sha256": "0964146a4f8db880ea1023510a6d7f4e9060ecb884ae1516296c33cc92e13d2b",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gy-dutch",
+          "category": "historical",
+          "name": "Prince's Flag of the Dutch Republic",
+          "from": 1611,
+          "to": 1795,
+          "sovereign": "the Dutch Republic",
+          "commons": "Prinsenvlag.svg",
+          "file": "gy/guyana-dutch.svg",
+          "design": "The orange-white-blue Prinsenvlag, flown over the Dutch colonies of Essequibo, Demerara and Berbice that became Guyana.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
+          "sha256": "f0f1b0de25ce97b0b31638835dff15419fbf7700ec2f34f2ca43bc163da51b35",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gy-president",
+          "category": "standard",
+          "name": "Presidential Standard of Guyana",
+          "from": 2020,
+          "to": 9999,
+          "commons": "Presidential Standard of Guyana - President Irfaan Ali.svg",
+          "file": "gy/guyana-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
+          "sha256": "1be5360a38757d1d84901e727a3d6c56ea4db6213103bb089bd113af1f5e76f1",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gy-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Guyana",
+          "from": 1965,
+          "to": 9999,
+          "commons": "Naval ensign of Guyana.svg",
+          "file": "gy/guyana-naval-ensign.svg",
+          "design": "The naval ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Guyanese_flags",
+          "sha256": "68fb7a5b34e4515ce63c283ea167fc112aa77af201d115bbb574ed0a520244ed",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gy-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Guyana",
+          "from": 1966,
+          "to": 9999,
+          "commons": "Coat of arms of Guyana.svg",
+          "file": "gy/guyana-arms.svg",
+          "design": "A shield of three wavy blue lines between the Victoria lily and the hoatzin, held by two jaguars with a pickaxe and sugar cane, crested with a Cacique's headdress, over a scroll bearing the country's name.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana",
+          "meaning": {
+            "description": "Every charge is a piece of the country. The crest is an Amerindian feather headdress, the Cacique's Crown, for the indigenous peoples, with a diamond on each side for the mining industry. The shield carries the Victoria regia water lily, the national flower, above three wavy blue bars for Guyana's three great rivers — the country's name comes from an indigenous word for \"land of many waters\" — and below them the hoatzin, the Canje pheasant, the national bird. The two jaguar supporters hold a pickaxe for mining and a stalk of sugar cane and a rice sheaf for agriculture. The scroll beneath reads \"One People, One Nation, One Destiny\".",
+            "sources": [
+              {
+                "title": "Coat of arms of Guyana — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana"
+              }
+            ]
+          },
+          "sha256": "63caeecf88b1f4de01bd6b2afa53b6349abcaa689cd223e4e6affe78d650faa3",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1966,
+        "event": "Independence from the United Kingdom, 26 May 1966",
+        "note": "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Guyana"
+      }
     },
     "HN": {
       "flags": [
@@ -13559,8 +13790,73 @@
           "reuse": "flags/sr.svg",
           "design": "The national flag of Suriname, in the form adopted in 1975.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Suriname"
+        },
+        {
+          "id": "sr-1959",
+          "category": "historical",
+          "name": "Flag of Suriname (1959–1975)",
+          "from": 1959,
+          "to": 1975,
+          "sovereign": "the Netherlands",
+          "commons": "Flag of Suriname (1959–1975).svg",
+          "file": "sr/suriname-1959.svg",
+          "design": "The white flag with five coloured stars linked by an ellipse, flown while Suriname was an autonomous country within the Kingdom of the Netherlands.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Surinamese_flags",
+          "sha256": "c2ada50bae201668bb09f51c6c5a507cbb9c107ff21a2ec0b2a47719424ff195",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sr-dutch",
+          "category": "historical",
+          "name": "Flag of the Netherlands",
+          "from": 1816,
+          "to": 1975,
+          "sovereign": "the Netherlands",
+          "reuse": "flags/nl.svg",
+          "design": "The Dutch tricolour, flown over the colony of Surinam from 1816 until independence.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Surinamese_flags"
+        },
+        {
+          "id": "sr-president",
+          "category": "standard",
+          "name": "Flag of the President of Suriname",
+          "from": 1975,
+          "to": 9999,
+          "commons": "Flag of the President of Suriname.svg",
+          "file": "sr/suriname-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Surinamese_flags",
+          "sha256": "bf44a98c74c43676a4d51bd5fa2288513afb329a6c342b172cb40dfa3176d322",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sr-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Suriname",
+          "from": 1975,
+          "to": 9999,
+          "commons": "Coat of arms of Suriname.svg",
+          "file": "sr/suriname-arms.svg",
+          "design": "A shield of a sailing ship and a royal palm with a diamond and a green star, held by two indigenous figures, over the motto Justitia, Pietas, Fides.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname",
+          "meaning": {
+            "description": "Adopted at independence in 1975, the shield is halved. The sailing ship on the left is the country's colonial past as a source of cash crops and its present part in international trade; the royal palm on the right is the rainforest that covers two-thirds of Suriname and its agribusiness. The diamond between them is the mining industry, and the green five-pointed star at the centre stands for the unity of the country's many ethnic groups and for hope. The two supporters are indigenous figures — the arms were redrawn in 1975 specifically to acknowledge the indigenous population — and the scroll beneath reads Justitia, Pietas, Fides: Justice, Piety, Fidelity.",
+            "sources": [
+              {
+                "title": "Coat of arms of Suriname — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname"
+              }
+            ]
+          },
+          "sha256": "9dffdaf4cad00e5f159a456dbbe268745646270ebc4add2378cfed82a2e8f3cf",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1975,
+        "event": "Independence from the Netherlands, 25 November 1975",
+        "source": "https://en.wikipedia.org/wiki/History_of_Suriname"
+      }
     },
     "SS": {
       "flags": [
@@ -14364,8 +14660,99 @@
           "reuse": "flags/tt.svg",
           "design": "The national flag of Trinidad and Tobago, in the form adopted in 1962.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago"
+        },
+        {
+          "id": "tt-colonial",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1516,
+          "to": 1785,
+          "sovereign": "Spain",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "design": "The Cross of Burgundy, flown over Trinidad through the long Spanish colonial period before the island passed to Britain.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags"
+        },
+        {
+          "id": "tt-president",
+          "category": "standard",
+          "name": "Flag of the President of Trinidad and Tobago",
+          "from": 1976,
+          "to": 9999,
+          "commons": "Flag of the President of Trinidad and Tobago.svg",
+          "file": "tt/trinidad-president.svg",
+          "design": "The presidential flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
+          "sha256": "cbcdd18056dc08f7fdde4311dd1444bf1e14c77eb2493cc140db452a0be745e8",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tt-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Trinidad and Tobago",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Civil Ensign of Trinidad and Tobago.svg",
+          "file": "tt/trinidad-civil-ensign.svg",
+          "design": "A red ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
+          "sha256": "943c4e12d85de5e6a389e35cfef76458bc43b5d623b6d50f9a5e3b78498b1709",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tt-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Trinidad and Tobago",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Naval Ensign of Trinidad and Tobago.svg",
+          "file": "tt/trinidad-naval-ensign.svg",
+          "design": "A white ensign with the national flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
+          "sha256": "d3e49878e404b002bfbe5e5281ec568c1fd4590ccab95a2ea4e14125ba40abd7",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tt-defence-force",
+          "category": "military",
+          "name": "Flag of the Trinidad and Tobago Defence Force",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Trinidad and Tobago Defence Force Flag.svg",
+          "file": "tt/trinidad-defence-force.svg",
+          "design": "The defence force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags",
+          "sha256": "81b7da37ea44b2995e97b48d3953c15d2b58c042574fb98ab404494ea9b4a0d8",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "tt-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Trinidad and Tobago",
+          "from": 1962,
+          "to": 9999,
+          "commons": "Coat of arms of Trinidad and Tobago (2025).svg",
+          "file": "tt/trinidad-arms.svg",
+          "design": "Two hummingbirds on a shield with three ships, held by a scarlet ibis and a cocrico, crested with a palm tree over a ship's wheel, on three islands.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago",
+          "meaning": {
+            "description": "The shield carries the red, white and black of the national flag and their same meaning — the fire of the sun and the warmth of the people, the sea and purity, and the strength and dedication of the earth. The two golden birds on it are hummingbirds, from Trinidad's Amerindian name Iere, \"land of the hummingbird\". The three ships were Columbus's three vessels; the supporters are the two national birds, the scarlet ibis of Trinidad and the cocrico of Tobago, standing on a base of three hills for the Trinity peaks that gave Trinidad its name. The palm-tree crest was taken from Tobago's own colonial arms. (In 2024 the government announced it would replace Columbus's ships with the steelpan, the national instrument.)",
+            "sources": [
+              {
+                "title": "Coat of arms of Trinidad and Tobago — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago"
+              }
+            ]
+          },
+          "sha256": "dd3c6665660b529783cde6b2d836056ca1081af80ebebd32a8a099c2f67bd0ad",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1962,
+        "event": "Independence from the United Kingdom, 31 August 1962",
+        "note": "Trinidad and Tobago became a republic in 1976.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago"
+      }
     },
     "TV": {
       "flags": [

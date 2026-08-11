@@ -204,6 +204,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BB": [
     { id: "bb-official-national", category: "official", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
     { id: "bb-current", category: "historical", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
+    { id: "bb-west-indies", category: "historical", name: "Flag of the West Indies Federation", from: 1958, to: 1962, priorPolity: "the West Indies Federation", path: "national-flags/bb/barbados-west-indies.svg", design: "The blue flag with wavy white lines and a gold sun, of the short-lived federation of British Caribbean colonies Barbados belonged to.", source: "https://en.wikipedia.org/wiki/List_of_Barbadian_flags" },
+    { id: "bb-colonial", category: "historical", name: "Flag of the Colony of Barbados", from: 1870, to: 1966, sovereign: "the United Kingdom", path: "national-flags/bb/barbados-colonial.svg", design: "A British Blue Ensign defaced with the colony's badge, Britannia in a chariot.", source: "https://en.wikipedia.org/wiki/List_of_Barbadian_flags" },
+    { id: "bb-president", category: "standard", name: "Standard of the President of Barbados", from: 2021, to: 9999, path: "national-flags/bb/barbados-president.svg", design: "The presidential standard, adopted when Barbados became a republic in 2021.", source: "https://en.wikipedia.org/wiki/List_of_Barbadian_flags" },
+    { id: "bb-arms", category: "coatofarms", name: "Coat of arms of Barbados", from: 1966, to: 9999, path: "national-flags/bb/barbados-arms.svg", design: "A bearded fig tree between two Pride of Barbados flowers on gold, held by a dolphinfish and a pelican, crested with an arm holding two sugar canes, over the motto Pride and Industry.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
   ],
   "BD": [
     { id: "bd-official-national", category: "official", name: "Flag of Bangladesh", from: 1972, to: 9999, primary: true, path: "flags/bd.svg", design: "The national flag of Bangladesh, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
@@ -301,6 +305,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BS": [
     { id: "bs-official-national", category: "official", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
     { id: "bs-current", category: "historical", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
+    { id: "bs-colonial", category: "historical", name: "Flag of the Colony of the Bahamas", from: 1869, to: 1904, sovereign: "the United Kingdom", path: "national-flags/bs/bahamas-colonial.svg", design: "A British Blue Ensign defaced with the colony's badge, a ship pursuing pirates.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-civil-ensign", category: "maritime", name: "Civil Ensign of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-civil-ensign.svg", design: "A red ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-naval-ensign", category: "maritime", name: "Naval Ensign of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-governor-general", category: "standard", name: "Flag of the Governor-General of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-governor-general.svg", design: "A blue field with the royal crest and the country's name.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-arms", category: "coatofarms", name: "Coat of arms of the Bahamas", from: 1971, to: 9999, path: "national-flags/bs/bahamas-arms.svg", design: "Columbus's ship the Santa María beneath a sun, on a shield held by a marlin and a flamingo, crested with a conch shell and palm fronds, over the motto Pirates Expelled, Commerce Restored.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
   ],
   "BT": [
     { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag of Bhutan, in the form adopted in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
@@ -676,6 +685,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "GY": [
     { id: "gy-official-national", category: "official", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
     { id: "gy-current", category: "historical", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
+    { id: "gy-british", category: "historical", name: "Flag of British Guiana", from: 1875, to: 1966, sovereign: "the United Kingdom", path: "national-flags/gy/guyana-british.svg", design: "A British Blue Ensign defaced with the colony's badge, a sailing ship.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-dutch", category: "historical", name: "Prince's Flag of the Dutch Republic", from: 1611, to: 1795, sovereign: "the Dutch Republic", path: "national-flags/gy/guyana-dutch.svg", design: "The orange-white-blue Prinsenvlag, flown over the Dutch colonies of Essequibo, Demerara and Berbice that became Guyana.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-naval-ensign", category: "maritime", name: "Naval ensign of Guyana", from: 1965, to: 9999, path: "national-flags/gy/guyana-naval-ensign.svg", design: "The naval ensign.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-president", category: "standard", name: "Presidential Standard of Guyana", from: 2020, to: 9999, path: "national-flags/gy/guyana-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-arms", category: "coatofarms", name: "Coat of arms of Guyana", from: 1966, to: 9999, path: "national-flags/gy/guyana-arms.svg", design: "A shield of three wavy blue lines between the Victoria lily and the hoatzin, held by two jaguars with a pickaxe and sugar cane, crested with a Cacique's headdress, over a scroll bearing the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
   ],
   "HN": [
     { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag of Honduras, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
@@ -1415,6 +1429,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "SR": [
     { id: "sr-official-national", category: "official", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
     { id: "sr-current", category: "historical", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
+    { id: "sr-1959", category: "historical", name: "Flag of Suriname (1959–1975)", from: 1959, to: 1975, sovereign: "the Netherlands", path: "national-flags/sr/suriname-1959.svg", design: "The white flag with five coloured stars linked by an ellipse, flown while Suriname was an autonomous country within the Kingdom of the Netherlands.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
+    { id: "sr-dutch", category: "historical", name: "Flag of the Netherlands", from: 1816, to: 1975, sovereign: "the Netherlands", path: "flags/nl.svg", design: "The Dutch tricolour, flown over the colony of Surinam from 1816 until independence.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
+    { id: "sr-president", category: "standard", name: "Flag of the President of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
+    { id: "sr-arms", category: "coatofarms", name: "Coat of arms of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-arms.svg", design: "A shield of a sailing ship and a royal palm with a diamond and a green star, held by two indigenous figures, over the motto Justitia, Pietas, Fides.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
   ],
   "SS": [
     { id: "ss-official-national", category: "official", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag of South Sudan, in the form adopted in 2005.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
@@ -1507,6 +1525,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "TT": [
     { id: "tt-official-national", category: "official", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
     { id: "tt-current", category: "historical", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
+    { id: "tt-colonial", category: "historical", name: "Cross of Burgundy", from: 1516, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, flown over Trinidad through the long Spanish colonial period before the island passed to Britain.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-defence-force", category: "military", name: "Flag of the Trinidad and Tobago Defence Force", from: 1962, to: 9999, path: "national-flags/tt/trinidad-defence-force.svg", design: "The defence force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-civil-ensign", category: "maritime", name: "Civil Ensign of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-civil-ensign.svg", design: "A red ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-naval-ensign", category: "maritime", name: "Naval Ensign of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-president", category: "standard", name: "Flag of the President of Trinidad and Tobago", from: 1976, to: 9999, path: "national-flags/tt/trinidad-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-arms", category: "coatofarms", name: "Coat of arms of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-arms.svg", design: "Two hummingbirds on a shield with three ships, held by a scarlet ibis and a cocrico, crested with a palm tree over a ship's wheel, on three islands.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
   ],
   "TV": [
     { id: "tv-official-national", category: "official", name: "Flag of Tuvalu", from: 1997, to: 9999, primary: true, path: "flags/tv.svg", design: "The national flag of Tuvalu, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
@@ -1726,10 +1750,12 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "AR": { year: 1816, event: "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816", source: "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence" },
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
   "BA": { year: 1992, event: "Bosnia and Herzegovina declared independence from Yugoslavia on 3 March 1992", source: "https://en.wikipedia.org/wiki/Independence_of_Bosnia_and_Herzegovina" },
+  "BB": { year: 1966, event: "Independence from the United Kingdom, 30 November 1966", note: "Barbados became a republic on 30 November 2021.", source: "https://en.wikipedia.org/wiki/History_of_Barbados" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
   "BN": { year: 1984, event: "Full independence from the United Kingdom, 1 January 1984", note: "Brunei had been a British protectorate since 1888.", source: "https://en.wikipedia.org/wiki/History_of_Brunei" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
+  "BS": { year: 1973, event: "Independence from the United Kingdom, 10 July 1973", source: "https://en.wikipedia.org/wiki/History_of_the_Bahamas" },
   "BY": { year: 1991, event: "Independence from the Soviet Union declared 25 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Belarus" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
@@ -1744,6 +1770,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
+  "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "IE": { year: 1922, event: "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty", note: "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Irish_Free_State" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
@@ -1771,8 +1798,10 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
   "SG": { year: 1965, event: "Separation from Malaysia and full independence, 9 August 1965", note: "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Singapore_in_Malaysia" },
   "SI": { year: 1991, event: "Slovenia declared independence from Yugoslavia on 25 June 1991", source: "https://en.wikipedia.org/wiki/Independence_of_Slovenia" },
+  "SR": { year: 1975, event: "Independence from the Netherlands, 25 November 1975", source: "https://en.wikipedia.org/wiki/History_of_Suriname" },
   "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
+  "TT": { year: 1962, event: "Independence from the United Kingdom, 31 August 1962", note: "Trinidad and Tobago became a republic in 1976.", source: "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
   "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
@@ -1857,6 +1886,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
     ],
   },
+  "bb-arms": {
+    description: "The shield names the island literally: the bearded fig tree is the Ficus citrifolia after which the Portuguese called the island Os Barbados, \"the bearded ones\", for the aerial roots that hang from it like beards; the two red flowers flanking it are the Pride of Barbados, the national flower. The supporters are a dolphinfish, for the fishing industry, and a pelican, for the small Pelican Island off Bridgetown. The crest is an arm holding two crossed sugar canes — the crop the colonial economy was built on — and the motto beneath reads \"Pride and Industry\". Granted by royal warrant in 1966, the year of independence.",
+    sources: [
+      { title: "Coat of arms of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
+    ],
+  },
   "bd-emblem": {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
@@ -1910,6 +1945,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The cover states two memberships at once. Above the country’s own name runs MERCOSUL/MERCOSUR, in Portuguese and Spanish, because Mercosur members adopted a common passport colour and heading — which is why Brazil’s passport is blue like Argentina’s and Uruguay’s rather than the green of its flag. Below the arms sits the state’s full name, and at the foot the chip symbol that marks it as an e-passport.",
     sources: [
       { title: "Brazilian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazilian_passport" },
+    ],
+  },
+  "bs-arms": {
+    description: "The shield shows Columbus's flagship the Santa María sailing under a rising golden sun — the islands were his first American landfall in 1492, and the sun is their light and future. The supporters are the country's own creatures: a blue marlin and a flamingo, the national bird. The crest above is a conch shell before a spray of palm fronds — the conch a staple food of the islands. The motto beneath, EXPULSIS PIRATIS – RESTITUTA COMMERCIA, means \"Pirates Expelled, Commerce Restored\", recalling the early 18th century when the Bahamas were a pirate haven — the Flying Gang of Nassau — until the Crown drove them out.",
+    sources: [
+      { title: "Coat of arms of the Bahamas — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
     ],
   },
   "by-emblem": {
@@ -2048,6 +2089,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
     sources: [
       { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
+    ],
+  },
+  "gy-arms": {
+    description: "Every charge is a piece of the country. The crest is an Amerindian feather headdress, the Cacique's Crown, for the indigenous peoples, with a diamond on each side for the mining industry. The shield carries the Victoria regia water lily, the national flower, above three wavy blue bars for Guyana's three great rivers — the country's name comes from an indigenous word for \"land of many waters\" — and below them the hoatzin, the Canje pheasant, the national bird. The two jaguar supporters hold a pickaxe for mining and a stalk of sugar cane and a rice sheaf for agriculture. The scroll beneath reads \"One People, One Nation, One Destiny\".",
+    sources: [
+      { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     ],
   },
   "hr-arms": {
@@ -2362,6 +2409,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
     ],
   },
+  "sr-arms": {
+    description: "Adopted at independence in 1975, the shield is halved. The sailing ship on the left is the country's colonial past as a source of cash crops and its present part in international trade; the royal palm on the right is the rainforest that covers two-thirds of Suriname and its agribusiness. The diamond between them is the mining industry, and the green five-pointed star at the centre stands for the unity of the country's many ethnic groups and for hope. The two supporters are indigenous figures — the arms were redrawn in 1975 specifically to acknowledge the indigenous population — and the scroll beneath reads Justitia, Pietas, Fides: Justice, Piety, Fidelity.",
+    sources: [
+      { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
+    ],
+  },
   "sv-arms": {
     description: "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
     sources: [
@@ -2390,6 +2443,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Turkey issues four passports and the colour is the classification: burgundy for ordinary, black for diplomatic, green for special (issued to senior civil servants and former parliamentarians) and grey for service. The gold emblem is the star and crescent Turkey uses in place of a coat of arms it has never adopted.",
     sources: [
       { title: "Turkish passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkish_passport" },
+    ],
+  },
+  "tt-arms": {
+    description: "The shield carries the red, white and black of the national flag and their same meaning — the fire of the sun and the warmth of the people, the sea and purity, and the strength and dedication of the earth. The two golden birds on it are hummingbirds, from Trinidad's Amerindian name Iere, \"land of the hummingbird\". The three ships were Columbus's three vessels; the supporters are the two national birds, the scarlet ibis of Trinidad and the cocrico of Tobago, standing on a base of three hills for the Trinity peaks that gave Trinidad its name. The palm-tree crest was taken from Tobago's own colonial arms. (In 2024 the government announced it would replace Columbus's ships with the steelpan, the national instrument.)",
+    sources: [
+      { title: "Coat of arms of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
     ],
   },
   "tz-arms": {
