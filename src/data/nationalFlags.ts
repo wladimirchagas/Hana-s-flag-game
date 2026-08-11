@@ -122,6 +122,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AL": [
     { id: "al-official-national", category: "official", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
     { id: "al-current", category: "historical", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
+    { id: "al-people", category: "historical", name: "Flag of the People's Socialist Republic of Albania", from: 1946, to: 1992, priorPolity: "the People's Socialist Republic of Albania", path: "national-flags/al/albania-people.svg", design: "The red flag with the double-headed eagle beneath a gold-bordered red star, under the communist state.", source: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+    { id: "al-kingdom", category: "historical", name: "Flag of the Kingdom of Albania", from: 1928, to: 1939, priorPolity: "the Kingdom of Albania under Zog I", path: "national-flags/al/albania-kingdom.svg", design: "The double-headed eagle beneath a helmet, under King Zog I.", source: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+    { id: "al-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1844, to: 1912, sovereign: "the Ottoman Empire", path: "national-flags/al/albania-ottoman.svg", design: "The red flag with a white crescent and star, flown over Albania until independence in 1912.", source: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+    { id: "al-armed-forces", category: "military", name: "Flag of the Albanian Armed Forces", from: 2011, to: 9999, path: "national-flags/al/albania-armed-forces.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+    { id: "al-naval-ensign", category: "maritime", name: "Naval Ensign of Albania", path: "national-flags/al/albania-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+    { id: "al-president", category: "standard", name: "Flag of the President of Albania", from: 2014, to: 9999, path: "national-flags/al/albania-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Albanian_flags" },
+    { id: "al-arms", category: "coatofarms", name: "Coat of arms of Albania", from: 1998, to: 9999, path: "national-flags/al/albania-arms.svg", design: "A black double-headed eagle on a red shield, beneath the golden helmet of Skanderbeg.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Albania" },
   ],
   "AM": [
     { id: "am-official-national", category: "official", name: "Flag of Armenia", from: 1990, to: 9999, primary: true, path: "flags/am.svg", design: "The national flag of Armenia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Armenia" },
@@ -189,10 +196,18 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BA": [
     { id: "ba-official-national", category: "official", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
     { id: "ba-current", category: "historical", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
+    { id: "ba-1992", category: "historical", name: "Flag of the Republic of Bosnia and Herzegovina (1992–1998)", from: 1992, to: 1998, path: "national-flags/ba/bosnia-1992.svg", design: "The blue flag with the white shield and gold fleurs-de-lis of the Kotromanić dynasty, flown from independence until the current design was imposed in 1998.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
+    { id: "ba-sr", category: "historical", name: "Flag of SR Bosnia and Herzegovina", from: 1946, to: 1992, priorPolity: "the Socialist Republic of Bosnia and Herzegovina within Yugoslavia", path: "national-flags/ba/bosnia-sr.svg", design: "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
+    { id: "ba-austro", category: "historical", name: "Flag of the Condominium of Bosnia and Herzegovina", from: 1878, to: 1918, sovereign: "Austria-Hungary", path: "national-flags/ba/bosnia-austro.svg", design: "The red-and-yellow flag of the Austro-Hungarian condominium, after the 1878 occupation ended Ottoman rule.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
+    { id: "ba-arms", category: "coatofarms", name: "Coat of arms of Bosnia and Herzegovina", from: 1998, to: 9999, path: "national-flags/ba/bosnia-arms.svg", design: "A blue three-pointed shield with a yellow triangle and a diagonal row of white stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
   ],
   "BB": [
     { id: "bb-official-national", category: "official", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
     { id: "bb-current", category: "historical", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
+    { id: "bb-west-indies", category: "historical", name: "Flag of the West Indies Federation", from: 1958, to: 1962, priorPolity: "the West Indies Federation", path: "national-flags/bb/barbados-west-indies.svg", design: "The blue flag with wavy white lines and a gold sun, of the short-lived federation of British Caribbean colonies Barbados belonged to.", source: "https://en.wikipedia.org/wiki/List_of_Barbadian_flags" },
+    { id: "bb-colonial", category: "historical", name: "Flag of the Colony of Barbados", from: 1870, to: 1966, sovereign: "the United Kingdom", path: "national-flags/bb/barbados-colonial.svg", design: "A British Blue Ensign defaced with the colony's badge, Britannia in a chariot.", source: "https://en.wikipedia.org/wiki/List_of_Barbadian_flags" },
+    { id: "bb-president", category: "standard", name: "Standard of the President of Barbados", from: 2021, to: 9999, path: "national-flags/bb/barbados-president.svg", design: "The presidential standard, adopted when Barbados became a republic in 2021.", source: "https://en.wikipedia.org/wiki/List_of_Barbadian_flags" },
+    { id: "bb-arms", category: "coatofarms", name: "Coat of arms of Barbados", from: 1966, to: 9999, path: "national-flags/bb/barbados-arms.svg", design: "A bearded fig tree between two Pride of Barbados flowers on gold, held by a dolphinfish and a pelican, crested with an arm holding two sugar canes, over the motto Pride and Industry.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
   ],
   "BD": [
     { id: "bd-official-national", category: "official", name: "Flag of Bangladesh", from: 1972, to: 9999, primary: true, path: "flags/bd.svg", design: "The national flag of Bangladesh, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Bangladesh" },
@@ -223,8 +238,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bf-current", category: "historical", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag of Burkina Faso, in the form adopted in 1984.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
   ],
   "BG": [
-    { id: "bg-official-national", category: "official", name: "Flag of Bulgaria", from: 1879, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in the form adopted in 1879.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
-    { id: "bg-current", category: "historical", name: "Flag of Bulgaria", from: 1879, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in the form adopted in 1879.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-official-national", category: "official", name: "Flag of Bulgaria", from: 1878, to: 9999, primary: true, path: "flags/bg.svg", design: "The national flag of Bulgaria, in use since 1878.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-communist", category: "historical", name: "Flag of the People's Republic of Bulgaria", from: 1971, to: 1990, path: "national-flags/bg/bg-1971.svg", design: "The national tricolour defaced in the canton with the socialist state emblem — the lion, gearwheel and wheat of the People's Republic.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-current", category: "historical", name: "Flag of Bulgaria", from: 1878, to: 9999, primary: true, path: "flags/bg.svg", design: "A white-green-red horizontal tricolour, adopted in 1878 after liberation — white for peace, green for the country's farmland and forests, red for the courage of its people.", source: "https://en.wikipedia.org/wiki/Flag_of_Bulgaria" },
+    { id: "bg-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1844, to: 1878, sovereign: "the Ottoman Empire", path: "national-flags/bg/bg-ottoman.svg", design: "The flag of the Ottoman Empire, which ruled the Bulgarian lands until liberation in 1878.", source: "https://en.wikipedia.org/wiki/Ottoman_Bulgaria" },
+    { id: "bg-naval", category: "maritime", name: "Naval ensign of Bulgaria", from: 2005, to: 9999, path: "national-flags/bg/bg-naval.svg", design: "The naval ensign of the Bulgarian Navy.", source: "https://en.wikipedia.org/wiki/Naval_ensign_of_Bulgaria" },
+    { id: "bg-arms", category: "coatofarms", name: "Coat of arms of Bulgaria", path: "national-flags/bg/bg-arms.svg", design: "A crowned golden lion rampant on a dark-red shield, held by two crowned lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
   ],
   "BH": [
     { id: "bh-official-national", category: "official", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag of Bahrain, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
@@ -241,6 +260,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BN": [
     { id: "bn-official-national", category: "official", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
     { id: "bn-current", category: "historical", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
+    { id: "bn-old", category: "historical", name: "Old flag of Brunei", from: 1368, to: 1906, priorPolity: "the Bruneian Empire", path: "national-flags/bn/brunei-old.svg", design: "The plain yellow flag of the Bruneian Sultanate, before the diagonal stripes and emblem were added under British protection.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-war-flag", category: "military", name: "War Flag of Brunei", path: "national-flags/bn/brunei-war-flag.svg", design: "The flag of the Royal Brunei Armed Forces.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-naval-ensign", category: "maritime", name: "Naval Ensign of Brunei", path: "national-flags/bn/brunei-naval-ensign.svg", design: "The ensign of the Royal Brunei Navy.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-royal-standard", category: "standard", name: "Royal Standard of the Sultan of Brunei", path: "national-flags/bn/brunei-royal-standard.svg", design: "A yellow field bearing the crown and emblem of the sultan.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-emblem", category: "coatofarms", name: "Emblem of Brunei", from: 1959, to: 9999, path: "national-flags/bn/brunei-emblem.svg", design: "A crescent and parasol with upraised wings and two hands, over a banner, all in yellow.", source: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
   ],
   "BO": [
     { id: "bo-official-national", category: "official", name: "Flag of Bolivia", from: 1851, to: 9999, primary: true, path: "flags/bo.svg", design: "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.", source: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
@@ -285,14 +309,23 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BS": [
     { id: "bs-official-national", category: "official", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
     { id: "bs-current", category: "historical", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
+    { id: "bs-colonial", category: "historical", name: "Flag of the Colony of the Bahamas", from: 1869, to: 1904, sovereign: "the United Kingdom", path: "national-flags/bs/bahamas-colonial.svg", design: "A British Blue Ensign defaced with the colony's badge, a ship pursuing pirates.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-civil-ensign", category: "maritime", name: "Civil Ensign of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-civil-ensign.svg", design: "A red ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-naval-ensign", category: "maritime", name: "Naval Ensign of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-governor-general", category: "standard", name: "Flag of the Governor-General of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-governor-general.svg", design: "A blue field with the royal crest and the country's name.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
+    { id: "bs-arms", category: "coatofarms", name: "Coat of arms of the Bahamas", from: 1971, to: 9999, path: "national-flags/bs/bahamas-arms.svg", design: "Columbus's ship the Santa María beneath a sun, on a shield held by a marlin and a flamingo, crested with a conch shell and palm fronds, over the motto Pirates Expelled, Commerce Restored.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
   ],
   "BT": [
     { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag of Bhutan, in the form adopted in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     { id: "bt-current", category: "historical", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag of Bhutan, in the form adopted in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
   ],
   "BW": [
-    { id: "bw-official-national", category: "official", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "The national flag of Botswana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
-    { id: "bw-current", category: "historical", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "The national flag of Botswana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+    { id: "bw-official-national", category: "official", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "The national flag of Botswana, adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+    { id: "bw-current", category: "historical", name: "Flag of Botswana", from: 1966, to: 9999, primary: true, path: "flags/bw.svg", design: "A light-blue field crossed by a black band edged in white — the blue for water and the sky, the black and white for the country's people and for racial harmony.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+    { id: "bw-uk", category: "historical", name: "Flag of the United Kingdom", from: 1885, to: 1966, sovereign: "the United Kingdom", path: "national-flags/bw/bw-uk.svg", design: "The Union Flag, flown while Britain governed the territory as the Bechuanaland Protectorate.", source: "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate" },
+    { id: "bw-bdf", category: "military", name: "Flag of the Botswana Defence Force", from: 1977, to: 9999, path: "national-flags/bw/bw-bdf.svg", design: "The flag of the Botswana Defence Force, formed in 1977.", source: "https://en.wikipedia.org/wiki/Botswana_Defence_Force" },
+    { id: "bw-president", category: "standard", name: "Presidential standard of Botswana", from: 1966, to: 9999, path: "national-flags/bw/bw-president.svg", design: "A light-blue field bearing the national arms — the standard of the President of Botswana.", source: "https://en.wikipedia.org/wiki/Flag_of_Botswana" },
+    { id: "bw-arms", category: "coatofarms", name: "Coat of arms of Botswana", from: 1966, to: 9999, path: "national-flags/bw/bw-arms.svg", design: "The national arms, granted in 1966.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
   ],
   "BY": [
     { id: "by-official-national", category: "official", name: "Flag of Belarus", from: 1995, to: 9999, primary: true, path: "flags/by.svg", design: "The national flag of Belarus, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Belarus" },
@@ -429,6 +462,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CY": [
     { id: "cy-official-national", category: "official", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
     { id: "cy-current", category: "historical", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+    { id: "cy-1960", category: "historical", name: "Flag of Cyprus (1960–2006)", from: 1960, to: 2006, path: "national-flags/cy/cyprus-1960.svg", design: "The first flag of the republic, with the island in a deeper copper-orange than the 2006 revision.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-british", category: "historical", name: "Flag of British Cyprus (1922–1960)", from: 1922, to: 1960, sovereign: "the United Kingdom", path: "national-flags/cy/cyprus-british.svg", design: "A British Blue Ensign defaced with the colony's badge, two red lions on white.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1844, to: 1878, sovereign: "the Ottoman Empire", path: "national-flags/cy/cyprus-ottoman.svg", design: "The Ottoman flag, flown over Cyprus until Britain took over its administration in 1878.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-naval-jack", category: "maritime", name: "Naval jack of Cyprus", from: 1964, to: 9999, path: "national-flags/cy/cyprus-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-president", category: "standard", name: "Presidential Standard of Cyprus", from: 2006, to: 9999, path: "national-flags/cy/cyprus-president.svg", design: "A field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-arms", category: "coatofarms", name: "Coat of arms of Cyprus", from: 1960, to: 9999, path: "national-flags/cy/cyprus-arms.svg", design: "A white dove carrying an olive branch above the year 1960, on a copper-coloured shield within an olive wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
   ],
   "CZ": [
     { id: "cz-official-national", category: "official", name: "Flag of Czechia", from: 1993, to: 9999, primary: true, path: "flags/cz.svg", design: "The national flag of Czechia, in the form adopted in 1993.", source: "https://en.wikipedia.org/wiki/Flag_of_Czechia" },
@@ -602,6 +641,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "GE": [
     { id: "ge-official-national", category: "official", name: "Flag of Georgia", from: 2004, to: 9999, primary: true, path: "flags/ge.svg", design: "The national flag of Georgia, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Georgia" },
     { id: "ge-current", category: "historical", name: "Flag of Georgia", from: 2004, to: 9999, primary: true, path: "flags/ge.svg", design: "The national flag of Georgia, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Georgia" },
+    { id: "ge-1990", category: "historical", name: "Flag of Georgia (1990–2004)", from: 1990, to: 2004, path: "national-flags/ge/georgia-1990.svg", design: "The wine-red flag with a black-and-white canton, flown from the restoration of independence until the Rose Revolution brought back the five-cross flag in 2004.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
+    { id: "ge-ssr", category: "historical", name: "Flag of the Georgian SSR", from: 1951, to: 1990, priorPolity: "the Georgian Soviet Socialist Republic", path: "national-flags/ge/georgia-ssr.svg", design: "The red flag with a blue-bordered hammer, sickle and sun in the canton — the republic's flag within the Soviet Union.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
+    { id: "ge-1918", category: "historical", name: "Flag of the Democratic Republic of Georgia", from: 1918, to: 1921, priorPolity: "the Democratic Republic of Georgia", path: "national-flags/ge/georgia-1918.svg", design: "The dark-red flag with a black-and-white stripe of the first Georgian republic, ended by the Soviet invasion of 1921.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
+    { id: "ge-war-flag", category: "military", name: "War flag of Georgia", from: 2004, to: 9999, path: "national-flags/ge/georgia-war-flag.svg", design: "The military flag of the Defence Forces.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
+    { id: "ge-army", category: "military", name: "Flag of the Georgian Land Force", from: 2004, to: 9999, path: "national-flags/ge/georgia-army.svg", design: "The land force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
+    { id: "ge-president", category: "standard", name: "Flag of the President of Georgia", from: 2020, to: 9999, path: "national-flags/ge/georgia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
+    { id: "ge-arms", category: "coatofarms", name: "Coat of arms of Georgia", from: 2004, to: 9999, path: "national-flags/ge/georgia-arms.svg", design: "Saint George on horseback slaying a dragon, on a red shield beneath the Iberian crown, held by two golden lions over the motto Strength is in Unity.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
   ],
   "GH": [
     { id: "gh-official-national", category: "official", name: "Flag of Ghana", from: 1957, to: 9999, primary: true, path: "flags/gh.svg", design: "The national flag of Ghana, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Ghana" },
@@ -648,6 +694,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "GY": [
     { id: "gy-official-national", category: "official", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
     { id: "gy-current", category: "historical", name: "Flag of Guyana", from: 1966, to: 9999, primary: true, path: "flags/gy.svg", design: "The national flag of Guyana, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Guyana" },
+    { id: "gy-british", category: "historical", name: "Flag of British Guiana", from: 1875, to: 1966, sovereign: "the United Kingdom", path: "national-flags/gy/guyana-british.svg", design: "A British Blue Ensign defaced with the colony's badge, a sailing ship.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-dutch", category: "historical", name: "Prince's Flag of the Dutch Republic", from: 1611, to: 1795, sovereign: "the Dutch Republic", path: "national-flags/gy/guyana-dutch.svg", design: "The orange-white-blue Prinsenvlag, flown over the Dutch colonies of Essequibo, Demerara and Berbice that became Guyana.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-naval-ensign", category: "maritime", name: "Naval ensign of Guyana", from: 1965, to: 9999, path: "national-flags/gy/guyana-naval-ensign.svg", design: "The naval ensign.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-president", category: "standard", name: "Presidential Standard of Guyana", from: 2020, to: 9999, path: "national-flags/gy/guyana-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Guyanese_flags" },
+    { id: "gy-arms", category: "coatofarms", name: "Coat of arms of Guyana", from: 1966, to: 9999, path: "national-flags/gy/guyana-arms.svg", design: "A shield of three wavy blue lines between the Victoria lily and the hoatzin, held by two jaguars with a pickaxe and sugar cane, crested with a Cacique's headdress, over a scroll bearing the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
   ],
   "HN": [
     { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag of Honduras, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
@@ -825,7 +876,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "KH": [
     { id: "kh-official-national", category: "official", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+    { id: "kh-kampuchea-pr", category: "historical", name: "Flag of the People's Republic of Kampuchea", from: 1979, to: 1989, priorPolity: "the People's Republic of Kampuchea", path: "national-flags/kh/cambodia-prk.svg", design: "The red flag with a golden five-towered Angkor Wat, of the Vietnamese-backed state that followed the Khmer Rouge.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-democratic", category: "historical", name: "Flag of Democratic Kampuchea", from: 1975, to: 1979, priorPolity: "Democratic Kampuchea (the Khmer Rouge state)", path: "national-flags/kh/cambodia-democratic.svg", design: "The red flag with a golden three-towered Angkor Wat, of the Khmer Rouge regime.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-khmer-republic", category: "historical", name: "Flag of the Khmer Republic", from: 1970, to: 1975, priorPolity: "the Khmer Republic", path: "national-flags/kh/cambodia-khmer-republic.svg", design: "The blue flag with Angkor Wat and three stars, of the republic that deposed the monarchy in 1970.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
     { id: "kh-current", category: "historical", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+    { id: "kh-french", category: "historical", name: "Flag of the French Protectorate of Cambodia", from: 1863, to: 1948, sovereign: "France", path: "national-flags/kh/cambodia-french.svg", design: "The blue-bordered red flag with a white temple, flown under the French protectorate.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-army", category: "military", name: "Flag of the Royal Cambodian Armed Forces", path: "national-flags/kh/cambodia-army.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-royal-standard", category: "standard", name: "Royal Standard of the King of Cambodia", from: 1993, to: 9999, path: "national-flags/kh/cambodia-royal-standard.svg", design: "The royal standard bearing the arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-arms", category: "coatofarms", name: "Royal arms of Cambodia", from: 1953, to: 9999, path: "national-flags/kh/cambodia-arms.svg", design: "A sacred sword on ceremonial trays beneath the Unalome, on a mantle held by a gajasingha and a rajasingha bearing two five-tiered parasols, over the motto Ruler of the Kingdom of Cambodia.", source: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
   ],
   "KI": [
     { id: "ki-official-national", category: "official", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag of Kiribati, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
@@ -875,11 +933,18 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "LA": [
     { id: "la-official-national", category: "official", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+    { id: "la-1952", category: "historical", name: "Flag of the Kingdom of Laos", from: 1952, to: 1975, priorPolity: "the Kingdom of Laos", path: "national-flags/la/laos-kingdom.svg", design: "The red flag with a white three-headed elephant beneath a parasol, on a five-tiered dais — the flag of the kingdom, ended when the communists took power in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
     { id: "la-current", category: "historical", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+    { id: "la-emblem", category: "coatofarms", name: "Emblem of Laos", from: 1991, to: 9999, path: "national-flags/la/laos-emblem.svg", design: "The Pha That Luang stupa above a dam, road and paddy field, framed by rice ears and a red ribbon with the name of the state.", source: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
   ],
   "LB": [
-    { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, in the form adopted in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
-    { id: "lb-current", category: "historical", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, in the form adopted in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, adopted at independence in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-current", category: "historical", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "Red over white (double height) over red, charged with a green cedar of Lebanon touching both red bands — adopted at independence in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-greater-lebanon", category: "historical", name: "Flag of Greater Lebanon", from: 1920, to: 1943, sovereign: "France", path: "national-flags/lb/lb-1920.svg", design: "The French Tricolour charged with a cedar, flown over the State of Greater Lebanon during the French mandate.", source: "https://en.wikipedia.org/wiki/Greater_Lebanon" },
+    { id: "lb-army", category: "military", name: "Flag of the Lebanese Armed Forces", from: 1991, to: 9999, path: "national-flags/lb/lb-army.svg", design: "The flag of the Lebanese Armed Forces.", source: "https://en.wikipedia.org/wiki/Lebanese_Armed_Forces" },
+    { id: "lb-airforce", category: "military", name: "Flag of the Lebanese Air Force", from: 1949, to: 9999, path: "national-flags/lb/lb-af.svg", design: "The flag of the Lebanese Air Force.", source: "https://en.wikipedia.org/wiki/Lebanese_Air_Force" },
+    { id: "lb-jack", category: "maritime", name: "Naval jack of Lebanon", from: 1950, to: 9999, path: "national-flags/lb/lb-jack.svg", design: "The naval jack of Lebanon, the national flag in a square field.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
+    { id: "lb-arms", category: "coatofarms", name: "Coat of arms of Lebanon", path: "national-flags/lb/lb-arms.svg", design: "A red shield crossed by a white diagonal bearing a cedar.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
   ],
   "LC": [
     { id: "lc-official-national", category: "official", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag of Saint Lucia, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
@@ -907,11 +972,21 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "LT": [
     { id: "lt-official-national", category: "official", name: "Flag of Lithuania", from: 1918, to: 9999, primary: true, path: "flags/lt.svg", design: "The national flag of Lithuania, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
+    { id: "lt-ssr", category: "historical", name: "Flag of the Lithuanian SSR", from: 1940, to: 1953, occupier: "the Soviet Union", path: "national-flags/lt/lithuania-ssr.svg", design: "The flag imposed after the Soviet occupation of 1940, while Lithuania's own tricolour was banned.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania" },
     { id: "lt-current", category: "historical", name: "Flag of Lithuania", from: 1918, to: 9999, primary: true, path: "flags/lt.svg", design: "The national flag of Lithuania, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
+    { id: "lt-1918", category: "historical", name: "Flag of Lithuania (1918–1940)", from: 1918, to: 1940, priorPolity: "the first Republic of Lithuania", path: "national-flags/lt/lithuania-1918.svg", design: "The yellow-green-red tricolour of the interwar republic, in a darker green than the 2004 standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania" },
+    { id: "lt-air-force", category: "military", name: "Air Force Ensign of Lithuania", from: 1992, to: 9999, path: "national-flags/lt/lithuania-air-force.svg", design: "The air force's ensign.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania" },
+    { id: "lt-naval-ensign", category: "maritime", name: "Naval ensign of Lithuania", from: 1992, to: 9999, path: "national-flags/lt/lithuania-naval-ensign.svg", design: "The naval ensign.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania" },
+    { id: "lt-president", category: "standard", name: "Flag of the President of Lithuania", from: 1993, to: 9999, path: "national-flags/lt/lithuania-president.svg", design: "A red field bearing the Vytis, the mounted knight of the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania" },
+    { id: "lt-arms", category: "coatofarms", name: "Coat of arms of Lithuania", from: 1991, to: 9999, path: "national-flags/lt/lithuania-arms.svg", design: "An armoured knight on a white horse wielding a sword, carrying a shield with a double cross, on a red field — the Vytis.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
   ],
   "LU": [
     { id: "lu-official-national", category: "official", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
     { id: "lu-current", category: "historical", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
+    { id: "lu-burgundy", category: "historical", name: "Cross of Burgundy", from: 1556, to: 1684, sovereign: "Habsburg Spain", path: "national-flags/lu/luxembourg-burgundy.svg", design: "The ragged saltire flown over Luxembourg as part of the Spanish Netherlands.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
+    { id: "lu-civil-ensign", category: "maritime", name: "Civil Ensign of Luxembourg", from: 1972, to: 9999, path: "national-flags/lu/luxembourg-civil-ensign.svg", design: "The red lion of Luxembourg on a white field barry of blue — flown by shipping instead of the tricolour, which is near-identical to the Dutch flag.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
+    { id: "lu-grand-duke", category: "standard", name: "Standard of the Grand Duke of Luxembourg", from: 2001, to: 9999, path: "national-flags/lu/luxembourg-grand-duke.svg", design: "The arms of the Grand Duke.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
+    { id: "lu-arms", category: "coatofarms", name: "Coat of arms of Luxembourg", from: 1839, to: 9999, path: "national-flags/lu/luxembourg-arms.svg", design: "A red lion with a forked tail, crowned, on a field barry of ten silver and blue.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
   ],
   "LV": [
     { id: "lv-official-national", category: "official", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
@@ -925,8 +1000,15 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lv-arms", category: "coatofarms", name: "Coat of arms of Latvia", from: 1921, to: 9999, path: "national-flags/lv/latvia-arms.svg", design: "A shield with a rising sun above a red lion and a silver griffin, beneath three golden stars, between oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
   ],
   "LY": [
-    { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 1951, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, in the form adopted in 1951.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
-    { id: "ly-current", category: "historical", name: "Flag of Libya", from: 1951, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, in the form adopted in 1951.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 2011, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, restored in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-current", category: "historical", name: "Flag of Libya", from: 2011, to: 9999, primary: true, path: "flags/ly.svg", design: "A red-black-green triband with a white star and crescent — the flag of the 1951 Kingdom of Libya, restored in 2011 after the fall of Gaddafi.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-green", category: "historical", name: "Flag of the Libyan Jamahiriya", from: 1977, to: 2011, path: "national-flags/ly/ly-green.svg", design: "A plain green field — the only single-colour national flag in the world — flown under Gaddafi's Jamahiriya from 1977 to 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-1972", category: "historical", name: "Flag of Libya (1972–1977)", from: 1972, to: 1977, path: "national-flags/ly/ly-1972.svg", design: "The flag of the Federation of Arab Republics — the Arab Liberation colours with a golden hawk of Quraish.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-1969", category: "historical", name: "Flag of the Libyan Arab Republic", from: 1969, to: 1972, path: "national-flags/ly/ly-1969.svg", design: "The red-white-black Arab Liberation flag, adopted after the 1969 coup that ended the monarchy.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-kingdom", category: "historical", name: "Flag of the Kingdom of Libya", from: 1951, to: 1969, path: "national-flags/ly/ly-1951.svg", design: "The flag of the Kingdom of Libya, first flown at independence in 1951 — the same design restored as the national flag in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
+    { id: "ly-army", category: "military", name: "Flag of the Libyan Army", from: 2011, to: 9999, path: "national-flags/ly/ly-army.svg", design: "The flag of the Libyan Army.", source: "https://en.wikipedia.org/wiki/Libyan_Army" },
+    { id: "ly-airforce", category: "military", name: "Flag of the Libyan Air Force", from: 2011, to: 9999, path: "national-flags/ly/ly-af.svg", design: "The flag of the Libyan Air Force.", source: "https://en.wikipedia.org/wiki/Libyan_Air_Force" },
+    { id: "ly-jack", category: "maritime", name: "Naval ensign of Libya", from: 2011, to: 9999, path: "national-flags/ly/ly-jack.svg", design: "The naval ensign of Libya.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
   ],
   "MA": [
     { id: "ma-official-national", category: "official", name: "Flag of Morocco", from: 1915, to: 9999, primary: true, path: "flags/ma.svg", design: "The national flag of Morocco, in the form adopted in 1915.", source: "https://en.wikipedia.org/wiki/Flag_of_Morocco" },
@@ -948,10 +1030,17 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "ME": [
     { id: "me-official-national", category: "official", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
     { id: "me-current", category: "historical", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
+    { id: "me-kingdom", category: "historical", name: "State flag of the Kingdom of Montenegro", from: 1905, to: 1918, priorPolity: "the Kingdom of Montenegro", path: "national-flags/me/montenegro-kingdom.svg", design: "The red-blue-white tricolour charged with the royal cypher of Nicholas I, before Montenegro was absorbed into Yugoslavia in 1918.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-1852", category: "historical", name: "Flag of the Principality of Montenegro (1852–1905)", from: 1852, to: 1905, priorPolity: "the Principality of Montenegro", path: "national-flags/me/montenegro-1852.svg", design: "The red flag with a white border, of the secular principality under the Petrović-Njegoš princes.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-naval-ensign", category: "maritime", name: "Naval ensign of Montenegro", path: "national-flags/me/montenegro-naval-ensign.svg", design: "The naval ensign.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-president", category: "standard", name: "Standard of the President of Montenegro", from: 2006, to: 9999, path: "national-flags/me/montenegro-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-arms", category: "coatofarms", name: "Coat of arms of Montenegro", from: 2004, to: 9999, path: "national-flags/me/montenegro-arms.svg", design: "A golden double-headed eagle bearing a shield with a golden lion passant, beneath a crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
   ],
   "MG": [
-    { id: "mg-official-national", category: "official", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "The national flag of Madagascar, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
-    { id: "mg-current", category: "historical", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "The national flag of Madagascar, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
+    { id: "mg-official-national", category: "official", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "The national flag of Madagascar, adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
+    { id: "mg-current", category: "historical", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "A white and red vertical band beside horizontal red-over-green stripes, adopted in 1958 during the transition to independence. The red and white recall the Merina monarchy; green is often taken for the coastal peoples.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
+    { id: "mg-french", category: "historical", name: "Flag of France", from: 1896, to: 1958, sovereign: "France", path: "national-flags/mg/mg-french.svg", design: "The French Tricolour, flown over Madagascar as a French colony from the 1896 annexation until the 1958 flag.", source: "https://en.wikipedia.org/wiki/History_of_Madagascar" },
+    { id: "mg-arms", category: "coatofarms", name: "Emblem of Madagascar", path: "national-flags/mg/mg-arms.svg", design: "The national emblem of Madagascar.", source: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
   ],
   "MH": [
     { id: "mh-official-national", category: "official", name: "Flag of Marshall Islands", from: 1979, to: 9999, primary: true, path: "flags/mh.svg", design: "The national flag of Marshall Islands, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Marshall_Islands" },
@@ -960,6 +1049,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MK": [
     { id: "mk-official-national", category: "official", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
     { id: "mk-current", category: "historical", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
+    { id: "mk-1992", category: "historical", name: "Flag of the Republic of Macedonia (1992–1995)", from: 1992, to: 1995, path: "national-flags/mk/macedonia-1992.svg", design: "The red flag with the sixteen-rayed Vergina Sun, flown at independence and changed in 1995 after Greece objected to the ancient Macedonian emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia" },
+    { id: "mk-sr", category: "historical", name: "Flag of the Socialist Republic of Macedonia", from: 1946, to: 1991, priorPolity: "the Socialist Republic of Macedonia within Yugoslavia", path: "national-flags/mk/macedonia-sr.svg", design: "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia" },
+    { id: "mk-krusevo", category: "historical", name: "Flag of the Kruševo Republic", from: 1903, to: 1903, priorPolity: "the Kruševo Republic", path: "national-flags/mk/macedonia-krusevo.svg", design: "The flag of the ten-day republic proclaimed during the Ilinden uprising against Ottoman rule in 1903.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia" },
+    { id: "mk-emblem", category: "coatofarms", name: "National emblem of North Macedonia", from: 1946, to: 9999, path: "national-flags/mk/macedonia-emblem.svg", design: "A mountain, a lake and a rising sun framed by garlands of wheat, tobacco and poppy tied with embroidered ribbon, beneath a red star.", source: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
   ],
   "ML": [
     { id: "ml-official-national", category: "official", name: "Flag of Mali", from: 1961, to: 9999, primary: true, path: "flags/ml.svg", design: "The national flag of Mali, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
@@ -981,6 +1074,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MN": [
     { id: "mn-official-national", category: "official", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
     { id: "mn-current", category: "historical", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+    { id: "mn-1992", category: "historical", name: "Flag of Mongolia (1992–2011)", from: 1992, to: 2011, path: "national-flags/mn/mongolia-1992.svg", design: "The red-blue-red flag with the Soyombo, in a lighter blue than the 2011 revision — adopted when the socialist star was removed at the end of the People's Republic.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-general-banner", category: "military", name: "General banner of the Mongolian Armed Forces", from: 2014, to: 9999, path: "national-flags/mn/mongolia-general-banner.svg", design: "The banner of the armed forces.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-ground", category: "military", name: "Flag of the Mongolian Ground Force", from: 2021, to: 9999, path: "national-flags/mn/mongolia-ground.svg", design: "The ground force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-air-force", category: "military", name: "Flag of the Mongolian Air Force", from: 2021, to: 9999, path: "national-flags/mn/mongolia-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-emblem", category: "coatofarms", name: "Emblem of Mongolia", from: 1992, to: 9999, path: "national-flags/mn/mongolia-emblem.svg", design: "The Soyombo above a wind horse on a blue disc, within a wheel of eternity, beneath a wish-granting jewel and above a lotus and mountains.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
   ],
   "MR": [
     { id: "mr-official-national", category: "official", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag of Mauritania, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
@@ -989,6 +1087,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MT": [
     { id: "mt-official-national", category: "official", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
     { id: "mt-current", category: "historical", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
+    { id: "mt-colonial", category: "historical", name: "Flag of the Colony of Malta (1943–1964)", from: 1943, to: 1964, sovereign: "the United Kingdom", path: "national-flags/mt/malta-colonial.svg", design: "The colony's blue ensign in its final form, defaced with the shield bearing the George Cross awarded in 1942.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Malta" },
+    { id: "mt-civil-ensign", category: "maritime", name: "Civil Ensign of Malta", path: "national-flags/mt/malta-civil-ensign.svg", design: "A red field bordered white with a white Maltese cross.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Malta" },
+    { id: "mt-naval-jack", category: "maritime", name: "Naval Jack of Malta", path: "national-flags/mt/malta-naval-jack.svg", design: "A George Cross on a blue field within a red border.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Malta" },
+    { id: "mt-president", category: "standard", name: "Flag of the President of Malta", from: 1988, to: 9999, path: "national-flags/mt/malta-president.svg", design: "A blue field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Malta" },
+    { id: "mt-arms", category: "coatofarms", name: "Coat of arms of Malta", from: 1988, to: 9999, path: "national-flags/mt/malta-arms.svg", design: "A shield of the national flag beneath a mural crown, framed by an olive branch and a palm branch over a scroll reading Repubblika ta' Malta.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
   ],
   "MU": [
     { id: "mu-official-national", category: "official", name: "Flag of Mauritius", from: 1968, to: 9999, primary: true, path: "flags/mu.svg", design: "The national flag of Mauritius, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritius" },
@@ -1051,8 +1154,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mz-emblem", category: "coatofarms", name: "Emblem of Mozambique", from: 1990, to: 9999, path: "national-flags/mz/mozambique-emblem.svg", design: "A rifle and hoe crossed over an open book, on a map of the country with a rising sun and waves, within maize and sugar cane beneath a red star.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
   ],
   "NA": [
-    { id: "na-official-national", category: "official", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "The national flag of Namibia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
-    { id: "na-current", category: "historical", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "The national flag of Namibia, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    { id: "na-official-national", category: "official", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "The national flag of Namibia, adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    { id: "na-current", category: "historical", name: "Flag of Namibia", from: 1990, to: 9999, primary: true, path: "flags/na.svg", design: "A red diagonal band edged in white dividing a blue and a green triangle, with a golden sun in the blue — adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    { id: "na-sa", category: "historical", name: "Flag of South Africa (1928–1994)", from: 1928, to: 1990, sovereign: "South Africa", path: "national-flags/na/na-sa.svg", design: "The orange-white-blue flag of the Union, later Republic, of South Africa, which administered the territory as South West Africa.", source: "https://en.wikipedia.org/wiki/South_West_Africa" },
+    { id: "na-german", category: "historical", name: "Flag of the German Empire", from: 1884, to: 1915, sovereign: "the German Empire", path: "national-flags/na/na-german.svg", design: "The flag of the German Empire, which held the territory as German South-West Africa until 1915.", source: "https://en.wikipedia.org/wiki/German_South-West_Africa" },
+    { id: "na-ndf", category: "military", name: "Flag of the Namibian Defence Force", from: 1990, to: 9999, path: "national-flags/na/na-ndf.svg", design: "The flag of the Namibian Defence Force.", source: "https://en.wikipedia.org/wiki/Namibian_Defence_Force" },
+    { id: "na-jack", category: "maritime", name: "Naval jack of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-jack.svg", design: "A white field bearing the national arms — the naval jack of Namibia.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    { id: "na-president", category: "standard", name: "Presidential standard of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-president.svg", design: "The standard of the President of Namibia.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
+    { id: "na-arms", category: "coatofarms", name: "Coat of arms of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-arms.svg", design: "The national arms, adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
   ],
   "NE": [
     { id: "ne-official-national", category: "official", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
@@ -1279,8 +1388,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ru-arms", category: "coatofarms", name: "Coat of arms of Russia", from: 1993, to: 9999, path: "national-flags/ru/russia-arms.svg", design: "A gold double-headed eagle on a red shield, crowned, holding a sceptre and orb, with a horseman spearing a dragon on its breast.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
   ],
   "RW": [
-    { id: "rw-official-national", category: "official", name: "Flag of Rwanda", from: 2001, to: 9999, primary: true, path: "flags/rw.svg", design: "The national flag of Rwanda, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
-    { id: "rw-current", category: "historical", name: "Flag of Rwanda", from: 2001, to: 9999, primary: true, path: "flags/rw.svg", design: "The national flag of Rwanda, in the form adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    { id: "rw-official-national", category: "official", name: "Flag of Rwanda", from: 2001, to: 9999, primary: true, path: "flags/rw.svg", design: "The national flag of Rwanda, adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    { id: "rw-current", category: "historical", name: "Flag of Rwanda", from: 2001, to: 9999, primary: true, path: "flags/rw.svg", design: "Blue over yellow over green with a golden sun in the fly canton — adopted in 2001 to replace the red-yellow-green flag associated with the 1994 genocide.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    { id: "rw-1962", category: "historical", name: "Flag of Rwanda (1962–2001)", from: 1962, to: 2001, path: "national-flags/rw/rw-1962.svg", design: "A vertical red-yellow-green tricolour charged with a black letter R, flown from independence until 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    { id: "rw-belgium", category: "historical", name: "Flag of Belgium", from: 1916, to: 1962, sovereign: "Belgium", path: "national-flags/rw/rw-belgium.svg", design: "The flag of Belgium, which administered the territory as the League of Nations mandate, then UN trust territory, of Ruanda-Urundi.", source: "https://en.wikipedia.org/wiki/Ruanda-Urundi" },
+    { id: "rw-german", category: "historical", name: "Flag of the German Empire", from: 1890, to: 1916, sovereign: "the German Empire", path: "national-flags/rw/rw-german.svg", design: "The flag of the German Empire, which held the territory as part of German East Africa until 1916.", source: "https://en.wikipedia.org/wiki/German_East_Africa" },
+    { id: "rw-president", category: "standard", name: "Presidential standard of Rwanda", from: 2001, to: 9999, path: "national-flags/rw/rw-president.svg", design: "A white field bearing the national emblem — the standard of the President of Rwanda.", source: "https://en.wikipedia.org/wiki/Flag_of_Rwanda" },
+    { id: "rw-arms", category: "coatofarms", name: "Emblem of Rwanda", from: 2001, to: 9999, path: "national-flags/rw/rw-arms.svg", design: "The national emblem, adopted in 2001 in the green, yellow and blue of the flag.", source: "https://en.wikipedia.org/wiki/Emblem_of_Rwanda" },
   ],
   "SA": [
     { id: "sa-official-national", category: "official", name: "Flag of Saudi Arabia", from: 1973, to: 9999, primary: true, path: "flags/sa.svg", design: "The national flag of Saudi Arabia, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" },
@@ -1335,6 +1449,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "SI": [
     { id: "si-official-national", category: "official", name: "Flag of Slovenia", from: 1991, to: 9999, primary: true, path: "flags/si.svg", design: "The national flag of Slovenia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
     { id: "si-current", category: "historical", name: "Flag of Slovenia", from: 1991, to: 9999, primary: true, path: "flags/si.svg", design: "The national flag of Slovenia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
+    { id: "si-sr", category: "historical", name: "Flag of the Socialist Republic of Slovenia", from: 1945, to: 1991, priorPolity: "the Socialist Republic of Slovenia within Yugoslavia", path: "national-flags/si/slovenia-sr.svg", design: "The white-blue-red tricolour with a red star, as a constituent republic of Yugoslavia.", source: "https://en.wikipedia.org/wiki/List_of_Slovenian_flags" },
+    { id: "si-yugoslavia", category: "historical", name: "Flag of the Kingdom of Yugoslavia", from: 1918, to: 1941, sovereign: "the Kingdom of Yugoslavia", path: "national-flags/si/slovenia-yugoslavia.svg", design: "The blue-white-red tricolour of the Kingdom of Serbs, Croats and Slovenes, to which the Slovene Lands belonged.", source: "https://en.wikipedia.org/wiki/List_of_Slovenian_flags" },
+    { id: "si-armed-forces", category: "military", name: "Flag of the Slovenian Armed Forces", from: 1991, to: 9999, path: "national-flags/si/slovenia-armed-forces.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_Slovenian_flags" },
+    { id: "si-president", category: "standard", name: "Flag of the President of Slovenia", from: 1991, to: 9999, path: "national-flags/si/slovenia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Slovenian_flags" },
+    { id: "si-arms", category: "coatofarms", name: "Coat of arms of Slovenia", from: 1991, to: 9999, path: "national-flags/si/slovenia-arms.svg", design: "Mount Triglav in white on blue above two wavy lines, beneath three golden six-pointed stars, on a red-bordered shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
   ],
   "SK": [
     { id: "sk-official-national", category: "official", name: "Flag of Slovakia", from: 1992, to: 9999, primary: true, path: "flags/sk.svg", design: "The national flag of Slovakia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
@@ -1351,8 +1470,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sm-current", category: "historical", name: "Flag of San Marino", from: 2011, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag of San Marino, in the form adopted in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
   ],
   "SN": [
-    { id: "sn-official-national", category: "official", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "The national flag of Senegal, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
-    { id: "sn-current", category: "historical", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "The national flag of Senegal, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
+    { id: "sn-official-national", category: "official", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "The national flag of Senegal, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
+    { id: "sn-current", category: "historical", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "A vertical green-yellow-red tricolour with a green five-pointed star at the centre — the pan-African colours, adopted when Senegal left the Mali Federation in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
+    { id: "sn-mali", category: "historical", name: "Flag of the Mali Federation", from: 1959, to: 1960, path: "national-flags/sn/sn-mali.svg", design: "The flag of the Mali Federation, the short-lived union of Senegal and the Sudanese Republic that Senegal belonged to at independence — the same tricolour bearing a black kanaga figure in place of the star.", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
+    { id: "sn-french", category: "historical", name: "Flag of France", from: 1895, to: 1959, sovereign: "France", path: "national-flags/sn/sn-french.svg", design: "The French Tricolour, flown over Senegal as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_West_Africa" },
+    { id: "sn-arms", category: "coatofarms", name: "Coat of arms of Senegal", from: 1965, to: 9999, path: "national-flags/sn/sn-arms.svg", design: "The national arms, adopted in 1965.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Senegal" },
   ],
   "SO": [
     { id: "so-official-national", category: "official", name: "Flag of Somalia", from: 1960, to: 9999, primary: true, path: "flags/so.svg", design: "The national flag of Somalia, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Somalia" },
@@ -1361,6 +1483,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "SR": [
     { id: "sr-official-national", category: "official", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
     { id: "sr-current", category: "historical", name: "Flag of Suriname", from: 1975, to: 9999, primary: true, path: "flags/sr.svg", design: "The national flag of Suriname, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Suriname" },
+    { id: "sr-1959", category: "historical", name: "Flag of Suriname (1959–1975)", from: 1959, to: 1975, sovereign: "the Netherlands", path: "national-flags/sr/suriname-1959.svg", design: "The white flag with five coloured stars linked by an ellipse, flown while Suriname was an autonomous country within the Kingdom of the Netherlands.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
+    { id: "sr-dutch", category: "historical", name: "Flag of the Netherlands", from: 1816, to: 1975, sovereign: "the Netherlands", path: "flags/nl.svg", design: "The Dutch tricolour, flown over the colony of Surinam from 1816 until independence.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
+    { id: "sr-president", category: "standard", name: "Flag of the President of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
+    { id: "sr-arms", category: "coatofarms", name: "Coat of arms of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-arms.svg", design: "A shield of a sailing ship and a royal palm with a diamond and a green star, held by two indigenous figures, over the motto Justitia, Pietas, Fides.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
   ],
   "SS": [
     { id: "ss-official-national", category: "official", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag of South Sudan, in the form adopted in 2005.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
@@ -1453,6 +1579,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "TT": [
     { id: "tt-official-national", category: "official", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
     { id: "tt-current", category: "historical", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
+    { id: "tt-colonial", category: "historical", name: "Cross of Burgundy", from: 1516, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The Cross of Burgundy, flown over Trinidad through the long Spanish colonial period before the island passed to Britain.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-defence-force", category: "military", name: "Flag of the Trinidad and Tobago Defence Force", from: 1962, to: 9999, path: "national-flags/tt/trinidad-defence-force.svg", design: "The defence force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-civil-ensign", category: "maritime", name: "Civil Ensign of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-civil-ensign.svg", design: "A red ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-naval-ensign", category: "maritime", name: "Naval Ensign of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-naval-ensign.svg", design: "A white ensign with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-president", category: "standard", name: "Flag of the President of Trinidad and Tobago", from: 1976, to: 9999, path: "national-flags/tt/trinidad-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Trinidadian_and_Tobagonian_flags" },
+    { id: "tt-arms", category: "coatofarms", name: "Coat of arms of Trinidad and Tobago", from: 1962, to: 9999, path: "national-flags/tt/trinidad-arms.svg", design: "Two hummingbirds on a shield with three ships, held by a scarlet ibis and a cocrico, crested with a palm tree over a ship's wheel, on three islands.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
   ],
   "TV": [
     { id: "tv-official-national", category: "official", name: "Flag of Tuvalu", from: 1997, to: 9999, primary: true, path: "flags/tv.svg", design: "The national flag of Tuvalu, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
@@ -1615,8 +1747,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ws-current", category: "historical", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag of Samoa, in the form adopted in 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
   ],
   "YE": [
-    { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
-    { id: "ye-current", category: "historical", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, adopted at unification in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-current", category: "historical", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "A red-white-black Arab Liberation triband, adopted on 22 May 1990 when North and South Yemen united.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-south", category: "historical", name: "Flag of the People's Democratic Republic of Yemen", from: 1967, to: 1990, path: "national-flags/ye/ye-south.svg", design: "The flag of South Yemen — the Arab Liberation triband with a light-blue triangle bearing a red star — flown from independence from Britain in 1967 until unification.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-north", category: "historical", name: "Flag of the Yemen Arab Republic", from: 1962, to: 1990, path: "national-flags/ye/ye-north.svg", design: "The red-white-black flag of North Yemen (the Yemen Arab Republic), with a single green star, flown until unification.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
+    { id: "ye-kingdom", category: "historical", name: "Flag of the Mutawakkilite Kingdom of Yemen", from: 1927, to: 1962, path: "national-flags/ye/ye-kingdom.svg", design: "A red field bearing a white sword and stars — the flag of the imamate that ruled North Yemen until the 1962 revolution.", source: "https://en.wikipedia.org/wiki/Mutawakkilite_Kingdom_of_Yemen" },
+    { id: "ye-emblem", category: "coatofarms", name: "Emblem of Yemen", from: 1990, to: 9999, path: "national-flags/ye/ye-emblem.svg", design: "A golden eagle bearing a shield of the coffee plant and the Marib Dam.", source: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
   ],
   "ZA": [
     { id: "za-official-national", category: "official", name: "Flag of South Africa", from: 1994, to: 9999, primary: true, path: "flags/za.svg", design: "The national flag, first flown on 27 April 1994.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
@@ -1666,13 +1802,20 @@ export type NationalIndependence = {
 };
 
 export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence>> = {
+  "AL": { year: 1912, event: "Albania declared independence from the Ottoman Empire on 28 November 1912", source: "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence" },
   "AM": { year: 1918, event: "The First Republic of Armenia declared independence on 28 May 1918", note: "It was absorbed into the Soviet Union in 1920–1922; independence was restored on 21 September 1991.", source: "https://en.wikipedia.org/wiki/First_Republic_of_Armenia" },
   "AO": { year: 1975, event: "Independence from Portugal, 11 November 1975", source: "https://en.wikipedia.org/wiki/Angolan_War_of_Independence" },
   "AR": { year: 1816, event: "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816", source: "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence" },
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
+  "BA": { year: 1992, event: "Bosnia and Herzegovina declared independence from Yugoslavia on 3 March 1992", source: "https://en.wikipedia.org/wiki/Independence_of_Bosnia_and_Herzegovina" },
+  "BB": { year: 1966, event: "Independence from the United Kingdom, 30 November 1966", note: "Barbados became a republic on 30 November 2021.", source: "https://en.wikipedia.org/wiki/History_of_Barbados" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
+  "BG": { year: 1878, event: "The Principality of Bulgaria was established after liberation from Ottoman rule in 1878; full independence was declared in 1908", source: "https://en.wikipedia.org/wiki/History_of_Bulgaria" },
+  "BN": { year: 1984, event: "Full independence from the United Kingdom, 1 January 1984", note: "Brunei had been a British protectorate since 1888.", source: "https://en.wikipedia.org/wiki/History_of_Brunei" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
+  "BS": { year: 1973, event: "Independence from the United Kingdom, 10 July 1973", source: "https://en.wikipedia.org/wiki/History_of_the_Bahamas" },
+  "BW": { year: 1966, event: "Botswana became independent from the United Kingdom on 30 September 1966, ending the Bechuanaland Protectorate", source: "https://en.wikipedia.org/wiki/History_of_Botswana" },
   "BY": { year: 1991, event: "Independence from the Soviet Union declared 25 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Belarus" },
   "CA": { year: 1867, event: "Confederation on 1 July 1867 created the Dominion of Canada.", note: "Legislative independence followed with the Statute of Westminster in 1931, and the constitution was patriated in 1982.", source: "https://en.wikipedia.org/wiki/Canadian_Confederation" },
   "CL": { year: 1818, event: "Declaration of Independence from Spain, proclaimed 12 February 1818", source: "https://en.wikipedia.org/wiki/Chilean_Declaration_of_Independence" },
@@ -1680,22 +1823,36 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
   "CR": { year: 1838, event: "Costa Rica withdrew from the Federal Republic of Central America on 14 November 1838 and became a sovereign state", note: "Central America had declared independence from Spain on 15 September 1821, but Costa Rica then belonged to the First Mexican Empire until 1823 and to the Central American federation until 1838; a republic was proclaimed in 1848.", source: "https://en.wikipedia.org/wiki/History_of_Costa_Rica" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
+  "CY": { year: 1960, event: "Independence from the United Kingdom, 16 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Cyprus" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
   "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
+  "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
+  "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "IE": { year: 1922, event: "The Irish Free State established on 6 December 1922 under the Anglo-Irish Treaty", note: "The state was declared a republic in 1949; Northern Ireland remained part of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Irish_Free_State" },
   "IN": { year: 1947, event: "Independence and partition under the Indian Independence Act, 15 August 1947.", source: "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947" },
   "IS": { year: 1944, event: "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown", note: "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.", source: "https://en.wikipedia.org/wiki/History_of_Iceland" },
   "JM": { year: 1962, event: "Independence from the United Kingdom, 6 August 1962", source: "https://en.wikipedia.org/wiki/History_of_Jamaica" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
+  "KH": { year: 1953, event: "Independence from France, 9 November 1953", note: "Cambodia had been a French protectorate since 1863.", source: "https://en.wikipedia.org/wiki/History_of_Cambodia" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
+  "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
+  "LB": { year: 1943, event: "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon", source: "https://en.wikipedia.org/wiki/History_of_Lebanon" },
+  "LT": { year: 1918, event: "Lithuania restored its statehood on 16 February 1918", note: "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.", source: "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania" },
+  "LU": { year: 1839, event: "The Treaty of London of 1839 established Luxembourg as an independent grand duchy", note: "Full sovereignty and neutrality were confirmed by the second Treaty of London in 1867.", source: "https://en.wikipedia.org/wiki/History_of_Luxembourg" },
   "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
+  "LY": { year: 1951, event: "Libya became independent as the United Kingdom of Libya on 24 December 1951", source: "https://en.wikipedia.org/wiki/History_of_Libya" },
+  "ME": { year: 1878, event: "Montenegro's independence was recognised by the Great Powers at the Congress of Berlin in 1878", note: "Montenegro had been a de-facto sovereign principality for centuries; it was absorbed into Yugoslavia in 1918 and regained independence from the state union with Serbia on 3 June 2006.", source: "https://en.wikipedia.org/wiki/History_of_Montenegro" },
+  "MG": { year: 1960, event: "Madagascar became fully independent from France on 26 June 1960", source: "https://en.wikipedia.org/wiki/History_of_Madagascar" },
+  "MK": { year: 1991, event: "Macedonia declared independence from Yugoslavia on 8 September 1991", note: "It was admitted to the UN in 1993 as \"the former Yugoslav Republic of Macedonia\" and renamed North Macedonia in 2019 under the Prespa agreement with Greece.", source: "https://en.wikipedia.org/wiki/Independence_of_North_Macedonia" },
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
+  "MT": { year: 1964, event: "Independence from the United Kingdom, 21 September 1964", note: "Malta became a republic in 1974.", source: "https://en.wikipedia.org/wiki/History_of_Malta" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
   "MZ": { year: 1975, event: "Independence from Portugal, 25 June 1975", source: "https://en.wikipedia.org/wiki/Mozambican_War_of_Independence" },
+  "NA": { year: 1990, event: "Namibia became independent on 21 March 1990, ending South African administration of the territory", note: "South Africa administered the territory under a League of Nations mandate from 1920; its continued rule after the UN terminated the mandate in 1966 was ruled illegal by the International Court of Justice in 1971", source: "https://en.wikipedia.org/wiki/History_of_Namibia" },
   "NI": { year: 1838, event: "Nicaragua declared independence from the Federal Republic of Central America on 30 April 1838", note: "Central America had separated from Spain in 1821, belonged to the First Mexican Empire until 1823, and then formed the federation.", source: "https://en.wikipedia.org/wiki/History_of_Nicaragua" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "OM": { year: 1650, event: "Portuguese rule over the Omani coast ended when Sultan bin Saif expelled them from Muscat in 1650", note: "Oman was never a European colony in the later sense: the Portuguese held only the coastal forts from 1507, and the country has been independent since, ruled by the Al Said dynasty from 1744.", source: "https://en.wikipedia.org/wiki/History_of_Oman" },
@@ -1703,9 +1860,14 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
+  "RW": { year: 1962, event: "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Rwanda" },
   "SG": { year: 1965, event: "Separation from Malaysia and full independence, 9 August 1965", note: "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Singapore_in_Malaysia" },
+  "SI": { year: 1991, event: "Slovenia declared independence from Yugoslavia on 25 June 1991", source: "https://en.wikipedia.org/wiki/Independence_of_Slovenia" },
+  "SN": { year: 1960, event: "Senegal became independent in 1960, first within the Mali Federation (20 June) and then as a separate republic on 20 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Senegal" },
+  "SR": { year: 1975, event: "Independence from the Netherlands, 25 November 1975", source: "https://en.wikipedia.org/wiki/History_of_Suriname" },
   "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
+  "TT": { year: 1962, event: "Independence from the United Kingdom, 31 August 1962", note: "Trinidad and Tobago became a republic in 1976.", source: "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
   "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
@@ -1726,6 +1888,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird is the Hawk of Quraish, the pan-Arab device named for the tribe the Prophet Muhammad belonged to, which recurs across the emblems of the Arabian peninsula. What makes this one the UAE's is the counting: the disc on the falcon's breast shows the national flag with SEVEN stars, one for each emirate of the federation, and the falcon's tail carries seven feathers for the same seven. In its talons it holds a red parchment bearing the name of the federation. The earlier emblem, used until 2008, had a dhow on the falcon's breast instead — the maritime device Kuwait and Qatar still carry.",
     sources: [
       { title: "Emblem of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
+    ],
+  },
+  "al-arms": {
+    description: "The arms are the flag turned into a shield, and both descend from Skanderbeg — Gjergj Kastrioti, the 15th-century lord who led Albanian resistance to the Ottomans. The black double-headed eagle has been in documented use since 1458 and gives Albania its native name, Shqipëria, often glossed as the land of the eagles. Above the shield sits the gold helmet of Skanderbeg himself: the crown-like horned helm now held in the Kunsthistorisches Museum in Vienna, first recorded in the Ambras armoury inventory of 1593. So the emblem is not allegory but two relics of one man — his standard and his helmet.",
+    sources: [
+      { title: "Coat of arms of Albania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Albania" },
     ],
   },
   "am-arms": {
@@ -1778,10 +1946,34 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
     ],
   },
+  "ba-arms": {
+    description: "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
+    sources: [
+      { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
+    ],
+  },
+  "bb-arms": {
+    description: "The shield names the island literally: the bearded fig tree is the Ficus citrifolia after which the Portuguese called the island Os Barbados, \"the bearded ones\", for the aerial roots that hang from it like beards; the two red flowers flanking it are the Pride of Barbados, the national flower. The supporters are a dolphinfish, for the fishing industry, and a pelican, for the small Pelican Island off Bridgetown. The crest is an arm holding two crossed sugar canes — the crop the colonial economy was built on — and the motto beneath reads \"Pride and Industry\". Granted by royal warrant in 1966, the year of independence.",
+    sources: [
+      { title: "Coat of arms of Barbados — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Barbados" },
+    ],
+  },
   "bd-emblem": {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
       { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
+    ],
+  },
+  "bg-arms": {
+    description: "A crowned golden lion rampant on a dark-red shield, beneath the historical crown of the medieval Bulgarian tsars. The rampant lion has stood for Bulgaria since the Second Bulgarian Empire, and here it appears three times — once on the shield and again as the two crowned lions that support it, standing on a compartment of oak branches for strength and endurance. The white ribbon carries the national motto, Съединението прави силата — “Unity makes strength.”",
+    sources: [
+      { title: "Coat of arms of Bulgaria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
+    ],
+  },
+  "bn-emblem": {
+    description: "The emblem, adopted in 1959 and carried on the national flag, has five parts. The small swallow-tailed flag and the royal parasol at the top are the regalia of the sultanate's monarchy. The upraised wings behind them stand for the protection of justice, tranquillity, prosperity and peace. The crescent beneath is Islam, the state religion, and it is inscribed in Arabic with the national motto, \"Always in service with God's guidance\"; the banner below carries the country's name, \"Brunei, the Abode of Peace\". The two upturned hands at the sides are the government's pledge to preserve and promote the welfare of the people.",
+    sources: [
+      { title: "Emblem of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
     ],
   },
   "bo-wiphala": {
@@ -1827,6 +2019,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Brazilian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Brazilian_passport" },
     ],
   },
+  "bs-arms": {
+    description: "The shield shows Columbus's flagship the Santa María sailing under a rising golden sun — the islands were his first American landfall in 1492, and the sun is their light and future. The supporters are the country's own creatures: a blue marlin and a flamingo, the national bird. The crest above is a conch shell before a spray of palm fronds — the conch a staple food of the islands. The motto beneath, EXPULSIS PIRATIS – RESTITUTA COMMERCIA, means \"Pirates Expelled, Commerce Restored\", recalling the early 18th century when the Bahamas were a pirate haven — the Flying Gang of Nassau — until the Crown drove them out.",
+    sources: [
+      { title: "Coat of arms of the Bahamas — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
+    ],
+  },
+  "bw-arms": {
+    description: "The shield is a Batswana ox-hide shield. Across its centre three cogwheels stand for industry; below them three wavy blue bands stand for water — the country's scarcest and most prized resource, the same idea the motto names. The bull's head at the foot is for the cattle on which Botswana's economy was built. Two zebras support the shield — their black-and-white a quiet emblem of racial harmony — one holding a head of sorghum for agriculture, the other an elephant's tusk for the country's wildlife and ivory. The single word on the ribbon, Pula, means “rain” (and “blessings,” and is the name of the currency): in a country three-quarters desert, rain is the highest blessing.",
+    sources: [
+      { title: "Coat of arms of Botswana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Botswana" },
+    ],
+  },
   "by-emblem": {
     description: "This is deliberately an EMBLEM rather than a coat of arms — it does not follow heraldic rules — and it alludes directly to the arms of the Byelorussian SSR, which is the point of it: readopted by referendum in 1995, it restored the Soviet-era design after four years of the Pahonia. It carries a silhouette of Belarus over a globe and a rising sun, framed by ears of wheat bound with a ribbon in the colours of the national flag, and topped by a red star. Between 1991 and 1995 the country instead used the Pahonia — the mounted knight of the Grand Duchy of Lithuania — which remains the emblem of the Belarusian opposition.",
     sources: [
@@ -1867,6 +2071,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Designed by Miguel Teurbe Tolón in 1849, the shield is read in three fields. The upper field is a sea between two capes — the Yucatán peninsula and Florida — with a golden key hanging between them beneath a rising sun: Cuba is the key to the Gulf of Mexico, the island commanding the strait, and the sun is the dawn of the new state. The lower left field carries the blue and white stripes of the flag, for the island's division into departments under Spanish rule; the lower right shows a royal palm, the national tree, standing for the country itself. Behind the shield the fasces topped with a red Phrygian cap is the classical emblem of authority and of liberty, and the oak branch and laurel wreath at the sides are strength and glory.",
     sources: [
       { title: "Coat of arms of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
+    ],
+  },
+  "cy-arms": {
+    description: "Every element is chosen, and two of them are the same idea twice: the white dove carrying an olive branch is peace, and the olive wreath framing the shield is peace again — a wish that carried real weight for an island independent in 1960 with a mixed Greek and Turkish population. The year 1960 records that independence from British rule. The shield's colour is the point most people miss: it is not gold but copper, specified as Pantone 1385 C, for the copper ore that Cyprus was famous for in antiquity — the island's name and the Latin word for copper, cuprum, are bound together.",
+    sources: [
+      { title: "Coat of arms of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
     ],
   },
   "cz-arms": {
@@ -1947,10 +2157,22 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "British passport — Wikipedia", url: "https://en.wikipedia.org/wiki/British_passport" },
     ],
   },
+  "ge-arms": {
+    description: "The arms are partly based on the medieval device of the Bagrationi royal house and centre on Saint George, the country's traditional patron saint and the source of its English name — a silver rider on a silver horse spearing a dragon, his lance tipped with a golden cross, on a purple field (usually drawn red). The shield is crowned with the Iberian crown of the old Georgian kingdom and supported by two golden lions; the scroll beneath carries the national motto, \"Strength is in Unity\". The same Saint George arms served the Democratic Republic of 1918–1921, though at that time there was some discussion of using Amirani, the Georgian Prometheus, instead. The current version was adopted after the 2004 Rose Revolution.",
+    sources: [
+      { title: "Coat of arms of Georgia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
+    ],
+  },
   "gh-arms": {
     description: "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
     sources: [
       { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
+    ],
+  },
+  "gy-arms": {
+    description: "Every charge is a piece of the country. The crest is an Amerindian feather headdress, the Cacique's Crown, for the indigenous peoples, with a diamond on each side for the mining industry. The shield carries the Victoria regia water lily, the national flower, above three wavy blue bars for Guyana's three great rivers — the country's name comes from an indigenous word for \"land of many waters\" — and below them the hoatzin, the Canje pheasant, the national bird. The two jaguar supporters hold a pickaxe for mining and a stalk of sugar cane and a rice sheaf for agriculture. The scroll beneath reads \"One People, One Nation, One Destiny\".",
+    sources: [
+      { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     ],
   },
   "hr-arms": {
@@ -2043,6 +2265,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "kh-arms": {
+    description: "These are the arms of the Cambodian monarchy, existing since the independent Kingdom was founded in 1953 and carried on the reigning king's royal standard. At the centre a sacred sword rests on two pedestalled ceremonial trays (phan) beneath the Unalome, the Khmer form of the Aum sign, all on a royal mantle. The two mythical beasts supporting it are the gajasingha (part elephant, part lion) and the rajasingha (the royal lion), and between them they hold two five-tiered royal parasols standing for the King and the Queen — the tiered parasol being the mark of Southeast Asian kingship. The Khmer banner beneath reads \"Ruler of the Kingdom of Cambodia\". The arms were abolished under the Khmer Republic (1970–1975) and the Khmer Rouge, and restored in 1993 with the monarchy.",
+    sources: [
+      { title: "Royal arms of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
+    ],
+  },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
@@ -2055,10 +2283,34 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan" },
     ],
   },
+  "la-emblem": {
+    description: "A socialist-style emblem, and one that quietly recorded a political change. At its centre is the Pha That Luang, the golden stupa in Vientiane that is the national shrine — a Buddhist monument at the heart of a communist state's emblem. Around it are the country's development: the Nam Ngum dam for hydro-electric power, an asphalt road, a stylised irrigated paddy field, and a cogwheel for industry, framed by crescent-shaped stalks of ripe rice. When it was first adopted in 1975 the top carried a red star with a hammer and sickle; in August 1991, reacting to the fall of the Soviet Union, Laos replaced those with the Pha That Luang — putting the national shrine where the communist star had been.",
+    sources: [
+      { title: "Emblem of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
+    ],
+  },
+  "lb-arms": {
+    description: "The arms carry the same device as the flag, arranged across a red shield: a white bend bearing a green cedar of Lebanon (Cedrus libani). The cedar is the country's oldest and most persistent emblem — the biblical “cedars of God,” a symbol of holiness, endurance and peace — and it became the prominent national symbol during the French mandate. The white recalls peace and the snow of the mountains; the red, the sacrifice of those who defended the country.",
+    sources: [
+      { title: "Coat of arms of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
+    ],
+  },
   "lk-emblem": {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
       { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
+    ],
+  },
+  "lt-arms": {
+    description: "The Vytis — the pursuer — is a mounted knight charging with a raised sword, and it is one of the oldest coats of arms in Europe still in use. It began as the dynastic device of the Gediminid family and was formalised by Grand Duke Vytautas the Great in the early 15th century as the arms of the Grand Duchy of Lithuania, the last pagan state in Europe, which had formed in response to the Teutonic Order's forced Christianisation of Estonia and Latvia. The cross on the knight's shield is the Jagiellonian double cross, added after Lithuania's rulers accepted Christianity. The horseman was flown continuously as the state's emblem until the Soviet occupation and restored with independence in 1991.",
+    sources: [
+      { title: "Coat of arms of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
+    ],
+  },
+  "lu-arms": {
+    description: "The Red Lion of Luxembourg is one of the older arms of Europe, and it is not originally Luxembourg's own: it derives from the arms of the Duchy of Limburg. Henry V, Count of Luxembourg, was the first to adopt it in the 13th century — his father Waleran III, Duke of Limburg, had borne a red forked-tailed lion on white, and the son set that lion on a field striped silver and blue. The forked tail (queue fourchée) is the detail that marks it out. The national flag's red-white-blue tricolour is drawn from these same three colours, which is why the arms and the flag belong together.",
+    sources: [
+      { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
     ],
   },
   "lv-arms": {
@@ -2073,6 +2325,24 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
     ],
   },
+  "me-arms": {
+    description: "The double-headed eagle is of Byzantine and ultimately Roman origin, and here stands for the close bond of church and state that defined Montenegro under its prince-bishops, the vladikas. On the breast shield the golden lion passant is a sign of episcopal authority, read as a figure of the Lion of Judah. The crown is that of the Petrović-Njegoš dynasty that ruled Montenegro — its inclusion was mildly controversial when the arms were adopted in 2004, since the country is now a secular republic; the modern design put the lion back on the shield in place of the earlier rulers' initials.",
+    sources: [
+      { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
+    ],
+  },
+  "mg-arms": {
+    description: "At the centre of the disc is the outline of the island itself, and below it the head of a zebu, the humped ox that is the mainstay of Malagasy life and wealth. From the map rays spread outward, so the device reads at once as a rising sun and as the fronds of the ravinala, the “traveller's tree” that is the island's signature plant. Sprigs of rice frame the foot, for the staple crop, and the ribbon carries the country's name, Repoblikan'i Madagasikara.",
+    sources: [
+      { title: "Emblem of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
+    ],
+  },
+  "mk-emblem": {
+    description: "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
+    sources: [
+      { title: "National emblem of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
+    ],
+  },
   "ml-emblem": {
     description: "Adopted in 1973, thirteen years after independence, the seal is read from its centre outward. The mosque at the middle is a specific building — the Great Mosque of Djenné, the largest mud-brick structure in the world and the country's best-known monument. Above it flies a bird, and below it the sun rises; the two bows and arrows flanking the mosque stand for the country's defence. The legend around the circle carries the name of the republic and the motto \"Un Peuple, Un But, Une Foi\" — One People, One Goal, One Faith — which is word for word the motto of Senegal, the country Mali was federated with for the two months before independence.",
     sources: [
@@ -2083,6 +2353,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The law describing the seal explains each part. At the centre is the map of the country, standing for its territorial shape; on either side of it a sprig of Eugenia with fourteen leaves, a sign of victory — one leaf for each state and region. Flanking those are two Burmese royal lions, chinthe, one facing left and one facing right; the lions signify sovereignty, courage, diligence and the suppression of all dangers great and small with equal effort, and their placement guarding either side of the map is itself the meaning. The ribbon below carries the name of the state, split so that \"Union\" sits under the left lion, \"Republic\" under the map and \"Myanmar\" under the right.",
     sources: [
       { title: "State Seal of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
+    ],
+  },
+  "mn-emblem": {
+    description: "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
+    sources: [
+      { title: "Emblem of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
+    ],
+  },
+  "mt-arms": {
+    description: "The shield is simply the national flag — white and red with the George Cross that the United Kingdom awarded to the whole island in 1942 for its endurance under siege. Above it a golden mural crown with a sally port and five turrets stands for the fortifications of Malta and the city walls, the crown of a fortress rather than a monarch. The olive branch and palm branch framing the shield are peace and, by the palm, the endurance of the islanders; the scroll beneath reads Repubblika ta' Malta. The arms were adopted in 1988, replacing a 1975 emblem — Prime Minister Dom Mintoff had earlier objected to the 1964 arms because he took the mural crown for a royal one, which it is not.",
+    sources: [
+      { title: "Coat of arms of Malta — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta" },
     ],
   },
   "my-federal-territories": {
@@ -2108,6 +2390,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Article 194 of the constitution spells the emblem out charge by charge: the corn stalk and the sugar cane framing it are the country's agricultural wealth; the cogwheel is labour and industry; the book is education; the rifle stands for defence and vigilance, the hoe for the peasantry; the map is the country itself, with the rising sun for the building of a new nation and the waves for the sea and the rivers; and the red star at the top is the spirit of international solidarity of the Mozambican people.",
     sources: [
       { title: "Emblem of Mozambique — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mozambique" },
+    ],
+  },
+  "na-arms": {
+    description: "The shield carries the design of the national flag, its gold diamond pattern reading as the country's diamonds and mineral wealth. An African fish eagle rises above it as the crest. Two oryx (gemsbok) support the shield, animals prized for their courage, elegance and pride. On the golden sand of the compartment — the Namib desert that gives the country its name — grows a Welwitschia mirabilis, the desert plant that lives for centuries and stands for fortitude and survival, carried over from the former arms of South-West Africa. The motto reads “Unity, Liberty, Justice.”",
+    sources: [
+      { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     ],
   },
   "ni-arms": {
@@ -2200,6 +2488,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Russia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Russia" },
     ],
   },
+  "rw-arms": {
+    description: "Rwanda's emblem replaced the older crossed-tools arms in 2001, in the colours of the new flag. Inside a ring closed by a traditional square knot — the knot standing for unity — sit the country's own devices: a stem of sorghum and a branch of coffee, the two staple crops, above a woven Rwandan basket (agaseke), itself an emblem of generosity. They rest on a cogwheel for industrial development, with the sun rising above; a Rwandan war-shield stands on each side to guard them. The ribbon below carries the motto Ubumwe, Umurimo, Gukunda Igihugu — “Unity, Work, Patriotism.”",
+    sources: [
+      { title: "Emblem of Rwanda — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Rwanda" },
+    ],
+  },
   "sa-emblem": {
     description: "The two crossed swords are the Kingdom of Hejaz and the Sultanate of Nejd and its dependencies, the two states Ibn Saud united in 1926 — so the emblem records the union the country is made of; they are also read as strength, stamina and sacrifice, and as justice. The date palm above them stands for growth, vitality and prosperity, and for the kingdom's own assets. The arrangement carries the reading that prosperity can be had only through justice: the palm rests on the swords, not the other way round.",
     sources: [
@@ -2212,10 +2506,28 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
     ],
   },
+  "si-arms": {
+    description: "The white three-peaked mountain is Triglav, Slovenia's highest and its national symbol; the two wavy lines beneath it are the country's rivers and its Adriatic coast. The three gold six-pointed stars arranged above are borrowed from the arms of the Counts of Celje, the most powerful medieval dynasty of the Slovene lands. Until Austria-Hungary dissolved, the Slovene lands had no single coat of arms — each historic province carried its own — so this emblem, designed at independence in 1991, is the first that represents the whole nation; the Triglav-and-sea motif had already appeared on the socialist-era emblem.",
+    sources: [
+      { title: "Coat of arms of Slovenia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
+    ],
+  },
   "sk-arms": {
     description: "The emblem runs through three periods that follow on from each other — Byzantine (6th–12th centuries), Hungarian (12th–20th) and Slovak (19th–20th). The double cross came into the region's heraldry from Byzantium and is read in modern interpretation as Slovakia standing heir and guardian to the Christian tradition. The three peaks it stands on are the mountain ranges Tatra, Mátra and Fátra, which stood for the northern mountainous part of the Kingdom of Hungary — the Tatra and the Fátra lie in present-day Slovakia. The current drawing was made in 1990 by the painter Ladislav Čisárik and the heraldist Ladislav Vrtel, commissioned after the Velvet Revolution.",
     sources: [
       { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
+    ],
+  },
+  "sn-arms": {
+    description: "The arms gather devices already used on earlier Senegalese emblems. On the left a golden lion — the lion of the Sudan, the country's totem and the name of its highest honour, the National Order of the Lion — walks above a green wavy band standing for the River Senegal. On the right stands a baobab, the tree native to the country. At the crest is the same five-pointed green star that appears on the national flag: a star of hope, and for the great majority of Senegalese the star of Islam.",
+    sources: [
+      { title: "Coat of arms of Senegal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Senegal" },
+    ],
+  },
+  "sr-arms": {
+    description: "Adopted at independence in 1975, the shield is halved. The sailing ship on the left is the country's colonial past as a source of cash crops and its present part in international trade; the royal palm on the right is the rainforest that covers two-thirds of Suriname and its agribusiness. The diamond between them is the mining industry, and the green five-pointed star at the centre stands for the unity of the country's many ethnic groups and for hope. The two supporters are indigenous figures — the arms were redrawn in 1975 specifically to acknowledge the indigenous population — and the scroll beneath reads Justitia, Pietas, Fides: Justice, Piety, Fidelity.",
+    sources: [
+      { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
     ],
   },
   "sv-arms": {
@@ -2246,6 +2558,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Turkey issues four passports and the colour is the classification: burgundy for ordinary, black for diplomatic, green for special (issued to senior civil servants and former parliamentarians) and grey for service. The gold emblem is the star and crescent Turkey uses in place of a coat of arms it has never adopted.",
     sources: [
       { title: "Turkish passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Turkish_passport" },
+    ],
+  },
+  "tt-arms": {
+    description: "The shield carries the red, white and black of the national flag and their same meaning — the fire of the sun and the warmth of the people, the sea and purity, and the strength and dedication of the earth. The two golden birds on it are hummingbirds, from Trinidad's Amerindian name Iere, \"land of the hummingbird\". The three ships were Columbus's three vessels; the supporters are the two national birds, the scarlet ibis of Trinidad and the cocrico of Tobago, standing on a base of three hills for the Trinity peaks that gave Trinidad its name. The palm-tree crest was taken from Tobago's own colonial arms. (In 2024 the government announced it would replace Columbus's ships with the steelpan, the national instrument.)",
+    sources: [
+      { title: "Coat of arms of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
     ],
   },
   "tz-arms": {
@@ -2306,6 +2624,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
     sources: [
       { title: "Emblem of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
+    ],
+  },
+  "ye-emblem": {
+    description: "The golden eagle of Saladin holds the national flag in its talons and a scroll reading “The Yemeni Republic.” On its breast a shield shows a coffee plant — the crop that made the port of Mocha famous — above the Marib Dam, the great irrigation work of the ancient Sabaean kingdom, and seven blue wavy bands. The eagle bearing two flags, and the seven bands, speak to the union of the formerly separate North and South.",
+    sources: [
+      { title: "Emblem of Yemen — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
     ],
   },
   "za-1994": {

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="Naval_Ensign_of_Trinidad_and_Tobago.svg"
+   sodipodi:docbase="C:\Documents and Settings\David Nelson\Archives\Svg"
+   inkscape:version="0.43"
+   sodipodi:version="0.32"
+   id="svg2"
+   x="0.00000000"
+   y="0.00000000"
+   height="300.00000px"
+   width="600.00000px">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     showguides="true"
+     showgrid="false"
+     inkscape:window-y="46"
+     inkscape:window-x="50"
+     inkscape:window-height="540"
+     inkscape:window-width="756"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="pt"
+     inkscape:cy="139.31826"
+     inkscape:cx="297.07783"
+     inkscape:zoom="1.1083333"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect10119"
+       width="600"
+       height="300"
+       x="0"
+       y="-7.6293945e-006" />
+    <path
+       style="fill:#ce1126;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0,130.00017 L 280,130.00017 L 280,0.0003 L 320,0.0003 L 320,130.00017 L 600,130.00017 L 600,170.00013 L 320,170.00013 L 320,300 L 280,300 L 280,170.00013 L 0,170.00013 L 0,130.00017 z "
+       id="path1323" />
+    <g
+       id="g3471"
+       transform="matrix(0.989286,0,0,0.976923,0,-166.0768)">
+      <rect
+         id="rect908"
+         style="fill:#ce1126;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         y="169.99992"
+         x="6.0943606e-008"
+         height="130"
+         width="280" />
+      <path
+         id="path1530"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 280,299.99991 L 91.373334,169.99992 L 0,169.99992 L 188.62667,299.99991 L 280,299.99991 z " />
+      <path
+         id="path2774"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 264.78667,299.99991 L 203.84,299.99991 L 15.213334,169.99992 L 76.16,169.99992 L 264.78667,299.99991 z " />
+    </g>
+  </g>
+<!-- Main outline of the flag --></svg>
