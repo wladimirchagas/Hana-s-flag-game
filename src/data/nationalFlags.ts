@@ -252,6 +252,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BN": [
     { id: "bn-official-national", category: "official", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
     { id: "bn-current", category: "historical", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
+    { id: "bn-old", category: "historical", name: "Old flag of Brunei", from: 1368, to: 1906, priorPolity: "the Bruneian Empire", path: "national-flags/bn/brunei-old.svg", design: "The plain yellow flag of the Bruneian Sultanate, before the diagonal stripes and emblem were added under British protection.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-war-flag", category: "military", name: "War Flag of Brunei", path: "national-flags/bn/brunei-war-flag.svg", design: "The flag of the Royal Brunei Armed Forces.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-naval-ensign", category: "maritime", name: "Naval Ensign of Brunei", path: "national-flags/bn/brunei-naval-ensign.svg", design: "The ensign of the Royal Brunei Navy.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-royal-standard", category: "standard", name: "Royal Standard of the Sultan of Brunei", path: "national-flags/bn/brunei-royal-standard.svg", design: "A yellow field bearing the crown and emblem of the sultan.", source: "https://en.wikipedia.org/wiki/List_of_Bruneian_flags" },
+    { id: "bn-emblem", category: "coatofarms", name: "Emblem of Brunei", from: 1959, to: 9999, path: "national-flags/bn/brunei-emblem.svg", design: "A crescent and parasol with upraised wings and two hands, over a banner, all in yellow.", source: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
   ],
   "BO": [
     { id: "bo-official-national", category: "official", name: "Flag of Bolivia", from: 1851, to: 9999, primary: true, path: "flags/bo.svg", design: "The national flag — one of the two flags Article 6 of the Constitution names, alongside the Wiphala.", source: "https://en.wikipedia.org/wiki/Flag_of_Bolivia" },
@@ -845,7 +850,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "KH": [
     { id: "kh-official-national", category: "official", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+    { id: "kh-kampuchea-pr", category: "historical", name: "Flag of the People's Republic of Kampuchea", from: 1979, to: 1989, priorPolity: "the People's Republic of Kampuchea", path: "national-flags/kh/cambodia-prk.svg", design: "The red flag with a golden five-towered Angkor Wat, of the Vietnamese-backed state that followed the Khmer Rouge.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-democratic", category: "historical", name: "Flag of Democratic Kampuchea", from: 1975, to: 1979, priorPolity: "Democratic Kampuchea (the Khmer Rouge state)", path: "national-flags/kh/cambodia-democratic.svg", design: "The red flag with a golden three-towered Angkor Wat, of the Khmer Rouge regime.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-khmer-republic", category: "historical", name: "Flag of the Khmer Republic", from: 1970, to: 1975, priorPolity: "the Khmer Republic", path: "national-flags/kh/cambodia-khmer-republic.svg", design: "The blue flag with Angkor Wat and three stars, of the republic that deposed the monarchy in 1970.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
     { id: "kh-current", category: "historical", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
+    { id: "kh-french", category: "historical", name: "Flag of the French Protectorate of Cambodia", from: 1863, to: 1948, sovereign: "France", path: "national-flags/kh/cambodia-french.svg", design: "The blue-bordered red flag with a white temple, flown under the French protectorate.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-army", category: "military", name: "Flag of the Royal Cambodian Armed Forces", path: "national-flags/kh/cambodia-army.svg", design: "The armed forces' flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-royal-standard", category: "standard", name: "Royal Standard of the King of Cambodia", from: 1993, to: 9999, path: "national-flags/kh/cambodia-royal-standard.svg", design: "The royal standard bearing the arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia" },
+    { id: "kh-arms", category: "coatofarms", name: "Royal arms of Cambodia", from: 1953, to: 9999, path: "national-flags/kh/cambodia-arms.svg", design: "A sacred sword on ceremonial trays beneath the Unalome, on a mantle held by a gajasingha and a rajasingha bearing two five-tiered parasols, over the motto Ruler of the Kingdom of Cambodia.", source: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
   ],
   "KI": [
     { id: "ki-official-national", category: "official", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag of Kiribati, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
@@ -895,7 +907,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "LA": [
     { id: "la-official-national", category: "official", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+    { id: "la-1952", category: "historical", name: "Flag of the Kingdom of Laos", from: 1952, to: 1975, priorPolity: "the Kingdom of Laos", path: "national-flags/la/laos-kingdom.svg", design: "The red flag with a white three-headed elephant beneath a parasol, on a five-tiered dais — the flag of the kingdom, ended when the communists took power in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
     { id: "la-current", category: "historical", name: "Flag of Laos", from: 1945, to: 9999, primary: true, path: "flags/la.svg", design: "The national flag of Laos, in the form adopted in 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_Laos" },
+    { id: "la-emblem", category: "coatofarms", name: "Emblem of Laos", from: 1991, to: 9999, path: "national-flags/la/laos-emblem.svg", design: "The Pha That Luang stupa above a dam, road and paddy field, framed by rice ears and a red ribbon with the name of the state.", source: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
   ],
   "LB": [
     { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, in the form adopted in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
@@ -1020,6 +1034,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MN": [
     { id: "mn-official-national", category: "official", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
     { id: "mn-current", category: "historical", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
+    { id: "mn-1992", category: "historical", name: "Flag of Mongolia (1992–2011)", from: 1992, to: 2011, path: "national-flags/mn/mongolia-1992.svg", design: "The red-blue-red flag with the Soyombo, in a lighter blue than the 2011 revision — adopted when the socialist star was removed at the end of the People's Republic.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-general-banner", category: "military", name: "General banner of the Mongolian Armed Forces", from: 2014, to: 9999, path: "national-flags/mn/mongolia-general-banner.svg", design: "The banner of the armed forces.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-ground", category: "military", name: "Flag of the Mongolian Ground Force", from: 2021, to: 9999, path: "national-flags/mn/mongolia-ground.svg", design: "The ground force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-air-force", category: "military", name: "Flag of the Mongolian Air Force", from: 2021, to: 9999, path: "national-flags/mn/mongolia-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
+    { id: "mn-emblem", category: "coatofarms", name: "Emblem of Mongolia", from: 1992, to: 9999, path: "national-flags/mn/mongolia-emblem.svg", design: "The Soyombo above a wind horse on a blue disc, within a wheel of eternity, beneath a wish-granting jewel and above a lotus and mountains.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
   ],
   "MR": [
     { id: "mr-official-national", category: "official", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag of Mauritania, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
@@ -1708,6 +1727,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
   "BA": { year: 1992, event: "Bosnia and Herzegovina declared independence from Yugoslavia on 3 March 1992", source: "https://en.wikipedia.org/wiki/Independence_of_Bosnia_and_Herzegovina" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
+  "BN": { year: 1984, event: "Full independence from the United Kingdom, 1 January 1984", note: "Brunei had been a British protectorate since 1888.", source: "https://en.wikipedia.org/wiki/History_of_Brunei" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
   "BY": { year: 1991, event: "Independence from the Soviet Union declared 25 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Belarus" },
@@ -1730,7 +1750,9 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "IS": { year: 1944, event: "The Republic of Iceland proclaimed on 17 June 1944, ending the personal union with the Danish crown", note: "Iceland had been a separate kingdom in personal union with Denmark since 1918, and had home rule from 1904.", source: "https://en.wikipedia.org/wiki/History_of_Iceland" },
   "JM": { year: 1962, event: "Independence from the United Kingdom, 6 August 1962", source: "https://en.wikipedia.org/wiki/History_of_Jamaica" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
+  "KH": { year: 1953, event: "Independence from France, 9 November 1953", note: "Cambodia had been a French protectorate since 1863.", source: "https://en.wikipedia.org/wiki/History_of_Cambodia" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
+  "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
   "LT": { year: 1918, event: "Lithuania restored its statehood on 16 February 1918", note: "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.", source: "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania" },
   "LU": { year: 1839, event: "The Treaty of London of 1839 established Luxembourg as an independent grand duchy", note: "Full sovereignty and neutrality were confirmed by the second Treaty of London in 1867.", source: "https://en.wikipedia.org/wiki/History_of_Luxembourg" },
   "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
@@ -1839,6 +1861,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
       { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
+    ],
+  },
+  "bn-emblem": {
+    description: "The emblem, adopted in 1959 and carried on the national flag, has five parts. The small swallow-tailed flag and the royal parasol at the top are the regalia of the sultanate's monarchy. The upraised wings behind them stand for the protection of justice, tranquillity, prosperity and peace. The crescent beneath is Islam, the state religion, and it is inscribed in Arabic with the national motto, \"Always in service with God's guidance\"; the banner below carries the country's name, \"Brunei, the Abode of Peace\". The two upturned hands at the sides are the government's pledge to preserve and promote the welfare of the people.",
+    sources: [
+      { title: "Emblem of Brunei — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Brunei" },
     ],
   },
   "bo-wiphala": {
@@ -2112,6 +2140,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "kh-arms": {
+    description: "These are the arms of the Cambodian monarchy, existing since the independent Kingdom was founded in 1953 and carried on the reigning king's royal standard. At the centre a sacred sword rests on two pedestalled ceremonial trays (phan) beneath the Unalome, the Khmer form of the Aum sign, all on a royal mantle. The two mythical beasts supporting it are the gajasingha (part elephant, part lion) and the rajasingha (the royal lion), and between them they hold two five-tiered royal parasols standing for the King and the Queen — the tiered parasol being the mark of Southeast Asian kingship. The Khmer banner beneath reads \"Ruler of the Kingdom of Cambodia\". The arms were abolished under the Khmer Republic (1970–1975) and the Khmer Rouge, and restored in 1993 with the monarchy.",
+    sources: [
+      { title: "Royal arms of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
+    ],
+  },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
@@ -2122,6 +2156,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre is the shanyrak, the dome-piece at the top of a yurt through which the smoke leaves and the light enters — in Kazakh usage the emblem of the family home, and here of the common home of all the country's peoples. Its uyks, the supports radiating from it, are drawn as sun rays. Flanking it are two tulpars, the winged horses of Turkic myth. The two colours carry their own meaning: the gold is the bright, clear future of the Kazakh people, and the sky blue is the aspiration to peace, accord, friendship and unity with all peoples. The emblem was adopted on 4 June 1992, chosen from 245 submitted designs; its authors were Jandarbek Melibekov and Shot-Aman Ualikhan.",
     sources: [
       { title: "Emblem of Kazakhstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kazakhstan" },
+    ],
+  },
+  "la-emblem": {
+    description: "A socialist-style emblem, and one that quietly recorded a political change. At its centre is the Pha That Luang, the golden stupa in Vientiane that is the national shrine — a Buddhist monument at the heart of a communist state's emblem. Around it are the country's development: the Nam Ngum dam for hydro-electric power, an asphalt road, a stylised irrigated paddy field, and a cogwheel for industry, framed by crescent-shaped stalks of ripe rice. When it was first adopted in 1975 the top carried a red star with a hammer and sickle; in August 1991, reacting to the fall of the Soviet Union, Laos replaced those with the Pha That Luang — putting the national shrine where the communist star had been.",
+    sources: [
+      { title: "Emblem of Laos — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
     ],
   },
   "lk-emblem": {
@@ -2176,6 +2216,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The law describing the seal explains each part. At the centre is the map of the country, standing for its territorial shape; on either side of it a sprig of Eugenia with fourteen leaves, a sign of victory — one leaf for each state and region. Flanking those are two Burmese royal lions, chinthe, one facing left and one facing right; the lions signify sovereignty, courage, diligence and the suppression of all dangers great and small with equal effort, and their placement guarding either side of the map is itself the meaning. The ribbon below carries the name of the state, split so that \"Union\" sits under the left lion, \"Republic\" under the map and \"Myanmar\" under the right.",
     sources: [
       { title: "State Seal of Myanmar — Wikipedia", url: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
+    ],
+  },
+  "mn-emblem": {
+    description: "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
+    sources: [
+      { title: "Emblem of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
     ],
   },
   "mt-arms": {

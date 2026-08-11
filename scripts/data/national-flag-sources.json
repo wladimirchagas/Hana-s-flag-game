@@ -1620,8 +1620,83 @@
           "reuse": "flags/bn.svg",
           "design": "The national flag of Brunei, in the form adopted in 1959.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Brunei"
+        },
+        {
+          "id": "bn-old",
+          "category": "historical",
+          "name": "Old flag of Brunei",
+          "from": 1368,
+          "to": 1906,
+          "priorPolity": "the Bruneian Empire",
+          "commons": "Old Flag of Brunei.svg",
+          "file": "bn/brunei-old.svg",
+          "design": "The plain yellow flag of the Bruneian Sultanate, before the diagonal stripes and emblem were added under British protection.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
+          "sha256": "d09861e6789a0c17f70390087d5dd9e6d83e14a9698adf519645fff93e2cdbbf",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bn-royal-standard",
+          "category": "standard",
+          "name": "Royal Standard of the Sultan of Brunei",
+          "commons": "Royal Standard of Brunei.svg",
+          "file": "bn/brunei-royal-standard.svg",
+          "design": "A yellow field bearing the crown and emblem of the sultan.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
+          "sha256": "08ef1c49c740fda32c53fdb8a70febd34c04d6da5c943fe2b3bf0db8cc414189",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bn-war-flag",
+          "category": "military",
+          "name": "War Flag of Brunei",
+          "commons": "War Flag of Brunei.svg",
+          "file": "bn/brunei-war-flag.svg",
+          "design": "The flag of the Royal Brunei Armed Forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
+          "sha256": "99f7a4182e6ca8065fc1d2df53c2ed25205d056cff2100e287fec43ecbea42bb",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bn-naval-ensign",
+          "category": "maritime",
+          "name": "Naval Ensign of Brunei",
+          "commons": "Naval Ensign of Brunei.svg",
+          "file": "bn/brunei-naval-ensign.svg",
+          "design": "The ensign of the Royal Brunei Navy.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Bruneian_flags",
+          "sha256": "99c3ef1b2300054173105bac93ed7acdc14606c377f1a79c997e96d0747f9c7c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "bn-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Brunei",
+          "from": 1959,
+          "to": 9999,
+          "commons": "Emblem of Brunei.svg",
+          "file": "bn/brunei-emblem.svg",
+          "design": "A crescent and parasol with upraised wings and two hands, over a banner, all in yellow.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Brunei",
+          "meaning": {
+            "description": "The emblem, adopted in 1959 and carried on the national flag, has five parts. The small swallow-tailed flag and the royal parasol at the top are the regalia of the sultanate's monarchy. The upraised wings behind them stand for the protection of justice, tranquillity, prosperity and peace. The crescent beneath is Islam, the state religion, and it is inscribed in Arabic with the national motto, \"Always in service with God's guidance\"; the banner below carries the country's name, \"Brunei, the Abode of Peace\". The two upturned hands at the sides are the government's pledge to preserve and promote the welfare of the people.",
+            "sources": [
+              {
+                "title": "Emblem of Brunei — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Brunei"
+              }
+            ]
+          },
+          "sha256": "cdc1a019d71310b101a909348495d571b92b1733e956a17fb8c0fabcf4d984ed",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1984,
+        "event": "Full independence from the United Kingdom, 1 January 1984",
+        "note": "Brunei had been a British protectorate since 1888.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Brunei"
+      }
     },
     "BO": {
       "flags": [
@@ -7851,8 +7926,116 @@
           "reuse": "flags/kh.svg",
           "design": "The national flag of Cambodia, in the form adopted in 1948.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Cambodia"
+        },
+        {
+          "id": "kh-kampuchea-pr",
+          "category": "historical",
+          "name": "Flag of the People's Republic of Kampuchea",
+          "from": 1979,
+          "to": 1989,
+          "priorPolity": "the People's Republic of Kampuchea",
+          "commons": "Flag of the People's Republic of Kampuchea.svg",
+          "file": "kh/cambodia-prk.svg",
+          "design": "The red flag with a golden five-towered Angkor Wat, of the Vietnamese-backed state that followed the Khmer Rouge.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
+          "sha256": "5b83b49c033e52bd2c9fde95a0f7c80a47b53063eaf096cb1648f2c351ce41bb",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "kh-democratic",
+          "category": "historical",
+          "name": "Flag of Democratic Kampuchea",
+          "from": 1975,
+          "to": 1979,
+          "priorPolity": "Democratic Kampuchea (the Khmer Rouge state)",
+          "commons": "Flag of Democratic Kampuchea.svg",
+          "file": "kh/cambodia-democratic.svg",
+          "design": "The red flag with a golden three-towered Angkor Wat, of the Khmer Rouge regime.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
+          "sha256": "6ad800a7569a0f5b4c8af4e59955bd94a6bd2f75c330b6dc60808acef55363d9",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "kh-khmer-republic",
+          "category": "historical",
+          "name": "Flag of the Khmer Republic",
+          "from": 1970,
+          "to": 1975,
+          "priorPolity": "the Khmer Republic",
+          "commons": "Flag of the Khmer Republic.svg",
+          "file": "kh/cambodia-khmer-republic.svg",
+          "design": "The blue flag with Angkor Wat and three stars, of the republic that deposed the monarchy in 1970.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
+          "sha256": "cb893943c7baa5841330ab2729805a497321305eab49c1d5ddc25e5f457105b3",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "kh-french",
+          "category": "historical",
+          "name": "Flag of the French Protectorate of Cambodia",
+          "from": 1863,
+          "to": 1948,
+          "sovereign": "France",
+          "commons": "Flag of Cambodia (1863–1948).svg",
+          "file": "kh/cambodia-french.svg",
+          "design": "The blue-bordered red flag with a white temple, flown under the French protectorate.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
+          "sha256": "35fbb8688078eda18f47c4ff1b7660b8022d07f4a733faa90c27a8cf5828a22b",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "kh-royal-standard",
+          "category": "standard",
+          "name": "Royal Standard of the King of Cambodia",
+          "from": 1993,
+          "to": 9999,
+          "commons": "Royal Standard of the King of Cambodia.svg",
+          "file": "kh/cambodia-royal-standard.svg",
+          "design": "The royal standard bearing the arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
+          "sha256": "f67c273ead2e0e869cba34d435a285746f1d1e3e494cc7be686b24d8fd6addaa",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "kh-army",
+          "category": "military",
+          "name": "Flag of the Royal Cambodian Armed Forces",
+          "commons": "Flag of the Royal Cambodian Armed Forces.svg",
+          "file": "kh/cambodia-army.svg",
+          "design": "The armed forces' flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Cambodia",
+          "sha256": "bc281e15a05d775118398a9e789eaa59347afdf0045e5515e730d9a4c837a881",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "kh-arms",
+          "category": "coatofarms",
+          "name": "Royal arms of Cambodia",
+          "from": 1953,
+          "to": 9999,
+          "commons": "Royal arms of Cambodia.svg",
+          "file": "kh/cambodia-arms.svg",
+          "design": "A sacred sword on ceremonial trays beneath the Unalome, on a mantle held by a gajasingha and a rajasingha bearing two five-tiered parasols, over the motto Ruler of the Kingdom of Cambodia.",
+          "source": "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia",
+          "meaning": {
+            "description": "These are the arms of the Cambodian monarchy, existing since the independent Kingdom was founded in 1953 and carried on the reigning king's royal standard. At the centre a sacred sword rests on two pedestalled ceremonial trays (phan) beneath the Unalome, the Khmer form of the Aum sign, all on a royal mantle. The two mythical beasts supporting it are the gajasingha (part elephant, part lion) and the rajasingha (the royal lion), and between them they hold two five-tiered royal parasols standing for the King and the Queen — the tiered parasol being the mark of Southeast Asian kingship. The Khmer banner beneath reads \"Ruler of the Kingdom of Cambodia\". The arms were abolished under the Khmer Republic (1970–1975) and the Khmer Rouge, and restored in 1993 with the monarchy.",
+            "sources": [
+              {
+                "title": "Royal arms of Cambodia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia"
+              }
+            ]
+          },
+          "sha256": "714ae98aa3b649ae017ceb046cab4236a1a5c646dc9acec79cce26086df25025",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1953,
+        "event": "Independence from France, 9 November 1953",
+        "note": "Cambodia had been a French protectorate since 1863.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Cambodia"
+      }
     },
     "KI": {
       "flags": [
@@ -8296,8 +8479,50 @@
           "reuse": "flags/la.svg",
           "design": "The national flag of Laos, in the form adopted in 1945.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Laos"
+        },
+        {
+          "id": "la-1952",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Laos",
+          "from": 1952,
+          "to": 1975,
+          "priorPolity": "the Kingdom of Laos",
+          "commons": "Flag of Laos (1952–1975).svg",
+          "file": "la/laos-kingdom.svg",
+          "design": "The red flag with a white three-headed elephant beneath a parasol, on a five-tiered dais — the flag of the kingdom, ended when the communists took power in 1975.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Laos",
+          "sha256": "0b3851f05f0e271f4e5d7507b32027532d2c3d94b60b77a9745feedc219148f4",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "la-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Laos",
+          "from": 1991,
+          "to": 9999,
+          "commons": "Emblem of Laos (1991-2025).svg",
+          "file": "la/laos-emblem.svg",
+          "design": "The Pha That Luang stupa above a dam, road and paddy field, framed by rice ears and a red ribbon with the name of the state.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Laos",
+          "meaning": {
+            "description": "A socialist-style emblem, and one that quietly recorded a political change. At its centre is the Pha That Luang, the golden stupa in Vientiane that is the national shrine — a Buddhist monument at the heart of a communist state's emblem. Around it are the country's development: the Nam Ngum dam for hydro-electric power, an asphalt road, a stylised irrigated paddy field, and a cogwheel for industry, framed by crescent-shaped stalks of ripe rice. When it was first adopted in 1975 the top carried a red star with a hammer and sickle; in August 1991, reacting to the fall of the Soviet Union, Laos replaced those with the Pha That Luang — putting the national shrine where the communist star had been.",
+            "sources": [
+              {
+                "title": "Emblem of Laos — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Laos"
+              }
+            ]
+          },
+          "sha256": "9a8fc20ee43f5044069507ce89d5c1f700c7e053ce26061f80093bfc48fa28b0",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1953,
+        "event": "Full independence from France, 22 October 1953",
+        "note": "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Laos"
+      }
     },
     "LB": {
       "flags": [
@@ -9466,6 +9691,80 @@
           "reuse": "flags/mn.svg",
           "design": "The national flag of Mongolia, in the form adopted in 1992.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mongolia"
+        },
+        {
+          "id": "mn-1992",
+          "category": "historical",
+          "name": "Flag of Mongolia (1992–2011)",
+          "from": 1992,
+          "to": 2011,
+          "commons": "Flag of Mongolia (1992–2011).svg",
+          "file": "mn/mongolia-1992.svg",
+          "design": "The red-blue-red flag with the Soyombo, in a lighter blue than the 2011 revision — adopted when the socialist star was removed at the end of the People's Republic.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mongolian_flags",
+          "sha256": "203f007c3a94be1c53ebbf4530144185390e314ccd5f3137792bbb59094b6f82",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mn-general-banner",
+          "category": "military",
+          "name": "General banner of the Mongolian Armed Forces",
+          "from": 2014,
+          "to": 9999,
+          "commons": "General banner of the Mongolian Armed forces.svg",
+          "file": "mn/mongolia-general-banner.svg",
+          "design": "The banner of the armed forces.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mongolian_flags",
+          "sha256": "75474a7bc1a49c5b5a7ed4338e6ee61f8180e0f0f81f4efcc35d7ae99363cc11",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mn-ground",
+          "category": "military",
+          "name": "Flag of the Mongolian Ground Force",
+          "from": 2021,
+          "to": 9999,
+          "commons": "Flag of the Ground Force of the Mongolian Armed Forces.svg",
+          "file": "mn/mongolia-ground.svg",
+          "design": "The ground force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mongolian_flags",
+          "sha256": "14ec914de211b8177635e7b8e2793462d8f7734d60912e9447ecfd1e22111eb4",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mn-air-force",
+          "category": "military",
+          "name": "Flag of the Mongolian Air Force",
+          "from": 2021,
+          "to": 9999,
+          "commons": "Flag of the Air Force of the Mongolian Armed Forces.svg",
+          "file": "mn/mongolia-air-force.svg",
+          "design": "The air force's flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mongolian_flags",
+          "sha256": "ac6e2da8330b3dd863af3f9a84b186b9735931eea8be85b084fc0bef30123ae1",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mn-emblem",
+          "category": "coatofarms",
+          "name": "Emblem of Mongolia",
+          "from": 1992,
+          "to": 9999,
+          "commons": "State emblem of Mongolia.svg",
+          "file": "mn/mongolia-emblem.svg",
+          "design": "The Soyombo above a wind horse on a blue disc, within a wheel of eternity, beneath a wish-granting jewel and above a lotus and mountains.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Mongolia",
+          "meaning": {
+            "description": "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
+            "sources": [
+              {
+                "title": "Emblem of Mongolia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Mongolia"
+              }
+            ]
+          },
+          "sha256": "c43001e4d04337cc75d7358aecc9752f53c60677c1b499b985e958a8326391ef",
+          "fetched": "2026-08-11"
         }
       ]
     },
