@@ -1113,8 +1113,76 @@
           "reuse": "flags/ba.svg",
           "design": "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina"
+        },
+        {
+          "id": "ba-1992",
+          "category": "historical",
+          "name": "Flag of the Republic of Bosnia and Herzegovina (1992–1998)",
+          "from": 1992,
+          "to": 1998,
+          "commons": "Flag of Bosnia and Herzegovina (1992–1998).svg",
+          "file": "ba/bosnia-1992.svg",
+          "design": "The blue flag with the white shield and gold fleurs-de-lis of the Kotromanić dynasty, flown from independence until the current design was imposed in 1998.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina",
+          "sha256": "bf2da26a5184ffabbe52b0da6f7e75a19969a00cdd2de85a6ab6ce2f58d4c370",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ba-sr",
+          "category": "historical",
+          "name": "Flag of SR Bosnia and Herzegovina",
+          "from": 1946,
+          "to": 1992,
+          "priorPolity": "the Socialist Republic of Bosnia and Herzegovina within Yugoslavia",
+          "commons": "Flag of Bosnia and Herzegovina (1946–1992).svg",
+          "file": "ba/bosnia-sr.svg",
+          "design": "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina",
+          "sha256": "6200e4a164ffeef004ae92d020518c27c1366305ebe716bc3c009d4cfca064f7",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ba-austro",
+          "category": "historical",
+          "name": "Flag of the Condominium of Bosnia and Herzegovina",
+          "from": 1878,
+          "to": 1918,
+          "sovereign": "Austria-Hungary",
+          "commons": "Flag of Bosnia (1878–1908).svg",
+          "file": "ba/bosnia-austro.svg",
+          "design": "The red-and-yellow flag of the Austro-Hungarian condominium, after the 1878 occupation ended Ottoman rule.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina",
+          "sha256": "b43d072d036845e59b12d78d80ef577ccf7238dbd2ce2af55dbfb01a3af6e0ce",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ba-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Bosnia and Herzegovina",
+          "from": 1998,
+          "to": 9999,
+          "commons": "Coat of arms of Bosnia and Herzegovina.svg",
+          "file": "ba/bosnia-arms.svg",
+          "design": "A blue three-pointed shield with a yellow triangle and a diagonal row of white stars.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina",
+          "meaning": {
+            "description": "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bosnia and Herzegovina — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina"
+              }
+            ]
+          },
+          "sha256": "5943614bf6c373d72e46cc5198654a056b1b4e341f8aa87f7d5f30efed94882d",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1992,
+        "event": "Bosnia and Herzegovina declared independence from Yugoslavia on 3 March 1992",
+        "source": "https://en.wikipedia.org/wiki/Independence_of_Bosnia_and_Herzegovina"
+      }
     },
     "BB": {
       "flags": [
@@ -3540,8 +3608,102 @@
           "reuse": "flags/cy.svg",
           "design": "The national flag of Cyprus, in the form adopted in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
+        },
+        {
+          "id": "cy-1960",
+          "category": "historical",
+          "name": "Flag of Cyprus (1960–2006)",
+          "from": 1960,
+          "to": 2006,
+          "commons": "Flag of Cyprus (1960–2006).svg",
+          "file": "cy/cyprus-1960.svg",
+          "design": "The first flag of the republic, with the island in a deeper copper-orange than the 2006 revision.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
+          "sha256": "dd090e7307736a81f4bba9ffbd8ffb0f2740e5365cc33f626b578ac0c6144950",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cy-british",
+          "category": "historical",
+          "name": "Flag of British Cyprus (1922–1960)",
+          "from": 1922,
+          "to": 1960,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Cyprus (1922–1960).svg",
+          "file": "cy/cyprus-british.svg",
+          "design": "A British Blue Ensign defaced with the colony's badge, two red lions on white.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
+          "sha256": "e985324280fadd9e3b241793f3817d2eb80f3a8e078ac5191acd1a4cff3b1f61",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cy-ottoman",
+          "category": "historical",
+          "name": "Flag of the Ottoman Empire",
+          "from": 1844,
+          "to": 1878,
+          "sovereign": "the Ottoman Empire",
+          "commons": "Flag of the Ottoman Empire (1844–1922).svg",
+          "file": "cy/cyprus-ottoman.svg",
+          "design": "The Ottoman flag, flown over Cyprus until Britain took over its administration in 1878.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
+          "sha256": "7ff6e694d31e48144ce36c67bed5a4e1742d5e6924cad50ca760b594b3d49822",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cy-president",
+          "category": "standard",
+          "name": "Presidential Standard of Cyprus",
+          "from": 2006,
+          "to": 9999,
+          "commons": "Presidential Standard of Cyprus.svg",
+          "file": "cy/cyprus-president.svg",
+          "design": "A field bearing the coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
+          "sha256": "8bd8ed9271c889bd35ff3b2e7b88193119d2fbf3b64c8e60816bdae14c0ceddf",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cy-naval-jack",
+          "category": "maritime",
+          "name": "Naval jack of Cyprus",
+          "from": 1964,
+          "to": 9999,
+          "commons": "Naval jack of Cyprus.svg",
+          "file": "cy/cyprus-naval-jack.svg",
+          "design": "The naval jack.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Cypriot_flags",
+          "sha256": "4eecbc4a1117e6e3a085fd7bd0d2d720e6879039cb73c25ee876d99a1937be3d",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "cy-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Cyprus",
+          "from": 1960,
+          "to": 9999,
+          "commons": "Coat of arms of Cyprus (2006).svg",
+          "file": "cy/cyprus-arms.svg",
+          "design": "A white dove carrying an olive branch above the year 1960, on a copper-coloured shield within an olive wreath.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus",
+          "meaning": {
+            "description": "Every element is chosen, and two of them are the same idea twice: the white dove carrying an olive branch is peace, and the olive wreath framing the shield is peace again — a wish that carried real weight for an island independent in 1960 with a mixed Greek and Turkish population. The year 1960 records that independence from British rule. The shield's colour is the point most people miss: it is not gold but copper, specified as Pantone 1385 C, for the copper ore that Cyprus was famous for in antiquity — the island's name and the Latin word for copper, cuprum, are bound together.",
+            "sources": [
+              {
+                "title": "Coat of arms of Cyprus — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus"
+              }
+            ]
+          },
+          "sha256": "8c6e763ae6f88171b8a8e1064f720981cfcac142f10e43114934b13d72e1a3b6",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Independence from the United Kingdom, 16 August 1960",
+        "source": "https://en.wikipedia.org/wiki/History_of_Cyprus"
+      }
     },
     "CZ": {
       "flags": [
@@ -8482,8 +8644,76 @@
           "reuse": "flags/lu.svg",
           "design": "The national flag of Luxembourg, in the form adopted in 1845.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Luxembourg"
+        },
+        {
+          "id": "lu-civil-ensign",
+          "category": "maritime",
+          "name": "Civil Ensign of Luxembourg",
+          "from": 1972,
+          "to": 9999,
+          "commons": "Civil Ensign of Luxembourg.svg",
+          "file": "lu/luxembourg-civil-ensign.svg",
+          "design": "The red lion of Luxembourg on a white field barry of blue — flown by shipping instead of the tricolour, which is near-identical to the Dutch flag.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags",
+          "sha256": "d4a5b298b918db299d12525768cdf2f377fb7d06a8bfa944a799215f1bbf46b4",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lu-grand-duke",
+          "category": "standard",
+          "name": "Standard of the Grand Duke of Luxembourg",
+          "from": 2001,
+          "to": 9999,
+          "commons": "Standard of the Grand Duke of Luxembourg.svg",
+          "file": "lu/luxembourg-grand-duke.svg",
+          "design": "The arms of the Grand Duke.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags",
+          "sha256": "4c93e21714d1e3bcb36d587e55587592b78309753b240ec338609922a9d7f480",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lu-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1556,
+          "to": 1684,
+          "sovereign": "Habsburg Spain",
+          "commons": "Flag of Cross of Burgundy.svg",
+          "file": "lu/luxembourg-burgundy.svg",
+          "design": "The ragged saltire flown over Luxembourg as part of the Spanish Netherlands.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags",
+          "sha256": "da25fa0124af5873cbf404c3c0349ac0beed61a96ed5fb65d77367a8969ee637",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "lu-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Luxembourg",
+          "from": 1839,
+          "to": 9999,
+          "commons": "Coat of arms of Luxembourg.svg",
+          "file": "lu/luxembourg-arms.svg",
+          "design": "A red lion with a forked tail, crowned, on a field barry of ten silver and blue.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg",
+          "meaning": {
+            "description": "The Red Lion of Luxembourg is one of the older arms of Europe, and it is not originally Luxembourg's own: it derives from the arms of the Duchy of Limburg. Henry V, Count of Luxembourg, was the first to adopt it in the 13th century — his father Waleran III, Duke of Limburg, had borne a red forked-tailed lion on white, and the son set that lion on a field striped silver and blue. The forked tail (queue fourchée) is the detail that marks it out. The national flag's red-white-blue tricolour is drawn from these same three colours, which is why the arms and the flag belong together.",
+            "sources": [
+              {
+                "title": "Coat of arms of Luxembourg — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg"
+              }
+            ]
+          },
+          "sha256": "34d2b7aa676ea0c30a5b0900f7bdc34d6b16b37846c5aa8b3cd1ba09d0732919",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1839,
+        "event": "The Treaty of London of 1839 established Luxembourg as an independent grand duchy",
+        "note": "Full sovereignty and neutrality were confirmed by the second Treaty of London in 1867.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Luxembourg"
+      }
     },
     "LV": {
       "flags": [
@@ -8805,8 +9035,88 @@
           "reuse": "flags/me.svg",
           "design": "The national flag of Montenegro, in the form adopted in 2004.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Montenegro"
+        },
+        {
+          "id": "me-kingdom",
+          "category": "historical",
+          "name": "State flag of the Kingdom of Montenegro",
+          "from": 1905,
+          "to": 1918,
+          "priorPolity": "the Kingdom of Montenegro",
+          "commons": "Flag of Montenegro (1905–1918).svg",
+          "file": "me/montenegro-kingdom.svg",
+          "design": "The red-blue-white tricolour charged with the royal cypher of Nicholas I, before Montenegro was absorbed into Yugoslavia in 1918.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro",
+          "sha256": "8a6a02080e071203be66229834ce13638525ac1b846337bfe6f426735789bfd7",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "me-1852",
+          "category": "historical",
+          "name": "Flag of the Principality of Montenegro (1852–1905)",
+          "from": 1852,
+          "to": 1905,
+          "priorPolity": "the Principality of Montenegro",
+          "commons": "Flag of Montenegro (1860–1905).svg",
+          "file": "me/montenegro-1852.svg",
+          "design": "The red flag with a white border, of the secular principality under the Petrović-Njegoš princes.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro",
+          "sha256": "d8402946e470ad697c6b33f3c64e1d1643138f5b4f940356578a38882e34d24a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "me-president",
+          "category": "standard",
+          "name": "Standard of the President of Montenegro",
+          "from": 2006,
+          "to": 9999,
+          "commons": "Presidential Standard of Montenegro.svg",
+          "file": "me/montenegro-president.svg",
+          "design": "The presidential standard.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro",
+          "sha256": "fcd7575ffea49bb303fa2ad60b326b27c545ae530851bfc1f934921246ed9ab3",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "me-naval-ensign",
+          "category": "maritime",
+          "name": "Naval ensign of Montenegro",
+          "commons": "Naval Ensign of Montenegro.svg",
+          "file": "me/montenegro-naval-ensign.svg",
+          "design": "The naval ensign.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro",
+          "sha256": "1d3f23a6096ddf3c4cc74314c2be0fbe6ef8df05ceca30026494d237a58c80f7",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "me-arms",
+          "category": "coatofarms",
+          "name": "Coat of arms of Montenegro",
+          "from": 2004,
+          "to": 9999,
+          "commons": "Coat of arms of Montenegro.svg",
+          "file": "me/montenegro-arms.svg",
+          "design": "A golden double-headed eagle bearing a shield with a golden lion passant, beneath a crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro",
+          "meaning": {
+            "description": "The double-headed eagle is of Byzantine and ultimately Roman origin, and here stands for the close bond of church and state that defined Montenegro under its prince-bishops, the vladikas. On the breast shield the golden lion passant is a sign of episcopal authority, read as a figure of the Lion of Judah. The crown is that of the Petrović-Njegoš dynasty that ruled Montenegro — its inclusion was mildly controversial when the arms were adopted in 2004, since the country is now a secular republic; the modern design put the lion back on the shield in place of the earlier rulers' initials.",
+            "sources": [
+              {
+                "title": "Coat of arms of Montenegro — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro"
+              }
+            ]
+          },
+          "sha256": "bcebdf95250638fa736e8dff7533f394457310e9c2f7fab7a5bc76ab76f8a2c7",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1878,
+        "event": "Montenegro's independence was recognised by the Great Powers at the Congress of Berlin in 1878",
+        "note": "Montenegro had been a de-facto sovereign principality for centuries; it was absorbed into Yugoslavia in 1918 and regained independence from the state union with Serbia on 3 June 2006.",
+        "source": "https://en.wikipedia.org/wiki/History_of_Montenegro"
+      }
     },
     "MG": {
       "flags": [
@@ -8877,8 +9187,77 @@
           "reuse": "flags/mk.svg",
           "design": "The national flag of North Macedonia, in the form adopted in 1995.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia"
+        },
+        {
+          "id": "mk-1992",
+          "category": "historical",
+          "name": "Flag of the Republic of Macedonia (1992–1995)",
+          "from": 1992,
+          "to": 1995,
+          "commons": "Flag of Macedonia (1992–1995).svg",
+          "file": "mk/macedonia-1992.svg",
+          "design": "The red flag with the sixteen-rayed Vergina Sun, flown at independence and changed in 1995 after Greece objected to the ancient Macedonian emblem.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia",
+          "sha256": "3a35e9e9352b6a0ed674a6a1ab80b4e617d2dfc914944d60f5305d7481e065a0",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mk-sr",
+          "category": "historical",
+          "name": "Flag of the Socialist Republic of Macedonia",
+          "from": 1946,
+          "to": 1991,
+          "priorPolity": "the Socialist Republic of Macedonia within Yugoslavia",
+          "commons": "Flag of the Socialist Republic of Macedonia (1946–1991); Flag of North Macedonia (1991-1992).svg",
+          "file": "mk/macedonia-sr.svg",
+          "design": "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia",
+          "sha256": "870c25de4b706b65d6b7c6bb5a7162b329984f77dc182ca60ba4aa2c6ff754ec",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mk-krusevo",
+          "category": "historical",
+          "name": "Flag of the Kruševo Republic",
+          "from": 1903,
+          "to": 1903,
+          "priorPolity": "the Kruševo Republic",
+          "commons": "Flag of the Kruševo Republic.svg",
+          "file": "mk/macedonia-krusevo.svg",
+          "design": "The flag of the ten-day republic proclaimed during the Ilinden uprising against Ottoman rule in 1903.",
+          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia",
+          "sha256": "3990c8f2fe10d9e672c86df848e429672c35215d80cc28bdac384f12226acc4a",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "mk-emblem",
+          "category": "coatofarms",
+          "name": "National emblem of North Macedonia",
+          "from": 1946,
+          "to": 9999,
+          "commons": "Coat of arms of North Macedonia.svg",
+          "file": "mk/macedonia-emblem.svg",
+          "design": "A mountain, a lake and a rising sun framed by garlands of wheat, tobacco and poppy tied with embroidered ribbon, beneath a red star.",
+          "source": "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia",
+          "meaning": {
+            "description": "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
+            "sources": [
+              {
+                "title": "National emblem of North Macedonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia"
+              }
+            ]
+          },
+          "sha256": "e98abac50777975ff01d07fa4c5e1d18d3597b09ea91b9c0428d81e3f436beda",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Macedonia declared independence from Yugoslavia on 8 September 1991",
+        "note": "It was admitted to the UN in 1993 as \"the former Yugoslav Republic of Macedonia\" and renamed North Macedonia in 2019 under the Prespa agreement with Greece.",
+        "source": "https://en.wikipedia.org/wiki/Independence_of_North_Macedonia"
+      }
     },
     "ML": {
       "flags": [

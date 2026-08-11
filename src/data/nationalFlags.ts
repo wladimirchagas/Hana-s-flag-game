@@ -196,6 +196,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BA": [
     { id: "ba-official-national", category: "official", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
     { id: "ba-current", category: "historical", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
+    { id: "ba-1992", category: "historical", name: "Flag of the Republic of Bosnia and Herzegovina (1992–1998)", from: 1992, to: 1998, path: "national-flags/ba/bosnia-1992.svg", design: "The blue flag with the white shield and gold fleurs-de-lis of the Kotromanić dynasty, flown from independence until the current design was imposed in 1998.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
+    { id: "ba-sr", category: "historical", name: "Flag of SR Bosnia and Herzegovina", from: 1946, to: 1992, priorPolity: "the Socialist Republic of Bosnia and Herzegovina within Yugoslavia", path: "national-flags/ba/bosnia-sr.svg", design: "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
+    { id: "ba-austro", category: "historical", name: "Flag of the Condominium of Bosnia and Herzegovina", from: 1878, to: 1918, sovereign: "Austria-Hungary", path: "national-flags/ba/bosnia-austro.svg", design: "The red-and-yellow flag of the Austro-Hungarian condominium, after the 1878 occupation ended Ottoman rule.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
+    { id: "ba-arms", category: "coatofarms", name: "Coat of arms of Bosnia and Herzegovina", from: 1998, to: 9999, path: "national-flags/ba/bosnia-arms.svg", design: "A blue three-pointed shield with a yellow triangle and a diagonal row of white stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
   ],
   "BB": [
     { id: "bb-official-national", category: "official", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
@@ -436,6 +440,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CY": [
     { id: "cy-official-national", category: "official", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
     { id: "cy-current", category: "historical", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
+    { id: "cy-1960", category: "historical", name: "Flag of Cyprus (1960–2006)", from: 1960, to: 2006, path: "national-flags/cy/cyprus-1960.svg", design: "The first flag of the republic, with the island in a deeper copper-orange than the 2006 revision.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-british", category: "historical", name: "Flag of British Cyprus (1922–1960)", from: 1922, to: 1960, sovereign: "the United Kingdom", path: "national-flags/cy/cyprus-british.svg", design: "A British Blue Ensign defaced with the colony's badge, two red lions on white.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-ottoman", category: "historical", name: "Flag of the Ottoman Empire", from: 1844, to: 1878, sovereign: "the Ottoman Empire", path: "national-flags/cy/cyprus-ottoman.svg", design: "The Ottoman flag, flown over Cyprus until Britain took over its administration in 1878.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-naval-jack", category: "maritime", name: "Naval jack of Cyprus", from: 1964, to: 9999, path: "national-flags/cy/cyprus-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-president", category: "standard", name: "Presidential Standard of Cyprus", from: 2006, to: 9999, path: "national-flags/cy/cyprus-president.svg", design: "A field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
+    { id: "cy-arms", category: "coatofarms", name: "Coat of arms of Cyprus", from: 1960, to: 9999, path: "national-flags/cy/cyprus-arms.svg", design: "A white dove carrying an olive branch above the year 1960, on a copper-coloured shield within an olive wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
   ],
   "CZ": [
     { id: "cz-official-national", category: "official", name: "Flag of Czechia", from: 1993, to: 9999, primary: true, path: "flags/cz.svg", design: "The national flag of Czechia, in the form adopted in 1993.", source: "https://en.wikipedia.org/wiki/Flag_of_Czechia" },
@@ -928,6 +938,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "LU": [
     { id: "lu-official-national", category: "official", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
     { id: "lu-current", category: "historical", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
+    { id: "lu-burgundy", category: "historical", name: "Cross of Burgundy", from: 1556, to: 1684, sovereign: "Habsburg Spain", path: "national-flags/lu/luxembourg-burgundy.svg", design: "The ragged saltire flown over Luxembourg as part of the Spanish Netherlands.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
+    { id: "lu-civil-ensign", category: "maritime", name: "Civil Ensign of Luxembourg", from: 1972, to: 9999, path: "national-flags/lu/luxembourg-civil-ensign.svg", design: "The red lion of Luxembourg on a white field barry of blue — flown by shipping instead of the tricolour, which is near-identical to the Dutch flag.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
+    { id: "lu-grand-duke", category: "standard", name: "Standard of the Grand Duke of Luxembourg", from: 2001, to: 9999, path: "national-flags/lu/luxembourg-grand-duke.svg", design: "The arms of the Grand Duke.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
+    { id: "lu-arms", category: "coatofarms", name: "Coat of arms of Luxembourg", from: 1839, to: 9999, path: "national-flags/lu/luxembourg-arms.svg", design: "A red lion with a forked tail, crowned, on a field barry of ten silver and blue.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
   ],
   "LV": [
     { id: "lv-official-national", category: "official", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
@@ -964,6 +978,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "ME": [
     { id: "me-official-national", category: "official", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
     { id: "me-current", category: "historical", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
+    { id: "me-kingdom", category: "historical", name: "State flag of the Kingdom of Montenegro", from: 1905, to: 1918, priorPolity: "the Kingdom of Montenegro", path: "national-flags/me/montenegro-kingdom.svg", design: "The red-blue-white tricolour charged with the royal cypher of Nicholas I, before Montenegro was absorbed into Yugoslavia in 1918.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-1852", category: "historical", name: "Flag of the Principality of Montenegro (1852–1905)", from: 1852, to: 1905, priorPolity: "the Principality of Montenegro", path: "national-flags/me/montenegro-1852.svg", design: "The red flag with a white border, of the secular principality under the Petrović-Njegoš princes.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-naval-ensign", category: "maritime", name: "Naval ensign of Montenegro", path: "national-flags/me/montenegro-naval-ensign.svg", design: "The naval ensign.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-president", category: "standard", name: "Standard of the President of Montenegro", from: 2006, to: 9999, path: "national-flags/me/montenegro-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Montenegro" },
+    { id: "me-arms", category: "coatofarms", name: "Coat of arms of Montenegro", from: 2004, to: 9999, path: "national-flags/me/montenegro-arms.svg", design: "A golden double-headed eagle bearing a shield with a golden lion passant, beneath a crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
   ],
   "MG": [
     { id: "mg-official-national", category: "official", name: "Flag of Madagascar", from: 1958, to: 9999, primary: true, path: "flags/mg.svg", design: "The national flag of Madagascar, in the form adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Madagascar" },
@@ -976,6 +995,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MK": [
     { id: "mk-official-national", category: "official", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
     { id: "mk-current", category: "historical", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
+    { id: "mk-1992", category: "historical", name: "Flag of the Republic of Macedonia (1992–1995)", from: 1992, to: 1995, path: "national-flags/mk/macedonia-1992.svg", design: "The red flag with the sixteen-rayed Vergina Sun, flown at independence and changed in 1995 after Greece objected to the ancient Macedonian emblem.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia" },
+    { id: "mk-sr", category: "historical", name: "Flag of the Socialist Republic of Macedonia", from: 1946, to: 1991, priorPolity: "the Socialist Republic of Macedonia within Yugoslavia", path: "national-flags/mk/macedonia-sr.svg", design: "The red flag with a red star bordered gold in the canton, as a constituent republic of Yugoslavia.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia" },
+    { id: "mk-krusevo", category: "historical", name: "Flag of the Kruševo Republic", from: 1903, to: 1903, priorPolity: "the Kruševo Republic", path: "national-flags/mk/macedonia-krusevo.svg", design: "The flag of the ten-day republic proclaimed during the Ilinden uprising against Ottoman rule in 1903.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_North_Macedonia" },
+    { id: "mk-emblem", category: "coatofarms", name: "National emblem of North Macedonia", from: 1946, to: 9999, path: "national-flags/mk/macedonia-emblem.svg", design: "A mountain, a lake and a rising sun framed by garlands of wheat, tobacco and poppy tied with embroidered ribbon, beneath a red star.", source: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
   ],
   "ML": [
     { id: "ml-official-national", category: "official", name: "Flag of Mali", from: 1961, to: 9999, primary: true, path: "flags/ml.svg", design: "The national flag of Mali, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Mali" },
@@ -1683,6 +1706,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "AO": { year: 1975, event: "Independence from Portugal, 11 November 1975", source: "https://en.wikipedia.org/wiki/Angolan_War_of_Independence" },
   "AR": { year: 1816, event: "Declaration of Independence of the United Provinces of the Río de la Plata at Tucumán, 9 July 1816", source: "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence" },
   "AU": { year: 1901, event: "The six colonies federated as the Commonwealth of Australia on 1 January 1901.", note: "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.", source: "https://en.wikipedia.org/wiki/Federation_of_Australia" },
+  "BA": { year: 1992, event: "Bosnia and Herzegovina declared independence from Yugoslavia on 3 March 1992", source: "https://en.wikipedia.org/wiki/Independence_of_Bosnia_and_Herzegovina" },
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
   "BR": { year: 1822, event: "Independence declared on 7 September 1822 and recognised by Portugal in 1825.", source: "https://en.wikipedia.org/wiki/Independence_of_Brazil" },
@@ -1693,6 +1717,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CO": { year: 1810, event: "Declaration of independence from Spain at Bogotá, 20 July 1810", note: "Independence was secured militarily at Boyacá in 1819, and the present republic separated from Gran Colombia in 1831.", source: "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence" },
   "CR": { year: 1838, event: "Costa Rica withdrew from the Federal Republic of Central America on 14 November 1838 and became a sovereign state", note: "Central America had declared independence from Spain on 15 September 1821, but Costa Rica then belonged to the First Mexican Empire until 1823 and to the Central American federation until 1838; a republic was proclaimed in 1848.", source: "https://en.wikipedia.org/wiki/History_of_Costa_Rica" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
+  "CY": { year: 1960, event: "Independence from the United Kingdom, 16 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Cyprus" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
   "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
@@ -1707,7 +1732,10 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LT": { year: 1918, event: "Lithuania restored its statehood on 16 February 1918", note: "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.", source: "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania" },
+  "LU": { year: 1839, event: "The Treaty of London of 1839 established Luxembourg as an independent grand duchy", note: "Full sovereignty and neutrality were confirmed by the second Treaty of London in 1867.", source: "https://en.wikipedia.org/wiki/History_of_Luxembourg" },
   "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
+  "ME": { year: 1878, event: "Montenegro's independence was recognised by the Great Powers at the Congress of Berlin in 1878", note: "Montenegro had been a de-facto sovereign principality for centuries; it was absorbed into Yugoslavia in 1918 and regained independence from the state union with Serbia on 3 June 2006.", source: "https://en.wikipedia.org/wiki/History_of_Montenegro" },
+  "MK": { year: 1991, event: "Macedonia declared independence from Yugoslavia on 8 September 1991", note: "It was admitted to the UN in 1993 as \"the former Yugoslav Republic of Macedonia\" and renamed North Macedonia in 2019 under the Prespa agreement with Greece.", source: "https://en.wikipedia.org/wiki/Independence_of_North_Macedonia" },
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MT": { year: 1964, event: "Independence from the United Kingdom, 21 September 1964", note: "Malta became a republic in 1974.", source: "https://en.wikipedia.org/wiki/History_of_Malta" },
   "MY": { year: 1957, event: "The Federation of Malaya became independent on 31 August 1957; Malaysia was formed in 1963.", source: "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)" },
@@ -1801,6 +1829,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Azerbaijan — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
     ],
   },
+  "ba-arms": {
+    description: "The arms simply repeat the national flag, adopted together in 1998. The three points of the shield stand for the country's three constituent peoples — Bosniaks, Croats and Serbs; the yellow triangle is read as the rough triangular shape of the country's territory, and its three sides again as the three peoples. The row of white stars, cut off top and bottom, stands for Europe and is deliberately open-ended, meant to be infinite. The design was chosen by the international High Representative when the country's communities could not agree, which is why it avoids the older national and religious symbols — the fleurs-de-lis of the medieval Kotromanić kings that the 1992 flag had carried had come to be read as a Bosniak emblem.",
+    sources: [
+      { title: "Coat of arms of Bosnia and Herzegovina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
+    ],
+  },
   "bd-emblem": {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
@@ -1890,6 +1924,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Designed by Miguel Teurbe Tolón in 1849, the shield is read in three fields. The upper field is a sea between two capes — the Yucatán peninsula and Florida — with a golden key hanging between them beneath a rising sun: Cuba is the key to the Gulf of Mexico, the island commanding the strait, and the sun is the dawn of the new state. The lower left field carries the blue and white stripes of the flag, for the island's division into departments under Spanish rule; the lower right shows a royal palm, the national tree, standing for the country itself. Behind the shield the fasces topped with a red Phrygian cap is the classical emblem of authority and of liberty, and the oak branch and laurel wreath at the sides are strength and glory.",
     sources: [
       { title: "Coat of arms of Cuba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
+    ],
+  },
+  "cy-arms": {
+    description: "Every element is chosen, and two of them are the same idea twice: the white dove carrying an olive branch is peace, and the olive wreath framing the shield is peace again — a wish that carried real weight for an island independent in 1960 with a mixed Greek and Turkish population. The year 1960 records that independence from British rule. The shield's colour is the point most people miss: it is not gold but copper, specified as Pantone 1385 C, for the copper ore that Cyprus was famous for in antiquity — the island's name and the Latin word for copper, cuprum, are bound together.",
+    sources: [
+      { title: "Coat of arms of Cyprus — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
     ],
   },
   "cz-arms": {
@@ -2096,6 +2136,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Lithuania — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
     ],
   },
+  "lu-arms": {
+    description: "The Red Lion of Luxembourg is one of the older arms of Europe, and it is not originally Luxembourg's own: it derives from the arms of the Duchy of Limburg. Henry V, Count of Luxembourg, was the first to adopt it in the 13th century — his father Waleran III, Duke of Limburg, had borne a red forked-tailed lion on white, and the son set that lion on a field striped silver and blue. The forked tail (queue fourchée) is the detail that marks it out. The national flag's red-white-blue tricolour is drawn from these same three colours, which is why the arms and the flag belong together.",
+    sources: [
+      { title: "Coat of arms of Luxembourg — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
+    ],
+  },
   "lv-arms": {
     description: "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
     sources: [
@@ -2106,6 +2152,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Designed by Gheorghe Vrabie, the arms are two inheritances joined. The aurochs head with an eight-pointed star between its horns, a heraldic rose to one side and a waning crescent to the other, is taken directly from the arms of the medieval Principality of Moldavia — the aurochs being the beast of that principality's foundation legend. The supporter behind it, an eagle holding a cross in its beak, an olive branch in one talon and a sceptre in the other, comes from the interwar coat of arms of the Kingdom of Romania, most of Moldova's territory having been part of Romania between the wars. The blazon is fixed in law (Law No. 32 of 7 March 2013).",
     sources: [
       { title: "Coat of arms of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
+    ],
+  },
+  "me-arms": {
+    description: "The double-headed eagle is of Byzantine and ultimately Roman origin, and here stands for the close bond of church and state that defined Montenegro under its prince-bishops, the vladikas. On the breast shield the golden lion passant is a sign of episcopal authority, read as a figure of the Lion of Judah. The crown is that of the Petrović-Njegoš dynasty that ruled Montenegro — its inclusion was mildly controversial when the arms were adopted in 2004, since the country is now a secular republic; the modern design put the lion back on the shield in place of the earlier rulers' initials.",
+    sources: [
+      { title: "Coat of arms of Montenegro — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montenegro" },
+    ],
+  },
+  "mk-emblem": {
+    description: "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
+    sources: [
+      { title: "National emblem of North Macedonia — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_North_Macedonia" },
     ],
   },
   "ml-emblem": {
