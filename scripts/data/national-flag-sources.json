@@ -4546,7 +4546,7 @@
           "to": 9999,
           "name": "Flag of Djibouti",
           "reuse": "flags/dj.svg",
-          "design": "The national flag of Djibouti, in the form adopted in 1977.",
+          "design": "The national flag, adopted at independence in 1977.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Djibouti"
         },
         {
@@ -4556,10 +4556,51 @@
           "to": 9999,
           "name": "Flag of Djibouti",
           "reuse": "flags/dj.svg",
-          "design": "The national flag of Djibouti, in the form adopted in 1977.",
+          "design": "Light blue over green with a white hoist triangle bearing a red star — blue for the sea and sky and the Issa people, green for the land and the Afar people, white for peace, the red star for unity.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Djibouti"
+        },
+        {
+          "id": "dj-french",
+          "category": "historical",
+          "from": 1896,
+          "to": 1977,
+          "name": "Flag of France",
+          "commons": "Flag of France.svg",
+          "file": "dj/dj-french.svg",
+          "sovereign": "France",
+          "design": "The French Tricolour, flown over French Somaliland and then the Territory of the Afars and the Issas.",
+          "source": "https://en.wikipedia.org/wiki/French_Somaliland",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "dj-arms",
+          "category": "coatofarms",
+          "from": 1977,
+          "to": 9999,
+          "name": "Emblem of Djibouti",
+          "commons": "Emblem of Djibouti.svg",
+          "file": "dj/dj-arms.svg",
+          "design": "An upright spear and shield between two hands holding machetes, beneath a red star, within laurel branches.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Djibouti",
+          "meaning": {
+            "description": "An upright spear stands before a shield, and on either side a hand rises holding a large machete — the two hands for the country's two peoples, the Issa and the Afar. Above, a red star stands for the unity between them, the same star as on the flag. Laurel branches frame the whole.",
+            "sources": [
+              {
+                "title": "Emblem of Djibouti — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Djibouti"
+              }
+            ]
+          },
+          "sha256": "c15fe3bf5d918ae91470261196f822699a10e14452f558383b0e0e0639a56d56",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1977,
+        "event": "Djibouti became independent from France on 27 June 1977, ending French rule over the Territory of the Afars and the Issas",
+        "source": "https://en.wikipedia.org/wiki/History_of_Djibouti"
+      }
     },
     "DK": {
       "flags": [
@@ -6501,22 +6542,63 @@
           "category": "official",
           "from": 1965,
           "to": 9999,
-          "name": "Flag of Gambia",
+          "name": "Flag of the Gambia",
           "reuse": "flags/gm.svg",
-          "design": "The national flag of Gambia, in the form adopted in 1965.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Gambia"
+          "design": "The national flag, adopted at independence in 1965.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Gambia"
         },
         {
           "id": "gm-current",
           "category": "historical",
           "from": 1965,
           "to": 9999,
-          "name": "Flag of Gambia",
+          "name": "Flag of the Gambia",
           "reuse": "flags/gm.svg",
-          "design": "The national flag of Gambia, in the form adopted in 1965.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Gambia"
+          "design": "Red, blue and green bands separated by narrow white stripes — red for the sun and the savanna, blue for the River Gambia that runs the length of the country, green for the land and forests, white for peace and unity.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Gambia"
+        },
+        {
+          "id": "gm-uk",
+          "category": "historical",
+          "from": 1821,
+          "to": 1965,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "gm/gm-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while the Gambia was a British colony.",
+          "source": "https://en.wikipedia.org/wiki/British_Gambia",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "gm-arms",
+          "category": "coatofarms",
+          "from": 1964,
+          "to": 9999,
+          "name": "Coat of arms of the Gambia",
+          "commons": "Coat of arms of The Gambia.svg",
+          "file": "gm/gm-arms.svg",
+          "design": "A blue shield with a crossed hoe and axe, held by two lions and crested with an oil palm.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Gambia",
+          "meaning": {
+            "description": "Two lions — recalling the country's time within the British Empire — hold a hoe and an axe and support a blue shield bearing the same hoe and axe crossed, for the farming on which the country depends and for the two peoples who work the land. Above the shield a heraldic helm bears an oil palm as its crest. The ribbon reads “Progress, Peace, Prosperity.”",
+            "sources": [
+              {
+                "title": "Coat of arms of the Gambia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Gambia"
+              }
+            ]
+          },
+          "sha256": "a017fd45bc6bcdc68abb8170d8bd1b80f6ce7c7e17642f4277367a7d5c976af6",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1965,
+        "event": "The Gambia became independent from the United Kingdom on 18 February 1965",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Gambia"
+      }
     },
     "GN": {
       "flags": [
@@ -9702,7 +9784,7 @@
           "to": 9999,
           "name": "Flag of Lesotho",
           "reuse": "flags/ls.svg",
-          "design": "The national flag of Lesotho, in the form adopted in 2006.",
+          "design": "The national flag, adopted in 2006.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
         },
         {
@@ -9712,10 +9794,77 @@
           "to": 9999,
           "name": "Flag of Lesotho",
           "reuse": "flags/ls.svg",
-          "design": "The national flag of Lesotho, in the form adopted in 2006.",
+          "design": "Blue, white and green horizontal bands with a black Basotho hat (mokorotlo) at the centre — blue for rain, white for peace, green for prosperity, the hat for the Basotho nation.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
+        },
+        {
+          "id": "ls-1987",
+          "category": "historical",
+          "from": 1987,
+          "to": 2006,
+          "name": "Flag of Lesotho (1987–2006)",
+          "commons": "Flag of Lesotho (1987–2006).svg",
+          "file": "ls/ls-1987.svg",
+          "design": "A diagonal design in blue, white and green bearing a brown Basotho shield with an assegai and knobkierie — adopted by the military government of 1986.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho",
+          "sha256": "00370bdf4182b9fe026642c8fbf7d261b0bbcbfaea5b80e7e7b7c15f1a511a48",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ls-1966",
+          "category": "historical",
+          "from": 1966,
+          "to": 1987,
+          "name": "Flag of Lesotho (1966–1987)",
+          "commons": "Flag of Lesotho (1966–1987).svg",
+          "file": "ls/ls-1966.svg",
+          "design": "A blue field with a white Basotho hat, beside vertical green and red bands — the first national flag, flown from independence in 1966.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho",
+          "sha256": "476715bef1c5954fc5b20b188b4bbd4cb1e3de21a79ab9e4d095e619e6fb1ee4",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ls-uk",
+          "category": "historical",
+          "from": 1884,
+          "to": 1966,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "ls/ls-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Basutoland was a British protectorate.",
+          "source": "https://en.wikipedia.org/wiki/Basutoland",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "ls-arms",
+          "category": "coatofarms",
+          "from": 1966,
+          "to": 9999,
+          "name": "Coat of arms of Lesotho",
+          "commons": "Coat of arms of Lesotho.svg",
+          "file": "ls/ls-arms.svg",
+          "design": "A crocodile on a Basotho shield with crossed assegai and knobkierie, supported by two horses before Thaba Bosiu.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho",
+          "meaning": {
+            "description": "On a Basotho shield sits a crocodile — the totem of the royal Bakoena clan, carried over from the arms of Basutoland. Behind the shield are crossed an assegai (spear) and a knobkierie (club), and two Basotho horses support it, standing before Thaba Bosiu, the mountain stronghold of King Moshoeshoe I who founded the nation. The ribbon reads Khotso, Pula, Nala — “Peace, Rain, Prosperity.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Lesotho — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho"
+              }
+            ]
+          },
+          "sha256": "f45914d45ca82f1ebd3ef5aeaa6980dc38e754989cbfd80fdc513813b52960ab",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1966,
+        "event": "Lesotho became independent from the United Kingdom on 4 October 1966, ending the Basutoland protectorate",
+        "source": "https://en.wikipedia.org/wiki/History_of_Lesotho"
+      }
     },
     "LT": {
       "flags": [
@@ -15102,7 +15251,7 @@
           "to": 9999,
           "name": "Flag of Sierra Leone",
           "reuse": "flags/sl.svg",
-          "design": "The national flag of Sierra Leone, in the form adopted in 1961.",
+          "design": "The national flag, adopted at independence in 1961.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone"
         },
         {
@@ -15112,10 +15261,51 @@
           "to": 9999,
           "name": "Flag of Sierra Leone",
           "reuse": "flags/sl.svg",
-          "design": "The national flag of Sierra Leone, in the form adopted in 1961.",
+          "design": "Green, white and blue horizontal bands — green for the agriculture and mountains, white for unity and justice, blue for the natural harbour of Freetown and the hope of peace.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone"
+        },
+        {
+          "id": "sl-uk",
+          "category": "historical",
+          "from": 1808,
+          "to": 1961,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "sl/sl-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Sierra Leone was a British Crown colony and protectorate.",
+          "source": "https://en.wikipedia.org/wiki/British_Sierra_Leone",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sl-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Sierra Leone",
+          "commons": "Coat of arms of Sierra Leone.svg",
+          "file": "sl/sl-arms.svg",
+          "design": "A green shield with a lion beneath a zigzag chief and three torches, supported by two lions.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone",
+          "meaning": {
+            "description": "The green shield carries a lion beneath a zigzag chief — the zigzag for the Lion Mountains (Serra Lyoa) that gave the country its name — and three golden torches for enlightenment, peace and dignity. Wavy blue and white bars for the sea run beneath. Two lions support the shield, and the green, white and blue of the field are the colours of the national flag. The motto reads “Unity, Freedom, Justice.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Sierra Leone — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone"
+              }
+            ]
+          },
+          "sha256": "8f43680470b08b305adda396befc0d080f17005acde297aa42b78be8469cf98d",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1961,
+        "event": "Sierra Leone became independent from the United Kingdom on 27 April 1961",
+        "source": "https://en.wikipedia.org/wiki/History_of_Sierra_Leone"
+      }
     },
     "SM": {
       "flags": [
@@ -15513,7 +15703,7 @@
           "to": 9999,
           "name": "Flag of Eswatini",
           "reuse": "flags/sz.svg",
-          "design": "The national flag of Eswatini, in the form adopted in 1968.",
+          "design": "The national flag, adopted at independence in 1968.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Eswatini"
         },
         {
@@ -15523,10 +15713,51 @@
           "to": 9999,
           "name": "Flag of Eswatini",
           "reuse": "flags/sz.svg",
-          "design": "The national flag of Eswatini, in the form adopted in 1968.",
+          "design": "A crimson centre between blue bands edged in yellow, bearing a black-and-white Nguni shield with two spears and a staff — crimson for past battles, yellow for mineral wealth, blue for peace and stability.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Eswatini"
+        },
+        {
+          "id": "sz-uk",
+          "category": "historical",
+          "from": 1903,
+          "to": 1968,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "sz/sz-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Swaziland was a British protectorate.",
+          "source": "https://en.wikipedia.org/wiki/Swaziland_Protectorate",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-11"
+        },
+        {
+          "id": "sz-arms",
+          "category": "coatofarms",
+          "from": 1968,
+          "to": 9999,
+          "name": "Coat of arms of Eswatini",
+          "commons": "Coat of arms of Eswatini.svg",
+          "file": "sz/sz-arms.svg",
+          "design": "An Nguni shield on two spears, supported by a lion and an elephant, beneath a crown of feathers.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini",
+          "meaning": {
+            "description": "A black-and-white Nguni shield rests on two spears and a staff hung with the blue royal tassels (injobo). A lion and an elephant support it — the lion for the King, the elephant for the Queen Mother, the two pillars of the Swazi monarchy — and above sits a crown of feathers of the kind worn at the Incwala, the festival of the first fruits. The scroll reads Siyinqaba — “We are the fortress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Eswatini — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini"
+              }
+            ]
+          },
+          "sha256": "39100cc013cc6a11490ecbde4b4ed9fe65609c1a77a3b306e7984bd9ca7b97a0",
+          "fetched": "2026-08-11"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1968,
+        "event": "Eswatini (then Swaziland) became independent from the United Kingdom on 6 September 1968",
+        "source": "https://en.wikipedia.org/wiki/History_of_Eswatini"
+      }
     },
     "TD": {
       "flags": [

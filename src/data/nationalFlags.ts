@@ -504,8 +504,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "de-state", category: "civilstate", name: "State flag of Germany", from: 1950, to: 9999, path: "national-flags/de/germany-state.svg", design: "The black-red-gold tricolour charged with the federal shield and its eagle — flown by federal authorities, while the plain tricolour is the civil flag.", source: "https://en.wikipedia.org/wiki/List_of_German_flags" },
   ],
   "DJ": [
-    { id: "dj-official-national", category: "official", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag of Djibouti, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
-    { id: "dj-current", category: "historical", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag of Djibouti, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+    { id: "dj-official-national", category: "official", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag, adopted at independence in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+    { id: "dj-current", category: "historical", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "Light blue over green with a white hoist triangle bearing a red star — blue for the sea and sky and the Issa people, green for the land and the Afar people, white for peace, the red star for unity.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
+    { id: "dj-french", category: "historical", name: "Flag of France", from: 1896, to: 1977, sovereign: "France", path: "national-flags/dj/dj-french.svg", design: "The French Tricolour, flown over French Somaliland and then the Territory of the Afars and the Issas.", source: "https://en.wikipedia.org/wiki/French_Somaliland" },
+    { id: "dj-arms", category: "coatofarms", name: "Emblem of Djibouti", from: 1977, to: 9999, path: "national-flags/dj/dj-arms.svg", design: "An upright spear and shield between two hands holding machetes, beneath a red star, within laurel branches.", source: "https://en.wikipedia.org/wiki/Emblem_of_Djibouti" },
   ],
   "DK": [
     { id: "dk-official-national", category: "official", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
@@ -687,8 +689,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gh-arms", category: "coatofarms", name: "Coat of arms of Ghana", from: 1957, to: 9999, path: "national-flags/gh/ghana-arms.svg", design: "A quartered shield on a green St George's Cross, supported by two golden eagles, crested with the black star, over the motto Freedom and Justice.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
   ],
   "GM": [
-    { id: "gm-official-national", category: "official", name: "Flag of Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag of Gambia, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Gambia" },
-    { id: "gm-current", category: "historical", name: "Flag of Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag of Gambia, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Gambia" },
+    { id: "gm-official-national", category: "official", name: "Flag of the Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag, adopted at independence in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Gambia" },
+    { id: "gm-current", category: "historical", name: "Flag of the Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "Red, blue and green bands separated by narrow white stripes — red for the sun and the savanna, blue for the River Gambia that runs the length of the country, green for the land and forests, white for peace and unity.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Gambia" },
+    { id: "gm-uk", category: "historical", name: "Flag of the United Kingdom", from: 1821, to: 1965, sovereign: "the United Kingdom", path: "national-flags/gm/gm-uk.svg", design: "The Union Flag, flown while the Gambia was a British colony.", source: "https://en.wikipedia.org/wiki/British_Gambia" },
+    { id: "gm-arms", category: "coatofarms", name: "Coat of arms of the Gambia", from: 1964, to: 9999, path: "national-flags/gm/gm-arms.svg", design: "A blue shield with a crossed hoe and axe, held by two lions and crested with an oil palm.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Gambia" },
   ],
   "GN": [
     { id: "gn-official-national", category: "official", name: "Flag of Guinea", from: 1958, to: 9999, primary: true, path: "flags/gn.svg", design: "The national flag, adopted at independence in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea" },
@@ -996,8 +1000,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lr-current", category: "historical", name: "Flag of Liberia", from: 1847, to: 9999, primary: true, path: "flags/lr.svg", design: "The national flag of Liberia, in the form adopted in 1847.", source: "https://en.wikipedia.org/wiki/Flag_of_Liberia" },
   ],
   "LS": [
-    { id: "ls-official-national", category: "official", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "The national flag of Lesotho, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
-    { id: "ls-current", category: "historical", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "The national flag of Lesotho, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    { id: "ls-official-national", category: "official", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "The national flag, adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    { id: "ls-current", category: "historical", name: "Flag of Lesotho", from: 2006, to: 9999, primary: true, path: "flags/ls.svg", design: "Blue, white and green horizontal bands with a black Basotho hat (mokorotlo) at the centre — blue for rain, white for peace, green for prosperity, the hat for the Basotho nation.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    { id: "ls-1987", category: "historical", name: "Flag of Lesotho (1987–2006)", from: 1987, to: 2006, path: "national-flags/ls/ls-1987.svg", design: "A diagonal design in blue, white and green bearing a brown Basotho shield with an assegai and knobkierie — adopted by the military government of 1986.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    { id: "ls-1966", category: "historical", name: "Flag of Lesotho (1966–1987)", from: 1966, to: 1987, path: "national-flags/ls/ls-1966.svg", design: "A blue field with a white Basotho hat, beside vertical green and red bands — the first national flag, flown from independence in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Lesotho" },
+    { id: "ls-uk", category: "historical", name: "Flag of the United Kingdom", from: 1884, to: 1966, sovereign: "the United Kingdom", path: "national-flags/ls/ls-uk.svg", design: "The Union Flag, flown while Basutoland was a British protectorate.", source: "https://en.wikipedia.org/wiki/Basutoland" },
+    { id: "ls-arms", category: "coatofarms", name: "Coat of arms of Lesotho", from: 1966, to: 9999, path: "national-flags/ls/ls-arms.svg", design: "A crocodile on a Basotho shield with crossed assegai and knobkierie, supported by two horses before Thaba Bosiu.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho" },
   ],
   "LT": [
     { id: "lt-official-national", category: "official", name: "Flag of Lithuania", from: 1918, to: 9999, primary: true, path: "flags/lt.svg", design: "The national flag of Lithuania, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Lithuania" },
@@ -1501,8 +1509,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sk-arms", category: "coatofarms", name: "Coat of arms of Slovakia", from: 1993, to: 9999, path: "national-flags/sk/slovakia-arms.svg", design: "A silver double cross standing on the middle peak of a blue mountain of three peaks, on a red shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
   ],
   "SL": [
-    { id: "sl-official-national", category: "official", name: "Flag of Sierra Leone", from: 1961, to: 9999, primary: true, path: "flags/sl.svg", design: "The national flag of Sierra Leone, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
-    { id: "sl-current", category: "historical", name: "Flag of Sierra Leone", from: 1961, to: 9999, primary: true, path: "flags/sl.svg", design: "The national flag of Sierra Leone, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+    { id: "sl-official-national", category: "official", name: "Flag of Sierra Leone", from: 1961, to: 9999, primary: true, path: "flags/sl.svg", design: "The national flag, adopted at independence in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+    { id: "sl-current", category: "historical", name: "Flag of Sierra Leone", from: 1961, to: 9999, primary: true, path: "flags/sl.svg", design: "Green, white and blue horizontal bands — green for the agriculture and mountains, white for unity and justice, blue for the natural harbour of Freetown and the hope of peace.", source: "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone" },
+    { id: "sl-uk", category: "historical", name: "Flag of the United Kingdom", from: 1808, to: 1961, sovereign: "the United Kingdom", path: "national-flags/sl/sl-uk.svg", design: "The Union Flag, flown while Sierra Leone was a British Crown colony and protectorate.", source: "https://en.wikipedia.org/wiki/British_Sierra_Leone" },
+    { id: "sl-arms", category: "coatofarms", name: "Coat of arms of Sierra Leone", from: 1960, to: 9999, path: "national-flags/sl/sl-arms.svg", design: "A green shield with a lion beneath a zigzag chief and three torches, supported by two lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
   ],
   "SM": [
     { id: "sm-official-national", category: "official", name: "Flag of San Marino", from: 2011, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag of San Marino, in the form adopted in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
@@ -1549,8 +1559,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sy-current", category: "historical", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria, in the form adopted in 2024.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
   ],
   "SZ": [
-    { id: "sz-official-national", category: "official", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag of Eswatini, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
-    { id: "sz-current", category: "historical", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag of Eswatini, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+    { id: "sz-official-national", category: "official", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+    { id: "sz-current", category: "historical", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "A crimson centre between blue bands edged in yellow, bearing a black-and-white Nguni shield with two spears and a staff — crimson for past battles, yellow for mineral wealth, blue for peace and stability.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
+    { id: "sz-uk", category: "historical", name: "Flag of the United Kingdom", from: 1903, to: 1968, sovereign: "the United Kingdom", path: "national-flags/sz/sz-uk.svg", design: "The Union Flag, flown while Swaziland was a British protectorate.", source: "https://en.wikipedia.org/wiki/Swaziland_Protectorate" },
+    { id: "sz-arms", category: "coatofarms", name: "Coat of arms of Eswatini", from: 1968, to: 9999, path: "national-flags/sz/sz-arms.svg", design: "An Nguni shield on two spears, supported by a lion and an elephant, beneath a crown of feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
   ],
   "TD": [
     { id: "td-official-national", category: "official", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
@@ -1877,6 +1889,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CR": { year: 1838, event: "Costa Rica withdrew from the Federal Republic of Central America on 14 November 1838 and became a sovereign state", note: "Central America had declared independence from Spain on 15 September 1821, but Costa Rica then belonged to the First Mexican Empire until 1823 and to the Central American federation until 1838; a republic was proclaimed in 1848.", source: "https://en.wikipedia.org/wiki/History_of_Costa_Rica" },
   "CU": { year: 1902, event: "The Republic of Cuba proclaimed on 20 May 1902, ending the United States military occupation that followed the 1898 war", source: "https://en.wikipedia.org/wiki/History_of_Cuba" },
   "CY": { year: 1960, event: "Independence from the United Kingdom, 16 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Cyprus" },
+  "DJ": { year: 1977, event: "Djibouti became independent from France on 27 June 1977, ending French rule over the Territory of the Afars and the Issas", source: "https://en.wikipedia.org/wiki/History_of_Djibouti" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
   "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
   "EE": { year: 1918, event: "Independence from the Russian Empire declared 24 February 1918", note: "Estonia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 20 August 1991.", source: "https://en.wikipedia.org/wiki/Estonian_Declaration_of_Independence" },
@@ -1884,6 +1897,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "GA": { year: 1960, event: "Gabon became independent from France on 17 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Gabon" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
+  "GM": { year: 1965, event: "The Gambia became independent from the United Kingdom on 18 February 1965", source: "https://en.wikipedia.org/wiki/History_of_the_Gambia" },
   "GN": { year: 1958, event: "Guinea became independent from France on 2 October 1958, the only French African territory to vote No in the 1958 constitutional referendum", source: "https://en.wikipedia.org/wiki/History_of_Guinea" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
@@ -1897,6 +1911,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
   "LB": { year: 1943, event: "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon", source: "https://en.wikipedia.org/wiki/History_of_Lebanon" },
+  "LS": { year: 1966, event: "Lesotho became independent from the United Kingdom on 4 October 1966, ending the Basutoland protectorate", source: "https://en.wikipedia.org/wiki/History_of_Lesotho" },
   "LT": { year: 1918, event: "Lithuania restored its statehood on 16 February 1918", note: "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.", source: "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania" },
   "LU": { year: 1839, event: "The Treaty of London of 1839 established Luxembourg as an independent grand duchy", note: "Full sovereignty and neutrality were confirmed by the second Treaty of London in 1867.", source: "https://en.wikipedia.org/wiki/History_of_Luxembourg" },
   "LV": { year: 1918, event: "Independence proclaimed 18 November 1918", note: "Latvia was occupied and annexed by the Soviet Union in 1940 and restored its independence on 21 August 1991.", source: "https://en.wikipedia.org/wiki/History_of_Latvia" },
@@ -1921,9 +1936,11 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "RW": { year: 1962, event: "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Rwanda" },
   "SG": { year: 1965, event: "Separation from Malaysia and full independence, 9 August 1965", note: "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Singapore_in_Malaysia" },
   "SI": { year: 1991, event: "Slovenia declared independence from Yugoslavia on 25 June 1991", source: "https://en.wikipedia.org/wiki/Independence_of_Slovenia" },
+  "SL": { year: 1961, event: "Sierra Leone became independent from the United Kingdom on 27 April 1961", source: "https://en.wikipedia.org/wiki/History_of_Sierra_Leone" },
   "SN": { year: 1960, event: "Senegal became independent in 1960, first within the Mali Federation (20 June) and then as a separate republic on 20 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Senegal" },
   "SR": { year: 1975, event: "Independence from the Netherlands, 25 November 1975", source: "https://en.wikipedia.org/wiki/History_of_Suriname" },
   "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
+  "SZ": { year: 1968, event: "Eswatini (then Swaziland) became independent from the United Kingdom on 6 September 1968", source: "https://en.wikipedia.org/wiki/History_of_Eswatini" },
   "TD": { year: 1960, event: "Chad became independent from France on 11 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Chad" },
   "TG": { year: 1960, event: "Togo became independent from France on 27 April 1960", source: "https://en.wikipedia.org/wiki/History_of_Togo" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
@@ -2176,6 +2193,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
   },
+  "dj-arms": {
+    description: "An upright spear stands before a shield, and on either side a hand rises holding a large machete — the two hands for the country's two peoples, the Issa and the Afar. Above, a red star stands for the unity between them, the same star as on the flag. Laurel branches frame the whole.",
+    sources: [
+      { title: "Emblem of Djibouti — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Djibouti" },
+    ],
+  },
   "dk-arms": {
     description: "These are among the oldest arms in continuous national use anywhere: the earliest known depiction is on a seal of King Canute VI around 1194, and the earliest documentation of the colours is around 1270. The red figures scattered around the lions are commonly drawn as hearts, but they are not hearts — a royal decree of 1972 still specifies them as søblade, water-lily leaves, and that is what they originally were. Their number was historically unregulated and could be far higher; Frederick VI fixed it at nine in 1819, in the same act that declared the beasts to be lions and turned them to face forward.",
     sources: [
@@ -2264,6 +2287,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
     sources: [
       { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
+    ],
+  },
+  "gm-arms": {
+    description: "Two lions — recalling the country's time within the British Empire — hold a hoe and an axe and support a blue shield bearing the same hoe and axe crossed, for the farming on which the country depends and for the two peoples who work the land. Above the shield a heraldic helm bears an oil palm as its crest. The ribbon reads “Progress, Peace, Prosperity.”",
+    sources: [
+      { title: "Coat of arms of the Gambia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Gambia" },
     ],
   },
   "gn-arms": {
@@ -2408,6 +2437,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
       { title: "Emblem of Sri Lanka — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sri_Lanka" },
+    ],
+  },
+  "ls-arms": {
+    description: "On a Basotho shield sits a crocodile — the totem of the royal Bakoena clan, carried over from the arms of Basutoland. Behind the shield are crossed an assegai (spear) and a knobkierie (club), and two Basotho horses support it, standing before Thaba Bosiu, the mountain stronghold of King Moshoeshoe I who founded the nation. The ribbon reads Khotso, Pula, Nala — “Peace, Rain, Prosperity.”",
+    sources: [
+      { title: "Coat of arms of Lesotho — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lesotho" },
     ],
   },
   "lt-arms": {
@@ -2639,6 +2674,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Slovakia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovakia" },
     ],
   },
+  "sl-arms": {
+    description: "The green shield carries a lion beneath a zigzag chief — the zigzag for the Lion Mountains (Serra Lyoa) that gave the country its name — and three golden torches for enlightenment, peace and dignity. Wavy blue and white bars for the sea run beneath. Two lions support the shield, and the green, white and blue of the field are the colours of the national flag. The motto reads “Unity, Freedom, Justice.”",
+    sources: [
+      { title: "Coat of arms of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
+    ],
+  },
   "sn-arms": {
     description: "The arms gather devices already used on earlier Senegalese emblems. On the left a golden lion — the lion of the Sudan, the country's totem and the name of its highest honour, the National Order of the Lion — walks above a green wavy band standing for the River Senegal. On the right stands a baobab, the tree native to the country. At the crest is the same five-pointed green star that appears on the national flag: a star of hope, and for the great majority of Senegalese the star of Islam.",
     sources: [
@@ -2655,6 +2696,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
     sources: [
       { title: "Coat of arms of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
+    ],
+  },
+  "sz-arms": {
+    description: "A black-and-white Nguni shield rests on two spears and a staff hung with the blue royal tassels (injobo). A lion and an elephant support it — the lion for the King, the elephant for the Queen Mother, the two pillars of the Swazi monarchy — and above sits a crown of feathers of the kind worn at the Incwala, the festival of the first fruits. The scroll reads Siyinqaba — “We are the fortress.”",
+    sources: [
+      { title: "Coat of arms of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
     ],
   },
   "td-arms": {
