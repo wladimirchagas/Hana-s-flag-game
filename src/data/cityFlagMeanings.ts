@@ -12136,4 +12136,109 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       },
     ],
   },
+
+  // ── Barnaul — capital of Altai Krai, Russia ──────────────────────────────────
+  "RU-ALT": {
+    description:
+      "A blue field on which, among silver rock outcrops on green ground, a smoking red smelting furnace " +
+      "burns with a gold flame inside — signifying the melting of silver ore. The device is drawn from a " +
+      "seal of the Barnaul town magistrate already in use in the last quarter of the 18th century and was " +
+      "formalised as the city's coat of arms on 8 May 1846; blue stands for the Ob river, on which Barnaul " +
+      "stands, while the furnace marks the silver- and copper-smelting works that were the foundation of the " +
+      "city's economy.",
+    sources: [
+      { title: "Герб Барнаула — Официальный сайт города Барнаула", url: "https://barnaul.org/gorod/gerb/" },
+      { title: "Герб Барнаула — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Барнаула" },
+    ],
+  },
+
+  // ── Blagoveshchensk — capital of Amur Oblast, Russia ─────────────────────────
+  "RU-AMU": {
+    description:
+      "A red field with, in the upper hoist corner, a blue triangle bearing a golden mural crown above three " +
+      "golden eight-pointed stars. The stars and crown are carried over from the city's coat of arms — a " +
+      "green shield crossed by a silver wavy band for the Amur river, headed by the three stars — where green " +
+      "stands for abundance and freedom and silver for the river itself. The three stars allude to the city's " +
+      "name, Blagoveshchensk, meaning \"Annunciation\" (\"blagaya vest\", good news), after the Annunciation " +
+      "church around which the settlement grew. The flag was adopted by Blagoveshchensk city Duma decision in " +
+      "1998.",
+    sources: [
+      {
+        title: "Герб Благовещенска (Амурская область) — Википедия (Wikipedia)",
+        url: "https://ru.wikipedia.org/wiki/Герб_Благовещенска_(Амурская_область)",
+      },
+      { title: "Символика города Благовещенска — Благовещенская городская Дума", url: "https://www.blagduma.ru/symbol" },
+    ],
+  },
+
+  // ── Arkhangelsk — capital of Arkhangelsk Oblast, Russia ──────────────────────
+  "RU-ARK": {
+    description:
+      "A white field crossed by a light-blue diagonal band (a saltire, in the pattern of Russia's naval " +
+      "ensign, marking Arkhangelsk's standing as Russia's oldest maritime province) bearing a gold shield at " +
+      "its centre: the Archangel Michael, in blue armour with a red shield and a flaming sword, defeating a " +
+      "black devil at his feet. Local legend holds that Michael's victory took place near the city, which " +
+      "takes its name from the monastery dedicated to him, and that he still watches over it. Gold represents " +
+      "sanctity, abundance and might; red, authority and courage; blue, beauty and grandeur. The flag was " +
+      "adopted on 23 September 2009, using the sky-blue of Michael's armour on the oblast arms as the " +
+      "saltire's colour to distinguish it from the Russian Navy's ensign.",
+    sources: [
+      { title: "Герб Архангельска — Знание.Вики", url: "https://znanierussia.ru/articles/Герб_Архангельска" },
+      {
+        title: "Флаг Архангельской области — Википедия (Wikipedia)",
+        url: "https://ru.wikipedia.org/wiki/Флаг_Архангельской_области",
+      },
+    ],
+  },
+
+  // ── Astrakhan — capital of Astrakhan Oblast, Russia ──────────────────────────
+  "RU-AST": {
+    description:
+      "A gold, crown-like headpiece known as the \"Astrakhan cap\" — a jewelled circlet of five visible " +
+      "leaf-shaped points bearing pearls, topped by a pearl-trimmed mitre with a green lining and crowned by a " +
+      "small gold orb and cross — set above a silver Eastern sabre with a gold hilt, point turned right. The " +
+      "cap reproduces the actual crown made in 1627 for Tsar Mikhail Fyodorovich, the first Romanov, and " +
+      "stands for authority and for the sovereignty of the former Astrakhan Khanate on its absorption into the " +
+      "Russian state; the sabre stood for the defence of the crown and of Russia's southern frontier lands, " +
+      "marking both where danger to Russia was thought to come from and the might arrayed against it.",
+    sources: [
+      { title: "Герб Астрахани — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Астрахани" },
+      { title: "Герб города Астрахань — Геральдика.ру", url: "https://geraldika.ru/s/502" },
+    ],
+  },
+
+  // ── Belgorod — capital of Belgorod Oblast, Russia ────────────────────────────
+  "RU-BEL": {
+    description:
+      "A blue field bearing a rearing gold lion, with a red tongue and silver eyes, teeth and claws, above " +
+      "which a silver eagle rises rightward with spread wings, gold-eyed and gold-beaked. In heraldry the lion " +
+      "stands for strength and courage, the eagle for authority and foresight, and the blue field for beauty " +
+      "and grandeur. The device dates to 1712, when it became the emblem of the Belgorod Regiment; by one " +
+      "account it commemorates a Russian victory over Sweden in the Great Northern War, the lion representing " +
+      "the defeated Swedish army and the eagle the victorious Russian one. The flag was adopted on 22 July " +
+      "1999.",
+    sources: [
+      {
+        title: "История одного герба. Белгородская область — Мир Белогорья",
+        url: "https://mirbelogorya.ru/content-articles/21792-istoriya-odnogo-gerba-belgorod.html",
+      },
+      { title: "Символика — Администрация города Белгорода (Belgorod city administration)", url: "https://www.beladm.ru/o-belgorode/simvolika/" },
+    ],
+  },
+
+  // ── Bryansk — capital of Bryansk Oblast, Russia ──────────────────────────────
+  "RU-BRY": {
+    description:
+      "A red field, on green ground, bearing a gold mortar flanked by two pyramids of black cannonballs. The " +
+      "device was first granted in 1730 for the city's regimental banner, drawing on the heavy siege-artillery " +
+      "park Peter I had ordered established at Bryansk in 1722 as a strategic reserve against possible war " +
+      "with the Ottoman Empire; it commemorates the city's long-standing role as a major Russian arsenal and " +
+      "artillery-manufacturing centre. Red stands for bravery, courage and fearlessness, and the gold mortar " +
+      "for prosperity, wealth, justice and generosity. The first modern flag was adopted by Bryansk city " +
+      "Council decision on 11 September 1998.",
+    sources: [
+      { title: "Герб Брянска — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Герб_Брянска" },
+      { title: "Флаг Брянска — Википедия (Wikipedia)", url: "https://ru.wikipedia.org/wiki/Флаг_Брянска" },
+    ],
+  },
 };
