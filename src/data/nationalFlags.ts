@@ -99,8 +99,9 @@ export type NationalFlag = {
 /** Keyed by ISO 3166-1 alpha-2. Countries with no curated flags are absent. */
 export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> = {
   "AD": [
-    { id: "ad-official-national", category: "official", name: "Flag of Andorra", from: 1971, to: 9999, primary: true, path: "flags/ad.svg", design: "The national flag of Andorra, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
-    { id: "ad-current", category: "historical", name: "Flag of Andorra", from: 1971, to: 9999, primary: true, path: "flags/ad.svg", design: "The national flag of Andorra, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
+    { id: "ad-official-national", category: "official", name: "Flag of Andorra", from: 1866, to: 9999, primary: true, path: "flags/ad.svg", design: "The national flag, in use since 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
+    { id: "ad-current", category: "historical", name: "Flag of Andorra", from: 1866, to: 9999, primary: true, path: "flags/ad.svg", design: "Blue, yellow and red vertical bands with the national arms — the colours drawn from those of France and of Catalonia, for Andorra's two co-princes, the French head of state and the Bishop of Urgell.", source: "https://en.wikipedia.org/wiki/Flag_of_Andorra" },
+    { id: "ad-arms", category: "coatofarms", name: "Coat of arms of Andorra", from: 1866, to: 9999, path: "national-flags/ad/ad-arms.svg", design: "A shield quartered for the four historical lords of Andorra, beneath the motto Virtus Unita Fortior.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
   ],
   "AE": [
     { id: "ae-official-national", category: "official", name: "Flag of United Arab Emirates", from: 1971, to: 9999, primary: true, path: "flags/ae.svg", design: "The national flag of United Arab Emirates, in the form adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates" },
@@ -256,8 +257,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bh-arms", category: "coatofarms", name: "Coat of arms of Bahrain", from: 1932, to: 9999, path: "national-flags/bh/bh-arms.svg", design: "The serrated red-and-white shield of the flag, on red and white mantling.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
   ],
   "BI": [
-    { id: "bi-official-national", category: "official", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag of Burundi, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
-    { id: "bi-current", category: "historical", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag of Burundi, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+    { id: "bi-official-national", category: "official", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+    { id: "bi-current", category: "historical", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "A white saltire dividing red and green fields, with three red stars in a white disc at the centre — red for the independence struggle, green for hope, white for peace; the three stars for the national motto and for the country's peoples.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
+    { id: "bi-belgium", category: "historical", name: "Flag of Belgium", from: 1916, to: 1962, sovereign: "Belgium", path: "national-flags/bi/bi-belgium.svg", design: "The flag of Belgium, which administered the territory as the League of Nations mandate, then UN trust territory, of Ruanda-Urundi.", source: "https://en.wikipedia.org/wiki/Ruanda-Urundi" },
+    { id: "bi-german", category: "historical", name: "Flag of the German Empire", from: 1890, to: 1916, sovereign: "the German Empire", path: "national-flags/bi/bi-german.svg", design: "The flag of the German Empire, which held the territory as part of German East Africa until 1916.", source: "https://en.wikipedia.org/wiki/German_East_Africa" },
+    { id: "bi-arms", category: "coatofarms", name: "Coat of arms of Burundi", from: 1966, to: 9999, path: "national-flags/bi/bi-arms.svg", design: "A lion's head on a red shield over three crossed spears.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burundi" },
   ],
   "BJ": [
     { id: "bj-official-national", category: "official", name: "Flag of Benin", from: 1959, to: 9999, primary: true, path: "flags/bj.svg", design: "The national flag, adopted in 1959 and restored in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Benin" },
@@ -528,8 +532,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dk-arms", category: "coatofarms", name: "Coat of arms of Denmark", from: 1819, to: 9999, path: "national-flags/dk/denmark-arms.svg", design: "Three crowned blue lions passant among nine red water-lily leaves, on a golden shield beneath the crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
   ],
   "DM": [
-    { id: "dm-official-national", category: "official", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag of Dominica, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
-    { id: "dm-current", category: "historical", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag of Dominica, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+    { id: "dm-official-national", category: "official", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "The national flag, adopted at independence in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+    { id: "dm-current", category: "historical", name: "Flag of Dominica", from: 1978, to: 9999, primary: true, path: "flags/dm.svg", design: "A green field crossed by a cross of yellow, black and white, with a red disc bearing a Sisserou parrot ringed by ten green stars — green for the forests, the cross for faith, the ten stars for the ten parishes, and the parrot, found only here, for the flight towards greater heights.", source: "https://en.wikipedia.org/wiki/Flag_of_Dominica" },
+    { id: "dm-uk", category: "historical", name: "Flag of the United Kingdom", from: 1763, to: 1978, sovereign: "the United Kingdom", path: "national-flags/dm/dm-uk.svg", design: "The Union Flag, flown while Dominica was a British colony.", source: "https://en.wikipedia.org/wiki/History_of_Dominica" },
+    { id: "dm-arms", category: "coatofarms", name: "Coat of arms of Dominica", from: 1978, to: 9999, path: "national-flags/dm/dm-arms.svg", design: "A quartered shield of a canoe, a banana tree, a palm and a frog, held by two Sisserou parrots.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica" },
   ],
   "DO": [
     { id: "do-official-national", category: "official", name: "Flag of the Dominican Republic", from: 1844, to: 9999, primary: true, path: "flags/do.svg", design: "The national flag, adopted at independence in 1844.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic" },
@@ -677,8 +683,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gb-passport-official", category: "passport", name: "British official passport", path: "national-flags/gb/uk-passport-official.svg", design: "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
   ],
   "GD": [
-    { id: "gd-official-national", category: "official", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "The national flag of Grenada, in the form adopted in 1974.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
-    { id: "gd-current", category: "historical", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "The national flag of Grenada, in the form adopted in 1974.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    { id: "gd-official-national", category: "official", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "The national flag, adopted at independence in 1974.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    { id: "gd-current", category: "historical", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "A red border with seven gold stars around green and yellow triangles, a star in a red disc at the centre and a nutmeg in the hoist — red for courage, yellow for wisdom and the sun, green for the land, the seven stars for the seven parishes, the nutmeg for the spice the island is famous for.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
+    { id: "gd-uk", category: "historical", name: "Flag of the United Kingdom", from: 1763, to: 1974, sovereign: "the United Kingdom", path: "national-flags/gd/gd-uk.svg", design: "The Union Flag, flown while Grenada was a British colony.", source: "https://en.wikipedia.org/wiki/British_Windward_Islands" },
+    { id: "gd-arms", category: "coatofarms", name: "Coat of arms of Grenada", from: 1974, to: 9999, path: "national-flags/gd/gd-arms.svg", design: "A cross of golden lions around Columbus's ship, held by an armadillo and a dove.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada" },
   ],
   "GE": [
     { id: "ge-official-national", category: "official", name: "Flag of Georgia", from: 2004, to: 9999, primary: true, path: "flags/ge.svg", design: "The national flag of Georgia, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Georgia" },
@@ -1017,8 +1025,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lb-arms", category: "coatofarms", name: "Coat of arms of Lebanon", path: "national-flags/lb/lb-arms.svg", design: "A red shield crossed by a white diagonal bearing a cedar.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
   ],
   "LC": [
-    { id: "lc-official-national", category: "official", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag of Saint Lucia, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
-    { id: "lc-current", category: "historical", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag of Saint Lucia, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
+    { id: "lc-official-national", category: "official", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
+    { id: "lc-current", category: "historical", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "A blue field with a black arrowhead edged in white over a yellow triangle — the triangles are the twin Pitons rising from the sea; blue for the sky and ocean, yellow for sunshine, black and white for the two peoples living in unity.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
+    { id: "lc-uk", category: "historical", name: "Flag of the United Kingdom", from: 1814, to: 1979, sovereign: "the United Kingdom", path: "national-flags/lc/lc-uk.svg", design: "The Union Flag — Saint Lucia changed hands between Britain and France fourteen times before becoming a British colony in 1814.", source: "https://en.wikipedia.org/wiki/History_of_Saint_Lucia" },
+    { id: "lc-arms", category: "coatofarms", name: "Coat of arms of Saint Lucia", from: 1967, to: 9999, path: "national-flags/lc/lc-arms.svg", design: "A black shield with a rose, a fleur-de-lys and an African stool, held by two parrots.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
   ],
   "LI": [
     { id: "li-official-national", category: "official", name: "Flag of Liechtenstein", from: 1921, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag of Liechtenstein, in the form adopted in 1921.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
@@ -1940,6 +1950,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "BD": { year: 1971, event: "Independence from Pakistan, declared 26 March 1971 and secured on 16 December 1971", source: "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War" },
   "BF": { year: 1960, event: "Burkina Faso (then Upper Volta) became independent from France on 5 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Burkina_Faso" },
   "BG": { year: 1878, event: "The Principality of Bulgaria was established after liberation from Ottoman rule in 1878; full independence was declared in 1908", source: "https://en.wikipedia.org/wiki/History_of_Bulgaria" },
+  "BI": { year: 1962, event: "Burundi became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Burundi" },
   "BJ": { year: 1960, event: "Benin (then Dahomey) became independent from France on 1 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Benin" },
   "BN": { year: 1984, event: "Full independence from the United Kingdom, 1 January 1984", note: "Brunei had been a British protectorate since 1888.", source: "https://en.wikipedia.org/wiki/History_of_Brunei" },
   "BO": { year: 1825, event: "Independence from Spain was declared on 6 August 1825.", source: "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence" },
@@ -1961,6 +1972,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "CV": { year: 1975, event: "Cape Verde became independent from Portugal on 5 July 1975", source: "https://en.wikipedia.org/wiki/History_of_Cape_Verde" },
   "CY": { year: 1960, event: "Independence from the United Kingdom, 16 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Cyprus" },
   "DJ": { year: 1977, event: "Djibouti became independent from France on 27 June 1977, ending French rule over the Territory of the Afars and the Issas", source: "https://en.wikipedia.org/wiki/History_of_Djibouti" },
+  "DM": { year: 1978, event: "Dominica became independent from the United Kingdom on 3 November 1978", source: "https://en.wikipedia.org/wiki/History_of_Dominica" },
   "DO": { year: 1844, event: "The Dominican Republic declared independence on 27 February 1844, separating from Haiti, which had occupied it since 1822", source: "https://en.wikipedia.org/wiki/History_of_the_Dominican_Republic" },
   "DZ": { year: 1962, event: "Independence from France, 5 July 1962, after the eight-year war of independence", source: "https://en.wikipedia.org/wiki/Algerian_War" },
   "EC": { year: 1830, event: "Ecuador seceded from Gran Colombia on 13 May 1830", note: "Independence from Spain had been won at Pichincha in 1822, after which the territory joined Gran Colombia.", source: "https://en.wikipedia.org/wiki/History_of_Ecuador" },
@@ -1970,6 +1982,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "FJ": { year: 1970, event: "Fiji became independent from the United Kingdom on 10 October 1970", source: "https://en.wikipedia.org/wiki/History_of_Fiji" },
   "FM": { year: 1986, event: "The Federated States of Micronesia became a sovereign state in free association with the United States on 3 November 1986, ending the US-administered Trust Territory of the Pacific Islands", source: "https://en.wikipedia.org/wiki/History_of_the_Federated_States_of_Micronesia" },
   "GA": { year: 1960, event: "Gabon became independent from France on 17 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Gabon" },
+  "GD": { year: 1974, event: "Grenada became independent from the United Kingdom on 7 February 1974", source: "https://en.wikipedia.org/wiki/History_of_Grenada" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
   "GM": { year: 1965, event: "The Gambia became independent from the United Kingdom on 18 February 1965", source: "https://en.wikipedia.org/wiki/History_of_the_Gambia" },
@@ -1993,6 +2006,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
   "LB": { year: 1943, event: "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon", source: "https://en.wikipedia.org/wiki/History_of_Lebanon" },
+  "LC": { year: 1979, event: "Saint Lucia became independent from the United Kingdom on 22 February 1979", source: "https://en.wikipedia.org/wiki/History_of_Saint_Lucia" },
   "LR": { year: 1847, event: "Liberia declared independence on 26 July 1847, the first republic founded by freed people from the United States", source: "https://en.wikipedia.org/wiki/History_of_Liberia" },
   "LS": { year: 1966, event: "Lesotho became independent from the United Kingdom on 4 October 1966, ending the Basutoland protectorate", source: "https://en.wikipedia.org/wiki/History_of_Lesotho" },
   "LT": { year: 1918, event: "Lithuania restored its statehood on 16 February 1918", note: "Lithuania was occupied and annexed by the Soviet Union in 1940 and restored its independence on 11 March 1990.", source: "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania" },
@@ -2055,6 +2069,12 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
  * flag with no entry simply renders no disclosure rather than a guessed one.
  */
 export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
+  "ad-arms": {
+    description: "The shield is quartered for the powers that have shared the lordship of Andorra: the mitre and crozier of the Bishop of Urgell; the three red pales of the Count of Foix; the four red bars of Catalonia; and the two red cows of Béarn. The Bishop of Urgell and the French head of state (heir to Foix) are still the country's two co-princes today. The motto reads Virtus Unita Fortior — “United Strength is Stronger.”",
+    sources: [
+      { title: "Coat of arms of Andorra — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra" },
+    ],
+  },
   "ae-emblem": {
     description: "The bird is the Hawk of Quraish, the pan-Arab device named for the tribe the Prophet Muhammad belonged to, which recurs across the emblems of the Arabian peninsula. What makes this one the UAE's is the counting: the disc on the falcon's breast shows the national flag with SEVEN stars, one for each emirate of the federation, and the falcon's tail carries seven feathers for the same seven. In its talons it holds a red parchment bearing the name of the federation. The earlier emblem, used until 2008, had a dhow on the falcon's breast instead — the maritime device Kuwait and Qatar still carry.",
     sources: [
@@ -2151,6 +2171,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms are simply the shield of the flag — white and red divided by the serrated line whose white points stand for the five pillars of Islam — set on red and white mantling, and unusually for heraldry, without a helm. The same serrated shield forms the hoist of the national flag.",
     sources: [
       { title: "Coat of arms of Bahrain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
+    ],
+  },
+  "bi-arms": {
+    description: "A red shield bears the head of a lion, and behind it three traditional African spears cross. The scroll below carries the national motto, Unité, Travail, Progrès — “Unity, Work, Progress.”",
+    sources: [
+      { title: "Coat of arms of Burundi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burundi" },
     ],
   },
   "bj-arms": {
@@ -2322,6 +2348,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Denmark — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Denmark" },
     ],
   },
+  "dm-arms": {
+    description: "The shield is quartered by a cross: a canoe on the sea, a banana tree, a tall coconut palm and a crapaud, the mountain frog of the island. Two Sisserou parrots — the national bird, found only on Dominica — brace the shield, and a lion crowns the crest. The motto, in the island's French creole, reads Après Bondie C'est La Ter — “After God, the Earth.”",
+    sources: [
+      { title: "Coat of arms of Dominica — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica" },
+    ],
+  },
   "do-arms": {
     description: "At the centre, on an open Bible showing the Gospel of John (8:31–32, “the truth shall make you free”) beneath a small golden cross, stands the flag of the republic — the Dominican Republic is the only country to carry a Bible on its arms. Six flags on lances fan out behind, framed by a branch of laurel for glory and a branch of palm for peace. The ribbon above reads Dios, Patria, Libertad — “God, Homeland, Liberty.”",
     sources: [
@@ -2410,6 +2442,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold device is the Royal Coat of Arms — a British passport is issued in the sovereign's name, and the arms say so. The colour is the point of this particular design: British passports were dark blue until 1988, burgundy while the UK was in the European Union, and returned to blue in 2020 after leaving it, making the cover itself a piece of constitutional history.",
     sources: [
       { title: "British passport — Wikipedia", url: "https://en.wikipedia.org/wiki/British_passport" },
+    ],
+  },
+  "gd-arms": {
+    description: "A cross divides the shield, a golden lion of England in each quarter, with the Santa María — the ship of Columbus, who sighted the island — at the centre. The crest is a garland of bougainvillea holding seven golden roses for the seven parishes. An armadillo with a nutmeg branch and a Grenada dove support the shield before Mount St Catherine, a lake and a banana tree. The motto reads “Ever Conscious of God We Aspire, Build and Advance as One People.”",
+    sources: [
+      { title: "Coat of arms of Grenada — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada" },
     ],
   },
   "ge-arms": {
@@ -2614,6 +2652,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms carry the same device as the flag, arranged across a red shield: a white bend bearing a green cedar of Lebanon (Cedrus libani). The cedar is the country's oldest and most persistent emblem — the biblical “cedars of God,” a symbol of holiness, endurance and peace — and it became the prominent national symbol during the French mandate. The white recalls peace and the snow of the mountains; the red, the sacrifice of those who defended the country.",
     sources: [
       { title: "Coat of arms of Lebanon — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
+    ],
+  },
+  "lc-arms": {
+    description: "On a black shield, two stalks of bamboo form a cross around a Tudor rose and a fleur-de-lys — the rose for Britain and the lily for France, the two powers that fought over the island — with an African stool at the centre for the islanders' heritage. Two Saint Lucia parrots, the national bird, support the shield, and a hand holding a torch crowns it. The motto reads “The Land, The People, The Light.”",
+    sources: [
+      { title: "Coat of arms of Saint Lucia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
     ],
   },
   "lk-emblem": {

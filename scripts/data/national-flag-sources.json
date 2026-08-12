@@ -46,22 +46,44 @@
         {
           "id": "ad-official-national",
           "category": "official",
-          "from": 1971,
+          "from": 1866,
           "to": 9999,
           "name": "Flag of Andorra",
           "reuse": "flags/ad.svg",
-          "design": "The national flag of Andorra, in the form adopted in 1971.",
+          "design": "The national flag, in use since 1866.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Andorra"
         },
         {
           "id": "ad-current",
           "category": "historical",
-          "from": 1971,
+          "from": 1866,
           "to": 9999,
           "name": "Flag of Andorra",
           "reuse": "flags/ad.svg",
-          "design": "The national flag of Andorra, in the form adopted in 1971.",
+          "design": "Blue, yellow and red vertical bands with the national arms — the colours drawn from those of France and of Catalonia, for Andorra's two co-princes, the French head of state and the Bishop of Urgell.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Andorra"
+        },
+        {
+          "id": "ad-arms",
+          "category": "coatofarms",
+          "from": 1866,
+          "to": 9999,
+          "name": "Coat of arms of Andorra",
+          "commons": "Coat of arms of Andorra.svg",
+          "file": "ad/ad-arms.svg",
+          "design": "A shield quartered for the four historical lords of Andorra, beneath the motto Virtus Unita Fortior.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra",
+          "meaning": {
+            "description": "The shield is quartered for the powers that have shared the lordship of Andorra: the mitre and crozier of the Bishop of Urgell; the three red pales of the Count of Foix; the four red bars of Catalonia; and the two red cows of Béarn. The Bishop of Urgell and the French head of state (heir to Foix) are still the country's two co-princes today. The motto reads Virtus Unita Fortior — “United Strength is Stronger.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Andorra — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Andorra"
+              }
+            ]
+          },
+          "sha256": "7e48846089b223eb1fb08236d26d6da971149de879cd82c4731d44f13022e5bc",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -1796,7 +1818,7 @@
           "to": 9999,
           "name": "Flag of Burundi",
           "reuse": "flags/bi.svg",
-          "design": "The national flag of Burundi, in the form adopted in 1967.",
+          "design": "The national flag, in the form adopted in 1967.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Burundi"
         },
         {
@@ -1806,10 +1828,65 @@
           "to": 9999,
           "name": "Flag of Burundi",
           "reuse": "flags/bi.svg",
-          "design": "The national flag of Burundi, in the form adopted in 1967.",
+          "design": "A white saltire dividing red and green fields, with three red stars in a white disc at the centre — red for the independence struggle, green for hope, white for peace; the three stars for the national motto and for the country's peoples.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Burundi"
+        },
+        {
+          "id": "bi-belgium",
+          "category": "historical",
+          "from": 1916,
+          "to": 1962,
+          "name": "Flag of Belgium",
+          "commons": "Flag of Belgium (civil).svg",
+          "file": "bi/bi-belgium.svg",
+          "sovereign": "Belgium",
+          "design": "The flag of Belgium, which administered the territory as the League of Nations mandate, then UN trust territory, of Ruanda-Urundi.",
+          "source": "https://en.wikipedia.org/wiki/Ruanda-Urundi",
+          "sha256": "b3642c9ad66f6f5ddbfe6e9eb32a06b4aeb0e9801e45ad90d5ef70a86eafa05e",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "bi-german",
+          "category": "historical",
+          "from": 1890,
+          "to": 1916,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "bi/bi-german.svg",
+          "sovereign": "the German Empire",
+          "design": "The flag of the German Empire, which held the territory as part of German East Africa until 1916.",
+          "source": "https://en.wikipedia.org/wiki/German_East_Africa",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "bi-arms",
+          "category": "coatofarms",
+          "from": 1966,
+          "to": 9999,
+          "name": "Coat of arms of Burundi",
+          "commons": "Coat of arms of Burundi.svg",
+          "file": "bi/bi-arms.svg",
+          "design": "A lion's head on a red shield over three crossed spears.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burundi",
+          "meaning": {
+            "description": "A red shield bears the head of a lion, and behind it three traditional African spears cross. The scroll below carries the national motto, Unité, Travail, Progrès — “Unity, Work, Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Burundi — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Burundi"
+              }
+            ]
+          },
+          "sha256": "9e90e95877ec0422a4c0252d17b5e8e9f154b761c4b1962b0ddffedee1dc404c",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1962,
+        "event": "Burundi became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory",
+        "source": "https://en.wikipedia.org/wiki/History_of_Burundi"
+      }
     },
     "BJ": {
       "flags": [
@@ -4872,7 +4949,7 @@
           "to": 9999,
           "name": "Flag of Dominica",
           "reuse": "flags/dm.svg",
-          "design": "The national flag of Dominica, in the form adopted in 1978.",
+          "design": "The national flag, adopted at independence in 1978.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Dominica"
         },
         {
@@ -4882,10 +4959,51 @@
           "to": 9999,
           "name": "Flag of Dominica",
           "reuse": "flags/dm.svg",
-          "design": "The national flag of Dominica, in the form adopted in 1978.",
+          "design": "A green field crossed by a cross of yellow, black and white, with a red disc bearing a Sisserou parrot ringed by ten green stars — green for the forests, the cross for faith, the ten stars for the ten parishes, and the parrot, found only here, for the flight towards greater heights.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Dominica"
+        },
+        {
+          "id": "dm-uk",
+          "category": "historical",
+          "from": 1763,
+          "to": 1978,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "dm/dm-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Dominica was a British colony.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Dominica",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "dm-arms",
+          "category": "coatofarms",
+          "from": 1978,
+          "to": 9999,
+          "name": "Coat of arms of Dominica",
+          "commons": "Coat of arms of Dominica.svg",
+          "file": "dm/dm-arms.svg",
+          "design": "A quartered shield of a canoe, a banana tree, a palm and a frog, held by two Sisserou parrots.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica",
+          "meaning": {
+            "description": "The shield is quartered by a cross: a canoe on the sea, a banana tree, a tall coconut palm and a crapaud, the mountain frog of the island. Two Sisserou parrots — the national bird, found only on Dominica — brace the shield, and a lion crowns the crest. The motto, in the island's French creole, reads Après Bondie C'est La Ter — “After God, the Earth.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Dominica — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Dominica"
+              }
+            ]
+          },
+          "sha256": "d203bced7fe3ff7671d3aae63c8c18f571ff18ad054658e8703c3c395f94c778",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1978,
+        "event": "Dominica became independent from the United Kingdom on 3 November 1978",
+        "source": "https://en.wikipedia.org/wiki/History_of_Dominica"
+      }
     },
     "DO": {
       "flags": [
@@ -6540,7 +6658,7 @@
           "to": 9999,
           "name": "Flag of Grenada",
           "reuse": "flags/gd.svg",
-          "design": "The national flag of Grenada, in the form adopted in 1974.",
+          "design": "The national flag, adopted at independence in 1974.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Grenada"
         },
         {
@@ -6550,10 +6668,51 @@
           "to": 9999,
           "name": "Flag of Grenada",
           "reuse": "flags/gd.svg",
-          "design": "The national flag of Grenada, in the form adopted in 1974.",
+          "design": "A red border with seven gold stars around green and yellow triangles, a star in a red disc at the centre and a nutmeg in the hoist — red for courage, yellow for wisdom and the sun, green for the land, the seven stars for the seven parishes, the nutmeg for the spice the island is famous for.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Grenada"
+        },
+        {
+          "id": "gd-uk",
+          "category": "historical",
+          "from": 1763,
+          "to": 1974,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "gd/gd-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Grenada was a British colony.",
+          "source": "https://en.wikipedia.org/wiki/British_Windward_Islands",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "gd-arms",
+          "category": "coatofarms",
+          "from": 1974,
+          "to": 9999,
+          "name": "Coat of arms of Grenada",
+          "commons": "Coat of arms of Grenada.svg",
+          "file": "gd/gd-arms.svg",
+          "design": "A cross of golden lions around Columbus's ship, held by an armadillo and a dove.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada",
+          "meaning": {
+            "description": "A cross divides the shield, a golden lion of England in each quarter, with the Santa María — the ship of Columbus, who sighted the island — at the centre. The crest is a garland of bougainvillea holding seven golden roses for the seven parishes. An armadillo with a nutmeg branch and a Grenada dove support the shield before Mount St Catherine, a lake and a banana tree. The motto reads “Ever Conscious of God We Aspire, Build and Advance as One People.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Grenada — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Grenada"
+              }
+            ]
+          },
+          "sha256": "0e88e9d9fe9c48b101d39c3bcd65f7846ee31ba7e87444ce77ee1d4284205ea5",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1974,
+        "event": "Grenada became independent from the United Kingdom on 7 February 1974",
+        "source": "https://en.wikipedia.org/wiki/History_of_Grenada"
+      }
     },
     "GE": {
       "flags": [
@@ -10324,7 +10483,7 @@
           "to": 9999,
           "name": "Flag of Saint Lucia",
           "reuse": "flags/lc.svg",
-          "design": "The national flag of Saint Lucia, in the form adopted in 1967.",
+          "design": "The national flag, adopted in 1967.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia"
         },
         {
@@ -10334,10 +10493,51 @@
           "to": 9999,
           "name": "Flag of Saint Lucia",
           "reuse": "flags/lc.svg",
-          "design": "The national flag of Saint Lucia, in the form adopted in 1967.",
+          "design": "A blue field with a black arrowhead edged in white over a yellow triangle — the triangles are the twin Pitons rising from the sea; blue for the sky and ocean, yellow for sunshine, black and white for the two peoples living in unity.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia"
+        },
+        {
+          "id": "lc-uk",
+          "category": "historical",
+          "from": 1814,
+          "to": 1979,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "lc/lc-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag — Saint Lucia changed hands between Britain and France fourteen times before becoming a British colony in 1814.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Saint_Lucia",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "lc-arms",
+          "category": "coatofarms",
+          "from": 1967,
+          "to": 9999,
+          "name": "Coat of arms of Saint Lucia",
+          "commons": "Coat of arms of Saint Lucia.svg",
+          "file": "lc/lc-arms.svg",
+          "design": "A black shield with a rose, a fleur-de-lys and an African stool, held by two parrots.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia",
+          "meaning": {
+            "description": "On a black shield, two stalks of bamboo form a cross around a Tudor rose and a fleur-de-lys — the rose for Britain and the lily for France, the two powers that fought over the island — with an African stool at the centre for the islanders' heritage. Two Saint Lucia parrots, the national bird, support the shield, and a hand holding a torch crowns it. The motto reads “The Land, The People, The Light.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Saint Lucia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia"
+              }
+            ]
+          },
+          "sha256": "e2e15b9b240d909a7c1d9efff65cc1c440f4e578e09e8a38d50a6176a1ac383e",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1979,
+        "event": "Saint Lucia became independent from the United Kingdom on 22 February 1979",
+        "source": "https://en.wikipedia.org/wiki/History_of_Saint_Lucia"
+      }
     },
     "LI": {
       "flags": [
