@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_FLAGS, type NationalFlag, type NationalFlagCategory } from "../data/nationalFlags";
 import { flagYearLabel } from "../lib/nationalFlags";
+import { ENTITY_STATUS_LABEL, specialEntitiesOf, type SpecialEntity } from "../lib/specialEntities";
 
 /**
  * "National symbols" tab of the country drill-down grid.
@@ -20,8 +21,6 @@ import { flagYearLabel } from "../lib/nationalFlags";
  *                      Union Flag over Australia. Every one of those carries a
  *                      "Under {power}" badge (`flag.sovereign`), because a colonial
  *                      flag shown bare would read as a flag of the independent country.
- *   Official flags     additional flags with official national status (Australia's
- *                      Aboriginal and Torres Strait Islander flags).
  *   Military flags     service flags — army, navy, air force, marine corps.
  *   Maritime flags     ensigns and jacks.
  *   Standards          head-of-state / head-of-government standards.
@@ -38,13 +37,20 @@ import { flagYearLabel } from "../lib/nationalFlags";
  * what made Australia's tab show two of its three official flags and look complete
  * (owner report, 2026-08) — an invisible gap reads as no gap at all.
  *
+ * SPECIAL-STATUS ENTITIES: a country with special-autonomy or disputed sub-entities
+ * (China → Hong Kong, Macau, Taiwan) shows each entity's OWN national symbols as a
+ * separate, labelled group beneath the country's own — its flag, emblem, historical
+ * (incl. colonial) flags and passport. Each group header carries a status badge
+ * ("Special Administrative Region"; "Disputed" for a contested status). See
+ * `specialEntities.ts`.
+ *
  * Sub-national flags are deliberately NOT here — that is the "Sub-national
  * divisions" tab.
  *
  * Selecting a card opens the flag's own widget below the country fact-sheet and
- * changes nothing on the map: these flags belong to the whole country, so there is
- * no territory for the map to highlight (owner request — "nothing should be
- * selected in the map though").
+ * changes nothing on the map: these flags belong to the whole country (or entity),
+ * so there is no territory for the map to highlight (owner request — "nothing should
+ * be selected in the map though").
  */
 const CATEGORY_HEADINGS: Record<NationalFlagCategory, string> = {
   historical: "Historical flags",
@@ -73,6 +79,17 @@ const CATEGORY_ORDER: NationalFlagCategory[] = [
   "passport",
 ];
 
+type Group = { category: NationalFlagCategory; heading: string; items: NationalFlag[] };
+
+/** Split a flags list into the ordered, non-empty category groups. */
+function groupFlags(flags: readonly NationalFlag[]): Group[] {
+  return CATEGORY_ORDER.map((category) => ({
+    category,
+    heading: CATEGORY_HEADINGS[category],
+    items: flags.filter((f) => f.category === category),
+  })).filter((g) => g.items.length > 0);
+}
+
 type Props = {
   countryCode: string;
   countryName: string;
@@ -89,16 +106,19 @@ export function NationalFlagGrid({
   baseUrl,
   onSelect,
 }: Props) {
-  const groups = useMemo(() => {
-    const flags = NATIONAL_FLAGS[countryCode] ?? [];
-    return CATEGORY_ORDER.map((category) => ({
-      category,
-      heading: CATEGORY_HEADINGS[category],
-      items: flags.filter((f) => f.category === category),
-    })).filter((g) => g.items.length > 0);
-  }, [countryCode]);
+  const countryGroups = useMemo(
+    () => groupFlags(NATIONAL_FLAGS[countryCode] ?? []),
+    [countryCode],
+  );
+  const entitySections = useMemo(
+    () =>
+      specialEntitiesOf(countryCode)
+        .map((entity) => ({ entity, groups: groupFlags(NATIONAL_FLAGS[entity.code] ?? []) }))
+        .filter((s) => s.groups.length > 0),
+    [countryCode],
+  );
 
-  if (groups.length === 0) {
+  if (countryGroups.length === 0 && entitySections.length === 0) {
     return (
       <p className="flag-grid__no-match">
         No sourced national flags are available for {countryName} yet.
@@ -106,14 +126,69 @@ export function NationalFlagGrid({
     );
   }
 
+  const hasEntities = entitySections.length > 0;
+
+  return (
+    <div className="flag-grid__entities">
+      {/* The country's own symbols. When it has special-status entities beneath it,
+          a header names it so its symbols read as a peer of the entity groups. */}
+      {hasEntities && countryGroups.length > 0 && (
+        <h3 className="flag-grid__entity-header">
+          <span className="flag-grid__entity-name">{countryName}</span>
+        </h3>
+      )}
+      <FlagGroups
+        groups={countryGroups}
+        selectedFlagId={selectedFlagId}
+        baseUrl={baseUrl}
+        onSelect={onSelect}
+      />
+
+      {entitySections.map(({ entity, groups }) => (
+        <section key={entity.code} className="flag-grid__entity">
+          <EntityHeader entity={entity} />
+          <FlagGroups
+            groups={groups}
+            selectedFlagId={selectedFlagId}
+            baseUrl={baseUrl}
+            onSelect={onSelect}
+          />
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function EntityHeader({ entity }: { entity: SpecialEntity }) {
+  return (
+    <h3 className="flag-grid__entity-header">
+      <span className="flag-grid__entity-name">{entity.name}</span>
+      <span className={`flag-grid__entity-badge flag-grid__entity-badge--${entity.status}`}>
+        {ENTITY_STATUS_LABEL[entity.status]}
+      </span>
+    </h3>
+  );
+}
+
+function FlagGroups({
+  groups,
+  selectedFlagId,
+  baseUrl,
+  onSelect,
+}: {
+  groups: Group[];
+  selectedFlagId: string | null;
+  baseUrl: string;
+  onSelect: (flag: NationalFlag) => void;
+}) {
   return (
     <div className="flag-grid__groups">
       {groups.map((group) => (
         <div key={group.category} className="flag-grid__group">
-          <h3 className="flag-grid__group-heading">
+          <h4 className="flag-grid__group-heading">
             <span className="flag-grid__group-name">{group.heading}</span>
             <span className="flag-grid__group-count">({group.items.length})</span>
-          </h3>
+          </h4>
           <ul className="flag-grid__list">
             {group.items.map((flag) => {
               const active = flag.id === selectedFlagId;

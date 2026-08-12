@@ -850,6 +850,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gy-arms", category: "coatofarms", name: "Coat of arms of Guyana", from: 1966, to: 9999, path: "national-flags/gy/guyana-arms.svg", design: "A shield of three wavy blue lines between the Victoria lily and the hoatzin, held by two jaguars with a pickaxe and sugar cane, crested with a Cacique's headdress, over a scroll bearing the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     { id: "gy-passport", category: "passport", name: "Passport of Guyana", path: "national-flags/gy/gy-passport.webp", design: "The cover of the Guyana passport.", source: "https://gicg.net/passport/gy/" },
   ],
+  "HK": [
+    { id: "hk-official-national", category: "official", name: "Flag of Hong Kong", from: 1997, to: 9999, path: "flags/sub/CN/CN-HK.svg", design: "The regional flag — a white bauhinia flower on red — flown since the 1997 handover.", source: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
+    { id: "hk-current", category: "historical", name: "Flag of Hong Kong", from: 1997, to: 9999, path: "flags/sub/CN/CN-HK.svg", design: "The regional flag of the Hong Kong SAR, adopted at the 1997 handover.", source: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
+    { id: "hk-colonial", category: "historical", name: "Colonial flag of Hong Kong", from: 1959, to: 1997, sovereign: "the United Kingdom", path: "national-flags/hk/hk-colonial.svg", design: "The British Blue Ensign defaced with the colonial arms of Hong Kong, flown until the 1997 handover.", source: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
+    { id: "hk-uk", category: "historical", name: "Flag of the United Kingdom", from: 1841, to: 1959, sovereign: "the United Kingdom", path: "national-flags/hk/hk-uk.svg", design: "The Union Flag, flown over the British colony of Hong Kong from 1841 before the colony adopted its own ensign.", source: "https://en.wikipedia.org/wiki/British_Hong_Kong" },
+    { id: "hk-emblem", category: "coatofarms", name: "Regional Emblem of Hong Kong", from: 1997, to: 9999, path: "national-flags/hk/hk-emblem.svg", design: "The white bauhinia of the flag within a red ring naming the Special Administrative Region.", source: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
+    { id: "hk-passport", category: "passport", name: "Hong Kong SAR passport", path: "national-flags/hk/hk-passport.svg", design: "The dark-blue cover of the Hong Kong Special Administrative Region passport.", source: "https://en.wikipedia.org/wiki/Hong_Kong_Special_Administrative_Region_passport" },
+  ],
   "HN": [
     { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
     { id: "hn-current", category: "historical", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "Two blue bands around a white band bearing five blue stars — the blue and white of the old Central American union, the five stars for its five member states and the hope they might unite again.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
@@ -1328,6 +1336,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mn-air-force", category: "military", name: "Flag of the Mongolian Air Force", from: 2021, to: 9999, path: "national-flags/mn/mongolia-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Mongolian_flags" },
     { id: "mn-emblem", category: "coatofarms", name: "Emblem of Mongolia", from: 1992, to: 9999, path: "national-flags/mn/mongolia-emblem.svg", design: "The Soyombo above a wind horse on a blue disc, within a wheel of eternity, beneath a wish-granting jewel and above a lotus and mountains.", source: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
     { id: "mn-passport", category: "passport", name: "Passport of Mongolia", path: "national-flags/mn/mn-passport.webp", design: "The cover of the Mongolia passport.", source: "https://gicg.net/passport/mn/" },
+  ],
+  "MO": [
+    { id: "mo-official-national", category: "official", name: "Flag of Macau", from: 1999, to: 9999, path: "flags/sub/CN/CN-MO.svg", design: "The regional flag — a white lotus over the Sai Van Bridge and water on green — flown since the 1999 handover.", source: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    { id: "mo-current", category: "historical", name: "Flag of Macau", from: 1999, to: 9999, path: "flags/sub/CN/CN-MO.svg", design: "The regional flag of the Macau SAR, adopted at the 1999 handover.", source: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    { id: "mo-portugal", category: "historical", name: "Flag of Portugal", from: 1910, to: 1999, sovereign: "Portugal", path: "flags/pt.svg", design: "The flag of the Portuguese Republic; Macau flew only Portugal's own flag throughout its rule and adopted a flag of its own only at the 1999 handover.", source: "https://en.wikipedia.org/wiki/Portuguese_Macau" },
+    { id: "mo-emblem", category: "coatofarms", name: "Regional Emblem of Macau", from: 1999, to: 9999, path: "national-flags/mo/mo-emblem.svg", design: "The lotus, bridge and water of the flag within a green ring naming the Special Administrative Region.", source: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
+    { id: "mo-passport", category: "passport", name: "Macau SAR passport", path: "national-flags/mo/mo-passport.webp", design: "The cover of the Macau Special Administrative Region passport.", source: "https://gicg.net/passport/mo/" },
   ],
   "MR": [
     { id: "mr-official-national", category: "official", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
@@ -1981,6 +1996,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tv-arms", category: "coatofarms", name: "Coat of arms of Tuvalu", from: 1976, to: 9999, path: "national-flags/tv/tv-arms.svg", design: "A maneapa (meeting house) above golden ocean waves, the border ringed by eight banana leaves and eight mussel shells.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu" },
     { id: "tv-passport", category: "passport", name: "Passport of Tuvalu", path: "national-flags/tv/tv-passport.webp", design: "The cover of the Tuvalu passport.", source: "https://gicg.net/passport/tv/" },
   ],
+  "TW": [
+    { id: "tw-official-national", category: "official", name: "Flag of the Republic of China", from: 1945, to: 9999, path: "flags/tw.svg", design: "The 'Blue Sky, White Sun and a Wholly Red Earth' flag, flown over Taiwan by the Republic of China since 1945; the design dates to 1928.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China" },
+    { id: "tw-current", category: "historical", name: "Flag of the Republic of China", from: 1945, to: 9999, path: "flags/tw.svg", design: "The Republic of China flag, flown over Taiwan since 1945.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China" },
+    { id: "tw-japan", category: "historical", name: "Flag of Japan", from: 1895, to: 1945, sovereign: "the Empire of Japan", path: "national-flags/tw/tw-japan.svg", design: "The Hinomaru, flown over Taiwan during 50 years of Japanese colonial rule after Qing China ceded the island in 1895.", source: "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule" },
+    { id: "tw-qing", category: "historical", name: "Flag of the Qing dynasty", from: 1683, to: 1895, priorPolity: "the Qing Empire", path: "national-flags/tw/tw-qing.svg", design: "The yellow dragon banner of Qing China, which governed Taiwan until it was ceded to Japan in 1895.", source: "https://en.wikipedia.org/wiki/Taiwan_under_Qing_rule" },
+    { id: "tw-emblem", category: "coatofarms", name: "National Emblem of the Republic of China", from: 1928, to: 9999, path: "national-flags/tw/tw-emblem.svg", design: "A white sun of twelve rays on a blue disc — the 'Blue Sky with a White Sun'.", source: "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China" },
+    { id: "tw-passport", category: "passport", name: "Republic of China (Taiwan) passport", path: "national-flags/tw/tw-passport.svg", design: "The dark-green cover of the Republic of China (Taiwan) passport.", source: "https://en.wikipedia.org/wiki/Republic_of_China_passport" },
+  ],
   "TZ": [
     { id: "tz-official-national", category: "official", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
     { id: "tz-current", category: "historical", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
@@ -2279,6 +2302,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "GT": { year: 1821, event: "Guatemala became independent from Spain on 15 September 1821", source: "https://en.wikipedia.org/wiki/History_of_Guatemala" },
   "GW": { year: 1974, event: "Guinea-Bissau's 1973 declaration of independence from Portugal was recognised by Portugal in 1974", source: "https://en.wikipedia.org/wiki/History_of_Guinea-Bissau" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
+  "HK": { year: 1997, event: "Hong Kong's sovereignty was transferred from the United Kingdom to the People's Republic of China on 1 July 1997, when it became a Special Administrative Region under the 'one country, two systems' principle", source: "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong" },
   "HN": { year: 1821, event: "Honduras became independent from Spain on 15 September 1821", source: "https://en.wikipedia.org/wiki/History_of_Honduras" },
   "HR": { year: 1991, event: "Declaration of independence from Yugoslavia, 25 June 1991", note: "The declaration took effect on 8 October 1991 after a three-month moratorium; international recognition followed in January 1992.", source: "https://en.wikipedia.org/wiki/Croatian_War_of_Independence" },
   "HT": { year: 1804, event: "Haiti declared independence from France on 1 January 1804, becoming the first independent Black republic and the first nation founded by former slaves", source: "https://en.wikipedia.org/wiki/Haitian_Revolution" },
@@ -2319,6 +2343,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MM": { year: 1948, event: "Burma (now Myanmar) became independent from the United Kingdom on 4 January 1948", source: "https://en.wikipedia.org/wiki/British_rule_in_Burma" },
   "MN": { year: 1911, event: "Outer Mongolia declared independence from Qing China in 1911; its independence was reaffirmed in 1921", source: "https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1911" },
+  "MO": { year: 1999, event: "Macau's sovereignty was transferred from Portugal to the People's Republic of China on 20 December 1999, when it became a Special Administrative Region; Macau had been a Portuguese territory since 1557", source: "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau" },
   "MR": { year: 1960, event: "Mauritania became independent from France on 28 November 1960", source: "https://en.wikipedia.org/wiki/History_of_Mauritania" },
   "MT": { year: 1964, event: "Independence from the United Kingdom, 21 September 1964", note: "Malta became a republic in 1974.", source: "https://en.wikipedia.org/wiki/History_of_Malta" },
   "MU": { year: 1968, event: "Mauritius became independent from the United Kingdom on 12 March 1968", source: "https://en.wikipedia.org/wiki/History_of_Mauritius" },
@@ -2367,6 +2392,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "TO": { year: 1970, event: "Tonga's full independence and the end of the British protectorate came on 4 June 1970", source: "https://en.wikipedia.org/wiki/History_of_Tonga" },
   "TT": { year: 1962, event: "Independence from the United Kingdom, 31 August 1962", note: "Trinidad and Tobago became a republic in 1976.", source: "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago" },
   "TV": { year: 1978, event: "Tuvalu became an independent Commonwealth realm on 1 October 1978, having separated from the Gilbert and Ellice Islands Colony as the Ellice Islands in 1975", source: "https://en.wikipedia.org/wiki/History_of_Tuvalu" },
+  "TW": { year: 1945, event: "Taiwan was ceded by Qing China to Japan in 1895 and administered as a Japanese colony until 1945, when the Republic of China took over its administration at the end of the Second World War. Taiwan has been governed by the ROC since; its political status is disputed between the ROC and the People's Republic of China", source: "https://en.wikipedia.org/wiki/Retrocession_Day" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
   "UA": { year: 1991, event: "Ukraine declared independence from the Soviet Union on 24 August 1991, confirmed by referendum on 1 December 1991", source: "https://en.wikipedia.org/wiki/Modern_history_of_Ukraine" },
   "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
@@ -2896,6 +2922,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guyana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guyana" },
     ],
   },
+  "hk-emblem": {
+    description: "The emblem carries the same device as the flag: the white five-petal Bauhinia × blakeana, the orchid tree discovered in Hong Kong that stands for the territory itself. A red star sits on each petal, mirroring the stars of China's national flag to show that Hong Kong is part of China; the red field matches China's flag. Together the red and white embody the 'one country, two systems' framework. Adopted at the 1997 handover.",
+    sources: [
+      { title: "Flag of Hong Kong — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
+    ],
+  },
   "hn-arms": {
     description: "An oval seal shows a volcano between two castle towers rising from the sea, under a rainbow and a rising sun — the promise of a new nation. The words around it name the free, sovereign and independent Republic of Honduras and the date of independence, 15 September 1821. Oak and pine trees, quivers of arrows, cornucopias and mining tools around the seal stand for the country's forests, its peoples and its mineral wealth.",
     sources: [
@@ -3182,6 +3214,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The circular blue field is the eternal blue sky, the object of the old Mongol reverence for Tengri; the rim around it is the tumen nasan, the endless knot of eternity. At the centre the Soyombo — the national ideograph that also heads the flag — sits above a wind horse, the treasured steed of Buddhist tradition carrying a wish-granting jewel, and together they stand for Mongolia's independence, sovereignty and spirit. Sun, moon and Mahayana Buddhist symbols complete it, over a lotus base and mountains. It replaced the People's Republic emblem of 1960–1991, which had shown an ordinary horseman and a rising sun over mountains with socialist devices in place of the Buddhist ones.",
     sources: [
       { title: "Emblem of Mongolia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Mongolia" },
+    ],
+  },
+  "mo-emblem": {
+    description: "The emblem repeats the flag's device on green. The white lotus is Macau's floral emblem; beneath it the Governor Nobre de Carvalho (Sai Van) Bridge is the landmark linking the Macau peninsula to Taipa, and the water below marks Macau's life as a port. The arc of five gold stars echoes China's national flag, showing Macau's tie to its sovereign state, and the green field stands for the territory's identity as a Special Administrative Region. Adopted at the 1999 handover.",
+    sources: [
+      { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     ],
   },
   "mr-arms": {
@@ -3585,6 +3623,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     sources: [
       { title: "Coat of arms of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu" },
       { title: "Flag of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+    ],
+  },
+  "tw-emblem": {
+    description: "The 'Blue Sky with a White Sun', designed by Lu Haodong in 1895 and adopted as the national emblem in 1928. The blue disc is the vastness of the sky and the white sun the light of revolution. Its twelve triangular rays stand for the twelve months and the twelve traditional Chinese two-hour periods (shíchen), a call to unceasing progress; the rays stop short of the rim — the breadth of the sky — which distinguishes the state emblem from the Kuomintang party badge whose rays reach the edge.",
+    sources: [
+      { title: "National Emblem of the Republic of China — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China" },
     ],
   },
   "tz-arms": {

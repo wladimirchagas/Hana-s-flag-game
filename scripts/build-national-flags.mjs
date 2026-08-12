@@ -106,7 +106,16 @@ for (const cc of countries) {
     // country's own current flag file, so a country cannot be given two primaries
     // or forget to mark one. The same flag is listed in BOTH the official and the
     // historical section, and both cards carry the badge.
-    const primary = path === `flags/${cc.toLowerCase()}.svg` ? "primary: true, " : "";
+    //
+    // A special-status ENTITY (Hong Kong, Macau, Taiwan) never has a primary: the
+    // fact-sheet above shows the PARENT country's flag, not the entity's, so the
+    // entity's own current flag must open its widget when clicked (a primary flag
+    // opens nothing and scrolls to the fact-sheet). Taiwan reuses flags/tw.svg,
+    // which would otherwise match the rule below, so the guard is explicit.
+    const primary =
+      !manifest.countries[cc].entity && path === `flags/${cc.toLowerCase()}.svg`
+        ? "primary: true, "
+        : "";
     flagLines.push(
       `    { id: ${q(e.id)}, category: ${q(e.category)}, name: ${q(e.name)}, ${years}${sovereign}${prior}${occupier}${primary}${pathField}${noImage}design: ${q(e.design)}, source: ${q(e.source)} },`,
     );

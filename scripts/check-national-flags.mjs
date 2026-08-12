@@ -225,9 +225,18 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
   // The section that answers "what is this country's flag?" must contain it. This
   // shipped wrong: Bolivia's official section listed only the Wiphala, so the
   // tricolour appeared nowhere in the first section a user reads.
+  //
+  // Special-status ENTITIES (Hong Kong, Macau, Taiwan — shown grouped under their
+  // parent country's tab, never as standalone countries) are exempt: their current
+  // flag is a subdivision/territory file (flags/sub/CN/CN-HK.svg, flags/tw.svg),
+  // not flags/{cc}.svg, and it is deliberately NOT the `primary` flag because the
+  // fact-sheet above shows the PARENT country's flag, not the entity's. The check
+  // below is keyed on flags/{cc}.svg, which an entity never reuses.
   const ownFlag = `flags/${cc.toLowerCase()}.svg`;
   const officialPrimary = flags.filter((f) => f.category === "official" && f.reuse === ownFlag);
-  if (officialPrimary.length === 0) {
+  if (country.entity) {
+    // no primary requirement — see above
+  } else if (officialPrimary.length === 0) {
     fail(
       `${cc}: the "official" section does not include the country's current national flag (${ownFlag}). ` +
         `Every country's official section leads with the flag it actually flies.`,

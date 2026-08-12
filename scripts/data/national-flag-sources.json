@@ -24588,6 +24588,264 @@
         "note": "A white-minority government had unilaterally declared independence as Rhodesia in 1965; no state recognised it.",
         "source": "https://en.wikipedia.org/wiki/History_of_Zimbabwe"
       }
+    },
+    "HK": {
+      "entity": true,
+      "independence": {
+        "year": 1997,
+        "event": "Hong Kong's sovereignty was transferred from the United Kingdom to the People's Republic of China on 1 July 1997, when it became a Special Administrative Region under the 'one country, two systems' principle",
+        "source": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong"
+      },
+      "flags": [
+        {
+          "id": "hk-official-national",
+          "category": "official",
+          "from": 1997,
+          "to": 9999,
+          "name": "Flag of Hong Kong",
+          "reuse": "flags/sub/CN/CN-HK.svg",
+          "design": "The regional flag — a white bauhinia flower on red — flown since the 1997 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
+        },
+        {
+          "id": "hk-current",
+          "category": "historical",
+          "from": 1997,
+          "to": 9999,
+          "name": "Flag of Hong Kong",
+          "reuse": "flags/sub/CN/CN-HK.svg",
+          "design": "The regional flag of the Hong Kong SAR, adopted at the 1997 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
+        },
+        {
+          "id": "hk-colonial",
+          "category": "historical",
+          "from": 1959,
+          "to": 1997,
+          "name": "Colonial flag of Hong Kong",
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Hong Kong (1959–1997).svg",
+          "file": "hk/hk-colonial.svg",
+          "design": "The British Blue Ensign defaced with the colonial arms of Hong Kong, flown until the 1997 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong",
+          "sha256": "d62c6db1954c9a570c1c4c292973b957847f1c19043037b6dd112a3dceb65d74",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "hk-uk",
+          "category": "historical",
+          "from": 1841,
+          "to": 1959,
+          "name": "Flag of the United Kingdom",
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "hk/hk-uk.svg",
+          "design": "The Union Flag, flown over the British colony of Hong Kong from 1841 before the colony adopted its own ensign.",
+          "source": "https://en.wikipedia.org/wiki/British_Hong_Kong",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "hk-emblem",
+          "category": "coatofarms",
+          "from": 1997,
+          "to": 9999,
+          "name": "Regional Emblem of Hong Kong",
+          "commons": "Regional Emblem of Hong Kong.svg",
+          "file": "hk/hk-emblem.svg",
+          "design": "The white bauhinia of the flag within a red ring naming the Special Administrative Region.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong",
+          "meaning": {
+            "description": "The emblem carries the same device as the flag: the white five-petal Bauhinia × blakeana, the orchid tree discovered in Hong Kong that stands for the territory itself. A red star sits on each petal, mirroring the stars of China's national flag to show that Hong Kong is part of China; the red field matches China's flag. Together the red and white embody the 'one country, two systems' framework. Adopted at the 1997 handover.",
+            "sources": [
+              {
+                "title": "Flag of Hong Kong — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
+              }
+            ]
+          },
+          "sha256": "bc89cb28992c588123fb195334808881d12023e884115627ec7472509af6761c",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "hk-passport",
+          "category": "passport",
+          "name": "Hong Kong SAR passport",
+          "commons": "Hong Kong Special Administrative Region Passport 2007.svg",
+          "file": "hk/hk-passport.svg",
+          "design": "The dark-blue cover of the Hong Kong Special Administrative Region passport.",
+          "source": "https://en.wikipedia.org/wiki/Hong_Kong_Special_Administrative_Region_passport",
+          "sha256": "dc0cb19b5ae3dbc4f89235eed936ff7cbea38e53be535ef29ce7a51cad227289",
+          "fetched": "2026-08-12"
+        }
+      ]
+    },
+    "MO": {
+      "entity": true,
+      "independence": {
+        "year": 1999,
+        "event": "Macau's sovereignty was transferred from Portugal to the People's Republic of China on 20 December 1999, when it became a Special Administrative Region; Macau had been a Portuguese territory since 1557",
+        "source": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau"
+      },
+      "flags": [
+        {
+          "id": "mo-official-national",
+          "category": "official",
+          "from": 1999,
+          "to": 9999,
+          "name": "Flag of Macau",
+          "reuse": "flags/sub/CN/CN-MO.svg",
+          "design": "The regional flag — a white lotus over the Sai Van Bridge and water on green — flown since the 1999 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+        },
+        {
+          "id": "mo-current",
+          "category": "historical",
+          "from": 1999,
+          "to": 9999,
+          "name": "Flag of Macau",
+          "reuse": "flags/sub/CN/CN-MO.svg",
+          "design": "The regional flag of the Macau SAR, adopted at the 1999 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+        },
+        {
+          "id": "mo-portugal",
+          "category": "historical",
+          "from": 1910,
+          "to": 1999,
+          "name": "Flag of Portugal",
+          "sovereign": "Portugal",
+          "reuse": "flags/pt.svg",
+          "design": "The flag of the Portuguese Republic; Macau flew only Portugal's own flag throughout its rule and adopted a flag of its own only at the 1999 handover.",
+          "source": "https://en.wikipedia.org/wiki/Portuguese_Macau"
+        },
+        {
+          "id": "mo-emblem",
+          "category": "coatofarms",
+          "from": 1999,
+          "to": 9999,
+          "name": "Regional Emblem of Macau",
+          "commons": "Regional Emblem of Macau.svg",
+          "file": "mo/mo-emblem.svg",
+          "design": "The lotus, bridge and water of the flag within a green ring naming the Special Administrative Region.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau",
+          "meaning": {
+            "description": "The emblem repeats the flag's device on green. The white lotus is Macau's floral emblem; beneath it the Governor Nobre de Carvalho (Sai Van) Bridge is the landmark linking the Macau peninsula to Taipa, and the water below marks Macau's life as a port. The arc of five gold stars echoes China's national flag, showing Macau's tie to its sovereign state, and the green field stands for the territory's identity as a Special Administrative Region. Adopted at the 1999 handover.",
+            "sources": [
+              {
+                "title": "Flag of Macau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+              }
+            ]
+          },
+          "sha256": "ffd805b2e6198c259582bab80631cb164a71a2b89d36cdc6739a92a111f64502",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "mo-passport",
+          "category": "passport",
+          "name": "Macau SAR passport",
+          "url": "https://gicg.net/wp-content/plugins/GICG-Passport-Index/assets/images/passports/MO.webp",
+          "file": "mo/mo-passport.webp",
+          "drawnRaster": "A drawn cover rendering, not a photograph of a booklet — no lighting, perspective or wear, which is the distinction this category cares about. No vector cover is bundled from Wikimedia Commons.",
+          "licenceNote": "Taken from gicg.net, whose footer reads \"Copyright © 2026 Global. All rights reserved.\" and which states no reuse licence; included at the repository owner's explicit direction after the copyright position was raised. Replace it with a freely-licensed cover if one appears on Wikimedia Commons.",
+          "design": "The cover of the Macau Special Administrative Region passport.",
+          "source": "https://gicg.net/passport/mo/",
+          "sha256": "5ab08e2ede06d4189ec85fe68cf735bfdfa63245eba19fa11195b4d64594ac6a",
+          "fetched": "2026-08-12"
+        }
+      ]
+    },
+    "TW": {
+      "entity": true,
+      "independence": {
+        "year": 1945,
+        "event": "Taiwan was ceded by Qing China to Japan in 1895 and administered as a Japanese colony until 1945, when the Republic of China took over its administration at the end of the Second World War. Taiwan has been governed by the ROC since; its political status is disputed between the ROC and the People's Republic of China",
+        "source": "https://en.wikipedia.org/wiki/Retrocession_Day"
+      },
+      "flags": [
+        {
+          "id": "tw-official-national",
+          "category": "official",
+          "from": 1945,
+          "to": 9999,
+          "name": "Flag of the Republic of China",
+          "reuse": "flags/tw.svg",
+          "design": "The 'Blue Sky, White Sun and a Wholly Red Earth' flag, flown over Taiwan by the Republic of China since 1945; the design dates to 1928.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
+        },
+        {
+          "id": "tw-current",
+          "category": "historical",
+          "from": 1945,
+          "to": 9999,
+          "name": "Flag of the Republic of China",
+          "reuse": "flags/tw.svg",
+          "design": "The Republic of China flag, flown over Taiwan since 1945.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
+        },
+        {
+          "id": "tw-japan",
+          "category": "historical",
+          "from": 1895,
+          "to": 1945,
+          "name": "Flag of Japan",
+          "sovereign": "the Empire of Japan",
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "tw/tw-japan.svg",
+          "design": "The Hinomaru, flown over Taiwan during 50 years of Japanese colonial rule after Qing China ceded the island in 1895.",
+          "source": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tw-qing",
+          "category": "historical",
+          "from": 1683,
+          "to": 1895,
+          "name": "Flag of the Qing dynasty",
+          "priorPolity": "the Qing Empire",
+          "commons": "Flag of China (1889–1912).svg",
+          "file": "tw/tw-qing.svg",
+          "design": "The yellow dragon banner of Qing China, which governed Taiwan until it was ceded to Japan in 1895.",
+          "source": "https://en.wikipedia.org/wiki/Taiwan_under_Qing_rule",
+          "sha256": "d543652386810308fe568ced9de449dffe673a5cf8cb74553a76626c67648f76",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tw-emblem",
+          "category": "coatofarms",
+          "from": 1928,
+          "to": 9999,
+          "name": "National Emblem of the Republic of China",
+          "commons": "National Emblem of the Republic of China.svg",
+          "file": "tw/tw-emblem.svg",
+          "design": "A white sun of twelve rays on a blue disc — the 'Blue Sky with a White Sun'.",
+          "source": "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China",
+          "meaning": {
+            "description": "The 'Blue Sky with a White Sun', designed by Lu Haodong in 1895 and adopted as the national emblem in 1928. The blue disc is the vastness of the sky and the white sun the light of revolution. Its twelve triangular rays stand for the twelve months and the twelve traditional Chinese two-hour periods (shíchen), a call to unceasing progress; the rays stop short of the rim — the breadth of the sky — which distinguishes the state emblem from the Kuomintang party badge whose rays reach the edge.",
+            "sources": [
+              {
+                "title": "National Emblem of the Republic of China — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China"
+              }
+            ]
+          },
+          "sha256": "e56076ae87b324115a333352e30c2da2352f0172d85ed846f78f8b4e60f4ab27",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tw-passport",
+          "category": "passport",
+          "name": "Republic of China (Taiwan) passport",
+          "commons": "Republic of China (Taiwan) Passport 2020.svg",
+          "file": "tw/tw-passport.svg",
+          "design": "The dark-green cover of the Republic of China (Taiwan) passport.",
+          "source": "https://en.wikipedia.org/wiki/Republic_of_China_passport",
+          "sha256": "f7408332cb8b4dcdc98b8ea522d8a1060a7c1042472ada21bb32d8faaf72fc93",
+          "fetched": "2026-08-12"
+        }
+      ]
     }
   }
 }
