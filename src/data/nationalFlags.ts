@@ -648,6 +648,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fm-current", category: "historical", name: "Flag of the Federated States of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "A light-blue field with four white stars in a diamond — blue for the Pacific Ocean, the four stars for the four states of the federation (Yap, Chuuk, Pohnpei and Kosrae).", source: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
     { id: "fm-us", category: "historical", name: "Flag of the United States", from: 1947, to: 1986, sovereign: "the United States", path: "national-flags/fm/fm-us.svg", design: "The flag of the United States, which administered the islands as the UN Trust Territory of the Pacific Islands until 1986.", source: "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands" },
     { id: "fm-japan", category: "historical", name: "Flag of Japan", from: 1920, to: 1944, sovereign: "Japan", path: "national-flags/fm/fm-japan.svg", design: "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
+    { id: "fm-arms", category: "coatofarms", name: "Seal of the Federated States of Micronesia", from: 1986, to: 9999, path: "national-flags/fm/fm-arms.svg", design: "A sprouting coconut floating on the ocean beneath an arc of four white stars, with the motto and the year 1979.", source: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
   ],
   "FR": [
     { id: "fr-official-national", category: "official", name: "Flag of France", from: 1830, to: 9999, primary: true, path: "flags/fr.svg", design: "The national flag, named in Article 2 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_France" },
@@ -1446,6 +1447,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "PW": [
     { id: "pw-official-national", category: "official", name: "Flag of Palau", from: 1981, to: 9999, primary: true, path: "flags/pw.svg", design: "The national flag of Palau, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
     { id: "pw-current", category: "historical", name: "Flag of Palau", from: 1981, to: 9999, primary: true, path: "flags/pw.svg", design: "The national flag of Palau, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
+    { id: "pw-tt", category: "historical", name: "Flag of the Trust Territory of the Pacific Islands", from: 1965, to: 1981, sovereign: "the United States", path: "national-flags/pw/pw-tt.svg", design: "The six-star flag of the US-administered Trust Territory, flown over Palau until it adopted its own flag in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
+    { id: "pw-arms", category: "coatofarms", name: "Seal of Palau", from: 1981, to: 9999, path: "national-flags/pw/pw-arms.svg", design: "A traditional bai (meeting house) on sixteen stones, ringed by the words Olbiil Era Kelulau and the year 1981.", source: "https://en.wikipedia.org/wiki/Seal_of_Palau" },
   ],
   "PY": [
     { id: "py-official-national", category: "official", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The national flag of Paraguay, in the form adopted in 1842.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
@@ -1687,6 +1690,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tl-current", category: "historical", name: "Flag of Timor-Leste", from: 2002, to: 9999, primary: true, path: "flags/tl.svg", design: "A red field with a black triangle bearing a white star and a yellow triangle behind it — yellow for the traces of colonialism, black for the obscurantism to be overcome, red for the struggle, the white star for peace and its light guiding the way.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
     { id: "tl-indonesian", category: "historical", name: "Flag of Indonesia", from: 1976, to: 1999, occupier: "Indonesia", path: "national-flags/tl/tl-id.svg", design: "The flag of Indonesia, which invaded in 1975 and annexed the territory as its 27th province until 1999 — an occupation the United Nations never recognised.", source: "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor" },
     { id: "tl-portuguese", category: "historical", name: "Flag of Portugal", from: 1702, to: 1975, sovereign: "Portugal", path: "national-flags/tl/tl-pt.svg", design: "The flag of Portugal, flown over the colony of Portuguese Timor until 1975.", source: "https://en.wikipedia.org/wiki/Portuguese_Timor" },
+    { id: "tl-arms", category: "coatofarms", name: "National emblem of Timor-Leste", from: 2007, to: 9999, path: "national-flags/tl/tl-arms.svg", design: "The mountain of Tatamailau crowned by a white star, over an open book, a cog wheel and crossed weapons.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_East_Timor" },
   ],
   "TM": [
     { id: "tm-official-national", category: "official", name: "Flag of Turkmenistan", from: 1997, to: 9999, primary: true, path: "flags/tm.svg", design: "The national flag, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
@@ -1735,6 +1739,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "TV": [
     { id: "tv-official-national", category: "official", name: "Flag of Tuvalu", from: 1997, to: 9999, primary: true, path: "flags/tv.svg", design: "The national flag of Tuvalu, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
     { id: "tv-current", category: "historical", name: "Flag of Tuvalu", from: 1997, to: 9999, primary: true, path: "flags/tv.svg", design: "The national flag of Tuvalu, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+    { id: "tv-1996", category: "historical", name: "Flag of Tuvalu (1996–1997)", from: 1996, to: 1997, path: "national-flags/tv/tv-1996.svg", design: "The short-lived redesign that dropped the Union Jack; unpopular as a step toward a republic, it was reverted to the 1978 flag in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
+    { id: "tv-geic", category: "historical", name: "Flag of the Gilbert and Ellice Islands Colony", from: 1937, to: 1975, sovereign: "the United Kingdom", path: "national-flags/tv/tv-geic.svg", design: "The British Blue Ensign of the Gilbert and Ellice Islands Colony, which included Tuvalu (the Ellice Islands) until it separated in 1975.", source: "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands" },
+    { id: "tv-arms", category: "coatofarms", name: "Coat of arms of Tuvalu", from: 1976, to: 9999, path: "national-flags/tv/tv-arms.svg", design: "A maneapa (meeting house) above golden ocean waves, the border ringed by eight banana leaves and eight mussel shells.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu" },
   ],
   "TZ": [
     { id: "tz-official-national", category: "official", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
@@ -1849,6 +1856,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "VA": [
     { id: "va-official-national", category: "official", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
     { id: "va-current", category: "historical", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
+    { id: "va-arms", category: "coatofarms", name: "Coat of arms of Vatican City", from: 1929, to: 9999, path: "national-flags/va/va-arms.svg", design: "Two keys in saltire, one gold and one silver, surmounted by the papal tiara on a red field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City" },
   ],
   "VC": [
     { id: "vc-official-national", category: "official", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "The national flag, adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
@@ -1898,6 +1906,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ws-current", category: "historical", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "A red field with a blue canton bearing the five white stars of the Southern Cross — red and white are traditional Samoan colours, blue stands for freedom, and the Southern Cross for the country's place in the South Pacific.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
     { id: "ws-nz", category: "historical", name: "Flag of New Zealand", from: 1914, to: 1962, sovereign: "New Zealand", path: "national-flags/ws/ws-nz.svg", design: "The flag of New Zealand, which administered Western Samoa — first as a League of Nations mandate, then a UN trust territory — until independence in 1962.", source: "https://en.wikipedia.org/wiki/History_of_Samoa" },
     { id: "ws-german", category: "historical", name: "Flag of the German Empire", from: 1900, to: 1914, sovereign: "the German Empire", path: "national-flags/ws/ws-german.svg", design: "The flag of the German Empire, which held the islands as German Samoa until 1914.", source: "https://en.wikipedia.org/wiki/German_Samoa" },
+    { id: "ws-arms", category: "coatofarms", name: "Coat of arms of Samoa", from: 1962, to: 9999, path: "national-flags/ws/ws-arms.svg", design: "A shield bearing the Southern Cross over a coconut palm rising from the sea, surmounted by a cross, within a ring of olive leaves.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
   ],
   "YE": [
     { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, adopted at unification in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
@@ -2054,6 +2063,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PG": { year: 1975, event: "Papua New Guinea became independent from Australia on 16 September 1975", source: "https://en.wikipedia.org/wiki/History_of_Papua_New_Guinea" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
+  "PW": { year: 1994, event: "Palau became a fully sovereign state on 1 October 1994 under a Compact of Free Association with the United States, ending the US-administered UN Trust Territory of the Pacific Islands; the self-governing Republic had been established in 1981", source: "https://en.wikipedia.org/wiki/History_of_Palau" },
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
   "RW": { year: 1962, event: "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Rwanda" },
   "SB": { year: 1978, event: "Solomon Islands became independent from the United Kingdom on 7 July 1978", source: "https://en.wikipedia.org/wiki/History_of_Solomon_Islands" },
@@ -2073,6 +2083,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "TL": { year: 1975, event: "Timor-Leste proclaimed independence from Portugal on 28 November 1975; nine days later Indonesia invaded and occupied the country until 1999, and sovereignty was internationally restored on 20 May 2002", source: "https://en.wikipedia.org/wiki/History_of_Timor-Leste" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
   "TT": { year: 1962, event: "Independence from the United Kingdom, 31 August 1962", note: "Trinidad and Tobago became a republic in 1976.", source: "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago" },
+  "TV": { year: 1978, event: "Tuvalu became an independent Commonwealth realm on 1 October 1978, having separated from the Gilbert and Ellice Islands Colony as the Ellice Islands in 1975", source: "https://en.wikipedia.org/wiki/History_of_Tuvalu" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
   "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
@@ -2436,6 +2447,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield bears the cross of St George on white, with a golden lion holding a cocoa pod at the top and, in the quarters, sugarcane, a coconut palm, a dove of peace and a bunch of bananas — the crops of the islands and the hope of peace. Two Fijian warriors support the shield, and a canoe (drua) forms the crest.",
     sources: [
       { title: "Coat of arms of Fiji — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
+    ],
+  },
+  "fm-arms": {
+    description: "Adopted in 1986, the seal shows a sprouted coconut adrift on a light-blue sea — the island nation's maritime heritage — beneath an arc of four white stars, one for each of the federated states: Chuuk, Kosrae, Pohnpei and Yap, exactly as on the national flag. The banner carries the motto “Peace, Unity, Liberty” and the year 1979, when the Constitution came into force. The design continues the earlier seal of the US-administered Trust Territory of the Pacific Islands.",
+    sources: [
+      { title: "Seal of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
     ],
   },
   "fr-arms": {
@@ -2931,6 +2948,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
     ],
   },
+  "pw-arms": {
+    description: "Adopted in 1981, the seal is dominated by a bai, the traditional Palauan meeting house that is the seat of community decision-making, standing on sixteen stones. The surrounding words Olbiil Era Kelulau — “the House of Whispered Decisions” — name the national congress, and the date 1981 marks the founding of the Republic. The bai's central place reflects how traditional governance remains at the heart of Palauan identity.",
+    sources: [
+      { title: "Seal of Palau — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Palau" },
+    ],
+  },
   "py-seal": {
     description: "Paraguay's seal is the reason its flag is unique among national flags — it is the only one whose two sides differ, because the OBVERSE and the REVERSE of the seal are different devices and the flag carries one on each. The obverse, on the front of the flag, is the yellow star of May between a palm branch and an olive branch, ringed by the words República del Paraguay. The reverse, on the back, is a golden lion guarding a staff topped with a red Phrygian cap, above the motto Paz y Justicia — Peace and Justice. The first design dates from 1820, under the dictatorship of José Gaspar Rodríguez de Francia.",
     sources: [
@@ -3081,6 +3104,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
     ],
   },
+  "tl-arms": {
+    description: "Adopted in 2007, the emblem centres on Tatamailau, the country's highest mountain, its four corners standing for the separation of powers. The white star at the summit is the light of generosity and honesty leading the people to peace; the open book before a golden cog is education and the people's capacity to advance in culture, agriculture and industry; the ear of rice and the corncob are agricultural development; and the crossed Kalashnikov, spear and traditional bow honour the centuries-long struggle for national liberation. The Portuguese motto reads Unidade, Acção, Progresso — “Unity, Action, Progress.”",
+    sources: [
+      { title: "Coat of arms of East Timor — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_East_Timor" },
+    ],
+  },
   "tm-emblem": {
     description: "At the centre, on a blue disc, stands the Akhal-Teke stallion Yanardag — the prized Turkmen horse and a source of national pride. Around it a red ring carries the five carpet guls, the traditional weaving designs of the country's five regions, the same guls as on the flag. Ears of wheat and bolls of cotton frame the whole, and a white crescent with five stars sits above.",
     sources: [
@@ -3115,6 +3144,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield carries the red, white and black of the national flag and their same meaning — the fire of the sun and the warmth of the people, the sea and purity, and the strength and dedication of the earth. The two golden birds on it are hummingbirds, from Trinidad's Amerindian name Iere, \"land of the hummingbird\". The three ships were Columbus's three vessels; the supporters are the two national birds, the scarlet ibis of Trinidad and the cocrico of Tobago, standing on a base of three hills for the Trinity peaks that gave Trinidad its name. The palm-tree crest was taken from Tobago's own colonial arms. (In 2024 the government announced it would replace Columbus's ships with the steelpan, the national instrument.)",
     sources: [
       { title: "Coat of arms of Trinidad and Tobago — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Trinidad_and_Tobago" },
+    ],
+  },
+  "tv-arms": {
+    description: "Granted by royal warrant in 1976, the shield shows a maneapa — the traditional meeting house at the centre of island community life — above stylised gold-and-blue waves for the surrounding ocean. Eight banana leaves and eight mussel shells ring the border, one pair for each of the eight traditionally inhabited islands from which the name Tuvalu — “eight standing together” — is drawn. The motto reads Tuvalu mo te Atua — “Tuvalu for the Almighty” — also the title of the national anthem.",
+    sources: [
+      { title: "Coat of arms of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu" },
+      { title: "Flag of Tuvalu — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tuvalu" },
     ],
   },
   "tz-arms": {
@@ -3165,6 +3201,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
     ],
   },
+  "va-arms": {
+    description: "Established with the Vatican City State by the Lateran Treaty of 1929, the arms show the two crossed keys of Saint Peter — the gold key of spiritual authority and the silver key of temporal authority, bound by a red cord — beneath the papal tiara, the triple crown standing for the Pope's threefold office of teaching, governing and sanctifying. The same keys and tiara appear on the fly of the national flag.",
+    sources: [
+      { title: "Coat of arms of Vatican City — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City" },
+    ],
+  },
   "vc-arms": {
     description: "Two women in classical Roman dress stand for the country's ideals — Peace, holding an olive branch, and Justice, kneeling with golden scales before an altar. The green shield between them bears a cotton plant, a mainstay of the old island economy. The motto reads Pax et Justitia — “Peace and Justice.”",
     sources: [
@@ -3187,6 +3229,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A Melanesian chief holding a spear stands on a mountain before a boar's tusk — the curved tusk a traditional sign of prosperity and rank — crossed with two namele fern leaves, which stand for peace and for the islands. The scroll reads Long God Yumi Stanap — “With God We Stand,” in Bislama.",
     sources: [
       { title: "Coat of arms of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
+    ],
+  },
+  "ws-arms": {
+    description: "Adopted at independence in 1962, the shield shows the five stars of the Southern Cross — the same constellation the national flag carries — above a green coconut palm rising from the Pacific, the ocean filling the lower field. A gold Christian cross surmounts the shield, and a ring of olive leaves echoes the United Nations emblem, marking Samoa's path from UN trust territory to statehood. Around it runs the motto Faʻavae i le Atua Sāmoa — “Samoa is founded on God.”",
+    sources: [
+      { title: "Coat of arms of Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
     ],
   },
   "ye-emblem": {
