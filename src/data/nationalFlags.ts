@@ -117,8 +117,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "af-current", category: "historical", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
   ],
   "AG": [
-    { id: "ag-official-national", category: "official", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag of Antigua and Barbuda, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
-    { id: "ag-current", category: "historical", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag of Antigua and Barbuda, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
+    { id: "ag-official-national", category: "official", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
+    { id: "ag-current", category: "historical", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "A red field with a black, blue and white V bearing a rising golden sun — the sun for the dawn of a new era, black for the African heritage, blue for hope, white for the sand, red for the energy of the people, the V for victory.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
+    { id: "ag-uk", category: "historical", name: "Flag of the United Kingdom", from: 1632, to: 1981, sovereign: "the United Kingdom", path: "national-flags/ag/ag-uk.svg", design: "The Union Flag, flown while Antigua and Barbuda was a British colony.", source: "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda" },
+    { id: "ag-arms", category: "coatofarms", name: "Coat of arms of Antigua and Barbuda", from: 1967, to: 9999, path: "national-flags/ag/ag-arms.svg", design: "A sugar mill and rising sun over the sea, held by two deer, crested with a pineapple.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
   ],
   "AL": [
     { id: "al-official-national", category: "official", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
@@ -1129,8 +1131,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mg-arms", category: "coatofarms", name: "Emblem of Madagascar", path: "national-flags/mg/mg-arms.svg", design: "The national emblem of Madagascar.", source: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
   ],
   "MH": [
-    { id: "mh-official-national", category: "official", name: "Flag of Marshall Islands", from: 1979, to: 9999, primary: true, path: "flags/mh.svg", design: "The national flag of Marshall Islands, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Marshall_Islands" },
-    { id: "mh-current", category: "historical", name: "Flag of Marshall Islands", from: 1979, to: 9999, primary: true, path: "flags/mh.svg", design: "The national flag of Marshall Islands, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Marshall_Islands" },
+    { id: "mh-official-national", category: "official", name: "Flag of the Marshall Islands", from: 1979, to: 9999, primary: true, path: "flags/mh.svg", design: "The national flag, adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands" },
+    { id: "mh-current", category: "historical", name: "Flag of the Marshall Islands", from: 1979, to: 9999, primary: true, path: "flags/mh.svg", design: "A blue field crossed by widening orange and white rays from the hoist, with a white 24-pointed star — blue for the ocean, the rays for the equator and the two island chains (Ratak “sunrise,” orange; Ralik “sunset,” white), the 24 points for the municipalities.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands" },
+    { id: "mh-us", category: "historical", name: "Flag of the United States", from: 1947, to: 1986, sovereign: "the United States", path: "national-flags/mh/mh-us.svg", design: "The flag of the United States, which administered the islands as the UN Trust Territory of the Pacific Islands until 1986.", source: "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands" },
+    { id: "mh-japan", category: "historical", name: "Flag of Japan", from: 1920, to: 1944, sovereign: "Japan", path: "national-flags/mh/mh-japan.svg", design: "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
+    { id: "mh-arms", category: "coatofarms", name: "Seal of the Marshall Islands", from: 1992, to: 9999, path: "national-flags/mh/mh-arms.svg", design: "An angel over two islands with a canoe, a palm and a stick chart, on the blue of the sea.", source: "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands" },
   ],
   "MK": [
     { id: "mk-official-national", category: "official", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
@@ -1189,8 +1194,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mu-arms", category: "coatofarms", name: "Coat of arms of Mauritius", from: 1906, to: 9999, path: "national-flags/mu/mu-arms.svg", design: "A quartered shield with a ship, palm trees, a key and a star, held by a dodo and a deer.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
   ],
   "MV": [
-    { id: "mv-official-national", category: "official", name: "Flag of Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "The national flag of Maldives, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Maldives" },
-    { id: "mv-current", category: "historical", name: "Flag of Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "The national flag of Maldives, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Maldives" },
+    { id: "mv-official-national", category: "official", name: "Flag of the Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "The national flag, adopted at independence in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Maldives" },
+    { id: "mv-current", category: "historical", name: "Flag of the Maldives", from: 1965, to: 9999, primary: true, path: "flags/mv.svg", design: "A red field with a green rectangle bearing a white crescent — red for the blood of the heroes who defended the country, green for peace and prosperity, the crescent for the Islamic faith.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Maldives" },
+    { id: "mv-arms", category: "coatofarms", name: "Emblem of the Maldives", from: 1965, to: 9999, path: "national-flags/mv/mv-arms.svg", design: "A coconut palm between two national flags, over a crescent, star and scroll.", source: "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives" },
   ],
   "MW": [
     { id: "mw-official-national", category: "official", name: "Flag of Malawi", from: 1964, to: 9999, primary: true, path: "flags/mw.svg", design: "The national flag of Malawi, adopted at independence in 1964 (briefly changed 2010–2012, then restored).", source: "https://en.wikipedia.org/wiki/Flag_of_Malawi" },
@@ -1312,8 +1318,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "np-emblem", category: "coatofarms", name: "Emblem of Nepal", from: 2008, to: 9999, path: "national-flags/np/nepal-emblem.svg", design: "The flag, Mount Everest, green hills and a yellow plain above two joined hands, within a rhododendron wreath.", source: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
   ],
   "NR": [
-    { id: "nr-official-national", category: "official", name: "Flag of Naoero", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag of Naoero, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Naoero" },
-    { id: "nr-current", category: "historical", name: "Flag of Naoero", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag of Naoero, in the form adopted in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Naoero" },
+    { id: "nr-official-national", category: "official", name: "Flag of Nauru", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Nauru" },
+    { id: "nr-current", category: "historical", name: "Flag of Nauru", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "A blue field with a narrow gold stripe and a white twelve-pointed star below it — blue for the Pacific, the gold stripe for the Equator, the star for Nauru's position just south of it, the twelve points for the island's twelve original tribes.", source: "https://en.wikipedia.org/wiki/Flag_of_Nauru" },
+    { id: "nr-australia", category: "historical", name: "Flag of Australia", from: 1920, to: 1968, sovereign: "Australia", path: "national-flags/nr/nr-australia.svg", design: "The flag of Australia, which administered Nauru under a League of Nations mandate and then a UN trusteeship (jointly with Britain and New Zealand) until 1968.", source: "https://en.wikipedia.org/wiki/Nauru" },
+    { id: "nr-german", category: "historical", name: "Flag of the German Empire", from: 1888, to: 1914, sovereign: "the German Empire", path: "national-flags/nr/nr-german.svg", design: "The flag of the German Empire, which annexed Nauru as a protectorate in 1888 and held it until 1914.", source: "https://en.wikipedia.org/wiki/History_of_Nauru" },
+    { id: "nr-arms", category: "coatofarms", name: "Coat of arms of Nauru", from: 1968, to: 9999, path: "national-flags/nr/nr-arms.svg", design: "A frigatebird and phosphorus symbol beneath a twelve-pointed star, framed by palm and feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
   ],
   "NZ": [
     { id: "nz-official-national", category: "official", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
@@ -1835,8 +1844,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "va-current", category: "historical", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
   ],
   "VC": [
-    { id: "vc-official-national", category: "official", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "The national flag of Saint Vincent and the Grenadines, in the form adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
-    { id: "vc-current", category: "historical", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "The national flag of Saint Vincent and the Grenadines, in the form adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+    { id: "vc-official-national", category: "official", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "The national flag, adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+    { id: "vc-current", category: "historical", name: "Flag of Saint Vincent and the Grenadines", from: 1985, to: 9999, primary: true, path: "flags/vc.svg", design: "Blue, gold and green bands with three green diamonds in a V on the gold — blue for the sky and sea, gold for the warmth and the sands, green for the lush islands; the diamonds are the “Gems of the Antilles,” set as a V for Vincent.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines" },
+    { id: "vc-uk", category: "historical", name: "Flag of the United Kingdom", from: 1763, to: 1979, sovereign: "the United Kingdom", path: "national-flags/vc/vc-uk.svg", design: "The Union Flag, flown while Saint Vincent was a British colony.", source: "https://en.wikipedia.org/wiki/History_of_Saint_Vincent_and_the_Grenadines" },
+    { id: "vc-arms", category: "coatofarms", name: "Coat of arms of Saint Vincent and the Grenadines", from: 1979, to: 9999, path: "national-flags/vc/vc-arms.svg", design: "Two women representing Peace and Justice before an altar, with a cotton plant.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines" },
   ],
   "VE": [
     { id: "ve-official-national", category: "official", name: "Flag of Venezuela", from: 2006, to: 9999, primary: true, path: "flags/ve.svg", design: "The national flag of Venezuela, in the form adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_Venezuela" },
@@ -1940,6 +1951,7 @@ export type NationalIndependence = {
 };
 
 export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence>> = {
+  "AG": { year: 1981, event: "Antigua and Barbuda became independent from the United Kingdom on 1 November 1981", source: "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda" },
   "AL": { year: 1912, event: "Albania declared independence from the Ottoman Empire on 28 November 1912", source: "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence" },
   "AM": { year: 1918, event: "The First Republic of Armenia declared independence on 28 May 1918", note: "It was absorbed into the Soviet Union in 1920–1922; independence was restored on 21 September 1991.", source: "https://en.wikipedia.org/wiki/First_Republic_of_Armenia" },
   "AO": { year: 1975, event: "Independence from Portugal, 11 November 1975", source: "https://en.wikipedia.org/wiki/Angolan_War_of_Independence" },
@@ -2015,6 +2027,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "LY": { year: 1951, event: "Libya became independent as the United Kingdom of Libya on 24 December 1951", source: "https://en.wikipedia.org/wiki/History_of_Libya" },
   "ME": { year: 1878, event: "Montenegro's independence was recognised by the Great Powers at the Congress of Berlin in 1878", note: "Montenegro had been a de-facto sovereign principality for centuries; it was absorbed into Yugoslavia in 1918 and regained independence from the state union with Serbia on 3 June 2006.", source: "https://en.wikipedia.org/wiki/History_of_Montenegro" },
   "MG": { year: 1960, event: "Madagascar became fully independent from France on 26 June 1960", source: "https://en.wikipedia.org/wiki/History_of_Madagascar" },
+  "MH": { year: 1986, event: "The Marshall Islands became a sovereign state in free association with the United States on 21 October 1986, ending the US-administered Trust Territory of the Pacific Islands", source: "https://en.wikipedia.org/wiki/History_of_the_Marshall_Islands" },
   "MK": { year: 1991, event: "Macedonia declared independence from Yugoslavia on 8 September 1991", note: "It was admitted to the UN in 1993 as \"the former Yugoslav Republic of Macedonia\" and renamed North Macedonia in 2019 under the Prespa agreement with Greece.", source: "https://en.wikipedia.org/wiki/Independence_of_North_Macedonia" },
   "ML": { year: 1960, event: "Independence from France on 22 September 1960, after leaving the Mali Federation with Senegal", source: "https://en.wikipedia.org/wiki/Mali_Federation" },
   "MR": { year: 1960, event: "Mauritania became independent from France on 28 November 1960", source: "https://en.wikipedia.org/wiki/History_of_Mauritania" },
@@ -2026,6 +2039,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "NA": { year: 1990, event: "Namibia became independent on 21 March 1990, ending South African administration of the territory", note: "South Africa administered the territory under a League of Nations mandate from 1920; its continued rule after the UN terminated the mandate in 1966 was ruled illegal by the International Court of Justice in 1971", source: "https://en.wikipedia.org/wiki/History_of_Namibia" },
   "NE": { year: 1960, event: "Niger became independent from France on 3 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Niger" },
   "NI": { year: 1838, event: "Nicaragua declared independence from the Federal Republic of Central America on 30 April 1838", note: "Central America had separated from Spain in 1821, belonged to the First Mexican Empire until 1823, and then formed the federation.", source: "https://en.wikipedia.org/wiki/History_of_Nicaragua" },
+  "NR": { year: 1968, event: "Nauru became independent on 31 January 1968, ending the Australian-administered UN trusteeship", source: "https://en.wikipedia.org/wiki/History_of_Nauru" },
   "NZ": { year: 1907, event: "New Zealand became a Dominion on 26 September 1907.", note: "Legislative independence followed when New Zealand adopted the Statute of Westminster in 1947.", source: "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand" },
   "OM": { year: 1650, event: "Portuguese rule over the Omani coast ended when Sultan bin Saif expelled them from Muscat in 1650", note: "Oman was never a European colony in the later sense: the Portuguese held only the coastal forts from 1507, and the country has been independent since, ruled by the Al Said dynasty from 1744.", source: "https://en.wikipedia.org/wiki/History_of_Oman" },
   "PA": { year: 1903, event: "Panama separated from Colombia on 3 November 1903", note: "The isthmus had separated from Spain in 1821 and joined Gran Colombia, remaining part of Colombia until 1903.", source: "https://en.wikipedia.org/wiki/Separation_of_Panama_from_Colombia" },
@@ -2053,6 +2067,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
   "UG": { year: 1962, event: "Independence from the United Kingdom, 9 October 1962", source: "https://en.wikipedia.org/wiki/History_of_Uganda" },
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
+  "VC": { year: 1979, event: "Saint Vincent and the Grenadines became independent from the United Kingdom on 27 October 1979", source: "https://en.wikipedia.org/wiki/History_of_Saint_Vincent_and_the_Grenadines" },
   "VE": { year: 1811, event: "Declaration of independence from Spain, 5 July 1811", note: "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.", source: "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence" },
   "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
   "VU": { year: 1980, event: "Vanuatu became independent on 30 July 1980, ending the British-French New Hebrides condominium", source: "https://en.wikipedia.org/wiki/History_of_Vanuatu" },
@@ -2079,6 +2094,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The bird is the Hawk of Quraish, the pan-Arab device named for the tribe the Prophet Muhammad belonged to, which recurs across the emblems of the Arabian peninsula. What makes this one the UAE's is the counting: the disc on the falcon's breast shows the national flag with SEVEN stars, one for each emirate of the federation, and the falcon's tail carries seven feathers for the same seven. In its talons it holds a red parchment bearing the name of the federation. The earlier emblem, used until 2008, had a dhow on the falcon's breast instead — the maritime device Kuwait and Qatar still carry.",
     sources: [
       { title: "Emblem of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_United_Arab_Emirates" },
+    ],
+  },
+  "ag-arms": {
+    description: "A stylised sugar mill on a blue-and-white sea sits beneath the rising sun of the flag, for the sugar trade the islands were built on. Two deer support the shield for the wildlife, and a pineapple — the fruit Antigua is famous for — crowns it, flanked by hibiscus, sugarcane and the century plant. The motto reads “Each Endeavouring, All Achieving.”",
+    sources: [
+      { title: "Coat of arms of Antigua and Barbuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
     ],
   },
   "al-arms": {
@@ -2714,6 +2735,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Madagascar — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Madagascar" },
     ],
   },
+  "mh-arms": {
+    description: "On a blue field for the sea, an angel with outstretched wings stands for peace above the shield. Below are two islands with a palm tree and an outrigger canoe, and a stick chart — the traditional Marshallese navigation chart of shells and palm ribs. The motto reads Jepilpilin ke Ejukaan — “Accomplishment Through Joint Effort.”",
+    sources: [
+      { title: "Seal of the Marshall Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands" },
+    ],
+  },
   "mk-emblem": {
     description: "North Macedonia is one of the very few countries still using a socialist-style national emblem — the others are Belarus and the breakaway Transnistria — and it is the only EU-candidate state to do so. The garlands framing it are the country's three signature crops: sheaves of wheat, tobacco leaves and opium-poppy fruits, tied with a ribbon of traditional Macedonian folk embroidery. Inside, a mountain, a stretch of water (the Vardar and the lakes) and a rising sun stand for the land and its freedom, and the red star at the top is the National Liberation War. The 1946 original showed the Pirin Mountains, which lie in Bulgaria — placed there to signal a hoped-for \"United Macedonia\" that never came about; the mountain was later left generic.",
     sources: [
@@ -2754,6 +2781,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The quartered shield shows a ship for the island's discovery and trade, three palm trees, a golden key, and a five-pointed star. The key and star give the motto, Stella Clavisque Maris Indici — “the Star and Key of the Indian Ocean,” Mauritius's place on the ocean routes. A dodo, the flightless bird found only here, and a sambar deer support the shield, each holding a stalk of sugarcane, the island's great crop.",
     sources: [
       { title: "Coat of arms of Mauritius — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mauritius" },
+    ],
+  },
+  "mv-arms": {
+    description: "A coconut palm — the tree that sustains the islanders — rises between two national flags, above a crescent and star for the Islamic faith of the state and its authority, over a scroll bearing the country's traditional title, Ad-Dawlat Al-Mahaldheebiyya.",
+    sources: [
+      { title: "Emblem of the Maldives — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives" },
     ],
   },
   "mw-arms": {
@@ -2821,6 +2854,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is built from the country's own geography and one social claim. Mount Everest and the green hills below it are the mountain and hill regions; the yellow beneath them is the fertile Terai plain. The map of Nepal sits at the centre with the national flag above it. The joined hands of a man and a woman below stand for gender equality — an explicit statement, adopted with the emblem of the federal republic. Around the whole runs a wreath of rhododendron, the national flower, called lali gurans.",
     sources: [
       { title: "Emblem of Nepal — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
+    ],
+  },
+  "nr-arms": {
+    description: "A frigatebird perches over the blue ocean, and the top of the shield carries the alchemical sign for phosphorus — the phosphate rock on which the island's wealth was built. A twelve-pointed star, as on the flag, sits above, framed by palm fronds, frigatebird feathers and shark teeth. The scroll reads “God's Will First.”",
+    sources: [
+      { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
     ],
   },
   "om-emblem": {
@@ -3085,6 +3124,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is the country's natural wealth arranged around one legendary bird. On the left is a cotton plant — the crop that has dominated Uzbek industry and agriculture since the Soviet era, when the Uzbek SSR was one of the USSR's main suppliers — and on the right ears of wheat. At the centre the Huma, a legendary bird of Persian and Turkic myth, spreads its wings for peace, happiness and the striving for freedom. Enclosed by those wings are a rising sun over mountains and green pastures, and the two rivers that make the country's agriculture possible: the Amu Darya and the Syr Darya. Before the Soviet period the khanates and emirates here — Bukhara, Khiva — had no coat of arms in the Western sense at all.",
     sources: [
       { title: "Emblem of Uzbekistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
+    ],
+  },
+  "vc-arms": {
+    description: "Two women in classical Roman dress stand for the country's ideals — Peace, holding an olive branch, and Justice, kneeling with golden scales before an altar. The green shield between them bears a cotton plant, a mainstay of the old island economy. The motto reads Pax et Justitia — “Peace and Justice.”",
+    sources: [
+      { title: "Coat of arms of Saint Vincent and the Grenadines — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines" },
     ],
   },
   "ve-arms": {
