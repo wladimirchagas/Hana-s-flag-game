@@ -636,8 +636,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fj-arms", category: "coatofarms", name: "Coat of arms of Fiji", from: 1908, to: 9999, path: "national-flags/fj/fj-arms.svg", design: "A shield of the St George's cross with a lion and island crops, held by two Fijian warriors.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
   ],
   "FM": [
-    { id: "fm-official-national", category: "official", name: "Flag of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "The national flag of Micronesia, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Micronesia" },
-    { id: "fm-current", category: "historical", name: "Flag of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "The national flag of Micronesia, in the form adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_Micronesia" },
+    { id: "fm-official-national", category: "official", name: "Flag of the Federated States of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "The national flag, adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
+    { id: "fm-current", category: "historical", name: "Flag of the Federated States of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "A light-blue field with four white stars in a diamond — blue for the Pacific Ocean, the four stars for the four states of the federation (Yap, Chuuk, Pohnpei and Kosrae).", source: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
+    { id: "fm-us", category: "historical", name: "Flag of the United States", from: 1947, to: 1986, sovereign: "the United States", path: "national-flags/fm/fm-us.svg", design: "The flag of the United States, which administered the islands as the UN Trust Territory of the Pacific Islands until 1986.", source: "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands" },
+    { id: "fm-japan", category: "historical", name: "Flag of Japan", from: 1920, to: 1944, sovereign: "Japan", path: "national-flags/fm/fm-japan.svg", design: "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
   ],
   "FR": [
     { id: "fr-official-national", category: "official", name: "Flag of France", from: 1830, to: 9999, primary: true, path: "flags/fr.svg", design: "The national flag, named in Article 2 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_France" },
@@ -960,8 +962,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "km-arms", category: "coatofarms", name: "Seal of the Comoros", from: 1978, to: 9999, path: "national-flags/km/km-arms.svg", design: "A crescent holding four stars beneath a rising sun, within olive branches and the country's name.", source: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
   ],
   "KN": [
-    { id: "kn-official-national", category: "official", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "The national flag of Saint Kitts and Nevis, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
-    { id: "kn-current", category: "historical", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "The national flag of Saint Kitts and Nevis, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
+    { id: "kn-official-national", category: "official", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "The national flag, adopted at independence in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
+    { id: "kn-current", category: "historical", name: "Flag of Saint Kitts and Nevis", from: 1983, to: 9999, primary: true, path: "flags/kn.svg", design: "A black diagonal band edged in yellow bearing two white stars, between green and red triangles — green for fertility, red for the struggle, black for the African heritage, yellow for sunshine, the two stars for the two islands and for hope and liberty.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis" },
+    { id: "kn-uk", category: "historical", name: "Flag of the United Kingdom", from: 1783, to: 1983, sovereign: "the United Kingdom", path: "national-flags/kn/kn-uk.svg", design: "The Union Flag, flown while the islands were a British colony.", source: "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla" },
+    { id: "kn-arms", category: "coatofarms", name: "Coat of arms of Saint Kitts and Nevis", from: 1983, to: 9999, path: "national-flags/kn/kn-arms.svg", design: "A shield with a Carib's head, a fleur-de-lis and a rose, a ship and a palm, held by two pelicans.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
   ],
   "KP": [
     { id: "kp-official-national", category: "official", name: "Flag of North Korea", from: 1948, to: 9999, primary: true, path: "flags/kp.svg", design: "The national flag of North Korea, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
@@ -1499,8 +1503,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sa-emblem", category: "coatofarms", name: "Emblem of Saudi Arabia", from: 1950, to: 9999, path: "national-flags/sa/saudi-emblem.svg", design: "Two crossed swords beneath a date palm.", source: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
   ],
   "SB": [
-    { id: "sb-official-national", category: "official", name: "Flag of Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag of Solomon Islands, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands" },
-    { id: "sb-current", category: "historical", name: "Flag of Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag of Solomon Islands, in the form adopted in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands" },
+    { id: "sb-official-national", category: "official", name: "Flag of the Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag, adopted in 1977, the year before independence.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands" },
+    { id: "sb-current", category: "historical", name: "Flag of the Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "A yellow diagonal stripe dividing a blue and a green triangle, with five white stars in the blue — blue for the sea, green for the land, yellow for the sun, and the five stars for the country's five original districts.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands" },
+    { id: "sb-uk", category: "historical", name: "Flag of the United Kingdom", from: 1893, to: 1978, sovereign: "the United Kingdom", path: "national-flags/sb/sb-uk.svg", design: "The Union Flag, flown while the islands were the British Solomon Islands Protectorate.", source: "https://en.wikipedia.org/wiki/British_Solomon_Islands" },
+    { id: "sb-arms", category: "coatofarms", name: "Coat of arms of Solomon Islands", from: 1978, to: 9999, path: "national-flags/sb/sb-arms.svg", design: "A quartered shield of a frigate bird, a sea eagle, a turtle and weapons, held by a crocodile and a shark.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Solomon_Islands" },
   ],
   "SC": [
     { id: "sc-official-national", category: "official", name: "Flag of Seychelles", from: 1996, to: 9999, primary: true, path: "flags/sc.svg", design: "The national flag, adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Seychelles" },
@@ -1674,8 +1680,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tn-arms", category: "coatofarms", name: "Coat of arms of Tunisia", from: 1963, to: 9999, path: "national-flags/tn/tunisia-arms.svg", design: "A shield in three parts — a Carthaginian galley above, a scale and a lion holding a scimitar below — beneath a crescent and star, over the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
   ],
   "TO": [
-    { id: "to-official-national", category: "official", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag of Tonga, in the form adopted in 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
-    { id: "to-current", category: "historical", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag of Tonga, in the form adopted in 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
+    { id: "to-official-national", category: "official", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag, adopted with the constitution of 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
+    { id: "to-current", category: "historical", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "A red field with a red couped cross on a white canton — the red cross for the Christian faith of the kingdom, red for the blood of Christ, white for purity; fixed in the 1875 constitution so it could never be changed.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
+    { id: "to-arms", category: "coatofarms", name: "Coat of arms of Tonga", from: 1875, to: 9999, path: "national-flags/to/to-arms.svg", design: "A shield of stars, a crown, a dove and swords, beneath the Crown of Tonga in a wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga" },
   ],
   "TR": [
     { id: "tr-official-national", category: "official", name: "Flag of Turkey", from: 1936, to: 9999, primary: true, path: "flags/tr.svg", design: "The national flag, under the Turkish Flag Law of 1936.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkey" },
@@ -1852,8 +1859,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "vn-emblem", category: "coatofarms", name: "Emblem of Vietnam", from: 1976, to: 9999, path: "national-flags/vn/vietnam-emblem.svg", design: "A circular red field with a gold five-pointed star, framed by ears of rice above a half cogwheel and a scroll bearing the country's name.", source: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
   ],
   "VU": [
-    { id: "vu-official-national", category: "official", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "The national flag of Vanuatu, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
-    { id: "vu-current", category: "historical", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "The national flag of Vanuatu, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
+    { id: "vu-official-national", category: "official", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "The national flag, adopted at independence in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
+    { id: "vu-current", category: "historical", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "A black triangle bearing a boar's tusk and crossed namele leaves, with red and green fields divided by a yellow Y — red for blood, green for the land, black for the people, the Y for the scatter of the islands, the tusk for prosperity.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
+    { id: "vu-uk", category: "historical", name: "Flag of the United Kingdom", from: 1906, to: 1980, sovereign: "the United Kingdom", path: "national-flags/vu/vu-uk.svg", design: "The Union Flag — the New Hebrides were governed jointly by Britain and France as a condominium until 1980.", source: "https://en.wikipedia.org/wiki/New_Hebrides" },
+    { id: "vu-france", category: "historical", name: "Flag of France", from: 1906, to: 1980, sovereign: "France", path: "national-flags/vu/vu-france.svg", design: "The French Tricolour — France shared the government of the New Hebrides with Britain until 1980.", source: "https://en.wikipedia.org/wiki/New_Hebrides" },
+    { id: "vu-arms", category: "coatofarms", name: "Coat of arms of Vanuatu", from: 1980, to: 9999, path: "national-flags/vu/vu-arms.svg", design: "A Melanesian chief with a spear before a boar's tusk and crossed namele leaves.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
   ],
   "WS": [
     { id: "ws-official-national", category: "official", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag, adopted in 1949 and kept at independence in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
@@ -1958,6 +1968,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "EG": { year: 1922, event: "The United Kingdom's unilateral declaration of Egyptian independence, 28 February 1922", note: "British troops remained until 1956, and full sovereignty is often dated to the 1952 revolution and the republic of 1953.", source: "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence" },
   "ER": { year: 1993, event: "Eritrea became independent from Ethiopia on 24 May 1993, after a 1993 referendum confirmed the de facto independence won in 1991", source: "https://en.wikipedia.org/wiki/History_of_Eritrea" },
   "FJ": { year: 1970, event: "Fiji became independent from the United Kingdom on 10 October 1970", source: "https://en.wikipedia.org/wiki/History_of_Fiji" },
+  "FM": { year: 1986, event: "The Federated States of Micronesia became a sovereign state in free association with the United States on 3 November 1986, ending the US-administered Trust Territory of the Pacific Islands", source: "https://en.wikipedia.org/wiki/History_of_the_Federated_States_of_Micronesia" },
   "GA": { year: 1960, event: "Gabon became independent from France on 17 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Gabon" },
   "GE": { year: 1918, event: "The Democratic Republic of Georgia declared independence on 26 May 1918", note: "Georgia was invaded and annexed by Soviet Russia in 1921 and restored its independence on 9 April 1991.", source: "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia" },
   "GH": { year: 1957, event: "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it", source: "https://en.wikipedia.org/wiki/History_of_Ghana" },
@@ -1978,6 +1989,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
   "KH": { year: 1953, event: "Independence from France, 9 November 1953", note: "Cambodia had been a French protectorate since 1863.", source: "https://en.wikipedia.org/wiki/History_of_Cambodia" },
   "KM": { year: 1975, event: "The Comoros declared independence from France on 6 July 1975", source: "https://en.wikipedia.org/wiki/History_of_the_Comoros" },
+  "KN": { year: 1983, event: "Saint Kitts and Nevis became independent from the United Kingdom on 19 September 1983", source: "https://en.wikipedia.org/wiki/History_of_Saint_Kitts_and_Nevis" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
   "LB": { year: 1943, event: "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon", source: "https://en.wikipedia.org/wiki/History_of_Lebanon" },
@@ -2008,6 +2020,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
   "RW": { year: 1962, event: "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Rwanda" },
+  "SB": { year: 1978, event: "Solomon Islands became independent from the United Kingdom on 7 July 1978", source: "https://en.wikipedia.org/wiki/History_of_Solomon_Islands" },
   "SC": { year: 1976, event: "Seychelles became independent from the United Kingdom on 29 June 1976", source: "https://en.wikipedia.org/wiki/History_of_Seychelles" },
   "SG": { year: 1965, event: "Separation from Malaysia and full independence, 9 August 1965", note: "Singapore had self-government within the British Empire from 1959 and joined Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Singapore_in_Malaysia" },
   "SI": { year: 1991, event: "Slovenia declared independence from Yugoslavia on 25 June 1991", source: "https://en.wikipedia.org/wiki/Independence_of_Slovenia" },
@@ -2028,6 +2041,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
   "VE": { year: 1811, event: "Declaration of independence from Spain, 5 July 1811", note: "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.", source: "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence" },
   "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
+  "VU": { year: 1980, event: "Vanuatu became independent on 30 July 1980, ending the British-French New Hebrides condominium", source: "https://en.wikipedia.org/wiki/History_of_Vanuatu" },
   "WS": { year: 1962, event: "Samoa (then Western Samoa) became independent on 1 January 1962, ending New Zealand's administration — the first Polynesian nation to reestablish independence in the 20th century", source: "https://en.wikipedia.org/wiki/History_of_Samoa" },
   "ZA": { year: 1910, event: "The Union of South Africa was established as a self-governing dominion on 31 May 1910.", note: "Full legislative independence followed with the Statute of Westminster in 1931; the republic was declared in 1961.", source: "https://en.wikipedia.org/wiki/Union_of_South_Africa" },
   "ZM": { year: 1964, event: "Zambia became independent from the United Kingdom on 24 October 1964, ending the Northern Rhodesia protectorate", source: "https://en.wikipedia.org/wiki/History_of_Zambia" },
@@ -2572,6 +2586,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National seal of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/National_seal_of_the_Comoros" },
     ],
   },
+  "kn-arms": {
+    description: "At the centre of the shield is a Carib's head — the islands' first people — flanked by a fleur-de-lis and a rose, for the French and British who later ruled. Below, a lighter (a small sailing boat) crosses the waves, and poinciana flowers and a coconut palm frame the arms. Two pelicans support the shield, and the motto reads “Country Above Self.”",
+    sources: [
+      { title: "Coat of arms of Saint Kitts and Nevis — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
+    ],
+  },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
@@ -2843,6 +2863,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Saudi Arabia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
     ],
   },
+  "sb-arms": {
+    description: "The quartered shield carries a frigate bird, a sea eagle, a turtle and the traditional weapons of the islands — spears, a bow and arrow, and a shield. A crocodile and a shark flank it as supporters, and a stylised sun crowns the crest above a decorated helm. The motto reads “To Lead Is to Serve.”",
+    sources: [
+      { title: "Coat of arms of Solomon Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Solomon_Islands" },
+    ],
+  },
   "sc-arms": {
     description: "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
     sources: [
@@ -2945,6 +2971,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Tunisia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
     ],
   },
+  "to-arms": {
+    description: "The shield, designed with the 1875 constitution, is quartered: three stars for the country's three main island groups, a crown for the monarchy, a dove with an olive branch for peace, and three swords for the three lines of kings. A red star at the centre stands for Christianity. The Crown of Tonga sits above within an olive wreath, and the motto reads Ko e ʻOtua mo Tonga ko hoku Tofiʻa — “God and Tonga are my Inheritance.”",
+    sources: [
+      { title: "Coat of arms of Tonga — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tonga" },
+    ],
+  },
   "tr-arms": {
     description: "Turkey has no official national coat of arms at all — a deliberate republican break. When the sultanate was abolished on 1 November 1922 the Ottoman coat of arms went with it and was never replaced, so what the state uses in an emblem’s place is the star and crescent lifted straight from the flag, set in an oval with the country’s name. It appears on Turkish passports and identity cards and at Turkish diplomatic missions, which makes it an emblem in practice while remaining unofficial in law. The crescent and star themselves come from the Ottoman flag of 1844, which is also the basis of today’s flag.",
     sources: [
@@ -3021,6 +3053,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is defined by the constitution as a circle bearing a five-pointed gold star on red, framed by ears of rice above half a cogwheel and the name of the state. The two framing charges are the two halves of the workforce the socialist republic is founded on: the rice stands for agriculture and the cogwheel for industry. The designer Bùi Trang Chước first drew an anvil at the foot of the wreath; Hồ Chí Minh asked for it to be replaced because an anvil is an individual craftsman's tool, and modern industry needed a modern symbol — so the cogwheel took its place. The star and the red field are those of the national flag.",
     sources: [
       { title: "Emblem of Vietnam — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Vietnam" },
+    ],
+  },
+  "vu-arms": {
+    description: "A Melanesian chief holding a spear stands on a mountain before a boar's tusk — the curved tusk a traditional sign of prosperity and rank — crossed with two namele fern leaves, which stand for peace and for the islands. The scroll reads Long God Yumi Stanap — “With God We Stand,” in Bislama.",
+    sources: [
+      { title: "Coat of arms of Vanuatu — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vanuatu" },
     ],
   },
   "ye-emblem": {
