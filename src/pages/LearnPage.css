@@ -2028,25 +2028,42 @@
 }
 
 /* A group label that also carries the group's own collective flag (Malaysia's
-   Flag of the Federal Territories) — a clickable pill showing the flag beside
-   the type name, sitting as the parent of the subdivision cards below it. */
+   Flag of the Federal Territories) — a clickable node-style card sitting as the
+   parent of the subdivision cards below it. It is laid out like a subdivision
+   node (flag on top, then the type name + count) so its flag is the SAME size
+   as every other flag in the chart, rather than a small inline thumbnail. */
 .hierarchy__group-label--flag {
+  flex-direction: column;
+  width: 120px;
+  gap: 0.35rem;
+  padding: 0.5rem 0.4rem 0.6rem;
+  border-radius: 12px;
   cursor: pointer;
-  padding-left: 0.4rem;
-  transition: background 0.12s ease, border-color 0.12s ease;
+  /* The name is now stacked in a fixed-width card, so it must wrap at spaces
+     (never mid-letter — see the card-label hard rule) instead of the pill's
+     single no-wrap line. */
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, border-color 120ms ease;
 }
-.hierarchy__group-label--flag:hover {
-  background: var(--paper);
+.hierarchy__group-label--flag:hover,
+.hierarchy__group-label--flag:focus-visible {
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 0 var(--ink);
 }
 .hierarchy__group-label--active {
   background: var(--sky);
   border-color: var(--coral);
 }
+/* The flag box matches the subdivision node thumb exactly (width:100% of the
+   120px card, 3:2 box), so every chart flag renders at one consistent size. */
 .hierarchy__group-flag-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
+  width: 100%;
   aspect-ratio: 3 / 2;
   flex: 0 0 auto;
 }
@@ -2054,7 +2071,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 2px;
   filter:
     drop-shadow(0 0 0.5px var(--ink))
     drop-shadow(0 1px 1px rgba(26, 34, 56, 0.18));
@@ -2596,6 +2612,7 @@
   .flag-tabs__tab { font-size: 0.82rem; padding: 0.4rem 0.7rem; }
   .hierarchy__node { width: 96px; }
   .hierarchy__node--national { width: 120px; }
+  .hierarchy__group-label--flag { width: 96px; }
   .flag-grid__list {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: 0.6rem;
