@@ -3,6 +3,9 @@ import { AutoFitName } from "./AutoFitName";
 import { subdivisionFlagUrl } from "../api/subdivisions";
 import type { SubdivisionMeta } from "../types/subdivision";
 import { getSubdivisionDisputeLabel, DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
+import { SUBDIVISION_GROUP_FLAGS, type SubdivisionGroupFlag } from "../data/subdivisionGroupFlags";
+import type { NationalFlag } from "../data/nationalFlags";
+import type { FlagMeaning } from "../data/flagMeanings";
 
 type GroupMode = "none" | "alpha" | "type";
 
@@ -22,6 +25,13 @@ type Props = {
   /** When true, render just the controls + grid (no <section>/title) so a
    *  parent (e.g. the tabbed drill-down) can own the section shell + header. */
   embedded?: boolean;
+  /** BASE_URL prefix for a bundled flag path (for group flags). */
+  baseUrl?: string;
+  /** id of the flag whose widget is open (if any) — highlights a selected group flag. */
+  selectedNationalFlagId?: string | null;
+  /** A collective subdivision-group flag (Malaysia's Federal Territories) —
+   *  opens its own widget with its sourced meaning, like a national symbol. */
+  onSelectGroupFlag?: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
 };
 
 export function SubdivisionFlagGrid({
@@ -32,7 +42,15 @@ export function SubdivisionFlagGrid({
   onSelect,
   countryCode,
   embedded = false,
+  baseUrl = "",
+  selectedNationalFlagId,
+  onSelectGroupFlag,
 }: Props) {
+  // Collective flags flown for a WHOLE subdivision-type group together
+  // (Malaysia's Flag of the Federal Territories) — shown as a card above that
+  // type's own subdivisions, mirroring the hierarchy's group flag. Never a
+  // playable/selectable subdivision: clicking it opens its meaning widget.
+  const groupFlags = countryCode ? SUBDIVISION_GROUP_FLAGS[countryCode] ?? [] : [];
   const distinctTypeCount = useMemo(
     () => new Set(divisions.map((d) => d.typeLabel)).size,
     [divisions],
@@ -145,6 +163,52 @@ export function SubdivisionFlagGrid({
     </label>
   );
 
+  // A collective group-flag card (Malaysia's Flag of the Federal Territories):
+  // a distinct card that opens its own meaning widget instead of selecting a
+  // subdivision on the map. Never counted among the type's subdivisions.
+  const renderGroupFlagCard = (gf: SubdivisionGroupFlag) => {
+    const flag = gf.flag;
+    const active = flag.id === selectedNationalFlagId;
+    const flagUrl = flag.path ? `${baseUrl}${flag.path}` : null;
+    return (
+      <li key={`group-flag:${flag.id}`} className="flag-grid__item">
+        <button
+          type="button"
+          className={`flag-grid__card${active ? " flag-grid__card--active" : ""}`}
+          onClick={() => onSelectGroupFlag?.(flag, gf.meaning ?? null)}
+          aria-pressed={active}
+          aria-label={`Select ${flag.name}, flown for the ${pluralLabel.toLowerCase()} together`}
+        >
+          <span className="flag-grid__thumb">
+            {flagUrl ? (
+              <img
+                src={flagUrl}
+                alt=""
+                loading="lazy"
+                draggable={false}
+                className="flag-grid__thumb-img"
+                onError={(e) => { e.currentTarget.style.display = "none"; }}
+              />
+            ) : (
+              <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
+            )}
+          </span>
+          <span className="flag-grid__name">
+            <AutoFitName className="flag-grid__name-text" text={flag.name} />
+            <span className="flag-grid__unofficial-tag">(collective flag)</span>
+          </span>
+        </button>
+      </li>
+    );
+  };
+
+  // Group flags not attached to a shown type group (only possible when NOT
+  // grouping by type) — surfaced as a leading section so they're never dropped.
+  const orphanGroupFlags =
+    onSelectGroupFlag && groupFlags.length > 0 && groupMode !== "type"
+      ? groupFlags
+      : [];
+
   const body = groups.map((g) => (
         <div key={g.heading ?? "_all"} className="flag-grid__group">
           {g.heading && (
@@ -154,6 +218,12 @@ export function SubdivisionFlagGrid({
             </h3>
           )}
           <ul className="flag-grid__list">
+            {/* In "type" mode, a group's heading IS its typeLabel, so the
+                collective flag for that type sits directly above its members. */}
+            {onSelectGroupFlag && groupMode === "type" &&
+              groupFlags
+                .filter((gf) => gf.typeLabel === g.heading)
+                .map((gf) => renderGroupFlagCard(gf))}
             {g.items.map((div) => {
               const active = div.code === selectedCode;
               const flagUrl = subdivisionFlagUrl(div.code);
@@ -200,12 +270,21 @@ export function SubdivisionFlagGrid({
         </div>
   ));
 
+  const leadingGroupFlags = orphanGroupFlags.length > 0 && (
+    <div className="flag-grid__group">
+      <ul className="flag-grid__list">
+        {orphanGroupFlags.map((gf) => renderGroupFlagCard(gf))}
+      </ul>
+    </div>
+  );
+
   if (embedded) {
     return (
       <>
         <div className="flag-grid__controls flag-grid__controls--tab">
           {groupSelect}
         </div>
+        {leadingGroupFlags}
         {body}
       </>
     );
@@ -220,6 +299,7 @@ export function SubdivisionFlagGrid({
         </h2>
         {groupSelect}
       </header>
+      {leadingGroupFlags}
       {body}
     </section>
   );

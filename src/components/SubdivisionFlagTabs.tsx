@@ -213,6 +213,9 @@ export function SubdivisionFlagTabs({
             countryCode={countryCode}
             selectedCode={capitalActive ? null : selectedCode}
             onSelect={onSelectSubdivision}
+            baseUrl={baseUrl}
+            selectedNationalFlagId={selectedNationalFlagId}
+            onSelectGroupFlag={onSelectGroupFlag}
           />
         )}
         {activeTab === "city" && (
