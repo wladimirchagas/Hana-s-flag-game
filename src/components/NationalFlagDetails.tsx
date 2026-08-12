@@ -1,5 +1,6 @@
 import { FlagMeaning } from "./FlagMeaning";
 import { NATIONAL_FLAG_MEANINGS, NATIONAL_INDEPENDENCE, type NationalFlag } from "../data/nationalFlags";
+import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
 import { flagYearLabel, meaningLabel, symbolNoun } from "../lib/nationalFlags";
 
 /**
@@ -28,12 +29,20 @@ export function NationalFlagDetails({
   countryName,
   baseUrl,
   onEnlarge,
+  meanings,
 }: {
   flag: NationalFlag;
   countryCode: string;
   countryName: string;
   baseUrl: string;
   onEnlarge: (url: string) => void;
+  /**
+   * Which curated meaning set to look `flag.id` up in. Defaults to
+   * `NATIONAL_FLAG_MEANINGS` for every national symbol; a subdivision-group flag
+   * (Malaysia's Federal Territories) whose sourced meaning lives outside that map
+   * passes a one-entry override so its explainer still renders.
+   */
+  meanings?: Record<string, FlagMeaningData>;
 }) {
   const url = flag.path ? `${baseUrl}${flag.path}` : null;
   const years = flagYearLabel(flag);
@@ -137,7 +146,7 @@ export function NationalFlagDetails({
         <p className="learn-fs__flag-design">{flag.design}</p>
         <FlagMeaning
           code={flag.id}
-          meanings={NATIONAL_FLAG_MEANINGS}
+          meanings={meanings ?? NATIONAL_FLAG_MEANINGS}
           label={meaningLabel(flag.category)}
         />
       </div>

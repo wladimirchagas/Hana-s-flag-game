@@ -2,7 +2,9 @@ import { useMemo } from "react";
 import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_CAPITAL_FLAGS } from "../data/nationalCapitalFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
-import { useHierarchyData, type HierarchyLeaf } from "../lib/hierarchyData";
+import { useHierarchyData, pluralizeType, type HierarchyLeaf } from "../lib/hierarchyData";
+import type { NationalFlag } from "../data/nationalFlags";
+import type { FlagMeaning } from "../data/flagMeanings";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -156,7 +158,14 @@ type Row =
       capitalLeaf: HierarchyLeaf | null;
     }
   | { kind: "national-extra"; key: string; leaf: HierarchyLeaf }
-  | { kind: "national-standalone"; key: string; name: string; note: string | null };
+  | { kind: "national-standalone"; key: string; name: string; note: string | null }
+  | {
+      kind: "group-flag";
+      key: string;
+      typeLabel: string;
+      flag: NationalFlag;
+      meaning: FlagMeaning | null;
+    };
 
 type Props = {
   divisions: SubdivisionMeta[];
@@ -171,6 +180,10 @@ type Props = {
   onSelectSubdivision: (code: string) => void;
   onSelectCapital: (code: string) => void;
   onSelectNationalCapital: (cap: { name: string; note: string | null; flagPath: string | null }) => void;
+  /** id of the flag whose widget is open (if any) — highlights a selected group flag. */
+  selectedNationalFlagId?: string | null;
+  /** A collective group flag (Malaysia's Federal Territories) — opens its own widget. */
+  onSelectGroupFlag: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
 };
 
 function FlagCell({
@@ -273,6 +286,8 @@ export function SubdivisionHierarchyTable({
   onSelectSubdivision,
   onSelectCapital,
   onSelectNationalCapital,
+  selectedNationalFlagId,
+  onSelectGroupFlag,
 }: Props) {
   const { nodes, standaloneCaps, groups } = useHierarchyData(divisions, countryCode);
 
@@ -295,6 +310,18 @@ export function SubdivisionHierarchyTable({
 
   const rows: Row[] = [];
   for (const g of groups) {
+    // A collective flag flown for the WHOLE group together (Malaysia's Flag of
+    // the Federal Territories) — a single row directly ABOVE this group's member
+    // rows, so it reads as their shared parent flag.
+    if (g.groupFlag) {
+      rows.push({
+        kind: "group-flag",
+        key: `group-flag:${g.typeLabel}`,
+        typeLabel: g.typeLabel,
+        flag: g.groupFlag.flag,
+        meaning: g.groupFlag.meaning ?? null,
+      });
+    }
     for (const node of g.items) {
       const capitalLeaf = node.leaves.find((l) => l.kind === "sub") ?? null;
       rows.push({
@@ -513,6 +540,28 @@ export function SubdivisionHierarchyTable({
                   gridColumn={3}
                   gridRow={gridRow}
                 />
+              </div>
+            );
+          }
+          if (row.kind === "group-flag") {
+            const { flag, meaning, typeLabel } = row;
+            const active = flag.id === selectedNationalFlagId;
+            const typeColor = typeColorByLabel.get(typeLabel) ?? TYPE_COLOR_PALETTE[0];
+            return (
+              <div className="hierarchy-table__row" role="row" key={row.key}>
+                <FlagCell
+                  flagPath={flag.path ? `${baseUrl}${flag.path}` : null}
+                  name={flag.name}
+                  badges={[{ text: `${pluralizeType(typeLabel)} together`, color: typeColor }]}
+                  active={active}
+                  onClick={() => onSelectGroupFlag(flag, meaning)}
+                  ariaLabel={`Select ${flag.name}, flown for the ${pluralizeType(typeLabel)} together`}
+                  gridColumn={2}
+                  gridRow={gridRow}
+                />
+                <div className="hierarchy-table__cellwrap" role="cell" style={{ gridColumn: 3, gridRow }}>
+                  <span className="hierarchy-table__empty" aria-hidden="true">—</span>
+                </div>
               </div>
             );
           }

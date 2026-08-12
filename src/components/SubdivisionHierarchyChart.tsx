@@ -2,6 +2,8 @@ import { AutoFitName } from "./AutoFitName";
 import { NATIONAL_CAPITAL_FLAGS } from "../data/nationalCapitalFlags";
 import { normalizeForSearch } from "../lib/searchNormalize";
 import { useHierarchyData, pluralizeType } from "../lib/hierarchyData";
+import type { NationalFlag } from "../data/nationalFlags";
+import type { FlagMeaning } from "../data/flagMeanings";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -74,6 +76,12 @@ type Props = {
   /** A national capital that heads no subdivision (Ottawa, Pretoria …) — selecting
    *  it populates its own panel in the widget above. */
   onSelectNationalCapital: (cap: { name: string; note: string | null; flagPath: string | null }) => void;
+  /** id of the flag whose widget is open (if any) — used to highlight a selected
+   *  group flag (e.g. the Flag of the Federal Territories). */
+  selectedNationalFlagId?: string | null;
+  /** A collective group flag (Malaysia's Federal Territories) — opens its own
+   *  widget with its sourced meaning, like a national symbol. */
+  onSelectGroupFlag: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
 };
 
 export function SubdivisionHierarchyChart({
@@ -89,6 +97,8 @@ export function SubdivisionHierarchyChart({
   onSelectSubdivision,
   onSelectCapital,
   onSelectNationalCapital,
+  selectedNationalFlagId,
+  onSelectGroupFlag,
 }: Props) {
   const { nodes, standaloneCaps, groups } = useHierarchyData(divisions, countryCode);
 
@@ -185,10 +195,46 @@ export function SubdivisionHierarchyChart({
           )}
           {groups.map((g) => (
             <div key={g.typeLabel} className="hierarchy__group" role="group" aria-label={pluralizeType(g.typeLabel)}>
-              <div className="hierarchy__group-label">
-                <span className="hierarchy__group-type">{pluralizeType(g.typeLabel)}</span>
-                <span className="hierarchy__group-count">{g.items.length}</span>
-              </div>
+              {g.groupFlag ? (
+                // A collective flag for the WHOLE group (Malaysia's Flag of the
+                // Federal Territories) — shown ON the group label so it reads as
+                // the parent of the subdivision cards laddering up to it below.
+                (() => {
+                  const gf = g.groupFlag;
+                  const active = gf.flag.id === selectedNationalFlagId;
+                  return (
+                    <button
+                      type="button"
+                      className={`hierarchy__group-label hierarchy__group-label--flag${active ? " hierarchy__group-label--active" : ""}`}
+                      onClick={() => onSelectGroupFlag(gf.flag, gf.meaning ?? null)}
+                      aria-pressed={active}
+                      aria-label={`Select ${gf.flag.name}, flown for the ${pluralizeType(g.typeLabel)} together`}
+                    >
+                      <span className="hierarchy__group-flag-thumb">
+                        {gf.flag.path ? (
+                          <img
+                            src={`${baseUrl}${gf.flag.path}`}
+                            alt=""
+                            loading="lazy"
+                            draggable={false}
+                            className="hierarchy__group-flag-img"
+                            onError={(e) => { e.currentTarget.style.display = "none"; }}
+                          />
+                        ) : (
+                          <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
+                        )}
+                      </span>
+                      <span className="hierarchy__group-type">{pluralizeType(g.typeLabel)}</span>
+                      <span className="hierarchy__group-count">{g.items.length}</span>
+                    </button>
+                  );
+                })()
+              ) : (
+                <div className="hierarchy__group-label">
+                  <span className="hierarchy__group-type">{pluralizeType(g.typeLabel)}</span>
+                  <span className="hierarchy__group-count">{g.items.length}</span>
+                </div>
+              )}
 
               <div className="hierarchy__subrow">
                 {g.items.map(({ div, subFlag, subCapitalRole, leaves }) => {
