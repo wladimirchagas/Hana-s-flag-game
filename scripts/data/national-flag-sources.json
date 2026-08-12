@@ -12972,6 +12972,17 @@
           },
           "sha256": "2b8d21103887910eb26f3dc4e59f5b0351b14b6ebf885e37c400bb49297da490",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mx-president",
+          "category": "standard",
+          "name": "Presidential Standard of Mexico",
+          "commons": "Mexican Presidential Standard.svg",
+          "file": "mx/mx-president.svg",
+          "design": "The national tricolour bearing the coat of arms in gold beneath the arced legend Estados Unidos Mexicanos, flown to mark the presence of the President of Mexico.",
+          "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
+          "sha256": "bbaa99a7e34d7762ca1f13543eb6afebb472425ecc777a452f465e64f5cbacf6",
+          "fetched": "2026-08-12"
         }
       ]
     },
