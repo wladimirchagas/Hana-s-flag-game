@@ -518,6 +518,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "de-navy", category: "military", name: "Naval ensign of Germany", from: 1956, to: 9999, path: "national-flags/de/germany-navy.svg", design: "A swallowtailed version of the federal state flag, worn as ensign and jack by the German Navy.", source: "https://en.wikipedia.org/wiki/List_of_German_flags" },
     { id: "de-president", category: "standard", name: "Standard of the President of Germany", from: 1921, to: 9999, path: "national-flags/de/germany-president.svg", design: "A square gold field bearing the black federal eagle within a red border; first used in 1921 and reinstated in 1950.", source: "https://en.wikipedia.org/wiki/List_of_German_flags" },
     { id: "de-state", category: "civilstate", name: "State flag of Germany", from: 1950, to: 9999, path: "national-flags/de/germany-state.svg", design: "The black-red-gold tricolour charged with the federal shield and its eagle — flown by federal authorities, while the plain tricolour is the civil flag.", source: "https://en.wikipedia.org/wiki/List_of_German_flags" },
+    { id: "de-arms", category: "coatofarms", name: "Coat of arms of Germany", from: 1950, to: 9999, path: "national-flags/de/de-arms.svg", design: "The Bundesadler — a black eagle with red beak and claws on a golden field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
   ],
   "DJ": [
     { id: "dj-official-national", category: "official", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag, adopted at independence in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
@@ -742,6 +743,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gr-naval-jack", category: "maritime", name: "Naval jack of Greece", from: 1822, to: 9999, path: "national-flags/gr/greece-naval-jack.svg", design: "A blue field with a white cross throughout — the jack the Hellenic Navy has flown since the war of independence.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
     { id: "gr-president", category: "standard", name: "Flag of the President of Greece", from: 1979, to: 9999, path: "national-flags/gr/greece-president.svg", design: "The national flag charged with the presidential arms.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
     { id: "gr-president-1924", category: "standard", name: "Flag of the President of Greece (1924–1935)", from: 1924, to: 1935, path: "national-flags/gr/greece-president-1924.svg", design: "The presidential flag of the Second Hellenic Republic.", source: "https://en.wikipedia.org/wiki/List_of_Greek_flags" },
+    { id: "gr-arms", category: "coatofarms", name: "Coat of arms of Greece", from: 1975, to: 9999, path: "national-flags/gr/gr-arms.svg", design: "A white cross on a blue shield, framed by two laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
   ],
   "GT": [
     { id: "gt-official-national", category: "official", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
@@ -897,6 +899,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "it-naval-jack", category: "maritime", name: "Naval jack of Italy", path: "national-flags/it/italy-naval-jack.svg", design: "A shield divided into four quarters for the four Maritime Republics: Venice (the lion, top left), Genoa (top right), Amalfi (bottom left) and Pisa, shown by their respective crosses.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
     { id: "it-president", category: "standard", name: "Standard of the President of Italy", from: 2006, to: 9999, path: "national-flags/it/italy-president.svg", design: "A square blue flag bearing the emblem of the Republic within a gold border.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
     { id: "it-pm", category: "standard", name: "Standard of the Prime Minister of Italy", from: 2008, to: 9999, path: "national-flags/it/italy-prime-minister.svg", design: "A rectangular blue flag with the emblem of the Republic.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
+    { id: "it-arms", category: "coatofarms", name: "Emblem of Italy", from: 1948, to: 9999, path: "national-flags/it/it-arms.svg", design: "A white five-pointed star over a cogwheel, framed by an olive branch and an oak branch on a red ribbon reading Repubblica Italiana.", source: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
   ],
   "JM": [
     { id: "jm-official-national", category: "official", name: "Flag of Jamaica", from: 1962, to: 9999, primary: true, path: "flags/jm.svg", design: "The national flag of Jamaica, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
@@ -1222,6 +1225,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mx-1823", category: "historical", name: "Flag of Mexico (1823–1893)", from: 1823, to: 1893, path: "national-flags/mx/mexico-1823.svg", design: "The republican tricolour with the eagle on a nopal, interrupted by the Second Mexican Empire between 1864 and 1867.", source: "https://en.wikipedia.org/wiki/List_of_Mexican_flags" },
     { id: "mx-1821-empire", category: "historical", name: "Flag of the First Mexican Empire", from: 1821, to: 1823, path: "national-flags/mx/mexico-1821-empire.svg", design: "The tricolour with the crowned eagle of Agustín de Iturbide’s empire.", source: "https://en.wikipedia.org/wiki/List_of_Mexican_flags" },
     { id: "mx-three-guarantees", category: "historical", name: "Flag of the Three Guarantees", from: 1821, to: 1821, path: "national-flags/mx/mexico-three-guarantees.svg", design: "The flag of the Army of the Three Guarantees, decreed by Agustín de Iturbide in November 1821 — the first flag of independent Mexico.", source: "https://en.wikipedia.org/wiki/List_of_Mexican_flags" },
+    { id: "mx-arms", category: "coatofarms", name: "Coat of arms of Mexico", from: 1968, to: 9999, path: "national-flags/mx/mx-arms.svg", design: "A golden eagle perched on a nopal cactus, devouring a rattlesnake, framed by oak and laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
   ],
   "MY": [
     { id: "my-official-national", category: "official", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, primary: true, path: "flags/my.svg", design: "The national flag, adopted at the formation of Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
@@ -1449,6 +1453,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pt-naval-jack", category: "maritime", name: "Naval jack of Portugal", path: "national-flags/pt/portugal-naval-jack.svg", design: "A square green-bordered red field charged with the national arms.", source: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
     { id: "pt-president", category: "standard", name: "Flag of the President of Portugal", from: 1911, to: 9999, path: "national-flags/pt/portugal-president.svg", design: "A green field bearing the national arms.", source: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
     { id: "pt-pm", category: "standard", name: "Flag of the Prime Minister of Portugal", from: 1972, to: 9999, path: "national-flags/pt/portugal-prime-minister.svg", design: "As the president’s flag, but on white.", source: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
+    { id: "pt-arms", category: "coatofarms", name: "Coat of arms of Portugal", from: 1911, to: 9999, path: "national-flags/pt/pt-arms.svg", design: "Five blue shields each charged with five silver bezants, within a red border of seven golden castles, over a golden armillary sphere.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
   ],
   "PW": [
     { id: "pw-official-national", category: "official", name: "Flag of Palau", from: 1981, to: 9999, primary: true, path: "flags/pw.svg", design: "The national flag of Palau, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
@@ -1561,6 +1566,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "se-naval-ensign", category: "military", name: "War flag and naval ensign of Sweden", from: 1905, to: 9999, path: "national-flags/se/sweden-naval-ensign.svg", design: "A triple-tailed version of the national flag, flown by the armed forces.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
     { id: "se-royal", category: "standard", name: "Royal standard of Sweden", from: 1905, to: 9999, path: "national-flags/se/sweden-royal-standard.svg", design: "The triple-tailed war flag charged with the greater coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
     { id: "se-royal-1844", category: "standard", name: "Royal standard of Sweden (1844–1905)", from: 1844, to: 1905, path: "national-flags/se/sweden-royal-standard-1844.svg", design: "The royal standard as borne during the union with Norway’s later period.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
+    { id: "se-arms", category: "coatofarms", name: "Greater coat of arms of Sweden", from: 1908, to: 9999, path: "national-flags/se/se-arms.svg", design: "A quartered blue shield of three golden crowns and the crowned Folkung lion, with a Vasa–Bernadotte inescutcheon, borne by two lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sweden" },
   ],
   "SG": [
     { id: "sg-official-national", category: "official", name: "Flag of Singapore", from: 1959, to: 9999, primary: true, path: "flags/sg.svg", design: "The national flag of Singapore, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Singapore" },
@@ -2390,6 +2396,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Czech Republic — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     ],
   },
+  "de-arms": {
+    description: "The Bundesadler, or Federal Eagle, is a single-headed black eagle on gold whose lineage runs back through the Weimar Republic to the eagle of the Holy Roman Empire, a symbol traced to Charlemagne. The Federal Republic readopted the design in 1950. The single head — as opposed to the later double-headed imperial eagle — marks that this is the eagle of a German nation-state, not of the old multinational empire; today it stands for the federal institutions and the unity of the republic.",
+    sources: [
+      { title: "Coat of arms of Germany — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
+    ],
+  },
   "dj-arms": {
     description: "An upright spear stands before a shield, and on either side a hand rises holding a large machete — the two hands for the country's two peoples, the Issa and the Afar. Above, a red star stands for the unity between them, the same star as on the flag. Laurel branches frame the whole.",
     sources: [
@@ -2540,6 +2552,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Equatorial Guinea — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Equatorial_Guinea" },
     ],
   },
+  "gr-arms": {
+    description: "The arms are a heraldic form of the national flag: a white Greek cross on a blue shield, the cross for the Orthodox Christian faith and the Byzantine inheritance that the 1821 revolution invoked. The two laurel branches around it stand for glory and honour. The blue shield with the white cross has been the core of every Greek coat of arms since 1833; the present version was adopted in 1975 with the restoration of the republic.",
+    sources: [
+      { title: "Coat of arms of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
+    ],
+  },
   "gt-arms": {
     description: "A resplendent quetzal — the free-flying national bird, long believed to die in captivity, and so an emblem of liberty and sovereignty — perches on a scroll reading Libertad 15 de Septiembre de 1821, the date of independence. Crossed Remington rifles stand for the readiness to defend the country and crossed swords for justice and honour, all within a wreath of laurel for victory.",
     sources: [
@@ -2634,6 +2652,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "These are the only national arms in the world with FOUR supporters, and each is a specific creature from a specific text: the landvættir, the four guardian spirits of Iceland as Snorri Sturluson describes them in Heimskringla — a bull on the shield's right, a giant on its left, a vulture above the bull and a dragon above the giant, each guarding one quarter of the island. They stand on a block of columnar basalt, the island's own rock. The shield itself repeats the flag. Iceland's arms have changed with its status: a crowned stockfish around 1500, a white falcon from 1903, and the landvættir from 12 February 1919, first for the kingdom under the Danish crown and then for the republic.",
     sources: [
       { title: "Coat of arms of Iceland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
+    ],
+  },
+  "it-arms": {
+    description: "Adopted in 1948, the emblem is built from republican symbols rather than dynastic heraldry. The white Stella d'Italia — the ancient Star of Italy — sits over a steel cogwheel standing for labour, the foundation the Constitution names in its first article (“a democratic republic founded on labour”). The olive branch to the left is peace; the oak branch to the right is strength and dignity (Latin robur means both oak and strength); the red ribbon binding them names the Repubblica Italiana.",
+    sources: [
+      { title: "Emblem of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
     ],
   },
   "jm-arms": {
@@ -2858,6 +2882,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Malawi — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malawi" },
     ],
   },
+  "mx-arms": {
+    description: "The eagle on a nopal cactus devouring a serpent depicts the Aztec founding legend: the Mexica were told to build their capital, Tenochtitlan, where they saw an eagle on a cactus atop a lake — the site of modern Mexico City. In the original telling the eagle was the sun god Huitzilopochtli and the cactus the island of Tenochtitlan; a 16th-century European retelling recast the eagle as good overcoming the serpent. Oak and laurel branches, tied in the national colours, frame the device, which also appears at the centre of the flag.",
+    sources: [
+      { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
+    ],
+  },
   "my-federal-territories": {
     description: "The three territories are governed directly by the federal government rather than by any state, which is why the flag carries Malaysia's own coat of arms rather than a state crest. The three stars below the arms are the three territories themselves — Kuala Lumpur, Labuan and Putrajaya — and stand for their shared mission to be administrative and business centres. Of the colours, yellow carries respect, sovereignty and honour (yellow being the royal colour of the Malay rulers), red carries strength, and blue carries unity, sincerity and harmony. The flag exists because until 2006 the three territories had no flag of their own and flew the flag of Kuala Lumpur between them, which the Minister of Federal Territories judged inappropriate precisely because it did not show that there were three; the Cabinet adopted this design, by a team from Universiti Teknologi MARA, on 26 April 2006. It is flown only when the three are represented collectively — each territory keeps its own flag otherwise.",
     sources: [
@@ -2973,6 +3003,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine" },
     ],
   },
+  "pt-arms": {
+    description: "The five blue shields set in a cross — the quinas — are traditionally read as the Five Wounds of Christ, or the five Moorish kings said to have been defeated at Ourique; the five silver bezants on each recall the monarch's right to mint coin. The red border of seven golden castles, fixed at seven by King Sebastian, stands for strongholds taken from the Moors in the Reconquista. Beneath sits the golden armillary sphere, the navigator's instrument that marks Portugal's Age of Discovery. The same shields and castles appear on the national flag.",
+    sources: [
+      { title: "Coat of arms of Portugal — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
+    ],
+  },
   "pw-arms": {
     description: "Adopted in 1981, the seal is dominated by a bai, the traditional Palauan meeting house that is the seat of community decision-making, standing on sixteen stones. The surrounding words Olbiil Era Kelulau — “the House of Whispered Decisions” — name the national congress, and the date 1981 marks the founding of the Republic. The bai's central place reflects how traditional governance remains at the heart of Palauan identity.",
     sources: [
@@ -3031,6 +3067,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
     sources: [
       { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
+    ],
+  },
+  "se-arms": {
+    description: "The shield quarters Sweden's two oldest devices: the Tre Kronor, three golden crowns on blue that have been the national symbol since the 14th century (their original meaning is uncertain), and the crowned Folkung lion over silver streams. At the centre a small shield carries the dynastic arms of the House of Vasa and the reigning House of Bernadotte. Two crowned lions support the shield, ringed by the insignia of the Order of the Seraphim. The arms were codified in law in 1908, drawing on a design of 1448.",
+    sources: [
+      { title: "Coat of arms of Sweden — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sweden" },
     ],
   },
   "sg-arms": {

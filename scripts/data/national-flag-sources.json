@@ -4835,6 +4835,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_German_flags",
           "sha256": "ebb935441db37abbfd1f6cef0da0c2c0fc91054e98bdd0aa6c2f3c0c7e8052fd",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "de-arms",
+          "category": "coatofarms",
+          "from": 1950,
+          "to": 9999,
+          "name": "Coat of arms of Germany",
+          "commons": "Coat of arms of Germany.svg",
+          "file": "de/de-arms.svg",
+          "design": "The Bundesadler — a black eagle with red beak and claws on a golden field.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany",
+          "meaning": {
+            "description": "The Bundesadler, or Federal Eagle, is a single-headed black eagle on gold whose lineage runs back through the Weimar Republic to the eagle of the Holy Roman Empire, a symbol traced to Charlemagne. The Federal Republic readopted the design in 1950. The single head — as opposed to the later double-headed imperial eagle — marks that this is the eagle of a German nation-state, not of the old multinational empire; today it stands for the federal institutions and the unity of the republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Germany — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany"
+              }
+            ]
+          },
+          "sha256": "3ea7d9cb06dab6f9b29701daed707689c595c8bad3601fc702bb2a9f8737e257",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -7365,6 +7387,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Greek_flags",
           "sha256": "603d971566e79767a1c2eee1f3b47843d8fb3b74fc35bf1ff176fd5da971a4ed",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "gr-arms",
+          "category": "coatofarms",
+          "from": 1975,
+          "to": 9999,
+          "name": "Coat of arms of Greece",
+          "commons": "Coat of arms of Greece.svg",
+          "file": "gr/gr-arms.svg",
+          "design": "A white cross on a blue shield, framed by two laurel branches.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece",
+          "meaning": {
+            "description": "The arms are a heraldic form of the national flag: a white Greek cross on a blue shield, the cross for the Orthodox Christian faith and the Byzantine inheritance that the 1821 revolution invoked. The two laurel branches around it stand for glory and honour. The blue shield with the white cross has been the core of every Greek coat of arms since 1833; the present version was adopted in 1975 with the restoration of the republic.",
+            "sources": [
+              {
+                "title": "Coat of arms of Greece — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece"
+              }
+            ]
+          },
+          "sha256": "b33a3f2a4d1ba39bd4e9b8be6c8581d04df74f89edae537e34114693580b9545",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -9121,6 +9165,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Italian_flags",
           "sha256": "d4545d4089fa9554ad32b1f8023327914bd181b8a8d5e569677a4b946587d300",
           "fetched": "2026-08-11"
+        },
+        {
+          "id": "it-arms",
+          "category": "coatofarms",
+          "from": 1948,
+          "to": 9999,
+          "name": "Emblem of Italy",
+          "commons": "Emblem of Italy.svg",
+          "file": "it/it-arms.svg",
+          "design": "A white five-pointed star over a cogwheel, framed by an olive branch and an oak branch on a red ribbon reading Repubblica Italiana.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Italy",
+          "meaning": {
+            "description": "Adopted in 1948, the emblem is built from republican symbols rather than dynastic heraldry. The white Stella d'Italia — the ancient Star of Italy — sits over a steel cogwheel standing for labour, the foundation the Constitution names in its first article (“a democratic republic founded on labour”). The olive branch to the left is peace; the oak branch to the right is strength and dignity (Latin robur means both oak and strength); the red ribbon binding them names the Repubblica Italiana.",
+            "sources": [
+              {
+                "title": "Emblem of Italy — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Italy"
+              }
+            ]
+          },
+          "sha256": "da0df764042f3cd7e5f8416a16110cb2260a5a2647225c852c6a11f9d01b620e",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -12708,6 +12774,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Mexican_flags",
           "sha256": "dd6bd401fb1eeb500fd220e3e35c939b9ad9c7116b1041548571ef9abc784a6f",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "mx-arms",
+          "category": "coatofarms",
+          "from": 1968,
+          "to": 9999,
+          "name": "Coat of arms of Mexico",
+          "commons": "Coat of arms of Mexico.svg",
+          "file": "mx/mx-arms.svg",
+          "design": "A golden eagle perched on a nopal cactus, devouring a rattlesnake, framed by oak and laurel branches.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico",
+          "meaning": {
+            "description": "The eagle on a nopal cactus devouring a serpent depicts the Aztec founding legend: the Mexica were told to build their capital, Tenochtitlan, where they saw an eagle on a cactus atop a lake — the site of modern Mexico City. In the original telling the eagle was the sun god Huitzilopochtli and the cactus the island of Tenochtitlan; a 16th-century European retelling recast the eagle as good overcoming the serpent. Oak and laurel branches, tied in the national colours, frame the device, which also appears at the centre of the flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Mexico — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico"
+              }
+            ]
+          },
+          "sha256": "2b8d21103887910eb26f3dc4e59f5b0351b14b6ebf885e37c400bb49297da490",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -15290,6 +15378,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Portuguese_flags",
           "sha256": "197897507c5624b9d9e3f6d62854841b39799aa3f2d0857a870c7fdeccb1a3f0",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "pt-arms",
+          "category": "coatofarms",
+          "from": 1911,
+          "to": 9999,
+          "name": "Coat of arms of Portugal",
+          "commons": "Coat of arms of Portugal.svg",
+          "file": "pt/pt-arms.svg",
+          "design": "Five blue shields each charged with five silver bezants, within a red border of seven golden castles, over a golden armillary sphere.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal",
+          "meaning": {
+            "description": "The five blue shields set in a cross — the quinas — are traditionally read as the Five Wounds of Christ, or the five Moorish kings said to have been defeated at Ourique; the five silver bezants on each recall the monarch's right to mint coin. The red border of seven golden castles, fixed at seven by King Sebastian, stands for strongholds taken from the Moors in the Reconquista. Beneath sits the golden armillary sphere, the navigator's instrument that marks Portugal's Age of Discovery. The same shields and castles appear on the national flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Portugal — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal"
+              }
+            ]
+          },
+          "sha256": "ef93d0af732e8297ca1f0066ac3491135838570a6ddb928b6d1bb62c0ee4c3d5",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -16509,6 +16619,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden",
           "sha256": "77f3e68138115dd716f495500d58c624c5b3ffd133e4a4919213163626962634",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "se-arms",
+          "category": "coatofarms",
+          "from": 1908,
+          "to": 9999,
+          "name": "Greater coat of arms of Sweden",
+          "commons": "Great coat of arms of Sweden.svg",
+          "file": "se/se-arms.svg",
+          "design": "A quartered blue shield of three golden crowns and the crowned Folkung lion, with a Vasa–Bernadotte inescutcheon, borne by two lions.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sweden",
+          "meaning": {
+            "description": "The shield quarters Sweden's two oldest devices: the Tre Kronor, three golden crowns on blue that have been the national symbol since the 14th century (their original meaning is uncertain), and the crowned Folkung lion over silver streams. At the centre a small shield carries the dynastic arms of the House of Vasa and the reigning House of Bernadotte. Two crowned lions support the shield, ringed by the insignia of the Order of the Seraphim. The arms were codified in law in 1908, drawing on a design of 1448.",
+            "sources": [
+              {
+                "title": "Coat of arms of Sweden — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sweden"
+              }
+            ]
+          },
+          "sha256": "1107fffde7bb49410338762bc69f17e0759252d7a7c4e36412f94102c9b7b310",
+          "fetched": "2026-08-12"
         }
       ]
     },
