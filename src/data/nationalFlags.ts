@@ -962,8 +962,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kh-arms", category: "coatofarms", name: "Royal arms of Cambodia", from: 1953, to: 9999, path: "national-flags/kh/cambodia-arms.svg", design: "A sacred sword on ceremonial trays beneath the Unalome, on a mantle held by a gajasingha and a rajasingha bearing two five-tiered parasols, over the motto Ruler of the Kingdom of Cambodia.", source: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
   ],
   "KI": [
-    { id: "ki-official-national", category: "official", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag of Kiribati, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
-    { id: "ki-current", category: "historical", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag of Kiribati, in the form adopted in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
+    { id: "ki-official-national", category: "official", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "The national flag, adopted at independence in 1979.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
+    { id: "ki-current", category: "historical", name: "Flag of Kiribati", from: 1979, to: 9999, primary: true, path: "flags/ki.svg", design: "A golden frigatebird flying over a rising sun on a red sky, above blue and white waves — the sun's rays for the Gilbert Islands and Banaba, the three wave-bands for the three island groups, the frigatebird for command of the sea and freedom.", source: "https://en.wikipedia.org/wiki/Flag_of_Kiribati" },
+    { id: "ki-uk", category: "historical", name: "Flag of the United Kingdom", from: 1892, to: 1979, sovereign: "the United Kingdom", path: "national-flags/ki/ki-uk.svg", design: "The Union Flag, flown while the islands were the British Gilbert and Ellice Islands colony.", source: "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands" },
+    { id: "ki-arms", category: "coatofarms", name: "Coat of arms of Kiribati", from: 1979, to: 9999, path: "national-flags/ki/ki-arms.svg", design: "A golden frigatebird over a rising sun and waves — the device of the flag.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati" },
   ],
   "KM": [
     { id: "km-official-national", category: "official", name: "Flag of the Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag, adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
@@ -1033,8 +1035,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lc-arms", category: "coatofarms", name: "Coat of arms of Saint Lucia", from: 1967, to: 9999, path: "national-flags/lc/lc-arms.svg", design: "A black shield with a rose, a fleur-de-lys and an African stool, held by two parrots.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
   ],
   "LI": [
-    { id: "li-official-national", category: "official", name: "Flag of Liechtenstein", from: 1921, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag of Liechtenstein, in the form adopted in 1921.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
-    { id: "li-current", category: "historical", name: "Flag of Liechtenstein", from: 1921, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag of Liechtenstein, in the form adopted in 1921.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    { id: "li-official-national", category: "official", name: "Flag of Liechtenstein", from: 1937, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag, in the form adopted in 1937.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    { id: "li-current", category: "historical", name: "Flag of Liechtenstein", from: 1937, to: 9999, primary: true, path: "flags/li.svg", design: "Blue over red with a gold princely crown in the canton — blue for the sky, red for the evening fires of the hearth; the crown was added in 1937 after Liechtenstein discovered at the Berlin Olympics that its flag was identical to Haiti's.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    { id: "li-arms", category: "coatofarms", name: "Coat of arms of Liechtenstein", from: 1957, to: 9999, path: "national-flags/li/li-arms.svg", design: "A quartered princely shield beneath a princely hat, on an ermine mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
   ],
   "LK": [
     { id: "lk-official-national", category: "official", name: "Flag of Sri Lanka", from: 1972, to: 9999, primary: true, path: "flags/lk.svg", design: "The national flag of Sri Lanka, in the form adopted in 1972.", source: "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" },
@@ -1106,8 +1109,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ma-royal", category: "standard", name: "Royal standard of Morocco", from: 1915, to: 9999, path: "national-flags/ma/morocco-royal-standard.svg", design: "A green field bearing the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
   ],
   "MC": [
-    { id: "mc-official-national", category: "official", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag of Monaco, in the form adopted in 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
-    { id: "mc-current", category: "historical", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag of Monaco, in the form adopted in 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
+    { id: "mc-official-national", category: "official", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag, in use since 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
+    { id: "mc-current", category: "historical", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "Red over white — the heraldic colours of the House of Grimaldi, who have ruled Monaco since 1297.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
+    { id: "mc-arms", category: "coatofarms", name: "Coat of arms of Monaco", from: 1881, to: 9999, path: "national-flags/mc/mc-arms.svg", design: "A lozenged shield held by two sword-bearing friars, beneath a princely crown and mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
   ],
   "MD": [
     { id: "md-official-national", category: "official", name: "Flag of Moldova", from: 1990, to: 9999, primary: true, path: "flags/md.svg", design: "The national flag of Moldova, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
@@ -1586,8 +1590,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sl-arms", category: "coatofarms", name: "Coat of arms of Sierra Leone", from: 1960, to: 9999, path: "national-flags/sl/sl-arms.svg", design: "A green shield with a lion beneath a zigzag chief and three torches, supported by two lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
   ],
   "SM": [
-    { id: "sm-official-national", category: "official", name: "Flag of San Marino", from: 2011, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag of San Marino, in the form adopted in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
-    { id: "sm-current", category: "historical", name: "Flag of San Marino", from: 2011, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag of San Marino, in the form adopted in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+    { id: "sm-official-national", category: "official", name: "Flag of San Marino", from: 1862, to: 9999, primary: true, path: "flags/sm.svg", design: "The national flag, in use since 1862.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+    { id: "sm-current", category: "historical", name: "Flag of San Marino", from: 1862, to: 9999, primary: true, path: "flags/sm.svg", design: "White over light blue with the national arms at the centre — white for the snows of Monte Titano and for peace, blue for the sky and for liberty.", source: "https://en.wikipedia.org/wiki/Flag_of_San_Marino" },
+    { id: "sm-arms", category: "coatofarms", name: "Coat of arms of San Marino", from: 1862, to: 9999, path: "national-flags/sm/sm-arms.svg", design: "Three feathered towers on three peaks beneath a crown, in a wreath, over the word LIBERTAS.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino" },
   ],
   "SN": [
     { id: "sn-official-national", category: "official", name: "Flag of Senegal", from: 1960, to: 9999, primary: true, path: "flags/sn.svg", design: "The national flag of Senegal, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Senegal" },
@@ -1612,8 +1617,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sr-arms", category: "coatofarms", name: "Coat of arms of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-arms.svg", design: "A shield of a sailing ship and a royal palm with a diamond and a green star, held by two indigenous figures, over the motto Justitia, Pietas, Fides.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
   ],
   "SS": [
-    { id: "ss-official-national", category: "official", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag of South Sudan, in the form adopted in 2005.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
-    { id: "ss-current", category: "historical", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag of South Sudan, in the form adopted in 2005.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
+    { id: "ss-official-national", category: "official", name: "Flag of South Sudan", from: 2011, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag, adopted in 2005 and kept at independence in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
+    { id: "ss-current", category: "historical", name: "Flag of South Sudan", from: 2005, to: 9999, primary: true, path: "flags/ss.svg", design: "Black, red and green bands separated by white, with a blue hoist triangle bearing a gold star — the flag of the SPLM adopted in 2005: black for the people, red for the blood of the struggle, green for the land, blue for the Nile, the star of Bethlehem for unity.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },
+    { id: "ss-sudan", category: "historical", name: "Flag of Sudan", from: 1970, to: 2011, sovereign: "Sudan", path: "national-flags/ss/ss-sudan.svg", design: "The flag of Sudan, which governed the south from Khartoum until the 2011 secession.", source: "https://en.wikipedia.org/wiki/Sudan" },
+    { id: "ss-arms", category: "coatofarms", name: "Coat of arms of South Sudan", from: 2011, to: 9999, path: "national-flags/ss/ss-arms.svg", design: "An African fish eagle with the national shield and spears.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan" },
   ],
   "ST": [
     { id: "st-official-national", category: "official", name: "Flag of São Tomé and Príncipe", from: 1975, to: 9999, primary: true, path: "flags/st.svg", design: "The national flag, adopted at independence in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe" },
@@ -2013,6 +2020,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "JO": { year: 1946, event: "Jordan became independent from the United Kingdom on 25 May 1946, ending the British mandate over Transjordan", source: "https://en.wikipedia.org/wiki/History_of_Jordan" },
   "KE": { year: 1963, event: "Independence from the United Kingdom, 12 December 1963", source: "https://en.wikipedia.org/wiki/History_of_Kenya" },
   "KH": { year: 1953, event: "Independence from France, 9 November 1953", note: "Cambodia had been a French protectorate since 1863.", source: "https://en.wikipedia.org/wiki/History_of_Cambodia" },
+  "KI": { year: 1979, event: "Kiribati became independent from the United Kingdom on 12 July 1979, ending the Gilbert Islands colony", source: "https://en.wikipedia.org/wiki/History_of_Kiribati" },
   "KM": { year: 1975, event: "The Comoros declared independence from France on 6 July 1975", source: "https://en.wikipedia.org/wiki/History_of_the_Comoros" },
   "KN": { year: 1983, event: "Saint Kitts and Nevis became independent from the United Kingdom on 19 September 1983", source: "https://en.wikipedia.org/wiki/History_of_Saint_Kitts_and_Nevis" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
@@ -2056,6 +2064,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "SN": { year: 1960, event: "Senegal became independent in 1960, first within the Mali Federation (20 June) and then as a separate republic on 20 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Senegal" },
   "SO": { year: 1960, event: "Somalia became independent on 1 July 1960, uniting the former British Somaliland and the Italian Trust Territory of Somalia", source: "https://en.wikipedia.org/wiki/History_of_Somalia" },
   "SR": { year: 1975, event: "Independence from the Netherlands, 25 November 1975", source: "https://en.wikipedia.org/wiki/History_of_Suriname" },
+  "SS": { year: 2011, event: "South Sudan became independent from Sudan on 9 July 2011 after a referendum", source: "https://en.wikipedia.org/wiki/History_of_South_Sudan" },
   "ST": { year: 1975, event: "São Tomé and Príncipe became independent from Portugal on 12 July 1975", source: "https://en.wikipedia.org/wiki/History_of_São_Tomé_and_Príncipe" },
   "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
   "SZ": { year: 1968, event: "Eswatini (then Swaziland) became independent from the United Kingdom on 6 September 1968", source: "https://en.wikipedia.org/wiki/History_of_Eswatini" },
@@ -2639,6 +2648,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Royal arms of Cambodia — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_arms_of_Cambodia" },
     ],
   },
+  "ki-arms": {
+    description: "A golden frigatebird flies over a rising sun on the wavy sea — the same device the flag carries. The rays of the sun stand for the sixteen Gilbert Islands and Banaba, the three wave-bands for the three island groups (the Gilberts, the Phoenix and the Line Islands), and the frigatebird for command of the sea. The motto, in Gilbertese, reads Te Mauri, Te Raoi ao Te Tabomoa — “Health, Peace and Prosperity.”",
+    sources: [
+      { title: "Coat of arms of Kiribati — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati" },
+    ],
+  },
   "km-arms": {
     description: "A crescent holds four stars — the four islands of the archipelago, the same crescent and stars as on the flag — with a sun rising above and two olive branches curving around. The ring carries the country's name and motto in Arabic and French.",
     sources: [
@@ -2681,6 +2696,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Saint Lucia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Lucia" },
     ],
   },
+  "li-arms": {
+    description: "The quartered shield gathers the arms of the houses and lands the Princely Family of Liechtenstein has held — the Silesian eagle, and the arms of Kuenring, Troppau, East Frisia (Rietberg) and Jägerndorf — around a central shield of gold and red, the colours of the House itself. A princely hat crowns it, on an ermine mantle.",
+    sources: [
+      { title: "Coat of arms of Liechtenstein — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
+    ],
+  },
   "lk-emblem": {
     description: "At the centre is the same gold lion holding a sword that appears on the national flag, ringed by the golden petals of the blue lotus, the national flower. The lion stands on a traditional grain vase sprouting sheaves of rice — the country's staple and its prosperity. The crest above is the Dharmacakra, the wheel of the Buddhist law, for the foremost place Buddhism holds in the country and for just rule; the supporters at either side are the traditional Sinhalese heraldic emblems of the sun and the moon. The present design was created in 1972 under the guidance of Nissanka Wijeyeratne, replacing the 1954 emblem adopted when Ceylon became a dominion.",
     sources: [
@@ -2715,6 +2736,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The arms combine symbols of Latvian statehood with the arms of the historical regions. The golden sun in the blue upper field is freedom: it had been the badge of the Latvian Riflemen units of the Imperial Russian Army in the First World War, drawn with 17 rays for the 17 Latvian-inhabited districts. The three golden stars above the shield are the three historical regions — Vidzeme, Latgale and Kurzeme. Below, the red lion is the lion of the arms of Courland, standing for Courland and Semigallia and appearing there as early as 1565, while the silver griffin is Vidzeme and Latgale. The oak branches at the foot are the national tree.",
     sources: [
       { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
+    ],
+  },
+  "mc-arms": {
+    description: "The shield of red and white lozenges is the arms of the House of Grimaldi, sovereigns of Monaco since 1297, and it is held by two friars brandishing swords. They recall François Grimaldi, who in 1297 seized the fortress of Monaco by disguising himself and his men as Franciscan monks. A princely crown and an ermine mantle surround the arms, and the motto reads Deo Juvante — “With God's Help.”",
+    sources: [
+      { title: "Coat of arms of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
     ],
   },
   "md-arms": {
@@ -2982,6 +3009,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Sierra Leone — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sierra_Leone" },
     ],
   },
+  "sm-arms": {
+    description: "Three towers topped with ostrich feathers stand on the three summits of Monte Titano — the towers Guaita, Cesta and Montale that still guard the old republic. A crown sits above for the state's sovereignty, framed by branches of laurel and oak, and the scroll reads LIBERTAS — “Liberty,” the word San Marino, one of the world's oldest republics, has kept for centuries.",
+    sources: [
+      { title: "Coat of arms of San Marino — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino" },
+    ],
+  },
   "sn-arms": {
     description: "The arms gather devices already used on earlier Senegalese emblems. On the left a golden lion — the lion of the Sudan, the country's totem and the name of its highest honour, the National Order of the Lion — walks above a green wavy band standing for the River Senegal. On the right stands a baobab, the tree native to the country. At the crest is the same five-pointed green star that appears on the national flag: a star of hope, and for the great majority of Senegalese the star of Islam.",
     sources: [
@@ -2998,6 +3031,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted at independence in 1975, the shield is halved. The sailing ship on the left is the country's colonial past as a source of cash crops and its present part in international trade; the royal palm on the right is the rainforest that covers two-thirds of Suriname and its agribusiness. The diamond between them is the mining industry, and the green five-pointed star at the centre stands for the unity of the country's many ethnic groups and for hope. The two supporters are indigenous figures — the arms were redrawn in 1975 specifically to acknowledge the indigenous population — and the scroll beneath reads Justitia, Pietas, Fides: Justice, Piety, Fidelity.",
     sources: [
       { title: "Coat of arms of Suriname — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
+    ],
+  },
+  "ss-arms": {
+    description: "An African fish eagle — for strength, resilience, vision and majesty — spreads its wings above a shield bearing the national flag, crossed by a spear and a spade. The scroll reads “Justice, Liberty, Prosperity,” and above it the name of the Republic of South Sudan.",
+    sources: [
+      { title: "Coat of arms of South Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan" },
     ],
   },
   "st-arms": {

@@ -9853,7 +9853,7 @@
           "to": 9999,
           "name": "Flag of Kiribati",
           "reuse": "flags/ki.svg",
-          "design": "The national flag of Kiribati, in the form adopted in 1979.",
+          "design": "The national flag, adopted at independence in 1979.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kiribati"
         },
         {
@@ -9863,10 +9863,51 @@
           "to": 9999,
           "name": "Flag of Kiribati",
           "reuse": "flags/ki.svg",
-          "design": "The national flag of Kiribati, in the form adopted in 1979.",
+          "design": "A golden frigatebird flying over a rising sun on a red sky, above blue and white waves — the sun's rays for the Gilbert Islands and Banaba, the three wave-bands for the three island groups, the frigatebird for command of the sea and freedom.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kiribati"
+        },
+        {
+          "id": "ki-uk",
+          "category": "historical",
+          "from": 1892,
+          "to": 1979,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "ki/ki-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while the islands were the British Gilbert and Ellice Islands colony.",
+          "source": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "ki-arms",
+          "category": "coatofarms",
+          "from": 1979,
+          "to": 9999,
+          "name": "Coat of arms of Kiribati",
+          "commons": "Coat of arms of Kiribati.svg",
+          "file": "ki/ki-arms.svg",
+          "design": "A golden frigatebird over a rising sun and waves — the device of the flag.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati",
+          "meaning": {
+            "description": "A golden frigatebird flies over a rising sun on the wavy sea — the same device the flag carries. The rays of the sun stand for the sixteen Gilbert Islands and Banaba, the three wave-bands for the three island groups (the Gilberts, the Phoenix and the Line Islands), and the frigatebird for command of the sea. The motto, in Gilbertese, reads Te Mauri, Te Raoi ao Te Tabomoa — “Health, Peace and Prosperity.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Kiribati — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati"
+              }
+            ]
+          },
+          "sha256": "a220acecb3983256026b13016bc66c4b126513125908594e8f7feac94b1146b4",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1979,
+        "event": "Kiribati became independent from the United Kingdom on 12 July 1979, ending the Gilbert Islands colony",
+        "source": "https://en.wikipedia.org/wiki/History_of_Kiribati"
+      }
     },
     "KM": {
       "flags": [
@@ -10585,22 +10626,44 @@
         {
           "id": "li-official-national",
           "category": "official",
-          "from": 1921,
+          "from": 1937,
           "to": 9999,
           "name": "Flag of Liechtenstein",
           "reuse": "flags/li.svg",
-          "design": "The national flag of Liechtenstein, in the form adopted in 1921.",
+          "design": "The national flag, in the form adopted in 1937.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein"
         },
         {
           "id": "li-current",
           "category": "historical",
-          "from": 1921,
+          "from": 1937,
           "to": 9999,
           "name": "Flag of Liechtenstein",
           "reuse": "flags/li.svg",
-          "design": "The national flag of Liechtenstein, in the form adopted in 1921.",
+          "design": "Blue over red with a gold princely crown in the canton — blue for the sky, red for the evening fires of the hearth; the crown was added in 1937 after Liechtenstein discovered at the Berlin Olympics that its flag was identical to Haiti's.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein"
+        },
+        {
+          "id": "li-arms",
+          "category": "coatofarms",
+          "from": 1957,
+          "to": 9999,
+          "name": "Coat of arms of Liechtenstein",
+          "commons": "Coat of arms of Liechtenstein.svg",
+          "file": "li/li-arms.svg",
+          "design": "A quartered princely shield beneath a princely hat, on an ermine mantle.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein",
+          "meaning": {
+            "description": "The quartered shield gathers the arms of the houses and lands the Princely Family of Liechtenstein has held — the Silesian eagle, and the arms of Kuenring, Troppau, East Frisia (Rietberg) and Jägerndorf — around a central shield of gold and red, the colours of the House itself. A princely hat crowns it, on an ermine mantle.",
+            "sources": [
+              {
+                "title": "Coat of arms of Liechtenstein — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein"
+              }
+            ]
+          },
+          "sha256": "aaf2be18a7f7555ffc52eca44fb54a3ba379646d5285339bf4f7a4d805dc82b1",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -11379,7 +11442,7 @@
           "to": 9999,
           "name": "Flag of Monaco",
           "reuse": "flags/mc.svg",
-          "design": "The national flag of Monaco, in the form adopted in 1881.",
+          "design": "The national flag, in use since 1881.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Monaco"
         },
         {
@@ -11389,8 +11452,30 @@
           "to": 9999,
           "name": "Flag of Monaco",
           "reuse": "flags/mc.svg",
-          "design": "The national flag of Monaco, in the form adopted in 1881.",
+          "design": "Red over white — the heraldic colours of the House of Grimaldi, who have ruled Monaco since 1297.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Monaco"
+        },
+        {
+          "id": "mc-arms",
+          "category": "coatofarms",
+          "from": 1881,
+          "to": 9999,
+          "name": "Coat of arms of Monaco",
+          "commons": "Coat of arms of Monaco.svg",
+          "file": "mc/mc-arms.svg",
+          "design": "A lozenged shield held by two sword-bearing friars, beneath a princely crown and mantle.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco",
+          "meaning": {
+            "description": "The shield of red and white lozenges is the arms of the House of Grimaldi, sovereigns of Monaco since 1297, and it is held by two friars brandishing swords. They recall François Grimaldi, who in 1297 seized the fortress of Monaco by disguising himself and his men as Franciscan monks. A princely crown and an ermine mantle surround the arms, and the motto reads Deo Juvante — “With God's Help.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Monaco — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco"
+              }
+            ]
+          },
+          "sha256": "a4873402beeab262edddfc8dc8b1329838602eb942f4c9c3c6b432ab2382eb8a",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -16668,22 +16753,44 @@
         {
           "id": "sm-official-national",
           "category": "official",
-          "from": 2011,
+          "from": 1862,
           "to": 9999,
           "name": "Flag of San Marino",
           "reuse": "flags/sm.svg",
-          "design": "The national flag of San Marino, in the form adopted in 2011.",
+          "design": "The national flag, in use since 1862.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_San_Marino"
         },
         {
           "id": "sm-current",
           "category": "historical",
-          "from": 2011,
+          "from": 1862,
           "to": 9999,
           "name": "Flag of San Marino",
           "reuse": "flags/sm.svg",
-          "design": "The national flag of San Marino, in the form adopted in 2011.",
+          "design": "White over light blue with the national arms at the centre — white for the snows of Monte Titano and for peace, blue for the sky and for liberty.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_San_Marino"
+        },
+        {
+          "id": "sm-arms",
+          "category": "coatofarms",
+          "from": 1862,
+          "to": 9999,
+          "name": "Coat of arms of San Marino",
+          "commons": "Coat of arms of San Marino.svg",
+          "file": "sm/sm-arms.svg",
+          "design": "Three feathered towers on three peaks beneath a crown, in a wreath, over the word LIBERTAS.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino",
+          "meaning": {
+            "description": "Three towers topped with ostrich feathers stand on the three summits of Monte Titano — the towers Guaita, Cesta and Montale that still guard the old republic. A crown sits above for the state's sovereignty, framed by branches of laurel and oak, and the scroll reads LIBERTAS — “Liberty,” the word San Marino, one of the world's oldest republics, has kept for centuries.",
+            "sources": [
+              {
+                "title": "Coat of arms of San Marino — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_San_Marino"
+              }
+            ]
+          },
+          "sha256": "d8074af24b220fd22eecd97b25eee1ae70c7f569d625e8b61d4c9d3c3bd3e84a",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -16938,11 +17045,11 @@
         {
           "id": "ss-official-national",
           "category": "official",
-          "from": 2005,
+          "from": 2011,
           "to": 9999,
           "name": "Flag of South Sudan",
           "reuse": "flags/ss.svg",
-          "design": "The national flag of South Sudan, in the form adopted in 2005.",
+          "design": "The national flag, adopted in 2005 and kept at independence in 2011.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_South_Sudan"
         },
         {
@@ -16952,10 +17059,51 @@
           "to": 9999,
           "name": "Flag of South Sudan",
           "reuse": "flags/ss.svg",
-          "design": "The national flag of South Sudan, in the form adopted in 2005.",
+          "design": "Black, red and green bands separated by white, with a blue hoist triangle bearing a gold star — the flag of the SPLM adopted in 2005: black for the people, red for the blood of the struggle, green for the land, blue for the Nile, the star of Bethlehem for unity.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_South_Sudan"
+        },
+        {
+          "id": "ss-sudan",
+          "category": "historical",
+          "from": 1970,
+          "to": 2011,
+          "name": "Flag of Sudan",
+          "commons": "Flag of Sudan.svg",
+          "file": "ss/ss-sudan.svg",
+          "sovereign": "Sudan",
+          "design": "The flag of Sudan, which governed the south from Khartoum until the 2011 secession.",
+          "source": "https://en.wikipedia.org/wiki/Sudan",
+          "sha256": "1f7504f8d4b352eb1726d81a563212c650a8d316d67c97c6167b96895ffa703d",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "ss-arms",
+          "category": "coatofarms",
+          "from": 2011,
+          "to": 9999,
+          "name": "Coat of arms of South Sudan",
+          "commons": "Coat of arms of South Sudan.svg",
+          "file": "ss/ss-arms.svg",
+          "design": "An African fish eagle with the national shield and spears.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan",
+          "meaning": {
+            "description": "An African fish eagle — for strength, resilience, vision and majesty — spreads its wings above a shield bearing the national flag, crossed by a spear and a spade. The scroll reads “Justice, Liberty, Prosperity,” and above it the name of the Republic of South Sudan.",
+            "sources": [
+              {
+                "title": "Coat of arms of South Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Sudan"
+              }
+            ]
+          },
+          "sha256": "60c717f6f72bf7b98984c756e5fcf8d5a1690f54855c2da1d9a7d603e94fd4f8",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 2011,
+        "event": "South Sudan became independent from Sudan on 9 July 2011 after a referendum",
+        "source": "https://en.wikipedia.org/wiki/History_of_South_Sudan"
+      }
     },
     "ST": {
       "flags": [
