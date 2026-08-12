@@ -407,6 +407,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ca-air-force", category: "military", name: "Royal Canadian Air Force Ensign", from: 1982, to: 9999, path: "national-flags/ca/canada-air-force.svg", design: "An air-force-blue field with the national flag in the canton and the RCAF roundel in the fly.", source: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
     { id: "ca-sovereign", category: "standard", name: "Sovereign's Flag for Canada", from: 2023, to: 9999, path: "national-flags/ca/canada-sovereign.svg", design: "A banner of the arms of Canada, used by the sovereign in Canada.", source: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
     { id: "ca-gg", category: "standard", name: "Flag of the Governor General of Canada", from: 1981, to: 9999, path: "national-flags/ca/canada-governor-general.svg", design: "A blue field bearing the crest of the arms of Canada — a crowned lion holding a maple leaf.", source: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
+    { id: "ca-metis", category: "indigenous", name: "Métis Nation flag", from: 1815, to: 9999, path: "national-flags/ca/ca-metis.svg", design: "A blue field bearing a white horizontal infinity symbol.", source: "https://en.wikipedia.org/wiki/Flag_of_the_M%C3%A9tis" },
     { id: "ca-arms", category: "coatofarms", name: "Arms of Canada", from: 1921, to: 9999, path: "national-flags/ca/ca-arms.svg", design: "A quartered shield of the arms of England, Scotland, Ireland and royal France, above a sprig of red maple leaves; a lion and a unicorn as supporters.", source: "https://en.wikipedia.org/wiki/Arms_of_Canada" },
     { id: "ca-passport", category: "passport", name: "Passport of Canada", path: "national-flags/ca/ca-passport.webp", design: "The cover of the Canada passport.", source: "https://gicg.net/passport/ca/" },
   ],
@@ -464,6 +465,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cl-air-force", category: "military", name: "Flag of the Chilean Air Force", path: "national-flags/cl/chile-air-force.svg", design: "A sky blue field with the air force's coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Chilean_flags" },
     { id: "cl-naval-jack", category: "maritime", name: "Naval jack of Chile", from: 1945, to: 9999, path: "national-flags/cl/chile-naval-jack.svg", design: "A square blue flag with a white star.", source: "https://en.wikipedia.org/wiki/List_of_Chilean_flags" },
     { id: "cl-president", category: "standard", name: "Flag of the President of Chile", from: 1920, to: 9999, path: "national-flags/cl/chile-president.svg", design: "The national flag charged with the Chilean coat of arms; created in 1920 and regulated by law from 1967.", source: "https://en.wikipedia.org/wiki/List_of_Chilean_flags" },
+    { id: "cl-mapuche", category: "indigenous", name: "Mapuche flag (Wenüfoye)", from: 1992, to: 9999, path: "national-flags/cl/cl-mapuche.svg", design: "A blue, green and red field bearing the yellow cultrún drum and a stepped-cross emblem.", source: "https://en.wikipedia.org/wiki/Mapuche_flag" },
     { id: "cl-arms", category: "coatofarms", name: "Coat of arms of Chile", from: 1834, to: 9999, path: "national-flags/cl/chile-arms.svg", design: "A shield party per fess blue over red charged with a white star, supported by an Andean condor and a huemul, crested with three feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Chile" },
     { id: "cl-passport", category: "passport", name: "Passport of Chile", path: "national-flags/cl/cl-passport.webp", design: "The cover of the Chile passport.", source: "https://gicg.net/passport/cl/" },
   ],
@@ -696,6 +698,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fi-president", category: "standard", name: "Flag of the President of Finland", from: 1978, to: 9999, path: "national-flags/fi/finland-president.svg", design: "The war flag charged with the Cross of Liberty in the canton.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
     { id: "fi-regent", category: "standard", name: "Standard of the Regent of Finland", from: 1918, to: 1919, path: "national-flags/fi/finland-regent.svg", design: "The standard of the regent, in the months when Finland was briefly to be a kingdom.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
     { id: "fi-state", category: "civilstate", name: "State flag of Finland", from: 1978, to: 9999, path: "national-flags/fi/finland-state.svg", design: "The blue Nordic cross charged with the national coat of arms — flown by the state, beside the plain civil flag.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Finland" },
+    { id: "fi-sami", category: "indigenous", name: "Sámi flag", from: 1986, to: 9999, path: "national-flags/fi/fi-sami.svg", design: "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.", source: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     { id: "fi-arms", category: "coatofarms", name: "Coat of arms of Finland", from: 1580, to: 9999, path: "national-flags/fi/finland-arms.svg", design: "A crowned lion on red, its right foreleg an armoured arm brandishing a sword, trampling a sabre.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Finland" },
     { id: "fi-passport", category: "passport", name: "Passport of Finland", path: "national-flags/fi/fi-passport.webp", design: "The cover of the Finland passport.", source: "https://gicg.net/passport/fi/" },
   ],
@@ -1457,6 +1460,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "no-naval-jack", category: "maritime", name: "Naval jack of Norway", path: "national-flags/no/norway-naval-jack.svg", design: "The national flag in square proportions.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
     { id: "no-royal", category: "standard", name: "Royal Standard of Norway", from: 1905, to: 9999, path: "national-flags/no/norway-royal-standard.svg", design: "The coat of arms of Norway on a red field.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
     { id: "no-crown-prince", category: "standard", name: "Standard of the Crown Prince of Norway", from: 1924, to: 9999, path: "national-flags/no/norway-crown-prince.svg", design: "The royal standard differenced for the heir.", source: "https://en.wikipedia.org/wiki/List_of_Norwegian_flags" },
+    { id: "no-sami", category: "indigenous", name: "Sámi flag", from: 1986, to: 9999, path: "national-flags/no/no-sami.svg", design: "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.", source: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     { id: "no-arms", category: "coatofarms", name: "Coat of arms of Norway", from: 1937, to: 9999, path: "national-flags/no/norway-arms.svg", design: "A standing golden lion on red, crowned, bearing a silver-bladed axe.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
     { id: "no-passport", category: "passport", name: "Passport of Norway", path: "national-flags/no/no-passport.webp", design: "The cover of the Norway passport.", source: "https://gicg.net/passport/no/" },
   ],
@@ -1486,6 +1490,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nz-united-tribes", category: "historical", name: "Flag of the United Tribes of New Zealand", from: 1834, to: 1840, priorPolity: "the Confederation of the United Tribes of New Zealand", path: "national-flags/nz/new-zealand-united-tribes.svg", design: "A St George’s cross on white, with a second cross and four stars in the canton — chosen by 25 northern chiefs in 1834 so New Zealand-built ships could be registered.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
     { id: "nz-civil-ensign", category: "maritime", name: "Civil ensign of New Zealand (Red Ensign)", from: 1901, to: 9999, path: "national-flags/nz/new-zealand-civil-ensign.svg", design: "A red ensign with four white stars representing the Southern Cross.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
     { id: "nz-royal-1962", category: "standard", name: "Personal Flag of Queen Elizabeth II in New Zealand", from: 1962, to: 2022, path: "national-flags/nz/new-zealand-royal-1962.svg", design: "A banner of the New Zealand shield with the Queen’s personal cypher.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
+    { id: "nz-maori", category: "indigenous", name: "Tino Rangatiratanga (Māori flag)", from: 1990, to: 9999, path: "national-flags/nz/nz-maori.svg", design: "A black upper field and red lower field divided by a white koru.", source: "https://en.wikipedia.org/wiki/Tino_Rangatiratanga_flag" },
     { id: "nz-arms", category: "coatofarms", name: "Coat of arms of New Zealand", from: 1956, to: 9999, path: "national-flags/nz/nz-arms.svg", design: "A shield of the Southern Cross, a fleece, a wheat sheaf, crossed hammers and three ships, borne by a European woman with the flag and a Māori rangatira with a taiaha, crowned by St Edward's Crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand" },
     { id: "nz-passport", category: "passport", name: "Passport of New Zealand", path: "national-flags/nz/nz-passport.webp", design: "The cover of the New Zealand passport.", source: "https://gicg.net/passport/nz/" },
   ],
@@ -1731,6 +1736,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "se-naval-ensign", category: "military", name: "War flag and naval ensign of Sweden", from: 1905, to: 9999, path: "national-flags/se/sweden-naval-ensign.svg", design: "A triple-tailed version of the national flag, flown by the armed forces.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
     { id: "se-royal", category: "standard", name: "Royal standard of Sweden", from: 1905, to: 9999, path: "national-flags/se/sweden-royal-standard.svg", design: "The triple-tailed war flag charged with the greater coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
     { id: "se-royal-1844", category: "standard", name: "Royal standard of Sweden (1844–1905)", from: 1844, to: 1905, path: "national-flags/se/sweden-royal-standard-1844.svg", design: "The royal standard as borne during the union with Norway’s later period.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Sweden" },
+    { id: "se-sami", category: "indigenous", name: "Sámi flag", from: 1986, to: 9999, path: "national-flags/se/se-sami.svg", design: "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.", source: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     { id: "se-arms", category: "coatofarms", name: "Greater coat of arms of Sweden", from: 1908, to: 9999, path: "national-flags/se/se-arms.svg", design: "A quartered blue shield of three golden crowns and the crowned Folkung lion, with a Vasa–Bernadotte inescutcheon, borne by two lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sweden" },
     { id: "se-passport", category: "passport", name: "Passport of Sweden", path: "national-flags/se/se-passport.webp", design: "The cover of the Sweden passport.", source: "https://gicg.net/passport/se/" },
   ],
@@ -2550,6 +2556,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
     ],
   },
+  "ca-metis": {
+    description: "First flown around 1815–1816, the Métis flag is the oldest patriotic flag native to Canada, predating the maple-leaf flag by roughly 150 years. Its white infinity symbol is read two ways: that Métis culture will live on forever, and — as two joined circles — the union of two peoples, European and First Nations, from whom the Métis Nation descends. The blue version was taken up by Métis governments across Western Canada from the 1970s.",
+    sources: [
+      { title: "Flag of the Métis — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_M%C3%A9tis" },
+    ],
+  },
   "ca-arms": {
     description: "The shield quarters the emblems of the peoples who founded the country — the three lions of England, the lion of Scotland, the harp of Ireland and the fleurs-de-lis of royal France — above a distinctly Canadian sprig of maple leaves (drawn green in 1921, red since 1957). The English lion and Scottish unicorn supporters mirror the British royal arms, the unicorn's broken chain standing for resistance to oppression. The Latin motto, A mari usque ad mare — “from sea to sea” — is from Psalm 72. Granted by royal proclamation in 1921.",
     sources: [
@@ -2584,6 +2596,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
     sources: [
       { title: "Coat of arms of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
+    ],
+  },
+  "cl-mapuche": {
+    description: "Adopted in 1992 by the Mapuche of Chile and Argentina, the Wenüfoye centres on the cultrún, the sacred drum, whose circular face carries the Meli Witran Mapu (the four cardinal points) with the sun, moon and stars. Blue is life and the sacred; green the earth, nature and the machi (healer); red strength and history; yellow the renewing sun; white healing and wisdom. The stepped cross (gemil) stands for Mapuche art, knowledge and writing.",
+    sources: [
+      { title: "Mapuche flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Mapuche_flag" },
     ],
   },
   "cl-arms": {
@@ -2710,6 +2728,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1996, the emblem is a golden interlaced pentagram radiating rays of light on a blue disc — the same device that sits at the centre of the national flag. The pentagram stands for the unity and equality of the nations, nationalities and peoples of the Federal Democratic Republic of Ethiopia; the radiating light for their shared prosperity and bright future.",
     sources: [
       { title: "Emblem of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
+    ],
+  },
+  "fi-sami": {
+    description: "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
+    sources: [
+      { title: "Sámi flag — Wikipedia", url: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     ],
   },
   "fi-arms": {
@@ -3198,6 +3222,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of the Netherlands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
     ],
   },
+  "no-sami": {
+    description: "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
+    sources: [
+      { title: "Sámi flag — Wikipedia", url: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
+    ],
+  },
   "no-arms": {
     description: "These are arms of dominion — they stand for the monarch and the kingdom at once. They began in the 13th century as the arms of the Sverre dynasty, a plain golden lion on red; the silver axe was added late in that century, and it is not a weapon but a relic: it is the axe of Olav II, Saint Olav, the Rex Perpetuus Norvegiae, the eternal king of Norway. The lion carried Norway on coins and seals through the union with Denmark (1523–1814) and the personal union with Sweden. After the 1905 dissolution Eilif Peterssen drew a medieval-style escutcheon, and the state archivist Hallvard Trætteberg redrew it far more simply in 1937 — the form still in use.",
     sources: [
@@ -3214,6 +3244,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A frigatebird perches over the blue ocean, and the top of the shield carries the alchemical sign for phosphorus — the phosphate rock on which the island's wealth was built. A twelve-pointed star, as on the flag, sits above, framed by palm fronds, frigatebird feathers and shark teeth. The scroll reads “God's Will First.”",
     sources: [
       { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
+    ],
+  },
+  "nz-maori": {
+    description: "Designed by Hiraina Marsden in 1990 and recognised in 2009 as the national Māori flag, its colours follow the Māori creation account: black for Te Korekore, the realm of potential being; red for Te Whai Ao, the coming into being; and white for Te Ao Mārama, the world of light. The white koru — an unfurling fern frond — stands for renewal and hope, and the white also evokes Aotearoa, the “land of the long white cloud.”",
+    sources: [
+      { title: "Tino Rangatiratanga flag — Wikipedia", url: "https://en.wikipedia.org/wiki/Tino_Rangatiratanga_flag" },
     ],
   },
   "nz-arms": {
@@ -3340,6 +3376,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1985, the emblem is built on a secretary bird — chosen as a distinctively Sudanese, indigenous counterpart to the Eagle of Saladin and Hawk of Quraish borne by other Arab states. On its breast is the shield of Muhammad Ahmad, the 19th-century Mahdi who briefly ruled Sudan. The upper scroll reads an-Naṣr lanā, “Victory is ours,” and the lower names the Republic of the Sudan.",
     sources: [
       { title: "Emblem of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sudan" },
+    ],
+  },
+  "se-sami": {
+    description: "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
+    sources: [
+      { title: "Sámi flag — Wikipedia", url: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     ],
   },
   "se-arms": {
