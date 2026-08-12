@@ -3732,6 +3732,28 @@
           "source": "https://gicg.net/passport/ca/",
           "sha256": "833f5760d59fa4672a8449c18bf26a9b89960d254c4cc8f7118c7993e5f217d7",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ca-metis",
+          "category": "indigenous",
+          "from": 1815,
+          "to": 9999,
+          "name": "Métis Nation flag",
+          "commons": "Metis Blue.svg",
+          "file": "ca/ca-metis.svg",
+          "design": "A blue field bearing a white horizontal infinity symbol.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_M%C3%A9tis",
+          "meaning": {
+            "description": "First flown around 1815–1816, the Métis flag is the oldest patriotic flag native to Canada, predating the maple-leaf flag by roughly 150 years. Its white infinity symbol is read two ways: that Métis culture will live on forever, and — as two joined circles — the union of two peoples, European and First Nations, from whom the Métis Nation descends. The blue version was taken up by Métis governments across Western Canada from the 1970s.",
+            "sources": [
+              {
+                "title": "Flag of the Métis — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_M%C3%A9tis"
+              }
+            ]
+          },
+          "sha256": "a2a6fe50a8a4b3ade4e02fdcb4e42d75e5d5c5919695b5d022e587cf25e607df",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -4381,6 +4403,28 @@
           "design": "The cover of the Chile passport.",
           "source": "https://gicg.net/passport/cl/",
           "sha256": "4fc9776996f4b6134ba55bdc0a6dcfe47026a986ebf2e5e531e82144e2e50601",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "cl-mapuche",
+          "category": "indigenous",
+          "from": 1992,
+          "to": 9999,
+          "name": "Mapuche flag (Wenüfoye)",
+          "commons": "Flag of the Mapuches (1992).svg",
+          "file": "cl/cl-mapuche.svg",
+          "design": "A blue, green and red field bearing the yellow cultrún drum and a stepped-cross emblem.",
+          "source": "https://en.wikipedia.org/wiki/Mapuche_flag",
+          "meaning": {
+            "description": "Adopted in 1992 by the Mapuche of Chile and Argentina, the Wenüfoye centres on the cultrún, the sacred drum, whose circular face carries the Meli Witran Mapu (the four cardinal points) with the sun, moon and stars. Blue is life and the sacred; green the earth, nature and the machi (healer); red strength and history; yellow the renewing sun; white healing and wisdom. The stepped cross (gemil) stands for Mapuche art, knowledge and writing.",
+            "sources": [
+              {
+                "title": "Mapuche flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Mapuche_flag"
+              }
+            ]
+          },
+          "sha256": "ae701cd0acbf332cd6197d5bd26e90bb6e915eec7c3dc592ea22351a79a752c2",
           "fetched": "2026-08-12"
         }
       ],
@@ -7040,6 +7084,28 @@
           "design": "The cover of the Finland passport.",
           "source": "https://gicg.net/passport/fi/",
           "sha256": "171cf060467fe7b527e8623b8ae89128373b55ad1ca4846a51136b1ed66b9f5a",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "fi-sami",
+          "category": "indigenous",
+          "from": 1986,
+          "to": 9999,
+          "name": "Sámi flag",
+          "commons": "Sami flag.svg",
+          "file": "fi/fi-sami.svg",
+          "design": "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.",
+          "source": "https://en.wikipedia.org/wiki/S%C3%A1mi_flag",
+          "meaning": {
+            "description": "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
+            "sources": [
+              {
+                "title": "Sámi flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/S%C3%A1mi_flag"
+              }
+            ]
+          },
+          "sha256": "5c3e16b6a6af76e26285a086cc9841b81d68a1e2a6eb1043c16af55b7b76efb2",
           "fetched": "2026-08-12"
         }
       ]
@@ -15808,6 +15874,28 @@
           "source": "https://gicg.net/passport/no/",
           "sha256": "0c26674b02251acfd3299124f68cc7b7ba00e107afc03301f852f864ed046268",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "no-sami",
+          "category": "indigenous",
+          "from": 1986,
+          "to": 9999,
+          "name": "Sámi flag",
+          "commons": "Sami flag.svg",
+          "file": "no/no-sami.svg",
+          "design": "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.",
+          "source": "https://en.wikipedia.org/wiki/S%C3%A1mi_flag",
+          "meaning": {
+            "description": "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
+            "sources": [
+              {
+                "title": "Sámi flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/S%C3%A1mi_flag"
+              }
+            ]
+          },
+          "sha256": "5c3e16b6a6af76e26285a086cc9841b81d68a1e2a6eb1043c16af55b7b76efb2",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -16134,6 +16222,28 @@
           "design": "The cover of the New Zealand passport.",
           "source": "https://gicg.net/passport/nz/",
           "sha256": "b5afa466fc286bb85f8fc02340d3d176d5c90325534617818931a7e1f75fc102",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "nz-maori",
+          "category": "indigenous",
+          "from": 1990,
+          "to": 9999,
+          "name": "Tino Rangatiratanga (Māori flag)",
+          "commons": "Tino Rangatiratanga Maori sovereignty movement flag.svg",
+          "file": "nz/nz-maori.svg",
+          "design": "A black upper field and red lower field divided by a white koru.",
+          "source": "https://en.wikipedia.org/wiki/Tino_Rangatiratanga_flag",
+          "meaning": {
+            "description": "Designed by Hiraina Marsden in 1990 and recognised in 2009 as the national Māori flag, its colours follow the Māori creation account: black for Te Korekore, the realm of potential being; red for Te Whai Ao, the coming into being; and white for Te Ao Mārama, the world of light. The white koru — an unfurling fern frond — stands for renewal and hope, and the white also evokes Aotearoa, the “land of the long white cloud.”",
+            "sources": [
+              {
+                "title": "Tino Rangatiratanga flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Tino_Rangatiratanga_flag"
+              }
+            ]
+          },
+          "sha256": "2c000f438953e7cd6b2cb75844300d04fd70f533f9ecc11559cd245af35a52dd",
           "fetched": "2026-08-12"
         }
       ],
@@ -18933,6 +19043,28 @@
           "design": "The cover of the Sweden passport.",
           "source": "https://gicg.net/passport/se/",
           "sha256": "45ed863e90ca661b528100688681a740ec4db11099ab5a2a8629375ff098e0cf",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "se-sami",
+          "category": "indigenous",
+          "from": 1986,
+          "to": 9999,
+          "name": "Sámi flag",
+          "commons": "Sami flag.svg",
+          "file": "se/se-sami.svg",
+          "design": "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.",
+          "source": "https://en.wikipedia.org/wiki/S%C3%A1mi_flag",
+          "meaning": {
+            "description": "Adopted in 1986 as the flag of the Sámi people across northern Norway, Sweden, Finland and Russia, its four colours — red, green, yellow and blue — are the Sámi national colours, drawn from traditional gákti dress. The off-centre circle is a sun-and-moon symbol taken from the drums of Sámi shamans: red for the sun, blue for the moon, reflecting the Sámi self-identity as “sons and daughters of the sun.”",
+            "sources": [
+              {
+                "title": "Sámi flag — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/S%C3%A1mi_flag"
+              }
+            ]
+          },
+          "sha256": "5c3e16b6a6af76e26285a086cc9841b81d68a1e2a6eb1043c16af55b7b76efb2",
           "fetched": "2026-08-12"
         }
       ]
