@@ -3464,6 +3464,28 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo",
           "sha256": "8144ab6937ca36a6056830441b90de01ce5d91df901bd28672205164e0ac784f",
           "fetched": "2026-08-11"
+        },
+        {
+          "id": "cd-arms",
+          "category": "coatofarms",
+          "from": 2006,
+          "to": 9999,
+          "name": "Coat of arms of the Democratic Republic of the Congo",
+          "commons": "Coat of arms of the Democratic Republic of the Congo (grey spear).svg",
+          "file": "cd/cd-arms.svg",
+          "design": "A leopard's head flanked by an elephant tusk and a spear, over the motto “Justice – Paix – Travail.”",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo",
+          "meaning": {
+            "description": "Adopted by decree in 2006 and set in the 2005 constitution, the emblem places a leopard's head between an elephant tusk and a spear — traditional African emblems of the land and its people — above the national motto Justice, Paix, Travail (“Justice, Peace, Work”). It replaced a 2003 design of three interlocked hands.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Democratic Republic of the Congo — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo"
+              }
+            ]
+          },
+          "sha256": "6b44f515775b2002691b2f9706b03df03523a9e9449b600837a040adf2ef19af",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -6158,6 +6180,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags",
           "sha256": "779fabb0acad46accfa4b4f950bb4c1ce41f507b170366bac1efb1f11a8bc6fb",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "et-arms",
+          "category": "coatofarms",
+          "from": 1996,
+          "to": 9999,
+          "name": "Emblem of Ethiopia",
+          "commons": "Emblem of Ethiopia.svg",
+          "file": "et/et-arms.svg",
+          "design": "A golden interlaced pentagram radiating rays of light on a blue disc.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia",
+          "meaning": {
+            "description": "Adopted in 1996, the emblem is a golden interlaced pentagram radiating rays of light on a blue disc — the same device that sits at the centre of the national flag. The pentagram stands for the unity and equality of the nations, nationalities and peoples of the Federal Democratic Republic of Ethiopia; the radiating light for their shared prosperity and bright future.",
+            "sources": [
+              {
+                "title": "Emblem of Ethiopia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia"
+              }
+            ]
+          },
+          "sha256": "8aa7d61be957dfd3a4d3dcbe0fc583d76ff0ca5068039d61bb3d651a6740063e",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -11701,6 +11745,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Moroccan_flags",
           "sha256": "c0a6a4bb88b98b1add7f17c3a6e9d1c177a13b84fe762ff984acaa20a742e51d",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "ma-arms",
+          "category": "coatofarms",
+          "from": 1957,
+          "to": 9999,
+          "name": "Coat of arms of Morocco",
+          "commons": "Coat of arms of Morocco.svg",
+          "file": "ma/ma-arms.svg",
+          "design": "A red shield bearing a green pentagram over the Atlas Mountains and a rising sun, borne by two lions beneath the royal crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco",
+          "meaning": {
+            "description": "Adopted in 1957, the red shield carries a rising sun of fifteen rays on blue, the green pentagram of the national flag, and a band representing the Atlas Mountains. Two Atlas lions support it as guardians and the royal crown surmounts it. The Arabic motto beneath is from the Qur'an (Sura 47:7): “If you support God, He will support you.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Morocco — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco"
+              }
+            ]
+          },
+          "sha256": "99d43799989b679a36940861a0d35b7e31ae52fec2983a01a669bbe9e79a2f60",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -13680,6 +13746,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Nigerian_flags",
           "sha256": "712cc75948b0c1ed801a22679321e9f662548fd097ac7b755263092e5b4898c3",
           "fetched": "2026-08-11"
+        },
+        {
+          "id": "ng-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of Nigeria",
+          "commons": "Coat of arms of Nigeria.svg",
+          "file": "ng/ng-arms.svg",
+          "design": "A black shield with a white Y, borne by two horses, an eagle above, on a base of Costus spectabilis flowers.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria",
+          "meaning": {
+            "description": "Adopted at independence in 1960, the black shield stands for Nigeria's fertile soil, and the white Y — a wavy pall — for the meeting of the Niger and Benue rivers at Lokoja. Two white horses represent dignity, and the red eagle above them strength. The Costus spectabilis flowers at the base are the national flower, found across the country. The scroll reads “Unity and Faith, Peace and Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Nigeria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria"
+              }
+            ]
+          },
+          "sha256": "75c45bfdc045846a9f30db47dfaaa95d7a798457eaf45bda2292f3664652c060",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -16688,6 +16776,28 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
           "sha256": "6af7a26fae29b067edd853fabcfd7d384b06691b173840dab3be53e65fe7adf2",
           "fetched": "2026-08-11"
+        },
+        {
+          "id": "sd-arms",
+          "category": "coatofarms",
+          "from": 1985,
+          "to": 9999,
+          "name": "Emblem of Sudan",
+          "commons": "Emblem of Sudan.svg",
+          "file": "sd/sd-arms.svg",
+          "design": "A secretary bird bearing the Mahdi's shield, with scrolls reading “Victory is ours” and “Republic of the Sudan.”",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Sudan",
+          "meaning": {
+            "description": "Adopted in 1985, the emblem is built on a secretary bird — chosen as a distinctively Sudanese, indigenous counterpart to the Eagle of Saladin and Hawk of Quraish borne by other Arab states. On its breast is the shield of Muhammad Ahmad, the 19th-century Mahdi who briefly ruled Sudan. The upper scroll reads an-Naṣr lanā, “Victory is ours,” and the lower names the Republic of the Sudan.",
+            "sources": [
+              {
+                "title": "Emblem of Sudan — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Sudan"
+              }
+            ]
+          },
+          "sha256": "095c0782b486900b5986eba6d4d8639fee7947782628b858cc7c538588bbd0a5",
+          "fetched": "2026-08-12"
         }
       ]
     },
