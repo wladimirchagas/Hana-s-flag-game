@@ -40,6 +40,7 @@ import { normalizeForSearch } from "../lib/searchNormalize";
 import { CapitalDetails } from "../components/CapitalDetails";
 import { NationalFlagDetails } from "../components/NationalFlagDetails";
 import type { NationalFlag } from "../data/nationalFlags";
+import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
 import { NationalAnthemPlayer } from "../components/NationalAnthemPlayer";
 import {
   loadStoredSelection,
@@ -295,6 +296,11 @@ export default function LearnPage() {
   // drives NOTHING on the map (owner request); it only opens its own widget below
   // the country fact-sheet, alongside whatever else is selected.
   const [selectedNationalFlag, setSelectedNationalFlag] = useState<NationalFlag | null>(null);
+  // A collective subdivision-group flag (Malaysia's Flag of the Federal
+  // Territories) picked in the hierarchy opens in the SAME widget as a national
+  // symbol, but its sourced meaning lives outside NATIONAL_FLAG_MEANINGS, so it
+  // is carried here and passed to the widget as a one-entry override.
+  const [selectedGroupMeaning, setSelectedGroupMeaning] = useState<FlagMeaningData | null>(null);
   // Country whose subdivisions are currently shown — stored separately so the
   // panel doesn't depend on `display` remaining set after entering subdivision mode.
   const [subdivisionCountry, setSubdivisionCountry] = useState<{ code: string; name: string; flagSvg: string } | null>(null);
@@ -308,6 +314,7 @@ export default function LearnPage() {
     // The picked flag belongs to the country being drilled into, so it cannot
     // survive a change of country or a return to the world map.
     setSelectedNationalFlag(null);
+    setSelectedGroupMeaning(null);
   }, [subdivisionCountry, subdivisionMode]);
   // Set of NAME values present in the current era's historical GeoJSON.
   // Populated by HistoricalMap's onDataLoaded callback. Used by the
@@ -1958,6 +1965,11 @@ export default function LearnPage() {
                   countryName={subdivisionCountry.name}
                   baseUrl={baseUrl}
                   onEnlarge={setZoomedFlagUrl}
+                  meanings={
+                    selectedGroupMeaning
+                      ? { [selectedNationalFlag.id]: selectedGroupMeaning }
+                      : undefined
+                  }
                 />
               </div>
             </aside>
@@ -2154,9 +2166,21 @@ export default function LearnPage() {
               // is already showing that same image and its explainer, so a second
               // copy below would be a duplicate of what the user is scrolling to.
               // Clearing the selection also closes whatever else was open.
+              setSelectedGroupMeaning(null);
               setSelectedNationalFlag((cur) =>
                 flag.primary ? null : cur?.id === flag.id ? null : flag,
               );
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            onSelectGroupFlag={(flag, meaning) => {
+              // A collective subdivision-group flag (Federal Territories) — opens
+              // in the same widget as a national symbol, carrying its own sourced
+              // meaning (which lives outside NATIONAL_FLAG_MEANINGS).
+              setSelectedNationalFlag((cur) => {
+                const close = cur?.id === flag.id;
+                setSelectedGroupMeaning(close ? null : meaning);
+                return close ? null : flag;
+              });
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />

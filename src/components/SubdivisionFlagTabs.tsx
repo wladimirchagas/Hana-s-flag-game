@@ -8,6 +8,7 @@ import { SubdivisionHierarchyTable } from "./SubdivisionHierarchyTable";
 import { countryCityFlagCount } from "../lib/cityFlags";
 import { nationalFlagCount } from "../lib/nationalFlags";
 import type { NationalFlag } from "../data/nationalFlags";
+import type { FlagMeaning } from "../data/flagMeanings";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 
 /**
@@ -98,6 +99,9 @@ type Props = {
   /** id of the national flag whose widget is open (if any). */
   selectedNationalFlagId: string | null;
   onSelectNationalFlag: (flag: NationalFlag) => void;
+  /** A collective subdivision-group flag (Malaysia's Federal Territories), shown
+   *  in the hierarchy — opens its own widget with its sourced meaning. */
+  onSelectGroupFlag: (flag: NationalFlag, meaning: FlagMeaning | null) => void;
 };
 
 export function SubdivisionFlagTabs({
@@ -116,6 +120,7 @@ export function SubdivisionFlagTabs({
   onSelectCountry,
   selectedNationalFlagId,
   onSelectNationalFlag,
+  onSelectGroupFlag,
 }: Props) {
   const [tab, setTabState] = useState<TabId>(loadTab);
   const [treeLayout, setTreeLayoutState] = useState<TreeLayout>(loadLayout);
@@ -264,6 +269,8 @@ export function SubdivisionFlagTabs({
                 onSelectSubdivision={onSelectSubdivision}
                 onSelectCapital={onSelectCapital}
                 onSelectNationalCapital={onSelectNationalCapital}
+                selectedNationalFlagId={selectedNationalFlagId}
+                onSelectGroupFlag={onSelectGroupFlag}
               />
             ) : (
               <SubdivisionHierarchyTable
@@ -279,6 +286,8 @@ export function SubdivisionFlagTabs({
                 onSelectSubdivision={onSelectSubdivision}
                 onSelectCapital={onSelectCapital}
                 onSelectNationalCapital={onSelectNationalCapital}
+                selectedNationalFlagId={selectedNationalFlagId}
+                onSelectGroupFlag={onSelectGroupFlag}
               />
             )}
           </>

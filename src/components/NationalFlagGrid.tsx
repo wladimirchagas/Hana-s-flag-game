@@ -48,7 +48,7 @@ import { flagYearLabel } from "../lib/nationalFlags";
  */
 const CATEGORY_HEADINGS: Record<NationalFlagCategory, string> = {
   historical: "Historical flags",
-  official: "Official flags",
+  official: "Current national flags",
   military: "Military flags",
   maritime: "Maritime flags",
   standard: "Standards",

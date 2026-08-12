@@ -7,6 +7,7 @@ import { normalizeForSearch } from "./searchNormalize";
 import { NATIONAL_CITIES } from "../data/cities";
 import { NATIONAL_CAPITAL_FLAGS } from "../data/nationalCapitalFlags";
 import { NATIONAL_CAPITAL_SUBDIVISION } from "../data/nationalCapitalLocations";
+import { subdivisionGroupFlag, type SubdivisionGroupFlag } from "../data/subdivisionGroupFlags";
 import type { SubdivisionMeta } from "../types/subdivision";
 
 /**
@@ -77,6 +78,11 @@ export type HierarchyGroup = {
   typeLabel: string;
   items: HierarchyNode[];
   allDisputed: boolean;
+  // A collective flag flown for this WHOLE group of subdivisions together
+  // (Malaysia's Flag of the Federal Territories), never for any one member.
+  // Rendered above the group's members — as a flag on the group label in the
+  // chart, and as a row directly above the group's rows in the table.
+  groupFlag: SubdivisionGroupFlag | null;
 };
 
 export type StandaloneCapital = { name: string; note: string | null };
@@ -272,6 +278,7 @@ export function useHierarchyData(
         typeLabel,
         items,
         allDisputed: items.every((i) => i.div.isDisputed),
+        groupFlag: subdivisionGroupFlag(countryCode, typeLabel),
       }))
       .sort((a, b) => {
         const ta = groupTier(a.typeLabel, a.allDisputed);
@@ -280,7 +287,7 @@ export function useHierarchyData(
         if (b.items.length !== a.items.length) return b.items.length - a.items.length;
         return a.typeLabel.localeCompare(b.typeLabel, "en");
       });
-  }, [nodes]);
+  }, [nodes, countryCode]);
 
   return { nodes, standaloneCaps, groups };
 }

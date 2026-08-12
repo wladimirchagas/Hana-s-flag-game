@@ -1238,7 +1238,6 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "MY": [
     { id: "my-official-national", category: "official", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, primary: true, path: "flags/my.svg", design: "The national flag, adopted at the formation of Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
-    { id: "my-federal-territories", category: "official", name: "Flag of the Federal Territories", from: 2006, to: 9999, path: "national-flags/my/malaysia-federal-territories.svg", design: "Three horizontal bands of yellow, blue and red bearing the coat of arms of Malaysia with three stars below it — flown for Kuala Lumpur, Labuan and Putrajaya together, not for the country.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_Territories" },
     { id: "my-1963", category: "historical", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, primary: true, path: "flags/my.svg", design: "Fourteen red and white stripes with a blue canton bearing a crescent and a fourteen-point star.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-penang-colony", category: "historical", name: "Flag of the Crown Colony of Penang", from: 1952, to: 1957, sovereign: "the United Kingdom", path: "national-flags/my/penang-colony.svg", design: "A Blue Ensign whose badge shows the areca nut palm on a mound within a wreath, flown after the Straits Settlements were dissolved.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-malacca-colony", category: "historical", name: "Flag of the Crown Colony of Malacca", from: 1951, to: 1957, sovereign: "the United Kingdom", path: "national-flags/my/malacca-colony.svg", design: "A Blue Ensign defaced with the A Famosa gateway, the Portuguese fortress the British badge kept as Malacca's emblem.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
@@ -2946,13 +2945,6 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The eagle on a nopal cactus devouring a serpent depicts the Aztec founding legend: the Mexica were told to build their capital, Tenochtitlan, where they saw an eagle on a cactus atop a lake — the site of modern Mexico City. In the original telling the eagle was the sun god Huitzilopochtli and the cactus the island of Tenochtitlan; a 16th-century European retelling recast the eagle as good overcoming the serpent. Oak and laurel branches, tied in the national colours, frame the device, which also appears at the centre of the flag.",
     sources: [
       { title: "Coat of arms of Mexico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
-    ],
-  },
-  "my-federal-territories": {
-    description: "The three territories are governed directly by the federal government rather than by any state, which is why the flag carries Malaysia's own coat of arms rather than a state crest. The three stars below the arms are the three territories themselves — Kuala Lumpur, Labuan and Putrajaya — and stand for their shared mission to be administrative and business centres. Of the colours, yellow carries respect, sovereignty and honour (yellow being the royal colour of the Malay rulers), red carries strength, and blue carries unity, sincerity and harmony. The flag exists because until 2006 the three territories had no flag of their own and flew the flag of Kuala Lumpur between them, which the Minister of Federal Territories judged inappropriate precisely because it did not show that there were three; the Cabinet adopted this design, by a team from Universiti Teknologi MARA, on 26 April 2006. It is flown only when the three are represented collectively — each territory keeps its own flag otherwise.",
-    sources: [
-      { title: "Flag & Song — Ministry of Federal Territories", url: "https://www.kwp.gov.my/index.php/en/about-kwp/lagu-bendera" },
-      { title: "Flag of the Federal Territories — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_Territories" },
     ],
   },
   "my-arms": {

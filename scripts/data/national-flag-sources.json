@@ -13170,32 +13170,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malaysia"
         },
         {
-          "id": "my-federal-territories",
-          "category": "official",
-          "name": "Flag of the Federal Territories",
-          "from": 2006,
-          "to": 9999,
-          "commons": "Flag of the Federal Territories of Malaysia.svg",
-          "file": "my/malaysia-federal-territories.svg",
-          "design": "Three horizontal bands of yellow, blue and red bearing the coat of arms of Malaysia with three stars below it — flown for Kuala Lumpur, Labuan and Putrajaya together, not for the country.",
-          "meaning": {
-            "description": "The three territories are governed directly by the federal government rather than by any state, which is why the flag carries Malaysia's own coat of arms rather than a state crest. The three stars below the arms are the three territories themselves — Kuala Lumpur, Labuan and Putrajaya — and stand for their shared mission to be administrative and business centres. Of the colours, yellow carries respect, sovereignty and honour (yellow being the royal colour of the Malay rulers), red carries strength, and blue carries unity, sincerity and harmony. The flag exists because until 2006 the three territories had no flag of their own and flew the flag of Kuala Lumpur between them, which the Minister of Federal Territories judged inappropriate precisely because it did not show that there were three; the Cabinet adopted this design, by a team from Universiti Teknologi MARA, on 26 April 2006. It is flown only when the three are represented collectively — each territory keeps its own flag otherwise.",
-            "sources": [
-              {
-                "title": "Flag & Song — Ministry of Federal Territories",
-                "url": "https://www.kwp.gov.my/index.php/en/about-kwp/lagu-bendera"
-              },
-              {
-                "title": "Flag of the Federal Territories — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Federal_Territories"
-              }
-            ]
-          },
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Federal_Territories",
-          "sha256": "f0f657df1f990c234480a1962221b5de4a457999c86ef27ced72e3d0809c26bd",
-          "fetched": "2026-08-11"
-        },
-        {
           "id": "my-civil-ensign",
           "category": "maritime",
           "name": "Civil ensign of Malaysia",
