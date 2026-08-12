@@ -613,6 +613,20 @@
           "source": "https://gicg.net/passport/am/",
           "sha256": "da365aca62aa41acf3e816b8ec9b61ccb84fc553f7f428069d2b4b1e540b8cef",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "am-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1828,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "am/am-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Eastern Armenia from 1828 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -1355,8 +1369,27 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan",
           "sha256": "aa7cf16a34856cd47b9af6e2f2cf1a232ca7945ab38b51273fe3bed1c6d2e6cd",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "az-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1828,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "az/az-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled the Azerbaijani khanates from 1828 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1918,
+        "event": "Azerbaijan first declared independence as the Azerbaijan Democratic Republic in 1918; after Soviet rule it regained independence from the Soviet Union in 1991",
+        "source": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic"
+      }
     },
     "BA": {
       "flags": [
@@ -3452,6 +3485,20 @@
           "design": "The cover of the Belarus passport.",
           "source": "https://gicg.net/passport/by/",
           "sha256": "816bab0e60f3186633a4471c64b42561aecf451831f412a95c3416e28b7fa964",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "by-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1795,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "by/by-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Belarus from 1795 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
           "fetched": "2026-08-12"
         }
       ],
@@ -6392,6 +6439,20 @@
           "source": "https://gicg.net/passport/ee/",
           "sha256": "cd0bbe216b0d79d77fb673560ea6bc3a04ec872885aab9341a3f8083d4a54a82",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ee-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1721,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "ee/ee-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Estonia from 1721 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -7121,8 +7182,27 @@
           },
           "sha256": "5c3e16b6a6af76e26285a086cc9841b81d68a1e2a6eb1043c16af55b7b76efb2",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "fi-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1809,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "fi/fi-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Finland from 1809 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1917,
+        "event": "Finland declared independence from Russia on 6 December 1917, ending over a century as an autonomous Grand Duchy of the Russian Empire",
+        "source": "https://en.wikipedia.org/wiki/Finnish_Declaration_of_Independence"
+      }
     },
     "FJ": {
       "flags": [
@@ -7931,6 +8011,20 @@
           "design": "The cover of the Georgia passport.",
           "source": "https://gicg.net/passport/ge/",
           "sha256": "8658f07f02a507bdc70defb99619beea90ac6af0cae30968afc90a09ffa66fc1",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "ge-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1801,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "ge/ge-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Georgia from 1801 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
           "fetched": "2026-08-12"
         }
       ],
@@ -11164,8 +11258,27 @@
           "source": "https://gicg.net/passport/kg/",
           "sha256": "6c4fb476239c7b692e082e1f7182f11c4ab59c9dab49f54dcb0c049e224963bd",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "kg-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1876,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "kg/kg-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled the Kyrgyz lands from 1876 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Kyrgyzstan declared independence from the Soviet Union on 31 August 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Kyrgyzstan"
+      }
     },
     "KH": {
       "flags": [
@@ -12054,8 +12167,27 @@
           "source": "https://gicg.net/passport/kz/",
           "sha256": "d9a3dafbb0f312bf0f7d7d4f14c32b087493d5b96db95456b3c18d565a7e3a19",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "kz-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1731,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "kz/kz-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled the Kazakh steppe from 1731 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Kazakhstan declared independence from the Soviet Union on 16 December 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Kazakhstan"
+      }
     },
     "LA": {
       "flags": [
@@ -12824,6 +12956,20 @@
           "source": "https://gicg.net/passport/lt/",
           "sha256": "224b4a736d996d679c9e76f4d24ec30b8b59f983c21e00faccb31ea7738c70ab",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "lt-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1795,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "lt/lt-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Lithuania from 1795 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -13073,6 +13219,20 @@
           "design": "The cover of the Latvia passport.",
           "source": "https://gicg.net/passport/lv/",
           "sha256": "95f13358b2b8662ecbebfc3c2770ff985992143d62f1b8d1744b4db4a1fb8fa2",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "lv-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1795,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "lv/lv-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled the Latvian lands from 1795 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
           "fetched": "2026-08-12"
         }
       ],
@@ -13486,8 +13646,27 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Moldova",
           "sha256": "259489dfa9fc7f6f1411023be7fac979bb931b5b15802f2f34742bb73d0f583f",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "md-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1812,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "md/md-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Bessarabia from 1812 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Moldova declared independence from the Soviet Union on 27 August 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Moldova"
+      }
     },
     "ME": {
       "flags": [
@@ -20971,8 +21150,27 @@
           "source": "https://gicg.net/passport/tj/",
           "sha256": "db61e5fb9c9e8f3bd79e3efa5a9486c6423ded2136181a469c26d22b868bb9d9",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "tj-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1868,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "tj/tj-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled the Tajik lands from 1868 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Tajikistan declared independence from the Soviet Union on 9 September 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Tajikistan"
+      }
     },
     "TL": {
       "flags": [
@@ -21136,8 +21334,27 @@
           "source": "https://gicg.net/passport/tm/",
           "sha256": "b87786da1d3164484c03bef8d0eb76a688df05a78dac5fb741766a09a13b4866",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "tm-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1881,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "tm/tm-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled Transcaspia from 1881 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Turkmenistan declared independence from the Soviet Union on 27 October 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Turkmenistan"
+      }
     },
     "TN": {
       "flags": [
@@ -22058,8 +22275,27 @@
           "source": "https://gicg.net/passport/ua/",
           "sha256": "05b247e712363aa28182820f371b027827a85f9e9d0fa5f444200bc9276cd415",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ua-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1793,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "ua/ua-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled much of Ukraine from 1793 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Ukraine declared independence from the Soviet Union on 24 August 1991, confirmed by referendum on 1 December 1991",
+        "source": "https://en.wikipedia.org/wiki/Modern_history_of_Ukraine"
+      }
     },
     "UG": {
       "flags": [
@@ -23109,8 +23345,27 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan",
           "sha256": "880d5603d8f9ab695f02f62b3e2103d553e0f3618aa395f01086dbef938ef2f9",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "uz-russian-empire",
+          "category": "historical",
+          "name": "Flag of the Russian Empire",
+          "from": 1876,
+          "to": 1917,
+          "sovereign": "the Russian Empire",
+          "commons": "Flag of Russia (1896–1918).svg",
+          "file": "uz/uz-russian-empire.svg",
+          "design": "The white-blue-red flag of the Russian Empire, which ruled the Uzbek lands from 1876 until the empire fell in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+          "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1991,
+        "event": "Uzbekistan declared independence from the Soviet Union on 31 August 1991",
+        "source": "https://en.wikipedia.org/wiki/History_of_Uzbekistan"
+      }
     },
     "VA": {
       "flags": [
