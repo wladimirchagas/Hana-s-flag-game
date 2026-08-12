@@ -115,6 +115,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AF": [
     { id: "af-official-national", category: "official", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
     { id: "af-current", category: "historical", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
+    { id: "af-republic", category: "historical", name: "Flag of the Islamic Republic of Afghanistan", from: 2004, to: 2021, path: "national-flags/af/af-republic.svg", design: "The black-red-green vertical tricolour bearing the white national emblem, flown by the Islamic Republic until the Taliban takeover in August 2021 restored the white Islamic Emirate flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
   ],
   "AG": [
     { id: "ag-official-national", category: "official", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
@@ -1641,8 +1642,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sv-arms", category: "coatofarms", name: "Coat of arms of El Salvador", from: 1912, to: 9999, path: "national-flags/sv/elsalvador-arms.svg", design: "A golden triangle containing five volcanoes between two oceans, beneath a Phrygian cap, a rainbow and the date 15 September 1821, within a laurel wreath and five flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
   ],
   "SY": [
-    { id: "sy-official-national", category: "official", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria, in the form adopted in 2024.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
-    { id: "sy-current", category: "historical", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria, in the form adopted in 2024.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+    { id: "sy-official-national", category: "official", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria — three stripes of green, white and black with three red stars — readopted on 13 March 2025, reviving the 1932 independence flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+    { id: "sy-current", category: "historical", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria — three stripes of green, white and black with three red stars — readopted on 13 March 2025, reviving the 1932 independence flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+    { id: "sy-baath", category: "historical", name: "Flag of Syria (1980–2024)", from: 1980, to: 2024, path: "national-flags/sy/sy-baath.svg", design: "The red-white-black flag with two green stars, flown under Baʻathist rule from 1980 until the fall of the Assad government in 2024; the same design served the United Arab Republic (1958–1961).", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
+    { id: "sy-mandate", category: "historical", name: "Flag of the French Mandate of Syria", from: 1920, to: 1932, sovereign: "France", path: "national-flags/sy/sy-mandate.svg", design: "The green-white-green flag of the early French Mandate, flown before the green-white-black independence flag was adopted in 1932.", source: "https://en.wikipedia.org/wiki/French_Mandate_for_Syria_and_the_Lebanon" },
+    { id: "sy-arms", category: "coatofarms", name: "Emblem of Syria", from: 2025, to: 9999, path: "national-flags/sy/sy-arms.svg", design: "A golden eagle facing right, three stars in an arc above its head.", source: "https://en.wikipedia.org/wiki/Emblem_of_Syria" },
   ],
   "SZ": [
     { id: "sz-official-national", category: "official", name: "Flag of Eswatini", from: 1968, to: 9999, primary: true, path: "flags/sz.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Eswatini" },
@@ -1967,6 +1971,7 @@ export type NationalIndependence = {
 };
 
 export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence>> = {
+  "AF": { year: 1919, event: "Afghanistan regained full control of its foreign affairs — and so full independence — from Britain by the Anglo-Afghan Treaty of 1919, following the Third Anglo-Afghan War; the country had never been formally colonised", source: "https://en.wikipedia.org/wiki/Anglo-Afghan_Treaty_of_1919" },
   "AG": { year: 1981, event: "Antigua and Barbuda became independent from the United Kingdom on 1 November 1981", source: "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda" },
   "AL": { year: 1912, event: "Albania declared independence from the Ottoman Empire on 28 November 1912", source: "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence" },
   "AM": { year: 1918, event: "The First Republic of Armenia declared independence on 28 May 1918", note: "It was absorbed into the Soviet Union in 1920–1922; independence was restored on 21 September 1991.", source: "https://en.wikipedia.org/wiki/First_Republic_of_Armenia" },
@@ -2077,6 +2082,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "SS": { year: 2011, event: "South Sudan became independent from Sudan on 9 July 2011 after a referendum", source: "https://en.wikipedia.org/wiki/History_of_South_Sudan" },
   "ST": { year: 1975, event: "São Tomé and Príncipe became independent from Portugal on 12 July 1975", source: "https://en.wikipedia.org/wiki/History_of_São_Tomé_and_Príncipe" },
   "SV": { year: 1841, event: "El Salvador declared itself a sovereign state on 18 February 1841 as the Central American federation dissolved", note: "Central America had declared independence from Spain on 15 September 1821 — the date the coat of arms carries.", source: "https://en.wikipedia.org/wiki/History_of_El_Salvador" },
+  "SY": { year: 1946, event: "Syria became fully independent on 17 April 1946 when the last French Mandate troops withdrew, ending French rule that had begun in 1920", source: "https://en.wikipedia.org/wiki/History_of_Syria" },
   "SZ": { year: 1968, event: "Eswatini (then Swaziland) became independent from the United Kingdom on 6 September 1968", source: "https://en.wikipedia.org/wiki/History_of_Eswatini" },
   "TD": { year: 1960, event: "Chad became independent from France on 11 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Chad" },
   "TG": { year: 1960, event: "Togo became independent from France on 27 April 1960", source: "https://en.wikipedia.org/wiki/History_of_Togo" },
@@ -3072,6 +3078,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
     sources: [
       { title: "Coat of arms of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
+    ],
+  },
+  "sy-arms": {
+    description: "Adopted on 3 July 2025 by the new government, the emblem replaces the Baʻathist Hawk of Quraish with a golden eagle drawn from the ancient motifs of Palmyra, standing for pride and leadership. The three stars above it are taken from the flag and stand for the people's liberation; the eagle's fourteen wing feathers are Syria's fourteen governorates, and its five tail feathers the country's five geographic regions — north, south, east, west and centre.",
+    sources: [
+      { title: "Emblem of Syria — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Syria" },
     ],
   },
   "sz-arms": {

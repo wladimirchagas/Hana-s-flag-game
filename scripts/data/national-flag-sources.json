@@ -202,8 +202,26 @@
           "reuse": "flags/af.svg",
           "design": "The national flag of Afghanistan, in the form adopted in 2021.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Afghanistan"
+        },
+        {
+          "id": "af-republic",
+          "category": "historical",
+          "from": 2004,
+          "to": 2021,
+          "name": "Flag of the Islamic Republic of Afghanistan",
+          "commons": "Flag of Afghanistan (2013–2021).svg",
+          "file": "af/af-republic.svg",
+          "design": "The black-red-green vertical tricolour bearing the white national emblem, flown by the Islamic Republic until the Taliban takeover in August 2021 restored the white Islamic Emirate flag.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Afghanistan",
+          "sha256": "95b0f7f331c4dc216a8434ada0db1656bae973b555573ca021bdefbbf32cd57c",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1919,
+        "event": "Afghanistan regained full control of its foreign affairs — and so full independence — from Britain by the Anglo-Afghan Treaty of 1919, following the Third Anglo-Afghan War; the country had never been formally colonised",
+        "source": "https://en.wikipedia.org/wiki/Anglo-Afghan_Treaty_of_1919"
+      }
     },
     "AG": {
       "flags": [
@@ -17342,7 +17360,7 @@
           "to": 9999,
           "name": "Flag of Syria",
           "reuse": "flags/sy.svg",
-          "design": "The national flag of Syria, in the form adopted in 2024.",
+          "design": "The national flag of Syria — three stripes of green, white and black with three red stars — readopted on 13 March 2025, reviving the 1932 independence flag.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Syria"
         },
         {
@@ -17352,10 +17370,64 @@
           "to": 9999,
           "name": "Flag of Syria",
           "reuse": "flags/sy.svg",
-          "design": "The national flag of Syria, in the form adopted in 2024.",
+          "design": "The national flag of Syria — three stripes of green, white and black with three red stars — readopted on 13 March 2025, reviving the 1932 independence flag.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Syria"
+        },
+        {
+          "id": "sy-baath",
+          "category": "historical",
+          "from": 1980,
+          "to": 2024,
+          "name": "Flag of Syria (1980–2024)",
+          "commons": "Flag of the United Arab Republic (1958–1971), Flag of Syria (1980–2024).svg",
+          "file": "sy/sy-baath.svg",
+          "design": "The red-white-black flag with two green stars, flown under Baʻathist rule from 1980 until the fall of the Assad government in 2024; the same design served the United Arab Republic (1958–1961).",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Syria",
+          "sha256": "331d12374444f1c149149292314b12eccf532b16d06468a6dd9b8f581fd969e5",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "sy-mandate",
+          "category": "historical",
+          "from": 1920,
+          "to": 1932,
+          "name": "Flag of the French Mandate of Syria",
+          "commons": "Flag of the French Mandate of Syria (1920).svg",
+          "file": "sy/sy-mandate.svg",
+          "sovereign": "France",
+          "design": "The green-white-green flag of the early French Mandate, flown before the green-white-black independence flag was adopted in 1932.",
+          "source": "https://en.wikipedia.org/wiki/French_Mandate_for_Syria_and_the_Lebanon",
+          "sha256": "036a2ea2c8eda10550aa1e7633fa0eda1b12d6c168a8e42051003be1e6b1fa03",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "sy-arms",
+          "category": "coatofarms",
+          "from": 2025,
+          "to": 9999,
+          "name": "Emblem of Syria",
+          "commons": "Emblem of Syria (2025–present).svg",
+          "file": "sy/sy-arms.svg",
+          "design": "A golden eagle facing right, three stars in an arc above its head.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_Syria",
+          "meaning": {
+            "description": "Adopted on 3 July 2025 by the new government, the emblem replaces the Baʻathist Hawk of Quraish with a golden eagle drawn from the ancient motifs of Palmyra, standing for pride and leadership. The three stars above it are taken from the flag and stand for the people's liberation; the eagle's fourteen wing feathers are Syria's fourteen governorates, and its five tail feathers the country's five geographic regions — north, south, east, west and centre.",
+            "sources": [
+              {
+                "title": "Emblem of Syria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_Syria"
+              }
+            ]
+          },
+          "sha256": "a0ddae6d2873a08738af3a4337a6f53427a69ea0fe1477cd0c4f549241fcbe53",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1946,
+        "event": "Syria became fully independent on 17 April 1946 when the last French Mandate troops withdrew, ending French rule that had begun in 1920",
+        "source": "https://en.wikipedia.org/wiki/History_of_Syria"
+      }
     },
     "SZ": {
       "flags": [
