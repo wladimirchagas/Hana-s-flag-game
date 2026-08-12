@@ -6271,6 +6271,28 @@
           "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
           "sha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "fm-arms",
+          "category": "coatofarms",
+          "from": 1986,
+          "to": 9999,
+          "name": "Seal of the Federated States of Micronesia",
+          "commons": "Seal of the Federated States of Micronesia.svg",
+          "file": "fm/fm-arms.svg",
+          "design": "A sprouting coconut floating on the ocean beneath an arc of four white stars, with the motto and the year 1979.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia",
+          "meaning": {
+            "description": "Adopted in 1986, the seal shows a sprouted coconut adrift on a light-blue sea — the island nation's maritime heritage — beneath an arc of four white stars, one for each of the federated states: Chuuk, Kosrae, Pohnpei and Yap, exactly as on the national flag. The banner carries the motto “Peace, Unity, Liberty” and the year 1979, when the Constitution came into force. The design continues the earlier seal of the US-administered Trust Territory of the Pacific Islands.",
+            "sources": [
+              {
+                "title": "Seal of the Federated States of Micronesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia"
+              }
+            ]
+          },
+          "sha256": "9fa6c1f8fbf624fc86c4e7bdc989d3635c29ea429d1202079c92a5f2bd162395",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -15178,8 +15200,49 @@
           "reuse": "flags/pw.svg",
           "design": "The national flag of Palau, in the form adopted in 1981.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Palau"
+        },
+        {
+          "id": "pw-tt",
+          "category": "historical",
+          "from": 1965,
+          "to": 1981,
+          "name": "Flag of the Trust Territory of the Pacific Islands",
+          "commons": "Flag of the Trust Territory of the Pacific Islands.svg",
+          "file": "pw/pw-tt.svg",
+          "sovereign": "the United States",
+          "design": "The six-star flag of the US-administered Trust Territory, flown over Palau until it adopted its own flag in 1981.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Palau",
+          "sha256": "633a4e494c8b50e593942671609045870cd8dcdf72d28a7dfaac55f36566593a",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "pw-arms",
+          "category": "coatofarms",
+          "from": 1981,
+          "to": 9999,
+          "name": "Seal of Palau",
+          "commons": "Seal of Palau.svg",
+          "file": "pw/pw-arms.svg",
+          "design": "A traditional bai (meeting house) on sixteen stones, ringed by the words Olbiil Era Kelulau and the year 1981.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_Palau",
+          "meaning": {
+            "description": "Adopted in 1981, the seal is dominated by a bai, the traditional Palauan meeting house that is the seat of community decision-making, standing on sixteen stones. The surrounding words Olbiil Era Kelulau — “the House of Whispered Decisions” — name the national congress, and the date 1981 marks the founding of the Republic. The bai's central place reflects how traditional governance remains at the heart of Palauan identity.",
+            "sources": [
+              {
+                "title": "Seal of Palau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Palau"
+              }
+            ]
+          },
+          "sha256": "9ab51e7e29c22f9fd5c3f7f1337ede89f923347b5d7c14afa481895ccb8605e8",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1994,
+        "event": "Palau became a fully sovereign state on 1 October 1994 under a Compact of Free Association with the United States, ending the US-administered UN Trust Territory of the Pacific Islands; the self-governing Republic had been established in 1981",
+        "source": "https://en.wikipedia.org/wiki/History_of_Palau"
+      }
     },
     "PY": {
       "flags": [
@@ -17790,6 +17853,28 @@
           "source": "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor",
           "sha256": "2ab57d2d418baba7b0ff55729435d0c780ca52a98b754f92d44e96cd1399dae5",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "tl-arms",
+          "category": "coatofarms",
+          "from": 2007,
+          "to": 9999,
+          "name": "National emblem of Timor-Leste",
+          "commons": "Coat of arms of East Timor.svg",
+          "file": "tl/tl-arms.svg",
+          "design": "The mountain of Tatamailau crowned by a white star, over an open book, a cog wheel and crossed weapons.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_East_Timor",
+          "meaning": {
+            "description": "Adopted in 2007, the emblem centres on Tatamailau, the country's highest mountain, its four corners standing for the separation of powers. The white star at the summit is the light of generosity and honesty leading the people to peace; the open book before a golden cog is education and the people's capacity to advance in culture, agriculture and industry; the ear of rice and the corncob are agricultural development; and the crossed Kalashnikov, spear and traditional bow honour the centuries-long struggle for national liberation. The Portuguese motto reads Unidade, Acção, Progresso — “Unity, Action, Progress.”",
+            "sources": [
+              {
+                "title": "Coat of arms of East Timor — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_East_Timor"
+              }
+            ]
+          },
+          "sha256": "c68791f0df3268f9c07ceaefa7c813d643cd413b58a172fafda2513d581111e9",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -18303,8 +18388,66 @@
           "reuse": "flags/tv.svg",
           "design": "The national flag of Tuvalu, in the form adopted in 1997.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu"
+        },
+        {
+          "id": "tv-1996",
+          "category": "historical",
+          "from": 1996,
+          "to": 1997,
+          "name": "Flag of Tuvalu (1996–1997)",
+          "commons": "Flag of Tuvalu (1996–1997).svg",
+          "file": "tv/tv-1996.svg",
+          "design": "The short-lived redesign that dropped the Union Jack; unpopular as a step toward a republic, it was reverted to the 1978 flag in 1997.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu",
+          "sha256": "696015dcbbd709a52310ba75148abc6a9a68a6ec819aa62ca3a8abe4f8b90c2c",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tv-geic",
+          "category": "historical",
+          "from": 1937,
+          "to": 1975,
+          "name": "Flag of the Gilbert and Ellice Islands Colony",
+          "commons": "Flag of the Gilbert and Ellice Islands (1937–1976).svg",
+          "file": "tv/tv-geic.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The British Blue Ensign of the Gilbert and Ellice Islands Colony, which included Tuvalu (the Ellice Islands) until it separated in 1975.",
+          "source": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands",
+          "sha256": "a3c9e6a9dbe6fe4e6128ffc2f0bc224f55a8c84458d315948f166fbd37619edb",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tv-arms",
+          "category": "coatofarms",
+          "from": 1976,
+          "to": 9999,
+          "name": "Coat of arms of Tuvalu",
+          "commons": "Coat of arms of Tuvalu.svg",
+          "file": "tv/tv-arms.svg",
+          "design": "A maneapa (meeting house) above golden ocean waves, the border ringed by eight banana leaves and eight mussel shells.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu",
+          "meaning": {
+            "description": "Granted by royal warrant in 1976, the shield shows a maneapa — the traditional meeting house at the centre of island community life — above stylised gold-and-blue waves for the surrounding ocean. Eight banana leaves and eight mussel shells ring the border, one pair for each of the eight traditionally inhabited islands from which the name Tuvalu — “eight standing together” — is drawn. The motto reads Tuvalu mo te Atua — “Tuvalu for the Almighty” — also the title of the national anthem.",
+            "sources": [
+              {
+                "title": "Coat of arms of Tuvalu — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tuvalu"
+              },
+              {
+                "title": "Flag of Tuvalu — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu"
+              }
+            ]
+          },
+          "sha256": "64bbbc3703c09b7091a54e935eab7fd135e6ad6fe4cc5f73b0943090f6378495",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1978,
+        "event": "Tuvalu became an independent Commonwealth realm on 1 October 1978, having separated from the Gilbert and Ellice Islands Colony as the Ellice Islands in 1975",
+        "source": "https://en.wikipedia.org/wiki/History_of_Tuvalu"
+      }
     },
     "TZ": {
       "flags": [
@@ -19644,6 +19787,28 @@
           "reuse": "flags/va.svg",
           "design": "The national flag of Vatican City, in the form adopted in 1929.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Vatican_City"
+        },
+        {
+          "id": "va-arms",
+          "category": "coatofarms",
+          "from": 1929,
+          "to": 9999,
+          "name": "Coat of arms of Vatican City",
+          "commons": "Coat of arms of Vatican City (2023–present).svg",
+          "file": "va/va-arms.svg",
+          "design": "Two keys in saltire, one gold and one silver, surmounted by the papal tiara on a red field.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City",
+          "meaning": {
+            "description": "Established with the Vatican City State by the Lateran Treaty of 1929, the arms show the two crossed keys of Saint Peter — the gold key of spiritual authority and the silver key of temporal authority, bound by a red cord — beneath the papal tiara, the triple crown standing for the Pope's threefold office of teaching, governing and sanctifying. The same keys and tiara appear on the fly of the national flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Vatican City — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City"
+              }
+            ]
+          },
+          "sha256": "0814a867e6107260db551facbd0589ce81630f6a622e9ca7abfa6c2a326ee092",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -20203,6 +20368,28 @@
           "design": "The flag of the German Empire, which held the islands as German Samoa until 1914.",
           "source": "https://en.wikipedia.org/wiki/German_Samoa",
           "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "ws-arms",
+          "category": "coatofarms",
+          "from": 1962,
+          "to": 9999,
+          "name": "Coat of arms of Samoa",
+          "commons": "Public Seal of Samoa.svg",
+          "file": "ws/ws-arms.svg",
+          "design": "A shield bearing the Southern Cross over a coconut palm rising from the sea, surmounted by a cross, within a ring of olive leaves.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa",
+          "meaning": {
+            "description": "Adopted at independence in 1962, the shield shows the five stars of the Southern Cross — the same constellation the national flag carries — above a green coconut palm rising from the Pacific, the ocean filling the lower field. A gold Christian cross surmounts the shield, and a ring of olive leaves echoes the United Nations emblem, marking Samoa's path from UN trust territory to statehood. Around it runs the motto Faʻavae i le Atua Sāmoa — “Samoa is founded on God.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Samoa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa"
+              }
+            ]
+          },
+          "sha256": "5b6f991796b367d73835a1d8c98f7ae90007b761873c4e2ab3752c3e82a0334d",
           "fetched": "2026-08-12"
         }
       ],
