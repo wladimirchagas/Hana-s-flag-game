@@ -391,6 +391,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cd-1960", category: "historical", name: "Flag of Congo-Léopoldville (1960–1963)", from: 1960, to: 1963, path: "national-flags/cd/cd-1960.svg", design: "The flag flown at independence in 1960 — blue with a large yellow star and six small stars for the provinces.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" },
     { id: "cd-colonial", category: "historical", name: "Flag of the Congo Free State", from: 1885, to: 1960, sovereign: "Belgium", path: "national-flags/cd/cd-colonial.svg", design: "A blue field with a single gold star — the flag of the Congo Free State and, from 1908, of the Belgian Congo.", source: "https://en.wikipedia.org/wiki/Congo_Free_State" },
     { id: "cd-president", category: "standard", name: "Presidential standard of the Democratic Republic of the Congo", from: 2006, to: 9999, path: "national-flags/cd/cd-president.svg", design: "The standard of the President of the Democratic Republic of the Congo.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" },
+    { id: "cd-arms", category: "coatofarms", name: "Coat of arms of the Democratic Republic of the Congo", from: 2006, to: 9999, path: "national-flags/cd/cd-arms.svg", design: "A leopard's head flanked by an elephant tusk and a spear, over the motto “Justice – Paix – Travail.”", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo" },
   ],
   "CF": [
     { id: "cf-official-national", category: "official", name: "Flag of the Central African Republic", from: 1958, to: 9999, primary: true, path: "flags/cf.svg", design: "The national flag, adopted in 1958.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic" },
@@ -631,6 +632,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "et-1897", category: "historical", name: "Flag of Ethiopia (1897–1914)", from: 1897, to: 1914, path: "national-flags/et/ethiopia-1897.svg", design: "A horizontal tricolour of green, yellow and red — the first rectangular Ethiopian flag.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
     { id: "et-1875", category: "historical", name: "Flag of Ethiopia (1875–1881)", from: 1875, to: 1881, path: "national-flags/et/ethiopia-1875.svg", design: "An early horizontal tricolour, from before the arrangement settled.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
     { id: "et-abyssinia", category: "historical", name: "Flag of the Ethiopian Empire (1270–1853)", from: 1270, to: 1853, priorPolity: "the Ethiopian Empire under the Solomonic dynasty", path: "national-flags/et/ethiopia-abyssinia.svg", design: "The banner of the Solomonic dynasty, before the tricolour.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
+    { id: "et-arms", category: "coatofarms", name: "Emblem of Ethiopia", from: 1996, to: 9999, path: "national-flags/et/et-arms.svg", design: "A golden interlaced pentagram radiating rays of light on a blue disc.", source: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
   ],
   "FI": [
     { id: "fi-official-national", category: "official", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
@@ -1120,6 +1122,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ma-alawi", category: "historical", name: "Flag of the Alawi Sultanate", from: 1666, to: 1915, priorPolity: "the Alawi Sultanate", path: "national-flags/ma/morocco-alawi.svg", design: "A plain red field — the flag of the sultanate before the pentagram was added in 1915.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
     { id: "ma-naval-jack", category: "maritime", name: "Naval jack of Morocco", path: "national-flags/ma/morocco-naval-jack.svg", design: "A red swallow-tailed field with yellow and green charges.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
     { id: "ma-royal", category: "standard", name: "Royal standard of Morocco", from: 1915, to: 9999, path: "national-flags/ma/morocco-royal-standard.svg", design: "A green field bearing the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
+    { id: "ma-arms", category: "coatofarms", name: "Coat of arms of Morocco", from: 1957, to: 9999, path: "national-flags/ma/ma-arms.svg", design: "A red shield bearing a green pentagram over the Atlas Mountains and a rising sun, borne by two lions beneath the royal crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco" },
   ],
   "MC": [
     { id: "mc-official-national", category: "official", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag, in use since 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
@@ -1296,6 +1299,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ng-civil-ensign", category: "maritime", name: "Civil ensign of Nigeria", path: "national-flags/ng/nigeria-civil-ensign.svg", design: "A red field with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
     { id: "ng-state-ensign", category: "maritime", name: "State ensign of Nigeria", path: "national-flags/ng/nigeria-state-ensign.svg", design: "A blue field with the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
     { id: "ng-president", category: "standard", name: "Flag of the President of Nigeria", path: "national-flags/ng/nigeria-president.svg", design: "The presidential flag of the Federal Republic.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
+    { id: "ng-arms", category: "coatofarms", name: "Coat of arms of Nigeria", from: 1960, to: 9999, path: "national-flags/ng/ng-arms.svg", design: "A black shield with a white Y, borne by two horses, an eagle above, on a base of Costus spectabilis flowers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
   ],
   "NI": [
     { id: "ni-official-national", category: "official", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
@@ -1565,6 +1569,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sd-airforce", category: "military", name: "Ensign of the Sudanese Air Force", from: 1956, to: 9999, path: "national-flags/sd/sd-af.svg", design: "The ensign of the Sudanese Air Force.", source: "https://en.wikipedia.org/wiki/Sudanese_Air_Force" },
     { id: "sd-navy", category: "maritime", name: "Naval ensign of Sudan", from: 1970, to: 9999, path: "national-flags/sd/sd-navy.svg", design: "The naval ensign of Sudan.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
     { id: "sd-president", category: "standard", name: "Presidential standard of Sudan", from: 1970, to: 9999, path: "national-flags/sd/sd-president.svg", design: "The standard of the President of Sudan.", source: "https://en.wikipedia.org/wiki/Flag_of_Sudan" },
+    { id: "sd-arms", category: "coatofarms", name: "Emblem of Sudan", from: 1985, to: 9999, path: "national-flags/sd/sd-arms.svg", design: "A secretary bird bearing the Mahdi's shield, with scrolls reading “Victory is ours” and “Republic of the Sudan.”", source: "https://en.wikipedia.org/wiki/Emblem_of_Sudan" },
   ],
   "SE": [
     { id: "se-official-national", category: "official", name: "Flag of Sweden", from: 1562, to: 9999, primary: true, path: "flags/se.svg", design: "The national flag of Sweden, in the form adopted in 1562.", source: "https://en.wikipedia.org/wiki/Flag_of_Sweden" },
@@ -2348,6 +2353,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Arms of Canada — Wikipedia", url: "https://en.wikipedia.org/wiki/Arms_of_Canada" },
     ],
   },
+  "cd-arms": {
+    description: "Adopted by decree in 2006 and set in the 2005 constitution, the emblem places a leopard's head between an elephant tusk and a spear — traditional African emblems of the land and its people — above the national motto Justice, Paix, Travail (“Justice, Peace, Work”). It replaced a 2003 design of three interlocked hands.",
+    sources: [
+      { title: "Coat of arms of the Democratic Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo" },
+    ],
+  },
   "cf-arms": {
     description: "The shield gathers the country's emblems: an elephant and a baobab tree for its nature and its backbone; an open hand, the symbol of the party that led it to independence; and a gold star on a map of Africa, marking the Central African Republic at the continent's heart. A rising sun crowns it for the dawn of independence, and the Order of Operational Merit hangs below. Two ribbons carry the mottoes — in Sango, Zo Kwe Zo, “All people are people,” and in French, Unité, Dignité, Travail, “Unity, Dignity, Work.”",
     sources: [
@@ -2490,6 +2501,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is a list of the kingdoms that became Spain: the castle of Castile, the lion of León, the pallets of Aragón, the chains of Navarre, and the pomegranate of Granada in base — added for the last Muslim kingdom to fall, in 1492. At the centre sits the small escutcheon of the House of Bourbon, the reigning dynasty. Flanking the shield are the Pillars of Hercules, the classical name for the rock either side of the Strait of Gibraltar, wrapped in a ribbon reading Plus Ultra — “further beyond” — which inverts the older warning Non plus ultra, nothing further beyond, to claim the Atlantic crossing and the empire past it.",
     sources: [
       { title: "Coat of arms of Spain — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
+    ],
+  },
+  "et-arms": {
+    description: "Adopted in 1996, the emblem is a golden interlaced pentagram radiating rays of light on a blue disc — the same device that sits at the centre of the national flag. The pentagram stands for the unity and equality of the nations, nationalities and peoples of the Federal Democratic Republic of Ethiopia; the radiating light for their shared prosperity and bright future.",
+    sources: [
+      { title: "Emblem of Ethiopia — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
     ],
   },
   "fi-arms": {
@@ -2834,6 +2851,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Latvia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
     ],
   },
+  "ma-arms": {
+    description: "Adopted in 1957, the red shield carries a rising sun of fifteen rays on blue, the green pentagram of the national flag, and a band representing the Atlas Mountains. Two Atlas lions support it as guardians and the royal crown surmounts it. The Arabic motto beneath is from the Qur'an (Sura 47:7): “If you support God, He will support you.”",
+    sources: [
+      { title: "Coat of arms of Morocco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco" },
+    ],
+  },
   "mc-arms": {
     description: "The shield of red and white lozenges is the arms of the House of Grimaldi, sovereigns of Monaco since 1297, and it is held by two friars brandishing swords. They recall François Grimaldi, who in 1297 seized the fortress of Monaco by disguising himself and his men as Franciscan monks. A princely crown and an ermine mantle surround the arms, and the motto reads Deo Juvante — “With God's Help.”",
     sources: [
@@ -2959,6 +2982,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
     sources: [
       { title: "Coat of arms of Niger — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger" },
+    ],
+  },
+  "ng-arms": {
+    description: "Adopted at independence in 1960, the black shield stands for Nigeria's fertile soil, and the white Y — a wavy pall — for the meeting of the Niger and Benue rivers at Lokoja. Two white horses represent dignity, and the red eagle above them strength. The Costus spectabilis flowers at the base are the national flower, found across the country. The scroll reads “Unity and Faith, Peace and Progress.”",
+    sources: [
+      { title: "Coat of arms of Nigeria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
     ],
   },
   "ni-arms": {
@@ -3109,6 +3138,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A giant tortoise stands on green ground before a coco-de-mer palm — both found only in the Seychelles — with a sailing ship on the sea behind. A white-tailed tropicbird forms the crest, and two sailfish support the shield. The motto is Finis Coronat Opus — “The End Crowns the Work.”",
     sources: [
       { title: "Coat of arms of Seychelles — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Seychelles" },
+    ],
+  },
+  "sd-arms": {
+    description: "Adopted in 1985, the emblem is built on a secretary bird — chosen as a distinctively Sudanese, indigenous counterpart to the Eagle of Saladin and Hawk of Quraish borne by other Arab states. On its breast is the shield of Muhammad Ahmad, the 19th-century Mahdi who briefly ruled Sudan. The upper scroll reads an-Naṣr lanā, “Victory is ours,” and the lower names the Republic of the Sudan.",
+    sources: [
+      { title: "Emblem of Sudan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Sudan" },
     ],
   },
   "se-arms": {
