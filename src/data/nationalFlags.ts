@@ -169,6 +169,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "at-official-national", category: "official", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
     { id: "at-current", category: "historical", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
     { id: "at-state", category: "civilstate", name: "State flag of Austria", from: 1955, to: 9999, path: "national-flags/at/austria-state.svg", design: "The red-white-red triband charged with the federal eagle — the state flag, war flag and naval ensign, beside the plain civil flag.", source: "https://en.wikipedia.org/wiki/List_of_Austrian_flags" },
+    { id: "at-arms", category: "coatofarms", name: "Coat of arms of Austria", from: 1945, to: 9999, path: "national-flags/at/at-arms.svg", design: "A black eagle wearing a mural crown, holding a hammer and a sickle, with broken chains about its talons and a red-white-red shield on its breast.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria" },
   ],
   "AU": [
     { id: "au-official-national", category: "official", name: "Australian National Flag", from: 1908, to: 9999, primary: true, path: "flags/au.svg", design: "Proclaimed under the Flags Act 1953 as the flag of the Commonwealth of Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
@@ -236,6 +237,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "be-civil-ensign", category: "maritime", name: "Civil ensign of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-civil-ensign.svg", design: "The black-yellow-red tricolour in the proportions used at sea.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
     { id: "be-state-ensign", category: "maritime", name: "State ensign of Belgium", from: 1950, to: 9999, path: "national-flags/be/belgium-state-ensign.svg", design: "The tricolour defaced with the state emblem, worn by government vessels.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
     { id: "be-naval-jack", category: "maritime", name: "Naval jack of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-naval-jack.svg", design: "The jack of the Belgian Navy.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
+    { id: "be-arms", category: "coatofarms", name: "Coat of arms of Belgium", from: 1837, to: 9999, path: "national-flags/be/be-arms.svg", design: "A golden lion rampant on black, crowned and borne by two lions, over the motto “Unity makes strength.”", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belgium" },
   ],
   "BF": [
     { id: "bf-official-national", category: "official", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag, adopted in 1984 when Upper Volta was renamed Burkina Faso.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
@@ -377,6 +379,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ca-air-force", category: "military", name: "Royal Canadian Air Force Ensign", from: 1982, to: 9999, path: "national-flags/ca/canada-air-force.svg", design: "An air-force-blue field with the national flag in the canton and the RCAF roundel in the fly.", source: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
     { id: "ca-sovereign", category: "standard", name: "Sovereign's Flag for Canada", from: 2023, to: 9999, path: "national-flags/ca/canada-sovereign.svg", design: "A banner of the arms of Canada, used by the sovereign in Canada.", source: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
     { id: "ca-gg", category: "standard", name: "Flag of the Governor General of Canada", from: 1981, to: 9999, path: "national-flags/ca/canada-governor-general.svg", design: "A blue field bearing the crest of the arms of Canada — a crowned lion holding a maple leaf.", source: "https://en.wikipedia.org/wiki/List_of_Canadian_flags" },
+    { id: "ca-arms", category: "coatofarms", name: "Arms of Canada", from: 1921, to: 9999, path: "national-flags/ca/ca-arms.svg", design: "A quartered shield of the arms of England, Scotland, Ireland and royal France, above a sprig of red maple leaves; a lion and a unicorn as supporters.", source: "https://en.wikipedia.org/wiki/Arms_of_Canada" },
   ],
   "CD": [
     { id: "cd-official-national", category: "official", name: "Flag of the Democratic Republic of the Congo", from: 2006, to: 9999, primary: true, path: "flags/cd.svg", design: "The national flag, adopted in 2006.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo" },
@@ -406,6 +409,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ch-official-national", category: "official", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
     { id: "ch-current", category: "historical", name: "Flag of Switzerland", from: 1841, to: 9999, primary: true, path: "flags/ch.svg", design: "The national flag of Switzerland, in the form adopted in 1841.", source: "https://en.wikipedia.org/wiki/Flag_of_Switzerland" },
     { id: "ch-civil-ensign", category: "maritime", name: "Civil and state ensign of Switzerland", from: 1882, to: 9999, path: "national-flags/ch/switzerland-civil-ensign.svg", design: "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.", source: "https://en.wikipedia.org/wiki/List_of_Swiss_flags" },
+    { id: "ch-arms", category: "coatofarms", name: "Coat of arms of Switzerland", from: 1889, to: 9999, path: "national-flags/ch/ch-arms.svg", design: "A white couped cross on a red triangular shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland" },
   ],
   "CI": [
     { id: "ci-official-national", category: "official", name: "Flag of Ivory Coast", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Ivory Coast, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast" },
@@ -999,6 +1003,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kr-1948", category: "historical", name: "Flag of South Korea (1948–1949)", from: 1948, to: 1949, path: "national-flags/kr/south-korea-1948.svg", design: "The flag of the First Republic, before the 1949 standardisation.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
     { id: "kr-current", category: "historical", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
     { id: "kr-president", category: "standard", name: "Flag of the President of South Korea", from: 1967, to: 9999, path: "national-flags/kr/south-korea-president.svg", design: "A blue field bearing the presidential phoenix emblem.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
+    { id: "kr-arms", category: "coatofarms", name: "Emblem of South Korea", from: 1963, to: 9999, path: "national-flags/kr/kr-arms.svg", design: "The red-and-blue taegeuk within five white Hibiscus syriacus petals, on a ribbon reading Republic of Korea.", source: "https://en.wikipedia.org/wiki/Emblem_of_South_Korea" },
   ],
   "KW": [
     { id: "kw-official-national", category: "official", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
@@ -1345,6 +1350,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nz-united-tribes", category: "historical", name: "Flag of the United Tribes of New Zealand", from: 1834, to: 1840, priorPolity: "the Confederation of the United Tribes of New Zealand", path: "national-flags/nz/new-zealand-united-tribes.svg", design: "A St George’s cross on white, with a second cross and four stars in the canton — chosen by 25 northern chiefs in 1834 so New Zealand-built ships could be registered.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
     { id: "nz-civil-ensign", category: "maritime", name: "Civil ensign of New Zealand (Red Ensign)", from: 1901, to: 9999, path: "national-flags/nz/new-zealand-civil-ensign.svg", design: "A red ensign with four white stars representing the Southern Cross.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
     { id: "nz-royal-1962", category: "standard", name: "Personal Flag of Queen Elizabeth II in New Zealand", from: 1962, to: 2022, path: "national-flags/nz/new-zealand-royal-1962.svg", design: "A banner of the New Zealand shield with the Queen’s personal cypher.", source: "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags" },
+    { id: "nz-arms", category: "coatofarms", name: "Coat of arms of New Zealand", from: 1956, to: 9999, path: "national-flags/nz/nz-arms.svg", design: "A shield of the Southern Cross, a fleece, a wheat sheaf, crossed hammers and three ships, borne by a European woman with the flag and a Māori rangatira with a taiaha, crowned by St Edward's Crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand" },
   ],
   "OM": [
     { id: "om-official-national", category: "official", name: "Flag of Oman", from: 1995, to: 9999, primary: true, path: "flags/om.svg", design: "The national flag of Oman, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Oman" },
@@ -2165,6 +2171,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
     ],
   },
+  "at-arms": {
+    description: "The single-headed black eagle carries emblems of the republic's classes, added in 1919: a hammer for the workers, a sickle for the farmers, and a mural crown for the townspeople (bourgeoisie), with the red-white-red shield of Austria on its breast. The broken chains around its talons were added in 1945 to mark liberation from German annexation. The design was first adopted in 1919 and codified in the 1984 arms act.",
+    sources: [
+      { title: "Coat of arms of Austria — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria" },
+    ],
+  },
   "au-aboriginal": {
     description: "Harold Thomas designed the flag in 1971 for the land-rights movement and gave each element a meaning: the black upper half represents the Aboriginal people of Australia, the red lower half the red earth and the ochre used in ceremony, and the yellow disc the sun, the giver of life. It was proclaimed a Flag of Australia in July 1995, and in January 2022 the Commonwealth acquired the copyright so that it can be reproduced freely.",
     sources: [
@@ -2213,6 +2225,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted shortly after independence in 1971, every charge names something the country runs on. The water lily at the centre is the national flower and stands for the many rivers that cross Bangladesh; the rice sheaves flanking it are the staple food; the three jute leaves above are the crop the economy was built on; and the four stars stand for the four founding principles of the 1972 constitution — nationalism, secularism, socialism and democracy.",
     sources: [
       { title: "National Emblem of Bangladesh — Wikipedia", url: "https://en.wikipedia.org/wiki/National_Emblem_of_Bangladesh" },
+    ],
+  },
+  "be-arms": {
+    description: "The golden lion on black — the Leo Belgicus, whose lineage runs to the Duchy of Brabant that led the 1789 Brabant Revolution — stands for Belgium itself, here armed and langued red beneath the royal crown. Two lion supporters, the sceptre and hand of justice, and the collar of the Order of Leopold complete the greater arms, adopted by royal decree in 1837 after independence in 1830. The trilingual motto reads L'union fait la force / Eendracht maakt macht — “Unity makes strength.”",
+    sources: [
+      { title: "Coat of arms of Belgium — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belgium" },
     ],
   },
   "bf-arms": {
@@ -2324,6 +2342,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Belize — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
     ],
   },
+  "ca-arms": {
+    description: "The shield quarters the emblems of the peoples who founded the country — the three lions of England, the lion of Scotland, the harp of Ireland and the fleurs-de-lis of royal France — above a distinctly Canadian sprig of maple leaves (drawn green in 1921, red since 1957). The English lion and Scottish unicorn supporters mirror the British royal arms, the unicorn's broken chain standing for resistance to oppression. The Latin motto, A mari usque ad mare — “from sea to sea” — is from Psalm 72. Granted by royal proclamation in 1921.",
+    sources: [
+      { title: "Arms of Canada — Wikipedia", url: "https://en.wikipedia.org/wiki/Arms_of_Canada" },
+    ],
+  },
   "cf-arms": {
     description: "The shield gathers the country's emblems: an elephant and a baobab tree for its nature and its backbone; an open hand, the symbol of the party that led it to independence; and a gold star on a map of Africa, marking the Central African Republic at the continent's heart. A rising sun crowns it for the dawn of independence, and the Order of Operational Merit hangs below. Two ribbons carry the mottoes — in Sango, Zo Kwe Zo, “All people are people,” and in French, Unité, Dignité, Travail, “Unity, Dignity, Work.”",
     sources: [
@@ -2334,6 +2358,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "On a gold shield a red lion holds a burning torch, above a green wavy band for the Congo River that names the country. A golden crown sits above, and two African elephants — the great animals of the Congo forests — support the shield. The ribbon carries the motto Unité, Travail, Progrès — “Unity, Work, Progress.”",
     sources: [
       { title: "Coat of arms of the Republic of the Congo — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Republic_of_the_Congo" },
+    ],
+  },
+  "ch-arms": {
+    description: "The white couped cross on red is the field sign of the Old Swiss Confederacy, borne by its soldiers and documented as early as 1444. The Federal Council described it in 1889 as at once the Christian cross and the ensign of the old Confederation; that year it fixed the arms of the cross at one-sixth longer than wide. The Diet had adopted the design for the confederal seal in 1815, and it is the same cross the national flag carries.",
+    sources: [
+      { title: "Coat of arms of Switzerland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland" },
     ],
   },
   "ci-arms": {
@@ -2726,6 +2756,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
     ],
   },
+  "kr-arms": {
+    description: "At the centre is the taegeuk, the red-and-blue symbol of the national flag, standing for balance and harmony. It is ringed by five stylised white petals of the Hibiscus syriacus — the mugunghwa, or Rose of Sharon, Korea's national flower — with a ribbon naming the Republic of Korea in Hangul. Both the taegeuk and the flower are widely taken to stand for the Korean people. Adopted on 10 December 1963.",
+    sources: [
+      { title: "Emblem of South Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_South_Korea" },
+    ],
+  },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
@@ -2953,6 +2989,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A frigatebird perches over the blue ocean, and the top of the shield carries the alchemical sign for phosphorus — the phosphate rock on which the island's wealth was built. A twelve-pointed star, as on the flag, sits above, framed by palm fronds, frigatebird feathers and shark teeth. The scroll reads “God's Will First.”",
     sources: [
       { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
+    ],
+  },
+  "nz-arms": {
+    description: "The shield reads the country's making: the four stars of the Southern Cross, a golden fleece for wool, a wheat sheaf for farming, crossed hammers for mining, and three ships down the centre for sea trade and the immigrant character of New Zealanders. The supporters embody its bicultural identity — a European woman holding the national flag and a Māori rangatira bearing a taiaha. St Edward's Crown marks the monarchy, and silver fern fronds flank the “New Zealand” scroll. Granted in 1911 and revised to the present form in 1956.",
+    sources: [
+      { title: "Coat of arms of New Zealand — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand" },
     ],
   },
   "om-emblem": {
