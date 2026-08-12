@@ -139,23 +139,35 @@ export function SubdivisionFlagTabs({
   );
   const natCount = useMemo(() => nationalFlagCount(countryCode), [countryCode]);
 
+  const hasDivisions = divisions.length > 0;
+
   // "National symbols" leads: it holds the country's own symbols — the ones a visitor
   // is most likely to have come for — so it reads before the sub-national grid.
+  // The sub-national / capital-cities / hierarchy tabs all iterate the country's
+  // subdivisions, so they appear only when the country HAS subdivisions; a country
+  // with none (e.g. Kiribati, Monaco) still shows its National symbols tab — the
+  // whole section must never vanish just because there are no divisions.
   const TABS: { id: TabId; label: string; count?: number }[] = [
     ...(natCount > 0
       ? [{ id: "nat" as const, label: "National symbols", count: natCount }]
       : []),
-    { id: "sub", label: "Sub-national divisions", count: subCount },
-    { id: "city", label: "Capital cities", count: cityCount },
-    { id: "tree", label: "Hierarchy" },
+    ...(hasDivisions
+      ? [
+          { id: "sub" as const, label: "Sub-national divisions", count: subCount },
+          { id: "city" as const, label: "Capital cities", count: cityCount },
+          { id: "tree" as const, label: "Hierarchy" },
+        ]
+      : []),
   ];
 
-  // A country with no curated national flags has no such tab, so a persisted
-  // "nat" selection must fall back rather than render an empty panel.
-  const activeTab: TabId = tab === "nat" && natCount === 0 ? "sub" : tab;
+  // Render nothing only when the country has no content at all — no subdivisions
+  // AND no national symbols.
+  if (TABS.length === 0) return null;
 
-
-  if (divisions.length === 0) return null;
+  // Fall the active tab back to the first available one whenever the persisted
+  // choice isn't offered for this country (e.g. a stored "nat" on a country with
+  // no national symbols, or a stored "sub" on a country with no subdivisions).
+  const activeTab: TabId = TABS.some((t) => t.id === tab) ? tab : TABS[0].id;
 
   return (
     <section className="flag-grid" aria-labelledby="subdiv-grid-heading">
