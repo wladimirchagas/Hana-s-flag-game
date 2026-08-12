@@ -204,8 +204,27 @@
           "source": "https://gicg.net/passport/ae/",
           "sha256": "288fb8466964a156bbc6ebcf91751676c3f9e1c68af6ce16e2db1491a93892ae",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ae-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1892,
+          "to": 1971,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "ae/ae-uk.svg",
+          "design": "The Union Flag, flown while the emirates were the British-protected Trucial States.",
+          "source": "https://en.wikipedia.org/wiki/Trucial_States",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1971,
+        "event": "The United Arab Emirates was formed and gained independence from the United Kingdom on 2 December 1971",
+        "source": "https://en.wikipedia.org/wiki/Trucial_States"
+      }
     },
     "AF": {
       "flags": [
@@ -1322,6 +1341,20 @@
           "source": "https://gicg.net/passport/az/",
           "sha256": "f1aa61c9b62fb70712527ccc0ad6cdfdacbbb9e2449b6a212c1a5d4504fbd691",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "az-ssr",
+          "category": "historical",
+          "name": "Flag of the Azerbaijan SSR",
+          "from": 1952,
+          "to": 1991,
+          "priorPolity": "the Azerbaijan Soviet Socialist Republic",
+          "commons": "Flag of the Azerbaijan Soviet Socialist Republic (1952–1991).svg",
+          "file": "az/az-ssr.svg",
+          "design": "Red with a blue stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan",
+          "sha256": "aa7cf16a34856cd47b9af6e2f2cf1a232ca7945ab38b51273fe3bed1c6d2e6cd",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -2130,8 +2163,27 @@
           "source": "https://gicg.net/passport/bh/",
           "sha256": "1171489890742dbe089a4ea0b88199d1b5be3331ca0fd5eb664437eb68529ff1",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "bh-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1861,
+          "to": 1971,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "bh/bh-uk.svg",
+          "design": "The Union Flag, flown while Bahrain was a British protectorate.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Bahrain",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1971,
+        "event": "Bahrain became independent from the United Kingdom on 15 August 1971",
+        "source": "https://en.wikipedia.org/wiki/History_of_Bahrain"
+      }
     },
     "BI": {
       "flags": [
@@ -9529,8 +9581,27 @@
           "source": "https://gicg.net/passport/il/",
           "sha256": "d8886af334f34d02e01298c9de8c921a4264274373a094cd2c8f0c489a808a40",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "il-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1920,
+          "to": 1948,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "il/il-uk.svg",
+          "design": "The Union Flag, the Union Flag of the British Mandate for Palestine.",
+          "source": "https://en.wikipedia.org/wiki/Mandatory_Palestine",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1948,
+        "event": "Israel declared independence on 14 May 1948 as the British Mandate for Palestine ended",
+        "source": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence"
+      }
     },
     "IN": {
       "flags": [
@@ -9784,10 +9855,11 @@
           "to": 1924,
           "commons": "Flag of the Arab Federation.svg",
           "file": "iq/iraq-arab-federation.svg",
-          "design": "The Hashemite flag flown from 1921, and used again in 1958 for the short-lived federation with Jordan.",
+          "design": "The Hashemite flag of the Kingdom of Iraq, flown from 1921 under the British Mandate; the same design served again in 1958 for the short-lived Arab Federation with Jordan.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
           "sha256": "cee61ae266f43970a09217c0cbf9b325bed169e2d8bc48ee7d7ae9632a29ab33",
-          "fetched": "2026-08-08"
+          "fetched": "2026-08-08",
+          "sovereign": "the United Kingdom"
         },
         {
           "id": "iq-ground-forces",
@@ -9858,8 +9930,27 @@
           "source": "https://gicg.net/passport/iq/",
           "sha256": "1bac7477f7d501f815423088bca1e8d46429ac118ab2f205bd481511e6c5913b",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "iq-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1920,
+          "to": 1932,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "iq/iq-uk.svg",
+          "design": "The Union Flag, the Union Flag of the British Mandate for Mesopotamia.",
+          "source": "https://en.wikipedia.org/wiki/Mandatory_Iraq",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1932,
+        "event": "Iraq became independent from the United Kingdom on 3 October 1932, ending the British Mandate",
+        "source": "https://en.wikipedia.org/wiki/Mandatory_Iraq"
+      }
     },
     "IR": {
       "flags": [
@@ -12260,8 +12351,27 @@
           "source": "https://gicg.net/passport/lk/",
           "sha256": "b14202ef5fe1a6c7043853633f4d0cf6a58292efbfc8c23019412a6328f4270f",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "lk-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1815,
+          "to": 1948,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "lk/lk-uk.svg",
+          "design": "The Union Flag, flown while Ceylon (now Sri Lanka) was a British Crown colony.",
+          "source": "https://en.wikipedia.org/wiki/British_Ceylon",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1948,
+        "event": "Ceylon (now Sri Lanka) became independent from the United Kingdom on 4 February 1948",
+        "source": "https://en.wikipedia.org/wiki/British_Ceylon"
+      }
     },
     "LR": {
       "flags": [
@@ -13183,6 +13293,20 @@
           "source": "https://gicg.net/passport/md/",
           "sha256": "1b3ef74746af558e5a9a57b224cfd02ece95909f1e527282cdfc6b26ab4d37f8",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "md-ssr",
+          "category": "historical",
+          "name": "Flag of the Moldavian SSR",
+          "from": 1952,
+          "to": 1990,
+          "priorPolity": "the Moldavian Soviet Socialist Republic",
+          "commons": "Flag of the Moldavian Soviet Socialist Republic (1952–1990).svg",
+          "file": "md/md-ssr.svg",
+          "design": "Red with a central green stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Moldova",
+          "sha256": "259489dfa9fc7f6f1411023be7fac979bb931b5b15802f2f34742bb73d0f583f",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -13786,8 +13910,27 @@
           "source": "https://gicg.net/passport/mm/",
           "sha256": "573c4dec4980d885d13a8c223bce1335186295e90e56293a9366fc4d1b16ed52",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mm-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1886,
+          "to": 1948,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "mm/mm-uk.svg",
+          "design": "The Union Flag, flown while Burma (now Myanmar) was a British colony.",
+          "source": "https://en.wikipedia.org/wiki/British_rule_in_Burma",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1948,
+        "event": "Burma (now Myanmar) became independent from the United Kingdom on 4 January 1948",
+        "source": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+      }
     },
     "MN": {
       "flags": [
@@ -14239,8 +14382,27 @@
           "source": "https://gicg.net/passport/mv/",
           "sha256": "28e54f7dff4f63420bce09f560b981f05f845b0959fcf1f21a1a7642499d5015",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mv-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1887,
+          "to": 1965,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "mv/mv-uk.svg",
+          "design": "The Union Flag, flown while the Maldives was a British protectorate.",
+          "source": "https://en.wikipedia.org/wiki/History_of_the_Maldives",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1965,
+        "event": "The Maldives became fully independent from the United Kingdom on 26 July 1965",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Maldives"
+      }
     },
     "MW": {
       "flags": [
@@ -16979,8 +17141,27 @@
           "source": "https://gicg.net/passport/pk/",
           "sha256": "7183c87bf133fce03b900541603f3868514bb6302f7cf5ae132e83393537b24e",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "pk-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1858,
+          "to": 1947,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "pk/pk-uk.svg",
+          "design": "The Union Flag, flown over British India until partition and independence in 1947.",
+          "source": "https://en.wikipedia.org/wiki/British_Raj",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1947,
+        "event": "Pakistan became independent from the United Kingdom on 14 August 1947 at the partition of British India",
+        "source": "https://en.wikipedia.org/wiki/Partition_of_India"
+      }
     },
     "PL": {
       "flags": [
@@ -20803,8 +20984,27 @@
           "source": "https://gicg.net/passport/to/",
           "sha256": "0b6d8c525dfdf3fe986fdfe434662be647290e3eccde204e352195d015f4bf42",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "to-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1900,
+          "to": 1970,
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "to/to-uk.svg",
+          "design": "The Union Flag, flown while Tonga was a British-protected state.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Tonga",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1970,
+        "event": "Tonga's full independence and the end of the British protectorate came on 4 June 1970",
+        "source": "https://en.wikipedia.org/wiki/History_of_Tonga"
+      }
     },
     "TR": {
       "flags": [
@@ -22538,6 +22738,20 @@
           "design": "The cover of the Uzbekistan passport.",
           "source": "https://gicg.net/passport/uz/",
           "sha256": "31ebd547b4541d68b362ec0188e8c386cf85845c1221d3c54864210bdfacb65b",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "uz-ssr",
+          "category": "historical",
+          "name": "Flag of the Uzbek SSR",
+          "from": 1952,
+          "to": 1991,
+          "priorPolity": "the Uzbek Soviet Socialist Republic",
+          "commons": "Flag of the Uzbek Soviet Socialist Republic (1952–1991).svg",
+          "file": "uz/uz-ssr.svg",
+          "design": "Red with a white-edged blue stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan",
+          "sha256": "880d5603d8f9ab695f02f62b3e2103d553e0f3618aa395f01086dbef938ef2f9",
           "fetched": "2026-08-12"
         }
       ]
