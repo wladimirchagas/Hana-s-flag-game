@@ -984,6 +984,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "KP": [
     { id: "kp-official-national", category: "official", name: "Flag of North Korea", from: 1948, to: 9999, primary: true, path: "flags/kp.svg", design: "The national flag of North Korea, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
     { id: "kp-current", category: "historical", name: "Flag of North Korea", from: 1948, to: 9999, primary: true, path: "flags/kp.svg", design: "The national flag of North Korea, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
+    { id: "kp-japan", category: "historical", name: "Flag of Japan", from: 1910, to: 1945, sovereign: "the Empire of Japan", path: "national-flags/kp/kp-japan.svg", design: "The Hinomaru, flown over Korea throughout Japanese colonial rule from the 1910 annexation until liberation in 1945.", source: "https://en.wikipedia.org/wiki/Korea_under_Japanese_rule" },
+    { id: "kp-korean-empire", category: "historical", name: "Flag of the Korean Empire", from: 1882, to: 1910, priorPolity: "the Korean Empire", path: "national-flags/kp/kp-korean-empire.svg", design: "The Taegukgi of the Korean Empire (and the preceding Joseon kingdom), the last flag of an independent Korean state before Japan annexed the peninsula in 1910.", source: "https://en.wikipedia.org/wiki/Korean_Empire" },
+    { id: "kp-arms", category: "coatofarms", name: "Emblem of North Korea", from: 1948, to: 9999, path: "national-flags/kp/kp-arms.svg", design: "A hydroelectric dam beneath Mount Paektu and a red star, framed by ears of rice bound with a red ribbon.", source: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
   ],
   "KR": [
     { id: "kr-official-national", category: "official", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
@@ -1431,6 +1434,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "PS": [
     { id: "ps-official-national", category: "official", name: "Flag of Palestine", from: 1988, to: 9999, primary: true, path: "flags/ps.svg", design: "The national flag of Palestine, in the form adopted in 1988.", source: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
     { id: "ps-current", category: "historical", name: "Flag of Palestine", from: 1988, to: 9999, primary: true, path: "flags/ps.svg", design: "The national flag of Palestine, in the form adopted in 1988.", source: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
+    { id: "ps-mandate", category: "historical", name: "Flag of the United Kingdom", from: 1920, to: 1948, sovereign: "the United Kingdom", path: "national-flags/ps/ps-mandate.svg", design: "The Union Flag, flown as the official flag of the British Mandate for Palestine from 1920 until it ended in 1948.", source: "https://en.wikipedia.org/wiki/Mandatory_Palestine" },
+    { id: "ps-arms", category: "coatofarms", name: "Coat of arms of the State of Palestine", from: 2013, to: 9999, path: "national-flags/ps/ps-arms.svg", design: "The Eagle of Saladin bearing a shield in the flag's colours, above a scroll reading Filastin (Palestine) in Arabic.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine" },
   ],
   "PT": [
     { id: "pt-official-national", category: "official", name: "Flag of Portugal", from: 1912, to: 9999, primary: true, path: "flags/pt.svg", design: "The national flag of Portugal, in the form adopted in 1912.", source: "https://en.wikipedia.org/wiki/Flag_of_Portugal" },
@@ -2037,6 +2042,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "KI": { year: 1979, event: "Kiribati became independent from the United Kingdom on 12 July 1979, ending the Gilbert Islands colony", source: "https://en.wikipedia.org/wiki/History_of_Kiribati" },
   "KM": { year: 1975, event: "The Comoros declared independence from France on 6 July 1975", source: "https://en.wikipedia.org/wiki/History_of_the_Comoros" },
   "KN": { year: 1983, event: "Saint Kitts and Nevis became independent from the United Kingdom on 19 September 1983", source: "https://en.wikipedia.org/wiki/History_of_Saint_Kitts_and_Nevis" },
+  "KP": { year: 1948, event: "The Democratic People's Republic of Korea was proclaimed on 9 September 1948; Korea had been liberated from 35 years of Japanese colonial rule in 1945 and the peninsula was then divided into Soviet- and US-administered zones", source: "https://en.wikipedia.org/wiki/History_of_North_Korea" },
   "KW": { year: 1961, event: "Independence from the United Kingdom, 19 June 1961", source: "https://en.wikipedia.org/wiki/History_of_Kuwait" },
   "LA": { year: 1953, event: "Full independence from France, 22 October 1953", note: "The Kingdom of Laos was succeeded by the Lao People's Democratic Republic in 1975.", source: "https://en.wikipedia.org/wiki/History_of_Laos" },
   "LB": { year: 1943, event: "Lebanon became fully independent from France on 22 November 1943, ending the French mandate over Greater Lebanon", source: "https://en.wikipedia.org/wiki/History_of_Lebanon" },
@@ -2068,6 +2074,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "PE": { year: 1821, event: "Independence from Spain proclaimed by José de San Martín at Lima, 28 July 1821", note: "Spanish forces were not finally defeated until Ayacucho in 1824.", source: "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence" },
   "PG": { year: 1975, event: "Papua New Guinea became independent from Australia on 16 September 1975", source: "https://en.wikipedia.org/wiki/History_of_Papua_New_Guinea" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
+  "PS": { year: 1988, event: "The Palestinian Declaration of Independence proclaimed the State of Palestine on 15 November 1988; the territory had been the British Mandate for Palestine from 1920 to 1948", source: "https://en.wikipedia.org/wiki/Palestinian_Declaration_of_Independence" },
   "PW": { year: 1994, event: "Palau became a fully sovereign state on 1 October 1994 under a Compact of Free Association with the United States, ending the US-administered UN Trust Territory of the Pacific Islands; the self-governing Republic had been established in 1981", source: "https://en.wikipedia.org/wiki/History_of_Palau" },
   "QA": { year: 1971, event: "Independence from the United Kingdom, 3 September 1971", source: "https://en.wikipedia.org/wiki/History_of_Qatar" },
   "RW": { year: 1962, event: "Rwanda became independent from Belgium on 1 July 1962, ending Belgian administration of the Ruanda-Urundi trust territory", source: "https://en.wikipedia.org/wiki/History_of_Rwanda" },
@@ -2689,6 +2696,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Saint Kitts and Nevis — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
     ],
   },
+  "kp-arms": {
+    description: "Adopted in 1948 and revised in 1993, the emblem shows the Sup'ung hydroelectric dam beneath a mountain — specified in 1993 as Mount Paektu, the peak tied in state ideology to the anti-Japanese revolutionary tradition — crowned by a red socialist star. The dam stands for the industrial power and self-sufficiency of the north, which produced most of Korea's electricity in 1948; the surrounding ears of rice, bound by a red ribbon carrying the state's name, stand for agriculture.",
+    sources: [
+      { title: "Emblem of North Korea — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
+    ],
+  },
   "kw-emblem": {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
@@ -2952,6 +2965,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The white crowned eagle on red is the oldest continuously used state emblem in Europe, borne by the Piast dynasty from the 13th century, and the crown is the point of it: the People's Republic used the same eagle with the crown removed from 1944, legalised in 1952, and restoring the crown in the Act of 22 February 1990 was how the reborn republic marked the end of communist rule. The current drawing is by Andrzej Heidrich and differs noticeably from Zygmunt Kamiński's pre-war eagle, which the communist version had also deformed about the head and eye.",
     sources: [
       { title: "Coat of arms of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
+    ],
+  },
+  "ps-arms": {
+    description: "The emblem centres on the Eagle of Saladin — a device dating to the Ayyubid sultan Salah ad-Din and adopted across the modern Arab world as a symbol of Arab victory and unity, shared in form with Egypt and Iraq. It bears a shield in the pan-Arab colours of the Palestinian flag and a scroll reading دولة فلسطين, “State of Palestine.” This wording replaced the earlier “Palestinian Authority” form after Palestine gained UN non-member observer-state status in 2012.",
+    sources: [
+      { title: "Coat of arms of Palestine — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine" },
     ],
   },
   "pw-arms": {

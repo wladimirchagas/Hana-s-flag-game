@@ -10100,8 +10100,63 @@
           "reuse": "flags/kp.svg",
           "design": "The national flag of North Korea, in the form adopted in 1948.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_North_Korea"
+        },
+        {
+          "id": "kp-japan",
+          "category": "historical",
+          "from": 1910,
+          "to": 1945,
+          "name": "Flag of Japan",
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "kp/kp-japan.svg",
+          "sovereign": "the Empire of Japan",
+          "design": "The Hinomaru, flown over Korea throughout Japanese colonial rule from the 1910 annexation until liberation in 1945.",
+          "source": "https://en.wikipedia.org/wiki/Korea_under_Japanese_rule",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "kp-korean-empire",
+          "category": "historical",
+          "from": 1882,
+          "to": 1910,
+          "name": "Flag of the Korean Empire",
+          "commons": "Flag of Korea (1882–1910).svg",
+          "file": "kp/kp-korean-empire.svg",
+          "priorPolity": "the Korean Empire",
+          "design": "The Taegukgi of the Korean Empire (and the preceding Joseon kingdom), the last flag of an independent Korean state before Japan annexed the peninsula in 1910.",
+          "source": "https://en.wikipedia.org/wiki/Korean_Empire",
+          "sha256": "ccd1c71a03df3441bef4edb1abcce22a41806bce674c0cde937efec1b5a83ccd",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "kp-arms",
+          "category": "coatofarms",
+          "from": 1948,
+          "to": 9999,
+          "name": "Emblem of North Korea",
+          "commons": "Emblem of North Korea.svg",
+          "file": "kp/kp-arms.svg",
+          "design": "A hydroelectric dam beneath Mount Paektu and a red star, framed by ears of rice bound with a red ribbon.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_North_Korea",
+          "meaning": {
+            "description": "Adopted in 1948 and revised in 1993, the emblem shows the Sup'ung hydroelectric dam beneath a mountain — specified in 1993 as Mount Paektu, the peak tied in state ideology to the anti-Japanese revolutionary tradition — crowned by a red socialist star. The dam stands for the industrial power and self-sufficiency of the north, which produced most of Korea's electricity in 1948; the surrounding ears of rice, bound by a red ribbon carrying the state's name, stand for agriculture.",
+            "sources": [
+              {
+                "title": "Emblem of North Korea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_North_Korea"
+              }
+            ]
+          },
+          "sha256": "9ff31cb9476334c150eabe275d315e0a91158d4c6c403b868049c678ae969b84",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1948,
+        "event": "The Democratic People's Republic of Korea was proclaimed on 9 September 1948; Korea had been liberated from 35 years of Japanese colonial rule in 1945 and the peninsula was then divided into Soviet- and US-administered zones",
+        "source": "https://en.wikipedia.org/wiki/History_of_North_Korea"
+      }
     },
     "KR": {
       "flags": [
@@ -15055,8 +15110,49 @@
           "reuse": "flags/ps.svg",
           "design": "The national flag of Palestine, in the form adopted in 1988.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Palestine"
+        },
+        {
+          "id": "ps-mandate",
+          "category": "historical",
+          "from": 1920,
+          "to": 1948,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "ps/ps-mandate.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown as the official flag of the British Mandate for Palestine from 1920 until it ended in 1948.",
+          "source": "https://en.wikipedia.org/wiki/Mandatory_Palestine",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "ps-arms",
+          "category": "coatofarms",
+          "from": 2013,
+          "to": 9999,
+          "name": "Coat of arms of the State of Palestine",
+          "commons": "Coat of arms of Palestine.svg",
+          "file": "ps/ps-arms.svg",
+          "design": "The Eagle of Saladin bearing a shield in the flag's colours, above a scroll reading Filastin (Palestine) in Arabic.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine",
+          "meaning": {
+            "description": "The emblem centres on the Eagle of Saladin — a device dating to the Ayyubid sultan Salah ad-Din and adopted across the modern Arab world as a symbol of Arab victory and unity, shared in form with Egypt and Iraq. It bears a shield in the pan-Arab colours of the Palestinian flag and a scroll reading دولة فلسطين, “State of Palestine.” This wording replaced the earlier “Palestinian Authority” form after Palestine gained UN non-member observer-state status in 2012.",
+            "sources": [
+              {
+                "title": "Coat of arms of Palestine — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Palestine"
+              }
+            ]
+          },
+          "sha256": "237d03a16b01eff832848e54d24b3ae1e0b419f2131956f5d8ecfebd128c64e7",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1988,
+        "event": "The Palestinian Declaration of Independence proclaimed the State of Palestine on 15 November 1988; the territory had been the British Mandate for Palestine from 1920 to 1948",
+        "source": "https://en.wikipedia.org/wiki/Palestinian_Declaration_of_Independence"
+      }
     },
     "PT": {
       "flags": [
