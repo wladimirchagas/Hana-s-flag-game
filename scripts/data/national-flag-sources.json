@@ -2471,6 +2471,20 @@
           "source": "https://gicg.net/passport/bn/",
           "sha256": "54bf262e3fdc257148e2b4daa9bef21c5d62b37b9c197c4333eb43100db50230",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "bn-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1888,
+          "to": 1984,
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "bn/bn-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Brunei was a British protected state until independence in 1984.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Brunei",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -11745,8 +11759,41 @@
           "source": "https://gicg.net/passport/kr/",
           "sha256": "1c739bfb008012df673d123a07abcda713cf173cbdb295e25a30a16ad3840b90",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "kr-japan",
+          "category": "historical",
+          "name": "Flag of Japan",
+          "from": 1910,
+          "to": 1945,
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "kr/kr-japan.svg",
+          "sovereign": "the Empire of Japan",
+          "design": "The Hinomaru, flown over Korea throughout Japanese colonial rule from the 1910 annexation until liberation in 1945.",
+          "source": "https://en.wikipedia.org/wiki/Korea_under_Japanese_rule",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "kr-korean-empire",
+          "category": "historical",
+          "name": "Flag of the Korean Empire",
+          "from": 1882,
+          "to": 1910,
+          "commons": "Flag of Korea (1882–1910).svg",
+          "file": "kr/kr-korean-empire.svg",
+          "priorPolity": "the Korean Empire",
+          "design": "The Taegukgi of the Korean Empire (and the preceding Joseon kingdom), the last flag of an independent Korean state before Japan annexed the peninsula in 1910.",
+          "source": "https://en.wikipedia.org/wiki/Korean_Empire",
+          "sha256": "ccd1c71a03df3441bef4edb1abcce22a41806bce674c0cde937efec1b5a83ccd",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1948,
+        "event": "The Republic of Korea was established on 15 August 1948; Korea had been liberated from 35 years of Japanese colonial rule in 1945 and divided into US- and Soviet-administered zones",
+        "source": "https://en.wikipedia.org/wiki/History_of_South_Korea"
+      }
     },
     "KW": {
       "flags": [
@@ -12079,6 +12126,20 @@
           "design": "The cover of the Laos passport.",
           "source": "https://gicg.net/passport/la/",
           "sha256": "4a475533f3da1fb5c82cb04b79e4e8cf8c2ca60606d754ba999e40bf269bc395",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "la-france",
+          "category": "historical",
+          "name": "Flag of France",
+          "from": 1893,
+          "to": 1953,
+          "commons": "Flag of France.svg",
+          "file": "la/la-france.svg",
+          "sovereign": "France",
+          "design": "The flag of France, flown while Laos was a protectorate within French Indochina until independence in 1953.",
+          "source": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
           "fetched": "2026-08-12"
         }
       ],
@@ -13147,6 +13208,20 @@
           "source": "https://gicg.net/passport/ly/",
           "sha256": "ecd1cb7430707bddd0f6fb90058a7e7fef7a042264bfd764f29a82e3a6459989",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ly-italy",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Italy",
+          "from": 1911,
+          "to": 1943,
+          "commons": "Flag of Italy (1861–1946).svg",
+          "file": "ly/ly-italy.svg",
+          "sovereign": "the Kingdom of Italy",
+          "design": "The flag of the Kingdom of Italy, flown over Italian Libya from 1911 until the Italian defeat in 1943; Libya became independent in 1951.",
+          "source": "https://en.wikipedia.org/wiki/Italian_Libya",
+          "sha256": "ca49da45ef1110dff1148e2c21cc0c6b9667a3e07367a9b3940d71228dfae391",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -13249,8 +13324,27 @@
           "source": "https://gicg.net/passport/ma/",
           "sha256": "c622a9494f40ae440300904cc942112ef7c7b7e260e6f97692d3e00dadb54bc7",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ma-france",
+          "category": "historical",
+          "name": "Flag of France",
+          "from": 1912,
+          "to": 1956,
+          "commons": "Flag of France.svg",
+          "file": "ma/ma-france.svg",
+          "sovereign": "France",
+          "design": "The flag of France, flown over the French protectorate of Morocco until independence in 1956.",
+          "source": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco",
+          "sha256": "e949902c7677422d88137d385b9edbe91323470c7933824cc968aca3965fc37c",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1956,
+        "event": "Morocco regained independence from France on 2 March 1956, and from Spain later that year, ending the protectorates established in 1912",
+        "source": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco"
+      }
     },
     "MC": {
       "flags": [
