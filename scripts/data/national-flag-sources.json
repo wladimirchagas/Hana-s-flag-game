@@ -214,7 +214,7 @@
           "to": 9999,
           "name": "Flag of Antigua and Barbuda",
           "reuse": "flags/ag.svg",
-          "design": "The national flag of Antigua and Barbuda, in the form adopted in 1967.",
+          "design": "The national flag, adopted in 1967.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda"
         },
         {
@@ -224,10 +224,51 @@
           "to": 9999,
           "name": "Flag of Antigua and Barbuda",
           "reuse": "flags/ag.svg",
-          "design": "The national flag of Antigua and Barbuda, in the form adopted in 1967.",
+          "design": "A red field with a black, blue and white V bearing a rising golden sun — the sun for the dawn of a new era, black for the African heritage, blue for hope, white for the sand, red for the energy of the people, the V for victory.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda"
+        },
+        {
+          "id": "ag-uk",
+          "category": "historical",
+          "from": 1632,
+          "to": 1981,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "ag/ag-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Antigua and Barbuda was a British colony.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "ag-arms",
+          "category": "coatofarms",
+          "from": 1967,
+          "to": 9999,
+          "name": "Coat of arms of Antigua and Barbuda",
+          "commons": "Coat of arms of Antigua and Barbuda.svg",
+          "file": "ag/ag-arms.svg",
+          "design": "A sugar mill and rising sun over the sea, held by two deer, crested with a pineapple.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda",
+          "meaning": {
+            "description": "A stylised sugar mill on a blue-and-white sea sits beneath the rising sun of the flag, for the sugar trade the islands were built on. Two deer support the shield for the wildlife, and a pineapple — the fruit Antigua is famous for — crowns it, flanked by hibiscus, sugarcane and the century plant. The motto reads “Each Endeavouring, All Achieving.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Antigua and Barbuda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda"
+              }
+            ]
+          },
+          "sha256": "36b61f0090b12085c8520b717437d8df76b48d2cf44e433cba410eed67700adb",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1981,
+        "event": "Antigua and Barbuda became independent from the United Kingdom on 1 November 1981",
+        "source": "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda"
+      }
     },
     "AL": {
       "flags": [
@@ -11584,22 +11625,77 @@
           "category": "official",
           "from": 1979,
           "to": 9999,
-          "name": "Flag of Marshall Islands",
+          "name": "Flag of the Marshall Islands",
           "reuse": "flags/mh.svg",
-          "design": "The national flag of Marshall Islands, in the form adopted in 1979.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Marshall_Islands"
+          "design": "The national flag, adopted in 1979.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands"
         },
         {
           "id": "mh-current",
           "category": "historical",
           "from": 1979,
           "to": 9999,
-          "name": "Flag of Marshall Islands",
+          "name": "Flag of the Marshall Islands",
           "reuse": "flags/mh.svg",
-          "design": "The national flag of Marshall Islands, in the form adopted in 1979.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Marshall_Islands"
+          "design": "A blue field crossed by widening orange and white rays from the hoist, with a white 24-pointed star — blue for the ocean, the rays for the equator and the two island chains (Ratak “sunrise,” orange; Ralik “sunset,” white), the 24 points for the municipalities.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands"
+        },
+        {
+          "id": "mh-us",
+          "category": "historical",
+          "from": 1947,
+          "to": 1986,
+          "name": "Flag of the United States",
+          "commons": "Flag of the United States.svg",
+          "file": "mh/mh-us.svg",
+          "sovereign": "the United States",
+          "design": "The flag of the United States, which administered the islands as the UN Trust Territory of the Pacific Islands until 1986.",
+          "source": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands",
+          "sha256": "48f0d3e4a7bf2d5c0c8d09cd975696acb2f3af601aaca80c537933ad9ec166ec",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "mh-japan",
+          "category": "historical",
+          "from": 1920,
+          "to": 1944,
+          "name": "Flag of Japan",
+          "commons": "Flag of Japan.svg",
+          "file": "mh/mh-japan.svg",
+          "sovereign": "Japan",
+          "design": "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.",
+          "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
+          "sha256": "35e785339e19d1ec1987cb9c3d8e66fc97f29a287db0b0b590b8dfdd96d4766b",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "mh-arms",
+          "category": "coatofarms",
+          "from": 1992,
+          "to": 9999,
+          "name": "Seal of the Marshall Islands",
+          "commons": "Seal of the Marshall Islands.svg",
+          "file": "mh/mh-arms.svg",
+          "design": "An angel over two islands with a canoe, a palm and a stick chart, on the blue of the sea.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands",
+          "meaning": {
+            "description": "On a blue field for the sea, an angel with outstretched wings stands for peace above the shield. Below are two islands with a palm tree and an outrigger canoe, and a stick chart — the traditional Marshallese navigation chart of shells and palm ribs. The motto reads Jepilpilin ke Ejukaan — “Accomplishment Through Joint Effort.”",
+            "sources": [
+              {
+                "title": "Seal of the Marshall Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands"
+              }
+            ]
+          },
+          "sha256": "2e1f3facd4878b1b57cd923c9690dfd06535de29ce27494dc666031dd941af15",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1986,
+        "event": "The Marshall Islands became a sovereign state in free association with the United States on 21 October 1986, ending the US-administered Trust Territory of the Pacific Islands",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Marshall_Islands"
+      }
     },
     "MK": {
       "flags": [
@@ -12229,20 +12325,42 @@
           "category": "official",
           "from": 1965,
           "to": 9999,
-          "name": "Flag of Maldives",
+          "name": "Flag of the Maldives",
           "reuse": "flags/mv.svg",
-          "design": "The national flag of Maldives, in the form adopted in 1965.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Maldives"
+          "design": "The national flag, adopted at independence in 1965.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Maldives"
         },
         {
           "id": "mv-current",
           "category": "historical",
           "from": 1965,
           "to": 9999,
-          "name": "Flag of Maldives",
+          "name": "Flag of the Maldives",
           "reuse": "flags/mv.svg",
-          "design": "The national flag of Maldives, in the form adopted in 1965.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Maldives"
+          "design": "A red field with a green rectangle bearing a white crescent — red for the blood of the heroes who defended the country, green for peace and prosperity, the crescent for the Islamic faith.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Maldives"
+        },
+        {
+          "id": "mv-arms",
+          "category": "coatofarms",
+          "from": 1965,
+          "to": 9999,
+          "name": "Emblem of the Maldives",
+          "commons": "Emblem of Maldives.svg",
+          "file": "mv/mv-arms.svg",
+          "design": "A coconut palm between two national flags, over a crescent, star and scroll.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives",
+          "meaning": {
+            "description": "A coconut palm — the tree that sustains the islanders — rises between two national flags, above a crescent and star for the Islamic faith of the state and its authority, over a scroll bearing the country's traditional title, Ad-Dawlat Al-Mahaldheebiyya.",
+            "sources": [
+              {
+                "title": "Emblem of the Maldives — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_the_Maldives"
+              }
+            ]
+          },
+          "sha256": "42f65c630cbef163b195ebf20b16629c00ff54d36a0212cb0148730f4a8006c7",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -13612,22 +13730,77 @@
           "category": "official",
           "from": 1968,
           "to": 9999,
-          "name": "Flag of Naoero",
+          "name": "Flag of Nauru",
           "reuse": "flags/nr.svg",
-          "design": "The national flag of Naoero, in the form adopted in 1968.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Naoero"
+          "design": "The national flag, adopted at independence in 1968.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Nauru"
         },
         {
           "id": "nr-current",
           "category": "historical",
           "from": 1968,
           "to": 9999,
-          "name": "Flag of Naoero",
+          "name": "Flag of Nauru",
           "reuse": "flags/nr.svg",
-          "design": "The national flag of Naoero, in the form adopted in 1968.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Naoero"
+          "design": "A blue field with a narrow gold stripe and a white twelve-pointed star below it — blue for the Pacific, the gold stripe for the Equator, the star for Nauru's position just south of it, the twelve points for the island's twelve original tribes.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Nauru"
+        },
+        {
+          "id": "nr-australia",
+          "category": "historical",
+          "from": 1920,
+          "to": 1968,
+          "name": "Flag of Australia",
+          "commons": "Flag of Australia.svg",
+          "file": "nr/nr-australia.svg",
+          "sovereign": "Australia",
+          "design": "The flag of Australia, which administered Nauru under a League of Nations mandate and then a UN trusteeship (jointly with Britain and New Zealand) until 1968.",
+          "source": "https://en.wikipedia.org/wiki/Nauru",
+          "sha256": "8ccf95cf3507e88d10aa57a1e3b3853d72933c6784e6f67fe3cd3bf12ea68a4d",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "nr-german",
+          "category": "historical",
+          "from": 1888,
+          "to": 1914,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "nr/nr-german.svg",
+          "sovereign": "the German Empire",
+          "design": "The flag of the German Empire, which annexed Nauru as a protectorate in 1888 and held it until 1914.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Nauru",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "nr-arms",
+          "category": "coatofarms",
+          "from": 1968,
+          "to": 9999,
+          "name": "Coat of arms of Nauru",
+          "commons": "Coat of arms of Nauru.svg",
+          "file": "nr/nr-arms.svg",
+          "design": "A frigatebird and phosphorus symbol beneath a twelve-pointed star, framed by palm and feathers.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru",
+          "meaning": {
+            "description": "A frigatebird perches over the blue ocean, and the top of the shield carries the alchemical sign for phosphorus — the phosphate rock on which the island's wealth was built. A twelve-pointed star, as on the flag, sits above, framed by palm fronds, frigatebird feathers and shark teeth. The scroll reads “God's Will First.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Nauru — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru"
+              }
+            ]
+          },
+          "sha256": "7e955f294c29edfa87a2d786ca4bf69c7c3c947970a5bb4557e022a855985d81",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1968,
+        "event": "Nauru became independent on 31 January 1968, ending the Australian-administered UN trusteeship",
+        "source": "https://en.wikipedia.org/wiki/History_of_Nauru"
+      }
     },
     "NZ": {
       "flags": [
@@ -19335,7 +19508,7 @@
           "to": 9999,
           "name": "Flag of Saint Vincent and the Grenadines",
           "reuse": "flags/vc.svg",
-          "design": "The national flag of Saint Vincent and the Grenadines, in the form adopted in 1985.",
+          "design": "The national flag, adopted in 1985.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines"
         },
         {
@@ -19345,10 +19518,51 @@
           "to": 9999,
           "name": "Flag of Saint Vincent and the Grenadines",
           "reuse": "flags/vc.svg",
-          "design": "The national flag of Saint Vincent and the Grenadines, in the form adopted in 1985.",
+          "design": "Blue, gold and green bands with three green diamonds in a V on the gold — blue for the sky and sea, gold for the warmth and the sands, green for the lush islands; the diamonds are the “Gems of the Antilles,” set as a V for Vincent.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines"
+        },
+        {
+          "id": "vc-uk",
+          "category": "historical",
+          "from": 1763,
+          "to": 1979,
+          "name": "Flag of the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "vc/vc-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown while Saint Vincent was a British colony.",
+          "source": "https://en.wikipedia.org/wiki/History_of_Saint_Vincent_and_the_Grenadines",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "vc-arms",
+          "category": "coatofarms",
+          "from": 1979,
+          "to": 9999,
+          "name": "Coat of arms of Saint Vincent and the Grenadines",
+          "commons": "Coat of arms of Saint Vincent and the Grenadines.svg",
+          "file": "vc/vc-arms.svg",
+          "design": "Two women representing Peace and Justice before an altar, with a cotton plant.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines",
+          "meaning": {
+            "description": "Two women in classical Roman dress stand for the country's ideals — Peace, holding an olive branch, and Justice, kneeling with golden scales before an altar. The green shield between them bears a cotton plant, a mainstay of the old island economy. The motto reads Pax et Justitia — “Peace and Justice.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Saint Vincent and the Grenadines — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Vincent_and_the_Grenadines"
+              }
+            ]
+          },
+          "sha256": "b907a0e44d0147dd830a80024d09cf26dffe21fdd1d853f057f683639fc7c0d6",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1979,
+        "event": "Saint Vincent and the Grenadines became independent from the United Kingdom on 27 October 1979",
+        "source": "https://en.wikipedia.org/wiki/History_of_Saint_Vincent_and_the_Grenadines"
+      }
     },
     "VE": {
       "flags": [
