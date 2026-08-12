@@ -6,7 +6,7 @@ import { NationalFlagGrid } from "./NationalFlagGrid";
 import { SubdivisionHierarchyChart } from "./SubdivisionHierarchyChart";
 import { SubdivisionHierarchyTable } from "./SubdivisionHierarchyTable";
 import { countryCityFlagCount } from "../lib/cityFlags";
-import { nationalFlagCount } from "../lib/nationalFlags";
+import { totalNationalFlagCount } from "../lib/specialEntities";
 import type { NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning } from "../data/flagMeanings";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
@@ -142,7 +142,9 @@ export function SubdivisionFlagTabs({
     () => countryCityFlagCount(countryCode),
     [countryCode],
   );
-  const natCount = useMemo(() => nationalFlagCount(countryCode), [countryCode]);
+  // Includes the country's own symbols AND any special-status entities grouped
+  // under it (China → Hong Kong, Macau, Taiwan), so the count matches the grid.
+  const natCount = useMemo(() => totalNationalFlagCount(countryCode), [countryCode]);
 
   const hasDivisions = divisions.length > 0;
 
