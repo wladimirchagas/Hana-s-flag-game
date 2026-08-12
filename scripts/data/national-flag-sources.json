@@ -9323,8 +9323,27 @@
           "source": "https://gicg.net/passport/id/",
           "sha256": "966b8f614d8e910387a556dc5f304588bc495a504766c716504f55ef6448b878",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "id-nl",
+          "category": "historical",
+          "name": "Flag of the Netherlands",
+          "from": 1816,
+          "to": 1945,
+          "commons": "Flag of the Netherlands.svg",
+          "file": "id/id-nl.svg",
+          "sovereign": "the Netherlands",
+          "design": "The flag of the Netherlands, flown over the Netherlands East Indies until 1945.",
+          "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
+          "sha256": "9c2a624a9ca5a82940d8902a7b818230d7bc2efde991837d6f78bc78c1b27110",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1945,
+        "event": "Indonesia proclaimed independence from the Netherlands on 17 August 1945; the Netherlands recognised it in 1949 after an armed struggle",
+        "source": "https://en.wikipedia.org/wiki/Indonesian_National_Revolution"
+      }
     },
     "IE": {
       "flags": [
@@ -14106,8 +14125,27 @@
           "source": "https://gicg.net/passport/mn/",
           "sha256": "6ef638627bc8e646718c6f86069ac140f0b83429cd011d9227f942a6a91d660b",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mn-qing",
+          "category": "historical",
+          "name": "Flag of the Qing dynasty",
+          "from": 1691,
+          "to": 1911,
+          "commons": "Flag of China (1889–1912).svg",
+          "file": "mn/mn-qing.svg",
+          "sovereign": "the Qing Empire",
+          "design": "The yellow dragon banner of Qing China, whose rule over Outer Mongolia ended when it declared independence in 1911.",
+          "source": "https://en.wikipedia.org/wiki/Bogd_Khanate_of_Mongolia",
+          "sha256": "d543652386810308fe568ced9de449dffe673a5cf8cb74553a76626c67648f76",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1911,
+        "event": "Outer Mongolia declared independence from Qing China in 1911; its independence was reaffirmed in 1921",
+        "source": "https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1911"
+      }
     },
     "MR": {
       "flags": [
@@ -14693,8 +14731,35 @@
           "source": "https://gicg.net/passport/mx/",
           "sha256": "235807f4fab6e84e2949e59e07fee223329d9e90778c4a78519360b422dc276f",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mx-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1521,
+          "to": 1785,
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over New Spain from the conquest.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "mx-spain-1785",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Spain",
+          "from": 1785,
+          "to": 1821,
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The red-yellow-red ensign of 1785 with the royal arms, flown in the last decades of Spanish rule.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1821,
+        "event": "Mexico achieved independence from Spain on 27 September 1821 with the Treaty of Córdoba, after the war of independence begun in 1810",
+        "source": "https://en.wikipedia.org/wiki/Mexican_War_of_Independence"
+      }
     },
     "MY": {
       "flags": [
@@ -15515,8 +15580,27 @@
           "source": "https://gicg.net/passport/ng/",
           "sha256": "3f436db30714e444381b0bbc076b418f4f5d474d92f5acf7117d1021eac04ee4",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ng-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1914,
+          "to": 1960,
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "ng/ng-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag, flown over the British colony of Nigeria until independence in 1960.",
+          "source": "https://en.wikipedia.org/wiki/Colonial_Nigeria",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1960,
+        "event": "Nigeria became independent from the United Kingdom on 1 October 1960",
+        "source": "https://en.wikipedia.org/wiki/Colonial_Nigeria"
+      }
     },
     "NI": {
       "flags": [
@@ -17799,8 +17883,35 @@
           "source": "https://gicg.net/passport/py/",
           "sha256": "86c84728176154343d2d2ce0f5f9a8f9ba780b0a520bd54e9c9a1a66a35592a6",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "py-burgundy",
+          "category": "historical",
+          "name": "Cross of Burgundy",
+          "from": 1537,
+          "to": 1785,
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over the Río de la Plata from the conquest.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "py-spain-1785",
+          "category": "historical",
+          "name": "Flag of the Kingdom of Spain",
+          "from": 1785,
+          "to": 1811,
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The red-yellow-red ensign of 1785 with the royal arms, flown in the last decades of Spanish rule.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1811,
+        "event": "Paraguay declared independence from Spain on 14–15 May 1811",
+        "source": "https://en.wikipedia.org/wiki/History_of_Paraguay"
+      }
     },
     "QA": {
       "flags": [
@@ -18946,8 +19057,27 @@
           "source": "https://gicg.net/passport/sd/",
           "sha256": "8e4d60137edb13ae5bf634efbe40706cc4f1f389bf95b1dbef95d36f06899557",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "sd-uk",
+          "category": "historical",
+          "name": "Flag of the United Kingdom",
+          "from": 1899,
+          "to": 1956,
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "sd/sd-uk.svg",
+          "sovereign": "the United Kingdom",
+          "design": "The Union Flag of the Anglo-Egyptian condominium that governed Sudan until independence in 1956.",
+          "source": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
         }
-      ]
+      ],
+      "independence": {
+        "year": 1956,
+        "event": "Sudan became independent on 1 January 1956, ending the Anglo-Egyptian condominium",
+        "source": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan"
+      }
     },
     "SE": {
       "flags": [
