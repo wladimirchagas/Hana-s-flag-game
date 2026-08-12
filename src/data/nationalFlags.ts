@@ -933,8 +933,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ke-arms", category: "coatofarms", name: "Coat of arms of Kenya", from: 1963, to: 9999, path: "national-flags/ke/kenya-arms.svg", design: "Two lions holding spears and a traditional East African shield in the national colours, on a compartment representing Mount Kenya, over a scroll reading Harambee.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
   ],
   "KG": [
-    { id: "kg-official-national", category: "official", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "The national flag of Kyrgyzstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
-    { id: "kg-current", category: "historical", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "The national flag of Kyrgyzstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    { id: "kg-official-national", category: "official", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "The national flag, adopted in 1992 (the sun's rays were straightened in 2023).", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    { id: "kg-current", category: "historical", name: "Flag of Kyrgyzstan", from: 1992, to: 9999, primary: true, path: "flags/kg.svg", design: "A red field with a golden sun, its rays crossed at the centre by the tündük — the roof-opening of a Kyrgyz yurt — red for bravery, the sun for peace and wealth, the tündük for the home and the nation.", source: "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan" },
+    { id: "kg-ssr", category: "historical", name: "Flag of the Kirghiz Soviet Socialist Republic", from: 1952, to: 1991, priorPolity: "the Kirghiz Soviet Socialist Republic", path: "national-flags/kg/kg-ssr.svg", design: "The Soviet-era flag — a red field with light-blue stripes and the hammer, sickle and star — flown while Kyrgyzstan was a republic of the USSR.", source: "https://en.wikipedia.org/wiki/Kirghiz_Soviet_Socialist_Republic" },
+    { id: "kg-emblem", category: "coatofarms", name: "Emblem of Kyrgyzstan", from: 1994, to: 9999, path: "national-flags/kg/kg-emblem.svg", design: "A white falcon with wings spread before the Tian Shan mountains and a rising sun, framed by wheat and cotton.", source: "https://en.wikipedia.org/wiki/Emblem_of_Kyrgyzstan" },
   ],
   "KH": [
     { id: "kh-official-national", category: "official", name: "Flag of Cambodia", from: 1948, to: 9999, primary: true, path: "flags/kh.svg", design: "The national flag of Cambodia, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Cambodia" },
@@ -1643,16 +1645,22 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "th-emblem", category: "coatofarms", name: "Emblem of Thailand (Phra Khrut Pha)", from: 1911, to: 9999, path: "national-flags/th/thailand-emblem.svg", design: "The Garuda, half-man and half-eagle, with wings spread.", source: "https://en.wikipedia.org/wiki/Emblem_of_Thailand" },
   ],
   "TJ": [
-    { id: "tj-official-national", category: "official", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "The national flag of Tajikistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
-    { id: "tj-current", category: "historical", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "The national flag of Tajikistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
+    { id: "tj-official-national", category: "official", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "The national flag, adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
+    { id: "tj-current", category: "historical", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "Red, white and green bands with a golden crown beneath an arc of seven stars — red for unity, white for cotton and the snows, green for the valleys; the crown (toj) gives the country its name.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
+    { id: "tj-ssr", category: "historical", name: "Flag of the Tajik Soviet Socialist Republic", from: 1953, to: 1991, priorPolity: "the Tajik Soviet Socialist Republic", path: "national-flags/tj/tj-ssr.svg", design: "The Soviet-era flag — a red field with white and green stripes and the hammer, sickle and star — flown while Tajikistan was a republic of the USSR.", source: "https://en.wikipedia.org/wiki/Tajik_Soviet_Socialist_Republic" },
+    { id: "tj-emblem", category: "coatofarms", name: "Emblem of Tajikistan", from: 1993, to: 9999, path: "national-flags/tj/tj-emblem.svg", design: "A crown and arc of stars over a sun and the Pamir mountains, in a wreath of wheat and cotton.", source: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
   ],
   "TL": [
-    { id: "tl-official-national", category: "official", name: "Flag of Timor-Leste", from: 1975, to: 9999, primary: true, path: "flags/tl.svg", design: "The national flag of Timor-Leste, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
-    { id: "tl-current", category: "historical", name: "Flag of Timor-Leste", from: 1975, to: 9999, primary: true, path: "flags/tl.svg", design: "The national flag of Timor-Leste, in the form adopted in 1975.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
+    { id: "tl-official-national", category: "official", name: "Flag of Timor-Leste", from: 2002, to: 9999, primary: true, path: "flags/tl.svg", design: "The national flag, first raised at the 1975 proclamation of independence and restored in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
+    { id: "tl-current", category: "historical", name: "Flag of Timor-Leste", from: 2002, to: 9999, primary: true, path: "flags/tl.svg", design: "A red field with a black triangle bearing a white star and a yellow triangle behind it — yellow for the traces of colonialism, black for the obscurantism to be overcome, red for the struggle, the white star for peace and its light guiding the way.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
+    { id: "tl-indonesian", category: "historical", name: "Flag of Indonesia", from: 1976, to: 1999, occupier: "Indonesia", path: "national-flags/tl/tl-id.svg", design: "The flag of Indonesia, which invaded in 1975 and annexed the territory as its 27th province until 1999 — an occupation the United Nations never recognised.", source: "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor" },
+    { id: "tl-portuguese", category: "historical", name: "Flag of Portugal", from: 1702, to: 1975, sovereign: "Portugal", path: "national-flags/tl/tl-pt.svg", design: "The flag of Portugal, flown over the colony of Portuguese Timor until 1975.", source: "https://en.wikipedia.org/wiki/Portuguese_Timor" },
   ],
   "TM": [
-    { id: "tm-official-national", category: "official", name: "Flag of Turkmenistan", from: 1992, to: 9999, primary: true, path: "flags/tm.svg", design: "The national flag of Turkmenistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
-    { id: "tm-current", category: "historical", name: "Flag of Turkmenistan", from: 1992, to: 9999, primary: true, path: "flags/tm.svg", design: "The national flag of Turkmenistan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+    { id: "tm-official-national", category: "official", name: "Flag of Turkmenistan", from: 1997, to: 9999, primary: true, path: "flags/tm.svg", design: "The national flag, in the form adopted in 1997.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+    { id: "tm-current", category: "historical", name: "Flag of Turkmenistan", from: 1997, to: 9999, primary: true, path: "flags/tm.svg", design: "A green field with a vertical red stripe of five carpet guls near the hoist and a white crescent with five stars — green and the crescent for Islam, the five guls and five stars for the country's five regions.", source: "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan" },
+    { id: "tm-ssr", category: "historical", name: "Flag of the Turkmen Soviet Socialist Republic", from: 1973, to: 1991, priorPolity: "the Turkmen Soviet Socialist Republic", path: "national-flags/tm/tm-ssr.svg", design: "The Soviet-era flag — a red field with two light-blue stripes and the hammer, sickle and star — flown while Turkmenistan was a republic of the USSR.", source: "https://en.wikipedia.org/wiki/Turkmen_Soviet_Socialist_Republic" },
+    { id: "tm-emblem", category: "coatofarms", name: "Emblem of Turkmenistan", from: 1992, to: 9999, path: "national-flags/tm/tm-emblem.svg", design: "An Akhal-Teke horse ringed by carpet guls, wheat and cotton, beneath a crescent and five stars.", source: "https://en.wikipedia.org/wiki/Emblem_of_Turkmenistan" },
   ],
   "TN": [
     { id: "tn-official-national", category: "official", name: "Flag of Tunisia", from: 1831, to: 9999, primary: true, path: "flags/tn.svg", design: "The national flag of Tunisia, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Tunisia" },
@@ -1848,8 +1856,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "vu-current", category: "historical", name: "Flag of Vanuatu", from: 1980, to: 9999, primary: true, path: "flags/vu.svg", design: "The national flag of Vanuatu, in the form adopted in 1980.", source: "https://en.wikipedia.org/wiki/Flag_of_Vanuatu" },
   ],
   "WS": [
-    { id: "ws-official-national", category: "official", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag of Samoa, in the form adopted in 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
-    { id: "ws-current", category: "historical", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag of Samoa, in the form adopted in 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+    { id: "ws-official-national", category: "official", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "The national flag, adopted in 1949 and kept at independence in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+    { id: "ws-current", category: "historical", name: "Flag of Samoa", from: 1949, to: 9999, primary: true, path: "flags/ws.svg", design: "A red field with a blue canton bearing the five white stars of the Southern Cross — red and white are traditional Samoan colours, blue stands for freedom, and the Southern Cross for the country's place in the South Pacific.", source: "https://en.wikipedia.org/wiki/Flag_of_Samoa" },
+    { id: "ws-nz", category: "historical", name: "Flag of New Zealand", from: 1914, to: 1962, sovereign: "New Zealand", path: "national-flags/ws/ws-nz.svg", design: "The flag of New Zealand, which administered Western Samoa — first as a League of Nations mandate, then a UN trust territory — until independence in 1962.", source: "https://en.wikipedia.org/wiki/History_of_Samoa" },
+    { id: "ws-german", category: "historical", name: "Flag of the German Empire", from: 1900, to: 1914, sovereign: "the German Empire", path: "national-flags/ws/ws-german.svg", design: "The flag of the German Empire, which held the islands as German Samoa until 1914.", source: "https://en.wikipedia.org/wiki/German_Samoa" },
   ],
   "YE": [
     { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, adopted at unification in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
@@ -2010,6 +2020,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "SZ": { year: 1968, event: "Eswatini (then Swaziland) became independent from the United Kingdom on 6 September 1968", source: "https://en.wikipedia.org/wiki/History_of_Eswatini" },
   "TD": { year: 1960, event: "Chad became independent from France on 11 August 1960", source: "https://en.wikipedia.org/wiki/History_of_Chad" },
   "TG": { year: 1960, event: "Togo became independent from France on 27 April 1960", source: "https://en.wikipedia.org/wiki/History_of_Togo" },
+  "TL": { year: 1975, event: "Timor-Leste proclaimed independence from Portugal on 28 November 1975; nine days later Indonesia invaded and occupied the country until 1999, and sovereignty was internationally restored on 20 May 2002", source: "https://en.wikipedia.org/wiki/History_of_Timor-Leste" },
   "TN": { year: 1956, event: "Independence from France, 20 March 1956", source: "https://en.wikipedia.org/wiki/History_of_Tunisia" },
   "TT": { year: 1962, event: "Independence from the United Kingdom, 31 August 1962", note: "Trinidad and Tobago became a republic in 1976.", source: "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago" },
   "TZ": { year: 1961, event: "Tanganyika became independent of the United Kingdom on 9 December 1961", note: "The United Republic of Tanzania was formed on 26 April 1964 by the union of Tanganyika with Zanzibar, which had become independent in December 1963.", source: "https://en.wikipedia.org/wiki/History_of_Tanzania" },
@@ -2017,6 +2028,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "US": { year: 1776, event: "The Declaration of Independence was adopted on 4 July 1776.", source: "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" },
   "VE": { year: 1811, event: "Declaration of independence from Spain, 5 July 1811", note: "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.", source: "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence" },
   "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
+  "WS": { year: 1962, event: "Samoa (then Western Samoa) became independent on 1 January 1962, ending New Zealand's administration — the first Polynesian nation to reestablish independence in the 20th century", source: "https://en.wikipedia.org/wiki/History_of_Samoa" },
   "ZA": { year: 1910, event: "The Union of South Africa was established as a self-governing dominion on 31 May 1910.", note: "Full legislative independence followed with the Statute of Westminster in 1931; the republic was declared in 1961.", source: "https://en.wikipedia.org/wiki/Union_of_South_Africa" },
   "ZM": { year: 1964, event: "Zambia became independent from the United Kingdom on 24 October 1964, ending the Northern Rhodesia protectorate", source: "https://en.wikipedia.org/wiki/History_of_Zambia" },
   "ZW": { year: 1980, event: "Independence from the United Kingdom, 18 April 1980", note: "A white-minority government had unilaterally declared independence as Rhodesia in 1965; no state recognised it.", source: "https://en.wikipedia.org/wiki/History_of_Zimbabwe" },
@@ -2542,6 +2554,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Kenya — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kenya" },
     ],
   },
+  "kg-emblem": {
+    description: "A white falcon with wings spread — the falcon of Manas, the hero of the national epic, standing for freedom and vision — flies before the peaks of the Tian Shan and a rising sun whose golden rays light the land. Ears of wheat and bolls of cotton frame the emblem, with Lake Issyk-Kul in the design below.",
+    sources: [
+      { title: "Emblem of Kyrgyzstan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kyrgyzstan" },
+    ],
+  },
   "kh-arms": {
     description: "These are the arms of the Cambodian monarchy, existing since the independent Kingdom was founded in 1953 and carried on the reigning king's royal standard. At the centre a sacred sword rests on two pedestalled ceremonial trays (phan) beneath the Unalome, the Khmer form of the Aum sign, all on a royal mantle. The two mythical beasts supporting it are the gajasingha (part elephant, part lion) and the rajasingha (the royal lion), and between them they hold two five-tiered royal parasols standing for the King and the Queen — the tiered parasol being the mark of Southeast Asian kingship. The Khmer banner beneath reads \"Ruler of the Kingdom of Cambodia\". The arms were abolished under the Khmer Republic (1970–1975) and the Khmer Rouge, and restored in 1993 with the monarchy.",
     sources: [
@@ -2907,6 +2925,18 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The emblem is the Phra Khrut Pha — \"Garuda as the vehicle\" — the mount of the god Vishnu (Narayana) in Hindu and Buddhist tradition. Thai kingship drew on Indian doctrine in which the king is an incarnation of Narayana, so the god's mount became the king's own device: the Garuda stands for the sovereign himself rather than for the land or the people. In Buddhist tradition the emphasis falls on the Garuda's deeds, which portray him as righteous and merciful. Earlier kings used four great royal seals and, from 1873, a European-style coat of arms; Vajiravudh (Rama VI) abandoned that in 1910 in favour of the Garuda alone, and the Act on the Seals of State of 1911 established it as the emblem of the kingdom. It appears on the letterhead of almost every Thai government document and marks state property.",
     sources: [
       { title: "Emblem of Thailand — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Thailand" },
+    ],
+  },
+  "tj-emblem": {
+    description: "A golden crown beneath a semicircle of seven stars — the crown (toj) that names the country and the seven stars the Tajik people hold sacred — rises over a sun and the peaks of the Pamir mountains. A wreath of wheat ears and cotton bolls, bound in the red, white and green of the flag, frames the whole, and an open book sits at the foot for knowledge.",
+    sources: [
+      { title: "Emblem of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
+    ],
+  },
+  "tm-emblem": {
+    description: "At the centre, on a blue disc, stands the Akhal-Teke stallion Yanardag — the prized Turkmen horse and a source of national pride. Around it a red ring carries the five carpet guls, the traditional weaving designs of the country's five regions, the same guls as on the flag. Ears of wheat and bolls of cotton frame the whole, and a white crescent with five stars sits above.",
+    sources: [
+      { title: "Emblem of Turkmenistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Turkmenistan" },
     ],
   },
   "tn-arms": {
