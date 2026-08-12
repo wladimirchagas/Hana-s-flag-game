@@ -815,6 +815,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Austrian_flags",
           "sha256": "d2049ba5974aee08e77fc65a90ac1b191b0d49f21cca99be803aaef6f6f558f2",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "at-arms",
+          "category": "coatofarms",
+          "from": 1945,
+          "to": 9999,
+          "name": "Coat of arms of Austria",
+          "commons": "Coat of arms of Austria.svg",
+          "file": "at/at-arms.svg",
+          "design": "A black eagle wearing a mural crown, holding a hammer and a sickle, with broken chains about its talons and a red-white-red shield on its breast.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria",
+          "meaning": {
+            "description": "The single-headed black eagle carries emblems of the republic's classes, added in 1919: a hammer for the workers, a sickle for the farmers, and a mural crown for the townspeople (bourgeoisie), with the red-white-red shield of Austria on its breast. The broken chains around its talons were added in 1945 to mark liberation from German annexation. The design was first adopted in 1919 and codified in the 1984 arms act.",
+            "sources": [
+              {
+                "title": "Coat of arms of Austria — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria"
+              }
+            ]
+          },
+          "sha256": "ed9b34307ccaf7aa1e9555afa6350e66b3eba9b060a92e32e4e89228edbdc6b3",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -1626,6 +1648,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Belgian_flags",
           "sha256": "ad45d054bbeac73c05c03475a98f268d37086b80c1aa9782c43b538902214573",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "be-arms",
+          "category": "coatofarms",
+          "from": 1837,
+          "to": 9999,
+          "name": "Coat of arms of Belgium",
+          "commons": "Great coat of arms of Belgium.svg",
+          "file": "be/be-arms.svg",
+          "design": "A golden lion rampant on black, crowned and borne by two lions, over the motto “Unity makes strength.”",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belgium",
+          "meaning": {
+            "description": "The golden lion on black — the Leo Belgicus, whose lineage runs to the Duchy of Brabant that led the 1789 Brabant Revolution — stands for Belgium itself, here armed and langued red beneath the royal crown. Two lion supporters, the sceptre and hand of justice, and the collar of the Order of Leopold complete the greater arms, adopted by royal decree in 1837 after independence in 1830. The trilingual motto reads L'union fait la force / Eendracht maakt macht — “Unity makes strength.”",
+            "sources": [
+              {
+                "title": "Coat of arms of Belgium — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belgium"
+              }
+            ]
+          },
+          "sha256": "786cf0d4ef6f6b883f9abcc61e6609206d285e2f049d7bb16271c20eb06597bd",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -3276,6 +3320,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Canadian_flags",
           "sha256": "6aee12f877b2ae951443dcd543f54d66a693cebbda323d5710a5cc72b5d5a895",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "ca-arms",
+          "category": "coatofarms",
+          "from": 1921,
+          "to": 9999,
+          "name": "Arms of Canada",
+          "commons": "Royal Coat of arms of Canada.svg",
+          "file": "ca/ca-arms.svg",
+          "design": "A quartered shield of the arms of England, Scotland, Ireland and royal France, above a sprig of red maple leaves; a lion and a unicorn as supporters.",
+          "source": "https://en.wikipedia.org/wiki/Arms_of_Canada",
+          "meaning": {
+            "description": "The shield quarters the emblems of the peoples who founded the country — the three lions of England, the lion of Scotland, the harp of Ireland and the fleurs-de-lis of royal France — above a distinctly Canadian sprig of maple leaves (drawn green in 1921, red since 1957). The English lion and Scottish unicorn supporters mirror the British royal arms, the unicorn's broken chain standing for resistance to oppression. The Latin motto, A mari usque ad mare — “from sea to sea” — is from Psalm 72. Granted by royal proclamation in 1921.",
+            "sources": [
+              {
+                "title": "Arms of Canada — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Arms_of_Canada"
+              }
+            ]
+          },
+          "sha256": "18ba69fae647789c7b34e801b95d1991694e362a5283f9763e566a216ecf0d78",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
@@ -3583,6 +3649,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Swiss_flags",
           "sha256": "a02a3802ada3a96aa399ffd43b38faacd7b2a17076b44d30985d93562c609d21",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "ch-arms",
+          "category": "coatofarms",
+          "from": 1889,
+          "to": 9999,
+          "name": "Coat of arms of Switzerland",
+          "commons": "Coat of arms of Switzerland.svg",
+          "file": "ch/ch-arms.svg",
+          "design": "A white couped cross on a red triangular shield.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland",
+          "meaning": {
+            "description": "The white couped cross on red is the field sign of the Old Swiss Confederacy, borne by its soldiers and documented as early as 1444. The Federal Council described it in 1889 as at once the Christian cross and the ensign of the old Confederation; that year it fixed the arms of the cross at one-sixth longer than wide. The Diet had adopted the design for the confederal seal in 1815, and it is the same cross the national flag carries.",
+            "sources": [
+              {
+                "title": "Coat of arms of Switzerland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland"
+              }
+            ]
+          },
+          "sha256": "598d72f12353a9f9c100729f552edfff869207dc16b8d73b5ff8310044664c6f",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -10310,6 +10398,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_South_Korean_flags",
           "sha256": "3956e742b30b63a7149591fc11b20d4ab67b890ba1b6e852166616459416c36f",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "kr-arms",
+          "category": "coatofarms",
+          "from": 1963,
+          "to": 9999,
+          "name": "Emblem of South Korea",
+          "commons": "Emblem of South Korea.svg",
+          "file": "kr/kr-arms.svg",
+          "design": "The red-and-blue taegeuk within five white Hibiscus syriacus petals, on a ribbon reading Republic of Korea.",
+          "source": "https://en.wikipedia.org/wiki/Emblem_of_South_Korea",
+          "meaning": {
+            "description": "At the centre is the taegeuk, the red-and-blue symbol of the national flag, standing for balance and harmony. It is ringed by five stylised white petals of the Hibiscus syriacus — the mugunghwa, or Rose of Sharon, Korea's national flower — with a ribbon naming the Republic of Korea in Hangul. Both the taegeuk and the flower are widely taken to stand for the Korean people. Adopted on 10 December 1963.",
+            "sources": [
+              {
+                "title": "Emblem of South Korea — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Emblem_of_South_Korea"
+              }
+            ]
+          },
+          "sha256": "173d27505ff0897cef920a94e9724ddab0a4d24079e4dc4c4a7038f03081fca6",
+          "fetched": "2026-08-12"
         }
       ]
     },
@@ -14156,6 +14266,28 @@
           "source": "https://en.wikipedia.org/wiki/List_of_New_Zealand_flags",
           "sha256": "74107658f0f5f3035811dd8bcfcf0019972977877d08f4844dd00dd551704a25",
           "fetched": "2026-08-11"
+        },
+        {
+          "id": "nz-arms",
+          "category": "coatofarms",
+          "from": 1956,
+          "to": 9999,
+          "name": "Coat of arms of New Zealand",
+          "commons": "Coat of arms of New Zealand.svg",
+          "file": "nz/nz-arms.svg",
+          "design": "A shield of the Southern Cross, a fleece, a wheat sheaf, crossed hammers and three ships, borne by a European woman with the flag and a Māori rangatira with a taiaha, crowned by St Edward's Crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand",
+          "meaning": {
+            "description": "The shield reads the country's making: the four stars of the Southern Cross, a golden fleece for wool, a wheat sheaf for farming, crossed hammers for mining, and three ships down the centre for sea trade and the immigrant character of New Zealanders. The supporters embody its bicultural identity — a European woman holding the national flag and a Māori rangatira bearing a taiaha. St Edward's Crown marks the monarchy, and silver fern fronds flank the “New Zealand” scroll. Granted in 1911 and revised to the present form in 1956.",
+            "sources": [
+              {
+                "title": "Coat of arms of New Zealand — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_New_Zealand"
+              }
+            ]
+          },
+          "sha256": "a5bf856c0ad324b4ee298d509ac4f6fe86bc9ca4c7a515c8d181e65b0d0dc88d",
+          "fetched": "2026-08-12"
         }
       ],
       "independence": {
