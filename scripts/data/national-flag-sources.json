@@ -11033,6 +11033,50 @@
           "fetched": "2026-08-08"
         },
         {
+          "id": "kr-army",
+          "category": "military",
+          "name": "Flag of the Republic of Korea Army",
+          "commons": "Flag of the Republic of Korea Army.svg",
+          "file": "kr/army.svg",
+          "design": "The service flag of the Republic of Korea Army — a white field bearing the Army emblem.",
+          "source": "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces",
+          "sha256": "c427b3128f7293a8d61f4916e686fcd9f755ec75bea93da62fb132246590e067",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "kr-navy",
+          "category": "military",
+          "name": "Flag of the Republic of Korea Navy",
+          "commons": "Flag of the Republic of Korea Navy.svg",
+          "file": "kr/navy.svg",
+          "design": "The service flag of the Republic of Korea Navy — a white field bearing the Navy anchor emblem.",
+          "source": "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces",
+          "sha256": "ac32c0caeaf812ff2e0e69995d268555f23219169240c3ce135007679140fafe",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "kr-airforce",
+          "category": "military",
+          "name": "Flag of the Republic of Korea Air Force",
+          "commons": "Flag of the Republic of Korea Air Force.svg",
+          "file": "kr/airforce.svg",
+          "design": "The service flag of the Republic of Korea Air Force — a blue field bearing the Air Force emblem.",
+          "source": "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces",
+          "sha256": "139ecd14ca6656b3afb4d37769617b83ad92edfc26c06f0aa3a8414b11918107",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "kr-marines",
+          "category": "military",
+          "name": "Flag of the Republic of Korea Marine Corps",
+          "commons": "Flag of the Republic of Korea Marine Corps.svg",
+          "file": "kr/marines.svg",
+          "design": "The service flag of the Republic of Korea Marine Corps — a red field bearing the Corps emblem.",
+          "source": "https://en.wikipedia.org/wiki/Republic_of_Korea_Armed_Forces",
+          "sha256": "a3c8c641dad93359d6c3f5c168f8b3fc76103c6359eb174f0e329a3d0d0995c9",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "kr-arms",
           "category": "coatofarms",
           "from": 1963,
