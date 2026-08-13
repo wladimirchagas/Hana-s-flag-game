@@ -9695,6 +9695,19 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Italy"
         },
         {
+          "id": "it-kingdom",
+          "category": "historical",
+          "from": 1861,
+          "to": 1946,
+          "name": "Flag of the Kingdom of Italy",
+          "commons": "Flag of Italy (1861–1946).svg",
+          "file": "it/kingdom-1861.svg",
+          "design": "The green-white-red tricolour charged with the coat of arms of the House of Savoy — a white cross on red within a blue border. Flown by the Kingdom of Italy from unification in 1861 until the 1946 referendum made Italy a republic and left the plain tricolour.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Italy",
+          "sha256": "ca49da45ef1110dff1148e2c21cc0c6b9667a3e07367a9b3940d71228dfae391",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "it-civil-ensign",
           "category": "maritime",
           "name": "Civil ensign of Italy",
@@ -14769,6 +14782,19 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Netherlands"
         },
         {
+          "id": "nl-prinsenvlag",
+          "category": "historical",
+          "from": 1572,
+          "to": 1660,
+          "name": "Prince's Flag (Prinsenvlag)",
+          "commons": "Prinsenvlag.svg",
+          "file": "nl/prinsenvlag.svg",
+          "design": "Orange, white and blue horizontal bands — the flag of the Dutch Revolt under William of Orange from the 1570s. Through the 17th century the orange band was gradually replaced by red, producing today's red-white-blue.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Netherlands",
+          "sha256": "f0f1b0de25ce97b0b31638835dff15419fbf7700ec2f34f2ca43bc163da51b35",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "nl-royal",
           "category": "standard",
           "name": "Royal Standard of the Netherlands",
@@ -14879,6 +14905,32 @@
           "reuse": "flags/no.svg",
           "design": "The national flag of Norway, in the form adopted in 1821.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Norway"
+        },
+        {
+          "id": "no-union-1844",
+          "category": "historical",
+          "from": 1844,
+          "to": 1899,
+          "name": "Flag of Norway (1844–1899)",
+          "commons": "Norge-Unionsflagg-1844.svg",
+          "file": "no/union-1844.svg",
+          "design": "The red-white-blue Nordic cross defaced in the canton with the Swedish–Norwegian union badge (popularly the 'herring salad'), flown during the union with Sweden; the badge was removed from the civil flag in 1899.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Norway",
+          "sha256": "0140825b8efd3434e2275c610c1658b05b2d51edbdc67ddd785d261c5e45a692",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "no-1814",
+          "category": "historical",
+          "from": 1814,
+          "to": 1821,
+          "name": "Flag of Norway (1814–1821)",
+          "commons": "Flag of Norway (1814–1821).svg",
+          "file": "no/dano-1814.svg",
+          "design": "The Dano-Norwegian Dannebrog — a red field with a white-bordered red cross — defaced in the canton with the gold Norwegian lion bearing an axe, flown in the years after 1814 before the modern flag was adopted in 1821.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Norway",
+          "sha256": "c6149b6bb51ea5b9364342a3373489d8bdfa7385a7e67f05c22818eedf00168e",
+          "fetched": "2026-08-13"
         },
         {
           "id": "no-war-flag",
@@ -16873,6 +16925,19 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Romania"
         },
         {
+          "id": "ro-communist",
+          "category": "historical",
+          "from": 1965,
+          "to": 1989,
+          "name": "Flag of Romania (1965–1989)",
+          "commons": "Flag of Romania (1965–1989).svg",
+          "file": "ro/communist-1965.svg",
+          "design": "The blue-yellow-red tricolour charged in the yellow band with the emblem of the Socialist Republic of Romania — a wooded mountain landscape beneath a rising sun with a derrick and a star, within a wheat wreath. Torn out by revolutionaries in December 1989, leaving the plain tricolour.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Romania",
+          "sha256": "c978a916e8105dd2b0ac245e44cb2eac0c65e4fb4662d5121c4b28e769849ac0",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "ro-president",
           "category": "standard",
           "name": "Flag of the President of Romania",
@@ -17866,6 +17931,19 @@
           "reuse": "flags/se.svg",
           "design": "The national flag of Sweden, in the form adopted in 1562.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sweden"
+        },
+        {
+          "id": "se-union-1844",
+          "category": "historical",
+          "from": 1844,
+          "to": 1905,
+          "name": "Flag of Sweden (1844–1905)",
+          "commons": "Swedish civil ensign (1844–1905).svg",
+          "file": "se/union-1844.svg",
+          "design": "The blue-and-yellow Nordic cross defaced in the canton with the Swedish–Norwegian union badge, flown during the union with Norway until the union was dissolved in 1905.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sweden",
+          "sha256": "e08b8e02cbc110d9738ee0ec7b08408b1edff32a431fde3d96f080eebc5862fa",
+          "fetched": "2026-08-13"
         },
         {
           "id": "se-naval-ensign",
