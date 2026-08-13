@@ -1240,6 +1240,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "MD": [
     { id: "md-official-national", category: "official", name: "Flag of Moldova", from: 1990, to: 9999, primary: true, path: "flags/md.svg", design: "The national flag of Moldova, in the form adopted in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
+    { id: "md-reverse", category: "official", name: "Flag of Moldova (reverse)", from: 2010, to: 9999, path: "national-flags/md/reverse.svg", design: "The reverse of Moldova national flag. Since a 2010 law the reverse is defined as a mirror image of the obverse, so the state coat of arms — an eagle holding a cross, an olive branch and a sceptre, with the aurochs-head shield on its breast — appears on both faces, reversed on the back.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
     { id: "md-ssr", category: "historical", name: "Flag of the Moldavian SSR", from: 1952, to: 1990, priorPolity: "the Moldavian Soviet Socialist Republic", path: "national-flags/md/md-ssr.svg", design: "Red with a central green stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.", source: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
     { id: "md-russian-empire", category: "historical", name: "Flag of the Russian Empire", from: 1812, to: 1917, sovereign: "the Russian Empire", path: "national-flags/md/md-russian-empire.svg", design: "The white-blue-red flag of the Russian Empire, which ruled Bessarabia from 1812 until the empire fell in 1917.", source: "https://en.wikipedia.org/wiki/Russian_Empire" },
     { id: "md-president", category: "standard", name: "Flag of the President of Moldova", path: "national-flags/md/moldova-president.svg", design: "The presidential standard bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Moldovan_flags" },
@@ -3224,6 +3225,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield of red and white lozenges is the arms of the House of Grimaldi, sovereigns of Monaco since 1297, and it is held by two friars brandishing swords. They recall François Grimaldi, who in 1297 seized the fortress of Monaco by disguising himself and his men as Franciscan monks. A princely crown and an ermine mantle surround the arms, and the motto reads Deo Juvante — “With God's Help.”",
     sources: [
       { title: "Coat of arms of Monaco — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Monaco" },
+    ],
+  },
+  "md-reverse": {
+    description: "Moldova is one of the very few countries whose flag has ever differed front and back. From 1990 to 2010 the reverse officially carried NO coat of arms — just the plain blue-yellow-red tricolour — so the eagle emblem appeared on the obverse alone. A 2010 law redefined the reverse as a mirror image of the obverse, placing the (reversed) arms on both sides and making the two faces symmetrical.",
+    sources: [
+      { title: "Flag of Moldova — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Moldova" },
     ],
   },
   "md-arms": {

@@ -12635,6 +12635,28 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Moldova"
         },
         {
+          "id": "md-reverse",
+          "category": "official",
+          "from": 2010,
+          "to": 9999,
+          "name": "Flag of Moldova (reverse)",
+          "commons": "Flag of Moldova (reverse).svg",
+          "file": "md/reverse.svg",
+          "design": "The reverse of Moldova national flag. Since a 2010 law the reverse is defined as a mirror image of the obverse, so the state coat of arms — an eagle holding a cross, an olive branch and a sceptre, with the aurochs-head shield on its breast — appears on both faces, reversed on the back.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Moldova",
+          "sha256": "0350761683bea325e8e32691876be0769701173541655bde96d1197fcbac8a0a",
+          "fetched": "2026-08-13",
+          "meaning": {
+            "description": "Moldova is one of the very few countries whose flag has ever differed front and back. From 1990 to 2010 the reverse officially carried NO coat of arms — just the plain blue-yellow-red tricolour — so the eagle emblem appeared on the obverse alone. A 2010 law redefined the reverse as a mirror image of the obverse, placing the (reversed) arms on both sides and making the two faces symmetrical.",
+            "sources": [
+              {
+                "title": "Flag of Moldova — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Moldova"
+              }
+            ]
+          }
+        },
+        {
           "id": "md-president",
           "category": "standard",
           "name": "Flag of the President of Moldova",
