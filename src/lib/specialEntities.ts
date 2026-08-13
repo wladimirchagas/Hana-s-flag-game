@@ -30,6 +30,7 @@ export type EntityStatus =
   | "constituent-country"
   | "associated-state"
   | "autonomous-territory"
+  | "dependent-territory"
   | "overseas-collectivity";
 
 export type SpecialEntity = {
@@ -93,6 +94,17 @@ export const SPECIAL_ENTITIES: Record<string, readonly SpecialEntity[]> = {
     { code: "CW", name: "Curaçao", status: "constituent-country" },
     { code: "SX", name: "Sint Maarten", status: "constituent-country" },
   ],
+  NZ: [
+    // The Realm of New Zealand: the Cook Islands and Niue are self-governing
+    // states in free association with New Zealand; Tokelau is a dependent
+    // territory. (The Ross Dependency is Antarctic and excluded by hard rule.)
+    { code: "CK", name: "Cook Islands", status: "associated-state" },
+    { code: "NU", name: "Niue", status: "associated-state" },
+    { code: "TK", name: "Tokelau", status: "dependent-territory" },
+  ],
+  FI: [
+    { code: "AX", name: "Åland", status: "autonomous-territory" },
+  ],
 };
 
 /** The neutral status badge text shown on an entity's group header. */
@@ -106,6 +118,7 @@ export const ENTITY_STATUS_LABEL: Record<EntityStatus, string> = {
   "constituent-country": "Constituent country",
   "associated-state": "Associated state",
   "autonomous-territory": "Autonomous territory",
+  "dependent-territory": "Dependent territory",
   "overseas-collectivity": "Overseas collectivity",
 };
 

@@ -26142,6 +26142,168 @@
           "fetched": "2026-08-13"
         }
       ]
+    },
+    "CK": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ck-official-national",
+          "category": "official",
+          "from": 1979,
+          "to": 9999,
+          "name": "Flag of the Cook Islands",
+          "reuse": "flags/ck.svg",
+          "design": "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
+        },
+        {
+          "id": "ck-current",
+          "category": "historical",
+          "from": 1979,
+          "to": 9999,
+          "name": "Flag of the Cook Islands",
+          "reuse": "flags/ck.svg",
+          "design": "Adopted in 1979: fifteen white stars in a circle — one for each island — on a blue ensign.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
+        },
+        {
+          "id": "ck-arms",
+          "category": "coatofarms",
+          "from": 1978,
+          "to": 9999,
+          "name": "Coat of arms of the Cook Islands",
+          "commons": "Coat of arms of the Cook Islands.svg",
+          "file": "ck/ck-arms.svg",
+          "design": "Azure, fifteen white stars in a circle; supporters a flying fish and a white tern; crest a red-feather chieftain's headdress; a white cross and Rarotongan club in saltire behind; palm leaves and a pearl in base.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands",
+          "meaning": {
+            "description": "Adopted on 4 August 1978. The fifteen white stars ringing the blue shield are the fifteen islands of the group, drawn in a circle so none stands above another. The supporters are creatures of the sea and sky — the flying fish (maroro) and the white tern (kakaia); above sits a chieftain's headdress of red feathers, honouring the traditional rank system. Behind the shield a white cross for Christianity crosses a Rarotongan ceremonial club for Māori tradition and oratory, and palm leaves with a pearl fill the base.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Cook Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands"
+              }
+            ]
+          },
+          "sha256": "78447f4d1a6cb903a62c270c90f88dd54cf54b9d32a770f893e3ec3e9db3869f",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "NU": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "nu-official-national",
+          "category": "official",
+          "from": 1975,
+          "to": 9999,
+          "name": "Flag of Niue",
+          "reuse": "flags/nu.svg",
+          "design": "A golden-yellow field with the Union Flag in the canton, the Union Flag itself defaced with a blue disc and yellow stars.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Niue",
+          "meaning": {
+            "description": "Adopted on 15 October 1975. The bright yellow field stands for the sunshine of Niue and the warmth the Niuean people feel towards New Zealand; the Union Flag marks the protection the United Kingdom granted in 1900 at the petition of Niue's kings and chiefs. On it four small yellow stars form the Southern Cross, for the association with New Zealand, and a larger star on a blue disc stands for the deep sea around the self-governing island.",
+            "sources": [
+              {
+                "title": "Flag of Niue — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Niue"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nu-current",
+          "category": "historical",
+          "from": 1975,
+          "to": 9999,
+          "name": "Flag of Niue",
+          "reuse": "flags/nu.svg",
+          "design": "Adopted in 1975: a yellow field with a defaced Union Flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Niue"
+        }
+      ]
+    },
+    "TK": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "tk-official-national",
+          "category": "official",
+          "from": 2009,
+          "to": 9999,
+          "name": "Flag of Tokelau",
+          "reuse": "flags/tk.svg",
+          "design": "A blue field bearing a yellow Tokelauan canoe sailing towards the Southern Cross, shown as four white stars.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Tokelau",
+          "meaning": {
+            "description": "Tokelau's first official flag, presented on 7 September 2009. A yellow Tokelauan canoe sails across a blue field towards the Southern Cross — the four white stars — which serves as the navigator's guide. The voyaging canoe stands for Tokelau's own journey towards the system of governance that best fits its people, steered, like the ancient navigators, by the stars.",
+            "sources": [
+              {
+                "title": "Flag of Tokelau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Tokelau"
+              }
+            ]
+          }
+        },
+        {
+          "id": "tk-current",
+          "category": "historical",
+          "from": 2009,
+          "to": 9999,
+          "name": "Flag of Tokelau",
+          "reuse": "flags/tk.svg",
+          "design": "Adopted in 2009: a yellow canoe sailing toward the Southern Cross on blue.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Tokelau"
+        }
+      ]
+    },
+    "AX": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ax-official-national",
+          "category": "official",
+          "from": 1954,
+          "to": 9999,
+          "name": "Flag of Åland",
+          "reuse": "flags/ax.svg",
+          "design": "A red Nordic cross fimbriated in yellow on a blue field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_%C3%85land"
+        },
+        {
+          "id": "ax-current",
+          "category": "historical",
+          "from": 1954,
+          "to": 9999,
+          "name": "Flag of Åland",
+          "reuse": "flags/ax.svg",
+          "design": "Adopted in 1954: a Swedish-style blue field with a red cross outlined in yellow, the colours of Sweden within the cross of Finland.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_%C3%85land"
+        },
+        {
+          "id": "ax-arms",
+          "category": "coatofarms",
+          "from": 1952,
+          "to": 9999,
+          "name": "Coat of arms of Åland",
+          "commons": "Coat of arms of Åland.svg",
+          "file": "ax/ax-arms.svg",
+          "design": "Azure, a stag trippant Or — a golden red deer on blue.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land",
+          "meaning": {
+            "description": "The golden stag on blue has an unusual origin: the arms were granted to the Swedish province of Öland in 1560 and passed to Åland through a centuries-long heraldic mix-up of the two near-identically-named provinces, becoming Åland's official arms only on 10 December 1952. The stag's own symbolism is not recorded; Åland's earliest known seal, from 1326, instead showed Saint Olaf, the islands' patron saint.",
+            "sources": [
+              {
+                "title": "Coat of arms of Åland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land"
+              }
+            ]
+          },
+          "sha256": "2bcc16fd5b6ae33aca4fe47bfa5cb176a4091470b701cbd274d456fce46d480b",
+          "fetched": "2026-08-13"
+        }
+      ]
     }
   }
 }
