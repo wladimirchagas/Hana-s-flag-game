@@ -1,6 +1,7 @@
 // Seed the "National symbols" manifest with the BASELINE every country owes:
-// its current national flag, in the official section (badged as the flag in force)
-// and at the head of the historical section.
+// its current national flag, in the official section (badged as the flag in force).
+// The current flag is NOT seeded into the historical section — that section holds
+// only older, superseded flags.
 //
 //   node scripts/seed-national-symbols.mjs           → add what is missing
 //   node scripts/seed-national-symbols.mjs --dry-run → report only
@@ -112,14 +113,12 @@ for (const { code, name } of missing) {
     source,
   };
 
+  // The baseline is the OFFICIAL section only — the flag the country flies. The
+  // historical section holds only OLDER, superseded flags (owner request), so the
+  // current flag is never seeded there; a country with no sourced past flag simply
+  // has no historical section until one is added by hand.
   const flags = [{ id: `${lower}-official-national`, category: "official", ...(year ? { from: year, to: 9999 } : {}), ...base }];
-  // A historical entry needs a date, and the section exists to carry one, so a
-  // country whose adoption year is unsourced gets the official entry only.
-  if (year) {
-    flags.push({ id: `${lower}-current`, category: "historical", from: year, to: 9999, ...base });
-  } else {
-    noYear.push(cc);
-  }
+  if (!year) noYear.push(cc);
 
   manifest.countries[cc] = { flags };
   added++;

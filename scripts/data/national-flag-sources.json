@@ -54,16 +54,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Andorra"
         },
         {
-          "id": "ad-current",
-          "category": "historical",
-          "from": 1866,
-          "to": 9999,
-          "name": "Flag of Andorra",
-          "reuse": "flags/ad.svg",
-          "design": "Blue, yellow and red vertical bands with the national arms — the colours drawn from those of France and of Catalonia, for Andorra's two co-princes, the French head of state and the Bishop of Urgell.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Andorra"
-        },
-        {
           "id": "ad-arms",
           "category": "coatofarms",
           "from": 1866,
@@ -105,16 +95,6 @@
         {
           "id": "ae-official-national",
           "category": "official",
-          "from": 1971,
-          "to": 9999,
-          "name": "Flag of United Arab Emirates",
-          "reuse": "flags/ae.svg",
-          "design": "The national flag of United Arab Emirates, in the form adopted in 1971.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_United_Arab_Emirates"
-        },
-        {
-          "id": "ae-current",
-          "category": "historical",
           "from": 1971,
           "to": 9999,
           "name": "Flag of United Arab Emirates",
@@ -239,16 +219,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Afghanistan"
         },
         {
-          "id": "af-current",
-          "category": "historical",
-          "from": 2021,
-          "to": 9999,
-          "name": "Flag of Afghanistan",
-          "reuse": "flags/af.svg",
-          "design": "The national flag of Afghanistan, in the form adopted in 2021.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Afghanistan"
-        },
-        {
           "id": "af-republic",
           "category": "historical",
           "from": 2004,
@@ -291,16 +261,6 @@
           "name": "Flag of Antigua and Barbuda",
           "reuse": "flags/ag.svg",
           "design": "The national flag, adopted in 1967.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda"
-        },
-        {
-          "id": "ag-current",
-          "category": "historical",
-          "from": 1967,
-          "to": 9999,
-          "name": "Flag of Antigua and Barbuda",
-          "reuse": "flags/ag.svg",
-          "design": "A red field with a black, blue and white V bearing a rising golden sun — the sun for the dawn of a new era, black for the African heritage, blue for hope, white for the sand, red for the energy of the people, the V for victory.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda"
         },
         {
@@ -364,16 +324,6 @@
         {
           "id": "al-official-national",
           "category": "official",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Albania",
-          "reuse": "flags/al.svg",
-          "design": "The national flag of Albania, in the form adopted in 1992.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Albania"
-        },
-        {
-          "id": "al-current",
-          "category": "historical",
           "from": 1992,
           "to": 9999,
           "name": "Flag of Albania",
@@ -515,16 +465,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Armenia"
         },
         {
-          "id": "am-current",
-          "category": "historical",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of Armenia",
-          "reuse": "flags/am.svg",
-          "design": "The national flag of Armenia, in the form adopted in 1990.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Armenia"
-        },
-        {
           "id": "am-ssr",
           "category": "historical",
           "name": "Flag of the Armenian SSR",
@@ -649,16 +589,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Angola"
         },
         {
-          "id": "ao-current",
-          "category": "historical",
-          "from": 1975,
-          "to": 9999,
-          "name": "Flag of Angola",
-          "reuse": "flags/ao.svg",
-          "design": "The national flag of Angola, in the form adopted in 1975.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Angola"
-        },
-        {
           "id": "ao-portugal-1911",
           "category": "historical",
           "name": "Flag of Portugal (1911–1975)",
@@ -774,16 +704,6 @@
         {
           "id": "ar-official-national",
           "category": "official",
-          "from": 1861,
-          "to": 9999,
-          "name": "Flag of Argentina",
-          "reuse": "flags/ar.svg",
-          "design": "The national flag of Argentina, in the form adopted in 1861.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Argentina"
-        },
-        {
-          "id": "ar-current",
-          "category": "historical",
           "from": 1861,
           "to": 9999,
           "name": "Flag of Argentina",
@@ -931,16 +851,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Austria"
         },
         {
-          "id": "at-current",
-          "category": "historical",
-          "from": 1918,
-          "to": 9999,
-          "name": "Flag of Austria",
-          "reuse": "flags/at.svg",
-          "design": "The national flag of Austria, in the form adopted in 1918.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Austria"
-        },
-        {
           "id": "at-state",
           "category": "civilstate",
           "name": "State flag of Austria",
@@ -992,16 +902,6 @@
     },
     "AU": {
       "flags": [
-        {
-          "id": "au-1908",
-          "category": "historical",
-          "name": "Australian National Flag",
-          "from": 1908,
-          "to": 9999,
-          "reuse": "flags/au.svg",
-          "design": "A Blue Ensign with the Union Jack in the canton, the seven-pointed Commonwealth Star beneath it and the Southern Cross in the fly.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Australian_flags"
-        },
         {
           "id": "au-1903",
           "category": "historical",
@@ -1260,16 +1160,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan"
         },
         {
-          "id": "az-current",
-          "category": "historical",
-          "from": 1918,
-          "to": 9999,
-          "name": "Flag of Azerbaijan",
-          "reuse": "flags/az.svg",
-          "design": "The national flag of Azerbaijan, in the form adopted in 1918.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan"
-        },
-        {
           "id": "az-adr",
           "category": "historical",
           "name": "Flag of the Azerbaijan Democratic Republic",
@@ -1404,16 +1294,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina"
         },
         {
-          "id": "ba-current",
-          "category": "historical",
-          "from": 1998,
-          "to": 9999,
-          "name": "Flag of Bosnia and Herzegovina",
-          "reuse": "flags/ba.svg",
-          "design": "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina"
-        },
-        {
           "id": "ba-1992",
           "category": "historical",
           "name": "Flag of the Republic of Bosnia and Herzegovina (1992–1998)",
@@ -1501,16 +1381,6 @@
         {
           "id": "bb-official-national",
           "category": "official",
-          "from": 1966,
-          "to": 9999,
-          "name": "Flag of Barbados",
-          "reuse": "flags/bb.svg",
-          "design": "The national flag of Barbados, in the form adopted in 1966.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Barbados"
-        },
-        {
-          "id": "bb-current",
-          "category": "historical",
           "from": 1966,
           "to": 9999,
           "name": "Flag of Barbados",
@@ -1607,16 +1477,6 @@
         {
           "id": "bd-official-national",
           "category": "official",
-          "from": 1972,
-          "to": 9999,
-          "name": "Flag of Bangladesh",
-          "reuse": "flags/bd.svg",
-          "design": "The national flag of Bangladesh, in the form adopted in 1972.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bangladesh"
-        },
-        {
-          "id": "bd-current",
-          "category": "historical",
           "from": 1972,
           "to": 9999,
           "name": "Flag of Bangladesh",
@@ -1836,16 +1696,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belgium"
         },
         {
-          "id": "be-current",
-          "category": "historical",
-          "from": 1831,
-          "to": 9999,
-          "name": "Flag of Belgium",
-          "reuse": "flags/be.svg",
-          "design": "The national flag of Belgium, in the form adopted in 1831.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Belgium"
-        },
-        {
           "id": "be-civil-ensign",
           "category": "maritime",
           "name": "Civil ensign of Belgium",
@@ -1934,16 +1784,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso"
         },
         {
-          "id": "bf-current",
-          "category": "historical",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of Burkina Faso",
-          "reuse": "flags/bf.svg",
-          "design": "Red over green with a gold star at the centre — red for the revolution, green for hope and the land, the star for the guiding light — adopted in 1984 with the country's new name.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso"
-        },
-        {
           "id": "bf-upper-volta",
           "category": "historical",
           "from": 1959,
@@ -2022,16 +1862,6 @@
           "name": "Flag of Bulgaria",
           "reuse": "flags/bg.svg",
           "design": "The national flag of Bulgaria, in use since 1878.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bulgaria"
-        },
-        {
-          "id": "bg-current",
-          "category": "historical",
-          "from": 1878,
-          "to": 9999,
-          "name": "Flag of Bulgaria",
-          "reuse": "flags/bg.svg",
-          "design": "A white-green-red horizontal tricolour, adopted in 1878 after liberation — white for peace, green for the country's farmland and forests, red for the courage of its people.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bulgaria"
         },
         {
@@ -2124,16 +1954,6 @@
           "name": "Flag of Bahrain",
           "reuse": "flags/bh.svg",
           "design": "The national flag, in the form adopted in 2002.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
-        },
-        {
-          "id": "bh-current",
-          "category": "historical",
-          "from": 2002,
-          "to": 9999,
-          "name": "Flag of Bahrain",
-          "reuse": "flags/bh.svg",
-          "design": "White and red divided by a serrated line of five white points — one for each of the five pillars of Islam — the red the traditional colour of the Gulf states, the white for peace.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bahrain"
         },
         {
@@ -2231,16 +2051,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Burundi"
         },
         {
-          "id": "bi-current",
-          "category": "historical",
-          "from": 1967,
-          "to": 9999,
-          "name": "Flag of Burundi",
-          "reuse": "flags/bi.svg",
-          "design": "A white saltire dividing red and green fields, with three red stars in a white disc at the centre — red for the independence struggle, green for hope, white for peace; the three stars for the national motto and for the country's peoples.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Burundi"
-        },
-        {
           "id": "bi-belgium",
           "category": "historical",
           "from": 1916,
@@ -2323,16 +2133,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Benin"
         },
         {
-          "id": "bj-current",
-          "category": "historical",
-          "from": 1959,
-          "to": 9999,
-          "name": "Flag of Benin",
-          "reuse": "flags/bj.svg",
-          "design": "A green vertical band with horizontal yellow-over-red bands — the pan-African colours, adopted in 1959, replaced under the Marxist People's Republic in 1975 and restored in 1990.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Benin"
-        },
-        {
           "id": "bj-marxist",
           "category": "historical",
           "from": 1975,
@@ -2406,16 +2206,6 @@
         {
           "id": "bn-official-national",
           "category": "official",
-          "from": 1959,
-          "to": 9999,
-          "name": "Flag of Brunei",
-          "reuse": "flags/bn.svg",
-          "design": "The national flag of Brunei, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Brunei"
-        },
-        {
-          "id": "bn-current",
-          "category": "historical",
           "from": 1959,
           "to": 9999,
           "name": "Flag of Brunei",
@@ -2529,16 +2319,6 @@
     },
     "BO": {
       "flags": [
-        {
-          "id": "bo-1851",
-          "category": "historical",
-          "name": "Flag of Bolivia",
-          "from": 1851,
-          "to": 9999,
-          "reuse": "flags/bo.svg",
-          "design": "A horizontal tricolour of red, yellow and green.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Bolivian_flags"
-        },
         {
           "id": "bo-1826",
           "category": "historical",
@@ -2713,16 +2493,6 @@
     },
     "BR": {
       "flags": [
-        {
-          "id": "br-1992",
-          "category": "historical",
-          "name": "Flag of Brazil",
-          "from": 1992,
-          "to": 9999,
-          "reuse": "flags/br.svg",
-          "design": "27 stars — Tocantins, Amapá and Roraima were added when the states they represent were created.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil"
-        },
         {
           "id": "br-1968",
           "category": "historical",
@@ -3071,16 +2841,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bahamas"
         },
         {
-          "id": "bs-current",
-          "category": "historical",
-          "from": 1973,
-          "to": 9999,
-          "name": "Flag of Bahamas",
-          "reuse": "flags/bs.svg",
-          "design": "The national flag of Bahamas, in the form adopted in 1973.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bahamas"
-        },
-        {
           "id": "bs-colonial",
           "category": "historical",
           "name": "Flag of the Colony of the Bahamas",
@@ -3188,16 +2948,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
         },
         {
-          "id": "bt-current",
-          "category": "historical",
-          "from": 1969,
-          "to": 9999,
-          "name": "Flag of Bhutan",
-          "reuse": "flags/bt.svg",
-          "design": "A white dragon across a field divided yellow over orange — the dragon (Druk, the thunder dragon) for the country itself, yellow for the secular authority of the king, orange for the Buddhist religion, the dragon's jewels for the nation's wealth.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
-        },
-        {
           "id": "bt-arms",
           "category": "coatofarms",
           "from": 1980,
@@ -3244,16 +2994,6 @@
           "name": "Flag of Botswana",
           "reuse": "flags/bw.svg",
           "design": "The national flag of Botswana, adopted in 1966.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Botswana"
-        },
-        {
-          "id": "bw-current",
-          "category": "historical",
-          "from": 1966,
-          "to": 9999,
-          "name": "Flag of Botswana",
-          "reuse": "flags/bw.svg",
-          "design": "A light-blue field crossed by a black band edged in white — the blue for water and the sky, the black and white for the country's people and for racial harmony.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Botswana"
         },
         {
@@ -3343,16 +3083,6 @@
         {
           "id": "by-official-national",
           "category": "official",
-          "from": 1995,
-          "to": 9999,
-          "name": "Flag of Belarus",
-          "reuse": "flags/by.svg",
-          "design": "The national flag of Belarus, in the form adopted in 1995.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Belarus"
-        },
-        {
-          "id": "by-current",
-          "category": "historical",
           "from": 1995,
           "to": 9999,
           "name": "Flag of Belarus",
@@ -3521,16 +3251,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belize"
         },
         {
-          "id": "bz-current",
-          "category": "historical",
-          "from": 1981,
-          "to": 9999,
-          "name": "Flag of Belize",
-          "reuse": "flags/bz.svg",
-          "design": "A blue field with red bands and the national arms in a white disc — blue and red for the two main parties, the arms recording the mahogany trade at the country's origin.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Belize"
-        },
-        {
           "id": "bz-uk",
           "category": "historical",
           "from": 1862,
@@ -3591,16 +3311,6 @@
         {
           "id": "ca-official-national",
           "category": "official",
-          "from": 1965,
-          "to": 9999,
-          "name": "Flag of Canada",
-          "reuse": "flags/ca.svg",
-          "design": "The national flag of Canada, in the form adopted in 1965.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Canada"
-        },
-        {
-          "id": "ca-current",
-          "category": "historical",
           "from": 1965,
           "to": 9999,
           "name": "Flag of Canada",
@@ -3837,16 +3547,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
         },
         {
-          "id": "cd-current",
-          "category": "historical",
-          "from": 2006,
-          "to": 9999,
-          "name": "Flag of the Democratic Republic of the Congo",
-          "reuse": "flags/cd.svg",
-          "design": "A sky-blue field with a yellow star and a red diagonal stripe fimbriated in yellow — adopted in 2006, reviving the blue-and-star design of the independence era.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Democratic_Republic_of_the_Congo"
-        },
-        {
           "id": "cd-1997",
           "category": "historical",
           "from": 1997,
@@ -3993,16 +3693,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic"
         },
         {
-          "id": "cf-current",
-          "category": "historical",
-          "from": 1958,
-          "to": 9999,
-          "name": "Flag of the Central African Republic",
-          "reuse": "flags/cf.svg",
-          "design": "Four horizontal bands — blue, white, green, yellow — crossed by a vertical red stripe, with a gold star in the canton; it joins the French and pan-African colours, red binding them as the blood common to all.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic"
-        },
-        {
           "id": "cf-french",
           "category": "historical",
           "from": 1910,
@@ -4068,16 +3758,6 @@
           "name": "Flag of the Republic of the Congo",
           "reuse": "flags/cg.svg",
           "design": "The national flag, adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo"
-        },
-        {
-          "id": "cg-current",
-          "category": "historical",
-          "from": 1959,
-          "to": 9999,
-          "name": "Flag of the Republic of the Congo",
-          "reuse": "flags/cg.svg",
-          "design": "A yellow diagonal band dividing a green and a red triangle — the pan-African colours, adopted in 1959, dropped under the Marxist People's Republic in 1970 and restored in 1991.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo"
         },
         {
@@ -4162,16 +3842,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
         },
         {
-          "id": "ch-current",
-          "category": "historical",
-          "from": 1841,
-          "to": 9999,
-          "name": "Flag of Switzerland",
-          "reuse": "flags/ch.svg",
-          "design": "The national flag of Switzerland, in the form adopted in 1841.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
-        },
-        {
           "id": "ch-civil-ensign",
           "category": "maritime",
           "name": "Civil and state ensign of Switzerland",
@@ -4231,16 +3901,6 @@
           "name": "Flag of Ivory Coast",
           "reuse": "flags/ci.svg",
           "design": "The national flag of Ivory Coast, adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast"
-        },
-        {
-          "id": "ci-current",
-          "category": "historical",
-          "from": 1959,
-          "to": 9999,
-          "name": "Flag of Ivory Coast",
-          "reuse": "flags/ci.svg",
-          "design": "Vertical bands of orange, white and green — orange for the northern savanna and the country's future, white for peace, green for the southern forests and hope.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast"
         },
         {
@@ -4304,16 +3964,6 @@
         {
           "id": "cl-official-national",
           "category": "official",
-          "from": 1817,
-          "to": 9999,
-          "name": "Flag of Chile",
-          "reuse": "flags/cl.svg",
-          "design": "The national flag of Chile, in the form adopted in 1817.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Chile"
-        },
-        {
-          "id": "cl-current",
-          "category": "historical",
           "from": 1817,
           "to": 9999,
           "name": "Flag of Chile",
@@ -4508,16 +4158,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Cameroon"
         },
         {
-          "id": "cm-current",
-          "category": "historical",
-          "from": 1975,
-          "to": 9999,
-          "name": "Flag of Cameroon",
-          "reuse": "flags/cm.svg",
-          "design": "The national flag of Cameroon, in the form adopted in 1975.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cameroon"
-        },
-        {
           "id": "cm-1961",
           "category": "historical",
           "name": "Flag of Cameroon (1961–1975)",
@@ -4630,16 +4270,6 @@
     },
     "CN": {
       "flags": [
-        {
-          "id": "cn-1949",
-          "category": "historical",
-          "name": "Flag of the People's Republic of China",
-          "from": 1949,
-          "to": 9999,
-          "reuse": "flags/cn.svg",
-          "design": "A red field with one large gold star and four smaller stars in an arc, hoisted on 1 October 1949.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Chinese_flags"
-        },
         {
           "id": "cn-roc-1928",
           "category": "historical",
@@ -4798,16 +4428,6 @@
         {
           "id": "co-official-national",
           "category": "official",
-          "from": 1861,
-          "to": 9999,
-          "name": "Flag of Colombia",
-          "reuse": "flags/co.svg",
-          "design": "The national flag of Colombia, in the form adopted in 1861.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Colombia"
-        },
-        {
-          "id": "co-current",
-          "category": "historical",
           "from": 1861,
           "to": 9999,
           "name": "Flag of Colombia",
@@ -4991,16 +4611,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica"
         },
         {
-          "id": "cr-current",
-          "category": "historical",
-          "from": 1848,
-          "to": 9999,
-          "name": "Flag of Costa Rica",
-          "reuse": "flags/cr.svg",
-          "design": "The national flag of Costa Rica, in the form adopted in 1848.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica"
-        },
-        {
           "id": "cr-state",
           "category": "official",
           "name": "State flag and ensign of Costa Rica",
@@ -5111,16 +4721,6 @@
         {
           "id": "cu-official-national",
           "category": "official",
-          "from": 1849,
-          "to": 9999,
-          "name": "Flag of Cuba",
-          "reuse": "flags/cu.svg",
-          "design": "The national flag of Cuba, in the form adopted in 1849.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cuba"
-        },
-        {
-          "id": "cu-current",
-          "category": "historical",
           "from": 1849,
           "to": 9999,
           "name": "Flag of Cuba",
@@ -5255,16 +4855,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde"
         },
         {
-          "id": "cv-current",
-          "category": "historical",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Cape Verde",
-          "reuse": "flags/cv.svg",
-          "design": "A blue field with a white-and-red stripe and a ring of ten yellow stars for the ten islands — adopted in 1992, replacing the PAIGC-style flag when Cape Verde set its own course apart from Guinea-Bissau.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde"
-        },
-        {
           "id": "cv-1975",
           "category": "historical",
           "from": 1975,
@@ -5338,16 +4928,6 @@
         {
           "id": "cy-official-national",
           "category": "official",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of Cyprus",
-          "reuse": "flags/cy.svg",
-          "design": "The national flag of Cyprus, in the form adopted in 1960.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cyprus"
-        },
-        {
-          "id": "cy-current",
-          "category": "historical",
           "from": 1960,
           "to": 9999,
           "name": "Flag of Cyprus",
@@ -5477,16 +5057,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Czechia"
         },
         {
-          "id": "cz-current",
-          "category": "historical",
-          "from": 1993,
-          "to": 9999,
-          "name": "Flag of Czechia",
-          "reuse": "flags/cz.svg",
-          "design": "The national flag of Czechia, in the form adopted in 1993.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Czechia"
-        },
-        {
           "id": "cz-president",
           "category": "standard",
           "name": "Flag of the President of the Czech Republic",
@@ -5554,16 +5124,6 @@
         {
           "id": "de-official-national",
           "category": "official",
-          "from": 1919,
-          "to": 9999,
-          "name": "Flag of Germany",
-          "reuse": "flags/de.svg",
-          "design": "The national flag of Germany, in the form adopted in 1919.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Germany"
-        },
-        {
-          "id": "de-current",
-          "category": "historical",
           "from": 1919,
           "to": 9999,
           "name": "Flag of Germany",
@@ -5660,16 +5220,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Djibouti"
         },
         {
-          "id": "dj-current",
-          "category": "historical",
-          "from": 1977,
-          "to": 9999,
-          "name": "Flag of Djibouti",
-          "reuse": "flags/dj.svg",
-          "design": "Light blue over green with a white hoist triangle bearing a red star — blue for the sea and sky and the Issa people, green for the land and the Afar people, white for peace, the red star for unity.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Djibouti"
-        },
-        {
           "id": "dj-french",
           "category": "historical",
           "from": 1896,
@@ -5730,16 +5280,6 @@
         {
           "id": "dk-official-national",
           "category": "official",
-          "from": 1625,
-          "to": 9999,
-          "name": "Flag of Denmark",
-          "reuse": "flags/dk.svg",
-          "design": "The national flag of Denmark, in the form adopted in 1625.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Denmark"
-        },
-        {
-          "id": "dk-current",
-          "category": "historical",
           "from": 1625,
           "to": 9999,
           "name": "Flag of Denmark",
@@ -5847,16 +5387,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Dominica"
         },
         {
-          "id": "dm-current",
-          "category": "historical",
-          "from": 1978,
-          "to": 9999,
-          "name": "Flag of Dominica",
-          "reuse": "flags/dm.svg",
-          "design": "A green field crossed by a cross of yellow, black and white, with a red disc bearing a Sisserou parrot ringed by ten green stars — green for the forests, the cross for faith, the ten stars for the ten parishes, and the parrot, found only here, for the flight towards greater heights.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Dominica"
-        },
-        {
           "id": "dm-uk",
           "category": "historical",
           "from": 1763,
@@ -5925,16 +5455,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic"
         },
         {
-          "id": "do-current",
-          "category": "historical",
-          "from": 1844,
-          "to": 9999,
-          "name": "Flag of the Dominican Republic",
-          "reuse": "flags/do.svg",
-          "design": "A white cross dividing blue and red quarters, with the national arms at the centre — the cross for faith, blue for liberty, red for the blood of the fight for independence.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Dominican_Republic"
-        },
-        {
           "id": "do-spanish",
           "category": "historical",
           "from": 1526,
@@ -5995,16 +5515,6 @@
         {
           "id": "dz-official-national",
           "category": "official",
-          "from": 1962,
-          "to": 9999,
-          "name": "Flag of Algeria",
-          "reuse": "flags/dz.svg",
-          "design": "The national flag of Algeria, in the form adopted in 1962.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Algeria"
-        },
-        {
-          "id": "dz-current",
-          "category": "historical",
           "from": 1962,
           "to": 9999,
           "name": "Flag of Algeria",
@@ -6124,16 +5634,6 @@
         {
           "id": "ec-official-national",
           "category": "official",
-          "from": 1900,
-          "to": 9999,
-          "name": "Flag of Ecuador",
-          "reuse": "flags/ec.svg",
-          "design": "The national flag of Ecuador, in the form adopted in 1900.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Ecuador"
-        },
-        {
-          "id": "ec-current",
-          "category": "historical",
           "from": 1900,
           "to": 9999,
           "name": "Flag of Ecuador",
@@ -6273,16 +5773,6 @@
         {
           "id": "ee-official-national",
           "category": "official",
-          "from": 1918,
-          "to": 9999,
-          "name": "Flag of Estonia",
-          "reuse": "flags/ee.svg",
-          "design": "The national flag of Estonia, in the form adopted in 1918.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Estonia"
-        },
-        {
-          "id": "ee-current",
-          "category": "historical",
           "from": 1918,
           "to": 9999,
           "name": "Flag of Estonia",
@@ -6467,16 +5957,6 @@
         {
           "id": "eg-official-national",
           "category": "official",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of Egypt",
-          "reuse": "flags/eg.svg",
-          "design": "The national flag of Egypt, in the form adopted in 1984.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Egypt"
-        },
-        {
-          "id": "eg-current",
-          "category": "historical",
           "from": 1984,
           "to": 9999,
           "name": "Flag of Egypt",
@@ -6672,16 +6152,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Eritrea"
         },
         {
-          "id": "er-current",
-          "category": "historical",
-          "from": 1995,
-          "to": 9999,
-          "name": "Flag of Eritrea",
-          "reuse": "flags/er.svg",
-          "design": "A red triangle bearing a gold olive wreath and branch, between green and blue triangles — based on the flag of the EPLF that won independence: red for the struggle, green for agriculture, blue for the sea, the wreath for peace.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Eritrea"
-        },
-        {
           "id": "er-italian",
           "category": "historical",
           "from": 1890,
@@ -6753,16 +6223,6 @@
     },
     "ES": {
       "flags": [
-        {
-          "id": "es-1981",
-          "category": "historical",
-          "name": "Flag of Spain",
-          "from": 1981,
-          "to": 9999,
-          "reuse": "flags/es.svg",
-          "design": "Red-yellow-red with the coat of arms toward the hoist, in the form fixed by the 1981 royal decree.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Spanish_flags"
-        },
         {
           "id": "es-1977",
           "category": "historical",
@@ -6940,16 +6400,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
         },
         {
-          "id": "et-current",
-          "category": "historical",
-          "from": 1996,
-          "to": 9999,
-          "name": "Flag of Ethiopia",
-          "reuse": "flags/et.svg",
-          "design": "The national flag of Ethiopia, in the form adopted in 1996.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Ethiopia"
-        },
-        {
           "id": "et-1897",
           "category": "historical",
           "name": "Flag of Ethiopia (1897–1914)",
@@ -7031,16 +6481,6 @@
         {
           "id": "fi-official-national",
           "category": "official",
-          "from": 1918,
-          "to": 9999,
-          "name": "Flag of Finland",
-          "reuse": "flags/fi.svg",
-          "design": "The national flag of Finland, in the form adopted in 1918.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Finland"
-        },
-        {
-          "id": "fi-current",
-          "category": "historical",
           "from": 1918,
           "to": 9999,
           "name": "Flag of Finland",
@@ -7217,16 +6657,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Fiji"
         },
         {
-          "id": "fj-current",
-          "category": "historical",
-          "from": 1970,
-          "to": 9999,
-          "name": "Flag of Fiji",
-          "reuse": "flags/fj.svg",
-          "design": "A light-blue field with the Union Jack in the canton and the national shield in the fly — the blue for the Pacific Ocean, the shield keeping the arms granted under British rule.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Fiji"
-        },
-        {
           "id": "fj-uk",
           "category": "historical",
           "from": 1874,
@@ -7292,16 +6722,6 @@
           "name": "Flag of the Federated States of Micronesia",
           "reuse": "flags/fm.svg",
           "design": "The national flag, adopted in 1978.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia"
-        },
-        {
-          "id": "fm-current",
-          "category": "historical",
-          "from": 1978,
-          "to": 9999,
-          "name": "Flag of the Federated States of Micronesia",
-          "reuse": "flags/fm.svg",
-          "design": "A light-blue field with four white stars in a diamond — blue for the Pacific Ocean, the four stars for the four states of the federation (Yap, Chuuk, Pohnpei and Kosrae).",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia"
         },
         {
@@ -7376,16 +6796,6 @@
     },
     "FR": {
       "flags": [
-        {
-          "id": "fr-tricolore",
-          "category": "historical",
-          "name": "Flag of France (the Tricolore)",
-          "from": 1830,
-          "to": 9999,
-          "reuse": "flags/fr.svg",
-          "design": "Three vertical bands of blue, white and red. The darker navy of the original was restored in 2020, after a lighter version had been used since 1976.",
-          "source": "https://en.wikipedia.org/wiki/List_of_French_flags"
-        },
         {
           "id": "fr-bourbon",
           "category": "historical",
@@ -7484,16 +6894,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Gabon"
         },
         {
-          "id": "ga-current",
-          "category": "historical",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of Gabon",
-          "reuse": "flags/ga.svg",
-          "design": "Horizontal bands of green, yellow and blue — green for the country's forests, yellow for the equator and the sun, blue for the sea.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Gabon"
-        },
-        {
           "id": "ga-french",
           "category": "historical",
           "from": 1910,
@@ -7551,25 +6951,6 @@
     },
     "GB": {
       "flags": [
-        {
-          "id": "gb-1801",
-          "category": "historical",
-          "name": "Union Flag",
-          "from": 1801,
-          "to": 9999,
-          "reuse": "flags/gb.svg",
-          "design": "The crosses of St George, St Andrew and St Patrick combined — the design adopted when Ireland joined the union on 1 January 1801.",
-          "meaning": {
-            "description": "The Union Flag layers three patron saints' crosses in the order the kingdoms joined: England's red cross of St George on white, Scotland's white saltire of St Andrew on blue (joined at the union of the crowns in 1606) and the red saltire of St Patrick for Ireland, added when the Kingdom of Ireland joined the union in 1801. St Patrick's saltire is set counterchanged — offset from the centre of the white Scottish saltire — so that neither saltire appears to take precedence over the other, which is why the flag is not symmetrical and can be flown upside down.",
-            "sources": [
-              {
-                "title": "Union Jack — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Union_Jack"
-              }
-            ]
-          },
-          "source": "https://en.wikipedia.org/wiki/List_of_United_Kingdom_flags"
-        },
         {
           "id": "gb-1707",
           "category": "historical",
@@ -7798,7 +7179,16 @@
           "to": 9999,
           "reuse": "flags/gb.svg",
           "design": "The national flag of the United Kingdom.",
-          "source": "https://en.wikipedia.org/wiki/Union_Jack"
+          "source": "https://en.wikipedia.org/wiki/Union_Jack",
+          "meaning": {
+            "description": "The Union Flag layers three patron saints' crosses in the order the kingdoms joined: England's red cross of St George on white, Scotland's white saltire of St Andrew on blue (joined at the union of the crowns in 1606) and the red saltire of St Patrick for Ireland, added when the Kingdom of Ireland joined the union in 1801. St Patrick's saltire is set counterchanged — offset from the centre of the white Scottish saltire — so that neither saltire appears to take precedence over the other, which is why the flag is not symmetrical and can be flown upside down.",
+            "sources": [
+              {
+                "title": "Union Jack — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Union_Jack"
+              }
+            ]
+          }
         }
       ]
     },
@@ -7812,16 +7202,6 @@
           "name": "Flag of Grenada",
           "reuse": "flags/gd.svg",
           "design": "The national flag, adopted at independence in 1974.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Grenada"
-        },
-        {
-          "id": "gd-current",
-          "category": "historical",
-          "from": 1974,
-          "to": 9999,
-          "name": "Flag of Grenada",
-          "reuse": "flags/gd.svg",
-          "design": "A red border with seven gold stars around green and yellow triangles, a star in a red disc at the centre and a nutmeg in the hoist — red for courage, yellow for wisdom and the sun, green for the land, the seven stars for the seven parishes, the nutmeg for the spice the island is famous for.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Grenada"
         },
         {
@@ -7885,16 +7265,6 @@
         {
           "id": "ge-official-national",
           "category": "official",
-          "from": 2004,
-          "to": 9999,
-          "name": "Flag of Georgia",
-          "reuse": "flags/ge.svg",
-          "design": "The national flag of Georgia, in the form adopted in 2004.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Georgia"
-        },
-        {
-          "id": "ge-current",
-          "category": "historical",
           "from": 2004,
           "to": 9999,
           "name": "Flag of Georgia",
@@ -8044,16 +7414,6 @@
         {
           "id": "gh-official-national",
           "category": "official",
-          "from": 1957,
-          "to": 9999,
-          "name": "Flag of Ghana",
-          "reuse": "flags/gh.svg",
-          "design": "The national flag of Ghana, in the form adopted in 1957.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Ghana"
-        },
-        {
-          "id": "gh-current",
-          "category": "historical",
           "from": 1957,
           "to": 9999,
           "name": "Flag of Ghana",
@@ -8248,16 +7608,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Gambia"
         },
         {
-          "id": "gm-current",
-          "category": "historical",
-          "from": 1965,
-          "to": 9999,
-          "name": "Flag of the Gambia",
-          "reuse": "flags/gm.svg",
-          "design": "Red, blue and green bands separated by narrow white stripes — red for the sun and the savanna, blue for the River Gambia that runs the length of the country, green for the land and forests, white for peace and unity.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Gambia"
-        },
-        {
           "id": "gm-uk",
           "category": "historical",
           "from": 1821,
@@ -8323,16 +7673,6 @@
           "name": "Flag of Guinea",
           "reuse": "flags/gn.svg",
           "design": "The national flag, adopted at independence in 1958.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea"
-        },
-        {
-          "id": "gn-current",
-          "category": "historical",
-          "from": 1958,
-          "to": 9999,
-          "name": "Flag of Guinea",
-          "reuse": "flags/gn.svg",
-          "design": "Vertical red, yellow and green bands — the pan-African colours, in the arrangement of the French Tricolour — adopted at independence in 1958: red for sacrifice and labour, yellow for the sun and gold, green for the land.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea"
         },
         {
@@ -8404,16 +7744,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea"
         },
         {
-          "id": "gq-current",
-          "category": "historical",
-          "from": 1968,
-          "to": 9999,
-          "name": "Flag of Equatorial Guinea",
-          "reuse": "flags/gq.svg",
-          "design": "Green, white and red bands with a blue hoist triangle and the national arms — green for natural resources, blue for the sea between the mainland and the islands, white for peace, red for the fight for independence.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea"
-        },
-        {
           "id": "gq-spanish",
           "category": "historical",
           "from": 1900,
@@ -8474,16 +7804,6 @@
         {
           "id": "gr-official-national",
           "category": "official",
-          "from": 1822,
-          "to": 9999,
-          "name": "Flag of Greece",
-          "reuse": "flags/gr.svg",
-          "design": "The national flag of Greece, in the form adopted in 1822.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Greece"
-        },
-        {
-          "id": "gr-current",
-          "category": "historical",
           "from": 1822,
           "to": 9999,
           "name": "Flag of Greece",
@@ -8580,16 +7900,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guatemala"
         },
         {
-          "id": "gt-current",
-          "category": "historical",
-          "from": 1871,
-          "to": 9999,
-          "name": "Flag of Guatemala",
-          "reuse": "flags/gt.svg",
-          "design": "Sky-blue and white vertical bands with the national arms at the centre — the blue and white of the old Central American union, blue for the two oceans, white for peace.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guatemala"
-        },
-        {
           "id": "gt-federation",
           "category": "historical",
           "from": 1823,
@@ -8671,16 +7981,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau"
         },
         {
-          "id": "gw-current",
-          "category": "historical",
-          "from": 1973,
-          "to": 9999,
-          "name": "Flag of Guinea-Bissau",
-          "reuse": "flags/gw.svg",
-          "design": "A red hoist band with a black star over yellow-and-green fields — the flag of the PAIGC that won independence, in the pan-African colours.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau"
-        },
-        {
           "id": "gw-portuguese",
           "category": "historical",
           "from": 1879,
@@ -8741,16 +8041,6 @@
         {
           "id": "gy-official-national",
           "category": "official",
-          "from": 1966,
-          "to": 9999,
-          "name": "Flag of Guyana",
-          "reuse": "flags/gy.svg",
-          "design": "The national flag of Guyana, in the form adopted in 1966.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guyana"
-        },
-        {
-          "id": "gy-current",
-          "category": "historical",
           "from": 1966,
           "to": 9999,
           "name": "Flag of Guyana",
@@ -8868,16 +8158,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Honduras"
         },
         {
-          "id": "hn-current",
-          "category": "historical",
-          "from": 1866,
-          "to": 9999,
-          "name": "Flag of Honduras",
-          "reuse": "flags/hn.svg",
-          "design": "Two blue bands around a white band bearing five blue stars — the blue and white of the old Central American union, the five stars for its five member states and the hope they might unite again.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Honduras"
-        },
-        {
           "id": "hn-federation",
           "category": "historical",
           "from": 1823,
@@ -8951,16 +8231,6 @@
         {
           "id": "hr-official-national",
           "category": "official",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of Croatia",
-          "reuse": "flags/hr.svg",
-          "design": "The national flag of Croatia, in the form adopted in 1990.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Croatia"
-        },
-        {
-          "id": "hr-current",
-          "category": "historical",
           "from": 1990,
           "to": 9999,
           "name": "Flag of Croatia",
@@ -9138,16 +8408,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Haiti"
         },
         {
-          "id": "ht-current",
-          "category": "historical",
-          "from": 1986,
-          "to": 9999,
-          "name": "Flag of Haiti",
-          "reuse": "flags/ht.svg",
-          "design": "Blue over red with the national arms on a white panel — the blue and red said to be the French Tricolour with the white torn out, for the break with France; restored in 1986 after the fall of the Duvaliers.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Haiti"
-        },
-        {
           "id": "ht-duvalier",
           "category": "historical",
           "from": 1964,
@@ -9221,16 +8481,6 @@
         {
           "id": "hu-official-national",
           "category": "official",
-          "from": 1957,
-          "to": 9999,
-          "name": "Flag of Hungary",
-          "reuse": "flags/hu.svg",
-          "design": "The national flag of Hungary, in the form adopted in 1957.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Hungary"
-        },
-        {
-          "id": "hu-current",
-          "category": "historical",
           "from": 1957,
           "to": 9999,
           "name": "Flag of Hungary",
@@ -9368,16 +8618,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Indonesia"
         },
         {
-          "id": "id-current",
-          "category": "historical",
-          "from": 1945,
-          "to": 9999,
-          "name": "Flag of Indonesia",
-          "reuse": "flags/id.svg",
-          "design": "The national flag of Indonesia, in the form adopted in 1945.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Indonesia"
-        },
-        {
           "id": "id-naval-jack",
           "category": "maritime",
           "name": "Naval jack of the Indonesian Navy",
@@ -9462,16 +8702,6 @@
         {
           "id": "ie-official-national",
           "category": "official",
-          "from": 1922,
-          "to": 9999,
-          "name": "Flag of Ireland",
-          "reuse": "flags/ie.svg",
-          "design": "The national flag of Ireland, in the form adopted in 1922.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Ireland"
-        },
-        {
-          "id": "ie-current",
-          "category": "historical",
           "from": 1922,
           "to": 9999,
           "name": "Flag of Ireland",
@@ -9637,16 +8867,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Israel"
         },
         {
-          "id": "il-current",
-          "category": "historical",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of Israel",
-          "reuse": "flags/il.svg",
-          "design": "The national flag of Israel, in the form adopted in 1948.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Israel"
-        },
-        {
           "id": "il-civil-ensign",
           "category": "maritime",
           "name": "Civil Ensign of Israel",
@@ -9802,16 +9022,6 @@
     },
     "IN": {
       "flags": [
-        {
-          "id": "in-1947",
-          "category": "historical",
-          "name": "Flag of India (Tiranga)",
-          "from": 1947,
-          "to": 9999,
-          "reuse": "flags/in.svg",
-          "design": "A horizontal tricolour of saffron, white and green with the navy-blue Ashoka Chakra of 24 spokes at the centre; adopted 22 July 1947.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Indian_flags"
-        },
         {
           "id": "in-armed-forces",
           "category": "military",
@@ -10022,16 +9232,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq"
         },
         {
-          "id": "iq-current",
-          "category": "historical",
-          "from": 2008,
-          "to": 9999,
-          "name": "Flag of Iraq",
-          "reuse": "flags/iq.svg",
-          "design": "The national flag of Iraq, in the form adopted in 2008.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Iraq"
-        },
-        {
           "id": "iq-1924",
           "category": "historical",
           "name": "Flag of the Kingdom of Iraq",
@@ -10154,16 +9354,6 @@
         {
           "id": "ir-official-national",
           "category": "official",
-          "from": 1980,
-          "to": 9999,
-          "name": "Flag of Iran",
-          "reuse": "flags/ir.svg",
-          "design": "The national flag of Iran, in the form adopted in 1980.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
-        },
-        {
-          "id": "ir-current",
-          "category": "historical",
           "from": 1980,
           "to": 9999,
           "name": "Flag of Iran",
@@ -10332,16 +9522,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Iceland"
         },
         {
-          "id": "is-current",
-          "category": "historical",
-          "from": 1944,
-          "to": 9999,
-          "name": "Flag of Iceland",
-          "reuse": "flags/is.svg",
-          "design": "The national flag of Iceland, in the form adopted in 1944.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Iceland"
-        },
-        {
           "id": "is-1918",
           "category": "historical",
           "name": "Flag of the Kingdom of Iceland",
@@ -10476,16 +9656,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Italy"
         },
         {
-          "id": "it-current",
-          "category": "historical",
-          "from": 1946,
-          "to": 9999,
-          "name": "Flag of Italy",
-          "reuse": "flags/it.svg",
-          "design": "The national flag of Italy, in the form adopted in 1946.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Italy"
-        },
-        {
           "id": "it-civil-ensign",
           "category": "maritime",
           "name": "Civil ensign of Italy",
@@ -10590,16 +9760,6 @@
         {
           "id": "jm-official-national",
           "category": "official",
-          "from": 1962,
-          "to": 9999,
-          "name": "Flag of Jamaica",
-          "reuse": "flags/jm.svg",
-          "design": "The national flag of Jamaica, in the form adopted in 1962.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Jamaica"
-        },
-        {
-          "id": "jm-current",
-          "category": "historical",
           "from": 1962,
           "to": 9999,
           "name": "Flag of Jamaica",
@@ -10753,16 +9913,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Jordan"
         },
         {
-          "id": "jo-current",
-          "category": "historical",
-          "from": 1928,
-          "to": 9999,
-          "name": "Flag of Jordan",
-          "reuse": "flags/jo.svg",
-          "design": "Black, white and green bands with a red hoist triangle bearing a white seven-pointed star — the colours of the Arab Revolt, in use since 1928.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Jordan"
-        },
-        {
           "id": "jo-transjordan",
           "category": "historical",
           "from": 1922,
@@ -10859,16 +10009,6 @@
     },
     "JP": {
       "flags": [
-        {
-          "id": "jp-1999",
-          "category": "historical",
-          "name": "Flag of Japan (Hinomaru)",
-          "from": 1999,
-          "to": 9999,
-          "reuse": "flags/jp.svg",
-          "design": "A crimson disc centred on white, at 2:3 — the proportions and placement fixed by the Act on National Flag and Anthem of 13 August 1999.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Japanese_flags"
-        },
         {
           "id": "jp-1870",
           "category": "historical",
@@ -10998,16 +10138,6 @@
         {
           "id": "ke-official-national",
           "category": "official",
-          "from": 1963,
-          "to": 9999,
-          "name": "Flag of Kenya",
-          "reuse": "flags/ke.svg",
-          "design": "The national flag of Kenya, in the form adopted in 1963.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Kenya"
-        },
-        {
-          "id": "ke-current",
-          "category": "historical",
           "from": 1963,
           "to": 9999,
           "name": "Flag of Kenya",
@@ -11205,16 +10335,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan"
         },
         {
-          "id": "kg-current",
-          "category": "historical",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Kyrgyzstan",
-          "reuse": "flags/kg.svg",
-          "design": "A red field with a golden sun, its rays crossed at the centre by the tündük — the roof-opening of a Kyrgyz yurt — red for bravery, the sun for peace and wealth, the tündük for the home and the nation.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan"
-        },
-        {
           "id": "kg-ssr",
           "category": "historical",
           "from": 1952,
@@ -11289,16 +10409,6 @@
         {
           "id": "kh-official-national",
           "category": "official",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of Cambodia",
-          "reuse": "flags/kh.svg",
-          "design": "The national flag of Cambodia, in the form adopted in 1948.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cambodia"
-        },
-        {
-          "id": "kh-current",
-          "category": "historical",
           "from": 1948,
           "to": 9999,
           "name": "Flag of Cambodia",
@@ -11442,16 +10552,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kiribati"
         },
         {
-          "id": "ki-current",
-          "category": "historical",
-          "from": 1979,
-          "to": 9999,
-          "name": "Flag of Kiribati",
-          "reuse": "flags/ki.svg",
-          "design": "A golden frigatebird flying over a rising sun on a red sky, above blue and white waves — the sun's rays for the Gilbert Islands and Banaba, the three wave-bands for the three island groups, the frigatebird for command of the sea and freedom.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Kiribati"
-        },
-        {
           "id": "ki-uk",
           "category": "historical",
           "from": 1892,
@@ -11517,16 +10617,6 @@
           "name": "Flag of the Comoros",
           "reuse": "flags/km.svg",
           "design": "The national flag, adopted in 2001.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Comoros"
-        },
-        {
-          "id": "km-current",
-          "category": "historical",
-          "from": 2001,
-          "to": 9999,
-          "name": "Flag of the Comoros",
-          "reuse": "flags/km.svg",
-          "design": "Four stripes and a green triangle with a crescent and four stars — the four stripes and four stars for the four islands of the archipelago (Grande Comore, Anjouan, Mohéli and Mayotte), the crescent for Islam.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Comoros"
         },
         {
@@ -11598,16 +10688,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis"
         },
         {
-          "id": "kn-current",
-          "category": "historical",
-          "from": 1983,
-          "to": 9999,
-          "name": "Flag of Saint Kitts and Nevis",
-          "reuse": "flags/kn.svg",
-          "design": "A black diagonal band edged in yellow bearing two white stars, between green and red triangles — green for fertility, red for the struggle, black for the African heritage, yellow for sunshine, the two stars for the two islands and for hope and liberty.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis"
-        },
-        {
           "id": "kn-uk",
           "category": "historical",
           "from": 1783,
@@ -11668,16 +10748,6 @@
         {
           "id": "kp-official-national",
           "category": "official",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of North Korea",
-          "reuse": "flags/kp.svg",
-          "design": "The national flag of North Korea, in the form adopted in 1948.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_North_Korea"
-        },
-        {
-          "id": "kp-current",
-          "category": "historical",
           "from": 1948,
           "to": 9999,
           "name": "Flag of North Korea",
@@ -11760,16 +10830,6 @@
         {
           "id": "kr-official-national",
           "category": "official",
-          "from": 1883,
-          "to": 9999,
-          "name": "Flag of South Korea",
-          "reuse": "flags/kr.svg",
-          "design": "The national flag of South Korea, in the form adopted in 1883.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Korea"
-        },
-        {
-          "id": "kr-current",
-          "category": "historical",
           "from": 1883,
           "to": 9999,
           "name": "Flag of South Korea",
@@ -11925,16 +10985,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Kuwait"
         },
         {
-          "id": "kw-current",
-          "category": "historical",
-          "from": 1961,
-          "to": 9999,
-          "name": "Flag of Kuwait",
-          "reuse": "flags/kw.svg",
-          "design": "The national flag of Kuwait, in the form adopted in 1961.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Kuwait"
-        },
-        {
           "id": "kw-1940",
           "category": "historical",
           "name": "Flag of Kuwait (1940–1961)",
@@ -12035,16 +11085,6 @@
         {
           "id": "kz-official-national",
           "category": "official",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Kazakhstan",
-          "reuse": "flags/kz.svg",
-          "design": "The national flag of Kazakhstan, in the form adopted in 1992.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan"
-        },
-        {
-          "id": "kz-current",
-          "category": "historical",
           "from": 1992,
           "to": 9999,
           "name": "Flag of Kazakhstan",
@@ -12206,16 +11246,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Laos"
         },
         {
-          "id": "la-current",
-          "category": "historical",
-          "from": 1945,
-          "to": 9999,
-          "name": "Flag of Laos",
-          "reuse": "flags/la.svg",
-          "design": "The national flag of Laos, in the form adopted in 1945.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Laos"
-        },
-        {
           "id": "la-1952",
           "category": "historical",
           "name": "Flag of the Kingdom of Laos",
@@ -12296,16 +11326,6 @@
           "name": "Flag of Lebanon",
           "reuse": "flags/lb.svg",
           "design": "The national flag of Lebanon, adopted at independence in 1943.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
-        },
-        {
-          "id": "lb-current",
-          "category": "historical",
-          "from": 1943,
-          "to": 9999,
-          "name": "Flag of Lebanon",
-          "reuse": "flags/lb.svg",
-          "design": "Red over white (double height) over red, charged with a green cedar of Lebanon touching both red bands — adopted at independence in 1943.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lebanon"
         },
         {
@@ -12414,16 +11434,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia"
         },
         {
-          "id": "lc-current",
-          "category": "historical",
-          "from": 1967,
-          "to": 9999,
-          "name": "Flag of Saint Lucia",
-          "reuse": "flags/lc.svg",
-          "design": "A blue field with a black arrowhead edged in white over a yellow triangle — the triangles are the twin Pitons rising from the sea; blue for the sky and ocean, yellow for sunshine, black and white for the two peoples living in unity.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia"
-        },
-        {
           "id": "lc-uk",
           "category": "historical",
           "from": 1814,
@@ -12492,16 +11502,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein"
         },
         {
-          "id": "li-current",
-          "category": "historical",
-          "from": 1937,
-          "to": 9999,
-          "name": "Flag of Liechtenstein",
-          "reuse": "flags/li.svg",
-          "design": "Blue over red with a gold princely crown in the canton — blue for the sky, red for the evening fires of the hearth; the crown was added in 1937 after Liechtenstein discovered at the Berlin Olympics that its flag was identical to Haiti's.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein"
-        },
-        {
           "id": "li-arms",
           "category": "coatofarms",
           "from": 1957,
@@ -12543,16 +11543,6 @@
         {
           "id": "lk-official-national",
           "category": "official",
-          "from": 1972,
-          "to": 9999,
-          "name": "Flag of Sri Lanka",
-          "reuse": "flags/lk.svg",
-          "design": "The national flag of Sri Lanka, in the form adopted in 1972.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka"
-        },
-        {
-          "id": "lk-current",
-          "category": "historical",
           "from": 1972,
           "to": 9999,
           "name": "Flag of Sri Lanka",
@@ -12668,16 +11658,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liberia"
         },
         {
-          "id": "lr-current",
-          "category": "historical",
-          "from": 1847,
-          "to": 9999,
-          "name": "Flag of Liberia",
-          "reuse": "flags/lr.svg",
-          "design": "Eleven red and white stripes with a single white star on a blue canton — modelled on the flag of the United States, from which the country's freed founders came: the eleven stripes for the signers of the declaration of independence, the star for Liberia as the first independent republic in Africa.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Liberia"
-        },
-        {
           "id": "lr-commonwealth",
           "category": "historical",
           "from": 1839,
@@ -12743,16 +11723,6 @@
           "name": "Flag of Lesotho",
           "reuse": "flags/ls.svg",
           "design": "The national flag, adopted in 2006.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
-        },
-        {
-          "id": "ls-current",
-          "category": "historical",
-          "from": 2006,
-          "to": 9999,
-          "name": "Flag of Lesotho",
-          "reuse": "flags/ls.svg",
-          "design": "Blue, white and green horizontal bands with a black Basotho hat (mokorotlo) at the centre — blue for rain, white for peace, green for prosperity, the hat for the Basotho nation.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Lesotho"
         },
         {
@@ -12842,16 +11812,6 @@
         {
           "id": "lt-official-national",
           "category": "official",
-          "from": 1918,
-          "to": 9999,
-          "name": "Flag of Lithuania",
-          "reuse": "flags/lt.svg",
-          "design": "The national flag of Lithuania, in the form adopted in 1918.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Lithuania"
-        },
-        {
-          "id": "lt-current",
-          "category": "historical",
           "from": 1918,
           "to": 9999,
           "name": "Flag of Lithuania",
@@ -12996,16 +11956,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Luxembourg"
         },
         {
-          "id": "lu-current",
-          "category": "historical",
-          "from": 1845,
-          "to": 9999,
-          "name": "Flag of Luxembourg",
-          "reuse": "flags/lu.svg",
-          "design": "The national flag of Luxembourg, in the form adopted in 1845.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Luxembourg"
-        },
-        {
           "id": "lu-civil-ensign",
           "category": "maritime",
           "name": "Civil Ensign of Luxembourg",
@@ -13093,16 +12043,6 @@
         {
           "id": "lv-official-national",
           "category": "official",
-          "from": 1923,
-          "to": 9999,
-          "name": "Flag of Latvia",
-          "reuse": "flags/lv.svg",
-          "design": "The national flag of Latvia, in the form adopted in 1923.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Latvia"
-        },
-        {
-          "id": "lv-current",
-          "category": "historical",
           "from": 1923,
           "to": 9999,
           "name": "Flag of Latvia",
@@ -13260,16 +12200,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Libya"
         },
         {
-          "id": "ly-current",
-          "category": "historical",
-          "from": 2011,
-          "to": 9999,
-          "name": "Flag of Libya",
-          "reuse": "flags/ly.svg",
-          "design": "A red-black-green triband with a white star and crescent — the flag of the 1951 Kingdom of Libya, restored in 2011 after the fall of Gaddafi.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Libya"
-        },
-        {
           "id": "ly-kingdom",
           "category": "historical",
           "from": 1951,
@@ -13407,16 +12337,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Morocco"
         },
         {
-          "id": "ma-current",
-          "category": "historical",
-          "from": 1915,
-          "to": 9999,
-          "name": "Flag of Morocco",
-          "reuse": "flags/ma.svg",
-          "design": "The national flag of Morocco, in the form adopted in 1915.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Morocco"
-        },
-        {
           "id": "ma-alawi",
           "category": "historical",
           "name": "Flag of the Alawi Sultanate",
@@ -13523,16 +12443,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Monaco"
         },
         {
-          "id": "mc-current",
-          "category": "historical",
-          "from": 1881,
-          "to": 9999,
-          "name": "Flag of Monaco",
-          "reuse": "flags/mc.svg",
-          "design": "Red over white — the heraldic colours of the House of Grimaldi, who have ruled Monaco since 1297.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Monaco"
-        },
-        {
           "id": "mc-arms",
           "category": "coatofarms",
           "from": 1881,
@@ -13574,16 +12484,6 @@
         {
           "id": "md-official-national",
           "category": "official",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of Moldova",
-          "reuse": "flags/md.svg",
-          "design": "The national flag of Moldova, in the form adopted in 1990.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Moldova"
-        },
-        {
-          "id": "md-current",
-          "category": "historical",
           "from": 1990,
           "to": 9999,
           "name": "Flag of Moldova",
@@ -13677,16 +12577,6 @@
         {
           "id": "me-official-national",
           "category": "official",
-          "from": 2004,
-          "to": 9999,
-          "name": "Flag of Montenegro",
-          "reuse": "flags/me.svg",
-          "design": "The national flag of Montenegro, in the form adopted in 2004.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Montenegro"
-        },
-        {
-          "id": "me-current",
-          "category": "historical",
           "from": 2004,
           "to": 9999,
           "name": "Flag of Montenegro",
@@ -13802,16 +12692,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Madagascar"
         },
         {
-          "id": "mg-current",
-          "category": "historical",
-          "from": 1958,
-          "to": 9999,
-          "name": "Flag of Madagascar",
-          "reuse": "flags/mg.svg",
-          "design": "A white and red vertical band beside horizontal red-over-green stripes, adopted in 1958 during the transition to independence. The red and white recall the Merina monarchy; green is often taken for the coastal peoples.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Madagascar"
-        },
-        {
           "id": "mg-french",
           "category": "historical",
           "from": 1896,
@@ -13875,16 +12755,6 @@
           "name": "Flag of the Marshall Islands",
           "reuse": "flags/mh.svg",
           "design": "The national flag, adopted in 1979.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands"
-        },
-        {
-          "id": "mh-current",
-          "category": "historical",
-          "from": 1979,
-          "to": 9999,
-          "name": "Flag of the Marshall Islands",
-          "reuse": "flags/mh.svg",
-          "design": "A blue field crossed by widening orange and white rays from the hoist, with a white 24-pointed star — blue for the ocean, the rays for the equator and the two island chains (Ratak “sunrise,” orange; Ralik “sunset,” white), the 24 points for the municipalities.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands"
         },
         {
@@ -13962,16 +12832,6 @@
         {
           "id": "mk-official-national",
           "category": "official",
-          "from": 1995,
-          "to": 9999,
-          "name": "Flag of North Macedonia",
-          "reuse": "flags/mk.svg",
-          "design": "The national flag of North Macedonia, in the form adopted in 1995.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia"
-        },
-        {
-          "id": "mk-current",
-          "category": "historical",
           "from": 1995,
           "to": 9999,
           "name": "Flag of North Macedonia",
@@ -14068,16 +12928,6 @@
         {
           "id": "ml-official-national",
           "category": "official",
-          "from": 1961,
-          "to": 9999,
-          "name": "Flag of Mali",
-          "reuse": "flags/ml.svg",
-          "design": "The national flag of Mali, in the form adopted in 1961.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Mali"
-        },
-        {
-          "id": "ml-current",
-          "category": "historical",
           "from": 1961,
           "to": 9999,
           "name": "Flag of Mali",
@@ -14196,16 +13046,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Myanmar"
         },
         {
-          "id": "mm-current",
-          "category": "historical",
-          "from": 2010,
-          "to": 9999,
-          "name": "Flag of Myanmar",
-          "reuse": "flags/mm.svg",
-          "design": "The national flag of Myanmar, in the form adopted in 2010.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Myanmar"
-        },
-        {
           "id": "mm-tatmadaw",
           "category": "military",
           "name": "Flag of the Myanmar Armed Forces (Tatmadaw)",
@@ -14299,16 +13139,6 @@
         {
           "id": "mn-official-national",
           "category": "official",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Mongolia",
-          "reuse": "flags/mn.svg",
-          "design": "The national flag of Mongolia, in the form adopted in 1992.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Mongolia"
-        },
-        {
-          "id": "mn-current",
-          "category": "historical",
           "from": 1992,
           "to": 9999,
           "name": "Flag of Mongolia",
@@ -14437,16 +13267,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritania"
         },
         {
-          "id": "mr-current",
-          "category": "historical",
-          "from": 2017,
-          "to": 9999,
-          "name": "Flag of Mauritania",
-          "reuse": "flags/mr.svg",
-          "design": "A green field with a gold crescent and star, framed by red stripes at top and bottom — the crescent and star for Islam, green and gold for the Sahara and its people, the red bands added in 2017 for the blood of those who defended the country.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritania"
-        },
-        {
           "id": "mr-1959",
           "category": "historical",
           "from": 1959,
@@ -14520,16 +13340,6 @@
         {
           "id": "mt-official-national",
           "category": "official",
-          "from": 1964,
-          "to": 9999,
-          "name": "Flag of Malta",
-          "reuse": "flags/mt.svg",
-          "design": "The national flag of Malta, in the form adopted in 1964.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Malta"
-        },
-        {
-          "id": "mt-current",
-          "category": "historical",
           "from": 1964,
           "to": 9999,
           "name": "Flag of Malta",
@@ -14642,16 +13452,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritius"
         },
         {
-          "id": "mu-current",
-          "category": "historical",
-          "from": 1968,
-          "to": 9999,
-          "name": "Flag of Mauritius",
-          "reuse": "flags/mu.svg",
-          "design": "Four horizontal bands of red, blue, yellow and green — red for the struggle for freedom, blue for the Indian Ocean, yellow for the light of independence, green for the island's agriculture.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Mauritius"
-        },
-        {
           "id": "mu-uk",
           "category": "historical",
           "from": 1810,
@@ -14720,16 +13520,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Maldives"
         },
         {
-          "id": "mv-current",
-          "category": "historical",
-          "from": 1965,
-          "to": 9999,
-          "name": "Flag of the Maldives",
-          "reuse": "flags/mv.svg",
-          "design": "A red field with a green rectangle bearing a white crescent — red for the blood of the heroes who defended the country, green for peace and prosperity, the crescent for the Islamic faith.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Maldives"
-        },
-        {
           "id": "mv-arms",
           "category": "coatofarms",
           "from": 1965,
@@ -14795,16 +13585,6 @@
           "name": "Flag of Malawi",
           "reuse": "flags/mw.svg",
           "design": "The national flag of Malawi, adopted at independence in 1964 (briefly changed 2010–2012, then restored).",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi"
-        },
-        {
-          "id": "mw-current",
-          "category": "historical",
-          "from": 1964,
-          "to": 9999,
-          "name": "Flag of Malawi",
-          "reuse": "flags/mw.svg",
-          "design": "Black, red and green bands with a rising red sun on the black — black for the African people, red for the blood of the freedom struggle, green for the land, the rising sun for the dawn of hope and freedom across Africa.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Malawi"
         },
         {
@@ -14894,16 +13674,6 @@
         {
           "id": "mx-official-national",
           "category": "official",
-          "from": 1968,
-          "to": 9999,
-          "name": "Flag of Mexico",
-          "reuse": "flags/mx.svg",
-          "design": "The national flag of Mexico, in the form adopted in 1968.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Mexico"
-        },
-        {
-          "id": "mx-current",
-          "category": "historical",
           "from": 1968,
           "to": 9999,
           "name": "Flag of Mexico",
@@ -15040,16 +13810,6 @@
     },
     "MY": {
       "flags": [
-        {
-          "id": "my-1963",
-          "category": "historical",
-          "name": "Flag of Malaysia (Jalur Gemilang)",
-          "from": 1963,
-          "to": 9999,
-          "reuse": "flags/my.svg",
-          "design": "Fourteen red and white stripes with a blue canton bearing a crescent and a fourteen-point star.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags"
-        },
         {
           "id": "my-malaya",
           "category": "historical",
@@ -15392,16 +14152,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Mozambique"
         },
         {
-          "id": "mz-current",
-          "category": "historical",
-          "from": 1983,
-          "to": 9999,
-          "name": "Flag of Mozambique",
-          "reuse": "flags/mz.svg",
-          "design": "The national flag of Mozambique, in the form adopted in 1983.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Mozambique"
-        },
-        {
           "id": "mz-1975",
           "category": "historical",
           "name": "Flag of Mozambique (1975–1983)",
@@ -15547,16 +14297,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Namibia"
         },
         {
-          "id": "na-current",
-          "category": "historical",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of Namibia",
-          "reuse": "flags/na.svg",
-          "design": "A red diagonal band edged in white dividing a blue and a green triangle, with a golden sun in the blue — adopted at independence in 1990.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Namibia"
-        },
-        {
           "id": "na-sa",
           "category": "historical",
           "from": 1928,
@@ -15679,16 +14419,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Niger"
         },
         {
-          "id": "ne-current",
-          "category": "historical",
-          "from": 1959,
-          "to": 9999,
-          "name": "Flag of Niger",
-          "reuse": "flags/ne.svg",
-          "design": "Orange, white and green horizontal bands with an orange disc at the centre — orange for the Sahara, white for purity, green for the fertile south, the disc for the sun.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Niger"
-        },
-        {
           "id": "ne-french",
           "category": "historical",
           "from": 1922,
@@ -15749,16 +14479,6 @@
         {
           "id": "ng-official-national",
           "category": "official",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of Nigeria",
-          "reuse": "flags/ng.svg",
-          "design": "The national flag of Nigeria, in the form adopted in 1960.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Nigeria"
-        },
-        {
-          "id": "ng-current",
-          "category": "historical",
           "from": 1960,
           "to": 9999,
           "name": "Flag of Nigeria",
@@ -15892,16 +14612,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Nicaragua"
         },
         {
-          "id": "ni-current",
-          "category": "historical",
-          "from": 1908,
-          "to": 9999,
-          "name": "Flag of Nicaragua",
-          "reuse": "flags/ni.svg",
-          "design": "The national flag of Nicaragua, in the form adopted in 1908.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Nicaragua"
-        },
-        {
           "id": "ni-1908",
           "category": "historical",
           "name": "Flag of Nicaragua (1908–1971)",
@@ -16020,16 +14730,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Netherlands"
         },
         {
-          "id": "nl-current",
-          "category": "historical",
-          "from": 1660,
-          "to": 9999,
-          "name": "Flag of Netherlands",
-          "reuse": "flags/nl.svg",
-          "design": "The national flag of Netherlands, in the form adopted in 1660.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Netherlands"
-        },
-        {
           "id": "nl-royal",
           "category": "standard",
           "name": "Royal Standard of the Netherlands",
@@ -16134,16 +14834,6 @@
         {
           "id": "no-official-national",
           "category": "official",
-          "from": 1821,
-          "to": 9999,
-          "name": "Flag of Norway",
-          "reuse": "flags/no.svg",
-          "design": "The national flag of Norway, in the form adopted in 1821.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Norway"
-        },
-        {
-          "id": "no-current",
-          "category": "historical",
           "from": 1821,
           "to": 9999,
           "name": "Flag of Norway",
@@ -16273,16 +14963,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Nepal"
         },
         {
-          "id": "np-current",
-          "category": "historical",
-          "from": 1962,
-          "to": 9999,
-          "name": "Flag of Nepal",
-          "reuse": "flags/np.svg",
-          "design": "The national flag of Nepal, in the form adopted in 1962.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Nepal"
-        },
-        {
           "id": "np-1930",
           "category": "historical",
           "name": "Flag of Nepal (c. 1930–1962)",
@@ -16384,16 +15064,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Nauru"
         },
         {
-          "id": "nr-current",
-          "category": "historical",
-          "from": 1968,
-          "to": 9999,
-          "name": "Flag of Nauru",
-          "reuse": "flags/nr.svg",
-          "design": "A blue field with a narrow gold stripe and a white twelve-pointed star below it — blue for the Pacific, the gold stripe for the Equator, the star for Nauru's position just south of it, the twelve points for the island's twelve original tribes.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Nauru"
-        },
-        {
           "id": "nr-australia",
           "category": "historical",
           "from": 1920,
@@ -16468,16 +15138,6 @@
         {
           "id": "nz-official-national",
           "category": "official",
-          "from": 1903,
-          "to": 9999,
-          "name": "Flag of New Zealand",
-          "reuse": "flags/nz.svg",
-          "design": "The national flag of New Zealand, in the form adopted in 1903.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_New_Zealand"
-        },
-        {
-          "id": "nz-current",
-          "category": "historical",
           "from": 1903,
           "to": 9999,
           "name": "Flag of New Zealand",
@@ -16628,16 +15288,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Oman"
         },
         {
-          "id": "om-current",
-          "category": "historical",
-          "from": 1995,
-          "to": 9999,
-          "name": "Flag of Oman",
-          "reuse": "flags/om.svg",
-          "design": "The national flag of Oman, in the form adopted in 1995.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Oman"
-        },
-        {
           "id": "om-muscat",
           "category": "historical",
           "name": "Flag of the Sultanate of Muscat and Oman",
@@ -16773,16 +15423,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Panama"
         },
         {
-          "id": "pa-current",
-          "category": "historical",
-          "from": 1925,
-          "to": 9999,
-          "name": "Flag of Panama",
-          "reuse": "flags/pa.svg",
-          "design": "The national flag of Panama, in the form adopted in 1925.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Panama"
-        },
-        {
           "id": "pa-1903",
           "category": "historical",
           "name": "First flag of Panama",
@@ -16893,16 +15533,6 @@
         {
           "id": "pe-official-national",
           "category": "official",
-          "from": 1825,
-          "to": 9999,
-          "name": "Flag of Peru",
-          "reuse": "flags/pe.svg",
-          "design": "The national flag of Peru, in the form adopted in 1825.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Peru"
-        },
-        {
-          "id": "pe-current",
-          "category": "historical",
           "from": 1825,
           "to": 9999,
           "name": "Flag of Peru",
@@ -17108,16 +15738,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
         },
         {
-          "id": "pg-current",
-          "category": "historical",
-          "from": 1971,
-          "to": 9999,
-          "name": "Flag of Papua New Guinea",
-          "reuse": "flags/pg.svg",
-          "design": "A diagonal division with the Southern Cross in white on the black lower half and a golden Raggiana bird of paradise on the red upper half — designed by a schoolgirl, Susan Karike, and adopted in 1971.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea"
-        },
-        {
           "id": "pg-australian",
           "category": "historical",
           "from": 1949,
@@ -17192,16 +15812,6 @@
         {
           "id": "ph-official-national",
           "category": "official",
-          "from": 1898,
-          "to": 9999,
-          "name": "Flag of Philippines",
-          "reuse": "flags/ph.svg",
-          "design": "The national flag of Philippines, in the form adopted in 1898.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Philippines"
-        },
-        {
-          "id": "ph-current",
-          "category": "historical",
           "from": 1898,
           "to": 9999,
           "name": "Flag of Philippines",
@@ -17451,16 +16061,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
         },
         {
-          "id": "pk-current",
-          "category": "historical",
-          "from": 1947,
-          "to": 9999,
-          "name": "Flag of Pakistan",
-          "reuse": "flags/pk.svg",
-          "design": "The national flag of Pakistan, in the form adopted in 1947.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Pakistan"
-        },
-        {
           "id": "pk-president",
           "category": "standard",
           "name": "Standard of the President of Pakistan",
@@ -17647,16 +16247,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Poland"
         },
         {
-          "id": "pl-current",
-          "category": "historical",
-          "from": 1919,
-          "to": 9999,
-          "name": "Flag of Poland",
-          "reuse": "flags/pl.svg",
-          "design": "The national flag of Poland, in the form adopted in 1919.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Poland"
-        },
-        {
           "id": "pl-state",
           "category": "civilstate",
           "name": "State flag of Poland",
@@ -17750,16 +16340,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Palestine"
         },
         {
-          "id": "ps-current",
-          "category": "historical",
-          "from": 1988,
-          "to": 9999,
-          "name": "Flag of Palestine",
-          "reuse": "flags/ps.svg",
-          "design": "The national flag of Palestine, in the form adopted in 1988.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Palestine"
-        },
-        {
           "id": "ps-mandate",
           "category": "historical",
           "from": 1920,
@@ -17820,16 +16400,6 @@
         {
           "id": "pt-official-national",
           "category": "official",
-          "from": 1912,
-          "to": 9999,
-          "name": "Flag of Portugal",
-          "reuse": "flags/pt.svg",
-          "design": "The national flag of Portugal, in the form adopted in 1912.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Portugal"
-        },
-        {
-          "id": "pt-current",
-          "category": "historical",
           "from": 1912,
           "to": 9999,
           "name": "Flag of Portugal",
@@ -18002,16 +16572,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Palau"
         },
         {
-          "id": "pw-current",
-          "category": "historical",
-          "from": 1981,
-          "to": 9999,
-          "name": "Flag of Palau",
-          "reuse": "flags/pw.svg",
-          "design": "The national flag of Palau, in the form adopted in 1981.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Palau"
-        },
-        {
           "id": "pw-tt",
           "category": "historical",
           "from": 1965,
@@ -18072,16 +16632,6 @@
         {
           "id": "py-official-national",
           "category": "official",
-          "from": 1842,
-          "to": 9999,
-          "name": "Flag of Paraguay",
-          "reuse": "flags/py.svg",
-          "design": "The national flag of Paraguay, in the form adopted in 1842.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Paraguay"
-        },
-        {
-          "id": "py-current",
-          "category": "historical",
           "from": 1842,
           "to": 9999,
           "name": "Flag of Paraguay",
@@ -18203,16 +16753,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Qatar"
         },
         {
-          "id": "qa-current",
-          "category": "historical",
-          "from": 1971,
-          "to": 9999,
-          "name": "Flag of Qatar",
-          "reuse": "flags/qa.svg",
-          "design": "The national flag of Qatar, in the form adopted in 1971.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Qatar"
-        },
-        {
           "id": "qa-ottoman",
           "category": "historical",
           "name": "Flag of the Ottoman Empire",
@@ -18286,16 +16826,6 @@
         {
           "id": "ro-official-national",
           "category": "official",
-          "from": 1848,
-          "to": 9999,
-          "name": "Flag of Romania",
-          "reuse": "flags/ro.svg",
-          "design": "The national flag of Romania, in the form adopted in 1848.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Romania"
-        },
-        {
-          "id": "ro-current",
-          "category": "historical",
           "from": 1848,
           "to": 9999,
           "name": "Flag of Romania",
@@ -18434,16 +16964,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Serbia"
         },
         {
-          "id": "rs-current",
-          "category": "historical",
-          "from": 2010,
-          "to": 9999,
-          "name": "Flag of Serbia",
-          "reuse": "flags/rs.svg",
-          "design": "The national flag of Serbia, in the form adopted in 2010.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Serbia"
-        },
-        {
           "id": "rs-1992",
           "category": "historical",
           "name": "Flag of Serbia (1991–2004)",
@@ -18565,16 +17085,6 @@
         {
           "id": "ru-official-national",
           "category": "official",
-          "from": 1991,
-          "to": 9999,
-          "name": "Flag of Russia",
-          "reuse": "flags/ru.svg",
-          "design": "The national flag of Russia, in the form adopted in 1991.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Russia"
-        },
-        {
-          "id": "ru-current",
-          "category": "historical",
           "from": 1991,
           "to": 9999,
           "name": "Flag of Russia",
@@ -18756,16 +17266,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda"
         },
         {
-          "id": "rw-current",
-          "category": "historical",
-          "from": 2001,
-          "to": 9999,
-          "name": "Flag of Rwanda",
-          "reuse": "flags/rw.svg",
-          "design": "Blue over yellow over green with a golden sun in the fly canton — adopted in 2001 to replace the red-yellow-green flag associated with the 1994 genocide.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Rwanda"
-        },
-        {
           "id": "rw-1962",
           "category": "historical",
           "from": 1962,
@@ -18866,16 +17366,6 @@
         {
           "id": "sa-official-national",
           "category": "official",
-          "from": 1973,
-          "to": 9999,
-          "name": "Flag of Saudi Arabia",
-          "reuse": "flags/sa.svg",
-          "design": "The national flag of Saudi Arabia, in the form adopted in 1973.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia"
-        },
-        {
-          "id": "sa-current",
-          "category": "historical",
           "from": 1973,
           "to": 9999,
           "name": "Flag of Saudi Arabia",
@@ -19070,16 +17560,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands"
         },
         {
-          "id": "sb-current",
-          "category": "historical",
-          "from": 1977,
-          "to": 9999,
-          "name": "Flag of the Solomon Islands",
-          "reuse": "flags/sb.svg",
-          "design": "A yellow diagonal stripe dividing a blue and a green triangle, with five white stars in the blue — blue for the sea, green for the land, yellow for the sun, and the five stars for the country's five original districts.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands"
-        },
-        {
           "id": "sb-uk",
           "category": "historical",
           "from": 1893,
@@ -19145,16 +17625,6 @@
           "name": "Flag of Seychelles",
           "reuse": "flags/sc.svg",
           "design": "The national flag, adopted in 1996.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Seychelles"
-        },
-        {
-          "id": "sc-current",
-          "category": "historical",
-          "from": 1996,
-          "to": 9999,
-          "name": "Flag of Seychelles",
-          "reuse": "flags/sc.svg",
-          "design": "Five oblique bands of blue, yellow, red, white and green radiating from the hoist — blue for the sea and sky, yellow for the sun, red for the people, white for justice, green for the land.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Seychelles"
         },
         {
@@ -19236,16 +17706,6 @@
           "name": "Flag of Sudan",
           "reuse": "flags/sd.svg",
           "design": "The national flag of Sudan, adopted in 1970.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan"
-        },
-        {
-          "id": "sd-current",
-          "category": "historical",
-          "from": 1970,
-          "to": 9999,
-          "name": "Flag of Sudan",
-          "reuse": "flags/sd.svg",
-          "design": "A red-white-black horizontal triband with a green hoist triangle — the Arab Liberation colours, adopted in 1970 after the 1969 revolution.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sudan"
         },
         {
@@ -19369,16 +17829,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sweden"
         },
         {
-          "id": "se-current",
-          "category": "historical",
-          "from": 1562,
-          "to": 9999,
-          "name": "Flag of Sweden",
-          "reuse": "flags/se.svg",
-          "design": "The national flag of Sweden, in the form adopted in 1562.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Sweden"
-        },
-        {
           "id": "se-naval-ensign",
           "category": "military",
           "name": "War flag and naval ensign of Sweden",
@@ -19481,16 +17931,6 @@
         {
           "id": "sg-official-national",
           "category": "official",
-          "from": 1959,
-          "to": 9999,
-          "name": "Flag of Singapore",
-          "reuse": "flags/sg.svg",
-          "design": "The national flag of Singapore, in the form adopted in 1959.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Singapore"
-        },
-        {
-          "id": "sg-current",
-          "category": "historical",
           "from": 1959,
           "to": 9999,
           "name": "Flag of Singapore",
@@ -19686,16 +18126,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Slovenia"
         },
         {
-          "id": "si-current",
-          "category": "historical",
-          "from": 1991,
-          "to": 9999,
-          "name": "Flag of Slovenia",
-          "reuse": "flags/si.svg",
-          "design": "The national flag of Slovenia, in the form adopted in 1991.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Slovenia"
-        },
-        {
           "id": "si-sr",
           "category": "historical",
           "name": "Flag of the Socialist Republic of Slovenia",
@@ -19804,16 +18234,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Slovakia"
         },
         {
-          "id": "sk-current",
-          "category": "historical",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Slovakia",
-          "reuse": "flags/sk.svg",
-          "design": "The national flag of Slovakia, in the form adopted in 1992.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Slovakia"
-        },
-        {
           "id": "sk-president",
           "category": "standard",
           "name": "Flag of the President of Slovakia",
@@ -19873,16 +18293,6 @@
           "name": "Flag of Sierra Leone",
           "reuse": "flags/sl.svg",
           "design": "The national flag, adopted at independence in 1961.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone"
-        },
-        {
-          "id": "sl-current",
-          "category": "historical",
-          "from": 1961,
-          "to": 9999,
-          "name": "Flag of Sierra Leone",
-          "reuse": "flags/sl.svg",
-          "design": "Green, white and blue horizontal bands — green for the agriculture and mountains, white for unity and justice, blue for the natural harbour of Freetown and the hope of peace.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone"
         },
         {
@@ -19954,16 +18364,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_San_Marino"
         },
         {
-          "id": "sm-current",
-          "category": "historical",
-          "from": 1862,
-          "to": 9999,
-          "name": "Flag of San Marino",
-          "reuse": "flags/sm.svg",
-          "design": "White over light blue with the national arms at the centre — white for the snows of Monte Titano and for peace, blue for the sky and for liberty.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_San_Marino"
-        },
-        {
           "id": "sm-arms",
           "category": "coatofarms",
           "from": 1862,
@@ -20010,16 +18410,6 @@
           "name": "Flag of Senegal",
           "reuse": "flags/sn.svg",
           "design": "The national flag of Senegal, adopted in 1960.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Senegal"
-        },
-        {
-          "id": "sn-current",
-          "category": "historical",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of Senegal",
-          "reuse": "flags/sn.svg",
-          "design": "A vertical green-yellow-red tricolour with a green five-pointed star at the centre — the pan-African colours, adopted when Senegal left the Mali Federation in 1960.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Senegal"
         },
         {
@@ -20104,16 +18494,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Somalia"
         },
         {
-          "id": "so-current",
-          "category": "historical",
-          "from": 1954,
-          "to": 9999,
-          "name": "Flag of Somalia",
-          "reuse": "flags/so.svg",
-          "design": "A white five-pointed star on a light-blue field — the Star of Unity, its points for the lands the Somali people inhabit; the blue was originally that of the United Nations, under whose trusteeship the flag was designed in 1954.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Somalia"
-        },
-        {
           "id": "so-italian",
           "category": "historical",
           "from": 1950,
@@ -20188,16 +18568,6 @@
         {
           "id": "sr-official-national",
           "category": "official",
-          "from": 1975,
-          "to": 9999,
-          "name": "Flag of Suriname",
-          "reuse": "flags/sr.svg",
-          "design": "The national flag of Suriname, in the form adopted in 1975.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Suriname"
-        },
-        {
-          "id": "sr-current",
-          "category": "historical",
           "from": 1975,
           "to": 9999,
           "name": "Flag of Suriname",
@@ -20298,16 +18668,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_South_Sudan"
         },
         {
-          "id": "ss-current",
-          "category": "historical",
-          "from": 2005,
-          "to": 9999,
-          "name": "Flag of South Sudan",
-          "reuse": "flags/ss.svg",
-          "design": "Black, red and green bands separated by white, with a blue hoist triangle bearing a gold star — the flag of the SPLM adopted in 2005: black for the people, red for the blood of the struggle, green for the land, blue for the Nile, the star of Bethlehem for unity.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Sudan"
-        },
-        {
           "id": "ss-sudan",
           "category": "historical",
           "from": 1970,
@@ -20376,16 +18736,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe"
         },
         {
-          "id": "st-current",
-          "category": "historical",
-          "from": 1975,
-          "to": 9999,
-          "name": "Flag of São Tomé and Príncipe",
-          "reuse": "flags/st.svg",
-          "design": "Green-yellow-green bands with a red hoist triangle and two black stars — the pan-African colours, the two stars for the two islands.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe"
-        },
-        {
           "id": "st-portuguese",
           "category": "historical",
           "from": 1879,
@@ -20446,16 +18796,6 @@
         {
           "id": "sv-official-national",
           "category": "official",
-          "from": 1912,
-          "to": 9999,
-          "name": "Flag of El Salvador",
-          "reuse": "flags/sv.svg",
-          "design": "The national flag of El Salvador, in the form adopted in 1912.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_El_Salvador"
-        },
-        {
-          "id": "sv-current",
-          "category": "historical",
           "from": 1912,
           "to": 9999,
           "name": "Flag of El Salvador",
@@ -20567,16 +18907,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Syria"
         },
         {
-          "id": "sy-current",
-          "category": "historical",
-          "from": 2024,
-          "to": 9999,
-          "name": "Flag of Syria",
-          "reuse": "flags/sy.svg",
-          "design": "The national flag of Syria — three stripes of green, white and black with three red stars — readopted on 13 March 2025, reviving the 1932 independence flag.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Syria"
-        },
-        {
           "id": "sy-baath",
           "category": "historical",
           "from": 1980,
@@ -20658,16 +18988,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Eswatini"
         },
         {
-          "id": "sz-current",
-          "category": "historical",
-          "from": 1968,
-          "to": 9999,
-          "name": "Flag of Eswatini",
-          "reuse": "flags/sz.svg",
-          "design": "A crimson centre between blue bands edged in yellow, bearing a black-and-white Nguni shield with two spears and a staff — crimson for past battles, yellow for mineral wealth, blue for peace and stability.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Eswatini"
-        },
-        {
           "id": "sz-uk",
           "category": "historical",
           "from": 1903,
@@ -20736,16 +19056,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Chad"
         },
         {
-          "id": "td-current",
-          "category": "historical",
-          "from": 1959,
-          "to": 9999,
-          "name": "Flag of Chad",
-          "reuse": "flags/td.svg",
-          "design": "Vertical bands of blue, yellow and red — blue for the sky and hope, yellow for the sun and the desert, red for progress and sacrifice.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Chad"
-        },
-        {
           "id": "td-french",
           "category": "historical",
           "from": 1920,
@@ -20811,16 +19121,6 @@
           "name": "Flag of Togo",
           "reuse": "flags/tg.svg",
           "design": "The national flag of Togo, adopted in 1960.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Togo"
-        },
-        {
-          "id": "tg-current",
-          "category": "historical",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of Togo",
-          "reuse": "flags/tg.svg",
-          "design": "Five green and yellow stripes with a white star on a red canton — green for hope and agriculture, yellow for mineral wealth and labour, red for the blood of independence, the star for life and purity.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Togo"
         },
         {
@@ -20898,16 +19198,6 @@
         {
           "id": "th-official-national",
           "category": "official",
-          "from": 1917,
-          "to": 9999,
-          "name": "Flag of Thailand",
-          "reuse": "flags/th.svg",
-          "design": "The national flag of Thailand, in the form adopted in 1917.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Thailand"
-        },
-        {
-          "id": "th-current",
-          "category": "historical",
           "from": 1917,
           "to": 9999,
           "name": "Flag of Thailand",
@@ -21097,16 +19387,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Tajikistan"
         },
         {
-          "id": "tj-current",
-          "category": "historical",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Tajikistan",
-          "reuse": "flags/tj.svg",
-          "design": "Red, white and green bands with a golden crown beneath an arc of seven stars — red for unity, white for cotton and the snows, green for the valleys; the crown (toj) gives the country its name.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Tajikistan"
-        },
-        {
           "id": "tj-ssr",
           "category": "historical",
           "from": 1953,
@@ -21186,16 +19466,6 @@
           "name": "Flag of Timor-Leste",
           "reuse": "flags/tl.svg",
           "design": "The national flag, first raised at the 1975 proclamation of independence and restored in 2002.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste"
-        },
-        {
-          "id": "tl-current",
-          "category": "historical",
-          "from": 2002,
-          "to": 9999,
-          "name": "Flag of Timor-Leste",
-          "reuse": "flags/tl.svg",
-          "design": "A red field with a black triangle bearing a white star and a yellow triangle behind it — yellow for the traces of colonialism, black for the obscurantism to be overcome, red for the struggle, the white star for peace and its light guiding the way.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste"
         },
         {
@@ -21281,16 +19551,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan"
         },
         {
-          "id": "tm-current",
-          "category": "historical",
-          "from": 1997,
-          "to": 9999,
-          "name": "Flag of Turkmenistan",
-          "reuse": "flags/tm.svg",
-          "design": "A green field with a vertical red stripe of five carpet guls near the hoist and a white crescent with five stars — green and the crescent for Islam, the five guls and five stars for the country's five regions.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan"
-        },
-        {
           "id": "tm-ssr",
           "category": "historical",
           "from": 1973,
@@ -21365,16 +19625,6 @@
         {
           "id": "tn-official-national",
           "category": "official",
-          "from": 1831,
-          "to": 9999,
-          "name": "Flag of Tunisia",
-          "reuse": "flags/tn.svg",
-          "design": "The national flag of Tunisia, in the form adopted in 1831.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Tunisia"
-        },
-        {
-          "id": "tn-current",
-          "category": "historical",
           "from": 1831,
           "to": 9999,
           "name": "Flag of Tunisia",
@@ -21518,16 +19768,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Tonga"
         },
         {
-          "id": "to-current",
-          "category": "historical",
-          "from": 1875,
-          "to": 9999,
-          "name": "Flag of Tonga",
-          "reuse": "flags/to.svg",
-          "design": "A red field with a red couped cross on a white canton — the red cross for the Christian faith of the kingdom, red for the blood of Christ, white for purity; fixed in the 1875 constitution so it could never be changed.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Tonga"
-        },
-        {
           "id": "to-arms",
           "category": "coatofarms",
           "from": 1875,
@@ -21585,16 +19825,6 @@
     },
     "TR": {
       "flags": [
-        {
-          "id": "tr-1936",
-          "category": "historical",
-          "name": "Flag of Turkey",
-          "from": 1936,
-          "to": 9999,
-          "reuse": "flags/tr.svg",
-          "design": "A white star and crescent on red, in the proportions fixed by the Turkish Flag Law of 1936.",
-          "source": "https://en.wikipedia.org/wiki/List_of_Turkish_flags"
-        },
         {
           "id": "tr-ottoman",
           "category": "historical",
@@ -21727,16 +19957,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago"
         },
         {
-          "id": "tt-current",
-          "category": "historical",
-          "from": 1962,
-          "to": 9999,
-          "name": "Flag of Trinidad and Tobago",
-          "reuse": "flags/tt.svg",
-          "design": "The national flag of Trinidad and Tobago, in the form adopted in 1962.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago"
-        },
-        {
           "id": "tt-colonial",
           "category": "historical",
           "name": "Cross of Burgundy",
@@ -21855,16 +20075,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu"
         },
         {
-          "id": "tv-current",
-          "category": "historical",
-          "from": 1997,
-          "to": 9999,
-          "name": "Flag of Tuvalu",
-          "reuse": "flags/tv.svg",
-          "design": "The national flag of Tuvalu, in the form adopted in 1997.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu"
-        },
-        {
           "id": "tv-1996",
           "category": "historical",
           "from": 1996,
@@ -21942,16 +20152,6 @@
         {
           "id": "tz-official-national",
           "category": "official",
-          "from": 1964,
-          "to": 9999,
-          "name": "Flag of Tanzania",
-          "reuse": "flags/tz.svg",
-          "design": "The national flag of Tanzania, in the form adopted in 1964.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Tanzania"
-        },
-        {
-          "id": "tz-current",
-          "category": "historical",
           "from": 1964,
           "to": 9999,
           "name": "Flag of Tanzania",
@@ -22090,16 +20290,6 @@
         {
           "id": "ua-official-national",
           "category": "official",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of Ukraine",
-          "reuse": "flags/ua.svg",
-          "design": "The national flag of Ukraine, in the form adopted in 1992.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Ukraine"
-        },
-        {
-          "id": "ua-current",
-          "category": "historical",
           "from": 1992,
           "to": 9999,
           "name": "Flag of Ukraine",
@@ -22314,16 +20504,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uganda"
         },
         {
-          "id": "ug-current",
-          "category": "historical",
-          "from": 1962,
-          "to": 9999,
-          "name": "Flag of Uganda",
-          "reuse": "flags/ug.svg",
-          "design": "The national flag of Uganda, in the form adopted in 1962.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Uganda"
-        },
-        {
           "id": "ug-1962-dominion",
           "category": "historical",
           "name": "Flag of the Dominion of Uganda",
@@ -22461,16 +20641,6 @@
     },
     "US": {
       "flags": [
-        {
-          "id": "us-1960",
-          "category": "historical",
-          "name": "Flag of the United States",
-          "from": 1960,
-          "to": 9999,
-          "reuse": "flags/us.svg",
-          "design": "Fifty stars — Hawaii's admission completed the present design.",
-          "source": "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_States"
-        },
         {
           "id": "us-1775",
           "category": "historical",
@@ -23077,16 +21247,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uruguay"
         },
         {
-          "id": "uy-current",
-          "category": "historical",
-          "from": 1830,
-          "to": 9999,
-          "name": "Flag of Uruguay",
-          "reuse": "flags/uy.svg",
-          "design": "The national flag of Uruguay, in the form adopted in 1830.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Uruguay"
-        },
-        {
           "id": "uy-artigas",
           "category": "official",
           "name": "Flag of Artigas",
@@ -23189,16 +21349,6 @@
         {
           "id": "uz-official-national",
           "category": "official",
-          "from": 1991,
-          "to": 9999,
-          "name": "Flag of Uzbekistan",
-          "reuse": "flags/uz.svg",
-          "design": "The national flag of Uzbekistan, in the form adopted in 1991.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan"
-        },
-        {
-          "id": "uz-current",
-          "category": "historical",
           "from": 1991,
           "to": 9999,
           "name": "Flag of Uzbekistan",
@@ -23384,16 +21534,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Vatican_City"
         },
         {
-          "id": "va-current",
-          "category": "historical",
-          "from": 1929,
-          "to": 9999,
-          "name": "Flag of Vatican City",
-          "reuse": "flags/va.svg",
-          "design": "The national flag of Vatican City, in the form adopted in 1929.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Vatican_City"
-        },
-        {
           "id": "va-arms",
           "category": "coatofarms",
           "from": 1929,
@@ -23440,16 +21580,6 @@
           "name": "Flag of Saint Vincent and the Grenadines",
           "reuse": "flags/vc.svg",
           "design": "The national flag, adopted in 1985.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines"
-        },
-        {
-          "id": "vc-current",
-          "category": "historical",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of Saint Vincent and the Grenadines",
-          "reuse": "flags/vc.svg",
-          "design": "Blue, gold and green bands with three green diamonds in a V on the gold — blue for the sky and sea, gold for the warmth and the sands, green for the lush islands; the diamonds are the “Gems of the Antilles,” set as a V for Vincent.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Vincent_and_the_Grenadines"
         },
         {
@@ -23513,16 +21643,6 @@
         {
           "id": "ve-official-national",
           "category": "official",
-          "from": 2006,
-          "to": 9999,
-          "name": "Flag of Venezuela",
-          "reuse": "flags/ve.svg",
-          "design": "The national flag of Venezuela, in the form adopted in 2006.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Venezuela"
-        },
-        {
-          "id": "ve-current",
-          "category": "historical",
           "from": 2006,
           "to": 9999,
           "name": "Flag of Venezuela",
@@ -23728,16 +21848,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Vietnam"
         },
         {
-          "id": "vn-current",
-          "category": "historical",
-          "from": 1955,
-          "to": 9999,
-          "name": "Flag of Vietnam",
-          "reuse": "flags/vn.svg",
-          "design": "The national flag of Vietnam, in the form adopted in 1955.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Vietnam"
-        },
-        {
           "id": "vn-north",
           "category": "historical",
           "name": "Flag of North Vietnam (1945–1955)",
@@ -23911,16 +22021,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Vanuatu"
         },
         {
-          "id": "vu-current",
-          "category": "historical",
-          "from": 1980,
-          "to": 9999,
-          "name": "Flag of Vanuatu",
-          "reuse": "flags/vu.svg",
-          "design": "A black triangle bearing a boar's tusk and crossed namele leaves, with red and green fields divided by a yellow Y — red for blood, green for the land, black for the people, the Y for the scatter of the islands, the tusk for prosperity.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Vanuatu"
-        },
-        {
           "id": "vu-uk",
           "category": "historical",
           "from": 1906,
@@ -24000,16 +22100,6 @@
           "name": "Flag of Samoa",
           "reuse": "flags/ws.svg",
           "design": "The national flag, adopted in 1949 and kept at independence in 1962.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Samoa"
-        },
-        {
-          "id": "ws-current",
-          "category": "historical",
-          "from": 1949,
-          "to": 9999,
-          "name": "Flag of Samoa",
-          "reuse": "flags/ws.svg",
-          "design": "A red field with a blue canton bearing the five white stars of the Southern Cross — red and white are traditional Samoan colours, blue stands for freedom, and the Southern Cross for the country's place in the South Pacific.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Samoa"
         },
         {
@@ -24095,16 +22185,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Yemen"
         },
         {
-          "id": "ye-current",
-          "category": "historical",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of Yemen",
-          "reuse": "flags/ye.svg",
-          "design": "A red-white-black Arab Liberation triband, adopted on 22 May 1990 when North and South Yemen united.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Yemen"
-        },
-        {
           "id": "ye-north",
           "category": "historical",
           "from": 1962,
@@ -24182,29 +22262,6 @@
     },
     "ZA": {
       "flags": [
-        {
-          "id": "za-1994",
-          "category": "historical",
-          "name": "Flag of South Africa",
-          "from": 1994,
-          "to": 9999,
-          "reuse": "flags/za.svg",
-          "design": "A horizontal Y in green, fimbriated white and gold, separating red and blue from a black triangle at the hoist.",
-          "meaning": {
-            "description": "Designed by State Herald Frederick Brownell and first flown on 27 April 1994, the day of the first democratic election, the flag was drawn to carry no per-colour symbolism at all — the only South African national flag whose design has no official meaning attached to its colours. What the design does say is said by its shape: the horizontal Y, or pall, shows two paths converging into one, which the government describes as the convergence of diverse elements within South African society taking the road ahead in unity.",
-            "sources": [
-              {
-                "title": "Flag of South Africa — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
-              },
-              {
-                "title": "National flag — South African Government",
-                "url": "https://www.gov.za/about-sa/national-symbols/national-flag"
-              }
-            ]
-          },
-          "source": "https://en.wikipedia.org/wiki/List_of_South_African_flags"
-        },
         {
           "id": "za-1982",
           "category": "historical",
@@ -24310,7 +22367,20 @@
           "to": 9999,
           "reuse": "flags/za.svg",
           "design": "The national flag, first flown on 27 April 1994.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
+          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Africa",
+          "meaning": {
+            "description": "Designed by State Herald Frederick Brownell and first flown on 27 April 1994, the day of the first democratic election, the flag was drawn to carry no per-colour symbolism at all — the only South African national flag whose design has no official meaning attached to its colours. What the design does say is said by its shape: the horizontal Y, or pall, shows two paths converging into one, which the government describes as the convergence of diverse elements within South African society taking the road ahead in unity.",
+            "sources": [
+              {
+                "title": "Flag of South Africa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_South_Africa"
+              },
+              {
+                "title": "National flag — South African Government",
+                "url": "https://www.gov.za/about-sa/national-symbols/national-flag"
+              }
+            ]
+          }
         },
         {
           "id": "za-passport",
@@ -24352,16 +22422,6 @@
           "name": "Flag of Zambia",
           "reuse": "flags/zm.svg",
           "design": "The national flag of Zambia, adopted at independence in 1964 (the green shade was standardised in 1996).",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Zambia"
-        },
-        {
-          "id": "zm-current",
-          "category": "historical",
-          "from": 1964,
-          "to": 9999,
-          "name": "Flag of Zambia",
-          "reuse": "flags/zm.svg",
-          "design": "A green field with an orange fish eagle over a block of red, black and orange stripes in the fly — green for the land, red for the freedom struggle, black for the people, orange for the country's mineral wealth.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Zambia"
         },
         {
@@ -24438,16 +22498,6 @@
         {
           "id": "zw-official-national",
           "category": "official",
-          "from": 1980,
-          "to": 9999,
-          "name": "Flag of Zimbabwe",
-          "reuse": "flags/zw.svg",
-          "design": "The national flag of Zimbabwe, in the form adopted in 1980.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe"
-        },
-        {
-          "id": "zw-current",
-          "category": "historical",
           "from": 1980,
           "to": 9999,
           "name": "Flag of Zimbabwe",
@@ -24612,16 +22662,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
         },
         {
-          "id": "hk-current",
-          "category": "historical",
-          "from": 1997,
-          "to": 9999,
-          "name": "Flag of Hong Kong",
-          "reuse": "flags/sub/CN/CN-HK.svg",
-          "design": "The regional flag of the Hong Kong SAR, adopted at the 1997 handover.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
-        },
-        {
           "id": "hk-colonial",
           "category": "historical",
           "from": 1959,
@@ -24703,16 +22743,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Macau"
         },
         {
-          "id": "mo-current",
-          "category": "historical",
-          "from": 1999,
-          "to": 9999,
-          "name": "Flag of Macau",
-          "reuse": "flags/sub/CN/CN-MO.svg",
-          "design": "The regional flag of the Macau SAR, adopted at the 1999 handover.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau"
-        },
-        {
           "id": "mo-portugal",
           "category": "historical",
           "from": 1910,
@@ -24776,16 +22806,6 @@
           "name": "Flag of the Republic of China",
           "reuse": "flags/tw.svg",
           "design": "The 'Blue Sky, White Sun and a Wholly Red Earth' flag, flown over Taiwan by the Republic of China since 1945; the design dates to 1928.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
-        },
-        {
-          "id": "tw-current",
-          "category": "historical",
-          "from": 1945,
-          "to": 9999,
-          "name": "Flag of the Republic of China",
-          "reuse": "flags/tw.svg",
-          "design": "The Republic of China flag, flown over Taiwan since 1945.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
         },
         {
@@ -24870,16 +22890,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
         },
         {
-          "id": "pr-current",
-          "category": "historical",
-          "from": 1952,
-          "to": 9999,
-          "name": "Flag of Puerto Rico",
-          "reuse": "flags/sub/US/US-PR.svg",
-          "design": "The flag of Puerto Rico, adopted in 1952.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
-        },
-        {
           "id": "pr-burgundy",
           "category": "historical",
           "from": 1508,
@@ -24941,16 +22951,6 @@
           "name": "Flag of Guam",
           "reuse": "flags/sub/US/US-GU.svg",
           "design": "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guam"
-        },
-        {
-          "id": "gu-current",
-          "category": "historical",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of Guam",
-          "reuse": "flags/sub/US/US-GU.svg",
-          "design": "The flag of Guam, adopted in 1948.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guam"
         },
         {
@@ -25032,16 +23032,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
         },
         {
-          "id": "vi-current",
-          "category": "historical",
-          "from": 1921,
-          "to": 9999,
-          "name": "Flag of the U.S. Virgin Islands",
-          "reuse": "flags/sub/US/US-VI.svg",
-          "design": "The flag of the U.S. Virgin Islands, adopted in 1921.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
-        },
-        {
           "id": "vi-denmark",
           "category": "historical",
           "from": 1672,
@@ -25090,16 +23080,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
         },
         {
-          "id": "as-current",
-          "category": "historical",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of American Samoa",
-          "reuse": "flags/sub/US/US-AS.svg",
-          "design": "The flag of American Samoa, adopted in 1960.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
-        },
-        {
           "id": "as-seal",
           "category": "coatofarms",
           "from": 1973,
@@ -25139,16 +23119,6 @@
           "name": "Flag of the Northern Mariana Islands",
           "reuse": "flags/sub/US/US-MP.svg",
           "design": "A grey latte stone and white star before a mwarmwar garland, on a blue field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
-        },
-        {
-          "id": "mp-current",
-          "category": "historical",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of the Northern Mariana Islands",
-          "reuse": "flags/sub/US/US-MP.svg",
-          "design": "The flag of the Northern Mariana Islands, adopted in 1985.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
         },
         {
@@ -25239,16 +23209,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Jersey"
         },
         {
-          "id": "je-current",
-          "category": "historical",
-          "from": 1981,
-          "to": 9999,
-          "name": "Flag of Jersey",
-          "reuse": "flags/je.svg",
-          "design": "The badged flag adopted in 1981: the red saltire with Jersey's crowned shield added in the hoist-side triangle.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Jersey"
-        },
-        {
           "id": "je-arms",
           "category": "coatofarms",
           "from": 1907,
@@ -25283,16 +23243,6 @@
           "name": "Flag of Guernsey",
           "reuse": "flags/gg.svg",
           "design": "A red St George's cross on white with a gold Norman cross set within it.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guernsey"
-        },
-        {
-          "id": "gg-current",
-          "category": "historical",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of Guernsey",
-          "reuse": "flags/gg.svg",
-          "design": "Adopted in 1985: the red cross of St George with a gold cross of William the Conqueror added within it, distinguishing Guernsey's flag from England's.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Guernsey"
         },
         {
@@ -25333,16 +23283,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man"
         },
         {
-          "id": "im-current",
-          "category": "historical",
-          "from": 1932,
-          "to": 9999,
-          "name": "Flag of the Isle of Man",
-          "reuse": "flags/im.svg",
-          "design": "Officially adopted in 1932: the ancient three-legged triskelion of Mann on red.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man"
-        },
-        {
           "id": "im-arms",
           "category": "coatofarms",
           "from": 1996,
@@ -25372,16 +23312,6 @@
         {
           "id": "gi-official-national",
           "category": "official",
-          "from": 1502,
-          "to": 9999,
-          "name": "Flag of Gibraltar",
-          "reuse": "flags/gi.svg",
-          "design": "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Gibraltar"
-        },
-        {
-          "id": "gi-current",
-          "category": "historical",
           "from": 1502,
           "to": 9999,
           "name": "Flag of Gibraltar",
@@ -25427,16 +23357,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bermuda"
         },
         {
-          "id": "bm-current",
-          "category": "historical",
-          "from": 1910,
-          "to": 9999,
-          "name": "Flag of Bermuda",
-          "reuse": "flags/bm.svg",
-          "design": "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bermuda"
-        },
-        {
           "id": "bm-arms",
           "category": "coatofarms",
           "from": 1910,
@@ -25466,16 +23386,6 @@
         {
           "id": "ky-official-national",
           "category": "official",
-          "from": 1958,
-          "to": 9999,
-          "name": "Flag of the Cayman Islands",
-          "reuse": "flags/ky.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands"
-        },
-        {
-          "id": "ky-current",
-          "category": "historical",
           "from": 1958,
           "to": 9999,
           "name": "Flag of the Cayman Islands",
@@ -25521,16 +23431,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands"
         },
         {
-          "id": "vg-current",
-          "category": "historical",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of the British Virgin Islands",
-          "reuse": "flags/vg.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands"
-        },
-        {
           "id": "vg-arms",
           "category": "coatofarms",
           "from": 1960,
@@ -25560,16 +23460,6 @@
         {
           "id": "fk-official-national",
           "category": "official",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of the Falkland Islands",
-          "reuse": "flags/fk.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands"
-        },
-        {
-          "id": "fk-current",
-          "category": "historical",
           "from": 1948,
           "to": 9999,
           "name": "Flag of the Falkland Islands",
@@ -25615,16 +23505,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands"
         },
         {
-          "id": "tc-current",
-          "category": "historical",
-          "from": 1968,
-          "to": 9999,
-          "name": "Flag of the Turks and Caicos Islands",
-          "reuse": "flags/tc.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands"
-        },
-        {
           "id": "tc-arms",
           "category": "coatofarms",
           "from": 1965,
@@ -25654,16 +23534,6 @@
         {
           "id": "ai-official-national",
           "category": "official",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of Anguilla",
-          "reuse": "flags/ai.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Anguilla"
-        },
-        {
-          "id": "ai-current",
-          "category": "historical",
           "from": 1990,
           "to": 9999,
           "name": "Flag of Anguilla",
@@ -25709,16 +23579,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Montserrat"
         },
         {
-          "id": "ms-current",
-          "category": "historical",
-          "from": 1909,
-          "to": 9999,
-          "name": "Flag of Montserrat",
-          "reuse": "flags/ms.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Montserrat"
-        },
-        {
           "id": "ms-arms",
           "category": "coatofarms",
           "from": 1909,
@@ -25748,16 +23608,6 @@
         {
           "id": "sh-official-national",
           "category": "official",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of Saint Helena",
-          "reuse": "flags/sh.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena"
-        },
-        {
-          "id": "sh-current",
-          "category": "historical",
           "from": 1984,
           "to": 9999,
           "name": "Flag of Saint Helena",
@@ -25803,16 +23653,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands"
         },
         {
-          "id": "pn-current",
-          "category": "historical",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of the Pitcairn Islands",
-          "reuse": "flags/pn.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Pitcairn's arms — the Bounty's anchor and Bible on a green wedge — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands"
-        },
-        {
           "id": "pn-arms",
           "category": "coatofarms",
           "from": 1969,
@@ -25842,16 +23682,6 @@
         {
           "id": "gs-official-national",
           "category": "official",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of South Georgia and the South Sandwich Islands",
-          "reuse": "flags/gs.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands"
-        },
-        {
-          "id": "gs-current",
-          "category": "historical",
           "from": 1992,
           "to": 9999,
           "name": "Flag of South Georgia and the South Sandwich Islands",
@@ -25895,16 +23725,6 @@
           "reuse": "flags/io.svg",
           "design": "White and blue wavy stripes for the Indian Ocean, the Union Flag in the canton, and a palm tree above a royal crown in the fly.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
-        },
-        {
-          "id": "io-current",
-          "category": "historical",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of the British Indian Ocean Territory",
-          "reuse": "flags/io.svg",
-          "design": "Adopted in 1990: wavy white-and-blue bands for the ocean, a palm tree of the Chagos islands and the Crown, with the Union Flag in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
         }
       ]
     },
@@ -25914,16 +23734,6 @@
         {
           "id": "gl-official-national",
           "category": "official",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of Greenland",
-          "reuse": "flags/gl.svg",
-          "design": "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Greenland"
-        },
-        {
-          "id": "gl-current",
-          "category": "historical",
           "from": 1985,
           "to": 9999,
           "name": "Flag of Greenland",
@@ -25969,16 +23779,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands"
         },
         {
-          "id": "fo-current",
-          "category": "historical",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of the Faroe Islands",
-          "reuse": "flags/fo.svg",
-          "design": "Merkið — a red Nordic cross fimbriated in blue on a white field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands"
-        },
-        {
           "id": "fo-arms",
           "category": "coatofarms",
           "from": 1948,
@@ -26008,16 +23808,6 @@
         {
           "id": "aw-official-national",
           "category": "official",
-          "from": 1976,
-          "to": 9999,
-          "name": "Flag of Aruba",
-          "reuse": "flags/sub/NL/NL-AW.svg",
-          "design": "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Aruba"
-        },
-        {
-          "id": "aw-current",
-          "category": "historical",
           "from": 1976,
           "to": 9999,
           "name": "Flag of Aruba",
@@ -26063,16 +23853,6 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
         },
         {
-          "id": "cw-current",
-          "category": "historical",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of Curaçao",
-          "reuse": "flags/sub/NL/NL-CW.svg",
-          "design": "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
-        },
-        {
           "id": "cw-arms",
           "category": "coatofarms",
           "from": 1964,
@@ -26102,16 +23882,6 @@
         {
           "id": "sx-official-national",
           "category": "official",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of Sint Maarten",
-          "reuse": "flags/sub/NL/NL-SX.svg",
-          "design": "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
-        },
-        {
-          "id": "sx-current",
-          "category": "historical",
           "from": 1985,
           "to": 9999,
           "name": "Flag of Sint Maarten",
@@ -26154,16 +23924,6 @@
           "name": "Flag of the Cook Islands",
           "reuse": "flags/ck.svg",
           "design": "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
-        },
-        {
-          "id": "ck-current",
-          "category": "historical",
-          "from": 1979,
-          "to": 9999,
-          "name": "Flag of the Cook Islands",
-          "reuse": "flags/ck.svg",
-          "design": "Adopted in 1979: fifteen white stars in a circle — one for each island — on a blue ensign.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
         },
         {
@@ -26211,16 +23971,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "nu-current",
-          "category": "historical",
-          "from": 1975,
-          "to": 9999,
-          "name": "Flag of Niue",
-          "reuse": "flags/nu.svg",
-          "design": "Adopted in 1975: a yellow field with a defaced Union Flag in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Niue"
         }
       ]
     },
@@ -26245,16 +23995,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "tk-current",
-          "category": "historical",
-          "from": 2009,
-          "to": 9999,
-          "name": "Flag of Tokelau",
-          "reuse": "flags/tk.svg",
-          "design": "Adopted in 2009: a yellow canoe sailing toward the Southern Cross on blue.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Tokelau"
         }
       ]
     },
@@ -26269,16 +24009,6 @@
           "name": "Flag of Åland",
           "reuse": "flags/ax.svg",
           "design": "A red Nordic cross fimbriated in yellow on a blue field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_%C3%85land"
-        },
-        {
-          "id": "ax-current",
-          "category": "historical",
-          "from": 1954,
-          "to": 9999,
-          "name": "Flag of Åland",
-          "reuse": "flags/ax.svg",
-          "design": "Adopted in 1954: a Swedish-style blue field with a red cross outlined in yellow, the colours of Sweden within the cross of Finland.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_%C3%85land"
         },
         {
@@ -26326,16 +24056,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "pf-current",
-          "category": "historical",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of French Polynesia",
-          "reuse": "flags/pf.svg",
-          "design": "Adopted in 1984: the canoe-and-sun emblem on a red-white-red field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia"
         }
       ]
     },
@@ -26360,16 +24080,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "nc-current",
-          "category": "historical",
-          "from": 1980,
-          "to": 9999,
-          "name": "Kanak flag (FLNKS)",
-          "reuse": "flags/nc.svg",
-          "design": "The FLNKS flag, co-flown with the French tricolour since a contested 2010 Congress vote.",
-          "source": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia"
         }
       ]
     }

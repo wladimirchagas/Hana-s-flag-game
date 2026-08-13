@@ -20,10 +20,10 @@
  *      consumers. Drift fails the build here.
  *   4. No standardised viewBox (640×480 / 512×512) — the flag-aspect-ratio hard
  *      rule applies to these files exactly as it does to public/flags/.
- *   5. Every country listed shows its CURRENT flag in the historical section (the
- *      owner's requirement: "all national flags of that country, including the
- *      current one"), so the section can never be a history that stops short of
- *      today.
+ *   5. The historical section lists ONLY older, superseded flags — never the
+ *      current one (owner request, 2026-08). The flag in force lives in the
+ *      official section; the timeline is past flags only, and a country with no
+ *      sourced past flag simply has no historical section.
  *   6. src/data/nationalFlags.ts is in sync with the manifest — the generated file
  *      is never hand-edited.
  *   7. Meanings are structurally sound (description + real source URLs + well-formed
@@ -350,14 +350,18 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
   }
 
   // ---- the current flag must be present -----------------------------------
+  // The historical section holds ONLY older, superseded flags — never the current
+  // one (owner request, 2026-08). The flag the country flies lives in the official
+  // section (and the fact-sheet above); duplicating it into the timeline was noise,
+  // and for the 48 countries whose only historical entry WAS the current flag it
+  // meant a one-card "Historical flags" section that just repeated the official one.
   const historical = flags.filter((f) => f.category === "historical");
-  if (historical.length > 0) {
-    const current = historical.filter((f) => f.to >= 9999);
-    if (current.length === 0) {
-      fail(`${cc}: the historical section stops before the present — the CURRENT national flag must be listed too.`);
-    } else if (current.length > 1) {
-      fail(`${cc}: ${current.length} historical flags are marked current (to: 9999): ${current.map((f) => f.id).join(", ")}.`);
-    }
+  const stillCurrent = historical.filter((f) => (f.to ?? 0) >= 9999);
+  if (stillCurrent.length > 0) {
+    fail(
+      `${cc}: the historical section lists the CURRENT flag (${stillCurrent.map((f) => f.id).join(", ")}, to: 9999). ` +
+        `Historical flags are only older, superseded flags — the current flag belongs in the official section, not the timeline.`,
+    );
   }
 }
 
