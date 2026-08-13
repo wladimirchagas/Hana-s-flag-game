@@ -253,6 +253,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "BE": [
     { id: "be-official-national", category: "official", name: "Flag of Belgium", from: 1831, to: 9999, primary: true, path: "flags/be.svg", design: "The national flag of Belgium, in the form adopted in 1831.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
+    { id: "be-1830", category: "historical", name: "Flag of Belgium (1830)", from: 1830, to: 1831, path: "national-flags/be/belgium-1830.svg", design: "An early horizontal arrangement of the black, yellow and red colours of the 1830 revolution, replaced in 1831 by the vertical black-yellow-red tricolour flown today.", source: "https://en.wikipedia.org/wiki/Flag_of_Belgium" },
     { id: "be-civil-ensign", category: "maritime", name: "Civil ensign of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-civil-ensign.svg", design: "The black-yellow-red tricolour in the proportions used at sea.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
     { id: "be-state-ensign", category: "maritime", name: "State ensign of Belgium", from: 1950, to: 9999, path: "national-flags/be/belgium-state-ensign.svg", design: "The tricolour defaced with the state emblem, worn by government vessels.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
     { id: "be-naval-jack", category: "maritime", name: "Naval jack of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-naval-jack.svg", design: "The jack of the Belgian Navy.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
@@ -359,6 +360,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "BT": [
     { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag, standardised in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
+    { id: "bt-1956", category: "historical", name: "Flag of Bhutan (1956–1969)", from: 1956, to: 1969, path: "national-flags/bt/bhutan-1956.svg", design: "An earlier version of the Druk (Thunder Dragon) flag; the dragon and the diagonal division of the field were revised to the present design in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
     { id: "bt-arms", category: "coatofarms", name: "Emblem of Bhutan", from: 1980, to: 9999, path: "national-flags/bt/bt-arms.svg", design: "Two crossed vajras over a lotus, a jewel and two dragons, in a circle.", source: "https://en.wikipedia.org/wiki/Emblem_of_Bhutan" },
     { id: "bt-passport", category: "passport", name: "Passport of Bhutan", path: "national-flags/bt/bt-passport.webp", design: "The cover of the Bhutan passport.", source: "https://gicg.net/passport/bt/" },
   ],
@@ -1152,6 +1154,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "LI": [
     { id: "li-official-national", category: "official", name: "Flag of Liechtenstein", from: 1937, to: 9999, primary: true, path: "flags/li.svg", design: "The national flag, in the form adopted in 1937.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
+    { id: "li-1921", category: "historical", name: "Flag of Liechtenstein (1921–1937)", from: 1921, to: 1937, path: "national-flags/li/liechtenstein-1921.svg", design: "The plain blue-over-red horizontal bicolour, without the gold crown. The crown was added in 1937 after the 1936 Berlin Olympics revealed Liechtenstein's flag was identical to Haiti's.", source: "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein" },
     { id: "li-arms", category: "coatofarms", name: "Coat of arms of Liechtenstein", from: 1957, to: 9999, path: "national-flags/li/li-arms.svg", design: "A quartered princely shield beneath a princely hat, on an ermine mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Liechtenstein" },
     { id: "li-passport", category: "passport", name: "Passport of Liechtenstein", path: "national-flags/li/li-passport.webp", design: "The cover of the Liechtenstein passport.", source: "https://gicg.net/passport/li/" },
   ],
@@ -2048,6 +2051,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "uy-official-national", category: "official", name: "Flag of Uruguay", from: 1830, to: 9999, primary: true, path: "flags/uy.svg", design: "The national flag of Uruguay, in the form adopted in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
     { id: "uy-artigas", category: "official", name: "Flag of Artigas", from: 1952, to: 9999, path: "national-flags/uy/uruguay-artigas.svg", design: "The blue-white-blue flag with a red diagonal, of José Gervasio Artigas — one of the country's three official flags.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
     { id: "uy-treinta-y-tres", category: "official", name: "Flag of the Treinta y Tres", from: 1952, to: 9999, path: "national-flags/uy/uruguay-treinta-y-tres.svg", design: "The blue-white-red triband bearing the motto Libertad o Muerte, carried by the Thirty-Three Orientals in 1825 — the third official flag.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
+    { id: "uy-1828", category: "historical", name: "Flag of Uruguay (1828–1830)", from: 1828, to: 1830, path: "national-flags/uy/uruguay-1828.svg", design: "Uruguay's first national flag, with seventeen blue-and-white stripes and the Sun of May in the canton. The stripes were reduced to the present nine in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
     { id: "uy-army", category: "military", name: "Flag of the Uruguayan Army", path: "national-flags/uy/uruguay-army.svg", design: "The army's flag.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
     { id: "uy-air-force", category: "military", name: "Flag of the Uruguayan Air Force", from: 1953, to: 9999, path: "national-flags/uy/uruguay-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
     { id: "uy-naval-jack", category: "maritime", name: "Naval jack of Uruguay", path: "national-flags/uy/uruguay-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
@@ -2070,6 +2074,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "VA": [
     { id: "va-official-national", category: "official", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
+    { id: "va-papal-states", category: "historical", name: "Flag of the Papal States", from: 1825, to: 1870, path: "national-flags/va/papal-states.svg", design: "The gold-and-white flag of the Papal States, charged with the crossed keys of Saint Peter beneath the papal tiara. When Vatican City was founded in 1929 it kept these colours and this emblem.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
     { id: "va-arms", category: "coatofarms", name: "Coat of arms of Vatican City", from: 1929, to: 9999, path: "national-flags/va/va-arms.svg", design: "Two keys in saltire, one gold and one silver, surmounted by the papal tiara on a red field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Vatican_City" },
     { id: "va-passport", category: "passport", name: "Passport of Vatican City", path: "national-flags/va/va-passport.webp", design: "The cover of the Vatican City passport.", source: "https://gicg.net/passport/va/" },
   ],
