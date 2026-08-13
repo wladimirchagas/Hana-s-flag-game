@@ -28,6 +28,7 @@ import {
   nationalSymbolEntry,
 } from "../lib/nationalSymbolImages";
 import { NATIONAL_FLAG_MEANINGS } from "../data/nationalFlags";
+import { PASSPORT_COLORS } from "../data/passportColors";
 import { meaningLabel, symbolNoun } from "../lib/nationalFlags";
 import {
   loadGridContentType,
@@ -244,6 +245,11 @@ export default function LearnPage() {
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const [showFlagMap, setShowFlagMap] = useState(false);
+  // "Colour countries by passport" layer for the world map (🛂 toggle). Fills
+  // each country with its passport cover's predominant colour. Mutually
+  // exclusive with the flag overlay (owner request) — turning one on turns the
+  // other off — since both are ways of colouring what a country is.
+  const [showPassportColors, setShowPassportColors] = useState(false);
   // City overlay (capitals only: national on the world map, national +
   // subdivision on the subdivision map). Like the flag overlay, it is OFF by
   // default and shared across the world + subdivision maps, so toggling it on
@@ -435,7 +441,19 @@ export default function LearnPage() {
     setIsRotating((prev) => !prev);
   }, []);
   const toggleFlagMap = useCallback(() => {
-    setShowFlagMap((prev) => !prev);
+    setShowFlagMap((prev) => {
+      const next = !prev;
+      // Flag overlay and passport-colour layer are mutually exclusive.
+      if (next) setShowPassportColors(false);
+      return next;
+    });
+  }, []);
+  const togglePassportColors = useCallback(() => {
+    setShowPassportColors((prev) => {
+      const next = !prev;
+      if (next) setShowFlagMap(false);
+      return next;
+    });
   }, []);
   const toggleCities = useCallback(() => {
     setShowCities((prev) => !prev);
@@ -1016,6 +1034,20 @@ export default function LearnPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isModernEra, showFlagMap, countries]);
 
+  // Passport-colour fill for the modern world map: maps alpha-2 code → the
+  // country's predominant passport-cover colour (src/data/passportColors.ts,
+  // generated from the bundled cover images). Countries with no bundled passport
+  // are absent, so the map leaves them the neutral land colour.
+  const passportColorOverlay = useMemo(() => {
+    if (!isModernEra || !showPassportColors) return null;
+    const m = new Map<string, string>();
+    for (const c of countries) {
+      const hex = PASSPORT_COLORS[c.code];
+      if (hex) m.set(c.code, hex);
+    }
+    return m;
+  }, [isModernEra, showPassportColors, countries]);
+
   // Flag overlay for historical eras: maps polity NAME → absolute flag URL.
   // Built from the same flagEntries used by FlagGrid so the URL resolution
   // (relative /historical-flags/ paths vs absolute flagcdn URLs) is consistent.
@@ -1157,6 +1189,21 @@ export default function LearnPage() {
         >
           <span className="world-map__zoom-icon" aria-hidden="true">🚩</span>
         </button>
+        {/* Colour countries by their passport cover's predominant colour. Modern
+            world map only (passports are a present-day thing), immediately after
+            the flag overlay, and mutually exclusive with it. */}
+        {isModernEra && (
+          <button
+            type="button"
+            className={`world-map__zoom-btn world-map__zoom-btn--layer${showPassportColors ? " world-map__zoom-btn--active" : ""}`}
+            onClick={togglePassportColors}
+            aria-pressed={showPassportColors}
+            aria-label={showPassportColors ? "Hide passport colours on map" : "Colour countries by passport"}
+            title={showPassportColors ? "Hide passport colours" : "Colour countries by passport"}
+          >
+            <span className="world-map__zoom-icon" aria-hidden="true">🛂</span>
+          </button>
+        )}
         {CITIES_FEATURE_ENABLED && (
           <button
             type="button"
@@ -1188,7 +1235,7 @@ export default function LearnPage() {
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, showCities, toggleCities, eraId, setEraId],
+    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, isModernEra, showPassportColors, togglePassportColors, showCities, toggleCities, eraId, setEraId],
   );
 
   // Leaner control set for the subdivision map: just the flag-overlay
@@ -1503,6 +1550,7 @@ export default function LearnPage() {
             southUp={mapView.southUp}
             extraControls={mapExtraControls}
             flagOverlay={modernFlagOverlay}
+            fillOverride={passportColorOverlay}
             cityOverlay={worldCityOverlay}
           />
         ) : (

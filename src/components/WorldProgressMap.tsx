@@ -150,6 +150,13 @@ type Props = {
    *  will have its flag image (the map value — an absolute URL) rendered
    *  filling its territory. Countries absent from the map show normally. */
   flagOverlay?: ReadonlyMap<string, string> | null;
+  /** When provided, each country whose alpha-2 code is a key here is FILLED with
+   *  the map value (a CSS colour) instead of its normal land colour — the
+   *  "colour countries by passport" layer. Countries absent from the map keep
+   *  their normal fill; a disputed territory always keeps its neutral
+   *  `disputedLand` colour (the disputed-neutrality rule outranks this layer);
+   *  and the selected country still shows its selection fill on top. */
+  fillOverride?: ReadonlyMap<string, string> | null;
   /** When provided, these city markers (national capital(s) + largest city)
    *  are plotted at constant pixel size over the map. */
   cityOverlay?: PlacedCity[] | null;
@@ -401,6 +408,7 @@ export function WorldProgressMap({
   southUp = false,
   extraControls,
   flagOverlay = null,
+  fillOverride = null,
   cityOverlay = null,
 }: Props) {
   const { theme } = useTheme();
@@ -930,9 +938,16 @@ export function WorldProgressMap({
                       (DISPUTED_TERRITORY_CODES.has(alpha2) ||
                         WORLD_MAP_DISPUTED_ALPHA2.has(alpha2))) ||
                     (featureName !== null && WORLD_MAP_DISPUTED_NAMES.has(featureName));
+                  // A disputed territory ALWAYS keeps its neutral colour — the
+                  // disputed-neutrality hard rule outranks the passport layer, so
+                  // the override is only consulted for non-disputed countries.
+                  const overrideFill =
+                    !isDisputedTerritory && alpha2
+                      ? fillOverride?.get(alpha2) ?? null
+                      : null;
                   const baseFill = isDisputedTerritory
                     ? palette.disputedLand
-                    : getFill(alpha2, countryResults, palette, isInPool);
+                    : overrideFill ?? getFill(alpha2, countryResults, palette, isInPool);
                   const tooltip =
                     alpha2
                       ? selectable?.names.get(alpha2) ??
