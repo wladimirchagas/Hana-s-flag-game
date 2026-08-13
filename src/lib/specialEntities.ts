@@ -72,6 +72,15 @@ export const SPECIAL_ENTITIES: Record<string, readonly SpecialEntity[]> = {
     { code: "KY", name: "Cayman Islands", status: "british-overseas-territory" },
     { code: "VG", name: "British Virgin Islands", status: "british-overseas-territory" },
     { code: "FK", name: "Falkland Islands", status: "british-overseas-territory", disputed: true },
+    { code: "TC", name: "Turks and Caicos Islands", status: "british-overseas-territory" },
+    { code: "AI", name: "Anguilla", status: "british-overseas-territory" },
+    { code: "MS", name: "Montserrat", status: "british-overseas-territory" },
+    { code: "SH", name: "Saint Helena, Ascension and Tristan da Cunha", status: "british-overseas-territory" },
+    { code: "PN", name: "Pitcairn Islands", status: "british-overseas-territory" },
+    // South Georgia (claimed by Argentina) and BIOT (Chagos, claimed by
+    // Mauritius) carry the neutral "Disputed" badge.
+    { code: "GS", name: "South Georgia and the South Sandwich Islands", status: "british-overseas-territory", disputed: true },
+    { code: "IO", name: "British Indian Ocean Territory", status: "british-overseas-territory", disputed: true },
   ],
 };
 

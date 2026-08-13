@@ -128,6 +128,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ag-arms", category: "coatofarms", name: "Coat of arms of Antigua and Barbuda", from: 1967, to: 9999, path: "national-flags/ag/ag-arms.svg", design: "A sugar mill and rising sun over the sea, held by two deer, crested with a pineapple.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
     { id: "ag-passport", category: "passport", name: "Passport of Antigua and Barbuda", path: "national-flags/ag/ag-passport.webp", design: "The cover of the Antigua and Barbuda passport.", source: "https://gicg.net/passport/ag/" },
   ],
+  "AI": [
+    { id: "ai-official-national", category: "official", name: "Flag of Anguilla", from: 1990, to: 9999, path: "flags/ai.svg", design: "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
+    { id: "ai-current", category: "historical", name: "Flag of Anguilla", from: 1990, to: 9999, path: "flags/ai.svg", design: "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
+    { id: "ai-arms", category: "coatofarms", name: "Coat of arms of Anguilla", from: 1990, to: 9999, path: "national-flags/ai/ai-arms.svg", design: "Argent, three orange dolphins embowed and leaping in a circle, in base a bar wavy azure for the sea.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla" },
+  ],
   "AL": [
     { id: "al-official-national", category: "official", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
     { id: "al-current", category: "historical", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
@@ -850,6 +855,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gr-arms", category: "coatofarms", name: "Coat of arms of Greece", from: 1975, to: 9999, path: "national-flags/gr/gr-arms.svg", design: "A white cross on a blue shield, framed by two laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
     { id: "gr-passport", category: "passport", name: "Passport of Greece", path: "national-flags/gr/gr-passport.webp", design: "The cover of the Greece passport.", source: "https://gicg.net/passport/gr/" },
   ],
+  "GS": [
+    { id: "gs-official-national", category: "official", name: "Flag of South Georgia and the South Sandwich Islands", from: 1992, to: 9999, path: "flags/gs.svg", design: "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands" },
+    { id: "gs-current", category: "historical", name: "Flag of South Georgia and the South Sandwich Islands", from: 1992, to: 9999, path: "flags/gs.svg", design: "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands" },
+    { id: "gs-arms", category: "coatofarms", name: "Coat of arms of South Georgia and the South Sandwich Islands", from: 1992, to: 9999, path: "national-flags/gs/gs-arms.svg", design: "Lozengy argent and azure, on a pile vert a gold lion rampant holding a torch, in chief two gold estoiles; crest a reindeer; supporters an Antarctic fur seal and a macaroni penguin; motto LEO TERRAM PROPRIAM PROTEGAT.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands" },
+  ],
   "GT": [
     { id: "gt-official-national", category: "official", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "The national flag, in the form adopted in 1871.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
     { id: "gt-current", category: "historical", name: "Flag of Guatemala", from: 1871, to: 9999, primary: true, path: "flags/gt.svg", design: "Sky-blue and white vertical bands with the national arms at the centre — the blue and white of the old Central American union, blue for the two oceans, white for peace.", source: "https://en.wikipedia.org/wiki/Flag_of_Guatemala" },
@@ -993,6 +1003,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "in-passport-diplomatic", category: "passport", name: "Indian diplomatic passport", path: "national-flags/in/india-passport-diplomatic.svg", design: "A maroon cover with the State Emblem in gold, issued to diplomats and senior officials.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
     { id: "in-passport-official", category: "passport", name: "Indian official passport", path: "national-flags/in/india-passport-official.svg", design: "A white cover with the State Emblem, issued to officials travelling on government business.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
     { id: "in-passport-emergency", category: "passport", name: "Indian Emergency Certificate", path: "national-flags/in/india-emergency-certificate.svg", design: "A one-way travel document issued by Indian missions abroad to nationals without a valid passport.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
+  ],
+  "IO": [
+    { id: "io-official-national", category: "official", name: "Flag of the British Indian Ocean Territory", from: 1990, to: 9999, path: "flags/io.svg", design: "White and blue wavy stripes for the Indian Ocean, the Union Flag in the canton, and a palm tree above a royal crown in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory" },
+    { id: "io-current", category: "historical", name: "Flag of the British Indian Ocean Territory", from: 1990, to: 9999, path: "flags/io.svg", design: "Adopted in 1990: wavy white-and-blue bands for the ocean, a palm tree of the Chagos islands and the Crown, with the Union Flag in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory" },
   ],
   "IQ": [
     { id: "iq-official-national", category: "official", name: "Flag of Iraq", from: 2008, to: 9999, primary: true, path: "flags/iq.svg", design: "The national flag of Iraq, in the form adopted in 2008.", source: "https://en.wikipedia.org/wiki/Flag_of_Iraq" },
@@ -1409,6 +1423,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mr-arms", category: "coatofarms", name: "Seal of Mauritania", from: 2018, to: 9999, path: "national-flags/mr/mr-arms.svg", design: "A gold star and crescent between a date palm and an ear of millet, within a ring naming the republic.", source: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
     { id: "mr-passport", category: "passport", name: "Passport of Mauritania", path: "national-flags/mr/mr-passport.webp", design: "The cover of the Mauritania passport.", source: "https://gicg.net/passport/mr/" },
   ],
+  "MS": [
+    { id: "ms-official-national", category: "official", name: "Flag of Montserrat", from: 1909, to: 9999, path: "flags/ms.svg", design: "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Montserrat" },
+    { id: "ms-current", category: "historical", name: "Flag of Montserrat", from: 1909, to: 9999, path: "flags/ms.svg", design: "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Montserrat" },
+    { id: "ms-arms", category: "coatofarms", name: "Coat of arms of Montserrat", from: 1909, to: 9999, path: "national-flags/ms/ms-arms.svg", design: "A woman in a green dress (Erin, the personification of Ireland) embracing a black cross and holding a golden harp.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat" },
+  ],
   "MT": [
     { id: "mt-official-national", category: "official", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
     { id: "mt-current", category: "historical", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
@@ -1685,6 +1704,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pl-arms", category: "coatofarms", name: "Coat of arms of Poland", from: 1990, to: 9999, path: "national-flags/pl/poland-arms.svg", design: "A white eagle with a golden beak, talons and crown, on a red shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
     { id: "pl-passport", category: "passport", name: "Passport of Poland", path: "national-flags/pl/pl-passport.webp", design: "The cover of the Poland passport.", source: "https://gicg.net/passport/pl/" },
   ],
+  "PN": [
+    { id: "pn-official-national", category: "official", name: "Flag of the Pitcairn Islands", from: 1984, to: 9999, path: "flags/pn.svg", design: "A blue ensign with the Union Flag in the canton and Pitcairn's arms — the Bounty's anchor and Bible on a green wedge — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands" },
+    { id: "pn-current", category: "historical", name: "Flag of the Pitcairn Islands", from: 1984, to: 9999, path: "flags/pn.svg", design: "A blue ensign with the Union Flag in the canton and Pitcairn's arms — the Bounty's anchor and Bible on a green wedge — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands" },
+    { id: "pn-arms", category: "coatofarms", name: "Coat of arms of the Pitcairn Islands", from: 1969, to: 9999, path: "national-flags/pn/pn-arms.svg", design: "Azure, on a pile in base vert fimbriated Or the Bounty Bible and the anchor of HMS Bounty; crest a Pitcairn wheelbarrow before a slip of miro.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands" },
+  ],
   "PR": [
     { id: "pr-official-national", category: "official", name: "Flag of Puerto Rico", from: 1952, to: 9999, path: "flags/sub/US/US-PR.svg", design: "The single-star flag — five red and white stripes with a white star on a blue triangle — adopted as the commonwealth flag in 1952.", source: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
     { id: "pr-current", category: "historical", name: "Flag of Puerto Rico", from: 1952, to: 9999, path: "flags/sub/US/US-PR.svg", design: "The flag of Puerto Rico, adopted in 1952.", source: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
@@ -1860,6 +1884,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sg-arms", category: "coatofarms", name: "Coat of arms of Singapore", from: 1959, to: 9999, path: "national-flags/sg/singapore-arms.svg", design: "A red shield with a white crescent and five stars, supported by a lion and a tiger, over a banner reading Majulah Singapura.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
     { id: "sg-passport", category: "passport", name: "Passport of Singapore", path: "national-flags/sg/sg-passport.webp", design: "The cover of the Singapore passport.", source: "https://gicg.net/passport/sg/" },
   ],
+  "SH": [
+    { id: "sh-official-national", category: "official", name: "Flag of Saint Helena", from: 1984, to: 9999, path: "flags/sh.svg", design: "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena" },
+    { id: "sh-current", category: "historical", name: "Flag of Saint Helena", from: 1984, to: 9999, path: "flags/sh.svg", design: "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena" },
+    { id: "sh-arms", category: "coatofarms", name: "Coat of arms of Saint Helena", from: 1984, to: 9999, path: "national-flags/sh/sh-arms.svg", design: "Azure, on waves of the sea an East Indiaman under the flag of England between two cliffs; on a chief Or a wirebird proper; motto 'Loyal and Unshakeable'.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena" },
+  ],
   "SI": [
     { id: "si-official-national", category: "official", name: "Flag of Slovenia", from: 1991, to: 9999, primary: true, path: "flags/si.svg", design: "The national flag of Slovenia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
     { id: "si-current", category: "historical", name: "Flag of Slovenia", from: 1991, to: 9999, primary: true, path: "flags/si.svg", design: "The national flag of Slovenia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovenia" },
@@ -1953,6 +1982,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sz-uk", category: "historical", name: "Flag of the United Kingdom", from: 1903, to: 1968, sovereign: "the United Kingdom", path: "national-flags/sz/sz-uk.svg", design: "The Union Flag, flown while Swaziland was a British protectorate.", source: "https://en.wikipedia.org/wiki/Swaziland_Protectorate" },
     { id: "sz-arms", category: "coatofarms", name: "Coat of arms of Eswatini", from: 1968, to: 9999, path: "national-flags/sz/sz-arms.svg", design: "An Nguni shield on two spears, supported by a lion and an elephant, beneath a crown of feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
     { id: "sz-passport", category: "passport", name: "Passport of Eswatini", path: "national-flags/sz/sz-passport.webp", design: "The cover of the Eswatini passport.", source: "https://gicg.net/passport/sz/" },
+  ],
+  "TC": [
+    { id: "tc-official-national", category: "official", name: "Flag of the Turks and Caicos Islands", from: 1968, to: 9999, path: "flags/tc.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands" },
+    { id: "tc-current", category: "historical", name: "Flag of the Turks and Caicos Islands", from: 1968, to: 9999, path: "flags/tc.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands" },
+    { id: "tc-arms", category: "coatofarms", name: "Coat of arms of the Turks and Caicos Islands", from: 1965, to: 9999, path: "national-flags/tc/tc-arms.svg", design: "Or, in chief a queen conch shell and a spiny lobster and in base a Turk's-head cactus proper; crest a pelican between two sisal plants; supporters two flamingos.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands" },
   ],
   "TD": [
     { id: "td-official-national", category: "official", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
@@ -2512,6 +2546,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Antigua and Barbuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
     ],
   },
+  "ai-arms": {
+    description: "The shield, adopted by Royal Warrant on 27 November 1990, shows three orange dolphins leaping in a ring for unity, strength and endurance — the island's motto — with the circle standing for continuity. The white field is peace and tranquillity; the blue at the base is the Caribbean Sea, and stands too for faith, youth and hope. The same design appears on Anguilla's flag.",
+    sources: [
+      { title: "Coat of arms of Anguilla — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla" },
+    ],
+  },
   "al-arms": {
     description: "The arms are the flag turned into a shield, and both descend from Skanderbeg — Gjergj Kastrioti, the 15th-century lord who led Albanian resistance to the Ottomans. The black double-headed eagle has been in documented use since 1458 and gives Albania its native name, Shqipëria, often glossed as the land of the eagles. Above the shield sits the gold helmet of Skanderbeg himself: the crown-like horned helm now held in the Kunsthistorisches Museum in Vienna, first recorded in the Ambras armoury inventory of 1593. So the emblem is not allegory but two relics of one man — his standard and his helmet.",
     sources: [
@@ -3014,6 +3054,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Greece — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greece" },
     ],
   },
+  "gs-arms": {
+    description: "The golden lion holding a torch stands for the United Kingdom and for the islands' discovery, and the two gold stars above are taken from the arms of Captain James Cook, who charted South Georgia in 1775. An Antarctic fur seal and a macaroni penguin — both native — support the shield, and the crest is a reindeer, for the two herds once introduced to the island. The arms, first sealed in 1985, were augmented by Royal Warrant on 14 February 1992 to mark the liberation of the Falklands; the motto, Leo Terram Propriam Protegat, means 'Let the Lion protect his own land'.",
+    sources: [
+      { title: "Coat of arms of South Georgia and the South Sandwich Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands" },
+    ],
+  },
   "gt-arms": {
     description: "A resplendent quetzal — the free-flying national bird, long believed to die in captivity, and so an emblem of liberty and sovereignty — perches on a scroll reading Libertad 15 de Septiembre de 1821, the date of independence. Crossed Remington rifles stand for the readiness to defend the country and crossed swords for justice and honour, all within a wreath of laurel for victory.",
     sources: [
@@ -3368,6 +3414,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of Mauritania — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
     ],
   },
+  "ms-arms": {
+    description: "Granted by Royal Warrant on 10 April 1909. The woman is Erin, the personification of Ireland, and the golden harp beside her is Ireland's own emblem — both honour the Irish settlers who came to Montserrat from 1632, so numerous that a 1678 census found seven in ten of the island's white inhabitants were of Irish descent, the 'Emerald Isle of the Caribbean'. Erin's embrace of the black cross marks the island's Christian faith.",
+    sources: [
+      { title: "Coat of arms of Montserrat — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat" },
+    ],
+  },
   "mt-arms": {
     description: "The shield is simply the national flag — white and red with the George Cross that the United Kingdom awarded to the whole island in 1942 for its endurance under siege. Above it a golden mural crown with a sally port and five turrets stands for the fortifications of Malta and the city walls, the crown of a fortress rather than a monarch. The olive branch and palm branch framing the shield are peace and, by the palm, the endurance of the islanders; the scroll beneath reads Repubblika ta' Malta. The arms were adopted in 1988, replacing a 1975 emblem — Prime Minister Dom Mintoff had earlier objected to the 1964 arms because he took the mural crown for a royal one, which it is not.",
     sources: [
@@ -3524,6 +3576,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
     ],
   },
+  "pn-arms": {
+    description: "Granted on 4 November 1969. The Bible and the anchor are relics of HMS Bounty, whose mutineers settled Pitcairn in 1790 — the anchor for the ship they burned in Bounty Bay, the Bible for the Christianity that came to shape the tiny community. The blue, gold and green stand for the island rising green out of the Pacific; the crest's wheelbarrow and slip of miro wood speak to the farming the settlers lived by and the wood they carve.",
+    sources: [
+      { title: "Coat of arms of the Pitcairn Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands" },
+    ],
+  },
   "pr-arms": {
     description: "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
     sources: [
@@ -3626,6 +3684,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Singapore — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Singapore" },
     ],
   },
+  "sh-arms": {
+    description: "Authorised on 30 January 1984. On the chief stands the wirebird — the Saint Helena plover, the island's national bird, found nowhere else — and below it a three-masted East Indiaman flying the cross of St George sails between the island's steep cliffs, for Saint Helena's place on the East India Company's ocean route and its rugged coast. The motto, 'Loyal and Unshakeable', speaks to the islanders' steadfast allegiance.",
+    sources: [
+      { title: "Coat of arms of Saint Helena — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena" },
+    ],
+  },
   "si-arms": {
     description: "The white three-peaked mountain is Triglav, Slovenia's highest and its national symbol; the two wavy lines beneath it are the country's rivers and its Adriatic coast. The three gold six-pointed stars arranged above are borrowed from the arms of the Counts of Celje, the most powerful medieval dynasty of the Slovene lands. Until Austria-Hungary dissolved, the Slovene lands had no single coat of arms — each historic province carried its own — so this emblem, designed at independence in 1991, is the first that represents the whole nation; the Triglav-and-sea motif had already appeared on the socialist-era emblem.",
     sources: [
@@ -3696,6 +3760,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A black-and-white Nguni shield rests on two spears and a staff hung with the blue royal tassels (injobo). A lion and an elephant support it — the lion for the King, the elephant for the Queen Mother, the two pillars of the Swazi monarchy — and above sits a crown of feathers of the kind worn at the Incwala, the festival of the first fruits. The scroll reads Siyinqaba — “We are the fortress.”",
     sources: [
       { title: "Coat of arms of Eswatini — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Eswatini" },
+    ],
+  },
+  "tc-arms": {
+    description: "Granted by Royal Warrant on 28 September 1965. On a gold shield the queen conch shell and the spiny lobster stand for the islands' mainstay industry of fishing, and the Turk's-head cactus — the plant that gave the Turks Islands their name — for the native flora. Above, a white pelican between two sisal plants recalls the old rope-making trade, and two flamingos support the shield, all of them creatures of the islands.",
+    sources: [
+      { title: "Coat of arms of the Turks and Caicos Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands" },
     ],
   },
   "td-arms": {

@@ -25600,6 +25600,313 @@
           "fetched": "2026-08-13"
         }
       ]
+    },
+    "TC": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "tc-official-national",
+          "category": "official",
+          "from": 1968,
+          "to": 9999,
+          "name": "Flag of the Turks and Caicos Islands",
+          "reuse": "flags/tc.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands"
+        },
+        {
+          "id": "tc-current",
+          "category": "historical",
+          "from": 1968,
+          "to": 9999,
+          "name": "Flag of the Turks and Caicos Islands",
+          "reuse": "flags/tc.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands"
+        },
+        {
+          "id": "tc-arms",
+          "category": "coatofarms",
+          "from": 1965,
+          "to": 9999,
+          "name": "Coat of arms of the Turks and Caicos Islands",
+          "commons": "Coat of arms of the Turks and Caicos Islands.svg",
+          "file": "tc/tc-arms.svg",
+          "design": "Or, in chief a queen conch shell and a spiny lobster and in base a Turk's-head cactus proper; crest a pelican between two sisal plants; supporters two flamingos.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 28 September 1965. On a gold shield the queen conch shell and the spiny lobster stand for the islands' mainstay industry of fishing, and the Turk's-head cactus — the plant that gave the Turks Islands their name — for the native flora. Above, a white pelican between two sisal plants recalls the old rope-making trade, and two flamingos support the shield, all of them creatures of the islands.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Turks and Caicos Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands"
+              }
+            ]
+          },
+          "sha256": "a699ab9f0b36643eeafc9c661c7a99a2ffc7c3faa007edcb386ed184fd2eb5d6",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "AI": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ai-official-national",
+          "category": "official",
+          "from": 1990,
+          "to": 9999,
+          "name": "Flag of Anguilla",
+          "reuse": "flags/ai.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Anguilla"
+        },
+        {
+          "id": "ai-current",
+          "category": "historical",
+          "from": 1990,
+          "to": 9999,
+          "name": "Flag of Anguilla",
+          "reuse": "flags/ai.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Anguilla"
+        },
+        {
+          "id": "ai-arms",
+          "category": "coatofarms",
+          "from": 1990,
+          "to": 9999,
+          "name": "Coat of arms of Anguilla",
+          "commons": "Coat of arms of Anguilla.svg",
+          "file": "ai/ai-arms.svg",
+          "design": "Argent, three orange dolphins embowed and leaping in a circle, in base a bar wavy azure for the sea.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla",
+          "meaning": {
+            "description": "The shield, adopted by Royal Warrant on 27 November 1990, shows three orange dolphins leaping in a ring for unity, strength and endurance — the island's motto — with the circle standing for continuity. The white field is peace and tranquillity; the blue at the base is the Caribbean Sea, and stands too for faith, youth and hope. The same design appears on Anguilla's flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Anguilla — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla"
+              }
+            ]
+          },
+          "sha256": "4655bc15ff55e4ccb482bb70ffe6dd65253b6133d04ccf77bfd7b59d35e4c04c",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "MS": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ms-official-national",
+          "category": "official",
+          "from": 1909,
+          "to": 9999,
+          "name": "Flag of Montserrat",
+          "reuse": "flags/ms.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Montserrat"
+        },
+        {
+          "id": "ms-current",
+          "category": "historical",
+          "from": 1909,
+          "to": 9999,
+          "name": "Flag of Montserrat",
+          "reuse": "flags/ms.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Montserrat"
+        },
+        {
+          "id": "ms-arms",
+          "category": "coatofarms",
+          "from": 1909,
+          "to": 9999,
+          "name": "Coat of arms of Montserrat",
+          "commons": "Coat of arms of Montserrat.svg",
+          "file": "ms/ms-arms.svg",
+          "design": "A woman in a green dress (Erin, the personification of Ireland) embracing a black cross and holding a golden harp.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 10 April 1909. The woman is Erin, the personification of Ireland, and the golden harp beside her is Ireland's own emblem — both honour the Irish settlers who came to Montserrat from 1632, so numerous that a 1678 census found seven in ten of the island's white inhabitants were of Irish descent, the 'Emerald Isle of the Caribbean'. Erin's embrace of the black cross marks the island's Christian faith.",
+            "sources": [
+              {
+                "title": "Coat of arms of Montserrat — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat"
+              }
+            ]
+          },
+          "sha256": "2ed662295c1908af36789ceeadca2d962c869f1aa6cde62b7a50b5a6415cb004",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "SH": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "sh-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of Saint Helena",
+          "reuse": "flags/sh.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena"
+        },
+        {
+          "id": "sh-current",
+          "category": "historical",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of Saint Helena",
+          "reuse": "flags/sh.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena"
+        },
+        {
+          "id": "sh-arms",
+          "category": "coatofarms",
+          "from": 1984,
+          "to": 9999,
+          "name": "Coat of arms of Saint Helena",
+          "commons": "Coat of arms of Saint Helena.svg",
+          "file": "sh/sh-arms.svg",
+          "design": "Azure, on waves of the sea an East Indiaman under the flag of England between two cliffs; on a chief Or a wirebird proper; motto 'Loyal and Unshakeable'.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena",
+          "meaning": {
+            "description": "Authorised on 30 January 1984. On the chief stands the wirebird — the Saint Helena plover, the island's national bird, found nowhere else — and below it a three-masted East Indiaman flying the cross of St George sails between the island's steep cliffs, for Saint Helena's place on the East India Company's ocean route and its rugged coast. The motto, 'Loyal and Unshakeable', speaks to the islanders' steadfast allegiance.",
+            "sources": [
+              {
+                "title": "Coat of arms of Saint Helena — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena"
+              }
+            ]
+          },
+          "sha256": "cc88f7e83082c15381db1c901d1316e6d7141075b1bb92b29e94e5d99d362330",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "PN": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "pn-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of the Pitcairn Islands",
+          "reuse": "flags/pn.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Pitcairn's arms — the Bounty's anchor and Bible on a green wedge — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands"
+        },
+        {
+          "id": "pn-current",
+          "category": "historical",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of the Pitcairn Islands",
+          "reuse": "flags/pn.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Pitcairn's arms — the Bounty's anchor and Bible on a green wedge — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands"
+        },
+        {
+          "id": "pn-arms",
+          "category": "coatofarms",
+          "from": 1969,
+          "to": 9999,
+          "name": "Coat of arms of the Pitcairn Islands",
+          "commons": "Coat of arms of the Pitcairn Islands.svg",
+          "file": "pn/pn-arms.svg",
+          "design": "Azure, on a pile in base vert fimbriated Or the Bounty Bible and the anchor of HMS Bounty; crest a Pitcairn wheelbarrow before a slip of miro.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands",
+          "meaning": {
+            "description": "Granted on 4 November 1969. The Bible and the anchor are relics of HMS Bounty, whose mutineers settled Pitcairn in 1790 — the anchor for the ship they burned in Bounty Bay, the Bible for the Christianity that came to shape the tiny community. The blue, gold and green stand for the island rising green out of the Pacific; the crest's wheelbarrow and slip of miro wood speak to the farming the settlers lived by and the wood they carve.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Pitcairn Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands"
+              }
+            ]
+          },
+          "sha256": "af0d623b51fe10f720abdeededcb17306a28fe88e7603f14a2e1f3d86f967861",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "GS": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gs-official-national",
+          "category": "official",
+          "from": 1992,
+          "to": 9999,
+          "name": "Flag of South Georgia and the South Sandwich Islands",
+          "reuse": "flags/gs.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands"
+        },
+        {
+          "id": "gs-current",
+          "category": "historical",
+          "from": 1992,
+          "to": 9999,
+          "name": "Flag of South Georgia and the South Sandwich Islands",
+          "reuse": "flags/gs.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands"
+        },
+        {
+          "id": "gs-arms",
+          "category": "coatofarms",
+          "from": 1992,
+          "to": 9999,
+          "name": "Coat of arms of South Georgia and the South Sandwich Islands",
+          "commons": "Coat of arms of South Georgia and the South Sandwich Islands.svg",
+          "file": "gs/gs-arms.svg",
+          "design": "Lozengy argent and azure, on a pile vert a gold lion rampant holding a torch, in chief two gold estoiles; crest a reindeer; supporters an Antarctic fur seal and a macaroni penguin; motto LEO TERRAM PROPRIAM PROTEGAT.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands",
+          "meaning": {
+            "description": "The golden lion holding a torch stands for the United Kingdom and for the islands' discovery, and the two gold stars above are taken from the arms of Captain James Cook, who charted South Georgia in 1775. An Antarctic fur seal and a macaroni penguin — both native — support the shield, and the crest is a reindeer, for the two herds once introduced to the island. The arms, first sealed in 1985, were augmented by Royal Warrant on 14 February 1992 to mark the liberation of the Falklands; the motto, Leo Terram Propriam Protegat, means 'Let the Lion protect his own land'.",
+            "sources": [
+              {
+                "title": "Coat of arms of South Georgia and the South Sandwich Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands"
+              }
+            ]
+          },
+          "sha256": "c4606c194bbf3c3c890ecd8be79fc1d60b43fdb4ca6abe3fba04fbc12d7933aa",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "IO": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "io-official-national",
+          "category": "official",
+          "from": 1990,
+          "to": 9999,
+          "name": "Flag of the British Indian Ocean Territory",
+          "reuse": "flags/io.svg",
+          "design": "White and blue wavy stripes for the Indian Ocean, the Union Flag in the canton, and a palm tree above a royal crown in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
+        },
+        {
+          "id": "io-current",
+          "category": "historical",
+          "from": 1990,
+          "to": 9999,
+          "name": "Flag of the British Indian Ocean Territory",
+          "reuse": "flags/io.svg",
+          "design": "Adopted in 1990: wavy white-and-blue bands for the ocean, a palm tree of the Chagos islands and the Crown, with the Union Flag in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
+        }
+      ]
     }
   }
 }
