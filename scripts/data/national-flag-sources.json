@@ -25907,6 +25907,241 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
         }
       ]
+    },
+    "GL": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gl-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Greenland",
+          "reuse": "flags/gl.svg",
+          "design": "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Greenland"
+        },
+        {
+          "id": "gl-current",
+          "category": "historical",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Greenland",
+          "reuse": "flags/gl.svg",
+          "design": "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Greenland"
+        },
+        {
+          "id": "gl-arms",
+          "category": "coatofarms",
+          "from": 1989,
+          "to": 9999,
+          "name": "Coat of arms of Greenland",
+          "commons": "Coat of arms of Greenland.svg",
+          "file": "gl/gl-arms.svg",
+          "design": "Azure, a polar bear rampant argent, its left forepaw raised.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland",
+          "meaning": {
+            "description": "Adopted by Greenland's Landsting on 1 May 1989. The white polar bear stands for the island's Arctic wildlife, and the blue shield for the Atlantic and Arctic oceans that wash it. The bear raises its LEFT forepaw — following the traditional Inuit belief that polar bears are left-handed — which sets Greenland's version apart from the Danish royal arms, where the bear raises its right.",
+            "sources": [
+              {
+                "title": "Coat of arms of Greenland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland"
+              }
+            ]
+          },
+          "sha256": "6a7c534ed6cce52bbb74a589feeaeffe95d0b240bad2330e9ba135ff7d6a0096",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "FO": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "fo-official-national",
+          "category": "official",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of the Faroe Islands",
+          "reuse": "flags/fo.svg",
+          "design": "Merkið — a red Nordic cross fimbriated in blue on a white field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands"
+        },
+        {
+          "id": "fo-current",
+          "category": "historical",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of the Faroe Islands",
+          "reuse": "flags/fo.svg",
+          "design": "Merkið — a red Nordic cross fimbriated in blue on a white field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands"
+        },
+        {
+          "id": "fo-arms",
+          "category": "coatofarms",
+          "from": 1948,
+          "to": 9999,
+          "name": "Coat of arms of the Faroe Islands",
+          "commons": "Coat of arms of the Faroe Islands.svg",
+          "file": "fo/fo-arms.svg",
+          "design": "Azure, a ram passant argent, langued gules, armed and unguled Or.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands",
+          "meaning": {
+            "description": "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Faroe Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands"
+              }
+            ]
+          },
+          "sha256": "b2419e75971021b860c953d501dcae8c9af8db8961b046c36ee8720fe000abab",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "AW": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "aw-official-national",
+          "category": "official",
+          "from": 1976,
+          "to": 9999,
+          "name": "Flag of Aruba",
+          "reuse": "flags/sub/NL/NL-AW.svg",
+          "design": "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Aruba"
+        },
+        {
+          "id": "aw-current",
+          "category": "historical",
+          "from": 1976,
+          "to": 9999,
+          "name": "Flag of Aruba",
+          "reuse": "flags/sub/NL/NL-AW.svg",
+          "design": "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Aruba"
+        },
+        {
+          "id": "aw-arms",
+          "category": "coatofarms",
+          "from": 1955,
+          "to": 9999,
+          "name": "Coat of arms of Aruba",
+          "commons": "Coat of arms of Aruba.svg",
+          "file": "aw/aw-arms.svg",
+          "design": "A white cross quartering the shield: an aloe plant, the Hooiberg hill over a wavy sea, clasped hands, and a cogwheel; a red lion crest, laurel-branch supporters.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba",
+          "meaning": {
+            "description": "Granted on 15 November 1955. A white cross of faith divides the shield into four: a flowering aloe, the island's first great export; the Hooiberg, the hill that marks Aruba rising green out of the sea; two clasped hands for friendly relations with the wider world; and a cogwheel for the industry the islanders live by. A red lion of strength and generosity crests the shield, and two laurel branches — for peace and friendship — support it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Aruba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba"
+              }
+            ]
+          },
+          "sha256": "2973c0451ae62766bd5feaee6930c56951e973caa54099b485963f69d57fdf38",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "CW": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "cw-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of Curaçao",
+          "reuse": "flags/sub/NL/NL-CW.svg",
+          "design": "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
+        },
+        {
+          "id": "cw-current",
+          "category": "historical",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of Curaçao",
+          "reuse": "flags/sub/NL/NL-CW.svg",
+          "design": "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
+        },
+        {
+          "id": "cw-arms",
+          "category": "coatofarms",
+          "from": 1964,
+          "to": 9999,
+          "name": "Coat of arms of Curaçao",
+          "commons": "Coat of arms of Curaçao.svg",
+          "file": "cw/cw-arms.svg",
+          "design": "A shield with a sailing ship in full sail on a blue sea and a green laraha (bitter-orange) tree, an inescutcheon of the arms of Amsterdam (three saltires).",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao",
+          "meaning": {
+            "description": "Granted on 24 July 1964. The ship under full sail is a vessel of the Dutch West India Company, which settled Curaçao in 1634; the green laraha — the bitter Valencia orange whose peel gives the island's famous liqueur — stands for its flora and agriculture. The small central shield bears the three saltires of Amsterdam, the city that governed the colony, marking Curaçao's long tie to Amsterdam and the House of Orange-Nassau.",
+            "sources": [
+              {
+                "title": "Coat of arms of Curaçao — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao"
+              }
+            ]
+          },
+          "sha256": "f443f366297bead7765c6ac0be02da99c9b55f906d63f620603ccf20f834f745",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "SX": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "sx-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Sint Maarten",
+          "reuse": "flags/sub/NL/NL-SX.svg",
+          "design": "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
+        },
+        {
+          "id": "sx-current",
+          "category": "historical",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Sint Maarten",
+          "reuse": "flags/sub/NL/NL-SX.svg",
+          "design": "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
+        },
+        {
+          "id": "sx-arms",
+          "category": "coatofarms",
+          "from": 1982,
+          "to": 9999,
+          "name": "Coat of arms of Sint Maarten",
+          "commons": "Coat of arms of Sint Maarten.svg",
+          "file": "sx/sx-arms.svg",
+          "design": "A shield with the Philipsburg courthouse at centre, the French–Dutch border monument and a sage flower, a rising sun behind; crest a brown pelican; motto SEMPER PROGREDIENS.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten",
+          "meaning": {
+            "description": "Adopted on 7 November 1982. At the centre stands the courthouse of Philipsburg, the island's civic heart; beside it the border monument recalls the peaceful boundary that has divided the island between Dutch and French halves since 1648, and the orange-yellow sage is the national flower. A rising sun of hope fills the background, and a brown pelican — the national bird — crests the shield. The motto Semper Progrediens means 'Always progressing'; the orange border marks the tie to the Dutch royal house.",
+            "sources": [
+              {
+                "title": "Coat of arms of Sint Maarten — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten"
+              }
+            ]
+          },
+          "sha256": "683ec3f31f862438746a3006e0b5968aaf86252d2e128a02dc6e2bae52078b9e",
+          "fetched": "2026-08-13"
+        }
+      ]
     }
   }
 }

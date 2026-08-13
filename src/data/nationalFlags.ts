@@ -210,6 +210,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
     { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.webp", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.", source: "https://gicg.net/passport/au/" },
   ],
+  "AW": [
+    { id: "aw-official-national", category: "official", name: "Flag of Aruba", from: 1976, to: 9999, path: "flags/sub/NL/NL-AW.svg", design: "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
+    { id: "aw-current", category: "historical", name: "Flag of Aruba", from: 1976, to: 9999, path: "flags/sub/NL/NL-AW.svg", design: "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
+    { id: "aw-arms", category: "coatofarms", name: "Coat of arms of Aruba", from: 1955, to: 9999, path: "national-flags/aw/aw-arms.svg", design: "A white cross quartering the shield: an aloe plant, the Hooiberg hill over a wavy sea, clasped hands, and a cogwheel; a red lion crest, laurel-branch supporters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba" },
+  ],
   "AZ": [
     { id: "az-official-national", category: "official", name: "Flag of Azerbaijan", from: 1918, to: 9999, primary: true, path: "flags/az.svg", design: "The national flag of Azerbaijan, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
     { id: "az-ssr", category: "historical", name: "Flag of the Azerbaijan SSR", from: 1952, to: 1991, priorPolity: "the Azerbaijan Soviet Socialist Republic", path: "national-flags/az/az-ssr.svg", design: "Red with a blue stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
@@ -561,6 +566,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cv-arms", category: "coatofarms", name: "National emblem of Cape Verde", from: 1992, to: 9999, path: "national-flags/cv/cv-arms.svg", design: "A blue ring of ten stars around a plumb-bob, torch and triangle, above three chain links.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
     { id: "cv-passport", category: "passport", name: "Passport of Cape Verde", path: "national-flags/cv/cv-passport.webp", design: "The cover of the Cape Verde passport.", source: "https://gicg.net/passport/cv/" },
   ],
+  "CW": [
+    { id: "cw-official-national", category: "official", name: "Flag of Curaçao", from: 1984, to: 9999, path: "flags/sub/NL/NL-CW.svg", design: "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao" },
+    { id: "cw-current", category: "historical", name: "Flag of Curaçao", from: 1984, to: 9999, path: "flags/sub/NL/NL-CW.svg", design: "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao" },
+    { id: "cw-arms", category: "coatofarms", name: "Coat of arms of Curaçao", from: 1964, to: 9999, path: "national-flags/cw/cw-arms.svg", design: "A shield with a sailing ship in full sail on a blue sea and a green laraha (bitter-orange) tree, an inescutcheon of the arms of Amsterdam (three saltires).", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
+  ],
   "CY": [
     { id: "cy-official-national", category: "official", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
     { id: "cy-current", category: "historical", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
@@ -743,6 +753,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fm-arms", category: "coatofarms", name: "Seal of the Federated States of Micronesia", from: 1986, to: 9999, path: "national-flags/fm/fm-arms.svg", design: "A sprouting coconut floating on the ocean beneath an arc of four white stars, with the motto and the year 1979.", source: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
     { id: "fm-passport", category: "passport", name: "Passport of the Federated States of Micronesia", path: "national-flags/fm/fm-passport.webp", design: "The cover of the the Federated States of Micronesia passport.", source: "https://gicg.net/passport/fm/" },
   ],
+  "FO": [
+    { id: "fo-official-national", category: "official", name: "Flag of the Faroe Islands", from: 1948, to: 9999, path: "flags/fo.svg", design: "Merkið — a red Nordic cross fimbriated in blue on a white field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands" },
+    { id: "fo-current", category: "historical", name: "Flag of the Faroe Islands", from: 1948, to: 9999, path: "flags/fo.svg", design: "Merkið — a red Nordic cross fimbriated in blue on a white field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands" },
+    { id: "fo-arms", category: "coatofarms", name: "Coat of arms of the Faroe Islands", from: 1948, to: 9999, path: "national-flags/fo/fo-arms.svg", design: "Azure, a ram passant argent, langued gules, armed and unguled Or.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands" },
+  ],
   "FR": [
     { id: "fr-official-national", category: "official", name: "Flag of France", from: 1830, to: 9999, primary: true, path: "flags/fr.svg", design: "The national flag, named in Article 2 of the Constitution.", source: "https://en.wikipedia.org/wiki/Flag_of_France" },
     { id: "fr-tricolore", category: "historical", name: "Flag of France (the Tricolore)", from: 1830, to: 9999, primary: true, path: "flags/fr.svg", design: "Three vertical bands of blue, white and red. The darker navy of the original was restored in 2020, after a lighter version had been used since 1976.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
@@ -824,6 +839,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gi-official-national", category: "official", name: "Flag of Gibraltar", from: 1502, to: 9999, path: "flags/gi.svg", design: "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.", source: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
     { id: "gi-current", category: "historical", name: "Flag of Gibraltar", from: 1502, to: 9999, path: "flags/gi.svg", design: "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.", source: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
     { id: "gi-arms", category: "coatofarms", name: "Coat of arms of Gibraltar", from: 1502, to: 9999, path: "national-flags/gi/gi-arms.svg", design: "Argent, upon a base gules a castle triple-towered gules ported and windowed sable, a golden key pendent from the portal.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar" },
+  ],
+  "GL": [
+    { id: "gl-official-national", category: "official", name: "Flag of Greenland", from: 1985, to: 9999, path: "flags/gl.svg", design: "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.", source: "https://en.wikipedia.org/wiki/Flag_of_Greenland" },
+    { id: "gl-current", category: "historical", name: "Flag of Greenland", from: 1985, to: 9999, path: "flags/gl.svg", design: "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.", source: "https://en.wikipedia.org/wiki/Flag_of_Greenland" },
+    { id: "gl-arms", category: "coatofarms", name: "Coat of arms of Greenland", from: 1989, to: 9999, path: "national-flags/gl/gl-arms.svg", design: "Azure, a polar bear rampant argent, its left forepaw raised.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland" },
   ],
   "GM": [
     { id: "gm-official-national", category: "official", name: "Flag of the Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag, adopted at independence in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Gambia" },
@@ -1968,6 +1988,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sv-arms", category: "coatofarms", name: "Coat of arms of El Salvador", from: 1912, to: 9999, path: "national-flags/sv/elsalvador-arms.svg", design: "A golden triangle containing five volcanoes between two oceans, beneath a Phrygian cap, a rainbow and the date 15 September 1821, within a laurel wreath and five flags.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
     { id: "sv-passport", category: "passport", name: "Passport of El Salvador", path: "national-flags/sv/sv-passport.webp", design: "The cover of the El Salvador passport.", source: "https://gicg.net/passport/sv/" },
   ],
+  "SX": [
+    { id: "sx-official-national", category: "official", name: "Flag of Sint Maarten", from: 1985, to: 9999, path: "flags/sub/NL/NL-SX.svg", design: "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.", source: "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten" },
+    { id: "sx-current", category: "historical", name: "Flag of Sint Maarten", from: 1985, to: 9999, path: "flags/sub/NL/NL-SX.svg", design: "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.", source: "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten" },
+    { id: "sx-arms", category: "coatofarms", name: "Coat of arms of Sint Maarten", from: 1982, to: 9999, path: "national-flags/sx/sx-arms.svg", design: "A shield with the Philipsburg courthouse at centre, the French–Dutch border monument and a sage flower, a rising sun behind; crest a brown pelican; motto SEMPER PROGREDIENS.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten" },
+  ],
   "SY": [
     { id: "sy-official-national", category: "official", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria — three stripes of green, white and black with three red stars — readopted on 13 March 2025, reviving the 1932 independence flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
     { id: "sy-current", category: "historical", name: "Flag of Syria", from: 2024, to: 9999, primary: true, path: "flags/sy.svg", design: "The national flag of Syria — three stripes of green, white and black with three red stars — readopted on 13 March 2025, reviving the 1932 independence flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Syria" },
@@ -2614,6 +2639,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Australian passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Australian_passport" },
     ],
   },
+  "aw-arms": {
+    description: "Granted on 15 November 1955. A white cross of faith divides the shield into four: a flowering aloe, the island's first great export; the Hooiberg, the hill that marks Aruba rising green out of the sea; two clasped hands for friendly relations with the wider world; and a cogwheel for the industry the islanders live by. A red lion of strength and generosity crests the shield, and two laurel branches — for peace and friendship — support it.",
+    sources: [
+      { title: "Coat of arms of Aruba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba" },
+    ],
+  },
   "az-emblem": {
     description: "The focal point is a stylised flame, a reference to the country's eternal oil and gas fires — the reason Azerbaijan is called the land of eternal fire. The shield behind it carries the colours of the national flag with its crescent and eight-pointed star. Supporting it are a crossed stalk of wheat and an oak bough: wheat is abundance, and wheat bread the country's staple food, while the oak stands for strength and endurance. The design is not new — the Azerbaijan Democratic Republic opened a competition for a national emblem on 30 January 1920 but fell in April before one could be approved; a design developed in 1919–1920 was taken up again after independence and confirmed, with alterations, by constitutional law on 19 January 1993.",
     sources: [
@@ -2849,6 +2880,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "National emblem of Cape Verde — Wikipedia", url: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
     ],
   },
+  "cw-arms": {
+    description: "Granted on 24 July 1964. The ship under full sail is a vessel of the Dutch West India Company, which settled Curaçao in 1634; the green laraha — the bitter Valencia orange whose peel gives the island's famous liqueur — stands for its flora and agriculture. The small central shield bears the three saltires of Amsterdam, the city that governed the colony, marking Curaçao's long tie to Amsterdam and the House of Orange-Nassau.",
+    sources: [
+      { title: "Coat of arms of Curaçao — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
+    ],
+  },
   "cy-arms": {
     description: "Every element is chosen, and two of them are the same idea twice: the white dove carrying an olive branch is peace, and the olive wreath framing the shield is peace again — a wish that carried real weight for an island independent in 1960 with a mixed Greek and Turkish population. The year 1960 records that independence from British rule. The shield's colour is the point most people miss: it is not gold but copper, specified as Pantone 1385 C, for the copper ore that Cyprus was famous for in antiquity — the island's name and the Latin word for copper, cuprum, are bound together.",
     sources: [
@@ -2963,6 +3000,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Seal of the Federated States of Micronesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
     ],
   },
+  "fo-arms": {
+    description: "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
+    sources: [
+      { title: "Coat of arms of the Faroe Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands" },
+    ],
+  },
   "fr-arms": {
     description: "France has no official coat of arms; this device, designed in 1913 for French diplomatic missions, is the closest thing and is used on passports and by embassies while remaining unofficial. The fasces at its centre is a Roman magistrate’s bundle of rods and axe — the classical symbol of the authority of the state and of justice, chosen by a republic that took its imagery from Rome rather than from monarchy. The oak branch stands for perpetuity and wisdom and the laurel for glory, and the ribbon carries Liberté, Égalité, Fraternité. The monarchy’s fleurs-de-lis are deliberately absent.",
     sources: [
@@ -3028,6 +3071,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Gibraltar's arms were granted by a Royal Warrant of Isabella I of Castile on 10 July 1502, during the Spanish period — the oldest continuously-used coat of arms of any British Overseas Territory. The red three-towered castle, drawn in the style of the arms of Castile, stands for Gibraltar's strength and its command of the Rock; the golden key hanging beneath it, the warrant said, marks Gibraltar as 'the key between these our kingdoms in the Eastern and Western Seas' — the sentinel that controls passage through the Strait. The flag flies these same arms as a banner.",
     sources: [
       { title: "Coat of arms of Gibraltar — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar" },
+    ],
+  },
+  "gl-arms": {
+    description: "Adopted by Greenland's Landsting on 1 May 1989. The white polar bear stands for the island's Arctic wildlife, and the blue shield for the Atlantic and Arctic oceans that wash it. The bear raises its LEFT forepaw — following the traditional Inuit belief that polar bears are left-handed — which sets Greenland's version apart from the Danish royal arms, where the bear raises its right.",
+    sources: [
+      { title: "Coat of arms of Greenland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland" },
     ],
   },
   "gm-arms": {
@@ -3748,6 +3797,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The triangle stands for the three branches of government — executive, legislative and judiciary — and for equality. Inside it the five volcanoes rising between the Pacific and the Caribbean are the five states of the Central American federation, not five Salvadoran mountains. Above them the red Phrygian cap on a staff is liberty, the rainbow is peace, and the date 15 DE SEPTIEMBRE DE 1821 is Central America's declaration of independence from Spain. The laurel wreath around the whole is divided into fourteen clusters for the country's fourteen departments, and the five flags behind it are again the five federated states; the motto beneath reads DIOS UNIÓN LIBERTAD.",
     sources: [
       { title: "Coat of arms of El Salvador — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_El_Salvador" },
+    ],
+  },
+  "sx-arms": {
+    description: "Adopted on 7 November 1982. At the centre stands the courthouse of Philipsburg, the island's civic heart; beside it the border monument recalls the peaceful boundary that has divided the island between Dutch and French halves since 1648, and the orange-yellow sage is the national flower. A rising sun of hope fills the background, and a brown pelican — the national bird — crests the shield. The motto Semper Progrediens means 'Always progressing'; the orange border marks the tie to the Dutch royal house.",
+    sources: [
+      { title: "Coat of arms of Sint Maarten — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten" },
     ],
   },
   "sy-arms": {

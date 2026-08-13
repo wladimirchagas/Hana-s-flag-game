@@ -82,6 +82,17 @@ export const SPECIAL_ENTITIES: Record<string, readonly SpecialEntity[]> = {
     { code: "GS", name: "South Georgia and the South Sandwich Islands", status: "british-overseas-territory", disputed: true },
     { code: "IO", name: "British Indian Ocean Territory", status: "british-overseas-territory", disputed: true },
   ],
+  DK: [
+    // Autonomous constituent countries of the Kingdom of Denmark (the rigsfællesskab).
+    { code: "GL", name: "Greenland", status: "constituent-country" },
+    { code: "FO", name: "Faroe Islands", status: "constituent-country" },
+  ],
+  NL: [
+    // Constituent countries of the Kingdom of the Netherlands.
+    { code: "AW", name: "Aruba", status: "constituent-country" },
+    { code: "CW", name: "Curaçao", status: "constituent-country" },
+    { code: "SX", name: "Sint Maarten", status: "constituent-country" },
+  ],
 };
 
 /** The neutral status badge text shown on an entity's group header. */
