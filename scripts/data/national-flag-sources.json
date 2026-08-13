@@ -25365,6 +25365,241 @@
           "fetched": "2026-08-13"
         }
       ]
+    },
+    "GI": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gi-official-national",
+          "category": "official",
+          "from": 1502,
+          "to": 9999,
+          "name": "Flag of Gibraltar",
+          "reuse": "flags/gi.svg",
+          "design": "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Gibraltar"
+        },
+        {
+          "id": "gi-current",
+          "category": "historical",
+          "from": 1502,
+          "to": 9999,
+          "name": "Flag of Gibraltar",
+          "reuse": "flags/gi.svg",
+          "design": "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Gibraltar"
+        },
+        {
+          "id": "gi-arms",
+          "category": "coatofarms",
+          "from": 1502,
+          "to": 9999,
+          "name": "Coat of arms of Gibraltar",
+          "commons": "Coat of arms of Gibraltar1.svg",
+          "file": "gi/gi-arms.svg",
+          "design": "Argent, upon a base gules a castle triple-towered gules ported and windowed sable, a golden key pendent from the portal.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar",
+          "meaning": {
+            "description": "Gibraltar's arms were granted by a Royal Warrant of Isabella I of Castile on 10 July 1502, during the Spanish period — the oldest continuously-used coat of arms of any British Overseas Territory. The red three-towered castle, drawn in the style of the arms of Castile, stands for Gibraltar's strength and its command of the Rock; the golden key hanging beneath it, the warrant said, marks Gibraltar as 'the key between these our kingdoms in the Eastern and Western Seas' — the sentinel that controls passage through the Strait. The flag flies these same arms as a banner.",
+            "sources": [
+              {
+                "title": "Coat of arms of Gibraltar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar"
+              }
+            ]
+          },
+          "sha256": "db0b032a866fdb6b7bcdfc61b681ec8511733e7e403cd44eb5e4d099ebf9ba96",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "BM": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "bm-official-national",
+          "category": "official",
+          "from": 1910,
+          "to": 9999,
+          "name": "Flag of Bermuda",
+          "reuse": "flags/bm.svg",
+          "design": "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bermuda"
+        },
+        {
+          "id": "bm-current",
+          "category": "historical",
+          "from": 1910,
+          "to": 9999,
+          "name": "Flag of Bermuda",
+          "reuse": "flags/bm.svg",
+          "design": "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bermuda"
+        },
+        {
+          "id": "bm-arms",
+          "category": "coatofarms",
+          "from": 1910,
+          "to": 9999,
+          "name": "Coat of arms of Bermuda",
+          "commons": "Coat of arms of Bermuda.svg",
+          "file": "bm/bm-arms.svg",
+          "design": "Argent, on a mount vert a lion sejant affronté gules supporting an antique shield azure charged with a representation of the wreck of the ship Sea Venture proper.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 4 October 1910 though in use since the 1620s. A red lion — the lion of England, marking Bermuda's tie to Britain — holds a shield showing the wreck of the Sea Venture, the flagship bound for Jamestown that Sir George Somers deliberately ran onto Bermuda's reefs in a 1609 hurricane; its 150 survivors founded the colony, so the shipwreck that stranded them is remembered as the island's origin. The motto Quo Fata Ferunt — 'Whither the Fates Carry Us' — recalls that the settlers reached Bermuda by chance of storm.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bermuda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda"
+              }
+            ]
+          },
+          "sha256": "91d5795480fef761971ca9bc9f48550bab4222f5accec2d90784b8604ad51653",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "KY": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ky-official-national",
+          "category": "official",
+          "from": 1958,
+          "to": 9999,
+          "name": "Flag of the Cayman Islands",
+          "reuse": "flags/ky.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands"
+        },
+        {
+          "id": "ky-current",
+          "category": "historical",
+          "from": 1958,
+          "to": 9999,
+          "name": "Flag of the Cayman Islands",
+          "reuse": "flags/ky.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands"
+        },
+        {
+          "id": "ky-arms",
+          "category": "coatofarms",
+          "from": 1958,
+          "to": 9999,
+          "name": "Coat of arms of the Cayman Islands",
+          "commons": "Coat of arms of the Cayman Islands.svg",
+          "file": "ky/ky-arms.svg",
+          "design": "A shield with three green stars over blue-and-white wavy bands, a gold lion passant guardant on red in chief; crest a green turtle upon a coil of rope before a gold pineapple; motto 'He hath founded it upon the seas'.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 14 May 1958. The three green stars are the three islands — Grand Cayman, Little Cayman and Cayman Brac — riding on blue-and-white wavy bands for the sea that surrounds them; the gold lion of England in the chief marks the British connection. Above the shield a green turtle recalls the islands' seafaring and turtling history, resting on a coil of rope for the traditional thatch-rope industry, with a pineapple behind it for the historic ties to Jamaica. The motto, from Psalm 24, 'He hath founded it upon the seas', speaks to both the islanders' Christian faith and their ocean setting.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Cayman Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands"
+              }
+            ]
+          },
+          "sha256": "480010d410cf5c7493c2a2d7736461b320c9c11c7ad76fda3786de4d69e54797",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "VG": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "vg-official-national",
+          "category": "official",
+          "from": 1960,
+          "to": 9999,
+          "name": "Flag of the British Virgin Islands",
+          "reuse": "flags/vg.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands"
+        },
+        {
+          "id": "vg-current",
+          "category": "historical",
+          "from": 1960,
+          "to": 9999,
+          "name": "Flag of the British Virgin Islands",
+          "reuse": "flags/vg.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands"
+        },
+        {
+          "id": "vg-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of the British Virgin Islands",
+          "commons": "Coat of arms of the British Virgin Islands.svg",
+          "file": "vg/vg-arms.svg",
+          "design": "Vert, a woman (Saint Ursula) robed argent holding a lit golden oil lamp, surrounded by eleven further golden lamps; motto VIGILATE.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands",
+          "meaning": {
+            "description": "Adopted on 15 November 1960 when the territory became a Crown colony. The green shield shows Saint Ursula — the islands' patron, after whom Columbus named them 'Las Once Mil Vírgenes', the eleven thousand virgins — holding a lit golden oil lamp, with eleven more lamps around her for the virgin companions martyred with her in legend. The Latin motto Vigilate, 'be vigilant', reads the lamps as a call to watchfulness, echoing the parable of the wise virgins who kept their lamps burning.",
+            "sources": [
+              {
+                "title": "Coat of arms of the British Virgin Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands"
+              }
+            ]
+          },
+          "sha256": "56362869af8467b807afe18090979d3e3f8b6e38e77ee9941457a6bed2942a07",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "FK": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "fk-official-national",
+          "category": "official",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of the Falkland Islands",
+          "reuse": "flags/fk.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands"
+        },
+        {
+          "id": "fk-current",
+          "category": "historical",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of the Falkland Islands",
+          "reuse": "flags/fk.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands"
+        },
+        {
+          "id": "fk-arms",
+          "category": "coatofarms",
+          "from": 1948,
+          "to": 9999,
+          "name": "Coat of arms of the Falkland Islands",
+          "commons": "Coat of arms of the Falkland Islands.svg",
+          "file": "fk/fk-arms.svg",
+          "design": "A ram standing on tussock grass above a sea of blue and white wavy lines bearing the ship Desire; motto 'DESIRE THE RIGHT'.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 29 September 1948. A ram standing on tussock grass — the islands' native vegetation — stands for sheep farming, historically the Falklands' principal industry; below, on a blue-and-white wavy sea, sails the Desire, the ship of the English navigator John Davis, credited with sighting the islands in 1592. The motto 'Desire the Right' plays on the ship's name, and the arms flew throughout except during the brief Argentine occupation of 1982.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Falkland Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands"
+              }
+            ]
+          },
+          "sha256": "5ea4e7bd85a9729268ff05a3d51876edcf8b355320b4d609669596fff3c25d6f",
+          "fetched": "2026-08-13"
+        }
+      ]
     }
   }
 }

@@ -65,6 +65,13 @@ export const SPECIAL_ENTITIES: Record<string, readonly SpecialEntity[]> = {
     { code: "JE", name: "Jersey", status: "crown-dependency" },
     { code: "GG", name: "Guernsey", status: "crown-dependency" },
     { code: "IM", name: "Isle of Man", status: "crown-dependency" },
+    // Overseas Territories — Gibraltar (claimed by Spain) and the Falklands
+    // (claimed by Argentina) carry the neutral "Disputed" badge as well.
+    { code: "GI", name: "Gibraltar", status: "british-overseas-territory", disputed: true },
+    { code: "BM", name: "Bermuda", status: "british-overseas-territory" },
+    { code: "KY", name: "Cayman Islands", status: "british-overseas-territory" },
+    { code: "VG", name: "British Virgin Islands", status: "british-overseas-territory" },
+    { code: "FK", name: "Falkland Islands", status: "british-overseas-territory", disputed: true },
   ],
 };
 
