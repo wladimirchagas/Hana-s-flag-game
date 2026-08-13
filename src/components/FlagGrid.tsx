@@ -33,6 +33,11 @@ import {
   type FlagAspectRatio,
 } from "../lib/flagAspectRatio";
 import { normalizeForSearch } from "../lib/searchNormalize";
+import {
+  GRID_CONTENT_TYPE_LABELS,
+  GRID_CONTENT_TYPE_ORDER,
+  type GridContentType,
+} from "../lib/gridContentType";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -60,6 +65,11 @@ export type FlagGridProps = {
   /** True only when the "today" era is selected (modern world map).
    *  TODAY_ONLY_MODES are hidden from the dropdown for historical eras. */
   isModernEra?: boolean;
+  /** Which image the tiles show — controlled by the parent (LearnPage) so the
+   *  detail panel above can show the same coat of arms / passport. */
+  contentType: GridContentType;
+  /** Called when the user picks a different image type from the "Show" dropdown. */
+  onContentTypeChange: (type: GridContentType) => void;
 };
 
 type GroupMode =
@@ -73,36 +83,6 @@ type GroupMode =
   | "similarity"
   | "drive-side"
   | "aspect-ratio";
-
-// What image each tile shows. "flag" is the original behaviour; the other two
-// swap in the country's coat of arms / passport cover (same sourced images the
-// "National symbols" tab uses). Only offered on the modern world map — historical
-// polities carry no coat-of-arms or passport data.
-type ContentType = "flag" | "coatofarms" | "passport";
-
-const CONTENT_TYPE_LABELS: Record<ContentType, string> = {
-  flag: "National flags",
-  coatofarms: "Coats of arms",
-  passport: "Passports",
-};
-
-const CONTENT_TYPE_ORDER: readonly ContentType[] = [
-  "flag",
-  "coatofarms",
-  "passport",
-];
-
-const CONTENT_TYPE_STORAGE_KEY = "flagGame.learn.contentType";
-
-function loadStoredContentType(): ContentType {
-  try {
-    const s = localStorage.getItem(CONTENT_TYPE_STORAGE_KEY);
-    if (s && s in CONTENT_TYPE_LABELS) return s as ContentType;
-  } catch {
-    /* localStorage unavailable — fall through to the default */
-  }
-  return "flag";
-}
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -155,13 +135,10 @@ export function FlagGrid({
   onSelect,
   resolveFlag,
   isModernEra = false,
+  contentType,
+  onContentTypeChange,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
-  // Which image the tiles show: national flag (default), coat of arms, or
-  // passport cover. Modern era only — reset to "flag" for historical eras below.
-  const [contentType, setContentType] = useState<ContentType>(
-    loadStoredContentType,
-  );
   // Free-text filter typed by the user — narrows the grid by country/polity
   // name so you don't have to scroll ~195 tiles or leave the grid to use the
   // map search. Composes with the grouping above.
@@ -178,26 +155,13 @@ export function FlagGrid({
     }
   };
 
-  const chooseContentType = (type: ContentType) => {
-    setContentType(type);
-    try {
-      localStorage.setItem(CONTENT_TYPE_STORAGE_KEY, type);
-    } catch {
-      /* ignore — persistence is best-effort */
-    }
-    // The flag-appearance groupings (shape/family/colour/similarity/aspect
-    // ratio) and driving side describe a FLAG (or a car), not a coat of arms or
-    // a passport, so leaving one active would group symbols by an attribute they
-    // don't have. Fall back to "No grouping" when switching to those views.
-    if (type !== "flag" && TODAY_ONLY_MODES.has(groupMode)) {
-      setGroupMode("none");
-    }
-  };
-
   // Coat of arms / passport data only exists for the modern world map. Force the
   // flag view for any historical era, and reset a stored symbol preference so a
-  // returning visitor doesn't land on an empty symbol grid.
-  const effectiveContentType: ContentType = isModernEra ? contentType : "flag";
+  // returning visitor doesn't land on an empty symbol grid. (The content type is
+  // owned by LearnPage — see gridContentType.ts — so the detail panel above
+  // shows the same image; the group-mode reset when switching to a symbol view
+  // is handled by the effect below, whoever triggers the change.)
+  const effectiveContentType: GridContentType = isModernEra ? contentType : "flag";
   // Codes the player has unlocked via the Hana's Game streak reward, shown as a
   // "Learned" badge. Held in state and re-read whenever the flag data changes —
   // including when it syncs DOWN from the active profile on another device — so
@@ -225,10 +189,10 @@ export function FlagGrid({
     }
   }, [isModernEra, groupMode]);
 
-  // Guard the load-time combination too: a returning visitor could have both a
-  // stored symbol content type AND a stored flag-appearance grouping, which
-  // chooseContentType only reconciles on an explicit switch. Keep them
-  // consistent so the active grouping is always one the dropdown still offers.
+  // A returning visitor could have both a stored symbol content type AND a
+  // stored flag-appearance grouping. Reconcile them whenever either changes, so
+  // the active grouping is always one the dropdown still offers for this view
+  // (this covers both the initial load and a later switch of the "Show" type).
   useEffect(() => {
     if (effectiveContentType !== "flag" && TODAY_ONLY_MODES.has(groupMode)) {
       setGroupMode("none");
@@ -423,7 +387,7 @@ export function FlagGrid({
   const sectionTitle =
     effectiveContentType === "flag"
       ? "Flags of this era"
-      : CONTENT_TYPE_LABELS[effectiveContentType];
+      : GRID_CONTENT_TYPE_LABELS[effectiveContentType];
 
   if (entries.length === 0) {
     return null;
@@ -468,13 +432,13 @@ export function FlagGrid({
               <select
                 value={contentType}
                 onChange={(e) =>
-                  chooseContentType(e.target.value as ContentType)
+                  onContentTypeChange(e.target.value as GridContentType)
                 }
                 className="flag-grid__select"
               >
-                {CONTENT_TYPE_ORDER.map((t) => (
+                {GRID_CONTENT_TYPE_ORDER.map((t) => (
                   <option key={t} value={t}>
-                    {CONTENT_TYPE_LABELS[t]}
+                    {GRID_CONTENT_TYPE_LABELS[t]}
                   </option>
                 ))}
               </select>

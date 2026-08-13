@@ -22,7 +22,18 @@ import {
 import { FlagGrid } from "../components/FlagGrid";
 import { SubdivisionFlagTabs } from "../components/SubdivisionFlagTabs";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
-import { coatOfArmsPath, passportPath } from "../lib/nationalSymbolImages";
+import {
+  coatOfArmsPath,
+  passportPath,
+  nationalSymbolEntry,
+} from "../lib/nationalSymbolImages";
+import { NATIONAL_FLAG_MEANINGS } from "../data/nationalFlags";
+import { meaningLabel, symbolNoun } from "../lib/nationalFlags";
+import {
+  loadGridContentType,
+  saveGridContentType,
+  type GridContentType,
+} from "../lib/gridContentType";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { FLAG_COLORS } from "../lib/flagColors";
@@ -325,6 +336,17 @@ export default function LearnPage() {
   const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
   const [zoomedFlagUrl, setZoomedFlagUrl] = useState<string | null>(null);
   const [flagLoadFailed, setFlagLoadFailed] = useState(false);
+  // What the flag grid — and, in step with it, the detail panel's image +
+  // explainer — shows: the national flag (default), the coat of arms, or the
+  // passport. Owned here (not in FlagGrid) so clicking a coat-of-arms/passport
+  // tile swaps the panel above to that symbol too. See lib/gridContentType.ts.
+  const [gridContentType, setGridContentType] = useState<GridContentType>(
+    loadGridContentType,
+  );
+  const chooseGridContentType = (type: GridContentType) => {
+    setGridContentType(type);
+    saveGridContentType(type);
+  };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
   const [anthemTarget, setAnthemTarget] = useState<{
@@ -1207,14 +1229,30 @@ export default function LearnPage() {
   );
 
   const flagUrl = display ? selectionFlag(display, baseUrl) : null;
-  // Reset load-failed state whenever the displayed entity changes.
+  // When the grid is showing coats of arms / passports, the detail panel shows
+  // the SAME symbol for the selected modern country instead of its flag — its
+  // image, and its own explainer — while every other row stays put. Historical
+  // polities have no symbols, so the panel only ever swaps in the modern era.
+  const effectiveGridContentType: GridContentType = isModernEra
+    ? gridContentType
+    : "flag";
+  const panelSymbol =
+    display?.kind === "modern" && effectiveGridContentType !== "flag"
+      ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
+      : null;
+  // The image the panel actually shows: the symbol when one is selected and
+  // bundled, otherwise the national flag (a country with no coat of arms /
+  // passport falls back to its flag rather than a blank panel).
+  const displayFlagUrl =
+    panelSymbol?.path ? resolveFlag(panelSymbol.path) : flagUrl;
+  // Reset load-failed state whenever the displayed image changes.
   // NOTE: this ref MUST be declared before the loadError early-return below —
   // hooks after a conditional return violate the Rules of Hooks, and when
   // loadError flipped on, React threw "Rendered fewer hooks than expected"
   // and unmounted the entire app (blank page) instead of showing the error card.
   const prevFlagUrlRef = useRef<string | null>(null);
-  if (prevFlagUrlRef.current !== flagUrl) {
-    prevFlagUrlRef.current = flagUrl;
+  if (prevFlagUrlRef.current !== displayFlagUrl) {
+    prevFlagUrlRef.current = displayFlagUrl;
     // Sync reset without triggering an extra render cycle
     if (flagLoadFailed) setFlagLoadFailed(false);
   }
@@ -1234,7 +1272,9 @@ export default function LearnPage() {
     );
   }
   const flagPngFallback =
-    display?.kind === "modern" && !FLAGCDN_FALLBACK_EXCLUDED.has(display.country.code)
+    !panelSymbol &&
+    display?.kind === "modern" &&
+    !FLAGCDN_FALLBACK_EXCLUDED.has(display.country.code)
       ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
       : null
 
@@ -1261,9 +1301,9 @@ export default function LearnPage() {
   // with the other detail labels), and the flag spans the full widget width
   // below it (never wider than the widget), with its "click to enlarge" caption
   // left-aligned. Same for national + subnational.
-  const flagRow = (flagButton: React.ReactNode) => (
+  const flagRow = (flagButton: React.ReactNode, label = "Flag") => (
     <div className="learn-fs__flag-head">
-      <span className="entity-summary__label learn-fs__flag-label">Flag</span>
+      <span className="entity-summary__label learn-fs__flag-label">{label}</span>
       {flagButton}
     </div>
   );
@@ -1602,17 +1642,21 @@ export default function LearnPage() {
                     it had no national flag of its own at this date.
                   </p>
                 )}
-                {flagUrl && !flagLoadFailed ? (
+                {displayFlagUrl && !flagLoadFailed ? (
                   <div className="learn-fs__flag-box">
                     {flagRow(
                       <button
                         type="button"
                         className="learn-fs__flag"
-                        onClick={() => setZoomedFlagUrl(flagUrl)}
-                        aria-label={`Enlarge ${selectionName(display, eraId)} flag`}
+                        onClick={() => setZoomedFlagUrl(displayFlagUrl)}
+                        aria-label={
+                          panelSymbol
+                            ? `Enlarge ${panelSymbol.name}`
+                            : `Enlarge ${selectionName(display, eraId)} flag`
+                        }
                       >
                         <img
-                          src={flagUrl}
+                          src={displayFlagUrl}
                           alt=""
                           className="learn-fs__flag-img"
                           draggable={false}
@@ -1629,10 +1673,26 @@ export default function LearnPage() {
                           ⤢ Click to enlarge
                         </span>
                       </button>,
+                      // A symbol carries its own noun so the block never labels a
+                      // coat of arms or a passport "Flag".
+                      panelSymbol ? symbolNoun(panelSymbol.category) : "Flag",
                     )}
-                    {display.kind === "modern" && (
-                      <FlagMeaning code={display.country.code} />
-                    )}
+                    {display.kind === "modern" &&
+                      (panelSymbol ? (
+                        // The explainer follows what's displayed: the symbol's own
+                        // sourced description + meaning (same wording as the National
+                        // symbols tab), not the national flag's.
+                        <>
+                          <p className="learn-fs__flag-design">{panelSymbol.design}</p>
+                          <FlagMeaning
+                            code={panelSymbol.id}
+                            meanings={NATIONAL_FLAG_MEANINGS}
+                            label={meaningLabel(panelSymbol.category)}
+                          />
+                        </>
+                      ) : (
+                        <FlagMeaning code={display.country.code} />
+                      ))}
                   </div>
                 ) : display.kind === "historical" && display.noFlagReason ? (
                   // Curated, sourced explanation for THIS polity at THIS date — always
@@ -2195,6 +2255,8 @@ export default function LearnPage() {
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}
+          contentType={gridContentType}
+          onContentTypeChange={chooseGridContentType}
         />
       )}
     </div>

@@ -13,16 +13,24 @@
  *   - passport: the ordinary passport, which leads the passport section (rule 4a).
  * A `noImageReason` entry (no `path`) is skipped — there is no picture to show.
  */
-import { NATIONAL_FLAGS } from "../data/nationalFlags";
+import { NATIONAL_FLAGS, type NationalFlag } from "../data/nationalFlags";
 
 const coatOfArmsByCode = new Map<string, string>();
 const passportByCode = new Map<string, string>();
+const coatOfArmsEntryByCode = new Map<string, NationalFlag>();
+const passportEntryByCode = new Map<string, NationalFlag>();
 
 for (const [code, flags] of Object.entries(NATIONAL_FLAGS)) {
   const arms = flags.find((f) => f.category === "coatofarms" && f.path);
-  if (arms?.path) coatOfArmsByCode.set(code, arms.path);
+  if (arms?.path) {
+    coatOfArmsByCode.set(code, arms.path);
+    coatOfArmsEntryByCode.set(code, arms);
+  }
   const passport = flags.find((f) => f.category === "passport" && f.path);
-  if (passport?.path) passportByCode.set(code, passport.path);
+  if (passport?.path) {
+    passportByCode.set(code, passport.path);
+    passportEntryByCode.set(code, passport);
+  }
 }
 
 /** Relative image path (BASE-prefixed by the grid's resolver) for a country's
@@ -34,4 +42,18 @@ export function coatOfArmsPath(code: string): string | null {
 /** Relative image path for a country's ordinary passport cover, or null. */
 export function passportPath(code: string): string | null {
   return passportByCode.get(code) ?? null;
+}
+
+/**
+ * The full national-symbol entry (name, design line, meaning id) for a country's
+ * coat of arms / passport — the SAME entry `coatOfArmsPath`/`passportPath` take
+ * their image from, so the grid tile and the detail panel can never show one
+ * image with another's caption. null when the country has no such symbol bundled.
+ */
+export function nationalSymbolEntry(
+  code: string,
+  type: "coatofarms" | "passport",
+): NationalFlag | null {
+  const map = type === "coatofarms" ? coatOfArmsEntryByCode : passportEntryByCode;
+  return map.get(code) ?? null;
 }
