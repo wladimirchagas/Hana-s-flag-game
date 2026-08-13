@@ -74,6 +74,36 @@ type GroupMode =
   | "drive-side"
   | "aspect-ratio";
 
+// What image each tile shows. "flag" is the original behaviour; the other two
+// swap in the country's coat of arms / passport cover (same sourced images the
+// "National symbols" tab uses). Only offered on the modern world map — historical
+// polities carry no coat-of-arms or passport data.
+type ContentType = "flag" | "coatofarms" | "passport";
+
+const CONTENT_TYPE_LABELS: Record<ContentType, string> = {
+  flag: "National flags",
+  coatofarms: "Coats of arms",
+  passport: "Passports",
+};
+
+const CONTENT_TYPE_ORDER: readonly ContentType[] = [
+  "flag",
+  "coatofarms",
+  "passport",
+];
+
+const CONTENT_TYPE_STORAGE_KEY = "flagGame.learn.contentType";
+
+function loadStoredContentType(): ContentType {
+  try {
+    const s = localStorage.getItem(CONTENT_TYPE_STORAGE_KEY);
+    if (s && s in CONTENT_TYPE_LABELS) return s as ContentType;
+  } catch {
+    /* localStorage unavailable — fall through to the default */
+  }
+  return "flag";
+}
+
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
   alpha: "A–Z",
@@ -127,6 +157,11 @@ export function FlagGrid({
   isModernEra = false,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
+  // Which image the tiles show: national flag (default), coat of arms, or
+  // passport cover. Modern era only — reset to "flag" for historical eras below.
+  const [contentType, setContentType] = useState<ContentType>(
+    loadStoredContentType,
+  );
   // Free-text filter typed by the user — narrows the grid by country/polity
   // name so you don't have to scroll ~195 tiles or leave the grid to use the
   // map search. Composes with the grouping above.
@@ -142,6 +177,27 @@ export function FlagGrid({
       /* ignore — persistence is best-effort */
     }
   };
+
+  const chooseContentType = (type: ContentType) => {
+    setContentType(type);
+    try {
+      localStorage.setItem(CONTENT_TYPE_STORAGE_KEY, type);
+    } catch {
+      /* ignore — persistence is best-effort */
+    }
+    // The flag-appearance groupings (shape/family/colour/similarity/aspect
+    // ratio) and driving side describe a FLAG (or a car), not a coat of arms or
+    // a passport, so leaving one active would group symbols by an attribute they
+    // don't have. Fall back to "No grouping" when switching to those views.
+    if (type !== "flag" && TODAY_ONLY_MODES.has(groupMode)) {
+      setGroupMode("none");
+    }
+  };
+
+  // Coat of arms / passport data only exists for the modern world map. Force the
+  // flag view for any historical era, and reset a stored symbol preference so a
+  // returning visitor doesn't land on an empty symbol grid.
+  const effectiveContentType: ContentType = isModernEra ? contentType : "flag";
   // Codes the player has unlocked via the Hana's Game streak reward, shown as a
   // "Learned" badge. Held in state and re-read whenever the flag data changes —
   // including when it syncs DOWN from the active profile on another device — so
@@ -168,6 +224,16 @@ export function FlagGrid({
       setGroupMode("none");
     }
   }, [isModernEra, groupMode]);
+
+  // Guard the load-time combination too: a returning visitor could have both a
+  // stored symbol content type AND a stored flag-appearance grouping, which
+  // chooseContentType only reconciles on an explicit switch. Keep them
+  // consistent so the active grouping is always one the dropdown still offers.
+  useEffect(() => {
+    if (effectiveContentType !== "flag" && TODAY_ONLY_MODES.has(groupMode)) {
+      setGroupMode("none");
+    }
+  }, [effectiveContentType, groupMode]);
 
   // Apply the free-text name filter before grouping. A trimmed, case- and
   // accent-insensitive substring match against the entry name ("sao" matches
@@ -345,6 +411,20 @@ export function FlagGrid({
     return list.map(([heading, items]) => ({ heading, items }));
   }, [filteredEntries, groupMode]);
 
+  // The flag-appearance groupings (shape/family/colour/similarity/aspect ratio)
+  // and driving side describe a FLAG or a car — never a coat of arms or a
+  // passport — so they are offered only in the modern flag view. Everything else
+  // (A–Z, continent, sub-continent) applies to any country-level item.
+  const groupModeAvailable = (m: GroupMode): boolean =>
+    TODAY_ONLY_MODES.has(m)
+      ? isModernEra && effectiveContentType === "flag"
+      : true;
+
+  const sectionTitle =
+    effectiveContentType === "flag"
+      ? "Flags of this era"
+      : CONTENT_TYPE_LABELS[effectiveContentType];
+
   if (entries.length === 0) {
     return null;
   }
@@ -353,7 +433,7 @@ export function FlagGrid({
     <section className="flag-grid" aria-labelledby="flag-grid-heading">
       <header className="flag-grid__header">
         <h2 className="flag-grid__title" id="flag-grid-heading">
-          Flags of this era
+          {sectionTitle}
           <span className="flag-grid__count">
             {filter.trim() && filteredEntries.length !== entries.length
               ? `${filteredEntries.length} / ${entries.length}`
@@ -368,8 +448,8 @@ export function FlagGrid({
               className="flag-grid__filter-input"
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
-              placeholder="Filter flags…"
-              aria-label="Filter flags by name"
+              placeholder="Filter…"
+              aria-label="Filter by name"
             />
             {filter && (
               <button
@@ -382,6 +462,24 @@ export function FlagGrid({
               </button>
             )}
           </div>
+          {isModernEra && (
+            <label className="flag-grid__group-select">
+              <span className="flag-grid__group-select-label">Show:</span>
+              <select
+                value={contentType}
+                onChange={(e) =>
+                  chooseContentType(e.target.value as ContentType)
+                }
+                className="flag-grid__select"
+              >
+                {CONTENT_TYPE_ORDER.map((t) => (
+                  <option key={t} value={t}>
+                    {CONTENT_TYPE_LABELS[t]}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
           <label className="flag-grid__group-select">
             <span className="flag-grid__group-select-label">Group by:</span>
             <select
@@ -390,7 +488,7 @@ export function FlagGrid({
               className="flag-grid__select"
             >
               {(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
-                .filter((m) => isModernEra || !TODAY_ONLY_MODES.has(m))
+                .filter(groupModeAvailable)
                 .map((m) => (
                   <option key={m} value={m}>
                     {GROUP_MODE_LABELS[m]}
@@ -403,7 +501,7 @@ export function FlagGrid({
 
       {filteredEntries.length === 0 && (
         <p className="flag-grid__no-match">
-          No flags match “{filter.trim()}”.{" "}
+          No matches for “{filter.trim()}”.{" "}
           <button
             type="button"
             className="flag-grid__no-match-clear"
@@ -427,7 +525,16 @@ export function FlagGrid({
           <ul className="flag-grid__list">
             {g.items.map((item) => {
               const active = item.id === selectedId;
-              const url = item.flag ? resolveFlag(item.flag) : null;
+              // Which image this tile shows depends on the "Show" dropdown.
+              // A country with no coat of arms / passport bundled renders the
+              // empty placeholder for that view (never an invented image).
+              const rawImage =
+                effectiveContentType === "coatofarms"
+                  ? item.coatOfArms ?? null
+                  : effectiveContentType === "passport"
+                    ? item.passport ?? null
+                    : item.flag;
+              const url = rawImage ? resolveFlag(rawImage) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
               // groups. Make the React key + ref key unique per
@@ -477,9 +584,14 @@ export function FlagGrid({
                               // codes where flagcdn serves a politically incorrect
                               // flag (AF: pre-2021 Republic flag). Those show the
                               // empty placeholder rather than the wrong flag.
+                              // flagcdn only serves FLAGS, so this fallback is
+                              // skipped for the coat-of-arms / passport views —
+                              // there it would show the national flag, which is the
+                              // wrong image for the tile.
                               const code = item.id.toLowerCase();
                               const png = `https://flagcdn.com/${code}.png`;
                               if (
+                                effectiveContentType === "flag" &&
                                 item.id.toUpperCase() !== "AF" &&
                                 !img.dataset.fellBack &&
                                 img.src !== png

@@ -45,6 +45,13 @@ export type FlagListEntry = {
    *  see CLAUDE.md "Country widget information must never be reduced").
    *  Undefined for historical polities, where a modern capital doesn't apply. */
   capital?: string;
+  /** Resolved coat-of-arms image URL for the grid's "Coats of arms" view.
+   *  null / undefined when the country has no bundled arms (or for historical
+   *  polities, which have no national-symbols data). */
+  coatOfArms?: string | null;
+  /** Resolved passport-cover image URL for the grid's "Passports" view.
+   *  null / undefined when the country has no bundled passport. */
+  passport?: string | null;
 };
 
 /**

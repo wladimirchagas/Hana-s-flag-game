@@ -22,6 +22,7 @@ import {
 import { FlagGrid } from "../components/FlagGrid";
 import { SubdivisionFlagTabs } from "../components/SubdivisionFlagTabs";
 import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
+import { coatOfArmsPath, passportPath } from "../lib/nationalSymbolImages";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { FLAG_COLORS } from "../lib/flagColors";
@@ -933,6 +934,8 @@ export default function LearnPage() {
         driveSide: getDriveSide(c.code),
         aspectRatio: FLAG_ASPECT_RATIOS[c.code],
         capital: c.capital,
+        coatOfArms: coatOfArmsPath(c.code),
+        passport: passportPath(c.code),
       }));
     }
     const out: FlagListEntry[] = [];

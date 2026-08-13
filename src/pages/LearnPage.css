@@ -2666,14 +2666,24 @@
     font-size: 0.82rem;
     padding: 0.32rem 1.85rem 0.32rem 0.7rem;
   }
-  /* Give the controls their own full-width row under the title so the filter
-     and "Group by" sit together on one line with room to shrink. */
+  /* Give the controls their own full-width row under the title. With the
+     "Show" dropdown added there can be three controls (filter + Show + Group
+     by), which no longer fit on one phone-width line — so allow wrapping: the
+     filter takes its own row, and the two selects share the row beneath it. */
   .flag-grid__controls {
     width: 100%;
     flex: 1 1 100%;
+    flex-wrap: wrap;
+  }
+  .flag-grid__filter {
+    flex: 1 1 100%;
   }
   .flag-grid__group-select {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+  .flag-grid__select {
+    max-width: 100%;
   }
 
   /* Hierarchy table — smaller thumb/text so all 3 columns keep fitting
