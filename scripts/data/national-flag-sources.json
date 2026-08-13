@@ -5132,6 +5132,45 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Germany"
         },
         {
+          "id": "de-east-germany",
+          "category": "historical",
+          "from": 1959,
+          "to": 1990,
+          "name": "Flag of East Germany",
+          "commons": "Flag of East Germany.svg",
+          "file": "de/east-germany.svg",
+          "design": "The black-red-gold tricolour charged with the state emblem of the German Democratic Republic — a hammer and a pair of compasses within a ring of rye. Used from 1959; before that East Germany flew the plain tricolour. East Germany reunified with the Federal Republic in 1990.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_East_Germany",
+          "sha256": "a56cc5793f494284e649b5fcbfae6195fb1fe7cfe177eb9c7cacf32e2d9b585f",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "de-nazi",
+          "category": "historical",
+          "from": 1935,
+          "to": 1945,
+          "name": "Flag of Germany (1935–1945)",
+          "commons": "Flag of Germany (1935–1945).svg",
+          "file": "de/germany-1935.svg",
+          "design": "A red field bearing a white disc charged with a black swastika. Under Nazi rule it was made the sole national flag of Germany in 1935 and flown until the regime's defeat in 1945, when it was abolished.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Germany",
+          "sha256": "0b33cd62cebd0ffa8cbd848a8d68957b407cdf53f29def4a0610d8a86db3b153",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "de-empire",
+          "category": "historical",
+          "from": 1867,
+          "to": 1918,
+          "name": "Flag of the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "de/germany-1867.svg",
+          "design": "The black-white-red horizontal tricolour, first of the North German Confederation from 1867 and then of the German Empire from 1871, flown until the empire fell in 1918.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Germany",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "de-state",
           "category": "civilstate",
           "name": "State flag of Germany",

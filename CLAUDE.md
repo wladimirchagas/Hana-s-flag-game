@@ -1331,9 +1331,16 @@ described its flag), the Orange Free State, Nazi Germany. Auditing every era fou
 ### Rules
 
 1. **`PolityInfo.noFlagReason` is the ONLY place a reason may come from.** It is one sourced sentence,
-   rendered verbatim. Say what actually flew and why it is not shown ("the swastika banner, which this
-   game does not display"; "a plain red flag — the green pentagram was added only in 1915"). Same
+   rendered verbatim. Say what actually flew and why it is not shown ("a plain red flag — the green
+   pentagram was added only in 1915"; "no period image of the crowned version is bundled"). Same
    sourcing discipline as every flag, anthem and population rule here: never invent, never guess.
+   **This game does NOT suppress a flag for its modern connotations.** The point is to be educational
+   and neutral: where a real period flag exists it is SHOWN in period, negative associations and all —
+   Nazi Germany's 1935–1945 flag flies on the 1938 map, exactly as museums and textbooks show it. A
+   `noFlagReason` is for a flag that is genuinely un-bundled (no free/period image, a crowned variant
+   nobody has digitised), never a flag the project has chosen not to display. (Owner direction,
+   2026-08: an earlier agent hard-coded a "does not display the swastika" policy that was never
+   requested; it is removed.)
 2. **The fallback line must stay causeless.** It reads "No flag shown — no period-accurate flag for
    {polity} in {era} is bundled." Never reintroduce "predates modern flag design", "none survives", or
    any other phrasing that explains a blank the app cannot actually explain. A polity with no registry
@@ -1364,7 +1371,7 @@ described its flag), the Orange Free State, Nazi Germany. Auditing every era fou
    sourced reason in `FALSE_SUBJECTO` and resolved through `eraRuler()`; never read `SUBJECTO`
    directly, and never "fix" one by inventing a replacement ruler.
 7. **Verify in the running app** (the mandatory visual-verification rule applies): open **1938** and
-   confirm Germany explains the swastika banner rather than claiming it predates flags, that the
+   confirm Germany shows its actual 1935–1945 national flag in period (not a blank), that the
    Netherlands, Belgium, Romania and Czechoslovakia now show flags, and open **1900** and confirm
    Brazil is labelled Brazil (not "Kingdom of Brazil"), carries a note and population, and explains
    its own blank.
