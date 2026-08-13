@@ -1555,6 +1555,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "na-arms", category: "coatofarms", name: "Coat of arms of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-arms.svg", design: "The national arms, adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     { id: "na-passport", category: "passport", name: "Passport of Namibia", path: "national-flags/na/na-passport.webp", design: "The cover of the Namibia passport.", source: "https://gicg.net/passport/na/" },
   ],
+  "NC": [
+    { id: "nc-kanak", category: "official", name: "Kanak flag (FLNKS)", from: 1980, to: 9999, path: "flags/nc.svg", design: "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).", source: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
+    { id: "nc-current", category: "historical", name: "Kanak flag (FLNKS)", from: 1980, to: 9999, path: "flags/nc.svg", design: "The FLNKS flag, co-flown with the French tricolour since a contested 2010 Congress vote.", source: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
+  ],
   "NE": [
     { id: "ne-official-national", category: "official", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
     { id: "ne-current", category: "historical", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "Orange, white and green horizontal bands with an orange disc at the centre — orange for the Sahara, white for purity, green for the fertile south, the disc for the sun.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
@@ -1681,6 +1685,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pe-president", category: "standard", name: "Presidential standard of Peru", path: "national-flags/pe/peru-president.svg", design: "A white field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
     { id: "pe-arms", category: "coatofarms", name: "National coat of arms of Peru", from: 1825, to: 9999, path: "national-flags/pe/peru-arms.svg", design: "A shield of three fields — a vicuña, a cinchona tree and a cornucopia spilling coins — between a palm and a laurel branch beneath a civic crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     { id: "pe-passport", category: "passport", name: "Passport of Peru", path: "national-flags/pe/pe-passport.webp", design: "The cover of the Peru passport.", source: "https://gicg.net/passport/pe/" },
+  ],
+  "PF": [
+    { id: "pf-official-national", category: "official", name: "Flag of French Polynesia", from: 1984, to: 9999, path: "flags/pf.svg", design: "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.", source: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
+    { id: "pf-current", category: "historical", name: "Flag of French Polynesia", from: 1984, to: 9999, path: "flags/pf.svg", design: "Adopted in 1984: the canoe-and-sun emblem on a red-white-red field.", source: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
   ],
   "PG": [
     { id: "pg-official-national", category: "official", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag, adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
@@ -3553,6 +3561,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Namibia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     ],
   },
+  "nc-kanak": {
+    description: "New Caledonia has no single official flag: the French tricolour was its only official flag until 2010, when the Congress passed a non-binding proposal for the tricolour and this Kanak flag to fly together — a compromise that carries no legal force and remains contested, some communities flying both and others only the tricolour. The Kanak flag was adopted by the pro-independence FLNKS in 1980: blue is the sky and the Pacific, red the blood shed by the Kanaks in their struggle for independence and unity, green the land and the ancestors buried in it; the yellow disc is the sun, bearing a black flèche faîtière — the carved arrow that crowns the roof of a Kanak house, thrust through tutut shells.",
+    sources: [
+      { title: "Flags of New Caledonia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
+    ],
+  },
   "ne-arms": {
     description: "On the green shield four gold devices name the country's peoples and livelihoods: a sun; a spear flanked by two Tuareg swords (takoba); three heads of millet, the staple grain; and the head of a zebu, for the herding life. Four national flags stand behind. The motto is Fraternité, Travail, Progrès — “Fraternity, Work, Progress.”",
     sources: [
@@ -3635,6 +3649,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The 1825 law defines the shield as three fields standing for the riches of Peru in the three natural kingdoms: a vicuña on light blue for the animal kingdom, a cinchona tree on white for the vegetable — the tree whose bark gave the world quinine — and, on the smaller red field below, a cornucopia spilling coins for the mineral. The palm branch on one side and the laurel on the other, tied with a red and white ribbon, together with the holm-oak civic crown above, stand for victory and glory.",
     sources: [
       { title: "Coat of arms of Peru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
+    ],
+  },
+  "pf-official-national": {
+    description: "Officially adopted by the Assembly of French Polynesia on 23 November 1984 and regulated by decree in 1985. Red and white are the traditional Polynesian colours. At the centre a Polynesian outrigger canoe rides the waves, carrying five stars for the territory's five island groups (and for its crew); below, blue-and-white waves are the sea, and above, golden rays are the sun. The design was offered as a symbol of 'the spirit of freedom, responsibility and initiative of a people turned towards the future'.",
+    sources: [
+      { title: "Flag of French Polynesia — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
     ],
   },
   "pg-arms": {

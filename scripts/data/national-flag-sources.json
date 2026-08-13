@@ -26304,6 +26304,74 @@
           "fetched": "2026-08-13"
         }
       ]
+    },
+    "PF": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "pf-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of French Polynesia",
+          "reuse": "flags/pf.svg",
+          "design": "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia",
+          "meaning": {
+            "description": "Officially adopted by the Assembly of French Polynesia on 23 November 1984 and regulated by decree in 1985. Red and white are the traditional Polynesian colours. At the centre a Polynesian outrigger canoe rides the waves, carrying five stars for the territory's five island groups (and for its crew); below, blue-and-white waves are the sea, and above, golden rays are the sun. The design was offered as a symbol of 'the spirit of freedom, responsibility and initiative of a people turned towards the future'.",
+            "sources": [
+              {
+                "title": "Flag of French Polynesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pf-current",
+          "category": "historical",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of French Polynesia",
+          "reuse": "flags/pf.svg",
+          "design": "Adopted in 1984: the canoe-and-sun emblem on a red-white-red field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia"
+        }
+      ]
+    },
+    "NC": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "nc-kanak",
+          "category": "official",
+          "from": 1980,
+          "to": 9999,
+          "name": "Kanak flag (FLNKS)",
+          "reuse": "flags/nc.svg",
+          "design": "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).",
+          "source": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia",
+          "meaning": {
+            "description": "New Caledonia has no single official flag: the French tricolour was its only official flag until 2010, when the Congress passed a non-binding proposal for the tricolour and this Kanak flag to fly together — a compromise that carries no legal force and remains contested, some communities flying both and others only the tricolour. The Kanak flag was adopted by the pro-independence FLNKS in 1980: blue is the sky and the Pacific, red the blood shed by the Kanaks in their struggle for independence and unity, green the land and the ancestors buried in it; the yellow disc is the sun, bearing a black flèche faîtière — the carved arrow that crowns the roof of a Kanak house, thrust through tutut shells.",
+            "sources": [
+              {
+                "title": "Flags of New Caledonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nc-current",
+          "category": "historical",
+          "from": 1980,
+          "to": 9999,
+          "name": "Kanak flag (FLNKS)",
+          "reuse": "flags/nc.svg",
+          "design": "The FLNKS flag, co-flown with the French tricolour since a contested 2010 Congress vote.",
+          "source": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia"
+        }
+      ]
     }
   }
 }
