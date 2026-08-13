@@ -784,6 +784,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ge-arms", category: "coatofarms", name: "Coat of arms of Georgia", from: 2004, to: 9999, path: "national-flags/ge/georgia-arms.svg", design: "Saint George on horseback slaying a dragon, on a red shield beneath the Iberian crown, held by two golden lions over the motto Strength is in Unity.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
     { id: "ge-passport", category: "passport", name: "Passport of Georgia", path: "national-flags/ge/ge-passport.webp", design: "The cover of the Georgia passport.", source: "https://gicg.net/passport/ge/" },
   ],
+  "GG": [
+    { id: "gg-official-national", category: "official", name: "Flag of Guernsey", from: 1985, to: 9999, path: "flags/gg.svg", design: "A red St George's cross on white with a gold Norman cross set within it.", source: "https://en.wikipedia.org/wiki/Flag_of_Guernsey" },
+    { id: "gg-current", category: "historical", name: "Flag of Guernsey", from: 1985, to: 9999, path: "flags/gg.svg", design: "Adopted in 1985: the red cross of St George with a gold cross of William the Conqueror added within it, distinguishing Guernsey's flag from England's.", source: "https://en.wikipedia.org/wiki/Flag_of_Guernsey" },
+    { id: "gg-arms", category: "coatofarms", name: "Coat of arms of Guernsey", from: 1279, to: 9999, path: "national-flags/gg/gg-arms.svg", design: "Gules, three lions passant guardant Or, langued and armed Azure — three gold lions on red — with a small gold sprig (the rameau) above.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey" },
+  ],
   "GH": [
     { id: "gh-official-national", category: "official", name: "Flag of Ghana", from: 1957, to: 9999, primary: true, path: "flags/gh.svg", design: "The national flag of Ghana, in the form adopted in 1957.", source: "https://en.wikipedia.org/wiki/Flag_of_Ghana" },
     { id: "gh-1964", category: "historical", name: "Second flag of Ghana (1964–1966)", from: 1964, to: 1966, path: "national-flags/gh/ghana-1964.svg", design: "The tricolour with a white middle band, flown under the one-party state before the 1957 design was restored.", source: "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags" },
@@ -952,6 +957,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "il-emblem", category: "coatofarms", name: "Emblem of Israel", from: 1949, to: 9999, path: "national-flags/il/israel-emblem.svg", design: "A seven-branched menorah between two olive branches, above the word ישראל.", source: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
     { id: "il-passport", category: "passport", name: "Passport of Israel", path: "national-flags/il/il-passport.webp", design: "The cover of the Israel passport.", source: "https://gicg.net/passport/il/" },
   ],
+  "IM": [
+    { id: "im-official-national", category: "official", name: "Flag of the Isle of Man", from: 1932, to: 9999, path: "flags/im.svg", design: "The triskelion — three armoured legs conjoined at the thigh — in gold and silver on a red field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man" },
+    { id: "im-current", category: "historical", name: "Flag of the Isle of Man", from: 1932, to: 9999, path: "flags/im.svg", design: "Officially adopted in 1932: the ancient three-legged triskelion of Mann on red.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man" },
+    { id: "im-arms", category: "coatofarms", name: "Coat of arms of the Isle of Man", from: 1996, to: 9999, path: "national-flags/im/im-arms.svg", design: "Gules, three legs in armour flexed at the knee and conjoined at the thigh, all proper, garnished and spurred Or; an imperial crown crest, supported by a peregrine falcon and a raven, on a scroll the motto QUOCUNQUE JECERIS STABIT.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man" },
+  ],
   "IN": [
     { id: "in-official-national", category: "official", name: "Flag of India (Tiranga)", from: 1947, to: 9999, primary: true, path: "flags/in.svg", design: "The national flag, adopted 22 July 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_India" },
     { id: "in-1947", category: "historical", name: "Flag of India (Tiranga)", from: 1947, to: 9999, primary: true, path: "flags/in.svg", design: "A horizontal tricolour of saffron, white and green with the navy-blue Ashoka Chakra of 24 spokes at the centre; adopted 22 July 1947.", source: "https://en.wikipedia.org/wiki/List_of_Indian_flags" },
@@ -1018,6 +1028,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "it-pm", category: "standard", name: "Standard of the Prime Minister of Italy", from: 2008, to: 9999, path: "national-flags/it/italy-prime-minister.svg", design: "A rectangular blue flag with the emblem of the Republic.", source: "https://en.wikipedia.org/wiki/List_of_Italian_flags" },
     { id: "it-arms", category: "coatofarms", name: "Emblem of Italy", from: 1948, to: 9999, path: "national-flags/it/it-arms.svg", design: "A white five-pointed star over a cogwheel, framed by an olive branch and an oak branch on a red ribbon reading Repubblica Italiana.", source: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
     { id: "it-passport", category: "passport", name: "Passport of Italy", path: "national-flags/it/it-passport.webp", design: "The cover of the Italy passport.", source: "https://gicg.net/passport/it/" },
+  ],
+  "JE": [
+    { id: "je-official-national", category: "official", name: "Flag of Jersey", from: 1981, to: 9999, path: "flags/je.svg", design: "A red saltire on white, the shield of Jersey (three gold lions under a Plantagenet crown) in the upper triangle.", source: "https://en.wikipedia.org/wiki/Flag_of_Jersey" },
+    { id: "je-current", category: "historical", name: "Flag of Jersey", from: 1981, to: 9999, path: "flags/je.svg", design: "The badged flag adopted in 1981: the red saltire with Jersey's crowned shield added in the hoist-side triangle.", source: "https://en.wikipedia.org/wiki/Flag_of_Jersey" },
+    { id: "je-arms", category: "coatofarms", name: "Coat of arms of Jersey", from: 1907, to: 9999, path: "national-flags/je/je-arms.svg", design: "Gules, three lions passant guardant in pale Or — three gold lions on red — beneath a gold Plantagenet crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey" },
   ],
   "JM": [
     { id: "jm-official-national", category: "official", name: "Flag of Jamaica", from: 1962, to: 9999, primary: true, path: "flags/jm.svg", design: "The national flag of Jamaica, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Jamaica" },
@@ -2920,6 +2935,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Georgia — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
     ],
   },
+  "gg-arms": {
+    description: "Like Jersey and England, Guernsey bears the three gold lions of the Dukes of Normandy — a legacy of the Channel Islands' place in the Duchy of Normandy, which the islands kept when they stayed loyal to the English Crown after Normandy was lost to France in 1204. King Edward I granted a single joint seal for Guernsey and Jersey in 1279, and separate bailiwick seals followed in 1304. Guernsey's arms are distinguished from Jersey's otherwise identical lions by the small gold sprig of leaves — the rameau — set above the shield.",
+    sources: [
+      { title: "Coat of arms of Guernsey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey" },
+    ],
+  },
   "gh-arms": {
     description: "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
     sources: [
@@ -3022,6 +3043,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Emblem of Israel — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Israel" },
     ],
   },
+  "im-arms": {
+    description: "The triskelion — three armoured running legs joined at the thigh — has stood for Mann since the late 13th century, appearing after Scotland took the island in 1265; scholars link it to the three-legged emblem of Sicily, perhaps carried north through the royal houses of Scotland and Sicily. The Latin motto Quocunque Jeceris Stabit — 'whichever way you throw it, it will stand' — plays on the figure's balance: however it falls, a leg is always planted. It first appeared on the island's coinage in 1668. The peregrine falcon recalls the pair of falcons the Lords of Mann rendered to English kings at their coronation. The present arms were granted by Queen Elizabeth II on 12 July 1996.",
+    sources: [
+      { title: "Coat of arms of the Isle of Man — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man" },
+    ],
+  },
   "in-arms": {
     description: "The emblem is an adaptation of the Lion Capital of Ashoka, carved in the third century BC and set up at Sarnath where the Buddha first taught — so independent India took its emblem not from heraldry but from its own antiquity. Four lions stand back to back on the original; the emblem shows three, the fourth hidden behind, which is why it appears to have three. Below them runs the abacus with a horse and a bull separated by the Dharma Chakra, the wheel of law — the same wheel that stands at the centre of the national flag. The motto beneath, Satyameva Jayate, “truth alone triumphs”, is a line from the Mundaka Upanishad.",
     sources: [
@@ -3062,6 +3089,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1948, the emblem is built from republican symbols rather than dynastic heraldry. The white Stella d'Italia — the ancient Star of Italy — sits over a steel cogwheel standing for labour, the foundation the Constitution names in its first article (“a democratic republic founded on labour”). The olive branch to the left is peace; the oak branch to the right is strength and dignity (Latin robur means both oak and strength); the red ribbon binding them names the Repubblica Italiana.",
     sources: [
       { title: "Emblem of Italy — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Italy" },
+    ],
+  },
+  "je-arms": {
+    description: "The three gold lions on red are the arms of the Dukes of Normandy, the same lions from which England's royal arms descend, and mark Jersey's origin as part of the Duchy of Normandy. When King John lost mainland Normandy to France in 1204 the Channel Islanders kept their allegiance to the English Crown, and the lions stayed as the island's own arms. King Edward VII formally sanctioned the shield in 1907; a Royal Warrant of 10 December 1980 added the Plantagenet crown above it, the States Assembly approving the design in 1981 — the crown marks Jersey's loyalty to the Crown as its own possession, not part of the United Kingdom.",
+    sources: [
+      { title: "Coat of arms of Jersey — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey" },
     ],
   },
   "jm-arms": {
