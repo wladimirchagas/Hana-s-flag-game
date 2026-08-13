@@ -1631,7 +1631,8 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pw-passport", category: "passport", name: "Passport of Palau", path: "national-flags/pw/pw-passport.webp", design: "The cover of the Palau passport.", source: "https://gicg.net/passport/pw/" },
   ],
   "PY": [
-    { id: "py-official-national", category: "official", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The national flag of Paraguay, in the form adopted in 1842.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    { id: "py-official-national", category: "official", name: "Flag of Paraguay", from: 1842, to: 9999, primary: true, path: "flags/py.svg", design: "The obverse (front) of Paraguay national flag, bearing the national coat of arms — a gold five-pointed star within a wreath of palm and olive. Paraguay is one of only a handful of countries whose flag is different on its two sides; the reverse is shown separately.", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
+    { id: "py-reverse", category: "official", name: "Flag of Paraguay (reverse)", from: 1842, to: 9999, path: "national-flags/py/reverse.svg", design: "The reverse (back) of the same flag. Where the obverse carries the national coat of arms, the reverse bears the seal of the treasury — a gold lion beneath a red liberty cap on a staff — with the motto PAZ Y JUSTICIA (\"Peace and Justice\").", source: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
     { id: "py-spain-1785", category: "historical", name: "Flag of the Kingdom of Spain", from: 1785, to: 1811, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The red-yellow-red ensign of 1785 with the royal arms, flown in the last decades of Spanish rule.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
     { id: "py-burgundy", category: "historical", name: "Cross of Burgundy", from: 1537, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "A red ragged saltire on white — the ensign of the Spanish Empire, flown over the Río de la Plata from the conquest.", source: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     { id: "py-air-force", category: "military", name: "Flag of the Paraguayan Air Force", path: "national-flags/py/paraguay-air-force.svg", design: "The air force's flag.", source: "https://en.wikipedia.org/wiki/List_of_Paraguayan_flags" },
@@ -3499,6 +3500,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1981, the seal is dominated by a bai, the traditional Palauan meeting house that is the seat of community decision-making, standing on sixteen stones. The surrounding words Olbiil Era Kelulau — “the House of Whispered Decisions” — name the national congress, and the date 1981 marks the founding of the Republic. The bai's central place reflects how traditional governance remains at the heart of Palauan identity.",
     sources: [
       { title: "Seal of Palau — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Palau" },
+    ],
+  },
+  "py-reverse": {
+    description: "Paraguay flies one of the world only two-sided national flags: the two faces carry different emblems. The obverse shows the national coat of arms — the May Star, a gold five-pointed star for the independence of 14 May 1811, ringed by a palm and an olive branch and the words REPUBLICA DEL PARAGUAY. The reverse shows the seal of the treasury (Hacienda): a gold lion guarding a staff topped by the red Phrygian cap of liberty, above the national motto PAZ Y JUSTICIA, \"Peace and Justice\".",
+    sources: [
+      { title: "Flag of Paraguay — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Paraguay" },
     ],
   },
   "py-seal": {
