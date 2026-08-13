@@ -160,12 +160,20 @@ export function NationalFlagGrid({
 }
 
 function EntityHeader({ entity }: { entity: SpecialEntity }) {
+  const isDisputed = entity.status === "disputed" || entity.disputed === true;
   return (
     <h3 className="flag-grid__entity-header">
       <span className="flag-grid__entity-name">{entity.name}</span>
-      <span className={`flag-grid__entity-badge flag-grid__entity-badge--${entity.status}`}>
-        {ENTITY_STATUS_LABEL[entity.status]}
-      </span>
+      {entity.status !== "disputed" && (
+        <span className="flag-grid__entity-badge">
+          {ENTITY_STATUS_LABEL[entity.status]}
+        </span>
+      )}
+      {isDisputed && (
+        <span className="flag-grid__entity-badge flag-grid__entity-badge--disputed">
+          Disputed
+        </span>
+      )}
     </h3>
   );
 }
