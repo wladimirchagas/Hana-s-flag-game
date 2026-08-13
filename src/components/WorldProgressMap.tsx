@@ -941,10 +941,17 @@ export function WorldProgressMap({
                   // A disputed territory ALWAYS keeps its neutral colour — the
                   // disputed-neutrality hard rule outranks the passport layer, so
                   // the override is only consulted for non-disputed countries.
-                  const overrideFill =
-                    !isDisputedTerritory && alpha2
-                      ? fillOverride?.get(alpha2) ?? null
+                  // A non-disputed territory (Greenland, Puerto Rico, …) has no
+                  // fill of its own — it takes its administering country's colour,
+                  // the SAME territory→parent resolution the flag overlay applies
+                  // (see FlagDefs above), so Greenland matches Denmark.
+                  const fillCode =
+                    alpha2 && !isDisputedTerritory
+                      ? selectable?.territoryParent?.[alpha2] ?? alpha2
                       : null;
+                  const overrideFill = fillCode
+                    ? fillOverride?.get(fillCode) ?? null
+                    : null;
                   const baseFill = isDisputedTerritory
                     ? palette.disputedLand
                     : overrideFill ?? getFill(alpha2, countryResults, palette, isInPool);
