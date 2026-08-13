@@ -105,6 +105,15 @@ export const SPECIAL_ENTITIES: Record<string, readonly SpecialEntity[]> = {
   FI: [
     { code: "AX", name: "Åland", status: "autonomous-territory" },
   ],
+  FR: [
+    // France's autonomous Pacific collectivities — unlike the overseas
+    // départements (which fly only the tricolour), these have statutory
+    // autonomy. French Polynesia has an officially-adopted territorial flag;
+    // New Caledonia's flag is genuinely contested (see its sourced note), so it
+    // carries the neutral "Disputed" badge.
+    { code: "PF", name: "French Polynesia", status: "overseas-collectivity" },
+    { code: "NC", name: "New Caledonia", status: "overseas-collectivity", disputed: true },
+  ],
 };
 
 /** The neutral status badge text shown on an entity's group header. */
