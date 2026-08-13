@@ -58,6 +58,14 @@ export const SPECIAL_ENTITIES: Record<string, readonly SpecialEntity[]> = {
     { code: "AS", name: "American Samoa", status: "us-territory" },
     { code: "MP", name: "Northern Mariana Islands", status: "us-commonwealth" },
   ],
+  GB: [
+    // Crown Dependencies — self-governing possessions of the Crown, never part of
+    // the UK and never colonies (they descend from the Duchy of Normandy / the
+    // Kingdom of Mann).
+    { code: "JE", name: "Jersey", status: "crown-dependency" },
+    { code: "GG", name: "Guernsey", status: "crown-dependency" },
+    { code: "IM", name: "Isle of Man", status: "crown-dependency" },
+  ],
 };
 
 /** The neutral status badge text shown on an entity's group header. */

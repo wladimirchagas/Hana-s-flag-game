@@ -25224,6 +25224,147 @@
           "fetched": "2026-08-13"
         }
       ]
+    },
+    "JE": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "je-official-national",
+          "category": "official",
+          "from": 1981,
+          "to": 9999,
+          "name": "Flag of Jersey",
+          "reuse": "flags/je.svg",
+          "design": "A red saltire on white, the shield of Jersey (three gold lions under a Plantagenet crown) in the upper triangle.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Jersey"
+        },
+        {
+          "id": "je-current",
+          "category": "historical",
+          "from": 1981,
+          "to": 9999,
+          "name": "Flag of Jersey",
+          "reuse": "flags/je.svg",
+          "design": "The badged flag adopted in 1981: the red saltire with Jersey's crowned shield added in the hoist-side triangle.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Jersey"
+        },
+        {
+          "id": "je-arms",
+          "category": "coatofarms",
+          "from": 1907,
+          "to": 9999,
+          "name": "Coat of arms of Jersey",
+          "commons": "Coat of arms of Jersey.svg",
+          "file": "je/je-arms.svg",
+          "design": "Gules, three lions passant guardant in pale Or — three gold lions on red — beneath a gold Plantagenet crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey",
+          "meaning": {
+            "description": "The three gold lions on red are the arms of the Dukes of Normandy, the same lions from which England's royal arms descend, and mark Jersey's origin as part of the Duchy of Normandy. When King John lost mainland Normandy to France in 1204 the Channel Islanders kept their allegiance to the English Crown, and the lions stayed as the island's own arms. King Edward VII formally sanctioned the shield in 1907; a Royal Warrant of 10 December 1980 added the Plantagenet crown above it, the States Assembly approving the design in 1981 — the crown marks Jersey's loyalty to the Crown as its own possession, not part of the United Kingdom.",
+            "sources": [
+              {
+                "title": "Coat of arms of Jersey — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey"
+              }
+            ]
+          },
+          "sha256": "5e5677535451c7a2e2c2e22437e89972974382699e556819621288ef0db05bc7",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "GG": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gg-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Guernsey",
+          "reuse": "flags/gg.svg",
+          "design": "A red St George's cross on white with a gold Norman cross set within it.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Guernsey"
+        },
+        {
+          "id": "gg-current",
+          "category": "historical",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Guernsey",
+          "reuse": "flags/gg.svg",
+          "design": "Adopted in 1985: the red cross of St George with a gold cross of William the Conqueror added within it, distinguishing Guernsey's flag from England's.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Guernsey"
+        },
+        {
+          "id": "gg-arms",
+          "category": "coatofarms",
+          "from": 1279,
+          "to": 9999,
+          "name": "Coat of arms of Guernsey",
+          "commons": "Coat of arms of Guernsey.svg",
+          "file": "gg/gg-arms.svg",
+          "design": "Gules, three lions passant guardant Or, langued and armed Azure — three gold lions on red — with a small gold sprig (the rameau) above.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey",
+          "meaning": {
+            "description": "Like Jersey and England, Guernsey bears the three gold lions of the Dukes of Normandy — a legacy of the Channel Islands' place in the Duchy of Normandy, which the islands kept when they stayed loyal to the English Crown after Normandy was lost to France in 1204. King Edward I granted a single joint seal for Guernsey and Jersey in 1279, and separate bailiwick seals followed in 1304. Guernsey's arms are distinguished from Jersey's otherwise identical lions by the small gold sprig of leaves — the rameau — set above the shield.",
+            "sources": [
+              {
+                "title": "Coat of arms of Guernsey — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey"
+              }
+            ]
+          },
+          "sha256": "999d55bb89e6e64124117d63b2cb4af44fa825b83c44193dfb05bf1683f5f882",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "IM": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "im-official-national",
+          "category": "official",
+          "from": 1932,
+          "to": 9999,
+          "name": "Flag of the Isle of Man",
+          "reuse": "flags/im.svg",
+          "design": "The triskelion — three armoured legs conjoined at the thigh — in gold and silver on a red field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man"
+        },
+        {
+          "id": "im-current",
+          "category": "historical",
+          "from": 1932,
+          "to": 9999,
+          "name": "Flag of the Isle of Man",
+          "reuse": "flags/im.svg",
+          "design": "Officially adopted in 1932: the ancient three-legged triskelion of Mann on red.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man"
+        },
+        {
+          "id": "im-arms",
+          "category": "coatofarms",
+          "from": 1996,
+          "to": 9999,
+          "name": "Coat of arms of the Isle of Man",
+          "commons": "Coat of arms of the Isle of Man.svg",
+          "file": "im/im-arms.svg",
+          "design": "Gules, three legs in armour flexed at the knee and conjoined at the thigh, all proper, garnished and spurred Or; an imperial crown crest, supported by a peregrine falcon and a raven, on a scroll the motto QUOCUNQUE JECERIS STABIT.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man",
+          "meaning": {
+            "description": "The triskelion — three armoured running legs joined at the thigh — has stood for Mann since the late 13th century, appearing after Scotland took the island in 1265; scholars link it to the three-legged emblem of Sicily, perhaps carried north through the royal houses of Scotland and Sicily. The Latin motto Quocunque Jeceris Stabit — 'whichever way you throw it, it will stand' — plays on the figure's balance: however it falls, a leg is always planted. It first appeared on the island's coinage in 1668. The peregrine falcon recalls the pair of falcons the Lords of Mann rendered to English kings at their coronation. The present arms were granted by Queen Elizabeth II on 12 July 1996.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Isle of Man — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man"
+              }
+            ]
+          },
+          "sha256": "a0f007a73acd77da1285446440bd2f47a787c9ae4f91080f64c88baa1e13a34e",
+          "fetched": "2026-08-13"
+        }
+      ]
     }
   }
 }
