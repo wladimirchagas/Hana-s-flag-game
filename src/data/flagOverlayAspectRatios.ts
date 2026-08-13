@@ -87,6 +87,7 @@ export const FLAG_OVERLAY_ASPECT_RATIOS: Readonly<Record<string, number>> = {
   "historical-flags/ethiopia-1991.svg": 2,
   "historical-flags/georgia-1918.svg": 2,
   "historical-flags/georgia-1990.svg": 1.6667,
+  "historical-flags/germany-nazi.svg": 1.6667,
   "historical-flags/iceland-1915.png": 1.3889,
   "historical-flags/iraq-1921.svg": 2,
   "historical-flags/iraq-1924.svg": 2,
