@@ -758,11 +758,6 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gb-passport", category: "passport", name: "British passport", path: "national-flags/gb/uk-passport.svg", design: "A dark blue cover with the Royal Coat of Arms in gold, above UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-diplomatic", category: "passport", name: "British diplomatic passport", path: "national-flags/gb/uk-passport-diplomatic.svg", design: "The same blue cover and Royal Arms, headed DIPLOMATIC PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
     { id: "gb-passport-official", category: "passport", name: "British official passport", path: "national-flags/gb/uk-passport-official.svg", design: "The same blue cover and Royal Arms, headed OFFICIAL PASSPORT.", source: "https://en.wikipedia.org/wiki/British_passport" },
-    { id: "gb-passport-bno", category: "passport", name: "British National (Overseas) passport", path: "national-flags/gb/uk-passport.svg", design: "The common-format British passport cover, shared by every class of British nationality; issued to British Nationals (Overseas) — a status created for Hong Kong residents before the 1997 handover. The class is shown on the data page inside, not the cover.", source: "https://en.wikipedia.org/wiki/British_passport" },
-    { id: "gb-passport-botc", category: "passport", name: "British Overseas Territories Citizen passport", path: "national-flags/gb/uk-passport.svg", design: "The common-format British passport cover; issued to British Overseas Territories Citizens, connected to a territory such as Bermuda, Gibraltar or the Falklands. The class is shown on the data page inside.", source: "https://en.wikipedia.org/wiki/British_passport" },
-    { id: "gb-passport-boc", category: "passport", name: "British Overseas Citizen passport", path: "national-flags/gb/uk-passport.svg", design: "The common-format British passport cover; issued to British Overseas Citizens — a residual status held mainly by people from former colonies who gained no other nationality at independence. The class is shown on the data page inside.", source: "https://en.wikipedia.org/wiki/British_passport" },
-    { id: "gb-passport-subject", category: "passport", name: "British Subject passport", path: "national-flags/gb/uk-passport.svg", design: "The common-format British passport cover; issued to British Subjects — a residual imperial status held mainly by certain people connected to British India or the Republic of Ireland before 1949. The class is shown on the data page inside.", source: "https://en.wikipedia.org/wiki/British_passport" },
-    { id: "gb-passport-bpp", category: "passport", name: "British Protected Person passport", path: "national-flags/gb/uk-passport.svg", design: "The common-format British passport cover; issued to British Protected Persons — a status inherited from the protectorates and protected states of the Empire. The class is shown on the data page inside.", source: "https://en.wikipedia.org/wiki/British_passport" },
   ],
   "GD": [
     { id: "gd-official-national", category: "official", name: "Flag of Grenada", from: 1974, to: 9999, primary: true, path: "flags/gd.svg", design: "The national flag, adopted at independence in 1974.", source: "https://en.wikipedia.org/wiki/Flag_of_Grenada" },
@@ -2100,7 +2095,6 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "us-passport-official", category: "passport", name: "United States official passport", path: "national-flags/us/us-passport-official.svg", design: "A maroon cover with the Great Seal, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
     { id: "us-passport-service", category: "passport", name: "United States service passport", path: "national-flags/us/us-passport-service.svg", design: "A grey cover with the Great Seal, headed SERVICE PASSPORT.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
     { id: "us-passport-emergency", category: "passport", name: "United States emergency passport", path: "national-flags/us/us-passport-emergency.svg", design: "A limited-validity passport issued abroad when a traveller's own is lost or stolen.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
-    { id: "us-passport-national", category: "passport", name: "United States non-citizen national passport", path: "national-flags/us/us-passport.svg", design: "The ordinary U.S. passport cover; issued to non-citizen U.S. nationals — people from American Samoa and Swains Island — whose data page states the bearer is a national, but not a citizen, of the United States.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
   ],
   "UY": [
     { id: "uy-official-national", category: "official", name: "Flag of Uruguay", from: 1830, to: 9999, primary: true, path: "flags/uy.svg", design: "The national flag of Uruguay, in the form adopted in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
@@ -2863,9 +2857,10 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "gb-passport": {
-    description: "The gold device is the Royal Coat of Arms — a British passport is issued in the sovereign's name, and the arms say so. The colour is the point of this particular design: British passports were dark blue until 1988, burgundy while the UK was in the European Union, and returned to blue in 2020 after leaving it, making the cover itself a piece of constitutional history.",
+    description: "The cover reads only “British Passport”, but a legacy of the Empire means the United Kingdom issues this same common-format passport to six different classes of British nationality — the class is printed on the data page inside, not the cover. They are: British Citizen (the ordinary holder); British National (Overseas), a status created for Hong Kong residents before the 1997 handover; British Overseas Territories Citizen, connected to a territory such as Bermuda or the Falklands; British Overseas Citizen and British Subject, residual statuses from decolonisation and from British India or pre-1949 Ireland; and British Protected Person, inherited from the former protectorates. The Crown Dependencies and Overseas Territories (Jersey, Guernsey, the Isle of Man, Gibraltar, Bermuda…) print their own name on an otherwise-identical cover.",
     sources: [
       { title: "British passport — Wikipedia", url: "https://en.wikipedia.org/wiki/British_passport" },
+      { title: "British nationality law — Wikipedia", url: "https://en.wikipedia.org/wiki/British_nationality_law" },
     ],
   },
   "gd-arms": {
@@ -3662,7 +3657,7 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
   "us-passport": {
-    description: "The United States issues its passports in four colours and the colour IS the classification: blue for ordinary, black for diplomatic, maroon for official and grey for service or no-fee travel. The device is the Great Seal, whose eagle, olive branch and thirteen arrows are the same emblem the country’s arms carry.",
+    description: "The United States issues this cover to two kinds of holder. Almost all are U.S. citizens; but a colonial-era legacy means it is also issued to non-citizen U.S. nationals — people from American Samoa and Swains Island — whose data page states that the bearer is a national, but not a citizen, of the United States. The class is noted inside; the cover is the same.",
     sources: [
       { title: "United States passport — Wikipedia", url: "https://en.wikipedia.org/wiki/United_States_passport" },
     ],
