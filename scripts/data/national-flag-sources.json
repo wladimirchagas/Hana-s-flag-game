@@ -24850,6 +24850,380 @@
           "fetched": "2026-08-12"
         }
       ]
+    },
+    "PR": {
+      "entity": true,
+      "independence": {
+        "year": 1898,
+        "event": "Puerto Rico was ceded by Spain to the United States in 1898 after the Spanish–American War; it is today a U.S. Commonwealth (Estado Libre Asociado)",
+        "source": "https://en.wikipedia.org/wiki/History_of_Puerto_Rico"
+      },
+      "flags": [
+        {
+          "id": "pr-official-national",
+          "category": "official",
+          "from": 1952,
+          "to": 9999,
+          "name": "Flag of Puerto Rico",
+          "reuse": "flags/sub/US/US-PR.svg",
+          "design": "The single-star flag — five red and white stripes with a white star on a blue triangle — adopted as the commonwealth flag in 1952.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
+        },
+        {
+          "id": "pr-current",
+          "category": "historical",
+          "from": 1952,
+          "to": 9999,
+          "name": "Flag of Puerto Rico",
+          "reuse": "flags/sub/US/US-PR.svg",
+          "design": "The flag of Puerto Rico, adopted in 1952.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
+        },
+        {
+          "id": "pr-burgundy",
+          "category": "historical",
+          "from": 1508,
+          "to": 1785,
+          "name": "Cross of Burgundy",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Puerto Rico from the conquest.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "pr-spain-1785",
+          "category": "historical",
+          "from": 1785,
+          "to": 1898,
+          "name": "Flag of the Kingdom of Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The red-yellow-red ensign of 1785 with the royal arms, flown over Puerto Rico until it was ceded to the United States in 1898.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "pr-arms",
+          "category": "coatofarms",
+          "from": 1511,
+          "to": 9999,
+          "name": "Coat of arms of Puerto Rico",
+          "commons": "Coat of arms of Puerto Rico.svg",
+          "file": "pr/pr-arms.svg",
+          "design": "A green shield bearing the Lamb of God on the Book of the Seven Seals, ringed by castles, lions, crosses and royal devices.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico",
+          "meaning": {
+            "description": "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Puerto Rico — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico"
+              }
+            ]
+          },
+          "sha256": "e8dc2d76143dcf3a4357d01737160fcd183360fb33b9d8bd551f0982ccaea848",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "GU": {
+      "entity": true,
+      "independence": {
+        "year": 1898,
+        "event": "Guam was ceded by Spain to the United States in 1898 after the Spanish–American War; it is an unincorporated U.S. Territory. Japan occupied the island from 1941 to 1944",
+        "source": "https://en.wikipedia.org/wiki/History_of_Guam"
+      },
+      "flags": [
+        {
+          "id": "gu-official-national",
+          "category": "official",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of Guam",
+          "reuse": "flags/sub/US/US-GU.svg",
+          "design": "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Guam"
+        },
+        {
+          "id": "gu-current",
+          "category": "historical",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of Guam",
+          "reuse": "flags/sub/US/US-GU.svg",
+          "design": "The flag of Guam, adopted in 1948.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Guam"
+        },
+        {
+          "id": "gu-burgundy",
+          "category": "historical",
+          "from": 1668,
+          "to": 1785,
+          "name": "Cross of Burgundy",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "The ensign of the Spanish Empire, flown over Guam from the founding of the Spanish mission in 1668.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "gu-spain-1785",
+          "category": "historical",
+          "from": 1785,
+          "to": 1898,
+          "name": "Flag of the Kingdom of Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The 1785 Spanish ensign, flown over Guam until it was ceded to the United States in 1898.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "gu-japan",
+          "category": "historical",
+          "from": 1941,
+          "to": 1944,
+          "name": "Flag of Japan",
+          "occupier": "the Empire of Japan",
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "gu/gu-japan.svg",
+          "design": "The Hinomaru, flown during the Japanese military occupation of Guam from 1941 until the island was retaken by the United States in 1944.",
+          "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "gu-seal",
+          "category": "coatofarms",
+          "from": 1946,
+          "to": 9999,
+          "name": "Great Seal of Guam",
+          "commons": "Seal of Guam.svg",
+          "file": "gu/gu-seal.svg",
+          "design": "A slingstone-shaped emblem showing a flying proa in Agana Bay beneath a coconut tree, GUAM in red across it.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_Guam",
+          "meaning": {
+            "description": "Approved in 1946, the seal takes the pointed shape of a Chamorro slingstone, the ancient weapon of the islands. Within it a coconut tree — the tree of life — bends but does not break, for a people tested by famine, war and calamity yet enduring; a flying proa, the swift Chamorro outrigger, speaks to their seafaring skill; and the Hagåtña river meeting the sea marks a willingness to share the land's resources. GUAM runs across the centre in red.",
+            "sources": [
+              {
+                "title": "Seal of Guam — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Guam"
+              }
+            ]
+          },
+          "sha256": "6eff24b73476e9482690dc61cf4d8519b28cf52cc264d5770f8de0fd86dfeec9",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "VI": {
+      "entity": true,
+      "independence": {
+        "year": 1917,
+        "event": "The United States bought the Danish West Indies from Denmark in 1917; they became the unincorporated U.S. Territory of the Virgin Islands",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_United_States_Virgin_Islands"
+      },
+      "flags": [
+        {
+          "id": "vi-official-national",
+          "category": "official",
+          "from": 1921,
+          "to": 9999,
+          "name": "Flag of the U.S. Virgin Islands",
+          "reuse": "flags/sub/US/US-VI.svg",
+          "design": "A white field bearing a simplified American eagle between the letters V and I.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
+        },
+        {
+          "id": "vi-current",
+          "category": "historical",
+          "from": 1921,
+          "to": 9999,
+          "name": "Flag of the U.S. Virgin Islands",
+          "reuse": "flags/sub/US/US-VI.svg",
+          "design": "The flag of the U.S. Virgin Islands, adopted in 1921.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
+        },
+        {
+          "id": "vi-denmark",
+          "category": "historical",
+          "from": 1672,
+          "to": 1917,
+          "name": "Flag of Denmark",
+          "sovereign": "Denmark",
+          "reuse": "flags/dk.svg",
+          "design": "The Dannebrog, flown over the Danish West Indies from the settlement of St Thomas in 1672 until the islands were sold to the United States in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Danish_West_Indies"
+        },
+        {
+          "id": "vi-seal",
+          "category": "coatofarms",
+          "from": 1921,
+          "to": 9999,
+          "name": "Seal of the U.S. Virgin Islands",
+          "commons": "Seal of the United States Virgin Islands.svg",
+          "file": "vi/vi-seal.svg",
+          "design": "An American eagle holding a laurel sprig and three arrows, between the letters V and I.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands",
+          "meaning": {
+            "description": "The eagle carries a sprig of laurel for victory in one talon and three blue arrows in the other — one for each of the three main islands, Saint Croix, Saint Thomas and Saint John — flanked by the letters V and I for Virgin Islands. The blue of its breast shield matches the flag and shield of the United States, of which the territory has been part since it was bought from Denmark in 1917.",
+            "sources": [
+              {
+                "title": "Flag of the United States Virgin Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
+              }
+            ]
+          },
+          "sha256": "a5ed790fd0a58ea601522d402c66623713e4fb38b4b4868a1a179fd0b4c1e7cc",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "AS": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "as-official-national",
+          "category": "official",
+          "from": 1960,
+          "to": 9999,
+          "name": "Flag of American Samoa",
+          "reuse": "flags/sub/US/US-AS.svg",
+          "design": "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
+        },
+        {
+          "id": "as-current",
+          "category": "historical",
+          "from": 1960,
+          "to": 9999,
+          "name": "Flag of American Samoa",
+          "reuse": "flags/sub/US/US-AS.svg",
+          "design": "The flag of American Samoa, adopted in 1960.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
+        },
+        {
+          "id": "as-seal",
+          "category": "coatofarms",
+          "from": 1973,
+          "to": 9999,
+          "name": "Seal of American Samoa",
+          "commons": "Seal of American Samoa.svg",
+          "file": "as/as-seal.svg",
+          "design": "A crossed fue (fly-whisk) and toʻotoʻo (staff) above a tanoa (kava bowl) on tapa cloth, with the motto Sāmoa Muamua Le Atua.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_American_Samoa",
+          "meaning": {
+            "description": "The seal is built from the emblems of the faʻamatai, the Samoan chiefly system: the fue (fly-whisk) for the wisdom of the talking chief, the toʻotoʻo (orator's staff) for his authority, and the tanoa (kava bowl) for service to the chief, all on a tapa-cloth ground for Samoan artistry. The motto reads Sāmoa Muamua Le Atua — “Samoa, let God be first.” The date 17 April 1900 marks the day American Samoa became a U.S. territory.",
+            "sources": [
+              {
+                "title": "Seal of American Samoa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_American_Samoa"
+              }
+            ]
+          },
+          "sha256": "c9e3db182b6fed86f7768c56768282f2663e8f5d9cfb5e2389aa30fb197a8d51",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "MP": {
+      "entity": true,
+      "independence": {
+        "year": 1978,
+        "event": "The Northern Mariana Islands came under U.S. administration in 1944 and, after Spanish (to 1899), German (1899–1914) and Japanese (1914–1944) rule, entered political union with the United States as a Commonwealth in 1978",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Northern_Mariana_Islands"
+      },
+      "flags": [
+        {
+          "id": "mp-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of the Northern Mariana Islands",
+          "reuse": "flags/sub/US/US-MP.svg",
+          "design": "A grey latte stone and white star before a mwarmwar garland, on a blue field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
+        },
+        {
+          "id": "mp-current",
+          "category": "historical",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of the Northern Mariana Islands",
+          "reuse": "flags/sub/US/US-MP.svg",
+          "design": "The flag of the Northern Mariana Islands, adopted in 1985.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
+        },
+        {
+          "id": "mp-burgundy",
+          "category": "historical",
+          "from": 1565,
+          "to": 1785,
+          "name": "Cross of Burgundy",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "The ensign of the Spanish Empire, which claimed the Marianas from 1565.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "mp-spain-1785",
+          "category": "historical",
+          "from": 1785,
+          "to": 1899,
+          "name": "Flag of the Kingdom of Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The 1785 Spanish ensign, flown until Spain sold the northern Marianas to Germany in 1899.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "mp-germany",
+          "category": "historical",
+          "from": 1899,
+          "to": 1914,
+          "name": "Flag of the German Empire",
+          "sovereign": "the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "mp/mp-germany.svg",
+          "design": "The black-white-red flag of the German Empire, which bought the northern Marianas from Spain in 1899 and held them until 1914.",
+          "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "mp-japan",
+          "category": "historical",
+          "from": 1914,
+          "to": 1944,
+          "name": "Flag of Japan",
+          "sovereign": "the Empire of Japan",
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "mp/mp-japan.svg",
+          "design": "The Hinomaru, flown while Japan governed the islands under a League of Nations mandate from 1914 until the United States took them in 1944.",
+          "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "mp-seal",
+          "category": "coatofarms",
+          "from": 1985,
+          "to": 9999,
+          "name": "Seal of the Northern Mariana Islands",
+          "commons": "Seal of the Northern Mariana Islands.svg",
+          "file": "mp/mp-seal.svg",
+          "design": "A grey latte stone and a white star within a mwarmwar garland, on blue.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands",
+          "meaning": {
+            "description": "The grey latte stone — the carved pillar on which the ancient Chamorro raised their houses — stands for the Chamorro people; the white star for the Commonwealth's union with the United States; and the mwarmwar, a garland of ylang-ylang, plumeria, peacock flower and Pacific basil, for the Carolinian people who also settled the islands. The blue field is the Pacific and the Mariana Trench.",
+            "sources": [
+              {
+                "title": "Flag of the Northern Mariana Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
+              }
+            ]
+          },
+          "sha256": "3fec8fd6d16cbd989f8c21f07346741d6e68e4e0c573a2c9939d4764932841f7",
+          "fetched": "2026-08-13"
+        }
+      ]
     }
   }
 }

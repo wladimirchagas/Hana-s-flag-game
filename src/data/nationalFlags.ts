@@ -175,6 +175,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ar-arms", category: "coatofarms", name: "Coat of arms of Argentina", from: 1813, to: 9999, path: "national-flags/ar/argentina-arms.svg", design: "An oval party per fess azure and argent, two clasped hands holding a pike topped by a Phrygian cap, beneath the Sun of May and between laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
     { id: "ar-passport", category: "passport", name: "Passport of Argentina", path: "national-flags/ar/ar-passport.webp", design: "The cover of the Argentina passport.", source: "https://gicg.net/passport/ar/" },
   ],
+  "AS": [
+    { id: "as-official-national", category: "official", name: "Flag of American Samoa", from: 1960, to: 9999, path: "flags/sub/US/US-AS.svg", design: "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).", source: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
+    { id: "as-current", category: "historical", name: "Flag of American Samoa", from: 1960, to: 9999, path: "flags/sub/US/US-AS.svg", design: "The flag of American Samoa, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
+    { id: "as-seal", category: "coatofarms", name: "Seal of American Samoa", from: 1973, to: 9999, path: "national-flags/as/as-seal.svg", design: "A crossed fue (fly-whisk) and toʻotoʻo (staff) above a tanoa (kava bowl) on tapa cloth, with the motto Sāmoa Muamua Le Atua.", source: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
+  ],
   "AT": [
     { id: "at-official-national", category: "official", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
     { id: "at-current", category: "historical", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
@@ -833,6 +838,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gt-arms", category: "coatofarms", name: "Coat of arms of Guatemala", from: 1871, to: 9999, path: "national-flags/gt/gt-arms.svg", design: "A resplendent quetzal on a scroll with the date of independence, over crossed rifles and swords in a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
     { id: "gt-passport", category: "passport", name: "Passport of Guatemala", path: "national-flags/gt/gt-passport.webp", design: "The cover of the Guatemala passport.", source: "https://gicg.net/passport/gt/" },
   ],
+  "GU": [
+    { id: "gu-official-national", category: "official", name: "Flag of Guam", from: 1948, to: 9999, path: "flags/sub/US/US-GU.svg", design: "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.", source: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
+    { id: "gu-current", category: "historical", name: "Flag of Guam", from: 1948, to: 9999, path: "flags/sub/US/US-GU.svg", design: "The flag of Guam, adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
+    { id: "gu-japan", category: "historical", name: "Flag of Japan", from: 1941, to: 1944, occupier: "the Empire of Japan", path: "national-flags/gu/gu-japan.svg", design: "The Hinomaru, flown during the Japanese military occupation of Guam from 1941 until the island was retaken by the United States in 1944.", source: "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam" },
+    { id: "gu-spain-1785", category: "historical", name: "Flag of the Kingdom of Spain", from: 1785, to: 1898, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The 1785 Spanish ensign, flown over Guam until it was ceded to the United States in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
+    { id: "gu-burgundy", category: "historical", name: "Cross of Burgundy", from: 1668, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ensign of the Spanish Empire, flown over Guam from the founding of the Spanish mission in 1668.", source: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    { id: "gu-seal", category: "coatofarms", name: "Great Seal of Guam", from: 1946, to: 9999, path: "national-flags/gu/gu-seal.svg", design: "A slingstone-shaped emblem showing a flying proa in Agana Bay beneath a coconut tree, GUAM in red across it.", source: "https://en.wikipedia.org/wiki/Seal_of_Guam" },
+  ],
   "GW": [
     { id: "gw-official-national", category: "official", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag, adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
     { id: "gw-current", category: "historical", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "A red hoist band with a black star over yellow-and-green fields — the flag of the PAIGC that won independence, in the pan-African colours.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
@@ -1344,6 +1357,15 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mo-emblem", category: "coatofarms", name: "Regional Emblem of Macau", from: 1999, to: 9999, path: "national-flags/mo/mo-emblem.svg", design: "The lotus, bridge and water of the flag within a green ring naming the Special Administrative Region.", source: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     { id: "mo-passport", category: "passport", name: "Macau SAR passport", path: "national-flags/mo/mo-passport.webp", design: "The cover of the Macau Special Administrative Region passport.", source: "https://gicg.net/passport/mo/" },
   ],
+  "MP": [
+    { id: "mp-official-national", category: "official", name: "Flag of the Northern Mariana Islands", from: 1985, to: 9999, path: "flags/sub/US/US-MP.svg", design: "A grey latte stone and white star before a mwarmwar garland, on a blue field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    { id: "mp-current", category: "historical", name: "Flag of the Northern Mariana Islands", from: 1985, to: 9999, path: "flags/sub/US/US-MP.svg", design: "The flag of the Northern Mariana Islands, adopted in 1985.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    { id: "mp-japan", category: "historical", name: "Flag of Japan", from: 1914, to: 1944, sovereign: "the Empire of Japan", path: "national-flags/mp/mp-japan.svg", design: "The Hinomaru, flown while Japan governed the islands under a League of Nations mandate from 1914 until the United States took them in 1944.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
+    { id: "mp-germany", category: "historical", name: "Flag of the German Empire", from: 1899, to: 1914, sovereign: "the German Empire", path: "national-flags/mp/mp-germany.svg", design: "The black-white-red flag of the German Empire, which bought the northern Marianas from Spain in 1899 and held them until 1914.", source: "https://en.wikipedia.org/wiki/German_New_Guinea" },
+    { id: "mp-spain-1785", category: "historical", name: "Flag of the Kingdom of Spain", from: 1785, to: 1899, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The 1785 Spanish ensign, flown until Spain sold the northern Marianas to Germany in 1899.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
+    { id: "mp-burgundy", category: "historical", name: "Cross of Burgundy", from: 1565, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ensign of the Spanish Empire, which claimed the Marianas from 1565.", source: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    { id: "mp-seal", category: "coatofarms", name: "Seal of the Northern Mariana Islands", from: 1985, to: 9999, path: "national-flags/mp/mp-seal.svg", design: "A grey latte stone and a white star within a mwarmwar garland, on blue.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+  ],
   "MR": [
     { id: "mr-official-national", category: "official", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "The national flag, in the form adopted in 2017.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
     { id: "mr-current", category: "historical", name: "Flag of Mauritania", from: 2017, to: 9999, primary: true, path: "flags/mr.svg", design: "A green field with a gold crescent and star, framed by red stripes at top and bottom — the crescent and star for Islam, green and gold for the Sahara and its people, the red bands added in 2017 for the blood of those who defended the country.", source: "https://en.wikipedia.org/wiki/Flag_of_Mauritania" },
@@ -1627,6 +1649,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pl-arms-flag", category: "civilstate", name: "Flag of Poland with the coat of arms", path: "national-flags/pl/poland-arms-flag.svg", design: "The white-and-red bicolour charged with the crowned eagle — flown by Polish missions abroad, at airports and on ships.", source: "https://en.wikipedia.org/wiki/List_of_Polish_flags" },
     { id: "pl-arms", category: "coatofarms", name: "Coat of arms of Poland", from: 1990, to: 9999, path: "national-flags/pl/poland-arms.svg", design: "A white eagle with a golden beak, talons and crown, on a red shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
     { id: "pl-passport", category: "passport", name: "Passport of Poland", path: "national-flags/pl/pl-passport.webp", design: "The cover of the Poland passport.", source: "https://gicg.net/passport/pl/" },
+  ],
+  "PR": [
+    { id: "pr-official-national", category: "official", name: "Flag of Puerto Rico", from: 1952, to: 9999, path: "flags/sub/US/US-PR.svg", design: "The single-star flag — five red and white stripes with a white star on a blue triangle — adopted as the commonwealth flag in 1952.", source: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
+    { id: "pr-current", category: "historical", name: "Flag of Puerto Rico", from: 1952, to: 9999, path: "flags/sub/US/US-PR.svg", design: "The flag of Puerto Rico, adopted in 1952.", source: "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico" },
+    { id: "pr-spain-1785", category: "historical", name: "Flag of the Kingdom of Spain", from: 1785, to: 1898, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The red-yellow-red ensign of 1785 with the royal arms, flown over Puerto Rico until it was ceded to the United States in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
+    { id: "pr-burgundy", category: "historical", name: "Cross of Burgundy", from: 1508, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Puerto Rico from the conquest.", source: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
+    { id: "pr-arms", category: "coatofarms", name: "Coat of arms of Puerto Rico", from: 1511, to: 9999, path: "national-flags/pr/pr-arms.svg", design: "A green shield bearing the Lamb of God on the Book of the Seven Seals, ringed by castles, lions, crosses and royal devices.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico" },
   ],
   "PS": [
     { id: "ps-official-national", category: "official", name: "Flag of Palestine", from: 1988, to: 9999, primary: true, path: "flags/ps.svg", design: "The national flag of Palestine, in the form adopted in 1988.", source: "https://en.wikipedia.org/wiki/Flag_of_Palestine" },
@@ -2152,6 +2181,12 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ve-arms", category: "coatofarms", name: "Coat of arms of Venezuela", from: 1954, to: 9999, path: "national-flags/ve/venezuela-arms.svg", design: "A shield in the colours of the flag bearing a wheatsheaf, weapons and a running white horse, beneath two cornucopias and between olive and palm branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
     { id: "ve-passport", category: "passport", name: "Passport of Venezuela", path: "national-flags/ve/ve-passport.webp", design: "The cover of the Venezuela passport.", source: "https://gicg.net/passport/ve/" },
   ],
+  "VI": [
+    { id: "vi-official-national", category: "official", name: "Flag of the U.S. Virgin Islands", from: 1921, to: 9999, path: "flags/sub/US/US-VI.svg", design: "A white field bearing a simplified American eagle between the letters V and I.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
+    { id: "vi-current", category: "historical", name: "Flag of the U.S. Virgin Islands", from: 1921, to: 9999, path: "flags/sub/US/US-VI.svg", design: "The flag of the U.S. Virgin Islands, adopted in 1921.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
+    { id: "vi-denmark", category: "historical", name: "Flag of Denmark", from: 1672, to: 1917, sovereign: "Denmark", path: "flags/dk.svg", design: "The Dannebrog, flown over the Danish West Indies from the settlement of St Thomas in 1672 until the islands were sold to the United States in 1917.", source: "https://en.wikipedia.org/wiki/Danish_West_Indies" },
+    { id: "vi-seal", category: "coatofarms", name: "Seal of the U.S. Virgin Islands", from: 1921, to: 9999, path: "national-flags/vi/vi-seal.svg", design: "An American eagle holding a laurel sprig and three arrows, between the letters V and I.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
+  ],
   "VN": [
     { id: "vn-official-national", category: "official", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
     { id: "vn-current", category: "historical", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
@@ -2300,6 +2335,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "GN": { year: 1958, event: "Guinea became independent from France on 2 October 1958, the only French African territory to vote No in the 1958 constitutional referendum", source: "https://en.wikipedia.org/wiki/History_of_Guinea" },
   "GQ": { year: 1968, event: "Equatorial Guinea became independent from Spain on 12 October 1968", source: "https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea" },
   "GT": { year: 1821, event: "Guatemala became independent from Spain on 15 September 1821", source: "https://en.wikipedia.org/wiki/History_of_Guatemala" },
+  "GU": { year: 1898, event: "Guam was ceded by Spain to the United States in 1898 after the Spanish–American War; it is an unincorporated U.S. Territory. Japan occupied the island from 1941 to 1944", source: "https://en.wikipedia.org/wiki/History_of_Guam" },
   "GW": { year: 1974, event: "Guinea-Bissau's 1973 declaration of independence from Portugal was recognised by Portugal in 1974", source: "https://en.wikipedia.org/wiki/History_of_Guinea-Bissau" },
   "GY": { year: 1966, event: "Independence from the United Kingdom, 26 May 1966", note: "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.", source: "https://en.wikipedia.org/wiki/History_of_Guyana" },
   "HK": { year: 1997, event: "Hong Kong's sovereignty was transferred from the United Kingdom to the People's Republic of China on 1 July 1997, when it became a Special Administrative Region under the 'one country, two systems' principle", source: "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong" },
@@ -2344,6 +2380,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "MM": { year: 1948, event: "Burma (now Myanmar) became independent from the United Kingdom on 4 January 1948", source: "https://en.wikipedia.org/wiki/British_rule_in_Burma" },
   "MN": { year: 1911, event: "Outer Mongolia declared independence from Qing China in 1911; its independence was reaffirmed in 1921", source: "https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1911" },
   "MO": { year: 1999, event: "Macau's sovereignty was transferred from Portugal to the People's Republic of China on 20 December 1999, when it became a Special Administrative Region; Macau had been a Portuguese territory since 1557", source: "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau" },
+  "MP": { year: 1978, event: "The Northern Mariana Islands came under U.S. administration in 1944 and, after Spanish (to 1899), German (1899–1914) and Japanese (1914–1944) rule, entered political union with the United States as a Commonwealth in 1978", source: "https://en.wikipedia.org/wiki/History_of_the_Northern_Mariana_Islands" },
   "MR": { year: 1960, event: "Mauritania became independent from France on 28 November 1960", source: "https://en.wikipedia.org/wiki/History_of_Mauritania" },
   "MT": { year: 1964, event: "Independence from the United Kingdom, 21 September 1964", note: "Malta became a republic in 1974.", source: "https://en.wikipedia.org/wiki/History_of_Malta" },
   "MU": { year: 1968, event: "Mauritius became independent from the United Kingdom on 12 March 1968", source: "https://en.wikipedia.org/wiki/History_of_Mauritius" },
@@ -2364,6 +2401,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "PG": { year: 1975, event: "Papua New Guinea became independent from Australia on 16 September 1975", source: "https://en.wikipedia.org/wiki/History_of_Papua_New_Guinea" },
   "PH": { year: 1946, event: "Independence recognised by the United States under the Treaty of Manila, 4 July 1946", note: "Independence had first been declared from Spain on 12 June 1898 — the date the country now observes — but the islands passed to American administration that same year.", source: "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)" },
   "PK": { year: 1947, event: "Pakistan became independent from the United Kingdom on 14 August 1947 at the partition of British India", source: "https://en.wikipedia.org/wiki/Partition_of_India" },
+  "PR": { year: 1898, event: "Puerto Rico was ceded by Spain to the United States in 1898 after the Spanish–American War; it is today a U.S. Commonwealth (Estado Libre Asociado)", source: "https://en.wikipedia.org/wiki/History_of_Puerto_Rico" },
   "PS": { year: 1988, event: "The Palestinian Declaration of Independence proclaimed the State of Palestine on 15 November 1988; the territory had been the British Mandate for Palestine from 1920 to 1948", source: "https://en.wikipedia.org/wiki/Palestinian_Declaration_of_Independence" },
   "PW": { year: 1994, event: "Palau became a fully sovereign state on 1 October 1994 under a Compact of Free Association with the United States, ending the US-administered UN Trust Territory of the Pacific Islands; the self-governing Republic had been established in 1981", source: "https://en.wikipedia.org/wiki/History_of_Palau" },
   "PY": { year: 1811, event: "Paraguay declared independence from Spain on 14–15 May 1811", source: "https://en.wikipedia.org/wiki/History_of_Paraguay" },
@@ -2400,6 +2438,7 @@ export const NATIONAL_INDEPENDENCE: Readonly<Record<string, NationalIndependence
   "UZ": { year: 1991, event: "Uzbekistan declared independence from the Soviet Union on 31 August 1991", source: "https://en.wikipedia.org/wiki/History_of_Uzbekistan" },
   "VC": { year: 1979, event: "Saint Vincent and the Grenadines became independent from the United Kingdom on 27 October 1979", source: "https://en.wikipedia.org/wiki/History_of_Saint_Vincent_and_the_Grenadines" },
   "VE": { year: 1811, event: "Declaration of independence from Spain, 5 July 1811", note: "Independence was not secured until Carabobo in 1821, and Venezuela left Gran Colombia in 1830.", source: "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence" },
+  "VI": { year: 1917, event: "The United States bought the Danish West Indies from Denmark in 1917; they became the unincorporated U.S. Territory of the Virgin Islands", source: "https://en.wikipedia.org/wiki/History_of_the_United_States_Virgin_Islands" },
   "VN": { year: 1945, event: "Declaration of Independence proclaimed by Hồ Chí Minh, 2 September 1945", note: "French rule was not finally ended until the Geneva Accords of 1954, which also partitioned the country at the 17th parallel until 1976.", source: "https://en.wikipedia.org/wiki/Proclamation_of_Independence_of_the_Democratic_Republic_of_Vietnam" },
   "VU": { year: 1980, event: "Vanuatu became independent on 30 July 1980, ending the British-French New Hebrides condominium", source: "https://en.wikipedia.org/wiki/History_of_Vanuatu" },
   "WS": { year: 1962, event: "Samoa (then Western Samoa) became independent on 1 January 1962, ending New Zealand's administration — the first Polynesian nation to reestablish independence in the 20th century", source: "https://en.wikipedia.org/wiki/History_of_Samoa" },
@@ -2455,6 +2494,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The rising Sun of May at the top is the sun of the national anthem's line \"a new and glorious nation rises to the surface of the Earth\" — the birth of the country, not merely a decorative sun. In the oval, two clasped hands are the union of the provinces and stand for friendship, peace and brotherhood; they hold up a pike, which is power and the willingness to defend freedom, and the red Phrygian cap on its point is the liberty cap of the French Revolution. Read together, the hands and the cap are the national motto, \"en unión y libertad\" — in unity and freedom — the idea being that freedom is reached through unity. The laurel branches framing the whole are the classical crown of the victor, for triumph and glory.",
     sources: [
       { title: "Coat of arms of Argentina — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
+    ],
+  },
+  "as-seal": {
+    description: "The seal is built from the emblems of the faʻamatai, the Samoan chiefly system: the fue (fly-whisk) for the wisdom of the talking chief, the toʻotoʻo (orator's staff) for his authority, and the tanoa (kava bowl) for service to the chief, all on a tapa-cloth ground for Samoan artistry. The motto reads Sāmoa Muamua Le Atua — “Samoa, let God be first.” The date 17 April 1900 marks the day American Samoa became a U.S. territory.",
+    sources: [
+      { title: "Seal of American Samoa — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
     ],
   },
   "at-arms": {
@@ -2911,6 +2956,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Guatemala — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
     ],
   },
+  "gu-seal": {
+    description: "Approved in 1946, the seal takes the pointed shape of a Chamorro slingstone, the ancient weapon of the islands. Within it a coconut tree — the tree of life — bends but does not break, for a people tested by famine, war and calamity yet enduring; a flying proa, the swift Chamorro outrigger, speaks to their seafaring skill; and the Hagåtña river meeting the sea marks a willingness to share the land's resources. GUAM runs across the centre in red.",
+    sources: [
+      { title: "Seal of Guam — Wikipedia", url: "https://en.wikipedia.org/wiki/Seal_of_Guam" },
+    ],
+  },
   "gw-arms": {
     description: "The black star is the Black Star of Africa, the emblem of the PAIGC that led the country to independence. Below it a scallop shell marks Guinea-Bissau's place on the West African coast, and two olive branches curve up on either side. The scroll reads Unidade, Luta, Progresso — “Unity, Struggle, Progress.”",
     sources: [
@@ -3223,6 +3274,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Flag of Macau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     ],
   },
+  "mp-seal": {
+    description: "The grey latte stone — the carved pillar on which the ancient Chamorro raised their houses — stands for the Chamorro people; the white star for the Commonwealth's union with the United States; and the mwarmwar, a garland of ylang-ylang, plumeria, peacock flower and Pacific basil, for the Carolinian people who also settled the islands. The blue field is the Pacific and the Mariana Trench.",
+    sources: [
+      { title: "Flag of the Northern Mariana Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
+    ],
+  },
   "mr-arms": {
     description: "A gold star and crescent — the emblems of Islam — stand between a date palm and an ear of millet, the tree and the grain of the country, on the green of the flag. The ring around them names the Islamic Republic of Mauritania in Arabic and French.",
     sources: [
@@ -3383,6 +3440,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The white crowned eagle on red is the oldest continuously used state emblem in Europe, borne by the Piast dynasty from the 13th century, and the crown is the point of it: the People's Republic used the same eagle with the crown removed from 1944, legalised in 1952, and restoring the crown in the Act of 22 February 1990 was how the reborn republic marked the end of communist rule. The current drawing is by Andrzej Heidrich and differs noticeably from Zygmunt Kamiński's pre-war eagle, which the communist version had also deformed about the head and eye.",
     sources: [
       { title: "Coat of arms of Poland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Poland" },
+    ],
+  },
+  "pr-arms": {
+    description: "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
+    sources: [
+      { title: "Coat of arms of Puerto Rico — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico" },
     ],
   },
   "ps-arms": {
@@ -3696,6 +3759,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
     sources: [
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
+  "vi-seal": {
+    description: "The eagle carries a sprig of laurel for victory in one talon and three blue arrows in the other — one for each of the three main islands, Saint Croix, Saint Thomas and Saint John — flanked by the letters V and I for Virgin Islands. The blue of its breast shield matches the flag and shield of the United States, of which the territory has been part since it was bought from Denmark in 1917.",
+    sources: [
+      { title: "Flag of the United States Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
     ],
   },
   "vn-emblem": {
