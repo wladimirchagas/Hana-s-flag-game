@@ -626,7 +626,10 @@ export function FlagGrid({
                     </span>
                     <span className="flag-grid__name">
                       <AutoFitName className="flag-grid__name-text" text={item.name} />
-                      {item.capital && (
+                      {/* The capital is country context that belongs beside the
+                          flag, but reads as noise under a coat of arms or a
+                          passport cover — show it only in the flag view. */}
+                      {item.capital && effectiveContentType === "flag" && (
                         <span className="flag-grid__city-sub">
                           Capital: {item.capital}
                         </span>
