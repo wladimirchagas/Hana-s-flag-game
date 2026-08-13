@@ -304,6 +304,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bj-arms", category: "coatofarms", name: "Coat of arms of Benin", from: 1964, to: 9999, path: "national-flags/bj/bj-arms.svg", design: "A quartered shield with a Somba castle, the Star of Benin, a ship and a palm tree, held by two leopards.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin" },
     { id: "bj-passport", category: "passport", name: "Passport of Benin", path: "national-flags/bj/bj-passport.webp", design: "The cover of the Benin passport.", source: "https://gicg.net/passport/bj/" },
   ],
+  "BM": [
+    { id: "bm-official-national", category: "official", name: "Flag of Bermuda", from: 1910, to: 9999, path: "flags/bm.svg", design: "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Bermuda" },
+    { id: "bm-current", category: "historical", name: "Flag of Bermuda", from: 1910, to: 9999, path: "flags/bm.svg", design: "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Bermuda" },
+    { id: "bm-arms", category: "coatofarms", name: "Coat of arms of Bermuda", from: 1910, to: 9999, path: "national-flags/bm/bm-arms.svg", design: "Argent, on a mount vert a lion sejant affronté gules supporting an antique shield azure charged with a representation of the wreck of the ship Sea Venture proper.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
+  ],
   "BN": [
     { id: "bn-official-national", category: "official", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
     { id: "bn-current", category: "historical", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
@@ -720,6 +725,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fj-arms", category: "coatofarms", name: "Coat of arms of Fiji", from: 1908, to: 9999, path: "national-flags/fj/fj-arms.svg", design: "A shield of the St George's cross with a lion and island crops, held by two Fijian warriors.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
     { id: "fj-passport", category: "passport", name: "Passport of Fiji", path: "national-flags/fj/fj-passport.webp", design: "The cover of the Fiji passport.", source: "https://gicg.net/passport/fj/" },
   ],
+  "FK": [
+    { id: "fk-official-national", category: "official", name: "Flag of the Falkland Islands", from: 1948, to: 9999, path: "flags/fk.svg", design: "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands" },
+    { id: "fk-current", category: "historical", name: "Flag of the Falkland Islands", from: 1948, to: 9999, path: "flags/fk.svg", design: "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands" },
+    { id: "fk-arms", category: "coatofarms", name: "Coat of arms of the Falkland Islands", from: 1948, to: 9999, path: "national-flags/fk/fk-arms.svg", design: "A ram standing on tussock grass above a sea of blue and white wavy lines bearing the ship Desire; motto 'DESIRE THE RIGHT'.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands" },
+  ],
   "FM": [
     { id: "fm-official-national", category: "official", name: "Flag of the Federated States of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "The national flag, adopted in 1978.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
     { id: "fm-current", category: "historical", name: "Flag of the Federated States of Micronesia", from: 1978, to: 9999, primary: true, path: "flags/fm.svg", design: "A light-blue field with four white stars in a diamond — blue for the Pacific Ocean, the four stars for the four states of the federation (Yap, Chuuk, Pohnpei and Kosrae).", source: "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia" },
@@ -804,6 +814,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gh-president", category: "standard", name: "Standard of the President of Ghana", from: 1966, to: 9999, path: "national-flags/gh/ghana-president.svg", design: "The national tricolour charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags" },
     { id: "gh-arms", category: "coatofarms", name: "Coat of arms of Ghana", from: 1957, to: 9999, path: "national-flags/gh/ghana-arms.svg", design: "A quartered shield on a green St George's Cross, supported by two golden eagles, crested with the black star, over the motto Freedom and Justice.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
     { id: "gh-passport", category: "passport", name: "Passport of Ghana", path: "national-flags/gh/gh-passport.webp", design: "The cover of the Ghana passport.", source: "https://gicg.net/passport/gh/" },
+  ],
+  "GI": [
+    { id: "gi-official-national", category: "official", name: "Flag of Gibraltar", from: 1502, to: 9999, path: "flags/gi.svg", design: "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.", source: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
+    { id: "gi-current", category: "historical", name: "Flag of Gibraltar", from: 1502, to: 9999, path: "flags/gi.svg", design: "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.", source: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
+    { id: "gi-arms", category: "coatofarms", name: "Coat of arms of Gibraltar", from: 1502, to: 9999, path: "national-flags/gi/gi-arms.svg", design: "Argent, upon a base gules a castle triple-towered gules ported and windowed sable, a golden key pendent from the portal.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar" },
   ],
   "GM": [
     { id: "gm-official-national", category: "official", name: "Flag of the Gambia", from: 1965, to: 9999, primary: true, path: "flags/gm.svg", design: "The national flag, adopted at independence in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Gambia" },
@@ -1156,6 +1171,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kw-emir", category: "standard", name: "Standard of the Emir of Kuwait", from: 1961, to: 9999, path: "national-flags/kw/kuwait-emir.svg", design: "The emir's standard.", source: "https://en.wikipedia.org/wiki/List_of_Kuwaiti_flags" },
     { id: "kw-emblem", category: "coatofarms", name: "Emblem of Kuwait", from: 1962, to: 9999, path: "national-flags/kw/kuwait-emblem.svg", design: "A golden falcon with wings spread, bearing a shield in the colours of the flag and holding a dhow sailing before a rising sun.", source: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
     { id: "kw-passport", category: "passport", name: "Passport of Kuwait", path: "national-flags/kw/kw-passport.webp", design: "The cover of the Kuwait passport.", source: "https://gicg.net/passport/kw/" },
+  ],
+  "KY": [
+    { id: "ky-official-national", category: "official", name: "Flag of the Cayman Islands", from: 1958, to: 9999, path: "flags/ky.svg", design: "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands" },
+    { id: "ky-current", category: "historical", name: "Flag of the Cayman Islands", from: 1958, to: 9999, path: "flags/ky.svg", design: "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands" },
+    { id: "ky-arms", category: "coatofarms", name: "Coat of arms of the Cayman Islands", from: 1958, to: 9999, path: "national-flags/ky/ky-arms.svg", design: "A shield with three green stars over blue-and-white wavy bands, a gold lion passant guardant on red in chief; crest a green turtle upon a coil of rope before a gold pineapple; motto 'He hath founded it upon the seas'.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
   ],
   "KZ": [
     { id: "kz-official-national", category: "official", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
@@ -2196,6 +2216,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ve-arms", category: "coatofarms", name: "Coat of arms of Venezuela", from: 1954, to: 9999, path: "national-flags/ve/venezuela-arms.svg", design: "A shield in the colours of the flag bearing a wheatsheaf, weapons and a running white horse, beneath two cornucopias and between olive and palm branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
     { id: "ve-passport", category: "passport", name: "Passport of Venezuela", path: "national-flags/ve/ve-passport.webp", design: "The cover of the Venezuela passport.", source: "https://gicg.net/passport/ve/" },
   ],
+  "VG": [
+    { id: "vg-official-national", category: "official", name: "Flag of the British Virgin Islands", from: 1960, to: 9999, path: "flags/vg.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands" },
+    { id: "vg-current", category: "historical", name: "Flag of the British Virgin Islands", from: 1960, to: 9999, path: "flags/vg.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands" },
+    { id: "vg-arms", category: "coatofarms", name: "Coat of arms of the British Virgin Islands", from: 1960, to: 9999, path: "national-flags/vg/vg-arms.svg", design: "Vert, a woman (Saint Ursula) robed argent holding a lit golden oil lamp, surrounded by eleven further golden lamps; motto VIGILATE.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands" },
+  ],
   "VI": [
     { id: "vi-official-national", category: "official", name: "Flag of the U.S. Virgin Islands", from: 1921, to: 9999, path: "flags/sub/US/US-VI.svg", design: "A white field bearing a simplified American eagle between the letters V and I.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
     { id: "vi-current", category: "historical", name: "Flag of the U.S. Virgin Islands", from: 1921, to: 9999, path: "flags/sub/US/US-VI.svg", design: "The flag of the U.S. Virgin Islands, adopted in 1921.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
@@ -2609,6 +2634,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Benin — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Benin" },
     ],
   },
+  "bm-arms": {
+    description: "Granted by Royal Warrant on 4 October 1910 though in use since the 1620s. A red lion — the lion of England, marking Bermuda's tie to Britain — holds a shield showing the wreck of the Sea Venture, the flagship bound for Jamestown that Sir George Somers deliberately ran onto Bermuda's reefs in a 1609 hurricane; its 150 survivors founded the colony, so the shipwreck that stranded them is remembered as the island's origin. The motto Quo Fata Ferunt — 'Whither the Fates Carry Us' — recalls that the settlers reached Bermuda by chance of storm.",
+    sources: [
+      { title: "Coat of arms of Bermuda — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
+    ],
+  },
   "bn-emblem": {
     description: "The emblem, adopted in 1959 and carried on the national flag, has five parts. The small swallow-tailed flag and the royal parasol at the top are the regalia of the sultanate's monarchy. The upraised wings behind them stand for the protection of justice, tranquillity, prosperity and peace. The crescent beneath is Islam, the state religion, and it is inscribed in Arabic with the national motto, \"Always in service with God's guidance\"; the banner below carries the country's name, \"Brunei, the Abode of Peace\". The two upturned hands at the sides are the government's pledge to preserve and promote the welfare of the people.",
     sources: [
@@ -2880,6 +2911,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Fiji — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
     ],
   },
+  "fk-arms": {
+    description: "Granted by Royal Warrant on 29 September 1948. A ram standing on tussock grass — the islands' native vegetation — stands for sheep farming, historically the Falklands' principal industry; below, on a blue-and-white wavy sea, sails the Desire, the ship of the English navigator John Davis, credited with sighting the islands in 1592. The motto 'Desire the Right' plays on the ship's name, and the arms flew throughout except during the brief Argentine occupation of 1982.",
+    sources: [
+      { title: "Coat of arms of the Falkland Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands" },
+    ],
+  },
   "fm-arms": {
     description: "Adopted in 1986, the seal shows a sprouted coconut adrift on a light-blue sea — the island nation's maritime heritage — beneath an arc of four white stars, one for each of the federated states: Chuuk, Kosrae, Pohnpei and Yap, exactly as on the national flag. The banner carries the motto “Peace, Unity, Liberty” and the year 1979, when the Constitution came into force. The design continues the earlier seal of the US-administered Trust Territory of the Pacific Islands.",
     sources: [
@@ -2945,6 +2982,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Each quarter of the shield names one thing the country rests on: a chief's machete crossed with the linguist's ceremonial staff for traditional authority; Osu Castle on the Gulf of Guinea, the seat of the president, for the national government; a cocoa tree for the country's agricultural wealth; and a gold mine for its minerals — the wealth that gave the Gold Coast its colonial name. The green St George's Cross bearing a gold lion, on blue, is the continuing link with the Commonwealth. The crest is the Black Star of Africa, the same star that stands at the centre of the flag, and the two golden tawny eagles supporting the shield wear the Order of the Star of Ghana. The scroll beneath reads Freedom and Justice.",
     sources: [
       { title: "Coat of arms of Ghana — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
+    ],
+  },
+  "gi-arms": {
+    description: "Gibraltar's arms were granted by a Royal Warrant of Isabella I of Castile on 10 July 1502, during the Spanish period — the oldest continuously-used coat of arms of any British Overseas Territory. The red three-towered castle, drawn in the style of the arms of Castile, stands for Gibraltar's strength and its command of the Rock; the golden key hanging beneath it, the warrant said, marks Gibraltar as 'the key between these our kingdoms in the Eastern and Western Seas' — the sentinel that controls passage through the Strait. The flag flies these same arms as a banner.",
+    sources: [
+      { title: "Coat of arms of Gibraltar — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar" },
     ],
   },
   "gm-arms": {
@@ -3173,6 +3216,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "Adopted in 1962, a year after independence, and designed by Mohammed Husni Zaki after the council of ministers asked for an emblem of Kuwait's past, present and future. The falcon is the Hawk of Quraish, the device of the line the Prophet Muhammad belonged to, found across the emblems of the Arabian peninsula; on its breast it carries a shield in the colours of the national flag. The dhow sailing before the rising sun is the country's maritime tradition — the pearling and trading fleet Kuwait was built on — and it is the same device Qatar still carries and the UAE carried until 2008. It replaced an older emblem of a falcon between two crossed flags.",
     sources: [
       { title: "Emblem of Kuwait — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Kuwait" },
+    ],
+  },
+  "ky-arms": {
+    description: "Granted by Royal Warrant on 14 May 1958. The three green stars are the three islands — Grand Cayman, Little Cayman and Cayman Brac — riding on blue-and-white wavy bands for the sea that surrounds them; the gold lion of England in the chief marks the British connection. Above the shield a green turtle recalls the islands' seafaring and turtling history, resting on a coil of rope for the traditional thatch-rope industry, with a pineapple behind it for the historic ties to Jamaica. The motto, from Psalm 24, 'He hath founded it upon the seas', speaks to both the islanders' Christian faith and their ocean setting.",
+    sources: [
+      { title: "Coat of arms of the Cayman Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
     ],
   },
   "kz-emblem": {
@@ -3792,6 +3841,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The shield is divided into the three colours of the national flag. On the red field a sheaf of wheat stands for the union of the states and for the country's agricultural wealth; on the yellow field weapons and two national flags tied with laurel stand for the victory of the war of independence; and on the blue field below a white horse runs free, for independence and liberty. Above the shield two crossed cornucopias pour out the country's wealth, and it is flanked by an olive branch and a palm branch tied with a band in the national colours — yellow for the nation's wealth, blue for the ocean that separates Venezuela from Spain, and red for the blood and courage of its people. The arms in this form were established by the Law of the National Flag, Coat of Arms and Anthem of 17 February 1954; in 2006 the horse was turned to run to the dexter, the direction it had faced in the arms of 1863.",
     sources: [
       { title: "Coat of arms of Venezuela — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Venezuela" },
+    ],
+  },
+  "vg-arms": {
+    description: "Adopted on 15 November 1960 when the territory became a Crown colony. The green shield shows Saint Ursula — the islands' patron, after whom Columbus named them 'Las Once Mil Vírgenes', the eleven thousand virgins — holding a lit golden oil lamp, with eleven more lamps around her for the virgin companions martyred with her in legend. The Latin motto Vigilate, 'be vigilant', reads the lamps as a call to watchfulness, echoing the parable of the wise virgins who kept their lamps burning.",
+    sources: [
+      { title: "Coat of arms of the British Virgin Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands" },
     ],
   },
   "vi-seal": {
