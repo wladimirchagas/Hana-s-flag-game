@@ -7795,6 +7795,46 @@
           "reuse": "flags/gb.svg",
           "design": "The national flag of the United Kingdom.",
           "source": "https://en.wikipedia.org/wiki/Union_Jack"
+        },
+        {
+          "category": "passport",
+          "id": "gb-passport-bno",
+          "name": "British National (Overseas) passport",
+          "reuse": "national-flags/gb/uk-passport.svg",
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "design": "The common-format British passport cover, shared by every class of British nationality; issued to British Nationals (Overseas) — a status created for Hong Kong residents before the 1997 handover. The class is shown on the data page inside, not the cover."
+        },
+        {
+          "category": "passport",
+          "id": "gb-passport-botc",
+          "name": "British Overseas Territories Citizen passport",
+          "reuse": "national-flags/gb/uk-passport.svg",
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "design": "The common-format British passport cover; issued to British Overseas Territories Citizens, connected to a territory such as Bermuda, Gibraltar or the Falklands. The class is shown on the data page inside."
+        },
+        {
+          "category": "passport",
+          "id": "gb-passport-boc",
+          "name": "British Overseas Citizen passport",
+          "reuse": "national-flags/gb/uk-passport.svg",
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "design": "The common-format British passport cover; issued to British Overseas Citizens — a residual status held mainly by people from former colonies who gained no other nationality at independence. The class is shown on the data page inside."
+        },
+        {
+          "category": "passport",
+          "id": "gb-passport-subject",
+          "name": "British Subject passport",
+          "reuse": "national-flags/gb/uk-passport.svg",
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "design": "The common-format British passport cover; issued to British Subjects — a residual imperial status held mainly by certain people connected to British India or the Republic of Ireland before 1949. The class is shown on the data page inside."
+        },
+        {
+          "category": "passport",
+          "id": "gb-passport-bpp",
+          "name": "British Protected Person passport",
+          "reuse": "national-flags/gb/uk-passport.svg",
+          "source": "https://en.wikipedia.org/wiki/British_passport",
+          "design": "The common-format British passport cover; issued to British Protected Persons — a status inherited from the protectorates and protected states of the Empire. The class is shown on the data page inside."
         }
       ]
     },
@@ -23052,6 +23092,14 @@
           "source": "https://en.wikipedia.org/wiki/United_States_passport",
           "sha256": "75cec6ecb43e5eba47d71eb89dfa043f1151a0fa2b22d39a69774b7935ff6b1f",
           "fetched": "2026-08-07"
+        },
+        {
+          "category": "passport",
+          "id": "us-passport-national",
+          "name": "United States non-citizen national passport",
+          "reuse": "national-flags/us/us-passport.svg",
+          "source": "https://en.wikipedia.org/wiki/United_States_passport",
+          "design": "The ordinary U.S. passport cover; issued to non-citizen U.S. nationals — people from American Samoa and Swains Island — whose data page states the bearer is a national, but not a citizen, of the United States."
         }
       ],
       "independence": {
