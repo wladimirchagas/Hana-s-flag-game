@@ -215,6 +215,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "aw-current", category: "historical", name: "Flag of Aruba", from: 1976, to: 9999, path: "flags/sub/NL/NL-AW.svg", design: "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
     { id: "aw-arms", category: "coatofarms", name: "Coat of arms of Aruba", from: 1955, to: 9999, path: "national-flags/aw/aw-arms.svg", design: "A white cross quartering the shield: an aloe plant, the Hooiberg hill over a wavy sea, clasped hands, and a cogwheel; a red lion crest, laurel-branch supporters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba" },
   ],
+  "AX": [
+    { id: "ax-official-national", category: "official", name: "Flag of Åland", from: 1954, to: 9999, path: "flags/ax.svg", design: "A red Nordic cross fimbriated in yellow on a blue field.", source: "https://en.wikipedia.org/wiki/Flag_of_%C3%85land" },
+    { id: "ax-current", category: "historical", name: "Flag of Åland", from: 1954, to: 9999, path: "flags/ax.svg", design: "Adopted in 1954: a Swedish-style blue field with a red cross outlined in yellow, the colours of Sweden within the cross of Finland.", source: "https://en.wikipedia.org/wiki/Flag_of_%C3%85land" },
+    { id: "ax-arms", category: "coatofarms", name: "Coat of arms of Åland", from: 1952, to: 9999, path: "national-flags/ax/ax-arms.svg", design: "Azure, a stag trippant Or — a golden red deer on blue.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land" },
+  ],
   "AZ": [
     { id: "az-official-national", category: "official", name: "Flag of Azerbaijan", from: 1918, to: 9999, primary: true, path: "flags/az.svg", design: "The national flag of Azerbaijan, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
     { id: "az-ssr", category: "historical", name: "Flag of the Azerbaijan SSR", from: 1952, to: 1991, priorPolity: "the Azerbaijan Soviet Socialist Republic", path: "national-flags/az/az-ssr.svg", design: "Red with a blue stripe and the gold hammer, sickle and star — the republic's flag within the Soviet Union.", source: "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan" },
@@ -476,6 +481,11 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ci-french", category: "historical", name: "Flag of France", from: 1893, to: 1959, sovereign: "France", path: "national-flags/ci/ci-french.svg", design: "The French Tricolour, flown over Ivory Coast under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
     { id: "ci-arms", category: "coatofarms", name: "Coat of arms of Ivory Coast", from: 1960, to: 9999, path: "national-flags/ci/ci-arms.svg", design: "A rising sun over an elephant's head, above a banner with the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
     { id: "ci-passport", category: "passport", name: "Passport of Ivory Coast", path: "national-flags/ci/ci-passport.webp", design: "The cover of the Ivory Coast passport.", source: "https://gicg.net/passport/ci/" },
+  ],
+  "CK": [
+    { id: "ck-official-national", category: "official", name: "Flag of the Cook Islands", from: 1979, to: 9999, path: "flags/ck.svg", design: "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
+    { id: "ck-current", category: "historical", name: "Flag of the Cook Islands", from: 1979, to: 9999, path: "flags/ck.svg", design: "Adopted in 1979: fifteen white stars in a circle — one for each island — on a blue ensign.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
+    { id: "ck-arms", category: "coatofarms", name: "Coat of arms of the Cook Islands", from: 1978, to: 9999, path: "national-flags/ck/ck-arms.svg", design: "Azure, fifteen white stars in a circle; supporters a flying fish and a white tern; crest a red-feather chieftain's headdress; a white cross and Rarotongan club in saltire behind; palm leaves and a pearl in base.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands" },
   ],
   "CL": [
     { id: "cl-official-national", category: "official", name: "Flag of Chile", from: 1817, to: 9999, primary: true, path: "flags/cl.svg", design: "The national flag of Chile, in the form adopted in 1817.", source: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
@@ -1615,6 +1625,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nr-arms", category: "coatofarms", name: "Coat of arms of Nauru", from: 1968, to: 9999, path: "national-flags/nr/nr-arms.svg", design: "A frigatebird and phosphorus symbol beneath a twelve-pointed star, framed by palm and feathers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
     { id: "nr-passport", category: "passport", name: "Passport of Nauru", path: "national-flags/nr/nr-passport.webp", design: "The cover of the Nauru passport.", source: "https://gicg.net/passport/nr/" },
   ],
+  "NU": [
+    { id: "nu-official-national", category: "official", name: "Flag of Niue", from: 1975, to: 9999, path: "flags/nu.svg", design: "A golden-yellow field with the Union Flag in the canton, the Union Flag itself defaced with a blue disc and yellow stars.", source: "https://en.wikipedia.org/wiki/Flag_of_Niue" },
+    { id: "nu-current", category: "historical", name: "Flag of Niue", from: 1975, to: 9999, path: "flags/nu.svg", design: "Adopted in 1975: a yellow field with a defaced Union Flag in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Niue" },
+  ],
   "NZ": [
     { id: "nz-official-national", category: "official", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
     { id: "nz-current", category: "historical", name: "Flag of New Zealand", from: 1903, to: 9999, primary: true, path: "flags/nz.svg", design: "The national flag of New Zealand, in the form adopted in 1903.", source: "https://en.wikipedia.org/wiki/Flag_of_New_Zealand" },
@@ -2052,6 +2066,10 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tj-russian-empire", category: "historical", name: "Flag of the Russian Empire", from: 1868, to: 1917, sovereign: "the Russian Empire", path: "national-flags/tj/tj-russian-empire.svg", design: "The white-blue-red flag of the Russian Empire, which ruled the Tajik lands from 1868 until the empire fell in 1917.", source: "https://en.wikipedia.org/wiki/Russian_Empire" },
     { id: "tj-emblem", category: "coatofarms", name: "Emblem of Tajikistan", from: 1993, to: 9999, path: "national-flags/tj/tj-emblem.svg", design: "A crown and arc of stars over a sun and the Pamir mountains, in a wreath of wheat and cotton.", source: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
     { id: "tj-passport", category: "passport", name: "Passport of Tajikistan", path: "national-flags/tj/tj-passport.webp", design: "The cover of the Tajikistan passport.", source: "https://gicg.net/passport/tj/" },
+  ],
+  "TK": [
+    { id: "tk-official-national", category: "official", name: "Flag of Tokelau", from: 2009, to: 9999, path: "flags/tk.svg", design: "A blue field bearing a yellow Tokelauan canoe sailing towards the Southern Cross, shown as four white stars.", source: "https://en.wikipedia.org/wiki/Flag_of_Tokelau" },
+    { id: "tk-current", category: "historical", name: "Flag of Tokelau", from: 2009, to: 9999, path: "flags/tk.svg", design: "Adopted in 2009: a yellow canoe sailing toward the Southern Cross on blue.", source: "https://en.wikipedia.org/wiki/Flag_of_Tokelau" },
   ],
   "TL": [
     { id: "tl-official-national", category: "official", name: "Flag of Timor-Leste", from: 2002, to: 9999, primary: true, path: "flags/tl.svg", design: "The national flag, first raised at the 1975 proclamation of independence and restored in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste" },
@@ -2645,6 +2663,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Aruba — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba" },
     ],
   },
+  "ax-arms": {
+    description: "The golden stag on blue has an unusual origin: the arms were granted to the Swedish province of Öland in 1560 and passed to Åland through a centuries-long heraldic mix-up of the two near-identically-named provinces, becoming Åland's official arms only on 10 December 1952. The stag's own symbolism is not recorded; Åland's earliest known seal, from 1326, instead showed Saint Olaf, the islands' patron saint.",
+    sources: [
+      { title: "Coat of arms of Åland — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land" },
+    ],
+  },
   "az-emblem": {
     description: "The focal point is a stylised flame, a reference to the country's eternal oil and gas fires — the reason Azerbaijan is called the land of eternal fire. The shield behind it carries the colours of the national flag with its crescent and eight-pointed star. Supporting it are a crossed stalk of wheat and an oak bough: wheat is abundance, and wheat bread the country's staple food, while the oak stands for strength and endurance. The design is not new — the Azerbaijan Democratic Republic opened a competition for a national emblem on 30 January 1920 but fell in April before one could be approved; a design developed in 1919–1920 was taken up again after independence and confirmed, with alterations, by constitutional law on 19 January 1993.",
     sources: [
@@ -2830,6 +2854,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The elephant's head is the country's namesake — Côte d'Ivoire, the Ivory Coast — and an emblem of its strength. Above it a rising sun stands for the new beginning of independence, and the banner carries the country's name. Together they speak to national solidarity in the face of adversity.",
     sources: [
       { title: "Coat of arms of Ivory Coast — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
+    ],
+  },
+  "ck-arms": {
+    description: "Adopted on 4 August 1978. The fifteen white stars ringing the blue shield are the fifteen islands of the group, drawn in a circle so none stands above another. The supporters are creatures of the sea and sky — the flying fish (maroro) and the white tern (kakaia); above sits a chieftain's headdress of red feathers, honouring the traditional rank system. Behind the shield a white cross for Christianity crosses a Rarotongan ceremonial club for Māori tradition and oratory, and palm leaves with a pearl fill the base.",
+    sources: [
+      { title: "Coat of arms of the Cook Islands — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands" },
     ],
   },
   "cl-mapuche": {
@@ -3571,6 +3601,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Coat of arms of Nauru — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nauru" },
     ],
   },
+  "nu-official-national": {
+    description: "Adopted on 15 October 1975. The bright yellow field stands for the sunshine of Niue and the warmth the Niuean people feel towards New Zealand; the Union Flag marks the protection the United Kingdom granted in 1900 at the petition of Niue's kings and chiefs. On it four small yellow stars form the Southern Cross, for the association with New Zealand, and a larger star on a blue disc stands for the deep sea around the self-governing island.",
+    sources: [
+      { title: "Flag of Niue — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Niue" },
+    ],
+  },
   "nz-maori": {
     description: "Designed by Hiraina Marsden in 1990 and recognised in 2009 as the national Māori flag, its colours follow the Māori creation account: black for Te Korekore, the realm of potential being; red for Te Whai Ao, the coming into being; and white for Te Ao Mārama, the world of light. The white koru — an unfurling fern frond — stands for renewal and hope, and the white also evokes Aotearoa, the “land of the long white cloud.”",
     sources: [
@@ -3845,6 +3881,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "A golden crown beneath a semicircle of seven stars — the crown (toj) that names the country and the seven stars the Tajik people hold sacred — rises over a sun and the peaks of the Pamir mountains. A wreath of wheat ears and cotton bolls, bound in the red, white and green of the flag, frames the whole, and an open book sits at the foot for knowledge.",
     sources: [
       { title: "Emblem of Tajikistan — Wikipedia", url: "https://en.wikipedia.org/wiki/Emblem_of_Tajikistan" },
+    ],
+  },
+  "tk-official-national": {
+    description: "Tokelau's first official flag, presented on 7 September 2009. A yellow Tokelauan canoe sails across a blue field towards the Southern Cross — the four white stars — which serves as the navigator's guide. The voyaging canoe stands for Tokelau's own journey towards the system of governance that best fits its people, steered, like the ancient navigators, by the stars.",
+    sources: [
+      { title: "Flag of Tokelau — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tokelau" },
     ],
   },
   "tl-arms": {
