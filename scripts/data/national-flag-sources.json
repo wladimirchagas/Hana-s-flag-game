@@ -851,6 +851,19 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Austria"
         },
         {
+          "id": "at-habsburg",
+          "category": "historical",
+          "from": 1804,
+          "to": 1918,
+          "name": "Flag of the Habsburg Monarchy",
+          "commons": "Flag of the Habsburg Monarchy.svg",
+          "file": "at/habsburg.svg",
+          "design": "A black-over-gold horizontal bicolour, the dynastic colours of the House of Habsburg, flown as the flag of the Austrian Empire and Austria-Hungary until the monarchy fell in 1918. The red-white-red now flown is far older, dating to the medieval Babenberg dukes.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Austria",
+          "sha256": "90526cda3e3240f189c776274108f49fe46a4bc83af28317793759e00f4d6549",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "at-state",
           "category": "civilstate",
           "name": "State flag of Austria",
@@ -3842,6 +3855,19 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Switzerland"
         },
         {
+          "id": "ch-helvetic",
+          "category": "historical",
+          "from": 1798,
+          "to": 1803,
+          "name": "Flag of the Helvetic Republic",
+          "commons": "Flag of the Helvetic Republic (French).svg",
+          "file": "ch/helvetic.svg",
+          "design": "A green-red-yellow horizontal tricolour, the flag of the short-lived Helvetic Republic set up under French influence from 1798 to 1803. The white cross on red returned when the Confederation was restored.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Switzerland",
+          "sha256": "30e920460b2fa00647259fc9573a6a6c2a3a0759c6449466681513da4142281b",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "ch-civil-ensign",
           "category": "maritime",
           "name": "Civil and state ensign of Switzerland",
@@ -5055,6 +5081,19 @@
           "reuse": "flags/cz.svg",
           "design": "The national flag of Czechia, in the form adopted in 1993.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Czechia"
+        },
+        {
+          "id": "cz-bohemia",
+          "category": "historical",
+          "from": 1918,
+          "to": 1920,
+          "name": "Flag of Bohemia",
+          "commons": "Flag of Bohemia.svg",
+          "file": "cz/bohemia.svg",
+          "design": "A white-over-red horizontal bicolour, the historic flag of the Kingdom of Bohemia and the Czech lands. It served as Czechoslovakia's first national flag from 1918 until the blue hoist triangle — used to distinguish it from Poland's flag — was added in 1920.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Czech_Republic",
+          "sha256": "79db197a4342eb8bad6af1d21e051f7287c5e79930815197eabc285ec5ec1e03",
+          "fetched": "2026-08-13"
         },
         {
           "id": "cz-president",
@@ -7849,6 +7888,19 @@
           "reuse": "flags/gr.svg",
           "design": "The national flag of Greece, in the form adopted in 1822.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Greece"
+        },
+        {
+          "id": "gr-kingdom",
+          "category": "historical",
+          "from": 1863,
+          "to": 1973,
+          "name": "State flag of the Kingdom of Greece",
+          "commons": "State Flag of Greece (1863-1924 and 1935-1973).svg",
+          "file": "gr/kingdom.svg",
+          "design": "A blue field with a white cross throughout and the royal crown at the centre — the state flag of the Kingdom of Greece under the House of Glücksburg (1863–1924 and 1935–1973). The crown was dropped when the monarchy was abolished.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Greece",
+          "sha256": "60406524c65e3db1c60e3cbb08a0c4792e197cdc58cc93015ac10a0373501976",
+          "fetched": "2026-08-13"
         },
         {
           "id": "gr-naval-jack",
@@ -18349,6 +18401,19 @@
           "reuse": "flags/sk.svg",
           "design": "The national flag of Slovakia, in the form adopted in 1992.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Slovakia"
+        },
+        {
+          "id": "sk-1939",
+          "category": "historical",
+          "from": 1939,
+          "to": 1945,
+          "name": "Flag of Slovakia (1939–1945)",
+          "commons": "Flag of Slovakia (1939–1945).svg",
+          "file": "sk/slovakia-1939.svg",
+          "design": "The plain white-blue-red Pan-Slavic tricolour without the national arms, flown by the first Slovak Republic (1939–1945). Slovakia's present flag added the coat of arms in 1992 to distinguish the tricolour from Russia's and Slovenia's.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Slovakia",
+          "sha256": "af72b7769e6b0c73a9bb777a613f91871b0c7f1ca7ad077c2e33343a8162d37d",
+          "fetched": "2026-08-13"
         },
         {
           "id": "sk-president",
