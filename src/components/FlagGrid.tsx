@@ -38,6 +38,10 @@ import {
   GRID_CONTENT_TYPE_ORDER,
   type GridContentType,
 } from "../lib/gridContentType";
+import {
+  passportColorGroup,
+  PASSPORT_COLOR_GROUP_ORDER,
+} from "../lib/passportColorGroups";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -82,7 +86,8 @@ type GroupMode =
   | "color"
   | "similarity"
   | "drive-side"
-  | "aspect-ratio";
+  | "aspect-ratio"
+  | "passport-color";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -95,6 +100,8 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   similarity: "By similarity",
   "drive-side": "By driving side",
   "aspect-ratio": "By aspect ratio",
+  // Passports-view only — buckets by the passport cover's colour family.
+  "passport-color": "By colour",
 };
 
 // The chosen grouping is remembered across visits (per the UX revision: the
@@ -128,6 +135,28 @@ const TODAY_ONLY_MODES = new Set<GroupMode>([
   "drive-side",
   "aspect-ratio",
 ]);
+
+// Modes that only make sense in a specific "Show" view. "passport-color" groups
+// by the passport cover's colour, so it is offered only in the Passports view.
+const PASSPORT_ONLY_MODES = new Set<GroupMode>(["passport-color"]);
+
+/** Whether a grouping mode is offered for the given view. The flag-appearance
+ *  modes (shape/family/colour/…) describe a FLAG and show only in the modern
+ *  flag view; "passport-color" shows only in the Passports view; everything else
+ *  (A–Z, continent, sub-continent) applies to any country-level item. */
+function groupModeAvailableFor(
+  m: GroupMode,
+  contentType: GridContentType,
+  isModernEra: boolean,
+): boolean {
+  if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
+  if (TODAY_ONLY_MODES.has(m)) return isModernEra && contentType === "flag";
+  return true;
+}
+
+// Heading for the countries with no bundled passport when grouping the Passports
+// view by colour — placed last.
+const PASSPORT_NO_COVER_GROUP = "No passport";
 
 export function FlagGrid({
   entries,
@@ -181,23 +210,16 @@ export function FlagGrid({
     return () => window.removeEventListener(FLAG_DATA_EVENT, reread);
   }, [isModernEra]);
 
-  // When the era switches away from today, fall back to "none" if the active
-  // mode is not available for historical eras.
+  // Keep the active grouping valid for the current view. If the era switches to
+  // history, or the "Show" type changes so the active grouping no longer applies
+  // (a flag-appearance mode outside the flag view, or "By colour" outside the
+  // Passports view), fall back to "No grouping". Covers both the initial load
+  // and later switches, so the active grouping is always one the dropdown offers.
   useEffect(() => {
-    if (!isModernEra && TODAY_ONLY_MODES.has(groupMode)) {
+    if (!groupModeAvailableFor(groupMode, effectiveContentType, isModernEra)) {
       setGroupMode("none");
     }
-  }, [isModernEra, groupMode]);
-
-  // A returning visitor could have both a stored symbol content type AND a
-  // stored flag-appearance grouping. Reconcile them whenever either changes, so
-  // the active grouping is always one the dropdown still offers for this view
-  // (this covers both the initial load and a later switch of the "Show" type).
-  useEffect(() => {
-    if (effectiveContentType !== "flag" && TODAY_ONLY_MODES.has(groupMode)) {
-      setGroupMode("none");
-    }
-  }, [effectiveContentType, groupMode]);
+  }, [groupMode, effectiveContentType, isModernEra]);
 
   // Apply the free-text name filter before grouping. A trimmed, case- and
   // accent-insensitive substring match against the entry name ("sao" matches
@@ -320,6 +342,13 @@ export function FlagGrid({
         const label = FLAG_ASPECT_RATIO_LABELS[ratio] ?? ratio;
         push(label, e);
       }
+    } else if (groupMode === "passport-color") {
+      for (const e of sorted) {
+        // Bucket by the passport cover's colour family; a country with no
+        // bundled passport goes to a "No passport" group shown last.
+        const fam = passportColorGroup(e.id);
+        push(fam ?? PASSPORT_NO_COVER_GROUP, e);
+      }
     }
 
     // Sort the bucket list.
@@ -364,6 +393,12 @@ export function FlagGrid({
         const ob = aspectRatioHeadingOrder(b);
         if (oa !== ob) return oa - ob;
       }
+      if (groupMode === "passport-color") {
+        // Red, Blue, Green, Black, Other, then "No passport" last.
+        const oa = passportColorHeadingOrder(a);
+        const ob = passportColorHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
       if (groupMode === "alpha") {
         // Keep "#" at the end.
         if (a === "#" && b !== "#") return 1;
@@ -375,14 +410,8 @@ export function FlagGrid({
     return list.map(([heading, items]) => ({ heading, items }));
   }, [filteredEntries, groupMode]);
 
-  // The flag-appearance groupings (shape/family/colour/similarity/aspect ratio)
-  // and driving side describe a FLAG or a car — never a coat of arms or a
-  // passport — so they are offered only in the modern flag view. Everything else
-  // (A–Z, continent, sub-continent) applies to any country-level item.
   const groupModeAvailable = (m: GroupMode): boolean =>
-    TODAY_ONLY_MODES.has(m)
-      ? isModernEra && effectiveContentType === "flag"
-      : true;
+    groupModeAvailableFor(m, effectiveContentType, isModernEra);
 
   const sectionTitle =
     effectiveContentType === "flag"
@@ -616,6 +645,13 @@ function shapeHeadingOrder(heading: string): number {
     if (FLAG_SHAPE_LABELS[FLAG_SHAPE_ORDER[i]] === heading) return i;
   }
   return 100;
+}
+
+function passportColorHeadingOrder(heading: string): number {
+  // "No passport" always last.
+  if (heading === PASSPORT_NO_COVER_GROUP) return 999;
+  const i = PASSPORT_COLOR_GROUP_ORDER.indexOf(heading as (typeof PASSPORT_COLOR_GROUP_ORDER)[number]);
+  return i === -1 ? 500 : i;
 }
 
 function familyHeadingOrder(heading: string): number {
