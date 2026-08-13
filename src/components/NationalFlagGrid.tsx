@@ -14,8 +14,9 @@ import { ENTITY_STATUS_LABEL, specialEntitiesOf, type SpecialEntity } from "../l
  *                      national flag (badged "Current national flag"), followed by
  *                      any others with official status — Bolivia's Wiphala,
  *                      Australia's Aboriginal and Torres Strait Islander flags.
- *   Historical flags   every national flag it has flown, newest first, the current
- *                      one included; the label carries the year each was introduced.
+ *   Historical flags   the OLDER national flags it has flown, newest first — the
+ *                      current flag is NOT here (it lives in the official section and
+ *                      the fact-sheet above); the label carries the years each flew.
  *                      This section reaches back BEFORE independence, so it also holds
  *                      colonial-era flags — Portugal's royal banners over Brazil, the
  *                      Union Flag over Australia. Every one of those carries a
