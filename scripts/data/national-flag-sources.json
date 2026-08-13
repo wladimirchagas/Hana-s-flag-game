@@ -1709,6 +1709,19 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Belgium"
         },
         {
+          "id": "be-1830",
+          "category": "historical",
+          "from": 1830,
+          "to": 1831,
+          "name": "Flag of Belgium (1830)",
+          "commons": "Flag of Belgium (1830).svg",
+          "file": "be/belgium-1830.svg",
+          "design": "An early horizontal arrangement of the black, yellow and red colours of the 1830 revolution, replaced in 1831 by the vertical black-yellow-red tricolour flown today.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Belgium",
+          "sha256": "b759a15b0e169c205cb55d53f7fbffcd9176173df4f81d57678432e3d8e88d7f",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "be-civil-ensign",
           "category": "maritime",
           "name": "Civil ensign of Belgium",
@@ -2959,6 +2972,19 @@
           "reuse": "flags/bt.svg",
           "design": "The national flag, standardised in 1969.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan"
+        },
+        {
+          "id": "bt-1956",
+          "category": "historical",
+          "from": 1956,
+          "to": 1969,
+          "name": "Flag of Bhutan (1956–1969)",
+          "commons": "Flag of Bhutan (1956–1969).svg",
+          "file": "bt/bhutan-1956.svg",
+          "design": "An earlier version of the Druk (Thunder Dragon) flag; the dragon and the diagonal division of the field were revised to the present design in 1969.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bhutan",
+          "sha256": "49690b505038a574a55f18f94d8a0e08df1580256e75887faaa471710644412c",
+          "fetched": "2026-08-13"
         },
         {
           "id": "bt-arms",
@@ -11604,6 +11630,19 @@
           "reuse": "flags/li.svg",
           "design": "The national flag, in the form adopted in 1937.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein"
+        },
+        {
+          "id": "li-1921",
+          "category": "historical",
+          "from": 1921,
+          "to": 1937,
+          "name": "Flag of Liechtenstein (1921–1937)",
+          "commons": "Flag of Liechtenstein (1921–1937).svg",
+          "file": "li/liechtenstein-1921.svg",
+          "design": "The plain blue-over-red horizontal bicolour, without the gold crown. The crown was added in 1937 after the 1936 Berlin Olympics revealed Liechtenstein's flag was identical to Haiti's.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein",
+          "sha256": "510bf0cc2f1f182a050d0d6fd33ffac7e25860190a2cdf8678245cd4cf1d66dc",
+          "fetched": "2026-08-13"
         },
         {
           "id": "li-arms",
@@ -21429,6 +21468,19 @@
           "source": "https://en.wikipedia.org/wiki/Flag_of_Uruguay"
         },
         {
+          "id": "uy-1828",
+          "category": "historical",
+          "from": 1828,
+          "to": 1830,
+          "name": "Flag of Uruguay (1828–1830)",
+          "commons": "Flag of Uruguay (1828-1830).svg",
+          "file": "uy/uruguay-1828.svg",
+          "design": "Uruguay's first national flag, with seventeen blue-and-white stripes and the Sun of May in the canton. The stripes were reduced to the present nine in 1830.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Uruguay",
+          "sha256": "4b5c0478c0d81138b566db35fd1608279e20ed2f08cb16143435df54f9a67038",
+          "fetched": "2026-08-13"
+        },
+        {
           "id": "uy-artigas",
           "category": "official",
           "name": "Flag of Artigas",
@@ -21714,6 +21766,19 @@
           "reuse": "flags/va.svg",
           "design": "The national flag of Vatican City, in the form adopted in 1929.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Vatican_City"
+        },
+        {
+          "id": "va-papal-states",
+          "category": "historical",
+          "from": 1825,
+          "to": 1870,
+          "name": "Flag of the Papal States",
+          "commons": "Flag of the Papal States (1825-1870).svg",
+          "file": "va/papal-states.svg",
+          "design": "The gold-and-white flag of the Papal States, charged with the crossed keys of Saint Peter beneath the papal tiara. When Vatican City was founded in 1929 it kept these colours and this emblem.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Vatican_City",
+          "sha256": "6efc3456ce6095dc7dee086d616d0ba6d8af1f52a431b5fa82118775288558fa",
+          "fetched": "2026-08-13"
         },
         {
           "id": "va-arms",
