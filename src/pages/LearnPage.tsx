@@ -1229,15 +1229,22 @@ export default function LearnPage() {
   );
 
   const flagUrl = display ? selectionFlag(display, baseUrl) : null;
-  // When the grid is showing coats of arms / passports, the detail panel shows
-  // the SAME symbol for the selected modern country instead of its flag — its
-  // image, and its own explainer — while every other row stays put. Historical
-  // polities have no symbols, so the panel only ever swaps in the modern era.
+  // When the grid is showing coats of arms / passports, the map-selection panel
+  // shows the SAME symbol for the selected modern country instead of its flag —
+  // its image, and its own explainer — while every other row stays put.
+  // Historical polities have no symbols, so the panel only ever swaps in the
+  // modern era. Crucially this applies ONLY to the map-selection panel, NEVER
+  // once the user has drilled into a country ("Explore more flags"): that screen
+  // must always lead with the national flag at the top, with coats of arms,
+  // passports and every other symbol available BELOW in the National symbols
+  // tab — so the swap is suppressed in subdivision mode.
   const effectiveGridContentType: GridContentType = isModernEra
     ? gridContentType
     : "flag";
   const panelSymbol =
-    display?.kind === "modern" && effectiveGridContentType !== "flag"
+    !subdivisionMode &&
+    display?.kind === "modern" &&
+    effectiveGridContentType !== "flag"
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
       : null;
   // The image the panel actually shows: the symbol when one is selected and
