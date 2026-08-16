@@ -6542,12 +6542,13 @@
         {
           "id": "es-football-crest",
           "category": "footballcrest",
-          "name": "Crest of the Royal Spanish Football Federation (RFEF)",
-          "commons": "Royal Spanish Football Federation logo.svg",
+          "name": "Crest of the Spain national football team (RFEF)",
           "file": "es/es-football-crest.svg",
-          "design": "The badge of the Royal Spanish Football Federation — the letters “RFEF” in red within a red ring.",
-          "source": "https://en.wikipedia.org/wiki/Royal_Spanish_Football_Federation",
-          "sha256": "1fff08c3264921801b741bbda9b7cd4393ff566f9ca9ad118b807dd967c91e99",
+          "design": "The crest the Spain national team wears — the crowned arms of Spain flanked by the Pillars of Hercules bearing the motto PLVS VLTRA, above a roundel reading 1909 · RFEF, beneath two gold stars.",
+          "source": "https://en.wikipedia.org/wiki/Spain_national_football_team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/3/39/Spain_national_football_team_crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Spain national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Spain_national_football_team_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "sha256": "bf7b59b49bf5b02b90c712728fcefa2104efbaa79f94438a334fca9cdffe9f2e",
           "fetched": "2026-08-16"
         }
       ]
@@ -7375,6 +7376,54 @@
               }
             ]
           }
+        },
+        {
+          "id": "gb-eng-football-crest",
+          "category": "footballcrest",
+          "name": "England — The Football Association crest",
+          "url": "https://upload.wikimedia.org/wikipedia/en/d/d5/FA_crest_2009.svg",
+          "file": "gb/gb-eng-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of The Football Association (England) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:FA_crest_2009.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The Three Lions crest of The Football Association, worn by the England national team.",
+          "source": "https://en.wikipedia.org/wiki/The_Football_Association",
+          "sha256": "916c243831a62589e795323fd855e0aced9053cd33cb8859c6dbef53d3c87cc2",
+          "fetched": "2026-08-16"
+        },
+        {
+          "id": "gb-sct-football-crest",
+          "category": "footballcrest",
+          "name": "Scotland — Scottish Football Association crest",
+          "url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Scottish_Football_Association_Logo.svg",
+          "file": "gb/gb-sct-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Scottish Football Association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Scottish_Football_Association_Logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Scottish Football Association, worn by the Scotland national team.",
+          "source": "https://en.wikipedia.org/wiki/Scottish_Football_Association",
+          "sha256": "9de302be8138eb1671b9e43a4006a3edfe6ec9589cab2bbac8534fdba3d1550d",
+          "fetched": "2026-08-16"
+        },
+        {
+          "id": "gb-wls-football-crest",
+          "category": "footballcrest",
+          "name": "Wales — Football Association of Wales crest",
+          "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Football_Association_of_Wales_logo_%282019%29.svg",
+          "file": "gb/gb-wls-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Football Association of Wales is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Wales_logo_(2019).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Football Association of Wales, worn by the Wales national team.",
+          "source": "https://en.wikipedia.org/wiki/Football_Association_of_Wales",
+          "sha256": "482f30c68cf6fc0350487403a77116e81b19167636059e464ff668d989d8f73d",
+          "fetched": "2026-08-16"
+        },
+        {
+          "id": "gb-nir-football-crest",
+          "category": "footballcrest",
+          "name": "Northern Ireland — Irish Football Association crest",
+          "url": "https://upload.wikimedia.org/wikipedia/en/2/25/Irish_Football_Association_logo.svg",
+          "file": "gb/gb-nir-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Irish Football Association (Northern Ireland) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Irish_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Irish Football Association, which governs football in Northern Ireland.",
+          "source": "https://en.wikipedia.org/wiki/Irish_Football_Association",
+          "sha256": "2a14aa1a53c4a064fecb32086e74775f6d1dad2a4f3e6de0993b8e71caf06f9d",
+          "fetched": "2026-08-16"
         }
       ]
     },

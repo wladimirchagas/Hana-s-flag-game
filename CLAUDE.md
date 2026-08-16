@@ -287,6 +287,67 @@ equality: a colonial usage is legitimately narrower than the design's own life (
 dates from 1506 but flew over Bolivia only from the conquest), while reaching OUTSIDE the era window is
 the anachronism and fails. Never weaken it — fix the flag or its sourcing.
 
+## Football crests: show the crest the national team WEARS, and cover all 195 — hard rule, do not override without approval
+
+**The National-symbols feature carries a `footballcrest` category: the crest of a country's national
+football (soccer) association. It appears BOTH in the world-map grid's "Show" dropdown (a full-grid
+view, one crest per country, alongside National flags / Coats of arms / Passports) AND as a section in
+each country's National symbols tab. The image MUST be the crest the NATIONAL TEAM plays under — the
+badge worn on the shirt — never the federation's plain administrative/corporate wordmark when the two
+differ.**
+
+### Why this rule exists
+
+Reported by the owner (2026-08) with the image they wanted: the first batch used
+`Royal Spanish Football Federation logo.svg` for Spain — the RFEF's minimalist red "RFEF" wordmark —
+when the crest fans recognise, and the one the team wears, is the full shield (the crowned arms of
+Spain, the Pillars of Hercules with PLVS VLTRA, `1909 · RFEF`, two gold stars). Several federations
+keep a corporate logo distinct from the team crest; the game shows the **team crest**. Where a country's
+federation logo IS the team crest (most countries), that one image serves both.
+
+### Rules
+
+1. **Prefer the national-team crest.** Source it from the `{Country} national football team` article
+   (its infobox `Badge`/crest), falling back to the federation article only when the team wears the
+   federation's own logo. When they differ, the team crest wins — that is the Spain lesson.
+2. **A crest is a copyrighted logo — bundle it non-free, cited, with a `licenceNote`,** exactly like
+   the non-free passport covers (owner-directed, 2026-08). A crest freely licensed on Wikimedia Commons
+   (PD-textlogo / CC) is bundled via `commons`; a non-free one (fair-use, or PD held as a local
+   English-Wikipedia file) via `url` + a `licenceNote` stating the copyright position. Never invent or
+   approximate a crest — the "never generate flag content" rule is absolute here too.
+3. **The world-map grid shows ONE crest per country — the country's OWN, id `{cc}-football-crest`.**
+   `footballCrestPath`/`nationalSymbolEntry` (`src/lib/nationalSymbolImages.ts`) select exactly that id,
+   so a country with only SUBNATIONAL crests (rule 4) correctly shows the "—" placeholder in the grid.
+4. **SUBNATIONAL crests belong in the country's National symbols tab, never in the world-map grid.**
+   A country whose football is organised by sub-national bodies (the UK: England → The FA, Scotland →
+   SFA, Wales → FAW, Northern Ireland → IFA) has NO single national crest; it carries one
+   `footballcrest` entry per body (ids `gb-eng-…`, `gb-sct-…`, `gb-wls-…`, `gb-nir-…`), each named for
+   its division, all shown together in the tab's Football-crest section — and the world-map grid shows
+   the country the "—" placeholder (there is no UK team). Only the `{cc}-football-crest` id feeds the
+   grid, which is what keeps subnational crests out of it. Add a subnational crest wherever a division
+   fields its own national team, not only the UK.
+5. **Coverage is ALL 195 UN members, plus every division that fields its own team — a standing sweep.**
+   Unlike flags, there is no repo data to copy, so each crest is sourced and VISUALLY VERIFIED by hand
+   (montage-scan every batch before committing, exactly like the capital-flag backfill sweep): an
+   auto-picker will grab the wrong logo, which is the class of bug this repo guards against. A crest that
+   cannot be confidently sourced is left as a "—" placeholder, never guessed. Keep going per the
+   standing-sweep mandate; do not stop to ask whether to continue.
+6. **A crest's `design` line is written AFTER viewing the actual image** (a factual visual description,
+   never from memory); a sourced `meaning` ("What this crest represents") is added only where the
+   symbolism is documented, and omitted otherwise.
+7. **Verify in the running app** (the mandatory visual-verification rule applies): the "Show" dropdown
+   offers "Football crests"; the grid renders each sourced crest with placeholders elsewhere; Spain
+   shows the team shield (not the RFEF wordmark); and the UK's National symbols tab lists all four
+   home-nation crests while the UK grid tile stays a placeholder.
+
+### Enforcement
+
+`scripts/check-national-flags.mjs` validates every `footballcrest` entry like the other categories (name,
+design, http(s) source, bundled image matching its recorded sha256, a `licenceNote` on any non-Commons
+`url` source). There is no automated check that a crest is the RIGHT one or that the team-vs-federation
+choice is correct — that is rule 7's visual verification plus the montage-scan of rule 5. Never weaken
+the check to force a crest through; fix the crest or its sourcing.
+
 ## Capital-city flags: never blindly trust P41, missing ≠ nonexistent — hard rule, do not override without approval
 
 **The Learn-mode "View capital" drill-down (`CapitalDetails.tsx`, wired in `LearnPage.tsx`) shows the
