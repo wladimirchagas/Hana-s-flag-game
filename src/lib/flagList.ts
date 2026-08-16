@@ -52,6 +52,9 @@ export type FlagListEntry = {
   /** Resolved passport-cover image URL for the grid's "Passports" view.
    *  null / undefined when the country has no bundled passport. */
   passport?: string | null;
+  /** Resolved football-association crest image URL for the grid's "Football
+   *  crests" view. null / undefined when the country has no bundled crest. */
+  footballCrest?: string | null;
 };
 
 /**

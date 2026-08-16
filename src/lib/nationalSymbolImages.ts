@@ -17,8 +17,10 @@ import { NATIONAL_FLAGS, type NationalFlag } from "../data/nationalFlags";
 
 const coatOfArmsByCode = new Map<string, string>();
 const passportByCode = new Map<string, string>();
+const footballCrestByCode = new Map<string, string>();
 const coatOfArmsEntryByCode = new Map<string, NationalFlag>();
 const passportEntryByCode = new Map<string, NationalFlag>();
+const footballCrestEntryByCode = new Map<string, NationalFlag>();
 
 for (const [code, flags] of Object.entries(NATIONAL_FLAGS)) {
   const arms = flags.find((f) => f.category === "coatofarms" && f.path);
@@ -30,6 +32,11 @@ for (const [code, flags] of Object.entries(NATIONAL_FLAGS)) {
   if (passport?.path) {
     passportByCode.set(code, passport.path);
     passportEntryByCode.set(code, passport);
+  }
+  const crest = flags.find((f) => f.category === "footballcrest" && f.path);
+  if (crest?.path) {
+    footballCrestByCode.set(code, crest.path);
+    footballCrestEntryByCode.set(code, crest);
   }
 }
 
@@ -44,16 +51,28 @@ export function passportPath(code: string): string | null {
   return passportByCode.get(code) ?? null;
 }
 
+/** Relative image path for a country's national football-association crest, or
+ *  null when none is bundled (the curated set grows per country). */
+export function footballCrestPath(code: string): string | null {
+  return footballCrestByCode.get(code) ?? null;
+}
+
 /**
  * The full national-symbol entry (name, design line, meaning id) for a country's
- * coat of arms / passport — the SAME entry `coatOfArmsPath`/`passportPath` take
- * their image from, so the grid tile and the detail panel can never show one
- * image with another's caption. null when the country has no such symbol bundled.
+ * coat of arms / passport / football crest — the SAME entry the matching
+ * `*Path()` helper takes its image from, so the grid tile and the detail panel
+ * can never show one image with another's caption. null when the country has no
+ * such symbol bundled.
  */
 export function nationalSymbolEntry(
   code: string,
-  type: "coatofarms" | "passport",
+  type: "coatofarms" | "passport" | "footballcrest",
 ): NationalFlag | null {
-  const map = type === "coatofarms" ? coatOfArmsEntryByCode : passportEntryByCode;
+  const map =
+    type === "coatofarms"
+      ? coatOfArmsEntryByCode
+      : type === "passport"
+        ? passportEntryByCode
+        : footballCrestEntryByCode;
   return map.get(code) ?? null;
 }

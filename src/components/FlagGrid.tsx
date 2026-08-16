@@ -526,7 +526,9 @@ export function FlagGrid({
                   ? item.coatOfArms ?? null
                   : effectiveContentType === "passport"
                     ? item.passport ?? null
-                    : item.flag;
+                    : effectiveContentType === "footballcrest"
+                      ? item.footballCrest ?? null
+                      : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
