@@ -33,10 +33,19 @@ for (const [code, flags] of Object.entries(NATIONAL_FLAGS)) {
     passportByCode.set(code, passport.path);
     passportEntryByCode.set(code, passport);
   }
-  const crest = flags.find((f) => f.category === "footballcrest" && f.path);
-  if (crest?.path) {
-    footballCrestByCode.set(code, crest.path);
-    footballCrestEntryByCode.set(code, crest);
+  // The world-map grid and the detail panel show ONE crest per country — the
+  // country's OWN national-team crest, whose id is `{cc}-football-crest`. A
+  // country can also carry SUBNATIONAL crests (the UK's England/Scotland/Wales/
+  // Northern Ireland home-nation FAs), which have other ids: those appear only in
+  // the National symbols tab's Football-crest section, never as the country's
+  // single grid tile. So the UK — which plays as four teams and has no single
+  // crest — correctly shows no crest in the grid while listing all four in the tab.
+  const ownCrest = flags.find(
+    (f) => f.category === "footballcrest" && f.path && f.id === `${code.toLowerCase()}-football-crest`,
+  );
+  if (ownCrest?.path) {
+    footballCrestByCode.set(code, ownCrest.path);
+    footballCrestEntryByCode.set(code, ownCrest);
   }
 }
 
