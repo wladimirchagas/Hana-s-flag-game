@@ -26,7 +26,8 @@ export type NationalFlagCategory =
   | "civilstate"
   | "indigenous"
   | "coatofarms"
-  | "passport";
+  | "passport"
+  | "footballcrest";
 
 export type NationalFlag = {
   /** Stable slug — React key, and the key into NATIONAL_FLAG_MEANINGS. */
@@ -198,6 +199,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "au-gg", category: "standard", name: "Flag of the Governor-General of Australia", from: 1936, to: 9999, path: "national-flags/au/australia-governor-general.svg", design: "A crowned lion standing on a crown, on a blue field.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
     { id: "au-arms", category: "coatofarms", name: "Commonwealth Coat of Arms", path: "national-flags/au/australia-arms.svg", design: "A shield of six quarters supported by a kangaroo and an emu, with the Commonwealth Star above and golden wattle behind.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia" },
     { id: "au-passport", category: "passport", name: "Australian passport", path: "national-flags/au/australia-passport.webp", design: "A dark blue cover bearing the Commonwealth Coat of Arms in gold, with AUSTRALIA above it and PASSPORT below.", source: "https://gicg.net/passport/au/" },
+    { id: "au-football-crest", category: "footballcrest", name: "Crest of Football Australia", path: "national-flags/au/au-football-crest.svg", design: "The logo of Football Australia — an abstract ball formed of interlocking green-and-gold curves, beside the words “Football Australia”.", source: "https://en.wikipedia.org/wiki/Football_Australia" },
   ],
   "AW": [
     { id: "aw-official-national", category: "official", name: "Flag of Aruba", from: 1976, to: 9999, path: "flags/sub/NL/NL-AW.svg", design: "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Aruba" },
@@ -323,6 +325,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bo-state", category: "civilstate", name: "State flag of Bolivia", from: 1851, to: 9999, path: "national-flags/bo/bolivia-state.svg", design: "The tricolour charged with the coat of arms — flown by the state, while citizens fly the plain tricolour.", source: "https://en.wikipedia.org/wiki/List_of_Bolivian_flags" },
     { id: "bo-arms", category: "coatofarms", name: "Coat of arms of Bolivia", path: "national-flags/bo/bolivia-arms.svg", design: "An oval showing the Cerro Rico of Potosí under a rising sun, with a llama, a wheatsheaf and a palm, ringed by flags, cannon and an Andean condor.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bolivia" },
     { id: "bo-passport", category: "passport", name: "Bolivian passport", path: "national-flags/bo/bolivia-passport.webp", design: "A burgundy cover reading COMUNIDAD ANDINA above ESTADO PLURINACIONAL DE BOLIVIA, with the national arms in gold and PASAPORTE beneath.", source: "https://gicg.net/passport/bo/" },
+    { id: "bo-football-crest", category: "footballcrest", name: "Crest of the Bolivian Football Federation (FBF)", path: "national-flags/bo/bo-football-crest.svg", design: "The crest of the Bolivian Football Federation — a condor above a football lettered “FBF”, on a shield in the red, yellow and green of Bolivia.", source: "https://en.wikipedia.org/wiki/Bolivian_Football_Federation" },
   ],
   "BR": [
     { id: "br-official-national", category: "official", name: "Flag of Brazil", from: 1992, to: 9999, primary: true, path: "flags/br.svg", design: "The national flag and ensign, under the Constitution's Article 13.", source: "https://en.wikipedia.org/wiki/Flag_of_Brazil" },
@@ -348,6 +351,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "br-vice-president", category: "standard", name: "Vice-Presidential Standard of Brazil", from: 1992, to: 9999, path: "national-flags/br/brazil-vice-president.svg", design: "A yellow field with 21 blue stars in a cross and the coat of arms at the centre.", source: "https://en.wikipedia.org/wiki/List_of_Brazilian_flags" },
     { id: "br-arms", category: "coatofarms", name: "Coat of arms of Brazil", path: "national-flags/br/brazil-arms.svg", design: "A blue disc bearing the Southern Cross, ringed by 27 stars, on a star-shaped emblem framed by coffee and tobacco branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Brazil" },
     { id: "br-passport", category: "passport", name: "Brazilian passport", path: "national-flags/br/brazil-passport.webp", design: "A blue Mercosur cover: MERCOSUL/MERCOSUR across the top, REPÚBLICA FEDERATIVA DO BRASIL, the national arms in gold, and PASSAPORTE beneath.", source: "https://gicg.net/passport/br/" },
+    { id: "br-football-crest", category: "footballcrest", name: "Crest of the Brazilian Football Confederation (CBF)", path: "national-flags/br/br-football-crest.svg", design: "The crest of the Brazilian Football Confederation — a blue shield bearing the green-and-yellow “CBF” monogram, beneath an arc of five green stars.", source: "https://en.wikipedia.org/wiki/Brazilian_Football_Confederation" },
   ],
   "BS": [
     { id: "bs-official-national", category: "official", name: "Flag of Bahamas", from: 1973, to: 9999, primary: true, path: "flags/bs.svg", design: "The national flag of Bahamas, in the form adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahamas" },
@@ -489,6 +493,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cn-arms", category: "coatofarms", name: "National Emblem of China", path: "national-flags/cn/china-emblem.svg", design: "Tiananmen Gate beneath five gold stars, in a red circle framed by ears of grain and a cogwheel.", source: "https://en.wikipedia.org/wiki/National_emblem_of_China" },
     { id: "cn-passport", category: "passport", name: "Chinese passport", path: "national-flags/cn/china-passport.svg", design: "A dark red cover with the national emblem in gold, reading 中华人民共和国护照.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
     { id: "cn-passport-seafarer", category: "passport", name: "Chinese seafarer's passport", path: "national-flags/cn/china-passport-seafarer.svg", design: "A cover for merchant seafarers, issued alongside the ordinary passport.", source: "https://en.wikipedia.org/wiki/Chinese_passport" },
+    { id: "cn-football-crest", category: "footballcrest", name: "Crest of the Chinese Football Association (CFA)", path: "national-flags/cn/cn-football-crest.svg", design: "The crest of the Chinese Football Association — the association's name in red Chinese characters arced over a green field with the Tiananmen gate, a football and the letters “CFA”.", source: "https://en.wikipedia.org/wiki/Chinese_Football_Association" },
   ],
   "CO": [
     { id: "co-official-national", category: "official", name: "Flag of Colombia", from: 1861, to: 9999, primary: true, path: "flags/co.svg", design: "The national flag of Colombia, in the form adopted in 1861.", source: "https://en.wikipedia.org/wiki/Flag_of_Colombia" },
@@ -666,6 +671,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "es-civil", category: "civilstate", name: "Civil flag of Spain", from: 1981, to: 9999, path: "national-flags/es/spain-civil.svg", design: "The red-yellow-red bands without the coat of arms — the flag private citizens fly, alongside the state flag which bears the arms.", source: "https://en.wikipedia.org/wiki/List_of_Spanish_flags" },
     { id: "es-arms", category: "coatofarms", name: "Coat of arms of Spain", path: "national-flags/es/spain-arms.svg", design: "A quartered shield of Castile, León, Aragón and Navarre with Granada in base, between the Pillars of Hercules.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Spain" },
     { id: "es-passport", category: "passport", name: "Spanish passport", path: "national-flags/es/spain-passport.svg", design: "A burgundy cover reading UNIÓN EUROPEA above ESPAÑA, with the Spanish coat of arms in gold.", source: "https://en.wikipedia.org/wiki/Spanish_passport" },
+    { id: "es-football-crest", category: "footballcrest", name: "Crest of the Royal Spanish Football Federation (RFEF)", path: "national-flags/es/es-football-crest.svg", design: "The badge of the Royal Spanish Football Federation — the letters “RFEF” in red within a red ring.", source: "https://en.wikipedia.org/wiki/Royal_Spanish_Football_Federation" },
   ],
   "ET": [
     { id: "et-official-national", category: "official", name: "Flag of Ethiopia", from: 1996, to: 9999, primary: true, path: "flags/et.svg", design: "The national flag of Ethiopia, in the form adopted in 1996.", source: "https://en.wikipedia.org/wiki/Flag_of_Ethiopia" },
@@ -716,6 +722,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fr-naval-ensign", category: "maritime", name: "Naval ensign of France", from: 1853, to: 9999, path: "national-flags/fr/france-naval-ensign.svg", design: "The Tricolore in the navy's own proportions, with the three bands of unequal width so they appear equal when flying.", source: "https://en.wikipedia.org/wiki/List_of_French_flags" },
     { id: "fr-arms", category: "coatofarms", name: "Emblem of the French Republic", path: "national-flags/fr/france-emblem.svg", design: "A lictor’s fasces on crossed oak and laurel branches, with a ribbon bearing the republic’s motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_France" },
     { id: "fr-passport", category: "passport", name: "French passport", path: "national-flags/fr/france-passport.svg", design: "A burgundy cover reading UNION EUROPÉENNE above RÉPUBLIQUE FRANÇAISE, with the republic's emblem in gold.", source: "https://en.wikipedia.org/wiki/French_passport" },
+    { id: "fr-football-crest", category: "footballcrest", name: "Crest of the French Football Federation (FFF)", path: "national-flags/fr/fr-football-crest.svg", design: "The crest of the French Football Federation — a hexagon (for the shape of France) in blue, white and red bearing a white Gallic rooster over the letters “FFF”, with two gold stars above.", source: "https://en.wikipedia.org/wiki/French_Football_Federation" },
   ],
   "GA": [
     { id: "ga-official-national", category: "official", name: "Flag of Gabon", from: 1960, to: 9999, primary: true, path: "flags/ga.svg", design: "The national flag of Gabon, adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Gabon" },
@@ -947,6 +954,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "in-passport-diplomatic", category: "passport", name: "Indian diplomatic passport", path: "national-flags/in/india-passport-diplomatic.svg", design: "A maroon cover with the State Emblem in gold, issued to diplomats and senior officials.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
     { id: "in-passport-official", category: "passport", name: "Indian official passport", path: "national-flags/in/india-passport-official.svg", design: "A white cover with the State Emblem, issued to officials travelling on government business.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
     { id: "in-passport-emergency", category: "passport", name: "Indian Emergency Certificate", path: "national-flags/in/india-emergency-certificate.svg", design: "A one-way travel document issued by Indian missions abroad to nationals without a valid passport.", source: "https://en.wikipedia.org/wiki/Indian_passport" },
+    { id: "in-football-crest", category: "footballcrest", name: "Crest of the All India Football Federation (AIFF)", path: "national-flags/in/in-football-crest.svg", design: "The crest of the All India Football Federation — a blue-and-orange badge carrying an “INDIA” banner and a football swept by the national tricolour, beside the federation's name.", source: "https://en.wikipedia.org/wiki/All_India_Football_Federation" },
   ],
   "IO": [
     { id: "io-official-national", category: "official", name: "Flag of the British Indian Ocean Territory", from: 1990, to: 9999, path: "flags/io.svg", design: "White and blue wavy stripes for the Indian Ocean, the Union Flag in the canton, and a palm tree above a royal crown in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory" },
@@ -1033,6 +1041,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "jp-emperor", category: "standard", name: "Imperial Standard of the Emperor of Japan", from: 1869, to: 9999, path: "national-flags/jp/japan-emperor.svg", design: "A gold sixteen-petal chrysanthemum centred on red.", source: "https://en.wikipedia.org/wiki/List_of_Japanese_flags" },
     { id: "jp-arms", category: "coatofarms", name: "Imperial Seal of Japan", path: "national-flags/jp/japan-imperial-seal.svg", design: "A yellow chrysanthemum of sixteen petals, with a second set of sixteen showing behind them.", source: "https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan" },
     { id: "jp-passport", category: "passport", name: "Japanese passport", path: "national-flags/jp/japan-passport.webp", design: "A dark red cover (ordinary passports) bearing the paulownia Government Seal in gold, with 日本国旅券 / JAPAN PASSPORT.", source: "https://gicg.net/passport/jp/" },
+    { id: "jp-football-crest", category: "footballcrest", name: "Crest of the Japan Football Association (JFA)", path: "national-flags/jp/jp-football-crest.svg", design: "The crest of the Japan Football Association — the Yatagarasu, a black three-legged crow, holding a red ball on a gold field beside the letters “JFA”.", source: "https://en.wikipedia.org/wiki/Japan_Football_Association" },
   ],
   "KE": [
     { id: "ke-official-national", category: "official", name: "Flag of Kenya", from: 1963, to: 9999, primary: true, path: "flags/ke.svg", design: "The national flag of Kenya, in the form adopted in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Kenya" },
@@ -1400,6 +1409,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "my-agong", category: "standard", name: "Standard of the Yang di-Pertuan Agong", from: 1988, to: 9999, path: "national-flags/my/malaysia-agong.svg", design: "The royal standard of Malaysia's elected king.", source: "https://en.wikipedia.org/wiki/List_of_Malaysian_flags" },
     { id: "my-arms", category: "coatofarms", name: "Coat of arms of Malaysia", path: "national-flags/my/malaysia-arms.svg", design: "A shield held by two tigers, crowned by a yellow crescent and fourteen-pointed federal star, above a motto ribbon.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia" },
     { id: "my-passport", category: "passport", name: "Malaysian passport", path: "national-flags/my/malaysia-passport.svg", design: "A dark red cover with the Malaysian coat of arms in gold, the country's name above and PASSPORT/PASPORT below.", source: "https://en.wikipedia.org/wiki/Malaysian_passport" },
+    { id: "my-football-crest", category: "footballcrest", name: "Crest of the Football Association of Malaysia (FAM)", path: "national-flags/my/my-football-crest.svg", design: "The crest of the Football Association of Malaysia — a leaping Malayan tiger over a football on a black shield, ringed by a wreath and the banner “Persatuan Bolasepak Malaysia”.", source: "https://en.wikipedia.org/wiki/Football_Association_of_Malaysia" },
   ],
   "MZ": [
     { id: "mz-official-national", category: "official", name: "Flag of Mozambique", from: 1983, to: 9999, primary: true, path: "flags/mz.svg", design: "The national flag of Mozambique, in the form adopted in 1983.", source: "https://en.wikipedia.org/wiki/Flag_of_Mozambique" },
@@ -1940,6 +1950,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tr-passport-diplomatic", category: "passport", name: "Turkish diplomatic passport", path: "national-flags/tr/turkey-passport-diplomatic.svg", design: "A black cover with the same emblem, headed DİPLOMATİK PASAPORT.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
     { id: "tr-passport-special", category: "passport", name: "Turkish special passport", path: "national-flags/tr/turkey-passport-special.svg", design: "A green cover — the “yeşil pasaport” issued to senior officials and former members of parliament.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
     { id: "tr-passport-service", category: "passport", name: "Turkish service passport", path: "national-flags/tr/turkey-passport-service.svg", design: "A grey cover, issued to officials travelling on state business.", source: "https://en.wikipedia.org/wiki/Turkish_passport" },
+    { id: "tr-football-crest", category: "footballcrest", name: "Crest of the Turkish Football Federation (TFF)", path: "national-flags/tr/tr-football-crest.svg", design: "The crest of the Turkish Football Federation — a red shield bearing the white crescent and star of the national flag, a football, and the founding year 1923.", source: "https://en.wikipedia.org/wiki/Turkish_Football_Federation" },
   ],
   "TT": [
     { id: "tt-official-national", category: "official", name: "Flag of Trinidad and Tobago", from: 1962, to: 9999, primary: true, path: "flags/tt.svg", design: "The national flag of Trinidad and Tobago, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago" },
@@ -2052,6 +2063,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "us-passport-official", category: "passport", name: "United States official passport", path: "national-flags/us/us-passport-official.svg", design: "A maroon cover with the Great Seal, headed OFFICIAL PASSPORT — issued to government employees travelling on duty.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
     { id: "us-passport-service", category: "passport", name: "United States service passport", path: "national-flags/us/us-passport-service.svg", design: "A grey cover with the Great Seal, headed SERVICE PASSPORT.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
     { id: "us-passport-emergency", category: "passport", name: "United States emergency passport", path: "national-flags/us/us-passport-emergency.svg", design: "A limited-validity passport issued abroad when a traveller's own is lost or stolen.", source: "https://en.wikipedia.org/wiki/United_States_passport" },
+    { id: "us-football-crest", category: "footballcrest", name: "Crest of the United States Soccer Federation (U.S. Soccer)", path: "national-flags/us/us-football-crest.svg", design: "The crest of the United States Soccer Federation — a shield with “USA” on a blue chief above the red-and-white stripes of the national flag.", source: "https://en.wikipedia.org/wiki/United_States_Soccer_Federation" },
   ],
   "UY": [
     { id: "uy-official-national", category: "official", name: "Flag of Uruguay", from: 1830, to: 9999, primary: true, path: "flags/uy.svg", design: "The national flag of Uruguay, in the form adopted in 1830.", source: "https://en.wikipedia.org/wiki/Flag_of_Uruguay" },
@@ -2161,6 +2173,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "za-sandf-1994", category: "military", name: "Ensign of the South African National Defence Force (1994–2003)", from: 1994, to: 2003, path: "national-flags/za/south-africa-sandf-1994.svg", design: "The first post-apartheid defence-force ensign, replaced in 2003.", source: "https://en.wikipedia.org/wiki/List_of_South_African_flags" },
     { id: "za-arms", category: "coatofarms", name: "Coat of arms of South Africa", path: "national-flags/za/south-africa-arms.svg", design: "Two facing figures from Khoisan rock art within a shield, above a spear and knobkierie, crowned by a secretary bird and a rising sun.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Africa" },
     { id: "za-passport", category: "passport", name: "South African passport", path: "national-flags/za/south-africa-passport.webp", design: "A green cover bearing the South African coat of arms in gold, reading REPUBLIC OF SOUTH AFRICA / REPUBLIEK VAN SUID-AFRIKA and PASSPORT.", source: "https://gicg.net/passport/za/" },
+    { id: "za-football-crest", category: "footballcrest", name: "Crest of the South African Football Association (SAFA)", path: "national-flags/za/za-football-crest.svg", design: "The crest of the South African Football Association — a roundel split between a monochrome football and a gold, sun-rayed landscape, above the association's name.", source: "https://en.wikipedia.org/wiki/South_African_Football_Association" },
   ],
   "ZM": [
     { id: "zm-official-national", category: "official", name: "Flag of Zambia", from: 1964, to: 9999, primary: true, path: "flags/zm.svg", design: "The national flag of Zambia, adopted at independence in 1964 (the green shade was standardised in 1996).", source: "https://en.wikipedia.org/wiki/Flag_of_Zambia" },
@@ -2852,6 +2865,12 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "French passport — Wikipedia", url: "https://en.wikipedia.org/wiki/French_passport" },
     ],
   },
+  "fr-football-crest": {
+    description: "The crest's colours and imagery draw on two national symbols — the blue-white-red of the French flag and the Gallic rooster (coq gaulois). The two gold stars above the shield mark France's two FIFA World Cup titles, won in 1998 and 2018.",
+    sources: [
+      { title: "France national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/France_national_football_team" },
+    ],
+  },
   "ga-arms": {
     description: "The black shield bears three golden discs for the country's mineral wealth and, below, a ship under sail for the timber trade that built its economy; a green okoumé tree rises behind. Two panthers guard it. Two mottoes appear: the Latin Uniti Progrediemur — “united we shall go forward” — on the scroll above, and the French Union, Travail, Justice — “Union, Work, Justice” — below.",
     sources: [
@@ -3091,6 +3110,13 @@ export const NATIONAL_FLAG_MEANINGS: Record<string, FlagMeaning> = {
     description: "The gold crest is the Government Seal — the paulownia mon used by the cabinet — rather than the imperial chrysanthemum, so the passport carries the government’s emblem while the chrysanthemum stays with the Imperial House. Japan colour-codes by validity and type: red for a ten-year ordinary passport, blue for five-year, green for official and dark brown for diplomatic.",
     sources: [
       { title: "Japanese passport — Wikipedia", url: "https://en.wikipedia.org/wiki/Japanese_passport" },
+    ],
+  },
+  "jp-football-crest": {
+    description: "The crest features the Yatagarasu — a three-legged crow from Japanese mythology, regarded as a symbol of the sun — holding a solid red ball that echoes the sun disc of the national flag. The emblem was adopted in late 2017 as part of a rebranding by the Japan Football Association.",
+    sources: [
+      { title: "Japan national football team — Wikipedia", url: "https://en.wikipedia.org/wiki/Japan_national_football_team" },
+      { title: "Yatagarasu — Wikipedia", url: "https://en.wikipedia.org/wiki/Yatagarasu" },
     ],
   },
   "ke-arms": {
