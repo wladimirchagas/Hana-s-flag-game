@@ -40,6 +40,7 @@ const CATEGORY_ORDER = [
   // sections always lead.
   "coatofarms",
   "passport",
+  "footballcrest",
 ];
 
 const manifest = JSON.parse(readFileSync(MANIFEST, "utf8"));
@@ -181,7 +182,8 @@ export type NationalFlagCategory =
   | "civilstate"
   | "indigenous"
   | "coatofarms"
-  | "passport";
+  | "passport"
+  | "footballcrest";
 
 export type NationalFlag = {
   /** Stable slug — React key, and the key into NATIONAL_FLAG_MEANINGS. */

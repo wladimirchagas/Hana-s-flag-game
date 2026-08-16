@@ -59,6 +59,7 @@ const CATEGORIES = new Set([
   "indigenous",
   "coatofarms",
   "passport",
+  "footballcrest",
 ]);
 const FORBIDDEN_VIEWBOXES = new Set(["0 0 640 480", "0 0 512 512"]);
 

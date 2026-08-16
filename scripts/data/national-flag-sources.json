@@ -13,7 +13,10 @@
     "ENTRY FIELDS",
     "  id        stable slug, unique across the whole file (used as the React key and the",
     "            meaning-lookup key).",
-    "  category  historical | official | military | maritime | standard | civilstate | indigenous",
+    "  category  historical | official | military | maritime | standard | civilstate | indigenous |",
+    "            coatofarms | passport | footballcrest. A `footballcrest` is the crest/logo of the",
+    "            country's national football (soccer) association — a copyrighted mark, so it is",
+    "            bundled non-free via `url` + a `licenceNote`, exactly like the non-free passport covers.",
     "  name      the flag's own name, as the cited source gives it.",
     "  from/to   years the design was in official use (to: 9999 = still current). Historical",
     "            entries are ordered newest-first by the generator.",
@@ -1145,6 +1148,18 @@
           "source": "https://gicg.net/passport/au/",
           "sha256": "9c9b53fac83860e1a1b5019cfcb288dec7e159310bdf6870ad226b1a5ad1cc84",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "au-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of Football Australia",
+          "url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Football_Australia_logo.svg",
+          "file": "au/au-football-crest.svg",
+          "licenceNote": "Tagged public domain on the English Wikipedia (a simple emblem below the threshold of originality) but held there as a local file rather than on Wikimedia Commons, so it is fetched by direct URL (https://en.wikipedia.org/wiki/File:Football_Australia_logo.svg). Bundled at the repository owner's explicit direction (2026-08) alongside the other football crests.",
+          "design": "The logo of Football Australia — an abstract ball formed of interlocking green-and-gold curves, beside the words “Football Australia”.",
+          "source": "https://en.wikipedia.org/wiki/Football_Australia",
+          "sha256": "0fa3de102fab85e9d726d631c9e77a3abe6ae07e93be9af87532141ee665c979",
+          "fetched": "2026-08-16"
         }
       ],
       "omitted": [
@@ -2509,6 +2524,18 @@
           "source": "https://gicg.net/passport/bo/",
           "sha256": "b8cf805903dec78c3497f76f873e522e93c57215d91f38a50e09647ff411f2e9",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "bo-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Bolivian Football Federation (FBF)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/d/d4/Bolivian_Football_Federation_logo.svg",
+          "file": "bo/bo-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Bolivian Football Federation (FBF) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Bolivian_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Bolivian Football Federation — a condor above a football lettered “FBF”, on a shield in the red, yellow and green of Bolivia.",
+          "source": "https://en.wikipedia.org/wiki/Bolivian_Football_Federation",
+          "sha256": "e4c5ee2e8d4b80c66c469fa3c0a21bfc02901a3e4b10081d115401f119c5ca70",
+          "fetched": "2026-08-16"
         }
       ],
       "independence": {
@@ -2846,6 +2873,17 @@
           "source": "https://gicg.net/passport/br/",
           "sha256": "9fe22b1bd93a2adff1a892735ad41f7afbb8bba96a8850db4459e77556b887e2",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "br-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Brazilian Football Confederation (CBF)",
+          "commons": "Brazilian Football Confederation logo.svg",
+          "file": "br/br-football-crest.svg",
+          "design": "The crest of the Brazilian Football Confederation — a blue shield bearing the green-and-yellow “CBF” monogram, beneath an arc of five green stars.",
+          "source": "https://en.wikipedia.org/wiki/Brazilian_Football_Confederation",
+          "sha256": "419c0cf75a735fc224a2692a8fd5d5393a8c622d4d0a78b4509ce8894fbdc053",
+          "fetched": "2026-08-16"
         }
       ],
       "independence": {
@@ -4472,6 +4510,18 @@
           "source": "https://en.wikipedia.org/wiki/Chinese_passport",
           "sha256": "3b36a63e32d9573b41b19a318070a47ecf8c92fa96a4bf390679ef974354812e",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "cn-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Chinese Football Association (CFA)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/2/2f/Chinese_Football_Association_logo.svg",
+          "file": "cn/cn-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Chinese Football Association (CFA) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Chinese_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Chinese Football Association — the association's name in red Chinese characters arced over a green field with the Tiananmen gate, a football and the letters “CFA”.",
+          "source": "https://en.wikipedia.org/wiki/Chinese_Football_Association",
+          "sha256": "cccb29feaa7df14a4b46090637425c11e9b00cbd4ce558c2c9ab4263d6ad578c",
+          "fetched": "2026-08-16"
         }
       ]
     },
@@ -6488,6 +6538,17 @@
           "reuse": "flags/es.svg",
           "design": "The national flag and ensign, under Article 4 of the Constitution.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "es-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Royal Spanish Football Federation (RFEF)",
+          "commons": "Royal Spanish Football Federation logo.svg",
+          "file": "es/es-football-crest.svg",
+          "design": "The badge of the Royal Spanish Football Federation — the letters “RFEF” in red within a red ring.",
+          "source": "https://en.wikipedia.org/wiki/Royal_Spanish_Football_Federation",
+          "sha256": "1fff08c3264921801b741bbda9b7cd4393ff566f9ca9ad118b807dd967c91e99",
+          "fetched": "2026-08-16"
         }
       ]
     },
@@ -6982,6 +7043,27 @@
           "reuse": "flags/fr.svg",
           "design": "The national flag, named in Article 2 of the Constitution.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_France"
+        },
+        {
+          "id": "fr-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the French Football Federation (FFF)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/2/23/French_Football_Federation_logo.svg",
+          "file": "fr/fr-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the French Football Federation (FFF) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:French_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the French Football Federation — a hexagon (for the shape of France) in blue, white and red bearing a white Gallic rooster over the letters “FFF”, with two gold stars above.",
+          "source": "https://en.wikipedia.org/wiki/French_Football_Federation",
+          "meaning": {
+            "description": "The crest's colours and imagery draw on two national symbols — the blue-white-red of the French flag and the Gallic rooster (coq gaulois). The two gold stars above the shield mark France's two FIFA World Cup titles, won in 1998 and 2018.",
+            "sources": [
+              {
+                "title": "France national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/France_national_football_team"
+              }
+            ]
+          },
+          "sha256": "9ad9eae897633fb19132bc23e94eece5af3e59b4980b902d130bdca97780e7b1",
+          "fetched": "2026-08-16"
         }
       ]
     },
@@ -9328,6 +9410,17 @@
           "source": "https://en.wikipedia.org/wiki/Indian_passport",
           "sha256": "532d31c6b8b96be07aa5bf129829d29c34d5d188d611fb686e0514167ac57725",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "in-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the All India Football Federation (AIFF)",
+          "commons": "All India Football Federation logo (with wordmark).svg",
+          "file": "in/in-football-crest.svg",
+          "design": "The crest of the All India Football Federation — a blue-and-orange badge carrying an “INDIA” banner and a football swept by the national tricolour, beside the federation's name.",
+          "source": "https://en.wikipedia.org/wiki/All_India_Football_Federation",
+          "sha256": "d1dfeb27a35455d95c676be4fe4e77ae0e92bb17bd21cf16f4228768540587df",
+          "fetched": "2026-08-16"
         }
       ],
       "independence": {
@@ -10260,6 +10353,31 @@
           "source": "https://gicg.net/passport/jp/",
           "sha256": "6a59902bcd347b5516a1cfd9c4de194220a5af8324d3a2d704b62cc01937d1bf",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "jp-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Japan Football Association (JFA)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/2/26/Japan_FA_logo.svg",
+          "file": "jp/jp-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Japan Football Association (JFA) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Japan_FA_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Japan Football Association — the Yatagarasu, a black three-legged crow, holding a red ball on a gold field beside the letters “JFA”.",
+          "source": "https://en.wikipedia.org/wiki/Japan_Football_Association",
+          "meaning": {
+            "description": "The crest features the Yatagarasu — a three-legged crow from Japanese mythology, regarded as a symbol of the sun — holding a solid red ball that echoes the sun disc of the national flag. The emblem was adopted in late 2017 as part of a rebranding by the Japan Football Association.",
+            "sources": [
+              {
+                "title": "Japan national football team — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Japan_national_football_team"
+              },
+              {
+                "title": "Yatagarasu — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Yatagarasu"
+              }
+            ]
+          },
+          "sha256": "102b68cf25efaeb8e555acbb1a9552b4c8e25784330e7167a5bf46fc6813cde1",
+          "fetched": "2026-08-16"
         }
       ]
     },
@@ -14340,6 +14458,18 @@
           "source": "https://en.wikipedia.org/wiki/List_of_Malaysian_flags",
           "sha256": "7ce5157b2082b49bfc2b750aa0837a003b186c47b34fc80c536d336f58a5782f",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "my-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Football Association of Malaysia (FAM)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/a/ab/Football_Association_of_Malaysia_crest.svg",
+          "file": "my/my-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Football Association of Malaysia (FAM) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Malaysia_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Football Association of Malaysia — a leaping Malayan tiger over a football on a black shield, ringed by a wreath and the banner “Persatuan Bolasepak Malaysia”.",
+          "source": "https://en.wikipedia.org/wiki/Football_Association_of_Malaysia",
+          "sha256": "62b451dfa592eee171b8cfc92a9d8f411115d8c406f07bf76232d0c749e83244",
+          "fetched": "2026-08-16"
         }
       ],
       "independence": {
@@ -20250,6 +20380,18 @@
           "reuse": "flags/tr.svg",
           "design": "The national flag, under the Turkish Flag Law of 1936.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Turkey"
+        },
+        {
+          "id": "tr-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Turkish Football Federation (TFF)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Turkish_Football_Federation_crest.svg",
+          "file": "tr/tr-football-crest.svg",
+          "licenceNote": "Tagged public domain on the English Wikipedia (a simple emblem below the threshold of originality) but held there as a local file rather than on Wikimedia Commons, so it is fetched by direct URL (https://en.wikipedia.org/wiki/File:Turkish_Football_Federation_crest.svg). Bundled at the repository owner's explicit direction (2026-08) alongside the other football crests.",
+          "design": "The crest of the Turkish Football Federation — a red shield bearing the white crescent and star of the national flag, a football, and the founding year 1923.",
+          "source": "https://en.wikipedia.org/wiki/Turkish_Football_Federation",
+          "sha256": "8ae1730d96bb41bcd4abb88e1d8d48c902eb44c6e47e3499479ef34ca3a62956",
+          "fetched": "2026-08-16"
         }
       ]
     },
@@ -21535,6 +21677,17 @@
           "source": "https://en.wikipedia.org/wiki/United_States_passport",
           "sha256": "75cec6ecb43e5eba47d71eb89dfa043f1151a0fa2b22d39a69774b7935ff6b1f",
           "fetched": "2026-08-07"
+        },
+        {
+          "id": "us-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the United States Soccer Federation (U.S. Soccer)",
+          "commons": "United States Soccer Federation logo.svg",
+          "file": "us/us-football-crest.svg",
+          "design": "The crest of the United States Soccer Federation — a shield with “USA” on a blue chief above the red-and-white stripes of the national flag.",
+          "source": "https://en.wikipedia.org/wiki/United_States_Soccer_Federation",
+          "sha256": "aab90fc76bece2d33ada2f57fa35e4a38938a2198390a5cdf7d9e2d59ea1f219",
+          "fetched": "2026-08-16"
         }
       ],
       "independence": {
@@ -22738,6 +22891,18 @@
           "source": "https://gicg.net/passport/za/",
           "sha256": "35c754b73a573145f253593cd4d1bc5055fecbc18144ebbc4b59ab7edd7595d3",
           "fetched": "2026-08-08"
+        },
+        {
+          "id": "za-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the South African Football Association (SAFA)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/5/59/South_African_Football_Association_logo.svg",
+          "file": "za/za-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the South African Football Association (SAFA) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:South_African_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the South African Football Association — a roundel split between a monochrome football and a gold, sun-rayed landscape, above the association's name.",
+          "source": "https://en.wikipedia.org/wiki/South_African_Football_Association",
+          "sha256": "c4a563521e13b60ce674f17b17cf0c101c8f92b2eb0ec74099b9a570e5fd3bc7",
+          "fetched": "2026-08-16"
         }
       ],
       "independence": {

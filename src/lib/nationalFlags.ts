@@ -50,6 +50,8 @@ export function symbolNoun(category: NationalFlagCategory): string {
       return "Coat of arms";
     case "passport":
       return "Passport";
+    case "footballcrest":
+      return "Football crest";
     default:
       return "Flag";
   }
@@ -62,6 +64,8 @@ export function meaningLabel(category: NationalFlagCategory): string {
       return "What this coat of arms means";
     case "passport":
       return "What this passport shows";
+    case "footballcrest":
+      return "What this crest represents";
     default:
       return "What this flag means";
   }

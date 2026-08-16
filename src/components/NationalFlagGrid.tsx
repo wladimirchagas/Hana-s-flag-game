@@ -32,6 +32,9 @@ import { ENTITY_STATUS_LABEL, specialEntitiesOf, type SpecialEntity } from "../l
  *                      explanation of what its charges STAND FOR.
  *   Passports          the covers of the country's passports, ordinary and special
  *                      (diplomatic, official, service).
+ *   Football crest     the crest/logo of the country's national football (soccer)
+ *                      association — a copyrighted mark, so it is bundled non-free
+ *                      with a recorded licenceNote, like the passport covers.
  *
  * A symbol with no freely-licensed image is LISTED ANYWAY, as a card carrying the
  * reason in place of the picture (`flag.noImageReason`). Dropping it silently is
@@ -63,6 +66,7 @@ const CATEGORY_HEADINGS: Record<NationalFlagCategory, string> = {
   indigenous: "Indigenous flags",
   coatofarms: "Coat of arms",
   passport: "Passports",
+  footballcrest: "Football crest",
 };
 
 /** The order the sections appear in — matches the generator's own ordering. */
@@ -78,6 +82,9 @@ const CATEGORY_ORDER: NationalFlagCategory[] = [
   // Not flags — the country's other national symbols, after every flag section.
   "coatofarms",
   "passport",
+  // The crest of the country's national football (soccer) association — a national
+  // symbol in the same family as the arms and passport, so it trails them.
+  "footballcrest",
 ];
 
 type Group = { category: NationalFlagCategory; heading: string; items: NationalFlag[] };
