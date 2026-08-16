@@ -25,6 +25,7 @@ import { topLevelContinent, type FlagListEntry } from "../lib/flagList";
 import {
   coatOfArmsPath,
   passportPath,
+  footballCrestPath,
   nationalSymbolEntry,
 } from "../lib/nationalSymbolImages";
 import { NATIONAL_FLAG_MEANINGS } from "../data/nationalFlags";
@@ -976,6 +977,7 @@ export default function LearnPage() {
         capital: c.capital,
         coatOfArms: coatOfArmsPath(c.code),
         passport: passportPath(c.code),
+        footballCrest: footballCrestPath(c.code),
       }));
     }
     const out: FlagListEntry[] = [];
