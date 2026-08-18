@@ -742,6 +742,11 @@
   color: rgba(26, 34, 56, 0.65);
 }
 
+.picker .country-selector__count {
+  font-weight: 700;
+  color: inherit;
+}
+
 .picker .country-selector__list {
   max-height: 18rem;
 }
