@@ -72,9 +72,7 @@ export function CountryPickerModal({
             <h2 id="picker-title" className="picker__title">
               Hana&rsquo;s Game
             </h2>
-            <p className="picker__hint">
-              Checked countries stay at the top. Pick at least 2.
-            </p>
+            <p className="picker__hint">Pick at least 2.</p>
           </div>
           <button
             ref={closeRef}
