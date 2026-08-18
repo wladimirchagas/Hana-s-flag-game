@@ -66,6 +66,22 @@ export function footballCrestPath(code: string): string | null {
   return footballCrestByCode.get(code) ?? null;
 }
 
+// Every football crest, keyed by its own entry id — so the world-map grid can
+// show the SPECIFIC crest that was clicked (a UK home nation, or a FIFA-member
+// entity) in the detail panel, rather than resolving one by country code (which
+// returns nothing for the UK and the parent's crest for an entity).
+const footballCrestEntryById = new Map<string, NationalFlag>();
+for (const flags of Object.values(NATIONAL_FLAGS)) {
+  for (const f of flags) {
+    if (f.category === "footballcrest" && f.path) footballCrestEntryById.set(f.id, f);
+  }
+}
+
+/** A football crest entry looked up by its own id, or null. */
+export function footballCrestById(id: string): NationalFlag | null {
+  return footballCrestEntryById.get(id) ?? null;
+}
+
 /**
  * A country's SUB-NATIONAL football crests — the ones the world-map grid does NOT
  * treat as the country's single crest (id ≠ `{cc}-football-crest`). This is the
