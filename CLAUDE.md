@@ -321,17 +321,29 @@ federation logo IS the team crest (most countries), that one image serves both.
    (PD-textlogo / CC) is bundled via `commons`; a non-free one (fair-use, or PD held as a local
    English-Wikipedia file) via `url` + a `licenceNote` stating the copyright position. Never invent or
    approximate a crest — the "never generate flag content" rule is absolute here too.
-3. **The world-map grid shows ONE crest per country — the country's OWN, id `{cc}-football-crest`.**
-   `footballCrestPath`/`nationalSymbolEntry` (`src/lib/nationalSymbolImages.ts`) select exactly that id,
-   so a country with only SUBNATIONAL crests (rule 4) correctly shows the "—" placeholder in the grid.
-4. **SUBNATIONAL crests belong in the country's National symbols tab, never in the world-map grid.**
-   A country whose football is organised by sub-national bodies (the UK: England → The FA, Scotland →
-   SFA, Wales → FAW, Northern Ireland → IFA) has NO single national crest; it carries one
-   `footballcrest` entry per body (ids `gb-eng-…`, `gb-sct-…`, `gb-wls-…`, `gb-nir-…`), each named for
-   its division, all shown together in the tab's Football-crest section — and the world-map grid shows
-   the country the "—" placeholder (there is no UK team). Only the `{cc}-football-crest` id feeds the
-   grid, which is what keeps subnational crests out of it. Add a subnational crest wherever a division
-   fields its own national team, not only the UK.
+3. **The world-map grid shows the country's OWN crest, id `{cc}-football-crest`** —
+   `footballCrestPath`/`nationalSymbolEntry` (`src/lib/nationalSymbolImages.ts`) select exactly that id.
+   A country that has a single national crest shows exactly one tile. A country with only SUBNATIONAL
+   crests is handled by rule 4.
+4. **A country whose football is organised by sub-national bodies is EXPANDED into one grid card per
+   body (football-crests view only), and lists them together in its National symbols tab.**
+   The UK is the only such case among the 195: it has NO single national team, so no `gb-football-crest`,
+   and its football IS England → The FA, Scotland → SFA, Wales → FAW, Northern Ireland → IFA. It carries
+   one `footballcrest` entry per body (ids `gb-eng-…`, `gb-sct-…`, `gb-wls-…`, `gb-nir-…`), each named
+   for its division. In the **National symbols tab** all four show together in the Football-crest
+   section. In the **world-map grid's Football-crests view** the single UK tile is replaced by four cards
+   (England/Scotland/Wales/Northern Ireland) — owner request, 2026-08: a blank UK tile was unhelpful, so
+   users see the four home nations instead. `FlagGrid` does this via `subnationalFootballCrests()`,
+   emitting one pseudo-entry per home nation with a `sortKey` that clusters them where the UK sorts
+   (between United Arab Emirates and United States, NOT scattered under E/S/W/N) and a `selectId` of `GB`
+   so a click opens the United Kingdom. This is **football-crests-only**: in the flags / arms / passports
+   views the UK is one ordinary card (195 tiles); only the Football-crests view shows 198. Any OTHER
+   country stays a single tile in the grid, because every other multi-association country (China, USA,
+   Denmark, Netherlands, New Zealand, France) HAS its own senior national team and therefore its own
+   `{cc}-football-crest` — their autonomous-territory teams (Hong Kong, Faroe Islands, Aruba, Cook
+   Islands, Tahiti, Gibraltar, …) are tab-only subnational crests that never change the grid. Add a
+   subnational crest wherever a division fields its own national team; only a country with NO single
+   national crest expands in the grid.
 5. **Coverage is ALL 195 UN members, plus every division that fields its own team — a standing sweep.**
    Unlike flags, there is no repo data to copy, so each crest is sourced and VISUALLY VERIFIED by hand
    (montage-scan every batch before committing, exactly like the capital-flag backfill sweep): an
