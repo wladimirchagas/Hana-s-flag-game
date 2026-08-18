@@ -369,6 +369,55 @@
         "source": "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda"
       }
     },
+    "AI": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ai-official-national",
+          "category": "official",
+          "from": 1990,
+          "to": 9999,
+          "name": "Flag of Anguilla",
+          "reuse": "flags/ai.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Anguilla"
+        },
+        {
+          "id": "ai-arms",
+          "category": "coatofarms",
+          "from": 1990,
+          "to": 9999,
+          "name": "Coat of arms of Anguilla",
+          "commons": "Coat of arms of Anguilla.svg",
+          "file": "ai/ai-arms.svg",
+          "design": "Argent, three orange dolphins embowed and leaping in a circle, in base a bar wavy azure for the sea.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla",
+          "meaning": {
+            "description": "The shield, adopted by Royal Warrant on 27 November 1990, shows three orange dolphins leaping in a ring for unity, strength and endurance — the island's motto — with the circle standing for continuity. The white field is peace and tranquillity; the blue at the base is the Caribbean Sea, and stands too for faith, youth and hope. The same design appears on Anguilla's flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of Anguilla — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla"
+              }
+            ]
+          },
+          "sha256": "4655bc15ff55e4ccb482bb70ffe6dd65253b6133d04ccf77bfd7b59d35e4c04c",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "ai-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Anguilla football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/6/63/Anguilla_Football_Association_%282020%29.png",
+          "file": "ai/ai-football-crest.png",
+          "licenceNote": "Non-free logo. The crest of the Anguilla football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Anguilla_Football_Association_(2020).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Anguilla's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Anguilla_Football_Association",
+          "sha256": "818ec36c2565da6a221909657260339b4dcf66f3a9141af3540d98ed7c138e63",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
     "AL": {
       "flags": [
         {
@@ -935,6 +984,55 @@
         "source": "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence"
       }
     },
+    "AS": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "as-official-national",
+          "category": "official",
+          "from": 1960,
+          "to": 9999,
+          "name": "Flag of American Samoa",
+          "reuse": "flags/sub/US/US-AS.svg",
+          "design": "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
+        },
+        {
+          "id": "as-seal",
+          "category": "coatofarms",
+          "from": 1973,
+          "to": 9999,
+          "name": "Seal of American Samoa",
+          "commons": "Seal of American Samoa.svg",
+          "file": "as/as-seal.svg",
+          "design": "A crossed fue (fly-whisk) and toʻotoʻo (staff) above a tanoa (kava bowl) on tapa cloth, with the motto Sāmoa Muamua Le Atua.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_American_Samoa",
+          "meaning": {
+            "description": "The seal is built from the emblems of the faʻamatai, the Samoan chiefly system: the fue (fly-whisk) for the wisdom of the talking chief, the toʻotoʻo (orator's staff) for his authority, and the tanoa (kava bowl) for service to the chief, all on a tapa-cloth ground for Samoan artistry. The motto reads Sāmoa Muamua Le Atua — “Samoa, let God be first.” The date 17 April 1900 marks the day American Samoa became a U.S. territory.",
+            "sources": [
+              {
+                "title": "Seal of American Samoa — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_American_Samoa"
+              }
+            ]
+          },
+          "sha256": "c9e3db182b6fed86f7768c56768282f2663e8f5d9cfb5e2389aa30fb197a8d51",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "as-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the American Samoa football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/3/30/Football_Federation_American_Samoa_%28badge%29.svg",
+          "file": "as/as-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the American Samoa football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_American_Samoa_(badge).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of American Samoa's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Football_Federation_American_Samoa",
+          "sha256": "434280802913dfd63c67ca9ce7e8c4cb37f247a85da593dfec9ad882d0f53de0",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
     "AT": {
       "flags": [
         {
@@ -1280,6 +1378,80 @@
         "note": "Legislative independence was completed later, by the Statute of Westminster (adopted 1942) and the Australia Acts of 1986.",
         "source": "https://en.wikipedia.org/wiki/Federation_of_Australia"
       }
+    },
+    "AW": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "aw-official-national",
+          "category": "official",
+          "from": 1976,
+          "to": 9999,
+          "name": "Flag of Aruba",
+          "reuse": "flags/sub/NL/NL-AW.svg",
+          "design": "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Aruba"
+        },
+        {
+          "id": "aw-arms",
+          "category": "coatofarms",
+          "from": 1955,
+          "to": 9999,
+          "name": "Coat of arms of Aruba",
+          "commons": "Coat of arms of Aruba.svg",
+          "file": "aw/aw-arms.svg",
+          "design": "A white cross quartering the shield: an aloe plant, the Hooiberg hill over a wavy sea, clasped hands, and a cogwheel; a red lion crest, laurel-branch supporters.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba",
+          "meaning": {
+            "description": "Granted on 15 November 1955. A white cross of faith divides the shield into four: a flowering aloe, the island's first great export; the Hooiberg, the hill that marks Aruba rising green out of the sea; two clasped hands for friendly relations with the wider world; and a cogwheel for the industry the islanders live by. A red lion of strength and generosity crests the shield, and two laurel branches — for peace and friendship — support it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Aruba — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba"
+              }
+            ]
+          },
+          "sha256": "2973c0451ae62766bd5feaee6930c56951e973caa54099b485963f69d57fdf38",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "AX": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ax-official-national",
+          "category": "official",
+          "from": 1954,
+          "to": 9999,
+          "name": "Flag of Åland",
+          "reuse": "flags/ax.svg",
+          "design": "A red Nordic cross fimbriated in yellow on a blue field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_%C3%85land"
+        },
+        {
+          "id": "ax-arms",
+          "category": "coatofarms",
+          "from": 1952,
+          "to": 9999,
+          "name": "Coat of arms of Åland",
+          "commons": "Coat of arms of Åland.svg",
+          "file": "ax/ax-arms.svg",
+          "design": "Azure, a stag trippant Or — a golden red deer on blue.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land",
+          "meaning": {
+            "description": "The golden stag on blue has an unusual origin: the arms were granted to the Swedish province of Öland in 1560 and passed to Åland through a centuries-long heraldic mix-up of the two near-identically-named provinces, becoming Åland's official arms only on 10 December 1952. The stag's own symbolism is not recorded; Åland's earliest known seal, from 1326, instead showed Saint Olaf, the islands' patron saint.",
+            "sources": [
+              {
+                "title": "Coat of arms of Åland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land"
+              }
+            ]
+          },
+          "sha256": "2bcc16fd5b6ae33aca4fe47bfa5cb176a4091470b701cbd274d456fce46d480b",
+          "fetched": "2026-08-13"
+        }
+      ]
     },
     "AZ": {
       "flags": [
@@ -2466,6 +2638,55 @@
         "event": "Benin (then Dahomey) became independent from France on 1 August 1960",
         "source": "https://en.wikipedia.org/wiki/History_of_Benin"
       }
+    },
+    "BM": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "bm-official-national",
+          "category": "official",
+          "from": 1910,
+          "to": 9999,
+          "name": "Flag of Bermuda",
+          "reuse": "flags/bm.svg",
+          "design": "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Bermuda"
+        },
+        {
+          "id": "bm-arms",
+          "category": "coatofarms",
+          "from": 1910,
+          "to": 9999,
+          "name": "Coat of arms of Bermuda",
+          "commons": "Coat of arms of Bermuda.svg",
+          "file": "bm/bm-arms.svg",
+          "design": "Argent, on a mount vert a lion sejant affronté gules supporting an antique shield azure charged with a representation of the wreck of the ship Sea Venture proper.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 4 October 1910 though in use since the 1620s. A red lion — the lion of England, marking Bermuda's tie to Britain — holds a shield showing the wreck of the Sea Venture, the flagship bound for Jamestown that Sir George Somers deliberately ran onto Bermuda's reefs in a 1609 hurricane; its 150 survivors founded the colony, so the shipwreck that stranded them is remembered as the island's origin. The motto Quo Fata Ferunt — 'Whither the Fates Carry Us' — recalls that the settlers reached Bermuda by chance of storm.",
+            "sources": [
+              {
+                "title": "Coat of arms of Bermuda — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda"
+              }
+            ]
+          },
+          "sha256": "91d5795480fef761971ca9bc9f48550bab4222f5accec2d90784b8604ad51653",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "bm-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Bermuda football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Bermuda_FA_logo.svg",
+          "file": "bm/bm-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Bermuda football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Bermuda_FA_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Bermuda's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Bermuda_Football_Association",
+          "sha256": "e07f2fd042eae2c949af5957480d85e375717f521a5198b6cbd6769b9a191edf",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "BN": {
       "flags": [
@@ -4405,6 +4626,55 @@
         "source": "https://en.wikipedia.org/wiki/History_of_Ivory_Coast"
       }
     },
+    "CK": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ck-official-national",
+          "category": "official",
+          "from": 1979,
+          "to": 9999,
+          "name": "Flag of the Cook Islands",
+          "reuse": "flags/ck.svg",
+          "design": "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
+        },
+        {
+          "id": "ck-arms",
+          "category": "coatofarms",
+          "from": 1978,
+          "to": 9999,
+          "name": "Coat of arms of the Cook Islands",
+          "commons": "Coat of arms of the Cook Islands.svg",
+          "file": "ck/ck-arms.svg",
+          "design": "Azure, fifteen white stars in a circle; supporters a flying fish and a white tern; crest a red-feather chieftain's headdress; a white cross and Rarotongan club in saltire behind; palm leaves and a pearl in base.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands",
+          "meaning": {
+            "description": "Adopted on 4 August 1978. The fifteen white stars ringing the blue shield are the fifteen islands of the group, drawn in a circle so none stands above another. The supporters are creatures of the sea and sky — the flying fish (maroro) and the white tern (kakaia); above sits a chieftain's headdress of red feathers, honouring the traditional rank system. Behind the shield a white cross for Christianity crosses a Rarotongan ceremonial club for Māori tradition and oratory, and palm leaves with a pearl fill the base.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Cook Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands"
+              }
+            ]
+          },
+          "sha256": "78447f4d1a6cb903a62c270c90f88dd54cf54b9d32a770f893e3ec3e9db3869f",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "ck-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Cook Islands football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/4/48/Cook_Islands_FA.svg",
+          "file": "ck/ck-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Cook Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cook_Islands_FA.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Cook Islands's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Cook_Islands_Football_Association",
+          "sha256": "fd9a7568cf958555b860f4aba2fe98b3a57fb4ca994dde41c69bbbae5cf34304",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
     "CL": {
       "flags": [
         {
@@ -5449,6 +5719,55 @@
         "event": "Cape Verde became independent from Portugal on 5 July 1975",
         "source": "https://en.wikipedia.org/wiki/History_of_Cape_Verde"
       }
+    },
+    "CW": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "cw-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of Curaçao",
+          "reuse": "flags/sub/NL/NL-CW.svg",
+          "design": "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
+        },
+        {
+          "id": "cw-arms",
+          "category": "coatofarms",
+          "from": 1964,
+          "to": 9999,
+          "name": "Coat of arms of Curaçao",
+          "commons": "Coat of arms of Curaçao.svg",
+          "file": "cw/cw-arms.svg",
+          "design": "A shield with a sailing ship in full sail on a blue sea and a green laraha (bitter-orange) tree, an inescutcheon of the arms of Amsterdam (three saltires).",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao",
+          "meaning": {
+            "description": "Granted on 24 July 1964. The ship under full sail is a vessel of the Dutch West India Company, which settled Curaçao in 1634; the green laraha — the bitter Valencia orange whose peel gives the island's famous liqueur — stands for its flora and agriculture. The small central shield bears the three saltires of Amsterdam, the city that governed the colony, marking Curaçao's long tie to Amsterdam and the House of Orange-Nassau.",
+            "sources": [
+              {
+                "title": "Coat of arms of Curaçao — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao"
+              }
+            ]
+          },
+          "sha256": "f443f366297bead7765c6ac0be02da99c9b55f906d63f620603ccf20f834f745",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "cw-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Curaçao football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/1/1c/Curacao_Football_Federation.svg",
+          "file": "cw/cw-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Curaçao football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Curacao_Football_Federation.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Curaçao's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Cura%C3%A7ao_Football_Federation",
+          "sha256": "2a59e48911aed43fa8ad756f16e4fbf1a321e453e9041dc91739b25124c52c4e",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "CY": {
       "flags": [
@@ -7479,6 +7798,43 @@
         "source": "https://en.wikipedia.org/wiki/History_of_Fiji"
       }
     },
+    "FK": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "fk-official-national",
+          "category": "official",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of the Falkland Islands",
+          "reuse": "flags/fk.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands"
+        },
+        {
+          "id": "fk-arms",
+          "category": "coatofarms",
+          "from": 1948,
+          "to": 9999,
+          "name": "Coat of arms of the Falkland Islands",
+          "commons": "Coat of arms of the Falkland Islands.svg",
+          "file": "fk/fk-arms.svg",
+          "design": "A ram standing on tussock grass above a sea of blue and white wavy lines bearing the ship Desire; motto 'DESIRE THE RIGHT'.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 29 September 1948. A ram standing on tussock grass — the islands' native vegetation — stands for sheep farming, historically the Falklands' principal industry; below, on a blue-and-white wavy sea, sails the Desire, the ship of the English navigator John Davis, credited with sighting the islands in 1592. The motto 'Desire the Right' plays on the ship's name, and the arms flew throughout except during the brief Argentine occupation of 1982.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Falkland Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands"
+              }
+            ]
+          },
+          "sha256": "5ea4e7bd85a9729268ff05a3d51876edcf8b355320b4d609669596fff3c25d6f",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
     "FM": {
       "flags": [
         {
@@ -7572,6 +7928,43 @@
         "event": "The Federated States of Micronesia became a sovereign state in free association with the United States on 3 November 1986, ending the US-administered Trust Territory of the Pacific Islands",
         "source": "https://en.wikipedia.org/wiki/History_of_the_Federated_States_of_Micronesia"
       }
+    },
+    "FO": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "fo-official-national",
+          "category": "official",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of the Faroe Islands",
+          "reuse": "flags/fo.svg",
+          "design": "Merkið — a red Nordic cross fimbriated in blue on a white field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands"
+        },
+        {
+          "id": "fo-arms",
+          "category": "coatofarms",
+          "from": 1948,
+          "to": 9999,
+          "name": "Coat of arms of the Faroe Islands",
+          "commons": "Coat of arms of the Faroe Islands.svg",
+          "file": "fo/fo-arms.svg",
+          "design": "Azure, a ram passant argent, langued gules, armed and unguled Or.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands",
+          "meaning": {
+            "description": "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Faroe Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands"
+              }
+            ]
+          },
+          "sha256": "b2419e75971021b860c953d501dcae8c9af8db8961b046c36ee8720fe000abab",
+          "fetched": "2026-08-13"
+        }
+      ]
     },
     "FR": {
       "flags": [
@@ -8293,6 +8686,43 @@
         "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia"
       }
     },
+    "GG": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gg-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Guernsey",
+          "reuse": "flags/gg.svg",
+          "design": "A red St George's cross on white with a gold Norman cross set within it.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Guernsey"
+        },
+        {
+          "id": "gg-arms",
+          "category": "coatofarms",
+          "from": 1279,
+          "to": 9999,
+          "name": "Coat of arms of Guernsey",
+          "commons": "Coat of arms of Guernsey.svg",
+          "file": "gg/gg-arms.svg",
+          "design": "Gules, three lions passant guardant Or, langued and armed Azure — three gold lions on red — with a small gold sprig (the rameau) above.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey",
+          "meaning": {
+            "description": "Like Jersey and England, Guernsey bears the three gold lions of the Dukes of Normandy — a legacy of the Channel Islands' place in the Duchy of Normandy, which the islands kept when they stayed loyal to the English Crown after Normandy was lost to France in 1204. King Edward I granted a single joint seal for Guernsey and Jersey in 1279, and separate bailiwick seals followed in 1304. Guernsey's arms are distinguished from Jersey's otherwise identical lions by the small gold sprig of leaves — the rameau — set above the shield.",
+            "sources": [
+              {
+                "title": "Coat of arms of Guernsey — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey"
+              }
+            ]
+          },
+          "sha256": "999d55bb89e6e64124117d63b2cb4af44fa825b83c44193dfb05bf1683f5f882",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
     "GH": {
       "flags": [
         {
@@ -8490,6 +8920,92 @@
         "event": "Independence from the United Kingdom, 6 March 1957 — the first colony in sub-Saharan Africa to gain it",
         "source": "https://en.wikipedia.org/wiki/History_of_Ghana"
       }
+    },
+    "GI": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gi-official-national",
+          "category": "official",
+          "from": 1502,
+          "to": 9999,
+          "name": "Flag of Gibraltar",
+          "reuse": "flags/gi.svg",
+          "design": "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Gibraltar"
+        },
+        {
+          "id": "gi-arms",
+          "category": "coatofarms",
+          "from": 1502,
+          "to": 9999,
+          "name": "Coat of arms of Gibraltar",
+          "commons": "Coat of arms of Gibraltar1.svg",
+          "file": "gi/gi-arms.svg",
+          "design": "Argent, upon a base gules a castle triple-towered gules ported and windowed sable, a golden key pendent from the portal.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar",
+          "meaning": {
+            "description": "Gibraltar's arms were granted by a Royal Warrant of Isabella I of Castile on 10 July 1502, during the Spanish period — the oldest continuously-used coat of arms of any British Overseas Territory. The red three-towered castle, drawn in the style of the arms of Castile, stands for Gibraltar's strength and its command of the Rock; the golden key hanging beneath it, the warrant said, marks Gibraltar as 'the key between these our kingdoms in the Eastern and Western Seas' — the sentinel that controls passage through the Strait. The flag flies these same arms as a banner.",
+            "sources": [
+              {
+                "title": "Coat of arms of Gibraltar — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar"
+              }
+            ]
+          },
+          "sha256": "db0b032a866fdb6b7bcdfc61b681ec8511733e7e403cd44eb5e4d099ebf9ba96",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "gi-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Gibraltar football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/f/fe/Gibraltar_Football_Association_%282020%29.svg",
+          "file": "gi/gi-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Gibraltar football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Gibraltar_Football_Association_(2020).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Gibraltar's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Gibraltar_Football_Association",
+          "sha256": "59c79bf26bb6ad10a76b28762137f85c55d974a333ea36b7023e0c70488fc34c",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
+    "GL": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gl-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Greenland",
+          "reuse": "flags/gl.svg",
+          "design": "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Greenland"
+        },
+        {
+          "id": "gl-arms",
+          "category": "coatofarms",
+          "from": 1989,
+          "to": 9999,
+          "name": "Coat of arms of Greenland",
+          "commons": "Coat of arms of Greenland.svg",
+          "file": "gl/gl-arms.svg",
+          "design": "Azure, a polar bear rampant argent, its left forepaw raised.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland",
+          "meaning": {
+            "description": "Adopted by Greenland's Landsting on 1 May 1989. The white polar bear stands for the island's Arctic wildlife, and the blue shield for the Atlantic and Arctic oceans that wash it. The bear raises its LEFT forepaw — following the traditional Inuit belief that polar bears are left-handed — which sets Greenland's version apart from the Danish royal arms, where the bear raises its right.",
+            "sources": [
+              {
+                "title": "Coat of arms of Greenland — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland"
+              }
+            ]
+          },
+          "sha256": "6a7c534ed6cce52bbb74a589feeaeffe95d0b240bad2330e9ba135ff7d6a0096",
+          "fetched": "2026-08-13"
+        }
+      ]
     },
     "GM": {
       "flags": [
@@ -8843,6 +9359,43 @@
         }
       ]
     },
+    "GS": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "gs-official-national",
+          "category": "official",
+          "from": 1992,
+          "to": 9999,
+          "name": "Flag of South Georgia and the South Sandwich Islands",
+          "reuse": "flags/gs.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands"
+        },
+        {
+          "id": "gs-arms",
+          "category": "coatofarms",
+          "from": 1992,
+          "to": 9999,
+          "name": "Coat of arms of South Georgia and the South Sandwich Islands",
+          "commons": "Coat of arms of South Georgia and the South Sandwich Islands.svg",
+          "file": "gs/gs-arms.svg",
+          "design": "Lozengy argent and azure, on a pile vert a gold lion rampant holding a torch, in chief two gold estoiles; crest a reindeer; supporters an Antarctic fur seal and a macaroni penguin; motto LEO TERRAM PROPRIAM PROTEGAT.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands",
+          "meaning": {
+            "description": "The golden lion holding a torch stands for the United Kingdom and for the islands' discovery, and the two gold stars above are taken from the arms of Captain James Cook, who charted South Georgia in 1775. An Antarctic fur seal and a macaroni penguin — both native — support the shield, and the crest is a reindeer, for the two herds once introduced to the island. The arms, first sealed in 1985, were augmented by Royal Warrant on 14 February 1992 to mark the liberation of the Falklands; the motto, Leo Terram Propriam Protegat, means 'Let the Lion protect his own land'.",
+            "sources": [
+              {
+                "title": "Coat of arms of South Georgia and the South Sandwich Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands"
+              }
+            ]
+          },
+          "sha256": "c4606c194bbf3c3c890ecd8be79fc1d60b43fdb4ca6abe3fba04fbc12d7933aa",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
     "GT": {
       "flags": [
         {
@@ -8935,6 +9488,96 @@
         "event": "Guatemala became independent from Spain on 15 September 1821",
         "source": "https://en.wikipedia.org/wiki/History_of_Guatemala"
       }
+    },
+    "GU": {
+      "entity": true,
+      "independence": {
+        "year": 1898,
+        "event": "Guam was ceded by Spain to the United States in 1898 after the Spanish–American War; it is an unincorporated U.S. Territory. Japan occupied the island from 1941 to 1944",
+        "source": "https://en.wikipedia.org/wiki/History_of_Guam"
+      },
+      "flags": [
+        {
+          "id": "gu-official-national",
+          "category": "official",
+          "from": 1948,
+          "to": 9999,
+          "name": "Flag of Guam",
+          "reuse": "flags/sub/US/US-GU.svg",
+          "design": "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Guam"
+        },
+        {
+          "id": "gu-burgundy",
+          "category": "historical",
+          "from": 1668,
+          "to": 1785,
+          "name": "Cross of Burgundy",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "The ensign of the Spanish Empire, flown over Guam from the founding of the Spanish mission in 1668.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "gu-spain-1785",
+          "category": "historical",
+          "from": 1785,
+          "to": 1898,
+          "name": "Flag of the Kingdom of Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The 1785 Spanish ensign, flown over Guam until it was ceded to the United States in 1898.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "gu-japan",
+          "category": "historical",
+          "from": 1941,
+          "to": 1944,
+          "name": "Flag of Japan",
+          "occupier": "the Empire of Japan",
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "gu/gu-japan.svg",
+          "design": "The Hinomaru, flown during the Japanese military occupation of Guam from 1941 until the island was retaken by the United States in 1944.",
+          "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "gu-seal",
+          "category": "coatofarms",
+          "from": 1946,
+          "to": 9999,
+          "name": "Great Seal of Guam",
+          "commons": "Seal of Guam.svg",
+          "file": "gu/gu-seal.svg",
+          "design": "A slingstone-shaped emblem showing a flying proa in Agana Bay beneath a coconut tree, GUAM in red across it.",
+          "source": "https://en.wikipedia.org/wiki/Seal_of_Guam",
+          "meaning": {
+            "description": "Approved in 1946, the seal takes the pointed shape of a Chamorro slingstone, the ancient weapon of the islands. Within it a coconut tree — the tree of life — bends but does not break, for a people tested by famine, war and calamity yet enduring; a flying proa, the swift Chamorro outrigger, speaks to their seafaring skill; and the Hagåtña river meeting the sea marks a willingness to share the land's resources. GUAM runs across the centre in red.",
+            "sources": [
+              {
+                "title": "Seal of Guam — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Seal_of_Guam"
+              }
+            ]
+          },
+          "sha256": "6eff24b73476e9482690dc61cf4d8519b28cf52cc264d5770f8de0fd86dfeec9",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "gu-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Guam football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Guam_Football_Association_logo_2026.png",
+          "file": "gu/gu-football-crest.png",
+          "licenceNote": "Non-free logo. The crest of the Guam football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Guam_Football_Association_logo_2026.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Guam's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Guam_Football_Association",
+          "sha256": "a3df2c055520afb8b8bd07f6aaede9b6b5a4c2a7cf91b78bf36ec4cb04e304d3",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "GW": {
       "flags": [
@@ -9136,6 +9779,99 @@
         "note": "The territory had been Dutch (Essequibo, Demerara and Berbice) before Britain took it in the Napoleonic Wars.",
         "source": "https://en.wikipedia.org/wiki/History_of_Guyana"
       }
+    },
+    "HK": {
+      "entity": true,
+      "independence": {
+        "year": 1997,
+        "event": "Hong Kong's sovereignty was transferred from the United Kingdom to the People's Republic of China on 1 July 1997, when it became a Special Administrative Region under the 'one country, two systems' principle",
+        "source": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong"
+      },
+      "flags": [
+        {
+          "id": "hk-official-national",
+          "category": "official",
+          "from": 1997,
+          "to": 9999,
+          "name": "Flag of Hong Kong",
+          "reuse": "flags/sub/CN/CN-HK.svg",
+          "design": "The regional flag — a white bauhinia flower on red — flown since the 1997 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
+        },
+        {
+          "id": "hk-colonial",
+          "category": "historical",
+          "from": 1959,
+          "to": 1997,
+          "name": "Colonial flag of Hong Kong",
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of Hong Kong (1959–1997).svg",
+          "file": "hk/hk-colonial.svg",
+          "design": "The British Blue Ensign defaced with the colonial arms of Hong Kong, flown until the 1997 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong",
+          "sha256": "d62c6db1954c9a570c1c4c292973b957847f1c19043037b6dd112a3dceb65d74",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "hk-uk",
+          "category": "historical",
+          "from": 1841,
+          "to": 1959,
+          "name": "Flag of the United Kingdom",
+          "sovereign": "the United Kingdom",
+          "commons": "Flag of the United Kingdom (3-5).svg",
+          "file": "hk/hk-uk.svg",
+          "design": "The Union Flag, flown over the British colony of Hong Kong from 1841 before the colony adopted its own ensign.",
+          "source": "https://en.wikipedia.org/wiki/British_Hong_Kong",
+          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "hk-emblem",
+          "category": "coatofarms",
+          "from": 1997,
+          "to": 9999,
+          "name": "Regional Emblem of Hong Kong",
+          "commons": "Regional Emblem of Hong Kong.svg",
+          "file": "hk/hk-emblem.svg",
+          "design": "The white bauhinia of the flag within a red ring naming the Special Administrative Region.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong",
+          "meaning": {
+            "description": "The emblem carries the same device as the flag: the white five-petal Bauhinia × blakeana, the orchid tree discovered in Hong Kong that stands for the territory itself. A red star sits on each petal, mirroring the stars of China's national flag to show that Hong Kong is part of China; the red field matches China's flag. Together the red and white embody the 'one country, two systems' framework. Adopted at the 1997 handover.",
+            "sources": [
+              {
+                "title": "Flag of Hong Kong — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
+              }
+            ]
+          },
+          "sha256": "bc89cb28992c588123fb195334808881d12023e884115627ec7472509af6761c",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "hk-passport",
+          "category": "passport",
+          "name": "Hong Kong SAR passport",
+          "commons": "Hong Kong Special Administrative Region Passport 2007.svg",
+          "file": "hk/hk-passport.svg",
+          "design": "The dark-blue cover of the Hong Kong Special Administrative Region passport.",
+          "source": "https://en.wikipedia.org/wiki/Hong_Kong_Special_Administrative_Region_passport",
+          "sha256": "dc0cb19b5ae3dbc4f89235eed936ff7cbea38e53be535ef29ce7a51cad227289",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "hk-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Hong Kong football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/9/90/HKFA_logo_2023.svg",
+          "file": "hk/hk-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Hong Kong football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:HKFA_logo_2023.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Hong Kong's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Hong_Kong_Football_Association",
+          "sha256": "6be3543b0b013c962c3388b9f2c2e7b0373a0471c7e1229fb82feebe76e5bf48",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "HN": {
       "flags": [
@@ -10094,6 +10830,43 @@
         "source": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence"
       }
     },
+    "IM": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "im-official-national",
+          "category": "official",
+          "from": 1932,
+          "to": 9999,
+          "name": "Flag of the Isle of Man",
+          "reuse": "flags/im.svg",
+          "design": "The triskelion — three armoured legs conjoined at the thigh — in gold and silver on a red field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man"
+        },
+        {
+          "id": "im-arms",
+          "category": "coatofarms",
+          "from": 1996,
+          "to": 9999,
+          "name": "Coat of arms of the Isle of Man",
+          "commons": "Coat of arms of the Isle of Man.svg",
+          "file": "im/im-arms.svg",
+          "design": "Gules, three legs in armour flexed at the knee and conjoined at the thigh, all proper, garnished and spurred Or; an imperial crown crest, supported by a peregrine falcon and a raven, on a scroll the motto QUOCUNQUE JECERIS STABIT.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man",
+          "meaning": {
+            "description": "The triskelion — three armoured running legs joined at the thigh — has stood for Mann since the late 13th century, appearing after Scotland took the island in 1265; scholars link it to the three-legged emblem of Sicily, perhaps carried north through the royal houses of Scotland and Sicily. The Latin motto Quocunque Jeceris Stabit — 'whichever way you throw it, it will stand' — plays on the figure's balance: however it falls, a leg is always planted. It first appeared on the island's coinage in 1668. The peregrine falcon recalls the pair of falcons the Lords of Mann rendered to English kings at their coronation. The present arms were granted by Queen Elizabeth II on 12 July 1996.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Isle of Man — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man"
+              }
+            ]
+          },
+          "sha256": "a0f007a73acd77da1285446440bd2f47a787c9ae4f91080f64c88baa1e13a34e",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
     "IN": {
       "flags": [
         {
@@ -10303,6 +11076,21 @@
         "event": "Independence and partition under the Indian Independence Act, 15 August 1947.",
         "source": "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947"
       }
+    },
+    "IO": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "io-official-national",
+          "category": "official",
+          "from": 1990,
+          "to": 9999,
+          "name": "Flag of the British Indian Ocean Territory",
+          "reuse": "flags/io.svg",
+          "design": "White and blue wavy stripes for the Indian Ocean, the Union Flag in the canton, and a palm tree above a royal crown in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
+        }
+      ]
     },
     "IQ": {
       "flags": [
@@ -10896,6 +11684,43 @@
           "source": "https://en.wikipedia.org/wiki/Italy_national_football_team",
           "sha256": "5c5105c0344e541a4e567370641710e17074fe6161db35edf5845aac2aa0412f",
           "fetched": "2026-08-18"
+        }
+      ]
+    },
+    "JE": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "je-official-national",
+          "category": "official",
+          "from": 1981,
+          "to": 9999,
+          "name": "Flag of Jersey",
+          "reuse": "flags/je.svg",
+          "design": "A red saltire on white, the shield of Jersey (three gold lions under a Plantagenet crown) in the upper triangle.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Jersey"
+        },
+        {
+          "id": "je-arms",
+          "category": "coatofarms",
+          "from": 1907,
+          "to": 9999,
+          "name": "Coat of arms of Jersey",
+          "commons": "Coat of arms of Jersey.svg",
+          "file": "je/je-arms.svg",
+          "design": "Gules, three lions passant guardant in pale Or — three gold lions on red — beneath a gold Plantagenet crown.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey",
+          "meaning": {
+            "description": "The three gold lions on red are the arms of the Dukes of Normandy, the same lions from which England's royal arms descend, and mark Jersey's origin as part of the Duchy of Normandy. When King John lost mainland Normandy to France in 1204 the Channel Islanders kept their allegiance to the English Crown, and the lions stayed as the island's own arms. King Edward VII formally sanctioned the shield in 1907; a Royal Warrant of 10 December 1980 added the Plantagenet crown above it, the States Assembly approving the design in 1981 — the crown marks Jersey's loyalty to the Crown as its own possession, not part of the United Kingdom.",
+            "sources": [
+              {
+                "title": "Coat of arms of Jersey — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey"
+              }
+            ]
+          },
+          "sha256": "5e5677535451c7a2e2c2e22437e89972974382699e556819621288ef0db05bc7",
+          "fetched": "2026-08-13"
         }
       ]
     },
@@ -12421,6 +13246,55 @@
         "event": "Independence from the United Kingdom, 19 June 1961",
         "source": "https://en.wikipedia.org/wiki/History_of_Kuwait"
       }
+    },
+    "KY": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ky-official-national",
+          "category": "official",
+          "from": 1958,
+          "to": 9999,
+          "name": "Flag of the Cayman Islands",
+          "reuse": "flags/ky.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands"
+        },
+        {
+          "id": "ky-arms",
+          "category": "coatofarms",
+          "from": 1958,
+          "to": 9999,
+          "name": "Coat of arms of the Cayman Islands",
+          "commons": "Coat of arms of the Cayman Islands.svg",
+          "file": "ky/ky-arms.svg",
+          "design": "A shield with three green stars over blue-and-white wavy bands, a gold lion passant guardant on red in chief; crest a green turtle upon a coil of rope before a gold pineapple; motto 'He hath founded it upon the seas'.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 14 May 1958. The three green stars are the three islands — Grand Cayman, Little Cayman and Cayman Brac — riding on blue-and-white wavy bands for the sea that surrounds them; the gold lion of England in the chief marks the British connection. Above the shield a green turtle recalls the islands' seafaring and turtling history, resting on a coil of rope for the traditional thatch-rope industry, with a pineapple behind it for the historic ties to Jamaica. The motto, from Psalm 24, 'He hath founded it upon the seas', speaks to both the islanders' Christian faith and their ocean setting.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Cayman Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands"
+              }
+            ]
+          },
+          "sha256": "480010d410cf5c7493c2a2d7736461b320c9c11c7ad76fda3786de4d69e54797",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "ky-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Cayman Islands football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Cayman_Islands_Football_Association.svg",
+          "file": "ky/ky-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Cayman Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cayman_Islands_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Cayman Islands's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Cayman_Islands_Football_Association",
+          "sha256": "25bfbc8add768d261735219ff42f02e353dafacb8d16ee4d048265d069655cbf",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "KZ": {
       "flags": [
@@ -14882,6 +15756,176 @@
         "source": "https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1911"
       }
     },
+    "MO": {
+      "entity": true,
+      "independence": {
+        "year": 1999,
+        "event": "Macau's sovereignty was transferred from Portugal to the People's Republic of China on 20 December 1999, when it became a Special Administrative Region; Macau had been a Portuguese territory since 1557",
+        "source": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau"
+      },
+      "flags": [
+        {
+          "id": "mo-official-national",
+          "category": "official",
+          "from": 1999,
+          "to": 9999,
+          "name": "Flag of Macau",
+          "reuse": "flags/sub/CN/CN-MO.svg",
+          "design": "The regional flag — a white lotus over the Sai Van Bridge and water on green — flown since the 1999 handover.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+        },
+        {
+          "id": "mo-portugal",
+          "category": "historical",
+          "from": 1910,
+          "to": 1999,
+          "name": "Flag of Portugal",
+          "sovereign": "Portugal",
+          "reuse": "flags/pt.svg",
+          "design": "The flag of the Portuguese Republic; Macau flew only Portugal's own flag throughout its rule and adopted a flag of its own only at the 1999 handover.",
+          "source": "https://en.wikipedia.org/wiki/Portuguese_Macau"
+        },
+        {
+          "id": "mo-emblem",
+          "category": "coatofarms",
+          "from": 1999,
+          "to": 9999,
+          "name": "Regional Emblem of Macau",
+          "commons": "Regional Emblem of Macau.svg",
+          "file": "mo/mo-emblem.svg",
+          "design": "The lotus, bridge and water of the flag within a green ring naming the Special Administrative Region.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau",
+          "meaning": {
+            "description": "The emblem repeats the flag's device on green. The white lotus is Macau's floral emblem; beneath it the Governor Nobre de Carvalho (Sai Van) Bridge is the landmark linking the Macau peninsula to Taipa, and the water below marks Macau's life as a port. The arc of five gold stars echoes China's national flag, showing Macau's tie to its sovereign state, and the green field stands for the territory's identity as a Special Administrative Region. Adopted at the 1999 handover.",
+            "sources": [
+              {
+                "title": "Flag of Macau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Macau"
+              }
+            ]
+          },
+          "sha256": "ffd805b2e6198c259582bab80631cb164a71a2b89d36cdc6739a92a111f64502",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "mo-passport",
+          "category": "passport",
+          "name": "Macau SAR passport",
+          "url": "https://gicg.net/wp-content/plugins/GICG-Passport-Index/assets/images/passports/MO.webp",
+          "file": "mo/mo-passport.webp",
+          "drawnRaster": "A drawn cover rendering, not a photograph of a booklet — no lighting, perspective or wear, which is the distinction this category cares about. No vector cover is bundled from Wikimedia Commons.",
+          "licenceNote": "Taken from gicg.net, whose footer reads \"Copyright © 2026 Global. All rights reserved.\" and which states no reuse licence; included at the repository owner's explicit direction after the copyright position was raised. Replace it with a freely-licensed cover if one appears on Wikimedia Commons.",
+          "design": "The cover of the Macau Special Administrative Region passport.",
+          "source": "https://gicg.net/passport/mo/",
+          "sha256": "5ab08e2ede06d4189ec85fe68cf735bfdfa63245eba19fa11195b4d64594ac6a",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "mo-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Macau football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/7/73/Macau_Football_Association_logo.svg",
+          "file": "mo/mo-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Macau football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Macau_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Macau's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Macau_Football_Association",
+          "sha256": "0ab60fea2125b6529649445a85182f439d7724dd0b531de7a5b859e8aad4e6d7",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
+    "MP": {
+      "entity": true,
+      "independence": {
+        "year": 1978,
+        "event": "The Northern Mariana Islands came under U.S. administration in 1944 and, after Spanish (to 1899), German (1899–1914) and Japanese (1914–1944) rule, entered political union with the United States as a Commonwealth in 1978",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_Northern_Mariana_Islands"
+      },
+      "flags": [
+        {
+          "id": "mp-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of the Northern Mariana Islands",
+          "reuse": "flags/sub/US/US-MP.svg",
+          "design": "A grey latte stone and white star before a mwarmwar garland, on a blue field.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
+        },
+        {
+          "id": "mp-burgundy",
+          "category": "historical",
+          "from": 1565,
+          "to": 1785,
+          "name": "Cross of Burgundy",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "The ensign of the Spanish Empire, which claimed the Marianas from 1565.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "mp-spain-1785",
+          "category": "historical",
+          "from": 1785,
+          "to": 1899,
+          "name": "Flag of the Kingdom of Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The 1785 Spanish ensign, flown until Spain sold the northern Marianas to Germany in 1899.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "mp-germany",
+          "category": "historical",
+          "from": 1899,
+          "to": 1914,
+          "name": "Flag of the German Empire",
+          "sovereign": "the German Empire",
+          "commons": "Flag of Germany (1867–1918).svg",
+          "file": "mp/mp-germany.svg",
+          "design": "The black-white-red flag of the German Empire, which bought the northern Marianas from Spain in 1899 and held them until 1914.",
+          "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
+          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "mp-japan",
+          "category": "historical",
+          "from": 1914,
+          "to": 1944,
+          "name": "Flag of Japan",
+          "sovereign": "the Empire of Japan",
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "mp/mp-japan.svg",
+          "design": "The Hinomaru, flown while Japan governed the islands under a League of Nations mandate from 1914 until the United States took them in 1944.",
+          "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "mp-seal",
+          "category": "coatofarms",
+          "from": 1985,
+          "to": 9999,
+          "name": "Seal of the Northern Mariana Islands",
+          "commons": "Seal of the Northern Mariana Islands.svg",
+          "file": "mp/mp-seal.svg",
+          "design": "A grey latte stone and a white star within a mwarmwar garland, on blue.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands",
+          "meaning": {
+            "description": "The grey latte stone — the carved pillar on which the ancient Chamorro raised their houses — stands for the Chamorro people; the white star for the Commonwealth's union with the United States; and the mwarmwar, a garland of ylang-ylang, plumeria, peacock flower and Pacific basil, for the Carolinian people who also settled the islands. The blue field is the Pacific and the Mariana Trench.",
+            "sources": [
+              {
+                "title": "Flag of the Northern Mariana Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
+              }
+            ]
+          },
+          "sha256": "3fec8fd6d16cbd989f8c21f07346741d6e68e4e0c573a2c9939d4764932841f7",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
     "MR": {
       "flags": [
         {
@@ -14974,6 +16018,55 @@
         "event": "Mauritania became independent from France on 28 November 1960",
         "source": "https://en.wikipedia.org/wiki/History_of_Mauritania"
       }
+    },
+    "MS": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "ms-official-national",
+          "category": "official",
+          "from": 1909,
+          "to": 9999,
+          "name": "Flag of Montserrat",
+          "reuse": "flags/ms.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Montserrat"
+        },
+        {
+          "id": "ms-arms",
+          "category": "coatofarms",
+          "from": 1909,
+          "to": 9999,
+          "name": "Coat of arms of Montserrat",
+          "commons": "Coat of arms of Montserrat.svg",
+          "file": "ms/ms-arms.svg",
+          "design": "A woman in a green dress (Erin, the personification of Ireland) embracing a black cross and holding a golden harp.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 10 April 1909. The woman is Erin, the personification of Ireland, and the golden harp beside her is Ireland's own emblem — both honour the Irish settlers who came to Montserrat from 1632, so numerous that a 1678 census found seven in ten of the island's white inhabitants were of Irish descent, the 'Emerald Isle of the Caribbean'. Erin's embrace of the black cross marks the island's Christian faith.",
+            "sources": [
+              {
+                "title": "Coat of arms of Montserrat — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat"
+              }
+            ]
+          },
+          "sha256": "2ed662295c1908af36789ceeadca2d962c869f1aa6cde62b7a50b5a6415cb004",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "ms-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Montserrat football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/5/55/Montserrat_Football_Association.svg",
+          "file": "ms/ms-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Montserrat football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Montserrat_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Montserrat's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Montserrat_Football_Association",
+          "sha256": "bba53d2529238a2f760d3f013983f3590b0e3a79188106ca23aafa6891db41cb",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "MT": {
       "flags": [
@@ -16141,6 +17234,42 @@
         "source": "https://en.wikipedia.org/wiki/History_of_Namibia"
       }
     },
+    "NC": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "nc-kanak",
+          "category": "official",
+          "from": 1980,
+          "to": 9999,
+          "name": "Kanak flag (FLNKS)",
+          "reuse": "flags/nc.svg",
+          "design": "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).",
+          "source": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia",
+          "meaning": {
+            "description": "New Caledonia has no single official flag: the French tricolour was its only official flag until 2010, when the Congress passed a non-binding proposal for the tricolour and this Kanak flag to fly together — a compromise that carries no legal force and remains contested, some communities flying both and others only the tricolour. The Kanak flag was adopted by the pro-independence FLNKS in 1980: blue is the sky and the Pacific, red the blood shed by the Kanaks in their struggle for independence and unity, green the land and the ancestors buried in it; the yellow disc is the sun, bearing a black flèche faîtière — the carved arrow that crowns the roof of a Kanak house, thrust through tutut shells.",
+            "sources": [
+              {
+                "title": "Flags of New Caledonia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nc-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the New Caledonia football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/0/01/New_Caledonia_FA.svg",
+          "file": "nc/nc-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the New Caledonia football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:New_Caledonia_FA.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of New Caledonia's national football association.",
+          "source": "https://en.wikipedia.org/wiki/New_Caledonian_Football_Federation",
+          "sha256": "b5fb6b88e8f498005c42588250a41668f071dfa7ade3783467448570232a9751",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
     "NE": {
       "flags": [
         {
@@ -16978,6 +18107,30 @@
         "source": "https://en.wikipedia.org/wiki/History_of_Nauru"
       }
     },
+    "NU": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "nu-official-national",
+          "category": "official",
+          "from": 1975,
+          "to": 9999,
+          "name": "Flag of Niue",
+          "reuse": "flags/nu.svg",
+          "design": "A golden-yellow field with the Union Flag in the canton, the Union Flag itself defaced with a blue disc and yellow stars.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Niue",
+          "meaning": {
+            "description": "Adopted on 15 October 1975. The bright yellow field stands for the sunshine of Niue and the warmth the Niuean people feel towards New Zealand; the Union Flag marks the protection the United Kingdom granted in 1900 at the petition of Niue's kings and chiefs. On it four small yellow stars form the Southern Cross, for the association with New Zealand, and a larger star on a blue disc stands for the deep sea around the self-governing island.",
+            "sources": [
+              {
+                "title": "Flag of Niue — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Niue"
+              }
+            ]
+          }
+        }
+      ]
+    },
     "NZ": {
       "flags": [
         {
@@ -17617,6 +18770,42 @@
         "note": "Spanish forces were not finally defeated until Ayacucho in 1824.",
         "source": "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence"
       }
+    },
+    "PF": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "pf-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of French Polynesia",
+          "reuse": "flags/pf.svg",
+          "design": "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia",
+          "meaning": {
+            "description": "Officially adopted by the Assembly of French Polynesia on 23 November 1984 and regulated by decree in 1985. Red and white are the traditional Polynesian colours. At the centre a Polynesian outrigger canoe rides the waves, carrying five stars for the territory's five island groups (and for its crew); below, blue-and-white waves are the sea, and above, golden rays are the sun. The design was offered as a symbol of 'the spirit of freedom, responsibility and initiative of a people turned towards the future'.",
+            "sources": [
+              {
+                "title": "Flag of French Polynesia — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pf-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Tahiti football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/a/a1/Tahiti_FA_%282016%E2%80%93%29.svg",
+          "file": "pf/pf-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Tahiti football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Tahiti_FA_(2016–).svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Tahiti's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Tahitian_Football_Federation",
+          "sha256": "d09283c7cc1228343bc5573aec7c7a50699ebc7455c13467d929b42bb3cc4540",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "PG": {
       "flags": [
@@ -18264,6 +19453,107 @@
           "source": "https://en.wikipedia.org/wiki/Polish_Football_Association",
           "sha256": "958685816f534926757e6ff6f92f8cf1204e4458ad7733bfbc0d7df94c6ac294",
           "fetched": "2026-08-18"
+        }
+      ]
+    },
+    "PN": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "pn-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of the Pitcairn Islands",
+          "reuse": "flags/pn.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Pitcairn's arms — the Bounty's anchor and Bible on a green wedge — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands"
+        },
+        {
+          "id": "pn-arms",
+          "category": "coatofarms",
+          "from": 1969,
+          "to": 9999,
+          "name": "Coat of arms of the Pitcairn Islands",
+          "commons": "Coat of arms of the Pitcairn Islands.svg",
+          "file": "pn/pn-arms.svg",
+          "design": "Azure, on a pile in base vert fimbriated Or the Bounty Bible and the anchor of HMS Bounty; crest a Pitcairn wheelbarrow before a slip of miro.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands",
+          "meaning": {
+            "description": "Granted on 4 November 1969. The Bible and the anchor are relics of HMS Bounty, whose mutineers settled Pitcairn in 1790 — the anchor for the ship they burned in Bounty Bay, the Bible for the Christianity that came to shape the tiny community. The blue, gold and green stand for the island rising green out of the Pacific; the crest's wheelbarrow and slip of miro wood speak to the farming the settlers lived by and the wood they carve.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Pitcairn Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands"
+              }
+            ]
+          },
+          "sha256": "af0d623b51fe10f720abdeededcb17306a28fe88e7603f14a2e1f3d86f967861",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
+    "PR": {
+      "entity": true,
+      "independence": {
+        "year": 1898,
+        "event": "Puerto Rico was ceded by Spain to the United States in 1898 after the Spanish–American War; it is today a U.S. Commonwealth (Estado Libre Asociado)",
+        "source": "https://en.wikipedia.org/wiki/History_of_Puerto_Rico"
+      },
+      "flags": [
+        {
+          "id": "pr-official-national",
+          "category": "official",
+          "from": 1952,
+          "to": 9999,
+          "name": "Flag of Puerto Rico",
+          "reuse": "flags/sub/US/US-PR.svg",
+          "design": "The single-star flag — five red and white stripes with a white star on a blue triangle — adopted as the commonwealth flag in 1952.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
+        },
+        {
+          "id": "pr-burgundy",
+          "category": "historical",
+          "from": 1508,
+          "to": 1785,
+          "name": "Cross of Burgundy",
+          "reuse": "historical-flags/spain-burgundy.png",
+          "sovereign": "Spain",
+          "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Puerto Rico from the conquest.",
+          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
+        },
+        {
+          "id": "pr-spain-1785",
+          "category": "historical",
+          "from": 1785,
+          "to": 1898,
+          "name": "Flag of the Kingdom of Spain",
+          "reuse": "historical-flags/spain-1785.png",
+          "sovereign": "Spain",
+          "design": "The red-yellow-red ensign of 1785 with the royal arms, flown over Puerto Rico until it was ceded to the United States in 1898.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "pr-arms",
+          "category": "coatofarms",
+          "from": 1511,
+          "to": 9999,
+          "name": "Coat of arms of Puerto Rico",
+          "commons": "Coat of arms of Puerto Rico.svg",
+          "file": "pr/pr-arms.svg",
+          "design": "A green shield bearing the Lamb of God on the Book of the Seven Seals, ringed by castles, lions, crosses and royal devices.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico",
+          "meaning": {
+            "description": "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
+            "sources": [
+              {
+                "title": "Coat of arms of Puerto Rico — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico"
+              }
+            ]
+          },
+          "sha256": "e8dc2d76143dcf3a4357d01737160fcd183360fb33b9d8bd551f0982ccaea848",
+          "fetched": "2026-08-13"
         }
       ]
     },
@@ -20279,6 +21569,43 @@
         "source": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
       }
     },
+    "SH": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "sh-official-national",
+          "category": "official",
+          "from": 1984,
+          "to": 9999,
+          "name": "Flag of Saint Helena",
+          "reuse": "flags/sh.svg",
+          "design": "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena"
+        },
+        {
+          "id": "sh-arms",
+          "category": "coatofarms",
+          "from": 1984,
+          "to": 9999,
+          "name": "Coat of arms of Saint Helena",
+          "commons": "Coat of arms of Saint Helena.svg",
+          "file": "sh/sh-arms.svg",
+          "design": "Azure, on waves of the sea an East Indiaman under the flag of England between two cliffs; on a chief Or a wirebird proper; motto 'Loyal and Unshakeable'.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena",
+          "meaning": {
+            "description": "Authorised on 30 January 1984. On the chief stands the wirebird — the Saint Helena plover, the island's national bird, found nowhere else — and below it a three-masted East Indiaman flying the cross of St George sails between the island's steep cliffs, for Saint Helena's place on the East India Company's ocean route and its rugged coast. The motto, 'Loyal and Unshakeable', speaks to the islanders' steadfast allegiance.",
+            "sources": [
+              {
+                "title": "Coat of arms of Saint Helena — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena"
+              }
+            ]
+          },
+          "sha256": "cc88f7e83082c15381db1c901d1316e6d7141075b1bb92b29e94e5d99d362330",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
     "SI": {
       "flags": [
         {
@@ -21178,6 +22505,43 @@
         "source": "https://en.wikipedia.org/wiki/History_of_El_Salvador"
       }
     },
+    "SX": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "sx-official-national",
+          "category": "official",
+          "from": 1985,
+          "to": 9999,
+          "name": "Flag of Sint Maarten",
+          "reuse": "flags/sub/NL/NL-SX.svg",
+          "design": "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
+        },
+        {
+          "id": "sx-arms",
+          "category": "coatofarms",
+          "from": 1982,
+          "to": 9999,
+          "name": "Coat of arms of Sint Maarten",
+          "commons": "Coat of arms of Sint Maarten.svg",
+          "file": "sx/sx-arms.svg",
+          "design": "A shield with the Philipsburg courthouse at centre, the French–Dutch border monument and a sage flower, a rising sun behind; crest a brown pelican; motto SEMPER PROGREDIENS.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten",
+          "meaning": {
+            "description": "Adopted on 7 November 1982. At the centre stands the courthouse of Philipsburg, the island's civic heart; beside it the border monument recalls the peaceful boundary that has divided the island between Dutch and French halves since 1648, and the orange-yellow sage is the national flower. A rising sun of hope fills the background, and a brown pelican — the national bird — crests the shield. The motto Semper Progrediens means 'Always progressing'; the orange border marks the tie to the Dutch royal house.",
+            "sources": [
+              {
+                "title": "Coat of arms of Sint Maarten — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten"
+              }
+            ]
+          },
+          "sha256": "683ec3f31f862438746a3006e0b5968aaf86252d2e128a02dc6e2bae52078b9e",
+          "fetched": "2026-08-13"
+        }
+      ]
+    },
     "SY": {
       "flags": [
         {
@@ -21350,6 +22714,55 @@
         "event": "Eswatini (then Swaziland) became independent from the United Kingdom on 6 September 1968",
         "source": "https://en.wikipedia.org/wiki/History_of_Eswatini"
       }
+    },
+    "TC": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "tc-official-national",
+          "category": "official",
+          "from": 1968,
+          "to": 9999,
+          "name": "Flag of the Turks and Caicos Islands",
+          "reuse": "flags/tc.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands"
+        },
+        {
+          "id": "tc-arms",
+          "category": "coatofarms",
+          "from": 1965,
+          "to": 9999,
+          "name": "Coat of arms of the Turks and Caicos Islands",
+          "commons": "Coat of arms of the Turks and Caicos Islands.svg",
+          "file": "tc/tc-arms.svg",
+          "design": "Or, in chief a queen conch shell and a spiny lobster and in base a Turk's-head cactus proper; crest a pelican between two sisal plants; supporters two flamingos.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands",
+          "meaning": {
+            "description": "Granted by Royal Warrant on 28 September 1965. On a gold shield the queen conch shell and the spiny lobster stand for the islands' mainstay industry of fishing, and the Turk's-head cactus — the plant that gave the Turks Islands their name — for the native flora. Above, a white pelican between two sisal plants recalls the old rope-making trade, and two flamingos support the shield, all of them creatures of the islands.",
+            "sources": [
+              {
+                "title": "Coat of arms of the Turks and Caicos Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands"
+              }
+            ]
+          },
+          "sha256": "a699ab9f0b36643eeafc9c661c7a99a2ffc7c3faa007edcb386ed184fd2eb5d6",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "tc-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Turks and Caicos Islands football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/b/b2/Turks_%26_Caicos_Islands_Football_Association_%282015%29.png",
+          "file": "tc/tc-football-crest.png",
+          "licenceNote": "Non-free logo. The crest of the Turks and Caicos Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Turks_&_Caicos_Islands_Football_Association_(2015).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Turks and Caicos Islands's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands_Football_Association",
+          "sha256": "09f44bf1f55b1f3d61d19d8907089eca9c464303132469f51b9c5dafbfb9224c",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "TD": {
       "flags": [
@@ -21811,6 +23224,30 @@
         "event": "Tajikistan declared independence from the Soviet Union on 9 September 1991",
         "source": "https://en.wikipedia.org/wiki/History_of_Tajikistan"
       }
+    },
+    "TK": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "tk-official-national",
+          "category": "official",
+          "from": 2009,
+          "to": 9999,
+          "name": "Flag of Tokelau",
+          "reuse": "flags/tk.svg",
+          "design": "A blue field bearing a yellow Tokelauan canoe sailing towards the Southern Cross, shown as four white stars.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_Tokelau",
+          "meaning": {
+            "description": "Tokelau's first official flag, presented on 7 September 2009. A yellow Tokelauan canoe sails across a blue field towards the Southern Cross — the four white stars — which serves as the navigator's guide. The voyaging canoe stands for Tokelau's own journey towards the system of governance that best fits its people, steered, like the ancient navigators, by the stars.",
+            "sources": [
+              {
+                "title": "Flag of Tokelau — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_Tokelau"
+              }
+            ]
+          }
+        }
+      ]
     },
     "TL": {
       "flags": [
@@ -22574,6 +24011,99 @@
         "event": "Tuvalu became an independent Commonwealth realm on 1 October 1978, having separated from the Gilbert and Ellice Islands Colony as the Ellice Islands in 1975",
         "source": "https://en.wikipedia.org/wiki/History_of_Tuvalu"
       }
+    },
+    "TW": {
+      "entity": true,
+      "independence": {
+        "year": 1945,
+        "event": "Taiwan was ceded by Qing China to Japan in 1895 and administered as a Japanese colony until 1945, when the Republic of China took over its administration at the end of the Second World War. Taiwan has been governed by the ROC since; its political status is disputed between the ROC and the People's Republic of China",
+        "source": "https://en.wikipedia.org/wiki/Retrocession_Day"
+      },
+      "flags": [
+        {
+          "id": "tw-official-national",
+          "category": "official",
+          "from": 1945,
+          "to": 9999,
+          "name": "Flag of the Republic of China",
+          "reuse": "flags/tw.svg",
+          "design": "The 'Blue Sky, White Sun and a Wholly Red Earth' flag, flown over Taiwan by the Republic of China since 1945; the design dates to 1928.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
+        },
+        {
+          "id": "tw-japan",
+          "category": "historical",
+          "from": 1895,
+          "to": 1945,
+          "name": "Flag of Japan",
+          "sovereign": "the Empire of Japan",
+          "commons": "Flag of Japan (1870–1999).svg",
+          "file": "tw/tw-japan.svg",
+          "design": "The Hinomaru, flown over Taiwan during 50 years of Japanese colonial rule after Qing China ceded the island in 1895.",
+          "source": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
+          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tw-qing",
+          "category": "historical",
+          "from": 1683,
+          "to": 1895,
+          "name": "Flag of the Qing dynasty",
+          "priorPolity": "the Qing Empire",
+          "commons": "Flag of China (1889–1912).svg",
+          "file": "tw/tw-qing.svg",
+          "design": "The yellow dragon banner of Qing China, which governed Taiwan until it was ceded to Japan in 1895.",
+          "source": "https://en.wikipedia.org/wiki/Taiwan_under_Qing_rule",
+          "sha256": "d543652386810308fe568ced9de449dffe673a5cf8cb74553a76626c67648f76",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tw-emblem",
+          "category": "coatofarms",
+          "from": 1928,
+          "to": 9999,
+          "name": "National Emblem of the Republic of China",
+          "commons": "National Emblem of the Republic of China.svg",
+          "file": "tw/tw-emblem.svg",
+          "design": "A white sun of twelve rays on a blue disc — the 'Blue Sky with a White Sun'.",
+          "source": "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China",
+          "meaning": {
+            "description": "The 'Blue Sky with a White Sun', designed by Lu Haodong in 1895 and adopted as the national emblem in 1928. The blue disc is the vastness of the sky and the white sun the light of revolution. Its twelve triangular rays stand for the twelve months and the twelve traditional Chinese two-hour periods (shíchen), a call to unceasing progress; the rays stop short of the rim — the breadth of the sky — which distinguishes the state emblem from the Kuomintang party badge whose rays reach the edge.",
+            "sources": [
+              {
+                "title": "National Emblem of the Republic of China — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China"
+              }
+            ]
+          },
+          "sha256": "e56076ae87b324115a333352e30c2da2352f0172d85ed846f78f8b4e60f4ab27",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tw-passport",
+          "category": "passport",
+          "name": "Republic of China (Taiwan) passport",
+          "commons": "Republic of China (Taiwan) Passport 2020.svg",
+          "file": "tw/tw-passport.svg",
+          "design": "The dark-green cover of the Republic of China (Taiwan) passport.",
+          "source": "https://en.wikipedia.org/wiki/Republic_of_China_passport",
+          "sha256": "f7408332cb8b4dcdc98b8ea522d8a1060a7c1042472ada21bb32d8faaf72fc93",
+          "fetched": "2026-08-12"
+        },
+        {
+          "id": "tw-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Chinese Taipei football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Chinese_Taipei_Football_Association_logo.svg",
+          "file": "tw/tw-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Chinese Taipei football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Chinese_Taipei_Football_Association_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Chinese Taipei's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association",
+          "sha256": "9fb0b6a72072ca445a487523f9054ce987ba9c5d555591998dc5cfba0bd12ab3",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "TZ": {
       "flags": [
@@ -24382,6 +25912,120 @@
         "source": "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence"
       }
     },
+    "VG": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "vg-official-national",
+          "category": "official",
+          "from": 1960,
+          "to": 9999,
+          "name": "Flag of the British Virgin Islands",
+          "reuse": "flags/vg.svg",
+          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands"
+        },
+        {
+          "id": "vg-arms",
+          "category": "coatofarms",
+          "from": 1960,
+          "to": 9999,
+          "name": "Coat of arms of the British Virgin Islands",
+          "commons": "Coat of arms of the British Virgin Islands.svg",
+          "file": "vg/vg-arms.svg",
+          "design": "Vert, a woman (Saint Ursula) robed argent holding a lit golden oil lamp, surrounded by eleven further golden lamps; motto VIGILATE.",
+          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands",
+          "meaning": {
+            "description": "Adopted on 15 November 1960 when the territory became a Crown colony. The green shield shows Saint Ursula — the islands' patron, after whom Columbus named them 'Las Once Mil Vírgenes', the eleven thousand virgins — holding a lit golden oil lamp, with eleven more lamps around her for the virgin companions martyred with her in legend. The Latin motto Vigilate, 'be vigilant', reads the lamps as a call to watchfulness, echoing the parable of the wise virgins who kept their lamps burning.",
+            "sources": [
+              {
+                "title": "Coat of arms of the British Virgin Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands"
+              }
+            ]
+          },
+          "sha256": "56362869af8467b807afe18090979d3e3f8b6e38e77ee9941457a6bed2942a07",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "vg-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the British Virgin Islands football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/f/f1/British_Virgin_Islands_Football_Association.svg",
+          "file": "vg/vg-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the British Virgin Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:British_Virgin_Islands_Football_Association.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of British Virgin Islands's national football association.",
+          "source": "https://en.wikipedia.org/wiki/British_Virgin_Islands_Football_Association",
+          "sha256": "c9f6284f63e8f6d1f2f287901d36cd9c9e34bbcd5eee62630a964cb49b9839d2",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
+    "VI": {
+      "entity": true,
+      "independence": {
+        "year": 1917,
+        "event": "The United States bought the Danish West Indies from Denmark in 1917; they became the unincorporated U.S. Territory of the Virgin Islands",
+        "source": "https://en.wikipedia.org/wiki/History_of_the_United_States_Virgin_Islands"
+      },
+      "flags": [
+        {
+          "id": "vi-official-national",
+          "category": "official",
+          "from": 1921,
+          "to": 9999,
+          "name": "Flag of the U.S. Virgin Islands",
+          "reuse": "flags/sub/US/US-VI.svg",
+          "design": "A white field bearing a simplified American eagle between the letters V and I.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
+        },
+        {
+          "id": "vi-denmark",
+          "category": "historical",
+          "from": 1672,
+          "to": 1917,
+          "name": "Flag of Denmark",
+          "sovereign": "Denmark",
+          "reuse": "flags/dk.svg",
+          "design": "The Dannebrog, flown over the Danish West Indies from the settlement of St Thomas in 1672 until the islands were sold to the United States in 1917.",
+          "source": "https://en.wikipedia.org/wiki/Danish_West_Indies"
+        },
+        {
+          "id": "vi-seal",
+          "category": "coatofarms",
+          "from": 1921,
+          "to": 9999,
+          "name": "Seal of the U.S. Virgin Islands",
+          "commons": "Seal of the United States Virgin Islands.svg",
+          "file": "vi/vi-seal.svg",
+          "design": "An American eagle holding a laurel sprig and three arrows, between the letters V and I.",
+          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands",
+          "meaning": {
+            "description": "The eagle carries a sprig of laurel for victory in one talon and three blue arrows in the other — one for each of the three main islands, Saint Croix, Saint Thomas and Saint John — flanked by the letters V and I for Virgin Islands. The blue of its breast shield matches the flag and shield of the United States, of which the territory has been part since it was bought from Denmark in 1917.",
+            "sources": [
+              {
+                "title": "Flag of the United States Virgin Islands — Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
+              }
+            ]
+          },
+          "sha256": "a5ed790fd0a58ea601522d402c66623713e4fb38b4b4868a1a179fd0b4c1e7cc",
+          "fetched": "2026-08-13"
+        },
+        {
+          "id": "vi-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the U.S. Virgin Islands football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/0/0a/US_Virgin_Islands_Soccer_Federation.svg",
+          "file": "vi/vi-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the U.S. Virgin Islands football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:US_Virgin_Islands_Soccer_Federation.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of U.S. Virgin Islands's national football association.",
+          "source": "https://en.wikipedia.org/wiki/U.S._Virgin_Islands_Soccer_Federation",
+          "sha256": "6f05e7042edf88d5a20bf3db2f1a29807b6fc6af07785bd2c88d4728febdc269",
+          "fetched": "2026-08-18"
+        }
+      ]
+    },
     "VN": {
       "flags": [
         {
@@ -24754,6 +26398,23 @@
         "event": "Samoa (then Western Samoa) became independent on 1 January 1962, ending New Zealand's administration — the first Polynesian nation to reestablish independence in the 20th century",
         "source": "https://en.wikipedia.org/wiki/History_of_Samoa"
       }
+    },
+    "XK": {
+      "entity": true,
+      "flags": [
+        {
+          "id": "xk-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Kosovo football association",
+          "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Football_Federation_of_Kosovo_logo.svg",
+          "file": "xk/xk-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Kosovo football association is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Kosovo_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of Kosovo's national football association.",
+          "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Kosovo",
+          "sha256": "c39a18946028bfaf05236231d2061c85dc7ec603fd0aa118623e57ee1bd9d63a",
+          "fetched": "2026-08-18"
+        }
+      ]
     },
     "YE": {
       "flags": [
@@ -25272,1446 +26933,6 @@
         "note": "A white-minority government had unilaterally declared independence as Rhodesia in 1965; no state recognised it.",
         "source": "https://en.wikipedia.org/wiki/History_of_Zimbabwe"
       }
-    },
-    "HK": {
-      "entity": true,
-      "independence": {
-        "year": 1997,
-        "event": "Hong Kong's sovereignty was transferred from the United Kingdom to the People's Republic of China on 1 July 1997, when it became a Special Administrative Region under the 'one country, two systems' principle",
-        "source": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong"
-      },
-      "flags": [
-        {
-          "id": "hk-official-national",
-          "category": "official",
-          "from": 1997,
-          "to": 9999,
-          "name": "Flag of Hong Kong",
-          "reuse": "flags/sub/CN/CN-HK.svg",
-          "design": "The regional flag — a white bauhinia flower on red — flown since the 1997 handover.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
-        },
-        {
-          "id": "hk-colonial",
-          "category": "historical",
-          "from": 1959,
-          "to": 1997,
-          "name": "Colonial flag of Hong Kong",
-          "sovereign": "the United Kingdom",
-          "commons": "Flag of Hong Kong (1959–1997).svg",
-          "file": "hk/hk-colonial.svg",
-          "design": "The British Blue Ensign defaced with the colonial arms of Hong Kong, flown until the 1997 handover.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong",
-          "sha256": "d62c6db1954c9a570c1c4c292973b957847f1c19043037b6dd112a3dceb65d74",
-          "fetched": "2026-08-12"
-        },
-        {
-          "id": "hk-uk",
-          "category": "historical",
-          "from": 1841,
-          "to": 1959,
-          "name": "Flag of the United Kingdom",
-          "sovereign": "the United Kingdom",
-          "commons": "Flag of the United Kingdom (3-5).svg",
-          "file": "hk/hk-uk.svg",
-          "design": "The Union Flag, flown over the British colony of Hong Kong from 1841 before the colony adopted its own ensign.",
-          "source": "https://en.wikipedia.org/wiki/British_Hong_Kong",
-          "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
-          "fetched": "2026-08-12"
-        },
-        {
-          "id": "hk-emblem",
-          "category": "coatofarms",
-          "from": 1997,
-          "to": 9999,
-          "name": "Regional Emblem of Hong Kong",
-          "commons": "Regional Emblem of Hong Kong.svg",
-          "file": "hk/hk-emblem.svg",
-          "design": "The white bauhinia of the flag within a red ring naming the Special Administrative Region.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong",
-          "meaning": {
-            "description": "The emblem carries the same device as the flag: the white five-petal Bauhinia × blakeana, the orchid tree discovered in Hong Kong that stands for the territory itself. A red star sits on each petal, mirroring the stars of China's national flag to show that Hong Kong is part of China; the red field matches China's flag. Together the red and white embody the 'one country, two systems' framework. Adopted at the 1997 handover.",
-            "sources": [
-              {
-                "title": "Flag of Hong Kong — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong"
-              }
-            ]
-          },
-          "sha256": "bc89cb28992c588123fb195334808881d12023e884115627ec7472509af6761c",
-          "fetched": "2026-08-12"
-        },
-        {
-          "id": "hk-passport",
-          "category": "passport",
-          "name": "Hong Kong SAR passport",
-          "commons": "Hong Kong Special Administrative Region Passport 2007.svg",
-          "file": "hk/hk-passport.svg",
-          "design": "The dark-blue cover of the Hong Kong Special Administrative Region passport.",
-          "source": "https://en.wikipedia.org/wiki/Hong_Kong_Special_Administrative_Region_passport",
-          "sha256": "dc0cb19b5ae3dbc4f89235eed936ff7cbea38e53be535ef29ce7a51cad227289",
-          "fetched": "2026-08-12"
-        }
-      ]
-    },
-    "MO": {
-      "entity": true,
-      "independence": {
-        "year": 1999,
-        "event": "Macau's sovereignty was transferred from Portugal to the People's Republic of China on 20 December 1999, when it became a Special Administrative Region; Macau had been a Portuguese territory since 1557",
-        "source": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau"
-      },
-      "flags": [
-        {
-          "id": "mo-official-national",
-          "category": "official",
-          "from": 1999,
-          "to": 9999,
-          "name": "Flag of Macau",
-          "reuse": "flags/sub/CN/CN-MO.svg",
-          "design": "The regional flag — a white lotus over the Sai Van Bridge and water on green — flown since the 1999 handover.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau"
-        },
-        {
-          "id": "mo-portugal",
-          "category": "historical",
-          "from": 1910,
-          "to": 1999,
-          "name": "Flag of Portugal",
-          "sovereign": "Portugal",
-          "reuse": "flags/pt.svg",
-          "design": "The flag of the Portuguese Republic; Macau flew only Portugal's own flag throughout its rule and adopted a flag of its own only at the 1999 handover.",
-          "source": "https://en.wikipedia.org/wiki/Portuguese_Macau"
-        },
-        {
-          "id": "mo-emblem",
-          "category": "coatofarms",
-          "from": 1999,
-          "to": 9999,
-          "name": "Regional Emblem of Macau",
-          "commons": "Regional Emblem of Macau.svg",
-          "file": "mo/mo-emblem.svg",
-          "design": "The lotus, bridge and water of the flag within a green ring naming the Special Administrative Region.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Macau",
-          "meaning": {
-            "description": "The emblem repeats the flag's device on green. The white lotus is Macau's floral emblem; beneath it the Governor Nobre de Carvalho (Sai Van) Bridge is the landmark linking the Macau peninsula to Taipa, and the water below marks Macau's life as a port. The arc of five gold stars echoes China's national flag, showing Macau's tie to its sovereign state, and the green field stands for the territory's identity as a Special Administrative Region. Adopted at the 1999 handover.",
-            "sources": [
-              {
-                "title": "Flag of Macau — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_Macau"
-              }
-            ]
-          },
-          "sha256": "ffd805b2e6198c259582bab80631cb164a71a2b89d36cdc6739a92a111f64502",
-          "fetched": "2026-08-12"
-        },
-        {
-          "id": "mo-passport",
-          "category": "passport",
-          "name": "Macau SAR passport",
-          "url": "https://gicg.net/wp-content/plugins/GICG-Passport-Index/assets/images/passports/MO.webp",
-          "file": "mo/mo-passport.webp",
-          "drawnRaster": "A drawn cover rendering, not a photograph of a booklet — no lighting, perspective or wear, which is the distinction this category cares about. No vector cover is bundled from Wikimedia Commons.",
-          "licenceNote": "Taken from gicg.net, whose footer reads \"Copyright © 2026 Global. All rights reserved.\" and which states no reuse licence; included at the repository owner's explicit direction after the copyright position was raised. Replace it with a freely-licensed cover if one appears on Wikimedia Commons.",
-          "design": "The cover of the Macau Special Administrative Region passport.",
-          "source": "https://gicg.net/passport/mo/",
-          "sha256": "5ab08e2ede06d4189ec85fe68cf735bfdfa63245eba19fa11195b4d64594ac6a",
-          "fetched": "2026-08-12"
-        }
-      ]
-    },
-    "TW": {
-      "entity": true,
-      "independence": {
-        "year": 1945,
-        "event": "Taiwan was ceded by Qing China to Japan in 1895 and administered as a Japanese colony until 1945, when the Republic of China took over its administration at the end of the Second World War. Taiwan has been governed by the ROC since; its political status is disputed between the ROC and the People's Republic of China",
-        "source": "https://en.wikipedia.org/wiki/Retrocession_Day"
-      },
-      "flags": [
-        {
-          "id": "tw-official-national",
-          "category": "official",
-          "from": 1945,
-          "to": 9999,
-          "name": "Flag of the Republic of China",
-          "reuse": "flags/tw.svg",
-          "design": "The 'Blue Sky, White Sun and a Wholly Red Earth' flag, flown over Taiwan by the Republic of China since 1945; the design dates to 1928.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
-        },
-        {
-          "id": "tw-japan",
-          "category": "historical",
-          "from": 1895,
-          "to": 1945,
-          "name": "Flag of Japan",
-          "sovereign": "the Empire of Japan",
-          "commons": "Flag of Japan (1870–1999).svg",
-          "file": "tw/tw-japan.svg",
-          "design": "The Hinomaru, flown over Taiwan during 50 years of Japanese colonial rule after Qing China ceded the island in 1895.",
-          "source": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule",
-          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-12"
-        },
-        {
-          "id": "tw-qing",
-          "category": "historical",
-          "from": 1683,
-          "to": 1895,
-          "name": "Flag of the Qing dynasty",
-          "priorPolity": "the Qing Empire",
-          "commons": "Flag of China (1889–1912).svg",
-          "file": "tw/tw-qing.svg",
-          "design": "The yellow dragon banner of Qing China, which governed Taiwan until it was ceded to Japan in 1895.",
-          "source": "https://en.wikipedia.org/wiki/Taiwan_under_Qing_rule",
-          "sha256": "d543652386810308fe568ced9de449dffe673a5cf8cb74553a76626c67648f76",
-          "fetched": "2026-08-12"
-        },
-        {
-          "id": "tw-emblem",
-          "category": "coatofarms",
-          "from": 1928,
-          "to": 9999,
-          "name": "National Emblem of the Republic of China",
-          "commons": "National Emblem of the Republic of China.svg",
-          "file": "tw/tw-emblem.svg",
-          "design": "A white sun of twelve rays on a blue disc — the 'Blue Sky with a White Sun'.",
-          "source": "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China",
-          "meaning": {
-            "description": "The 'Blue Sky with a White Sun', designed by Lu Haodong in 1895 and adopted as the national emblem in 1928. The blue disc is the vastness of the sky and the white sun the light of revolution. Its twelve triangular rays stand for the twelve months and the twelve traditional Chinese two-hour periods (shíchen), a call to unceasing progress; the rays stop short of the rim — the breadth of the sky — which distinguishes the state emblem from the Kuomintang party badge whose rays reach the edge.",
-            "sources": [
-              {
-                "title": "National Emblem of the Republic of China — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China"
-              }
-            ]
-          },
-          "sha256": "e56076ae87b324115a333352e30c2da2352f0172d85ed846f78f8b4e60f4ab27",
-          "fetched": "2026-08-12"
-        },
-        {
-          "id": "tw-passport",
-          "category": "passport",
-          "name": "Republic of China (Taiwan) passport",
-          "commons": "Republic of China (Taiwan) Passport 2020.svg",
-          "file": "tw/tw-passport.svg",
-          "design": "The dark-green cover of the Republic of China (Taiwan) passport.",
-          "source": "https://en.wikipedia.org/wiki/Republic_of_China_passport",
-          "sha256": "f7408332cb8b4dcdc98b8ea522d8a1060a7c1042472ada21bb32d8faaf72fc93",
-          "fetched": "2026-08-12"
-        }
-      ]
-    },
-    "PR": {
-      "entity": true,
-      "independence": {
-        "year": 1898,
-        "event": "Puerto Rico was ceded by Spain to the United States in 1898 after the Spanish–American War; it is today a U.S. Commonwealth (Estado Libre Asociado)",
-        "source": "https://en.wikipedia.org/wiki/History_of_Puerto_Rico"
-      },
-      "flags": [
-        {
-          "id": "pr-official-national",
-          "category": "official",
-          "from": 1952,
-          "to": 9999,
-          "name": "Flag of Puerto Rico",
-          "reuse": "flags/sub/US/US-PR.svg",
-          "design": "The single-star flag — five red and white stripes with a white star on a blue triangle — adopted as the commonwealth flag in 1952.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico"
-        },
-        {
-          "id": "pr-burgundy",
-          "category": "historical",
-          "from": 1508,
-          "to": 1785,
-          "name": "Cross of Burgundy",
-          "reuse": "historical-flags/spain-burgundy.png",
-          "sovereign": "Spain",
-          "design": "A red ragged saltire on white — the ensign of the Spanish Empire, flown over Puerto Rico from the conquest.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
-        },
-        {
-          "id": "pr-spain-1785",
-          "category": "historical",
-          "from": 1785,
-          "to": 1898,
-          "name": "Flag of the Kingdom of Spain",
-          "reuse": "historical-flags/spain-1785.png",
-          "sovereign": "Spain",
-          "design": "The red-yellow-red ensign of 1785 with the royal arms, flown over Puerto Rico until it was ceded to the United States in 1898.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
-        },
-        {
-          "id": "pr-arms",
-          "category": "coatofarms",
-          "from": 1511,
-          "to": 9999,
-          "name": "Coat of arms of Puerto Rico",
-          "commons": "Coat of arms of Puerto Rico.svg",
-          "file": "pr/pr-arms.svg",
-          "design": "A green shield bearing the Lamb of God on the Book of the Seven Seals, ringed by castles, lions, crosses and royal devices.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico",
-          "meaning": {
-            "description": "Granted by the Spanish Crown in 1511, it is the oldest coat of arms still in use in the Americas. At its centre the Lamb of God (Agnus Dei) rests on the Book of the Seven Seals — both for Saint John the Baptist, to whom the island was dedicated as San Juan Bautista, and the reason the motto reads Joannes Est Nomen Eius, “John is his name.” Around it the golden castles and lions are Castile and León, the F-and-arrows Ferdinand of Aragon and the Y-and-yoke Isabella of Castile, with the cross of Jerusalem — the devices of the Catholic Monarchs who granted it.",
-            "sources": [
-              {
-                "title": "Coat of arms of Puerto Rico — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Puerto_Rico"
-              }
-            ]
-          },
-          "sha256": "e8dc2d76143dcf3a4357d01737160fcd183360fb33b9d8bd551f0982ccaea848",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "GU": {
-      "entity": true,
-      "independence": {
-        "year": 1898,
-        "event": "Guam was ceded by Spain to the United States in 1898 after the Spanish–American War; it is an unincorporated U.S. Territory. Japan occupied the island from 1941 to 1944",
-        "source": "https://en.wikipedia.org/wiki/History_of_Guam"
-      },
-      "flags": [
-        {
-          "id": "gu-official-national",
-          "category": "official",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of Guam",
-          "reuse": "flags/sub/US/US-GU.svg",
-          "design": "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guam"
-        },
-        {
-          "id": "gu-burgundy",
-          "category": "historical",
-          "from": 1668,
-          "to": 1785,
-          "name": "Cross of Burgundy",
-          "reuse": "historical-flags/spain-burgundy.png",
-          "sovereign": "Spain",
-          "design": "The ensign of the Spanish Empire, flown over Guam from the founding of the Spanish mission in 1668.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
-        },
-        {
-          "id": "gu-spain-1785",
-          "category": "historical",
-          "from": 1785,
-          "to": 1898,
-          "name": "Flag of the Kingdom of Spain",
-          "reuse": "historical-flags/spain-1785.png",
-          "sovereign": "Spain",
-          "design": "The 1785 Spanish ensign, flown over Guam until it was ceded to the United States in 1898.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
-        },
-        {
-          "id": "gu-japan",
-          "category": "historical",
-          "from": 1941,
-          "to": 1944,
-          "name": "Flag of Japan",
-          "occupier": "the Empire of Japan",
-          "commons": "Flag of Japan (1870–1999).svg",
-          "file": "gu/gu-japan.svg",
-          "design": "The Hinomaru, flown during the Japanese military occupation of Guam from 1941 until the island was retaken by the United States in 1944.",
-          "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam",
-          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-13"
-        },
-        {
-          "id": "gu-seal",
-          "category": "coatofarms",
-          "from": 1946,
-          "to": 9999,
-          "name": "Great Seal of Guam",
-          "commons": "Seal of Guam.svg",
-          "file": "gu/gu-seal.svg",
-          "design": "A slingstone-shaped emblem showing a flying proa in Agana Bay beneath a coconut tree, GUAM in red across it.",
-          "source": "https://en.wikipedia.org/wiki/Seal_of_Guam",
-          "meaning": {
-            "description": "Approved in 1946, the seal takes the pointed shape of a Chamorro slingstone, the ancient weapon of the islands. Within it a coconut tree — the tree of life — bends but does not break, for a people tested by famine, war and calamity yet enduring; a flying proa, the swift Chamorro outrigger, speaks to their seafaring skill; and the Hagåtña river meeting the sea marks a willingness to share the land's resources. GUAM runs across the centre in red.",
-            "sources": [
-              {
-                "title": "Seal of Guam — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Seal_of_Guam"
-              }
-            ]
-          },
-          "sha256": "6eff24b73476e9482690dc61cf4d8519b28cf52cc264d5770f8de0fd86dfeec9",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "VI": {
-      "entity": true,
-      "independence": {
-        "year": 1917,
-        "event": "The United States bought the Danish West Indies from Denmark in 1917; they became the unincorporated U.S. Territory of the Virgin Islands",
-        "source": "https://en.wikipedia.org/wiki/History_of_the_United_States_Virgin_Islands"
-      },
-      "flags": [
-        {
-          "id": "vi-official-national",
-          "category": "official",
-          "from": 1921,
-          "to": 9999,
-          "name": "Flag of the U.S. Virgin Islands",
-          "reuse": "flags/sub/US/US-VI.svg",
-          "design": "A white field bearing a simplified American eagle between the letters V and I.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
-        },
-        {
-          "id": "vi-denmark",
-          "category": "historical",
-          "from": 1672,
-          "to": 1917,
-          "name": "Flag of Denmark",
-          "sovereign": "Denmark",
-          "reuse": "flags/dk.svg",
-          "design": "The Dannebrog, flown over the Danish West Indies from the settlement of St Thomas in 1672 until the islands were sold to the United States in 1917.",
-          "source": "https://en.wikipedia.org/wiki/Danish_West_Indies"
-        },
-        {
-          "id": "vi-seal",
-          "category": "coatofarms",
-          "from": 1921,
-          "to": 9999,
-          "name": "Seal of the U.S. Virgin Islands",
-          "commons": "Seal of the United States Virgin Islands.svg",
-          "file": "vi/vi-seal.svg",
-          "design": "An American eagle holding a laurel sprig and three arrows, between the letters V and I.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands",
-          "meaning": {
-            "description": "The eagle carries a sprig of laurel for victory in one talon and three blue arrows in the other — one for each of the three main islands, Saint Croix, Saint Thomas and Saint John — flanked by the letters V and I for Virgin Islands. The blue of its breast shield matches the flag and shield of the United States, of which the territory has been part since it was bought from Denmark in 1917.",
-            "sources": [
-              {
-                "title": "Flag of the United States Virgin Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands"
-              }
-            ]
-          },
-          "sha256": "a5ed790fd0a58ea601522d402c66623713e4fb38b4b4868a1a179fd0b4c1e7cc",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "AS": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "as-official-national",
-          "category": "official",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of American Samoa",
-          "reuse": "flags/sub/US/US-AS.svg",
-          "design": "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_American_Samoa"
-        },
-        {
-          "id": "as-seal",
-          "category": "coatofarms",
-          "from": 1973,
-          "to": 9999,
-          "name": "Seal of American Samoa",
-          "commons": "Seal of American Samoa.svg",
-          "file": "as/as-seal.svg",
-          "design": "A crossed fue (fly-whisk) and toʻotoʻo (staff) above a tanoa (kava bowl) on tapa cloth, with the motto Sāmoa Muamua Le Atua.",
-          "source": "https://en.wikipedia.org/wiki/Seal_of_American_Samoa",
-          "meaning": {
-            "description": "The seal is built from the emblems of the faʻamatai, the Samoan chiefly system: the fue (fly-whisk) for the wisdom of the talking chief, the toʻotoʻo (orator's staff) for his authority, and the tanoa (kava bowl) for service to the chief, all on a tapa-cloth ground for Samoan artistry. The motto reads Sāmoa Muamua Le Atua — “Samoa, let God be first.” The date 17 April 1900 marks the day American Samoa became a U.S. territory.",
-            "sources": [
-              {
-                "title": "Seal of American Samoa — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Seal_of_American_Samoa"
-              }
-            ]
-          },
-          "sha256": "c9e3db182b6fed86f7768c56768282f2663e8f5d9cfb5e2389aa30fb197a8d51",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "MP": {
-      "entity": true,
-      "independence": {
-        "year": 1978,
-        "event": "The Northern Mariana Islands came under U.S. administration in 1944 and, after Spanish (to 1899), German (1899–1914) and Japanese (1914–1944) rule, entered political union with the United States as a Commonwealth in 1978",
-        "source": "https://en.wikipedia.org/wiki/History_of_the_Northern_Mariana_Islands"
-      },
-      "flags": [
-        {
-          "id": "mp-official-national",
-          "category": "official",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of the Northern Mariana Islands",
-          "reuse": "flags/sub/US/US-MP.svg",
-          "design": "A grey latte stone and white star before a mwarmwar garland, on a blue field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
-        },
-        {
-          "id": "mp-burgundy",
-          "category": "historical",
-          "from": 1565,
-          "to": 1785,
-          "name": "Cross of Burgundy",
-          "reuse": "historical-flags/spain-burgundy.png",
-          "sovereign": "Spain",
-          "design": "The ensign of the Spanish Empire, which claimed the Marianas from 1565.",
-          "source": "https://en.wikipedia.org/wiki/Cross_of_Burgundy"
-        },
-        {
-          "id": "mp-spain-1785",
-          "category": "historical",
-          "from": 1785,
-          "to": 1899,
-          "name": "Flag of the Kingdom of Spain",
-          "reuse": "historical-flags/spain-1785.png",
-          "sovereign": "Spain",
-          "design": "The 1785 Spanish ensign, flown until Spain sold the northern Marianas to Germany in 1899.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
-        },
-        {
-          "id": "mp-germany",
-          "category": "historical",
-          "from": 1899,
-          "to": 1914,
-          "name": "Flag of the German Empire",
-          "sovereign": "the German Empire",
-          "commons": "Flag of Germany (1867–1918).svg",
-          "file": "mp/mp-germany.svg",
-          "design": "The black-white-red flag of the German Empire, which bought the northern Marianas from Spain in 1899 and held them until 1914.",
-          "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
-          "sha256": "6571eb6423bfe57942c89f989cf95238dc56e90a4072580750160552f4d9150d",
-          "fetched": "2026-08-13"
-        },
-        {
-          "id": "mp-japan",
-          "category": "historical",
-          "from": 1914,
-          "to": 1944,
-          "name": "Flag of Japan",
-          "sovereign": "the Empire of Japan",
-          "commons": "Flag of Japan (1870–1999).svg",
-          "file": "mp/mp-japan.svg",
-          "design": "The Hinomaru, flown while Japan governed the islands under a League of Nations mandate from 1914 until the United States took them in 1944.",
-          "source": "https://en.wikipedia.org/wiki/South_Seas_Mandate",
-          "sha256": "3bb8a45a5c5456df14ea13394c874d662fa08d8c1c1e55dc55134fb2d2f50973",
-          "fetched": "2026-08-13"
-        },
-        {
-          "id": "mp-seal",
-          "category": "coatofarms",
-          "from": 1985,
-          "to": 9999,
-          "name": "Seal of the Northern Mariana Islands",
-          "commons": "Seal of the Northern Mariana Islands.svg",
-          "file": "mp/mp-seal.svg",
-          "design": "A grey latte stone and a white star within a mwarmwar garland, on blue.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands",
-          "meaning": {
-            "description": "The grey latte stone — the carved pillar on which the ancient Chamorro raised their houses — stands for the Chamorro people; the white star for the Commonwealth's union with the United States; and the mwarmwar, a garland of ylang-ylang, plumeria, peacock flower and Pacific basil, for the Carolinian people who also settled the islands. The blue field is the Pacific and the Mariana Trench.",
-            "sources": [
-              {
-                "title": "Flag of the Northern Mariana Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands"
-              }
-            ]
-          },
-          "sha256": "3fec8fd6d16cbd989f8c21f07346741d6e68e4e0c573a2c9939d4764932841f7",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "JE": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "je-official-national",
-          "category": "official",
-          "from": 1981,
-          "to": 9999,
-          "name": "Flag of Jersey",
-          "reuse": "flags/je.svg",
-          "design": "A red saltire on white, the shield of Jersey (three gold lions under a Plantagenet crown) in the upper triangle.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Jersey"
-        },
-        {
-          "id": "je-arms",
-          "category": "coatofarms",
-          "from": 1907,
-          "to": 9999,
-          "name": "Coat of arms of Jersey",
-          "commons": "Coat of arms of Jersey.svg",
-          "file": "je/je-arms.svg",
-          "design": "Gules, three lions passant guardant in pale Or — three gold lions on red — beneath a gold Plantagenet crown.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey",
-          "meaning": {
-            "description": "The three gold lions on red are the arms of the Dukes of Normandy, the same lions from which England's royal arms descend, and mark Jersey's origin as part of the Duchy of Normandy. When King John lost mainland Normandy to France in 1204 the Channel Islanders kept their allegiance to the English Crown, and the lions stayed as the island's own arms. King Edward VII formally sanctioned the shield in 1907; a Royal Warrant of 10 December 1980 added the Plantagenet crown above it, the States Assembly approving the design in 1981 — the crown marks Jersey's loyalty to the Crown as its own possession, not part of the United Kingdom.",
-            "sources": [
-              {
-                "title": "Coat of arms of Jersey — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Jersey"
-              }
-            ]
-          },
-          "sha256": "5e5677535451c7a2e2c2e22437e89972974382699e556819621288ef0db05bc7",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "GG": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "gg-official-national",
-          "category": "official",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of Guernsey",
-          "reuse": "flags/gg.svg",
-          "design": "A red St George's cross on white with a gold Norman cross set within it.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Guernsey"
-        },
-        {
-          "id": "gg-arms",
-          "category": "coatofarms",
-          "from": 1279,
-          "to": 9999,
-          "name": "Coat of arms of Guernsey",
-          "commons": "Coat of arms of Guernsey.svg",
-          "file": "gg/gg-arms.svg",
-          "design": "Gules, three lions passant guardant Or, langued and armed Azure — three gold lions on red — with a small gold sprig (the rameau) above.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey",
-          "meaning": {
-            "description": "Like Jersey and England, Guernsey bears the three gold lions of the Dukes of Normandy — a legacy of the Channel Islands' place in the Duchy of Normandy, which the islands kept when they stayed loyal to the English Crown after Normandy was lost to France in 1204. King Edward I granted a single joint seal for Guernsey and Jersey in 1279, and separate bailiwick seals followed in 1304. Guernsey's arms are distinguished from Jersey's otherwise identical lions by the small gold sprig of leaves — the rameau — set above the shield.",
-            "sources": [
-              {
-                "title": "Coat of arms of Guernsey — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guernsey"
-              }
-            ]
-          },
-          "sha256": "999d55bb89e6e64124117d63b2cb4af44fa825b83c44193dfb05bf1683f5f882",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "IM": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "im-official-national",
-          "category": "official",
-          "from": 1932,
-          "to": 9999,
-          "name": "Flag of the Isle of Man",
-          "reuse": "flags/im.svg",
-          "design": "The triskelion — three armoured legs conjoined at the thigh — in gold and silver on a red field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Isle_of_Man"
-        },
-        {
-          "id": "im-arms",
-          "category": "coatofarms",
-          "from": 1996,
-          "to": 9999,
-          "name": "Coat of arms of the Isle of Man",
-          "commons": "Coat of arms of the Isle of Man.svg",
-          "file": "im/im-arms.svg",
-          "design": "Gules, three legs in armour flexed at the knee and conjoined at the thigh, all proper, garnished and spurred Or; an imperial crown crest, supported by a peregrine falcon and a raven, on a scroll the motto QUOCUNQUE JECERIS STABIT.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man",
-          "meaning": {
-            "description": "The triskelion — three armoured running legs joined at the thigh — has stood for Mann since the late 13th century, appearing after Scotland took the island in 1265; scholars link it to the three-legged emblem of Sicily, perhaps carried north through the royal houses of Scotland and Sicily. The Latin motto Quocunque Jeceris Stabit — 'whichever way you throw it, it will stand' — plays on the figure's balance: however it falls, a leg is always planted. It first appeared on the island's coinage in 1668. The peregrine falcon recalls the pair of falcons the Lords of Mann rendered to English kings at their coronation. The present arms were granted by Queen Elizabeth II on 12 July 1996.",
-            "sources": [
-              {
-                "title": "Coat of arms of the Isle of Man — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Isle_of_Man"
-              }
-            ]
-          },
-          "sha256": "a0f007a73acd77da1285446440bd2f47a787c9ae4f91080f64c88baa1e13a34e",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "GI": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "gi-official-national",
-          "category": "official",
-          "from": 1502,
-          "to": 9999,
-          "name": "Flag of Gibraltar",
-          "reuse": "flags/gi.svg",
-          "design": "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Gibraltar"
-        },
-        {
-          "id": "gi-arms",
-          "category": "coatofarms",
-          "from": 1502,
-          "to": 9999,
-          "name": "Coat of arms of Gibraltar",
-          "commons": "Coat of arms of Gibraltar1.svg",
-          "file": "gi/gi-arms.svg",
-          "design": "Argent, upon a base gules a castle triple-towered gules ported and windowed sable, a golden key pendent from the portal.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar",
-          "meaning": {
-            "description": "Gibraltar's arms were granted by a Royal Warrant of Isabella I of Castile on 10 July 1502, during the Spanish period — the oldest continuously-used coat of arms of any British Overseas Territory. The red three-towered castle, drawn in the style of the arms of Castile, stands for Gibraltar's strength and its command of the Rock; the golden key hanging beneath it, the warrant said, marks Gibraltar as 'the key between these our kingdoms in the Eastern and Western Seas' — the sentinel that controls passage through the Strait. The flag flies these same arms as a banner.",
-            "sources": [
-              {
-                "title": "Coat of arms of Gibraltar — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar"
-              }
-            ]
-          },
-          "sha256": "db0b032a866fdb6b7bcdfc61b681ec8511733e7e403cd44eb5e4d099ebf9ba96",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "BM": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "bm-official-national",
-          "category": "official",
-          "from": 1910,
-          "to": 9999,
-          "name": "Flag of Bermuda",
-          "reuse": "flags/bm.svg",
-          "design": "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Bermuda"
-        },
-        {
-          "id": "bm-arms",
-          "category": "coatofarms",
-          "from": 1910,
-          "to": 9999,
-          "name": "Coat of arms of Bermuda",
-          "commons": "Coat of arms of Bermuda.svg",
-          "file": "bm/bm-arms.svg",
-          "design": "Argent, on a mount vert a lion sejant affronté gules supporting an antique shield azure charged with a representation of the wreck of the ship Sea Venture proper.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda",
-          "meaning": {
-            "description": "Granted by Royal Warrant on 4 October 1910 though in use since the 1620s. A red lion — the lion of England, marking Bermuda's tie to Britain — holds a shield showing the wreck of the Sea Venture, the flagship bound for Jamestown that Sir George Somers deliberately ran onto Bermuda's reefs in a 1609 hurricane; its 150 survivors founded the colony, so the shipwreck that stranded them is remembered as the island's origin. The motto Quo Fata Ferunt — 'Whither the Fates Carry Us' — recalls that the settlers reached Bermuda by chance of storm.",
-            "sources": [
-              {
-                "title": "Coat of arms of Bermuda — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda"
-              }
-            ]
-          },
-          "sha256": "91d5795480fef761971ca9bc9f48550bab4222f5accec2d90784b8604ad51653",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "KY": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "ky-official-national",
-          "category": "official",
-          "from": 1958,
-          "to": 9999,
-          "name": "Flag of the Cayman Islands",
-          "reuse": "flags/ky.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands"
-        },
-        {
-          "id": "ky-arms",
-          "category": "coatofarms",
-          "from": 1958,
-          "to": 9999,
-          "name": "Coat of arms of the Cayman Islands",
-          "commons": "Coat of arms of the Cayman Islands.svg",
-          "file": "ky/ky-arms.svg",
-          "design": "A shield with three green stars over blue-and-white wavy bands, a gold lion passant guardant on red in chief; crest a green turtle upon a coil of rope before a gold pineapple; motto 'He hath founded it upon the seas'.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands",
-          "meaning": {
-            "description": "Granted by Royal Warrant on 14 May 1958. The three green stars are the three islands — Grand Cayman, Little Cayman and Cayman Brac — riding on blue-and-white wavy bands for the sea that surrounds them; the gold lion of England in the chief marks the British connection. Above the shield a green turtle recalls the islands' seafaring and turtling history, resting on a coil of rope for the traditional thatch-rope industry, with a pineapple behind it for the historic ties to Jamaica. The motto, from Psalm 24, 'He hath founded it upon the seas', speaks to both the islanders' Christian faith and their ocean setting.",
-            "sources": [
-              {
-                "title": "Coat of arms of the Cayman Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands"
-              }
-            ]
-          },
-          "sha256": "480010d410cf5c7493c2a2d7736461b320c9c11c7ad76fda3786de4d69e54797",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "VG": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "vg-official-national",
-          "category": "official",
-          "from": 1960,
-          "to": 9999,
-          "name": "Flag of the British Virgin Islands",
-          "reuse": "flags/vg.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands"
-        },
-        {
-          "id": "vg-arms",
-          "category": "coatofarms",
-          "from": 1960,
-          "to": 9999,
-          "name": "Coat of arms of the British Virgin Islands",
-          "commons": "Coat of arms of the British Virgin Islands.svg",
-          "file": "vg/vg-arms.svg",
-          "design": "Vert, a woman (Saint Ursula) robed argent holding a lit golden oil lamp, surrounded by eleven further golden lamps; motto VIGILATE.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands",
-          "meaning": {
-            "description": "Adopted on 15 November 1960 when the territory became a Crown colony. The green shield shows Saint Ursula — the islands' patron, after whom Columbus named them 'Las Once Mil Vírgenes', the eleven thousand virgins — holding a lit golden oil lamp, with eleven more lamps around her for the virgin companions martyred with her in legend. The Latin motto Vigilate, 'be vigilant', reads the lamps as a call to watchfulness, echoing the parable of the wise virgins who kept their lamps burning.",
-            "sources": [
-              {
-                "title": "Coat of arms of the British Virgin Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands"
-              }
-            ]
-          },
-          "sha256": "56362869af8467b807afe18090979d3e3f8b6e38e77ee9941457a6bed2942a07",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "FK": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "fk-official-national",
-          "category": "official",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of the Falkland Islands",
-          "reuse": "flags/fk.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands"
-        },
-        {
-          "id": "fk-arms",
-          "category": "coatofarms",
-          "from": 1948,
-          "to": 9999,
-          "name": "Coat of arms of the Falkland Islands",
-          "commons": "Coat of arms of the Falkland Islands.svg",
-          "file": "fk/fk-arms.svg",
-          "design": "A ram standing on tussock grass above a sea of blue and white wavy lines bearing the ship Desire; motto 'DESIRE THE RIGHT'.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands",
-          "meaning": {
-            "description": "Granted by Royal Warrant on 29 September 1948. A ram standing on tussock grass — the islands' native vegetation — stands for sheep farming, historically the Falklands' principal industry; below, on a blue-and-white wavy sea, sails the Desire, the ship of the English navigator John Davis, credited with sighting the islands in 1592. The motto 'Desire the Right' plays on the ship's name, and the arms flew throughout except during the brief Argentine occupation of 1982.",
-            "sources": [
-              {
-                "title": "Coat of arms of the Falkland Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Falkland_Islands"
-              }
-            ]
-          },
-          "sha256": "5ea4e7bd85a9729268ff05a3d51876edcf8b355320b4d609669596fff3c25d6f",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "TC": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "tc-official-national",
-          "category": "official",
-          "from": 1968,
-          "to": 9999,
-          "name": "Flag of the Turks and Caicos Islands",
-          "reuse": "flags/tc.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands"
-        },
-        {
-          "id": "tc-arms",
-          "category": "coatofarms",
-          "from": 1965,
-          "to": 9999,
-          "name": "Coat of arms of the Turks and Caicos Islands",
-          "commons": "Coat of arms of the Turks and Caicos Islands.svg",
-          "file": "tc/tc-arms.svg",
-          "design": "Or, in chief a queen conch shell and a spiny lobster and in base a Turk's-head cactus proper; crest a pelican between two sisal plants; supporters two flamingos.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands",
-          "meaning": {
-            "description": "Granted by Royal Warrant on 28 September 1965. On a gold shield the queen conch shell and the spiny lobster stand for the islands' mainstay industry of fishing, and the Turk's-head cactus — the plant that gave the Turks Islands their name — for the native flora. Above, a white pelican between two sisal plants recalls the old rope-making trade, and two flamingos support the shield, all of them creatures of the islands.",
-            "sources": [
-              {
-                "title": "Coat of arms of the Turks and Caicos Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands"
-              }
-            ]
-          },
-          "sha256": "a699ab9f0b36643eeafc9c661c7a99a2ffc7c3faa007edcb386ed184fd2eb5d6",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "AI": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "ai-official-national",
-          "category": "official",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of Anguilla",
-          "reuse": "flags/ai.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Anguilla"
-        },
-        {
-          "id": "ai-arms",
-          "category": "coatofarms",
-          "from": 1990,
-          "to": 9999,
-          "name": "Coat of arms of Anguilla",
-          "commons": "Coat of arms of Anguilla.svg",
-          "file": "ai/ai-arms.svg",
-          "design": "Argent, three orange dolphins embowed and leaping in a circle, in base a bar wavy azure for the sea.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla",
-          "meaning": {
-            "description": "The shield, adopted by Royal Warrant on 27 November 1990, shows three orange dolphins leaping in a ring for unity, strength and endurance — the island's motto — with the circle standing for continuity. The white field is peace and tranquillity; the blue at the base is the Caribbean Sea, and stands too for faith, youth and hope. The same design appears on Anguilla's flag.",
-            "sources": [
-              {
-                "title": "Coat of arms of Anguilla — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla"
-              }
-            ]
-          },
-          "sha256": "4655bc15ff55e4ccb482bb70ffe6dd65253b6133d04ccf77bfd7b59d35e4c04c",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "MS": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "ms-official-national",
-          "category": "official",
-          "from": 1909,
-          "to": 9999,
-          "name": "Flag of Montserrat",
-          "reuse": "flags/ms.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Montserrat"
-        },
-        {
-          "id": "ms-arms",
-          "category": "coatofarms",
-          "from": 1909,
-          "to": 9999,
-          "name": "Coat of arms of Montserrat",
-          "commons": "Coat of arms of Montserrat.svg",
-          "file": "ms/ms-arms.svg",
-          "design": "A woman in a green dress (Erin, the personification of Ireland) embracing a black cross and holding a golden harp.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat",
-          "meaning": {
-            "description": "Granted by Royal Warrant on 10 April 1909. The woman is Erin, the personification of Ireland, and the golden harp beside her is Ireland's own emblem — both honour the Irish settlers who came to Montserrat from 1632, so numerous that a 1678 census found seven in ten of the island's white inhabitants were of Irish descent, the 'Emerald Isle of the Caribbean'. Erin's embrace of the black cross marks the island's Christian faith.",
-            "sources": [
-              {
-                "title": "Coat of arms of Montserrat — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat"
-              }
-            ]
-          },
-          "sha256": "2ed662295c1908af36789ceeadca2d962c869f1aa6cde62b7a50b5a6415cb004",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "SH": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "sh-official-national",
-          "category": "official",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of Saint Helena",
-          "reuse": "flags/sh.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Saint Helena's arms — a wirebird above a three-masted ship and cliffs — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Saint_Helena"
-        },
-        {
-          "id": "sh-arms",
-          "category": "coatofarms",
-          "from": 1984,
-          "to": 9999,
-          "name": "Coat of arms of Saint Helena",
-          "commons": "Coat of arms of Saint Helena.svg",
-          "file": "sh/sh-arms.svg",
-          "design": "Azure, on waves of the sea an East Indiaman under the flag of England between two cliffs; on a chief Or a wirebird proper; motto 'Loyal and Unshakeable'.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena",
-          "meaning": {
-            "description": "Authorised on 30 January 1984. On the chief stands the wirebird — the Saint Helena plover, the island's national bird, found nowhere else — and below it a three-masted East Indiaman flying the cross of St George sails between the island's steep cliffs, for Saint Helena's place on the East India Company's ocean route and its rugged coast. The motto, 'Loyal and Unshakeable', speaks to the islanders' steadfast allegiance.",
-            "sources": [
-              {
-                "title": "Coat of arms of Saint Helena — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Helena"
-              }
-            ]
-          },
-          "sha256": "cc88f7e83082c15381db1c901d1316e6d7141075b1bb92b29e94e5d99d362330",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "PN": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "pn-official-national",
-          "category": "official",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of the Pitcairn Islands",
-          "reuse": "flags/pn.svg",
-          "design": "A blue ensign with the Union Flag in the canton and Pitcairn's arms — the Bounty's anchor and Bible on a green wedge — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Pitcairn_Islands"
-        },
-        {
-          "id": "pn-arms",
-          "category": "coatofarms",
-          "from": 1969,
-          "to": 9999,
-          "name": "Coat of arms of the Pitcairn Islands",
-          "commons": "Coat of arms of the Pitcairn Islands.svg",
-          "file": "pn/pn-arms.svg",
-          "design": "Azure, on a pile in base vert fimbriated Or the Bounty Bible and the anchor of HMS Bounty; crest a Pitcairn wheelbarrow before a slip of miro.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands",
-          "meaning": {
-            "description": "Granted on 4 November 1969. The Bible and the anchor are relics of HMS Bounty, whose mutineers settled Pitcairn in 1790 — the anchor for the ship they burned in Bounty Bay, the Bible for the Christianity that came to shape the tiny community. The blue, gold and green stand for the island rising green out of the Pacific; the crest's wheelbarrow and slip of miro wood speak to the farming the settlers lived by and the wood they carve.",
-            "sources": [
-              {
-                "title": "Coat of arms of the Pitcairn Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Pitcairn_Islands"
-              }
-            ]
-          },
-          "sha256": "af0d623b51fe10f720abdeededcb17306a28fe88e7603f14a2e1f3d86f967861",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "GS": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "gs-official-national",
-          "category": "official",
-          "from": 1992,
-          "to": 9999,
-          "name": "Flag of South Georgia and the South Sandwich Islands",
-          "reuse": "flags/gs.svg",
-          "design": "A blue ensign with the Union Flag in the canton and the territory's arms — a golden lion with a torch, a fur seal and a macaroni penguin — in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_South_Georgia_and_the_South_Sandwich_Islands"
-        },
-        {
-          "id": "gs-arms",
-          "category": "coatofarms",
-          "from": 1992,
-          "to": 9999,
-          "name": "Coat of arms of South Georgia and the South Sandwich Islands",
-          "commons": "Coat of arms of South Georgia and the South Sandwich Islands.svg",
-          "file": "gs/gs-arms.svg",
-          "design": "Lozengy argent and azure, on a pile vert a gold lion rampant holding a torch, in chief two gold estoiles; crest a reindeer; supporters an Antarctic fur seal and a macaroni penguin; motto LEO TERRAM PROPRIAM PROTEGAT.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands",
-          "meaning": {
-            "description": "The golden lion holding a torch stands for the United Kingdom and for the islands' discovery, and the two gold stars above are taken from the arms of Captain James Cook, who charted South Georgia in 1775. An Antarctic fur seal and a macaroni penguin — both native — support the shield, and the crest is a reindeer, for the two herds once introduced to the island. The arms, first sealed in 1985, were augmented by Royal Warrant on 14 February 1992 to mark the liberation of the Falklands; the motto, Leo Terram Propriam Protegat, means 'Let the Lion protect his own land'.",
-            "sources": [
-              {
-                "title": "Coat of arms of South Georgia and the South Sandwich Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands"
-              }
-            ]
-          },
-          "sha256": "c4606c194bbf3c3c890ecd8be79fc1d60b43fdb4ca6abe3fba04fbc12d7933aa",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "IO": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "io-official-national",
-          "category": "official",
-          "from": 1990,
-          "to": 9999,
-          "name": "Flag of the British Indian Ocean Territory",
-          "reuse": "flags/io.svg",
-          "design": "White and blue wavy stripes for the Indian Ocean, the Union Flag in the canton, and a palm tree above a royal crown in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_British_Indian_Ocean_Territory"
-        }
-      ]
-    },
-    "GL": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "gl-official-national",
-          "category": "official",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of Greenland",
-          "reuse": "flags/gl.svg",
-          "design": "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Greenland"
-        },
-        {
-          "id": "gl-arms",
-          "category": "coatofarms",
-          "from": 1989,
-          "to": 9999,
-          "name": "Coat of arms of Greenland",
-          "commons": "Coat of arms of Greenland.svg",
-          "file": "gl/gl-arms.svg",
-          "design": "Azure, a polar bear rampant argent, its left forepaw raised.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland",
-          "meaning": {
-            "description": "Adopted by Greenland's Landsting on 1 May 1989. The white polar bear stands for the island's Arctic wildlife, and the blue shield for the Atlantic and Arctic oceans that wash it. The bear raises its LEFT forepaw — following the traditional Inuit belief that polar bears are left-handed — which sets Greenland's version apart from the Danish royal arms, where the bear raises its right.",
-            "sources": [
-              {
-                "title": "Coat of arms of Greenland — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Greenland"
-              }
-            ]
-          },
-          "sha256": "6a7c534ed6cce52bbb74a589feeaeffe95d0b240bad2330e9ba135ff7d6a0096",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "FO": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "fo-official-national",
-          "category": "official",
-          "from": 1948,
-          "to": 9999,
-          "name": "Flag of the Faroe Islands",
-          "reuse": "flags/fo.svg",
-          "design": "Merkið — a red Nordic cross fimbriated in blue on a white field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands"
-        },
-        {
-          "id": "fo-arms",
-          "category": "coatofarms",
-          "from": 1948,
-          "to": 9999,
-          "name": "Coat of arms of the Faroe Islands",
-          "commons": "Coat of arms of the Faroe Islands.svg",
-          "file": "fo/fo-arms.svg",
-          "design": "Azure, a ram passant argent, langued gules, armed and unguled Or.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands",
-          "meaning": {
-            "description": "The silver ram — Veðrur — on a blue field is one of the Faroes' oldest symbols, carved on the medieval bishop's chairs at Kirkjubøur around the 15th century, and it speaks to the sheep on which Faroese life has long depended (the islands' Old Norse name means 'sheep islands'). It fell from use when the Løgting was abolished in 1816 and was readopted in 1948 with the Home Rule Act; a version modernised in 2004 took its colours from the Merkið flag.",
-            "sources": [
-              {
-                "title": "Coat of arms of the Faroe Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Faroe_Islands"
-              }
-            ]
-          },
-          "sha256": "b2419e75971021b860c953d501dcae8c9af8db8961b046c36ee8720fe000abab",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "AW": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "aw-official-national",
-          "category": "official",
-          "from": 1976,
-          "to": 9999,
-          "name": "Flag of Aruba",
-          "reuse": "flags/sub/NL/NL-AW.svg",
-          "design": "A light-blue field with two narrow yellow stripes near the base and a red four-pointed star bordered white in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Aruba"
-        },
-        {
-          "id": "aw-arms",
-          "category": "coatofarms",
-          "from": 1955,
-          "to": 9999,
-          "name": "Coat of arms of Aruba",
-          "commons": "Coat of arms of Aruba.svg",
-          "file": "aw/aw-arms.svg",
-          "design": "A white cross quartering the shield: an aloe plant, the Hooiberg hill over a wavy sea, clasped hands, and a cogwheel; a red lion crest, laurel-branch supporters.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba",
-          "meaning": {
-            "description": "Granted on 15 November 1955. A white cross of faith divides the shield into four: a flowering aloe, the island's first great export; the Hooiberg, the hill that marks Aruba rising green out of the sea; two clasped hands for friendly relations with the wider world; and a cogwheel for the industry the islanders live by. A red lion of strength and generosity crests the shield, and two laurel branches — for peace and friendship — support it.",
-            "sources": [
-              {
-                "title": "Coat of arms of Aruba — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Aruba"
-              }
-            ]
-          },
-          "sha256": "2973c0451ae62766bd5feaee6930c56951e973caa54099b485963f69d57fdf38",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "CW": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "cw-official-national",
-          "category": "official",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of Curaçao",
-          "reuse": "flags/sub/NL/NL-CW.svg",
-          "design": "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao"
-        },
-        {
-          "id": "cw-arms",
-          "category": "coatofarms",
-          "from": 1964,
-          "to": 9999,
-          "name": "Coat of arms of Curaçao",
-          "commons": "Coat of arms of Curaçao.svg",
-          "file": "cw/cw-arms.svg",
-          "design": "A shield with a sailing ship in full sail on a blue sea and a green laraha (bitter-orange) tree, an inescutcheon of the arms of Amsterdam (three saltires).",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao",
-          "meaning": {
-            "description": "Granted on 24 July 1964. The ship under full sail is a vessel of the Dutch West India Company, which settled Curaçao in 1634; the green laraha — the bitter Valencia orange whose peel gives the island's famous liqueur — stands for its flora and agriculture. The small central shield bears the three saltires of Amsterdam, the city that governed the colony, marking Curaçao's long tie to Amsterdam and the House of Orange-Nassau.",
-            "sources": [
-              {
-                "title": "Coat of arms of Curaçao — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao"
-              }
-            ]
-          },
-          "sha256": "f443f366297bead7765c6ac0be02da99c9b55f906d63f620603ccf20f834f745",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "SX": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "sx-official-national",
-          "category": "official",
-          "from": 1985,
-          "to": 9999,
-          "name": "Flag of Sint Maarten",
-          "reuse": "flags/sub/NL/NL-SX.svg",
-          "design": "A red-over-blue horizontal bicolour with a white triangle at the hoist bearing the territory's coat of arms.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Sint_Maarten"
-        },
-        {
-          "id": "sx-arms",
-          "category": "coatofarms",
-          "from": 1982,
-          "to": 9999,
-          "name": "Coat of arms of Sint Maarten",
-          "commons": "Coat of arms of Sint Maarten.svg",
-          "file": "sx/sx-arms.svg",
-          "design": "A shield with the Philipsburg courthouse at centre, the French–Dutch border monument and a sage flower, a rising sun behind; crest a brown pelican; motto SEMPER PROGREDIENS.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten",
-          "meaning": {
-            "description": "Adopted on 7 November 1982. At the centre stands the courthouse of Philipsburg, the island's civic heart; beside it the border monument recalls the peaceful boundary that has divided the island between Dutch and French halves since 1648, and the orange-yellow sage is the national flower. A rising sun of hope fills the background, and a brown pelican — the national bird — crests the shield. The motto Semper Progrediens means 'Always progressing'; the orange border marks the tie to the Dutch royal house.",
-            "sources": [
-              {
-                "title": "Coat of arms of Sint Maarten — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Sint_Maarten"
-              }
-            ]
-          },
-          "sha256": "683ec3f31f862438746a3006e0b5968aaf86252d2e128a02dc6e2bae52078b9e",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "CK": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "ck-official-national",
-          "category": "official",
-          "from": 1979,
-          "to": 9999,
-          "name": "Flag of the Cook Islands",
-          "reuse": "flags/ck.svg",
-          "design": "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands"
-        },
-        {
-          "id": "ck-arms",
-          "category": "coatofarms",
-          "from": 1978,
-          "to": 9999,
-          "name": "Coat of arms of the Cook Islands",
-          "commons": "Coat of arms of the Cook Islands.svg",
-          "file": "ck/ck-arms.svg",
-          "design": "Azure, fifteen white stars in a circle; supporters a flying fish and a white tern; crest a red-feather chieftain's headdress; a white cross and Rarotongan club in saltire behind; palm leaves and a pearl in base.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands",
-          "meaning": {
-            "description": "Adopted on 4 August 1978. The fifteen white stars ringing the blue shield are the fifteen islands of the group, drawn in a circle so none stands above another. The supporters are creatures of the sea and sky — the flying fish (maroro) and the white tern (kakaia); above sits a chieftain's headdress of red feathers, honouring the traditional rank system. Behind the shield a white cross for Christianity crosses a Rarotongan ceremonial club for Māori tradition and oratory, and palm leaves with a pearl fill the base.",
-            "sources": [
-              {
-                "title": "Coat of arms of the Cook Islands — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands"
-              }
-            ]
-          },
-          "sha256": "78447f4d1a6cb903a62c270c90f88dd54cf54b9d32a770f893e3ec3e9db3869f",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "NU": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "nu-official-national",
-          "category": "official",
-          "from": 1975,
-          "to": 9999,
-          "name": "Flag of Niue",
-          "reuse": "flags/nu.svg",
-          "design": "A golden-yellow field with the Union Flag in the canton, the Union Flag itself defaced with a blue disc and yellow stars.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Niue",
-          "meaning": {
-            "description": "Adopted on 15 October 1975. The bright yellow field stands for the sunshine of Niue and the warmth the Niuean people feel towards New Zealand; the Union Flag marks the protection the United Kingdom granted in 1900 at the petition of Niue's kings and chiefs. On it four small yellow stars form the Southern Cross, for the association with New Zealand, and a larger star on a blue disc stands for the deep sea around the self-governing island.",
-            "sources": [
-              {
-                "title": "Flag of Niue — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_Niue"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "TK": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "tk-official-national",
-          "category": "official",
-          "from": 2009,
-          "to": 9999,
-          "name": "Flag of Tokelau",
-          "reuse": "flags/tk.svg",
-          "design": "A blue field bearing a yellow Tokelauan canoe sailing towards the Southern Cross, shown as four white stars.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_Tokelau",
-          "meaning": {
-            "description": "Tokelau's first official flag, presented on 7 September 2009. A yellow Tokelauan canoe sails across a blue field towards the Southern Cross — the four white stars — which serves as the navigator's guide. The voyaging canoe stands for Tokelau's own journey towards the system of governance that best fits its people, steered, like the ancient navigators, by the stars.",
-            "sources": [
-              {
-                "title": "Flag of Tokelau — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_Tokelau"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "AX": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "ax-official-national",
-          "category": "official",
-          "from": 1954,
-          "to": 9999,
-          "name": "Flag of Åland",
-          "reuse": "flags/ax.svg",
-          "design": "A red Nordic cross fimbriated in yellow on a blue field.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_%C3%85land"
-        },
-        {
-          "id": "ax-arms",
-          "category": "coatofarms",
-          "from": 1952,
-          "to": 9999,
-          "name": "Coat of arms of Åland",
-          "commons": "Coat of arms of Åland.svg",
-          "file": "ax/ax-arms.svg",
-          "design": "Azure, a stag trippant Or — a golden red deer on blue.",
-          "source": "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land",
-          "meaning": {
-            "description": "The golden stag on blue has an unusual origin: the arms were granted to the Swedish province of Öland in 1560 and passed to Åland through a centuries-long heraldic mix-up of the two near-identically-named provinces, becoming Åland's official arms only on 10 December 1952. The stag's own symbolism is not recorded; Åland's earliest known seal, from 1326, instead showed Saint Olaf, the islands' patron saint.",
-            "sources": [
-              {
-                "title": "Coat of arms of Åland — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_%C3%85land"
-              }
-            ]
-          },
-          "sha256": "2bcc16fd5b6ae33aca4fe47bfa5cb176a4091470b701cbd274d456fce46d480b",
-          "fetched": "2026-08-13"
-        }
-      ]
-    },
-    "PF": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "pf-official-national",
-          "category": "official",
-          "from": 1984,
-          "to": 9999,
-          "name": "Flag of French Polynesia",
-          "reuse": "flags/pf.svg",
-          "design": "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.",
-          "source": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia",
-          "meaning": {
-            "description": "Officially adopted by the Assembly of French Polynesia on 23 November 1984 and regulated by decree in 1985. Red and white are the traditional Polynesian colours. At the centre a Polynesian outrigger canoe rides the waves, carrying five stars for the territory's five island groups (and for its crew); below, blue-and-white waves are the sea, and above, golden rays are the sun. The design was offered as a symbol of 'the spirit of freedom, responsibility and initiative of a people turned towards the future'.",
-            "sources": [
-              {
-                "title": "Flag of French Polynesia — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "NC": {
-      "entity": true,
-      "flags": [
-        {
-          "id": "nc-kanak",
-          "category": "official",
-          "from": 1980,
-          "to": 9999,
-          "name": "Kanak flag (FLNKS)",
-          "reuse": "flags/nc.svg",
-          "design": "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).",
-          "source": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia",
-          "meaning": {
-            "description": "New Caledonia has no single official flag: the French tricolour was its only official flag until 2010, when the Congress passed a non-binding proposal for the tricolour and this Kanak flag to fly together — a compromise that carries no legal force and remains contested, some communities flying both and others only the tricolour. The Kanak flag was adopted by the pro-independence FLNKS in 1980: blue is the sky and the Pacific, red the blood shed by the Kanaks in their struggle for independence and unity, green the land and the ancestors buried in it; the yellow disc is the sun, bearing a black flèche faîtière — the carved arrow that crowns the roof of a Kanak house, thrust through tutut shells.",
-            "sources": [
-              {
-                "title": "Flags of New Caledonia — Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia"
-              }
-            ]
-          }
-        }
-      ]
     }
   }
 }
