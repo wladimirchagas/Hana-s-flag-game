@@ -65,7 +65,10 @@ import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCup
 export type FlagGridProps = {
   entries: readonly FlagListEntry[];
   selectedId: string | null;
-  onSelect: (id: string) => void;
+  /** Select a grid card. `id` is the country to select (a home-nation / entity
+   *  crest card passes its PARENT country); `crestId` is the specific football
+   *  crest that was clicked, when the card is one (so the panel can show it). */
+  onSelect: (id: string, crestId?: string) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
   resolveFlag: (raw: string) => string;
@@ -643,7 +646,15 @@ export function FlagGrid({
                       else cardRefs.current.delete(refKey);
                     }}
                     className={`flag-grid__card${active ? " flag-grid__card--active" : ""}${isLearned ? " flag-grid__card--learned" : ""}`}
-                    onClick={() => onSelect(item.selectId ?? item.id)}
+                    onClick={() =>
+                      onSelect(
+                        item.selectId ?? item.id,
+                        // A home-nation / FIFA-entity crest card carries its own
+                        // `{code}-football-crest` id — pass it so the panel shows
+                        // that crest, not the parent country's.
+                        item.id.endsWith("-football-crest") ? item.id : undefined,
+                      )
+                    }
                     aria-pressed={active}
                     aria-label={
                       isLearned

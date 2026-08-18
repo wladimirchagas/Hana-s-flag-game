@@ -26,6 +26,7 @@ import {
   coatOfArmsPath,
   passportPath,
   footballCrestPath,
+  footballCrestById,
   nationalSymbolEntry,
 } from "../lib/nationalSymbolImages";
 import { NATIONAL_FLAG_MEANINGS } from "../data/nationalFlags";
@@ -350,9 +351,15 @@ export default function LearnPage() {
   const [gridContentType, setGridContentType] = useState<GridContentType>(
     loadGridContentType,
   );
+  // The specific football crest clicked in the grid, when it is a card that is
+  // NOT a plain country — a UK home nation, or a FIFA-member entity. Keyed with
+  // its parent country so the panel shows that crest only while the parent stays
+  // selected, then self-clears when the user navigates to another country.
+  const [gridCrest, setGridCrest] = useState<{ id: string; parent: string } | null>(null);
   const chooseGridContentType = (type: GridContentType) => {
     setGridContentType(type);
     saveGridContentType(type);
+    setGridCrest(null);
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -1290,12 +1297,24 @@ export default function LearnPage() {
   const effectiveGridContentType: GridContentType = isModernEra
     ? gridContentType
     : "flag";
-  const panelSymbol =
+  // A specific crest clicked in the grid (a UK home nation, or a FIFA entity)
+  // wins over the country-resolved symbol — but only while its parent country is
+  // the one shown, so it disappears the moment the user selects another country.
+  const activeGridCrest =
     !subdivisionMode &&
+    gridCrest != null &&
+    effectiveGridContentType === "footballcrest" &&
+    display?.kind === "modern" &&
+    display.country.code === gridCrest.parent
+      ? footballCrestById(gridCrest.id)
+      : null;
+  const panelSymbol =
+    activeGridCrest ??
+    (!subdivisionMode &&
     display?.kind === "modern" &&
     effectiveGridContentType !== "flag"
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
-      : null;
+      : null);
   // The image the panel actually shows: the symbol when one is selected and
   // bundled, otherwise the national flag (a country with no coat of arms /
   // passport falls back to its flag rather than a blank panel).
@@ -1380,12 +1399,17 @@ export default function LearnPage() {
         ? display.name
         : null;
 
-  function handleGridSelect(id: string) {
+  function handleGridSelect(id: string, crestId?: string) {
     if (isModernEra) {
       const c = codeToCountry.get(id);
       if (!c) return;
       setSelected({ kind: "modern", country: c });
       setHovered(null);
+      // Remember which specific crest was clicked (a home nation / entity), so the
+      // panel shows THAT crest instead of the parent country's flag or crest. A
+      // plain country card clears it. Keyed to the parent so it self-clears when
+      // the user later selects a different country from the map or search.
+      setGridCrest(crestId ? { id: crestId, parent: c.code } : null);
     } else {
       const sel = selectionFromPolityName(id);
       if (!sel) return;
@@ -2308,7 +2332,7 @@ export default function LearnPage() {
       })() : (
         <FlagGrid
           entries={flagEntries}
-          selectedId={selectedId}
+          selectedId={activeGridCrest ? gridCrest!.id : selectedId}
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}
