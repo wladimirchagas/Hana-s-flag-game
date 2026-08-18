@@ -55,6 +55,21 @@ export type FlagListEntry = {
   /** Resolved football-association crest image URL for the grid's "Football
    *  crests" view. null / undefined when the country has no bundled crest. */
   footballCrest?: string | null;
+  /**
+   * Sort/group key overriding `name` when present. Used by the football-crests
+   * view to expand a country that has NO single national crest but DOES have
+   * sub-national ones (the UK → England/Scotland/Wales/Northern Ireland) into one
+   * card per home nation, while keeping the four clustered where the parent
+   * country sorts, rather than scattered by their own initials.
+   */
+  readonly sortKey?: string;
+  /**
+   * Country code to select when this card is clicked, when it differs from `id`.
+   * A home-nation football-crest card carries the parent country's code (GB) so a
+   * click opens the United Kingdom (whose National symbols tab holds all four),
+   * while `id` stays unique per card for React keys and highlighting.
+   */
+  readonly selectId?: string;
 };
 
 /**

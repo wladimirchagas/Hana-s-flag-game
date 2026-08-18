@@ -42,6 +42,7 @@ import {
   passportColorGroup,
   PASSPORT_COLOR_GROUP_ORDER,
 } from "../lib/passportColorGroups";
+import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -221,22 +222,57 @@ export function FlagGrid({
     }
   }, [groupMode, effectiveContentType, isModernEra]);
 
+  // Football-crests view only: expand a country that has NO single national
+  // crest but DOES have sub-national ones (the UK → England/Scotland/Wales/
+  // Northern Ireland) into one card per home nation, instead of a single blank
+  // tile. Each card shows the home-nation crest and name, sorts clustered where
+  // the parent country sits (`sortKey`), and selects the parent country when
+  // clicked (`selectId`). Every other view — and every country with its own
+  // crest — is untouched.
+  const displayEntries = useMemo(() => {
+    if (effectiveContentType !== "footballcrest") return entries;
+    const out: FlagListEntry[] = [];
+    for (const e of entries) {
+      const subs = e.footballCrest ? [] : subnationalFootballCrests(e.id);
+      if (subs.length === 0) {
+        out.push(e);
+        continue;
+      }
+      subs.forEach((s, i) => {
+        out.push({
+          ...e,
+          id: s.id,
+          name: s.name,
+          footballCrest: s.path,
+          // Cluster the home nations where the parent ("United Kingdom") sorts,
+          // rather than scattering them by their own initials (E, S, W, N).
+          sortKey: `${e.name} ${i}`,
+          // A click opens the parent country, whose National symbols tab holds
+          // all four crests together.
+          selectId: e.id,
+          capital: undefined,
+        });
+      });
+    }
+    return out;
+  }, [entries, effectiveContentType]);
+
   // Apply the free-text name filter before grouping. A trimmed, case- and
   // accent-insensitive substring match against the entry name ("sao" matches
   // "São Paulo") — non-matches are hidden, so the grid shrinks to what you're
   // looking for.
   const filteredEntries = useMemo(() => {
     const q = normalizeForSearch(filter.trim());
-    if (!q) return entries;
-    return entries.filter((e) => normalizeForSearch(e.name).includes(q));
-  }, [entries, filter]);
+    if (!q) return displayEntries;
+    return displayEntries.filter((e) => normalizeForSearch(e.name).includes(q));
+  }, [displayEntries, filter]);
 
   // Build the (heading → entries) groups for the current mode. We always
   // alphabetise within a group; the headings themselves are ordered by
   // a per-mode comparator below.
   const groups = useMemo(() => {
     const sorted = [...filteredEntries].sort((a, b) =>
-      a.name.localeCompare(b.name, "en"),
+      (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en"),
     );
 
     if (groupMode === "none") {
@@ -252,7 +288,9 @@ export function FlagGrid({
 
     if (groupMode === "alpha") {
       for (const e of sorted) {
-        const first = e.name[0] ?? "";
+        // Bucket by the sort key so the UK's home-nation cards land together
+        // under "U" (where the United Kingdom sits), not scattered under E/S/W/N.
+        const first = (e.sortKey ?? e.name)[0] ?? "";
         const letter = first.toUpperCase();
         // Numbers / non-letters bucket together under "#" so we never
         // get hundreds of tiny stubs.
@@ -544,7 +582,7 @@ export function FlagGrid({
                       else cardRefs.current.delete(refKey);
                     }}
                     className={`flag-grid__card${active ? " flag-grid__card--active" : ""}${isLearned ? " flag-grid__card--learned" : ""}`}
-                    onClick={() => onSelect(item.id)}
+                    onClick={() => onSelect(item.selectId ?? item.id)}
                     aria-pressed={active}
                     aria-label={
                       isLearned

@@ -67,6 +67,29 @@ export function footballCrestPath(code: string): string | null {
 }
 
 /**
+ * A country's SUB-NATIONAL football crests — the ones the world-map grid does NOT
+ * treat as the country's single crest (id ≠ `{cc}-football-crest`). This is the
+ * UK, whose football is the four home nations and which therefore has no single
+ * `gb-football-crest`. Each is returned with a short division name ("England",
+ * "Scotland", …) taken from the part of the entry name before the em dash
+ * ("England — The Football Association crest"), plus its bundled image path.
+ * Empty for every country that has a single national crest (its subnationals, if
+ * any, are not modelled here).
+ */
+export function subnationalFootballCrests(
+  code: string,
+): { id: string; name: string; path: string }[] {
+  const own = `${code.toLowerCase()}-football-crest`;
+  return (NATIONAL_FLAGS[code] ?? [])
+    .filter((f) => f.category === "footballcrest" && f.path && f.id !== own)
+    .map((f) => ({
+      id: f.id,
+      name: f.name.split("—")[0].trim() || f.name,
+      path: f.path as string,
+    }));
+}
+
+/**
  * The full national-symbol entry (name, design line, meaning id) for a country's
  * coat of arms / passport / football crest — the SAME entry the matching
  * `*Path()` helper takes its image from, so the grid tile and the detail panel
