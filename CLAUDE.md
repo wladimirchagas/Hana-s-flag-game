@@ -307,9 +307,15 @@ federation logo IS the team crest (most countries), that one image serves both.
 
 ### Rules
 
-1. **Prefer the national-team crest.** Source it from the `{Country} national football team` article
-   (its infobox `Badge`/crest), falling back to the federation article only when the team wears the
-   federation's own logo. When they differ, the team crest wins — that is the Spain lesson.
+1. **Use the football FEDERATION/ASSOCIATION crest the national team wears in FIFA competition** — the
+   shield/badge on the shirt. It is NEVER a minimalist corporate wordmark (the RFEF's plain "RFEF" mark —
+   the Spain lesson), NEVER a nickname/marketing brand (the "Azkals / Pilipinas Futbol" logo was wrong for
+   the Philippines; the **Philippine Football Federation (PFF)** crest is right — owner report, 2026-08),
+   and NEVER a kit-supplier logo (an auto-pick once grabbed the **adidas** logo for Vietnam — the kind of
+   miss montage verification exists to catch). Source it from the federation/association article
+   (`{Country} Football Federation`/`Association`) or the `{Country} national football team` infobox
+   `Badge`, and confirm the picked file is the federation's own crest, not a sponsor, kit maker, or
+   marketing sub-brand.
 2. **A crest is a copyrighted logo — bundle it non-free, cited, with a `licenceNote`,** exactly like
    the non-free passport covers (owner-directed, 2026-08). A crest freely licensed on Wikimedia Commons
    (PD-textlogo / CC) is bundled via `commons`; a non-free one (fair-use, or PD held as a local
