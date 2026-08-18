@@ -21157,6 +21157,18 @@
           "source": "https://gicg.net/passport/sv/",
           "sha256": "571e0351f8dc79c77914965c22153b829a2b34e227034d0eed0efe1a9de76dde",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "sv-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the El Salvador national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/a/ad/FESFUT_logo.svg",
+          "file": "sv/sv-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the El Salvador national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:FESFUT_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Salvadoran Football Federation (FESFUT) — a football within a blue ring lettered “Federación Salvadoreña de Fútbol”, beside an “ES” badge.",
+          "source": "https://en.wikipedia.org/wiki/Salvadoran_Football_Federation",
+          "sha256": "a0eb256b584eb95def9393197bcf88388c96f0bcedb43de11c62067054f75b19",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
