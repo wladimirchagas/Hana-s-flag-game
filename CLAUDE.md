@@ -337,19 +337,28 @@ federation logo IS the team crest (most countries), that one image serves both.
    emitting one pseudo-entry per home nation with a `sortKey` that clusters them where the UK sorts
    (between United Arab Emirates and United States, NOT scattered under E/S/W/N) and a `selectId` of `GB`
    so a click opens the United Kingdom. This is **football-crests-only**: in the flags / arms / passports
-   views the UK is one ordinary card (195 tiles); only the Football-crests view shows 198. Any OTHER
-   country stays a single tile in the grid, because every other multi-association country (China, USA,
-   Denmark, Netherlands, New Zealand, France) HAS its own senior national team and therefore its own
-   `{cc}-football-crest` — their autonomous-territory teams (Hong Kong, Faroe Islands, Aruba, Cook
-   Islands, Tahiti, Gibraltar, …) are tab-only subnational crests that never change the grid. Add a
-   subnational crest wherever a division fields its own national team; only a country with NO single
-   national crest expands in the grid.
-5. **Coverage is ALL 195 UN members, plus every division that fields its own team — a standing sweep.**
-   Unlike flags, there is no repo data to copy, so each crest is sourced and VISUALLY VERIFIED by hand
-   (montage-scan every batch before committing, exactly like the capital-flag backfill sweep): an
-   auto-picker will grab the wrong logo, which is the class of bug this repo guards against. A crest that
-   cannot be confidently sourced is left as a "—" placeholder, never guessed. Keep going per the
-   standing-sweep mandate; do not stop to ask whether to continue.
+   views the UK is one ordinary card (195 tiles); only the Football-crests view expands it. Every other
+   multi-association country (China, USA, Denmark, Netherlands, New Zealand, France) HAS its own senior
+   national team and therefore its own `{cc}-football-crest`, so it stays a single tile; its
+   autonomous-territory teams are added by rule 5, not by expanding the parent.
+5. **The Football-crests grid is FIFA's ~211 member associations, NOT the 195 UN members** (owner
+   request, 2026-08) — and ONLY that view; flags / arms / passports stay on the 195. The mechanism lives
+   in `src/lib/fifaAssociations.ts` + `FlagGrid`'s `displayEntries`, football-crests-only: (a) game
+   members that are NOT FIFA members are hidden (`NON_FIFA_GRID_CODES` — Monaco, the Vatican, and the
+   Pacific micro-states Marshall Islands / Micronesia / Palau / Nauru / Tuvalu / Kiribati, which hold no
+   FIFA membership); (b) the UK expands into its four home nations (rule 4); (c) every non-UN FIFA member
+   the game models as a special-status ENTITY (Hong Kong, Macau, Chinese Taipei, Faroe Islands,
+   Gibraltar, Aruba, Curaçao, Puerto Rico, US Virgin Islands, Guam, American Samoa, Cook Islands, New
+   Caledonia, Tahiti, Anguilla, Bermuda, British Virgin Islands, Cayman Islands, Montserrat, Turks &
+   Caicos) plus **Kosovo** is appended as its own crest card (`FIFA_EXTRA`). Each entity crest lives
+   under that entity's own manifest code (`{code}-football-crest`) and also shows in the parent country's
+   National symbols tab; the grid card sorts by its own name, carries its OWN continent (New Caledonia
+   and Tahiti are Oceania though France is Europe), and selects its parent country on click. Kosovo is
+   the one non-entity case (its card is informational). Coverage of these is a standing sweep, sourced
+   and VISUALLY VERIFIED by hand (montage-scan every batch before committing, exactly like the
+   capital-flag backfill sweep): an auto-picker will grab the wrong logo, which is the class of bug this
+   repo guards against. A crest that cannot be confidently sourced is left absent (no card), never
+   guessed. Keep going per the standing-sweep mandate; do not stop to ask whether to continue.
 6. **A crest's `design` line is written AFTER viewing the actual image** (a factual visual description,
    never from memory); a sourced `meaning` ("What this crest represents") is added only where the
    symbolism is documented, and omitted otherwise.

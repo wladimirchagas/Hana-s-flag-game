@@ -132,6 +132,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AI": [
     { id: "ai-official-national", category: "official", name: "Flag of Anguilla", from: 1990, to: 9999, path: "flags/ai.svg", design: "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
     { id: "ai-arms", category: "coatofarms", name: "Coat of arms of Anguilla", from: 1990, to: 9999, path: "national-flags/ai/ai-arms.svg", design: "Argent, three orange dolphins embowed and leaping in a circle, in base a bar wavy azure for the sea.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Anguilla" },
+    { id: "ai-football-crest", category: "footballcrest", name: "Crest of the Anguilla football association", path: "national-flags/ai/ai-football-crest.png", design: "The crest of Anguilla's national football association.", source: "https://en.wikipedia.org/wiki/Anguilla_Football_Association" },
   ],
   "AL": [
     { id: "al-official-national", category: "official", name: "Flag of Albania", from: 1992, to: 9999, primary: true, path: "flags/al.svg", design: "The national flag of Albania, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Albania" },
@@ -183,6 +184,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "AS": [
     { id: "as-official-national", category: "official", name: "Flag of American Samoa", from: 1960, to: 9999, path: "flags/sub/US/US-AS.svg", design: "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).", source: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
     { id: "as-seal", category: "coatofarms", name: "Seal of American Samoa", from: 1973, to: 9999, path: "national-flags/as/as-seal.svg", design: "A crossed fue (fly-whisk) and toʻotoʻo (staff) above a tanoa (kava bowl) on tapa cloth, with the motto Sāmoa Muamua Le Atua.", source: "https://en.wikipedia.org/wiki/Seal_of_American_Samoa" },
+    { id: "as-football-crest", category: "footballcrest", name: "Crest of the American Samoa football association", path: "national-flags/as/as-football-crest.svg", design: "The crest of American Samoa's national football association.", source: "https://en.wikipedia.org/wiki/Football_Federation_American_Samoa" },
   ],
   "AT": [
     { id: "at-official-national", category: "official", name: "Flag of Austria", from: 1918, to: 9999, primary: true, path: "flags/at.svg", design: "The national flag of Austria, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Austria" },
@@ -321,6 +323,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "BM": [
     { id: "bm-official-national", category: "official", name: "Flag of Bermuda", from: 1910, to: 9999, path: "flags/bm.svg", design: "A red ensign with the Union Flag in the canton and Bermuda's coat of arms — a red lion holding the wreck of the Sea Venture — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Bermuda" },
     { id: "bm-arms", category: "coatofarms", name: "Coat of arms of Bermuda", from: 1910, to: 9999, path: "national-flags/bm/bm-arms.svg", design: "Argent, on a mount vert a lion sejant affronté gules supporting an antique shield azure charged with a representation of the wreck of the ship Sea Venture proper.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bermuda" },
+    { id: "bm-football-crest", category: "footballcrest", name: "Crest of the Bermuda football association", path: "national-flags/bm/bm-football-crest.svg", design: "The crest of Bermuda's national football association.", source: "https://en.wikipedia.org/wiki/Bermuda_Football_Association" },
   ],
   "BN": [
     { id: "bn-official-national", category: "official", name: "Flag of Brunei", from: 1959, to: 9999, primary: true, path: "flags/bn.svg", design: "The national flag of Brunei, in the form adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Brunei" },
@@ -484,6 +487,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CK": [
     { id: "ck-official-national", category: "official", name: "Flag of the Cook Islands", from: 1979, to: 9999, path: "flags/ck.svg", design: "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
     { id: "ck-arms", category: "coatofarms", name: "Coat of arms of the Cook Islands", from: 1978, to: 9999, path: "national-flags/ck/ck-arms.svg", design: "Azure, fifteen white stars in a circle; supporters a flying fish and a white tern; crest a red-feather chieftain's headdress; a white cross and Rarotongan club in saltire behind; palm leaves and a pearl in base.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cook_Islands" },
+    { id: "ck-football-crest", category: "footballcrest", name: "Crest of the Cook Islands football association", path: "national-flags/ck/ck-football-crest.svg", design: "The crest of Cook Islands's national football association.", source: "https://en.wikipedia.org/wiki/Cook_Islands_Football_Association" },
   ],
   "CL": [
     { id: "cl-official-national", category: "official", name: "Flag of Chile", from: 1817, to: 9999, primary: true, path: "flags/cl.svg", design: "The national flag of Chile, in the form adopted in 1817.", source: "https://en.wikipedia.org/wiki/Flag_of_Chile" },
@@ -577,6 +581,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "CW": [
     { id: "cw-official-national", category: "official", name: "Flag of Curaçao", from: 1984, to: 9999, path: "flags/sub/NL/NL-CW.svg", design: "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao" },
     { id: "cw-arms", category: "coatofarms", name: "Coat of arms of Curaçao", from: 1964, to: 9999, path: "national-flags/cw/cw-arms.svg", design: "A shield with a sailing ship in full sail on a blue sea and a green laraha (bitter-orange) tree, an inescutcheon of the arms of Amsterdam (three saltires).", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cura%C3%A7ao" },
+    { id: "cw-football-crest", category: "footballcrest", name: "Crest of the Curaçao football association", path: "national-flags/cw/cw-football-crest.svg", design: "The crest of Curaçao's national football association.", source: "https://en.wikipedia.org/wiki/Cura%C3%A7ao_Football_Federation" },
   ],
   "CY": [
     { id: "cy-official-national", category: "official", name: "Flag of Cyprus", from: 1960, to: 9999, primary: true, path: "flags/cy.svg", design: "The national flag of Cyprus, in the form adopted in 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_Cyprus" },
@@ -849,6 +854,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "GI": [
     { id: "gi-official-national", category: "official", name: "Flag of Gibraltar", from: 1502, to: 9999, path: "flags/gi.svg", design: "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.", source: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
     { id: "gi-arms", category: "coatofarms", name: "Coat of arms of Gibraltar", from: 1502, to: 9999, path: "national-flags/gi/gi-arms.svg", design: "Argent, upon a base gules a castle triple-towered gules ported and windowed sable, a golden key pendent from the portal.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gibraltar" },
+    { id: "gi-football-crest", category: "footballcrest", name: "Crest of the Gibraltar football association", path: "national-flags/gi/gi-football-crest.svg", design: "The crest of Gibraltar's national football association.", source: "https://en.wikipedia.org/wiki/Gibraltar_Football_Association" },
   ],
   "GL": [
     { id: "gl-official-national", category: "official", name: "Flag of Greenland", from: 1985, to: 9999, path: "flags/gl.svg", design: "Erfalasorput — a horizontal white-over-red field bearing a counter-coloured disc, the sun setting into the ice.", source: "https://en.wikipedia.org/wiki/Flag_of_Greenland" },
@@ -903,6 +909,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gu-spain-1785", category: "historical", name: "Flag of the Kingdom of Spain", from: 1785, to: 1898, sovereign: "Spain", path: "historical-flags/spain-1785.png", design: "The 1785 Spanish ensign, flown over Guam until it was ceded to the United States in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Spain" },
     { id: "gu-burgundy", category: "historical", name: "Cross of Burgundy", from: 1668, to: 1785, sovereign: "Spain", path: "historical-flags/spain-burgundy.png", design: "The ensign of the Spanish Empire, flown over Guam from the founding of the Spanish mission in 1668.", source: "https://en.wikipedia.org/wiki/Cross_of_Burgundy" },
     { id: "gu-seal", category: "coatofarms", name: "Great Seal of Guam", from: 1946, to: 9999, path: "national-flags/gu/gu-seal.svg", design: "A slingstone-shaped emblem showing a flying proa in Agana Bay beneath a coconut tree, GUAM in red across it.", source: "https://en.wikipedia.org/wiki/Seal_of_Guam" },
+    { id: "gu-football-crest", category: "footballcrest", name: "Crest of the Guam football association", path: "national-flags/gu/gu-football-crest.png", design: "The crest of Guam's national football association.", source: "https://en.wikipedia.org/wiki/Guam_Football_Association" },
   ],
   "GW": [
     { id: "gw-official-national", category: "official", name: "Flag of Guinea-Bissau", from: 1973, to: 9999, primary: true, path: "flags/gw.svg", design: "The national flag, adopted in 1973.", source: "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau" },
@@ -927,6 +934,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "hk-uk", category: "historical", name: "Flag of the United Kingdom", from: 1841, to: 1959, sovereign: "the United Kingdom", path: "national-flags/hk/hk-uk.svg", design: "The Union Flag, flown over the British colony of Hong Kong from 1841 before the colony adopted its own ensign.", source: "https://en.wikipedia.org/wiki/British_Hong_Kong" },
     { id: "hk-emblem", category: "coatofarms", name: "Regional Emblem of Hong Kong", from: 1997, to: 9999, path: "national-flags/hk/hk-emblem.svg", design: "The white bauhinia of the flag within a red ring naming the Special Administrative Region.", source: "https://en.wikipedia.org/wiki/Flag_of_Hong_Kong" },
     { id: "hk-passport", category: "passport", name: "Hong Kong SAR passport", path: "national-flags/hk/hk-passport.svg", design: "The dark-blue cover of the Hong Kong Special Administrative Region passport.", source: "https://en.wikipedia.org/wiki/Hong_Kong_Special_Administrative_Region_passport" },
+    { id: "hk-football-crest", category: "footballcrest", name: "Crest of the Hong Kong football association", path: "national-flags/hk/hk-football-crest.svg", design: "The crest of Hong Kong's national football association.", source: "https://en.wikipedia.org/wiki/Hong_Kong_Football_Association" },
   ],
   "HN": [
     { id: "hn-official-national", category: "official", name: "Flag of Honduras", from: 1866, to: 9999, primary: true, path: "flags/hn.svg", design: "The national flag, in the form adopted in 1866.", source: "https://en.wikipedia.org/wiki/Flag_of_Honduras" },
@@ -1218,6 +1226,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "KY": [
     { id: "ky-official-national", category: "official", name: "Flag of the Cayman Islands", from: 1958, to: 9999, path: "flags/ky.svg", design: "A blue ensign with the Union Flag in the canton and the Cayman Islands' coat of arms — a shield of three stars over wavy bands beneath a British lion — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Cayman_Islands" },
     { id: "ky-arms", category: "coatofarms", name: "Coat of arms of the Cayman Islands", from: 1958, to: 9999, path: "national-flags/ky/ky-arms.svg", design: "A shield with three green stars over blue-and-white wavy bands, a gold lion passant guardant on red in chief; crest a green turtle upon a coil of rope before a gold pineapple; motto 'He hath founded it upon the seas'.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Cayman_Islands" },
+    { id: "ky-football-crest", category: "footballcrest", name: "Crest of the Cayman Islands football association", path: "national-flags/ky/ky-football-crest.svg", design: "The crest of Cayman Islands's national football association.", source: "https://en.wikipedia.org/wiki/Cayman_Islands_Football_Association" },
   ],
   "KZ": [
     { id: "kz-official-national", category: "official", name: "Flag of Kazakhstan", from: 1992, to: 9999, primary: true, path: "flags/kz.svg", design: "The national flag of Kazakhstan, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Kazakhstan" },
@@ -1433,6 +1442,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mo-portugal", category: "historical", name: "Flag of Portugal", from: 1910, to: 1999, sovereign: "Portugal", path: "flags/pt.svg", design: "The flag of the Portuguese Republic; Macau flew only Portugal's own flag throughout its rule and adopted a flag of its own only at the 1999 handover.", source: "https://en.wikipedia.org/wiki/Portuguese_Macau" },
     { id: "mo-emblem", category: "coatofarms", name: "Regional Emblem of Macau", from: 1999, to: 9999, path: "national-flags/mo/mo-emblem.svg", design: "The lotus, bridge and water of the flag within a green ring naming the Special Administrative Region.", source: "https://en.wikipedia.org/wiki/Flag_of_Macau" },
     { id: "mo-passport", category: "passport", name: "Macau SAR passport", path: "national-flags/mo/mo-passport.webp", design: "The cover of the Macau Special Administrative Region passport.", source: "https://gicg.net/passport/mo/" },
+    { id: "mo-football-crest", category: "footballcrest", name: "Crest of the Macau football association", path: "national-flags/mo/mo-football-crest.svg", design: "The crest of Macau's national football association.", source: "https://en.wikipedia.org/wiki/Macau_Football_Association" },
   ],
   "MP": [
     { id: "mp-official-national", category: "official", name: "Flag of the Northern Mariana Islands", from: 1985, to: 9999, path: "flags/sub/US/US-MP.svg", design: "A grey latte stone and white star before a mwarmwar garland, on a blue field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands" },
@@ -1453,6 +1463,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "MS": [
     { id: "ms-official-national", category: "official", name: "Flag of Montserrat", from: 1909, to: 9999, path: "flags/ms.svg", design: "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Montserrat" },
     { id: "ms-arms", category: "coatofarms", name: "Coat of arms of Montserrat", from: 1909, to: 9999, path: "national-flags/ms/ms-arms.svg", design: "A woman in a green dress (Erin, the personification of Ireland) embracing a black cross and holding a golden harp.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Montserrat" },
+    { id: "ms-football-crest", category: "footballcrest", name: "Crest of the Montserrat football association", path: "national-flags/ms/ms-football-crest.svg", design: "The crest of Montserrat's national football association.", source: "https://en.wikipedia.org/wiki/Montserrat_Football_Association" },
   ],
   "MT": [
     { id: "mt-official-national", category: "official", name: "Flag of Malta", from: 1964, to: 9999, primary: true, path: "flags/mt.svg", design: "The national flag of Malta, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Malta" },
@@ -1553,6 +1564,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "NC": [
     { id: "nc-kanak", category: "official", name: "Kanak flag (FLNKS)", from: 1980, to: 9999, path: "flags/nc.svg", design: "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).", source: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
+    { id: "nc-football-crest", category: "footballcrest", name: "Crest of the New Caledonia football association", path: "national-flags/nc/nc-football-crest.svg", design: "The crest of New Caledonia's national football association.", source: "https://en.wikipedia.org/wiki/New_Caledonian_Football_Federation" },
   ],
   "NE": [
     { id: "ne-official-national", category: "official", name: "Flag of Niger", from: 1959, to: 9999, primary: true, path: "flags/ne.svg", design: "The national flag of Niger, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Niger" },
@@ -1684,6 +1696,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   ],
   "PF": [
     { id: "pf-official-national", category: "official", name: "Flag of French Polynesia", from: 1984, to: 9999, path: "flags/pf.svg", design: "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.", source: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
+    { id: "pf-football-crest", category: "footballcrest", name: "Crest of the Tahiti football association", path: "national-flags/pf/pf-football-crest.svg", design: "The crest of Tahiti's national football association.", source: "https://en.wikipedia.org/wiki/Tahitian_Football_Federation" },
   ],
   "PG": [
     { id: "pg-official-national", category: "official", name: "Flag of Papua New Guinea", from: 1971, to: 9999, primary: true, path: "flags/pg.svg", design: "The national flag, adopted in 1971.", source: "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea" },
@@ -2027,6 +2040,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "TC": [
     { id: "tc-official-national", category: "official", name: "Flag of the Turks and Caicos Islands", from: 1968, to: 9999, path: "flags/tc.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — conch shell, spiny lobster and Turk's-head cactus on gold — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Turks_and_Caicos_Islands" },
     { id: "tc-arms", category: "coatofarms", name: "Coat of arms of the Turks and Caicos Islands", from: 1965, to: 9999, path: "national-flags/tc/tc-arms.svg", design: "Or, in chief a queen conch shell and a spiny lobster and in base a Turk's-head cactus proper; crest a pelican between two sisal plants; supporters two flamingos.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Turks_and_Caicos_Islands" },
+    { id: "tc-football-crest", category: "footballcrest", name: "Crest of the Turks and Caicos Islands football association", path: "national-flags/tc/tc-football-crest.png", design: "The crest of Turks and Caicos Islands's national football association.", source: "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands_Football_Association" },
   ],
   "TD": [
     { id: "td-official-national", category: "official", name: "Flag of Chad", from: 1959, to: 9999, primary: true, path: "flags/td.svg", design: "The national flag of Chad, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Chad" },
@@ -2142,6 +2156,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tw-qing", category: "historical", name: "Flag of the Qing dynasty", from: 1683, to: 1895, priorPolity: "the Qing Empire", path: "national-flags/tw/tw-qing.svg", design: "The yellow dragon banner of Qing China, which governed Taiwan until it was ceded to Japan in 1895.", source: "https://en.wikipedia.org/wiki/Taiwan_under_Qing_rule" },
     { id: "tw-emblem", category: "coatofarms", name: "National Emblem of the Republic of China", from: 1928, to: 9999, path: "national-flags/tw/tw-emblem.svg", design: "A white sun of twelve rays on a blue disc — the 'Blue Sky with a White Sun'.", source: "https://en.wikipedia.org/wiki/National_Emblem_of_the_Republic_of_China" },
     { id: "tw-passport", category: "passport", name: "Republic of China (Taiwan) passport", path: "national-flags/tw/tw-passport.svg", design: "The dark-green cover of the Republic of China (Taiwan) passport.", source: "https://en.wikipedia.org/wiki/Republic_of_China_passport" },
+    { id: "tw-football-crest", category: "footballcrest", name: "Crest of the Chinese Taipei football association", path: "national-flags/tw/tw-football-crest.svg", design: "The crest of Chinese Taipei's national football association.", source: "https://en.wikipedia.org/wiki/Chinese_Taipei_Football_Association" },
   ],
   "TZ": [
     { id: "tz-official-national", category: "official", name: "Flag of Tanzania", from: 1964, to: 9999, primary: true, path: "flags/tz.svg", design: "The national flag of Tanzania, in the form adopted in 1964.", source: "https://en.wikipedia.org/wiki/Flag_of_Tanzania" },
@@ -2295,11 +2310,13 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
   "VG": [
     { id: "vg-official-national", category: "official", name: "Flag of the British Virgin Islands", from: 1960, to: 9999, path: "flags/vg.svg", design: "A blue ensign with the Union Flag in the canton and the territory's coat of arms — Saint Ursula holding a golden lamp among eleven others — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_British_Virgin_Islands" },
     { id: "vg-arms", category: "coatofarms", name: "Coat of arms of the British Virgin Islands", from: 1960, to: 9999, path: "national-flags/vg/vg-arms.svg", design: "Vert, a woman (Saint Ursula) robed argent holding a lit golden oil lamp, surrounded by eleven further golden lamps; motto VIGILATE.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_British_Virgin_Islands" },
+    { id: "vg-football-crest", category: "footballcrest", name: "Crest of the British Virgin Islands football association", path: "national-flags/vg/vg-football-crest.svg", design: "The crest of British Virgin Islands's national football association.", source: "https://en.wikipedia.org/wiki/British_Virgin_Islands_Football_Association" },
   ],
   "VI": [
     { id: "vi-official-national", category: "official", name: "Flag of the U.S. Virgin Islands", from: 1921, to: 9999, path: "flags/sub/US/US-VI.svg", design: "A white field bearing a simplified American eagle between the letters V and I.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
     { id: "vi-denmark", category: "historical", name: "Flag of Denmark", from: 1672, to: 1917, sovereign: "Denmark", path: "flags/dk.svg", design: "The Dannebrog, flown over the Danish West Indies from the settlement of St Thomas in 1672 until the islands were sold to the United States in 1917.", source: "https://en.wikipedia.org/wiki/Danish_West_Indies" },
     { id: "vi-seal", category: "coatofarms", name: "Seal of the U.S. Virgin Islands", from: 1921, to: 9999, path: "national-flags/vi/vi-seal.svg", design: "An American eagle holding a laurel sprig and three arrows, between the letters V and I.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands" },
+    { id: "vi-football-crest", category: "footballcrest", name: "Crest of the U.S. Virgin Islands football association", path: "national-flags/vi/vi-football-crest.svg", design: "The crest of U.S. Virgin Islands's national football association.", source: "https://en.wikipedia.org/wiki/U.S._Virgin_Islands_Soccer_Federation" },
   ],
   "VN": [
     { id: "vn-official-national", category: "official", name: "Flag of Vietnam", from: 1955, to: 9999, primary: true, path: "flags/vn.svg", design: "The national flag of Vietnam, in the form adopted in 1955.", source: "https://en.wikipedia.org/wiki/Flag_of_Vietnam" },
@@ -2331,6 +2348,9 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ws-arms", category: "coatofarms", name: "Coat of arms of Samoa", from: 1962, to: 9999, path: "national-flags/ws/ws-arms.svg", design: "A shield bearing the Southern Cross over a coconut palm rising from the sea, surmounted by a cross, within a ring of olive leaves.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
     { id: "ws-passport", category: "passport", name: "Passport of Samoa", path: "national-flags/ws/ws-passport.webp", design: "The cover of the Samoa passport.", source: "https://gicg.net/passport/ws/" },
     { id: "ws-football-crest", category: "footballcrest", name: "Crest of the Samoa national football team", path: "national-flags/ws/ws-football-crest.png", design: "The crest of the Samoa national football team.", source: "https://en.wikipedia.org/wiki/Samoa_national_football_team" },
+  ],
+  "XK": [
+    { id: "xk-football-crest", category: "footballcrest", name: "Crest of the Kosovo football association", path: "national-flags/xk/xk-football-crest.svg", design: "The crest of Kosovo's national football association.", source: "https://en.wikipedia.org/wiki/Football_Federation_of_Kosovo" },
   ],
   "YE": [
     { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, adopted at unification in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },

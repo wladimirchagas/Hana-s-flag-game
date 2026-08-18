@@ -43,6 +43,7 @@ import {
   PASSPORT_COLOR_GROUP_ORDER,
 } from "../lib/passportColorGroups";
 import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
+import { NON_FIFA_GRID_CODES, fifaExtraCrests } from "../lib/fifaAssociations";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -222,17 +223,24 @@ export function FlagGrid({
     }
   }, [groupMode, effectiveContentType, isModernEra]);
 
-  // Football-crests view only: expand a country that has NO single national
-  // crest but DOES have sub-national ones (the UK → England/Scotland/Wales/
-  // Northern Ireland) into one card per home nation, instead of a single blank
-  // tile. Each card shows the home-nation crest and name, sorts clustered where
-  // the parent country sits (`sortKey`), and selects the parent country when
-  // clicked (`selectId`). Every other view — and every country with its own
-  // crest — is untouched.
+  // Football-crests view only: the grid is drawn from FIFA's ~211 member
+  // associations, not the 195 UN members (owner request, 2026-08). Three
+  // football-crests-only transforms — every other view keeps the 195 untouched:
+  //   1. hide game members that are NOT FIFA members (NON_FIFA_GRID_CODES);
+  //   2. expand a country with NO single national crest but WITH sub-national
+  //      ones (the UK → England/Scotland/Wales/Northern Ireland) into one card
+  //      per home nation, clustered where the UK sorts (`sortKey`) and selecting
+  //      the UK on click (`selectId`);
+  //   3. append the non-UN FIFA member associations (Gibraltar, Faroe Islands,
+  //      Hong Kong, the Caribbean/Pacific associations, Kosovo, …), each sorting
+  //      by its own name and selecting its parent country on click.
   const displayEntries = useMemo(() => {
     if (effectiveContentType !== "footballcrest") return entries;
     const out: FlagListEntry[] = [];
     for (const e of entries) {
+      // The Football-crests grid is FIFA's ~211 members, so hide the game's
+      // non-FIFA members (Monaco, the Vatican, the Pacific micro-states).
+      if (NON_FIFA_GRID_CODES.has(e.id)) continue;
       const subs = e.footballCrest ? [] : subnationalFootballCrests(e.id);
       if (subs.length === 0) {
         out.push(e);
@@ -252,6 +260,22 @@ export function FlagGrid({
           selectId: e.id,
           capital: undefined,
         });
+      });
+    }
+    // Append the non-UN FIFA member associations (territories the game models as
+    // entities — Gibraltar, Faroe Islands, Hong Kong, the Caribbean/Pacific
+    // associations — plus Kosovo). Each sorts by its own name and, on click,
+    // selects its parent country (whose National symbols tab shows the crest);
+    // Kosovo has no parent, so its card is informational.
+    for (const x of fifaExtraCrests()) {
+      out.push({
+        id: x.id,
+        name: x.name,
+        flag: x.path,
+        footballCrest: x.path,
+        continent: x.continent,
+        subcontinent: x.subcontinent,
+        selectId: x.parent || undefined,
       });
     }
     return out;
