@@ -201,6 +201,17 @@
           "source": "https://en.wikipedia.org/wiki/Trucial_States",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ae-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the United Arab Emirates national football team",
+          "commons": "United Arab Emirates Football Association logo.svg",
+          "file": "ae/ae-football-crest.svg",
+          "design": "The crest of the United Arab Emirates national football team.",
+          "source": "https://en.wikipedia.org/wiki/United_Arab_Emirates_national_football_team",
+          "sha256": "c8518d2363879cc91db6564aec0ac29816b7170e04ec51aa4d156b49cc01c0e0",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -1799,6 +1810,17 @@
           "source": "https://gicg.net/passport/bd/",
           "sha256": "be65755e58a9b3d6f7d5e920ca3ced3e963fb5357dde744058043ada4247d192",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "bd-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Bangladesh national football team",
+          "commons": "Logo of Bangladesh Football Federation.svg",
+          "file": "bd/bd-football-crest.svg",
+          "design": "The crest of the Bangladesh national football team.",
+          "source": "https://en.wikipedia.org/wiki/Bangladesh_national_football_team",
+          "sha256": "196f57079b4c0f4a41c3c7d4842ee22c56902adea2d4c1ab0a7c5cf800cbf643",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -4490,6 +4512,17 @@
           },
           "sha256": "ae701cd0acbf332cd6197d5bd26e90bb6e915eec7c3dc592ea22351a79a752c2",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "cl-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Chile national football team",
+          "commons": "Federación de Fútbol de Chile logo.svg",
+          "file": "cl/cl-football-crest.svg",
+          "design": "The crest of the Chile national football team.",
+          "source": "https://en.wikipedia.org/wiki/Chile_national_football_team",
+          "sha256": "b50287c98df970cedf44f59bfb790100c3cf31fd64dc99a798a10b0ae4d2cfb5",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -4966,6 +4999,17 @@
           "source": "https://gicg.net/passport/co/",
           "sha256": "9c87fdb631bce4d5cd9382f3ce6962ed3f0d07059b77da10c69c7475ebd6a4c3",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "co-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Colombia national football team",
+          "commons": "FCF-Logo-2023.svg",
+          "file": "co/co-football-crest.svg",
+          "design": "The crest of the Colombia national football team.",
+          "source": "https://en.wikipedia.org/wiki/Colombia_national_football_team",
+          "sha256": "6c6af8105367da3be46c42ac2d2a4d838ee0beb137f83c8bfe442e8cb5aebc0c",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -5084,6 +5128,17 @@
           "source": "https://gicg.net/passport/cr/",
           "sha256": "769b4f1a9641bee4ab20fb8785bb15db70e51d8a2aaa96f76a9ae6b0b4740ad3",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "cr-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Costa Rica national football team",
+          "commons": "Costa Rica national football team logo.svg",
+          "file": "cr/cr-football-crest.svg",
+          "design": "The crest of the Costa Rica national football team.",
+          "source": "https://en.wikipedia.org/wiki/Costa_Rica_national_football_team",
+          "sha256": "65cf7b28c0729a4c5809ff2646410948a0db90363106c7e5265492f6aab30d66",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -5848,6 +5903,17 @@
           "source": "https://gicg.net/passport/dk/",
           "sha256": "c44547fc8e7aa67eeeae43ea39f0c44f9df0f001f9aebe706811cf6f06be1da8",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "dk-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Denmark national football team",
+          "commons": "Dansk boldspil union logo.svg",
+          "file": "dk/dk-football-crest.svg",
+          "design": "The crest of the Denmark national football team.",
+          "source": "https://en.wikipedia.org/wiki/Denmark_national_football_team",
+          "sha256": "6ce6ea5e48d99881f293fe99f4fca3f6aa4652ef96e78cd58188356d687130fe",
+          "fetched": "2026-08-18"
         }
       ]
     },
@@ -5991,6 +6057,17 @@
           "source": "https://gicg.net/passport/do/",
           "sha256": "a71add7b6a5f589022279f01f947f4c7d6a54895e4273f9930d196f4569106ef",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "do-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Dominican Republic national football team",
+          "commons": "Federación Dominicana de Fútbol logo (2025).svg",
+          "file": "do/do-football-crest.svg",
+          "design": "The crest of the Dominican Republic national football team.",
+          "source": "https://en.wikipedia.org/wiki/Dominican_Republic_national_football_team",
+          "sha256": "7dbb20b5496c38dce34742796275e8ab0a0508ee9b0fa1057dd0827281947d29",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -6260,6 +6337,17 @@
           "source": "https://gicg.net/passport/ec/",
           "sha256": "dd9740b91d7b81201dffc1c9e47056aea63c17c6b3963f9e8f6f734162142847",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ec-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Ecuador national football team",
+          "commons": "Logo de la Federación Ecuatoriana de Fútbol (2).svg",
+          "file": "ec/ec-football-crest.svg",
+          "design": "The crest of the Ecuador national football team.",
+          "source": "https://en.wikipedia.org/wiki/Ecuador_national_football_team",
+          "sha256": "cf569e7ebc917df58b89eaa857c7fe1f49f7ca35b9ae60dc697c20e52d6f40d2",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -7185,6 +7273,17 @@
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "fi-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Finland national football team",
+          "commons": "Finland national football team crest.png",
+          "file": "fi/fi-football-crest.png",
+          "design": "The crest of the Finland national football team.",
+          "source": "https://en.wikipedia.org/wiki/Finland_national_football_team",
+          "sha256": "3e078661db146de358ddb616366b00087968d5ddb79521b254532ccd56eb7727",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -8599,6 +8698,17 @@
           "source": "https://gicg.net/passport/gr/",
           "sha256": "55eea47c594c89f24b602538dd4a570d6850d8089da1ea939d1c26cfdc62d7e3",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "gr-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Greece national football team",
+          "commons": "Greece National Football Team.svg",
+          "file": "gr/gr-football-crest.svg",
+          "design": "The crest of the Greece national football team.",
+          "source": "https://en.wikipedia.org/wiki/Greece_national_football_team",
+          "sha256": "58067bb94c84b83087b348b9680d11c43d6828a6d600a854d268b3718e0e7ca5",
+          "fetched": "2026-08-18"
         }
       ]
     },
@@ -8969,6 +9079,17 @@
           "source": "https://gicg.net/passport/hn/",
           "sha256": "955369ea826caef5218beb3b107407e408064570f5b12c5b2ef8e445b531421d",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "hn-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Honduras national football team",
+          "commons": "Honduras football crest.svg",
+          "file": "hn/hn-football-crest.svg",
+          "design": "The crest of the Honduras national football team.",
+          "source": "https://en.wikipedia.org/wiki/Honduras_national_football_team",
+          "sha256": "1e5f070dc0949e143d163b2329d19afed6d168a3373005c1d06b89aa7ee11b6b",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -9452,6 +9573,17 @@
           "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
           "sha256": "9c2a624a9ca5a82940d8902a7b818230d7bc2efde991837d6f78bc78c1b27110",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "id-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Indonesia national football team",
+          "commons": "2025 Indonesia National Football Team Badge.png",
+          "file": "id/id-football-crest.png",
+          "design": "The crest of the Indonesia national football team.",
+          "source": "https://en.wikipedia.org/wiki/Indonesia_national_football_team",
+          "sha256": "ea120dc7b795e1d74b3e7e5381e3a7471d4b1033a00b7d586e2a39c28516d9ea",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -10139,6 +10271,17 @@
           "source": "https://en.wikipedia.org/wiki/Mandatory_Iraq",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "iq-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Iraq national football team",
+          "commons": "Iraq national football team logo (1983).png",
+          "file": "iq/iq-football-crest.png",
+          "design": "The crest of the Iraq national football team.",
+          "source": "https://en.wikipedia.org/wiki/Iraq_national_football_team",
+          "sha256": "90ed9336b78957673bfd4ea469b48df3485245d6197a578e29a95808fa56b924",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -10587,6 +10730,17 @@
           "source": "https://gicg.net/passport/it/",
           "sha256": "3b8c01907e96a417a211b6a71a119d2f72f702ec2b8d686ea55693b0763d5aa4",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "it-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Italy national football team",
+          "commons": "Logo Italy National Football Team - 2023.svg",
+          "file": "it/it-football-crest.svg",
+          "design": "The crest of the Italy national football team.",
+          "source": "https://en.wikipedia.org/wiki/Italy_national_football_team",
+          "sha256": "5c5105c0344e541a4e567370641710e17074fe6161db35edf5845aac2aa0412f",
+          "fetched": "2026-08-18"
         }
       ]
     },
@@ -10727,6 +10881,17 @@
           "source": "https://gicg.net/passport/jm/",
           "sha256": "3a43689e043f0102214c887e0d03bbb678de137650646bfc0816605a4ab87f6e",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "jm-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Jamaica national football team",
+          "commons": "Jamaica FA.svg",
+          "file": "jm/jm-football-crest.svg",
+          "design": "The crest of the Jamaica national football team.",
+          "source": "https://en.wikipedia.org/wiki/Jamaica_national_football_team",
+          "sha256": "f91b3fe03075ac267655ff0176d2d3ca0bd5fffef89cac06188d055e2f848b93",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -10834,6 +10999,17 @@
           "source": "https://gicg.net/passport/jo/",
           "sha256": "21195b0584d57c34a929015b4a62d5debbdf79ea8a93b94623d9da370891abe5",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "jo-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Jordan national football team",
+          "commons": "Jordan national football team logo 2024.svg",
+          "file": "jo/jo-football-crest.svg",
+          "design": "The crest of the Jordan national football team.",
+          "source": "https://en.wikipedia.org/wiki/Jordan_national_football_team",
+          "sha256": "83241f837014deaeb06313b561b2d1d86a151bedd360b35e17896d3dad36fa5e",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -12060,6 +12236,17 @@
           "source": "https://gicg.net/passport/kw/",
           "sha256": "51b6c42598cafd2dce0417729a3a6ef7d7fe2a7b0252637c1bf9dc81a0d2d639",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "kw-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Kuwait national football team",
+          "commons": "Kuwait Football Association logo.png",
+          "file": "kw/kw-football-crest.png",
+          "design": "The crest of the Kuwait national football team.",
+          "source": "https://en.wikipedia.org/wiki/Kuwait_national_football_team",
+          "sha256": "e817472687789e68071119a80de1133c672b164548b8f3e36f9d8ee90477eb39",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -12766,6 +12953,17 @@
           "source": "https://gicg.net/passport/lr/",
           "sha256": "777aa717bf142536c37f00fa4f98347b276f8582de13d3cb14cdf9b30c3266d1",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "lr-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Liberia national football team",
+          "commons": "Liberia Football Association logo.svg",
+          "file": "lr/lr-football-crest.svg",
+          "design": "The crest of the Liberia national football team.",
+          "source": "https://en.wikipedia.org/wiki/Liberia_national_football_team",
+          "sha256": "c380016a1e362d31d054e3bdfc62dcb5a831879f01f7ad76992bf5da96734e31",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -14681,6 +14879,17 @@
           "source": "https://gicg.net/passport/mt/",
           "sha256": "ea86a583a3c1020acd7149f549d5efd9afb571a321a918272d0ed8e5a0df2236",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mt-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Malta national football team",
+          "commons": "Malta national football team crest.svg",
+          "file": "mt/mt-football-crest.svg",
+          "design": "The crest of the Malta national football team.",
+          "source": "https://en.wikipedia.org/wiki/Malta_national_football_team",
+          "sha256": "2a0ab79ae6facb7a76525c5dabd0097906c7d7d5e9865e7c07af4c8c1663996c",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -16007,6 +16216,17 @@
           "source": "https://gicg.net/passport/ni/",
           "sha256": "7886b7f4f763e1433b89b820d84927e9111e40e15ce5b678069d65ebd6e16399",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ni-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Nicaragua national football team",
+          "commons": "Nicaragua Football Crest.png",
+          "file": "ni/ni-football-crest.png",
+          "design": "The crest of the Nicaragua national football team.",
+          "source": "https://en.wikipedia.org/wiki/Nicaragua_national_football_team",
+          "sha256": "9326c5c52c1e6db7b9cc6ad80c4a95d3de4463849bf1c74e35d4d6ee44b73666",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -17833,6 +18053,17 @@
           "source": "https://gicg.net/passport/ps/",
           "sha256": "8c2084fe17a81d5ac849c84b9494522b440a194c908bc60ea3d0efd44d73e259",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ps-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Palestine national football team",
+          "commons": "2024 Palestine Football National Team Badge.svg",
+          "file": "ps/ps-football-crest.svg",
+          "design": "The crest of the Palestine national football team.",
+          "source": "https://en.wikipedia.org/wiki/Palestine_national_football_team",
+          "sha256": "d28fcc1cc9bafb6b18b99359c9fc7fe87135e8dbf34fd0f25df25a44b134de61",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -18224,6 +18455,17 @@
           "sovereign": "Spain",
           "design": "The red-yellow-red ensign of 1785 with the royal arms, flown in the last decades of Spanish rule.",
           "source": "https://en.wikipedia.org/wiki/Flag_of_Spain"
+        },
+        {
+          "id": "py-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Paraguay national football team",
+          "commons": "Asociación Paraguaya de Fútbol logo.svg",
+          "file": "py/py-football-crest.svg",
+          "design": "The crest of the Paraguay national football team.",
+          "source": "https://en.wikipedia.org/wiki/Paraguay_national_football_team",
+          "sha256": "9efd6d07bc9e4d111d14fdb34b2379ea5f7bf015e24b2c4c232c74f9c3a26286",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -19982,6 +20224,17 @@
           "source": "https://gicg.net/passport/sl/",
           "sha256": "5cbda0261b8f9b0a46088c2fa0c87cc219d62d6c0b14465cbbf2337818fea65b",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "sl-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Sierra Leone national football team",
+          "commons": "LOGO SLFA.png",
+          "file": "sl/sl-football-crest.png",
+          "design": "The crest of the Sierra Leone national football team.",
+          "source": "https://en.wikipedia.org/wiki/Sierra_Leone_national_football_team",
+          "sha256": "4c72a9676b459144301e3664eb73489777a69d2230314337c11bb5f36e2fa9e0",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -20036,6 +20289,17 @@
           "source": "https://gicg.net/passport/sm/",
           "sha256": "62c3c3a939d198717423bfb624405b67c0a29db19c42ec4d017c18783b268d9b",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "sm-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the San Marino national football team",
+          "commons": "San-marino-logo.png",
+          "file": "sm/sm-football-crest.png",
+          "design": "The crest of the San Marino national football team.",
+          "source": "https://en.wikipedia.org/wiki/San_Marino_national_football_team",
+          "sha256": "b86fa3e45249743fcbb661e335e95f1d2f95517fbd8f68bf22db8aed22e95a1d",
+          "fetched": "2026-08-18"
         }
       ]
     },
@@ -20206,6 +20470,17 @@
           "source": "https://gicg.net/passport/so/",
           "sha256": "fc71aa9da333b5554e89e1eedca98d64be163b4cc1d9db91db64ecf5394b073f",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "so-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Somalia national football team",
+          "commons": "Somali Football Federation logo.svg",
+          "file": "so/so-football-crest.svg",
+          "design": "The crest of the Somalia national football team.",
+          "source": "https://en.wikipedia.org/wiki/Somalia_national_football_team",
+          "sha256": "e2f0356040b0629e958035ae8b82b430943e81d825366f0f4891d79bc4ff80c0",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -22290,6 +22565,17 @@
           "source": "https://en.wikipedia.org/wiki/Russian_Empire",
           "sha256": "a4e7f1a157167b14fe3448421dc4f8c1d7fb24361b260f5407d7aca3a3f60402",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ua-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Ukraine national football team",
+          "commons": "Logo Fédération Ukraine Football 2016.svg",
+          "file": "ua/ua-football-crest.svg",
+          "design": "The crest of the Ukraine national football team.",
+          "source": "https://en.wikipedia.org/wiki/Ukraine_national_football_team",
+          "sha256": "17c28af7acf2300efa27a2a14929e307a522733255bdff337941f660c8602f84",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -23718,6 +24004,17 @@
           "source": "https://gicg.net/passport/ve/",
           "sha256": "4509a02218e466d716ecaeb9ed3c008d208103021de320281e42242e7ac657a4",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ve-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Venezuela national football team",
+          "commons": "Logotipo de la Federación Venezolana de Fútbol.svg",
+          "file": "ve/ve-football-crest.svg",
+          "design": "The crest of the Venezuela national football team.",
+          "source": "https://en.wikipedia.org/wiki/Venezuela_national_football_team",
+          "sha256": "695c50f2ae957bb75a1e82300ee8d6f4c882ee1ced38f2f066da9d77e98dfe96",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -24598,6 +24895,17 @@
           "source": "https://gicg.net/passport/zw/",
           "sha256": "54f2fc330baa3fb4e39437cd532c4ddc738397f39559c56a8b83d620072aacca",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "zw-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Zimbabwe national football team",
+          "commons": "Zifa-full-crest.png",
+          "file": "zw/zw-football-crest.png",
+          "design": "The crest of the Zimbabwe national football team.",
+          "source": "https://en.wikipedia.org/wiki/Zimbabwe_national_football_team",
+          "sha256": "7d26d39bffeee5042ef76f28fd9fa6d32958e1ebf1240415e7d3f8f36e134605",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
