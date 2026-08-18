@@ -44,6 +44,7 @@ import {
 } from "../lib/passportColorGroups";
 import { subnationalFootballCrests } from "../lib/nationalSymbolImages";
 import { NON_FIFA_GRID_CODES, fifaExtraCrests } from "../lib/fifaAssociations";
+import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCupTitles";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -89,7 +90,9 @@ type GroupMode =
   | "similarity"
   | "drive-side"
   | "aspect-ratio"
-  | "passport-color";
+  | "passport-color"
+  | "wc-men"
+  | "wc-women";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -104,6 +107,9 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "aspect-ratio": "By aspect ratio",
   // Passports-view only — buckets by the passport cover's colour family.
   "passport-color": "By colour",
+  // Football-crests-view only — buckets by FIFA World Cup titles won.
+  "wc-men": "FIFA Men's World Cups",
+  "wc-women": "FIFA Women's World Cups",
 };
 
 // The chosen grouping is remembered across visits (per the UX revision: the
@@ -142,6 +148,10 @@ const TODAY_ONLY_MODES = new Set<GroupMode>([
 // by the passport cover's colour, so it is offered only in the Passports view.
 const PASSPORT_ONLY_MODES = new Set<GroupMode>(["passport-color"]);
 
+// Modes offered ONLY in the Football-crests view — bucket associations by the
+// FIFA World Cup titles they have won (men's and women's, separately).
+const FOOTBALL_CREST_ONLY_MODES = new Set<GroupMode>(["wc-men", "wc-women"]);
+
 /** Whether a grouping mode is offered for the given view. The flag-appearance
  *  modes (shape/family/colour/…) describe a FLAG and show only in the modern
  *  flag view; "passport-color" shows only in the Passports view; everything else
@@ -152,8 +162,24 @@ function groupModeAvailableFor(
   isModernEra: boolean,
 ): boolean {
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
+  if (FOOTBALL_CREST_ONLY_MODES.has(m)) return isModernEra && contentType === "footballcrest";
   if (TODAY_ONLY_MODES.has(m)) return isModernEra && contentType === "flag";
   return true;
+}
+
+/** Heading for a World-Cup-titles bucket: "5 World Cup titles" / "1 World Cup
+ *  title", or the catch-all "No World Cup title" for associations that have
+ *  never won. */
+function worldCupBucket(count: number): string {
+  if (count <= 0) return "No World Cup title";
+  return `${count} World Cup title${count > 1 ? "s" : ""}`;
+}
+
+/** Order World-Cup-titles headings most titles first, "No World Cup title" last. */
+function worldCupHeadingOrder(heading: string): number {
+  if (heading === "No World Cup title") return 1000;
+  const n = parseInt(heading, 10);
+  return Number.isNaN(n) ? 999 : -n;
 }
 
 // Heading for the countries with no bundled passport when grouping the Passports
@@ -229,8 +255,8 @@ export function FlagGrid({
   //   1. hide game members that are NOT FIFA members (NON_FIFA_GRID_CODES);
   //   2. expand a country with NO single national crest but WITH sub-national
   //      ones (the UK → England/Scotland/Wales/Northern Ireland) into one card
-  //      per home nation, clustered where the UK sorts (`sortKey`) and selecting
-  //      the UK on click (`selectId`);
+  //      per home nation (each sorting by its own name) and selecting the UK on
+  //      click (`selectId`);
   //   3. append the non-UN FIFA member associations (Gibraltar, Faroe Islands,
   //      Hong Kong, the Caribbean/Pacific associations, Kosovo, …), each sorting
   //      by its own name and selecting its parent country on click.
@@ -246,15 +272,12 @@ export function FlagGrid({
         out.push(e);
         continue;
       }
-      subs.forEach((s, i) => {
+      subs.forEach((s) => {
         out.push({
           ...e,
           id: s.id,
           name: s.name,
           footballCrest: s.path,
-          // Cluster the home nations where the parent ("United Kingdom") sorts,
-          // rather than scattering them by their own initials (E, S, W, N).
-          sortKey: `${e.name} ${i}`,
           // A click opens the parent country, whose National symbols tab holds
           // all four crests together.
           selectId: e.id,
@@ -296,7 +319,7 @@ export function FlagGrid({
   // a per-mode comparator below.
   const groups = useMemo(() => {
     const sorted = [...filteredEntries].sort((a, b) =>
-      (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en"),
+      a.name.localeCompare(b.name, "en"),
     );
 
     if (groupMode === "none") {
@@ -314,7 +337,7 @@ export function FlagGrid({
       for (const e of sorted) {
         // Bucket by the sort key so the UK's home-nation cards land together
         // under "U" (where the United Kingdom sits), not scattered under E/S/W/N.
-        const first = (e.sortKey ?? e.name)[0] ?? "";
+        const first = e.name[0] ?? "";
         const letter = first.toUpperCase();
         // Numbers / non-letters bucket together under "#" so we never
         // get hundreds of tiny stubs.
@@ -411,6 +434,12 @@ export function FlagGrid({
         const fam = passportColorGroup(e.id);
         push(fam ?? PASSPORT_NO_COVER_GROUP, e);
       }
+    } else if (groupMode === "wc-men" || groupMode === "wc-women") {
+      // Bucket associations by FIFA World Cup titles won. Keyed by the card's id
+      // (a country code, or the England home-nation card for England's 1966
+      // men's title); everyone else falls into "No World Cup title".
+      const titles = groupMode === "wc-men" ? MENS_WORLD_CUP_TITLES : WOMENS_WORLD_CUP_TITLES;
+      for (const e of sorted) push(worldCupBucket(titles[e.id] ?? 0), e);
     }
 
     // Sort the bucket list.
@@ -461,6 +490,12 @@ export function FlagGrid({
         const ob = passportColorHeadingOrder(b);
         if (oa !== ob) return oa - ob;
       }
+      if (groupMode === "wc-men" || groupMode === "wc-women") {
+        // Most titles first; "No World Cup title" last.
+        const oa = worldCupHeadingOrder(a);
+        const ob = worldCupHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
       if (groupMode === "alpha") {
         // Keep "#" at the end.
         if (a === "#" && b !== "#") return 1;
@@ -490,9 +525,11 @@ export function FlagGrid({
         <h2 className="flag-grid__title" id="flag-grid-heading">
           {sectionTitle}
           <span className="flag-grid__count">
-            {filter.trim() && filteredEntries.length !== entries.length
-              ? `${filteredEntries.length} / ${entries.length}`
-              : entries.length}
+            {/* Count the cards actually shown in this view — the Football-crests
+                view is FIFA's associations (~211), not the 195 UN members. */}
+            {filter.trim() && filteredEntries.length !== displayEntries.length
+              ? `${filteredEntries.length} / ${displayEntries.length}`
+              : displayEntries.length}
           </span>
         </h2>
         <div className="flag-grid__controls">

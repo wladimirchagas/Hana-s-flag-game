@@ -359,6 +359,15 @@ federation logo IS the team crest (most countries), that one image serves both.
    capital-flag backfill sweep): an auto-picker will grab the wrong logo, which is the class of bug this
    repo guards against. A crest that cannot be confidently sourced is left absent (no card), never
    guessed. Keep going per the standing-sweep mandate; do not stop to ask whether to continue.
+5a. **Cards sort by their OWN name within every grouping** (owner request, 2026-08) — the UK home
+   nations are NOT clustered where the UK sits; England sorts under E, Scotland under S, etc.
+5b. **Two Football-crests-only groupings bucket associations by FIFA World Cup titles won** — "FIFA
+   Men's World Cups" and "FIFA Women's World Cups" (`FOOTBALL_CREST_ONLY_MODES` in `FlagGrid`, offered
+   only when the Show dropdown is on Football crests). Title counts live in `src/data/worldCupTitles.ts`,
+   SOURCED and dated (never from memory — the count is a repo fact like every population): men's as of
+   the 2026 tournament (Spain's 2nd title), women's as of 2023. England's 1966 men's title is keyed on
+   the England home-nation card, not the UK. Headings run most-titles-first with "No World Cup title"
+   last. Refresh the counts (with the cited source) when a new tournament is decided.
 6. **A crest's `design` line is written AFTER viewing the actual image** (a factual visual description,
    never from memory); a sourced `meaning` ("What this crest represents") is added only where the
    symbolism is documented, and omitted otherwise.
