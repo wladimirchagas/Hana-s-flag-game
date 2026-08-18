@@ -482,6 +482,17 @@
           "source": "https://gicg.net/passport/al/",
           "sha256": "ba517b9484eaa1ed1e82781008395cde2a9ef163f82cc1272b5e83287cf4562a",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "al-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Albania national football team",
+          "commons": "Albanian Football Federation.svg",
+          "file": "al/al-football-crest.svg",
+          "design": "The crest of the Albania national football team.",
+          "source": "https://en.wikipedia.org/wiki/Albanian_Football_Federation",
+          "sha256": "a43f675ef7037a88548a76cb1326b8ce99a463d00606367b9e6ccaf010b60c45",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -11751,6 +11762,18 @@
           "source": "https://gicg.net/passport/km/",
           "sha256": "9037e4abd8dc53388e47d55d6e6bd4eb118f31e4391ace4f134420613eacef32",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "km-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Comoros national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Comoros_Football_Federation_logo.svg",
+          "file": "km/km-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Comoros national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Comoros_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Comoros national football team.",
+          "source": "https://en.wikipedia.org/wiki/Comoros_Football_Federation",
+          "sha256": "60bc07a7b6a11119031358b6e4c4ca8de6dab46e512886ed1ae3272835a402bd",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -12885,6 +12908,18 @@
           "source": "https://en.wikipedia.org/wiki/British_Ceylon",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "lk-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Sri Lanka national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/b/b9/Football_Federation_of_Sri_Lanka_logo.svg",
+          "file": "lk/lk-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Sri Lanka national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Federation_of_Sri_Lanka_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Sri Lanka national football team.",
+          "source": "https://en.wikipedia.org/wiki/Football_Federation_of_Sri_Lanka",
+          "sha256": "21f12fac4aed75e0e509f5d7883ed39e6b6137565a6843983ca347d1adf6594f",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -14959,6 +14994,18 @@
           "source": "https://gicg.net/passport/mu/",
           "sha256": "6f9c21cc14db9b69438f8ec5f95232ffee6d04207cc167dc3462a5761e1ec8e3",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mu-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Mauritius national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/0/06/Mauritius_FA.png",
+          "file": "mu/mu-football-crest.png",
+          "licenceNote": "Non-free logo. The crest of the Mauritius national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Mauritius_FA.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Mauritius national football team.",
+          "source": "https://en.wikipedia.org/wiki/Mauritius_Football_Association",
+          "sha256": "588ed5f0b9859843ebefd80c3c28d5bd074f001d6e13a7b2ca50a375802b5251",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -15027,6 +15074,18 @@
           "source": "https://en.wikipedia.org/wiki/History_of_the_Maldives",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mv-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Maldives national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/3/3a/Football_Association_of_Maldives_logo.svg",
+          "file": "mv/mv-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Maldives national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Maldives_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Maldives national football team.",
+          "source": "https://en.wikipedia.org/wiki/Football_Association_of_Maldives",
+          "sha256": "a65779175cb17df7ae0e37b0a8e63ee71b29af47c92da9eab13bebee81f785ac",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -15121,6 +15180,18 @@
           "source": "https://gicg.net/passport/mw/",
           "sha256": "7e57810db968cd334918d5b45b04ed2aa8d5ac3e015788117e9c3d310462145c",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "mw-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Malawi national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Malawi_FA_%28logo%29.png",
+          "file": "mw/mw-football-crest.png",
+          "licenceNote": "Non-free logo. The crest of the Malawi national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Malawi_FA_(logo).png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Malawi national football team.",
+          "source": "https://en.wikipedia.org/wiki/Football_Association_of_Malawi",
+          "sha256": "fc373eb4e0d3b28b2dd9573398eded62f15fffe1c48911a9bfc226d8cef5f29c",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -17880,6 +17951,17 @@
           "source": "https://en.wikipedia.org/wiki/British_Raj",
           "sha256": "b93bb15033d6c2219f290121d40c0a741765bd4b077ebcf5a5b0d917ff725a28",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "pk-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Pakistan national football team",
+          "commons": "Pakistan Football Federation (logo).svg",
+          "file": "pk/pk-football-crest.svg",
+          "design": "The crest of the Pakistan national football team.",
+          "source": "https://en.wikipedia.org/wiki/Pakistan_Football_Federation",
+          "sha256": "5ce6cb403ec1ffc584001ad26eddff4051079a78289605abd00231ee46da344f",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -19033,6 +19115,18 @@
           "source": "https://gicg.net/passport/ru/",
           "sha256": "7cf104acba98ffdbfaa7e878dc2a7ddd4b86847ca31bcbe80d0d257f22b8fce5",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ru-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Russia national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/0/0b/Russian_Football_Union_logo.svg",
+          "file": "ru/ru-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Russia national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Russian_Football_Union_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Russia national football team.",
+          "source": "https://en.wikipedia.org/wiki/Russian_Football_Union",
+          "sha256": "aaa6d67ff9b4f552eed06d96d9793308d5fa4b54cc846d6971e56f7dafd5e8d5",
+          "fetched": "2026-08-18"
         }
       ]
     },
@@ -19507,6 +19601,18 @@
           "source": "https://gicg.net/passport/sc/",
           "sha256": "affdc730e08ad5cc9f6c2566d196e5e4a62ebf2fa0e35a244eb237a5993f1e26",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "sc-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Seychelles national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Seychelles_Football_Federation.png",
+          "file": "sc/sc-football-crest.png",
+          "licenceNote": "Non-free logo. The crest of the Seychelles national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Seychelles_Football_Federation.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Seychelles national football team.",
+          "source": "https://en.wikipedia.org/wiki/Seychelles_Football_Federation",
+          "sha256": "c975a066cd3b7f96f88fcbfa4da2c1dc2e1a98ffd00dda8568f528339c7c302d",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -19960,6 +20066,18 @@
           "source": "https://gicg.net/passport/sg/",
           "sha256": "72280b523652154d39e05c0a46c7fe59708c44f8869fa98f5c5ea4886bfaedd9",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "sg-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Singapore national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Football_Association_of_Singapore_crest.svg",
+          "file": "sg/sg-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Singapore national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Football_Association_of_Singapore_crest.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Singapore national football team.",
+          "source": "https://en.wikipedia.org/wiki/Football_Association_of_Singapore",
+          "sha256": "3f892d9bc0ac36c1e2ab2d700a73d9e26593505a9da65eec2955a4c05ef3801f",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
