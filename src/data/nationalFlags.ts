@@ -572,6 +572,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cv-portuguese", category: "historical", name: "Flag of Portugal", from: 1879, to: 1975, sovereign: "Portugal", path: "national-flags/cv/cv-pt.svg", design: "The flag of Portugal, flown over the colony of Cape Verde.", source: "https://en.wikipedia.org/wiki/Cape_Verde" },
     { id: "cv-arms", category: "coatofarms", name: "National emblem of Cape Verde", from: 1992, to: 9999, path: "national-flags/cv/cv-arms.svg", design: "A blue ring of ten stars around a plumb-bob, torch and triangle, above three chain links.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Cape_Verde" },
     { id: "cv-passport", category: "passport", name: "Passport of Cape Verde", path: "national-flags/cv/cv-passport.webp", design: "The cover of the Cape Verde passport.", source: "https://gicg.net/passport/cv/" },
+    { id: "cv-football-crest", category: "footballcrest", name: "Crest of the Cabo Verde national football team", path: "national-flags/cv/cv-football-crest.svg", design: "The crest of the Cabo Verde national football team.", source: "https://en.wikipedia.org/wiki/Cape_Verdean_Football_Federation" },
   ],
   "CW": [
     { id: "cw-official-national", category: "official", name: "Flag of Curaçao", from: 1984, to: 9999, path: "flags/sub/NL/NL-CW.svg", design: "A blue field with a horizontal yellow stripe below the centre and two white five-pointed stars in the canton.", source: "https://en.wikipedia.org/wiki/Flag_of_Cura%C3%A7ao" },
@@ -614,6 +615,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dj-french", category: "historical", name: "Flag of France", from: 1896, to: 1977, sovereign: "France", path: "national-flags/dj/dj-french.svg", design: "The French Tricolour, flown over French Somaliland and then the Territory of the Afars and the Issas.", source: "https://en.wikipedia.org/wiki/French_Somaliland" },
     { id: "dj-arms", category: "coatofarms", name: "Emblem of Djibouti", from: 1977, to: 9999, path: "national-flags/dj/dj-arms.svg", design: "An upright spear and shield between two hands holding machetes, beneath a red star, within laurel branches.", source: "https://en.wikipedia.org/wiki/Emblem_of_Djibouti" },
     { id: "dj-passport", category: "passport", name: "Passport of Djibouti", path: "national-flags/dj/dj-passport.webp", design: "The cover of the Djibouti passport.", source: "https://gicg.net/passport/dj/" },
+    { id: "dj-football-crest", category: "footballcrest", name: "Crest of the Djibouti national football team", path: "national-flags/dj/dj-football-crest.svg", design: "The crest of the Djibouti national football team.", source: "https://en.wikipedia.org/wiki/Djiboutian_Football_Federation" },
   ],
   "DK": [
     { id: "dk-official-national", category: "official", name: "Flag of Denmark", from: 1625, to: 9999, primary: true, path: "flags/dk.svg", design: "The national flag of Denmark, in the form adopted in 1625.", source: "https://en.wikipedia.org/wiki/Flag_of_Denmark" },
@@ -779,6 +781,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ga-french", category: "historical", name: "Flag of France", from: 1910, to: 1960, sovereign: "France", path: "national-flags/ga/ga-french.svg", design: "The French Tricolour, flown over Gabon under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
     { id: "ga-arms", category: "coatofarms", name: "Coat of arms of Gabon", from: 1960, to: 9999, path: "national-flags/ga/ga-arms.svg", design: "A black shield with golden discs and a ship, supported by two panthers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Gabon" },
     { id: "ga-passport", category: "passport", name: "Passport of Gabon", path: "national-flags/ga/ga-passport.webp", design: "The cover of the Gabon passport.", source: "https://gicg.net/passport/ga/" },
+    { id: "ga-football-crest", category: "footballcrest", name: "Crest of the Gabon national football team", path: "national-flags/ga/ga-football-crest.svg", design: "The crest of the Gabon national football team.", source: "https://en.wikipedia.org/wiki/Gabonese_Football_Federation" },
   ],
   "GB": [
     { id: "gb-official-national", category: "official", name: "Union Flag", from: 1801, to: 9999, primary: true, path: "flags/gb.svg", design: "The national flag of the United Kingdom.", source: "https://en.wikipedia.org/wiki/Union_Jack" },
@@ -1976,6 +1979,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sr-president", category: "standard", name: "Flag of the President of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Surinamese_flags" },
     { id: "sr-arms", category: "coatofarms", name: "Coat of arms of Suriname", from: 1975, to: 9999, path: "national-flags/sr/suriname-arms.svg", design: "A shield of a sailing ship and a royal palm with a diamond and a green star, held by two indigenous figures, over the motto Justitia, Pietas, Fides.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Suriname" },
     { id: "sr-passport", category: "passport", name: "Passport of Suriname", path: "national-flags/sr/sr-passport.webp", design: "The cover of the Suriname passport.", source: "https://gicg.net/passport/sr/" },
+    { id: "sr-football-crest", category: "footballcrest", name: "Crest of the Suriname national football team", path: "national-flags/sr/sr-football-crest.png", design: "The crest of the Suriname national football team.", source: "https://en.wikipedia.org/wiki/Surinamese_Football_Association" },
   ],
   "SS": [
     { id: "ss-official-national", category: "official", name: "Flag of South Sudan", from: 2011, to: 9999, primary: true, path: "flags/ss.svg", design: "The national flag, adopted in 2005 and kept at independence in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Sudan" },

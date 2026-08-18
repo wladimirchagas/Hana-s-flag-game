@@ -5430,6 +5430,18 @@
           "source": "https://gicg.net/passport/cv/",
           "sha256": "a97975df433c688a9df821bc5112b980d7ae9cc2dd55c3d7b411847cc24db373",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "cv-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Cabo Verde national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Cape_Verdean_Football_Federation_logo.svg",
+          "file": "cv/cv-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Cabo Verde national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Cape_Verdean_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Cabo Verde national football team.",
+          "source": "https://en.wikipedia.org/wiki/Cape_Verdean_Football_Federation",
+          "sha256": "03756f0ac882137f72503c170ff4e51e8b7ba98d8744f57a0740a1d52765841a",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -5870,6 +5882,18 @@
           "source": "https://gicg.net/passport/dj/",
           "sha256": "905ce77b2ee4b786b08a0e42a24c09e88bb7450f053d794c10f9abf3c3cd3db5",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "dj-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Djibouti national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/e/ed/Djiboutian_Football_Federation_logo.svg",
+          "file": "dj/dj-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Djibouti national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Djiboutian_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Djibouti national football team.",
+          "source": "https://en.wikipedia.org/wiki/Djiboutian_Football_Federation",
+          "sha256": "cf9419d02d332d22cc05b9f6a540e6259414edff2081daccec4582a9e6f64225",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -7717,6 +7741,18 @@
           "source": "https://gicg.net/passport/ga/",
           "sha256": "4b6c6937a78c46fada503d3dcb49d86bfe371063f99a4068901190ee3bcce7b1",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "ga-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Gabon national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/d/de/Gabonese_Football_Federation_logo.svg",
+          "file": "ga/ga-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Gabon national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Gabonese_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Gabon national football team.",
+          "source": "https://en.wikipedia.org/wiki/Gabonese_Football_Federation",
+          "sha256": "bd331054e866c1bd92cdf8b4d5cb994f4ffed7d7fbd161ac19de2e9683d4569b",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
@@ -20847,6 +20883,18 @@
           "source": "https://gicg.net/passport/sr/",
           "sha256": "c7934a234b7f1f91c3bf0a5b55484d7032eeafab55e4b7b50b9f8e0aa155495f",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "sr-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Suriname national football team",
+          "url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Surinamese_Football_Association_logo.png",
+          "file": "sr/sr-football-crest.png",
+          "licenceNote": "Non-free logo. The crest of the Suriname national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Surinamese_Football_Association_logo.png); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Suriname national football team.",
+          "source": "https://en.wikipedia.org/wiki/Surinamese_Football_Association",
+          "sha256": "fbf64076f2abbdb02c2ea7fd2ebc6289822ad623040e298a931a4f2917f63601",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
