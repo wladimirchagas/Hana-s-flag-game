@@ -17094,13 +17094,13 @@
         {
           "id": "ph-football-crest",
           "category": "footballcrest",
-          "name": "Crest of the Philippines national football team",
-          "url": "https://upload.wikimedia.org/wikipedia/en/7/74/Azkals_Futbol_Logo.svg",
+          "name": "Crest of the Philippine Football Federation (PFF)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/c/c5/Logo_of_Philippine_Football_Federation.svg",
           "file": "ph/ph-football-crest.svg",
-          "licenceNote": "Non-free logo. The crest of the Philippines national football team is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Azkals_Futbol_Logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
-          "design": "The crest of the Philippines national football team.",
-          "source": "https://en.wikipedia.org/wiki/Philippines_national_football_team",
-          "sha256": "244145cc9a6f9277a06c1297b60f0ca835ab808ac37af0d67fd314d8050de983",
+          "licenceNote": "Non-free logo. The crest of the Philippine Football Federation (PFF) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Logo_of_Philippine_Football_Federation.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Philippine Football Federation — a circular blue-and-gold badge with a football before a red-and-blue goal, the letters PFF, two stars and the founding year 1907.",
+          "source": "https://en.wikipedia.org/wiki/Philippine_Football_Federation",
+          "sha256": "0f6c40b21d8fd7502c6feb1aa5cc372bdc3dae841860aafaabcb778eba7c18b6",
           "fetched": "2026-08-18"
         }
       ],
@@ -23292,6 +23292,18 @@
           "source": "https://gicg.net/passport/vn/",
           "sha256": "f0f5fd3259de814250d239dba92adc2be10d48e20cf7b899881387a8c1d28244",
           "fetched": "2026-08-12"
+        },
+        {
+          "id": "vn-football-crest",
+          "category": "footballcrest",
+          "name": "Crest of the Vietnam Football Federation (VFF)",
+          "url": "https://upload.wikimedia.org/wikipedia/en/1/1d/Vietnam_Football_Federation_logo.svg",
+          "file": "vn/vn-football-crest.svg",
+          "licenceNote": "Non-free logo. The crest of the Vietnam Football Federation (VFF) is a copyrighted, trademarked emblem uploaded to the English Wikipedia under a fair-use rationale (https://en.wikipedia.org/wiki/File:Vietnam_Football_Federation_logo.svg); no freely-licensed version exists on Wikimedia Commons. Bundled non-free at the repository owner's explicit direction (2026-08) after the copyright position was put to them, exactly as the non-free passport covers are. Replace it if a freely-licensed version appears on Commons.",
+          "design": "The crest of the Vietnam Football Federation — a football over a red disc bearing the gold star of the national flag, with the letters VFF.",
+          "source": "https://en.wikipedia.org/wiki/Vietnam_Football_Federation",
+          "sha256": "de6359456024255ecc835c3a24f19f8834c0c883a8b1c25889dc56ab458d668e",
+          "fetched": "2026-08-18"
         }
       ],
       "independence": {
