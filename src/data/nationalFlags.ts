@@ -118,12 +118,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "af-official-national", category: "official", name: "Flag of Afghanistan", from: 2021, to: 9999, primary: true, path: "flags/af.svg", design: "The national flag of Afghanistan, in the form adopted in 2021.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
     { id: "af-republic", category: "historical", name: "Flag of the Islamic Republic of Afghanistan", from: 2004, to: 2021, path: "national-flags/af/af-republic.svg", design: "The black-red-green vertical tricolour bearing the white national emblem, flown by the Islamic Republic until the Taliban takeover in August 2021 restored the white Islamic Emirate flag.", source: "https://en.wikipedia.org/wiki/Flag_of_Afghanistan" },
     { id: "af-passport", category: "passport", name: "Passport of Afghanistan", path: "national-flags/af/af-passport.webp", design: "The cover of the Afghanistan passport.", source: "https://gicg.net/passport/af/" },
+    { id: "af-football-crest", category: "footballcrest", name: "Crest of the Afghanistan national football team", path: "national-flags/af/af-football-crest.png", design: "The crest of the Afghanistan national football team.", source: "https://en.wikipedia.org/wiki/Afghanistan_national_football_team" },
   ],
   "AG": [
     { id: "ag-official-national", category: "official", name: "Flag of Antigua and Barbuda", from: 1967, to: 9999, primary: true, path: "flags/ag.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda" },
     { id: "ag-uk", category: "historical", name: "Flag of the United Kingdom", from: 1632, to: 1981, sovereign: "the United Kingdom", path: "national-flags/ag/ag-uk.svg", design: "The Union Flag, flown while Antigua and Barbuda was a British colony.", source: "https://en.wikipedia.org/wiki/History_of_Antigua_and_Barbuda" },
     { id: "ag-arms", category: "coatofarms", name: "Coat of arms of Antigua and Barbuda", from: 1967, to: 9999, path: "national-flags/ag/ag-arms.svg", design: "A sugar mill and rising sun over the sea, held by two deer, crested with a pineapple.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Antigua_and_Barbuda" },
     { id: "ag-passport", category: "passport", name: "Passport of Antigua and Barbuda", path: "national-flags/ag/ag-passport.webp", design: "The cover of the Antigua and Barbuda passport.", source: "https://gicg.net/passport/ag/" },
+    { id: "ag-football-crest", category: "footballcrest", name: "Crest of the Antigua and Barbuda national football team", path: "national-flags/ag/ag-football-crest.png", design: "The crest of the Antigua and Barbuda national football team.", source: "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_national_football_team" },
   ],
   "AI": [
     { id: "ai-official-national", category: "official", name: "Flag of Anguilla", from: 1990, to: 9999, path: "flags/ai.svg", design: "A blue ensign with the Union Flag in the canton and Anguilla's badge — three orange dolphins leaping in a circle above blue water — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Anguilla" },
@@ -171,6 +173,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ar-civil", category: "civilstate", name: "Civil flag of Argentina", from: 1861, to: 9999, path: "national-flags/ar/argentina-civil.svg", design: "The light-blue and white triband without the Sun of May — the optional civil flag, beside the state flag that carries the sun.", source: "https://en.wikipedia.org/wiki/List_of_Argentine_flags" },
     { id: "ar-arms", category: "coatofarms", name: "Coat of arms of Argentina", from: 1813, to: 9999, path: "national-flags/ar/argentina-arms.svg", design: "An oval party per fess azure and argent, two clasped hands holding a pike topped by a Phrygian cap, beneath the Sun of May and between laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Argentina" },
     { id: "ar-passport", category: "passport", name: "Passport of Argentina", path: "national-flags/ar/ar-passport.webp", design: "The cover of the Argentina passport.", source: "https://gicg.net/passport/ar/" },
+    { id: "ar-football-crest", category: "footballcrest", name: "Crest of the Argentina national football team", path: "national-flags/ar/ar-football-crest.svg", design: "The crest of the Argentina national football team.", source: "https://en.wikipedia.org/wiki/Argentina_national_football_team" },
   ],
   "AS": [
     { id: "as-official-national", category: "official", name: "Flag of American Samoa", from: 1960, to: 9999, path: "flags/sub/US/US-AS.svg", design: "A red-edged white triangle on blue bearing a bald eagle that holds a Samoan war club (uatogi) and fly-whisk (fue).", source: "https://en.wikipedia.org/wiki/Flag_of_American_Samoa" },
@@ -182,6 +185,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "at-state", category: "civilstate", name: "State flag of Austria", from: 1955, to: 9999, path: "national-flags/at/austria-state.svg", design: "The red-white-red triband charged with the federal eagle — the state flag, war flag and naval ensign, beside the plain civil flag.", source: "https://en.wikipedia.org/wiki/List_of_Austrian_flags" },
     { id: "at-arms", category: "coatofarms", name: "Coat of arms of Austria", from: 1945, to: 9999, path: "national-flags/at/at-arms.svg", design: "A black eagle wearing a mural crown, holding a hammer and a sickle, with broken chains about its talons and a red-white-red shield on its breast.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Austria" },
     { id: "at-passport", category: "passport", name: "Passport of Austria", path: "national-flags/at/at-passport.webp", design: "The cover of the Austria passport.", source: "https://gicg.net/passport/at/" },
+    { id: "at-football-crest", category: "footballcrest", name: "Crest of the Austria national football team", path: "national-flags/at/at-football-crest.svg", design: "The crest of the Austria national football team.", source: "https://en.wikipedia.org/wiki/Austria_national_football_team" },
   ],
   "AU": [
     { id: "au-official-national", category: "official", name: "Australian National Flag", from: 1908, to: 9999, primary: true, path: "flags/au.svg", design: "Proclaimed under the Flags Act 1953 as the flag of the Commonwealth of Australia.", source: "https://en.wikipedia.org/wiki/List_of_Australian_flags" },
@@ -219,6 +223,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "az-president", category: "standard", name: "Standard of the President of Azerbaijan", from: 1992, to: 9999, path: "national-flags/az/azerbaijan-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Azerbaijani_flags" },
     { id: "az-emblem", category: "coatofarms", name: "Emblem of Azerbaijan", from: 1993, to: 9999, path: "national-flags/az/azerbaijan-emblem.svg", design: "A stylised flame on a shield in the colours of the flag, over crossed wheat and an oak bough.", source: "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan" },
     { id: "az-passport", category: "passport", name: "Passport of Azerbaijan", path: "national-flags/az/az-passport.webp", design: "The cover of the Azerbaijan passport.", source: "https://gicg.net/passport/az/" },
+    { id: "az-football-crest", category: "footballcrest", name: "Crest of the Azerbaijan national football team", path: "national-flags/az/az-football-crest.png", design: "The crest of the Azerbaijan national football team.", source: "https://en.wikipedia.org/wiki/Azerbaijan_national_football_team" },
   ],
   "BA": [
     { id: "ba-official-national", category: "official", name: "Flag of Bosnia and Herzegovina", from: 1998, to: 9999, primary: true, path: "flags/ba.svg", design: "The national flag of Bosnia and Herzegovina, in the form adopted in 1998.", source: "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina" },
@@ -227,6 +232,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ba-austro", category: "historical", name: "Flag of the Condominium of Bosnia and Herzegovina", from: 1878, to: 1918, sovereign: "Austria-Hungary", path: "national-flags/ba/bosnia-austro.svg", design: "The red-and-yellow flag of the Austro-Hungarian condominium, after the 1878 occupation ended Ottoman rule.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Bosnia_and_Herzegovina" },
     { id: "ba-arms", category: "coatofarms", name: "Coat of arms of Bosnia and Herzegovina", from: 1998, to: 9999, path: "national-flags/ba/bosnia-arms.svg", design: "A blue three-pointed shield with a yellow triangle and a diagonal row of white stars.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bosnia_and_Herzegovina" },
     { id: "ba-passport", category: "passport", name: "Passport of Bosnia and Herzegovina", path: "national-flags/ba/ba-passport.webp", design: "The cover of the Bosnia and Herzegovina passport.", source: "https://gicg.net/passport/ba/" },
+    { id: "ba-football-crest", category: "footballcrest", name: "Crest of the Bosnia and Herzegovina national football team", path: "national-flags/ba/ba-football-crest.svg", design: "The crest of the Bosnia and Herzegovina national football team.", source: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team" },
   ],
   "BB": [
     { id: "bb-official-national", category: "official", name: "Flag of Barbados", from: 1966, to: 9999, primary: true, path: "flags/bb.svg", design: "The national flag of Barbados, in the form adopted in 1966.", source: "https://en.wikipedia.org/wiki/Flag_of_Barbados" },
@@ -261,6 +267,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "be-naval-jack", category: "maritime", name: "Naval jack of Belgium", from: 1831, to: 9999, path: "national-flags/be/belgium-naval-jack.svg", design: "The jack of the Belgian Navy.", source: "https://en.wikipedia.org/wiki/List_of_Belgian_flags" },
     { id: "be-arms", category: "coatofarms", name: "Coat of arms of Belgium", from: 1837, to: 9999, path: "national-flags/be/be-arms.svg", design: "A golden lion rampant on black, crowned and borne by two lions, over the motto “Unity makes strength.”", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belgium" },
     { id: "be-passport", category: "passport", name: "Passport of Belgium", path: "national-flags/be/be-passport.webp", design: "The cover of the Belgium passport.", source: "https://gicg.net/passport/be/" },
+    { id: "be-football-crest", category: "footballcrest", name: "Crest of the Belgium national football team", path: "national-flags/be/be-football-crest.svg", design: "The crest of the Belgium national football team.", source: "https://en.wikipedia.org/wiki/Belgium_national_football_team" },
   ],
   "BF": [
     { id: "bf-official-national", category: "official", name: "Flag of Burkina Faso", from: 1984, to: 9999, primary: true, path: "flags/bf.svg", design: "The national flag, adopted in 1984 when Upper Volta was renamed Burkina Faso.", source: "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso" },
@@ -276,6 +283,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bg-naval", category: "maritime", name: "Naval ensign of Bulgaria", from: 2005, to: 9999, path: "national-flags/bg/bg-naval.svg", design: "The naval ensign of the Bulgarian Navy.", source: "https://en.wikipedia.org/wiki/Naval_ensign_of_Bulgaria" },
     { id: "bg-arms", category: "coatofarms", name: "Coat of arms of Bulgaria", path: "national-flags/bg/bg-arms.svg", design: "A crowned golden lion rampant on a dark-red shield, held by two crowned lions.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bulgaria" },
     { id: "bg-passport", category: "passport", name: "Passport of Bulgaria", path: "national-flags/bg/bg-passport.webp", design: "The cover of the Bulgaria passport.", source: "https://gicg.net/passport/bg/" },
+    { id: "bg-football-crest", category: "footballcrest", name: "Crest of the Bulgaria national football team", path: "national-flags/bg/bg-football-crest.png", design: "The crest of the Bulgaria national football team.", source: "https://en.wikipedia.org/wiki/Bulgaria_national_football_team" },
   ],
   "BH": [
     { id: "bh-official-national", category: "official", name: "Flag of Bahrain", from: 2002, to: 9999, primary: true, path: "flags/bh.svg", design: "The national flag, in the form adopted in 2002.", source: "https://en.wikipedia.org/wiki/Flag_of_Bahrain" },
@@ -284,6 +292,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bh-uk", category: "historical", name: "Flag of the United Kingdom", from: 1861, to: 1971, sovereign: "the United Kingdom", path: "national-flags/bh/bh-uk.svg", design: "The Union Flag, flown while Bahrain was a British protectorate.", source: "https://en.wikipedia.org/wiki/History_of_Bahrain" },
     { id: "bh-arms", category: "coatofarms", name: "Coat of arms of Bahrain", from: 1932, to: 9999, path: "national-flags/bh/bh-arms.svg", design: "The serrated red-and-white shield of the flag, on red and white mantling.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Bahrain" },
     { id: "bh-passport", category: "passport", name: "Passport of Bahrain", path: "national-flags/bh/bh-passport.webp", design: "The cover of the Bahrain passport.", source: "https://gicg.net/passport/bh/" },
+    { id: "bh-football-crest", category: "footballcrest", name: "Crest of the Bahrain national football team", path: "national-flags/bh/bh-football-crest.svg", design: "The crest of the Bahrain national football team.", source: "https://en.wikipedia.org/wiki/Bahrain_national_football_team" },
   ],
   "BI": [
     { id: "bi-official-national", category: "official", name: "Flag of Burundi", from: 1967, to: 9999, primary: true, path: "flags/bi.svg", design: "The national flag, in the form adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Burundi" },
@@ -361,6 +370,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bs-governor-general", category: "standard", name: "Flag of the Governor-General of the Bahamas", from: 1973, to: 9999, path: "national-flags/bs/bahamas-governor-general.svg", design: "A blue field with the royal crest and the country's name.", source: "https://en.wikipedia.org/wiki/List_of_Bahamian_flags" },
     { id: "bs-arms", category: "coatofarms", name: "Coat of arms of the Bahamas", from: 1971, to: 9999, path: "national-flags/bs/bahamas-arms.svg", design: "Columbus's ship the Santa María beneath a sun, on a shield held by a marlin and a flamingo, crested with a conch shell and palm fronds, over the motto Pirates Expelled, Commerce Restored.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Bahamas" },
     { id: "bs-passport", category: "passport", name: "Passport of Bahamas", path: "national-flags/bs/bs-passport.webp", design: "The cover of the Bahamas passport.", source: "https://gicg.net/passport/bs/" },
+    { id: "bs-football-crest", category: "footballcrest", name: "Crest of the Bahamas national football team", path: "national-flags/bs/bs-football-crest.png", design: "The crest of the Bahamas national football team.", source: "https://en.wikipedia.org/wiki/Bahamas_national_football_team" },
   ],
   "BT": [
     { id: "bt-official-national", category: "official", name: "Flag of Bhutan", from: 1969, to: 9999, primary: true, path: "flags/bt.svg", design: "The national flag, standardised in 1969.", source: "https://en.wikipedia.org/wiki/Flag_of_Bhutan" },
@@ -394,6 +404,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "bz-uk", category: "historical", name: "Flag of the United Kingdom", from: 1862, to: 1981, sovereign: "the United Kingdom", path: "national-flags/bz/bz-uk.svg", design: "The Union Flag, flown while the territory was the British colony of British Honduras.", source: "https://en.wikipedia.org/wiki/British_Honduras" },
     { id: "bz-arms", category: "coatofarms", name: "Coat of arms of Belize", from: 1981, to: 9999, path: "national-flags/bz/bz-arms.svg", design: "A mahogany tree above a shield of woodcutter's tools and a ship, held by two woodcutters.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Belize" },
     { id: "bz-passport", category: "passport", name: "Passport of Belize", path: "national-flags/bz/bz-passport.webp", design: "The cover of the Belize passport.", source: "https://gicg.net/passport/bz/" },
+    { id: "bz-football-crest", category: "footballcrest", name: "Crest of the Belize national football team", path: "national-flags/bz/bz-football-crest.svg", design: "The crest of the Belize national football team.", source: "https://en.wikipedia.org/wiki/Belize_national_football_team" },
   ],
   "CA": [
     { id: "ca-official-national", category: "official", name: "Flag of Canada", from: 1965, to: 9999, primary: true, path: "flags/ca.svg", design: "The national flag of Canada, in the form adopted in 1965.", source: "https://en.wikipedia.org/wiki/Flag_of_Canada" },
@@ -444,12 +455,14 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ch-civil-ensign", category: "maritime", name: "Civil and state ensign of Switzerland", from: 1882, to: 9999, path: "national-flags/ch/switzerland-civil-ensign.svg", design: "The Swiss cross in a rectangular 2:3 ensign — the seagoing form of a flag that is square on land.", source: "https://en.wikipedia.org/wiki/List_of_Swiss_flags" },
     { id: "ch-arms", category: "coatofarms", name: "Coat of arms of Switzerland", from: 1889, to: 9999, path: "national-flags/ch/ch-arms.svg", design: "A white couped cross on a red triangular shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Switzerland" },
     { id: "ch-passport", category: "passport", name: "Passport of Switzerland", path: "national-flags/ch/ch-passport.webp", design: "The cover of the Switzerland passport.", source: "https://gicg.net/passport/ch/" },
+    { id: "ch-football-crest", category: "footballcrest", name: "Crest of the Switzerland national football team", path: "national-flags/ch/ch-football-crest.svg", design: "The crest of the Switzerland national football team.", source: "https://en.wikipedia.org/wiki/Switzerland_national_football_team" },
   ],
   "CI": [
     { id: "ci-official-national", category: "official", name: "Flag of Ivory Coast", from: 1959, to: 9999, primary: true, path: "flags/ci.svg", design: "The national flag of Ivory Coast, adopted in 1959.", source: "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast" },
     { id: "ci-french", category: "historical", name: "Flag of France", from: 1893, to: 1959, sovereign: "France", path: "national-flags/ci/ci-french.svg", design: "The French Tricolour, flown over Ivory Coast under French colonial rule.", source: "https://en.wikipedia.org/wiki/French_colonial_empire" },
     { id: "ci-arms", category: "coatofarms", name: "Coat of arms of Ivory Coast", from: 1960, to: 9999, path: "national-flags/ci/ci-arms.svg", design: "A rising sun over an elephant's head, above a banner with the country's name.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ivory_Coast" },
     { id: "ci-passport", category: "passport", name: "Passport of Ivory Coast", path: "national-flags/ci/ci-passport.webp", design: "The cover of the Ivory Coast passport.", source: "https://gicg.net/passport/ci/" },
+    { id: "ci-football-crest", category: "footballcrest", name: "Crest of the Côte d’Ivoire national football team", path: "national-flags/ci/ci-football-crest.svg", design: "The crest of the Côte d’Ivoire national football team.", source: "https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team" },
   ],
   "CK": [
     { id: "ck-official-national", category: "official", name: "Flag of the Cook Islands", from: 1979, to: 9999, path: "flags/ck.svg", design: "A blue ensign with the Union Flag in the canton and a ring of fifteen white stars in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Cook_Islands" },
@@ -479,6 +492,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cm-bornu", category: "historical", name: "Flag of the Bornu Empire", from: 1380, to: 1884, priorPolity: "the Bornu Empire", path: "national-flags/cm/cameroon-bornu.svg", design: "The flag of the empire that held the country's far north for five centuries before European rule.", source: "https://en.wikipedia.org/wiki/List_of_Cameroonian_flags" },
     { id: "cm-arms", category: "coatofarms", name: "Coat of arms of Cameroon", from: 1986, to: 9999, path: "national-flags/cm/cameroon-arms.svg", design: "A shield in the flag's colours bearing a map of the country and the scales of justice, over crossed fasces, between two banners.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cameroon" },
     { id: "cm-passport", category: "passport", name: "Passport of Cameroon", path: "national-flags/cm/cm-passport.webp", design: "The cover of the Cameroon passport.", source: "https://gicg.net/passport/cm/" },
+    { id: "cm-football-crest", category: "footballcrest", name: "Crest of the Cameroon national football team", path: "national-flags/cm/cm-football-crest.png", design: "The crest of the Cameroon national football team.", source: "https://en.wikipedia.org/wiki/Cameroon_national_football_team" },
   ],
   "CN": [
     { id: "cn-official-national", category: "official", name: "Flag of the People's Republic of China", from: 1949, to: 9999, primary: true, path: "flags/cn.svg", design: "The national flag, hoisted 1 October 1949.", source: "https://en.wikipedia.org/wiki/Flag_of_China" },
@@ -530,6 +544,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cu-president-1929", category: "standard", name: "Standard of the President of Cuba (1929–1959)", from: 1929, to: 1959, path: "national-flags/cu/cuba-president-1929.svg", design: "The presidential standard of the pre-revolutionary republic.", source: "https://en.wikipedia.org/wiki/List_of_Cuban_flags" },
     { id: "cu-arms", category: "coatofarms", name: "Coat of arms of Cuba", from: 1906, to: 9999, path: "national-flags/cu/cuba-arms.svg", design: "A shield of three fields before a fasces crowned with a Phrygian cap, supported by an oak branch and a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cuba" },
     { id: "cu-passport", category: "passport", name: "Passport of Cuba", path: "national-flags/cu/cu-passport.webp", design: "The cover of the Cuba passport.", source: "https://gicg.net/passport/cu/" },
+    { id: "cu-football-crest", category: "footballcrest", name: "Crest of the Cuba national football team", path: "national-flags/cu/cu-football-crest.png", design: "The crest of the Cuba national football team.", source: "https://en.wikipedia.org/wiki/Cuba_national_football_team" },
   ],
   "CV": [
     { id: "cv-official-national", category: "official", name: "Flag of Cape Verde", from: 1992, to: 9999, primary: true, path: "flags/cv.svg", design: "The national flag, adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde" },
@@ -551,6 +566,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cy-president", category: "standard", name: "Presidential Standard of Cyprus", from: 2006, to: 9999, path: "national-flags/cy/cyprus-president.svg", design: "A field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Cypriot_flags" },
     { id: "cy-arms", category: "coatofarms", name: "Coat of arms of Cyprus", from: 1960, to: 9999, path: "national-flags/cy/cyprus-arms.svg", design: "A white dove carrying an olive branch above the year 1960, on a copper-coloured shield within an olive wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Cyprus" },
     { id: "cy-passport", category: "passport", name: "Passport of Cyprus", path: "national-flags/cy/cy-passport.webp", design: "The cover of the Cyprus passport.", source: "https://gicg.net/passport/cy/" },
+    { id: "cy-football-crest", category: "footballcrest", name: "Crest of the Cyprus national football team", path: "national-flags/cy/cy-football-crest.png", design: "The crest of the Cyprus national football team.", source: "https://en.wikipedia.org/wiki/Cyprus_national_football_team" },
   ],
   "CZ": [
     { id: "cz-official-national", category: "official", name: "Flag of Czechia", from: 1993, to: 9999, primary: true, path: "flags/cz.svg", design: "The national flag of Czechia, in the form adopted in 1993.", source: "https://en.wikipedia.org/wiki/Flag_of_Czechia" },
@@ -559,6 +575,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "cz-president", category: "standard", name: "Flag of the President of the Czech Republic", from: 1993, to: 9999, path: "national-flags/cz/czechia-president.svg", design: "A white-bordered square bearing the greater coat of arms and the motto Pravda vítězí.", source: "https://en.wikipedia.org/wiki/List_of_Czech_flags" },
     { id: "cz-arms", category: "coatofarms", name: "Greater coat of arms of the Czech Republic", from: 1993, to: 9999, path: "national-flags/cz/czechia-arms.svg", design: "A quartered shield: the Bohemian double-tailed lion twice, the Moravian eagle, and the Silesian eagle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Czech_Republic" },
     { id: "cz-passport", category: "passport", name: "Passport of Czechia", path: "national-flags/cz/cz-passport.webp", design: "The cover of the Czechia passport.", source: "https://gicg.net/passport/cz/" },
+    { id: "cz-football-crest", category: "footballcrest", name: "Crest of the Czechia national football team", path: "national-flags/cz/cz-football-crest.svg", design: "The crest of the Czechia national football team.", source: "https://en.wikipedia.org/wiki/Czechia_national_football_team" },
   ],
   "DE": [
     { id: "de-official-national", category: "official", name: "Flag of Germany", from: 1919, to: 9999, primary: true, path: "flags/de.svg", design: "The national flag of Germany, in the form adopted in 1919.", source: "https://en.wikipedia.org/wiki/Flag_of_Germany" },
@@ -570,6 +587,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "de-state", category: "civilstate", name: "State flag of Germany", from: 1950, to: 9999, path: "national-flags/de/germany-state.svg", design: "The black-red-gold tricolour charged with the federal shield and its eagle — flown by federal authorities, while the plain tricolour is the civil flag.", source: "https://en.wikipedia.org/wiki/List_of_German_flags" },
     { id: "de-arms", category: "coatofarms", name: "Coat of arms of Germany", from: 1950, to: 9999, path: "national-flags/de/de-arms.svg", design: "The Bundesadler — a black eagle with red beak and claws on a golden field.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Germany" },
     { id: "de-passport", category: "passport", name: "Passport of Germany", path: "national-flags/de/de-passport.webp", design: "The cover of the Germany passport.", source: "https://gicg.net/passport/de/" },
+    { id: "de-football-crest", category: "footballcrest", name: "Crest of the Germany national football team", path: "national-flags/de/de-football-crest.svg", design: "The crest of the Germany national football team.", source: "https://en.wikipedia.org/wiki/Germany_national_football_team" },
   ],
   "DJ": [
     { id: "dj-official-national", category: "official", name: "Flag of Djibouti", from: 1977, to: 9999, primary: true, path: "flags/dj.svg", design: "The national flag, adopted at independence in 1977.", source: "https://en.wikipedia.org/wiki/Flag_of_Djibouti" },
@@ -607,6 +625,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "dz-president", category: "standard", name: "Presidential standard of Algeria", from: 1962, to: 9999, path: "national-flags/dz/algeria-president.svg", design: "The national flag charged with the presidential emblem.", source: "https://en.wikipedia.org/wiki/List_of_Algerian_flags" },
     { id: "dz-emblem", category: "coatofarms", name: "National emblem of Algeria", from: 1976, to: 9999, path: "national-flags/dz/algeria-emblem.svg", design: "A hand of Fatima before the Atlas Mountains under a rising sun, with buildings and plants below, within a crescent.", source: "https://en.wikipedia.org/wiki/Emblem_of_Algeria" },
     { id: "dz-passport", category: "passport", name: "Passport of Algeria", path: "national-flags/dz/dz-passport.webp", design: "The cover of the Algeria passport.", source: "https://gicg.net/passport/dz/" },
+    { id: "dz-football-crest", category: "footballcrest", name: "Crest of the Algeria national football team", path: "national-flags/dz/dz-football-crest.png", design: "The crest of the Algeria national football team.", source: "https://en.wikipedia.org/wiki/Algeria_national_football_team" },
   ],
   "EC": [
     { id: "ec-official-national", category: "official", name: "Flag of Ecuador", from: 1900, to: 9999, primary: true, path: "flags/ec.svg", design: "The national flag of Ecuador, in the form adopted in 1900.", source: "https://en.wikipedia.org/wiki/Flag_of_Ecuador" },
@@ -649,6 +668,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "eg-royal", category: "standard", name: "Standard of the King of Egypt", from: 1923, to: 1953, path: "national-flags/eg/egypt-royal.svg", design: "The royal standard of the Kingdom of Egypt.", source: "https://en.wikipedia.org/wiki/List_of_Egyptian_flags" },
     { id: "eg-arms", category: "coatofarms", name: "Coat of arms of Egypt", from: 1984, to: 9999, path: "national-flags/eg/egypt-arms.svg", design: "The Eagle of Saladin, bearing a shield in the flag's colours and standing on a scroll with the name of the state.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Egypt" },
     { id: "eg-passport", category: "passport", name: "Passport of Egypt", path: "national-flags/eg/eg-passport.webp", design: "The cover of the Egypt passport.", source: "https://gicg.net/passport/eg/" },
+    { id: "eg-football-crest", category: "footballcrest", name: "Crest of the Egypt national football team", path: "national-flags/eg/eg-football-crest.svg", design: "The crest of the Egypt national football team.", source: "https://en.wikipedia.org/wiki/Egypt_national_football_team" },
   ],
   "ER": [
     { id: "er-official-national", category: "official", name: "Flag of Eritrea", from: 1995, to: 9999, primary: true, path: "flags/er.svg", design: "The national flag, adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_Eritrea" },
@@ -680,6 +700,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "et-abyssinia", category: "historical", name: "Flag of the Ethiopian Empire (1270–1853)", from: 1270, to: 1853, priorPolity: "the Ethiopian Empire under the Solomonic dynasty", path: "national-flags/et/ethiopia-abyssinia.svg", design: "The banner of the Solomonic dynasty, before the tricolour.", source: "https://en.wikipedia.org/wiki/List_of_Ethiopian_flags" },
     { id: "et-arms", category: "coatofarms", name: "Emblem of Ethiopia", from: 1996, to: 9999, path: "national-flags/et/et-arms.svg", design: "A golden interlaced pentagram radiating rays of light on a blue disc.", source: "https://en.wikipedia.org/wiki/Emblem_of_Ethiopia" },
     { id: "et-passport", category: "passport", name: "Passport of Ethiopia", path: "national-flags/et/et-passport.webp", design: "The cover of the Ethiopia passport.", source: "https://gicg.net/passport/et/" },
+    { id: "et-football-crest", category: "footballcrest", name: "Crest of the Ethiopia national football team", path: "national-flags/et/et-football-crest.svg", design: "The crest of the Ethiopia national football team.", source: "https://en.wikipedia.org/wiki/Ethiopia_national_football_team" },
   ],
   "FI": [
     { id: "fi-official-national", category: "official", name: "Flag of Finland", from: 1918, to: 9999, primary: true, path: "flags/fi.svg", design: "The national flag of Finland, in the form adopted in 1918.", source: "https://en.wikipedia.org/wiki/Flag_of_Finland" },
@@ -699,6 +720,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fj-uk", category: "historical", name: "Flag of the United Kingdom", from: 1874, to: 1970, sovereign: "the United Kingdom", path: "national-flags/fj/fj-uk.svg", design: "The Union Flag, flown while Fiji was a British Crown colony.", source: "https://en.wikipedia.org/wiki/Colony_of_Fiji" },
     { id: "fj-arms", category: "coatofarms", name: "Coat of arms of Fiji", from: 1908, to: 9999, path: "national-flags/fj/fj-arms.svg", design: "A shield of the St George's cross with a lion and island crops, held by two Fijian warriors.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Fiji" },
     { id: "fj-passport", category: "passport", name: "Passport of Fiji", path: "national-flags/fj/fj-passport.webp", design: "The cover of the Fiji passport.", source: "https://gicg.net/passport/fj/" },
+    { id: "fj-football-crest", category: "footballcrest", name: "Crest of the Fiji national football team", path: "national-flags/fj/fj-football-crest.svg", design: "The crest of the Fiji national football team.", source: "https://en.wikipedia.org/wiki/Fiji_national_football_team" },
   ],
   "FK": [
     { id: "fk-official-national", category: "official", name: "Flag of the Falkland Islands", from: 1948, to: 9999, path: "flags/fk.svg", design: "A blue ensign with the Union Flag in the canton and the Falklands' coat of arms — the ram Warrah above the ship Desire on a wavy sea — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Falkland_Islands" },
@@ -710,6 +732,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "fm-japan", category: "historical", name: "Flag of Japan", from: 1920, to: 1944, sovereign: "Japan", path: "national-flags/fm/fm-japan.svg", design: "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
     { id: "fm-arms", category: "coatofarms", name: "Seal of the Federated States of Micronesia", from: 1986, to: 9999, path: "national-flags/fm/fm-arms.svg", design: "A sprouting coconut floating on the ocean beneath an arc of four white stars, with the motto and the year 1979.", source: "https://en.wikipedia.org/wiki/Seal_of_the_Federated_States_of_Micronesia" },
     { id: "fm-passport", category: "passport", name: "Passport of the Federated States of Micronesia", path: "national-flags/fm/fm-passport.webp", design: "The cover of the the Federated States of Micronesia passport.", source: "https://gicg.net/passport/fm/" },
+    { id: "fm-football-crest", category: "footballcrest", name: "Crest of the Micronesia national football team", path: "national-flags/fm/fm-football-crest.png", design: "The crest of the Micronesia national football team.", source: "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia_national_football_team" },
   ],
   "FO": [
     { id: "fo-official-national", category: "official", name: "Flag of the Faroe Islands", from: 1948, to: 9999, path: "flags/fo.svg", design: "Merkið — a red Nordic cross fimbriated in blue on a white field.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands" },
@@ -770,6 +793,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ge-president", category: "standard", name: "Flag of the President of Georgia", from: 2020, to: 9999, path: "national-flags/ge/georgia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Georgian_flags" },
     { id: "ge-arms", category: "coatofarms", name: "Coat of arms of Georgia", from: 2004, to: 9999, path: "national-flags/ge/georgia-arms.svg", design: "Saint George on horseback slaying a dragon, on a red shield beneath the Iberian crown, held by two golden lions over the motto Strength is in Unity.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Georgia" },
     { id: "ge-passport", category: "passport", name: "Passport of Georgia", path: "national-flags/ge/ge-passport.webp", design: "The cover of the Georgia passport.", source: "https://gicg.net/passport/ge/" },
+    { id: "ge-football-crest", category: "footballcrest", name: "Crest of the Georgia national football team", path: "national-flags/ge/ge-football-crest.svg", design: "The crest of the Georgia national football team.", source: "https://en.wikipedia.org/wiki/Georgia_national_football_team" },
   ],
   "GG": [
     { id: "gg-official-national", category: "official", name: "Flag of Guernsey", from: 1985, to: 9999, path: "flags/gg.svg", design: "A red St George's cross on white with a gold Norman cross set within it.", source: "https://en.wikipedia.org/wiki/Flag_of_Guernsey" },
@@ -789,6 +813,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gh-president", category: "standard", name: "Standard of the President of Ghana", from: 1966, to: 9999, path: "national-flags/gh/ghana-president.svg", design: "The national tricolour charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Ghanaian_flags" },
     { id: "gh-arms", category: "coatofarms", name: "Coat of arms of Ghana", from: 1957, to: 9999, path: "national-flags/gh/ghana-arms.svg", design: "A quartered shield on a green St George's Cross, supported by two golden eagles, crested with the black star, over the motto Freedom and Justice.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Ghana" },
     { id: "gh-passport", category: "passport", name: "Passport of Ghana", path: "national-flags/gh/gh-passport.webp", design: "The cover of the Ghana passport.", source: "https://gicg.net/passport/gh/" },
+    { id: "gh-football-crest", category: "footballcrest", name: "Crest of the Ghana national football team", path: "national-flags/gh/gh-football-crest.svg", design: "The crest of the Ghana national football team.", source: "https://en.wikipedia.org/wiki/Ghana_national_football_team" },
   ],
   "GI": [
     { id: "gi-official-national", category: "official", name: "Flag of Gibraltar", from: 1502, to: 9999, path: "flags/gi.svg", design: "A white field over a red band, bearing a red three-towered castle with a golden key hanging from it — the arms of Gibraltar as a banner.", source: "https://en.wikipedia.org/wiki/Flag_of_Gibraltar" },
@@ -809,6 +834,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gn-french", category: "historical", name: "Flag of France", from: 1891, to: 1958, sovereign: "France", path: "national-flags/gn/gn-french.svg", design: "The French Tricolour, flown over French Guinea as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_Guinea" },
     { id: "gn-arms", category: "coatofarms", name: "Coat of arms of Guinea", from: 1958, to: 9999, path: "national-flags/gn/gn-arms.svg", design: "A dove holding an olive branch, above a shield in the national colours and a ribbon with the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guinea" },
     { id: "gn-passport", category: "passport", name: "Passport of Guinea", path: "national-flags/gn/gn-passport.webp", design: "The cover of the Guinea passport.", source: "https://gicg.net/passport/gn/" },
+    { id: "gn-football-crest", category: "footballcrest", name: "Crest of the Guinea national football team", path: "national-flags/gn/gn-football-crest.png", design: "The crest of the Guinea national football team.", source: "https://en.wikipedia.org/wiki/Guinea_national_football_team" },
   ],
   "GQ": [
     { id: "gq-official-national", category: "official", name: "Flag of Equatorial Guinea", from: 1968, to: 9999, primary: true, path: "flags/gq.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea" },
@@ -835,6 +861,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "gt-spanish", category: "historical", name: "Cross of Burgundy flag", from: 1524, to: 1821, sovereign: "Spain", path: "national-flags/gt/gt-spain.svg", design: "The Cross of Burgundy, the flag Spain flew across its American empire, over the Captaincy General of Guatemala until independence.", source: "https://en.wikipedia.org/wiki/Captaincy_General_of_Guatemala" },
     { id: "gt-arms", category: "coatofarms", name: "Coat of arms of Guatemala", from: 1871, to: 9999, path: "national-flags/gt/gt-arms.svg", design: "A resplendent quetzal on a scroll with the date of independence, over crossed rifles and swords in a laurel wreath.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Guatemala" },
     { id: "gt-passport", category: "passport", name: "Passport of Guatemala", path: "national-flags/gt/gt-passport.webp", design: "The cover of the Guatemala passport.", source: "https://gicg.net/passport/gt/" },
+    { id: "gt-football-crest", category: "footballcrest", name: "Crest of the Guatemala national football team", path: "national-flags/gt/gt-football-crest.svg", design: "The crest of the Guatemala national football team.", source: "https://en.wikipedia.org/wiki/Guatemala_national_football_team" },
   ],
   "GU": [
     { id: "gu-official-national", category: "official", name: "Flag of Guam", from: 1948, to: 9999, path: "flags/sub/US/US-GU.svg", design: "A dark-blue field with a red border, bearing the slingstone-shaped territorial seal in the centre.", source: "https://en.wikipedia.org/wiki/Flag_of_Guam" },
@@ -885,6 +912,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "hr-president", category: "standard", name: "Standard of the President of Croatia", from: 1990, to: 9999, path: "national-flags/hr/croatia-president.svg", design: "A blue square bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Croatian_flags" },
     { id: "hr-arms", category: "coatofarms", name: "Coat of arms of Croatia", from: 1990, to: 9999, path: "national-flags/hr/croatia-arms.svg", design: "A red-and-white chequy shield of 25 fields beneath a crown of five smaller shields.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Croatia" },
     { id: "hr-passport", category: "passport", name: "Passport of Croatia", path: "national-flags/hr/hr-passport.webp", design: "The cover of the Croatia passport.", source: "https://gicg.net/passport/hr/" },
+    { id: "hr-football-crest", category: "footballcrest", name: "Crest of the Croatia national football team", path: "national-flags/hr/hr-football-crest.svg", design: "The crest of the Croatia national football team.", source: "https://en.wikipedia.org/wiki/Croatia_national_football_team" },
   ],
   "HT": [
     { id: "ht-official-national", category: "official", name: "Flag of Haiti", from: 1986, to: 9999, primary: true, path: "flags/ht.svg", design: "The national flag, in the form restored in 1986.", source: "https://en.wikipedia.org/wiki/Flag_of_Haiti" },
@@ -987,6 +1015,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ir-naval-jack", category: "maritime", name: "Naval jack of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-naval-jack.svg", design: "A dark blue field bearing a yellow national emblem.", source: "https://en.wikipedia.org/wiki/List_of_Iranian_flags" },
     { id: "ir-emblem", category: "coatofarms", name: "Emblem of Iran", from: 1980, to: 9999, path: "national-flags/ir/iran-emblem.svg", design: "Four crescents and a sword beneath a shadda, in the shape of a tulip.", source: "https://en.wikipedia.org/wiki/Emblem_of_Iran" },
     { id: "ir-passport", category: "passport", name: "Passport of Iran", path: "national-flags/ir/ir-passport.webp", design: "The cover of the Iran passport.", source: "https://gicg.net/passport/ir/" },
+    { id: "ir-football-crest", category: "footballcrest", name: "Crest of the Iran national football team", path: "national-flags/ir/ir-football-crest.svg", design: "The crest of the Iran national football team.", source: "https://en.wikipedia.org/wiki/Iran_national_football_team" },
   ],
   "IS": [
     { id: "is-official-national", category: "official", name: "Flag of Iceland", from: 1944, to: 9999, primary: true, path: "flags/is.svg", design: "The national flag of Iceland, in the form adopted in 1944.", source: "https://en.wikipedia.org/wiki/Flag_of_Iceland" },
@@ -998,6 +1027,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "is-state", category: "civilstate", name: "State flag and ensign of Iceland", from: 1944, to: 9999, path: "national-flags/is/iceland-state.svg", design: "The swallow-tailed form of the flag, flown by the state and used as the military flag.", source: "https://en.wikipedia.org/wiki/List_of_Icelandic_flags" },
     { id: "is-arms", category: "coatofarms", name: "Coat of arms of Iceland", from: 1944, to: 9999, path: "national-flags/is/iceland-arms.svg", design: "The flag's cross on a shield, supported by a bull, a giant, a vulture and a dragon, standing on columnar basalt.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Iceland" },
     { id: "is-passport", category: "passport", name: "Passport of Iceland", path: "national-flags/is/is-passport.webp", design: "The cover of the Iceland passport.", source: "https://gicg.net/passport/is/" },
+    { id: "is-football-crest", category: "footballcrest", name: "Crest of the Iceland national football team", path: "national-flags/is/is-football-crest.svg", design: "The crest of the Iceland national football team.", source: "https://en.wikipedia.org/wiki/Iceland_national_football_team" },
   ],
   "IT": [
     { id: "it-official-national", category: "official", name: "Flag of Italy", from: 1946, to: 9999, primary: true, path: "flags/it.svg", design: "The national flag of Italy, in the form adopted in 1946.", source: "https://en.wikipedia.org/wiki/Flag_of_Italy" },
@@ -1085,6 +1115,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ki-uk", category: "historical", name: "Flag of the United Kingdom", from: 1892, to: 1979, sovereign: "the United Kingdom", path: "national-flags/ki/ki-uk.svg", design: "The Union Flag, flown while the islands were the British Gilbert and Ellice Islands colony.", source: "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands" },
     { id: "ki-arms", category: "coatofarms", name: "Coat of arms of Kiribati", from: 1979, to: 9999, path: "national-flags/ki/ki-arms.svg", design: "A golden frigatebird over a rising sun and waves — the device of the flag.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Kiribati" },
     { id: "ki-passport", category: "passport", name: "Passport of Kiribati", path: "national-flags/ki/ki-passport.webp", design: "The cover of the Kiribati passport.", source: "https://gicg.net/passport/ki/" },
+    { id: "ki-football-crest", category: "footballcrest", name: "Crest of the Kiribati national football team", path: "national-flags/ki/ki-football-crest.svg", design: "The crest of the Kiribati national football team.", source: "https://en.wikipedia.org/wiki/Kiribati_national_football_team" },
   ],
   "KM": [
     { id: "km-official-national", category: "official", name: "Flag of the Comoros", from: 2001, to: 9999, primary: true, path: "flags/km.svg", design: "The national flag, adopted in 2001.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
@@ -1097,6 +1128,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kn-uk", category: "historical", name: "Flag of the United Kingdom", from: 1783, to: 1983, sovereign: "the United Kingdom", path: "national-flags/kn/kn-uk.svg", design: "The Union Flag, flown while the islands were a British colony.", source: "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla" },
     { id: "kn-arms", category: "coatofarms", name: "Coat of arms of Saint Kitts and Nevis", from: 1983, to: 9999, path: "national-flags/kn/kn-arms.svg", design: "A shield with a Carib's head, a fleur-de-lis and a rose, a ship and a palm, held by two pelicans.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Saint_Kitts_and_Nevis" },
     { id: "kn-passport", category: "passport", name: "Passport of Saint Kitts and Nevis", path: "national-flags/kn/kn-passport.webp", design: "The cover of the Saint Kitts and Nevis passport.", source: "https://gicg.net/passport/kn/" },
+    { id: "kn-football-crest", category: "footballcrest", name: "Crest of the Saint Kitts and Nevis national football team", path: "national-flags/kn/kn-football-crest.svg", design: "The crest of the Saint Kitts and Nevis national football team.", source: "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis_national_football_team" },
   ],
   "KP": [
     { id: "kp-official-national", category: "official", name: "Flag of North Korea", from: 1948, to: 9999, primary: true, path: "flags/kp.svg", design: "The national flag of North Korea, in the form adopted in 1948.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Korea" },
@@ -1104,6 +1136,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kp-korean-empire", category: "historical", name: "Flag of the Korean Empire", from: 1882, to: 1910, priorPolity: "the Korean Empire", path: "national-flags/kp/kp-korean-empire.svg", design: "The Taegukgi of the Korean Empire (and the preceding Joseon kingdom), the last flag of an independent Korean state before Japan annexed the peninsula in 1910.", source: "https://en.wikipedia.org/wiki/Korean_Empire" },
     { id: "kp-arms", category: "coatofarms", name: "Emblem of North Korea", from: 1948, to: 9999, path: "national-flags/kp/kp-arms.svg", design: "A hydroelectric dam beneath Mount Paektu and a red star, framed by ears of rice bound with a red ribbon.", source: "https://en.wikipedia.org/wiki/Emblem_of_North_Korea" },
     { id: "kp-passport", category: "passport", name: "Passport of North Korea", path: "national-flags/kp/kp-passport.webp", design: "The cover of the North Korea passport.", source: "https://gicg.net/passport/kp/" },
+    { id: "kp-football-crest", category: "footballcrest", name: "Crest of the North Korea national football team", path: "national-flags/kp/kp-football-crest.png", design: "The crest of the North Korea national football team.", source: "https://en.wikipedia.org/wiki/North_Korea_national_football_team" },
   ],
   "KR": [
     { id: "kr-official-national", category: "official", name: "Flag of South Korea", from: 1883, to: 9999, primary: true, path: "flags/kr.svg", design: "The national flag of South Korea, in the form adopted in 1883.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Korea" },
@@ -1120,6 +1153,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "kr-president", category: "standard", name: "Flag of the President of South Korea", from: 1967, to: 9999, path: "national-flags/kr/south-korea-president.svg", design: "A blue field bearing the presidential phoenix emblem.", source: "https://en.wikipedia.org/wiki/List_of_South_Korean_flags" },
     { id: "kr-arms", category: "coatofarms", name: "Emblem of South Korea", from: 1963, to: 9999, path: "national-flags/kr/kr-arms.svg", design: "The red-and-blue taegeuk within five white Hibiscus syriacus petals, on a ribbon reading Republic of Korea.", source: "https://en.wikipedia.org/wiki/Emblem_of_South_Korea" },
     { id: "kr-passport", category: "passport", name: "Passport of South Korea", path: "national-flags/kr/kr-passport.webp", design: "The cover of the South Korea passport.", source: "https://gicg.net/passport/kr/" },
+    { id: "kr-football-crest", category: "footballcrest", name: "Crest of the South Korea national football team", path: "national-flags/kr/kr-football-crest.svg", design: "The crest of the South Korea national football team.", source: "https://en.wikipedia.org/wiki/South_Korea_national_football_team" },
   ],
   "KW": [
     { id: "kw-official-national", category: "official", name: "Flag of Kuwait", from: 1961, to: 9999, primary: true, path: "flags/kw.svg", design: "The national flag of Kuwait, in the form adopted in 1961.", source: "https://en.wikipedia.org/wiki/Flag_of_Kuwait" },
@@ -1153,6 +1187,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "la-france", category: "historical", name: "Flag of France", from: 1893, to: 1953, sovereign: "France", path: "national-flags/la/la-france.svg", design: "The flag of France, flown while Laos was a protectorate within French Indochina until independence in 1953.", source: "https://en.wikipedia.org/wiki/French_protectorate_of_Laos" },
     { id: "la-emblem", category: "coatofarms", name: "Emblem of Laos", from: 1991, to: 9999, path: "national-flags/la/laos-emblem.svg", design: "The Pha That Luang stupa above a dam, road and paddy field, framed by rice ears and a red ribbon with the name of the state.", source: "https://en.wikipedia.org/wiki/Emblem_of_Laos" },
     { id: "la-passport", category: "passport", name: "Passport of Laos", path: "national-flags/la/la-passport.webp", design: "The cover of the Laos passport.", source: "https://gicg.net/passport/la/" },
+    { id: "la-football-crest", category: "footballcrest", name: "Crest of the Laos national football team", path: "national-flags/la/la-football-crest.svg", design: "The crest of the Laos national football team.", source: "https://en.wikipedia.org/wiki/Laos_national_football_team" },
   ],
   "LB": [
     { id: "lb-official-national", category: "official", name: "Flag of Lebanon", from: 1943, to: 9999, primary: true, path: "flags/lb.svg", design: "The national flag of Lebanon, adopted at independence in 1943.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
@@ -1162,6 +1197,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lb-jack", category: "maritime", name: "Naval jack of Lebanon", from: 1950, to: 9999, path: "national-flags/lb/lb-jack.svg", design: "The naval jack of Lebanon, the national flag in a square field.", source: "https://en.wikipedia.org/wiki/Flag_of_Lebanon" },
     { id: "lb-arms", category: "coatofarms", name: "Coat of arms of Lebanon", path: "national-flags/lb/lb-arms.svg", design: "A red shield crossed by a white diagonal bearing a cedar.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lebanon" },
     { id: "lb-passport", category: "passport", name: "Passport of Lebanon", path: "national-flags/lb/lb-passport.webp", design: "The cover of the Lebanon passport.", source: "https://gicg.net/passport/lb/" },
+    { id: "lb-football-crest", category: "footballcrest", name: "Crest of the Lebanon national football team", path: "national-flags/lb/lb-football-crest.png", design: "The crest of the Lebanon national football team.", source: "https://en.wikipedia.org/wiki/Lebanon_national_football_team" },
   ],
   "LC": [
     { id: "lc-official-national", category: "official", name: "Flag of Saint Lucia", from: 1967, to: 9999, primary: true, path: "flags/lc.svg", design: "The national flag, adopted in 1967.", source: "https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia" },
@@ -1208,6 +1244,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lt-president", category: "standard", name: "Flag of the President of Lithuania", from: 1993, to: 9999, path: "national-flags/lt/lithuania-president.svg", design: "A red field bearing the Vytis, the mounted knight of the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Lithuania" },
     { id: "lt-arms", category: "coatofarms", name: "Coat of arms of Lithuania", from: 1991, to: 9999, path: "national-flags/lt/lithuania-arms.svg", design: "An armoured knight on a white horse wielding a sword, carrying a shield with a double cross, on a red field — the Vytis.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Lithuania" },
     { id: "lt-passport", category: "passport", name: "Passport of Lithuania", path: "national-flags/lt/lt-passport.webp", design: "The cover of the Lithuania passport.", source: "https://gicg.net/passport/lt/" },
+    { id: "lt-football-crest", category: "footballcrest", name: "Crest of the Lithuania national football team", path: "national-flags/lt/lt-football-crest.png", design: "The crest of the Lithuania national football team.", source: "https://en.wikipedia.org/wiki/Lithuania_national_football_team" },
   ],
   "LU": [
     { id: "lu-official-national", category: "official", name: "Flag of Luxembourg", from: 1845, to: 9999, primary: true, path: "flags/lu.svg", design: "The national flag of Luxembourg, in the form adopted in 1845.", source: "https://en.wikipedia.org/wiki/Flag_of_Luxembourg" },
@@ -1216,6 +1253,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lu-grand-duke", category: "standard", name: "Standard of the Grand Duke of Luxembourg", from: 2001, to: 9999, path: "national-flags/lu/luxembourg-grand-duke.svg", design: "The arms of the Grand Duke.", source: "https://en.wikipedia.org/wiki/List_of_Luxembourgish_flags" },
     { id: "lu-arms", category: "coatofarms", name: "Coat of arms of Luxembourg", from: 1839, to: 9999, path: "national-flags/lu/luxembourg-arms.svg", design: "A red lion with a forked tail, crowned, on a field barry of ten silver and blue.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Luxembourg" },
     { id: "lu-passport", category: "passport", name: "Passport of Luxembourg", path: "national-flags/lu/lu-passport.webp", design: "The cover of the Luxembourg passport.", source: "https://gicg.net/passport/lu/" },
+    { id: "lu-football-crest", category: "footballcrest", name: "Crest of the Luxembourg national football team", path: "national-flags/lu/lu-football-crest.png", design: "The crest of the Luxembourg national football team.", source: "https://en.wikipedia.org/wiki/Luxembourg_national_football_team" },
   ],
   "LV": [
     { id: "lv-official-national", category: "official", name: "Flag of Latvia", from: 1923, to: 9999, primary: true, path: "flags/lv.svg", design: "The national flag of Latvia, in the form adopted in 1923.", source: "https://en.wikipedia.org/wiki/Flag_of_Latvia" },
@@ -1228,6 +1266,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "lv-pm", category: "standard", name: "Standard of the Prime Minister of Latvia", from: 1995, to: 9999, path: "national-flags/lv/latvia-pm.svg", design: "The prime minister's standard.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Latvia" },
     { id: "lv-arms", category: "coatofarms", name: "Coat of arms of Latvia", from: 1921, to: 9999, path: "national-flags/lv/latvia-arms.svg", design: "A shield with a rising sun above a red lion and a silver griffin, beneath three golden stars, between oak branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Latvia" },
     { id: "lv-passport", category: "passport", name: "Passport of Latvia", path: "national-flags/lv/lv-passport.webp", design: "The cover of the Latvia passport.", source: "https://gicg.net/passport/lv/" },
+    { id: "lv-football-crest", category: "footballcrest", name: "Crest of the Latvia national football team", path: "national-flags/lv/lv-football-crest.png", design: "The crest of the Latvia national football team.", source: "https://en.wikipedia.org/wiki/Latvia_national_football_team" },
   ],
   "LY": [
     { id: "ly-official-national", category: "official", name: "Flag of Libya", from: 2011, to: 9999, primary: true, path: "flags/ly.svg", design: "The national flag of Libya, restored in 2011.", source: "https://en.wikipedia.org/wiki/Flag_of_Libya" },
@@ -1249,6 +1288,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ma-royal", category: "standard", name: "Royal standard of Morocco", from: 1915, to: 9999, path: "national-flags/ma/morocco-royal-standard.svg", design: "A green field bearing the national flag in the canton.", source: "https://en.wikipedia.org/wiki/List_of_Moroccan_flags" },
     { id: "ma-arms", category: "coatofarms", name: "Coat of arms of Morocco", from: 1957, to: 9999, path: "national-flags/ma/ma-arms.svg", design: "A red shield bearing a green pentagram over the Atlas Mountains and a rising sun, borne by two lions beneath the royal crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Morocco" },
     { id: "ma-passport", category: "passport", name: "Passport of Morocco", path: "national-flags/ma/ma-passport.webp", design: "The cover of the Morocco passport.", source: "https://gicg.net/passport/ma/" },
+    { id: "ma-football-crest", category: "footballcrest", name: "Crest of the Morocco national football team", path: "national-flags/ma/ma-football-crest.svg", design: "The crest of the Morocco national football team.", source: "https://en.wikipedia.org/wiki/Morocco_national_football_team" },
   ],
   "MC": [
     { id: "mc-official-national", category: "official", name: "Flag of Monaco", from: 1881, to: 9999, primary: true, path: "flags/mc.svg", design: "The national flag, in use since 1881.", source: "https://en.wikipedia.org/wiki/Flag_of_Monaco" },
@@ -1263,6 +1303,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "md-president", category: "standard", name: "Flag of the President of Moldova", path: "national-flags/md/moldova-president.svg", design: "The presidential standard bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Moldovan_flags" },
     { id: "md-arms", category: "coatofarms", name: "Coat of arms of Moldova", from: 1990, to: 9999, path: "national-flags/md/moldova-arms.svg", design: "An aurochs head with a star between its horns, a rose and a crescent, on a shield held by an eagle with a cross in its beak.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Moldova" },
     { id: "md-passport", category: "passport", name: "Passport of Moldova", path: "national-flags/md/md-passport.webp", design: "The cover of the Moldova passport.", source: "https://gicg.net/passport/md/" },
+    { id: "md-football-crest", category: "footballcrest", name: "Crest of the Moldova national football team", path: "national-flags/md/md-football-crest.svg", design: "The crest of the Moldova national football team.", source: "https://en.wikipedia.org/wiki/Moldova_national_football_team" },
   ],
   "ME": [
     { id: "me-official-national", category: "official", name: "Flag of Montenegro", from: 2004, to: 9999, primary: true, path: "flags/me.svg", design: "The national flag of Montenegro, in the form adopted in 2004.", source: "https://en.wikipedia.org/wiki/Flag_of_Montenegro" },
@@ -1285,6 +1326,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mh-japan", category: "historical", name: "Flag of Japan", from: 1920, to: 1944, sovereign: "Japan", path: "national-flags/mh/mh-japan.svg", design: "The flag of Japan, which held the islands as the South Seas Mandate between the world wars.", source: "https://en.wikipedia.org/wiki/South_Seas_Mandate" },
     { id: "mh-arms", category: "coatofarms", name: "Seal of the Marshall Islands", from: 1992, to: 9999, path: "national-flags/mh/mh-arms.svg", design: "An angel over two islands with a canoe, a palm and a stick chart, on the blue of the sea.", source: "https://en.wikipedia.org/wiki/Seal_of_the_Marshall_Islands" },
     { id: "mh-passport", category: "passport", name: "Passport of the Marshall Islands", path: "national-flags/mh/mh-passport.webp", design: "The cover of the the Marshall Islands passport.", source: "https://gicg.net/passport/mh/" },
+    { id: "mh-football-crest", category: "footballcrest", name: "Crest of the Marshall Islands national football team", path: "national-flags/mh/mh-football-crest.png", design: "The crest of the Marshall Islands national football team.", source: "https://en.wikipedia.org/wiki/Marshall_Islands_national_football_team" },
   ],
   "MK": [
     { id: "mk-official-national", category: "official", name: "Flag of North Macedonia", from: 1995, to: 9999, primary: true, path: "flags/mk.svg", design: "The national flag of North Macedonia, in the form adopted in 1995.", source: "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia" },
@@ -1311,6 +1353,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mm-mod", category: "military", name: "Flag of the Ministry of Defence", path: "national-flags/mm/myanmar-mod.svg", design: "The defence ministry's flag.", source: "https://en.wikipedia.org/wiki/List_of_Burmese_flags" },
     { id: "mm-seal", category: "coatofarms", name: "State Seal of Myanmar", from: 2010, to: 9999, path: "national-flags/mm/myanmar-seal.svg", design: "The map of the country between two Burmese royal lions, flanked by sprigs of Eugenia, over a ribbon bearing the name of the state.", source: "https://en.wikipedia.org/wiki/State_Seal_of_Myanmar" },
     { id: "mm-passport", category: "passport", name: "Passport of Myanmar", path: "national-flags/mm/mm-passport.webp", design: "The cover of the Myanmar passport.", source: "https://gicg.net/passport/mm/" },
+    { id: "mm-football-crest", category: "footballcrest", name: "Crest of the Myanmar national football team", path: "national-flags/mm/mm-football-crest.svg", design: "The crest of the Myanmar national football team.", source: "https://en.wikipedia.org/wiki/Myanmar_national_football_team" },
   ],
   "MN": [
     { id: "mn-official-national", category: "official", name: "Flag of Mongolia", from: 1992, to: 9999, primary: true, path: "flags/mn.svg", design: "The national flag of Mongolia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Mongolia" },
@@ -1342,6 +1385,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mr-french", category: "historical", name: "Flag of France", from: 1904, to: 1959, sovereign: "France", path: "national-flags/mr/mr-french.svg", design: "The French Tricolour, flown over Mauritania as part of French West Africa.", source: "https://en.wikipedia.org/wiki/French_West_Africa" },
     { id: "mr-arms", category: "coatofarms", name: "Seal of Mauritania", from: 2018, to: 9999, path: "national-flags/mr/mr-arms.svg", design: "A gold star and crescent between a date palm and an ear of millet, within a ring naming the republic.", source: "https://en.wikipedia.org/wiki/Seal_of_Mauritania" },
     { id: "mr-passport", category: "passport", name: "Passport of Mauritania", path: "national-flags/mr/mr-passport.webp", design: "The cover of the Mauritania passport.", source: "https://gicg.net/passport/mr/" },
+    { id: "mr-football-crest", category: "footballcrest", name: "Crest of the Mauritania national football team", path: "national-flags/mr/mr-football-crest.svg", design: "The crest of the Mauritania national football team.", source: "https://en.wikipedia.org/wiki/Mauritania_national_football_team" },
   ],
   "MS": [
     { id: "ms-official-national", category: "official", name: "Flag of Montserrat", from: 1909, to: 9999, path: "flags/ms.svg", design: "A blue ensign with the Union Flag in the canton and Montserrat's arms — the woman Erin embracing a cross and holding a golden harp — in the fly.", source: "https://en.wikipedia.org/wiki/Flag_of_Montserrat" },
@@ -1387,6 +1431,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "mx-president", category: "standard", name: "Presidential Standard of Mexico", path: "national-flags/mx/mx-president.svg", design: "The national tricolour bearing the coat of arms in gold beneath the arced legend Estados Unidos Mexicanos, flown to mark the presence of the President of Mexico.", source: "https://en.wikipedia.org/wiki/List_of_Mexican_flags" },
     { id: "mx-arms", category: "coatofarms", name: "Coat of arms of Mexico", from: 1968, to: 9999, path: "national-flags/mx/mx-arms.svg", design: "A golden eagle perched on a nopal cactus, devouring a rattlesnake, framed by oak and laurel branches.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mexico" },
     { id: "mx-passport", category: "passport", name: "Passport of Mexico", path: "national-flags/mx/mx-passport.webp", design: "The cover of the Mexico passport.", source: "https://gicg.net/passport/mx/" },
+    { id: "mx-football-crest", category: "footballcrest", name: "Crest of the Mexico national football team", path: "national-flags/mx/mx-football-crest.svg", design: "The crest of the Mexico national football team.", source: "https://en.wikipedia.org/wiki/Mexico_national_football_team" },
   ],
   "MY": [
     { id: "my-official-national", category: "official", name: "Flag of Malaysia (Jalur Gemilang)", from: 1963, to: 9999, primary: true, path: "flags/my.svg", design: "The national flag, adopted at the formation of Malaysia in 1963.", source: "https://en.wikipedia.org/wiki/Flag_of_Malaysia" },
@@ -1436,6 +1481,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "na-president", category: "standard", name: "Presidential standard of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-president.svg", design: "The standard of the President of Namibia.", source: "https://en.wikipedia.org/wiki/Flag_of_Namibia" },
     { id: "na-arms", category: "coatofarms", name: "Coat of arms of Namibia", from: 1990, to: 9999, path: "national-flags/na/na-arms.svg", design: "The national arms, adopted at independence in 1990.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Namibia" },
     { id: "na-passport", category: "passport", name: "Passport of Namibia", path: "national-flags/na/na-passport.webp", design: "The cover of the Namibia passport.", source: "https://gicg.net/passport/na/" },
+    { id: "na-football-crest", category: "footballcrest", name: "Crest of the Namibia national football team", path: "national-flags/na/na-football-crest.png", design: "The crest of the Namibia national football team.", source: "https://en.wikipedia.org/wiki/Namibia_national_football_team" },
   ],
   "NC": [
     { id: "nc-kanak", category: "official", name: "Kanak flag (FLNKS)", from: 1980, to: 9999, path: "flags/nc.svg", design: "Horizontal blue, red and green bands with a yellow disc bearing a black flèche faîtière (roof-arrow).", source: "https://en.wikipedia.org/wiki/Flags_of_New_Caledonia" },
@@ -1456,6 +1502,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ng-president", category: "standard", name: "Flag of the President of Nigeria", path: "national-flags/ng/nigeria-president.svg", design: "The presidential flag of the Federal Republic.", source: "https://en.wikipedia.org/wiki/List_of_Nigerian_flags" },
     { id: "ng-arms", category: "coatofarms", name: "Coat of arms of Nigeria", from: 1960, to: 9999, path: "national-flags/ng/ng-arms.svg", design: "A black shield with a white Y, borne by two horses, an eagle above, on a base of Costus spectabilis flowers.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Nigeria" },
     { id: "ng-passport", category: "passport", name: "Passport of Nigeria", path: "national-flags/ng/ng-passport.webp", design: "The cover of the Nigeria passport.", source: "https://gicg.net/passport/ng/" },
+    { id: "ng-football-crest", category: "footballcrest", name: "Crest of the Nigeria national football team", path: "national-flags/ng/ng-football-crest.svg", design: "The crest of the Nigeria national football team.", source: "https://en.wikipedia.org/wiki/Nigeria_national_football_team" },
   ],
   "NI": [
     { id: "ni-official-national", category: "official", name: "Flag of Nicaragua", from: 1908, to: 9999, primary: true, path: "flags/ni.svg", design: "The national flag of Nicaragua, in the form adopted in 1908.", source: "https://en.wikipedia.org/wiki/Flag_of_Nicaragua" },
@@ -1477,6 +1524,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "nl-government", category: "civilstate", name: "Flag of the Government of the Netherlands", from: 2011, to: 9999, path: "national-flags/nl/netherlands-government.svg", design: "The government's own flag, flown at ministries.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_the_Netherlands" },
     { id: "nl-arms", category: "coatofarms", name: "Coat of arms of the Netherlands", from: 1815, to: 9999, path: "national-flags/nl/netherlands-arms.svg", design: "A crowned gold lion on a blue field strewn with billets, holding a sword and seven arrows, beneath a royal mantle.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Netherlands" },
     { id: "nl-passport", category: "passport", name: "Passport of Netherlands", path: "national-flags/nl/nl-passport.webp", design: "The cover of the Netherlands passport.", source: "https://gicg.net/passport/nl/" },
+    { id: "nl-football-crest", category: "footballcrest", name: "Crest of the Netherlands national football team", path: "national-flags/nl/nl-football-crest.svg", design: "The crest of the Netherlands national football team.", source: "https://en.wikipedia.org/wiki/Netherlands_national_football_team" },
   ],
   "NO": [
     { id: "no-official-national", category: "official", name: "Flag of Norway", from: 1821, to: 9999, primary: true, path: "flags/no.svg", design: "The national flag of Norway, in the form adopted in 1821.", source: "https://en.wikipedia.org/wiki/Flag_of_Norway" },
@@ -1489,6 +1537,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "no-sami", category: "indigenous", name: "Sámi flag", from: 1986, to: 9999, path: "national-flags/no/no-sami.svg", design: "Red, green, yellow and blue fields bearing a red-and-blue circle for the sun and moon.", source: "https://en.wikipedia.org/wiki/S%C3%A1mi_flag" },
     { id: "no-arms", category: "coatofarms", name: "Coat of arms of Norway", from: 1937, to: 9999, path: "national-flags/no/norway-arms.svg", design: "A standing golden lion on red, crowned, bearing a silver-bladed axe.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Norway" },
     { id: "no-passport", category: "passport", name: "Passport of Norway", path: "national-flags/no/no-passport.webp", design: "The cover of the Norway passport.", source: "https://gicg.net/passport/no/" },
+    { id: "no-football-crest", category: "footballcrest", name: "Crest of the Norway national football team", path: "national-flags/no/no-football-crest.svg", design: "The crest of the Norway national football team.", source: "https://en.wikipedia.org/wiki/Norway_national_football_team" },
   ],
   "NP": [
     { id: "np-official-national", category: "official", name: "Flag of Nepal", from: 1962, to: 9999, primary: true, path: "flags/np.svg", design: "The national flag of Nepal, in the form adopted in 1962.", source: "https://en.wikipedia.org/wiki/Flag_of_Nepal" },
@@ -1498,6 +1547,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "np-royal-1928", category: "standard", name: "Royal Standard of Nepal (1928–1969)", from: 1928, to: 1969, path: "national-flags/np/nepal-royal-1928.svg", design: "The earlier royal standard.", source: "https://en.wikipedia.org/wiki/List_of_Nepalese_flags" },
     { id: "np-emblem", category: "coatofarms", name: "Emblem of Nepal", from: 2008, to: 9999, path: "national-flags/np/nepal-emblem.svg", design: "The flag, Mount Everest, green hills and a yellow plain above two joined hands, within a rhododendron wreath.", source: "https://en.wikipedia.org/wiki/Emblem_of_Nepal" },
     { id: "np-passport", category: "passport", name: "Passport of Nepal", path: "national-flags/np/np-passport.webp", design: "The cover of the Nepal passport.", source: "https://gicg.net/passport/np/" },
+    { id: "np-football-crest", category: "footballcrest", name: "Crest of the Nepal national football team", path: "national-flags/np/np-football-crest.png", design: "The crest of the Nepal national football team.", source: "https://en.wikipedia.org/wiki/Nepal_national_football_team" },
   ],
   "NR": [
     { id: "nr-official-national", category: "official", name: "Flag of Nauru", from: 1968, to: 9999, primary: true, path: "flags/nr.svg", design: "The national flag, adopted at independence in 1968.", source: "https://en.wikipedia.org/wiki/Flag_of_Nauru" },
@@ -1557,6 +1607,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pe-president", category: "standard", name: "Presidential standard of Peru", path: "national-flags/pe/peru-president.svg", design: "A white field bearing the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_flags_of_Peru" },
     { id: "pe-arms", category: "coatofarms", name: "National coat of arms of Peru", from: 1825, to: 9999, path: "national-flags/pe/peru-arms.svg", design: "A shield of three fields — a vicuña, a cinchona tree and a cornucopia spilling coins — between a palm and a laurel branch beneath a civic crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Peru" },
     { id: "pe-passport", category: "passport", name: "Passport of Peru", path: "national-flags/pe/pe-passport.webp", design: "The cover of the Peru passport.", source: "https://gicg.net/passport/pe/" },
+    { id: "pe-football-crest", category: "footballcrest", name: "Crest of the Peru national football team", path: "national-flags/pe/pe-football-crest.svg", design: "The crest of the Peru national football team.", source: "https://en.wikipedia.org/wiki/Peru_national_football_team" },
   ],
   "PF": [
     { id: "pf-official-national", category: "official", name: "Flag of French Polynesia", from: 1984, to: 9999, path: "flags/pf.svg", design: "Two red bands enclosing a wide white band, a central emblem of a Polynesian canoe over sea and sun.", source: "https://en.wikipedia.org/wiki/Flag_of_French_Polynesia" },
@@ -1567,6 +1618,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pg-german", category: "historical", name: "Flag of the German Empire", from: 1884, to: 1914, sovereign: "the German Empire", path: "national-flags/pg/pg-german.svg", design: "The flag of the German Empire, which held the north-east as German New Guinea until 1914.", source: "https://en.wikipedia.org/wiki/German_New_Guinea" },
     { id: "pg-arms", category: "coatofarms", name: "Emblem of Papua New Guinea", from: 1971, to: 9999, path: "national-flags/pg/pg-arms.svg", design: "A bird of paradise atop a spear and a kundu drum.", source: "https://en.wikipedia.org/wiki/Emblem_of_Papua_New_Guinea" },
     { id: "pg-passport", category: "passport", name: "Passport of Papua New Guinea", path: "national-flags/pg/pg-passport.webp", design: "The cover of the Papua New Guinea passport.", source: "https://gicg.net/passport/pg/" },
+    { id: "pg-football-crest", category: "footballcrest", name: "Crest of the Papua New Guinea national football team", path: "national-flags/pg/pg-football-crest.svg", design: "The crest of the Papua New Guinea national football team.", source: "https://en.wikipedia.org/wiki/Papua_New_Guinea_national_football_team" },
   ],
   "PH": [
     { id: "ph-official-national", category: "official", name: "Flag of Philippines", from: 1898, to: 9999, primary: true, path: "flags/ph.svg", design: "The national flag of Philippines, in the form adopted in 1898.", source: "https://en.wikipedia.org/wiki/Flag_of_Philippines" },
@@ -1587,6 +1639,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ph-war-flag", category: "civilstate", name: "State and war flag", from: 1998, to: 9999, path: "national-flags/ph/philippines-war-flag.svg", design: "The national flag hoisted with the red band uppermost — flown only while the country is at war.", source: "https://en.wikipedia.org/wiki/List_of_Philippine_flags" },
     { id: "ph-arms", category: "coatofarms", name: "Coat of arms of the Philippines", from: 1946, to: 9999, path: "national-flags/ph/philippines-arms.svg", design: "The eight-rayed sun and three stars above a bald eagle on blue and a lion rampant on red.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Philippines" },
     { id: "ph-passport", category: "passport", name: "Passport of Philippines", path: "national-flags/ph/ph-passport.webp", design: "The cover of the Philippines passport.", source: "https://gicg.net/passport/ph/" },
+    { id: "ph-football-crest", category: "footballcrest", name: "Crest of the Philippines national football team", path: "national-flags/ph/ph-football-crest.svg", design: "The crest of the Philippines national football team.", source: "https://en.wikipedia.org/wiki/Philippines_national_football_team" },
   ],
   "PK": [
     { id: "pk-official-national", category: "official", name: "Flag of Pakistan", from: 1947, to: 9999, primary: true, path: "flags/pk.svg", design: "The national flag of Pakistan, in the form adopted in 1947.", source: "https://en.wikipedia.org/wiki/Flag_of_Pakistan" },
@@ -1642,6 +1695,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "pt-pm", category: "standard", name: "Flag of the Prime Minister of Portugal", from: 1972, to: 9999, path: "national-flags/pt/portugal-prime-minister.svg", design: "As the president’s flag, but on white.", source: "https://en.wikipedia.org/wiki/List_of_Portuguese_flags" },
     { id: "pt-arms", category: "coatofarms", name: "Coat of arms of Portugal", from: 1911, to: 9999, path: "national-flags/pt/pt-arms.svg", design: "Five blue shields each charged with five silver bezants, within a red border of seven golden castles, over a golden armillary sphere.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Portugal" },
     { id: "pt-passport", category: "passport", name: "Passport of Portugal", path: "national-flags/pt/pt-passport.webp", design: "The cover of the Portugal passport.", source: "https://gicg.net/passport/pt/" },
+    { id: "pt-football-crest", category: "footballcrest", name: "Crest of the Portugal national football team", path: "national-flags/pt/pt-football-crest.svg", design: "The crest of the Portugal national football team.", source: "https://en.wikipedia.org/wiki/Portugal_national_football_team" },
   ],
   "PW": [
     { id: "pw-official-national", category: "official", name: "Flag of Palau", from: 1981, to: 9999, primary: true, path: "flags/pw.svg", design: "The national flag of Palau, in the form adopted in 1981.", source: "https://en.wikipedia.org/wiki/Flag_of_Palau" },
@@ -1679,6 +1733,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ro-pm", category: "standard", name: "Flag of the Prime Minister of Romania", path: "national-flags/ro/romania-pm.svg", design: "A square flag distinguished for the head of government.", source: "https://en.wikipedia.org/wiki/List_of_Romanian_flags" },
     { id: "ro-arms", category: "coatofarms", name: "Coat of arms of Romania", from: 1992, to: 9999, path: "national-flags/ro/romania-arms.svg", design: "A golden aquila holding a cross, sword and sceptre, on a blue shield quartered with the arms of the historic Romanian lands.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Romania" },
     { id: "ro-passport", category: "passport", name: "Passport of Romania", path: "national-flags/ro/ro-passport.webp", design: "The cover of the Romania passport.", source: "https://gicg.net/passport/ro/" },
+    { id: "ro-football-crest", category: "footballcrest", name: "Crest of the Romania national football team", path: "national-flags/ro/ro-football-crest.svg", design: "The crest of the Romania national football team.", source: "https://en.wikipedia.org/wiki/Romania_national_football_team" },
   ],
   "RS": [
     { id: "rs-official-national", category: "official", name: "Flag of Serbia", from: 2010, to: 9999, primary: true, path: "flags/rs.svg", design: "The national flag of Serbia, in the form adopted in 2010.", source: "https://en.wikipedia.org/wiki/Flag_of_Serbia" },
@@ -1690,6 +1745,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "rs-civil", category: "civilstate", name: "Civil flag of Serbia", from: 2010, to: 9999, path: "national-flags/rs/serbia-civil.svg", design: "The plain red-blue-white tricolour, without the arms the state flag carries.", source: "https://en.wikipedia.org/wiki/List_of_Serbian_flags" },
     { id: "rs-arms", category: "coatofarms", name: "Coat of arms of Serbia", from: 2010, to: 9999, path: "national-flags/rs/serbia-arms.svg", design: "A silver double-headed eagle on red bearing an escutcheon with the Serbian cross between four firesteels, beneath a crown.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Serbia" },
     { id: "rs-passport", category: "passport", name: "Passport of Serbia", path: "national-flags/rs/rs-passport.webp", design: "The cover of the Serbia passport.", source: "https://gicg.net/passport/rs/" },
+    { id: "rs-football-crest", category: "footballcrest", name: "Crest of the Serbia national football team", path: "national-flags/rs/rs-football-crest.svg", design: "The crest of the Serbia national football team.", source: "https://en.wikipedia.org/wiki/Serbia_national_football_team" },
   ],
   "RU": [
     { id: "ru-official-national", category: "official", name: "Flag of Russia", from: 1991, to: 9999, primary: true, path: "flags/ru.svg", design: "The national flag of Russia, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Russia" },
@@ -1730,6 +1786,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "sa-crown-prince", category: "standard", name: "Royal Standard of the Crown Prince", path: "national-flags/sa/saudi-crown-prince.svg", design: "The national flag distinguished for the crown prince.", source: "https://en.wikipedia.org/wiki/List_of_Saudi_Arabian_flags" },
     { id: "sa-emblem", category: "coatofarms", name: "Emblem of Saudi Arabia", from: 1950, to: 9999, path: "national-flags/sa/saudi-emblem.svg", design: "Two crossed swords beneath a date palm.", source: "https://en.wikipedia.org/wiki/Emblem_of_Saudi_Arabia" },
     { id: "sa-passport", category: "passport", name: "Passport of Saudi Arabia", path: "national-flags/sa/sa-passport.webp", design: "The cover of the Saudi Arabia passport.", source: "https://gicg.net/passport/sa/" },
+    { id: "sa-football-crest", category: "footballcrest", name: "Crest of the Saudi Arabia national football team", path: "national-flags/sa/sa-football-crest.svg", design: "The crest of the Saudi Arabia national football team.", source: "https://en.wikipedia.org/wiki/Saudi_Arabia_national_football_team" },
   ],
   "SB": [
     { id: "sb-official-national", category: "official", name: "Flag of the Solomon Islands", from: 1977, to: 9999, primary: true, path: "flags/sb.svg", design: "The national flag, adopted in 1977, the year before independence.", source: "https://en.wikipedia.org/wiki/Flag_of_the_Solomon_Islands" },
@@ -1791,6 +1848,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "si-president", category: "standard", name: "Flag of the President of Slovenia", from: 1991, to: 9999, path: "national-flags/si/slovenia-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Slovenian_flags" },
     { id: "si-arms", category: "coatofarms", name: "Coat of arms of Slovenia", from: 1991, to: 9999, path: "national-flags/si/slovenia-arms.svg", design: "Mount Triglav in white on blue above two wavy lines, beneath three golden six-pointed stars, on a red-bordered shield.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Slovenia" },
     { id: "si-passport", category: "passport", name: "Passport of Slovenia", path: "national-flags/si/si-passport.webp", design: "The cover of the Slovenia passport.", source: "https://gicg.net/passport/si/" },
+    { id: "si-football-crest", category: "footballcrest", name: "Crest of the Slovenia national football team", path: "national-flags/si/si-football-crest.svg", design: "The crest of the Slovenia national football team.", source: "https://en.wikipedia.org/wiki/Slovenia_national_football_team" },
   ],
   "SK": [
     { id: "sk-official-national", category: "official", name: "Flag of Slovakia", from: 1992, to: 9999, primary: true, path: "flags/sk.svg", design: "The national flag of Slovakia, in the form adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Slovakia" },
@@ -1902,6 +1960,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "th-regent", category: "standard", name: "Standard of the Regent of Thailand", from: 1936, to: 9999, path: "national-flags/th/thailand-regent.svg", design: "A white square bearing the Garuda above a shield.", source: "https://en.wikipedia.org/wiki/List_of_Thai_flags" },
     { id: "th-emblem", category: "coatofarms", name: "Emblem of Thailand (Phra Khrut Pha)", from: 1911, to: 9999, path: "national-flags/th/thailand-emblem.svg", design: "The Garuda, half-man and half-eagle, with wings spread.", source: "https://en.wikipedia.org/wiki/Emblem_of_Thailand" },
     { id: "th-passport", category: "passport", name: "Passport of Thailand", path: "national-flags/th/th-passport.webp", design: "The cover of the Thailand passport.", source: "https://gicg.net/passport/th/" },
+    { id: "th-football-crest", category: "footballcrest", name: "Crest of the Thailand national football team", path: "national-flags/th/th-football-crest.svg", design: "The crest of the Thailand national football team.", source: "https://en.wikipedia.org/wiki/Thailand_national_football_team" },
   ],
   "TJ": [
     { id: "tj-official-national", category: "official", name: "Flag of Tajikistan", from: 1992, to: 9999, primary: true, path: "flags/tj.svg", design: "The national flag, adopted in 1992.", source: "https://en.wikipedia.org/wiki/Flag_of_Tajikistan" },
@@ -1937,6 +1996,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "tn-president", category: "standard", name: "Presidential Standard of Tunisia", from: 1999, to: 9999, path: "national-flags/tn/tunisia-president.svg", design: "The national flag charged with the coat of arms.", source: "https://en.wikipedia.org/wiki/List_of_Tunisian_flags" },
     { id: "tn-arms", category: "coatofarms", name: "Coat of arms of Tunisia", from: 1963, to: 9999, path: "national-flags/tn/tunisia-arms.svg", design: "A shield in three parts — a Carthaginian galley above, a scale and a lion holding a scimitar below — beneath a crescent and star, over the national motto.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tunisia" },
     { id: "tn-passport", category: "passport", name: "Passport of Tunisia", path: "national-flags/tn/tn-passport.webp", design: "The cover of the Tunisia passport.", source: "https://gicg.net/passport/tn/" },
+    { id: "tn-football-crest", category: "footballcrest", name: "Crest of the Tunisia national football team", path: "national-flags/tn/tn-football-crest.png", design: "The crest of the Tunisia national football team.", source: "https://en.wikipedia.org/wiki/Tunisia_national_football_team" },
   ],
   "TO": [
     { id: "to-official-national", category: "official", name: "Flag of Tonga", from: 1875, to: 9999, primary: true, path: "flags/to.svg", design: "The national flag, adopted with the constitution of 1875.", source: "https://en.wikipedia.org/wiki/Flag_of_Tonga" },
@@ -2019,6 +2079,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ug-president", category: "standard", name: "Presidential flag of Uganda", from: 1962, to: 9999, path: "national-flags/ug/uganda-president.svg", design: "The presidential flag.", source: "https://en.wikipedia.org/wiki/List_of_Ugandan_flags" },
     { id: "ug-arms", category: "coatofarms", name: "Coat of arms of Uganda", from: 1962, to: 9999, path: "national-flags/ug/uganda-arms.svg", design: "A shield with waves, a sun and a drum, crossed with two spears, supported by a crested crane and a kob, on a mound above the Nile between coffee and cotton.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uganda" },
     { id: "ug-passport", category: "passport", name: "Passport of Uganda", path: "national-flags/ug/ug-passport.webp", design: "The cover of the Uganda passport.", source: "https://gicg.net/passport/ug/" },
+    { id: "ug-football-crest", category: "footballcrest", name: "Crest of the Uganda national football team", path: "national-flags/ug/ug-football-crest.png", design: "The crest of the Uganda national football team.", source: "https://en.wikipedia.org/wiki/Uganda_national_football_team" },
   ],
   "US": [
     { id: "us-official-national", category: "official", name: "Flag of the United States", from: 1960, to: 9999, primary: true, path: "flags/us.svg", design: "The national flag, fifty stars since 1960.", source: "https://en.wikipedia.org/wiki/Flag_of_the_United_States" },
@@ -2079,6 +2140,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "uy-naval-jack", category: "maritime", name: "Naval jack of Uruguay", path: "national-flags/uy/uruguay-naval-jack.svg", design: "The naval jack.", source: "https://en.wikipedia.org/wiki/List_of_Uruguayan_flags" },
     { id: "uy-arms", category: "coatofarms", name: "Coat of arms of Uruguay", from: 1829, to: 9999, path: "national-flags/uy/uruguay-arms.svg", design: "An oval shield quartered with scales, Montevideo hill, a horse and an ox, crowned by the Sun of May between laurel and olive.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Uruguay" },
     { id: "uy-passport", category: "passport", name: "Passport of Uruguay", path: "national-flags/uy/uy-passport.webp", design: "The cover of the Uruguay passport.", source: "https://gicg.net/passport/uy/" },
+    { id: "uy-football-crest", category: "footballcrest", name: "Crest of the Uruguay national football team", path: "national-flags/uy/uy-football-crest.svg", design: "The crest of the Uruguay national football team.", source: "https://en.wikipedia.org/wiki/Uruguay_national_football_team" },
   ],
   "UZ": [
     { id: "uz-official-national", category: "official", name: "Flag of Uzbekistan", from: 1991, to: 9999, primary: true, path: "flags/uz.svg", design: "The national flag of Uzbekistan, in the form adopted in 1991.", source: "https://en.wikipedia.org/wiki/Flag_of_Uzbekistan" },
@@ -2093,6 +2155,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "uz-president", category: "standard", name: "Presidential Standard of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-president.svg", design: "The presidential standard.", source: "https://en.wikipedia.org/wiki/List_of_Uzbek_flags" },
     { id: "uz-emblem", category: "coatofarms", name: "Emblem of Uzbekistan", from: 1992, to: 9999, path: "national-flags/uz/uzbekistan-emblem.svg", design: "A Huma bird with outstretched wings over a sunrise, mountains and two rivers, within cotton and wheat.", source: "https://en.wikipedia.org/wiki/Emblem_of_Uzbekistan" },
     { id: "uz-passport", category: "passport", name: "Passport of Uzbekistan", path: "national-flags/uz/uz-passport.webp", design: "The cover of the Uzbekistan passport.", source: "https://gicg.net/passport/uz/" },
+    { id: "uz-football-crest", category: "footballcrest", name: "Crest of the Uzbekistan national football team", path: "national-flags/uz/uz-football-crest.svg", design: "The crest of the Uzbekistan national football team.", source: "https://en.wikipedia.org/wiki/Uzbekistan_national_football_team" },
   ],
   "VA": [
     { id: "va-official-national", category: "official", name: "Flag of Vatican City", from: 1929, to: 9999, primary: true, path: "flags/va.svg", design: "The national flag of Vatican City, in the form adopted in 1929.", source: "https://en.wikipedia.org/wiki/Flag_of_Vatican_City" },
@@ -2158,6 +2221,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ws-german", category: "historical", name: "Flag of the German Empire", from: 1900, to: 1914, sovereign: "the German Empire", path: "national-flags/ws/ws-german.svg", design: "The flag of the German Empire, which held the islands as German Samoa until 1914.", source: "https://en.wikipedia.org/wiki/German_Samoa" },
     { id: "ws-arms", category: "coatofarms", name: "Coat of arms of Samoa", from: 1962, to: 9999, path: "national-flags/ws/ws-arms.svg", design: "A shield bearing the Southern Cross over a coconut palm rising from the sea, surmounted by a cross, within a ring of olive leaves.", source: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Samoa" },
     { id: "ws-passport", category: "passport", name: "Passport of Samoa", path: "national-flags/ws/ws-passport.webp", design: "The cover of the Samoa passport.", source: "https://gicg.net/passport/ws/" },
+    { id: "ws-football-crest", category: "footballcrest", name: "Crest of the Samoa national football team", path: "national-flags/ws/ws-football-crest.png", design: "The crest of the Samoa national football team.", source: "https://en.wikipedia.org/wiki/Samoa_national_football_team" },
   ],
   "YE": [
     { id: "ye-official-national", category: "official", name: "Flag of Yemen", from: 1990, to: 9999, primary: true, path: "flags/ye.svg", design: "The national flag of Yemen, adopted at unification in 1990.", source: "https://en.wikipedia.org/wiki/Flag_of_Yemen" },
@@ -2166,6 +2230,7 @@ export const NATIONAL_FLAGS: Readonly<Record<string, readonly NationalFlag[]>> =
     { id: "ye-kingdom", category: "historical", name: "Flag of the Mutawakkilite Kingdom of Yemen", from: 1927, to: 1962, path: "national-flags/ye/ye-kingdom.svg", design: "A red field bearing a white sword and stars — the flag of the imamate that ruled North Yemen until the 1962 revolution.", source: "https://en.wikipedia.org/wiki/Mutawakkilite_Kingdom_of_Yemen" },
     { id: "ye-emblem", category: "coatofarms", name: "Emblem of Yemen", from: 1990, to: 9999, path: "national-flags/ye/ye-emblem.svg", design: "A golden eagle bearing a shield of the coffee plant and the Marib Dam.", source: "https://en.wikipedia.org/wiki/Emblem_of_Yemen" },
     { id: "ye-passport", category: "passport", name: "Passport of Yemen", path: "national-flags/ye/ye-passport.webp", design: "The cover of the Yemen passport.", source: "https://gicg.net/passport/ye/" },
+    { id: "ye-football-crest", category: "footballcrest", name: "Crest of the Yemen national football team", path: "national-flags/ye/ye-football-crest.png", design: "The crest of the Yemen national football team.", source: "https://en.wikipedia.org/wiki/Yemen_national_football_team" },
   ],
   "ZA": [
     { id: "za-official-national", category: "official", name: "Flag of South Africa", from: 1994, to: 9999, primary: true, path: "flags/za.svg", design: "The national flag, first flown on 27 April 1994.", source: "https://en.wikipedia.org/wiki/Flag_of_South_Africa" },
